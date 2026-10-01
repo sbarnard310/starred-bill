@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Compare lunch and dinner prices at London's Michelin-starred restaurants.">
+<title>The Starred Bill</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: deep-green masthead band with headline figures, then a comparison ledger, a stars breakdown, method notes and a contact form, all on one 1120px column. */
+:root {
+  --bg: #F2F6F1;
+  --surface: #FFFFFF;
+  --ink: #12261C;
+  --muted: #5A6E62;
+  --line: #D5E0D6;
+  --green: #1E6142;
+  --green-soft: #DCEDE1;
+  --band: #10362A;
+  --band-ink: #EAF4EC;
+  --band-muted: #A9C8B4;
+  --gold: #B3862B;
+  --danger: #A33A2E;
+  --danger-soft: #F7E3DF;
+  --font-display: "Gloock", Georgia, "Times New Roman", serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-num: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0C1712; --surface: #13221A; --ink: #E4EEE7; --muted: #98AE9F; --line: #24392D;
+    --green: #6FCB97; --green-soft: #1A3527; --band: #0A2219; --band-ink: #E4F1E8; --band-muted: #8FB49C;
+    --gold: #E0B85C; --danger: #F08C7E; --danger-soft: #3A1E1A; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0C1712; --surface: #13221A; --ink: #E4EEE7; --muted: #98AE9F; --line: #24392D;
+  --green: #6FCB97; --green-soft: #1A3527; --band: #0A2219; --band-ink: #E4F1E8; --band-muted: #8FB49C;
+  --gold: #E0B85C; --danger: #F08C7E; --danger-soft: #3A1E1A; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+[hidden] { display: none !important; }
+img { max-width: 100%; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 1120px; margin-inline: auto; padding-inline: 20px; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; text-wrap: balance; margin: 0; line-height: 1.1; }
+h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); }
+p { margin: 0; }
+.eyebrow { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: var(--green); }
+.num { font-family: var(--font-num); font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+button, input, select, textarea { font: inherit; color: inherit; }
+
+/* Header */
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--band); color: var(--band-ink); border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; font-family: var(--font-display); font-size: 1.35rem; }
+.brand svg { width: 22px; height: 22px; color: var(--gold); }
+.nav { display: flex; gap: 4px; flex-wrap: wrap; }
+.nav a { color: var(--band-muted); text-decoration: none; font-size: .9rem; font-weight: 500; padding: 6px 10px; border-radius: 6px; }
+.nav a:hover { color: var(--band-ink); background: color-mix(in srgb, var(--band-ink) 10%, transparent); }
+
+/* Hero */
+.hero { background: var(--band); color: var(--band-ink); padding-block: 48px 56px; }
+.hero .wrap { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: end; }
+.hero h1 { font-size: clamp(2.2rem, 5.4vw, 3.8rem); }
+.hero h1 em { font-style: normal; color: var(--gold); }
+.hero p { color: var(--band-muted); margin-top: 16px; max-width: 52ch; }
+.figures { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: color-mix(in srgb, var(--band-ink) 16%, transparent); border-radius: var(--radius); overflow: hidden; }
+.figure { background: var(--band); padding: 16px 14px; min-width: 0; }
+.figure .label { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--band-muted); }
+.figure .value { font-family: var(--font-num); font-size: 1.5rem; margin-top: 4px; }
+.figure .sub { font-size: .8rem; color: var(--band-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+section { padding-block: 56px; }
+section + section { border-top: 1px solid var(--line); }
+.section-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+.section-head p { color: var(--muted); max-width: 60ch; margin-top: 8px; }
+
+/* Toolbar */
+.toolbar { display: grid; grid-template-columns: 1fr auto; gap: 12px; margin-bottom: 14px; }
+.search { position: relative; }
+.search svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); pointer-events: none; }
+.search input { width: 100%; padding: 12px 14px 12px 42px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.search input:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-soft); }
+select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.chip { display: inline-flex; align-items: stretch; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); overflow: hidden; }
+.chip button { border: 0; background: none; cursor: pointer; padding: 7px 4px 7px 14px; font-size: .88rem; font-weight: 500; }
+.chip button .count { color: var(--muted); font-family: var(--font-num); font-size: .78rem; margin-left: 4px; }
+.chip .x { padding: 7px 11px 7px 6px; color: var(--muted); font-size: .9rem; }
+.chip .x:hover { color: var(--danger); }
+.chip.all button { padding-right: 14px; }
+.chip.active { background: var(--green); border-color: var(--green); color: var(--surface); }
+.chip.active .count, .chip.active .x { color: color-mix(in srgb, var(--surface) 75%, transparent); }
+
+.confirm { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 12px 14px; margin-bottom: 18px; border-radius: var(--radius); background: var(--danger-soft); color: var(--ink); }
+.confirm .actions { display: flex; gap: 8px; }
+.btn { border: 1px solid transparent; border-radius: 8px; padding: 8px 14px; font-weight: 600; font-size: .9rem; cursor: pointer; }
+.btn-danger { background: var(--danger); color: var(--surface); }
+.btn-ghost { background: transparent; border-color: var(--line); }
+.btn-primary { background: var(--green); color: var(--surface); padding: 12px 20px; font-size: 1rem; }
+.btn-primary:hover { filter: brightness(1.08); }
+
+/* Ledger */
+.ledger { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.row { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.2fr) 74px 80px minmax(0, 1.8fr) 40px; gap: 16px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
+.row:first-child { border-top: 0; }
+.row.head { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding-block: 10px; background: color-mix(in srgb, var(--green-soft) 50%, var(--surface)); }
+.row .name { font-weight: 600; min-width: 0; }
+.row .area { display: block; font-weight: 400; font-size: .85rem; color: var(--muted); }
+.tag { display: inline-block; font-size: .8rem; padding: 3px 10px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-weight: 500; white-space: nowrap; cursor: pointer; border: 0; }
+.stars { display: inline-flex; gap: 2px; color: var(--gold); }
+.stars svg { width: 15px; height: 15px; }
+.price { text-align: right; }
+.price.muted { color: var(--muted); }
+.dinner { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; }
+.bar { height: 6px; border-radius: 3px; background: var(--green-soft); overflow: hidden; }
+.bar span { display: block; height: 100%; background: var(--green); border-radius: 3px; transition: width .3s ease; }
+.del { width: 34px; height: 34px; border: 1px solid transparent; background: none; border-radius: 8px; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
+.del:hover { color: var(--danger); background: var(--danger-soft); }
+.del svg { width: 16px; height: 16px; }
+.mlabel { display: none; }
+.empty { padding: 40px 18px; text-align: center; color: var(--muted); }
+.ledger-foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 12px; font-size: .85rem; color: var(--muted); }
+.linkish { background: none; border: 0; padding: 0; color: var(--green); font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Stars breakdown */
+.tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.tier { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; display: grid; gap: 14px; }
+.tier .top { display: flex; justify-content: space-between; align-items: center; }
+.tier .stars svg { width: 20px; height: 20px; }
+.tier h3 { font-size: 1.2rem; }
+.tier .avg { font-family: var(--font-num); font-size: 2rem; line-height: 1; }
+.tier .avg small { font-family: var(--font-body); font-size: .85rem; color: var(--muted); margin-left: 6px; }
+.tier dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 0; font-size: .9rem; }
+.tier dt { color: var(--muted); }
+.tier dd { margin: 0; text-align: right; font-family: var(--font-num); font-variant-numeric: tabular-nums; }
+.tier .bar { height: 8px; }
+
+/* Method */
+.method { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.method div { display: grid; gap: 8px; align-content: start; }
+.method h3 { font-size: 1.15rem; }
+.method p { color: var(--muted); font-size: .95rem; }
+
+/* Contact */
+.contact { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; align-items: start; }
+.contact .intro p { color: var(--muted); margin-top: 12px; max-width: 42ch; }
+form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.field { display: grid; gap: 6px; min-width: 0; }
+.field.full { grid-column: 1 / -1; }
+.field label { font-size: .85rem; font-weight: 600; }
+.field input, .field select, .field textarea { width: 100%; padding: 11px 13px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+.field textarea { min-height: 120px; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-soft); }
+.field .err { font-size: .8rem; color: var(--danger); min-height: 1em; }
+.form-foot { grid-column: 1 / -1; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.form-status { font-size: .9rem; color: var(--green); font-weight: 500; }
+
+footer { background: var(--band); color: var(--band-muted); font-size: .85rem; padding-block: 24px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 10px 12px 10px 16px; border-radius: 10px; display: flex; gap: 14px; align-items: center; font-size: .9rem; z-index: 20; max-width: calc(100% - 32px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+.toast button { background: none; border: 0; color: var(--gold); font-weight: 700; cursor: pointer; padding: 4px 6px; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero .wrap, .contact { grid-template-columns: 1fr; gap: 28px; }
+  .tiers, .method { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .wrap { padding-inline: 16px; }
+  .nav { display: none; }
+  .toolbar { grid-template-columns: 1fr; }
+  .row.head { display: none; }
+  .row { grid-template-columns: 1fr auto; grid-template-areas: "name del" "cat stars" "lunch lunch" "dinner dinner"; gap: 8px 12px; padding: 16px; }
+  .row .name { grid-area: name; }
+  .row .cat { grid-area: cat; }
+  .row .stars-cell { grid-area: stars; justify-self: end; }
+  .row .lunch { grid-area: lunch; display: flex; justify-content: space-between; }
+  .row .dinner { grid-area: dinner; grid-template-columns: auto 1fr auto; }
+  .row .del-cell { grid-area: del; }
+  .mlabel { display: inline; font-size: .8rem; color: var(--muted); }
+  .figures { grid-template-columns: 1fr 1fr; }
+  .figure:first-child { grid-column: 1 / -1; }
+  form { grid-template-columns: 1fr; padding: 18px; }
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="rosette" viewBox="0 0 24 24">
+    <g fill="currentColor">
+      <ellipse cx="12" cy="12" rx="3.6" ry="10.5"/>
+      <ellipse cx="12" cy="12" rx="3.6" ry="10.5" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="3.6" ry="10.5" transform="rotate(120 12 12)"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg><use href="#rosette"/></svg>The Starred Bill</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#compare">Compare</a>
+      <a href="#stars">By stars</a>
+      <a href="#method">Method</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="color: var(--band-muted)">London · Michelin Guide restaurants</span>
+      <h1 style="margin-top: 12px">What a Michelin star <em>costs</em> in London.</h1>
+      <p>Lunch and dinner prices per person at London's starred restaurants, side by side. Search by name or cuisine, filter by category, and remove anything you're not interested in.</p>
+    </div>
+    <div class="figures" aria-live="polite">
+      <div class="figure"><div class="label">Restaurants listed</div><div class="value" id="fCount">0</div><div class="sub" id="fCountSub"></div></div>
+      <div class="figure"><div class="label">Cheapest dinner</div><div class="value" id="fMin">–</div><div class="sub" id="fMinSub"></div></div>
+      <div class="figure"><div class="label">Priciest dinner</div><div class="value" id="fMax">–</div><div class="sub" id="fMaxSub"></div></div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section id="compare">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Compare</span>
+          <h2 style="margin-top: 6px">Every table, every price</h2>
+          <p>Sample prices for illustration. Bars show dinner cost against the most expensive menu on the list.</p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <label class="search" for="q">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Search by restaurant or category, e.g. “Japanese”" autocomplete="off" aria-label="Search restaurants by name or category">
+        </label>
+        <select id="sort" aria-label="Sort restaurants">
+          <option value="price-asc">Dinner: low to high</option>
+          <option value="price-desc">Dinner: high to low</option>
+          <option value="stars">Most stars first</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </div>
+
+      <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      <div id="confirmSlot"></div>
+
+      <div class="ledger" id="ledger" role="table" aria-label="Restaurant prices"></div>
+      <div class="ledger-foot">
+        <span id="showing"></span>
+        <button class="linkish" id="restore" type="button" hidden>Restore all sample restaurants</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="stars">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">By stars</span>
+          <h2 style="margin-top: 6px">How much each extra star adds</h2>
+          <p>Average dinner price for the restaurants currently in your list, grouped by Michelin stars.</p>
+        </div>
+      </div>
+      <div class="tiers" id="tiers"></div>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Method</span>
+          <h2 style="margin-top: 6px">How the prices are counted</h2>
+        </div>
+      </div>
+      <div class="method">
+        <div>
+          <h3>Per person, food only</h3>
+          <p>Every figure is the menu price for one guest. Wine pairings, soft-drink pairings and supplements such as caviar or truffle courses are left out.</p>
+        </div>
+        <div>
+          <h3>Before service charge</h3>
+          <p>Most London restaurants add a discretionary 12.5–15% service charge. We show the menu price so restaurants compare on the same basis.</p>
+        </div>
+        <div>
+          <h3>Lunch versus dinner</h3>
+          <p>Dinner is the full tasting menu, or a typical three-course spend where there isn't one. Lunch is the set lunch, shown only where the restaurant offers one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div class="intro">
+        <span class="eyebrow">Contact</span>
+        <h2 style="margin-top: 6px">Spotted a price change?</h2>
+        <p>Menus are repriced often. Tell us about an update, a restaurant we've missed, or a city you'd like covered after London.</p>
+      </div>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="cName">Name</label>
+          <input id="cName" name="name" autocomplete="name" required>
+          <span class="err" id="cNameErr"></span>
+        </div>
+        <div class="field">
+          <label for="cEmail">Email</label>
+          <input id="cEmail" name="email" type="email" autocomplete="email" required>
+          <span class="err" id="cEmailErr"></span>
+        </div>
+        <div class="field full">
+          <label for="cTopic">Topic</label>
+          <select id="cTopic" name="topic">
+            <option>Price update</option>
+            <option>Suggest a restaurant</option>
+            <option>Cover another city</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="cMsg">Message</label>
+          <textarea id="cMsg" name="message" required placeholder="e.g. Kol's tasting menu is now £155 per person."></textarea>
+          <span class="err" id="cMsgErr"></span>
+        </div>
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <span class="form-status" id="formStatus" role="status"></span>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>The Starred Bill · London edition</span>
+    <span>Sample data for illustration. Check with each restaurant before booking.</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" hidden><span id="toastMsg"></span><button type="button" id="undo">Undo</button></div>
+
+<script src="restaurants.js"></script>
+<script>
+const SAMPLE = window.RESTAURANTS || [];
+
+const STORE_KEY = "starred-bill-v1";
+const state = { removedIds: [], removedCats: [], activeCat: "All", query: "", sort: "price-asc", pendingCat: null, lastUndo: null };
+
+function load() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORE_KEY) || "null");
+    if (saved) {
+      state.removedIds = saved.removedIds || [];
+      state.removedCats = saved.removedCats || [];
+      state.sort = saved.sort || state.sort;
+    }
+  } catch (e) {}
+}
+function save() {
+  try { localStorage.setItem(STORE_KEY, JSON.stringify({ removedIds: state.removedIds, removedCats: state.removedCats, sort: state.sort })); } catch (e) {}
+}
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const gbp = (n) => "£" + n.toLocaleString("en-GB");
+const rosettes = (n) => '<span class="stars" aria-label="' + n + ' Michelin star' + (n > 1 ? "s" : "") + '">' + '<svg><use href="#rosette"/></svg>'.repeat(n) + "</span>";
+
+const visibleAll = () => SAMPLE.filter((r) => !state.removedIds.includes(r.id) && !state.removedCats.includes(r.cat));
+const categories = () => {
+  const counts = {};
+  visibleAll().forEach((r) => { counts[r.cat] = (counts[r.cat] || 0) + 1; });
+  return Object.keys(counts).sort().map((c) => ({ name: c, count: counts[c] }));
+};
+
+function filtered() {
+  const q = state.query.trim().toLowerCase();
+  let rows = visibleAll().filter((r) =>
+    (state.activeCat === "All" || r.cat === state.activeCat) &&
+    (!q || r.name.toLowerCase().includes(q) || r.cat.toLowerCase().includes(q))
+  );
+  const sorters = {
+    "price-asc": (a, b) => a.dinner - b.dinner,
+    "price-desc": (a, b) => b.dinner - a.dinner,
+    "stars": (a, b) => b.stars - a.stars || b.dinner - a.dinner,
+    "name": (a, b) => a.name.localeCompare(b.name)
+  };
+  return rows.sort(sorters[state.sort]);
+}
+
+function renderChips() {
+  const cats = categories();
+  if (state.activeCat !== "All" && !cats.some((c) => c.name === state.activeCat)) state.activeCat = "All";
+  const total = visibleAll().length;
+  let html = '<span class="chip all' + (state.activeCat === "All" ? " active" : "") + '"><button type="button" data-cat="All" aria-pressed="' + (state.activeCat === "All") + '">All<span class="count">' + total + "</span></button></span>";
+  cats.forEach((c) => {
+    const on = state.activeCat === c.name;
+    html += '<span class="chip' + (on ? " active" : "") + '"><button type="button" data-cat="' + esc(c.name) + '" aria-pressed="' + on + '">' + esc(c.name) + '<span class="count">' + c.count + '</span></button><button type="button" class="x" data-delcat="' + esc(c.name) + '" aria-label="Delete category ' + esc(c.name) + '">✕</button></span>';
+  });
+  $("chips").innerHTML = html;
+}
+
+function renderConfirm() {
+  const c = state.pendingCat;
+  if (!c) { $("confirmSlot").innerHTML = ""; return; }
+  const n = visibleAll().filter((r) => r.cat === c).length;
+  $("confirmSlot").innerHTML = '<div class="confirm" role="alertdialog" aria-label="Confirm category deletion"><span>Delete <strong>' + esc(c) + "</strong> and its " + n + " restaurant" + (n === 1 ? "" : "s") + '?</span><div class="actions"><button class="btn btn-ghost" type="button" id="cancelDel">Cancel</button><button class="btn btn-danger" type="button" id="confirmDel">Delete category</button></div></div>';
+  $("confirmDel").focus();
+}
+
+function renderLedger() {
+  const rows = filtered();
+  const max = Math.max(...visibleAll().map((r) => r.dinner), 1);
+  let html = '<div class="row head" role="row"><span role="columnheader">Restaurant</span><span role="columnheader">Category</span><span role="columnheader">Stars</span><span role="columnheader" class="price">Lunch</span><span role="columnheader" style="text-align:right">Dinner</span><span></span></div>';
+  if (!rows.length) {
+    html += '<div class="empty">' + (visibleAll().length ? "No restaurants match “" + esc(state.query) + "”. Try a different name or category." : "Your list is empty. Restore the sample restaurants to start again.") + "</div>";
+  }
+  rows.forEach((r) => {
+    html += '<div class="row" role="row">' +
+      '<span class="name" role="cell">' + esc(r.name) + '<span class="area">' + esc(r.area) + "</span></span>" +
+      '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cat) + '" title="Show only ' + esc(r.cat) + '">' + esc(r.cat) + "</button></span>" +
+      '<span class="stars-cell" role="cell">' + rosettes(r.stars) + "</span>" +
+      '<span class="lunch price num' + (r.lunch ? "" : " muted") + '" role="cell"><span class="mlabel">Set lunch</span>' + (r.lunch ? gbp(r.lunch) : "–") + "</span>" +
+      '<span class="dinner" role="cell"><span class="mlabel">Dinner</span><span class="bar"><span style="width:' + (r.dinner / max * 100).toFixed(1) + '%"></span></span><span class="num price">' + gbp(r.dinner) + "</span></span>" +
+      '<span class="del-cell" role="cell"><button type="button" class="del" data-del="' + r.id + '" aria-label="Delete ' + esc(r.name) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12M9 7V4h6v3"/></svg></button></span>' +
+      "</div>";
+  });
+  $("ledger").innerHTML = html;
+  const all = visibleAll().length;
+  $("showing").textContent = "Showing " + rows.length + " of " + all + " restaurants";
+  $("restore").hidden = !(state.removedIds.length || state.removedCats.length);
+}
+
+function renderFigures() {
+  const all = visibleAll();
+  $("fCount").textContent = all.length;
+  const starCounts = [3, 2, 1].map((s) => all.filter((r) => r.stars === s).length);
+  $("fCountSub").textContent = starCounts[0] + " three-star · " + starCounts[1] + " two-star · " + starCounts[2] + " one-star";
+  if (!all.length) { ["fMin", "fMax"].forEach((id) => $(id).textContent = "–"); $("fMinSub").textContent = $("fMaxSub").textContent = ""; return; }
+  const byPrice = [...all].sort((a, b) => a.dinner - b.dinner);
+  const lo = byPrice[0], hi = byPrice[byPrice.length - 1];
+  $("fMin").textContent = gbp(lo.dinner); $("fMinSub").textContent = lo.name;
+  $("fMax").textContent = gbp(hi.dinner); $("fMaxSub").textContent = hi.name;
+}
+
+function renderTiers() {
+  const all = visibleAll();
+  const tiers = [1, 2, 3].map((s) => {
+    const list = all.filter((r) => r.stars === s);
+    const prices = list.map((r) => r.dinner);
+    const avg = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
+    const lunches = list.filter((r) => r.lunch);
+    return { s, n: list.length, avg, min: Math.min(...prices), max: Math.max(...prices), lunchN: lunches.length };
+  });
+  const top = Math.max(...tiers.map((t) => t.avg), 1);
+  const names = { 1: "One star", 2: "Two stars", 3: "Three stars" };
+  $("tiers").innerHTML = tiers.map((t, i) => {
+    const prev = i > 0 && tiers[i - 1].n && t.n ? t.avg - tiers[i - 1].avg : null;
+    return '<div class="tier"><div class="top"><h3>' + names[t.s] + "</h3>" + rosettes(t.s) + "</div>" +
+      (t.n
+        ? '<div class="avg">' + gbp(t.avg) + "<small>avg dinner</small></div>" +
+          '<div class="bar"><span style="width:' + (t.avg / top * 100).toFixed(1) + '%"></span></div>' +
+          "<dl><dt>Restaurants</dt><dd>" + t.n + "</dd><dt>Range</dt><dd>" + gbp(t.min) + "–" + gbp(t.max) + "</dd><dt>Offer set lunch</dt><dd>" + t.lunchN + " of " + t.n + "</dd>" +
+          (prev !== null ? "<dt>vs " + (t.s - 1) + " star" + (t.s - 1 > 1 ? "s" : "") + "</dt><dd>" + (prev >= 0 ? "+" : "−") + gbp(Math.abs(prev)) + "</dd>" : "") + "</dl>"
+        : '<p style="color: var(--muted)">No ' + names[t.s].toLowerCase() + " restaurants in your list.</p>") +
+      "</div>";
+  }).join("");
+}
+
+function render() { renderChips(); renderConfirm(); renderLedger(); renderFigures(); renderTiers(); }
+
+let toastTimer;
+function toast(msg, undo) {
+  state.lastUndo = undo;
+  $("toastMsg").textContent = msg;
+  $("undo").hidden = !undo;
+  $("toast").hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { $("toast").hidden = true; state.lastUndo = null; }, 6000);
+}
+
+document.addEventListener("click", (e) => {
+  const t = e.target.closest("button");
+  if (!t) return;
+  if (t.dataset.cat) {
+    state.activeCat = t.dataset.cat; state.pendingCat = null; render();
+    if (t.classList.contains("tag")) document.getElementById("compare").scrollIntoView();
+  } else if (t.dataset.delcat) {
+    state.pendingCat = t.dataset.delcat; renderConfirm();
+  } else if (t.id === "cancelDel") {
+    state.pendingCat = null; renderConfirm();
+  } else if (t.id === "confirmDel") {
+    const c = state.pendingCat;
+    state.removedCats.push(c); state.pendingCat = null;
+    if (state.activeCat === c) state.activeCat = "All";
+    save(); render();
+    toast("Deleted category " + c, () => { state.removedCats = state.removedCats.filter((x) => x !== c); });
+  } else if (t.dataset.del) {
+    const id = Number(t.dataset.del);
+    const r = SAMPLE.find((x) => x.id === id);
+    state.removedIds.push(id); save(); render();
+    toast("Deleted " + r.name, () => { state.removedIds = state.removedIds.filter((x) => x !== id); });
+  } else if (t.id === "undo") {
+    if (state.lastUndo) { state.lastUndo(); state.lastUndo = null; save(); render(); }
+    $("toast").hidden = true;
+  } else if (t.id === "restore") {
+    state.removedIds = []; state.removedCats = []; state.activeCat = "All"; save(); render();
+    toast("Restored all sample restaurants", null);
+  }
+});
+
+$("q").addEventListener("input", (e) => { state.query = e.target.value; renderLedger(); });
+$("sort").addEventListener("change", (e) => { state.sort = e.target.value; save(); renderLedger(); });
+
+$("contactForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = $("cName").value.trim(), email = $("cEmail").value.trim(), msg = $("cMsg").value.trim();
+  $("cNameErr").textContent = name ? "" : "Enter your name.";
+  $("cEmailErr").textContent = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? "" : "Enter an email address like name@example.com.";
+  $("cMsgErr").textContent = msg ? "" : "Write a short message.";
+  if (!name || $("cEmailErr").textContent || !msg) { $("formStatus").textContent = ""; return; }
+  $("formStatus").textContent = "Thanks, " + name + ". This is a preview form, so messages aren't sent yet.";
+  e.target.reset();
+});
+
+load();
+$("sort").value = state.sort;
+render();
+</script>
+</body>
+</html>

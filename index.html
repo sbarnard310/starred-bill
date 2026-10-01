@@ -127,6 +127,10 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .row:first-child { border-top: 0; }
 .row.head { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding-block: 10px; background: color-mix(in srgb, var(--green-soft) 50%, var(--surface)); }
 .row .name { font-weight: 600; min-width: 0; }
+.row .area { display: block; font-weight: 400; font-size: .85rem; color: var(--muted); }
+.map { display: inline-grid; place-items: center; width: 26px; height: 26px; margin-left: 4px; vertical-align: -6px; border-radius: 6px; color: var(--green); }
+.map:hover { background: var(--green-soft); }
+.map svg { width: 16px; height: 16px; }
 .note { display: block; font-family: var(--font-body); font-size: .78rem; line-height: 1.35; color: var(--muted); }
 .notes { min-width: 0; font-size: .88rem; color: var(--muted); line-height: 1.4; }
 .rating { display: inline-flex; align-items: center; gap: 5px; }
@@ -195,7 +199,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 }
 @media (max-width: 900px) {
   .row.head { display: none; }
-  .row { grid-template-columns: 1fr auto; grid-template-areas: "name del" "cat stars" "notes notes" "dinner dinner" "rating wine"; gap: 8px 12px; padding: 16px; }
+  .row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name del" "cat stars" "notes notes" "dinner dinner" "rating wine"; gap: 8px 12px; padding: 16px; }
   .row .name { grid-area: name; }
   .row .cat { grid-area: cat; }
   .row .stars-cell { grid-area: stars; justify-self: end; }
@@ -204,7 +208,9 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .row .rating-cell { grid-area: rating; }
   .row .wine { grid-area: wine; }
   .row .del-cell { grid-area: del; justify-self: end; }
-  .row .wine { justify-self: end; }
+  .row .wine { justify-self: end; white-space: nowrap; }
+  .row .rating-cell { white-space: nowrap; }
+  .row .tag { white-space: normal; text-align: left; }
   .mlabel { display: inline; font-family: var(--font-body); font-size: .8rem; color: var(--muted); margin-right: 6px; }
 }
 @media (max-width: 720px) {
@@ -228,6 +234,10 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
       <ellipse cx="12" cy="12" rx="3.6" ry="10.5" transform="rotate(60 12 12)"/>
       <ellipse cx="12" cy="12" rx="3.6" ry="10.5" transform="rotate(120 12 12)"/>
     </g>
+  </symbol>
+  <symbol id="pin" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/>
+    <circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
   </symbol>
   <symbol id="gstar" viewBox="0 0 24 24">
     <path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/>
@@ -275,7 +285,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
       <div class="toolbar">
         <label class="search" for="q">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <input id="q" type="search" placeholder="Search by restaurant or cuisine, e.g. “Japanese”" autocomplete="off" aria-label="Search restaurants by name or cuisine">
+          <input id="q" type="search" placeholder="Search by restaurant, cuisine or area, e.g. “Mayfair”" autocomplete="off" aria-label="Search restaurants by name, cuisine or area">
         </label>
         <select id="sort" aria-label="Sort restaurants">
           <option value="price-asc">Dinner: low to high</option>
@@ -420,6 +430,7 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 const gbp = (n) => "£" + n.toLocaleString("en-GB");
 const rosettes = (n) => '<span class="stars" aria-label="' + n + ' Michelin star' + (n > 1 ? "s" : "") + '">' + '<svg><use href="#rosette"/></svg>'.repeat(n) + "</span>";
 
+const mapsUrl = (r) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent([r.name + " restaurant", r.area, "London"].filter(Boolean).join(", "));
 const isMenu = (r) => r.dinnerType === "menu" && r.dinner != null;
 const priceRank = (r) => (isMenu(r) ? 0 : r.dinner != null ? 1 : 2);
 const visibleAll = () => SAMPLE.filter((r) => !state.removedIds.includes(r.id) && !state.removedCats.includes(r.cat));
@@ -435,7 +446,7 @@ function filtered() {
   let rows = visibleAll().filter((r) =>
     starMatch(r) &&
     (state.activeCat === "All" || r.cat === state.activeCat) &&
-    (!q || r.name.toLowerCase().includes(q) || r.cat.toLowerCase().includes(q))
+    (!q || [r.name, r.cat, r.area || ""].some((v) => v.toLowerCase().includes(q)))
   );
   const sorters = {
     "price-asc": (a, b) => priceRank(a) - priceRank(b) || a.dinner - b.dinner,
@@ -484,7 +495,9 @@ function renderLedger() {
   }
   rows.forEach((r) => {
     html += '<div class="row" role="row">' +
-      '<span class="name" role="cell">' + esc(r.name) + "</span>" +
+      '<span class="name" role="cell">' + esc(r.name) +
+        '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="Find ' + esc(r.name) + ' on Google Maps" title="Find on Google Maps"><svg aria-hidden="true"><use href="#pin"/></svg></a>' +
+        (r.area ? '<span class="area">' + esc(r.area) + "</span>" : "") + "</span>" +
       '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cat) + '" title="Show only ' + esc(r.cat) + '">' + esc(r.cat) + "</button></span>" +
       '<span class="stars-cell" role="cell">' + rosettes(r.stars) + "</span>" +
       '<span class="rating-cell" role="cell"><span class="mlabel">Google</span>' + (r.rating ? '<span class="rating num" aria-label="Google rating ' + r.rating.toFixed(1) + ' out of 5"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" : '<span class="num muted">–</span>') + "</span>" +

@@ -24,6 +24,7 @@
   --gold: #B3862B;
   --danger: #A33A2E;
   --danger-soft: #F7E3DF;
+  --heart: #C2413A;
   --font-display: "Gloock", Georgia, "Times New Roman", serif;
   --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-num: "IBM Plex Mono", ui-monospace, Menlo, monospace;
@@ -33,13 +34,13 @@
   :root:not([data-theme="light"]) {
     --bg: #0C1712; --surface: #13221A; --ink: #E4EEE7; --muted: #98AE9F; --line: #24392D;
     --green: #6FCB97; --green-soft: #1A3527; --band: #0A2219; --band-ink: #E4F1E8; --band-muted: #8FB49C;
-    --gold: #E0B85C; --danger: #F08C7E; --danger-soft: #3A1E1A; color-scheme: dark;
+    --gold: #E0B85C; --danger: #F08C7E; --danger-soft: #3A1E1A; --heart: #F0857A; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0C1712; --surface: #13221A; --ink: #E4EEE7; --muted: #98AE9F; --line: #24392D;
   --green: #6FCB97; --green-soft: #1A3527; --band: #0A2219; --band-ink: #E4F1E8; --band-muted: #8FB49C;
-  --gold: #E0B85C; --danger: #F08C7E; --danger-soft: #3A1E1A; color-scheme: dark;
+  --gold: #E0B85C; --danger: #F08C7E; --danger-soft: #3A1E1A; --heart: #F0857A; color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -66,6 +67,12 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .nav { display: flex; gap: 4px; flex-wrap: wrap; }
 .nav a { color: var(--band-muted); text-decoration: none; font-size: .9rem; font-weight: 500; padding: 6px 10px; border-radius: 6px; }
 .nav a:hover { color: var(--band-ink); background: color-mix(in srgb, var(--band-ink) 10%, transparent); }
+.header-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.wish-link { display: inline-flex; align-items: center; gap: 6px; color: var(--band-ink); text-decoration: none; font-size: .9rem; font-weight: 600; padding: 6px 12px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); }
+.wish-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transparent); }
+.wish-link svg { width: 16px; height: 16px; fill: none; stroke: currentColor; }
+.wish-link.has-items svg { fill: var(--heart); stroke: var(--heart); }
+.wish-link #wishCount { font-family: var(--font-num); font-weight: 500; }
 
 /* Hero */
 .hero { background: var(--band); color: var(--band-ink); padding-block: 48px 56px; }
@@ -81,6 +88,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 section { padding-block: 56px; }
 section + section { border-top: 1px solid var(--line); }
+section { scroll-margin-top: 64px; }
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
 .section-head p { color: var(--muted); max-width: 60ch; margin-top: 8px; }
 
@@ -105,16 +113,11 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip.zero { opacity: .5; }
 .chip { display: inline-flex; align-items: stretch; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); overflow: hidden; }
-.chip button { border: 0; background: none; cursor: pointer; padding: 7px 4px 7px 14px; font-size: .88rem; font-weight: 500; }
+.chip button { border: 0; background: none; cursor: pointer; padding: 7px 14px; font-size: .88rem; font-weight: 500; }
 .chip button .count { color: var(--muted); font-family: var(--font-num); font-size: .78rem; margin-left: 4px; }
-.chip .x { padding: 7px 11px 7px 6px; color: var(--muted); font-size: .9rem; }
-.chip .x:hover { color: var(--danger); }
-.chip.all button { padding-right: 14px; }
 .chip.active { background: var(--green); border-color: var(--green); color: var(--surface); }
-.chip.active .count, .chip.active .x { color: color-mix(in srgb, var(--surface) 75%, transparent); }
+.chip.active .count { color: color-mix(in srgb, var(--surface) 75%, transparent); }
 
-.confirm { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 12px 14px; margin-bottom: 18px; border-radius: var(--radius); background: var(--danger-soft); color: var(--ink); }
-.confirm .actions { display: flex; gap: 8px; }
 .btn { border: 1px solid transparent; border-radius: 8px; padding: 8px 14px; font-weight: 600; font-size: .9rem; cursor: pointer; }
 .btn-danger { background: var(--danger); color: var(--surface); }
 .btn-ghost { background: transparent; border-color: var(--line); }
@@ -145,9 +148,18 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .dinner { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; }
 .bar { height: 6px; border-radius: 3px; background: var(--green-soft); overflow: hidden; }
 .bar span { display: block; height: 100%; background: var(--green); border-radius: 3px; transition: width .3s ease; }
-.del { width: 34px; height: 34px; border: 1px solid transparent; background: none; border-radius: 8px; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
-.del:hover { color: var(--danger); background: var(--danger-soft); }
-.del svg { width: 16px; height: 16px; }
+.wish { width: 36px; height: 36px; border: 1px solid transparent; background: none; border-radius: 8px; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
+.wish:hover { color: var(--heart); background: color-mix(in srgb, var(--heart) 12%, transparent); }
+.wish svg { width: 19px; height: 19px; fill: none; stroke: currentColor; }
+.wish[aria-pressed="true"] { color: var(--heart); }
+.wish[aria-pressed="true"] svg { fill: currentColor; }
+.seg .wish-icon svg { width: 14px; height: 14px; fill: var(--heart); stroke: var(--heart); display: block; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Map */
+.map-frame { width: 100%; max-width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); display: block; }
+.map-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-top: 14px; color: var(--muted); font-size: .9rem; }
+.btn-primary { text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
 .mlabel { display: none; }
 .empty { padding: 40px 18px; text-align: center; color: var(--muted); }
 .ledger-foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 12px; font-size: .85rem; color: var(--muted); }
@@ -199,7 +211,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 }
 @media (max-width: 900px) {
   .row.head { display: none; }
-  .row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name del" "cat stars" "notes notes" "dinner dinner" "rating wine"; gap: 8px 12px; padding: 16px; }
+  .row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name wish" "cat stars" "notes notes" "dinner dinner" "rating wine"; gap: 8px 12px; padding: 16px; }
   .row .name { grid-area: name; }
   .row .cat { grid-area: cat; }
   .row .stars-cell { grid-area: stars; justify-self: end; }
@@ -207,7 +219,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .row .dinner { grid-area: dinner; grid-template-columns: auto 1fr auto; }
   .row .rating-cell { grid-area: rating; }
   .row .wine { grid-area: wine; }
-  .row .del-cell { grid-area: del; justify-self: end; }
+  .row .wish-cell { grid-area: wish; justify-self: end; }
+  .map-frame { aspect-ratio: 4 / 5; }
   .row .wine { justify-self: end; white-space: nowrap; }
   .row .rating-cell { white-space: nowrap; }
   .row .tag { white-space: normal; text-align: left; }
@@ -239,6 +252,9 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
     <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/>
     <circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
   </symbol>
+  <symbol id="heart" viewBox="0 0 24 24">
+    <path stroke-width="2" stroke-linejoin="round" d="M12 20.5s-8-4.9-8-10.6A4.4 4.4 0 0 1 12 7.3a4.4 4.4 0 0 1 8 2.6c0 5.7-8 10.6-8 10.6z"/>
+  </symbol>
   <symbol id="gstar" viewBox="0 0 24 24">
     <path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/>
   </symbol>
@@ -247,12 +263,16 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="#top"><svg><use href="#rosette"/></svg>The Starred Bill</a>
+    <div class="header-actions">
     <nav class="nav" aria-label="Sections">
       <a href="#compare">Compare</a>
+      <a href="#map" id="mapNav" hidden>Map</a>
       <a href="#stars">By stars</a>
       <a href="#method">Method</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a href="#compare" class="wish-link" id="wishLink" aria-label="Show my wishlist"><svg aria-hidden="true"><use href="#heart"/></svg>Wishlist <span id="wishCount">0</span></a>
+    </div>
   </div>
 </header>
 
@@ -261,7 +281,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
     <div>
       <span class="eyebrow" style="color: var(--band-muted)">London · Michelin Guide restaurants</span>
       <h1 style="margin-top: 12px">What a Michelin star <em>costs</em> in London.</h1>
-      <p>Dinner and wine pairing prices per person at London's starred restaurants, side by side. Search by name or cuisine, filter by stars or cuisine, and remove anything you're not interested in. Prices as of January 2025, before service.</p>
+      <p>Dinner and wine pairing prices per person at London's starred restaurants, side by side. Search by name or cuisine, filter by stars or cuisine, and save the ones you'd like to try to your wishlist. Prices as of January 2025, before service.</p>
     </div>
     <div class="figures" aria-live="polite">
       <div class="figure"><div class="label">Restaurants listed</div><div class="value" id="fCount">0</div><div class="sub" id="fCountSub"></div></div>
@@ -298,6 +318,10 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 
       <div class="filters">
         <div class="filter-group">
+          <span class="flabel" id="showLabel">Show</span>
+          <div class="seg" id="showFilter" role="group" aria-labelledby="showLabel"></div>
+        </div>
+        <div class="filter-group">
           <span class="flabel" id="starsLabel">Michelin stars</span>
           <div class="seg" id="starFilter" role="group" aria-labelledby="starsLabel"></div>
         </div>
@@ -306,12 +330,28 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
           <div class="chips" id="chips" role="group" aria-labelledby="cuisineLabel"></div>
         </div>
       </div>
-      <div id="confirmSlot"></div>
 
       <div class="ledger" id="ledger" role="table" aria-label="Restaurant prices"></div>
       <div class="ledger-foot">
         <span id="showing"></span>
-        <button class="linkish" id="restore" type="button" hidden>Restore all restaurants</button>
+        <span>Your wishlist is saved in this browser only.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="map" hidden>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Map</span>
+          <h2 style="margin-top: 6px">Every starred table on one map</h2>
+          <p>All the restaurants in this guide, pinned on Google Maps. Tap a pin for the name, stars and dinner price.</p>
+        </div>
+      </div>
+      <iframe class="map-frame" id="mapFrame" title="Map of London's Michelin-starred restaurants" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-actions">
+        <a class="btn btn-primary" id="mapOpen" href="#" target="_blank" rel="noopener"><svg width="18" height="18" aria-hidden="true"><use href="#pin"/></svg>Open the full map in Google Maps</a>
+        <span>Opens in a new tab, where you can save it to your own Google Maps.</span>
       </div>
     </div>
   </section>
@@ -322,7 +362,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
         <div>
           <span class="eyebrow">By stars</span>
           <h2 style="margin-top: 6px">How much each extra star adds</h2>
-          <p>Average dinner menu price for the restaurants currently in your list, grouped by Michelin stars. À la carte restaurants are counted but left out of the averages.</p>
+          <p>Average dinner menu price, grouped by Michelin stars. À la carte restaurants are counted but left out of the averages.</p>
         </div>
       </div>
       <div class="tiers" id="tiers"></div>
@@ -402,49 +442,56 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   </div>
 </footer>
 
-<div class="toast" id="toast" hidden><span id="toastMsg"></span><button type="button" id="undo">Undo</button></div>
+<div class="toast" id="toast" hidden role="status"><span id="toastMsg"></span><button type="button" id="undo">Undo</button></div>
 
 <script src="restaurants.js"></script>
 <script>
-const SAMPLE = window.RESTAURANTS || [];
+// Google My Maps ID for the "Map" section, the part after "mid=" in the map's share link.
+// Leave empty to hide the section.
+const GOOGLE_MY_MAP_ID = "";
 
-const STORE_KEY = "starred-bill-v2";
-const state = { removedIds: [], removedCats: [], activeCat: "All", activeStars: 0, query: "", sort: "price-asc", pendingCat: null, lastUndo: null };
+const RESTAURANTS = window.RESTAURANTS || [];
+const PREFS_KEY = "starred-bill-prefs";
+const WISHLIST_KEY = "starred-bill-wishlist";
+const state = { activeCat: "All", activeStars: 0, wishOnly: false, query: "", sort: "price-asc", wishlist: [], lastUndo: null };
 
 function load() {
   try {
-    const saved = JSON.parse(localStorage.getItem(STORE_KEY) || "null");
-    if (saved) {
-      state.removedIds = saved.removedIds || [];
-      state.removedCats = saved.removedCats || [];
-      state.sort = saved.sort || state.sort;
-    }
+    const prefs = JSON.parse(localStorage.getItem(PREFS_KEY) || "null");
+    if (prefs && prefs.sort) state.sort = prefs.sort;
+    const wl = JSON.parse(localStorage.getItem(WISHLIST_KEY) || "[]");
+    if (Array.isArray(wl)) state.wishlist = wl.filter((id) => RESTAURANTS.some((r) => r.id === id));
   } catch (e) {}
 }
 function save() {
-  try { localStorage.setItem(STORE_KEY, JSON.stringify({ removedIds: state.removedIds, removedCats: state.removedCats, sort: state.sort })); } catch (e) {}
+  try {
+    localStorage.setItem(PREFS_KEY, JSON.stringify({ sort: state.sort }));
+    localStorage.setItem(WISHLIST_KEY, JSON.stringify(state.wishlist));
+  } catch (e) {}
 }
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const gbp = (n) => "£" + n.toLocaleString("en-GB");
 const rosettes = (n) => '<span class="stars" aria-label="' + n + ' Michelin star' + (n > 1 ? "s" : "") + '">' + '<svg><use href="#rosette"/></svg>'.repeat(n) + "</span>";
+const heart = '<svg aria-hidden="true"><use href="#heart"/></svg>';
 
 const mapsUrl = (r) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent([r.name + " restaurant", r.area, "London"].filter(Boolean).join(", "));
 const isMenu = (r) => r.dinnerType === "menu" && r.dinner != null;
 const priceRank = (r) => (isMenu(r) ? 0 : r.dinner != null ? 1 : 2);
-const visibleAll = () => SAMPLE.filter((r) => !state.removedIds.includes(r.id) && !state.removedCats.includes(r.cat));
+const onWishlist = (r) => state.wishlist.includes(r.id);
 const starMatch = (r) => !state.activeStars || r.stars === state.activeStars;
+const wishMatch = (r) => !state.wishOnly || onWishlist(r);
 const categories = () => {
   const counts = {};
-  visibleAll().forEach((r) => { counts[r.cat] = (counts[r.cat] || 0) + (starMatch(r) ? 1 : 0); });
+  RESTAURANTS.forEach((r) => { counts[r.cat] = (counts[r.cat] || 0) + (starMatch(r) && wishMatch(r) ? 1 : 0); });
   return Object.keys(counts).sort().map((c) => ({ name: c, count: counts[c] }));
 };
 
 function filtered() {
   const q = state.query.trim().toLowerCase();
-  let rows = visibleAll().filter((r) =>
-    starMatch(r) &&
+  const rows = RESTAURANTS.filter((r) =>
+    starMatch(r) && wishMatch(r) &&
     (state.activeCat === "All" || r.cat === state.activeCat) &&
     (!q || [r.name, r.cat, r.area || ""].some((v) => v.toLowerCase().includes(q)))
   );
@@ -458,9 +505,18 @@ function filtered() {
   return rows.sort(sorters[state.sort]);
 }
 
+function renderShowFilter() {
+  const n = state.wishlist.length;
+  $("showFilter").innerHTML =
+    '<button type="button" data-show="all" aria-pressed="' + !state.wishOnly + '">All restaurants</button>' +
+    '<button type="button" data-show="wishlist" aria-pressed="' + state.wishOnly + '"><span class="wish-icon">' + heart + '</span>My wishlist<span class="count">' + n + "</span></button>";
+  $("wishCount").textContent = n;
+  $("wishLink").classList.toggle("has-items", n > 0);
+}
+
 function renderStarFilter() {
-  const all = visibleAll();
-  const opts = [{ s: 0, label: "All", n: all.length }].concat([1, 2, 3].map((s) => ({ s, label: rosettes(s), n: all.filter((r) => r.stars === s).length })));
+  const base = RESTAURANTS.filter(wishMatch);
+  const opts = [{ s: 0, label: "All", n: base.length }].concat([1, 2, 3].map((s) => ({ s, label: rosettes(s), n: base.filter((r) => r.stars === s).length })));
   $("starFilter").innerHTML = opts.map((o) =>
     '<button type="button" data-stars="' + o.s + '" aria-pressed="' + (state.activeStars === o.s) + '"' + (o.s ? ' aria-label="' + o.s + " star" + (o.s > 1 ? "s" : "") + '"' : "") + ">" + o.label + '<span class="count">' + o.n + "</span></button>"
   ).join("");
@@ -468,32 +524,26 @@ function renderStarFilter() {
 
 function renderChips() {
   const cats = categories();
-  if (state.activeCat !== "All" && !cats.some((c) => c.name === state.activeCat)) state.activeCat = "All";
-  const total = visibleAll().filter(starMatch).length;
+  const total = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r)).length;
   let html = '<span class="chip all' + (state.activeCat === "All" ? " active" : "") + '"><button type="button" data-cat="All" aria-pressed="' + (state.activeCat === "All") + '">All<span class="count">' + total + "</span></button></span>";
   cats.forEach((c) => {
     const on = state.activeCat === c.name;
-    html += '<span class="chip' + (on ? " active" : "") + (c.count ? "" : " zero") + '"><button type="button" data-cat="' + esc(c.name) + '" aria-pressed="' + on + '">' + esc(c.name) + '<span class="count">' + c.count + '</span></button><button type="button" class="x" data-delcat="' + esc(c.name) + '" aria-label="Delete cuisine ' + esc(c.name) + '">✕</button></span>';
+    html += '<span class="chip' + (on ? " active" : "") + (c.count ? "" : " zero") + '"><button type="button" data-cat="' + esc(c.name) + '" aria-pressed="' + on + '">' + esc(c.name) + '<span class="count">' + c.count + "</span></button></span>";
   });
   $("chips").innerHTML = html;
 }
 
-function renderConfirm() {
-  const c = state.pendingCat;
-  if (!c) { $("confirmSlot").innerHTML = ""; return; }
-  const n = visibleAll().filter((r) => r.cat === c).length;
-  $("confirmSlot").innerHTML = '<div class="confirm" role="alertdialog" aria-label="Confirm cuisine deletion"><span>Delete <strong>' + esc(c) + "</strong> and its " + n + " restaurant" + (n === 1 ? "" : "s") + '?</span><div class="actions"><button class="btn btn-ghost" type="button" id="cancelDel">Cancel</button><button class="btn btn-danger" type="button" id="confirmDel">Delete cuisine</button></div></div>';
-  $("confirmDel").focus();
-}
-
 function renderLedger() {
   const rows = filtered();
-  const max = Math.max(...visibleAll().filter(isMenu).map((r) => r.dinner), 1);
-  let html = '<div class="row head" role="row"><span role="columnheader">Restaurant</span><span role="columnheader">Cuisine</span><span role="columnheader">Stars</span><span role="columnheader">Google</span><span role="columnheader">Dinner notes</span><span role="columnheader" style="text-align:right">Price</span><span role="columnheader" style="text-align:right">Wine pairing</span><span></span></div>';
+  const max = Math.max(...RESTAURANTS.filter(isMenu).map((r) => r.dinner), 1);
+  let html = '<div class="row head" role="row"><span role="columnheader">Restaurant</span><span role="columnheader">Cuisine</span><span role="columnheader">Stars</span><span role="columnheader">Google</span><span role="columnheader">Dinner notes</span><span role="columnheader" style="text-align:right">Price</span><span role="columnheader" style="text-align:right">Wine pairing</span><span role="columnheader" class="sr-only">Wishlist</span></div>';
   if (!rows.length) {
-    html += '<div class="empty">' + (visibleAll().length ? 'No restaurants match these filters. <button type="button" class="linkish" id="clearFilters">Clear search and filters</button>' : "Your list is empty. Restore all restaurants to start again.") + "</div>";
+    html += '<div class="empty">' + (state.wishOnly && !state.wishlist.length
+      ? "Your wishlist is empty. Tap the heart on any restaurant to save it here."
+      : 'No restaurants match these filters. <button type="button" class="linkish" id="clearFilters">Clear search and filters</button>') + "</div>";
   }
   rows.forEach((r) => {
+    const on = onWishlist(r);
     html += '<div class="row" role="row">' +
       '<span class="name" role="cell">' + esc(r.name) +
         '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="Find ' + esc(r.name) + ' on Google Maps" title="Find on Google Maps"><svg aria-hidden="true"><use href="#pin"/></svg></a>' +
@@ -506,21 +556,18 @@ function renderLedger() {
         (r.dinner == null ? '<span class="num muted">–</span><span class="note">Not listed</span>'
           : '<span class="num">' + gbp(r.dinner) + "</span>" + (r.dinnerType === "main" ? '<span class="note">per main</span>' : "")) + "</span></span>" +
       '<span class="wine num' + (r.wine ? "" : " muted") + '" role="cell"><span class="mlabel">Wine pairing</span>' + (r.wine ? gbp(r.wine) : "–") + "</span>" +
-      '<span class="del-cell" role="cell"><button type="button" class="del" data-del="' + r.id + '" aria-label="Delete ' + esc(r.name) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12M9 7V4h6v3"/></svg></button></span>' +
+      '<span class="wish-cell" role="cell"><button type="button" class="wish" data-wish="' + r.id + '" aria-pressed="' + on + '" aria-label="' + (on ? "Remove " : "Add ") + esc(r.name) + (on ? " from" : " to") + ' your wishlist" title="' + (on ? "Remove from wishlist" : "Add to wishlist") + '">' + heart + "</button></span>" +
       "</div>";
   });
   $("ledger").innerHTML = html;
-  const all = visibleAll().length;
-  $("showing").textContent = "Showing " + rows.length + " of " + all + " restaurants";
-  $("restore").hidden = !(state.removedIds.length || state.removedCats.length);
+  $("showing").textContent = "Showing " + rows.length + " of " + RESTAURANTS.length + " restaurants";
 }
 
 function renderFigures() {
-  const all = visibleAll();
+  const all = RESTAURANTS;
   $("fCount").textContent = all.length;
   const starCounts = [3, 2, 1].map((s) => all.filter((r) => r.stars === s).length);
   $("fCountSub").textContent = starCounts[0] + " three-star · " + starCounts[1] + " two-star · " + starCounts[2] + " one-star";
-  if (!all.length) { ["fMin", "fMax"].forEach((id) => $(id).textContent = "–"); $("fMinSub").textContent = $("fMaxSub").textContent = ""; return; }
   const byPrice = all.filter(isMenu).sort((a, b) => a.dinner - b.dinner);
   if (!byPrice.length) { ["fMin", "fMax"].forEach((id) => $(id).textContent = "–"); $("fMinSub").textContent = $("fMaxSub").textContent = ""; return; }
   const lo = byPrice[0], hi = byPrice[byPrice.length - 1];
@@ -529,9 +576,8 @@ function renderFigures() {
 }
 
 function renderTiers() {
-  const all = visibleAll();
   const tiers = [1, 2, 3].map((s) => {
-    const list = all.filter((r) => r.stars === s);
+    const list = RESTAURANTS.filter((r) => r.stars === s);
     const prices = list.filter(isMenu).map((r) => r.dinner);
     const priced = prices.length;
     const avg = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
@@ -549,12 +595,20 @@ function renderTiers() {
           '<div class="bar"><span style="width:' + (t.avg / top * 100).toFixed(1) + '%"></span></div>' +
           "<dl><dt>Restaurants</dt><dd>" + t.n + "</dd><dt>Range</dt><dd>" + gbp(t.min) + "–" + gbp(t.max) + "</dd><dt>Avg Google rating</dt><dd>" + (t.rating ? t.rating.toFixed(1) : "–") + "</dd>" +
           (prev !== null ? "<dt>vs " + (t.s - 1) + " star" + (t.s - 1 > 1 ? "s" : "") + "</dt><dd>" + (prev >= 0 ? "+" : "−") + gbp(Math.abs(prev)) + "</dd>" : "") + "</dl>"
-        : '<p style="color: var(--muted)">' + (t.n ? "No dinner menu prices for these restaurants." : "No " + names[t.s].toLowerCase() + " restaurants in your list.") + "</p>") +
+        : '<p style="color: var(--muted)">' + (t.n ? "No dinner menu prices for these restaurants." : "No " + names[t.s].toLowerCase() + " restaurants listed.") + "</p>") +
       "</div>";
   }).join("");
 }
 
-function render() { renderStarFilter(); renderChips(); renderConfirm(); renderLedger(); renderFigures(); renderTiers(); }
+function renderMap() {
+  const id = GOOGLE_MY_MAP_ID.trim();
+  $("map").hidden = $("mapNav").hidden = !id;
+  if (!id) return;
+  $("mapFrame").src = "https://www.google.com/maps/d/embed?mid=" + encodeURIComponent(id);
+  $("mapOpen").href = "https://www.google.com/maps/d/viewer?mid=" + encodeURIComponent(id);
+}
+
+function render() { renderShowFilter(); renderStarFilter(); renderChips(); renderLedger(); }
 
 let toastTimer;
 function toast(msg, undo) {
@@ -563,40 +617,42 @@ function toast(msg, undo) {
   $("undo").hidden = !undo;
   $("toast").hidden = false;
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => { $("toast").hidden = true; state.lastUndo = null; }, 6000);
+  toastTimer = setTimeout(() => { $("toast").hidden = true; state.lastUndo = null; }, 5000);
+}
+
+function toggleWish(id) {
+  const r = RESTAURANTS.find((x) => x.id === id);
+  if (onWishlist(r)) {
+    state.wishlist = state.wishlist.filter((x) => x !== id);
+    toast("Removed " + r.name + " from your wishlist", () => { state.wishlist.push(id); });
+  } else {
+    state.wishlist.push(id);
+    toast("Added " + r.name + " to your wishlist", null);
+  }
+  save(); render();
 }
 
 document.addEventListener("click", (e) => {
-  const t = e.target.closest("button");
+  const t = e.target.closest("button, #wishLink");
   if (!t) return;
-  if (t.dataset.stars) {
+  if (t.id === "wishLink") {
+    e.preventDefault();
+    state.wishOnly = true; render();
+    $("compare").scrollIntoView();
+  } else if (t.dataset.wish) {
+    toggleWish(Number(t.dataset.wish));
+  } else if (t.dataset.show) {
+    state.wishOnly = t.dataset.show === "wishlist"; render();
+  } else if (t.dataset.stars) {
     state.activeStars = Number(t.dataset.stars); render();
   } else if (t.id === "clearFilters") {
-    state.activeStars = 0; state.activeCat = "All"; state.query = ""; $("q").value = ""; render();
+    state.activeStars = 0; state.activeCat = "All"; state.wishOnly = false; state.query = ""; $("q").value = ""; render();
   } else if (t.dataset.cat) {
-    state.activeCat = t.dataset.cat; state.pendingCat = null; render();
-    if (t.classList.contains("tag")) document.getElementById("compare").scrollIntoView();
-  } else if (t.dataset.delcat) {
-    state.pendingCat = t.dataset.delcat; renderConfirm();
-  } else if (t.id === "cancelDel") {
-    state.pendingCat = null; renderConfirm();
-  } else if (t.id === "confirmDel") {
-    const c = state.pendingCat;
-    state.removedCats.push(c); state.pendingCat = null;
-    if (state.activeCat === c) state.activeCat = "All";
-    save(); render();
-    toast("Deleted cuisine " + c, () => { state.removedCats = state.removedCats.filter((x) => x !== c); });
-  } else if (t.dataset.del) {
-    const id = Number(t.dataset.del);
-    const r = SAMPLE.find((x) => x.id === id);
-    state.removedIds.push(id); save(); render();
-    toast("Deleted " + r.name, () => { state.removedIds = state.removedIds.filter((x) => x !== id); });
+    state.activeCat = t.dataset.cat; render();
+    if (t.classList.contains("tag")) $("compare").scrollIntoView();
   } else if (t.id === "undo") {
     if (state.lastUndo) { state.lastUndo(); state.lastUndo = null; save(); render(); }
     $("toast").hidden = true;
-  } else if (t.id === "restore") {
-    state.removedIds = []; state.removedCats = []; state.activeCat = "All"; save(); render();
-    toast("Restored all restaurants", null);
   }
 });
 
@@ -616,7 +672,7 @@ $("contactForm").addEventListener("submit", (e) => {
 
 load();
 $("sort").value = state.sort;
-render();
+render(); renderFigures(); renderTiers(); renderMap();
 </script>
 </body>
 </html>

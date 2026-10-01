@@ -112,11 +112,14 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 
 /* Ledger */
 .ledger { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-.row { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.2fr) 74px 80px minmax(0, 1.8fr) 40px; gap: 16px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
+.row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) 70px minmax(0, 1.5fr) minmax(0, 1.7fr) 40px; gap: 16px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
 .row:first-child { border-top: 0; }
 .row.head { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding-block: 10px; background: color-mix(in srgb, var(--green-soft) 50%, var(--surface)); }
 .row .name { font-weight: 600; min-width: 0; }
-.row .area { display: block; font-weight: 400; font-size: .85rem; color: var(--muted); }
+.row .meta { display: block; font-weight: 400; font-size: .85rem; color: var(--muted); }
+.note { display: block; font-family: var(--font-body); font-size: .78rem; line-height: 1.35; color: var(--muted); }
+.lunch { min-width: 0; }
+.dprice { text-align: right; }
 .tag { display: inline-block; font-size: .8rem; padding: 3px 10px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-weight: 500; white-space: nowrap; cursor: pointer; border: 0; }
 .stars { display: inline-flex; gap: 2px; color: var(--gold); }
 .stars svg { width: 15px; height: 15px; }
@@ -186,7 +189,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .row .name { grid-area: name; }
   .row .cat { grid-area: cat; }
   .row .stars-cell { grid-area: stars; justify-self: end; }
-  .row .lunch { grid-area: lunch; display: flex; justify-content: space-between; }
+  .row .lunch { grid-area: lunch; }
+  .row .lunch .mlabel::after { content: " "; }
   .row .dinner { grid-area: dinner; grid-template-columns: auto 1fr auto; }
   .row .del-cell { grid-area: del; }
   .mlabel { display: inline; font-size: .8rem; color: var(--muted); }
@@ -225,12 +229,12 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
     <div>
       <span class="eyebrow" style="color: var(--band-muted)">London · Michelin Guide restaurants</span>
       <h1 style="margin-top: 12px">What a Michelin star <em>costs</em> in London.</h1>
-      <p>Lunch and dinner prices per person at London's starred restaurants, side by side. Search by name or cuisine, filter by category, and remove anything you're not interested in.</p>
+      <p>Lunch and dinner prices per person at London's starred restaurants, side by side. Search by name or cuisine, filter by category, and remove anything you're not interested in. Prices as of January 2025, before service.</p>
     </div>
     <div class="figures" aria-live="polite">
       <div class="figure"><div class="label">Restaurants listed</div><div class="value" id="fCount">0</div><div class="sub" id="fCountSub"></div></div>
-      <div class="figure"><div class="label">Cheapest dinner</div><div class="value" id="fMin">–</div><div class="sub" id="fMinSub"></div></div>
-      <div class="figure"><div class="label">Priciest dinner</div><div class="value" id="fMax">–</div><div class="sub" id="fMaxSub"></div></div>
+      <div class="figure"><div class="label">Cheapest dinner menu</div><div class="value" id="fMin">–</div><div class="sub" id="fMinSub"></div></div>
+      <div class="figure"><div class="label">Priciest dinner menu</div><div class="value" id="fMax">–</div><div class="sub" id="fMaxSub"></div></div>
     </div>
   </div>
 </div>
@@ -242,7 +246,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
         <div>
           <span class="eyebrow">Compare</span>
           <h2 style="margin-top: 6px">Every table, every price</h2>
-          <p>Sample prices for illustration. Bars show dinner cost against the most expensive menu on the list.</p>
+          <p>Dinner is the tasting or set menu price unless marked “per main”. Bars compare each dinner menu with the most expensive on the list.</p>
         </div>
       </div>
 
@@ -265,7 +269,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
       <div class="ledger" id="ledger" role="table" aria-label="Restaurant prices"></div>
       <div class="ledger-foot">
         <span id="showing"></span>
-        <button class="linkish" id="restore" type="button" hidden>Restore all sample restaurants</button>
+        <button class="linkish" id="restore" type="button" hidden>Restore all restaurants</button>
       </div>
     </div>
   </section>
@@ -276,7 +280,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
         <div>
           <span class="eyebrow">By stars</span>
           <h2 style="margin-top: 6px">How much each extra star adds</h2>
-          <p>Average dinner price for the restaurants currently in your list, grouped by Michelin stars.</p>
+          <p>Average dinner menu price for the restaurants currently in your list, grouped by Michelin stars. À la carte restaurants are counted but left out of the averages.</p>
         </div>
       </div>
       <div class="tiers" id="tiers"></div>
@@ -293,16 +297,16 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
       </div>
       <div class="method">
         <div>
-          <h3>Per person, food only</h3>
-          <p>Every figure is the menu price for one guest. Wine pairings, soft-drink pairings and supplements such as caviar or truffle courses are left out.</p>
+          <h3>Per person, before service</h3>
+          <p>Every figure is for one guest and excludes service charge, which most London restaurants add at 12.5–15%. Supplements such as caviar or truffle courses are left out.</p>
         </div>
         <div>
-          <h3>Before service charge</h3>
-          <p>Most London restaurants add a discretionary 12.5–15% service charge. We show the menu price so restaurants compare on the same basis.</p>
+          <h3>Dinner and wine</h3>
+          <p>Dinner is the tasting menu where there is one. Where a restaurant is à la carte only, we show the average main course price, marked “per main”. Wine is the cheapest pairing on offer.</p>
         </div>
         <div>
           <h3>Lunch versus dinner</h3>
-          <p>Dinner is the full tasting menu, or a typical three-course spend where there isn't one. Lunch is the set lunch, shown only where the restaurant offers one.</p>
+          <p>Lunch is the set lunch menu. Where there isn't one, we show a shorter lunch tasting menu if offered. The note under each price says what you get and whether it runs at weekends.</p>
         </div>
       </div>
     </div>
@@ -337,7 +341,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
         </div>
         <div class="field full">
           <label for="cMsg">Message</label>
-          <textarea id="cMsg" name="message" required placeholder="e.g. Kol's tasting menu is now £155 per person."></textarea>
+          <textarea id="cMsg" name="message" required placeholder="e.g. KOL's tasting menu is now £195 per person."></textarea>
           <span class="err" id="cMsgErr"></span>
         </div>
         <div class="form-foot">
@@ -352,7 +356,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 <footer>
   <div class="wrap">
     <span>The Starred Bill · London edition</span>
-    <span>Sample data for illustration. Check with each restaurant before booking.</span>
+    <span>Prices as of January 2025. Check with each restaurant before booking.</span>
   </div>
 </footer>
 
@@ -362,7 +366,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 <script>
 const SAMPLE = window.RESTAURANTS || [];
 
-const STORE_KEY = "starred-bill-v1";
+const STORE_KEY = "starred-bill-v2";
 const state = { removedIds: [], removedCats: [], activeCat: "All", query: "", sort: "price-asc", pendingCat: null, lastUndo: null };
 
 function load() {
@@ -384,6 +388,8 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 const gbp = (n) => "£" + n.toLocaleString("en-GB");
 const rosettes = (n) => '<span class="stars" aria-label="' + n + ' Michelin star' + (n > 1 ? "s" : "") + '">' + '<svg><use href="#rosette"/></svg>'.repeat(n) + "</span>";
 
+const isMenu = (r) => r.dinnerType === "menu" && r.dinner != null;
+const priceRank = (r) => (isMenu(r) ? 0 : r.dinner != null ? 1 : 2);
 const visibleAll = () => SAMPLE.filter((r) => !state.removedIds.includes(r.id) && !state.removedCats.includes(r.cat));
 const categories = () => {
   const counts = {};
@@ -398,9 +404,9 @@ function filtered() {
     (!q || r.name.toLowerCase().includes(q) || r.cat.toLowerCase().includes(q))
   );
   const sorters = {
-    "price-asc": (a, b) => a.dinner - b.dinner,
-    "price-desc": (a, b) => b.dinner - a.dinner,
-    "stars": (a, b) => b.stars - a.stars || b.dinner - a.dinner,
+    "price-asc": (a, b) => priceRank(a) - priceRank(b) || a.dinner - b.dinner,
+    "price-desc": (a, b) => priceRank(a) - priceRank(b) || b.dinner - a.dinner,
+    "stars": (a, b) => b.stars - a.stars || priceRank(a) - priceRank(b) || b.dinner - a.dinner,
     "name": (a, b) => a.name.localeCompare(b.name)
   };
   return rows.sort(sorters[state.sort]);
@@ -428,18 +434,21 @@ function renderConfirm() {
 
 function renderLedger() {
   const rows = filtered();
-  const max = Math.max(...visibleAll().map((r) => r.dinner), 1);
-  let html = '<div class="row head" role="row"><span role="columnheader">Restaurant</span><span role="columnheader">Category</span><span role="columnheader">Stars</span><span role="columnheader" class="price">Lunch</span><span role="columnheader" style="text-align:right">Dinner</span><span></span></div>';
+  const max = Math.max(...visibleAll().filter(isMenu).map((r) => r.dinner), 1);
+  let html = '<div class="row head" role="row"><span role="columnheader">Restaurant</span><span role="columnheader">Category</span><span role="columnheader">Stars</span><span role="columnheader">Lunch</span><span role="columnheader" style="text-align:right">Dinner</span><span></span></div>';
   if (!rows.length) {
-    html += '<div class="empty">' + (visibleAll().length ? "No restaurants match “" + esc(state.query) + "”. Try a different name or category." : "Your list is empty. Restore the sample restaurants to start again.") + "</div>";
+    html += '<div class="empty">' + (visibleAll().length ? "No restaurants match “" + esc(state.query) + "”. Try a different name or category." : "Your list is empty. Restore all restaurants to start again.") + "</div>";
   }
   rows.forEach((r) => {
     html += '<div class="row" role="row">' +
-      '<span class="name" role="cell">' + esc(r.name) + '<span class="area">' + esc(r.area) + "</span></span>" +
+      '<span class="name" role="cell">' + esc(r.name) + '<span class="meta">' + [r.dinnerNote, r.rating ? r.rating.toFixed(1) + " on Google" : ""].filter(Boolean).map(esc).join(" · ") + "</span></span>" +
       '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cat) + '" title="Show only ' + esc(r.cat) + '">' + esc(r.cat) + "</button></span>" +
       '<span class="stars-cell" role="cell">' + rosettes(r.stars) + "</span>" +
-      '<span class="lunch price num' + (r.lunch ? "" : " muted") + '" role="cell"><span class="mlabel">Set lunch</span>' + (r.lunch ? gbp(r.lunch) : "–") + "</span>" +
-      '<span class="dinner" role="cell"><span class="mlabel">Dinner</span><span class="bar"><span style="width:' + (r.dinner / max * 100).toFixed(1) + '%"></span></span><span class="num price">' + gbp(r.dinner) + "</span></span>" +
+      '<span class="lunch" role="cell"><span class="mlabel">Lunch</span>' +
+        (r.lunch ? '<span class="num">' + gbp(r.lunch) + '</span><span class="note">' + [r.lunchNote, r.weekend].filter(Boolean).map(esc).join(" · ") + "</span>" : '<span class="num price muted">–</span><span class="note">No set lunch</span>') + "</span>" +
+      '<span class="dinner" role="cell"><span class="mlabel">Dinner</span><span class="bar"><span style="width:' + (isMenu(r) ? (r.dinner / max * 100).toFixed(1) : 0) + '%"></span></span><span class="dprice">' +
+        (r.dinner == null ? '<span class="num muted">–</span><span class="note">Price not listed</span>'
+          : '<span class="num">' + gbp(r.dinner) + "</span>" + (r.dinnerType === "main" ? '<span class="note">per main</span>' : r.wine ? '<span class="note">+' + gbp(r.wine) + " wine</span>" : "")) + "</span></span>" +
       '<span class="del-cell" role="cell"><button type="button" class="del" data-del="' + r.id + '" aria-label="Delete ' + esc(r.name) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12M9 7V4h6v3"/></svg></button></span>' +
       "</div>";
   });
@@ -455,7 +464,8 @@ function renderFigures() {
   const starCounts = [3, 2, 1].map((s) => all.filter((r) => r.stars === s).length);
   $("fCountSub").textContent = starCounts[0] + " three-star · " + starCounts[1] + " two-star · " + starCounts[2] + " one-star";
   if (!all.length) { ["fMin", "fMax"].forEach((id) => $(id).textContent = "–"); $("fMinSub").textContent = $("fMaxSub").textContent = ""; return; }
-  const byPrice = [...all].sort((a, b) => a.dinner - b.dinner);
+  const byPrice = all.filter(isMenu).sort((a, b) => a.dinner - b.dinner);
+  if (!byPrice.length) { ["fMin", "fMax"].forEach((id) => $(id).textContent = "–"); $("fMinSub").textContent = $("fMaxSub").textContent = ""; return; }
   const lo = byPrice[0], hi = byPrice[byPrice.length - 1];
   $("fMin").textContent = gbp(lo.dinner); $("fMinSub").textContent = lo.name;
   $("fMax").textContent = gbp(hi.dinner); $("fMaxSub").textContent = hi.name;
@@ -465,22 +475,23 @@ function renderTiers() {
   const all = visibleAll();
   const tiers = [1, 2, 3].map((s) => {
     const list = all.filter((r) => r.stars === s);
-    const prices = list.map((r) => r.dinner);
+    const prices = list.filter(isMenu).map((r) => r.dinner);
+    const priced = prices.length;
     const avg = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
     const lunches = list.filter((r) => r.lunch);
-    return { s, n: list.length, avg, min: Math.min(...prices), max: Math.max(...prices), lunchN: lunches.length };
+    return { s, n: list.length, priced, avg, min: Math.min(...prices), max: Math.max(...prices), lunchN: lunches.length };
   });
   const top = Math.max(...tiers.map((t) => t.avg), 1);
   const names = { 1: "One star", 2: "Two stars", 3: "Three stars" };
   $("tiers").innerHTML = tiers.map((t, i) => {
-    const prev = i > 0 && tiers[i - 1].n && t.n ? t.avg - tiers[i - 1].avg : null;
+    const prev = i > 0 && tiers[i - 1].priced && t.priced ? t.avg - tiers[i - 1].avg : null;
     return '<div class="tier"><div class="top"><h3>' + names[t.s] + "</h3>" + rosettes(t.s) + "</div>" +
-      (t.n
+      (t.priced
         ? '<div class="avg">' + gbp(t.avg) + "<small>avg dinner</small></div>" +
           '<div class="bar"><span style="width:' + (t.avg / top * 100).toFixed(1) + '%"></span></div>' +
           "<dl><dt>Restaurants</dt><dd>" + t.n + "</dd><dt>Range</dt><dd>" + gbp(t.min) + "–" + gbp(t.max) + "</dd><dt>Offer set lunch</dt><dd>" + t.lunchN + " of " + t.n + "</dd>" +
           (prev !== null ? "<dt>vs " + (t.s - 1) + " star" + (t.s - 1 > 1 ? "s" : "") + "</dt><dd>" + (prev >= 0 ? "+" : "−") + gbp(Math.abs(prev)) + "</dd>" : "") + "</dl>"
-        : '<p style="color: var(--muted)">No ' + names[t.s].toLowerCase() + " restaurants in your list.</p>") +
+        : '<p style="color: var(--muted)">' + (t.n ? "No dinner menu prices for these restaurants." : "No " + names[t.s].toLowerCase() + " restaurants in your list.") + "</p>") +
       "</div>";
   }).join("");
 }
@@ -523,7 +534,7 @@ document.addEventListener("click", (e) => {
     $("toast").hidden = true;
   } else if (t.id === "restore") {
     state.removedIds = []; state.removedCats = []; state.activeCat = "All"; save(); render();
-    toast("Restored all sample restaurants", null);
+    toast("Restored all restaurants", null);
   }
 });
 

@@ -94,7 +94,9 @@ const I18N = {
     wishTitle: "Your wishlist", wishText: "Restaurants you've saved from any destination. Saved in this browser only.",
     wishEmptyHome: "Nothing saved yet. Tap the heart next to any restaurant on a destination page to save it here.",
     wishRemoveShort: "Remove",
-    infoCompare: "Compare prices in {place}"
+    infoCompare: "Compare prices in {place}",
+    installApp: "Install app",
+    installTipIos: "To install: tap the Share button (the square with an arrow) in Safari, then choose “Add to Home Screen”."
   },
   zh: {
     navCompare: "比較", navMap: "地圖", navStars: "星級", navMethod: "說明", navContact: "聯絡我們", navDestinations: "目的地", wishlist: "願望清單",
@@ -179,7 +181,9 @@ const I18N = {
     wishTitle: "你的願望清單", wishText: "你在各目的地收藏的餐廳，只儲存在這個瀏覽器中。",
     wishEmptyHome: "目前還沒有收藏。在任一目的地頁面點選餐廳旁的愛心，即可加入這裡。",
     wishRemoveShort: "移除",
-    infoCompare: "比較{place}的價格"
+    infoCompare: "比較{place}的價格",
+    installApp: "加到主畫面",
+    installTipIos: "安裝方式：點選 Safari 的分享按鈕（方框加箭頭），再選擇「加入主畫面」。"
   }
 };
 // Cuisine names in Chinese for restaurants whose data has no cuisineZh.
@@ -249,6 +253,9 @@ function applyI18n() {
   $("brandLink").href = withLang("/");
   $("wishLink").href = document.body.classList.contains("home") ? "#wishlist" : withLang("/") + "#wishlist";
   $("wishLink").setAttribute("aria-label", t("wishTitle"));
+  $("installBtn").textContent = t("installApp");
+  const tip = $("installTip");
+  if (tip) tip.textContent = t("installTipIos");
 }
 function renderWishCount() {
   const n = loadWishlist().filter((id) => DATA.knownIds ? DATA.knownIds.includes(id) : true).length;
@@ -278,4 +285,33 @@ function renderLegend(list) {
   $("mapLegend").setAttribute("aria-label", t("legendAria"));
   $("mapLegend").innerHTML = [1, 2, 3].map((s) =>
     '<li><span class="pin-num" style="--pin:' + MAP_PIN_COLOURS[s] + '" aria-hidden="true">' + s + "</span><span>" + esc(t("legendItem", { c: colours[s - 1], n: s })) + '</span><span class="count">' + list.filter((r) => r.stars === s).length + "</span></li>").join("");
+}
+
+// ---------- Install as an app ----------
+// Android and desktop Chrome offer an install prompt; iPhone and iPad need Safari's "Add to Home Screen".
+let installPrompt = null;
+const isInstalled = () => navigator.standalone || matchMedia("(display-mode: standalone)").matches;
+const isIos = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); installPrompt = e; $("installBtn").hidden = false; });
+window.addEventListener("appinstalled", () => { installPrompt = null; $("installBtn").hidden = true; });
+if (isIos() && !isInstalled()) $("installBtn").hidden = false;
+$("installBtn").addEventListener("click", async () => {
+  if (installPrompt) {
+    installPrompt.prompt();
+    await installPrompt.userChoice;
+    installPrompt = null;
+    $("installBtn").hidden = true;
+    return;
+  }
+  let tip = $("installTip");
+  if (tip) { tip.remove(); return; }
+  tip = document.createElement("p");
+  tip.id = "installTip";
+  tip.className = "install-tip";
+  tip.setAttribute("role", "status");
+  tip.textContent = t("installTipIos");
+  $("installBtn").closest(".wrap").appendChild(tip);
+});
+if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
 }

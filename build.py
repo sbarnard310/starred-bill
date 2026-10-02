@@ -389,6 +389,8 @@ def build_home():
 def build_extras():
     shutil.copy2(SRC / "favicon.svg", OUT / "favicon.svg")
     shutil.copy2(SRC / "404.html", OUT / "404.html")
+    shutil.copy2(SRC / "manifest.webmanifest", OUT / "manifest.webmanifest")
+    shutil.copytree(SRC / "icons", OUT / "icons")
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
     urls = ["/"] + [p["path"] for p in by_size(pages)]
@@ -396,6 +398,17 @@ def build_extras():
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{SITE_URL}{u}</loc></url>\n" for u in urls) + "</urlset>\n", "utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n", "utf-8")
+
+
+def build_service_worker():
+    """The offline helper. Its version changes whenever any file in the site does, so phones pick up updates."""
+    digest = hashlib.sha1()
+    for f in sorted(OUT.rglob("*")):
+        if f.is_file():
+            digest.update(str(f.relative_to(OUT)).encode() + f.read_bytes())
+    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [f"/assets/{name}?v={v}" for name, v in sorted(assets.items())]
+    sw = (SRC / "sw.js").read_text("utf-8").replace("{{version}}", digest.hexdigest()[:12]).replace("{{precache}}", json.dumps(precache))
+    (OUT / "sw.js").write_text(sw, "utf-8")
 
 
 if OUT.exists():
@@ -406,6 +419,7 @@ for p in pages:
     build_place(p)
 build_home()
 build_extras()
+build_service_worker()
 print(f"Built {len(pages) + 1} pages from {len(restaurants)} restaurants into {OUT.relative_to(ROOT)}/:")
 print("  /  (homepage)")
 for p in sorted(pages, key=lambda p: p["path"]):

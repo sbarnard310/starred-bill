@@ -49,7 +49,7 @@ p { margin: 0; }
 button, input, select, textarea { font: inherit; color: inherit; }
 
 /* Header */
-.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--band); color: var(--band-ink); border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); }
+.site-header { position: sticky; top: 0; padding-top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--band); color: var(--band-ink); border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; font-family: var(--font-display); font-size: 1.35rem; }
 .brand svg { width: 22px; height: 22px; color: var(--gold); }
@@ -329,3 +329,8 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
   .wl-meta { grid-column: 1; }
   .wl-price { grid-row: 1; grid-column: 2; }
 }
+
+/* Install as an app */
+.install-btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--gold); background: none; color: var(--gold); border-radius: 999px; font-size: .82rem; font-weight: 600; padding: 5px 12px; cursor: pointer; line-height: 1.4; }
+.install-btn:hover { background: color-mix(in srgb, var(--gold) 15%, transparent); }
+.install-tip { flex-basis: 100%; margin: 0; padding: 10px 14px; border-radius: 8px; background: color-mix(in srgb, var(--band-ink) 10%, transparent); color: var(--band-ink); font-size: .88rem; }

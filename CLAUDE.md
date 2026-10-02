@@ -1,0 +1,45 @@
+# The Starred Bill: notes for Claude
+
+Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, with a page per country, region and city. Live at https://starredbill.com (GitHub repo sbarnard310/starred-bill). English and Traditional Chinese throughout. README.md documents every data field. Keep it in step when fields change.
+
+## How it's built
+- `content/` is the data, edited by the owner in Pages CMS (app.pagescms.org) or on GitHub. There is one JSON file per restaurant in `content/restaurants/<country>/`, one per place in `content/places/`, plus `currencies.json` and `site.json`.
+- `src/` holds the HTML templates (`place.html`, `home.html`) and the shared `assets/`:
+  - `common.js` has the settings, all English/Chinese wording (`I18N`) and helpers.
+  - `place.js` runs destination pages and `home.js` runs the homepage.
+  - `site.css` holds all styles.
+- `build.py` uses only the standard library and must stay **Python 3.9 compatible**, because that's the Mac's version. It checks the data, then writes `_site/`: one page per place with at least one starred restaurant, the homepage, the sitemap and the 404 page. Bad data stops the build with a plain-English list of problems.
+- `.github/workflows/deploy.yml` builds and publishes on every push to `main`. Pages `build_type` is `workflow`, and the custom domain is set in the repo's Pages settings. DNS is at Namecheap.
+- `.pages.yml` defines the Pages CMS forms. Any new data field needs adding there too (`settings.content.merge: true` keeps unknown keys). The editor saves blank fields as `""`, which `tidy()` in build.py drops.
+
+## Working on it
+- Preview: `python3 build.py && python3 -m http.server 8799 --bind 127.0.0.1 -d _site`, then use the browser pane at http://localhost:8799.
+  - Port 8765 belongs to another site.
+  - The Google key only allows localhost on 8799.
+  - There's no node, npm or Homebrew on this Mac.
+- Check changes in English and Chinese (`?lang=zh`), in each currency, on Dinner and Lunch, and at phone width (no sideways scroll).
+- Publish: commit to `main` and push. The `gh` CLI is at `/usr/local/bin/gh` (add it to PATH). Watch the run with `gh run list --workflow deploy.yml` / `gh run watch`.
+- Commit messages: a short imperative subject. Never commit `_site/`.
+
+## Data rules
+- A restaurant file's name is its id, and visitors' wishlists store it. Never rename a published restaurant file.
+- Prices are numbers in the country's currency, per person, before service. Record where each price came from:
+  - `sourceType`: `site` (the restaurant's own website), `press` (a review or booking site) or `none`.
+  - `source`: the link.
+  - The lunch equivalents are `lunchSourceType` and `lunchSource`.
+- When a restaurant loses its stars or closes, keep it: set `stars` to 0 and fill in `status`, `formerStars` and `statusNote`.
+- A restaurant's `city` is a place id. It shows on that place and on every place above it, plus any `group` that includes them. A `country` can hold restaurants directly, e.g. Hong Kong.
+- Each country's currency must be in `content/currencies.json`.
+- Sources used so far:
+  - Stars, addresses and map positions: guide.michelin.com, extracted in the browser.
+  - Google ratings: Places API (New) Text Search, sending `Referer: https://starredbill.com/` because the key only accepts set websites.
+  - Prices: restaurant websites first, then recent reviews and booking sites.
+
+## Google Maps key
+It's a browser key in `src/assets/common.js`, restricted to these addresses:
+- `https://starredbill.com/*`
+- `https://www.starredbill.com/*`
+- `https://sbarnard310.github.io/*`
+- `http://localhost:8799/*`
+
+It's used for the maps (Maps JavaScript API) and restaurant photos (Places API (New)). The Google Cloud project is on the free trial, so quotas can't be capped yet. If it's upgraded, set daily caps.

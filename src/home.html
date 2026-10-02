@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>
+// Old links such as /?city=taiwan go to that destination's own page.
+(function () {
+  var p = new URLSearchParams(location.search), to = { london: "/uk/london/", taiwan: "/taiwan/" }[p.get("city")];
+  if (to) { p.delete("city"); var q = p.toString(); location.replace(to + (q ? "?" + q : "") + location.hash); }
+})();
+</script>
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500&display=swap">
+<link rel="stylesheet" href="{{asset:site.css}}">
+</head>
+<body class="home">
+{{icons}}
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" id="brandLink"><svg><use href="#rosette"/></svg>The Starred Bill</a>
+    <div class="header-actions">
+      <nav class="nav" aria-label="Sections">
+        <a href="#map" data-i18n="navMap">Map</a>
+        <a href="#destinations" data-i18n="navDestinations">Destinations</a>
+      </nav>
+      <a href="#wishlist" class="wish-link" id="wishLink"><svg aria-hidden="true"><use href="#heart"/></svg><span data-i18n="wishlist">Wishlist</span> <span id="wishCount">0</span></a>
+    </div>
+  </div>
+  <div class="switchbar">
+    <div class="wrap">
+      <span class="switch-note" data-i18n="homeEyebrow">{{eyebrow}}</span>
+      <div class="hseg-right">
+        <div class="hseg" role="group" aria-label="Language / 語言" id="langSwitch"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1 data-i18n="homeH1">{{h1}}</h1>
+      <p data-i18n="homeText">{{heroText}}</p>
+      <div class="home-search">
+        <label class="search" for="homeQ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="homeQ" type="search" autocomplete="off" aria-controls="results">
+        </label>
+        <ul class="results" id="results" hidden></ul>
+      </div>
+    </div>
+    <div class="figures" aria-live="polite">
+      <div class="figure"><div class="label" data-i18n="figRestaurants"></div><div class="value" id="fRestaurants">0</div><div class="sub" id="fRestaurantsSub"></div></div>
+      <div class="figure"><div class="label" data-i18n="figDestinations"></div><div class="value" id="fDest">0</div><div class="sub" id="fDestSub"></div></div>
+      <div class="figure"><div class="label" data-i18n="figUpdated"></div><div class="value" id="fUpdated">–</div><div class="sub" data-i18n="figUpdatedSub"></div></div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section id="map">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-i18n="navMap"></span>
+          <h2 style="margin-top: 6px" data-i18n="mapHomeTitle"></h2>
+          <p data-i18n="mapHomeText"></p>
+        </div>
+        <div class="seg" id="mapStars" role="group" aria-labelledby="mapStarsLabel"></div>
+        <span class="sr-only" id="mapStarsLabel" data-i18n="fStars"></span>
+      </div>
+      <div class="map-canvas map-world" id="mapCanvas" role="region"><p class="map-wait" data-i18n="mapWait"></p></div>
+      <div class="map-foot">
+        <ul class="map-legend" id="mapLegend"></ul>
+        <span class="map-status" id="mapStatus" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="destinations">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-i18n="navDestinations"></span>
+          <h2 style="margin-top: 6px" data-i18n="destTitle"></h2>
+          <p data-i18n="destText"></p>
+        </div>
+      </div>
+      <div class="dest-grid" id="destGrid">{{destinations}}</div>
+      <div id="collections"></div>
+    </div>
+  </section>
+
+  <section id="wishlist">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-i18n="wishlist"></span>
+          <h2 style="margin-top: 6px" data-i18n="wishTitle"></h2>
+          <p data-i18n="wishText"></p>
+        </div>
+      </div>
+      <div id="wishList"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>The Starred Bill</span>
+    <span data-i18n="footNote"></span>
+  </div>
+</footer>
+
+<script id="page-data" type="application/json">{{data}}</script>
+<script src="https://unpkg.com/@googlemaps/markerclusterer@2.6.2/dist/index.min.js"></script>
+<script src="{{asset:common.js}}"></script>
+<script src="{{asset:home.js}}"></script>
+</body>
+</html>

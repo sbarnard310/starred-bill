@@ -1,0 +1,11 @@
+{
+  "name": "Lyle's",
+  "city": "london",
+  "area": "Shoreditch",
+  "stars": 0,
+  "cuisine": "Modern British",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in May 2025"
+}

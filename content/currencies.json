@@ -1,0 +1,11 @@
+{
+  "note": "Fallback exchange rates (units per 1 US dollar), used only if the live rates can't be fetched. Add a currency here before using it in places.json.",
+  "rateDate": "2026-10-02",
+  "switchable": ["GBP", "EUR", "USD"],
+  "currencies": {
+    "USD": { "symbol": "US$", "perUSD": 1 },
+    "GBP": { "symbol": "£", "perUSD": 0.757127 },
+    "EUR": { "symbol": "€", "perUSD": 0.887893 },
+    "TWD": { "symbol": "NT$", "perUSD": 31.995 }
+  }
+}

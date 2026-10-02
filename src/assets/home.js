@@ -1,0 +1,155 @@
+// The homepage: search, a world map of every starred restaurant, destination cards and the wishlist.
+
+const ALL = DATA.restaurants;
+const homeState = { stars: 0 };
+const cityLink = (r) => withLang(r.cityPath) + "&q=" + encodeURIComponent(r.name);
+const priceLabel = (r) => r.dinner == null ? t("infoNoPrice")
+  : localMoney(r.dinner, r.cur) + " " + (r.dinnerType === "main" ? t("perMain") : r.dinnerType === "spend" ? t("typicalSpend") : t("infoDinner"));
+const starCountsOf = (list) => { const n = [0, 1, 2, 3].map((s) => list.filter((r) => r.stars === s).length); return t("starCounts").replace("{3}", n[3]).replace("{2}", n[2]).replace("{1}", n[1]); };
+
+function applyStatic() {
+  applyI18n();
+  document.title = t("homeTitle");
+  $("homeQ").placeholder = t("homeSearchPh");
+  $("homeQ").setAttribute("aria-label", t("homeSearchLabel"));
+  $("mapCanvas").setAttribute("aria-label", t("mapLabel"));
+}
+function renderFigures() {
+  $("fRestaurants").textContent = ALL.length;
+  $("fRestaurantsSub").textContent = starCountsOf(ALL);
+  const cities = DATA.places.filter((p) => p.type === "city").length;
+  $("fDest").textContent = cities;
+  $("fDestSub").textContent = t("countriesN", { n: DATA.countries.length }) + " · " + t("citiesN", { n: cities });
+  $("fUpdated").textContent = monthYear(DATA.updated);
+}
+
+// ---------- Destinations ----------
+function destCard(c) {
+  const alt = zh() ? c.name : c.nameZh;
+  return '<article class="dest">' +
+    '<div class="dest-top"><h3><a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a></h3>" + (alt ? '<span class="dest-alt">' + esc(alt) + "</span>" : "") + "</div>" +
+    '<p class="dest-meta">' + esc(t("destRestaurants", { n: c.n })) + " · " + esc(starCountsOf(ALL.filter((r) => r.country === c.id))) + "</p>" +
+    (c.from ? '<p class="dest-from">' + esc(t("destFrom", { p: localMoney(c.from.price, c.from.cur) })) + ' <span class="dest-from-name">' + esc(pick(c.from, "name")) + "</span></p>" : "") +
+    (c.cities.length > 1 || (c.cities[0] && c.cities[0].path !== c.path) ? '<div class="dest-cities">' + c.cities.map((p) =>
+      '<a class="city-link" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>").join("") + "</div>" : "") +
+    '<a class="dest-open" href="' + withLang(c.path) + '">' + esc(t("destOpen", { place: pick(c, "name") })) + " →</a></article>";
+}
+function renderDestinations() {
+  $("destGrid").innerHTML = DATA.countries.map(destCard).join("");
+  $("collections").innerHTML = !DATA.groups.length ? "" :
+    '<h3 class="sub-head">' + t("collectionsTitle") + '</h3><div class="dest-cities">' + DATA.groups.map((g) =>
+      '<a class="city-link" href="' + withLang(g.path) + '">' + esc(pick(g, "name")) + '<span class="count">' + g.n + "</span></a>").join("") + "</div>";
+}
+
+// ---------- Wishlist ----------
+function renderWishlist() {
+  const list = loadWishlist().map((id) => ALL.find((r) => r.id === id)).filter(Boolean);
+  renderWishCount();
+  if (!list.length) { $("wishList").innerHTML = '<p class="empty-note">' + t("wishEmptyHome") + "</p>"; return; }
+  $("wishList").innerHTML = '<ul class="wish-list">' + list.map((r) =>
+    '<li><a class="wl-name" href="' + cityLink(r) + '">' + esc(nameOf(r)) + '</a><span class="wl-meta">' + rosettes(r.stars) + " " + esc(cuisineOf(r)) + " · " + esc(pick(r, "cityName")) + "</span>" +
+    '<span class="wl-price num">' + esc(r.dinner == null ? "–" : localMoney(r.dinner, r.cur)) + "</span>" +
+    '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '" aria-label="' + esc(t("wishRemove", { name: nameOf(r) })) + '">' + t("wishRemoveShort") + "</button></li>").join("") + "</ul>";
+}
+
+// ---------- Search ----------
+function renderResults() {
+  const q = $("homeQ").value.trim().toLowerCase();
+  if (!q) { $("results").hidden = true; $("results").innerHTML = ""; return; }
+  const has = (...xs) => xs.filter(Boolean).join(" ").toLowerCase().includes(q);
+  const places = DATA.places.filter((p) => has(p.name, p.nameZh)).slice(0, 4).map((p) =>
+    '<li><a href="' + withLang(p.path) + '"><span>' + esc(pick(p, "name")) + '</span><span class="sub">' + esc(t("destRestaurants", { n: p.n })) + "</span></a></li>");
+  const rests = ALL.filter((r) => has(r.name, r.nameZh, r.cuisine, r.cuisineZh, CUISINE_ZH[r.cuisine], r.cityName, r.cityNameZh)).slice(0, 8 - places.length).map((r) =>
+    '<li><a href="' + cityLink(r) + '"><span>' + esc(nameOf(r)) + " " + rosettes(r.stars) + '</span><span class="sub">' + esc(cuisineOf(r)) + " · " + esc(pick(r, "cityName")) + " · " + esc(priceLabel(r)) + "</span></a></li>");
+  const items = places.concat(rests);
+  $("results").innerHTML = items.length ? items.join("") : '<li class="none">' + esc(t("searchNone", { q: $("homeQ").value.trim() })) + "</li>";
+  $("results").hidden = false;
+}
+
+// ---------- World map ----------
+const world = { map: null, info: null, markers: [], clusterer: null };
+function infoHtml(r) {
+  return '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' +
+    '<div style="font-weight:700;font-size:15px">' + esc(nameOf(r)) + "</div>" +
+    (altNameOf(r) ? '<div style="font-size:12px;color:#5A6E62">' + esc(altNameOf(r)) + "</div>" : "") +
+    '<div style="color:#B3862B;font-size:13px">' + "✱".repeat(r.stars) + ' <span style="color:#5A6E62">' + esc(cuisineOf(r)) + " · " + esc(pick(r, "cityName")) + "</span></div>" +
+    '<div style="margin-top:6px;font-size:13px">' + esc(priceLabel(r)) + "</div>" +
+    (r.rating ? '<div style="font-size:13px;color:#5A6E62">★ ' + r.rating.toFixed(1) + " " + t("infoGoogle") + "</div>" : "") +
+    '<a href="' + cityLink(r) + '" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + esc(t("infoCompare", { place: pick(r, "cityName") })) + " →</a></div>";
+}
+function clusterIcon(count) {
+  const size = count < 10 ? 34 : count < 50 ? 42 : 50;
+  const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='" + size + "' height='" + size + "' viewBox='0 0 50 50'><circle cx='25' cy='25' r='23' fill='#1E6142' fill-opacity='.92' stroke='#ffffff' stroke-width='3'/></svg>";
+  return { url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg), scaledSize: new google.maps.Size(size, size), anchor: new google.maps.Point(size / 2, size / 2) };
+}
+async function initWorldMap() {
+  try {
+    await loadGoogle();
+    const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+    const { Marker } = await google.maps.importLibrary("marker");
+    $("mapCanvas").innerHTML = "";
+    $("mapCanvas").style.display = "block";
+    world.map = new Map($("mapCanvas"), { center: { lat: 35, lng: 40 }, zoom: 2, minZoom: 2, mapTypeControl: false, streetViewControl: false, clickableIcons: false, gestureHandling: "cooperative" });
+    world.info = new InfoWindow();
+    world.markers = ALL.filter((r) => r.lat != null && r.lng != null).map((r) => {
+      const m = new Marker({ position: { lat: r.lat, lng: r.lng }, title: nameOf(r), icon: pinIcon(r.stars), zIndex: r.stars * 10 });
+      m.addListener("click", () => { world.info.setContent(infoHtml(r)); world.info.open({ anchor: m, map: world.map }); });
+      m.r = r;
+      return m;
+    });
+    if (window.markerClusterer) {
+      world.clusterer = new markerClusterer.MarkerClusterer({
+        map: world.map,
+        renderer: { render: ({ count, position }) => new Marker({ position, icon: clusterIcon(count), label: { text: String(count), color: "#ffffff", fontSize: "13px", fontWeight: "700" }, zIndex: 1000 + count }) }
+      });
+    }
+    updateWorldMap(true);
+  } catch (e) {
+    $("mapCanvas").innerHTML = '<p class="map-wait">' + t("mapError") + "</p>";
+  }
+}
+function updateWorldMap(fit) {
+  if (!world.map) return;
+  const shown = world.markers.filter((m) => !homeState.stars || m.r.stars === homeState.stars);
+  world.info.close();
+  if (world.clusterer) { world.clusterer.clearMarkers(); world.clusterer.addMarkers(shown); }
+  else world.markers.forEach((m) => m.setMap(shown.includes(m) ? world.map : null));
+  $("mapStatus").textContent = shown.length ? t("mapShowing", { n: shown.length }) : t("mapNone");
+  if (fit && shown.length > 1) {
+    const b = new google.maps.LatLngBounds();
+    shown.forEach((m) => b.extend(m.getPosition()));
+    world.map.fitBounds(b, 40);
+  }
+}
+function renderMapStars() {
+  const opts = [{ s: 0, label: t("all"), n: ALL.length }].concat([1, 2, 3].map((s) => ({ s, label: rosettes(s), n: ALL.filter((r) => r.stars === s).length })));
+  $("mapStars").innerHTML = opts.map((o) =>
+    '<button type="button" data-mapstars="' + o.s + '" aria-pressed="' + (homeState.stars === o.s) + '"' + (o.s ? ' aria-label="' + esc(t("starsAria", { n: o.s })) + '"' : "") + ">" + o.label + '<span class="count">' + o.n + "</span></button>").join("");
+}
+
+// ---------- Render and events ----------
+function renderAll() { applyStatic(); renderFigures(); renderDestinations(); renderWishlist(); renderMapStars(); renderLegend(ALL); renderResults(); }
+
+document.addEventListener("click", (e) => {
+  const el = e.target.closest("button");
+  if (!el) {
+    if (!e.target.closest(".home-search")) $("results").hidden = true;
+    return;
+  }
+  if (el.dataset.lang) {
+    setLang(el.dataset.lang);
+    renderAll();
+    world.markers.forEach((m) => m.setTitle(nameOf(m.r)));
+  } else if (el.dataset.mapstars) {
+    homeState.stars = Number(el.dataset.mapstars); renderMapStars(); updateWorldMap(true);
+  } else if (el.dataset.unwish) {
+    store.set(WISHLIST_KEY, loadWishlist().filter((x) => x !== el.dataset.unwish)); renderWishlist();
+  }
+});
+$("homeQ").addEventListener("input", renderResults);
+$("homeQ").addEventListener("focus", renderResults);
+$("homeQ").addEventListener("keydown", (e) => { if (e.key === "Escape") { $("results").hidden = true; } });
+window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY) renderWishlist(); });
+
+renderAll();
+if (GOOGLE_MAPS_API_KEY) initWorldMap(); else $("map").hidden = true;

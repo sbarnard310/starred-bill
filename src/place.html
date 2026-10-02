@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500&display=swap">
+<link rel="stylesheet" href="{{asset:site.css}}">
+</head>
+<body>
+{{icons}}
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" id="brandLink"><svg><use href="#rosette"/></svg>The Starred Bill</a>
+    <div class="header-actions">
+      <nav class="nav" aria-label="Sections">
+        <a href="#compare" data-i18n="navCompare">Compare</a>
+        <a href="#map" id="mapNav" hidden data-i18n="navMap">Map</a>
+        <a href="#stars" data-i18n="navStars">By stars</a>
+        <a href="#method" data-i18n="navMethod">Method</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <a href="/#wishlist" class="wish-link" id="wishLink"><svg aria-hidden="true"><use href="#heart"/></svg><span data-i18n="wishlist">Wishlist</span> <span id="wishCount">0</span></a>
+    </div>
+  </div>
+  <div class="switchbar">
+    <div class="wrap">
+      <nav class="crumbs" id="crumbs" aria-label="Where you are">{{crumbs}}</nav>
+      <div class="hseg-right">
+        <div class="hseg" role="group" aria-label="Currency" id="currencySwitch"></div>
+        <div class="hseg" role="group" aria-label="Language / 語言" id="langSwitch"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="color: var(--band-muted)" data-i18n="heroEyebrow">{{eyebrow}}</span>
+      <h1 style="margin-top: 12px" data-i18n="heroTitle">{{h1}}</h1>
+      <p data-i18n="heroText" id="heroText">{{heroText}}</p>
+      <div class="explore" id="explore">{{explore}}</div>
+    </div>
+    <div class="figures" aria-live="polite">
+      <div class="figure"><div class="label" data-i18n="figCount"></div><div class="value" id="fCount">0</div><div class="sub" id="fCountSub"></div></div>
+      <div class="figure"><div class="label" data-i18n="figMin"></div><div class="value" id="fMin">–</div><div class="sub" id="fMinSub"></div></div>
+      <div class="figure"><div class="label" data-i18n="figMax"></div><div class="value" id="fMax">–</div><div class="sub" id="fMaxSub"></div></div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section id="compare">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-i18n="navCompare"></span>
+          <h2 style="margin-top: 6px" data-i18n="compareTitle"></h2>
+          <p data-i18n="compareText"></p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <label class="search" for="q">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" autocomplete="off">
+        </label>
+        <select id="sort">
+          <option value="price-asc" data-i18n="sortPriceAsc"></option>
+          <option value="price-desc" data-i18n="sortPriceDesc"></option>
+          <option value="stars" data-i18n="sortStars"></option>
+          <option value="rating" data-i18n="sortRating"></option>
+          <option value="name" data-i18n="sortName"></option>
+        </select>
+      </div>
+      <p class="rate-line" id="rateLine" hidden></p>
+
+      <div class="filters">
+        <div class="filter-group">
+          <span class="flabel" id="mealLabel" data-i18n="fMeal"></span>
+          <div class="seg" id="mealFilter" role="group" aria-labelledby="mealLabel"></div>
+        </div>
+        <div class="filter-group">
+          <span class="flabel" id="showLabel" data-i18n="fShow"></span>
+          <div class="seg" id="showFilter" role="group" aria-labelledby="showLabel"></div>
+        </div>
+        <div class="filter-group">
+          <span class="flabel" id="starsLabel" data-i18n="fStars"></span>
+          <div class="seg" id="starFilter" role="group" aria-labelledby="starsLabel"></div>
+        </div>
+        <div class="filter-group">
+          <span class="flabel" id="cuisineLabel" data-i18n="fCuisine"></span>
+          <div class="chips" id="chips" role="group" aria-labelledby="cuisineLabel"></div>
+        </div>
+      </div>
+
+      <div class="ledger" id="ledger" role="table">{{ledger}}</div>
+      <div class="ledger-foot">
+        <span id="showing"></span>
+        <span data-i18n="wishNote"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="map" hidden>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-i18n="navMap"></span>
+          <h2 style="margin-top: 6px" data-i18n="mapTitle"></h2>
+          <p data-i18n="mapText"></p>
+        </div>
+      </div>
+      <div class="map-canvas" id="mapCanvas" role="region"><p class="map-wait" data-i18n="mapWait"></p></div>
+      <div class="map-foot">
+        <ul class="map-legend" id="mapLegend"></ul>
+        <span class="map-status" id="mapStatus" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="stars">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-i18n="navStars"></span>
+          <h2 style="margin-top: 6px" data-i18n="starsTitle"></h2>
+          <p data-i18n="starsText"></p>
+        </div>
+      </div>
+      <div class="tiers" id="tiers"></div>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-i18n="navMethod"></span>
+          <h2 style="margin-top: 6px" data-i18n="methodTitle"></h2>
+        </div>
+      </div>
+      <div class="method">
+        <div><h3 data-i18n="m1Title"></h3><p data-i18n="m1Text"></p></div>
+        <div><h3 data-i18n="m2Title"></h3><p data-i18n="m2Text"></p></div>
+        <div><h3 data-i18n="m3Title"></h3><p data-i18n="m3Text"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div class="intro">
+        <span class="eyebrow" data-i18n="navContact"></span>
+        <h2 style="margin-top: 6px" data-i18n="contactTitle"></h2>
+        <p data-i18n="contactText"></p>
+      </div>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="cName" data-i18n="cName"></label>
+          <input id="cName" name="name" autocomplete="name" required>
+          <span class="err" id="cNameErr"></span>
+        </div>
+        <div class="field">
+          <label for="cEmail" data-i18n="cEmail"></label>
+          <input id="cEmail" name="email" type="email" autocomplete="email" required>
+          <span class="err" id="cEmailErr"></span>
+        </div>
+        <div class="field full">
+          <label for="cTopic" data-i18n="cTopic"></label>
+          <select id="cTopic" name="topic">
+            <option value="price" data-i18n="cTopicPrice"></option>
+            <option value="suggest" data-i18n="cTopicSuggest"></option>
+            <option value="city" data-i18n="cTopicCity"></option>
+            <option value="other" data-i18n="cTopicOther"></option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="cMsg" data-i18n="cMsg"></label>
+          <textarea id="cMsg" name="message" required></textarea>
+          <span class="err" id="cMsgErr"></span>
+        </div>
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit" data-i18n="cSend"></button>
+          <span class="form-status" id="formStatus" role="status"></span>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span data-i18n="footEdition"></span>
+    <span data-i18n="footNote"></span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" hidden role="status"><span id="toastMsg"></span><button type="button" id="undo" data-i18n="undo"></button></div>
+
+<script id="page-data" type="application/json">{{data}}</script>
+<script src="{{asset:common.js}}"></script>
+<script src="{{asset:place.js}}"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="rosette" viewBox="0 0 24 24">
+    <g fill="currentColor">
+      <ellipse cx="12" cy="12" rx="3.6" ry="10.5"/>
+      <ellipse cx="12" cy="12" rx="3.6" ry="10.5" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="3.6" ry="10.5" transform="rotate(120 12 12)"/>
+    </g>
+  </symbol>
+  <symbol id="pin" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/>
+    <circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <symbol id="heart" viewBox="0 0 24 24">
+    <path stroke-width="2" stroke-linejoin="round" d="M12 20.5s-8-4.9-8-10.6A4.4 4.4 0 0 1 12 7.3a4.4 4.4 0 0 1 8 2.6c0 5.7-8 10.6-8 10.6z"/>
+  </symbol>
+  <symbol id="gstar" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/>
+  </symbol>
+</svg>

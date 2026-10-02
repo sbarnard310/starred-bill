@@ -1,0 +1,23 @@
+{
+  "name": "Dining Room at The Goring",
+  "city": "london",
+  "area": "Belgravia",
+  "address": "15 Beeston Place, Belgravia, London, SW1W 0JW",
+  "stars": 1,
+  "cuisine": "Traditional British",
+  "rating": 4.6,
+  "reviews": 452,
+  "dinnerType": "menu",
+  "dinnerNote": "À la carte (pre-theatre 3 courses £80); prices not confirmed",
+  "sourceType": "none",
+  "source": "https://www.thegoring.com/",
+  "lunch": 49,
+  "lunchType": "menu",
+  "lunchNote": "Set lunch, 3 courses",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.thefork.co.uk/restaurant/the-goring-dining-room-r600825",
+  "website": "https://www.thegoring.com/",
+  "lat": 51.497523,
+  "lng": -0.1456983,
+  "placeId": "ChIJXalKaSEFdkgRFq49_DDicaA"
+}

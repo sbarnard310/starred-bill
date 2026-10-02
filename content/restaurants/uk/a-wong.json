@@ -1,0 +1,23 @@
+{
+  "name": "A. Wong",
+  "city": "london",
+  "area": "Victoria",
+  "address": "70 Wilton Road, Victoria, London, SW1V 1DE",
+  "stars": 2,
+  "cuisine": "Chinese",
+  "rating": 4.3,
+  "reviews": 1334,
+  "dinner": 220,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.mandarinoriental.com/en/london/mayfair/dine/a-wong",
+  "lunchType": "menu",
+  "lunchNote": "Dim sum lunch, à la carte (returns when the Victoria restaurant reopens)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.theinfatuation.com/london/reviews/a-wong",
+  "website": "https://www.awong.co.uk/",
+  "lat": 51.4930091,
+  "lng": -0.1406558,
+  "placeId": "ChIJkQhKHeAEdkgRbgw0TGfq-W8"
+}

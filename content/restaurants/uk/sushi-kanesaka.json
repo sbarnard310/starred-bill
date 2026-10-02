@@ -1,0 +1,22 @@
+{
+  "name": "Sushi Kanesaka",
+  "city": "london",
+  "area": "Mayfair",
+  "address": "45 Park Lane, Mayfair, London, W1K 1PN",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 75,
+  "dinner": 420,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase, 18–20 courses",
+  "wine": 150,
+  "sourceType": "press",
+  "source": "https://www.hot-dinners.com/London-restaurants/Mayfair-Belgravia/sushi-kanesaka",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.dorchestercollection.com/en/london/45-park-lane/restaurants-bars/sushi-kanesaka/",
+  "lat": 51.5064815,
+  "lng": -0.1517726,
+  "placeId": "ChIJz6Z6V5wFdkgRQ9AZGAlIpzU"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "SOLA",
+  "city": "london",
+  "area": "Soho",
+  "stars": 0,
+  "cuisine": "Californian",
+  "dinnerType": "menu",
+  "status": "changed",
+  "formerStars": 1,
+  "statusNote": "Moved to Notting Hill in June 2026; not yet listed in the guide again"
+}

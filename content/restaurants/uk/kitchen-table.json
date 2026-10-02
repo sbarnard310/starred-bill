@@ -1,0 +1,21 @@
+{
+  "name": "Kitchen Table",
+  "city": "london",
+  "area": "Fitzrovia",
+  "address": "70 Charlotte Street, Fitzrovia, London, W1T 4QG",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 596,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu (price not published online)",
+  "wine": 175,
+  "sourceType": "site",
+  "source": "https://kitchentablelondon.co.uk/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://kitchentablelondon.co.uk/",
+  "lat": 51.5203616,
+  "lng": -0.13647,
+  "placeId": "ChIJ3aa-YCkbdkgRo5LPUQzy0hI"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "The Five Fields",
+  "city": "london",
+  "area": "Chelsea",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in February 2025"
+}

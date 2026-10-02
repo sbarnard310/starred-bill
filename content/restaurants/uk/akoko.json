@@ -9,7 +9,7 @@
   "reviews": 1005,
   "dinner": 130,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Taster menu",
   "wine": 80,
   "sourceType": "site",
   "source": "https://akoko.co.uk/",
@@ -22,5 +22,6 @@
   "website": "https://akoko.co.uk/",
   "lat": 51.5177438,
   "lng": -0.13691,
-  "placeId": "ChIJU7uHDYcbdkgRttS28-dNO7E"
+  "placeId": "ChIJU7uHDYcbdkgRttS28-dNO7E",
+  "noLunch": false
 }

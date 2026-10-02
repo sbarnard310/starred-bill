@@ -126,7 +126,7 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 
 /* Ledger */
 .ledger { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-.row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr) 64px 64px minmax(0, 1.5fr) minmax(0, 1.4fr) 76px 40px; gap: 14px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
+.row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr) 64px 84px minmax(0, 1.5fr) minmax(0, 1.4fr) 76px 40px; gap: 14px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
 .row:first-child { border-top: 0; }
 .row.head { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding-block: 10px; background: color-mix(in srgb, var(--green-soft) 50%, var(--surface)); }
 .row .name { font-weight: 600; min-width: 0; }
@@ -135,6 +135,7 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .map:hover { background: var(--green-soft); }
 .map svg { width: 16px; height: 16px; }
 .note { display: block; font-family: var(--font-body); font-size: .78rem; line-height: 1.35; color: var(--muted); }
+.notes .src { display: block; font-size: .75rem; color: var(--green); text-underline-offset: 2px; margin-top: 2px; }
 .notes { min-width: 0; font-size: .88rem; color: var(--muted); line-height: 1.4; }
 .rating { display: inline-flex; align-items: center; gap: 5px; }
 .rating svg { width: 13px; height: 13px; color: var(--green); }
@@ -228,6 +229,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .map-frame { aspect-ratio: 4 / 5; }
   .row .wine { justify-self: end; white-space: nowrap; }
   .row .rating-cell { white-space: nowrap; }
+  .row .rating-cell .note { display: inline; margin-left: 6px; }
   .row .tag { white-space: normal; text-align: left; }
   .mlabel { display: inline; font-family: var(--font-body); font-size: .8rem; color: var(--muted); margin-right: 6px; }
 }
@@ -290,7 +292,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
     <div>
       <span class="eyebrow" style="color: var(--band-muted)">London · Michelin Guide restaurants</span>
       <h1 style="margin-top: 12px">What a Michelin star <em>costs</em> in London.</h1>
-      <p>Dinner and wine pairing prices per person at London's starred restaurants, side by side. Search by name or cuisine, filter by stars or cuisine, and save the ones you'd like to try to your wishlist. Prices as of January 2025, before service.</p>
+      <p>Dinner and wine pairing prices per person at London's starred restaurants, side by side. Search by name or cuisine, filter by stars or cuisine, and save the ones you'd like to try to your wishlist. Prices checked October 2026, per person before service.</p>
     </div>
     <div class="figures" aria-live="polite">
       <div class="figure"><div class="label">Restaurants listed</div><div class="value" id="fCount">0</div><div class="sub" id="fCountSub"></div></div>
@@ -307,7 +309,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
         <div>
           <span class="eyebrow">Compare</span>
           <h2 style="margin-top: 6px">Every table, every price</h2>
-          <p>Dinner is the tasting or set menu price unless marked “per main”. Bars compare each dinner menu with the most expensive on the list.</p>
+          <p>Dinner is the tasting or set menu price unless marked “per main” or “typical spend”. Bars compare each dinner menu with the most expensive on the list. Each price links to where it came from.</p>
         </div>
       </div>
 
@@ -372,7 +374,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
         <div>
           <span class="eyebrow">By stars</span>
           <h2 style="margin-top: 6px">How much each extra star adds</h2>
-          <p>Average dinner menu price, grouped by Michelin stars. À la carte restaurants are counted but left out of the averages.</p>
+          <p>Average dinner menu price, grouped by Michelin stars. À la carte restaurants are counted but left out of the averages and ranges.</p>
         </div>
       </div>
       <div class="tiers" id="tiers"></div>
@@ -393,12 +395,12 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
           <p>Every figure is for one guest and excludes service charge, which most London restaurants add at 12.5–15%. Supplements such as caviar or truffle courses are left out.</p>
         </div>
         <div>
-          <h3>Dinner and wine</h3>
-          <p>Dinner is the tasting menu where there is one. Where a restaurant is à la carte only, we show the average main course price, marked “per main”. Wine is the cheapest pairing on offer.</p>
+          <h3>Where prices come from</h3>
+          <p>Dinner is the main tasting menu where there is one, and wine is the cheapest pairing for it. We take prices from each restaurant's own website where they're published, otherwise from recent reviews and booking sites. À la carte restaurants show a typical main course (“per main”) or typical spend per person.</p>
         </div>
         <div>
           <h3>Google rating</h3>
-          <p>The Google reviews score out of 5, taken when the prices were collected. It reflects diners' overall experience, so it's a useful check alongside the stars and the bill.</p>
+          <p>The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars and addresses come from the Michelin Guide, checked at the same time.</p>
         </div>
       </div>
     </div>
@@ -448,7 +450,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 <footer>
   <div class="wrap">
     <span>The Starred Bill · London edition</span>
-    <span>Prices as of January 2025. Check with each restaurant before booking.</span>
+    <span>Prices and ratings checked October 2026. Check with each restaurant before booking.</span>
   </div>
 </footer>
 
@@ -468,7 +470,7 @@ const MAP_PIN_COLOURS = {
 
 const RESTAURANTS = window.RESTAURANTS || [];
 const PREFS_KEY = "starred-bill-prefs";
-const WISHLIST_KEY = "starred-bill-wishlist";
+const WISHLIST_KEY = "starred-bill-wishlist-2026-10";
 const state = { activeCat: "All", activeStars: 0, wishOnly: false, query: "", sort: "price-asc", wishlist: [], lastUndo: null };
 
 function load() {
@@ -488,11 +490,11 @@ function save() {
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const gbp = (n) => "£" + n.toLocaleString("en-GB");
+const gbp = (n) => "£" + n.toLocaleString("en-GB", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
 const rosettes = (n) => '<span class="stars" aria-label="' + n + ' Michelin star' + (n > 1 ? "s" : "") + '">' + '<svg><use href="#rosette"/></svg>'.repeat(n) + "</span>";
 const heart = '<svg aria-hidden="true"><use href="#heart"/></svg>';
 
-const mapsUrl = (r) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent([r.name + " restaurant", r.area, "London"].filter(Boolean).join(", "));
+const mapsUrl = (r) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent([r.name, r.address || (r.area ? r.area + ", London" : "London")].join(", "));
 const isMenu = (r) => r.dinnerType === "menu" && r.dinner != null;
 const priceRank = (r) => (isMenu(r) ? 0 : r.dinner != null ? 1 : 2);
 const onWishlist = (r) => state.wishlist.includes(r.id);
@@ -566,11 +568,11 @@ function renderLedger() {
         (r.area ? '<span class="area">' + esc(r.area) + "</span>" : "") + "</span>" +
       '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cat) + '" title="Show only ' + esc(r.cat) + '">' + esc(r.cat) + "</button></span>" +
       '<span class="stars-cell" role="cell">' + rosettes(r.stars) + "</span>" +
-      '<span class="rating-cell" role="cell"><span class="mlabel">Google</span>' + (r.rating ? '<span class="rating num" aria-label="Google rating ' + r.rating.toFixed(1) + ' out of 5"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" : '<span class="num muted">–</span>') + "</span>" +
-      '<span class="notes" role="cell">' + esc(r.dinnerNote || "–") + "</span>" +
+      '<span class="rating-cell" role="cell"><span class="mlabel">Google</span>' + (r.rating ? '<span class="rating num" aria-label="Google rating ' + r.rating.toFixed(1) + ' out of 5"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + r.reviews.toLocaleString("en-GB") + " reviews</span>" : "") : '<span class="num muted">–</span>') + "</span>" +
+      '<span class="notes" role="cell">' + esc(r.dinnerNote || "–") + (r.source && r.sourceType !== "none" ? ' <a class="src" href="' + esc(r.source) + '" target="_blank" rel="noopener" title="Where this price came from">' + (r.sourceType === "site" ? "Restaurant website" : "Review source") + "</a>" : "") + "</span>" +
       '<span class="dinner" role="cell"><span class="mlabel">Price</span><span class="bar"><span style="width:' + (isMenu(r) ? (r.dinner / max * 100).toFixed(1) : 0) + '%"></span></span><span class="dprice">' +
         (r.dinner == null ? '<span class="num muted">–</span><span class="note">Not listed</span>'
-          : '<span class="num">' + gbp(r.dinner) + "</span>" + (r.dinnerType === "main" ? '<span class="note">per main</span>' : "")) + "</span></span>" +
+          : '<span class="num">' + gbp(r.dinner) + "</span>" + (r.dinnerType === "main" ? '<span class="note">per main</span>' : r.dinnerType === "spend" ? '<span class="note">typical spend</span>' : "")) + "</span></span>" +
       '<span class="wine num' + (r.wine ? "" : " muted") + '" role="cell"><span class="mlabel">Wine pairing</span>' + (r.wine ? gbp(r.wine) : "–") + "</span>" +
       '<span class="wish-cell" role="cell"><button type="button" class="wish" data-wish="' + r.id + '" aria-pressed="' + on + '" aria-label="' + (on ? "Remove " : "Add ") + esc(r.name) + (on ? " from" : " to") + ' your wishlist" title="' + (on ? "Remove from wishlist" : "Add to wishlist") + '">' + heart + "</button></span>" +
       "</div>";

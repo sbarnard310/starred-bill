@@ -11,12 +11,14 @@ Live at https://starredbill.com
 ## How it fits together
 
 ```
-content/                 the data (edit these)
-  places.json            countries, regions, cities and collections
-  currencies.json        currency symbols and fallback exchange rates
+content/                 the data (edit these, ideally through Pages CMS)
   restaurants/<country>/<restaurant>.json   one file per restaurant
+  places/<place>.json    one file per country, region, city or collection
+  currencies.json        currency symbols and fallback exchange rates
+  site.json              site-wide settings (when prices were last checked)
 src/                     the design (templates, styles and scripts)
 build.py                 turns content/ + src/ into the finished site in _site/
+.pages.yml               the editing forms for Pages CMS
 .github/workflows/       GitHub runs build.py on every push and publishes the result
 ```
 
@@ -24,7 +26,7 @@ Each restaurant is stored once, in its city. It then appears on that city's page
 
 ## Places
 
-Every entry in `content/places.json` has an `id` (lower-case, hyphens, used in the web address), a `type`, a `name` and an optional `nameZh`.
+Every file in `content/places/` has an `id` (lower-case, hyphens, used in the web address), a `type`, a `name` and an optional `nameZh`.
 
 | type | needs | web address |
 |---|---|---|
@@ -44,7 +46,7 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 | field | meaning |
 |---|---|
 | `name`, `nameZh` | restaurant name |
-| `city` | id of its city in places.json |
+| `city` | id of its city in `content/places/` |
 | `area`, `areaZh`, `address`, `addressZh` | neighbourhood and full address |
 | `stars` | 1, 2 or 3 |
 | `cuisine`, `cuisineZh` | Michelin's cuisine label; a new one creates a new filter button |
@@ -65,7 +67,9 @@ Leave out any field you don't have.
 
 ## Editing
 
-Edit a file on GitHub (pencil icon) and click **Commit changes**. GitHub rebuilds the site and it's live within a couple of minutes. If something in the data is wrong, such as a misspelt city id or a price typed as `"£95"`, the build stops, the live site stays as it was, and the **Actions** tab says exactly what to fix.
+The easiest way is Pages CMS: go to https://app.pagescms.org, sign in with GitHub and open **starred-bill**. Restaurants, Places, Currencies and Site settings each have a form; click **Save** and the site updates within a couple of minutes.
+
+You can also edit a file on GitHub (pencil icon) and click **Commit changes**. Either way GitHub rebuilds the site and it's live within a couple of minutes. If something in the data is wrong, such as a misspelt city id or a price typed as `"£95"`, the build stops, the live site stays as it was, and the **Actions** tab says exactly what to fix.
 
 ## Previewing on a Mac
 

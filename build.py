@@ -40,15 +40,35 @@ def read_json(path):
         return None
 
 
+def tidy(entry):
+    """Drop blank fields, which the editor saves as "" or null, so they read as 'not set'."""
+    if not isinstance(entry, dict):
+        return entry
+    return {k: (v.strip() if isinstance(v, str) else v) for k, v in entry.items()
+            if v is not None and v != [] and not (isinstance(v, str) and not v.strip())}
+
+
 # ---------- Load and check the data ----------
 currency_data = read_json(CONTENT / "currencies.json") or {}
-CURRENCIES = currency_data.get("currencies", {})
-site = read_json(CONTENT / "places.json") or {}
+CURRENCIES = {}
+for c in currency_data.get("currencies", []):
+    c = tidy(c)
+    if not re.fullmatch(r"[A-Z]{3}", c.get("code", "")) or not c.get("symbol") or not isinstance(c.get("perUSD"), (int, float)) or c["perUSD"] <= 0:
+        problem("currencies.json", f"{c.get('code', '?')} needs a three-letter code, a symbol and a rate per US dollar above 0")
+    else:
+        CURRENCIES[c["code"]] = {"symbol": c["symbol"], "perUSD": c["perUSD"]}
+for code in currency_data.get("switchable", []):
+    if code not in CURRENCIES:
+        problem("currencies.json", f"{code} is in the switch but not in the list of currencies")
+site = read_json(CONTENT / "site.json") or {}
 
 places = {}
-for p in site.get("places", []):
+for f in sorted((CONTENT / "places").glob("*.json")):
+    p = tidy(read_json(f))
+    if not isinstance(p, dict):
+        continue
     pid = p.get("id", "")
-    where = f"places.json ({pid or p.get('name', '?')})"
+    where = f"{f.relative_to(ROOT)} ({pid or p.get('name', '?')})"
     if not ID_PATTERN.fullmatch(pid):
         problem(where, "id must be lower-case letters, numbers and hyphens, e.g. new-york")
     elif pid in places:
@@ -61,7 +81,7 @@ for p in site.get("places", []):
         places[pid] = p
 
 for pid, p in places.items():
-    where = f"places.json ({pid})"
+    where = f"places ({pid})"
     if p["type"] in ("region", "city"):
         parent = places.get(p.get("parent"))
         if not parent or parent["type"] not in ("country", "region"):
@@ -120,16 +140,18 @@ paths = {}
 for pid, p in places.items():
     p["path"] = path_of(p)
     if p["path"] in paths or p["path"].strip("/") in ("assets",):
-        problem(f"places.json ({pid})", f"its address {p['path']} is already used by {paths.get(p['path'], 'the site')}")
+        problem(f"places ({pid})", f"its address {p['path']} is already used by {paths.get(p['path'], 'the site')}")
     paths[p["path"]] = pid
 
 restaurants = []
 seen = {}
 for f in sorted((CONTENT / "restaurants").rglob("*.json")):
-    r = read_json(f)
+    r = tidy(read_json(f))
     where = f.relative_to(ROOT)
     if not isinstance(r, dict):
         continue
+    if r.get("noLunch") is False:
+        del r["noLunch"]
     rid = f.stem
     if not ID_PATTERN.fullmatch(rid):
         problem(where, "file name must be lower-case letters, numbers and hyphens, e.g. the-ledbury.json")
@@ -140,7 +162,7 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
         problem(where, "needs a name")
     city = places.get(r.get("city"))
     if not city or city["type"] == "group":
-        problem(where, f"city \"{r.get('city')}\" isn't a city, region or country in places.json")
+        problem(where, f"city \"{r.get('city')}\" isn't a city, region or country in content/places")
         continue
     if r.get("status"):
         if r["status"] not in STATUSES:

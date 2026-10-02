@@ -1,0 +1,15 @@
+{
+  "id": "taiwan",
+  "type": "country",
+  "name": "Taiwan",
+  "nameZh": "台灣",
+  "currency": "TWD",
+  "intro": "Prices are in New Taiwan dollars, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026, before the usual 10% service charge.",
+  "introZh": "價格以新台幣標示，也可切換為英鎊、歐元或美元。價格於 2026 年 10 月查核，未含一般 10% 服務費。",
+  "serviceText": "Every figure is for one guest and excludes the 10% service charge most Taiwanese fine-dining restaurants add; some also charge a small fee for water or tea. Prices shown in pounds, euros or US dollars use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格，不含台灣多數高級餐廳加收的 10% 服務費；部分餐廳另收水資或茶資。以英鎊、歐元或美元顯示的價格依當日匯率換算，僅供參考。",
+  "sourcesText": "Dinner is the main tasting menu where there is one, and wine is the cheapest pairing for it. We take prices from each restaurant's own website where they're published, otherwise from recent reviews, booking sites and local food writers. Where a restaurant offers several menus, the note says which one is shown. Lunch is the restaurant's set or tasting lunch menu, and the note says which days it's served.",
+  "sourcesTextZh": "晚餐以主要品嚐套餐為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網為準；否則參考近期評論、訂位網站與在地美食作家。若餐廳提供多種套餐，說明欄會註明顯示的是哪一種。午餐以餐廳的午間套餐或品嚐套餐為準，說明欄會註明供應日。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Taiwan 2026, announced on 21 July 2026. A green ▲ marks a restaurant that gained a star in the August 2025 or July 2026 guide; a red ▼ marks one that lost its star.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 7 月 21 日公布的《臺灣米其林指南 2026》。綠色 ▲ 代表在 2025 年 8 月或 2026 年 7 月的指南中獲得星級；紅色 ▼ 代表失去星級。"
+}

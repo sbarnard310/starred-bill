@@ -91,7 +91,7 @@ function applyStatic() {
     document.querySelector('[data-i18n="sortPriceAsc"]').innerHTML = t("sortPriceAscLunch");
     document.querySelector('[data-i18n="sortPriceDesc"]').innerHTML = t("sortPriceDescLunch");
   }
-  // Text written for this place in places.json replaces the general wording.
+  // Text written for this place in content/places replaces the general wording.
   const intro = pick(PAGE, "intro");
   if (intro) $("heroText").innerHTML = t("heroText") + " " + esc(intro);
   [["m1Text", "serviceText"], ["m2Text", "sourcesText"], ["m3Text", "starsText"]].forEach(([key, field]) => {

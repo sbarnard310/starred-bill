@@ -1,0 +1,372 @@
+# Pages CMS (https://app.pagescms.org) reads this file to build the editing forms for starredbill.com.
+# Each field matches a key in the JSON files under content/; README.md explains them in more detail.
+# Saving in Pages CMS commits to GitHub, which rebuilds and publishes the site within a couple of minutes.
+
+settings:
+  content:
+    merge: true   # keep any keys in a file that aren't listed below
+
+content:
+  - name: restaurants
+    label: Restaurants
+    description: One entry per restaurant, in a folder per country. Saving publishes the change within a couple of minutes.
+    type: collection
+    path: content/restaurants
+    format: json
+    subfolders: true
+    filename: "{primary}.json"
+    operations:
+      rename: false   # the file name is the restaurant's id, used by visitors' wishlists
+    view:
+      primary: name
+      fields: [name, stars, city, dinner, lunch]
+      search: [name, nameZh, cuisine, area]
+      sort: [name, stars, dinner]
+      default:
+        sort: name
+        order: asc
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: nameZh
+        label: Name in Chinese
+        type: string
+      - name: city
+        label: City
+        description: The city it's in. It then also appears on that city's region and country pages, and any collection that includes them.
+        type: reference
+        required: true
+        options:
+          collection: places
+          value: "{fields.id}"
+          label: "{fields.name} ({fields.type})"
+          search: "name,nameZh"
+      - name: area
+        label: Area
+        description: Neighbourhood, e.g. Mayfair or Zhongshan, Taipei.
+        type: string
+      - name: areaZh
+        label: Area in Chinese
+        type: string
+      - name: address
+        label: Address
+        description: Full address, also used for the Google Maps link.
+        type: string
+      - name: addressZh
+        label: Address in Chinese
+        type: string
+      - name: stars
+        label: Michelin stars
+        description: 1, 2 or 3. Use 0 for a restaurant that has lost its stars or closed, and fill in Status below.
+        type: number
+        required: true
+        options: { min: 0, max: 3, step: 1 }
+      - name: cuisine
+        label: Cuisine
+        description: Michelin's cuisine label, e.g. Modern British. A new label adds a new filter button.
+        type: string
+      - name: cuisineZh
+        label: Cuisine in Chinese
+        type: string
+      - name: change
+        label: Recent star change
+        description: Shows a ▲ or ▼ badge. Leave empty if nothing changed in the last two guides.
+        type: select
+        options:
+          values:
+            - { value: new, label: "▲ Gained its first star" }
+            - { value: up, label: "▲ Gained a star" }
+            - { value: down, label: "▼ Lost a star" }
+      - name: changeNote
+        label: Star change note
+        description: e.g. Gained its first star
+        type: string
+      - name: changeNoteZh
+        label: Star change note in Chinese
+        type: string
+      - name: changeDate
+        label: Star change date
+        description: Year and month of the Michelin Guide announcement, e.g. 2026-02.
+        type: string
+        pattern: { regex: '^(\d{4}-\d{2})?$', message: "Use year-month, e.g. 2026-02" }
+      - name: rating
+        label: Google rating
+        description: Out of 5, e.g. 4.6.
+        type: number
+        options: { min: 0, max: 5, step: any }
+      - name: reviews
+        label: Number of Google reviews
+        type: number
+        options: { min: 0, step: 1 }
+      - name: ratingNote
+        label: Google rating note
+        type: string
+      - name: dinner
+        label: Dinner price
+        description: Per person, in the country's currency, numbers only (195, not £195). Leave empty if not confirmed.
+        type: number
+        options: { min: 0, step: any }
+      - name: dinnerType
+        label: Dinner price is
+        type: select
+        options:
+          values:
+            - { value: menu, label: "A tasting or set menu" }
+            - { value: main, label: "A typical main course (à la carte)" }
+            - { value: spend, label: "Typical spend per person (sharing plates)" }
+      - name: dinnerNote
+        label: Dinner note
+        description: What the price covers, e.g. Tasting menu, 8 courses.
+        type: string
+      - name: dinnerNoteZh
+        label: Dinner note in Chinese
+        type: string
+      - name: wine
+        label: Wine pairing price (dinner)
+        description: Cheapest pairing, numbers only. Leave empty if there isn't one or it's not confirmed.
+        type: number
+        options: { min: 0, step: any }
+      - name: sourceType
+        label: Dinner price source
+        type: select
+        options:
+          values:
+            - { value: site, label: "Restaurant's own website" }
+            - { value: press, label: "Review or booking site" }
+            - { value: none, label: "No link" }
+      - name: source
+        label: Dinner price link
+        description: Where the dinner price came from.
+        type: string
+      - name: noLunch
+        label: No lunch service
+        description: Tick if the restaurant doesn't serve lunch. It then shows at the bottom of the Lunch view.
+        type: boolean
+      - name: lunch
+        label: Lunch price
+        description: Per person, numbers only. Leave empty if lunch is served but the price isn't known.
+        type: number
+        options: { min: 0, step: any }
+      - name: lunchType
+        label: Lunch price is
+        type: select
+        options:
+          values:
+            - { value: menu, label: "A tasting or set menu" }
+            - { value: main, label: "A typical main course (à la carte)" }
+            - { value: spend, label: "Typical spend per person (sharing plates)" }
+      - name: lunchNote
+        label: Lunch note
+        description: What the price covers and which days it's served, e.g. Set lunch, 3 courses, Wed–Sat.
+        type: string
+      - name: lunchNoteZh
+        label: Lunch note in Chinese
+        type: string
+      - name: lunchWine
+        label: Wine pairing price (lunch)
+        type: number
+        options: { min: 0, step: any }
+      - name: lunchSourceType
+        label: Lunch price source
+        type: select
+        options:
+          values:
+            - { value: site, label: "Restaurant's own website" }
+            - { value: press, label: "Review or booking site" }
+            - { value: none, label: "No link" }
+      - name: lunchSource
+        label: Lunch price link
+        type: string
+      - name: notice
+        label: Notice
+        description: A current notice, e.g. Temporarily closed. Shows as a badge.
+        type: string
+      - name: noticeZh
+        label: Notice in Chinese
+        type: string
+      - name: status
+        label: Status (only if no longer starred)
+        description: Leave empty for starred restaurants. Set this to move it to the greyed-out "No longer starred" list.
+        type: select
+        options:
+          values:
+            - { value: lost, label: "Lost its stars" }
+            - { value: closed, label: "Closed" }
+            - { value: changed, label: "Changed (e.g. rebranded or moved)" }
+      - name: formerStars
+        label: Stars it used to have
+        type: number
+        options: { min: 1, max: 3, step: 1 }
+      - name: statusNote
+        label: Status note
+        description: What happened, e.g. Lost its star in the 2026 guide.
+        type: string
+      - name: statusNoteZh
+        label: Status note in Chinese
+        type: string
+      - name: website
+        label: Website
+        type: string
+      - name: lat
+        label: Map latitude
+        description: From the Michelin Guide or Google Maps, e.g. 51.5136.
+        type: number
+        options: { step: any }
+      - name: lng
+        label: Map longitude
+        description: e.g. -0.1417.
+        type: number
+        options: { step: any }
+      - name: placeId
+        label: Google place ID
+        description: Used to load the restaurant's photo from Google.
+        type: string
+
+  - name: places
+    label: Places
+    description: Countries, regions, cities and collections. A page is built for each one that has at least one starred restaurant.
+    type: collection
+    path: content/places
+    format: json
+    filename: "{fields.id}.json"
+    operations:
+      rename: false
+    view:
+      primary: name
+      fields: [name, type, parent]
+      search: [name, nameZh, id]
+      sort: [name, type]
+      default:
+        sort: name
+        order: asc
+    fields:
+      - name: id
+        label: ID
+        description: Lower-case letters, numbers and hyphens, e.g. new-york. Used in the web address, so don't change it once published.
+        type: string
+        required: true
+        pattern: { regex: '^[a-z0-9]+(-[a-z0-9]+)*$', message: "Use lower-case letters, numbers and hyphens, e.g. new-york" }
+      - name: type
+        label: Type
+        type: select
+        required: true
+        options:
+          values:
+            - { value: country, label: "Country" }
+            - { value: region, label: "Region (e.g. England, Yorkshire)" }
+            - { value: city, label: "City" }
+            - { value: group, label: "Collection (overlapping area, e.g. Basque Country)" }
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: nameZh
+        label: Name in Chinese
+        type: string
+      - name: parent
+        label: Inside (regions and cities)
+        description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom.
+        type: reference
+        options:
+          collection: places
+          value: "{fields.id}"
+          label: "{fields.name} ({fields.type})"
+          search: "name,nameZh"
+      - name: includes
+        label: Includes (collections only)
+        description: The countries, regions or cities this collection covers. They can be in different countries.
+        type: reference
+        options:
+          collection: places
+          value: "{fields.id}"
+          label: "{fields.name} ({fields.type})"
+          search: "name,nameZh"
+          multiple: true
+      - name: currency
+        label: Currency (countries only)
+        description: Three-letter code, e.g. GBP, EUR, JPY. It must also be listed under Currencies.
+        type: string
+        pattern: { regex: '^([A-Z]{3})?$', message: "Use a three-letter code in capitals, e.g. EUR" }
+      - name: inSentence
+        label: Name mid-sentence
+        description: Only if it reads differently in a sentence, e.g. "the UK" for United Kingdom.
+        type: string
+      - name: intro
+        label: Introduction
+        description: Extra sentence under the page title, e.g. which currency prices are in. Regions and cities use their country's unless they have their own.
+        type: text
+      - name: introZh
+        label: Introduction in Chinese
+        type: text
+      - name: serviceText
+        label: "Method: per person, before service"
+        description: Explains service charges in this country.
+        type: text
+      - name: serviceTextZh
+        label: "Method: per person, before service (Chinese)"
+        type: text
+      - name: sourcesText
+        label: "Method: where prices come from"
+        type: text
+      - name: sourcesTextZh
+        label: "Method: where prices come from (Chinese)"
+        type: text
+      - name: starsText
+        label: "Method: stars and Google rating"
+        description: Which Michelin Guide edition the stars come from, and when it was announced.
+        type: text
+      - name: starsTextZh
+        label: "Method: stars and Google rating (Chinese)"
+        type: text
+
+  - name: currencies
+    label: Currencies
+    description: Symbols and fallback exchange rates. Live rates are used when available; these only apply if they can't be fetched.
+    type: file
+    path: content/currencies.json
+    format: json
+    fields:
+      - name: rateDate
+        label: Date of the fallback rates
+        type: string
+        pattern: { regex: '^\d{4}-\d{2}-\d{2}$', message: "Use year-month-day, e.g. 2026-10-02" }
+      - name: switchable
+        label: Currencies in the switch
+        description: Shown on every page after the local currency, e.g. GBP, EUR, USD.
+        type: string
+        list: true
+      - name: currencies
+        label: Currencies
+        type: object
+        list: true
+        fields:
+          - name: code
+            label: Code
+            type: string
+            required: true
+            pattern: { regex: '^[A-Z]{3}$', message: "Use a three-letter code in capitals, e.g. EUR" }
+          - name: symbol
+            label: Symbol
+            description: e.g. £, €, US$, NT$, ¥
+            type: string
+            required: true
+          - name: perUSD
+            label: Units per 1 US dollar
+            description: e.g. 0.76 for pounds, 32 for New Taiwan dollars.
+            type: number
+            required: true
+            options: { min: 0, step: any }
+
+  - name: site
+    label: Site settings
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: updated
+        label: Prices last checked
+        description: Year and month, shown on the homepage, e.g. 2026-10.
+        type: string
+        pattern: { regex: '^\d{4}-\d{2}$', message: "Use year-month, e.g. 2026-10" }

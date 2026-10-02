@@ -126,7 +126,7 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 
 /* Ledger */
 .ledger { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-.row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr) 64px 84px minmax(0, 1.5fr) minmax(0, 1.4fr) 76px 40px; gap: 14px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
+.row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr) 72px 84px minmax(0, 1.5fr) minmax(0, 1.4fr) 76px 40px; gap: 14px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
 .row:first-child { border-top: 0; }
 .row.head { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding-block: 10px; background: color-mix(in srgb, var(--green-soft) 50%, var(--surface)); }
 .row .name { font-weight: 600; min-width: 0; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 12px; align-items: center; }
@@ -144,6 +144,9 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .row.former .name, .row.former .cat, .row.former .stars-cell, .row.former .rating-cell, .row.former .dinner, .row.former .wine { opacity: .5; filter: grayscale(1); }
 .row.former .tag { cursor: default; }
 .status-pill { display: inline-block; margin-right: 6px; padding: 2px 8px; border-radius: 999px; font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--line); color: var(--ink); }
+.chg { display: block; margin-top: 3px; font-size: .68rem; font-weight: 700; letter-spacing: .02em; line-height: 1.25; cursor: help; }
+.chg-up { color: var(--green); }
+.chg-down { color: var(--danger); }
 .status-pill.status-closed { background: var(--danger-soft); color: var(--danger); }
 .row .area { display: block; font-weight: 400; font-size: .85rem; color: var(--muted); }
 .map { display: inline-grid; place-items: center; width: 26px; height: 26px; margin-left: 4px; vertical-align: -6px; border-radius: 6px; color: var(--green); }
@@ -174,13 +177,16 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Map */
-.map-frame { width: 100%; max-width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); display: block; }
-.map-legend { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: .92rem; }
+.map-canvas { width: 100%; height: 540px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; display: grid; place-items: center; }
+.map-wait { color: var(--muted); font-size: .9rem; }
+.map-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px 24px; flex-wrap: wrap; margin-top: 14px; }
+.map-status { font-size: .85rem; color: var(--muted); }
+.map-legend .pin-num { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; color: #fff; font-size: .75rem; font-weight: 700; background: var(--pin); }
+.map-legend { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: .92rem; }
 .map-legend li { display: inline-flex; align-items: center; gap: 8px; }
 .map-legend svg { width: 22px; height: 22px; color: var(--pin); }
 .map-legend .colour { font-weight: 600; }
 .map-legend .count { font-family: var(--font-num); font-size: .8rem; color: var(--muted); }
-.map-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-top: 14px; color: var(--muted); font-size: .9rem; }
 .btn-primary { text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
 .mlabel { display: none; }
 .empty { padding: 40px 18px; text-align: center; color: var(--muted); }
@@ -242,7 +248,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .row .rating-cell { grid-area: rating; }
   .row .wine { grid-area: wine; }
   .row .wish-cell { grid-area: wish; justify-self: end; }
-  .map-frame { aspect-ratio: 4 / 5; }
+  .map-canvas { height: 440px; }
   .row .wine { justify-self: end; white-space: nowrap; }
   .row .rating-cell { white-space: nowrap; }
   .row .rating-cell .note { display: inline; margin-left: 6px; }
@@ -372,14 +378,13 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
         <div>
           <span class="eyebrow">Map</span>
           <h2 style="margin-top: 6px">Every starred table on one map</h2>
-          <p>All the restaurants in this guide, pinned on Google Maps. Tap a pin for the name, stars and dinner price.</p>
+          <p>The pins follow the filters in the list above, so choose a star level, a cuisine or your wishlist and the map updates to match. Tap a pin for the price and a link to directions.</p>
         </div>
       </div>
-      <iframe class="map-frame" id="mapFrame" title="Map of London's Michelin-starred restaurants" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <ul class="map-legend" id="mapLegend" aria-label="What the pin colours mean"></ul>
-      <div class="map-actions">
-        <a class="btn btn-primary" id="mapOpen" href="#" target="_blank" rel="noopener"><svg width="18" height="18" aria-hidden="true"><use href="#pin"/></svg>Open the full map in Google Maps</a>
-        <span>Opens in a new tab, where you can save it to your own Google Maps.</span>
+      <div class="map-canvas" id="mapCanvas" role="region" aria-label="Map of London's Michelin-starred restaurants"><p class="map-wait">The map loads as you scroll here.</p></div>
+      <div class="map-foot">
+        <ul class="map-legend" id="mapLegend" aria-label="What the pin colours mean"></ul>
+        <span class="map-status" id="mapStatus" aria-live="polite"></span>
       </div>
     </div>
   </section>
@@ -416,7 +421,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
         </div>
         <div>
           <h3>Google rating</h3>
-          <p>The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars and addresses come from the Michelin Guide, checked at the same time.</p>
+          <p>The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars and addresses come from the Michelin Guide, checked at the same time. A green ▲ marks a restaurant that gained a star in the February 2025 or February 2026 guide; a red ▼ marks one that lost its star.</p>
         </div>
       </div>
     </div>
@@ -472,20 +477,17 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 
 <div class="toast" id="toast" hidden role="status"><span id="toastMsg"></span><button type="button" id="undo">Undo</button></div>
 
-<script src="restaurants.js?v=2026-10-02b"></script>
+<script src="restaurants.js?v=2026-10-02c"></script>
 <script>
-// Google My Maps ID for the "Map" section, the part after "mid=" in the map's share link.
-// Leave empty to hide the section.
-const GOOGLE_MY_MAP_ID = "147pPK0ZdYkeRnUJ19HyAx-NH05CvkM8";
-// Pin colours used on that map for each star level (match these if you restyle the map).
+// Map pin colours for each star level.
 const MAP_PIN_COLOURS = {
   1: { name: "Purple", hex: "#673AB7" },
   2: { name: "Amber", hex: "#F9A825" },
   3: { name: "Green", hex: "#097138" }
 };
 
-// Google Maps Platform browser key, used to show each restaurant's photo from its Google listing.
-// Leave empty to show lettered placeholders instead.
+// Google Maps Platform browser key, used for restaurant photos and the map.
+// Leave empty to show lettered placeholders and hide the map.
 const GOOGLE_MAPS_API_KEY = "AIzaSyA5AnpHOqFXxb6U3hDiXuAyQK2dIbZgLT4";
 
 const ALL_RESTAURANTS = window.RESTAURANTS || [];
@@ -494,7 +496,7 @@ const FORMER = ALL_RESTAURANTS.filter((r) => r.status);
 const STATUS_LABELS = { lost: "Lost star", closed: "Closed", changed: "Changed" };
 const PREFS_KEY = "starred-bill-prefs";
 const WISHLIST_KEY = "starred-bill-wishlist-2026-10";
-const state = { activeCat: "All", activeStars: 0, wishOnly: false, query: "", sort: "price-asc", wishlist: [], lastUndo: null };
+const state = { activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, query: "", sort: "price-asc", wishlist: [], lastUndo: null };
 
 function load() {
   try {
@@ -522,7 +524,10 @@ const isMenu = (r) => r.dinnerType === "menu" && r.dinner != null;
 const priceRank = (r) => (isMenu(r) ? 0 : r.dinner != null ? 1 : 2);
 const onWishlist = (r) => state.wishlist.includes(r.id);
 const starMatch = (r) => !state.activeStars || r.stars === state.activeStars;
-const wishMatch = (r) => !state.wishOnly || onWishlist(r);
+const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOnly || !!r.change);
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const monthYear = (ym) => { const [y, m] = String(ym || "").split("-"); return m ? MONTHS[Number(m) - 1] + " " + y : y || ""; };
+const changeBadge = (r) => !r.change ? "" : '<span class="chg chg-' + (r.change === "down" ? "down" : "up") + '" title="' + esc(r.changeNote + " in the " + monthYear(r.changeDate) + " Michelin Guide") + '">' + (r.change === "down" ? "▼ " : "▲ ") + (r.change === "new" ? "New " : "") + monthYear(r.changeDate) + "</span>";
 const categories = () => {
   const counts = {};
   RESTAURANTS.forEach((r) => { counts[r.cat] = (counts[r.cat] || 0) + (starMatch(r) && wishMatch(r) ? 1 : 0); });
@@ -555,18 +560,19 @@ function nameCell(r) {
 
 // Photos from Google Places, loaded only as each row scrolls into view.
 const photoCache = new Map();
-let placesLoading = null;
-function loadPlaces() {
-  if (!placesLoading) placesLoading = new Promise((resolve, reject) => {
-    window.__starredBillMaps = () => google.maps.importLibrary("places").then(resolve, reject);
+let mapsBoot = null;
+function loadGoogle() {
+  if (!mapsBoot) mapsBoot = new Promise((resolve, reject) => {
+    window.__starredBillMaps = resolve;
     const s = document.createElement("script");
     s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&callback=__starredBillMaps";
     s.async = true;
     s.onerror = reject;
     document.head.appendChild(s);
   });
-  return placesLoading;
+  return mapsBoot;
 }
+const loadPlaces = () => loadGoogle().then(() => google.maps.importLibrary("places"));
 function fetchPhoto(placeId) {
   if (!photoCache.has(placeId)) {
     photoCache.set(placeId, (async () => {
@@ -604,7 +610,8 @@ function observeThumbs() {
 function renderShowFilter() {
   const n = state.wishlist.length;
   $("showFilter").innerHTML =
-    '<button type="button" data-show="all" aria-pressed="' + !state.wishOnly + '">All restaurants</button>' +
+    '<button type="button" data-show="all" aria-pressed="' + !(state.wishOnly || state.changesOnly) + '">All restaurants</button>' +
+    '<button type="button" data-show="changes" aria-pressed="' + state.changesOnly + '" title="Gained or lost a star in the 2025 or 2026 Michelin Guide"><span class="chg-up" aria-hidden="true">▲</span>Recent star changes<span class="count">' + RESTAURANTS.filter((r) => r.change).length + "</span></button>" +
     '<button type="button" data-show="wishlist" aria-pressed="' + state.wishOnly + '"><span class="wish-icon">' + heart + '</span>My wishlist<span class="count">' + n + "</span></button>";
   $("wishCount").textContent = n;
   $("wishLink").classList.toggle("has-items", n > 0);
@@ -643,7 +650,7 @@ function renderLedger() {
     html += '<div class="row" role="row">' +
       nameCell(r) +
       '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cat) + '" title="Show only ' + esc(r.cat) + '">' + esc(r.cat) + "</button></span>" +
-      '<span class="stars-cell" role="cell">' + rosettes(r.stars) + "</span>" +
+      '<span class="stars-cell" role="cell">' + rosettes(r.stars) + changeBadge(r) + "</span>" +
       '<span class="rating-cell" role="cell"><span class="mlabel">Google</span>' + (r.rating ? '<span class="rating num" aria-label="Google rating ' + r.rating.toFixed(1) + ' out of 5"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + r.reviews.toLocaleString("en-GB") + " reviews</span>" : "") : '<span class="num muted">–</span>') + "</span>" +
       '<span class="notes" role="cell">' + esc(r.dinnerNote || "–") + (r.source && r.sourceType !== "none" ? ' <a class="src" href="' + esc(r.source) + '" target="_blank" rel="noopener" title="Where this price came from">' + (r.sourceType === "site" ? "Restaurant website" : "Review source") + "</a>" : "") + "</span>" +
       '<span class="dinner" role="cell"><span class="mlabel">Price</span><span class="bar"><span style="width:' + (isMenu(r) ? (r.dinner / max * 100).toFixed(1) : 0) + '%"></span></span><span class="dprice">' +
@@ -654,7 +661,7 @@ function renderLedger() {
       "</div>";
   });
   const q = state.query.trim().toLowerCase();
-  const former = state.activeStars || state.wishOnly ? [] : FORMER.filter((r) =>
+  const former = state.activeStars || state.wishOnly ? [] : FORMER.filter((r) => (!state.changesOnly || r.change) &&
     (state.activeCat === "All" || r.cat === state.activeCat) &&
     (!q || [r.name, r.cat, r.area || ""].some((v) => v.toLowerCase().includes(q))));
   if (former.length) {
@@ -664,13 +671,14 @@ function renderLedger() {
         '<span class="cat" role="cell"><span class="tag">' + esc(r.cat) + "</span></span>" +
         '<span class="stars-cell" role="cell">' + rosettes(r.formerStars) + '<span class="note">formerly</span></span>' +
         '<span class="rating-cell" role="cell"><span class="num muted">–</span></span>' +
-        '<span class="notes" role="cell"><span class="status-pill status-' + esc(r.status) + '">' + (STATUS_LABELS[r.status] || "Changed") + "</span>" + esc(r.statusNote || "") + "</span>" +
+        '<span class="notes" role="cell"><span class="status-pill status-' + esc(r.status) + '">' + (r.change === "down" ? "▼ " : "") + (STATUS_LABELS[r.status] || "Changed") + "</span>" + esc(r.statusNote || "") + "</span>" +
         '<span class="dinner" role="cell"><span class="dprice"><span class="num muted">–</span></span></span>' +
         '<span class="wine num muted" role="cell">–</span><span class="wish-cell" role="cell"></span></div>';
     });
   }
   $("ledger").innerHTML = html;
   observeThumbs();
+  updateMap(true);
   $("showing").textContent = "Showing " + rows.length + " of " + RESTAURANTS.length + " starred restaurants" + (former.length ? ", plus " + former.length + " no longer starred" : "");
 }
 
@@ -711,16 +719,71 @@ function renderTiers() {
   }).join("");
 }
 
+// Live map drawn from the restaurant list, loaded when the map section scrolls near.
+const mapState = { map: null, info: null, markers: new Map() };
+function pinIcon(stars) {
+  const c = MAP_PIN_COLOURS[stars].hex;
+  const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='40' viewBox='0 0 30 40'><path d='M15 38.5S2 26.6 2 15.5a13 13 0 0 1 26 0C28 26.6 15 38.5 15 38.5z' fill='" + c + "' stroke='#ffffff' stroke-width='2'/><text x='15' y='20.5' text-anchor='middle' font-family='Arial,sans-serif' font-size='13' font-weight='700' fill='#ffffff'>" + stars + "</text></svg>";
+  return { url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg), scaledSize: new google.maps.Size(30, 40), anchor: new google.maps.Point(15, 39) };
+}
+function infoHtml(r) {
+  const price = r.dinner == null ? "Price not listed" : gbp(r.dinner) + (r.dinnerType === "main" ? " per main" : r.dinnerType === "spend" ? " typical spend" : " dinner");
+  return '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:230px;line-height:1.4">' +
+    '<div style="font-weight:700;font-size:15px">' + esc(r.name) + "</div>" +
+    '<div style="color:#B3862B;font-size:13px">' + "✱".repeat(r.stars) + ' <span style="color:#5A6E62">' + esc(r.cat) + " · " + esc(r.area || "") + "</span></div>" +
+    '<div style="margin-top:6px;font-size:13px">' + esc(price) + (r.wine ? " · wine " + gbp(r.wine) : "") + "</div>" +
+    (r.rating ? '<div style="font-size:13px;color:#5A6E62">★ ' + r.rating.toFixed(1) + " on Google</div>" : "") +
+    (r.change ? '<div style="font-size:12px;color:' + (r.change === "down" ? "#A33A2E" : "#1E6142") + '">' + esc(r.changeNote + ", " + monthYear(r.changeDate)) + "</div>" : "") +
+    '<a href="' + mapsUrl(r) + '" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">Open in Google Maps</a></div>';
+}
+async function initMap() {
+  try {
+    await loadGoogle();
+    const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+    const { Marker } = await google.maps.importLibrary("marker");
+    $("mapCanvas").innerHTML = "";
+    $("mapCanvas").style.display = "block";
+    mapState.map = new Map($("mapCanvas"), { center: { lat: 51.507, lng: -0.13 }, zoom: 12, mapTypeControl: false, streetViewControl: false, clickableIcons: false, gestureHandling: "cooperative" });
+    mapState.info = new InfoWindow();
+    RESTAURANTS.forEach((r) => {
+      if (r.lat == null || r.lng == null) return;
+      const m = new Marker({ position: { lat: r.lat, lng: r.lng }, title: r.name, icon: pinIcon(r.stars), zIndex: r.stars * 10 });
+      m.addListener("click", () => { mapState.info.setContent(infoHtml(r)); mapState.info.open({ anchor: m, map: mapState.map }); });
+      mapState.markers.set(r.id, m);
+    });
+    updateMap(true);
+  } catch (e) {
+    $("mapCanvas").innerHTML = '<p class="map-wait">The map couldn\'t load right now. The pin next to each restaurant in the list still opens it in Google Maps.</p>';
+  }
+}
+function updateMap(fit) {
+  if (!mapState.map) return;
+  const visible = new Set(filtered().map((r) => r.id));
+  const bounds = new google.maps.LatLngBounds();
+  let n = 0;
+  mapState.markers.forEach((m, id) => {
+    const on = visible.has(id);
+    if ((m.getMap() != null) !== on) m.setMap(on ? mapState.map : null);
+    if (on) { bounds.extend(m.getPosition()); n++; }
+  });
+  mapState.info.close();
+  $("mapStatus").textContent = n ? "Showing " + n + " restaurant" + (n > 1 ? "s" : "") + " on the map" : "No restaurants match the current filters";
+  if (fit && n > 1) mapState.map.fitBounds(bounds, 40);
+  else if (fit && n === 1) { mapState.map.setCenter(bounds.getCenter()); mapState.map.setZoom(15); }
+}
 function renderMap() {
-  const id = GOOGLE_MY_MAP_ID.trim();
-  $("map").hidden = $("mapNav").hidden = !id;
-  if (!id) return;
-  $("mapFrame").src = "https://www.google.com/maps/d/embed?mid=" + encodeURIComponent(id);
-  $("mapOpen").href = "https://www.google.com/maps/d/viewer?mid=" + encodeURIComponent(id);
+  $("map").hidden = $("mapNav").hidden = !GOOGLE_MAPS_API_KEY;
+  if (!GOOGLE_MAPS_API_KEY) return;
   $("mapLegend").innerHTML = [1, 2, 3].map((s) => {
     const c = MAP_PIN_COLOURS[s], n = RESTAURANTS.filter((r) => r.stars === s).length;
-    return '<li><svg aria-hidden="true" style="--pin:' + c.hex + '"><use href="#pinfill"/></svg><span><span class="colour">' + c.name + "</span> = " + s + " Michelin star" + (s > 1 ? "s" : "") + '</span><span class="count">' + n + "</span></li>";
+    return '<li><span class="pin-num" style="--pin:' + c.hex + '" aria-hidden="true">' + s + '</span><span><span class="colour">' + c.name + "</span> = " + s + " Michelin star" + (s > 1 ? "s" : "") + '</span><span class="count">' + n + "</span></li>";
   }).join("");
+  let started = false;
+  const start = () => { if (started) return; started = true; window.removeEventListener("scroll", check); initMap(); };
+  const check = () => { if ($("map").getBoundingClientRect().top < window.innerHeight + 400) start(); };
+  window.addEventListener("scroll", check, { passive: true });
+  if (location.hash === "#map") start();
+  check();
 }
 
 function render() { renderShowFilter(); renderStarFilter(); renderChips(); renderLedger(); }
@@ -752,16 +815,16 @@ document.addEventListener("click", (e) => {
   if (!t) return;
   if (t.id === "wishLink") {
     e.preventDefault();
-    state.wishOnly = true; render();
+    state.wishOnly = true; state.changesOnly = false; render();
     $("compare").scrollIntoView();
   } else if (t.dataset.wish) {
     toggleWish(Number(t.dataset.wish));
   } else if (t.dataset.show) {
-    state.wishOnly = t.dataset.show === "wishlist"; render();
+    state.wishOnly = t.dataset.show === "wishlist"; state.changesOnly = t.dataset.show === "changes"; render();
   } else if (t.dataset.stars) {
     state.activeStars = Number(t.dataset.stars); render();
   } else if (t.id === "clearFilters") {
-    state.activeStars = 0; state.activeCat = "All"; state.wishOnly = false; state.query = ""; $("q").value = ""; render();
+    state.activeStars = 0; state.activeCat = "All"; state.wishOnly = false; state.changesOnly = false; state.query = ""; $("q").value = ""; render();
   } else if (t.dataset.cat) {
     state.activeCat = t.dataset.cat; render();
     if (t.classList.contains("tag")) $("compare").scrollIntoView();

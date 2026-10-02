@@ -496,11 +496,16 @@ const GOOGLE_MAPS_API_KEY = "AIzaSyA5AnpHOqFXxb6U3hDiXuAyQK2dIbZgLT4";
 
 // One entry per city. "file" is the data file; bump its ?v= after editing it.
 const CITIES = {
-  london: { file: "restaurants.js?v=2026-10-02d", currency: "GBP", label: { en: "London", zh: "倫敦" }, center: { lat: 51.507, lng: -0.13 } },
+  london: { file: "restaurants.js?v=2026-10-02d", currency: "GBP", label: { en: "London", zh: "倫敦" }, center: { lat: 51.507, lng: -0.13 },
+            // Fallback rates (1 GBP = ...), used if the live rates can't be fetched (2 October 2026).
+            fallbackRates: { EUR: 1.172711, USD: 1.320782 }, fallbackRateDate: "2026-10-02" },
   taiwan: { file: "taiwan.js?v=2026-10-02a", currency: "TWD", label: { en: "Taiwan", zh: "台灣" }, center: { lat: 23.8, lng: 120.9 },
-            // Fallback NT$ -> £ rate, used if the live rate can't be fetched (2 October 2026).
-            fallbackRate: 0.023674, fallbackRateDate: "2026-10-02" }
+            // Fallback rates (1 TWD = ...), used if the live rates can't be fetched (2 October 2026).
+            fallbackRates: { GBP: 0.023674, EUR: 0.027747, USD: 0.031255 }, fallbackRateDate: "2026-10-02" }
 };
+// Currencies a visitor can switch between; each city also offers its own currency first.
+const CURRENCIES = { TWD: "NT$", GBP: "£", EUR: "€", USD: "US$" };
+const CURRENCY_ORDER = ["GBP", "EUR", "USD"];
 const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 
 // ---------- Words (English / Traditional Chinese) ----------
@@ -512,7 +517,7 @@ const I18N = {
     heroTitle: { london: "What a Michelin star <em>costs</em> in London.", taiwan: "What a Michelin star <em>costs</em> in Taiwan." },
     heroText: {
       london: "Dinner and wine pairing prices per person at London's starred restaurants, side by side. Search by name or cuisine, filter by stars or cuisine, and save the ones you'd like to try to your wishlist. Prices checked October 2026, per person before service.",
-      taiwan: "Dinner and wine pairing prices per person at the starred restaurants of Taipei, Taichung, Tainan, Kaohsiung and Hsinchu, side by side. Prices are in New Taiwan dollars, with a switch to see them in pounds. Prices checked October 2026, before the usual 10% service charge."
+      taiwan: "Dinner and wine pairing prices per person at the starred restaurants of Taipei, Taichung, Tainan, Kaohsiung and Hsinchu, side by side. Prices are in New Taiwan dollars, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026, before the usual 10% service charge."
     },
     figCount: "Restaurants listed", figMin: "Cheapest dinner menu", figMax: "Priciest dinner menu",
     starCounts: "{3} three-star · {2} two-star · {1} one-star",
@@ -558,8 +563,8 @@ const I18N = {
     methodTitle: "How the prices are counted",
     m1Title: "Per person, before service",
     m1Text: {
-      london: "Every figure is for one guest and excludes service charge, which most London restaurants add at 12.5–15%. Supplements such as caviar or truffle courses are left out.",
-      taiwan: "Every figure is for one guest and excludes the 10% service charge most Taiwanese fine-dining restaurants add; some also charge a small fee for water or tea. Prices in pounds use the day's exchange rate and are approximate."
+      london: "Every figure is for one guest and excludes service charge, which most London restaurants add at 12.5–15%. Supplements such as caviar or truffle courses are left out. Prices shown in euros or US dollars use the day's exchange rate and are approximate.",
+      taiwan: "Every figure is for one guest and excludes the 10% service charge most Taiwanese fine-dining restaurants add; some also charge a small fee for water or tea. Prices shown in pounds, euros or US dollars use the day's exchange rate and are approximate."
     },
     m2Title: "Where prices come from",
     m2Text: {
@@ -579,7 +584,7 @@ const I18N = {
     sent: "Thanks, {name}. This is a preview form, so messages aren't sent yet.",
     footEdition: { london: "The Starred Bill · London edition", taiwan: "The Starred Bill · Taiwan edition" },
     footNote: "Prices and ratings checked October 2026. Check with each restaurant before booking.",
-    rateLine: "Prices in £ use the exchange rate on {date}: £1 = NT${rate}.",
+    rateLine: "Prices in {sym} are approximate, using the exchange rate on {date}: {sym}1 = {home}{rate}.",
     currencyAria: "Show prices in", cityAria: "City"
   },
   zh: {
@@ -588,7 +593,7 @@ const I18N = {
     heroTitle: { london: "在倫敦，一顆米其林星<em>要價</em>多少？", taiwan: "在台灣，一顆米其林星<em>要價</em>多少？" },
     heroText: {
       london: "並列比較倫敦米其林星級餐廳的每人晚餐與餐酒搭配價格。可依名稱或料理搜尋、依星級或料理篩選，也能把想去的餐廳加入願望清單。價格於 2026 年 10 月查核，以每人計、未含服務費。",
-      taiwan: "並列比較台北、台中、台南、高雄與新竹米其林星級餐廳的每人晚餐與餐酒搭配價格。價格以新台幣標示，也可切換為英鎊。價格於 2026 年 10 月查核，未含一般 10% 服務費。"
+      taiwan: "並列比較台北、台中、台南、高雄與新竹米其林星級餐廳的每人晚餐與餐酒搭配價格。價格以新台幣標示，也可切換為英鎊、歐元或美元。價格於 2026 年 10 月查核，未含一般 10% 服務費。"
     },
     figCount: "星級餐廳", figMin: "最便宜晚餐套餐", figMax: "最貴晚餐套餐",
     starCounts: "三星 {3} 家・二星 {2} 家・一星 {1} 家",
@@ -634,8 +639,8 @@ const I18N = {
     methodTitle: "價格如何計算",
     m1Title: "每人價格，未含服務費",
     m1Text: {
-      london: "所有金額均為每位客人的價格，不含倫敦多數餐廳加收的 12.5–15% 服務費，也不含魚子醬或松露等加價項目。",
-      taiwan: "所有金額均為每位客人的價格，不含台灣多數高級餐廳加收的 10% 服務費；部分餐廳另收水資或茶資。英鎊價格依當日匯率換算，僅供參考。"
+      london: "所有金額均為每位客人的價格，不含倫敦多數餐廳加收的 12.5–15% 服務費，也不含魚子醬或松露等加價項目。以歐元或美元顯示的價格依當日匯率換算，僅供參考。",
+      taiwan: "所有金額均為每位客人的價格，不含台灣多數高級餐廳加收的 10% 服務費；部分餐廳另收水資或茶資。以英鎊、歐元或美元顯示的價格依當日匯率換算，僅供參考。"
     },
     m2Title: "價格從哪裡來",
     m2Text: {
@@ -655,7 +660,7 @@ const I18N = {
     sent: "謝謝你，{name}。這是預覽表單，訊息目前不會寄出。",
     footEdition: { london: "The Starred Bill・倫敦版", taiwan: "The Starred Bill・台灣版" },
     footNote: "價格與評分於 2026 年 10 月查核，訂位前請向餐廳確認。",
-    rateLine: "英鎊價格依 {date} 匯率換算：£1 = NT${rate}。",
+    rateLine: "{sym} 價格依 {date} 匯率換算，僅供參考：{sym}1 = {home}{rate}。",
     currencyAria: "價格顯示幣別", cityAria: "城市"
   }
 };
@@ -681,7 +686,8 @@ let LANG = params.get("lang") === "zh" || params.get("lang") === "en" ? params.g
 const WISHLIST_KEY = CITY === "london" ? "starred-bill-wishlist-2026-10" : "starred-bill-wishlist-" + CITY + "-2026-10";
 const PREFS_KEY = "starred-bill-prefs";
 const state = { activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, query: "", sort: "price-asc", wishlist: [], lastUndo: null,
-  currency: C.currency, rate: C.fallbackRate || 1, rateDate: C.fallbackRateDate ? new Date(C.fallbackRateDate + "T12:00:00Z") : null };
+  currency: C.currency, rates: Object.assign({ [C.currency]: 1 }, C.fallbackRates), rateDate: C.fallbackRateDate ? new Date(C.fallbackRateDate + "T12:00:00Z") : null };
+const currencyOptions = [C.currency].concat(CURRENCY_ORDER.filter((c) => c !== C.currency));
 let ALL_RESTAURANTS = [], RESTAURANTS = [], FORMER = [];
 
 // ---------- Helpers ----------
@@ -708,11 +714,11 @@ const MONTHS_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"
 const monthYear = (ym) => { const [y, m] = String(ym || "").split("-"); if (!m) return y || ""; return zh() ? y + "年" + Number(m) + "月" : MONTHS_EN[Number(m) - 1] + " " + y; };
 function money(n) {
   if (n == null) return "";
-  if (C.currency === "TWD") {
-    if (state.currency === "GBP") return "≈£" + Math.round(n * state.rate).toLocaleString("en-GB");
-    return "NT$" + Math.round(n).toLocaleString("en-US");
+  if (state.currency !== C.currency && state.rates[state.currency]) {
+    return "≈" + CURRENCIES[state.currency] + Math.round(n * state.rates[state.currency]).toLocaleString("en-GB");
   }
-  return "£" + n.toLocaleString("en-GB", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
+  if (C.currency === "TWD") return "NT$" + Math.round(n).toLocaleString("en-US");
+  return CURRENCIES[C.currency] + n.toLocaleString("en-GB", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
 }
 const rosettes = (n) => '<span class="stars" aria-label="' + esc(t("starsAria", { n })) + '">' + '<svg><use href="#rosette"/></svg>'.repeat(n) + "</span>";
 const heart = '<svg aria-hidden="true"><use href="#heart"/></svg>';
@@ -729,12 +735,16 @@ const changeBadge = (r) => !r.change ? "" : '<span class="chg chg-' + (r.change 
 function load() {
   const prefs = store.get(PREFS_KEY, {});
   if (prefs.sort) state.sort = prefs.sort;
-  if (C.currency === "TWD" && prefs.twCurrency) state.currency = prefs.twCurrency;
+  const saved = (prefs.currency || {})[CITY];
+  if (saved && currencyOptions.includes(saved)) state.currency = saved;
   const wl = store.get(WISHLIST_KEY, []);
   if (Array.isArray(wl)) state.wishlist = wl.filter((id) => RESTAURANTS.some((r) => r.id === id));
 }
 function save() {
-  store.set(PREFS_KEY, Object.assign(store.get(PREFS_KEY, {}), { sort: state.sort }, C.currency === "TWD" ? { twCurrency: state.currency } : {}));
+  const prefs = store.get(PREFS_KEY, {});
+  prefs.sort = state.sort;
+  prefs.currency = Object.assign({}, prefs.currency, { [CITY]: state.currency });
+  store.set(PREFS_KEY, prefs);
   store.set(WISHLIST_KEY, state.wishlist);
 }
 
@@ -771,13 +781,15 @@ function applyStatic() {
     '<a href="' + link(k, LANG) + '"' + (k === CITY ? ' aria-current="page"' : "") + ">" + esc(CITIES[k].label[LANG]) + "</a>").join("");
   $("langSwitch").innerHTML = [["en", "EN"], ["zh", "中文"]].map(([k, l]) =>
     '<button type="button" data-lang="' + k + '" aria-pressed="' + (k === LANG) + '" lang="' + (k === "zh" ? "zh-Hant" : "en") + '">' + l + "</button>").join("");
-  $("currencySwitch").hidden = C.currency !== "TWD";
-  if (C.currency === "TWD") {
-    $("currencySwitch").innerHTML = [["TWD", "NT$"], ["GBP", "£"]].map(([k, l]) =>
-      '<button type="button" data-currency="' + k + '" aria-pressed="' + (k === state.currency) + '">' + l + "</button>").join("");
-    $("rateLine").hidden = state.currency !== "GBP";
+  $("currencySwitch").hidden = false;
+  $("currencySwitch").innerHTML = currencyOptions.map((k) =>
+    '<button type="button" data-currency="' + k + '" aria-pressed="' + (k === state.currency) + '">' + CURRENCIES[k] + "</button>").join("");
+  const converted = state.currency !== C.currency;
+  $("rateLine").hidden = !converted;
+  if (converted) {
     const date = state.rateDate ? state.rateDate.toLocaleDateString(zh() ? "zh-TW" : "en-GB", { day: "numeric", month: zh() ? "numeric" : "short", year: "numeric" }) : "";
-    $("rateLine").textContent = t("rateLine", { date, rate: (1 / state.rate).toFixed(2) });
+    const sym = CURRENCIES[state.currency], home = CURRENCIES[C.currency];
+    $("rateLine").textContent = t("rateLine", { sym, home, date, rate: (1 / state.rates[state.currency]).toFixed(2) });
   }
 }
 
@@ -1015,13 +1027,12 @@ function startMapWhenNear() {
   check();
 }
 
-// ---------- Exchange rate (Taiwan) ----------
+// ---------- Exchange rates ----------
 async function loadRate() {
-  if (C.currency !== "TWD") return;
   try {
-    const d = await fetch("https://open.er-api.com/v6/latest/TWD").then((r) => r.json());
-    if (d && d.rates && d.rates.GBP) {
-      state.rate = d.rates.GBP;
+    const d = await fetch("https://open.er-api.com/v6/latest/" + C.currency).then((r) => r.json());
+    if (d && d.rates && CURRENCY_ORDER.every((c) => d.rates[c])) {
+      CURRENCY_ORDER.forEach((c) => { state.rates[c] = d.rates[c]; });
       state.rateDate = new Date(d.time_last_update_unix * 1000);
       renderAll();
     }

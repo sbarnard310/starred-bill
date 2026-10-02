@@ -1,6 +1,6 @@
 # The Starred Bill
 
-Compare dinner and wine pairing prices at Michelin-starred restaurants in London and Taiwan, in English or Traditional Chinese.
+Compare dinner, lunch and wine pairing prices at Michelin-starred restaurants in London and Taiwan, in English or Traditional Chinese.
 
 - London: https://sbarnard310.github.io/starred-bill/
 - Taiwan: https://sbarnard310.github.io/starred-bill/?city=taiwan

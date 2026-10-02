@@ -277,6 +277,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 .hseg [aria-current="page"], .hseg [aria-pressed="true"] { background: var(--band-ink); color: var(--band); }
 .alt-name { display: block; font-weight: 500; font-size: .82rem; color: var(--ink); opacity: .75; }
 .notice { display: inline-block; margin: 0 6px 4px 0; padding: 1px 7px; border-radius: 999px; font-size: .7rem; font-weight: 700; background: color-mix(in srgb, var(--gold) 22%, transparent); color: var(--ink); }
+.row.nolunch .dinner, .row.nolunch .wine, .row.nolunch .notes { opacity: .65; }
 .rate-line { margin: -4px 0 14px; font-size: .82rem; color: var(--muted); }
 :lang(zh-Hant-TW) .eyebrow, :lang(zh-Hant-TW) .flabel, :lang(zh-Hant-TW) .figure .label, :lang(zh-Hant-TW) .row.head { letter-spacing: .04em; }
 </style>
@@ -337,7 +338,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
     </div>
     <div class="figures" aria-live="polite">
       <div class="figure"><div class="label" data-i18n="figCount"></div><div class="value" id="fCount">0</div><div class="sub" id="fCountSub"></div></div>
-      <div class="figure"><div class="label" data-i18n="figMin"></div><div class="value" id="fMin">–</div><div class="sub" id="fMinSub"></div></div>
+      <div class="figure"><div class="label" data-i18n="figMin" id="figMinLabel"></div><div class="value" id="fMin">–</div><div class="sub" id="fMinSub"></div></div>
       <div class="figure"><div class="label" data-i18n="figMax"></div><div class="value" id="fMax">–</div><div class="sub" id="fMaxSub"></div></div>
     </div>
   </div>
@@ -370,6 +371,10 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
       <p class="rate-line" id="rateLine" hidden></p>
 
       <div class="filters">
+        <div class="filter-group">
+          <span class="flabel" id="mealLabel" data-i18n="fMeal"></span>
+          <div class="seg" id="mealFilter" role="group" aria-labelledby="mealLabel"></div>
+        </div>
         <div class="filter-group">
           <span class="flabel" id="showLabel" data-i18n="fShow"></span>
           <div class="seg" id="showFilter" role="group" aria-labelledby="showLabel"></div>
@@ -496,10 +501,10 @@ const GOOGLE_MAPS_API_KEY = "AIzaSyA5AnpHOqFXxb6U3hDiXuAyQK2dIbZgLT4";
 
 // One entry per city. "file" is the data file; bump its ?v= after editing it.
 const CITIES = {
-  london: { file: "restaurants.js?v=2026-10-02d", currency: "GBP", label: { en: "London", zh: "倫敦" }, center: { lat: 51.507, lng: -0.13 },
+  london: { file: "restaurants.js?v=2026-10-02e", currency: "GBP", label: { en: "London", zh: "倫敦" }, center: { lat: 51.507, lng: -0.13 },
             // Fallback rates (1 GBP = ...), used if the live rates can't be fetched (2 October 2026).
             fallbackRates: { EUR: 1.172711, USD: 1.320782 }, fallbackRateDate: "2026-10-02" },
-  taiwan: { file: "taiwan.js?v=2026-10-02a", currency: "TWD", label: { en: "Taiwan", zh: "台灣" }, center: { lat: 23.8, lng: 120.9 },
+  taiwan: { file: "taiwan.js?v=2026-10-02b", currency: "TWD", label: { en: "Taiwan", zh: "台灣" }, center: { lat: 23.8, lng: 120.9 },
             // Fallback rates (1 TWD = ...), used if the live rates can't be fetched (2 October 2026).
             fallbackRates: { GBP: 0.023674, EUR: 0.027747, USD: 0.031255 }, fallbackRateDate: "2026-10-02" }
 };
@@ -519,10 +524,12 @@ const I18N = {
       london: "Dinner and wine pairing prices per person at London's starred restaurants, side by side. Search by name or cuisine, filter by stars or cuisine, and save the ones you'd like to try to your wishlist. Prices checked October 2026, per person before service.",
       taiwan: "Dinner and wine pairing prices per person at the starred restaurants of Taipei, Taichung, Tainan, Kaohsiung and Hsinchu, side by side. Prices are in New Taiwan dollars, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026, before the usual 10% service charge."
     },
-    figCount: "Restaurants listed", figMin: "Cheapest dinner menu", figMax: "Priciest dinner menu",
+    figCount: "Restaurants listed", figMin: "Cheapest dinner menu", figMax: "Priciest dinner menu", figMinLunch: "Cheapest lunch menu", figMaxLunch: "Priciest lunch menu",
+    fMeal: "Meal", mealDinner: "Dinner", mealLunch: "Lunch", hNotesLunch: "Lunch notes", noLunch: "No lunch service", avgLunch: "avg lunch", infoLunch: "lunch",
+    sortPriceAscLunch: "Lunch: low to high", sortPriceDescLunch: "Lunch: high to low",
     starCounts: "{3} three-star · {2} two-star · {1} one-star",
     compareTitle: "Every table, every price",
-    compareText: "Dinner is the tasting or set menu price unless marked “per main” or “typical spend”. Bars compare each dinner menu with the most expensive on the list. Each price links to where it came from.",
+    compareText: "Switch between dinner and lunch below. Prices are for the tasting or set menu unless marked “per main” or “typical spend”, and the bars compare each menu with the most expensive on the list. Each price links to where it came from.",
     searchPh: { london: "Search by restaurant, cuisine or area, e.g. “Mayfair”", taiwan: "Search by restaurant, cuisine or area, e.g. “Da'an”" },
     searchLabel: "Search restaurants by name, cuisine or area",
     sortLabel: "Sort restaurants",
@@ -557,7 +564,7 @@ const I18N = {
     mapShowing: "Showing {n} restaurant on the map|Showing {n} restaurants on the map", mapNone: "No restaurants match the current filters",
     infoDinner: "dinner", infoWine: "wine", infoGoogle: "on Google", infoOpen: "Open in Google Maps", infoNoPrice: "Price not listed",
     starsTitle: "How much each extra star adds",
-    starsText: "Average dinner menu price, grouped by Michelin stars. À la carte restaurants are counted but left out of the averages and ranges.",
+    starsText: "Average menu price for the meal chosen above, grouped by Michelin stars. À la carte restaurants are counted but left out of the averages and ranges.",
     tierNames: ["One star", "Two stars", "Three stars"], avgDinner: "avg dinner", tRestaurants: "Restaurants", tRange: "Range", tRating: "Avg Google rating",
     tVs: "vs {n} star|vs {n} stars", tNoPrices: "No dinner menu prices for these restaurants.", tNone: "No {tier} restaurants listed.",
     methodTitle: "How the prices are counted",
@@ -568,8 +575,8 @@ const I18N = {
     },
     m2Title: "Where prices come from",
     m2Text: {
-      london: "Dinner is the main tasting menu where there is one, and wine is the cheapest pairing for it. We take prices from each restaurant's own website where they're published, otherwise from recent reviews and booking sites. À la carte restaurants show a typical main course (“per main”) or typical spend per person.",
-      taiwan: "Dinner is the main tasting menu where there is one, and wine is the cheapest pairing for it. We take prices from each restaurant's own website where they're published, otherwise from recent reviews, booking sites and local food writers. Where a restaurant offers several menus, the note says which one is shown."
+      london: "Dinner is the main tasting menu where there is one, and wine is the cheapest pairing for it. We take prices from each restaurant's own website where they're published, otherwise from recent reviews and booking sites. À la carte restaurants show a typical main course (“per main”) or typical spend per person. Lunch is the restaurant's set or tasting lunch menu, and the note says which days it's served.",
+      taiwan: "Dinner is the main tasting menu where there is one, and wine is the cheapest pairing for it. We take prices from each restaurant's own website where they're published, otherwise from recent reviews, booking sites and local food writers. Where a restaurant offers several menus, the note says which one is shown. Lunch is the restaurant's set or tasting lunch menu, and the note says which days it's served."
     },
     m3Title: "Stars and Google rating",
     m3Text: {
@@ -595,10 +602,12 @@ const I18N = {
       london: "並列比較倫敦米其林星級餐廳的每人晚餐與餐酒搭配價格。可依名稱或料理搜尋、依星級或料理篩選，也能把想去的餐廳加入願望清單。價格於 2026 年 10 月查核，以每人計、未含服務費。",
       taiwan: "並列比較台北、台中、台南、高雄與新竹米其林星級餐廳的每人晚餐與餐酒搭配價格。價格以新台幣標示，也可切換為英鎊、歐元或美元。價格於 2026 年 10 月查核，未含一般 10% 服務費。"
     },
-    figCount: "星級餐廳", figMin: "最便宜晚餐套餐", figMax: "最貴晚餐套餐",
+    figCount: "星級餐廳", figMin: "最便宜晚餐套餐", figMax: "最貴晚餐套餐", figMinLunch: "最便宜午餐套餐", figMaxLunch: "最貴午餐套餐",
+    fMeal: "餐期", mealDinner: "晚餐", mealLunch: "午餐", hNotesLunch: "午餐說明", noLunch: "不供應午餐", avgLunch: "平均午餐", infoLunch: "午餐",
+    sortPriceAscLunch: "午餐：由低到高", sortPriceDescLunch: "午餐：由高到低",
     starCounts: "三星 {3} 家・二星 {2} 家・一星 {1} 家",
     compareTitle: "每張餐桌，每個價格",
-    compareText: "晚餐價格為品嚐或套餐價格，標示「每道主菜」或「人均消費」者除外。長條圖將各晚餐套餐與最貴者比較，每個價格都附有來源連結。",
+    compareText: "可在下方切換晚餐與午餐。價格為品嚐或套餐價格，標示「每道主菜」或「人均消費」者除外；長條圖將各套餐與最貴者比較，每個價格都附有來源連結。",
     searchPh: { london: "搜尋餐廳、料理或地區，例如「Mayfair」", taiwan: "搜尋餐廳、料理或地區，例如「大安」" },
     searchLabel: "依名稱、料理或地區搜尋餐廳",
     sortLabel: "排序",
@@ -633,7 +642,7 @@ const I18N = {
     mapShowing: "地圖上顯示 {n} 家餐廳", mapNone: "沒有符合目前篩選條件的餐廳",
     infoDinner: "晚餐", infoWine: "餐酒搭配", infoGoogle: "Google 評分", infoOpen: "在 Google 地圖開啟", infoNoPrice: "價格未公布",
     starsTitle: "每多一顆星，要多花多少？",
-    starsText: "依米其林星級分組的晚餐套餐平均價格。單點餐廳計入家數，但不納入平均與價格區間。",
+    starsText: "依上方所選餐期、以米其林星級分組的套餐平均價格。單點餐廳計入家數，但不納入平均與價格區間。",
     tierNames: ["一星", "二星", "三星"], avgDinner: "平均晚餐", tRestaurants: "餐廳數", tRange: "價格區間", tRating: "Google 平均評分",
     tVs: "比{n}星", tNoPrices: "這些餐廳沒有晚餐套餐價格。", tNone: "目前沒有{tier}餐廳。",
     methodTitle: "價格如何計算",
@@ -644,8 +653,8 @@ const I18N = {
     },
     m2Title: "價格從哪裡來",
     m2Text: {
-      london: "晚餐以主要品嚐套餐為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網為準；否則參考近期評論與訂位網站。單點餐廳則顯示一般主菜價格（每道主菜）或人均消費。",
-      taiwan: "晚餐以主要品嚐套餐為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網為準；否則參考近期評論、訂位網站與在地美食作家。若餐廳提供多種套餐，說明欄會註明顯示的是哪一種。"
+      london: "晚餐以主要品嚐套餐為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網為準；否則參考近期評論與訂位網站。單點餐廳則顯示一般主菜價格（每道主菜）或人均消費。午餐以餐廳的午間套餐或品嚐套餐為準，說明欄會註明供應日。",
+      taiwan: "晚餐以主要品嚐套餐為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網為準；否則參考近期評論、訂位網站與在地美食作家。若餐廳提供多種套餐，說明欄會註明顯示的是哪一種。午餐以餐廳的午間套餐或品嚐套餐為準，說明欄會註明供應日。"
     },
     m3Title: "星級與 Google 評分",
     m3Text: {
@@ -685,7 +694,7 @@ let LANG = params.get("lang") === "zh" || params.get("lang") === "en" ? params.g
   : store.get("starred-bill-lang", (navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en");
 const WISHLIST_KEY = CITY === "london" ? "starred-bill-wishlist-2026-10" : "starred-bill-wishlist-" + CITY + "-2026-10";
 const PREFS_KEY = "starred-bill-prefs";
-const state = { activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, query: "", sort: "price-asc", wishlist: [], lastUndo: null,
+const state = { meal: "dinner", activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, query: "", sort: "price-asc", wishlist: [], lastUndo: null,
   currency: C.currency, rates: Object.assign({ [C.currency]: 1 }, C.fallbackRates), rateDate: C.fallbackRateDate ? new Date(C.fallbackRateDate + "T12:00:00Z") : null };
 const currencyOptions = [C.currency].concat(CURRENCY_ORDER.filter((c) => c !== C.currency));
 let ALL_RESTAURANTS = [], RESTAURANTS = [], FORMER = [];
@@ -707,7 +716,8 @@ const altNameOf = (r) => r.nameZh ? (zh() ? r.name : r.nameZh) : "";
 const catOf = (c, r) => zh() ? ((r && r.catZh) || CUISINE_ZH[c] || c) : c;
 const catZhFor = (c) => { const r = ALL_RESTAURANTS.find((x) => x.cat === c && x.catZh); return r ? r.catZh : CUISINE_ZH[c] || c; };
 const areaOf = (r) => (zh() && r.areaZh) ? r.areaZh : (r.area || "");
-const noteOf = (r) => (zh() && r.dinnerNoteZh) ? r.dinnerNoteZh : (r.dinnerNote || "");
+const noteOf = (r) => L() ? ((zh() && r.lunchNoteZh) ? r.lunchNoteZh : (r.lunchNote || ""))
+  : ((zh() && r.dinnerNoteZh) ? r.dinnerNoteZh : (r.dinnerNote || ""));
 const statusNoteOf = (r) => (zh() && r.statusNoteZh) ? r.statusNoteZh : (r.statusNote || "");
 const changeNoteOf = (r) => (zh() && r.changeNoteZh) ? r.changeNoteZh : (r.changeNote || "");
 const MONTHS_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -723,8 +733,16 @@ function money(n) {
 const rosettes = (n) => '<span class="stars" aria-label="' + esc(t("starsAria", { n })) + '">' + '<svg><use href="#rosette"/></svg>'.repeat(n) + "</span>";
 const heart = '<svg aria-hidden="true"><use href="#heart"/></svg>';
 const mapsUrl = (r) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent([r.name, r.address || (r.area || "") + (CITY === "london" ? ", London" : ", Taiwan")].join(", ")) + (r.placeId ? "&query_place_id=" + encodeURIComponent(r.placeId) : "");
-const isMenu = (r) => r.dinnerType === "menu" && r.dinner != null;
-const priceRank = (r) => (isMenu(r) ? 0 : r.dinner != null ? 1 : 2);
+// Meal-aware accessors: the Dinner | Lunch switch decides which figures are shown.
+const L = () => state.meal === "lunch";
+const priceOf = (r) => L() ? (r.noLunch ? null : r.lunch) : r.dinner;
+const typeOf = (r) => L() ? (r.lunchType || "menu") : r.dinnerType;
+const wineOf = (r) => L() ? r.lunchWine : r.wine;
+const srcOf = (r) => L() ? r.lunchSource : r.source;
+const srcTypeOf = (r) => L() ? r.lunchSourceType : r.sourceType;
+const isMenu = (r) => typeOf(r) === "menu" && priceOf(r) != null;
+const priceRank = (r) => (L() && r.noLunch ? 3 : isMenu(r) ? 0 : priceOf(r) != null ? 1 : 2);
+const byPrice = (a, b) => (priceOf(a) || 0) - (priceOf(b) || 0);
 const onWishlist = (r) => state.wishlist.includes(r.id);
 const starMatch = (r) => !state.activeStars || r.stars === state.activeStars;
 const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOnly || !!r.change);
@@ -735,6 +753,7 @@ const changeBadge = (r) => !r.change ? "" : '<span class="chg chg-' + (r.change 
 function load() {
   const prefs = store.get(PREFS_KEY, {});
   if (prefs.sort) state.sort = prefs.sort;
+  if (prefs.meal === "lunch") state.meal = "lunch";
   const saved = (prefs.currency || {})[CITY];
   if (saved && currencyOptions.includes(saved)) state.currency = saved;
   const wl = store.get(WISHLIST_KEY, []);
@@ -743,6 +762,7 @@ function load() {
 function save() {
   const prefs = store.get(PREFS_KEY, {});
   prefs.sort = state.sort;
+  prefs.meal = state.meal;
   prefs.currency = Object.assign({}, prefs.currency, { [CITY]: state.currency });
   store.set(PREFS_KEY, prefs);
   store.set(WISHLIST_KEY, state.wishlist);
@@ -752,10 +772,10 @@ function filtered() {
   const rows = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && (state.activeCat === "All" || r.cat === state.activeCat) && queryMatch(r));
   const coll = new Intl.Collator(zh() ? "zh-Hant-TW" : "en-GB");
   const sorters = {
-    "price-asc": (a, b) => priceRank(a) - priceRank(b) || a.dinner - b.dinner,
-    "price-desc": (a, b) => priceRank(a) - priceRank(b) || b.dinner - a.dinner,
-    "stars": (a, b) => b.stars - a.stars || priceRank(a) - priceRank(b) || b.dinner - a.dinner,
-    "rating": (a, b) => (b.rating || 0) - (a.rating || 0) || coll.compare(nameOf(a), nameOf(b)),
+    "price-asc": (a, b) => priceRank(a) - priceRank(b) || byPrice(a, b),
+    "price-desc": (a, b) => priceRank(a) - priceRank(b) || byPrice(b, a),
+    "stars": (a, b) => b.stars - a.stars || priceRank(a) - priceRank(b) || byPrice(b, a),
+    "rating": (a, b) => (L() ? (a.noLunch ? 1 : 0) - (b.noLunch ? 1 : 0) : 0) || (b.rating || 0) - (a.rating || 0) || coll.compare(nameOf(a), nameOf(b)),
     "name": (a, b) => coll.compare(nameOf(a), nameOf(b))
   };
   return rows.sort(sorters[state.sort] || sorters["price-asc"]);
@@ -766,6 +786,12 @@ function applyStatic() {
   document.documentElement.lang = zh() ? "zh-Hant-TW" : "en-GB";
   document.title = "The Starred Bill · " + C.label[LANG];
   document.querySelectorAll("[data-i18n]").forEach((el) => { el.innerHTML = t(el.dataset.i18n); });
+  if (L()) {
+    document.querySelector('[data-i18n="figMin"]').innerHTML = t("figMinLunch");
+    document.querySelector('[data-i18n="figMax"]').innerHTML = t("figMaxLunch");
+    document.querySelector('[data-i18n="sortPriceAsc"]').innerHTML = t("sortPriceAscLunch");
+    document.querySelector('[data-i18n="sortPriceDesc"]').innerHTML = t("sortPriceDescLunch");
+  }
   $("q").placeholder = t("searchPh");
   $("q").setAttribute("aria-label", t("searchLabel"));
   $("sort").setAttribute("aria-label", t("sortLabel"));
@@ -794,6 +820,10 @@ function applyStatic() {
 }
 
 // ---------- Filters ----------
+function renderMealFilter() {
+  $("mealFilter").innerHTML = [["dinner", t("mealDinner")], ["lunch", t("mealLunch")]].map(([k, l]) =>
+    '<button type="button" data-meal="' + k + '" aria-pressed="' + (state.meal === k) + '">' + l + "</button>").join("");
+}
 function renderShowFilter() {
   const n = state.wishlist.length;
   $("showFilter").innerHTML =
@@ -813,7 +843,9 @@ function renderChips() {
   const counts = {};
   RESTAURANTS.forEach((r) => { counts[r.cat] = (counts[r.cat] || 0) + (starMatch(r) && wishMatch(r) ? 1 : 0); });
   const coll = new Intl.Collator(zh() ? "zh-Hant-TW" : "en-GB");
-  const label = (c) => zh() ? catZhFor(c) : c;
+  const zhCount = {};
+  Object.keys(counts).forEach((c) => { const z = catZhFor(c); zhCount[z] = (zhCount[z] || 0) + 1; });
+  const label = (c) => !zh() ? c : zhCount[catZhFor(c)] > 1 ? catZhFor(c) + "（" + c + "）" : catZhFor(c);
   const cats = Object.keys(counts).sort((a, b) => coll.compare(label(a), label(b)));
   const total = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r)).length;
   let html = '<span class="chip all' + (state.activeCat === "All" ? " active" : "") + '"><button type="button" data-cat="All" aria-pressed="' + (state.activeCat === "All") + '">' + t("all") + '<span class="count">' + total + "</span></button></span>";
@@ -836,24 +868,24 @@ function nameCell(r) {
 }
 function renderLedger() {
   const rows = filtered();
-  const max = Math.max(...RESTAURANTS.filter(isMenu).map((r) => r.dinner), 1);
-  let html = '<div class="row head" role="row"><span role="columnheader">' + t("hRestaurant") + '</span><span role="columnheader">' + t("hCuisine") + '</span><span role="columnheader">' + t("hStars") + '</span><span role="columnheader">' + t("hGoogle") + '</span><span role="columnheader">' + t("hNotes") + '</span><span role="columnheader" style="text-align:right">' + t("hPrice") + '</span><span role="columnheader" style="text-align:right">' + t("hWine") + '</span><span role="columnheader" class="sr-only">' + t("hWish") + "</span></div>";
+  const max = Math.max(...RESTAURANTS.filter(isMenu).map(priceOf), 1);
+  let html = '<div class="row head" role="row"><span role="columnheader">' + t("hRestaurant") + '</span><span role="columnheader">' + t("hCuisine") + '</span><span role="columnheader">' + t("hStars") + '</span><span role="columnheader">' + t("hGoogle") + '</span><span role="columnheader">' + t(L() ? "hNotesLunch" : "hNotes") + '</span><span role="columnheader" style="text-align:right">' + t("hPrice") + '</span><span role="columnheader" style="text-align:right">' + t("hWine") + '</span><span role="columnheader" class="sr-only">' + t("hWish") + "</span></div>";
   if (!rows.length) {
     html += '<div class="empty">' + (state.wishOnly && !state.wishlist.length ? t("emptyWish")
       : t("noMatch") + ' <button type="button" class="linkish" id="clearFilters">' + t("clearFilters") + "</button>") + "</div>";
   }
   rows.forEach((r) => {
     const on = onWishlist(r);
-    html += '<div class="row" role="row">' + nameCell(r) +
+    html += '<div class="row' + (L() && r.noLunch ? " nolunch" : "") + '" role="row">' + nameCell(r) +
       '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cat) + '" title="' + esc(t("showOnly", { cat: catOf(r.cat, r) })) + '">' + esc(catOf(r.cat, r)) + "</button></span>" +
       '<span class="stars-cell" role="cell">' + rosettes(r.stars) + changeBadge(r) + "</span>" +
       '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + "</span>" : "") : '<span class="num muted">–</span>') + "</span>" +
       '<span class="notes" role="cell">' + (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc(noteOf(r) || "–") +
-        (r.source && r.sourceType !== "none" ? ' <a class="src" href="' + esc(r.source) + '" target="_blank" rel="noopener" title="' + esc(t("srcTitle")) + '">' + (r.sourceType === "site" ? t("srcSite") : t("srcPress")) + "</a>" : "") + "</span>" +
-      '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + '</span><span class="bar"><span style="width:' + (isMenu(r) ? (r.dinner / max * 100).toFixed(1) : 0) + '%"></span></span><span class="dprice">' +
-        (r.dinner == null ? '<span class="num muted">–</span><span class="note">' + t("notListed") + "</span>"
-          : '<span class="num">' + money(r.dinner) + "</span>" + (r.dinnerType === "main" ? '<span class="note">' + t("perMain") + "</span>" : r.dinnerType === "spend" ? '<span class="note">' + t("typicalSpend") + "</span>" : "")) + "</span></span>" +
-      '<span class="wine num' + (r.wine ? "" : " muted") + '" role="cell"><span class="mlabel">' + t("hWine") + "</span>" + (r.wine ? money(r.wine) : "–") + "</span>" +
+        (srcOf(r) && srcTypeOf(r) !== "none" ? ' <a class="src" href="' + esc(srcOf(r)) + '" target="_blank" rel="noopener" title="' + esc(t("srcTitle")) + '">' + (srcTypeOf(r) === "site" ? t("srcSite") : t("srcPress")) + "</a>" : "") + "</span>" +
+      '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + '</span><span class="bar"><span style="width:' + (isMenu(r) ? (priceOf(r) / max * 100).toFixed(1) : 0) + '%"></span></span><span class="dprice">' +
+        (priceOf(r) == null ? '<span class="num muted">–</span><span class="note">' + t(L() && r.noLunch ? "noLunch" : "notListed") + "</span>"
+          : '<span class="num">' + money(priceOf(r)) + "</span>" + (typeOf(r) === "main" ? '<span class="note">' + t("perMain") + "</span>" : typeOf(r) === "spend" ? '<span class="note">' + t("typicalSpend") + "</span>" : "")) + "</span></span>" +
+      '<span class="wine num' + (wineOf(r) ? "" : " muted") + '" role="cell"><span class="mlabel">' + t("hWine") + "</span>" + (wineOf(r) ? money(wineOf(r)) : "–") + "</span>" +
       '<span class="wish-cell" role="cell"><button type="button" class="wish" data-wish="' + r.id + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
       "</div>";
   });
@@ -883,16 +915,16 @@ function renderFigures() {
   $("fCount").textContent = all.length;
   const n = [0, 1, 2, 3].map((s) => all.filter((r) => r.stars === s).length);
   $("fCountSub").textContent = t("starCounts").replace("{3}", n[3]).replace("{2}", n[2]).replace("{1}", n[1]);
-  const byPrice = all.filter(isMenu).sort((a, b) => a.dinner - b.dinner);
-  if (!byPrice.length) return;
-  const lo = byPrice[0], hi = byPrice[byPrice.length - 1];
-  $("fMin").textContent = money(lo.dinner); $("fMinSub").textContent = nameOf(lo);
-  $("fMax").textContent = money(hi.dinner); $("fMaxSub").textContent = nameOf(hi);
+  const sorted = all.filter(isMenu).sort(byPrice);
+  if (!sorted.length) return;
+  const lo = sorted[0], hi = sorted[sorted.length - 1];
+  $("fMin").textContent = money(priceOf(lo)); $("fMinSub").textContent = nameOf(lo);
+  $("fMax").textContent = money(priceOf(hi)); $("fMaxSub").textContent = nameOf(hi);
 }
 function renderTiers() {
   const tiers = [1, 2, 3].map((s) => {
     const list = RESTAURANTS.filter((r) => r.stars === s);
-    const prices = list.filter(isMenu).map((r) => r.dinner);
+    const prices = list.filter(isMenu).map(priceOf);
     const avg = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
     const rated = list.filter((r) => r.rating);
     return { s, n: list.length, priced: prices.length, avg, min: Math.min(...prices), max: Math.max(...prices), rating: rated.length ? rated.reduce((a, r) => a + r.rating, 0) / rated.length : null };
@@ -903,7 +935,7 @@ function renderTiers() {
     const prev = i > 0 && tiers[i - 1].priced && x.priced ? x.avg - tiers[i - 1].avg : null;
     return '<div class="tier"><div class="top"><h3>' + names[x.s - 1] + "</h3>" + rosettes(x.s) + "</div>" +
       (x.priced
-        ? '<div class="avg">' + money(x.avg) + "<small>" + t("avgDinner") + "</small></div>" +
+        ? '<div class="avg">' + money(x.avg) + "<small>" + t(L() ? "avgLunch" : "avgDinner") + "</small></div>" +
           '<div class="bar"><span style="width:' + (x.avg / top * 100).toFixed(1) + '%"></span></div>' +
           "<dl><dt>" + t("tRestaurants") + "</dt><dd>" + x.n + "</dd><dt>" + t("tRange") + "</dt><dd>" + money(x.min) + "–" + money(x.max) + "</dd><dt>" + t("tRating") + "</dt><dd>" + (x.rating ? x.rating.toFixed(1) : "–") + "</dd>" +
           (prev !== null ? "<dt>" + t("tVs", { n: x.s - 1 }) + "</dt><dd>" + (prev >= 0 ? "+" : "−") + money(Math.abs(prev)).replace("≈", "") + "</dd>" : "") + "</dl>"
@@ -966,12 +998,12 @@ function pinIcon(stars) {
   return { url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg), scaledSize: new google.maps.Size(30, 40), anchor: new google.maps.Point(15, 39) };
 }
 function infoHtml(r) {
-  const price = r.dinner == null ? t("infoNoPrice") : money(r.dinner) + " " + (r.dinnerType === "main" ? t("perMain") : r.dinnerType === "spend" ? t("typicalSpend") : t("infoDinner"));
+  const price = priceOf(r) == null ? t(L() && r.noLunch ? "noLunch" : "infoNoPrice") : money(priceOf(r)) + " " + (typeOf(r) === "main" ? t("perMain") : typeOf(r) === "spend" ? t("typicalSpend") : t(L() ? "infoLunch" : "infoDinner"));
   return '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' +
     '<div style="font-weight:700;font-size:15px">' + esc(nameOf(r)) + "</div>" +
     (altNameOf(r) ? '<div style="font-size:12px;color:#5A6E62">' + esc(altNameOf(r)) + "</div>" : "") +
     '<div style="color:#B3862B;font-size:13px">' + "✱".repeat(r.stars) + ' <span style="color:#5A6E62">' + esc(catOf(r.cat, r)) + " · " + esc(areaOf(r)) + "</span></div>" +
-    '<div style="margin-top:6px;font-size:13px">' + esc(price) + (r.wine ? " · " + t("infoWine") + " " + money(r.wine) : "") + "</div>" +
+    '<div style="margin-top:6px;font-size:13px">' + esc(price) + (wineOf(r) ? " · " + t("infoWine") + " " + money(wineOf(r)) : "") + "</div>" +
     (r.rating ? '<div style="font-size:13px;color:#5A6E62">★ ' + r.rating.toFixed(1) + " " + t("infoGoogle") + "</div>" : "") +
     (r.change ? '<div style="font-size:12px;color:' + (r.change === "down" ? "#A33A2E" : "#1E6142") + '">' + esc(changeNoteOf(r) + ", " + monthYear(r.changeDate)) + "</div>" : "") +
     '<a href="' + mapsUrl(r) + '" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + t("infoOpen") + "</a></div>";
@@ -1040,7 +1072,7 @@ async function loadRate() {
 }
 
 // ---------- Render and events ----------
-function render() { renderShowFilter(); renderStarFilter(); renderChips(); renderLedger(); }
+function render() { renderMealFilter(); renderShowFilter(); renderStarFilter(); renderChips(); renderLedger(); }
 function renderAll() { applyStatic(); render(); renderFigures(); renderTiers(); renderLegend(); }
 
 let toastTimer;
@@ -1078,6 +1110,8 @@ document.addEventListener("click", (e) => {
     history.replaceState(null, "", "?" + p.toString() + location.hash);
     renderAll();
     if (mapState.map) { mapState.markers.forEach((m, id) => m.setTitle(nameOf(RESTAURANTS.find((r) => r.id === id)))); }
+  } else if (el.dataset.meal) {
+    state.meal = el.dataset.meal; save(); renderAll();
   } else if (el.dataset.currency) {
     state.currency = el.dataset.currency; save(); renderAll();
   } else if (el.dataset.wish) {

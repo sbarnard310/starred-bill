@@ -25,6 +25,11 @@
       "code": "TWD",
       "symbol": "NT$",
       "perUSD": 31.995
+    },
+    {
+      "code": "HKD",
+      "symbol": "HK$",
+      "perUSD": 7.84685
     }
   ]
 }

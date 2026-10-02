@@ -310,7 +310,7 @@ def build_place(p):
         ([places[countries_of(p)[0]]] if len(countries_of(p)) == 1 else [])
     page = {
         "id": p["id"], "type": p["type"], "name": p["name"], "nameZh": p.get("nameZh", ""), "inSentence": in_sentence(p),
-        "path": p["path"], "currency": currency, "showCity": p["type"] != "city",
+        "path": p["path"], "currency": currency, "showCity": len({r["city"] for r in starred}) > 1,
         "crumbs": [{"name": c["name"], "nameZh": c.get("nameZh", ""), "path": c["path"]} for c in crumbs],
         "links": explore_links(p),
         "searchEx": search_example(starred, False), "searchExZh": search_example(starred, True),

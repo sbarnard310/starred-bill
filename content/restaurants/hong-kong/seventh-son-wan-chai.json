@@ -1,0 +1,23 @@
+{
+  "name": "Seventh Son (Wan Chai)",
+  "nameZh": "家全七福 (灣仔)",
+  "city": "hong-kong",
+  "area": "Wan Chai",
+  "areaZh": "灣仔",
+  "address": "3F, The Wharney Hotel, 57-73 Lockhart Road, Wan Chai, Hong Kong",
+  "addressZh": "香港灣仔駱克道57-73號粵海華美灣際酒店3樓",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "cuisineZh": "粵菜",
+  "rating": 4.2,
+  "reviews": 452,
+  "dinnerType": "spend",
+  "dinnerNote": "À la carte Cantonese",
+  "sourceType": "none",
+  "lunchType": "spend",
+  "lunchNote": "À la carte and dim sum at lunch",
+  "website": "https://www.seventhson.hk/",
+  "lat": 22.278358,
+  "lng": 114.17097,
+  "placeId": "ChIJ3dnIVlwABDQR0LKOA-WPqpY"
+}

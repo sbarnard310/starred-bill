@@ -17,9 +17,10 @@ function applyStatic() {
 function renderFigures() {
   $("fRestaurants").textContent = ALL.length;
   $("fRestaurantsSub").textContent = starCountsOf(ALL);
-  const cities = DATA.places.filter((p) => p.type === "city").length;
-  $("fDest").textContent = cities;
-  $("fDestSub").textContent = t("countriesN", { n: DATA.countries.length }) + " · " + t("citiesN", { n: cities });
+  // A destination with no separate city pages (e.g. Hong Kong) counts as one city.
+  const cities = DATA.places.filter((p) => p.type === "city").length + DATA.countries.filter((c) => !c.cities.length).length;
+  $("fDest").textContent = DATA.countries.length;
+  $("fDestSub").textContent = t("citiesN", { n: cities });
   $("fUpdated").textContent = monthYear(DATA.updated);
 }
 

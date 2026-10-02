@@ -1,0 +1,19 @@
+{
+  "name": "Mandarin Grill + Bar",
+  "nameZh": "文華扒房 + 酒吧",
+  "city": "hong-kong",
+  "area": "Central",
+  "areaZh": "中環",
+  "address": "1F, Mandarin Oriental Hotel, 5 Connaught Road Central, Central, Hong Kong",
+  "stars": 0,
+  "cuisine": "European",
+  "cuisineZh": "歐陸菜",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2025-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2025 guide; now MICHELIN Selected",
+  "statusNoteZh": "於 2025 年指南失去星級，現為米芝蓮入選餐廳"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Sushi Saito",
+  "nameZh": "鮨さいとう",
+  "city": "hong-kong",
+  "area": "Central",
+  "areaZh": "中環",
+  "address": "45F, Four Seasons Hotel, 8 Finance Street, Central, Hong Kong",
+  "stars": 0,
+  "cuisine": "Sushi",
+  "cuisineZh": "壽司",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Dropped from the 2026 guide after moving to introduction-only bookings",
+  "statusNoteZh": "改為熟客介紹制後，於 2026 年指南中除名"
+}

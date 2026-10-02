@@ -1,0 +1,22 @@
+{
+  "name": "Godenya",
+  "city": "hong-kong",
+  "area": "Central",
+  "areaZh": "中環",
+  "address": "UG, 182 Wellington Street, Central, Hong Kong",
+  "addressZh": "香港中環威靈頓街182號高層地下",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.8,
+  "reviews": 96,
+  "dinner": 2300,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase with sake pairing included",
+  "sourceType": "press",
+  "source": "https://www.openrice.com/en/hongkong/r-godenya-sheung-wan-japanese-omakase-r664928",
+  "website": "https://www.godenya.com/",
+  "lat": 22.28471,
+  "lng": 114.1530901,
+  "placeId": "ChIJdd55iXwABDQR5SmV4tzI-u8"
+}

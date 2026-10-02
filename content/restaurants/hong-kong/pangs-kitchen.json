@@ -1,0 +1,22 @@
+{
+  "name": "Pang's Kitchen",
+  "nameZh": "彭慶記",
+  "city": "hong-kong",
+  "area": "Happy Valley",
+  "areaZh": "跑馬地",
+  "address": "25 Yik Yam Street, Happy Valley, Hong Kong",
+  "addressZh": "香港跑馬地奕蔭街25號",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "cuisineZh": "粵菜",
+  "rating": 4.1,
+  "reviews": 487,
+  "dinner": 400,
+  "dinnerType": "spend",
+  "dinnerNote": "À la carte Shunde dishes; typical dinner spend",
+  "sourceType": "press",
+  "source": "https://www.openrice.com/en/hongkong/r-pangs-kitchen-happy-valley-guangdong-noodles-rice-noodles-r10604/reviews",
+  "lat": 22.26921,
+  "lng": 114.18452,
+  "placeId": "ChIJAWBMkU4ABDQRWjbA0zXxX4Y"
+}

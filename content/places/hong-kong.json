@@ -1,0 +1,15 @@
+{
+  "id": "hong-kong",
+  "type": "country",
+  "name": "Hong Kong",
+  "nameZh": "香港",
+  "currency": "HKD",
+  "intro": "Prices are in Hong Kong dollars, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026, before the usual 10% service charge.",
+  "introZh": "價格以港元標示，也可切換為英鎊、歐元或美元。價格於 2026 年 10 月查核，未含一般 10% 服務費。",
+  "serviceText": "Every figure is for one guest and excludes the 10% service charge most Hong Kong restaurants add (Yardbird adds 12%). Supplements such as caviar or truffle courses are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格，不含香港多數餐廳加收的 10% 服務費（Yardbird 為 12%），也不含魚子醬或松露等加價項目。以其他幣別顯示的價格依當日匯率換算，僅供參考。",
+  "sourcesText": "Dinner is the main tasting or set menu where there is one, and wine is the cheapest pairing for it. Prices come from each restaurant's own website or menus where they're published, otherwise from recent reviews and booking sites such as OpenRice. Many Cantonese restaurants are mainly à la carte, so they show a typical spend, a signature dish (“per main”), or no price where none is published. Lunch is the set or tasting lunch menu, and the note says which days it's served.",
+  "sourcesTextZh": "晚餐以主要品嚐或套餐為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網或菜單為準；否則參考近期評論及 OpenRice 等訂位網站。不少粵菜館以單點為主，因此顯示人均消費、招牌菜價格（每道主菜），或在未有公布時不列價格。午餐以午間套餐或品嚐套餐為準，說明欄會註明供應日。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Hong Kong & Macau 2026, announced on 19 March 2026. A green ▲ marks a restaurant that gained a star in the March 2025 or March 2026 guide; a red ▼ marks one that lost its star.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 3 月 19 日公布的《香港澳門米芝蓮指南 2026》。綠色 ▲ 代表在 2025 年 3 月或 2026 年 3 月的指南中獲得星級；紅色 ▼ 代表失去星級。"
+}

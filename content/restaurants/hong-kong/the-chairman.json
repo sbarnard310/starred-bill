@@ -1,0 +1,23 @@
+{
+  "name": "The Chairman",
+  "nameZh": "大班樓",
+  "city": "hong-kong",
+  "area": "Central",
+  "areaZh": "中環",
+  "address": "3F, The Wellington, 198 Wellington Street, Central, Hong Kong",
+  "addressZh": "香港中環威靈頓街198號The Wellington 3樓",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "cuisineZh": "粵菜",
+  "rating": 4.4,
+  "reviews": 769,
+  "dinner": 1380,
+  "dinnerType": "menu",
+  "dinnerNote": "Pre-set menu, from (choose dishes when booking)",
+  "sourceType": "press",
+  "source": "https://joinpearl.co/restaurants/hong-kong/the-chairman",
+  "website": "https://www.thechairmangroup.com/",
+  "lat": 22.28444,
+  "lng": 114.15297,
+  "placeId": "ChIJhcOtY3wABDQR39uGw41EIYM"
+}

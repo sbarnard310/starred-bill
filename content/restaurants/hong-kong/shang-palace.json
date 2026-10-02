@@ -1,0 +1,23 @@
+{
+  "name": "Shang Palace",
+  "nameZh": "香宮",
+  "city": "hong-kong",
+  "area": "Tsim Sha Tsui",
+  "areaZh": "尖沙咀",
+  "address": "Lower Level 1, Kowloon Shangri-La Hotel, 64 Mody Road, Tsim Sha Tsui, Hong Kong",
+  "addressZh": "香港尖東麼地道64號九龍香格里拉酒店地庫1樓",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "cuisineZh": "粵菜",
+  "rating": 4.4,
+  "reviews": 564,
+  "dinnerType": "spend",
+  "dinnerNote": "À la carte Cantonese and set menus",
+  "sourceType": "none",
+  "lunchType": "spend",
+  "lunchNote": "À la carte and dim sum at lunch",
+  "website": "https://www.shangri-la.com/hongkong/kowloonshangrila/dining/restaurants/shang-palace/",
+  "lat": 22.297325,
+  "lng": 114.177155,
+  "placeId": "ChIJ1d481O8ABDQRl8zusW3EjMs"
+}

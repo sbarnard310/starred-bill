@@ -1,0 +1,23 @@
+{
+  "name": "Vea",
+  "city": "hong-kong",
+  "area": "Central",
+  "areaZh": "中環",
+  "address": "30F, The Wellington, 198 Wellington Street, Central, Hong Kong",
+  "addressZh": "香港中環威靈頓街198號The Wellington 30樓",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "cuisineZh": "創新菜",
+  "rating": 4.5,
+  "reviews": 330,
+  "dinner": 2280,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 8 courses (6 courses HK$1,880, not Fri–Sat)",
+  "sourceType": "site",
+  "source": "https://www.vea.hk/",
+  "lunchType": "menu",
+  "website": "https://www.vea.hk/",
+  "lat": 22.2850013,
+  "lng": 114.1529424,
+  "placeId": "ChIJrZRui3wABDQRzgwMfdtdkJ4"
+}

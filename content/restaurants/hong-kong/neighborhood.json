@@ -1,0 +1,23 @@
+{
+  "name": "Neighborhood",
+  "city": "hong-kong",
+  "area": "Central",
+  "areaZh": "中環",
+  "address": "61-63 Hollywood Road, Central, Hong Kong",
+  "addressZh": "香港中環荷李活道61-63號",
+  "stars": 1,
+  "cuisine": "European Contemporary",
+  "cuisineZh": "時尚歐陸菜",
+  "rating": 3.8,
+  "reviews": 337,
+  "dinner": 800,
+  "dinnerType": "spend",
+  "dinnerNote": "Small plates; typical spend up to about HK$800",
+  "sourceType": "press",
+  "source": "https://www.openrice.com/en/hongkong/r-neighborhood-central-french-r188607",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lat": 22.2830863,
+  "lng": 114.1529146,
+  "placeId": "ChIJq5eqgnsABDQRAxupXLYqR4U"
+}

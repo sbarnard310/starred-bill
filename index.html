@@ -129,7 +129,22 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr) 64px 84px minmax(0, 1.5fr) minmax(0, 1.4fr) 76px 40px; gap: 14px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
 .row:first-child { border-top: 0; }
 .row.head { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding-block: 10px; background: color-mix(in srgb, var(--green-soft) 50%, var(--surface)); }
-.row .name { font-weight: 600; min-width: 0; }
+.row .name { font-weight: 600; min-width: 0; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 12px; align-items: center; }
+.name-text { min-width: 0; }
+.thumb { position: relative; width: 52px; height: 52px; border-radius: 8px; overflow: hidden; display: grid; place-items: center; background: var(--green-soft); color: var(--green); font-family: var(--font-display); font-size: 1.35rem; font-weight: 400; }
+.thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s ease; }
+.thumb.has-photo img { opacity: 1; }
+.credit { display: block; font-size: .68rem; font-weight: 400; color: var(--muted); line-height: 1.3; }
+.credit:empty { display: none; }
+.credit a { color: inherit; }
+.row.divider { display: block; padding-block: 18px 12px; background: color-mix(in srgb, var(--green-soft) 35%, var(--surface)); border-top: 2px solid var(--line); }
+.row.divider strong { font-family: var(--font-display); font-weight: 400; font-size: 1.15rem; }
+.row.divider .note { margin-top: 4px; max-width: 70ch; }
+.row.former { background: color-mix(in srgb, var(--bg) 55%, var(--surface)); }
+.row.former .name, .row.former .cat, .row.former .stars-cell, .row.former .rating-cell, .row.former .dinner, .row.former .wine { opacity: .5; filter: grayscale(1); }
+.row.former .tag { cursor: default; }
+.status-pill { display: inline-block; margin-right: 6px; padding: 2px 8px; border-radius: 999px; font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--line); color: var(--ink); }
+.status-pill.status-closed { background: var(--danger-soft); color: var(--danger); }
 .row .area { display: block; font-weight: 400; font-size: .85rem; color: var(--muted); }
 .map { display: inline-grid; place-items: center; width: 26px; height: 26px; margin-left: 4px; vertical-align: -6px; border-radius: 6px; color: var(--green); }
 .map:hover { background: var(--green-soft); }
@@ -141,7 +156,8 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .rating svg { width: 13px; height: 13px; color: var(--green); }
 .wine { text-align: right; }
 .dprice { text-align: right; }
-.tag { display: inline-block; font-size: .8rem; padding: 3px 10px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-weight: 500; white-space: nowrap; cursor: pointer; border: 0; }
+.tag { display: inline-block; font-size: .8rem; padding: 3px 10px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-weight: 500; cursor: pointer; border: 0; text-align: left; max-width: 100%; }
+.row .cat { min-width: 0; }
 .stars { display: inline-flex; gap: 2px; color: var(--gold); }
 .stars svg { width: 15px; height: 15px; }
 .price { text-align: right; }
@@ -468,7 +484,14 @@ const MAP_PIN_COLOURS = {
   3: { name: "Green", hex: "#097138" }
 };
 
-const RESTAURANTS = window.RESTAURANTS || [];
+// Google Maps Platform browser key, used to show each restaurant's photo from its Google listing.
+// Leave empty to show lettered placeholders instead.
+const GOOGLE_MAPS_API_KEY = "";
+
+const ALL_RESTAURANTS = window.RESTAURANTS || [];
+const RESTAURANTS = ALL_RESTAURANTS.filter((r) => !r.status);
+const FORMER = ALL_RESTAURANTS.filter((r) => r.status);
+const STATUS_LABELS = { lost: "Lost star", closed: "Closed", changed: "Changed" };
 const PREFS_KEY = "starred-bill-prefs";
 const WISHLIST_KEY = "starred-bill-wishlist-2026-10";
 const state = { activeCat: "All", activeStars: 0, wishOnly: false, query: "", sort: "price-asc", wishlist: [], lastUndo: null };
@@ -523,6 +546,61 @@ function filtered() {
   return rows.sort(sorters[state.sort]);
 }
 
+function nameCell(r) {
+  const thumb = '<span class="thumb" aria-hidden="true"' + (r.placeId && !r.status ? ' data-pid="' + esc(r.placeId) + '"' : "") + ">" + esc((r.name.replace(/^(The|Restaurant)\s+/i, "")[0] || "?").toUpperCase()) + "</span>";
+  return '<span class="name" role="cell">' + thumb + '<span class="name-text">' + esc(r.name) +
+    (r.status && r.status === "closed" ? "" : '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="Find ' + esc(r.name) + ' on Google Maps" title="Find on Google Maps"><svg aria-hidden="true"><use href="#pin"/></svg></a>') +
+    (r.area ? '<span class="area">' + esc(r.area) + "</span>" : "") + '<span class="credit"></span></span></span>';
+}
+
+// Photos from Google Places, loaded only as each row scrolls into view.
+const photoCache = new Map();
+let placesLoading = null;
+function loadPlaces() {
+  if (!placesLoading) placesLoading = new Promise((resolve, reject) => {
+    window.__starredBillMaps = () => google.maps.importLibrary("places").then(resolve, reject);
+    const s = document.createElement("script");
+    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&callback=__starredBillMaps";
+    s.async = true;
+    s.onerror = reject;
+    document.head.appendChild(s);
+  });
+  return placesLoading;
+}
+function fetchPhoto(placeId) {
+  if (!photoCache.has(placeId)) {
+    photoCache.set(placeId, (async () => {
+      const { Place } = await loadPlaces();
+      const place = new Place({ id: placeId });
+      await place.fetchFields({ fields: ["photos"] });
+      const photo = place.photos && place.photos[0];
+      if (!photo) return null;
+      const author = (photo.authorAttributions || [])[0];
+      return { uri: photo.getURI({ maxWidth: 200, maxHeight: 200 }), author: author ? author.displayName : "", authorUri: author ? author.uri : "" };
+    })().catch(() => null));
+  }
+  return photoCache.get(placeId);
+}
+async function applyPhoto(el) {
+  const info = await fetchPhoto(el.dataset.pid);
+  if (!info || !el.isConnected || el.querySelector("img")) return;
+  const img = new Image();
+  img.alt = "";
+  img.decoding = "async";
+  img.src = info.uri;
+  img.onload = () => el.classList.add("has-photo");
+  el.appendChild(img);
+  const credit = el.parentElement.querySelector(".credit");
+  if (credit) credit.innerHTML = "Photo: " + (info.author ? (info.authorUri ? '<a href="' + esc(info.authorUri) + '" target="_blank" rel="noopener">' + esc(info.author) + "</a>" : esc(info.author)) + " · " : "") + "Google Maps";
+}
+const thumbObserver = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
+  entries.forEach((e) => { if (e.isIntersecting) { thumbObserver.unobserve(e.target); applyPhoto(e.target); } });
+}, { rootMargin: "300px 0px" }) : null;
+function observeThumbs() {
+  if (!GOOGLE_MAPS_API_KEY || !thumbObserver) return;
+  document.querySelectorAll(".thumb[data-pid]").forEach((el) => thumbObserver.observe(el));
+}
+
 function renderShowFilter() {
   const n = state.wishlist.length;
   $("showFilter").innerHTML =
@@ -563,9 +641,7 @@ function renderLedger() {
   rows.forEach((r) => {
     const on = onWishlist(r);
     html += '<div class="row" role="row">' +
-      '<span class="name" role="cell">' + esc(r.name) +
-        '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="Find ' + esc(r.name) + ' on Google Maps" title="Find on Google Maps"><svg aria-hidden="true"><use href="#pin"/></svg></a>' +
-        (r.area ? '<span class="area">' + esc(r.area) + "</span>" : "") + "</span>" +
+      nameCell(r) +
       '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cat) + '" title="Show only ' + esc(r.cat) + '">' + esc(r.cat) + "</button></span>" +
       '<span class="stars-cell" role="cell">' + rosettes(r.stars) + "</span>" +
       '<span class="rating-cell" role="cell"><span class="mlabel">Google</span>' + (r.rating ? '<span class="rating num" aria-label="Google rating ' + r.rating.toFixed(1) + ' out of 5"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + r.reviews.toLocaleString("en-GB") + " reviews</span>" : "") : '<span class="num muted">–</span>') + "</span>" +
@@ -577,8 +653,25 @@ function renderLedger() {
       '<span class="wish-cell" role="cell"><button type="button" class="wish" data-wish="' + r.id + '" aria-pressed="' + on + '" aria-label="' + (on ? "Remove " : "Add ") + esc(r.name) + (on ? " from" : " to") + ' your wishlist" title="' + (on ? "Remove from wishlist" : "Add to wishlist") + '">' + heart + "</button></span>" +
       "</div>";
   });
+  const q = state.query.trim().toLowerCase();
+  const former = state.activeStars || state.wishOnly ? [] : FORMER.filter((r) =>
+    (state.activeCat === "All" || r.cat === state.activeCat) &&
+    (!q || [r.name, r.cat, r.area || ""].some((v) => v.toLowerCase().includes(q))));
+  if (former.length) {
+    html += '<div class="row divider" role="row"><span role="cell"><strong>No longer starred</strong><span class="note">Restaurants that were in the previous edition of this list but have since lost their stars, closed or changed. Shown for reference only.</span></span></div>';
+    former.sort((a, b) => a.name.localeCompare(b.name)).forEach((r) => {
+      html += '<div class="row former" role="row">' + nameCell(r) +
+        '<span class="cat" role="cell"><span class="tag">' + esc(r.cat) + "</span></span>" +
+        '<span class="stars-cell" role="cell">' + rosettes(r.formerStars) + '<span class="note">formerly</span></span>' +
+        '<span class="rating-cell" role="cell"><span class="num muted">–</span></span>' +
+        '<span class="notes" role="cell"><span class="status-pill status-' + esc(r.status) + '">' + (STATUS_LABELS[r.status] || "Changed") + "</span>" + esc(r.statusNote || "") + "</span>" +
+        '<span class="dinner" role="cell"><span class="dprice"><span class="num muted">–</span></span></span>' +
+        '<span class="wine num muted" role="cell">–</span><span class="wish-cell" role="cell"></span></div>';
+    });
+  }
   $("ledger").innerHTML = html;
-  $("showing").textContent = "Showing " + rows.length + " of " + RESTAURANTS.length + " restaurants";
+  observeThumbs();
+  $("showing").textContent = "Showing " + rows.length + " of " + RESTAURANTS.length + " starred restaurants" + (former.length ? ", plus " + former.length + " no longer starred" : "");
 }
 
 function renderFigures() {

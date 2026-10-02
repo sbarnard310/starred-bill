@@ -22,6 +22,9 @@
 //   source      link to where the price came from
 //   website     restaurant's website
 //   lat, lng    map position (from the Michelin Guide)
+//   placeId     Google place ID, used to load the restaurant's photo
+//   status      only for restaurants no longer starred: "lost", "closed" or "changed"
+//   formerStars, statusNote   stars it used to hold and what happened
 // Keep the comma at the end of every line.
 
 window.RESTAURANTS = [
@@ -109,4 +112,16 @@ window.RESTAURANTS = [
   {id: 82, name: "River Café", area: "Hammersmith", address: "Thames Wharf, Rainville Road, Hammersmith, London, W6 9HA", stars: 1, cat: "Italian", rating: 4.2, reviews: 2116, dinner: 66, dinnerType: "main", dinnerNote: "À la carte, mains about £64–£68", wine: null, source: "https://www.andyhayler.com/restaurant/river-cafe", sourceType: "press", website: "https://www.rivercafe.co.uk/", lat: 51.4841179, lng: -0.2243521},
   {id: 83, name: "La Trompette", area: "Chiswick", address: "3-7 Devonshire Road, Chiswick, London, W4 2EU", stars: 1, cat: "Modern British", rating: 4.7, reviews: 1029, dinner: 95, dinnerType: "menu", dinnerNote: "3 courses, choice of 6", wine: null, source: "https://www.thefork.co.uk/restaurant/la-trompette-r755764/menu", sourceType: "press", website: "https://www.latrompette.co.uk/", lat: 51.491995, lng: -0.2558505},
   {id: 84, name: "Dysart Petersham", area: "Richmond", address: "135 Petersham Road, Richmond, London, TW10 7AA", stars: 1, cat: "Modern Cuisine", rating: 4.7, reviews: 422, dinner: 165, dinnerType: "menu", dinnerNote: "Tasting menu", wine: 85, source: "https://www.thedysartpetersham.co.uk/", sourceType: "site", website: "https://www.thedysartpetersham.co.uk/", lat: 51.4464604, lng: -0.3001695},
+  // No longer starred: shown greyed out on the site. status is "lost", "closed" or "changed".
+  {id: 101, name: "City Social", area: "City of London", stars: 0, formerStars: 1, cat: "Modern Cuisine", status: "lost", statusNote: "Lost its star in February 2025; still open", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
+  {id: 102, name: "Claude Bosi at Bibendum", area: "Chelsea", stars: 0, formerStars: 2, cat: "French", status: "closed", statusNote: "Closed in August 2025", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
+  {id: 103, name: "Club Gascon", area: "Smithfield", stars: 0, formerStars: 1, cat: "French", status: "closed", statusNote: "Closed in March 2026", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
+  {id: 104, name: "Endo at the Rotunda", area: "White City", stars: 0, formerStars: 1, cat: "Japanese", status: "closed", statusNote: "Closed after a fire in September 2025", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
+  {id: 105, name: "The Five Fields", area: "Chelsea", stars: 0, formerStars: 1, cat: "Modern Cuisine", status: "closed", statusNote: "Closed in February 2025", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
+  {id: 106, name: "Humo", area: "Mayfair", stars: 0, formerStars: 1, cat: "Grills", status: "lost", statusNote: "Lost its star in February 2026; now relaunched as Igni", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
+  {id: 107, name: "Kai", area: "Mayfair", stars: 0, formerStars: 1, cat: "Chinese", status: "lost", statusNote: "Lost its star in February 2025; still open", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
+  {id: 108, name: "La Dame de Pic London", area: "Tower Hill", stars: 0, formerStars: 2, cat: "Modern French", status: "closed", statusNote: "Closed in February 2025", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
+  {id: 109, name: "Lyle's", area: "Shoreditch", stars: 0, formerStars: 1, cat: "Modern British", status: "closed", statusNote: "Closed in May 2025", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
+  {id: 110, name: "SOLA", area: "Soho", stars: 0, formerStars: 1, cat: "Californian", status: "changed", statusNote: "Moved to Notting Hill in June 2026; not yet listed in the guide again", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
+  {id: 111, name: "Taku", area: "Mayfair", stars: 0, formerStars: 1, cat: "Japanese", status: "changed", statusNote: "Became Sushi Amamoto London in February 2026; removed from the guide", rating: null, reviews: null, dinner: null, dinnerType: "menu", dinnerNote: "", wine: null},
 ];

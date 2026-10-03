@@ -1,0 +1,22 @@
+{
+  "name": "Le Sergent Recruteur",
+  "city": "paris",
+  "area": "4th arrondissement",
+  "areaZh": "第4區",
+  "address": "41 rue Saint-Louis-en-l'Île, 75004, Paris",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "cuisineZh": "現代菜",
+  "rating": 4.7,
+  "reviews": 601,
+  "dinner": 118,
+  "dinnerType": "menu",
+  "dinnerNote": "Instant de Saison menu",
+  "sourceType": "site",
+  "source": "https://www.lesergentrecruteur.fr/",
+  "lunchType": "menu",
+  "website": "https://www.lesergentrecruteur.fr/",
+  "lat": 48.8519498,
+  "lng": 2.3560682,
+  "placeId": "ChIJe6_hufxx5kcRLJ9Ej7s19UM"
+}

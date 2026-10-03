@@ -1,0 +1,22 @@
+{
+  "name": "Aida",
+  "city": "paris",
+  "area": "7th arrondissement",
+  "areaZh": "第7區",
+  "address": "1 rue Pierre-Leroux, 75007, Paris",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.4,
+  "reviews": 71,
+  "dinner": 280,
+  "dinnerType": "menu",
+  "dinnerNote": "Teppanyaki omakase",
+  "sourceType": "press",
+  "source": "https://restaurantsforkings.com/city/paris/aida-paris",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lat": 48.850275,
+  "lng": 2.3186554,
+  "placeId": "ChIJ75JwXyxw5kcRqI3wcJMllY4"
+}

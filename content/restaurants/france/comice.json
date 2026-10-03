@@ -1,0 +1,22 @@
+{
+  "name": "Comice",
+  "city": "paris",
+  "area": "16th arrondissement",
+  "areaZh": "第16區",
+  "address": "31 avenue de Versailles, 75016, Paris",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "cuisineZh": "現代菜",
+  "rating": 4.5,
+  "reviews": 350,
+  "dinner": 150,
+  "dinnerType": "menu",
+  "dinnerNote": "Menu in 5 courses (4 courses €120)",
+  "sourceType": "press",
+  "source": "https://www.thefork.co.uk/restaurant/comice-r337449/menu",
+  "lunchType": "menu",
+  "website": "https://comice.paris/",
+  "lat": 48.8495058,
+  "lng": 2.2761393,
+  "placeId": "ChIJAc56Jah65kcRPUvIVLIaIjI"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Bellefeuille - Saint James Paris",
+  "city": "paris",
+  "area": "16th arrondissement",
+  "areaZh": "第16區",
+  "address": "Saint James Paris, 5 place du Chancelier-Adenauer, Paris, 75116, Paris",
+  "stars": 1,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "rating": 4.7,
+  "reviews": 84,
+  "dinner": 250,
+  "dinnerType": "menu",
+  "dinnerNote": "Menu in 6 courses (3 courses €170)",
+  "sourceType": "press",
+  "source": "https://www.sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/273851-bellefeuille-le-restaurant-etoile-confidentiel-du-saint-james-paris-by-gregory-garimbay",
+  "lunchType": "menu",
+  "website": "https://www.saint-james-paris.com/",
+  "lat": 48.8704851,
+  "lng": 2.2797777,
+  "placeId": "ChIJh6iPsZNv5kcRbwL5NqrZtqA"
+}

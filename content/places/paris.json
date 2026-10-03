@@ -1,0 +1,7 @@
+{
+  "id": "paris",
+  "type": "city",
+  "parent": "france",
+  "name": "Paris",
+  "nameZh": "巴黎"
+}

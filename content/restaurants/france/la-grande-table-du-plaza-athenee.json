@@ -1,0 +1,23 @@
+{
+  "name": "La Grande Table du Plaza Athénée",
+  "city": "paris",
+  "area": "8th arrondissement",
+  "areaZh": "第8區",
+  "address": "25 avenue Montaigne, 75008, Paris",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "cuisineZh": "傳統菜",
+  "rating": 3.8,
+  "reviews": 225,
+  "dinner": 295,
+  "dinnerType": "menu",
+  "dinnerNote": "Seasonal menu, 6 courses",
+  "sourceType": "press",
+  "source": "https://elitetraveler.com/food-and-drink/food/plaza-athenee-la-grande-table-fine-dining",
+  "lunchType": "menu",
+  "lunchNote": "Saturday lunch only",
+  "website": "https://www.dorchestercollection.com/fr/paris/hotel-plaza-athenee/restaurants-bars/la-grande-table-du-plaza-athenee",
+  "lat": 48.8661718,
+  "lng": 2.3042735,
+  "placeId": "ChIJ--BdhnVv5kcRSWKURvS_zc4"
+}

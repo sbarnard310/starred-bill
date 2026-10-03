@@ -1,0 +1,23 @@
+{
+  "name": "Alléno Paris au Pavillon Ledoyen",
+  "city": "paris",
+  "area": "8th arrondissement",
+  "areaZh": "第8區",
+  "address": "8 avenue Dutuit, 75008, Paris",
+  "stars": 3,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "rating": 4.6,
+  "reviews": 200,
+  "dinner": 330,
+  "dinnerType": "menu",
+  "dinnerNote": "Collection discovery menu (full menu €465)",
+  "wine": 190,
+  "sourceType": "site",
+  "source": "https://www.yannick-alleno.com/les-etablissements-du-groupe/alleno-paris",
+  "lunchType": "menu",
+  "website": "https://www.yannick-alleno.com/les-etablissements-du-groupe/alleno-paris",
+  "lat": 48.8660932,
+  "lng": 2.3164993,
+  "placeId": "ChIJt_i_hmdv5kcRmMIR274srQM"
+}

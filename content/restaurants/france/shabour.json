@@ -1,0 +1,22 @@
+{
+  "name": "Shabour",
+  "city": "paris",
+  "area": "2th arrondissement",
+  "areaZh": "第2區",
+  "address": "19 rue Saint-Sauveur, 75002, Paris",
+  "stars": 1,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "rating": 4.7,
+  "reviews": 903,
+  "dinner": 152,
+  "dinnerType": "menu",
+  "dinnerNote": "Le Voyage Shabour menu (Petit Voyage €81)",
+  "sourceType": "press",
+  "source": "https://fr.gaultmillau.com/en/restaurants/shabour",
+  "lunchType": "menu",
+  "website": "https://www.restaurantshabour.com/",
+  "lat": 48.8659204,
+  "lng": 2.3490797,
+  "placeId": "ChIJzean6Hlv5kcR9jkXW9USvyg"
+}

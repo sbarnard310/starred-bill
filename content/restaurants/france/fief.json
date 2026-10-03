@@ -1,0 +1,22 @@
+{
+  "name": "FIEF",
+  "city": "paris",
+  "area": "11th arrondissement",
+  "areaZh": "第11區",
+  "address": "44 rue de la Folie-Méricourt, 75011, Paris",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "cuisineZh": "現代菜, 創新菜",
+  "rating": 4.8,
+  "reviews": 1322,
+  "dinner": 170,
+  "dinnerType": "menu",
+  "dinnerNote": "Grand tasting menu at the counter, 10 courses (5 courses €95)",
+  "sourceType": "press",
+  "source": "https://www.eau-a-la-bouche.fr/restaurant/fief-paris-victor-mercier/",
+  "lunchType": "menu",
+  "website": "https://fiefrestaurant.fr/",
+  "lat": 48.8636981,
+  "lng": 2.372288,
+  "placeId": "ChIJA_9pJnVt5kcRf7FroqePNw4"
+}

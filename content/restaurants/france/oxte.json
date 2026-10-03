@@ -1,0 +1,22 @@
+{
+  "name": "Oxte",
+  "city": "paris",
+  "area": "17th arrondissement",
+  "areaZh": "第17區",
+  "address": "5 rue Troyon, 75017, Paris",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineZh": "墨西哥菜",
+  "rating": 4.6,
+  "reviews": 647,
+  "dinner": 195,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (shorter €135 / €165)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-oxte.com/",
+  "lunchType": "menu",
+  "website": "https://www.restaurant-oxte.com/",
+  "lat": 48.8757794,
+  "lng": 2.2956526,
+  "placeId": "ChIJCU_1nuxv5kcRmfS3m_h6mCg"
+}

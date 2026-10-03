@@ -1,0 +1,22 @@
+{
+  "name": "Plénitude - Cheval Blanc Paris",
+  "city": "paris",
+  "area": "1st arrondissement",
+  "areaZh": "第1區",
+  "address": "Cheval Blanc Paris, 8 quai du Louvre, 75001, Paris",
+  "stars": 3,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "rating": 4.9,
+  "reviews": 281,
+  "dinner": 480,
+  "dinnerType": "menu",
+  "dinnerNote": "Symphonie menu (Fuguons Ensemble €445)",
+  "sourceType": "press",
+  "source": "https://www.lesrestos.com/restaurant/fiche/paris/cheval-blanc-paris-plenitude-samaritaine",
+  "lunchType": "menu",
+  "website": "https://www.chevalblanc.com/fr/maison/paris/restaurants-et-bars/plenitude/",
+  "lat": 48.8588148,
+  "lng": 2.3421588,
+  "placeId": "ChIJ1YFmqNZv5kcRBAVR2JH8pEo"
+}

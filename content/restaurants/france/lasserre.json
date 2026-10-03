@@ -1,0 +1,23 @@
+{
+  "name": "Lasserre",
+  "city": "paris",
+  "area": "8th arrondissement",
+  "areaZh": "第8區",
+  "address": "17 avenue Franklin-D.-Roosevelt, 75008, Paris",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "cuisineZh": "傳統菜",
+  "rating": 4.5,
+  "reviews": 657,
+  "dinner": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Seasonal menu, 4 courses",
+  "wine": 125,
+  "sourceType": "site",
+  "source": "https://www.restaurant-lasserre.com/",
+  "lunchType": "menu",
+  "website": "https://www.restaurant-lasserre.com/",
+  "lat": 48.8663787,
+  "lng": 2.3099647,
+  "placeId": "ChIJ8xc0xtpv5kcRG2Qj7G2kO88"
+}

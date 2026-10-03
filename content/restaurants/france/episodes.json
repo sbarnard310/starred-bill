@@ -1,0 +1,22 @@
+{
+  "name": "Épisodes",
+  "city": "paris",
+  "area": "17th arrondissement",
+  "areaZh": "第17區",
+  "address": "8 rue Meissonier, 75017, Paris",
+  "stars": 1,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "rating": 4.6,
+  "reviews": 351,
+  "dinner": 195,
+  "dinnerType": "menu",
+  "dinnerNote": "Menu Épisodes (Meissonier €145)",
+  "sourceType": "site",
+  "source": "https://www.episodes-paris.fr/",
+  "lunchType": "menu",
+  "website": "https://www.episodes-paris.fr/",
+  "lat": 48.8835225,
+  "lng": 2.3046062,
+  "placeId": "ChIJLdpVyutx5kcRrXbY4fHD4Cs"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Benoit",
+  "city": "paris",
+  "area": "4th arrondissement",
+  "areaZh": "第4區",
+  "address": "20 rue Saint-Martin, Paris 4e",
+  "stars": 0,
+  "cuisine": "Classic Cuisine",
+  "cuisineZh": "傳統菜",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2025-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2025 guide",
+  "statusNoteZh": "於 2025 年指南失去星級"
+}

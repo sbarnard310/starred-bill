@@ -1,0 +1,18 @@
+{
+  "name": "Shang Palace",
+  "city": "paris",
+  "area": "16th arrondissement",
+  "areaZh": "第16區",
+  "address": "Shangri-La Paris, 10 avenue d'Iéna, Paris 16e",
+  "stars": 0,
+  "cuisine": "Cantonese",
+  "cuisineZh": "粵菜",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2025-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2025 guide",
+  "statusNoteZh": "於 2025 年指南失去星級"
+}

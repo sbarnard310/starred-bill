@@ -1,0 +1,23 @@
+{
+  "name": "Don Juan II",
+  "city": "paris",
+  "area": "16th arrondissement",
+  "areaZh": "第16區",
+  "address": "Port Debilly, 75016, Paris",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "cuisineZh": "現代菜",
+  "rating": 4.7,
+  "reviews": 151,
+  "dinner": 250,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner cruise menu, 5 courses",
+  "sourceType": "press",
+  "source": "https://www.yonder.fr/gastronomie/restaurants/paris/on-a-teste-diner-croisiere-yachts-de-paris",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://donjuan2.yachtsdeparis.fr/",
+  "lat": 48.8630387,
+  "lng": 2.2959142,
+  "placeId": "ChIJV893WNdx5kcRId2B1-rDEZU"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Le Cinq",
+  "city": "paris",
+  "area": "8th arrondissement",
+  "areaZh": "第8區",
+  "address": "Four Seasons Hotel George V, 31 avenue George-V, 75008, Paris",
+  "stars": 3,
+  "cuisine": "Modern Cuisine",
+  "cuisineZh": "現代菜",
+  "rating": 4.7,
+  "reviews": 1616,
+  "dinner": 620,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 10 courses (Gault&Millau indicative price)",
+  "sourceType": "press",
+  "source": "https://fr.gaultmillau.com/en/restaurants/le-cinq-restaurant-paris-8",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.fourseasons.com/fr/paris/dining/restaurants/le_cinq/",
+  "lat": 48.8687604,
+  "lng": 2.3008612,
+  "placeId": "ChIJqTQzIehv5kcRaF3hD1SzX5A"
+}

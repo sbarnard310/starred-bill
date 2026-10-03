@@ -1,0 +1,22 @@
+{
+  "name": "Marsan par Hélène Darroze",
+  "city": "paris",
+  "area": "6th arrondissement",
+  "areaZh": "第6區",
+  "address": "4 rue d'Assas, 75006, Paris",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "cuisineZh": "現代菜",
+  "rating": 4.4,
+  "reviews": 1016,
+  "dinner": 290,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.marsanhelenedarroze.com/",
+  "lunchType": "menu",
+  "website": "https://www.marsanhelenedarroze.com/",
+  "lat": 48.8499883,
+  "lng": 2.3279216,
+  "placeId": "ChIJ81phINFx5kcRW5UjTPo8aGc"
+}

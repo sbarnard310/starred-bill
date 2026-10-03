@@ -1,0 +1,22 @@
+{
+  "name": "Sushi B",
+  "city": "paris",
+  "area": "2th arrondissement",
+  "areaZh": "第2區",
+  "address": "5 rue Rameau, 75002, Paris",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.7,
+  "reviews": 551,
+  "dinner": 320,
+  "dinnerType": "menu",
+  "dinnerNote": "Menu WA",
+  "sourceType": "site",
+  "source": "https://sushi-b-fr.com/",
+  "lunchType": "menu",
+  "website": "https://sushi-b-fr.com/",
+  "lat": 48.867715,
+  "lng": 2.3376315,
+  "placeId": "ChIJ9Z6nGDtu5kcRgc34rnb__eA"
+}

@@ -65,6 +65,7 @@ const I18N = {
     jumpMap: "Map", jumpMapAria: "Jump to the map",
     share: "Share", shareAria: "Share this page", shareTitle: "Share this page", shareCopy: "Copy link", shareCopied: "Link copied", shareEmail: "Email",
     shareInsta: "For Instagram, copy the link and paste it into a story or message.",
+    shareMore: "Instagram, Messages and more",
     shareTextPlace: "What a Michelin star costs in {placeIn}: dinner, lunch and wine pairing prices side by side.",
     shareTextHome: "What a Michelin star costs, city by city: dinner, lunch and wine pairing prices side by side.",
     infoDinner: "dinner", infoWine: "wine", infoGoogle: "on Google", infoOpen: "Open in Google Maps", infoNoPrice: "Price not listed",
@@ -169,6 +170,7 @@ const I18N = {
     jumpMap: "地圖", jumpMapAria: "跳到地圖",
     share: "分享", shareAria: "分享此頁", shareTitle: "分享此頁", shareCopy: "複製連結", shareCopied: "已複製連結", shareEmail: "電子郵件",
     shareInsta: "若要分享到 Instagram，請複製連結，再貼到限時動態或訊息中。",
+    shareMore: "Instagram、訊息與更多",
     shareTextPlace: "在{place}，一顆米其林星要價多少？晚餐、午餐與餐酒搭配價格一次比較。",
     shareTextHome: "一顆米其林星要價多少？各城市晚餐、午餐與餐酒搭配價格一次比較。",
     infoDinner: "晚餐", infoWine: "餐酒搭配", infoGoogle: "Google 評分", infoOpen: "在 Google 地圖開啟", infoNoPrice: "價格未公布",
@@ -271,6 +273,7 @@ const I18N = {
     jumpMap: "Carte", jumpMapAria: "Aller à la carte",
     share: "Partager", shareAria: "Partager cette page", shareTitle: "Partager cette page", shareCopy: "Copier le lien", shareCopied: "Lien copié", shareEmail: "E-mail",
     shareInsta: "Pour Instagram, copiez le lien puis collez-le dans une story ou un message.",
+    shareMore: "Instagram, Messages et plus",
     shareTextPlace: "Ce que coûte une étoile Michelin {placeIn} : prix du dîner, du déjeuner et des accords mets-vins, côte à côte.",
     shareTextHome: "Ce que coûte une étoile Michelin, ville par ville : prix du dîner, du déjeuner et des accords mets-vins.",
     infoDinner: "dîner", infoWine: "vins", infoGoogle: "sur Google", infoOpen: "Ouvrir dans Google Maps", infoNoPrice: "Prix non communiqué",
@@ -354,6 +357,7 @@ const I18N = {
     jumpMap: "地圖", jumpMapAria: "跳去地圖",
     share: "分享", shareAria: "分享呢版", shareTitle: "分享呢版", shareCopy: "複製連結", shareCopied: "已經複製咗連結", shareEmail: "電郵",
     shareInsta: "想分享去 Instagram，就複製條連結，再貼落限時動態或者訊息度。",
+    shareMore: "Instagram、訊息同更多",
     shareTextPlace: "喺{place}，一粒米芝蓮星要幾多錢？晚市、午市同配酒價錢一次過比較。",
     shareTextHome: "一粒米芝蓮星要幾多錢？各個城市晚市、午市同配酒價錢一次過比較。",
     infoDinner: "晚市", infoWine: "配酒", infoGoogle: "Google 評分", infoOpen: "喺 Google 地圖打開", infoNoPrice: "未有公布價錢",
@@ -617,8 +621,9 @@ function addNearMe(map, points, { radius = Infinity, far = null } = {}) {
 }
 
 // ---------- Share ----------
-// The Share button in the header. Phones (and the installed app) open their own share sheet, which includes
-// Instagram, X, WhatsApp and Messages; elsewhere a small menu offers Copy link and the main networks.
+// The Share button in the header opens a small menu: the link with Copy link, the main networks, and on phones
+// (and the installed app) a button for the phone's own share sheet, which reaches Instagram, Messages and the rest.
+// The share sheet gets the link only, because some apps' Copy keeps just the text when both are given.
 let shareText = () => t("shareTextHome");
 const shareUrl = () => location.origin + location.pathname + (LANG_PREF !== "en" ? "?lang=" + LANG_PREF : "");
 function renderSharePanel() {
@@ -630,12 +635,13 @@ function renderSharePanel() {
   $("sharePanel").innerHTML = '<p class="share-head">' + esc(t("shareTitle")) + "</p>" +
     '<div class="share-copy"><input type="text" readonly value="' + esc(url) + '" aria-label="' + esc(t("shareTitle")) + '"><button type="button" id="shareCopy">' + esc(t("shareCopy")) + "</button></div>" +
     '<div class="share-links">' + links.map(([label, href]) => '<a href="' + esc(href) + '" target="_blank" rel="noopener">' + esc(label) + "</a>").join("") + "</div>" +
-    '<p class="share-note">' + esc(t("shareInsta")) + "</p>";
+    (navigator.share ? '<button type="button" class="share-native" id="shareNative"><svg aria-hidden="true"><use href="#share"/></svg>' + esc(t("shareMore")) + "</button>"
+      : '<p class="share-note">' + esc(t("shareInsta")) + "</p>");
 }
 async function copyShareLink() {
   const btn = $("shareCopy"), url = shareUrl();
   try { await navigator.clipboard.writeText(url); }
-  catch (e) { const input = $("sharePanel").querySelector("input"); input.select(); document.execCommand("copy"); }
+  catch (e) { const input = $("sharePanel").querySelector("input"); input.focus(); input.setSelectionRange(0, url.length); document.execCommand("copy"); }
   btn.textContent = t("shareCopied");
   setTimeout(() => { if ($("shareCopy")) $("shareCopy").textContent = t("shareCopy"); }, 2000);
 }
@@ -644,11 +650,7 @@ function labelShare() {
   $("shareBtn").setAttribute("aria-label", t("shareAria"));
   if (!$("sharePanel").hidden) renderSharePanel();
 }
-$("shareBtn").addEventListener("click", async () => {
-  if (navigator.share) {
-    try { await navigator.share({ title: document.title, text: shareText(), url: shareUrl() }); return; }
-    catch (e) { if (e.name === "AbortError") return; }
-  }
+$("shareBtn").addEventListener("click", () => {
   const panel = $("sharePanel");
   if (!panel.hidden) { panel.hidden = true; $("shareBtn").setAttribute("aria-expanded", "false"); return; }
   renderSharePanel();
@@ -658,9 +660,11 @@ $("shareBtn").addEventListener("click", async () => {
   panel.style.right = Math.min(Math.max(16, vw - r.right), vw - w - 16) + "px";
   panel.hidden = false;
   $("shareBtn").setAttribute("aria-expanded", "true");
-  panel.querySelector("input").select();
 });
-$("sharePanel").addEventListener("click", (e) => { if (e.target.id === "shareCopy") copyShareLink(); });
+$("sharePanel").addEventListener("click", (e) => {
+  if (e.target.id === "shareCopy") copyShareLink();
+  if (e.target.closest("#shareNative")) navigator.share({ title: document.title, url: shareUrl() }).catch(() => {});
+});
 document.addEventListener("click", (e) => {
   if (!$("sharePanel").hidden && !e.target.closest("#sharePanel, #shareBtn")) { $("sharePanel").hidden = true; $("shareBtn").setAttribute("aria-expanded", "false"); }
 });

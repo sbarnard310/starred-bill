@@ -51,6 +51,13 @@ It's used for the maps (Maps JavaScript API) and restaurant photos (Places API (
 - The owner's to-do list for the site is a Claude artifact: https://claude.ai/artifact/Axt5P5PtjBJ1R7VUziDPeL. Items live in its database, collection `tasks` (fields: title, section = destinations | features | fixes | updates | you, priority = now | next | later, status = todo | doing | done, notes, createdAt, doneAt). Read it with the ArtifactData tool when asked "what's next?", add items when asked, and when you finish a job that's on it, set its status to done (with doneAt).
 - Free user accounts (wishlist on every device, a "been there" checklist, alerts): not built yet. The plan, open decisions and the owner's setup steps are in `docs/accounts-plan.md`.
 
+## Updates log
+The same artifact has an "Updates log" tab: a dated record of every fix and every change to prices, restaurants, stars and pages. It lives in the same database, collection `log` (fields: title, kind = fix | prices | restaurants | stars | pages, notes, at, commit, createdAt).
+- After every push that fixes something or changes prices, restaurants, stars or pages, add an entry with the ArtifactData tool. This includes new destinations, star changes, closures and moved pages. New features go on the to-do list instead (marked done), not here.
+- One entry per change the owner would recognise. The title says what changed and where, in plain English, e.g. "Updated lunch prices for 12 London restaurants" or "Added Chicago: 25 starred restaurants". Put extra detail in `notes`.
+- `at` is the commit time in UTC (`2026-10-03T13:02:25Z`), `commit` its short hash, and the doc id `<YYYY-MM-DD>-<short-slug>`.
+- After `git pull --rebase`, if it brought in the owner's Pages CMS edits (commit message ending "(via Pages CMS)") that aren't logged yet, add them too, reading the diff to say what changed. Skip edits that were undone straight away.
+
 ## Working in several chats at once
 The owner may run several Claude chats on this site at the same time, filed under the "Starred Bill" sections in the Code tab sidebar (Main, New destinations, Features, Fixes & price updates).
 - Run `git pull --rebase` before starting work and again before every push; other chats and Pages CMS also push to `main`.

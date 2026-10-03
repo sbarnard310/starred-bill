@@ -1,0 +1,22 @@
+{
+  "name": "Atomix",
+  "city": "new-york",
+  "area": "NoMad",
+  "areaZh": "諾瑪德",
+  "address": "104 E. 30th St., New York, NY, 10016",
+  "stars": 2,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.6,
+  "reviews": 534,
+  "dinner": 375,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 10 courses (bar tasting from $285)",
+  "wine": 175,
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/atomixnyc/",
+  "website": "https://www.atomixnyc.com/",
+  "lat": 40.744292,
+  "lng": -73.982807,
+  "placeId": "ChIJ3bmAHghZwokRRXYO57yLuss"
+}

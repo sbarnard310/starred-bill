@@ -1,0 +1,22 @@
+{
+  "name": "Jua",
+  "city": "new-york",
+  "area": "Flatiron",
+  "areaZh": "熨斗區",
+  "address": "36 E. 22nd St., New York, NY, 10010",
+  "stars": 1,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.7,
+  "reviews": 773,
+  "dinner": 150,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 7 courses",
+  "wine": 85,
+  "sourceType": "site",
+  "source": "https://juanyc.com/menu",
+  "website": "https://juanyc.com/",
+  "lat": 40.740014,
+  "lng": -73.987448,
+  "placeId": "ChIJfTgbIE9ZwokRdRjFE2OMZN8"
+}

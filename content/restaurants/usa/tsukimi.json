@@ -1,0 +1,21 @@
+{
+  "name": "Tsukimi",
+  "city": "new-york",
+  "area": "East Village",
+  "areaZh": "東村",
+  "address": "288 E. 10th St., New York, NY, 10003",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.6,
+  "reviews": 145,
+  "dinner": 250,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.tsukimi.nyc/",
+  "website": "https://www.tsukimi.nyc/",
+  "lat": 40.729016,
+  "lng": -73.985251,
+  "placeId": "ChIJRQgS7etZwokR8IMUTfuDXOM"
+}

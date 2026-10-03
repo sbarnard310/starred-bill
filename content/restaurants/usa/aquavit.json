@@ -1,0 +1,21 @@
+{
+  "name": "Aquavit",
+  "city": "new-york",
+  "area": "Midtown",
+  "areaZh": "中城",
+  "address": "65 E. 55th St., New York, NY, 10022",
+  "stars": 2,
+  "cuisine": "Scandinavian",
+  "cuisineZh": "北歐菜",
+  "rating": 4.6,
+  "reviews": 1331,
+  "dinner": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/aquavit/experience/42741/dining-room-dinner",
+  "website": "https://www.aquavit.org/",
+  "lat": 40.76078,
+  "lng": -73.97214,
+  "placeId": "ChIJWfonJ_tYwokRwIGb6Im403E"
+}

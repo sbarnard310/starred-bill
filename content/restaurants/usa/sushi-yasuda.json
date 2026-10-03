@@ -1,0 +1,18 @@
+{
+  "name": "Sushi Yasuda",
+  "city": "new-york",
+  "area": "Midtown",
+  "areaZh": "中城",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2024-12",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in December 2024",
+  "statusNoteZh": "於 2024 年 12 月失去星級"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Shmoné",
+  "city": "new-york",
+  "area": "Greenwich Village",
+  "areaZh": "格林威治村",
+  "address": "61 W. 8th St., New York, NY, 10011",
+  "stars": 1,
+  "cuisine": "Israeli",
+  "cuisineZh": "以色列菜",
+  "rating": 4.2,
+  "reviews": 614,
+  "dinnerType": "menu",
+  "dinnerNote": "À la carte, changes daily",
+  "sourceType": "none",
+  "website": "https://www.shmonenyc.com/",
+  "lat": 40.73329,
+  "lng": -73.998603,
+  "placeId": "ChIJBdMLKZBZwokRJ0tYbQ6nfZ4"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Atera",
+  "city": "new-york",
+  "area": "Tribeca",
+  "areaZh": "翠貝卡",
+  "address": "77 Worth St., New York, NY, 10013",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.6,
+  "reviews": 634,
+  "dinner": 325,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://ateranyc.com/",
+  "website": "https://ateranyc.com/",
+  "lat": 40.71685,
+  "lng": -74.005591,
+  "placeId": "ChIJ_Y7rMCBawokR0mnRmN5kL2o"
+}

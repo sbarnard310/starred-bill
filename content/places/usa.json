@@ -1,0 +1,16 @@
+{
+  "id": "usa",
+  "type": "country",
+  "name": "United States",
+  "nameZh": "美國",
+  "inSentence": "the US",
+  "currency": "USD",
+  "intro": "Prices are in US dollars, with a switch to see them in pounds or euros. Prices checked October 2026, per person before tax and tip.",
+  "introZh": "價格以美元標示，也可切換為英鎊或歐元。價格於 2026 年 10 月查核，以每人計、未含稅及小費。",
+  "serviceText": "Every figure is for one guest and excludes sales tax (8.875% in New York City) and tip, which is usually 18–22%. A few restaurants include service in the price (such as Per Se) or add a set service charge, and the note says so. Supplements such as caviar or truffle courses are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格，不含銷售稅（紐約市為 8.875%）及一般 18–22% 的小費。少數餐廳已將服務費含在價格內（例如 Per Se）或另收固定服務費，說明欄會註明。不含魚子醬或松露等加價項目。以其他幣別顯示的價格依當日匯率換算，僅供參考。",
+  "sourcesText": "Dinner is the main tasting or omakase menu where there is one, and wine is the cheapest pairing for it. We take prices from each restaurant's own website where they're published, otherwise from its booking page (Tock, Resy or OpenTable), recent reviews and guides. À la carte restaurants show a typical main course (“per main”). Lunch is the set or tasting lunch menu where there is one.",
+  "sourcesTextZh": "晚餐以主要品嚐套餐或廚師發辦為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網為準；否則參考其訂位頁面（Tock、Resy 或 OpenTable）、近期評論與指南。單點餐廳則顯示一般主菜價格（每道主菜）。午餐以午間套餐或品嚐套餐為準。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide New York 2025, announced on 18 November 2025. A green ▲ marks a restaurant that gained a star in the December 2024 or November 2025 guide; a red ▼ marks one that lost a star.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2025 年 11 月 18 日公布的《紐約米其林指南 2025》。綠色 ▲ 代表在 2024 年 12 月或 2025 年 11 月的指南中獲得星級；紅色 ▼ 代表失去星級。"
+}

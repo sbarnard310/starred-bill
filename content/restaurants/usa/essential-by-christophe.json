@@ -1,0 +1,21 @@
+{
+  "name": "Essential by Christophe",
+  "city": "new-york",
+  "area": "Upper West Side",
+  "areaZh": "上西區",
+  "address": "103 W. 77th St., New York, NY, 10024",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "cuisineZh": "時尚法國菜",
+  "rating": 4.8,
+  "reviews": 462,
+  "dinner": 255,
+  "dinnerType": "menu",
+  "dinnerNote": "Essential menu, 7 courses (3 courses $175)",
+  "sourceType": "press",
+  "source": "https://shaneasavours.com/essential-by-christophe-new-york/",
+  "website": "https://www.essentialbychristophe.com/",
+  "lat": 40.780833,
+  "lng": -73.976657,
+  "placeId": "ChIJw6JyhoxZwokR3mKl4FLg5rM"
+}

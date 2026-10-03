@@ -1,0 +1,21 @@
+{
+  "name": "Le Coucou",
+  "city": "new-york",
+  "area": "SoHo",
+  "areaZh": "蘇活",
+  "address": "11 Howard Hotel, 138 Lafayette St., New York, NY, 10013",
+  "stars": 1,
+  "cuisine": "French",
+  "cuisineZh": "法國菜",
+  "rating": 4.5,
+  "reviews": 2153,
+  "dinner": 40,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains about $36–$48 (A Very Coucou Dinner $220)",
+  "sourceType": "press",
+  "source": "https://www.yelp.com/menu/le-coucou-new-york/dinner",
+  "website": "https://lecoucou.com/",
+  "lat": 40.719162,
+  "lng": -74.00001,
+  "placeId": "ChIJyw5j84lZwokRnUI_UknPSNA"
+}

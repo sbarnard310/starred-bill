@@ -1,0 +1,22 @@
+{
+  "name": "Dirt Candy",
+  "city": "new-york",
+  "area": "Lower East Side",
+  "areaZh": "下東城",
+  "address": "86 Allen St., New York, NY, 10002",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "cuisineZh": "素食",
+  "rating": 4.5,
+  "reviews": 1580,
+  "dinner": 118,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 5 courses",
+  "wine": 55,
+  "sourceType": "site",
+  "source": "https://www.dirtcandynyc.com/",
+  "website": "https://www.dirtcandynyc.com/",
+  "lat": 40.71794,
+  "lng": -73.99087,
+  "placeId": "ChIJBXlte51ZwokRXzXtdaBG9xM"
+}

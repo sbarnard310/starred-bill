@@ -1,0 +1,22 @@
+{
+  "name": "Aska",
+  "city": "new-york",
+  "area": "Williamsburg, Brooklyn",
+  "areaZh": "布魯克林威廉斯堡",
+  "address": "47 S. 5th St., Brooklyn, NY, 11249",
+  "stars": 2,
+  "cuisine": "Scandinavian",
+  "cuisineZh": "北歐菜",
+  "rating": 4.6,
+  "reviews": 615,
+  "dinner": 375,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 12–14 courses",
+  "wine": 250,
+  "sourceType": "site",
+  "source": "https://www.askanyc.com/dining",
+  "website": "https://askanyc.com/",
+  "lat": 40.712377,
+  "lng": -73.966755,
+  "placeId": "ChIJUwatTl1ZwokRUDXxYoFa-hk"
+}

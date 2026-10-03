@@ -1,0 +1,22 @@
+{
+  "name": "Blue Hill at Stone Barns",
+  "city": "new-york-state",
+  "area": "Tarrytown, Westchester",
+  "areaZh": "威徹斯特郡塔里敦",
+  "address": "630 Bedford Rd., Tarrytown, NY, 10591",
+  "stars": 2,
+  "cuisine": "American",
+  "cuisineZh": "美國菜",
+  "rating": 4.7,
+  "reviews": 1465,
+  "dinner": 278,
+  "dinnerType": "menu",
+  "dinnerNote": "Multi-course farm menu",
+  "wine": 168,
+  "sourceType": "site",
+  "source": "https://www.bluehillfarm.com/faq",
+  "website": "https://www.bluehillfarm.com/",
+  "lat": 41.100715,
+  "lng": -73.829297,
+  "placeId": "ChIJExcPIfK_wokRtc6K_3jkhgM"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Restaurant Yuu",
+  "city": "new-york",
+  "area": "Greenpoint, Brooklyn",
+  "areaZh": "布魯克林綠點",
+  "address": "55 Nassau Ave., #1A, Brooklyn, NY, 11222",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "cuisineZh": "時尚法國菜",
+  "rating": 4.6,
+  "reviews": 236,
+  "dinner": 300,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu (short menu $65)",
+  "wine": 123,
+  "sourceType": "site",
+  "source": "https://www.yuunewyork.com/restaurantyuu/menu/",
+  "website": "https://www.yuunewyork.com/restaurantyuu/",
+  "lat": 40.723363,
+  "lng": -73.952163,
+  "placeId": "ChIJh2cqMDNZwokRqMMqNP9srxI"
+}

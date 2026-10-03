@@ -1,0 +1,21 @@
+{
+  "name": "Yoshino",
+  "city": "new-york",
+  "area": "NoHo",
+  "areaZh": "諾荷",
+  "address": "342 Bowery, New York, NY, 10012",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.4,
+  "reviews": 181,
+  "dinner": 500,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase, about 20 courses (prepaid)",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/yoshinonewyork/experience/369287/sushi-omakase",
+  "website": "https://www.yoshinonewyork.com/",
+  "lat": 40.726283,
+  "lng": -73.992039,
+  "placeId": "ChIJ6WTjLENZwokRsU3IurxvnCI"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Estela",
+  "city": "new-york",
+  "area": "Nolita",
+  "areaZh": "諾利塔",
+  "address": "47 E. Houston St., New York, NY, 10012",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.4,
+  "reviews": 1662,
+  "dinner": 29,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; dishes up to about $29",
+  "sourceType": "press",
+  "source": "https://www.toasttab.com/local/estelanyc/r-eda7ae27-85a4-454c-ab13-4e94327fec41",
+  "website": "https://www.estelanyc.com/",
+  "lat": 40.72471,
+  "lng": -73.9948,
+  "placeId": "ChIJf3f-f4VZwokRcBCEciTOGRQ"
+}

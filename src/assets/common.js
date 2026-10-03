@@ -396,7 +396,7 @@ const CUISINE_ZH = {
   "African": "非洲菜", "Spanish": "西班牙菜", "Seafood": "海鮮", "Fish and Seafood": "魚類及海鮮", "Creative British": "創新英國菜", "Mexican": "墨西哥菜",
   "Mediterranean Cuisine": "地中海菜", "Greek": "希臘菜", "Thai": "泰國菜", "Vegan": "純素", "European Contemporary": "時尚歐陸菜", "Korean": "韓國菜",
   "Grills": "燒烤", "Californian": "加州菜", "Classic French": "經典法國菜", "Classic Cuisine": "經典菜", "British Contemporary": "時尚英國菜",
-  "Turkish": "土耳其菜", "Scandinavian": "北歐菜"
+  "Turkish": "土耳其菜", "Scandinavian": "北歐菜", "Contemporary": "時尚菜", "American": "美國菜", "Vegetarian": "素食", "Israeli": "以色列菜", "Fusion": "融合菜"
 };
 // Cuisine names in French (Michelin's French labels), for pages offered in French.
 const CUISINE_FR = {

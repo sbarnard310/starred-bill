@@ -1,0 +1,18 @@
+{
+  "name": "Sushi Amane",
+  "city": "new-york",
+  "area": "Midtown",
+  "areaZh": "中城",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2025-11",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Not starred in the November 2025 guide",
+  "statusNoteZh": "未列入 2025 年 11 月指南的星級名單"
+}

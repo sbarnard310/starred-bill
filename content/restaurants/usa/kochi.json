@@ -1,0 +1,22 @@
+{
+  "name": "Kochi",
+  "city": "new-york",
+  "area": "Hell's Kitchen",
+  "areaZh": "地獄廚房",
+  "address": "652 Tenth Ave., New York, NY, 10036",
+  "stars": 1,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.6,
+  "reviews": 1037,
+  "dinner": 145,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 8–9 courses",
+  "wine": 110,
+  "sourceType": "press",
+  "source": "https://www.enprimeurclub.com/guide/this-michelin-star-korean-fine-dining-restaurant-dining-in-nyc-is-actually-affordable",
+  "website": "https://kochinyc.com/",
+  "lat": 40.761977,
+  "lng": -73.993512,
+  "placeId": "ChIJN8SzjFRZwokR-b5lqNXcg44"
+}

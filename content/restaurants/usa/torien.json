@@ -1,0 +1,21 @@
+{
+  "name": "Torien",
+  "city": "new-york",
+  "area": "Nolita",
+  "areaZh": "諾利塔",
+  "address": "292 Elizabeth St., New York, NY, 10012",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.6,
+  "reviews": 282,
+  "dinner": 150,
+  "dinnerType": "menu",
+  "dinnerNote": "Yakitori omakase, 13 courses",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/new-york/reviews/torien",
+  "website": "https://torien-nyc.com/",
+  "lat": 40.724706,
+  "lng": -73.993269,
+  "placeId": "ChIJ00d8thlZwokRokFYn2wZy5E"
+}

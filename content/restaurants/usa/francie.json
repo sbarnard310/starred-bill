@@ -1,0 +1,21 @@
+{
+  "name": "Francie",
+  "city": "new-york",
+  "area": "Williamsburg, Brooklyn",
+  "areaZh": "布魯克林威廉斯堡",
+  "address": "136 Broadway, Brooklyn, NY, 11249",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.4,
+  "reviews": 766,
+  "dinner": 35,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains and pastas about $25–$35 (duck for two $152)",
+  "sourceType": "site",
+  "source": "https://www.franciebrooklyn.com/",
+  "website": "https://www.franciebrooklyn.com/",
+  "lat": 40.71019,
+  "lng": -73.964086,
+  "placeId": "ChIJ35V_tZlbwokRzolpCln-mG4"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Per Se",
+  "city": "new-york",
+  "area": "Columbus Circle",
+  "areaZh": "哥倫布圓環",
+  "address": "10 Columbus Circle, New York, NY, 10019",
+  "stars": 3,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.5,
+  "reviews": 2154,
+  "dinner": 425,
+  "dinnerType": "menu",
+  "dinnerNote": "Chef's tasting, 9 courses; service included (Salon menu $285)",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/perse/experience/288603/main-dining-room-tasting-menu",
+  "website": "https://www.thomaskeller.com/perseny",
+  "lat": 40.768054,
+  "lng": -73.982588,
+  "placeId": "ChIJp3PsL_ZYwokRZYqs_40RJF4"
+}

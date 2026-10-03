@@ -1,0 +1,21 @@
+{
+  "name": "Sixty Three Clinton",
+  "city": "new-york",
+  "area": "Lower East Side",
+  "areaZh": "下東城",
+  "address": "63 Clinton St., New York, NY, 10002",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.6,
+  "reviews": 563,
+  "dinner": 130,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.63clinton.com/",
+  "website": "https://www.63clinton.com/",
+  "lat": 40.719483,
+  "lng": -73.984993,
+  "placeId": "ChIJ385rlW9ZwokRHTamoLqoosI"
+}

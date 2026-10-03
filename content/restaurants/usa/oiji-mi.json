@@ -1,0 +1,21 @@
+{
+  "name": "Oiji Mi",
+  "city": "new-york",
+  "area": "Flatiron",
+  "areaZh": "熨斗區",
+  "address": "17 W. 19th St., New York, NY, 10011",
+  "stars": 1,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.6,
+  "reviews": 1307,
+  "dinner": 155,
+  "dinnerType": "menu",
+  "dinnerNote": "Prix fixe, 5 courses",
+  "sourceType": "site",
+  "source": "https://www.oijimi.com/faqs",
+  "website": "https://www.oijimi.com/",
+  "lat": 40.739637,
+  "lng": -73.992412,
+  "placeId": "ChIJee0VTWZZwokRDYFpAoConlw"
+}

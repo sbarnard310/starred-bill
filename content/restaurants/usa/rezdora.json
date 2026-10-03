@@ -1,0 +1,22 @@
+{
+  "name": "Rezdôra",
+  "city": "new-york",
+  "area": "Flatiron",
+  "areaZh": "熨斗區",
+  "address": "27 E. 20th St., New York, NY, 10003",
+  "stars": 1,
+  "cuisine": "Italian",
+  "cuisineZh": "義大利菜",
+  "rating": 4.3,
+  "reviews": 1953,
+  "dinner": 110,
+  "dinnerType": "menu",
+  "dinnerNote": "Regional pasta tasting",
+  "wine": 90,
+  "sourceType": "site",
+  "source": "https://www.rezdora.nyc/",
+  "website": "https://www.rezdora.nyc/",
+  "lat": 40.739032,
+  "lng": -73.989182,
+  "placeId": "ChIJDdKSyCVZwokR-9svvc9YDFo"
+}

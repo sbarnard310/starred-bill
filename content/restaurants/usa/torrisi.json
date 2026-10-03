@@ -1,0 +1,21 @@
+{
+  "name": "Torrisi",
+  "city": "new-york",
+  "area": "Nolita",
+  "areaZh": "諾利塔",
+  "address": "275 Mulberry St., New York, NY, 10012",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.6,
+  "reviews": 1006,
+  "dinner": 55,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains about $44–$67",
+  "sourceType": "press",
+  "source": "https://www.yelp.com/biz/torrisi-new-york-2",
+  "website": "https://www.torrisinyc.com/",
+  "lat": 40.724364,
+  "lng": -73.995278,
+  "placeId": "ChIJWd7fRdZZwokRhru5tn4KsVM"
+}

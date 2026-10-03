@@ -1,0 +1,21 @@
+{
+  "name": "Sushi Noz",
+  "city": "new-york",
+  "area": "Upper East Side",
+  "areaZh": "上東區",
+  "address": "181 E. 78th St., New York, NY, 10075",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.5,
+  "reviews": 473,
+  "dinner": 550,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase",
+  "sourceType": "press",
+  "source": "https://souraji.com/reviews/sushi-noz/",
+  "website": "https://www.sushinoz.com/",
+  "lat": 40.77384,
+  "lng": -73.958275,
+  "placeId": "ChIJmUAVNb5YwokRyFZIbhQ_cxM"
+}

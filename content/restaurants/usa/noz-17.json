@@ -1,0 +1,21 @@
+{
+  "name": "Noz 17",
+  "city": "new-york",
+  "area": "Chelsea",
+  "areaZh": "雀兒喜",
+  "address": "458 W. 17th St., New York, NY, 10011",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.3,
+  "reviews": 134,
+  "dinner": 195,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase, 15 courses",
+  "sourceType": "press",
+  "source": "https://ericrosen.substack.com/p/noz-17-michelin-star-sushi-in-nyc",
+  "website": "https://www.noz.global/experience/noz-17",
+  "lat": 40.743587,
+  "lng": -74.005878,
+  "placeId": "ChIJT4q4QIFZwokRs1nRu7_ckVI"
+}

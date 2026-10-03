@@ -1,0 +1,21 @@
+{
+  "name": "Gabriel Kreuther",
+  "city": "new-york",
+  "area": "Midtown",
+  "areaZh": "中城",
+  "address": "41 W. 42nd St., New York, NY, 10036",
+  "stars": 2,
+  "cuisine": "French",
+  "cuisineZh": "法國菜",
+  "rating": 4.6,
+  "reviews": 1349,
+  "dinner": 200,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner, 3 courses (4 courses $235; pre-theater $155)",
+  "sourceType": "site",
+  "source": "https://www.gknyc.com/",
+  "website": "https://www.gknyc.com/",
+  "lat": 40.75397,
+  "lng": -73.982025,
+  "placeId": "ChIJw_TGEwBZwokR-zLts543O-4"
+}

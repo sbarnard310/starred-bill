@@ -1,0 +1,21 @@
+{
+  "name": "L’Abeille",
+  "city": "new-york",
+  "area": "Tribeca",
+  "areaZh": "翠貝卡",
+  "address": "412 Greenwich St., New York, NY, 10013",
+  "stars": 1,
+  "cuisine": "French",
+  "cuisineZh": "法國菜",
+  "rating": 4.6,
+  "reviews": 330,
+  "dinner": 255,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu (shorter menu $190)",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/new-york/reviews/labeille",
+  "website": "https://www.labeille.nyc/",
+  "lat": 40.721939,
+  "lng": -74.009951,
+  "placeId": "ChIJq75Ur-tZwokRo7I_F_PhlcU"
+}

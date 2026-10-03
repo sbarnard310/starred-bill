@@ -1,0 +1,21 @@
+{
+  "name": "bōm",
+  "city": "new-york",
+  "area": "Flatiron",
+  "areaZh": "熨斗區",
+  "address": "17 W. 19th St., New York, NY, 10011",
+  "stars": 1,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.8,
+  "reviews": 175,
+  "dinner": 295,
+  "dinnerType": "menu",
+  "dinnerNote": "Chef's tasting menu",
+  "sourceType": "site",
+  "source": "https://www.bom-nyc.com/",
+  "website": "https://www.bom-nyc.com/",
+  "lat": 40.739618,
+  "lng": -73.99245,
+  "placeId": "ChIJRY8CqGJZwokR285BA7eLv5g"
+}

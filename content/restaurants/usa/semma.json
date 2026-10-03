@@ -1,0 +1,21 @@
+{
+  "name": "Semma",
+  "city": "new-york",
+  "area": "West Village",
+  "areaZh": "西村",
+  "address": "60 Greenwich Ave., New York, NY, 10011",
+  "stars": 1,
+  "cuisine": "Indian",
+  "cuisineZh": "印度菜",
+  "rating": 4.2,
+  "reviews": 1711,
+  "dinner": 39,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains about $36–$49",
+  "sourceType": "site",
+  "source": "https://www.semma.nyc/",
+  "website": "https://www.semma.nyc/",
+  "lat": 40.73606,
+  "lng": -74.000673,
+  "placeId": "ChIJxZmzO7hZwokRx2fls4uU4YU"
+}

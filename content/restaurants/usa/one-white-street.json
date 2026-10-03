@@ -1,0 +1,18 @@
+{
+  "name": "One White Street",
+  "city": "new-york",
+  "area": "Tribeca",
+  "areaZh": "翠貝卡",
+  "stars": 0,
+  "cuisine": "American",
+  "cuisineZh": "美國菜",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2025-11",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in November 2025, after the chef left",
+  "statusNoteZh": "主廚離開後，於 2025 年 11 月失去星級"
+}

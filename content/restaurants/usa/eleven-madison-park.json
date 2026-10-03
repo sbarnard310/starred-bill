@@ -1,0 +1,22 @@
+{
+  "name": "Eleven Madison Park",
+  "city": "new-york",
+  "area": "Flatiron",
+  "areaZh": "熨斗區",
+  "address": "11 Madison Ave., New York, NY, 10010",
+  "stars": 3,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.4,
+  "reviews": 3361,
+  "dinner": 385,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu (bar tasting from $225)",
+  "wine": 175,
+  "sourceType": "site",
+  "source": "https://www.elevenmadisonpark.com/faq",
+  "website": "https://www.elevenmadisonpark.com/",
+  "lat": 40.741523,
+  "lng": -73.987222,
+  "placeId": "ChIJEWbXz6ZZwokRLKmKrtPfVFY"
+}

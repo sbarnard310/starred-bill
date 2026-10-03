@@ -1,0 +1,21 @@
+{
+  "name": "Jeju Noodle Bar",
+  "city": "new-york",
+  "area": "West Village",
+  "areaZh": "西村",
+  "address": "679 Greenwich St., New York, NY, 10014",
+  "stars": 1,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.6,
+  "reviews": 3561,
+  "dinner": 34,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; ramyun about $16–$46",
+  "sourceType": "press",
+  "source": "https://www.biteofthebest.com/jeju-noodle-bar-west-village-nyc/",
+  "website": "https://www.jejunoodlebar.com/",
+  "lat": 40.732952,
+  "lng": -74.00744,
+  "placeId": "ChIJvSw_uuxZwokRwESVzh5G33s"
+}

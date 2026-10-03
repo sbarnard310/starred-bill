@@ -1,0 +1,21 @@
+{
+  "name": "Oxomoco",
+  "city": "new-york",
+  "area": "Greenpoint, Brooklyn",
+  "areaZh": "布魯克林綠點",
+  "address": "128 Greenpoint Ave., Brooklyn, NY, 11222",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineZh": "墨西哥菜",
+  "rating": 4.5,
+  "reviews": 2543,
+  "dinner": 40,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains about $26–$59",
+  "sourceType": "site",
+  "source": "https://www.oxomoconyc.com/",
+  "website": "https://www.oxomoconyc.com/",
+  "lat": 40.730022,
+  "lng": -73.955504,
+  "placeId": "ChIJ__-z7kBZwokRezHqB39zBLI"
+}

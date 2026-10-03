@@ -1,0 +1,22 @@
+{
+  "name": "Frevo",
+  "city": "new-york",
+  "area": "Greenwich Village",
+  "areaZh": "格林威治村",
+  "address": "48 W. 8th St., New York, NY, 10011",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.8,
+  "reviews": 891,
+  "dinner": 255,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "wine": 135,
+  "sourceType": "site",
+  "source": "https://frevonyc.com/restaurant/",
+  "website": "https://frevonyc.com/",
+  "lat": 40.733199,
+  "lng": -73.998822,
+  "placeId": "ChIJL6-NTmBZwokRGacx3GWq3D0"
+}

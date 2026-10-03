@@ -1,0 +1,7 @@
+{
+  "id": "new-york",
+  "type": "city",
+  "parent": "new-york-state",
+  "name": "New York",
+  "nameZh": "紐約"
+}

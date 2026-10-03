@@ -1,0 +1,21 @@
+{
+  "name": "Crown Shy",
+  "city": "new-york",
+  "area": "Financial District",
+  "areaZh": "金融區",
+  "address": "70 Pine St., New York, NY, 10005",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.5,
+  "reviews": 1966,
+  "dinner": 45,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains about $32–$52",
+  "sourceType": "site",
+  "source": "https://www.crownshy.nyc/menu/dinner/",
+  "website": "https://www.crownshy.nyc/",
+  "lat": 40.706707,
+  "lng": -74.008721,
+  "placeId": "ChIJ__9LNBZawokREnkOiVx7ydc"
+}

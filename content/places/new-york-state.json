@@ -1,0 +1,8 @@
+{
+  "id": "new-york-state",
+  "type": "region",
+  "parent": "usa",
+  "name": "New York State",
+  "nameZh": "紐約州",
+  "inSentence": "New York State"
+}

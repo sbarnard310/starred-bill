@@ -1,0 +1,21 @@
+{
+  "name": "The Four Horsemen",
+  "city": "new-york",
+  "area": "Williamsburg, Brooklyn",
+  "areaZh": "布魯克林威廉斯堡",
+  "address": "295 Grand St., Brooklyn, NY, 11211",
+  "stars": 1,
+  "cuisine": "American",
+  "cuisineZh": "美國菜",
+  "rating": 4.6,
+  "reviews": 1173,
+  "dinner": 30,
+  "dinnerType": "main",
+  "dinnerNote": "Small plates; larger plates about $20–$30",
+  "sourceType": "press",
+  "source": "https://www.yelp.com/menu/the-four-horsemen-williamsburg/sample-dinner-menu",
+  "website": "https://www.fourhorsemenbk.com/",
+  "lat": 40.712926,
+  "lng": -73.9575,
+  "placeId": "ChIJbTCMl19ZwokRUohF137p9cQ"
+}

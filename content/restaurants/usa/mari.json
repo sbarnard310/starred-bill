@@ -1,0 +1,21 @@
+{
+  "name": "Mari",
+  "city": "new-york",
+  "area": "Hell's Kitchen",
+  "areaZh": "地獄廚房",
+  "address": "679 Ninth Ave., New York, NY, 10036",
+  "stars": 1,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.5,
+  "reviews": 512,
+  "dinner": 145,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 13 courses",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/new-york/reviews/mari",
+  "website": "https://marinyc.com/",
+  "lat": 40.761559,
+  "lng": -73.990465,
+  "placeId": "ChIJk_HUw2dZwokR_zqBwmFDHgo"
+}

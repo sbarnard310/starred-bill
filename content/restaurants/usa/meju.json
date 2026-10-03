@@ -1,0 +1,21 @@
+{
+  "name": "Meju",
+  "city": "new-york",
+  "area": "Long Island City, Queens",
+  "areaZh": "皇后區長島市",
+  "address": "5-28 49th Ave., Queens, NY, 11101",
+  "stars": 1,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.7,
+  "reviews": 90,
+  "dinner": 235,
+  "dinnerType": "menu",
+  "dinnerNote": "Chef's counter tasting menu",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/mejunyc/search/",
+  "website": "https://mejunyc.com/",
+  "lat": 40.74366,
+  "lng": -73.955517,
+  "placeId": "ChIJ6alY3R1ZwokRQXUSqpo8OIM"
+}

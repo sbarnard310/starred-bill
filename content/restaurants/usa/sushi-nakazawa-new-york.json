@@ -1,0 +1,21 @@
+{
+  "name": "Sushi Nakazawa New York",
+  "city": "new-york",
+  "area": "West Village",
+  "areaZh": "西村",
+  "address": "23 Commerce St., New York, NY, 10014",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.5,
+  "reviews": 1979,
+  "dinner": 190,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase at the counter, 21 courses (dining room $160)",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/new-york/reviews/sushi-nakazawa",
+  "website": "https://www.sushinakazawa.com/new-york",
+  "lat": 40.731716,
+  "lng": -74.00451,
+  "placeId": "ChIJsw80F5NZwokRcDtxajLLOeA"
+}

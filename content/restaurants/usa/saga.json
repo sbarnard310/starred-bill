@@ -1,0 +1,21 @@
+{
+  "name": "Saga",
+  "city": "new-york",
+  "area": "Financial District",
+  "areaZh": "金融區",
+  "address": "70 Pine St., New York, NY, 10005",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.4,
+  "reviews": 540,
+  "dinner": 315,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 10 courses (6 courses $215)",
+  "sourceType": "site",
+  "source": "https://www.saga-nyc.com/menus",
+  "website": "https://www.saga-nyc.com/",
+  "lat": 40.706144,
+  "lng": -74.007852,
+  "placeId": "ChIJZZlClEZbwokRZj-0-fE25tk"
+}

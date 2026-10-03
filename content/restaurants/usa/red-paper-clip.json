@@ -1,0 +1,18 @@
+{
+  "name": "Red Paper Clip",
+  "city": "new-york",
+  "area": "West Village",
+  "areaZh": "西村",
+  "stars": 0,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2025-11",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in November 2025",
+  "statusNoteZh": "於 2025 年 11 月失去星級"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Cote",
+  "city": "new-york",
+  "area": "Flatiron",
+  "areaZh": "熨斗區",
+  "address": "16 W. 22nd St., New York, NY, 10010",
+  "stars": 1,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.6,
+  "reviews": 4346,
+  "dinner": 82,
+  "dinnerType": "menu",
+  "dinnerNote": "Butcher's Feast (steak omakase $225)",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/new-york/reviews/cote",
+  "website": "https://www.cotekoreansteakhouse.com/",
+  "lat": 40.741423,
+  "lng": -73.991463,
+  "placeId": "ChIJQ1R3hKNZwokRQM4wbIrc00o"
+}

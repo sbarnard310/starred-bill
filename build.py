@@ -248,14 +248,19 @@ def explore_links(p):
         if country and len(cities) > 1:
             rows.append(dict({k.replace("name", "country"): v for k, v in names(country).items()}, label="exploreCities",
                              items=[link(c, p["id"]) for c in by_size(cities)]))
-    else:
-        if p["type"] == "group":
-            inside = [places[i] for i in p["includes"] if i in places and starred_n[i]]
-        else:
-            inside = [q for q in pages if q["id"] != p["id"] and q["type"] != "group" and p["id"] in chain(q["id"])]
-            inside = [q for q in inside if q["type"] == "region"] + [q for q in inside if q["type"] == "city"]
+    elif p["type"] == "group":
+        inside = [places[i] for i in p["includes"] if i in places and starred_n[i]]
         if inside:
-            rows.append({"label": "explore", "items": [link(q) for q in (inside if p["type"] == "group" else by_size(inside))]})
+            rows.append({"label": "explore", "items": [link(q) for q in inside]})
+    else:
+        # The regions directly inside (e.g. England's counties), then every city further down (e.g. London, York).
+        regions = by_size(q for q in pages if q["type"] == "region" and q.get("parent") == p["id"])
+        cities = by_size(q for q in pages if q["type"] == "city" and p["id"] in chain(q["id"])[1:])
+        if regions:
+            rows.append({"label": "explore", "items": [link(q) for q in regions]})
+        if cities:
+            rows.append(dict({k.replace("name", "country"): v for k, v in names(p).items()}, label="exploreCities" if regions else "explore",
+                             items=[link(q) for q in cities]))
     groups = [g for g in pages if g["type"] == "group" and g["id"] != p["id"] and set(g["includes"]) & set(chain(p["id"]) if p["type"] != "group" else [])]
     if groups:
         rows.append({"label": "alsoIn", "items": [link(g) for g in groups]})
@@ -430,8 +435,9 @@ def build_home():
     for c in by_size(p for p in pages if p["type"] == "country"):
         mine = [r for r in starred if r["country"] == c["id"]]
         menus = sorted((r for r in mine if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
-        inside = [q for q in pages if q["type"] in ("region", "city") and country_of(q["id"]) == c["id"]]
-        cities = by_size(q for q in inside if q["type"] == "region") + by_size(q for q in inside if q["type"] == "city")
+        # The regions directly inside the country (e.g. England, Scotland), then its cities.
+        cities = by_size(q for q in pages if q["type"] == "region" and q.get("parent") == c["id"]) + \
+            by_size(q for q in pages if q["type"] == "city" and country_of(q["id"]) == c["id"])
         countries.append({
             **names(c), "id": c["id"], "path": c["path"], "n": starred_n[c["id"]],
             "from": {"price": menus[0]["dinner"], "cur": menus[0]["cur"], "name": menus[0]["name"], "nameZh": menus[0].get("nameZh", "")} if menus else None,

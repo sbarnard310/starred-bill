@@ -296,7 +296,7 @@ function observeThumbs() {
   document.querySelectorAll(".thumb[data-pid]").forEach((el) => thumbObserver.observe(el));
 }
 
-const mapState = { map: null, info: null, markers: new Map() };
+const mapState = { map: null, info: null, markers: new Map(), near: null };
 function infoHtml(r) {
   const price = priceOf(r) == null ? t(L() && r.noLunch ? "noLunch" : "infoNoPrice") : money(priceOf(r), r) + " " + (typeOf(r) === "main" ? t("perMain") : typeOf(r) === "spend" ? t("typicalSpend") : t(L() ? "infoLunch" : "infoDinner"));
   return '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' +
@@ -325,6 +325,11 @@ async function initMap() {
       m.addListener("click", () => { mapState.info.setContent(infoHtml(r)); mapState.info.open({ anchor: m, map: mapState.map }); });
       mapState.markers.set(r.id, m);
     });
+    // "Near me" looks among the pins the filters are showing; if none is close, it points to the world map instead.
+    mapState.near = addNearMe(mapState.map, () => placed.filter((r) => mapState.markers.get(r.id).getMap()).map((r) => ({
+      lat: r.lat, lng: r.lng, stars: r.stars, name: () => nameOf(r),
+      open: () => { const m = mapState.markers.get(r.id); mapState.map.setCenter(m.getPosition()); if (mapState.map.getZoom() < 15) mapState.map.setZoom(15); google.maps.event.trigger(m, "click"); }
+    })), { radius: 30000, far: withLang("/") + "&near=1#map" });
     updateMap(true);
   } catch (e) {
     $("mapCanvas").innerHTML = '<p class="map-wait">' + t("mapError") + "</p>";
@@ -354,6 +359,17 @@ function startMapWhenNear() {
   window.addEventListener("scroll", check, { passive: true });
   if (location.hash === "#map") start();
   check();
+}
+// The floating "Map" button: shows once you're into the list, until the map itself is on screen.
+function wireJumpToMap() {
+  const btn = $("jumpMap");
+  if ($("map").hidden) return;
+  const sync = () => { btn.hidden = !(window.scrollY > window.innerHeight * 0.6 && $("map").getBoundingClientRect().top > window.innerHeight * 0.8); };
+  window.addEventListener("scroll", sync, { passive: true });
+  window.addEventListener("resize", sync);
+  btn.addEventListener("click", (e) => { e.preventDefault(); btn.hidden = true; $("map").scrollIntoView({ block: "start" }); history.replaceState(null, "", location.pathname + location.search + "#map"); });
+  btn.setAttribute("aria-label", t("jumpMapAria"));
+  sync();
 }
 
 // ---------- Exchange rates ----------
@@ -424,6 +440,8 @@ document.addEventListener("click", (e) => {
     setLang(el.dataset.lang);
     renderAll();
     if (mapState.map) { mapState.markers.forEach((m, id) => m.setTitle(nameOf(RESTAURANTS.find((r) => r.id === id)))); }
+    if (mapState.near) mapState.near.relabel();
+    $("jumpMap").setAttribute("aria-label", t("jumpMapAria"));
   } else if (el.dataset.meal) {
     state.meal = el.dataset.meal; save(); renderAll();
   } else if (el.dataset.currency) {
@@ -467,4 +485,5 @@ $("q").value = state.query;
 renderAll();
 if (state.query) $("compare").scrollIntoView();
 startMapWhenNear();
+wireJumpToMap();
 loadRates();

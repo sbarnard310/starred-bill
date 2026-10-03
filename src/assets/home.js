@@ -123,8 +123,22 @@ async function initWorldMap() {
       });
     }
     updateWorldMap(true);
+    // "Near me" waits for the full world list, so it can include restaurants without prices yet.
+    world.near = addNearMe(world.map, () => (world.loading || Promise.resolve()).catch(() => {}).then(() =>
+      world.markers.filter((m) => !homeState.stars || m.stars === homeState.stars).map((m) => ({
+        lat: m.getPosition().lat(), lng: m.getPosition().lng(), stars: m.stars, name: () => m.r ? nameOf(m.r) : m.w.name,
+        open: () => { world.map.setCenter(m.getPosition()); if (world.map.getZoom() < 16) world.map.setZoom(16); openCard(m, true); }
+      }))));
+    // Arriving from a destination page's "see what's near you" link.
+    if (params.get("near") === "1") {
+      params.delete("near");
+      history.replaceState(null, "", location.pathname + (params.toString() ? "?" + params : "") + location.hash);
+      $("map").scrollIntoView({ block: "start", behavior: "instant" });
+      world.near.locate();
+    }
     if (DATA.worldUrl) {
-      const data = await fetch(DATA.worldUrl).then((res) => res.json());
+      world.loading = fetch(DATA.worldUrl).then((res) => res.json());
+      const data = await world.loading;
       const icons = { 1: pinIcon(1, true), 2: pinIcon(2, true), 3: pinIcon(3, true) };
       world.markers = world.markers.concat(data.r.map(([name, stars, lat, lng, cuisine, where, path]) => {
         const w = { name, stars, cuisine, where, path };
@@ -239,7 +253,8 @@ document.addEventListener("click", (e) => {
   if (el.dataset.lang) {
     setLang(el.dataset.lang);
     renderAll();
-    world.markers.forEach((m) => m.setTitle(nameOf(m.r)));
+    world.markers.forEach((m) => { if (m.r) m.setTitle(nameOf(m.r)); });
+    if (world.near) world.near.relabel();
   } else if (el.dataset.mapstars) {
     homeState.stars = Number(el.dataset.mapstars); renderMapStars(); updateWorldMap(true);
   } else if (el.dataset.unwish) {

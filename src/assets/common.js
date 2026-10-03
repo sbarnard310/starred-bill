@@ -55,6 +55,12 @@ const I18N = {
     mapError: "The map couldn't load right now. The pin next to each restaurant in the list still opens it in Google Maps.",
     legendAria: "What the pin colours mean", colours: ["Purple", "Amber", "Green"], legendItem: "{c} = {n} Michelin star|{c} = {n} Michelin stars",
     mapShowing: "Showing {n} restaurant on the map|Showing {n} restaurants on the map", mapNone: "No restaurants match the current filters",
+    nearMe: "Near me", nearMeAria: "Show starred restaurants near my location", nearFinding: "Finding you…", youAreHere: "You are here",
+    nearTitle: "Closest to you", nearAway: "{d} away", nearWorld: "See starred restaurants near you on the world map",
+    nearNone: "None of the restaurants on this page is near you. The closest is {name}, {d} away.",
+    nearDenied: "Location access is off. Allow it for this site in your browser settings, then try again.",
+    nearFailed: "Couldn't find your location just now. Please try again.", nearUnsupported: "This browser can't share your location.",
+    jumpMap: "Map", jumpMapAria: "Jump to the map",
     infoDinner: "dinner", infoWine: "wine", infoGoogle: "on Google", infoOpen: "Open in Google Maps", infoNoPrice: "Price not listed",
     starsTitle: "How much each extra star adds",
     starsText: "Average menu price for the meal chosen above, grouped by Michelin stars. À la carte restaurants are counted but left out of the averages and ranges.",
@@ -147,6 +153,12 @@ const I18N = {
     mapError: "地圖暫時無法載入。清單中每家餐廳旁的地標圖示仍可在 Google 地圖開啟。",
     legendAria: "地標顏色說明", colours: ["紫色", "琥珀色", "綠色"], legendItem: "{c} = 米其林 {n} 星",
     mapShowing: "地圖上顯示 {n} 家餐廳", mapNone: "沒有符合目前篩選條件的餐廳",
+    nearMe: "我附近", nearMeAria: "顯示我附近的星級餐廳", nearFinding: "正在定位…", youAreHere: "你的位置",
+    nearTitle: "離你最近", nearAway: "距離 {d}", nearWorld: "在世界地圖上查看你附近的星級餐廳",
+    nearNone: "此頁沒有餐廳在你附近，最近的是{name}，距離 {d}。",
+    nearDenied: "位置存取已關閉。請在瀏覽器設定中允許本網站使用你的位置，然後再試一次。",
+    nearFailed: "暫時無法取得你的位置，請再試一次。", nearUnsupported: "此瀏覽器無法分享你的位置。",
+    jumpMap: "地圖", jumpMapAria: "跳到地圖",
     infoDinner: "晚餐", infoWine: "餐酒搭配", infoGoogle: "Google 評分", infoOpen: "在 Google 地圖開啟", infoNoPrice: "價格未公布",
     starsTitle: "每多一顆星，要多花多少？",
     starsText: "依上方所選餐期、以米其林星級分組的套餐平均價格。單點餐廳計入家數，但不納入平均與價格區間。",
@@ -237,6 +249,12 @@ const I18N = {
     mapError: "La carte n'a pas pu se charger. Le repère à côté de chaque restaurant de la liste l'ouvre toujours dans Google Maps.",
     legendAria: "Signification des couleurs des repères", colours: ["Violet", "Ambre", "Vert"], legendItem: "{c} = {n} étoile Michelin|{c} = {n} étoiles Michelin",
     mapShowing: "{n} restaurant sur la carte|{n} restaurants sur la carte", mapNone: "Aucun restaurant ne correspond aux filtres",
+    nearMe: "Autour de moi", nearMeAria: "Afficher les restaurants étoilés autour de moi", nearFinding: "Localisation…", youAreHere: "Vous êtes ici",
+    nearTitle: "Les plus proches", nearAway: "à {d}", nearWorld: "Voir les restaurants étoilés autour de vous sur la carte du monde",
+    nearNone: "Aucun restaurant de cette page n'est près de vous. Le plus proche est {name}, à {d}.",
+    nearDenied: "L'accès à votre position est désactivé. Autorisez-le pour ce site dans les réglages du navigateur, puis réessayez.",
+    nearFailed: "Impossible de vous localiser pour le moment. Réessayez.", nearUnsupported: "Ce navigateur ne peut pas partager votre position.",
+    jumpMap: "Carte", jumpMapAria: "Aller à la carte",
     infoDinner: "dîner", infoWine: "vins", infoGoogle: "sur Google", infoOpen: "Ouvrir dans Google Maps", infoNoPrice: "Prix non communiqué",
     starsTitle: "Ce que coûte chaque étoile de plus",
     starsText: "Prix moyen du menu pour le repas choisi plus haut, par nombre d'étoiles. Les restaurants à la carte sont comptés mais exclus des moyennes et des fourchettes.",
@@ -308,6 +326,12 @@ const I18N = {
     mapError: "地圖暫時載入唔到。清單入面每間餐廳旁邊嘅標記一樣可以喺 Google 地圖打開。",
     legendAria: "標記顏色代表咩", colours: ["紫色", "琥珀色", "綠色"], legendItem: "{c} = 米芝蓮 {n} 星",
     mapShowing: "地圖上顯示緊 {n} 間餐廳", mapNone: "冇餐廳符合而家嘅篩選條件",
+    nearMe: "我附近", nearMeAria: "顯示我附近嘅星級餐廳", nearFinding: "搵緊你喺邊…", youAreHere: "你喺度",
+    nearTitle: "離你最近", nearAway: "距離 {d}", nearWorld: "喺世界地圖睇你附近嘅星級餐廳",
+    nearNone: "呢版冇餐廳喺你附近，最近係{name}，距離 {d}。",
+    nearDenied: "位置權限已經關咗。請喺瀏覽器設定允許呢個網站用你嘅位置，再試多次。",
+    nearFailed: "暫時搵唔到你嘅位置，請再試多次。", nearUnsupported: "呢個瀏覽器分享唔到你嘅位置。",
+    jumpMap: "地圖", jumpMapAria: "跳去地圖",
     infoDinner: "晚市", infoWine: "配酒", infoGoogle: "Google 評分", infoOpen: "喺 Google 地圖打開", infoNoPrice: "未有公布價錢",
     starsTitle: "每多一粒星，要多俾幾多錢？",
     starsText: "按上面所揀餐期、以米芝蓮星級分組嘅套餐平均價錢。單點餐廳會計入間數，但唔計入平均同價錢範圍。",
@@ -489,6 +513,82 @@ function renderLegend(list) {
   $("mapLegend").setAttribute("aria-label", t("legendAria"));
   $("mapLegend").innerHTML = [1, 2, 3].map((s) =>
     '<li><span class="pin-num" style="--pin:' + MAP_PIN_COLOURS[s] + '" aria-hidden="true">' + s + "</span><span>" + esc(t("legendItem", { c: colours[s - 1], n: s })) + '</span><span class="count">' + list.filter((r) => r.stars === s).length + "</span></li>").join("");
+}
+
+// ---------- Near me ----------
+// Distances in miles for UK and US English browsers, otherwise in kilometres.
+const useMiles = () => LANG === "en" && /^en-(GB|US)\b/i.test(navigator.language || "");
+function distanceText(m) {
+  const v = useMiles() ? m / 1609.344 : m / 1000;
+  return (v < 0.1 ? "< 0.1" : v < 10 ? v.toFixed(1) : Math.round(v).toLocaleString(locale())) + (useMiles() ? " mi" : " km");
+}
+function metresBetween(a, b) {
+  const r = (x) => x * Math.PI / 180;
+  const h = Math.sin(r(b.lat - a.lat) / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(r(b.lng - a.lng) / 2) ** 2;
+  return 12742000 * Math.asin(Math.sqrt(h));
+}
+// Adds a "Near me" button to a map. It finds the visitor, marks them with a blue dot, frames the closest pins
+// and lists them under the map in #nearBox.
+//   points(): the pins that can be shown (or a promise of them), each { lat, lng, stars, name: () => text, open: () => {} }
+//   radius:   how close counts as near, in metres; far: a link for when nothing is that close
+function addNearMe(map, points, { radius = Infinity, far = null } = {}) {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "near-btn";
+  const box = $("nearBox");
+  let you = null, last = null;
+  const label = (busy) => {
+    btn.innerHTML = '<svg aria-hidden="true"><use href="#locate"/></svg><span>' + esc(t(busy ? "nearFinding" : "nearMe")) + "</span>";
+    btn.setAttribute("aria-label", t("nearMeAria"));
+    btn.disabled = !!busy;
+  };
+  const render = () => {
+    if (!last) { box.hidden = true; return; }
+    if (last.error) { box.innerHTML = '<p class="near-msg">' + esc(t(last.error)) + "</p>"; box.hidden = false; return; }
+    const { near, closest } = last;
+    box.innerHTML = near.length
+      ? '<h3 class="near-title">' + esc(t("nearTitle")) + '</h3><ol class="near-list">' + near.map((x, i) =>
+        '<li><button type="button" data-near="' + i + '"><span class="near-name">' + esc(x.name()) + " " + rosettes(x.stars) + '</span><span class="near-d">' +
+        esc(t("nearAway", { d: distanceText(x.d) })) + "</span></button></li>").join("") + "</ol>"
+      : '<p class="near-msg">' + esc(closest ? t("nearNone", { name: closest.name(), d: distanceText(closest.d) }) : t("mapNone")) +
+        (far ? ' <a href="' + esc(far) + '">' + esc(t("nearWorld")) + " →</a>" : "") + "</p>";
+    box.hidden = false;
+  };
+  box.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-near]");
+    if (b && last && last.near) { last.near[Number(b.dataset.near)].open(); map.getDiv().scrollIntoView({ block: "center" }); }
+  });
+  btn.addEventListener("click", () => {
+    if (!navigator.geolocation) { last = { error: "nearUnsupported" }; render(); return; }
+    label(true);
+    navigator.geolocation.getCurrentPosition(async (pos) => {
+      const here = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      if (!you) {
+        const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26'><circle cx='13' cy='13' r='12' fill='#1A73E8' fill-opacity='.2'/><circle cx='13' cy='13' r='7' fill='#1A73E8' stroke='#ffffff' stroke-width='3'/></svg>";
+        you = new google.maps.Marker({ map, zIndex: 5000, clickable: false, icon: { url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg),
+          scaledSize: new google.maps.Size(26, 26), anchor: new google.maps.Point(13, 13) } });
+      }
+      you.setTitle(t("youAreHere"));
+      you.setPosition(here);
+      const all = (await points()).map((x) => Object.assign({ d: metresBetween(here, x) }, x)).sort((a, b) => a.d - b.d);
+      const near = all.filter((x) => x.d <= radius).slice(0, 5);
+      if (near.length) {
+        const b = new google.maps.LatLngBounds(here);
+        near.slice(0, 3).forEach((x) => b.extend(x));
+        map.fitBounds(b, 60);
+        google.maps.event.addListenerOnce(map, "idle", () => { if (map.getZoom() > 15) map.setZoom(15); });
+      }
+      last = { near, closest: all[0] };
+      label(); render();
+    }, (err) => {
+      last = { error: err.code === 1 ? "nearDenied" : "nearFailed" };
+      label(); render();
+    }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 });
+  });
+  label();
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(btn);
+  // relabel() after a language change; locate() to start straight away.
+  return { relabel: () => { if (!btn.disabled) label(); render(); }, locate: () => btn.click() };
 }
 
 // ---------- Install as an app ----------

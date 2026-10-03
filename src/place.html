@@ -133,6 +133,7 @@
         <ul class="map-legend" id="mapLegend"></ul>
         <span class="map-status" id="mapStatus" aria-live="polite"></span>
       </div>
+      <div class="near" id="nearBox" hidden aria-live="polite"></div>
     </div>
   </section>
 
@@ -220,6 +221,7 @@
 </dialog>
 
 <div class="toast" id="toast" hidden role="status"><span id="toastMsg"></span><button type="button" id="undo" data-i18n="undo"></button></div>
+<a class="jump-map" id="jumpMap" href="#map" hidden><svg aria-hidden="true"><use href="#icon-map"/></svg><span data-i18n="jumpMap"></span></a>
 
 <script id="page-data" type="application/json">{{data}}</script>
 <script src="{{asset:common.js}}"></script>

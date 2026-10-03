@@ -46,3 +46,6 @@ It's a browser key in `src/assets/common.js`, restricted to these addresses:
 - `http://localhost:8799/*`
 
 It's used for the maps (Maps JavaScript API) and restaurant photos (Places API (New)). The Google Cloud project is on the free trial, so quotas can't be capped yet. If it's upgraded, set daily caps.
+
+## Planned work
+- Free user accounts (wishlist on every device, a "been there" checklist, alerts): not built yet. The plan, open decisions and the owner's setup steps are in `docs/accounts-plan.md`.

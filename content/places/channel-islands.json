@@ -1,0 +1,8 @@
+{
+  "id": "channel-islands",
+  "type": "region",
+  "parent": "uk",
+  "name": "Channel Islands",
+  "nameZh": "海峽群島",
+  "inSentence": "the Channel Islands"
+}

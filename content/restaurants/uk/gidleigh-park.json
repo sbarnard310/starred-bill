@@ -1,0 +1,21 @@
+{
+  "name": "Gidleigh Park",
+  "city": "england",
+  "area": "Chagford, Devon",
+  "address": "Chagford, TQ13 8HH",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 516,
+  "dinner": 165,
+  "dinnerType": "menu",
+  "dinnerNote": "Menu in 7 courses (5 courses £135), Tue–Sat",
+  "sourceType": "site",
+  "source": "https://www.gidleigh.co.uk/dining-drinking/restaurant",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.gidleigh.co.uk/dining-drinking/restaurant",
+  "lat": 50.676848,
+  "lng": -3.875037,
+  "placeId": "ChIJu2q3Tj1UbEgRxlbj-Se9ROc"
+}

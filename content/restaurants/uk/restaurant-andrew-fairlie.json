@@ -1,0 +1,20 @@
+{
+  "name": "Restaurant Andrew Fairlie",
+  "city": "scotland",
+  "area": "Auchterarder, Perthshire",
+  "address": "The Gleneagles Hotel, Auchterarder, PH3 1NF",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 356,
+  "dinner": 215,
+  "dinnerType": "menu",
+  "dinnerNote": "Menu Dégustation, 7 courses",
+  "wine": 110,
+  "sourceType": "site",
+  "source": "https://www.andrewfairlie.co.uk/",
+  "website": "https://www.andrewfairlie.co.uk/",
+  "lat": 56.283232,
+  "lng": -3.751734,
+  "placeId": "ChIJz-HNiJqCiEgRLMflx3KO4hM"
+}

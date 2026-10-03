@@ -1,0 +1,22 @@
+{
+  "name": "Lady Helen",
+  "city": "ireland",
+  "area": "Thomastown, Co. Kilkenny",
+  "address": "The Manor House, Mount Juliet Estate, Thomastown, R95 E096",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 58,
+  "dinner": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "wine": 95,
+  "sourceType": "site",
+  "source": "https://www.ladyhelen.ie/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.ladyhelen.ie/",
+  "lat": 52.529243,
+  "lng": -7.187806,
+  "placeId": "ChIJVVVVVYAzXUgRnW0gx-gY6_M"
+}

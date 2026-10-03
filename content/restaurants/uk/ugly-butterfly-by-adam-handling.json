@@ -1,0 +1,23 @@
+{
+  "name": "Ugly Butterfly by Adam Handling",
+  "city": "england",
+  "area": "Newquay, Cornwall",
+  "address": "The Headland, Headland Road, Fistral Beach, Newquay, TR7 1EW",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteZh": "首次獲得一星",
+  "changeDate": "2026-02",
+  "rating": 4.8,
+  "reviews": 379,
+  "dinner": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 10 courses",
+  "sourceType": "site",
+  "source": "https://www.uglybutterfly.co.uk/",
+  "website": "https://www.uglybutterfly.co.uk/",
+  "lat": 50.420336,
+  "lng": -5.097161,
+  "placeId": "ChIJn_Zm_ZjdakgRZlegtSF8Q_s"
+}

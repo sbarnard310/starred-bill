@@ -1,0 +1,19 @@
+{
+  "name": "Cedar Tree by Hrishikesh Desai",
+  "city": "england",
+  "area": "Brampton, Cumbria",
+  "address": "Farlam Hall Hotel, Hallbankgate, Brampton, CA8 2NG",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 10,
+  "dinner": 75,
+  "dinnerType": "menu",
+  "dinnerNote": "Three courses from the à la carte",
+  "sourceType": "site",
+  "source": "https://www.farlamhall.com/",
+  "website": "https://www.farlamhall.com/",
+  "lat": 54.934134,
+  "lng": -2.672856,
+  "placeId": "ChIJ35XxvuQJfUgRady5YQBai08"
+}

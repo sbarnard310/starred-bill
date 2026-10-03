@@ -1,0 +1,22 @@
+{
+  "name": "Terre",
+  "city": "ireland",
+  "area": "Castlemartyr, Co. Cork",
+  "address": "Manor House, Castlemartyr Resort, Castlemartyr, P25 X300",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 72,
+  "dinner": 220,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner tasting menu",
+  "wine": 132,
+  "sourceType": "site",
+  "source": "https://terre.ie/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://terre.ie/",
+  "lat": 51.911752,
+  "lng": -8.059658,
+  "placeId": "ChIJj58j6sV7Q0gRMSlUfxS_a9k"
+}

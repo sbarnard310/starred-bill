@@ -16,7 +16,8 @@ const state = { meal: "dinner", activeCat: "All", activeStars: 0, wishOnly: fals
 const cityNameOf = (r) => pick(r, "cityName");
 const areaOf = (r) => {
   const a = pick(r, "area");
-  if (!PAGE.showCity) return a;
+  // Restaurants listed under a region or country (e.g. England) already name their town in the area.
+  if (!PAGE.showCity || (r.cityType && r.cityType !== "city" && a)) return a;
   const c = cityNameOf(r);
   return !a ? c : (a.includes(c) || a.includes(r.cityName)) ? a : a + ", " + c;
 };

@@ -1,0 +1,19 @@
+{
+  "name": "House",
+  "city": "ireland",
+  "area": "Ardmore, Co. Waterford",
+  "address": "Cliff House Hotel, Middle Road, Ardmore, P36 AD89",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 1619,
+  "dinner": 149,
+  "dinnerType": "menu",
+  "dinnerNote": "Four-course menu (3 courses €129)",
+  "sourceType": "site",
+  "source": "https://cliffhousehotel.ie/house-restaurant/",
+  "website": "https://cliffhousehotel.ie/house-restaurant/",
+  "lat": 51.948608,
+  "lng": -7.715085,
+  "placeId": "ChIJiaHPag4SQ0gRPUUXBkU8krw"
+}

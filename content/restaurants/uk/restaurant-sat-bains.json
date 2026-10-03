@@ -1,0 +1,21 @@
+{
+  "name": "Restaurant Sat Bains",
+  "city": "england",
+  "area": "Nottingham",
+  "address": "Lenton Lane, Nottingham, NG7 2SA",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 700,
+  "dinner": 289,
+  "dinnerType": "menu",
+  "dinnerNote": "Overture menu (Prelude £229, Interlude £149)",
+  "sourceType": "site",
+  "source": "https://www.restaurantsatbains.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.restaurantsatbains.com/",
+  "lat": 52.925107,
+  "lng": -1.167604,
+  "placeId": "ChIJAf60hkPCeUgRPlidw4M0eWo"
+}

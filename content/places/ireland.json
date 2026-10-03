@@ -1,0 +1,15 @@
+{
+  "id": "ireland",
+  "type": "country",
+  "name": "Ireland",
+  "nameZh": "愛爾蘭",
+  "currency": "EUR",
+  "intro": "Prices are in euros, with a switch to see them in pounds or US dollars. Prices checked October 2026, per person before service.",
+  "introZh": "價格以歐元標示，也可切換為英鎊或美元。價格於 2026 年 10 月查核，以每人計、未含服務費。",
+  "serviceText": "Every figure is for one guest and excludes service. Some Irish restaurants add a 10–12.5% service charge, often only for larger tables; otherwise a tip of around 10–15% is usual. Supplements such as caviar or truffle courses are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格，不含服務費。部分愛爾蘭餐廳會加收 10–12.5% 服務費（多半僅限人數較多的桌次），否則一般給約 10–15% 小費。不含魚子醬或松露等加價項目。以其他幣別顯示的價格依當日匯率換算，僅供參考。",
+  "sourcesText": "Dinner is the main tasting menu where there is one, and wine is the cheapest pairing for it. We take prices from each restaurant's own website where they're published, otherwise from recent reviews and booking sites. À la carte restaurants show a typical main course (“per main”) or typical spend per person. Lunch is the restaurant's set or tasting lunch menu, and the note says which days it's served.",
+  "sourcesTextZh": "晚餐以主要品嚐套餐為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網為準；否則參考近期評論與訂位網站。單點餐廳則顯示一般主菜價格（每道主菜）或人均消費。午餐以餐廳的午間套餐或品嚐套餐為準，說明欄會註明供應日。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars and addresses come from the Michelin Guide Great Britain & Ireland 2026, announced in Dublin on 9 February 2026. A green ▲ marks a restaurant that gained a star in the February 2025 or February 2026 guide; a red ▼ marks one that lost its star.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級與地址來自 2026 年 2 月 9 日於都柏林公布的《英國與愛爾蘭米其林指南 2026》。綠色 ▲ 代表在 2025 年 2 月或 2026 年 2 月的指南中獲得星級；紅色 ▼ 代表失去星級。"
+}

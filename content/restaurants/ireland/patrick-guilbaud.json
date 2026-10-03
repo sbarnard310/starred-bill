@@ -1,0 +1,19 @@
+{
+  "name": "Patrick Guilbaud",
+  "city": "ireland",
+  "area": "Dublin",
+  "address": "The Merrion Hotel, 21 Upper Merrion Street, Dublin, D02 KF79",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.6,
+  "reviews": 710,
+  "dinner": 275,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 8 courses",
+  "sourceType": "press",
+  "source": "https://www.andyhayler.com/restaurant/patrick-guilbaud",
+  "website": "https://www.restaurantpatrickguilbaud.ie/",
+  "lat": 53.338452,
+  "lng": -6.252997,
+  "placeId": "ChIJwWaz2ZkOZ0gRimydVTwK0xA"
+}

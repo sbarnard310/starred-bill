@@ -1,0 +1,21 @@
+{
+  "name": "Variety Jones",
+  "city": "ireland",
+  "area": "Dublin",
+  "address": "79 Thomas Street, Dublin, D08 F2RN",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 618,
+  "dinner": 110,
+  "dinnerType": "menu",
+  "dinnerNote": "Chef's menu, served family-style",
+  "sourceType": "press",
+  "source": "https://www.sevenrooms.com/explore/varietyjones/reservations/create/search/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.varietyjones.ie/",
+  "lat": 53.342957,
+  "lng": -6.276191,
+  "placeId": "ChIJF-JWLLwNZ0gRyLN1NTAEKT8"
+}

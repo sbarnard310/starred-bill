@@ -1,0 +1,23 @@
+{
+  "name": "Maré by Rafael Cagali",
+  "city": "england",
+  "area": "Hove, East Sussex",
+  "address": "60 Church Road, Hove, BN3 2FP",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteZh": "首次獲得一星",
+  "changeDate": "2026-02",
+  "rating": 4.5,
+  "reviews": 80,
+  "dinner": 125,
+  "dinnerType": "menu",
+  "dinnerNote": "Gourmet sharing menu (Taste of Maré £90)",
+  "sourceType": "site",
+  "source": "https://www.marehove.com/",
+  "website": "https://www.marehove.com/",
+  "lat": 50.827437,
+  "lng": -0.169397,
+  "placeId": "ChIJHYDmgXCFdUgRSNW_H5HV6qk"
+}

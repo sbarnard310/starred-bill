@@ -3,6 +3,8 @@
 const ALL = DATA.restaurants;
 const homeState = { stars: 0 };
 const cityLink = (r) => withLang(r.cityPath) + "&q=" + encodeURIComponent(r.name);
+// Where a restaurant is, e.g. "London", or "Aughton, England" for one listed under a region.
+const whereOf = (r) => r.town ? r.town + ", " + pick(r, "cityName") : pick(r, "cityName");
 const priceLabel = (r) => r.dinner == null ? t("infoNoPrice")
   : localMoney(r.dinner, r.cur) + " " + (r.dinnerType === "main" ? t("perMain") : r.dinnerType === "spend" ? t("typicalSpend") : t("infoDinner"));
 const starCountsOf = (list) => { const n = [0, 1, 2, 3].map((s) => list.filter((r) => r.stars === s).length); return t("starCounts").replace("{3}", n[3]).replace("{2}", n[2]).replace("{1}", n[1]); };
@@ -50,7 +52,7 @@ function renderWishlist() {
   renderWishCount();
   if (!list.length) { $("wishList").innerHTML = '<p class="empty-note">' + t("wishEmptyHome") + "</p>"; return; }
   $("wishList").innerHTML = '<ul class="wish-list">' + list.map((r) =>
-    '<li><a class="wl-name" href="' + cityLink(r) + '">' + esc(nameOf(r)) + '</a><span class="wl-meta">' + rosettes(r.stars) + " " + esc(cuisineOf(r)) + " · " + esc(pick(r, "cityName")) + "</span>" +
+    '<li><a class="wl-name" href="' + cityLink(r) + '">' + esc(nameOf(r)) + '</a><span class="wl-meta">' + rosettes(r.stars) + " " + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + "</span>" +
     '<span class="wl-price num">' + esc(r.dinner == null ? "–" : localMoney(r.dinner, r.cur)) + "</span>" +
     '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '" aria-label="' + esc(t("wishRemove", { name: nameOf(r) })) + '">' + t("wishRemoveShort") + "</button></li>").join("") + "</ul>";
 }
@@ -62,8 +64,8 @@ function renderResults() {
   const has = (...xs) => xs.filter(Boolean).join(" ").toLowerCase().includes(q);
   const places = DATA.places.filter((p) => has(p.name, p.nameZh)).slice(0, 4).map((p) =>
     '<li><a href="' + withLang(p.path) + '"><span>' + esc(pick(p, "name")) + '</span><span class="sub">' + esc(t("destRestaurants", { n: p.n })) + "</span></a></li>");
-  const rests = ALL.filter((r) => has(r.name, r.nameZh, r.cuisine, r.cuisineZh, CUISINE_ZH[r.cuisine], r.cityName, r.cityNameZh)).slice(0, 8 - places.length).map((r) =>
-    '<li><a href="' + cityLink(r) + '"><span>' + esc(nameOf(r)) + " " + rosettes(r.stars) + '</span><span class="sub">' + esc(cuisineOf(r)) + " · " + esc(pick(r, "cityName")) + " · " + esc(priceLabel(r)) + "</span></a></li>");
+  const rests = ALL.filter((r) => has(r.name, r.nameZh, r.cuisine, r.cuisineZh, CUISINE_ZH[r.cuisine], r.town, r.cityName, r.cityNameZh)).slice(0, 8 - places.length).map((r) =>
+    '<li><a href="' + cityLink(r) + '"><span>' + esc(nameOf(r)) + " " + rosettes(r.stars) + '</span><span class="sub">' + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + " · " + esc(priceLabel(r)) + "</span></a></li>");
   const items = places.concat(rests);
   $("results").innerHTML = items.length ? items.join("") : '<li class="none">' + esc(t("searchNone", { q: $("homeQ").value.trim() })) + "</li>";
   $("results").hidden = false;
@@ -77,7 +79,7 @@ const infoBox = (body) => '<div style="font-family:Figtree,system-ui,sans-serif;
 function infoHtml(r) {
   return infoBox('<div style="font-weight:700;font-size:15px">' + esc(nameOf(r)) + "</div>" +
     (altNameOf(r) ? '<div style="font-size:12px;color:#5A6E62">' + esc(altNameOf(r)) + "</div>" : "") +
-    '<div style="color:#B3862B;font-size:13px">' + "✱".repeat(r.stars) + ' <span style="color:#5A6E62">' + esc(cuisineOf(r)) + " · " + esc(pick(r, "cityName")) + "</span></div>" +
+    '<div style="color:#B3862B;font-size:13px">' + "✱".repeat(r.stars) + ' <span style="color:#5A6E62">' + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + "</span></div>" +
     '<div style="margin-top:6px;font-size:13px">' + esc(priceLabel(r)) + "</div>" +
     (r.rating ? '<div style="font-size:13px;color:#5A6E62">★ ' + r.rating.toFixed(1) + " " + t("infoGoogle") + "</div>" : "") +
     '<a href="' + cityLink(r) + '" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + esc(t("infoCompare", { place: pick(r, "cityName") })) + " →</a>");
@@ -110,8 +112,8 @@ async function initWorldMap() {
       const m = new Marker({ position: { lat: r.lat, lng: r.lng }, title: nameOf(r), icon: pinIcon(r.stars), zIndex: 100 + r.stars * 10 });
       m.addListener("click", () => openCard(m));
       m.r = r; m.stars = r.stars;
-      m.where = [r.cityName, (DATA.countries.find((c) => c.id === r.country) || {}).name].filter(Boolean).join(", ");
-      m.find = fold([r.name, r.nameZh, r.cityName, r.cityNameZh, m.where, r.cuisine].join(" "));
+      m.where = [r.town || r.cityName, (DATA.countries.find((c) => c.id === r.country) || {}).name].filter(Boolean).join(", ");
+      m.find = fold([r.name, r.nameZh, r.town, r.cityName, r.cityNameZh, m.where, r.cuisine].join(" "));
       return m;
     });
     if (window.markerClusterer) {

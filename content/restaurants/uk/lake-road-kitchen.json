@@ -1,0 +1,21 @@
+{
+  "name": "Lake Road Kitchen",
+  "city": "england",
+  "area": "Ambleside, Cumbria",
+  "address": "Sussex House, Lake Road, Ambleside, LA22 0AD",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 267,
+  "dinner": 135,
+  "dinnerType": "menu",
+  "dinnerNote": "Menu of 8 servings (5 servings £105)",
+  "sourceType": "site",
+  "source": "https://www.lakeroadkitchen.co.uk/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.lakeroadkitchen.co.uk/",
+  "lat": 54.430253,
+  "lng": -2.962223,
+  "placeId": "ChIJ0xWB4e_qfEgRwdEnJA-HQmw"
+}

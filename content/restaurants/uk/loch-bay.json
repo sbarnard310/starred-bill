@@ -1,0 +1,19 @@
+{
+  "name": "Loch Bay",
+  "city": "scotland",
+  "area": "Isle of Skye",
+  "address": "1-2 Macleods Terrace, Stein, Waternish, Isle of Skye, IV55 8GA",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.8,
+  "reviews": 287,
+  "dinner": 160,
+  "dinnerType": "menu",
+  "dinnerNote": "Set menu",
+  "sourceType": "site",
+  "source": "https://www.lochbay-restaurant.co.uk/",
+  "website": "https://www.lochbay-restaurant.co.uk/",
+  "lat": 57.51557,
+  "lng": -6.57252,
+  "placeId": "ChIJqXMVp3WzjUgR9CW9iFQyygg"
+}

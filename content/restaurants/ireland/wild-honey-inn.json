@@ -1,0 +1,16 @@
+{
+  "name": "Wild Honey Inn",
+  "city": "ireland",
+  "area": "Lisdoonvarna, Co. Clare",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2025-02",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed before the 2025 guide",
+  "statusNoteZh": "於 2025 年指南公布前歇業"
+}

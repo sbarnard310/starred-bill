@@ -1,0 +1,23 @@
+{
+  "name": "Ballyfin",
+  "city": "ireland",
+  "area": "Ballyfin, Co. Laois",
+  "address": "Ballyfin Demesne, Ballyfin, R32 X5X8",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteZh": "首次獲得一星",
+  "changeDate": "2025-02",
+  "rating": 4.8,
+  "reviews": 320,
+  "dinner": 165,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu (à la carte €125)",
+  "sourceType": "site",
+  "source": "https://www.ballyfin.com/dining/the-restaurant",
+  "website": "https://www.ballyfin.com/dining/the-restaurant",
+  "lat": 53.057612,
+  "lng": -7.431594,
+  "placeId": "ChIJ6WU0-CsMXUgRab9bbRMw2fo"
+}

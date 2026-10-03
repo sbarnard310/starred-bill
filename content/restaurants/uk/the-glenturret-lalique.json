@@ -1,0 +1,19 @@
+{
+  "name": "The Glenturret Lalique",
+  "city": "scotland",
+  "area": "Crieff, Perthshire",
+  "address": "The Glenturret Distillery, The Hosh, Torreglen, Crieff, PH7 4HA",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 113,
+  "dinner": 220,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, from; Wed–Sat",
+  "sourceType": "site",
+  "source": "https://www.theglenturretrestaurant.com/",
+  "website": "https://www.theglenturretrestaurant.com/",
+  "lat": 56.389026,
+  "lng": -3.852716,
+  "placeId": "ChIJ7UavnTybiEgRcEthDk2Kfvs"
+}

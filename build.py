@@ -124,12 +124,12 @@ def countries_of(p):
 
 
 def path_of(p):
+    """The page's web address: each place sits inside the ones above it, e.g. /uk/england/london/.
+    A collection sits inside its country when it has only one, otherwise at the top level."""
+    if p["type"] != "group":
+        return "/" + "/".join(reversed(chain(p["id"]))) + "/"
     cs = countries_of(p)
-    if p["type"] == "country":
-        return f"/{p['id']}/"
-    if len(cs) == 1:
-        return f"/{cs[0]}/{p['id']}/"
-    return f"/{p['id']}/"
+    return f"/{cs[0]}/{p['id']}/" if len(cs) == 1 else f"/{p['id']}/"
 
 
 def inherited(p, field):
@@ -149,6 +149,15 @@ for pid, p in places.items():
     if p["path"] in paths or p["path"].strip("/") in ("assets",):
         problem(f"places ({pid})", f"its address {p['path']} is already used by {paths.get(p['path'], 'the site')}")
     paths[p["path"]] = pid
+redirects = {}
+for pid, p in places.items():
+    for old in p.get("redirectFrom", []):
+        if not re.fullmatch(r"/([a-z0-9-]+/)+", old):
+            problem(f"places ({pid})", f"old address {old} must look like /uk/london/ (lower case, starting and ending with /)")
+        elif old in paths or old in redirects:
+            problem(f"places ({pid})", f"old address {old} is still in use by {paths.get(old) or redirects.get(old)}")
+        else:
+            redirects[old] = pid
 
 restaurants = []
 seen = {}
@@ -190,7 +199,7 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
         "cur": country["currency"] if country else "USD",
         "country": country["id"] if country else None,
         "cityName": city["name"], "cityNameZh": city.get("nameZh", ""),
-        "cityPath": city["path"],
+        "cityPath": city["path"], "cityType": city["type"],
         "_chain": chain(city["id"]),
     })
     restaurants.append(r)
@@ -421,17 +430,20 @@ def build_home():
     for c in by_size(p for p in pages if p["type"] == "country"):
         mine = [r for r in starred if r["country"] == c["id"]]
         menus = sorted((r for r in mine if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
-        cities = [q for q in pages if q["type"] == "city" and country_of(q["id"]) == c["id"]]
+        inside = [q for q in pages if q["type"] in ("region", "city") and country_of(q["id"]) == c["id"]]
+        cities = by_size(q for q in inside if q["type"] == "region") + by_size(q for q in inside if q["type"] == "city")
         countries.append({
             **names(c), "id": c["id"], "path": c["path"], "n": starred_n[c["id"]],
             "from": {"price": menus[0]["dinner"], "cur": menus[0]["cur"], "name": menus[0]["name"], "nameZh": menus[0].get("nameZh", "")} if menus else None,
-            "cities": [link(q) for q in by_size(cities)],
+            "cities": [dict(link(q), type=q["type"]) for q in cities],
         })
     groups = [link(g) for g in by_size(g for g in pages if g["type"] == "group")]
     keep = ("id", "name", "nameZh", "stars", "cuisine", "cuisineZh", "lat", "lng", "dinner", "dinnerType", "cur", "rating",
             "country", "cityName", "cityNameZh", "cityPath")
     data = {
-        "restaurants": [{k: r[k] for k in keep if r.get(k) is not None} for r in starred],
+        # Restaurants listed under a region or country rather than a city also carry their town, e.g. Aughton.
+        "restaurants": [dict({k: r[k] for k in keep if r.get(k) is not None}, **({"town": r["area"].split(", ")[0]} if r["cityType"] != "city" and r.get("area") else {}))
+                        for r in starred],
         "knownIds": [r["id"] for r in starred],
         "countries": countries, "groups": groups,
         "places": [dict(link(p), type=p["type"]) for p in by_size(pages)],
@@ -453,6 +465,25 @@ def build_home():
         "heroText": "Dinner, lunch and wine pairing prices per person at Michelin-starred restaurants, side by side and linked to where each price came from.",
         "destinations": cards, "data": as_json(data),
     }))
+
+
+def build_redirects():
+    """Pages at old addresses that send visitors on to where the page lives now, keeping any ?q= search."""
+    for old, pid in sorted(redirects.items()):
+        new = places[pid]["path"]
+        write(old, f'''<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>The Starred Bill · {e(places[pid]["name"])}</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{SITE_URL}{new}">
+<script>location.replace("{new}" + location.search + location.hash);</script>
+<meta http-equiv="refresh" content="0; url={new}">
+</head>
+<body><p>This page has moved to <a href="{new}">{SITE_URL}{new}</a>.</p></body>
+</html>
+''')
 
 
 def build_extras():
@@ -487,9 +518,12 @@ copy_assets()
 for p in pages:
     build_place(p)
 build_home()
+build_redirects()
 build_extras()
 build_service_worker()
 print(f"Built {len(pages) + 1} pages from {len(restaurants)} restaurants into {OUT.relative_to(ROOT)}/:")
 print("  /  (homepage)")
 for p in sorted(pages, key=lambda p: p["path"]):
     print(f"  {p['path']}  {p['name']}, {starred_n[p['id']]} starred")
+for old, pid in sorted(redirects.items()):
+    print(f"  {old}  now sends visitors to {places[pid]['path']}")

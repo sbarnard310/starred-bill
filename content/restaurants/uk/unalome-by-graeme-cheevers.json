@@ -1,0 +1,19 @@
+{
+  "name": "UNALOME by Graeme Cheevers",
+  "city": "scotland",
+  "area": "Glasgow",
+  "address": "36 Kelvingrove Street, Glasgow, G3 7RZ",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "rating": 4.8,
+  "reviews": 327,
+  "dinner": 155,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.unalomebygc.com/",
+  "website": "https://www.unalomebygc.com/",
+  "lat": 55.865632,
+  "lng": -4.283787,
+  "placeId": "ChIJA8BKg0BFiEgRduJssJEZ5rE"
+}

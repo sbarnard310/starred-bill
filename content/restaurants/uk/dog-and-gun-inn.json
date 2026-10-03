@@ -1,0 +1,19 @@
+{
+  "name": "Dog and Gun Inn",
+  "city": "england",
+  "area": "Skelton, Cumbria",
+  "address": "Skelton, CA11 9SE",
+  "stars": 1,
+  "cuisine": "British Contemporary",
+  "rating": 4.7,
+  "reviews": 383,
+  "dinner": 89,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu (3 courses £68)",
+  "sourceType": "press",
+  "source": "https://guide.michelin.com/gb/en/cumbria/skelton/restaurant/dog-and-gun-inn",
+  "website": "https://www.dogandgunskelton.co.uk/",
+  "lat": 54.710723,
+  "lng": -2.875345,
+  "placeId": "ChIJzQ-xtlPifEgRTyGs4Mh3wdQ"
+}

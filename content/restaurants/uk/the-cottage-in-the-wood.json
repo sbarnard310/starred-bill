@@ -1,0 +1,19 @@
+{
+  "name": "The Cottage in the Wood",
+  "city": "england",
+  "area": "Braithwaite, Cumbria",
+  "address": "Magic Hill, Whinlatter Forest, Braithwaite, CA12 5TW",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "rating": 4.8,
+  "reviews": 340,
+  "dinner": 130,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 7 courses",
+  "sourceType": "site",
+  "source": "https://www.thecottageinthewood.co.uk/",
+  "website": "https://www.thecottageinthewood.co.uk/",
+  "lat": 54.60894,
+  "lng": -3.221837,
+  "placeId": "ChIJd3qCP4rafEgRQ8C53E5NppU"
+}

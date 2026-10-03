@@ -1,0 +1,19 @@
+{
+  "name": "The Barn",
+  "city": "england",
+  "area": "Aughton, Lancashire",
+  "address": "Prescot Road, Aughton, L39 6RT",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "rating": 4.7,
+  "reviews": 474,
+  "dinner": 45,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains up to about £45",
+  "sourceType": "press",
+  "source": "https://www.squaremeal.co.uk/restaurants/the-barn-at-moor-hall_12230",
+  "website": "https://moorhall.com/the-barn",
+  "lat": 53.540256,
+  "lng": -2.890277,
+  "placeId": "ChIJK6FTyO8Xe0gRmcacpo3BR30"
+}

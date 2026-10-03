@@ -1,0 +1,19 @@
+{
+  "name": "Stark",
+  "city": "england",
+  "area": "East Mersea, Essex",
+  "address": "East Road, East Mersea, CO5 8TQ",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "rating": 4.5,
+  "reviews": 67,
+  "dinner": 100,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 6 courses",
+  "sourceType": "site",
+  "source": "https://www.starkfood.co.uk/",
+  "website": "https://www.starkfood.co.uk/",
+  "lat": 51.790781,
+  "lng": 0.968653,
+  "placeId": "ChIJ_XMHxUsR2UcRP5A92hFRP00"
+}

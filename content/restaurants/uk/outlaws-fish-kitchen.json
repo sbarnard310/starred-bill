@@ -1,0 +1,19 @@
+{
+  "name": "Outlaw's Fish Kitchen",
+  "city": "england",
+  "area": "Port Isaac, Cornwall",
+  "address": "1 Middle Street, Port Isaac, PL29 3RH",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.7,
+  "reviews": 431,
+  "dinner": 99,
+  "dinnerType": "menu",
+  "dinnerNote": "Set sharing menu, 7 courses (5 courses £69)",
+  "sourceType": "site",
+  "source": "https://outlaws.co.uk/restaurants/fish-kitchen/",
+  "website": "https://outlaws.co.uk/restaurants/fish-kitchen/",
+  "lat": 50.592051,
+  "lng": -4.831937,
+  "placeId": "ChIJ8So7Q5Cda0gR93mdhDnEOC4"
+}

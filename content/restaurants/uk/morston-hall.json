@@ -1,0 +1,19 @@
+{
+  "name": "Morston Hall",
+  "city": "england",
+  "area": "Morston, Norfolk",
+  "address": "The Street, Morston, NR25 7AA",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "rating": 4.8,
+  "reviews": 456,
+  "dinner": 145,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 7 courses",
+  "sourceType": "site",
+  "source": "https://www.morstonhall.com/dinner",
+  "website": "https://www.morstonhall.com/",
+  "lat": 52.954697,
+  "lng": 0.988074,
+  "placeId": "ChIJRfJcs1RE10cRklklgI_Ewec"
+}

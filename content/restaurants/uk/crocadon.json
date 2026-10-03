@@ -1,0 +1,16 @@
+{
+  "name": "Crocadon",
+  "city": "england",
+  "area": "St Mellion, Cornwall",
+  "stars": 0,
+  "cuisine": "Modern British",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2026-02",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed before the 2026 guide",
+  "statusNoteZh": "於 2026 年指南公布前歇業"
+}

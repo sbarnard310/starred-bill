@@ -6,7 +6,7 @@
 <script>
 // Old links such as /?city=taiwan go to that destination's own page.
 (function () {
-  var p = new URLSearchParams(location.search), to = { london: "/uk/london/", taiwan: "/taiwan/" }[p.get("city")];
+  var p = new URLSearchParams(location.search), to = { london: "/uk/england/london/", taiwan: "/taiwan/" }[p.get("city")];
   if (to) { p.delete("city"); var q = p.toString(); location.replace(to + (q ? "?" + q : "") + location.hash); }
 })();
 </script>

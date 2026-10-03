@@ -1,0 +1,21 @@
+{
+  "name": "Sosban & The Old Butchers",
+  "city": "wales",
+  "area": "Menai Bridge, Anglesey",
+  "address": "Trinity House, 1a High Street, Menai Bridge, LL59 5EE",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 88,
+  "dinner": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner, Thu–Sat",
+  "sourceType": "site",
+  "source": "https://sosbanandtheoldbutchers.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://sosbanandtheoldbutchers.com/",
+  "lat": 53.226038,
+  "lng": -4.162962,
+  "placeId": "ChIJCx3IgPmpZUgR7sfjsrRDJJY"
+}

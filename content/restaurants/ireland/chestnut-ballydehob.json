@@ -1,0 +1,19 @@
+{
+  "name": "Chestnut",
+  "city": "ireland",
+  "area": "Ballydehob, Co. Cork",
+  "address": "Staball Hill, Ballydehob, P81 X681",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 119,
+  "dinner": 125,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurantchestnutwestcork.ie/",
+  "website": "https://www.restaurantchestnutwestcork.ie/",
+  "lat": 51.562655,
+  "lng": -9.460819,
+  "placeId": "ChIJl3BicfyhRUgRS6xR4dGed0Q"
+}

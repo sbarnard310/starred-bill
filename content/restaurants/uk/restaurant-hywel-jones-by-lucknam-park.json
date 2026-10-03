@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant Hywel Jones by Lucknam Park",
+  "city": "england",
+  "area": "Colerne, Wiltshire",
+  "address": "Lucknam Park, Colerne, SN14 8AZ",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "rating": 4.4,
+  "reviews": 31,
+  "dinner": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Seasonal tasting menu, 8 courses",
+  "sourceType": "press",
+  "source": "https://lucknampark.skchase.com/vouchers/e14e3b91-1198-f084-68ef-9c0b24f32639/seasonal-tasting-menu-for-one-in-restaurant-hywel-jones",
+  "website": "https://www.lucknampark.co.uk/dining/restaurant-hywel-jones-by-lucknam-park/",
+  "lat": 51.45626,
+  "lng": -2.258723,
+  "placeId": "ChIJnQPElFZ4cUgRVcLIStjSWF8"
+}

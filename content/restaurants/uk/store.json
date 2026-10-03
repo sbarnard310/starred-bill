@@ -1,0 +1,16 @@
+{
+  "name": "Store",
+  "city": "england",
+  "area": "Stoke Holy Cross, Norfolk",
+  "stars": 0,
+  "cuisine": "Modern British",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2025-02",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in September 2024; removed from the 2025 guide",
+  "statusNoteZh": "2024 年 9 月歇業，已從 2025 年指南中移除"
+}

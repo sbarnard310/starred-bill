@@ -323,6 +323,11 @@ content:
         description: Three-letter code, e.g. GBP, EUR, JPY. It must also be listed under Currencies.
         type: string
         pattern: { regex: '^([A-Z]{3})?$', message: "Use a three-letter code in capitals, e.g. EUR" }
+      - name: redirectFrom
+        label: Old web addresses
+        description: Earlier addresses of this page, e.g. /uk/london/. Visitors and old links there are sent on to the page's current address.
+        type: string
+        list: true
       - name: inSentence
         label: Name mid-sentence
         description: Only if it reads differently in a sentence, e.g. "the UK" for United Kingdom.

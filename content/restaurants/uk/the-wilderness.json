@@ -1,0 +1,23 @@
+{
+  "name": "The Wilderness",
+  "city": "england",
+  "area": "Birmingham",
+  "address": "Unit B, 27 Warstone Lane, Birmingham, B18 6JQ",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteZh": "首次獲得一星",
+  "changeDate": "2026-02",
+  "rating": 4.8,
+  "reviews": 522,
+  "dinner": 145,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu (£145–£175 depending on the date)",
+  "sourceType": "site",
+  "source": "https://www.wearethewilderness.co.uk/food",
+  "website": "https://www.wearethewilderness.co.uk/",
+  "lat": 52.487252,
+  "lng": -1.91044,
+  "placeId": "ChIJz8jboIm8cEgRfyB-H8DV8t0"
+}

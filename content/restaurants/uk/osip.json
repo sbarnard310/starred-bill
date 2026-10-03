@@ -1,0 +1,19 @@
+{
+  "name": "Osip",
+  "city": "england",
+  "area": "Bruton, Somerset",
+  "address": "25 Kingsettle Hill, Hardway, Bruton, BA10 0LN",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "rating": 4.8,
+  "reviews": 368,
+  "dinner": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://osiprestaurant.com/",
+  "website": "https://osiprestaurant.com/",
+  "lat": 51.105925,
+  "lng": -2.398995,
+  "placeId": "ChIJAw991vUxckgRoE_7OL_C27w"
+}

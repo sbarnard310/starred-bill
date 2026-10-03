@@ -1,0 +1,19 @@
+{
+  "name": "The Bishop's Buttery",
+  "city": "ireland",
+  "area": "Cashel, Co. Tipperary",
+  "address": "Cashel Palace Hotel, Main Street, Cashel, E25 EF61",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 35,
+  "dinner": 165,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu (table d'hôte €140)",
+  "sourceType": "press",
+  "source": "https://theluxereviewer.ie/restaurant-review-the-bishops-buttery-ireland/",
+  "website": "https://www.cashelpalacehotel.ie/dining/the-bishops-buttery",
+  "lat": 52.517231,
+  "lng": -7.889144,
+  "placeId": "ChIJcycC563LXEgRwttTDeHhhHk"
+}

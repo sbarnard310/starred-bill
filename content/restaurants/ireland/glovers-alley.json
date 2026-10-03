@@ -1,0 +1,19 @@
+{
+  "name": "Glovers Alley",
+  "city": "ireland",
+  "area": "Dublin",
+  "address": "The Fitzwilliam Hotel, 127-128 St. Stephen’s Green, Dublin, D02 HE18",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 1028,
+  "dinner": 190,
+  "dinnerType": "menu",
+  "dinnerNote": "Discovery menu (Classic menu €155)",
+  "sourceType": "site",
+  "source": "https://gloversalley.com/",
+  "website": "https://gloversalley.com/",
+  "lat": 53.339275,
+  "lng": -6.26143,
+  "placeId": "ChIJ4cbHq54OZ0gR-nvSqo6_BpM"
+}

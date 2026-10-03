@@ -1,0 +1,22 @@
+{
+  "name": "The Oak Room",
+  "city": "ireland",
+  "area": "Adare, Co. Limerick",
+  "address": "Adare Manor, Adare, V94 W8WR",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 38,
+  "dinner": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Signature tasting menu, 6 courses (4 courses €165), Wed–Sun",
+  "wine": 120,
+  "sourceType": "press",
+  "source": "https://adare-manor.tablepath.com/oak-room-menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.adaremanor.com/dining/the-oak-room/",
+  "lat": 52.563653,
+  "lng": -8.77724,
+  "placeId": "ChIJoSjqiuVHW0gRvLlUyP_E5oo"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Bybrook",
+  "city": "england",
+  "area": "Castle Combe, Wiltshire",
+  "address": "West Street, Castle Combe, SN14 7HX",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "rating": 4.5,
+  "reviews": 73,
+  "dinner": 150,
+  "dinnerType": "menu",
+  "dinnerNote": "Menu in 6 courses (4 courses £120)",
+  "sourceType": "site",
+  "source": "https://www.exclusive.co.uk/bybrook/",
+  "website": "https://www.exclusive.co.uk/bybrook/",
+  "lat": 51.49381,
+  "lng": -2.231999,
+  "placeId": "ChIJq2Zni995cUgRv-Z7bjZOaCw"
+}

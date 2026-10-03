@@ -1,0 +1,19 @@
+{
+  "name": "Homestead Cottage",
+  "city": "ireland",
+  "area": "Doolin, Co. Clare",
+  "address": "Luogh North, Doolin, V95 KH30",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 243,
+  "dinner": 95,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 9 courses (2024 price)",
+  "sourceType": "press",
+  "source": "https://www.irishtimes.com/food/2024/02/17/it-is-a-bit-scary-how-the-couple-behind-homestead-cottage-won-a-michelin-star/",
+  "website": "https://www.homesteadcottage.com/",
+  "lat": 52.990241,
+  "lng": -9.404603,
+  "placeId": "ChIJB0Nyrn4HW0gRzSzCVqxIucg"
+}

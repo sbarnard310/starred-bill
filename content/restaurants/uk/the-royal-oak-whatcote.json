@@ -1,0 +1,23 @@
+{
+  "name": "The Royal Oak",
+  "city": "england",
+  "area": "Whatcote, Warwickshire",
+  "address": "The Orchard, Whatcote, CV36 5EF",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "dinner": 110,
+  "dinnerType": "menu",
+  "dinnerNote": "Chef's menu, Wed–Sat",
+  "wine": 95,
+  "sourceType": "site",
+  "source": "https://theroyaloakwhatcote.co.uk/",
+  "lunch": 95,
+  "lunchType": "menu",
+  "lunchNote": "Chef's menu at lunch",
+  "lunchSourceType": "site",
+  "lunchSource": "https://theroyaloakwhatcote.co.uk/",
+  "website": "https://www.theroyaloakwhatcote.co.uk/",
+  "lat": 52.099222,
+  "lng": -1.563082,
+  "placeId": "ChIJk1vEKFTTcEgR4L8b2no8xpM"
+}

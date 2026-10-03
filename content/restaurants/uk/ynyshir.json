@@ -1,0 +1,21 @@
+{
+  "name": "Ynyshir",
+  "city": "wales",
+  "area": "Machynlleth, Ceredigion",
+  "address": "Eglwysfach, Machynlleth, SY20 8TA",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 279,
+  "dinner": 540,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner experience, £450 + VAT",
+  "sourceType": "site",
+  "source": "https://www.ynyshir.co.uk/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.ynyshir.co.uk/",
+  "lat": 52.544528,
+  "lng": -3.94395,
+  "placeId": "ChIJ3_3QZQeEb0gRV1TASSuMz8w"
+}

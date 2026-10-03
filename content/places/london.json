@@ -3,5 +3,8 @@
   "type": "city",
   "parent": "england",
   "name": "London",
-  "nameZh": "倫敦"
+  "nameZh": "倫敦",
+  "redirectFrom": [
+    "/uk/london/"
+  ]
 }

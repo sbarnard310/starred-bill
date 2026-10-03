@@ -1,0 +1,19 @@
+{
+  "name": "Midsummer House",
+  "city": "england",
+  "area": "Cambridge",
+  "address": "Midsummer Common, Cambridge, CB4 1HA",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 755,
+  "dinner": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Corpus menu (Trinity £135, Solstice with Champagne £285)",
+  "sourceType": "site",
+  "source": "https://midsummerhouse.co.uk/",
+  "website": "https://midsummerhouse.co.uk/",
+  "lat": 52.212055,
+  "lng": 0.128401,
+  "placeId": "ChIJVxbfNZNw2EcRGFNqzq2WExs"
+}

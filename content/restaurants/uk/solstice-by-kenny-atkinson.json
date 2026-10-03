@@ -1,0 +1,19 @@
+{
+  "name": "SOLSTICE BY KENNY ATKINSON",
+  "city": "england",
+  "area": "Newcastle upon Tyne",
+  "address": "5-7 Side, Newcastle upon Tyne, NE1 3JE",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "rating": 4.9,
+  "reviews": 67,
+  "dinner": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.hardens.com/az/restaurants/newcastle-upon-tyne/ne1/solstice.htm",
+  "website": "https://www.solsticencl.com/",
+  "lat": 54.969259,
+  "lng": -1.608458,
+  "placeId": "ChIJowVncBFxfkgRerIB1m5QxjY"
+}

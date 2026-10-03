@@ -1,0 +1,20 @@
+{
+  "name": "Àclèaf",
+  "city": "england",
+  "area": "Plymouth",
+  "address": "Boringdon Hill, Colebrook, Devon, Plymouth, PL7 4DP",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 79,
+  "dinner": 180,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, from (4 courses £130)",
+  "wine": 120,
+  "sourceType": "site",
+  "source": "https://www.acleaf.co.uk/",
+  "website": "https://www.acleaf.co.uk/",
+  "lat": 50.401637,
+  "lng": -4.056674,
+  "placeId": "ChIJcS1N3gHtbEgR4rl0x-kU9r8"
+}

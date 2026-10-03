@@ -1,0 +1,21 @@
+{
+  "name": "Allium at Askham Hall",
+  "city": "england",
+  "area": "Askham, Cumbria",
+  "address": "Askham, CA10 2PF",
+  "stars": 1,
+  "cuisine": "Modern British",
+  "rating": 4.7,
+  "reviews": 447,
+  "dinner": 140,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 6 courses",
+  "sourceType": "site",
+  "source": "https://www.askhamhall.co.uk/our-food/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.askhamhall.co.uk/our-food/",
+  "lat": 54.608483,
+  "lng": -2.75094,
+  "placeId": "ChIJWfq1xvb6fEgRSoW0qEmeuRc"
+}

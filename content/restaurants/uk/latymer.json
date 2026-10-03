@@ -1,0 +1,19 @@
+{
+  "name": "Latymer",
+  "city": "england",
+  "area": "Bagshot, Surrey",
+  "address": "London Road, Bagshot, GU19 5EU",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 137,
+  "dinner": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu (4 courses £130)",
+  "sourceType": "site",
+  "source": "https://www.exclusive.co.uk/latymer/",
+  "website": "https://www.exclusive.co.uk/latymer/",
+  "lat": 51.356698,
+  "lng": -0.708865,
+  "placeId": "ChIJGUMg65x_dkgRTfXkyeRkp6k"
+}

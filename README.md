@@ -5,7 +5,7 @@ Compare dinner, lunch and wine pairing prices at Michelin-starred restaurants, c
 Live at https://starredbill.com
 
 - Homepage with a world map, destination cards, search and your wishlist: https://starredbill.com/
-- A page for every country, region and city, e.g. https://starredbill.com/uk/london/ or https://starredbill.com/taiwan/
+- A page for every country, region and city, e.g. https://starredbill.com/uk/england/london/, https://starredbill.com/ireland/ or https://starredbill.com/taiwan/
 - Add `?lang=en` for English or `?lang=zh` for Chinese. Hong Kong also offers Cantonese (`?lang=yue`) and France offers French (`?lang=fr`).
 
 ## How it fits together
@@ -31,9 +31,13 @@ Every file in `content/places/` has an `id` (lower-case, hyphens, used in the we
 | type | needs | web address |
 |---|---|---|
 | `country` | `currency` (e.g. `"GBP"`) | `/uk/` |
-| `region` | `parent`: a country or region id | `/uk/yorkshire/` |
-| `city` | `parent`: a country or region id | `/uk/london/` |
+| `region` | `parent`: a country or region id | `/uk/england/` |
+| `city` | `parent`: a country or region id | `/uk/england/london/` |
 | `group` | `includes`: a list of country, region or city ids | `/taiwan/southern-taiwan/` if all in one country, otherwise `/basque-country/` |
+
+A region or city's address follows everything above it, so a Yorkshire region inside England would be `/uk/england/yorkshire/`, and York inside it `/uk/england/yorkshire/york/`. If a page moves, list its old address in `redirectFrom` (e.g. London has `["/uk/london/"]`) and old links keep working.
+
+Restaurants don't need a city page of their own: one outside the cities we cover can sit in its region or country (`city` set to e.g. `england` or `ireland`), with the town and county in `area`, e.g. "Aughton, Lancashire".
 
 Groups are for areas that overlap the main structure, such as "Basque Country" (Spain and France) or "Northern England". A page is only built once a place has at least one starred restaurant.
 

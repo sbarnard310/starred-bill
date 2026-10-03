@@ -1,0 +1,17 @@
+{
+  "name": "Le Manoir aux Quat'Saisons",
+  "city": "england",
+  "area": "Great Milton, Oxfordshire",
+  "address": "Church Road, Great Milton, OX44 7PD",
+  "stars": 0,
+  "cuisine": "French",
+  "change": "down",
+  "changeNote": "Lost its stars",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2026-02",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 2,
+  "statusNote": "Closed for a year-long refurbishment; removed from the 2026 guide",
+  "statusNoteZh": "閉館進行為期一年的翻新，已從 2026 年指南中移除"
+}

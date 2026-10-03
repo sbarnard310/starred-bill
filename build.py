@@ -10,7 +10,9 @@ It uses only the Python standard library, so there is nothing to install.
 import hashlib
 import html
 import json
+import math
 import re
+import unicodedata
 import shutil
 import sys
 from pathlib import Path
@@ -347,8 +349,58 @@ def build_place(p):
     }))
 
 
+def norm_name(s):
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower().replace("&", " and ")
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
+
+
+NAME_STOP = {"the", "restaurant", "by", "at", "de", "la", "le", "and", "les", "du", "des", "l", "d"}
+
+
+def metres(a, b, c, d):
+    return 6371000 * 2 * math.asin(math.sqrt(math.sin(math.radians(c - a) / 2) ** 2 + math.cos(math.radians(a)) * math.cos(math.radians(c)) * math.sin(math.radians(d - b) / 2) ** 2))
+
+
+def same_restaurant(w, r):
+    """Whether a pin from the world list is one of our own restaurants (similar name, close by)."""
+    if r.get("lat") is None or r.get("lng") is None:
+        return False
+    d = metres(w[2], w[3], r["lat"], r["lng"])
+    a, b = norm_name(w[0]), norm_name(r["name"])
+    if a == b and (d < 3000 or r["cityName"] in w[5]):
+        return True
+    if d > 400:
+        return False
+    if a in b or b in a:
+        return True
+    ta, tb = set(a.split()) - NAME_STOP, set(b.split()) - NAME_STOP
+    return bool(ta and tb and len(ta & tb) / min(len(ta), len(tb)) >= 0.5) or d < 15
+
+
+def build_world(starred):
+    """The homepage's pins for starred restaurants we don't have prices for yet, written to /data/world.json."""
+    path = CONTENT / "world-starred.json"
+    if not path.exists():
+        return None, 0
+    rows = read_json(path).get("restaurants", [])
+    near = {}
+    for r in starred:
+        if r.get("lat") is not None:
+            near.setdefault((round(r["lat"]), round(r["lng"])), []).append(r)
+    others = []
+    for w in rows:
+        cands = [r for dy in (-1, 0, 1) for dx in (-1, 0, 1) for r in near.get((round(w[2]) + dy, round(w[3]) + dx), [])]
+        if not any(same_restaurant(w, r) for r in cands):
+            others.append(w)
+    body = as_json({"updated": read_json(path).get("updated", ""), "r": others}).encode("utf-8")
+    (OUT / "data").mkdir(exist_ok=True)
+    (OUT / "data" / "world.json").write_bytes(body)
+    return f"/data/world.json?v={hashlib.sha1(body).hexdigest()[:10]}", len(rows)
+
+
 def build_home():
     starred = [r for r in restaurants if not r.get("status")]
+    world_url, world_total = build_world(starred)
     countries = []
     for c in by_size(p for p in pages if p["type"] == "country"):
         mine = [r for r in starred if r["country"] == c["id"]]
@@ -368,6 +420,7 @@ def build_home():
         "countries": countries, "groups": groups,
         "places": [dict(link(p), type=p["type"]) for p in by_size(pages)],
         "currencies": CURRENCIES, "updated": site.get("updated", ""),
+        "worldUrl": world_url, "worldTotal": world_total,
     }
     names = ", ".join(c["name"] for c in countries)
     cards = "".join(

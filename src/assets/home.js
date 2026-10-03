@@ -13,6 +13,7 @@ function applyStatic() {
   $("homeQ").placeholder = t("homeSearchPh");
   $("homeQ").setAttribute("aria-label", t("homeSearchLabel"));
   $("mapCanvas").setAttribute("aria-label", t("mapLabel"));
+  if (DATA.worldTotal) document.querySelector('[data-i18n="mapHomeText"]').textContent = t("mapHomeWorldText", { n: DATA.worldTotal.toLocaleString("en-GB") });
 }
 function renderFigures() {
   $("fRestaurants").textContent = ALL.length;
@@ -68,18 +69,28 @@ function renderResults() {
 }
 
 // ---------- World map ----------
-const world = { map: null, info: null, markers: [], clusterer: null };
+// Filled pins are restaurants with prices on this site; outlined pins are every other starred restaurant
+// in the MICHELIN Guide, loaded from /data/world.json once the map starts.
+const world = { map: null, info: null, markers: [], clusterer: null, loaded: false };
+const infoBox = (body) => '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' + body + "</div>";
 function infoHtml(r) {
-  return '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' +
-    '<div style="font-weight:700;font-size:15px">' + esc(nameOf(r)) + "</div>" +
+  return infoBox('<div style="font-weight:700;font-size:15px">' + esc(nameOf(r)) + "</div>" +
     (altNameOf(r) ? '<div style="font-size:12px;color:#5A6E62">' + esc(altNameOf(r)) + "</div>" : "") +
     '<div style="color:#B3862B;font-size:13px">' + "✱".repeat(r.stars) + ' <span style="color:#5A6E62">' + esc(cuisineOf(r)) + " · " + esc(pick(r, "cityName")) + "</span></div>" +
     '<div style="margin-top:6px;font-size:13px">' + esc(priceLabel(r)) + "</div>" +
     (r.rating ? '<div style="font-size:13px;color:#5A6E62">★ ' + r.rating.toFixed(1) + " " + t("infoGoogle") + "</div>" : "") +
-    '<a href="' + cityLink(r) + '" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + esc(t("infoCompare", { place: pick(r, "cityName") })) + " →</a></div>";
+    '<a href="' + cityLink(r) + '" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + esc(t("infoCompare", { place: pick(r, "cityName") })) + " →</a>");
+}
+function worldInfoHtml(w) {
+  const link = (href, label) => '<a href="' + esc(href) + '" target="_blank" rel="noopener" style="color:#1E6142;font-weight:600;font-size:13px;margin-right:12px">' + esc(label) + " ↗</a>";
+  return infoBox('<div style="font-weight:700;font-size:15px">' + esc(w.name) + "</div>" +
+    '<div style="color:#B3862B;font-size:13px">' + "✱".repeat(w.stars) + ' <span style="color:#5A6E62">' + esc(w.cuisine) + " · " + esc(w.where) + "</span></div>" +
+    '<div style="margin-top:6px;font-size:13px;color:#5A6E62">' + esc(t("infoNoPricesYet")) + "</div>" +
+    '<div style="margin-top:6px">' + link("https://guide.michelin.com/en" + w.path, t("infoMichelin")) +
+    link("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(w.name + ", " + w.where), "Google Maps") + "</div>");
 }
 function clusterIcon(count) {
-  const size = count < 10 ? 34 : count < 50 ? 42 : 50;
+  const size = count < 10 ? 34 : count < 100 ? 42 : count < 1000 ? 50 : 58;
   const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='" + size + "' height='" + size + "' viewBox='0 0 50 50'><circle cx='25' cy='25' r='23' fill='#1E6142' fill-opacity='.92' stroke='#ffffff' stroke-width='3'/></svg>";
   return { url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg), scaledSize: new google.maps.Size(size, size), anchor: new google.maps.Point(size / 2, size / 2) };
 }
@@ -93,9 +104,9 @@ async function initWorldMap() {
     world.map = new Map($("mapCanvas"), { center: { lat: 35, lng: 40 }, zoom: 2, minZoom: 2, mapTypeControl: false, streetViewControl: false, clickableIcons: false, gestureHandling: "cooperative" });
     world.info = new InfoWindow();
     world.markers = ALL.filter((r) => r.lat != null && r.lng != null).map((r) => {
-      const m = new Marker({ position: { lat: r.lat, lng: r.lng }, title: nameOf(r), icon: pinIcon(r.stars), zIndex: r.stars * 10 });
+      const m = new Marker({ position: { lat: r.lat, lng: r.lng }, title: nameOf(r), icon: pinIcon(r.stars), zIndex: 100 + r.stars * 10 });
       m.addListener("click", () => { world.info.setContent(infoHtml(r)); world.info.open({ anchor: m, map: world.map }); });
-      m.r = r;
+      m.r = r; m.stars = r.stars;
       return m;
     });
     if (window.markerClusterer) {
@@ -105,31 +116,51 @@ async function initWorldMap() {
       });
     }
     updateWorldMap(true);
+    if (DATA.worldUrl) {
+      const data = await fetch(DATA.worldUrl).then((res) => res.json());
+      const icons = { 1: pinIcon(1, true), 2: pinIcon(2, true), 3: pinIcon(3, true) };
+      world.markers = world.markers.concat(data.r.map(([name, stars, lat, lng, cuisine, where, path]) => {
+        const w = { name, stars, cuisine, where, path };
+        const m = new Marker({ position: { lat, lng }, title: name, icon: icons[stars], zIndex: stars * 10 });
+        m.addListener("click", () => { world.info.setContent(worldInfoHtml(w)); world.info.open({ anchor: m, map: world.map }); });
+        m.w = w; m.stars = stars;
+        return m;
+      }));
+      world.loaded = true;
+      renderMapStars(); renderMapLegend(); updateWorldMap(false);
+    }
   } catch (e) {
-    $("mapCanvas").innerHTML = '<p class="map-wait">' + t("mapError") + "</p>";
+    if (!world.map) $("mapCanvas").innerHTML = '<p class="map-wait">' + t("mapError") + "</p>";
   }
 }
 function updateWorldMap(fit) {
   if (!world.map) return;
-  const shown = world.markers.filter((m) => !homeState.stars || m.r.stars === homeState.stars);
+  const shown = world.markers.filter((m) => !homeState.stars || m.stars === homeState.stars);
   world.info.close();
   if (world.clusterer) { world.clusterer.clearMarkers(); world.clusterer.addMarkers(shown); }
   else world.markers.forEach((m) => m.setMap(shown.includes(m) ? world.map : null));
-  $("mapStatus").textContent = shown.length ? t("mapShowing", { n: shown.length }) : t("mapNone");
+  $("mapStatus").textContent = shown.length ? t("mapShowing", { n: shown.length.toLocaleString("en-GB") }) : t("mapNone");
   if (fit && shown.length > 1) {
     const b = new google.maps.LatLngBounds();
     shown.forEach((m) => b.extend(m.getPosition()));
     world.map.fitBounds(b, 40);
   }
 }
+// Star counts for the filter and legend: every pin once the world list has loaded, otherwise just ours.
+const pinStars = () => world.loaded ? world.markers.map((m) => ({ stars: m.stars })) : ALL;
 function renderMapStars() {
-  const opts = [{ s: 0, label: t("all"), n: ALL.length }].concat([1, 2, 3].map((s) => ({ s, label: rosettes(s), n: ALL.filter((r) => r.stars === s).length })));
+  const list = pinStars();
+  const opts = [{ s: 0, label: t("all"), n: list.length }].concat([1, 2, 3].map((s) => ({ s, label: rosettes(s), n: list.filter((r) => r.stars === s).length })));
   $("mapStars").innerHTML = opts.map((o) =>
-    '<button type="button" data-mapstars="' + o.s + '" aria-pressed="' + (homeState.stars === o.s) + '"' + (o.s ? ' aria-label="' + esc(t("starsAria", { n: o.s })) + '"' : "") + ">" + o.label + '<span class="count">' + o.n + "</span></button>").join("");
+    '<button type="button" data-mapstars="' + o.s + '" aria-pressed="' + (homeState.stars === o.s) + '"' + (o.s ? ' aria-label="' + esc(t("starsAria", { n: o.s })) + '"' : "") + ">" + o.label + '<span class="count">' + o.n.toLocaleString("en-GB") + "</span></button>").join("");
+}
+function renderMapLegend() {
+  renderLegend(pinStars());
+  $("mapLegend").insertAdjacentHTML("beforeend", '<li><span class="pin-num hollow" style="--pin:' + MAP_PIN_COLOURS[1] + '" aria-hidden="true">1</span><span>' + esc(t("legendHollow")) + "</span></li>");
 }
 
 // ---------- Render and events ----------
-function renderAll() { applyStatic(); renderFigures(); renderDestinations(); renderWishlist(); renderMapStars(); renderLegend(ALL); renderResults(); }
+function renderAll() { applyStatic(); renderFigures(); renderDestinations(); renderWishlist(); renderMapStars(); renderMapLegend(); renderResults(); }
 
 document.addEventListener("click", (e) => {
   const el = e.target.closest("button");

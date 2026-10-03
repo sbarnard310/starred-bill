@@ -334,3 +334,4 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
 .install-btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--gold); background: none; color: var(--gold); border-radius: 999px; font-size: .82rem; font-weight: 600; padding: 5px 12px; cursor: pointer; line-height: 1.4; }
 .install-btn:hover { background: color-mix(in srgb, var(--gold) 15%, transparent); }
 .install-tip { flex-basis: 100%; margin: 0; padding: 10px 14px; border-radius: 8px; background: color-mix(in srgb, var(--band-ink) 10%, transparent); color: var(--band-ink); font-size: .88rem; }
+.map-legend .pin-num.hollow { background: #ffffff; color: var(--pin); box-shadow: inset 0 0 0 2px var(--pin); }

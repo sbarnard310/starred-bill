@@ -4,6 +4,7 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
 
 ## How it's built
 - `content/` is the data, edited by the owner in Pages CMS (app.pagescms.org) or on GitHub. There is one JSON file per restaurant in `content/restaurants/<country>/`, one per place in `content/places/`, plus `currencies.json` and `site.json`.
+- `content/world-starred.json` lists every Michelin-starred restaurant in the world: name, stars, position and Michelin link. It drives the outlined "no prices yet" pins on the homepage map. Our own restaurants are matched by name and position (`same_restaurant` in build.py) and shown as filled pins with prices instead. To refresh it after big guide releases, follow `scripts/michelin_world.js` and `scripts/receive.py`. guide.michelin.com blocks curl, so the extraction runs in a browser tab and is posted to a local receiver.
 - `src/` holds the HTML templates (`place.html`, `home.html`) and the shared `assets/`:
   - `common.js` has the settings, all English/Chinese wording (`I18N`) and helpers.
   - `place.js` runs destination pages and `home.js` runs the homepage.

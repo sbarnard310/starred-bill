@@ -83,10 +83,10 @@ const I18N = {
     homeEyebrow: "Michelin Guide restaurants, priced",
     homeH1: "What a Michelin star <em>costs</em>, city by city.",
     homeText: "Dinner, lunch and wine pairing prices per person at Michelin-starred restaurants, side by side and linked to where each price came from. Pick a destination, or explore the map.",
-    figRestaurants: "Starred restaurants", figDestinations: "Destinations", figUpdated: "Prices checked", figUpdatedSub: "Dinner, lunch and wine pairings",
+    figRestaurants: "Restaurants priced", figDestinations: "Destinations", figUpdated: "Prices checked", figUpdatedSub: "Dinner, lunch and wine pairings",
     citiesN: "{n} city|{n} cities",
     homeSearchPh: "Find a restaurant, cuisine or city", homeSearchLabel: "Find a restaurant, cuisine or city", searchNone: "Nothing matches “{q}” yet.",
-    mapHomeTitle: "Every starred table we track",
+    mapHomeTitle: "Every Michelin-starred restaurant in the world",
     mapHomeText: "Zoom in to see individual restaurants. Tap a pin for the dinner price and a link to compare it with the rest of the city.",
     destTitle: "Destinations", destText: "Each destination has its own page with prices, filters, a map and star-by-star averages.",
     destRestaurants: "{n} starred restaurant|{n} starred restaurants", destFrom: "Dinner menus from {p}", destOpen: "Compare {place}",
@@ -95,6 +95,8 @@ const I18N = {
     wishEmptyHome: "Nothing saved yet. Tap the heart next to any restaurant on a destination page to save it here.",
     wishRemoveShort: "Remove",
     infoCompare: "Compare prices in {place}",
+    mapHomeWorldText: "All {n} Michelin-starred restaurants in the world. Filled pins have full price comparisons on this site; outlined pins link to the MICHELIN Guide until we add their prices. Zoom in to see individual restaurants.",
+    infoNoPricesYet: "No prices on The Starred Bill yet", infoMichelin: "MICHELIN Guide", legendHollow: "Outlined = no prices yet",
     installApp: "Install app",
     installTipIos: "To install: tap the Share button (the square with an arrow) in Safari, then choose “Add to Home Screen”."
   },
@@ -170,10 +172,10 @@ const I18N = {
     homeEyebrow: "米其林指南餐廳價格一覽",
     homeH1: "一顆米其林星<em>要價</em>多少？逐城比較。",
     homeText: "並列比較米其林星級餐廳的每人晚餐、午餐與餐酒搭配價格，每個價格都附上資料來源。選擇目的地，或從地圖開始探索。",
-    figRestaurants: "星級餐廳", figDestinations: "目的地", figUpdated: "價格查核", figUpdatedSub: "晚餐、午餐與餐酒搭配",
+    figRestaurants: "已比價餐廳", figDestinations: "目的地", figUpdated: "價格查核", figUpdatedSub: "晚餐、午餐與餐酒搭配",
     citiesN: "{n} 座城市",
     homeSearchPh: "搜尋餐廳、料理或城市", homeSearchLabel: "搜尋餐廳、料理或城市", searchNone: "目前找不到「{q}」。",
-    mapHomeTitle: "我們追蹤的所有星級餐廳",
+    mapHomeTitle: "全球所有米其林星級餐廳",
     mapHomeText: "放大地圖即可看到個別餐廳。點選標記可查看晚餐價格，並連結到該城市的完整比較。",
     destTitle: "目的地", destText: "每個目的地都有專屬頁面，提供價格、篩選、地圖與各星級平均。",
     destRestaurants: "{n} 家星級餐廳", destFrom: "晚餐套餐 {p} 起", destOpen: "比較{place}",
@@ -182,6 +184,8 @@ const I18N = {
     wishEmptyHome: "目前還沒有收藏。在任一目的地頁面點選餐廳旁的愛心，即可加入這裡。",
     wishRemoveShort: "移除",
     infoCompare: "比較{place}的價格",
+    mapHomeWorldText: "全球 {n} 家米其林星級餐廳一圖看盡。實心標記代表本站已有完整價格比較；空心標記在我們加入價格前，會連結到米其林指南。放大地圖即可看到個別餐廳。",
+    infoNoPricesYet: "本站尚未收錄價格", infoMichelin: "米其林指南", legendHollow: "空心 = 尚未比價",
     installApp: "加到主畫面",
     installTipIos: "安裝方式：點選 Safari 的分享按鈕（方框加箭頭），再選擇「加入主畫面」。"
   }
@@ -276,8 +280,10 @@ function loadGoogle() {
   });
   return mapsBoot;
 }
-function pinIcon(stars) {
-  const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='40' viewBox='0 0 30 40'><path d='M15 38.5S2 26.6 2 15.5a13 13 0 0 1 26 0C28 26.6 15 38.5 15 38.5z' fill='" + MAP_PIN_COLOURS[stars] + "' stroke='#ffffff' stroke-width='2'/><text x='15' y='20.5' text-anchor='middle' font-family='Arial,sans-serif' font-size='13' font-weight='700' fill='#ffffff'>" + stars + "</text></svg>";
+// hollow: a white pin with a coloured outline, for restaurants without prices on the site yet.
+function pinIcon(stars, hollow) {
+  const colour = MAP_PIN_COLOURS[stars];
+  const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='40' viewBox='0 0 30 40'><path d='M15 38.5S2 26.6 2 15.5a13 13 0 0 1 26 0C28 26.6 15 38.5 15 38.5z' fill='" + (hollow ? "#ffffff" : colour) + "' stroke='" + (hollow ? colour : "#ffffff") + "' stroke-width='" + (hollow ? 3 : 2) + "'/><text x='15' y='20.5' text-anchor='middle' font-family='Arial,sans-serif' font-size='13' font-weight='700' fill='" + (hollow ? colour : "#ffffff") + "'>" + stars + "</text></svg>";
   return { url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg), scaledSize: new google.maps.Size(30, 40), anchor: new google.maps.Point(15, 39) };
 }
 function renderLegend(list) {

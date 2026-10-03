@@ -20,7 +20,7 @@ const cityNameOf = (r) => pick(r, "cityName");
 const areaOf = (r) => {
   const a = pick(r, "area");
   // Restaurants listed under a region or country (e.g. England) already name their town in the area.
-  if (!PAGE.showCity || (r.cityType && r.cityType !== "city" && a)) return a;
+  if (!PAGE.showCity || (r.cityType && r.cityType !== "city" && r.cityType !== "district" && a)) return a;
   const c = cityNameOf(r);
   return !a ? c : (a.includes(c) || a.includes(r.cityName)) ? a : a + ", " + c;
 };
@@ -130,7 +130,7 @@ function applyStatic() {
     : '<div class="explore-row"><span class="explore-label">' + esc(t(group.label, { country: pick(group, "country") })) + "</span>" +
     group.items.map((p) => p.current
       ? '<span class="place-link" aria-current="page">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></span>"
-      : '<a class="place-link" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>").join("") + "</div>").join("");
+      : '<a class="place-link' + (p.n ? "" : " zero") + '" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>").join("") + "</div>").join("");
   $("currencySwitch").innerHTML = currencyOptions.map((k) =>
     '<button type="button" data-currency="' + k + '" aria-pressed="' + (k === state.currency) + '">' + DATA.currencies[k].symbol + "</button>").join("");
   const converted = approx();

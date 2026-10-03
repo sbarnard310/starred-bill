@@ -415,4 +415,4 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 .explore-more[open] summary::before { content: "–"; }
 .explore-more summary .count { font-family: var(--font-num); letter-spacing: 0; }
 .explore-more .explore-row { margin-top: 10px; }
-.explore-more .place-link.zero { opacity: .6; }
+.place-link.zero { opacity: .6; }

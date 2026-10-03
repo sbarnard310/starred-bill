@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 CONTENT, SRC, OUT = ROOT / "content", ROOT / "src", ROOT / "_site"
 SITE_URL = "https://starredbill.com"
-PLACE_TYPES = ("country", "region", "city", "group")
+PLACE_TYPES = ("country", "region", "city", "district", "group")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
 LANGUAGES = ("en", "zh", "yue", "fr")
 LANG_SUFFIXES = ("Zh", "Yue", "Fr")  # e.g. nameZh, introYue, dinnerNoteFr
@@ -91,6 +91,10 @@ for pid, p in places.items():
         parent = places.get(p.get("parent"))
         if not parent or parent["type"] not in ("country", "region"):
             problem(where, "parent must be the id of a country or region")
+    if p["type"] == "district":
+        parent = places.get(p.get("parent"))
+        if not parent or parent["type"] != "city":
+            problem(where, "a district's parent must be the id of a city, e.g. manhattan inside new-york")
     if p["type"] == "group":
         bad = [i for i in p.get("includes", []) if i not in places or places[i]["type"] == "group"]
         if not p.get("includes") or bad:
@@ -240,6 +244,12 @@ def by_size(ps):
 def explore_links(p):
     """The rows of place links under the page title."""
     rows = []
+    # A city's districts (e.g. New York's boroughs), or a district's neighbours in the same city.
+    districts = by_size(q for q in pages if q["type"] == "district" and q.get("parent") == (p.get("parent") if p["type"] == "district" else p["id"]))
+    if districts and p["type"] in ("city", "district"):
+        city = places[districts[0]["parent"]]
+        rows.append(dict({k.replace("name", "country"): v for k, v in names(city).items()}, label="exploreDistricts",
+                         items=[link(q, p["id"]) for q in districts]))
     if p["type"] == "city":
         country = places.get(country_of(p["id"]))
         cities = [c for c in pages if c["type"] == "city" and country_of(c["id"]) == (country or {}).get("id")]

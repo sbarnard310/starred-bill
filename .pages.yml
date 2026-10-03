@@ -273,6 +273,7 @@ content:
             - { value: country, label: "Country" }
             - { value: region, label: "Region (e.g. England, Yorkshire)" }
             - { value: city, label: "City" }
+            - { value: district, label: "District inside a city (e.g. Manhattan, Brooklyn)" }
             - { value: group, label: "Collection (overlapping area, e.g. Basque Country)" }
       - name: name
         label: Name
@@ -300,8 +301,8 @@ content:
             - { value: yue, label: "廣東話 (Cantonese)" }
             - { value: fr, label: "Français (French)" }
       - name: parent
-        label: Inside (regions and cities)
-        description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom.
+        label: Inside (regions, cities and districts)
+        description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom. A district sits inside a city, e.g. Manhattan inside New York.
         type: reference
         options:
           collection: places

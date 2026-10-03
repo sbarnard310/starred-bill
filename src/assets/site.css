@@ -382,3 +382,22 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 .toast:not([hidden]) ~ .jump-map { bottom: calc(78px + env(safe-area-inset-bottom, 0px)); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .jump-map { color: #0C1712; } }
 :root[data-theme="dark"] .jump-map { color: #0C1712; }
+
+/* Share: the header button, and the menu shown where the phone's own share sheet isn't available */
+.share-btn { display: inline-flex; align-items: center; gap: 6px; color: var(--band-ink); background: none; font: inherit; font-size: .9rem; font-weight: 600; padding: 6px 12px; border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); cursor: pointer; }
+.share-btn:hover { background: color-mix(in srgb, var(--band-ink) 10%, transparent); }
+.share-btn svg { width: 16px; height: 16px; }
+.share-panel { position: fixed; z-index: 30; width: min(340px, calc(100vw - 32px)); padding: 16px; border-radius: var(--radius);
+  background: var(--surface); color: var(--ink); border: 1px solid var(--line); box-shadow: 0 12px 32px rgba(0,0,0,.25); }
+.share-head { margin: 0 0 10px; font-weight: 700; }
+.share-copy { display: flex; gap: 8px; }
+.share-copy input { flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: inherit; font-size: .85rem; }
+.share-copy button { flex: none; padding: 8px 12px; border: 0; border-radius: 8px; background: var(--green); color: #ffffff; font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; }
+.share-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.share-links a { padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: .85rem; font-weight: 600; }
+.share-links a:hover { border-color: var(--green); color: var(--green); }
+.share-note { margin: 12px 0 0; font-size: .8rem; color: var(--muted); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .share-copy button { color: #0C1712; } }
+:root[data-theme="dark"] .share-copy button { color: #0C1712; }
+@media (max-width: 520px) { .share-btn span { display: none; } .share-btn { padding: 6px 9px; } }

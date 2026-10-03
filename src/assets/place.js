@@ -81,6 +81,8 @@ function filtered() {
   return rows.sort(sorters[state.sort] || sorters["price-asc"]);
 }
 
+shareText = () => t("shareTextPlace");
+
 // ---------- Static text, breadcrumbs and switches ----------
 function applyStatic() {
   applyI18n();

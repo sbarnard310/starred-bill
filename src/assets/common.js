@@ -61,6 +61,10 @@ const I18N = {
     nearDenied: "Location access is off. Allow it for this site in your browser settings, then try again.",
     nearFailed: "Couldn't find your location just now. Please try again.", nearUnsupported: "This browser can't share your location.",
     jumpMap: "Map", jumpMapAria: "Jump to the map",
+    share: "Share", shareAria: "Share this page", shareTitle: "Share this page", shareCopy: "Copy link", shareCopied: "Link copied", shareEmail: "Email",
+    shareInsta: "For Instagram, copy the link and paste it into a story or message.",
+    shareTextPlace: "What a Michelin star costs in {placeIn}: dinner, lunch and wine pairing prices side by side.",
+    shareTextHome: "What a Michelin star costs, city by city: dinner, lunch and wine pairing prices side by side.",
     infoDinner: "dinner", infoWine: "wine", infoGoogle: "on Google", infoOpen: "Open in Google Maps", infoNoPrice: "Price not listed",
     starsTitle: "How much each extra star adds",
     starsText: "Average menu price for the meal chosen above, grouped by Michelin stars. À la carte restaurants are counted but left out of the averages and ranges.",
@@ -159,6 +163,10 @@ const I18N = {
     nearDenied: "位置存取已關閉。請在瀏覽器設定中允許本網站使用你的位置，然後再試一次。",
     nearFailed: "暫時無法取得你的位置，請再試一次。", nearUnsupported: "此瀏覽器無法分享你的位置。",
     jumpMap: "地圖", jumpMapAria: "跳到地圖",
+    share: "分享", shareAria: "分享此頁", shareTitle: "分享此頁", shareCopy: "複製連結", shareCopied: "已複製連結", shareEmail: "電子郵件",
+    shareInsta: "若要分享到 Instagram，請複製連結，再貼到限時動態或訊息中。",
+    shareTextPlace: "在{place}，一顆米其林星要價多少？晚餐、午餐與餐酒搭配價格一次比較。",
+    shareTextHome: "一顆米其林星要價多少？各城市晚餐、午餐與餐酒搭配價格一次比較。",
     infoDinner: "晚餐", infoWine: "餐酒搭配", infoGoogle: "Google 評分", infoOpen: "在 Google 地圖開啟", infoNoPrice: "價格未公布",
     starsTitle: "每多一顆星，要多花多少？",
     starsText: "依上方所選餐期、以米其林星級分組的套餐平均價格。單點餐廳計入家數，但不納入平均與價格區間。",
@@ -255,6 +263,10 @@ const I18N = {
     nearDenied: "L'accès à votre position est désactivé. Autorisez-le pour ce site dans les réglages du navigateur, puis réessayez.",
     nearFailed: "Impossible de vous localiser pour le moment. Réessayez.", nearUnsupported: "Ce navigateur ne peut pas partager votre position.",
     jumpMap: "Carte", jumpMapAria: "Aller à la carte",
+    share: "Partager", shareAria: "Partager cette page", shareTitle: "Partager cette page", shareCopy: "Copier le lien", shareCopied: "Lien copié", shareEmail: "E-mail",
+    shareInsta: "Pour Instagram, copiez le lien puis collez-le dans une story ou un message.",
+    shareTextPlace: "Ce que coûte une étoile Michelin {placeIn} : prix du dîner, du déjeuner et des accords mets-vins, côte à côte.",
+    shareTextHome: "Ce que coûte une étoile Michelin, ville par ville : prix du dîner, du déjeuner et des accords mets-vins.",
     infoDinner: "dîner", infoWine: "vins", infoGoogle: "sur Google", infoOpen: "Ouvrir dans Google Maps", infoNoPrice: "Prix non communiqué",
     starsTitle: "Ce que coûte chaque étoile de plus",
     starsText: "Prix moyen du menu pour le repas choisi plus haut, par nombre d'étoiles. Les restaurants à la carte sont comptés mais exclus des moyennes et des fourchettes.",
@@ -332,6 +344,10 @@ const I18N = {
     nearDenied: "位置權限已經關咗。請喺瀏覽器設定允許呢個網站用你嘅位置，再試多次。",
     nearFailed: "暫時搵唔到你嘅位置，請再試多次。", nearUnsupported: "呢個瀏覽器分享唔到你嘅位置。",
     jumpMap: "地圖", jumpMapAria: "跳去地圖",
+    share: "分享", shareAria: "分享呢版", shareTitle: "分享呢版", shareCopy: "複製連結", shareCopied: "已經複製咗連結", shareEmail: "電郵",
+    shareInsta: "想分享去 Instagram，就複製條連結，再貼落限時動態或者訊息度。",
+    shareTextPlace: "喺{place}，一粒米芝蓮星要幾多錢？晚市、午市同配酒價錢一次過比較。",
+    shareTextHome: "一粒米芝蓮星要幾多錢？各個城市晚市、午市同配酒價錢一次過比較。",
     infoDinner: "晚市", infoWine: "配酒", infoGoogle: "Google 評分", infoOpen: "喺 Google 地圖打開", infoNoPrice: "未有公布價錢",
     starsTitle: "每多一粒星，要多俾幾多錢？",
     starsText: "按上面所揀餐期、以米芝蓮星級分組嘅套餐平均價錢。單點餐廳會計入間數，但唔計入平均同價錢範圍。",
@@ -471,6 +487,7 @@ function applyI18n() {
   $("wishLink").href = document.body.classList.contains("home") ? "#wishlist" : withLang("/") + "#wishlist";
   $("wishLink").setAttribute("aria-label", t("wishTitle"));
   $("installBtn").textContent = t("installApp");
+  labelShare();
   const tip = $("installTip");
   if (tip) tip.textContent = t("installTipIos");
 }
@@ -590,6 +607,57 @@ function addNearMe(map, points, { radius = Infinity, far = null } = {}) {
   // relabel() after a language change; locate() to start straight away.
   return { relabel: () => { if (!btn.disabled) label(); render(); }, locate: () => btn.click() };
 }
+
+// ---------- Share ----------
+// The Share button in the header. Phones (and the installed app) open their own share sheet, which includes
+// Instagram, X, WhatsApp and Messages; elsewhere a small menu offers Copy link and the main networks.
+let shareText = () => t("shareTextHome");
+const shareUrl = () => location.origin + location.pathname + (LANG_PREF !== "en" ? "?lang=" + LANG_PREF : "");
+function renderSharePanel() {
+  const url = shareUrl(), text = shareText(), e = encodeURIComponent;
+  const links = [["X", "https://x.com/intent/post?text=" + e(text) + "&url=" + e(url)],
+    ["Facebook", "https://www.facebook.com/sharer/sharer.php?u=" + e(url)],
+    ["WhatsApp", "https://wa.me/?text=" + e(text + " " + url)],
+    [t("shareEmail"), "mailto:?subject=" + e(document.title) + "&body=" + e(text + "\n\n" + url)]];
+  $("sharePanel").innerHTML = '<p class="share-head">' + esc(t("shareTitle")) + "</p>" +
+    '<div class="share-copy"><input type="text" readonly value="' + esc(url) + '" aria-label="' + esc(t("shareTitle")) + '"><button type="button" id="shareCopy">' + esc(t("shareCopy")) + "</button></div>" +
+    '<div class="share-links">' + links.map(([label, href]) => '<a href="' + esc(href) + '" target="_blank" rel="noopener">' + esc(label) + "</a>").join("") + "</div>" +
+    '<p class="share-note">' + esc(t("shareInsta")) + "</p>";
+}
+async function copyShareLink() {
+  const btn = $("shareCopy"), url = shareUrl();
+  try { await navigator.clipboard.writeText(url); }
+  catch (e) { const input = $("sharePanel").querySelector("input"); input.select(); document.execCommand("copy"); }
+  btn.textContent = t("shareCopied");
+  setTimeout(() => { if ($("shareCopy")) $("shareCopy").textContent = t("shareCopy"); }, 2000);
+}
+function labelShare() {
+  $("shareBtn").innerHTML = '<svg aria-hidden="true"><use href="#share"/></svg><span>' + esc(t("share")) + "</span>";
+  $("shareBtn").setAttribute("aria-label", t("shareAria"));
+  if (!$("sharePanel").hidden) renderSharePanel();
+}
+$("shareBtn").addEventListener("click", async () => {
+  if (navigator.share) {
+    try { await navigator.share({ title: document.title, text: shareText(), url: shareUrl() }); return; }
+    catch (e) { if (e.name === "AbortError") return; }
+  }
+  const panel = $("sharePanel");
+  if (!panel.hidden) { panel.hidden = true; $("shareBtn").setAttribute("aria-expanded", "false"); return; }
+  renderSharePanel();
+  // Placed under the button but kept on screen, whichever way the header has wrapped.
+  const r = $("shareBtn").getBoundingClientRect(), vw = document.documentElement.clientWidth, w = Math.min(340, vw - 32);
+  panel.style.top = r.bottom + 10 + "px";
+  panel.style.right = Math.min(Math.max(16, vw - r.right), vw - w - 16) + "px";
+  panel.hidden = false;
+  $("shareBtn").setAttribute("aria-expanded", "true");
+  panel.querySelector("input").select();
+});
+$("sharePanel").addEventListener("click", (e) => { if (e.target.id === "shareCopy") copyShareLink(); });
+document.addEventListener("click", (e) => {
+  if (!$("sharePanel").hidden && !e.target.closest("#sharePanel, #shareBtn")) { $("sharePanel").hidden = true; $("shareBtn").setAttribute("aria-expanded", "false"); }
+});
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("sharePanel").hidden) { $("sharePanel").hidden = true; $("shareBtn").focus(); } });
+window.addEventListener("scroll", () => { if (!$("sharePanel").hidden && Math.abs($("shareBtn").getBoundingClientRect().bottom + 10 - parseFloat($("sharePanel").style.top)) > 4) $("sharePanel").hidden = true; }, { passive: true });
 
 // ---------- Install as an app ----------
 // Android and desktop Chrome offer an install prompt; iPhone and iPad need Safari's "Add to Home Screen".

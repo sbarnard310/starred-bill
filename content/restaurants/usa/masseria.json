@@ -1,0 +1,21 @@
+{
+  "name": "Masseria",
+  "city": "washington-dc",
+  "area": "Union Market",
+  "address": "1340 4th St. NE, Washington, DC 20002",
+  "stars": 1,
+  "cuisine": "Italian",
+  "cuisineZh": "義大利菜",
+  "rating": 4.3,
+  "reviews": 577,
+  "dinner": 225,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, from",
+  "dinnerNoteZh": "品嚐套餐起",
+  "sourceType": "site",
+  "source": "https://www.masseria-dc.com/reservations",
+  "website": "https://www.masseria-dc.com/",
+  "lat": 38.909504,
+  "lng": -76.99908,
+  "placeId": "ChIJp1AcfBq4t4kR8L1hnsBhxtE"
+}

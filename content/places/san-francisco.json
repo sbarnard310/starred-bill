@@ -1,0 +1,7 @@
+{
+  "id": "san-francisco",
+  "type": "city",
+  "parent": "california",
+  "name": "San Francisco",
+  "nameZh": "舊金山"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Ogawa",
+  "city": "miami",
+  "area": "Little Haiti",
+  "address": "7223 N.W. 2nd Ave., Miami, FL 33150",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 5,
+  "reviews": 292,
+  "dinner": 395,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase",
+  "dinnerNoteZh": "廚師發辦",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/ogawa-miami",
+  "website": "https://www.ogawamiami.com/",
+  "lat": 25.841443,
+  "lng": -80.20065,
+  "placeId": "ChIJ0-tCRMux2YgRJIUcLt_1B7s"
+}

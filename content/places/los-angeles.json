@@ -1,0 +1,9 @@
+{
+  "id": "los-angeles",
+  "type": "city",
+  "parent": "california",
+  "name": "Los Angeles",
+  "nameZh": "洛杉磯",
+  "intro": "Includes the starred restaurants in neighbouring Santa Monica, Beverly Hills, West Hollywood, Culver City and Long Beach.",
+  "introZh": "也包括鄰近的聖塔莫尼卡、比佛利山莊、西好萊塢、卡爾弗城與長灘的星級餐廳。"
+}

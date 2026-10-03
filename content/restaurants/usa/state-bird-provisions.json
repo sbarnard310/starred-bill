@@ -1,0 +1,21 @@
+{
+  "name": "State Bird Provisions",
+  "city": "san-francisco",
+  "area": "Western Addition",
+  "address": "1529 Fillmore St., San Francisco, CA 94115",
+  "stars": 1,
+  "cuisine": "Californian",
+  "cuisineZh": "加州菜",
+  "rating": 4.5,
+  "reviews": 2515,
+  "dinner": 60,
+  "dinnerType": "spend",
+  "dinnerNote": "Typical spend",
+  "dinnerNoteZh": "人均消費",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/state-bird-provisions-san-francisco",
+  "website": "https://www.statebirdsf.com/",
+  "lat": 37.783737,
+  "lng": -122.43283,
+  "placeId": "ChIJQ7kGpLmAhYARKeCe2pDobWk"
+}

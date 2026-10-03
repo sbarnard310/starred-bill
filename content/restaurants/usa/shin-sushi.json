@@ -1,0 +1,20 @@
+{
+  "name": "Shin Sushi",
+  "city": "los-angeles",
+  "area": "Encino",
+  "address": "16573 Ventura Blvd., Ste. 14, Encino, CA 91436",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.7,
+  "reviews": 141,
+  "dinner": 230,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase",
+  "dinnerNoteZh": "廚師發辦",
+  "sourceType": "press",
+  "source": "https://www.timeout.com/los-angeles/restaurants/shin-sushi",
+  "lat": 34.158761,
+  "lng": -118.494401,
+  "placeId": "ChIJdUHh7MCZwoAR71vwlsZ5V_o"
+}

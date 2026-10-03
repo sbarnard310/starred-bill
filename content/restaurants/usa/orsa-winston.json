@@ -1,0 +1,22 @@
+{
+  "name": "Orsa & Winston",
+  "city": "los-angeles",
+  "area": "Downtown",
+  "address": "122 W. 4th St., Los Angeles, CA 90013",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.4,
+  "reviews": 312,
+  "dinner": 150,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase",
+  "dinnerNoteZh": "廚師發辦",
+  "wine": 85,
+  "sourceType": "site",
+  "source": "https://www.orsaandwinston.com/faq",
+  "website": "https://www.orsaandwinston.com/",
+  "lat": 34.04847,
+  "lng": -118.247949,
+  "placeId": "ChIJh9W-NkrGwoARmn2KQbXkdhg"
+}

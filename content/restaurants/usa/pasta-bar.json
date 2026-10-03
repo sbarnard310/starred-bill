@@ -1,0 +1,21 @@
+{
+  "name": "Pasta|Bar",
+  "city": "los-angeles",
+  "area": "Encino",
+  "address": "16101 Ventura Blvd., Ste. 250, Encino, CA 91436",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.7,
+  "reviews": 123,
+  "dinner": 245,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "press",
+  "source": "https://www.timeout.com/los-angeles/restaurants/pasta-bar",
+  "website": "https://www.pastabarencino.com/",
+  "lat": 34.156721,
+  "lng": -118.483862,
+  "placeId": "ChIJO84WyaaXwoARGH9mHWHN5mw"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Sushi Nakazawa Washington DC",
+  "city": "washington-dc",
+  "area": "Penn Quarter",
+  "address": "Waldorf Astoria,1100 Pennsylvania Ave. NW, Washington, DC 20004",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.8,
+  "reviews": 464,
+  "dinner": 160,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase, from",
+  "dinnerNoteZh": "廚師發辦起",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/washington-dc/reviews/sushi-nakazawa-dc",
+  "website": "https://www.sushinakazawa.com/",
+  "lat": 38.894624,
+  "lng": -77.027005,
+  "placeId": "ChIJ-f__HJq3t4kRmvtJRiDzurk"
+}

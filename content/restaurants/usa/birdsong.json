@@ -1,0 +1,21 @@
+{
+  "name": "Birdsong",
+  "city": "san-francisco",
+  "area": "SoMa",
+  "address": "1085 Mission St., San Francisco, CA 94103",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.6,
+  "reviews": 490,
+  "dinner": 350,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "site",
+  "source": "https://www.birdsongsf.com/experience",
+  "website": "https://www.birdsongsf.com/",
+  "lat": 37.779508,
+  "lng": -122.41033,
+  "placeId": "ChIJTwtvfIOAhYARHMEe0c2Xi4s"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Elske",
+  "city": "chicago",
+  "area": "West Loop",
+  "address": "1350 W. Randolph Ave., Chicago, IL 60607",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.5,
+  "reviews": 831,
+  "dinner": 140,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "press",
+  "source": "https://www.timeout.com/chicago/restaurants/elske",
+  "website": "https://www.elskerestaurant.com/",
+  "lat": 41.884353,
+  "lng": -87.66086,
+  "placeId": "ChIJSWTvSyYtDogRE-4fa_DPwZA"
+}

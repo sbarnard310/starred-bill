@@ -1,0 +1,21 @@
+{
+  "name": "Osteria Mozza",
+  "city": "los-angeles",
+  "area": "Melrose",
+  "address": "6602 Melrose Ave., Los Angeles, CA 90038",
+  "stars": 1,
+  "cuisine": "Italian",
+  "cuisineZh": "義大利菜",
+  "rating": 4.4,
+  "reviews": 1880,
+  "dinner": 46,
+  "dinnerType": "main",
+  "dinnerNote": "Typical main course",
+  "dinnerNoteZh": "一般主菜",
+  "sourceType": "site",
+  "source": "https://www.osteriamozza.com/menus/",
+  "website": "https://www.osteriamozza.com/",
+  "lat": 34.083425,
+  "lng": -118.338686,
+  "placeId": "ChIJBacpEtO4woAR8TxewBOIolo"
+}

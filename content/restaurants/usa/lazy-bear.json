@@ -1,0 +1,21 @@
+{
+  "name": "Lazy Bear",
+  "city": "san-francisco",
+  "area": "Mission",
+  "address": "3416 19th St., San Francisco, CA 94110",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.7,
+  "reviews": 1211,
+  "dinner": 320,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/lazybear",
+  "website": "https://www.lazybearsf.com/",
+  "lat": 37.76024,
+  "lng": -122.419672,
+  "placeId": "ChIJk35bizx-j4AREil6UPp7Jn4"
+}

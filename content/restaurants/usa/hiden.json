@@ -1,0 +1,21 @@
+{
+  "name": "Hiden",
+  "city": "miami",
+  "area": "Wynwood",
+  "address": "313 N.W. 25th St., Miami, FL 33127",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.8,
+  "reviews": 159,
+  "dinner": 300,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase",
+  "dinnerNoteZh": "廚師發辦",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/hiden",
+  "website": "https://hidenmiami.com/",
+  "lat": 25.800824,
+  "lng": -80.201283,
+  "placeId": "ChIJEaa-UrK22YgR6rXu_t7u2hg"
+}

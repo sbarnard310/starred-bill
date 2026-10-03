@@ -1,0 +1,22 @@
+{
+  "name": "Moody Tongue",
+  "city": "chicago",
+  "area": "South Loop",
+  "address": "2515 S. Wabash Ave., Chicago, IL 60616",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.5,
+  "reviews": 654,
+  "dinner": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 75,
+  "sourceType": "site",
+  "source": "https://www.moodytongue.com/faqs",
+  "website": "https://www.moodytongue.com/",
+  "lat": 41.846965,
+  "lng": -87.625228,
+  "placeId": "ChIJKREupjctDogRPMJ46mxncfM"
+}

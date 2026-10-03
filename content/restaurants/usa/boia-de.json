@@ -1,0 +1,21 @@
+{
+  "name": "Boia De",
+  "city": "miami",
+  "area": "Little River",
+  "address": "5205 N.E. 2nd Ave., Miami, FL 33137",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.6,
+  "reviews": 873,
+  "dinner": 33,
+  "dinnerType": "main",
+  "dinnerNote": "Typical main course",
+  "dinnerNoteZh": "一般主菜",
+  "sourceType": "site",
+  "source": "https://www.boiaderestaurant.com/menus",
+  "website": "https://www.boiaderestaurant.com/",
+  "lat": 25.823945,
+  "lng": -80.191452,
+  "placeId": "ChIJte0b2xux2YgRr8f-xaLb0jw"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Niku Steakhouse",
+  "city": "san-francisco",
+  "area": "Design District",
+  "address": "61 Division St., San Francisco, CA 94103",
+  "stars": 1,
+  "cuisine": "Steakhouse",
+  "cuisineZh": "牛排屋",
+  "rating": 4.5,
+  "reviews": 899,
+  "dinner": 250,
+  "dinnerType": "spend",
+  "dinnerNote": "Typical spend",
+  "dinnerNoteZh": "人均消費",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/san-francisco/reviews/niku-steakhouse",
+  "website": "https://www.nikusteakhouse.com/",
+  "lat": 37.76975,
+  "lng": -122.403621,
+  "placeId": "ChIJ9fZ1hrV_j4AR-j0CLhwaYc0"
+}

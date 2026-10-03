@@ -1,0 +1,21 @@
+{
+  "name": "Mélisse",
+  "city": "los-angeles",
+  "area": "Santa Monica",
+  "address": "1104 Wilshire Blvd., Santa Monica, CA 90401",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "cuisineZh": "時尚法國菜",
+  "rating": 4.5,
+  "reviews": 410,
+  "dinner": 399,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/melisse-reservations-santa-monica",
+  "website": "https://www.citrinandmelisse.com/",
+  "lat": 34.024541,
+  "lng": -118.491583,
+  "placeId": "ChIJ7fOMUsSkwoARIOVuE_23I1Q"
+}

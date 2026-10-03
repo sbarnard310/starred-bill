@@ -1,0 +1,21 @@
+{
+  "name": "Causa",
+  "city": "washington-dc",
+  "area": "Shaw",
+  "address": "920 Blagden Alley NW, Washington, DC 20001",
+  "stars": 1,
+  "cuisine": "Peruvian",
+  "cuisineZh": "秘魯菜",
+  "rating": 4.1,
+  "reviews": 61,
+  "dinner": 179,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/causa-washington",
+  "website": "https://www.causadc.com/",
+  "lat": 38.906905,
+  "lng": -77.024685,
+  "placeId": "ChIJP1ej4ae3t4kRZmPbTsaTz_w"
+}

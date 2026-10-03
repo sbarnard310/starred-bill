@@ -1,0 +1,21 @@
+{
+  "name": "Nozawa Bar",
+  "city": "los-angeles",
+  "area": "Beverly Hills",
+  "address": "212 N. Cañon Dr., Beverly Hills, CA 90210",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.5,
+  "reviews": 80,
+  "dinner": 225,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase",
+  "dinnerNoteZh": "廚師發辦",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/nozawabar",
+  "website": "https://www.nozawabar.com/",
+  "lat": 34.068334,
+  "lng": -118.398404,
+  "placeId": "ChIJwXV42C27woARZnY7NuiUIu4"
+}

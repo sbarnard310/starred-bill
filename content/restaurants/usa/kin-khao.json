@@ -1,0 +1,21 @@
+{
+  "name": "Kin Khao",
+  "city": "san-francisco",
+  "area": "Union Square",
+  "address": "Parc 55 San Francisco - a Hilton Hotel, 55 Cyril Magnin St., San Francisco, CA 94102",
+  "stars": 1,
+  "cuisine": "Thai",
+  "cuisineZh": "泰國菜",
+  "rating": 4.2,
+  "reviews": 2202,
+  "dinner": 26,
+  "dinnerType": "main",
+  "dinnerNote": "Typical main course",
+  "dinnerNoteZh": "一般主菜",
+  "sourceType": "press",
+  "source": "https://menutoeat.com/kin-khao/",
+  "website": "https://www.kinkhao.com/",
+  "lat": 37.785267,
+  "lng": -122.40951,
+  "placeId": "ChIJn_ZxYo-AhYAR22wJt4at2K0"
+}

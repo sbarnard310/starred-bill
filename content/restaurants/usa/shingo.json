@@ -1,0 +1,21 @@
+{
+  "name": "Shingo",
+  "city": "miami",
+  "area": "Coral Gables",
+  "address": "112 Alhambra Cir., Coral Gables, FL 33134",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.8,
+  "reviews": 160,
+  "dinner": 225,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase",
+  "dinnerNoteZh": "廚師發辦",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/miami/reviews/shingo-coral-gables",
+  "website": "https://www.shingomiami.com/",
+  "lat": 25.752999,
+  "lng": -80.2568,
+  "placeId": "ChIJu5d4Dui32YgRs6qW_4aQOWM"
+}

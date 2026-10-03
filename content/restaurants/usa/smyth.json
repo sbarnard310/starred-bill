@@ -1,0 +1,21 @@
+{
+  "name": "Smyth",
+  "city": "chicago",
+  "area": "West Loop",
+  "address": "177 N. Ada St., Chicago, IL 60607",
+  "stars": 3,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.6,
+  "reviews": 1368,
+  "dinner": 420,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "site",
+  "source": "https://www.smythchicago.com/menu",
+  "website": "https://www.smythchicago.com/",
+  "lat": 41.885049,
+  "lng": -87.660632,
+  "placeId": "ChIJxRcpzSctDogRBKHyFUKauHc"
+}

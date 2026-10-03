@@ -1,0 +1,21 @@
+{
+  "name": "Stubborn Seed",
+  "city": "miami",
+  "area": "Miami Beach",
+  "address": "101 Washington Ave., Miami Beach, FL 33139",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.5,
+  "reviews": 1570,
+  "dinner": 150,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, from",
+  "dinnerNoteZh": "品嚐套餐起",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/stubborn-seed-miami-beach",
+  "website": "https://stubbornseed.com/",
+  "lat": 25.770023,
+  "lng": -80.135047,
+  "placeId": "ChIJkwRTevG02YgRQqy7_cHUWGQ"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Sushi Kaneyoshi",
+  "city": "los-angeles",
+  "area": "Little Tokyo",
+  "address": "250 E. 1st St., B1, Los Angeles, CA 90012",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.7,
+  "reviews": 58,
+  "dinner": 300,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase",
+  "dinnerNoteZh": "廚師發辦",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/los-angeles/guides/the-best-omakase-spots-in-la",
+  "website": "https://www.kaneyoshi.us/",
+  "lat": 34.050065,
+  "lng": -118.241363,
+  "placeId": "ChIJIXKeGv_HwoARtFSSk2sS2AI"
+}

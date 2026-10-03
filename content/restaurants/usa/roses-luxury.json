@@ -1,0 +1,21 @@
+{
+  "name": "Rose’s Luxury",
+  "city": "washington-dc",
+  "area": "Capitol Hill",
+  "address": "717 8th St. SE, Washington, DC 20003",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.7,
+  "reviews": 1926,
+  "dinner": 95,
+  "dinnerType": "menu",
+  "dinnerNote": "Family-style set menu",
+  "dinnerNoteZh": "家庭式套餐",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/roses-luxury-washington",
+  "website": "https://www.rosesluxury.com/",
+  "lat": 38.880648,
+  "lng": -76.995059,
+  "placeId": "ChIJUZM20My5t4kRnhgopk_e4YA"
+}

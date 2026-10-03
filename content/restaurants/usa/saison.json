@@ -1,0 +1,21 @@
+{
+  "name": "Saison",
+  "city": "san-francisco",
+  "area": "SoMa",
+  "address": "178 Townsend St., San Francisco, CA 94107",
+  "stars": 2,
+  "cuisine": "Californian",
+  "cuisineZh": "加州菜",
+  "rating": 4.6,
+  "reviews": 658,
+  "dinner": 368,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, from",
+  "dinnerNoteZh": "品嚐套餐起",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/saison-san-francisco-2",
+  "website": "https://www.saisonsf.com/",
+  "lat": 37.779688,
+  "lng": -122.392222,
+  "placeId": "ChIJPUo32Aj3MhURXL06eVIEoHc"
+}

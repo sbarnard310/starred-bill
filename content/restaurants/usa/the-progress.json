@@ -1,0 +1,16 @@
+{
+  "name": "The Progress",
+  "city": "san-francisco",
+  "area": "Western Addition",
+  "address": "1525 Fillmore St., San Francisco, CA 94115",
+  "stars": 1,
+  "cuisine": "Californian",
+  "cuisineZh": "加州菜",
+  "rating": 4.6,
+  "reviews": 1358,
+  "dinnerType": "menu",
+  "website": "https://theprogress-sf.com/",
+  "lat": 37.78371,
+  "lng": -122.43282,
+  "placeId": "ChIJ8zXoo7mAhYARtoa-WE3d5NE"
+}

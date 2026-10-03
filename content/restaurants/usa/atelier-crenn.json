@@ -1,0 +1,21 @@
+{
+  "name": "Atelier Crenn",
+  "city": "san-francisco",
+  "area": "Cow Hollow",
+  "address": "3127 Fillmore St., San Francisco, CA 94123",
+  "stars": 3,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.6,
+  "reviews": 788,
+  "dinner": 405,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/atelier-crenn",
+  "website": "https://www.ateliercrenn.com/",
+  "lat": 37.79835,
+  "lng": -122.43586,
+  "placeId": "ChIJx1ULhNCAhYARSRq9NDWTeqI"
+}

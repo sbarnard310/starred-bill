@@ -1,0 +1,16 @@
+{
+  "name": "Bresca",
+  "city": "washington-dc",
+  "area": "U Street",
+  "address": "1906 14th St. NW, Washington, DC 20009",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.4,
+  "reviews": 912,
+  "dinnerType": "menu",
+  "website": "https://www.brescadc.com/",
+  "lat": 38.915782,
+  "lng": -77.03195,
+  "placeId": "ChIJIfKOC-i3t4kRjYSije_nwy0"
+}

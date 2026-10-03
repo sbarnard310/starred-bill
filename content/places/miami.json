@@ -1,0 +1,9 @@
+{
+  "id": "miami",
+  "type": "city",
+  "parent": "florida",
+  "name": "Miami",
+  "nameZh": "邁阿密",
+  "intro": "Includes the starred restaurants in Miami Beach, Coral Gables and North Miami.",
+  "introZh": "也包括邁阿密海灘、科勒爾蓋布爾斯與北邁阿密的星級餐廳。"
+}

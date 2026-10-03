@@ -1,0 +1,22 @@
+{
+  "name": "Rania",
+  "city": "washington-dc",
+  "area": "Penn Quarter",
+  "address": "427 11th St. NW, Washington, DC 20004",
+  "stars": 1,
+  "cuisine": "Indian",
+  "cuisineZh": "印度菜",
+  "rating": 4.4,
+  "reviews": 526,
+  "dinner": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 125,
+  "sourceType": "site",
+  "source": "https://www.raniadc.com/menu",
+  "website": "https://www.raniadc.com/",
+  "lat": 38.89561,
+  "lng": -77.0268,
+  "placeId": "ChIJgQnWynC3t4kRoG2k8vB3owU"
+}

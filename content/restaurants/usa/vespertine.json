@@ -1,0 +1,21 @@
+{
+  "name": "Vespertine",
+  "city": "los-angeles",
+  "area": "Culver City",
+  "address": "3599 Hayden Ave., Culver City, CA 90232",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.4,
+  "reviews": 311,
+  "dinner": 425,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, from",
+  "dinnerNoteZh": "品嚐套餐起",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/vespertine-culver-city",
+  "website": "https://vespertine.la/",
+  "lat": 34.024204,
+  "lng": -118.38166,
+  "placeId": "ChIJVd04SYW5woAROE52K0dXeYE"
+}

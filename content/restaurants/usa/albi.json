@@ -1,0 +1,21 @@
+{
+  "name": "Albi",
+  "city": "washington-dc",
+  "area": "Navy Yard",
+  "address": "1346 4th St. SE, Washington, DC 20003",
+  "stars": 1,
+  "cuisine": "Middle Eastern",
+  "cuisineZh": "中東菜",
+  "rating": 4.7,
+  "reviews": 931,
+  "dinner": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, from",
+  "dinnerNoteZh": "品嚐套餐起",
+  "sourceType": "press",
+  "source": "https://washingtonian.com/100-very-best-restaurants-2026/albi-4/",
+  "website": "https://www.albidc.com/",
+  "lat": 38.874115,
+  "lng": -77.000967,
+  "placeId": "ChIJ240L8N25t4kRCoGiQ2-21bI"
+}

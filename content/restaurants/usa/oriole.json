@@ -1,0 +1,21 @@
+{
+  "name": "Oriole",
+  "city": "chicago",
+  "area": "West Loop",
+  "address": "661 W. Walnut St., Chicago, IL 60661",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.8,
+  "reviews": 663,
+  "dinner": 325,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/oriolechicago",
+  "website": "https://www.oriolechicago.com/",
+  "lat": 41.886209,
+  "lng": -87.645302,
+  "placeId": "ChIJ4_ovZs8sDogRyw3X3QCiI-Y"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Kali",
+  "city": "los-angeles",
+  "area": "Hancock Park",
+  "address": "5722 Melrose Ave., Los Angeles, CA 90038",
+  "stars": 1,
+  "cuisine": "Steakhouse",
+  "cuisineZh": "牛排屋",
+  "rating": 4.4,
+  "reviews": 483,
+  "dinnerType": "menu",
+  "website": "https://www.kalirestaurant.com/",
+  "lat": 34.083456,
+  "lng": -118.32454,
+  "placeId": "ChIJdfiEi8m4woAR82sc6js_AXs"
+}

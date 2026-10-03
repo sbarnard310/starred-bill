@@ -31,12 +31,14 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
   - The lunch equivalents are `lunchSourceType` and `lunchSource`.
 - When a restaurant loses its stars or closes, keep it: set `stars` to 0 and fill in `status`, `formerStars` and `statusNote`.
 - A restaurant's `city` is a place id. It shows on that place and on every place above it, plus any `group` that includes them. A region or country can hold restaurants directly: Hong Kong, Macau, Ireland, and UK restaurants outside the cities we cover. These sit in their county where it has a page (e.g. `yorkshire`, `cumbria`, `perthshire`), otherwise in their nation (`england`, `scotland`, `wales`, `northern-ireland` or `channel-islands`), with "Town, County" in `area`. Every ceremonial county in England has a page (Yorkshire is one page for all four Yorkshire counties; London and Bristol are cities directly under England). When a city page is added (e.g. York inside Yorkshire), move its restaurants' `city` to it.
+- US cities sit inside their state (Illinois, California, Florida, New York State), so a state page can grow when more of its cities are added. Washington DC sits directly under the United States. Los Angeles includes Santa Monica, Beverly Hills, West Hollywood, Culver City, Encino and Long Beach; Miami includes Miami Beach, Coral Gables and North Miami. Each state (or DC) sets its own `starsText` for its guide.
 - Web addresses nest the whole chain, e.g. `/uk/england/london/`. A `district` sits inside a city (New York's five boroughs); restaurants there show "Neighbourhood, Borough" on the city page. Moving a page means adding its old address to the place's `redirectFrom`, which builds a forwarding page.
 - Each country's currency must be in `content/currencies.json`.
 - Sources used so far:
   - Stars, addresses and map positions: guide.michelin.com, extracted in the browser.
   - Google ratings: Places API (New) Text Search, sending `Referer: https://starredbill.com/` because the key only accepts set websites.
   - Prices: restaurant websites first, then recent reviews and booking sites.
+  - Prices in the US: Tock pages (exploretock.com/<slug>) carry each menu's price in the page; OpenTable experience pages show prices including the service charge, so take the base amount (`minUnitAmount`) instead. OpenTable starts refusing after a few dozen quick fetches.
   - Prices in Japan: many top restaurants publish none. OMAKASE JapanEatinerary (omakaseje.com) restaurant pages list each course in yen, mostly including tax and service; read them with fetch() from inside an omakaseje.com browser tab, as it rate-limits heavy use. Pocket Concierge pages render in the browser after a moment. omakase.in and Tabelog show a Cloudflare check, so they can't be read, but search results quote their prices.
 
 ## Google Maps key

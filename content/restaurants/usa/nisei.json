@@ -1,0 +1,21 @@
+{
+  "name": "Nisei",
+  "city": "san-francisco",
+  "area": "Russian Hill",
+  "address": "2316 Polk St., San Francisco, CA 94109",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.6,
+  "reviews": 243,
+  "dinner": 274,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/nisei-san-francisco",
+  "website": "https://www.restaurantnisei.com/",
+  "lat": 37.798158,
+  "lng": -122.42208,
+  "placeId": "ChIJYSfspPSBhYARcVCbbkjGXg0"
+}

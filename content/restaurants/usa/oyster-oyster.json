@@ -1,0 +1,21 @@
+{
+  "name": "Oyster Oyster",
+  "city": "washington-dc",
+  "area": "Shaw",
+  "address": "1440 8th St. NW, Washington, DC 20001",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "cuisineZh": "素食",
+  "rating": 4.6,
+  "reviews": 305,
+  "dinner": 135,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "site",
+  "source": "https://www.oysteroysterdc.com/menu",
+  "website": "https://www.oysteroysterdc.com/",
+  "lat": 38.909302,
+  "lng": -77.023015,
+  "placeId": "ChIJQcHOEK-3t4kRbvsIP3ccItA"
+}

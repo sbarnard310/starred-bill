@@ -1,0 +1,22 @@
+{
+  "name": "n/naka",
+  "city": "los-angeles",
+  "area": "Palms",
+  "address": "3455 Overland Ave., Los Angeles, CA 90034",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.9,
+  "reviews": 537,
+  "dinner": 395,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 195,
+  "sourceType": "site",
+  "source": "https://n-naka.com/more-information/",
+  "website": "https://n-naka.com/",
+  "lat": 34.02526,
+  "lng": -118.41206,
+  "placeId": "ChIJb7GeyDS6woAROVvLEUiLZEk"
+}

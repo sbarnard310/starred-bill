@@ -1,0 +1,21 @@
+{
+  "name": "Ssal",
+  "city": "san-francisco",
+  "area": "Russian Hill",
+  "address": "2226 Polk St., San Francisco, CA 94109",
+  "stars": 1,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.7,
+  "reviews": 233,
+  "dinner": 270,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, from",
+  "dinnerNoteZh": "品嚐套餐起",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/restaurant/profile/1464916",
+  "website": "https://ssalsf.com/",
+  "lat": 37.797258,
+  "lng": -122.421965,
+  "placeId": "ChIJz9axs6SBhYARWHXy6JCAk_0"
+}

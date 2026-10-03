@@ -1,0 +1,21 @@
+{
+  "name": "Benu",
+  "city": "san-francisco",
+  "area": "SoMa",
+  "address": "22 Hawthorne St., San Francisco, CA 94105",
+  "stars": 3,
+  "cuisine": "Asian",
+  "cuisineZh": "亞洲菜",
+  "rating": 4.6,
+  "reviews": 754,
+  "dinner": 425,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "site",
+  "source": "https://www.benusf.com/info",
+  "website": "https://www.benusf.com/",
+  "lat": 37.785376,
+  "lng": -122.39906,
+  "placeId": "ChIJSToWqn2AhYAR1CuH2iGMvuo"
+}

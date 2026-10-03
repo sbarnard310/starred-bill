@@ -1,0 +1,21 @@
+{
+  "name": "Indienne",
+  "city": "chicago",
+  "area": "River North",
+  "address": "217 W. Huron St., Chicago, IL 60654",
+  "stars": 1,
+  "cuisine": "Indian",
+  "cuisineZh": "印度菜",
+  "rating": 4.6,
+  "reviews": 869,
+  "dinner": 145,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "press",
+  "source": "https://blog.resy.com/2026/06/indienne-chicago/",
+  "website": "https://indiennechicago.com/",
+  "lat": 41.894605,
+  "lng": -87.634748,
+  "placeId": "ChIJgaWIsk8tDogRXfsAkui5JOM"
+}

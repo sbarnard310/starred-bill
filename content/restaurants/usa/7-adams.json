@@ -1,0 +1,22 @@
+{
+  "name": "7 Adams",
+  "city": "san-francisco",
+  "area": "Japantown",
+  "address": "1963 Sutter St., San Francisco, CA 94115",
+  "stars": 1,
+  "cuisine": "Californian",
+  "cuisineZh": "加州菜",
+  "rating": 4.4,
+  "reviews": 493,
+  "dinner": 127,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 77,
+  "sourceType": "site",
+  "source": "https://www.7adamsrestaurant.com/menus",
+  "website": "https://www.7adamsrestaurant.com/",
+  "lat": 37.786141,
+  "lng": -122.432632,
+  "placeId": "ChIJXVvsirKBhYARfWD1MEpT_Uw"
+}

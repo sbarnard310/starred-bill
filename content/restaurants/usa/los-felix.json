@@ -1,0 +1,21 @@
+{
+  "name": "Los Félix",
+  "city": "miami",
+  "area": "Coconut Grove",
+  "address": "3413 Main Hwy., Miami, FL 33133",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineZh": "墨西哥菜",
+  "rating": 4.6,
+  "reviews": 1468,
+  "dinner": 36,
+  "dinnerType": "main",
+  "dinnerNote": "Typical main course",
+  "dinnerNoteZh": "一般主菜",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/miami/reviews/los-felix-taqueria",
+  "website": "https://www.losfelixmiami.com/",
+  "lat": 25.727677,
+  "lng": -80.242818,
+  "placeId": "ChIJ3YT7i5K32YgRvjbujmZU6Ak"
+}

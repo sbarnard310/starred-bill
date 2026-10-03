@@ -1,0 +1,21 @@
+{
+  "name": "San Ho Won",
+  "city": "san-francisco",
+  "area": "Mission",
+  "address": "2170 Bryant St., San Francisco, CA 94110",
+  "stars": 1,
+  "cuisine": "Korean",
+  "cuisineZh": "韓國菜",
+  "rating": 4.6,
+  "reviews": 763,
+  "dinner": 118,
+  "dinnerType": "menu",
+  "dinnerNote": "Prix fixe menu",
+  "dinnerNoteZh": "定價套餐",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/sanhowon",
+  "website": "https://www.sanhowon.com/",
+  "lat": 37.759574,
+  "lng": -122.410024,
+  "placeId": "ChIJBQpgwVh_j4ARocWBZnqOXEg"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Restaurant Ki",
+  "city": "los-angeles",
+  "area": "Little Tokyo",
+  "address": "111 San Pedro St., Los Angeles, CA 90012",
+  "stars": 1,
+  "cuisine": "Korean Contemporary",
+  "cuisineZh": "時尚韓國菜",
+  "rating": 4.9,
+  "reviews": 38,
+  "dinner": 300,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 190,
+  "sourceType": "site",
+  "source": "https://restaurants.kaneyoshi.us/ki.html",
+  "website": "https://restaurantki.com/",
+  "lat": 34.050172,
+  "lng": -118.241166,
+  "placeId": "ChIJ6fB8aADHwoARxXCY99wLo0U"
+}

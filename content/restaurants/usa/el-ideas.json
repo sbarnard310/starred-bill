@@ -1,0 +1,21 @@
+{
+  "name": "EL Ideas",
+  "city": "chicago",
+  "area": "Douglass Park",
+  "address": "2419 W. 14th St., Chicago, IL 60608",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.8,
+  "reviews": 418,
+  "dinner": 195,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "site",
+  "source": "https://www.elideas.com/faq",
+  "website": "https://www.elideas.com/",
+  "lat": 41.862929,
+  "lng": -87.686825,
+  "placeId": "ChIJbbQglnAtDogR-Y6w6ETH91A"
+}

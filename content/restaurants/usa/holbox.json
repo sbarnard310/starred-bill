@@ -1,0 +1,21 @@
+{
+  "name": "Holbox",
+  "city": "los-angeles",
+  "area": "South Los Angeles",
+  "address": "3655 S. Grand Ave., Los Angeles, CA 90007",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineZh": "墨西哥菜",
+  "rating": 4.8,
+  "reviews": 2979,
+  "dinner": 130,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "site",
+  "source": "https://www.holboxla.com/tasting-menu",
+  "website": "https://www.holboxla.com/",
+  "lat": 34.017384,
+  "lng": -118.27802,
+  "placeId": "ChIJMc9-jgrIwoARvFaE32ZlJzA"
+}

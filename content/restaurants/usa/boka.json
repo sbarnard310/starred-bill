@@ -1,0 +1,22 @@
+{
+  "name": "Boka",
+  "city": "chicago",
+  "area": "Lincoln Park",
+  "address": "1729 N. Halsted St., Chicago, IL 60614",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.7,
+  "reviews": 2172,
+  "dinner": 195,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 95,
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/boka-chicago",
+  "website": "https://www.bokachicago.com/",
+  "lat": 41.913597,
+  "lng": -87.648244,
+  "placeId": "ChIJg7aSMj3TD4gRlHUmzqlebUI"
+}

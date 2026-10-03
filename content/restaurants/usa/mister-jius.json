@@ -1,0 +1,21 @@
+{
+  "name": "Mister Jiu’s",
+  "city": "san-francisco",
+  "area": "Chinatown",
+  "address": "28 Waverly Pl., San Francisco, CA 94108",
+  "stars": 1,
+  "cuisine": "Chinese",
+  "cuisineZh": "中國菜",
+  "rating": 4.3,
+  "reviews": 1217,
+  "dinner": 125,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus a shared main",
+  "dinnerNoteZh": "品嚐套餐，另加一道共享主菜",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/san-francisco/reviews/mister-jius",
+  "website": "https://misterjius.com/",
+  "lat": 37.79371,
+  "lng": -122.406654,
+  "placeId": "ChIJyRDJYIuAhYARyAPkIc7A2Vo"
+}

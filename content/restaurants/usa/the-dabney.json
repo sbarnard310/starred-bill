@@ -1,0 +1,21 @@
+{
+  "name": "The Dabney",
+  "city": "washington-dc",
+  "area": "Shaw",
+  "address": "122 Blagden Alley NW, Washington, DC 20001",
+  "stars": 1,
+  "cuisine": "American",
+  "cuisineZh": "美國菜",
+  "rating": 4.6,
+  "reviews": 1381,
+  "dinner": 145,
+  "dinnerType": "menu",
+  "dinnerNote": "Prix fixe menu, 5 courses",
+  "dinnerNoteZh": "定價套餐，五道菜",
+  "sourceType": "press",
+  "source": "https://washingtonian.com/100-very-best-restaurants-2026/the-dabney-4/",
+  "website": "https://thedabney.com/",
+  "lat": 38.906292,
+  "lng": -77.024594,
+  "placeId": "ChIJrTuAH-23t4kRUu2vghXPScI"
+}

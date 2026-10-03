@@ -1,0 +1,22 @@
+{
+  "name": "Acquerello",
+  "city": "san-francisco",
+  "area": "Nob Hill",
+  "address": "1722 Sacramento St., San Francisco, CA 94109",
+  "stars": 2,
+  "cuisine": "Italian",
+  "cuisineZh": "義大利菜",
+  "rating": 4.6,
+  "reviews": 669,
+  "dinner": 295,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 195,
+  "sourceType": "site",
+  "source": "https://www.acquerellosf.com/menus",
+  "website": "https://www.acquerellosf.com/",
+  "lat": 37.79167,
+  "lng": -122.42131,
+  "placeId": "ChIJwYdY3uqAhYARXUJUOIELoqU"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "L'Atelier de Joël Robuchon Miami",
+  "city": "miami",
+  "area": "Design District",
+  "address": "151 N.E. 41st St., Miami, FL 33137",
+  "stars": 2,
+  "cuisine": "French",
+  "cuisineZh": "法國菜",
+  "rating": 4.4,
+  "reviews": 738,
+  "dinner": 295,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/miami/reviews/latelier-de-joel-robuchon",
+  "website": "https://latelier-miami.com/",
+  "lat": 25.814444,
+  "lng": -80.192144,
+  "placeId": "ChIJJ3pnTr6x2YgRUcKI0-aDyJs"
+}

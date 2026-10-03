@@ -1,0 +1,22 @@
+{
+  "name": "Hilda and Jesse",
+  "city": "san-francisco",
+  "area": "North Beach",
+  "address": "701 Union St., San Francisco, CA 94133",
+  "stars": 1,
+  "cuisine": "American",
+  "cuisineZh": "美國菜",
+  "rating": 4,
+  "reviews": 568,
+  "dinner": 99,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 42,
+  "sourceType": "site",
+  "source": "https://www.hildaandjessesf.com/menu",
+  "website": "https://www.hildaandjessesf.com/",
+  "lat": 37.80009,
+  "lng": -122.41101,
+  "placeId": "ChIJOTx-qBuBhYARiQ7wRTHOyj4"
+}

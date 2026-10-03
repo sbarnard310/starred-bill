@@ -1,0 +1,20 @@
+{
+  "name": "Mutra",
+  "city": "miami",
+  "area": "North Miami",
+  "address": "2188 N.E. 123rd St., North Miami, FL 33181",
+  "stars": 1,
+  "cuisine": "Middle Eastern",
+  "cuisineZh": "中東菜",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteZh": "首度摘星",
+  "changeDate": "2026-05",
+  "rating": 4.6,
+  "reviews": 254,
+  "dinnerType": "menu",
+  "website": "https://mutramiami.com/",
+  "lat": 25.889159,
+  "lng": -80.15407,
+  "placeId": "ChIJVxmvsZCz2YgRamqn_tHB5Tw"
+}

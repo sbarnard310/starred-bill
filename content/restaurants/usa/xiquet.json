@@ -1,0 +1,22 @@
+{
+  "name": "Xiquet",
+  "city": "washington-dc",
+  "area": "Glover Park",
+  "address": "2404 Wisconsin Ave. NW, Washington, DC 20007",
+  "stars": 1,
+  "cuisine": "Spanish",
+  "cuisineZh": "西班牙菜",
+  "rating": 4.4,
+  "reviews": 274,
+  "dinner": 225,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 225,
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/xiquet-by-danny-lledo-washington",
+  "website": "https://www.xiquetdl.com/",
+  "lat": 38.921554,
+  "lng": -77.072475,
+  "placeId": "ChIJZZNZ9Lu3t4kRsIt1tM8JHjk"
+}

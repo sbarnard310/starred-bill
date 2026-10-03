@@ -1,0 +1,21 @@
+{
+  "name": "Little Pearl",
+  "city": "washington-dc",
+  "area": "Capitol Hill",
+  "address": "921 Pennsylvania Ave. SE, Washington, DC 20003",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.5,
+  "reviews": 709,
+  "dinner": 133,
+  "dinnerType": "menu",
+  "dinnerNote": "Prix fixe menu",
+  "dinnerNoteZh": "定價套餐",
+  "sourceType": "site",
+  "source": "https://www.littlepearldc.com/faq",
+  "website": "https://www.littlepearldc.com/",
+  "lat": 38.883356,
+  "lng": -76.993637,
+  "placeId": "ChIJZamGfTO4t4kRnjETn_wWEqM"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Sons & Daughters",
+  "city": "san-francisco",
+  "area": "Mission",
+  "address": "2875 18th St., San Francisco, CA 94110",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.7,
+  "reviews": 404,
+  "dinner": 330,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 185,
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/sons-and-daughters-reservations-san-francisco",
+  "website": "https://www.sonsanddaughterssf.com/",
+  "lat": 37.76159,
+  "lng": -122.41085,
+  "placeId": "ChIJvXXIOoyAhYARe-ixq3WdmrY"
+}

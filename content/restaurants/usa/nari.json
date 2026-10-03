@@ -1,0 +1,21 @@
+{
+  "name": "Nari",
+  "city": "san-francisco",
+  "area": "Japantown",
+  "address": "Hotel Kabuki - JDV by Hyatt, 1625 Post St., San Francisco, CA 94115",
+  "stars": 1,
+  "cuisine": "Thai",
+  "cuisineZh": "泰國菜",
+  "rating": 4.2,
+  "reviews": 604,
+  "dinner": 115,
+  "dinnerType": "menu",
+  "dinnerNote": "Family-style set menu",
+  "dinnerNoteZh": "家庭式套餐",
+  "sourceType": "site",
+  "source": "https://www.narisf.com/food-menu",
+  "website": "https://www.narisf.com/",
+  "lat": 37.785542,
+  "lng": -122.428832,
+  "placeId": "ChIJCf9p82aBhYARQolIoRsK6fE"
+}

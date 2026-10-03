@@ -1,0 +1,22 @@
+{
+  "name": "Mako",
+  "city": "chicago",
+  "area": "West Loop",
+  "address": "731 W. Lake St., Chicago, IL 60661",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "rating": 4.4,
+  "reviews": 358,
+  "dinner": 225,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase",
+  "dinnerNoteZh": "廚師發辦",
+  "wine": 110,
+  "sourceType": "site",
+  "source": "https://www.makochicago.com/menu",
+  "website": "https://www.makochicago.com/",
+  "lat": 41.885775,
+  "lng": -87.646897,
+  "placeId": "ChIJDdy6PActDogRtHVYT64x2sY"
+}

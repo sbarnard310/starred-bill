@@ -1,0 +1,22 @@
+{
+  "name": "Sepia",
+  "city": "chicago",
+  "area": "West Loop",
+  "address": "123 N. Jefferson St., Chicago, IL 60661",
+  "stars": 1,
+  "cuisine": "American",
+  "cuisineZh": "美國菜",
+  "rating": 4.6,
+  "reviews": 1582,
+  "dinner": 195,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 95,
+  "sourceType": "site",
+  "source": "https://www.sepiachicago.com/tasting-menu",
+  "website": "https://www.sepiachicago.com/",
+  "lat": 41.884095,
+  "lng": -87.64261,
+  "placeId": "ChIJ_0NFbsYsDogRHqnXKkBCgs8"
+}

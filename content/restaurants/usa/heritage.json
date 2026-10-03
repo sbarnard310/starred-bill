@@ -1,0 +1,22 @@
+{
+  "name": "Heritage",
+  "city": "los-angeles",
+  "area": "Long Beach",
+  "address": "2030 E. 7th St., Long Beach, CA 90804",
+  "stars": 1,
+  "cuisine": "Californian",
+  "cuisineZh": "加州菜",
+  "rating": 4.5,
+  "reviews": 287,
+  "dinner": 195,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 95,
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/heritage-long-beach",
+  "website": "https://heritagerestaurant.fullbellyfoodgroup.com/",
+  "lat": 33.775291,
+  "lng": -118.166777,
+  "placeId": "ChIJDcD184Qx3YARLeMltHfb8PU"
+}

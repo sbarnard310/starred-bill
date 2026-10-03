@@ -1,0 +1,22 @@
+{
+  "name": "Sorrel",
+  "city": "san-francisco",
+  "area": "Presidio Heights",
+  "address": "3228 Sacramento St., San Francisco, CA 94115",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineZh": "時尚菜",
+  "rating": 4.5,
+  "reviews": 543,
+  "dinner": 195,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐套餐",
+  "wine": 105,
+  "sourceType": "site",
+  "source": "https://www.sorrelrestaurant.com/menu",
+  "website": "https://www.sorrelrestaurant.com/",
+  "lat": 37.788334,
+  "lng": -122.44614,
+  "placeId": "ChIJSUqmKoyAhYARHqx0N3gnl8o"
+}

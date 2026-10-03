@@ -48,7 +48,7 @@ Free accounts let people keep their wishlist on every device and tick off restau
 - The first time a browser meets an account, anything saved while signed out is merged in; after that the account is the record. Changes wait in `starredbill-pending` until sent. Signing out clears both lists from that browser.
 - Signed out, the wishlist works and stays in the browser; "been there" asks the person to sign up.
 - `/account/` (account.html + account-page.js) shows stats, milestones, progress by destination, both lists, and download / sign out / delete. `/privacy/` (privacy.html + info-page.js) is the privacy notice in English and Chinese; update it if what's stored changes.
-- In Supabase, Authentication › URL Configuration allows starredbill.com, www and localhost:8799. Google sign-in uses a Google Cloud OAuth client; sign-in emails go through Resend's SMTP from starredbill.com (until that's set up, Supabase only emails the project owner).
+- In Supabase, Authentication › URL Configuration allows starredbill.com, www and localhost:8799. Google sign-in uses a Google Cloud OAuth client; sign-in emails go through Resend's SMTP from starredbill.com (set up 3 Oct 2026). Both sign-in emails (Magic Link and Confirm signup, under Authentication › Emails › Templates) use `supabase/email-template.html`.
 
 ## Google Maps key
 It's a browser key in `src/assets/common.js`, restricted to these addresses:

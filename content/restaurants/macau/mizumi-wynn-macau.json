@@ -1,0 +1,20 @@
+{
+  "name": "Mizumi (Wynn Macau)",
+  "nameZh": "泓 (永利澳門)",
+  "city": "macau",
+  "area": "Macau Peninsula",
+  "areaZh": "澳門半島",
+  "address": "GF, Wynn Macau, Rua Cidade de Sintra, NAPE, Macau",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "change": "down",
+  "changeNote": "Lost its stars",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2025-03",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 2,
+  "statusNote": "Closed before the 2025 guide; Mizumi at Wynn Palace now holds one star",
+  "statusNoteZh": "於 2025 年指南公布前停業；永利皇宮的泓現獲一星"
+}

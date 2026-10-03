@@ -30,7 +30,7 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
   - `source`: the link.
   - The lunch equivalents are `lunchSourceType` and `lunchSource`.
 - When a restaurant loses its stars or closes, keep it: set `stars` to 0 and fill in `status`, `formerStars` and `statusNote`.
-- A restaurant's `city` is a place id. It shows on that place and on every place above it, plus any `group` that includes them. A region or country can hold restaurants directly: Hong Kong, Ireland, and UK restaurants outside London (`city` is `england`, `scotland`, `wales`, `northern-ireland` or `channel-islands`, with "Town, County" in `area`).
+- A restaurant's `city` is a place id. It shows on that place and on every place above it, plus any `group` that includes them. A region or country can hold restaurants directly: Hong Kong, Macau, Ireland, and UK restaurants outside London (`city` is `england`, `scotland`, `wales`, `northern-ireland` or `channel-islands`, with "Town, County" in `area`).
 - Web addresses nest the whole chain, e.g. `/uk/england/london/`. Moving a page means adding its old address to the place's `redirectFrom`, which builds a forwarding page.
 - Each country's currency must be in `content/currencies.json`.
 - Sources used so far:

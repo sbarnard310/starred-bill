@@ -290,7 +290,7 @@ content:
         type: string
       - name: languages
         label: Languages offered
-        description: The language buttons on this page and the pages inside it. Leave empty for English and Chinese. Hong Kong adds Cantonese; France adds French.
+        description: The language buttons on this page and the pages inside it. Leave empty for English and Chinese. Hong Kong and Macau add Cantonese; France adds French.
         type: select
         options:
           multiple: true

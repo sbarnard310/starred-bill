@@ -30,6 +30,11 @@
       "code": "HKD",
       "symbol": "HK$",
       "perUSD": 7.84685
+    },
+    {
+      "code": "MOP",
+      "symbol": "MOP$",
+      "perUSD": 8.082411
     }
   ]
 }

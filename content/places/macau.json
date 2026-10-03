@@ -1,0 +1,25 @@
+{
+  "id": "macau",
+  "type": "country",
+  "name": "Macau",
+  "nameZh": "澳門",
+  "currency": "MOP",
+  "intro": "Prices are in Macau patacas (MOP$), with a switch to see them in pounds, euros or US dollars. MOP$1 is pegged at about HK$0.97. Prices checked October 2026, before the usual 10% service charge.",
+  "introZh": "價格以澳門幣（MOP$）標示，也可切換為英鎊、歐元或美元。澳門幣與港幣掛鈎，1 澳門幣約等於 0.97 港元。價格於 2026 年 10 月查核，未含一般 10% 服務費。",
+  "serviceText": "Every figure is for one guest and excludes the 10% service charge Macau's hotel restaurants add (Sushi Kissho by Miyakawa adds 15%). Supplements such as caviar or truffle courses are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格，不含澳門酒店餐廳加收的 10% 服務費（鮨吉祥 宮川為 15%），也不含魚子醬或松露等加價項目。以其他幣別顯示的價格依當日匯率換算，僅供參考。",
+  "sourcesText": "Dinner is the main tasting or set menu where there is one, and wine is the cheapest pairing for it. Almost every starred restaurant in Macau is inside a hotel or resort, so prices come from the menus those resorts publish, otherwise from recent reviews and news. Some set menus are for a minimum of two guests, and the note says so. Restaurants that are mainly à la carte show a typical dish (“per main”) or typical spend. Lunch is the set or tasting lunch menu.",
+  "sourcesTextZh": "晚餐以主要品嚐或套餐為準，餐酒搭配則取該套餐最便宜的選項。澳門的星級餐廳幾乎全部位於酒店或綜合度假村內，因此價格以度假村公布的菜單為準；否則參考近期評論及新聞。部分套餐需兩位起，說明欄會註明。以單點為主的餐廳則顯示一般菜式價格（每道主菜）或人均消費。午餐以午市套餐或品嚐套餐為準。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Hong Kong & Macau 2026, announced on 19 March 2026. A green ▲ marks a restaurant that gained a star in the March 2025 or March 2026 guide; a red ▼ marks one that lost its stars.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 3 月 19 日公布的《香港澳門米芝蓮指南 2026》。綠色 ▲ 代表在 2025 年 3 月或 2026 年 3 月的指南中獲得星級；紅色 ▼ 代表失去星級。",
+  "languages": [
+    "en",
+    "zh",
+    "yue"
+  ],
+  "nameYue": "澳門",
+  "introYue": "價錢以澳門幣（MOP$）顯示，亦可以轉做英鎊、歐元或者美元。澳門幣同港幣掛鈎，1蚊澳門幣大約等於0.97蚊港幣。價錢喺2026年10月核實過，未計一般加一服務費。",
+  "serviceTextYue": "所有價錢都係一位嘅價錢，未計澳門酒店餐廳收嘅加一服務費（鮨吉祥 宮川收15%），亦唔包魚子醬或者松露等額外加錢嘅菜式。用其他貨幣顯示嘅價錢係按當日匯率計，只供參考。",
+  "sourcesTextYue": "晚市以主要嘅品嚐菜單或者套餐為準，配酒就揀最平嗰個。澳門嘅星級餐廳差唔多全部喺酒店或者綜合度假村入面，所以價錢以度假村公布嘅餐牌為準；冇嘅話就參考最近嘅食評同新聞。有啲套餐要兩位起，備註會講明。主要係單點嘅餐廳就顯示一般菜式價錢（每道主菜）或者人均消費。午市以午市套餐或品嚐菜單為準。",
+  "starsTextYue": "Google 評分（滿分5分）同評論數喺2026年10月核實過；星級嚟自2026年3月19日公布嘅《香港澳門米芝蓮指南2026》。綠色 ▲ 代表喺2025年3月或者2026年3月嘅指南攞到星；紅色 ▼ 代表甩咗星。"
+}

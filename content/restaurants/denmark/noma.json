@@ -1,0 +1,22 @@
+{
+  "name": "noma",
+  "city": "copenhagen",
+  "area": "Refshaleøen",
+  "areaZh": "雷夫舍勒島",
+  "address": "Refshalevej 96, 1432 Copenhagen K",
+  "stars": 0,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "change": "down",
+  "changeNote": "Lost its three stars",
+  "changeNoteZh": "失去三星",
+  "changeDate": "2026-06",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 3,
+  "statusNote": "Michelin removed its three stars in June 2026 because it had been operating abroad without a permanent restaurant in Copenhagen; it plans to reopen in the city",
+  "statusNoteZh": "由於長期在海外營運、在哥本哈根沒有固定餐廳，米其林於 2026 年 6 月撤銷其三星；餐廳計劃重返哥本哈根",
+  "website": "https://noma.dk/",
+  "lat": 55.682827,
+  "lng": 12.610481
+}

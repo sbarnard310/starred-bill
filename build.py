@@ -300,7 +300,10 @@ e = html.escape
 def money(n, cur):
     if n is None:
         return ""
-    return CURRENCIES[cur]["symbol"] + (f"{n:,.0f}" if float(n).is_integer() else f"{n:,.2f}")
+    symbol = CURRENCIES[cur]["symbol"]
+    if symbol[-1].isalpha():  # "DKK 4,400", like the pages' own formatting
+        symbol += "\u00a0"
+    return symbol + (f"{n:,.0f}" if float(n).is_integer() else f"{n:,.2f}")
 
 
 def inherited_name_fr(p):

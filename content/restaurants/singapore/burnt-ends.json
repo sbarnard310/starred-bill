@@ -1,0 +1,20 @@
+{
+  "name": "Burnt Ends",
+  "city": "singapore",
+  "area": "Dempsey Hill",
+  "areaZh": "登布西山",
+  "address": "#01-02, 7 Dempsey Road, Singapore 249671",
+  "stars": 1,
+  "cuisine": "Barbecue",
+  "cuisineZh": "燒烤",
+  "rating": 4.5,
+  "reviews": 2606,
+  "dinnerType": "spend",
+  "dinnerNote": "À la carte barbecue",
+  "dinnerNoteZh": "單點燒烤",
+  "sourceType": "none",
+  "website": "https://burntends.com.sg/",
+  "lat": 1.304889,
+  "lng": 103.808666,
+  "placeId": "ChIJLZ9DYnIZ2jERQ51Am7WzJLM"
+}

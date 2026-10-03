@@ -1,0 +1,22 @@
+{
+  "name": "Aure",
+  "city": "copenhagen",
+  "area": "Holmen",
+  "areaZh": "霍爾門",
+  "address": "Krudtløbsvej 8, 1439 Copenhagen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "rating": 4.8,
+  "reviews": 114,
+  "dinner": 1850,
+  "dinnerType": "menu",
+  "dinnerNote": "The Aure Experience",
+  "dinnerNoteZh": "Aure 體驗套餐",
+  "sourceType": "site",
+  "source": "https://www.restaurantaure.dk/",
+  "website": "https://www.restaurantaure.dk/",
+  "lat": 55.684166,
+  "lng": 12.610397,
+  "placeId": "ChIJV_8E0sJTUkYRRlJfxBk5d6k"
+}

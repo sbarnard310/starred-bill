@@ -1,0 +1,23 @@
+{
+  "name": "Imperial Treasure Fine Teochew Cuisine (Orchard)",
+  "nameZh": "御寶閣潮州酒家（愛雍烏節）",
+  "city": "singapore",
+  "area": "Orchard",
+  "areaZh": "烏節",
+  "address": "ION Orchard, #03-05, 2 Orchard Turn, Singapore 238801",
+  "stars": 1,
+  "cuisine": "Teochew",
+  "cuisineZh": "潮州菜",
+  "rating": 4.3,
+  "reviews": 655,
+  "dinner": 138,
+  "dinnerType": "menu",
+  "dinnerNote": "Signature tasting set",
+  "dinnerNoteZh": "招牌品嚐套餐",
+  "sourceType": "site",
+  "source": "https://www.imperialtreasure.com/happenings",
+  "website": "https://www.imperialtreasure.com/",
+  "lat": 1.304144,
+  "lng": 103.83147,
+  "placeId": "ChIJn3KRuzgZ2jERq14svIz5O9g"
+}

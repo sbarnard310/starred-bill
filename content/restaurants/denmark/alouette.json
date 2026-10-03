@@ -1,0 +1,23 @@
+{
+  "name": "Alouette",
+  "city": "copenhagen",
+  "area": "Indre By",
+  "areaZh": "內城區",
+  "address": "Kronprinsessegade 8, 1306 Copenhagen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "cuisineZh": "現代菜",
+  "rating": 4.7,
+  "reviews": 480,
+  "dinner": 2195,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 12–15 servings",
+  "dinnerNoteZh": "品嚐套餐，12–15 道",
+  "wine": 1400,
+  "sourceType": "site",
+  "source": "https://www.restaurantalouette.dk/menu",
+  "website": "https://www.restaurantalouette.dk/",
+  "lat": 55.682994,
+  "lng": 12.581165,
+  "placeId": "ChIJcXrr90dTUkYRNJo6gjI26uk"
+}

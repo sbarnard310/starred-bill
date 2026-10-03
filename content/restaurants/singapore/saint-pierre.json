@@ -1,0 +1,23 @@
+{
+  "name": "Saint Pierre",
+  "city": "singapore",
+  "area": "Marina Bay",
+  "areaZh": "濱海灣",
+  "address": "One Fullerton, #02-02B, 1 Fullerton Road, Singapore 049213",
+  "stars": 2,
+  "cuisine": "French Contemporary",
+  "cuisineZh": "時尚法國菜",
+  "rating": 4.7,
+  "reviews": 432,
+  "dinner": 398,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu ‘Opulence’, 7 courses",
+  "dinnerNoteZh": "品嚐套餐「Opulence」，7 道",
+  "wine": 298,
+  "sourceType": "site",
+  "source": "https://www.saintpierre.com.sg/opulence-tasting-menu",
+  "website": "https://www.saintpierre.com.sg/",
+  "lat": 1.286238,
+  "lng": 103.854219,
+  "placeId": "ChIJ2eBfe3UZ2jERWLXoC909C84"
+}

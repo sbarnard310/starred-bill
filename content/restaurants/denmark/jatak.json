@@ -1,0 +1,23 @@
+{
+  "name": "Jatak",
+  "city": "copenhagen",
+  "area": "Nørrebro",
+  "areaZh": "北橋區",
+  "address": "Rantzausgade 39, 2200 Copenhagen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "rating": 4.4,
+  "reviews": 264,
+  "dinner": 1700,
+  "dinnerType": "menu",
+  "dinnerNote": "Solar menu",
+  "dinnerNoteZh": "節氣套餐",
+  "wine": 1200,
+  "sourceType": "site",
+  "source": "https://www.jatakcph.com/",
+  "website": "https://www.jatakcph.com/",
+  "lat": 55.687052,
+  "lng": 12.547932,
+  "placeId": "ChIJu7H8HXxTUkYRuLKQbQU824w"
+}

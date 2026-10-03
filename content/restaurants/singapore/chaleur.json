@@ -1,0 +1,17 @@
+{
+  "name": "Chaleur",
+  "city": "singapore",
+  "area": "Tanjong Pagar",
+  "areaZh": "丹戎巴葛",
+  "address": "77A Neil Road, Singapore 088903",
+  "stars": 0,
+  "cuisine": "French Contemporary",
+  "cuisineZh": "時尚法國菜",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in 2025, so it left the 2026 guide",
+  "statusNoteZh": "已於2025 年結業，2026 年版指南不再收錄",
+  "lat": 1.27922,
+  "lng": 103.842153
+}

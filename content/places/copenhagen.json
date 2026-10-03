@@ -1,0 +1,9 @@
+{
+  "id": "copenhagen",
+  "type": "city",
+  "parent": "denmark",
+  "name": "Copenhagen",
+  "nameZh": "哥本哈根",
+  "intro": "Prices are in Danish kroner (DKK), with a switch to see them in pounds, euros or US dollars, and already include service and 25% VAT. Prices checked October 2026. Includes the starred restaurants just north of the city in Hellerup, Gentofte and Holte.",
+  "introZh": "價格以丹麥克朗（DKK）標示，也可切換為英鎊、歐元或美元，已含服務費及 25% 增值稅。價格於 2026 年 10 月查核。也包括市區以北赫勒魯普、根措夫特與霍爾特的星級餐廳。"
+}

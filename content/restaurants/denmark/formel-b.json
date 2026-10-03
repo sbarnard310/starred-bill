@@ -1,0 +1,23 @@
+{
+  "name": "formel B",
+  "city": "copenhagen",
+  "area": "Frederiksberg",
+  "areaZh": "腓特烈斯貝",
+  "address": "Vesterbrogade 184, 1800 Frederiksberg C",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "cuisineZh": "現代菜",
+  "rating": 4.5,
+  "reviews": 646,
+  "dinner": 1500,
+  "dinnerType": "menu",
+  "dinnerNote": "Menu, 5 courses",
+  "dinnerNoteZh": "套餐，5 道",
+  "wine": 1200,
+  "sourceType": "site",
+  "source": "https://formelbgroup.dk/formelb/en/food/",
+  "website": "https://www.formelbgroup.dk/formelb",
+  "lat": 55.670666,
+  "lng": 12.535531,
+  "placeId": "ChIJtxaAuZlTUkYRt9S0ULtIiuA"
+}

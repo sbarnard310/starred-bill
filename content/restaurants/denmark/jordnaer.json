@@ -1,0 +1,22 @@
+{
+  "name": "Jordnær",
+  "city": "copenhagen",
+  "area": "Gentofte",
+  "areaZh": "根措夫特",
+  "address": "Gentoftegade 29, 2820 Gentofte",
+  "stars": 3,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "rating": 4.8,
+  "reviews": 302,
+  "dinner": 4500,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 18 servings",
+  "dinnerNoteZh": "品嚐套餐，18 道",
+  "sourceType": "site",
+  "source": "https://restaurantjordnaer.dk/evening-menu/",
+  "website": "https://www.restaurantjordnaer.dk/",
+  "lat": 55.748142,
+  "lng": 12.541235,
+  "placeId": "ChIJWxyiJPFNUkYRTp10-YnYcNg"
+}

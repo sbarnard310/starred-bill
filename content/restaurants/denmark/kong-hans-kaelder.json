@@ -1,0 +1,23 @@
+{
+  "name": "Kong Hans Kælder",
+  "city": "copenhagen",
+  "area": "Indre By",
+  "areaZh": "內城區",
+  "address": "Vingaardsstraede 6, 1070 Copenhagen",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "cuisineZh": "時尚法國菜",
+  "rating": 4.7,
+  "reviews": 332,
+  "dinner": 3100,
+  "dinnerType": "menu",
+  "dinnerNote": "Signature menu",
+  "dinnerNoteZh": "招牌套餐",
+  "wine": 2400,
+  "sourceType": "press",
+  "source": "https://www.travelsforstars.com/blog/2026/05/28/kong-hans-kaelder-copenhagen",
+  "website": "https://konghans.dk/",
+  "lat": 55.678742,
+  "lng": 12.583996,
+  "placeId": "ChIJXdbkpBdTUkYRO6NpiMExk-w"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Alma by Juan Amador",
+  "city": "singapore",
+  "area": "Orchard",
+  "areaZh": "烏節",
+  "address": "Goodwood Park Hotel, 22 Scotts Road, Singapore 228221",
+  "stars": 0,
+  "cuisine": "European Contemporary",
+  "cuisineZh": "時尚歐陸菜",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in August 2025, so it left the 2026 guide",
+  "statusNoteZh": "已於2025 年 8 月結業，2026 年版指南不再收錄",
+  "lat": 1.308477,
+  "lng": 103.834405
+}

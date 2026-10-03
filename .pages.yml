@@ -463,7 +463,7 @@ content:
             pattern: { regex: '^[A-Z]{3}$', message: "Use a three-letter code in capitals, e.g. EUR" }
           - name: symbol
             label: Symbol
-            description: e.g. £, €, US$, NT$, ¥
+            description: e.g. £, €, US$, NT$, ¥, DKK. A symbol made of letters (like DKK) gets a space before the amount.
             type: string
             required: true
           - name: perUSD

@@ -1,0 +1,15 @@
+{
+  "id": "denmark",
+  "type": "country",
+  "name": "Denmark",
+  "nameZh": "丹麥",
+  "currency": "DKK",
+  "intro": "Prices are in Danish kroner (DKK), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; in Denmark, service and 25% VAT are already included in menu prices.",
+  "introZh": "價格以丹麥克朗（DKK）標示，也可切換為英鎊、歐元或美元。價格於 2026 年 10 月查核；在丹麥，服務費及 25% 增值稅已包含在套餐價格內。",
+  "serviceText": "Every figure is for one guest. Danish menu prices include 25% VAT and service, so these are the full prices before drinks; tipping is optional. Some restaurants add a fee for corporate cards or cards issued outside the EU. Supplements such as caviar courses are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格。丹麥的套餐價格已含 25% 增值稅及服務費，即不含飲品的全額；小費可隨意。部分餐廳對公司卡或歐盟以外發行的信用卡收取手續費。魚子醬等加價項目不計入。以其他幣別顯示的價格依當日匯率換算，僅供參考。",
+  "sourcesText": "Dinner is the main tasting menu where there is one, and wine is the cheapest wine pairing for it. Where a restaurant offers menus of different lengths, the note says “from” and the shorter one is shown. Prices come from each restaurant's own website where they're published, otherwise from recent reviews. Lunch is shown where a restaurant serves it, and the note says which days.",
+  "sourcesTextZh": "晚餐以主要品嚐套餐為準，餐酒搭配則取該套餐最便宜的葡萄酒搭配。若餐廳提供長短不同的套餐，說明欄會註明「起」並顯示較短的一種。有公布價格的，以餐廳官網為準；否則參考近期評論。有供應午餐的餐廳會列出午餐價格，並註明供應日。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Nordic Countries 2026, announced on 1 June 2026. A green ▲ marks a restaurant that gained a star in the June 2025 or June 2026 guide; a red ▼ marks one that lost its stars.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 6 月 1 日公布的《米其林指南北歐 2026》。綠色 ▲ 代表在 2025 年 6 月或 2026 年 6 月的指南中獲得星級；紅色 ▼ 代表失去星級。"
+}

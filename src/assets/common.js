@@ -718,10 +718,12 @@ const monthYear = (ym) => {
 };
 const rosettes = (n) => '<span class="stars" aria-label="' + esc(t("starsAria", { n })) + '">' + '<svg><use href="#rosette"/></svg>'.repeat(n) + "</span>";
 const heart = '<svg aria-hidden="true"><use href="#heart"/></svg>';
+// A symbol made of letters, e.g. "DKK", gets a space before the amount: "DKK 4,400".
+const symbolOf = (cur) => { const s = DATA.currencies[cur].symbol; return /[A-Za-z]$/.test(s) ? s + "\u00a0" : s; };
 // Prices in a restaurant's own currency, e.g. "£195" or "NT$4,980".
 function localMoney(n, cur) {
   if (n == null) return "";
-  return DATA.currencies[cur].symbol + n.toLocaleString("en-GB", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
+  return symbolOf(cur) + n.toLocaleString("en-GB", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
 }
 function langSwitchHtml() {
   return PAGE_LANGS.map((k) =>

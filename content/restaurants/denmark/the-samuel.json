@@ -1,0 +1,23 @@
+{
+  "name": "The Samuel",
+  "city": "copenhagen",
+  "area": "Hellerup",
+  "areaZh": "赫勒魯普",
+  "address": "Hellerupvej 40, 2900 Hellerup",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "cuisineZh": "現代菜",
+  "rating": 4.8,
+  "reviews": 133,
+  "dinner": 1895,
+  "dinnerType": "menu",
+  "dinnerNote": "Signature menu",
+  "dinnerNoteZh": "招牌套餐",
+  "wine": 1895,
+  "sourceType": "site",
+  "source": "https://www.thesamuel.dk/menu",
+  "website": "https://www.thesamuel.dk/",
+  "lat": 55.732402,
+  "lng": 12.568429,
+  "placeId": "ChIJ97nnHBpTUkYRtJSEQUisX6o"
+}

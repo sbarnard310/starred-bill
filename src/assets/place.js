@@ -33,7 +33,7 @@ const shown = (r, n) => n == null ? null : r.cur === state.currency ? n : n * fx
 const approx = (r) => r ? r.cur !== state.currency : PAGE_CURRENCIES.some((c) => c !== state.currency);
 function money(n, r) {
   if (n == null) return "";
-  const sym = DATA.currencies[state.currency].symbol;
+  const sym = symbolOf(state.currency);
   if (approx(r)) return "≈" + sym + Math.round(n).toLocaleString("en-GB");
   return sym + n.toLocaleString("en-GB", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
 }
@@ -141,7 +141,7 @@ function applyStatic() {
     const date = state.rateDate.toLocaleDateString(locale(), { day: "numeric", month: cjk() ? "numeric" : "short", year: "numeric" });
     const sym = DATA.currencies[state.currency].symbol;
     $("rateLine").textContent = PAGE_CURRENCIES.length === 1
-      ? t("rateLine", { sym, date, home: DATA.currencies[PAGE_CURRENCIES[0]].symbol, rate: (1 / fx(PAGE_CURRENCIES[0])).toFixed(2) })
+      ? t("rateLine", { sym, date, home: symbolOf(PAGE_CURRENCIES[0]), rate: (1 / fx(PAGE_CURRENCIES[0])).toFixed(2) })
       : t("rateLineMixed", { sym, date });
   }
 }

@@ -1,0 +1,23 @@
+{
+  "name": "Ma Cuisine",
+  "city": "singapore",
+  "area": "Tanjong Pagar",
+  "areaZh": "丹戎巴葛",
+  "address": "38 Craig Road, Singapore 089676",
+  "stars": 1,
+  "cuisine": "French",
+  "cuisineZh": "法國菜",
+  "rating": 4.5,
+  "reviews": 372,
+  "dinnerType": "spend",
+  "dinnerNote": "À la carte French bistro",
+  "dinnerNoteZh": "單點法式小館",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteZh": "只供應晚餐",
+  "website": "https://www.macuisinesg.com/",
+  "lat": 1.278265,
+  "lng": 103.841893,
+  "placeId": "ChIJQwanoG0Z2jERsK-8U0ks7xw"
+}

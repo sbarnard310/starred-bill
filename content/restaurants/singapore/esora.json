@@ -1,0 +1,17 @@
+{
+  "name": "Esora",
+  "city": "singapore",
+  "area": "Robertson Quay",
+  "areaZh": "羅拔申碼頭",
+  "address": "15 Mohamed Sultan Road, Singapore 238964",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in December 2025, so it left the 2026 guide",
+  "statusNoteZh": "已於2025 年 12 月結業，2026 年版指南不再收錄",
+  "lat": 1.293559,
+  "lng": 103.841586
+}

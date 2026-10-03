@@ -1,0 +1,22 @@
+{
+  "name": "Les Amis",
+  "city": "singapore",
+  "area": "Orchard",
+  "areaZh": "烏節",
+  "address": "Shaw Centre, #01-16, 1 Scotts Road, Singapore 228208",
+  "stars": 3,
+  "cuisine": "French",
+  "cuisineZh": "法國菜",
+  "rating": 4.6,
+  "reviews": 965,
+  "dinner": 305,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, from",
+  "dinnerNoteZh": "品嚐套餐起",
+  "sourceType": "press",
+  "source": "https://wheretoeat.com.sg/best-degustation-and-tasting-menus-in-singapore/",
+  "website": "https://www.lesamis.com.sg/",
+  "lat": 1.30626,
+  "lng": 103.83204,
+  "placeId": "ChIJR5yDbY0Z2jER6GcsxL56OLk"
+}

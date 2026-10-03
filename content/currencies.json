@@ -40,6 +40,16 @@
       "code": "JPY",
       "symbol": "¥",
       "perUSD": 157.81511
+    },
+    {
+      "code": "SGD",
+      "symbol": "S$",
+      "perUSD": 1.279427
+    },
+    {
+      "code": "DKK",
+      "symbol": "DKK ",
+      "perUSD": 6.647039
     }
   ]
 }

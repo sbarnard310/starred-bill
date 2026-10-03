@@ -1,0 +1,15 @@
+{
+  "id": "singapore",
+  "type": "country",
+  "name": "Singapore",
+  "nameZh": "新加坡",
+  "currency": "SGD",
+  "intro": "Prices are in Singapore dollars (S$), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026, before the 10% service charge and 9% GST most restaurants add.",
+  "introZh": "價格以新加坡元（S$）標示，也可切換為英鎊、歐元或美元。價格於 2026 年 10 月查核，未含多數餐廳另加的 10% 服務費及 9% 消費稅。",
+  "serviceText": "Every figure is for one guest. Most Singapore restaurants price their menus “++”, adding a 10% service charge and then 9% GST to the bill, so expect to pay about 20% more than the figure shown. Hawker stalls such as Hill Street Tai Hwa Pork Noodle charge the price on the board. Supplements such as caviar or truffle courses are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格。新加坡多數餐廳的套餐以「++」標價，帳單會先加 10% 服務費、再加 9% 消費稅，實際約比所示金額高 20%。小販攤位（例如吊橋頭大華豬肉粿條麵）則按牌價收費。魚子醬或松露等加價項目不計入。以其他幣別顯示的價格依當日匯率換算，僅供參考。",
+  "sourcesText": "Dinner is the main tasting or omakase menu where there is one, and wine is the cheapest pairing for it. Where a restaurant offers several menus, the note says “from” and the cheapest is shown. Prices come from each restaurant's own website or booking page where they're published, otherwise from recent reviews and guides. Several Chinese restaurants are mainly à la carte, so they show no price where none is published. Lunch is the set or tasting lunch menu, and the note says which days it's served.",
+  "sourcesTextZh": "晚餐以主要品嚐或主廚精選套餐為準，餐酒搭配則取該套餐最便宜的選項。若餐廳提供多種套餐，說明欄會註明「起」並顯示最便宜的一種。有公布價格的，以餐廳官網或訂位頁面為準；否則參考近期評論及指南。幾家中菜館以單點為主，未有公布價格時不列價格。午餐以午間套餐或品嚐套餐為準，說明欄會註明供應日。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Singapore 2026, announced on 4 August 2026. A green ▲ marks a restaurant that gained a star in the July 2025 or August 2026 guide; restaurants that have closed since are kept at the bottom of the list.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 8 月 4 日公布的《新加坡米其林指南 2026》。綠色 ▲ 代表在 2025 年 7 月或 2026 年 8 月的指南中獲得星級；其後結業的餐廳仍列於清單末端。"
+}

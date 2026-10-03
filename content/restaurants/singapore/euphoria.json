@@ -1,0 +1,17 @@
+{
+  "name": "Euphoria",
+  "city": "singapore",
+  "area": "Tanjong Pagar",
+  "areaZh": "丹戎巴葛",
+  "address": "76 Tras Street, Singapore 079015",
+  "stars": 0,
+  "cuisine": "Innovative",
+  "cuisineZh": "創新菜",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in August 2025, so it left the 2026 guide",
+  "statusNoteZh": "已於2025 年 8 月結業，2026 年版指南不再收錄",
+  "lat": 1.277471,
+  "lng": 103.844131
+}

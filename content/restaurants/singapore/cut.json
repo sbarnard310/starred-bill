@@ -1,0 +1,23 @@
+{
+  "name": "CUT",
+  "city": "singapore",
+  "area": "Marina Bay",
+  "areaZh": "濱海灣",
+  "address": "The Shoppes at Marina Bay Sands, Galleria Level, #B1-71, 10 Bayfront Avenue, Singapore 018972",
+  "stars": 1,
+  "cuisine": "Steakhouse",
+  "cuisineZh": "牛排屋",
+  "rating": 4.6,
+  "reviews": 2038,
+  "dinnerType": "spend",
+  "dinnerNote": "À la carte steakhouse",
+  "dinnerNoteZh": "單點牛排館",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteZh": "只供應晚餐",
+  "website": "https://wolfgangpuck.com/restaurants/cut-singapore/",
+  "lat": 1.285726,
+  "lng": 103.859784,
+  "placeId": "ChIJnWdQKQQZ2jERxH3g-HsHchE"
+}

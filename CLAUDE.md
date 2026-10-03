@@ -48,4 +48,12 @@ It's a browser key in `src/assets/common.js`, restricted to these addresses:
 It's used for the maps (Maps JavaScript API) and restaurant photos (Places API (New)). The Google Cloud project is on the free trial, so quotas can't be capped yet. If it's upgraded, set daily caps.
 
 ## Planned work
+- The owner's to-do list for the site is a Claude artifact: https://claude.ai/artifact/Axt5P5PtjBJ1R7VUziDPeL. Items live in its database, collection `tasks` (fields: title, section = destinations | features | fixes | updates | you, priority = now | next | later, status = todo | doing | done, notes, createdAt, doneAt). Read it with the ArtifactData tool when asked "what's next?", add items when asked, and when you finish a job that's on it, set its status to done (with doneAt).
 - Free user accounts (wishlist on every device, a "been there" checklist, alerts): not built yet. The plan, open decisions and the owner's setup steps are in `docs/accounts-plan.md`.
+
+## Working in several chats at once
+The owner may run several Claude chats on this site at the same time, filed under the "Starred Bill" sections in the Code tab sidebar (Main, New destinations, Features, Fixes & price updates).
+- Run `git pull --rebase` before starting work and again before every push; other chats and Pages CMS also push to `main`.
+- Keep each chat to its own area. Adding a destination mostly touches new files in `content/`; features and fixes touch `src/` and `build.py`. Two chats editing `build.py`, `common.js` or `site.css` at the same time will clash, so finish and push one before starting the other.
+- If a push or rebase hits a conflict, resolve it carefully (keep both sides' changes), rebuild, test, then push.
+

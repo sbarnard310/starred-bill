@@ -41,6 +41,15 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
   - Prices in the US: Tock pages (exploretock.com/<slug>) carry each menu's price in the page; OpenTable experience pages show prices including the service charge, so take the base amount (`minUnitAmount`) instead. OpenTable starts refusing after a few dozen quick fetches.
   - Prices in Japan: many top restaurants publish none. OMAKASE JapanEatinerary (omakaseje.com) restaurant pages list each course in yen, mostly including tax and service; read them with fetch() from inside an omakaseje.com browser tab, as it rate-limits heavy use. Pocket Concierge pages render in the browser after a moment. omakase.in and Tabelog show a Cloudflare check, so they can't be read, but search results quote their prices.
 
+## Accounts
+Free accounts let people keep their wishlist on every device and tick off restaurants they've been to ("been there").
+- Supabase project `uvdaclbhskkukyngikhq` (London) holds sign-in and one table, `saved`: one row per person per restaurant (`wishlist`, `visited`, `visited_on`), keyed on the restaurant's file name. Its row-level security lets each person read and change only their own rows. `supabase/schema.sql` creates it (run in Supabase's SQL Editor); `delete_my_account()` lets someone delete themselves.
+- `src/assets/account.js` loads the Supabase library from jsDelivr only when someone is signed in or signing in, signs in by emailed link or Google, and keeps the browser copies (`starredbill-wishlist`, `starredbill-visited` in localStorage) in step with the account. Pages keep reading the browser copies through `loadWishlist()` / `loadVisited()` and save through `setWishlist()` / `setVisited()` in common.js, which fire `sb:wishlist` / `sb:visited` events; `sb:account` fires when someone signs in or out.
+- The first time a browser meets an account, anything saved while signed out is merged in; after that the account is the record. Changes wait in `starredbill-pending` until sent. Signing out clears both lists from that browser.
+- Signed out, the wishlist works and stays in the browser; "been there" asks the person to sign up.
+- `/account/` (account.html + account-page.js) shows stats, milestones, progress by destination, both lists, and download / sign out / delete. `/privacy/` (privacy.html + info-page.js) is the privacy notice in English and Chinese; update it if what's stored changes.
+- In Supabase, Authentication › URL Configuration allows starredbill.com, www and localhost:8799. Google sign-in uses a Google Cloud OAuth client; sign-in emails go through Resend's SMTP from starredbill.com (until that's set up, Supabase only emails the project owner).
+
 ## Google Maps key
 It's a browser key in `src/assets/common.js`, restricted to these addresses:
 - `https://starredbill.com/*`
@@ -52,7 +61,7 @@ It's used for the maps (Maps JavaScript API) and restaurant photos (Places API (
 
 ## Planned work
 - The owner's to-do list for the site is a Claude artifact: https://claude.ai/artifact/Axt5P5PtjBJ1R7VUziDPeL. Items live in its database, collection `tasks` (fields: title, section = destinations | features | fixes | updates | you, priority = now | next | later, status = todo | doing | done, notes, createdAt, doneAt). Read it with the ArtifactData tool when asked "what's next?", add items when asked, and when you finish a job that's on it, set its status to done (with doneAt).
-- Free user accounts (wishlist on every device, a "been there" checklist, alerts): not built yet. The plan, open decisions and the owner's setup steps are in `docs/accounts-plan.md`.
+- Alerts for wishlisted restaurants (star or price changes, booking-window reminders): next, building on accounts. Ideas are in `docs/accounts-plan.md`.
 
 ## Updates log
 The same artifact has an "Updates log" tab: a dated record of every fix and every change to prices, restaurants, stars and pages. It lives in the same database, collection `log` (fields: title, kind = fix | prices | restaurants | stars | pages, notes, at, commit, createdAt).

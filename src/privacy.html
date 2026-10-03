@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:type" content="website">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#10362A">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Starred Bill">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500&display=swap">
+<link rel="stylesheet" href="{{asset:site.css}}">
+</head>
+<body class="info-page">
+{{icons}}
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" id="brandLink"><svg><use href="#rosette"/></svg>The Starred Bill</a>
+    <div class="header-actions">
+      <nav class="nav" aria-label="Sections">
+        <a href="/#destinations" id="destLink" data-i18n="navDestinations">Destinations</a>
+      </nav>
+      <button type="button" class="account-btn" id="accountBtn"></button>
+      <button type="button" class="share-btn" id="shareBtn" aria-haspopup="true" aria-expanded="false" aria-controls="sharePanel"></button>
+      <a href="/#wishlist" class="wish-link" id="wishLink"><svg aria-hidden="true"><use href="#heart"/></svg><span data-i18n="wishlist">Wishlist</span> <span id="wishCount">0</span></a>
+      <div class="share-panel" id="sharePanel" hidden></div>
+    </div>
+  </div>
+  <div class="switchbar">
+    <div class="wrap">
+      <nav class="crumbs" id="crumbs" aria-label="Where you are"></nav>
+      <div class="hseg-right">
+        <button type="button" class="install-btn" id="installBtn" hidden></button>
+        <div class="hseg" role="group" aria-label="Language / 語言" id="langSwitch"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap prose" id="privacyMain">
+<article lang="en" data-for="en">
+  <h1>Privacy notice</h1>
+  <p class="prose-date">Last updated 3 October 2026</p>
+  <p>The Starred Bill (starredbill.com) compares prices at Michelin-starred restaurants. This page explains what we keep about you, and why. You can use the whole site without an account.</p>
+  <h2>Without an account</h2>
+  <p>Your wishlist and your choice of language and currency are kept only in your own browser (its local storage). They never reach us. Maps and restaurant photos come from Google Maps, which, like any website it serves, receives your IP address. We don't use advertising, analytics or tracking cookies.</p>
+  <h2>With a free account</h2>
+  <p>When you create an account we keep:</p>
+  <ul>
+    <li>your email address, and, if you sign in with Google, the name and profile picture on your Google account</li>
+    <li>the restaurants on your wishlist and the ones you've marked as been there, with any dates you add</li>
+  </ul>
+  <p>We use these only to sign you in and to show your lists on any device. We never sell them or share them for marketing, and we don't send newsletters unless you ask for them.</p>
+  <h2>Who handles it</h2>
+  <ul>
+    <li><strong>Supabase</strong> stores accounts and lists, on servers in London.</li>
+    <li><strong>Resend</strong> sends the sign-in emails.</li>
+    <li><strong>Google</strong>, only if you choose Continue with Google.</li>
+  </ul>
+  <p>Your browser keeps a sign-in token so you stay signed in. Signing out removes it, along with the copy of your lists on that device.</p>
+  <h2>How long we keep it</h2>
+  <p>Until you delete your account. You can do that at any time from <a href="/account/" class="acct-link">Your account</a>: it removes your account and both lists straight away.</p>
+  <h2>Your rights</h2>
+  <p>Under UK data protection law you can see the data we hold (use Download my data on Your account), correct it, delete it, or object to how it's used. To ask about any of this, use the contact form on any destination page. If you're unhappy with our answer, you can complain to the Information Commissioner's Office at ico.org.uk.</p>
+  <h2>Changes</h2>
+  <p>If this notice changes, we'll update this page and the date at the top.</p>
+</article>
+<article lang="zh-Hant" data-for="zh" hidden>
+  <h1>隱私權聲明</h1>
+  <p class="prose-date">最後更新：2026 年 10 月 3 日</p>
+  <p>The Starred Bill（starredbill.com）比較米其林星級餐廳的價格。本頁說明我們會保存哪些關於你的資料，以及原因。不建立帳戶也能使用整個網站。</p>
+  <h2>未建立帳戶時</h2>
+  <p>你的願望清單，以及語言與幣別設定，只會保存在你自己的瀏覽器（本機儲存空間）中，不會傳送給我們。地圖與餐廳照片來自 Google 地圖；如同所有網站服務，Google 會收到你的 IP 位址。我們不使用廣告、分析工具或追蹤 Cookie。</p>
+  <h2>建立免費帳戶後</h2>
+  <p>建立帳戶後，我們會保存：</p>
+  <ul>
+    <li>你的電子郵件地址；若你使用 Google 登入，也包括你 Google 帳戶上的名稱與大頭貼</li>
+    <li>你願望清單上的餐廳、你標示為去過的餐廳，以及你填寫的日期</li>
+  </ul>
+  <p>這些資料只用來讓你登入，並在各裝置上顯示你的清單。我們絕不出售這些資料，也不會為行銷目的分享；除非你要求，我們不會寄送電子報。</p>
+  <h2>由誰處理</h2>
+  <ul>
+    <li><strong>Supabase</strong>：保存帳戶與清單，伺服器位於倫敦。</li>
+    <li><strong>Resend</strong>：寄送登入郵件。</li>
+    <li><strong>Google</strong>：僅在你選擇使用 Google 繼續時。</li>
+  </ul>
+  <p>你的瀏覽器會保存一個登入憑證，讓你保持登入。登出時會刪除它，以及該裝置上的清單副本。</p>
+  <h2>保存多久</h2>
+  <p>直到你刪除帳戶為止。你可以隨時在<a href="/account/" class="acct-link">你的帳戶</a>頁面刪除帳戶，帳戶與兩份清單會立即移除。</p>
+  <h2>你的權利</h2>
+  <p>依英國資料保護法，你可以查看我們保存的資料（在「你的帳戶」使用「下載我的資料」）、更正、刪除，或反對資料的使用方式。如有任何疑問，請使用任一目的地頁面上的聯絡表單。若對我們的回覆不滿意，可向英國資訊專員辦公室（ico.org.uk）投訴。</p>
+  <h2>變更</h2>
+  <p>若本聲明有所變更，我們會更新本頁與頁首日期。</p>
+</article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>The Starred Bill</span>
+    <span data-i18n="footNote"></span>
+  </div>
+</footer>
+
+<script id="page-data" type="application/json">{{data}}</script>
+<script src="{{asset:common.js}}"></script>
+<script src="{{asset:account.js}}"></script>
+<script src="{{asset:info-page.js}}"></script>
+</body>
+</html>

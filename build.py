@@ -506,6 +506,26 @@ def build_redirects():
 ''')
 
 
+def build_account_pages():
+    """The account page (/account/) and the privacy notice (/privacy/). Signing in and the lists run in the browser (account.js)."""
+    keep = ("id", "name", "nameZh", "nameJa", "stars", "formerStars", "status", "area", "areaZh", "areaJa",
+            "cityName", "cityNameZh", "cityNameJa", "cityPath", "country", "cur", "dinner", "dinnerType")
+    data = {
+        "restaurants": [dict({k: r[k] for k in keep if r.get(k) not in (None, "")}, chain=r["_chain"]) for r in restaurants],
+        "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] != "group" and starred_n[q["id"]])],
+        "knownIds": [r["id"] for r in restaurants],
+        "currencies": CURRENCIES, "languages": list(LANGUAGES),
+    }
+    write("/account/", render("account.html", {
+        "title": "Your account · The Starred Bill", "description": "Your wishlist and the Michelin-starred restaurants you've been to, on any device.",
+        "canonical": SITE_URL + "/account/", "data": as_json(data),
+    }))
+    write("/privacy/", render("privacy.html", {
+        "title": "Privacy notice · The Starred Bill", "description": "What The Starred Bill keeps about you, and why.",
+        "canonical": SITE_URL + "/privacy/", "data": as_json({"currencies": CURRENCIES, "languages": list(LANGUAGES)}),
+    }))
+
+
 def build_extras():
     shutil.copy2(SRC / "favicon.svg", OUT / "favicon.svg")
     shutil.copy2(SRC / "404.html", OUT / "404.html")
@@ -513,7 +533,7 @@ def build_extras():
     shutil.copytree(SRC / "icons", OUT / "icons")
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
-    urls = ["/"] + [p["path"] for p in by_size(pages)]
+    urls = ["/"] + [p["path"] for p in by_size(pages)] + ["/privacy/"]
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{SITE_URL}{u}</loc></url>\n" for u in urls) + "</urlset>\n", "utf-8")
@@ -538,6 +558,7 @@ copy_assets()
 for p in pages:
     build_place(p)
 build_home()
+build_account_pages()
 build_redirects()
 build_extras()
 build_service_worker()

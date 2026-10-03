@@ -1,6 +1,6 @@
-# Plan: free user accounts (not built yet)
+# Plan: free user accounts
 
-Discussed 3 October 2026. Nothing has been set up yet. When you're ready, tell Claude "let's do the accounts feature" and it will pick up from here.
+Built 3 October 2026: accounts, wishlist syncing, "been there" with stats and milestones, the account page and the privacy notice. Decisions: Supabase; email link + Google; signed-out wishlist stays on the device; "been there" is a tick plus an optional date. Still to do: alerts and the other extras below.
 
 ## The idea
 

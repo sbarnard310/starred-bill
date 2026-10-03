@@ -50,8 +50,12 @@ function renderDestinations() {
 function renderWishlist() {
   const list = loadWishlist().map((id) => ALL.find((r) => r.id === id)).filter(Boolean);
   renderWishCount();
-  if (!list.length) { $("wishList").innerHTML = '<p class="empty-note">' + t("wishEmptyHome") + "</p>"; return; }
-  $("wishList").innerHTML = '<ul class="wish-list">' + list.map((r) =>
+  // Signed out: an invitation to keep the list everywhere. Signed in: where it's kept.
+  const where = acctSignedIn()
+    ? '<p class="wish-synced">' + esc(t("wishSynced")) + ' <a href="' + withLang("/account/") + '">' + esc(t("acctSee")) + " →</a></p>"
+    : '<div class="wish-cta"><p>' + esc(t("wishCtaHome")) + '</p><button type="button" class="cta-btn" data-signin="">' + esc(t("wishCtaBtn")) + "</button></div>";
+  if (!list.length) { $("wishList").innerHTML = '<p class="empty-note">' + t("wishEmptyHome") + "</p>" + where; return; }
+  $("wishList").innerHTML = where + '<ul class="wish-list">' + list.map((r) =>
     '<li><a class="wl-name" href="' + cityLink(r) + '">' + esc(nameOf(r)) + '</a><span class="wl-meta">' + rosettes(r.stars) + " " + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + "</span>" +
     '<span class="wl-price num">' + esc(r.dinner == null ? "–" : localMoney(r.dinner, r.cur)) + "</span>" +
     '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '" aria-label="' + esc(t("wishRemove", { name: nameOf(r) })) + '">' + t("wishRemoveShort") + "</button></li>").join("") + "</ul>";
@@ -258,7 +262,7 @@ document.addEventListener("click", (e) => {
   } else if (el.dataset.mapstars) {
     homeState.stars = Number(el.dataset.mapstars); renderMapStars(); updateWorldMap(true);
   } else if (el.dataset.unwish) {
-    store.set(WISHLIST_KEY, loadWishlist().filter((x) => x !== el.dataset.unwish)); renderWishlist();
+    setWishlist(loadWishlist().filter((x) => x !== el.dataset.unwish)); renderWishlist();
   }
 });
 $("homeQ").addEventListener("input", renderResults);
@@ -274,6 +278,7 @@ $("mapResults").addEventListener("click", (e) => { const a = e.target.closest("[
 $("homeQ").addEventListener("focus", renderResults);
 $("homeQ").addEventListener("keydown", (e) => { if (e.key === "Escape") { $("results").hidden = true; } });
 window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY) renderWishlist(); });
+["sb:wishlist", "sb:account"].forEach((ev) => window.addEventListener(ev, (e) => { if (e.type === "sb:account" || e.detail.from === "sync") renderWishlist(); }));
 
 renderAll();
 if (GOOGLE_MAPS_API_KEY) initWorldMap(); else $("map").hidden = true;

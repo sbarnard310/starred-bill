@@ -12,7 +12,7 @@ const PAGE_CURRENCIES = [...new Set(RESTAURANTS.map((r) => r.cur))];
 const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !== PAGE.currency));
 pageVars = () => ({ place: pick(PAGE, "name"), placeIn: cjk() ? pick(PAGE, "name") : fr() ? PAGE.inSentenceFr : PAGE.inSentence || PAGE.name });
 
-const state = { meal: "dinner", activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
+const state = { meal: "dinner", activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
   currency: PAGE.currency, rates: Object.fromEntries(Object.entries(DATA.currencies).map(([k, v]) => [k, v.perUSD])), rateDate: new Date(DATA.rateDate + "T12:00:00Z") };
 
 // ---------- Helpers ----------
@@ -48,8 +48,9 @@ const isMenu = (r) => typeOf(r) === "menu" && priceOf(r) != null;
 const priceRank = (r) => (L() && r.noLunch ? 3 : isMenu(r) ? 0 : priceOf(r) != null ? 1 : 2);
 const byPrice = (a, b) => (priceOf(a) || 0) - (priceOf(b) || 0);
 const onWishlist = (r) => state.wishlist.includes(r.id);
+const onBeen = (r) => Object.prototype.hasOwnProperty.call(state.visited, r.id);
 const starMatch = (r) => !state.activeStars || r.stars === state.activeStars;
-const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOnly || !!r.change);
+const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOnly || !!r.change) && (!state.beenOnly || onBeen(r));
 const searchText = (r) => [r.name, r.nameZh, r.nameJa, r.cuisine, r.cuisineZh, r.cuisineJa, CUISINE_ZH[r.cuisine], r.area, r.areaZh, r.areaJa, r.cityName, r.cityNameZh, r.cityNameJa].filter(Boolean).join(" ").toLowerCase();
 const queryMatch = (r) => { const q = state.query.trim().toLowerCase(); return !q || searchText(r).includes(q); };
 const changeBadge = (r) => !r.change ? "" : '<span class="chg chg-' + (r.change === "down" ? "down" : "up") + '" title="' + esc(t("chgTitle", { note: pick(r, "changeNote"), date: monthYear(r.changeDate) })) + '">' + (r.change === "down" ? "▼ " : "▲ ") + (r.change === "new" ? t("chgNew") + " " : "") + monthYear(r.changeDate) + "</span>";
@@ -61,6 +62,7 @@ function load() {
   const saved = (prefs.currency || {})[PAGE.currency];
   if (saved && currencyOptions.includes(saved)) state.currency = saved;
   state.wishlist = loadWishlist();
+  state.visited = loadVisited();
 }
 function save() {
   const prefs = store.get(PREFS_KEY, {});
@@ -68,7 +70,7 @@ function save() {
   prefs.meal = state.meal;
   prefs.currency = Object.assign({}, prefs.currency, { [PAGE.currency]: state.currency });
   store.set(PREFS_KEY, prefs);
-  store.set(WISHLIST_KEY, state.wishlist);
+  setWishlist(state.wishlist);
 }
 
 function filtered() {
@@ -151,9 +153,10 @@ function renderMealFilter() {
 }
 function renderShowFilter() {
   $("showFilter").innerHTML =
-    '<button type="button" data-show="all" aria-pressed="' + !(state.wishOnly || state.changesOnly) + '">' + t("showAll") + "</button>" +
+    '<button type="button" data-show="all" aria-pressed="' + !(state.wishOnly || state.changesOnly || state.beenOnly) + '">' + t("showAll") + "</button>" +
     '<button type="button" data-show="changes" aria-pressed="' + state.changesOnly + '" title="' + esc(t("showChangesTitle")) + '"><span class="chg-up" aria-hidden="true">▲</span>' + t("showChanges") + '<span class="count">' + RESTAURANTS.filter((r) => r.change).length + "</span></button>" +
-    '<button type="button" data-show="wishlist" aria-pressed="' + state.wishOnly + '"><span class="wish-icon">' + heart + "</span>" + t("showWish") + '<span class="count">' + RESTAURANTS.filter(onWishlist).length + "</span></button>";
+    '<button type="button" data-show="wishlist" aria-pressed="' + state.wishOnly + '"><span class="wish-icon">' + heart + "</span>" + t("showWish") + '<span class="count">' + RESTAURANTS.filter(onWishlist).length + "</span></button>" +
+    (acctSignedIn() ? '<button type="button" data-show="been" aria-pressed="' + state.beenOnly + '"><span class="been-icon"><svg aria-hidden="true"><use href="#check"/></svg></span>' + t("showBeen") + '<span class="count">' + RESTAURANTS.filter(onBeen).length + "</span></button>" : "");
   renderWishCount();
 }
 function renderStarFilter() {
@@ -211,7 +214,7 @@ function renderLedger() {
         (priceOf(r) == null ? '<span class="num muted">–</span><span class="note">' + t(L() && r.noLunch ? "noLunch" : "notListed") + "</span>"
           : '<span class="num">' + money(priceOf(r), r) + "</span>" + (typeOf(r) === "main" ? '<span class="note">' + t("perMain") + "</span>" : typeOf(r) === "spend" ? '<span class="note">' + t("typicalSpend") + "</span>" : "")) + "</span></span>" +
       '<span class="wine num' + (wineOf(r) ? "" : " muted") + '" role="cell"><span class="mlabel">' + t("hWine") + "</span>" + (wineOf(r) ? money(wineOf(r), r) : "–") + "</span>" +
-      '<span class="wish-cell" role="cell"><button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
+      '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
       "</div>";
   });
   const former = state.activeStars || state.wishOnly ? [] : FORMER.filter((r) => (!state.changesOnly || r.change) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
@@ -225,13 +228,16 @@ function renderLedger() {
         '<span class="rating-cell" role="cell"><span class="num muted">–</span></span>' +
         '<span class="notes" role="cell"><span class="status-pill status-' + esc(r.status) + '">' + (r.change === "down" ? "▼ " : "") + (label[r.status] || label.changed) + "</span>" + esc(pick(r, "statusNote")) + "</span>" +
         '<span class="dinner" role="cell"><span class="dprice"><span class="num muted">–</span></span></span>' +
-        '<span class="wine num muted" role="cell">–</span><span class="wish-cell" role="cell"></span></div>';
+        '<span class="wine num muted" role="cell">–</span><span class="wish-cell" role="cell">' + beenButton(r) + "</span></div>";
     });
   }
   $("ledger").innerHTML = html;
   observeThumbs();
   updateMap(true);
-  $("showing").textContent = t("showing", { a: rows.length, b: RESTAURANTS.length }) + (former.length ? t("showingFormer", { c: former.length }) : "");
+  $("showing").textContent = t("showing", { a: rows.length, b: RESTAURANTS.length }) + (former.length ? t("showingFormer", { c: former.length }) : "") +
+    (acctSignedIn() && RESTAURANTS.some(onBeen) ? " · " + t("beenProgress", { n: RESTAURANTS.filter(onBeen).length, total: RESTAURANTS.length }) : "");
+  $("wishNote").innerHTML = acctSignedIn() ? esc(t("wishNoteIn"))
+    : esc(t("wishNoteOut")) + ' <button type="button" class="linkish" data-signin="">' + esc(t("wishNoteSignIn")) + "</button>";
 }
 
 // ---------- Headline figures and star tiers ----------
@@ -414,6 +420,20 @@ function toast(msg, undo) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => { $("toast").hidden = true; state.lastUndo = null; }, 5000);
 }
+// The ✓ next to the heart. Signed out, it offers a free account instead (account.js).
+function beenButton(r) {
+  const on = onBeen(r);
+  return '<button type="button" class="been" data-been="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "beenRemove" : "beenAdd", { name: nameOf(r) })) +
+    '" title="' + esc(t(on ? "beenRemoveT" : "beenAddT")) + '"><svg aria-hidden="true"><use href="#check"/></svg></button>';
+}
+function toggleBeen(id) {
+  const r = ALL_RESTAURANTS.find((x) => x.id === id);
+  const was = onBeen(r);
+  if (!toggleVisited(id)) return;
+  state.visited = loadVisited();
+  toast(t(was ? "toastNotBeen" : "toastBeen", { name: nameOf(r) }), () => { toggleVisited(id); state.visited = loadVisited(); });
+  render();
+}
 function toggleWish(id) {
   const r = RESTAURANTS.find((x) => x.id === id);
   state.wishlist = loadWishlist();
@@ -464,12 +484,14 @@ document.addEventListener("click", (e) => {
     state.currency = el.dataset.currency; save(); renderAll();
   } else if (el.dataset.wish) {
     toggleWish(el.dataset.wish);
+  } else if (el.dataset.been) {
+    toggleBeen(el.dataset.been);
   } else if (el.dataset.show) {
-    state.wishOnly = el.dataset.show === "wishlist"; state.changesOnly = el.dataset.show === "changes"; render();
+    state.wishOnly = el.dataset.show === "wishlist"; state.changesOnly = el.dataset.show === "changes"; state.beenOnly = el.dataset.show === "been"; render();
   } else if (el.dataset.stars) {
     state.activeStars = Number(el.dataset.stars); render();
   } else if (el.id === "clearFilters") {
-    state.activeStars = 0; state.activeCat = "All"; state.wishOnly = false; state.changesOnly = false; state.query = ""; $("q").value = ""; render();
+    state.activeStars = 0; state.activeCat = "All"; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.query = ""; $("q").value = ""; render();
   } else if (el.dataset.cat) {
     state.activeCat = el.dataset.cat; render();
     if (el.classList.contains("tag")) $("compare").scrollIntoView();
@@ -492,7 +514,10 @@ $("contactForm").addEventListener("submit", (e) => {
   e.target.reset();
 });
 // Keep the header count right when the wishlist changes in another tab.
-window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY) { state.wishlist = loadWishlist(); render(); } });
+window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY || e.key === VISITED_KEY) { state.wishlist = loadWishlist(); state.visited = loadVisited(); render(); } });
+// The account brought lists down, or someone signed in or out.
+const refreshLists = (e) => { if (e.type === "sb:account" || e.detail.from === "sync") { state.wishlist = loadWishlist(); state.visited = loadVisited(); if (!acctSignedIn()) state.beenOnly = false; render(); } };
+["sb:wishlist", "sb:visited", "sb:account"].forEach((ev) => window.addEventListener(ev, refreshLists));
 
 // ---------- Start ----------
 load();

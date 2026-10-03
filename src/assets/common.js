@@ -64,6 +64,28 @@ const I18N = {
     nearFailed: "Couldn't find your location just now. Please try again.", nearUnsupported: "This browser can't share your location.",
     jumpMap: "Map", jumpMapAria: "Jump to the map",
     share: "Share", shareAria: "Share this page", shareTitle: "Share this page", shareCopy: "Copy link", shareCopied: "Link copied", shareEmail: "Email",
+    accTitle: "Your account", accLoading: "Loading your account…", accOutText: "Sign in to see your wishlist and the restaurants you've been to, on any device. It's free.",
+    accSignedInAs: "Signed in as {email}", accStatBeen: "Been there", accStatStars: "Stars collected", accStatThree: "Three-star restaurants", accStatCountries: "Countries",
+    accMilestones: "Milestones", ms1: "First star", ms2: "First three-star", ms3: "10 restaurants", ms4: "25 restaurants", ms5: "3 countries", ms6: "50 stars collected", msGot: "(reached)",
+    accWhere: "Where you've been", accOf: "{n} of {total}", accBeenTitle: "Been there", accBeenEmpty: "Nothing ticked off yet. Tap the ✓ next to any restaurant you've been to.",
+    accDateAria: "Date you went to {name}", accRemove: "Remove", accWishTitle: "Your wishlist", accWishEmpty: "Your wishlist is empty. Tap the heart next to any restaurant to save it.",
+    accMarkBeen: "Been there", accData: "Your data", accDataText: "Download everything we hold for your account, sign out on this device, or delete your account and both lists for good.",
+    accDownload: "Download my data", accSignOut: "Sign out", accDelete: "Delete my account", accDeleteConfirm: "This deletes your account and both lists for good. It can't be undone.",
+    accDeleteYes: "Delete for good", accDeleteNo: "Keep my account", accDeleted: "Your account has been deleted.", accDeleteFail: "Your account couldn't be deleted just now. Try again, or use the contact form.",
+    acctSignIn: "Sign in", acctAccount: "Account", acctTitle: "Sign in or create a free account",
+    acctWhy: "Keep your wishlist on every device and tick off the restaurants you've been to.",
+    acctWhyBeen: "Create a free account to tick off the restaurants you've been to. It keeps your wishlist on every device too.",
+    acctGoogle: "Continue with Google", acctOr: "or", acctEmailLabel: "Email address", acctSend: "Email me a sign-in link", acctSending: "Sending…",
+    acctSent: "Check your email. We've sent a sign-in link to {email}. Open it on this device to finish signing in.",
+    acctTooMany: "Too many sign-in emails just now. Wait a minute, then try again.", acctFailed: "That didn't work. Check the email address and try again.",
+    acctBadEmail: "Enter a full email address, e.g. name@example.com.", acctSmall: "Free, and no password to remember. We only use your email to sign you in.",
+    acctPrivacy: "Privacy notice", acctClose: "Close", acctWelcome: "You're signed in. Your wishlist now follows you to any device.",
+    acctLinkExpired: "That sign-in link has expired or was already used. Tap Sign in to get a new one.",
+    been: "Been there", beenAdd: "Mark {name} as been there", beenRemove: "Remove {name} from been there", beenAddT: "Mark as been there", beenRemoveT: "Remove from been there",
+    toastBeen: "Marked {name} as been there", toastNotBeen: "Removed {name} from been there", showBeen: "Been there",
+    beenProgress: "You've been to {n} of the {total} here.", wishNoteOut: "Your wishlist is saved on this device only.", wishNoteSignIn: "Sign in to keep it on every device",
+    wishNoteIn: "Your wishlist and been-there list are saved to your account.", wishCtaHome: "Your wishlist is saved on this device only. Sign up free to keep it on every device and tick off the restaurants you've been to.",
+    wishCtaBtn: "Sign up free", wishSynced: "Saved to your account.", acctSee: "See your account",
     shareInsta: "For Instagram, copy the link and paste it into a story or message.",
     shareMore: "Instagram, Messages and more",
     shareTextPlace: "What a Michelin star costs in {placeIn}: dinner, lunch and wine pairing prices side by side.",
@@ -104,7 +126,7 @@ const I18N = {
     destTitle: "Destinations", destText: "Each destination has its own page with prices, filters, a map and star-by-star averages.",
     destRestaurants: "{n} starred restaurant|{n} starred restaurants", destFrom: "Dinner menus from {p}", destOpen: "Compare {place}",
     collectionsTitle: "Collections",
-    wishTitle: "Your wishlist", wishText: "Restaurants you've saved from any destination. Saved in this browser only.",
+    wishTitle: "Your wishlist", wishText: "Restaurants you've saved from any destination.",
     wishEmptyHome: "Nothing saved yet. Tap the heart next to any restaurant on a destination page to save it here.",
     wishRemoveShort: "Remove",
     infoCompare: "Compare prices in {place}",
@@ -169,6 +191,28 @@ const I18N = {
     nearFailed: "暫時無法取得你的位置，請再試一次。", nearUnsupported: "此瀏覽器無法分享你的位置。",
     jumpMap: "地圖", jumpMapAria: "跳到地圖",
     share: "分享", shareAria: "分享此頁", shareTitle: "分享此頁", shareCopy: "複製連結", shareCopied: "已複製連結", shareEmail: "電子郵件",
+    accTitle: "你的帳戶", accLoading: "正在載入你的帳戶…", accOutText: "登入即可在任何裝置上查看你的願望清單和去過的餐廳。完全免費。",
+    accSignedInAs: "已用 {email} 登入", accStatBeen: "去過", accStatStars: "累積星數", accStatThree: "三星餐廳", accStatCountries: "國家",
+    accMilestones: "里程碑", ms1: "第一顆星", ms2: "第一家三星", ms3: "10 家餐廳", ms4: "25 家餐廳", ms5: "3 個國家", ms6: "累積 50 顆星", msGot: "（已達成）",
+    accWhere: "你去過的地方", accOf: "{total} 家中的 {n} 家", accBeenTitle: "去過的餐廳", accBeenEmpty: "還沒有勾選任何餐廳。在你去過的餐廳旁點選 ✓ 即可。",
+    accDateAria: "你去{name}的日期", accRemove: "移除", accWishTitle: "你的願望清單", accWishEmpty: "你的願望清單是空的。點選任一餐廳旁的愛心即可收藏。",
+    accMarkBeen: "去過了", accData: "你的資料", accDataText: "下載我們為你帳戶保存的所有資料、在這部裝置上登出，或永久刪除你的帳戶與兩份清單。",
+    accDownload: "下載我的資料", accSignOut: "登出", accDelete: "刪除我的帳戶", accDeleteConfirm: "這會永久刪除你的帳戶與兩份清單，且無法復原。",
+    accDeleteYes: "永久刪除", accDeleteNo: "保留我的帳戶", accDeleted: "你的帳戶已刪除。", accDeleteFail: "目前無法刪除你的帳戶。請再試一次，或使用聯絡表單。",
+    acctSignIn: "登入", acctAccount: "帳戶", acctTitle: "登入或建立免費帳戶",
+    acctWhy: "在每部裝置上保留你的願望清單，並勾選你去過的餐廳。",
+    acctWhyBeen: "建立免費帳戶，即可勾選你去過的餐廳，願望清單也會在每部裝置上同步。",
+    acctGoogle: "使用 Google 繼續", acctOr: "或", acctEmailLabel: "電子郵件地址", acctSend: "寄送登入連結給我", acctSending: "寄送中…",
+    acctSent: "請查看電子郵件。我們已將登入連結寄到 {email}，請在這部裝置上開啟以完成登入。",
+    acctTooMany: "登入郵件寄送次數過多，請稍候一分鐘再試。", acctFailed: "未能完成，請檢查電子郵件地址後再試一次。",
+    acctBadEmail: "請輸入完整的電子郵件地址，例如 name@example.com。", acctSmall: "免費，而且不必記密碼。我們只用你的電子郵件讓你登入。",
+    acctPrivacy: "隱私權聲明", acctClose: "關閉", acctWelcome: "你已登入。你的願望清單現在會在每部裝置上同步。",
+    acctLinkExpired: "這個登入連結已過期或已使用過，請點選「登入」取得新連結。",
+    been: "去過了", beenAdd: "將{name}標示為去過", beenRemove: "取消{name}的去過標示", beenAddT: "標示為去過", beenRemoveT: "取消去過標示",
+    toastBeen: "已將{name}標示為去過", toastNotBeen: "已取消{name}的去過標示", showBeen: "去過了",
+    beenProgress: "這裡的 {total} 家餐廳中，你去過 {n} 家。", wishNoteOut: "你的願望清單只儲存在這部裝置上。", wishNoteSignIn: "登入即可在每部裝置上保留",
+    wishNoteIn: "你的願望清單與去過清單已儲存到你的帳戶。", wishCtaHome: "你的願望清單只儲存在這部裝置上。免費註冊，即可在每部裝置上保留，並勾選你去過的餐廳。",
+    wishCtaBtn: "免費註冊", wishSynced: "已儲存到你的帳戶。", acctSee: "查看你的帳戶",
     shareInsta: "若要分享到 Instagram，請複製連結，再貼到限時動態或訊息中。",
     shareMore: "Instagram、訊息與更多",
     shareTextPlace: "在{place}，一顆米其林星要價多少？晚餐、午餐與餐酒搭配價格一次比較。",
@@ -208,7 +252,7 @@ const I18N = {
     destTitle: "目的地", destText: "每個目的地都有專屬頁面，提供價格、篩選、地圖與各星級平均。",
     destRestaurants: "{n} 家星級餐廳", destFrom: "晚餐套餐 {p} 起", destOpen: "比較{place}",
     collectionsTitle: "精選區域",
-    wishTitle: "你的願望清單", wishText: "你在各目的地收藏的餐廳，只儲存在這個瀏覽器中。",
+    wishTitle: "你的願望清單", wishText: "你在各目的地收藏的餐廳。",
     wishEmptyHome: "目前還沒有收藏。在任一目的地頁面點選餐廳旁的愛心，即可加入這裡。",
     wishRemoveShort: "移除",
     infoCompare: "比較{place}的價格",
@@ -272,6 +316,28 @@ const I18N = {
     nearFailed: "Impossible de vous localiser pour le moment. Réessayez.", nearUnsupported: "Ce navigateur ne peut pas partager votre position.",
     jumpMap: "Carte", jumpMapAria: "Aller à la carte",
     share: "Partager", shareAria: "Partager cette page", shareTitle: "Partager cette page", shareCopy: "Copier le lien", shareCopied: "Lien copié", shareEmail: "E-mail",
+    accTitle: "Votre compte", accLoading: "Chargement de votre compte…", accOutText: "Connectez-vous pour retrouver vos envies et les restaurants où vous êtes allé, sur tous vos appareils. C'est gratuit.",
+    accSignedInAs: "Connecté avec {email}", accStatBeen: "Restaurants visités", accStatStars: "Étoiles cumulées", accStatThree: "Trois étoiles", accStatCountries: "Pays",
+    accMilestones: "Étapes", ms1: "Première étoile", ms2: "Premier trois étoiles", ms3: "10 restaurants", ms4: "25 restaurants", ms5: "3 pays", ms6: "50 étoiles cumulées", msGot: "(atteint)",
+    accWhere: "Où vous êtes allé", accOf: "{n} sur {total}", accBeenTitle: "Restaurants visités", accBeenEmpty: "Rien de coché pour l'instant. Touchez le ✓ à côté d'un restaurant où vous êtes allé.",
+    accDateAria: "Date de votre visite à {name}", accRemove: "Retirer", accWishTitle: "Vos envies", accWishEmpty: "Votre liste d'envies est vide. Touchez le cœur à côté d'un restaurant pour l'ajouter.",
+    accMarkBeen: "J'y suis allé", accData: "Vos données", accDataText: "Téléchargez tout ce que nous conservons pour votre compte, déconnectez-vous de cet appareil, ou supprimez définitivement votre compte et vos deux listes.",
+    accDownload: "Télécharger mes données", accSignOut: "Se déconnecter", accDelete: "Supprimer mon compte", accDeleteConfirm: "Cela supprime définitivement votre compte et vos deux listes. C'est irréversible.",
+    accDeleteYes: "Supprimer définitivement", accDeleteNo: "Garder mon compte", accDeleted: "Votre compte a été supprimé.", accDeleteFail: "Votre compte n'a pas pu être supprimé pour le moment. Réessayez, ou utilisez le formulaire de contact.",
+    acctSignIn: "Connexion", acctAccount: "Compte", acctTitle: "Connectez-vous ou créez un compte gratuit",
+    acctWhy: "Retrouvez vos envies sur tous vos appareils et cochez les restaurants où vous êtes allé.",
+    acctWhyBeen: "Créez un compte gratuit pour cocher les restaurants où vous êtes allé. Vos envies vous suivent aussi sur tous vos appareils.",
+    acctGoogle: "Continuer avec Google", acctOr: "ou", acctEmailLabel: "Adresse e-mail", acctSend: "Recevoir un lien de connexion", acctSending: "Envoi…",
+    acctSent: "Consultez vos e-mails. Nous avons envoyé un lien de connexion à {email}. Ouvrez-le sur cet appareil pour terminer.",
+    acctTooMany: "Trop d'e-mails de connexion pour le moment. Attendez une minute, puis réessayez.", acctFailed: "Cela n'a pas fonctionné. Vérifiez l'adresse e-mail et réessayez.",
+    acctBadEmail: "Saisissez une adresse e-mail complète, par exemple nom@exemple.fr.", acctSmall: "Gratuit, sans mot de passe à retenir. Votre e-mail ne sert qu'à vous connecter.",
+    acctPrivacy: "Confidentialité", acctClose: "Fermer", acctWelcome: "Vous êtes connecté. Vos envies vous suivent désormais sur tous vos appareils.",
+    acctLinkExpired: "Ce lien de connexion a expiré ou a déjà servi. Touchez Connexion pour en recevoir un nouveau.",
+    been: "J'y suis allé", beenAdd: "Marquer {name} comme visité", beenRemove: "Retirer {name} des restaurants visités", beenAddT: "Marquer comme visité", beenRemoveT: "Retirer des restaurants visités",
+    toastBeen: "{name} marqué comme visité", toastNotBeen: "{name} retiré des restaurants visités", showBeen: "Visités",
+    beenProgress: "Vous êtes allé dans {n} des {total} restaurants ici.", wishNoteOut: "Vos envies sont enregistrées sur cet appareil uniquement.", wishNoteSignIn: "Connectez-vous pour les retrouver partout",
+    wishNoteIn: "Vos envies et vos restaurants visités sont enregistrés dans votre compte.", wishCtaHome: "Vos envies sont enregistrées sur cet appareil uniquement. Créez un compte gratuit pour les retrouver partout et cocher les restaurants où vous êtes allé.",
+    wishCtaBtn: "Créer un compte gratuit", wishSynced: "Enregistré dans votre compte.", acctSee: "Voir votre compte",
     shareInsta: "Pour Instagram, copiez le lien puis collez-le dans une story ou un message.",
     shareMore: "Instagram, Messages et plus",
     shareTextPlace: "Ce que coûte une étoile Michelin {placeIn} : prix du dîner, du déjeuner et des accords mets-vins, côte à côte.",
@@ -356,6 +422,28 @@ const I18N = {
     nearFailed: "暫時搵唔到你嘅位置，請再試多次。", nearUnsupported: "呢個瀏覽器分享唔到你嘅位置。",
     jumpMap: "地圖", jumpMapAria: "跳去地圖",
     share: "分享", shareAria: "分享呢版", shareTitle: "分享呢版", shareCopy: "複製連結", shareCopied: "已經複製咗連結", shareEmail: "電郵",
+    accTitle: "你嘅帳戶", accLoading: "載入緊你嘅帳戶…", accOutText: "登入就可以喺任何裝置睇到你嘅心水清單同去過嘅餐廳。完全免費。",
+    accSignedInAs: "已經用 {email} 登入", accStatBeen: "去過", accStatStars: "累積星數", accStatThree: "三星餐廳", accStatCountries: "國家",
+    accMilestones: "里程碑", ms1: "第一粒星", ms2: "第一間三星", ms3: "10 間餐廳", ms4: "25 間餐廳", ms5: "3 個國家", ms6: "累積 50 粒星", msGot: "（已經達到）",
+    accWhere: "你去過嘅地方", accOf: "{total} 間入面去過 {n} 間", accBeenTitle: "去過嘅餐廳", accBeenEmpty: "未剔過任何餐廳。喺你去過嘅餐廳旁邊撳 ✓ 就得。",
+    accDateAria: "你去{name}嘅日期", accRemove: "移除", accWishTitle: "你嘅心水清單", accWishEmpty: "你嘅心水清單係空嘅。撳任何一間餐廳旁邊嘅心心就可以儲低。",
+    accMarkBeen: "去過", accData: "你嘅資料", accDataText: "下載我哋為你帳戶保存嘅所有資料、喺呢部裝置登出，或者永久刪除你嘅帳戶同兩份清單。",
+    accDownload: "下載我嘅資料", accSignOut: "登出", accDelete: "刪除我嘅帳戶", accDeleteConfirm: "咁會永久刪除你嘅帳戶同兩份清單，冇得復原。",
+    accDeleteYes: "永久刪除", accDeleteNo: "保留我嘅帳戶", accDeleted: "你嘅帳戶已經刪除。", accDeleteFail: "暫時刪除唔到你嘅帳戶。請再試多次，或者用聯絡表格。",
+    acctSignIn: "登入", acctAccount: "帳戶", acctTitle: "登入或者開個免費帳戶",
+    acctWhy: "喺每部裝置都保留你嘅心水清單，仲可以剔低你去過嘅餐廳。",
+    acctWhyBeen: "開個免費帳戶就可以剔低你去過嘅餐廳，心水清單亦會喺每部裝置同步。",
+    acctGoogle: "用 Google 繼續", acctOr: "或者", acctEmailLabel: "電郵地址", acctSend: "電郵登入連結俾我", acctSending: "寄緊…",
+    acctSent: "請睇下你嘅電郵。我哋已經將登入連結寄咗去 {email}，喺呢部裝置打開就可以完成登入。",
+    acctTooMany: "登入電郵寄得太密，請等一分鐘再試。", acctFailed: "做唔到，請檢查電郵地址再試多次。",
+    acctBadEmail: "請輸入完整嘅電郵地址，例如 name@example.com。", acctSmall: "免費，唔使記密碼。我哋只會用你嘅電郵嚟登入。",
+    acctPrivacy: "私隱聲明", acctClose: "關閉", acctWelcome: "你已經登入。你嘅心水清單而家會喺每部裝置同步。",
+    acctLinkExpired: "呢條登入連結已經過期或者用過，請撳「登入」攞條新嘅。",
+    been: "去過", beenAdd: "將{name}標示為去過", beenRemove: "取消{name}嘅去過標示", beenAddT: "標示為去過", beenRemoveT: "取消去過標示",
+    toastBeen: "已經將{name}標示為去過", toastNotBeen: "已經取消{name}嘅去過標示", showBeen: "去過",
+    beenProgress: "呢度 {total} 間餐廳入面，你去過 {n} 間。", wishNoteOut: "你嘅心水清單只係儲喺呢部裝置。", wishNoteSignIn: "登入就可以喺每部裝置保留",
+    wishNoteIn: "你嘅心水清單同去過清單已經儲咗喺你嘅帳戶。", wishCtaHome: "你嘅心水清單只係儲喺呢部裝置。免費登記就可以喺每部裝置保留，仲可以剔低你去過嘅餐廳。",
+    wishCtaBtn: "免費登記", wishSynced: "已經儲咗喺你嘅帳戶。", acctSee: "睇你嘅帳戶",
     shareInsta: "想分享去 Instagram，就複製條連結，再貼落限時動態或者訊息度。",
     shareMore: "Instagram、訊息同更多",
     shareTextPlace: "喺{place}，一粒米芝蓮星要幾多錢？晚市、午市同配酒價錢一次過比較。",
@@ -441,6 +529,28 @@ const I18N = {
     nearFailed: "現在地を取得できませんでした。もう一度お試しください。", nearUnsupported: "このブラウザは位置情報を共有できません。",
     jumpMap: "地図", jumpMapAria: "地図へ移動",
     share: "共有", shareAria: "このページを共有", shareTitle: "このページを共有", shareCopy: "リンクをコピー", shareCopied: "コピーしました", shareEmail: "メール",
+    accTitle: "アカウント", accLoading: "アカウントを読み込んでいます…", accOutText: "ログインすると、お気に入りと行ったレストランをどの端末でも見られます。無料です。",
+    accSignedInAs: "{email} でログイン中", accStatBeen: "行った店", accStatStars: "獲得した星", accStatThree: "三つ星", accStatCountries: "国",
+    accMilestones: "マイルストーン", ms1: "初めての星", ms2: "初めての三つ星", ms3: "10軒", ms4: "25軒", ms5: "3か国", ms6: "星50個", msGot: "（達成）",
+    accWhere: "行った場所", accOf: "{total}軒中{n}軒", accBeenTitle: "行った店", accBeenEmpty: "まだチェックがありません。行ったレストランの横の ✓ をタップしてください。",
+    accDateAria: "{name}に行った日", accRemove: "削除", accWishTitle: "お気に入り", accWishEmpty: "お気に入りはまだありません。レストランの横のハートをタップすると保存できます。",
+    accMarkBeen: "行った", accData: "データ", accDataText: "アカウントの全データのダウンロード、この端末でのログアウト、アカウントと両方のリストの完全な削除ができます。",
+    accDownload: "データをダウンロード", accSignOut: "ログアウト", accDelete: "アカウントを削除", accDeleteConfirm: "アカウントと両方のリストが完全に削除されます。元に戻せません。",
+    accDeleteYes: "完全に削除", accDeleteNo: "削除しない", accDeleted: "アカウントを削除しました。", accDeleteFail: "現在アカウントを削除できません。もう一度お試しいただくか、お問い合わせフォームをご利用ください。",
+    acctSignIn: "ログイン", acctAccount: "アカウント", acctTitle: "ログインまたは無料アカウント作成",
+    acctWhy: "お気に入りをどの端末でも使えて、行ったレストランにチェックを付けられます。",
+    acctWhyBeen: "無料アカウントを作ると、行ったレストランにチェックを付けられます。お気に入りもどの端末でも使えます。",
+    acctGoogle: "Google で続ける", acctOr: "または", acctEmailLabel: "メールアドレス", acctSend: "ログイン用リンクをメールで受け取る", acctSending: "送信中…",
+    acctSent: "メールを確認してください。{email} にログイン用リンクを送りました。この端末で開くとログインが完了します。",
+    acctTooMany: "ログイン用メールの送信が多すぎます。1分ほど待ってからもう一度お試しください。", acctFailed: "うまくいきませんでした。メールアドレスを確認して、もう一度お試しください。",
+    acctBadEmail: "メールアドレスを正しく入力してください（例：name@example.com）。", acctSmall: "無料で、パスワードは不要です。メールアドレスはログインにのみ使います。",
+    acctPrivacy: "プライバシーについて", acctClose: "閉じる", acctWelcome: "ログインしました。お気に入りがどの端末でも使えるようになりました。",
+    acctLinkExpired: "このログイン用リンクは期限切れか、すでに使われています。「ログイン」から新しいリンクを受け取ってください。",
+    been: "行った", beenAdd: "{name}を「行った」にする", beenRemove: "{name}の「行った」を外す", beenAddT: "「行った」にする", beenRemoveT: "「行った」を外す",
+    toastBeen: "{name}を「行った」にしました", toastNotBeen: "{name}の「行った」を外しました", showBeen: "行った店",
+    beenProgress: "ここにある{total}軒のうち{n}軒に行きました。", wishNoteOut: "お気に入りはこの端末にのみ保存されています。", wishNoteSignIn: "ログインするとどの端末でも使えます",
+    wishNoteIn: "お気に入りと行った店はアカウントに保存されています。", wishCtaHome: "お気に入りはこの端末にのみ保存されています。無料登録すると、どの端末でも使えて、行ったレストランにチェックを付けられます。",
+    wishCtaBtn: "無料で登録", wishSynced: "アカウントに保存されています。", acctSee: "アカウントを見る",
     shareInsta: "Instagramでは、リンクをコピーしてストーリーズやメッセージに貼り付けてください。",
     shareMore: "Instagram、メッセージなど",
     shareTextPlace: "{place}でミシュランの星はいくら？ディナー、ランチ、ペアリングの料金を並べて比較。",
@@ -480,7 +590,7 @@ const I18N = {
     destTitle: "エリア", destText: "各エリアには料金、絞り込み、地図、星ごとの平均をまとめたページがあります。",
     destRestaurants: "星付きレストラン{n}軒", destFrom: "ディナーコース {p}〜", destOpen: "{place}を比較",
     collectionsTitle: "特集エリア",
-    wishTitle: "お気に入り", wishText: "各エリアで保存した店です。このブラウザにのみ保存されます。",
+    wishTitle: "お気に入り", wishText: "各エリアで保存した店です。",
     wishEmptyHome: "まだ保存した店はありません。各エリアのページで店の横のハートをタップすると、ここに追加されます。",
     wishRemoveShort: "削除",
     infoCompare: "{place}の料金を比較",
@@ -550,6 +660,23 @@ function setLang(lang) {
   document.documentElement.lang = LANGS[LANG].html;
 }
 const loadWishlist = () => { const wl = store.get(WISHLIST_KEY, []); return Array.isArray(wl) ? wl.filter((x) => typeof x === "string") : []; };
+// "Been there": restaurant id -> the date visited ("" when not given). Kept for signed-in people only (account.js).
+const VISITED_KEY = "starredbill-visited";
+const loadVisited = () => { const v = store.get(VISITED_KEY, {}); return v && typeof v === "object" && !Array.isArray(v) ? v : {}; };
+// Saving either list tells the page and the account code which restaurants changed.
+// `from` is "sync" when the change came down from the account, so it isn't sent back up.
+function setWishlist(list, from) {
+  const before = loadWishlist();
+  store.set(WISHLIST_KEY, list);
+  const ids = before.filter((id) => !list.includes(id)).concat(list.filter((id) => !before.includes(id)));
+  window.dispatchEvent(new CustomEvent("sb:wishlist", { detail: { ids, from: from || "" } }));
+}
+function setVisited(map, from) {
+  const before = loadVisited();
+  store.set(VISITED_KEY, map);
+  const ids = Object.keys(before).filter((id) => !(id in map) || before[id] !== map[id]).concat(Object.keys(map).filter((id) => !(id in before)));
+  window.dispatchEvent(new CustomEvent("sb:visited", { detail: { ids, from: from || "" } }));
+}
 
 // ---------- Helpers ----------
 const $ = (id) => document.getElementById(id);
@@ -610,6 +737,7 @@ function applyI18n() {
   $("wishLink").setAttribute("aria-label", t("wishTitle"));
   $("installBtn").textContent = t("installApp");
   labelShare();
+  if (typeof renderAccountButton === "function") renderAccountButton();
   const tip = $("installTip");
   if (tip) tip.textContent = t("installTipIos");
 }

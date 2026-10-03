@@ -9,7 +9,7 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
   - `common.js` has the settings, all English/Chinese wording (`I18N`) and helpers.
   - `place.js` runs destination pages and `home.js` runs the homepage.
   - `site.css` holds all styles.
-- `build.py` uses only the standard library and must stay **Python 3.9 compatible**, because that's the Mac's version. It checks the data, then writes `_site/`: one page per place with at least one starred restaurant, the homepage, the sitemap and the 404 page. Bad data stops the build with a plain-English list of problems.
+- `build.py` uses only the standard library and must stay **Python 3.9 compatible**, because that's the Mac's version. It checks the data, then writes `_site/`: one page per place (places with no stars yet get a short "none yet" page), the homepage, the sitemap and the 404 page. Bad data stops the build with a plain-English list of problems.
 - `.github/workflows/deploy.yml` builds and publishes on every push to `main`. Pages `build_type` is `workflow`, and the custom domain is set in the repo's Pages settings. DNS is at Namecheap.
 - `.pages.yml` defines the Pages CMS forms. Any new data field needs adding there too (`settings.content.merge: true` keeps unknown keys). The editor saves blank fields as `""`, which `tidy()` in build.py drops.
 
@@ -30,7 +30,7 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
   - `source`: the link.
   - The lunch equivalents are `lunchSourceType` and `lunchSource`.
 - When a restaurant loses its stars or closes, keep it: set `stars` to 0 and fill in `status`, `formerStars` and `statusNote`.
-- A restaurant's `city` is a place id. It shows on that place and on every place above it, plus any `group` that includes them. A region or country can hold restaurants directly: Hong Kong, Macau, Ireland, and UK restaurants outside the cities we cover. These sit in their county where it has a page (e.g. `yorkshire`, `cumbria`, `perthshire`), otherwise in their nation (`england`, `scotland`, `wales`, `northern-ireland` or `channel-islands`), with "Town, County" in `area`. A county gets its own page once it has 3 or more starred restaurants. When a city page is added (e.g. York inside Yorkshire), move its restaurants' `city` to it.
+- A restaurant's `city` is a place id. It shows on that place and on every place above it, plus any `group` that includes them. A region or country can hold restaurants directly: Hong Kong, Macau, Ireland, and UK restaurants outside the cities we cover. These sit in their county where it has a page (e.g. `yorkshire`, `cumbria`, `perthshire`), otherwise in their nation (`england`, `scotland`, `wales`, `northern-ireland` or `channel-islands`), with "Town, County" in `area`. Every ceremonial county in England has a page (Yorkshire is one page for all four Yorkshire counties; London and Bristol are cities directly under England). When a city page is added (e.g. York inside Yorkshire), move its restaurants' `city` to it.
 - Web addresses nest the whole chain, e.g. `/uk/england/london/`. Moving a page means adding its old address to the place's `redirectFrom`, which builds a forwarding page.
 - Each country's currency must be in `content/currencies.json`.
 - Sources used so far:

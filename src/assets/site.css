@@ -401,3 +401,16 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .share-copy button { color: #0C1712; } }
 :root[data-theme="dark"] .share-copy button { color: #0C1712; }
 @media (max-width: 520px) { .share-btn span { display: none; } .share-btn { padding: 6px 9px; } }
+
+/* Places with no starred restaurants yet */
+.empty-page .figures, .empty-page #compare .toolbar, .empty-page #compare .filters, .empty-page .ledger-foot { display: none; }
+.empty-page .ledger .row.head { display: none; }
+.empty-up { display: inline-block; margin-top: 14px; color: var(--gold); font-weight: 600; text-decoration: none; }
+.empty-up:hover { text-decoration: underline; }
+.explore-more summary { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--band-muted); list-style: none; }
+.explore-more summary::-webkit-details-marker { display: none; }
+.explore-more summary::before { content: "+"; font-size: .95rem; letter-spacing: 0; }
+.explore-more[open] summary::before { content: "–"; }
+.explore-more summary .count { font-family: var(--font-num); letter-spacing: 0; }
+.explore-more .explore-row { margin-top: 10px; }
+.explore-more .place-link.zero { opacity: .6; }

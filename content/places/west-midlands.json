@@ -3,5 +3,6 @@
   "type": "region",
   "parent": "england",
   "name": "West Midlands",
-  "nameZh": "西米德蘭茲"
+  "nameZh": "西米德蘭茲",
+  "inSentence": "the West Midlands"
 }

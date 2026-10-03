@@ -242,7 +242,7 @@ content:
 
   - name: places
     label: Places
-    description: Countries, regions, cities and collections. A page is built for each one that has at least one starred restaurant.
+    description: Countries, regions, cities and collections. Every one gets a page; one with no starred restaurants yet says so.
     type: collection
     path: content/places
     format: json

@@ -5,6 +5,9 @@ const PAGE = DATA.page;
 const ALL_RESTAURANTS = DATA.restaurants;
 const RESTAURANTS = ALL_RESTAURANTS.filter((r) => !r.status);
 const FORMER = ALL_RESTAURANTS.filter((r) => r.status);
+// A place with no starred restaurants yet: the page explains, links up to the nearest place that has some,
+// and only shows the comparison if there are former starred restaurants to list.
+const EMPTY = !RESTAURANTS.length;
 const PAGE_CURRENCIES = [...new Set(RESTAURANTS.map((r) => r.cur))];
 const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !== PAGE.currency));
 pageVars = () => ({ place: pick(PAGE, "name"), placeIn: zh() ? pick(PAGE, "name") : fr() ? PAGE.inSentenceFr : PAGE.inSentence || PAGE.name });
@@ -96,6 +99,12 @@ function applyStatic() {
   // Text written for this place in content/places replaces the general wording.
   const intro = pick(PAGE, "intro");
   if (intro) $("heroText").innerHTML = t("heroText") + " " + esc(intro);
+  if (EMPTY) {
+    const up = PAGE.crumbs.slice().reverse().find((c) => c.n);
+    $("heroText").innerHTML = esc(t("emptyPlace")) + (up ? '<br><a class="empty-up" href="' + withLang(up.path) + '">' + esc(t("emptySee", { n: up.n, name: pick(up, "name") })) + " →</a>" : "");
+    document.querySelector('[data-i18n="compareTitle"]').textContent = t("formerTitle");
+    document.querySelector('[data-i18n="compareText"]').textContent = t("formerNote");
+  }
   [["m1Text", "serviceText"], ["m2Text", "sourcesText"], ["m3Text", "starsText"]].forEach(([key, field]) => {
     const own = pick(PAGE, field);
     if (own) document.querySelector('[data-i18n="' + key + '"]').textContent = own;
@@ -112,8 +121,13 @@ function applyStatic() {
   $("crumbs").innerHTML = '<a href="' + withLang("/") + '">' + t("crumbHome") + "</a>" +
     PAGE.crumbs.map((c) => '<a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a>").join("") +
     '<span aria-current="page">' + esc(pick(PAGE, "name")) + "</span>";
-  $("explore").innerHTML = PAGE.links.map((group) =>
-    '<div class="explore-row"><span class="explore-label">' + esc(t(group.label, { country: pick(group, "country") })) + "</span>" +
+  // Places without stars yet sit in a fold, so long lists (e.g. England's counties) stay tidy.
+  $("explore").innerHTML = PAGE.links.map((group) => group.more
+    ? '<details class="explore-more"><summary>' + esc(t(group.label)) + ' <span class="count">' + group.items.length + "</span></summary>" +
+      '<div class="explore-row">' + group.items.map((p) => p.current
+        ? '<span class="place-link" aria-current="page">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></span>"
+        : '<a class="place-link' + (p.n ? "" : " zero") + '" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>").join("") + "</div></details>"
+    : '<div class="explore-row"><span class="explore-label">' + esc(t(group.label, { country: pick(group, "country") })) + "</span>" +
     group.items.map((p) => p.current
       ? '<span class="place-link" aria-current="page">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></span>"
       : '<a class="place-link" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>").join("") + "</div>").join("");
@@ -181,7 +195,7 @@ function renderLedger() {
   const rows = filtered();
   const max = Math.max(...RESTAURANTS.filter(isMenu).map(priceOf), 1);
   let html = '<div class="row head" role="row"><span role="columnheader">' + t("hRestaurant") + '</span><span role="columnheader">' + t("hCuisine") + '</span><span role="columnheader">' + t("hStars") + '</span><span role="columnheader">' + t("hGoogle") + '</span><span role="columnheader">' + t(L() ? "hNotesLunch" : "hNotes") + '</span><span role="columnheader" style="text-align:right">' + t("hPrice") + '</span><span role="columnheader" style="text-align:right">' + t("hWine") + '</span><span role="columnheader" class="sr-only">' + t("hWish") + "</span></div>";
-  if (!rows.length) {
+  if (!rows.length && !EMPTY) {
     html += '<div class="empty">' + (state.wishOnly && !RESTAURANTS.some(onWishlist) ? t("emptyWish")
       : t("noMatch") + ' <button type="button" class="linkish" id="clearFilters">' + t("clearFilters") + "</button>") + "</div>";
   }
@@ -353,8 +367,8 @@ function updateMap(fit) {
   else if (fit && n === 1) { mapState.map.setCenter(bounds.getCenter()); mapState.map.setZoom(15); }
 }
 function startMapWhenNear() {
-  $("map").hidden = $("mapNav").hidden = !GOOGLE_MAPS_API_KEY;
-  if (!GOOGLE_MAPS_API_KEY) return;
+  $("map").hidden = $("mapNav").hidden = !GOOGLE_MAPS_API_KEY || EMPTY;
+  if (!GOOGLE_MAPS_API_KEY || EMPTY) return;
   let started = false;
   const start = () => { if (started) return; started = true; window.removeEventListener("scroll", check); initMap(); };
   const check = () => { if ($("map").getBoundingClientRect().top < window.innerHeight + 400) start(); };
@@ -486,6 +500,13 @@ $("sort").value = state.sort;
 $("q").value = state.query;
 renderAll();
 if (state.query) $("compare").scrollIntoView();
+if (EMPTY) {
+  document.body.classList.add("empty-page");
+  $("stars").hidden = true;
+  document.querySelector('.nav a[href="#stars"]').hidden = true;
+  $("compare").hidden = !FORMER.length;
+  document.querySelector('.nav a[href="#compare"]').hidden = !FORMER.length;
+}
 startMapWhenNear();
 wireJumpToMap();
 loadRates();

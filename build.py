@@ -216,10 +216,8 @@ def members(p):
 
 
 starred_n = {pid: sum(1 for r in members(p) if not r.get("status")) for pid, p in places.items()}
-pages = [p for p in places.values() if starred_n[p["id"]]]
-for p in places.values():
-    if not starred_n[p["id"]]:
-        print(f"Note: no page for {p['name']} yet, because it has no starred restaurants.")
+# Every place gets a page; one without starred restaurants says so and waits for its first star.
+pages = list(places.values())
 
 
 def public(r):
@@ -256,8 +254,12 @@ def explore_links(p):
         # The regions directly inside (e.g. England's counties), then every city further down (e.g. London, York).
         regions = by_size(q for q in pages if q["type"] == "region" and q.get("parent") == p["id"])
         cities = by_size(q for q in pages if q["type"] == "city" and p["id"] in chain(q["id"])[1:])
-        if regions:
-            rows.append({"label": "explore", "items": [link(q) for q in regions]})
+        # Up to 12 of the busiest, then every one (with those still waiting for a star) in a fold underneath.
+        starred_regions = [q for q in regions if starred_n[q["id"]]]
+        if starred_regions:
+            rows.append({"label": "explore", "items": [link(q) for q in starred_regions[:12]]})
+        if len(starred_regions) > 12 or len(starred_regions) < len(regions):
+            rows.append({"label": "exploreAll", "more": True, "items": [link(q) for q in sorted(regions, key=lambda q: q["name"])]})
         if cities:
             rows.append(dict({k.replace("name", "country"): v for k, v in names(p).items()}, label="exploreCities" if regions else "explore",
                              items=[link(q) for q in cities]))
@@ -342,7 +344,7 @@ def build_place(p):
     page = dict(names(p), **{
         "id": p["id"], "type": p["type"], "inSentence": in_sentence(p), "inSentenceFr": inherited_name_fr(p),
         "path": p["path"], "currency": currency, "showCity": len({r["city"] for r in starred}) > 1,
-        "crumbs": [dict(names(c), path=c["path"]) for c in crumbs],
+        "crumbs": [dict(names(c), path=c["path"], n=starred_n[c["id"]]) for c in crumbs],
         "links": explore_links(p),
         "searchEx": search_example(starred, False), "searchExZh": search_example(starred, True),
         "searchExFr": search_example(starred, False, "areaFr"),
@@ -358,14 +360,15 @@ def build_place(p):
     where = in_sentence(p)
     description = (f"Dinner, lunch and wine pairing prices at {len(starred)} Michelin-starred restaurants in {where}"
                    f" ({stars[2]} three-star, {stars[1]} two-star, {stars[0]} one-star)"
-                   + (f", from {money(menus[0]['dinner'], menus[0]['cur'])} to {money(menus[-1]['dinner'], menus[-1]['cur'])} for a dinner menu." if menus else "."))
+                   + (f", from {money(menus[0]['dinner'], menus[0]['cur'])} to {money(menus[-1]['dinner'], menus[-1]['cur'])} for a dinner menu." if menus else ".")) if starred else \
+        f"There are currently no Michelin-starred restaurants in {where}. We'll add their dinner, lunch and wine pairing prices here as soon as one gets a star."
     intro = page["intro"]
     crumb_html = '<a href="/">All destinations</a>' + "".join(f'<a href="{c["path"]}">{e(c["name"])}</a>' for c in crumbs) + \
         f'<span aria-current="page">{e(p["name"])}</span>'
     explore_html = "".join(
         '<div class="explore-row">' + "".join(
             f'<span class="place-link" aria-current="page">{e(i["name"])}</span>' if i["current"] else f'<a class="place-link" href="{i["path"]}">{e(i["name"])}</a>'
-            for i in row["items"]) + "</div>" for row in page["links"])
+            for i in row["items"]) + "</div>" for row in page["links"] if not row.get("more"))
     ledger = '<ol class="prerender">' + "".join(
         f"<li><strong>{e(r['name'])}</strong> · {r['stars']} Michelin star{'s' if r['stars'] > 1 else ''} · {e(r.get('cuisine', ''))} · {e(r.get('area') or r['cityName'])}"
         + (f" · dinner {money(r['dinner'], r['cur'])}" if r.get("dinner") is not None else "") + "</li>"
@@ -374,7 +377,8 @@ def build_place(p):
         "title": e(f"The Starred Bill · {p['name']}"), "description": e(description), "canonical": SITE_URL + p["path"],
         "eyebrow": e(f"{p['name']} · Michelin Guide restaurants"),
         "h1": f"What a Michelin star <em>costs</em> in {e(where)}.",
-        "heroText": e(f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {where}, side by side." + (" " + intro if intro else "")),
+        "heroText": e((f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {where}, side by side." + (" " + intro if intro else ""))
+                      if starred else f"There are currently no restaurants with a Michelin star in {where}, but we'll update this page as soon as one appears."),
         "crumbs": crumb_html, "explore": explore_html, "ledger": ledger, "data": as_json(data),
     }))
 

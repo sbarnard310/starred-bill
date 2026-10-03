@@ -39,7 +39,7 @@ A region or city's address follows everything above it, so a Yorkshire region in
 
 Restaurants don't need a city page of their own: one outside the cities we cover can sit in its region or country (`city` set to e.g. `england` or `ireland`), with the town and county in `area`, e.g. "Aughton, Lancashire".
 
-Groups are for areas that overlap the main structure, such as "Basque Country" (Spain and France) or "Northern England". A page is only built once a place has at least one starred restaurant.
+Groups are for areas that overlap the main structure, such as "Basque Country" (Spain and France) or "Northern England". Every place gets a page. One with no starred restaurants yet says so and links up to the nearest place that has some (e.g. Dorset links to England), so it's ready for its first star.
 
 Optional `languages`, set on a country: the language buttons its pages offer (English and Chinese unless set; Hong Kong and Macau add Cantonese, France adds French). Any text field can have a `...Zh`, `...Yue` (Cantonese) or `...Fr` version; Cantonese falls back to the Chinese text.
 

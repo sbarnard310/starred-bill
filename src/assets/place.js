@@ -7,13 +7,12 @@ const RESTAURANTS = ALL_RESTAURANTS.filter((r) => !r.status);
 const FORMER = ALL_RESTAURANTS.filter((r) => r.status);
 const PAGE_CURRENCIES = [...new Set(RESTAURANTS.map((r) => r.cur))];
 const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !== PAGE.currency));
-pageVars = () => ({ place: pick(PAGE, "name"), placeIn: zh() ? pick(PAGE, "name") : PAGE.inSentence || PAGE.name });
+pageVars = () => ({ place: pick(PAGE, "name"), placeIn: zh() ? pick(PAGE, "name") : fr() ? PAGE.inSentenceFr : PAGE.inSentence || PAGE.name });
 
 const state = { meal: "dinner", activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
   currency: PAGE.currency, rates: Object.fromEntries(Object.entries(DATA.currencies).map(([k, v]) => [k, v.perUSD])), rateDate: new Date(DATA.rateDate + "T12:00:00Z") };
 
 // ---------- Helpers ----------
-const catZhFor = (c) => { const r = ALL_RESTAURANTS.find((x) => x.cuisine === c && x.cuisineZh); return r ? r.cuisineZh : CUISINE_ZH[c] || c; };
 const cityNameOf = (r) => pick(r, "cityName");
 const areaOf = (r) => {
   const a = pick(r, "area");
@@ -70,7 +69,7 @@ function save() {
 
 function filtered() {
   const rows = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
-  const coll = new Intl.Collator(zh() ? "zh-Hant-TW" : "en-GB");
+  const coll = new Intl.Collator(locale());
   const sorters = {
     "price-asc": (a, b) => priceRank(a) - priceRank(b) || byPrice(a, b),
     "price-desc": (a, b) => priceRank(a) - priceRank(b) || byPrice(b, a),
@@ -120,7 +119,7 @@ function applyStatic() {
   const converted = approx();
   $("rateLine").hidden = !converted;
   if (converted) {
-    const date = state.rateDate.toLocaleDateString(zh() ? "zh-TW" : "en-GB", { day: "numeric", month: zh() ? "numeric" : "short", year: "numeric" });
+    const date = state.rateDate.toLocaleDateString(locale(), { day: "numeric", month: zh() ? "numeric" : "short", year: "numeric" });
     const sym = DATA.currencies[state.currency].symbol;
     $("rateLine").textContent = PAGE_CURRENCIES.length === 1
       ? t("rateLine", { sym, date, home: DATA.currencies[PAGE_CURRENCIES[0]].symbol, rate: (1 / fx(PAGE_CURRENCIES[0])).toFixed(2) })
@@ -149,10 +148,12 @@ function renderStarFilter() {
 function renderChips() {
   const counts = {};
   RESTAURANTS.forEach((r) => { counts[r.cuisine] = (counts[r.cuisine] || 0) + (starMatch(r) && wishMatch(r) ? 1 : 0); });
-  const coll = new Intl.Collator(zh() ? "zh-Hant-TW" : "en-GB");
-  const zhCount = {};
-  Object.keys(counts).forEach((c) => { const z = catZhFor(c); zhCount[z] = (zhCount[z] || 0) + 1; });
-  const label = (c) => !zh() ? c : zhCount[catZhFor(c)] > 1 ? catZhFor(c) + "（" + c + "）" : catZhFor(c);
+  const coll = new Intl.Collator(locale());
+  // Each cuisine in the current language; two that translate the same keep the English in brackets.
+  const shown = (c) => { const r = ALL_RESTAURANTS.find((x) => x.cuisine === c); return r ? cuisineOf(r) : c; };
+  const seen = {};
+  Object.keys(counts).forEach((c) => { seen[shown(c)] = (seen[shown(c)] || 0) + 1; });
+  const label = (c) => seen[shown(c)] > 1 && shown(c) !== c ? shown(c) + (zh() ? "（" + c + "）" : " (" + c + ")") : shown(c);
   const cats = Object.keys(counts).sort((a, b) => coll.compare(label(a), label(b)));
   const total = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r)).length;
   let html = '<span class="chip all' + (state.activeCat === "All" ? " active" : "") + '"><button type="button" data-cat="All" aria-pressed="' + (state.activeCat === "All") + '">' + t("all") + '<span class="count">' + total + "</span></button></span>";
@@ -166,7 +167,7 @@ function renderChips() {
 // ---------- Table ----------
 function nameCell(r) {
   const initial = (nameOf(r).replace(/^(The|Restaurant)\s+/i, "")[0] || "?").toUpperCase();
-  const thumb = '<span class="thumb" aria-hidden="true"' + (r.placeId && !r.status ? ' data-pid="' + esc(r.placeId) + '"' : "") + ">" + esc(initial) + "</span>";
+  const thumb = '<span class="thumb" aria-hidden="true"' + (r.placeId && !r.status ? ' data-pid="' + esc(r.placeId) + '" data-name="' + esc(nameOf(r)) + '"' : "") + ">" + esc(initial) + "</span>";
   const alt = altNameOf(r);
   return '<span class="name" role="cell">' + thumb + '<span class="name-text">' + esc(nameOf(r)) +
     (r.status === "closed" ? "" : '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("findOnMaps", { name: nameOf(r) })) + '" title="' + esc(t("findOnMapsTitle")) + '"><svg aria-hidden="true"><use href="#pin"/></svg></a>') +
@@ -262,7 +263,8 @@ function fetchPhoto(placeId) {
       const photo = place.photos && place.photos[0];
       if (!photo) return null;
       const author = (photo.authorAttributions || [])[0];
-      return { uri: photo.getURI({ maxWidth: 200, maxHeight: 200 }), author: author ? author.displayName : "", authorUri: author ? author.uri : "" };
+      return { uri: photo.getURI({ maxWidth: 200, maxHeight: 200 }), big: photo.getURI({ maxWidth: 1400, maxHeight: 1000 }),
+        author: author ? author.displayName : "", authorUri: author ? author.uri : "" };
     })().catch(() => null));
   }
   return photoCache.get(placeId);
@@ -276,6 +278,12 @@ async function applyPhoto(el) {
   img.src = info.uri;
   img.onload = () => el.classList.add("has-photo");
   el.appendChild(img);
+  // A loaded photo opens larger when tapped.
+  el.removeAttribute("aria-hidden");
+  el.setAttribute("role", "button");
+  el.tabIndex = 0;
+  el.setAttribute("aria-label", t("photoView", { name: el.dataset.name }));
+  el.dataset.zoom = "1";
   const credit = el.parentElement.querySelector(".credit");
   if (credit) credit.innerHTML = t("photo") + ": " + (info.author ? (info.authorUri ? '<a href="' + esc(info.authorUri) + '" target="_blank" rel="noopener">' + esc(info.author) + "</a>" : esc(info.author)) + " · " : "") + "Google Maps";
 }
@@ -309,6 +317,8 @@ async function initMap() {
     $("mapCanvas").style.display = "block";
     mapState.map = new Map($("mapCanvas"), { center: placed.length ? { lat: placed[0].lat, lng: placed[0].lng } : { lat: 20, lng: 0 }, zoom: 11, mapTypeControl: false, streetViewControl: false, clickableIcons: false, gestureHandling: "cooperative" });
     mapState.info = new InfoWindow();
+    // Tapping anywhere on the map closes an open restaurant card.
+    mapState.map.addListener("click", () => mapState.info.close());
     placed.forEach((r) => {
       const m = new Marker({ position: { lat: r.lat, lng: r.lng }, title: nameOf(r), icon: pinIcon(r.stars), zIndex: r.stars * 10 });
       m.addListener("click", () => { mapState.info.setContent(infoHtml(r)); mapState.info.open({ anchor: m, map: mapState.map }); });
@@ -384,9 +394,31 @@ function toggleWish(id) {
   save(); render();
 }
 
+// ---------- Larger photos ----------
+async function openPhoto(el) {
+  const info = await fetchPhoto(el.dataset.pid);
+  if (!info) return;
+  $("photoImg").src = info.big;
+  $("photoImg").alt = el.dataset.name;
+  $("photoCaption").innerHTML = "<strong>" + esc(el.dataset.name) + "</strong>" + (info.author ? " · " + t("photo") + ": " +
+    (info.authorUri ? '<a href="' + esc(info.authorUri) + '" target="_blank" rel="noopener">' + esc(info.author) + "</a>" : esc(info.author)) : "") + " · Google Maps";
+  $("photoClose").setAttribute("aria-label", t("photoClose"));
+  $("photoBox").showModal();
+}
+document.addEventListener("click", (e) => {
+  const zoom = e.target.closest(".thumb[data-zoom]");
+  if (zoom) { openPhoto(zoom); return; }
+});
+document.addEventListener("keydown", (e) => {
+  const zoom = e.target.closest && e.target.closest(".thumb[data-zoom]");
+  if (zoom && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openPhoto(zoom); }
+});
+$("photoBox").addEventListener("click", (e) => { if (e.target === $("photoBox") || e.target.closest("#photoClose")) $("photoBox").close(); });
+$("photoBox").addEventListener("close", () => { $("photoImg").removeAttribute("src"); });
+
 document.addEventListener("click", (e) => {
   const el = e.target.closest("button");
-  if (!el) return;
+  if (!el || el.closest("#photoBox")) return;
   if (el.dataset.lang) {
     setLang(el.dataset.lang);
     renderAll();
@@ -412,6 +444,7 @@ document.addEventListener("click", (e) => {
   }
 });
 $("q").addEventListener("input", (e) => { state.query = e.target.value; renderLedger(); });
+wireSearchClear($("q"), () => { state.query = ""; renderLedger(); });
 $("sort").addEventListener("change", (e) => { state.sort = e.target.value; save(); renderLedger(); });
 $("contactForm").addEventListener("submit", (e) => {
   e.preventDefault();

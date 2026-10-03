@@ -6,7 +6,7 @@ Live at https://starredbill.com
 
 - Homepage with a world map, destination cards, search and your wishlist: https://starredbill.com/
 - A page for every country, region and city, e.g. https://starredbill.com/uk/london/ or https://starredbill.com/taiwan/
-- Add `?lang=zh` for Chinese or `?lang=en` for English.
+- Add `?lang=en` for English or `?lang=zh` for Chinese. Hong Kong also offers Cantonese (`?lang=yue`) and France offers French (`?lang=fr`).
 
 ## How it fits together
 
@@ -36,6 +36,8 @@ Every file in `content/places/` has an `id` (lower-case, hyphens, used in the we
 | `group` | `includes`: a list of country, region or city ids | `/taiwan/southern-taiwan/` if all in one country, otherwise `/basque-country/` |
 
 Groups are for areas that overlap the main structure, such as "Basque Country" (Spain and France) or "Northern England". A page is only built once a place has at least one starred restaurant.
+
+Optional `languages`, set on a country: the language buttons its pages offer (English and Chinese unless set; Hong Kong adds Cantonese, France adds French). Any text field can have a `...Zh`, `...Yue` (Cantonese) or `...Fr` version; Cantonese falls back to the Chinese text.
 
 Optional text, set on a country and used by everything inside it unless a region or city sets its own: `inSentence` (the name mid-sentence, e.g. "the UK"), `intro`, `serviceText`, `sourcesText`, `starsText`, each with a `...Zh` version for Chinese.
 

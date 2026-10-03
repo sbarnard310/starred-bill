@@ -11,5 +11,16 @@
   "sourcesText": "Dinner is the main tasting menu where there is one, and wine is the cheapest pairing for it. We take prices from each restaurant's own website where they're published, otherwise from recent reviews, Gault&Millau and booking sites such as TheFork. À la carte restaurants show a typical spend or main course. Lunch is the restaurant's lunch menu, and the note says which days it's served.",
   "sourcesTextZh": "晚餐以主要品嚐套餐為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網為準；否則參考近期評論、Gault&Millau 及 TheFork 等訂位網站。單點餐廳則顯示人均消費或一般主菜價格。午餐以餐廳的午間套餐為準，說明欄會註明供應日。",
   "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide France 2026, announced on 16 March 2026. A green ▲ marks a restaurant that gained a star in the March 2025 or March 2026 guide; a red ▼ marks one that lost a star.",
-  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 3 月 16 日公布的《法國米其林指南 2026》。綠色 ▲ 代表在 2025 年 3 月或 2026 年 3 月的指南中獲得星級；紅色 ▼ 代表失去星級。"
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 3 月 16 日公布的《法國米其林指南 2026》。綠色 ▲ 代表在 2025 年 3 月或 2026 年 3 月的指南中獲得星級；紅色 ▼ 代表失去星級。",
+  "languages": [
+    "en",
+    "zh",
+    "fr"
+  ],
+  "nameFr": "France",
+  "inSentenceFr": "en France",
+  "introFr": "Les prix sont en euros, avec un bouton pour les afficher en livres sterling ou en dollars américains. Prix vérifiés en octobre 2026 ; en France, le service est déjà compris dans le prix des menus.",
+  "serviceTextFr": "Chaque montant s'entend pour une personne. En France, le service est compris dans le prix (« service compris ») : ce sont donc les prix complets des menus, hors boissons. Les suppléments comme le caviar ou la truffe ne sont pas inclus. Les prix affichés dans une autre devise utilisent le taux de change du jour et sont approximatifs.",
+  "sourcesTextFr": "Le dîner correspond au menu dégustation principal lorsqu'il existe, et le vin à l'accord mets-vins le moins cher. Nous reprenons les prix du site de chaque restaurant lorsqu'ils sont publiés, sinon ceux d'avis récents, de Gault&Millau et de sites de réservation comme TheFork. Les restaurants à la carte affichent une dépense moyenne ou le prix d'un plat. Le déjeuner correspond au menu du midi, et la note précise les jours où il est servi.",
+  "starsTextFr": "La note Google sur 5 et le nombre d'avis ont été vérifiés en octobre 2026. Les étoiles proviennent du Guide MICHELIN France 2026, dévoilé le 16 mars 2026. Un ▲ vert signale un restaurant qui a gagné une étoile dans le guide de mars 2025 ou de mars 2026 ; un ▼ rouge, un restaurant qui en a perdu une."
 }

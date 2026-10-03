@@ -50,6 +50,10 @@ content:
       - name: areaZh
         label: Area in Chinese
         type: string
+      - name: areaFr
+        label: Area in French
+        description: Only for places offered in French, e.g. 8e arrondissement.
+        type: string
       - name: address
         label: Address
         description: Full address, also used for the Google Maps link.
@@ -85,6 +89,9 @@ content:
         type: string
       - name: changeNoteZh
         label: Star change note in Chinese
+        type: string
+      - name: changeNoteFr
+        label: Star change note in French
         type: string
       - name: changeDate
         label: Star change date
@@ -122,6 +129,9 @@ content:
         type: string
       - name: dinnerNoteZh
         label: Dinner note in Chinese
+        type: string
+      - name: dinnerNoteFr
+        label: Dinner note in French
         type: string
       - name: wine
         label: Wine pairing price (dinner)
@@ -164,6 +174,9 @@ content:
       - name: lunchNoteZh
         label: Lunch note in Chinese
         type: string
+      - name: lunchNoteFr
+        label: Lunch note in French
+        type: string
       - name: lunchWine
         label: Wine pairing price (lunch)
         type: number
@@ -205,6 +218,9 @@ content:
         type: string
       - name: statusNoteZh
         label: Status note in Chinese
+        type: string
+      - name: statusNoteFr
+        label: Status note in French
         type: string
       - name: website
         label: Website
@@ -265,6 +281,24 @@ content:
       - name: nameZh
         label: Name in Chinese
         type: string
+      - name: nameYue
+        label: Name in Cantonese
+        description: Only if it differs from the Chinese name.
+        type: string
+      - name: nameFr
+        label: Name in French
+        type: string
+      - name: languages
+        label: Languages offered
+        description: The language buttons on this page and the pages inside it. Leave empty for English and Chinese. Hong Kong adds Cantonese; France adds French.
+        type: select
+        options:
+          multiple: true
+          values:
+            - { value: en, label: "English" }
+            - { value: zh, label: "中文 (Chinese)" }
+            - { value: yue, label: "廣東話 (Cantonese)" }
+            - { value: fr, label: "Français (French)" }
       - name: parent
         label: Inside (regions and cities)
         description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom.
@@ -293,12 +327,22 @@ content:
         label: Name mid-sentence
         description: Only if it reads differently in a sentence, e.g. "the UK" for United Kingdom.
         type: string
+      - name: inSentenceFr
+        label: Name mid-sentence in French
+        description: With its preposition, e.g. "à Paris" or "en France".
+        type: string
       - name: intro
         label: Introduction
         description: Extra sentence under the page title, e.g. which currency prices are in. Regions and cities use their country's unless they have their own.
         type: text
       - name: introZh
         label: Introduction in Chinese
+        type: text
+      - name: introYue
+        label: "Introduction (Cantonese)"
+        type: text
+      - name: introFr
+        label: "Introduction (French)"
         type: text
       - name: serviceText
         label: "Method: per person, before service"
@@ -307,11 +351,23 @@ content:
       - name: serviceTextZh
         label: "Method: per person, before service (Chinese)"
         type: text
+      - name: serviceTextYue
+        label: "Method: per person, before service (Cantonese)"
+        type: text
+      - name: serviceTextFr
+        label: "Method: per person, before service (French)"
+        type: text
       - name: sourcesText
         label: "Method: where prices come from"
         type: text
       - name: sourcesTextZh
         label: "Method: where prices come from (Chinese)"
+        type: text
+      - name: sourcesTextYue
+        label: "Method: where prices come from (Cantonese)"
+        type: text
+      - name: sourcesTextFr
+        label: "Method: where prices come from (French)"
         type: text
       - name: starsText
         label: "Method: stars and Google rating"
@@ -319,6 +375,12 @@ content:
         type: text
       - name: starsTextZh
         label: "Method: stars and Google rating (Chinese)"
+        type: text
+      - name: starsTextYue
+        label: "Method: stars and Google rating (Cantonese)"
+        type: text
+      - name: starsTextFr
+        label: "Method: stars and Google rating (French)"
         type: text
 
   - name: currencies

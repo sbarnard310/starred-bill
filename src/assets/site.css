@@ -305,7 +305,6 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
 .dest h3 { font-size: 1.6rem; }
 .dest h3 a { color: inherit; text-decoration: none; }
 .dest h3 a:hover { color: var(--green); }
-.dest-alt { color: var(--muted); font-size: .95rem; }
 .dest-meta { color: var(--muted); font-size: .9rem; }
 .dest-from { font-size: .95rem; font-weight: 600; }
 .dest-from-name { color: var(--muted); font-size: .85rem; font-weight: 400; }
@@ -335,3 +334,24 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
 .install-btn:hover { background: color-mix(in srgb, var(--gold) 15%, transparent); }
 .install-tip { flex-basis: 100%; margin: 0; padding: 10px 14px; border-radius: 8px; background: color-mix(in srgb, var(--band-ink) 10%, transparent); color: var(--band-ink); font-size: .88rem; }
 .map-legend .pin-num.hollow { background: #ffffff; color: var(--pin); box-shadow: inset 0 0 0 2px var(--pin); }
+
+/* Clear (×) buttons in search boxes */
+input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; display: none; }
+.search input { padding-right: 44px; }
+.search-clear { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; border: 0; border-radius: 50%; background: var(--green-soft); color: var(--ink); font-size: 1.15rem; line-height: 1; cursor: pointer; display: grid; place-items: center; }
+.search-clear:hover { background: var(--line); }
+
+/* Map search */
+.map-search { margin: 0 0 14px; max-width: none; }
+.map-search .search input { border-color: var(--line); }
+
+/* Larger photos */
+.thumb[data-zoom] { cursor: zoom-in; }
+.thumb[data-zoom]:hover img { transform: scale(1.06); transition: transform .2s ease; }
+.lightbox { border: 0; padding: 0; background: transparent; max-width: min(1000px, calc(100vw - 32px)); max-height: calc(100vh - 32px); overflow: visible; }
+.lightbox::backdrop { background: rgba(5, 15, 10, .82); }
+.lightbox img { display: block; max-width: 100%; max-height: calc(100vh - 120px); margin: 0 auto; border-radius: 10px; background: var(--surface); }
+.lightbox-caption { color: #EAF4EC; font-size: .9rem; text-align: center; margin-top: 10px; }
+.lightbox-caption a { color: inherit; }
+.lightbox-close { position: absolute; top: -14px; right: -14px; width: 40px; height: 40px; border-radius: 50%; border: 0; background: #ffffff; color: #12261C; font-size: 1.5rem; line-height: 1; cursor: pointer; box-shadow: 0 4px 14px rgba(0, 0, 0, .3); z-index: 1; }
+@media (max-width: 720px) { .lightbox-close { top: 6px; right: 6px; } }

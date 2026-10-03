@@ -13,11 +13,13 @@
   "dinner": 1180,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
+  "dinnerNoteZh": "品嚐菜單",
   "wine": 600,
   "sourceType": "press",
   "source": "https://www.opentable.com/r/beefbar-hong-kong",
   "lunchType": "menu",
   "lunchNote": "Set lunch menus",
+  "lunchNoteZh": "午市套餐",
   "lat": 22.2800634,
   "lng": 114.1576634,
   "placeId": "ChIJU1tqH2UABDQRyMAnpk05EQ8"

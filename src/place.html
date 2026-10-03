@@ -80,6 +80,7 @@
         <label class="search" for="q">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input id="q" type="search" autocomplete="off">
+          <button type="button" class="search-clear" hidden>×</button>
         </label>
         <select id="sort">
           <option value="price-asc" data-i18n="sortPriceAsc"></option>
@@ -211,6 +212,12 @@
     <span data-i18n="footNote"></span>
   </div>
 </footer>
+
+<dialog class="lightbox" id="photoBox">
+  <button type="button" class="lightbox-close" id="photoClose">×</button>
+  <img id="photoImg" alt="">
+  <p class="lightbox-caption" id="photoCaption"></p>
+</dialog>
 
 <div class="toast" id="toast" hidden role="status"><span id="toastMsg"></span><button type="button" id="undo" data-i18n="undo"></button></div>
 

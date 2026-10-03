@@ -13,6 +13,8 @@ function applyStatic() {
   $("homeQ").placeholder = t("homeSearchPh");
   $("homeQ").setAttribute("aria-label", t("homeSearchLabel"));
   $("mapCanvas").setAttribute("aria-label", t("mapLabel"));
+  $("mapQ").placeholder = t("mapSearchPh");
+  $("mapQ").setAttribute("aria-label", t("mapSearchLabel"));
   if (DATA.worldTotal) document.querySelector('[data-i18n="mapHomeText"]').textContent = t("mapHomeWorldText", { n: DATA.worldTotal.toLocaleString("en-GB") });
 }
 function renderFigures() {
@@ -27,9 +29,8 @@ function renderFigures() {
 
 // ---------- Destinations ----------
 function destCard(c) {
-  const alt = zh() ? c.name : c.nameZh;
   return '<article class="dest">' +
-    '<div class="dest-top"><h3><a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a></h3>" + (alt ? '<span class="dest-alt">' + esc(alt) + "</span>" : "") + "</div>" +
+    '<div class="dest-top"><h3><a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a></h3></div>" +
     '<p class="dest-meta">' + esc(t("destRestaurants", { n: c.n })) + " · " + esc(starCountsOf(ALL.filter((r) => r.country === c.id))) + "</p>" +
     (c.from ? '<p class="dest-from">' + esc(t("destFrom", { p: localMoney(c.from.price, c.from.cur) })) + ' <span class="dest-from-name">' + esc(pick(c.from, "name")) + "</span></p>" : "") +
     (c.cities.length > 1 || (c.cities[0] && c.cities[0].path !== c.path) ? '<div class="dest-cities">' + c.cities.map((p) =>
@@ -103,10 +104,14 @@ async function initWorldMap() {
     $("mapCanvas").style.display = "block";
     world.map = new Map($("mapCanvas"), { center: { lat: 35, lng: 40 }, zoom: 2, minZoom: 2, mapTypeControl: false, streetViewControl: false, clickableIcons: false, gestureHandling: "cooperative" });
     world.info = new InfoWindow();
+    // Tapping anywhere on the map closes an open restaurant card.
+    world.map.addListener("click", () => world.info.close());
     world.markers = ALL.filter((r) => r.lat != null && r.lng != null).map((r) => {
       const m = new Marker({ position: { lat: r.lat, lng: r.lng }, title: nameOf(r), icon: pinIcon(r.stars), zIndex: 100 + r.stars * 10 });
-      m.addListener("click", () => { world.info.setContent(infoHtml(r)); world.info.open({ anchor: m, map: world.map }); });
+      m.addListener("click", () => openCard(m));
       m.r = r; m.stars = r.stars;
+      m.where = [r.cityName, (DATA.countries.find((c) => c.id === r.country) || {}).name].filter(Boolean).join(", ");
+      m.find = fold([r.name, r.nameZh, r.cityName, r.cityNameZh, m.where, r.cuisine].join(" "));
       return m;
     });
     if (window.markerClusterer) {
@@ -122,8 +127,9 @@ async function initWorldMap() {
       world.markers = world.markers.concat(data.r.map(([name, stars, lat, lng, cuisine, where, path]) => {
         const w = { name, stars, cuisine, where, path };
         const m = new Marker({ position: { lat, lng }, title: name, icon: icons[stars], zIndex: stars * 10 });
-        m.addListener("click", () => { world.info.setContent(worldInfoHtml(w)); world.info.open({ anchor: m, map: world.map }); });
-        m.w = w; m.stars = stars;
+        m.addListener("click", () => openCard(m));
+        m.w = w; m.stars = stars; m.where = where;
+        m.find = fold(name + " " + where + " " + cuisine);
         return m;
       }));
       world.loaded = true;
@@ -146,6 +152,66 @@ function updateWorldMap(fit) {
     world.map.fitBounds(b, 40);
   }
 }
+// Opens a restaurant's card. From a search result the pin may still be inside a cluster, so the card is placed by position.
+function openCard(m, fromSearch) {
+  world.info.setContent(m.r ? infoHtml(m.r) : worldInfoHtml(m.w));
+  if (fromSearch) {
+    world.info.setOptions({ pixelOffset: new google.maps.Size(0, -38) });
+    world.info.setPosition(m.getPosition());
+    world.info.open({ map: world.map });
+  } else {
+    world.info.setOptions({ pixelOffset: null });
+    world.info.open({ anchor: m, map: world.map });
+  }
+}
+
+// ---------- Map search ----------
+// Accent- and case-insensitive matching, so "epicure" finds "Épicure".
+const fold = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+let mapHits = [];
+function mapSearch() {
+  const q = fold($("mapQ").value.trim());
+  if (!q || !world.map) { $("mapResults").hidden = true; $("mapResults").innerHTML = ""; mapHits = []; return; }
+  // Countries and cities with matching names, largest first, then restaurants.
+  const groups = {};
+  world.markers.forEach((m) => {
+    const parts = m.where.split(", ");
+    const country = parts[parts.length - 1];
+    [[country, "country"], [m.where, "city"]].forEach(([label, kind]) => {
+      if (!fold(label).includes(q) || (kind === "city" && parts.length < 2)) return;
+      (groups[label] = groups[label] || { label, kind, markers: [] }).markers.push(m);
+    });
+  });
+  const places = Object.values(groups).sort((a, b) => (a.kind === b.kind ? 0 : a.kind === "country" ? -1 : 1) || b.markers.length - a.markers.length).slice(0, 4);
+  const rests = world.markers.filter((m) => m.find.includes(q))
+    .sort((a, b) => (fold(a.r ? a.r.name : a.w.name).startsWith(q) ? 0 : 1) - (fold(b.r ? b.r.name : b.w.name).startsWith(q) ? 0 : 1) || b.stars - a.stars)
+    .slice(0, 8 - places.length);
+  mapHits = places.map((g) => ({ place: g })).concat(rests.map((m) => ({ marker: m })));
+  $("mapResults").innerHTML = mapHits.length ? mapHits.map((h, i) => h.place
+    ? '<li><a href="#map" data-hit="' + i + '"><span>' + esc(h.place.label) + '</span><span class="sub">' + esc(t("destRestaurants", { n: h.place.markers.length })) + "</span></a></li>"
+    : '<li><a href="#map" data-hit="' + i + '"><span>' + esc(h.marker.r ? nameOf(h.marker.r) : h.marker.w.name) + " " + rosettes(h.marker.stars) + '</span><span class="sub">' +
+      esc(h.marker.where) + "</span></a></li>").join("")
+    : '<li class="none">' + esc(t("searchNone", { q: $("mapQ").value.trim() })) + "</li>";
+  $("mapResults").hidden = false;
+}
+function showHit(i) {
+  const h = mapHits[i];
+  if (!h) return;
+  $("mapResults").hidden = true;
+  if (homeState.stars) { homeState.stars = 0; renderMapStars(); updateWorldMap(false); }
+  world.info.close();
+  if (h.place) {
+    const b = new google.maps.LatLngBounds();
+    h.place.markers.forEach((m) => b.extend(m.getPosition()));
+    if (h.place.markers.length === 1) { world.map.setCenter(b.getCenter()); world.map.setZoom(15); } else world.map.fitBounds(b, 40);
+  } else {
+    world.map.setCenter(h.marker.getPosition());
+    world.map.setZoom(16);
+    openCard(h.marker, true);
+  }
+  $("map").scrollIntoView({ block: "start" });
+}
+
 // Star counts for the filter and legend: every pin once the world list has loaded, otherwise just ours.
 const pinStars = () => world.loaded ? world.markers.map((m) => ({ stars: m.stars })) : ALL;
 function renderMapStars() {
@@ -165,7 +231,7 @@ function renderAll() { applyStatic(); renderFigures(); renderDestinations(); ren
 document.addEventListener("click", (e) => {
   const el = e.target.closest("button");
   if (!el) {
-    if (!e.target.closest(".home-search")) $("results").hidden = true;
+    if (!e.target.closest(".home-search")) { $("results").hidden = true; $("mapResults").hidden = true; }
     return;
   }
   if (el.dataset.lang) {
@@ -179,6 +245,15 @@ document.addEventListener("click", (e) => {
   }
 });
 $("homeQ").addEventListener("input", renderResults);
+wireSearchClear($("homeQ"), renderResults);
+$("mapQ").addEventListener("input", mapSearch);
+$("mapQ").addEventListener("focus", mapSearch);
+$("mapQ").addEventListener("keydown", (e) => {
+  if (e.key === "Escape") $("mapResults").hidden = true;
+  if (e.key === "Enter") { e.preventDefault(); showHit(0); }
+});
+wireSearchClear($("mapQ"), mapSearch);
+$("mapResults").addEventListener("click", (e) => { const a = e.target.closest("[data-hit]"); if (a) { e.preventDefault(); showHit(Number(a.dataset.hit)); } });
 $("homeQ").addEventListener("focus", renderResults);
 $("homeQ").addEventListener("keydown", (e) => { if (e.key === "Escape") { $("results").hidden = true; } });
 window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY) renderWishlist(); });

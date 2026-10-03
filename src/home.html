@@ -61,6 +61,7 @@
         <label class="search" for="homeQ">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input id="homeQ" type="search" autocomplete="off" aria-controls="results">
+          <button type="button" class="search-clear" hidden>×</button>
         </label>
         <ul class="results" id="results" hidden></ul>
       </div>
@@ -84,6 +85,14 @@
         </div>
         <div class="seg" id="mapStars" role="group" aria-labelledby="mapStarsLabel"></div>
         <span class="sr-only" id="mapStarsLabel" data-i18n="fStars"></span>
+      </div>
+      <div class="home-search map-search">
+        <label class="search" for="mapQ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="mapQ" type="search" autocomplete="off" aria-controls="mapResults">
+          <button type="button" class="search-clear" hidden>×</button>
+        </label>
+        <ul class="results" id="mapResults" hidden></ul>
       </div>
       <div class="map-canvas map-world" id="mapCanvas" role="region"><p class="map-wait" data-i18n="mapWait"></p></div>
       <div class="map-foot">

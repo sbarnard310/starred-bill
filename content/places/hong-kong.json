@@ -11,5 +11,15 @@
   "sourcesText": "Dinner is the main tasting or set menu where there is one, and wine is the cheapest pairing for it. Prices come from each restaurant's own website or menus where they're published, otherwise from recent reviews and booking sites such as OpenRice. Many Cantonese restaurants are mainly à la carte, so they show a typical spend, a signature dish (“per main”), or no price where none is published. Lunch is the set or tasting lunch menu, and the note says which days it's served.",
   "sourcesTextZh": "晚餐以主要品嚐或套餐為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網或菜單為準；否則參考近期評論及 OpenRice 等訂位網站。不少粵菜館以單點為主，因此顯示人均消費、招牌菜價格（每道主菜），或在未有公布時不列價格。午餐以午間套餐或品嚐套餐為準，說明欄會註明供應日。",
   "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Hong Kong & Macau 2026, announced on 19 March 2026. A green ▲ marks a restaurant that gained a star in the March 2025 or March 2026 guide; a red ▼ marks one that lost its star.",
-  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 3 月 19 日公布的《香港澳門米芝蓮指南 2026》。綠色 ▲ 代表在 2025 年 3 月或 2026 年 3 月的指南中獲得星級；紅色 ▼ 代表失去星級。"
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 3 月 19 日公布的《香港澳門米芝蓮指南 2026》。綠色 ▲ 代表在 2025 年 3 月或 2026 年 3 月的指南中獲得星級；紅色 ▼ 代表失去星級。",
+  "languages": [
+    "en",
+    "zh",
+    "yue"
+  ],
+  "nameYue": "香港",
+  "introYue": "價錢以港幣顯示，亦可以轉做英鎊、歐元或者美元。價錢喺2026年10月核實過，未計一般加一服務費。",
+  "serviceTextYue": "所有價錢都係一位嘅價錢，未計香港大部分餐廳收嘅加一服務費（Yardbird 收12%），亦唔包魚子醬或者松露等額外加錢嘅菜式。用其他貨幣顯示嘅價錢係按當日匯率計，只供參考。",
+  "sourcesTextYue": "晚市以主要嘅品嚐菜單或者套餐為準，配酒就揀最平嗰個。有公布價錢嘅，我哋用餐廳官網或者餐牌；冇嘅話就參考最近嘅食評同 OpenRice 等訂座網站。好多粵菜館主要係單點，所以會顯示人均消費、招牌菜價錢（每道主菜），或者冇公布就唔列價錢。午市以午市套餐或品嚐菜單為準，備註會講明邊幾日供應。",
+  "starsTextYue": "Google 評分（滿分5分）同評論數喺2026年10月核實過；星級嚟自2026年3月19日公布嘅《香港澳門米芝蓮指南2026》。綠色 ▲ 代表喺2025年3月或者2026年3月嘅指南攞到星；紅色 ▼ 代表甩咗星。"
 }

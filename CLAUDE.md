@@ -18,6 +18,7 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
   - Port 8765 belongs to another site.
   - The Google key only allows localhost on 8799.
   - There's no node, npm or Homebrew on this Mac.
+- Languages: `LANGS` in common.js (en, zh, yue Cantonese, fr). A country's `languages` sets its pages' buttons. A visitor's choice is kept across pages, and pages without it fall back (yue to zh, others to en). Translated fields use the suffixes Zh, Yue and Fr, read through `pick()`. Every new UI string needs adding to all four `I18N` dictionaries.
 - Check changes in English and Chinese (`?lang=zh`), in each currency, on Dinner and Lunch, and at phone width (no sideways scroll).
 - Publish: commit to `main` and push. The `gh` CLI is at `/usr/local/bin/gh` (add it to PATH). Watch the run with `gh run list --workflow deploy.yml` / `gh run watch`.
 - Commit messages: a short imperative subject. Never commit `_site/`.

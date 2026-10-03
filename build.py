@@ -22,6 +22,9 @@ CONTENT, SRC, OUT = ROOT / "content", ROOT / "src", ROOT / "_site"
 SITE_URL = "https://starredbill.com"
 PLACE_TYPES = ("country", "region", "city", "group")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
+LANGUAGES = ("en", "zh", "yue", "fr")
+LANG_SUFFIXES = ("Zh", "Yue", "Fr")  # e.g. nameZh, introYue, dinnerNoteFr
+DEFAULT_LANGUAGES = ["en", "zh"]
 PRICE_TYPES = ("menu", "main", "spend")
 STATUSES = ("lost", "closed", "changed")
 CHANGES = ("new", "up", "down")
@@ -96,6 +99,8 @@ for pid, p in places.items():
         problem(where, "currency must be one listed in currencies.json")
     if p.get("currency") and p["currency"] not in CURRENCIES:
         problem(where, "currency must be one listed in currencies.json")
+    if p.get("languages") and (not isinstance(p["languages"], list) or set(p["languages"]) - set(LANGUAGES) or "en" not in p["languages"]):
+        problem(where, f"languages must be a list from {', '.join(LANGUAGES)}, including en")
 
 
 def chain(pid):
@@ -212,8 +217,13 @@ def public(r):
     return {k: v for k, v in r.items() if not k.startswith("_")}
 
 
+def names(p):
+    """A place's name in every language it has, e.g. {"name": "Paris", "nameZh": "巴黎", "nameFr": "Paris"}."""
+    return {k: p[k] for k in ["name"] + ["name" + s for s in LANG_SUFFIXES] if p.get(k)}
+
+
 def link(p, current=None):
-    return {"name": p["name"], "nameZh": p.get("nameZh", ""), "path": p["path"], "n": starred_n[p["id"]], "current": p["id"] == current}
+    return dict(names(p), path=p["path"], n=starred_n[p["id"]], current=p["id"] == current)
 
 
 def by_size(ps):
@@ -227,8 +237,8 @@ def explore_links(p):
         country = places.get(country_of(p["id"]))
         cities = [c for c in pages if c["type"] == "city" and country_of(c["id"]) == (country or {}).get("id")]
         if country and len(cities) > 1:
-            rows.append({"label": "exploreCities", "country": country["name"], "countryZh": country.get("nameZh", ""),
-                         "items": [link(c, p["id"]) for c in by_size(cities)]})
+            rows.append(dict({k.replace("name", "country"): v for k, v in names(country).items()}, label="exploreCities",
+                             items=[link(c, p["id"]) for c in by_size(cities)]))
     else:
         if p["type"] == "group":
             inside = [places[i] for i in p["includes"] if i in places and starred_n[i]]
@@ -243,11 +253,11 @@ def explore_links(p):
     return rows
 
 
-def search_example(rs, zh):
+def search_example(rs, zh, field=None):
     """A typical area name for the search box, e.g. Mayfair."""
     counts = {}
     for r in rs:
-        area = r.get("areaZh" if zh else "area") or ""
+        area = r.get(field or ("areaZh" if zh else "area")) or ""
         if zh:
             area = area[len(r.get("cityNameZh", "")):] if area.startswith(r.get("cityNameZh") or "\0") else area
         else:
@@ -265,6 +275,11 @@ def money(n, cur):
     if n is None:
         return ""
     return CURRENCIES[cur]["symbol"] + (f"{n:,.0f}" if float(n).is_integer() else f"{n:,.2f}")
+
+
+def inherited_name_fr(p):
+    """How the place reads in a French sentence, e.g. "à Paris" or "en France"."""
+    return p.get("inSentenceFr") or (f"à {p.get('nameFr') or p['name']}")
 
 
 def in_sentence(p):
@@ -310,17 +325,18 @@ def build_place(p):
     currency = p.get("currency") or inherited(p, "currency") or (curs[0] if len(curs) == 1 else "GBP")
     crumbs = [places[c] for c in reversed(chain(p["id"])[1:])] if p["type"] != "group" else \
         ([places[countries_of(p)[0]]] if len(countries_of(p)) == 1 else [])
-    page = {
-        "id": p["id"], "type": p["type"], "name": p["name"], "nameZh": p.get("nameZh", ""), "inSentence": in_sentence(p),
+    page = dict(names(p), **{
+        "id": p["id"], "type": p["type"], "inSentence": in_sentence(p), "inSentenceFr": inherited_name_fr(p),
         "path": p["path"], "currency": currency, "showCity": len({r["city"] for r in starred}) > 1,
-        "crumbs": [{"name": c["name"], "nameZh": c.get("nameZh", ""), "path": c["path"]} for c in crumbs],
+        "crumbs": [dict(names(c), path=c["path"]) for c in crumbs],
         "links": explore_links(p),
         "searchEx": search_example(starred, False), "searchExZh": search_example(starred, True),
-    }
+        "searchExFr": search_example(starred, False, "areaFr"),
+    })
     for field in PLACE_TEXTS:
-        page[field] = inherited(p, field) or ""
-        page[field + "Zh"] = inherited(p, field + "Zh") or ""
-    data = {"page": page, "restaurants": [public(r) for r in rs], "currencies": CURRENCIES,
+        for suffix in ("",) + LANG_SUFFIXES:
+            page[field + suffix] = inherited(p, field + suffix) or ""
+    data = {"page": page, "languages": inherited(p, "languages") or DEFAULT_LANGUAGES, "restaurants": [public(r) for r in rs], "currencies": CURRENCIES,
             "switchable": currency_data.get("switchable", []), "rateDate": currency_data.get("rateDate")}
 
     stars = [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)]
@@ -407,7 +423,7 @@ def build_home():
         menus = sorted((r for r in mine if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
         cities = [q for q in pages if q["type"] == "city" and country_of(q["id"]) == c["id"]]
         countries.append({
-            "id": c["id"], "name": c["name"], "nameZh": c.get("nameZh", ""), "path": c["path"], "n": starred_n[c["id"]],
+            **names(c), "id": c["id"], "path": c["path"], "n": starred_n[c["id"]],
             "from": {"price": menus[0]["dinner"], "cur": menus[0]["cur"], "name": menus[0]["name"], "nameZh": menus[0].get("nameZh", "")} if menus else None,
             "cities": [link(q) for q in by_size(cities)],
         })
@@ -420,9 +436,9 @@ def build_home():
         "countries": countries, "groups": groups,
         "places": [dict(link(p), type=p["type"]) for p in by_size(pages)],
         "currencies": CURRENCIES, "updated": site.get("updated", ""),
-        "worldUrl": world_url, "worldTotal": world_total,
+        "worldUrl": world_url, "worldTotal": world_total, "languages": DEFAULT_LANGUAGES,
     }
-    names = ", ".join(c["name"] for c in countries)
+    country_names = ", ".join(c["name"] for c in countries)
     cards = "".join(
         f'<article class="dest"><div class="dest-top"><h3><a href="{c["path"]}">{e(c["name"])}</a></h3></div>'
         f'<p class="dest-meta">{c["n"]} starred restaurants</p>'
@@ -430,7 +446,7 @@ def build_home():
         for c in countries)
     write("/", render("home.html", {
         "title": "The Starred Bill · Michelin-starred restaurant prices",
-        "description": e(f"Compare dinner, lunch and wine pairing prices at {len(starred)} Michelin-starred restaurants in {names}, city by city."),
+        "description": e(f"Compare dinner, lunch and wine pairing prices at {len(starred)} Michelin-starred restaurants in {country_names}, city by city."),
         "canonical": SITE_URL + "/",
         "eyebrow": "Michelin Guide restaurants, priced",
         "h1": "What a Michelin star <em>costs</em>, city by city.",

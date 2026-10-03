@@ -2,6 +2,7 @@
   "name": "Helen",
   "city": "paris",
   "area": "8th arrondissement",
+  "areaFr": "8e arrondissement",
   "areaZh": "第8區",
   "address": "3 rue Berryer, Paris 8e",
   "stars": 0,
@@ -9,10 +10,12 @@
   "cuisineZh": "海鮮",
   "change": "down",
   "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
   "changeNoteZh": "失去星級",
   "changeDate": "2026-03",
   "status": "lost",
   "formerStars": 1,
   "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
   "statusNoteZh": "於 2026 年指南失去星級"
 }

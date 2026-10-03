@@ -3,5 +3,7 @@
   "type": "city",
   "parent": "france",
   "name": "Paris",
-  "nameZh": "巴黎"
+  "nameZh": "巴黎",
+  "nameFr": "Paris",
+  "inSentenceFr": "à Paris"
 }

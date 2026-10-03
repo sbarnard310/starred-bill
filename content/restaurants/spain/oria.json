@@ -1,0 +1,18 @@
+{
+  "name": "Oria",
+  "city": "barcelona",
+  "area": "Eixample",
+  "areaZh": "擴展區",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "cuisineZh": "現代菜",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2025-11",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in October 2025 and lost its star in the November 2025 guide; the hotel now has the more casual Bera",
+  "statusNoteZh": "2025 年 10 月歇業，並於 2025 年 11 月指南失去星級；酒店現改設較休閒的 Bera"
+}

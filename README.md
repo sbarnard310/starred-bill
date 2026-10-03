@@ -34,13 +34,13 @@ Every file in `content/places/` has an `id` (lower-case, hyphens, used in the we
 | `region` | `parent`: a country or region id | `/uk/england/` |
 | `city` | `parent`: a country or region id | `/uk/england/london/` |
 | `district` | `parent`: a city id | `/usa/new-york-state/new-york/manhattan/` |
-| `group` | `includes`: a list of country, region or city ids | `/taiwan/southern-taiwan/` if all in one country, otherwise `/basque-country/` |
+| `group` | `includes`: a list of country, region or city ids | `/taiwan/southern-taiwan/` if all in one country, otherwise `/riviera/` |
 
 A region or city's address follows everything above it, so a Yorkshire region inside England would be `/uk/england/yorkshire/`, and York inside it `/uk/england/yorkshire/york/`. If a page moves, list its old address in `redirectFrom` (e.g. London has `["/uk/london/"]`) and old links keep working.
 
 Restaurants don't need a city page of their own: one outside the cities we cover can sit in its region or country (`city` set to e.g. `england` or `ireland`), with the town and county in `area`, e.g. "Aughton, Lancashire".
 
-Groups are for areas that overlap the main structure, such as "Basque Country" (Spain and France) or "Northern England". Every place gets a page. One with no starred restaurants yet says so and links up to the nearest place that has some (e.g. Dorset links to England), so it's ready for its first star.
+Groups are for areas that overlap the main structure, such as "the Riviera" (France and Italy) or "Northern England". Every place gets a page. One with no starred restaurants yet says so and links up to the nearest place that has some (e.g. Dorset links to England), so it's ready for its first star.
 
 Optional `languages`, set on a country: the language buttons its pages offer (English and Chinese unless set; Hong Kong and Macau add Cantonese, France adds French, Japan adds Japanese). Any text field can have a `...Zh`, `...Yue` (Cantonese), `...Fr` or `...Ja` (Japanese) version; Cantonese falls back to the Chinese text.
 

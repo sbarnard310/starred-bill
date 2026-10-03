@@ -1,0 +1,21 @@
+{
+  "name": "Villa Retiro",
+  "city": "catalonia",
+  "area": "Xerta, Tarragona",
+  "address": "Dels Molins 2, Xerta, 43592",
+  "stars": 1,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "rating": 4.6,
+  "reviews": 1238,
+  "dinner": 160,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (also €75 and €130)",
+  "dinnerNoteZh": "最長的品嚐套餐（另有 €75 及 €130）",
+  "sourceType": "site",
+  "source": "https://hotelvillaretiro.com/",
+  "website": "https://hotelvillaretiro.com/",
+  "lat": 40.912312,
+  "lng": 0.490225,
+  "placeId": "ChIJK6c30PjmoBIRa80-tCTfXaA"
+}

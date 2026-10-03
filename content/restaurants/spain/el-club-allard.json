@@ -1,0 +1,18 @@
+{
+  "name": "El Club Allard",
+  "city": "madrid",
+  "area": "Moncloa-Aravaca",
+  "areaZh": "蒙克洛亞-阿拉瓦卡",
+  "stars": 0,
+  "cuisine": "Creative",
+  "cuisineZh": "創新菜",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteZh": "失去星級",
+  "changeDate": "2024-11",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in November 2024",
+  "statusNoteZh": "於 2024 年 11 月失去星級"
+}

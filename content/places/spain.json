@@ -1,0 +1,15 @@
+{
+  "id": "spain",
+  "type": "country",
+  "name": "Spain",
+  "nameZh": "西班牙",
+  "currency": "EUR",
+  "intro": "Prices are in euros, with a switch to see them in pounds or US dollars. Prices checked October 2026; Spanish menu prices include 10% VAT (IVA), and service isn't added to the bill.",
+  "introZh": "價格以歐元標示，也可切換為英鎊或美元。價格於 2026 年 10 月查核；西班牙餐廳的套餐價格已含 10% 增值稅（IVA），帳單亦不另加服務費。",
+  "serviceText": "Every figure is for one guest. Spanish menu prices include 10% VAT (IVA) and no service charge is added, so these are the full prices before drinks; tipping is optional, and 5–10% is generous. Supplements such as caviar or cheese courses are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格。西班牙的套餐價格已含 10% 增值稅（IVA），且不另收服務費，即不含飲品的全額；小費可隨意，給 5–10% 已算大方。魚子醬或乳酪等加價項目不計入。以其他幣別顯示的價格依當日匯率換算，僅供參考。",
+  "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is the wine pairing for it. Where there are menus of different lengths, the note gives the shorter one too. Prices come from each restaurant's own website where they're published, otherwise from recent reviews and booking sites such as TheFork. Most Spanish restaurants serve the same menu at lunch, and many in the countryside open only at lunch on weekdays: the lunch note says which days, using the opening hours on Google. Where there's a cheaper lunch menu, that's shown instead.",
+  "sourcesTextZh": "晚餐以餐廳的主要品嚐套餐為準，餐酒搭配則取該套餐的葡萄酒搭配。若有長短不同的套餐，說明欄也會列出較短的一種。有公布價格的，以餐廳官網為準；否則參考近期評論及 TheFork 等訂位網站。西班牙多數餐廳午餐供應相同套餐，鄉間不少餐廳平日只開午餐：午餐說明依 Google 營業時間註明供應日。若另有較便宜的午間套餐，則改列該套餐。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Spain 2026, announced in Málaga on 25 November 2025. A green ▲ marks a restaurant that gained a star in the November 2024 or November 2025 guide; a red ▼ marks one that lost a star.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2025 年 11 月 25 日於馬拉加公布的《米其林指南西班牙 2026》。綠色 ▲ 代表在 2024 年 11 月或 2025 年 11 月的指南中獲得星級；紅色 ▼ 代表失去星級。"
+}

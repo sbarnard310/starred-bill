@@ -35,6 +35,11 @@
       "code": "MOP",
       "symbol": "MOP$",
       "perUSD": 8.082411
+    },
+    {
+      "code": "JPY",
+      "symbol": "¥",
+      "perUSD": 157.81511
     }
   ]
 }

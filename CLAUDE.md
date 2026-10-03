@@ -1,6 +1,6 @@
 # The Starred Bill: notes for Claude
 
-Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, with a page per country, region and city. Live at https://starredbill.com (GitHub repo sbarnard310/starred-bill). English and Traditional Chinese throughout. README.md documents every data field. Keep it in step when fields change.
+Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, with a page per country, region and city. Live at https://starredbill.com (GitHub repo sbarnard310/starred-bill). English and Traditional Chinese throughout, plus Cantonese, French and Japanese where a country offers them. README.md documents every data field. Keep it in step when fields change.
 
 ## How it's built
 - `content/` is the data, edited by the owner in Pages CMS (app.pagescms.org) or on GitHub. There is one JSON file per restaurant in `content/restaurants/<country>/`, one per place in `content/places/`, plus `currencies.json` and `site.json`.
@@ -18,7 +18,7 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
   - Port 8765 belongs to another site.
   - The Google key only allows localhost on 8799.
   - There's no node, npm or Homebrew on this Mac.
-- Languages: `LANGS` in common.js (en, zh, yue Cantonese, fr). A country's `languages` sets its pages' buttons. A visitor's choice is kept across pages, and pages without it fall back (yue to zh, others to en). Translated fields use the suffixes Zh, Yue and Fr, read through `pick()`. Every new UI string needs adding to all four `I18N` dictionaries.
+- Languages: `LANGS` in common.js (en, zh, yue Cantonese, fr, ja Japanese). A country's `languages` sets its pages' buttons. A visitor's choice is kept across pages, and pages without it fall back (yue to zh, others to en). Translated fields use the suffixes Zh, Yue, Fr and Ja, read through `pick()`. Every new UI string needs adding to all five `I18N` dictionaries. Japanese text uses Noto Sans/Serif JP via `:lang(ja)` in site.css.
 - Check changes in English and Chinese (`?lang=zh`), in each currency, on Dinner and Lunch, and at phone width (no sideways scroll).
 - Publish: commit to `main` and push. The `gh` CLI is at `/usr/local/bin/gh` (add it to PATH). Watch the run with `gh run list --workflow deploy.yml` / `gh run watch`.
 - Commit messages: a short imperative subject. Never commit `_site/`.
@@ -37,6 +37,7 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
   - Stars, addresses and map positions: guide.michelin.com, extracted in the browser.
   - Google ratings: Places API (New) Text Search, sending `Referer: https://starredbill.com/` because the key only accepts set websites.
   - Prices: restaurant websites first, then recent reviews and booking sites.
+  - Prices in Japan: many top restaurants publish none. OMAKASE JapanEatinerary (omakaseje.com) restaurant pages list each course in yen, mostly including tax and service; read them with fetch() from inside an omakaseje.com browser tab, as it rate-limits heavy use. Pocket Concierge pages render in the browser after a moment. omakase.in and Tabelog show a Cloudflare check, so they can't be read, but search results quote their prices.
 
 ## Google Maps key
 It's a browser key in `src/assets/common.js`, restricted to these addresses:

@@ -10,7 +10,7 @@ const FORMER = ALL_RESTAURANTS.filter((r) => r.status);
 const EMPTY = !RESTAURANTS.length;
 const PAGE_CURRENCIES = [...new Set(RESTAURANTS.map((r) => r.cur))];
 const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !== PAGE.currency));
-pageVars = () => ({ place: pick(PAGE, "name"), placeIn: zh() ? pick(PAGE, "name") : fr() ? PAGE.inSentenceFr : PAGE.inSentence || PAGE.name });
+pageVars = () => ({ place: pick(PAGE, "name"), placeIn: cjk() ? pick(PAGE, "name") : fr() ? PAGE.inSentenceFr : PAGE.inSentence || PAGE.name });
 
 const state = { meal: "dinner", activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
   currency: PAGE.currency, rates: Object.fromEntries(Object.entries(DATA.currencies).map(([k, v]) => [k, v.perUSD])), rateDate: new Date(DATA.rateDate + "T12:00:00Z") };
@@ -50,7 +50,7 @@ const byPrice = (a, b) => (priceOf(a) || 0) - (priceOf(b) || 0);
 const onWishlist = (r) => state.wishlist.includes(r.id);
 const starMatch = (r) => !state.activeStars || r.stars === state.activeStars;
 const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOnly || !!r.change);
-const searchText = (r) => [r.name, r.nameZh, r.cuisine, r.cuisineZh, CUISINE_ZH[r.cuisine], r.area, r.areaZh, r.cityName, r.cityNameZh].filter(Boolean).join(" ").toLowerCase();
+const searchText = (r) => [r.name, r.nameZh, r.nameJa, r.cuisine, r.cuisineZh, r.cuisineJa, CUISINE_ZH[r.cuisine], r.area, r.areaZh, r.areaJa, r.cityName, r.cityNameZh, r.cityNameJa].filter(Boolean).join(" ").toLowerCase();
 const queryMatch = (r) => { const q = state.query.trim().toLowerCase(); return !q || searchText(r).includes(q); };
 const changeBadge = (r) => !r.change ? "" : '<span class="chg chg-' + (r.change === "down" ? "down" : "up") + '" title="' + esc(t("chgTitle", { note: pick(r, "changeNote"), date: monthYear(r.changeDate) })) + '">' + (r.change === "down" ? "▼ " : "▲ ") + (r.change === "new" ? t("chgNew") + " " : "") + monthYear(r.changeDate) + "</span>";
 
@@ -136,7 +136,7 @@ function applyStatic() {
   const converted = approx();
   $("rateLine").hidden = !converted;
   if (converted) {
-    const date = state.rateDate.toLocaleDateString(locale(), { day: "numeric", month: zh() ? "numeric" : "short", year: "numeric" });
+    const date = state.rateDate.toLocaleDateString(locale(), { day: "numeric", month: cjk() ? "numeric" : "short", year: "numeric" });
     const sym = DATA.currencies[state.currency].symbol;
     $("rateLine").textContent = PAGE_CURRENCIES.length === 1
       ? t("rateLine", { sym, date, home: DATA.currencies[PAGE_CURRENCIES[0]].symbol, rate: (1 / fx(PAGE_CURRENCIES[0])).toFixed(2) })
@@ -170,7 +170,7 @@ function renderChips() {
   const shown = (c) => { const r = ALL_RESTAURANTS.find((x) => x.cuisine === c); return r ? cuisineOf(r) : c; };
   const seen = {};
   Object.keys(counts).forEach((c) => { seen[shown(c)] = (seen[shown(c)] || 0) + 1; });
-  const label = (c) => seen[shown(c)] > 1 && shown(c) !== c ? shown(c) + (zh() ? "（" + c + "）" : " (" + c + ")") : shown(c);
+  const label = (c) => seen[shown(c)] > 1 && shown(c) !== c ? shown(c) + (cjk() ? "（" + c + "）" : " (" + c + ")") : shown(c);
   const cats = Object.keys(counts).sort((a, b) => coll.compare(label(a), label(b)));
   const total = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r)).length;
   let html = '<span class="chip all' + (state.activeCat === "All" ? " active" : "") + '"><button type="button" data-cat="All" aria-pressed="' + (state.activeCat === "All") + '">' + t("all") + '<span class="count">' + total + "</span></button></span>";
@@ -188,7 +188,7 @@ function nameCell(r) {
   const alt = altNameOf(r);
   return '<span class="name" role="cell">' + thumb + '<span class="name-text">' + esc(nameOf(r)) +
     (r.status === "closed" ? "" : '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("findOnMaps", { name: nameOf(r) })) + '" title="' + esc(t("findOnMapsTitle")) + '"><svg aria-hidden="true"><use href="#pin"/></svg></a>') +
-    (alt ? '<span class="alt-name" lang="' + (zh() ? "en" : "zh-Hant") + '">' + esc(alt) + "</span>" : "") +
+    (alt ? '<span class="alt-name" lang="' + altLangOf(r) + '">' + esc(alt) + "</span>" : "") +
     (areaOf(r) ? '<span class="area">' + esc(areaOf(r)) + "</span>" : "") + '<span class="credit"></span></span></span>';
 }
 function renderLedger() {

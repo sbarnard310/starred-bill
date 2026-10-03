@@ -6,7 +6,7 @@
 const GOOGLE_MAPS_API_KEY = "AIzaSyA5AnpHOqFXxb6U3hDiXuAyQK2dIbZgLT4";
 const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 
-// ---------- Words (English / Traditional Chinese) ----------
+// ---------- Words (English, Traditional Chinese, French, Cantonese and Japanese) ----------
 // {place} is the page's place name and {placeIn} the same name as it reads mid-sentence ("the UK").
 // "one|many" picks the singular when {n} is 1.
 const I18N = {
@@ -386,8 +386,111 @@ const I18N = {
     wishTitle: "你嘅心水清單", installApp: "加到主畫面",
     installTipIos: "安裝方法：喺 Safari 撳分享掣（有箭咀嘅方格），再揀「加入主畫面」。",
     clearSearch: "清除搜尋", photoView: "睇{name}嘅大相", photoClose: "閂"
+  },
+  ja: {
+    navCompare: "比較", navMap: "地図", navStars: "星別", navMethod: "算出方法", navContact: "お問い合わせ", navDestinations: "エリア一覧", wishlist: "お気に入り",
+    pageTitle: "The Starred Bill・{place}",
+    heroEyebrow: "{place}・ミシュランガイド掲載店",
+    heroTitle: "{place}で、ミシュランの星は<em>いくら</em>？",
+    heroText: "{place}の星付きレストランのディナー、ランチ、ペアリングの1人あたりの料金を並べて比較。店名や料理ジャンルで検索し、星の数やジャンルで絞り込めます。行きたい店はお気に入りに保存できます。",
+    crumbHome: "すべてのエリア", explore: "エリアを見る", exploreCities: "{country}の都市", exploreDistricts: "{country}の各地区", alsoIn: "こちらにも掲載",
+    figCount: "掲載店数", figMin: "最も安いディナーコース", figMax: "最も高いディナーコース", figMinLunch: "最も安いランチコース", figMaxLunch: "最も高いランチコース",
+    fMeal: "食事", mealDinner: "ディナー", mealLunch: "ランチ", hNotesLunch: "ランチの備考", noLunch: "ランチ営業なし", avgLunch: "ランチ平均", infoLunch: "ランチ",
+    sortPriceAscLunch: "ランチ：安い順", sortPriceDescLunch: "ランチ：高い順",
+    starCounts: "三つ星 {3}軒・二つ星 {2}軒・一つ星 {1}軒",
+    compareTitle: "すべての店、すべての料金",
+    compareText: "下でディナーとランチを切り替えられます。料金はテイスティングコースまたはコース料理の価格です（「1品あたり」「予算の目安」と記載のものを除く）。バーは各コースを一覧で最も高いコースと比べたもので、料金はそれぞれ情報源にリンクしています。",
+    searchPh: "店名・料理・エリアで検索", searchPhEx: "店名・料理・エリアで検索（例：{ex}）",
+    searchLabel: "店名・料理ジャンル・エリアでレストランを検索",
+    sortLabel: "並べ替え",
+    sortPriceAsc: "ディナー：安い順", sortPriceDesc: "ディナー：高い順", sortStars: "星の多い順", sortRating: "Google評価の高い順", sortName: "店名順",
+    fShow: "表示", fStars: "ミシュランの星", fCuisine: "料理ジャンル",
+    showAll: "すべての店", showChanges: "最近の星の変動", showWish: "お気に入り",
+    showChangesTitle: "直近2回のミシュランガイドで星を獲得または失った店",
+    all: "すべて", starsAria: "ミシュラン{n}つ星",
+    hRestaurant: "レストラン", hCuisine: "料理", hStars: "星", hGoogle: "Google", hNotes: "ディナーの備考", hPrice: "料金", hWine: "ペアリング", hWish: "お気に入り",
+    tableLabel: "レストランの料金",
+    reviews: "{n}件", ratingAria: "Google評価 5点中{r}",
+    srcSite: "公式サイト", srcPress: "情報源", srcTitle: "この料金の情報源",
+    perMain: "1品あたり", typicalSpend: "予算の目安", notListed: "非公開",
+    findOnMaps: "Googleマップで{name}を見る", findOnMapsTitle: "Googleマップで見る",
+    showOnly: "{cat}だけを表示",
+    chgNew: "新規", chgTitle: "{date}のミシュランガイド：{note}",
+    emptyWish: "お気に入りに保存した店は{place}にはありません。店のハートをタップするとお気に入りに追加できます。",
+    emptyPlace: "{place}には現在ミシュランの星付きレストランはありません。星を獲得した店が出しだい、このページを更新します。",
+    emptySee: "{name}の星付きレストラン{n}軒を見る", exploreAll: "すべてのエリア",
+    noMatch: "条件に合うレストランはありません。", clearFilters: "検索と絞り込みをクリア",
+    formerTitle: "星を失った店",
+    formerNote: "前回の一覧に掲載されていたものの、その後星を失った、閉店した、または変更があった店です。参考として掲載しています。",
+    formerly: "以前", stLost: "星を喪失", stClosed: "閉店", stChanged: "変更",
+    showing: "星付きレストラン{b}軒中{a}軒を表示", showingFormer: "（ほかに星を失った店{c}軒）",
+    wishNote: "お気に入りはこのブラウザにのみ保存されます。",
+    wishAdd: "{name}をお気に入りに追加", wishRemove: "{name}をお気に入りから削除", wishAddT: "お気に入りに追加", wishRemoveT: "お気に入りから削除",
+    toastAdded: "{name}をお気に入りに追加しました", toastRemoved: "{name}をお気に入りから削除しました", undo: "元に戻す",
+    photo: "写真", tempClosed: "臨時休業中（Google）",
+    mapTitle: "星付きレストランを地図で一覧",
+    mapText: "地図のピンは上の一覧の絞り込みに連動します。星の数、料理ジャンル、お気に入りを選ぶと地図も切り替わります。ピンをタップすると料金と道順へのリンクが表示されます。",
+    mapWait: "ここまでスクロールすると地図を読み込みます。", mapLabel: "ミシュラン星付きレストランの地図",
+    mapError: "地図を読み込めませんでした。一覧の各店の横にあるピンからGoogleマップで開けます。",
+    legendAria: "ピンの色の意味", colours: ["紫", "琥珀色", "緑"], legendItem: "{c}＝ミシュラン{n}つ星",
+    mapShowing: "地図に{n}軒を表示中", mapNone: "現在の条件に合うレストランはありません",
+    nearMe: "現在地周辺", nearMeAria: "現在地の近くの星付きレストランを表示", nearFinding: "現在地を取得中…", youAreHere: "現在地",
+    nearTitle: "近い順", nearAway: "{d}先", nearWorld: "世界地図で現在地の近くの星付きレストランを見る",
+    nearNone: "このページの店は近くにありません。最も近いのは{name}（{d}）です。",
+    nearDenied: "位置情報へのアクセスがオフになっています。ブラウザの設定でこのサイトに許可してから、もう一度お試しください。",
+    nearFailed: "現在地を取得できませんでした。もう一度お試しください。", nearUnsupported: "このブラウザは位置情報を共有できません。",
+    jumpMap: "地図", jumpMapAria: "地図へ移動",
+    share: "共有", shareAria: "このページを共有", shareTitle: "このページを共有", shareCopy: "リンクをコピー", shareCopied: "コピーしました", shareEmail: "メール",
+    shareInsta: "Instagramでは、リンクをコピーしてストーリーズやメッセージに貼り付けてください。",
+    shareMore: "Instagram、メッセージなど",
+    shareTextPlace: "{place}でミシュランの星はいくら？ディナー、ランチ、ペアリングの料金を並べて比較。",
+    shareTextHome: "ミシュランの星はいくら？都市ごとにディナー、ランチ、ペアリングの料金を並べて比較。",
+    infoDinner: "ディナー", infoWine: "ペアリング", infoGoogle: "（Google）", infoOpen: "Googleマップで開く", infoNoPrice: "料金非公開",
+    starsTitle: "星がひとつ増えると、いくら上がる？",
+    starsText: "上で選んだ食事について、ミシュランの星の数ごとにコース料金の平均を出しています。アラカルト中心の店は軒数には含めますが、平均と価格帯からは除いています。",
+    tierNames: ["一つ星", "二つ星", "三つ星"], avgDinner: "ディナー平均", tRestaurants: "店数", tRange: "価格帯", tRating: "Google平均評価",
+    tVs: "{n}つ星との差", tNoPrices: "これらの店にはコース料金がありません。", tNone: "{tier}の店はまだありません。",
+    methodTitle: "料金の算出方法",
+    m1Title: "1人あたり・サービス料別",
+    m1Text: "すべてお一人様の料金で、国によって異なるサービス料は含みません。キャビアやトリュフなどの追加料金も含みません。他の通貨での表示はその日の為替レートによる概算です。",
+    m2Title: "料金の出典",
+    m2Text: "ディナーはメインのテイスティングコース、ペアリングはそのコースの最も安いものです。料金は各店の公式サイトに掲載があればそれを、なければ最近のレビューや予約サイトを参照しています。ランチはランチコースまたはテイスティングコースで、提供日を備考に記載しています。",
+    m3Title: "星とGoogle評価",
+    m3Text: "Googleの評価（5点満点）とレビュー数は2026年10月に確認しました。星は各国の最新のミシュランガイドによるものです。緑の ▲ は直近2回のガイドで星を獲得した店、赤の ▼ は星を失った店を示します。",
+    contactTitle: "料金の変更に気づきましたか？",
+    contactText: "メニューの料金はよく改定されます。最新の料金、掲載漏れの店、次に取り上げてほしい都市などをお知らせください。",
+    cName: "お名前", cEmail: "メールアドレス", cTopic: "内容", cTopicPrice: "料金の更新", cTopicSuggest: "レストランの提案", cTopicCity: "他の都市のリクエスト", cTopicOther: "その他",
+    cMsg: "メッセージ", cMsgPh: "店名、新しい料金、どこで見たかを教えてください。",
+    cSend: "送信", errName: "お名前を入力してください。", errEmail: "name@example.com のようなメールアドレスを入力してください。", errMsg: "メッセージを入力してください。",
+    sent: "{name}さん、ありがとうございます。これはプレビュー用のフォームのため、メッセージはまだ送信されません。",
+    footEdition: "The Starred Bill・{place}",
+    footNote: "料金と評価は2026年10月に確認しました。予約前に各店にご確認ください。",
+    rateLine: "{sym}での料金は{date}の為替レートによる概算です：{sym}1 = {home}{rate}。",
+    rateLineMixed: "料金は{date}の為替レートで{sym}に換算した概算です。",
+    currencyAria: "料金の表示通貨", crumbsAria: "現在地",
+    homeTitle: "The Starred Bill・ミシュラン星付きレストランの料金",
+    homeEyebrow: "ミシュランガイド掲載店の料金",
+    homeH1: "ミシュランの星は<em>いくら</em>？都市ごとに比較。",
+    homeText: "ミシュラン星付きレストランのディナー、ランチ、ペアリングの1人あたりの料金を並べて比較。料金はそれぞれ情報源にリンクしています。エリアを選ぶか、地図から探してみてください。",
+    figRestaurants: "掲載店数", figDestinations: "エリア", figUpdated: "料金確認", figUpdatedSub: "ディナー・ランチ・ペアリング",
+    citiesN: "{n}都市",
+    homeSearchPh: "店名・料理・都市で検索", homeSearchLabel: "店名・料理・都市で検索", searchNone: "「{q}」に一致するものはまだありません。",
+    mapHomeTitle: "世界中のミシュラン星付きレストラン",
+    mapHomeText: "拡大すると個々の店が表示されます。ピンをタップするとディナー料金と、その都市の比較ページへのリンクが表示されます。",
+    destTitle: "エリア", destText: "各エリアには料金、絞り込み、地図、星ごとの平均をまとめたページがあります。",
+    destRestaurants: "星付きレストラン{n}軒", destFrom: "ディナーコース {p}〜", destOpen: "{place}を比較",
+    collectionsTitle: "特集エリア",
+    wishTitle: "お気に入り", wishText: "各エリアで保存した店です。このブラウザにのみ保存されます。",
+    wishEmptyHome: "まだ保存した店はありません。各エリアのページで店の横のハートをタップすると、ここに追加されます。",
+    wishRemoveShort: "削除",
+    infoCompare: "{place}の料金を比較",
+    clearSearch: "検索をクリア", photoView: "{name}の写真を拡大", photoClose: "閉じる",
+    mapSearchPh: "地図を検索：店名・都市・国", mapSearchLabel: "地図上でレストラン・都市・国を検索",
+    mapHomeWorldText: "世界のミシュラン星付きレストラン全{n}軒。塗りつぶしのピンは当サイトで料金を比較できる店、白抜きのピンは料金を追加するまでミシュランガイドにリンクしています。拡大すると個々の店が表示されます。",
+    infoNoPricesYet: "当サイトの料金はまだありません", infoMichelin: "ミシュランガイド", legendHollow: "白抜き＝料金未掲載",
+    installApp: "アプリを追加",
+    installTipIos: "追加方法：Safariの共有ボタン（矢印付きの四角）をタップし、「ホーム画面に追加」を選んでください。"
   }
-
 };
 // Cuisine names in Chinese for restaurants whose data has no cuisineZh.
 const CUISINE_ZH = {
@@ -413,10 +516,11 @@ const LANGS = {
   en: { label: "EN", html: "en-GB", suffixes: [], locale: "en-GB" },
   zh: { label: "中文", html: "zh-Hant-TW", suffixes: ["Zh"], locale: "zh-TW" },
   yue: { label: "廣東話", html: "zh-Hant-HK", suffixes: ["Yue", "Zh"], locale: "zh-HK" },
-  fr: { label: "FR", html: "fr-FR", suffixes: ["Fr"], locale: "fr-FR" }
+  fr: { label: "FR", html: "fr-FR", suffixes: ["Fr"], locale: "fr-FR" },
+  ja: { label: "日本語", html: "ja", suffixes: ["Ja"], locale: "ja-JP" }
 };
 const DATA = JSON.parse(document.getElementById("page-data").textContent);
-// The languages this page offers (Hong Kong adds Cantonese, France adds French).
+// The languages this page offers (Hong Kong adds Cantonese, France adds French, Japan adds Japanese).
 const PAGE_LANGS = DATA.languages || ["en", "zh"];
 const params = new URLSearchParams(location.search);
 const store = {
@@ -426,7 +530,7 @@ const store = {
 const LANG_KEY = "starredbill-lang", WISHLIST_KEY = "starredbill-wishlist", PREFS_KEY = "starredbill-prefs";
 function browserLang() {
   const b = (navigator.language || "").toLowerCase();
-  return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : "en";
+  return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : "en";
 }
 // The visitor's choice, kept across pages even where it isn't offered.
 let LANG_PREF = LANGS[params.get("lang")] ? params.get("lang") : store.get(LANG_KEY, browserLang());
@@ -453,6 +557,9 @@ const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&":
 // Chinese script (Mandarin or Cantonese): changes date formats, sorting and which name is shown first.
 const zh = () => LANG === "zh" || LANG === "yue";
 const fr = () => LANG === "fr";
+const ja = () => LANG === "ja";
+// Chinese or Japanese: dates read 2025年9月 and names in brackets use full-width ones.
+const cjk = () => zh() || ja();
 const locale = () => LANGS[LANG].locale;
 // Each page sets this to the values every {placeholder} can use, e.g. { place: "London" }.
 let pageVars = () => ({});
@@ -469,15 +576,18 @@ function pick(o, f) {
   return o[f] || "";
 }
 const nameOf = (r) => pick(r, "name");
-const altNameOf = (r) => r.nameZh ? (zh() ? r.name : r.nameZh) : "";
-const cuisineOf = (r) => zh() ? (r.cuisineZh || CUISINE_ZH[r.cuisine] || r.cuisine) : fr() ? (r.cuisineFr || CUISINE_FR[r.cuisine] || r.cuisine) : r.cuisine;
+// The name in a second script under the main one: the English name under a Chinese or Japanese one,
+// otherwise the Japanese or Chinese name under the English one.
+const altNameOf = (r) => ja() ? (r.nameJa ? r.name : "") : zh() ? (r.nameZh ? r.name : r.nameJa || "") : (r.nameJa || r.nameZh || "");
+const altLangOf = (r) => altNameOf(r) === r.name ? "en" : altNameOf(r) === r.nameJa ? "ja" : "zh-Hant";
+const cuisineOf = (r) => zh() ? (r.cuisineZh || CUISINE_ZH[r.cuisine] || r.cuisine) : fr() ? (r.cuisineFr || CUISINE_FR[r.cuisine] || r.cuisine) : ja() ? (r.cuisineJa || r.cuisine) : r.cuisine;
 const withLang = (path) => path + "?lang=" + LANG_PREF;
 const MONTHS = { en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
   fr: ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."] };
 const monthYear = (ym) => {
   const [y, m] = String(ym || "").split("-");
   if (!m) return y || "";
-  return zh() ? y + "年" + Number(m) + "月" : (MONTHS[LANG] || MONTHS.en)[Number(m) - 1] + " " + y;
+  return cjk() ? y + "年" + Number(m) + "月" : (MONTHS[LANG] || MONTHS.en)[Number(m) - 1] + " " + y;
 };
 const rosettes = (n) => '<span class="stars" aria-label="' + esc(t("starsAria", { n })) + '">' + '<svg><use href="#rosette"/></svg>'.repeat(n) + "</span>";
 const heart = '<svg aria-hidden="true"><use href="#heart"/></svg>';
@@ -524,7 +634,7 @@ function loadGoogle() {
   if (!mapsBoot) mapsBoot = new Promise((resolve, reject) => {
     window.__starredBillMaps = resolve;
     const s = document.createElement("script");
-    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
+    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
     s.async = true;
     s.onerror = reject;
     document.head.appendChild(s);

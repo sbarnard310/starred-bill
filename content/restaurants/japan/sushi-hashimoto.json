@@ -1,0 +1,20 @@
+{
+  "name": "Sushi Hashimoto",
+  "nameJa": "鮨 はしもと",
+  "city": "tokyo",
+  "area": "Shintomi, Chuo",
+  "areaZh": "中央區新富",
+  "areaJa": "中央区新富",
+  "address": "1-8-2 Shintomi, Chuo-ku, Tokyo 104-0041",
+  "addressJa": "〒104-0041 東京都中央区新富 1-8-2",
+  "stars": 1,
+  "cuisine": "Sushi",
+  "cuisineZh": "壽司",
+  "cuisineJa": "寿司",
+  "rating": 4.6,
+  "reviews": 213,
+  "dinnerType": "menu",
+  "lat": 35.673,
+  "lng": 139.774495,
+  "placeId": "ChIJdYcitl-JGGARRN6dClrsF9w"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Den",
+  "nameJa": "傳",
+  "nameZh": "傳",
+  "city": "tokyo",
+  "area": "Jingumae, Shibuya",
+  "areaZh": "澀谷區神宮前",
+  "areaJa": "渋谷区神宮前",
+  "address": "2-3-18 Jingumae, Shibuya-ku, Tokyo 150-0001",
+  "addressJa": "〒150-0001 東京都渋谷区神宮前 2-3-18",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "cuisineJa": "日本料理",
+  "rating": 4.4,
+  "reviews": 334,
+  "dinnerType": "menu",
+  "website": "https://www.jimbochoden.com/",
+  "lat": 35.67321,
+  "lng": 139.712697,
+  "placeId": "ChIJKxOIF5iMGGARiFoVm5Ay8W4"
+}

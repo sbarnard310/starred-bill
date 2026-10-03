@@ -1,0 +1,8 @@
+{
+  "id": "tokyo",
+  "type": "city",
+  "parent": "japan",
+  "name": "Tokyo",
+  "nameZh": "東京",
+  "nameJa": "東京"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Shokuzen Abe",
+  "nameJa": "喰善 あべ",
+  "city": "tokyo",
+  "area": "Ginza, Chuo",
+  "areaZh": "中央區銀座",
+  "areaJa": "中央区銀座",
+  "address": "4F, 5-6-10 Ginza, Chuo-ku, Tokyo 104-0061",
+  "addressJa": "〒104-0061 東京都中央区銀座 5-6-10 4F",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "cuisineJa": "日本料理",
+  "rating": 4.5,
+  "reviews": 62,
+  "dinnerType": "menu",
+  "lat": 35.670726,
+  "lng": 139.763671,
+  "placeId": "ChIJi7BFZuaLGGARIeRRYNU6SzM"
+}

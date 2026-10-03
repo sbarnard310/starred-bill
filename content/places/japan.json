@@ -1,0 +1,25 @@
+{
+  "id": "japan",
+  "type": "country",
+  "name": "Japan",
+  "nameZh": "日本",
+  "nameJa": "日本",
+  "currency": "JPY",
+  "languages": [
+    "en",
+    "ja",
+    "zh"
+  ],
+  "intro": "Prices are in Japanese yen (¥), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026, including Japan's 10% consumption tax.",
+  "introZh": "價格以日圓（¥）標示，也可切換為英鎊、歐元或美元。價格於 2026 年 10 月查核，已含日本 10% 消費稅。",
+  "introJa": "価格は日本円（¥）で表示しています。ポンド・ユーロ・米ドルにも切り替えられます。価格は2026年10月に確認したもので、10%の消費税込みです。",
+  "serviceText": "Every figure is for one guest and includes Japan's 10% consumption tax. Whether the service charge (usually 10–15%) is included depends on the source: prices from OMAKASE JapanEatinerary and Pocket Concierge include it, while restaurant websites and most other sources add it to the bill. Supplements such as caviar, truffle or matsutake courses are left out. Prices shown in pounds, euros or US dollars use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格，已含日本 10% 消費稅。是否含服務費（一般為 10–15%）視資料來源而定：取自 OMAKASE JapanEatinerary 與 Pocket Concierge 的價格已含服務費，餐廳官網及多數其他來源則另於帳單加收。魚子醬、松露或松茸等加價項目不計入。以英鎊、歐元或美元顯示的價格依當日匯率換算，僅供參考。",
+  "serviceTextJa": "すべてお一人様の料金で、10%の消費税を含みます。サービス料（通常10〜15%）が含まれるかどうかは情報源によって異なり、OMAKASE JapanEatinerary と Pocket Concierge の料金には含まれていますが、店舗の公式サイトなどの料金では会計時に別途加算されます。キャビア・トリュフ・松茸などの追加料金は含みません。ポンド・ユーロ・米ドルでの表示はその日の為替レートによる概算です。",
+  "sourcesText": "Dinner is the main tasting or omakase course where there is one, and wine is the cheapest pairing the restaurant lists (at Japanese restaurants this is often sake). Many of Tokyo's top restaurants don't publish prices, so most figures come from the booking services they use, such as OMAKASE, Pocket Concierge and TableCheck, otherwise from the restaurant's own website or recent reviews. Where a restaurant offers several courses, the note says “from” and the cheapest is shown. Lunch is the set or tasting lunch course, and the note says which days it's served. A few restaurants don't publish a price anywhere, and theirs are marked “Not listed”.",
+  "sourcesTextZh": "晚餐以主要品嚐或主廚精選套餐為準，餐酒搭配則取餐廳所列最便宜的選項（日本料理餐廳多為清酒搭配）。東京許多頂級餐廳不公開價格，因此大多數金額取自餐廳使用的訂位服務，例如 OMAKASE、Pocket Concierge 與 TableCheck；否則參考餐廳官網或近期評論。若餐廳提供多種套餐，說明欄會註明「起」並顯示最便宜的一種。午餐以午間套餐或品嚐套餐為準，說明欄會註明供應日。少數餐廳完全未公開價格，標示為「未公布」。",
+  "sourcesTextJa": "ディナーはメインのテイスティングコースまたはおまかせコース、ペアリングは店が提示する最も安いもの（日本料理店では日本酒の場合が多い）を掲載しています。東京のトップレストランの多くは料金を公開していないため、多くの金額は各店が利用する予約サービス（OMAKASE、Pocket Concierge、TableCheck など）から、それ以外は店舗の公式サイトや最近のレビューから引用しています。複数のコースがある店は最も安いものを表示し、備考に「最安値」と記載しています。ランチはランチコースまたはテイスティングコースで、提供日を備考に記載しています。料金をどこにも公開していない店は「非公開」と表示しています。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Tokyo 2026, announced on 25 September 2025; the 2027 guide is due on 16 February 2027. A green ▲ marks a restaurant that gained a star in the October 2024 or September 2025 guide; a red ▼ marks one that lost its stars.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2025 年 9 月 25 日公布的《米其林指南東京 2026》，2027 年版預計於 2027 年 2 月 16 日公布。綠色 ▲ 代表在 2024 年 10 月或 2025 年 9 月的指南中獲得星級；紅色 ▼ 代表失去星級。",
+  "starsTextJa": "Googleの評価（5点満点）とレビュー数は2026年10月に確認しました。星は2025年9月25日に発表された『ミシュランガイド東京2026』によるものです。2027年版は2027年2月16日に発表予定です。緑の ▲ は2024年10月または2025年9月のガイドで星を獲得した店、赤の ▼ は星を失った店を示します。"
+}

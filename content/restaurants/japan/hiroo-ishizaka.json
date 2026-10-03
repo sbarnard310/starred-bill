@@ -1,0 +1,21 @@
+{
+  "name": "Hiroo Ishizaka",
+  "nameJa": "広尾 石阪",
+  "nameZh": "廣尾 石阪",
+  "city": "tokyo",
+  "area": "Hiroo, Shibuya",
+  "areaZh": "澀谷區廣尾",
+  "areaJa": "渋谷区広尾",
+  "address": "2F, 5-19-1 Hiro, Shibuya-ku, Tokyo 150-0012",
+  "addressJa": "〒150-0012 東京都渋谷区広尾 5-19-1 2F",
+  "stars": 1,
+  "cuisine": "Sushi",
+  "cuisineZh": "壽司",
+  "cuisineJa": "寿司",
+  "rating": 5,
+  "reviews": 53,
+  "dinnerType": "menu",
+  "lat": 35.649081,
+  "lng": 139.719531,
+  "placeId": "ChIJbxNqhnKLGGARQ9iU7QiDSlE"
+}

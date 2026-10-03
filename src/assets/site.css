@@ -19,6 +19,10 @@
   --font-num: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   --radius: 10px;
 }
+/* Japanese text (pages in Japanese, and Japanese names on other pages) uses Japanese letterforms. */
+:lang(ja) { --font-display: "Gloock", "Noto Serif JP", "Hiragino Mincho ProN", serif; --font-body: "Figtree", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif; }
+.alt-name:lang(ja) { font-family: var(--font-body); }
+:lang(ja) h1, :lang(ja) h2 { word-break: auto-phrase; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0C1712; --surface: #13221A; --ink: #E4EEE7; --muted: #98AE9F; --line: #24392D;

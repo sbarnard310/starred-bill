@@ -1,0 +1,22 @@
+{
+  "name": "Jushu",
+  "nameJa": "壽修",
+  "nameZh": "壽修",
+  "city": "tokyo",
+  "area": "Nishi-Azabu, Minato",
+  "areaZh": "港區西麻布",
+  "areaJa": "港区西麻布",
+  "address": "2-16-1 Nishiazabu, Minato-ku, Tokyo 106-0031",
+  "addressJa": "〒106-0031 東京都港区西麻布 2-16-1",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "cuisineJa": "日本料理",
+  "rating": 4.5,
+  "reviews": 68,
+  "dinnerType": "menu",
+  "website": "https://nishiazabu-jushu.com/",
+  "lat": 35.661832,
+  "lng": 139.720305,
+  "placeId": "ChIJ11DE6mSLGGAR--iGdJ0IqSk"
+}

@@ -1,12 +1,12 @@
 # The Starred Bill
 
-Compare dinner, lunch and wine pairing prices at Michelin-starred restaurants, city by city, in English or Traditional Chinese.
+Compare dinner, lunch and wine pairing prices at Michelin-starred restaurants, city by city, in English or Traditional Chinese (and Japanese for Japan).
 
 Live at https://starredbill.com
 
 - Homepage with a world map, destination cards, search and your wishlist: https://starredbill.com/
 - A page for every country, region and city, e.g. https://starredbill.com/uk/england/london/, https://starredbill.com/ireland/ or https://starredbill.com/taiwan/
-- Add `?lang=en` for English or `?lang=zh` for Chinese. Hong Kong and Macau also offer Cantonese (`?lang=yue`) and France offers French (`?lang=fr`).
+- Add `?lang=en` for English or `?lang=zh` for Chinese. Hong Kong and Macau also offer Cantonese (`?lang=yue`), France offers French (`?lang=fr`) and Japan offers Japanese (`?lang=ja`).
 
 ## How it fits together
 
@@ -42,7 +42,7 @@ Restaurants don't need a city page of their own: one outside the cities we cover
 
 Groups are for areas that overlap the main structure, such as "Basque Country" (Spain and France) or "Northern England". Every place gets a page. One with no starred restaurants yet says so and links up to the nearest place that has some (e.g. Dorset links to England), so it's ready for its first star.
 
-Optional `languages`, set on a country: the language buttons its pages offer (English and Chinese unless set; Hong Kong and Macau add Cantonese, France adds French). Any text field can have a `...Zh`, `...Yue` (Cantonese) or `...Fr` version; Cantonese falls back to the Chinese text.
+Optional `languages`, set on a country: the language buttons its pages offer (English and Chinese unless set; Hong Kong and Macau add Cantonese, France adds French, Japan adds Japanese). Any text field can have a `...Zh`, `...Yue` (Cantonese), `...Fr` or `...Ja` (Japanese) version; Cantonese falls back to the Chinese text.
 
 Optional text, set on a country and used by everything inside it unless a region or city sets its own: `inSentence` (the name mid-sentence, e.g. "the UK"), `intro`, `serviceText`, `sourcesText`, `starsText`, each with a `...Zh` version for Chinese.
 
@@ -52,11 +52,11 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 
 | field | meaning |
 |---|---|
-| `name`, `nameZh` | restaurant name |
+| `name`, `nameZh`, `nameJa` | restaurant name (on Chinese pages, a restaurant with only `nameJa` shows it under the English name) |
 | `city` | id of its city in `content/places/` |
-| `area`, `areaZh`, `address`, `addressZh` | neighbourhood and full address |
+| `area`, `areaZh`, `areaJa`, `address`, `addressZh`, `addressJa` | neighbourhood and full address |
 | `stars` | 1, 2 or 3 |
-| `cuisine`, `cuisineZh` | Michelin's cuisine label; a new one creates a new filter button |
+| `cuisine`, `cuisineZh`, `cuisineJa` | Michelin's cuisine label; a new one creates a new filter button |
 | `rating`, `reviews`, `ratingNote` | Google rating out of 5 and number of reviews |
 | `dinner` | dinner price per person in the country's currency, as a number |
 | `dinnerType` | `menu` (tasting or set menu), `main` (typical main course) or `spend` (typical spend) |

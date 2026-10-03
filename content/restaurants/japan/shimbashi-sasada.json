@@ -1,0 +1,20 @@
+{
+  "name": "Shimbashi Sasada",
+  "nameJa": "新ばし 笹田",
+  "city": "tokyo",
+  "area": "Nishi-Shimbashi, Minato",
+  "areaZh": "港區西新橋",
+  "areaJa": "港区西新橋",
+  "address": "1-23-7 Nishishimbashi, Minato-ku, Tokyo 105-0003",
+  "addressJa": "〒105-0003 東京都港区西新橋 1-23-7",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "cuisineZh": "日本菜",
+  "cuisineJa": "日本料理",
+  "rating": 4.7,
+  "reviews": 78,
+  "dinnerType": "menu",
+  "lat": 35.668147,
+  "lng": 139.751571,
+  "placeId": "ChIJtWLCpOyLGGARvwp1ZVmN3Kw"
+}

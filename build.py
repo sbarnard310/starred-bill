@@ -22,8 +22,8 @@ CONTENT, SRC, OUT = ROOT / "content", ROOT / "src", ROOT / "_site"
 SITE_URL = "https://starredbill.com"
 PLACE_TYPES = ("country", "region", "city", "district", "group")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
-LANGUAGES = ("en", "zh", "yue", "fr")
-LANG_SUFFIXES = ("Zh", "Yue", "Fr")  # e.g. nameZh, introYue, dinnerNoteFr
+LANGUAGES = ("en", "zh", "yue", "fr", "ja")
+LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja")  # e.g. nameZh, introYue, dinnerNoteFr, areaJa
 DEFAULT_LANGUAGES = ["en", "zh"]
 PRICE_TYPES = ("menu", "main", "spend")
 STATUSES = ("lost", "closed", "changed")
@@ -202,7 +202,7 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
         "id": rid,
         "cur": country["currency"] if country else "USD",
         "country": country["id"] if country else None,
-        "cityName": city["name"], "cityNameZh": city.get("nameZh", ""),
+        "cityName": city["name"], "cityNameZh": city.get("nameZh", ""), "cityNameJa": city.get("nameJa", ""),
         "cityPath": city["path"], "cityType": city["type"],
         "_chain": chain(city["id"]),
     })
@@ -357,7 +357,7 @@ def build_place(p):
         "crumbs": [dict(names(c), path=c["path"], n=starred_n[c["id"]]) for c in crumbs],
         "links": explore_links(p),
         "searchEx": search_example(starred, False), "searchExZh": search_example(starred, True),
-        "searchExFr": search_example(starred, False, "areaFr"),
+        "searchExFr": search_example(starred, False, "areaFr"), "searchExJa": search_example(starred, False, "areaJa"),
     })
     for field in PLACE_TEXTS:
         for suffix in ("",) + LANG_SUFFIXES:
@@ -458,7 +458,7 @@ def build_home():
             "cities": [dict(link(q), type=q["type"]) for q in cities],
         })
     groups = [link(g) for g in by_size(g for g in pages if g["type"] == "group")]
-    keep = ("id", "name", "nameZh", "stars", "cuisine", "cuisineZh", "lat", "lng", "dinner", "dinnerType", "cur", "rating",
+    keep = ("id", "name", "nameZh", "nameJa", "stars", "cuisine", "cuisineZh", "lat", "lng", "dinner", "dinnerType", "cur", "rating",
             "country", "cityName", "cityNameZh", "cityPath")
     data = {
         # Restaurants listed under a region or country rather than a city also carry their town, e.g. Aughton.

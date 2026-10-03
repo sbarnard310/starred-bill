@@ -33,6 +33,10 @@ content:
       - name: nameZh
         label: Name in Chinese
         type: string
+      - name: nameJa
+        label: Name in Japanese
+        description: For restaurants in Japan, e.g. 明寂.
+        type: string
       - name: city
         label: City
         description: The city it's in. It then also appears on that city's region and country pages, and any collection that includes them.
@@ -54,12 +58,19 @@ content:
         label: Area in French
         description: Only for places offered in French, e.g. 8e arrondissement.
         type: string
+      - name: areaJa
+        label: Area in Japanese
+        description: Only for places offered in Japanese, e.g. 港区西麻布.
+        type: string
       - name: address
         label: Address
         description: Full address, also used for the Google Maps link.
         type: string
       - name: addressZh
         label: Address in Chinese
+        type: string
+      - name: addressJa
+        label: Address in Japanese
         type: string
       - name: stars
         label: Michelin stars
@@ -73,6 +84,10 @@ content:
         type: string
       - name: cuisineZh
         label: Cuisine in Chinese
+        type: string
+      - name: cuisineJa
+        label: Cuisine in Japanese
+        description: Michelin's Japanese label, e.g. 日本料理.
         type: string
       - name: change
         label: Recent star change
@@ -92,6 +107,9 @@ content:
         type: string
       - name: changeNoteFr
         label: Star change note in French
+        type: string
+      - name: changeNoteJa
+        label: Star change note in Japanese
         type: string
       - name: changeDate
         label: Star change date
@@ -132,6 +150,9 @@ content:
         type: string
       - name: dinnerNoteFr
         label: Dinner note in French
+        type: string
+      - name: dinnerNoteJa
+        label: Dinner note in Japanese
         type: string
       - name: wine
         label: Wine pairing price (dinner)
@@ -177,6 +198,9 @@ content:
       - name: lunchNoteFr
         label: Lunch note in French
         type: string
+      - name: lunchNoteJa
+        label: Lunch note in Japanese
+        type: string
       - name: lunchWine
         label: Wine pairing price (lunch)
         type: number
@@ -198,6 +222,9 @@ content:
         type: string
       - name: noticeZh
         label: Notice in Chinese
+        type: string
+      - name: noticeJa
+        label: Notice in Japanese
         type: string
       - name: status
         label: Status (only if no longer starred)
@@ -221,6 +248,9 @@ content:
         type: string
       - name: statusNoteFr
         label: Status note in French
+        type: string
+      - name: statusNoteJa
+        label: Status note in Japanese
         type: string
       - name: website
         label: Website
@@ -289,9 +319,12 @@ content:
       - name: nameFr
         label: Name in French
         type: string
+      - name: nameJa
+        label: Name in Japanese
+        type: string
       - name: languages
         label: Languages offered
-        description: The language buttons on this page and the pages inside it. Leave empty for English and Chinese. Hong Kong and Macau add Cantonese; France adds French.
+        description: The language buttons on this page and the pages inside it. Leave empty for English and Chinese. Hong Kong and Macau add Cantonese; France adds French; Japan adds Japanese.
         type: select
         options:
           multiple: true
@@ -300,6 +333,7 @@ content:
             - { value: zh, label: "中文 (Chinese)" }
             - { value: yue, label: "廣東話 (Cantonese)" }
             - { value: fr, label: "Français (French)" }
+            - { value: ja, label: "日本語 (Japanese)" }
       - name: parent
         label: Inside (regions, cities and districts)
         description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom. A district sits inside a city, e.g. Manhattan inside New York.
@@ -350,6 +384,9 @@ content:
       - name: introFr
         label: "Introduction (French)"
         type: text
+      - name: introJa
+        label: "Introduction (Japanese)"
+        type: text
       - name: serviceText
         label: "Method: per person, before service"
         description: Explains service charges in this country.
@@ -363,6 +400,9 @@ content:
       - name: serviceTextFr
         label: "Method: per person, before service (French)"
         type: text
+      - name: serviceTextJa
+        label: "Method: per person, before service (Japanese)"
+        type: text
       - name: sourcesText
         label: "Method: where prices come from"
         type: text
@@ -374,6 +414,9 @@ content:
         type: text
       - name: sourcesTextFr
         label: "Method: where prices come from (French)"
+        type: text
+      - name: sourcesTextJa
+        label: "Method: where prices come from (Japanese)"
         type: text
       - name: starsText
         label: "Method: stars and Google rating"
@@ -387,6 +430,9 @@ content:
         type: text
       - name: starsTextFr
         label: "Method: stars and Google rating (French)"
+        type: text
+      - name: starsTextJa
+        label: "Method: stars and Google rating (Japanese)"
         type: text
 
   - name: currencies

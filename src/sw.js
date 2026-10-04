@@ -22,7 +22,8 @@ self.addEventListener("fetch", (e) => {
   if (req.method !== "GET" || new URL(req.url).origin !== location.origin) return;
   if (req.mode === "navigate") {
     // Pages: the latest version when online, the last saved copy when offline.
-    e.respondWith(fetch(req).then((res) => save(req, res))
+    // "no-cache" asks the server every time (instead of the browser's 10-minute copy), so updates show on the next open.
+    e.respondWith(fetch(req, { cache: "no-cache" }).then((res) => save(req, res))
       .catch(() => caches.match(req, { ignoreSearch: true }).then((hit) => hit || caches.match("/"))));
     return;
   }

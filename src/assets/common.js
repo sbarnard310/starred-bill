@@ -11,6 +11,7 @@ const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 // "one|many" picks the singular when {n} is 1.
 const I18N = {
   en: {
+    noStarsTitle: "No Michelin stars yet", noStarsText: "These {n} countries have no Michelin-starred restaurant. For most, the reason is simply that the MICHELIN Guide doesn't cover them yet; where there's more to it (marked *), it's explained here.",
     destSoon: "No prices yet", destSoonMap: "See them on the map",
     destJump: "Jump to a country",
     notrackOn: "This browser is no longer counted in the visit statistics.", notrackOff: "This browser is counted in the visit statistics again.",
@@ -143,6 +144,7 @@ const I18N = {
     installTipIos: "To install: tap the Share button (the square with an arrow) in Safari, then choose “Add to Home Screen”."
   },
   zh: {
+    noStarsTitle: "尚無米其林星級的國家", noStarsText: "以下 {n} 個國家目前沒有米其林星級餐廳。多數只是因為米其林指南尚未涵蓋；若另有原因（標示 *），說明如下。",
     destSoon: "尚無價格", destSoonMap: "在地圖上查看",
     destJump: "跳至國家或地區",
     notrackOn: "此瀏覽器已不再計入瀏覽統計。", notrackOff: "此瀏覽器已重新計入瀏覽統計。",
@@ -274,6 +276,7 @@ const I18N = {
     mapSearchPh: "在地圖上搜尋餐廳、城市或國家", mapSearchLabel: "在地圖上搜尋餐廳、城市或國家"
   },
   fr: {
+    noStarsTitle: "Pas encore d'étoile Michelin", noStarsText: "Ces {n} pays n'ont aucun restaurant étoilé. Le plus souvent, le Guide MICHELIN ne les couvre tout simplement pas encore ; quand il y a une autre raison (marqué *), elle est expliquée ici.",
     destSoon: "Pas encore de prix", destSoonMap: "Les voir sur la carte",
     destJump: "Aller à un pays",
     notrackOn: "Ce navigateur n'est plus compté dans les statistiques de visite.", notrackOff: "Ce navigateur est de nouveau compté dans les statistiques de visite.",
@@ -385,6 +388,7 @@ const I18N = {
     clearSearch: "Effacer la recherche", photoView: "Agrandir la photo de {name}", photoClose: "Fermer"
   },
   yue: {
+    noStarsTitle: "未有米芝蓮星嘅國家", noStarsText: "以下 {n} 個國家暫時未有米芝蓮星級餐廳。大部分只係因為米芝蓮指南未有涵蓋；如果另有原因（標咗 *），會喺下面解釋。",
     destSoon: "未有價錢", destSoonMap: "喺地圖上睇",
     destJump: "跳去國家或地區",
     notrackOn: "呢個瀏覽器已經唔再計入瀏覽統計。", notrackOff: "呢個瀏覽器已經重新計入瀏覽統計。",
@@ -496,6 +500,7 @@ const I18N = {
     clearSearch: "清除搜尋", photoView: "睇{name}嘅大相", photoClose: "閂"
   },
   ja: {
+    noStarsTitle: "ミシュランの星がまだない国", noStarsText: "以下の{n}か国には星付きレストランがありません。多くはミシュランガイドがまだ発行されていないためです。ほかの理由がある国（*印）はここで説明しています。",
     destSoon: "料金は未掲載", destSoonMap: "地図で見る",
     destJump: "国・地域へ移動",
     notrackOn: "このブラウザはアクセス統計に含まれなくなりました。", notrackOff: "このブラウザは再びアクセス統計に含まれます。",
@@ -627,6 +632,7 @@ const I18N = {
     installTipIos: "追加方法：Safariの共有ボタン（矢印付きの四角）をタップし、「ホーム画面に追加」を選んでください。"
   },
   es: {
+    noStarsTitle: "Aún sin estrellas Michelin", noStarsText: "Estos {n} países no tienen ningún restaurante con estrella. En la mayoría, la razón es que la Guía MICHELIN aún no los cubre; cuando hay algo más (marcado con *), se explica aquí.",
     destSoon: "Aún sin precios", destSoonMap: "Verlos en el mapa",
     destJump: "Ir a un país",
     notrackOn: "Este navegador ya no se cuenta en las estadísticas de visitas.", notrackOff: "Este navegador vuelve a contarse en las estadísticas de visitas.",
@@ -740,6 +746,7 @@ const I18N = {
     installTipIos: "Para instalarla: toca el botón Compartir (el cuadrado con una flecha) en Safari y elige “Añadir a pantalla de inicio”."
   },
   ko: {
+    noStarsTitle: "아직 미쉐린 스타가 없는 나라", noStarsText: "다음 {n}개국에는 미쉐린 스타 레스토랑이 없습니다. 대부분은 미쉐린 가이드가 아직 다루지 않기 때문이며, 다른 이유가 있는 곳(* 표시)은 여기서 설명합니다.",
     destSoon: "가격 준비 중", destSoonMap: "지도에서 보기",
     destJump: "국가·지역으로 이동",
     notrackOn: "이 브라우저는 이제 방문 통계에서 제외됩니다.", notrackOff: "이 브라우저가 다시 방문 통계에 포함됩니다.",
@@ -871,6 +878,7 @@ const I18N = {
     installTipIos: "추가 방법: Safari 공유 버튼(화살표가 있는 네모)을 누르고 ‘홈 화면에 추가’를 선택하세요."
   },
   it: {
+    noStarsTitle: "Ancora senza stelle Michelin", noStarsText: "Questi {n} paesi non hanno ristoranti stellati. Per lo più la Guida MICHELIN non li copre ancora; quando c'è un altro motivo (segnato con *), è spiegato qui.",
     destSoon: "Prezzi non ancora disponibili", destSoonMap: "Vedili sulla mappa",
     destJump: "Vai a un paese",
     notrackOn: "Questo browser non viene più conteggiato nelle statistiche delle visite.", notrackOff: "Questo browser viene di nuovo conteggiato nelle statistiche delle visite.",

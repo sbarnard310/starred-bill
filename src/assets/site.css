@@ -339,6 +339,12 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
 .dest-open { font-weight: 600; color: var(--green); text-decoration: none; justify-self: start; }
 .dest-open:hover { text-decoration: underline; text-underline-offset: 3px; }
 .dest-soon { background: transparent; border-style: dashed; }
+#noStars { margin-top: 36px; }
+.nostar-intro { color: var(--muted); max-width: 70ch; margin: 6px 0 16px; }
+.nostar-notes { display: grid; gap: 10px; margin-bottom: 18px; max-width: 80ch; }
+.nostar-notes p { font-size: .95rem; }
+.nostar-region { max-width: 900px; }
+.nostar-list { list-style: none; padding: 0; margin: 10px 0 6px; display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: .92rem; }
 .dest-soon h3 { color: var(--muted); }
 .dest-tag { font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; }
 button.dest-open { background: none; border: 0; padding: 0; font: inherit; color: var(--green); font-weight: 600; cursor: pointer; text-align: left; }

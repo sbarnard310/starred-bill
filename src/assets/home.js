@@ -47,6 +47,19 @@ function soonCard(c) {
     esc(t("starCounts").replace("{3}", three).replace("{2}", two).replace("{1}", one)) + "</p>" +
     '<button type="button" class="dest-open" data-map-box="' + c.box.join(",") + '">' + esc(t("destSoonMap")) + " →</button></article>";
 }
+// Countries with no starred restaurant, by region; a few carry a note on why.
+function renderNoStars() {
+  const regions = DATA.noStars || [];
+  const n = regions.reduce((a, g) => a + g.countries.length, 0);
+  if (!n) { $("noStars").innerHTML = ""; return; }
+  const coll = new Intl.Collator(locale());
+  const noted = regions.flatMap((g) => g.countries.filter((c) => c.note)).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
+  $("noStars").innerHTML = '<h3 class="sub-head">' + esc(t("noStarsTitle")) + '</h3><p class="nostar-intro">' + esc(t("noStarsText", { n })) + "</p>" +
+    '<div class="nostar-notes">' + noted.map((c) => '<p><strong>' + esc(pick(c, "name")) + "</strong> " + esc(pick(c, "note")) + "</p>").join("") + "</div>" +
+    regions.map((g) => '<details class="dest-more nostar-region"><summary>' + esc(pick(g, "name")) + ' <span class="count">' + g.countries.length + "</span></summary>" +
+      '<ul class="nostar-list">' + g.countries.slice().sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")))
+        .map((c) => "<li>" + esc(pick(c, "name")) + (c.note ? " *" : "") + "</li>").join("") + "</ul></details>").join("");
+}
 // Quick jump to a country: A–Z letters (letters with no country are greyed out), or the country names
 // themselves in Chinese and Japanese, where names don't start with a letter.
 function renderDestJump(sorted) {
@@ -91,6 +104,7 @@ function renderDestinations() {
   const sorted = DATA.countries.concat(DATA.soon || []).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
   $("destGrid").innerHTML = sorted.map((c) => c.box ? soonCard(c) : destCard(c)).join("");
   renderDestJump(sorted);
+  renderNoStars();
   $("collections").innerHTML = !DATA.groups.length ? "" :
     '<h3 class="sub-head">' + t("collectionsTitle") + '</h3><div class="dest-cities">' + DATA.groups.map((g) =>
       '<a class="city-link" href="' + withLang(g.path) + '">' + esc(pick(g, "name")) + '<span class="count">' + g.n + "</span></a>").join("") + "</div>";

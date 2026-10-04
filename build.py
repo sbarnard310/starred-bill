@@ -540,6 +540,16 @@ def world_countries():
     return sorted(out.values(), key=lambda c: c["name"])
 
 
+def no_star_countries():
+    """The homepage's list of countries without a Michelin star (content/no-stars.json), by region."""
+    data = json.loads((CONTENT / "no-stars.json").read_text(encoding="utf-8"))
+    starred = {p["name"] for p in pages if p["type"] == "country"} | {v[1] for v in WORLD_COUNTRIES.values() if v[1]}
+    clash = sorted(c["name"] for g in data["regions"] for c in g["countries"] if c["name"] in starred)
+    if clash:
+        print("  These countries now have Michelin stars, so delete them from content/no-stars.json:", ", ".join(clash))
+    return [dict(g, countries=[c for c in g["countries"] if c["name"] not in starred]) for g in data["regions"]]
+
+
 def build_home():
     starred = [r for r in restaurants if not r.get("status")]
     world_url, world_total = build_world(starred)
@@ -563,7 +573,7 @@ def build_home():
         "restaurants": [dict({k: r[k] for k in keep if r.get(k) is not None}, **({"town": r["area"].split(", ")[0]} if r["cityType"] != "city" and r.get("area") else {}))
                         for r in starred],
         "knownIds": [r["id"] for r in starred],
-        "countries": countries, "groups": groups, "soon": world_countries(),
+        "countries": countries, "groups": groups, "soon": world_countries(), "noStars": no_star_countries(),
         "places": [dict(link(p), type=p["type"]) for p in by_size(pages)],
         "currencies": CURRENCIES, "updated": site.get("updated", ""),
         "worldUrl": world_url, "worldTotal": world_total, "languages": DEFAULT_LANGUAGES,

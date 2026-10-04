@@ -1,0 +1,623 @@
+{
+  "about": "Countries (UN members) with no Michelin-starred restaurant, shown on the homepage under the country cards. Unless a note says otherwise, the reason is that the MICHELIN Guide doesn't cover the country. When a country gains a star, delete it here (the build warns if a country is in both lists).",
+  "regions": [
+    {
+      "name": "Africa",
+      "nameZh": "非洲",
+      "countries": [
+        {
+          "name": "Algeria",
+          "nameZh": "阿爾及利亞"
+        },
+        {
+          "name": "Angola",
+          "nameZh": "安哥拉"
+        },
+        {
+          "name": "Benin",
+          "nameZh": "貝南"
+        },
+        {
+          "name": "Botswana",
+          "nameZh": "波札那"
+        },
+        {
+          "name": "Burkina Faso",
+          "nameZh": "布吉納法索"
+        },
+        {
+          "name": "Burundi",
+          "nameZh": "蒲隆地"
+        },
+        {
+          "name": "Cabo Verde",
+          "nameZh": "維德角"
+        },
+        {
+          "name": "Cameroon",
+          "nameZh": "喀麥隆"
+        },
+        {
+          "name": "Central African Republic",
+          "nameZh": "中非共和國"
+        },
+        {
+          "name": "Chad",
+          "nameZh": "查德"
+        },
+        {
+          "name": "Comoros",
+          "nameZh": "葛摩"
+        },
+        {
+          "name": "Congo",
+          "nameZh": "剛果共和國"
+        },
+        {
+          "name": "DR Congo",
+          "nameZh": "剛果民主共和國"
+        },
+        {
+          "name": "Côte d'Ivoire",
+          "nameZh": "象牙海岸"
+        },
+        {
+          "name": "Djibouti",
+          "nameZh": "吉布地"
+        },
+        {
+          "name": "Egypt",
+          "nameZh": "埃及"
+        },
+        {
+          "name": "Equatorial Guinea",
+          "nameZh": "赤道幾內亞"
+        },
+        {
+          "name": "Eritrea",
+          "nameZh": "厄利垂亞"
+        },
+        {
+          "name": "Eswatini",
+          "nameZh": "史瓦帝尼"
+        },
+        {
+          "name": "Ethiopia",
+          "nameZh": "衣索比亞"
+        },
+        {
+          "name": "Gabon",
+          "nameZh": "加彭"
+        },
+        {
+          "name": "Gambia",
+          "nameZh": "甘比亞"
+        },
+        {
+          "name": "Ghana",
+          "nameZh": "迦納"
+        },
+        {
+          "name": "Guinea",
+          "nameZh": "幾內亞"
+        },
+        {
+          "name": "Guinea-Bissau",
+          "nameZh": "幾內亞比索"
+        },
+        {
+          "name": "Kenya",
+          "nameZh": "肯亞"
+        },
+        {
+          "name": "Lesotho",
+          "nameZh": "賴索托"
+        },
+        {
+          "name": "Liberia",
+          "nameZh": "賴比瑞亞"
+        },
+        {
+          "name": "Libya",
+          "nameZh": "利比亞"
+        },
+        {
+          "name": "Madagascar",
+          "nameZh": "馬達加斯加"
+        },
+        {
+          "name": "Malawi",
+          "nameZh": "馬拉威"
+        },
+        {
+          "name": "Mali",
+          "nameZh": "馬利"
+        },
+        {
+          "name": "Mauritania",
+          "nameZh": "茅利塔尼亞"
+        },
+        {
+          "name": "Mauritius",
+          "nameZh": "模里西斯"
+        },
+        {
+          "name": "Morocco",
+          "nameZh": "摩洛哥"
+        },
+        {
+          "name": "Mozambique",
+          "nameZh": "莫三比克"
+        },
+        {
+          "name": "Namibia",
+          "nameZh": "納米比亞"
+        },
+        {
+          "name": "Niger",
+          "nameZh": "尼日"
+        },
+        {
+          "name": "Nigeria",
+          "nameZh": "奈及利亞"
+        },
+        {
+          "name": "Rwanda",
+          "nameZh": "盧安達"
+        },
+        {
+          "name": "São Tomé and Príncipe",
+          "nameZh": "聖多美普林西比"
+        },
+        {
+          "name": "Senegal",
+          "nameZh": "塞內加爾"
+        },
+        {
+          "name": "Seychelles",
+          "nameZh": "塞席爾"
+        },
+        {
+          "name": "Sierra Leone",
+          "nameZh": "獅子山"
+        },
+        {
+          "name": "Somalia",
+          "nameZh": "索馬利亞"
+        },
+        {
+          "name": "South Africa",
+          "nameZh": "南非"
+        },
+        {
+          "name": "South Sudan",
+          "nameZh": "南蘇丹"
+        },
+        {
+          "name": "Sudan",
+          "nameZh": "蘇丹"
+        },
+        {
+          "name": "Tanzania",
+          "nameZh": "坦尚尼亞"
+        },
+        {
+          "name": "Togo",
+          "nameZh": "多哥"
+        },
+        {
+          "name": "Tunisia",
+          "nameZh": "突尼西亞"
+        },
+        {
+          "name": "Uganda",
+          "nameZh": "烏干達"
+        },
+        {
+          "name": "Zambia",
+          "nameZh": "尚比亞"
+        },
+        {
+          "name": "Zimbabwe",
+          "nameZh": "辛巴威"
+        }
+      ]
+    },
+    {
+      "name": "The Americas",
+      "nameZh": "美洲",
+      "countries": [
+        {
+          "name": "Antigua and Barbuda",
+          "nameZh": "安地卡及巴布達"
+        },
+        {
+          "name": "Bahamas",
+          "nameZh": "巴哈馬"
+        },
+        {
+          "name": "Barbados",
+          "nameZh": "巴貝多"
+        },
+        {
+          "name": "Belize",
+          "nameZh": "貝里斯"
+        },
+        {
+          "name": "Bolivia",
+          "nameZh": "玻利維亞"
+        },
+        {
+          "name": "Chile",
+          "nameZh": "智利"
+        },
+        {
+          "name": "Colombia",
+          "nameZh": "哥倫比亞"
+        },
+        {
+          "name": "Costa Rica",
+          "nameZh": "哥斯大黎加"
+        },
+        {
+          "name": "Cuba",
+          "nameZh": "古巴"
+        },
+        {
+          "name": "Dominica",
+          "nameZh": "多米尼克"
+        },
+        {
+          "name": "Dominican Republic",
+          "nameZh": "多明尼加"
+        },
+        {
+          "name": "Ecuador",
+          "nameZh": "厄瓜多"
+        },
+        {
+          "name": "El Salvador",
+          "nameZh": "薩爾瓦多"
+        },
+        {
+          "name": "Grenada",
+          "nameZh": "格瑞那達"
+        },
+        {
+          "name": "Guatemala",
+          "nameZh": "瓜地馬拉"
+        },
+        {
+          "name": "Guyana",
+          "nameZh": "蓋亞那"
+        },
+        {
+          "name": "Haiti",
+          "nameZh": "海地"
+        },
+        {
+          "name": "Honduras",
+          "nameZh": "宏都拉斯"
+        },
+        {
+          "name": "Jamaica",
+          "nameZh": "牙買加"
+        },
+        {
+          "name": "Nicaragua",
+          "nameZh": "尼加拉瓜"
+        },
+        {
+          "name": "Panama",
+          "nameZh": "巴拿馬"
+        },
+        {
+          "name": "Paraguay",
+          "nameZh": "巴拉圭"
+        },
+        {
+          "name": "Peru",
+          "nameZh": "秘魯",
+          "note": "No MICHELIN Guide yet, even though Lima's Central has been named the world's best restaurant.",
+          "noteZh": "雖然利馬的 Central 曾獲選為全球最佳餐廳，但秘魯尚無米其林指南。"
+        },
+        {
+          "name": "Saint Kitts and Nevis",
+          "nameZh": "聖克里斯多福及尼維斯"
+        },
+        {
+          "name": "Saint Lucia",
+          "nameZh": "聖露西亞"
+        },
+        {
+          "name": "Saint Vincent and the Grenadines",
+          "nameZh": "聖文森及格瑞那丁"
+        },
+        {
+          "name": "Suriname",
+          "nameZh": "蘇利南"
+        },
+        {
+          "name": "Trinidad and Tobago",
+          "nameZh": "千里達及托巴哥"
+        },
+        {
+          "name": "Uruguay",
+          "nameZh": "烏拉圭"
+        },
+        {
+          "name": "Venezuela",
+          "nameZh": "委內瑞拉"
+        }
+      ]
+    },
+    {
+      "name": "Asia and the Middle East",
+      "nameZh": "亞洲與中東",
+      "countries": [
+        {
+          "name": "Afghanistan",
+          "nameZh": "阿富汗"
+        },
+        {
+          "name": "Armenia",
+          "nameZh": "亞美尼亞"
+        },
+        {
+          "name": "Azerbaijan",
+          "nameZh": "亞塞拜然"
+        },
+        {
+          "name": "Bahrain",
+          "nameZh": "巴林"
+        },
+        {
+          "name": "Bangladesh",
+          "nameZh": "孟加拉"
+        },
+        {
+          "name": "Bhutan",
+          "nameZh": "不丹"
+        },
+        {
+          "name": "Brunei",
+          "nameZh": "汶萊"
+        },
+        {
+          "name": "Cambodia",
+          "nameZh": "柬埔寨"
+        },
+        {
+          "name": "India",
+          "nameZh": "印度"
+        },
+        {
+          "name": "Indonesia",
+          "nameZh": "印尼"
+        },
+        {
+          "name": "Iran",
+          "nameZh": "伊朗"
+        },
+        {
+          "name": "Iraq",
+          "nameZh": "伊拉克"
+        },
+        {
+          "name": "Israel",
+          "nameZh": "以色列"
+        },
+        {
+          "name": "Jordan",
+          "nameZh": "約旦"
+        },
+        {
+          "name": "Kazakhstan",
+          "nameZh": "哈薩克"
+        },
+        {
+          "name": "Kuwait",
+          "nameZh": "科威特"
+        },
+        {
+          "name": "Kyrgyzstan",
+          "nameZh": "吉爾吉斯"
+        },
+        {
+          "name": "Laos",
+          "nameZh": "寮國"
+        },
+        {
+          "name": "Lebanon",
+          "nameZh": "黎巴嫩"
+        },
+        {
+          "name": "Maldives",
+          "nameZh": "馬爾地夫"
+        },
+        {
+          "name": "Mongolia",
+          "nameZh": "蒙古"
+        },
+        {
+          "name": "Myanmar",
+          "nameZh": "緬甸"
+        },
+        {
+          "name": "Nepal",
+          "nameZh": "尼泊爾"
+        },
+        {
+          "name": "North Korea",
+          "nameZh": "北韓"
+        },
+        {
+          "name": "Oman",
+          "nameZh": "阿曼"
+        },
+        {
+          "name": "Pakistan",
+          "nameZh": "巴基斯坦"
+        },
+        {
+          "name": "Saudi Arabia",
+          "nameZh": "沙烏地阿拉伯",
+          "note": "The MICHELIN Guide arrived in 2025, covering Riyadh, Jeddah and AlUla, with Bib Gourmands and recommended restaurants but no stars yet.",
+          "noteZh": "米其林指南於 2025 年進駐，涵蓋利雅德、吉達與歐拉，目前有必比登推介與入選餐廳，但尚未頒發星級。"
+        },
+        {
+          "name": "Sri Lanka",
+          "nameZh": "斯里蘭卡"
+        },
+        {
+          "name": "Syria",
+          "nameZh": "敘利亞"
+        },
+        {
+          "name": "Tajikistan",
+          "nameZh": "塔吉克"
+        },
+        {
+          "name": "Timor-Leste",
+          "nameZh": "東帝汶"
+        },
+        {
+          "name": "Turkmenistan",
+          "nameZh": "土庫曼"
+        },
+        {
+          "name": "Uzbekistan",
+          "nameZh": "烏茲別克"
+        },
+        {
+          "name": "Yemen",
+          "nameZh": "葉門"
+        }
+      ]
+    },
+    {
+      "name": "Europe",
+      "nameZh": "歐洲",
+      "countries": [
+        {
+          "name": "Albania",
+          "nameZh": "阿爾巴尼亞"
+        },
+        {
+          "name": "Belarus",
+          "nameZh": "白俄羅斯"
+        },
+        {
+          "name": "Bosnia and Herzegovina",
+          "nameZh": "波士尼亞與赫塞哥維納"
+        },
+        {
+          "name": "Bulgaria",
+          "nameZh": "保加利亞"
+        },
+        {
+          "name": "Cyprus",
+          "nameZh": "賽普勒斯"
+        },
+        {
+          "name": "Georgia",
+          "nameZh": "喬治亞"
+        },
+        {
+          "name": "Moldova",
+          "nameZh": "摩爾多瓦"
+        },
+        {
+          "name": "Montenegro",
+          "nameZh": "蒙特內哥羅"
+        },
+        {
+          "name": "North Macedonia",
+          "nameZh": "北馬其頓"
+        },
+        {
+          "name": "Romania",
+          "nameZh": "羅馬尼亞"
+        },
+        {
+          "name": "Russia",
+          "nameZh": "俄羅斯",
+          "note": "Moscow had starred restaurants from 2021, but Michelin suspended its Russian guide in 2022 after the invasion of Ukraine.",
+          "noteZh": "莫斯科自 2021 年起有星級餐廳，但米其林在 2022 年俄羅斯入侵烏克蘭後暫停了俄羅斯版指南。"
+        },
+        {
+          "name": "San Marino",
+          "nameZh": "聖馬利諾"
+        },
+        {
+          "name": "Slovakia",
+          "nameZh": "斯洛伐克"
+        },
+        {
+          "name": "Ukraine",
+          "nameZh": "烏克蘭"
+        }
+      ]
+    },
+    {
+      "name": "Oceania",
+      "nameZh": "大洋洲",
+      "countries": [
+        {
+          "name": "Australia",
+          "nameZh": "澳洲",
+          "note": "Michelin has never published a guide here; Australian restaurants are rated with chef's hats by local guides instead.",
+          "noteZh": "米其林從未在澳洲出版指南；當地餐廳改由本地指南以「廚師帽」評級。"
+        },
+        {
+          "name": "Fiji",
+          "nameZh": "斐濟"
+        },
+        {
+          "name": "Kiribati",
+          "nameZh": "吉里巴斯"
+        },
+        {
+          "name": "Marshall Islands",
+          "nameZh": "馬紹爾群島"
+        },
+        {
+          "name": "Micronesia",
+          "nameZh": "密克羅尼西亞"
+        },
+        {
+          "name": "Nauru",
+          "nameZh": "諾魯"
+        },
+        {
+          "name": "Palau",
+          "nameZh": "帛琉"
+        },
+        {
+          "name": "Papua New Guinea",
+          "nameZh": "巴布亞紐幾內亞"
+        },
+        {
+          "name": "Samoa",
+          "nameZh": "薩摩亞"
+        },
+        {
+          "name": "Solomon Islands",
+          "nameZh": "索羅門群島"
+        },
+        {
+          "name": "Tonga",
+          "nameZh": "東加"
+        },
+        {
+          "name": "Tuvalu",
+          "nameZh": "吐瓦魯"
+        },
+        {
+          "name": "Vanuatu",
+          "nameZh": "萬那杜"
+        }
+      ]
+    }
+  ]
+}

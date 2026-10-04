@@ -1,0 +1,23 @@
+{
+  "name": "Jano Bistro",
+  "city": "wellington",
+  "area": "Te Aro",
+  "areaZh": "蒂阿羅",
+  "address": "270 Willis Street, Te Aro, Wellington 6011",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "cuisineZh": "時尚法國菜",
+  "rating": 4.9,
+  "reviews": 201,
+  "dinner": 160,
+  "dinnerType": "menu",
+  "dinnerNote": "Jano Experience, 6 courses plus extras",
+  "dinnerNoteZh": "「Jano Experience」6 道另加小點",
+  "wine": 80,
+  "sourceType": "press",
+  "source": "https://www.wellingtonnz.com/visit/eat-and-drink/jano-bistro",
+  "website": "https://www.janobistro.co.nz/",
+  "lat": -41.29465,
+  "lng": 174.77145,
+  "placeId": "ChIJWQdQpSewOG0RRH-hkjrhyMs"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "auckland",
+  "type": "city",
+  "parent": "new-zealand",
+  "name": "Auckland",
+  "nameZh": "奧克蘭",
+  "intro": "Includes Waiheke Island. Prices are in New Zealand dollars (NZ$), with a switch to see them in pounds, euros or US dollars, and include 15% GST. Prices checked October 2026.",
+  "introZh": "包括懷赫基島。價格以紐西蘭元（NZ$）標示，也可切換為英鎊、歐元或美元，已含 15% 商品及服務稅。價格於 2026 年 10 月查核。"
+}

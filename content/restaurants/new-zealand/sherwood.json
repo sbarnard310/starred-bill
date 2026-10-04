@@ -1,0 +1,22 @@
+{
+  "name": "Sherwood",
+  "city": "queenstown",
+  "area": "Frankton Road",
+  "areaZh": "弗蘭克頓路",
+  "address": "554 Frankton Road, Queenstown 9300",
+  "stars": 1,
+  "cuisine": "New Zealand",
+  "cuisineZh": "紐西蘭菜",
+  "rating": 4.3,
+  "reviews": 1203,
+  "dinner": 120,
+  "dinnerType": "menu",
+  "dinnerNote": "‘Leave it to us’ set menu, 3 courses; also à la carte",
+  "dinnerNoteZh": "「Leave it to us」套餐 3 道；亦可單點",
+  "sourceType": "site",
+  "source": "https://www.sherwoodqueenstown.nz/restaurant/",
+  "website": "https://sherwoodqueenstown.nz/restaurant",
+  "lat": -45.023815,
+  "lng": 168.69736,
+  "placeId": "ChIJTZ5A_-Yd1akRW_1-6Xe9wEA"
+}

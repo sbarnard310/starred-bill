@@ -1,0 +1,23 @@
+{
+  "name": "Ahi.",
+  "city": "auckland",
+  "area": "Auckland CBD",
+  "areaZh": "奧克蘭市中心",
+  "address": "2F, Commercial Bay, 7 Queen Street, Auckland Central, Auckland 1010",
+  "stars": 1,
+  "cuisine": "New Zealand",
+  "cuisineZh": "紐西蘭菜",
+  "rating": 4.6,
+  "reviews": 1508,
+  "dinner": 165,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; also à la carte",
+  "dinnerNoteZh": "品嚐套餐；亦可單點",
+  "wine": 150,
+  "sourceType": "press",
+  "source": "https://restaurantguru.com/Ahi-Auckland",
+  "website": "https://ahirestaurant.co.nz/",
+  "lat": -36.843563,
+  "lng": 174.76645,
+  "placeId": "ChIJn3Evd2xHDW0RWNG-B0TrPxg"
+}

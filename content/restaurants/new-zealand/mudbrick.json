@@ -1,0 +1,22 @@
+{
+  "name": "Mudbrick",
+  "city": "auckland",
+  "area": "Oneroa, Waiheke Island",
+  "areaZh": "懷赫基島奧內羅阿",
+  "address": "126 Church Bay Road, Oneroa, Waiheke Island 1971",
+  "stars": 1,
+  "cuisine": "New Zealand",
+  "cuisineZh": "紐西蘭菜",
+  "rating": 4.5,
+  "reviews": 1567,
+  "dinner": 220,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 7 courses (5 courses $185)",
+  "dinnerNoteZh": "品嚐套餐 7 道（5 道 $185）",
+  "sourceType": "site",
+  "source": "https://mudbrick.co.nz/menus/",
+  "website": "https://www.mudbrick.co.nz/",
+  "lat": -36.792384,
+  "lng": 175.000192,
+  "placeId": "ChIJZYYC_LjLcm0R_RxEHIMZU44"
+}

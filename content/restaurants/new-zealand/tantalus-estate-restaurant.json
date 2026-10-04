@@ -1,0 +1,23 @@
+{
+  "name": "Tantalus Estate Restaurant",
+  "city": "auckland",
+  "area": "Onetangi, Waiheke Island",
+  "areaZh": "懷赫基島奧內坦吉",
+  "address": "Tantalus Estate, 70-72 Onetangi Road, Waiheke Island 1971",
+  "stars": 1,
+  "cuisine": "New Zealand",
+  "cuisineZh": "紐西蘭菜",
+  "rating": 4.6,
+  "reviews": 717,
+  "dinner": 225,
+  "dinnerType": "menu",
+  "dinnerNote": "The Island Journey, 7 courses (Estate Journey, 5 courses, $185)",
+  "dinnerNoteZh": "「The Island Journey」7 道（「Estate Journey」5 道 $185）",
+  "wine": 140,
+  "sourceType": "site",
+  "source": "https://tantalus.co.nz/restaurant/",
+  "website": "https://tantalus.co.nz/restaurant/",
+  "lat": -36.799618,
+  "lng": 175.068343,
+  "placeId": "ChIJN4M27_zIcm0RDkJHxmBp5Nc"
+}

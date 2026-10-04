@@ -1,0 +1,22 @@
+{
+  "name": "Kika",
+  "city": "new-zealand",
+  "area": "Wānaka, Otago",
+  "areaZh": "奧塔哥瓦納卡",
+  "address": "2 Dunmore Street, Wānaka 9305",
+  "stars": 1,
+  "cuisine": "New Zealand",
+  "cuisineZh": "紐西蘭菜",
+  "rating": 4.7,
+  "reviews": 1103,
+  "dinner": 115,
+  "dinnerType": "menu",
+  "dinnerNote": "‘Just feed me’ chef's selection; also sharing plates",
+  "dinnerNoteZh": "「Just feed me」主廚精選；亦有分享菜式",
+  "sourceType": "site",
+  "source": "https://kika.nz/wanaka-fine-dining-restaurant-menu/",
+  "website": "https://kika.nz/",
+  "lat": -44.695391,
+  "lng": 169.136435,
+  "placeId": "ChIJc5tNvEVP1akRRxaL5vyMLWY"
+}

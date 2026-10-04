@@ -1,0 +1,22 @@
+{
+  "name": "Essence",
+  "city": "queenstown",
+  "area": "Queenstown centre",
+  "areaZh": "皇后鎮市中心",
+  "address": "ROKI Collection, 2 Brunswick Street, Queenstown 9300",
+  "stars": 2,
+  "cuisine": "European Contemporary",
+  "cuisineZh": "時尚歐陸菜",
+  "rating": 4.8,
+  "reviews": 27,
+  "dinner": 450,
+  "dinnerType": "menu",
+  "dinnerNote": "The Journey, 8 courses (A Taste of Essence, 4 courses, $295)",
+  "dinnerNoteZh": "「The Journey」8 道（「A Taste of Essence」4 道 $295）",
+  "sourceType": "press",
+  "source": "https://www.1news.co.nz/2026/07/01/how-much-does-it-cost-to-eat-at-new-zealands-michelin-restaurants/",
+  "website": "https://roki-collection.com/dine/essence/",
+  "lat": -45.0341,
+  "lng": 168.655069,
+  "placeId": "ChIJb6PDkGcd1akRdpE232oDeXI"
+}

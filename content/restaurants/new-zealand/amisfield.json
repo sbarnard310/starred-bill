@@ -1,0 +1,22 @@
+{
+  "name": "Amisfield",
+  "city": "queenstown",
+  "area": "Lake Hayes",
+  "areaZh": "海斯湖",
+  "address": "10 Arrowtown-Lake Hayes Road, Queenstown 9371",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "cuisineZh": "創新菜",
+  "rating": 4,
+  "reviews": 737,
+  "dinner": 440,
+  "dinnerType": "menu",
+  "dinnerNote": "Amisfield menu (longer Chef's menu $695)",
+  "dinnerNoteZh": "「Amisfield」套餐（較長的主廚套餐 $695）",
+  "sourceType": "press",
+  "source": "https://www.supertastermel.com/2025/02/new-zealand-queenstown-amisfield.html",
+  "website": "https://amisfield.co.nz/",
+  "lat": -44.986688,
+  "lng": 168.816031,
+  "placeId": "ChIJQw4OaFgf1akRsNbxrHgfmpU"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "new-zealand",
+  "type": "country",
+  "name": "New Zealand",
+  "nameZh": "紐西蘭",
+  "currency": "NZD",
+  "intro": "Prices are in New Zealand dollars (NZ$), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026 and include 15% GST; service isn't added to the bill.",
+  "introZh": "價格以紐西蘭元（NZ$）標示，也可切換為英鎊、歐元或美元。價格於 2026 年 10 月查核，已含 15% 商品及服務稅（GST），帳單亦不另加服務費。",
+  "serviceText": "Every figure is for one guest. New Zealand menu prices include 15% GST and no service charge is added, so these are the full prices before drinks; tipping isn't expected. Some restaurants add a surcharge on public holidays. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格。紐西蘭的套餐價格已含 15% 商品及服務稅，且不另收服務費，即不含飲品的全額；當地沒有給小費的習慣。部分餐廳在公眾假期加收附加費。以其他幣別顯示的價格依當日匯率換算，僅供參考。",
+  "sourcesText": "Dinner is the restaurant's main tasting or set menu; where a restaurant is mainly à la carte, the price is a typical main course. Wine is the wine pairing for that menu where one is offered. Prices come from each restaurant's own website where they're published, otherwise from recent reviews and news reports. Lunch is shown where we found a lunch menu.",
+  "sourcesTextZh": "晚餐以餐廳的主要品嚐或固定套餐為準；以單點為主的餐廳，則列出一般主菜價格。如有餐酒搭配，則列出該套餐的葡萄酒搭配價格。有公布價格的，以餐廳官網為準；否則參考近期評論與新聞報導。找到午間套餐的餐廳會列出午餐價格。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the first MICHELIN Guide New Zealand, announced in June 2026, so there are no earlier star changes to show yet.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 6 月公布的首版《米其林指南紐西蘭》，因此尚無先前的星級變動可顯示。"
+}

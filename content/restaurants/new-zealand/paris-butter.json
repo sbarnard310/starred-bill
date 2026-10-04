@@ -1,0 +1,23 @@
+{
+  "name": "Paris Butter",
+  "city": "auckland",
+  "area": "Herne Bay",
+  "areaZh": "赫恩灣",
+  "address": "166 Jervois Road, Herne Bay, Auckland 1011",
+  "stars": 1,
+  "cuisine": "New Zealand",
+  "cuisineZh": "紐西蘭菜",
+  "rating": 4.8,
+  "reviews": 522,
+  "dinner": 240,
+  "dinnerType": "menu",
+  "dinnerNote": "Evolution menu, 8 courses (Menu du Chef, 7 courses, $155)",
+  "dinnerNoteZh": "「Evolution」套餐 8 道（「Menu du Chef」7 道 $155）",
+  "wine": 210,
+  "sourceType": "press",
+  "source": "https://theluxeologist.com/paris-butter-auckland-review/",
+  "website": "https://parisbutter.co.nz/",
+  "lat": -36.845463,
+  "lng": 174.73701,
+  "placeId": "ChIJDwwNeYRHDW0R6CVXXf7s9sc"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Ortega",
+  "city": "wellington",
+  "area": "Mount Victoria",
+  "areaZh": "維多利亞山",
+  "address": "16 Majoribanks Street, Mount Victoria, Wellington 6011",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "cuisineZh": "魚類及海鮮",
+  "rating": 4.8,
+  "reviews": 1362,
+  "dinner": 50,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains about $47–$53 (set menus $95–$130)",
+  "dinnerNoteZh": "單點；主菜約 $47–$53（套餐 $95–$130）",
+  "sourceType": "press",
+  "source": "https://www.1news.co.nz/2026/07/01/how-much-does-it-cost-to-eat-at-new-zealands-michelin-restaurants/",
+  "website": "https://www.ortega.co.nz/",
+  "lat": -41.294361,
+  "lng": 174.784833,
+  "placeId": "ChIJE4mZQcWvOG0RbL9fNoW-Ccw"
+}

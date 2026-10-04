@@ -1,0 +1,22 @@
+{
+  "name": "Logan Brown",
+  "city": "wellington",
+  "area": "Te Aro",
+  "areaZh": "蒂阿羅",
+  "address": "192 Cuba Street, Te Aro, Wellington 6011",
+  "stars": 1,
+  "cuisine": "New Zealand",
+  "cuisineZh": "紐西蘭菜",
+  "rating": 4.6,
+  "reviews": 913,
+  "dinner": 120,
+  "dinnerType": "menu",
+  "dinnerNote": "Set menu: entrée, main and dessert with sides (early Bistro menu from $75)",
+  "dinnerNoteZh": "套餐：前菜、主菜與甜點連配菜（提早入座的 Bistro 套餐 $75 起）",
+  "sourceType": "site",
+  "source": "https://www.loganbrown.co.nz/group-set-menu",
+  "website": "https://www.loganbrown.co.nz/",
+  "lat": -41.294868,
+  "lng": 174.774671,
+  "placeId": "ChIJGYqIZ9ivOG0RCtH44thVAkQ"
+}

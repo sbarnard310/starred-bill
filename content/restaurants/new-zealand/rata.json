@@ -1,0 +1,22 @@
+{
+  "name": "Rātā",
+  "city": "queenstown",
+  "area": "Queenstown centre",
+  "areaZh": "皇后鎮市中心",
+  "address": "Te Nuku, 43 Ballarat Street, Queenstown 9348",
+  "stars": 1,
+  "cuisine": "New Zealand",
+  "cuisineZh": "紐西蘭菜",
+  "rating": 4.6,
+  "reviews": 455,
+  "dinner": 44,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains from $44 (cuts to share up to $140)",
+  "dinnerNoteZh": "單點；主菜 $44 起（分享肉排最高 $140）",
+  "sourceType": "press",
+  "source": "https://www.1news.co.nz/2026/07/01/how-much-does-it-cost-to-eat-at-new-zealands-michelin-restaurants/",
+  "website": "https://www.ratarestaurant.com/",
+  "lat": -45.031379,
+  "lng": 168.662637,
+  "placeId": "ChIJE9eUIk0d1akR9YDM21CnGMo"
+}

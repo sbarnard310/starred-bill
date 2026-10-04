@@ -50,6 +50,11 @@
       "code": "DKK",
       "symbol": "DKK ",
       "perUSD": 6.647039
+    },
+    {
+      "code": "NZD",
+      "symbol": "NZ$",
+      "perUSD": 1.781468
     }
   ]
 }

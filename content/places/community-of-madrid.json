@@ -3,5 +3,7 @@
   "type": "region",
   "parent": "spain",
   "name": "Community of Madrid",
-  "nameZh": "馬德里自治區"
+  "nameZh": "馬德里自治區",
+  "nameEs": "Comunidad de Madrid",
+  "inSentenceEs": "en la Comunidad de Madrid"
 }

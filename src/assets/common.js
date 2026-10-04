@@ -6,7 +6,7 @@
 const GOOGLE_MAPS_API_KEY = "AIzaSyA5AnpHOqFXxb6U3hDiXuAyQK2dIbZgLT4";
 const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 
-// ---------- Words (English, Traditional Chinese, French, Cantonese and Japanese) ----------
+// ---------- Words (English, Traditional Chinese, French, Cantonese, Japanese, Spanish and Italian) ----------
 // {place} is the page's place name and {placeIn} the same name as it reads mid-sentence ("the UK").
 // "one|many" picks the singular when {n} is 1.
 const I18N = {
@@ -600,6 +600,222 @@ const I18N = {
     infoNoPricesYet: "当サイトの料金はまだありません", infoMichelin: "ミシュランガイド", legendHollow: "白抜き＝料金未掲載",
     installApp: "アプリを追加",
     installTipIos: "追加方法：Safariの共有ボタン（矢印付きの四角）をタップし、「ホーム画面に追加」を選んでください。"
+  },
+  es: {
+    navCompare: "Comparar", navMap: "Mapa", navStars: "Por estrellas", navMethod: "Método", navContact: "Contacto", navDestinations: "Destinos", wishlist: "Favoritos",
+    pageTitle: "The Starred Bill · {place}",
+    heroEyebrow: "{place} · Restaurantes de la Guía Michelin",
+    heroTitle: "¿Cuánto <em>cuesta</em> una estrella Michelin {placeIn}?",
+    heroText: "Precios por persona de la cena, el almuerzo y el maridaje en los restaurantes con estrella {placeIn}, uno al lado del otro. Busca por nombre o tipo de cocina, filtra por estrellas o cocina y guarda en tus favoritos los que quieras probar.",
+    crumbHome: "Todos los destinos", explore: "Explorar", exploreCities: "Ciudades – {country}", exploreDistricts: "Barrios – {country}", alsoIn: "También en",
+    figCount: "Restaurantes", figMin: "Menú de cena más barato", figMax: "Menú de cena más caro", figMinLunch: "Menú de almuerzo más barato", figMaxLunch: "Menú de almuerzo más caro",
+    fMeal: "Servicio", mealDinner: "Cena", mealLunch: "Almuerzo", hNotesLunch: "Notas del almuerzo", noLunch: "No abre a mediodía", avgLunch: "almuerzo medio", infoLunch: "almuerzo",
+    sortPriceAscLunch: "Almuerzo: de menor a mayor precio", sortPriceDescLunch: "Almuerzo: de mayor a menor precio",
+    starCounts: "{3} con tres estrellas · {2} con dos · {1} con una",
+    compareTitle: "Cada mesa, cada precio",
+    compareText: "Cambia entre cena y almuerzo aquí abajo. Los precios son del menú degustación o del menú cerrado, salvo los marcados “por plato principal” o “gasto habitual”, y las barras comparan cada menú con el más caro de la lista. Cada precio enlaza a su fuente.",
+    searchPh: "Busca un restaurante, una cocina o una zona", searchPhEx: "Busca un restaurante, una cocina o una zona, p. ej. “{ex}”",
+    searchLabel: "Buscar restaurantes por nombre, cocina o zona",
+    sortLabel: "Ordenar restaurantes",
+    sortPriceAsc: "Cena: de menor a mayor precio", sortPriceDesc: "Cena: de mayor a menor precio", sortStars: "Más estrellas primero", sortRating: "Nota de Google: de mayor a menor", sortName: "Nombre de la A a la Z",
+    fShow: "Mostrar", fStars: "Estrellas Michelin", fCuisine: "Cocina",
+    showAll: "Todos los restaurantes", showChanges: "Cambios recientes de estrellas", showWish: "Mis favoritos",
+    showChangesTitle: "Ganaron o perdieron una estrella en una de las dos últimas Guías Michelin",
+    all: "Todas", starsAria: "{n} estrella Michelin|{n} estrellas Michelin",
+    hRestaurant: "Restaurante", hCuisine: "Cocina", hStars: "Estrellas", hGoogle: "Google", hNotes: "Notas de la cena", hPrice: "Precio", hWine: "Maridaje", hWish: "Favoritos",
+    tableLabel: "Precios de los restaurantes",
+    reviews: "{n} reseña|{n} reseñas", ratingAria: "Nota de Google: {r} sobre 5",
+    srcSite: "Web del restaurante", srcPress: "Fuente: reseña", srcTitle: "De dónde sale este precio",
+    perMain: "por plato principal", typicalSpend: "gasto habitual", notListed: "No publicado",
+    findOnMaps: "Buscar {name} en Google Maps", findOnMapsTitle: "Buscar en Google Maps",
+    showOnly: "Mostrar solo {cat}",
+    chgNew: "Nuevo", chgTitle: "{note} en la Guía Michelin de {date}",
+    emptyWish: "Ninguno de tus restaurantes guardados está {placeIn}. Toca el corazón de cualquier restaurante para guardarlo.",
+    emptyPlace: "Ahora mismo no hay ningún restaurante con estrella Michelin {placeIn}, pero actualizaremos esta página en cuanto aparezca uno.",
+    emptySee: "Ver el restaurante con estrella de {name}|Ver los {n} restaurantes con estrella de {name}", exploreAll: "Todas las zonas",
+    noMatch: "Ningún restaurante coincide con estos filtros.", clearFilters: "Borrar búsqueda y filtros",
+    formerTitle: "Ya sin estrella",
+    formerNote: "Restaurantes que estaban en la edición anterior de esta lista pero que desde entonces han perdido sus estrellas, han cerrado o han cambiado. Se muestran solo como referencia.",
+    formerly: "antes", stLost: "Perdió la estrella", stClosed: "Cerrado", stChanged: "Cambió",
+    showing: "Mostrando {a} de {b} restaurantes con estrella", showingFormer: ", más {c} ya sin estrella",
+    wishNote: "Tus favoritos se guardan solo en este navegador.",
+    wishAdd: "Añadir {name} a tus favoritos", wishRemove: "Quitar {name} de tus favoritos", wishAddT: "Añadir a favoritos", wishRemoveT: "Quitar de favoritos",
+    toastAdded: "{name} añadido a tus favoritos", toastRemoved: "{name} quitado de tus favoritos", undo: "Deshacer",
+    photo: "Foto", tempClosed: "Cerrado temporalmente (Google)",
+    mapTitle: "Todas las mesas con estrella en un mapa",
+    mapText: "Los marcadores siguen los filtros de la lista de arriba: elige un nivel de estrellas, una cocina o tus favoritos y el mapa se actualiza. Toca un marcador para ver el precio y cómo llegar.",
+    mapWait: "El mapa se carga al llegar aquí.", mapLabel: "Mapa de restaurantes con estrella Michelin",
+    mapError: "Ahora mismo no se ha podido cargar el mapa. El marcador junto a cada restaurante de la lista sigue abriéndolo en Google Maps.",
+    legendAria: "Qué significan los colores de los marcadores", colours: ["Morado", "Ámbar", "Verde"], legendItem: "{c} = {n} estrella Michelin|{c} = {n} estrellas Michelin",
+    mapShowing: "{n} restaurante en el mapa|{n} restaurantes en el mapa", mapNone: "Ningún restaurante coincide con los filtros actuales",
+    nearMe: "Cerca de mí", nearMeAria: "Mostrar restaurantes con estrella cerca de mi ubicación", nearFinding: "Buscando tu ubicación…", youAreHere: "Estás aquí",
+    nearTitle: "Los más cercanos", nearAway: "a {d}", nearWorld: "Ver restaurantes con estrella cerca de ti en el mapa mundial",
+    nearNone: "Ninguno de los restaurantes de esta página está cerca de ti. El más cercano es {name}, a {d}.",
+    nearDenied: "El acceso a la ubicación está desactivado. Permítelo para este sitio en los ajustes del navegador y vuelve a intentarlo.",
+    nearFailed: "No hemos podido encontrar tu ubicación. Vuelve a intentarlo.", nearUnsupported: "Este navegador no puede compartir tu ubicación.",
+    jumpMap: "Mapa", jumpMapAria: "Ir al mapa",
+    share: "Compartir", shareAria: "Compartir esta página", shareTitle: "Compartir esta página", shareCopy: "Copiar enlace", shareCopied: "Enlace copiado", shareEmail: "Correo",
+    accTitle: "Tu cuenta", accLoading: "Cargando tu cuenta…", accOutText: "Inicia sesión para ver tus favoritos y los restaurantes en los que has estado, en cualquier dispositivo. Es gratis.",
+    accSignedInAs: "Sesión iniciada como {email}", accStatBeen: "Visitados", accStatStars: "Estrellas acumuladas", accStatThree: "Restaurantes de tres estrellas", accStatCountries: "Países",
+    accMilestones: "Logros", ms1: "Primera estrella", ms2: "Primer tres estrellas", ms3: "10 restaurantes", ms4: "25 restaurantes", ms5: "3 países", ms6: "50 estrellas acumuladas", msGot: "(conseguido)",
+    accWhere: "Dónde has estado", accOf: "{n} de {total}", accBeenTitle: "He estado", accBeenEmpty: "Aún no has marcado ninguno. Toca el ✓ junto a cualquier restaurante en el que hayas estado.",
+    accDateAria: "Fecha en que fuiste a {name}", accRemove: "Quitar", accWishTitle: "Tus favoritos", accWishEmpty: "Tu lista de favoritos está vacía. Toca el corazón junto a cualquier restaurante para guardarlo.",
+    accMarkBeen: "He estado", accData: "Tus datos", accDataText: "Descarga todo lo que guardamos de tu cuenta, cierra sesión en este dispositivo o borra tu cuenta y las dos listas para siempre.",
+    accDownload: "Descargar mis datos", accSignOut: "Cerrar sesión", accDelete: "Borrar mi cuenta", accDeleteConfirm: "Esto borra tu cuenta y las dos listas para siempre. No se puede deshacer.",
+    accDeleteYes: "Borrar para siempre", accDeleteNo: "Mantener mi cuenta", accDeleted: "Tu cuenta se ha borrado.", accDeleteFail: "Ahora mismo no se ha podido borrar tu cuenta. Inténtalo de nuevo o usa el formulario de contacto.",
+    acctSignIn: "Iniciar sesión", acctAccount: "Cuenta", acctTitle: "Inicia sesión o crea una cuenta gratis",
+    acctWhy: "Guarda tus favoritos en todos tus dispositivos y marca los restaurantes en los que has estado.",
+    acctWhyBeen: "Crea una cuenta gratis para marcar los restaurantes en los que has estado. También guarda tus favoritos en todos tus dispositivos.",
+    acctGoogle: "Continuar con Google", acctOr: "o", acctEmailLabel: "Correo electrónico", acctSend: "Envíame un enlace para entrar", acctSending: "Enviando…",
+    acctSent: "Revisa tu correo. Hemos enviado un enlace de acceso a {email}. Ábrelo en este dispositivo para terminar de iniciar sesión.",
+    acctTooMany: "Demasiados correos de acceso seguidos. Espera un minuto y vuelve a intentarlo.", acctFailed: "No ha funcionado. Revisa el correo electrónico y vuelve a intentarlo.",
+    acctBadEmail: "Escribe un correo completo, p. ej. nombre@ejemplo.com.", acctSmall: "Gratis y sin contraseña que recordar. Solo usamos tu correo para que inicies sesión.",
+    acctPrivacy: "Aviso de privacidad", acctClose: "Cerrar", acctWelcome: "Has iniciado sesión. Tus favoritos ya te siguen a cualquier dispositivo.",
+    acctLinkExpired: "Ese enlace de acceso ha caducado o ya se ha usado. Toca Iniciar sesión para recibir uno nuevo.",
+    been: "He estado", beenAdd: "Marcar que he estado en {name}", beenRemove: "Quitar {name} de los visitados", beenAddT: "Marcar como visitado", beenRemoveT: "Quitar de visitados",
+    toastBeen: "{name} marcado como visitado", toastNotBeen: "{name} quitado de visitados", showBeen: "He estado",
+    beenProgress: "Has estado en {n} de los {total} de aquí.", wishNoteOut: "Tus favoritos se guardan solo en este dispositivo.", wishNoteSignIn: "Inicia sesión para tenerlos en todos tus dispositivos",
+    wishNoteIn: "Tus favoritos y los restaurantes visitados se guardan en tu cuenta.", wishCtaHome: "Tus favoritos se guardan solo en este dispositivo. Regístrate gratis para tenerlos en todos tus dispositivos y marcar los restaurantes en los que has estado.",
+    wishCtaBtn: "Regístrate gratis", wishSynced: "Guardado en tu cuenta.", acctSee: "Ver tu cuenta",
+    shareInsta: "Para Instagram, copia el enlace y pégalo en una historia o un mensaje.",
+    shareMore: "Instagram, Mensajes y más",
+    shareTextPlace: "Cuánto cuesta una estrella Michelin {placeIn}: precios de cena, almuerzo y maridaje, uno al lado del otro.",
+    shareTextHome: "Cuánto cuesta una estrella Michelin, ciudad a ciudad: precios de cena, almuerzo y maridaje, uno al lado del otro.",
+    infoDinner: "cena", infoWine: "vino", infoGoogle: "en Google", infoOpen: "Abrir en Google Maps", infoNoPrice: "Precio no publicado",
+    starsTitle: "Cuánto suma cada estrella",
+    starsText: "Precio medio del menú para el servicio elegido arriba, agrupado por estrellas Michelin. Los restaurantes a la carta se cuentan, pero no entran en las medias ni en los rangos.",
+    tierNames: ["Una estrella", "Dos estrellas", "Tres estrellas"], avgDinner: "cena media", tRestaurants: "Restaurantes", tRange: "Rango", tRating: "Nota media en Google",
+    tVs: "frente a {n} estrella|frente a {n} estrellas", tNoPrices: "No hay precios de menú para estos restaurantes.", tNone: "Ningún restaurante en la categoría {tier}.",
+    methodTitle: "Cómo se cuentan los precios",
+    m1Title: "Por persona, sin servicio",
+    m1Text: "Cada importe es para un comensal y no incluye el servicio, que varía de un país a otro. No se cuentan suplementos como caviar o trufa. Los precios mostrados en otra moneda usan el tipo de cambio del día y son aproximados.",
+    m2Title: "De dónde salen los precios",
+    m2Text: "La cena es el menú degustación principal, si lo hay, y el vino es su maridaje más barato. Tomamos los precios de la web de cada restaurante cuando los publica y, si no, de reseñas recientes y webs de reservas. El almuerzo es el menú del mediodía del restaurante, y la nota indica qué días se sirve.",
+    m3Title: "Estrellas y nota de Google",
+    m3Text: "La nota de Google sobre 5 y el número de reseñas, consultados en octubre de 2026. Las estrellas son las de la última Guía Michelin de cada país. Un ▲ verde marca un restaurante que ganó una estrella en una de las dos últimas guías; un ▼ rojo, uno que la perdió.",
+    contactTitle: "¿Has visto un cambio de precio?",
+    contactText: "Los menús cambian de precio a menudo. Cuéntanos una actualización, un restaurante que se nos haya escapado o una ciudad que te gustaría ver aquí.",
+    cName: "Nombre", cEmail: "Correo", cTopic: "Tema", cTopicPrice: "Cambio de precio", cTopicSuggest: "Sugerir un restaurante", cTopicCity: "Añadir otra ciudad", cTopicOther: "Otra cosa",
+    cMsg: "Mensaje", cMsgPh: "Dinos el restaurante, el nuevo precio y dónde lo viste.",
+    cSend: "Enviar mensaje", errName: "Escribe tu nombre.", errEmail: "Escribe un correo como nombre@ejemplo.com.", errMsg: "Escribe un mensaje corto.",
+    sent: "Gracias, {name}. Este formulario es una vista previa, así que todavía no se envían mensajes.",
+    footEdition: "The Starred Bill · {place}",
+    footNote: "Precios y notas consultados en octubre de 2026. Confirma con cada restaurante antes de reservar.",
+    rateLine: "Los precios en {sym} son aproximados, con el tipo de cambio del {date}: {sym}1 = {home}{rate}.",
+    rateLineMixed: "Los precios se convierten a {sym} con el tipo de cambio del {date}, así que son aproximados.",
+    currencyAria: "Mostrar precios en", crumbsAria: "Dónde estás",
+    wishTitle: "Tus favoritos",
+    clearSearch: "Borrar búsqueda", photoView: "Ver una foto más grande de {name}", photoClose: "Cerrar",
+    installApp: "Instalar app",
+    installTipIos: "Para instalarla: toca el botón Compartir (el cuadrado con una flecha) en Safari y elige “Añadir a pantalla de inicio”."
+  },
+  it: {
+    navCompare: "Confronta", navMap: "Mappa", navStars: "Per stelle", navMethod: "Metodo", navContact: "Contatti", navDestinations: "Destinazioni", wishlist: "Preferiti",
+    pageTitle: "The Starred Bill · {place}",
+    heroEyebrow: "{place} · Ristoranti della Guida Michelin",
+    heroTitle: "Quanto <em>costa</em> una stella Michelin {placeIn}?",
+    heroText: "I prezzi a persona di cena, pranzo e abbinamento vini nei ristoranti stellati {placeIn}, uno accanto all'altro. Cerca per nome o cucina, filtra per stelle o cucina e salva nei preferiti quelli che vuoi provare.",
+    crumbHome: "Tutte le destinazioni", explore: "Esplora", exploreCities: "Città – {country}", exploreDistricts: "Quartieri – {country}", alsoIn: "Anche in",
+    figCount: "Ristoranti", figMin: "Menu di cena più economico", figMax: "Menu di cena più caro", figMinLunch: "Menu di pranzo più economico", figMaxLunch: "Menu di pranzo più caro",
+    fMeal: "Pasto", mealDinner: "Cena", mealLunch: "Pranzo", hNotesLunch: "Note sul pranzo", noLunch: "Chiuso a pranzo", avgLunch: "pranzo medio", infoLunch: "pranzo",
+    sortPriceAscLunch: "Pranzo: dal meno caro", sortPriceDescLunch: "Pranzo: dal più caro",
+    starCounts: "{3} tre stelle · {2} due stelle · {1} una stella",
+    compareTitle: "Ogni tavola, ogni prezzo",
+    compareText: "Passa da cena a pranzo qui sotto. I prezzi sono quelli del menu degustazione o del menu fisso, salvo dove indicato “per piatto principale” o “spesa tipica”, e le barre confrontano ogni menu con il più caro della lista. Ogni prezzo rimanda alla sua fonte.",
+    searchPh: "Cerca un ristorante, una cucina o una zona", searchPhEx: "Cerca un ristorante, una cucina o una zona, ad es. “{ex}”",
+    searchLabel: "Cerca ristoranti per nome, cucina o zona",
+    sortLabel: "Ordina i ristoranti",
+    sortPriceAsc: "Cena: dal meno caro", sortPriceDesc: "Cena: dal più caro", sortStars: "Prima i più stellati", sortRating: "Voto Google: dal più alto", sortName: "Nome A–Z",
+    fShow: "Mostra", fStars: "Stelle Michelin", fCuisine: "Cucina",
+    showAll: "Tutti i ristoranti", showChanges: "Stelle cambiate di recente", showWish: "I miei preferiti",
+    showChangesTitle: "Hanno guadagnato o perso una stella in una delle ultime due Guide Michelin",
+    all: "Tutte", starsAria: "{n} stella Michelin|{n} stelle Michelin",
+    hRestaurant: "Ristorante", hCuisine: "Cucina", hStars: "Stelle", hGoogle: "Google", hNotes: "Note sulla cena", hPrice: "Prezzo", hWine: "Abbinamento vini", hWish: "Preferiti",
+    tableLabel: "Prezzi dei ristoranti",
+    reviews: "{n} recensione|{n} recensioni", ratingAria: "Voto Google {r} su 5",
+    srcSite: "Sito del ristorante", srcPress: "Fonte: recensione", srcTitle: "Da dove viene questo prezzo",
+    perMain: "per piatto principale", typicalSpend: "spesa tipica", notListed: "Non pubblicato",
+    findOnMaps: "Trova {name} su Google Maps", findOnMapsTitle: "Trova su Google Maps",
+    showOnly: "Mostra solo {cat}",
+    chgNew: "Nuovo", chgTitle: "{note} nella Guida Michelin di {date}",
+    emptyWish: "Nessuno dei tuoi ristoranti salvati si trova {placeIn}. Tocca il cuore di un ristorante per salvarlo.",
+    emptyPlace: "Al momento non ci sono ristoranti stellati Michelin {placeIn}, ma aggiorneremo questa pagina appena ne arriverà uno.",
+    emptySee: "Vedi il ristorante stellato di {name}|Vedi tutti i {n} ristoranti stellati di {name}", exploreAll: "Tutte le zone",
+    noMatch: "Nessun ristorante corrisponde a questi filtri.", clearFilters: "Cancella ricerca e filtri",
+    formerTitle: "Non più stellati",
+    formerNote: "Ristoranti presenti nell'edizione precedente di questa lista che da allora hanno perso le stelle, hanno chiuso o sono cambiati. Mostrati solo come riferimento.",
+    formerly: "in passato", stLost: "Stella persa", stClosed: "Chiuso", stChanged: "Cambiato",
+    showing: "{a} ristoranti stellati su {b}", showingFormer: ", più {c} non più stellati",
+    wishNote: "I tuoi preferiti sono salvati solo in questo browser.",
+    wishAdd: "Aggiungi {name} ai preferiti", wishRemove: "Togli {name} dai preferiti", wishAddT: "Aggiungi ai preferiti", wishRemoveT: "Togli dai preferiti",
+    toastAdded: "{name} aggiunto ai preferiti", toastRemoved: "{name} tolto dai preferiti", undo: "Annulla",
+    photo: "Foto", tempClosed: "Chiuso temporaneamente (Google)",
+    mapTitle: "Tutte le tavole stellate su una mappa",
+    mapText: "I segnaposto seguono i filtri della lista qui sopra: scegli un livello di stelle, una cucina o i tuoi preferiti e la mappa si aggiorna. Tocca un segnaposto per il prezzo e le indicazioni.",
+    mapWait: "La mappa si carica quando arrivi qui.", mapLabel: "Mappa dei ristoranti stellati Michelin",
+    mapError: "Al momento non è stato possibile caricare la mappa. Il segnaposto accanto a ogni ristorante della lista lo apre comunque in Google Maps.",
+    legendAria: "Cosa indicano i colori dei segnaposto", colours: ["Viola", "Ambra", "Verde"], legendItem: "{c} = {n} stella Michelin|{c} = {n} stelle Michelin",
+    mapShowing: "{n} ristorante sulla mappa|{n} ristoranti sulla mappa", mapNone: "Nessun ristorante corrisponde ai filtri attuali",
+    nearMe: "Vicino a me", nearMeAria: "Mostra i ristoranti stellati vicino alla mia posizione", nearFinding: "Cerco la tua posizione…", youAreHere: "Sei qui",
+    nearTitle: "I più vicini", nearAway: "a {d}", nearWorld: "Vedi i ristoranti stellati vicino a te sulla mappa del mondo",
+    nearNone: "Nessuno dei ristoranti di questa pagina è vicino a te. Il più vicino è {name}, a {d}.",
+    nearDenied: "L'accesso alla posizione è disattivato. Consentilo per questo sito nelle impostazioni del browser e riprova.",
+    nearFailed: "Non è stato possibile trovare la tua posizione. Riprova.", nearUnsupported: "Questo browser non può condividere la tua posizione.",
+    jumpMap: "Mappa", jumpMapAria: "Vai alla mappa",
+    share: "Condividi", shareAria: "Condividi questa pagina", shareTitle: "Condividi questa pagina", shareCopy: "Copia link", shareCopied: "Link copiato", shareEmail: "Email",
+    accTitle: "Il tuo account", accLoading: "Caricamento del tuo account…", accOutText: "Accedi per vedere i tuoi preferiti e i ristoranti in cui sei stato, su qualsiasi dispositivo. È gratis.",
+    accSignedInAs: "Accesso effettuato come {email}", accStatBeen: "Visitati", accStatStars: "Stelle collezionate", accStatThree: "Ristoranti tre stelle", accStatCountries: "Paesi",
+    accMilestones: "Traguardi", ms1: "Prima stella", ms2: "Primo tre stelle", ms3: "10 ristoranti", ms4: "25 ristoranti", ms5: "3 paesi", ms6: "50 stelle collezionate", msGot: "(raggiunto)",
+    accWhere: "Dove sei stato", accOf: "{n} su {total}", accBeenTitle: "Ci sono stato", accBeenEmpty: "Non hai ancora segnato nulla. Tocca la ✓ accanto a un ristorante in cui sei stato.",
+    accDateAria: "Data in cui sei andato da {name}", accRemove: "Togli", accWishTitle: "I tuoi preferiti", accWishEmpty: "I tuoi preferiti sono vuoti. Tocca il cuore accanto a un ristorante per salvarlo.",
+    accMarkBeen: "Ci sono stato", accData: "I tuoi dati", accDataText: "Scarica tutto ciò che conserviamo per il tuo account, esci da questo dispositivo o elimina per sempre l'account e le due liste.",
+    accDownload: "Scarica i miei dati", accSignOut: "Esci", accDelete: "Elimina il mio account", accDeleteConfirm: "Questo elimina per sempre il tuo account e le due liste. Non si può annullare.",
+    accDeleteYes: "Elimina per sempre", accDeleteNo: "Mantieni l'account", accDeleted: "Il tuo account è stato eliminato.", accDeleteFail: "Al momento non è stato possibile eliminare il tuo account. Riprova o usa il modulo di contatto.",
+    acctSignIn: "Accedi", acctAccount: "Account", acctTitle: "Accedi o crea un account gratuito",
+    acctWhy: "Tieni i tuoi preferiti su ogni dispositivo e segna i ristoranti in cui sei stato.",
+    acctWhyBeen: "Crea un account gratuito per segnare i ristoranti in cui sei stato. Così ritrovi i preferiti anche su ogni dispositivo.",
+    acctGoogle: "Continua con Google", acctOr: "oppure", acctEmailLabel: "Indirizzo email", acctSend: "Inviami un link di accesso", acctSending: "Invio in corso…",
+    acctSent: "Controlla la posta. Abbiamo inviato un link di accesso a {email}. Aprilo su questo dispositivo per completare l'accesso.",
+    acctTooMany: "Troppe email di accesso in poco tempo. Aspetta un minuto e riprova.", acctFailed: "Non ha funzionato. Controlla l'indirizzo email e riprova.",
+    acctBadEmail: "Inserisci un indirizzo email completo, ad es. nome@esempio.it.", acctSmall: "Gratis, e senza password da ricordare. Usiamo la tua email solo per farti accedere.",
+    acctPrivacy: "Informativa sulla privacy", acctClose: "Chiudi", acctWelcome: "Hai effettuato l'accesso. Ora i tuoi preferiti ti seguono su ogni dispositivo.",
+    acctLinkExpired: "Questo link di accesso è scaduto o è già stato usato. Tocca Accedi per riceverne uno nuovo.",
+    been: "Ci sono stato", beenAdd: "Segna che sei stato da {name}", beenRemove: "Togli {name} dai visitati", beenAddT: "Segna come visitato", beenRemoveT: "Togli dai visitati",
+    toastBeen: "{name} segnato come visitato", toastNotBeen: "{name} tolto dai visitati", showBeen: "Visitati",
+    beenProgress: "Sei stato in {n} dei {total} ristoranti di questa pagina.", wishNoteOut: "I tuoi preferiti sono salvati solo su questo dispositivo.", wishNoteSignIn: "Accedi per averli su ogni dispositivo",
+    wishNoteIn: "I tuoi preferiti e i ristoranti visitati sono salvati nel tuo account.", wishCtaHome: "I tuoi preferiti sono salvati solo su questo dispositivo. Registrati gratis per averli su ogni dispositivo e segnare i ristoranti in cui sei stato.",
+    wishCtaBtn: "Registrati gratis", wishSynced: "Salvato nel tuo account.", acctSee: "Vai al tuo account",
+    shareInsta: "Per Instagram, copia il link e incollalo in una storia o in un messaggio.",
+    shareMore: "Instagram, Messaggi e altro",
+    shareTextPlace: "Quanto costa una stella Michelin {placeIn}: prezzi di cena, pranzo e abbinamento vini a confronto.",
+    shareTextHome: "Quanto costa una stella Michelin, città per città: prezzi di cena, pranzo e abbinamento vini a confronto.",
+    infoDinner: "cena", infoWine: "vini", infoGoogle: "su Google", infoOpen: "Apri in Google Maps", infoNoPrice: "Prezzo non pubblicato",
+    starsTitle: "Quanto aggiunge ogni stella in più",
+    starsText: "Prezzo medio del menu per il pasto scelto sopra, raggruppato per stelle Michelin. I ristoranti à la carte sono contati ma esclusi dalle medie e dagli intervalli.",
+    tierNames: ["Una stella", "Due stelle", "Tre stelle"], avgDinner: "cena media", tRestaurants: "Ristoranti", tRange: "Intervallo", tRating: "Voto medio Google",
+    tVs: "rispetto a {n} stella|rispetto a {n} stelle", tNoPrices: "Nessun prezzo di menu per questi ristoranti.", tNone: "Nessun ristorante nella categoria {tier}.",
+    methodTitle: "Come contiamo i prezzi",
+    m1Title: "A persona, servizio escluso",
+    m1Text: "Ogni cifra è per un ospite ed esclude il servizio, che varia da paese a paese. Supplementi come caviale o tartufo non sono inclusi. I prezzi mostrati in un'altra valuta usano il cambio del giorno e sono approssimativi.",
+    m2Title: "Da dove vengono i prezzi",
+    m2Text: "La cena è il menu degustazione principale, se c'è, e i vini sono l'abbinamento più economico. Prendiamo i prezzi dal sito di ogni ristorante quando li pubblica, altrimenti da recensioni recenti e siti di prenotazione. Il pranzo è il menu di mezzogiorno del ristorante, e la nota indica in quali giorni è servito.",
+    m3Title: "Stelle e voto Google",
+    m3Text: "Il voto Google su 5 e il numero di recensioni, verificati a ottobre 2026. Le stelle sono quelle dell'ultima Guida Michelin di ogni paese. Un ▲ verde indica un ristorante che ha guadagnato una stella in una delle ultime due guide; un ▼ rosso, uno che l'ha persa.",
+    contactTitle: "Hai notato un cambio di prezzo?",
+    contactText: "I menu cambiano prezzo spesso. Segnalaci un aggiornamento, un ristorante che ci è sfuggito o una città che vorresti vedere qui.",
+    cName: "Nome", cEmail: "Email", cTopic: "Argomento", cTopicPrice: "Prezzo aggiornato", cTopicSuggest: "Suggerisci un ristorante", cTopicCity: "Aggiungi un'altra città", cTopicOther: "Altro",
+    cMsg: "Messaggio", cMsgPh: "Indicaci il ristorante, il nuovo prezzo e dove l'hai visto.",
+    cSend: "Invia messaggio", errName: "Inserisci il tuo nome.", errEmail: "Inserisci un indirizzo email come nome@esempio.it.", errMsg: "Scrivi un breve messaggio.",
+    sent: "Grazie, {name}. Questo è un modulo di anteprima, quindi i messaggi non vengono ancora inviati.",
+    footEdition: "The Starred Bill · {place}",
+    footNote: "Prezzi e voti verificati a ottobre 2026. Verifica con ogni ristorante prima di prenotare.",
+    rateLine: "I prezzi in {sym} sono approssimativi, con il cambio del {date}: {sym}1 = {home}{rate}.",
+    rateLineMixed: "I prezzi sono convertiti in {sym} con il cambio del {date}, quindi sono approssimativi.",
+    currencyAria: "Mostra i prezzi in", crumbsAria: "Dove ti trovi",
+    wishTitle: "I tuoi preferiti",
+    clearSearch: "Cancella ricerca", photoView: "Vedi una foto più grande di {name}", photoClose: "Chiudi",
+    installApp: "Installa l'app",
+    installTipIos: "Per installarla: in Safari tocca il pulsante Condividi (il quadrato con la freccia), poi scegli “Aggiungi alla schermata Home”."
   }
 };
 // Cuisine names in Chinese for restaurants whose data has no cuisineZh.
@@ -618,6 +834,23 @@ const CUISINE_FR = {
   "Fish and Seafood": "Poissons et fruits de mer", "Seafood": "Fruits de mer", "French": "Française", "Indian": "Indienne", "Korean": "Coréenne",
   "Thai": "Thaïlandaise", "Spanish": "Espagnole", "Vegan": "Végane", "Mediterranean Cuisine": "Cuisine méditerranéenne", "Steakhouse": "Grillades"
 };
+// Cuisine names in Spanish and Italian (Michelin's own labels where they exist).
+const CUISINE_ES = {
+  "Modern Cuisine": "Moderna", "Creative": "Creativa", "Contemporary": "Actual", "Classic Cuisine": "Clásica", "Traditional Cuisine": "Tradicional",
+  "Regional Cuisine": "Regional", "Fish and Seafood": "Pescados y mariscos", "Seafood": "Mariscos", "Japanese": "Japonesa", "Fusion": "Fusión",
+  "Grills": "Carnes a la parrilla", "Mexican": "Mexicana", "Colombian": "Colombiana", "Vegetarian": "Vegetariana", "Vegan": "Vegana", "Basque": "Vasca",
+  "Catalan": "Catalana", "Farm to table": "De la granja a la mesa", "Innovative": "Innovadora", "International": "Internacional", "World Cuisine": "Cocina del mundo",
+  "Italian": "Italiana", "French": "Francesa", "Spanish": "Española", "Mediterranean Cuisine": "Mediterránea", "Chinese": "China", "Korean": "Coreana",
+  "Indian": "India", "Thai": "Tailandesa", "Greek": "Griega", "Steakhouse": "Carnes"
+};
+const CUISINE_IT = {
+  "Modern Cuisine": "Moderna", "Creative": "Creativa", "Contemporary": "Contemporanea", "Classic Cuisine": "Classica", "Traditional Cuisine": "Tradizionale",
+  "Regional Cuisine": "Regionale", "Fish and Seafood": "Pesce e frutti di mare", "Seafood": "Frutti di mare", "Japanese": "Giapponese", "Fusion": "Fusion",
+  "Grills": "Carne alla griglia", "Mexican": "Messicana", "Vegetarian": "Vegetariana", "Vegan": "Vegana", "Farm to table": "Dal produttore alla tavola",
+  "Innovative": "Innovativa", "International": "Internazionale", "World Cuisine": "Cucina del mondo", "Italian": "Italiana", "Italian Contemporary": "Italiana contemporanea",
+  "French": "Francese", "Spanish": "Spagnola", "Mediterranean Cuisine": "Mediterranea", "Chinese": "Cinese", "Korean": "Coreana", "Indian": "Indiana", "Thai": "Thailandese",
+  "Market Cuisine": "Di mercato", "Country cooking": "Casalinga", "Roman": "Romana", "Lombardian": "Lombarda", "Tuscan": "Toscana", "Steakhouse": "Carne"
+};
 
 // ---------- Language and saved settings ----------
 // Each language: its switch label, the page's lang attribute, the suffix of translated data fields
@@ -627,7 +860,9 @@ const LANGS = {
   zh: { label: "中文", html: "zh-Hant-TW", suffixes: ["Zh"], locale: "zh-TW" },
   yue: { label: "廣東話", html: "zh-Hant-HK", suffixes: ["Yue", "Zh"], locale: "zh-HK" },
   fr: { label: "FR", html: "fr-FR", suffixes: ["Fr"], locale: "fr-FR" },
-  ja: { label: "日本語", html: "ja", suffixes: ["Ja"], locale: "ja-JP" }
+  ja: { label: "日本語", html: "ja", suffixes: ["Ja"], locale: "ja-JP" },
+  es: { label: "ES", html: "es-ES", suffixes: ["Es"], locale: "es-ES" },
+  it: { label: "IT", html: "it-IT", suffixes: ["It"], locale: "it-IT" }
 };
 const DATA = JSON.parse(document.getElementById("page-data").textContent);
 // The languages this page offers (Hong Kong adds Cantonese, France adds French, Japan adds Japanese).
@@ -640,7 +875,7 @@ const store = {
 const LANG_KEY = "starredbill-lang", WISHLIST_KEY = "starredbill-wishlist", PREFS_KEY = "starredbill-prefs";
 function browserLang() {
   const b = (navigator.language || "").toLowerCase();
-  return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : "en";
+  return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : b.startsWith("es") ? "es" : b.startsWith("it") ? "it" : "en";
 }
 // The visitor's choice, kept across pages even where it isn't offered.
 let LANG_PREF = LANGS[params.get("lang")] ? params.get("lang") : store.get(LANG_KEY, browserLang());
@@ -685,6 +920,8 @@ const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&":
 const zh = () => LANG === "zh" || LANG === "yue";
 const fr = () => LANG === "fr";
 const ja = () => LANG === "ja";
+const es = () => LANG === "es";
+const it = () => LANG === "it";
 // Chinese or Japanese: dates read 2025年9月 and names in brackets use full-width ones.
 const cjk = () => zh() || ja();
 const locale = () => LANGS[LANG].locale;
@@ -707,10 +944,13 @@ const nameOf = (r) => pick(r, "name");
 // otherwise the Japanese or Chinese name under the English one.
 const altNameOf = (r) => ja() ? (r.nameJa ? r.name : "") : zh() ? (r.nameZh ? r.name : r.nameJa || "") : (r.nameJa || r.nameZh || "");
 const altLangOf = (r) => altNameOf(r) === r.name ? "en" : altNameOf(r) === r.nameJa ? "ja" : "zh-Hant";
-const cuisineOf = (r) => zh() ? (r.cuisineZh || CUISINE_ZH[r.cuisine] || r.cuisine) : fr() ? (r.cuisineFr || CUISINE_FR[r.cuisine] || r.cuisine) : ja() ? (r.cuisineJa || r.cuisine) : r.cuisine;
+const cuisineOf = (r) => zh() ? (r.cuisineZh || CUISINE_ZH[r.cuisine] || r.cuisine) : fr() ? (r.cuisineFr || CUISINE_FR[r.cuisine] || r.cuisine) :
+  es() ? (r.cuisineEs || CUISINE_ES[r.cuisine] || r.cuisine) : it() ? (r.cuisineIt || CUISINE_IT[r.cuisine] || r.cuisine) : ja() ? (r.cuisineJa || r.cuisine) : r.cuisine;
 const withLang = (path) => path + "?lang=" + LANG_PREF;
 const MONTHS = { en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-  fr: ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."] };
+  fr: ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."],
+  es: ["ene.", "feb.", "mar.", "abr.", "may.", "jun.", "jul.", "ago.", "sept.", "oct.", "nov.", "dic."],
+  it: ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"] };
 const monthYear = (ym) => {
   const [y, m] = String(ym || "").split("-");
   if (!m) return y || "";
@@ -764,7 +1004,7 @@ function loadGoogle() {
   if (!mapsBoot) mapsBoot = new Promise((resolve, reject) => {
     window.__starredBillMaps = resolve;
     const s = document.createElement("script");
-    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
+    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja", es: "es", it: "it" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
     s.async = true;
     s.onerror = reject;
     document.head.appendChild(s);

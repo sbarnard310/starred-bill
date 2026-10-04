@@ -1,12 +1,12 @@
 # The Starred Bill
 
-Compare dinner, lunch and wine pairing prices at Michelin-starred restaurants, city by city, in English or Traditional Chinese (and Japanese for Japan).
+Compare dinner, lunch and wine pairing prices at Michelin-starred restaurants, city by city, in English, Traditional Chinese and each country's own language (French, Japanese, Spanish, Italian…).
 
 Live at https://starredbill.com
 
 - Homepage with a world map, destination cards, search and your wishlist: https://starredbill.com/
 - A page for every country, region and city, e.g. https://starredbill.com/uk/england/london/, https://starredbill.com/ireland/ or https://starredbill.com/taiwan/
-- Add `?lang=en` for English or `?lang=zh` for Chinese. Hong Kong and Macau also offer Cantonese (`?lang=yue`), France offers French (`?lang=fr`) and Japan offers Japanese (`?lang=ja`).
+- Add `?lang=en` for English or `?lang=zh` for Chinese. Hong Kong and Macau also offer Cantonese (`?lang=yue`), France offers French (`?lang=fr`), Japan Japanese (`?lang=ja`), Spain Spanish (`?lang=es`) and Italy Italian (`?lang=it`).
 
 ## How it fits together
 
@@ -42,7 +42,7 @@ Restaurants don't need a city page of their own: one outside the cities we cover
 
 Groups are for areas that overlap the main structure, such as "the Riviera" (France and Italy) or "Northern England". Every place gets a page. One with no starred restaurants yet says so and links up to the nearest place that has some (e.g. Dorset links to England), so it's ready for its first star.
 
-Optional `languages`, set on a country: the language buttons its pages offer (English and Chinese unless set; Hong Kong and Macau add Cantonese, France adds French, Japan adds Japanese). Any text field can have a `...Zh`, `...Yue` (Cantonese), `...Fr` or `...Ja` (Japanese) version; Cantonese falls back to the Chinese text.
+Optional `languages`, set on a country: the language buttons its pages offer (English and Chinese unless set). The rule is English, Chinese and the country's official language: Hong Kong and Macau add Cantonese, France French, Japan Japanese, Spain Spanish and Italy Italian. Any text field can have a `...Zh`, `...Yue` (Cantonese), `...Fr`, `...Ja` (Japanese), `...Es` (Spanish) or `...It` (Italian) version; Cantonese falls back to the Chinese text, and a missing translation falls back to English. French, Spanish and Italian place names also have `inSentenceFr`, `inSentenceEs` and `inSentenceIt`, the name with its preposition ("à Paris", "en el País Vasco", "nel Lazio"); Spanish defaults to "en" + the name, and Italian to "a" + a city or "in" + a country or region.
 
 Optional text, set on a country and used by everything inside it unless a region or city sets its own: `inSentence` (the name mid-sentence, e.g. "the UK"), `intro`, `serviceText`, `sourcesText`, `starsText`, each with a `...Zh` version for Chinese.
 

@@ -3,5 +3,7 @@
   "type": "region",
   "parent": "spain",
   "name": "Catalonia",
-  "nameZh": "加泰隆尼亞"
+  "nameZh": "加泰隆尼亞",
+  "nameEs": "Cataluña",
+  "inSentenceEs": "en Cataluña"
 }

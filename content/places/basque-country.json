@@ -3,5 +3,7 @@
   "type": "region",
   "parent": "spain",
   "name": "Basque Country",
-  "nameZh": "巴斯克自治區"
+  "nameZh": "巴斯克自治區",
+  "nameEs": "País Vasco",
+  "inSentenceEs": "en el País Vasco"
 }

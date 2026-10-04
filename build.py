@@ -22,8 +22,8 @@ CONTENT, SRC, OUT = ROOT / "content", ROOT / "src", ROOT / "_site"
 SITE_URL = "https://starredbill.com"
 PLACE_TYPES = ("country", "region", "city", "district", "group")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
-LANGUAGES = ("en", "zh", "yue", "fr", "ja")
-LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja")  # e.g. nameZh, introYue, dinnerNoteFr, areaJa
+LANGUAGES = ("en", "zh", "yue", "fr", "ja", "es", "it")
+LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja", "Es", "It")  # e.g. nameZh, introYue, dinnerNoteFr, areaJa, statusNoteEs
 DEFAULT_LANGUAGES = ["en", "zh"]
 PRICE_TYPES = ("menu", "main", "spend")
 STATUSES = ("lost", "closed", "changed")
@@ -202,7 +202,7 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
         "id": rid,
         "cur": country["currency"] if country else "USD",
         "country": country["id"] if country else None,
-        "cityName": city["name"], "cityNameZh": city.get("nameZh", ""), "cityNameJa": city.get("nameJa", ""),
+        "cityName": city["name"], **{"cityName" + sfx: city.get("name" + sfx, "") for sfx in LANG_SUFFIXES if sfx != "Yue"},
         "cityPath": city["path"], "cityType": city["type"],
         "_chain": chain(city["id"]),
     })
@@ -311,6 +311,16 @@ def inherited_name_fr(p):
     return p.get("inSentenceFr") or (f"à {p.get('nameFr') or p['name']}")
 
 
+def inherited_name_es(p):
+    """How the place reads in a Spanish sentence, e.g. "en Madrid" or "en el País Vasco"."""
+    return p.get("inSentenceEs") or f"en {p.get('nameEs') or p['name']}"
+
+
+def inherited_name_it(p):
+    """How the place reads in an Italian sentence: "a Roma" for a city, "in Toscana" for a country or region, unless set (e.g. "nel Lazio")."""
+    return p.get("inSentenceIt") or (("a " if p["type"] in ("city", "district") else "in ") + (p.get("nameIt") or p["name"]))
+
+
 def in_sentence(p):
     return p.get("inSentence") or p["name"]
 
@@ -356,11 +366,13 @@ def build_place(p):
         ([places[countries_of(p)[0]]] if len(countries_of(p)) == 1 else [])
     page = dict(names(p), **{
         "id": p["id"], "type": p["type"], "inSentence": in_sentence(p), "inSentenceFr": inherited_name_fr(p),
+        "inSentenceEs": inherited_name_es(p), "inSentenceIt": inherited_name_it(p),
         "path": p["path"], "currency": currency, "showCity": len({r["city"] for r in starred}) > 1,
         "crumbs": [dict(names(c), path=c["path"], n=starred_n[c["id"]]) for c in crumbs],
         "links": explore_links(p),
         "searchEx": search_example(starred, False), "searchExZh": search_example(starred, True),
         "searchExFr": search_example(starred, False, "areaFr"), "searchExJa": search_example(starred, False, "areaJa"),
+        "searchExEs": search_example(starred, False, "areaEs"), "searchExIt": search_example(starred, False, "areaIt"),
     })
     for field in PLACE_TEXTS:
         for suffix in ("",) + LANG_SUFFIXES:
@@ -511,8 +523,8 @@ def build_redirects():
 
 def build_account_pages():
     """The account page (/account/) and the privacy notice (/privacy/). Signing in and the lists run in the browser (account.js)."""
-    keep = ("id", "name", "nameZh", "nameJa", "stars", "formerStars", "status", "area", "areaZh", "areaJa",
-            "cityName", "cityNameZh", "cityNameJa", "cityPath", "country", "cur", "dinner", "dinnerType")
+    keep = ("id", "name", "nameZh", "nameJa", "stars", "formerStars", "status", "area", "areaZh", "areaJa", "areaEs", "areaIt",
+            "cityName", "cityNameZh", "cityNameJa", "cityNameEs", "cityNameIt", "cityPath", "country", "cur", "dinner", "dinnerType")
     data = {
         "restaurants": [dict({k: r[k] for k in keep if r.get(k) not in (None, "")}, chain=r["_chain"]) for r in restaurants],
         "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] != "group" and starred_n[q["id"]])],

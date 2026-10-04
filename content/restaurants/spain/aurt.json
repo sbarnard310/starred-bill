@@ -9,10 +9,12 @@
   "change": "down",
   "changeNote": "Lost its star",
   "changeNoteZh": "失去星級",
+  "changeNoteEs": "Perdió su estrella",
   "changeDate": "2025-11",
   "dinnerType": "menu",
   "status": "closed",
   "formerStars": 1,
   "statusNote": "Closed with its hotel in 2025 and left out of the November 2025 guide",
-  "statusNoteZh": "2025 年隨酒店歇業，未列入 2025 年 11 月指南"
+  "statusNoteZh": "2025 年隨酒店歇業，未列入 2025 年 11 月指南",
+  "statusNoteEs": "Cerró con su hotel en 2025 y quedó fuera de la guía de noviembre de 2025"
 }

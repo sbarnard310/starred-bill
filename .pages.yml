@@ -58,6 +58,14 @@ content:
         label: Area in French
         description: Only for places offered in French, e.g. 8e arrondissement.
         type: string
+      - name: areaEs
+        label: Area in Spanish
+        description: Only for places offered in Spanish.
+        type: string
+      - name: areaIt
+        label: Area in Italian
+        description: Only for places offered in Italian.
+        type: string
       - name: areaJa
         label: Area in Japanese
         description: Only for places offered in Japanese, e.g. 港区西麻布.
@@ -108,6 +116,12 @@ content:
       - name: changeNoteFr
         label: Star change note in French
         type: string
+      - name: changeNoteEs
+        label: Star change note in Spanish
+        type: string
+      - name: changeNoteIt
+        label: Star change note in Italian
+        type: string
       - name: changeNoteJa
         label: Star change note in Japanese
         type: string
@@ -150,6 +164,12 @@ content:
         type: string
       - name: dinnerNoteFr
         label: Dinner note in French
+        type: string
+      - name: dinnerNoteEs
+        label: Dinner note in Spanish
+        type: string
+      - name: dinnerNoteIt
+        label: Dinner note in Italian
         type: string
       - name: dinnerNoteJa
         label: Dinner note in Japanese
@@ -197,6 +217,12 @@ content:
         type: string
       - name: lunchNoteFr
         label: Lunch note in French
+        type: string
+      - name: lunchNoteEs
+        label: Lunch note in Spanish
+        type: string
+      - name: lunchNoteIt
+        label: Lunch note in Italian
         type: string
       - name: lunchNoteJa
         label: Lunch note in Japanese
@@ -248,6 +274,12 @@ content:
         type: string
       - name: statusNoteFr
         label: Status note in French
+        type: string
+      - name: statusNoteEs
+        label: Status note in Spanish
+        type: string
+      - name: statusNoteIt
+        label: Status note in Italian
         type: string
       - name: statusNoteJa
         label: Status note in Japanese
@@ -319,12 +351,18 @@ content:
       - name: nameFr
         label: Name in French
         type: string
+      - name: nameEs
+        label: Name in Spanish
+        type: string
+      - name: nameIt
+        label: Name in Italian
+        type: string
       - name: nameJa
         label: Name in Japanese
         type: string
       - name: languages
         label: Languages offered
-        description: The language buttons on this page and the pages inside it. Leave empty for English and Chinese. Hong Kong and Macau add Cantonese; France adds French; Japan adds Japanese.
+        description: The language buttons on this page and the pages inside it. Leave empty for English and Chinese. Hong Kong and Macau add Cantonese; France adds French; Japan adds Japanese; Spain adds Spanish; Italy adds Italian.
         type: select
         options:
           multiple: true
@@ -334,6 +372,8 @@ content:
             - { value: yue, label: "廣東話 (Cantonese)" }
             - { value: fr, label: "Français (French)" }
             - { value: ja, label: "日本語 (Japanese)" }
+            - { value: es, label: "Español (Spanish)" }
+            - { value: it, label: "Italiano (Italian)" }
       - name: parent
         label: Inside (regions, cities and districts)
         description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom. A district sits inside a city, e.g. Manhattan inside New York.
@@ -371,6 +411,14 @@ content:
         label: Name mid-sentence in French
         description: With its preposition, e.g. "à Paris" or "en France".
         type: string
+      - name: inSentenceEs
+        label: Name mid-sentence in Spanish
+        description: With its preposition, e.g. "en Madrid" or "en el País Vasco".
+        type: string
+      - name: inSentenceIt
+        label: Name mid-sentence in Italian
+        description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
+        type: string
       - name: intro
         label: Introduction
         description: Extra sentence under the page title, e.g. which currency prices are in. Regions and cities use their country's unless they have their own.
@@ -383,6 +431,12 @@ content:
         type: text
       - name: introFr
         label: "Introduction (French)"
+        type: text
+      - name: introEs
+        label: "Introduction (Spanish)"
+        type: text
+      - name: introIt
+        label: "Introduction (Italian)"
         type: text
       - name: introJa
         label: "Introduction (Japanese)"
@@ -400,6 +454,12 @@ content:
       - name: serviceTextFr
         label: "Method: per person, before service (French)"
         type: text
+      - name: serviceTextEs
+        label: "Method: per person, before service (Spanish)"
+        type: text
+      - name: serviceTextIt
+        label: "Method: per person, before service (Italian)"
+        type: text
       - name: serviceTextJa
         label: "Method: per person, before service (Japanese)"
         type: text
@@ -414,6 +474,12 @@ content:
         type: text
       - name: sourcesTextFr
         label: "Method: where prices come from (French)"
+        type: text
+      - name: sourcesTextEs
+        label: "Method: where prices come from (Spanish)"
+        type: text
+      - name: sourcesTextIt
+        label: "Method: where prices come from (Italian)"
         type: text
       - name: sourcesTextJa
         label: "Method: where prices come from (Japanese)"
@@ -430,6 +496,12 @@ content:
         type: text
       - name: starsTextFr
         label: "Method: stars and Google rating (French)"
+        type: text
+      - name: starsTextEs
+        label: "Method: stars and Google rating (Spanish)"
+        type: text
+      - name: starsTextIt
+        label: "Method: stars and Google rating (Italian)"
         type: text
       - name: starsTextJa
         label: "Method: stars and Google rating (Japanese)"

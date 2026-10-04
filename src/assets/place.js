@@ -10,7 +10,8 @@ const FORMER = ALL_RESTAURANTS.filter((r) => r.status);
 const EMPTY = !RESTAURANTS.length;
 const PAGE_CURRENCIES = [...new Set(RESTAURANTS.map((r) => r.cur))];
 const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !== PAGE.currency));
-pageVars = () => ({ place: pick(PAGE, "name"), placeIn: cjk() ? pick(PAGE, "name") : fr() ? PAGE.inSentenceFr : PAGE.inSentence || PAGE.name });
+// French, Spanish and Italian names carry their preposition ("à Paris", "en España", "a Roma").
+pageVars = () => ({ place: pick(PAGE, "name"), placeIn: cjk() ? pick(PAGE, "name") : PAGE["inSentence" + (LANGS[LANG].suffixes[0] || "")] || PAGE.inSentence || PAGE.name });
 
 const state = { meal: "dinner", activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
   currency: PAGE.currency, rates: Object.fromEntries(Object.entries(DATA.currencies).map(([k, v]) => [k, v.perUSD])), rateDate: new Date(DATA.rateDate + "T12:00:00Z") };
@@ -51,7 +52,8 @@ const onWishlist = (r) => state.wishlist.includes(r.id);
 const onBeen = (r) => Object.prototype.hasOwnProperty.call(state.visited, r.id);
 const starMatch = (r) => !state.activeStars || r.stars === state.activeStars;
 const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOnly || !!r.change) && (!state.beenOnly || onBeen(r));
-const searchText = (r) => [r.name, r.nameZh, r.nameJa, r.cuisine, r.cuisineZh, r.cuisineJa, CUISINE_ZH[r.cuisine], r.area, r.areaZh, r.areaJa, r.cityName, r.cityNameZh, r.cityNameJa].filter(Boolean).join(" ").toLowerCase();
+const searchText = (r) => [r.name, r.nameZh, r.nameJa, r.cuisine, r.cuisineZh, r.cuisineJa, CUISINE_ZH[r.cuisine], CUISINE_FR[r.cuisine], CUISINE_ES[r.cuisine], CUISINE_IT[r.cuisine],
+  r.area, r.areaZh, r.areaJa, r.areaEs, r.areaIt, r.cityName, r.cityNameZh, r.cityNameJa, r.cityNameEs, r.cityNameIt].filter(Boolean).join(" ").toLowerCase();
 const queryMatch = (r) => { const q = state.query.trim().toLowerCase(); return !q || searchText(r).includes(q); };
 const changeBadge = (r) => !r.change ? "" : '<span class="chg chg-' + (r.change === "down" ? "down" : "up") + '" title="' + esc(t("chgTitle", { note: pick(r, "changeNote"), date: monthYear(r.changeDate) })) + '">' + (r.change === "down" ? "▼ " : "▲ ") + (r.change === "new" ? t("chgNew") + " " : "") + monthYear(r.changeDate) + "</span>";
 

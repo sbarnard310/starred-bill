@@ -9,10 +9,12 @@
   "change": "down",
   "changeNote": "Lost its star",
   "changeNoteZh": "失去星級",
+  "changeNoteEs": "Perdió su estrella",
   "changeDate": "2024-11",
   "dinnerType": "menu",
   "status": "closed",
   "formerStars": 1,
   "statusNote": "Closed, and left out of the November 2024 guide",
-  "statusNoteZh": "已歇業，未列入 2024 年 11 月指南"
+  "statusNoteZh": "已歇業，未列入 2024 年 11 月指南",
+  "statusNoteEs": "Cerró y quedó fuera de la guía de noviembre de 2024"
 }

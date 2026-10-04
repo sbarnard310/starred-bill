@@ -346,7 +346,9 @@ def render(template, values):
     out = (SRC / template).read_text("utf-8")
     out = re.sub(r"\{\{asset:([\w.-]+)\}\}", lambda m: f"/assets/{m.group(1)}?v={assets[m.group(1)]}", out)
     # Link-preview picture: the page's own (src/og/<place id>.png, from scripts/og_images.py) or the homepage's.
-    values = dict({"ogImage": SITE_URL + "/og/default.png", "ogAlt": "The Starred Bill: what a Michelin star costs, city by city"}, **values, icons=ICONS)
+    values = dict({"ogImage": SITE_URL + "/og/default.png", "ogAlt": "The Starred Bill: what a Michelin star costs, city by city",
+                   "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@type": "WebSite", "name": "The Starred Bill", "url": SITE_URL + "/"}) + "</script>"},
+                  **values, icons=ICONS)
     out = re.sub(r"\{\{(\w+)\}\}", lambda m: values[m.group(1)], out)
     return out
 
@@ -407,7 +409,33 @@ def build_place(p):
                       if starred else f"There are currently no restaurants with a Michelin star in {where}, but we'll update this page as soon as one appears."),
         "crumbs": crumb_html, "explore": explore_html, "ledger": ledger, "data": as_json(data),
         "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}"),
+        "jsonld": json_ld(p, crumbs, starred, description),
     }))
+
+
+def json_ld(p, crumbs, starred, description):
+    """Structured data for search engines: the breadcrumb trail, and the starred restaurants as a list.
+    Google ratings are deliberately left out (Google doesn't allow ratings copied from elsewhere)."""
+    trail = [{"name": "All destinations", "path": "/"}] + [{"name": c["name"], "path": c["path"]} for c in crumbs] + [{"name": p["name"], "path": p["path"]}]
+    graph = [{"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i + 1, "name": c["name"], "item": SITE_URL + c["path"]} for i, c in enumerate(trail)]}]
+    if starred:
+        items = []
+        for i, r in enumerate(sorted(starred, key=lambda r: (-r["stars"], r["name"]))):
+            item = {"@type": "Restaurant", "name": r["name"], "servesCuisine": r.get("cuisine"),
+                    "award": f"{r['stars']} MICHELIN Star{'s' if r['stars'] > 1 else ''}"}
+            if r.get("address"):
+                item["address"] = r["address"]
+            if r.get("lat") is not None:
+                item["geo"] = {"@type": "GeoCoordinates", "latitude": r["lat"], "longitude": r["lng"]}
+            if r.get("website"):
+                item["url"] = r["website"]
+            if r.get("dinner") is not None and r.get("dinnerType") == "menu":
+                item["priceRange"] = f"Tasting menu {money(r['dinner'], r['cur'])}"
+            items.append({"@type": "ListItem", "position": i + 1, "item": {k: v for k, v in item.items() if v}})
+        graph.append({"@type": "ItemList", "name": f"Michelin-starred restaurants in {in_sentence(p)}", "description": description,
+                      "numberOfItems": len(items), "itemListElement": items})
+    return '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>"
 
 
 def og_image(p):

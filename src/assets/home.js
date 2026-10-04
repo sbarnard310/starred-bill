@@ -102,23 +102,42 @@ function destAreas(c) {
     ' <span class="count">' + c.cities.length + "</span></summary>" + group(t("destRegions"), regions) + group(t("destCityList"), cities) + "</details>";
 }
 // How the country cards are ordered: "az", "most" (starred restaurants), or 3 / 2 / 1 (most restaurants with that many stars).
-let destSort = "az";
+let destCont = "";  // the continent shown ("" for all)
+let destSort = "az", destDesc = true;  // destDesc: high to low (or A to Z); clicking the chosen button again flips it
 // A country's [one-star, two-star, three-star] counts in the whole MICHELIN Guide (our pages may cover only some cities),
 // falling back to our own restaurants.
 const starsByCountry = (c) => c.box ? c.stars : c.guide || [1, 2, 3].map((s) => ALL.filter((r) => r.country === c.id && r.stars === s).length);
 function renderDestSort() {
   const opts = [{ v: "az", label: t("destSortAZ") }, { v: "most", label: t("destSortMost") }]
     .concat([3, 2, 1].map((s) => ({ v: String(s), label: starIcons(s), aria: t("destSortStars", { n: s }) })));
-  $("destSort").innerHTML = opts.map((o) => '<button type="button" data-destsort="' + o.v + '" aria-pressed="' + (destSort === o.v) + '"' +
-    (o.aria ? ' aria-label="' + esc(o.aria) + '"' : "") + ">" + (o.aria ? o.label : esc(o.label)) + "</button>").join("");
+  const az = destDesc ? "A–Z" : "Z–A";
+  $("destSort").innerHTML = opts.map((o) => {
+    const on = destSort === o.v;
+    const latin = t("destSortAZ").includes("A–Z");
+    const label = o.v === "az" ? esc(t("destSortAZ").replace("A–Z", az)) : o.aria ? o.label : esc(o.label);
+    // The chosen sort shows its direction: ↓ high to low, ↑ low to high (A–Z / Z–A in letters where the label has them).
+    const arrow = on && !(o.v === "az" && latin) ? '<span class="sort-dir" aria-hidden="true">' + (destDesc ? "↓" : "↑") + "</span>" : "";
+    const aria = (o.aria || "") + (on && o.v !== "az" ? (o.aria ? " " : "") + "(" + t(destDesc ? "destHighLow" : "destLowHigh") + ")" : "");
+    return '<button type="button" data-destsort="' + o.v + '" aria-pressed="' + on + '"' + (aria ? ' aria-label="' + esc(o.aria ? aria : o.label + " " + aria) + '"' : "") +
+      (on ? ' title="' + esc(t("destFlip")) + '"' : "") + ">" + label + arrow + "</button>";
+  }).join("");
+}
+const CONTINENT_ORDER = ["europe", "asia", "middle-east", "americas", "oceania"];
+function renderDestCont(all) {
+  const conts = CONTINENT_ORDER.filter((k) => all.some((c) => c.continent === k));
+  $("destCont").innerHTML = [""].concat(conts).map((k) => '<button type="button" data-destcont="' + k + '" aria-pressed="' + (destCont === k) + '">' +
+    esc(k ? t("continents")[k] : t("all")) + '<span class="count">' + (k ? all.filter((c) => c.continent === k).length : all.length) + "</span></button>").join("");
 }
 function renderDestinations() {
   const coll = new Intl.Collator(locale());
-  const az = DATA.countries.concat(DATA.soon || []).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
+  const all = DATA.countries.concat(DATA.soon || []);
+  renderDestCont(all);
+  const az = all.filter((c) => !destCont || c.continent === destCont).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
   const total = (c) => starsByCountry(c).reduce((a, b) => a + b, 0);
   const key = destSort === "most" ? total : destSort === "az" ? null : (c) => starsByCountry(c)[Number(destSort) - 1];
   // Highest first; ties go to the country with more starred restaurants, then A–Z (the sort keeps the A–Z order).
-  const sorted = key ? az.slice().sort((a, b) => key(b) - key(a) || total(b) - total(a)) : az;
+  const dir = destDesc ? 1 : -1;
+  const sorted = key ? az.slice().sort((a, b) => dir * (key(b) - key(a) || total(b) - total(a))) : destDesc ? az : az.slice().reverse();
   renderDestSort();
   $("destGrid").innerHTML = sorted.map((c) => c.box ? soonCard(c) : destCard(c)).join("");
   renderDestJump(az);
@@ -264,10 +283,18 @@ function showBox(box) {
 }
 document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-destsort]");
-  if (!b || b.dataset.destsort === destSort) return;
-  destSort = b.dataset.destsort;
+  const cont = e.target.closest("[data-destcont]");
+  if (cont) {
+    destCont = cont.dataset.destcont;
+    renderDestinations();
+    track("dest-continent", { to: destCont || "all" });
+    return;
+  }
+  if (!b) return;
+  if (b.dataset.destsort === destSort) destDesc = !destDesc;
+  else { destSort = b.dataset.destsort; destDesc = true; }
   renderDestinations();
-  track("dest-sort", { by: destSort });
+  track("dest-sort", { by: destSort, order: destDesc ? "desc" : "asc" });
 });
 document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-map-box]");

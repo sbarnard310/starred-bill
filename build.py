@@ -517,6 +517,18 @@ WORLD_COUNTRIES = {
 }
 
 
+# Each country's continent, for the homepage's continent filter. A country missing here is listed by the build.
+CONTINENTS = {
+    "europe": "andorra austria belgium croatia czechia denmark estonia finland france germany greece hungary iceland ireland italy latvia "
+              "liechtenstein lithuania luxembourg malta monaco netherlands norway poland portugal serbia slovenia spain sweden switzerland turkiye uk",
+    "asia": "china hong-kong macau taiwan japan south-korea singapore malaysia thailand vietnam philippines",
+    "middle-east": "uae qatar saudi-arabia",
+    "americas": "usa canada mexico brazil argentina",
+    "oceania": "new-zealand",
+}
+CONTINENT_OF = {cid: k for k, v in CONTINENTS.items() for cid in v.split()}
+
+
 def world_countries():
     """The "Pick a country" cards for countries we have no page for yet (star counts and a box around their restaurants
     for the map), and the guide's star counts for the countries we do have, which may cover only some of their cities."""
@@ -534,7 +546,7 @@ def world_countries():
             unknown.add(country)
             continue
         cid, en, zh = WORLD_COUNTRIES[country]
-        c = out.setdefault(cid, {"id": cid, "name": en, "nameZh": zh, "stars": [0, 0, 0], "box": [lat, lng, lat, lng]})
+        c = out.setdefault(cid, {"id": cid, "name": en, "nameZh": zh, "continent": CONTINENT_OF.get(cid, ""), "stars": [0, 0, 0], "box": [lat, lng, lat, lng]})
         c["stars"][stars - 1] += 1
         c["box"] = [min(c["box"][0], lat), min(c["box"][1], lng), max(c["box"][2], lat), max(c["box"][3], lng)]
     if unknown:
@@ -567,8 +579,11 @@ def build_home():
             **names(c), "id": c["id"], "path": c["path"], "n": starred_n[c["id"]],
             "from": {"price": menus[0]["dinner"], "cur": menus[0]["cur"], "name": menus[0]["name"], "nameZh": menus[0].get("nameZh", "")} if menus else None,
             "cities": [dict(link(q), type=q["type"]) for q in cities],
-            "guide": guide.get(c["id"]),
+            "guide": guide.get(c["id"]), "continent": CONTINENT_OF.get(c["id"], ""),
         })
+    no_continent = sorted(c["name"] for c in countries + soon if not c["continent"])
+    if no_continent:
+        print("  Countries with no continent (add them to CONTINENTS in build.py):", ", ".join(no_continent))
     groups = [link(g) for g in by_size(g for g in pages if g["type"] == "group")]
     keep = ("id", "name", "nameZh", "nameJa", "stars", "cuisine", "cuisineZh", "lat", "lng", "dinner", "dinnerType", "cur", "rating",
             "country", "cityName", "cityNameZh", "cityPath")

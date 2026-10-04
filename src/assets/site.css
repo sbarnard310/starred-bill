@@ -341,6 +341,10 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
 .dest-soon { background: transparent; border-style: dashed; }
 #noStars { margin-top: 36px; }
 .dest-sort { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 0 0 14px; }
+.sort-dir { font-weight: 700; margin-left: 2px; }
+.dest-sort .seg { border: 0; background: none; border-radius: 0; overflow: visible; gap: 6px; }
+.dest-sort .seg button, .dest-sort .seg button + button { border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+.dest-sort .seg button[aria-pressed="true"] { background: var(--green); border-color: var(--green); }
 .dest-guide { font-size: .85rem; opacity: .85; }
 .dest-sort > span { color: var(--muted); font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
 .nostar-intro { color: var(--muted); max-width: 70ch; margin: 6px 0 16px; }

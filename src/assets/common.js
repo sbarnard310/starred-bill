@@ -12,7 +12,9 @@ const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 const I18N = {
   en: {
     destGuide: "In the whole MICHELIN Guide: {n}",
-    destSortLabel: "Sort", destSortAZ: "A–Z", destSortMost: "Most restaurants", destSortStars: "Most restaurants with {n} star|Most restaurants with {n} stars",
+    destHighLow: "high to low", destLowHigh: "low to high", destFlip: "Click again to reverse the order",
+    destContLabel: "Continent", continents: { "europe": "Europe", "asia": "Asia", "middle-east": "Middle East", "americas": "Americas", "oceania": "Oceania" },
+    destSortLabel: "Sort", destSortAZ: "A–Z", destSortMost: "Restaurants", destSortStars: "Restaurants with {n} star|Restaurants with {n} stars",
     noStarsTitle: "No Michelin stars yet", noStarsText: "These {n} countries have no Michelin-starred restaurant. For most, the reason is simply that the MICHELIN Guide doesn't cover them yet; where there's more to it (marked *), it's explained here.",
     destSoon: "No prices yet", destSoonMap: "See them on the map",
     destJump: "Jump to a country",
@@ -147,7 +149,9 @@ const I18N = {
   },
   zh: {
     destGuide: "米其林指南全國共 {n} 家",
-    destSortLabel: "排序", destSortAZ: "依名稱", destSortMost: "餐廳最多", destSortStars: "{n}星餐廳最多",
+    destHighLow: "由多到少", destLowHigh: "由少到多", destFlip: "再按一次可反轉順序",
+    destContLabel: "洲別", continents: { "europe": "歐洲", "asia": "亞洲", "middle-east": "中東", "americas": "美洲", "oceania": "大洋洲" },
+    destSortLabel: "排序", destSortAZ: "依名稱", destSortMost: "餐廳數", destSortStars: "{n}星餐廳數",
     noStarsTitle: "尚無米其林星級的國家", noStarsText: "以下 {n} 個國家目前沒有米其林星級餐廳。多數只是因為米其林指南尚未涵蓋；若另有原因（標示 *），說明如下。",
     destSoon: "尚無價格", destSoonMap: "在地圖上查看",
     destJump: "跳至國家或地區",
@@ -281,7 +285,9 @@ const I18N = {
   },
   fr: {
     destGuide: "Dans tout le Guide MICHELIN : {n}",
-    destSortLabel: "Trier", destSortAZ: "A–Z", destSortMost: "Le plus de restaurants", destSortStars: "Le plus de restaurants {n} étoile|Le plus de restaurants {n} étoiles",
+    destHighLow: "du plus au moins", destLowHigh: "du moins au plus", destFlip: "Cliquez à nouveau pour inverser l'ordre",
+    destContLabel: "Continent", continents: { "europe": "Europe", "asia": "Asie", "middle-east": "Moyen-Orient", "americas": "Amériques", "oceania": "Océanie" },
+    destSortLabel: "Trier", destSortAZ: "A–Z", destSortMost: "Restaurants", destSortStars: "Restaurants {n} étoile|Restaurants {n} étoiles",
     noStarsTitle: "Pas encore d'étoile Michelin", noStarsText: "Ces {n} pays n'ont aucun restaurant étoilé. Le plus souvent, le Guide MICHELIN ne les couvre tout simplement pas encore ; quand il y a une autre raison (marqué *), elle est expliquée ici.",
     destSoon: "Pas encore de prix", destSoonMap: "Les voir sur la carte",
     destJump: "Aller à un pays",
@@ -395,7 +401,9 @@ const I18N = {
   },
   yue: {
     destGuide: "米芝蓮指南全國共 {n} 間",
-    destSortLabel: "排序", destSortAZ: "按名稱", destSortMost: "餐廳最多", destSortStars: "{n}星餐廳最多",
+    destHighLow: "由多到少", destLowHigh: "由少到多", destFlip: "再㩒一次可以倒轉次序",
+    destContLabel: "洲份", continents: { "europe": "歐洲", "asia": "亞洲", "middle-east": "中東", "americas": "美洲", "oceania": "大洋洲" },
+    destSortLabel: "排序", destSortAZ: "按名稱", destSortMost: "餐廳數目", destSortStars: "{n}星餐廳數目",
     noStarsTitle: "未有米芝蓮星嘅國家", noStarsText: "以下 {n} 個國家暫時未有米芝蓮星級餐廳。大部分只係因為米芝蓮指南未有涵蓋；如果另有原因（標咗 *），會喺下面解釋。",
     destSoon: "未有價錢", destSoonMap: "喺地圖上睇",
     destJump: "跳去國家或地區",
@@ -509,7 +517,9 @@ const I18N = {
   },
   ja: {
     destGuide: "ミシュランガイド全体では{n}軒",
-    destSortLabel: "並べ替え", destSortAZ: "名前順", destSortMost: "店数が多い順", destSortStars: "{n}つ星が多い順",
+    destHighLow: "多い順", destLowHigh: "少ない順", destFlip: "もう一度押すと順序が逆になります",
+    destContLabel: "地域", continents: { "europe": "ヨーロッパ", "asia": "アジア", "middle-east": "中東", "americas": "南北アメリカ", "oceania": "オセアニア" },
+    destSortLabel: "並べ替え", destSortAZ: "名前順", destSortMost: "店数", destSortStars: "{n}つ星の店数",
     noStarsTitle: "ミシュランの星がまだない国", noStarsText: "以下の{n}か国には星付きレストランがありません。多くはミシュランガイドがまだ発行されていないためです。ほかの理由がある国（*印）はここで説明しています。",
     destSoon: "料金は未掲載", destSoonMap: "地図で見る",
     destJump: "国・地域へ移動",
@@ -643,7 +653,9 @@ const I18N = {
   },
   es: {
     destGuide: "En toda la Guía MICHELIN: {n}",
-    destSortLabel: "Ordenar", destSortAZ: "A–Z", destSortMost: "Más restaurantes", destSortStars: "Más restaurantes de {n} estrella|Más restaurantes de {n} estrellas",
+    destHighLow: "de más a menos", destLowHigh: "de menos a más", destFlip: "Vuelve a pulsar para invertir el orden",
+    destContLabel: "Continente", continents: { "europe": "Europa", "asia": "Asia", "middle-east": "Oriente Medio", "americas": "América", "oceania": "Oceanía" },
+    destSortLabel: "Ordenar", destSortAZ: "A–Z", destSortMost: "Restaurantes", destSortStars: "Restaurantes de {n} estrella|Restaurantes de {n} estrellas",
     noStarsTitle: "Aún sin estrellas Michelin", noStarsText: "Estos {n} países no tienen ningún restaurante con estrella. En la mayoría, la razón es que la Guía MICHELIN aún no los cubre; cuando hay algo más (marcado con *), se explica aquí.",
     destSoon: "Aún sin precios", destSoonMap: "Verlos en el mapa",
     destJump: "Ir a un país",
@@ -759,7 +771,9 @@ const I18N = {
   },
   ko: {
     destGuide: "미쉐린 가이드 전체: {n}곳",
-    destSortLabel: "정렬", destSortAZ: "가나다순", destSortMost: "레스토랑 많은 순", destSortStars: "{n}스타 많은 순",
+    destHighLow: "많은 순", destLowHigh: "적은 순", destFlip: "다시 누르면 순서가 바뀝니다",
+    destContLabel: "대륙", continents: { "europe": "유럽", "asia": "아시아", "middle-east": "중동", "americas": "아메리카", "oceania": "오세아니아" },
+    destSortLabel: "정렬", destSortAZ: "가나다순", destSortMost: "레스토랑 수", destSortStars: "{n}스타 레스토랑 수",
     noStarsTitle: "아직 미쉐린 스타가 없는 나라", noStarsText: "다음 {n}개국에는 미쉐린 스타 레스토랑이 없습니다. 대부분은 미쉐린 가이드가 아직 다루지 않기 때문이며, 다른 이유가 있는 곳(* 표시)은 여기서 설명합니다.",
     destSoon: "가격 준비 중", destSoonMap: "지도에서 보기",
     destJump: "국가·지역으로 이동",
@@ -893,7 +907,9 @@ const I18N = {
   },
   it: {
     destGuide: "In tutta la Guida MICHELIN: {n}",
-    destSortLabel: "Ordina", destSortAZ: "A–Z", destSortMost: "Più ristoranti", destSortStars: "Più ristoranti con {n} stella|Più ristoranti con {n} stelle",
+    destHighLow: "dal più al meno", destLowHigh: "dal meno al più", destFlip: "Clicca di nuovo per invertire l'ordine",
+    destContLabel: "Continente", continents: { "europe": "Europa", "asia": "Asia", "middle-east": "Medio Oriente", "americas": "Americhe", "oceania": "Oceania" },
+    destSortLabel: "Ordina", destSortAZ: "A–Z", destSortMost: "Ristoranti", destSortStars: "Ristoranti con {n} stella|Ristoranti con {n} stelle",
     noStarsTitle: "Ancora senza stelle Michelin", noStarsText: "Questi {n} paesi non hanno ristoranti stellati. Per lo più la Guida MICHELIN non li copre ancora; quando c'è un altro motivo (segnato con *), è spiegato qui.",
     destSoon: "Prezzi non ancora disponibili", destSoonMap: "Vedili sulla mappa",
     destJump: "Vai a un paese",

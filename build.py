@@ -518,26 +518,28 @@ WORLD_COUNTRIES = {
 
 
 def world_countries():
-    """The "Pick a country" cards for countries we have no page for yet: star counts and a box around their restaurants for the map."""
+    """The "Pick a country" cards for countries we have no page for yet (star counts and a box around their restaurants
+    for the map), and the guide's star counts for the countries we do have, which may cover only some of their cities."""
     rows = json.loads((CONTENT / "world-starred.json").read_text(encoding="utf-8"))["restaurants"]
-    ours = {p["id"] for p in pages if p["type"] == "country"} | {p["name"] for p in pages if p["type"] == "country"}
-    out, unknown = {}, set()
+    ours = {p["id"] for p in pages if p["type"] == "country"}
+    by_name = {p["name"]: p["id"] for p in pages if p["type"] == "country"}
+    out, guide, unknown = {}, {}, set()
     for name, stars, lat, lng, cuisine, where, path in rows:
         country = where.split(", ")[-1]
-        if country in ours:
+        cid = by_name.get(country) or WORLD_COUNTRIES.get(country, (None,))[0]
+        if cid in ours:
+            guide.setdefault(cid, [0, 0, 0])[stars - 1] += 1
             continue
         if country not in WORLD_COUNTRIES:
             unknown.add(country)
             continue
         cid, en, zh = WORLD_COUNTRIES[country]
-        if cid in ours:
-            continue
         c = out.setdefault(cid, {"id": cid, "name": en, "nameZh": zh, "stars": [0, 0, 0], "box": [lat, lng, lat, lng]})
         c["stars"][stars - 1] += 1
         c["box"] = [min(c["box"][0], lat), min(c["box"][1], lng), max(c["box"][2], lat), max(c["box"][3], lng)]
     if unknown:
         print("  Countries in world-starred.json missing from WORLD_COUNTRIES in build.py (left off the homepage):", ", ".join(sorted(unknown)))
-    return sorted(out.values(), key=lambda c: c["name"])
+    return sorted(out.values(), key=lambda c: c["name"]), guide
 
 
 def no_star_countries():
@@ -553,6 +555,7 @@ def no_star_countries():
 def build_home():
     starred = [r for r in restaurants if not r.get("status")]
     world_url, world_total = build_world(starred)
+    soon, guide = world_countries()
     countries = []
     for c in by_size(p for p in pages if p["type"] == "country"):
         mine = [r for r in starred if r["country"] == c["id"]]
@@ -564,6 +567,7 @@ def build_home():
             **names(c), "id": c["id"], "path": c["path"], "n": starred_n[c["id"]],
             "from": {"price": menus[0]["dinner"], "cur": menus[0]["cur"], "name": menus[0]["name"], "nameZh": menus[0].get("nameZh", "")} if menus else None,
             "cities": [dict(link(q), type=q["type"]) for q in cities],
+            "guide": guide.get(c["id"]),
         })
     groups = [link(g) for g in by_size(g for g in pages if g["type"] == "group")]
     keep = ("id", "name", "nameZh", "nameJa", "stars", "cuisine", "cuisineZh", "lat", "lng", "dinner", "dinnerType", "cur", "rating",
@@ -573,7 +577,7 @@ def build_home():
         "restaurants": [dict({k: r[k] for k in keep if r.get(k) is not None}, **({"town": r["area"].split(", ")[0]} if r["cityType"] != "city" and r.get("area") else {}))
                         for r in starred],
         "knownIds": [r["id"] for r in starred],
-        "countries": countries, "groups": groups, "soon": world_countries(), "noStars": no_star_countries(),
+        "countries": countries, "groups": groups, "soon": soon, "noStars": no_star_countries(),
         "places": [dict(link(p), type=p["type"]) for p in by_size(pages)],
         "currencies": CURRENCIES, "updated": site.get("updated", ""),
         "worldUrl": world_url, "worldTotal": world_total, "languages": DEFAULT_LANGUAGES,

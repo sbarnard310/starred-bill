@@ -340,6 +340,9 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
 .dest-open:hover { text-decoration: underline; text-underline-offset: 3px; }
 .dest-soon { background: transparent; border-style: dashed; }
 #noStars { margin-top: 36px; }
+.dest-sort { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 0 0 14px; }
+.dest-guide { font-size: .85rem; opacity: .85; }
+.dest-sort > span { color: var(--muted); font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
 .nostar-intro { color: var(--muted); max-width: 70ch; margin: 6px 0 16px; }
 .nostar-notes { display: grid; gap: 10px; margin-bottom: 18px; max-width: 80ch; }
 .nostar-notes p { font-size: .95rem; }

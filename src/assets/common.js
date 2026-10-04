@@ -11,6 +11,8 @@ const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 // "one|many" picks the singular when {n} is 1.
 const I18N = {
   en: {
+    destGuide: "In the whole MICHELIN Guide: {n}",
+    destSortLabel: "Sort", destSortAZ: "A–Z", destSortMost: "Most restaurants", destSortStars: "Most restaurants with {n} star|Most restaurants with {n} stars",
     noStarsTitle: "No Michelin stars yet", noStarsText: "These {n} countries have no Michelin-starred restaurant. For most, the reason is simply that the MICHELIN Guide doesn't cover them yet; where there's more to it (marked *), it's explained here.",
     destSoon: "No prices yet", destSoonMap: "See them on the map",
     destJump: "Jump to a country",
@@ -144,6 +146,8 @@ const I18N = {
     installTipIos: "To install: tap the Share button (the square with an arrow) in Safari, then choose “Add to Home Screen”."
   },
   zh: {
+    destGuide: "米其林指南全國共 {n} 家",
+    destSortLabel: "排序", destSortAZ: "依名稱", destSortMost: "餐廳最多", destSortStars: "{n}星餐廳最多",
     noStarsTitle: "尚無米其林星級的國家", noStarsText: "以下 {n} 個國家目前沒有米其林星級餐廳。多數只是因為米其林指南尚未涵蓋；若另有原因（標示 *），說明如下。",
     destSoon: "尚無價格", destSoonMap: "在地圖上查看",
     destJump: "跳至國家或地區",
@@ -276,6 +280,8 @@ const I18N = {
     mapSearchPh: "在地圖上搜尋餐廳、城市或國家", mapSearchLabel: "在地圖上搜尋餐廳、城市或國家"
   },
   fr: {
+    destGuide: "Dans tout le Guide MICHELIN : {n}",
+    destSortLabel: "Trier", destSortAZ: "A–Z", destSortMost: "Le plus de restaurants", destSortStars: "Le plus de restaurants {n} étoile|Le plus de restaurants {n} étoiles",
     noStarsTitle: "Pas encore d'étoile Michelin", noStarsText: "Ces {n} pays n'ont aucun restaurant étoilé. Le plus souvent, le Guide MICHELIN ne les couvre tout simplement pas encore ; quand il y a une autre raison (marqué *), elle est expliquée ici.",
     destSoon: "Pas encore de prix", destSoonMap: "Les voir sur la carte",
     destJump: "Aller à un pays",
@@ -388,6 +394,8 @@ const I18N = {
     clearSearch: "Effacer la recherche", photoView: "Agrandir la photo de {name}", photoClose: "Fermer"
   },
   yue: {
+    destGuide: "米芝蓮指南全國共 {n} 間",
+    destSortLabel: "排序", destSortAZ: "按名稱", destSortMost: "餐廳最多", destSortStars: "{n}星餐廳最多",
     noStarsTitle: "未有米芝蓮星嘅國家", noStarsText: "以下 {n} 個國家暫時未有米芝蓮星級餐廳。大部分只係因為米芝蓮指南未有涵蓋；如果另有原因（標咗 *），會喺下面解釋。",
     destSoon: "未有價錢", destSoonMap: "喺地圖上睇",
     destJump: "跳去國家或地區",
@@ -500,6 +508,8 @@ const I18N = {
     clearSearch: "清除搜尋", photoView: "睇{name}嘅大相", photoClose: "閂"
   },
   ja: {
+    destGuide: "ミシュランガイド全体では{n}軒",
+    destSortLabel: "並べ替え", destSortAZ: "名前順", destSortMost: "店数が多い順", destSortStars: "{n}つ星が多い順",
     noStarsTitle: "ミシュランの星がまだない国", noStarsText: "以下の{n}か国には星付きレストランがありません。多くはミシュランガイドがまだ発行されていないためです。ほかの理由がある国（*印）はここで説明しています。",
     destSoon: "料金は未掲載", destSoonMap: "地図で見る",
     destJump: "国・地域へ移動",
@@ -632,6 +642,8 @@ const I18N = {
     installTipIos: "追加方法：Safariの共有ボタン（矢印付きの四角）をタップし、「ホーム画面に追加」を選んでください。"
   },
   es: {
+    destGuide: "En toda la Guía MICHELIN: {n}",
+    destSortLabel: "Ordenar", destSortAZ: "A–Z", destSortMost: "Más restaurantes", destSortStars: "Más restaurantes de {n} estrella|Más restaurantes de {n} estrellas",
     noStarsTitle: "Aún sin estrellas Michelin", noStarsText: "Estos {n} países no tienen ningún restaurante con estrella. En la mayoría, la razón es que la Guía MICHELIN aún no los cubre; cuando hay algo más (marcado con *), se explica aquí.",
     destSoon: "Aún sin precios", destSoonMap: "Verlos en el mapa",
     destJump: "Ir a un país",
@@ -746,6 +758,8 @@ const I18N = {
     installTipIos: "Para instalarla: toca el botón Compartir (el cuadrado con una flecha) en Safari y elige “Añadir a pantalla de inicio”."
   },
   ko: {
+    destGuide: "미쉐린 가이드 전체: {n}곳",
+    destSortLabel: "정렬", destSortAZ: "가나다순", destSortMost: "레스토랑 많은 순", destSortStars: "{n}스타 많은 순",
     noStarsTitle: "아직 미쉐린 스타가 없는 나라", noStarsText: "다음 {n}개국에는 미쉐린 스타 레스토랑이 없습니다. 대부분은 미쉐린 가이드가 아직 다루지 않기 때문이며, 다른 이유가 있는 곳(* 표시)은 여기서 설명합니다.",
     destSoon: "가격 준비 중", destSoonMap: "지도에서 보기",
     destJump: "국가·지역으로 이동",
@@ -878,6 +892,8 @@ const I18N = {
     installTipIos: "추가 방법: Safari 공유 버튼(화살표가 있는 네모)을 누르고 ‘홈 화면에 추가’를 선택하세요."
   },
   it: {
+    destGuide: "In tutta la Guida MICHELIN: {n}",
+    destSortLabel: "Ordina", destSortAZ: "A–Z", destSortMost: "Più ristoranti", destSortStars: "Più ristoranti con {n} stella|Più ristoranti con {n} stelle",
     noStarsTitle: "Ancora senza stelle Michelin", noStarsText: "Questi {n} paesi non hanno ristoranti stellati. Per lo più la Guida MICHELIN non li copre ancora; quando c'è un altro motivo (segnato con *), è spiegato qui.",
     destSoon: "Prezzi non ancora disponibili", destSoonMap: "Vedili sulla mappa",
     destJump: "Vai a un paese",

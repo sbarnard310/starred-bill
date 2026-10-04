@@ -33,7 +33,9 @@ function renderFigures() {
 function destCard(c) {
   return '<article class="dest" id="dest-' + esc(c.id) + '">' +
     '<div class="dest-top"><h3><a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a></h3></div>" +
-    '<p class="dest-meta">' + esc(t("destRestaurants", { n: c.n })) + " · " + esc(starCountsOf(ALL.filter((r) => r.country === c.id))) + "</p>" +
+    '<p class="dest-meta">' + esc(t("destRestaurants", { n: c.n })) + " · " + esc(starCountsOf(ALL.filter((r) => r.country === c.id))) +
+    (c.guide && c.guide[0] + c.guide[1] + c.guide[2] > c.n ? '<br><span class="dest-guide">' + esc(t("destGuide", { n: c.guide[0] + c.guide[1] + c.guide[2] }) + " · " +
+      t("starCounts").replace("{3}", c.guide[2]).replace("{2}", c.guide[1]).replace("{1}", c.guide[0])) + "</span>" : "") + "</p>" +
     (c.from ? '<p class="dest-from">' + esc(t("destFrom", { p: localMoney(c.from.price, c.from.cur) })) + ' <span class="dest-from-name">' + esc(pick(c.from, "name")) + "</span></p>" : "") +
     (c.cities.length > 1 || (c.cities[0] && c.cities[0].path !== c.path) ? destAreas(c) : "") +
     '<a class="dest-open" href="' + withLang(c.path) + '">' + esc(t("destOpen", { place: pick(c, "name") })) + " →</a></article>";
@@ -99,11 +101,27 @@ function destAreas(c) {
   return '<details class="dest-more" data-country="' + esc(c.id) + '"' + (destOpen.has(c.id) ? " open" : "") + '><summary>' + esc(t(regions.length && cities.length ? "destAreas" : regions.length ? "destRegions" : "destCityList")) +
     ' <span class="count">' + c.cities.length + "</span></summary>" + group(t("destRegions"), regions) + group(t("destCityList"), cities) + "</details>";
 }
+// How the country cards are ordered: "az", "most" (starred restaurants), or 3 / 2 / 1 (most restaurants with that many stars).
+let destSort = "az";
+// A country's [one-star, two-star, three-star] counts in the whole MICHELIN Guide (our pages may cover only some cities),
+// falling back to our own restaurants.
+const starsByCountry = (c) => c.box ? c.stars : c.guide || [1, 2, 3].map((s) => ALL.filter((r) => r.country === c.id && r.stars === s).length);
+function renderDestSort() {
+  const opts = [{ v: "az", label: t("destSortAZ") }, { v: "most", label: t("destSortMost") }]
+    .concat([3, 2, 1].map((s) => ({ v: String(s), label: starIcons(s), aria: t("destSortStars", { n: s }) })));
+  $("destSort").innerHTML = opts.map((o) => '<button type="button" data-destsort="' + o.v + '" aria-pressed="' + (destSort === o.v) + '"' +
+    (o.aria ? ' aria-label="' + esc(o.aria) + '"' : "") + ">" + (o.aria ? o.label : esc(o.label)) + "</button>").join("");
+}
 function renderDestinations() {
   const coll = new Intl.Collator(locale());
-  const sorted = DATA.countries.concat(DATA.soon || []).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
+  const az = DATA.countries.concat(DATA.soon || []).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
+  const total = (c) => starsByCountry(c).reduce((a, b) => a + b, 0);
+  const key = destSort === "most" ? total : destSort === "az" ? null : (c) => starsByCountry(c)[Number(destSort) - 1];
+  // Highest first; ties go to the country with more starred restaurants, then A–Z (the sort keeps the A–Z order).
+  const sorted = key ? az.slice().sort((a, b) => key(b) - key(a) || total(b) - total(a)) : az;
+  renderDestSort();
   $("destGrid").innerHTML = sorted.map((c) => c.box ? soonCard(c) : destCard(c)).join("");
-  renderDestJump(sorted);
+  renderDestJump(az);
   renderNoStars();
   $("collections").innerHTML = !DATA.groups.length ? "" :
     '<h3 class="sub-head">' + t("collectionsTitle") + '</h3><div class="dest-cities">' + DATA.groups.map((g) =>
@@ -244,6 +262,13 @@ function showBox(box) {
   if (s === n && w === e) { world.map.setCenter({ lat: s, lng: w }); world.map.setZoom(13); }
   else world.map.fitBounds({ south: s, west: w, north: n, east: e }, 40);
 }
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-destsort]");
+  if (!b || b.dataset.destsort === destSort) return;
+  destSort = b.dataset.destsort;
+  renderDestinations();
+  track("dest-sort", { by: destSort });
+});
 document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-map-box]");
   if (!b) return;

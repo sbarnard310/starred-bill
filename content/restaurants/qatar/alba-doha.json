@@ -1,0 +1,23 @@
+{
+  "name": "Alba",
+  "city": "doha",
+  "area": "Lusail, Raffles Doha",
+  "areaZh": "盧賽爾，萊佛士酒店",
+  "address": "1st Floor, Katara Towers, Raffles Doha, Marina District, Lusail",
+  "stars": 1,
+  "cuisine": "Italian",
+  "cuisineZh": "義大利菜",
+  "rating": 4.8,
+  "reviews": 380,
+  "dinner": 700,
+  "dinnerType": "menu",
+  "dinnerNote": "Menu degustazione, 6 courses (4 courses QAR 480; chef's table QAR 850); dinner only, Tue–Sat",
+  "dinnerNoteZh": "品嚐套餐，六道菜（四道菜 QAR 480；主廚餐桌 QAR 850）；僅供晚餐，週二至週六",
+  "sourceType": "press",
+  "source": "https://marhaba.qa/monthly-hotel-happenings-raffles-doha/",
+  "noLunch": true,
+  "website": "https://www.raffles.com/doha/dining/alba/",
+  "lat": 25.3901706,
+  "lng": 51.5318587,
+  "placeId": "ChIJ0aOzocLDRT4RCBzFzR7GY6o"
+}

@@ -60,6 +60,11 @@
       "code": "KRW",
       "symbol": "₩",
       "perUSD": 1348.606131
+    },
+    {
+      "code": "QAR",
+      "symbol": "QAR",
+      "perUSD": 3.64
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "id": "qatar",
+  "type": "country",
+  "name": "Qatar",
+  "nameZh": "卡達",
+  "currency": "QAR",
+  "intro": "Prices are in Qatari riyals (QAR), with a switch to see them in pounds, euros or US dollars. Qatar has no VAT; all three starred restaurants sit in hotels or a museum, where a service charge may be added to the bill. Prices checked October 2026.",
+  "introZh": "價格以卡達里亞爾（QAR）標示，也可切換為英鎊、歐元或美元。卡達不徵收加值稅；三家星級餐廳都位於酒店或博物館內，帳單可能另加服務費。價格於 2026 年 10 月查核。",
+  "serviceText": "Every figure is for one guest, before any service charge. Qatar has no VAT, but hotel restaurants usually add a service charge on top of menu prices. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格，未含任何服務費。卡達不徵收加值稅，但酒店餐廳通常會在套餐價格之外加收服務費。以其他幣別顯示的價格依當日匯率換算，僅供參考。",
+  "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is the pairing offered with it. IDAM, in the Museum of Islamic Art, serves no alcohol, so its pairing is a drinks pairing. Prices come from each restaurant's own menus where they're published, otherwise from recent local reports. Lunch is shown where a lunch menu is served.",
+  "sourcesTextZh": "晚餐以餐廳的主要品嚐套餐為準，葡萄酒為該套餐的搭配。位於伊斯蘭藝術博物館內的 IDAM 不供應酒精，因此其搭配為飲品搭配。有公布價格的，以餐廳自己的菜單為準；否則參考近期當地報導。有午餐套餐的餐廳會列出午餐價格。",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the 2026 MICHELIN Guide Doha, Qatar's guide; its three one-star restaurants kept their stars from the first edition, so there are no star changes to show.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核。星級來自 2026 年版《米其林指南多哈》；三家一星餐廳均延續首版的星級，因此沒有星級變動可顯示。"
+}

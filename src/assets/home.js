@@ -38,6 +38,15 @@ function destCard(c) {
     (c.cities.length > 1 || (c.cities[0] && c.cities[0].path !== c.path) ? destAreas(c) : "") +
     '<a class="dest-open" href="' + withLang(c.path) + '">' + esc(t("destOpen", { place: pick(c, "name") })) + " →</a></article>";
 }
+// A country in the Michelin guide that has no page here yet: its star counts and a button that shows its restaurants on the map.
+function soonCard(c) {
+  const [one, two, three] = c.stars;
+  return '<article class="dest dest-soon" id="dest-' + esc(c.id) + '">' +
+    '<div class="dest-top"><h3>' + esc(pick(c, "name")) + '</h3><span class="dest-tag">' + esc(t("destSoon")) + "</span></div>" +
+    '<p class="dest-meta">' + esc(t("destRestaurants", { n: one + two + three })) + " · " +
+    esc(t("starCounts").replace("{3}", three).replace("{2}", two).replace("{1}", one)) + "</p>" +
+    '<button type="button" class="dest-open" data-map-box="' + c.box.join(",") + '">' + esc(t("destSoonMap")) + " →</button></article>";
+}
 // Quick jump to a country: A–Z letters (letters with no country are greyed out), or the country names
 // themselves in Chinese and Japanese, where names don't start with a letter.
 function renderDestJump(sorted) {
@@ -79,8 +88,8 @@ function destAreas(c) {
 }
 function renderDestinations() {
   const coll = new Intl.Collator(locale());
-  const sorted = DATA.countries.slice().sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
-  $("destGrid").innerHTML = sorted.map(destCard).join("");
+  const sorted = DATA.countries.concat(DATA.soon || []).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
+  $("destGrid").innerHTML = sorted.map((c) => c.box ? soonCard(c) : destCard(c)).join("");
   renderDestJump(sorted);
   $("collections").innerHTML = !DATA.groups.length ? "" :
     '<h3 class="sub-head">' + t("collectionsTitle") + '</h3><div class="dest-cities">' + DATA.groups.map((g) =>
@@ -168,6 +177,7 @@ async function initWorldMap() {
       });
     }
     updateWorldMap(true);
+    if (world.box) showBox(world.box);
     // "Near me" waits for the full world list, so it can include restaurants without prices yet.
     world.near = addNearMe(world.map, () => (world.loading || Promise.resolve()).catch(() => {}).then(() =>
       world.markers.filter((m) => !homeState.stars || m.stars === homeState.stars).map((m) => ({
@@ -213,6 +223,20 @@ function updateWorldMap(fit) {
     world.map.fitBounds(b, 40);
   }
 }
+// Frames a country's restaurants on the map: [south, west, north, east]. A single restaurant is shown up close.
+function showBox(box) {
+  world.box = null;
+  const [s, w, n, e] = box;
+  if (s === n && w === e) { world.map.setCenter({ lat: s, lng: w }); world.map.setZoom(13); }
+  else world.map.fitBounds({ south: s, west: w, north: n, east: e }, 40);
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-map-box]");
+  if (!b) return;
+  const box = b.dataset.mapBox.split(",").map(Number);
+  $("map").scrollIntoView({ block: "start", behavior: "smooth" });
+  if (world.map) showBox(box); else world.box = box;  // the map loads as it scrolls into view
+});
 // Opens a restaurant's card. From a search result the pin may still be inside a cluster, so the card is placed by position.
 function openCard(m, fromSearch) {
   world.info.setContent(m.r ? infoHtml(m.r) : worldInfoHtml(m.w));

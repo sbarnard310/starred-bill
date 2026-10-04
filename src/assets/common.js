@@ -11,6 +11,7 @@ const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 // "one|many" picks the singular when {n} is 1.
 const I18N = {
   en: {
+    destSoon: "No prices yet", destSoonMap: "See them on the map",
     destJump: "Jump to a country",
     notrackOn: "This browser is no longer counted in the visit statistics.", notrackOff: "This browser is counted in the visit statistics again.",
     destAreas: "Regions and cities", destRegions: "Regions", destCityList: "Cities",
@@ -142,6 +143,7 @@ const I18N = {
     installTipIos: "To install: tap the Share button (the square with an arrow) in Safari, then choose “Add to Home Screen”."
   },
   zh: {
+    destSoon: "尚無價格", destSoonMap: "在地圖上查看",
     destJump: "跳至國家或地區",
     notrackOn: "此瀏覽器已不再計入瀏覽統計。", notrackOff: "此瀏覽器已重新計入瀏覽統計。",
     destAreas: "地區與城市", destRegions: "地區", destCityList: "城市",
@@ -272,6 +274,7 @@ const I18N = {
     mapSearchPh: "在地圖上搜尋餐廳、城市或國家", mapSearchLabel: "在地圖上搜尋餐廳、城市或國家"
   },
   fr: {
+    destSoon: "Pas encore de prix", destSoonMap: "Les voir sur la carte",
     destJump: "Aller à un pays",
     notrackOn: "Ce navigateur n'est plus compté dans les statistiques de visite.", notrackOff: "Ce navigateur est de nouveau compté dans les statistiques de visite.",
     destAreas: "Régions et villes", destRegions: "Régions", destCityList: "Villes",
@@ -382,6 +385,7 @@ const I18N = {
     clearSearch: "Effacer la recherche", photoView: "Agrandir la photo de {name}", photoClose: "Fermer"
   },
   yue: {
+    destSoon: "未有價錢", destSoonMap: "喺地圖上睇",
     destJump: "跳去國家或地區",
     notrackOn: "呢個瀏覽器已經唔再計入瀏覽統計。", notrackOff: "呢個瀏覽器已經重新計入瀏覽統計。",
     destAreas: "地區同城市", destRegions: "地區", destCityList: "城市",
@@ -492,6 +496,7 @@ const I18N = {
     clearSearch: "清除搜尋", photoView: "睇{name}嘅大相", photoClose: "閂"
   },
   ja: {
+    destSoon: "料金は未掲載", destSoonMap: "地図で見る",
     destJump: "国・地域へ移動",
     notrackOn: "このブラウザはアクセス統計に含まれなくなりました。", notrackOff: "このブラウザは再びアクセス統計に含まれます。",
     destAreas: "地域と都市", destRegions: "地域", destCityList: "都市",
@@ -622,6 +627,7 @@ const I18N = {
     installTipIos: "追加方法：Safariの共有ボタン（矢印付きの四角）をタップし、「ホーム画面に追加」を選んでください。"
   },
   es: {
+    destSoon: "Aún sin precios", destSoonMap: "Verlos en el mapa",
     destJump: "Ir a un país",
     notrackOn: "Este navegador ya no se cuenta en las estadísticas de visitas.", notrackOff: "Este navegador vuelve a contarse en las estadísticas de visitas.",
     destAreas: "Regiones y ciudades", destRegions: "Regiones", destCityList: "Ciudades",
@@ -734,6 +740,7 @@ const I18N = {
     installTipIos: "Para instalarla: toca el botón Compartir (el cuadrado con una flecha) en Safari y elige “Añadir a pantalla de inicio”."
   },
   ko: {
+    destSoon: "가격 준비 중", destSoonMap: "지도에서 보기",
     destJump: "국가·지역으로 이동",
     notrackOn: "이 브라우저는 이제 방문 통계에서 제외됩니다.", notrackOff: "이 브라우저가 다시 방문 통계에 포함됩니다.",
     destAreas: "지역과 도시", destRegions: "지역", destCityList: "도시",
@@ -864,6 +871,7 @@ const I18N = {
     installTipIos: "추가 방법: Safari 공유 버튼(화살표가 있는 네모)을 누르고 ‘홈 화면에 추가’를 선택하세요."
   },
   it: {
+    destSoon: "Prezzi non ancora disponibili", destSoonMap: "Vedili sulla mappa",
     destJump: "Vai a un paese",
     notrackOn: "Questo browser non viene più conteggiato nelle statistiche delle visite.", notrackOff: "Questo browser viene di nuovo conteggiato nelle statistiche delle visite.",
     destAreas: "Regioni e città", destRegions: "Regioni", destCityList: "Città",

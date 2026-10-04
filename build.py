@@ -496,6 +496,50 @@ def build_world(starred):
     return f"/data/world.json?v={hashlib.sha1(body).hexdigest()[:10]}", len(rows)
 
 
+# Countries in the world list without a page of ours yet: the Michelin guide's name -> id, English and Chinese names.
+# Countries we already cover (USA, Hong Kong SAR…) are left out by their id matching one of our pages.
+WORLD_COUNTRIES = {
+    "Abu Dhabi": ("uae", "United Arab Emirates", "阿拉伯聯合大公國"), "Dubai": ("uae", "United Arab Emirates", "阿拉伯聯合大公國"),
+    "Andorra": ("andorra", "Andorra", "安道爾"), "Argentina": ("argentina", "Argentina", "阿根廷"), "Austria": ("austria", "Austria", "奧地利"),
+    "Belgium": ("belgium", "Belgium", "比利時"), "Brazil": ("brazil", "Brazil", "巴西"), "Canada": ("canada", "Canada", "加拿大"),
+    "Chinese Mainland": ("china", "Mainland China", "中國大陸"), "Croatia": ("croatia", "Croatia", "克羅埃西亞"), "Czechia": ("czechia", "Czechia", "捷克"),
+    "Estonia": ("estonia", "Estonia", "愛沙尼亞"), "Finland": ("finland", "Finland", "芬蘭"), "Germany": ("germany", "Germany", "德國"),
+    "Greece": ("greece", "Greece", "希臘"), "Hungary": ("hungary", "Hungary", "匈牙利"), "Iceland": ("iceland", "Iceland", "冰島"),
+    "Italy": ("italy", "Italy", "義大利"), "Latvia": ("latvia", "Latvia", "拉脫維亞"), "Liechtenstein": ("liechtenstein", "Liechtenstein", "列支敦斯登"),
+    "Lithuania": ("lithuania", "Lithuania", "立陶宛"), "Luxembourg": ("luxembourg", "Luxembourg", "盧森堡"), "Malaysia": ("malaysia", "Malaysia", "馬來西亞"),
+    "Malta": ("malta", "Malta", "馬爾他"), "Mexico": ("mexico", "Mexico", "墨西哥"), "Netherlands": ("netherlands", "Netherlands", "荷蘭"),
+    "Norway": ("norway", "Norway", "挪威"), "Poland": ("poland", "Poland", "波蘭"), "Portugal": ("portugal", "Portugal", "葡萄牙"),
+    "Qatar": ("qatar", "Qatar", "卡達"), "Serbia": ("serbia", "Serbia", "塞爾維亞"), "Slovenia": ("slovenia", "Slovenia", "斯洛維尼亞"),
+    "Sweden": ("sweden", "Sweden", "瑞典"), "Switzerland": ("switzerland", "Switzerland", "瑞士"), "Thailand": ("thailand", "Thailand", "泰國"),
+    "The Philippines": ("philippines", "Philippines", "菲律賓"), "Türkiye": ("turkiye", "Türkiye", "土耳其"), "Vietnam": ("vietnam", "Vietnam", "越南"),
+    "USA": ("usa", "", ""), "Hong Kong SAR": ("hong-kong", "", ""), "Macau SAR": ("macau", "", ""), "Taiwan Region": ("taiwan", "", ""),
+    "Principality of Monaco": ("monaco", "", ""),
+}
+
+
+def world_countries():
+    """The "Pick a country" cards for countries we have no page for yet: star counts and a box around their restaurants for the map."""
+    rows = json.loads((CONTENT / "world-starred.json").read_text(encoding="utf-8"))["restaurants"]
+    ours = {p["id"] for p in pages if p["type"] == "country"} | {p["name"] for p in pages if p["type"] == "country"}
+    out, unknown = {}, set()
+    for name, stars, lat, lng, cuisine, where, path in rows:
+        country = where.split(", ")[-1]
+        if country in ours:
+            continue
+        if country not in WORLD_COUNTRIES:
+            unknown.add(country)
+            continue
+        cid, en, zh = WORLD_COUNTRIES[country]
+        if cid in ours:
+            continue
+        c = out.setdefault(cid, {"id": cid, "name": en, "nameZh": zh, "stars": [0, 0, 0], "box": [lat, lng, lat, lng]})
+        c["stars"][stars - 1] += 1
+        c["box"] = [min(c["box"][0], lat), min(c["box"][1], lng), max(c["box"][2], lat), max(c["box"][3], lng)]
+    if unknown:
+        print("  Countries in world-starred.json missing from WORLD_COUNTRIES in build.py (left off the homepage):", ", ".join(sorted(unknown)))
+    return sorted(out.values(), key=lambda c: c["name"])
+
+
 def build_home():
     starred = [r for r in restaurants if not r.get("status")]
     world_url, world_total = build_world(starred)
@@ -519,7 +563,7 @@ def build_home():
         "restaurants": [dict({k: r[k] for k in keep if r.get(k) is not None}, **({"town": r["area"].split(", ")[0]} if r["cityType"] != "city" and r.get("area") else {}))
                         for r in starred],
         "knownIds": [r["id"] for r in starred],
-        "countries": countries, "groups": groups,
+        "countries": countries, "groups": groups, "soon": world_countries(),
         "places": [dict(link(p), type=p["type"]) for p in by_size(pages)],
         "currencies": CURRENCIES, "updated": site.get("updated", ""),
         "worldUrl": world_url, "worldTotal": world_total, "languages": DEFAULT_LANGUAGES,

@@ -11,6 +11,7 @@ const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 // "one|many" picks the singular when {n} is 1.
 const I18N = {
   en: {
+    destJump: "Jump to a country",
     notrackOn: "This browser is no longer counted in the visit statistics.", notrackOff: "This browser is counted in the visit statistics again.",
     destAreas: "Regions and cities", destRegions: "Regions", destCityList: "Cities",
     cookieText: "Can we use Google Analytics cookies to see how people use the site? Visits are counted without cookies either way.", cookieAccept: "Accept", cookieReject: "Reject", cookieSettings: "Change cookie choice",
@@ -126,7 +127,7 @@ const I18N = {
     homeSearchPh: "Find a restaurant, cuisine or city", homeSearchLabel: "Find a restaurant, cuisine or city", searchNone: "Nothing matches “{q}” yet.",
     mapHomeTitle: "Every Michelin-starred restaurant in the world",
     mapHomeText: "Zoom in to see individual restaurants. Tap a pin for the dinner price and a link to compare it with the rest of the city.",
-    destTitle: "Destinations", destText: "Each destination has its own page with prices, filters, a map and star-by-star averages.",
+    destTitle: "Pick a country", destText: "Each destination has its own page with prices, filters, a map and star-by-star averages.",
     destRestaurants: "{n} starred restaurant|{n} starred restaurants", destFrom: "Dinner menus from {p}", destOpen: "Compare {place}",
     collectionsTitle: "Collections",
     wishTitle: "Your wishlist", wishText: "Restaurants you've saved from any destination.",
@@ -141,6 +142,7 @@ const I18N = {
     installTipIos: "To install: tap the Share button (the square with an arrow) in Safari, then choose “Add to Home Screen”."
   },
   zh: {
+    destJump: "跳至國家或地區",
     notrackOn: "此瀏覽器已不再計入瀏覽統計。", notrackOff: "此瀏覽器已重新計入瀏覽統計。",
     destAreas: "地區與城市", destRegions: "地區", destCityList: "城市",
     cookieText: "我們可以使用 Google Analytics Cookie 來了解大家如何使用本網站嗎？無論你怎麼選，我們都只以不使用 Cookie 的方式計算瀏覽量。", cookieAccept: "接受", cookieReject: "拒絕", cookieSettings: "更改 Cookie 選擇",
@@ -255,7 +257,7 @@ const I18N = {
     homeSearchPh: "搜尋餐廳、料理或城市", homeSearchLabel: "搜尋餐廳、料理或城市", searchNone: "目前找不到「{q}」。",
     mapHomeTitle: "全球所有米其林星級餐廳",
     mapHomeText: "放大地圖即可看到個別餐廳。點選標記可查看晚餐價格，並連結到該城市的完整比較。",
-    destTitle: "目的地", destText: "每個目的地都有專屬頁面，提供價格、篩選、地圖與各星級平均。",
+    destTitle: "選擇國家或地區", destText: "每個目的地都有專屬頁面，提供價格、篩選、地圖與各星級平均。",
     destRestaurants: "{n} 家星級餐廳", destFrom: "晚餐套餐 {p} 起", destOpen: "比較{place}",
     collectionsTitle: "精選區域",
     wishTitle: "你的願望清單", wishText: "你在各目的地收藏的餐廳。",
@@ -270,6 +272,7 @@ const I18N = {
     mapSearchPh: "在地圖上搜尋餐廳、城市或國家", mapSearchLabel: "在地圖上搜尋餐廳、城市或國家"
   },
   fr: {
+    destJump: "Aller à un pays",
     notrackOn: "Ce navigateur n'est plus compté dans les statistiques de visite.", notrackOff: "Ce navigateur est de nouveau compté dans les statistiques de visite.",
     destAreas: "Régions et villes", destRegions: "Régions", destCityList: "Villes",
     cookieText: "Pouvons-nous utiliser les cookies de Google Analytics pour comprendre comment le site est utilisé ? Les visites sont comptées sans cookies dans tous les cas.", cookieAccept: "Accepter", cookieReject: "Refuser", cookieSettings: "Modifier mon choix de cookies",
@@ -379,6 +382,7 @@ const I18N = {
     clearSearch: "Effacer la recherche", photoView: "Agrandir la photo de {name}", photoClose: "Fermer"
   },
   yue: {
+    destJump: "跳去國家或地區",
     notrackOn: "呢個瀏覽器已經唔再計入瀏覽統計。", notrackOff: "呢個瀏覽器已經重新計入瀏覽統計。",
     destAreas: "地區同城市", destRegions: "地區", destCityList: "城市",
     cookieText: "我哋可唔可以用 Google Analytics Cookie 嚟了解大家點樣用呢個網站？無論你點揀，我哋都只會用唔使 Cookie 嘅方法計瀏覽量。", cookieAccept: "接受", cookieReject: "拒絕", cookieSettings: "更改 Cookie 選擇",
@@ -488,6 +492,7 @@ const I18N = {
     clearSearch: "清除搜尋", photoView: "睇{name}嘅大相", photoClose: "閂"
   },
   ja: {
+    destJump: "国・地域へ移動",
     notrackOn: "このブラウザはアクセス統計に含まれなくなりました。", notrackOff: "このブラウザは再びアクセス統計に含まれます。",
     destAreas: "地域と都市", destRegions: "地域", destCityList: "都市",
     cookieText: "サイトの利用状況を把握するため、Google アナリティクスの Cookie を使用してもよろしいですか？どちらを選んでも、アクセス数は Cookie を使わずに計測します。", cookieAccept: "同意する", cookieReject: "拒否する", cookieSettings: "Cookie の設定を変更",
@@ -602,7 +607,7 @@ const I18N = {
     homeSearchPh: "店名・料理・都市で検索", homeSearchLabel: "店名・料理・都市で検索", searchNone: "「{q}」に一致するものはまだありません。",
     mapHomeTitle: "世界中のミシュラン星付きレストラン",
     mapHomeText: "拡大すると個々の店が表示されます。ピンをタップするとディナー料金と、その都市の比較ページへのリンクが表示されます。",
-    destTitle: "エリア", destText: "各エリアには料金、絞り込み、地図、星ごとの平均をまとめたページがあります。",
+    destTitle: "国・地域を選ぶ", destText: "各エリアには料金、絞り込み、地図、星ごとの平均をまとめたページがあります。",
     destRestaurants: "星付きレストラン{n}軒", destFrom: "ディナーコース {p}〜", destOpen: "{place}を比較",
     collectionsTitle: "特集エリア",
     wishTitle: "お気に入り", wishText: "各エリアで保存した店です。",
@@ -617,6 +622,7 @@ const I18N = {
     installTipIos: "追加方法：Safariの共有ボタン（矢印付きの四角）をタップし、「ホーム画面に追加」を選んでください。"
   },
   es: {
+    destJump: "Ir a un país",
     notrackOn: "Este navegador ya no se cuenta en las estadísticas de visitas.", notrackOff: "Este navegador vuelve a contarse en las estadísticas de visitas.",
     destAreas: "Regiones y ciudades", destRegions: "Regiones", destCityList: "Ciudades",
     cookieText: "¿Podemos usar cookies de Google Analytics para saber cómo se usa el sitio? Las visitas se cuentan sin cookies en cualquier caso.", cookieAccept: "Aceptar", cookieReject: "Rechazar", cookieSettings: "Cambiar la elección de cookies",
@@ -728,6 +734,7 @@ const I18N = {
     installTipIos: "Para instalarla: toca el botón Compartir (el cuadrado con una flecha) en Safari y elige “Añadir a pantalla de inicio”."
   },
   it: {
+    destJump: "Vai a un paese",
     notrackOn: "Questo browser non viene più conteggiato nelle statistiche delle visite.", notrackOff: "Questo browser viene di nuovo conteggiato nelle statistiche delle visite.",
     destAreas: "Regioni e città", destRegions: "Regioni", destCityList: "Città",
     cookieText: "Possiamo usare i cookie di Google Analytics per capire come viene usato il sito? Le visite vengono contate comunque senza cookie.", cookieAccept: "Accetta", cookieReject: "Rifiuta", cookieSettings: "Cambia la scelta sui cookie",

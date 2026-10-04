@@ -31,13 +31,42 @@ function renderFigures() {
 
 // ---------- Destinations ----------
 function destCard(c) {
-  return '<article class="dest">' +
+  return '<article class="dest" id="dest-' + esc(c.id) + '">' +
     '<div class="dest-top"><h3><a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a></h3></div>" +
     '<p class="dest-meta">' + esc(t("destRestaurants", { n: c.n })) + " · " + esc(starCountsOf(ALL.filter((r) => r.country === c.id))) + "</p>" +
     (c.from ? '<p class="dest-from">' + esc(t("destFrom", { p: localMoney(c.from.price, c.from.cur) })) + ' <span class="dest-from-name">' + esc(pick(c.from, "name")) + "</span></p>" : "") +
     (c.cities.length > 1 || (c.cities[0] && c.cities[0].path !== c.path) ? destAreas(c) : "") +
     '<a class="dest-open" href="' + withLang(c.path) + '">' + esc(t("destOpen", { place: pick(c, "name") })) + " →</a></article>";
 }
+// Quick jump to a country: A–Z letters (letters with no country are greyed out), or the country names
+// themselves in Chinese and Japanese, where names don't start with a letter.
+function renderDestJump(sorted) {
+  const nav = $("destJump");
+  nav.setAttribute("aria-label", t("destJump"));
+  const letterOf = (c) => pick(c, "name").normalize("NFD").charAt(0).toUpperCase();
+  if (cjk()) {
+    nav.className = "dest-jump names";
+    nav.innerHTML = sorted.map((c) => '<a href="#dest-' + esc(c.id) + '" data-jump="' + esc(c.id) + '">' + esc(pick(c, "name")) + "</a>").join("");
+    return;
+  }
+  nav.className = "dest-jump";
+  const first = {};
+  sorted.forEach((c) => { const l = letterOf(c); if (!first[l]) first[l] = c.id; });
+  nav.innerHTML = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((l) => first[l]
+    ? '<a href="#dest-' + esc(first[l]) + '" data-jump="' + esc(first[l]) + '">' + l + "</a>"
+    : '<span aria-hidden="true">' + l + "</span>").join("");
+}
+document.addEventListener("click", (e) => {
+  const a = e.target.closest("[data-jump]");
+  if (!a) return;
+  e.preventDefault();
+  const card = $("dest-" + a.dataset.jump);
+  if (!card) return;
+  card.scrollIntoView({ behavior: "smooth", block: "start" });
+  card.classList.remove("flash"); void card.offsetWidth; card.classList.add("flash");
+  track("dest-jump", { to: a.dataset.jump });
+});
+
 // A country's regions and cities fold away under one button, so cards stay short as destinations grow.
 const destOpen = new Set();
 function destAreas(c) {
@@ -50,7 +79,9 @@ function destAreas(c) {
 }
 function renderDestinations() {
   const coll = new Intl.Collator(locale());
-  $("destGrid").innerHTML = DATA.countries.slice().sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name"))).map(destCard).join("");
+  const sorted = DATA.countries.slice().sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
+  $("destGrid").innerHTML = sorted.map(destCard).join("");
+  renderDestJump(sorted);
   $("collections").innerHTML = !DATA.groups.length ? "" :
     '<h3 class="sub-head">' + t("collectionsTitle") + '</h3><div class="dest-cities">' + DATA.groups.map((g) =>
       '<a class="city-link" href="' + withLang(g.path) + '">' + esc(pick(g, "name")) + '<span class="count">' + g.n + "</span></a>").join("") + "</div>";

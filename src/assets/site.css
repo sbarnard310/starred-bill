@@ -315,6 +315,15 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
 .dest-cities { display: flex; flex-wrap: wrap; gap: 8px; }
 .city-link { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); text-decoration: none; font-size: .88rem; font-weight: 500; }
 .city-link:hover { border-color: var(--green); color: var(--green); }
+.dest-jump { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 18px; }
+.dest-jump a, .dest-jump span { min-width: 34px; height: 34px; padding: 0 8px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; font-weight: 600; font-size: .95rem; }
+.dest-jump a { background: var(--surface); border: 1px solid var(--line); color: var(--green); text-decoration: none; }
+.dest-jump a:hover, .dest-jump a:focus-visible { background: var(--green); color: var(--surface); }
+.dest-jump span { color: var(--muted); opacity: .45; }
+.dest-jump.names a { padding: 0 14px; font-size: .9rem; }
+.dest { scroll-margin-top: 96px; }
+.dest.flash { animation: dest-flash 1.4s ease-out; }
+@keyframes dest-flash { 0%, 30% { box-shadow: 0 0 0 3px var(--gold); } 100% { box-shadow: 0 0 0 3px transparent; } }
 .dest-more { border-top: 1px solid var(--line); padding-top: 10px; }
 .dest-more > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--ink); padding: 4px 0; }
 .dest-more > summary::-webkit-details-marker { display: none; }

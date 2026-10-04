@@ -11,6 +11,7 @@ const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 // "one|many" picks the singular when {n} is 1.
 const I18N = {
   en: {
+    cookieText: "Can we use Google Analytics cookies to see how people use the site? Visits are counted without cookies either way.", cookieAccept: "Accept", cookieReject: "Reject", cookieSettings: "Change cookie choice",
     navCompare: "Compare", navMap: "Map", navStars: "By stars", navMethod: "Method", navContact: "Contact", navDestinations: "Destinations", wishlist: "Wishlist",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Michelin Guide restaurants",
@@ -138,6 +139,7 @@ const I18N = {
     installTipIos: "To install: tap the Share button (the square with an arrow) in Safari, then choose “Add to Home Screen”."
   },
   zh: {
+    cookieText: "我們可以使用 Google Analytics Cookie 來了解大家如何使用本網站嗎？無論你怎麼選，我們都只以不使用 Cookie 的方式計算瀏覽量。", cookieAccept: "接受", cookieReject: "拒絕", cookieSettings: "更改 Cookie 選擇",
     navCompare: "比較", navMap: "地圖", navStars: "星級", navMethod: "說明", navContact: "聯絡我們", navDestinations: "目的地", wishlist: "願望清單",
     pageTitle: "The Starred Bill・{place}",
     heroEyebrow: "{place}・米其林指南餐廳",
@@ -264,6 +266,7 @@ const I18N = {
     mapSearchPh: "在地圖上搜尋餐廳、城市或國家", mapSearchLabel: "在地圖上搜尋餐廳、城市或國家"
   },
   fr: {
+    cookieText: "Pouvons-nous utiliser les cookies de Google Analytics pour comprendre comment le site est utilisé ? Les visites sont comptées sans cookies dans tous les cas.", cookieAccept: "Accepter", cookieReject: "Refuser", cookieSettings: "Modifier mon choix de cookies",
     navCompare: "Comparer", navMap: "Carte", navStars: "Par étoiles", navMethod: "Méthode", navContact: "Contact", navDestinations: "Destinations", wishlist: "Envies",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restaurants du Guide Michelin",
@@ -370,6 +373,7 @@ const I18N = {
     clearSearch: "Effacer la recherche", photoView: "Agrandir la photo de {name}", photoClose: "Fermer"
   },
   yue: {
+    cookieText: "我哋可唔可以用 Google Analytics Cookie 嚟了解大家點樣用呢個網站？無論你點揀，我哋都只會用唔使 Cookie 嘅方法計瀏覽量。", cookieAccept: "接受", cookieReject: "拒絕", cookieSettings: "更改 Cookie 選擇",
     navCompare: "比較", navMap: "地圖", navStars: "星級", navMethod: "點樣計", navContact: "聯絡我哋", navDestinations: "目的地", wishlist: "心水清單",
     pageTitle: "The Starred Bill・{place}",
     heroEyebrow: "{place}・米芝蓮指南餐廳",
@@ -476,6 +480,7 @@ const I18N = {
     clearSearch: "清除搜尋", photoView: "睇{name}嘅大相", photoClose: "閂"
   },
   ja: {
+    cookieText: "サイトの利用状況を把握するため、Google アナリティクスの Cookie を使用してもよろしいですか？どちらを選んでも、アクセス数は Cookie を使わずに計測します。", cookieAccept: "同意する", cookieReject: "拒否する", cookieSettings: "Cookie の設定を変更",
     navCompare: "比較", navMap: "地図", navStars: "星別", navMethod: "算出方法", navContact: "お問い合わせ", navDestinations: "エリア一覧", wishlist: "お気に入り",
     pageTitle: "The Starred Bill・{place}",
     heroEyebrow: "{place}・ミシュランガイド掲載店",
@@ -602,6 +607,7 @@ const I18N = {
     installTipIos: "追加方法：Safariの共有ボタン（矢印付きの四角）をタップし、「ホーム画面に追加」を選んでください。"
   },
   es: {
+    cookieText: "¿Podemos usar cookies de Google Analytics para saber cómo se usa el sitio? Las visitas se cuentan sin cookies en cualquier caso.", cookieAccept: "Aceptar", cookieReject: "Rechazar", cookieSettings: "Cambiar la elección de cookies",
     navCompare: "Comparar", navMap: "Mapa", navStars: "Por estrellas", navMethod: "Método", navContact: "Contacto", navDestinations: "Destinos", wishlist: "Favoritos",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restaurantes de la Guía Michelin",
@@ -710,6 +716,7 @@ const I18N = {
     installTipIos: "Para instalarla: toca el botón Compartir (el cuadrado con una flecha) en Safari y elige “Añadir a pantalla de inicio”."
   },
   it: {
+    cookieText: "Possiamo usare i cookie di Google Analytics per capire come viene usato il sito? Le visite vengono contate comunque senza cookie.", cookieAccept: "Accetta", cookieReject: "Rifiuta", cookieSettings: "Cambia la scelta sui cookie",
     navCompare: "Confronta", navMap: "Mappa", navStars: "Per stelle", navMethod: "Metodo", navContact: "Contatti", navDestinations: "Destinazioni", wishlist: "Preferiti",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Ristoranti della Guida Michelin",
@@ -980,6 +987,7 @@ function applyI18n() {
   $("installBtn").textContent = t("installApp");
   labelShare();
   if (typeof renderAccountButton === "function") renderAccountButton();
+  if (document.getElementById("cookieBar")) renderCookieBar(true);
   const tip = $("installTip");
   if (tip) tip.textContent = t("installTipIos");
 }
@@ -1181,7 +1189,60 @@ $("installBtn").addEventListener("click", async () => {
 // Never send names, emails or anything personal: restaurant names, page addresses and choices only.
 function track(name, data) {
   try { if (window.umami && typeof window.umami.track === "function") window.umami.track(name, data); } catch (e) {}
+  try {
+    if (window.gtag && !window["ga-disable-" + GA_ID]) {
+      window.gtag("event", name.replace(/-/g, "_"), data || {});
+      if (name === "account-created") window.gtag("event", "sign_up", { method: (data && data.method) || "email" });
+    }
+  } catch (e) {}
 }
+// Google Analytics: only on the live site, and only after the visitor clicks Accept on the cookie banner.
+const GA_ID = "G-GE1KG403N4", CONSENT_KEY = "starredbill-consent", GA_HOSTS = ["starredbill.com", "www.starredbill.com"];
+const consentChoice = () => store.get(CONSENT_KEY, "");
+function loadAnalytics() {
+  window["ga-disable-" + GA_ID] = false;
+  if (window.gtag || !GA_HOSTS.includes(location.hostname)) return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag("js", new Date());
+  window.gtag("config", GA_ID);
+  const s = document.createElement("script");
+  s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+  document.head.appendChild(s);
+}
+function stopAnalytics() {
+  window["ga-disable-" + GA_ID] = true;
+  // Remove Google's cookies from this site and its parent domain.
+  document.cookie.split(";").map((c) => c.split("=")[0].trim()).filter((n) => /^_ga/.test(n)).forEach((n) => {
+    [location.hostname, "." + location.hostname.replace(/^www\./, "")].forEach((d) => { document.cookie = n + "=; Max-Age=0; path=/; domain=" + d; });
+    document.cookie = n + "=; Max-Age=0; path=/";
+  });
+}
+// The banner: shown until the visitor chooses, and again from "Change cookie choice" on the privacy page.
+function renderCookieBar(force) {
+  let bar = document.getElementById("cookieBar");
+  if (!force && (consentChoice() || (!bar && !document.body))) { if (bar && consentChoice()) bar.remove(); return; }
+  if (!bar) {
+    bar = document.createElement("div");
+    bar.id = "cookieBar"; bar.className = "cookie-bar"; bar.setAttribute("role", "region");
+    document.body.appendChild(bar);
+  }
+  bar.setAttribute("aria-label", t("cookieSettings"));
+  bar.innerHTML = '<p>' + esc(t("cookieText")) + ' <a href="' + withLang("/privacy/") + '">' + esc(t("acctPrivacy")) + "</a></p>" +
+    '<div class="cookie-actions"><button type="button" data-consent="denied">' + esc(t("cookieReject")) + '</button><button type="button" data-consent="granted">' + esc(t("cookieAccept")) + "</button></div>";
+}
+function setConsent(choice) {
+  store.set(CONSENT_KEY, choice);
+  if (choice === "granted") loadAnalytics(); else stopAnalytics();
+  const bar = document.getElementById("cookieBar");
+  if (bar) bar.remove();
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-consent], [data-cookie-settings]");
+  if (!b) return;
+  if (b.dataset.consent) { setConsent(b.dataset.consent); track("cookie-choice", { choice: b.dataset.consent }); }
+  else renderCookieBar(true);
+});
 const rowName = (el) => { const row = el.closest(".row"); const th = row && row.querySelector("[data-name]"); return th ? th.dataset.name.slice(0, 80) : ""; };
 document.addEventListener("click", (e) => {
   const el = e.target.closest("a, button");
@@ -1217,6 +1278,7 @@ document.addEventListener("input", (e) => {
   (e.detail.ids || []).forEach((id) => track(ev === "sb:wishlist" ? "wishlist" : "been-there", { action: list.includes(id) ? "add" : "remove", restaurant: id }));
 }));
 
+if (consentChoice() === "granted") loadAnalytics(); else if (!consentChoice()) renderCookieBar();
 if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
   window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
 }

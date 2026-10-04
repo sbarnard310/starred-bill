@@ -55,7 +55,7 @@ Free accounts let people keep their wishlist on every device and tick off restau
 - Umami Cloud (cloud.umami.is, the owner's account) counts visits without cookies, so there's no cookie banner. Its script tag is in the `<head>` of every template in `src/` (place, home, account, privacy, 404), with `data-domains` set so local previews aren't counted.
 - Clicks are sent as events by `track()` in common.js (and account.js for sign-ins): outbound (price source, Google Maps, other), share, language, currency, meal, search, near-me, jump-to-map, wishlist, been-there, sign-in-opened, sign-in-link-sent, sign-in-google, sign-in, account-created. Never send emails or other personal details. New buttons worth counting get a `track()` call too, and the privacy page's "Visit statistics" paragraph must stay true.
 - Google Search Console covers starredbill.com as a Domain property (DNS TXT at Namecheap), with the sitemap submitted.
-- Google Analytics is planned alongside Umami, loaded only after a visitor accepts a cookie banner; it needs the owner's Measurement ID (G-…).
+- Google Analytics 4 (Measurement ID G-GE1KG403N4, `GA_ID` in common.js) runs alongside Umami, but only on starredbill.com and only after the visitor clicks Accept on the cookie banner (`renderCookieBar`, choice kept in localStorage `starredbill-consent`). Reject removes its `_ga` cookies. The privacy page's "Change cookie choice" button reopens the banner. `track()` sends every event to both, with hyphens turned into underscores for Google (account-created also sends Google's `sign_up`).
 - New accounts: Supabase › Authentication › Users lists every account; Umami's "account-created" event shows them next to visits.
 
 ## Google Maps key

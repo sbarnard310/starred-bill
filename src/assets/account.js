@@ -1,4 +1,4 @@
-// Free accounts. People sign in with an emailed link or Google, and their wishlist and "been there" list
+// Free accounts. People sign in with an emailed code or link, or Google, and their wishlist and "been there" list
 // follow them to any device. Supabase (supabase.com) holds the accounts and one table, `saved`
 // (see supabase/schema.sql), whose rules let each person read and change only their own rows.
 // Signed out, the wishlist still works and stays in this browser; "been there" needs an account.
@@ -237,8 +237,11 @@ function renderSignIn() {
   box.querySelector(".si-or").hidden = !account.google;
   box.querySelector(".si-or span").textContent = t("acctOr");
   box.querySelector("label[for=siEmail]").textContent = t("acctEmailLabel");
-  const send = box.querySelector(".si-send");
+  const send = box.querySelector(".si-send:not(.si-verify)");
   if (!send.disabled) send.textContent = t("acctSend");
+  box.querySelector("label[for=siCode]").textContent = t("acctCodeLabel");
+  const verify = box.querySelector(".si-verify");
+  if (!verify.disabled) verify.textContent = t("acctVerify");
   box.querySelector(".si-small").innerHTML = esc(t("acctSmall")) + ' <a href="' + withLang("/privacy/") + '">' + esc(t("acctPrivacy")) + "</a>";
 }
 
@@ -256,6 +259,11 @@ function buildSignIn() {
       '<input id="siEmail" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com">' +
       '<button type="submit" class="si-send"></button>' +
       '<p class="si-status" aria-live="polite"></p>' +
+      // Step two: the 6-digit code from the email. Typing it signs in right here, which matters in the
+      // home-screen app, where the email's link would open the browser instead (and sign in there).
+      '<div class="si-code" hidden><label for="siCode"></label>' +
+        '<input id="siCode" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="10" placeholder="123456">' +
+        '<button type="button" class="si-send si-verify"></button></div>' +
       '<p class="si-small"></p>' +
     "</form>";
   document.body.appendChild(box);
@@ -268,9 +276,23 @@ function buildSignIn() {
       await account.client.auth.signInWithOAuth({ provider: "google", options: { redirectTo: location.origin + location.pathname + location.search } });
     } catch (e) { box.querySelector(".si-status").textContent = t("acctFailed"); }
   });
+  const verify = async () => {
+    const token = $("siCode").value.replace(/\D/g, ""), status = box.querySelector(".si-status"), btn = box.querySelector(".si-verify");
+    if (token.length < 6) { status.textContent = t("acctBadCode"); $("siCode").focus(); return; }
+    btn.disabled = true; btn.textContent = t("acctVerifying");
+    try {
+      const { error } = await account.client.auth.verifyOtp({ email: account.codeEmail, token, type: "email" });
+      if (error) status.textContent = error.status === 429 ? t("acctTooMany") : t("acctCodeWrong");
+      else { box.close(); acctNotice.shown = true; acctNotice(t("acctWelcome")); track("sign-in-code"); }
+    } catch (err) { status.textContent = t("acctFailed"); }
+    btn.disabled = false; btn.textContent = t("acctVerify");
+  };
+  box.querySelector(".si-verify").addEventListener("click", verify);
   box.querySelector("form").addEventListener("submit", async (e) => {
     e.preventDefault();
-    const email = $("siEmail").value.trim(), status = box.querySelector(".si-status"), send = box.querySelector(".si-send");
+    // Enter in the code box checks the code rather than sending another email.
+    if (document.activeElement === $("siCode")) { verify(); return; }
+    const email = $("siEmail").value.trim(), status = box.querySelector(".si-status"), send = box.querySelector(".si-send:not(.si-verify)");
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { status.textContent = t("acctBadEmail"); $("siEmail").focus(); return; }
     send.disabled = true; send.textContent = t("acctSending"); status.textContent = "";
     try {
@@ -278,7 +300,14 @@ function buildSignIn() {
       try { sessionStorage.setItem("starredbill-signing-in", "1"); } catch (err) {}
       const { error } = await account.client.auth.signInWithOtp({ email, options: { emailRedirectTo: location.origin + location.pathname + location.search } });
       if (error) status.textContent = error.status === 429 ? t("acctTooMany") : t("acctFailed");
-      else { status.textContent = t("acctSent", { email }); track("sign-in-link-sent"); }
+      else {
+        account.codeEmail = email;
+        status.textContent = t("acctSentCode", { email });
+        box.querySelector(".si-code").hidden = false;
+        $("siCode").value = "";
+        $("siCode").focus();
+        track("sign-in-link-sent");
+      }
     } catch (err) { status.textContent = t("acctFailed"); }
     send.disabled = false; send.textContent = t("acctSend");
   });
@@ -290,6 +319,7 @@ function openSignIn(reason) {
   track("sign-in-opened", { reason: account.reason || "button" });
   const box = $("signInBox") || buildSignIn();
   box.querySelector(".si-status").textContent = "";
+  box.querySelector(".si-code").hidden = true;
   renderSignIn();
   if (!box.open) box.showModal();
   bootAccount().catch(() => { box.querySelector(".si-status").textContent = t("acctFailed"); });

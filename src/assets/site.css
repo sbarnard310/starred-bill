@@ -491,6 +491,8 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 .si-send { padding: 12px 14px; border: 0; border-radius: 10px; background: var(--green); color: var(--surface); font: inherit; font-weight: 700; cursor: pointer; }
 .si-send:disabled { opacity: .7; cursor: progress; }
 .si-status { margin: 0; font-size: .92rem; min-height: 0; }
+.si-code { display: grid; gap: 12px; }
+.si-code input { font-size: 1.3rem; letter-spacing: .25em; text-align: center; }
 .si-status:empty { display: none; }
 .si-small { margin: 0; font-size: .8rem; color: var(--muted); }
 .si-small a { color: var(--green); }

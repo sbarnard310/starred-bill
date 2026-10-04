@@ -11,6 +11,7 @@ const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 // "one|many" picks the singular when {n} is 1.
 const I18N = {
   en: {
+    notrackOn: "This browser is no longer counted in the visit statistics.", notrackOff: "This browser is counted in the visit statistics again.",
     destAreas: "Regions and cities", destRegions: "Regions", destCityList: "Cities",
     cookieText: "Can we use Google Analytics cookies to see how people use the site? Visits are counted without cookies either way.", cookieAccept: "Accept", cookieReject: "Reject", cookieSettings: "Change cookie choice",
     navCompare: "Compare", navMap: "Map", navStars: "By stars", navMethod: "Method", navContact: "Contact", navDestinations: "Destinations", wishlist: "Wishlist",
@@ -140,6 +141,7 @@ const I18N = {
     installTipIos: "To install: tap the Share button (the square with an arrow) in Safari, then choose “Add to Home Screen”."
   },
   zh: {
+    notrackOn: "此瀏覽器已不再計入瀏覽統計。", notrackOff: "此瀏覽器已重新計入瀏覽統計。",
     destAreas: "地區與城市", destRegions: "地區", destCityList: "城市",
     cookieText: "我們可以使用 Google Analytics Cookie 來了解大家如何使用本網站嗎？無論你怎麼選，我們都只以不使用 Cookie 的方式計算瀏覽量。", cookieAccept: "接受", cookieReject: "拒絕", cookieSettings: "更改 Cookie 選擇",
     navCompare: "比較", navMap: "地圖", navStars: "星級", navMethod: "說明", navContact: "聯絡我們", navDestinations: "目的地", wishlist: "願望清單",
@@ -268,6 +270,7 @@ const I18N = {
     mapSearchPh: "在地圖上搜尋餐廳、城市或國家", mapSearchLabel: "在地圖上搜尋餐廳、城市或國家"
   },
   fr: {
+    notrackOn: "Ce navigateur n'est plus compté dans les statistiques de visite.", notrackOff: "Ce navigateur est de nouveau compté dans les statistiques de visite.",
     destAreas: "Régions et villes", destRegions: "Régions", destCityList: "Villes",
     cookieText: "Pouvons-nous utiliser les cookies de Google Analytics pour comprendre comment le site est utilisé ? Les visites sont comptées sans cookies dans tous les cas.", cookieAccept: "Accepter", cookieReject: "Refuser", cookieSettings: "Modifier mon choix de cookies",
     navCompare: "Comparer", navMap: "Carte", navStars: "Par étoiles", navMethod: "Méthode", navContact: "Contact", navDestinations: "Destinations", wishlist: "Envies",
@@ -376,6 +379,7 @@ const I18N = {
     clearSearch: "Effacer la recherche", photoView: "Agrandir la photo de {name}", photoClose: "Fermer"
   },
   yue: {
+    notrackOn: "呢個瀏覽器已經唔再計入瀏覽統計。", notrackOff: "呢個瀏覽器已經重新計入瀏覽統計。",
     destAreas: "地區同城市", destRegions: "地區", destCityList: "城市",
     cookieText: "我哋可唔可以用 Google Analytics Cookie 嚟了解大家點樣用呢個網站？無論你點揀，我哋都只會用唔使 Cookie 嘅方法計瀏覽量。", cookieAccept: "接受", cookieReject: "拒絕", cookieSettings: "更改 Cookie 選擇",
     navCompare: "比較", navMap: "地圖", navStars: "星級", navMethod: "點樣計", navContact: "聯絡我哋", navDestinations: "目的地", wishlist: "心水清單",
@@ -484,6 +488,7 @@ const I18N = {
     clearSearch: "清除搜尋", photoView: "睇{name}嘅大相", photoClose: "閂"
   },
   ja: {
+    notrackOn: "このブラウザはアクセス統計に含まれなくなりました。", notrackOff: "このブラウザは再びアクセス統計に含まれます。",
     destAreas: "地域と都市", destRegions: "地域", destCityList: "都市",
     cookieText: "サイトの利用状況を把握するため、Google アナリティクスの Cookie を使用してもよろしいですか？どちらを選んでも、アクセス数は Cookie を使わずに計測します。", cookieAccept: "同意する", cookieReject: "拒否する", cookieSettings: "Cookie の設定を変更",
     navCompare: "比較", navMap: "地図", navStars: "星別", navMethod: "算出方法", navContact: "お問い合わせ", navDestinations: "エリア一覧", wishlist: "お気に入り",
@@ -612,6 +617,7 @@ const I18N = {
     installTipIos: "追加方法：Safariの共有ボタン（矢印付きの四角）をタップし、「ホーム画面に追加」を選んでください。"
   },
   es: {
+    notrackOn: "Este navegador ya no se cuenta en las estadísticas de visitas.", notrackOff: "Este navegador vuelve a contarse en las estadísticas de visitas.",
     destAreas: "Regiones y ciudades", destRegions: "Regiones", destCityList: "Ciudades",
     cookieText: "¿Podemos usar cookies de Google Analytics para saber cómo se usa el sitio? Las visitas se cuentan sin cookies en cualquier caso.", cookieAccept: "Aceptar", cookieReject: "Rechazar", cookieSettings: "Cambiar la elección de cookies",
     navCompare: "Comparar", navMap: "Mapa", navStars: "Por estrellas", navMethod: "Método", navContact: "Contacto", navDestinations: "Destinos", wishlist: "Favoritos",
@@ -722,6 +728,7 @@ const I18N = {
     installTipIos: "Para instalarla: toca el botón Compartir (el cuadrado con una flecha) en Safari y elige “Añadir a pantalla de inicio”."
   },
   it: {
+    notrackOn: "Questo browser non viene più conteggiato nelle statistiche delle visite.", notrackOff: "Questo browser viene di nuovo conteggiato nelle statistiche delle visite.",
     destAreas: "Regioni e città", destRegions: "Regioni", destCityList: "Città",
     cookieText: "Possiamo usare i cookie di Google Analytics per capire come viene usato il sito? Le visite vengono contate comunque senza cookie.", cookieAccept: "Accetta", cookieReject: "Rifiuta", cookieSettings: "Cambia la scelta sui cookie",
     navCompare: "Confronta", navMap: "Mappa", navStars: "Per stelle", navMethod: "Metodo", navContact: "Contatti", navDestinations: "Destinazioni", wishlist: "Preferiti",
@@ -882,6 +889,11 @@ const DATA = JSON.parse(document.getElementById("page-data").textContent);
 // The languages this page offers (Hong Kong adds Cantonese, France adds French, Japan adds Japanese).
 const PAGE_LANGS = DATA.languages || ["en", "zh"];
 const params = new URLSearchParams(location.search);
+// The owner's own devices: open any page with ?notrack=1 once and this browser stops counting in Umami and Google Analytics
+// (?notrack=0 undoes it). "umami.disabled" is Umami's own switch; the rest of the site checks NOTRACK.
+const NOTRACK_SET = params.get("notrack");
+try { if (NOTRACK_SET === "1") localStorage.setItem("umami.disabled", "1"); else if (NOTRACK_SET === "0") localStorage.removeItem("umami.disabled"); } catch (e) {}
+const NOTRACK = (() => { try { return localStorage.getItem("umami.disabled") === "1"; } catch (e) { return false; } })();
 const store = {
   get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
@@ -1195,6 +1207,7 @@ $("installBtn").addEventListener("click", async () => {
 // Umami (cloud.umami.is) counts visits without cookies; these are the clicks it records as events.
 // Never send names, emails or anything personal: restaurant names, page addresses and choices only.
 function track(name, data) {
+  if (NOTRACK) return;
   try { if (window.umami && typeof window.umami.track === "function") window.umami.track(name, data); } catch (e) {}
   try {
     if (window.gtag && !window["ga-disable-" + GA_ID]) {
@@ -1207,6 +1220,7 @@ function track(name, data) {
 const GA_ID = "G-GE1KG403N4", CONSENT_KEY = "starredbill-consent", GA_HOSTS = ["starredbill.com", "www.starredbill.com"];
 const consentChoice = () => store.get(CONSENT_KEY, "");
 function loadAnalytics() {
+  if (NOTRACK) return;
   window["ga-disable-" + GA_ID] = false;
   if (window.gtag || !GA_HOSTS.includes(location.hostname)) return;
   window.dataLayer = window.dataLayer || [];
@@ -1285,7 +1299,18 @@ document.addEventListener("input", (e) => {
   (e.detail.ids || []).forEach((id) => track(ev === "sb:wishlist" ? "wishlist" : "been-there", { action: list.includes(id) ? "add" : "remove", restaurant: id }));
 }));
 
-if (consentChoice() === "granted") loadAnalytics(); else if (!consentChoice()) renderCookieBar();
+if (NOTRACK) stopAnalytics();
+else if (consentChoice() === "granted") loadAnalytics(); else if (!consentChoice()) renderCookieBar();
+// Confirm the switch, then take it out of the address so it isn't shared by accident.
+if (NOTRACK_SET === "1" || NOTRACK_SET === "0") {
+  const note = document.createElement("div");
+  note.className = "cookie-bar"; note.setAttribute("role", "status");
+  note.innerHTML = "<p>" + esc(t(NOTRACK_SET === "1" ? "notrackOn" : "notrackOff")) + "</p>";
+  document.body.appendChild(note);
+  setTimeout(() => note.remove(), 6000);
+  const q = new URLSearchParams(location.search); q.delete("notrack");
+  history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : "") + location.hash);
+}
 if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
   window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
 }

@@ -1,0 +1,10 @@
+{
+  "id": "mexico-city",
+  "type": "city",
+  "parent": "mexico",
+  "name": "Mexico City",
+  "nameEs": "Ciudad de México",
+  "inSentenceEs": "en Ciudad de México",
+  "intro": "Prices are in Mexican pesos (MX$), with a switch to see them in pounds, euros or US dollars, including 16% VAT but not the tip. Prices checked October 2026.",
+  "introEs": "Los precios están en pesos mexicanos (MX$), con un selector para verlos en libras, euros o dólares, con el 16 % de IVA incluido pero sin la propina. Precios revisados en octubre de 2026."
+}

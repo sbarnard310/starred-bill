@@ -1,0 +1,20 @@
+{
+  "name": "Máximo",
+  "city": "mexico-city",
+  "area": "Roma Norte",
+  "areaEs": "Roma Norte",
+  "address": "Álvaro Obregón 65 Bis, Roma Norte, Mexico City",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineEs": "Mexicana",
+  "rating": 4.3,
+  "reviews": 2841,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://www.maximobistrot.com.mx/",
+  "lat": 19.4189482,
+  "lng": -99.1580841,
+  "placeId": "ChIJdw0B4zv_0YURK8xSHYwyp2E"
+}

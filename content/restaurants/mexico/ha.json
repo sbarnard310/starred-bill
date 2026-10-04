@@ -1,0 +1,21 @@
+{
+  "name": "HA'",
+  "city": "quintana-roo",
+  "area": "Playa del Carmen, Hotel Xcaret",
+  "areaEs": "Playa del Carmen, Hotel Xcaret",
+  "address": "Hotel Xcaret México, Carretera Chetumal–Puerto Juárez km 282, Playa del Carmen",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineEs": "Mexicana",
+  "rating": 4.7,
+  "reviews": 442,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "noLunch": true,
+  "website": "https://www.hotelxcaretmexico.com/en/ha-restaurant/",
+  "lat": 20.5867231,
+  "lng": -87.1121284,
+  "placeId": "ChIJOao-d2hFTo8RaZq5OBlvlRE"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "baja-california",
+  "type": "region",
+  "parent": "mexico",
+  "name": "Baja California",
+  "nameEs": "Baja California",
+  "intro": "Including the Valle de Guadalupe wine country near Ensenada. Prices are in Mexican pesos (MX$), with a switch to see them in pounds, euros or US dollars, including 16% VAT but not the tip. Prices checked October 2026.",
+  "introEs": "Incluye la zona vinícola del Valle de Guadalupe, cerca de Ensenada. Los precios están en pesos mexicanos (MX$), con un selector para verlos en libras, euros o dólares, con el 16 % de IVA incluido pero sin la propina. Precios revisados en octubre de 2026."
+}

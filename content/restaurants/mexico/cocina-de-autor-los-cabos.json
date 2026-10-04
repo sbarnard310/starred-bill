@@ -1,0 +1,21 @@
+{
+  "name": "Cocina de Autor Los Cabos",
+  "city": "baja-california-sur",
+  "area": "San José del Cabo",
+  "areaEs": "San José del Cabo",
+  "address": "Grand Velas Los Cabos, Carretera Transpeninsular km 17, Los Cabos",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineEs": "Mexicana",
+  "rating": 4.5,
+  "reviews": 69,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "noLunch": true,
+  "website": "https://loscabos.grandvelas.com/dining/cocina-de-autor",
+  "lat": 22.968208699999998,
+  "lng": -109.7918064,
+  "placeId": "ChIJS5GX-nBOr4YRNMuOCqobHZY"
+}

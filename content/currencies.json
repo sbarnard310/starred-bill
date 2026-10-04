@@ -70,6 +70,11 @@
       "code": "ARS",
       "symbol": "ARS",
       "perUSD": 1523.0868
+    },
+    {
+      "code": "MXN",
+      "symbol": "MX$",
+      "perUSD": 18.214153
     }
   ]
 }

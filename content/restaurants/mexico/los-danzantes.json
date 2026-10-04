@@ -1,0 +1,20 @@
+{
+  "name": "Los Danzantes Oaxaca",
+  "city": "oaxaca",
+  "area": "Oaxaca city",
+  "areaEs": "Ciudad de Oaxaca",
+  "address": "Macedonio Alcalá 403, Centro, Oaxaca",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineEs": "Mexicana",
+  "rating": 4.5,
+  "reviews": 5244,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://losdanzantesoaxaca.com.mx",
+  "lat": 17.0652024,
+  "lng": -96.7239883,
+  "placeId": "ChIJpYomwD4ix4UR8Ao0DNgeIX4"
+}

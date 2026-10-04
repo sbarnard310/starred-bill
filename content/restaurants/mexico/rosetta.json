@@ -1,0 +1,20 @@
+{
+  "name": "Rosetta",
+  "city": "mexico-city",
+  "area": "Roma Norte",
+  "areaEs": "Roma Norte",
+  "address": "Colima 166, Roma Norte, Mexico City",
+  "stars": 1,
+  "cuisine": "Creative",
+  "cuisineEs": "Creativa",
+  "rating": 4.2,
+  "reviews": 4885,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://rosetta.com.mx",
+  "lat": 19.4197758,
+  "lng": -99.1598009,
+  "placeId": "ChIJdSGAWgP_0YURwNtY7rftf2E"
+}

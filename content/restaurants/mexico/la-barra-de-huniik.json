@@ -1,0 +1,21 @@
+{
+  "name": "La Barra de Huniik",
+  "city": "yucatan",
+  "area": "Mérida",
+  "areaEs": "Mérida",
+  "address": "Calle 60 417, Parque Santa Ana, Mérida",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineEs": "Mexicana",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteEs": "Consiguió su primera estrella",
+  "changeDate": "2026-05",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://www.instagram.com/labarradehuniik",
+  "lat": 20.9760249,
+  "lng": -89.6215943
+}

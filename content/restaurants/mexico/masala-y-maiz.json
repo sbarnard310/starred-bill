@@ -1,0 +1,20 @@
+{
+  "name": "Masala y Maíz",
+  "city": "mexico-city",
+  "area": "Centro",
+  "areaEs": "Centro",
+  "address": "Artículo 123 116, Centro, Mexico City",
+  "stars": 1,
+  "cuisine": "Fusion",
+  "cuisineEs": "Fusión",
+  "rating": 4.3,
+  "reviews": 1304,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://www.masalaymaiz.com/",
+  "lat": 19.433015899999997,
+  "lng": -99.148962,
+  "placeId": "ChIJmWtRD1z_0YURSJiNhdfktTY"
+}

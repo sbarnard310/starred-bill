@@ -1,0 +1,20 @@
+{
+  "name": "Pangea",
+  "city": "nuevo-leon",
+  "area": "San Pedro Garza García",
+  "areaEs": "San Pedro Garza García",
+  "address": "Av. del Roble 660, Valle del Campestre, San Pedro Garza García",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineEs": "Contemporánea",
+  "rating": 4.7,
+  "reviews": 1662,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://restaurantepangea.com/",
+  "lat": 25.649461799999997,
+  "lng": -100.3563295,
+  "placeId": "ChIJ8Rlqs5W9YoYRFvRQFa-VXl4"
+}

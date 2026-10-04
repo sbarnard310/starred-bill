@@ -1,0 +1,20 @@
+{
+  "name": "Expendio de Maíz",
+  "city": "mexico-city",
+  "area": "Roma Norte",
+  "areaEs": "Roma Norte",
+  "address": "Av. Yucatán 84, Roma Norte, Mexico City",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineEs": "Mexicana",
+  "rating": 4.2,
+  "reviews": 1992,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://www.expendiodemaizsinnombre.com/",
+  "lat": 19.4141385,
+  "lng": -99.1626922,
+  "placeId": "ChIJUYDQNgL_0YURYhvNnCzntYY"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Olivea Farm to Table",
+  "city": "baja-california",
+  "area": "Valle de Guadalupe",
+  "areaEs": "Valle de Guadalupe",
+  "address": "Carretera Federal 3, km 92.5, Valle de Guadalupe",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineEs": "Contemporánea",
+  "rating": 4.8,
+  "reviews": 127,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://www.oliveafarmtotable.com/en/farmtotable",
+  "lat": 31.990977599999997,
+  "lng": -116.64197910000001,
+  "placeId": "ChIJbYfJrqXt2IARBBKPw8lnU2w"
+}

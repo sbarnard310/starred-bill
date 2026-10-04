@@ -1,0 +1,20 @@
+{
+  "name": "Le Chique",
+  "city": "quintana-roo",
+  "area": "Playa del Carmen, Hotel Xcaret Arte",
+  "areaEs": "Playa del Carmen, Hotel Xcaret Arte",
+  "address": "Hotel Xcaret Arte, Carretera Chetumal–Puerto Juárez km 282, Playa del Carmen",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineEs": "Contemporánea",
+  "rating": 4.6,
+  "reviews": 308,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://www.instagram.com/lechiquerestaurant",
+  "lat": 20.5885902,
+  "lng": -87.1091328,
+  "placeId": "ChIJM5U4eDaGTo8R6BZOAFT5-j4"
+}

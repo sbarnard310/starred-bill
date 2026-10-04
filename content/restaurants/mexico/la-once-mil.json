@@ -1,0 +1,23 @@
+{
+  "name": "La Once Mil",
+  "city": "mexico-city",
+  "area": "Lomas de Chapultepec",
+  "areaEs": "Lomas de Chapultepec",
+  "address": "Monte Everest 780, Lomas de Chapultepec, Mexico City",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineEs": "Mexicana",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteEs": "Consiguió su primera estrella",
+  "changeDate": "2026-05",
+  "rating": 4.8,
+  "reviews": 5425,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "lat": 19.4181703,
+  "lng": -99.215489,
+  "placeId": "ChIJe_9SHGUB0oURM_uxZtY_NyE"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Esquina Común",
+  "city": "mexico-city",
+  "area": "Condesa",
+  "areaEs": "Condesa",
+  "address": "Fernando Montes de Oca 86, Condesa, Mexico City",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineEs": "Mexicana",
+  "rating": 4.6,
+  "reviews": 302,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://www.instagram.com/esquinacomun",
+  "lat": 19.4138864,
+  "lng": -99.1767757,
+  "placeId": "ChIJoXqgWgD_0YURd2FcKb8I4UU"
+}

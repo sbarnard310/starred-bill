@@ -1,0 +1,20 @@
+{
+  "name": "Damiana",
+  "city": "baja-california",
+  "area": "Valle de Guadalupe",
+  "areaEs": "Valle de Guadalupe",
+  "address": "Viñedos de la Reina, Carretera 3 km 71, Valle de Guadalupe",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineEs": "Mexicana",
+  "rating": 4.7,
+  "reviews": 112,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://www.damianarestaurant.com",
+  "lat": 32.1375372,
+  "lng": -116.5290129,
+  "placeId": "ChIJQ00SMYfv2IARK9XO0GMsKpw"
+}

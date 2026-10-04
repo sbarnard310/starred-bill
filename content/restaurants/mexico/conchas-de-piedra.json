@@ -1,0 +1,20 @@
+{
+  "name": "Conchas de Piedra",
+  "city": "baja-california",
+  "area": "Valle de Guadalupe",
+  "areaEs": "Valle de Guadalupe",
+  "address": "Carretera Tecate km 93.5, Valle de Guadalupe",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "cuisineEs": "Pescados y mariscos",
+  "rating": 4.5,
+  "reviews": 232,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "website": "https://www.conchasdepiedra.com/",
+  "lat": 31.9797539,
+  "lng": -116.6530853,
+  "placeId": "ChIJMTO_H83t2IAR-csqUh7MEKM"
+}

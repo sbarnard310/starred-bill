@@ -1,0 +1,23 @@
+{
+  "name": "Xokol",
+  "city": "jalisco",
+  "area": "Guadalajara",
+  "areaEs": "Guadalajara",
+  "address": "Herrera y Cairo 1375, Santa Teresita, Guadalajara",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "cuisineEs": "Mexicana",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteEs": "Consiguió su primera estrella",
+  "changeDate": "2026-05",
+  "rating": 4.5,
+  "reviews": 1256,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteEs": "Menú degustación; precio pendiente",
+  "sourceType": "none",
+  "lat": 20.682983399999998,
+  "lng": -103.36519779999999,
+  "placeId": "ChIJ1wkopfuvKIQRVmN1b4YqhH4"
+}

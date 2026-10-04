@@ -51,6 +51,13 @@ Free accounts let people keep their wishlist on every device and tick off restau
 - `/account/` (account.html + account-page.js) shows stats, milestones, progress by destination, both lists, and download / sign out / delete. `/privacy/` (privacy.html + info-page.js) is the privacy notice in English and Chinese; update it if what's stored changes.
 - In Supabase, Authentication › URL Configuration allows starredbill.com, www and localhost:8799. Google sign-in uses a Google Cloud OAuth client; sign-in emails go through Resend's SMTP from starredbill.com (set up 3 Oct 2026). Both sign-in emails (Magic Link and Confirm signup, under Authentication › Emails › Templates) use `supabase/email-template.html`.
 
+## Visit statistics
+- Umami Cloud (cloud.umami.is, the owner's account) counts visits without cookies, so there's no cookie banner. Its script tag is in the `<head>` of every template in `src/` (place, home, account, privacy, 404), with `data-domains` set so local previews aren't counted.
+- Clicks are sent as events by `track()` in common.js (and account.js for sign-ins): outbound (price source, Google Maps, other), share, language, currency, meal, search, near-me, jump-to-map, wishlist, been-there, sign-in-opened, sign-in-link-sent, sign-in-google, sign-in, account-created. Never send emails or other personal details. New buttons worth counting get a `track()` call too, and the privacy page's "Visit statistics" paragraph must stay true.
+- Google Search Console covers starredbill.com as a Domain property (DNS TXT at Namecheap), with the sitemap submitted.
+- Google Analytics is planned alongside Umami, loaded only after a visitor accepts a cookie banner; it needs the owner's Measurement ID (G-…).
+- New accounts: Supabase › Authentication › Users lists every account; Umami's "account-created" event shows them next to visits.
+
 ## Google Maps key
 It's a browser key in `src/assets/common.js`, restricted to these addresses:
 - `https://starredbill.com/*`

@@ -59,6 +59,12 @@ function bootAccount() {
 async function afterAuthChange(event, before) {
   if (account.user) {
     if (event === "SIGNED_IN" || event === "INITIAL_SESSION") await syncDown();
+    if (event === "SIGNED_IN" && !before) {
+      // A brand-new account signs in within minutes of being created; no email or id is sent.
+      const method = (account.user.app_metadata && account.user.app_metadata.provider) || "email";
+      const isNew = Date.now() - Date.parse(account.user.created_at || 0) < 15 * 60 * 1000;
+      track(isNew ? "account-created" : "sign-in", { method });
+    }
     if (!before) {
       const box = $("signInBox");
       if (box && box.open) box.close();
@@ -258,6 +264,7 @@ function buildSignIn() {
     try {
       await bootAccount();
       try { sessionStorage.setItem("starredbill-signing-in", "1"); } catch (e) {}
+      track("sign-in-google");
       await account.client.auth.signInWithOAuth({ provider: "google", options: { redirectTo: location.origin + location.pathname + location.search } });
     } catch (e) { box.querySelector(".si-status").textContent = t("acctFailed"); }
   });
@@ -271,7 +278,7 @@ function buildSignIn() {
       try { sessionStorage.setItem("starredbill-signing-in", "1"); } catch (err) {}
       const { error } = await account.client.auth.signInWithOtp({ email, options: { emailRedirectTo: location.origin + location.pathname + location.search } });
       if (error) status.textContent = error.status === 429 ? t("acctTooMany") : t("acctFailed");
-      else status.textContent = t("acctSent", { email });
+      else { status.textContent = t("acctSent", { email }); track("sign-in-link-sent"); }
     } catch (err) { status.textContent = t("acctFailed"); }
     send.disabled = false; send.textContent = t("acctSend");
   });
@@ -280,6 +287,7 @@ function buildSignIn() {
 
 function openSignIn(reason) {
   account.reason = reason || "";
+  track("sign-in-opened", { reason: account.reason || "button" });
   const box = $("signInBox") || buildSignIn();
   box.querySelector(".si-status").textContent = "";
   renderSignIn();

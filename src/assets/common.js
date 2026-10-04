@@ -1176,6 +1176,47 @@ $("installBtn").addEventListener("click", async () => {
   tip.textContent = t("installTipIos");
   $("installBtn").closest(".wrap").appendChild(tip);
 });
+// ---------- Visit statistics ----------
+// Umami (cloud.umami.is) counts visits without cookies; these are the clicks it records as events.
+// Never send names, emails or anything personal: restaurant names, page addresses and choices only.
+function track(name, data) {
+  try { if (window.umami && typeof window.umami.track === "function") window.umami.track(name, data); } catch (e) {}
+}
+const rowName = (el) => { const row = el.closest(".row"); const th = row && row.querySelector("[data-name]"); return th ? th.dataset.name.slice(0, 80) : ""; };
+document.addEventListener("click", (e) => {
+  const el = e.target.closest("a, button");
+  if (!el) return;
+  if (el.tagName === "A" && /^https?:/.test(el.href) && new URL(el.href).host !== location.host) {
+    const host = new URL(el.href).host.replace(/^www\./, "");
+    const kind = el.closest("#sharePanel") ? "share" : el.classList.contains("src") ? "price-source" : el.classList.contains("map") || /google\.[a-z.]+\/maps/.test(el.href) ? "google-maps" : "other";
+    if (kind === "share") track("share", { via: el.textContent.trim() });
+    else track("outbound", { kind, to: host, restaurant: rowName(el) });
+    return;
+  }
+  if (el.dataset.lang) track("language", { lang: el.dataset.lang });
+  else if (el.dataset.currency) track("currency", { currency: el.dataset.currency });
+  else if (el.dataset.meal) track("meal", { meal: el.dataset.meal });
+  else if (el.id === "shareBtn") track("share-open");
+  else if (el.id === "shareCopy") track("share", { via: "copy-link" });
+  else if (el.id === "shareNative") track("share", { via: "phone-share" });
+  else if (el.id === "jumpMap") track("jump-to-map");
+  else if (el.classList.contains("near-btn")) track("near-me");
+});
+// Searches, once the visitor pauses typing.
+let searchTimer = null;
+document.addEventListener("input", (e) => {
+  const el = e.target;
+  if (!el.matches || !el.matches("#q, #homeQ, #mapQ")) return;
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => { const q = el.value.trim(); if (q.length >= 2) track("search", { q: q.slice(0, 50), box: el.id }); }, 1500);
+});
+// Wishlist and been-there changes made on this device (not ones brought in from the account).
+["sb:wishlist", "sb:visited"].forEach((ev) => window.addEventListener(ev, (e) => {
+  if (!e.detail || e.detail.from === "sync") return;
+  const list = ev === "sb:wishlist" ? loadWishlist() : Object.keys(loadVisited());
+  (e.detail.ids || []).forEach((id) => track(ev === "sb:wishlist" ? "wishlist" : "been-there", { action: list.includes(id) ? "add" : "remove", restaurant: id }));
+}));
+
 if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
   window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
 }

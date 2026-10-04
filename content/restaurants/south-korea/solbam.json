@@ -1,0 +1,23 @@
+{
+  "name": "Solbam",
+  "nameKo": "솔밤",
+  "city": "seoul",
+  "area": "Gangnam-gu",
+  "areaKo": "강남구",
+  "address": "2F, 231 Hakdong-ro, Gangnam-gu, Seoul",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 92,
+  "dinner": 320000,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course, about; dinner only",
+  "dinnerNoteKo": "디너 코스, 약, 디너만 운영",
+  "sourceType": "press",
+  "source": "https://www.diningcode.com/profile.php?rid=dsm72nisucKi",
+  "noLunch": true,
+  "website": "https://restaurantsolbam.com/",
+  "lat": 37.51575,
+  "lng": 127.03411,
+  "placeId": "ChIJL2hHUjujfDURbxzijlzZtxs"
+}

@@ -22,8 +22,8 @@ CONTENT, SRC, OUT = ROOT / "content", ROOT / "src", ROOT / "_site"
 SITE_URL = "https://starredbill.com"
 PLACE_TYPES = ("country", "region", "city", "district", "group")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
-LANGUAGES = ("en", "zh", "yue", "fr", "ja", "es", "it")
-LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja", "Es", "It")  # e.g. nameZh, introYue, dinnerNoteFr, areaJa, statusNoteEs
+LANGUAGES = ("en", "zh", "yue", "fr", "ja", "es", "it", "ko")
+LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja", "Es", "It", "Ko")  # e.g. nameZh, introYue, dinnerNoteFr, areaJa, statusNoteEs
 DEFAULT_LANGUAGES = ["en", "zh"]
 PRICE_TYPES = ("menu", "main", "spend")
 STATUSES = ("lost", "closed", "changed")
@@ -376,6 +376,7 @@ def build_place(p):
         "searchEx": search_example(starred, False), "searchExZh": search_example(starred, True),
         "searchExFr": search_example(starred, False, "areaFr"), "searchExJa": search_example(starred, False, "areaJa"),
         "searchExEs": search_example(starred, False, "areaEs"), "searchExIt": search_example(starred, False, "areaIt"),
+        "searchExKo": search_example(starred, False, "areaKo"),
     })
     for field in PLACE_TEXTS:
         for suffix in ("",) + LANG_SUFFIXES:
@@ -562,8 +563,8 @@ def build_redirects():
 
 def build_account_pages():
     """The account page (/account/) and the privacy notice (/privacy/). Signing in and the lists run in the browser (account.js)."""
-    keep = ("id", "name", "nameZh", "nameJa", "stars", "formerStars", "status", "area", "areaZh", "areaJa", "areaEs", "areaIt",
-            "cityName", "cityNameZh", "cityNameJa", "cityNameEs", "cityNameIt", "cityPath", "country", "cur", "dinner", "dinnerType")
+    keep = ("id", "name", "nameZh", "nameJa", "stars", "formerStars", "status", "area", "areaZh", "areaJa", "areaEs", "areaIt", "areaKo", "nameKo",
+            "cityName", "cityNameZh", "cityNameJa", "cityNameEs", "cityNameIt", "cityNameKo", "cityPath", "country", "cur", "dinner", "dinnerType")
     data = {
         "restaurants": [dict({k: r[k] for k in keep if r.get(k) not in (None, "")}, chain=r["_chain"]) for r in restaurants],
         "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] != "group" and starred_n[q["id"]])],

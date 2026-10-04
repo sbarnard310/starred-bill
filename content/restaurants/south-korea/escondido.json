@@ -1,0 +1,22 @@
+{
+  "name": "Escondido",
+  "nameKo": "에스콘디도",
+  "city": "seoul",
+  "area": "Yongsan-gu",
+  "areaKo": "용산구",
+  "address": "B1, 61-7 Hannam-daero 20-gil, Yongsan-gu, Seoul",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "rating": 4.7,
+  "reviews": 31,
+  "dinner": 210000,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; dinner only",
+  "dinnerNoteKo": "디너 코스, 디너만 운영",
+  "sourceType": "press",
+  "source": "https://www.catchtable.net/shop/escondido",
+  "noLunch": true,
+  "lat": 37.53517,
+  "lng": 127.01046,
+  "placeId": "ChIJBYx0XAGjfDUR3NMPYf2_qjY"
+}

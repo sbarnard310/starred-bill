@@ -1,0 +1,19 @@
+{
+  "name": "Gigas",
+  "nameKo": "기가스",
+  "city": "seoul",
+  "area": "Jung-gu",
+  "areaKo": "중구",
+  "address": "3F, 30 Toegye-ro 6ga-gil, Jung-gu, Seoul",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.5,
+  "reviews": 37,
+  "dinnerType": "menu",
+  "dinnerNote": "Seasonal course; price not published",
+  "dinnerNoteKo": "시즌 코스, 가격 비공개",
+  "sourceType": "none",
+  "lat": 37.55696,
+  "lng": 126.97809,
+  "placeId": "ChIJ971zYXGjfDURWeiU2g-VPvI"
+}

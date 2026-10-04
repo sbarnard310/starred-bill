@@ -1,0 +1,22 @@
+{
+  "name": "alla prima",
+  "nameKo": "알라 프리마",
+  "city": "seoul",
+  "area": "Gangnam-gu",
+  "areaKo": "강남구",
+  "address": "13 Hakdong-ro 17-gil, Gangnam-gu, Seoul",
+  "stars": 2,
+  "cuisine": "Innovative",
+  "rating": 4.5,
+  "reviews": 452,
+  "dinner": 370000,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner tasting course",
+  "dinnerNoteKo": "디너 테이스팅 코스",
+  "sourceType": "press",
+  "source": "https://www.catchtable.net/shop/allaprima",
+  "website": "https://www.allaprima.co.kr/",
+  "lat": 37.51346,
+  "lng": 127.02602,
+  "placeId": "ChIJsdM8l_KjfDURobnSNkInVo8"
+}

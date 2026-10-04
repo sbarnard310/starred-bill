@@ -1,0 +1,22 @@
+{
+  "name": "Goryori Ken",
+  "nameKo": "고료리 켄",
+  "city": "seoul",
+  "area": "Gangnam-gu",
+  "areaKo": "강남구",
+  "address": "2F, 15-3 Eonju-ro 152-gil, Gangnam-gu, Seoul",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.4,
+  "reviews": 34,
+  "dinner": 290000,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase course",
+  "dinnerNoteKo": "오마카세 코스",
+  "sourceType": "press",
+  "source": "https://www.siksinhot.com/P/482679",
+  "noLunch": true,
+  "lat": 37.52298,
+  "lng": 127.03478,
+  "placeId": "ChIJzfoBFYajfDUR-x_J11iVJdU"
+}

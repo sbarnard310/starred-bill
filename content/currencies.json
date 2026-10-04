@@ -55,6 +55,11 @@
       "code": "NZD",
       "symbol": "NZ$",
       "perUSD": 1.781468
+    },
+    {
+      "code": "KRW",
+      "symbol": "₩",
+      "perUSD": 1348.606131
     }
   ]
 }

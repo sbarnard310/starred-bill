@@ -1,0 +1,10 @@
+{
+  "id": "seoul",
+  "type": "city",
+  "parent": "south-korea",
+  "name": "Seoul",
+  "nameZh": "首爾",
+  "nameKo": "서울",
+  "intro": "Prices are in South Korean won (₩), with a switch to see them in pounds, euros or US dollars, and include 10% VAT. Prices checked October 2026.",
+  "introKo": "가격은 원화(₩)로 표시하며, 파운드, 유로, 미국 달러로 바꿔 볼 수 있고 부가세 10%가 포함되어 있습니다. 가격은 2026년 10월에 확인했습니다."
+}

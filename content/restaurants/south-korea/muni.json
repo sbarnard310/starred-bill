@@ -1,0 +1,22 @@
+{
+  "name": "Muni",
+  "nameKo": "무니",
+  "city": "seoul",
+  "area": "Gangnam-gu",
+  "areaKo": "강남구",
+  "address": "16 Dosan-daero 72-gil, Gangnam-gu, Seoul",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 99,
+  "dinner": 150000,
+  "dinnerType": "menu",
+  "dinnerNote": "Omakase, 15 dishes (older price)",
+  "dinnerNoteKo": "오마카세, 15가지 요리(이전 가격)",
+  "sourceType": "press",
+  "source": "https://www.diningcode.com/profile.php?rid=TtHVd0VIrEaA",
+  "noLunch": true,
+  "lat": 37.52291,
+  "lng": 127.04545,
+  "placeId": "ChIJ_TH_xA2lfDURO7DMMZXDl9U"
+}

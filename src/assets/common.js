@@ -733,6 +733,136 @@ const I18N = {
     installApp: "Instalar app",
     installTipIos: "Para instalarla: toca el botón Compartir (el cuadrado con una flecha) en Safari y elige “Añadir a pantalla de inicio”."
   },
+  ko: {
+    destJump: "국가·지역으로 이동",
+    notrackOn: "이 브라우저는 이제 방문 통계에서 제외됩니다.", notrackOff: "이 브라우저가 다시 방문 통계에 포함됩니다.",
+    destAreas: "지역과 도시", destRegions: "지역", destCityList: "도시",
+    cookieText: "사이트 이용 방식을 파악하기 위해 Google 애널리틱스 쿠키를 사용해도 될까요? 어느 쪽을 선택해도 방문 수는 쿠키 없이 집계합니다.", cookieAccept: "동의", cookieReject: "거부", cookieSettings: "쿠키 설정 변경",
+    navCompare: "비교", navMap: "지도", navStars: "별 개수별", navMethod: "산정 방법", navContact: "문의", navDestinations: "모든 여행지", wishlist: "위시리스트",
+    pageTitle: "The Starred Bill · {place}",
+    heroEyebrow: "{place} · 미쉐린 가이드 선정 레스토랑",
+    heroTitle: "{place}에서 미쉐린 스타는 <em>얼마</em>일까?",
+    heroText: "{place} 미쉐린 스타 레스토랑의 1인 기준 디너, 런치, 페어링 가격을 나란히 비교하세요. 레스토랑 이름이나 요리로 검색하고, 별 개수나 요리 종류로 걸러 볼 수 있습니다. 가 보고 싶은 곳은 위시리스트에 저장하세요.",
+    crumbHome: "모든 여행지", explore: "둘러보기", exploreCities: "{country}의 도시", exploreDistricts: "{country}의 구역", alsoIn: "함께 보기",
+    figCount: "스타 레스토랑", figMin: "가장 저렴한 디너 코스", figMax: "가장 비싼 디너 코스", figMinLunch: "가장 저렴한 런치 코스", figMaxLunch: "가장 비싼 런치 코스",
+    fMeal: "식사", mealDinner: "디너", mealLunch: "런치", hNotesLunch: "런치 메모", noLunch: "런치 없음", avgLunch: "런치 평균", infoLunch: "런치",
+    sortPriceAscLunch: "런치: 낮은 가격순", sortPriceDescLunch: "런치: 높은 가격순",
+    starCounts: "3스타 {3}곳 · 2스타 {2}곳 · 1스타 {1}곳",
+    compareTitle: "모든 레스토랑, 모든 가격",
+    compareText: "아래에서 디너와 런치를 바꿔 볼 수 있습니다. 가격은 테이스팅 코스 또는 세트 메뉴 기준입니다(‘요리당’이나 ‘평균 예산’으로 표시된 곳 제외). 막대는 각 코스를 목록에서 가장 비싼 코스와 비교한 것이며, 가격마다 출처 링크가 있습니다.",
+    searchPh: "레스토랑, 요리, 지역 검색", searchPhEx: "레스토랑, 요리, 지역 검색(예: {ex})",
+    searchLabel: "이름, 요리, 지역으로 레스토랑 검색",
+    sortLabel: "정렬",
+    sortPriceAsc: "디너: 낮은 가격순", sortPriceDesc: "디너: 높은 가격순", sortStars: "별 많은 순", sortRating: "Google 평점순", sortName: "이름순",
+    fShow: "보기", fStars: "미쉐린 스타", fCuisine: "요리",
+    showAll: "전체 레스토랑", showChanges: "최근 별 변동", showWish: "내 위시리스트",
+    showChangesTitle: "최근 두 번의 미쉐린 가이드에서 별을 얻거나 잃은 레스토랑",
+    all: "전체", starsAria: "미쉐린 {n}스타",
+    hRestaurant: "레스토랑", hCuisine: "요리", hStars: "스타", hGoogle: "Google", hNotes: "디너 메모", hPrice: "가격", hWine: "와인 페어링", hWish: "위시리스트",
+    tableLabel: "레스토랑 가격",
+    reviews: "리뷰 {n}개", ratingAria: "Google 평점 5점 만점에 {r}점",
+    srcSite: "공식 사이트", srcPress: "출처", srcTitle: "이 가격의 출처",
+    perMain: "요리당", typicalSpend: "평균 예산", notListed: "비공개",
+    findOnMaps: "Google 지도에서 {name} 보기", findOnMapsTitle: "Google 지도에서 보기",
+    showOnly: "{cat}만 보기",
+    chgNew: "신규", chgTitle: "{date} 미쉐린 가이드: {note}",
+    emptyWish: "위시리스트에 {place}의 레스토랑이 없습니다. 레스토랑 옆 하트를 누르면 추가됩니다.",
+    emptyPlace: "{place}에는 아직 미쉐린 스타 레스토랑이 없습니다. 별을 받는 곳이 생기면 이 페이지를 업데이트하겠습니다.",
+    emptySee: "{name}의 스타 레스토랑 {n}곳 보기", exploreAll: "모든 여행지",
+    noMatch: "조건에 맞는 레스토랑이 없습니다.", clearFilters: "검색과 필터 지우기",
+    formerTitle: "더 이상 별이 없는 곳",
+    formerNote: "이전 목록에 있었지만 이후 별을 잃었거나, 문을 닫았거나, 변경된 레스토랑입니다. 참고용으로 남겨 둡니다.",
+    formerly: "이전", stLost: "별 상실", stClosed: "폐업", stChanged: "변경",
+    showing: "스타 레스토랑 {b}곳 중 {a}곳 표시", showingFormer: "(별을 잃은 곳 {c}곳 별도)",
+    wishNote: "위시리스트는 이 브라우저에만 저장됩니다.",
+    wishAdd: "{name}을(를) 위시리스트에 추가", wishRemove: "{name}을(를) 위시리스트에서 삭제", wishAddT: "위시리스트에 추가", wishRemoveT: "위시리스트에서 삭제",
+    toastAdded: "{name}을(를) 위시리스트에 추가했습니다", toastRemoved: "{name}을(를) 위시리스트에서 삭제했습니다", undo: "실행 취소",
+    photo: "사진", tempClosed: "임시 휴업(Google)",
+    mapTitle: "모든 스타 레스토랑을 지도로",
+    mapText: "지도의 핀은 위 목록의 필터를 따릅니다. 별 개수, 요리, 위시리스트를 고르면 지도도 바뀝니다. 핀을 누르면 가격과 길찾기 링크가 나옵니다.",
+    mapWait: "여기까지 스크롤하면 지도를 불러옵니다.", mapLabel: "미쉐린 스타 레스토랑 지도",
+    mapError: "지도를 불러오지 못했습니다. 목록의 각 레스토랑 옆 핀으로 Google 지도에서 열 수 있습니다.",
+    legendAria: "핀 색상의 의미", colours: ["보라", "호박색", "초록"], legendItem: "{c} = 미쉐린 {n}스타",
+    mapShowing: "지도에 {n}곳 표시 중", mapNone: "현재 필터에 맞는 레스토랑이 없습니다",
+    nearMe: "내 주변", nearMeAria: "내 주변 스타 레스토랑 보기", nearFinding: "위치 찾는 중…", youAreHere: "현재 위치",
+    nearTitle: "가까운 순", nearAway: "{d}", nearWorld: "세계 지도에서 내 주변 스타 레스토랑 보기",
+    nearNone: "이 페이지의 레스토랑 중 가까운 곳이 없습니다. 가장 가까운 곳은 {name}({d})입니다.",
+    nearDenied: "위치 접근이 꺼져 있습니다. 브라우저 설정에서 이 사이트를 허용한 뒤 다시 시도하세요.",
+    nearFailed: "위치를 찾지 못했습니다. 다시 시도하세요.", nearUnsupported: "이 브라우저는 위치를 공유할 수 없습니다.",
+    jumpMap: "지도", jumpMapAria: "지도로 이동",
+    share: "공유", shareAria: "이 페이지 공유", shareTitle: "이 페이지 공유", shareCopy: "링크 복사", shareCopied: "복사했습니다", shareEmail: "이메일",
+    accTitle: "내 계정", accLoading: "계정을 불러오는 중…", accOutText: "로그인하면 위시리스트와 가 본 레스토랑을 어느 기기에서나 볼 수 있습니다. 무료입니다.",
+    accSignedInAs: "{email}(으)로 로그인됨", accStatBeen: "가 본 곳", accStatStars: "모은 별", accStatThree: "3스타 레스토랑", accStatCountries: "국가",
+    accMilestones: "달성 기록", ms1: "첫 번째 별", ms2: "첫 3스타", ms3: "레스토랑 10곳", ms4: "레스토랑 25곳", ms5: "3개국", ms6: "별 50개", msGot: "(달성)",
+    accWhere: "가 본 곳", accOf: "{total}곳 중 {n}곳", accBeenTitle: "가 본 레스토랑", accBeenEmpty: "아직 체크한 곳이 없습니다. 가 본 레스토랑 옆 ✓를 누르세요.",
+    accDateAria: "{name} 방문 날짜", accRemove: "삭제", accWishTitle: "위시리스트", accWishEmpty: "위시리스트가 비어 있습니다. 레스토랑 옆 하트를 누르면 저장됩니다.",
+    accMarkBeen: "가 봤어요", accData: "내 데이터", accDataText: "계정의 모든 데이터를 내려받거나, 이 기기에서 로그아웃하거나, 계정과 두 목록을 영구히 삭제할 수 있습니다.",
+    accDownload: "내 데이터 내려받기", accSignOut: "로그아웃", accDelete: "계정 삭제", accDeleteConfirm: "계정과 두 목록이 영구히 삭제됩니다. 되돌릴 수 없습니다.",
+    accDeleteYes: "영구 삭제", accDeleteNo: "계정 유지", accDeleted: "계정이 삭제되었습니다.", accDeleteFail: "지금은 계정을 삭제할 수 없습니다. 다시 시도하거나 문의 양식을 이용하세요.",
+    acctSignIn: "로그인", acctAccount: "계정", acctTitle: "로그인 또는 무료 계정 만들기",
+    acctWhy: "위시리스트를 어느 기기에서나 쓰고, 가 본 레스토랑을 체크할 수 있습니다.",
+    acctWhyBeen: "무료 계정을 만들면 가 본 레스토랑을 체크할 수 있습니다. 위시리스트도 어느 기기에서나 쓸 수 있습니다.",
+    acctGoogle: "Google로 계속하기", acctOr: "또는", acctEmailLabel: "이메일 주소", acctSend: "로그인 링크를 이메일로 받기", acctSending: "보내는 중…",
+    acctSent: "이메일을 확인하세요. {email}(으)로 로그인 링크를 보냈습니다. 이 기기에서 열면 로그인됩니다.",
+    acctTooMany: "로그인 이메일 요청이 너무 많습니다. 1분쯤 기다린 뒤 다시 시도하세요.", acctFailed: "문제가 생겼습니다. 이메일 주소를 확인하고 다시 시도하세요.",
+    acctBadEmail: "name@example.com 같은 이메일 주소를 입력하세요.", acctSmall: "무료이며 비밀번호가 필요 없습니다. 이메일은 로그인에만 사용합니다.",
+    acctPrivacy: "개인정보 처리", acctClose: "닫기", acctWelcome: "로그인되었습니다. 이제 위시리스트를 어느 기기에서나 쓸 수 있습니다.",
+    acctLinkExpired: "이 로그인 링크는 만료되었거나 이미 사용되었습니다. ‘로그인’을 눌러 새 링크를 받으세요.",
+    been: "가 봤어요", beenAdd: "{name}에 가 봤다고 표시", beenRemove: "{name}의 ‘가 봤어요’ 해제", beenAddT: "가 봤다고 표시", beenRemoveT: "‘가 봤어요’ 해제",
+    toastBeen: "{name}에 가 봤다고 표시했습니다", toastNotBeen: "{name}의 ‘가 봤어요’를 해제했습니다", showBeen: "가 본 곳",
+    beenProgress: "여기 있는 {total}곳 중 {n}곳에 가 봤습니다.", wishNoteOut: "위시리스트는 이 기기에만 저장됩니다.", wishNoteSignIn: "로그인하면 어느 기기에서나 쓸 수 있습니다",
+    wishNoteIn: "위시리스트와 가 본 곳이 계정에 저장되어 있습니다.", wishCtaHome: "위시리스트는 이 기기에만 저장됩니다. 무료 계정을 만들면 어느 기기에서나 쓰고 가 본 레스토랑을 체크할 수 있습니다.",
+    wishCtaBtn: "무료 가입", wishSynced: "계정에 저장되었습니다.", acctSee: "내 계정 보기",
+    shareInsta: "Instagram에서는 링크를 복사해 스토리나 메시지에 붙여 넣으세요.",
+    shareMore: "Instagram, 메시지 등",
+    shareTextPlace: "{place}에서 미쉐린 스타는 얼마일까? 디너, 런치, 페어링 가격을 나란히 비교.",
+    shareTextHome: "미쉐린 스타는 얼마일까? 도시별 디너, 런치, 페어링 가격을 나란히 비교.",
+    infoDinner: "디너", infoWine: "와인 페어링", infoGoogle: "(Google)", infoOpen: "Google 지도에서 열기", infoNoPrice: "가격 비공개",
+    starsTitle: "별이 하나 늘면 얼마나 더 비쌀까?",
+    starsText: "위에서 고른 식사의 평균 코스 가격을 미쉐린 별 개수별로 보여 줍니다. 단품 위주 레스토랑은 개수에는 포함하지만 평균과 가격 범위에서는 뺐습니다.",
+    tierNames: ["1스타", "2스타", "3스타"], avgDinner: "디너 평균", tRestaurants: "레스토랑 수", tRange: "가격 범위", tRating: "Google 평균 평점",
+    tVs: "{n}스타 대비", tNoPrices: "이 레스토랑들은 코스 가격이 없습니다.", tNone: "{tier} 레스토랑이 없습니다.",
+    methodTitle: "가격 산정 방법",
+    m1Title: "1인 기준, 서비스 요금 별도",
+    m1Text: "모든 가격은 1인 기준이며, 나라마다 다른 서비스 요금은 포함하지 않습니다. 캐비아나 트러플 같은 추가 요금도 포함하지 않습니다. 다른 통화로 표시한 가격은 그날 환율에 따른 대략적인 금액입니다.",
+    m2Title: "가격의 출처",
+    m2Text: "디너는 대표 테이스팅 코스, 와인은 그 코스의 가장 저렴한 페어링입니다. 레스토랑 공식 사이트에 가격이 있으면 그것을, 없으면 최근 리뷰와 예약 사이트를 참고했습니다. 런치는 런치 코스이며, 제공 요일은 메모에 적었습니다.",
+    m3Title: "별과 Google 평점",
+    m3Text: "Google 평점(5점 만점)과 리뷰 수는 2026년 10월에 확인했습니다. 별은 각 나라의 최신 미쉐린 가이드 기준입니다. 초록색 ▲는 최근 두 번의 가이드에서 별을 얻은 곳, 빨간색 ▼는 잃은 곳입니다.",
+    contactTitle: "가격이 바뀐 걸 발견하셨나요?",
+    contactText: "메뉴 가격은 자주 바뀝니다. 새 가격, 빠진 레스토랑, 다음에 다뤘으면 하는 도시를 알려 주세요.",
+    cName: "이름", cEmail: "이메일", cTopic: "주제", cTopicPrice: "가격 업데이트", cTopicSuggest: "레스토랑 제안", cTopicCity: "다른 도시 요청", cTopicOther: "기타",
+    cMsg: "메시지", cMsgPh: "레스토랑 이름, 새 가격, 어디서 보셨는지 알려 주세요.",
+    cSend: "보내기", errName: "이름을 입력하세요.", errEmail: "name@example.com 같은 이메일 주소를 입력하세요.", errMsg: "메시지를 입력하세요.",
+    sent: "{name}님, 감사합니다. 이 양식은 미리보기라 아직 메시지가 전송되지 않습니다.",
+    footEdition: "The Starred Bill · {place}",
+    footNote: "가격과 평점은 2026년 10월에 확인했습니다. 예약 전에 레스토랑에 확인하세요.",
+    rateLine: "{sym} 가격은 {date} 환율에 따른 대략적인 금액입니다: {sym}1 = {home}{rate}.",
+    rateLineMixed: "가격은 {date} 환율로 {sym}에 맞춰 환산한 대략적인 금액입니다.",
+    currencyAria: "가격 표시 통화", crumbsAria: "현재 위치",
+    homeTitle: "The Starred Bill · 미쉐린 스타 레스토랑 가격",
+    homeEyebrow: "미쉐린 가이드 레스토랑 가격",
+    homeH1: "미쉐린 스타는 <em>얼마</em>일까? 도시별로 비교하세요.",
+    homeText: "미쉐린 스타 레스토랑의 1인 기준 디너, 런치, 페어링 가격을 나란히 비교합니다. 가격마다 출처 링크가 있습니다. 여행지를 고르거나 지도에서 찾아보세요.",
+    figRestaurants: "스타 레스토랑", figDestinations: "여행지", figUpdated: "가격 확인", figUpdatedSub: "디너, 런치, 페어링",
+    citiesN: "도시 {n}곳",
+    homeSearchPh: "레스토랑, 요리, 도시 검색", homeSearchLabel: "레스토랑, 요리, 도시 검색", searchNone: "아직 ‘{q}’와 일치하는 항목이 없습니다.",
+    mapHomeTitle: "전 세계 미쉐린 스타 레스토랑",
+    mapHomeText: "확대하면 개별 레스토랑이 보입니다. 핀을 누르면 디너 가격과 그 도시 비교 페이지 링크가 나옵니다.",
+    destTitle: "국가 선택", destText: "여행지마다 가격, 필터, 지도, 별 개수별 평균을 담은 페이지가 있습니다.",
+    destRestaurants: "스타 레스토랑 {n}곳", destFrom: "디너 코스 {p}부터", destOpen: "{place} 비교하기",
+    collectionsTitle: "모아 보기",
+    wishTitle: "내 위시리스트", wishText: "여행지마다 저장한 레스토랑입니다.",
+    wishEmptyHome: "아직 저장한 곳이 없습니다. 여행지 페이지에서 레스토랑 옆 하트를 누르면 여기에 추가됩니다.",
+    wishRemoveShort: "삭제",
+    infoCompare: "{place} 가격 비교",
+    clearSearch: "검색 지우기", photoView: "{name} 사진 크게 보기", photoClose: "닫기",
+    mapSearchPh: "지도 검색: 레스토랑, 도시, 국가", mapSearchLabel: "지도에서 레스토랑, 도시, 국가 검색",
+    mapHomeWorldText: "전 세계 미쉐린 스타 레스토랑 {n}곳. 채워진 핀은 이 사이트에서 가격을 비교할 수 있는 곳이고, 빈 핀은 가격을 추가할 때까지 미쉐린 가이드로 연결됩니다. 확대하면 개별 레스토랑이 보입니다.",
+    infoNoPricesYet: "아직 가격 정보 없음", infoMichelin: "미쉐린 가이드", legendHollow: "빈 핀 = 가격 미등록",
+    installApp: "앱 추가",
+    installTipIos: "추가 방법: Safari 공유 버튼(화살표가 있는 네모)을 누르고 ‘홈 화면에 추가’를 선택하세요."
+  },
   it: {
     destJump: "Vai a un paese",
     notrackOn: "Questo browser non viene più conteggiato nelle statistiche delle visite.", notrackOff: "Questo browser viene di nuovo conteggiato nelle statistiche delle visite.",
@@ -871,6 +1001,11 @@ const CUISINE_ES = {
   "Italian": "Italiana", "French": "Francesa", "Spanish": "Española", "Mediterranean Cuisine": "Mediterránea", "Chinese": "China", "Korean": "Coreana",
   "Indian": "India", "Thai": "Tailandesa", "Greek": "Griega", "Steakhouse": "Carnes"
 };
+const CUISINE_KO = {
+  "Korean": "한식", "Korean Contemporary": "모던 한식", "Contemporary": "컨템퍼러리", "Innovative": "이노베이티브", "Modern Cuisine": "모던 퀴진",
+  "French": "프렌치", "French Contemporary": "컨템퍼러리 프렌치", "Japanese": "일식", "Sushi": "스시", "Chinese": "중식", "Mexican": "멕시칸",
+  "Mediterranean Cuisine": "지중해 요리", "Vegan": "비건", "Italian": "이탈리안", "Steakhouse": "스테이크하우스", "Barbecue": "바비큐"
+};
 const CUISINE_IT = {
   "Modern Cuisine": "Moderna", "Creative": "Creativa", "Contemporary": "Contemporanea", "Classic Cuisine": "Classica", "Traditional Cuisine": "Tradizionale",
   "Regional Cuisine": "Regionale", "Fish and Seafood": "Pesce e frutti di mare", "Seafood": "Frutti di mare", "Japanese": "Giapponese", "Fusion": "Fusion",
@@ -890,7 +1025,8 @@ const LANGS = {
   fr: { label: "FR", html: "fr-FR", suffixes: ["Fr"], locale: "fr-FR" },
   ja: { label: "日本語", html: "ja", suffixes: ["Ja"], locale: "ja-JP" },
   es: { label: "ES", html: "es-ES", suffixes: ["Es"], locale: "es-ES" },
-  it: { label: "IT", html: "it-IT", suffixes: ["It"], locale: "it-IT" }
+  it: { label: "IT", html: "it-IT", suffixes: ["It"], locale: "it-IT" },
+  ko: { label: "한국어", html: "ko", suffixes: ["Ko"], locale: "ko-KR" }
 };
 const DATA = JSON.parse(document.getElementById("page-data").textContent);
 // The languages this page offers (Hong Kong adds Cantonese, France adds French, Japan adds Japanese).
@@ -908,7 +1044,7 @@ const store = {
 const LANG_KEY = "starredbill-lang", WISHLIST_KEY = "starredbill-wishlist", PREFS_KEY = "starredbill-prefs";
 function browserLang() {
   const b = (navigator.language || "").toLowerCase();
-  return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : b.startsWith("es") ? "es" : b.startsWith("it") ? "it" : "en";
+  return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : b.startsWith("es") ? "es" : b.startsWith("it") ? "it" : b.startsWith("ko") ? "ko" : "en";
 }
 // The visitor's choice, kept across pages even where it isn't offered.
 let LANG_PREF = LANGS[params.get("lang")] ? params.get("lang") : store.get(LANG_KEY, browserLang());
@@ -955,6 +1091,7 @@ const fr = () => LANG === "fr";
 const ja = () => LANG === "ja";
 const es = () => LANG === "es";
 const it = () => LANG === "it";
+const ko = () => LANG === "ko";
 // Chinese or Japanese: dates read 2025年9月 and names in brackets use full-width ones.
 const cjk = () => zh() || ja();
 const locale = () => LANGS[LANG].locale;
@@ -975,10 +1112,10 @@ function pick(o, f) {
 const nameOf = (r) => pick(r, "name");
 // The name in a second script under the main one: the English name under a Chinese or Japanese one,
 // otherwise the Japanese or Chinese name under the English one.
-const altNameOf = (r) => ja() ? (r.nameJa ? r.name : "") : zh() ? (r.nameZh ? r.name : r.nameJa || "") : (r.nameJa || r.nameZh || "");
-const altLangOf = (r) => altNameOf(r) === r.name ? "en" : altNameOf(r) === r.nameJa ? "ja" : "zh-Hant";
+const altNameOf = (r) => ja() ? (r.nameJa ? r.name : "") : ko() ? (r.nameKo ? r.name : "") : zh() ? (r.nameZh ? r.name : r.nameJa || "") : (r.nameJa || r.nameKo || r.nameZh || "");
+const altLangOf = (r) => altNameOf(r) === r.name ? "en" : altNameOf(r) === r.nameJa ? "ja" : altNameOf(r) === r.nameKo ? "ko" : "zh-Hant";
 const cuisineOf = (r) => zh() ? (r.cuisineZh || CUISINE_ZH[r.cuisine] || r.cuisine) : fr() ? (r.cuisineFr || CUISINE_FR[r.cuisine] || r.cuisine) :
-  es() ? (r.cuisineEs || CUISINE_ES[r.cuisine] || r.cuisine) : it() ? (r.cuisineIt || CUISINE_IT[r.cuisine] || r.cuisine) : ja() ? (r.cuisineJa || r.cuisine) : r.cuisine;
+  es() ? (r.cuisineEs || CUISINE_ES[r.cuisine] || r.cuisine) : it() ? (r.cuisineIt || CUISINE_IT[r.cuisine] || r.cuisine) : ko() ? (r.cuisineKo || CUISINE_KO[r.cuisine] || r.cuisine) : ja() ? (r.cuisineJa || r.cuisine) : r.cuisine;
 const withLang = (path) => path + "?lang=" + LANG_PREF;
 const MONTHS = { en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
   fr: ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."],
@@ -987,7 +1124,7 @@ const MONTHS = { en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "S
 const monthYear = (ym) => {
   const [y, m] = String(ym || "").split("-");
   if (!m) return y || "";
-  return cjk() ? y + "年" + Number(m) + "月" : (MONTHS[LANG] || MONTHS.en)[Number(m) - 1] + " " + y;
+  return cjk() ? y + "年" + Number(m) + "月" : ko() ? y + "년 " + Number(m) + "월" : (MONTHS[LANG] || MONTHS.en)[Number(m) - 1] + " " + y;
 };
 const starIcons = (n) => '<span class="stars" aria-label="' + esc(t("starsAria", { n })) + '">' + '<svg><use href="#star"/></svg>'.repeat(n) + "</span>";
 const heart = '<svg aria-hidden="true"><use href="#heart"/></svg>';
@@ -1038,7 +1175,7 @@ function loadGoogle() {
   if (!mapsBoot) mapsBoot = new Promise((resolve, reject) => {
     window.__starredBillMaps = resolve;
     const s = document.createElement("script");
-    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja", es: "es", it: "it" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
+    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja", es: "es", it: "it", ko: "ko" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
     s.async = true;
     s.onerror = reject;
     document.head.appendChild(s);

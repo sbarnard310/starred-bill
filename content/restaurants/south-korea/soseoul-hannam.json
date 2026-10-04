@@ -1,0 +1,18 @@
+{
+  "name": "Soseoul Hannam",
+  "nameKo": "소설한남",
+  "city": "seoul",
+  "area": "Yongsan-gu",
+  "areaKo": "용산구",
+  "address": "B1F, 21-18 Hannam-daero 20-gil, Yongsan-gu, Seoul",
+  "stars": 0,
+  "cuisine": "Korean",
+  "status": "closed",
+  "formerStars": 1,
+  "dinnerType": "menu",
+  "statusNote": "Closed for good on 20 August 2026",
+  "statusNoteKo": "2026년 8월 20일 폐업",
+  "lat": 37.53528,
+  "lng": 127.00914,
+  "placeId": "ChIJ8R_CLEWjfDUR3HHfL-sNAiA"
+}

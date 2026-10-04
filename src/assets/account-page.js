@@ -26,7 +26,7 @@ function milestones(been) {
   const countries = new Set(been.map((r) => r.country)).size;
   const list = [["ms1", been.length >= 1], ["ms2", been.some((r) => starsOf(r) === 3)], ["ms3", been.length >= 10], ["ms4", been.length >= 25], ["ms5", countries >= 3], ["ms6", stars >= 50]];
   return '<section class="acct-section"><h2>' + esc(t("accMilestones")) + '</h2><ul class="milestones">' + list.map(([k, got]) =>
-    '<li class="' + (got ? "got" : "") + '"><svg aria-hidden="true"><use href="#rosette"/></svg><span>' + esc(t(k)) + "</span>" + (got ? '<span class="sr-only">' + esc(t("msGot")) + "</span>" : "") + "</li>").join("") + "</ul></section>";
+    '<li class="' + (got ? "got" : "") + '"><svg aria-hidden="true"><use href="#star"/></svg><span>' + esc(t(k)) + "</span>" + (got ? '<span class="sr-only">' + esc(t("msGot")) + "</span>" : "") + "</li>").join("") + "</ul></section>";
 }
 
 // Progress for each country, region, city or district you've been to at least once.
@@ -47,7 +47,7 @@ function beenList(been) {
   return '<section class="acct-section"><h2>' + esc(t("accBeenTitle")) + ' <span class="count">' + been.length + "</span></h2>" +
     (!items.length ? '<p class="empty-note">' + esc(t("accBeenEmpty")) + "</p>" : '<ul class="acct-list">' + items.map((r) =>
       '<li><div class="al-main"><a class="al-name" href="' + pageLink(r) + '">' + esc(nameOf(r)) + "</a>" +
-      '<span class="al-meta">' + rosettes(starsOf(r)) + (r.status ? " " + esc(t("formerly")) : "") + " · " + esc(whereOf(r)) + "</span></div>" +
+      '<span class="al-meta">' + starIcons(starsOf(r)) + (r.status ? " " + esc(t("formerly")) : "") + " · " + esc(whereOf(r)) + "</span></div>" +
       '<label class="al-date"><span class="sr-only">' + esc(t("accDateAria", { name: nameOf(r) })) + '</span><input type="date" data-date="' + esc(r.id) + '" value="' + esc(visited[r.id] || "") + '" max="' + new Date().toISOString().slice(0, 10) + '"></label>' +
       '<button type="button" class="linkish" data-unbeen="' + esc(r.id) + '">' + esc(t("accRemove")) + "</button></li>").join("") + "</ul>") + "</section>";
 }
@@ -58,7 +58,7 @@ function wishList() {
   return '<section class="acct-section"><h2>' + esc(t("accWishTitle")) + ' <span class="count">' + list.length + "</span></h2>" +
     (!list.length ? '<p class="empty-note">' + esc(t("accWishEmpty")) + "</p>" : '<ul class="acct-list">' + list.map((r) =>
       '<li><div class="al-main"><a class="al-name" href="' + pageLink(r) + '">' + esc(nameOf(r)) + "</a>" +
-      '<span class="al-meta">' + rosettes(starsOf(r)) + " · " + esc(whereOf(r)) + (r.dinner != null ? " · " + esc(localMoney(r.dinner, r.cur)) : "") + "</span></div>" +
+      '<span class="al-meta">' + starIcons(starsOf(r)) + " · " + esc(whereOf(r)) + (r.dinner != null ? " · " + esc(localMoney(r.dinner, r.cur)) : "") + "</span></div>" +
       (r.id in visited ? '<span class="al-been"><svg aria-hidden="true"><use href="#check"/></svg>' + esc(t("been")) + "</span>"
         : '<button type="button" class="linkish" data-markbeen="' + esc(r.id) + '">' + esc(t("accMarkBeen")) + "</button>") +
       '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '">' + esc(t("accRemove")) + "</button></li>").join("") + "</ul>") + "</section>";

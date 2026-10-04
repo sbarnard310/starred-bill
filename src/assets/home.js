@@ -66,7 +66,7 @@ function renderWishlist() {
     : '<div class="wish-cta"><p>' + esc(t("wishCtaHome")) + '</p><button type="button" class="cta-btn" data-signin="">' + esc(t("wishCtaBtn")) + "</button></div>";
   if (!list.length) { $("wishList").innerHTML = '<p class="empty-note">' + t("wishEmptyHome") + "</p>" + where; return; }
   $("wishList").innerHTML = where + '<ul class="wish-list">' + list.map((r) =>
-    '<li><a class="wl-name" href="' + cityLink(r) + '">' + esc(nameOf(r)) + '</a><span class="wl-meta">' + rosettes(r.stars) + " " + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + "</span>" +
+    '<li><a class="wl-name" href="' + cityLink(r) + '">' + esc(nameOf(r)) + '</a><span class="wl-meta">' + starIcons(r.stars) + " " + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + "</span>" +
     '<span class="wl-price num">' + esc(r.dinner == null ? "–" : localMoney(r.dinner, r.cur)) + "</span>" +
     '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '" aria-label="' + esc(t("wishRemove", { name: nameOf(r) })) + '">' + t("wishRemoveShort") + "</button></li>").join("") + "</ul>";
 }
@@ -79,7 +79,7 @@ function renderResults() {
   const places = DATA.places.filter((p) => has(p.name, p.nameZh)).slice(0, 4).map((p) =>
     '<li><a href="' + withLang(p.path) + '"><span>' + esc(pick(p, "name")) + '</span><span class="sub">' + esc(t("destRestaurants", { n: p.n })) + "</span></a></li>");
   const rests = ALL.filter((r) => has(r.name, r.nameZh, r.nameJa, r.cuisine, r.cuisineZh, CUISINE_ZH[r.cuisine], r.town, r.cityName, r.cityNameZh)).slice(0, 8 - places.length).map((r) =>
-    '<li><a href="' + cityLink(r) + '"><span>' + esc(nameOf(r)) + " " + rosettes(r.stars) + '</span><span class="sub">' + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + " · " + esc(priceLabel(r)) + "</span></a></li>");
+    '<li><a href="' + cityLink(r) + '"><span>' + esc(nameOf(r)) + " " + starIcons(r.stars) + '</span><span class="sub">' + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + " · " + esc(priceLabel(r)) + "</span></a></li>");
   const items = places.concat(rests);
   $("results").innerHTML = items.length ? items.join("") : '<li class="none">' + esc(t("searchNone", { q: $("homeQ").value.trim() })) + "</li>";
   $("results").hidden = false;
@@ -219,7 +219,7 @@ function mapSearch() {
   mapHits = places.map((g) => ({ place: g })).concat(rests.map((m) => ({ marker: m })));
   $("mapResults").innerHTML = mapHits.length ? mapHits.map((h, i) => h.place
     ? '<li><a href="#map" data-hit="' + i + '"><span>' + esc(h.place.label) + '</span><span class="sub">' + esc(t("destRestaurants", { n: h.place.markers.length })) + "</span></a></li>"
-    : '<li><a href="#map" data-hit="' + i + '"><span>' + esc(h.marker.r ? nameOf(h.marker.r) : h.marker.w.name) + " " + rosettes(h.marker.stars) + '</span><span class="sub">' +
+    : '<li><a href="#map" data-hit="' + i + '"><span>' + esc(h.marker.r ? nameOf(h.marker.r) : h.marker.w.name) + " " + starIcons(h.marker.stars) + '</span><span class="sub">' +
       esc(h.marker.where) + "</span></a></li>").join("")
     : '<li class="none">' + esc(t("searchNone", { q: $("mapQ").value.trim() })) + "</li>";
   $("mapResults").hidden = false;
@@ -246,7 +246,7 @@ function showHit(i) {
 const pinStars = () => world.loaded ? world.markers.map((m) => ({ stars: m.stars })) : ALL;
 function renderMapStars() {
   const list = pinStars();
-  const opts = [{ s: 0, label: t("all"), n: list.length }].concat([1, 2, 3].map((s) => ({ s, label: rosettes(s), n: list.filter((r) => r.stars === s).length })));
+  const opts = [{ s: 0, label: t("all"), n: list.length }].concat([1, 2, 3].map((s) => ({ s, label: starIcons(s), n: list.filter((r) => r.stars === s).length })));
   $("mapStars").innerHTML = opts.map((o) =>
     '<button type="button" data-mapstars="' + o.s + '" aria-pressed="' + (homeState.stars === o.s) + '"' + (o.s ? ' aria-label="' + esc(t("starsAria", { n: o.s })) + '"' : "") + ">" + o.label + '<span class="count">' + o.n.toLocaleString("en-GB") + "</span></button>").join("");
 }

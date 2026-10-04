@@ -970,7 +970,7 @@ const monthYear = (ym) => {
   if (!m) return y || "";
   return cjk() ? y + "年" + Number(m) + "月" : (MONTHS[LANG] || MONTHS.en)[Number(m) - 1] + " " + y;
 };
-const rosettes = (n) => '<span class="stars" aria-label="' + esc(t("starsAria", { n })) + '">' + '<svg><use href="#rosette"/></svg>'.repeat(n) + "</span>";
+const starIcons = (n) => '<span class="stars" aria-label="' + esc(t("starsAria", { n })) + '">' + '<svg><use href="#star"/></svg>'.repeat(n) + "</span>";
 const heart = '<svg aria-hidden="true"><use href="#heart"/></svg>';
 // A symbol made of letters, e.g. "DKK", gets a space before the amount: "DKK 4,400".
 const symbolOf = (cur) => { const s = DATA.currencies[cur].symbol; return /[A-Za-z]$/.test(s) ? s + "\u00a0" : s; };
@@ -1072,7 +1072,7 @@ function addNearMe(map, points, { radius = Infinity, far = null } = {}) {
     const { near, closest } = last;
     box.innerHTML = near.length
       ? '<h3 class="near-title">' + esc(t("nearTitle")) + '</h3><ol class="near-list">' + near.map((x, i) =>
-        '<li><button type="button" data-near="' + i + '"><span class="near-name">' + esc(x.name()) + " " + rosettes(x.stars) + '</span><span class="near-d">' +
+        '<li><button type="button" data-near="' + i + '"><span class="near-name">' + esc(x.name()) + " " + starIcons(x.stars) + '</span><span class="near-d">' +
         esc(t("nearAway", { d: distanceText(x.d) })) + "</span></button></li>").join("") + "</ol>"
       : '<p class="near-msg">' + esc(closest ? t("nearNone", { name: closest.name(), d: distanceText(closest.d) }) : t("mapNone")) +
         (far ? ' <a href="' + esc(far) + '">' + esc(t("nearWorld")) + " →</a>" : "") + "</p>";

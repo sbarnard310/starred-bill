@@ -163,7 +163,7 @@ function renderShowFilter() {
 }
 function renderStarFilter() {
   const base = RESTAURANTS.filter(wishMatch);
-  const opts = [{ s: 0, label: t("all"), n: base.length }].concat([1, 2, 3].map((s) => ({ s, label: rosettes(s), n: base.filter((r) => r.stars === s).length })));
+  const opts = [{ s: 0, label: t("all"), n: base.length }].concat([1, 2, 3].map((s) => ({ s, label: starIcons(s), n: base.filter((r) => r.stars === s).length })));
   $("starFilter").innerHTML = opts.map((o) =>
     '<button type="button" data-stars="' + o.s + '" aria-pressed="' + (state.activeStars === o.s) + '"' + (o.s ? ' aria-label="' + esc(t("starsAria", { n: o.s })) + '"' : "") + ">" + o.label + '<span class="count">' + o.n + "</span></button>").join("");
 }
@@ -208,7 +208,7 @@ function renderLedger() {
     const on = onWishlist(r);
     html += '<div class="row' + (L() && r.noLunch ? " nolunch" : "") + '" role="row">' + nameCell(r) +
       '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cuisine) + '" title="' + esc(t("showOnly", { cat: cuisineOf(r) })) + '">' + esc(cuisineOf(r)) + "</button></span>" +
-      '<span class="stars-cell" role="cell">' + rosettes(r.stars) + changeBadge(r) + "</span>" +
+      '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
       '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + "</span>" : "") : '<span class="num muted">–</span>') + "</span>" +
       '<span class="notes" role="cell">' + (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc(noteOf(r) || "–") +
         (srcOf(r) && srcTypeOf(r) !== "none" ? ' <a class="src" href="' + esc(srcOf(r)) + '" target="_blank" rel="noopener" title="' + esc(t("srcTitle")) + '">' + (srcTypeOf(r) === "site" ? t("srcSite") : t("srcPress")) + "</a>" : "") + "</span>" +
@@ -226,7 +226,7 @@ function renderLedger() {
     former.sort((a, b) => nameOf(a).localeCompare(nameOf(b))).forEach((r) => {
       html += '<div class="row former" role="row">' + nameCell(r) +
         '<span class="cat" role="cell"><span class="tag">' + esc(cuisineOf(r)) + "</span></span>" +
-        '<span class="stars-cell" role="cell">' + rosettes(r.formerStars) + '<span class="note">' + t("formerly") + "</span></span>" +
+        '<span class="stars-cell" role="cell">' + starIcons(r.formerStars) + '<span class="note">' + t("formerly") + "</span></span>" +
         '<span class="rating-cell" role="cell"><span class="num muted">–</span></span>' +
         '<span class="notes" role="cell"><span class="status-pill status-' + esc(r.status) + '">' + (r.change === "down" ? "▼ " : "") + (label[r.status] || label.changed) + "</span>" + esc(pick(r, "statusNote")) + "</span>" +
         '<span class="dinner" role="cell"><span class="dprice"><span class="num muted">–</span></span></span>' +
@@ -266,7 +266,7 @@ function renderTiers() {
   const names = t("tierNames");
   $("tiers").innerHTML = tiers.map((x, i) => {
     const prev = i > 0 && tiers[i - 1].priced && x.priced ? x.avg - tiers[i - 1].avg : null;
-    return '<div class="tier"><div class="top"><h3>' + names[x.s - 1] + "</h3>" + rosettes(x.s) + "</div>" +
+    return '<div class="tier"><div class="top"><h3>' + names[x.s - 1] + "</h3>" + starIcons(x.s) + "</div>" +
       (x.priced
         ? '<div class="avg">' + money(x.avg) + "<small>" + t(L() ? "avgLunch" : "avgDinner") + "</small></div>" +
           '<div class="bar"><span style="width:' + (x.avg / top * 100).toFixed(1) + '%"></span></div>' +

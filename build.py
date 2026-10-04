@@ -345,7 +345,8 @@ ICONS = (SRC / "icons.svg").read_text("utf-8").strip()
 def render(template, values):
     out = (SRC / template).read_text("utf-8")
     out = re.sub(r"\{\{asset:([\w.-]+)\}\}", lambda m: f"/assets/{m.group(1)}?v={assets[m.group(1)]}", out)
-    values = dict(values, icons=ICONS)
+    # Link-preview picture: the page's own (src/og/<place id>.png, from scripts/og_images.py) or the homepage's.
+    values = dict({"ogImage": SITE_URL + "/og/default.png", "ogAlt": "The Starred Bill: what a Michelin star costs, city by city"}, **values, icons=ICONS)
     out = re.sub(r"\{\{(\w+)\}\}", lambda m: values[m.group(1)], out)
     return out
 
@@ -405,7 +406,16 @@ def build_place(p):
         "heroText": e((f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {where}, side by side." + (" " + intro if intro else ""))
                       if starred else f"There are currently no restaurants with a Michelin star in {where}, but we'll update this page as soon as one appears."),
         "crumbs": crumb_html, "explore": explore_html, "ledger": ledger, "data": as_json(data),
+        "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}"),
     }))
+
+
+def og_image(p):
+    """The page's link-preview picture, else the nearest place above it that has one, else the homepage's."""
+    for pid in (chain(p["id"]) if p["type"] != "group" else [p["id"]]):
+        if (SRC / "og" / f"{pid}.png").exists():
+            return f"{SITE_URL}/og/{pid}.png"
+    return f"{SITE_URL}/og/default.png"
 
 
 def norm_name(s):
@@ -547,6 +557,8 @@ def build_extras():
     shutil.copy2(SRC / "404.html", OUT / "404.html")
     shutil.copy2(SRC / "manifest.webmanifest", OUT / "manifest.webmanifest")
     shutil.copytree(SRC / "icons", OUT / "icons")
+    if (SRC / "og").exists():
+        shutil.copytree(SRC / "og", OUT / "og")
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
     urls = ["/"] + [p["path"] for p in by_size(pages)] + ["/privacy/"]

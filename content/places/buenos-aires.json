@@ -1,0 +1,9 @@
+{
+  "id": "buenos-aires",
+  "type": "city",
+  "parent": "argentina",
+  "name": "Buenos Aires",
+  "nameEs": "Buenos Aires",
+  "intro": "Prices are in Argentine pesos (ARS), with a switch to see them in pounds, euros or US dollars, including 21% VAT but not the tip. Prices checked October 2026.",
+  "introEs": "Los precios están en pesos argentinos (ARS), con un selector para verlos en libras, euros o dólares, con el 21 % de IVA incluido pero sin la propina. Precios revisados en octubre de 2026."
+}

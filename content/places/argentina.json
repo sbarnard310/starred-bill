@@ -1,0 +1,19 @@
+{
+  "id": "argentina",
+  "type": "country",
+  "name": "Argentina",
+  "nameEs": "Argentina",
+  "currency": "ARS",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "intro": "Prices are in Argentine pesos (ARS), with a switch to see them in pounds, euros or US dollars. They include 21% VAT but not the tip. Peso prices rise often, so these were checked in October 2026 (mostly from a July 2026 round-up) and may have gone up since.",
+  "introEs": "Los precios están en pesos argentinos (ARS), con un selector para verlos en libras, euros o dólares. Incluyen el 21 % de IVA, pero no la propina. Los precios en pesos suben a menudo: se revisaron en octubre de 2026 (sobre todo a partir de un resumen de julio de 2026) y pueden haber subido desde entonces.",
+  "serviceText": "Every figure is for one guest. Argentine menu prices include 21% VAT; service isn't added to the bill, and a tip of around 10% is customary. Some restaurants also charge a small cover (cubierto). Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextEs": "Cada importe es para un comensal. Los precios de los menús en Argentina incluyen el 21 % de IVA; el servicio no se suma a la cuenta y se acostumbra a dejar alrededor de un 10 % de propina. Algunos restaurantes cobran además un pequeño cubierto. Los precios en otras monedas usan el tipo de cambio del día y son aproximados.",
+  "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Several Mendoza winery restaurants open only at lunch; for those the same menu is shown under both Dinner and Lunch, with a note. Prices come from each restaurant's own website where they're published, otherwise from recent Argentine press.",
+  "sourcesTextEs": "La cena es el menú degustación principal del restaurante, y el vino es su maridaje cuando lo hay. Varios restaurantes de bodega de Mendoza solo abren al mediodía; en esos casos el mismo menú aparece en Cena y en Almuerzo, con una nota. Los precios salen de la web de cada restaurante cuando los publica y, si no, de la prensa argentina reciente.",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Argentina 2026, announced in July 2026; green ▲ marks the four restaurants that gained their first star in it.",
+  "starsTextEs": "La nota de Google sobre 5 y el número de reseñas se revisaron en octubre de 2026. Las estrellas son de la Guía MICHELIN Argentina 2026, presentada en julio de 2026; el ▲ verde marca los cuatro restaurantes que consiguieron en ella su primera estrella."
+}

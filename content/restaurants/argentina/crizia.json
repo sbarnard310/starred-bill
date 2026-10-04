@@ -1,0 +1,23 @@
+{
+  "name": "Crizia",
+  "city": "buenos-aires",
+  "area": "Palermo",
+  "areaEs": "Palermo",
+  "address": "Fitz Roy 1819, Palermo, Buenos Aires",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "cuisineEs": "Contemporánea",
+  "rating": 4.6,
+  "reviews": 1526,
+  "dinner": 260000,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (shorter menu ARS 180,000); dinner only, Mon–Sat",
+  "dinnerNoteEs": "Menú degustación más largo (menú corto 180.000 ARS); solo cenas, de lunes a sábado",
+  "sourceType": "press",
+  "source": "https://www.iprofesional.com/vinos/460011-cuanto-cuesta-comer-en-14-restaurantes-argentinos-premiados-con-estrellas-michelin",
+  "noLunch": true,
+  "website": "https://www.crizia.com.ar",
+  "lat": -34.583215,
+  "lng": -58.435084,
+  "placeId": "ChIJ02MiFom1vJURSNqKehH_raQ"
+}

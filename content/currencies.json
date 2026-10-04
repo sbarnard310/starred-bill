@@ -65,6 +65,11 @@
       "code": "QAR",
       "symbol": "QAR",
       "perUSD": 3.64
+    },
+    {
+      "code": "ARS",
+      "symbol": "ARS",
+      "perUSD": 1523.0868
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "name": "ÓX",
+  "city": "reykjavik",
+  "area": "Laugavegur",
+  "address": "Laugavegur 55, Reykjavík",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 227,
+  "dinner": 28000,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 16 courses, at an 11-seat counter; Tue–Sat",
+  "wine": 21000,
+  "sourceType": "press",
+  "source": "https://thenordicnomad.com/eat-drink/all-the-michelin-star-restaurants-in-reykjavik-and-iceland-2026-edition/",
+  "website": "https://ox.restaurant/",
+  "lat": 64.1446561,
+  "lng": -21.9234607,
+  "placeId": "ChIJ4cwndD911kgREr5O8AbXe7E"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "iceland",
+  "type": "country",
+  "name": "Iceland",
+  "currency": "ISK",
+  "intro": "Prices are in Icelandic krónur (ISK), with a switch to see them in pounds, euros or US dollars. Menu prices include VAT and service; tipping isn't expected. Prices checked October 2026.",
+  "serviceText": "Every figure is for one guest. Icelandic menu prices include VAT and service, so there's nothing to add for food; tipping isn't expected. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "sourcesText": "Dinner is the restaurant's tasting menu, and wine is its wine pairing. Prices come from each restaurant's own website where they're published, otherwise from recent reviews.",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the 2026 MICHELIN Guide Nordic Countries."
+}

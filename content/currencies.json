@@ -75,6 +75,11 @@
       "code": "MXN",
       "symbol": "MX$",
       "perUSD": 18.214153
+    },
+    {
+      "code": "ISK",
+      "symbol": "ISK",
+      "perUSD": 121.721894
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "name": "Moss",
+  "city": "iceland",
+  "area": "Grindavík, Blue Lagoon",
+  "address": "The Retreat at Blue Lagoon, Norðurljósavegur 11, Grindavík",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 195,
+  "dinner": 39900,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; dinner only, Wed–Sun (kitchen table ISK 180,000 with wines)",
+  "sourceType": "site",
+  "source": "https://www.bluelagoon.com/restaurant/moss",
+  "noLunch": true,
+  "website": "https://www.bluelagoon.com/restaurant/moss",
+  "lat": 63.8801207,
+  "lng": -22.4502404,
+  "placeId": "ChIJhQptAHcd1kgR3TKqo6ANnTo"
+}

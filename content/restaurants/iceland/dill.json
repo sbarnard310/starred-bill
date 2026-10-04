@@ -1,0 +1,21 @@
+{
+  "name": "Dill",
+  "city": "reykjavik",
+  "area": "Laugavegur",
+  "address": "Laugavegur 59, Reykjavík",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 652,
+  "dinner": 27500,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, 13 courses; dinner only, Tue–Sat",
+  "wine": 19500,
+  "sourceType": "press",
+  "source": "https://thenordicnomad.com/eat-drink/all-the-michelin-star-restaurants-in-reykjavik-and-iceland-2026-edition/",
+  "noLunch": true,
+  "website": "https://www.dillrestaurant.is/",
+  "lat": 64.1443654,
+  "lng": -21.922443,
+  "placeId": "ChIJxeTXptJ01kgR4Dcvo45O5Cs"
+}

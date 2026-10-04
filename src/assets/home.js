@@ -35,12 +35,22 @@ function destCard(c) {
     '<div class="dest-top"><h3><a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a></h3></div>" +
     '<p class="dest-meta">' + esc(t("destRestaurants", { n: c.n })) + " · " + esc(starCountsOf(ALL.filter((r) => r.country === c.id))) + "</p>" +
     (c.from ? '<p class="dest-from">' + esc(t("destFrom", { p: localMoney(c.from.price, c.from.cur) })) + ' <span class="dest-from-name">' + esc(pick(c.from, "name")) + "</span></p>" : "") +
-    (c.cities.length > 1 || (c.cities[0] && c.cities[0].path !== c.path) ? '<div class="dest-cities">' + c.cities.map((p) =>
-      '<a class="city-link" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>").join("") + "</div>" : "") +
+    (c.cities.length > 1 || (c.cities[0] && c.cities[0].path !== c.path) ? destAreas(c) : "") +
     '<a class="dest-open" href="' + withLang(c.path) + '">' + esc(t("destOpen", { place: pick(c, "name") })) + " →</a></article>";
 }
+// A country's regions and cities fold away under one button, so cards stay short as destinations grow.
+const destOpen = new Set();
+function destAreas(c) {
+  const chip = (p) => '<a class="city-link" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>";
+  const regions = c.cities.filter((p) => p.type === "region"), cities = c.cities.filter((p) => p.type !== "region");
+  const group = (label, list) => !list.length ? "" : (regions.length && cities.length ? '<p class="dest-sub">' + esc(label) + "</p>" : "") +
+    '<div class="dest-cities">' + list.map(chip).join("") + "</div>";
+  return '<details class="dest-more" data-country="' + esc(c.id) + '"' + (destOpen.has(c.id) ? " open" : "") + '><summary>' + esc(t(regions.length && cities.length ? "destAreas" : regions.length ? "destRegions" : "destCityList")) +
+    ' <span class="count">' + c.cities.length + "</span></summary>" + group(t("destRegions"), regions) + group(t("destCityList"), cities) + "</details>";
+}
 function renderDestinations() {
-  $("destGrid").innerHTML = DATA.countries.map(destCard).join("");
+  const coll = new Intl.Collator(locale());
+  $("destGrid").innerHTML = DATA.countries.slice().sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name"))).map(destCard).join("");
   $("collections").innerHTML = !DATA.groups.length ? "" :
     '<h3 class="sub-head">' + t("collectionsTitle") + '</h3><div class="dest-cities">' + DATA.groups.map((g) =>
       '<a class="city-link" href="' + withLang(g.path) + '">' + esc(pick(g, "name")) + '<span class="count">' + g.n + "</span></a>").join("") + "</div>";
@@ -282,3 +292,8 @@ window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY) renderWi
 
 renderAll();
 if (GOOGLE_MAPS_API_KEY) initWorldMap(); else $("map").hidden = true;
+// Keep a country's list open when the page redraws (e.g. after a language change).
+document.addEventListener("toggle", (e) => {
+  const d = e.target;
+  if (d.classList && d.classList.contains("dest-more")) d.open ? destOpen.add(d.dataset.country) : destOpen.delete(d.dataset.country);
+}, true);

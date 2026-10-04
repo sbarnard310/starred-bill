@@ -485,6 +485,7 @@ def build_home():
         "currencies": CURRENCIES, "updated": site.get("updated", ""),
         "worldUrl": world_url, "worldTotal": world_total, "languages": DEFAULT_LANGUAGES,
     }
+    countries.sort(key=lambda c: c["name"])  # A to Z (the page re-sorts in the visitor's language)
     country_names = ", ".join(c["name"] for c in countries)
     cards = "".join(
         f'<article class="dest"><div class="dest-top"><h3><a href="{c["path"]}">{e(c["name"])}</a></h3></div>'

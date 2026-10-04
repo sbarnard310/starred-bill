@@ -315,6 +315,15 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
 .dest-cities { display: flex; flex-wrap: wrap; gap: 8px; }
 .city-link { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); text-decoration: none; font-size: .88rem; font-weight: 500; }
 .city-link:hover { border-color: var(--green); color: var(--green); }
+.dest-more { border-top: 1px solid var(--line); padding-top: 10px; }
+.dest-more > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--ink); padding: 4px 0; }
+.dest-more > summary::-webkit-details-marker { display: none; }
+.dest-more > summary::after { content: ""; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); margin: -4px 0 0 auto; transition: transform .15s; }
+.dest-more[open] > summary::after { transform: rotate(-135deg); margin-top: 4px; }
+.dest-more > summary .count { color: var(--muted); font-weight: 400; font-size: .85rem; }
+.dest-more > summary:hover { color: var(--green); }
+.dest-more .dest-cities { margin-top: 8px; }
+.dest-sub { color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; margin-top: 10px; }
 .dest-open { font-weight: 600; color: var(--green); text-decoration: none; justify-self: start; }
 .dest-open:hover { text-decoration: underline; text-underline-offset: 3px; }
 .sub-head { font-size: 1.2rem; margin: 28px 0 12px; }

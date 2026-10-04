@@ -11,6 +11,7 @@ const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#097138" };
 // "one|many" picks the singular when {n} is 1.
 const I18N = {
   en: {
+    destAreas: "Regions and cities", destRegions: "Regions", destCityList: "Cities",
     cookieText: "Can we use Google Analytics cookies to see how people use the site? Visits are counted without cookies either way.", cookieAccept: "Accept", cookieReject: "Reject", cookieSettings: "Change cookie choice",
     navCompare: "Compare", navMap: "Map", navStars: "By stars", navMethod: "Method", navContact: "Contact", navDestinations: "Destinations", wishlist: "Wishlist",
     pageTitle: "The Starred Bill · {place}",
@@ -139,6 +140,7 @@ const I18N = {
     installTipIos: "To install: tap the Share button (the square with an arrow) in Safari, then choose “Add to Home Screen”."
   },
   zh: {
+    destAreas: "地區與城市", destRegions: "地區", destCityList: "城市",
     cookieText: "我們可以使用 Google Analytics Cookie 來了解大家如何使用本網站嗎？無論你怎麼選，我們都只以不使用 Cookie 的方式計算瀏覽量。", cookieAccept: "接受", cookieReject: "拒絕", cookieSettings: "更改 Cookie 選擇",
     navCompare: "比較", navMap: "地圖", navStars: "星級", navMethod: "說明", navContact: "聯絡我們", navDestinations: "目的地", wishlist: "願望清單",
     pageTitle: "The Starred Bill・{place}",
@@ -266,6 +268,7 @@ const I18N = {
     mapSearchPh: "在地圖上搜尋餐廳、城市或國家", mapSearchLabel: "在地圖上搜尋餐廳、城市或國家"
   },
   fr: {
+    destAreas: "Régions et villes", destRegions: "Régions", destCityList: "Villes",
     cookieText: "Pouvons-nous utiliser les cookies de Google Analytics pour comprendre comment le site est utilisé ? Les visites sont comptées sans cookies dans tous les cas.", cookieAccept: "Accepter", cookieReject: "Refuser", cookieSettings: "Modifier mon choix de cookies",
     navCompare: "Comparer", navMap: "Carte", navStars: "Par étoiles", navMethod: "Méthode", navContact: "Contact", navDestinations: "Destinations", wishlist: "Envies",
     pageTitle: "The Starred Bill · {place}",
@@ -373,6 +376,7 @@ const I18N = {
     clearSearch: "Effacer la recherche", photoView: "Agrandir la photo de {name}", photoClose: "Fermer"
   },
   yue: {
+    destAreas: "地區同城市", destRegions: "地區", destCityList: "城市",
     cookieText: "我哋可唔可以用 Google Analytics Cookie 嚟了解大家點樣用呢個網站？無論你點揀，我哋都只會用唔使 Cookie 嘅方法計瀏覽量。", cookieAccept: "接受", cookieReject: "拒絕", cookieSettings: "更改 Cookie 選擇",
     navCompare: "比較", navMap: "地圖", navStars: "星級", navMethod: "點樣計", navContact: "聯絡我哋", navDestinations: "目的地", wishlist: "心水清單",
     pageTitle: "The Starred Bill・{place}",
@@ -480,6 +484,7 @@ const I18N = {
     clearSearch: "清除搜尋", photoView: "睇{name}嘅大相", photoClose: "閂"
   },
   ja: {
+    destAreas: "地域と都市", destRegions: "地域", destCityList: "都市",
     cookieText: "サイトの利用状況を把握するため、Google アナリティクスの Cookie を使用してもよろしいですか？どちらを選んでも、アクセス数は Cookie を使わずに計測します。", cookieAccept: "同意する", cookieReject: "拒否する", cookieSettings: "Cookie の設定を変更",
     navCompare: "比較", navMap: "地図", navStars: "星別", navMethod: "算出方法", navContact: "お問い合わせ", navDestinations: "エリア一覧", wishlist: "お気に入り",
     pageTitle: "The Starred Bill・{place}",
@@ -607,6 +612,7 @@ const I18N = {
     installTipIos: "追加方法：Safariの共有ボタン（矢印付きの四角）をタップし、「ホーム画面に追加」を選んでください。"
   },
   es: {
+    destAreas: "Regiones y ciudades", destRegions: "Regiones", destCityList: "Ciudades",
     cookieText: "¿Podemos usar cookies de Google Analytics para saber cómo se usa el sitio? Las visitas se cuentan sin cookies en cualquier caso.", cookieAccept: "Aceptar", cookieReject: "Rechazar", cookieSettings: "Cambiar la elección de cookies",
     navCompare: "Comparar", navMap: "Mapa", navStars: "Por estrellas", navMethod: "Método", navContact: "Contacto", navDestinations: "Destinos", wishlist: "Favoritos",
     pageTitle: "The Starred Bill · {place}",
@@ -716,6 +722,7 @@ const I18N = {
     installTipIos: "Para instalarla: toca el botón Compartir (el cuadrado con una flecha) en Safari y elige “Añadir a pantalla de inicio”."
   },
   it: {
+    destAreas: "Regioni e città", destRegions: "Regioni", destCityList: "Città",
     cookieText: "Possiamo usare i cookie di Google Analytics per capire come viene usato il sito? Le visite vengono contate comunque senza cookie.", cookieAccept: "Accetta", cookieReject: "Rifiuta", cookieSettings: "Cambia la scelta sui cookie",
     navCompare: "Confronta", navMap: "Mappa", navStars: "Per stelle", navMethod: "Metodo", navContact: "Contatti", navDestinations: "Destinazioni", wishlist: "Preferiti",
     pageTitle: "The Starred Bill · {place}",

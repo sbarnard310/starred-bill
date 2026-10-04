@@ -24,7 +24,7 @@ PLACE_TYPES = ("country", "region", "city", "district", "group")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
 LANGUAGES = ("en", "zh", "yue", "fr", "ja", "es", "it", "ko")
 LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja", "Es", "It", "Ko")  # e.g. nameZh, introYue, dinnerNoteFr, areaJa, statusNoteEs
-DEFAULT_LANGUAGES = ["en", "zh"]
+DEFAULT_LANGUAGES = ["en"]  # a country without `languages` (and the homepage, account and privacy pages) is English only
 PRICE_TYPES = ("menu", "main", "spend")
 STATUSES = ("lost", "closed", "changed")
 CHANGES = ("new", "up", "down")
@@ -642,7 +642,7 @@ def build_account_pages():
         "restaurants": [dict({k: r[k] for k in keep if r.get(k) not in (None, "")}, chain=r["_chain"]) for r in restaurants],
         "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] != "group" and starred_n[q["id"]])],
         "knownIds": [r["id"] for r in restaurants],
-        "currencies": CURRENCIES, "languages": list(LANGUAGES),
+        "currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES,
     }
     write("/account/", render("account.html", {
         "title": "Your account · The Starred Bill", "description": "Your wishlist and the Michelin-starred restaurants you've been to, on any device.",
@@ -650,7 +650,7 @@ def build_account_pages():
     }))
     write("/privacy/", render("privacy.html", {
         "title": "Privacy notice · The Starred Bill", "description": "What The Starred Bill keeps about you, and why.",
-        "canonical": SITE_URL + "/privacy/", "data": as_json({"currencies": CURRENCIES, "languages": list(LANGUAGES)}),
+        "canonical": SITE_URL + "/privacy/", "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES}),
     }))
 
 

@@ -385,7 +385,7 @@ content:
         type: string
       - name: languages
         label: Languages offered
-        description: The language buttons on this page and the pages inside it. Leave empty for English and Chinese. Hong Kong and Macau add Cantonese; France adds French; Japan adds Japanese; Spain adds Spanish; Italy adds Italian; South Korea adds Korean.
+        description: The language buttons on this page and the pages inside it. Leave empty for English only. Otherwise English plus the main official language: Chinese (and Cantonese) for Taiwan, Hong Kong and Macau, French for France and Monaco, Japanese for Japan, Spanish for Spain, Italian for Italy, Korean for South Korea.
         type: select
         options:
           multiple: true

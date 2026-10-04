@@ -1192,6 +1192,7 @@ function applyI18n() {
   document.querySelectorAll("[data-i18n]").forEach((el) => { el.innerHTML = t(el.dataset.i18n); });
   document.querySelectorAll(".search-clear").forEach((b) => { b.setAttribute("aria-label", t("clearSearch")); b.title = t("clearSearch"); });
   $("langSwitch").innerHTML = langSwitchHtml();
+  $("langSwitch").hidden = PAGE_LANGS.length < 2;  // English-only pages have no switch
   $("brandLink").href = withLang("/");
   $("wishLink").href = document.body.classList.contains("home") ? "#wishlist" : withLang("/") + "#wishlist";
   $("wishLink").setAttribute("aria-label", t("wishTitle"));

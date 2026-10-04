@@ -1,12 +1,12 @@
 # The Starred Bill
 
-Compare dinner, lunch and wine pairing prices at Michelin-starred restaurants, city by city, in English, Traditional Chinese and each country's own language (French, Japanese, Spanish, Italian, Korean…).
+Compare dinner, lunch and wine pairing prices at Michelin-starred restaurants, city by city, in English and each country's main official language (Chinese, French, Japanese, Spanish, Korean…).
 
 Live at https://starredbill.com
 
 - Homepage with a world map, destination cards, search and your wishlist: https://starredbill.com/
 - A page for every country, region and city, e.g. https://starredbill.com/uk/england/london/, https://starredbill.com/ireland/ or https://starredbill.com/taiwan/
-- Add `?lang=en` for English or `?lang=zh` for Chinese. Hong Kong and Macau also offer Cantonese (`?lang=yue`), France offers French (`?lang=fr`), Japan Japanese (`?lang=ja`), Spain Spanish (`?lang=es`) Italy Italian (`?lang=it`) and South Korea Korean (`?lang=ko`).
+- Add `?lang=en` for English. Taiwan, Hong Kong and Macau offer Chinese (`?lang=zh`), Hong Kong and Macau also Cantonese (`?lang=yue`), France and Monaco French (`?lang=fr`), Japan Japanese (`?lang=ja`), Spain Spanish (`?lang=es`) Italy Italian (`?lang=it`) and South Korea Korean (`?lang=ko`).
 
 ## How it fits together
 

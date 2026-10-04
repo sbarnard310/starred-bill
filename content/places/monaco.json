@@ -1,0 +1,26 @@
+{
+  "id": "monaco",
+  "type": "country",
+  "name": "Monaco",
+  "nameZh": "摩納哥",
+  "nameFr": "Monaco",
+  "inSentenceFr": "à Monaco",
+  "currency": "EUR",
+  "languages": [
+    "en",
+    "zh",
+    "fr"
+  ],
+  "intro": "Prices are in euros, with a switch to see them in pounds or US dollars. Prices checked October 2026; as in France, service and VAT are included in menu prices.",
+  "introZh": "價格以歐元標示，也可切換為英鎊或美元。價格於 2026 年 10 月查核；與法國相同，套餐價格已包含服務費與增值稅。",
+  "introFr": "Les prix sont en euros, avec un bouton pour les afficher en livres sterling ou en dollars américains. Prix vérifiés en octobre 2026 ; comme en France, le service et la TVA sont compris dans le prix des menus.",
+  "serviceText": "Every figure is for one guest. Monaco follows French practice: service is included (“service compris”), so these are the full menu prices before drinks. Supplements such as caviar or truffle courses are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextZh": "所有金額均為每位客人的價格。摩納哥沿用法國做法，價格已含服務費（service compris），即不含飲品的完整套餐價格，不含魚子醬或松露等加價項目。以其他幣別顯示的價格依當日匯率換算，僅供參考。",
+  "serviceTextFr": "Chaque montant s'entend pour une personne. Monaco suit l'usage français : le service est compris, ce sont donc les prix complets des menus, hors boissons. Les suppléments comme le caviar ou la truffe ne sont pas inclus. Les prix affichés dans une autre devise utilisent le taux de change du jour et sont approximatifs.",
+  "sourcesText": "Dinner is the restaurant's main tasting menu; where there are menus of different lengths, the note gives the others. Prices come from each restaurant's own website where they're published, otherwise from recent reviews and booking sites such as TheFork. Lunch is shown where a restaurant serves it, using the opening hours on Google; several Monaco tables open in the evening only. Elsa, at the Monte-Carlo Beach, opens from spring to autumn.",
+  "sourcesTextZh": "晚餐以餐廳的主要品嚐套餐為準；若有長短不同的套餐，說明欄會列出其他選擇。有公布價格的，以餐廳官網為準；否則參考近期評論及 TheFork 等訂位網站。有供應午餐的餐廳會依 Google 營業時間列出午餐；摩納哥不少餐廳只開晚餐。位於蒙地卡羅海灘的 Elsa 於春季至秋季營業。",
+  "sourcesTextFr": "Le dîner correspond au menu dégustation principal ; lorsqu'il existe des menus de différentes longueurs, la note indique les autres. Nous reprenons les prix du site de chaque restaurant lorsqu'ils sont publiés, sinon ceux d'avis récents et de sites de réservation comme TheFork. Le déjeuner est indiqué lorsque le restaurant le sert, d'après les horaires Google ; plusieurs tables monégasques n'ouvrent que le soir. Elsa, au Monte-Carlo Beach, ouvre du printemps à l'automne.",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide France & Monaco 2026, announced in Monaco on 16 March 2026. A green ▲ marks a restaurant that gained a star in the March 2025 or March 2026 guide.",
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 3 月 16 日於摩納哥公布的《米其林指南法國與摩納哥 2026》。綠色 ▲ 代表在 2025 年 3 月或 2026 年 3 月的指南中獲得星級。",
+  "starsTextFr": "La note Google sur 5 et le nombre d'avis ont été vérifiés en octobre 2026. Les étoiles proviennent du Guide MICHELIN France & Monaco 2026, dévoilé à Monaco le 16 mars 2026. Un ▲ vert signale un restaurant qui a gagné une étoile dans le guide de mars 2025 ou de mars 2026."
+}

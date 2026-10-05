@@ -21,5 +21,7 @@
   "lat": 51.520489,
   "lng": -0.1014108,
   "placeId": "ChIJFzO5YVEbdkgR1zdv5_hzZwg",
-  "michelinId": "123706"
+  "michelinId": "123706",
+  "chef": "Fergus Henderson",
+  "chefSource": "press"
 }

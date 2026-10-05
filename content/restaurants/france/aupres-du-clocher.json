@@ -28,5 +28,7 @@
   "lat": 47.0090022,
   "lng": 4.7953604,
   "placeId": "ChIJJyUesu308kcRtnmiD1Ed9d0",
-  "michelinId": "259611"
+  "michelinId": "259611",
+  "chef": "Rémi Genot",
+  "chefSource": "michelin"
 }

@@ -19,5 +19,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Karl Baumgartner",
+  "chefSource": "press"
 }

@@ -18,5 +18,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Kevin Trafoier",
+  "chefSource": "press"
 }

@@ -36,5 +36,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Shintaro Miyazaki",
+  "chefSource": "press"
 }

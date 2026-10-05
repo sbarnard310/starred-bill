@@ -20,5 +20,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/qg713803",
-  "michelinId": "1194687"
+  "michelinId": "1194687",
+  "chef": "Takashi Murata",
+  "chefSource": "press"
 }

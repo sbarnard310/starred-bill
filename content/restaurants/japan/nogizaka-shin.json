@@ -30,5 +30,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Shinji Ishida",
+  "chefSource": "press"
 }

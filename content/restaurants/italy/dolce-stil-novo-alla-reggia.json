@@ -18,5 +18,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Alfredo Russo",
+  "chefSource": "press"
 }

@@ -20,5 +20,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Solaika Marrocco",
+  "chefSource": "press"
 }

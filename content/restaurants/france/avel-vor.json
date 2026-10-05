@@ -28,5 +28,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Camille Lacome",
+  "chefSource": "press"
 }

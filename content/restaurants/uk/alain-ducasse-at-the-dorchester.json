@@ -28,5 +28,7 @@
     "vegetarian",
     "vegan",
     "halal"
-  ]
+  ],
+  "chef": "Jean-Philippe Blondet",
+  "chefSource": "press"
 }

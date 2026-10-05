@@ -20,5 +20,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Daniel Clifford",
+  "chefSource": "press"
 }

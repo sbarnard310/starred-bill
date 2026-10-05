@@ -27,5 +27,7 @@
     "vegetarian",
     "halal",
     "kosher"
-  ]
+  ],
+  "chef": "Tom Shepherd",
+  "chefSource": "press"
 }

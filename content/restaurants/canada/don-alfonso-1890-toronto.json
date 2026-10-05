@@ -20,5 +20,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Davide Ciavattella",
+  "chefSource": "press"
 }

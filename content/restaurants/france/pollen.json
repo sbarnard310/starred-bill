@@ -27,5 +27,7 @@
   "michelinId": "1000267",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "chef": "Mathieu Desmarest",
+  "chefSource": "michelin"
 }

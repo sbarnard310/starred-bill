@@ -29,5 +29,7 @@
   "michelinId": "1214420",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "chef": "Philippe Mille",
+  "chefSource": "michelin"
 }

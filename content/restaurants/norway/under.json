@@ -25,5 +25,7 @@
     "vegetarian"
   ],
   "dinnerNoteNb": "Smaksmeny; prisen legges til senere",
-  "lunchNoteNb": "Lunsjmeny"
+  "lunchNoteNb": "Lunsjmeny",
+  "chef": "Nicolai Ellitsgaard",
+  "chefSource": "press"
 }

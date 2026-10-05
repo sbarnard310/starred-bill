@@ -28,5 +28,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian"
-  ]
+  ],
+  "chef": "Yohann Chapuis",
+  "chefSource": "michelin"
 }

@@ -26,5 +26,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Louis Gachet",
+  "chefSource": "michelin"
 }

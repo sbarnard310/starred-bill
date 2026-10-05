@@ -24,5 +24,7 @@
   "lat": 48.8680116,
   "lng": 2.3257735,
   "placeId": "ChIJEZ17YDJu5kcRUWEfvcnNcLs",
-  "michelinId": "299525"
+  "michelinId": "299525",
+  "chef": "Guillaume Goupil",
+  "chefSource": "press"
 }

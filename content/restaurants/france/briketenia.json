@@ -28,5 +28,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "David Ibarboure",
+  "chefSource": "press"
 }

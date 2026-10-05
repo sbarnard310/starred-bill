@@ -24,5 +24,7 @@
   "lat": 49.6392432,
   "lng": -1.6199211,
   "placeId": "ChIJn9YCmJ2XDEgRfbhKt56b76U",
-  "michelinId": "201088"
+  "michelinId": "201088",
+  "chef": "Pierre Marion",
+  "chefSource": "press"
 }

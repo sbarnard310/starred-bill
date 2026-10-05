@@ -24,5 +24,7 @@
   "lat": 45.456987,
   "lng": 4.8107351,
   "placeId": "ChIJGee2cYYf9UcR5hpjPyD3Lc0",
-  "michelinId": "9500"
+  "michelinId": "9500",
+  "chef": "Philippe Girardon",
+  "chefSource": "press"
 }

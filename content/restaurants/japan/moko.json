@@ -20,5 +20,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/dw935691",
-  "michelinId": "1210499"
+  "michelinId": "1210499",
+  "chef": "Alexis Moko",
+  "chefSource": "press"
 }

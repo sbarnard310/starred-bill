@@ -25,5 +25,7 @@
   "lat": 45.824318,
   "lng": 10.812279,
   "placeId": "ChIJV9MIuKgZgkcRQ6zzx6l2rKA",
-  "michelinId": "1191172"
+  "michelinId": "1191172",
+  "chef": "Alfio Ghezzi",
+  "chefSource": "press"
 }

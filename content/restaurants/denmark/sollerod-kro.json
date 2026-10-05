@@ -34,5 +34,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Jakob de Neergaard",
+  "chefSource": "press"
 }

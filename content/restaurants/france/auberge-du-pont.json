@@ -31,5 +31,7 @@
     "vegetarian",
     "gluten-free",
     "halal"
-  ]
+  ],
+  "chef": "Rodolphe Regnauld",
+  "chefSource": "press"
 }

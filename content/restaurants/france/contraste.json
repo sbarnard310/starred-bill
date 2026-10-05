@@ -26,5 +26,7 @@
   "lat": 48.8705248,
   "lng": 2.3213463,
   "placeId": "ChIJnUjhHnFv5kcRrLZLgyVmwVw",
-  "michelinId": "1186546"
+  "michelinId": "1186546",
+  "chef": "Antoine Perchoc",
+  "chefSource": "press"
 }

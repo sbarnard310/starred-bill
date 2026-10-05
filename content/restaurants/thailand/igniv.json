@@ -23,5 +23,7 @@
     "vegetarian-menu",
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "David Hartwig",
+  "chefSource": "press"
 }

@@ -26,5 +26,7 @@
   "lat": 49.2534752,
   "lng": 6.1646539,
   "placeId": "ChIJKTN27OgmlUcRmAagg75ToOg",
-  "michelinId": "176359"
+  "michelinId": "176359",
+  "chef": "Frédéric Sandrini",
+  "chefSource": "michelin"
 }

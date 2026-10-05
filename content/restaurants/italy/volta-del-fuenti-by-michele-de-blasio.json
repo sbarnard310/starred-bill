@@ -18,5 +18,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Michele De Blasio",
+  "chefSource": "press"
 }

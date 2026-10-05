@@ -20,5 +20,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/of863818",
-  "michelinId": "1193097"
+  "michelinId": "1193097",
+  "chef": "Hiroki Yamazaki",
+  "chefSource": "press"
 }

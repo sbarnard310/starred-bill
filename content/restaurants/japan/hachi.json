@@ -19,5 +19,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/cq536887",
-  "michelinId": "1242586"
+  "michelinId": "1242586",
+  "chef": "Makoto Shimizu",
+  "chefSource": "press"
 }

@@ -26,5 +26,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Gaggan Anand",
+  "chefSource": "press"
 }

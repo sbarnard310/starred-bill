@@ -23,5 +23,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Vincent Thierry",
+  "chefSource": "press"
 }

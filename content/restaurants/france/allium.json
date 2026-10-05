@@ -28,5 +28,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Lionel Hénaff",
+  "chefSource": "press"
 }

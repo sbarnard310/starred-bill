@@ -30,5 +30,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Théo Fernandez",
+  "chefSource": "press"
 }

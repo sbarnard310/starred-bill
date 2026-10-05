@@ -20,5 +20,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian"
-  ]
+  ],
+  "chef": "Guillaume Lebrun",
+  "chefSource": "press"
 }

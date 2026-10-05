@@ -23,5 +23,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "José Andrés",
+  "chefSource": "press"
 }

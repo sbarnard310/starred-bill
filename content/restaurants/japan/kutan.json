@@ -29,5 +29,7 @@
   "diets": [
     "vegetarian",
     "halal"
-  ]
+  ],
+  "chef": "Kotaro Nakajima",
+  "chefSource": "press"
 }

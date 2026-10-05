@@ -24,5 +24,7 @@
   "lat": 47.5260324,
   "lng": 1.3828451,
   "placeId": "ChIJhZFVkGap5EcR7BYPHUXlxRs",
-  "michelinId": "70104"
+  "michelinId": "70104",
+  "chef": "Alexis Letellier",
+  "chefSource": "press"
 }

@@ -20,5 +20,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/qb117583",
-  "michelinId": "1193092"
+  "michelinId": "1193092",
+  "chef": "Akinari Fujita",
+  "chefSource": "press"
 }

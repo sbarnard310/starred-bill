@@ -26,5 +26,7 @@
     "vegetarian-menu",
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Tom Kerridge",
+  "chefSource": "press"
 }

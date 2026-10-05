@@ -23,5 +23,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "E.j. Lagasse",
+  "chefSource": "press"
 }

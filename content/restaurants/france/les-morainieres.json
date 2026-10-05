@@ -32,5 +32,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian"
-  ]
+  ],
+  "chef": "Michaël Arnoult",
+  "chefSource": "press"
 }

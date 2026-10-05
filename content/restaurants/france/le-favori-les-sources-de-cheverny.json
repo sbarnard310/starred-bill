@@ -30,5 +30,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Pierre Frindel",
+  "chefSource": "press"
 }

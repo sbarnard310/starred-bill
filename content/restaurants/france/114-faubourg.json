@@ -31,5 +31,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian"
-  ]
+  ],
+  "chef": "Vincent Schmit",
+  "chefSource": "press"
 }

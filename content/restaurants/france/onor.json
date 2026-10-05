@@ -26,5 +26,7 @@
   "lat": 48.8772724,
   "lng": 2.3003097,
   "placeId": "ChIJswl0oJdv5kcR5M9tkvzjpnM",
-  "michelinId": "1207042"
+  "michelinId": "1207042",
+  "chef": "Thierry Marx and Ricardo Silva",
+  "chefSource": "michelin"
 }

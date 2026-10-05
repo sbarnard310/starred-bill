@@ -25,5 +25,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian"
-  ]
+  ],
+  "chef": "Isaac McHale",
+  "chefSource": "press"
 }

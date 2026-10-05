@@ -23,5 +23,7 @@
     "gluten-free",
     "halal",
     "kosher"
-  ]
+  ],
+  "chef": "Steven Molnar",
+  "chefSource": "press"
 }

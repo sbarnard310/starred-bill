@@ -20,5 +20,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/nx705178",
-  "michelinId": "1193100"
+  "michelinId": "1193100",
+  "chef": "Ryoichi Endo",
+  "chefSource": "press"
 }

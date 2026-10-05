@@ -29,5 +29,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "John Chantarasak",
+  "chefSource": "press"
 }

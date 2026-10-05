@@ -28,5 +28,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Boris Harispe",
+  "chefSource": "press"
 }

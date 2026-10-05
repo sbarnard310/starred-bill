@@ -18,5 +18,7 @@
   "michelinId": "1193278",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "chef": "Yusuke Takada",
+  "chefSource": "michelin"
 }

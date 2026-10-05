@@ -25,5 +25,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Jonatán Gómez Luna",
+  "chefSource": "press"
 }

@@ -25,5 +25,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Adam Byatt",
+  "chefSource": "press"
 }

@@ -24,5 +24,7 @@
   "lat": 43.3852589,
   "lng": -1.6674639,
   "placeId": "ChIJFydcMKURUQ0RMPqKKGnBHpE",
-  "michelinId": "1196324"
+  "michelinId": "1196324",
+  "chef": "Guillaume Roget",
+  "chefSource": "press"
 }

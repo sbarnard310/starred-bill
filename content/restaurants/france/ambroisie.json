@@ -24,5 +24,7 @@
   "lat": 45.560381,
   "lng": 5.4875038,
   "placeId": "ChIJlaBKFjQii0cRJfzcHq2C_vA",
-  "michelinId": "9024"
+  "michelinId": "9024",
+  "chef": "André Taormina",
+  "chefSource": "michelin"
 }

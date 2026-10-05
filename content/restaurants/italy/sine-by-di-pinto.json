@@ -34,5 +34,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Roberto Di Pinto",
+  "chefSource": "press"
 }

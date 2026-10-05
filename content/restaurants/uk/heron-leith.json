@@ -20,5 +20,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Tomás Gormley",
+  "chefSource": "press"
 }

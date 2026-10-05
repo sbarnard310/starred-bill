@@ -27,5 +27,7 @@
   "michelinId": "11133",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "chef": "Justin Schmitt",
+  "chefSource": "michelin"
 }

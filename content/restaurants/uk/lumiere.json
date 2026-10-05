@@ -25,5 +25,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Jon Howe",
+  "chefSource": "press"
 }

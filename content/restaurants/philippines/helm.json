@@ -1,0 +1,16 @@
+{
+  "name": "Helm",
+  "city": "makati-metro-manila",
+  "address": "3F, The Shops at Ayala Triangle Gardens, Makati Avenue, Makati - Metro Manila",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 217,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.joshboutwood.com/restaurants/helm",
+  "lat": 14.557905,
+  "lng": 121.0252505,
+  "placeId": "ChIJ5xodzjbJlzMRR-CqxmDTUMY"
+}

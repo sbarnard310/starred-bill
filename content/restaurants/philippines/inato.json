@@ -1,0 +1,16 @@
+{
+  "name": "Inatô",
+  "city": "makati-metro-manila",
+  "address": "The Alley at Karrivin, Karrivin Plaza, 2316 Chino Roces Avenue Extension, 1231, Makati - Metro Manila",
+  "stars": 1,
+  "cuisine": "Filipino",
+  "rating": 4.6,
+  "reviews": 54,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.inato.ph",
+  "lat": 14.5313019,
+  "lng": 121.0227506,
+  "placeId": "ChIJMcdnfQDJlzMRrBytvGj2bbc"
+}

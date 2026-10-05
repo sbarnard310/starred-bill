@@ -1,0 +1,16 @@
+{
+  "name": "Kása Palma",
+  "city": "makati-metro-manila",
+  "address": "6042 R. Palma, Poblacion, Makati - Metro Manila",
+  "stars": 1,
+  "cuisine": "Filipino",
+  "rating": 4.3,
+  "reviews": 132,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kasapalma.com/",
+  "lat": 14.56597,
+  "lng": 121.0344,
+  "placeId": "ChIJg038Lf_JlzMR66VgyUN-vUE"
+}

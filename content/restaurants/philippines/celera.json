@@ -1,0 +1,16 @@
+{
+  "name": "Celera",
+  "city": "makati-metro-manila",
+  "address": "3F, Comuna, 238 Pablo Ocampo Senior Extension, 1203, Makati - Metro Manila",
+  "stars": 1,
+  "cuisine": "Asian Contemporary",
+  "rating": 4.7,
+  "reviews": 119,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantcelera.com",
+  "lat": 14.566919,
+  "lng": 121.008008,
+  "placeId": "ChIJuXYsfgDJlzMRUSeJ03Rn1z4"
+}

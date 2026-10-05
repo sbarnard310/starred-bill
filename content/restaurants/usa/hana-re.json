@@ -1,0 +1,19 @@
+{
+  "name": "Hana re",
+  "city": "california",
+  "area": "Costa Mesa",
+  "address": "2930 Bristol St., Costa Mesa, 92626",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2025-06",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in June 2025",
+  "website": "https://www.hanaresushi.com/",
+  "lat": 33.6778676,
+  "lng": -117.8854377,
+  "placeId": "ChIJ62DBzxvf3IAREwjxJY9D6BM"
+}

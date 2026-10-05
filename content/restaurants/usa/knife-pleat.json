@@ -1,0 +1,19 @@
+{
+  "name": "Knife Pleat",
+  "city": "california",
+  "area": "Costa Mesa",
+  "address": "3333 S. Bristol St., Ste. 3001, Costa Mesa, 92626",
+  "stars": 0,
+  "cuisine": "Contemporary",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-06",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in June 2026",
+  "website": "https://knifepleat.com/",
+  "lat": 33.6904299,
+  "lng": -117.8856979,
+  "placeId": "ChIJxSir_ZTf3IARy_dlMZYYTVY"
+}

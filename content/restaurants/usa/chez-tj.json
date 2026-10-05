@@ -1,0 +1,15 @@
+{
+  "name": "Chez TJ",
+  "city": "california",
+  "area": "Mountain View",
+  "address": "938 Villa St., Mountain View, 94041",
+  "stars": 0,
+  "cuisine": "French",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2025-06",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Lost its star in June 2025; closed in April 2026"
+}

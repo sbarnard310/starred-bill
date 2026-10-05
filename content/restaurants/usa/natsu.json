@@ -1,0 +1,14 @@
+{
+  "name": "Natsu",
+  "city": "orlando",
+  "address": "777 N. Orange Ave., Ste. C, Orlando, 32801",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-05",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed; not in the 2026 guide"
+}

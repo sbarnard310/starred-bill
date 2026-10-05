@@ -1,0 +1,19 @@
+{
+  "name": "Kenzo",
+  "city": "california",
+  "area": "Napa",
+  "address": "1339 Pearl St., Napa, 94559",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-06",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in June 2026",
+  "website": "https://www.kenzonapa.com/",
+  "lat": 38.29924,
+  "lng": -122.28928,
+  "placeId": "ChIJ5eX5n10GhYAR2T-M3VhFY70"
+}

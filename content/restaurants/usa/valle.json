@@ -1,0 +1,19 @@
+{
+  "name": "Valle",
+  "city": "california",
+  "area": "Oceanside",
+  "address": "Mission Pacific Beach Resort, 222 N. Pacific St., Oceanside, 92054",
+  "stars": 0,
+  "cuisine": "Mexican",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-06",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in June 2026",
+  "website": "https://valleoceanside.com/",
+  "lat": 33.1946237,
+  "lng": -117.383446,
+  "placeId": "ChIJ0ZTXds9v3IARKvxAY5fwV2k"
+}

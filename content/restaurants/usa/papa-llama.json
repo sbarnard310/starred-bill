@@ -1,0 +1,14 @@
+{
+  "name": "Papa Llama",
+  "city": "orlando",
+  "address": "2840 Curry Ford Rd., Orlando, 32806",
+  "stars": 0,
+  "cuisine": "Peruvian",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-05",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Lost its star in May 2026; closed in September 2026"
+}

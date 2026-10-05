@@ -1,0 +1,15 @@
+{
+  "name": "Konro",
+  "city": "florida",
+  "area": "West Palm Beach",
+  "address": "424 Park Pl., Ste. 101, West Palm Beach, 33401",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2025-08",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in June 2025 and removed from the guide"
+}

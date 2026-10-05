@@ -1,0 +1,30 @@
+{
+  "name": "De Cuijt",
+  "city": "noord-brabant",
+  "area": "Mierlo",
+  "address": "Burgemeester Termeerstraat 50, 5731 SE, Mierlo",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.4,
+  "reviews": 293,
+  "dinnerType": "menu",
+  "dinner": 135,
+  "dinnerNote": "Celebration menu; also à la carte except Friday and Saturday nights",
+  "sourceType": "site",
+  "source": "https://www.restaurant-decuijt.nl/wp-content/uploads/2026/10/RDC-4032-Celebration-Menukaart-EN-OKT-V2-web.pdf",
+  "lunch": 105,
+  "lunchType": "menu",
+  "lunchNote": "Celebration lunch menu; Wednesday to Friday",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-decuijt.nl/wp-content/uploads/2026/10/RDC-4032-Celebration-Menukaart-EN-OKT-V2-web.pdf",
+  "website": "https://www.restaurant-decuijt.nl/",
+  "lat": 51.4477832,
+  "lng": 5.6041599,
+  "placeId": "ChIJp96hO8Mmx0cRAxaro-6IP4k",
+  "michelinId": "1244394",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Koen van Weert",
+  "chefSource": "site"
+}

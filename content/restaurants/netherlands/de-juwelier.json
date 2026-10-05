@@ -2,7 +2,7 @@
   "name": "De Juwelier",
   "city": "amsterdam",
   "address": "Utrechtsestraat 51, 1017 VJ, Amsterdam",
-  "stars": 1,
+  "stars": 0,
   "cuisine": "Modern French",
   "rating": 4.1,
   "reviews": 495,
@@ -12,5 +12,8 @@
   "website": "https://www.restaurant-dejuwelier.nl",
   "lat": 52.3642318,
   "lng": 4.8982008,
-  "placeId": "ChIJBXvoaX8JxkcRuWOWTJHtcKc"
+  "placeId": "ChIJBXvoaX8JxkcRuWOWTJHtcKc",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "No longer starred in the MICHELIN Guide Netherlands 2026; still listed as a recommended restaurant"
 }

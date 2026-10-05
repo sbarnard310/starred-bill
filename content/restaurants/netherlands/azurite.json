@@ -1,0 +1,26 @@
+{
+  "name": "Azurite",
+  "city": "zuid-holland",
+  "area": "Delft",
+  "address": "Houttuinen 2, 2611 DX, Delft",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 217,
+  "dinnerType": "menu",
+  "dinner": 229,
+  "dinnerNote": "Weekend tasting menu, Friday and Saturday (weekday menu €189); includes water and coffee",
+  "sourceType": "site",
+  "source": "https://restaurantazurite.nl/wp-content/uploads/2026/08/Weekend-menu-Azurite-.pdf",
+  "website": "https://restaurantazurite.nl/",
+  "lat": 52.0092176,
+  "lng": 4.3554226,
+  "placeId": "ChIJUZqHp6O1xUcRPZzDJEW7adk",
+  "michelinId": "1242641",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Mario Ridder",
+  "chefSource": "michelin"
+}

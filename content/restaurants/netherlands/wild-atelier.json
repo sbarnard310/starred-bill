@@ -1,0 +1,26 @@
+{
+  "name": "Wild Atelier",
+  "city": "gelderland",
+  "area": "Hoog Soeren",
+  "address": "Amersfoortseweg 86, 7346 AA, Hoog Soeren",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 9,
+  "dinnerType": "menu",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu, 7 courses (5 courses €149)",
+  "sourceType": "site",
+  "source": "https://echoput.nl/wild-atelier/",
+  "website": "https://echoput.nl/wild-atelier/",
+  "lat": 52.2332268,
+  "lng": 5.8779577,
+  "placeId": "ChIJgT_EfwDJx0cRNWWoTdruxbo",
+  "michelinId": "1241474",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Jonathan Zandbergen",
+  "chefSource": "michelin"
+}

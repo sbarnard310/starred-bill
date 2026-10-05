@@ -1,0 +1,31 @@
+{
+  "name": "Ambrozijn",
+  "city": "limburg-netherlands",
+  "area": "Valkenburg",
+  "address": "Plenkertstraat 45, 6301 GL, Valkenburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 280,
+  "dinnerType": "menu",
+  "dinner": 129,
+  "dinnerNote": "Chef's menu, 6 courses (5 courses €109, Wednesday and Thursday)",
+  "sourceType": "site",
+  "source": "https://cdn.prod.website-files.com/68de8a8907024ae7f5a7a3be/6abcf2dbe64e6fd90e07dbe9_ENGELS%2030092026.pdf",
+  "lunch": 89,
+  "lunchType": "menu",
+  "lunchNote": "Chef's menu, 4 courses; Friday and Saturday",
+  "lunchSourceType": "site",
+  "lunchSource": "https://cdn.prod.website-files.com/68de8a8907024ae7f5a7a3be/6abcf2dbe64e6fd90e07dbe9_ENGELS%2030092026.pdf",
+  "website": "https://www.restaurantambrozijn.nl/",
+  "lat": 50.8646459,
+  "lng": 5.8268325,
+  "placeId": "ChIJEfDtg9TrwEcR2JylGFdSJFQ",
+  "michelinId": "1200024",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Sven Nijenhuis",
+  "chefSource": "michelin"
+}

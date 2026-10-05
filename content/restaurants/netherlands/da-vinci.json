@@ -3,7 +3,7 @@
   "city": "limburg-netherlands",
   "area": "Maasbracht",
   "address": "Havenstraat 27, 6051 CS, Maasbracht",
-  "stars": 1,
+  "stars": 0,
   "cuisine": "Classic French",
   "rating": 4.8,
   "reviews": 542,
@@ -15,5 +15,8 @@
   "lng": 5.8850739,
   "placeId": "ChIJ68KZxXDKwEcRQUbEhD9D2UA",
   "chef": "Margo Reuten",
-  "chefSource": "site"
+  "chefSource": "site",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "No longer starred in the MICHELIN Guide Netherlands 2026; still listed as a recommended restaurant"
 }

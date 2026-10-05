@@ -1,0 +1,23 @@
+{
+  "name": "Bij Sidney",
+  "city": "utrecht",
+  "area": "Loenen aan de Vecht",
+  "address": "Kerkstraat 5, 3632 EL, Loenen aan de Vecht",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 5,
+  "reviews": 25,
+  "dinnerType": "menu",
+  "dinner": 125,
+  "dinnerNote": "Chef's menu, 5 courses (4 courses €110); also à la carte",
+  "sourceType": "site",
+  "source": "https://bijsidney.nl/menu",
+  "wine": 55,
+  "website": "https://bijsidney.nl/",
+  "lat": 52.2093364,
+  "lng": 5.0231275,
+  "placeId": "ChIJ45WZxVlzxkcROuKqhfN6z1s",
+  "michelinId": "1243109",
+  "chef": "Sidney Heinze",
+  "chefSource": "michelin"
+}

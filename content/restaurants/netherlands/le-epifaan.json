@@ -1,0 +1,29 @@
+{
+  "name": "Le Epifaan",
+  "city": "drenthe",
+  "area": "Veeningen",
+  "address": "Bloemberg 5, 7924 PW, Veeningen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 18,
+  "dinnerType": "menu",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu, 5 courses (4 courses €135); also à la carte",
+  "sourceType": "site",
+  "source": "https://leepifaan.com",
+  "website": "https://www.leepifaan.com",
+  "lat": 52.6523874,
+  "lng": 6.3457653,
+  "placeId": "ChIJ3S4ESJ4PyEcR9WG5iiTCmFE",
+  "michelinId": "1250424",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher",
+    "halal"
+  ],
+  "chef": "Jarno Eggen",
+  "chefSource": "michelin"
+}

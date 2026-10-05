@@ -1,0 +1,24 @@
+{
+  "name": "Rozewied",
+  "city": "zeeland",
+  "area": "Kortgene",
+  "address": "Hoofdstraat 35, 4484 CB, Kortgene",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.9,
+  "reviews": 153,
+  "dinnerType": "menu",
+  "dinner": 105,
+  "dinnerNote": "Seasonal menu, 6 courses (4 courses €85, 5 courses €95)",
+  "sourceType": "site",
+  "source": "https://www.rozewied.nl/menu/",
+  "website": "https://www.rozewied.nl",
+  "lat": 51.5568836,
+  "lng": 3.80195,
+  "placeId": "ChIJFUGpKdWNxEcRNwkOx4Hzxas",
+  "michelinId": "1206181",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
+}

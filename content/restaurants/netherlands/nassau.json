@@ -1,0 +1,28 @@
+{
+  "name": "Nassau",
+  "city": "groningen",
+  "area": "Groningen",
+  "address": "Martinikerkhof 23, 9712 JH, Groningen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 154,
+  "dinnerType": "menu",
+  "dinner": 110,
+  "dinnerNote": "Experience menu, 6 courses (from €65 for 3, Tuesday to Thursday)",
+  "sourceType": "site",
+  "source": "https://prinsenhof.nl/wp-content/uploads/2026/09/experience.NED_.NASSAU.OKT_.pdf",
+  "wine": 80,
+  "website": "https://prinsenhof.nl/nl/restaurant-nassau/",
+  "lat": 53.2207672,
+  "lng": 6.5688416,
+  "placeId": "ChIJ86hg0cTNyUcRl_BhT5E-hqQ",
+  "michelinId": "1194716",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Christian de Vries",
+  "chefSource": "michelin"
+}

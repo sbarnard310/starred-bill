@@ -1,0 +1,15 @@
+{
+  "name": "Zhiguan Courtyard",
+  "city": "beijing",
+  "address": "12 Jinyu Hutong, Dongcheng, Beijing",
+  "stars": 1,
+  "cuisine": "Dongbei",
+  "rating": 4.1,
+  "reviews": 17,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 39.9139472,
+  "lng": 116.4089588,
+  "placeId": "ChIJ0wbtc9JS8DUR8_ppu-ionek"
+}

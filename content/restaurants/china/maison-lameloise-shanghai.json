@@ -1,0 +1,13 @@
+{
+  "name": "Maison Lameloise",
+  "city": "shanghai",
+  "address": "68F, Shanghai Tower, 501 Middle Yincheng Road, Pudong, Shanghai",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lameloise.com.cn",
+  "lat": 31.2357826,
+  "lng": 121.5010241
+}

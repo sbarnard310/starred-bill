@@ -1,0 +1,12 @@
+{
+  "name": "Hangzhou House",
+  "city": "hangzhou",
+  "address": "Building EX4, Amandayun, 22 Fayun Lane, Xihu Street, Xihu, Hangzhou",
+  "stars": 1,
+  "cuisine": "Zhejiang",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 30.2376598,
+  "lng": 120.092537
+}

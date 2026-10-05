@@ -1,0 +1,15 @@
+{
+  "name": "Song",
+  "city": "guangzhou",
+  "address": "Shop 417, 4F, G.T. Land Plaza Winter, 16 Zhujiang East Road, Zhujiang New Town, Tianhe, Guangzhou",
+  "stars": 1,
+  "cuisine": "Sichuan",
+  "rating": 4.7,
+  "reviews": 84,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 23.12226,
+  "lng": 113.321903,
+  "placeId": "ChIJHxXu_A7_AjQRXsetb5Z-LqE"
+}

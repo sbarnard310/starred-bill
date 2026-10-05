@@ -1,0 +1,16 @@
+{
+  "name": "The House of Rong",
+  "city": "shanghai",
+  "address": "170 Nanyang Road, Jingan, Shanghai",
+  "stars": 2,
+  "cuisine": "Taizhou",
+  "rating": 4.3,
+  "reviews": 8,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.xinrongji.com/list",
+  "lat": 31.22789,
+  "lng": 121.45071,
+  "placeId": "ChIJKYSgUgNwsjURDReY0-koEyk"
+}

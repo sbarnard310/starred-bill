@@ -1,0 +1,16 @@
+{
+  "name": "Seventh Son",
+  "city": "shanghai",
+  "address": "R2-01, 2F, Fungseng Commercial Center, 500 Weihai Road, Jingan, Shanghai",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "rating": 4.5,
+  "reviews": 297,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.seventhson.hk",
+  "lat": 31.22914,
+  "lng": 121.4576697,
+  "placeId": "ChIJXYBDiBBwsjURxZf6M-T_3qo"
+}

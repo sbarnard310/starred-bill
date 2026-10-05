@@ -1,0 +1,15 @@
+{
+  "name": "Wu You Xian",
+  "city": "shanghai",
+  "address": "Room 1-103, 7 South Maoming Road, Huangpu, Shanghai",
+  "stars": 1,
+  "cuisine": "Dim Sum",
+  "rating": 5,
+  "reviews": 1,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 31.2245623,
+  "lng": 121.4560545,
+  "placeId": "ChIJLUDC5AlwsjURdrnjIWrtrIY"
+}

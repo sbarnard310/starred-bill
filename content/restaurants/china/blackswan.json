@@ -1,0 +1,13 @@
+{
+  "name": "Blackswan",
+  "city": "beijing",
+  "address": "1F, Luohong Art Museum, 89 Capital Airport Road, Shunyi, Beijing",
+  "stars": 2,
+  "cuisine": "French Contemporary",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantblackswan.com",
+  "lat": 40.0419149,
+  "lng": 116.5682626
+}

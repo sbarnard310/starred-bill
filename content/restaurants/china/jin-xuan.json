@@ -1,0 +1,16 @@
+{
+  "name": "Jin Xuan",
+  "city": "shanghai",
+  "address": "53F, The Ritz-Carlton Pudong, 8 Century Avenue, Pudong, Shanghai",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "rating": 4.1,
+  "reviews": 24,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/dining/",
+  "lat": 31.2384407,
+  "lng": 121.4968159,
+  "placeId": "ChIJw_Lc5fpwsjUR2_AbVAb9hN4"
+}

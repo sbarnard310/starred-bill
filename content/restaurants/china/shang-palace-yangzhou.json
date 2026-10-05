@@ -1,0 +1,17 @@
+{
+  "name": "Shang Palace",
+  "city": "jiangsu",
+  "area": "Yangzhou",
+  "address": "1F, Shangri La Hotel, 472 Wenchang West Road, Hanjiang, 225009, Yangzhou",
+  "stars": 1,
+  "cuisine": "Huaiyang",
+  "rating": 4.4,
+  "reviews": 64,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.shangri-la.com/cn/yangzhou/shangrila/dining/restaurants/shang-palace/",
+  "lat": 32.39654,
+  "lng": 119.375191,
+  "placeId": "ChIJm1G-2m59tjURX-bqhPkxmjM"
+}

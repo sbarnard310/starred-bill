@@ -1,0 +1,16 @@
+{
+  "name": "Fu Chun Ju",
+  "city": "beijing",
+  "address": "3F, The Puxuan Hotel, 1 Wangfujing Street, Dongcheng, 100006, Beijing",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "rating": 4.2,
+  "reviews": 17,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://thepuxuan.com/en/beijing-wangfujing-luxury-hotel-dining/cantonese-cuisine-fu-chun-ju-restaurant/",
+  "lat": 39.922423,
+  "lng": 116.403739,
+  "placeId": "ChIJSfS3rtdS8DURubHVcmf9d_g"
+}

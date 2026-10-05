@@ -1,0 +1,16 @@
+{
+  "name": "Ming Court (Minhang)",
+  "city": "shanghai",
+  "address": "B1 Level, Cordis Hotel, 333 Shenhong Road, Minhang, Shanghai",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "rating": 5,
+  "reviews": 7,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.cordishotels.com/en/shanghai-hongqiao/dine/ming-court/",
+  "lat": 31.19512,
+  "lng": 121.31633,
+  "placeId": "ChIJMV5mA-dmsjURLDVdz9QhNhM"
+}

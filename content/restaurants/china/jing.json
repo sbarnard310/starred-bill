@@ -1,0 +1,16 @@
+{
+  "name": "Jing",
+  "city": "beijing",
+  "address": "B1 Level, The Peninsula Hotel, 8 Jinyu Hutong, Dongcheng, Beijing",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.6,
+  "reviews": 21,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.peninsula.com/en/beijing/hotel-fine-dining/jing-western-restaurant",
+  "lat": 39.913636,
+  "lng": 116.4103593,
+  "placeId": "ChIJF_tJftJS8DURghmTAVtSU_E"
+}

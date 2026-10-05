@@ -1,0 +1,16 @@
+{
+  "name": "Yong Fu (Huangpu)",
+  "city": "shanghai",
+  "address": "11-12F, Cathay Building, Jin Jiang Hotel, 59 South Maoming Road, Huangpu, Shanghai",
+  "stars": 1,
+  "cuisine": "Ningbo",
+  "rating": 4.1,
+  "reviews": 27,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.yongfugroup.com/",
+  "lat": 31.2229271,
+  "lng": 121.4567685,
+  "placeId": "ChIJLZ3UDgpwsjURYDEqnSQpeGw"
+}

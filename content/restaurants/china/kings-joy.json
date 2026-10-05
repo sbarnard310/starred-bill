@@ -1,0 +1,16 @@
+{
+  "name": "King's Joy",
+  "city": "beijing",
+  "address": "2 Wudaoying Hutong, Dongcheng, 100007, Beijing",
+  "stars": 2,
+  "cuisine": "Vegetarian",
+  "rating": 4.4,
+  "reviews": 158,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kingsjoy.com",
+  "lat": 39.946681,
+  "lng": 116.410004,
+  "placeId": "ChIJfboVgUtT8DUR_jT_hhMVPQA"
+}

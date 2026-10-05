@@ -1,0 +1,16 @@
+{
+  "name": "Jiang by Chef Fei",
+  "city": "guangzhou",
+  "address": "3F, Mandarin Oriental Hotel, 389 Tianhe Road, Tianhe, Guangzhou",
+  "stars": 2,
+  "cuisine": "Cantonese",
+  "rating": 4,
+  "reviews": 34,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mandarinoriental.com/en/guangzhou/tianhe/dine/jiang-by-chef-fei",
+  "lat": 23.1371978,
+  "lng": 113.327758,
+  "placeId": "ChIJCTuG6f_-AjQRd1vNj2O3Y4s"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Zinan",
+  "city": "chengdu",
+  "address": "8-1 Tongzilin South Road, Wuhou, Chengdu",
+  "stars": 1,
+  "cuisine": "Sichuan",
+  "rating": 1.5,
+  "reviews": 2,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 30.6142993,
+  "lng": 104.0577248,
+  "placeId": "ChIJHxFKnLTF7zYRxAIiHFo-ETI"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "The Beijing Kitchen (Jianguo Road)",
+  "city": "beijing",
+  "address": "D6007, 6F, SKP Beijing, 87 Jianguo Road, Chaoyang, Beijing",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "rating": 4.5,
+  "reviews": 10,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 39.9092255,
+  "lng": 116.4725228,
+  "placeId": "ChIJFyv8YU2s8TUR3GZM3c_73nU"
+}

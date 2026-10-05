@@ -1,0 +1,16 @@
+{
+  "name": "Cheng Yuan",
+  "city": "jiangsu",
+  "area": "Yangzhou",
+  "address": "7 Fengle Upper Street, Hanjiang, Yangzhou",
+  "stars": 1,
+  "cuisine": "Chinese Contemporary",
+  "rating": 5,
+  "reviews": 1,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 32.4030991,
+  "lng": 119.4339269,
+  "placeId": "ChIJVVVVqN2HtjUR2w5aITWQias"
+}

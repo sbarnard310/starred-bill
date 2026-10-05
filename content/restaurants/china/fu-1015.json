@@ -1,0 +1,15 @@
+{
+  "name": "Fu 1015",
+  "city": "shanghai",
+  "address": "1015 Yuyuan Road, Changning, Shanghai",
+  "stars": 1,
+  "cuisine": "Shanghainese",
+  "rating": 4.2,
+  "reviews": 5,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 31.218564,
+  "lng": 121.429009,
+  "placeId": "ChIJOe0XZ1llsjURH1AOIpo74mA"
+}

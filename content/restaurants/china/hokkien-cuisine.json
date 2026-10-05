@@ -1,0 +1,12 @@
+{
+  "name": "Hokkien Cuisine",
+  "city": "chengdu",
+  "address": "No. 326, 3F, North Tower, Chinese Financial Center, 33 Jiaozi Avenue, Wuhou, Chengdu",
+  "stars": 1,
+  "cuisine": "Fujian",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 30.5838976,
+  "lng": 104.0606652
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Yu Zhi Lan",
+  "city": "chengdu",
+  "address": "No. 1, 24 Changfa Street, Qingyang, Chengdu",
+  "stars": 2,
+  "cuisine": "Sichuan",
+  "rating": 4.6,
+  "reviews": 21,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 30.6691974,
+  "lng": 104.0561672,
+  "placeId": "ChIJ3yrQyCnF7zYR3AQi0SIjESg"
+}

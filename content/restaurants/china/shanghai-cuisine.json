@@ -1,0 +1,15 @@
+{
+  "name": "Shanghai Cuisine",
+  "city": "beijing",
+  "address": "South side of Pacific Century Place, 2A Gongrentiyuchang North Road, Chaoyang, 100027, Beijing",
+  "stars": 2,
+  "cuisine": "Shanghainese",
+  "rating": 4.7,
+  "reviews": 9,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 39.930881,
+  "lng": 116.453254,
+  "placeId": "ChIJtaBJsuis8TURlxiv5ozpttg"
+}

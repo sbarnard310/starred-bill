@@ -1,0 +1,16 @@
+{
+  "name": "Lei Garden (Xuhui)",
+  "city": "shanghai",
+  "address": "Shop 401, 4F, iapm, 999 Middle Huaihai Road, Xuhui, Shanghai",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "rating": 5,
+  "reviews": 7,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://leigarden.hk",
+  "lat": 31.2181231,
+  "lng": 121.4541253,
+  "placeId": "ChIJa3-UIghwsjUReQHj1HN4_y0"
+}

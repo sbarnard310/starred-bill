@@ -1,0 +1,16 @@
+{
+  "name": "Taian Table",
+  "city": "shanghai",
+  "address": "101-102, Building No. 1, Garden Office, No.161, Lane 465, Zhenning Road, Changning, Shanghai",
+  "stars": 3,
+  "cuisine": "Innovative",
+  "rating": 4.3,
+  "reviews": 30,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://sh.taian-table.cn",
+  "lat": 31.2238977,
+  "lng": 121.4281783,
+  "placeId": "ChIJS7pzDVhlsjUR_lDrwj9htu8"
+}

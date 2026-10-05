@@ -1,0 +1,13 @@
+{
+  "name": "Stiller",
+  "city": "guangzhou",
+  "address": "2F, LN Garden Hotel, 368 Huanshi East Road, Yuexiu, Guangzhou",
+  "stars": 1,
+  "cuisine": "European",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://gz.stiller.cn",
+  "lat": 23.138026,
+  "lng": 113.280695
+}

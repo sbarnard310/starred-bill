@@ -1,0 +1,12 @@
+{
+  "name": "Silver Pot",
+  "city": "chengdu",
+  "address": "No. 532, 5F, M6, ICP Office Building, 300 Jiaozi Avenue, Wuhou, Chengdu",
+  "stars": 1,
+  "cuisine": "Sichuan",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 30.5856,
+  "lng": 104.056593
+}

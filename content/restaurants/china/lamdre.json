@@ -1,0 +1,12 @@
+{
+  "name": "Lamdre",
+  "city": "beijing",
+  "address": "Room 04, 1F, Block 14, Courtyard 4, Gongti North Road, Chaoyang, 100000, Beijing",
+  "stars": 2,
+  "cuisine": "Vegan",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 39.9303376,
+  "lng": 116.452012
+}

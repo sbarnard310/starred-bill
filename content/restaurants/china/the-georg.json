@@ -1,0 +1,12 @@
+{
+  "name": "The Georg",
+  "city": "beijing",
+  "address": "95 Donghuamen Street, Dongcheng, 100006, Beijing",
+  "stars": 1,
+  "cuisine": "European Contemporary",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 39.9139517,
+  "lng": 116.3962653
+}

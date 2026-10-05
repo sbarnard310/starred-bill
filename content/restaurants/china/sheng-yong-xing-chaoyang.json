@@ -1,0 +1,15 @@
+{
+  "name": "Sheng Yong Xing (Chaoyang)",
+  "city": "beijing",
+  "address": "5 Xindong Road, Chaoyang, Beijing",
+  "stars": 1,
+  "cuisine": "Beijing Cuisine",
+  "rating": 4.6,
+  "reviews": 71,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 39.939223,
+  "lng": 116.443748,
+  "placeId": "ChIJS0URQ5Gs8TURnjQV-Zob9ow"
+}

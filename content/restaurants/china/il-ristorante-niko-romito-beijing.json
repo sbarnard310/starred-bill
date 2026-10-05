@@ -1,0 +1,16 @@
+{
+  "name": "Il Ristorante - Niko Romito",
+  "city": "beijing",
+  "address": "1F, Bvlgari Hotel, Building 2, Courtyard 8, Xinyuan South Road, Chaoyang, Beijing",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.4,
+  "reviews": 111,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.bulgarihotels.com/en_US/beijing/dining/il-ristorante-niko-romito",
+  "lat": 39.9463887,
+  "lng": 116.4515797,
+  "placeId": "ChIJF4C6Dpus8TUR6VpkEE6m6eA"
+}

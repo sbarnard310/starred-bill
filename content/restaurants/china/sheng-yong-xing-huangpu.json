@@ -1,0 +1,15 @@
+{
+  "name": "Sheng Yong Xing (Huangpu)",
+  "city": "shanghai",
+  "address": "5F, Bund 5, 20 Guangdong Road, Huangpu, Shanghai",
+  "stars": 1,
+  "cuisine": "Beijing Cuisine",
+  "rating": 4.1,
+  "reviews": 7,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 31.2363387,
+  "lng": 121.4861839,
+  "placeId": "ChIJzSbEPVdwsjUR6d8wObyQAww"
+}

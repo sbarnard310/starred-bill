@@ -1,0 +1,13 @@
+{
+  "name": "Taian Table",
+  "city": "guangzhou",
+  "address": "2F, LN Garden Hotel, 368 Huanshi East Road, Yuexiu, Guangzhou",
+  "stars": 2,
+  "cuisine": "Innovative",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://gz.taian-table.cn/",
+  "lat": 23.1380432,
+  "lng": 113.2807021
+}

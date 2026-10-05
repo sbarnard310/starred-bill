@@ -1,0 +1,16 @@
+{
+  "name": "Canton Table",
+  "city": "shanghai",
+  "address": "5F, Bund 3, 3 Zhongshan Dong Yi Road, Huangpu, Shanghai",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "rating": 4.2,
+  "reviews": 34,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.threeonthebund.com/en/restaurant/102008183385",
+  "lat": 31.2363359,
+  "lng": 121.4889373,
+  "placeId": "ChIJvyekmVhwsjURklTPmEjsRvE"
+}

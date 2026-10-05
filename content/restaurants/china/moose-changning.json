@@ -1,0 +1,15 @@
+{
+  "name": "Moose (Changning)",
+  "city": "shanghai",
+  "address": "No.1, Lane 119, Xinhua Road, Changning, Shanghai",
+  "stars": 1,
+  "cuisine": "Jiangzhe",
+  "rating": 4.4,
+  "reviews": 9,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 31.20189,
+  "lng": 121.4297,
+  "placeId": "ChIJLyenvjhlsjURdYGkKkd4M7Y"
+}

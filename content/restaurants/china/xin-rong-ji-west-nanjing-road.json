@@ -1,0 +1,16 @@
+{
+  "name": "Xin Rong Ji (West Nanjing Road)",
+  "city": "shanghai",
+  "address": "2F, Henderson 688 Plaza, 688 West Nanjing Road, Jingan, Shanghai",
+  "stars": 1,
+  "cuisine": "Taizhou",
+  "rating": 4,
+  "reviews": 27,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.xinrongji.com/list",
+  "lat": 31.23138,
+  "lng": 121.46432,
+  "placeId": "ChIJOS2cRRRwsjUR3z1Pn8AhA5I"
+}

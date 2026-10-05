@@ -1,0 +1,15 @@
+{
+  "name": "Moose (Pudong)",
+  "city": "shanghai",
+  "address": "9F, L+Mall, 899 South Pudong Road, Pudong, Shanghai",
+  "stars": 1,
+  "cuisine": "Jiangzhe",
+  "rating": 4.3,
+  "reviews": 3,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 31.230604,
+  "lng": 121.51517,
+  "placeId": "ChIJU8T2uMJwsjURJMoDP4O8Wz4"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Fu He Hui",
+  "city": "shanghai",
+  "address": "1037 Yuyuan Road, Changning, Shanghai",
+  "stars": 2,
+  "cuisine": "Vegetarian",
+  "rating": 4.7,
+  "reviews": 87,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 31.2205002,
+  "lng": 121.4250678,
+  "placeId": "ChIJNZenaONlsjURk5lrxUnMSZU"
+}

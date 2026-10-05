@@ -1,0 +1,16 @@
+{
+  "name": "Mi Xun Teahouse",
+  "city": "chengdu",
+  "address": "Upper House, 81 Bitieshi Street, Jinjiang, 610021, Chengdu",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "rating": 4.7,
+  "reviews": 9,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.upperhouse.com/en/chengdu/restaurants-and-bars/mi-xun-teahouse/",
+  "lat": 30.654727,
+  "lng": 104.081984,
+  "placeId": "ChIJLXJ_RkLF7zYRmfvt-dJnYhE"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "MO Jasmine",
+  "city": "beijing",
+  "address": "L307, 3F, CP Center, 20 Jinhe East Road, Chaoyang, 100020, Beijing",
+  "stars": 1,
+  "cuisine": "Beijing Cuisine",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 39.91834,
+  "lng": 116.474125
+}

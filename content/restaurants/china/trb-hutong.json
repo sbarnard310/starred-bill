@@ -1,0 +1,19 @@
+{
+  "name": "Trb Hutong",
+  "city": "beijing",
+  "address": "23 Shatan North Street, Dongcheng, Beijing",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.5,
+  "reviews": 50,
+  "dinnerType": "menu",
+  "dinner": 788,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.trbhutong.com/menu",
+  "wine": 688,
+  "website": "https://www.trbhutong.com/",
+  "lat": 39.927966,
+  "lng": 116.403524,
+  "placeId": "ChIJX7PV49hS8DURuT2QxQbm7KU"
+}

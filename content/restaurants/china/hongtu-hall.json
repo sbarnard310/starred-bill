@@ -1,0 +1,13 @@
+{
+  "name": "Hongtu Hall",
+  "city": "guangzhou",
+  "address": "2F, White Swan Hotel, 1 Shamian South Street, Liwan, Guangzhou",
+  "stars": 1,
+  "cuisine": "Dim Sum",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.whiteswanhotel.com/",
+  "lat": 23.108321,
+  "lng": 113.237649
+}

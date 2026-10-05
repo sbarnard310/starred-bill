@@ -1,0 +1,15 @@
+{
+  "name": "Fang Xiang Jing",
+  "city": "chengdu",
+  "address": "No. 1, Courtyard 5, China Railway Ludao Art City, 16 Majia Garden Road, Jinniu, Chengdu",
+  "stars": 1,
+  "cuisine": "Sichuan",
+  "rating": 4.7,
+  "reviews": 9,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 30.685754,
+  "lng": 104.051369,
+  "placeId": "ChIJXRSB2Cnb7zYRbPhf4Hm_xZc"
+}

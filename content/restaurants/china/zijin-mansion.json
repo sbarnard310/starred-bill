@@ -1,0 +1,16 @@
+{
+  "name": "Zijin Mansion",
+  "city": "beijing",
+  "address": "3F, Waldorf Astoria Hotel, 5-15 Jinyu Hutong, Dongcheng, Beijing",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "rating": 4.6,
+  "reviews": 80,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hilton.com/en/hotels/bjswawa-waldorf-astoria-beijing/dining/zijin-mansion/",
+  "lat": 39.916259,
+  "lng": 116.414122,
+  "placeId": "ChIJ8Zu4GtJS8DURy95elmhTEFg"
+}

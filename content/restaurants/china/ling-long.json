@@ -1,0 +1,16 @@
+{
+  "name": "Ling Long",
+  "city": "shanghai",
+  "address": "105, 1F, Waldorf Astoria Hotel, 2 Zhongshan Dong Yi Road, Huangpu, Shanghai",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 5,
+  "reviews": 4,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantlinglong.com/",
+  "lat": 31.2355958,
+  "lng": 121.4853238,
+  "placeId": "ChIJ5w53UVZwsjURH2N1dSP1k9I"
+}

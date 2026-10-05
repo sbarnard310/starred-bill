@@ -1,0 +1,16 @@
+{
+  "name": "Ensue",
+  "city": "shenzhen",
+  "address": "40F, Futian Shangri-La Hotel, 4088 Yitian Road, Futian, Shenzhen",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.7,
+  "reviews": 20,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ensue-sz.com",
+  "lat": 22.5388051,
+  "lng": 114.0519764,
+  "placeId": "ChIJiacInLX1AzQRFJncm4L9Yg8"
+}

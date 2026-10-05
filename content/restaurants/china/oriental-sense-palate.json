@@ -1,0 +1,15 @@
+{
+  "name": "Oriental Sense & Palate",
+  "city": "shanghai",
+  "address": "57 Sinan Road, Huangpu, Shanghai",
+  "stars": 1,
+  "cuisine": "Chao Zhou",
+  "rating": 4,
+  "reviews": 12,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 31.216671,
+  "lng": 121.464255,
+  "placeId": "ChIJcRmpfQtwsjURVF2e2l5l6kc"
+}

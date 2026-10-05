@@ -1,0 +1,13 @@
+{
+  "name": "Seventh Son",
+  "city": "beijing",
+  "address": "B1 Level, Jiaming Center, 27 Dongsanhuan North Road, Chaoyang, Beijing",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.seventhson.hk",
+  "lat": 39.9266976,
+  "lng": 116.4544052
+}

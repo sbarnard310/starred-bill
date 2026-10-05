@@ -1,0 +1,13 @@
+{
+  "name": "Fabula",
+  "city": "shanghai",
+  "address": "2-3F, 720 Weihai Road, Jing'an, Shanghai",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.fabula.restaurant",
+  "lat": 31.228126,
+  "lng": 121.4532062
+}

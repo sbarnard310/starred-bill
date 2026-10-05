@@ -1,0 +1,16 @@
+{
+  "name": "Furong",
+  "city": "beijing",
+  "address": "1F, The Westin, 9C Jinrong Street, Xicheng, Beijing",
+  "stars": 1,
+  "cuisine": "Hunanese",
+  "rating": 5,
+  "reviews": 5,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.xinrongji.com",
+  "lat": 39.916154,
+  "lng": 116.35324,
+  "placeId": "ChIJD7P0ZWhS8DUR8qwaauhdElM"
+}

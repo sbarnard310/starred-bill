@@ -1,0 +1,12 @@
+{
+  "name": "Jingji",
+  "city": "beijing",
+  "address": "2F, The Ritz-Carlton Hotel, 83A Jianguo Road, Chaoyang, Beijing",
+  "stars": 2,
+  "cuisine": "Beijing Cuisine",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 39.9092647,
+  "lng": 116.4747033
+}

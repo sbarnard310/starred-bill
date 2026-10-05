@@ -1,0 +1,12 @@
+{
+  "name": "Yu Garden",
+  "city": "guangzhou",
+  "address": "6 Tianshun Road, Huangpu, Guangzhou",
+  "stars": 1,
+  "cuisine": "Fujian",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 23.179545,
+  "lng": 113.4142336
+}

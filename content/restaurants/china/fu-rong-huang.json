@@ -1,0 +1,15 @@
+{
+  "name": "Fu Rong Huang",
+  "city": "chengdu",
+  "address": "3F, 66-16 Guanghuacun Street, Qingyang, Chengdu",
+  "stars": 1,
+  "cuisine": "Sichuan",
+  "rating": 4.8,
+  "reviews": 18,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 30.6670944,
+  "lng": 104.0076139,
+  "placeId": "ChIJY_jEKKfE7zYRpp_0MmOEhDU"
+}

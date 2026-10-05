@@ -1,0 +1,15 @@
+{
+  "name": "Co-",
+  "city": "chengdu",
+  "address": "No. 318, 3F, Chinese Financial Center, 33 Jiaozi Avenue, Wuhou, Chengdu",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.4,
+  "reviews": 98,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 30.5837221,
+  "lng": 104.0607617,
+  "placeId": "ChIJAbm9pmjG7zYR7fDgqKaeq5Y"
+}

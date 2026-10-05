@@ -1,0 +1,12 @@
+{
+  "name": "Sole",
+  "city": "shanghai",
+  "address": "Shop 109, Shanghai Centre, 1376 West Nanjing Road, Jingan, Shanghai",
+  "stars": 1,
+  "cuisine": "Cantonese",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 31.2280406,
+  "lng": 121.4468481
+}

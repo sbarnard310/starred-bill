@@ -1,0 +1,17 @@
+{
+  "name": "Fleur de Sel",
+  "city": "serbia",
+  "area": "Novi Slankamen",
+  "address": "Počenta bb, 22323, Novi Slankamen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 44,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.sapat.rs/restaurant-fleur-de-sel/?lang=en",
+  "lat": 45.1540366,
+  "lng": 20.2173251,
+  "placeId": "ChIJ88fsKwD7WkcRQ-Vw4opLWMo"
+}

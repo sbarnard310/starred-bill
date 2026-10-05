@@ -1,0 +1,17 @@
+{
+  "name": "Langouste",
+  "city": "serbia",
+  "area": "Belgrade",
+  "address": "Kosančićev Venac 29, 11000, Belgrade",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 764,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.langouste.rs/",
+  "lat": 44.8176948,
+  "lng": 20.450754,
+  "placeId": "ChIJd3dWxU1lWkcRkI96X_C98Tg"
+}

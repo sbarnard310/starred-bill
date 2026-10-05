@@ -1,0 +1,16 @@
+{
+  "name": "SAVAGE",
+  "city": "oslo",
+  "address": "Nedre Slottsgate 2, 0153, Oslo",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 143,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantsavage.no/",
+  "lat": 59.9093941,
+  "lng": 10.7401093,
+  "placeId": "ChIJoYdyGlVvQUYRQiTpfSvhOQs"
+}

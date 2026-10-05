@@ -1,0 +1,17 @@
+{
+  "name": "Omakase by Sergey Pak",
+  "city": "norway",
+  "area": "Bergen",
+  "address": "Domkirkegaten 6, 5017, Bergen",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 41,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.debergenske.no/en/bergen/restaurants/omakase-by-sergey-pak/",
+  "lat": 60.3939119,
+  "lng": 5.329652,
+  "placeId": "ChIJIcr8GAD_PEYRdGgj6BW0gCg"
+}

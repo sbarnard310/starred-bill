@@ -1,0 +1,16 @@
+{
+  "name": "Stallen",
+  "city": "oslo",
+  "address": "Underhaugsveien 28, 0354, Oslo",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 143,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantstallen.no/",
+  "lat": 59.9238866,
+  "lng": 10.7263103,
+  "placeId": "ChIJObWXpz1tQUYRBm7OfhIR868"
+}

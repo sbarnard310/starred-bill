@@ -1,0 +1,16 @@
+{
+  "name": "Sabi Omakase Oslo",
+  "city": "oslo",
+  "address": "Ruseløkkveien 3, 0251, Oslo",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 253,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.omakaseoslo.no/",
+  "lat": 59.9141305,
+  "lng": 10.7289794,
+  "placeId": "ChIJyZ1OK35uQUYRs_kHgYhPRqE"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "FAGN",
+  "city": "norway",
+  "area": "Trondheim",
+  "address": "Ørjaveita 4, 7010, Trondheim",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 534,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://fagn.no/",
+  "lat": 63.4339936,
+  "lng": 10.3962931,
+  "placeId": "ChIJ8_RkhpwxbUYRl5pLbMUeCdM"
+}

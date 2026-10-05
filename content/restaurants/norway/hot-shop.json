@@ -1,0 +1,16 @@
+{
+  "name": "Hot Shop",
+  "city": "oslo",
+  "address": "Københavngata 18, 0566, Oslo",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 260,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restauranthotshop.no",
+  "lat": 59.9281988,
+  "lng": 10.7685963,
+  "placeId": "ChIJqcqB90FuQUYRuY-l67sYke0"
+}

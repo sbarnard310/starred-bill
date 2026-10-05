@@ -1,0 +1,16 @@
+{
+  "name": "Statholdergaarden",
+  "city": "oslo",
+  "address": "Rådhusgate 11, 0151, Oslo",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 574,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.statholdergaarden.no/",
+  "lat": 59.9094664,
+  "lng": 10.7431174,
+  "placeId": "ChIJzYVw9ohuQUYRYTegBXk18tw"
+}

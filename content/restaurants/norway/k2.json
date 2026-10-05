@@ -1,0 +1,17 @@
+{
+  "name": "K2",
+  "city": "norway",
+  "area": "Stavanger",
+  "address": "Pedersgata 69, 4013, Stavanger",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 196,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantk2.no",
+  "lat": 58.9697479,
+  "lng": 5.7461623,
+  "placeId": "ChIJ3V5jkuI1OkYR_ZSJ6MlMyXw"
+}

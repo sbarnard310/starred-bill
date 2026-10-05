@@ -1,0 +1,17 @@
+{
+  "name": "Hermetikken",
+  "city": "norway",
+  "area": "Stavanger",
+  "address": "Niels Juels Gate 50, 4008, Stavanger",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 77,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://hermetikken-restaurant.no",
+  "lat": 58.9675838,
+  "lng": 5.7221671,
+  "placeId": "ChIJwUDyOPc1OkYRYq8KAbZLJ0A"
+}

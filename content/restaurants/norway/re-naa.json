@@ -1,0 +1,19 @@
+{
+  "name": "RE-NAA",
+  "city": "norway",
+  "area": "Stavanger",
+  "address": "Nordbøgata 8, 4006, Stavanger",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 234,
+  "dinnerType": "menu",
+  "dinner": 5000,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurantrenaa.no/",
+  "website": "https://www.restaurantrenaa.no/",
+  "lat": 58.9739705,
+  "lng": 5.7308447,
+  "placeId": "ChIJG7IDHko1OkYRNC5tAviphS0"
+}

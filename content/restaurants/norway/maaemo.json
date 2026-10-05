@@ -1,0 +1,16 @@
+{
+  "name": "Maaemo",
+  "city": "oslo",
+  "address": "Dronning Eufemias gate 23, 0194, Oslo",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 891,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.maaemo.no",
+  "lat": 59.9075293,
+  "lng": 10.7586363,
+  "placeId": "ChIJhyP_qopuQUYRwvq5k9QGIy8"
+}

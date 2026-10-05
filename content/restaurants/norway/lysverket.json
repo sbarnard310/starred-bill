@@ -1,0 +1,17 @@
+{
+  "name": "Lysverket",
+  "city": "norway",
+  "area": "Bergen",
+  "address": "Rasmus Meyers Allé 9, 5015, Bergen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 649,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lysverket.no",
+  "lat": 60.3893076,
+  "lng": 5.3289615,
+  "placeId": "ChIJA5Bcbqn-PEYRiN3lhF2jfvw"
+}

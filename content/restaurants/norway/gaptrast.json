@@ -1,0 +1,17 @@
+{
+  "name": "Gaptrast",
+  "city": "norway",
+  "area": "Bergen",
+  "address": "Baneveien 16, 5010, Bergen",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 47,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://gaptrast.no/",
+  "lat": 60.392238,
+  "lng": 5.3164713,
+  "placeId": "ChIJgUiMla39PEYRa8mIQgCsksg"
+}

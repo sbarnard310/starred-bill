@@ -1,0 +1,20 @@
+{
+  "name": "Speilsalen",
+  "city": "norway",
+  "area": "Trondheim",
+  "address": "Dronningens gate 5, 7011, Trondheim",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 77,
+  "dinnerType": "menu",
+  "dinner": 2750,
+  "dinnerNote": "Tasting menu (other menus from NOK 1,750)",
+  "sourceType": "site",
+  "source": "https://britannia.no/en/dine-with-us/speilsalen",
+  "wine": 1650,
+  "website": "https://britannia.no/en/dine-with-us/speilsalen",
+  "lat": 63.4318148,
+  "lng": 10.3990388,
+  "placeId": "ChIJab_zEdAxbUYRiMCFnG3IS34"
+}

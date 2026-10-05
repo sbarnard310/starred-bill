@@ -1,0 +1,16 @@
+{
+  "name": "Kontrast",
+  "city": "oslo",
+  "address": "Maridalsveien 15, 0175, Oslo",
+  "stars": 2,
+  "cuisine": "Scandinavian",
+  "rating": 4.7,
+  "reviews": 480,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-kontrast.no/",
+  "lat": 59.922727,
+  "lng": 10.7511251,
+  "placeId": "ChIJoZWp-ipsQUYR-u_yrxmpgnI"
+}

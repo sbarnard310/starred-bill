@@ -1,0 +1,16 @@
+{
+  "name": "Mon Oncle",
+  "city": "oslo",
+  "address": "Universitetsgata 9, 0164, Oslo",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.6,
+  "reviews": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mononcle.no",
+  "lat": 59.917166,
+  "lng": 10.7389457,
+  "placeId": "ChIJF6SOh3dvQUYRf3c7twtZWVA"
+}

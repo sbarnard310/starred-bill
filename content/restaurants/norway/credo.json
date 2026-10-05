@@ -1,0 +1,16 @@
+{
+  "name": "Credo",
+  "city": "oslo",
+  "address": "The National Library, Henrik Ibsens Gate 110, 0255, Oslo",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 275,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantcredo.no",
+  "lat": 59.9136752,
+  "lng": 10.7179633,
+  "placeId": "ChIJj2nrhZwxbUYR9u_gaKC89IE"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Table du Castellet",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Le Castellet, Var",
+  "areaFr": "Le Castellet, Var",
+  "address": "3001 route des Hauts-du-Camp, au Circuit Paul Ricard, 83330 Le Castellet",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 516,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotelducastellet.net/fr/la-table-du-castellet.html",
+  "lat": 43.2499288,
+  "lng": 5.7838874,
+  "placeId": "ChIJSaLF9W8JyRIRQBNfndvCzD0"
+}

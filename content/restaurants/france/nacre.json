@@ -1,0 +1,21 @@
+{
+  "name": "Nacre",
+  "city": "nouvelle-aquitaine",
+  "area": "Arès, Gironde",
+  "areaFr": "Arès, Gironde",
+  "address": "3 bis rue Sophie-et-Paul-Wallerstein, 33740 Arès",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 921,
+  "dinner": 130,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €110)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 110 €)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-nacre.com/notre-cuisine/",
+  "website": "https://www.restaurant-nacre.com/",
+  "lat": 44.7662756,
+  "lng": -1.1401852,
+  "placeId": "ChIJ2zyxhY-hVA0RtnHAS46bE-g"
+}

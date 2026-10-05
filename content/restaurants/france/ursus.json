@@ -1,0 +1,19 @@
+{
+  "name": "Ursus",
+  "city": "auvergne-rhone-alpes",
+  "area": "Tignes, Savoie",
+  "areaFr": "Tignes, Savoie",
+  "address": "Maison Bouvier - Les Suites, 39 rue du Val-Claret, au Val-Claret, 73320 Tignes",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 547,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://maison-bouvier.com/restaurant-ursus/",
+  "lat": 45.4579161,
+  "lng": 6.9011983,
+  "placeId": "ChIJgzF5yKoMiUcRenRwPGvdqek"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Burnel",
+  "city": "grand-est",
+  "area": "Rouvres-en-Xaintois, Vosges",
+  "areaFr": "Rouvres-en-Xaintois, Vosges",
+  "address": "22 rue Jeanne-d'Arc, 88500 Rouvres-en-Xaintois",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 41,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.burnel.fr",
+  "lat": 48.3111097,
+  "lng": 6.0317932,
+  "placeId": "ChIJs0JwAnpBk0cRJNQExfUMBmc"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "L'Auberge des Glazicks",
+  "city": "brittany",
+  "area": "Plomodiern, Finistère",
+  "areaFr": "Plomodiern, Finistère",
+  "address": "7 rue de la Plage, 29550 Plomodiern",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 431,
+  "dinner": 370,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €230)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 230 €)",
+  "sourceType": "site",
+  "source": "https://www.aubergedesglazick.com/media/original/menu-of-pdf-210626.pdf",
+  "website": "https://www.aubergedesglazick.com",
+  "lat": 48.1805696,
+  "lng": -4.2345193,
+  "placeId": "ChIJVSnLvnTNFkgRg7j5AokIWVg"
+}

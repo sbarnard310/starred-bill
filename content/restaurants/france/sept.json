@@ -1,0 +1,17 @@
+{
+  "name": "SEPT",
+  "city": "toulouse",
+  "address": "11 rue Théodore-Ozenne, 31000 Toulouse",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 514,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-sept.fr/",
+  "lat": 43.5967943,
+  "lng": 1.4467407,
+  "placeId": "ChIJFeNlemC7rhIRr38XYpIyhA0"
+}

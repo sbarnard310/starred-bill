@@ -1,0 +1,19 @@
+{
+  "name": "Le Pressoir",
+  "city": "brittany",
+  "area": "Saint-Avé, Morbihan",
+  "areaFr": "Saint-Avé, Morbihan",
+  "address": "7 rue de l'Hôpital, 56890 Saint-Avé",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 743,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.le-pressoir.fr",
+  "lat": 47.6966578,
+  "lng": -2.7508368,
+  "placeId": "ChIJhZ9lTgcfEEgREdtNEn37QIA"
+}

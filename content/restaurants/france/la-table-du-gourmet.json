@@ -1,0 +1,19 @@
+{
+  "name": "La Table du Gourmet",
+  "city": "grand-est",
+  "area": "Riquewihr, Haut-Rhin",
+  "areaFr": "Riquewihr, Haut-Rhin",
+  "address": "5 rue de la 1ère-Armée, 68340 Riquewihr",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 473,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://jlbrendel.com/",
+  "lat": 48.1664136,
+  "lng": 7.2972837,
+  "placeId": "ChIJbf5f7KlgkUcROD27CKVK8gE"
+}

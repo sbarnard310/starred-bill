@@ -1,0 +1,19 @@
+{
+  "name": "Les Genêts",
+  "city": "pays-de-la-loire",
+  "area": "Brem-sur-Mer, Vendée",
+  "areaFr": "Brem-sur-Mer, Vendée",
+  "address": "21 bis rue de l'Océan, 85470 Brem-sur-Mer",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 1590,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-les-genets.fr/",
+  "lat": 46.605894,
+  "lng": -1.8350415,
+  "placeId": "ChIJRxzhbrhbBEgRX1UGW9JfKBQ"
+}

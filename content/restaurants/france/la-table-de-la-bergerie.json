@@ -1,0 +1,19 @@
+{
+  "name": "La Table de la Bergerie",
+  "city": "pays-de-la-loire",
+  "area": "Bellevigne-en-Layon, Maine-et-Loire",
+  "areaFr": "Bellevigne-en-Layon, Maine-et-Loire",
+  "address": "3 route de la Pierre, 49380 Bellevigne-en-Layon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 449,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.latable-bergerie.fr",
+  "lat": 47.26803,
+  "lng": -0.59238,
+  "placeId": "ChIJo7HX4L7NB0gRzGSkGhSukMM"
+}

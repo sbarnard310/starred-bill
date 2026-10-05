@@ -1,0 +1,21 @@
+{
+  "name": "Agapes",
+  "city": "toulouse",
+  "address": "7 rue de l'Industrie, 31000 Toulouse",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 5,
+  "reviews": 463,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.agapes-toulouse.fr",
+  "lat": 43.6047,
+  "lng": 1.4509752,
+  "placeId": "ChIJ-Xuw0s-9rhIRRQrtCzSzP1U"
+}

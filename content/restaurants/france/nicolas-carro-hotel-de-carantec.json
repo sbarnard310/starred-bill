@@ -1,0 +1,19 @@
+{
+  "name": "Nicolas Carro - Hôtel de Carantec",
+  "city": "brittany",
+  "area": "Carantec, Finistère",
+  "areaFr": "Carantec, Finistère",
+  "address": "20 rue du Kelenn, 29660 Carantec",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 342,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-carantec.fr/",
+  "lat": 48.6706639,
+  "lng": -3.9127356,
+  "placeId": "ChIJNWY6gRPgE0gRyuj7208FeRk"
+}

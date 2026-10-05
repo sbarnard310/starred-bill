@@ -1,0 +1,19 @@
+{
+  "name": "Le Bon Accueil",
+  "city": "bourgogne-franche-comte",
+  "area": "Malbuisson, Doubs",
+  "areaFr": "Malbuisson, Doubs",
+  "address": "1 chemin de la Grande-Source, 25160 Malbuisson",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 310,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.le-bon-accueil.fr",
+  "lat": 46.7972986,
+  "lng": 6.3033347,
+  "placeId": "ChIJadKL5u-vjUcRtLJgWsK0fqM"
+}

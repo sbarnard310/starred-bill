@@ -1,0 +1,21 @@
+{
+  "name": "Cent33",
+  "city": "bordeaux",
+  "address": "133 rue du Jardin-Public, 33000 Bordeaux",
+  "stars": 1,
+  "cuisine": "Creative",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.8,
+  "reviews": 1118,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://cent33.com/",
+  "lat": 44.8550026,
+  "lng": -0.573945,
+  "placeId": "ChIJ_TieeQ0pVQ0RiiNDG2WbRRw"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Le Carmin",
+  "city": "bourgogne-franche-comte",
+  "area": "Beaune, Côte-d'Or",
+  "areaFr": "Beaune, Côte-d'Or",
+  "address": "4B place Carnot, 21200 Beaune",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.3,
+  "reviews": 337,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://restaurant-lecarmin.com/",
+  "lat": 47.0225196,
+  "lng": 4.8376365,
+  "placeId": "ChIJa_N3R-308kcR8uFtzrUn1eY"
+}

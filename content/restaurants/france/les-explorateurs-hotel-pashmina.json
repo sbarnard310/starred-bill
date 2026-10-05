@@ -1,0 +1,19 @@
+{
+  "name": "Les Explorateurs - Hôtel Pashmina",
+  "city": "auvergne-rhone-alpes",
+  "area": "Val-Thorens, Savoie",
+  "areaFr": "Val-Thorens, Savoie",
+  "address": "141 rue des Dalles, 73440 Val-Thorens",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 536,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotelpashmina.com/",
+  "lat": 45.2957656,
+  "lng": 6.5862441,
+  "placeId": "ChIJowBiMmKGiUcRtHCsSbbOnso"
+}

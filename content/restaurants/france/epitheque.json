@@ -1,0 +1,19 @@
+{
+  "name": "Épithèque",
+  "city": "auvergne-rhone-alpes",
+  "area": "Valence, Drôme",
+  "areaFr": "Valence, Drôme",
+  "address": "32 Grande-Rue, 26000 Valence",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 268,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://baptistepoinot.com/",
+  "lat": 44.9326634,
+  "lng": 4.8909199,
+  "placeId": "ChIJ1WN4NS1Y9UcRKvVR3JpPQRg"
+}

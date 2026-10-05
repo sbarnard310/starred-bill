@@ -1,0 +1,19 @@
+{
+  "name": "Table de Levernois",
+  "city": "bourgogne-franche-comte",
+  "area": "Levernois, Côte-d'Or",
+  "areaFr": "Levernois, Côte-d'Or",
+  "address": "Hostellerie de Levernois, 15 rue du Golf, 21200 Levernois",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.levernois.com/fr/la-table-de-levernois.html",
+  "lat": 46.9928458,
+  "lng": 4.8777507,
+  "placeId": "ChIJ73mdZ0Pz8kcRcj2Fy1-IzKo"
+}

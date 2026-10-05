@@ -1,0 +1,19 @@
+{
+  "name": "L'Évidence",
+  "city": "centre-val-de-loire",
+  "area": "Montbazon, Indre-et-Loire",
+  "areaFr": "Montbazon, Indre-et-Loire",
+  "address": "1 place des Marronniers, 37250 Montbazon",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 784,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-levidence.com",
+  "lat": 47.2873743,
+  "lng": 0.7133337,
+  "placeId": "ChIJewzLg-DZ_EcRWkRzJm6wrRk"
+}

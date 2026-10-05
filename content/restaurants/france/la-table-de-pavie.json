@@ -1,0 +1,19 @@
+{
+  "name": "La Table de Pavie",
+  "city": "nouvelle-aquitaine",
+  "area": "Saint-Emilion, Gironde",
+  "areaFr": "Saint-Emilion, Gironde",
+  "address": "Hôtel de Pavie, 5 place du Clocher, 33330 Saint-Emilion",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 205,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://hoteldepavie.com",
+  "lat": 44.8934495,
+  "lng": -0.1566263,
+  "placeId": "ChIJMRwuQfFPVQ0RGQpS3RGocNc"
+}

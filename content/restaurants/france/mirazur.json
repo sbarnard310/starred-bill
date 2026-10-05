@@ -1,0 +1,19 @@
+{
+  "name": "Mirazur",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Menton, Alpes-Maritimes",
+  "areaFr": "Menton, Alpes-Maritimes",
+  "address": "30 avenue Aristide-Briand, 06500 Menton",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.4,
+  "reviews": 1734,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.mirazur.fr/",
+  "lat": 43.7859304,
+  "lng": 7.5280514,
+  "placeId": "ChIJm8DZegnszRIRmG_rHu0gA5c"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Table d'Asten",
+  "city": "brittany",
+  "area": "Binic, Côtes-d'Armor",
+  "areaFr": "Binic, Côtes-d'Armor",
+  "address": "8 boulevard Clemenceau, 22520 Binic",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.2,
+  "reviews": 730,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.asten-restaurant.fr",
+  "lat": 48.5994572,
+  "lng": -2.8251327,
+  "placeId": "ChIJ9SXKh9n9EUgRp3eRl9ycAcI"
+}

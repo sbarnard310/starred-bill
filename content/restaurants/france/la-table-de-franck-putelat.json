@@ -1,0 +1,19 @@
+{
+  "name": "La Table de Franck Putelat",
+  "city": "occitanie",
+  "area": "Carcassonne, Aude",
+  "areaFr": "Carcassonne, Aude",
+  "address": "80 chemin des Anglais, au Sud de la Cité, 11000 Carcassonne",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 817,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://franckputelat.com/",
+  "lat": 43.2013363,
+  "lng": 2.3603104,
+  "placeId": "ChIJYQv3X0IsrhIRkRimhHDtYKk"
+}

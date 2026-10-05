@@ -1,0 +1,19 @@
+{
+  "name": "La Grange de Belle-Église",
+  "city": "hauts-de-france",
+  "area": "Belle-Église, Oise",
+  "areaFr": "Belle-Église, Oise",
+  "address": "28 boulevard René-Aimé-Lagabrielle, 60540 Belle-Église",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 629,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lagrangedebelleeglise.com/",
+  "lat": 49.1922098,
+  "lng": 2.2145117,
+  "placeId": "ChIJ2cWW7G9a5kcROuMrfQPdhPs"
+}

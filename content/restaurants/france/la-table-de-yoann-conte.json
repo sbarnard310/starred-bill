@@ -1,0 +1,19 @@
+{
+  "name": "La Table de Yoann Conte",
+  "city": "auvergne-rhone-alpes",
+  "area": "Veyrier-du-Lac, Haute-Savoie",
+  "areaFr": "Veyrier-du-Lac, Haute-Savoie",
+  "address": "13 vieille route des Pensières, 74290 Veyrier-du-Lac",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 360,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://yoann-conte.com",
+  "lat": 45.8889235,
+  "lng": 6.1721868,
+  "placeId": "ChIJgxteONeRi0cRR0LFSG3gYhg"
+}

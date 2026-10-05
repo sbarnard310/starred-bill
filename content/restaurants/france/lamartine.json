@@ -1,0 +1,19 @@
+{
+  "name": "Lamartine",
+  "city": "auvergne-rhone-alpes",
+  "area": "Le Bourget-du-Lac, Savoie",
+  "areaFr": "Le Bourget-du-Lac, Savoie",
+  "address": "3132 route du Tunnel, Bourdeau, 73370 Le Bourget-du-Lac",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 2373,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lamartine-marin.com",
+  "lat": 45.6758342,
+  "lng": 5.8531112,
+  "placeId": "ChIJa6NeRoIJi0cRAzOqDfAkoEI"
+}

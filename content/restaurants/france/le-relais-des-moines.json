@@ -1,0 +1,19 @@
+{
+  "name": "Le Relais des Moines",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Les Arcs, Var",
+  "areaFr": "Les Arcs, Var",
+  "address": "Route de Sainte-Roseline, 83460 Les Arcs",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1361,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lerelaisdesmoines.com",
+  "lat": 43.4662157,
+  "lng": 6.4905162,
+  "placeId": "ChIJy-4aLhWuzhIR8nGSN8YdMCk"
+}

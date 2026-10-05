@@ -1,0 +1,19 @@
+{
+  "name": "Côté Jardin",
+  "city": "centre-val-de-loire",
+  "area": "Gien, Loiret",
+  "areaFr": "Gien, Loiret",
+  "address": "14 avenue de Bourges, 45500 Gien",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 312,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.cotejardin45.fr",
+  "lat": 47.6803325,
+  "lng": 2.6296242,
+  "placeId": "ChIJjeBuuZBe5UcRDZlwUk9FzlI"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "En Pleine Nature",
+  "city": "occitanie",
+  "area": "Quint-Fonsegrives, Haute-Garonne",
+  "areaFr": "Quint-Fonsegrives, Haute-Garonne",
+  "address": "6 place de la Mairie, 31130 Quint-Fonsegrives",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 822,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.en-pleine-nature.com",
+  "lat": 43.585293,
+  "lng": 1.5294347,
+  "placeId": "ChIJxehjE4SWrhIRoqc9z27c2D0"
+}

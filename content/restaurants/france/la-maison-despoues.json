@@ -1,0 +1,19 @@
+{
+  "name": "La Maison Despouès",
+  "city": "occitanie",
+  "area": "Puylausic, Gers",
+  "areaFr": "Puylausic, Gers",
+  "address": "911 route de Montadet, 32220 Puylausic",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 524,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://lamaisondespoues.fr/",
+  "lat": 43.4403003,
+  "lng": 0.9288137,
+  "placeId": "ChIJ-X-crxA_qRIR9z99i1P3kQA"
+}

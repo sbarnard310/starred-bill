@@ -1,0 +1,21 @@
+{
+  "name": "Mont Blanc Restaurant & Goûter",
+  "city": "auvergne-rhone-alpes",
+  "area": "Hauteluce, Savoie",
+  "areaFr": "Hauteluce, Savoie",
+  "address": "16 rue de la Voûte, 73620 Hauteluce",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 310,
+  "dinner": 150,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €110)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 110 €)",
+  "sourceType": "site",
+  "source": "https://www.montblanc-restaurant.com/le-restaurant-une-etoile-michelin/",
+  "website": "https://www.montblanc-restaurant.com",
+  "lat": 45.7498163,
+  "lng": 6.5843326,
+  "placeId": "ChIJef-ojVLgi0cR3t50vfsp3is"
+}

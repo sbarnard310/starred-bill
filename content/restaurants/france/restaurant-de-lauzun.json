@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant De Lauzun",
+  "city": "occitanie",
+  "area": "Pézenas, Hérault",
+  "areaFr": "Pézenas, Hérault",
+  "address": "Route de Nizas, 34120 Pézenas",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 560,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-delauzun.com",
+  "lat": 43.4827871,
+  "lng": 3.4116289,
+  "placeId": "ChIJ95IBM7RrsRIRwYEY89Ko8CQ"
+}

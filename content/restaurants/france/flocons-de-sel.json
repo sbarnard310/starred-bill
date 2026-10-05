@@ -1,0 +1,19 @@
+{
+  "name": "Flocons de Sel",
+  "city": "auvergne-rhone-alpes",
+  "area": "Megève, Haute-Savoie",
+  "areaFr": "Megève, Haute-Savoie",
+  "address": "1775 route du Leutaz, Le Leutaz, 74120 Megève",
+  "stars": 3,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 792,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.floconsdesel.com",
+  "lat": 45.8302404,
+  "lng": 6.5969625,
+  "placeId": "ChIJ4xBKAP_ii0cR_L-Q0gDCjn4"
+}

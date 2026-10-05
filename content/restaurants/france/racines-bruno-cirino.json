@@ -1,0 +1,22 @@
+{
+  "name": "Racines - Bruno Cirino",
+  "city": "nice",
+  "address": "3 rue Clément-Roassal, 06000 Nice",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "rating": 4.8,
+  "reviews": 143,
+  "dinner": 85,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteFr": "Menu dégustation",
+  "sourceType": "site",
+  "source": "https://www.restaurant-racines-nice.com/menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.restaurant-racines-nice.com",
+  "lat": 43.7087319,
+  "lng": 7.2624907,
+  "placeId": "ChIJIc-mUOPRzRIRnNlsIxBDGn0"
+}

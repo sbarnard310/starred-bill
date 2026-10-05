@@ -1,0 +1,19 @@
+{
+  "name": "Pourquoi Pas",
+  "city": "brittany",
+  "area": "Dinard, Ille-et-Vilaine",
+  "areaFr": "Dinard, Ille-et-Vilaine",
+  "address": "Hôtel Castelbrac, 17 avenue George-V, 35800 Dinard",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 432,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.castelbrac.com/",
+  "lat": 48.6344213,
+  "lng": -2.0490902,
+  "placeId": "ChIJYVDYuMSADkgRGateIaMrEZg"
+}

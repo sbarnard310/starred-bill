@@ -1,0 +1,19 @@
+{
+  "name": "L'Almandin",
+  "city": "occitanie",
+  "area": "Saint-Cyprien, Pyrénées-Orientales",
+  "areaFr": "Saint-Cyprien, Pyrénées-Orientales",
+  "address": "Boulevard de l'Almandin, St-Cyprien Sud, 66750 Saint-Cyprien",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 829,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-ile-lagune.com/",
+  "lat": 42.6095379,
+  "lng": 3.036187,
+  "placeId": "ChIJe5OF5BR8sBIRBA1AHFRQGxg"
+}

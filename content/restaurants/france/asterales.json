@@ -1,0 +1,19 @@
+{
+  "name": "Asterales",
+  "city": "auvergne-rhone-alpes",
+  "area": "Corrençon-en-Vercors, Isère",
+  "areaFr": "Corrençon-en-Vercors, Isère",
+  "address": "Hôtel du Golf, Les Ritons, 784 route du Clos-de-la-Balme, 38250 Corrençon-en-Vercors",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 376,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-du-golf-vercors.fr/",
+  "lat": 45.02677,
+  "lng": 5.52001,
+  "placeId": "ChIJuXS6RrqQikcRSiJnM_nFNug"
+}

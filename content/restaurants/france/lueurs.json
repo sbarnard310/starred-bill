@@ -1,0 +1,23 @@
+{
+  "name": "Lueurs",
+  "city": "pays-de-la-loire",
+  "area": "Bouchemaine, Maine-et-Loire",
+  "areaFr": "Bouchemaine, Maine-et-Loire",
+  "address": "2 quai de Port-Boulet, 49080 Bouchemaine",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 5,
+  "reviews": 694,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://lepetitserrant.com/lueurs/",
+  "lat": 47.4103362,
+  "lng": -0.6177721,
+  "placeId": "ChIJz8MY65rVB0gR1IU21pPOptQ"
+}

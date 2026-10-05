@@ -1,0 +1,19 @@
+{
+  "name": "Lalique",
+  "city": "nouvelle-aquitaine",
+  "area": "Bommes, Gironde",
+  "areaFr": "Bommes, Gironde",
+  "address": "1707 route des Gourgues, 33210 Bommes",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 83,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lafauriepeyragueylalique.com/le-restaurant/",
+  "lat": 44.5493811,
+  "lng": -0.3374123,
+  "placeId": "ChIJJeUOLJgTVQ0R7QzHIaN8XB0"
+}

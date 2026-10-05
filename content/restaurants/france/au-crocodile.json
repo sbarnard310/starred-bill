@@ -1,0 +1,17 @@
+{
+  "name": "Au Crocodile",
+  "city": "strasbourg",
+  "address": "10 rue de l'Outre, 67000 Strasbourg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1340,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.au-crocodile.com/Restaurant/",
+  "lat": 48.58372,
+  "lng": 7.747566,
+  "placeId": "ChIJcdAb-E3IlkcRFuzy9nI8oBg"
+}

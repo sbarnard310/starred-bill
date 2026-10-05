@@ -1,0 +1,19 @@
+{
+  "name": "Ginko",
+  "city": "hauts-de-france",
+  "area": "Lille, Nord",
+  "areaFr": "Lille, Nord",
+  "address": "70 rue de l'Hôpital-Militaire, 59000 Lille",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 696,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.ginkorestaurant.fr",
+  "lat": 50.6353027,
+  "lng": 3.0600982,
+  "placeId": "ChIJLTMS4jHVwkcRlug3jZAabNU"
+}

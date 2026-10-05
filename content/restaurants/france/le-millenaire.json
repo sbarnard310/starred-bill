@@ -1,0 +1,17 @@
+{
+  "name": "Le Millénaire",
+  "city": "reims",
+  "address": "4-6 rue Bertin, 51100 Reims",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1415,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-lemillenaire.com/",
+  "lat": 49.256073,
+  "lng": 4.0341837,
+  "placeId": "ChIJt9ZOF6116UcR8w6XwM1XzQc"
+}

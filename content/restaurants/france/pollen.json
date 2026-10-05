@@ -1,0 +1,19 @@
+{
+  "name": "Pollen",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Avignon, Vaucluse",
+  "areaFr": "Avignon, Vaucluse",
+  "address": "18 rue Joseph-Vernet, 84000 Avignon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 818,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.pollen-restaurant.fr",
+  "lat": 43.9493415,
+  "lng": 4.8035568,
+  "placeId": "ChIJ__-IioXrtRIRlEJPMJWgcoA"
+}

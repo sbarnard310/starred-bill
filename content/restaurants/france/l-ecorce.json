@@ -1,0 +1,21 @@
+{
+  "name": "L'Écorce",
+  "city": "toulouse",
+  "address": "8 rue de l'Esquile, 31000 Toulouse",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.9,
+  "reviews": 570,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lecorce.com",
+  "lat": 43.6063672,
+  "lng": 1.4418517,
+  "placeId": "ChIJDYAr5Y-7rhIR8XILDFaUD6A"
+}

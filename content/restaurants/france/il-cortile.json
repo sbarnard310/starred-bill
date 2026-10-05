@@ -1,0 +1,19 @@
+{
+  "name": "Il Cortile",
+  "city": "grand-est",
+  "area": "Mulhouse, Haut-Rhin",
+  "areaFr": "Mulhouse, Haut-Rhin",
+  "address": "11 rue des Franciscains, 68100 Mulhouse",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.4,
+  "reviews": 587,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.ilcortile-mulhouse.fr/",
+  "lat": 47.7474759,
+  "lng": 7.3340648,
+  "placeId": "ChIJn5BgSHObkUcRbwexHCarHpo"
+}

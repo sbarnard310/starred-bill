@@ -1,0 +1,19 @@
+{
+  "name": "Manoir de Lan-Kerellec",
+  "city": "brittany",
+  "area": "Trébeurden, Côtes-d'Armor",
+  "areaFr": "Trébeurden, Côtes-d'Armor",
+  "address": "11 allée centrale de Lan-Kerellec, 22560 Trébeurden",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.7,
+  "reviews": 632,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://lankerellec.com/",
+  "lat": 48.7766651,
+  "lng": -3.5847022,
+  "placeId": "ChIJJxPe5QbTE0gR_NRAk8wCC4E"
+}

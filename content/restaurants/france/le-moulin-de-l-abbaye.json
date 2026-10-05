@@ -1,0 +1,21 @@
+{
+  "name": "Le Moulin de l'Abbaye",
+  "city": "nouvelle-aquitaine",
+  "area": "Brantôme, Dordogne",
+  "areaFr": "Brantôme, Dordogne",
+  "address": "1 route de Bourdeilles, 24310 Brantôme",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 975,
+  "dinner": 150,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €51)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 51 €)",
+  "sourceType": "site",
+  "source": "https://www.moulinabbaye.com/la-carte/",
+  "website": "https://www.moulinabbaye.com/",
+  "lat": 45.3631,
+  "lng": 0.6462835,
+  "placeId": "ChIJkWG3oTIK_0cRiSb_f-oiLpc"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Maison Avoise",
+  "city": "ile-de-france",
+  "area": "Issy-les-Moulineaux, Hauts-de-Seine",
+  "areaFr": "Issy-les-Moulineaux, Hauts-de-Seine",
+  "address": "58 promenade du Verger, 92130 Issy-les-Moulineaux",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 366,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.maisonavoise.com/",
+  "lat": 48.8173763,
+  "lng": 2.2665575,
+  "placeId": "ChIJoRbFSDx75kcR7SM5m2FIfHc"
+}

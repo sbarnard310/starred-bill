@@ -1,0 +1,19 @@
+{
+  "name": "Auberge Saint-Walfrid",
+  "city": "grand-est",
+  "area": "Sarreguemines, Moselle",
+  "areaFr": "Sarreguemines, Moselle",
+  "address": "58 rue de Grosbliederstroff, 57200 Sarreguemines",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 726,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.stwalfrid.fr/",
+  "lat": 49.114563,
+  "lng": 7.044991,
+  "placeId": "ChIJb3wI4ZlKlEcR7f3ARAqIoJw"
+}

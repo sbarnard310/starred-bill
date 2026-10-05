@@ -1,0 +1,17 @@
+{
+  "name": "Alpage",
+  "city": "courchevel",
+  "address": "Annapurna, 734 route de l'Altiport, Courchevel 1850, 73120 Courchevel",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 41,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.annapurna-courchevel.com/fr/restaurant-alpage.html",
+  "lat": 45.4012235,
+  "lng": 6.6369297,
+  "placeId": "ChIJudQwI5mDiUcRxqOWFAVhBH0"
+}

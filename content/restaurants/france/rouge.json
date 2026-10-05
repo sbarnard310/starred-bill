@@ -1,0 +1,21 @@
+{
+  "name": "Rouge",
+  "city": "occitanie",
+  "area": "Nîmes, Gard",
+  "areaFr": "Nîmes, Gard",
+  "address": "Margaret - Hôtel Chouleur, 6 rue Fresque, 30000 Nîmes",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 343,
+  "dinner": 135,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €59)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 59 €)",
+  "sourceType": "site",
+  "source": "https://www.margaret-hotelchouleur.com/restaurants/restaurant-nimes/",
+  "website": "https://www.margaret-hotelchouleur.com",
+  "lat": 43.83717,
+  "lng": 4.35788,
+  "placeId": "ChIJv6e9IAottBIRa76ehrrC2u4"
+}

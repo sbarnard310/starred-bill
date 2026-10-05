@@ -1,0 +1,19 @@
+{
+  "name": "Le Refuge des Gourmets",
+  "city": "auvergne-rhone-alpes",
+  "area": "Machilly, Haute-Savoie",
+  "areaFr": "Machilly, Haute-Savoie",
+  "address": "90 route des Framboises, 74140 Machilly",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 626,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://refugedesgourmets.com/",
+  "lat": 46.2482745,
+  "lng": 6.3282703,
+  "placeId": "ChIJJUD3ImJsjEcRYG6jY8dyT0U"
+}

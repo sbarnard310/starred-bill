@@ -1,0 +1,19 @@
+{
+  "name": "Le Gindreau",
+  "city": "occitanie",
+  "area": "Saint-Médard, Lot",
+  "areaFr": "Saint-Médard, Lot",
+  "address": "146 rue du Gindreau, 46150 Saint-Médard",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 690,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.legindreau.com",
+  "lat": 44.5383407,
+  "lng": 1.2913203,
+  "placeId": "ChIJi7X11auErBIReZXIwTHVR7w"
+}

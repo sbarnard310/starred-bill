@@ -1,0 +1,19 @@
+{
+  "name": "Bessem",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Mandelieu-la-Napoule, Alpes-Maritimes",
+  "areaFr": "Mandelieu-la-Napoule, Alpes-Maritimes",
+  "address": "183 avenue de la République, 06210 Mandelieu-la-Napoule",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.9,
+  "reviews": 523,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.bessem-restaurant.com/",
+  "lat": 43.54057,
+  "lng": 6.9334529,
+  "placeId": "ChIJ24xwsCeDzhIRA2CTreat538"
+}

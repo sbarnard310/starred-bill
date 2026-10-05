@@ -1,0 +1,19 @@
+{
+  "name": "Maison Caillet",
+  "city": "normandy",
+  "area": "Valmont, Seine-Maritime",
+  "areaFr": "Valmont, Seine-Maritime",
+  "address": "22 rue André-Fiquet, 76540 Valmont",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 940,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://maisoncaillet.com/",
+  "lat": 49.7446677,
+  "lng": 0.4919745,
+  "placeId": "ChIJk1_3h-No4EcR-GOfpT3juLA"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Chapelle Saint-Martin",
+  "city": "nouvelle-aquitaine",
+  "area": "Nieul, Haute-Vienne",
+  "areaFr": "Nieul, Haute-Vienne",
+  "address": "33 route Saint-Martin-du-Fault, 87510 Nieul",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 540,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.chapellesaintmartin.com",
+  "lat": 45.8924535,
+  "lng": 1.1784757,
+  "placeId": "ChIJYStFsQDK_kcRdrZdrf9FFX4"
+}

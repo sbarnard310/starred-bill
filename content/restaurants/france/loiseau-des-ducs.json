@@ -1,0 +1,17 @@
+{
+  "name": "Loiseau des Ducs",
+  "city": "dijon",
+  "address": "3 rue Vauban, 21000 Dijon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 801,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.bernard-loiseau.com/",
+  "lat": 47.320818,
+  "lng": 5.0412609,
+  "placeId": "ChIJR6vaU-id8kcRWcnBwy7TYHE"
+}

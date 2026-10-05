@@ -1,0 +1,21 @@
+{
+  "name": "Château de la Treyne",
+  "city": "occitanie",
+  "area": "Lacave, Lot",
+  "areaFr": "Lacave, Lot",
+  "address": "3135 route des Deux-Châteaux, 46200 Lacave",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 687,
+  "dinner": 198,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €148)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 148 €)",
+  "sourceType": "site",
+  "source": "https://www.chateaudelatreyne.com/en/dordogne-restaurant",
+  "website": "https://www.chateaudelatreyne.com/",
+  "lat": 44.8494743,
+  "lng": 1.5253884,
+  "placeId": "ChIJvdk0HmzbqBIRlII340anKoA"
+}

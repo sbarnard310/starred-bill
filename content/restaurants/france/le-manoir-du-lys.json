@@ -1,0 +1,19 @@
+{
+  "name": "Le Manoir du Lys",
+  "city": "normandy",
+  "area": "Bagnoles-de-l'Orne, Orne",
+  "areaFr": "Bagnoles-de-l'Orne, Orne",
+  "address": "Route de Juvigny-sous-Andaine, 61140 Bagnoles-de-l'Orne",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 576,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.manoir-du-lys.fr",
+  "lat": 48.5623198,
+  "lng": -0.4443803,
+  "placeId": "ChIJfSt9RR-OCUgRtSl4VRaO3pk"
+}

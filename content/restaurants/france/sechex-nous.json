@@ -1,0 +1,21 @@
+{
+  "name": "Séchex Nous",
+  "city": "auvergne-rhone-alpes",
+  "area": "Margencel, Haute-Savoie",
+  "areaFr": "Margencel, Haute-Savoie",
+  "address": "2 route des Meules (Port de Séchex), 74200 Margencel",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 601,
+  "dinner": 119,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €69)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 69 €)",
+  "sourceType": "site",
+  "source": "https://www.sechex-nous.com/fr/restaurant.html",
+  "website": "https://www.sechex-nous.com/",
+  "lat": 46.349025,
+  "lng": 6.4021869,
+  "placeId": "ChIJJ3D3DmQ_jEcRX9Z55xe4vSM"
+}

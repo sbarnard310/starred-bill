@@ -1,0 +1,19 @@
+{
+  "name": "La Cachette",
+  "city": "auvergne-rhone-alpes",
+  "area": "Valence, Drôme",
+  "areaFr": "Valence, Drôme",
+  "address": "20 rue Notre-Dame-de-Soyons, 26000 Valence",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 736,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lacachette-valence.fr",
+  "lat": 44.9323313,
+  "lng": 4.8865476,
+  "placeId": "ChIJwRvUMTNY9UcRJg_sTrlA4Ls"
+}

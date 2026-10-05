@@ -1,0 +1,19 @@
+{
+  "name": "Cueillette",
+  "city": "nouvelle-aquitaine",
+  "area": "Altillac, Corrèze",
+  "areaFr": "Altillac, Corrèze",
+  "address": "3 La Raufie, 19120 Altillac",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 1254,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://restaurant-cueillette.fr/",
+  "lat": 44.9474128,
+  "lng": 1.8560131,
+  "placeId": "ChIJsa3WJ2crrRIReASE4-uBVYs"
+}

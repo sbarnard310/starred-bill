@@ -1,0 +1,21 @@
+{
+  "name": "Les Pêcheurs",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Antibes, Alpes-Maritimes",
+  "areaFr": "Antibes, Alpes-Maritimes",
+  "address": "10 boulevard du Maréchal-Juin, au Cap d'Antibes, 06160 Antibes",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.4,
+  "reviews": 286,
+  "dinner": 210,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €100)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 100 €)",
+  "sourceType": "site",
+  "source": "https://capdantibes-beachhotel.com/pdfs/carte-les-pecheurs-fr.pdf",
+  "website": "https://capdantibes-beachhotel.com/",
+  "lat": 43.5614172,
+  "lng": 7.1181731,
+  "placeId": "ChIJmX9xuI1_zhIR0fRkfvQniUg"
+}

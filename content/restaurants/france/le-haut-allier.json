@@ -1,0 +1,19 @@
+{
+  "name": "Le Haut-Allier",
+  "city": "auvergne-rhone-alpes",
+  "area": "Alleyras, Haute-Loire",
+  "areaFr": "Alleyras, Haute-Loire",
+  "address": "1 avenue de la Gare (Le Pont d'Alleyras), 43580 Alleyras",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 356,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-lehautallier.com",
+  "lat": 44.919595,
+  "lng": 3.6743081,
+  "placeId": "ChIJo1xVXZdUsxIRBdtki8QokTY"
+}

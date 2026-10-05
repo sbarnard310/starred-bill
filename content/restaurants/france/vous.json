@@ -1,0 +1,19 @@
+{
+  "name": "Vous",
+  "city": "auvergne-rhone-alpes",
+  "area": "Megève, Haute-Savoie",
+  "areaFr": "Megève, Haute-Savoie",
+  "address": "36 rue Saint-François, 74120 Megève",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 65,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.juliengatillon.fr/vous",
+  "lat": 45.8574776,
+  "lng": 6.6183242,
+  "placeId": "ChIJUfhQsm_ji0cReLIlI8lcPfI"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Miraflores",
+  "city": "lyon",
+  "area": "6th arrondissement",
+  "areaFr": "6e arrondissement",
+  "address": "112 boulevard des Belges, 69006 Lyon",
+  "stars": 1,
+  "cuisine": "Peruvian",
+  "rating": 4.4,
+  "reviews": 312,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.restaurant-miraflores.com",
+  "lat": 45.7684145,
+  "lng": 4.8584873,
+  "placeId": "ChIJjd9AGvPq9EcRDp6a9VcyAKk"
+}

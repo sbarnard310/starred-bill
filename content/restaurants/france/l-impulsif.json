@@ -1,0 +1,19 @@
+{
+  "name": "L'Impulsif",
+  "city": "auvergne-rhone-alpes",
+  "area": "Châtel-Guyon, Puy-de-Dôme",
+  "areaFr": "Châtel-Guyon, Puy-de-Dôme",
+  "address": "19 avenue Baraduc, 63140 Châtel-Guyon",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 451,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.limpulsif-restaurant.com",
+  "lat": 45.9196471,
+  "lng": 3.0660287,
+  "placeId": "ChIJpf6Nhsoj90cRr4zmHUBk6dk"
+}

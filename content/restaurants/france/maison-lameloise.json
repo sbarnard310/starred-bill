@@ -1,0 +1,19 @@
+{
+  "name": "Maison Lameloise",
+  "city": "bourgogne-franche-comte",
+  "area": "Chagny, Saône-et-Loire",
+  "areaFr": "Chagny, Saône-et-Loire",
+  "address": "36 place d'Armes, 71150 Chagny",
+  "stars": 3,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 1060,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lameloise.fr/",
+  "lat": 46.9079723,
+  "lng": 4.7530292,
+  "placeId": "ChIJudiCOaT38kcRe7IPbWSafXY"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "L'Orchidée",
+  "city": "grand-est",
+  "area": "Ensisheim, Haut-Rhin",
+  "areaFr": "Ensisheim, Haut-Rhin",
+  "address": "47 rue de la 1ère Armée-Française, 68190 Ensisheim",
+  "stars": 1,
+  "cuisine": "Thai",
+  "rating": 4.6,
+  "reviews": 844,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotelrestaurant-lorchidee.fr",
+  "lat": 47.8651295,
+  "lng": 7.3520977,
+  "placeId": "ChIJjbqskBKOkUcRGx6LmyV_vZE"
+}

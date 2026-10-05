@@ -1,0 +1,17 @@
+{
+  "name": "Jardin des Sens",
+  "city": "montpellier",
+  "address": "Place de la Canourgue, 34000 Montpellier",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 505,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-richerdebelleval.com/jardin-des-sens/",
+  "lat": 43.6117844,
+  "lng": 3.8747685,
+  "placeId": "ChIJ7206_R6vthIRHmhGjsL_3ls"
+}

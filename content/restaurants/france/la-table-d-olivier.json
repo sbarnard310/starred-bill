@@ -1,0 +1,18 @@
+{
+  "name": "La Table d'Olivier",
+  "city": "nouvelle-aquitaine",
+  "area": "Brive-la-Gaillarde, Corrèze",
+  "areaFr": "Brive-la-Gaillarde, Corrèze",
+  "address": "3 rue Saint-Ambroise, 19100 Brive-la-Gaillarde",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 502,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "lat": 45.158952,
+  "lng": 1.5308409,
+  "placeId": "ChIJ-UEd69-X-EcR7XkyhGH_yb8"
+}

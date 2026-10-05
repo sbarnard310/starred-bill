@@ -1,0 +1,19 @@
+{
+  "name": "Rozó",
+  "city": "hauts-de-france",
+  "area": "Marcq-en-Barœul, Nord",
+  "areaFr": "Marcq-en-Barœul, Nord",
+  "address": "34 rue Raymond-Derain, 59700 Marcq-en-Barœul",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 1128,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://restaurant-rozo.fr/",
+  "lat": 50.6752,
+  "lng": 3.0909516,
+  "placeId": "ChIJpxBBSXgqw0cRu_LUCSHWxn4"
+}

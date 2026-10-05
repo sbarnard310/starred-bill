@@ -1,0 +1,19 @@
+{
+  "name": "L'Impertinent",
+  "city": "nouvelle-aquitaine",
+  "area": "Biarritz, Pyrénées-Atlantiques",
+  "areaFr": "Biarritz, Pyrénées-Atlantiques",
+  "address": "5 rue d'Alsace, 64200 Biarritz",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 413,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.l-impertinent.fr/",
+  "lat": 43.4863824,
+  "lng": -1.5504091,
+  "placeId": "ChIJUQJHNttqUQ0RT2X90ilZV6o"
+}

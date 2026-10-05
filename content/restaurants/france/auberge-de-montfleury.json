@@ -1,0 +1,19 @@
+{
+  "name": "Auberge de Montfleury",
+  "city": "auvergne-rhone-alpes",
+  "area": "Saint-Germain, Ardèche",
+  "areaFr": "Saint-Germain, Ardèche",
+  "address": "200 route des Cépages, 07170 Saint-Germain",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 943,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.auberge-de-montfleury.fr",
+  "lat": 44.5635926,
+  "lng": 4.4714401,
+  "placeId": "ChIJNzeLDs8etRIRb312wR02Hns"
+}

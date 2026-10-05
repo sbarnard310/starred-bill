@@ -1,0 +1,19 @@
+{
+  "name": "Anne de Bretagne",
+  "city": "pays-de-la-loire",
+  "area": "La Plaine-sur-Mer, Loire-Atlantique",
+  "areaFr": "La Plaine-sur-Mer, Loire-Atlantique",
+  "address": "Port de Gravette, 163 boulevard de la Tara, 44770 La Plaine-sur-Mer",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 844,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.annedebretagne.com",
+  "lat": 47.1547821,
+  "lng": -2.2133811,
+  "placeId": "ChIJCzCL8WFsBUgRQpVeWONFLTQ"
+}

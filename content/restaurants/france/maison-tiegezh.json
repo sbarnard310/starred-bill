@@ -1,0 +1,19 @@
+{
+  "name": "Maison Tiegezh",
+  "city": "brittany",
+  "area": "Guer, Morbihan",
+  "areaFr": "Guer, Morbihan",
+  "address": "7 place de la Gare, 56380 Guer",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 660,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://maisontiegezh.fr/",
+  "lat": 47.9057936,
+  "lng": -2.1238134,
+  "placeId": "ChIJr30WH1evD0gRA1CnslvOPQQ"
+}

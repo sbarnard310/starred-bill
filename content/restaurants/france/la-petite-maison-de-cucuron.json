@@ -1,0 +1,19 @@
+{
+  "name": "La Petite Maison de Cucuron",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Cucuron, Vaucluse",
+  "areaFr": "Cucuron, Vaucluse",
+  "address": "Place de l'Étang, 84160 Cucuron",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 442,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lapetitemaisondecucuron.com/",
+  "lat": 43.773919,
+  "lng": 5.4387208,
+  "placeId": "ChIJvTYxoqsjyhIRqIueAaXbmk8"
+}

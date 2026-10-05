@@ -1,0 +1,19 @@
+{
+  "name": "Atmosphères",
+  "city": "auvergne-rhone-alpes",
+  "area": "Le Bourget-du-Lac, Savoie",
+  "areaFr": "Le Bourget-du-Lac, Savoie",
+  "address": "618 route des Tournelles, 73370 Le Bourget-du-Lac",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 644,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.atmospheres-hotel.com",
+  "lat": 45.6606861,
+  "lng": 5.8522537,
+  "placeId": "ChIJK0vGnp8Ji0cRzpjt6RBcivU"
+}

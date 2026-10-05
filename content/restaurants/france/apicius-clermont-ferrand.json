@@ -1,0 +1,19 @@
+{
+  "name": "Apicius",
+  "city": "auvergne-rhone-alpes",
+  "area": "Clermont-Ferrand, Puy-de-Dôme",
+  "areaFr": "Clermont-Ferrand, Puy-de-Dôme",
+  "address": "Place du Marché-Saint-Pierre (à l'étage), 63000 Clermont-Ferrand",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 373,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.apicius-clermont.com/",
+  "lat": 45.7793794,
+  "lng": 3.0827699,
+  "placeId": "ChIJ-4Xwz-Yb90cRf5nWw_vWHbg"
+}

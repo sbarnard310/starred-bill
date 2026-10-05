@@ -1,0 +1,19 @@
+{
+  "name": "La Table de la Ferme",
+  "city": "corsica",
+  "area": "Sartène, Corse-du-Sud",
+  "areaFr": "Sartène, Corse-du-Sud",
+  "address": "Domaine de Murtoli, Vallée de l'Ortolo, 20100 Sartène",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 205,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.murtoli.com/",
+  "lat": 41.5229756,
+  "lng": 8.9469027,
+  "placeId": "ChIJSdEchmfM2xIR8UFufD3nrgQ"
+}

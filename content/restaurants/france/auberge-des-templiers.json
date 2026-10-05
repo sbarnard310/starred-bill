@@ -1,0 +1,19 @@
+{
+  "name": "Auberge des Templiers",
+  "city": "centre-val-de-loire",
+  "area": "Boismorand, Loiret",
+  "areaFr": "Boismorand, Loiret",
+  "address": "20 route Départementale 2007, 45290 Boismorand",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.1,
+  "reviews": 834,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lestempliers.com",
+  "lat": 47.80058,
+  "lng": 2.7394904,
+  "placeId": "ChIJQaQRdhSK70cRuo_7xYActOs"
+}

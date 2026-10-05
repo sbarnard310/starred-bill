@@ -1,0 +1,19 @@
+{
+  "name": "La Licorne Royale",
+  "city": "normandy",
+  "area": "Lyons-la-Forêt, Eure",
+  "areaFr": "Lyons-la-Forêt, Eure",
+  "address": "27 place Isaac-Benserade, 27480 Lyons-la-Forêt",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 167,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-licorne.com",
+  "lat": 49.3985891,
+  "lng": 1.4766068,
+  "placeId": "ChIJpzgupR0r50cRdMqJJJCBW2A"
+}

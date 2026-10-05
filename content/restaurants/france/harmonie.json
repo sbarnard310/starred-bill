@@ -1,0 +1,23 @@
+{
+  "name": "Harmonie",
+  "city": "hauts-de-france",
+  "area": "Villeneuve-d'Ascq, Nord",
+  "areaFr": "Villeneuve-d'Ascq, Nord",
+  "address": "98 avenue de Flandre, 59491 Villeneuve-d'Ascq",
+  "stars": 1,
+  "cuisine": "Creative",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.6,
+  "reviews": 675,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://harmonie.restaurant",
+  "lat": 50.664144,
+  "lng": 3.1458716,
+  "placeId": "ChIJm7L39Gkpw0cRahkY97qla7k"
+}

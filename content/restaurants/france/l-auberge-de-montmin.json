@@ -1,0 +1,19 @@
+{
+  "name": "L'Auberge de Montmin",
+  "city": "auvergne-rhone-alpes",
+  "area": "Talloires-Montmin, Haute-Savoie",
+  "areaFr": "Talloires-Montmin, Haute-Savoie",
+  "address": "1983 route de Talloires, Col de la Forclaz, 74210 Talloires-Montmin",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 482,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://aubergedemontmin.com/",
+  "lat": 45.8072811,
+  "lng": 6.2486842,
+  "placeId": "ChIJSSMJ3rOVi0cRUbuXt4hykSs"
+}

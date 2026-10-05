@@ -1,0 +1,19 @@
+{
+  "name": "A Casa di Mà",
+  "city": "corsica",
+  "area": "Lumio, Haute-Corse",
+  "areaFr": "Lumio, Haute-Corse",
+  "address": "Route de Calvi, 20260 Lumio",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 335,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.acasadima.com/",
+  "lat": 42.5813042,
+  "lng": 8.8318859,
+  "placeId": "ChIJs6gyrxPr0BIRrr9p_xsd8R4"
+}

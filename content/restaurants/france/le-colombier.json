@@ -1,0 +1,18 @@
+{
+  "name": "Le Colombier",
+  "city": "auvergne-rhone-alpes",
+  "area": "Malataverne, Drôme",
+  "areaFr": "Malataverne, Drôme",
+  "address": "270 chemin de Malombre, 26780 Malataverne",
+  "stars": 1,
+  "cuisine": "Creative",
+  "dinner": 179,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €55)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 55 €)",
+  "sourceType": "site",
+  "source": "https://domaine-colombier.com/fr/restaurants/restaurant-gastronomique-drome.html",
+  "website": "https://domaine-colombier.com/",
+  "lat": 44.4688517,
+  "lng": 4.7429648
+}

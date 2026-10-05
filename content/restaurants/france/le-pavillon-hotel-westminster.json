@@ -1,0 +1,22 @@
+{
+  "name": "Le Pavillon - Hôtel Westminster",
+  "city": "hauts-de-france",
+  "area": "Le Touquet-Paris-Plage, Pas-de-Calais",
+  "areaFr": "Le Touquet-Paris-Plage, Pas-de-Calais",
+  "address": "Avenue du Verger, 62520 Le Touquet-Paris-Plage",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 100,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.hotelsbarriere.com/le-touquet-paris-plage/le-westminster/restaurants-et-bars/le-pavillon",
+  "lat": 50.5221852,
+  "lng": 1.5914671,
+  "placeId": "ChIJa5xJ-5TQ3UcRn5RleJJdLvI"
+}

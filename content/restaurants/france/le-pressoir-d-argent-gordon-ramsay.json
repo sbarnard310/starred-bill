@@ -1,0 +1,20 @@
+{
+  "name": "Le Pressoir d'Argent - Gordon Ramsay",
+  "city": "bordeaux",
+  "address": "InterContinental Bordeaux - Le Grand Hôtel, 2-5 place de la Comédie, 33000 Bordeaux",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 579,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://bordeaux.intercontinental.com/le-pressoir-dargent-gordon-ramsay/",
+  "lat": 44.8424463,
+  "lng": -0.5747973,
+  "placeId": "ChIJz9rRRNonVQ0RklBlQyf60Vk"
+}

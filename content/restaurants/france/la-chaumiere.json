@@ -1,0 +1,19 @@
+{
+  "name": "La Chaumière",
+  "city": "bourgogne-franche-comte",
+  "area": "Dole, Jura",
+  "areaFr": "Dole, Jura",
+  "address": "346 avenue du Maréchal-Juin, 39100 Dole",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 700,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lachaumiere-dole.fr",
+  "lat": 47.065013,
+  "lng": 5.4950802,
+  "placeId": "ChIJVeukgnJLjUcRk2YcKmik8yA"
+}

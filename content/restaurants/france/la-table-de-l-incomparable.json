@@ -1,0 +1,19 @@
+{
+  "name": "La Table de L'Incomparable",
+  "city": "auvergne-rhone-alpes",
+  "area": "Tresserve, Savoie",
+  "areaFr": "Tresserve, Savoie",
+  "address": "68 chemin de Belledonne, 73100 Tresserve",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.3,
+  "reviews": 250,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://hotel-lincomparable.com/",
+  "lat": 45.6710414,
+  "lng": 5.8996575,
+  "placeId": "ChIJlQmQ9vSni0cRdg_UQ0O1_ww"
+}

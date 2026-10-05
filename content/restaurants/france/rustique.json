@@ -1,0 +1,19 @@
+{
+  "name": "Rustique",
+  "city": "lyon",
+  "area": "2nd arrondissement",
+  "areaFr": "2e arrondissement",
+  "address": "14 rue d'Enghien, 69002 Lyon",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 480,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.rustiquelyon.fr",
+  "lat": 45.7520806,
+  "lng": 4.8262529,
+  "placeId": "ChIJv9dhnQ3r9EcRSK4TvV7AUGI"
+}

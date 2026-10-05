@@ -1,0 +1,19 @@
+{
+  "name": "Aumì",
+  "city": "nouvelle-aquitaine",
+  "area": "Puymoyen, Charente",
+  "areaFr": "Puymoyen, Charente",
+  "address": "6 chemin des Rochers, 16400 Puymoyen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 1362,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.aumirestaurant.com",
+  "lat": 45.6127512,
+  "lng": 0.1816045,
+  "placeId": "ChIJEcgF5Ewz_kcRWy8iX1j-8BA"
+}

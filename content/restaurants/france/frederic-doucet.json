@@ -1,0 +1,23 @@
+{
+  "name": "Frédéric Doucet",
+  "city": "bourgogne-franche-comte",
+  "area": "Charolles, Saône-et-Loire",
+  "areaFr": "Charolles, Saône-et-Loire",
+  "address": "2 avenue de la Libération, 71120 Charolles",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "change": "up",
+  "changeNote": "Gained a second star",
+  "changeNoteFr": "Obtient sa deuxième étoile",
+  "changeDate": "2026-03",
+  "rating": 4.8,
+  "reviews": 191,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://maison-doucet.com/",
+  "lat": 46.4334609,
+  "lng": 4.2751068,
+  "placeId": "ChIJFRoL5qbq80cRkz195RCgeIY"
+}

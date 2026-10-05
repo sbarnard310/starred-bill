@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant Julien Binz",
+  "city": "grand-est",
+  "area": "Ammerschwihr, Haut-Rhin",
+  "areaFr": "Ammerschwihr, Haut-Rhin",
+  "address": "7 rue des Cigognes, 68770 Ammerschwihr",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 827,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurantjulienbinz.com",
+  "lat": 48.1256598,
+  "lng": 7.2828846,
+  "placeId": "ChIJOwfYiyhhkUcRAkCDBYqDW8M"
+}

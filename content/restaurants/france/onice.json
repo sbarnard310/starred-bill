@@ -1,0 +1,23 @@
+{
+  "name": "ONICE",
+  "city": "nice",
+  "address": "5 rue Antoine-Gautier, 06300 Nice",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 470,
+  "dinner": 145,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €125)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 125 €)",
+  "wine": 85,
+  "sourceType": "site",
+  "source": "https://www.restaurantonice.com/old-home",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.restaurantonice.com/",
+  "lat": 43.69872,
+  "lng": 7.28284,
+  "placeId": "ChIJmWsd9cPbzRIRnxwhAZWw_yQ"
+}

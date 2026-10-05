@@ -1,0 +1,19 @@
+{
+  "name": "Jérôme Feck",
+  "city": "grand-est",
+  "area": "Châlons-en-Champagne, Marne",
+  "areaFr": "Châlons-en-Champagne, Marne",
+  "address": "19 place Monseigneur-Tissier, 51000 Châlons-en-Champagne",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 149,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-dangleterre.fr/fr/restaurant/",
+  "lat": 48.9569608,
+  "lng": 4.3649249,
+  "placeId": "ChIJmR_KGRff60cRVOpjriWjOVg"
+}

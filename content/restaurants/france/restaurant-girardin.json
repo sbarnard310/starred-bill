@@ -1,0 +1,22 @@
+{
+  "name": "Restaurant Girardin",
+  "city": "grand-est",
+  "area": "Colmar, Haut-Rhin",
+  "areaFr": "Colmar, Haut-Rhin",
+  "address": "19 rue des Têtes, 68000 Colmar",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 146,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.maisondestetes.com/fr/restaurant-girardin.html",
+  "lat": 48.0785765,
+  "lng": 7.3554964,
+  "placeId": "ChIJIZ7GSedlkUcRiAFjY4zS0B0"
+}

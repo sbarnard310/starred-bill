@@ -1,0 +1,19 @@
+{
+  "name": "Maison Aribert",
+  "city": "auvergne-rhone-alpes",
+  "area": "Uriage-les-Bains, Isère",
+  "areaFr": "Uriage-les-Bains, Isère",
+  "address": "280 allée du Jeune-Bayard, 38410 Uriage-les-Bains",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 1003,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.maisonaribert.com",
+  "lat": 45.1417394,
+  "lng": 5.8315479,
+  "placeId": "ChIJPyb8uf1hikcRkTKkP6QWUrs"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Table de Courcelles - Château de Courcelles",
+  "city": "hauts-de-france",
+  "area": "Courcelles-sur-Vesle, Aisne",
+  "areaFr": "Courcelles-sur-Vesle, Aisne",
+  "address": "8 rue du Château, 02220 Courcelles-sur-Vesle",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 633,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.chateau-de-courcelles.fr",
+  "lat": 49.3378585,
+  "lng": 3.5696394,
+  "placeId": "ChIJSUjVJQlV6EcRpg5YLVQzdDM"
+}

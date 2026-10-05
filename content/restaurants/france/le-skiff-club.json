@@ -1,0 +1,21 @@
+{
+  "name": "Le Skiff Club",
+  "city": "nouvelle-aquitaine",
+  "area": "Pyla-sur-Mer, Gironde",
+  "areaFr": "Pyla-sur-Mer, Gironde",
+  "address": "Hôtel Ha(a)ïtza, 1 avenue Louis-Gaume, 33115 Pyla-sur-Mer",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 1385,
+  "dinner": 270,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €180)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 180 €)",
+  "sourceType": "site",
+  "source": "https://haaitza.com/wp-content/uploads/02-10-2026-menu-skiffclub-fr-2.pdf",
+  "website": "https://haaitza.com/",
+  "lat": 44.606014,
+  "lng": -1.20669,
+  "placeId": "ChIJN-LKSPGdVA0RqfoWwxjcxg8"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Serge Vieira",
+  "city": "auvergne-rhone-alpes",
+  "area": "Chaudes-Aigues, Cantal",
+  "areaFr": "Chaudes-Aigues, Cantal",
+  "address": "Le Couffour, 15110 Chaudes-Aigues",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 500,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.sergevieira.com/",
+  "lat": 44.8442761,
+  "lng": 3.0019613,
+  "placeId": "ChIJRyjBJ9zQshIRf5uCYmkPMnI"
+}

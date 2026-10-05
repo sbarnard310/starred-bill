@@ -1,0 +1,22 @@
+{
+  "name": "Ineffable",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Barbentane, Bouches-du-Rhône",
+  "areaFr": "Barbentane, Bouches-du-Rhône",
+  "address": "3 rue Grande, 13570 Barbentane",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 262,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://restaurant-ineffable.fr",
+  "lat": 43.8991167,
+  "lng": 4.748067,
+  "placeId": "ChIJnQmzp8TptRIRdRUXmjNRqBY"
+}

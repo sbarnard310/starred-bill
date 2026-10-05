@@ -1,0 +1,22 @@
+{
+  "name": "Nori",
+  "city": "brittany",
+  "area": "Roscoff, Finistère",
+  "areaFr": "Roscoff, Finistère",
+  "address": "Hôtel Le Britanny, 22 boulevard Sainte-Barbe, 29680 Roscoff",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 24,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.hotel-brittany.com",
+  "lat": 48.7246203,
+  "lng": -3.9721423,
+  "placeId": "ChIJhZrv8Z7hE0gRu59oRJUuyqY"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "La Table d'Armante",
+  "city": "auvergne-rhone-alpes",
+  "area": "Saint-Gervais-les-Bains, Haute-Savoie",
+  "areaFr": "Saint-Gervais-les-Bains, Haute-Savoie",
+  "address": "L'Armancette, 4088 route de Saint-Nicolas, 74170 Saint-Gervais-les-Bains",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.8,
+  "reviews": 115,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://almae-collection.com/armancette/restaurants/la-table-darmante/",
+  "lat": 45.8526405,
+  "lng": 6.7237494,
+  "placeId": "ChIJ6ZTDzYpZiUcRaY2-53S_ozo"
+}

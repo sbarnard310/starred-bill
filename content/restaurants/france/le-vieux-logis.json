@@ -1,0 +1,22 @@
+{
+  "name": "Le Vieux Logis",
+  "city": "nouvelle-aquitaine",
+  "area": "Trémolat, Dordogne",
+  "areaFr": "Trémolat, Dordogne",
+  "address": "81 rue des Écoles, 24510 Trémolat",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 733,
+  "dinner": 100,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €80)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 80 €)",
+  "wine": 60,
+  "sourceType": "site",
+  "source": "https://www.vieux-logis.com/wp-content/uploads/2026/10/Carte-et-menus-1.pdf",
+  "website": "https://www.vieux-logis.com/",
+  "lat": 44.8757019,
+  "lng": 0.8297197,
+  "placeId": "ChIJCTx4qYUxqxIRO9CUkMcvR5s"
+}

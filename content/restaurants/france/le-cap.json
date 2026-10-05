@@ -1,0 +1,19 @@
+{
+  "name": "Le Cap",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Saint-Jean-Cap-Ferrat, Alpes-Maritimes",
+  "areaFr": "Saint-Jean-Cap-Ferrat, Alpes-Maritimes",
+  "address": "Grand Hôtel du Cap-Ferrat, 71 boulevard du Général-de-Gaulle, 06230 Saint-Jean-Cap-Ferrat",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1400,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.fourseasons.com/fr/capferrat/dining/restaurants/le_cap/",
+  "lat": 43.6770545,
+  "lng": 7.3314132,
+  "placeId": "ChIJr5bDI3PbzRIRQ8hg-UCx31A"
+}

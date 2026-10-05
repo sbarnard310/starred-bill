@@ -1,0 +1,19 @@
+{
+  "name": "La Tête en l'air",
+  "city": "brittany",
+  "area": "Vannes, Morbihan",
+  "areaFr": "Vannes, Morbihan",
+  "address": "43 rue de la Fontaine, 56000 Vannes",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 2186,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lateteenlair-vannes.com",
+  "lat": 47.6605029,
+  "lng": -2.7545627,
+  "placeId": "ChIJZT8EC4UeEEgRaWTloEfFw1M"
+}

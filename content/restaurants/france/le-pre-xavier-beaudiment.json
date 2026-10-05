@@ -1,0 +1,19 @@
+{
+  "name": "Le Pré - Xavier Beaudiment",
+  "city": "auvergne-rhone-alpes",
+  "area": "Clermont-Ferrand, Puy-de-Dôme",
+  "areaFr": "Clermont-Ferrand, Puy-de-Dôme",
+  "address": "3 route de la Baraque, 63000 Clermont-Ferrand",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 752,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-lepre.com/",
+  "lat": 45.7886787,
+  "lng": 3.0519431,
+  "placeId": "ChIJ8_UIpSEa90cRdzmlyQ47mjc"
+}

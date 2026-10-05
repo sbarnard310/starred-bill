@@ -1,0 +1,17 @@
+{
+  "name": "La Réserve Rimbaud",
+  "city": "montpellier",
+  "address": "820 avenue de Saint-Maur, 34000 Montpellier",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 1270,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.reserve-rimbaud.com",
+  "lat": 43.6171176,
+  "lng": 3.8930311,
+  "placeId": "ChIJE_HlB3GvthIRb_7TZa8LseE"
+}

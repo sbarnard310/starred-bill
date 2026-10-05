@@ -1,0 +1,19 @@
+{
+  "name": "Ima",
+  "city": "brittany",
+  "area": "Rennes, Ille-et-Vilaine",
+  "areaFr": "Rennes, Ille-et-Vilaine",
+  "address": "20 boulevard de la Tour-d'Auvergne, 35000 Rennes",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 943,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://ima.restaurant/",
+  "lat": 48.106684,
+  "lng": -1.684632,
+  "placeId": "ChIJy4xtHR3fDkgROUt7k6PBYfQ"
+}

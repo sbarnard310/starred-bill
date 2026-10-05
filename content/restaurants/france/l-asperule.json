@@ -1,0 +1,17 @@
+{
+  "name": "L'Aspérule",
+  "city": "dijon",
+  "address": "43 rue Jean-Jacques-Rousseau, 21000 Dijon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 516,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://restaurant-asperule.fr/",
+  "lat": 47.3248221,
+  "lng": 5.044981,
+  "placeId": "ChIJZ54w2n2d8kcR1I4Kmk8Yttc"
+}

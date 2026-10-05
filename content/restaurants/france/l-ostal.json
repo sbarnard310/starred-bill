@@ -1,0 +1,19 @@
+{
+  "name": "L'Ostal",
+  "city": "auvergne-rhone-alpes",
+  "area": "Clermont-Ferrand, Puy-de-Dôme",
+  "areaFr": "Clermont-Ferrand, Puy-de-Dôme",
+  "address": "16 rue Claussmann, 63000 Clermont-Ferrand",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 502,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lostal-restaurant.fr",
+  "lat": 45.7810567,
+  "lng": 3.0879692,
+  "placeId": "ChIJBYptKvkb90cR7_h_sykDihY"
+}

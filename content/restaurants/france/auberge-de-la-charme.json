@@ -1,0 +1,19 @@
+{
+  "name": "Auberge de la Charme",
+  "city": "bourgogne-franche-comte",
+  "area": "Prenois, Côte-d'Or",
+  "areaFr": "Prenois, Côte-d'Or",
+  "address": "12 rue de la Charme, 21370 Prenois",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 551,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://aubergedelacharme.com",
+  "lat": 47.3758124,
+  "lng": 4.8989819,
+  "placeId": "ChIJ4V0APc997UcR-qWntPSn7j4"
+}

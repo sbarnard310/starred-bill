@@ -1,0 +1,19 @@
+{
+  "name": "Château de Pray",
+  "city": "centre-val-de-loire",
+  "area": "Amboise, Indre-et-Loire",
+  "areaFr": "Amboise, Indre-et-Loire",
+  "address": "Rue du Cèdre, à Chargé, 37530 Amboise",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.2,
+  "reviews": 165,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.chateaudepray.fr",
+  "lat": 47.424971,
+  "lng": 1.0160758,
+  "placeId": "ChIJHwMTtH-1_EcRS7n0VmipXiw"
+}

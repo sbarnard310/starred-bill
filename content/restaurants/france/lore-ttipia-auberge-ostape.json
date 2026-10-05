@@ -1,0 +1,19 @@
+{
+  "name": "Lore Ttipia - Auberge Ostape",
+  "city": "nouvelle-aquitaine",
+  "area": "Bidarray, Pyrénées-Atlantiques",
+  "areaFr": "Bidarray, Pyrénées-Atlantiques",
+  "address": "Domaine de Chahatoenia, 64780 Bidarray",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 592,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.ostape.com",
+  "lat": 43.2895753,
+  "lng": -1.3619713,
+  "placeId": "ChIJz5SrJ2ovUQ0RkYeLKqjmgd0"
+}

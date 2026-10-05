@@ -1,0 +1,19 @@
+{
+  "name": "Villa Pinewood",
+  "city": "occitanie",
+  "area": "Payrin-Augmontel, Tarn",
+  "areaFr": "Payrin-Augmontel, Tarn",
+  "address": "590 chemin du Nègre, 81660 Payrin-Augmontel",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 983,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://villapinewood.com",
+  "lat": 43.5272455,
+  "lng": 2.347021,
+  "placeId": "ChIJjS2_97kZrhIRVOy0lL9RwJg"
+}

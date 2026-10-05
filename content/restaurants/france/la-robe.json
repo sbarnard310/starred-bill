@@ -1,0 +1,19 @@
+{
+  "name": "La Robe",
+  "city": "pays-de-la-loire",
+  "area": "Montaigu, Vendée",
+  "areaFr": "Montaigu, Vendée",
+  "address": "2 rue Neuve, 85600 Montaigu",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 1019,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-la-robe.com",
+  "lat": 46.9776592,
+  "lng": -1.3117964,
+  "placeId": "ChIJiXxeShzYBUgRmr0S7gQYtik"
+}

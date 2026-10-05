@@ -1,0 +1,23 @@
+{
+  "name": "Circle",
+  "city": "lyon",
+  "area": "1st arrondissement",
+  "areaFr": "1er arrondissement",
+  "address": "11 rue Chavanne, 69001 Lyon",
+  "stars": 1,
+  "cuisine": "Creative",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 5,
+  "reviews": 484,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://circlelyon.fr",
+  "lat": 45.7648991,
+  "lng": 4.8324022,
+  "placeId": "ChIJc13tB_Lr9EcR76IsZYw9Wss"
+}

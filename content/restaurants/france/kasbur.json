@@ -1,0 +1,19 @@
+{
+  "name": "Kasbür",
+  "city": "grand-est",
+  "area": "Monswiller, Bas-Rhin",
+  "areaFr": "Monswiller, Bas-Rhin",
+  "address": "8 route de Dettwiller, 67700 Monswiller",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 2943,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://restaurant-kasbur.fr",
+  "lat": 48.7419047,
+  "lng": 7.3977237,
+  "placeId": "ChIJ83EDeruglkcRPqLBUTYwjaA"
+}

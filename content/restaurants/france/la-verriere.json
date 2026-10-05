@@ -1,0 +1,19 @@
+{
+  "name": "La Verrière",
+  "city": "corsica",
+  "area": "Olmeto, Corse-du-Sud",
+  "areaFr": "Olmeto, Corse-du-Sud",
+  "address": "Hôtel Marinca, lieu-dit Vitricella, 20113 Olmeto",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 53,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-marinca.com/la-verriere",
+  "lat": 41.6913495,
+  "lng": 8.902559,
+  "placeId": "ChIJawXl3Dc32hIRcTnCHVv_lRw"
+}

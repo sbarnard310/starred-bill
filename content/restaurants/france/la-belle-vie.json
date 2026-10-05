@@ -1,0 +1,23 @@
+{
+  "name": "La Belle Vie",
+  "city": "occitanie",
+  "area": "Saint-Hilaire-d'Ozilhan, Gard",
+  "areaFr": "Saint-Hilaire-d'Ozilhan, Gard",
+  "address": "4 avenue Paul-Blisson, 30210 Saint-Hilaire-d'Ozilhan",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.7,
+  "reviews": 211,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.labellevie-hotel.com",
+  "lat": 43.970939,
+  "lng": 4.5895596,
+  "placeId": "ChIJnbBd07PHtRIRhhM5CvRuQ6w"
+}

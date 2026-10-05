@@ -1,0 +1,23 @@
+{
+  "name": "Bulle d'Osier",
+  "city": "grand-est",
+  "area": "Langres, Haute-Marne",
+  "areaFr": "Langres, Haute-Marne",
+  "address": "Clos Vauban, 1 place du Colonel-de-Grouchy, 52200 Langres",
+  "stars": 2,
+  "cuisine": "Creative",
+  "change": "up",
+  "changeNote": "Gained a second star",
+  "changeNoteFr": "Obtient sa deuxième étoile",
+  "changeDate": "2026-03",
+  "rating": 4.8,
+  "reviews": 84,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://closvauban.com",
+  "lat": 47.8589801,
+  "lng": 5.3334864,
+  "placeId": "ChIJkWgD7eEj7UcRTJI4mJq1g64"
+}

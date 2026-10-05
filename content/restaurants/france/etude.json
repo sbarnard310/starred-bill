@@ -1,0 +1,19 @@
+{
+  "name": "Étude",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Aix-en-Provence, Bouches-du-Rhône",
+  "areaFr": "Aix-en-Provence, Bouches-du-Rhône",
+  "address": "24 rue de l'Aumône-Vieille, 13100 Aix-en-Provence",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 792,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.etude-aix.fr/",
+  "lat": 43.5283527,
+  "lng": 5.446453,
+  "placeId": "ChIJkRqq8YmNyRIRv4tDGpOVG64"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Le Grand Cap",
+  "city": "occitanie",
+  "area": "Leucate, Aude",
+  "areaFr": "Leucate, Aude",
+  "address": "Chemin du Phare, 11370 Leucate",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 1210,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-grand-cap.fr/",
+  "lat": 42.9114961,
+  "lng": 3.0571854,
+  "placeId": "ChIJq-JN-idZsBIRid2tF8MFri4"
+}

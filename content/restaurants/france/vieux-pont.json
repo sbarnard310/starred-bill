@@ -1,0 +1,19 @@
+{
+  "name": "Vieux Pont",
+  "city": "occitanie",
+  "area": "Belcastel, Aveyron",
+  "areaFr": "Belcastel, Aveyron",
+  "address": "245 route des berges de l'Aveyron, 12390 Belcastel",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 847,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotelbelcastel.com",
+  "lat": 44.3881,
+  "lng": 2.33588,
+  "placeId": "ChIJKc58aWR4rRIRs3LEE1W1bC0"
+}

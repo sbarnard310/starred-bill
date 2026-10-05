@@ -1,0 +1,21 @@
+{
+  "name": "Le Clos des Sens",
+  "city": "auvergne-rhone-alpes",
+  "area": "Annecy, Haute-Savoie",
+  "areaFr": "Annecy, Haute-Savoie",
+  "address": "13 rue Jean-Mermoz - à Annecy-le-Vieux, 74940 Annecy",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 1142,
+  "dinner": 258,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteFr": "Menu dégustation",
+  "sourceType": "site",
+  "source": "https://clos-des-sens.cdn.prismic.io/clos-des-sens/aBn2lPIqRLdaB5x0_20250506_MenusCDSdocx.pdf",
+  "website": "https://closdessens.com/",
+  "lat": 45.9176317,
+  "lng": 6.1445765,
+  "placeId": "ChIJqWNssZePi0cRYwsMdWxrcZY"
+}

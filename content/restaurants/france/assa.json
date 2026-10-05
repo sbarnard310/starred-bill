@@ -1,0 +1,19 @@
+{
+  "name": "Assa",
+  "city": "centre-val-de-loire",
+  "area": "Blois, Loir-et-Cher",
+  "areaFr": "Blois, Loir-et-Cher",
+  "address": "26 avenue du Maréchal-Maunoury, 41000 Blois",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 2221,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.assarestaurant.com/",
+  "lat": 47.5916586,
+  "lng": 1.3362149,
+  "placeId": "ChIJnZkmz8dX40cR7-LQrx6ZRBc"
+}

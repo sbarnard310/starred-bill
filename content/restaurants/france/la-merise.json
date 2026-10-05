@@ -1,0 +1,19 @@
+{
+  "name": "La Merise",
+  "city": "grand-est",
+  "area": "Laubach, Bas-Rhin",
+  "areaFr": "Laubach, Bas-Rhin",
+  "address": "7 rue d'Eschbach, 67580 Laubach",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 613,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lamerise.alsace/",
+  "lat": 48.8800665,
+  "lng": 7.7224093,
+  "placeId": "ChIJxVnwLf6TlkcR8GtzoEA5Fkw"
+}

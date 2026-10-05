@@ -1,0 +1,19 @@
+{
+  "name": "La Villa Madie",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Cassis, Bouches-du-Rhône",
+  "areaFr": "Cassis, Bouches-du-Rhône",
+  "address": "Avenue de Revestel, 13260 Cassis",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 1738,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://lavillamadie.com/",
+  "lat": 43.2110889,
+  "lng": 5.544944,
+  "placeId": "ChIJm3JVyr66yRIRxtkixEeVcKY"
+}

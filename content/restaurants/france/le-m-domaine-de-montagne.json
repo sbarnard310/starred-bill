@@ -1,0 +1,21 @@
+{
+  "name": "Le M - Domaine de Montagne",
+  "city": "grand-est",
+  "area": "Ventron, Vosges",
+  "areaFr": "Ventron, Vosges",
+  "address": "5001 route de Frère-Joseph, 88310 Ventron",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 537,
+  "dinner": 105,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteFr": "Menu dégustation",
+  "sourceType": "site",
+  "source": "https://domainedemontagne.com/fr/restaurants.html",
+  "website": "https://domainedemontagne.com",
+  "lat": 47.9252929,
+  "lng": 6.8628817,
+  "placeId": "ChIJ1ZfaqGrNk0cR6Wd-_wmIN14"
+}

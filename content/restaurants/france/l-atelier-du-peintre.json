@@ -1,0 +1,19 @@
+{
+  "name": "L'Atelier du Peintre",
+  "city": "grand-est",
+  "area": "Colmar, Haut-Rhin",
+  "areaFr": "Colmar, Haut-Rhin",
+  "address": "1 rue Schongauer, 68000 Colmar",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 1031,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.atelier-peintre.fr/",
+  "lat": 48.0765208,
+  "lng": 7.3580855,
+  "placeId": "ChIJUZEm8eZlkUcRISjy_Ib3lxY"
+}

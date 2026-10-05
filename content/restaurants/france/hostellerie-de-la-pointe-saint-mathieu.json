@@ -1,0 +1,19 @@
+{
+  "name": "Hostellerie de la Pointe Saint-Mathieu",
+  "city": "brittany",
+  "area": "Plougonvelin, Finistère",
+  "areaFr": "Plougonvelin, Finistère",
+  "address": "7 place Saint-Tanguy, 29217 Plougonvelin",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 1053,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.pointe-saint-mathieu.com",
+  "lat": 48.3309068,
+  "lng": -4.77086,
+  "placeId": "ChIJfwEKpIKSFkgRCuktqZz4694"
+}

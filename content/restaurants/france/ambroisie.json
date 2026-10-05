@@ -1,0 +1,19 @@
+{
+  "name": "Ambroisie",
+  "city": "auvergne-rhone-alpes",
+  "area": "Saint-Didier-de-la-Tour, Isère",
+  "areaFr": "Saint-Didier-de-la-Tour, Isère",
+  "address": "64 route du Lac, 38110 Saint-Didier-de-la-Tour",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 449,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-ambroisie.fr/",
+  "lat": 45.560381,
+  "lng": 5.4875038,
+  "placeId": "ChIJlaBKFjQii0cRJfzcHq2C_vA"
+}

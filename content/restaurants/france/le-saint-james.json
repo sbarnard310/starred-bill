@@ -1,0 +1,19 @@
+{
+  "name": "Le Saint-James",
+  "city": "nouvelle-aquitaine",
+  "area": "Bouliac, Gironde",
+  "areaFr": "Bouliac, Gironde",
+  "address": "3 place Camille-Hosteins, 33270 Bouliac",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 575,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.saintjames-bouliac.com",
+  "lat": 44.8144207,
+  "lng": -0.5038945,
+  "placeId": "ChIJAXJY_7QlVQ0R6evltwScDBs"
+}

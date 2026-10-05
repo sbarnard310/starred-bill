@@ -1,0 +1,19 @@
+{
+  "name": "Logis de la Cadène",
+  "city": "nouvelle-aquitaine",
+  "area": "Saint-Emilion, Gironde",
+  "areaFr": "Saint-Emilion, Gironde",
+  "address": "3 place du Marché-au-Bois, 33330 Saint-Emilion",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 548,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.logisdelacadene.fr",
+  "lat": 44.8934854,
+  "lng": -0.1559683,
+  "placeId": "ChIJK7-slC5OVQ0Rgi5WjPBTjPU"
+}

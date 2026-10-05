@@ -1,0 +1,23 @@
+{
+  "name": "Le Relais de la Poste",
+  "city": "grand-est",
+  "area": "La Wantzenau, Bas-Rhin",
+  "areaFr": "La Wantzenau, Bas-Rhin",
+  "address": "21 rue du Général-de-Gaulle, 67610 La Wantzenau",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Dropped from two stars to one",
+  "changeNoteFr": "Passe de deux étoiles à une",
+  "changeDate": "2026-03",
+  "rating": 4.6,
+  "reviews": 742,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://relais-poste.com/",
+  "lat": 48.6609673,
+  "lng": 7.8230795,
+  "placeId": "ChIJzx3cP4TGlkcRgZM1OadM2S0"
+}

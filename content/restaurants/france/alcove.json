@@ -1,0 +1,23 @@
+{
+  "name": "Alcôve",
+  "city": "grand-est",
+  "area": "Vinay, Marne",
+  "areaFr": "Vinay, Marne",
+  "address": "Hostellerie Briqueterie Champagne, 4 route de Sézanne, 51530 Vinay",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.4,
+  "reviews": 32,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.beauvallon.com/briqueterie/restaurants-bar",
+  "lat": 49.008458,
+  "lng": 3.9076402,
+  "placeId": "ChIJjztaVYoV6UcR6l1nmoDkotg"
+}

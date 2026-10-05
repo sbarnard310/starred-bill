@@ -1,0 +1,19 @@
+{
+  "name": "Le Kaïku",
+  "city": "nouvelle-aquitaine",
+  "area": "Saint-Jean-de-Luz, Pyrénées-Atlantiques",
+  "areaFr": "Saint-Jean-de-Luz, Pyrénées-Atlantiques",
+  "address": "17 rue de la République, 64500 Saint-Jean-de-Luz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 823,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.kaiku.fr/",
+  "lat": 43.3887002,
+  "lng": -1.6644341,
+  "placeId": "ChIJhxwC3fARUQ0RX3s5yjiwq8g"
+}

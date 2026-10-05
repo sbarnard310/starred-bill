@@ -1,0 +1,19 @@
+{
+  "name": "Château de Courban",
+  "city": "bourgogne-franche-comte",
+  "area": "Courban, Côte-d'Or",
+  "areaFr": "Courban, Côte-d'Or",
+  "address": "7 rue du Lavoir, 21520 Courban",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 765,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://chateaudecourban.com",
+  "lat": 47.9194802,
+  "lng": 4.7375618,
+  "placeId": "ChIJyzwhusit7UcR3UTAxTQpjOU"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Maison dans le Parc",
+  "city": "grand-est",
+  "area": "Nancy, Meurthe-et-Moselle",
+  "areaFr": "Nancy, Meurthe-et-Moselle",
+  "address": "3 rue Sainte-Catherine, 54000 Nancy",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 2576,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://lamaisondansleparc.com/",
+  "lat": 48.6941608,
+  "lng": 6.1849668,
+  "placeId": "ChIJq8rhzGyYlEcRYNFyA-MzbOE"
+}

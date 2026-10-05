@@ -1,0 +1,21 @@
+{
+  "name": "Le Kléber - La Maison Bonnet",
+  "city": "auvergne-rhone-alpes",
+  "area": "Grane, Drôme",
+  "areaFr": "Grane, Drôme",
+  "address": "2 place du Champ-de-Mars, 26400 Grane",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.2,
+  "reviews": 86,
+  "dinner": 150,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €80)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 80 €)",
+  "sourceType": "site",
+  "source": "https://lamaisonbonnet.fr/fr/restaurant-gastronomique-le-kleber.html",
+  "website": "https://lamaisonbonnet.fr/",
+  "lat": 44.7314765,
+  "lng": 4.9234014,
+  "placeId": "ChIJ32f0F45atRIRf2QgBj5_Vuw"
+}

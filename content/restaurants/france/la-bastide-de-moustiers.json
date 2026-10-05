@@ -1,0 +1,21 @@
+{
+  "name": "La Bastide de Moustiers",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Moustiers-Sainte-Marie, Alpes-de-Haute-Provence",
+  "areaFr": "Moustiers-Sainte-Marie, Alpes-de-Haute-Provence",
+  "address": "511 chemin de Quinson, 04360 Moustiers-Sainte-Marie",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.6,
+  "reviews": 497,
+  "dinner": 95,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteFr": "Menu dégustation",
+  "sourceType": "site",
+  "source": "https://www.bastide-moustiers.com/fr/notre-restaurant.html",
+  "website": "https://www.bastide-moustiers.com/",
+  "lat": 43.8384829,
+  "lng": 6.2182274,
+  "placeId": "ChIJ-dv0IBPuyxIRRqJ-k3F9qmI"
+}

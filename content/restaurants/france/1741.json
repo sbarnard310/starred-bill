@@ -1,0 +1,17 @@
+{
+  "name": "1741",
+  "city": "strasbourg",
+  "address": "22 quai des Bateliers, 67000 Strasbourg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "dinner": 110,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteFr": "Menu dégustation",
+  "sourceType": "site",
+  "source": "https://www.1741.fr/fr/Les-Menus-Et-Les-Accords/",
+  "website": "https://www.1741.fr",
+  "lat": 48.5805005,
+  "lng": 7.7535355,
+  "placeId": "EjQyMiBRdWFpIGRlcyBCYXRlbGllcnMgMTc0MSwgNjcwMDAgU3RyYXNib3VyZywgRnJhbmNlIiAaHgoWChQKEgnTn5KQVMiWRxGqtnoVMdjvoxIEMTc0MQ"
+}

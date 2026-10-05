@@ -1,0 +1,19 @@
+{
+  "name": "Auberge de la Grive",
+  "city": "hauts-de-france",
+  "area": "Trosly-Loire, Aisne",
+  "areaFr": "Trosly-Loire, Aisne",
+  "address": "5 rue du Logis, 02300 Trosly-Loire",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 156,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://aubergedelagrive.com",
+  "lat": 49.5167484,
+  "lng": 3.2253823,
+  "placeId": "ChIJG2xBa3Np6EcRdRNeCYEXJUo"
+}

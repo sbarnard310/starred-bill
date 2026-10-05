@@ -1,0 +1,19 @@
+{
+  "name": "AM par Alexandre Mazzia",
+  "city": "marseille",
+  "area": "8th arrondissement",
+  "areaFr": "8e arrondissement",
+  "address": "9 rue François-Rocca, 13008 Marseille",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 932,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.alexandre-mazzia.com/",
+  "lat": 43.2701104,
+  "lng": 5.3862325,
+  "placeId": "ChIJ2VJHkVrHyRIRilr7mWdCXFk"
+}

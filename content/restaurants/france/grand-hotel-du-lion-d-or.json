@@ -1,0 +1,21 @@
+{
+  "name": "Grand Hôtel du Lion d'Or",
+  "city": "centre-val-de-loire",
+  "area": "Romorantin-Lanthenay, Loir-et-Cher",
+  "areaFr": "Romorantin-Lanthenay, Loir-et-Cher",
+  "address": "69 rue Georges-Clemenceau, 41200 Romorantin-Lanthenay",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 263,
+  "dinner": 169,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €52)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 52 €)",
+  "sourceType": "site",
+  "source": "https://www.liondor1774.com/restauration/la-table-du-lion-etoilee-par-le-chef-loic-le-bail/",
+  "website": "https://www.hotel-liondor-romorantin.fr",
+  "lat": 47.3602993,
+  "lng": 1.7438252,
+  "placeId": "ChIJe9ciUvwz-0cR0TnOms3ZUkY"
+}

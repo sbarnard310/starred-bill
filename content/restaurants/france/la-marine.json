@@ -1,0 +1,19 @@
+{
+  "name": "La Marine",
+  "city": "pays-de-la-loire",
+  "area": "L'Herbaudière, Vendée",
+  "areaFr": "L'Herbaudière, Vendée",
+  "address": "3 rue Marie-Lemonnier, 85330 L'Herbaudière",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 584,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.alexandrecouillon.com",
+  "lat": 47.0237104,
+  "lng": -2.2999341,
+  "placeId": "ChIJsXfnkhwWBUgRHDPaEO3Pdx8"
+}

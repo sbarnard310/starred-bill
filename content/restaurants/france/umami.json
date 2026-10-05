@@ -1,0 +1,22 @@
+{
+  "name": "Umami",
+  "city": "strasbourg",
+  "address": "8 rue des Dentelles, 67000 Strasbourg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 397,
+  "dinner": 78,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteFr": "Menu dégustation",
+  "sourceType": "site",
+  "source": "https://www.restaurant-umami.com/en",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.restaurant-umami.com",
+  "lat": 48.5810249,
+  "lng": 7.7428981,
+  "placeId": "ChIJM5PP5kzIlkcRs0K_AWJNFT4"
+}

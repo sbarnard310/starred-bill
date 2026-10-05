@@ -1,0 +1,19 @@
+{
+  "name": "Ô Flaveurs",
+  "city": "auvergne-rhone-alpes",
+  "area": "Douvaine, Haute-Savoie",
+  "areaFr": "Douvaine, Haute-Savoie",
+  "address": "Château de Chilly, 42 route du Crépy, 74140 Douvaine",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 314,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://oflaveurs.com/",
+  "lat": 46.3018121,
+  "lng": 6.3139725,
+  "placeId": "ChIJ0TT3XMxrjEcRdhDfQzwBeQI"
+}

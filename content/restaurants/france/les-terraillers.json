@@ -1,0 +1,19 @@
+{
+  "name": "Les Terraillers",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Biot, Alpes-Maritimes",
+  "areaFr": "Biot, Alpes-Maritimes",
+  "address": "11 chemin Neuf, 06410 Biot",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 733,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lesterraillers.fr/",
+  "lat": 43.6267515,
+  "lng": 7.0956199,
+  "placeId": "ChIJLasKjcrUzRIR0DrxgIX9Ga4"
+}

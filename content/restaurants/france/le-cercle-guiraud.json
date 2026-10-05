@@ -1,0 +1,19 @@
+{
+  "name": "Le Cercle Guiraud",
+  "city": "nouvelle-aquitaine",
+  "area": "Sauternes, Gironde",
+  "areaFr": "Sauternes, Gironde",
+  "address": "14 rue Principale, 33210 Sauternes",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 681,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lecercleguiraud.com/",
+  "lat": 44.5330491,
+  "lng": -0.3425195,
+  "placeId": "ChIJmdAFJJkNVQ0RxSSnnnQ-M44"
+}

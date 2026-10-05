@@ -1,0 +1,10 @@
+{
+  "id": "montpellier",
+  "type": "city",
+  "parent": "occitanie",
+  "name": "Montpellier",
+  "nameFr": "Montpellier",
+  "inSentenceFr": "à Montpellier",
+  "intro": "Prices are in euros, with a switch to see them in pounds or US dollars, and include service, as French menu prices always do. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
+  "introFr": "Les prix sont en euros, avec un bouton pour les afficher en livres sterling ou en dollars américains, et le service est compris, comme toujours en France. Prix vérifiés en octobre 2026 ; quand le prix d'un restaurant n'apparaît pas encore, il reste à ajouter."
+}

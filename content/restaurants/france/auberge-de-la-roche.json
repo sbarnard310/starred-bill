@@ -1,0 +1,23 @@
+{
+  "name": "Auberge de la Roche",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Valdeblore, Alpes-Maritimes",
+  "areaFr": "Valdeblore, Alpes-Maritimes",
+  "address": "La Roche, 06420 Valdeblore",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.8,
+  "reviews": 246,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.laubergedelaroche.com",
+  "lat": 44.0692494,
+  "lng": 7.1756621,
+  "placeId": "ChIJ1Q6fsH6tzRIRkHJkAd-yG3g"
+}

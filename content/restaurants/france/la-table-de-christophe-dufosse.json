@@ -1,0 +1,19 @@
+{
+  "name": "La Table de Christophe Dufossé",
+  "city": "hauts-de-france",
+  "area": "Busnes, Pas-de-Calais",
+  "areaFr": "Busnes, Pas-de-Calais",
+  "address": "1098 rue de Lillers, 62350 Busnes",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 69,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.ledomainedebeaulieu.fr",
+  "lat": 50.581874,
+  "lng": 2.5070873,
+  "placeId": "ChIJ6zD5m2Ud3UcRI8X9Qqrc6Bc"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "L'Essentiel",
+  "city": "nouvelle-aquitaine",
+  "area": "Périgueux, Dordogne",
+  "areaFr": "Périgueux, Dordogne",
+  "address": "8 rue de la Clarté, 24000 Périgueux",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 311,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-perigueux.com/",
+  "lat": 45.1840692,
+  "lng": 0.7223774,
+  "placeId": "ChIJw-H10FRw_0cRP7_AShepiXc"
+}

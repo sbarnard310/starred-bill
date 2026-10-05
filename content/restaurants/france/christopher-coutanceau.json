@@ -1,0 +1,19 @@
+{
+  "name": "Christopher Coutanceau",
+  "city": "nouvelle-aquitaine",
+  "area": "La Rochelle, Charente-Maritime",
+  "areaFr": "La Rochelle, Charente-Maritime",
+  "address": "Plage de la Concurrence, 17000 La Rochelle",
+  "stars": 3,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.7,
+  "reviews": 1266,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://christophercoutanceau.com",
+  "lat": 46.1553146,
+  "lng": -1.1599316,
+  "placeId": "ChIJ87_sn6VTAUgRsNVFS7MOq3w"
+}

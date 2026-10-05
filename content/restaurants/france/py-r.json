@@ -1,0 +1,17 @@
+{
+  "name": "Py-r",
+  "city": "toulouse",
+  "address": "19 descente de la Halle-aux-Poissons, 31000 Toulouse",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 968,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.py-r.com/",
+  "lat": 43.599313,
+  "lng": 1.4408583,
+  "placeId": "ChIJ0UcJQ327rhIRCbI2BX68yQM"
+}

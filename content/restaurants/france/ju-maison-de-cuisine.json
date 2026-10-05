@@ -1,0 +1,19 @@
+{
+  "name": "JU - Maison de Cuisine",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Bonnieux, Vaucluse",
+  "areaFr": "Bonnieux, Vaucluse",
+  "address": "2 rue Lucien-Blanc, 84480 Bonnieux",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 332,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://ju-maisondecuisine.com/",
+  "lat": 43.8231711,
+  "lng": 5.3065565,
+  "placeId": "ChIJTUu9auoRyhIRyWCmh2ioPsw"
+}

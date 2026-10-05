@@ -1,0 +1,23 @@
+{
+  "name": "Holodeck",
+  "city": "occitanie",
+  "area": "Floressas, Lot",
+  "areaFr": "Floressas, Lot",
+  "address": "Château de Chambert, lieu-dit Chambert, 46700 Floressas",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.9,
+  "reviews": 186,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://chambert.com/",
+  "lat": 44.4483031,
+  "lng": 1.1330296,
+  "placeId": "ChIJn0bCAqR5qxIR1YIuRDmfY5Y"
+}

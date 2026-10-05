@@ -1,0 +1,19 @@
+{
+  "name": "JY'S",
+  "city": "grand-est",
+  "area": "Colmar, Haut-Rhin",
+  "areaFr": "Colmar, Haut-Rhin",
+  "address": "3 allée du Champ-de-Mars, 68000 Colmar",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 898,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.jean-yves-schillinger.com/",
+  "lat": 48.0755636,
+  "lng": 7.3533263,
+  "placeId": "ChIJ81TRBOZlkUcRTlWoyzHLGew"
+}

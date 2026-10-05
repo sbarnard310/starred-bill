@@ -1,0 +1,17 @@
+{
+  "name": "La Table d'Hôtes - Le Quatrième Mur",
+  "city": "bordeaux",
+  "address": "2 place de la Comédie, 33000 Bordeaux",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 10591,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://quatrieme-mur.com/",
+  "lat": 44.84258,
+  "lng": -0.57423,
+  "placeId": "ChIJqRDnZ9onVQ0RDrzHMSVEL8o"
+}

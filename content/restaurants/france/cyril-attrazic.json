@@ -1,0 +1,19 @@
+{
+  "name": "Cyril Attrazic",
+  "city": "occitanie",
+  "area": "Aumont-Aubrac, Lozère",
+  "areaFr": "Aumont-Aubrac, Lozère",
+  "address": "319 route du Languedoc, 48130 Aumont-Aubrac",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 323,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://cyrilattrazic.fr/",
+  "lat": 44.7169426,
+  "lng": 3.2877885,
+  "placeId": "ChIJbcdTBTY9sxIRoxschZB717c"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Colette",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Saint-Tropez, Var",
+  "areaFr": "Saint-Tropez, Var",
+  "address": "Hôtel Sezz, 151  route des Salins, 83990 Saint-Tropez",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 90,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.colettesainttropez.com",
+  "lat": 43.2637243,
+  "lng": 6.6697135,
+  "placeId": "ChIJ09pmg87AzhIR9llFMfIexd0"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Bacôve",
+  "city": "hauts-de-france",
+  "area": "Saint-Omer, Pas-de-Calais",
+  "areaFr": "Saint-Omer, Pas-de-Calais",
+  "address": "8 rue Caventou, 62500 Saint-Omer",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 729,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://restaurant-bacove.com",
+  "lat": 50.7482544,
+  "lng": 2.2554187,
+  "placeId": "ChIJLYCx96T53EcRjs9R3UOzj2Q"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Chassagnette",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Arles, Bouches-du-Rhône",
+  "areaFr": "Arles, Bouches-du-Rhône",
+  "address": "Route du Sambuc, 13200 Arles",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 508,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.chassagnette.fr/",
+  "lat": 43.5677811,
+  "lng": 4.6683735,
+  "placeId": "ChIJh84ZFkdythIRGzvBRr819xA"
+}

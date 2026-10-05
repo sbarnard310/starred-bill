@@ -1,0 +1,23 @@
+{
+  "name": "Le Camélia",
+  "city": "hauts-de-france",
+  "area": "Bry, Nord",
+  "areaFr": "Bry, Nord",
+  "address": "17 rue de l'Église, 59144 Bry",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.8,
+  "reviews": 917,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lecameliadebry.com/",
+  "lat": 50.319083,
+  "lng": 3.676437,
+  "placeId": "ChIJxX0b8pn1wkcRa4NL6Hw4sWA"
+}

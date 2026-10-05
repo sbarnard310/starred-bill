@@ -1,0 +1,19 @@
+{
+  "name": "Alain Llorca",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "La Colle-sur-Loup, Alpes-Maritimes",
+  "areaFr": "La Colle-sur-Loup, Alpes-Maritimes",
+  "address": "350 route de Saint-Paul, 06480 La Colle-sur-Loup",
+  "stars": 1,
+  "cuisine": "Provençal",
+  "rating": 4.5,
+  "reviews": 170,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.alainllorca.com",
+  "lat": 43.6952832,
+  "lng": 7.1089745,
+  "placeId": "ChIJl1uHNkXTzRIRkHk0JtRVOFs"
+}

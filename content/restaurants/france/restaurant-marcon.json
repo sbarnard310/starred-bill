@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant Marcon",
+  "city": "auvergne-rhone-alpes",
+  "area": "Saint-Bonnet-le-Froid, Haute-Loire",
+  "areaFr": "Saint-Bonnet-le-Froid, Haute-Loire",
+  "address": "Larsiallas, 18 chemin de Brard, 43290 Saint-Bonnet-le-Froid",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 1246,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lesmaisonsmarcon.fr",
+  "lat": 45.1389186,
+  "lng": 4.4342053,
+  "placeId": "ChIJM_Y85_919UcReASpU9RrmFA"
+}

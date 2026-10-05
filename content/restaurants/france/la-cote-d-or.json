@@ -1,0 +1,19 @@
+{
+  "name": "La Côte d'Or",
+  "city": "bourgogne-franche-comte",
+  "area": "Saulieu, Côte-d'Or",
+  "areaFr": "Saulieu, Côte-d'Or",
+  "address": "Le Relais Bernard Loiseau, 2 avenue Bernard-Loiseau, 21210 Saulieu",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 1591,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.bernard-loiseau.com/",
+  "lat": 47.2797873,
+  "lng": 4.2321852,
+  "placeId": "ChIJSyTypvEF8kcROYSCo94720o"
+}

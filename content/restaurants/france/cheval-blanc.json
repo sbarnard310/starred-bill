@@ -1,0 +1,22 @@
+{
+  "name": "Cheval Blanc",
+  "city": "grand-est",
+  "area": "Lembach, Bas-Rhin",
+  "areaFr": "Lembach, Bas-Rhin",
+  "address": "4 rue de Wissembourg, 67510 Lembach",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 934,
+  "dinner": 240,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteFr": "Menu dégustation",
+  "wine": 260,
+  "sourceType": "site",
+  "source": "https://www.cheval-blanc-lembach.fr/fr/",
+  "website": "https://www.cheval-blanc-lembach.fr/",
+  "lat": 49.0032985,
+  "lng": 7.7907053,
+  "placeId": "ChIJVx8VT6D0lkcRrJHMszFrc84"
+}

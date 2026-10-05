@@ -1,0 +1,19 @@
+{
+  "name": "La Table de Chaintré",
+  "city": "bourgogne-franche-comte",
+  "area": "Chaintré, Saône-et-Loire",
+  "areaFr": "Chaintré, Saône-et-Loire",
+  "address": "72 place du Luminaire, 71570 Chaintré",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 383,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.latabledechaintre.com",
+  "lat": 46.2604162,
+  "lng": 4.7601996,
+  "placeId": "ChIJj05vs59680cRj1KFxiZ8dTY"
+}

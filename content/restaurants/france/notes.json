@@ -1,0 +1,23 @@
+{
+  "name": "Notes",
+  "city": "nouvelle-aquitaine",
+  "area": "Cognac, Charente",
+  "areaFr": "Cognac, Charente",
+  "address": "Hôtel La Nauve, 12 rue de la Nauve, 16100 Cognac",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.9,
+  "reviews": 50,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://almae-collection.com/lanauve/restaurants/",
+  "lat": 45.6849656,
+  "lng": -0.3541359,
+  "placeId": "ChIJlQ70_NXzAEgRFK9tgyOufqY"
+}

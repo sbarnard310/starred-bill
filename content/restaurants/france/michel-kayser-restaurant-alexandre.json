@@ -1,0 +1,19 @@
+{
+  "name": "Michel Kayser - Restaurant Alexandre",
+  "city": "occitanie",
+  "area": "Garons, Gard",
+  "areaFr": "Garons, Gard",
+  "address": "2 rue Xavier-Tronc, 30128 Garons",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 861,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.michelkayser.com",
+  "lat": 43.7679586,
+  "lng": 4.4229251,
+  "placeId": "ChIJO0UyhwottBIRFxqUxeYvPt8"
+}

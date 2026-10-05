@@ -1,0 +1,22 @@
+{
+  "name": "La Palmeraie - Château de Valmer",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "La Croix-Valmer, Var",
+  "areaFr": "La Croix-Valmer, Var",
+  "address": "81 boulevard de Gigaro, 83420 La Croix-Valmer",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4,
+  "reviews": 3,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.chateauvalmer.com",
+  "lat": 43.19189,
+  "lng": 6.588246,
+  "placeId": "ChIJqUE0xVXFzhIRGpYy8TWezng"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Vieille Auberge",
+  "city": "ile-de-france",
+  "area": "Villeneuve-le-Comte, Seine-et-Marne",
+  "areaFr": "Villeneuve-le-Comte, Seine-et-Marne",
+  "address": "11 rue du Général-de-Gaulle, 77174 Villeneuve-le-Comte",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 641,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.la-vieille-auberge-77.com",
+  "lat": 48.8130658,
+  "lng": 2.8295952,
+  "placeId": "ChIJtSsu5TCo6EcRW9_My-zqExk"
+}

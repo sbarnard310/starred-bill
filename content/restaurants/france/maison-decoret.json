@@ -1,0 +1,19 @@
+{
+  "name": "Maison Decoret",
+  "city": "auvergne-rhone-alpes",
+  "area": "Vichy, Allier",
+  "areaFr": "Vichy, Allier",
+  "address": "15 rue du Parc, 03200 Vichy",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 577,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.maisondecoret.com",
+  "lat": 46.1246273,
+  "lng": 3.4192286,
+  "placeId": "ChIJ8Yb7dQzN9kcRQGzmbHog7S0"
+}

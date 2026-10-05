@@ -1,0 +1,23 @@
+{
+  "name": "La Table du Grapiot",
+  "city": "bourgogne-franche-comte",
+  "area": "Pupillin, Jura",
+  "areaFr": "Pupillin, Jura",
+  "address": "3 rue Bagier, 39600 Pupillin",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.8,
+  "reviews": 895,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://legrapiot.com",
+  "lat": 46.8834137,
+  "lng": 5.760584,
+  "placeId": "ChIJS9E3OaM9jUcRDF_4GrbrRy0"
+}

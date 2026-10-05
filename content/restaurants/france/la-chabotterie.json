@@ -1,0 +1,19 @@
+{
+  "name": "La Chabotterie",
+  "city": "pays-de-la-loire",
+  "area": "Montréverd, Vendée",
+  "areaFr": "Montréverd, Vendée",
+  "address": "Logis de La Chabotterie, 85260 Montréverd",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 466,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://lachabotterie.com",
+  "lat": 46.879939,
+  "lng": -1.4064951,
+  "placeId": "ChIJSY5mAcbTBUgR_JXDpD0hiCg"
+}

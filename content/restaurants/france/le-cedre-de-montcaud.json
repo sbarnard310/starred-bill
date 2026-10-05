@@ -1,0 +1,21 @@
+{
+  "name": "Le Cèdre de Montcaud",
+  "city": "occitanie",
+  "area": "Sabran, Gard",
+  "areaFr": "Sabran, Gard",
+  "address": "Hameau de Combes, 30200 Sabran",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 452,
+  "dinner": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €135)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 135 €)",
+  "sourceType": "site",
+  "source": "https://www.chateaudemontcaud.com/media/1638/download/23092026-%20Menu%207%20temps.pdf?v=1&inline=1",
+  "website": "https://www.chateaudemontcaud.com/fr/restaurants/le-cedre-de-montcaud",
+  "lat": 44.1719004,
+  "lng": 4.5709434,
+  "placeId": "ChIJvztTryha-EcRTp0Q7Rglqdk"
+}

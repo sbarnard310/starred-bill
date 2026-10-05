@@ -1,0 +1,19 @@
+{
+  "name": "Le Pily",
+  "city": "normandy",
+  "area": "Cherbourg-en-Cotentin, Manche",
+  "areaFr": "Cherbourg-en-Cotentin, Manche",
+  "address": "1 rue du Pont-Tournant, 50100 Cherbourg-en-Cotentin",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 722,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurant-le-pily.com",
+  "lat": 49.6392432,
+  "lng": -1.6199211,
+  "placeId": "ChIJn9YCmJ2XDEgRfbhKt56b76U"
+}

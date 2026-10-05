@@ -1,0 +1,20 @@
+{
+  "name": "Le Chantecler",
+  "city": "nice",
+  "address": "Le Negresco, 37 promenade des Anglais, 06000 Nice",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 335,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.lenegresco.com/restaurants/le-chantecler",
+  "lat": 43.6943565,
+  "lng": 7.2580138,
+  "placeId": "ChIJdcqjygzQzRIRJvAyqYUV8_I"
+}

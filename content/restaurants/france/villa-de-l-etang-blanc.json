@@ -1,0 +1,19 @@
+{
+  "name": "Villa de l'Étang Blanc",
+  "city": "nouvelle-aquitaine",
+  "area": "Seignosse, Landes",
+  "areaFr": "Seignosse, Landes",
+  "address": "2265 route de l'Étang-Blanc (D432), 40510 Seignosse",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 611,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.villaetangblanc.fr",
+  "lat": 43.7017352,
+  "lng": -1.3617077,
+  "placeId": "ChIJDels5qtQUQ0R-MToNKHH8KA"
+}

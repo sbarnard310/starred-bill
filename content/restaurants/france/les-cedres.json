@@ -1,0 +1,19 @@
+{
+  "name": "Les Cèdres",
+  "city": "auvergne-rhone-alpes",
+  "area": "Granges-les-Beaumont, Drôme",
+  "areaFr": "Granges-les-Beaumont, Drôme",
+  "address": "25 rue Henri-Machon, 26600 Granges-les-Beaumont",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.9,
+  "reviews": 1096,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurantlescedres.fr",
+  "lat": 45.0502101,
+  "lng": 4.9838433,
+  "placeId": "ChIJtaxm-BdO9UcRI9mNLxb4Ls8"
+}

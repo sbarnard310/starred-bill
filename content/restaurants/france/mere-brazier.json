@@ -1,0 +1,19 @@
+{
+  "name": "Mère Brazier",
+  "city": "lyon",
+  "area": "1st arrondissement",
+  "areaFr": "1er arrondissement",
+  "address": "12 rue Royale, 69001 Lyon",
+  "stars": 2,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 1638,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://lamerebrazier.fr/",
+  "lat": 45.7714309,
+  "lng": 4.8372034,
+  "placeId": "ChIJczdxcvvq9EcRF6hF_LmY8-U"
+}

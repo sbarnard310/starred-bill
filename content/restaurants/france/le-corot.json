@@ -1,0 +1,23 @@
+{
+  "name": "Le Corot",
+  "city": "ile-de-france",
+  "area": "Ville-d'Avray, Hauts-de-Seine",
+  "areaFr": "Ville-d'Avray, Hauts-de-Seine",
+  "address": "Les Étangs de Corot, 55 rue de Versailles, 92410 Ville-d'Avray",
+  "stars": 2,
+  "cuisine": "Creative",
+  "change": "up",
+  "changeNote": "Gained a second star",
+  "changeNoteFr": "Obtient sa deuxième étoile",
+  "changeDate": "2026-03",
+  "rating": 4.4,
+  "reviews": 1337,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.etangs-corot.com/",
+  "lat": 48.8220267,
+  "lng": 2.1830041,
+  "placeId": "ChIJT2wHyoF85kcRHMUUuRcPMek"
+}

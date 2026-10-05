@@ -1,0 +1,19 @@
+{
+  "name": "L'Abissiou",
+  "city": "pays-de-la-loire",
+  "area": "Les Sables-d'Olonne, Vendée",
+  "areaFr": "Les Sables-d'Olonne, Vendée",
+  "address": "81 rue des Halles, 85100 Les Sables-d'Olonne",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 332,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.labissiou.fr",
+  "lat": 46.4955501,
+  "lng": -1.7873309,
+  "placeId": "ChIJge0n04xnBEgRxt6c-aHsp6g"
+}

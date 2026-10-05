@@ -1,0 +1,19 @@
+{
+  "name": "Mandibule",
+  "city": "auvergne-rhone-alpes",
+  "area": "Alixan, Drôme",
+  "areaFr": "Alixan, Drôme",
+  "address": "5 place de la Mairie, 26300 Alixan",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 573,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.mandibulerestaurant.com",
+  "lat": 44.974393,
+  "lng": 5.0258222,
+  "placeId": "ChIJ4TswMuRT9UcRqTxyhEzxSCU"
+}

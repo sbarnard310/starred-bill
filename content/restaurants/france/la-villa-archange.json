@@ -1,0 +1,19 @@
+{
+  "name": "La Villa Archange",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Le Cannet, Alpes-Maritimes",
+  "areaFr": "Le Cannet, Alpes-Maritimes",
+  "address": "Rue de l'Ouest, 06110 Le Cannet",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 788,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.bruno-oger.com",
+  "lat": 43.5716556,
+  "lng": 7.014556,
+  "placeId": "ChIJS4x5TPyBzhIRyQ_ceZRqxqE"
+}

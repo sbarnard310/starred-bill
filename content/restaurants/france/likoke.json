@@ -1,0 +1,19 @@
+{
+  "name": "Likoké",
+  "city": "auvergne-rhone-alpes",
+  "area": "Les Vans, Ardèche",
+  "areaFr": "Les Vans, Ardèche",
+  "address": "33 route de Païolive, 07140 Les Vans",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 407,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://likoke.fr/",
+  "lat": 44.4040212,
+  "lng": 4.133207,
+  "placeId": "ChIJ02pfifTztBIR0j5HH-jpqzg"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Casadelmar",
+  "city": "corsica",
+  "area": "Porto-Vecchio, Corse-du-Sud",
+  "areaFr": "Porto-Vecchio, Corse-du-Sud",
+  "address": "Route de Palombaggia, 20137 Porto-Vecchio",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 338,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.casadelmar.fr",
+  "lat": 41.5948102,
+  "lng": 9.3099771,
+  "placeId": "ChIJNYDl6H2B2RIR3Xe1Jee6YtU"
+}

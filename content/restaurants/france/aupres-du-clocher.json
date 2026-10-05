@@ -1,0 +1,23 @@
+{
+  "name": "Auprès du Clocher",
+  "city": "bourgogne-franche-comte",
+  "area": "Pommard, Côte-d'Or",
+  "areaFr": "Pommard, Côte-d'Or",
+  "address": "1 rue de Nackenheim, 21630 Pommard",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.8,
+  "reviews": 474,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://aupresduclocher.com/",
+  "lat": 47.0090022,
+  "lng": 4.7953604,
+  "placeId": "ChIJJyUesu308kcRtnmiD1Ed9d0"
+}

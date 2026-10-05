@@ -1,0 +1,22 @@
+{
+  "name": "Yozora",
+  "city": "grand-est",
+  "area": "Metz, Moselle",
+  "areaFr": "Metz, Moselle",
+  "address": "Centre Pompidou-Metz, 1 parvis des Droits-de-l'Homme, 57000 Metz",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 434,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://restaurant-yozora.com",
+  "lat": 49.1080636,
+  "lng": 6.1816227,
+  "placeId": "ChIJL2SFECjdlEcRTmxB8lNSJxE"
+}

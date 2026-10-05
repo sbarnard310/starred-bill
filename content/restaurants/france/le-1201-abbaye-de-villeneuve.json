@@ -1,0 +1,19 @@
+{
+  "name": "Le 1201 - Abbaye de Villeneuve",
+  "city": "pays-de-la-loire",
+  "area": "Les Sorinières, Loire-Atlantique",
+  "areaFr": "Les Sorinières, Loire-Atlantique",
+  "address": "Lieu-dit Villeneuve, 44840 Les Sorinières",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 122,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.abbayedevilleneuve.com/restaurant/",
+  "lat": 47.1232859,
+  "lng": -1.5338567,
+  "placeId": "ChIJ-wOVymXDBUgROdgNb6zX2pc"
+}

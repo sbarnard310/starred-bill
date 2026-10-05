@@ -1,0 +1,19 @@
+{
+  "name": "La Table de Philippe Girardon",
+  "city": "auvergne-rhone-alpes",
+  "area": "Chonas-l'Amballan, Isère",
+  "areaFr": "Chonas-l'Amballan, Isère",
+  "address": "Domaine de Clairefontaine, 105 chemin des Fontanettes, 38121 Chonas-l'Amballan",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 116,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://domaine-de-clairefontaine.fr/",
+  "lat": 45.456987,
+  "lng": 4.8107351,
+  "placeId": "ChIJGee2cYYf9UcR5hpjPyD3Lc0"
+}

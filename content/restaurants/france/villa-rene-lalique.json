@@ -1,0 +1,19 @@
+{
+  "name": "Villa René Lalique",
+  "city": "grand-est",
+  "area": "Wingen-sur-Moder, Bas-Rhin",
+  "areaFr": "Wingen-sur-Moder, Bas-Rhin",
+  "address": "18 rue Bellevue, 67290 Wingen-sur-Moder",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 1054,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://villarenelalique.com",
+  "lat": 48.9185,
+  "lng": 7.365027,
+  "placeId": "ChIJ_bfWkg8nlEcRA572EP81B1U"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Jean Sulpice",
+  "city": "auvergne-rhone-alpes",
+  "area": "Talloires-Montmin, Haute-Savoie",
+  "areaFr": "Talloires-Montmin, Haute-Savoie",
+  "address": "303 route du Port, 74290 Talloires-Montmin",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 320,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.perebise.com",
+  "lat": 45.8393167,
+  "lng": 6.2106864,
+  "placeId": "ChIJgd4kEyuTi0cRnuohGnxC0bc"
+}

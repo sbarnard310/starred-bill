@@ -1,0 +1,19 @@
+{
+  "name": "La Tour des Vents",
+  "city": "nouvelle-aquitaine",
+  "area": "Monbazillac, Dordogne",
+  "areaFr": "Monbazillac, Dordogne",
+  "address": "450 route de Malfourat, 24240 Monbazillac",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 13,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://domainedelatourdesvents.com/",
+  "lat": 44.796818,
+  "lng": 0.461633,
+  "placeId": "ChIJeaoS5S3bqhIRysSmb-JqJGU"
+}

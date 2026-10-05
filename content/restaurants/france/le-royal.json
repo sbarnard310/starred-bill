@@ -1,0 +1,19 @@
+{
+  "name": "Le Royal",
+  "city": "grand-est",
+  "area": "Champillon, Marne",
+  "areaFr": "Champillon, Marne",
+  "address": "Hameau de Bellevue, 9 rue de la République, 51160 Champillon",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 1514,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://royalchampagne.com/fr/le-royal.html",
+  "lat": 49.0907189,
+  "lng": 3.9770727,
+  "placeId": "ChIJkehuJt5s6UcRiQ1ZfLtPvx8"
+}

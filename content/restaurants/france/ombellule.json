@@ -1,0 +1,19 @@
+{
+  "name": "Ombellule",
+  "city": "lyon",
+  "area": "6th arrondissement",
+  "areaFr": "6e arrondissement",
+  "address": "36 cours Franklin-Roosevelt, 69006 Lyon",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 726,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.ombellule.fr/",
+  "lat": 45.7687695,
+  "lng": 4.8469216,
+  "placeId": "ChIJDxPX_EXr9EcRB0E5hiLKKtk"
+}

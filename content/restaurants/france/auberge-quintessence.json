@@ -1,0 +1,22 @@
+{
+  "name": "Auberge Quintessence",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Roubion, Alpes-Maritimes",
+  "areaFr": "Roubion, Alpes-Maritimes",
+  "address": "Route du Col-de-la-Couillole, 06420 Roubion",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 331,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://auberge-quintessence.com/",
+  "lat": 44.0996599,
+  "lng": 7.0229406,
+  "placeId": "ChIJQRvGpSBTzBIR6V1wns0h4Es"
+}

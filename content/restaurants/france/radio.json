@@ -1,0 +1,19 @@
+{
+  "name": "Radio",
+  "city": "auvergne-rhone-alpes",
+  "area": "Chamalières, Puy-de-Dôme",
+  "areaFr": "Chamalières, Puy-de-Dôme",
+  "address": "43 avenue Pierre-et-Marie-Curie, 63400 Chamalières",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 734,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-radio.fr/",
+  "lat": 45.7699115,
+  "lng": 3.0615915,
+  "placeId": "ChIJfSamIjUa90cRf4ZAWFAnKwM"
+}

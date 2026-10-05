@@ -1,0 +1,19 @@
+{
+  "name": "Les Trois Soleils de Montal",
+  "city": "occitanie",
+  "area": "Saint-Céré, Lot",
+  "areaFr": "Saint-Céré, Lot",
+  "address": "687 route de Montal, Saint-Jean-Lespinasse, 46400 Saint-Céré",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 422,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.3soleils.fr",
+  "lat": 44.8626981,
+  "lng": 1.8642524,
+  "placeId": "ChIJ6bQiQEUorRIRXZnaelPcEPg"
+}

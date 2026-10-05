@@ -1,0 +1,22 @@
+{
+  "name": "Le Charlie",
+  "city": "corsica",
+  "area": "Porticcio, Corse-du-Sud",
+  "areaFr": "Porticcio, Corse-du-Sud",
+  "address": "Bella Vista Hôtel, 20166 Porticcio",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 111,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://menus.fr/porticcio/le-charlie",
+  "lat": 41.8954004,
+  "lng": 8.8106627,
+  "placeId": "ChIJVxbVWcFB2hIREWCguK-qZ_4"
+}

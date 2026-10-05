@@ -1,0 +1,19 @@
+{
+  "name": "Toya",
+  "city": "grand-est",
+  "area": "Faulquemont, Moselle",
+  "areaFr": "Faulquemont, Moselle",
+  "address": "Avenue Jean-Monnet, 57380 Faulquemont",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 566,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://toya-restaurant.fr/",
+  "lat": 49.0564967,
+  "lng": 6.627029,
+  "placeId": "ChIJ103NJF_4lEcR58UJAL7XCz4"
+}

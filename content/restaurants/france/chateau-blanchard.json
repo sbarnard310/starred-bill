@@ -1,0 +1,19 @@
+{
+  "name": "Château Blanchard",
+  "city": "auvergne-rhone-alpes",
+  "area": "Chazelles-sur-Lyon, Loire",
+  "areaFr": "Chazelles-sur-Lyon, Loire",
+  "address": "36 route de Saint-Galmier, 42140 Chazelles-sur-Lyon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 541,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-chateau-blanchard.com/",
+  "lat": 45.63603,
+  "lng": 4.385362,
+  "placeId": "ChIJb5AG3_hQ9EcRAVAM02eqUt4"
+}

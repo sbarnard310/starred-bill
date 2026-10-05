@@ -1,0 +1,19 @@
+{
+  "name": "La Marande",
+  "city": "bourgogne-franche-comte",
+  "area": "Montbellet, Saône-et-Loire",
+  "areaFr": "Montbellet, Saône-et-Loire",
+  "address": "1484 route de Lugny, hameau de Mirande, 71260 Montbellet",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 724,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotel-restaurant-la-marande.com/",
+  "lat": 46.4644829,
+  "lng": 4.872302,
+  "placeId": "ChIJiULZpbAT80cRQSCumjj4v3w"
+}

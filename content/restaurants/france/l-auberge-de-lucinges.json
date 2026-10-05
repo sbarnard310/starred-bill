@@ -1,0 +1,19 @@
+{
+  "name": "L'Auberge de Lucinges",
+  "city": "auvergne-rhone-alpes",
+  "area": "Lucinges, Haute-Savoie",
+  "areaFr": "Lucinges, Haute-Savoie",
+  "address": "67 place de l'Église, 74380 Lucinges",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 657,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.laubergedelucinges.fr",
+  "lat": 46.1905123,
+  "lng": 6.3184274,
+  "placeId": "ChIJGZwkoX9tjEcRAOhjsD0QuOw"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Renaissance",
+  "city": "normandy",
+  "area": "Argentan, Orne",
+  "areaFr": "Argentan, Orne",
+  "address": "20 avenue de la 2ème-Division-Blindée, 61200 Argentan",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 507,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.arnaudviel.com",
+  "lat": 48.7391758,
+  "lng": -0.0285254,
+  "placeId": "ChIJWaWznDgACkgRffaimHdnGLo"
+}

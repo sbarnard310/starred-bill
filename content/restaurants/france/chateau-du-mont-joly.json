@@ -1,0 +1,19 @@
+{
+  "name": "Château du Mont Joly",
+  "city": "bourgogne-franche-comte",
+  "area": "Sampans, Jura",
+  "areaFr": "Sampans, Jura",
+  "address": "6 rue du Mont-Joly, 39100 Sampans",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 186,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.chateaumontjoly.com",
+  "lat": 47.12314,
+  "lng": 5.45684,
+  "placeId": "ChIJl-8ehyez8kcRP9Fd223oFs8"
+}

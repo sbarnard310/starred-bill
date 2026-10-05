@@ -1,0 +1,19 @@
+{
+  "name": "L'Atelier des Augustins",
+  "city": "lyon",
+  "area": "1st arrondissement",
+  "areaFr": "1er arrondissement",
+  "address": "17 rue Hippolyte-Flandrin, 69001 Lyon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 1746,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://latelierdesaugustins.com",
+  "lat": 45.7677374,
+  "lng": 4.8308367,
+  "placeId": "ChIJ1Z21F_7q9EcReZ2iUWAaxCM"
+}

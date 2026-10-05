@@ -1,0 +1,19 @@
+{
+  "name": "La Bòria",
+  "city": "auvergne-rhone-alpes",
+  "area": "Veyras, Ardèche",
+  "areaFr": "Veyras, Ardèche",
+  "address": "105 avenue du Ruissol, 07000 Veyras",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 526,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.la-boria.com",
+  "lat": 44.7292683,
+  "lng": 4.5651805,
+  "placeId": "ChIJtaRRiBc7tRIRqpXx3ZaGdvw"
+}

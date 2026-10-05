@@ -1,0 +1,22 @@
+{
+  "name": "Ressources",
+  "city": "bordeaux",
+  "address": "126 rue Fondaudège, 33000 Bordeaux",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 603,
+  "dinner": 110,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €75)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 75 €)",
+  "sourceType": "site",
+  "source": "https://restaurantressources.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://restaurantressources.com/",
+  "lat": 44.8489572,
+  "lng": -0.5837068,
+  "placeId": "ChIJVSwioewnVQ0R27K3mDe55pI"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Les Fresques - Hôtel Royal",
+  "city": "auvergne-rhone-alpes",
+  "area": "Évian-les-Bains, Haute-Savoie",
+  "areaFr": "Évian-les-Bains, Haute-Savoie",
+  "address": "960 avenue du Léman, à Neuvecelle, 74500 Évian-les-Bains",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 1776,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://hotel-royal.evianresort.com/",
+  "lat": 46.3966417,
+  "lng": 6.59945,
+  "placeId": "ChIJIXCvsFMjjEcR4bk60qa3UIE"
+}

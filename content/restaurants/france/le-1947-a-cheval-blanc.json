@@ -1,0 +1,20 @@
+{
+  "name": "Le 1947 à Cheval Blanc",
+  "city": "courchevel",
+  "address": "Cheval Blanc, Le Jardin Alpin, Courchevel 1850, 73120 Courchevel",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.chevalblanc.com/fr/maison/courchevel/restaurants-et-bars/le-1947-cheval-blanc/",
+  "lat": 45.4094877,
+  "lng": 6.6338696,
+  "placeId": "ChIJebDjJst5iUcRKYmYbva4sgI"
+}

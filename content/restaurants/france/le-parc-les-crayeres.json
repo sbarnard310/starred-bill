@@ -1,0 +1,17 @@
+{
+  "name": "Le Parc Les Crayères",
+  "city": "reims",
+  "address": "64 boulevard Henry-Vasnier, 51100 Reims",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 267,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://lescrayeres.com/restaurant-le-parc.html",
+  "lat": 49.2410909,
+  "lng": 4.0517461,
+  "placeId": "ChIJt418KV116UcRgkS3d9pAIp4"
+}

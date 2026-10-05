@@ -1,0 +1,19 @@
+{
+  "name": "La Table de l'Ours",
+  "city": "auvergne-rhone-alpes",
+  "area": "Val-d'Isère, Savoie",
+  "areaFr": "Val-d'Isère, Savoie",
+  "address": "Les Barmes de l'Ours, 100 montée de Bellevarde, 73150 Val-d'Isère",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 224,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hotellesbarmes.com",
+  "lat": 45.4473775,
+  "lng": 6.9746163,
+  "placeId": "ChIJR5iHqesLiUcRKNxGONdgqJI"
+}

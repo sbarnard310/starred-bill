@@ -1,0 +1,22 @@
+{
+  "name": "La Palme d'Or",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Cannes, Alpes-Maritimes",
+  "areaFr": "Cannes, Alpes-Maritimes",
+  "address": "Hôtel Martinez, 73 boulevard de la Croisette, 06400 Cannes",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 315,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://www.lapalmedor-restaurant.fr/",
+  "lat": 43.5478128,
+  "lng": 7.0306323,
+  "placeId": "ChIJecNdHr2BzhIR0pJ-zd3EL1Y"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Arbane",
+  "city": "reims",
+  "address": "7 rue Noël, 51100 Reims",
+  "stars": 2,
+  "cuisine": "Creative",
+  "change": "up",
+  "changeNote": "Gained a second star",
+  "changeNoteFr": "Obtient sa deuxième étoile",
+  "changeDate": "2026-03",
+  "rating": 4.9,
+  "reviews": 1438,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.arbane-philippe-mille.com",
+  "lat": 49.2573961,
+  "lng": 4.0272938,
+  "placeId": "ChIJ19fWQQB16UcRaO3m-XojFAg"
+}

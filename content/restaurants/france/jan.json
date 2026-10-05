@@ -1,0 +1,23 @@
+{
+  "name": "JAN",
+  "city": "nice",
+  "address": "12 rue Lascaris, 06300 Nice",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 1229,
+  "dinner": 195,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from €165)",
+  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 165 €)",
+  "wine": 45,
+  "sourceType": "site",
+  "source": "https://janonline.com/fr/restaurantjan/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "website": "https://janonline.com/fr/restaurantjan/",
+  "lat": 43.6998945,
+  "lng": 7.2848004,
+  "placeId": "ChIJ7cguWLjazRIR0sVOtnZhvUM"
+}

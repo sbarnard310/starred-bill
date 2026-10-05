@@ -1,0 +1,19 @@
+{
+  "name": "L'Émulsion",
+  "city": "auvergne-rhone-alpes",
+  "area": "Saint-Alban-de-Roche, Isère",
+  "areaFr": "Saint-Alban-de-Roche, Isère",
+  "address": "57 route de Lyon, lieu-dit La Grive, 38080 Saint-Alban-de-Roche",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 601,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.lemulsion-restaurant.com",
+  "lat": 45.598532,
+  "lng": 5.2312885,
+  "placeId": "ChIJ9Xb3E6oti0cRn1xDBxIjark"
+}

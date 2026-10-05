@@ -1,0 +1,19 @@
+{
+  "name": "Duende",
+  "city": "occitanie",
+  "area": "Nîmes, Gard",
+  "areaFr": "Nîmes, Gard",
+  "address": "Quai de la Fontaine, 30900 Nîmes",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 204,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.maison-albar-hotels-l-imperator.com",
+  "lat": 43.8388191,
+  "lng": 4.3527079,
+  "placeId": "ChIJ31L2rrMttBIRPyzC2P6O76U"
+}

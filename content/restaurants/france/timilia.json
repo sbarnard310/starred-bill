@@ -1,0 +1,23 @@
+{
+  "name": "Timilìa",
+  "city": "grand-est",
+  "area": "Metz, Moselle",
+  "areaFr": "Metz, Moselle",
+  "address": "20 rue Vigne-Saint-Avold, 57000 Metz",
+  "stars": 1,
+  "cuisine": "Italian",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-03",
+  "rating": 4.9,
+  "reviews": 213,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.ristorante-timilia.com",
+  "lat": 49.1149433,
+  "lng": 6.1829023,
+  "placeId": "ChIJF1W77bfdlEcRywrzf8IRAhY"
+}

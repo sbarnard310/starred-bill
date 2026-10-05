@@ -1,0 +1,17 @@
+{
+  "name": "Leclère",
+  "city": "montpellier",
+  "address": "8 rue André-Michel, 34000 Montpellier",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 849,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurantleclere.com",
+  "lat": 43.6067486,
+  "lng": 3.8739319,
+  "placeId": "ChIJJaL9OKivthIREU5SGh4COgQ"
+}

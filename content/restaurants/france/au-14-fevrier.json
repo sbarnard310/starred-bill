@@ -1,0 +1,19 @@
+{
+  "name": "Au 14 Février",
+  "city": "lyon",
+  "area": "5th arrondissement",
+  "areaFr": "5e arrondissement",
+  "address": "36 rue du Bœuf, 69005 Lyon",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 488,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.ly-au14fevrier.com/",
+  "lat": 45.7622206,
+  "lng": 4.8263815,
+  "placeId": "ChIJo5P-gavr9EcRCo1zWC9T0wU"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Domestic",
+  "city": "denmark",
+  "area": "Aarhus",
+  "address": "Mejlgade 35B, 8000, Aarhus",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 328,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantdomestic.dk/",
+  "lat": 56.1590191,
+  "lng": 10.2120322,
+  "placeId": "ChIJ69Q4Apc_TEYRtMmId43hn8c"
+}

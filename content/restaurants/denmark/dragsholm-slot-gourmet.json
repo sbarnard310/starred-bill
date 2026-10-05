@@ -1,0 +1,19 @@
+{
+  "name": "Dragsholm Slot Gourmet",
+  "city": "denmark",
+  "area": "Hørve",
+  "address": "Dragsholm Allé, 4534, Hørve",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 51,
+  "dinnerType": "menu",
+  "dinner": 499,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.dragsholm-slot.dk/gastronomy/dragsholm-slot-gourmet",
+  "website": "https://www.dragsholm-slot.dk/en",
+  "lat": 55.771236,
+  "lng": 11.390805,
+  "placeId": "ChIJnU0pJYeETUYRccwUtLFxNco"
+}

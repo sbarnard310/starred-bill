@@ -1,0 +1,17 @@
+{
+  "name": "Frederikshøj",
+  "city": "denmark",
+  "area": "Aarhus",
+  "address": "Oddervej 19-21, 8000, Aarhus",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 346,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://frederikshoj.com/",
+  "lat": 56.124947,
+  "lng": 10.2089264,
+  "placeId": "ChIJw6FQimRATEYRIG6puzRPJMU"
+}

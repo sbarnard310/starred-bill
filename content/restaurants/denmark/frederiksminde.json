@@ -1,0 +1,19 @@
+{
+  "name": "Frederiksminde",
+  "city": "denmark",
+  "area": "Præstø",
+  "address": "Klosternakken 8, 4720, Præstø",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 37,
+  "dinnerType": "menu",
+  "dinner": 2200,
+  "dinnerNote": "Tasting menu (other menus from €900)",
+  "sourceType": "site",
+  "source": "https://frederiksminde.com/uk/blog/food/frederiksminde-evening/",
+  "website": "https://frederiksminde.com/",
+  "lat": 55.12424,
+  "lng": 12.049009,
+  "placeId": "ChIJ3ZzeKT_FUkYRJrvXKnxShDU"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Henne Kirkeby Kro",
+  "city": "denmark",
+  "area": "Henne",
+  "address": "Strandvejen 234, 6854, Henne",
+  "stars": 2,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 363,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hennekirkebykro.dk/",
+  "lat": 55.7270112,
+  "lng": 8.2423144,
+  "placeId": "ChIJr7LY1kHlSkYR-FgaMam2-xU"
+}

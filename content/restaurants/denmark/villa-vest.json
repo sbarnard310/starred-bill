@@ -1,0 +1,19 @@
+{
+  "name": "Villa Vest",
+  "city": "denmark",
+  "area": "Lønstrup",
+  "address": "Strandvejen 138, 9800, Lønstrup",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 420,
+  "dinnerType": "menu",
+  "dinner": 800,
+  "dinnerNote": "Tasting menu (other menus from €700)",
+  "sourceType": "site",
+  "source": "https://villavest.dk/restaurant/aften/",
+  "website": "https://www.villavest.dk",
+  "lat": 57.4766654,
+  "lng": 9.7962815,
+  "placeId": "ChIJudCGtuHESEYRYPjBj7rZ6-A"
+}

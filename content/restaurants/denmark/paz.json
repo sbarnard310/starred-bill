@@ -1,0 +1,17 @@
+{
+  "name": "PAZ",
+  "city": "denmark",
+  "area": "Tórshavn",
+  "address": "Doktara Jakobsens gøta 14-16, 100, Tórshavn",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 27,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://paz.fo/",
+  "lat": 62.0101327,
+  "lng": -6.775808,
+  "placeId": "ChIJo9pFTmkvvEgRrzffEi4Fhzc"
+}

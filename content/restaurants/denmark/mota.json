@@ -1,0 +1,17 @@
+{
+  "name": "MOTA",
+  "city": "denmark",
+  "area": "Nykøbing Sjælland",
+  "address": "Annebergparken 50, 4500, Nykøbing Sjælland",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 128,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-mota.com/",
+  "lat": 55.9097107,
+  "lng": 11.6594175,
+  "placeId": "ChIJn9NWleZ3UkYRQ881BFLMkQc"
+}

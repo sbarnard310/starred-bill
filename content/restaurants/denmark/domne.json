@@ -1,0 +1,19 @@
+{
+  "name": "Domæne",
+  "city": "denmark",
+  "area": "Herning",
+  "address": "Gødstrupvej 62, 7400, Herning",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 86,
+  "dinnerType": "menu",
+  "dinner": 1900,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurantdomaene.dk/menu",
+  "website": "https://www.restaurantdomaene.dk/",
+  "lat": 56.1565646,
+  "lng": 8.8969789,
+  "placeId": "ChIJNcsT9fe5S0YR_BEpPLKcepA"
+}

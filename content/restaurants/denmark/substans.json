@@ -1,0 +1,19 @@
+{
+  "name": "Substans",
+  "city": "denmark",
+  "area": "Aarhus",
+  "address": "Marianne Thomsens Gade 2F, 8000, Aarhus",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 194,
+  "dinnerType": "menu",
+  "dinner": 1950,
+  "dinnerNote": "Tasting menu (other menus from €1,500)",
+  "sourceType": "site",
+  "source": "https://restaurantsubstans.dk/aften/",
+  "website": "https://restaurantsubstans.dk/",
+  "lat": 56.1655264,
+  "lng": 10.2266839,
+  "placeId": "ChIJGczXS5I_TEYRsj9WhjBu75I"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Tri",
+  "city": "denmark",
+  "area": "Agger",
+  "address": "Vesterhavsvej 5A, 7770, Agger",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 54,
+  "dinnerType": "menu",
+  "dinner": 550,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurant-tri.com/reservations",
+  "website": "https://www.restaurant-tri.com/",
+  "lat": 56.7820975,
+  "lng": 8.2331898,
+  "placeId": "ChIJsYe0MKfzSUYRXiGemGY8mb0"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Bach & Nurup",
+  "city": "denmark",
+  "area": "Aalborg",
+  "address": "Budolfi Plads 32, 9000, Aalborg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 82,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://bachognurup.dk/",
+  "lat": 57.0478385,
+  "lng": 9.9182428,
+  "placeId": "ChIJ0eRabjgzSUYRfO1Vcc-uuvU"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ARO",
+  "city": "denmark",
+  "area": "Odense",
+  "address": "Østerbro 32, 5000, Odense",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 247,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-aro.dk",
+  "lat": 55.4022012,
+  "lng": 10.4081362,
+  "placeId": "ChIJ0W0vNR0gTUYR7Jnh72syIEY"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Syttende",
+  "city": "denmark",
+  "area": "Sønderborg",
+  "address": "Nørre Havnegade 23, 6400, Sønderborg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 68,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.syttende.dk",
+  "lat": 54.9139503,
+  "lng": 9.7833821,
+  "placeId": "ChIJkfnpOvM5s0cR8fpW5HEDmTs"
+}

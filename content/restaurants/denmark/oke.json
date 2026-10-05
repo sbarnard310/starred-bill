@@ -1,0 +1,19 @@
+{
+  "name": "Okê",
+  "city": "denmark",
+  "area": "Skagen",
+  "address": "Ruths Hotel, Hans Ruths Vej 1, 9990, Skagen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 906,
+  "dinnerType": "menu",
+  "dinner": 1495,
+  "dinnerNote": "Tasting menu (other menus from €1,095)",
+  "sourceType": "site",
+  "source": "https://www.ruths-hotel.dk/en/oke/menu",
+  "website": "https://www.ruths-hotel.dk/en/oke",
+  "lat": 57.7270067,
+  "lng": 10.5216174,
+  "placeId": "ChIJbUjcg4pPT0YRMiTyyDAK05s"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Molina",
+  "city": "kuala-lumpur",
+  "address": "51F, THE FACE Style, 1020 Jalan Sultan Ismail, Kampung Baru, 50250, Kuala Lumpur",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.5,
+  "reviews": 98,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-molina.com/",
+  "lat": 3.1587347,
+  "lng": 101.7041242,
+  "placeId": "ChIJwSUnAEVJzDERpJVtwKxn0Sk"
+}

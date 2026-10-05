@@ -1,0 +1,17 @@
+{
+  "name": "Au Jardin",
+  "city": "malaysia",
+  "area": "George Town",
+  "address": "The Warehouse@Hin Bus Depot, 125 Jalan Timah, 10150, George Town",
+  "stars": 1,
+  "cuisine": "European Contemporary",
+  "rating": 4.8,
+  "reviews": 745,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-aujardin.com",
+  "lat": 5.412,
+  "lng": 100.327,
+  "placeId": "ChIJO7pVFaDDSjARUI1CyPfDXwM"
+}

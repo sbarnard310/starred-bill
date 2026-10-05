@@ -1,0 +1,16 @@
+{
+  "name": "Chim by Chef Noom",
+  "city": "kuala-lumpur",
+  "address": "L2-03, TSLAW Tower, 39 Jalan Kamuning, Imbi, 55100, Kuala Lumpur",
+  "stars": 1,
+  "cuisine": "Thai contemporary",
+  "rating": 4.8,
+  "reviews": 231,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://chimdining.com",
+  "lat": 3.1444067,
+  "lng": 101.7195484,
+  "placeId": "ChIJe82e0fI3zDERywfjSDUmlWs"
+}

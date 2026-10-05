@@ -1,0 +1,16 @@
+{
+  "name": "Beta",
+  "city": "kuala-lumpur",
+  "address": "Lot 3 & 4, GF, Cormar Suites, 10 Jalan Perak, 50450, Kuala Lumpur",
+  "stars": 1,
+  "cuisine": "Malaysian",
+  "rating": 4.7,
+  "reviews": 1400,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.betakl.com",
+  "lat": 3.1545381,
+  "lng": 101.7090051,
+  "placeId": "ChIJlTA1sdU3zDERKbujTkG2pJc"
+}

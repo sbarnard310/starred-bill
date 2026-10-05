@@ -1,0 +1,16 @@
+{
+  "name": "Akar",
+  "city": "kuala-lumpur",
+  "address": "109 Jalan Aminuddin Baki, Taman Tun Dr Ismail, 60000, Kuala Lumpur",
+  "stars": 1,
+  "cuisine": "Malaysian",
+  "rating": 4.8,
+  "reviews": 1187,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.akarkl.com",
+  "lat": 3.1528453,
+  "lng": 101.6208917,
+  "placeId": "ChIJzQV-vENJzDER1u-w_fLKF6E"
+}

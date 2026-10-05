@@ -39,22 +39,28 @@
 </head>
 <body class="home">
 {{icons}}
+<div class="masthead">
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/" id="brandLink"><svg><use href="#star"/></svg>The Starred Bill</a>
     <div class="header-actions">
-      <nav class="nav" aria-label="Sections">
-        <a href="#map" data-i18n="navMap">Map</a>
-        <a href="#destinations" data-i18n="navDestinations">Destinations</a>
-        <a href="/near-me/" class="nav-near"><svg aria-hidden="true"><use href="#locate"/></svg><span data-i18n="navNear">Near me</span></a>
-        <a href="/guides/" class="nav-guides" data-i18n="navGuides">Guides</a>
-      </nav>
-      <button type="button" class="account-btn" id="accountBtn"></button>
-      <button type="button" class="share-btn" id="shareBtn" aria-haspopup="true" aria-expanded="false" aria-controls="sharePanel"></button>
+      <div class="header-menu" id="headerMenu">
+        <nav class="nav" aria-label="Sections">
+          <a href="#map" data-i18n="navMap">Map</a>
+          <a href="#destinations" data-i18n="navDestinations">Destinations</a>
+          <a href="/near-me/" class="nav-near"><svg aria-hidden="true"><use href="#locate"/></svg><span data-i18n="navNear">Near me</span></a>
+          <a href="/guides/" class="nav-guides" data-i18n="navGuides">Guides</a>
+        </nav>
+        <button type="button" class="account-btn" id="accountBtn"></button>
+        <button type="button" class="share-btn" id="shareBtn" aria-haspopup="true" aria-expanded="false" aria-controls="sharePanel"></button>
+      </div>
+      <a href="/#search" class="search-link" id="searchLink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
       <a href="#wishlist" class="wish-link" id="wishLink"><svg aria-hidden="true"><use href="#heart"/></svg><span data-i18n="wishlist">Wishlist</span> <span id="wishCount">0</span></a>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="headerMenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <div class="share-panel" id="sharePanel" hidden></div>
     </div>
   </div>
+</header>
   <div class="switchbar">
     <div class="wrap">
       <span class="switch-note" data-i18n="homeEyebrow">{{eyebrow}}</span>
@@ -64,14 +70,14 @@
       </div>
     </div>
   </div>
-</header>
+</div>
 
 <div class="hero" id="top">
   <div class="wrap">
     <div>
       <h1 data-i18n="homeH1">{{h1}}</h1>
       <p data-i18n="homeText">{{heroText}}</p>
-      <div class="home-search">
+      <div class="home-search" id="search">
         <label class="search" for="homeQ">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <input id="homeQ" type="search" autocomplete="off" aria-controls="results">

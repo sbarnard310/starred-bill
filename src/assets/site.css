@@ -63,7 +63,10 @@ p { margin: 0; }
 button, input, select, textarea { font: inherit; color: inherit; }
 
 /* Header */
-.site-header { position: sticky; top: 0; padding-top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--band); color: var(--band-ink); border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); }
+/* Header: the top row (.site-header) and the breadcrumb bar (.switchbar) stay on screen together on computers;
+   on phones only the top row does (see "Phone header" below). */
+.masthead { position: sticky; top: 0; z-index: 10; }
+.site-header { padding-top: env(safe-area-inset-top, 0px); background: var(--band); color: var(--band-ink); border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; font-family: var(--font-display); font-size: 1.35rem; }
 .brand svg { width: 22px; height: 22px; color: var(--gold); }
@@ -167,6 +170,19 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
   .fdrop-panel .seg { flex-wrap: wrap; white-space: normal; }
 }
 @keyframes sheet-up { from { transform: translateY(100%); } to { transform: none; } }
+/* Phones: the currency picker beside Dinner/Lunch shows the chosen symbol; an invisible <select> on top of it
+   opens the phone's own list (symbol and code). Computers keep the currency switch in the header. */
+.cur-pick { display: none; }
+@media (max-width: 720px) {
+  .filter-bar { flex-wrap: wrap; justify-content: flex-start; gap: 8px; }
+  .filters-btn { margin-left: auto; }
+  .cur-pick { position: relative; display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+    padding: 7px 13px; font-family: var(--font-num); font-size: .86rem; font-weight: 500; line-height: 1.5; cursor: pointer; }
+  .cur-pick::after { content: ""; width: 6px; height: 6px; border: solid var(--muted); border-width: 0 1.5px 1.5px 0; transform: translateY(-2px) rotate(45deg); }
+  .cur-pick:hover { border-color: color-mix(in srgb, var(--ink) 35%, var(--line)); }
+  .cur-pick:focus-within { outline: 2px solid var(--green); outline-offset: 2px; }
+  .cur-pick select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 16px; padding: 0; border: 0; }
+}
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sheet-done, :root:not([data-theme="light"]) .filters-btn .count { color: var(--bg); } }
 :root[data-theme="dark"] .sheet-done, :root[data-theme="dark"] .filters-btn .count { color: var(--bg); }
 .seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); overflow: hidden; justify-self: start; }
@@ -335,25 +351,21 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 }
 @media (max-width: 720px) {
   .wrap { padding-inline: 16px; }
-  /* Phones: the section links are hidden to save room, except Guides, which sits with the account buttons. */
-  .nav { gap: 0; }
-  .nav a:not(.nav-guides) { display: none; }
-  .share-btn span { display: none; }
-  /* The wishlist shows its heart and count only, so the header fits one row with the Near me and Guides pills. */
+  /* The wishlist shows its heart and count only, so the header fits one row (see "Phone header"). */
   .wish-link span[data-i18n] { display: none; }
   /* The homepage map's star buttons, tightened so all four fit on one row. */
   #mapStars button { padding-inline: 9px; gap: 4px; }
   .header-actions { gap: 6px; }
-  .share-btn, .account-btn, .wish-link { padding-inline: 10px; }
-  .nav a.nav-guides { border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); border-radius: 999px; padding: 6px 10px; color: var(--band-ink); }
-  .toolbar { grid-template-columns: 1fr; }
+  .wish-link { padding-inline: 10px; }
+  .toolbar { grid-template-columns: minmax(0, 1fr); }
+  .toolbar > * { min-width: 0; }  /* a long sort label (e.g. French) mustn't widen the page */
   .figures { grid-template-columns: 1fr 1fr; }
   .figure:first-child { grid-column: 1 / -1; }
   form { grid-template-columns: 1fr; padding: 18px; }
 }
 
 /* Breadcrumbs, currency and language switches */
-.switchbar { border-top: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); }
+.switchbar { background: var(--band); color: var(--band-ink); border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); }
 .switchbar .wrap { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding-block: 8px; flex-wrap: wrap; }
 .hseg-right { display: flex; gap: 8px; flex-wrap: wrap; }
 .hseg { display: inline-flex; border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); border-radius: 999px; overflow: hidden; }
@@ -710,13 +722,49 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 .cookie-actions button:hover { background: rgba(255,255,255,.12); }
 .cookie-settings-btn { font: inherit; font-weight: 600; padding: 8px 18px; border-radius: 999px; border: 1px solid var(--green); background: var(--surface); color: var(--green); cursor: pointer; }
 
-/* "Near me" in the menu: the locate icon with its label; on phones the icon alone, as a pill beside Guides. */
+/* "Near me" in the menu: the locate icon with its label. */
 .nav a.nav-near { display: inline-flex; align-items: center; gap: 5px; }
 .nav a.nav-near svg { width: 15px; height: 15px; }
 .nav a[aria-current="page"] { color: var(--band-ink); }
+
+/* Phone header (720px and below): one row stays on screen (logo, search, wishlist heart, menu button) and the
+   breadcrumb bar scrolls away with the page. The menu button drops down the section links, Sign in and Share.
+   On computers .header-menu is just a wrapper, and the search and menu buttons are hidden. */
+.header-menu { display: contents; }
+.search-link, .menu-btn { display: none; }
 @media (max-width: 720px) {
-  .nav a.nav-near { display: inline-flex; border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); border-radius: 999px; padding: 6px 8px; margin-right: 6px; color: var(--band-ink); }
-  .nav a.nav-near span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .masthead { display: contents; }
+  .site-header { position: sticky; top: 0; z-index: 10; }
+  .site-header .wrap { flex-wrap: nowrap; padding-block: 10px; gap: 8px; }
+  .brand { font-size: 1.15rem; gap: 8px; white-space: nowrap; }
+  .brand svg { width: 19px; height: 19px; }
+  .site-header .header-actions { flex-wrap: nowrap; flex-shrink: 0; }
+  .search-link, .menu-btn { display: inline-grid; place-items: center; width: 36px; height: 34px; padding: 0; border-radius: 999px; background: none; color: var(--band-ink); cursor: pointer;
+    border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); }
+  .search-link svg, .menu-btn svg { width: 18px; height: 18px; }
+  .search-link:hover, .menu-btn:hover, .menu-open .menu-btn { background: color-mix(in srgb, var(--band-ink) 10%, transparent); }
+  .wish-link { padding-block: 0; height: 34px; }
+  .header-menu { display: none; position: absolute; top: 100%; left: 0; right: 0; z-index: 11; max-height: calc(100vh - 60px); overflow: auto; overscroll-behavior: contain;
+    padding: 4px 16px 18px; background: var(--band); border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); box-shadow: 0 18px 36px rgba(0, 0, 0, .28); }
+  .menu-open .header-menu { display: flex; flex-wrap: wrap; gap: 14px 8px; }
+  .header-menu .nav { display: flex; flex-direction: column; flex-basis: 100%; gap: 0; }
+  .header-menu .nav a { display: flex; align-items: center; gap: 10px; padding: 13px 2px; border-radius: 0; font-size: 1rem; color: var(--band-ink);
+    border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 10%, transparent); }
+  .header-menu .nav a:hover { background: none; text-decoration: underline; text-underline-offset: 3px; }
+  .header-menu .nav a[hidden] { display: none; }
+  /* Near me and Guides lead the list; the links to this page's sections follow. */
+  .header-menu .nav a.nav-near, .header-menu .nav a.nav-guides { order: -1; }
+  .header-menu .nav a.nav-near svg { width: 17px; height: 17px; }
+  .header-menu .account-btn, .header-menu .share-btn { padding: 8px 16px; }
+  .switchbar #currencySwitch { display: none; }
+}
+@media (max-width: 360px) {
+  /* The smallest phones: the logo's star goes, so the header still fits one row. */
+  .brand svg { display: none; }
+  .brand { font-size: 1.08rem; }
+  /* The Filters button keeps its icon and count; its word stays for screen readers. */
+  .filters-btn { padding-inline: 12px; }
+  .filters-btn span[data-i18n] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 }
 
 /* /near-me/ */

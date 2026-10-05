@@ -111,7 +111,7 @@
     footNote: "Prijzen en scores gecontroleerd in oktober 2026. Vraag het na bij het restaurant voordat je reserveert.",
     rateLine: "Prijzen in {sym} zijn bij benadering, tegen de koers van {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "De prijzen zijn omgerekend naar {sym} tegen de koers van {date} en dus bij benadering.",
-    currencyAria: "Prijzen tonen in", crumbsAria: "Waar je bent",
+    currencyAria: "Prijzen tonen in", crumbsAria: "Waar je bent", menuOpen: "Menu",
     installApp: "App installeren",
     installTipIos: "Zo installeer je de app: tik in Safari op de deelknop (het vierkantje met een pijl) en kies „Zet op beginscherm”.",
     clearSearch: "Zoekopdracht wissen", photoView: "Grotere foto van {name} bekijken", photoClose: "Sluiten"

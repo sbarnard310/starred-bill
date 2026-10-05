@@ -110,7 +110,7 @@
     footNote: "价格与评分于 2026 年 10 月核实，订位前请向餐厅确认。",
     rateLine: "{sym} 价格按 {date} 汇率换算，仅供参考：{sym}1 = {home}{rate}。",
     rateLineMixed: "价格按 {date} 汇率换算为 {sym}，仅供参考。",
-    currencyAria: "价格显示币种", crumbsAria: "当前位置",
+    currencyAria: "价格显示币种", crumbsAria: "当前位置", menuOpen: "菜单",
     installApp: "添加到主屏幕",
     installTipIos: "安装方法：点击 Safari 的分享按钮（方框加箭头），再选择“添加到主屏幕”。",
     clearSearch: "清除搜索", photoView: "查看{name}的大图", photoClose: "关闭"

@@ -107,7 +107,7 @@
     footNote: "Fiyatlar ve puanlar Ekim 2026'da kontrol edildi. Rezervasyondan önce restorana danışın.",
     rateLine: "{sym} cinsinden fiyatlar yaklaşıktır, {date} kuruyla: {sym}1 = {home}{rate}.",
     rateLineMixed: "Fiyatlar {date} kuruyla {sym} cinsine çevrildi, bu yüzden yaklaşıktır.",
-    currencyAria: "Fiyatları göster:", crumbsAria: "Bulunduğunuz yer",
+    currencyAria: "Fiyatları göster:", crumbsAria: "Bulunduğunuz yer", menuOpen: "Menü",
     installApp: "Uygulamayı yükle",
     installTipIos: "Yüklemek için: Safari'de Paylaş düğmesine (oklu kare) dokunun ve “Ana Ekrana Ekle”yi seçin.",
     clearSearch: "Aramayı temizle", photoView: "Daha büyük fotoğraf: {name}", photoClose: "Kapat"

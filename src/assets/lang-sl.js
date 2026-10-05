@@ -106,7 +106,7 @@
     footNote: "Cene in ocene preverjene oktobra 2026. Pred rezervacijo jih preverite pri restavraciji.",
     rateLine: "Cene v {sym} so približne, po tečaju z dne {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Cene so preračunane v {sym} po tečaju z dne {date}, zato so približne.",
-    currencyAria: "Prikaži cene v", crumbsAria: "Kje ste",
+    currencyAria: "Prikaži cene v", crumbsAria: "Kje ste", menuOpen: "Meni",
     installApp: "Namesti aplikacijo",
     installTipIos: "Namestitev: v Safariju tapnite gumb Deli (kvadrat s puščico) in izberite »Dodaj na začetni zaslon«.",
     clearSearch: "Počisti iskanje", photoView: "Večja fotografija: {name}", photoClose: "Zapri"

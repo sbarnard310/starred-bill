@@ -135,7 +135,7 @@ const I18N = {
     footNote: "Prices and ratings checked October 2026. Check with each restaurant before booking.",
     rateLine: "Prices in {sym} are approximate, using the exchange rate on {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Prices are converted to {sym} using the exchange rate on {date}, so they're approximate.",
-    currencyAria: "Show prices in", crumbsAria: "Where you are",
+    currencyAria: "Show prices in", crumbsAria: "Where you are", menuOpen: "Menu",
     // Homepage
     homeTitle: "The Starred Bill · Michelin-starred restaurant prices",
     homeEyebrow: "Michelin star restaurants, priced",
@@ -277,7 +277,7 @@ const I18N = {
     footNote: "價格與評分於 2026 年 10 月查核，訂位前請向餐廳確認。",
     rateLine: "{sym} 價格依 {date} 匯率換算，僅供參考：{sym}1 = {home}{rate}。",
     rateLineMixed: "價格依 {date} 匯率換算為 {sym}，僅供參考。",
-    currencyAria: "價格顯示幣別", crumbsAria: "目前位置",
+    currencyAria: "價格顯示幣別", crumbsAria: "目前位置", menuOpen: "選單",
     homeTitle: "The Starred Bill・米其林星級餐廳價格",
     homeEyebrow: "米其林星級餐廳價格一覽",
     homeH1: "一顆米其林星<em>要價</em>多少？逐城比較。",
@@ -417,7 +417,7 @@ const I18N = {
     footNote: "Prix et notes vérifiés en octobre 2026. Renseignez-vous auprès de chaque restaurant avant de réserver.",
     rateLine: "Les prix en {sym} sont approximatifs, au taux de change du {date} : {sym}1 = {home}{rate}.",
     rateLineMixed: "Les prix sont convertis en {sym} au taux de change du {date} ; ils sont donc approximatifs.",
-    currencyAria: "Afficher les prix en", crumbsAria: "Vous êtes ici",
+    currencyAria: "Afficher les prix en", crumbsAria: "Vous êtes ici", menuOpen: "Menu",
     wishTitle: "Vos envies", installApp: "Installer l'appli",
     installTipIos: "Pour l'installer : touchez le bouton Partager (le carré avec une flèche) dans Safari, puis « Sur l'écran d'accueil ».",
     clearSearch: "Effacer la recherche", photoView: "Agrandir la photo de {name}", photoClose: "Fermer"
@@ -538,7 +538,7 @@ const I18N = {
     footNote: "價錢同評分喺2026年10月核實過，訂枱之前請向餐廳確認。",
     rateLine: "{sym} 價錢按 {date} 匯率計，只供參考：{sym}1 = {home}{rate}。",
     rateLineMixed: "價錢按 {date} 匯率換算成 {sym}，只供參考。",
-    currencyAria: "價錢顯示貨幣", crumbsAria: "你而家喺度",
+    currencyAria: "價錢顯示貨幣", crumbsAria: "你而家喺度", menuOpen: "選單",
     wishTitle: "你嘅心水清單", installApp: "加到主畫面",
     installTipIos: "安裝方法：喺 Safari 撳分享掣（有箭咀嘅方格），再揀「加入主畫面」。",
     clearSearch: "清除搜尋", photoView: "睇{name}嘅大相", photoClose: "閂"
@@ -660,7 +660,7 @@ const I18N = {
     footNote: "料金と評価は2026年10月に確認しました。予約前に各店にご確認ください。",
     rateLine: "{sym}での料金は{date}の為替レートによる概算です：{sym}1 = {home}{rate}。",
     rateLineMixed: "料金は{date}の為替レートで{sym}に換算した概算です。",
-    currencyAria: "料金の表示通貨", crumbsAria: "現在地",
+    currencyAria: "料金の表示通貨", crumbsAria: "現在地", menuOpen: "メニュー",
     homeTitle: "The Starred Bill・ミシュラン星付きレストランの料金",
     homeEyebrow: "ミシュラン星付きレストランの料金",
     homeH1: "ミシュランの星は<em>いくら</em>？都市ごとに比較。",
@@ -801,7 +801,7 @@ const I18N = {
     footNote: "Precios y notas consultados en octubre de 2026. Confirma con cada restaurante antes de reservar.",
     rateLine: "Los precios en {sym} son aproximados, con el tipo de cambio del {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Los precios se convierten a {sym} con el tipo de cambio del {date}, así que son aproximados.",
-    currencyAria: "Mostrar precios en", crumbsAria: "Dónde estás",
+    currencyAria: "Mostrar precios en", crumbsAria: "Dónde estás", menuOpen: "Menú",
     wishTitle: "Tus favoritos",
     clearSearch: "Borrar búsqueda", photoView: "Ver una foto más grande de {name}", photoClose: "Cerrar",
     installApp: "Instalar app",
@@ -908,7 +908,7 @@ const I18N = {
     footNote: "Priser og bedømmelser er tjekket i oktober 2026. Tjek med restauranten, før du bestiller bord.",
     rateLine: "Priser i {sym} er omtrentlige og bruger kursen den {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Priserne er omregnet til {sym} med kursen den {date} og er derfor omtrentlige.",
-    currencyAria: "Vis priser i", crumbsAria: "Hvor du er",
+    currencyAria: "Vis priser i", crumbsAria: "Hvor du er", menuOpen: "Menu",
     installApp: "Installer app",
     installTipIos: "Sådan installerer du: tryk på Del-knappen (firkanten med en pil) i Safari, og vælg “Føj til hjemmeskærm”."
   },
@@ -1011,7 +1011,7 @@ const I18N = {
     footNote: "Priser och betyg är kontrollerade i oktober 2026. Kolla med restaurangen innan du bokar.",
     rateLine: "Priser i {sym} är ungefärliga och använder kursen den {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Priserna är omräknade till {sym} med kursen den {date} och är därför ungefärliga.",
-    currencyAria: "Visa priser i", crumbsAria: "Var du är",
+    currencyAria: "Visa priser i", crumbsAria: "Var du är", menuOpen: "Meny",
     installApp: "Installera appen",
     installTipIos: "Så installerar du: tryck på Dela-knappen (fyrkanten med en pil) i Safari och välj ”Lägg till på hemskärmen”."
   },
@@ -1114,7 +1114,7 @@ const I18N = {
     footNote: "Verð og einkunnir athuguð í október 2026. Hafðu samband við staðinn áður en þú bókar.",
     rateLine: "Verð í {sym} eru áætluð miðað við gengi {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Verð eru umreiknuð í {sym} miðað við gengi {date} og eru því áætluð.",
-    currencyAria: "Sýna verð í", crumbsAria: "Hvar þú ert",
+    currencyAria: "Sýna verð í", crumbsAria: "Hvar þú ert", menuOpen: "Valmynd",
     installApp: "Setja upp app",
     installTipIos: "Til að setja upp: ýttu á Deila-hnappinn (ferningurinn með örinni) í Safari og veldu „Bæta á heimaskjá“."
   },
@@ -1217,7 +1217,7 @@ const I18N = {
     footNote: "Preus i notes revisats l'octubre de 2026. Confirma-ho amb cada restaurant abans de reservar.",
     rateLine: "Els preus en {sym} són aproximats i fan servir el canvi del {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Els preus s'han convertit a {sym} amb el canvi del {date}, així que són aproximats.",
-    currencyAria: "Mostra els preus en", crumbsAria: "On ets",
+    currencyAria: "Mostra els preus en", crumbsAria: "On ets", menuOpen: "Menú",
     installApp: "Instal·la l'app",
     installTipIos: "Per instal·lar-la: toca el botó Comparteix (el quadrat amb una fletxa) a Safari i tria “Afegeix a la pantalla d'inici”."
   },
@@ -1320,7 +1320,7 @@ const I18N = {
     footNote: "ตรวจสอบราคาและคะแนนเมื่อเดือนตุลาคม 2026 โปรดสอบถามร้านก่อนจอง",
     rateLine: "ราคาเป็น {sym} โดยประมาณ ตามอัตราแลกเปลี่ยนวันที่ {date}: {sym}1 = {home}{rate}",
     rateLineMixed: "ราคาแปลงเป็น {sym} ตามอัตราแลกเปลี่ยนวันที่ {date} จึงเป็นราคาโดยประมาณ",
-    currencyAria: "แสดงราคาเป็น", crumbsAria: "ตำแหน่งของคุณ",
+    currencyAria: "แสดงราคาเป็น", crumbsAria: "ตำแหน่งของคุณ", menuOpen: "เมนู",
     installApp: "ติดตั้งแอป",
     installTipIos: "วิธีติดตั้ง: แตะปุ่มแชร์ (สี่เหลี่ยมที่มีลูกศร) ใน Safari แล้วเลือก “เพิ่มไปยังหน้าจอโฮม”"
   },
@@ -1441,7 +1441,7 @@ const I18N = {
     footNote: "가격과 평점은 2026년 10월에 확인했습니다. 예약 전에 레스토랑에 확인하세요.",
     rateLine: "{sym} 가격은 {date} 환율에 따른 대략적인 금액입니다: {sym}1 = {home}{rate}.",
     rateLineMixed: "가격은 {date} 환율로 {sym}에 맞춰 환산한 대략적인 금액입니다.",
-    currencyAria: "가격 표시 통화", crumbsAria: "현재 위치",
+    currencyAria: "가격 표시 통화", crumbsAria: "현재 위치", menuOpen: "메뉴",
     homeTitle: "The Starred Bill · 미쉐린 스타 레스토랑 가격",
     homeEyebrow: "미쉐린 스타 레스토랑 가격",
     homeH1: "미쉐린 스타는 <em>얼마</em>일까? 도시별로 비교하세요.",
@@ -1582,7 +1582,7 @@ const I18N = {
     footNote: "Prezzi e voti verificati a ottobre 2026. Verifica con ogni ristorante prima di prenotare.",
     rateLine: "I prezzi in {sym} sono approssimativi, con il cambio del {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "I prezzi sono convertiti in {sym} con il cambio del {date}, quindi sono approssimativi.",
-    currencyAria: "Mostra i prezzi in", crumbsAria: "Dove ti trovi",
+    currencyAria: "Mostra i prezzi in", crumbsAria: "Dove ti trovi", menuOpen: "Menu",
     wishTitle: "I tuoi preferiti",
     clearSearch: "Cancella ricerca", photoView: "Vedi una foto più grande di {name}", photoClose: "Chiudi",
     installApp: "Installa l'app",
@@ -1823,6 +1823,9 @@ function applyI18n() {
   $("brandLink").href = withLang("/");
   $("wishLink").href = document.body.classList.contains("home") ? "#wishlist" : withLang("/") + "#wishlist";
   $("wishLink").setAttribute("aria-label", t("wishTitle"));
+  $("searchLink").href = document.body.classList.contains("home") ? "#search" : withLang("/") + "#search";
+  $("searchLink").setAttribute("aria-label", t($("q") ? "searchLabel" : "homeSearchLabel"));
+  $("menuBtn").setAttribute("aria-label", t("menuOpen"));
   $("installBtn").textContent = t("installApp");
   labelShare();
   if (typeof renderAccountButton === "function") renderAccountButton();
@@ -2015,6 +2018,29 @@ document.addEventListener("click", (e) => {
 });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("sharePanel").hidden) { $("sharePanel").hidden = true; $("shareBtn").focus(); } });
 window.addEventListener("scroll", () => { if (!$("sharePanel").hidden && Math.abs($("shareBtn").getBoundingClientRect().bottom + 10 - parseFloat($("sharePanel").style.top)) > 4) $("sharePanel").hidden = true; }, { passive: true });
+
+// ---------- Phone header ----------
+// On phones the header keeps one row: the logo, search, the wishlist and a menu button. The menu holds the section
+// links, Sign in and Share. Search jumps to the page's own search box, or the homepage's on pages without one.
+function setMenu(open) {
+  document.querySelector(".site-header").classList.toggle("menu-open", open);
+  $("menuBtn").setAttribute("aria-expanded", String(open));
+}
+const menuOpen = () => $("menuBtn").getAttribute("aria-expanded") === "true";
+$("menuBtn").addEventListener("click", () => setMenu(!menuOpen()));
+document.addEventListener("click", (e) => {
+  if (menuOpen() && (e.target.closest("#headerMenu a, #accountBtn") || !e.target.closest("#headerMenu, #menuBtn, #sharePanel"))) setMenu(false);
+});
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && menuOpen()) { setMenu(false); $("menuBtn").focus(); } });
+matchMedia("(min-width: 721px)").addEventListener("change", () => setMenu(false));
+$("searchLink").addEventListener("click", (e) => {
+  const box = $("q") || $("homeQ");
+  if (!box) return;
+  e.preventDefault();
+  box.focus({ preventScroll: true });
+  box.scrollIntoView({ block: "center" });
+});
+if (location.hash === "#search" && $("homeQ")) addEventListener("load", () => $("homeQ").focus({ preventScroll: true }));
 
 // ---------- Install as an app ----------
 // Android and desktop Chrome offer an install prompt; iPhone and iPad need Safari's "Add to Home Screen".

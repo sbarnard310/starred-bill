@@ -106,7 +106,7 @@
     footNote: "Priser og vurderinger er sjekket i oktober 2026. Sjekk med restauranten før du bestiller.",
     rateLine: "Priser i {sym} er omtrentlige og bruker kursen {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Prisene er regnet om til {sym} med kursen {date} og er derfor omtrentlige.",
-    currencyAria: "Vis priser i", crumbsAria: "Hvor du er",
+    currencyAria: "Vis priser i", crumbsAria: "Hvor du er", menuOpen: "Meny",
     installApp: "Installer appen",
     installTipIos: "Slik installerer du: trykk på Del-knappen (firkanten med en pil) i Safari og velg «Legg til på Hjem-skjerm».",
     clearSearch: "Tøm søket", photoView: "Se et større bilde av {name}", photoClose: "Lukk"

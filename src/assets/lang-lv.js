@@ -103,7 +103,7 @@
     footNote: "Cenas un vērtējumi pārbaudīti 2026. gada oktobrī. Pirms rezervēšanas pārliecinieties restorānā.",
     rateLine: "Cenas {sym} ir aptuvenas, pēc {date} kursa: {sym}1 = {home}{rate}.",
     rateLineMixed: "Cenas pārrēķinātas {sym} pēc {date} kursa, tāpēc tās ir aptuvenas.",
-    currencyAria: "Rādīt cenas", crumbsAria: "Kur jūs esat",
+    currencyAria: "Rādīt cenas", crumbsAria: "Kur jūs esat", menuOpen: "Izvēlne",
     installApp: "Instalēt lietotni",
     installTipIos: "Lai instalētu: Safari pieskarieties pogai “Kopīgot” (kvadrāts ar bultiņu) un izvēlieties “Pievienot sākuma ekrānam”.",
     clearSearch: "Notīrīt meklēšanu", photoView: "Lielāks foto: {name}", photoClose: "Aizvērt"

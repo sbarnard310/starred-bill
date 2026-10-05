@@ -106,7 +106,7 @@
     footNote: "Ceny a hodnocení ověřeny v říjnu 2026. Před rezervací si je ověřte v restauraci.",
     rateLine: "Ceny v {sym} jsou přibližné, podle kurzu z {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Ceny jsou přepočteny na {sym} podle kurzu z {date}, proto jsou přibližné.",
-    currencyAria: "Zobrazit ceny v", crumbsAria: "Kde jste",
+    currencyAria: "Zobrazit ceny v", crumbsAria: "Kde jste", menuOpen: "Nabídka",
     installApp: "Nainstalovat aplikaci",
     installTipIos: "Instalace: v Safari klepněte na tlačítko Sdílet (čtverec se šipkou) a zvolte „Přidat na plochu“.",
     clearSearch: "Vymazat hledání", photoView: "Zobrazit větší fotku: {name}", photoClose: "Zavřít"

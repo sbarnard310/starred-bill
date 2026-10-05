@@ -112,7 +112,7 @@
     footNote: "Preise und Bewertungen geprüft im Oktober 2026. Frag vor der Buchung beim Restaurant nach.",
     rateLine: "Preise in {sym} sind Näherungswerte zum Kurs vom {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Die Preise sind zum Kurs vom {date} in {sym} umgerechnet und daher Näherungswerte.",
-    currencyAria: "Preise anzeigen in", crumbsAria: "Wo du bist",
+    currencyAria: "Preise anzeigen in", crumbsAria: "Wo du bist", menuOpen: "Menü",
     installApp: "App installieren",
     installTipIos: "So installierst du die App: Tippe in Safari auf „Teilen“ (das Quadrat mit dem Pfeil) und wähle „Zum Home-Bildschirm“.",
     clearSearch: "Suche löschen", photoView: "Größeres Foto von {name} ansehen", photoClose: "Schließen"

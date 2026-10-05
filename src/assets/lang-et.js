@@ -103,7 +103,7 @@
     footNote: "Hinnad ja hinnangud on kontrollitud 2026. aasta oktoobris. Enne broneerimist küsi restoranist üle.",
     rateLine: "Hinnad valuutas {sym} on ligikaudsed, kursiga {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Hinnad on arvutatud valuutasse {sym} kursiga {date}, seega on need ligikaudsed.",
-    currencyAria: "Näita hindu valuutas", crumbsAria: "Kus sa oled",
+    currencyAria: "Näita hindu valuutas", crumbsAria: "Kus sa oled", menuOpen: "Menüü",
     installApp: "Paigalda rakendus",
     installTipIos: "Paigaldamiseks puuduta Safaris nuppu Jaga (noolega ruut) ja vali „Lisa avakuvale”.",
     clearSearch: "Tühjenda otsing", photoView: "Suurem foto: {name}", photoClose: "Sulge"

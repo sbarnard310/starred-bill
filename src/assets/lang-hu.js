@@ -105,7 +105,7 @@
     footNote: "Az árakat és értékeléseket 2026 októberében ellenőriztük. Foglalás előtt érdeklődj az étteremnél.",
     rateLine: "A(z) {sym} árak tájékoztató jellegűek, a(z) {date}-i árfolyamon: {sym}1 = {home}{rate}.",
     rateLineMixed: "Az árakat a(z) {date}-i árfolyamon számoltuk át {sym} pénznemre, ezért tájékoztató jellegűek.",
-    currencyAria: "Árak pénzneme", crumbsAria: "Hol vagy",
+    currencyAria: "Árak pénzneme", crumbsAria: "Hol vagy", menuOpen: "Menü",
     installApp: "Alkalmazás telepítése",
     installTipIos: "Telepítés: koppints a Safari Megosztás gombjára (négyzet nyíllal), majd válaszd a „Főképernyőhöz adás” lehetőséget.",
     clearSearch: "Keresés törlése", photoView: "Nagyobb fotó: {name}", photoClose: "Bezárás"

@@ -106,7 +106,7 @@
     footNote: "Sinuri ang mga presyo at rating noong Oktubre 2026. Kumpirmahin sa restawran bago mag-book.",
     rateLine: "Tantiya lamang ang mga presyo sa {sym}, gamit ang palitan noong {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Ang mga presyo ay kinonvert sa {sym} gamit ang palitan noong {date}, kaya tantiya lamang.",
-    currencyAria: "Ipakita ang presyo sa", crumbsAria: "Nasaan ka",
+    currencyAria: "Ipakita ang presyo sa", crumbsAria: "Nasaan ka", menuOpen: "Menu",
     installApp: "I-install ang app",
     installTipIos: "Para i-install: i-tap ang Share button (ang parisukat na may arrow) sa Safari, saka piliin ang “Add to Home Screen”.",
     clearSearch: "I-clear ang paghahanap", photoView: "Tingnan ang mas malaking larawan ng {name}", photoClose: "Isara"

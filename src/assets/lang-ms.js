@@ -107,7 +107,7 @@
     footNote: "Harga dan penilaian disemak pada Oktober 2026. Semak dengan restoran sebelum membuat tempahan.",
     rateLine: "Harga dalam {sym} adalah anggaran, menggunakan kadar pertukaran pada {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Harga ditukar kepada {sym} menggunakan kadar pertukaran pada {date}, jadi ia merupakan anggaran.",
-    currencyAria: "Tunjuk harga dalam", crumbsAria: "Lokasi anda",
+    currencyAria: "Tunjuk harga dalam", crumbsAria: "Lokasi anda", menuOpen: "Menu",
     installApp: "Pasang aplikasi",
     installTipIos: "Untuk memasang: ketik butang Kongsi (petak dengan anak panah) dalam Safari, kemudian pilih “Tambah ke Skrin Utama”.",
     clearSearch: "Kosongkan carian", photoView: "Lihat foto {name} yang lebih besar", photoClose: "Tutup"

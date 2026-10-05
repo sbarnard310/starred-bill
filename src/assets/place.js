@@ -135,6 +135,7 @@ function applyStatic() {
   $("mapCanvas").setAttribute("aria-label", t("mapLabel"));
   $("crumbs").setAttribute("aria-label", t("crumbsAria"));
   $("currencySwitch").setAttribute("aria-label", t("currencyAria"));
+  $("currencyPick").setAttribute("aria-label", t("currencyAria"));
   $("crumbs").innerHTML = '<a href="' + withLang("/") + '">' + t("crumbHome") + "</a>" +
     PAGE.crumbs.map((c) => '<a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a>").join("") +
     '<span aria-current="page">' + esc(pick(PAGE, "name")) + "</span>";
@@ -156,6 +157,11 @@ function applyStatic() {
   }).join("");
   $("currencySwitch").innerHTML = currencyOptions.map((k) =>
     '<button type="button" data-currency="' + k + '" aria-pressed="' + (k === state.currency) + '">' + DATA.currencies[k].symbol + "</button>").join("");
+  // Phones: the same choice as a picker beside Dinner/Lunch, showing just the symbol; the list also gives each code.
+  const symOf = (k) => DATA.currencies[k].symbol.trim();
+  $("currencyPick").innerHTML = currencyOptions.map((k) =>
+    '<option value="' + k + '"' + (k === state.currency ? " selected" : "") + ">" + esc(symOf(k) === k ? k : symOf(k) + " " + k) + "</option>").join("");
+  $("curSym").textContent = symOf(state.currency);
   const converted = approx();
   $("rateLine").hidden = !converted;
   if (converted) {
@@ -634,6 +640,7 @@ document.addEventListener("click", (e) => {
 $("q").addEventListener("input", (e) => { state.query = e.target.value; renderLedger(); });
 wireSearchClear($("q"), () => { state.query = ""; renderLedger(); });
 $("sort").addEventListener("change", (e) => { state.sort = e.target.value; save(); renderLedger(); });
+$("currencyPick").addEventListener("change", (e) => { state.currency = e.target.value; save(); renderAll(); track("currency", { currency: state.currency }); });
 $("contactForm").addEventListener("submit", (e) => {
   e.preventDefault();
   const name = $("cName").value.trim(), email = $("cEmail").value.trim(), msg = $("cMsg").value.trim();

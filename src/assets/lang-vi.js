@@ -106,7 +106,7 @@
     footNote: "Giá và điểm đánh giá được kiểm tra vào tháng 10 năm 2026. Hãy xác nhận với nhà hàng trước khi đặt bàn.",
     rateLine: "Giá bằng {sym} chỉ là ước tính, theo tỷ giá ngày {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Giá được quy đổi sang {sym} theo tỷ giá ngày {date} nên chỉ là ước tính.",
-    currencyAria: "Hiển thị giá bằng", crumbsAria: "Vị trí của bạn",
+    currencyAria: "Hiển thị giá bằng", crumbsAria: "Vị trí của bạn", menuOpen: "Menu",
     installApp: "Cài ứng dụng",
     installTipIos: "Cách cài: chạm nút Chia sẻ (hình vuông có mũi tên) trong Safari, rồi chọn “Thêm vào MH chính”.",
     clearSearch: "Xóa tìm kiếm", photoView: "Xem ảnh lớn hơn của {name}", photoClose: "Đóng"

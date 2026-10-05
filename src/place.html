@@ -32,25 +32,31 @@
 </head>
 <body>
 {{icons}}
+<div class="masthead">
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/" id="brandLink"><svg><use href="#star"/></svg>The Starred Bill</a>
     <div class="header-actions">
-      <nav class="nav" aria-label="Sections">
-        <a href="#compare" data-i18n="navCompare">Compare</a>
-        <a href="#map" id="mapNav" hidden data-i18n="navMap">Map</a>
-        <a href="#stars" data-i18n="navStars">By stars</a>
-        <a href="#method" data-i18n="navMethod">Method</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-        <a href="/near-me/" class="nav-near"><svg aria-hidden="true"><use href="#locate"/></svg><span data-i18n="navNear">Near me</span></a>
-        <a href="/guides/" class="nav-guides" data-i18n="navGuides">Guides</a>
-      </nav>
-      <button type="button" class="account-btn" id="accountBtn"></button>
-      <button type="button" class="share-btn" id="shareBtn" aria-haspopup="true" aria-expanded="false" aria-controls="sharePanel"></button>
+      <div class="header-menu" id="headerMenu">
+        <nav class="nav" aria-label="Sections">
+          <a href="#compare" data-i18n="navCompare">Compare</a>
+          <a href="#map" id="mapNav" hidden data-i18n="navMap">Map</a>
+          <a href="#stars" data-i18n="navStars">By stars</a>
+          <a href="#method" data-i18n="navMethod">Method</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+          <a href="/near-me/" class="nav-near"><svg aria-hidden="true"><use href="#locate"/></svg><span data-i18n="navNear">Near me</span></a>
+          <a href="/guides/" class="nav-guides" data-i18n="navGuides">Guides</a>
+        </nav>
+        <button type="button" class="account-btn" id="accountBtn"></button>
+        <button type="button" class="share-btn" id="shareBtn" aria-haspopup="true" aria-expanded="false" aria-controls="sharePanel"></button>
+      </div>
+      <a href="/#search" class="search-link" id="searchLink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
       <a href="/#wishlist" class="wish-link" id="wishLink"><svg aria-hidden="true"><use href="#heart"/></svg><span data-i18n="wishlist">Wishlist</span> <span id="wishCount">0</span></a>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="headerMenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <div class="share-panel" id="sharePanel" hidden></div>
     </div>
   </div>
+</header>
   <div class="switchbar">
     <div class="wrap">
       <nav class="crumbs" id="crumbs" aria-label="Where you are">{{crumbs}}</nav>
@@ -61,7 +67,7 @@
       </div>
     </div>
   </div>
-</header>
+</div>
 
 <div class="hero" id="top">
   <div class="wrap">
@@ -112,6 +118,8 @@
         <div class="filter-bar">
           <div class="seg" id="mealFilter" role="group" aria-labelledby="mealLabel"></div>
           <span class="sr-only" id="mealLabel" data-i18n="fMeal"></span>
+          <!-- Phones: the currency switch sits here, as a small picker, instead of in the header. -->
+          <label class="cur-pick"><span class="cur-sym" id="curSym" aria-hidden="true"></span><select id="currencyPick"></select></label>
           <button type="button" class="filters-btn" id="filtersBtn" aria-expanded="false" aria-controls="fgroups">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
             <span data-i18n="filtersBtn"></span><span class="count" id="filtersCount"></span>

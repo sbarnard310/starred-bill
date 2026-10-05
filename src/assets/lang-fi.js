@@ -106,7 +106,7 @@
     footNote: "Hinnat ja arviot tarkistettu lokakuussa 2026. Varmista ravintolasta ennen varaamista.",
     rateLine: "Hinnat valuutassa {sym} ovat likimääräisiä, kurssi {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Hinnat on muunnettu valuuttaan {sym} päivän {date} kurssilla, joten ne ovat likimääräisiä.",
-    currencyAria: "Näytä hinnat valuutassa", crumbsAria: "Missä olet",
+    currencyAria: "Näytä hinnat valuutassa", crumbsAria: "Missä olet", menuOpen: "Valikko",
     installApp: "Asenna sovellus",
     installTipIos: "Asennus: napauta Safarin Jaa-painiketta (neliö, jossa on nuoli) ja valitse ”Lisää Koti-valikkoon”.",
     clearSearch: "Tyhjennä haku", photoView: "Näytä suurempi kuva: {name}", photoClose: "Sulje"

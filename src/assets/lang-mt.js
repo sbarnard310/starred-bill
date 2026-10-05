@@ -105,7 +105,7 @@
     footNote: "Il-prezzijiet u l-klassifiki ġew iċċekkjati f'Ottubru 2026. Iċċekkja mar-ristorant qabel tibbukkja.",
     rateLine: "Il-prezzijiet f'{sym} huma approssimattivi, bir-rata tal-{date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Il-prezzijiet huma maqluba f'{sym} bir-rata tal-{date}, allura huma approssimattivi.",
-    currencyAria: "Uri l-prezzijiet f'", crumbsAria: "Fejn int",
+    currencyAria: "Uri l-prezzijiet f'", crumbsAria: "Fejn int", menuOpen: "Menu",
     installApp: "Installa l-app",
     installTipIos: "Biex tinstallaha: agħfas il-buttuna Share (il-kwadru bil-vleġġa) f'Safari, imbagħad agħżel “Add to Home Screen”.",
     clearSearch: "Neħħi t-tfittxija", photoView: "Ara ritratt akbar ta' {name}", photoClose: "Agħlaq"

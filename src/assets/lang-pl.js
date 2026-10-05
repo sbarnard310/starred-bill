@@ -106,7 +106,7 @@
     footNote: "Ceny i oceny sprawdzone w październiku 2026. Przed rezerwacją potwierdź je w restauracji.",
     rateLine: "Ceny w {sym} są przybliżone, po kursie z {date}: {sym}1 = {home}{rate}.",
     rateLineMixed: "Ceny przeliczono na {sym} po kursie z {date}, więc są przybliżone.",
-    currencyAria: "Pokaż ceny w", crumbsAria: "Gdzie jesteś",
+    currencyAria: "Pokaż ceny w", crumbsAria: "Gdzie jesteś", menuOpen: "Menu",
     installApp: "Zainstaluj aplikację",
     installTipIos: "Aby zainstalować: dotknij przycisku Udostępnij (kwadrat ze strzałką) w Safari i wybierz „Do ekranu początkowego”.",
     clearSearch: "Wyczyść wyszukiwanie", photoView: "Zobacz większe zdjęcie: {name}", photoClose: "Zamknij"

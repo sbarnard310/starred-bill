@@ -103,7 +103,7 @@
     footNote: "Kainos ir įvertinimai patikrinti 2026 m. spalį. Prieš rezervuodami pasitikslinkite restorane.",
     rateLine: "Kainos {sym} yra apytikslės, pagal {date} kursą: {sym}1 = {home}{rate}.",
     rateLineMixed: "Kainos perskaičiuotos į {sym} pagal {date} kursą, todėl yra apytikslės.",
-    currencyAria: "Rodyti kainas", crumbsAria: "Kur esate",
+    currencyAria: "Rodyti kainas", crumbsAria: "Kur esate", menuOpen: "Meniu",
     installApp: "Įdiegti programėlę",
     installTipIos: "Kaip įdiegti: „Safari“ bakstelėkite mygtuką „Bendrinti“ (kvadratas su rodykle) ir pasirinkite „Pridėti prie pradžios ekrano“.",
     clearSearch: "Išvalyti paiešką", photoView: "Didesnė nuotrauka: {name}", photoClose: "Uždaryti"

@@ -1,0 +1,16 @@
+{
+  "name": "aKin",
+  "city": "toronto",
+  "address": "51 Colborne St., Toronto, M5E 1E3",
+  "stars": 1,
+  "cuisine": "Asian",
+  "rating": 4.8,
+  "reviews": 292,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.akintoronto.com/",
+  "lat": 43.6490955,
+  "lng": -79.3747233,
+  "placeId": "ChIJVVx7BwDL1IkRWAatxtx5fPY"
+}

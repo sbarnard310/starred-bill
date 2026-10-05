@@ -1,0 +1,16 @@
+{
+  "name": "Okeya Kyujiro",
+  "city": "vancouver",
+  "address": "1038 Mainland St., Vancouver, V6B 2T4",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 339,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://okeya.ca/",
+  "lat": 49.2752472,
+  "lng": -123.1214293,
+  "placeId": "ChIJ51q_vUZzhlQRCCFO2VqvuQ4"
+}

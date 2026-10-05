@@ -1,0 +1,18 @@
+{
+  "name": "Sushi Masuda",
+  "city": "vancouver",
+  "address": "1066 W. Hastings St., Vancouver, V6E 3X2",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 69,
+  "dinnerType": "menu",
+  "dinner": 320,
+  "dinnerNote": "Omakase",
+  "sourceType": "site",
+  "source": "https://www.sushimasuda.com/",
+  "website": "https://www.sushimasuda.com/",
+  "lat": 49.2876672,
+  "lng": -123.1191909,
+  "placeId": "ChIJsX0QBDBxhlQRiAP9i2t_vv8"
+}

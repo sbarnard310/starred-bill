@@ -1,0 +1,21 @@
+{
+  "name": "Narval",
+  "city": "quebec",
+  "area": "Rimouski, Québec",
+  "areaFr": "Rimouski, Québec",
+  "address": "144-A avenue de la Cathédrale, Rimouski, G5L 5H8",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 394,
+  "dinnerType": "menu",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu, 9 courses (7 courses $110)",
+  "dinnerNoteFr": "Menu dégustation en 9 services (7 services 110 $)",
+  "sourceType": "press",
+  "source": "https://www.restoquebec.ca/resto/restaurant-narval-rimouski/15358/en/",
+  "website": "https://restaurantnarval.ca",
+  "lat": 48.450805,
+  "lng": -68.5269536,
+  "placeId": "ChIJCxbsKPrZlUwRwmTIY-mNbW8"
+}

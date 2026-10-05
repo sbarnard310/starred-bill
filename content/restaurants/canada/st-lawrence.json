@@ -1,0 +1,19 @@
+{
+  "name": "St. Lawrence",
+  "city": "vancouver",
+  "address": "269 Powell St., Vancouver, V6A 1G3",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.6,
+  "reviews": 1538,
+  "dinnerType": "menu",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from $110)",
+  "wine": 75,
+  "sourceType": "site",
+  "source": "https://www.stlawrencerestaurant.com/",
+  "website": "https://www.stlawrencerestaurant.com/",
+  "lat": 49.2832679,
+  "lng": -123.0978836,
+  "placeId": "ChIJl9_waXFxhlQRbBq6lKwoHic"
+}

@@ -85,6 +85,11 @@
       "code": "THB",
       "symbol": "฿",
       "perUSD": 33.566256
+    },
+    {
+      "code": "CAD",
+      "symbol": "CA$",
+      "perUSD": 1.42482
     }
   ]
 }

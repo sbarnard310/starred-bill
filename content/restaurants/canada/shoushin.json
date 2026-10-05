@@ -1,0 +1,18 @@
+{
+  "name": "Shoushin",
+  "city": "toronto",
+  "address": "3328 Yonge St., Toronto, M4N 2M4",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 480,
+  "dinnerType": "menu",
+  "dinner": 420,
+  "dinnerNote": "Omakase, from",
+  "sourceType": "press",
+  "source": "https://tastingmenu.ca/restaurants/toronto/midtown/shoushin",
+  "website": "https://www.shoushin.ca/",
+  "lat": 43.731412,
+  "lng": -79.4040597,
+  "placeId": "ChIJR3xT8ukyK4gR9PQmJRx6ADY"
+}

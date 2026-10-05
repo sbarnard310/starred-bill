@@ -1,0 +1,18 @@
+{
+  "name": "Masayoshi",
+  "city": "vancouver",
+  "address": "4376 Fraser St., Vancouver, V5V 4G3",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 465,
+  "dinnerType": "menu",
+  "dinner": 260,
+  "dinnerNote": "Omakase (shorter menu $245)",
+  "sourceType": "site",
+  "source": "https://www.masayoshi.ca/",
+  "website": "https://www.masayoshi.ca/",
+  "lat": 49.2457708,
+  "lng": -123.0901179,
+  "placeId": "ChIJS7QNEQd0hlQRuTZ2xFQRWHk"
+}

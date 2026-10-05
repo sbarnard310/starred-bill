@@ -1,0 +1,20 @@
+{
+  "name": "ARVI",
+  "city": "quebec-city",
+  "address": "519 3e Avenue, Québec, G1L 2W4",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 432,
+  "dinnerType": "menu",
+  "dinner": 98,
+  "dinnerNote": "Tasting menu, 5 courses",
+  "dinnerNoteFr": "Menu dégustation en 5 services",
+  "wine": 60,
+  "sourceType": "press",
+  "source": "https://tastet.ca/en/reviews/arvi-a-gastronomic-experience-not-to-be-missed-in-limoilou/",
+  "website": "https://www.restaurantarvi.ca",
+  "lat": 46.8234567,
+  "lng": -71.2271181,
+  "placeId": "ChIJC74baqqXuEwRR6mr-LAZEPc"
+}

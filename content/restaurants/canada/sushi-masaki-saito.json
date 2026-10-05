@@ -1,0 +1,16 @@
+{
+  "name": "Sushi Masaki Saito",
+  "city": "toronto",
+  "address": "88 Avenue Rd., Toronto, M5R 2H2",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 205,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.masakisaito.ca/",
+  "lat": 43.6723007,
+  "lng": -79.395785,
+  "placeId": "ChIJ-1ow0r41K4gRWy6_o_lMCyk"
+}

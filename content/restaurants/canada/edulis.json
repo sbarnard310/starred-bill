@@ -1,0 +1,18 @@
+{
+  "name": "Edulis",
+  "city": "toronto",
+  "address": "169 Niagara St., Toronto, M5V 1C9",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.6,
+  "reviews": 570,
+  "dinnerType": "menu",
+  "dinner": 240,
+  "dinnerNote": "Tasting menu, prepaid",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/edulis",
+  "website": "https://www.edulisrestaurant.com/",
+  "lat": 43.6419055,
+  "lng": -79.4063364,
+  "placeId": "ChIJFeOAJx41K4gROrzCzqa777M"
+}

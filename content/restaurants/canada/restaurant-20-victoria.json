@@ -1,0 +1,16 @@
+{
+  "name": "Restaurant 20 Victoria",
+  "city": "toronto",
+  "address": "20 Victoria St., Unit 100, Toronto, M5C 2N8",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.5,
+  "reviews": 381,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.exploretock.com/restaurant20victoria",
+  "lat": 43.6498653,
+  "lng": -79.3769956,
+  "placeId": "ChIJJYukdjfL1IkRmO6n1JfjfKU"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Tanière³",
+  "city": "quebec-city",
+  "address": "7 rue du Don-de-Dieu, Québec, G1K 3Z6",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 863,
+  "dinnerType": "menu",
+  "dinner": 300,
+  "dinnerNote": "Tasting menu, $300–$320 (wine pairings from $120)",
+  "dinnerNoteFr": "Menu dégustation, 300 à 320 $ (accords mets-vins dès 120 $)",
+  "wine": 120,
+  "sourceType": "press",
+  "source": "https://www.taniere3.com/faq",
+  "website": "https://www.taniere3.com",
+  "lat": 46.8135735,
+  "lng": -71.2022076,
+  "placeId": "ChIJ_Xs0crubuEwRmjgxCj6TwY4"
+}

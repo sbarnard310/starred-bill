@@ -1,0 +1,18 @@
+{
+  "name": "AnnaLena",
+  "city": "vancouver",
+  "address": "1809 W. 1st Ave., Vancouver, V6J 5B8",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 1765,
+  "dinnerType": "menu",
+  "dinner": 178,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.annalena.ca/",
+  "website": "https://www.annalena.ca/",
+  "lat": 49.2708003,
+  "lng": -123.1468282,
+  "placeId": "ChIJJ_oZQcpzhlQRYmMyGpKp7PA"
+}

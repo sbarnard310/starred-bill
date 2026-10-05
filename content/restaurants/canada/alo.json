@@ -1,0 +1,18 @@
+{
+  "name": "Alo",
+  "city": "toronto",
+  "address": "3rd Floor, 163 Spadina Ave., Toronto, M5V 2L6",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 2205,
+  "dinnerType": "menu",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu, 10 courses (6 courses $185)",
+  "sourceType": "press",
+  "source": "https://travellingfoodie.net/alo-restaurant-toronto/",
+  "website": "https://alorestaurant.com/",
+  "lat": 43.6485043,
+  "lng": -79.3959736,
+  "placeId": "ChIJryijc9s0K4gRG9aU7SDTXdA"
+}

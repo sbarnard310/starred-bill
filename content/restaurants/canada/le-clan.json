@@ -1,0 +1,21 @@
+{
+  "name": "Le Clan",
+  "city": "quebec-city",
+  "address": "44 rue des Jardins, Québec, G1R 3Z1",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-05",
+  "rating": 4.8,
+  "reviews": 2144,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://restaurantleclan.com/",
+  "lat": 46.811818,
+  "lng": -71.2074279,
+  "placeId": "ChIJA0DuLo-VuEwROC_CqXiojpI"
+}

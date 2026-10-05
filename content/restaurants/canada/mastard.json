@@ -1,0 +1,17 @@
+{
+  "name": "Mastard",
+  "city": "montreal",
+  "address": "1879 rue Bélanger, Montréal, H2G 1B6",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 783,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://restaurantmastard.com/",
+  "lat": 45.5471083,
+  "lng": -73.602868,
+  "placeId": "ChIJpUJKRhIZyUwRI58nhwYTWf0"
+}

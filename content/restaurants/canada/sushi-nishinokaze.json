@@ -1,0 +1,23 @@
+{
+  "name": "Sushi Nishinokaze",
+  "city": "montreal",
+  "address": "5400 boulevard Saint-Laurent, Montréal, H2T 1S1",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-05",
+  "rating": 4.9,
+  "reviews": 118,
+  "dinnerType": "menu",
+  "dinner": 414,
+  "dinnerNote": "Omakase, about 21 courses, including tax and service",
+  "dinnerNoteFr": "Omakase d'environ 21 services, taxes et service compris",
+  "sourceType": "press",
+  "source": "https://cultmtl.com/2025/03/sushi-nishinokaze-introduces-a-new-echelon-of-refinement-to-montreal-dining/",
+  "website": "https://sushinishinokaze.com/",
+  "lat": 45.525185,
+  "lng": -73.5976652,
+  "placeId": "ChIJoQvfJgAZyUwRkA7agWDfjYU"
+}

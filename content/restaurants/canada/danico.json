@@ -1,0 +1,16 @@
+{
+  "name": "DaNico",
+  "city": "toronto",
+  "address": "440 College St., Toronto, M5T 1T3",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.6,
+  "reviews": 530,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.danicotoronto.com/",
+  "lat": 43.6566586,
+  "lng": -79.4075777,
+  "placeId": "ChIJLxOGU8s1K4gRgdxAIsLtxB8"
+}

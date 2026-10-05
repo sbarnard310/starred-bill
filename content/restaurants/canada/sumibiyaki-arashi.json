@@ -1,0 +1,16 @@
+{
+  "name": "Sumibiyaki Arashi",
+  "city": "vancouver",
+  "address": "363 E. Broadway, Vancouver, V5T 1W5",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 141,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://sumibiyakiarashi.com/",
+  "lat": 49.2631398,
+  "lng": -123.0972223,
+  "placeId": "ChIJHT2qdw9xhlQRgfZgfKBAeq0"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Jérôme Ferrer - Europea",
+  "city": "montreal",
+  "address": "1065 rue de la Montagne, Montréal, H3G 0B9",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 2698,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://jeromeferrer.ca",
+  "lat": 45.4966021,
+  "lng": -73.5719172,
+  "placeId": "ChIJqcPWD0IayUwRqDoraLS_lIo"
+}

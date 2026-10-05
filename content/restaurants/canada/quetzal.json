@@ -1,0 +1,16 @@
+{
+  "name": "Quetzal",
+  "city": "toronto",
+  "address": "419 College St., Toronto, M5T 1T1",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "rating": 4.6,
+  "reviews": 1724,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.quetzaltoronto.com/",
+  "lat": 43.6565748,
+  "lng": -79.4067462,
+  "placeId": "ChIJz7oN7gU1K4gRtjOP6_CCSiU"
+}

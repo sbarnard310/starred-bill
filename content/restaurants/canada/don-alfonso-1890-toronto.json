@@ -1,0 +1,16 @@
+{
+  "name": "Don Alfonso 1890",
+  "city": "toronto",
+  "address": "The Westin Harbour Castle, 1 Harbour Sq., Toronto, M5J 1A6",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.5,
+  "reviews": 1746,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.donalfonsotoronto.com/",
+  "lat": 43.64071,
+  "lng": -79.37647,
+  "placeId": "ChIJzUm3X2TL1IkRDkPiZYlOC7U"
+}

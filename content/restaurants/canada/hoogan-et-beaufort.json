@@ -1,0 +1,21 @@
+{
+  "name": "Hoogan et Beaufort",
+  "city": "montreal",
+  "address": "4095 rue Molson, Montréal, H1Y 3L1",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteFr": "Obtient sa première étoile",
+  "changeDate": "2026-05",
+  "rating": 4.6,
+  "reviews": 1416,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.hooganetbeaufort.com/",
+  "lat": 45.5420842,
+  "lng": -73.562878,
+  "placeId": "ChIJLWsVh-4byUwR8JlDKIYRZvY"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "montreal",
+  "type": "city",
+  "parent": "quebec",
+  "name": "Montréal",
+  "nameFr": "Montréal",
+  "inSentenceFr": "à Montréal",
+  "intro": "Prices are in Canadian dollars (CA$), with a switch to see them in pounds, euros or US dollars, before sales tax and the tip (or the service charge some restaurants add). Prices checked October 2026.",
+  "introFr": "Les prix sont en dollars canadiens (CA$), avec un bouton pour les afficher en livres, en euros ou en dollars américains, avant les taxes et le pourboire (ou les frais de service que certains restaurants ajoutent). Prix vérifiés en octobre 2026."
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant Pearl Morissette",
+  "city": "ontario",
+  "area": "Lincoln, Ontario",
+  "address": "3953 Jordan Rd., Lincoln, L0R 1S0",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 914,
+  "dinnerType": "menu",
+  "dinner": 240,
+  "dinnerNote": "Dining room tasting menu (chef's table $360), plus 18% service",
+  "sourceType": "press",
+  "source": "https://travellingfoodie.net/restaurant-pearl-morissette-canada-best-new-restaurant/",
+  "website": "https://restaurantpearlmorissette.com/",
+  "lat": 43.1562434,
+  "lng": -79.3562157,
+  "placeId": "ChIJJYQ6w5VS04kRT_2C9D_qyno"
+}

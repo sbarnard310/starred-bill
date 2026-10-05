@@ -1,0 +1,17 @@
+{
+  "name": "Légende",
+  "city": "quebec-city",
+  "address": "255 rue Saint-Paul, Québec, G1K 3W5",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 1560,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "sourceType": "none",
+  "website": "https://www.restaurantlegende.com",
+  "lat": 46.8170936,
+  "lng": -71.210159,
+  "placeId": "ChIJ82-3c-CVuEwROS-6hFk_0CA"
+}

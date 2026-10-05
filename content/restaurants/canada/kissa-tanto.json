@@ -1,0 +1,16 @@
+{
+  "name": "Kissa Tanto",
+  "city": "vancouver",
+  "address": "263 E. Pender St., Vancouver, V6A 1T8",
+  "stars": 1,
+  "cuisine": "Fusion",
+  "rating": 4.5,
+  "reviews": 1774,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kissatanto.com/",
+  "lat": 49.2805255,
+  "lng": -123.0980763,
+  "placeId": "ChIJD8oBSnBxhlQRaX3X1supJ0g"
+}

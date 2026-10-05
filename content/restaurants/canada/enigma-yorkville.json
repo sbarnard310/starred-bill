@@ -1,0 +1,16 @@
+{
+  "name": "Enigma Yorkville",
+  "city": "toronto",
+  "address": "23 Saint Thomas St., Toronto, M5S 3E7",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.4,
+  "reviews": 470,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.enigmayorkville.com/",
+  "lat": 43.6692078,
+  "lng": -79.3908739,
+  "placeId": "ChIJubw9yF01K4gRQyRiKs5j7yE"
+}

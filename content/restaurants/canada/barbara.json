@@ -1,0 +1,16 @@
+{
+  "name": "Barbara",
+  "city": "vancouver",
+  "address": "305 E. Pender St., Vancouver, V6A 0J3",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 325,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://barbararestaurant.com/",
+  "lat": 49.2804672,
+  "lng": -123.0969955,
+  "placeId": "ChIJnTHDDsVxhlQRhCLfo0jYjkA"
+}

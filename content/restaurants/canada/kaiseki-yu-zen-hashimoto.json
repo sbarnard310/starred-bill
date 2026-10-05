@@ -1,0 +1,18 @@
+{
+  "name": "Kaiseki Yu-zen Hashimoto",
+  "city": "toronto",
+  "address": "6 Sakura Way, Toronto, M3C 1Z5",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 265,
+  "dinnerType": "menu",
+  "dinner": 400,
+  "dinnerNote": "Kaiseki menu",
+  "sourceType": "site",
+  "source": "https://www.kaiseki.ca/",
+  "website": "https://www.kaiseki.ca/",
+  "lat": 43.7263028,
+  "lng": -79.3341896,
+  "placeId": "ChIJO5qmpaDN1IkRBXUbqD48SOU"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "The Pine",
+  "city": "ontario",
+  "area": "Creemore, Ontario",
+  "address": "7535 County Rd. 9, Creemore, L0M 1G0",
+  "stars": 1,
+  "cuisine": "Chinese",
+  "rating": 4.9,
+  "reviews": 318,
+  "dinnerType": "menu",
+  "dinner": 245,
+  "dinnerNote": "A Story of Our Landscapes menu, 18–22 courses",
+  "sourceType": "press",
+  "source": "https://tastingmenu.ca/restaurants/toronto/creemore/the-pine",
+  "website": "https://www.thepinecreemore.ca",
+  "lat": 44.330893,
+  "lng": -80.105895,
+  "placeId": "ChIJy4dyoG97KogRGYpXlpA4Ip4"
+}

@@ -12,10 +12,10 @@ const starCountsOf = (list) => { const n = [0, 1, 2, 3].map((s) => list.filter((
 function applyStatic() {
   applyI18n();
   document.title = t("homeTitle");
-  $("homeQ").placeholder = t("homeSearchPh");
+  fitPlaceholder($("homeQ"), [t("homeSearchPh"), tHas("homeSearchPhShort")]);
   $("homeQ").setAttribute("aria-label", t("homeSearchLabel"));
   $("mapCanvas").setAttribute("aria-label", t("mapLabel"));
-  $("mapQ").placeholder = t("mapSearchPh");
+  fitPlaceholder($("mapQ"), [t("mapSearchPh"), tHas("mapSearchPhShort")]);
   $("mapQ").setAttribute("aria-label", t("mapSearchLabel"));
   if (DATA.worldTotal) document.querySelector('[data-i18n="mapHomeText"]').textContent = t("mapHomeWorldText", { n: DATA.worldTotal.toLocaleString("en-GB") });
 }

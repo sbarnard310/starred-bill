@@ -34,7 +34,7 @@ const I18N = {
     starCounts: "{3} three-star · {2} two-star · {1} one-star",
     compareTitle: "Every table, every price",
     compareText: "Switch between dinner and lunch below. Prices are for the tasting or set menu unless marked “per main” or “typical spend”, and the bars compare each menu with the most expensive on the list. Each price links to where it came from.",
-    searchPh: "Search by restaurant, cuisine or area", searchPhEx: "Search by restaurant, cuisine or area, e.g. “{ex}”",
+    searchPh: "Search by restaurant, cuisine or area", searchPhShort: "Restaurant, cuisine or area", searchPhEx: "Search by restaurant, cuisine or area, e.g. “{ex}”",
     searchLabel: "Search restaurants by name, cuisine or area",
     sortLabel: "Sort restaurants",
     sortPriceAsc: "Dinner: low to high", sortPriceDesc: "Dinner: high to low", sortStars: "Most stars first", sortRating: "Google rating: highest first", sortName: "Name A–Z",
@@ -146,7 +146,7 @@ const I18N = {
     wishRemoveShort: "Remove",
     infoCompare: "Compare prices in {place}",
     clearSearch: "Clear search", photoView: "View a larger photo of {name}", photoClose: "Close",
-    mapSearchPh: "Search the map: restaurant, city or country", mapSearchLabel: "Search the map for a restaurant, city or country",
+    mapSearchPh: "Search the map: restaurant, city or country", mapSearchPhShort: "Restaurant, city or country", homeSearchPhShort: "Restaurant, cuisine or city", mapSearchLabel: "Search the map for a restaurant, city or country",
     mapHomeWorldText: "All {n} Michelin-starred restaurants in the world. Filled pins have full price comparisons on this site; outlined pins link to the MICHELIN Guide until we add their prices. Zoom in to see individual restaurants.",
     infoNoPricesYet: "No prices on The Starred Bill yet", infoMichelin: "MICHELIN Guide", legendHollow: "Outlined = no prices yet",
     installApp: "Install app",
@@ -176,7 +176,7 @@ const I18N = {
     starCounts: "三星 {3} 家・二星 {2} 家・一星 {1} 家",
     compareTitle: "每張餐桌，每個價格",
     compareText: "可在下方切換晚餐與午餐。價格為品嚐或套餐價格，標示「每道主菜」或「人均消費」者除外；長條圖將各套餐與最貴者比較，每個價格都附有來源連結。",
-    searchPh: "搜尋餐廳、料理或地區", searchPhEx: "搜尋餐廳、料理或地區，例如「{ex}」",
+    searchPh: "搜尋餐廳、料理或地區", searchPhShort: "餐廳、料理或地區", searchPhEx: "搜尋餐廳、料理或地區，例如「{ex}」",
     searchLabel: "依名稱、料理或地區搜尋餐廳",
     sortLabel: "排序",
     sortPriceAsc: "晚餐：由低到高", sortPriceDesc: "晚餐：由高到低", sortStars: "星級由高到低", sortRating: "Google 評分由高到低", sortName: "依名稱排序",
@@ -291,7 +291,7 @@ const I18N = {
     installApp: "加到主畫面",
     installTipIos: "安裝方式：點選 Safari 的分享按鈕（方框加箭頭），再選擇「加入主畫面」。",
     clearSearch: "清除搜尋", photoView: "查看{name}的大圖", photoClose: "關閉",
-    mapSearchPh: "在地圖上搜尋餐廳、城市或國家", mapSearchLabel: "在地圖上搜尋餐廳、城市或國家"
+    mapSearchPh: "在地圖上搜尋餐廳、城市或國家", mapSearchPhShort: "餐廳、城市或國家", homeSearchPhShort: "餐廳、料理或城市", mapSearchLabel: "在地圖上搜尋餐廳、城市或國家"
   },
   fr: {
     destGuide: "Dans tout le Guide MICHELIN : {n}",
@@ -317,7 +317,7 @@ const I18N = {
     starCounts: "{3} trois étoiles · {2} deux étoiles · {1} une étoile",
     compareTitle: "Chaque table, chaque prix",
     compareText: "Passez du dîner au déjeuner ci-dessous. Les prix sont ceux du menu dégustation ou du menu, sauf mention « par plat » ou « dépense moyenne », et les barres comparent chaque menu au plus cher de la liste. Chaque prix renvoie à sa source.",
-    searchPh: "Chercher un restaurant, une cuisine ou un quartier", searchPhEx: "Chercher un restaurant, une cuisine ou un quartier, ex. « {ex} »",
+    searchPh: "Chercher un restaurant, une cuisine ou un quartier", searchPhShort: "Restaurant, cuisine ou quartier", searchPhEx: "Chercher un restaurant, une cuisine ou un quartier, ex. « {ex} »",
     searchLabel: "Chercher un restaurant par nom, cuisine ou quartier", sortLabel: "Trier les restaurants",
     sortPriceAsc: "Dîner : du moins cher au plus cher", sortPriceDesc: "Dîner : du plus cher au moins cher", sortStars: "Le plus d'étoiles d'abord", sortRating: "Note Google : la meilleure d'abord", sortName: "Nom de A à Z",
     fShow: "Afficher", fStars: "Étoiles Michelin", fCuisine: "Cuisine",
@@ -438,7 +438,7 @@ const I18N = {
     starCounts: "三星 {3} 間・二星 {2} 間・一星 {1} 間",
     compareTitle: "每張枱，每個價錢",
     compareText: "喺下面可以轉晚市或者午市。價錢係品嚐菜單或者套餐價，標明「每道主菜」或者「人均消費」嘅除外；長條會將每個套餐同最貴嗰個比較，每個價錢都有來源連結。",
-    searchPh: "搵餐廳、菜式或者地區", searchPhEx: "搵餐廳、菜式或者地區，例如「{ex}」",
+    searchPh: "搵餐廳、菜式或者地區", searchPhShort: "餐廳、菜式或地區", searchPhEx: "搵餐廳、菜式或者地區，例如「{ex}」",
     searchLabel: "用名、菜式或者地區搵餐廳", sortLabel: "排序",
     sortPriceAsc: "晚市：由平到貴", sortPriceDesc: "晚市：由貴到平", sortStars: "星數多嘅先", sortRating: "Google 評分高嘅先", sortName: "按名排序",
     fShow: "顯示", fStars: "米芝蓮星級", fCuisine: "菜式",
@@ -559,7 +559,7 @@ const I18N = {
     starCounts: "三つ星 {3}軒・二つ星 {2}軒・一つ星 {1}軒",
     compareTitle: "すべての店、すべての料金",
     compareText: "下でディナーとランチを切り替えられます。料金はテイスティングコースまたはコース料理の価格です（「1品あたり」「予算の目安」と記載のものを除く）。バーは各コースを一覧で最も高いコースと比べたもので、料金はそれぞれ情報源にリンクしています。",
-    searchPh: "店名・料理・エリアで検索", searchPhEx: "店名・料理・エリアで検索（例：{ex}）",
+    searchPh: "店名・料理・エリアで検索", searchPhShort: "店名・料理・エリア", searchPhEx: "店名・料理・エリアで検索（例：{ex}）",
     searchLabel: "店名・料理ジャンル・エリアでレストランを検索",
     sortLabel: "並べ替え",
     sortPriceAsc: "ディナー：安い順", sortPriceDesc: "ディナー：高い順", sortStars: "星の多い順", sortRating: "Google評価の高い順", sortName: "店名順",
@@ -670,7 +670,7 @@ const I18N = {
     wishRemoveShort: "削除",
     infoCompare: "{place}の料金を比較",
     clearSearch: "検索をクリア", photoView: "{name}の写真を拡大", photoClose: "閉じる",
-    mapSearchPh: "地図を検索：店名・都市・国", mapSearchLabel: "地図上でレストラン・都市・国を検索",
+    mapSearchPh: "地図を検索：店名・都市・国", mapSearchPhShort: "店名・都市・国", homeSearchPhShort: "店名・料理・都市", mapSearchLabel: "地図上でレストラン・都市・国を検索",
     mapHomeWorldText: "世界のミシュラン星付きレストラン全{n}軒。塗りつぶしのピンは当サイトで料金を比較できる店、白抜きのピンは料金を追加するまでミシュランガイドにリンクしています。拡大すると個々の店が表示されます。",
     infoNoPricesYet: "当サイトの料金はまだありません", infoMichelin: "ミシュランガイド", legendHollow: "白抜き＝料金未掲載",
     installApp: "アプリを追加",
@@ -700,7 +700,7 @@ const I18N = {
     starCounts: "{3} con tres estrellas · {2} con dos · {1} con una",
     compareTitle: "Cada mesa, cada precio",
     compareText: "Cambia entre cena y almuerzo aquí abajo. Los precios son del menú degustación o del menú cerrado, salvo los marcados “por plato principal” o “gasto habitual”, y las barras comparan cada menú con el más caro de la lista. Cada precio enlaza a su fuente.",
-    searchPh: "Busca un restaurante, una cocina o una zona", searchPhEx: "Busca un restaurante, una cocina o una zona, p. ej. “{ex}”",
+    searchPh: "Busca un restaurante, una cocina o una zona", searchPhShort: "Restaurante, cocina o zona", searchPhEx: "Busca un restaurante, una cocina o una zona, p. ej. “{ex}”",
     searchLabel: "Buscar restaurantes por nombre, cocina o zona",
     sortLabel: "Ordenar restaurantes",
     sortPriceAsc: "Cena: de menor a mayor precio", sortPriceDesc: "Cena: de mayor a menor precio", sortStars: "Más estrellas primero", sortRating: "Nota de Google: de mayor a menor", sortName: "Nombre de la A a la Z",
@@ -817,7 +817,7 @@ const I18N = {
     starCounts: "{3} med tre stjerner · {2} med to · {1} med én",
     compareTitle: "Hvert bord, hver pris",
     compareText: "Skift mellem middag og frokost nedenfor. Priserne gælder smagsmenuen eller den faste menu, medmindre der står “pr. hovedret” eller “typisk forbrug”, og søjlerne sammenligner hver menu med den dyreste på listen. Hver pris linker til, hvor den kommer fra.",
-    searchPh: "Søg på restaurant, køkken eller område", searchPhEx: "Søg på restaurant, køkken eller område, fx “{ex}”",
+    searchPh: "Søg på restaurant, køkken eller område", searchPhShort: "Restaurant, køkken eller område", searchPhEx: "Søg på restaurant, køkken eller område, fx “{ex}”",
     searchLabel: "Søg efter restauranter på navn, køkken eller område",
     sortLabel: "Sorter restauranter",
     sortPriceAsc: "Middag: lav til høj", sortPriceDesc: "Middag: høj til lav", sortStars: "Flest stjerner først", sortRating: "Google-bedømmelse: højest først", sortName: "Navn A–Å",
@@ -920,7 +920,7 @@ const I18N = {
     starCounts: "{3} med tre stjärnor · {2} med två · {1} med en",
     compareTitle: "Varje bord, varje pris",
     compareText: "Växla mellan middag och lunch nedan. Priserna gäller avsmakningsmenyn eller den fasta menyn, om det inte står ”per huvudrätt” eller ”typisk nota”, och staplarna jämför varje meny med den dyraste på listan. Varje pris länkar till var det kommer ifrån.",
-    searchPh: "Sök på restaurang, kök eller område", searchPhEx: "Sök på restaurang, kök eller område, t.ex. ”{ex}”",
+    searchPh: "Sök på restaurang, kök eller område", searchPhShort: "Restaurang, kök eller område", searchPhEx: "Sök på restaurang, kök eller område, t.ex. ”{ex}”",
     searchLabel: "Sök restauranger på namn, kök eller område",
     sortLabel: "Sortera restauranger",
     sortPriceAsc: "Middag: lägst först", sortPriceDesc: "Middag: högst först", sortStars: "Flest stjärnor först", sortRating: "Google-betyg: högst först", sortName: "Namn A–Ö",
@@ -1023,7 +1023,7 @@ const I18N = {
     starCounts: "{3} með þrjár stjörnur · {2} með tvær · {1} með eina",
     compareTitle: "Hvert borð, hvert verð",
     compareText: "Skiptu á milli kvöldverðar og hádegisverðar hér fyrir neðan. Verðin eiga við smakkseðil eða fastan seðil nema merkt sé „á aðalrétt“ eða „venjuleg eyðsla“, og súlurnar bera hvern seðil saman við þann dýrasta á listanum. Hvert verð tengist upprunanum.",
-    searchPh: "Leita eftir stað, matargerð eða svæði", searchPhEx: "Leita eftir stað, matargerð eða svæði, t.d. „{ex}“",
+    searchPh: "Leita eftir stað, matargerð eða svæði", searchPhShort: "Veitingastaður, matargerð eða svæði", searchPhEx: "Leita eftir stað, matargerð eða svæði, t.d. „{ex}“",
     searchLabel: "Leita að veitingastöðum eftir nafni, matargerð eða svæði",
     sortLabel: "Raða veitingastöðum",
     sortPriceAsc: "Kvöld: lægst fyrst", sortPriceDesc: "Kvöld: hæst fyrst", sortStars: "Flestar stjörnur fyrst", sortRating: "Google-einkunn: hæst fyrst", sortName: "Nafn A–Ö",
@@ -1126,7 +1126,7 @@ const I18N = {
     starCounts: "{3} amb tres estrelles · {2} amb dues · {1} amb una",
     compareTitle: "Cada taula, cada preu",
     compareText: "Canvia entre sopar i dinar a sota. Els preus són del menú degustació o del menú fix, tret que hi posi “per plat principal” o “despesa habitual”, i les barres comparen cada menú amb el més car de la llista. Cada preu enllaça a la seva font.",
-    searchPh: "Cerca per restaurant, cuina o zona", searchPhEx: "Cerca per restaurant, cuina o zona, p. ex. “{ex}”",
+    searchPh: "Cerca per restaurant, cuina o zona", searchPhShort: "Restaurant, cuina o zona", searchPhEx: "Cerca per restaurant, cuina o zona, p. ex. “{ex}”",
     searchLabel: "Cerca restaurants per nom, cuina o zona",
     sortLabel: "Ordena els restaurants",
     sortPriceAsc: "Sopar: de menys a més", sortPriceDesc: "Sopar: de més a menys", sortStars: "Més estrelles primer", sortRating: "Nota de Google: la més alta primer", sortName: "Nom A–Z",
@@ -1229,7 +1229,7 @@ const I18N = {
     starCounts: "สามดาว {3} ร้าน · สองดาว {2} ร้าน · หนึ่งดาว {1} ร้าน",
     compareTitle: "ทุกโต๊ะ ทุกราคา",
     compareText: "สลับระหว่างมื้อค่ำและมื้อกลางวันได้ด้านล่าง ราคาเป็นของเมนูชิมหรือเซ็ตเมนู เว้นแต่ระบุว่า “ต่อจานหลัก” หรือ “ค่าใช้จ่ายโดยทั่วไป” แถบแสดงการเทียบแต่ละเมนูกับเมนูที่แพงที่สุดในรายการ และทุกราคาลิงก์ไปยังแหล่งที่มา",
-    searchPh: "ค้นหาร้าน ประเภทอาหาร หรือย่าน", searchPhEx: "ค้นหาร้าน ประเภทอาหาร หรือย่าน เช่น “{ex}”",
+    searchPh: "ค้นหาร้าน ประเภทอาหาร หรือย่าน", searchPhShort: "ร้าน ประเภทอาหาร หรือย่าน", searchPhEx: "ค้นหาร้าน ประเภทอาหาร หรือย่าน เช่น “{ex}”",
     searchLabel: "ค้นหาร้านอาหารตามชื่อ ประเภทอาหาร หรือย่าน",
     sortLabel: "เรียงร้านอาหาร",
     sortPriceAsc: "มื้อค่ำ: ถูกไปแพง", sortPriceDesc: "มื้อค่ำ: แพงไปถูก", sortStars: "ดาวมากที่สุดก่อน", sortRating: "คะแนน Google: สูงสุดก่อน", sortName: "ชื่อ A–Z",
@@ -1340,7 +1340,7 @@ const I18N = {
     starCounts: "3스타 {3}곳 · 2스타 {2}곳 · 1스타 {1}곳",
     compareTitle: "모든 레스토랑, 모든 가격",
     compareText: "아래에서 디너와 런치를 바꿔 볼 수 있습니다. 가격은 테이스팅 코스 또는 세트 메뉴 기준입니다(‘요리당’이나 ‘평균 예산’으로 표시된 곳 제외). 막대는 각 코스를 목록에서 가장 비싼 코스와 비교한 것이며, 가격마다 출처 링크가 있습니다.",
-    searchPh: "레스토랑, 요리, 지역 검색", searchPhEx: "레스토랑, 요리, 지역 검색(예: {ex})",
+    searchPh: "레스토랑, 요리, 지역 검색", searchPhShort: "레스토랑, 요리, 지역", searchPhEx: "레스토랑, 요리, 지역 검색(예: {ex})",
     searchLabel: "이름, 요리, 지역으로 레스토랑 검색",
     sortLabel: "정렬",
     sortPriceAsc: "디너: 낮은 가격순", sortPriceDesc: "디너: 높은 가격순", sortStars: "별 많은 순", sortRating: "Google 평점순", sortName: "이름순",
@@ -1451,7 +1451,7 @@ const I18N = {
     wishRemoveShort: "삭제",
     infoCompare: "{place} 가격 비교",
     clearSearch: "검색 지우기", photoView: "{name} 사진 크게 보기", photoClose: "닫기",
-    mapSearchPh: "지도 검색: 레스토랑, 도시, 국가", mapSearchLabel: "지도에서 레스토랑, 도시, 국가 검색",
+    mapSearchPh: "지도 검색: 레스토랑, 도시, 국가", mapSearchPhShort: "레스토랑, 도시, 국가", homeSearchPhShort: "레스토랑, 요리, 도시", mapSearchLabel: "지도에서 레스토랑, 도시, 국가 검색",
     mapHomeWorldText: "전 세계 미쉐린 스타 레스토랑 {n}곳. 채워진 핀은 이 사이트에서 가격을 비교할 수 있는 곳이고, 빈 핀은 가격을 추가할 때까지 미쉐린 가이드로 연결됩니다. 확대하면 개별 레스토랑이 보입니다.",
     infoNoPricesYet: "아직 가격 정보 없음", infoMichelin: "미쉐린 가이드", legendHollow: "빈 핀 = 가격 미등록",
     installApp: "앱 추가",
@@ -1481,7 +1481,7 @@ const I18N = {
     starCounts: "{3} tre stelle · {2} due stelle · {1} una stella",
     compareTitle: "Ogni tavola, ogni prezzo",
     compareText: "Passa da cena a pranzo qui sotto. I prezzi sono quelli del menu degustazione o del menu fisso, salvo dove indicato “per piatto principale” o “spesa tipica”, e le barre confrontano ogni menu con il più caro della lista. Ogni prezzo rimanda alla sua fonte.",
-    searchPh: "Cerca un ristorante, una cucina o una zona", searchPhEx: "Cerca un ristorante, una cucina o una zona, ad es. “{ex}”",
+    searchPh: "Cerca un ristorante, una cucina o una zona", searchPhShort: "Ristorante, cucina o zona", searchPhEx: "Cerca un ristorante, una cucina o una zona, ad es. “{ex}”",
     searchLabel: "Cerca ristoranti per nome, cucina o zona",
     sortLabel: "Ordina i ristoranti",
     sortPriceAsc: "Cena: dal meno caro", sortPriceDesc: "Cena: dal più caro", sortStars: "Prima i più stellati", sortRating: "Voto Google: dal più alto", sortName: "Nome A–Z",
@@ -1805,6 +1805,24 @@ function applyI18n() {
   const tip = $("installTip");
   if (tip) tip.textContent = t("installTipIos");
 }
+// A search box's hint text: the longest of `texts` that fits the box, re-checked when the screen changes size,
+// so phones get a shorter hint instead of one cut off mid-word. tHas() skips wording a language doesn't have yet.
+const tHas = (key, vars) => (I18N[LANG] && I18N[LANG][key] != null) || (LANG === "yue" && I18N.zh[key] != null) || LANG === "en" ? t(key, vars) : null;
+const fitted = new Map();
+function fitPlaceholder(input, texts) {
+  texts = texts.filter(Boolean);
+  fitted.set(input, texts);
+  const cs = getComputedStyle(input);
+  const room = input.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 4;
+  if (room <= 0) { input.placeholder = texts[0]; return; }
+  const ctx = (fitPlaceholder.ctx = fitPlaceholder.ctx || document.createElement("canvas").getContext("2d"));
+  ctx.font = cs.fontStyle + " " + cs.fontWeight + " " + cs.fontSize + " " + cs.fontFamily;
+  input.placeholder = texts.find((s) => ctx.measureText(s).width <= room) || texts[texts.length - 1];
+}
+let fitTimer = 0;
+window.addEventListener("resize", () => { clearTimeout(fitTimer); fitTimer = setTimeout(() => fitted.forEach((texts, input) => fitPlaceholder(input, texts)), 150); });
+// Fonts arriving late change the widths, so check again once they're in.
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => fitted.forEach((texts, input) => fitPlaceholder(input, texts)));
 // The × inside each search box: shows once something is typed, and clears it in one tap.
 function wireSearchClear(input, onChange) {
   const btn = input.parentElement.querySelector(".search-clear");

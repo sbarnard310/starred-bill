@@ -124,7 +124,7 @@ function applyStatic() {
     if (own) document.querySelector('[data-i18n="' + key + '"]').textContent = own;
   });
   const ex = pick(PAGE, "searchEx");
-  $("q").placeholder = ex ? t("searchPhEx", { ex }) : t("searchPh");
+  fitPlaceholder($("q"), [ex ? t("searchPhEx", { ex }) : null, t("searchPh"), tHas("searchPhShort")]);
   $("q").setAttribute("aria-label", t("searchLabel"));
   $("sort").setAttribute("aria-label", t("sortLabel"));
   $("ledger").setAttribute("aria-label", t("tableLabel"));

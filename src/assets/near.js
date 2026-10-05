@@ -283,6 +283,7 @@ function focusRow(r) {
 // ---------- Start ----------
 function renderStatic() {
   applyI18n();
+  fitPlaceholder($("placeQ"), ["Type a town, city or postcode", "Town, city or postcode", "Town or postcode"]);
   renderWishCount();
   $("destLink").href = withLang("/") + "#destinations";
 }

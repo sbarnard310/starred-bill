@@ -332,6 +332,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .share-btn span { display: none; }
   /* The wishlist shows its heart and count only, so the header fits one row with the Near me and Guides pills. */
   .wish-link span[data-i18n] { display: none; }
+  /* The homepage map's star buttons, tightened so all four fit on one row. */
+  #mapStars button { padding-inline: 9px; gap: 4px; }
   .header-actions { gap: 6px; }
   .share-btn, .account-btn, .wish-link { padding-inline: 10px; }
   .nav a.nav-guides { border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); border-radius: 999px; padding: 6px 10px; color: var(--band-ink); }

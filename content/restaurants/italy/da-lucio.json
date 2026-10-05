@@ -19,5 +19,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Jacopo Ticchi",
+  "chefSource": "site"
 }

@@ -24,5 +24,7 @@
   "lat": 35.65684,
   "lng": 139.732286,
   "placeId": "ChIJ_QGYGmmLGGAR-YlgCpayN5w",
-  "michelinId": "1196642"
+  "michelinId": "1196642",
+  "chef": "Shogo Yokota",
+  "chefSource": "site"
 }

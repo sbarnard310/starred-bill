@@ -29,5 +29,7 @@
     "vegetarian",
     "gluten-free",
     "kosher"
-  ]
+  ],
+  "chef": "Charles-Antoine Jouxtel",
+  "chefSource": "site"
 }

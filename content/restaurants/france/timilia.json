@@ -30,5 +30,7 @@
   "lat": 49.1149433,
   "lng": 6.1829023,
   "placeId": "ChIJF1W77bfdlEcRywrzf8IRAhY",
-  "michelinId": "1214783"
+  "michelinId": "1214783",
+  "chef": "Olivier Parise",
+  "chefSource": "site"
 }

@@ -31,5 +31,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Li Chi Wai",
+  "chefSource": "site"
 }

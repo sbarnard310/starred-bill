@@ -26,5 +26,7 @@
   "michelinId": "1206270",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "chef": "James Moore",
+  "chefSource": "site"
 }

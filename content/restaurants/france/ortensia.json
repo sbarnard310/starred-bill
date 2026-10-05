@@ -30,5 +30,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Terumitsu Saito",
+  "chefSource": "site"
 }

@@ -19,5 +19,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Massimo Bottura",
+  "chefSource": "site"
 }

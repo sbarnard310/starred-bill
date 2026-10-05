@@ -30,5 +30,7 @@
     "gluten-free",
     "halal",
     "kosher"
-  ]
+  ],
+  "chef": "Valentino Cassanelli",
+  "chefSource": "site"
 }

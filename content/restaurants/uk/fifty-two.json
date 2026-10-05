@@ -31,5 +31,7 @@
     "vegetarian",
     "vegan",
     "halal"
-  ]
+  ],
+  "chef": "Adam Degg",
+  "chefSource": "site"
 }

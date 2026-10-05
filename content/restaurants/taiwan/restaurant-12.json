@@ -33,5 +33,7 @@
   "lat": 25.1353141,
   "lng": 121.5470616,
   "placeId": "ChIJxbIpQwCtQjQRpaVXsC6mWxM",
-  "michelinId": "1244468"
+  "michelinId": "1244468",
+  "chef": "Jonatan Motos Ferran",
+  "chefSource": "site"
 }

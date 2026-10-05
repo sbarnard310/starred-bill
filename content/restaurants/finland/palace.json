@@ -1,0 +1,16 @@
+{
+  "name": "Palace",
+  "city": "helsinki",
+  "address": "Eteläranta 10, 00130, Helsinki",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 365,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://palacerestaurant.fi/",
+  "lat": 60.1653036,
+  "lng": 24.9523857,
+  "placeId": "ChIJpdIjrMgLkkYRxba2xc1Dy5w"
+}

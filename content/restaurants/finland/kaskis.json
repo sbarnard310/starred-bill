@@ -1,0 +1,17 @@
+{
+  "name": "Kaskis",
+  "city": "finland",
+  "area": "Turku",
+  "address": "Kaskenkatu 6A, 20700, Turku",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 806,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kaskis.fi",
+  "lat": 60.4467293,
+  "lng": 22.2724407,
+  "placeId": "ChIJQZaTtfx2jEYRWtEVeMZa6DA"
+}

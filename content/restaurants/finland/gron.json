@@ -1,0 +1,16 @@
+{
+  "name": "Grön",
+  "city": "helsinki",
+  "address": "Albertinkatu 36, 00180, Helsinki",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 570,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantgron.com/",
+  "lat": 60.1646073,
+  "lng": 24.9326985,
+  "placeId": "ChIJ00j2lMoLkkYRnvJPB2_P81I"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Olo",
+  "city": "helsinki",
+  "address": "Pohjoisesplanadi 5, 00170, Helsinki",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 693,
+  "dinnerType": "menu",
+  "dinner": 266,
+  "dinnerNote": "Tasting menu (other menus from €49)",
+  "sourceType": "site",
+  "source": "https://olo-ravintola.fi/menu-olo/",
+  "website": "https://www.olo-ravintola.fi/",
+  "lat": 60.1680792,
+  "lng": 24.9548241,
+  "placeId": "ChIJcbPkLMkLkkYRFeWoki1-0vk"
+}

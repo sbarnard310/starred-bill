@@ -1,0 +1,16 @@
+{
+  "name": "Boreal",
+  "city": "helsinki",
+  "address": "Uudenmaankatu 9, 00120, Helsinki",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 89,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.borealhki.fi/",
+  "lat": 60.164988,
+  "lng": 24.9420568,
+  "placeId": "ChIJV85-83kLkkYR2Lw6xICKIq4"
+}

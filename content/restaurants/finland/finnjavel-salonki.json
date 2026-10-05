@@ -1,0 +1,18 @@
+{
+  "name": "Finnjävel Salonki",
+  "city": "helsinki",
+  "address": "Ainonkatu 3, 00100, Helsinki",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 900,
+  "dinnerType": "menu",
+  "dinner": 138,
+  "dinnerNote": "Tasting menu (other menus from €97)",
+  "sourceType": "site",
+  "source": "https://finnjavel.fi/salonki/",
+  "website": "https://www.finnjavel.fi/salonki/",
+  "lat": 60.1719135,
+  "lng": 24.9314505,
+  "placeId": "ChIJO6MCR88LkkYRLkqzBvXqrnk"
+}

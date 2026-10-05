@@ -1,0 +1,17 @@
+{
+  "name": "VÅR",
+  "city": "finland",
+  "area": "Porvoo",
+  "address": "Papinkatu 17, 06100, Porvoo",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 134,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantvar.fi/",
+  "lat": 60.396319,
+  "lng": 25.6640296,
+  "placeId": "ChIJVS18IWz1kUYRtcmhg7IeuMg"
+}

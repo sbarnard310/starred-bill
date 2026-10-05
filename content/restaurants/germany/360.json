@@ -1,0 +1,19 @@
+{
+  "name": "360°",
+  "city": "hesse",
+  "area": "Limburg an der Lahn",
+  "address": "Bahnhofsplatz 1a, 65549, Limburg an der Lahn",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 380,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €62)",
+  "sourceType": "site",
+  "source": "https://www.restaurant360grad.de/downloads/Karte_Dinner_360Grad_20260904.pdf",
+  "website": "https://www.restaurant360grad.de/",
+  "lat": 50.3844391,
+  "lng": 8.0614395,
+  "placeId": "ChIJm04tVd_MvUcRhCv4LzXsVDQ"
+}

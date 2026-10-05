@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant Kunz",
+  "city": "saarland",
+  "area": "Sankt Wendel",
+  "address": "Kirchstraße 22, 66606, Sankt Wendel",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.5,
+  "reviews": 255,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-kunz.de",
+  "lat": 49.4956618,
+  "lng": 7.1124796,
+  "placeId": "ChIJhyoWbxKVlUcRjE-l4COdEuY"
+}

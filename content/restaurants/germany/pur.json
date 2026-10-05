@@ -1,0 +1,17 @@
+{
+  "name": "PUR",
+  "city": "bavaria",
+  "area": "Berchtesgaden",
+  "address": "Hintereck 1, 83471, Berchtesgaden",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 88,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kempinski.com/de/kempinski-hotel-berchtesgaden/restaurants-bars/gourmet-restaurant-pur",
+  "lat": 47.6340765,
+  "lng": 13.0468265,
+  "placeId": "ChIJ393iCWrrdkcRR35wkhV1o-s"
+}

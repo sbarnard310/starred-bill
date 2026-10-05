@@ -1,0 +1,18 @@
+{
+  "name": "Loumi",
+  "city": "berlin",
+  "address": "Ritterstraße 2, 10969, Berlin",
+  "stars": 1,
+  "cuisine": "International",
+  "rating": 4.8,
+  "reviews": 223,
+  "dinnerType": "menu",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "site",
+  "source": "https://www.loumi-dining.com/loumi-dining",
+  "website": "https://www.loumi-dining.com/loumi-dining",
+  "lat": 52.500686,
+  "lng": 13.4133674,
+  "placeId": "ChIJ5WgX8MtPqEcR0R9_l12Zl6U"
+}

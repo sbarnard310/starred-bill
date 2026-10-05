@@ -1,0 +1,17 @@
+{
+  "name": "Kettner's Kamota",
+  "city": "north-rhine-westphalia",
+  "area": "Essen",
+  "address": "Hufergasse 23, 45239, Essen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 303,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kettnerskamota.de/",
+  "lat": 51.3889835,
+  "lng": 7.0014943,
+  "placeId": "ChIJQTh6LSHFuEcRZszCqCKla9Q"
+}

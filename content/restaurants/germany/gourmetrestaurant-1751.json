@@ -1,0 +1,17 @@
+{
+  "name": "Gourmetrestaurant \"1751\"",
+  "city": "mecklenburg-west-pomerania",
+  "area": "Schwerin",
+  "address": "Schusterstraße 15, 19055, Schwerin",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 66,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.weinhaus-uhle.de/restaurant",
+  "lat": 53.6279892,
+  "lng": 11.4137669,
+  "placeId": "ChIJGeAVUx3brUcRemx3UHUpoKY"
+}

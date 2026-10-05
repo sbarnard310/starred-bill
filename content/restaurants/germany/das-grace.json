@@ -1,0 +1,19 @@
+{
+  "name": "Das Grace",
+  "city": "schleswig-holstein",
+  "area": "Flensburg",
+  "address": "Fördepromenade 30, 24944, Flensburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 47,
+  "dinnerType": "menu",
+  "dinner": 79,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.dasjames.com/genusswelt/james-farmhouse/traditionelles-entenmenue",
+  "website": "https://www.dasjames.com/",
+  "lat": 54.8119855,
+  "lng": 9.4556862,
+  "placeId": "ChIJtdXE83JDs0cRJqlctEaKg-Q"
+}

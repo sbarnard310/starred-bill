@@ -1,0 +1,16 @@
+{
+  "name": "LISBETH",
+  "city": "hamburg",
+  "address": "Deichstraße 32, 20459, Hamburg",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.7,
+  "reviews": 207,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.cantinepapalisbeth.de/",
+  "lat": 53.5462616,
+  "lng": 9.9873002,
+  "placeId": "ChIJsQxsc52PsUcRVfwbnEzLRN8"
+}

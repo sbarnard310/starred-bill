@@ -1,0 +1,16 @@
+{
+  "name": "Koer",
+  "city": "hamburg",
+  "address": "Maria-Louisen-Straße 3, 22301, Hamburg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 238,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.koer-hamburg.de/",
+  "lat": 53.5839548,
+  "lng": 9.9960681,
+  "placeId": "ChIJd2W2jDiJsUcRPqtt7EKYKhU"
+}

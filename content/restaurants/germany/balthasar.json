@@ -1,0 +1,17 @@
+{
+  "name": "Balthasar",
+  "city": "north-rhine-westphalia",
+  "area": "Paderborn",
+  "address": "Warburger Straße 28, 33098, Paderborn",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 386,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-balthasar.de/",
+  "lat": 51.7152518,
+  "lng": 8.7638033,
+  "placeId": "ChIJq8ZRF8BMukcRrUvaKrIt-Hg"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Winzerhof Stahl",
+  "city": "bavaria",
+  "area": "Simmershofen",
+  "address": "Lange Dorfstraße 21, 97215, Simmershofen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 281,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.winzerhof-stahl.de/",
+  "lat": 49.5232104,
+  "lng": 10.1045712,
+  "placeId": "ChIJ1ZLxp--AmEcR6V4mHzETBq8"
+}

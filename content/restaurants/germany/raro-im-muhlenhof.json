@@ -1,0 +1,20 @@
+{
+  "name": "Raro im Mühlenhof",
+  "city": "baden-wurttemberg",
+  "area": "Schriesheim",
+  "address": "Talstraße 188, 69198, Schriesheim",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.9,
+  "reviews": 98,
+  "dinnerType": "menu",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu (other menus from €155)",
+  "sourceType": "site",
+  "source": "https://www.raro-restaurant.de/faq",
+  "wine": 99,
+  "website": "https://www.raro-restaurant.de",
+  "lat": 49.4762099,
+  "lng": 8.7080193,
+  "placeId": "ChIJh4EhWGzDl0cRE6fQ3fTUAUc"
+}

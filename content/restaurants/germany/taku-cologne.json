@@ -1,0 +1,16 @@
+{
+  "name": "taku",
+  "city": "cologne",
+  "address": "Trankgasse 5, 50667, Cologne",
+  "stars": 1,
+  "cuisine": "Asian",
+  "rating": 4.1,
+  "reviews": 588,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.taku.de",
+  "lat": 50.9417798,
+  "lng": 6.9563194,
+  "placeId": "ChIJMci7QqUlv0cRwtkkg_Y7M0k"
+}

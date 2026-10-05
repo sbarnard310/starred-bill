@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant auf Schloss Filseck",
+  "city": "baden-wurttemberg",
+  "area": "Uhingen",
+  "address": "Filseck 1, 73066, Uhingen",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.7,
+  "reviews": 214,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-auf-schloss-filseck.de/",
+  "lat": 48.7008984,
+  "lng": 9.6043769,
+  "placeId": "ChIJ_3rNeRWjmUcRm369hz4LYik"
+}

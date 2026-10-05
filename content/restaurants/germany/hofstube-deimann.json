@@ -1,0 +1,17 @@
+{
+  "name": "Hofstube Deimann",
+  "city": "north-rhine-westphalia",
+  "area": "Schmallenberg",
+  "address": "Alte Handelsstraße 5, 57392, Schmallenberg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 36,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.deimann.de/hofstube",
+  "lat": 51.1595842,
+  "lng": 8.3407164,
+  "placeId": "ChIJs6o21iHxu0cRioxgjZMPSBE"
+}

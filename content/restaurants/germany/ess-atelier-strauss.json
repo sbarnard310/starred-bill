@@ -1,0 +1,17 @@
+{
+  "name": "ESS ATELIER STRAUSS",
+  "city": "bavaria",
+  "area": "Oberstdorf",
+  "address": "Kirchstraße 1, 87561, Oberstdorf",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 29,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.loewen-strauss.de/",
+  "lat": 47.4085094,
+  "lng": 10.2783328,
+  "placeId": "ChIJq2ejALGbnEcRbdYl9fv-Y3k"
+}

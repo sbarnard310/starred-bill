@@ -1,0 +1,16 @@
+{
+  "name": "Restaurant Haerlin",
+  "city": "hamburg",
+  "address": "Neuer Jungfernstieg 9, 20354, Hamburg",
+  "stars": 3,
+  "cuisine": "Creative French",
+  "rating": 4.8,
+  "reviews": 305,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-haerlin.de/de/",
+  "lat": 53.5554424,
+  "lng": 9.9914638,
+  "placeId": "ChIJXetoHRmPsUcRO9lASc7qR3U"
+}

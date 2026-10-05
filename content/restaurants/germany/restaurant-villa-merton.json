@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant Villa Merton",
+  "city": "frankfurt-on-the-main",
+  "address": "Am Leonhardsbrunn 12, 60487, Frankfurt on the Main",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 454,
+  "dinnerType": "menu",
+  "dinner": 289,
+  "dinnerNote": "Tasting menu (other menus from €53)",
+  "sourceType": "site",
+  "source": "https://restaurant-villa-merton.de/",
+  "wine": 65,
+  "website": "https://restaurant-villa-merton.de/",
+  "lat": 50.1272242,
+  "lng": 8.6534434,
+  "placeId": "ChIJS_nNOkcJvUcRxeHxHqMNAvo"
+}

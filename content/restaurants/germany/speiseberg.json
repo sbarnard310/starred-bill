@@ -1,0 +1,17 @@
+{
+  "name": "Speiseberg",
+  "city": "saxony-anhalt",
+  "area": "Halle (saale)",
+  "address": "Kröllwitzer Straße 45, 06120, Halle (saale)",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 127,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.speiseberg.com",
+  "lat": 51.5049411,
+  "lng": 11.9514969,
+  "placeId": "ChIJlwmjsv17pkcRNYLnggpN29M"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "KOMU",
+  "city": "munich",
+  "address": "Hackenstraße 4, 80331, Munich",
+  "stars": 2,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://komu-restaurant.de/",
+  "lat": 48.1360691,
+  "lng": 11.5704952,
+  "placeId": "ChIJkXU5mvV1nkcR9I3UFP_m3rs"
+}

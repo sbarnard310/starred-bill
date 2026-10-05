@@ -1,0 +1,17 @@
+{
+  "name": "Le Pavillon",
+  "city": "baden-wurttemberg",
+  "area": "Bad Peterstal",
+  "address": "Dollenberg 3, 77740, Bad Peterstal",
+  "stars": 2,
+  "cuisine": "Classic French",
+  "rating": 4.8,
+  "reviews": 56,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.dollenberg.de",
+  "lat": 48.4574092,
+  "lng": 8.2507048,
+  "placeId": "ChIJneuWnnMtl0cRKFA3eCffEIE"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Société",
+  "city": "cologne",
+  "address": "Kyffhäuser Straße 53, 50674, Cologne",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 457,
+  "dinnerType": "menu",
+  "dinner": 350,
+  "dinnerNote": "Tasting menu (other menus from €49)",
+  "sourceType": "site",
+  "source": "https://restaurant-lasociete.de/",
+  "wine": 85,
+  "website": "https://www.restaurant-lasociete.de/",
+  "lat": 50.9285296,
+  "lng": 6.9372169,
+  "placeId": "ChIJ3zbD7_4kv0cRPAo60PqMe_4"
+}

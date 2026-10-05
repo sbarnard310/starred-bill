@@ -1,0 +1,19 @@
+{
+  "name": "Zur Tant",
+  "city": "cologne",
+  "address": "Rheinbergstraße 49, 51143, Cologne",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 330,
+  "dinnerType": "menu",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu (other menus from €141)",
+  "sourceType": "site",
+  "source": "https://www.zurtant.de/speisekarten/A_la_carte_und_Degustationsmenue.pdf",
+  "wine": 189,
+  "website": "https://www.zurtant.de/",
+  "lat": 50.851828,
+  "lng": 7.0083312,
+  "placeId": "ChIJj4DNeg4hv0cRTN5roqs6aS0"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Yunico",
+  "city": "north-rhine-westphalia",
+  "area": "Bonn",
+  "address": "Am Bonner Bogen 1, 53227, Bonn",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 214,
+  "dinnerType": "menu",
+  "dinner": 189,
+  "dinnerNote": "Tasting menu (other menus from €75)",
+  "sourceType": "site",
+  "source": "https://www.kamehabonn.de/fileadmin/kameha/Ressources/Speisekarten/Yunico/Yunico_Speisenkarte.pdf",
+  "website": "https://www.kamehabonn.de/yunico/",
+  "lat": 50.718668,
+  "lng": 7.1525078,
+  "placeId": "ChIJOQ8y5KzmvkcRy8A_Sn4dJa8"
+}

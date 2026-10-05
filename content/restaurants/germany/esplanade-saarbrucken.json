@@ -1,0 +1,17 @@
+{
+  "name": "ESPLANADE",
+  "city": "saarland",
+  "area": "Saarbrücken",
+  "address": "Nauwieserstraße 5, 66111, Saarbrücken",
+  "stars": 2,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.6,
+  "reviews": 365,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.esplanade-sb.de/",
+  "lat": 49.2349097,
+  "lng": 6.9996028,
+  "placeId": "ChIJnZKDYae2lUcRrzqk8mu6gwY"
+}

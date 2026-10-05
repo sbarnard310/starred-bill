@@ -1,0 +1,20 @@
+{
+  "name": "L'étable",
+  "city": "hesse",
+  "area": "Bad Hersfeld",
+  "address": "Linggplatz 11, 36251, Bad Hersfeld",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.3,
+  "reviews": 43,
+  "dinnerType": "menu",
+  "dinner": 115,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "sourceType": "site",
+  "source": "https://www.dersternhersfeld.de/kulinarik#letable",
+  "wine": 149,
+  "website": "https://www.dersternhersfeld.de/kulinarik#letable",
+  "lat": 50.8675674,
+  "lng": 9.7063686,
+  "placeId": "ChIJi0Z4o5lUo0cRsHfghHdCdTE"
+}

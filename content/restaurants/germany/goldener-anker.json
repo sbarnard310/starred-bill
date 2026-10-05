@@ -1,0 +1,20 @@
+{
+  "name": "Goldener Anker",
+  "city": "north-rhine-westphalia",
+  "area": "Dorsten",
+  "address": "Lippetor 4, 46282, Dorsten",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 565,
+  "dinnerType": "menu",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu (other menus from €125)",
+  "sourceType": "site",
+  "source": "https://www.bjoern-freitag.de/menu",
+  "wine": 139,
+  "website": "https://www.bjoern-freitag.de",
+  "lat": 51.6629515,
+  "lng": 6.9652779,
+  "placeId": "ChIJBfhCHh7yuEcRXYd4LgjkcPs"
+}

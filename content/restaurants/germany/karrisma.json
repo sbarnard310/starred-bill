@@ -1,0 +1,19 @@
+{
+  "name": "KARRisma",
+  "city": "bavaria",
+  "area": "Lindau",
+  "address": "Alter Schulplatz 1, 88131, Lindau",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 311,
+  "dinnerType": "menu",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "sourceType": "site",
+  "source": "https://karrisma-lindau.de/",
+  "website": "https://karrisma-lindau.de/",
+  "lat": 47.5474074,
+  "lng": 9.6854321,
+  "placeId": "ChIJH4Q859UNm0cRps5IM02vUQc"
+}

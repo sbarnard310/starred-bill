@@ -1,0 +1,19 @@
+{
+  "name": "Alt Wyk",
+  "city": "schleswig-holstein",
+  "area": "Wyk",
+  "address": "Große Straße 4, 25938, Wyk",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 199,
+  "dinnerType": "menu",
+  "dinner": 172,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "sourceType": "site",
+  "source": "https://www.alt-wyk.de/menue",
+  "website": "https://www.alt-wyk.de/",
+  "lat": 54.690147,
+  "lng": 8.5709235,
+  "placeId": "ChIJYVsUHgjttEcRGcrsEGU2zl8"
+}

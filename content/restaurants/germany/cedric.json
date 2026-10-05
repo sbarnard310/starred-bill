@@ -1,0 +1,17 @@
+{
+  "name": "Cédric",
+  "city": "baden-wurttemberg",
+  "area": "Weinstadt",
+  "address": "Marktstraße 39, 71384, Weinstadt",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 131,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-cedric.de/",
+  "lat": 48.8044011,
+  "lng": 9.3885778,
+  "placeId": "ChIJu3eZJ1LHmUcRekNAi1llUQI"
+}

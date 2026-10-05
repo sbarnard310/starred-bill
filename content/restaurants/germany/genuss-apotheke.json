@@ -1,0 +1,17 @@
+{
+  "name": "Genuss-Apotheke",
+  "city": "baden-wurttemberg",
+  "area": "Bad Säckingen",
+  "address": "Schönaugasse 11, 79713, Bad Säckingen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 217,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.genuss-apotheke.de",
+  "lat": 47.551733,
+  "lng": 7.9480494,
+  "placeId": "ChIJ17cMZDxJkEcRrG2_1MJjRyg"
+}

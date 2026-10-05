@@ -1,0 +1,20 @@
+{
+  "name": "Kesselhaus",
+  "city": "lower-saxony",
+  "area": "Osnabrück",
+  "address": "Neulandstraße 12, 49084, Osnabrück",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.4,
+  "reviews": 145,
+  "dinnerType": "menu",
+  "dinner": 215,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://www.kesselhaus-os.de/menue/",
+  "wine": 120,
+  "website": "https://www.kesselhaus-os.de/",
+  "lat": 52.2653824,
+  "lng": 8.0642438,
+  "placeId": "ChIJCZJHc3jluUcRk2A24X6nDUM"
+}

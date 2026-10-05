@@ -1,0 +1,17 @@
+{
+  "name": "La Vallée Verte",
+  "city": "hesse",
+  "area": "Herleshausen",
+  "address": "Hohenhaus 1, 37293, Herleshausen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 11,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://hohenhaus.de/restaurants/gourmetrestaurant-la-vallee-verte/",
+  "lat": 51.0413568,
+  "lng": 10.0796044,
+  "placeId": "ChIJj3vXrXmjpEcRmPNciSqVEEA"
+}

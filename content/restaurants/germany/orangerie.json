@@ -1,0 +1,17 @@
+{
+  "name": "Orangerie",
+  "city": "schleswig-holstein",
+  "area": "Timmendorfer Strand",
+  "address": "Strandallee 73, 23669, Timmendorfer Strand",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.8,
+  "reviews": 92,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.orangerie-timmendorfer-strand.de/",
+  "lat": 54.0007295,
+  "lng": 10.7798458,
+  "placeId": "ChIJ60bVvVN0skcRuBTpw2h8DjU"
+}

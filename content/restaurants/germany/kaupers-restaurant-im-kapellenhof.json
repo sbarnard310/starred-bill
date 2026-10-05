@@ -1,0 +1,17 @@
+{
+  "name": "Kaupers Restaurant im Kapellenhof",
+  "city": "rhineland-palatinate",
+  "area": "Selzen",
+  "address": "Kapellenstraße 18a, 55278, Selzen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 128,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kaupers-kapellenhof.de/",
+  "lat": 49.8639732,
+  "lng": 8.2551053,
+  "placeId": "ChIJWcYZKZSPvUcRfwBI6g-tusY"
+}

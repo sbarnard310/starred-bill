@@ -1,0 +1,17 @@
+{
+  "name": "Das Marktrestaurant",
+  "city": "bavaria",
+  "area": "Mittenwald",
+  "address": "Dekan-Karl-Platz 21, 82481, Mittenwald",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.8,
+  "reviews": 287,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.das-marktrestaurant.de/",
+  "lat": 47.4390442,
+  "lng": 11.2598384,
+  "placeId": "ChIJsZPD3agOnUcRqOy9i36atHg"
+}

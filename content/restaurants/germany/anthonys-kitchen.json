@@ -1,0 +1,20 @@
+{
+  "name": "Anthony's Kitchen",
+  "city": "north-rhine-westphalia",
+  "area": "Meerbusch",
+  "address": "Moerser Straße 81, 40667, Meerbusch",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.9,
+  "reviews": 361,
+  "dinnerType": "menu",
+  "dinner": 224,
+  "dinnerNote": "Tasting menu (other menus from €148)",
+  "sourceType": "site",
+  "source": "https://anthonys.kitchen/pages/menu",
+  "wine": 98,
+  "website": "https://www.anthonys.kitchen/",
+  "lat": 51.257149,
+  "lng": 6.6827217,
+  "placeId": "ChIJfagfN5S2uEcRaK2QbgbRwdY"
+}

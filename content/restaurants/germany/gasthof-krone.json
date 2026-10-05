@@ -1,0 +1,17 @@
+{
+  "name": "Gasthof Krone",
+  "city": "baden-wurttemberg",
+  "area": "Waldenbuch",
+  "address": "Nürtinger Straße 14, 71111, Waldenbuch",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 335,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://krone-waldenbuch.de/startseite.html",
+  "lat": 48.6382832,
+  "lng": 9.1323653,
+  "placeId": "ChIJV0a3Jw3EmUcRO2K6FZEpoT8"
+}

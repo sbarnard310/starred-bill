@@ -1,0 +1,16 @@
+{
+  "name": "Lorenz Adlon Esszimmer",
+  "city": "berlin",
+  "address": "Unter den Linden 77, 10117, Berlin",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 226,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lorenzadlon-esszimmer.de/",
+  "lat": 52.5159333,
+  "lng": 13.380011,
+  "placeId": "ChIJHQQciMZRqEcRHxZ6uyymozw"
+}

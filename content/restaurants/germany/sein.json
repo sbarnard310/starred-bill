@@ -1,0 +1,17 @@
+{
+  "name": "sein",
+  "city": "baden-wurttemberg",
+  "area": "Karlsruhe",
+  "address": "Scheffelstraße 57, 76135, Karlsruhe",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 310,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-sein.de",
+  "lat": 49.006215,
+  "lng": 8.3818129,
+  "placeId": "ChIJDZ9NaPYGl0cRA_wLc-_2PMo"
+}

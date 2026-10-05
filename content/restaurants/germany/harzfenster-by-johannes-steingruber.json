@@ -1,0 +1,19 @@
+{
+  "name": "Harzfenster by Johannes Steingrüber",
+  "city": "lower-saxony",
+  "area": "Seesen",
+  "address": "Bulkstraße 1, 38723, Seesen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 195,
+  "dinnerType": "menu",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "sourceType": "site",
+  "source": "https://restaurant-harzfenster.de/menu/",
+  "website": "https://restaurant-harzfenster.de",
+  "lat": 51.8960099,
+  "lng": 10.1917506,
+  "placeId": "ChIJ_ZewdCk3pUcRKBUOTi9tsCY"
+}

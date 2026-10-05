@@ -1,0 +1,17 @@
+{
+  "name": "Jean",
+  "city": "hesse",
+  "area": "Eltville am Rhein",
+  "address": "Wilhelmstraße 13, 65343, Eltville am Rhein",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.7,
+  "reviews": 136,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotel-frankenbach.de/",
+  "lat": 50.0273185,
+  "lng": 8.1215575,
+  "placeId": "ChIJnzSH5SuVvUcR8RELjSTj0Wk"
+}

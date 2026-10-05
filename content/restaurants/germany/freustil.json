@@ -1,0 +1,19 @@
+{
+  "name": "freustil",
+  "city": "mecklenburg-west-pomerania",
+  "area": "Ostseebad Binz",
+  "address": "Zeppelinstraße 8, 18609, Ostseebad Binz",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 690,
+  "dinnerType": "menu",
+  "dinner": 128,
+  "dinnerNote": "Tasting menu (other menus from €66)",
+  "sourceType": "site",
+  "source": "https://freustil.de/",
+  "website": "https://www.freustil.de/",
+  "lat": 54.4009946,
+  "lng": 13.611444,
+  "placeId": "ChIJ911kByE_q0cRzjl0NbJhAl0"
+}

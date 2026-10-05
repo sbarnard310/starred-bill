@@ -1,0 +1,17 @@
+{
+  "name": "Eatrenalin",
+  "city": "baden-wurttemberg",
+  "area": "Rust",
+  "address": "Roland-Mack-Ring 5, 77977, Rust",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1149,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.eatrenalin.de/",
+  "lat": 48.2617631,
+  "lng": 7.7377402,
+  "placeId": "ChIJy0j0zHs7kUcRJT-AhjzF7Sc"
+}

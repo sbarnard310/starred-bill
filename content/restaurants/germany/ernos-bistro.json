@@ -1,0 +1,16 @@
+{
+  "name": "Erno's Bistro",
+  "city": "frankfurt-on-the-main",
+  "address": "Liebigstraße 15, 60323, Frankfurt on the Main",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.7,
+  "reviews": 216,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ernosbistro.de/",
+  "lat": 50.1190432,
+  "lng": 8.6659109,
+  "placeId": "ChIJyXKvok0JvUcRfgsBJsylTeg"
+}

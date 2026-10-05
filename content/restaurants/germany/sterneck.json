@@ -1,0 +1,17 @@
+{
+  "name": "Sterneck",
+  "city": "lower-saxony",
+  "area": "Cuxhaven",
+  "address": "Cuxhavener Straße 86, 27476, Cuxhaven",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 66,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.badhotel-sternhagen.de/",
+  "lat": 53.886445,
+  "lng": 8.645506,
+  "placeId": "ChIJyZTy28EEtEcR4dRSe_3ZVT8"
+}

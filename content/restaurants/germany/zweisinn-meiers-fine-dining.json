@@ -1,0 +1,18 @@
+{
+  "name": "ZweiSinn Meiers | Fine Dining",
+  "city": "nuremberg",
+  "address": "Äußere Sulzbacher Straße 118, 90491, Nuremberg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 386,
+  "dinnerType": "menu",
+  "dinner": 400,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "site",
+  "source": "https://www.meierszweisinn.de/wp-content/uploads/2026/09/Silvester-2026.pdf",
+  "website": "https://www.meierszweisinn.de/",
+  "lat": 49.4641108,
+  "lng": 11.1184521,
+  "placeId": "ChIJrYtH3vRXn0cRDV9utARhu_8"
+}

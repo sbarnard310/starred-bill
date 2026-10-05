@@ -1,0 +1,16 @@
+{
+  "name": "Jae",
+  "city": "dusseldorf",
+  "address": "Keplerstraße 13, 40215, Düsseldorf",
+  "stars": 1,
+  "cuisine": "Fusion",
+  "rating": 4.8,
+  "reviews": 180,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://jae-restaurant.de/",
+  "lat": 51.2111461,
+  "lng": 6.7842633,
+  "placeId": "ChIJacO1QnvLuEcRohI6tLpwOGE"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Verbene",
+  "city": "rhineland-palatinate",
+  "area": "Koblenz",
+  "address": "Brunnenhof Königspfalz, 56068, Koblenz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 254,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-verbene.de/",
+  "lat": 50.3613819,
+  "lng": 7.5967303,
+  "placeId": "ChIJV1WV9rp8vkcR1O2bl_glXvc"
+}

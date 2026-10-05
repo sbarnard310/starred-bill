@@ -1,0 +1,20 @@
+{
+  "name": "Jante",
+  "city": "lower-saxony",
+  "area": "Hanover",
+  "address": "Marienstraße 116, 30171, Hanover",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 373,
+  "dinnerType": "menu",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://jante-restaurant.de/restaurant/",
+  "wine": 126,
+  "website": "https://www.jante-restaurant.de/",
+  "lat": 52.3702201,
+  "lng": 9.7607965,
+  "placeId": "ChIJQfsL304LsEcRhvMbiIkzdao"
+}

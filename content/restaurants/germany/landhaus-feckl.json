@@ -1,0 +1,17 @@
+{
+  "name": "Landhaus Feckl",
+  "city": "baden-wurttemberg",
+  "area": "Ehningen",
+  "address": "Keltenweg 1, 71139, Ehningen",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.7,
+  "reviews": 782,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.landhausfeckl.de/",
+  "lat": 48.661195,
+  "lng": 8.9547833,
+  "placeId": "ChIJIQdkODDgmUcRCbCuIT8r1_E"
+}

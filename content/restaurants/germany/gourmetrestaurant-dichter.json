@@ -1,0 +1,17 @@
+{
+  "name": "Gourmetrestaurant Dichter",
+  "city": "bavaria",
+  "area": "Rottach-Egern",
+  "address": "Aribostraße 19, 83700, Rottach-Egern",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 84,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.gourmetrestaurant-dichter.de/",
+  "lat": 47.6941309,
+  "lng": 11.7538484,
+  "placeId": "ChIJG13_PuuOnUcRtEGKr6oREpE"
+}

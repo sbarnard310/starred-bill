@@ -1,0 +1,19 @@
+{
+  "name": "Hirschen",
+  "city": "baden-wurttemberg",
+  "area": "Sulzburg",
+  "address": "Hauptstraße 69, 79295, Sulzburg",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 267,
+  "dinnerType": "menu",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.douce-steiner.de/dl/e92835059fbaf866847426900c1ed0d8/Mit-Kopf-und-Herz-KUECHE-12_23_Douce_Steiner.pdf?target=1",
+  "website": "https://www.douce-steiner.de",
+  "lat": 47.8404612,
+  "lng": 7.7088806,
+  "placeId": "ChIJK4e_vuAHkUcRSW8QqafGTSE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Cookies Cream",
+  "city": "berlin",
+  "address": "Behrenstraße 55, 10117, Berlin",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "rating": 4.7,
+  "reviews": 1477,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.cookiescream.com/",
+  "lat": 52.5163221,
+  "lng": 13.3880944,
+  "placeId": "ChIJV4_rtsRRqEcRIKoaNDZ0VnQ"
+}

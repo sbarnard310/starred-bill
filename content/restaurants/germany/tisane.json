@@ -1,0 +1,16 @@
+{
+  "name": "Tisane",
+  "city": "nuremberg",
+  "address": "Augustinerhof 1, 90403, Nuremberg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 126,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-tisane.de/",
+  "lat": 49.4540833,
+  "lng": 11.0758388,
+  "placeId": "ChIJ940zLexXn0cRopAltNMmwDo"
+}

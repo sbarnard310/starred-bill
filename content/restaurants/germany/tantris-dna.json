@@ -1,0 +1,16 @@
+{
+  "name": "Tantris DNA",
+  "city": "munich",
+  "address": "Johann-Fichte-Straße 7, 80805, Munich",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.7,
+  "reviews": 155,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://tantris.de/",
+  "lat": 48.1697555,
+  "lng": 11.5882597,
+  "placeId": "ChIJ3e2l_Fx1nkcRFcnwMcy9OO4"
+}

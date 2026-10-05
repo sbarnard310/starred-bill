@@ -1,0 +1,17 @@
+{
+  "name": "HOCHZWEI",
+  "city": "baden-wurttemberg",
+  "area": "Langenau",
+  "address": "Burghof 11, 89129, Langenau",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.4,
+  "reviews": 22,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://gasthof-zum-bad.de/restaurant/",
+  "lat": 48.500147,
+  "lng": 10.1241636,
+  "placeId": "ChIJsz_0IGJDmUcR1PxCXACWOis"
+}

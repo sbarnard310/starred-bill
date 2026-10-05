@@ -1,0 +1,17 @@
+{
+  "name": "Zur Post",
+  "city": "north-rhine-westphalia",
+  "area": "Odenthal",
+  "address": "Altenberger-Dom-Straße 23, 51519, Odenthal",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 524,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.zurpost.eu",
+  "lat": 51.0324091,
+  "lng": 7.1150119,
+  "placeId": "ChIJDX9nzOgpv0cRQ0whgrXtDJU"
+}

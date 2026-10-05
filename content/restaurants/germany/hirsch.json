@@ -1,0 +1,17 @@
+{
+  "name": "Hirsch",
+  "city": "baden-wurttemberg",
+  "area": "Sonnenbühl",
+  "address": "Im Dorf 12, 72820, Sonnenbühl",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.9,
+  "reviews": 32,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.romantikhotel-hirsch.de/de/",
+  "lat": 48.3505143,
+  "lng": 9.1942682,
+  "placeId": "ChIJY8kui8AfmkcRKHSMLiYoAZw"
+}

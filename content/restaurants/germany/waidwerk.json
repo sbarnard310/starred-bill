@@ -1,0 +1,16 @@
+{
+  "name": "Waidwerk",
+  "city": "nuremberg",
+  "address": "Winterstraße 15, 90431, Nuremberg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 95,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.waidwerk-restaurant.de/",
+  "lat": 49.4354114,
+  "lng": 11.0212737,
+  "placeId": "ChIJHRvJwApXn0cR5gQ9-cmqYh8"
+}

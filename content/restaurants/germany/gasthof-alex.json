@@ -1,0 +1,17 @@
+{
+  "name": "Gasthof Alex",
+  "city": "bavaria",
+  "area": "Weißenbrunn",
+  "address": "Gössersdorf 25, 96369, Weißenbrunn",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.7,
+  "reviews": 243,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.gasthofalex.de/",
+  "lat": 50.188066,
+  "lng": 11.4062317,
+  "placeId": "ChIJH-9sZ-R5oUcRg0MwRBeqABM"
+}

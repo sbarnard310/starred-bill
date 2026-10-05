@@ -1,0 +1,17 @@
+{
+  "name": "Söl'ring Hof",
+  "city": "schleswig-holstein",
+  "area": "Rantum",
+  "address": "Am Sandwall 1, 25980, Rantum",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 325,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.soelring-hof.de/",
+  "lat": 54.8536822,
+  "lng": 8.2887697,
+  "placeId": "ChIJuaITYqDgtEcReuFP9Veym8Y"
+}

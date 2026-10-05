@@ -1,0 +1,19 @@
+{
+  "name": "Der Zauberlehrling",
+  "city": "stuttgart",
+  "address": "Rosenstraße 38, 70182, Stuttgart",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 464,
+  "dinnerType": "menu",
+  "dinner": 182,
+  "dinnerNote": "Tasting menu (other menus from €175)",
+  "sourceType": "site",
+  "source": "https://www.zauberlehrling.de/Restaurant/Restaurant/Themenabend_Samstag/",
+  "wine": 189,
+  "website": "https://www.zauberlehrling.de/",
+  "lat": 48.7740472,
+  "lng": 9.1843065,
+  "placeId": "ChIJsycMBLXEmUcRk3baJ3n-vw0"
+}

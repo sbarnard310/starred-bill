@@ -1,0 +1,19 @@
+{
+  "name": "Chefs Atelier",
+  "city": "north-rhine-westphalia",
+  "area": "Essen",
+  "address": "Im Löwental 60A, 45239, Essen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 41,
+  "dinnerType": "menu",
+  "dinner": 199,
+  "dinnerNote": "Tasting menu (other menus from €149)",
+  "sourceType": "site",
+  "source": "https://www.chefsatelier.de/ca-menue.pdf",
+  "website": "https://www.chefsatelier.de",
+  "lat": 51.3836464,
+  "lng": 6.9957349,
+  "placeId": "ChIJRUf2aQDFuEcRd9usSE1Z5CE"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Zeik",
+  "city": "hamburg",
+  "address": "Sierichstraße 112, 22299, Hamburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 443,
+  "dinnerType": "menu",
+  "dinner": 149,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "site",
+  "source": "https://zeik.de/menue/",
+  "website": "https://zeik.de/",
+  "lat": 53.5889628,
+  "lng": 10.001535,
+  "placeId": "ChIJ4TtMXdCIsUcRAcmdiwyZVD0"
+}

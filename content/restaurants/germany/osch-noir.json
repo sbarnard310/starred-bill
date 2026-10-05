@@ -1,0 +1,19 @@
+{
+  "name": "Ösch Noir",
+  "city": "baden-wurttemberg",
+  "area": "Donaueschingen",
+  "address": "Golfplatz 1, 78166, Donaueschingen",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 69,
+  "dinnerType": "menu",
+  "dinner": 240,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.oeschberghof.com/restaurants-bars/oesch-noir",
+  "website": "https://www.oeschberghof.com/restaurants-bars/oesch-noir",
+  "lat": 47.9655184,
+  "lng": 8.5471151,
+  "placeId": "ChIJ6wEYtjebkEcRvy1btBPpHcE"
+}

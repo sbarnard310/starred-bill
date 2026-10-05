@@ -1,0 +1,17 @@
+{
+  "name": "Mühle",
+  "city": "baden-wurttemberg",
+  "area": "Schluchsee",
+  "address": "Unterer Mühlenweg 13, 79859, Schluchsee",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 727,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.muehle-schluchsee.de/",
+  "lat": 47.8209966,
+  "lng": 8.1899382,
+  "placeId": "ChIJQRbP-db1kEcRSd-eeLHLQN0"
+}

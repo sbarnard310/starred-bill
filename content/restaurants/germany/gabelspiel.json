@@ -1,0 +1,18 @@
+{
+  "name": "Gabelspiel",
+  "city": "munich",
+  "address": "Zehentbauernstraße 20, 81539, Munich",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 346,
+  "dinnerType": "menu",
+  "dinner": 189,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-gabelspiel.de/kulinarisches/",
+  "website": "https://www.restaurant-gabelspiel.de/",
+  "lat": 48.113638,
+  "lng": 11.5777451,
+  "placeId": "ChIJJwA5pRLfnUcR37q5yOMXZlA"
+}

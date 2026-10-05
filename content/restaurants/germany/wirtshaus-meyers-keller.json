@@ -1,0 +1,17 @@
+{
+  "name": "Wirtshaus Meyers Keller",
+  "city": "bavaria",
+  "area": "Nördlingen",
+  "address": "Marienhöhe 8, 86720, Nördlingen",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.8,
+  "reviews": 644,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://jockl-kaiser.de/",
+  "lat": 48.8413149,
+  "lng": 10.493869,
+  "placeId": "ChIJ0xE_APoomUcR1otajztXXU4"
+}

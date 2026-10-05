@@ -1,0 +1,19 @@
+{
+  "name": "Lafleur",
+  "city": "frankfurt-on-the-main",
+  "address": "Palmengartenstraße 11, 60325, Frankfurt on the Main",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 533,
+  "dinnerType": "menu",
+  "dinner": 325,
+  "dinnerNote": "Tasting menu (other menus from €310)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-lafleur.de/lafleur/",
+  "wine": 470,
+  "website": "https://www.restaurant-lafleur.de/",
+  "lat": 50.1214911,
+  "lng": 8.6565825,
+  "placeId": "ChIJQW5EY0UJvUcR09Vpe75ZD1s"
+}

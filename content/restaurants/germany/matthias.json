@@ -1,0 +1,16 @@
+{
+  "name": "Matthias",
+  "city": "berlin",
+  "address": "Kollwitzstraße 87, 10435, Berlin",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 140,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.matthiasrestaurant.com/",
+  "lat": 52.538311,
+  "lng": 13.4200023,
+  "placeId": "ChIJte69WIFPqEcRK-m9QqI74xE"
+}

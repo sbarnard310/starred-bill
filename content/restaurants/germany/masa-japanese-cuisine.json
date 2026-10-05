@@ -1,0 +1,23 @@
+{
+  "name": "Masa Japanese Cuisine",
+  "city": "frankfurt-on-the-main",
+  "address": "Hanauer Landstraße 131, 60314, Frankfurt on the Main",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.9,
+  "reviews": 229,
+  "dinnerType": "menu",
+  "dinner": 198,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "site",
+  "source": "https://masa-frankfurt.de/wp-content/uploads/2026/08/Menu_05.08.26.pdf",
+  "lunch": 115,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://masa-frankfurt.de",
+  "website": "https://masa-frankfurt.de",
+  "lat": 50.1119257,
+  "lng": 8.7129018,
+  "placeId": "ChIJE_1UJMsPvUcRRBx0yi9ATA8"
+}

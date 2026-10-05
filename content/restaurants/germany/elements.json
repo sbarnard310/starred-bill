@@ -1,0 +1,19 @@
+{
+  "name": "elements",
+  "city": "saxony",
+  "area": "Dresden",
+  "address": "Königsbrücker Straße 96, 01099, Dresden",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 650,
+  "dinnerType": "menu",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-elements.de/",
+  "website": "https://www.restaurant-elements.de/",
+  "lat": 51.0808169,
+  "lng": 13.7608648,
+  "placeId": "ChIJIVXumiDPCUcR4Bsn7EjbqMw"
+}

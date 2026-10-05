@@ -1,0 +1,19 @@
+{
+  "name": "Hannappel",
+  "city": "north-rhine-westphalia",
+  "area": "Essen",
+  "address": "Dahlhauser Straße 173, 45279, Essen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 439,
+  "dinnerType": "menu",
+  "dinner": 128,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://restaurant-hannappel.de/",
+  "website": "https://www.restaurant-hannappel.de/",
+  "lat": 51.4370622,
+  "lng": 7.1050518,
+  "placeId": "ChIJRz7bjsXduEcRQ419JozyvKs"
+}

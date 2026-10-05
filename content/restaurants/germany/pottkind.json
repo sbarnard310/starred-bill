@@ -1,0 +1,18 @@
+{
+  "name": "Pottkind",
+  "city": "cologne",
+  "address": "Darmstädter Straße 9, 50678, Cologne",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 325,
+  "dinnerType": "menu",
+  "dinner": 80,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurant-pottkind.de/deutsch",
+  "website": "https://www.restaurant-pottkind.de/",
+  "lat": 50.9193944,
+  "lng": 6.9609491,
+  "placeId": "ChIJ97jGdFUlv0cRweaWDO8SQg4"
+}

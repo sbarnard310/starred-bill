@@ -1,0 +1,17 @@
+{
+  "name": "Meisenheimer Hof",
+  "city": "rhineland-palatinate",
+  "area": "Meisenheim",
+  "address": "Obergasse 33, 55590, Meisenheim",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.7,
+  "reviews": 439,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.meisenheimer-hof.de/kulinarik",
+  "lat": 49.7073941,
+  "lng": 7.6704922,
+  "placeId": "ChIJRw5_RhkBlkcRq8f3iwOm-yI"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Ich weiß ein Haus am See",
+  "city": "mecklenburg-west-pomerania",
+  "area": "Krakow am See",
+  "address": "Paradiesweg 3, 18292, Krakow am See",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.8,
+  "reviews": 140,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hausamsee.de/",
+  "lat": 53.6685683,
+  "lng": 12.2984015,
+  "placeId": "ChIJ1Urd-doesEcRRtYEUogY1hA"
+}

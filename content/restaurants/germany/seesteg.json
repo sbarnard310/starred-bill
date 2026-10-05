@@ -1,0 +1,17 @@
+{
+  "name": "Seesteg",
+  "city": "lower-saxony",
+  "area": "Norderney",
+  "address": "Damenpfad 36a, 26548, Norderney",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 272,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://seesteg-norderney.de/",
+  "lat": 53.7075958,
+  "lng": 7.1385585,
+  "placeId": "ChIJdVN7v08FtkcROqcuWm_SFJg"
+}

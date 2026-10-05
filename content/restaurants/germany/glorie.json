@@ -1,0 +1,16 @@
+{
+  "name": "GLORIE",
+  "city": "hamburg",
+  "address": "Brandshofer Deich 68, 20539, Hamburg",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.5,
+  "reviews": 17,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.100200.kitchen/glorie-la-carte-im-100200",
+  "lat": 53.5374345,
+  "lng": 10.0285679,
+  "placeId": "ChIJ92tbAgCPsUcRIpqz8BySXp8"
+}

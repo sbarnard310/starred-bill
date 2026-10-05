@@ -1,0 +1,17 @@
+{
+  "name": "MiZAR",
+  "city": "bavaria",
+  "area": "Würzburg",
+  "address": "Katzengasse 7, 97082, Würzburg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 61,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-mizar.de/",
+  "lat": 49.7941767,
+  "lng": 9.9232488,
+  "placeId": "ChIJAQAE_TWQokcRW55rsP9IApE"
+}

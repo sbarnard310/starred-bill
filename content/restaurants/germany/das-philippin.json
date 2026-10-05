@@ -1,0 +1,17 @@
+{
+  "name": "Das Philippin",
+  "city": "baden-wurttemberg",
+  "area": "Rutesheim",
+  "address": "Seestraße 7, 71277, Rutesheim",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 309,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://das-philippin.de",
+  "lat": 48.8080978,
+  "lng": 8.9466663,
+  "placeId": "ChIJm1Ys-1Bil0cRrIgYNRmPQ6U"
+}

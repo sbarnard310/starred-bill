@@ -1,0 +1,19 @@
+{
+  "name": "Weinstock",
+  "city": "bavaria",
+  "area": "Volkach",
+  "address": "Hauptstraße 12, 97332, Volkach",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 33,
+  "dinnerType": "menu",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu (other menus from €49)",
+  "sourceType": "site",
+  "source": "https://www.schwane.de/",
+  "website": "https://www.schwane.de/",
+  "lat": 49.8649712,
+  "lng": 10.2267305,
+  "placeId": "ChIJq6pmb09gokcR_LLna21Yv8g"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Falconera",
+  "city": "baden-wurttemberg",
+  "area": "Öhningen",
+  "address": "Zum Mühlental 1, 78337, Öhningen",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.8,
+  "reviews": 257,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://falconera.de/",
+  "lat": 47.685155,
+  "lng": 8.8982028,
+  "placeId": "ChIJAw6kKBCJmkcRx59xgvFFWJ8"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Atelier",
+  "city": "munich",
+  "address": "Promenadeplatz 2, 80331, Munich",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 317,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.bayerischerhof.de/de/",
+  "lat": 48.140707,
+  "lng": 11.5737529,
+  "placeId": "ChIJP-53e_N1nkcRXMNihzXCH30"
+}

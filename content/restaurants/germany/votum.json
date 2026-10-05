@@ -1,0 +1,17 @@
+{
+  "name": "Votum",
+  "city": "lower-saxony",
+  "area": "Hanover",
+  "address": "Hannah-Arendt-Platz 1, 30159, Hanover",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 118,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://vo-tum.de/",
+  "lat": 52.3700102,
+  "lng": 9.7354833,
+  "placeId": "ChIJ3VwqInJ1sEcRHYzUFCjK6Yw"
+}

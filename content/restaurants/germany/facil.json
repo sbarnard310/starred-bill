@@ -1,0 +1,16 @@
+{
+  "name": "FACIL",
+  "city": "berlin",
+  "address": "Potsdamer Straße 3, 10785, Berlin",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 1276,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://facil.de/de/",
+  "lat": 52.5090625,
+  "lng": 13.3737404,
+  "placeId": "ChIJA-K5lEpQqEcRHGv7ScsVIXs"
+}

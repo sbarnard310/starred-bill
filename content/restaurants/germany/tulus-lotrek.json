@@ -1,0 +1,16 @@
+{
+  "name": "tulus lotrek",
+  "city": "berlin",
+  "address": "Fichtestraße 24, 10967, Berlin",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 651,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tuluslotrek.de/",
+  "lat": 52.4893627,
+  "lng": 13.4137112,
+  "placeId": "ChIJ95zYL89PqEcRlyKANk7ORQQ"
+}

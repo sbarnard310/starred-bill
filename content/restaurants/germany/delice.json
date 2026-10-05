@@ -1,0 +1,18 @@
+{
+  "name": "Délice",
+  "city": "stuttgart",
+  "address": "Hauptstätter Straße 61, 70178, Stuttgart",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 185,
+  "dinnerType": "menu",
+  "dinner": 77,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurant-delice.de/de/",
+  "website": "https://www.restaurant-delice.de/de/",
+  "lat": 48.7702819,
+  "lng": 9.1762495,
+  "placeId": "ChIJt5D3Q0zbmUcRddQaU3_57zo"
+}

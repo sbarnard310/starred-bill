@@ -1,0 +1,18 @@
+{
+  "name": "Hawara",
+  "city": "freiburg-im-breisgau",
+  "address": "Dreikönigstraße 8, 79102, Freiburg im Breisgau",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 514,
+  "dinnerType": "menu",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu (other menus from €65)",
+  "sourceType": "site",
+  "source": "https://www.hawara-restaurant.de/",
+  "website": "https://www.hawara-restaurant.de/",
+  "lat": 47.9893883,
+  "lng": 7.8569165,
+  "placeId": "ChIJOc6b2w8bkUcRGmscjdi5YS4"
+}

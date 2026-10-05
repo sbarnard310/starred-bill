@@ -1,0 +1,19 @@
+{
+  "name": "Borst",
+  "city": "rhineland-palatinate",
+  "area": "Maßweiler",
+  "address": "Luitpoldstraße 4, 66506, Maßweiler",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.8,
+  "reviews": 157,
+  "dinnerType": "menu",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €86)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-borst.de/küche",
+  "website": "https://www.restaurant-borst.de/",
+  "lat": 49.2710771,
+  "lng": 7.5277892,
+  "placeId": "ChIJd1EkOjt4lkcRVqx_-9COvt8"
+}

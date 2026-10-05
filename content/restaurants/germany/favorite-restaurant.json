@@ -1,0 +1,19 @@
+{
+  "name": "FAVORITE restaurant",
+  "city": "rhineland-palatinate",
+  "area": "Mainz",
+  "address": "Karl-Weiser-Straße 1, 55131, Mainz",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.4,
+  "reviews": 108,
+  "dinnerType": "menu",
+  "dinner": 275,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.favorite-mainz.de/en/genuss-kulinarik/sternerestaurant/",
+  "website": "https://favorite-mainz.de/",
+  "lat": 49.9899559,
+  "lng": 8.289494,
+  "placeId": "ChIJb_Vc1quXvUcRxGh8RrQT1zg"
+}

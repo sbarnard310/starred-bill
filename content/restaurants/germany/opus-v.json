@@ -1,0 +1,19 @@
+{
+  "name": "OPUS V",
+  "city": "baden-wurttemberg",
+  "area": "Mannheim",
+  "address": "O5, 9-12, 68161, Mannheim",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 414,
+  "dinnerType": "menu",
+  "dinner": 249,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "sourceType": "site",
+  "source": "https://info.engelhorn.com/gastronomie/opus-v/abendkarte/",
+  "website": "https://www.restaurant-opus-v.de/",
+  "lat": 49.4857999,
+  "lng": 8.4697743,
+  "placeId": "ChIJz6NQ1SPMl0cRoGDuwitU3cE"
+}

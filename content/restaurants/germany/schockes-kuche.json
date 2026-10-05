@@ -1,0 +1,17 @@
+{
+  "name": "Schockes Küche",
+  "city": "rhineland-palatinate",
+  "area": "Birkweiler",
+  "address": "Hauptstraße 21, 76831, Birkweiler",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 10,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://schockes-laurentiushof.de/",
+  "lat": 49.204023,
+  "lng": 8.0346581,
+  "placeId": "ChIJyaO2t1RalkcR3VeMTTvpfzU"
+}

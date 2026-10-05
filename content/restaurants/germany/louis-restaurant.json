@@ -1,0 +1,17 @@
+{
+  "name": "LOUIS restaurant",
+  "city": "saarland",
+  "area": "Saarlouis",
+  "address": "Prälat-Subtil-Ring 22, 66740, Saarlouis",
+  "stars": 2,
+  "cuisine": "Asian",
+  "rating": 4.7,
+  "reviews": 46,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://lamaison-hotel.de/",
+  "lat": 49.317148,
+  "lng": 6.7556133,
+  "placeId": "ChIJD3Q-K8mplUcRjre4dpsX_xo"
+}

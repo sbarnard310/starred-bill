@@ -1,0 +1,17 @@
+{
+  "name": "Sankt Benedikt",
+  "city": "north-rhine-westphalia",
+  "area": "Aachen",
+  "address": "Benediktusplatz 12, 52076, Aachen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 287,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://stbenedikt.de/",
+  "lat": 50.7283878,
+  "lng": 6.1833687,
+  "placeId": "ChIJP-vDpaadwEcRLuxFNc0cI1A"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "edl.eins",
+  "city": "bavaria",
+  "area": "Deggendorf",
+  "address": "Edlmairstraße 1, 94469, Deggendorf",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 94,
+  "dinnerType": "menu",
+  "dinner": 199,
+  "dinnerNote": "Tasting menu (other menus from €55)",
+  "sourceType": "site",
+  "source": "https://www.edleins.de/gourmetrestaurant/",
+  "wine": 79,
+  "website": "https://www.edleins.de/",
+  "lat": 48.831168,
+  "lng": 12.9575939,
+  "placeId": "ChIJ4bWTfQwRdUcRHYOTCTkE_KI"
+}

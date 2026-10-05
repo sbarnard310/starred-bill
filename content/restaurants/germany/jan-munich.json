@@ -1,0 +1,18 @@
+{
+  "name": "JAN",
+  "city": "munich",
+  "address": "Luisenstraße 27, 80333, Munich",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 367,
+  "dinnerType": "menu",
+  "dinner": 380,
+  "dinnerNote": "Tasting menu (other menus from €335)",
+  "sourceType": "site",
+  "source": "https://jan-hartwig.com/menue/",
+  "website": "https://jan-hartwig.com/",
+  "lat": 48.1447975,
+  "lng": 11.5629878,
+  "placeId": "ChIJrW8egwN1nkcRcSAVCJYQpZY"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "irori",
+  "city": "rhineland-palatinate",
+  "area": "Knittelsheim",
+  "address": "Hauptstraße 15a, 76879, Knittelsheim",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 87,
+  "dinnerType": "menu",
+  "dinner": 140,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://irori.restaurant/irori-im-isenhof/",
+  "website": "https://irori.restaurant/irori-im-isenhof/",
+  "lat": 49.1912675,
+  "lng": 8.2499514,
+  "placeId": "ChIJpRNVBg9JlkcRjRzbybsxUg8"
+}

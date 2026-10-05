@@ -1,0 +1,19 @@
+{
+  "name": "ATAMA by Martin Stopp",
+  "city": "saarland",
+  "area": "Sankt Ingbert",
+  "address": "Ensheimer Straße 20, 66386, Sankt Ingbert",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 407,
+  "dinnerType": "menu",
+  "dinner": 235,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "sourceType": "site",
+  "source": "https://atama.de/fine-dining/",
+  "website": "https://atama.de/",
+  "lat": 49.27289,
+  "lng": 7.11203,
+  "placeId": "ChIJrxpFDzTIlUcRpSTFTZGHBks"
+}

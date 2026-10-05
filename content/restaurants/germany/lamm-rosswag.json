@@ -1,0 +1,19 @@
+{
+  "name": "Lamm Rosswag",
+  "city": "baden-wurttemberg",
+  "area": "Vaihingen an der Enz",
+  "address": "Rathausstraße 4, 71665, Vaihingen an der Enz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 260,
+  "dinnerType": "menu",
+  "dinner": 92,
+  "dinnerNote": "Tasting menu (other menus from €78)",
+  "sourceType": "site",
+  "source": "https://lamm-rosswag.de/",
+  "website": "https://www.lamm-rosswag.de/",
+  "lat": 48.936683,
+  "lng": 8.916984,
+  "placeId": "ChIJXfLuVvx7l0cRThcA_lMFzOc"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Bagatelle",
+  "city": "rhineland-palatinate",
+  "area": "Trier",
+  "address": "Zurlaubener Ufer 78, 54292, Trier",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.9,
+  "reviews": 179,
+  "dinnerType": "menu",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu (other menus from €60)",
+  "sourceType": "site",
+  "source": "https://bagatelle.de/menue/",
+  "wine": 90,
+  "website": "https://bagatelle.de/",
+  "lat": 49.7648216,
+  "lng": 6.6349596,
+  "placeId": "ChIJ6Tmh3bx9lUcRogoGH2j1bnQ"
+}

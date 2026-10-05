@@ -1,0 +1,18 @@
+{
+  "name": "Entenstuben",
+  "city": "nuremberg",
+  "address": "Schranke 9, 90489, Nuremberg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 397,
+  "dinnerType": "menu",
+  "dinner": 199,
+  "dinnerNote": "Tasting menu (other menus from €139)",
+  "sourceType": "site",
+  "source": "https://entenstuben.de/",
+  "website": "https://www.entenstuben.de/",
+  "lat": 49.4535946,
+  "lng": 11.0939143,
+  "placeId": "ChIJb-Q5SphXn0cRRDbZd-d4xQI"
+}

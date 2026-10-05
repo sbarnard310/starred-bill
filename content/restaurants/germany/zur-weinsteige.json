@@ -1,0 +1,16 @@
+{
+  "name": "ZUR WEINSTEIGE",
+  "city": "stuttgart",
+  "address": "Hohenheimer Straße 30, 70184, Stuttgart",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.7,
+  "reviews": 417,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.zur-weinsteige.de/",
+  "lat": 48.7710222,
+  "lng": 9.1870889,
+  "placeId": "ChIJ51pgArTEmUcRuZm_bz3kRUs"
+}

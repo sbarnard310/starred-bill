@@ -1,0 +1,17 @@
+{
+  "name": "Eckert | Fine Dining",
+  "city": "baden-wurttemberg",
+  "area": "Grenzach-Wyhlen",
+  "address": "Basler Straße 20, 79639, Grenzach-Wyhlen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 838,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.eckert-grenzach.de",
+  "lat": 47.5532458,
+  "lng": 7.658225,
+  "placeId": "ChIJZxXgxw63kUcRtTdTGKBzGZ4"
+}

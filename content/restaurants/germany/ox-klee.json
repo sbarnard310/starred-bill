@@ -1,0 +1,16 @@
+{
+  "name": "Ox & Klee",
+  "city": "cologne",
+  "address": "Im Zollhafen 18, 50678, Cologne",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 599,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://oxundklee.de/",
+  "lat": 50.9272801,
+  "lng": 6.9658846,
+  "placeId": "ChIJzWH7uAMlv0cRNKQei9KMIvg"
+}

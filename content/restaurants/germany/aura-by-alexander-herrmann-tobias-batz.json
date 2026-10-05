@@ -1,0 +1,20 @@
+{
+  "name": "AURA by Alexander Herrmann & Tobias Bätz",
+  "city": "bavaria",
+  "area": "Wirsberg",
+  "address": "Marktplatz 11, 95339, Wirsberg",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 49,
+  "dinnerType": "menu",
+  "dinner": 537,
+  "dinnerNote": "Tasting menu (other menus from €109)",
+  "sourceType": "site",
+  "source": "https://www.herrmanns-posthotel.de/ah-gourmetwelten/aura-by-alexander-herrmann-tobias-baetz",
+  "wine": 123,
+  "website": "https://www.herrmanns-posthotel.de/de/gourmetwelten/aura.html",
+  "lat": 50.1073707,
+  "lng": 11.6069241,
+  "placeId": "ChIJK5-8OtELoUcRazTkJ_jtLxs"
+}

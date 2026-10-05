@@ -1,0 +1,19 @@
+{
+  "name": "VILLINO",
+  "city": "bavaria",
+  "area": "Lindau",
+  "address": "Mittenbuch 6, 88131, Lindau",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 317,
+  "dinnerType": "menu",
+  "dinner": 188,
+  "dinnerNote": "Tasting menu (other menus from €148)",
+  "sourceType": "site",
+  "source": "https://www.villino.de/kulinarik/restaurant/",
+  "website": "https://www.villino.de/",
+  "lat": 47.567314,
+  "lng": 9.673153,
+  "placeId": "ChIJsVYYnZAOm0cR8cdQupo3F_s"
+}

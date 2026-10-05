@@ -1,0 +1,17 @@
+{
+  "name": "Friedrich Franz",
+  "city": "mecklenburg-west-pomerania",
+  "area": "Bad Doberan",
+  "address": "Prof.-Dr.-Vogel-Straße 6, 18209, Bad Doberan",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 131,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.grandhotel-heiligendamm.de/",
+  "lat": 54.143778,
+  "lng": 11.8423661,
+  "placeId": "ChIJk6EU-qarrUcRrnTmRp7uGnI"
+}

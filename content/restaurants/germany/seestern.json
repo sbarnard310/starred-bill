@@ -1,0 +1,19 @@
+{
+  "name": "Seestern",
+  "city": "baden-wurttemberg",
+  "area": "Ulm",
+  "address": "Friedrichsau 50, 89073, Ulm",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 47,
+  "dinnerType": "menu",
+  "dinner": 159,
+  "dinnerNote": "Tasting menu (other menus from €89)",
+  "sourceType": "site",
+  "source": "https://hotel.lago-ulm.de/gourmet-restaurant-seestern/",
+  "website": "https://hotel.lago-ulm.de/gourmet-restaurant-seestern/",
+  "lat": 48.412238,
+  "lng": 10.012923,
+  "placeId": "ChIJJwi2GOhnmUcRjVeONxHvzRQ"
+}

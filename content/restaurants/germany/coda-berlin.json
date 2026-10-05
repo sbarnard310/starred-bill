@@ -1,0 +1,18 @@
+{
+  "name": "CODA",
+  "city": "berlin",
+  "address": "Friedelstraße 47, 12047, Berlin",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 764,
+  "dinnerType": "menu",
+  "dinner": 294,
+  "dinnerNote": "Tasting menu (other menus from €264)",
+  "sourceType": "site",
+  "source": "https://coda-berlin.com/menue/",
+  "website": "https://www.coda-berlin.com/",
+  "lat": 52.4900681,
+  "lng": 13.4274391,
+  "placeId": "ChIJvVDs7bZPqEcRVuzEV98NWz8"
+}

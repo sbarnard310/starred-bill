@@ -1,0 +1,17 @@
+{
+  "name": "die burg - fine dining",
+  "city": "baden-wurttemberg",
+  "area": "Donaueschingen",
+  "address": "Burgring 6, 78166, Donaueschingen",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.7,
+  "reviews": 569,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.burg-aasen.de/",
+  "lat": 47.9813093,
+  "lng": 8.5524568,
+  "placeId": "ChIJIwftSBWakEcRNxF9Nbg0ebA"
+}

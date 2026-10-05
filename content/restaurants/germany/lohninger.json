@@ -1,0 +1,18 @@
+{
+  "name": "Lohninger",
+  "city": "frankfurt-on-the-main",
+  "address": "Schweizer Straße 1, 60594, Frankfurt on the Main",
+  "stars": 1,
+  "cuisine": "Austrian",
+  "rating": 4.3,
+  "reviews": 1121,
+  "dinnerType": "menu",
+  "dinner": 85,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://lohninger.de/",
+  "website": "https://lohninger.de/",
+  "lat": 50.1053592,
+  "lng": 8.6780946,
+  "placeId": "ChIJ2503uAIMvUcRF3mmlxAS-ic"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Silberdistel",
+  "city": "bavaria",
+  "area": "Ofterschwang",
+  "address": "Sonnenalp 1, 87527, Ofterschwang",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 64,
+  "dinnerType": "menu",
+  "dinner": 189,
+  "dinnerNote": "Tasting menu (other menus from €149)",
+  "sourceType": "site",
+  "source": "https://www.sonnenalp.de/gourmetrestaurant-silberdistel",
+  "website": "https://www.sonnenalp.de/gourmetrestaurant-silberdistel",
+  "lat": 47.4904129,
+  "lng": 10.2570174,
+  "placeId": "ChIJr0BXi2SDnEcRNo4JpyVxfo0"
+}

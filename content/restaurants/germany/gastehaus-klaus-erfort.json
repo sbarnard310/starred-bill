@@ -1,0 +1,19 @@
+{
+  "name": "GästeHaus Klaus Erfort",
+  "city": "saarland",
+  "area": "Saarbrücken",
+  "address": "Mainzer Straße 95, 66121, Saarbrücken",
+  "stars": 2,
+  "cuisine": "Classic French",
+  "rating": 4.7,
+  "reviews": 312,
+  "dinnerType": "menu",
+  "dinner": 244,
+  "dinnerNote": "Tasting menu (other menus from €125)",
+  "sourceType": "site",
+  "source": "https://www.gaestehaus-erfort.de/",
+  "website": "https://www.gaestehaus-erfort.de/",
+  "lat": 49.2295502,
+  "lng": 7.0076258,
+  "placeId": "ChIJI1f68yG0lUcR0BSfvh4rdZw"
+}

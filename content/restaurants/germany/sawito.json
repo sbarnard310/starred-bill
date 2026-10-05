@@ -1,0 +1,17 @@
+{
+  "name": "Sawito",
+  "city": "brandenburg",
+  "area": "Falkensee",
+  "address": "Spandauer Straße 14, 14612, Falkensee",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.9,
+  "reviews": 298,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-sawito.com/",
+  "lat": 52.5645708,
+  "lng": 13.112693,
+  "placeId": "ChIJFd9afFb5qEcRakoeV-QFluY"
+}

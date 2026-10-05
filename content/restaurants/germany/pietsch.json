@@ -1,0 +1,17 @@
+{
+  "name": "Pietsch",
+  "city": "saxony-anhalt",
+  "area": "Wernigerode",
+  "address": "Breite Straße 53a, 38855, Wernigerode",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 435,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.robin-pietsch.de/",
+  "lat": 51.8352945,
+  "lng": 10.7890106,
+  "placeId": "ChIJ_-sdrTINpUcRHGZXobA3qHM"
+}

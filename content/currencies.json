@@ -90,6 +90,76 @@
       "code": "CAD",
       "symbol": "CA$",
       "perUSD": 1.42482
+    },
+    {
+      "code": "CNY",
+      "symbol": "CN¥",
+      "perUSD": 6.710363
+    },
+    {
+      "code": "CHF",
+      "symbol": "CHF",
+      "perUSD": 0.828414
+    },
+    {
+      "code": "BRL",
+      "symbol": "R$",
+      "perUSD": 5.222532
+    },
+    {
+      "code": "SEK",
+      "symbol": "SEK",
+      "perUSD": 10.041831
+    },
+    {
+      "code": "NOK",
+      "symbol": "NOK",
+      "perUSD": 9.619945
+    },
+    {
+      "code": "AED",
+      "symbol": "AED",
+      "perUSD": 3.6725
+    },
+    {
+      "code": "TRY",
+      "symbol": "TRY",
+      "perUSD": 49.161928
+    },
+    {
+      "code": "PLN",
+      "symbol": "PLN",
+      "perUSD": 3.895505
+    },
+    {
+      "code": "VND",
+      "symbol": "₫",
+      "perUSD": 25949.123093
+    },
+    {
+      "code": "CZK",
+      "symbol": "CZK",
+      "perUSD": 21.732999
+    },
+    {
+      "code": "HUF",
+      "symbol": "HUF",
+      "perUSD": 327.670229
+    },
+    {
+      "code": "MYR",
+      "symbol": "RM",
+      "perUSD": 4.084534
+    },
+    {
+      "code": "PHP",
+      "symbol": "₱",
+      "perUSD": 62.63269
+    },
+    {
+      "code": "RSD",
+      "symbol": "RSD",
+      "perUSD": 104.576659
     }
   ]
 }

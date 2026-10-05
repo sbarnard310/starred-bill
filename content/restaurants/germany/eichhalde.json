@@ -1,0 +1,16 @@
+{
+  "name": "Eichhalde",
+  "city": "freiburg-im-breisgau",
+  "address": "Stadtstraße 91, 79104, Freiburg im Breisgau",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.8,
+  "reviews": 207,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.eichhalde-freiburg.de/",
+  "lat": 48.006711,
+  "lng": 7.8648027,
+  "placeId": "ChIJ31Fpb4kckUcR4WNDK7RYi84"
+}

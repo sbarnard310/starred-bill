@@ -1,0 +1,17 @@
+{
+  "name": "Stadtpfeiffer",
+  "city": "saxony",
+  "area": "Leipzig",
+  "address": "Augustusplatz 8, 04109, Leipzig",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 103,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.stadtpfeiffer.de/",
+  "lat": 51.3381371,
+  "lng": 12.380167,
+  "placeId": "ChIJI9ioyCT4pkcRj_KGib8xvts"
+}

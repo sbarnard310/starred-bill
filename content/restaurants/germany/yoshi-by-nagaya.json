@@ -1,0 +1,18 @@
+{
+  "name": "Yoshi by Nagaya",
+  "city": "dusseldorf",
+  "address": "Kreuzstraße 17, 40213, Düsseldorf",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 276,
+  "dinnerType": "menu",
+  "dinner": 228,
+  "dinnerNote": "Tasting menu (other menus from €178)",
+  "sourceType": "site",
+  "source": "https://yoshibynagaya.wixsite.com/nagayaduesseldorf/nagaya-menu",
+  "website": "https://yoshibynagaya.wixsite.com/nagayaduesseldorf",
+  "lat": 51.2242643,
+  "lng": 6.7857395,
+  "placeId": "ChIJWUcA0iTKuEcRyWKjRopwL0A"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Gotthardt's by Yannick Noack",
+  "city": "rhineland-palatinate",
+  "area": "Koblenz",
+  "address": "An der Fähre 3, 56068, Koblenz",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 65,
+  "dinnerType": "menu",
+  "dinner": 205,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://faehr.haus/gotthardts-byyannick-noack/",
+  "website": "https://faehr.haus/restaurant-bar/restaurant-gotthardts/",
+  "lat": 50.3580498,
+  "lng": 7.5598451,
+  "placeId": "ChIJOzBqZFxjvkcRwBk3-zPfhNI"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "La Cuisine Rademacher",
+  "city": "cologne",
+  "address": "Dellbrücker Hauptstraße 176, 51069, Cologne",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 413,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://la-cuisine-koeln.de/",
+  "lat": 50.9803037,
+  "lng": 7.0689759,
+  "placeId": "ChIJYzk4Cv0pv0cR74e35cayQzU"
+}

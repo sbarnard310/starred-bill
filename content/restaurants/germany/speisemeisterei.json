@@ -1,0 +1,16 @@
+{
+  "name": "Speisemeisterei",
+  "city": "stuttgart",
+  "address": "Schloss Hohenheim 1B, 70599, Stuttgart",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 496,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.speisemeisterei.de/",
+  "lat": 48.7128114,
+  "lng": 9.2137855,
+  "placeId": "ChIJO_K2QVXCmUcRIXmXn3onS60"
+}

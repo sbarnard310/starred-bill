@@ -1,0 +1,16 @@
+{
+  "name": "RAUSCH",
+  "city": "frankfurt-on-the-main",
+  "address": "Reuterweg 57, 60323, Frankfurt on the Main",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 74,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://rauschrauschrausch.com/",
+  "lat": 50.12074,
+  "lng": 8.670387,
+  "placeId": "ChIJbZAKU8EJvUcRrFhUvcDWAMo"
+}

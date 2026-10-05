@@ -1,0 +1,19 @@
+{
+  "name": "Gourmetrestaurant Nico Burkhardt",
+  "city": "baden-wurttemberg",
+  "area": "Schorndorf",
+  "address": "Höllgasse 9, 73614, Schorndorf",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 5,
+  "reviews": 5,
+  "dinnerType": "menu",
+  "dinner": 172,
+  "dinnerNote": "Tasting menu (other menus from €102)",
+  "sourceType": "site",
+  "source": "https://pfauen-schorndorf.de/wp-content/uploads/2026/10/260930_Abendkarte_Gourmet_NB_1-2.pdf",
+  "website": "https://pfauen-schorndorf.de/gourmetrestaurant-nico-burkhardt-3/",
+  "lat": 48.8062032,
+  "lng": 9.528005,
+  "placeId": "ChIJwTfLu4S7mUcRT3dlDccGbKY"
+}

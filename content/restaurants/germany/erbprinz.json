@@ -1,0 +1,17 @@
+{
+  "name": "Erbprinz",
+  "city": "baden-wurttemberg",
+  "area": "Ettlingen",
+  "address": "Rheinstraße 1, 76275, Ettlingen",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.1,
+  "reviews": 492,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.erbprinz.de/de",
+  "lat": 48.941273,
+  "lng": 8.4045683,
+  "placeId": "ChIJbyzeFIMFl0cRg0LxwqbQ_Y4"
+}

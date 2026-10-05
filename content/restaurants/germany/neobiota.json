@@ -1,0 +1,16 @@
+{
+  "name": "NeoBiota",
+  "city": "cologne",
+  "address": "Pantaleonswall 27, 50676, Cologne",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 605,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-neobiota.de/",
+  "lat": 50.9281867,
+  "lng": 6.9445901,
+  "placeId": "ChIJbxCLJjslv0cRGpR-Nzp-K3o"
+}

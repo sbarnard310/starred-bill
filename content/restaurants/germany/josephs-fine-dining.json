@@ -1,0 +1,19 @@
+{
+  "name": "Joseph's Fine Dining",
+  "city": "lower-saxony",
+  "area": "Bad Sachsa",
+  "address": "Bismarckstraße 23, 37441, Bad Sachsa",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 65,
+  "dinnerType": "menu",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu (other menus from €120)",
+  "sourceType": "site",
+  "source": "https://www.josephs-fine-dining.de/",
+  "website": "https://www.josephs-fine-dining.de/",
+  "lat": 51.600267,
+  "lng": 10.5450555,
+  "placeId": "ChIJi2bZjqcdpUcR7VtI5_5sri8"
+}

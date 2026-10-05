@@ -1,0 +1,16 @@
+{
+  "name": "Jellyfish",
+  "city": "hamburg",
+  "address": "Weidenallee 12, 20357, Hamburg",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.7,
+  "reviews": 894,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.jellyfish-restaurant.de/",
+  "lat": 53.5666172,
+  "lng": 9.965481,
+  "placeId": "ChIJ6w8RcUSPsUcRGlZpLu8uKIo"
+}

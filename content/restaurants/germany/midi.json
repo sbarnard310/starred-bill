@@ -1,0 +1,19 @@
+{
+  "name": "midi",
+  "city": "saarland",
+  "area": "Sankt Ingbert",
+  "address": "Ernst-Heckel-Straße 4, 66386, Sankt Ingbert",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 309,
+  "dinnerType": "menu",
+  "dinner": 89,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.midi-restaurant.de/feed/",
+  "website": "https://www.midi-restaurant.de",
+  "lat": 49.2746882,
+  "lng": 7.1556823,
+  "placeId": "ChIJv5_Lc_DIlUcRRN--PcEw4nw"
+}

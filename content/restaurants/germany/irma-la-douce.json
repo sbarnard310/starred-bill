@@ -1,0 +1,16 @@
+{
+  "name": "Irma la Douce",
+  "city": "berlin",
+  "address": "Potsdamer Straße 102, 10785, Berlin",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.5,
+  "reviews": 388,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.irmaladouce.de/",
+  "lat": 52.5014034,
+  "lng": 13.3638583,
+  "placeId": "ChIJJ1g6XO9RqEcR5MdnxcU4O30"
+}

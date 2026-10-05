@@ -1,0 +1,17 @@
+{
+  "name": "ANIMA",
+  "city": "baden-wurttemberg",
+  "area": "Tuttlingen",
+  "address": "In Wöhrden 5, 78532, Tuttlingen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 127,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-anima.de",
+  "lat": 47.9863428,
+  "lng": 8.82098,
+  "placeId": "ChIJRURGawR0mkcRVjzu7iARRvg"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Heiderand",
+  "city": "saxony",
+  "area": "Dresden",
+  "address": "Ullersdorfer Platz 4, 01324, Dresden",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 404,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.heiderand.restaurant",
+  "lat": 51.0623119,
+  "lng": 13.855478,
+  "placeId": "ChIJiSPhpMjJCUcRA_KR5DQLaWs"
+}

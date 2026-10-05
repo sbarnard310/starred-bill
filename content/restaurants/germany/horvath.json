@@ -1,0 +1,16 @@
+{
+  "name": "Horváth",
+  "city": "berlin",
+  "address": "Paul-Lincke-Ufer 44a, 10999, Berlin",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 663,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-horvath.de/",
+  "lat": 52.4963922,
+  "lng": 13.420793,
+  "placeId": "ChIJ74LRF8tPqEcRNeBJAS2qxaQ"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "bi:braud",
+  "city": "baden-wurttemberg",
+  "area": "Ulm",
+  "address": "Kohlgasse 6, 89073, Ulm",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 415,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://bebrout.com/",
+  "lat": 48.4005362,
+  "lng": 9.9924975,
+  "placeId": "ChIJr5yPDIZmmUcRLKr_mJSiZFI"
+}

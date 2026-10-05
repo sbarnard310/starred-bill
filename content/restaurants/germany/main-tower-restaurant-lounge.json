@@ -1,0 +1,19 @@
+{
+  "name": "MAIN TOWER Restaurant & Lounge",
+  "city": "frankfurt-on-the-main",
+  "address": "Neue Mainzer Straße 52, 60311, Frankfurt on the Main",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 1157,
+  "dinnerType": "menu",
+  "dinner": 205,
+  "dinnerNote": "Tasting menu (other menus from €55)",
+  "sourceType": "site",
+  "source": "https://www.maintower-restaurant.de/assets/Uploads/SIGNATURE-MENUe-HOMEPAGE-v3.pdf",
+  "wine": 82,
+  "website": "https://www.maintower-restaurant.de/",
+  "lat": 50.1123942,
+  "lng": 8.6722747,
+  "placeId": "ChIJJ78ZeqwOvUcRRWY4XT-9-JY"
+}

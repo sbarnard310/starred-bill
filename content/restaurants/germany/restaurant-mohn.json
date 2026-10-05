@@ -1,0 +1,16 @@
+{
+  "name": "Restaurant Mohn",
+  "city": "lower-saxony",
+  "area": "Hohnhorst",
+  "address": "Hauptstraße 25, 31559, Hohnhorst",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 5,
+  "reviews": 323,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 52.3685388,
+  "lng": 9.3724644,
+  "placeId": "ChIJPzZBXFR_sEcR5zGJqE2m2ZQ"
+}

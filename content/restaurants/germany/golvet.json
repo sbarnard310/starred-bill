@@ -1,0 +1,16 @@
+{
+  "name": "GOLVET",
+  "city": "berlin",
+  "address": "Potsdamer Straße 58, 10785, Berlin",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 649,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://golvet.de/",
+  "lat": 52.5055114,
+  "lng": 13.3676288,
+  "placeId": "ChIJAQBUZrVRqEcRdYAZYRLFNbA"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Sahila - The Restaurant",
+  "city": "cologne",
+  "address": "Kämmergasse 18, 50676, Cologne",
+  "stars": 1,
+  "cuisine": "International",
+  "rating": 4.8,
+  "reviews": 287,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://sahila-restaurant.de/reservierung/",
+  "lunch": 89,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://sahila-restaurant.de/reservierung/",
+  "website": "https://sahila-restaurant.de/",
+  "lat": 50.932944,
+  "lng": 6.9527411,
+  "placeId": "ChIJX5RGd94lv0cR5hvtiXOD2l4"
+}

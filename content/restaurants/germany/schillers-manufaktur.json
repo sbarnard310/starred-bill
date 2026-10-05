@@ -1,0 +1,17 @@
+{
+  "name": "Schiller's Manufaktur",
+  "city": "rhineland-palatinate",
+  "area": "Koblenz",
+  "address": "Mayenerstraße 126, 56070, Koblenz",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 27,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotel-stein.de",
+  "lat": 50.3693993,
+  "lng": 7.5814339,
+  "placeId": "ChIJ53WTRQBjvkcRA6s2zIVzhA4"
+}

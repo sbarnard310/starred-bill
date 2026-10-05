@@ -1,0 +1,19 @@
+{
+  "name": "Marcel von Winckelmann",
+  "city": "bavaria",
+  "area": "Passau",
+  "address": "Hans-Hösl-Straße 3, 94036, Passau",
+  "stars": 1,
+  "cuisine": "International",
+  "rating": 5,
+  "reviews": 195,
+  "dinnerType": "menu",
+  "dinner": 49,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.marcel-von-winckelmann.de/_files/ugd/92966b_0b3de4bc7d1d457098136812cb187bdd.pdf",
+  "website": "https://www.marcel-von-winckelmann.de/restaurant",
+  "lat": 48.5802555,
+  "lng": 13.3986555,
+  "placeId": "ChIJqWj7SWZZdEcR8Ivp9lidDfw"
+}

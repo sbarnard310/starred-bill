@@ -1,0 +1,17 @@
+{
+  "name": "Schwarzer Adler",
+  "city": "baden-wurttemberg",
+  "area": "Vogtsburg im Kaiserstuhl",
+  "address": "Badbergstraße 23, 79235, Vogtsburg im Kaiserstuhl",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.6,
+  "reviews": 449,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.franz-keller.de/",
+  "lat": 48.0952162,
+  "lng": 7.6560639,
+  "placeId": "ChIJAdvaajcUkUcR4CEWYIuSxb8"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Johanns",
+  "city": "bavaria",
+  "area": "Waldkirchen",
+  "address": "Marktplatz 24, 94065, Waldkirchen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 389,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-johanns.de/",
+  "lat": 48.729862,
+  "lng": 13.6007906,
+  "placeId": "ChIJr6nSkYLtdEcR1xQnMCu6NYo"
+}

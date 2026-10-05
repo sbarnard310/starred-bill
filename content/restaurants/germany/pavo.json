@@ -1,0 +1,17 @@
+{
+  "name": "PAVO",
+  "city": "bavaria",
+  "area": "Pfronten",
+  "address": "Auf dem Falkenstein 1, 87459, Pfronten",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 117,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.blaueburg.com",
+  "lat": 47.5700348,
+  "lng": 10.5918519,
+  "placeId": "ChIJB5-G28mKnEcREg_VO89kMk8"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Rutz",
+  "city": "berlin",
+  "address": "Chausseestraße 8, 10115, Berlin",
+  "stars": 3,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 772,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://rutz-restaurant.de/",
+  "lat": 52.5283507,
+  "lng": 13.3860867,
+  "placeId": "ChIJYT_9-utRqEcRUKXsqIRF_5o"
+}

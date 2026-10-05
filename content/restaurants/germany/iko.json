@@ -1,0 +1,19 @@
+{
+  "name": "IKO",
+  "city": "lower-saxony",
+  "area": "Osnabrück",
+  "address": "Stadtweg 38a, 49086, Osnabrück",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 234,
+  "dinnerType": "menu",
+  "dinner": 196,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "site",
+  "source": "https://iko-restaurant.de/",
+  "website": "https://www.iko-restaurant.de/",
+  "lat": 52.2697166,
+  "lng": 8.1281943,
+  "placeId": "ChIJh8Pcnrb6uUcRu633SSkaYlI"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Steinheuers Restaurant",
+  "city": "rhineland-palatinate",
+  "area": "Bad Neuenahr-Ahrweiler",
+  "address": "Landskroner Straße 110, 53474, Bad Neuenahr-Ahrweiler",
+  "stars": 2,
+  "cuisine": "Classic French",
+  "rating": 5,
+  "reviews": 5,
+  "dinnerType": "menu",
+  "dinner": 290,
+  "dinnerNote": "Tasting menu (other menus from €215)",
+  "sourceType": "site",
+  "source": "https://www.steinheuers.de/wp-content/uploads/Menue-Wurzeln-August-26.pdf",
+  "website": "https://www.steinheuers.de/steinheuers-restaurant/",
+  "lat": 50.5511373,
+  "lng": 7.164113,
+  "placeId": "ChIJXYG8TgD7vkcRWs3EbgvnzP8"
+}

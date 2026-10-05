@@ -1,0 +1,16 @@
+{
+  "name": "Tantris",
+  "city": "munich",
+  "address": "Johann-Fichte-Straße 7, 80805, Munich",
+  "stars": 2,
+  "cuisine": "French Contemporary",
+  "rating": 4.7,
+  "reviews": 1276,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://tantris.de/",
+  "lat": 48.1697565,
+  "lng": 11.588259,
+  "placeId": "ChIJtSGICsp1nkcRsO8j0sObIio"
+}

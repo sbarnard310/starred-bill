@@ -1,0 +1,19 @@
+{
+  "name": "Rüssel's Landhaus",
+  "city": "rhineland-palatinate",
+  "area": "Naurath/Wald",
+  "address": "Büdlicherbrück 1, 54426, Naurath/Wald",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 334,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.ruessels-landhaus.de/",
+  "website": "https://www.ruessels-landhaus.de/",
+  "lat": 49.7682481,
+  "lng": 6.8921194,
+  "placeId": "ChIJZUjIZiGBlUcRP2LsDBEi4AQ"
+}

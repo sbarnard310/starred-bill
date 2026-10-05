@@ -1,0 +1,17 @@
+{
+  "name": "Gourmetrestaurant Berlins Krone",
+  "city": "baden-wurttemberg",
+  "area": "Bad Teinach-Zavelstein",
+  "address": "Marktplatz 2, 75385, Bad Teinach-Zavelstein",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 197,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kronelamm.de",
+  "lat": 48.6940108,
+  "lng": 8.6892208,
+  "placeId": "ChIJmdUSW2dCl0cR0YH8Q-68720"
+}

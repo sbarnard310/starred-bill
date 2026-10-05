@@ -1,0 +1,16 @@
+{
+  "name": "Agata's",
+  "city": "dusseldorf",
+  "address": "Kirchfeldstraße 59, 40217, Düsseldorf",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 301,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.agatas.de/",
+  "lat": 51.2123287,
+  "lng": 6.7762351,
+  "placeId": "ChIJBUFP7ozJuEcRcPqBJIBrtFE"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "BOK Restaurant Brust oder Keule",
+  "city": "north-rhine-westphalia",
+  "area": "Münster",
+  "address": "Melchersstraße 32, 48149, Münster",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 223,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.brustoderkeule.de/",
+  "lat": 51.9719525,
+  "lng": 7.6191805,
+  "placeId": "ChIJ1QpYrOy6uUcRoIvQKMk4I3M"
+}

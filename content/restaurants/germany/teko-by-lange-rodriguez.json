@@ -1,0 +1,17 @@
+{
+  "name": "Teko by Lange Rodriguez",
+  "city": "north-rhine-westphalia",
+  "area": "Essen",
+  "address": "Wegenerstraße 3, 45131, Essen",
+  "stars": 1,
+  "cuisine": "International",
+  "rating": 5,
+  "reviews": 110,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.teko-by-langerodriguez.de/",
+  "lat": 51.4322441,
+  "lng": 7.003483,
+  "placeId": "ChIJgWa-so3DuEcRoRvDzkF-3mQ"
+}

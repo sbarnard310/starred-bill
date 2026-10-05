@@ -1,0 +1,17 @@
+{
+  "name": "halbedel's Gasthaus",
+  "city": "north-rhine-westphalia",
+  "area": "Bonn",
+  "address": "Rheinallee 47, 53173, Bonn",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 171,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.halbedels-gasthaus.de/",
+  "lat": 50.6889689,
+  "lng": 7.1662272,
+  "placeId": "ChIJnXES3BTkvkcRdUdK7EQz1FU"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Oswald's Gourmetstube",
+  "city": "bavaria",
+  "area": "Teisnach",
+  "address": "Am Platzl 2, 94244, Teisnach",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 38,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotel-oswald.de/",
+  "lat": 49.0135383,
+  "lng": 13.0296432,
+  "placeId": "ChIJUwTWQj08dUcROYovLUHTiFQ"
+}

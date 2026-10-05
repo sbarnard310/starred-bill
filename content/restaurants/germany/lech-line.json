@@ -1,0 +1,19 @@
+{
+  "name": "LECH-LINE",
+  "city": "bavaria",
+  "area": "Landsberg am Lech",
+  "address": "Bahnhofsplatz 1, 86899, Landsberg am Lech",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 192,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €59)",
+  "sourceType": "site",
+  "source": "https://www.lech-line.de",
+  "website": "https://www.lech-line.de",
+  "lat": 48.0473043,
+  "lng": 10.8721887,
+  "placeId": "ChIJPaXP-9MjnEcR3lYwGgxUjo4"
+}

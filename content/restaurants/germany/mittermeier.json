@@ -1,0 +1,17 @@
+{
+  "name": "Mittermeier",
+  "city": "bavaria",
+  "area": "Rothenburg ob der Tauber",
+  "address": "Vorm Würzburger Tor 7, 91541, Rothenburg ob der Tauber",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 909,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.villamittermeier.de/",
+  "lat": 49.3800816,
+  "lng": 10.1851467,
+  "placeId": "ChIJiWI2h6OPmEcRBmrqkdAl0WM"
+}

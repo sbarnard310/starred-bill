@@ -1,0 +1,20 @@
+{
+  "name": "Maltes hidden kitchen",
+  "city": "baden-wurttemberg",
+  "area": "Baden-Baden",
+  "address": "Gernsbacher Straße 24, 76530, Baden-Baden",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 230,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €60)",
+  "sourceType": "site",
+  "source": "https://exquisite-concepts.com/downloads/Menue.pdf",
+  "wine": 54,
+  "website": "https://exquisite-concepts.com/maltes-hidden-kitchen/",
+  "lat": 48.761902,
+  "lng": 8.2414442,
+  "placeId": "ChIJLQX956ofl0cRsU8vcYnntOY"
+}

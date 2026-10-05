@@ -1,0 +1,20 @@
+{
+  "name": "Kaisersaal",
+  "city": "baden-wurttemberg",
+  "area": "Ravensburg",
+  "address": "Mauerstraße 17, 88212, Ravensburg",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.9,
+  "reviews": 43,
+  "dinnerType": "menu",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu (other menus from €58)",
+  "sourceType": "site",
+  "source": "https://www.kaiserhof-rv.de/restaurant-kaisersaal/",
+  "wine": 54,
+  "website": "https://www.kaiserhof-rv.de/restaurant-kaisersaal/",
+  "lat": 47.7834784,
+  "lng": 9.6098769,
+  "placeId": "ChIJPRkpnZWvm0cRc0fgO95yTeI"
+}

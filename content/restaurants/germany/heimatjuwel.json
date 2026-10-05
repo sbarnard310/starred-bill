@@ -1,0 +1,16 @@
+{
+  "name": "Heimatjuwel",
+  "city": "hamburg",
+  "address": "Stellinger Weg 47, 20255, Hamburg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 386,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://heimatjuwel.de/",
+  "lat": 53.5801378,
+  "lng": 9.9476808,
+  "placeId": "ChIJpQWjEP-FsUcRh2m6rzxrJiE"
+}

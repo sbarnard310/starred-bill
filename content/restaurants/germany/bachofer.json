@@ -1,0 +1,17 @@
+{
+  "name": "Bachofer",
+  "city": "baden-wurttemberg",
+  "area": "Waiblingen",
+  "address": "Marktplatz 6, 71332, Waiblingen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 349,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.bachofer.info/",
+  "lat": 48.8323223,
+  "lng": 9.316526,
+  "placeId": "ChIJX4-iWK_ImUcRGyFXXAvpHi4"
+}

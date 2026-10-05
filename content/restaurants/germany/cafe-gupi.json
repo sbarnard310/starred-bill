@@ -1,0 +1,17 @@
+{
+  "name": "Café GUPI",
+  "city": "baden-wurttemberg",
+  "area": "Weil am Rhein",
+  "address": "Römerstraße 1, 79576, Weil am Rhein",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 100,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.cafegupi.de/",
+  "lat": 47.5948316,
+  "lng": 7.6290732,
+  "placeId": "ChIJtSP1jTO7kUcResz5hzNNeeU"
+}

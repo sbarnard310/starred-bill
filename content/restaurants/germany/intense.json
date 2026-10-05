@@ -1,0 +1,17 @@
+{
+  "name": "Intense",
+  "city": "rhineland-palatinate",
+  "area": "Wachenheim an der Weinstraße",
+  "address": "Weinstraße 31, 67157, Wachenheim an der Weinstraße",
+  "stars": 2,
+  "cuisine": "Fusion",
+  "rating": 4.8,
+  "reviews": 243,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-inten.se/",
+  "lat": 49.4385482,
+  "lng": 8.1820048,
+  "placeId": "ChIJPTcO0a4wlkcRvNtKzpX7260"
+}

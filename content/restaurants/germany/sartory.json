@@ -1,0 +1,20 @@
+{
+  "name": "Sartory",
+  "city": "bavaria",
+  "area": "Augsburg",
+  "address": "Maximilianstraße 40, 86150, Augsburg",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.6,
+  "reviews": 92,
+  "dinnerType": "menu",
+  "dinner": 209,
+  "dinnerNote": "Tasting menu (other menus from €129)",
+  "sourceType": "site",
+  "source": "https://sartory-augsburg.de/menue",
+  "wine": 90,
+  "website": "https://www.sartory-augsburg.de/",
+  "lat": 48.3651683,
+  "lng": 10.8985227,
+  "placeId": "ChIJ__8vYlS9nkcR7UmHIyDPQTk"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Rebers Pflug",
+  "city": "baden-wurttemberg",
+  "area": "Schwäbisch Hall",
+  "address": "Weckriedener Straße 2, 74523, Schwäbisch Hall",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.8,
+  "reviews": 544,
+  "dinnerType": "menu",
+  "dinner": 158,
+  "dinnerNote": "Tasting menu (other menus from €59)",
+  "sourceType": "site",
+  "source": "https://rebers-pflug.de/wp-content/uploads/2026/08/Speisekarte.deutsch-NEUJuli.-26-NEUDESIGN.pdf",
+  "wine": 45,
+  "website": "https://www.rebers-pflug.de",
+  "lat": 49.1231582,
+  "lng": 9.7567053,
+  "placeId": "ChIJDxkjAoVamEcRGARJ9KZuhEk"
+}

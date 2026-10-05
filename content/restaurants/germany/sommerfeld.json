@@ -1,0 +1,18 @@
+{
+  "name": "Sommerfeld",
+  "city": "frankfurt-on-the-main",
+  "address": "Weserstraße 4, 60329, Frankfurt on the Main",
+  "stars": 1,
+  "cuisine": "International",
+  "rating": 4.8,
+  "reviews": 224,
+  "dinnerType": "menu",
+  "dinner": 159,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.sommerfeld-frankfurt.de/",
+  "website": "https://www.sommerfeld-frankfurt.de/",
+  "lat": 50.1076641,
+  "lng": 8.670725,
+  "placeId": "ChIJb3IFcKoOvUcRqhp6BtVGvxk"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Die Brasserie",
+  "city": "rhineland-palatinate",
+  "area": "Pirmasens",
+  "address": "Landauer Straße 105, 66953, Pirmasens",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 248,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.diebrasserie-ps.de/",
+  "lat": 49.1947507,
+  "lng": 7.6202732,
+  "placeId": "ChIJjWCFXH98lkcRrvbeFhqG_MI"
+}

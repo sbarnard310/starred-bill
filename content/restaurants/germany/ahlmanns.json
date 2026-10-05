@@ -1,0 +1,19 @@
+{
+  "name": "Ahlmanns",
+  "city": "schleswig-holstein",
+  "area": "Kiel",
+  "address": "Niemannsweg 102, 24105, Kiel",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 55,
+  "dinnerType": "menu",
+  "dinner": 109,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.kieler-kaufmann.de/geniessen/ahlmanns-tisch-reservieren/",
+  "website": "https://www.kieler-kaufmann.de/ahlmanns",
+  "lat": 54.3387107,
+  "lng": 10.1513168,
+  "placeId": "ChIJHdrqszlXskcRehDmDay3teE"
+}

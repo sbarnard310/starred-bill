@@ -1,0 +1,18 @@
+{
+  "name": "Atlantic Restaurant",
+  "city": "hamburg",
+  "address": "An der Alster 72, 20099, Hamburg",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.6,
+  "reviews": 251,
+  "dinnerType": "menu",
+  "dinner": 149,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.atlantic.de/taste/",
+  "website": "https://brhhh.com/atlantic-hamburg/taste/",
+  "lat": 53.5568271,
+  "lng": 10.0047017,
+  "placeId": "ChIJY2Xs2d-OsUcRnU3ZrgXM3RY"
+}

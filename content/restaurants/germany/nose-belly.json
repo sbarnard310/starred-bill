@@ -1,0 +1,20 @@
+{
+  "name": "Nose & Belly",
+  "city": "bavaria",
+  "area": "Augsburg",
+  "address": "Heilig-Kreuz-Straße 10, 86152, Augsburg",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.9,
+  "reviews": 218,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €138)",
+  "sourceType": "site",
+  "source": "https://www.noseandbelly.de/speisekarte-nose-and-belly.pdf",
+  "wine": 80,
+  "website": "https://www.noseandbelly.de",
+  "lat": 48.3716097,
+  "lng": 10.892181,
+  "placeId": "ChIJEcawrbS9nkcRdqeKaXPaVZY"
+}

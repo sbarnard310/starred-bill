@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant Bareiss",
+  "city": "baden-wurttemberg",
+  "area": "Baiersbronn",
+  "address": "Hermine-Bareiss-Weg 1, 72270, Baiersbronn",
+  "stars": 3,
+  "cuisine": "Classic French",
+  "rating": 4.8,
+  "reviews": 223,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.bareiss.com/",
+  "lat": 48.5201324,
+  "lng": 8.3268245,
+  "placeId": "ChIJ4XNEF70xl0cR3_eB34t-Qo4"
+}

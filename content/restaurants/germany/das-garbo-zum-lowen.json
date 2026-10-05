@@ -1,0 +1,20 @@
+{
+  "name": "Das garbo zum Löwen",
+  "city": "baden-wurttemberg",
+  "area": "Eggenstein-Leopoldshafen",
+  "address": "Hauptstraße 51, 76344, Eggenstein-Leopoldshafen",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.7,
+  "reviews": 303,
+  "dinnerType": "menu",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu (other menus from €49)",
+  "sourceType": "site",
+  "source": "https://www.garbo-loewen.de/images/pdf/01--menus_september_-2026.pdf",
+  "wine": 59,
+  "website": "https://www.garbo-loewen.de/",
+  "lat": 49.0779967,
+  "lng": 8.3879792,
+  "placeId": "ChIJAR1f58apl0cRKrUTDikAG84"
+}

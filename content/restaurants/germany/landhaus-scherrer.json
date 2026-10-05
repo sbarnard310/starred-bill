@@ -1,0 +1,16 @@
+{
+  "name": "Landhaus Scherrer",
+  "city": "hamburg",
+  "address": "Elbchaussee 130, 22763, Hamburg",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 544,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.landhausscherrer.de/",
+  "lat": 53.5461021,
+  "lng": 9.9167551,
+  "placeId": "ChIJ5ysjNpyFsUcRPCWBm4c4T9U"
+}

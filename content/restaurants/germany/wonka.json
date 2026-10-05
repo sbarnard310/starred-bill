@@ -1,0 +1,19 @@
+{
+  "name": "Wonka",
+  "city": "nuremberg",
+  "address": "Johannisstraße 38, 90419, Nuremberg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 280,
+  "dinnerType": "menu",
+  "dinner": 153,
+  "dinnerNote": "Tasting menu (other menus from €60)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-wonka.de/MENUeS/ABENDKARTE/",
+  "wine": 67,
+  "website": "https://www.restaurant-wonka.de/",
+  "lat": 49.4586974,
+  "lng": 11.0648669,
+  "placeId": "ChIJvaULng2fDEER-AG2as_2iFw"
+}

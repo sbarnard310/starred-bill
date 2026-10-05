@@ -1,0 +1,19 @@
+{
+  "name": "KAI3",
+  "city": "schleswig-holstein",
+  "area": "Hörnum",
+  "address": "Am Kai 3, 25997, Hörnum",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 89,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €75)",
+  "sourceType": "site",
+  "source": "https://www.budersand.de/de",
+  "website": "https://www.budersand.de/de",
+  "lat": 54.7611439,
+  "lng": 8.2962752,
+  "placeId": "ChIJaxRL7APktEcRwJbi8bkWbAM"
+}

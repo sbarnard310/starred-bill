@@ -1,0 +1,17 @@
+{
+  "name": "Vendôme",
+  "city": "north-rhine-westphalia",
+  "area": "Bergisch Gladbach",
+  "address": "Kadettenstraße, 51429, Bergisch Gladbach",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 409,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.althoffcollection.com/de/althoff-grandhotel-schloss-bensberg",
+  "lat": 50.9662805,
+  "lng": 7.1608252,
+  "placeId": "ChIJNUh1coLXvkcRJZvIscLpxLY"
+}

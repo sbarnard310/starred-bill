@@ -1,0 +1,16 @@
+{
+  "name": "LA VIE by thomas bühner",
+  "city": "dusseldorf",
+  "address": "Schlüterstraße 1, 40235, Düsseldorf",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 167,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://laviebythomasbuehner.de/",
+  "lat": 51.2378037,
+  "lng": 6.8229278,
+  "placeId": "ChIJ6zQobgDJuEcR_p0qTfsFfQI"
+}

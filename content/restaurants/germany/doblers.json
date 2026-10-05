@@ -1,0 +1,17 @@
+{
+  "name": "Dobler's",
+  "city": "baden-wurttemberg",
+  "area": "Mannheim",
+  "address": "Seckenheimer Straße 20, 68159, Mannheim",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 461,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://doblers-restaurant.de/web/",
+  "lat": 49.4810346,
+  "lng": 8.4761985,
+  "placeId": "ChIJjVT9aKDOl0cRn9miYAuSC-U"
+}

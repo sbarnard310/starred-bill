@@ -1,0 +1,17 @@
+{
+  "name": "Wein- und Tafelhaus",
+  "city": "rhineland-palatinate",
+  "area": "Trittenheim",
+  "address": "Moselpromenade 4, 54349, Trittenheim",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.7,
+  "reviews": 189,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.wein-tafelhaus.de/",
+  "lat": 49.8215136,
+  "lng": 6.9027898,
+  "placeId": "ChIJSYHvGw0qvkcRSa8CbCCM6PA"
+}

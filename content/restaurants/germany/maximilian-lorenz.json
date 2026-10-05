@@ -1,0 +1,16 @@
+{
+  "name": "maximilian lorenz",
+  "city": "cologne",
+  "address": "Johannisstraße 64, 50668, Cologne",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 210,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://maximilianlorenz.de/",
+  "lat": 50.9445676,
+  "lng": 6.9607682,
+  "placeId": "ChIJvyGbgb8lv0cRkC7ZXzBvzWg"
+}

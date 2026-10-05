@@ -1,0 +1,19 @@
+{
+  "name": "Schwarz Gourmet",
+  "city": "rhineland-palatinate",
+  "area": "Kirchheim an der Weinstraße",
+  "address": "Weinstraße Süd 1, 67281, Kirchheim an der Weinstraße",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.5,
+  "reviews": 284,
+  "dinnerType": "menu",
+  "dinner": 108,
+  "dinnerNote": "Tasting menu (other menus from €61)",
+  "sourceType": "site",
+  "source": "https://schwarz-restaurant.de/alacarte",
+  "website": "https://schwarz-restaurant.de/",
+  "lat": 49.537908,
+  "lng": 8.1805674,
+  "placeId": "ChIJ67pvm506lkcRM9WzN67TId4"
+}

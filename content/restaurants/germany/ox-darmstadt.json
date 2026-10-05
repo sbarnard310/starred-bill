@@ -1,0 +1,17 @@
+{
+  "name": "OX",
+  "city": "hesse",
+  "area": "Darmstadt",
+  "address": "Mauerstraße 6, 64289, Darmstadt",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 225,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ox-restaurant.de/",
+  "lat": 49.8760593,
+  "lng": 8.66055,
+  "placeId": "ChIJm0rYiY1xvUcR_d4JFRu8Wxk"
+}

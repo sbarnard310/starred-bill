@@ -1,0 +1,17 @@
+{
+  "name": "June",
+  "city": "bavaria",
+  "area": "Übersee",
+  "address": "Seestraße 10, 83236, Übersee",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.9,
+  "reviews": 339,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.june.restaurant",
+  "lat": 47.8405088,
+  "lng": 12.4743211,
+  "placeId": "ChIJS_BVNwBtdkcRTkNwal3UYTM"
+}

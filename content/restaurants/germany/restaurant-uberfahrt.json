@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant Überfahrt",
+  "city": "bavaria",
+  "area": "Rottach-Egern",
+  "address": "Überfahrtstraße 10, 83700, Rottach-Egern",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.3,
+  "reviews": 91,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.althoffcollection.com/de/althoff-seehotel-ueberfahrt/restaurant-ueberfahrt",
+  "lat": 47.6966645,
+  "lng": 11.7581005,
+  "placeId": "ChIJDaXFaJWOnUcRqxYKSDxOfVM"
+}

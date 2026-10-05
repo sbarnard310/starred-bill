@@ -1,0 +1,20 @@
+{
+  "name": "Schwabenstube",
+  "city": "baden-wurttemberg",
+  "area": "Asperg",
+  "address": "Stuttgarter Straße 2, 71679, Asperg",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 70,
+  "dinnerType": "menu",
+  "dinner": 95,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "sourceType": "site",
+  "source": "https://www.adler-asperg.de/de/restaurants/arrangements/twenu/",
+  "wine": 65,
+  "website": "https://www.adler-asperg.de/de/",
+  "lat": 48.9046036,
+  "lng": 9.1352183,
+  "placeId": "ChIJq6p2MkbRmUcRa5XuquftPZY"
+}

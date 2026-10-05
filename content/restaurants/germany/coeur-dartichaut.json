@@ -1,0 +1,17 @@
+{
+  "name": "Coeur D'Artichaut",
+  "city": "north-rhine-westphalia",
+  "area": "Münster",
+  "address": "Alter Fischmarkt 11A, 48143, Münster",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.9,
+  "reviews": 206,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.coeur-dartichaut.de/",
+  "lat": 51.9636793,
+  "lng": 7.6289064,
+  "placeId": "ChIJM8AAoq-7uUcRDMHeywc1_pE"
+}

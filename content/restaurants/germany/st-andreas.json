@@ -1,0 +1,17 @@
+{
+  "name": "St. Andreas",
+  "city": "saxony",
+  "area": "Aue - Bad Schlema",
+  "address": "Altmarkt 1, 08280, Aue - Bad Schlema",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 37,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotel-blauerengel.de",
+  "lat": 50.5865356,
+  "lng": 12.7014864,
+  "placeId": "ChIJrUWTZBTKoEcRZSz0GJbPlbU"
+}

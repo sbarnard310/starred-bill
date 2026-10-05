@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant Karner",
+  "city": "bavaria",
+  "area": "Frasdorf",
+  "address": "Nußbaumstraße 6, 83112, Frasdorf",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.3,
+  "reviews": 820,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-karner.com/",
+  "lat": 47.7997713,
+  "lng": 12.2825454,
+  "placeId": "ChIJrwsmEmoUdkcRZx538vGmTW4"
+}

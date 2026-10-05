@@ -1,0 +1,16 @@
+{
+  "name": "Wielandshöhe",
+  "city": "stuttgart",
+  "address": "Alte Weinsteige 71, 70597, Stuttgart",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.5,
+  "reviews": 822,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.wielandshoehe.de/",
+  "lat": 48.7572078,
+  "lng": 9.1706992,
+  "placeId": "ChIJa_eB91XbmUcRJp2g6_BYWhE"
+}

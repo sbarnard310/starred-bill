@@ -1,0 +1,17 @@
+{
+  "name": "Cølbo",
+  "city": "bavaria",
+  "area": "Klingenberg am Main",
+  "address": "Rathausstraße 15, 63911, Klingenberg am Main",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 74,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.colbo-restaurant.de/",
+  "lat": 49.7831321,
+  "lng": 9.1820607,
+  "placeId": "ChIJSzuCoVVRvUcRQ8HCryrRFSA"
+}

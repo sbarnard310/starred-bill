@@ -1,0 +1,17 @@
+{
+  "name": "Le Cerf",
+  "city": "baden-wurttemberg",
+  "area": "Zweiflingen",
+  "address": "Kärcherstr. 11, 74639, Zweiflingen",
+  "stars": 2,
+  "cuisine": "Classic French",
+  "rating": 4.5,
+  "reviews": 33,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://schlosshotel-friedrichsruhe.de/gourmet-restaurant-le-cerf/",
+  "lat": 49.2436455,
+  "lng": 9.5258355,
+  "placeId": "ChIJu5kVBGw_mEcR96W2TuWdKWI"
+}

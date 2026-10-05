@@ -1,0 +1,18 @@
+{
+  "name": "Im Schiffchen",
+  "city": "dusseldorf",
+  "address": "Kaiserswerther Markt 9, 40489, Düsseldorf",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 3.8,
+  "reviews": 425,
+  "dinnerType": "menu",
+  "dinner": 218,
+  "dinnerNote": "Tasting menu (other menus from €54)",
+  "sourceType": "site",
+  "source": "https://im-schiffchen.de/menuekarte/",
+  "website": "https://im-schiffchen.de/",
+  "lat": 51.3015121,
+  "lng": 6.7338663,
+  "placeId": "ChIJnY6XPZa3uEcRHEhbtN7-hoU"
+}

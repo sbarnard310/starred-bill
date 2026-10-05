@@ -1,0 +1,19 @@
+{
+  "name": "Steins Traube",
+  "city": "rhineland-palatinate",
+  "area": "Mainz",
+  "address": "Poststraße 4, 55126, Mainz",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.7,
+  "reviews": 721,
+  "dinnerType": "menu",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://steins-traube.de/en/new-years-eve-menu/",
+  "website": "https://steins-traube.de/",
+  "lat": 49.9838324,
+  "lng": 8.1746485,
+  "placeId": "ChIJWaaQXXGUvUcR0beTevT-oqg"
+}

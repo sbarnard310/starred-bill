@@ -1,0 +1,19 @@
+{
+  "name": "1804 Hirschau",
+  "city": "munich",
+  "address": "Gyßlingstraße 15, 80805, Munich",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 158,
+  "dinnerType": "menu",
+  "dinner": 300,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.1804muc.de",
+  "wine": 280,
+  "website": "https://www.1804muc.de",
+  "lat": 48.161743,
+  "lng": 11.602656,
+  "placeId": "ChIJCUeOzHx1nkcR8qrOfFvCNF8"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Essigbrätlein",
+  "city": "nuremberg",
+  "address": "Weinmarkt 3, 90403, Nuremberg",
+  "stars": 2,
+  "cuisine": "Innovative",
+  "rating": 4.7,
+  "reviews": 487,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://essigbraetlein.de/",
+  "lat": 49.455062,
+  "lng": 11.0748188,
+  "placeId": "ChIJ47pfsa9Xn0cRcvyrpJd1XFg"
+}

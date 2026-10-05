@@ -1,0 +1,20 @@
+{
+  "name": "es:senz",
+  "city": "bavaria",
+  "area": "Grassau",
+  "address": "Mietenkamer Straße 65, 83224, Grassau",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 372,
+  "dinnerType": "menu",
+  "dinner": 436,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.das-achental.com/de/es-senz-edip-sigl.html",
+  "wine": 145,
+  "website": "https://www.das-achental.com/essenz",
+  "lat": 47.7855563,
+  "lng": 12.4655456,
+  "placeId": "ChIJB70KQ9JpdkcRKCDJBXmFfno"
+}

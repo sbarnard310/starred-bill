@@ -1,0 +1,19 @@
+{
+  "name": "HAEBEL",
+  "city": "hamburg",
+  "address": "Paul-Roosen-Straße 31, 22767, Hamburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 499,
+  "dinnerType": "menu",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu (other menus from €149)",
+  "sourceType": "site",
+  "source": "https://www.haebel.hamburg/_files/ugd/24a9a3_3c7058222b7a4b568bdb21fe0110dc83.pdf",
+  "wine": 99,
+  "website": "https://www.haebel.hamburg/",
+  "lat": 53.5532432,
+  "lng": 9.9574392,
+  "placeId": "ChIJR7BrCm-PsUcRazHpLieQ2lA"
+}

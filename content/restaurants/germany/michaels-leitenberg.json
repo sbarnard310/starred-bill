@@ -1,0 +1,17 @@
+{
+  "name": "Michaels Leitenberg",
+  "city": "bavaria",
+  "area": "Frasdorf",
+  "address": "Weiherweg 3, 83112, Frasdorf",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 273,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.michaels-leitenberg.de/",
+  "lat": 47.8046083,
+  "lng": 12.3074069,
+  "placeId": "ChIJO9siSYgUdkcRvXby91kPHrk"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "The Table Kevin Fehling",
+  "city": "hamburg",
+  "address": "Shanghaiallee 15, 20457, Hamburg",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 468,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://thetable-hamburg.de/",
+  "lat": 53.5424857,
+  "lng": 10.0030728,
+  "placeId": "ChIJY8mKQvyOsUcRA-H7nvNI-L8"
+}

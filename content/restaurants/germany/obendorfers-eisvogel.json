@@ -1,0 +1,20 @@
+{
+  "name": "Obendorfers Eisvogel",
+  "city": "bavaria",
+  "area": "Neunburg vorm Wald",
+  "address": "Hofenstetten 55, 92431, Neunburg vorm Wald",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 116,
+  "dinnerType": "menu",
+  "dinner": 395,
+  "dinnerNote": "Tasting menu (other menus from €248)",
+  "sourceType": "site",
+  "source": "https://www.obendorfers-eisvogel.de/",
+  "wine": 129,
+  "website": "https://www.obendorfers-eisvogel.de/",
+  "lat": 49.338408,
+  "lng": 12.261695,
+  "placeId": "ChIJMeEMK9v1n0cRHqpPbC2l4yw"
+}

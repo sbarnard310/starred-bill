@@ -1,0 +1,18 @@
+{
+  "name": "Hupperts",
+  "city": "stuttgart",
+  "address": "Gebelsbergstraße 97, 70199, Stuttgart",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 289,
+  "dinnerType": "menu",
+  "dinner": 154,
+  "dinnerNote": "Tasting menu (other menus from €144)",
+  "sourceType": "site",
+  "source": "https://www.hupperts-restaurant.de/abendkarte.html",
+  "website": "https://www.hupperts-restaurant.de/",
+  "lat": 48.7614095,
+  "lng": 9.151474,
+  "placeId": "ChIJ3YMvgWDbmUcRWXQUOAwgwDc"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "SoulFood",
+  "city": "bavaria",
+  "area": "Auerbach in der Oberpfalz",
+  "address": "Unterer Markt 35, 91275, Auerbach in der Oberpfalz",
+  "stars": 1,
+  "cuisine": "International",
+  "rating": 4.8,
+  "reviews": 412,
+  "dinnerType": "menu",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-soulfood.com/",
+  "wine": 130,
+  "website": "https://www.restaurant-soulfood.com/",
+  "lat": 49.6930717,
+  "lng": 11.6295198,
+  "placeId": "ChIJ3Yte_hLGoUcRLEW2pHLQR9s"
+}

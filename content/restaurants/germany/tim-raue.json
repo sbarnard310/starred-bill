@@ -1,0 +1,16 @@
+{
+  "name": "Tim Raue",
+  "city": "berlin",
+  "address": "Rudi-Dutschke-Straße 26, 10969, Berlin",
+  "stars": 2,
+  "cuisine": "Asian Influences",
+  "rating": 4.6,
+  "reviews": 1527,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://tim-raue.com/",
+  "lat": 52.5070342,
+  "lng": 13.3933841,
+  "placeId": "ChIJpdyYVNFRqEcRFTrYsDXDrY4"
+}

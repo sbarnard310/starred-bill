@@ -1,0 +1,19 @@
+{
+  "name": "THE CLOUD by Käfer",
+  "city": "munich",
+  "address": "Am Olympiapark 1, 80809, Munich",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 381,
+  "dinnerType": "menu",
+  "dinner": 290,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://thecloud.restaurant/",
+  "wine": 140,
+  "website": "https://thecloud.restaurant/",
+  "lat": 48.17737,
+  "lng": 11.55652,
+  "placeId": "ChIJt96jin12nkcRIY-FM4ZpPWc"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Eisenbahn",
+  "city": "baden-wurttemberg",
+  "area": "Schwäbisch Hall",
+  "address": "Karl-Kurz-Straße 2, 74523, Schwäbisch Hall",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.5,
+  "reviews": 62,
+  "dinnerType": "menu",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "site",
+  "source": "https://www.landhauswolf.eu/wp-content/uploads/2026/06/menue-prestige-sommer.pdf",
+  "website": "https://www.landhauswolf.eu/",
+  "lat": 49.0988122,
+  "lng": 9.7702979,
+  "placeId": "ChIJo1JL4o1QmEcRl2WxsP273qk"
+}

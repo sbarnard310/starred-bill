@@ -1,0 +1,16 @@
+{
+  "name": "Tohru in der Schreiberei",
+  "city": "munich",
+  "address": "Burgstraße 5, 80331, Munich",
+  "stars": 3,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 283,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://schreiberei-muc.de/",
+  "lat": 48.137597,
+  "lng": 11.577475,
+  "placeId": "ChIJ12Lhfm51nkcRQhxPXh8nb88"
+}

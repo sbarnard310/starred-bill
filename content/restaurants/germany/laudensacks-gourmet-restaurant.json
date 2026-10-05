@@ -1,0 +1,17 @@
+{
+  "name": "Laudensacks Gourmet Restaurant",
+  "city": "bavaria",
+  "area": "Bad Kissingen",
+  "address": "Kurhausstraße 28, 97688, Bad Kissingen",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 22,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.laudensacks.de/gourmet/speisekarte",
+  "lat": 50.190867,
+  "lng": 10.0774434,
+  "placeId": "ChIJIcn3HDjjokcRsoYgGC0jq5k"
+}

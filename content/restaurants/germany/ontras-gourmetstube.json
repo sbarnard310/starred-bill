@@ -1,0 +1,17 @@
+{
+  "name": "Ontra's Gourmetstube",
+  "city": "bavaria",
+  "area": "Regensburg",
+  "address": "Franz-Mayer-Straße 5a, 93053, Regensburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 638,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ontra-regensburg.de/gourmetmenue/",
+  "lat": 49.0016893,
+  "lng": 12.1025791,
+  "placeId": "ChIJN9kLxMTBn0cRuAc8JwRwEZ0"
+}

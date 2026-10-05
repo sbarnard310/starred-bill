@@ -1,0 +1,19 @@
+{
+  "name": "Epicures",
+  "city": "bavaria",
+  "area": "Aschau im Chiemgau",
+  "address": "Kirchplatz 1, 83229, Aschau im Chiemgau",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 3,
+  "dinnerType": "menu",
+  "dinner": 270,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.residenz-heinz-winkler.de/",
+  "website": "https://www.residenz-heinz-winkler.de/",
+  "lat": 47.779365,
+  "lng": 12.3217303,
+  "placeId": "ChIJAZrckvIVdkcRlgG525ZUmiI"
+}

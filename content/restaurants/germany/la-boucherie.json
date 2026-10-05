@@ -1,0 +1,17 @@
+{
+  "name": "La Boucherie",
+  "city": "bavaria",
+  "area": "Kreuzwertheim",
+  "address": "Hauptstraße 18, 97892, Kreuzwertheim",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 20,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.landgasthofzumkaffelstein.de/kulinarik/la-boucherie/",
+  "lat": 49.7649722,
+  "lng": 9.5160361,
+  "placeId": "ChIJmyHbNdqlokcRbwrH1QKdK7s"
+}

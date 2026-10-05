@@ -1,0 +1,16 @@
+{
+  "name": "Sparkling Bistro",
+  "city": "munich",
+  "address": "Amalienstraße 89/ Türkenstraße 86, 80799, Munich",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 295,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantsparklingbistro.com/",
+  "lat": 48.1519723,
+  "lng": 11.5779835,
+  "placeId": "ChIJsby3GOt1nkcRpZ4xQ78l6jA"
+}

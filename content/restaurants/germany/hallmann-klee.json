@@ -1,0 +1,16 @@
+{
+  "name": "hallmann & klee",
+  "city": "berlin",
+  "address": "Böhmische Straße 13, 12055, Berlin",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 851,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hallmann-klee.de/",
+  "lat": 52.4738168,
+  "lng": 13.4497485,
+  "placeId": "ChIJa6BtJAtPqEcRfVVCtKgmXAA"
+}

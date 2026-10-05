@@ -1,0 +1,19 @@
+{
+  "name": "Reuter",
+  "city": "north-rhine-westphalia",
+  "area": "Rheda-Wiedenbrück",
+  "address": "Bleichstraße 3, 33378, Rheda-Wiedenbrück",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.6,
+  "reviews": 339,
+  "dinnerType": "menu",
+  "dinner": 174,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "sourceType": "site",
+  "source": "https://www.hotelreuter.de/restaurant/gourmet-speisekarte",
+  "website": "https://www.hotelreuter.de/restaurant/gourmet-restaurant",
+  "lat": 51.8540706,
+  "lng": 8.2912568,
+  "placeId": "ChIJgzeK2BwpukcRrzo2iwU-2oY"
+}

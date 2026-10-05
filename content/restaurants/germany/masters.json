@@ -1,0 +1,19 @@
+{
+  "name": "Masters",
+  "city": "thuringia",
+  "area": "Blankenhain",
+  "address": "Lindenallee 1, 99444, Blankenhain",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 5,
+  "reviews": 25,
+  "dinnerType": "menu",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-masters.de/wp-content/uploads/sites/6/2026/04/Menuekarte_Floraison.pdf",
+  "website": "https://www.restaurant-masters.de/",
+  "lat": 50.8747844,
+  "lng": 11.3422232,
+  "placeId": "ChIJi1MJRqYGpEcRWFVVdXdtDaU"
+}

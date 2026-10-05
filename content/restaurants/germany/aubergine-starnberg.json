@@ -1,0 +1,19 @@
+{
+  "name": "Aubergine",
+  "city": "bavaria",
+  "area": "Starnberg",
+  "address": "Münchner Straße 17, 82319, Starnberg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 98,
+  "dinnerType": "menu",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu (other menus from €149)",
+  "sourceType": "site",
+  "source": "https://www.vier-jahreszeiten-starnberg.de/menues-aubergine/",
+  "website": "https://www.aubergine-starnberg.de/",
+  "lat": 48.0017757,
+  "lng": 11.3498541,
+  "placeId": "ChIJu5b14SXQnUcRuu-h8Den9T8"
+}

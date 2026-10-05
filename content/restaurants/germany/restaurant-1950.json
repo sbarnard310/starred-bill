@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant 1950",
+  "city": "baden-wurttemberg",
+  "area": "Hayingen",
+  "address": "Aichelauer Straße 6, 72534, Hayingen",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 5,
+  "reviews": 69,
+  "dinnerType": "menu",
+  "dinner": 65,
+  "dinnerNote": "Tasting menu (other menus from €49)",
+  "sourceType": "site",
+  "source": "https://www.tressbrueder.de/bio-fine-dining-restaurant-1950/",
+  "website": "https://www.tressbrueder.de/bio-fine-dining-restaurant-1950",
+  "lat": 48.3201555,
+  "lng": 9.4323725,
+  "placeId": "ChIJCzI9zoInmkcR8pJpTS3L2lo"
+}

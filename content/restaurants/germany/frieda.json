@@ -1,0 +1,19 @@
+{
+  "name": "Frieda",
+  "city": "saxony",
+  "area": "Leipzig",
+  "address": "Menckestraße 48, 04155, Leipzig",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 417,
+  "dinnerType": "menu",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.frieda-restaurant.de/",
+  "website": "https://www.frieda-restaurant.de/",
+  "lat": 51.3594485,
+  "lng": 12.3624098,
+  "placeId": "ChIJt5r6Sp73pkcROI8bDUKkvM0"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "SchwarzGold",
+  "city": "north-rhine-westphalia",
+  "area": "Dortmund",
+  "address": "Emscherallee 11, 44369, Dortmund",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.8,
+  "reviews": 127,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://schwarzgold-dortmund.de/",
+  "lat": 51.5420051,
+  "lng": 7.4101378,
+  "placeId": "ChIJkf0eouYbuUcR7be4gpLXhHw"
+}

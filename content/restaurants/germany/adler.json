@@ -1,0 +1,20 @@
+{
+  "name": "Adler",
+  "city": "baden-wurttemberg",
+  "area": "Lahr",
+  "address": "Reichenbacher Hauptstraße 18, 77933, Lahr",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 576,
+  "dinnerType": "menu",
+  "dinner": 228,
+  "dinnerNote": "Tasting menu (other menus from €58)",
+  "sourceType": "site",
+  "source": "https://adler-lahr.de/restaurant/speisenkarte",
+  "wine": 252,
+  "website": "https://adler-lahr.de",
+  "lat": 48.3299999,
+  "lng": 7.9249354,
+  "placeId": "ChIJw87e4dkukUcRX1CYzxaUu_0"
+}

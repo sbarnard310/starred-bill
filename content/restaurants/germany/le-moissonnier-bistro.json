@@ -1,0 +1,18 @@
+{
+  "name": "Le Moissonnier Bistro",
+  "city": "cologne",
+  "address": "Krefelder Straße 25, 50670, Cologne",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.7,
+  "reviews": 703,
+  "dinnerType": "menu",
+  "dinner": 113,
+  "dinnerNote": "Tasting menu (other menus from €51)",
+  "sourceType": "site",
+  "source": "https://www.lemoissonnier.de/",
+  "website": "https://lemoissonnier.de/",
+  "lat": 50.9507694,
+  "lng": 6.9524362,
+  "placeId": "ChIJw9dt7KElv0cRJZZpH5nyJpg"
+}

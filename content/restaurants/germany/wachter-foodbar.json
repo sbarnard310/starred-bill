@@ -1,0 +1,17 @@
+{
+  "name": "Wachter Foodbar",
+  "city": "bavaria",
+  "area": "Prien am Chiemsee",
+  "address": "Bernauer Straße 31, 83209, Prien am Chiemsee",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 127,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.wachter-foodbar.de/",
+  "lat": 47.8506316,
+  "lng": 12.3450485,
+  "placeId": "ChIJk8L9KhwTdkcRBigYcNx7urc"
+}

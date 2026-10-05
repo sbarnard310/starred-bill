@@ -1,0 +1,17 @@
+{
+  "name": "Traube",
+  "city": "baden-wurttemberg",
+  "area": "Efringen-Kirchen",
+  "address": "Alemannenstraße 19, 79588, Efringen-Kirchen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 93,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.traube-blansingen.de/",
+  "lat": 47.6909385,
+  "lng": 7.5398759,
+  "placeId": "ChIJtalU4j6jkUcRIpkuqoSOizk"
+}

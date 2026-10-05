@@ -1,0 +1,19 @@
+{
+  "name": "Rosin",
+  "city": "north-rhine-westphalia",
+  "area": "Dorsten",
+  "address": "Hervester Straße 18, 46286, Dorsten",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 811,
+  "dinnerType": "menu",
+  "dinner": 51,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.frankrosin.de/restaurant-rosin/speisekarte",
+  "website": "https://www.frankrosin.de/",
+  "lat": 51.7191315,
+  "lng": 7.0132284,
+  "placeId": "ChIJZbFwzTDxuEcRzPHlS8w7wss"
+}

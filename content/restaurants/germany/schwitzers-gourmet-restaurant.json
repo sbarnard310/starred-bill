@@ -1,0 +1,20 @@
+{
+  "name": "Schwitzer's Gourmet-Restaurant",
+  "city": "baden-wurttemberg",
+  "area": "Waldbronn",
+  "address": "Etzenroter Straße 4, 76337, Waldbronn",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.5,
+  "reviews": 58,
+  "dinnerType": "menu",
+  "dinner": 189,
+  "dinnerNote": "Tasting menu (other menus from €66)",
+  "sourceType": "site",
+  "source": "https://schwitzers.com/gourmet-restaurant/",
+  "wine": 44,
+  "website": "https://schwitzers.com/gourmet-restaurant/",
+  "lat": 48.9209362,
+  "lng": 8.4748202,
+  "placeId": "ChIJowNke4APl0cRLJZdmAhiKb8"
+}

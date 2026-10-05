@@ -1,0 +1,17 @@
+{
+  "name": "Aska",
+  "city": "bavaria",
+  "area": "Regensburg",
+  "address": "Watmarkt 5, 93047, Regensburg",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 206,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://aska.restaurant/",
+  "lat": 49.0200415,
+  "lng": 12.0963365,
+  "placeId": "ChIJj-yhhHbBn0cRcBfQ_9MlDcE"
+}

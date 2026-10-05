@@ -1,0 +1,17 @@
+{
+  "name": "Cheval Blanc",
+  "city": "bavaria",
+  "area": "Illschwang",
+  "address": "Am Kirchberg 1, 92278, Illschwang",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.9,
+  "reviews": 36,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.weisses-ross.de/",
+  "lat": 49.4480661,
+  "lng": 11.6842236,
+  "placeId": "ChIJO9V43MHVoUcR9vzSB8a0epU"
+}

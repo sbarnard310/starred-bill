@@ -1,0 +1,16 @@
+{
+  "name": "Piment",
+  "city": "hamburg",
+  "address": "Lehmweg 29, 20251, Hamburg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 259,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-piment.de/",
+  "lat": 53.5820645,
+  "lng": 9.9797292,
+  "placeId": "ChIJee-pR7WIsUcReZ7J4BAjEcA"
+}

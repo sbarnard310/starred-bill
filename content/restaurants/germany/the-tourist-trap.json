@@ -1,0 +1,19 @@
+{
+  "name": "The Tourist Trap",
+  "city": "baden-wurttemberg",
+  "area": "Mannheim",
+  "address": "Neckarvorlandstraße 2a, 68159, Mannheim",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 132,
+  "dinnerType": "menu",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €79)",
+  "sourceType": "site",
+  "source": "https://the-tourist-trap.de/",
+  "website": "https://the-tourist-trap.de/",
+  "lat": 49.4946298,
+  "lng": 8.4687498,
+  "placeId": "ChIJkZDzVi3Nl0cRdj5x5kLx-2w"
+}

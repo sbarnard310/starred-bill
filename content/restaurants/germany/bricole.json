@@ -1,0 +1,16 @@
+{
+  "name": "Bricole",
+  "city": "berlin",
+  "address": "Senefelderstraße 30, 10437, Berlin",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 457,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.bricole.de/",
+  "lat": 52.5410035,
+  "lng": 13.4224087,
+  "placeId": "ChIJQUACIP5NqEcRUZbYNUUL1DU"
+}

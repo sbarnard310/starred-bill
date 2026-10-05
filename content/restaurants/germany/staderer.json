@@ -1,0 +1,19 @@
+{
+  "name": "Staderer",
+  "city": "bavaria",
+  "area": "Eichstätt",
+  "address": "Franz-Xaver Platz 1, 85072, Eichstätt",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.1,
+  "reviews": 104,
+  "dinnerType": "menu",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://dasaltmuehltal.de/kulinarik/staderer/",
+  "website": "https://dasaltmuehltal.de/staderer/",
+  "lat": 48.893446,
+  "lng": 11.181198,
+  "placeId": "ChIJH3zJDGgfn0cR1wiOtNgcxjI"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Schote",
+  "city": "north-rhine-westphalia",
+  "area": "Bergisch Gladbach",
+  "address": "Diepeschrather Weg 80, 51469, Bergisch Gladbach",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.5,
+  "reviews": 437,
+  "dinnerType": "menu",
+  "dinner": 215,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.diepeschrather-muehle.de/",
+  "website": "https://www.diepeschrather-muehle.de/",
+  "lat": 50.9939971,
+  "lng": 7.0775649,
+  "placeId": "ChIJMZFQjtbCuEcR5U8U4b-lBeI"
+}

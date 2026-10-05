@@ -1,0 +1,17 @@
+{
+  "name": "Admiral",
+  "city": "rhineland-palatinate",
+  "area": "Weisenheim am Berg",
+  "address": "Leistadter Straße 6, 67273, Weisenheim am Berg",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 235,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.admiral-weisenheim.de/",
+  "lat": 49.51273,
+  "lng": 8.1545977,
+  "placeId": "ChIJywa4NGk6lkcR4stzg8gGtxo"
+}

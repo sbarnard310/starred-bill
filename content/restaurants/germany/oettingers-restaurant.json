@@ -1,0 +1,20 @@
+{
+  "name": "Oettinger's Restaurant",
+  "city": "baden-wurttemberg",
+  "area": "Fellbach",
+  "address": "Fellbacher Straße 2, 70736, Fellbach",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 134,
+  "dinnerType": "menu",
+  "dinner": 164,
+  "dinnerNote": "Tasting menu (other menus from €59)",
+  "sourceType": "site",
+  "source": "https://www.hirsch-fellbach.de/data/uploads/speisekarten/restaurant.pdf",
+  "wine": 79,
+  "website": "https://www.hirsch-fellbach.de/",
+  "lat": 48.8339908,
+  "lng": 9.2634674,
+  "placeId": "ChIJbc5V5XzPmUcRHvMxfGR2Afw"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Alois - Dallmayr Fine Dining",
+  "city": "munich",
+  "address": "Dienerstraße 14, 80331, Munich",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 309,
+  "dinnerType": "menu",
+  "dinner": 300,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.dallmayr.com/fileadmin/Redaktion/Restaurant/Restaurant_Alois_Menue.pdf",
+  "website": "https://www.dallmayr.com/de/delikatessenhaus/restaurant/",
+  "lat": 48.1383054,
+  "lng": 11.5771585,
+  "placeId": "ChIJUbU58wV1nkcR6jK2iXRta70"
+}

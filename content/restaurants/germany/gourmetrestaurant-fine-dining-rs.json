@@ -1,0 +1,19 @@
+{
+  "name": "Gourmetrestaurant \"fine dining RS\"",
+  "city": "baden-wurttemberg",
+  "area": "Salach",
+  "address": "Burg Staufeneck 1, 73084, Salach",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 5,
+  "reviews": 2,
+  "dinnerType": "menu",
+  "dinner": 415,
+  "dinnerNote": "Tasting menu (other menus from €239)",
+  "sourceType": "site",
+  "source": "https://www.burg-staufeneck.de/de/",
+  "website": "https://www.burg-staufeneck.de/de/",
+  "lat": 48.6917367,
+  "lng": 9.7666002,
+  "placeId": "ChIJa77XbwChmUcR9XJU3QWhJ70"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Victor's Fine Dining by christian bau",
+  "city": "saarland",
+  "area": "Perl",
+  "address": "Schlossstraße 27, 66706, Perl",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 358,
+  "dinnerType": "menu",
+  "dinner": 525,
+  "dinnerNote": "Tasting menu (other menus from €425)",
+  "sourceType": "site",
+  "source": "https://www.victors-fine-dining.de/menues-arrangements",
+  "website": "https://www.victors-fine-dining.de/",
+  "lat": 49.5351732,
+  "lng": 6.3872109,
+  "placeId": "ChIJXy2UBMJqlUcREpPkYNXvM9k"
+}

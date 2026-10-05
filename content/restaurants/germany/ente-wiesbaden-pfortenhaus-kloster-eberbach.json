@@ -1,0 +1,19 @@
+{
+  "name": "Ente Wiesbaden - Pfortenhaus Kloster Eberbach",
+  "city": "hesse",
+  "area": "Eltville am Rhein",
+  "address": "Kloster-Eberbach-Straße 1, 65346, Eltville am Rhein",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 24,
+  "dinnerType": "menu",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu (other menus from €50)",
+  "sourceType": "site",
+  "source": "https://nassauer-hof-wiesbaden.hommage-hotels.com/fileadmin/Media/Nassauer-Hof/Kulinarik/HLHC_Ente_Speisekarte.pdf.pdf",
+  "website": "https://www.hommage-hotels.com/nassauer-hof-wiesbaden/kulinarik/restaurant-ente",
+  "lat": 50.041712,
+  "lng": 8.047292,
+  "placeId": "ChIJWfOfNiTrvUcRXmFBnAePpEk"
+}

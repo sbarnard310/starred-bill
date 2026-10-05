@@ -1,0 +1,18 @@
+{
+  "name": "etz",
+  "city": "nuremberg",
+  "address": "Wiesentalstraße 40, 90419, Nuremberg",
+  "stars": 2,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.9,
+  "reviews": 209,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://etzrestaurant.de/en/pages/speisekarte",
+  "website": "https://etzrestaurant.de/",
+  "lat": 49.4575699,
+  "lng": 11.0537152,
+  "placeId": "ChIJt7cI6LZXn0cRGnyQZiwAUTo"
+}

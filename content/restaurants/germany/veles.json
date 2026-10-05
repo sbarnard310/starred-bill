@@ -1,0 +1,18 @@
+{
+  "name": "Veles",
+  "city": "nuremberg",
+  "address": "Kernstraße 29, 90429, Nuremberg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 283,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.veles-restaurant.de/",
+  "website": "https://www.veles-restaurant.de/",
+  "lat": 49.4491082,
+  "lng": 11.0541219,
+  "placeId": "ChIJgb9zEFZWn0cRsnDUeYV0aJ8"
+}

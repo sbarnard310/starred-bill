@@ -1,0 +1,16 @@
+{
+  "name": "Brothers",
+  "city": "munich",
+  "address": "Kurfürstenstraße 31, 80801, Munich",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 193,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.brothers-munich.com/",
+  "lat": 48.156266,
+  "lng": 11.5758627,
+  "placeId": "ChIJt3PaPup1nkcRxj7eNtX8VHU"
+}

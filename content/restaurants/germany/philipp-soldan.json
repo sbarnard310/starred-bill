@@ -1,0 +1,19 @@
+{
+  "name": "Philipp Soldan",
+  "city": "hesse",
+  "area": "Frankenberg",
+  "address": "Marktplatz 2, 35066, Frankenberg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 70,
+  "dinnerType": "menu",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu (other menus from €79)",
+  "sourceType": "site",
+  "source": "https://sonne-frankenberg.de/philipp-soldan/",
+  "website": "https://sonne-frankenberg.de/philipp-soldan/",
+  "lat": 51.0592147,
+  "lng": 8.8017264,
+  "placeId": "ChIJZ_wFawCBu0cREixvSX35f2U"
+}

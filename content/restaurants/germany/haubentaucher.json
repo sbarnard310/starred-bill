@@ -1,0 +1,17 @@
+{
+  "name": "Haubentaucher",
+  "city": "bavaria",
+  "area": "Rottach-Egern",
+  "address": "Seestraße 30, 83700, Rottach-Egern",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 556,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.haubentaucher-tegernsee.de/",
+  "lat": 47.6953833,
+  "lng": 11.766113,
+  "placeId": "ChIJKfxrx7iOnUcRvszyPBP72Iw"
+}

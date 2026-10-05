@@ -1,0 +1,16 @@
+{
+  "name": "Arc Restaurant",
+  "city": "hamburg",
+  "address": "Eppendorfer Weg 58, 20259, Hamburg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 90,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.arcrestaurant.de/",
+  "lat": 53.5724603,
+  "lng": 9.9597672,
+  "placeId": "ChIJA5Pi4ZeJsUcRIbuHbMnUdZM"
+}

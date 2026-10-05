@@ -1,0 +1,16 @@
+{
+  "name": "the dune",
+  "city": "frankfurt-on-the-main",
+  "address": "Paul-Ehrlich-Straße 9, 60596, Frankfurt on the Main",
+  "stars": 2,
+  "cuisine": "International",
+  "rating": 4.9,
+  "reviews": 41,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.althoffcollection.com/de/the-florentin/kulinarik",
+  "lat": 50.0976127,
+  "lng": 8.6690663,
+  "placeId": "ChIJ4z4HbgANvUcRwTeKB5EsTLM"
+}

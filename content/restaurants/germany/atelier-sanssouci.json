@@ -1,0 +1,17 @@
+{
+  "name": "Atelier Sanssouci",
+  "city": "saxony",
+  "area": "Radebeul",
+  "address": "Augustusweg 48, 01445, Radebeul",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 114,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotel-villa-sorgenfrei.de/restaurant",
+  "lat": 51.1086096,
+  "lng": 13.6753756,
+  "placeId": "ChIJ0W1k2t7RCUcRKNA8TG-1weE"
+}

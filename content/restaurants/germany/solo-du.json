@@ -1,0 +1,20 @@
+{
+  "name": "Solo Du",
+  "city": "bavaria",
+  "area": "Bischofswiesen",
+  "address": "Berchtesgadener Straße 111, 83483, Bischofswiesen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 42,
+  "dinnerType": "menu",
+  "dinner": 65,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.kulturhof.bayern/kulinarik/solo-du",
+  "wine": 65,
+  "website": "https://www.kulturhof.bayern/solo-du",
+  "lat": 47.627961,
+  "lng": 12.989256,
+  "placeId": "ChIJdVCD16DtdkcRlzcSWKMflKQ"
+}

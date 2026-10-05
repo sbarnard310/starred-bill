@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant Alexander Huber",
+  "city": "bavaria",
+  "area": "Pleiskirchen",
+  "address": "Hofmark 3, 84568, Pleiskirchen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 426,
+  "dinnerType": "menu",
+  "dinner": 95,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.huber-wirt.de/",
+  "website": "https://www.huber-wirt.de/",
+  "lat": 48.3069731,
+  "lng": 12.5964184,
+  "placeId": "ChIJM939a83BdUcRCKRSHo2kWtI"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Maerz - Das Restaurant",
+  "city": "baden-wurttemberg",
+  "area": "Bietigheim-Bissingen",
+  "address": "Kronenbergstraße 14, 74321, Bietigheim-Bissingen",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.8,
+  "reviews": 78,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://maerzundmaerz.de/",
+  "lat": 48.9609392,
+  "lng": 9.1290315,
+  "placeId": "ChIJ_0NBrL3VmUcRSK0zezNmg9s"
+}

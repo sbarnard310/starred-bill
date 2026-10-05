@@ -1,0 +1,17 @@
+{
+  "name": "Schwarzwaldstube",
+  "city": "baden-wurttemberg",
+  "area": "Baiersbronn",
+  "address": "Tonbachstraße 237, 72270, Baiersbronn",
+  "stars": 3,
+  "cuisine": "Classic French",
+  "rating": 4.8,
+  "reviews": 216,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.traube-tonbach.de/kulinarik/schwarzwaldstube/",
+  "lat": 48.5369113,
+  "lng": 8.3582803,
+  "placeId": "ChIJidkYT_0wl0cRwM1SNn5mWLI"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Laesâ",
+  "city": "stuttgart",
+  "address": "Wilhelmsplatz 6, 70182, Stuttgart",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 63,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.laesa.de/",
+  "lat": 48.7714421,
+  "lng": 9.1791046,
+  "placeId": "ChIJpZ6lkK_bmUcREHqOeXdDnD8"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Merkles Restaurant",
+  "city": "baden-wurttemberg",
+  "area": "Endingen am Kaiserstuhl",
+  "address": "Hauptstraße 2, 79346, Endingen am Kaiserstuhl",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 224,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.merkles-restaurant.de/",
+  "lat": 48.1415478,
+  "lng": 7.7074626,
+  "placeId": "ChIJARVR5_U9kUcR2LcKc_VxFOo"
+}

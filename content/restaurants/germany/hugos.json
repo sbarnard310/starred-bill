@@ -1,0 +1,16 @@
+{
+  "name": "Hugos",
+  "city": "berlin",
+  "address": "Budapester Straße 2, 10787, Berlin",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 357,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.berlin.intercontinental.com/de/dine/hugos-restaurant/",
+  "lat": 52.506852,
+  "lng": 13.3455401,
+  "placeId": "ChIJF6VjuqxRqEcRiTGE53QfKHE"
+}

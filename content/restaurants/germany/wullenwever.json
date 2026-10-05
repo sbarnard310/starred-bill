@@ -1,0 +1,17 @@
+{
+  "name": "Wullenwever",
+  "city": "schleswig-holstein",
+  "area": "Lübeck",
+  "address": "Beckergrube 71, 23552, Lübeck",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 265,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.wullenwever.de/",
+  "lat": 53.8696544,
+  "lng": 10.682255,
+  "placeId": "ChIJYWZOtVcJskcRiO1p7xL3UFM"
+}

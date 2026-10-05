@@ -1,0 +1,17 @@
+{
+  "name": "Theodor's",
+  "city": "north-rhine-westphalia",
+  "area": "Bonn",
+  "address": "Friedrich-Breuer-Str. 98, 53225, Bonn",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 145,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://theodors-restaurant.de/",
+  "lat": 50.7398206,
+  "lng": 7.1232541,
+  "placeId": "ChIJ44W5erDhvkcRD-zGBYZQcJs"
+}

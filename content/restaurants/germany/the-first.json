@@ -1,0 +1,17 @@
+{
+  "name": "The First",
+  "city": "thuringia",
+  "area": "Blankenhain",
+  "address": "Lindenallee 1, 99444, Blankenhain",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 5,
+  "reviews": 40,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-thefirst.de/",
+  "lat": 50.8747868,
+  "lng": 11.3423392,
+  "placeId": "ChIJdy0OQu8HpEcRho36bmcHiz8"
+}

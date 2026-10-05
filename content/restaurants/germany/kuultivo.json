@@ -1,0 +1,17 @@
+{
+  "name": "Kuultivo",
+  "city": "saxony",
+  "area": "Leipzig",
+  "address": "Könneritzstraße 24, 04229, Leipzig",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 237,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kuultivo.com",
+  "lat": 51.3267358,
+  "lng": 12.3447487,
+  "placeId": "ChIJEU49icD3pkcRdHQ56Qo1lYw"
+}

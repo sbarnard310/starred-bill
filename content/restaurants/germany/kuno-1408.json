@@ -1,0 +1,17 @@
+{
+  "name": "KUNO 1408",
+  "city": "bavaria",
+  "area": "Würzburg",
+  "address": "Neubaustraße 7, 97070, Würzburg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 157,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-kuno.de/main/index.php",
+  "lat": 49.7904688,
+  "lng": 9.9305144,
+  "placeId": "ChIJ3yHb5DCQokcR5lJ_l-tNi0M"
+}

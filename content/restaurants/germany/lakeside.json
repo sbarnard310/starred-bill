@@ -1,0 +1,16 @@
+{
+  "name": "Lakeside",
+  "city": "hamburg",
+  "address": "Fontenay 10, 20354, Hamburg",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 136,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.thefontenay.com/restaurants-bar/lakeside-restaurant/",
+  "lat": 53.5654337,
+  "lng": 9.9977083,
+  "placeId": "ChIJBxBWnSaPsUcRaWgkWhttxS0"
+}

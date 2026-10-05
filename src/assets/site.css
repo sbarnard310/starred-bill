@@ -315,7 +315,13 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 }
 @media (max-width: 720px) {
   .wrap { padding-inline: 16px; }
-  .nav { display: none; }
+  /* Phones: the section links are hidden to save room, except Guides, which sits with the account buttons. */
+  .nav { gap: 0; }
+  .nav a:not(.nav-guides) { display: none; }
+  .share-btn span { display: none; }
+  .header-actions { gap: 6px; }
+  .share-btn, .account-btn, .wish-link { padding-inline: 10px; }
+  .nav a.nav-guides { border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); border-radius: 999px; padding: 6px 10px; color: var(--band-ink); }
   .toolbar { grid-template-columns: 1fr; }
   .figures { grid-template-columns: 1fr 1fr; }
   .figure:first-child { grid-column: 1 / -1; }

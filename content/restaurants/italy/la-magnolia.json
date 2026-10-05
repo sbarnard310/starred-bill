@@ -1,0 +1,19 @@
+{
+  "name": "La Magnolia",
+  "city": "tuscany",
+  "area": "Forte dei Marmi, Lucca",
+  "areaIt": "Forte dei Marmi, Lucca",
+  "address": "Viale Morin 46, Forte dei Marmi, 55042",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 75,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://www.lamagnoliaristorante.com/it/",
+  "lat": 43.949717,
+  "lng": 10.177495,
+  "placeId": "ChIJ0yrpnQYK1RIRbid1aE-oiWQ"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "sui generis.",
+  "city": "lombardy",
+  "area": "Saronno, Varese",
+  "areaIt": "Saronno, Varese",
+  "address": "Via Roma 35, Saronno, 21047",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 118,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteIt": "Solo a cena",
+  "website": "https://www.ristorantesuigeneris.com/",
+  "lat": 45.624977,
+  "lng": 9.041206,
+  "placeId": "ChIJ6xKpeBGRhkcRM8h1RxICf1Y"
+}

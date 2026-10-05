@@ -1,0 +1,23 @@
+{
+  "name": "Olmo",
+  "city": "lombardy",
+  "area": "Cornaredo, Milan",
+  "areaIt": "Cornaredo, Milano",
+  "address": "Piazza della Chiesa 7, loc. San Pietro all'Olmo, Cornaredo, 20007",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteIt": "Ha ottenuto la prima stella",
+  "changeDate": "2024-11",
+  "rating": 5,
+  "reviews": 46,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://www.cucinapop.do/",
+  "lat": 45.48761,
+  "lng": 9.0124,
+  "placeId": "ChIJpVRN4RTrhkcRX2ugXuHaeZM"
+}

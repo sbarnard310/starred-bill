@@ -1,0 +1,19 @@
+{
+  "name": "Osmosi",
+  "city": "tuscany",
+  "area": "Montepulciano, Siena",
+  "areaIt": "Montepulciano, Siena",
+  "address": "Via Umbria 65, Montepulciano, 53045",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 613,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://osmosimontepulciano.it/",
+  "lat": 43.134216,
+  "lng": 11.837205,
+  "placeId": "ChIJr_5OC3hZKRMR3375s3uAeu0"
+}

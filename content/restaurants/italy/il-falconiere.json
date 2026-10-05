@@ -1,0 +1,22 @@
+{
+  "name": "Il Falconiere",
+  "city": "tuscany",
+  "area": "Cortona, Arezzo",
+  "areaIt": "Cortona, Arezzo",
+  "address": "Località San Martino a Bocena 370, Cortona, 52044",
+  "stars": 1,
+  "cuisine": "Tuscan",
+  "rating": 4.6,
+  "reviews": 403,
+  "dinner": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteIt": "Menu degustazione",
+  "wine": 90,
+  "sourceType": "site",
+  "source": "https://www.ilfalconiere.it/it/hotel-toscana-con-ristorante-stellato/ristorante-il-falconiere",
+  "website": "https://www.ilfalconiere.it/it/hotel-toscana-con-ristorante-stellato/ristorante-il-falconiere",
+  "lat": 43.290269,
+  "lng": 11.971394,
+  "placeId": "ChIJ5yQMZZr4KxMRNwMIYrcvh-4"
+}

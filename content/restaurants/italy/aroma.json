@@ -1,0 +1,19 @@
+{
+  "name": "Aroma",
+  "city": "rome",
+  "area": "Colosseum",
+  "areaIt": "Colosseo",
+  "address": "Via Labicana 125, Rome, 00184",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.1,
+  "reviews": 1626,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://www.manfredihotels.com/aroma/",
+  "lat": 41.890375,
+  "lng": 12.494854,
+  "placeId": "ChIJ_RzlBblhLxMR11BvqYi8aoQ"
+}

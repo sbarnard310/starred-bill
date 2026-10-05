@@ -1,0 +1,19 @@
+{
+  "name": "Sintesi",
+  "city": "lazio",
+  "area": "Ariccia, Rome",
+  "areaIt": "Ariccia, Roma",
+  "address": "Viale dei Castani 17, Ariccia, 00072",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 450,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://ristorantesintesi.it/",
+  "lat": 41.725881,
+  "lng": 12.679792,
+  "placeId": "ChIJr8PEsGuFJRMRkrr90_LIUEY"
+}

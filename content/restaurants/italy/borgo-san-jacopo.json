@@ -1,0 +1,17 @@
+{
+  "name": "Borgo San Jacopo",
+  "city": "florence",
+  "area": "Oltrarno",
+  "areaIt": "Oltrarno",
+  "address": "Borgo San Jacopo 62 r, Florence, 50125",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://www.lungarnocollection.com/it/firenze/borgo-san-jacopo/",
+  "lat": 43.768084,
+  "lng": 11.251472,
+  "placeId": "ChIJA45TS1VRKhMRgbM7H3V5234"
+}

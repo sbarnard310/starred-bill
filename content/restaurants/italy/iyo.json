@@ -1,0 +1,19 @@
+{
+  "name": "IYO",
+  "city": "milan",
+  "area": "Sempione",
+  "areaIt": "Sempione",
+  "address": "Via Piero della Francesca 74, Milan, 20154",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 2943,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://www.iyo-restaurant.com/",
+  "lat": 45.486623,
+  "lng": 9.159527,
+  "placeId": "ChIJh6lB_BDBhkcRGHrLD_MI-j4"
+}

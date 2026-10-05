@@ -1,0 +1,19 @@
+{
+  "name": "Trattoria contemporanea",
+  "city": "lombardy",
+  "area": "Lomazzo, Como",
+  "areaIt": "Lomazzo, Como",
+  "address": "Via del Ronco 10, Lomazzo, 22074",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.6,
+  "reviews": 752,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://trattoriacontemporanea.it/",
+  "lat": 45.696784,
+  "lng": 9.034291,
+  "placeId": "ChIJvzUMsDaRhkcRhLxYinDEQPE"
+}

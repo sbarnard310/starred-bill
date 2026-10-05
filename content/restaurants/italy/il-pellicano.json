@@ -1,0 +1,22 @@
+{
+  "name": "Il Pellicano",
+  "city": "tuscany",
+  "area": "Porto Ercole, Grosseto",
+  "areaIt": "Porto Ercole, Grosseto",
+  "address": "Località Lo Sbarcatello, Porto Ercole, 58018",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.1,
+  "reviews": 50,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteIt": "Solo a cena",
+  "website": "https://www.hotelilpellicano.com/it/esperienze-culinarie/ristorante-il-pellicano.html",
+  "lat": 42.380472,
+  "lng": 11.192448,
+  "placeId": "ChIJ6cdHyA5dKBMR-7KB208oCYk"
+}

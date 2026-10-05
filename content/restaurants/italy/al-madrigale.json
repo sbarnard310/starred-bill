@@ -1,0 +1,23 @@
+{
+  "name": "Al Madrigale",
+  "city": "lazio",
+  "area": "Tivoli, Rome",
+  "areaIt": "Tivoli, Roma",
+  "address": "Via Ponte Gregoriano 1, Tivoli, 00019",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteIt": "Ha ottenuto la prima stella",
+  "changeDate": "2025-11",
+  "rating": 4.8,
+  "reviews": 61,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://www.almadrigale.it/",
+  "lat": 41.964748,
+  "lng": 12.799181,
+  "placeId": "ChIJQYDe8uN5LxMR2HIpcOlh57w"
+}

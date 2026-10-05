@@ -1,0 +1,19 @@
+{
+  "name": "Paca",
+  "city": "tuscany",
+  "area": "Prato, Prato",
+  "areaIt": "Prato, Prato",
+  "address": "Via Fra' Bartolomeo 13, Prato, 59100",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.8,
+  "reviews": 364,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://www.pacaristorante.it/",
+  "lat": 43.87718,
+  "lng": 11.102182,
+  "placeId": "ChIJpVS32Ob3KhMRzHXHBA90UWw"
+}

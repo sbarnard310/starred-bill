@@ -1,0 +1,19 @@
+{
+  "name": "LoRo",
+  "city": "lombardy",
+  "area": "Trescore Balneario, Bergamo",
+  "areaIt": "Trescore Balneario, Bergamo",
+  "address": "Via Bruse 2, Trescore Balneario, 24069",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 690,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://www.loroandco.com/",
+  "lat": 45.693861,
+  "lng": 9.83242,
+  "placeId": "ChIJMdDJ2hZcgUcRKMH1g6hyKME"
+}

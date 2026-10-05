@@ -1,0 +1,19 @@
+{
+  "name": "Silene",
+  "city": "tuscany",
+  "area": "Seggiano, Grosseto",
+  "areaIt": "Seggiano, Grosseto",
+  "address": "Località Pescina 9, Seggiano, 58038",
+  "stars": 1,
+  "cuisine": "Tuscan",
+  "rating": 4.7,
+  "reviews": 234,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://ilsilene.it/",
+  "lat": 42.919334,
+  "lng": 11.587361,
+  "placeId": "ChIJV0mcDAVtKRMRjnfbvbfeS04"
+}

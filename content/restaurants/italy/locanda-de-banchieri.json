@@ -1,0 +1,19 @@
+{
+  "name": "Locanda de Banchieri",
+  "city": "tuscany",
+  "area": "Fosdinovo, Massa-Carrara",
+  "areaIt": "Fosdinovo, Massa-Carrara",
+  "address": "Via Porredo 32, Fosdinovo, 54035",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.8,
+  "reviews": 349,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://www.locandadebanchieri.it/ristorante",
+  "lat": 44.114434,
+  "lng": 10.001537,
+  "placeId": "ChIJ-62g_Lsb1RIRkz7L75Op2YA"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "La Torre",
+  "city": "tuscany",
+  "area": "Tavarnelle Val di Pesa, Florence",
+  "areaIt": "Tavarnelle Val di Pesa, Firenze",
+  "address": "Strada Spicciano 7, Tavarnelle Val di Pesa, 50028",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.3,
+  "reviews": 65,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteIt": "Solo a cena",
+  "website": "https://www.comohotels.com/it/tuscany/como-castello-del-nero/dining/la-torre",
+  "lat": 43.55299,
+  "lng": 11.187825,
+  "placeId": "ChIJTf0t3xNIKhMR-NUMU8DxgO0"
+}

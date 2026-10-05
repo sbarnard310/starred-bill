@@ -1,0 +1,21 @@
+{
+  "name": "Villa Feltrinelli",
+  "city": "lombardy",
+  "area": "Gargnano, Brescia",
+  "areaIt": "Gargnano, Brescia",
+  "address": "Via Rimembranza 38/40, Gargnano, 25084",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 335,
+  "dinner": 280,
+  "dinnerType": "menu",
+  "dinnerNote": "Surprise tasting menu, 8 courses; plus 10% service",
+  "dinnerNoteIt": "Menu degustazione a sorpresa, 8 portate; più 10% di servizio",
+  "sourceType": "site",
+  "source": "https://www.ristorantevillafeltrinelli.com/it/",
+  "website": "https://www.ristorantevillafeltrinelli.com/it/",
+  "lat": 45.693253,
+  "lng": 10.669477,
+  "placeId": "ChIJe82o1b6KgUcRm5udhtXKqt0"
+}

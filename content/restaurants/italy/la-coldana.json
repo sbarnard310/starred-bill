@@ -1,0 +1,19 @@
+{
+  "name": "La Coldana",
+  "city": "lombardy",
+  "area": "Lodi, Lodi",
+  "areaIt": "Lodi, Lodi",
+  "address": "Cascina Coldana, via del Costino, Lodi, 26900",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.4,
+  "reviews": 959,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://www.lacoldana.it/",
+  "lat": 45.30426,
+  "lng": 9.51811,
+  "placeId": "ChIJ01kWXi4sgUcR3cRZuhSZLXg"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Marco Martini Restaurant",
+  "city": "rome",
+  "area": "Aventino",
+  "areaIt": "Aventino",
+  "address": "Viale Aventino 121, Rome, 00153",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.3,
+  "reviews": 690,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteIt": "Solo a cena",
+  "website": "https://www.marcomartinichef.com/",
+  "lat": 41.880543,
+  "lng": 12.484601,
+  "placeId": "ChIJPcztJc1hLxMRBaztLYCX_fQ"
+}

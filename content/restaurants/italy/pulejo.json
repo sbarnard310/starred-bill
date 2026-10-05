@@ -1,0 +1,19 @@
+{
+  "name": "Pulejo",
+  "city": "rome",
+  "area": "Prati",
+  "areaIt": "Prati",
+  "address": "Via dei Gracchi 31, Rome, 00192",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.8,
+  "reviews": 334,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "website": "https://pulejo.it/",
+  "lat": 41.907167,
+  "lng": 12.459359,
+  "placeId": "ChIJmYbImQNhLxMRHBgz6XzHZXA"
+}

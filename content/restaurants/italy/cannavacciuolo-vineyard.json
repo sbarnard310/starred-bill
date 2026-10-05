@@ -1,0 +1,22 @@
+{
+  "name": "Cannavacciuolo Vineyard",
+  "city": "tuscany",
+  "area": "Casanova di Terricciola, Pisa",
+  "areaIt": "Casanova di Terricciola, Pisa",
+  "address": "Via del Teatro 8, Casanova di Terricciola, 56030",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.7,
+  "reviews": 289,
+  "dinner": 140,
+  "dinnerType": "menu",
+  "dinnerNote": "Interludio menu (Prologo €110)",
+  "dinnerNoteIt": "Menu Interludio (Prologo €110)",
+  "wine": 75,
+  "sourceType": "site",
+  "source": "https://laquavineyard.it/",
+  "website": "https://laquavineyard.it/",
+  "lat": 43.544369,
+  "lng": 10.685182,
+  "placeId": "ChIJ-ZdibcELKhMRF7Qt3wnuI9w"
+}

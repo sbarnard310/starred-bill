@@ -1,0 +1,10 @@
+{
+  "id": "florence",
+  "type": "city",
+  "parent": "tuscany",
+  "name": "Florence",
+  "nameIt": "Firenze",
+  "inSentenceIt": "a Firenze",
+  "intro": "Prices are in euros, with a switch to see them in pounds or US dollars, and include VAT. Prices checked October 2026.",
+  "introIt": "I prezzi sono in euro, con un selettore per vederli in sterline o dollari, e includono l'IVA. Prezzi verificati a ottobre 2026."
+}

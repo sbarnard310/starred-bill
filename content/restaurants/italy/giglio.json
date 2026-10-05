@@ -1,0 +1,16 @@
+{
+  "name": "Giglio",
+  "city": "tuscany",
+  "area": "Lucca, Lucca",
+  "areaIt": "Lucca, Lucca",
+  "stars": 0,
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteIt": "Ha perso la stella",
+  "changeDate": "2024-11",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Gave up its star at the chefs' request in November 2024",
+  "statusNoteIt": "Ha rinunciato alla stella su richiesta degli chef a novembre 2024"
+}

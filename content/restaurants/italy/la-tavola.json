@@ -1,0 +1,16 @@
+{
+  "name": "La Tavola",
+  "city": "lombardy",
+  "area": "Laveno-Mombello, Varese",
+  "areaIt": "Laveno-Mombello, Varese",
+  "stars": 0,
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteIt": "Ha perso la stella",
+  "changeDate": "2024-11",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in November 2024",
+  "statusNoteIt": "Ha perso la stella a novembre 2024"
+}

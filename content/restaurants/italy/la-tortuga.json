@@ -1,0 +1,22 @@
+{
+  "name": "La Tortuga",
+  "city": "lombardy",
+  "area": "Gargnano, Brescia",
+  "areaIt": "Gargnano, Brescia",
+  "address": "Via XXIV Maggio 5, Gargnano, 25084",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.8,
+  "reviews": 199,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteIt": "Solo a cena",
+  "website": "https://www.ristorantelatortuga.it/",
+  "lat": 45.688741,
+  "lng": 10.665226,
+  "placeId": "ChIJvYO5BsGKgUcRBVha67KmA2Y"
+}

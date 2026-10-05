@@ -1,0 +1,21 @@
+{
+  "name": "Da Vittorio",
+  "city": "lombardy",
+  "area": "Brusaporto, Bergamo",
+  "areaIt": "Brusaporto, Bergamo",
+  "address": "Via Cantalupa 17, Brusaporto, 24060",
+  "stars": 3,
+  "cuisine": "Italian Contemporary",
+  "rating": 5,
+  "reviews": 18,
+  "dinner": 440,
+  "dinnerType": "menu",
+  "dinnerNote": "Senza Confini menu, 12 courses (8-course menus from €280)",
+  "dinnerNoteIt": "Menu Senza Confini, 12 portate (menu di 8 portate da €280)",
+  "sourceType": "site",
+  "source": "https://www.davittorio.com/images/davittorio/ristorante/brusaporto/menu/Menu%20Ristorante%20-%20Italiano.pdf",
+  "website": "https://www.davittorio.com/",
+  "lat": 45.677413,
+  "lng": 9.771522,
+  "placeId": "ChIJC6fjv1NbgUcReZVlgUiiKOU"
+}

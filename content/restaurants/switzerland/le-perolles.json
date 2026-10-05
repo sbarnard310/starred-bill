@@ -1,0 +1,16 @@
+{
+  "name": "Le Pérolles",
+  "city": "fribourg",
+  "address": "Boulevard de Pérolles 1, 1700, Fribourg",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.8,
+  "reviews": 532,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.leperolles.ch/",
+  "lat": 46.8018337,
+  "lng": 7.1515315,
+  "placeId": "ChIJ9fgU1J9pjkcRk-uxoN74XK0"
+}

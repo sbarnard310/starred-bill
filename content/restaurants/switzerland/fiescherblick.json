@@ -1,0 +1,17 @@
+{
+  "name": "Fiescherblick",
+  "city": "berne",
+  "area": "Grindelwald",
+  "address": "Dorfstrasse 203, 3818, Grindelwald",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 591,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://hotel-fiescherblick.ch/restaurant/",
+  "lat": 46.6252103,
+  "lng": 8.0459154,
+  "placeId": "ChIJ89MgKfqbj0cRW9mn5EUQ0U4"
+}

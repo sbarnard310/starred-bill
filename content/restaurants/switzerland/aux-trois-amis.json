@@ -1,0 +1,17 @@
+{
+  "name": "Aux Trois Amis",
+  "city": "berne",
+  "area": "Ligerz",
+  "address": "Untergasse 17, 2514, Ligerz",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.4,
+  "reviews": 612,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.aux3amis.ch/",
+  "lat": 47.0900127,
+  "lng": 7.1398195,
+  "placeId": "ChIJcYl7jscajkcRbDOPJYK2Xrk"
+}

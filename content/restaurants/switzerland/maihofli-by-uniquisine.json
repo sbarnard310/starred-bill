@@ -1,0 +1,16 @@
+{
+  "name": "Maihöfli by UniQuisine",
+  "city": "lucerne",
+  "address": "Maihofstrasse 70, 6006, Lucerne",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 103,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.maihoefli-luzern.ch/",
+  "lat": 47.0652678,
+  "lng": 8.3115827,
+  "placeId": "ChIJHQMxVEL7j0cRciMUAXKUA6U"
+}

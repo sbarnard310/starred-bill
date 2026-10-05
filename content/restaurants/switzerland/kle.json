@@ -1,0 +1,16 @@
+{
+  "name": "KLE",
+  "city": "zurich",
+  "address": "Zweierstrasse 114, 8003, Zurich",
+  "stars": 1,
+  "cuisine": "Vegan",
+  "rating": 4.6,
+  "reviews": 654,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantkle.com/",
+  "lat": 47.3715034,
+  "lng": 8.5209664,
+  "placeId": "ChIJiwuTaA8LkEcRNDg4uQdErq0"
+}

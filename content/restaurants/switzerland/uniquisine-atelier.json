@@ -1,0 +1,17 @@
+{
+  "name": "UniQuisine Atelier",
+  "city": "nidwalden",
+  "area": "Stansstad",
+  "address": "Stanserstrasse 23, 6362, Stansstad",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 54,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.uniquisine.ch/",
+  "lat": 46.9757757,
+  "lng": 8.3419323,
+  "placeId": "ChIJBYT0rUX3j0cR9ZATWm64DWY"
+}

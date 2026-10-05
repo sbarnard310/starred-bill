@@ -1,0 +1,17 @@
+{
+  "name": "Segreto",
+  "city": "saint-gallen",
+  "area": "Wittenbach",
+  "address": "Abacus Platz 1, 9301, Wittenbach",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 102,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.segreto.ch/de",
+  "lat": 47.450773,
+  "lng": 9.3964148,
+  "placeId": "ChIJE80Rc3wem0cRoaxcj148ZFE"
+}

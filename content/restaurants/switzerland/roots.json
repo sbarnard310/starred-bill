@@ -1,0 +1,16 @@
+{
+  "name": "roots",
+  "city": "basel-city",
+  "address": "Bachlettenstrasse 1, 4054, Basel",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 289,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://roots-basel.ch/",
+  "lat": 47.55043,
+  "lng": 7.581,
+  "placeId": "ChIJ_RpcgKC5kUcRJeac8Vfo-NQ"
+}

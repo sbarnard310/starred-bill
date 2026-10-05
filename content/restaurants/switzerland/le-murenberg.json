@@ -1,0 +1,17 @@
+{
+  "name": "Le Murenberg",
+  "city": "basel-landschaft",
+  "area": "Bubendorf",
+  "address": "Krummackerstrasse 4, 4416, Bubendorf",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 257,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lemurenberg.ch/",
+  "lat": 47.4545219,
+  "lng": 7.7386967,
+  "placeId": "ChIJlTVduajLkUcRVy0tiX5RqV8"
+}

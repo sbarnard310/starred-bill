@@ -1,0 +1,16 @@
+{
+  "name": "Tosca",
+  "city": "geneva",
+  "address": "Rue de la Mairie 8, 1207, Geneva",
+  "stars": 1,
+  "cuisine": "Tuscan",
+  "rating": 4.5,
+  "reviews": 306,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tosca-geneva.ch/",
+  "lat": 46.2027478,
+  "lng": 6.1581734,
+  "placeId": "ChIJy4NktzZljEcRd0MB7uF7RHk"
+}

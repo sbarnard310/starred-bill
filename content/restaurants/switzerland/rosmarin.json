@@ -1,0 +1,20 @@
+{
+  "name": "Rosmarin",
+  "city": "aargau",
+  "area": "Lenzburg",
+  "address": "Eisengasse 32, 5600, Lenzburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 310,
+  "dinnerType": "menu",
+  "dinner": 189,
+  "dinnerNote": "Tasting menu (other menus from CHF 90)",
+  "sourceType": "site",
+  "source": "https://restaurant-rosmarin.ch/",
+  "wine": 75,
+  "website": "https://restaurant-rosmarin.ch/",
+  "lat": 47.3876095,
+  "lng": 8.1808479,
+  "placeId": "ChIJaxW7iAwWkEcRmUlyuaBoXL8"
+}

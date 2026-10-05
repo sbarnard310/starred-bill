@@ -1,0 +1,16 @@
+{
+  "name": "Tsé Fung",
+  "city": "geneva",
+  "address": "Route de Lausanne 301, 1293, Geneva",
+  "stars": 1,
+  "cuisine": "Chinese",
+  "rating": 4.1,
+  "reviews": 320,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lareserve-geneve.com",
+  "lat": 46.2504122,
+  "lng": 6.1494507,
+  "placeId": "ChIJyftQYUtkjEcRhmOkfSa3ZxI"
+}

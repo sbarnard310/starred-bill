@@ -1,0 +1,18 @@
+{
+  "name": "ZOE",
+  "city": "berne",
+  "address": "Münstergasse 39, 3011, Berne",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "rating": 4.9,
+  "reviews": 438,
+  "dinnerType": "menu",
+  "dinner": 222,
+  "dinnerNote": "Tasting menu (other menus from CHF 155)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-zoe.com/menu",
+  "website": "https://www.restaurant-zoe.com/",
+  "lat": 46.9474398,
+  "lng": 7.450242,
+  "placeId": "ChIJS-nzjD05jkcRgPgsE5QPeoU"
+}

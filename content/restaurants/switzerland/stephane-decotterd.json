@@ -1,0 +1,17 @@
+{
+  "name": "Stéphane Décotterd",
+  "city": "vaud",
+  "area": "Montreux",
+  "address": "Route de Glion 111, 1823, Montreux",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.7,
+  "reviews": 303,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://maisondecotterd.com/restaurant-stephane-decotterd/",
+  "lat": 46.4326918,
+  "lng": 6.9216223,
+  "placeId": "ChIJZXt5KISbjkcR2Oyxn_Cc3gM"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "de MATOS",
+  "city": "lucerne",
+  "address": "Burgerstrasse 5, 6003, Lucerne",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 65,
+  "dinnerType": "menu",
+  "dinner": 138,
+  "dinnerNote": "Tasting menu (other menus from CHF 56)",
+  "sourceType": "site",
+  "source": "https://www.dematos-luzern.ch/_files/ugd/eb502d_96981ea308d84065a7944e43b0b25e47.pdf",
+  "website": "https://www.dematos-luzern.ch/",
+  "lat": 47.0505139,
+  "lng": 8.3030539,
+  "placeId": "ChIJ261pqjL7j0cRxox0VT_j8-o"
+}

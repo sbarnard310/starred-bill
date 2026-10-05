@@ -1,0 +1,20 @@
+{
+  "name": "Neue Blumenau",
+  "city": "saint-gallen",
+  "area": "Lömmenschwil",
+  "address": "Romanshornerstrasse 2, 9308, Lömmenschwil",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 129,
+  "dinnerType": "menu",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu (other menus from CHF 82)",
+  "sourceType": "site",
+  "source": "https://www.neueblumenau.ch/menues",
+  "wine": 168,
+  "website": "https://www.neueblumenau.ch/",
+  "lat": 47.4941739,
+  "lng": 9.3530135,
+  "placeId": "ChIJPwkywGTimkcRJjAL5itpYDM"
+}

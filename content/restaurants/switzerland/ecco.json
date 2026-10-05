@@ -1,0 +1,17 @@
+{
+  "name": "Ecco",
+  "city": "ticino",
+  "area": "Ascona",
+  "address": "via del Segnale 10, 6612, Ascona",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 82,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://giardinohotels.ch/ascona/restaurants/restaurant-ecco-ascona/",
+  "lat": 46.1502304,
+  "lng": 8.7900462,
+  "placeId": "ChIJSarOQU3IhUcRQ8PiQVdaXVk"
+}

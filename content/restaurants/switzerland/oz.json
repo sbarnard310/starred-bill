@@ -1,0 +1,17 @@
+{
+  "name": "OZ",
+  "city": "graubunden",
+  "area": "Fürstenau",
+  "address": "Obergass 2, 7414, Fürstenau",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "rating": 4.8,
+  "reviews": 37,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.oz-restaurant.com/",
+  "lat": 46.7210956,
+  "lng": 9.4461197,
+  "placeId": "ChIJD3vq-FbrhEcRm15VdggBGLQ"
+}

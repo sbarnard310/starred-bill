@@ -1,0 +1,17 @@
+{
+  "name": "The Japanese Restaurant",
+  "city": "uri",
+  "area": "Andermatt",
+  "address": "Gotthardstrasse 4, 6490, Andermatt",
+  "stars": 2,
+  "cuisine": "Japanese Contemporary",
+  "rating": 4.5,
+  "reviews": 101,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.thechediandermatt.com",
+  "lat": 46.6358503,
+  "lng": 8.5944996,
+  "placeId": "ChIJxxkpqlBxhUcR8Ds1pCPMEds"
+}

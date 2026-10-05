@@ -1,0 +1,17 @@
+{
+  "name": "Wirtshaus Zur Säge",
+  "city": "solothurn",
+  "area": "Flüh",
+  "address": "Steinrain 5, 4112, Flüh",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.7,
+  "reviews": 96,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.säge-flüh.ch/",
+  "lat": 47.4883006,
+  "lng": 7.4980391,
+  "placeId": "ChIJbzTMINvAkUcRCMXOOofA888"
+}

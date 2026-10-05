@@ -1,0 +1,16 @@
+{
+  "name": "L'Atelier Robuchon",
+  "city": "geneva",
+  "address": "Quai Wilson 37, 1201, Geneva",
+  "stars": 2,
+  "cuisine": "French Contemporary",
+  "rating": 4.6,
+  "reviews": 368,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://auberge.com/the-woodward/dine/latelier-robuchon/",
+  "lat": 46.2122201,
+  "lng": 6.1525513,
+  "placeId": "ChIJy-iGfkJljEcRopfNMrCqTyk"
+}

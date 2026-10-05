@@ -1,0 +1,17 @@
+{
+  "name": "I Due Sud",
+  "city": "ticino",
+  "area": "Lugano",
+  "address": "riva Antonio Caccia 7, 6900, Lugano",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.1,
+  "reviews": 46,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.iduesud.ch/",
+  "lat": 45.9949859,
+  "lng": 8.9459979,
+  "placeId": "ChIJl7FFspcthEcRo5BVmXqhbbI"
+}

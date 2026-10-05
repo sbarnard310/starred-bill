@@ -1,0 +1,17 @@
+{
+  "name": "Osteria Enoteca Cuntitt",
+  "city": "ticino",
+  "area": "Castel San Pietro",
+  "address": "Via alla Chiesa 8, 6874, Castel San Pietro",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.8,
+  "reviews": 214,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://cuntitt.ch/",
+  "lat": 45.8600788,
+  "lng": 9.0088473,
+  "placeId": "ChIJ6xNf_v0phEcRL5ONRXrisnQ"
+}

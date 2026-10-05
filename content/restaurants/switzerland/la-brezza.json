@@ -1,0 +1,17 @@
+{
+  "name": "La Brezza",
+  "city": "ticino",
+  "area": "Ascona",
+  "address": "via Albarelle 16, 6612, Ascona",
+  "stars": 2,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.5,
+  "reviews": 23,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://edenroc.ch/",
+  "lat": 46.150934,
+  "lng": 8.772871,
+  "placeId": "ChIJDeVE6vnJhUcRvURHnxMlBiI"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Radius by Stefan Beer",
+  "city": "berne",
+  "area": "Interlaken",
+  "address": "Höheweg 41, 3800, Interlaken",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.7,
+  "reviews": 142,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.victoria-jungfrau.ch/",
+  "lat": 46.6870206,
+  "lng": 7.8579196,
+  "placeId": "ChIJT3zLn5Glj0cRmwdNmQhKYe8"
+}

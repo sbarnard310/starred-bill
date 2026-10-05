@@ -1,0 +1,17 @@
+{
+  "name": "L'OURS",
+  "city": "valais",
+  "area": "Crans-Montana",
+  "address": "Route du Pas de l'Ours 41, 3963, Crans-Montana",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 232,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.pasdelours.ch/",
+  "lat": 46.3075249,
+  "lng": 7.4599186,
+  "placeId": "ChIJQ2N1D0rgjkcRMgK3zPRuPZs"
+}

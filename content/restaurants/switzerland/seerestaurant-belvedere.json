@@ -1,0 +1,17 @@
+{
+  "name": "Seerestaurant Belvédère",
+  "city": "nidwalden",
+  "area": "Hergiswil",
+  "address": "Seestrasse 18a, 6052, Hergiswil",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 183,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.seerestaurant-belvedere.ch/de/",
+  "lat": 46.9833332,
+  "lng": 8.3117704,
+  "placeId": "ChIJyTPQgKPwj0cR7Qz9GBOJqRE"
+}

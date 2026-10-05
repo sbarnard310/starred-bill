@@ -1,0 +1,17 @@
+{
+  "name": "Corso",
+  "city": "saint-gallen",
+  "area": "Sankt Gallen",
+  "address": "Brühlgasse 37, 9000, Sankt Gallen",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 188,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-corso.ch/",
+  "lat": 47.4250425,
+  "lng": 9.3788108,
+  "placeId": "ChIJPWUCTwUfm0cRqwiJV3olOfo"
+}

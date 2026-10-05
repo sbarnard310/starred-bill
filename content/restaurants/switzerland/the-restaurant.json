@@ -1,0 +1,16 @@
+{
+  "name": "The Restaurant",
+  "city": "zurich",
+  "address": "Kurhausstrasse 65, 8032, Zurich",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 132,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.thedoldergrand.com/the-restaurant/",
+  "lat": 47.372759,
+  "lng": 8.5728423,
+  "placeId": "ChIJXeB5Fc-gmkcR5W5tM1kEwB4"
+}

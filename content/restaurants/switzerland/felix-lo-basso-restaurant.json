@@ -1,0 +1,17 @@
+{
+  "name": "Felix Lo Basso Restaurant",
+  "city": "ticino",
+  "area": "Lugano",
+  "address": "Via Fomelino 10, 6900, Lugano",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.5,
+  "reviews": 37,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.felixlobassorestaurant.com/",
+  "lat": 45.9954696,
+  "lng": 8.9322998,
+  "placeId": "ChIJE7utXTwthEcRXlOG33UaVhs"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Ecco St. Moritz",
+  "city": "graubunden",
+  "area": "Saint Moritz",
+  "address": "Via Maistra 3, 7512, Saint Moritz",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.2,
+  "reviews": 28,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://giardinohotels.ch/",
+  "lat": 46.4776485,
+  "lng": 9.8109132,
+  "placeId": "ChIJ79yAE4h_g0cRfCvQaP29oyY"
+}

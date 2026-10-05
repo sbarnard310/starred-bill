@@ -1,0 +1,17 @@
+{
+  "name": "Locanda Orico",
+  "city": "ticino",
+  "area": "Bellinzona",
+  "address": "via Orico 13, 6500, Bellinzona",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.7,
+  "reviews": 243,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.locandaorico.ch/",
+  "lat": 46.1921056,
+  "lng": 9.0189483,
+  "placeId": "ChIJQxATSDZKhEcRod926TUwDMk"
+}

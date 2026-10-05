@@ -1,0 +1,16 @@
+{
+  "name": "Wein & Sein",
+  "city": "berne",
+  "address": "Münstergasse 50, 3011, Berne",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 301,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.weinundsein.ch/",
+  "lat": 46.9475264,
+  "lng": 7.4496372,
+  "placeId": "ChIJLxGbdcQ5jkcRCqTWtJffF-Y"
+}

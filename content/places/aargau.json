@@ -1,0 +1,7 @@
+{
+  "id": "aargau",
+  "type": "region",
+  "parent": "switzerland",
+  "name": "Aargau",
+  "intro": "Prices are in Swiss francs (CHF), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added."
+}

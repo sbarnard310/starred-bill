@@ -1,0 +1,16 @@
+{
+  "name": "Cheval Blanc by Peter Knogl",
+  "city": "basel-city",
+  "address": "Blumenrain 8, 4001, Basel",
+  "stars": 3,
+  "cuisine": "Classic French",
+  "rating": 4.8,
+  "reviews": 339,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.chevalblancbasel.com/en",
+  "lat": 47.5605824,
+  "lng": 7.5875661,
+  "placeId": "ChIJ9TTWPK-5kUcRNHFlNwpocnU"
+}

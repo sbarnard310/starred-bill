@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant LA",
+  "city": "basel-city",
+  "address": "St. Johanns-Vorstadt 13, 4056, Basel",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.7,
+  "reviews": 277,
+  "dinnerType": "menu",
+  "dinner": 138,
+  "dinnerNote": "Tasting menu (other menus from CHF 50)",
+  "sourceType": "site",
+  "source": "https://restaurant-la.com/menu/",
+  "wine": 50,
+  "website": "https://www.restaurant-la.com/",
+  "lat": 47.562886,
+  "lng": 7.5848343,
+  "placeId": "ChIJXW8AJqa5kUcRo_TzVwWN_bI"
+}

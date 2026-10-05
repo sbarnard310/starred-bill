@@ -1,0 +1,16 @@
+{
+  "name": "Neue Taverne",
+  "city": "zurich",
+  "address": "Glockengasse 8, 8001, Zurich",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "rating": 4.6,
+  "reviews": 778,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.neuetaverne.ch/de/",
+  "lat": 47.3720798,
+  "lng": 8.5402735,
+  "placeId": "ChIJSetnU64LkEcR8iIrqCbvkkk"
+}

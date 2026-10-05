@@ -1,0 +1,17 @@
+{
+  "name": "Auberge de la Croix Blanche",
+  "city": "fribourg",
+  "area": "Villarepos",
+  "address": "Route de Donatyre 22, 1583, Villarepos",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 222,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.croixblanche.ch/",
+  "lat": 46.8831298,
+  "lng": 7.0690391,
+  "placeId": "ChIJTYO9TIFyjkcRNtYpUawejBA"
+}

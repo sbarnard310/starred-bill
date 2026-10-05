@@ -1,0 +1,18 @@
+{
+  "name": "Capri",
+  "city": "valais",
+  "area": "Zermatt",
+  "address": "Hofmattstrasse 12, 3920, Zermatt",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.4,
+  "reviews": 91,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://www.montcervinpalace.ch/restaurants-bars/ristorante-capri/",
+  "lat": 46.0218254,
+  "lng": 7.7480652,
+  "placeId": "ChIJIYjXKN81j0cR31TnZ7aZ0wA"
+}

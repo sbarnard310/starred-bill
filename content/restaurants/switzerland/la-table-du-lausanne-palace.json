@@ -1,0 +1,19 @@
+{
+  "name": "La Table du Lausanne Palace",
+  "city": "vaud",
+  "area": "Lausanne",
+  "address": "Rue du Grand Chêne 7, 1002, Lausanne",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 254,
+  "dinnerType": "menu",
+  "dinner": 110,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/pdf/Restaurants/Cartes/MENU_MATCHA_PICCHU.pdf",
+  "website": "https://www.lausanne-palace.ch/restaurants-bars/la-table-du-lausanne-palace/le-restaurant/",
+  "lat": 46.5195779,
+  "lng": 6.6314453,
+  "placeId": "ChIJ1Zt6NgwvjEcR2rm2NSRArHc"
+}

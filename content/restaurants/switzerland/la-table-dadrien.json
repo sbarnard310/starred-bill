@@ -1,0 +1,17 @@
+{
+  "name": "La Table d'Adrien",
+  "city": "valais",
+  "area": "Verbier",
+  "address": "Chemin des Creux, 1936, Verbier",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 36,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://chalet-adrien.com/",
+  "lat": 46.1035076,
+  "lng": 7.224638,
+  "placeId": "ChIJ-VCk1rfPjkcRybVrZkP4FQo"
+}

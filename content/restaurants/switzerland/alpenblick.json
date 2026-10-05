@@ -1,0 +1,17 @@
+{
+  "name": "Alpenblick",
+  "city": "berne",
+  "area": "Wilderswil",
+  "address": "Oberdorfstrasse 3, 3812, Wilderswil",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.1,
+  "reviews": 520,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotel-alpenblick.ch/",
+  "lat": 46.6638654,
+  "lng": 7.8601204,
+  "placeId": "ChIJf5d-kIejj0cRy2ERVxKt1fI"
+}

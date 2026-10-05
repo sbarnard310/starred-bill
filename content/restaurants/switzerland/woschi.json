@@ -1,0 +1,16 @@
+{
+  "name": "Wöschi",
+  "city": "zurich",
+  "address": "Seestrasse 457, 8038, Zurich",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 657,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.woeschi.ch/",
+  "lat": 47.3405124,
+  "lng": 8.5380296,
+  "placeId": "ChIJESuqj2OnmkcRpJr0HGTrUTU"
+}

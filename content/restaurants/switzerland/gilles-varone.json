@@ -1,0 +1,17 @@
+{
+  "name": "Gilles Varone",
+  "city": "valais",
+  "area": "Savièse",
+  "address": "Rue du Stade 5b, 1965, Savièse",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 226,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://gillesvarone.ch/",
+  "lat": 46.2501082,
+  "lng": 7.3506266,
+  "placeId": "ChIJTyMp7pHdjkcR_Cp3kqv5dZE"
+}

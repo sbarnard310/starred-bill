@@ -1,0 +1,17 @@
+{
+  "name": "Sihlhalde",
+  "city": "zurich",
+  "area": "Gattikon",
+  "address": "Sihlhaldenstrasse 70, 8136, Gattikon",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 281,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.smoly.ch/",
+  "lat": 47.2916285,
+  "lng": 8.5476016,
+  "placeId": "ChIJ32VxsN6nmkcRwnx_9t7jYEY"
+}

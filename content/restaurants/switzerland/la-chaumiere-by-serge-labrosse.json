@@ -1,0 +1,17 @@
+{
+  "name": "La Chaumière by Serge Labrosse",
+  "city": "geneva",
+  "area": "Troinex",
+  "address": "Chemin de la Fondelle 16, 1256, Troinex",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 3.7,
+  "reviews": 9,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-la-chaumiere.ch/",
+  "lat": 46.1623711,
+  "lng": 6.1475608,
+  "placeId": "ChIJ2WwADyR7jEcRY-TA5c7RME4"
+}

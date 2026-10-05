@@ -1,0 +1,18 @@
+{
+  "name": "Shin",
+  "city": "zurich",
+  "address": "Zinnengasse 7, 8001, Zurich",
+  "stars": 1,
+  "cuisine": "Asian Contemporary",
+  "rating": 4,
+  "reviews": 208,
+  "dinnerType": "menu",
+  "dinner": 290,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.shinrestaurant.ch",
+  "website": "https://www.shinrestaurant.ch",
+  "lat": 47.3705379,
+  "lng": 8.5415242,
+  "placeId": "ChIJlRK4WrcLkEcR0OWU5jhQfLU"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "F.P.Journe Le Restaurant",
+  "city": "geneva",
+  "address": "Rue du Rhône 49, 1200, Geneva",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 152,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.fpjourne-le-restaurant.ch/",
+  "lat": 46.2034895,
+  "lng": 6.1510328,
+  "placeId": "ChIJof3XN3dljEcR6JQE0IWxg44"
+}

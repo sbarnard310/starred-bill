@@ -1,0 +1,17 @@
+{
+  "name": "Panorama - Cayenne",
+  "city": "berne",
+  "area": "Steffisburg",
+  "address": "Hartlisbergstrasse 39, 3612, Steffisburg",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 561,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.panorama-hartlisberg.ch/",
+  "lat": 46.7873268,
+  "lng": 7.6209616,
+  "placeId": "ChIJ3cqUW0izj0cR2tP3X1J0qn8"
+}

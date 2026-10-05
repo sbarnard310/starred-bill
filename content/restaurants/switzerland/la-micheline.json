@@ -1,0 +1,16 @@
+{
+  "name": "La Micheline",
+  "city": "geneva",
+  "address": "Avenue de la Gare des Eaux-Vives 3, 1207, Geneva",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.7,
+  "reviews": 415,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lamicheline.ch/",
+  "lat": 46.2007883,
+  "lng": 6.1658942,
+  "placeId": "ChIJA4OyfaFljEcRtdtEz75YkyE"
+}

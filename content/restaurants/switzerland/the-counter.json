@@ -1,0 +1,16 @@
+{
+  "name": "The Counter",
+  "city": "zurich",
+  "address": "Bahnhofplatz 15, 8001, Zurich",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 152,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.the-counter.ch/",
+  "lat": 47.3772406,
+  "lng": 8.5406099,
+  "placeId": "ChIJL6O4dLILkEcRfmmjrK7_2-g"
+}

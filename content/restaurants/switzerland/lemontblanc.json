@@ -1,0 +1,17 @@
+{
+  "name": "LeMontBlanc",
+  "city": "valais",
+  "area": "Crans-Montana",
+  "address": "Chemin du Mont-Blanc 1, 3963, Crans-Montana",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.5,
+  "reviews": 91,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://lecrans.com/",
+  "lat": 46.3152152,
+  "lng": 7.4626213,
+  "placeId": "ChIJqcDk9bXhjkcRUw9hYbK1RK4"
+}

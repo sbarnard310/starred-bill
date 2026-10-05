@@ -1,0 +1,18 @@
+{
+  "name": "Lucide",
+  "city": "lucerne",
+  "address": "Europaplatz 1, 6005, Lucerne",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 289,
+  "dinnerType": "menu",
+  "dinner": 162,
+  "dinnerNote": "Tasting menu (other menus from CHF 120)",
+  "sourceType": "site",
+  "source": "https://www.lucide-luzern.ch/lucide-menu/",
+  "website": "https://www.lucide-luzern.ch/",
+  "lat": 47.0507301,
+  "lng": 8.3115606,
+  "placeId": "ChIJNddVzhD7j0cRpwepIrJjJ6E"
+}

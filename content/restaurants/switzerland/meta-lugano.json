@@ -1,0 +1,20 @@
+{
+  "name": "META",
+  "city": "ticino",
+  "area": "Lugano",
+  "address": "Piazza della Riforma 9, 6900, Lugano",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.7,
+  "reviews": 329,
+  "dinnerType": "menu",
+  "dinner": 75,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://staging2.metarestaurant.ch/menu-pdf/METARESTAURANT_MENU_0526.pdf",
+  "wine": 75,
+  "website": "https://metaworld.ch",
+  "lat": 46.0038608,
+  "lng": 8.9511664,
+  "placeId": "ChIJjxRbhr0thEcRb2i_JHkcCKA"
+}

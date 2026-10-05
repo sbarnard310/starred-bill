@@ -1,0 +1,20 @@
+{
+  "name": "Centric Dining",
+  "city": "berne",
+  "area": "Thun",
+  "address": "Seestrasse 47, 3602, Thun",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 2,
+  "dinnerType": "menu",
+  "dinner": 329,
+  "dinnerNote": "Tasting menu (other menus from CHF 48)",
+  "sourceType": "site",
+  "source": "https://www.seepark.ch/media/566485/20260910_menuekarte_centricdining.pdf",
+  "wine": 90,
+  "website": "https://www.seepark.ch/de/themen/restaurants/centric-dining",
+  "lat": 46.744993,
+  "lng": 7.6343099,
+  "placeId": "ChIJqSzvMrezj0cRWj2CKYFc8ng"
+}

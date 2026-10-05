@@ -1,0 +1,18 @@
+{
+  "name": "Bayview by Danny Khezzar",
+  "city": "geneva",
+  "address": "Quai Wilson 47, 1201, Geneva",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 470,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurantbayview.com",
+  "website": "https://www.restaurantbayview.com",
+  "lat": 46.2141318,
+  "lng": 6.1516872,
+  "placeId": "ChIJFSXo9yJljEcRJ9pU5VO6_AY"
+}

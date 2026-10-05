@@ -1,0 +1,19 @@
+{
+  "name": "Traube",
+  "city": "solothurn",
+  "area": "Trimbach",
+  "address": "Baslerstrasse 211, 4632, Trimbach",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.8,
+  "reviews": 154,
+  "dinnerType": "menu",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu (other menus from CHF 180)",
+  "sourceType": "site",
+  "source": "https://traubetrimbach.ch/traube-menu/",
+  "website": "https://www.traubetrimbach.ch/",
+  "lat": 47.3630688,
+  "lng": 7.8953583,
+  "placeId": "ChIJ1yfqJLsxkEcRv_8s2bh-_zI"
+}

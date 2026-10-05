@@ -1,0 +1,17 @@
+{
+  "name": "La Croix d'Or",
+  "city": "vaud",
+  "area": "Ballaigues",
+  "address": "Place du Château 1, 1338, Ballaigues",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.8,
+  "reviews": 319,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://lacroixdor.ch/fr/home",
+  "lat": 46.7296519,
+  "lng": 6.4158748,
+  "placeId": "ChIJO9VMmJi2jUcR3U8IiUcx1QA"
+}

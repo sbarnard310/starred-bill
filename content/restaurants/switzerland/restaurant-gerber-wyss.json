@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant GERBER WYSS",
+  "city": "vaud",
+  "area": "Yverdon-les-Bains",
+  "address": "Rue du Four 1, 1400, Yverdon-les-Bains",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.7,
+  "reviews": 201,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.gerberwyss.ch/",
+  "lat": 46.7784323,
+  "lng": 6.6402494,
+  "placeId": "ChIJyY5bo7zPjUcR2Yk4gSvAqVg"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Mammertsberg",
+  "city": "thurgau",
+  "area": "Freidorf",
+  "address": "Bahnhofstrasse 28, 9306, Freidorf",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 268,
+  "dinnerType": "menu",
+  "dinner": 189,
+  "dinnerNote": "Tasting menu (other menus from CHF 98)",
+  "sourceType": "site",
+  "source": "https://www.mammertsberg.ch/restaurant",
+  "website": "https://www.mammertsberg.ch/",
+  "lat": 47.4860199,
+  "lng": 9.3920453,
+  "placeId": "ChIJs3wzF_4dm0cRtrh2t9xVDpE"
+}

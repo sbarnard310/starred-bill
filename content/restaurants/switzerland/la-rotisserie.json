@@ -1,0 +1,16 @@
+{
+  "name": "La Rôtisserie",
+  "city": "zurich",
+  "address": "Weinplatz 2, 8001, Zurich",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.5,
+  "reviews": 452,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://storchen.ch/en/restaurants/la-rotisserie/",
+  "lat": 47.3712935,
+  "lng": 8.5418052,
+  "placeId": "ChIJA4wBqwAKkEcR1Y1kaDLt-H8"
+}

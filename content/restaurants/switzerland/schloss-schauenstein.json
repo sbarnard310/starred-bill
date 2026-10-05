@@ -1,0 +1,17 @@
+{
+  "name": "Schloss Schauenstein",
+  "city": "graubunden",
+  "area": "Fürstenau",
+  "address": "Obergass 15, 7414, Fürstenau",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 681,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://schauenstein.ch/",
+  "lat": 46.7212107,
+  "lng": 9.4462679,
+  "placeId": "ChIJmdeEklvqhEcRnfl0CO7_szw"
+}

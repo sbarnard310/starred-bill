@@ -1,0 +1,17 @@
+{
+  "name": "focus ATELIER",
+  "city": "lucerne",
+  "area": "Vitznau",
+  "address": "Seestrasse 18, 6354, Vitznau",
+  "stars": 2,
+  "cuisine": "Creative French",
+  "rating": 4.9,
+  "reviews": 140,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.parkhotel-vitznau.ch/wine-dine/restaurant-focus-atelier",
+  "lat": 47.0151513,
+  "lng": 8.4776007,
+  "placeId": "ChIJz-m4m6tXhUcRr8buG169t1k"
+}

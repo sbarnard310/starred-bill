@@ -1,0 +1,16 @@
+{
+  "name": "Colonnade",
+  "city": "lucerne",
+  "address": "Haldenstrasse 10, 6002, Lucerne",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.9,
+  "reviews": 51,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mandarinoriental.com/en/luzern/palace/dine/colonnade",
+  "lat": 47.0551796,
+  "lng": 8.3198996,
+  "placeId": "ChIJne-Gjyr7j0cRYloR66Cpbag"
+}

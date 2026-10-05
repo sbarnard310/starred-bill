@@ -1,0 +1,17 @@
+{
+  "name": "Table de Mary",
+  "city": "vaud",
+  "area": "Cheseaux-Noréaz",
+  "address": "Route du Gymnase 2, 1400, Cheseaux-Noréaz",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.7,
+  "reviews": 543,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.latabledemary.ch/",
+  "lat": 46.7805014,
+  "lng": 6.6677225,
+  "placeId": "ChIJtQtl9PHPjUcRyeyM7K2QdZc"
+}

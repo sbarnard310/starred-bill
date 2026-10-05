@@ -1,0 +1,19 @@
+{
+  "name": "Du Bourg",
+  "city": "berne",
+  "area": "Biel",
+  "address": "Burggasse 12, 2502, Biel",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 239,
+  "dinnerType": "menu",
+  "dinner": 164,
+  "dinnerNote": "Tasting menu (other menus from CHF 149)",
+  "sourceType": "site",
+  "source": "https://www.du-bourg.ch",
+  "website": "https://www.du-bourg.ch",
+  "lat": 47.1411639,
+  "lng": 7.2457509,
+  "placeId": "ChIJERExTHoZjkcR29GFu2KOHAM"
+}

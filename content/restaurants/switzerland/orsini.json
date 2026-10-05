@@ -1,0 +1,16 @@
+{
+  "name": "ORSINI",
+  "city": "zurich",
+  "address": "Waaggasse 7, 8001, Zurich",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.6,
+  "reviews": 348,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mandarinoriental.com/fr/zurich/savoy/dine/orsini",
+  "lat": 47.3701183,
+  "lng": 8.5402159,
+  "placeId": "ChIJDc2DkwAKkEcRR6BfM4Jl9Bc"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Zur Gedult",
+  "city": "berne",
+  "area": "Burgdorf",
+  "address": "Metzgergasse 12, 3400, Burgdorf",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 135,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from CHF 165)",
+  "sourceType": "site",
+  "source": "https://www.gedult.ch/essen-trinken/gourmet-menu",
+  "website": "https://www.gedult.ch/",
+  "lat": 47.0572781,
+  "lng": 7.6266928,
+  "placeId": "ChIJQWeeh84tjkcROn5Khpmo9ro"
+}

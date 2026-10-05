@@ -1,0 +1,17 @@
+{
+  "name": "verve by sven",
+  "city": "saint-gallen",
+  "area": "Bad Ragaz",
+  "address": "Bernhard-Simon-Strasse 2, 7310, Bad Ragaz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 3.9,
+  "reviews": 99,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.resortragaz.ch/de/",
+  "lat": 47.0004645,
+  "lng": 9.5037451,
+  "placeId": "ChIJaU5I16HLhEcRoqClGBg7u-I"
+}

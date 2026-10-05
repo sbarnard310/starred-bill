@@ -1,0 +1,20 @@
+{
+  "name": "Osteria dell'Enoteca",
+  "city": "ticino",
+  "area": "Losone",
+  "address": "contrada Maggiore 24, 6616, Losone",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.7,
+  "reviews": 248,
+  "dinnerType": "menu",
+  "dinner": 59,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.osteriaenoteca.ch/wp-content/uploads/2026/04/Osteria-dellEnoteca-Losone-Menu-2026.pdf",
+  "wine": 65,
+  "website": "https://www.osteriaenoteca.ch/",
+  "lat": 46.1683701,
+  "lng": 8.7577196,
+  "placeId": "ChIJnz235g7IhUcRe_qnNHZn5lM"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Villa Sommerlust",
+  "city": "schaffhausen",
+  "address": "Rheinhaldenstrasse 8, 8200, Schaffhausen",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.6,
+  "reviews": 514,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://sommerlust.ch/",
+  "lat": 47.6945459,
+  "lng": 8.647056,
+  "placeId": "ChIJG0wZXOeBmkcR9yiGFzcF6aU"
+}

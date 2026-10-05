@@ -1,0 +1,17 @@
+{
+  "name": "Apollo",
+  "city": "graubunden",
+  "area": "Davos Platz",
+  "address": "Talstrasse 3, 7270, Davos Platz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 67,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://hotelgrischa.ch/restaurants/apollo/",
+  "lat": 46.7914018,
+  "lng": 9.8201949,
+  "placeId": "ChIJUXyOZ0qhhEcR4ABma0cUDkY"
+}

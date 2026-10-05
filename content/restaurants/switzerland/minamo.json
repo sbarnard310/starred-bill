@@ -1,0 +1,16 @@
+{
+  "name": "Minamo",
+  "city": "lucerne",
+  "address": "Haldenstrasse 10, 6002, Lucerne",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.9,
+  "reviews": 73,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mandarinoriental.com/en/luzern/palace/dine/minamo",
+  "lat": 47.0551387,
+  "lng": 8.3196277,
+  "placeId": "ChIJCXfH0Kz7j0cR11Tn3-6ozQs"
+}

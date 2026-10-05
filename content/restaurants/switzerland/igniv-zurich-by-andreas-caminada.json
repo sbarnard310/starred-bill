@@ -1,0 +1,16 @@
+{
+  "name": "IGNIV Zürich by Andreas Caminada",
+  "city": "zurich",
+  "address": "Marktgasse 17, 8001, Zurich",
+  "stars": 2,
+  "cuisine": "Sharing",
+  "rating": 4.8,
+  "reviews": 455,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.marktgassehotel.ch/",
+  "lat": 47.3719489,
+  "lng": 8.5437311,
+  "placeId": "ChIJZbkhcZOhmkcRtd-eRrYqZ8c"
+}

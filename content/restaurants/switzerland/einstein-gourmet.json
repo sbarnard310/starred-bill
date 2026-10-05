@@ -1,0 +1,17 @@
+{
+  "name": "Einstein Gourmet",
+  "city": "saint-gallen",
+  "area": "Sankt Gallen",
+  "address": "Berneggstrasse 2, 9000, Sankt Gallen",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 88,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.einstein.ch/de/",
+  "lat": 47.4215598,
+  "lng": 9.3753719,
+  "placeId": "ChIJSfjp8Ewem0cRcVBki60dN3Y"
+}

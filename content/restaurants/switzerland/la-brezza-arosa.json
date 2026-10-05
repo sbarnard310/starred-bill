@@ -1,0 +1,18 @@
+{
+  "name": "La Brezza",
+  "city": "graubunden",
+  "area": "Arosa",
+  "address": "Tschuggentorweg 1, 7050, Arosa",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 7,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://tschuggen.ch/de/restaurants/la-brezza",
+  "lat": 46.7774999,
+  "lng": 9.6694197,
+  "placeId": "ChIJnY9OYPK8hEcRL1oS48rDZ2I"
+}

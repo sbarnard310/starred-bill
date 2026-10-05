@@ -1,0 +1,19 @@
+{
+  "name": "Bad Balgach by Schützelhofer",
+  "city": "saint-gallen",
+  "area": "Balgach",
+  "address": "Hauptstrasse 73, 9435, Balgach",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.9,
+  "reviews": 165,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from CHF 120)",
+  "sourceType": "site",
+  "source": "https://www.bad-balgach.com/s/17092026-A-la-Carte-ejc9.pdf",
+  "website": "https://www.bad-balgach.com",
+  "lat": 47.4036916,
+  "lng": 9.6004908,
+  "placeId": "ChIJh9fW-PYWm0cRJFIkqVXtlMk"
+}

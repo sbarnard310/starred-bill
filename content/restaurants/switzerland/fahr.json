@@ -1,0 +1,20 @@
+{
+  "name": "Fahr",
+  "city": "aargau",
+  "area": "Künten-Sulz",
+  "address": "Grossacherweg 1, 5444, Künten-Sulz",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.5,
+  "reviews": 479,
+  "dinnerType": "menu",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu (other menus from CHF 150)",
+  "sourceType": "site",
+  "source": "https://fahr-sulz.ch/wp-content/uploads/Abend-Online-1.pdf",
+  "wine": 60,
+  "website": "https://fahr-sulz.ch/",
+  "lat": 47.377839,
+  "lng": 8.3210191,
+  "placeId": "ChIJUwQJdowRkEcR5UFzSTOpaYo"
+}

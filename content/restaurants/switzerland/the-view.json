@@ -1,0 +1,19 @@
+{
+  "name": "THE VIEW",
+  "city": "ticino",
+  "area": "Lugano",
+  "address": "Via Guidino 29, 6900, Lugano",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.6,
+  "reviews": 518,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from CHF 140)",
+  "sourceType": "site",
+  "source": "https://d1vp8nomjxwyf1.cloudfront.net/wp-content/uploads/sites/456/2018/07/04192924/MENU-UFFICIALE-MARZO-26-pdf-2.pdf",
+  "website": "https://www.theviewlugano.com/ristorante/the-view-ristorante-gourmet/",
+  "lat": 45.9867232,
+  "lng": 8.9500872,
+  "placeId": "ChIJDWSVcasthEcRFWKMQZva4pA"
+}

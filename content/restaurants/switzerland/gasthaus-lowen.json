@@ -1,0 +1,17 @@
+{
+  "name": "Gasthaus Löwen",
+  "city": "zug",
+  "area": "Menzingen",
+  "address": "Holzhäusernstrasse 2, 6313, Menzingen",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.9,
+  "reviews": 104,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://loewen-menzingen.ch/",
+  "lat": 47.178566,
+  "lng": 8.5903986,
+  "placeId": "ChIJofnurXGsmkcRPe7FSwsOA9M"
+}

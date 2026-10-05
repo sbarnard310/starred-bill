@@ -1,0 +1,17 @@
+{
+  "name": "Brasserie Uno",
+  "city": "valais",
+  "area": "Zermatt",
+  "address": "Kirchstrasse 38, 3920, Zermatt",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 280,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.brasserieuno.com/",
+  "lat": 46.0191567,
+  "lng": 7.7475233,
+  "placeId": "ChIJ4Ztpyqc1j0cRDQTgzN3KwXg"
+}

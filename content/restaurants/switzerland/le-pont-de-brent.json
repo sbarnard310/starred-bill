@@ -1,0 +1,17 @@
+{
+  "name": "Le Pont de Brent",
+  "city": "vaud",
+  "area": "Brent",
+  "address": "Route de Blonay 4, 1807, Brent",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 357,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://pontdebrent.ch/",
+  "lat": 46.4588171,
+  "lng": 6.9009618,
+  "placeId": "ChIJdX7ACkqbjkcRGFfOkckpvs0"
+}

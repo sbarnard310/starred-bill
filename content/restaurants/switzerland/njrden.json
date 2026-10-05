@@ -1,0 +1,20 @@
+{
+  "name": "Njørden",
+  "city": "vaud",
+  "area": "Aubonne",
+  "address": "Place du Marché 15, 1170, Aubonne",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 414,
+  "dinnerType": "menu",
+  "dinner": 82,
+  "dinnerNote": "Tasting menu (other menus from CHF 60)",
+  "sourceType": "site",
+  "source": "https://njorden.com/carte-cafe",
+  "wine": 92,
+  "website": "https://njorden.com/",
+  "lat": 46.4952391,
+  "lng": 6.3913754,
+  "placeId": "ChIJASd8x0VJjEcRh6nUp6LJR-w"
+}

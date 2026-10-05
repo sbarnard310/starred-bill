@@ -1,0 +1,19 @@
+{
+  "name": "Le Berceau des Sens",
+  "city": "vaud",
+  "area": "Lausanne",
+  "address": "Route de Berne 301, 1000, Lausanne",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 325,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from CHF 85)",
+  "sourceType": "site",
+  "source": "https://www.berceau-des-sens.ch/menu",
+  "website": "https://www.berceau-des-sens.ch/",
+  "lat": 46.5605957,
+  "lng": 6.6827179,
+  "placeId": "ChIJ9V48sC8sjEcRPXrTRG2wu3g"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Gasthaus Zum Gupf",
+  "city": "appenzell-ausserrhoden",
+  "area": "Rehetobel",
+  "address": "Gupf 21, 9038, Rehetobel",
+  "stars": 1,
+  "cuisine": "Traditional Cuisine",
+  "rating": 4.9,
+  "reviews": 616,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.gupf.ch/",
+  "lat": 47.4310779,
+  "lng": 9.4918454,
+  "placeId": "ChIJ5SUAx3QZm0cRfcJXT1qIkng"
+}

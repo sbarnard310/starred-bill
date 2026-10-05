@@ -1,0 +1,19 @@
+{
+  "name": "Soleil d’Or by Benjamin Geisser",
+  "city": "saint-gallen",
+  "area": "Sankt Gallen",
+  "address": "Haldenstrasse 1, 9000, Sankt Gallen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 86,
+  "dinnerType": "menu",
+  "dinner": 212,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://restaurant-soleildor.ch/wp-content/uploads/2026/09/Streetfood-A4.pdf",
+  "website": "https://restaurant-soleildor.ch/",
+  "lat": 47.4202187,
+  "lng": 9.3722685,
+  "placeId": "ChIJAdUsHZEfm0cRSvCBti_RLmQ"
+}

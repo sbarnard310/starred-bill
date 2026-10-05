@@ -1,0 +1,19 @@
+{
+  "name": "Taverne zum Schäfli",
+  "city": "thurgau",
+  "area": "Wigoltingen",
+  "address": "Oberdorfstrasse 8, 8556, Wigoltingen",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 208,
+  "dinnerType": "menu",
+  "dinner": 100,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.schaefli-wigoltingen.ch/s/AGB-Taverne-zum-Schafli-AG.pdf",
+  "website": "https://schaefli-wigoltingen.ch/",
+  "lat": 47.5957416,
+  "lng": 9.0325819,
+  "placeId": "ChIJN9nyJ-bymkcRhMqEPz5SCdc"
+}

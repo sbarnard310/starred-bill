@@ -1,0 +1,17 @@
+{
+  "name": "Du Cerf",
+  "city": "berne",
+  "area": "Sonceboz",
+  "address": "Rue du Collège 4, 2605, Sonceboz",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.5,
+  "reviews": 360,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.cerf-sonceboz.ch/",
+  "lat": 47.1963569,
+  "lng": 7.1782266,
+  "placeId": "ChIJfYdfvhcdjkcR-ojg_A8krMg"
+}

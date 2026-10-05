@@ -1,0 +1,18 @@
+{
+  "name": "Wirtschaft im FRANZ",
+  "city": "zurich",
+  "address": "Bremgartnerstrasse 18, 8003, Zurich",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 378,
+  "dinnerType": "menu",
+  "dinner": 129,
+  "dinnerNote": "Tasting menu (other menus from CHF 103)",
+  "sourceType": "site",
+  "source": "https://www.wirtschaftimfranz.ch/menu",
+  "website": "https://www.wirtschaftimfranz.ch",
+  "lat": 47.3722302,
+  "lng": 8.5195348,
+  "placeId": "ChIJe9KzPh8KkEcRtF2_80Zz1cQ"
+}

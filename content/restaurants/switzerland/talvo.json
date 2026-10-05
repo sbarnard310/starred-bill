@@ -1,0 +1,17 @@
+{
+  "name": "Talvo",
+  "city": "graubunden",
+  "area": "Saint Moritz",
+  "address": "Via Gunels 15, 7512, Saint Moritz",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.7,
+  "reviews": 146,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.talvo.ch/",
+  "lat": 46.47851,
+  "lng": 9.81179,
+  "placeId": "ChIJ31bJBwF-g0cRuJOGtdIpw-Y"
+}

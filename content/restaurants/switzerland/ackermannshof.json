@@ -1,0 +1,14 @@
+{
+  "name": "Ackermannshof",
+  "city": "basel-city",
+  "address": "St.-Johanns-Vorstadt 21, 4056, Basel",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ackermannshof.ch/",
+  "lat": 47.5631925,
+  "lng": 7.5846153,
+  "placeId": "ChIJpXGWMaa5kUcRZz-9qOEw9AU"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Sternen - Badstube",
+  "city": "zurich",
+  "area": "Wangen bei Dübendorf",
+  "address": "Sennhüttestrasse 1, 8602, Wangen bei Dübendorf",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.6,
+  "reviews": 518,
+  "dinnerType": "menu",
+  "dinner": 79,
+  "dinnerNote": "Tasting menu (other menus from CHF 53)",
+  "sourceType": "site",
+  "source": "https://www.sternenwangen.ch/en/zuerich-geht-aus-2018-2019.pdf",
+  "website": "https://www.sternenwangen.ch/",
+  "lat": 47.4110124,
+  "lng": 8.6454555,
+  "placeId": "ChIJ8eSVLYmhmkcRqLrD8RVBjoQ"
+}

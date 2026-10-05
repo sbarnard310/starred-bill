@@ -1,0 +1,16 @@
+{
+  "name": "Widder Restaurant",
+  "city": "zurich",
+  "address": "Rennweg 7, 8001, Zurich",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.6,
+  "reviews": 61,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.widderhotel.com/de/restaurants/widder-restaurant/",
+  "lat": 47.3722203,
+  "lng": 8.5398636,
+  "placeId": "ChIJhfDAJAcKkEcR59EtQQox4TQ"
+}

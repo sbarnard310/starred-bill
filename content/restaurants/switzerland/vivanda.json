@@ -1,0 +1,17 @@
+{
+  "name": "Vivanda",
+  "city": "graubunden",
+  "area": "Brail",
+  "address": "Crusch Plantaun 217, 7527, Brail",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 290,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.inlain.ch/de/kulinarik/vivanda",
+  "lat": 46.6531441,
+  "lng": 10.0329165,
+  "placeId": "ChIJw9d4QExmg0cRzOrai1rd354"
+}

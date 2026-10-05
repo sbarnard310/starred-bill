@@ -1,0 +1,20 @@
+{
+  "name": "Birdy's by Achtien - The Nest",
+  "city": "lucerne",
+  "area": "Brunnen",
+  "address": "Axenstrasse 9, 6440, Brunnen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 274,
+  "dinnerType": "menu",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://birdys-brunnen.ch/files/TheNest-EN.pdf",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://birdys-brunnen.ch/",
+  "lat": 46.9935811,
+  "lng": 8.6063937,
+  "placeId": "ChIJY_nVqNxRhUcRCKP2hUgWRns"
+}

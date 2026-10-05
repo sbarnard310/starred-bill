@@ -1,0 +1,19 @@
+{
+  "name": "EquiTable",
+  "city": "zurich",
+  "address": "Stauffacherstrasse 163, 8004, Zurich",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 353,
+  "dinnerType": "menu",
+  "dinner": 75,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.equi-table.ch/",
+  "wine": 70,
+  "website": "https://www.equi-table.ch/",
+  "lat": 47.3778541,
+  "lng": 8.5212339,
+  "placeId": "ChIJHYncIBgKkEcRYw8pOjUBaO0"
+}

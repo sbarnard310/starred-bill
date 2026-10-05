@@ -1,0 +1,19 @@
+{
+  "name": "Locanda Barbarossa",
+  "city": "ticino",
+  "area": "Ascona",
+  "address": "via Muraccio 142, 6612, Ascona",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.7,
+  "reviews": 22,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from CHF 125)",
+  "sourceType": "site",
+  "source": "https://www.castellodelsole.com/media/ingkgyes/menu-sapori-del-nostro-orto-autunno_fr_en.pdf",
+  "website": "https://www.castellodelsole.com/en/home",
+  "lat": 46.1521569,
+  "lng": 8.7932119,
+  "placeId": "ChIJAQCQO7PJhUcRO9pfPPogjdg"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Le Cigalon",
+  "city": "geneva",
+  "area": "Thônex",
+  "address": "Route d'Ambilly 39, 1226, Thônex",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.8,
+  "reviews": 357,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.le-cigalon.ch/",
+  "lat": 46.1991216,
+  "lng": 6.2209024,
+  "placeId": "ChIJqQVK2dBvjEcR8W7vGC2rNmI"
+}

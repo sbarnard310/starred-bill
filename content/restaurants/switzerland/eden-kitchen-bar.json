@@ -1,0 +1,16 @@
+{
+  "name": "Eden Kitchen & Bar",
+  "city": "zurich",
+  "address": "Utoquai 45, 8008, Zurich",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.6,
+  "reviews": 276,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lareserve-zurich.com/restaurants/eden-kitchen-and-bar/",
+  "lat": 47.3627837,
+  "lng": 8.5473255,
+  "placeId": "ChIJbbNdcDGnmkcR96QYsCL_hbs"
+}

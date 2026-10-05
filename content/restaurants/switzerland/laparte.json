@@ -1,0 +1,16 @@
+{
+  "name": "L'Aparté",
+  "city": "geneva",
+  "address": "Rue de Lausanne 43, 1201, Geneva",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 317,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotelroyalgeneva.com/fr/l-aparte.html",
+  "lat": 46.2134994,
+  "lng": 6.145432,
+  "placeId": "ChIJG6LF5SBljEcRV2X1bg60qdk"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Sonne",
+  "city": "berne",
+  "area": "Wengi bei Büren",
+  "address": "Scheunenberg 70, 3251, Wengi bei Büren",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 265,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from CHF 185)",
+  "sourceType": "site",
+  "source": "https://www.sonne-scheunenberg.ch/hubfs/Sonne%20Menu%20September%202026-1.pdf?hsLang=de",
+  "website": "https://www.sonne-scheunenberg.ch/",
+  "lat": 47.0886093,
+  "lng": 7.3755559,
+  "placeId": "ChIJSZbwJQ8jjkcRx2Ay7rGyRZk"
+}

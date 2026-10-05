@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant de l'Hôtel de Ville",
+  "city": "vaud",
+  "area": "Ollon",
+  "address": "Place de l'Hôtel-de-Ville 3, 1867, Ollon",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.5,
+  "reviews": 291,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotel-restaurant-ollon.ch/",
+  "lat": 46.2968491,
+  "lng": 6.9951099,
+  "placeId": "ChIJjx-6QaK9jkcRI9h7nzX11Pw"
+}

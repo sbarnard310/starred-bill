@@ -1,0 +1,17 @@
+{
+  "name": "Deep Roots",
+  "city": "lithuania",
+  "area": "Vilnius",
+  "address": "Trakų gatvė 14, 01132, Vilnius",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 56,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://deeproots.lt/",
+  "lat": 54.680328,
+  "lng": 25.2810799,
+  "placeId": "ChIJLTomE-aV3UYRNSKLfm9_3q0"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Nineteen18",
+  "city": "lithuania",
+  "area": "Vilnius",
+  "address": "Dominikonų gatvė 11, 01131, Vilnius",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 480,
+  "dinnerType": "menu",
+  "dinner": 115,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.nineteen18.lt/",
+  "website": "https://nineteen18.lt",
+  "lat": 54.6812129,
+  "lng": 25.2855231,
+  "placeId": "ChIJX96WpnGV3UYRBS2_fXCj4DA"
+}

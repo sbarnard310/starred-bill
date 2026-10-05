@@ -1,0 +1,16 @@
+{
+  "name": "Patio",
+  "city": "athens",
+  "address": "11 Litous, Vouliagmeni, 16671, Athens",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 51,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://patio.gr/",
+  "lat": 37.8138188,
+  "lng": 23.7736533,
+  "placeId": "ChIJUyfI9a_qoRQRRXvofx5C8ys"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Delta",
+  "city": "athens",
+  "address": "364 Syggrou Avenue, 17674, Athens",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.4,
+  "reviews": 711,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.deltarestaurant.gr",
+  "lat": 37.9391772,
+  "lng": 23.6913453,
+  "placeId": "ChIJPSgVfVa9oRQRwZ4mJ5kITvQ"
+}

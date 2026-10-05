@@ -1,0 +1,18 @@
+{
+  "name": "Hytra",
+  "city": "athens",
+  "address": "1 Petrou Kokkali Street, 11521, Athens",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 2187,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu (other menus from €90)",
+  "sourceType": "site",
+  "source": "https://hytra.gr/menus/",
+  "website": "https://www.hytra.gr",
+  "lat": 37.9813817,
+  "lng": 23.7528491,
+  "placeId": "ChIJdTdlpiqjoRQRIk7Wh7FYGBY"
+}

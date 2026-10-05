@@ -1,0 +1,19 @@
+{
+  "name": "Botrini's",
+  "city": "athens",
+  "address": "24b Vasileos Georgiou B Avenue, 152 33, Athens",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.5,
+  "reviews": 1143,
+  "dinnerType": "menu",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://botrinis.com/book-a-table/",
+  "wine": 85,
+  "website": "https://www.botrinis.com",
+  "lat": 38.0232617,
+  "lng": 23.7936937,
+  "placeId": "ChIJ2x4_mPaYoRQRi8YGpT4_wIo"
+}

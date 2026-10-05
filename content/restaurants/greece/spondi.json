@@ -1,0 +1,16 @@
+{
+  "name": "Spondi",
+  "city": "athens",
+  "address": "5 Pyrronos Street, 116 36, Athens",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.5,
+  "reviews": 1442,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.spondi.gr",
+  "lat": 37.965176,
+  "lng": 23.7431892,
+  "placeId": "ChIJ87zFe2y9oRQR_ryfDQ9QfNI"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Soil",
+  "city": "athens",
+  "address": "5 Ferekidou Street, 116 35, Athens",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 1488,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://soilrestaurant.gr/wp-content/uploads/2026/09/14-EN-10.09.26.pdf",
+  "wine": 75,
+  "website": "https://www.soilrestaurant.gr",
+  "lat": 37.9669545,
+  "lng": 23.7429946,
+  "placeId": "ChIJr9_aRfm9oRQRWj0x3vCftJE"
+}

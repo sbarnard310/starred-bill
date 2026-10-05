@@ -1,0 +1,16 @@
+{
+  "name": "CTC Urban Gastronomy",
+  "city": "athens",
+  "address": "15 Plateon Street, 10435, Athens",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1453,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ctc-restaurant.com/",
+  "lat": 37.9804964,
+  "lng": 23.7168694,
+  "placeId": "ChIJ9WOIj1y9oRQRlzRu3DA1rHw"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Hervé",
+  "city": "athens",
+  "address": "170 Trion Ierarchon Street, 118 52, Athens",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 1041,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.herve-restaurant.com",
+  "lat": 37.9666571,
+  "lng": 23.7093681,
+  "placeId": "ChIJC_jIHhe9oRQRww-ZA41MGck"
+}

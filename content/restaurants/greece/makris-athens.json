@@ -1,0 +1,16 @@
+{
+  "name": "Makris Athens",
+  "city": "athens",
+  "address": "10 Astiggos - 119 Ermou Street, 10555, Athens",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 621,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://makrisathens.com/en/",
+  "lat": 37.9767678,
+  "lng": 23.7230301,
+  "placeId": "ChIJbSeMEYC9oRQR6v8p_yhQWOk"
+}

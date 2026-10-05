@@ -1,0 +1,19 @@
+{
+  "name": "The French Laundry",
+  "city": "california",
+  "area": "Yountville",
+  "address": "6640 Washington St., Yountville, 94599",
+  "stars": 3,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 2281,
+  "dinnerType": "menu",
+  "dinner": 425,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/tfl",
+  "website": "https://www.thomaskeller.com/tfl",
+  "lat": 38.40443,
+  "lng": -122.36474,
+  "placeId": "ChIJAAAAAERVhIARYeTLvbbzAxs"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Chez Noir",
+  "city": "california",
+  "area": "Carmel-by-the-Sea",
+  "address": "5th Ave. btw. Dolores and San Carlos Sts., Carmel-by-the-Sea, 93921",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.5,
+  "reviews": 307,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.cheznoircarmel.com/menu",
+  "website": "https://www.cheznoircarmel.com/",
+  "lat": 36.5569588,
+  "lng": -121.9221052,
+  "placeId": "ChIJSZwHIcTnjYAR40RvFRpNQLM"
+}

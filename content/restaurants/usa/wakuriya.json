@@ -1,0 +1,17 @@
+{
+  "name": "Wakuriya",
+  "city": "california",
+  "area": "San Mateo",
+  "address": "115 De Anza Blvd., San Mateo, 94402",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 207,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.wakuriya.com/",
+  "lat": 37.52114,
+  "lng": -122.3366,
+  "placeId": "ChIJw5XHiMifj4ARPKqzyYwc8kw"
+}

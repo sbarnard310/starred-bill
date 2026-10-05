@@ -1,0 +1,16 @@
+{
+  "name": "Wild Common",
+  "city": "charleston",
+  "address": "103 Spring St., Charleston, 29403",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 233,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.wildcommoncharleston.com/",
+  "lat": 32.7907327,
+  "lng": -79.9460589,
+  "placeId": "ChIJzUn6Qi17_ogRX1VX24enKTE"
+}

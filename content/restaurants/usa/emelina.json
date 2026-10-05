@@ -1,0 +1,17 @@
+{
+  "name": "Emelina",
+  "city": "florida",
+  "area": "West Palm Beach",
+  "address": "424 Park Pl., Ste. 101, West Palm Beach, 33401",
+  "stars": 1,
+  "cuisine": "Cuban",
+  "rating": 4.8,
+  "reviews": 97,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://emelinawpb.com/",
+  "lat": 26.6976528,
+  "lng": -80.0551759,
+  "placeId": "ChIJz8UO9oLX2IgRkPBUtghdzkA"
+}

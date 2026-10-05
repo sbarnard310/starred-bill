@@ -1,0 +1,17 @@
+{
+  "name": "Troubadour",
+  "city": "california",
+  "area": "Healdsburg",
+  "address": "381 Healdsburg Ave., Healdsburg, 95448",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.6,
+  "reviews": 189,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.troubadourhbg.com/",
+  "lat": 38.6116465,
+  "lng": -122.8710511,
+  "placeId": "ChIJr4-QP0sXhIARaxCxI3oi8AQ"
+}

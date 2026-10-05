@@ -1,0 +1,17 @@
+{
+  "name": "CorkScrew BBQ",
+  "city": "texas",
+  "area": "Spring",
+  "address": "26608 Keith St., Spring, 77373",
+  "stars": 1,
+  "cuisine": "Barbecue",
+  "rating": 4.7,
+  "reviews": 4589,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.corkscreworders.com/",
+  "lat": 30.0806984,
+  "lng": -95.4200092,
+  "placeId": "ChIJRfY7ATs0R4YRNVMqjkDzTHU"
+}

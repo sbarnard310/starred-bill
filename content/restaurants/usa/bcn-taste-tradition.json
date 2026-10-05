@@ -1,0 +1,16 @@
+{
+  "name": "BCN Taste & Tradition",
+  "city": "houston",
+  "address": "4210 Roseland St., Houston, 77006",
+  "stars": 1,
+  "cuisine": "Spanish",
+  "rating": 4.7,
+  "reviews": 1321,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://bcnhouston.com/",
+  "lat": 29.7348796,
+  "lng": -95.3899265,
+  "placeId": "ChIJjYk683y_QIYRVaLUbeMhExI"
+}

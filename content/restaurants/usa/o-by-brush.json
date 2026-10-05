@@ -1,0 +1,19 @@
+{
+  "name": "O by Brush",
+  "city": "atlanta",
+  "address": "3009 Peachtree Rd. NE, Ste. 140, Atlanta, 30305",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 17,
+  "dinnerType": "menu",
+  "dinner": 285,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.obybrush.com/",
+  "wine": 155,
+  "website": "https://www.obybrush.com/",
+  "lat": 33.8374855,
+  "lng": -84.3810816,
+  "placeId": "ChIJAQAkDY4F9YgRHFdUJW4jKo8"
+}

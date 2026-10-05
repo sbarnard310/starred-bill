@@ -1,0 +1,20 @@
+{
+  "name": "The Restaurant at JUSTIN",
+  "city": "california",
+  "area": "Paso Robles",
+  "address": "11680 Chimney Rock Rd., Paso Robles, 93446",
+  "stars": 1,
+  "cuisine": "Californian",
+  "rating": 4.4,
+  "reviews": 79,
+  "dinnerType": "menu",
+  "dinner": 225,
+  "dinnerNote": "Estate tasting menu",
+  "wine": 110,
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/therestaurantatjustinwinery",
+  "website": "https://www.justinwine.com/",
+  "lat": 35.6563869,
+  "lng": -120.9113324,
+  "placeId": "ChIJm22pMP8p7YARcieBuVH8Qe4"
+}

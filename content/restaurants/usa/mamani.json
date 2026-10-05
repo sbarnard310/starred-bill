@@ -1,0 +1,16 @@
+{
+  "name": "Mamani",
+  "city": "dallas",
+  "address": "2681 Howell St., #BU4, Dallas, 75204",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 464,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mamanirestaurant.com/",
+  "lat": 32.7984656,
+  "lng": -96.8037637,
+  "placeId": "ChIJV-YmSQCZToYRFXUxw3gwL-A"
+}

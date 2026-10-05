@@ -1,0 +1,17 @@
+{
+  "name": "Protégé",
+  "city": "california",
+  "area": "Palo Alto",
+  "address": "250 California Ave., Palo Alto, 94306",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 755,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.protegepaloalto.com/",
+  "lat": 37.427853,
+  "lng": -122.14362,
+  "placeId": "ChIJ14CVruW6j4ARoh-i6iIAe5g"
+}

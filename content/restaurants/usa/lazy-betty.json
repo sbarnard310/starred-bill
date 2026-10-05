@@ -1,0 +1,18 @@
+{
+  "name": "Lazy Betty",
+  "city": "atlanta",
+  "address": "999 Peachtree St. NE, Atlanta, 30309",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 1096,
+  "dinnerType": "menu",
+  "dinner": 285,
+  "dinnerNote": "Tasting menu, 8 courses (bar menu $185)",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/lazy-betty-atlanta",
+  "website": "https://www.lazybettyatl.com/",
+  "lat": 33.7815172,
+  "lng": -84.3837962,
+  "placeId": "ChIJ00zCHiAH9YgR3l-kmURAKrM"
+}

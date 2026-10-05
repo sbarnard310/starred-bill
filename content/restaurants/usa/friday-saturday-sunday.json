@@ -1,0 +1,16 @@
+{
+  "name": "Friday Saturday Sunday",
+  "city": "philadelphia",
+  "address": "261 S. 21st St., Philadelphia, 19103",
+  "stars": 1,
+  "cuisine": "American Contemporary",
+  "rating": 4.7,
+  "reviews": 897,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.fridaysaturdaysunday.com/",
+  "lat": 39.9489785,
+  "lng": -75.1760814,
+  "placeId": "ChIJf7rSRDjGxokR1cJYp_u6uv8"
+}

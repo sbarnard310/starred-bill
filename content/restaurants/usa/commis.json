@@ -1,0 +1,20 @@
+{
+  "name": "Commis",
+  "city": "california",
+  "area": "Oakland",
+  "address": "3859 Piedmont Ave., Oakland, 94611",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 701,
+  "dinnerType": "menu",
+  "dinner": 279,
+  "dinnerNote": "Tasting menu, 10 courses (bar $259)",
+  "wine": 139,
+  "sourceType": "press",
+  "source": "https://commisrestaurant.com/info/",
+  "website": "https://www.commisrestaurant.com/",
+  "lat": 37.8246825,
+  "lng": -122.254846,
+  "placeId": "ChIJFzl5Mfh9hYARQmOK6_pAIYw"
+}

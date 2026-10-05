@@ -1,0 +1,17 @@
+{
+  "name": "Plumed Horse",
+  "city": "california",
+  "area": "Saratoga",
+  "address": "14555 Big Basin Way, Saratoga, 95070",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.4,
+  "reviews": 918,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://plumedhorse.com/",
+  "lat": 37.2563623,
+  "lng": -122.0352659,
+  "placeId": "ChIJ01EehuBKjoARf8mKQoPv8oA"
+}

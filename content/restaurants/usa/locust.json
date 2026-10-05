@@ -1,0 +1,16 @@
+{
+  "name": "Locust",
+  "city": "nashville",
+  "address": "2305 12th Ave. S., Nashville, 37204",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 417,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.locustnashville.com/",
+  "lat": 36.1273369,
+  "lng": -86.7892725,
+  "placeId": "ChIJZTkU2HdlZIgR_V55oayk0Lw"
+}

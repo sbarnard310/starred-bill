@@ -1,0 +1,18 @@
+{
+  "name": "Her Place Supper Club",
+  "city": "philadelphia",
+  "address": "1740 Sansom St., Philadelphia, 19103",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 263,
+  "dinnerType": "menu",
+  "dinner": 110,
+  "dinnerNote": "Tasting menu (other menus from $85)",
+  "sourceType": "site",
+  "source": "https://www.herplacephilly.com/menu/",
+  "website": "https://www.herplacephilly.com/",
+  "lat": 39.9508248,
+  "lng": -75.1701166,
+  "placeId": "ChIJMW-WlpXHxokRw9Sf2FaFXjE"
+}

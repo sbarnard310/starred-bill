@@ -1,0 +1,16 @@
+{
+  "name": "Malagón Mercado y Taperia",
+  "city": "charleston",
+  "address": "33 Spring St., Charleston, 29403",
+  "stars": 1,
+  "cuisine": "Spanish",
+  "rating": 4.6,
+  "reviews": 731,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.malagonchs.com/",
+  "lat": 32.7928242,
+  "lng": -79.94155,
+  "placeId": "ChIJe1E1N0B7_ogRi4DdR7JZ9ms"
+}

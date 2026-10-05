@@ -1,0 +1,17 @@
+{
+  "name": "Lucien",
+  "city": "san-diego",
+  "area": "La Jolla",
+  "address": "7863 Girard Ave., Ste. 308, La Jolla, 92037",
+  "stars": 1,
+  "cuisine": "Californian",
+  "rating": 4.7,
+  "reviews": 70,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://luciensd.com/",
+  "lat": 32.8464595,
+  "lng": -117.2741357,
+  "placeId": "ChIJObi7SjUD3IAR6J0Sbt-VQtA"
+}

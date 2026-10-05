@@ -1,0 +1,16 @@
+{
+  "name": "Hestia",
+  "city": "austin",
+  "address": "607 W. 3rd St., Austin, 78701",
+  "stars": 1,
+  "cuisine": "American",
+  "rating": 4.5,
+  "reviews": 1049,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://hestiaaustin.com/",
+  "lat": 30.2669224,
+  "lng": -97.7499682,
+  "placeId": "ChIJlWBjs7-1RIYRsJt0C41E558"
+}

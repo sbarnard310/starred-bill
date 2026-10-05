@@ -1,0 +1,17 @@
+{
+  "name": "Monte",
+  "city": "utah",
+  "area": "South Salt Lake",
+  "address": "2245 S.W. Temple St., South Salt Lake, 84115",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.4,
+  "reviews": 111,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://monteslc.com/",
+  "lat": 40.7224078,
+  "lng": -111.8932934,
+  "placeId": "ChIJRYKVoI-LUocRq6kLwQ2NskI"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Nicōsi",
+  "city": "san-antonio",
+  "address": "221 Newell Ave., San Antonio, 78215",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 92,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://nicosisatx.com",
+  "lat": 29.4409555,
+  "lng": -98.4806909,
+  "placeId": "ChIJAQBA7vb1XIYRt1Aal0okoeA"
+}

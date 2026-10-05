@@ -1,0 +1,16 @@
+{
+  "name": "Provenance",
+  "city": "philadelphia",
+  "address": "408 S. 2nd St., Philadelphia, 19147",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 180,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://provenancephl.com/",
+  "lat": 39.942842,
+  "lng": -75.1455115,
+  "placeId": "ChIJUaanwS7JxokR4VDhtfhJ3io"
+}

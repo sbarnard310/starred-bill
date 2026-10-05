@@ -1,0 +1,18 @@
+{
+  "name": "Omakase Table",
+  "city": "atlanta",
+  "address": "3330 Piedmont Rd. NE, #22A, Atlanta, 30305",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.9,
+  "reviews": 290,
+  "dinnerType": "menu",
+  "dinner": 295,
+  "dinnerNote": "Tasting menu (other menus from $195)",
+  "sourceType": "site",
+  "source": "https://www.omakasetableatl.com/copy-of-home",
+  "website": "https://www.omakasetableatl.com/",
+  "lat": 33.846511,
+  "lng": -84.3739683,
+  "placeId": "ChIJFUGvhbcP9YgRWUdLXI3bhxA"
+}

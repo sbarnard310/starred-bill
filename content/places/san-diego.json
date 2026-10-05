@@ -1,0 +1,7 @@
+{
+  "id": "san-diego",
+  "type": "city",
+  "parent": "california",
+  "name": "San Diego",
+  "intro": "Includes La Jolla. Prices are in US dollars, with a switch to see them in pounds or euros, before tax and tip (or the service charge some restaurants add). Prices checked October 2026."
+}

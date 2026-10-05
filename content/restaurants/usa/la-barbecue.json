@@ -1,0 +1,16 @@
+{
+  "name": "la Barbecue",
+  "city": "austin",
+  "address": "2401 E. Cesar Chavez St., Austin, 78702",
+  "stars": 1,
+  "cuisine": "Barbecue",
+  "rating": 4.4,
+  "reviews": 3568,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.labarbecue.com/",
+  "lat": 30.254782,
+  "lng": -97.71734,
+  "placeId": "ChIJIR1tw661RIYRUgfHust5Vv0"
+}

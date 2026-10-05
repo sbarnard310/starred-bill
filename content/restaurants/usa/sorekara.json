@@ -1,0 +1,16 @@
+{
+  "name": "Sorekara",
+  "city": "orlando",
+  "address": "4979 New Broad St., Orlando, 32814",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 87,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://sorekarafl.com",
+  "lat": 28.5689965,
+  "lng": -81.3259631,
+  "placeId": "ChIJDe1xketl54gRUziBLAd5JPA"
+}

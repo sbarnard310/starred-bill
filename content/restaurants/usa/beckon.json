@@ -1,0 +1,18 @@
+{
+  "name": "Beckon",
+  "city": "denver",
+  "address": "2843 Larimer St., Denver, 80205",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 539,
+  "dinnerType": "menu",
+  "dinner": 215,
+  "dinnerNote": "Tasting menu, prepaid",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/beckon",
+  "website": "https://beckon-denver.com/",
+  "lat": 39.7609504,
+  "lng": -104.9824196,
+  "placeId": "ChIJQ_9Q0DJ5bIcRbDAIulshVuY"
+}

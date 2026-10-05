@@ -1,0 +1,16 @@
+{
+  "name": "Kōsen",
+  "city": "tampa",
+  "address": "307 W. Palm Ave., Tampa, 33602",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 156,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kosentampa.com/",
+  "lat": 27.9623377,
+  "lng": -82.4638787,
+  "placeId": "ChIJ27GzUEPFwogRulJovqXIaH0"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Selby's",
+  "city": "california",
+  "area": "Atherton",
+  "address": "3001 El Camino Real, Atherton, 94061",
+  "stars": 1,
+  "cuisine": "American",
+  "rating": 4.4,
+  "reviews": 578,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.selbysrestaurant.com/",
+  "lat": 37.4685638,
+  "lng": -122.2104559,
+  "placeId": "ChIJN6lxI3Kjj4ARtyvHC8OJ__k"
+}

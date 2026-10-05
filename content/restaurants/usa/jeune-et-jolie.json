@@ -1,0 +1,17 @@
+{
+  "name": "Jeune et Jolie",
+  "city": "california",
+  "area": "Carlsbad",
+  "address": "2659 State St., Carlsbad, 92008",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.8,
+  "reviews": 1065,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.jeune-jolie.com",
+  "lat": 33.1631027,
+  "lng": -117.3516968,
+  "placeId": "ChIJjzQAaqpz3IAREZe5sCZsfGY"
+}

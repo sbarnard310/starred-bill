@@ -1,0 +1,19 @@
+{
+  "name": "Madcap",
+  "city": "california",
+  "area": "San Anselmo",
+  "address": "198 Sir Francis Drake Blvd., San Anselmo, 94960",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 322,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from $145)",
+  "sourceType": "site",
+  "source": "https://www.madcapmarin.com/food",
+  "website": "https://www.madcapmarin.com/",
+  "lat": 37.974712,
+  "lng": -122.56168,
+  "placeId": "ChIJbX6zwz-XhYARl4iaPz63f7E"
+}

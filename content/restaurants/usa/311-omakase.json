@@ -1,0 +1,17 @@
+{
+  "name": "311 Omakase",
+  "city": "massachusetts",
+  "area": "Boston",
+  "address": "605 Tremont St., Boston, 02118",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 141,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://311boston.com/",
+  "lat": 42.3430505,
+  "lng": -71.0736623,
+  "placeId": "ChIJnWDc3Bh744kRdAPopyBzyVk"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Saint-Germain",
+  "city": "new-orleans",
+  "address": "3054 Saint Claude Ave., New Orleans, 70117",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 247,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://saintgermainnola.com/",
+  "lat": 29.9676193,
+  "lng": -90.0447341,
+  "placeId": "ChIJOw-wC7GnIIYRJnpHUhmf00Q"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Auro",
+  "city": "california",
+  "area": "Calistoga",
+  "address": "Four Seasons Resort and Residences Napa Valley, 400 Silverado Trl., Calistoga, 94515",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 98,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.auronapavalley.com/",
+  "lat": 38.5839271,
+  "lng": -122.5671011,
+  "placeId": "ChIJMaW7PHlDhIARZcaR5KPGG8g"
+}

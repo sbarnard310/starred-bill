@@ -1,0 +1,18 @@
+{
+  "name": "Addison",
+  "city": "san-diego",
+  "address": "Fairmont Grand Del Mar, 5200 Grand Del Mar Way, San Diego, 92130",
+  "stars": 3,
+  "cuisine": "Contemporary",
+  "rating": 4.5,
+  "reviews": 542,
+  "dinnerType": "menu",
+  "dinner": 398,
+  "dinnerNote": "Tasting menu, 10 courses",
+  "sourceType": "press",
+  "source": "https://www.addisondelmar.com/the-experience/",
+  "website": "https://www.addisondelmar.com/",
+  "lat": 32.9412972,
+  "lng": -117.1988908,
+  "placeId": "ChIJrVfI5sEH3IARfAmbFue9xNc"
+}

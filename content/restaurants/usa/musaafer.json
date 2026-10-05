@@ -1,0 +1,16 @@
+{
+  "name": "Musaafer",
+  "city": "houston",
+  "address": "5115 Westheimer Rd., Ste. 3500, Houston, 77056",
+  "stars": 1,
+  "cuisine": "Indian",
+  "rating": 4.7,
+  "reviews": 4914,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.musaaferhouston.com",
+  "lat": 29.7405722,
+  "lng": -95.4639608,
+  "placeId": "ChIJk3AANG_BQIYRslF9Sn9-03U"
+}

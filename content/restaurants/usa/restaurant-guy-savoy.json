@@ -1,0 +1,16 @@
+{
+  "name": "Restaurant Guy Savoy",
+  "city": "las-vegas",
+  "address": "Caesars Palace, 3570 Las Vegas Blvd. S., Las Vegas, 89109",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.6,
+  "reviews": 433,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.caesars.com/caesars-palace/restaurants/guy-savoy",
+  "lat": 36.1152957,
+  "lng": -115.1747136,
+  "placeId": "ChIJIWDXdTvEyIARa1jZlG5t6Uc"
+}

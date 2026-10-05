@@ -1,0 +1,19 @@
+{
+  "name": "Bosq",
+  "city": "colorado",
+  "area": "Aspen",
+  "address": "312 S. Mill St., Aspen, 81611",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.5,
+  "reviews": 267,
+  "dinnerType": "menu",
+  "dinner": 295,
+  "dinnerNote": "Chef's tasting menu, 9 courses (5 courses $215)",
+  "sourceType": "press",
+  "source": "https://www.aspensojo.com/eat-and-drink/2025/01/aspen-best-prix-fixe-meals",
+  "website": "https://www.bosqaspen.com/",
+  "lat": 39.18857,
+  "lng": -106.81978,
+  "placeId": "ChIJpwZsz2I5QIcRTrrX_dgF0aM"
+}

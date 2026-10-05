@@ -1,0 +1,7 @@
+{
+  "id": "tampa",
+  "type": "city",
+  "parent": "florida",
+  "name": "Tampa",
+  "intro": "Prices are in US dollars, with a switch to see them in pounds or euros, before tax and tip (or the service charge some restaurants add). Prices checked October 2026."
+}

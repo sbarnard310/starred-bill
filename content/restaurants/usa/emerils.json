@@ -1,0 +1,19 @@
+{
+  "name": "Emeril’s",
+  "city": "new-orleans",
+  "address": "800 Tchoupitoulas St., New Orleans, 70130",
+  "stars": 2,
+  "cuisine": "American",
+  "rating": 4.5,
+  "reviews": 2568,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Classic tasting menu, 7 courses",
+  "wine": 100,
+  "sourceType": "press",
+  "source": "https://feastio.com/emerils-new-orleans/",
+  "website": "https://emerilsrestaurant.com/",
+  "lat": 29.9446451,
+  "lng": -90.0673099,
+  "placeId": "ChIJp6mGj3GmIIYRfS0qjpoGsmo"
+}

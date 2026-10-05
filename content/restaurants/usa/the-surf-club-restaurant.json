@@ -1,0 +1,17 @@
+{
+  "name": "The Surf Club Restaurant",
+  "city": "miami",
+  "area": "Surfside",
+  "address": "Four Seasons Hotel at The Surf Club, Surfside, 9011 Collins Ave., Surfside, 33154",
+  "stars": 1,
+  "cuisine": "American",
+  "rating": 4.6,
+  "reviews": 615,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.surfclubrestaurant.com/",
+  "lat": 25.878331,
+  "lng": -80.1216265,
+  "placeId": "ChIJY9UXppmz2YgR8eMDCqFBR-0"
+}

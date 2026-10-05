@@ -1,0 +1,19 @@
+{
+  "name": "The Kitchen",
+  "city": "california",
+  "area": "Sacramento",
+  "address": "915 Broadway, Ste. 100, Sacramento, 95818",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 830,
+  "dinnerType": "menu",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu, plus 22% service",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/thekitchenrestaurant",
+  "website": "https://www.thekitchenrestaurant.com",
+  "lat": 38.564058,
+  "lng": -121.501422,
+  "placeId": "ChIJxyCQgkfamoARaCjr8r-6xcM"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Sushi Inaba",
+  "city": "california",
+  "area": "Torrance",
+  "address": "20918 Hawthorne Blvd., Torrance, 90503",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 352,
+  "dinnerType": "menu",
+  "dinner": 280,
+  "dinnerNote": "Omakase, one menu",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/sushi-inaba",
+  "website": "https://www.sushiinabamanhattanbeach.com/",
+  "lat": 33.8403635,
+  "lng": -118.3536365,
+  "placeId": "ChIJx7NewtO0woARCEk05DbH2tA"
+}

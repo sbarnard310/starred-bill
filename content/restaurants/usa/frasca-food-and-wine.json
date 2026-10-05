@@ -1,0 +1,17 @@
+{
+  "name": "Frasca Food and Wine",
+  "city": "colorado",
+  "area": "Boulder",
+  "address": "1738 Pearl St., Boulder, 80302",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.6,
+  "reviews": 824,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.frascafoodandwine.com/",
+  "lat": 40.0193351,
+  "lng": -105.2724941,
+  "placeId": "ChIJ32ggfCnsa4cReukO2DP2hXY"
+}

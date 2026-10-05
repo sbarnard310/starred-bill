@@ -1,0 +1,16 @@
+{
+  "name": "Alma Fonda Fina",
+  "city": "denver",
+  "address": "2556 15th St., Denver, 80211",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "rating": 4.8,
+  "reviews": 1145,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.almalohidenver.com/",
+  "lat": 39.7582201,
+  "lng": -105.0116429,
+  "placeId": "ChIJtcachtF5bIcRZsMfPFA72Ks"
+}

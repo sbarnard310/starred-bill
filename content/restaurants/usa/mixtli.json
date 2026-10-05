@@ -1,0 +1,18 @@
+{
+  "name": "Mixtli",
+  "city": "san-antonio",
+  "address": "812 S. Alamo St., Ste. 103, San Antonio, 78205",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "rating": 4.7,
+  "reviews": 445,
+  "dinnerType": "menu",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu, prepaid",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/mixtli",
+  "website": "https://restaurantmixtli.com/",
+  "lat": 29.4156664,
+  "lng": -98.4888715,
+  "placeId": "ChIJ047pT4RfXIYRRzpq8aeM7ww"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Counter",
+  "city": "north-carolina",
+  "area": "Charlotte",
+  "address": "2001 W. Morehead St., Ste. D, Charlotte, 28208",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 269,
+  "dinnerType": "menu",
+  "dinner": 330,
+  "dinnerNote": "Tasting menu, prepaid",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/counterclt",
+  "website": "https://www.counterclt.com/",
+  "lat": 35.227359,
+  "lng": -80.8739371,
+  "placeId": "ChIJP7Nwj_6hVogRLjZmi8ZIIio"
+}

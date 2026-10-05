@@ -1,0 +1,19 @@
+{
+  "name": "Six Test Kitchen",
+  "city": "california",
+  "area": "Paso Robles",
+  "address": "3075 Blue Rock Rd., Paso Robles, 93446",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 99,
+  "dinnerType": "menu",
+  "dinner": 255,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/sixtestkitchen",
+  "website": "https://sixtestkitchen.com/",
+  "lat": 35.5757084,
+  "lng": -120.6898229,
+  "placeId": "ChIJYe0t119e7IAR-x_rWOYv51s"
+}

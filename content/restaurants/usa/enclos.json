@@ -1,0 +1,19 @@
+{
+  "name": "Enclos",
+  "city": "california",
+  "area": "Sonoma",
+  "address": "139 E. Napa St., Sonoma, 95476",
+  "stars": 3,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 105,
+  "dinnerType": "menu",
+  "dinner": 325,
+  "dinnerNote": "Tasting menu (longer menus to $495), plus 20% service",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/enclos",
+  "website": "https://enclos-sonoma.com/",
+  "lat": 38.2915888,
+  "lng": -122.4558351,
+  "placeId": "ChIJKUxebcKvhYARsK13AtWct1E"
+}

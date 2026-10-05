@@ -1,0 +1,16 @@
+{
+  "name": "Rocca",
+  "city": "tampa",
+  "address": "323 W. Palm Ave., Tampa, 33602",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.6,
+  "reviews": 1495,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://roccatampa.com/",
+  "lat": 27.96251,
+  "lng": -82.4646,
+  "placeId": "ChIJ1WZIXhjFwogR1M-_3DXnG6Y"
+}

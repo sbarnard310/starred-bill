@@ -1,0 +1,16 @@
+{
+  "name": "Isidore",
+  "city": "san-antonio",
+  "address": "221 Newell Ave., San Antonio, 78215",
+  "stars": 1,
+  "cuisine": "American",
+  "rating": 4.4,
+  "reviews": 313,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://isidoresatx.com/",
+  "lat": 29.4407547,
+  "lng": -98.4807852,
+  "placeId": "ChIJ-9eV5Gb1XIYRg-VP6Jm2Rt4"
+}

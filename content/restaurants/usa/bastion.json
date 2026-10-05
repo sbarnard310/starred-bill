@@ -1,0 +1,16 @@
+{
+  "name": "Bastion",
+  "city": "nashville",
+  "address": "434 Houston St., Nashville, 37203",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 654,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.bastionnashville.com/",
+  "lat": 36.1428944,
+  "lng": -86.766474,
+  "placeId": "ChIJIS56-XFmZIgRsvTzijiFReo"
+}

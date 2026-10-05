@@ -1,0 +1,18 @@
+{
+  "name": "Camille",
+  "city": "orlando",
+  "address": "4962 New Broad St., Orlando, 32814",
+  "stars": 1,
+  "cuisine": "Vietnamese",
+  "rating": 4.5,
+  "reviews": 133,
+  "dinnerType": "menu",
+  "dinner": 255,
+  "dinnerNote": "Chef's counter tasting menu (dining room $225), plus tax and service",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/camille",
+  "website": "https://camilleorlando.com/",
+  "lat": 28.5683554,
+  "lng": -81.3259894,
+  "placeId": "ChIJs-RASQ1l54gR4DSRO8UE7mI"
+}

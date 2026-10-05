@@ -1,0 +1,16 @@
+{
+  "name": "Milpero",
+  "city": "denver",
+  "address": "3455 Ringsby Ct., Denver, 80216",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "rating": 4.8,
+  "reviews": 26,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://milperodenver.com/",
+  "lat": 39.7723508,
+  "lng": -104.9818105,
+  "placeId": "ChIJt4KCNOl5bIcRseIyRUaU8Fo"
+}

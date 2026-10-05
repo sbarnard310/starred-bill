@@ -1,0 +1,16 @@
+{
+  "name": "Mezcaleria Alma",
+  "city": "denver",
+  "address": "2550 15th St., Denver, 80211",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "rating": 4.9,
+  "reviews": 453,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mezcaleriaalma.com/",
+  "lat": 39.7581,
+  "lng": -105.011624,
+  "placeId": "ChIJ88IGKnF5bIcRLI5p5QH0Peg"
+}

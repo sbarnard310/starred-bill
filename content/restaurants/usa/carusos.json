@@ -1,0 +1,17 @@
+{
+  "name": "Caruso's",
+  "city": "california",
+  "area": "Montecito",
+  "address": "Rosewood Miramar Beach, 1759 S. Jameson Ln., Montecito, 93108",
+  "stars": 1,
+  "cuisine": "Californian",
+  "rating": 4.6,
+  "reviews": 242,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.rosewoodhotels.com/en/miramar-beach-montecito/dining/carusos",
+  "lat": 34.4200948,
+  "lng": -119.6257156,
+  "placeId": "ChIJc3vlaSUT6YARjVj5-kbcxrI"
+}

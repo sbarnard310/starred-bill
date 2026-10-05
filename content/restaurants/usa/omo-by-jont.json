@@ -1,0 +1,19 @@
+{
+  "name": "Ômo by Jônt",
+  "city": "orlando",
+  "area": "Winter Park",
+  "address": "115 E. Lyman Ave., Winter Park, 32789",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.5,
+  "reviews": 173,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.omobyjont.com/menus/",
+  "website": "https://www.omobyjont.com/",
+  "lat": 28.5951074,
+  "lng": -81.350583,
+  "placeId": "ChIJO3PrEmdx54gRW1c11w1Yxlo"
+}

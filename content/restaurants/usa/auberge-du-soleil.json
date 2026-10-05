@@ -1,0 +1,17 @@
+{
+  "name": "Auberge du Soleil",
+  "city": "california",
+  "area": "Rutherford",
+  "address": "180 Rutherford Hill Rd., Rutherford, 94573",
+  "stars": 1,
+  "cuisine": "Californian",
+  "rating": 4.7,
+  "reviews": 1836,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://aubergeresorts.com/aubergedusoleil/dine/the-restaurant-at-auberge-du-soleil/",
+  "lat": 38.49199,
+  "lng": -122.40534,
+  "placeId": "ChIJH5O5lv5WhIARCuyN4aS9lYg"
+}

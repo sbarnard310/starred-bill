@@ -1,0 +1,20 @@
+{
+  "name": "Sun Moon Studio",
+  "city": "california",
+  "area": "Oakland",
+  "address": "1940 Union St., Ste. 21, Oakland, 94607",
+  "stars": 1,
+  "cuisine": "Californian",
+  "rating": 4.9,
+  "reviews": 66,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.sunmoonstudio.com/menu",
+  "wine": 60,
+  "website": "https://www.sunmoonstudio.com/",
+  "lat": 37.8143884,
+  "lng": -122.2866969,
+  "placeId": "ChIJ05gry4t_hYAR4tpX79itpGo"
+}

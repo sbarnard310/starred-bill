@@ -1,0 +1,16 @@
+{
+  "name": "Vern's",
+  "city": "charleston",
+  "address": "41 Bogard St., Charleston, 29403",
+  "stars": 1,
+  "cuisine": "American",
+  "rating": 4.7,
+  "reviews": 437,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.vernschs.com/",
+  "lat": 32.7923928,
+  "lng": -79.9457326,
+  "placeId": "ChIJcQ0ZQn57_ogRB6B_A4LHb0A"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Kizaki",
+  "city": "denver",
+  "address": "1551 S. Pearl St., Denver, 80210",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.9,
+  "reviews": 110,
+  "dinnerType": "menu",
+  "dinner": 250,
+  "dinnerNote": "Omakase, plus service fee",
+  "sourceType": "press",
+  "source": "https://restaurantsforkings.com/city/denver/kizaki",
+  "website": "https://kizakiden.com/",
+  "lat": 39.6883588,
+  "lng": -104.9804798,
+  "placeId": "ChIJT6LLNQB_bIcRFlId0L9BFOM"
+}

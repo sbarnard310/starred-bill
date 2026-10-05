@@ -1,0 +1,18 @@
+{
+  "name": "Hayakawa",
+  "city": "atlanta",
+  "address": "1055 Howell Mill Rd., Atlanta, 30318",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 454,
+  "dinnerType": "menu",
+  "dinner": 315,
+  "dinnerNote": "Omakase, 14 courses",
+  "sourceType": "press",
+  "source": "https://www.andrewloves.com/blog/hayakawa",
+  "website": "https://www.hayakawaatl.com",
+  "lat": 33.7837861,
+  "lng": -84.4110531,
+  "placeId": "ChIJD9CHgFyn9YgRO1bt1qCxE0I"
+}

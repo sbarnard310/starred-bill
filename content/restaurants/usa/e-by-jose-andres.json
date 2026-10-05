@@ -1,0 +1,16 @@
+{
+  "name": "é by José Andrés",
+  "city": "las-vegas",
+  "address": "The Cosmopolitan of Las Vegas, 3708 Las Vegas Blvd. S., Las Vegas, 89109",
+  "stars": 1,
+  "cuisine": "Spanish Contemporary",
+  "rating": 4.4,
+  "reviews": 324,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ebyjoseandres.com/",
+  "lat": 36.1104947,
+  "lng": -115.1743902,
+  "placeId": "ChIJFbD_qDHEyIARB2AQf9-Ff3Q"
+}

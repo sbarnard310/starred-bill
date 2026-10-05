@@ -1,0 +1,19 @@
+{
+  "name": "Cyrus",
+  "city": "california",
+  "area": "Geyserville",
+  "address": "275 CA-128, Geyserville, 95441",
+  "stars": 1,
+  "cuisine": "Californian",
+  "rating": 4.7,
+  "reviews": 186,
+  "dinnerType": "menu",
+  "dinner": 325,
+  "dinnerNote": "Tasting menu, plus 20% service",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/cyrus",
+  "website": "https://www.cyrusrestaurant.com/",
+  "lat": 38.7063682,
+  "lng": -122.9006188,
+  "placeId": "ChIJ1UhpBvsFhIARF1n-brdta8k"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "L'Atelier de Joël Robuchon Las Vegas",
+  "city": "las-vegas",
+  "address": "MGM Grand, 3799 Las Vegas Blvd. S., Las Vegas, 89109",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.7,
+  "reviews": 700,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://mgmgrand.mgmresorts.com/en/restaurants/latelier-joel-robuchon-french-restaurant.html",
+  "lat": 36.1022899,
+  "lng": -115.1693492,
+  "placeId": "ChIJZ-93QcvFyIARqArsJhw7Mso"
+}

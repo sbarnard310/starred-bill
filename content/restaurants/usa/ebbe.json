@@ -1,0 +1,16 @@
+{
+  "name": "Ebbe",
+  "city": "tampa",
+  "address": "1202 N. Franklin St., Tampa, 33602",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.4,
+  "reviews": 189,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.chefebbe.com/",
+  "lat": 27.9536143,
+  "lng": -82.4602915,
+  "placeId": "ChIJGZ5VTmXFwogRzkkrqI3WyPA"
+}

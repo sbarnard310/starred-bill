@@ -1,0 +1,19 @@
+{
+  "name": "Soseki",
+  "city": "orlando",
+  "area": "Winter Park",
+  "address": "955 W. Fairbanks Ave., Winter Park, 32789",
+  "stars": 1,
+  "cuisine": "Fusion",
+  "rating": 4.9,
+  "reviews": 321,
+  "dinnerType": "menu",
+  "dinner": 342,
+  "dinnerNote": "Tasting menu, prepaid",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/soseki",
+  "website": "https://www.sosekifl.com/",
+  "lat": 28.5931796,
+  "lng": -81.361526,
+  "placeId": "ChIJo6MoOMNx54gRxJNiP7p3Wz0"
+}

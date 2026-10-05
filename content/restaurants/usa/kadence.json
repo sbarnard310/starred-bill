@@ -1,0 +1,18 @@
+{
+  "name": "Kadence",
+  "city": "orlando",
+  "address": "1809 Winter Park Rd., Orlando, 32803",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 378,
+  "dinnerType": "menu",
+  "dinner": 374,
+  "dinnerNote": "Omakase, prepaid",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/kadence",
+  "website": "https://kadenceorlando.com/",
+  "lat": 28.5687259,
+  "lng": -81.3458703,
+  "placeId": "ChIJPbVFebF654gRFipJm9-WS6Q"
+}

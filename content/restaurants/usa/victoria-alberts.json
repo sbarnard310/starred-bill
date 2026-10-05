@@ -1,0 +1,16 @@
+{
+  "name": "Victoria & Albert's",
+  "city": "orlando",
+  "address": "Disney's Grand Floridian Resort & Spa, 4401 Floridian Way, Orlando, 32830",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 435,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://disneyworld.disney.go.com/dining/victoria-and-alberts-overview/",
+  "lat": 28.411352,
+  "lng": -81.5872943,
+  "placeId": "ChIJfae0pxd-3YgR1ZtP2RQreIY"
+}

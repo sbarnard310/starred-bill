@@ -1,0 +1,16 @@
+{
+  "name": "LeRoy and Lewis Barbecue",
+  "city": "austin",
+  "address": "5621 Emerald Forest Dr., Austin, 78745",
+  "stars": 1,
+  "cuisine": "Barbecue",
+  "rating": 4.4,
+  "reviews": 2517,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://leroyandlewisbbq.com/",
+  "lat": 30.2105038,
+  "lng": -97.7872512,
+  "placeId": "ChIJ9XodaJW0RIYRFlcMvIfeqJE"
+}

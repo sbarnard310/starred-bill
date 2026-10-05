@@ -1,0 +1,18 @@
+{
+  "name": "Soichi",
+  "city": "san-diego",
+  "address": "2121 Adams Ave., San Diego, 92116",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 465,
+  "dinnerType": "menu",
+  "dinner": 189,
+  "dinnerNote": "Omakase (shorter menu $140)",
+  "sourceType": "site",
+  "source": "https://www.soichisushi.com",
+  "website": "https://www.soichisushi.com",
+  "lat": 32.7627776,
+  "lng": -117.1418816,
+  "placeId": "ChIJfQEdreJV2YARnieTJoa2pGQ"
+}

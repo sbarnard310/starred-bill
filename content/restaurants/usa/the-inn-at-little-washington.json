@@ -1,0 +1,19 @@
+{
+  "name": "The Inn at Little Washington",
+  "city": "virginia",
+  "area": "Washington",
+  "address": "309 Middle St., Washington, 22747",
+  "stars": 2,
+  "cuisine": "French",
+  "rating": 4.7,
+  "reviews": 1217,
+  "dinnerType": "menu",
+  "dinner": 388,
+  "dinnerNote": "Tasting menu, plus tax and service",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/theinnatlittlewashington",
+  "website": "https://www.theinnatlittlewashington.com/",
+  "lat": 38.7134767,
+  "lng": -78.1595348,
+  "placeId": "ChIJ9ydRxCsztIkROPnyuZc6Dbw"
+}

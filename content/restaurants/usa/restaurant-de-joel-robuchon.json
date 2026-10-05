@@ -1,0 +1,18 @@
+{
+  "name": "Restaurant de Joël Robuchon",
+  "city": "las-vegas",
+  "address": "MGM Grand, 3799 S. Las Vegas Blvd., Las Vegas, 89109",
+  "stars": 2,
+  "cuisine": "French Contemporary",
+  "rating": 4.6,
+  "reviews": 448,
+  "dinnerType": "menu",
+  "dinner": 525,
+  "dinnerNote": "Degustation menu",
+  "sourceType": "press",
+  "source": "https://www.travelsforstars.com/blog/2024/11/25/joel-robuchon-las-vegas",
+  "website": "https://mgmgrand.mgmresorts.com/en/restaurants/joel-robuchon-french-restaurant.html",
+  "lat": 36.1019984,
+  "lng": -115.1688491,
+  "placeId": "ChIJJULcuqLFyIARupiJy1b4gWQ"
+}

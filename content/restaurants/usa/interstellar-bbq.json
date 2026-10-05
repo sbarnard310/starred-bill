@@ -1,0 +1,16 @@
+{
+  "name": "InterStellar BBQ",
+  "city": "austin",
+  "address": "12233 Ranch Rd. 620 N., Ste. 105, Austin, 78750",
+  "stars": 1,
+  "cuisine": "Barbecue",
+  "rating": 4.5,
+  "reviews": 2231,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.theinterstellarbbq.com/",
+  "lat": 30.4620479,
+  "lng": -97.8155459,
+  "placeId": "ChIJneGxbHszW4YRTjsORksF0Xw"
+}

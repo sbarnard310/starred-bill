@@ -1,0 +1,19 @@
+{
+  "name": "Silvers Omakase",
+  "city": "california",
+  "area": "Santa Barbara",
+  "address": "224 Helena Ave., Santa Barbara, 93101",
+  "stars": 1,
+  "cuisine": "Sushi",
+  "rating": 4.7,
+  "reviews": 103,
+  "dinnerType": "menu",
+  "dinner": 285,
+  "dinnerNote": "Omakase",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/silversomakase",
+  "website": "https://www.silversomakase.com/",
+  "lat": 34.415283,
+  "lng": -119.6920226,
+  "placeId": "ChIJASLuZ2sT6YAR6Oc6_TOqIgc"
+}

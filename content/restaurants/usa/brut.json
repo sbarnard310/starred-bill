@@ -1,0 +1,18 @@
+{
+  "name": "Brutø",
+  "city": "denver",
+  "address": "1801 Blake St., Denver, 80202",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 394,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://5280.com/the-best-tasting-menu-in-denver-for-your-budget/",
+  "website": "https://www.brutodenver.com/",
+  "lat": 39.7527561,
+  "lng": -104.9969767,
+  "placeId": "ChIJabPzMvx5bIcRuR-TMXhM1xQ"
+}

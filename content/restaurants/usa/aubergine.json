@@ -1,0 +1,19 @@
+{
+  "name": "Aubergine",
+  "city": "california",
+  "area": "Carmel-by-the-Sea",
+  "address": "L'Auberge Carmel, Monte Verde at 7th Ave., Carmel-by-the-Sea, 93921",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 240,
+  "dinnerType": "menu",
+  "dinner": 285,
+  "dinnerNote": "Tasting menu (longer menus to $395), plus 22% service",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/auberginecarmel",
+  "website": "https://www.auberginecarmel.com/",
+  "lat": 36.55406,
+  "lng": -121.924355,
+  "placeId": "ChIJZ7svYhXmjYARp68gV6eBnX4"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Chef's Counter at MAASS",
+  "city": "florida",
+  "area": "Fort Lauderdale",
+  "address": "Four Seasons Hotel and Residences, 525 N. Fort Lauderdale Beach Blvd., Fort Lauderdale, 33304",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 1180,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.maassftl.com/",
+  "lat": 26.1301498,
+  "lng": -80.1035216,
+  "placeId": "ChIJF6pqghMB2YgRl7OIepJ4H0s"
+}

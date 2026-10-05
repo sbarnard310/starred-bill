@@ -1,0 +1,19 @@
+{
+  "name": "Harbor House Inn",
+  "city": "california",
+  "area": "Elk",
+  "address": "5600 CA-1, Elk, 95432",
+  "stars": 2,
+  "cuisine": "Californian",
+  "rating": 4.6,
+  "reviews": 287,
+  "dinnerType": "menu",
+  "dinner": 350,
+  "dinnerNote": "Tasting menu (drinks pairings from $125)",
+  "sourceType": "press",
+  "source": "https://www.opentable.com/r/the-harbor-house-inn-elk",
+  "website": "https://www.theharborhouseinn.com/",
+  "lat": 39.1355655,
+  "lng": -123.7190639,
+  "placeId": "ChIJRQKgSsUAgYAR4dtFnWx1UTg"
+}

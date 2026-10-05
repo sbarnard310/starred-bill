@@ -1,0 +1,19 @@
+{
+  "name": "The Catbird Seat",
+  "city": "nashville",
+  "address": "700 8th Ave. S., 5th Fl., Nashville, 37203",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 525,
+  "dinnerType": "menu",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu, 13–16 courses",
+  "wine": 140,
+  "sourceType": "press",
+  "source": "https://www.theinfatuation.com/nashville/reviews/the-catbird-seat",
+  "website": "https://www.thecatbirdseatrestaurant.com/",
+  "lat": 36.15058,
+  "lng": -86.778879,
+  "placeId": "ChIJq3tfSZJmZIgRLkkEXv4QxkQ"
+}

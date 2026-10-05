@@ -1,0 +1,19 @@
+{
+  "name": "Localis",
+  "city": "california",
+  "area": "Sacramento",
+  "address": "2031 S. St., Sacramento, 95811",
+  "stars": 1,
+  "cuisine": "Californian",
+  "rating": 4.7,
+  "reviews": 607,
+  "dinnerType": "menu",
+  "dinner": 207,
+  "dinnerNote": "Tasting menu, plus 23% service",
+  "sourceType": "press",
+  "source": "https://www.exploretock.com/localis",
+  "website": "https://localissacramento.com/",
+  "lat": 38.5665938,
+  "lng": -121.4829661,
+  "placeId": "ChIJYUnm_ubQmoARMQ2616W5Yi8"
+}

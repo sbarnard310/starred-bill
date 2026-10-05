@@ -1,0 +1,17 @@
+{
+  "name": "Scoundrel",
+  "city": "south-carolina",
+  "area": "Greenville",
+  "address": "18 N. Main St., Greenville, 29601",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.6,
+  "reviews": 482,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.scoundrelgvl.com/",
+  "lat": 34.851235,
+  "lng": -82.398522,
+  "placeId": "ChIJNYvUMvwxWIgR9ZTlSZk7wl4"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Giewont",
+  "city": "poland",
+  "area": "Kościelisko",
+  "address": "ul. Nędzy Kubińca 4, 34-511, Kościelisko",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 17,
+  "dinnerType": "menu",
+  "dinner": 739,
+  "dinnerNote": "Tasting menu (other menus from PLN 449)",
+  "sourceType": "site",
+  "source": "https://restaurantgiewont.com/menu-pl.html",
+  "website": "https://restaurantgiewont.com/",
+  "lat": 49.2904379,
+  "lng": 19.9217654,
+  "placeId": "ChIJAzx7JuTtFUcRL-JV3oWpA8E"
+}

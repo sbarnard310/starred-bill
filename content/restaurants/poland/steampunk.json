@@ -1,0 +1,20 @@
+{
+  "name": "Steampunk",
+  "city": "poland",
+  "area": "Pszczyna",
+  "address": "8th Floor, Wodna Wieża, ul. Jana Kilińskiego 5, 43-200, Pszczyna",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 195,
+  "dinnerType": "menu",
+  "dinner": 569,
+  "dinnerNote": "Tasting menu (other menus from PLN 249)",
+  "sourceType": "site",
+  "source": "https://wodna-wieza.pl/wp-content/uploads/2026/09/MENU-STEAMPUNK_20.09.2026r.pdf",
+  "wine": 250,
+  "website": "https://wodna-wieza.pl/steampunk-restauracja/",
+  "lat": 49.9742373,
+  "lng": 18.9437731,
+  "placeId": "ChIJPVquX9C7FkcRJITfd9llIAI"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "hub.praga",
+  "city": "poland",
+  "area": "Warsaw",
+  "address": "Jagiellońska 22/LU1, 03-719, Warsaw",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 403,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://hub-praga.pl/",
+  "lat": 52.2512002,
+  "lng": 21.035961,
+  "placeId": "ChIJbW87lUrNHkcRGVFtjBJ8aYw"
+}

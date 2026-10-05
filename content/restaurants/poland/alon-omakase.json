@@ -1,0 +1,17 @@
+{
+  "name": "Alon Omakase",
+  "city": "poland",
+  "area": "Warsaw",
+  "address": "ul. Jana Pawła Woronicza 33C/lok.U4, 02-640, Warsaw",
+  "stars": 1,
+  "cuisine": "Sushi",
+  "rating": 4.8,
+  "reviews": 136,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://omakase.eu/",
+  "lat": 52.1886443,
+  "lng": 20.9915195,
+  "placeId": "ChIJfU-SB-AzGUcRzleoPrdPb28"
+}

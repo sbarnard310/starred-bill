@@ -1,0 +1,17 @@
+{
+  "name": "NUTA",
+  "city": "poland",
+  "area": "Warsaw",
+  "address": "Plac Trzech Krzyży 10/14, 00-499, Warsaw",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 518,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://nuta.com.pl/",
+  "lat": 52.2290249,
+  "lng": 21.023509,
+  "placeId": "ChIJxeVHXKXNHkcRZUxdFx1GLEA"
+}

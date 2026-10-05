@@ -1,0 +1,19 @@
+{
+  "name": "Bottiglieria 1881",
+  "city": "poland",
+  "area": "Kraków",
+  "address": "ul. Bocheńska 5, 31-061, Kraków",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 1076,
+  "dinnerType": "menu",
+  "dinner": 990,
+  "dinnerNote": "Tasting menu (other menus from PLN 940)",
+  "sourceType": "site",
+  "source": "https://1881.com.pl/nasze-menu/",
+  "website": "https://www.1881.com.pl/",
+  "lat": 50.0486603,
+  "lng": 19.9460552,
+  "placeId": "ChIJOzG7EEJbFkcRa-v6voT78XY"
+}

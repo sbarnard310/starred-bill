@@ -1,0 +1,17 @@
+{
+  "name": "Rozbrat 20",
+  "city": "poland",
+  "area": "Warsaw",
+  "address": "ul. Rozbrat 20, 00-447, Warsaw",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1021,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://rozbrat20.com.pl/",
+  "lat": 52.2242187,
+  "lng": 21.0350918,
+  "placeId": "ChIJybeTD_3MHkcRGfdFct4736w"
+}

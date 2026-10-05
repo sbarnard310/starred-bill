@@ -1,0 +1,17 @@
+{
+  "name": "BABA",
+  "city": "poland",
+  "area": "Wrocław",
+  "address": "Nożownicza 1D, 50-119, Wrocław",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 1063,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://baba.wroclaw.pl/",
+  "lat": 51.1127484,
+  "lng": 17.0318258,
+  "placeId": "ChIJOcs5kx_pD0cRRbGleWjsjoE"
+}

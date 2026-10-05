@@ -1,0 +1,17 @@
+{
+  "name": "Muga",
+  "city": "poland",
+  "area": "Poznań",
+  "address": "ul. Krysiewicza 5, 61-825, Poznań",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 889,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restauracjamuga.pl/",
+  "lat": 52.4038298,
+  "lng": 16.9288155,
+  "placeId": "ChIJx52iXTlbBEcRzijuioddnik"
+}

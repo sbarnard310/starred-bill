@@ -1,0 +1,19 @@
+{
+  "name": "180° by Matthias Diether",
+  "city": "estonia",
+  "area": "Tallinn",
+  "address": "Staapli 4, Port Noblessner, 10415, Tallinn",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 403,
+  "dinnerType": "menu",
+  "dinner": 325,
+  "dinnerNote": "Tasting menu (other menus from €185)",
+  "sourceType": "site",
+  "source": "https://www.180degrees.ee/menuu",
+  "website": "https://www.180degrees.ee/",
+  "lat": 59.4520952,
+  "lng": 24.7289707,
+  "placeId": "ChIJXcD9802TkkYRpmWn9kmmJZ8"
+}

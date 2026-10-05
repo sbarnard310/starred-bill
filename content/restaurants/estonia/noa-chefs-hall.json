@@ -1,0 +1,20 @@
+{
+  "name": "NOA Chef’s Hall",
+  "city": "estonia",
+  "area": "Tallinn",
+  "address": "Ranna tee 3, 12112, Tallinn",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 31,
+  "dinnerType": "menu",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://nch.ee",
+  "wine": 230,
+  "website": "https://nch.ee",
+  "lat": 59.4951028,
+  "lng": 24.8263897,
+  "placeId": "ChIJC68P3HCTkkYR5TiLl9FXMOQ"
+}

@@ -6,7 +6,7 @@ Live at https://starredbill.com
 
 - Homepage with a world map, destination cards, search and your wishlist: https://starredbill.com/
 - A page for every country, region and city, e.g. https://starredbill.com/uk/england/london/, https://starredbill.com/ireland/ or https://starredbill.com/taiwan/
-- Add `?lang=en` for English. Taiwan, Hong Kong and Macau offer Chinese (`?lang=zh`), Hong Kong and Macau also Cantonese (`?lang=yue`), France and Monaco French (`?lang=fr`), Japan Japanese (`?lang=ja`), Spain Spanish (`?lang=es`) Italy Italian (`?lang=it`) and South Korea Korean (`?lang=ko`), Denmark Danish (`?lang=da`), Iceland Icelandic (`?lang=is`) Andorra Catalan (`?lang=ca`) and Thailand Thai (`?lang=th`).
+- Add `?lang=en` for English. Taiwan, Hong Kong and Macau offer Chinese (`?lang=zh`), Hong Kong and Macau also Cantonese (`?lang=yue`), France and Monaco French (`?lang=fr`), Japan Japanese (`?lang=ja`), Spain Spanish (`?lang=es`) Italy Italian (`?lang=it`) and South Korea Korean (`?lang=ko`), Denmark Danish (`?lang=da`), Sweden Swedish (`?lang=sv`), Iceland Icelandic (`?lang=is`) Andorra Catalan (`?lang=ca`) and Thailand Thai (`?lang=th`).
 
 ## How it fits together
 

@@ -22,8 +22,8 @@ CONTENT, SRC, OUT = ROOT / "content", ROOT / "src", ROOT / "_site"
 SITE_URL = "https://starredbill.com"
 PLACE_TYPES = ("country", "region", "city", "district", "group")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
-LANGUAGES = ("en", "zh", "yue", "fr", "ja", "es", "it", "ko", "da", "is", "ca", "th")
-LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja", "Es", "It", "Ko", "Da", "Is", "Ca", "Th")  # e.g. nameZh, introYue, dinnerNoteFr, areaJa, statusNoteEs
+LANGUAGES = ("en", "zh", "yue", "fr", "ja", "es", "it", "ko", "da", "sv", "is", "ca", "th")
+LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja", "Es", "It", "Ko", "Da", "Sv", "Is", "Ca", "Th")  # e.g. nameZh, introYue, dinnerNoteFr, areaJa, statusNoteEs
 DEFAULT_LANGUAGES = ["en"]  # a country without `languages` (and the homepage, account and privacy pages) is English only
 PRICE_TYPES = ("menu", "main", "spend")
 STATUSES = ("lost", "closed", "changed")
@@ -424,7 +424,7 @@ def build_place(p):
         "id": p["id"], "type": p["type"], "inSentence": in_sentence(p), "inSentenceFr": inherited_name_fr(p),
         "inSentenceEs": inherited_name_es(p), "inSentenceIt": inherited_name_it(p),
         # Danish "i København", Icelandic "í Reykjavík" (a place can set its own, e.g. "á Íslandi"), Catalan "a Andorra".
-        **{"inSentence" + sfx: p.get("inSentence" + sfx) or f"{prep}{'' if sfx == 'Th' else ' '}{p.get('name' + sfx) or p['name']}" for sfx, prep in (("Da", "i"), ("Is", "í"), ("Ca", "a"), ("Th", "ใน"))},
+        **{"inSentence" + sfx: p.get("inSentence" + sfx) or f"{prep}{'' if sfx == 'Th' else ' '}{p.get('name' + sfx) or p['name']}" for sfx, prep in (("Da", "i"), ("Sv", "i"), ("Is", "í"), ("Ca", "a"), ("Th", "ใน"))},
         "path": p["path"], "currency": currency, "showCity": len({r["city"] for r in starred}) > 1,
         "crumbs": [dict(names(c), path=c["path"], n=starred_n[c["id"]]) for c in crumbs],
         "links": explore_links(p),
@@ -691,7 +691,7 @@ def build_redirects():
 
 def build_account_pages():
     """The account page (/account/) and the privacy notice (/privacy/). Signing in and the lists run in the browser (account.js)."""
-    keep = ("id", "name", "nameZh", "nameJa", "stars", "formerStars", "status", "area", "areaZh", "areaJa", "areaEs", "areaIt", "areaKo", "nameKo", "areaDa", "areaIs", "areaCa", "areaTh", "nameTh",
+    keep = ("id", "name", "nameZh", "nameJa", "stars", "formerStars", "status", "area", "areaZh", "areaJa", "areaEs", "areaIt", "areaKo", "nameKo", "areaDa", "areaSv", "areaIs", "areaCa", "areaTh", "nameTh",
             "cityName", "cityNameZh", "cityNameJa", "cityNameEs", "cityNameIt", "cityNameKo", "cityPath", "country", "cur", "dinner", "dinnerType")
     data = {
         "restaurants": [dict({k: r[k] for k in keep if r.get(k) not in (None, "")}, chain=r["_chain"]) for r in restaurants],

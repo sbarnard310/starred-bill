@@ -904,6 +904,109 @@ const I18N = {
     installApp: "Installer app",
     installTipIos: "Sådan installerer du: tryk på Del-knappen (firkanten med en pil) i Safari, og vælg “Føj til hjemmeskærm”."
   },
+  sv: {
+    acctSentCode: "Vi har skickat en sexsiffrig kod till {email}. Skriv in den nedan för att logga in här. (Länken i mejlet fungerar också, men i appen på hemskärmen öppnar den webbläsaren i stället.)", acctCodeLabel: "Kod från mejlet", acctVerify: "Logga in med kod", acctVerifying: "Kontrollerar…", acctCodeWrong: "Koden fungerade inte. Kontrollera den eller be om en ny.", acctBadCode: "Skriv in den sexsiffriga koden från mejlet.",
+    notrackOn: "Den här webbläsaren räknas inte längre med i besöksstatistiken.", notrackOff: "Den här webbläsaren räknas med i besöksstatistiken igen.",
+    cookieText: "Får vi använda cookies från Google Analytics för att se hur sidan används? Besök räknas utan cookies oavsett.", cookieAccept: "Godkänn", cookieReject: "Avvisa", cookieSettings: "Ändra cookieval",
+    navCompare: "Jämför", navMap: "Karta", navStars: "Efter stjärnor", navMethod: "Metod", navContact: "Kontakt", navDestinations: "Destinationer", navGuides: "Guider", wishlist: "Önskelista",
+    pageTitle: "The Starred Bill · {place}",
+    heroEyebrow: "{place} · Restauranger i Michelinguiden",
+    heroTitle: "Vad en Michelinstjärna <em>kostar</em> {placeIn}.",
+    heroText: "Priser per person för middag, lunch och vinpaket på stjärnkrogarna {placeIn}, sida vid sida. Sök på namn eller kök, filtrera på stjärnor eller kök och spara dem du vill prova på din önskelista.",
+    crumbHome: "Alla destinationer", explore: "Utforska", exploreCities: "Städer i {country}", exploreDistricts: "Runt om i {country}", alsoIn: "Även i",
+    figCount: "Restauranger", figMin: "Billigaste middagsmeny", figMax: "Dyraste middagsmeny", figMinLunch: "Billigaste lunchmeny", figMaxLunch: "Dyraste lunchmeny",
+    fMeal: "Måltid", mealDinner: "Middag", mealLunch: "Lunch", hNotesLunch: "Om lunchen", noLunch: "Ingen lunch", avgLunch: "snitt lunch", infoLunch: "lunch",
+    sortPriceAscLunch: "Lunch: lägst först", sortPriceDescLunch: "Lunch: högst först",
+    starCounts: "{3} med tre stjärnor · {2} med två · {1} med en",
+    compareTitle: "Varje bord, varje pris",
+    compareText: "Växla mellan middag och lunch nedan. Priserna gäller avsmakningsmenyn eller den fasta menyn, om det inte står ”per huvudrätt” eller ”typisk nota”, och staplarna jämför varje meny med den dyraste på listan. Varje pris länkar till var det kommer ifrån.",
+    searchPh: "Sök på restaurang, kök eller område", searchPhEx: "Sök på restaurang, kök eller område, t.ex. ”{ex}”",
+    searchLabel: "Sök restauranger på namn, kök eller område",
+    sortLabel: "Sortera restauranger",
+    sortPriceAsc: "Middag: lägst först", sortPriceDesc: "Middag: högst först", sortStars: "Flest stjärnor först", sortRating: "Google-betyg: högst först", sortName: "Namn A–Ö",
+    fShow: "Visa", fStars: "Michelinstjärnor", fCuisine: "Kök",
+    fDiet: "Kost", dietVegOnly: "Vegetarisk restaurang", dietVegMenu: "Vegetarisk avsmakningsmeny", dietVeg: "Vegetariska alternativ", dietVegan: "Veganska alternativ", dietGf: "Glutenfria alternativ", dietHalal: "Halal", dietKosher: "Kosher",
+    badgeVegOnly: "Vegetarisk", badgeVegMenu: "Vegomeny", badgeVegan: "Vegansk", chefLabel: "Kökschef {name}",
+    exploreMore: "{n} till", exploreFewer: "Visa färre",
+    filtersBtn: "Filter", filtersShowN: "Visa {n} restaurang|Visa {n} restauranger", filtersClear: "Rensa alla", cuisineSearchPh: "Hitta ett kök", removeFilter: "Ta bort filter: {f}", sheetClose: "Stäng",
+    showAll: "Alla restauranger", showChanges: "Nya stjärnändringar", showWish: "Min önskelista",
+    showChangesTitle: "Fick eller förlorade en stjärna i någon av de två senaste Michelinguiderna",
+    all: "Alla", starsAria: "{n} Michelinstjärna|{n} Michelinstjärnor",
+    hRestaurant: "Restaurang", hCuisine: "Kök", hStars: "Stjärnor", hGoogle: "Google", hNotes: "Om middagen", hPrice: "Pris", hWine: "Vinpaket", hWish: "Önskelista",
+    tableLabel: "Restaurangpriser",
+    reviews: "{n} recensioner", ratingAria: "Google-betyg {r} av 5",
+    srcSite: "Restaurangens webbplats", srcPress: "Källa", srcTitle: "Var priset kommer ifrån",
+    perMain: "per huvudrätt", typicalSpend: "typisk nota", notListed: "Inte angivet",
+    findOnMaps: "Hitta {name} på Google Maps", findOnMapsTitle: "Hitta på Google Maps",
+    showOnly: "Visa bara {cat}",
+    chgNew: "Ny", chgTitle: "{note} i Michelinguiden från {date}",
+    emptyWish: "Ingen av dina sparade restauranger ligger {placeIn}. Tryck på hjärtat vid en restaurang för att spara den.",
+    emptyPlace: "Det finns just nu ingen restaurang med Michelinstjärna {placeIn}, men vi uppdaterar sidan så snart det kommer en.",
+    emptySee: "Se stjärnkrogen i {name}|Se alla {n} stjärnkrogar i {name}", exploreAll: "Alla områden",
+    noMatch: "Inga restauranger matchar filtren.", clearFilters: "Rensa sökning och filter",
+    formerTitle: "Har inte längre stjärnor",
+    formerNote: "Restauranger som fanns med i den förra upplagan av listan men som sedan dess har förlorat sina stjärnor, stängt eller förändrats. Visas bara som referens.",
+    formerly: "tidigare", stLost: "Förlorade stjärnan", stClosed: "Stängd", stChanged: "Förändrad",
+    showing: "Visar {a} av {b} stjärnkrogar", showingFormer: " plus {c} utan stjärnor",
+    wishNote: "Din önskelista sparas bara i den här webbläsaren.",
+    wishAdd: "Lägg till {name} i din önskelista", wishRemove: "Ta bort {name} från din önskelista", wishAddT: "Lägg till i önskelistan", wishRemoveT: "Ta bort från önskelistan",
+    toastAdded: "{name} har lagts till i din önskelista", toastRemoved: "{name} har tagits bort från din önskelista", undo: "Ångra",
+    photo: "Foto", tempClosed: "Tillfälligt stängd (Google)",
+    mapTitle: "Alla stjärnkrogar på en karta",
+    mapText: "Nålarna följer filtren i listan ovan, så välj antal stjärnor, ett kök eller din önskelista så följer kartan med. Tryck på en nål för att se priset och få vägbeskrivning.",
+    mapWait: "Kartan laddas när du scrollar hit.", mapLabel: "Karta över restauranger med Michelinstjärnor",
+    mapError: "Kartan kunde inte laddas just nu. Nålen vid varje restaurang i listan öppnar den fortfarande i Google Maps.",
+    legendAria: "Vad nålarnas färger betyder", colours: ["Lila", "Bärnsten", "Grön"], legendItem: "{c} = {n} Michelinstjärna|{c} = {n} Michelinstjärnor",
+    mapShowing: "Visar {n} restaurang på kartan|Visar {n} restauranger på kartan", mapNone: "Inga restauranger matchar de valda filtren",
+    nearMe: "Nära mig", nearMeAria: "Visa stjärnkrogar nära mig", nearFinding: "Letar efter dig…", youAreHere: "Du är här",
+    nearTitle: "Närmast dig", nearAway: "{d} bort", nearWorld: "Se stjärnkrogar nära dig på världskartan",
+    nearNone: "Ingen av restaurangerna på den här sidan ligger nära dig. Den närmaste är {name}, {d} bort.",
+    nearDenied: "Platsåtkomst är avstängd. Tillåt den för den här sidan i webbläsarens inställningar och försök igen.",
+    nearFailed: "Kunde inte hitta din plats just nu. Försök igen.", nearUnsupported: "Den här webbläsaren kan inte dela din plats.",
+    jumpMap: "Karta", jumpMapAria: "Gå till kartan",
+    share: "Dela", shareAria: "Dela den här sidan", shareTitle: "Dela den här sidan", shareCopy: "Kopiera länk", shareCopied: "Länken kopierad", shareEmail: "Mejl",
+    acctSignIn: "Logga in", acctAccount: "Konto", acctTitle: "Logga in eller skapa ett gratis konto",
+    acctWhy: "Ha din önskelista på alla enheter och bocka av restaurangerna du har besökt.",
+    acctWhyBeen: "Skapa ett gratis konto för att bocka av restaurangerna du har besökt. Då har du också din önskelista på alla enheter.",
+    acctGoogle: "Fortsätt med Google", acctOr: "eller", acctEmailLabel: "Mejladress", acctSend: "Skicka en inloggningskod", acctSending: "Skickar…",
+    acctSent: "Kolla din mejl. Vi har skickat en inloggningslänk till {email}. Öppna den på den här enheten för att logga in.",
+    acctTooMany: "För många inloggningsmejl just nu. Vänta en minut och försök igen.", acctFailed: "Det gick inte. Kontrollera mejladressen och försök igen.",
+    acctBadEmail: "Skriv en hel mejladress, t.ex. namn@example.com.", acctSmall: "Gratis och utan lösenord. Vi använder bara din mejl för att logga in dig.",
+    acctPrivacy: "Integritetspolicy", acctClose: "Stäng", acctWelcome: "Du är inloggad. Din önskelista följer nu med på alla enheter.",
+    acctLinkExpired: "Inloggningslänken har gått ut eller redan använts. Tryck på Logga in för att få en ny.",
+    been: "Har varit där", beenAdd: "Markera {name} som besökt", beenRemove: "Ta bort {name} från besökta", beenAddT: "Markera som besökt", beenRemoveT: "Ta bort från besökta",
+    toastBeen: "{name} är markerad som besökt", toastNotBeen: "{name} har tagits bort från besökta", showBeen: "Har varit där",
+    beenProgress: "Du har besökt {n} av de {total} här.", wishNoteOut: "Din önskelista sparas bara på den här enheten.", wishNoteSignIn: "Logga in för att ha den på alla enheter",
+    wishNoteIn: "Din önskelista och dina besökta restauranger sparas på ditt konto.", wishSynced: "Sparat på ditt konto.", acctSee: "Se ditt konto",
+    shareInsta: "Till Instagram: kopiera länken och klistra in den i en story eller ett meddelande.",
+    shareMore: "Instagram, Meddelanden med mera",
+    shareTextPlace: "Vad en Michelinstjärna kostar {placeIn}: priser för middag, lunch och vinpaket sida vid sida.",
+    infoDinner: "middag", infoWine: "vin", infoGoogle: "på Google", infoOpen: "Öppna i Google Maps", infoNoPrice: "Pris inte angivet",
+    starsTitle: "Vad varje extra stjärna kostar",
+    starsText: "Genomsnittligt menypris för den valda måltiden, uppdelat på Michelinstjärnor. À la carte-restauranger räknas med men ingår inte i snitt och prisspann.",
+    tierNames: ["En stjärna", "Två stjärnor", "Tre stjärnor"], avgDinner: "snitt middag", tRestaurants: "Restauranger", tRange: "Spann", tRating: "Snitt Google-betyg",
+    tVs: "mot {n} stjärna|mot {n} stjärnor", tNoPrices: "Inga menypriser för de här restaurangerna.", tNone: "Inga restauranger med {tier}.",
+    methodTitle: "Så räknar vi priserna",
+    m1Title: "Per person, före service",
+    m1Text: "Alla belopp gäller en gäst och utan serviceavgift, som varierar mellan länder. Tillägg som kaviar eller tryffel räknas inte med. Priser i en annan valuta använder dagens kurs och är ungefärliga.",
+    m2Title: "Var priserna kommer ifrån",
+    m2Text: "Middag är den viktigaste avsmakningsmenyn, om det finns en, och vin är det billigaste vinpaketet till den. Vi tar priserna från restaurangens egen webbplats när de finns där, annars från aktuella recensioner och bokningssajter. Lunch är restaurangens lunchmeny, och anteckningen säger vilka dagar den serveras.",
+    m3Title: "Stjärnor och Google-betyg",
+    m3Text: "Google-betyget av 5 och antalet recensioner är kontrollerade i oktober 2026. Stjärnorna kommer från den senaste Michelinguiden för varje land. En grön ▲ markerar en restaurang som fick en stjärna i någon av de två senaste guiderna; en röd ▼ en som förlorade sin stjärna.",
+    contactTitle: "Har du sett en prisändring?",
+    contactText: "Menyer får ofta nya priser. Berätta om en uppdatering, en restaurang vi saknar eller en stad vi borde täcka.",
+    cName: "Namn", cEmail: "Mejl", cTopic: "Ämne", cTopicPrice: "Prisuppdatering", cTopicSuggest: "Föreslå en restaurang", cTopicCity: "Täck en annan stad", cTopicOther: "Något annat",
+    cMsg: "Meddelande", cMsgPh: "Berätta vilken restaurang, det nya priset och var du såg det.",
+    cSend: "Skicka meddelande", errName: "Skriv ditt namn.", errEmail: "Skriv en mejladress som namn@example.com.", errMsg: "Skriv ett kort meddelande.",
+    sent: "Tack, {name}. Det här är ett testformulär, så meddelanden skickas inte än.",
+    footEdition: "The Starred Bill · {place}",
+    footNote: "Priser och betyg är kontrollerade i oktober 2026. Kolla med restaurangen innan du bokar.",
+    rateLine: "Priser i {sym} är ungefärliga och använder kursen den {date}: {sym}1 = {home}{rate}.",
+    rateLineMixed: "Priserna är omräknade till {sym} med kursen den {date} och är därför ungefärliga.",
+    currencyAria: "Visa priser i", crumbsAria: "Var du är",
+    installApp: "Installera appen",
+    installTipIos: "Så installerar du: tryck på Dela-knappen (fyrkanten med en pil) i Safari och välj ”Lägg till på hemskärmen”."
+  },
   is: {
     acctSentCode: "Við sendum 6 stafa kóða á {email}. Sláðu hann inn hér fyrir neðan til að skrá þig inn hér. (Hlekkurinn í póstinum virkar líka, en í appinu á heimaskjánum opnar hann vafrann í staðinn.)", acctCodeLabel: "Kóði úr póstinum", acctVerify: "Skrá inn með kóða", acctVerifying: "Athuga…", acctCodeWrong: "Kóðinn virkaði ekki. Athugaðu hann eða biddu um nýjan.", acctBadCode: "Sláðu inn 6 stafa kóðann úr póstinum.",
     notrackOn: "Þessi vafri er ekki lengur talinn með í heimsóknatölum.", notrackOff: "Þessi vafri er aftur talinn með í heimsóknatölum.",
@@ -1512,6 +1615,10 @@ const CUISINE_DA = {
   "Creative": "Kreativt", "Modern Cuisine": "Moderne køkken", "Fusion": "Fusion", "Modern French": "Moderne fransk", "Japanese": "Japansk", "Contemporary": "Moderne",
   "Danish": "Dansk", "Nordic": "Nordisk", "Seafood": "Fisk og skaldyr", "Vegetarian": "Vegetarisk", "Innovative": "Innovativt"
 };
+const CUISINE_SV = {
+  "Creative": "Kreativt", "Modern Cuisine": "Modernt kök", "Japanese": "Japanskt", "Grills": "Grill", "Fish and Seafood": "Fisk och skaldjur",
+  "Contemporary": "Modernt", "Seafood": "Skaldjur", "Nordic": "Nordiskt", "Swedish": "Svenskt", "Vegetarian": "Vegetariskt", "Innovative": "Innovativt"
+};
 const CUISINE_IS = {
   "Creative": "Skapandi", "Modern Cuisine": "Nútímaleg matargerð", "Regional Cuisine": "Íslensk matargerð", "Contemporary": "Nútímaleg", "Seafood": "Sjávarréttir"
 };
@@ -1534,7 +1641,7 @@ const CUISINE_IT = {
 };
 
 // Each language's cuisine names (Japanese and Cantonese use the restaurant's own field or Chinese).
-const CUISINES = { zh: CUISINE_ZH, yue: CUISINE_ZH, fr: CUISINE_FR, es: CUISINE_ES, it: CUISINE_IT, ko: CUISINE_KO, da: CUISINE_DA, is: CUISINE_IS, ca: CUISINE_CA, th: CUISINE_TH };
+const CUISINES = { zh: CUISINE_ZH, yue: CUISINE_ZH, fr: CUISINE_FR, es: CUISINE_ES, it: CUISINE_IT, ko: CUISINE_KO, da: CUISINE_DA, sv: CUISINE_SV, is: CUISINE_IS, ca: CUISINE_CA, th: CUISINE_TH };
 // ---------- Language and saved settings ----------
 // Each language: its switch label, the page's lang attribute, the suffix of translated data fields
 // (nameZh, introYue, dinnerNoteFr…), the fields to try next, and the locale for dates and sorting.
@@ -1548,6 +1655,7 @@ const LANGS = {
   it: { label: "IT", html: "it-IT", suffixes: ["It"], locale: "it-IT" },
   ko: { label: "한국어", html: "ko", suffixes: ["Ko"], locale: "ko-KR" },
   da: { label: "DA", html: "da", suffixes: ["Da"], locale: "da-DK" },
+  sv: { label: "SV", html: "sv", suffixes: ["Sv"], locale: "sv-SE" },
   is: { label: "IS", html: "is", suffixes: ["Is"], locale: "is-IS" },
   ca: { label: "CA", html: "ca", suffixes: ["Ca"], locale: "ca-ES" },
   th: { label: "ไทย", html: "th", suffixes: ["Th"], locale: "th-TH" }
@@ -1568,7 +1676,7 @@ const store = {
 const LANG_KEY = "starredbill-lang", WISHLIST_KEY = "starredbill-wishlist", PREFS_KEY = "starredbill-prefs";
 function browserLang() {
   const b = (navigator.language || "").toLowerCase();
-  return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : b.startsWith("es") ? "es" : b.startsWith("it") ? "it" : b.startsWith("ko") ? "ko" : b.startsWith("da") ? "da" : b.startsWith("is") ? "is" : b.startsWith("ca") ? "ca" : b.startsWith("th") ? "th" : "en";
+  return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : b.startsWith("es") ? "es" : b.startsWith("it") ? "it" : b.startsWith("ko") ? "ko" : b.startsWith("da") ? "da" : b.startsWith("sv") ? "sv" : b.startsWith("is") ? "is" : b.startsWith("ca") ? "ca" : b.startsWith("th") ? "th" : "en";
 }
 // The visitor's choice, kept across pages even where it isn't offered.
 let LANG_PREF = LANGS[params.get("lang")] ? params.get("lang") : store.get(LANG_KEY, browserLang());
@@ -1649,6 +1757,7 @@ const MONTHS = { en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "S
   es: ["ene.", "feb.", "mar.", "abr.", "may.", "jun.", "jul.", "ago.", "sept.", "oct.", "nov.", "dic."],
   it: ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"],
   da: ["jan.", "feb.", "mar.", "apr.", "maj", "jun.", "jul.", "aug.", "sep.", "okt.", "nov.", "dec."],
+  sv: ["jan.", "feb.", "mars", "apr.", "maj", "juni", "juli", "aug.", "sep.", "okt.", "nov.", "dec."],
   is: ["jan.", "feb.", "mar.", "apr.", "maí", "jún.", "júl.", "ágú.", "sep.", "okt.", "nóv.", "des."],
   ca: ["gen.", "febr.", "març", "abr.", "maig", "juny", "jul.", "ag.", "set.", "oct.", "nov.", "des."],
   th: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."] };
@@ -1717,7 +1826,7 @@ function loadGoogle() {
   if (!mapsBoot) mapsBoot = new Promise((resolve, reject) => {
     window.__starredBillMaps = resolve;
     const s = document.createElement("script");
-    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja", es: "es", it: "it", ko: "ko", da: "da", is: "is", ca: "ca", th: "th" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
+    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja", es: "es", it: "it", ko: "ko", da: "da", sv: "sv", is: "is", ca: "ca", th: "th" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
     s.async = true;
     s.onerror = reject;
     document.head.appendChild(s);

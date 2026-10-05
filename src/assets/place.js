@@ -63,7 +63,7 @@ const BADGES = [["vegetarian-only", "badgeVegOnly", "dietVegOnly"], ["vegetarian
 const dietBadges = (r) => BADGES.filter(([d]) => (r.diets || []).includes(d) && !(d === "vegetarian-menu" && r.diets.includes("vegetarian-only")))
   .map(([d, short, full]) => '<span class="diet-badge" title="' + esc(t(full)) + '"><svg aria-hidden="true"><use href="#leaf"/></svg><span class="sr-only">' + esc(t(full)) + '</span><span aria-hidden="true">' + esc(t(short)) + "</span></span>").join("");
 const searchText = (r) => [r.name, r.chef, ...((r.diets || []).map(dietLabel)), ...BADGES.filter(([d]) => (r.diets || []).includes(d)).map(([, short]) => t(short)), r.nameZh, r.nameJa, r.nameKo, r.cuisine, r.cuisineZh, r.cuisineJa, CUISINE_ZH[r.cuisine], CUISINE_FR[r.cuisine], CUISINE_ES[r.cuisine], CUISINE_IT[r.cuisine], CUISINE_KO[r.cuisine],
-  r.area, r.areaZh, r.areaJa, r.areaEs, r.areaIt, r.areaKo, r.cityName, r.cityNameZh, r.cityNameJa, r.cityNameEs, r.cityNameIt, r.cityNameKo, r.areaDa, r.areaIs, r.areaCa, r.areaTh, r.nameTh].filter(Boolean).join(" ").toLowerCase();
+  r.area, r.areaZh, r.areaJa, r.areaEs, r.areaIt, r.areaKo, r.cityName, r.cityNameZh, r.cityNameJa, r.cityNameEs, r.cityNameIt, r.cityNameKo, r.areaDa, r.areaSv, r.areaIs, r.areaCa, r.areaTh, r.nameTh].filter(Boolean).join(" ").toLowerCase();
 const queryMatch = (r) => { const q = state.query.trim().toLowerCase(); return !q || searchText(r).includes(q); };
 const changeBadge = (r) => !r.change ? "" : '<span class="chg chg-' + (r.change === "down" ? "down" : "up") + '" title="' + esc(t("chgTitle", { note: pick(r, "changeNote"), date: monthYear(r.changeDate) })) + '">' + (r.change === "down" ? "▼ " : "▲ ") + (r.change === "new" ? t("chgNew") + " " : "") + monthYear(r.changeDate) + "</span>";
 

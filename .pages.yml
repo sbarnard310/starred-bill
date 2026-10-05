@@ -81,6 +81,10 @@ content:
         label: Area in Danish
         description: Only for places offered in Danish.
         type: string
+      - name: areaSv
+        label: Area in Swedish
+        description: Only for places offered in Swedish.
+        type: string
       - name: areaIs
         label: Area in Icelandic
         description: Only for places offered in Icelandic.
@@ -186,6 +190,9 @@ content:
       - name: changeNoteDa
         label: Star change note in Danish
         type: string
+      - name: changeNoteSv
+        label: Star change note in Swedish
+        type: string
       - name: changeNoteIs
         label: Star change note in Icelandic
         type: string
@@ -249,6 +256,9 @@ content:
         type: string
       - name: dinnerNoteDa
         label: Dinner note in Danish
+        type: string
+      - name: dinnerNoteSv
+        label: Dinner note in Swedish
         type: string
       - name: dinnerNoteIs
         label: Dinner note in Icelandic
@@ -317,6 +327,9 @@ content:
         type: string
       - name: lunchNoteDa
         label: Lunch note in Danish
+        type: string
+      - name: lunchNoteSv
+        label: Lunch note in Swedish
         type: string
       - name: lunchNoteIs
         label: Lunch note in Icelandic
@@ -389,6 +402,9 @@ content:
         type: string
       - name: statusNoteDa
         label: Status note in Danish
+        type: string
+      - name: statusNoteSv
+        label: Status note in Swedish
         type: string
       - name: statusNoteIs
         label: Status note in Icelandic
@@ -481,6 +497,9 @@ content:
       - name: nameDa
         label: Name in Danish
         type: string
+      - name: nameSv
+        label: Name in Swedish
+        type: string
       - name: nameIs
         label: Name in Icelandic
         type: string
@@ -509,6 +528,7 @@ content:
             - { value: it, label: "Italiano (Italian)" }
             - { value: ko, label: "한국어 (Korean)" }
             - { value: da, label: "Dansk (Danish)" }
+            - { value: sv, label: "Svenska (Swedish)" }
             - { value: is, label: "Íslenska (Icelandic)" }
             - { value: ca, label: "Català (Catalan)" }
             - { value: th, label: "ไทย (Thai)" }
@@ -565,6 +585,10 @@ content:
         label: Name mid-sentence in Danish
         description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
         type: string
+      - name: inSentenceSv
+        label: Name mid-sentence in Swedish
+        description: With its preposition, e.g. "i Sverige". Leave empty for "i" + the Swedish name.
+        type: string
       - name: inSentenceIs
         label: Name mid-sentence in Icelandic
         description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
@@ -601,6 +625,9 @@ content:
         type: text
       - name: introDa
         label: "Introduction (Danish)"
+        type: text
+      - name: introSv
+        label: "Introduction (Swedish)"
         type: text
       - name: introIs
         label: "Introduction (Icelandic)"
@@ -639,6 +666,9 @@ content:
       - name: serviceTextDa
         label: "Method: per person, before service (Danish)"
         type: text
+      - name: serviceTextSv
+        label: "Method: per person, before service (Swedish)"
+        type: text
       - name: serviceTextIs
         label: "Method: per person, before service (Icelandic)"
         type: text
@@ -674,6 +704,9 @@ content:
         type: text
       - name: sourcesTextDa
         label: "Method: where prices come from (Danish)"
+        type: text
+      - name: sourcesTextSv
+        label: "Method: where prices come from (Swedish)"
         type: text
       - name: sourcesTextIs
         label: "Method: where prices come from (Icelandic)"
@@ -711,6 +744,9 @@ content:
         type: text
       - name: starsTextDa
         label: "Method: stars and Google rating (Danish)"
+        type: text
+      - name: starsTextSv
+        label: "Method: stars and Google rating (Swedish)"
         type: text
       - name: starsTextIs
         label: "Method: stars and Google rating (Icelandic)"

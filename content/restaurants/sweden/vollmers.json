@@ -1,7 +1,7 @@
 {
   "name": "Vollmers",
   "city": "sweden",
-  "area": "Malmo",
+  "area": "Malmö",
   "address": "Tegelgårdsgatan 5, 211 33, Malmo",
   "stars": 2,
   "cuisine": "Contemporary",
@@ -17,5 +17,6 @@
   "michelinId": "431376",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
 }

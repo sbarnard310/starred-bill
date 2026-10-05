@@ -3,5 +3,7 @@
   "type": "city",
   "parent": "sweden",
   "name": "Gothenburg",
-  "intro": "Prices are in Swedish kronor (SEK), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added."
+  "intro": "Prices are in Swedish kronor (SEK), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
+  "nameSv": "Göteborg",
+  "introSv": "Priserna anges i svenska kronor (SEK), med en knapp för att visa dem i pund, euro eller amerikanska dollar. Priserna är kontrollerade i oktober 2026; där en restaurangs pris inte visas än ska det läggas till."
 }

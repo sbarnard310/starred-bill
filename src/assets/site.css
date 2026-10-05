@@ -93,9 +93,13 @@ section { scroll-margin-top: 64px; }
 /* Toolbar */
 .toolbar { display: grid; grid-template-columns: 1fr auto; gap: 12px; margin-bottom: 14px; }
 .search { position: relative; }
-.search svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); pointer-events: none; }
-.search input { width: 100%; padding: 12px 14px 12px 42px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
-.search input:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-soft); }
+/* Search boxes stand out from the menus beside them: a firmer outline, a green magnifier, a darker hint and a soft shadow. */
+.search svg { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: var(--green); pointer-events: none; }
+.search input { width: 100%; padding: 13px 14px 13px 46px; border: 2px solid color-mix(in srgb, var(--green) 55%, transparent); border-radius: var(--radius); background: var(--surface); font-size: 1rem;
+  box-shadow: 0 1px 2px rgba(18, 38, 28, .06), 0 4px 14px rgba(18, 38, 28, .07); transition: border-color .15s, box-shadow .15s; }
+.search input::placeholder { color: var(--muted); opacity: 1; }
+.search input:hover { border-color: color-mix(in srgb, var(--green) 80%, transparent); }
+.search input:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-soft), 0 4px 14px rgba(18, 38, 28, .07); }
 select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 
 /* Filters. Computers: Dinner/Lunch, then Show, Stars and Cuisine as drop-down buttons in one row.

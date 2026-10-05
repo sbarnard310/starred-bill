@@ -1,0 +1,20 @@
+{
+  "name": "Aburi Hana",
+  "city": "toronto",
+  "address": "102 Yorkville Ave., Toronto, M5R 1B9",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-09",
+  "rating": 4.6,
+  "reviews": 293,
+  "dinnerType": "menu",
+  "status": "changed",
+  "formerStars": 1,
+  "statusNote": "Not starred in the September 2026 guide; it reopened that month with a new chef and concept",
+  "website": "https://aburihana.com/",
+  "lat": 43.6710006,
+  "lng": -79.3925961,
+  "placeId": "ChIJEZFe2cc1K4gR5ZSbZH780Fw"
+}

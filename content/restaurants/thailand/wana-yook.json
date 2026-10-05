@@ -1,0 +1,20 @@
+{
+  "name": "Wana Yook",
+  "city": "bangkok",
+  "area": "Ratchathewi",
+  "areaTh": "ราชเทวี",
+  "address": "5/15 Phaya Thai Road, Thanon Phaya Thai, Ratchathewi, Bangkok",
+  "stars": 1,
+  "cuisine": "Thai contemporary",
+  "rating": 4.6,
+  "reviews": 264,
+  "dinner": 4950,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "lat": 13.7632058,
+  "lng": 100.5376886,
+  "placeId": "ChIJOTiQRnKf4jAR5hsFRsOF2RM"
+}

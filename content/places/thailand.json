@@ -1,0 +1,20 @@
+{
+  "id": "thailand",
+  "type": "country",
+  "name": "Thailand",
+  "nameTh": "ประเทศไทย",
+  "inSentenceTh": "ในประเทศไทย",
+  "currency": "THB",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "intro": "Bangkok, Nonthaburi, Phuket and Phang-Nga. Prices are in Thai baht (฿), with a switch to see them in pounds, euros or US dollars. Many Bangkok restaurants quote menu prices “++”: 10% service and 7% VAT are added to the bill. Prices here are shown as each restaurant lists them, and the note says “++” where that applies. Prices checked October 2026.",
+  "introTh": "กรุงเทพฯ นนทบุรี ภูเก็ต และพังงา ราคาเป็นเงินบาท (฿) และกดดูเป็นปอนด์ ยูโร หรือดอลลาร์สหรัฐได้ ร้านอาหารหลายแห่งในกรุงเทพฯ แจ้งราคาเมนูแบบ “++” คือบวกค่าบริการ 10% และภาษีมูลค่าเพิ่ม 7% ในบิล ราคาที่นี่แสดงตามที่แต่ละร้านระบุ และหมายเหตุจะบอกว่า “++” เมื่อเป็นเช่นนั้น ตรวจสอบราคาเมื่อเดือนตุลาคม 2026",
+  "serviceText": "Every figure is for one guest. Many Bangkok restaurants quote menu prices “++”: 10% service and 7% VAT are added to the bill. Prices here are shown as each restaurant lists them, and the note says “++” where that applies. Prices shown in other currencies use the day's exchange rate and are approximate.",
+  "serviceTextTh": "ทุกตัวเลขเป็นราคาต่อหนึ่งคน ร้านอาหารหลายแห่งในกรุงเทพฯ แจ้งราคาเมนูแบบ “++” คือบวกค่าบริการ 10% และภาษีมูลค่าเพิ่ม 7% ในบิล ราคาที่นี่แสดงตามที่แต่ละร้านระบุ และหมายเหตุจะบอกว่า “++” เมื่อเป็นเช่นนั้น ราคาในสกุลเงินอื่นใช้อัตราแลกเปลี่ยนของวันนั้นและเป็นราคาโดยประมาณ",
+  "sourcesText": "Dinner is the restaurant's main tasting menu. Prices come from each restaurant's own website where they're published, otherwise from ThailandAddict's 2026 guide to Bangkok's starred restaurants (checked July 2026). Lunch is shown where we found a lunch menu.",
+  "sourcesTextTh": "มื้อค่ำคือเมนูชิมหลักของร้าน ราคามาจากเว็บไซต์ของร้านเมื่อมีการเผยแพร่ ไม่เช่นนั้นมาจากคู่มือร้านติดดาวในกรุงเทพฯ ปี 2026 ของ ThailandAddict (ตรวจสอบเดือนกรกฎาคม 2026) มื้อกลางวันแสดงเมื่อเราพบเมนูกลางวัน",
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Thailand 2026, announced on 27 November 2025; green ▲ marks the restaurants that gained a star in it.",
+  "starsTextTh": "คะแนนรีวิว Google จาก 5 และจำนวนรีวิว ตรวจสอบเมื่อเดือนตุลาคม 2026 ดาวมาจากมิชลิน ไกด์ ประเทศไทย 2026 ที่ประกาศเมื่อวันที่ 27 พฤศจิกายน 2025 ▲ สีเขียวคือร้านที่ได้ดาวในฉบับนี้"
+}

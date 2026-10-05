@@ -1,0 +1,21 @@
+{
+  "name": "IGNIV",
+  "city": "bangkok",
+  "area": "Pathum Wan",
+  "areaTh": "ปทุมวัน",
+  "address": "GF, The St. Regis, 159 Ratchadamri Road, Lumphini, Pathum Wan, Bangkok",
+  "stars": 1,
+  "cuisine": "European Contemporary",
+  "rating": 4.6,
+  "reviews": 281,
+  "dinner": 5500,
+  "dinnerType": "menu",
+  "dinnerNote": "Sharing tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิมแบบแบ่งกันทาน ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.ignivbangkok.com",
+  "lat": 13.7400528,
+  "lng": 100.5401497,
+  "placeId": "ChIJLcAZ8Kqf4jARcqRxTY1Ajx8"
+}

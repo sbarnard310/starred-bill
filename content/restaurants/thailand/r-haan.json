@@ -1,0 +1,21 @@
+{
+  "name": "R-Haan",
+  "city": "bangkok",
+  "area": "Vadhana",
+  "areaTh": "วัฒนา",
+  "address": "131 Soi Sukhumvit 53, Khlong Tan Nuea, Vadhana, Bangkok",
+  "stars": 2,
+  "cuisine": "Thai contemporary",
+  "rating": 4.3,
+  "reviews": 1073,
+  "dinner": 5212,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.r-haan.com",
+  "lat": 13.7318414,
+  "lng": 100.5795745,
+  "placeId": "ChIJ-dmMWquf4jAREDFTxbjSFh0"
+}

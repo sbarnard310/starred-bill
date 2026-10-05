@@ -1,0 +1,21 @@
+{
+  "name": "PRU",
+  "city": "thailand",
+  "area": "Choeng Thale, Phuket",
+  "areaTh": "เชิงทะเล ภูเก็ต",
+  "address": "60/1 Mu 6, Srisoonthorn Road, Choeng Thale, Thalang, Phuket",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 346,
+  "dinner": 10900,
+  "dinnerType": "menu",
+  "dinnerNote": "Longest tasting menu (other menus from THB 4,000)",
+  "dinnerNoteTh": "เมนูชิมที่ยาวที่สุด (เมนูอื่นเริ่มต้น 4,000 บาท)",
+  "sourceType": "site",
+  "source": "https://www.prurestaurant.com",
+  "website": "https://www.prurestaurant.com",
+  "lat": 8.0384939,
+  "lng": 98.2765202,
+  "placeId": "ChIJEzq5U284UDARMU-I3GW73kY"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "GOAT",
+  "city": "bangkok",
+  "area": "Vadhana",
+  "areaTh": "วัฒนา",
+  "address": "12 Soi Ekkamai 10 Lane 2, Khlong Tan Nuea, Vadhana, Bangkok",
+  "stars": 1,
+  "cuisine": "Thai contemporary",
+  "rating": 4.8,
+  "reviews": 166,
+  "dinner": 4590,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.thegoatbkk.com",
+  "lat": 13.7274366,
+  "lng": 100.5872356,
+  "placeId": "ChIJpe0yABKf4jARAc0xgSi-RgY"
+}

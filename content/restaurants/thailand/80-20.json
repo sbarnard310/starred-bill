@@ -1,0 +1,21 @@
+{
+  "name": "80/20",
+  "city": "bangkok",
+  "area": "Bang Rak",
+  "areaTh": "บางรัก",
+  "address": "1052-1054 Charoen Krung 26 Road, Bang Rak, Bangkok",
+  "stars": 1,
+  "cuisine": "Thai contemporary",
+  "rating": 4.5,
+  "reviews": 559,
+  "dinner": 4500,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.8020bkk.com",
+  "lat": 13.7311121,
+  "lng": 100.5154966,
+  "placeId": "ChIJz4dTqxCZ4jARg1Ozcy1B_XM"
+}

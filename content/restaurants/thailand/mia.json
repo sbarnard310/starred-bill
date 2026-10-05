@@ -1,0 +1,21 @@
+{
+  "name": "Mia",
+  "city": "bangkok",
+  "area": "Khlong Toei",
+  "areaTh": "คลองเตย",
+  "address": "30 Soi Athakravi 1, Rama 4 Road, Khlong Tan, Khlong Toei, Bangkok",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 559,
+  "dinner": 2500,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteTh": "เมนูชิม",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.miarestaurantbkk.com",
+  "lat": 13.721191,
+  "lng": 100.5713481,
+  "placeId": "ChIJTbzH3iWf4jARdfwR4GLGTZ8"
+}

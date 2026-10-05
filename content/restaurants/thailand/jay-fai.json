@@ -1,0 +1,20 @@
+{
+  "name": "Jay Fai",
+  "city": "bangkok",
+  "area": "Phra Nakhon",
+  "areaTh": "พระนคร",
+  "address": "327 Maha Chai Road, Samran Rat, Phra Nakhon, Bangkok",
+  "stars": 1,
+  "cuisine": "Street Food",
+  "rating": 3.6,
+  "reviews": 5095,
+  "dinner": 1000,
+  "dinnerType": "spend",
+  "dinnerNote": "À la carte street food; typical spend THB 600–1,000",
+  "dinnerNoteTh": "สตรีทฟู้ดแบบสั่งตามเมนู ค่าใช้จ่ายโดยทั่วไป 600–1,000 บาท",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "lat": 13.752571,
+  "lng": 100.5046981,
+  "placeId": "ChIJaxq89xaZ4jARQtKhE1uqq9c"
+}

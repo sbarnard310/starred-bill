@@ -1,0 +1,21 @@
+{
+  "name": "AKKEE",
+  "city": "bangkok",
+  "area": "Pak Kret, Nonthaburi",
+  "areaTh": "ปากเกร็ด นนทบุรี",
+  "address": "42/99 Mu 7, Pak Kret Bypass Road, Bang Talat, Pak Kret, Nonthaburi",
+  "stars": 1,
+  "cuisine": "Thai contemporary",
+  "rating": 4.7,
+  "reviews": 304,
+  "dinner": 3850,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteTh": "เมนูชิม",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.akkeerestaurant.com",
+  "lat": 13.8984893,
+  "lng": 100.5151325,
+  "placeId": "ChIJGVvkeXCF4jARp6rXqZlVM18"
+}

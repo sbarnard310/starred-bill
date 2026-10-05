@@ -1074,6 +1074,105 @@ const I18N = {
     installApp: "Instal·la l'app",
     installTipIos: "Per instal·lar-la: toca el botó Comparteix (el quadrat amb una fletxa) a Safari i tria “Afegeix a la pantalla d'inici”."
   },
+  th: {
+    acctSentCode: "เราส่งรหัส 6 หลักไปที่ {email} แล้ว พิมพ์รหัสด้านล่างเพื่อเข้าสู่ระบบที่นี่ (ลิงก์ในอีเมลก็ใช้ได้ แต่ในแอปบนหน้าจอโฮมจะเปิดเบราว์เซอร์แทน)", acctCodeLabel: "รหัสจากอีเมล", acctVerify: "เข้าสู่ระบบด้วยรหัส", acctVerifying: "กำลังตรวจสอบ…", acctCodeWrong: "รหัสไม่ถูกต้อง ตรวจสอบอีกครั้งหรือขอรหัสใหม่", acctBadCode: "พิมพ์รหัส 6 หลักจากอีเมล",
+    notrackOn: "เบราว์เซอร์นี้จะไม่ถูกนับในสถิติการเข้าชมอีกต่อไป", notrackOff: "เบราว์เซอร์นี้ถูกนับในสถิติการเข้าชมอีกครั้ง",
+    cookieText: "เราขอใช้คุกกี้ของ Google Analytics เพื่อดูว่าผู้คนใช้งานเว็บไซต์อย่างไรได้ไหม ไม่ว่าคุณจะเลือกอะไร เราจะนับการเข้าชมโดยไม่ใช้คุกกี้", cookieAccept: "ยอมรับ", cookieReject: "ปฏิเสธ", cookieSettings: "เปลี่ยนการตั้งค่าคุกกี้",
+    navCompare: "เปรียบเทียบ", navMap: "แผนที่", navStars: "ตามจำนวนดาว", navMethod: "วิธีคิดราคา", navContact: "ติดต่อ", navDestinations: "จุดหมาย", wishlist: "รายการโปรด",
+    pageTitle: "The Starred Bill · {place}",
+    heroEyebrow: "{place} · ร้านอาหารในมิชลิน ไกด์",
+    heroTitle: "ดาวมิชลิน{placeIn} <em>ราคา</em>เท่าไร",
+    heroText: "ราคาต่อคนของมื้อค่ำ มื้อกลางวัน และไวน์จับคู่ ของร้านอาหารติดดาว{placeIn} เทียบกันแบบเห็นชัด ค้นหาตามชื่อหรือประเภทอาหาร กรองตามจำนวนดาวหรือประเภทอาหาร และบันทึกร้านที่อยากลองไว้ในรายการโปรด",
+    crumbHome: "จุดหมายทั้งหมด", explore: "สำรวจ", exploreCities: "เมืองใน{country}", exploreDistricts: "ย่านต่าง ๆ ใน{country}", alsoIn: "อยู่ใน",
+    figCount: "จำนวนร้าน", figMin: "เมนูมื้อค่ำที่ถูกที่สุด", figMax: "เมนูมื้อค่ำที่แพงที่สุด", figMinLunch: "เมนูมื้อกลางวันที่ถูกที่สุด", figMaxLunch: "เมนูมื้อกลางวันที่แพงที่สุด",
+    fMeal: "มื้อ", mealDinner: "มื้อค่ำ", mealLunch: "มื้อกลางวัน", hNotesLunch: "หมายเหตุมื้อกลางวัน", noLunch: "ไม่เปิดมื้อกลางวัน", avgLunch: "มื้อกลางวันเฉลี่ย", infoLunch: "มื้อกลางวัน",
+    sortPriceAscLunch: "มื้อกลางวัน: ถูกไปแพง", sortPriceDescLunch: "มื้อกลางวัน: แพงไปถูก",
+    starCounts: "สามดาว {3} ร้าน · สองดาว {2} ร้าน · หนึ่งดาว {1} ร้าน",
+    compareTitle: "ทุกโต๊ะ ทุกราคา",
+    compareText: "สลับระหว่างมื้อค่ำและมื้อกลางวันได้ด้านล่าง ราคาเป็นของเมนูชิมหรือเซ็ตเมนู เว้นแต่ระบุว่า “ต่อจานหลัก” หรือ “ค่าใช้จ่ายโดยทั่วไป” แถบแสดงการเทียบแต่ละเมนูกับเมนูที่แพงที่สุดในรายการ และทุกราคาลิงก์ไปยังแหล่งที่มา",
+    searchPh: "ค้นหาร้าน ประเภทอาหาร หรือย่าน", searchPhEx: "ค้นหาร้าน ประเภทอาหาร หรือย่าน เช่น “{ex}”",
+    searchLabel: "ค้นหาร้านอาหารตามชื่อ ประเภทอาหาร หรือย่าน",
+    sortLabel: "เรียงร้านอาหาร",
+    sortPriceAsc: "มื้อค่ำ: ถูกไปแพง", sortPriceDesc: "มื้อค่ำ: แพงไปถูก", sortStars: "ดาวมากที่สุดก่อน", sortRating: "คะแนน Google: สูงสุดก่อน", sortName: "ชื่อ A–Z",
+    fShow: "แสดง", fStars: "ดาวมิชลิน", fCuisine: "ประเภทอาหาร",
+    showAll: "ทุกร้าน", showChanges: "ดาวที่เปลี่ยนล่าสุด", showWish: "รายการโปรดของฉัน",
+    showChangesTitle: "ได้หรือเสียดาวในมิชลิน ไกด์ สองฉบับล่าสุด",
+    all: "ทั้งหมด", starsAria: "มิชลิน {n} ดาว",
+    hRestaurant: "ร้านอาหาร", hCuisine: "ประเภทอาหาร", hStars: "ดาว", hGoogle: "Google", hNotes: "หมายเหตุมื้อค่ำ", hPrice: "ราคา", hWine: "ไวน์จับคู่", hWish: "รายการโปรด",
+    tableLabel: "ราคาร้านอาหาร",
+    reviews: "{n} รีวิว", ratingAria: "คะแนน Google {r} จาก 5",
+    srcSite: "เว็บไซต์ร้าน", srcPress: "แหล่งที่มา", srcTitle: "ราคานี้มาจากที่ใด",
+    perMain: "ต่อจานหลัก", typicalSpend: "ค่าใช้จ่ายโดยทั่วไป", notListed: "ไม่ได้ระบุ",
+    findOnMaps: "ค้นหา {name} บน Google Maps", findOnMapsTitle: "ค้นหาบน Google Maps",
+    showOnly: "แสดงเฉพาะ{cat}",
+    chgNew: "ใหม่", chgTitle: "{note} ในมิชลิน ไกด์ {date}",
+    emptyWish: "ยังไม่มีร้านในรายการโปรด{placeIn} แตะรูปหัวใจที่ร้านใดก็ได้เพื่อบันทึก",
+    emptyPlace: "ขณะนี้ยังไม่มีร้านอาหารที่ได้ดาวมิชลิน{placeIn} เราจะอัปเดตหน้านี้ทันทีที่มี",
+    emptySee: "ดูร้านติดดาวใน{name}|ดูร้านติดดาวทั้ง {n} ร้านใน{name}", exploreAll: "ทุกพื้นที่",
+    noMatch: "ไม่มีร้านที่ตรงกับตัวกรองเหล่านี้", clearFilters: "ล้างการค้นหาและตัวกรอง",
+    formerTitle: "ไม่ได้ติดดาวแล้ว",
+    formerNote: "ร้านที่เคยอยู่ในรายการฉบับก่อน แต่หลังจากนั้นเสียดาว ปิดกิจการ หรือมีการเปลี่ยนแปลง แสดงไว้เพื่ออ้างอิงเท่านั้น",
+    formerly: "เดิม", stLost: "เสียดาว", stClosed: "ปิดแล้ว", stChanged: "เปลี่ยนแปลง",
+    showing: "แสดง {a} จาก {b} ร้านติดดาว", showingFormer: " และอีก {c} ร้านที่ไม่ได้ติดดาวแล้ว",
+    wishNote: "รายการโปรดของคุณบันทึกไว้ในเบราว์เซอร์นี้เท่านั้น",
+    wishAdd: "เพิ่ม {name} ในรายการโปรด", wishRemove: "นำ {name} ออกจากรายการโปรด", wishAddT: "เพิ่มในรายการโปรด", wishRemoveT: "นำออกจากรายการโปรด",
+    toastAdded: "เพิ่ม {name} ในรายการโปรดแล้ว", toastRemoved: "นำ {name} ออกจากรายการโปรดแล้ว", undo: "เลิกทำ",
+    photo: "รูปภาพ", tempClosed: "ปิดชั่วคราว (Google)",
+    mapTitle: "ร้านติดดาวทุกร้านบนแผนที่เดียว",
+    mapText: "หมุดบนแผนที่เปลี่ยนตามตัวกรองในรายการด้านบน เลือกจำนวนดาว ประเภทอาหาร หรือรายการโปรด แล้วแผนที่จะเปลี่ยนตาม แตะหมุดเพื่อดูราคาและเส้นทาง",
+    mapWait: "แผนที่จะโหลดเมื่อเลื่อนมาถึงตรงนี้", mapLabel: "แผนที่ร้านอาหารที่ได้ดาวมิชลิน",
+    mapError: "โหลดแผนที่ไม่ได้ในขณะนี้ หมุดข้างร้านแต่ละร้านในรายการยังเปิดใน Google Maps ได้",
+    legendAria: "ความหมายของสีหมุด", colours: ["สีม่วง", "สีอำพัน", "สีเขียว"], legendItem: "{c} = มิชลิน {n} ดาว",
+    mapShowing: "แสดง {n} ร้านบนแผนที่", mapNone: "ไม่มีร้านที่ตรงกับตัวกรองปัจจุบัน",
+    nearMe: "ใกล้ฉัน", nearMeAria: "แสดงร้านติดดาวใกล้ตำแหน่งของฉัน", nearFinding: "กำลังหาตำแหน่งของคุณ…", youAreHere: "คุณอยู่ที่นี่",
+    nearTitle: "ใกล้คุณที่สุด", nearAway: "ห่างไป {d}", nearWorld: "ดูร้านติดดาวใกล้คุณบนแผนที่โลก",
+    nearNone: "ไม่มีร้านในหน้านี้ที่อยู่ใกล้คุณ ร้านที่ใกล้ที่สุดคือ {name} ห่างไป {d}",
+    nearDenied: "การเข้าถึงตำแหน่งถูกปิดอยู่ อนุญาตให้เว็บไซต์นี้ในการตั้งค่าเบราว์เซอร์ แล้วลองอีกครั้ง",
+    nearFailed: "หาตำแหน่งของคุณไม่ได้ในขณะนี้ โปรดลองอีกครั้ง", nearUnsupported: "เบราว์เซอร์นี้แชร์ตำแหน่งไม่ได้",
+    jumpMap: "แผนที่", jumpMapAria: "ไปที่แผนที่",
+    share: "แชร์", shareAria: "แชร์หน้านี้", shareTitle: "แชร์หน้านี้", shareCopy: "คัดลอกลิงก์", shareCopied: "คัดลอกลิงก์แล้ว", shareEmail: "อีเมล",
+    acctSignIn: "เข้าสู่ระบบ", acctAccount: "บัญชี", acctTitle: "เข้าสู่ระบบหรือสร้างบัญชีฟรี",
+    acctWhy: "ใช้รายการโปรดได้ทุกอุปกรณ์ และติ๊กร้านที่คุณเคยไปแล้ว",
+    acctWhyBeen: "สร้างบัญชีฟรีเพื่อติ๊กร้านที่คุณเคยไปแล้ว และใช้รายการโปรดได้ทุกอุปกรณ์",
+    acctGoogle: "ดำเนินการต่อด้วย Google", acctOr: "หรือ", acctEmailLabel: "อีเมล", acctSend: "ส่งรหัสเข้าสู่ระบบทางอีเมล", acctSending: "กำลังส่ง…",
+    acctSent: "ตรวจสอบอีเมลของคุณ เราส่งลิงก์เข้าสู่ระบบไปที่ {email} แล้ว เปิดลิงก์บนอุปกรณ์นี้เพื่อเข้าสู่ระบบ",
+    acctTooMany: "ขออีเมลเข้าสู่ระบบบ่อยเกินไป รอสักครู่แล้วลองอีกครั้ง", acctFailed: "ไม่สำเร็จ ตรวจสอบอีเมลแล้วลองอีกครั้ง",
+    acctBadEmail: "พิมพ์อีเมลให้ครบ เช่น name@example.com", acctSmall: "ฟรีและไม่ต้องจำรหัสผ่าน เราใช้อีเมลของคุณเพื่อเข้าสู่ระบบเท่านั้น",
+    acctPrivacy: "นโยบายความเป็นส่วนตัว", acctClose: "ปิด", acctWelcome: "เข้าสู่ระบบแล้ว รายการโปรดของคุณใช้ได้ทุกอุปกรณ์แล้ว",
+    acctLinkExpired: "ลิงก์เข้าสู่ระบบหมดอายุหรือถูกใช้ไปแล้ว แตะเข้าสู่ระบบเพื่อรับลิงก์ใหม่",
+    been: "เคยไปแล้ว", beenAdd: "ทำเครื่องหมายว่าเคยไป {name}", beenRemove: "ลบ {name} ออกจากร้านที่เคยไป", beenAddT: "ทำเครื่องหมายว่าเคยไป", beenRemoveT: "ลบออกจากร้านที่เคยไป",
+    toastBeen: "ทำเครื่องหมายว่าเคยไป {name} แล้ว", toastNotBeen: "ลบ {name} ออกจากร้านที่เคยไปแล้ว", showBeen: "เคยไปแล้ว",
+    beenProgress: "คุณเคยไปแล้ว {n} จาก {total} ร้านที่นี่", wishNoteOut: "รายการโปรดบันทึกไว้ในอุปกรณ์นี้เท่านั้น", wishNoteSignIn: "เข้าสู่ระบบเพื่อใช้ได้ทุกอุปกรณ์",
+    wishNoteIn: "รายการโปรดและร้านที่เคยไปบันทึกไว้ในบัญชีของคุณ", wishSynced: "บันทึกในบัญชีของคุณแล้ว", acctSee: "ดูบัญชีของคุณ",
+    shareInsta: "สำหรับ Instagram ให้คัดลอกลิงก์แล้ววางในสตอรี่หรือข้อความ",
+    shareMore: "Instagram ข้อความ และอื่น ๆ",
+    shareTextPlace: "ดาวมิชลิน{placeIn}ราคาเท่าไร: ราคามื้อค่ำ มื้อกลางวัน และไวน์จับคู่ เทียบกันแบบเห็นชัด",
+    infoDinner: "มื้อค่ำ", infoWine: "ไวน์", infoGoogle: "บน Google", infoOpen: "เปิดใน Google Maps", infoNoPrice: "ไม่ได้ระบุราคา",
+    starsTitle: "ดาวที่เพิ่มขึ้นแต่ละดวงทำให้แพงขึ้นเท่าไร",
+    starsText: "ราคาเมนูเฉลี่ยของมื้อที่เลือกด้านบน แยกตามจำนวนดาวมิชลิน ร้านแบบอาลาคาร์ตนับรวมในจำนวนร้าน แต่ไม่รวมในค่าเฉลี่ยและช่วงราคา",
+    tierNames: ["หนึ่งดาว", "สองดาว", "สามดาว"], avgDinner: "มื้อค่ำเฉลี่ย", tRestaurants: "จำนวนร้าน", tRange: "ช่วงราคา", tRating: "คะแนน Google เฉลี่ย",
+    tVs: "เทียบกับ {n} ดาว", tNoPrices: "ร้านเหล่านี้ไม่มีราคาเมนู", tNone: "ไม่มีร้าน{tier}",
+    methodTitle: "เราคิดราคาอย่างไร",
+    m1Title: "ต่อคน ก่อนค่าบริการ",
+    m1Text: "ทุกตัวเลขเป็นราคาต่อหนึ่งคน และไม่รวมค่าบริการซึ่งแตกต่างกันไปในแต่ละประเทศ ไม่รวมรายการเสริม เช่น คาเวียร์หรือทรัฟเฟิล ราคาในสกุลเงินอื่นใช้อัตราแลกเปลี่ยนของวันนั้นและเป็นราคาโดยประมาณ",
+    m2Title: "ราคามาจากที่ใด",
+    m2Text: "มื้อค่ำคือเมนูชิมหลัก (ถ้ามี) และไวน์คือไวน์จับคู่ที่ถูกที่สุดของเมนูนั้น เราใช้ราคาจากเว็บไซต์ของร้านเมื่อมีการเผยแพร่ ไม่เช่นนั้นใช้จากรีวิวล่าสุดและเว็บไซต์จอง มื้อกลางวันคือเมนูกลางวันของร้าน และหมายเหตุจะบอกวันที่เสิร์ฟ",
+    m3Title: "ดาวและคะแนน Google",
+    m3Text: "คะแนนรีวิว Google จาก 5 และจำนวนรีวิว ตรวจสอบเมื่อเดือนตุลาคม 2026 ดาวมาจากมิชลิน ไกด์ฉบับล่าสุดของแต่ละประเทศ ▲ สีเขียวคือร้านที่ได้ดาวในไกด์สองฉบับล่าสุด ▼ สีแดงคือร้านที่เสียดาว",
+    contactTitle: "พบราคาที่เปลี่ยนไปไหม",
+    contactText: "เมนูเปลี่ยนราคาบ่อย บอกเราเรื่องการอัปเดต ร้านที่เรายังไม่มี หรือเมืองที่อยากให้เราเพิ่ม",
+    cName: "ชื่อ", cEmail: "อีเมล", cTopic: "หัวข้อ", cTopicPrice: "อัปเดตราคา", cTopicSuggest: "แนะนำร้านอาหาร", cTopicCity: "เพิ่มเมืองอื่น", cTopicOther: "อื่น ๆ",
+    cMsg: "ข้อความ", cMsgPh: "บอกชื่อร้าน ราคาใหม่ และที่ที่คุณเห็น",
+    cSend: "ส่งข้อความ", errName: "พิมพ์ชื่อของคุณ", errEmail: "พิมพ์อีเมล เช่น name@example.com", errMsg: "เขียนข้อความสั้น ๆ",
+    sent: "ขอบคุณ {name} แบบฟอร์มนี้เป็นตัวอย่าง จึงยังไม่ได้ส่งข้อความ",
+    footEdition: "The Starred Bill · {place}",
+    footNote: "ตรวจสอบราคาและคะแนนเมื่อเดือนตุลาคม 2026 โปรดสอบถามร้านก่อนจอง",
+    rateLine: "ราคาเป็น {sym} โดยประมาณ ตามอัตราแลกเปลี่ยนวันที่ {date}: {sym}1 = {home}{rate}",
+    rateLineMixed: "ราคาแปลงเป็น {sym} ตามอัตราแลกเปลี่ยนวันที่ {date} จึงเป็นราคาโดยประมาณ",
+    currencyAria: "แสดงราคาเป็น", crumbsAria: "ตำแหน่งของคุณ",
+    installApp: "ติดตั้งแอป",
+    installTipIos: "วิธีติดตั้ง: แตะปุ่มแชร์ (สี่เหลี่ยมที่มีลูกศร) ใน Safari แล้วเลือก “เพิ่มไปยังหน้าจอโฮม”"
+  },
   ko: {
     destGuide: "미쉐린 가이드 전체: {n}곳",
     acctSentCode: "{email}(으)로 6자리 코드를 보냈습니다. 아래에 입력하면 여기서 로그인됩니다. (이메일의 링크도 되지만, 홈 화면 앱에서는 브라우저가 열립니다.)", acctCodeLabel: "이메일로 받은 코드", acctVerify: "코드로 로그인", acctVerifying: "확인 중…", acctCodeWrong: "코드가 맞지 않습니다. 확인하거나 새 코드를 받으세요.", acctBadCode: "이메일로 받은 6자리 코드를 입력하세요.",
@@ -1371,6 +1470,12 @@ const CUISINE_IS = {
 const CUISINE_CA = {
   "Creative": "Creativa", "Modern Cuisine": "Moderna", "Contemporary": "Contemporània", "Traditional Cuisine": "Tradicional", "Regional Cuisine": "Regional"
 };
+const CUISINE_TH = {
+  "French Contemporary": "ฝรั่งเศสร่วมสมัย", "Modern Cuisine": "อาหารสมัยใหม่", "French": "ฝรั่งเศส", "Alpine": "อาหารแถบเทือกเขาแอลป์", "Thai": "อาหารไทย",
+  "German": "เยอรมัน", "Thai contemporary": "อาหารไทยร่วมสมัย", "Indian": "อินเดีย", "European Contemporary": "ยุโรปร่วมสมัย", "Contemporary": "ร่วมสมัย",
+  "Innovative": "สร้างสรรค์", "Street Food": "สตรีทฟู้ด", "Korean Contemporary": "เกาหลีร่วมสมัย", "Italian Contemporary": "อิตาเลียนร่วมสมัย", "Creative": "สร้างสรรค์",
+  "Southern Thai": "อาหารใต้", "Sushi": "ซูชิ"
+};
 const CUISINE_IT = {
   "Modern Cuisine": "Moderna", "Creative": "Creativa", "Contemporary": "Contemporanea", "Classic Cuisine": "Classica", "Traditional Cuisine": "Tradizionale",
   "Regional Cuisine": "Regionale", "Fish and Seafood": "Pesce e frutti di mare", "Seafood": "Frutti di mare", "Japanese": "Giapponese", "Fusion": "Fusion",
@@ -1381,7 +1486,7 @@ const CUISINE_IT = {
 };
 
 // Each language's cuisine names (Japanese and Cantonese use the restaurant's own field or Chinese).
-const CUISINES = { zh: CUISINE_ZH, yue: CUISINE_ZH, fr: CUISINE_FR, es: CUISINE_ES, it: CUISINE_IT, ko: CUISINE_KO, da: CUISINE_DA, is: CUISINE_IS, ca: CUISINE_CA };
+const CUISINES = { zh: CUISINE_ZH, yue: CUISINE_ZH, fr: CUISINE_FR, es: CUISINE_ES, it: CUISINE_IT, ko: CUISINE_KO, da: CUISINE_DA, is: CUISINE_IS, ca: CUISINE_CA, th: CUISINE_TH };
 // ---------- Language and saved settings ----------
 // Each language: its switch label, the page's lang attribute, the suffix of translated data fields
 // (nameZh, introYue, dinnerNoteFr…), the fields to try next, and the locale for dates and sorting.
@@ -1396,7 +1501,8 @@ const LANGS = {
   ko: { label: "한국어", html: "ko", suffixes: ["Ko"], locale: "ko-KR" },
   da: { label: "DA", html: "da", suffixes: ["Da"], locale: "da-DK" },
   is: { label: "IS", html: "is", suffixes: ["Is"], locale: "is-IS" },
-  ca: { label: "CA", html: "ca", suffixes: ["Ca"], locale: "ca-ES" }
+  ca: { label: "CA", html: "ca", suffixes: ["Ca"], locale: "ca-ES" },
+  th: { label: "ไทย", html: "th", suffixes: ["Th"], locale: "th-TH" }
 };
 const DATA = JSON.parse(document.getElementById("page-data").textContent);
 // The languages this page offers (Hong Kong adds Cantonese, France adds French, Japan adds Japanese).
@@ -1414,7 +1520,7 @@ const store = {
 const LANG_KEY = "starredbill-lang", WISHLIST_KEY = "starredbill-wishlist", PREFS_KEY = "starredbill-prefs";
 function browserLang() {
   const b = (navigator.language || "").toLowerCase();
-  return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : b.startsWith("es") ? "es" : b.startsWith("it") ? "it" : b.startsWith("ko") ? "ko" : b.startsWith("da") ? "da" : b.startsWith("is") ? "is" : b.startsWith("ca") ? "ca" : "en";
+  return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : b.startsWith("es") ? "es" : b.startsWith("it") ? "it" : b.startsWith("ko") ? "ko" : b.startsWith("da") ? "da" : b.startsWith("is") ? "is" : b.startsWith("ca") ? "ca" : b.startsWith("th") ? "th" : "en";
 }
 // The visitor's choice, kept across pages even where it isn't offered.
 let LANG_PREF = LANGS[params.get("lang")] ? params.get("lang") : store.get(LANG_KEY, browserLang());
@@ -1496,7 +1602,8 @@ const MONTHS = { en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "S
   it: ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"],
   da: ["jan.", "feb.", "mar.", "apr.", "maj", "jun.", "jul.", "aug.", "sep.", "okt.", "nov.", "dec."],
   is: ["jan.", "feb.", "mar.", "apr.", "maí", "jún.", "júl.", "ágú.", "sep.", "okt.", "nóv.", "des."],
-  ca: ["gen.", "febr.", "març", "abr.", "maig", "juny", "jul.", "ag.", "set.", "oct.", "nov.", "des."] };
+  ca: ["gen.", "febr.", "març", "abr.", "maig", "juny", "jul.", "ag.", "set.", "oct.", "nov.", "des."],
+  th: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."] };
 const monthYear = (ym) => {
   const [y, m] = String(ym || "").split("-");
   if (!m) return y || "";
@@ -1552,7 +1659,7 @@ function loadGoogle() {
   if (!mapsBoot) mapsBoot = new Promise((resolve, reject) => {
     window.__starredBillMaps = resolve;
     const s = document.createElement("script");
-    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja", es: "es", it: "it", ko: "ko", da: "da", is: "is", ca: "ca" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
+    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja", es: "es", it: "it", ko: "ko", da: "da", is: "is", ca: "ca", th: "th" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
     s.async = true;
     s.onerror = reject;
     document.head.appendChild(s);

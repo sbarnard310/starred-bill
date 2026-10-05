@@ -26,6 +26,8 @@
 :lang(ko) { --font-display: "Gloock", "Noto Serif KR", "AppleMyungjo", serif; --font-body: "Figtree", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif; }
 .alt-name:lang(ko) { font-family: var(--font-body); }
 :lang(ko) h1, :lang(ko) h2 { word-break: keep-all; }
+:lang(th) { --font-display: "Gloock", "Noto Serif Thai", serif; --font-body: "Figtree", "Noto Sans Thai", "Thonburi", system-ui, sans-serif; }
+.alt-name:lang(th) { font-family: var(--font-body); }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0C1712; --surface: #13221A; --ink: #E4EEE7; --muted: #98AE9F; --line: #24392D;

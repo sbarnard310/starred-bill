@@ -1,0 +1,21 @@
+{
+  "name": "Aulis",
+  "city": "thailand",
+  "area": "Khok Kloi, Phang-Nga",
+  "areaTh": "โคกกลอย พังงา",
+  "address": "Iniala Beach House, 40/14 Mu 6, Ban Natai, Khok Kloi, Takua Thung, Phang-Nga",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 64,
+  "dinner": 7500,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteTh": "เมนูชิม",
+  "sourceType": "site",
+  "source": "https://www.aulisphuket.com",
+  "website": "https://www.aulisphuket.com",
+  "lat": 8.2878698,
+  "lng": 98.274228,
+  "placeId": "ChIJa5G2159bUDARtErVOCyhyNQ"
+}

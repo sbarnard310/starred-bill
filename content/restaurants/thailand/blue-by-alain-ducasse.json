@@ -1,0 +1,21 @@
+{
+  "name": "Blue by Alain Ducasse",
+  "city": "bangkok",
+  "area": "Khlong San",
+  "areaTh": "คลองสาน",
+  "address": "Unit L101, 1F, ICONLUXE ICONSIAM Shopping Centre, 299 Charoen Nakhon Road, Khlong Ton Sai, Khlong San, Bangkok",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.5,
+  "reviews": 523,
+  "dinner": 2950,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.blue-alainducasse.com",
+  "lat": 13.7265916,
+  "lng": 100.5105619,
+  "placeId": "ChIJaa9v9cKZ4jARCdXA1Oxli0A"
+}

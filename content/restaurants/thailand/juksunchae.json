@@ -1,0 +1,22 @@
+{
+  "name": "Juksunchae",
+  "city": "bangkok",
+  "area": "Vadhana",
+  "areaTh": "วัฒนา",
+  "address": "Marriott Executive Apartments Town Hall, 88/8 Soi Sukhumvit 49, Khlong Tan Nuea, Vadhana, Bangkok",
+  "stars": 1,
+  "cuisine": "Korean Contemporary",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeNoteTh": "ได้ดาวดวงแรก",
+  "changeDate": "2025-11",
+  "dinner": 3900,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.juksunchae.com",
+  "lat": 13.7328167,
+  "lng": 100.5766771
+}

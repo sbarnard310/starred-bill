@@ -1,0 +1,21 @@
+{
+  "name": "Chim by Siam Wisdom",
+  "city": "bangkok",
+  "area": "Dusit",
+  "areaTh": "ดุสิต",
+  "address": "315 Soi Ongkharak 13, Thanon Nakhon Chai Si, Dusit, Bangkok",
+  "stars": 1,
+  "cuisine": "Thai",
+  "rating": 4.4,
+  "reviews": 335,
+  "dinner": 3250,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.chimbysiamwisdombkk.com",
+  "lat": 13.7891795,
+  "lng": 100.5185611,
+  "placeId": "ChIJg3htxvue4jARtGnzcjPrWnU"
+}

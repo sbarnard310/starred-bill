@@ -1,0 +1,21 @@
+{
+  "name": "Côte by Mauro Colagreco",
+  "city": "bangkok",
+  "area": "Sathon",
+  "areaTh": "สาทร",
+  "address": "2F, Capella Bangkok, 300/2 Charoenkrung Road, Yan Nawa, Sathon",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 687,
+  "dinner": 7800,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteTh": "เมนูชิม",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.capellahotels.com/en/capella-bangkok/dining/cote-by-mauro-colagreco",
+  "lat": 13.713092,
+  "lng": 100.510847,
+  "placeId": "ChIJf8OOlnmZ4jAR1XxCVTOPfPY"
+}

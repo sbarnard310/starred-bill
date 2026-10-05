@@ -1,0 +1,21 @@
+{
+  "name": "Samrub Samrub Thai",
+  "city": "bangkok",
+  "area": "Bang Rak",
+  "areaTh": "บางรัก",
+  "address": "39/11 Soi Yommarat, Si Lom, Bang Rak, Bangkok",
+  "stars": 1,
+  "cuisine": "Thai",
+  "rating": 4.3,
+  "reviews": 307,
+  "dinner": 4290,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.samrubsamrubthai.com",
+  "lat": 13.7268938,
+  "lng": 100.5373823,
+  "placeId": "ChIJP-vfELmZ4jARGlXpoG1esoU"
+}

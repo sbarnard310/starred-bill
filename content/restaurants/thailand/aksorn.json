@@ -1,0 +1,18 @@
+{
+  "name": "Aksorn",
+  "city": "bangkok",
+  "area": "Bang Rak",
+  "areaTh": "บางรัก",
+  "address": "5F, Central: The Original Store, 1266 Charoenkrung Road, Bang Rak, Bangkok",
+  "stars": 1,
+  "cuisine": "Thai",
+  "dinner": 4150,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.aksornbkk.com",
+  "lat": 13.7244904,
+  "lng": 100.516235
+}

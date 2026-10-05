@@ -1,0 +1,10 @@
+{
+  "id": "bangkok",
+  "type": "city",
+  "parent": "thailand",
+  "name": "Bangkok",
+  "nameTh": "กรุงเทพฯ",
+  "inSentenceTh": "ในกรุงเทพฯ",
+  "intro": "Includes the two starred restaurants in Pak Kret, Nonthaburi, just north of the city, which the MICHELIN Guide counts with Bangkok. Prices are in Thai baht (฿), with a switch to see them in pounds, euros or US dollars; “++” in a note means 10% service and 7% VAT are added. Prices checked October 2026.",
+  "introTh": "รวมร้านติดดาวสองร้านที่ปากเกร็ด นนทบุรี ทางเหนือของเมือง ซึ่งมิชลิน ไกด์นับรวมกับกรุงเทพฯ ราคาเป็นเงินบาท (฿) และกดดูเป็นปอนด์ ยูโร หรือดอลลาร์สหรัฐได้ “++” ในหมายเหตุหมายถึงบวกค่าบริการ 10% และภาษีมูลค่าเพิ่ม 7% ตรวจสอบราคาเมื่อเดือนตุลาคม 2026"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Coda",
+  "city": "bangkok",
+  "area": "Pathum Wan",
+  "areaTh": "ปทุมวัน",
+  "address": "130-132 Wireless Road, Lumphini, Pathum Wan, Bangkok",
+  "stars": 1,
+  "cuisine": "Thai contemporary",
+  "rating": 4.7,
+  "reviews": 384,
+  "dinner": 3490,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "lat": 13.7360104,
+  "lng": 100.5460976,
+  "placeId": "ChIJr81GL1ef4jARIBWQ8vluIr4"
+}

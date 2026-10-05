@@ -1,0 +1,20 @@
+{
+  "name": "Suan Thip",
+  "city": "bangkok",
+  "area": "Pak Kret, Nonthaburi",
+  "areaTh": "ปากเกร็ด นนทบุรี",
+  "address": "17/9 Mu 7, Sukhaprachasan 2 Road, Bang Phut, Pak Kret, Nonthaburi",
+  "stars": 1,
+  "cuisine": "Thai",
+  "rating": 4.5,
+  "reviews": 1210,
+  "dinner": 1000,
+  "dinnerType": "spend",
+  "dinnerNote": "À la carte; typical spend THB 500–1,000",
+  "dinnerNoteTh": "สั่งตามเมนู ค่าใช้จ่ายโดยทั่วไป 500–1,000 บาท",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "lat": 13.9270623,
+  "lng": 100.5022228,
+  "placeId": "ChIJAQAAAACP4jAR9UqTqNPLPsA"
+}

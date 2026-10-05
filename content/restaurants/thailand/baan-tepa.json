@@ -1,0 +1,21 @@
+{
+  "name": "Baan Tepa",
+  "city": "bangkok",
+  "area": "Bang Kapi",
+  "areaTh": "บางกะปิ",
+  "address": "561 Ramkhamhaeng Road, Hua Mak, Bang Kapi, Bangkok",
+  "stars": 2,
+  "cuisine": "Thai contemporary",
+  "rating": 4.7,
+  "reviews": 446,
+  "dinner": 6200,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.baantepabkk.com",
+  "lat": 13.7608267,
+  "lng": 100.6263514,
+  "placeId": "ChIJg1tidYdhHTER4NNOidyhVvc"
+}

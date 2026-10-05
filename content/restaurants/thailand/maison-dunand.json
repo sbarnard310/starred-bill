@@ -1,0 +1,21 @@
+{
+  "name": "Maison Dunand",
+  "city": "bangkok",
+  "area": "Bang Rak",
+  "areaTh": "บางรัก",
+  "address": "55 Soi Sathon 10, Si Lom, Bang Rak, Bangkok",
+  "stars": 1,
+  "cuisine": "Alpine",
+  "rating": 4.8,
+  "reviews": 358,
+  "dinner": 2950,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteTh": "เมนูชิม",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.maisondunand.com",
+  "lat": 13.722902,
+  "lng": 100.5274932,
+  "placeId": "ChIJP2w4zdmf4jARdiVjvr2ZPWk"
+}

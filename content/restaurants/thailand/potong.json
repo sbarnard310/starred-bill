@@ -1,0 +1,21 @@
+{
+  "name": "POTONG",
+  "city": "bangkok",
+  "area": "Samphanthawong",
+  "areaTh": "สัมพันธวงศ์",
+  "address": "422 Vanich 1 Road, Samphanthawong, Bangkok",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.6,
+  "reviews": 704,
+  "dinner": 6300,
+  "dinnerType": "menu",
+  "dinnerNote": "“5 senses, 5 elements” tasting menu",
+  "dinnerNoteTh": "เมนูชิม “5 senses, 5 elements”",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.restaurantpotong.com",
+  "lat": 13.7391592,
+  "lng": 100.5084546,
+  "placeId": "ChIJd7grWxeZ4jAR8KwClMpGmHo"
+}

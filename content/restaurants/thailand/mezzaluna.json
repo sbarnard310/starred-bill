@@ -1,0 +1,21 @@
+{
+  "name": "Mezzaluna",
+  "city": "bangkok",
+  "area": "Bang Rak",
+  "areaTh": "บางรัก",
+  "address": "65F, Tower Club at Lebua, 1055 Silom Road, Si Lom, Bang Rak, Bangkok",
+  "stars": 2,
+  "cuisine": "French Contemporary",
+  "rating": 4.5,
+  "reviews": 369,
+  "dinner": 8000,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://lebua.com/restaurants/mezzaluna",
+  "lat": 13.7221259,
+  "lng": 100.516932,
+  "placeId": "ChIJmXuobsWY4jARc3EtJwWV21s"
+}

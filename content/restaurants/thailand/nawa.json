@@ -1,0 +1,21 @@
+{
+  "name": "NAWA",
+  "city": "bangkok",
+  "area": "Vadhana",
+  "areaTh": "วัฒนา",
+  "address": "1F, Parklane, 18 Soi Sukhumvit 61, Khlong Tan Nuea, Vadhana, Bangkok",
+  "stars": 1,
+  "cuisine": "Thai contemporary",
+  "rating": 4.8,
+  "reviews": 410,
+  "dinner": 3800,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.nawathaicuisine.com",
+  "lat": 13.7232579,
+  "lng": 100.5838816,
+  "placeId": "ChIJBcsS30qf4jARijfxeJq66YI"
+}

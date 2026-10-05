@@ -1,0 +1,21 @@
+{
+  "name": "Sorn",
+  "city": "bangkok",
+  "area": "Khlong Toei",
+  "areaTh": "คลองเตย",
+  "address": "56 Soi Sukhumvit 26, Khlong Tan, Khlong Toei, Bangkok",
+  "stars": 3,
+  "cuisine": "Southern Thai",
+  "rating": 4.6,
+  "reviews": 612,
+  "dinner": 7800,
+  "dinnerType": "menu",
+  "dinnerNote": "Southern Thai tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิมอาหารใต้ ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.sornfinesouthern.com",
+  "lat": 13.7231336,
+  "lng": 100.5684937,
+  "placeId": "ChIJWfYJ3QWf4jAR9erXv7kK7sA"
+}

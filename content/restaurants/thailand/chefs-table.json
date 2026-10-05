@@ -1,0 +1,21 @@
+{
+  "name": "Chef's Table",
+  "city": "bangkok",
+  "area": "Bang Rak",
+  "areaTh": "บางรัก",
+  "address": "61F, Tower Club at Lebua, 1055 Silom Road, Si Lom, Bang Rak, Bangkok",
+  "stars": 2,
+  "cuisine": "French Contemporary",
+  "rating": 4.6,
+  "reviews": 223,
+  "dinner": 9200,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.lebua.com/restaurants/chefs-table",
+  "lat": 13.7215006,
+  "lng": 100.5171696,
+  "placeId": "ChIJkbyJIMeZ4jARgc1-140HJkU"
+}

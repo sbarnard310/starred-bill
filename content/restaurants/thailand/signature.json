@@ -1,0 +1,22 @@
+{
+  "name": "Signature",
+  "city": "bangkok",
+  "area": "Ratchathewi",
+  "areaTh": "ราชเทวี",
+  "address": "11F, VIE Hotel Bangkok - MGallery Collection, 117/39-40 Phayathai Road, Thanon Phetchaburi, Ratchathewi",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.8,
+  "reviews": 191,
+  "dinner": 5800,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu (Flower Bouquet, 5 courses, THB 4,800)",
+  "dinnerNoteTh": "เมนูชิม (Flower Bouquet 5 คอร์ส 4,800 บาท)",
+  "wine": 3200,
+  "sourceType": "site",
+  "source": "https://www.signaturebangkok.com",
+  "website": "https://www.signaturebangkok.com",
+  "lat": 13.7505406,
+  "lng": 100.5319672,
+  "placeId": "ChIJRxVBdTyf4jARGLWgEHjEIq4"
+}

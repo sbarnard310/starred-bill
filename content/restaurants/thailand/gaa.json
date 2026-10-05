@@ -1,0 +1,21 @@
+{
+  "name": "Gaa",
+  "city": "bangkok",
+  "area": "Vadhana",
+  "areaTh": "วัฒนา",
+  "address": "46/1 Sukhumvit 53, Khlong Tan Nuea, Vadhana, Bangkok",
+  "stars": 2,
+  "cuisine": "Indian",
+  "rating": 4.4,
+  "reviews": 876,
+  "dinner": 6200,
+  "dinnerType": "menu",
+  "dinnerNote": "Gaa Experience tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม Gaa Experience ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.gaabkk.com",
+  "lat": 13.72725,
+  "lng": 100.57828,
+  "placeId": "ChIJ9Rn3Stqe4jARvC9rgWzu31Q"
+}

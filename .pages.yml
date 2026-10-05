@@ -41,6 +41,9 @@ content:
         label: Name in Korean
         description: For restaurants in South Korea, e.g. 밍글스.
         type: string
+      - name: nameTh
+        label: Name in Thai
+        type: string
       - name: city
         label: City
         description: The city it's in. It then also appears on that city's region and country pages, and any collection that includes them.
@@ -69,6 +72,10 @@ content:
       - name: areaIt
         label: Area in Italian
         description: Only for places offered in Italian.
+        type: string
+      - name: areaTh
+        label: Area in Thai
+        description: Only for places offered in Thai.
         type: string
       - name: areaDa
         label: Area in Danish
@@ -142,6 +149,9 @@ content:
       - name: changeNoteIt
         label: Star change note in Italian
         type: string
+      - name: changeNoteTh
+        label: Star change note in Thai
+        type: string
       - name: changeNoteDa
         label: Star change note in Danish
         type: string
@@ -202,6 +212,9 @@ content:
         type: string
       - name: dinnerNoteIt
         label: Dinner note in Italian
+        type: string
+      - name: dinnerNoteTh
+        label: Dinner note in Thai
         type: string
       - name: dinnerNoteDa
         label: Dinner note in Danish
@@ -267,6 +280,9 @@ content:
         type: string
       - name: lunchNoteIt
         label: Lunch note in Italian
+        type: string
+      - name: lunchNoteTh
+        label: Lunch note in Thai
         type: string
       - name: lunchNoteDa
         label: Lunch note in Danish
@@ -336,6 +352,9 @@ content:
         type: string
       - name: statusNoteIt
         label: Status note in Italian
+        type: string
+      - name: statusNoteTh
+        label: Status note in Thai
         type: string
       - name: statusNoteDa
         label: Status note in Danish
@@ -425,6 +444,9 @@ content:
       - name: nameIt
         label: Name in Italian
         type: string
+      - name: nameTh
+        label: Name in Thai
+        type: string
       - name: nameDa
         label: Name in Danish
         type: string
@@ -442,7 +464,7 @@ content:
         type: string
       - name: languages
         label: Languages offered
-        description: The language buttons on this page and the pages inside it. Leave empty for English only. Otherwise English plus the main official language: Chinese (and Cantonese) for Taiwan, Hong Kong and Macau, French for France and Monaco, Japanese for Japan, Spanish for Spain, Italian for Italy, Korean for South Korea, Danish for Denmark, Icelandic for Iceland, Catalan for Andorra.
+        description: The language buttons on this page and the pages inside it. Leave empty for English only. Otherwise English plus the main official language: Chinese (and Cantonese) for Taiwan, Hong Kong and Macau, French for France and Monaco, Japanese for Japan, Spanish for Spain, Italian for Italy, Korean for South Korea, Danish for Denmark, Icelandic for Iceland, Catalan for Andorra, Thai for Thailand.
         type: select
         options:
           multiple: true
@@ -458,6 +480,7 @@ content:
             - { value: da, label: "Dansk (Danish)" }
             - { value: is, label: "Íslenska (Icelandic)" }
             - { value: ca, label: "Català (Catalan)" }
+            - { value: th, label: "ไทย (Thai)" }
       - name: parent
         label: Inside (regions, cities and districts)
         description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom. A district sits inside a city, e.g. Manhattan inside New York.
@@ -503,6 +526,10 @@ content:
         label: Name mid-sentence in Italian
         description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
         type: string
+      - name: inSentenceTh
+        label: Name mid-sentence in Thai
+        description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
+        type: string
       - name: inSentenceDa
         label: Name mid-sentence in Danish
         description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
@@ -538,6 +565,9 @@ content:
       - name: introIt
         label: "Introduction (Italian)"
         type: text
+      - name: introTh
+        label: "Introduction (Thai)"
+        type: text
       - name: introDa
         label: "Introduction (Danish)"
         type: text
@@ -572,6 +602,9 @@ content:
       - name: serviceTextIt
         label: "Method: per person, before service (Italian)"
         type: text
+      - name: serviceTextTh
+        label: "Method: per person, before service (Thai)"
+        type: text
       - name: serviceTextDa
         label: "Method: per person, before service (Danish)"
         type: text
@@ -604,6 +637,9 @@ content:
         type: text
       - name: sourcesTextIt
         label: "Method: where prices come from (Italian)"
+        type: text
+      - name: sourcesTextTh
+        label: "Method: where prices come from (Thai)"
         type: text
       - name: sourcesTextDa
         label: "Method: where prices come from (Danish)"
@@ -638,6 +674,9 @@ content:
         type: text
       - name: starsTextIt
         label: "Method: stars and Google rating (Italian)"
+        type: text
+      - name: starsTextTh
+        label: "Method: stars and Google rating (Thai)"
         type: text
       - name: starsTextDa
         label: "Method: stars and Google rating (Danish)"

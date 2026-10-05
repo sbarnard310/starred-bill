@@ -1,0 +1,21 @@
+{
+  "name": "Haoma",
+  "city": "bangkok",
+  "area": "Vadhana",
+  "areaTh": "วัฒนา",
+  "address": "231/3 Soi Sukhumvit 31, Khlong Toei Nuea, Vadhana, Bangkok",
+  "stars": 1,
+  "cuisine": "Indian",
+  "rating": 4.6,
+  "reviews": 531,
+  "dinner": 4990,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "press",
+  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "website": "https://www.haoma.dk",
+  "lat": 13.7435066,
+  "lng": 100.5676933,
+  "placeId": "ChIJ8c3kP_qe4jARjg8dTyubyiA"
+}

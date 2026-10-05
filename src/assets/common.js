@@ -2256,4 +2256,10 @@ if (NOTRACK_SET === "1" || NOTRACK_SET === "0") {
 }
 if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
   window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+  // When an update takes over a page that an older version was already running (e.g. the home-screen app reopened
+  // after an update), reload once so the page and its files match. A first visit has no older version, so it doesn't reload.
+  if (navigator.serviceWorker.controller) {
+    let reloaded = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => { if (!reloaded) { reloaded = true; location.reload(); } });
+  }
 }

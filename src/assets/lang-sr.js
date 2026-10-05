@@ -39,6 +39,8 @@
     reviews: "Рецензије: {n}", ratingAria: "Оцена на Google-у {r} од 5",
     srcSite: "Сајт ресторана", srcPress: "Извор", srcTitle: "Одакле је ова цена",
     perMain: "по главном јелу", typicalSpend: "уобичајени рачун", notListed: "Није наведено",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Сто за 1", rcptDinnerOnly: "Само вечера", rcptNoPairing: "винска пратња није наведена", rcptPlusWine: "+ вино {p}", rcptDinnerWine: "Вечера + вино", rcptLunchWine: "Ручак + вино", rcptChecked: "Проверено {d}", rcptIncl: "По особи, услуга урачуната", rcptPlus: "По особи, ++ (услуга и порез се додају)", rcptTaxTip: "По особи, без пореза и напојнице", rcptTip: "По особи, без напојнице", rcptTax: "По особи, порез урачунат",
     findOnMaps: "Пронађите {name} на Google мапама", findOnMapsTitle: "На Google мапама",
     showOnly: "Прикажи само: {cat}",
     chgNew: "Ново", chgTitle: "{note} – Мишленов водич, {date}",

@@ -40,6 +40,8 @@
     reviews: "{n} đánh giá", ratingAria: "Điểm Google {r} trên 5",
     srcSite: "Trang web nhà hàng", srcPress: "Nguồn", srcTitle: "Giá này lấy từ đâu",
     perMain: "mỗi món chính", typicalSpend: "chi tiêu thông thường", notListed: "Chưa công bố",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Bàn cho 1 người", rcptDinnerOnly: "Chỉ phục vụ bữa tối", rcptNoPairing: "không có rượu vang kết hợp", rcptPlusWine: "+ rượu {p}", rcptDinnerWine: "Bữa tối + rượu", rcptLunchWine: "Bữa trưa + rượu", rcptChecked: "Kiểm tra {d}", rcptIncl: "Mỗi người, đã gồm phí phục vụ", rcptPlus: "Mỗi người, ++ (cộng phí phục vụ và thuế)", rcptTaxTip: "Mỗi người, chưa gồm thuế và tiền boa", rcptTip: "Mỗi người, chưa gồm tiền boa", rcptTax: "Mỗi người, đã gồm thuế",
     findOnMaps: "Tìm {name} trên Google Maps", findOnMapsTitle: "Tìm trên Google Maps",
     showOnly: "Chỉ hiện {cat}",
     chgNew: "Mới", chgTitle: "{note} trong Cẩm nang MICHELIN {date}",

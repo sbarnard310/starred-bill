@@ -37,6 +37,8 @@
     reviews: "{n} arvustust", ratingAria: "Google'i hinnang {r}/5",
     srcSite: "Restorani koduleht", srcPress: "Allikas", srcTitle: "Kust see hind pärineb",
     perMain: "põhiroa eest", typicalSpend: "tavaline arve", notListed: "Pole märgitud",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Laud 1-le", rcptDinnerOnly: "Ainult õhtusöök", rcptNoPairing: "veinipaketti pole märgitud", rcptPlusWine: "+ vein {p}", rcptDinnerWine: "Õhtusöök + vein", rcptLunchWine: "Lõuna + vein", rcptChecked: "Kontrollitud {d}", rcptIncl: "Inimese kohta, teenustasuga", rcptPlus: "Inimese kohta, ++ (lisandub teenustasu ja maks)", rcptTaxTip: "Inimese kohta, ilma maksu ja jootrahata", rcptTip: "Inimese kohta, ilma jootrahata", rcptTax: "Inimese kohta, maksuga",
     findOnMaps: "Leia {name} Google Mapsist", findOnMapsTitle: "Leia Google Mapsist",
     showOnly: "Näita ainult: {cat}",
     chgNew: "Uus", chgTitle: "{note} – Michelini teejuht, {date}",

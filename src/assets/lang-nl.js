@@ -45,6 +45,8 @@
     reviews: "{n} recensies", ratingAria: "Google-score {r} van 5",
     srcSite: "Website van het restaurant", srcPress: "Bron", srcTitle: "Waar deze prijs vandaan komt",
     perMain: "per hoofdgerecht", typicalSpend: "gemiddelde rekening", notListed: "Niet vermeld",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Tafel voor 1", rcptDinnerOnly: "Alleen diner", rcptNoPairing: "geen wijnarrangement vermeld", rcptPlusWine: "+ wijn {p}", rcptDinnerWine: "Diner + wijn", rcptLunchWine: "Lunch + wijn", rcptChecked: "Gecontroleerd {d}", rcptIncl: "Per persoon, inclusief service", rcptPlus: "Per persoon, ++ (service en btw komen erbij)", rcptTaxTip: "Per persoon, zonder belasting en fooi", rcptTip: "Per persoon, zonder fooi", rcptTax: "Per persoon, inclusief btw",
     findOnMaps: "{name} op Google Maps", findOnMapsTitle: "Op Google Maps",
     showOnly: "Alleen {cat} tonen",
     chgNew: "Nieuw", chgTitle: "{note} in de Michelingids van {date}",

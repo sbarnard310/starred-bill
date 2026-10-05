@@ -44,6 +44,8 @@
     reviews: "{n} 条评价", ratingAria: "Google 评分 {r}（满分 5）",
     srcSite: "餐厅官网", srcPress: "来源", srcTitle: "价格来源",
     perMain: "每道主菜", typicalSpend: "人均消费", notListed: "未公布",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "仅供应晚餐", rcptNoPairing: "未列出配酒", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚餐 + 配酒", rcptLunchWine: "午餐 + 配酒", rcptChecked: "{d} 核实", rcptIncl: "人均价格，含服务费", rcptPlus: "人均价格，另加 ++（服务费及税）", rcptTaxTip: "人均价格，不含税及小费", rcptTip: "人均价格，不含小费", rcptTax: "人均价格，含税",
     findOnMaps: "在 Google 地图查看{name}", findOnMapsTitle: "在 Google 地图查看",
     showOnly: "只显示{cat}",
     chgNew: "新晋", chgTitle: "{date}米其林指南：{note}",

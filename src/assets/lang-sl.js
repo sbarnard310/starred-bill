@@ -40,6 +40,8 @@
     reviews: "Mnenja: {n}", ratingAria: "Ocena Google {r} od 5",
     srcSite: "Spletna stran restavracije", srcPress: "Vir", srcTitle: "Od kod je ta cena",
     perMain: "na glavno jed", typicalSpend: "običajni račun", notListed: "Ni navedeno",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Miza za 1", rcptDinnerOnly: "Samo večerja", rcptNoPairing: "vinska spremljava ni navedena", rcptPlusWine: "+ vino {p}", rcptDinnerWine: "Večerja + vino", rcptLunchWine: "Kosilo + vino", rcptChecked: "Preverjeno {d}", rcptIncl: "Na osebo, s postrežnino", rcptPlus: "Na osebo, ++ (postrežnina in davek posebej)", rcptTaxTip: "Na osebo, brez davka in napitnine", rcptTip: "Na osebo, brez napitnine", rcptTax: "Na osebo, z davkom",
     findOnMaps: "Poiščite {name} na Google Zemljevidih", findOnMapsTitle: "Na Google Zemljevidih",
     showOnly: "Prikaži samo: {cat}",
     chgNew: "Novo", chgTitle: "{note} – vodnik Michelin, {date}",

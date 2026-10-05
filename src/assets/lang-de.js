@@ -46,6 +46,8 @@
     reviews: "{n} Bewertungen", ratingAria: "Google-Bewertung {r} von 5",
     srcSite: "Website des Restaurants", srcPress: "Quelle", srcTitle: "Woher dieser Preis stammt",
     perMain: "pro Hauptgang", typicalSpend: "typische Rechnung", notListed: "Nicht angegeben",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Tisch für 1", rcptDinnerOnly: "Nur abends", rcptNoPairing: "keine Weinbegleitung angegeben", rcptPlusWine: "+ Wein {p}", rcptDinnerWine: "Abendessen + Wein", rcptLunchWine: "Mittagessen + Wein", rcptChecked: "Geprüft {d}", rcptIncl: "Pro Person, inkl. Service", rcptPlus: "Pro Person, ++ (zzgl. Service und Steuer)", rcptTaxTip: "Pro Person, ohne Steuer und Trinkgeld", rcptTip: "Pro Person, ohne Trinkgeld", rcptTax: "Pro Person, inkl. Steuer",
     findOnMaps: "{name} in Google Maps finden", findOnMapsTitle: "In Google Maps finden",
     showOnly: "Nur {cat} anzeigen",
     chgNew: "Neu", chgTitle: "{note} im Guide Michelin {date}",

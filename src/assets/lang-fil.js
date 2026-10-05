@@ -40,6 +40,8 @@
     reviews: "{n} review", ratingAria: "Rating sa Google na {r} sa 5",
     srcSite: "Website ng restawran", srcPress: "Pinagmulan", srcTitle: "Saan galing ang presyong ito",
     perMain: "bawat main", typicalSpend: "karaniwang gastos", notListed: "Hindi nakalista",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Mesa para sa 1", rcptDinnerOnly: "Hapunan lang", rcptNoPairing: "walang nakalistang wine pairing", rcptPlusWine: "+ alak {p}", rcptDinnerWine: "Hapunan + alak", rcptLunchWine: "Tanghalian + alak", rcptChecked: "Sinuri {d}", rcptIncl: "Bawat tao, kasama ang serbisyo", rcptPlus: "Bawat tao, ++ (dagdag ang service at buwis)", rcptTaxTip: "Bawat tao, bago ang buwis at tip", rcptTip: "Bawat tao, bago ang tip", rcptTax: "Bawat tao, kasama ang buwis",
     findOnMaps: "Hanapin ang {name} sa Google Maps", findOnMapsTitle: "Hanapin sa Google Maps",
     showOnly: "Ipakita lang ang {cat}",
     chgNew: "Bago", chgTitle: "{note} sa MICHELIN Guide ng {date}",

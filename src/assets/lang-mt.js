@@ -39,6 +39,8 @@
     reviews: "{n} reviżjonijiet", ratingAria: "Klassifika Google {r} minn 5",
     srcSite: "Is-sit tar-ristorant", srcPress: "Sors", srcTitle: "Minn fejn ġej dan il-prezz",
     perMain: "għal kull platt prinċipali", typicalSpend: "kont tipiku", notListed: "Mhux imniżżel",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Mejda għal 1", rcptDinnerOnly: "Pranzu biss", rcptNoPairing: "l-ebda inbid magħżul", rcptPlusWine: "+ inbid {p}", rcptDinnerWine: "Pranzu + inbid", rcptLunchWine: "Nofsinhar + inbid", rcptChecked: "Iċċekkjat {d}", rcptIncl: "Għal kull persuna, servizz inkluż", rcptPlus: "Għal kull persuna, ++ (servizz u taxxa barra)", rcptTaxTip: "Għal kull persuna, mingħajr taxxa u tip", rcptTip: "Għal kull persuna, mingħajr tip", rcptTax: "Għal kull persuna, taxxa inkluża",
     findOnMaps: "Sib lil {name} fuq Google Maps", findOnMapsTitle: "Sib fuq Google Maps",
     showOnly: "Uri biss: {cat}",
     chgNew: "Ġdid", chgTitle: "{note} – Gwida Michelin, {date}",

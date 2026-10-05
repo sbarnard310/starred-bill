@@ -41,6 +41,8 @@
     reviews: "{n} ulasan", ratingAria: "Penilaian Google {r} daripada 5",
     srcSite: "Laman web restoran", srcPress: "Sumber", srcTitle: "Dari mana harga ini datang",
     perMain: "setiap hidangan utama", typicalSpend: "belanja biasa", notListed: "Tidak dinyatakan",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Meja untuk 1", rcptDinnerOnly: "Makan malam sahaja", rcptNoPairing: "tiada padanan wain disenaraikan", rcptPlusWine: "+ wain {p}", rcptDinnerWine: "Makan malam + wain", rcptLunchWine: "Makan tengah hari + wain", rcptChecked: "Disemak {d}", rcptIncl: "Seorang, termasuk perkhidmatan", rcptPlus: "Seorang, ++ (caj perkhidmatan dan cukai ditambah)", rcptTaxTip: "Seorang, sebelum cukai dan tip", rcptTip: "Seorang, sebelum tip", rcptTax: "Seorang, termasuk cukai",
     findOnMaps: "Cari {name} di Peta Google", findOnMapsTitle: "Cari di Peta Google",
     showOnly: "Tunjuk {cat} sahaja",
     chgNew: "Baharu", chgTitle: "{note} dalam Panduan Michelin {date}",

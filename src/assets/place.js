@@ -14,7 +14,7 @@ const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !
 pageVars = () => ({ place: pick(PAGE, "name"), placeIn: cjk() || ko() ? pick(PAGE, "name") : PAGE["inSentence" + (LANGS[LANG].suffixes[0] || "")] || PAGE.inSentence || PAGE.name });
 
 const EXPLORE_SHOWN = 6;
-const state = { exploreOpen: new Set(), meal: "dinner", activeCat: "All", activeStars: 0, diet: "", wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
+const state = { openRow: null, exploreOpen: new Set(), meal: "dinner", activeCat: "All", activeStars: 0, diet: "", wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
   currency: PAGE.currency, rates: Object.fromEntries(Object.entries(DATA.currencies).map(([k, v]) => [k, v.perUSD])), rateDate: new Date(DATA.rateDate + "T12:00:00Z") };
 
 // ---------- Helpers ----------
@@ -307,7 +307,7 @@ function nameCell(r) {
   const initial = (nameOf(r).replace(/^(The|Restaurant)\s+/i, "")[0] || "?").toUpperCase();
   const thumb = '<span class="thumb" aria-hidden="true"' + (r.placeId && !r.status ? ' data-pid="' + esc(r.placeId) + '" data-name="' + esc(nameOf(r)) + '"' : "") + ">" + esc(initial) + "</span>";
   const alt = altNameOf(r);
-  return '<span class="name" role="cell">' + thumb + '<span class="name-text">' + esc(nameOf(r)) +
+  return '<span class="name" role="cell">' + thumb + '<span class="name-text"><span class="nm-txt">' + esc(nameOf(r)) + "</span>" +
     (r.status === "closed" ? "" : '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("findOnMaps", { name: nameOf(r) })) + '" title="' + esc(t("findOnMapsTitle")) + '"><svg aria-hidden="true"><use href="#pin"/></svg></a>') +
     (alt ? '<span class="alt-name" lang="' + altLangOf(r) + '">' + esc(alt) + "</span>" : "") +
     (areaOf(r) ? '<span class="area">' + esc(areaOf(r)) + "</span>" : "") +
@@ -315,6 +315,47 @@ function nameCell(r) {
     (r.status ? "" : (r.diets || []).some((d) => BADGES.some(([b]) => b === d)) ? '<span class="diet-badges">' + dietBadges(r) + "</span>" : "") +
     '<span class="credit"></span></span></span>';
 }
+// Phones: each restaurant is a two-line row (name and area · cuisine; stars and price) that opens to show the rest.
+// On computers this cell is hidden and the full table shows instead.
+function priceHtml(p, type, r, missing) {
+  return p == null ? '<span class="num muted">–</span>' + (missing ? '<span class="note">' + t(missing) + "</span>" : "")
+    : '<span class="num">' + money(p, r) + "</span>" + (type === "main" ? '<span class="note">' + t("perMain") + "</span>" : type === "spend" ? '<span class="note">' + t("typicalSpend") + "</span>" : "");
+}
+function summaryCell(r) {
+  const former = !!r.status;
+  const label = { lost: t("stLost"), closed: t("stClosed"), changed: t("stChanged") };
+  const sub = former ? '<span class="status-pill status-' + esc(r.status) + '">' + (label[r.status] || label.changed) + "</span>" + esc(areaOf(r) || "")
+    : (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc([areaOf(r), cuisineOf(r)].filter(Boolean).join(" · "));
+  const right = former ? '<span class="sum-stars">' + starIcons(r.formerStars) + "</span>"
+    : '<span class="sum-stars">' + (r.change ? '<span class="chg-' + (r.change === "down" ? "down" : "up") + '" aria-hidden="true">' + (r.change === "down" ? "▼" : "▲") + "</span>" : "") + starIcons(r.stars) + "</span>" +
+      '<span class="sum-price">' + priceHtml(priceOf(r), typeOf(r), r, L() && r.noLunch ? "noLunch" : "notListed") + "</span>";
+  return '<span class="sum-cell" role="cell"><button type="button" class="sum" data-row="' + esc(r.id) + '" aria-expanded="' + (state.openRow === r.id) + '">' +
+    '<span class="sum-name">' + esc(nameOf(r)) + '</span><span class="sum-sub">' + sub + "</span>" + right + "</button></span>";
+}
+// Inside an opened row: the other meal's price.
+function otherMealCell(r) {
+  const lunch = !L();
+  return '<span class="other-meal" role="cell"><span class="mlabel">' + t(lunch ? "mealLunch" : "mealDinner") + "</span>" +
+    priceHtml(shown(r, lunch ? (r.noLunch ? null : r.lunch) : r.dinner), lunch ? (r.lunchType || "menu") : r.dinnerType, r, lunch && r.noLunch ? "noLunch" : "") + "</span>";
+}
+// Inside an opened row on phones: the cuisine (tap to show only that cuisine), Google Maps and "been there".
+const actsCell = (r) => '<span class="acts-cell" role="cell">' +
+  (r.status ? '<span class="tag">' + esc(cuisineOf(r)) + "</span>" : '<button type="button" class="tag" data-cat="' + esc(r.cuisine) + '">' + esc(cuisineOf(r)) + "</button>") +
+  (r.status === "closed" ? "" : '<a class="maps-pill" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("findOnMaps", { name: nameOf(r) })) + '"><svg aria-hidden="true"><use href="#pin"/></svg>Google Maps</a>') +
+  beenButton(r) + "</span>";
+function toggleRow(btn) {
+  const row = btn.closest(".row"), id = btn.dataset.row, before = row.getBoundingClientRect().top;
+  const open = state.openRow !== id;
+  document.querySelectorAll("#ledger .row.open").forEach((x) => { x.classList.remove("open"); x.querySelector(".sum").setAttribute("aria-expanded", "false"); });
+  state.openRow = open ? id : null;
+  row.classList.toggle("open", open);
+  btn.setAttribute("aria-expanded", String(open));
+  // Closing a row above this one would pull it up the screen, so keep it where the finger was.
+  const moved = row.getBoundingClientRect().top - before;
+  if (moved) window.scrollBy(0, moved);
+}
+document.addEventListener("click", (e) => { const b = e.target.closest("#ledger .sum"); if (b) toggleRow(b); });
+
 function renderLedger() {
   const rows = filtered();
   const max = Math.max(...RESTAURANTS.filter(isMenu).map(priceOf), 1);
@@ -325,7 +366,7 @@ function renderLedger() {
   }
   rows.forEach((r) => {
     const on = onWishlist(r);
-    html += '<div class="row' + (L() && r.noLunch ? " nolunch" : "") + '" role="row">' + nameCell(r) +
+    html += '<div class="row' + (L() && r.noLunch ? " nolunch" : "") + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
       '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cuisine) + '" title="' + esc(t("showOnly", { cat: cuisineOf(r) })) + '">' + esc(cuisineOf(r)) + "</button></span>" +
       '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
       '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + "</span>" : "") : '<span class="num muted">–</span>') + "</span>" +
@@ -335,6 +376,7 @@ function renderLedger() {
         (priceOf(r) == null ? '<span class="num muted">–</span><span class="note">' + t(L() && r.noLunch ? "noLunch" : "notListed") + "</span>"
           : '<span class="num">' + money(priceOf(r), r) + "</span>" + (typeOf(r) === "main" ? '<span class="note">' + t("perMain") + "</span>" : typeOf(r) === "spend" ? '<span class="note">' + t("typicalSpend") + "</span>" : "")) + "</span></span>" +
       '<span class="wine num' + (wineOf(r) ? "" : " muted") + '" role="cell"><span class="mlabel">' + t("hWine") + "</span>" + (wineOf(r) ? money(wineOf(r), r) : "–") + "</span>" +
+      otherMealCell(r) + actsCell(r) +
       '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
       "</div>";
   });
@@ -343,13 +385,13 @@ function renderLedger() {
     const label = { lost: t("stLost"), closed: t("stClosed"), changed: t("stChanged") };
     html += '<div class="row divider" role="row"><span role="cell"><strong>' + t("formerTitle") + '</strong><span class="note">' + t("formerNote") + "</span></span></div>";
     former.sort((a, b) => nameOf(a).localeCompare(nameOf(b))).forEach((r) => {
-      html += '<div class="row former" role="row">' + nameCell(r) +
+      html += '<div class="row former' + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
         '<span class="cat" role="cell"><span class="tag">' + esc(cuisineOf(r)) + "</span></span>" +
         '<span class="stars-cell" role="cell">' + starIcons(r.formerStars) + '<span class="note">' + t("formerly") + "</span></span>" +
         '<span class="rating-cell" role="cell"><span class="num muted">–</span></span>' +
         '<span class="notes" role="cell"><span class="status-pill status-' + esc(r.status) + '">' + (r.change === "down" ? "▼ " : "") + (label[r.status] || label.changed) + "</span>" + esc(pick(r, "statusNote")) + "</span>" +
         '<span class="dinner" role="cell"><span class="dprice"><span class="num muted">–</span></span></span>' +
-        '<span class="wine num muted" role="cell">–</span><span class="wish-cell" role="cell">' + beenButton(r) + "</span></div>";
+        '<span class="wine num muted" role="cell">–</span>' + actsCell(r) + '<span class="wish-cell" role="cell">' + beenButton(r) + "</span></div>";
     });
   }
   $("ledger").innerHTML = html;
@@ -548,7 +590,7 @@ function toast(msg, undo) {
 function beenButton(r) {
   const on = onBeen(r);
   return '<button type="button" class="been" data-been="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "beenRemove" : "beenAdd", { name: nameOf(r) })) +
-    '" title="' + esc(t(on ? "beenRemoveT" : "beenAddT")) + '"><svg aria-hidden="true"><use href="#check"/></svg></button>';
+    '" title="' + esc(t(on ? "beenRemoveT" : "beenAddT")) + '"><svg aria-hidden="true"><use href="#check"/></svg><span class="been-lbl" aria-hidden="true">' + esc(t("been")) + "</span></button>";
 }
 function toggleBeen(id) {
   const r = ALL_RESTAURANTS.find((x) => x.id === id);

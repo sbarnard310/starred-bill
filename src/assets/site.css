@@ -349,6 +349,51 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .row .tag { white-space: normal; text-align: left; }
   .mlabel { display: inline; font-family: var(--font-body); font-size: .8rem; color: var(--muted); margin-right: 6px; }
 }
+/* Phones' two-line restaurant rows (summaryCell in place.js) are hidden on bigger screens. */
+.sum-cell, .other-meal, .acts-cell, .been-lbl { display: none; }
+/* Phones: each restaurant is a two-line row (name, area · cuisine; stars, price) that opens when tapped to show the rest. */
+@media (max-width: 720px) {
+  .row:where(:not(.head):not(.divider)) { grid-template-columns: repeat(3, minmax(0, 1fr)) 40px; grid-template-areas: "sum sum sum wish"; gap: 0 8px; padding: 0 6px 0 14px; }
+  .row:where(:not(.head):not(.divider)) > [role="cell"]:where(:not(.sum-cell):not(.wish-cell)) { display: none; }
+  .row .wish-cell { display: contents; }
+  .row .wish-cell .been { display: none; }
+  .row .wish { grid-area: wish; align-self: center; justify-self: end; }
+  .row.open .wish { align-self: start; margin-top: 6px; }
+  .row.open > .sum-cell { align-self: start; }
+  .sum-cell { display: block; grid-area: sum; min-width: 0; }
+  .sum { all: unset; box-sizing: border-box; width: 100%; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name stars" "sub price"; gap: 2px 10px; align-items: center; padding: 10px 0; -webkit-tap-highlight-color: transparent; }
+  .sum:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 6px; }
+  .sum-name { grid-area: name; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sum-sub { grid-area: sub; font-size: .82rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sum-sub .notice, .sum-sub .status-pill { margin: 0 6px 0 0; }
+  .sum-stars { grid-area: stars; justify-self: end; display: inline-flex; gap: 4px; align-items: center; font-size: .7rem; }
+  .sum-stars .stars svg { width: 13px; height: 13px; }
+  .sum-price { grid-area: price; justify-self: end; display: flex; gap: 6px; align-items: baseline; white-space: nowrap; }
+  .sum-price .num { font-weight: 600; font-size: .95rem; }
+  .sum-price .note { order: -1; font-size: .72rem; }
+  .row.former .sum-stars { opacity: .5; filter: grayscale(1); }
+  /* A former restaurant already shows its status in the row; open, it adds the note, and the chef if there is one. */
+  .row.former.open > .name:not(:has(.chef-line, .alt-name)), .row.former.open .notes .status-pill { display: none; }
+  /* An opened row: photo, chef and leaf badges; star change; menu note and source; Google, wine pairing and the other meal; cuisine, Maps, been there. */
+  .row.open { grid-template-areas: "sum sum sum wish" "name name name name" "stars stars stars stars" "notes notes notes notes" "rating wine other other" "acts acts acts acts"; row-gap: 10px; align-items: stretch; padding-bottom: 14px; background: color-mix(in srgb, var(--green-soft) 30%, var(--surface)); }
+  .row.open > .name, .row.open > .notes, .row.open > .acts-cell { display: grid; }
+  .row.open > .stars-cell:has(.chg) { display: block; justify-self: start; }
+  .row.open > .stars-cell .stars { display: none; }
+  .row.open > .stars-cell .chg { margin: 0; }
+  .row.open .nm-txt, .row.open .name .area, .row.open .name .map { display: none; }
+  .row.open > .notes { display: block; }
+  .row.open:not(.former) > .rating-cell, .row.open:not(.former) > .wine, .row.open > .other-meal { display: flex; flex-direction: column; align-items: flex-start; justify-self: stretch; gap: 1px; padding: 6px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); text-align: left; white-space: normal; min-width: 0; }
+  .row.open > .other-meal { grid-area: other; }
+  .row.open .rating-cell .note { display: block; margin: 0; }
+  .row.open .mlabel { display: block; margin: 0; font-size: .72rem; font-weight: 400; }
+  .row.open .wine, .row.open .other-meal .num, .row.open .rating .num { font-weight: 600; }
+  .row.open > .acts-cell { grid-area: acts; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .maps-pill { display: inline-flex; align-items: center; gap: 4px; font-size: .8rem; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--green); text-decoration: none; font-weight: 500; }
+  .maps-pill svg { width: 14px; height: 14px; }
+  .acts-cell .been { width: auto; height: auto; display: inline-flex; gap: 4px; align-items: center; font-size: .8rem; font-weight: 500; padding: 3px 10px 3px 7px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+  .acts-cell .been svg { width: 16px; height: 16px; }
+  .acts-cell .been-lbl { display: inline; }
+}
 @media (max-width: 720px) {
   .wrap { padding-inline: 16px; }
   /* The wishlist shows its heart and count only, so the header fits one row (see "Phone header"). */

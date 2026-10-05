@@ -654,7 +654,7 @@ def build_home():
         "title": "The Starred Bill · Michelin-starred restaurant prices",
         "description": e(f"Compare dinner, lunch and wine pairing prices at {len(starred)} Michelin-starred restaurants in {country_names}, city by city."),
         "canonical": SITE_URL + "/",
-        "eyebrow": "Michelin Guide restaurants, priced",
+        "eyebrow": "Michelin star restaurants, priced",
         "h1": "What a Michelin star <em>costs</em>, city by city.",
         "heroText": "Dinner, lunch and wine pairing prices per person at Michelin-starred restaurants, side by side and linked to where each price came from.",
         "destinations": cards, "data": as_json(data),

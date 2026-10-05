@@ -59,7 +59,7 @@
     mapText: "Nålene følger filtrene i listen over, så velg antall stjerner, et kjøkken eller ønskelisten, så følger kartet etter. Trykk på en nål for å se prisen og få veibeskrivelse.",
     mapWait: "Kartet lastes når du ruller hit.", mapLabel: "Kart over restauranter med Michelinstjerner",
     mapError: "Kartet kunne ikke lastes akkurat nå. Nålen ved hver restaurant i listen åpner den fortsatt i Google Maps.",
-    legendAria: "Hva fargene på nålene betyr", colours: ["Lilla", "Rav", "Grønn"], legendItem: "{c} = {n} Michelinstjerne|{c} = {n} Michelinstjerner",
+    legendAria: "Hva fargene på nålene betyr", legendItem: "{n} Michelinstjerne|{n} Michelinstjerner",
     mapShowing: "Viser {n} restaurant på kartet|Viser {n} restauranter på kartet", mapNone: "Ingen restauranter passer til filtrene",
     nearMe: "Nær meg", nearMeAria: "Vis stjernerestauranter nær meg", nearFinding: "Finner deg…", youAreHere: "Du er her",
     nearTitle: "Nærmest deg", nearAway: "{d} unna", nearWorld: "Se stjernerestauranter nær deg på verdenskartet",

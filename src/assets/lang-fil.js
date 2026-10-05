@@ -59,7 +59,7 @@
     mapText: "Sinusundan ng mga pin ang mga filter sa listahan sa itaas: pumili ng bilang ng bituin, lutuin o ang wishlist mo at susunod ang mapa. I-tap ang pin para sa presyo at direksiyon.",
     mapWait: "Maglo-load ang mapa kapag nag-scroll ka rito.", mapLabel: "Mapa ng mga restawrang may Michelin star",
     mapError: "Hindi ma-load ang mapa ngayon. Bubuksan pa rin sa Google Maps ng pin sa tabi ng bawat restawran sa listahan.",
-    legendAria: "Kahulugan ng kulay ng mga pin", colours: ["Lila", "Amber", "Berde"], legendItem: "{c} = {n} Michelin star",
+    legendAria: "Kahulugan ng kulay ng mga pin", legendItem: "{n} Michelin star",
     mapShowing: "Ipinapakita ang {n} restawran sa mapa", mapNone: "Walang restawrang tugma sa kasalukuyang mga filter",
     nearMe: "Malapit sa akin", nearMeAria: "Ipakita ang mga restawrang may bituin na malapit sa akin", nearFinding: "Hinahanap ka…", youAreHere: "Nandito ka",
     nearTitle: "Pinakamalapit sa iyo", nearAway: "{d} ang layo", nearWorld: "Tingnan sa mapa ng mundo ang mga restawrang may bituin na malapit sa iyo",

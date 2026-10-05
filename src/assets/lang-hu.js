@@ -58,7 +58,7 @@
     mapText: "A gombostűk a fenti lista szűrőit követik: válassz csillagszámot, konyhát vagy a kívánságlistádat, és a térkép igazodik. Koppints egy gombostűre az árért és az útvonalért.",
     mapWait: "A térkép betöltődik, amikor idáig görgetsz.", mapLabel: "A Michelin-csillagos éttermek térképe",
     mapError: "A térképet most nem sikerült betölteni. A lista éttermei melletti gombostű így is megnyitja őket a Google Térképen.",
-    legendAria: "Mit jelentenek a gombostűk színei", colours: ["Lila", "Borostyán", "Zöld"], legendItem: "{c} = {n} Michelin-csillag",
+    legendAria: "Mit jelentenek a gombostűk színei", legendItem: "{n} Michelin-csillag",
     mapShowing: "{n} étterem a térképen", mapNone: "Egy étterem sem felel meg a kiválasztott szűrőknek",
     nearMe: "A közelemben", nearMeAria: "A közelemben lévő csillagos éttermek mutatása", nearFinding: "Helymeghatározás…", youAreHere: "Itt vagy",
     nearTitle: "Legközelebb hozzád", nearAway: "{d} távolságra", nearWorld: "A közeledben lévő csillagos éttermek a világtérképen",

@@ -59,7 +59,7 @@
     mapText: "Kartan nastat seuraavat yllä olevan listan suodattimia: valitse tähtimäärä, keittiö tai toivelistasi, niin kartta päivittyy. Napauta nastaa nähdäksesi hinnan ja reittiohjeet.",
     mapWait: "Kartta latautuu, kun vierität tänne.", mapLabel: "Michelin-tähtiravintoloiden kartta",
     mapError: "Karttaa ei juuri nyt voitu ladata. Listan kunkin ravintolan vieressä oleva nasta avaa sen silti Google Mapsissa.",
-    legendAria: "Mitä nastojen värit tarkoittavat", colours: ["Violetti", "Meripihka", "Vihreä"], legendItem: "{c} = {n} Michelin-tähti|{c} = {n} Michelin-tähteä",
+    legendAria: "Mitä nastojen värit tarkoittavat", legendItem: "{n} Michelin-tähti|{n} Michelin-tähteä",
     mapShowing: "Kartalla {n} ravintola|Kartalla {n} ravintolaa", mapNone: "Yksikään ravintola ei vastaa valittuja suodattimia",
     nearMe: "Lähelläni", nearMeAria: "Näytä lähelläni olevat tähtiravintolat", nearFinding: "Etsitään sijaintiasi…", youAreHere: "Olet tässä",
     nearTitle: "Lähimpänä sinua", nearAway: "{d} päässä", nearWorld: "Katso lähelläsi olevat tähtiravintolat maailmankartalta",

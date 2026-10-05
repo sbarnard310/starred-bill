@@ -56,7 +56,7 @@
     mapText: "Kartes spraudītes seko augstāk esošā saraksta filtriem: izvēlieties zvaigžņu skaitu, virtuvi vai vēlmju sarakstu, un karte pielāgosies. Pieskarieties spraudītei, lai redzētu cenu un maršrutu.",
     mapWait: "Karte ielādēsies, kad ritināsiet līdz šejienei.", mapLabel: "Restorānu ar Michelin zvaigznēm karte",
     mapError: "Karti pašlaik neizdevās ielādēt. Spraudīte pie katra restorāna sarakstā joprojām to atver Google kartēs.",
-    legendAria: "Ko nozīmē spraudīšu krāsas", colours: ["Violeta", "Dzintara", "Zaļa"], legendItem: "{c} = Michelin zvaigznes: {n}",
+    legendAria: "Ko nozīmē spraudīšu krāsas", legendItem: "Michelin zvaigznes: {n}",
     mapShowing: "Restorāni kartē: {n}", mapNone: "Izvēlētajiem filtriem neatbilst neviens restorāns",
     nearMe: "Tuvumā", nearMeAria: "Rādīt tuvumā esošos restorānus ar zvaigznēm", nearFinding: "Meklē jūsu atrašanās vietu…", youAreHere: "Jūs esat šeit",
     nearTitle: "Jums tuvāk", nearAway: "{d} attālumā", nearWorld: "Skatīt tuvumā esošos restorānus ar zvaigznēm pasaules kartē",

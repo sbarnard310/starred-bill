@@ -59,7 +59,7 @@
     mapText: "Oznake prate filtre s popisa iznad: odaberite broj zvjezdica, kuhinju ili popis želja i karta će se prilagoditi. Dodirnite oznaku za cijenu i upute za put.",
     mapWait: "Karta se učitava kad se pomaknete ovamo.", mapLabel: "Karta restorana s Michelinovom zvjezdicom",
     mapError: "Kartu trenutačno nije moguće učitati. Oznaka uz svaki restoran na popisu i dalje ga otvara na Google kartama.",
-    legendAria: "Što znače boje oznaka", colours: ["Ljubičasta", "Jantarna", "Zelena"], legendItem: "{c} = Michelinove zvjezdice: {n}",
+    legendAria: "Što znače boje oznaka", legendItem: "Michelinove zvjezdice: {n}",
     mapShowing: "Restorani na karti: {n}", mapNone: "Nijedan restoran ne odgovara odabranim filtrima",
     nearMe: "U blizini", nearMeAria: "Prikaži restorane sa zvjezdicom u mojoj blizini", nearFinding: "Tražimo vašu lokaciju…", youAreHere: "Ovdje ste",
     nearTitle: "Najbliže vama", nearAway: "udaljeno {d}", nearWorld: "Pogledajte restorane sa zvjezdicom u blizini na karti svijeta",

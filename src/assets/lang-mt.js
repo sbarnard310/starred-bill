@@ -58,7 +58,7 @@
     mapText: "Il-labar isegwu l-filtri tal-lista ta' fuq: agħżel numru ta' stilel, kċina jew il-lista tax-xewqat u l-mappa taqbel magħhom. Agħfas labra għall-prezz u għad-direzzjonijiet.",
     mapWait: "Il-mappa titgħabba meta tasal hawn.", mapLabel: "Mappa tar-ristoranti bi stilla Michelin",
     mapError: "Il-mappa ma setgħetx titgħabba bħalissa. Il-labra ħdejn kull ristorant fil-lista xorta tiftħu fuq Google Maps.",
-    legendAria: "X'ifissru l-kuluri tal-labar", colours: ["Vjola", "Ambra", "Aħdar"], legendItem: "{c} = {n} stilla Michelin|{c} = {n} stilel Michelin",
+    legendAria: "X'ifissru l-kuluri tal-labar", legendItem: "{n} stilla Michelin|{n} stilel Michelin",
     mapShowing: "{n} ristorant fuq il-mappa|{n} ristoranti fuq il-mappa", mapNone: "L-ebda ristorant ma jaqbel mal-filtri magħżula",
     nearMe: "Qribi", nearMeAria: "Uri r-ristoranti bl-istilla qribi", nearFinding: "Qed insibuk…", youAreHere: "Int qiegħed hawn",
     nearTitle: "L-eqreb lejk", nearAway: "{d} 'il bogħod", nearWorld: "Ara r-ristoranti bl-istilla qribek fuq il-mappa tad-dinja",

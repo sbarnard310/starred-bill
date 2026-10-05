@@ -4,8 +4,15 @@
 // Google Maps Platform browser key, used for restaurant photos and the maps.
 // Leave empty to show lettered placeholders and hide the maps.
 const GOOGLE_MAPS_API_KEY = "AIzaSyA5AnpHOqFXxb6U3hDiXuAyQK2dIbZgLT4";
-// Three stars is near-black rather than green, so it isn't mistaken for the MICHELIN Green Star or the green map clusters.
-const MAP_PIN_COLOURS = { 1: "#673AB7", 2: "#F9A825", 3: "#212121" };
+// Map pins run from light gold (one star) to deep bronze (three), with the star count printed inside.
+// fill, ink and edge are the pin, its number and its outline; line and lineInk the outline and number of a hollow pin (no prices yet).
+const MAP_PINS = {
+  1: { fill: "#F0CF73", ink: "#3B2A05", edge: "#9A6F1E", line: "#C2953A", lineInk: "#7A5714" },
+  2: { fill: "#8F651A", ink: "#FFFFFF", edge: "#FFFFFF", line: "#8F651A", lineInk: "#7A5714" },
+  3: { fill: "#4A300A", ink: "#FFFFFF", edge: "#FFFFFF", line: "#4A300A", lineInk: "#4A300A" },
+};
+// The legend's little round pins, filled or hollow, coloured like the map's.
+const legendPin = (s, hollow) => '<span class="pin-num' + (hollow ? " hollow" : "") + '" style="--pin:' + MAP_PINS[s][hollow ? "line" : "fill"] + ";color:" + MAP_PINS[s][hollow ? "lineInk" : "ink"] + '" aria-hidden="true">' + s + "</span>";
 
 // ---------- Words (English, Traditional Chinese, French, Cantonese, Japanese, Spanish and Italian) ----------
 // {place} is the page's place name and {placeIn} the same name as it reads mid-sentence ("the UK").
@@ -71,7 +78,7 @@ const I18N = {
     mapText: "The pins follow the filters in the list above, so choose a star level, a cuisine or your wishlist and the map updates to match. Tap a pin for the price and a link to directions.",
     mapWait: "The map loads as you scroll here.", mapLabel: "Map of Michelin-starred restaurants",
     mapError: "The map couldn't load right now. The pin next to each restaurant in the list still opens it in Google Maps.",
-    legendAria: "What the pin colours mean", colours: ["Purple", "Amber", "Black"], legendItem: "{c} = {n} Michelin star|{c} = {n} Michelin stars",
+    legendAria: "What the pin colours mean", legendItem: "{n} Michelin star|{n} Michelin stars",
     mapShowing: "Showing {n} restaurant on the map|Showing {n} restaurants on the map", mapNone: "No restaurants match the current filters",
     nearMe: "Near me", nearMeAria: "Show starred restaurants near my location", nearFinding: "Finding you…", youAreHere: "You are here",
     nearTitle: "Closest to you", nearAway: "{d} away", nearWorld: "See starred restaurants near you on the world map",
@@ -213,7 +220,7 @@ const I18N = {
     mapText: "地圖上的標記會跟著上方清單的篩選條件變化：選擇星級、料理或願望清單，地圖就會同步更新。點選標記可查看價格與導航連結。",
     mapWait: "捲動到這裡時會載入地圖。", mapLabel: "米其林星級餐廳地圖",
     mapError: "地圖暫時無法載入。清單中每家餐廳旁的地標圖示仍可在 Google 地圖開啟。",
-    legendAria: "地標顏色說明", colours: ["紫色", "琥珀色", "黑色"], legendItem: "{c} = 米其林 {n} 星",
+    legendAria: "地標顏色說明", legendItem: "米其林 {n} 星",
     mapShowing: "地圖上顯示 {n} 家餐廳", mapNone: "沒有符合目前篩選條件的餐廳",
     nearMe: "我附近", nearMeAria: "顯示我附近的星級餐廳", nearFinding: "正在定位…", youAreHere: "你的位置",
     nearTitle: "離你最近", nearAway: "距離 {d}", nearWorld: "在世界地圖上查看你附近的星級餐廳",
@@ -353,7 +360,7 @@ const I18N = {
     mapText: "Les repères suivent les filtres de la liste ci-dessus : choisissez un niveau d'étoiles, une cuisine ou vos envies, et la carte s'adapte. Touchez un repère pour voir le prix et l'itinéraire.",
     mapWait: "La carte se charge quand vous arrivez ici.", mapLabel: "Carte des restaurants étoilés Michelin",
     mapError: "La carte n'a pas pu se charger. Le repère à côté de chaque restaurant de la liste l'ouvre toujours dans Google Maps.",
-    legendAria: "Signification des couleurs des repères", colours: ["Violet", "Ambre", "Noir"], legendItem: "{c} = {n} étoile Michelin|{c} = {n} étoiles Michelin",
+    legendAria: "Signification des couleurs des repères", legendItem: "{n} étoile Michelin|{n} étoiles Michelin",
     mapShowing: "{n} restaurant sur la carte|{n} restaurants sur la carte", mapNone: "Aucun restaurant ne correspond aux filtres",
     nearMe: "Autour de moi", nearMeAria: "Afficher les restaurants étoilés autour de moi", nearFinding: "Localisation…", youAreHere: "Vous êtes ici",
     nearTitle: "Les plus proches", nearAway: "à {d}", nearWorld: "Voir les restaurants étoilés autour de vous sur la carte du monde",
@@ -474,7 +481,7 @@ const I18N = {
     mapText: "地圖上嘅標記會跟住上面清單嘅篩選改變：揀星級、菜式或者心水清單，地圖就會即刻更新。撳標記就睇到價錢同導航連結。",
     mapWait: "碌到呢度就會載入地圖。", mapLabel: "米芝蓮星級餐廳地圖",
     mapError: "地圖暫時載入唔到。清單入面每間餐廳旁邊嘅標記一樣可以喺 Google 地圖打開。",
-    legendAria: "標記顏色代表咩", colours: ["紫色", "琥珀色", "黑色"], legendItem: "{c} = 米芝蓮 {n} 星",
+    legendAria: "標記顏色代表咩", legendItem: "米芝蓮 {n} 星",
     mapShowing: "地圖上顯示緊 {n} 間餐廳", mapNone: "冇餐廳符合而家嘅篩選條件",
     nearMe: "我附近", nearMeAria: "顯示我附近嘅星級餐廳", nearFinding: "搵緊你喺邊…", youAreHere: "你喺度",
     nearTitle: "離你最近", nearAway: "距離 {d}", nearWorld: "喺世界地圖睇你附近嘅星級餐廳",
@@ -596,7 +603,7 @@ const I18N = {
     mapText: "地図のピンは上の一覧の絞り込みに連動します。星の数、料理ジャンル、お気に入りを選ぶと地図も切り替わります。ピンをタップすると料金と道順へのリンクが表示されます。",
     mapWait: "ここまでスクロールすると地図を読み込みます。", mapLabel: "ミシュラン星付きレストランの地図",
     mapError: "地図を読み込めませんでした。一覧の各店の横にあるピンからGoogleマップで開けます。",
-    legendAria: "ピンの色の意味", colours: ["紫", "琥珀色", "黒"], legendItem: "{c}＝ミシュラン{n}つ星",
+    legendAria: "ピンの色の意味", legendItem: "ミシュラン{n}つ星",
     mapShowing: "地図に{n}軒を表示中", mapNone: "現在の条件に合うレストランはありません",
     nearMe: "現在地周辺", nearMeAria: "現在地の近くの星付きレストランを表示", nearFinding: "現在地を取得中…", youAreHere: "現在地",
     nearTitle: "近い順", nearAway: "{d}先", nearWorld: "世界地図で現在地の近くの星付きレストランを見る",
@@ -737,7 +744,7 @@ const I18N = {
     mapText: "Los marcadores siguen los filtros de la lista de arriba: elige un nivel de estrellas, una cocina o tus favoritos y el mapa se actualiza. Toca un marcador para ver el precio y cómo llegar.",
     mapWait: "El mapa se carga al llegar aquí.", mapLabel: "Mapa de restaurantes con estrella Michelin",
     mapError: "Ahora mismo no se ha podido cargar el mapa. El marcador junto a cada restaurante de la lista sigue abriéndolo en Google Maps.",
-    legendAria: "Qué significan los colores de los marcadores", colours: ["Morado", "Ámbar", "Negro"], legendItem: "{c} = {n} estrella Michelin|{c} = {n} estrellas Michelin",
+    legendAria: "Qué significan los colores de los marcadores", legendItem: "{n} estrella Michelin|{n} estrellas Michelin",
     mapShowing: "{n} restaurante en el mapa|{n} restaurantes en el mapa", mapNone: "Ningún restaurante coincide con los filtros actuales",
     nearMe: "Cerca de mí", nearMeAria: "Mostrar restaurantes con estrella cerca de mi ubicación", nearFinding: "Buscando tu ubicación…", youAreHere: "Estás aquí",
     nearTitle: "Los más cercanos", nearAway: "a {d}", nearWorld: "Ver restaurantes con estrella cerca de ti en el mapa mundial",
@@ -854,7 +861,7 @@ const I18N = {
     mapText: "Nålene følger filtrene i listen ovenfor, så vælg et antal stjerner, et køkken eller din ønskeliste, og kortet følger med. Tryk på en nål for at se prisen og få en rutevejledning.",
     mapWait: "Kortet indlæses, når du scroller hertil.", mapLabel: "Kort over restauranter med Michelinstjerner",
     mapError: "Kortet kunne ikke indlæses lige nu. Nålen ved hver restaurant i listen åbner den stadig i Google Maps.",
-    legendAria: "Hvad nålenes farver betyder", colours: ["Lilla", "Rav", "Sort"], legendItem: "{c} = {n} Michelinstjerne|{c} = {n} Michelinstjerner",
+    legendAria: "Hvad nålenes farver betyder", legendItem: "{n} Michelinstjerne|{n} Michelinstjerner",
     mapShowing: "Viser {n} restaurant på kortet|Viser {n} restauranter på kortet", mapNone: "Ingen restauranter passer til de valgte filtre",
     nearMe: "Nær mig", nearMeAria: "Vis stjernerestauranter nær mig", nearFinding: "Finder dig…", youAreHere: "Du er her",
     nearTitle: "Tættest på dig", nearAway: "{d} væk", nearWorld: "Se stjernerestauranter nær dig på verdenskortet",
@@ -957,7 +964,7 @@ const I18N = {
     mapText: "Nålarna följer filtren i listan ovan, så välj antal stjärnor, ett kök eller din önskelista så följer kartan med. Tryck på en nål för att se priset och få vägbeskrivning.",
     mapWait: "Kartan laddas när du scrollar hit.", mapLabel: "Karta över restauranger med Michelinstjärnor",
     mapError: "Kartan kunde inte laddas just nu. Nålen vid varje restaurang i listan öppnar den fortfarande i Google Maps.",
-    legendAria: "Vad nålarnas färger betyder", colours: ["Lila", "Bärnsten", "Svart"], legendItem: "{c} = {n} Michelinstjärna|{c} = {n} Michelinstjärnor",
+    legendAria: "Vad nålarnas färger betyder", legendItem: "{n} Michelinstjärna|{n} Michelinstjärnor",
     mapShowing: "Visar {n} restaurang på kartan|Visar {n} restauranger på kartan", mapNone: "Inga restauranger matchar de valda filtren",
     nearMe: "Nära mig", nearMeAria: "Visa stjärnkrogar nära mig", nearFinding: "Letar efter dig…", youAreHere: "Du är här",
     nearTitle: "Närmast dig", nearAway: "{d} bort", nearWorld: "Se stjärnkrogar nära dig på världskartan",
@@ -1060,7 +1067,7 @@ const I18N = {
     mapText: "Nálarnar fylgja síunum í listanum hér fyrir ofan, svo veldu stjörnufjölda, matargerð eða óskalistann og kortið breytist í samræmi. Ýttu á nál til að sjá verðið og fá leiðarlýsingu.",
     mapWait: "Kortið hleðst þegar þú flettir hingað.", mapLabel: "Kort af veitingastöðum með Michelin-stjörnu",
     mapError: "Ekki tókst að hlaða kortinu. Nálin við hvern stað í listanum opnar hann samt í Google Maps.",
-    legendAria: "Hvað litir nálanna þýða", colours: ["Fjólublár", "Rafgulur", "Svartur"], legendItem: "{c} = {n} Michelin-stjarna|{c} = {n} Michelin-stjörnur",
+    legendAria: "Hvað litir nálanna þýða", legendItem: "{n} Michelin-stjarna|{n} Michelin-stjörnur",
     mapShowing: "Sýnir {n} stað á kortinu|Sýnir {n} staði á kortinu", mapNone: "Enginn staður passar við valdar síur",
     nearMe: "Nálægt mér", nearMeAria: "Sýna stjörnustaði nálægt mér", nearFinding: "Finn þig…", youAreHere: "Þú ert hér",
     nearTitle: "Næst þér", nearAway: "{d} í burtu", nearWorld: "Sjá stjörnustaði nálægt þér á heimskortinu",
@@ -1163,7 +1170,7 @@ const I18N = {
     mapText: "Les agulles segueixen els filtres de la llista de dalt: tria un nombre d'estrelles, una cuina o els preferits i el mapa s'actualitza. Toca una agulla per veure'n el preu i com arribar-hi.",
     mapWait: "El mapa es carrega quan hi arribes.", mapLabel: "Mapa de restaurants amb estrella Michelin",
     mapError: "Ara mateix el mapa no s'ha pogut carregar. L'agulla al costat de cada restaurant de la llista encara l'obre a Google Maps.",
-    legendAria: "Què volen dir els colors de les agulles", colours: ["Lila", "Ambre", "Negre"], legendItem: "{c} = {n} estrella Michelin|{c} = {n} estrelles Michelin",
+    legendAria: "Què volen dir els colors de les agulles", legendItem: "{n} estrella Michelin|{n} estrelles Michelin",
     mapShowing: "Es mostra {n} restaurant al mapa|Es mostren {n} restaurants al mapa", mapNone: "Cap restaurant no coincideix amb els filtres actuals",
     nearMe: "A prop meu", nearMeAria: "Mostra restaurants amb estrella a prop meu", nearFinding: "Et busquem…", youAreHere: "Ets aquí",
     nearTitle: "Els més propers", nearAway: "a {d}", nearWorld: "Mostra restaurants amb estrella a prop teu al mapa mundial",
@@ -1266,7 +1273,7 @@ const I18N = {
     mapText: "หมุดบนแผนที่เปลี่ยนตามตัวกรองในรายการด้านบน เลือกจำนวนดาว ประเภทอาหาร หรือรายการโปรด แล้วแผนที่จะเปลี่ยนตาม แตะหมุดเพื่อดูราคาและเส้นทาง",
     mapWait: "แผนที่จะโหลดเมื่อเลื่อนมาถึงตรงนี้", mapLabel: "แผนที่ร้านอาหารที่ได้ดาวมิชลิน",
     mapError: "โหลดแผนที่ไม่ได้ในขณะนี้ หมุดข้างร้านแต่ละร้านในรายการยังเปิดใน Google Maps ได้",
-    legendAria: "ความหมายของสีหมุด", colours: ["สีม่วง", "สีอำพัน", "สีดำ"], legendItem: "{c} = มิชลิน {n} ดาว",
+    legendAria: "ความหมายของสีหมุด", legendItem: "มิชลิน {n} ดาว",
     mapShowing: "แสดง {n} ร้านบนแผนที่", mapNone: "ไม่มีร้านที่ตรงกับตัวกรองปัจจุบัน",
     nearMe: "ใกล้ฉัน", nearMeAria: "แสดงร้านติดดาวใกล้ตำแหน่งของฉัน", nearFinding: "กำลังหาตำแหน่งของคุณ…", youAreHere: "คุณอยู่ที่นี่",
     nearTitle: "ใกล้คุณที่สุด", nearAway: "ห่างไป {d}", nearWorld: "ดูร้านติดดาวใกล้คุณบนแผนที่โลก",
@@ -1377,7 +1384,7 @@ const I18N = {
     mapText: "지도의 핀은 위 목록의 필터를 따릅니다. 별 개수, 요리, 위시리스트를 고르면 지도도 바뀝니다. 핀을 누르면 가격과 길찾기 링크가 나옵니다.",
     mapWait: "여기까지 스크롤하면 지도를 불러옵니다.", mapLabel: "미쉐린 스타 레스토랑 지도",
     mapError: "지도를 불러오지 못했습니다. 목록의 각 레스토랑 옆 핀으로 Google 지도에서 열 수 있습니다.",
-    legendAria: "핀 색상의 의미", colours: ["보라", "호박색", "검정"], legendItem: "{c} = 미쉐린 {n}스타",
+    legendAria: "핀 색상의 의미", legendItem: "미쉐린 {n}스타",
     mapShowing: "지도에 {n}곳 표시 중", mapNone: "현재 필터에 맞는 레스토랑이 없습니다",
     nearMe: "내 주변", nearMeAria: "내 주변 스타 레스토랑 보기", nearFinding: "위치 찾는 중…", youAreHere: "현재 위치",
     nearTitle: "가까운 순", nearAway: "{d}", nearWorld: "세계 지도에서 내 주변 스타 레스토랑 보기",
@@ -1518,7 +1525,7 @@ const I18N = {
     mapText: "I segnaposto seguono i filtri della lista qui sopra: scegli un livello di stelle, una cucina o i tuoi preferiti e la mappa si aggiorna. Tocca un segnaposto per il prezzo e le indicazioni.",
     mapWait: "La mappa si carica quando arrivi qui.", mapLabel: "Mappa dei ristoranti stellati Michelin",
     mapError: "Al momento non è stato possibile caricare la mappa. Il segnaposto accanto a ogni ristorante della lista lo apre comunque in Google Maps.",
-    legendAria: "Cosa indicano i colori dei segnaposto", colours: ["Viola", "Ambra", "Nero"], legendItem: "{c} = {n} stella Michelin|{c} = {n} stelle Michelin",
+    legendAria: "Cosa indicano i colori dei segnaposto", legendItem: "{n} stella Michelin|{n} stelle Michelin",
     mapShowing: "{n} ristorante sulla mappa|{n} ristoranti sulla mappa", mapNone: "Nessun ristorante corrisponde ai filtri attuali",
     nearMe: "Vicino a me", nearMeAria: "Mostra i ristoranti stellati vicino alla mia posizione", nearFinding: "Cerco la tua posizione…", youAreHere: "Sei qui",
     nearTitle: "I più vicini", nearAway: "a {d}", nearWorld: "Vedi i ristoranti stellati vicino a te sulla mappa del mondo",
@@ -1871,15 +1878,14 @@ function loadGoogle() {
 }
 // hollow: a white pin with a coloured outline, for restaurants without prices on the site yet.
 function pinIcon(stars, hollow) {
-  const colour = MAP_PIN_COLOURS[stars];
-  const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='40' viewBox='0 0 30 40'><path d='M15 38.5S2 26.6 2 15.5a13 13 0 0 1 26 0C28 26.6 15 38.5 15 38.5z' fill='" + (hollow ? "#ffffff" : colour) + "' stroke='" + (hollow ? colour : "#ffffff") + "' stroke-width='" + (hollow ? 3 : 2) + "'/><text x='15' y='20.5' text-anchor='middle' font-family='Arial,sans-serif' font-size='13' font-weight='700' fill='" + (hollow ? colour : "#ffffff") + "'>" + stars + "</text></svg>";
+  const p = MAP_PINS[stars];
+  const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='40' viewBox='0 0 30 40'><path d='M15 38.5S2 26.6 2 15.5a13 13 0 0 1 26 0C28 26.6 15 38.5 15 38.5z' fill='" + (hollow ? "#ffffff" : p.fill) + "' stroke='" + (hollow ? p.line : p.edge) + "' stroke-width='" + (hollow ? 3 : 2) + "'/><text x='15' y='20.5' text-anchor='middle' font-family='Arial,sans-serif' font-size='13' font-weight='700' fill='" + (hollow ? p.lineInk : p.ink) + "'>" + stars + "</text></svg>";
   return { url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg), scaledSize: new google.maps.Size(30, 40), anchor: new google.maps.Point(15, 39) };
 }
 function renderLegend(list) {
-  const colours = t("colours");
   $("mapLegend").setAttribute("aria-label", t("legendAria"));
   $("mapLegend").innerHTML = [1, 2, 3].map((s) =>
-    '<li><span class="pin-num" style="--pin:' + MAP_PIN_COLOURS[s] + '" aria-hidden="true">' + s + "</span><span>" + esc(t("legendItem", { c: colours[s - 1], n: s })) + '</span><span class="count">' + list.filter((r) => r.stars === s).length + "</span></li>").join("");
+    "<li>" + legendPin(s) + "<span>" + esc(t("legendItem", { n: s })) + '</span><span class="count">' + list.filter((r) => r.stars === s).length + "</span></li>").join("");
 }
 
 // ---------- Near me ----------

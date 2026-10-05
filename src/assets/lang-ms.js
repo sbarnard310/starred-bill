@@ -60,7 +60,7 @@
     mapText: "Pin mengikut penapis senarai di atas: pilih bilangan bintang, masakan atau senarai hajat anda dan peta akan menyesuaikan diri. Ketik pin untuk melihat harga dan arah.",
     mapWait: "Peta dimuatkan apabila anda menatal ke sini.", mapLabel: "Peta restoran berbintang Michelin",
     mapError: "Peta tidak dapat dimuatkan sekarang. Pin di sebelah setiap restoran dalam senarai masih membukanya di Peta Google.",
-    legendAria: "Maksud warna pin", colours: ["Ungu", "Ambar", "Hijau"], legendItem: "{c} = {n} bintang Michelin",
+    legendAria: "Maksud warna pin", legendItem: "{n} bintang Michelin",
     mapShowing: "Menunjukkan {n} restoran pada peta", mapNone: "Tiada restoran yang sepadan dengan penapis semasa",
     nearMe: "Berhampiran", nearMeAria: "Tunjuk restoran berbintang berhampiran saya", nearFinding: "Mencari lokasi anda…", youAreHere: "Anda di sini",
     nearTitle: "Paling dekat dengan anda", nearAway: "{d} dari sini", nearWorld: "Lihat restoran berbintang berhampiran anda pada peta dunia",

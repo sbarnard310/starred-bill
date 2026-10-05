@@ -65,7 +65,7 @@
     mapText: "Die Stecknadeln folgen den Filtern der Liste oben: Wähle eine Sternezahl, eine Küche oder deine Merkliste, und die Karte passt sich an. Tippe auf eine Stecknadel für den Preis und eine Wegbeschreibung.",
     mapWait: "Die Karte lädt, sobald du hierher scrollst.", mapLabel: "Karte der Restaurants mit Michelin-Stern",
     mapError: "Die Karte konnte gerade nicht geladen werden. Die Stecknadel neben jedem Restaurant in der Liste öffnet es trotzdem in Google Maps.",
-    legendAria: "Was die Farben der Stecknadeln bedeuten", colours: ["Lila", "Bernstein", "Grün"], legendItem: "{c} = {n} Michelin-Stern|{c} = {n} Michelin-Sterne",
+    legendAria: "Was die Farben der Stecknadeln bedeuten", legendItem: "{n} Michelin-Stern|{n} Michelin-Sterne",
     mapShowing: "{n} Restaurant auf der Karte|{n} Restaurants auf der Karte", mapNone: "Keine Restaurants entsprechen den gewählten Filtern",
     nearMe: "In meiner Nähe", nearMeAria: "Sternerestaurants in meiner Nähe zeigen", nearFinding: "Standort wird gesucht…", youAreHere: "Du bist hier",
     nearTitle: "Am nächsten bei dir", nearAway: "{d} entfernt", nearWorld: "Sternerestaurants in deiner Nähe auf der Weltkarte ansehen",

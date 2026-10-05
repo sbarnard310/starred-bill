@@ -59,7 +59,7 @@
     mapText: "Các ghim đi theo bộ lọc của danh sách phía trên: chọn số sao, phong cách ẩm thực hoặc danh sách muốn đến và bản đồ sẽ cập nhật theo. Chạm vào ghim để xem giá và chỉ đường.",
     mapWait: "Bản đồ sẽ tải khi bạn cuộn tới đây.", mapLabel: "Bản đồ nhà hàng gắn sao Michelin",
     mapError: "Hiện không tải được bản đồ. Ghim cạnh mỗi nhà hàng trong danh sách vẫn mở nhà hàng đó trên Google Maps.",
-    legendAria: "Ý nghĩa màu ghim", colours: ["Tím", "Hổ phách", "Xanh lá"], legendItem: "{c} = {n} sao Michelin",
+    legendAria: "Ý nghĩa màu ghim", legendItem: "{n} sao Michelin",
     mapShowing: "Đang hiện {n} nhà hàng trên bản đồ", mapNone: "Không có nhà hàng nào khớp với bộ lọc hiện tại",
     nearMe: "Gần tôi", nearMeAria: "Hiện các nhà hàng gắn sao gần tôi", nearFinding: "Đang tìm vị trí của bạn…", youAreHere: "Bạn đang ở đây",
     nearTitle: "Gần bạn nhất", nearAway: "cách {d}", nearWorld: "Xem các nhà hàng gắn sao gần bạn trên bản đồ thế giới",

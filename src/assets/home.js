@@ -375,7 +375,7 @@ function renderMapStars() {
 }
 function renderMapLegend() {
   renderLegend(pinStars());
-  $("mapLegend").insertAdjacentHTML("beforeend", '<li><span class="pin-num hollow" style="--pin:' + MAP_PIN_COLOURS[1] + '" aria-hidden="true">1</span><span>' + esc(t("legendHollow")) + "</span></li>");
+  $("mapLegend").insertAdjacentHTML("beforeend", "<li>" + legendPin(1, true) + "<span>" + esc(t("legendHollow")) + "</span></li>");
 }
 
 // ---------- Render and events ----------

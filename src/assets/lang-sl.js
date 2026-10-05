@@ -59,7 +59,7 @@
     mapText: "Žebljički sledijo filtrom na seznamu zgoraj: izberite število zvezdic, kuhinjo ali seznam želja in zemljevid se prilagodi. Tapnite žebljiček za ceno in navodila za pot.",
     mapWait: "Zemljevid se naloži, ko se pomaknete sem.", mapLabel: "Zemljevid restavracij z Michelinovo zvezdico",
     mapError: "Zemljevida zdaj ni bilo mogoče naložiti. Žebljiček ob vsaki restavraciji na seznamu jo še vedno odpre v Google Zemljevidih.",
-    legendAria: "Kaj pomenijo barve žebljičkov", colours: ["Vijolična", "Jantarna", "Zelena"], legendItem: "{c} = Michelinove zvezdice: {n}",
+    legendAria: "Kaj pomenijo barve žebljičkov", legendItem: "Michelinove zvezdice: {n}",
     mapShowing: "Restavracije na zemljevidu: {n}", mapNone: "Nobena restavracija ne ustreza izbranim filtrom",
     nearMe: "V bližini", nearMeAria: "Prikaži restavracije z zvezdico v moji bližini", nearFinding: "Iščemo vašo lokacijo…", youAreHere: "Tukaj ste",
     nearTitle: "Najbližje vam", nearAway: "{d} stran", nearWorld: "Oglejte si restavracije z zvezdico v bližini na zemljevidu sveta",

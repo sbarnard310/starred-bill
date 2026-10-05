@@ -56,7 +56,7 @@
     mapText: "Žymekliai seka aukščiau esančio sąrašo filtrus: pasirinkite žvaigždučių skaičių, virtuvę ar norų sąrašą, ir žemėlapis prisitaikys. Bakstelėkite žymeklį, kad pamatytumėte kainą ir maršrutą.",
     mapWait: "Žemėlapis įsikels, kai nuslinksite iki čia.", mapLabel: "Restoranų su „Michelin“ žvaigždutėmis žemėlapis",
     mapError: "Žemėlapio dabar įkelti nepavyko. Žymeklis prie kiekvieno restorano sąraše vis tiek atidaro jį „Google“ žemėlapiuose.",
-    legendAria: "Ką reiškia žymeklių spalvos", colours: ["Violetinė", "Gintarinė", "Žalia"], legendItem: "{c} = „Michelin“ žvaigždutės: {n}",
+    legendAria: "Ką reiškia žymeklių spalvos", legendItem: "„Michelin“ žvaigždutės: {n}",
     mapShowing: "Restoranai žemėlapyje: {n}", mapNone: "Pasirinktiems filtrams neatitinka nė vienas restoranas",
     nearMe: "Netoli manęs", nearMeAria: "Rodyti netoliese esančius restoranus su žvaigždutėmis", nearFinding: "Ieškoma jūsų vietos…", youAreHere: "Jūs esate čia",
     nearTitle: "Arčiausiai jūsų", nearAway: "už {d}", nearWorld: "Žiūrėti netoliese esančius restoranus su žvaigždutėmis pasaulio žemėlapyje",

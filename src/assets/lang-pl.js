@@ -59,7 +59,7 @@
     mapText: "Pinezki podążają za filtrami listy powyżej: wybierz liczbę gwiazdek, kuchnię lub ulubione, a mapa się dopasuje. Dotknij pinezki, aby zobaczyć cenę i wskazówki dojazdu.",
     mapWait: "Mapa wczyta się, gdy tu przewiniesz.", mapLabel: "Mapa restauracji z gwiazdkami Michelin",
     mapError: "Nie udało się teraz wczytać mapy. Pinezka przy każdej restauracji na liście nadal otwiera ją w Mapach Google.",
-    legendAria: "Co oznaczają kolory pinezek", colours: ["Fioletowy", "Bursztynowy", "Zielony"], legendItem: "{c} = gwiazdki Michelin: {n}",
+    legendAria: "Co oznaczają kolory pinezek", legendItem: "gwiazdki Michelin: {n}",
     mapShowing: "Restauracje na mapie: {n}", mapNone: "Żadna restauracja nie pasuje do wybranych filtrów",
     nearMe: "W pobliżu", nearMeAria: "Pokaż restauracje z gwiazdkami w pobliżu", nearFinding: "Szukamy Twojej lokalizacji…", youAreHere: "Jesteś tutaj",
     nearTitle: "Najbliżej Ciebie", nearAway: "{d} stąd", nearWorld: "Zobacz restauracje z gwiazdkami w pobliżu na mapie świata",

@@ -63,7 +63,7 @@
     mapText: "地图上的标记会跟随上方列表的筛选条件变化：选择星级、菜系或心愿单，地图就会同步更新。点击标记可查看价格与导航链接。",
     mapWait: "滚动到这里时会加载地图。", mapLabel: "米其林星级餐厅地图",
     mapError: "地图暂时无法加载。列表中每家餐厅旁的定位图标仍可在 Google 地图打开。",
-    legendAria: "标记颜色说明", colours: ["紫色", "琥珀色", "绿色"], legendItem: "{c} = 米其林 {n} 星",
+    legendAria: "标记颜色说明", legendItem: "米其林 {n} 星",
     mapShowing: "地图上显示 {n} 家餐厅", mapNone: "没有符合当前筛选条件的餐厅",
     nearMe: "我附近", nearMeAria: "显示我附近的星级餐厅", nearFinding: "正在定位…", youAreHere: "你的位置",
     nearTitle: "离你最近", nearAway: "距离 {d}", nearWorld: "在世界地图上查看你附近的星级餐厅",

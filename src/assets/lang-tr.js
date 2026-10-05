@@ -60,7 +60,7 @@
     mapText: "İğneler yukarıdaki listenin filtrelerini izler: bir yıldız sayısı, mutfak ya da istek listenizi seçin, harita da ona uyar. Fiyat ve yol tarifi için bir iğneye dokunun.",
     mapWait: "Harita buraya kaydırdığınızda yüklenir.", mapLabel: "Michelin yıldızlı restoranlar haritası",
     mapError: "Harita şu anda yüklenemedi. Listedeki her restoranın yanındaki iğne onu yine de Google Haritalar'da açar.",
-    legendAria: "İğne renklerinin anlamı", colours: ["Mor", "Kehribar", "Yeşil"], legendItem: "{c} = {n} Michelin yıldızı",
+    legendAria: "İğne renklerinin anlamı", legendItem: "{n} Michelin yıldızı",
     mapShowing: "Haritada {n} restoran", mapNone: "Seçili filtrelere uyan restoran yok",
     nearMe: "Yakınımda", nearMeAria: "Yakınımdaki yıldızlı restoranları göster", nearFinding: "Konumunuz bulunuyor…", youAreHere: "Buradasınız",
     nearTitle: "Size en yakın", nearAway: "{d} uzaklıkta", nearWorld: "Yakınınızdaki yıldızlı restoranları dünya haritasında görün",

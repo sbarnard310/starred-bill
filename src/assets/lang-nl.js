@@ -64,7 +64,7 @@
     mapText: "De spelden volgen de filters van de lijst hierboven: kies een aantal sterren, een keuken of je verlanglijst en de kaart past zich aan. Tik op een speld voor de prijs en een routebeschrijving.",
     mapWait: "De kaart laadt zodra je hierheen scrolt.", mapLabel: "Kaart van restaurants met een Michelinster",
     mapError: "De kaart kon nu niet laden. Met de speld bij elk restaurant in de lijst open je het nog steeds in Google Maps.",
-    legendAria: "Wat de kleuren van de spelden betekenen", colours: ["Paars", "Amber", "Groen"], legendItem: "{c} = {n} Michelinster|{c} = {n} Michelinsterren",
+    legendAria: "Wat de kleuren van de spelden betekenen", legendItem: "{n} Michelinster|{n} Michelinsterren",
     mapShowing: "{n} restaurant op de kaart|{n} restaurants op de kaart", mapNone: "Geen restaurants voldoen aan de gekozen filters",
     nearMe: "In de buurt", nearMeAria: "Toon sterrenrestaurants bij mij in de buurt", nearFinding: "Locatie zoeken…", youAreHere: "Je bent hier",
     nearTitle: "Het dichtst bij jou", nearAway: "op {d}", nearWorld: "Bekijk sterrenrestaurants bij jou in de buurt op de wereldkaart",

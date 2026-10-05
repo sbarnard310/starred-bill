@@ -62,7 +62,7 @@
     mapText: "Os marcadores seguem os filtros da lista acima: escolha um número de estrelas, uma cozinha ou os seus favoritos e o mapa acompanha. Toque num marcador para ver o preço e um link para o percurso.",
     mapWait: "O mapa carrega quando chegar aqui.", mapLabel: "Mapa dos restaurantes com estrela Michelin",
     mapError: "Não foi possível carregar o mapa agora. O marcador junto a cada restaurante da lista continua a abri-lo no Google Maps.",
-    legendAria: "O que significam as cores dos marcadores", colours: ["Roxo", "Âmbar", "Verde"], legendItem: "{c} = {n} estrela Michelin|{c} = {n} estrelas Michelin",
+    legendAria: "O que significam as cores dos marcadores", legendItem: "{n} estrela Michelin|{n} estrelas Michelin",
     mapShowing: "{n} restaurante no mapa|{n} restaurantes no mapa", mapNone: "Nenhum restaurante corresponde aos filtros escolhidos",
     nearMe: "Perto de mim", nearMeAria: "Mostrar restaurantes com estrela perto de mim", nearFinding: "A procurar a sua localização…", youAreHere: "Está aqui",
     nearTitle: "Mais perto de si", nearAway: "a {d}", nearWorld: "Ver restaurantes com estrela perto de si no mapa-múndi",

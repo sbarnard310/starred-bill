@@ -59,7 +59,7 @@
     mapText: "Špendlíky se řídí filtry seznamu výše: zvolte počet hvězd, kuchyni nebo oblíbené a mapa se přizpůsobí. Klepnutím na špendlík zobrazíte cenu a navigaci.",
     mapWait: "Mapa se načte, až sem doscrollujete.", mapLabel: "Mapa restaurací s michelinskou hvězdou",
     mapError: "Mapu se teď nepodařilo načíst. Špendlík u každé restaurace v seznamu ji stále otevře v Mapách Google.",
-    legendAria: "Co znamenají barvy špendlíků", colours: ["Fialová", "Jantarová", "Zelená"], legendItem: "{c} = michelinské hvězdy: {n}",
+    legendAria: "Co znamenají barvy špendlíků", legendItem: "michelinské hvězdy: {n}",
     mapShowing: "Restaurace na mapě: {n}", mapNone: "Zvoleným filtrům neodpovídá žádná restaurace",
     nearMe: "V okolí", nearMeAria: "Zobrazit restaurace s hvězdou v mém okolí", nearFinding: "Hledáme vaši polohu…", youAreHere: "Jste tady",
     nearTitle: "Nejblíž k vám", nearAway: "{d} odtud", nearWorld: "Zobrazit restaurace s hvězdou ve vašem okolí na mapě světa",

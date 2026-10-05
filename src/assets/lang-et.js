@@ -56,7 +56,7 @@
     mapText: "Kaardinõelad järgivad ülaloleva nimekirja filtreid: vali tähtede arv, köök või oma soovinimekiri ja kaart kohandub. Puuduta nõela, et näha hinda ja teejuhiseid.",
     mapWait: "Kaart laaditakse, kui siia kerid.", mapLabel: "Michelini tähega restoranide kaart",
     mapError: "Kaarti ei õnnestunud praegu laadida. Iga nimekirjas oleva restorani kõrval olev nõel avab selle siiski Google Mapsis.",
-    legendAria: "Mida nõelte värvid tähendavad", colours: ["Lilla", "Merevaik", "Roheline"], legendItem: "{c} = {n} Michelini täht|{c} = {n} Michelini tähte",
+    legendAria: "Mida nõelte värvid tähendavad", legendItem: "{n} Michelini täht|{n} Michelini tähte",
     mapShowing: "Kaardil {n} restoran|Kaardil {n} restorani", mapNone: "Valitud filtritele ei vasta ükski restoran",
     nearMe: "Minu lähedal", nearMeAria: "Näita minu lähedal olevaid tähistatud restorane", nearFinding: "Otsime sinu asukohta…", youAreHere: "Sina oled siin",
     nearTitle: "Sulle kõige lähemal", nearAway: "{d} kaugusel", nearWorld: "Vaata lähedal olevaid tähistatud restorane maailmakaardil",

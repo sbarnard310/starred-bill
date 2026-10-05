@@ -1,0 +1,17 @@
+{
+  "name": "Dama Juana",
+  "city": "andalusia",
+  "area": "Jaén",
+  "address": "Melchor Cobo Medina 7, 23001, Jaén",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 559,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.damajuanajaen.es",
+  "lat": 37.767224,
+  "lng": -3.7854772,
+  "placeId": "ChIJZV8p5pbXbQ0RqCwTVSCIF4A"
+}

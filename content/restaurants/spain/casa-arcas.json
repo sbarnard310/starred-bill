@@ -1,0 +1,19 @@
+{
+  "name": "Casa Arcas",
+  "city": "aragon",
+  "area": "Villanova",
+  "address": "Carretera A-139, 22467, Villanova",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 584,
+  "dinnerType": "menu",
+  "dinner": 76,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://hotelvalledebenasque.com/restaurante-casa-arcas/",
+  "website": "https://hotelvalledebenasque.com/",
+  "lat": 42.551754,
+  "lng": 0.4645155,
+  "placeId": "ChIJ3yqMDuHXpxIRA2hRj18CL1Y"
+}

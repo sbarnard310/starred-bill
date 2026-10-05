@@ -1,0 +1,17 @@
+{
+  "name": "Atrio",
+  "city": "extremadura",
+  "area": "Cáceres",
+  "address": "Plaza San Mateo 1, 10003, Cáceres",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 2140,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://atriocaceres.com/",
+  "lat": 39.4730278,
+  "lng": -6.3714187,
+  "placeId": "ChIJm1JTpdbfFQ0Rv2Lf-opFjX0"
+}

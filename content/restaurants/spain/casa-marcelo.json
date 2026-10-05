@@ -1,0 +1,19 @@
+{
+  "name": "Casa Marcelo",
+  "city": "galicia",
+  "area": "Santiago de Compostela",
+  "address": "Hortas 1, 15705, Santiago de Compostela",
+  "stars": 1,
+  "cuisine": "Fusion",
+  "rating": 4.7,
+  "reviews": 2718,
+  "dinnerType": "menu",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.casamarcelo.net/en/menu",
+  "website": "https://www.casamarcelo.net",
+  "lat": 42.880834,
+  "lng": -8.5466466,
+  "placeId": "ChIJT360x0P-Lg0RnQ_j3JPH3pI"
+}

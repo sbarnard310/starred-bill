@@ -1,0 +1,17 @@
+{
+  "name": "Miguel González",
+  "city": "galicia",
+  "area": "Ourense",
+  "address": "Avenida de Pontevedra 17, 32005, Ourense",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 186,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantemiguelgonzalez.com/",
+  "lat": 42.33592,
+  "lng": -7.86502,
+  "placeId": "ChIJUXkEsW7-Lw0R-RXY4IKPoyw"
+}

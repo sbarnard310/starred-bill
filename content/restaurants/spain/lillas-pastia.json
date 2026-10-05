@@ -1,0 +1,17 @@
+{
+  "name": "Lillas Pastia",
+  "city": "aragon",
+  "area": "Huesca",
+  "address": "del Parque 3, 22002, Huesca",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 929,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lillaspastia.es",
+  "lat": 42.136332,
+  "lng": -0.4101935,
+  "placeId": "ChIJ17JQEEpEWA0R2drTwG2fqPY"
+}

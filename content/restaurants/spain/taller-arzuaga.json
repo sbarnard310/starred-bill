@@ -1,0 +1,17 @@
+{
+  "name": "Taller Arzuaga",
+  "city": "castile-and-leon",
+  "area": "Quintanilla de Onésimo",
+  "address": "Carretera N-122, 47350, Quintanilla de Onésimo",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.2,
+  "reviews": 234,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tallerarzuaga.com/",
+  "lat": 41.6280676,
+  "lng": -4.3237821,
+  "placeId": "ChIJseWhBL3jRg0RFw86Ei44ME4"
+}

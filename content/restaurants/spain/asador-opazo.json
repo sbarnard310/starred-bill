@@ -1,0 +1,17 @@
+{
+  "name": "Asador O'Pazo",
+  "city": "galicia",
+  "area": "Padrón",
+  "address": "Pazos s/n, 15917, Padrón",
+  "stars": 1,
+  "cuisine": "Grills",
+  "rating": 4.7,
+  "reviews": 688,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://asadoropazo.es",
+  "lat": 42.7564294,
+  "lng": -8.65202,
+  "placeId": "ChIJS7NKPbEELw0RKual8IDWxDw"
+}

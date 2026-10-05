@@ -1,0 +1,19 @@
+{
+  "name": "Lera",
+  "city": "castile-and-leon",
+  "area": "Castroverde de Campos",
+  "address": "Conquistadores Zamoranos 6, 49110, Castroverde de Campos",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.8,
+  "reviews": 1617,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €120)",
+  "sourceType": "site",
+  "source": "https://restaurantelera.es/collections/all",
+  "website": "https://restaurantelera.es/",
+  "lat": 41.967639,
+  "lng": -5.3137839,
+  "placeId": "ChIJSfXePrRoOA0RsMyjvrnoBQ8"
+}

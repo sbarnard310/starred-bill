@@ -1,0 +1,17 @@
+{
+  "name": "Ochando",
+  "city": "andalusia",
+  "area": "Los Rosales",
+  "address": "Sevilla 78, 41330, Los Rosales",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 234,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ochandorestaurante.com/",
+  "lat": 37.5901344,
+  "lng": -5.7333002,
+  "placeId": "ChIJU4CgyMFZEg0RVuYZ6rkQ4h4"
+}

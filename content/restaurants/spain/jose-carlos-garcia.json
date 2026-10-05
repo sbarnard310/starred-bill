@@ -1,0 +1,17 @@
+{
+  "name": "José Carlos García",
+  "city": "andalusia",
+  "area": "Malaga",
+  "address": "Vélez Málaga 8, 29016, Malaga",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.3,
+  "reviews": 723,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantejcg.com/",
+  "lat": 36.718313,
+  "lng": -4.410671,
+  "placeId": "ChIJhc9caOj3cg0R314W8tcmG_k"
+}

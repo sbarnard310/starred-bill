@@ -1,0 +1,17 @@
+{
+  "name": "Faralá",
+  "city": "andalusia",
+  "area": "Granada",
+  "address": "Cuesta de Gomérez 11, 18009, Granada",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 846,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantefarala.com",
+  "lat": 37.1763702,
+  "lng": -3.5952603,
+  "placeId": "ChIJKxxnryz9cQ0R_ME_jHHcHls"
+}

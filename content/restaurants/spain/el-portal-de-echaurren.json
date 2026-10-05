@@ -1,0 +1,17 @@
+{
+  "name": "El Portal de Echaurren",
+  "city": "la-rioja",
+  "area": "Ezcaray",
+  "address": "Padre José García 19, 26280, Ezcaray",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 61,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.echaurren.com",
+  "lat": 42.3257846,
+  "lng": -3.0144146,
+  "placeId": "ChIJD_OcNQBxRQ0RNV5klgMm-sA"
+}

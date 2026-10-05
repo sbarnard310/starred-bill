@@ -1,0 +1,17 @@
+{
+  "name": "La Gaia",
+  "city": "balearic-islands",
+  "area": "Eivissa",
+  "address": "Paseo Juan Carlos I 17, 07800, Eivissa",
+  "stars": 1,
+  "cuisine": "International",
+  "rating": 4.8,
+  "reviews": 325,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://lagaiaibiza.com/",
+  "lat": 38.9174239,
+  "lng": 1.4415572,
+  "placeId": "ChIJVym_jcpGmRIRFvCjB_YOo6U"
+}

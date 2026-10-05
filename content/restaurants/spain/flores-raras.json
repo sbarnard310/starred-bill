@@ -1,0 +1,16 @@
+{
+  "name": "Flores Raras",
+  "city": "valencian-community",
+  "address": "Correos 8-1ºA, 46002, Valencia",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.4,
+  "reviews": 67,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://floresraras.com/",
+  "lat": 39.469784,
+  "lng": -0.3745175,
+  "placeId": "ChIJo21X9MlIYA0ROj4TQ1X5U_Q"
+}

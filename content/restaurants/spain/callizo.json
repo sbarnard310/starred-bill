@@ -1,0 +1,19 @@
+{
+  "name": "Callizo",
+  "city": "aragon",
+  "area": "Ainsa",
+  "address": "Plaza Mayor, 22330, Ainsa",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 1456,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://restaurantecallizo.es/",
+  "website": "https://restaurantecallizo.es/",
+  "lat": 42.4176644,
+  "lng": 0.1381766,
+  "placeId": "ChIJQ_OfZsb6pxIROrbPqvzXc4U"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Cañabota",
+  "city": "andalusia",
+  "area": "Seville",
+  "address": "Orfila 3, 41003, Seville",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.5,
+  "reviews": 2175,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.canabota.es",
+  "lat": 37.3935972,
+  "lng": -5.9936533,
+  "placeId": "ChIJx8hXfAVsEg0RSe2YupZmn4U"
+}

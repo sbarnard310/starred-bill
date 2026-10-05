@@ -1,0 +1,17 @@
+{
+  "name": "Kabo",
+  "city": "navarre",
+  "area": "Pamplona",
+  "address": "Avenida de Zaragoza 10, 31003, Pamplona",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 564,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantekabo.com",
+  "lat": 42.8118407,
+  "lng": -1.6433174,
+  "placeId": "ChIJ5yEZ9BiTUA0RHouai8D0wS4"
+}

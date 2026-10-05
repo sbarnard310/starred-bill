@@ -1,0 +1,17 @@
+{
+  "name": "Barahonda",
+  "city": "murcia",
+  "area": "Yecla",
+  "address": "Carretera de Pinoso, 30510, Yecla",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 245,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.barahonda.com/",
+  "lat": 38.5872328,
+  "lng": -1.0811773,
+  "placeId": "ChIJPUQoAev8Yw0R4rXgnGR8hIY"
+}

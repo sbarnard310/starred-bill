@@ -1,0 +1,17 @@
+{
+  "name": "Nova",
+  "city": "galicia",
+  "area": "Ourense",
+  "address": "Valle Inclán 5, 32004, Ourense",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 1298,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://novarestaurante.com/",
+  "lat": 42.33977,
+  "lng": -7.8623301,
+  "placeId": "ChIJlbLiG8j-Lw0RWJjTTJV-qps"
+}

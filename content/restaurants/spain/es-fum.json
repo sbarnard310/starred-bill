@@ -1,0 +1,20 @@
+{
+  "name": "Es Fum",
+  "city": "balearic-islands",
+  "area": "Palmanova",
+  "address": "Carretera Palma-Andratx 19, 07181, Palmanova",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 141,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €175)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-esfum.com/our-menus",
+  "wine": 120,
+  "website": "https://www.restaurant-esfum.com/",
+  "lat": 39.5282611,
+  "lng": 2.5506805,
+  "placeId": "ChIJvcQA-bqOlxIR18OjsvjtgSY"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Ambivium",
+  "city": "castile-and-leon",
+  "area": "Peñafiel",
+  "address": "Camino de Carraovejas, 47300, Peñafiel",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 343,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restauranteambivium.com/",
+  "lat": 41.5946148,
+  "lng": -4.0875496,
+  "placeId": "ChIJ5V5_NULrRg0RnMryopZ3LUI"
+}

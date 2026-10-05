@@ -1,0 +1,17 @@
+{
+  "name": "Casa Rubén",
+  "city": "aragon",
+  "area": "Tella",
+  "address": "Carretera de Bielsa km 63 Hospital de Tella, 22364, Tella",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 149,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restauranteordesa.es",
+  "lat": 42.5475683,
+  "lng": 0.1624873,
+  "placeId": "ChIJeULZtLVFWA0Rodzf0GPKlso"
+}

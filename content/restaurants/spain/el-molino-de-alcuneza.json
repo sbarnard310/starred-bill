@@ -1,0 +1,17 @@
+{
+  "name": "El Molino de Alcuneza",
+  "city": "castilla-la-mancha",
+  "area": "Sigüenza",
+  "address": "Carretera GU 128, 19250, Sigüenza",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 176,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.molinodealcuneza.com/",
+  "lat": 41.1055995,
+  "lng": -2.6044708,
+  "placeId": "ChIJUQ1FnQZRQw0RFvRQZfROD4k"
+}

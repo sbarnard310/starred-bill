@@ -1,0 +1,17 @@
+{
+  "name": "La Costa",
+  "city": "andalusia",
+  "area": "El Ejido",
+  "address": "Bulevar 48, 04700, El Ejido",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 1314,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantelacosta.com/",
+  "lat": 36.7708222,
+  "lng": -2.8277724,
+  "placeId": "ChIJme6HHRhDcA0RlC77qB7TLi0"
+}

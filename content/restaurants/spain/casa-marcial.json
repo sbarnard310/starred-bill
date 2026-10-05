@@ -1,0 +1,17 @@
+{
+  "name": "Casa Marcial",
+  "city": "asturias",
+  "area": "Arriondas",
+  "address": "La Salgar, 33549, Arriondas",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 990,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.casamarcial.com",
+  "lat": 43.4184082,
+  "lng": -5.1931556,
+  "placeId": "ChIJefNOj6QZNg0RLQfBY8NJwn4"
+}

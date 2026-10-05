@@ -1,0 +1,17 @@
+{
+  "name": "Blossom",
+  "city": "andalusia",
+  "area": "Malaga",
+  "address": "Plaza de la Aduana, 29015, Malaga",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 1068,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://blossommalaga.com/",
+  "lat": 36.720118,
+  "lng": -4.417583,
+  "placeId": "ChIJeYu9YXL3cg0R_tDHQ6JhhbA"
+}

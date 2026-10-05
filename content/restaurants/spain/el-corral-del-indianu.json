@@ -1,0 +1,17 @@
+{
+  "name": "El Corral del Indianu",
+  "city": "asturias",
+  "area": "Arriondas",
+  "address": "Avenida de Europa 14, 33540, Arriondas",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1084,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.elcorraldelindianu.com",
+  "lat": 43.3902522,
+  "lng": -5.1842735,
+  "placeId": "ChIJY0Fh_PUYNg0R62nRJ0raHdU"
+}

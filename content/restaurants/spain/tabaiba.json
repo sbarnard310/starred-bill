@@ -1,0 +1,17 @@
+{
+  "name": "Tabaiba",
+  "city": "canary-islands",
+  "area": "Las Palmas de Gran Canaria",
+  "address": "Portugal 79, 35010, Las Palmas de Gran Canaria",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 300,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://tabaibarestaurante.com/",
+  "lat": 28.1353754,
+  "lng": -15.4397592,
+  "placeId": "ChIJ93sdTHWVQAwRyETTKEH56KQ"
+}

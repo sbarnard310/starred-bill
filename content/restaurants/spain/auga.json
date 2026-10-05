@@ -1,0 +1,17 @@
+{
+  "name": "Auga",
+  "city": "asturias",
+  "area": "Gijón",
+  "address": "Claudio Alvargonzález, 33201, Gijón",
+  "stars": 1,
+  "cuisine": "Traditional Cuisine",
+  "rating": 4.5,
+  "reviews": 1685,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restauranteauga.com",
+  "lat": 43.5465083,
+  "lng": -5.6665859,
+  "placeId": "ChIJtfGTamh8Ng0RKxwJ0Y6vGRM"
+}

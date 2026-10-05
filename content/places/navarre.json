@@ -1,0 +1,9 @@
+{
+  "id": "navarre",
+  "type": "region",
+  "parent": "spain",
+  "name": "Navarre",
+  "intro": "Prices are in euros, with a switch to see them in pounds or US dollars. Prices checked October 2026; Spanish menu prices include 10% VAT (IVA), and service isn't added to the bill.",
+  "nameEs": "Navarra",
+  "inSentenceEs": "en Navarra"
+}

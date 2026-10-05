@@ -1,0 +1,17 @@
+{
+  "name": "En la Parra",
+  "city": "castile-and-leon",
+  "area": "Salamanca",
+  "address": "San Pablo 80, 37008, Salamanca",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 1049,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantenlaparra.com/",
+  "lat": 40.9606615,
+  "lng": -5.6642767,
+  "placeId": "ChIJX6TY1WomPw0R2ouNS5jL5YA"
+}

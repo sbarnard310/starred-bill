@@ -1,0 +1,20 @@
+{
+  "name": "El Serbal",
+  "city": "cantabria",
+  "area": "Santander",
+  "address": "Avenida de Manuel García Lago 1, 39005, Santander",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 2313,
+  "dinnerType": "menu",
+  "dinner": 110,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://elserbal.com/menu-degustacion-2026/",
+  "wine": 42,
+  "website": "https://elserbal.com/",
+  "lat": 43.4776869,
+  "lng": -3.7881718,
+  "placeId": "ChIJ6yRXjrFLSQ0RqBrm0WBDD-I"
+}

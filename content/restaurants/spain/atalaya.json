@@ -1,0 +1,20 @@
+{
+  "name": "Atalaya",
+  "city": "valencian-community",
+  "area": "Alcossebre",
+  "address": "Camí l'Atall 1A, 12579, Alcossebre",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 679,
+  "dinnerType": "menu",
+  "dinner": 65,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://atalayarestaurante.com/",
+  "wine": 65,
+  "website": "https://www.atalayarestaurante.com",
+  "lat": 40.2492377,
+  "lng": 0.284626,
+  "placeId": "ChIJuaoEm5QVoBIRDSJwwoh8hkc"
+}

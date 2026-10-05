@@ -1,0 +1,19 @@
+{
+  "name": "Donaire",
+  "city": "adeje",
+  "address": "Fernando López Arvelo 1, Planta 4, 38660, Adeje",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 339,
+  "dinnerType": "menu",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://restaurantedonaire.com/menu-restaurante/",
+  "wine": 70,
+  "website": "https://www.restaurantedonaire.com",
+  "lat": 28.0916898,
+  "lng": -16.7387881,
+  "placeId": "ChIJL_TNs9eXagwRb8d9BJ1RFTU"
+}

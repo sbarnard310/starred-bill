@@ -1,0 +1,19 @@
+{
+  "name": "La Prensa",
+  "city": "aragon",
+  "area": "Saragossa",
+  "address": "José Nebra 3, 50007, Saragossa",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.4,
+  "reviews": 684,
+  "dinnerType": "menu",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "site",
+  "source": "http://www.restaurantelaprensa.com/es",
+  "website": "https://www.restaurantelaprensa.com",
+  "lat": 41.633181,
+  "lng": -0.8746479,
+  "placeId": "ChIJDx1wggMVWQ0RutblRxGThwk"
+}

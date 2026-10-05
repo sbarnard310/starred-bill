@@ -1,0 +1,17 @@
+{
+  "name": "Marcos",
+  "city": "asturias",
+  "area": "Gijón",
+  "address": "Cabrales 76, 33201, Gijón",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 232,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantemarcos.com",
+  "lat": 43.5401186,
+  "lng": -5.6601735,
+  "placeId": "ChIJkQs_fZN9Ng0RmmN0Or3kj6Y"
+}

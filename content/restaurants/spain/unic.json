@@ -1,0 +1,17 @@
+{
+  "name": "Unic",
+  "city": "balearic-islands",
+  "area": "Sant Josep de sa Talaia",
+  "address": "Les Begònies 18, 07817, Sant Josep de sa Talaia",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.5,
+  "reviews": 132,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.unicrestaurantibiza.com",
+  "lat": 38.8898956,
+  "lng": 1.4077202,
+  "placeId": "ChIJt9yIeyxEmRIRtjCLULPn59A"
+}

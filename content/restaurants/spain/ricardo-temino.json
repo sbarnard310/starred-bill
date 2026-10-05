@@ -1,0 +1,17 @@
+{
+  "name": "Ricardo Temiño",
+  "city": "castile-and-leon",
+  "area": "Burgos",
+  "address": "San Juan 3, 09003, Burgos",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.4,
+  "reviews": 33,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.fabricarestaurante.com/ricardo-temino",
+  "lat": 42.3432013,
+  "lng": -3.7002022,
+  "placeId": "ChIJn189LqD9RQ0RTTB23FTOuZ0"
+}

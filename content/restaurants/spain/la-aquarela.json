@@ -1,0 +1,19 @@
+{
+  "name": "La Aquarela",
+  "city": "canary-islands",
+  "area": "Patalavaca",
+  "address": "Barranco de la Verga, 35129, Patalavaca",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 534,
+  "dinnerType": "menu",
+  "dinner": 158,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://www.restaurantelaaquarela.com/store/",
+  "website": "https://www.restaurantelaaquarela.com/",
+  "lat": 27.7744701,
+  "lng": -15.6930938,
+  "placeId": "ChIJ71Bn0vmBQAwRXxg0OTXrJuc"
+}

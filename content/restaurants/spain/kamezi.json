@@ -1,0 +1,20 @@
+{
+  "name": "Kamezí",
+  "city": "canary-islands",
+  "area": "Playa Blanca",
+  "address": "Mónaco 2, 35580, Playa Blanca",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 841,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.kamezi.restaurant/fr/",
+  "wine": 95,
+  "website": "https://www.kamezi.restaurant/",
+  "lat": 28.8598924,
+  "lng": -13.8655864,
+  "placeId": "ChIJRzXdykQ3RgwRZtjTAuju0fY"
+}

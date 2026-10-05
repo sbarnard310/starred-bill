@@ -1,0 +1,17 @@
+{
+  "name": "Rodero",
+  "city": "navarre",
+  "area": "Pamplona",
+  "address": "Emilio Arrieta 3, 31002, Pamplona",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 678,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restauranterodero.com/",
+  "lat": 42.8160025,
+  "lng": -1.6367286,
+  "placeId": "ChIJNRZ9mgCTUA0RvF2gclvSRy8"
+}

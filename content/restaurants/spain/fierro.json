@@ -1,0 +1,16 @@
+{
+  "name": "Fierro",
+  "city": "valencian-community",
+  "address": "Doctor Serrano 4, 46006, Valencia",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 449,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://fierrovlc.com/",
+  "lat": 39.4625709,
+  "lng": -0.3726653,
+  "placeId": "ChIJbZ_iActIYA0R3g-kBk3ytLU"
+}

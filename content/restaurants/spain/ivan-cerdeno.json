@@ -1,0 +1,17 @@
+{
+  "name": "Iván Cerdeño",
+  "city": "castilla-la-mancha",
+  "area": "Toledo",
+  "address": "Cigarral del Ángel, 45004, Toledo",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 1148,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ivancerdeno.com",
+  "lat": 39.8617628,
+  "lng": -4.0460555,
+  "placeId": "ChIJ2QCWTcx0ag0RIQdHJzBBz0M"
+}

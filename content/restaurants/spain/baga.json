@@ -1,0 +1,17 @@
+{
+  "name": "Bagá",
+  "city": "andalusia",
+  "area": "Jaén",
+  "address": "Reja de la Capilla 3, 23001, Jaén",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 777,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.bagagastronomico.com",
+  "lat": 37.7668005,
+  "lng": -3.7861942,
+  "placeId": "ChIJebipB3XXbQ0RX9KDUNCP8pw"
+}

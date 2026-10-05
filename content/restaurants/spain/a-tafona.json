@@ -1,0 +1,17 @@
+{
+  "name": "A Tafona",
+  "city": "galicia",
+  "area": "Santiago de Compostela",
+  "address": "Virxe da Cerca 7, 15703, Santiago de Compostela",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.5,
+  "reviews": 615,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.luciafreitas.es/a-tafona",
+  "lat": 42.880744,
+  "lng": -8.5402512,
+  "placeId": "ChIJOzpH5kX-Lg0RlK-Jr1AOgAs"
+}

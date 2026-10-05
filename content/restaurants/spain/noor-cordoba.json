@@ -1,0 +1,17 @@
+{
+  "name": "Noor",
+  "city": "andalusia",
+  "area": "Córdoba",
+  "address": "Pablo Ruiz Picasso 8, 14014, Córdoba",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 997,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://noorrestaurant.es/",
+  "lat": 37.8899393,
+  "lng": -4.7585272,
+  "placeId": "ChIJ6_O4fI_fbA0RIlLV24ME7Ys"
+}

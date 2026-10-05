@@ -1,0 +1,18 @@
+{
+  "name": "Fraula",
+  "city": "valencian-community",
+  "address": "Cirilo Amorós 84, 46004, Valencia",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 554,
+  "dinnerType": "menu",
+  "dinner": 74,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://fraula.es/menu-degustacion/",
+  "website": "https://fraula.es/",
+  "lat": 39.4694922,
+  "lng": -0.366224,
+  "placeId": "ChIJV_Gxa5lJYA0Rrf9WixkE_no"
+}

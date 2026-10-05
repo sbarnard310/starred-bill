@@ -1,0 +1,17 @@
+{
+  "name": "Mare",
+  "city": "andalusia",
+  "area": "Cadiz",
+  "address": "Plaza de la Candelaria 12, 11005, Cadiz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 3.8,
+  "reviews": 160,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.marerestaurante.com",
+  "lat": 36.5311693,
+  "lng": -6.2955994,
+  "placeId": "ChIJ1-AX0HrRDQ0RVQ8s3qASKNo"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Solana",
+  "city": "cantabria",
+  "area": "Ampuero",
+  "address": "La Bien Aparecida 11, 39849, Ampuero",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 2321,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantesolana.com",
+  "lat": 43.3263141,
+  "lng": -3.4531514,
+  "placeId": "ChIJAe7gvk_CTg0RZWlUBgDvqRo"
+}

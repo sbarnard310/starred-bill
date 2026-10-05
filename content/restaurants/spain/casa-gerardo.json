@@ -1,0 +1,16 @@
+{
+  "name": "Casa Gerardo",
+  "city": "asturias",
+  "area": "Prendes",
+  "address": "Carretera AS 19 Km 9, 33438, Prendes",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "dinnerType": "menu",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu (other menus from €88)",
+  "sourceType": "site",
+  "source": "https://restaurantecasagerardo.es/reservar-en-casa-gerardo/",
+  "website": "https://www.restaurantecasagerardo.es/",
+  "lat": 43.53658,
+  "lng": -5.7872
+}

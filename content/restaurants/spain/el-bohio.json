@@ -1,0 +1,17 @@
+{
+  "name": "El Bohío",
+  "city": "castilla-la-mancha",
+  "area": "Illescas",
+  "address": "Avenida Castilla-La Mancha 81, 45200, Illescas",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 3746,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.elbohio.net/",
+  "lat": 40.1264098,
+  "lng": -3.8463784,
+  "placeId": "ChIJm_Zqah_xQQ0RZua_O3edAiQ"
+}

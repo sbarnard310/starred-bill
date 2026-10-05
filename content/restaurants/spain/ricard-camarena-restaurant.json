@@ -1,0 +1,19 @@
+{
+  "name": "Ricard Camarena Restaurant",
+  "city": "valencian-community",
+  "address": "Avenida Burjassot 54, 46009, Valencia",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 1170,
+  "dinnerType": "menu",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://ricardcamarena.com/",
+  "wine": 115,
+  "website": "https://www.ricardcamarena.com/",
+  "lat": 39.48512,
+  "lng": -0.3852003,
+  "placeId": "ChIJDXL1jclIYA0RjKrQUUOSQkw"
+}

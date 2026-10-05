@@ -1,0 +1,17 @@
+{
+  "name": "O Eirado",
+  "city": "galicia",
+  "area": "Pontevedra",
+  "address": "Plaza da Leña 3, 36002, Pontevedra",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 766,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.oeirado.com",
+  "lat": 42.4326366,
+  "lng": -8.6434132,
+  "placeId": "ChIJ33xNfsZxLw0R_VlU-oT6B4A"
+}

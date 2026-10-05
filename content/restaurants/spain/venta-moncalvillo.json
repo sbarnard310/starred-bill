@@ -1,0 +1,17 @@
+{
+  "name": "Venta Moncalvillo",
+  "city": "la-rioja",
+  "area": "Daroca de Rioja",
+  "address": "Carretera Medrano 6, 26373, Daroca de Rioja",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 731,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ventamoncalvillo.com/web/",
+  "lat": 42.3712413,
+  "lng": -2.5804578,
+  "placeId": "ChIJlSjf5ixQRQ0Rgcbjyrf31fM"
+}

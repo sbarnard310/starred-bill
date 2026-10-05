@@ -1,0 +1,19 @@
+{
+  "name": "Marc Fosh",
+  "city": "balearic-islands",
+  "area": "Palma",
+  "address": "De la Missió 7, 07003, Palma",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 1341,
+  "dinnerType": "menu",
+  "dinner": 159,
+  "dinnerNote": "Tasting menu (other menus from €80)",
+  "sourceType": "site",
+  "source": "https://www.marcfosh.com/",
+  "website": "https://www.marcfosh.com/",
+  "lat": 39.5735982,
+  "lng": 2.6513729,
+  "placeId": "ChIJp8jNHVGSlxIRcQ5-_4bPYBg"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Sollo",
+  "city": "andalusia",
+  "area": "Fuengirola",
+  "address": "Avenida del Higuerón 48, 29640, Fuengirola",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 356,
+  "dinnerType": "menu",
+  "dinner": 85,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.sollo.es/en/menu/pairings/",
+  "website": "https://www.sollo.es",
+  "lat": 36.5809892,
+  "lng": -4.5956774,
+  "placeId": "ChIJezXuFzx2LxURgLw_P3n5zLo"
+}

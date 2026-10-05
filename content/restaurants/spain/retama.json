@@ -1,0 +1,17 @@
+{
+  "name": "Retama",
+  "city": "castilla-la-mancha",
+  "area": "Torrenueva",
+  "address": "Camino  de Altamar, 13740, Torrenueva",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 127,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotellacaminera.com",
+  "lat": 38.6663677,
+  "lng": -3.3095736,
+  "placeId": "ChIJXW2Tuu4xaQ0RiX1sKglNCow"
+}

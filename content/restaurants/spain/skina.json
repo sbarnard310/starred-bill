@@ -1,0 +1,17 @@
+{
+  "name": "Skina",
+  "city": "andalusia",
+  "area": "Marbella",
+  "address": "Cánovas del Castillo 9, 29601, Marbella",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 316,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restauranteskina.com/",
+  "lat": 36.5116735,
+  "lng": -4.9012506,
+  "placeId": "ChIJ-Q9epwfYcg0RaTPKmHo19EI"
+}

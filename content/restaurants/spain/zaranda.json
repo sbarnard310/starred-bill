@@ -1,0 +1,17 @@
+{
+  "name": "Zaranda",
+  "city": "balearic-islands",
+  "area": "Palma",
+  "address": "Bala Roja 1, 07001, Palma",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 293,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.zaranda.es",
+  "lat": 39.5657787,
+  "lng": 2.6554437,
+  "placeId": "ChIJ96dh0IwoQg0RVQTtUBZwfOs"
+}

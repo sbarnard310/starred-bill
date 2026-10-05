@@ -1,0 +1,17 @@
+{
+  "name": "ReComiendo",
+  "city": "andalusia",
+  "area": "Córdoba",
+  "address": "Mirto 7, 14012, Córdoba",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 2032,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.recomiendopower.com/",
+  "lat": 37.908204,
+  "lng": -4.776105,
+  "placeId": "ChIJ2dE_gHLfbA0RxjL5L2khycs"
+}

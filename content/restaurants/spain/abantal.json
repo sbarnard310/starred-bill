@@ -1,0 +1,17 @@
+{
+  "name": "Abantal",
+  "city": "andalusia",
+  "area": "Seville",
+  "address": "Alcalde José de la Bandera 7, 41003, Seville",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 1375,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://abantalrestaurante.es/",
+  "lat": 37.3878998,
+  "lng": -5.9836581,
+  "placeId": "ChIJZ9KMjB1sEg0R6NhDbHBZO9M"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Solla",
+  "city": "galicia",
+  "area": "San Salvador de Poio",
+  "address": "Avenida Sineiro 7, 36005, San Salvador de Poio",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 1121,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://www.restaurantesolla.com",
+  "lat": 42.4334655,
+  "lng": -8.6686035,
+  "placeId": "ChIJa7ERgiRuLw0RG8-XvnH445o"
+}

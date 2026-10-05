@@ -1,0 +1,17 @@
+{
+  "name": "LÚ Cocina y Alma",
+  "city": "andalusia",
+  "area": "Jerez de la Frontera",
+  "address": "Zaragoza 2, 11402, Jerez de la Frontera",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 631,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lucocinayalma.com",
+  "lat": 36.6876345,
+  "lng": -6.1357554,
+  "placeId": "ChIJoy5Sk5XGDQ0RAPg46JVv_-k"
+}

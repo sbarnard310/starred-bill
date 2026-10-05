@@ -1,0 +1,20 @@
+{
+  "name": "Palodú",
+  "city": "andalusia",
+  "area": "Malaga",
+  "address": "Sebastián Souvirón 7-9, 29005, Malaga",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 1097,
+  "dinnerType": "menu",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "site",
+  "source": "https://www.palodurestaurante.es/en",
+  "wine": 75,
+  "website": "https://www.palodurestaurante.es",
+  "lat": 36.719137,
+  "lng": -4.4241615,
+  "placeId": "ChIJfyuBfj73cg0RclZpFzcq4EU"
+}

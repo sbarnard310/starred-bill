@@ -1,0 +1,17 @@
+{
+  "name": "Simposio",
+  "city": "valencian-community",
+  "area": "San Antonio de Benagéber",
+  "address": "Moreras 2, 46184, San Antonio de Benagéber",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 264,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://rogerjulian.es/",
+  "lat": 39.5621719,
+  "lng": -0.4991305,
+  "placeId": "ChIJA50zxwxbYA0Rh4vdxDkuuU8"
+}

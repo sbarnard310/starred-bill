@@ -1,0 +1,18 @@
+{
+  "name": "Riff",
+  "city": "valencian-community",
+  "address": "Conde de Altea 18, 46005, Valencia",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 1027,
+  "dinnerType": "menu",
+  "dinner": 350,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurante-riff.com/cheque-regalo-1",
+  "website": "https://www.restaurante-riff.com/",
+  "lat": 39.4657836,
+  "lng": -0.3684603,
+  "placeId": "ChIJ_bUFI7ZIYA0RBGv2YwGXskw"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "El Ermitaño",
+  "city": "castile-and-leon",
+  "area": "Benavente",
+  "address": "Arrabal Huerta de los Salados, 49600, Benavente",
+  "stars": 1,
+  "cuisine": "Traditional Cuisine",
+  "rating": 4.6,
+  "reviews": 3273,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.elermitano.com/",
+  "lat": 42.00712,
+  "lng": -5.65799,
+  "placeId": "ChIJ5fZXfRBMOA0RifgANGakSdY"
+}

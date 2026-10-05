@@ -1,0 +1,17 @@
+{
+  "name": "Radis",
+  "city": "andalusia",
+  "area": "Jaén",
+  "address": "Tableron 10, 23001, Jaén",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 390,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restauranteradis.es/",
+  "lat": 37.7680566,
+  "lng": -3.7863389,
+  "placeId": "ChIJ52xcUq_XbQ0RSxdk_rxjpSU"
+}

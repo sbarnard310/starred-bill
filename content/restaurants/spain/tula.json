@@ -1,0 +1,17 @@
+{
+  "name": "Tula",
+  "city": "valencian-community",
+  "area": "Xàbia",
+  "address": "Avenida de la Llibertat 36, 03730, Xàbia",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.8,
+  "reviews": 591,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tularestaurante.com/",
+  "lat": 38.7707289,
+  "lng": 0.1925837,
+  "placeId": "ChIJweqhqPsOnhIRNCqMNYXKU7M"
+}

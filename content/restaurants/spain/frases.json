@@ -1,0 +1,16 @@
+{
+  "name": "Frases",
+  "city": "murcia",
+  "address": "San Lorenzo 5 - Bajo Derecha, 30001, Murcia",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 610,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.frasesrestaurante.com/",
+  "lat": 37.9861889,
+  "lng": -1.127942,
+  "placeId": "ChIJQ0hZrBqCYw0RzAifjPj4lFQ"
+}

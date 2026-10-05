@@ -1,0 +1,20 @@
+{
+  "name": "Maca de Castro",
+  "city": "balearic-islands",
+  "area": "Port d'Alcúdia",
+  "address": "Juno s/n, 07410, Port d'Alcúdia",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 444,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://macadecastro.com/menu/",
+  "wine": 110,
+  "website": "https://www.macadecastro.com",
+  "lat": 39.8343,
+  "lng": 3.11829,
+  "placeId": "ChIJA0koiuoslhIRExIrzbyyDs4"
+}

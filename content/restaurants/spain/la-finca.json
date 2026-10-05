@@ -1,0 +1,17 @@
+{
+  "name": "La Finca",
+  "city": "valencian-community",
+  "area": "Elche",
+  "address": "Partida de Perleta 1-7, 03295, Elche",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 2214,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lafinca.es",
+  "lat": 38.2559837,
+  "lng": -0.6504141,
+  "placeId": "ChIJNQnzeii0Yw0RiAFryDegh4c"
+}

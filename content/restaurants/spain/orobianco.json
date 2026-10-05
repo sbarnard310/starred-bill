@@ -1,0 +1,17 @@
+{
+  "name": "Orobianco",
+  "city": "valencian-community",
+  "area": "Calp",
+  "address": "Colina del Sol 49 A, 03710, Calp",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "dinnerType": "menu",
+  "dinner": 80,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://orobianco.es/wp-content/uploads/ING-Menus-grupos-Orobianco-2026.pdf",
+  "wine": 71,
+  "website": "https://www.orobianco.es/",
+  "lat": 38.6665147,
+  "lng": 0.0451019
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Messina",
+  "city": "andalusia",
+  "area": "Marbella",
+  "address": "Avenida Severo Ochoa 12, 29603, Marbella",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 484,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantemessina.com",
+  "lat": 36.5084597,
+  "lng": -4.8806499,
+  "placeId": "ChIJVWH3NvYncw0RYd7C6ytZxrc"
+}

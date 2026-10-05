@@ -1,0 +1,17 @@
+{
+  "name": "Voro",
+  "city": "balearic-islands",
+  "area": "Canyamel",
+  "address": "Urbanización Atalaya de Canyamel, 07589, Canyamel",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 322,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.vororestaurant.com",
+  "lat": 39.6690394,
+  "lng": 3.4395565,
+  "placeId": "ChIJGWe1G_MVlhIRi3JLd51CDVQ"
+}

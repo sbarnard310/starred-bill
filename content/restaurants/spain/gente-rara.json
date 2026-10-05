@@ -1,0 +1,19 @@
+{
+  "name": "Gente Rara",
+  "city": "aragon",
+  "area": "Saragossa",
+  "address": "Santiago Lapuente 10, 50014, Saragossa",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 989,
+  "dinnerType": "menu",
+  "dinner": 230,
+  "dinnerNote": "Tasting menu (other menus from €60)",
+  "sourceType": "site",
+  "source": "https://genterara.es/",
+  "website": "https://www.genterara.es",
+  "lat": 41.6587729,
+  "lng": -0.8705451,
+  "placeId": "ChIJF48Zmn8VWQ0RIXyjTlXziU0"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Código de Barra",
+  "city": "andalusia",
+  "area": "Cadiz",
+  "address": "San Francisco 7, 11004, Cadiz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 905,
+  "dinnerType": "menu",
+  "dinner": 60,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://restaurantecodigodebarracadiz.com/feed/",
+  "website": "https://restaurantecodigodebarracadiz.com/",
+  "lat": 36.5338202,
+  "lng": -6.2954072,
+  "placeId": "ChIJqQKeGGLRDQ0RXZS0uekmjao"
+}

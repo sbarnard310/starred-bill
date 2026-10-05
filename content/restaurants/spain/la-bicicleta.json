@@ -1,0 +1,17 @@
+{
+  "name": "La Bicicleta",
+  "city": "cantabria",
+  "area": "Hoznayo",
+  "address": "La Plaza 12, 39716, Hoznayo",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 917,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.labicicletahoznayo.com",
+  "lat": 43.3902515,
+  "lng": -3.7020062,
+  "placeId": "ChIJHS3n4FXKTg0RYBmHJVM679g"
+}

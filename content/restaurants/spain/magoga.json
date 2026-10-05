@@ -1,0 +1,17 @@
+{
+  "name": "Magoga",
+  "city": "murcia",
+  "area": "Cartagena",
+  "address": "Plaza Doctor Vicente García Marcos 5, 30201, Cartagena",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 1508,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantemagoga.com",
+  "lat": 37.605446,
+  "lng": -0.98376,
+  "placeId": "ChIJ4_jwCCdCYw0RMNUaOB3y0fo"
+}

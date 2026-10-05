@@ -1,0 +1,17 @@
+{
+  "name": "Epílogo",
+  "city": "castilla-la-mancha",
+  "area": "Tomelloso",
+  "address": "Paseo Ramón Ugena 15, 13700, Tomelloso",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 236,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restauranteepilogo.com/",
+  "lat": 39.1489653,
+  "lng": -3.0266187,
+  "placeId": "ChIJt1BTwOz9aA0RPCn-8HpmzYU"
+}

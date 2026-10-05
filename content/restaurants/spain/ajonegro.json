@@ -1,0 +1,17 @@
+{
+  "name": "Ajonegro",
+  "city": "la-rioja",
+  "area": "Logrono",
+  "address": "Hermanos Moroy 1 - bajo 9, 26001, Logrono",
+  "stars": 1,
+  "cuisine": "Fusion",
+  "rating": 4.6,
+  "reviews": 835,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restauranteajonegro.es/",
+  "lat": 42.4657582,
+  "lng": -2.4460143,
+  "placeId": "ChIJLW6xVkerWg0RAoy1FrbC0ps"
+}

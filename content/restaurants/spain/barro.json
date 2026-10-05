@@ -1,0 +1,17 @@
+{
+  "name": "Barro",
+  "city": "castile-and-leon",
+  "area": "Ávila",
+  "address": "Carretera de Salamanca 4, 05002, Ávila",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 240,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.barrorestaurante.es",
+  "lat": 40.6577005,
+  "lng": -4.709749,
+  "placeId": "ChIJIYPG0M7zQA0Ror1sSrxTxuY"
+}

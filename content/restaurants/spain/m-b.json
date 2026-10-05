@@ -1,0 +1,17 @@
+{
+  "name": "M.B",
+  "city": "canary-islands",
+  "area": "Guía de Isora",
+  "address": "Maria Zambrano 2, Carretera TF 47, 38687, Guía de Isora",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.3,
+  "reviews": 304,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mb-tenerife.com/es/",
+  "lat": 28.171041,
+  "lng": -16.799017,
+  "placeId": "ChIJeX4lHyHNQQwRROLp-p8Ktoo"
+}

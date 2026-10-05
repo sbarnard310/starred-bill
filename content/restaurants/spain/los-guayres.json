@@ -1,0 +1,17 @@
+{
+  "name": "Los Guayres",
+  "city": "canary-islands",
+  "area": "Mogán",
+  "address": "Avenida de los Marrero 2, 35138, Mogán",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 731,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.losguayres.com",
+  "lat": 27.8225974,
+  "lng": -15.7595468,
+  "placeId": "ChIJi6U4tpOAQAwRb0njOj6AC9s"
+}

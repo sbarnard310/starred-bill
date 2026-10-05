@@ -1,0 +1,17 @@
+{
+  "name": "Alejandro Serrano",
+  "city": "castile-and-leon",
+  "area": "Miranda de Ebro",
+  "address": "Alfonso VI 49, 09200, Miranda de Ebro",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 314,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.serranoalejandro.es/",
+  "lat": 42.6865108,
+  "lng": -2.9422008,
+  "placeId": "ChIJQ1mJbgybTw0Ro_TTPhgQ5uw"
+}

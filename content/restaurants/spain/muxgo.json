@@ -1,0 +1,17 @@
+{
+  "name": "Muxgo",
+  "city": "canary-islands",
+  "area": "Las Palmas de Gran Canaria",
+  "address": "León y Castillo 227, 35005, Las Palmas de Gran Canaria",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.4,
+  "reviews": 197,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.muxgo.es",
+  "lat": 28.1219882,
+  "lng": -15.4279542,
+  "placeId": "ChIJKTBugNiVQAwRZSc4n1eb_jQ"
+}

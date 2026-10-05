@@ -1,0 +1,17 @@
+{
+  "name": "As Garzas",
+  "city": "galicia",
+  "area": "Barizo",
+  "address": "Porto Barizo 40, 15113, Barizo",
+  "stars": 1,
+  "cuisine": "Galician",
+  "rating": 4.4,
+  "reviews": 642,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.asgarzas.com",
+  "lat": 43.3213756,
+  "lng": -8.8719851,
+  "placeId": "ChIJFXnjnMKiLg0RFxBTuNKTYus"
+}

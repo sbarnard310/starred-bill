@@ -1,0 +1,17 @@
+{
+  "name": "Real Balneario",
+  "city": "asturias",
+  "area": "Salinas",
+  "address": "Avenida Juan Sitges 3, 33405, Salinas",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.4,
+  "reviews": 1087,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.realbalneario.com/es/",
+  "lat": 43.5776638,
+  "lng": -5.966378,
+  "placeId": "ChIJKeTo8RWcNg0RM1wtXt3RddU"
+}

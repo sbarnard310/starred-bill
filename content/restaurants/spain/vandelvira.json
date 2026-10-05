@@ -1,0 +1,20 @@
+{
+  "name": "Vandelvira",
+  "city": "andalusia",
+  "area": "Baeza",
+  "address": "Plaza de San Francisco, 23440, Baeza",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 253,
+  "dinnerType": "menu",
+  "dinner": 89,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://vandelvirarestaurante.es/en/menu",
+  "wine": 43,
+  "website": "https://vandelvirarestaurante.es/",
+  "lat": 37.9941772,
+  "lng": -3.4689799,
+  "placeId": "ChIJt4SN9eaLbg0Ry7l08xk4U4Y"
+}

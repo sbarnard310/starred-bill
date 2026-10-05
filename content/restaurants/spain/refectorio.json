@@ -1,0 +1,19 @@
+{
+  "name": "Refectorio",
+  "city": "castile-and-leon",
+  "area": "Sardón de Duero",
+  "address": "Carretera N 122, 47340, Sardón de Duero",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 76,
+  "dinnerType": "menu",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu (other menus from €60)",
+  "sourceType": "site",
+  "source": "https://abadia-retuerta.com/gastronomia/refectorio/",
+  "website": "https://www.abadia-retuerta.com/",
+  "lat": 41.6156187,
+  "lng": -4.4106521,
+  "placeId": "ChIJ8YIynzodRw0RN04ny7TuCKg"
+}

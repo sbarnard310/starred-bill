@@ -1,0 +1,17 @@
+{
+  "name": "Malak",
+  "city": "andalusia",
+  "area": "Jaén",
+  "address": "Plaza de la Constitución 11, 23001, Jaén",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 527,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantemalak.com/",
+  "lat": 37.767638,
+  "lng": -3.7873502,
+  "placeId": "ChIJbZeTpQDXbQ0RsQvNBPrUyBE"
+}

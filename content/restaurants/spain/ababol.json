@@ -1,0 +1,17 @@
+{
+  "name": "Ababol",
+  "city": "castilla-la-mancha",
+  "area": "Albacete",
+  "address": "Calderón de la Barca 14, 02002, Albacete",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 644,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restauranteababol.es",
+  "lat": 38.9889097,
+  "lng": -1.8541648,
+  "placeId": "ChIJAcjIi8FfZg0RjKDK4L3pG_4"
+}

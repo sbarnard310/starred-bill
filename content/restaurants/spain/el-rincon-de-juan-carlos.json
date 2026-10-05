@@ -1,0 +1,19 @@
+{
+  "name": "El Rincón de Juan Carlos",
+  "city": "adeje",
+  "address": "Avenida Virgen de Guadalupe 21, La Caleta, 38679, Adeje",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 560,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://elrincondejuancarlos.com/el-menu/",
+  "wine": 90,
+  "website": "https://elrincondejuancarlos.com/",
+  "lat": 28.1018325,
+  "lng": -16.7535126,
+  "placeId": "ChIJG61GKRWMagwRQjBhxSfEtwg"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Fusion19",
+  "city": "balearic-islands",
+  "area": "Muro",
+  "address": "Avenida de s'Albufera 23, 07458, Muro",
+  "stars": 1,
+  "cuisine": "Fusion",
+  "rating": 4.6,
+  "reviews": 877,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://fusion19.com/menu-degustacion/",
+  "website": "https://www.fusion19.com",
+  "lat": 39.805798,
+  "lng": 3.1170442,
+  "placeId": "ChIJ-y08KCItlhIROQvnC7bxB4w"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Kaleja",
+  "city": "andalusia",
+  "area": "Malaga",
+  "address": "Marquesa de Moya 9, 29015, Malaga",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 659,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantekaleja.com/",
+  "lat": 36.7211416,
+  "lng": -4.417923,
+  "placeId": "ChIJ26NsLJj3cg0R7M1qfOYrukA"
+}

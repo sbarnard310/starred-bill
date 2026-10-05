@@ -1,0 +1,17 @@
+{
+  "name": "BACK",
+  "city": "andalusia",
+  "area": "Marbella",
+  "address": "Pablo Casals 8, 29602, Marbella",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 910,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.backrestaurante.com/",
+  "lat": 36.509052,
+  "lng": -4.894597,
+  "placeId": "ChIJYZLWAwAocw0R0AQizXdQXq0"
+}

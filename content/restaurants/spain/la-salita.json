@@ -1,0 +1,18 @@
+{
+  "name": "La Salita",
+  "city": "valencian-community",
+  "address": "Pere III El Gran 11, 46005, Valencia",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 2208,
+  "dinnerType": "menu",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.anarkiagroup.com/menus-la-salita-4",
+  "website": "https://www.anarkiagroup.com/inicio/la-salita",
+  "lat": 39.4623668,
+  "lng": -0.3696366,
+  "placeId": "ChIJ9UOhGJFIYA0R3xWddCYdzrM"
+}

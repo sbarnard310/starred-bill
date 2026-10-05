@@ -1,0 +1,17 @@
+{
+  "name": "El Retiro",
+  "city": "asturias",
+  "area": "Llanes",
+  "address": "Carretera Pancar, 33500, Llanes",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 688,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.elretirollanes.es/",
+  "lat": 43.4123756,
+  "lng": -4.7621095,
+  "placeId": "ChIJtx3YjuTqSQ0R74Oo_l49F3U"
+}

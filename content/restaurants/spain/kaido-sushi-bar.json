@@ -1,0 +1,16 @@
+{
+  "name": "Kaido Sushi Bar",
+  "city": "valencian-community",
+  "address": "Chile 3, 46021, Valencia",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 341,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kaidosushi.es/",
+  "lat": 39.470454,
+  "lng": -0.3575637,
+  "placeId": "ChIJpWeGRw5JYA0RWBgBYbijiWQ"
+}

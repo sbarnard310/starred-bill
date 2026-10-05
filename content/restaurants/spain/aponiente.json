@@ -1,0 +1,20 @@
+{
+  "name": "Aponiente",
+  "city": "andalusia",
+  "area": "El Puerto de Santa María",
+  "address": "Francisco Cossi Ochoa, 11500, El Puerto de Santa María",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 2140,
+  "dinnerType": "menu",
+  "dinner": 550,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.aponiente.com/wp-content/uploads/2026/06/APONIENTE-MENU-2026.pdf",
+  "wine": 180,
+  "website": "https://www.aponiente.com/",
+  "lat": 36.6032543,
+  "lng": -6.2164679,
+  "placeId": "ChIJS8jxvenPDQ0Rl6kdS43TPQc"
+}

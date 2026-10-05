@@ -1,0 +1,17 @@
+{
+  "name": "Ikaro",
+  "city": "la-rioja",
+  "area": "Logrono",
+  "address": "Avenida de Portugal 3, 26001, Logrono",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 1059,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restauranteikaro.com/",
+  "lat": 42.4643373,
+  "lng": -2.4485193,
+  "placeId": "ChIJlziupUerWg0RenC8MSqseg0"
+}

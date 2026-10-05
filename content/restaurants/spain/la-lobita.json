@@ -1,0 +1,17 @@
+{
+  "name": "La Lobita",
+  "city": "castile-and-leon",
+  "area": "Navaleno",
+  "address": "Avenida La Constitución 54, 42149, Navaleno",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 570,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lalobita.es/",
+  "lat": 41.8367514,
+  "lng": -3.0064064,
+  "placeId": "ChIJ1YoirS38RA0RxG0SIkJOST8"
+}

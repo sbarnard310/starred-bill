@@ -1,0 +1,17 @@
+{
+  "name": "Baeza & Rufete",
+  "city": "valencian-community",
+  "area": "Alacant",
+  "address": "Avenida de Ansaldo 31, Local 1 - Centro Comercial Portalada, 03540, Alacant",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 558,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.baezarufete.com",
+  "lat": 38.368797,
+  "lng": -0.433443,
+  "placeId": "ChIJ8_vV1sc5Yg0RCXkhibtfYB8"
+}

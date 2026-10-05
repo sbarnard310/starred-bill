@@ -1,0 +1,16 @@
+{
+  "name": "Almo de Juan Guillamón",
+  "city": "murcia",
+  "address": "Madre de Dios 15, 30004, Murcia",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.8,
+  "reviews": 998,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://almorestaurante.com/",
+  "lat": 37.9842525,
+  "lng": -1.132081,
+  "placeId": "ChIJQdZB0M6DYw0RZX9zFJkBjRg"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "El Doncel",
+  "city": "castilla-la-mancha",
+  "area": "Sigüenza",
+  "address": "Paseo de la Alameda 3, 19250, Sigüenza",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1202,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://eldoncel.com/",
+  "lat": 41.0692522,
+  "lng": -2.643727,
+  "placeId": "ChIJjwaw-D1FQw0Rd-9WYPw7Wjk"
+}

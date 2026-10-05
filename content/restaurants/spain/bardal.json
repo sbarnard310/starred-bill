@@ -1,0 +1,17 @@
+{
+  "name": "Bardal",
+  "city": "andalusia",
+  "area": "Ronda",
+  "address": "José Aparicio 1, 29400, Ronda",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 547,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantebardal.com/",
+  "lat": 36.74161,
+  "lng": -5.16655,
+  "placeId": "ChIJfycB4TgxDQ0RPC-1VC7ddac"
+}

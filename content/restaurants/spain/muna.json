@@ -1,0 +1,19 @@
+{
+  "name": "Mu•na",
+  "city": "castile-and-leon",
+  "area": "Ponferrada",
+  "address": "Gil y Carrasco 25, 24401, Ponferrada",
+  "stars": 1,
+  "cuisine": "Fusion",
+  "rating": 4.7,
+  "reviews": 965,
+  "dinnerType": "menu",
+  "dinner": 89,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://restaurantemuna.com/menu/",
+  "website": "https://restaurantemuna.com/",
+  "lat": 42.5434,
+  "lng": -6.59309,
+  "placeId": "ChIJ06J5C526MA0Rlj3y0tRfvBg"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Tatau",
+  "city": "aragon",
+  "area": "Huesca",
+  "address": "Azara, 22002, Huesca",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 1227,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tatau.es",
+  "lat": 42.1385269,
+  "lng": -0.4084429,
+  "placeId": "ChIJvV3J20lEWA0R1Wwy9plja1M"
+}

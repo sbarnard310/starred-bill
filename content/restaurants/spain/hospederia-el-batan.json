@@ -1,0 +1,17 @@
+{
+  "name": "Hospedería El Batán",
+  "city": "aragon",
+  "area": "Tramacastilla",
+  "address": "Carretera A 1512, 44112, Tramacastilla",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 839,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.elbatan.es",
+  "lat": 40.42797,
+  "lng": -1.5602059,
+  "placeId": "ChIJfYWyUHW5XQ0RutRYFMVNCws"
+}

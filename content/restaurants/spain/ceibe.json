@@ -1,0 +1,17 @@
+{
+  "name": "Ceibe",
+  "city": "galicia",
+  "area": "Ourense",
+  "address": "San Miguel 8, 32005, Ourense",
+  "stars": 1,
+  "cuisine": "Galician",
+  "rating": 4.7,
+  "reviews": 438,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ceiberestaurante.es/",
+  "lat": 42.3377294,
+  "lng": -7.8637958,
+  "placeId": "ChIJL9-m9Ir_Lw0RVh139VZWQrs"
+}

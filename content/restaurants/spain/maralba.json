@@ -1,0 +1,17 @@
+{
+  "name": "Maralba",
+  "city": "castilla-la-mancha",
+  "area": "Almansa",
+  "address": "Violeta Parra 5, 02640, Almansa",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 1087,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.maralbarestaurante.es/",
+  "lat": 38.8696375,
+  "lng": -1.0910555,
+  "placeId": "ChIJH6uXbRtPYQ0RjGiBxTRkQIs"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "La Era de los Nogales",
+  "city": "aragon",
+  "area": "Sardas",
+  "address": "Baja 2, 22613, Sardas",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 651,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.laeradelosnogales.com",
+  "lat": 42.5067095,
+  "lng": -0.3378358,
+  "placeId": "ChIJd1OmsQAhWA0RQgCMJX1-Cgg"
+}

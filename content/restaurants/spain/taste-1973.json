@@ -1,0 +1,17 @@
+{
+  "name": "Taste 1973",
+  "city": "canary-islands",
+  "area": "Playa de las Américas",
+  "address": "Avenida de Rafael Puig Lluvina 38, 38650, Playa de las Américas",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 123,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.taste1973restaurant.com",
+  "lat": 28.0561987,
+  "lng": -16.7348606,
+  "placeId": "ChIJtbSR-gWXagwRYmh0HmMAvJY"
+}

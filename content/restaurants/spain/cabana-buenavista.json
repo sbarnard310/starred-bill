@@ -1,0 +1,20 @@
+{
+  "name": "Cabaña Buenavista",
+  "city": "murcia",
+  "area": "El Palmar",
+  "address": "Calle Buenavista s/n - Urbanización Buenavista, 30120, El Palmar",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 555,
+  "dinnerType": "menu",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu (other menus from €150)",
+  "sourceType": "site",
+  "source": "https://restaurantecabanabuenavista.com/",
+  "wine": 75,
+  "website": "https://restaurantelacabana.com/",
+  "lat": 37.92464,
+  "lng": -1.163767,
+  "placeId": "ChIJi59-phx_Yw0RuSCDtYjHTRk"
+}

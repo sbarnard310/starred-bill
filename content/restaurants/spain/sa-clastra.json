@@ -1,0 +1,19 @@
+{
+  "name": "Sa Clastra",
+  "city": "balearic-islands",
+  "area": "Es Capdellà",
+  "address": "Carretera Es Capdellà, Km 1.7, 07196, Es Capdellà",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 83,
+  "dinnerType": "menu",
+  "dinner": 350,
+  "dinnerNote": "Tasting menu (other menus from €150)",
+  "sourceType": "site",
+  "source": "https://www.castellsonclaret.com/restaurantes-de-lujo-en-mallorca-castell-son-claret/day-pass",
+  "website": "https://www.castellsonclaret.com/gastronomia/restaurante-sa-clastra-alta-cocina-en-mallorca",
+  "lat": 39.5918479,
+  "lng": 2.4800457,
+  "placeId": "ChIJH8Zsw_6LlxIRcsJ6gJNu6Xo"
+}

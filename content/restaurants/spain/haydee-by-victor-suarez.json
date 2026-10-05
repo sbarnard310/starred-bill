@@ -1,0 +1,19 @@
+{
+  "name": "Haydée by Víctor Suárez",
+  "city": "adeje",
+  "address": "Unterhaching, 38660, Adeje",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 807,
+  "dinnerType": "menu",
+  "dinner": 260,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://restaurantehaydee.rest/de/home-de/",
+  "wine": 140,
+  "website": "https://www.restaurantehaydee.rest/es/inicio/",
+  "lat": 28.0909726,
+  "lng": -16.7412967,
+  "placeId": "ChIJqzwL3E_VQQwRoXVAeFGAv8s"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Soseoul Hannam",
+  "city": "seoul",
+  "address": "B1F, 21-18 Hannam-daero 20-gil, Yongsan-gu, 04419, Seoul",
+  "stars": 1,
+  "cuisine": "Korean",
+  "rating": 4.5,
+  "reviews": 259,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 37.53528,
+  "lng": 127.00914,
+  "placeId": "ChIJ8R_CLEWjfDUR3HHfL-sNAiA"
+}

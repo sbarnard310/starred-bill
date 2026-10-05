@@ -1,0 +1,17 @@
+{
+  "name": "Palate",
+  "city": "south-korea",
+  "area": "Busan",
+  "address": "3F, 154 Dalmaji-gil 65 beon-gil, Haeundae-gu, 48576, Busan",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.5,
+  "reviews": 63,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.palatebusan.com",
+  "lat": 35.15659,
+  "lng": 129.17844,
+  "placeId": "ChIJvUxGj8PtaDURh_IyReJM320"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Fiotto",
+  "city": "south-korea",
+  "area": "Busan",
+  "address": "2F, 219 Dalmaji-gil 117 beonga-gil, Haeundae-gu, 48105, Busan",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.4,
+  "reviews": 32,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 35.16127,
+  "lng": 129.1833,
+  "placeId": "ChIJVds1KMWNaDUR0eBDjoc3IfM"
+}

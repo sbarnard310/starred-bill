@@ -1,0 +1,16 @@
+{
+  "name": "Mori",
+  "city": "south-korea",
+  "area": "Busan",
+  "address": "#311, 3F, LEEIN: VIEW 2 Commercial Building, 21 Gunam-ro, Haeundae-gu, 48095, Busan",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 31,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 35.163577,
+  "lng": 129.161301,
+  "placeId": "ChIJxYhym0KNaDURznUJelakfU0"
+}

@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 187,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 171,
+  "dinnerNote": "Tasting menu (other menus from €132)",
+  "sourceType": "site",
+  "source": "https://www.spitzner-restaurant.de/speisekarte/",
   "website": "https://www.spitzner-restaurant.de/",
   "lat": 51.9581485,
   "lng": 7.6260295,
@@ -20,6 +22,6 @@
   ],
   "chef": "Karl-Nikolas Spitzner",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 132 €)",
   "cuisineDe": "Französisch-modern"
 }

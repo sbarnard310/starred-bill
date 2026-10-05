@@ -7,8 +7,10 @@
   "rating": 4.5,
   "reviews": 1632,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://thezillersathens.com/wp-content/uploads/2026/07/thezillers_dinner__UK_prices_july26.pdf",
   "website": "https://thezillersathens.com/rooftop-gastronomy/",
   "lat": 37.9757055,
   "lng": 23.7294908,
@@ -19,5 +21,5 @@
   ],
   "chef": "Vasilis Roussos",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας· η τιμή θα προστεθεί"
+  "dinnerNoteEl": "Μενού γευσιγνωσίας"
 }

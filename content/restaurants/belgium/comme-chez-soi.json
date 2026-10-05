@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 868,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.commechezsoi.be/copie-de-riwyne",
   "website": "https://www.commechezsoi.be/",
   "lat": 50.8423511,
   "lng": 4.3459079,
@@ -19,8 +21,8 @@
   ],
   "chef": "Lionel Rigolet",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Klassieke keuken",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine classique"
 }

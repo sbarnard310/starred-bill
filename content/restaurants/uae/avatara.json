@@ -7,8 +7,11 @@
   "rating": 4.8,
   "reviews": 629,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 750,
+  "dinnerNote": "Tasting menu (other menus from AED 540)",
+  "wine": 750,
+  "sourceType": "site",
+  "source": "https://avatara.ae/wp-content/uploads/2025/11/Avatara.pdf",
   "website": "https://avatara.ae/",
   "lat": 25.107342,
   "lng": 55.240847,
@@ -23,5 +26,5 @@
   ],
   "chef": "Omkar Walve",
   "chefSource": "site",
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا"
+  "dinnerNoteAr": "قائمة تذوق (قوائم أخرى من AED 540)"
 }

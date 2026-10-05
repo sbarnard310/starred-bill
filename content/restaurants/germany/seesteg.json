@@ -8,8 +8,15 @@
   "rating": 4.7,
   "reviews": 272,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 152,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "site",
+  "source": "https://seesteg-norderney.de/abendkarte-seesteg/",
+  "lunch": 70,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://seesteg-norderney.de/mittagskarte/",
   "website": "https://seesteg-norderney.de/",
   "lat": 53.7075958,
   "lng": 7.1385585,
@@ -20,6 +27,7 @@
   ],
   "chef": "Markus Kebschull",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Moderne Küche"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
+  "cuisineDe": "Moderne Küche",
+  "lunchNoteDe": "Mittagsmenü"
 }

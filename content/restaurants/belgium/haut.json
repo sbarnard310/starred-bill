@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 357,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://hautrestaurant.be/menu/",
   "website": "https://hautrestaurant.be/",
   "lat": 51.2275327,
   "lng": 2.9245179,
@@ -21,8 +23,8 @@
   ],
   "chef": "Dimitri Proost",
   "chefSource": "site",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Modern Frans",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine française moderne"
 }

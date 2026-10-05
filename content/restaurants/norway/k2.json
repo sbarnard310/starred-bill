@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 196,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1690,
+  "dinnerNote": "Tasting menu (other menus from NOK 960)",
+  "wine": 1430,
+  "sourceType": "site",
+  "source": "https://www.restaurantk2.no/menu",
   "website": "https://www.restaurantk2.no",
   "lat": 58.9697479,
   "lng": 5.7461623,
@@ -23,5 +26,5 @@
   ],
   "chef": "Ola Klepp",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra 960 kr)"
 }

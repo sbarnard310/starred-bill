@@ -9,6 +9,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 65,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.fpjourne-le-restaurant.ch/carte",
   "website": "https://www.fpjourne-le-restaurant.ch/",
   "lat": 46.2034895,
   "lng": 6.1510328,
@@ -26,5 +31,8 @@
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
   "cuisineFr": "Cuisine française moderne",
   "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
-  "cuisineIt": "Francese moderna"
+  "cuisineIt": "Francese moderna",
+  "lunchNoteDe": "Mittagsmenü",
+  "lunchNoteFr": "Menu déjeuner",
+  "lunchNoteIt": "Menu pranzo"
 }

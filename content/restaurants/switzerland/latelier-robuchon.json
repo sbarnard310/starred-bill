@@ -9,6 +9,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 90,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://auberge.com/the-woodward/latelier-robuchon/lunch-business/",
   "website": "https://auberge.com/the-woodward/dine/latelier-robuchon/",
   "lat": 46.2122201,
   "lng": 6.1525513,
@@ -23,5 +28,8 @@
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
   "cuisineFr": "Cuisine française contemporaine",
   "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
-  "cuisineIt": "Francese contemporanea"
+  "cuisineIt": "Francese contemporanea",
+  "lunchNoteDe": "Mittagsmenü",
+  "lunchNoteFr": "Menu déjeuner",
+  "lunchNoteIt": "Menu pranzo"
 }

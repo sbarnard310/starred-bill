@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 1191,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 19900,
+  "dinnerNote": "Tasting menu",
+  "wine": 8900,
+  "sourceType": "site",
+  "source": "https://www.turkft.com/reservation",
   "website": "https://www.turkft.com/",
   "lat": 41.0584197,
   "lng": 28.9775024,
@@ -20,6 +23,6 @@
   ],
   "chef": "Fatih Tutak",
   "chefSource": "michelin",
-  "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "dinnerNoteTr": "Tadım menüsü",
   "cuisineTr": "Modern Mutfak"
 }

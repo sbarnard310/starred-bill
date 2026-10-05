@@ -8,8 +8,11 @@
   "rating": 5,
   "reviews": 498,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu",
+  "wine": 90,
+  "sourceType": "site",
+  "source": "https://restaurant-oben.de/wp-content/uploads/2026/09/2026-herbst.pdf",
   "website": "https://restaurant-oben.de/",
   "lat": 49.38722,
   "lng": 8.7356572,
@@ -20,6 +23,6 @@
   ],
   "chef": "Robert Rädel",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ"
 }

@@ -7,8 +7,10 @@
   "rating": 4.9,
   "reviews": 72,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2650,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurantergo.se/menu",
   "website": "https://www.restaurantergo.se/",
   "lat": 59.3337092,
   "lng": 18.0808598,
@@ -19,5 +21,5 @@
   ],
   "chef": "Petter Johansson",
   "chefSource": "site",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny"
 }

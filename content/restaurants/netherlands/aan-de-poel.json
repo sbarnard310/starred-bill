@@ -8,8 +8,15 @@
   "rating": 4.7,
   "reviews": 717,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu (other menus from €149)",
+  "sourceType": "site",
+  "source": "https://aandepoel.nl/menu-and-wines/",
+  "lunch": 99,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://aandepoel.nl/menu-and-wines/",
   "website": "https://aandepoel.nl/",
   "lat": 52.2999557,
   "lng": 4.8447485,
@@ -22,6 +29,7 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Creatief"
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 149)",
+  "cuisineNl": "Creatief",
+  "lunchNoteNl": "Lunchmenu"
 }

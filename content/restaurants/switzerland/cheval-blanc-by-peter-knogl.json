@@ -9,6 +9,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 230,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.chevalblancbasel.com/en/carte-blanche/",
   "website": "https://www.chevalblancbasel.com/en",
   "lat": 47.5605824,
   "lng": 7.5875661,
@@ -25,5 +30,8 @@
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
   "cuisineFr": "Cuisine française classique",
   "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
-  "cuisineIt": "Francese classica"
+  "cuisineIt": "Francese classica",
+  "lunchNoteDe": "Mittagsmenü",
+  "lunchNoteFr": "Menu déjeuner",
+  "lunchNoteIt": "Menu pranzo"
 }

@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 403,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 360,
+  "dinnerNote": "Tasting menu",
+  "wine": 195,
+  "sourceType": "site",
+  "source": "https://hotel-sonnora.de/wp-content/uploads/2026/10/Sonnora_speisekarte_Okt_001_WEB.pdf",
   "website": "https://www.hotel-sonnora.de/",
   "lat": 49.9377323,
   "lng": 6.8109342,
@@ -20,6 +23,6 @@
   ],
   "chef": "Clemens Rambichler",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Französisch-klassisch"
 }

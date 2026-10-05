@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 274,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://rosami.xaracollection.com/",
   "website": "https://rosami.xaracollection.com/",
   "lat": 35.9143291,
   "lng": 14.493543,
@@ -22,6 +24,6 @@
   ],
   "chef": "Davide Marcon",
   "chefSource": "site",
-  "dinnerNoteMt": "Menu tad-degustazzjoni; il-prezz għad irid jiżdied",
+  "dinnerNoteMt": "Menu tad-degustazzjoni",
   "areaMt": "San Ġiljan"
 }

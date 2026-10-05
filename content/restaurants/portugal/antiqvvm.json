@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 786,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 265,
+  "dinnerNote": "Tasting menu (other menus from €185)",
+  "wine": 235,
+  "sourceType": "site",
+  "source": "https://www.antiqvvm.pt/pt/o-menu",
   "website": "https://www.antiqvvm.pt",
   "lat": 41.14776,
   "lng": -8.62831,
@@ -20,6 +23,6 @@
   ],
   "chef": "Vítor Matos",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 185 €)",
   "cuisinePt": "Criativa"
 }

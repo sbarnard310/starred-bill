@@ -8,8 +8,11 @@
   "rating": 4.6,
   "reviews": 978,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 335,
+  "dinnerNote": "Tasting menu",
+  "wine": 190,
+  "sourceType": "site",
+  "source": "https://www.hisafranko.com/en/menu",
   "website": "https://www.hisafranko.com/",
   "lat": 46.247312,
   "lng": 13.5378132,
@@ -20,5 +23,5 @@
   ],
   "chef": "Ana Roš Stojan",
   "chefSource": "michelin",
-  "dinnerNoteSl": "Degustacijski meni; cena bo dodana"
+  "dinnerNoteSl": "Degustacijski meni"
 }

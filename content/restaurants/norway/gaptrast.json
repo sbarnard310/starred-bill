@@ -5,11 +5,17 @@
   "address": "Baneveien 16, 5010, Bergen",
   "stars": 2,
   "cuisine": "Modern Cuisine",
+  "change": "up",
+  "changeNote": "Gained a second star",
+  "changeDate": "2026-06",
+  "changeNoteNb": "Fikk sin andre stjerne",
   "rating": 5,
   "reviews": 47,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 3500,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://gaptrast.no/",
   "website": "https://gaptrast.no/",
   "lat": 60.392238,
   "lng": 5.3164713,
@@ -18,5 +24,5 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny"
 }

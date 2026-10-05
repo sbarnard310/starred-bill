@@ -8,8 +8,15 @@
   "rating": 4.8,
   "reviews": 155,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 199,
+  "dinnerNote": "Tasting menu (other menus from €159)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-philipp.de/de/menue",
+  "lunch": 79,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-philipp.de/de/menue",
   "website": "https://www.restaurant-philipp.de/",
   "lat": 49.7056147,
   "lng": 10.0242588,
@@ -18,6 +25,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Französisch-modern"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 159 €)",
+  "cuisineDe": "Französisch-modern",
+  "lunchNoteDe": "Mittagsmenü"
 }

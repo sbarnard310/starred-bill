@@ -8,8 +8,11 @@
   "rating": 4.4,
   "reviews": 278,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 128,
+  "dinnerNote": "Tasting menu (other menus from €78)",
+  "wine": 60,
+  "sourceType": "site",
+  "source": "https://www.jer.be/menu/",
   "website": "https://www.jer.be/",
   "lat": 50.9308937,
   "lng": 5.3406079,
@@ -18,8 +21,8 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 78)",
   "cuisineNl": "Moderne keuken",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 78 €)",
   "cuisineFr": "Cuisine moderne"
 }

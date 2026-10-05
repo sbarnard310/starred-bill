@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 33,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 298,
+  "dinnerNote": "Tasting menu (other menus from €198)",
+  "sourceType": "site",
+  "source": "https://schlosshotel-friedrichsruhe.de/wp-content/uploads/2026/09/Le-Cerf-ab-10.-September.pdf",
   "website": "https://schlosshotel-friedrichsruhe.de/gourmet-restaurant-le-cerf/",
   "lat": 49.2436455,
   "lng": 9.5258355,
@@ -21,6 +23,6 @@
   ],
   "chef": "Boris Rommel",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 198 €)",
   "cuisineDe": "Französisch-klassisch"
 }

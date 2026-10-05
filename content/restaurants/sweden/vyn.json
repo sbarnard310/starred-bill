@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 407,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 4000,
+  "dinnerNote": "Tasting menu",
+  "wine": 2500,
+  "sourceType": "site",
+  "source": "https://vynrestaurant.se/restaurant/",
   "website": "https://www.vynrestaurant.se",
   "lat": 55.4962176,
   "lng": 14.3130043,
@@ -17,5 +20,5 @@
   "michelinId": "1212325",
   "chef": "Daniel Berlin",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny"
 }

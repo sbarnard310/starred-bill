@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 373,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "wine": 105,
+  "sourceType": "site",
+  "source": "https://grenache.pt/menu1/",
   "website": "https://grenache.pt/",
   "lat": 38.7124025,
   "lng": -9.13165,
@@ -20,6 +23,6 @@
   ],
   "chef": "Philippe Gelfi",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 135 €)",
   "cuisinePt": "Francesa contemporânea"
 }

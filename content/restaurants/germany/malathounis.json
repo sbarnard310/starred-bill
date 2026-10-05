@@ -8,8 +8,11 @@
   "rating": 4.4,
   "reviews": 159,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 109,
+  "dinnerNote": "Tasting menu (other menus from €89)",
+  "wine": 40,
+  "sourceType": "site",
+  "source": "https://www.malathounis.de/speisekarte/",
   "website": "https://www.malathounis.de/",
   "lat": 48.793824,
   "lng": 9.3423876,
@@ -21,6 +24,6 @@
   ],
   "chef": "Joannis Malathounis",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 89 €)",
   "cuisineDe": "Mediterran"
 }

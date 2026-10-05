@@ -9,6 +9,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 65,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lamicheline.ch/andres-arocena",
   "website": "https://www.lamicheline.ch/",
   "lat": 46.2007883,
   "lng": 6.1658942,
@@ -25,5 +30,8 @@
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
   "cuisineFr": "Cuisine méditerranéenne",
   "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
-  "cuisineIt": "Mediterranea"
+  "cuisineIt": "Mediterranea",
+  "lunchNoteDe": "Mittagsmenü",
+  "lunchNoteFr": "Menu déjeuner",
+  "lunchNoteIt": "Menu pranzo"
 }

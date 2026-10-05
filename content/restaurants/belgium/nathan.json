@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 451,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-nathan.be/en/menu/",
   "website": "https://www.restaurant-nathan.be/",
   "lat": 51.2231806,
   "lng": 4.4027957,
@@ -17,8 +19,8 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 115)",
   "cuisineNl": "Modern Frans",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 115 €)",
   "cuisineFr": "Cuisine française moderne"
 }

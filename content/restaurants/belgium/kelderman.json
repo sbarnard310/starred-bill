@@ -8,8 +8,17 @@
   "rating": 4.8,
   "reviews": 353,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu",
+  "wine": 65,
+  "sourceType": "site",
+  "source": "https://visrestaurant-kelderman.be/?page_id=925",
+  "lunch": 85,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchWine": 45,
+  "lunchSourceType": "site",
+  "lunchSource": "https://visrestaurant-kelderman.be/?page_id=925",
   "website": "https://visrestaurant-kelderman.be/",
   "lat": 50.9301848,
   "lng": 4.041829,
@@ -18,8 +27,10 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Traditionele keuken",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
-  "cuisineFr": "Cuisine traditionnelle"
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine traditionnelle",
+  "lunchNoteNl": "Lunchmenu",
+  "lunchNoteFr": "Menu déjeuner"
 }

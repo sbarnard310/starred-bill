@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 714,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 248,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "wine": 95,
+  "sourceType": "site",
+  "source": "https://mls.lu/media/original/menu-site-fr-1-.pdf",
   "website": "https://www.mls.lu/fr/",
   "lat": 49.5977462,
   "lng": 6.2495447,
@@ -21,8 +24,8 @@
     "vegan",
     "halal"
   ],
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 95 €)",
   "cuisineFr": "Cuisine moderne",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "cuisineDe": "Moderne Küche"
 }

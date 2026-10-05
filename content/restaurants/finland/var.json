@@ -8,8 +8,11 @@
   "rating": 4.6,
   "reviews": 134,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 149,
+  "dinnerNote": "Tasting menu (other menus from €129)",
+  "wine": 129,
+  "sourceType": "site",
+  "source": "https://www.restaurantvar.fi/menu/",
   "website": "https://restaurantvar.fi/",
   "lat": 60.396319,
   "lng": 25.6640296,
@@ -21,5 +24,5 @@
   ],
   "chef": "Oskar Kotka",
   "chefSource": "michelin",
-  "dinnerNoteFi": "Maistelumenu; hinta lisätään myöhemmin"
+  "dinnerNoteFi": "Maistelumenu (muut menut alkaen 129 €)"
 }

@@ -8,8 +8,11 @@
   "rating": 4.5,
   "reviews": 127,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu",
+  "wine": 75,
+  "sourceType": "site",
+  "source": "https://bergschenke-halle.com/speiseberg",
   "website": "https://www.speiseberg.com",
   "lat": 51.5049411,
   "lng": 11.9514969,
@@ -20,6 +23,6 @@
   ],
   "chef": "Christoph Baumgartner",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

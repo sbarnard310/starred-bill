@@ -8,8 +8,16 @@
   "rating": 4.7,
   "reviews": 319,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu (other menus from €80)",
+  "wine": 35,
+  "sourceType": "site",
+  "source": "https://www.hofterhulst.be/",
+  "lunch": 65,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.hofterhulst.be/",
   "website": "https://www.hofterhulst.be/",
   "lat": 51.0769653,
   "lng": 4.793442,
@@ -18,8 +26,10 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 80)",
   "cuisineNl": "Frans",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
-  "cuisineFr": "Cuisine française"
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 80 €)",
+  "cuisineFr": "Cuisine française",
+  "lunchNoteNl": "Lunchmenu",
+  "lunchNoteFr": "Menu déjeuner"
 }

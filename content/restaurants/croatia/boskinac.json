@@ -8,8 +8,11 @@
   "rating": 4.6,
   "reviews": 668,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 172,
+  "dinnerNote": "Tasting menu",
+  "wine": 75,
+  "sourceType": "site",
+  "source": "https://www.boskinac.com/menu",
   "website": "https://www.boskinac.com/",
   "lat": 44.571006,
   "lng": 14.8975384,
@@ -18,5 +21,5 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana"
+  "dinnerNoteHr": "Degustacijski meni"
 }

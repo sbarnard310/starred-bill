@@ -7,8 +7,16 @@
   "rating": 4.8,
   "reviews": 700,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 89500,
+  "dinnerNote": "Tasting menu",
+  "wine": 69900,
+  "sourceType": "site",
+  "source": "https://standrestaurant.hu/chef-kostolo-menu/",
+  "lunch": 69900,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://standrestaurant.hu/ebed-menu/",
   "website": "https://standrestaurant.hu",
   "lat": 47.5001729,
   "lng": 19.0596687,
@@ -19,5 +27,6 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteHu": "Kóstolómenü; az ár később kerül fel"
+  "dinnerNoteHu": "Kóstolómenü",
+  "lunchNoteHu": "Ebédmenü"
 }

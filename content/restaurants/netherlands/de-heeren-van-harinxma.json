@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 30,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 112,
+  "dinnerNote": "Tasting menu (other menus from €89.50)",
+  "wine": 73.5,
+  "sourceType": "site",
+  "source": "https://www.lauswolt.nl/eten-drinken/de-heeren-van-harinxma",
   "website": "https://www.lauswolt.nl/eten-drinken/de-heeren-van-harinxma",
   "lat": 53.0586024,
   "lng": 6.0899357,
@@ -21,6 +24,6 @@
   ],
   "chef": "Seb Smit",
   "chefSource": "site",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf €89.50)",
   "cuisineNl": "Modern Frans"
 }

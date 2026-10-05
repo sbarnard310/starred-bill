@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 370,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1595,
+  "dinnerNote": "Tasting menu (other menus from SEK 1,095)",
+  "wine": 1100,
+  "sourceType": "site",
+  "source": "https://projectgbg.com/signature-menu",
   "website": "https://www.projectgbg.com/",
   "lat": 57.6979745,
   "lng": 11.9825147,
@@ -19,5 +22,5 @@
   ],
   "chef": "Cameron Irving",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 1 095 kr)"
 }

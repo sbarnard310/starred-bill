@@ -8,8 +8,11 @@
   "rating": 4.9,
   "reviews": 298,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €90)",
+  "wine": 62,
+  "sourceType": "site",
+  "source": "https://restaurant-sawito.com/sawito-menue/",
   "website": "https://restaurant-sawito.com/",
   "lat": 52.5645708,
   "lng": 13.112693,
@@ -20,6 +23,6 @@
   ],
   "chef": "Marco Wahl",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "cuisineDe": "Marktküche"
 }

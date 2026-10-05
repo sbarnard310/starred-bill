@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 51,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €145)",
+  "wine": 120,
+  "sourceType": "site",
+  "source": "https://patio.gr/wp-content/uploads/2026/07/PATIO-MENU-WEB.pdf",
   "website": "https://patio.gr/",
   "lat": 37.8138188,
   "lng": 23.7736533,
@@ -21,5 +24,5 @@
   ],
   "chef": "Panagiotis Giakalis",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας· η τιμή θα προστεθεί"
+  "dinnerNoteEl": "Μενού γευσιγνωσίας (άλλα μενού από 145 €)"
 }

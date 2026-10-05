@@ -7,8 +7,10 @@
   "rating": 4.3,
   "reviews": 1071,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 200,
+  "dinnerNote": "Tasting menu (other menus from €120)",
+  "sourceType": "site",
+  "source": "https://nobelhartundschmutzig.com/en/reservation/",
   "website": "https://www.nobelhartundschmutzig.com/",
   "lat": 52.5051559,
   "lng": 13.3906005,
@@ -19,6 +21,6 @@
   ],
   "chef": "Micha Schäfer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 120 €)",
   "cuisineDe": "Kreativ"
 }

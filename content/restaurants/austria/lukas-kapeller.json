@@ -8,8 +8,11 @@
   "rating": 5,
   "reviews": 18,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu",
+  "wine": 94,
+  "sourceType": "site",
+  "source": "https://www.lukas-kapeller.at/restaurant/menue/",
   "website": "https://www.lukas-kapeller.at/restaurant/",
   "lat": 48.0339875,
   "lng": 14.4315961,
@@ -20,6 +23,6 @@
   ],
   "chef": "Lukas Kapeller and Michael Schlöglhofer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

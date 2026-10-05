@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 338,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 133,
+  "dinnerNote": "Tasting menu (other menus from €94)",
+  "sourceType": "site",
+  "source": "https://restaurantjoann.nl/",
   "website": "https://restaurantjoann.nl/",
   "lat": 52.2202226,
   "lng": 6.8909735,
@@ -24,6 +26,6 @@
   ],
   "chef": "Emiel Kwekkeboom",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 94)",
   "cuisineNl": "Creatief"
 }

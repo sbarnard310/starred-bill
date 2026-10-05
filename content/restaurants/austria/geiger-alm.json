@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 120,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 226,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "wine": 115,
+  "sourceType": "site",
+  "source": "https://www.geigeralm.at/wp-content/uploads/2026/09/Geiger-Alm-Menue.pdf",
   "website": "https://www.geigeralm.at/",
   "lat": 47.6605502,
   "lng": 13.743594,
@@ -22,6 +25,6 @@
   ],
   "chef": "Dominik Utassy",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 130 €)",
   "cuisineDe": "Kreativ"
 }

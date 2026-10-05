@@ -7,8 +7,11 @@
   "rating": 4.8,
   "reviews": 748,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 52900,
+  "dinnerNote": "Tasting menu (other menus from HUF 41,900)",
+  "wine": 30000,
+  "sourceType": "site",
+  "source": "https://essenciarestaurant.hu/degusztacios-menu/",
   "website": "https://essenciarestaurant.hu",
   "lat": 47.5010989,
   "lng": 19.0520834,
@@ -17,5 +20,5 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteHu": "Kóstolómenü; az ár később kerül fel"
+  "dinnerNoteHu": "Kóstolómenü (további menük: HUF 41,900-tól)"
 }

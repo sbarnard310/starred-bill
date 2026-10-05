@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 428,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://gasthaushummel.de/die-gourmet-stube",
   "website": "https://gasthaushummel.de/",
   "lat": 49.1161842,
   "lng": 11.9136635,
@@ -20,6 +22,6 @@
   ],
   "chef": "Stefan Hummel",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Marktküche"
 }

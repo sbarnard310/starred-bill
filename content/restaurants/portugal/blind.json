@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 242,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu (other menus from €155)",
+  "sourceType": "site",
+  "source": "https://blind.pt/blind-emotions/",
   "website": "https://www.blind.pt",
   "lat": 41.1451049,
   "lng": -8.6060592,
@@ -20,6 +22,6 @@
   ],
   "chef": "Vítor Matos",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 155 €)",
   "cuisinePt": "Criativa"
 }

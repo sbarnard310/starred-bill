@@ -7,8 +7,11 @@
   "rating": 4.8,
   "reviews": 574,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2075,
+  "dinnerNote": "Tasting menu (other menus from NOK 1,975)",
+  "wine": 1825,
+  "sourceType": "site",
+  "source": "https://statholdergaarden.no/statholdergaarden/meny/dagens",
   "website": "https://www.statholdergaarden.no/",
   "lat": 59.9094664,
   "lng": 10.7431174,
@@ -17,5 +20,5 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 975 kr)"
 }

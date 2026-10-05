@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 335,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://ammolite-restaurant.de/menue-weine/",
   "website": "https://www.ammolite-restaurant.de/",
   "lat": 48.259724,
   "lng": 7.7251226,
@@ -21,6 +23,6 @@
   ],
   "chef": "Peter Hagen-Wiest",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

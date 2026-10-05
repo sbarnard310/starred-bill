@@ -7,8 +7,11 @@
   "rating": 4.4,
   "reviews": 711,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 240,
+  "dinnerNote": "Tasting menu",
+  "wine": 140,
+  "sourceType": "site",
+  "source": "https://deltarestaurant.gr/portfolio/the-menu/",
   "website": "https://www.deltarestaurant.gr",
   "lat": 37.9391772,
   "lng": 23.6913453,
@@ -22,5 +25,5 @@
   ],
   "chef": "George Papazacharias",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας· η τιμή θα προστεθεί"
+  "dinnerNoteEl": "Μενού γευσιγνωσίας"
 }

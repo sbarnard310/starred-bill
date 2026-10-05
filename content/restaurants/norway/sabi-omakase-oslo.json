@@ -7,12 +7,15 @@
   "rating": 4.8,
   "reviews": 253,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 3500,
+  "dinnerNote": "Tasting menu",
+  "wine": 1850,
+  "sourceType": "site",
+  "source": "https://www.omakaseoslo.no/events",
   "website": "https://www.omakaseoslo.no/",
   "lat": 59.9141305,
   "lng": 10.7289794,
   "placeId": "ChIJyZ1OK35uQUYRs_kHgYhPRqE",
   "michelinId": "535566",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny"
 }

@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 161,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 200,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "sourceType": "site",
+  "source": "https://1876.restaurant/wp-content/uploads/2026/10/OKT-2026.pdf",
   "website": "https://www.1876.restaurant/",
   "lat": 51.2436309,
   "lng": 6.8020825,
@@ -17,6 +19,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
   "cuisineDe": "Kreativ"
 }

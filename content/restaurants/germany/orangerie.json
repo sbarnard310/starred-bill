@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 92,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu (other menus from €145)",
+  "sourceType": "site",
+  "source": "https://www.orangerie-timmendorfer-strand.de/de/speisekarte-orangerie",
   "website": "https://www.orangerie-timmendorfer-strand.de/",
   "lat": 54.0007295,
   "lng": 10.7798458,
@@ -21,6 +23,6 @@
   ],
   "chef": "Thomas Lemke and Simone Melis",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 145 €)",
   "cuisineDe": "Französisch-klassisch"
 }

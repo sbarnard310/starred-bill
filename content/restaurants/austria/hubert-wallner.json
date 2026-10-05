@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 423,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 270,
+  "dinnerNote": "Tasting menu (other menus from €230)",
+  "sourceType": "site",
+  "source": "https://hubertwallner.com/kueche-und-keller/",
   "website": "https://hubertwallner.com/",
   "lat": 46.6227443,
   "lng": 14.1179695,
@@ -21,6 +23,6 @@
   ],
   "chef": "Hubert Wallner",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 230 €)",
   "cuisineDe": "Moderne Küche"
 }

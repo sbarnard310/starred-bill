@@ -8,8 +8,11 @@
   "rating": 5,
   "reviews": 131,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 139,
+  "dinnerNote": "Tasting menu",
+  "wine": 41,
+  "sourceType": "site",
+  "source": "http://www.restaurant-cedric.de/menu/",
   "website": "https://www.restaurant-cedric.de/",
   "lat": 48.8044011,
   "lng": 9.3885778,
@@ -20,6 +23,6 @@
   ],
   "chef": "Cédric Staudenmayer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

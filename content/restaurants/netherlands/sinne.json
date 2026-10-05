@@ -7,8 +7,15 @@
   "rating": 4.6,
   "reviews": 674,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "sourceType": "site",
+  "source": "https://restaurantsinne.nl/menukaart/",
+  "lunch": 70,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurantsinne.nl/menukaart/",
   "website": "https://www.restaurantsinne.nl/",
   "lat": 52.3530586,
   "lng": 4.8942525,
@@ -21,6 +28,7 @@
   ],
   "chef": "Alexander Ioannou",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Moderne keuken"
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 85)",
+  "cuisineNl": "Moderne keuken",
+  "lunchNoteNl": "Lunchmenu"
 }

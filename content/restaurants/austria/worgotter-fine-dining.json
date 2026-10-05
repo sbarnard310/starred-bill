@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 355,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "wine": 80,
+  "sourceType": "site",
+  "source": "https://www.xn--wrgtter-90ac.at/",
   "website": "https://www.xn--wrgtter-90ac.at/",
   "lat": 46.993993,
   "lng": 15.206804,
@@ -20,6 +23,6 @@
   ],
   "chef": "Florian Wörgötter",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "cuisineDe": "Kreativ"
 }

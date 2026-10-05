@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 1536,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "wine": 125,
+  "sourceType": "site",
+  "source": "https://www.fortalezadoguincho.com/wp-content/uploads/2026/07/RESTAURANT-MENU-EN-06-26.pdf",
   "website": "https://www.fortalezadoguincho.com/",
   "lat": 38.7282977,
   "lng": -9.4759076,
@@ -17,6 +20,6 @@
   "michelinId": "216662",
   "chef": "Gil Fernandes",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 165 €)",
   "cuisinePt": "Moderna"
 }

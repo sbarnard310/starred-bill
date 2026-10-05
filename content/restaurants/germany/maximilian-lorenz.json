@@ -7,8 +7,11 @@
   "rating": 4.4,
   "reviews": 210,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "wine": 109,
+  "sourceType": "site",
+  "source": "https://maximilianlorenz.de/speisekarte-restaurant-maximilian-lorenz/",
   "website": "https://maximilianlorenz.de/",
   "lat": 50.9445676,
   "lng": 6.9607682,
@@ -20,6 +23,6 @@
   ],
   "chef": "Maximilian Lorenz",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 135 €)",
   "cuisineDe": "Moderne Küche"
 }

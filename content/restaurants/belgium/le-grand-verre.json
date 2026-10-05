@@ -10,6 +10,12 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchWine": 35,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.legrandverre.be/",
   "website": "https://www.legrandverre.be/",
   "lat": 50.3520328,
   "lng": 5.4557638,
@@ -20,5 +26,7 @@
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
   "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
-  "cuisineFr": "Cuisine française moderne"
+  "cuisineFr": "Cuisine française moderne",
+  "lunchNoteNl": "Lunchmenu",
+  "lunchNoteFr": "Menu déjeuner"
 }

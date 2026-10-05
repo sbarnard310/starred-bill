@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 825,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "wine": 119,
+  "sourceType": "site",
+  "source": "https://pelegrini.hr/",
   "website": "https://pelegrini.hr/",
   "lat": 43.7360217,
   "lng": 15.8889282,
@@ -21,6 +24,6 @@
   ],
   "chef": "Rudolf Štefan",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana",
+  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 165 €)",
   "areaHr": "Šibenik"
 }

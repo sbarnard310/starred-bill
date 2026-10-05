@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 365,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu",
+  "wine": 220,
+  "sourceType": "site",
+  "source": "https://palacerestaurant.fi/en/menu",
   "website": "https://palacerestaurant.fi/",
   "lat": 60.1653036,
   "lng": 24.9523857,
@@ -19,5 +22,5 @@
   ],
   "chef": "Eero Vottonen",
   "chefSource": "site",
-  "dinnerNoteFi": "Maistelumenu; hinta lisätään myöhemmin"
+  "dinnerNoteFi": "Maistelumenu"
 }

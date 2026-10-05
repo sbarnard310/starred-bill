@@ -4,11 +4,18 @@
   "address": "Vinohradská 1228/47, 12000, Prague",
   "stars": 1,
   "cuisine": "Asian Influences",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeDate": "2025-12",
+  "changeNoteCs": "Získal první hvězdu",
   "rating": 4.6,
   "reviews": 387,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 5200,
+  "dinnerNote": "Tasting menu (other menus from CZK 4,200)",
+  "wine": 4000,
+  "sourceType": "site",
+  "source": "https://www.levitate.cz/rezervace/",
   "website": "https://www.levitate.cz",
   "lat": 50.0775134,
   "lng": 14.4401108,
@@ -18,5 +25,5 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteCs": "Degustační menu; cena bude doplněna"
+  "dinnerNoteCs": "Degustační menu (další menu od CZK 4,200)"
 }

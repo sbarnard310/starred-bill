@@ -8,8 +8,17 @@
   "rating": 4.7,
   "reviews": 77,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2495,
+  "dinnerNote": "Tasting menu (other menus from NOK 1,995)",
+  "wine": 2495,
+  "sourceType": "site",
+  "source": "https://hermetikken-restaurant.no/meny",
+  "lunch": 1795,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchWine": 1795,
+  "lunchSourceType": "site",
+  "lunchSource": "https://hermetikken-restaurant.no/lunsj",
   "website": "https://hermetikken-restaurant.no",
   "lat": 58.9675838,
   "lng": 5.7221671,
@@ -18,5 +27,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 995 kr)",
+  "lunchNoteNb": "Lunsjmeny"
 }

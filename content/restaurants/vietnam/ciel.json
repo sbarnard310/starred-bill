@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 251,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 3850000,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://cieldining.com/reservations/",
   "website": "https://cieldining.com",
   "lat": 10.805146,
   "lng": 106.7341963,
@@ -16,5 +18,5 @@
   "michelinId": "1217538",
   "chef": "Viet Hong",
   "chefSource": "site",
-  "dinnerNoteVi": "Thực đơn nếm thử; giá sẽ được bổ sung"
+  "dinnerNoteVi": "Thực đơn nếm thử"
 }

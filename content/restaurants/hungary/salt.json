@@ -7,8 +7,16 @@
   "rating": 4.4,
   "reviews": 788,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 69500,
+  "dinnerNote": "Tasting menu",
+  "wine": 39000,
+  "sourceType": "site",
+  "source": "https://saltbudapest.com/menu/",
+  "lunch": 59000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://saltbudapest.com/menu/",
   "website": "https://www.saltbudapest.com",
   "lat": 47.4904,
   "lng": 19.05914,
@@ -22,5 +30,6 @@
   ],
   "chef": "Szilárd Tóth",
   "chefSource": "michelin",
-  "dinnerNoteHu": "Kóstolómenü; az ár később kerül fel"
+  "dinnerNoteHu": "Kóstolómenü",
+  "lunchNoteHu": "Ebédmenü"
 }

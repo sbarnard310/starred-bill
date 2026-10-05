@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 842,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 290,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.vilajoya.com/restaurant/",
   "website": "https://www.vilajoya.com",
   "lat": 37.08059,
   "lng": -8.31367,
@@ -21,6 +23,6 @@
   ],
   "chef": "Dieter Koschina",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Moderna"
 }

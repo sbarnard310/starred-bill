@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 536,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 199,
+  "dinnerNote": "Tasting menu (other menus from €129)",
+  "sourceType": "site",
+  "source": "https://www.monte.hr/menu",
   "website": "https://www.monte.hr/",
   "lat": 45.0826939,
   "lng": 13.6310596,
@@ -21,5 +23,5 @@
   ],
   "chef": "Danijel Đekić",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana"
+  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 129 €)"
 }

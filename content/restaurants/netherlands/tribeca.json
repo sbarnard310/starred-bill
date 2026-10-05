@@ -8,8 +8,15 @@
   "rating": 4.8,
   "reviews": 486,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 235,
+  "dinnerNote": "Tasting menu (other menus from €185)",
+  "sourceType": "site",
+  "source": "https://restaurant-tribeca.com/restaurant/",
+  "lunch": 140,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurant-tribeca.com/lunch/",
   "website": "https://restaurant-tribeca.com/",
   "lat": 51.3793,
   "lng": 5.577939,
@@ -22,6 +29,7 @@
   ],
   "chef": "Jan Sobecki",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Creatief"
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 185)",
+  "cuisineNl": "Creatief",
+  "lunchNoteNl": "Lunchmenu"
 }

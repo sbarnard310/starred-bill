@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 93,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu",
+  "wine": 100,
+  "sourceType": "site",
+  "source": "https://www.traube-blansingen.de/restaurant-new/",
   "website": "https://www.traube-blansingen.de/",
   "lat": 47.6909385,
   "lng": 7.5398759,
@@ -20,6 +23,6 @@
   ],
   "chef": "Brian Wawryk",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

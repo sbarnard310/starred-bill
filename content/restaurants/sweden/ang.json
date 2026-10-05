@@ -8,8 +8,11 @@
   "rating": 4.6,
   "reviews": 143,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2900,
+  "dinnerNote": "Tasting menu",
+  "wine": 2000,
+  "sourceType": "site",
+  "source": "https://www.restaurangang.se/menu/",
   "website": "https://www.restaurangang.se",
   "lat": 57.0649323,
   "lng": 12.5594919,
@@ -17,5 +20,5 @@
   "michelinId": "1192333",
   "chef": "Filip Gemzell",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny"
 }

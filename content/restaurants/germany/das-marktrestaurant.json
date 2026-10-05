@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 287,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 159,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "wine": 62,
+  "sourceType": "site",
+  "source": "https://www.das-marktrestaurant.de/wp-content/uploads/2026/10/Speisekarte_Marktrestaurant_september-1026-1.pdf",
   "website": "https://www.das-marktrestaurant.de/",
   "lat": 47.4390442,
   "lng": 11.2598384,
@@ -20,6 +23,6 @@
   ],
   "chef": "Andreas Hillejan",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "cuisineDe": "Regional"
 }

@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 224,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu (other menus from €109)",
+  "sourceType": "site",
+  "source": "https://www.merkles-restaurant.de/",
   "website": "https://www.merkles-restaurant.de/",
   "lat": 48.1415478,
   "lng": 7.7074626,
@@ -20,6 +22,6 @@
   ],
   "chef": "Thomas Merkle",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 109 €)",
   "cuisineDe": "Moderne Küche"
 }

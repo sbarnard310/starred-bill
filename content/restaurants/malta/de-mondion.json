@@ -10,6 +10,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://demondion.xaracollection.com/wp-content/uploads/sites/3/2026/09/Signature-Saturdays-Sample-Lunch-Menu.pdf",
   "website": "https://demondion.xaracollection.com/",
   "lat": 35.8851399,
   "lng": 14.4046065,
@@ -24,5 +29,6 @@
   "chef": "Clint Grech",
   "chefSource": "michelin",
   "dinnerNoteMt": "Menu tad-degustazzjoni; il-prezz għad irid jiżdied",
-  "areaMt": "L-Imdina"
+  "areaMt": "L-Imdina",
+  "lunchNoteMt": "Menu ta' nofsinhar"
 }

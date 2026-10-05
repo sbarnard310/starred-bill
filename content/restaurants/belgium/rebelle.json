@@ -8,8 +8,15 @@
   "rating": 4.8,
   "reviews": 520,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "sourceType": "site",
+  "source": "https://restaurantrebelle.be/menu",
+  "lunch": 69,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurantrebelle.be/menu",
   "website": "https://www.restaurantrebelle.be/",
   "lat": 50.8039661,
   "lng": 3.2218248,
@@ -18,8 +25,10 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
   "cuisineNl": "Moderne keuken",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
-  "cuisineFr": "Cuisine moderne"
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 135 €)",
+  "cuisineFr": "Cuisine moderne",
+  "lunchNoteNl": "Lunchmenu",
+  "lunchNoteFr": "Menu déjeuner"
 }

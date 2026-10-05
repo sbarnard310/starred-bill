@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 77,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 265,
+  "dinnerNote": "Tasting menu (other menus from €245)",
+  "sourceType": "site",
+  "source": "https://restaurantgem.com/menu/",
   "website": "https://restaurantgem.com/",
   "lat": 51.5531164,
   "lng": 5.6808823,
@@ -25,6 +27,6 @@
   ],
   "chef": "Soenil Bahadoer",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 245)",
   "cuisineNl": "Creatief"
 }

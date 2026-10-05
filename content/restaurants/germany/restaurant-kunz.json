@@ -8,8 +8,11 @@
   "rating": 4.5,
   "reviews": 255,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 168,
+  "dinnerNote": "Tasting menu (other menus from €128)",
+  "wine": 70,
+  "sourceType": "site",
+  "source": "https://cdn.website-editor.net/s/1eb6d6e81be44f2ebdbf6b2077646358/files/uploaded/Speisekarte+Kunz+Gourmet+ab+Oktober+26.pdf?Expires=1793796743&Signature=dJ5i0QfS7yl5F37GAl4KANmlj7hMrkYE0TsvPQmD0xsDl1WbZcN2vGC-1kJPZ2Nxg0zaHCQDsNJaItxW5Wvno~U8akSrGz-lUvXVPlJ4X4FH~cHs8HWWe8V-tAY~r8GZxhH9MHCzoTAqcuiFiYCYu3Pz6-8891y364tFd6bfKGPNfoEeNQX3kzXiwO2HQQa4lc23ZBJezqP5oCmj3PfZfhDFcJCvz-J8XKwVyQYhfnX9AaRspzoPZK2XDjJkpg4SQ0wMb8MDDlmWUZdMviqnprFRRNEZJ6WUeDIMk8ZDqgdxTXBS1ZCk0TC5ojg8lYALdlRLX2-lWpfVwS-CsBedJA__&Key-Pair-Id=K2NXBXLF010TJW",
   "website": "https://www.restaurant-kunz.de",
   "lat": 49.4956618,
   "lng": 7.1124796,
@@ -20,6 +23,6 @@
   ],
   "chef": "Patrick Jenal",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 128 €)",
   "cuisineDe": "Französisch-klassisch"
 }

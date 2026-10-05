@@ -7,8 +7,10 @@
   "rating": 4.5,
   "reviews": 259,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 188,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://restaurant-piment.de/menu/",
   "website": "https://restaurant-piment.de/",
   "lat": 53.5820645,
   "lng": 9.9797292,
@@ -19,6 +21,6 @@
   ],
   "chef": "Wahabi Nouri",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ"
 }

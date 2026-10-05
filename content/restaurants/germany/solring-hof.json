@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 325,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 319,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://soelring-hof.de/gourmetrestaurant-sylt/sylt-2-sterne-restaurant/",
   "website": "https://www.soelring-hof.de/",
   "lat": 54.8536822,
   "lng": 8.2887697,
@@ -21,6 +23,6 @@
   ],
   "chef": "Jan-Philipp Berner",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

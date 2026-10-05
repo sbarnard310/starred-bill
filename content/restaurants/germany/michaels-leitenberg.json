@@ -8,8 +8,11 @@
   "rating": 4.5,
   "reviews": 273,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 209,
+  "dinnerNote": "Tasting menu (other menus from €145)",
+  "wine": 125,
+  "sourceType": "site",
+  "source": "https://cdn.website-editor.net/s/e54942f9e33e41a8a722cd079c3166db/files/uploaded/Menu-+September+2026.pdf?Expires=1793573545&Signature=T6mKTCldBkURydOGHaHCMhY7SRhI2Kqyn9aSsz9xSzC~~C8qHvgditxy25s3R3nQGPCyU4602x1TW0JhniIxG4nVIdVDWASMmRUJo7fAGwI-71c1bB8hlH5rc-K4AOKkKWAJYtmI5O2rH2Jhhz5C6JVJ7sykVMvUCMxXxjVuG3-Xq~K~kvHN4Bj87Qxx9r-8FD83AQFAm7ascrpjJ1dPdG4HTDAatjNcwBviWuJFMiG~pf-U5pryZa3Bo0uhuPAM5H4AfVfdPI73ShPOTO9ltYz3oyc0ihbM1vwf7ZbTFw8sGeegFHYstXPMlfQYxZSa6pCdXrW9kR2OIX5CirSMng__&Key-Pair-Id=K2NXBXLF010TJW",
   "website": "https://www.michaels-leitenberg.de/",
   "lat": 47.8046083,
   "lng": 12.3074069,
@@ -18,6 +21,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 145 €)",
   "cuisineDe": "Moderne Küche"
 }

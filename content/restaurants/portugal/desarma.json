@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 360,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu (other menus from €195)",
+  "sourceType": "site",
+  "source": "https://desarma.pt/en/9-moments-menu/",
   "website": "https://www.desarma.pt/",
   "lat": 32.648641,
   "lng": -16.9194868,
@@ -22,6 +24,6 @@
   ],
   "chef": "Octávio Freitas",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 195 €)",
   "cuisinePt": "Atual"
 }

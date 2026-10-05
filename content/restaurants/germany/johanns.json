@@ -8,8 +8,16 @@
   "rating": 4.8,
   "reviews": 389,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu (other menus from €129)",
+  "wine": 80,
+  "sourceType": "site",
+  "source": "https://www.garhammer.de/media/wysiwyg/pdf/Johanns_Menue_Abends_Oktober.pdf",
+  "lunch": 59,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.garhammer.de/media/wysiwyg/pdf/Johanns_Menue_Mittag_Oktober.pdf",
   "website": "https://www.restaurant-johanns.de/",
   "lat": 48.729862,
   "lng": 13.6007906,
@@ -21,6 +29,7 @@
   ],
   "chef": "Michael Simon Reis",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Moderne Küche"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
+  "cuisineDe": "Moderne Küche",
+  "lunchNoteDe": "Mittagsmenü"
 }

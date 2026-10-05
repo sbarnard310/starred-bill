@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 185,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €160)",
+  "wine": 125,
+  "sourceType": "site",
+  "source": "https://www.ldrestaurant.com/tasting-menu",
   "website": "https://www.ldrestaurant.com/",
   "lat": 42.961559,
   "lng": 17.1370118,
@@ -22,6 +25,6 @@
   ],
   "chef": "Marko Gajski",
   "chefSource": "site",
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana",
+  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 160 €)",
   "areaHr": "Korčula"
 }

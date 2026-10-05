@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 175,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2450,
+  "dinnerNote": "Tasting menu (other menus from NOK 1,350)",
+  "wine": 2000,
+  "sourceType": "site",
+  "source": "https://mononcle.no/menu",
   "website": "https://www.mononcle.no",
   "lat": 59.917166,
   "lng": 10.7389457,
@@ -19,5 +22,5 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 350 kr)"
 }

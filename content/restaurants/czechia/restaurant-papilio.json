@@ -5,11 +5,18 @@
   "address": "Tyršova náves 1, 26716, Vysoký Újezd",
   "stars": 2,
   "cuisine": "Creative",
+  "change": "new",
+  "changeNote": "New straight in with two stars",
+  "changeDate": "2025-12",
+  "changeNoteCs": "Nově rovnou se dvěma hvězdami",
   "rating": 4.9,
   "reviews": 197,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 6500,
+  "dinnerNote": "Tasting menu (other menus from CZK 5,500)",
+  "wine": 3500,
+  "sourceType": "site",
+  "source": "https://restaurant-papilio.cz/",
   "website": "https://restaurant-papilio.cz/",
   "lat": 49.9933899,
   "lng": 14.2048483,
@@ -21,5 +28,5 @@
   ],
   "chef": "Jan Knedla",
   "chefSource": "michelin",
-  "dinnerNoteCs": "Degustační menu; cena bude doplněna"
+  "dinnerNoteCs": "Degustační menu (další menu od CZK 5,500)"
 }

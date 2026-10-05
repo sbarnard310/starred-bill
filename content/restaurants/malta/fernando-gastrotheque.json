@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 397,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "site",
+  "source": "https://www.fernando.com.mt/assets/upload/files/fernando-7courseapril.pdf",
   "website": "https://www.fernando.com.mt/",
   "lat": 35.9099793,
   "lng": 14.5069007,
@@ -20,6 +22,6 @@
   ],
   "chef": "Laszlo Sragli",
   "chefSource": "site",
-  "dinnerNoteMt": "Menu tad-degustazzjoni; il-prezz għad irid jiżdied",
+  "dinnerNoteMt": "Menu tad-degustazzjoni (menus oħra minn €95)",
   "areaMt": "Tas-Sliema"
 }

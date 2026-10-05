@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 745,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 630,
+  "dinnerNote": "Tasting menu (other menus from RM 520)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-aujardin.com/_files/ugd/3b5fc6_97eb8f81d2314cc1b76776f321b0c079.pdf",
   "website": "https://www.restaurant-aujardin.com",
   "lat": 5.412,
   "lng": 100.327,
@@ -22,5 +24,5 @@
   ],
   "chef": "Su Kim Hock",
   "chefSource": "site",
-  "dinnerNoteMs": "Menu rasa; harga akan ditambah"
+  "dinnerNoteMs": "Menu rasa (menu lain dari RM 520)"
 }

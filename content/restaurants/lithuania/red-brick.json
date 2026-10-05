@@ -5,11 +5,18 @@
   "address": "Farmers Circle, Žirgyno gatvė 1, 20364, Radiškis",
   "stars": 1,
   "cuisine": "Modern Cuisine",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeDate": "2026-06",
+  "changeNoteLt": "Pelnė pirmąją žvaigždę",
   "rating": 4.7,
   "reviews": 146,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 97,
+  "dinnerNote": "Tasting menu",
+  "wine": 53,
+  "sourceType": "site",
+  "source": "https://red-brick.lt/gastronomy/",
   "website": "https://red-brick.lt",
   "lat": 55.3396361,
   "lng": 24.9135679,
@@ -22,5 +29,5 @@
   ],
   "chef": "Arnór Ingi Bjarkason",
   "chefSource": "michelin",
-  "dinnerNoteLt": "Degustacinis meniu; kaina bus pridėta"
+  "dinnerNoteLt": "Degustacinis meniu"
 }

@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 856,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 215,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://lesdeux-muc.de/karte-restaurant",
   "website": "https://lesdeux-muc.de/",
   "lat": 48.1393139,
   "lng": 11.5746554,
@@ -20,6 +22,6 @@
   ],
   "chef": "Nathalie Leblond",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Französisch-modern"
 }

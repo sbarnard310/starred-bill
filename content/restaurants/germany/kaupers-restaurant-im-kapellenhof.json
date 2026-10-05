@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 128,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 154,
+  "dinnerNote": "Tasting menu (other menus from €118)",
+  "sourceType": "site",
+  "source": "https://www.kaupers-kapellenhof.de/wp-content/uploads/2026/06/2026-Menuepreise-Kaupers-Kapellenhof.pdf",
   "website": "https://www.kaupers-kapellenhof.de/",
   "lat": 49.8639732,
   "lng": 8.2551053,
@@ -20,6 +22,6 @@
   ],
   "chef": "Sebastian Kauper and Nora Breyer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 118 €)",
   "cuisineDe": "Moderne Küche"
 }

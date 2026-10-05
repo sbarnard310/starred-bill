@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 146,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 215,
+  "dinnerNote": "Tasting menu",
+  "wine": 100,
+  "sourceType": "site",
+  "source": "https://www.kulmeck.de/wp-content/uploads/2026/09/kulmeck_menue_23092026.pdf",
   "website": "https://www.kulmeck.de/",
   "lat": 53.9597826,
   "lng": 14.1610478,
@@ -17,6 +20,6 @@
   "michelinId": "1192754",
   "chef": "Tom Wickboldt",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

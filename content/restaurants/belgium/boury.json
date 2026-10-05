@@ -8,8 +8,17 @@
   "rating": 4.9,
   "reviews": 905,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 340,
+  "dinnerNote": "Tasting menu",
+  "wine": 150,
+  "sourceType": "site",
+  "source": "https://www.restaurantboury.be/menu",
+  "lunch": 230,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchWine": 95,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantboury.be/menu",
   "website": "https://www.restaurantboury.be/",
   "lat": 50.9374466,
   "lng": 3.1403981,
@@ -19,8 +28,10 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief Frans",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
-  "cuisineFr": "Cuisine française créative"
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine française créative",
+  "lunchNoteNl": "Lunchmenu",
+  "lunchNoteFr": "Menu déjeuner"
 }

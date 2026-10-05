@@ -8,8 +8,11 @@
   "rating": 4.6,
   "reviews": 344,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €105)",
+  "wine": 65,
+  "sourceType": "site",
+  "source": "https://couvertcouvert.be/menu",
   "website": "https://www.couvertcouvert.be/",
   "lat": 50.8629609,
   "lng": 4.6596864,
@@ -20,8 +23,8 @@
     "vegetarian",
     "halal"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
   "cuisineNl": "Creatief",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 105 €)",
   "cuisineFr": "Cuisine créative"
 }

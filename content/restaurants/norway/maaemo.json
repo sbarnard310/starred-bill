@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 891,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 5900,
+  "dinnerNote": "Tasting menu",
+  "wine": 3950,
+  "sourceType": "site",
+  "source": "https://maaemo.no/information",
   "website": "https://www.maaemo.no",
   "lat": 59.9075293,
   "lng": 10.7586363,
@@ -19,5 +22,5 @@
   ],
   "chef": "Esben Holmboe Bang",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny"
 }

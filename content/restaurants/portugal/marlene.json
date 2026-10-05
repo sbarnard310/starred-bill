@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 180,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €150)",
+  "sourceType": "site",
+  "source": "https://marlene.pt/menu/",
   "website": "https://www.marlene.pt",
   "lat": 38.7120612,
   "lng": -9.1240727,
@@ -20,6 +22,6 @@
   ],
   "chef": "Marlene Vieira",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 150 €)",
   "cuisinePt": "Moderna"
 }

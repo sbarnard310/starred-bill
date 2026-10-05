@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 189,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu (other menus from €170)",
+  "wine": 115,
+  "sourceType": "site",
+  "source": "https://www.wein-tafelhaus.de/wp-content/uploads/sites/12/2026/10/Speisekarte-Gourmet-Aenderung-vorbehalten.pdf",
   "website": "https://www.wein-tafelhaus.de/",
   "lat": 49.8215136,
   "lng": 6.9027898,
@@ -20,6 +23,6 @@
   ],
   "chef": "Alexander Oos",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 170 €)",
   "cuisineDe": "Marktküche"
 }

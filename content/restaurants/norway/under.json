@@ -10,6 +10,12 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 1650,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchWine": 1250,
+  "lunchSourceType": "site",
+  "lunchSource": "https://under.no/mat-og-drikke/",
   "website": "https://www.under.no/",
   "lat": 58.0407094,
   "lng": 7.1544058,
@@ -18,5 +24,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny; prisen legges til senere",
+  "lunchNoteNb": "Lunsjmeny"
 }

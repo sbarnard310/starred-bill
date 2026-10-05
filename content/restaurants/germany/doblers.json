@@ -10,6 +10,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 63,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://doblers-restaurant.de/web/",
   "website": "https://doblers-restaurant.de/web/",
   "lat": 49.4810346,
   "lng": 8.4761985,
@@ -21,5 +26,6 @@
   "chef": "Eric Schumacher",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Klassische Küche"
+  "cuisineDe": "Klassische Küche",
+  "lunchNoteDe": "Mittagsmenü"
 }

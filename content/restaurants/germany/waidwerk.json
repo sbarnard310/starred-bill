@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 95,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu (other menus from €170)",
+  "wine": 75,
+  "sourceType": "site",
+  "source": "https://www.waidwerk-restaurant.de/",
   "website": "https://www.waidwerk-restaurant.de/",
   "lat": 49.4354114,
   "lng": 11.0212737,
@@ -17,6 +20,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 170 €)",
   "cuisineDe": "Moderne Küche"
 }

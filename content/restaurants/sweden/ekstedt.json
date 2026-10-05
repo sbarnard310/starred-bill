@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 913,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2900,
+  "dinnerNote": "Tasting menu",
+  "wine": 2300,
+  "sourceType": "site",
+  "source": "https://ekstedt.nu/menu/",
   "website": "https://www.ekstedt.nu/",
   "lat": 59.3367688,
   "lng": 18.0747963,
@@ -22,5 +25,5 @@
   ],
   "chef": "Niklas Ekstedt",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny"
 }

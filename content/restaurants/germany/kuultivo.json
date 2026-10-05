@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 237,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 110,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.kuultivo.com/reservieren",
   "website": "https://www.kuultivo.com",
   "lat": 51.3267358,
   "lng": 12.3447487,
@@ -18,6 +20,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

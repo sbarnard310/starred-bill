@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 631,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu (other menus from €190)",
+  "wine": 101,
+  "sourceType": "site",
+  "source": "https://www.landhaus-bacher.at/wp-content/uploads/2026/09/Menuekarte-25.September-II.pdf",
   "website": "https://www.landhaus-bacher.at",
   "lat": 48.3931154,
   "lng": 15.5793549,
@@ -21,6 +24,6 @@
   ],
   "chef": "Thomas Dorfer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 190 €)",
   "cuisineDe": "Klassische Küche"
 }

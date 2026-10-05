@@ -10,6 +10,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://novaela.nl/menu/",
   "website": "https://novaela.nl/",
   "lat": 52.0139764,
   "lng": 4.3536044,
@@ -21,5 +26,6 @@
   "chef": "Daniel Duijster Gomero",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Creatief Frans"
+  "cuisineNl": "Creatief Frans",
+  "lunchNoteNl": "Lunchmenu"
 }

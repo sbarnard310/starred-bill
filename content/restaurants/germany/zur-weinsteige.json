@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 417,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu (other menus from €159)",
+  "wine": 89,
+  "sourceType": "site",
+  "source": "https://de.cdn-website.com/67b819f76aaa461096fccb80d74cdffc/files/uploaded/ZUR+WEINSTEIGE+MENU-S+2026.09.11.pdf",
   "website": "https://www.zur-weinsteige.de/",
   "lat": 48.7710222,
   "lng": 9.1870889,
@@ -20,6 +23,6 @@
   ],
   "chef": "Jörg Scherle and Holger Haag",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 159 €)",
   "cuisineDe": "Saisonal"
 }

@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 329,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 139,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "http://christianandfriends.de/menu/",
   "website": "https://christianandfriends.de/",
   "lat": 50.5523614,
   "lng": 9.676736,
@@ -17,6 +19,6 @@
   "michelinId": "484021",
   "chef": "Christian Steska and Jansen Schouten",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

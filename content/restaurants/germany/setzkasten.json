@@ -7,8 +7,15 @@
   "rating": 4.8,
   "reviews": 752,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "site",
+  "source": "https://www.setzkasten-duesseldorf.de/speisen.php",
+  "lunch": 115,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.setzkasten-duesseldorf.de/speisen.php",
   "website": "https://www.setzkasten-duesseldorf.de/",
   "lat": 51.2195261,
   "lng": 6.782331,
@@ -20,6 +27,7 @@
   ],
   "chef": "Egor Hopp",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Moderne Küche"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 115 €)",
+  "cuisineDe": "Moderne Küche",
+  "lunchNoteDe": "Mittagsmenü"
 }

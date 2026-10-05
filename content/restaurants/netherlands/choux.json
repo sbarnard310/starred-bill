@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 1030,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 82.5,
+  "dinnerNote": "Tasting menu (other menus from €52.50)",
+  "sourceType": "site",
+  "source": "https://www.choux.nl/",
   "website": "https://www.choux.nl/",
   "lat": 52.3776924,
   "lng": 4.9066171,
@@ -20,6 +22,6 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf €52.50)",
   "cuisineNl": "Modern Frans"
 }

@@ -10,6 +10,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 98,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.brassboer.com/thuis/menu/",
   "website": "https://www.brassboer.com/thuis/",
   "lat": 52.5112754,
   "lng": 6.0956761,
@@ -22,5 +27,6 @@
   "chef": "Jonnie Boer",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Regionaal"
+  "cuisineNl": "Regionaal",
+  "lunchNoteNl": "Lunchmenu"
 }

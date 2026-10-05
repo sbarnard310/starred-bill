@@ -6,8 +6,10 @@
   "stars": 1,
   "cuisine": "Mediterranean Cuisine",
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €77)",
+  "sourceType": "site",
+  "source": "https://dubravkin-put.com/wp-content/uploads/2026/09/Menu-vecera-10-26.pdf",
   "website": "https://www.dubravkin-put.com/",
   "lat": 45.8188384,
   "lng": 15.9725596,
@@ -16,5 +18,5 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana"
+  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 77 €)"
 }

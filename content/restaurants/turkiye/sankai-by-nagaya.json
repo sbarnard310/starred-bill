@@ -7,8 +7,11 @@
   "rating": 4.3,
   "reviews": 89,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 5500,
+  "dinnerNote": "Tasting menu",
+  "wine": 4500,
+  "sourceType": "site",
+  "source": "https://sankai.com.tr/sankai-sushi/",
   "notice": "Temporarily closed (Google)",
   "website": "https://sankai.com.tr/",
   "lat": 41.0779114,
@@ -23,6 +26,6 @@
   ],
   "chef": "Yoshizumi Nagaya",
   "chefSource": "michelin",
-  "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "dinnerNoteTr": "Tadım menüsü",
   "cuisineTr": "Modern Japon Mutfağı"
 }

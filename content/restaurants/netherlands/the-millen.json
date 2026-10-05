@@ -9,6 +9,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 69.5,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurantthemillen.nl/speciallunchdeal/",
   "website": "https://restaurantthemillen.nl/",
   "lat": 51.9226379,
   "lng": 4.4714977,
@@ -21,5 +26,6 @@
   "chef": "Wim Severein",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Moderne keuken"
+  "cuisineNl": "Moderne keuken",
+  "lunchNoteNl": "Lunchmenu"
 }

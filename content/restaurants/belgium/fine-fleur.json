@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 179,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €100)",
+  "wine": 86,
+  "sourceType": "site",
+  "source": "https://www.restaurantfinefleur.be/en/menu",
   "website": "https://www.restaurantfinefleur.be/",
   "lat": 51.2138105,
   "lng": 4.4055889,
@@ -17,8 +20,8 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 100)",
   "cuisineNl": "Creatief",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 100 €)",
   "cuisineFr": "Cuisine créative"
 }

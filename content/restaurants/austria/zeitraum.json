@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 777,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.der-wilde-eder.at/fine-dining-zeitraum/",
   "website": "https://www.der-wilde-eder.at/fine-dining-zeitraum/",
   "lat": 47.3002006,
   "lng": 15.5748252,
@@ -20,6 +22,6 @@
   ],
   "chef": "Stefan Eder",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ"
 }

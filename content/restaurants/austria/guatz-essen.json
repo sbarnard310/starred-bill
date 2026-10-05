@@ -8,8 +8,11 @@
   "rating": 4.9,
   "reviews": 276,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "wine": 75,
+  "sourceType": "site",
+  "source": "https://guatzessen.at/unser-genusserlebnis",
   "website": "https://guatzessen.at/permakultur",
   "lat": 47.2972176,
   "lng": 11.8866642,
@@ -23,6 +26,6 @@
   ],
   "chef": "Peter Fankhauser",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 115 €)",
   "cuisineDe": "Vegetarisch"
 }

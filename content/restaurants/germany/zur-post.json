@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 524,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €125)",
+  "wine": 105,
+  "sourceType": "site",
+  "source": "https://www.hotel-restaurant-zur-post.de/gourmetrestaurant/",
   "website": "https://www.zurpost.eu",
   "lat": 51.0324091,
   "lng": 7.1150119,
@@ -20,6 +23,6 @@
   ],
   "chef": "Alejandro Wilbrand and Christopher Wilbrand",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 125 €)",
   "cuisineDe": "Moderne Küche"
 }

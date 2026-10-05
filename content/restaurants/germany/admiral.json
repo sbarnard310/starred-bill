@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 235,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "sourceType": "site",
+  "source": "https://www.admiral-weisenheim.de/speisekarte/",
   "website": "https://www.admiral-weisenheim.de/",
   "lat": 49.51273,
   "lng": 8.1545977,
@@ -17,6 +19,6 @@
   "michelinId": "464293",
   "chef": "Holger Stehr",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
   "cuisineDe": "Modern"
 }

@@ -8,8 +8,11 @@
   "rating": 4.6,
   "reviews": 114,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 159,
+  "dinnerNote": "Tasting menu (other menus from €129)",
+  "wine": 85,
+  "sourceType": "site",
+  "source": "https://www.hotel-villa-sorgenfrei.de/restaurant",
   "website": "https://www.hotel-villa-sorgenfrei.de/restaurant",
   "lat": 51.1086096,
   "lng": 13.6753756,
@@ -19,6 +22,6 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
   "cuisineDe": "Moderne Küche"
 }

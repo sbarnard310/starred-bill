@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 486,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 268,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.212.amsterdam/_files/ugd/0d6402_64c36cbd1c5648f19fd0bafd5b395d9f.pdf",
   "website": "https://212.amsterdam/",
   "lat": 52.365853,
   "lng": 4.900326,
@@ -17,6 +19,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief"
 }

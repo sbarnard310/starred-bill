@@ -7,8 +7,11 @@
   "rating": 4.2,
   "reviews": 374,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 188,
+  "dinnerNote": "Tasting menu",
+  "wine": 45,
+  "sourceType": "site",
+  "source": "https://everybodysdarling.at/?p=2947",
   "website": "https://everybodysdarling.at/esszimmer/",
   "lat": 48.2108907,
   "lng": 16.3717837,
@@ -19,6 +22,6 @@
   ],
   "chef": "Alexander Kumptner",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

@@ -7,8 +7,16 @@
   "rating": 4.7,
   "reviews": 826,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 51500,
+  "dinnerNote": "Tasting menu (other menus from HUF 39,500)",
+  "wine": 35500,
+  "sourceType": "site",
+  "source": "https://www.costesrestaurant.hu/menu/",
+  "lunch": 32500,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.costesrestaurant.hu/hu/",
   "website": "https://www.costesrestaurant.hu/",
   "lat": 47.4889155,
   "lng": 19.0621952,
@@ -20,5 +28,6 @@
   ],
   "chef": "Jenő Rácz",
   "chefSource": "site",
-  "dinnerNoteHu": "Kóstolómenü; az ár később kerül fel"
+  "dinnerNoteHu": "Kóstolómenü (további menük: HUF 39,500-tól)",
+  "lunchNoteHu": "Ebédmenü"
 }

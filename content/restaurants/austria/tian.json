@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 952,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 189,
+  "dinnerNote": "Tasting menu (other menus from €178)",
+  "wine": 119,
+  "sourceType": "site",
+  "source": "https://www.tian-restaurant.com/wien/en/menu/",
   "website": "https://www.tian-restaurant.com/",
   "lat": 48.20523,
   "lng": 16.3744339,
@@ -22,6 +25,6 @@
   ],
   "chef": "Paul Ivic",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 178 €)",
   "cuisineDe": "Vegetarisch"
 }

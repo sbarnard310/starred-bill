@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 168,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 158,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "wine": 94,
+  "sourceType": "site",
+  "source": "https://www.hotel-schloss-eberstein.de/wp-content/uploads/06-Menuekarte-16.09.-31.12-1.pdf",
   "website": "https://www.hotel-schloss-eberstein.de/",
   "lat": 48.7493732,
   "lng": 8.3432667,
@@ -22,6 +25,6 @@
   ],
   "chef": "Bernd Werner",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 115 €)",
   "cuisineDe": "Französisch-klassisch"
 }

@@ -7,8 +7,11 @@
   "rating": 4.8,
   "reviews": 143,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2450,
+  "dinnerNote": "Tasting menu",
+  "wine": 2250,
+  "sourceType": "site",
+  "source": "https://www.restaurantstallen.no/",
   "website": "https://www.restaurantstallen.no/",
   "lat": 59.9238866,
   "lng": 10.7263103,
@@ -19,5 +22,5 @@
   ],
   "chef": "Sebastian Myhre",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny"
 }

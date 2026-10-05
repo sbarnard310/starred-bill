@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 207,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu (other menus from €90)",
+  "sourceType": "site",
+  "source": "https://christians-restaurant.de/",
   "website": "https://christians-restaurant.de/",
   "lat": 48.1766285,
   "lng": 12.1982993,
@@ -19,6 +21,6 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "cuisineDe": "Klassische Küche"
 }

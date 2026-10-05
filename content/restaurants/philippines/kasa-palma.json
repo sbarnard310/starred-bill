@@ -7,8 +7,11 @@
   "rating": 4.3,
   "reviews": 132,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 8500,
+  "dinnerNote": "Tasting menu (other menus from ₱6,500)",
+  "wine": 4000,
+  "sourceType": "site",
+  "source": "https://kasapalma.com/menu/",
   "website": "https://kasapalma.com/",
   "lat": 14.56597,
   "lng": 121.0344,
@@ -20,5 +23,5 @@
   ],
   "chef": "Aaron Isip",
   "chefSource": "site",
-  "dinnerNoteFil": "Tasting menu; idadagdag pa ang presyo"
+  "dinnerNoteFil": "Tasting menu (ibang menu mula ₱6,500)"
 }

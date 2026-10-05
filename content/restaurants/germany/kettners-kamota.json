@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 303,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 166,
+  "dinnerNote": "Tasting menu (other menus from €127)",
+  "wine": 99,
+  "sourceType": "site",
+  "source": "https://kettnerskamota.de/wp-content/uploads/2026/01/Menue-17.07.2026.pdf",
   "website": "https://kettnerskamota.de/",
   "lat": 51.3889835,
   "lng": 7.0014943,
@@ -21,6 +24,6 @@
   ],
   "chef": "Jürgen Kettner",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 127 €)",
   "cuisineDe": "Kreativ"
 }

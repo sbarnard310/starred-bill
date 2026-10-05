@@ -7,8 +7,11 @@
   "rating": 4.5,
   "reviews": 33,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 3388,
+  "dinnerNote": "Tasting menu (other menus from CN¥2,388)",
+  "wine": 2188,
+  "sourceType": "site",
+  "source": "https://www.davittorio.com/images/davittorio/ristorante/shanghai/menu/Menu Ristorante - Inglese.pdf",
   "website": "https://www.davittorio.com/en/restaurants/da-vittorio-shanghai.html",
   "lat": 31.2291093,
   "lng": 121.4931985,
@@ -21,6 +24,6 @@
   ],
   "chef": "Leonardo Zambrino",
   "chefSource": "site",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "品鉴套餐（其他套餐 CN¥2,388 起）",
   "cuisineZhs": "意大利菜"
 }

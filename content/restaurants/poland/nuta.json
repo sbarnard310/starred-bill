@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 518,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 795,
+  "dinnerNote": "Tasting menu (other menus from PLN 595)",
+  "sourceType": "site",
+  "source": "https://nuta.com.pl/en/menu/",
   "website": "https://nuta.com.pl/",
   "lat": 52.2290249,
   "lng": 21.023509,
@@ -20,6 +22,6 @@
   ],
   "chef": "Andrea Camastra",
   "chefSource": "michelin",
-  "dinnerNotePl": "Menu degustacyjne; cena zostanie dodana",
+  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 595)",
   "areaPl": "Warszawa"
 }

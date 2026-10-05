@@ -4,11 +4,17 @@
   "address": "St. Regis Gardens, The Palm Jumeirah, Dubai",
   "stars": 3,
   "cuisine": "Indian",
+  "change": "up",
+  "changeNote": "Gained a third star",
+  "changeDate": "2025-05",
+  "changeNoteAr": "حصل على نجمة ثالثة",
   "rating": 4.7,
   "reviews": 407,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1350,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://tresindstudio.com/",
   "website": "https://tresindstudio.com/",
   "lat": 25.114932,
   "lng": 55.1391176,
@@ -22,5 +28,5 @@
   ],
   "chef": "Himanshu Saini",
   "chefSource": "site",
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا"
+  "dinnerNoteAr": "قائمة تذوق"
 }

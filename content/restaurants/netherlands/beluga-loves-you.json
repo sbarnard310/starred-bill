@@ -7,8 +7,15 @@
   "rating": 4.7,
   "reviews": 631,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://belugalovesyou.com/menu",
+  "lunch": 110,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://belugalovesyou.com/menu",
   "website": "https://belugalovesyou.com/",
   "lat": 50.8462005,
   "lng": 5.6990715,
@@ -20,6 +27,7 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Creatief"
+  "dinnerNoteNl": "Proeverijmenu",
+  "cuisineNl": "Creatief",
+  "lunchNoteNl": "Lunchmenu"
 }

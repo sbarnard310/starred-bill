@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 114,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 318,
+  "dinnerNote": "Tasting menu (other menus from €264)",
+  "wine": 144,
+  "sourceType": "site",
+  "source": "https://www.landhaus-stricker.com/de/speisekarte",
   "website": "https://www.landhaus-stricker.com/",
   "lat": 54.9010855,
   "lng": 8.3328345,
@@ -20,6 +23,6 @@
   ],
   "chef": "Holger Bodendorf and Denis Brühl",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 264 €)",
   "cuisineDe": "Französisch-modern"
 }

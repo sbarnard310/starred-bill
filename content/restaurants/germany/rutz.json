@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 772,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 360,
+  "dinnerNote": "Tasting menu (other menus from €260)",
+  "wine": 179,
+  "sourceType": "site",
+  "source": "https://rutz-restaurant.de/",
   "website": "https://rutz-restaurant.de/",
   "lat": 52.5283507,
   "lng": 13.3860867,
@@ -20,6 +23,6 @@
   ],
   "chef": "Marco Müller",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 260 €)",
   "cuisineDe": "Moderne Küche"
 }

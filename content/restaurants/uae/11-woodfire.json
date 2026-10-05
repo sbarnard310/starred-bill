@@ -9,6 +9,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 135,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://11woodfire.com/wp-content/uploads/2026/02/Lunch-Menu-new-v1.pdf",
   "website": "https://www.11woodfire.com/",
   "lat": 25.2156197,
   "lng": 55.2512424,
@@ -16,5 +21,6 @@
   "michelinId": "1200075",
   "chef": "Brando Moros",
   "chefSource": "site",
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا"
+  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا",
+  "lunchNoteAr": "قائمة الغداء"
 }

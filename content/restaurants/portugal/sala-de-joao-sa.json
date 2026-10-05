@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 637,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu (other menus from €155)",
+  "wine": 125,
+  "sourceType": "site",
+  "source": "https://restaurantesala.pt/en/menu/",
   "website": "https://www.restaurantesala.pt/",
   "lat": 38.7091165,
   "lng": -9.1338667,
@@ -20,6 +23,6 @@
   ],
   "chef": "João Sá",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 155 €)",
   "cuisinePt": "Moderna"
 }

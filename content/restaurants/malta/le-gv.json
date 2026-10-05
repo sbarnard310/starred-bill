@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 143,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 140,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "site",
+  "source": "https://legv.mt/wp-content/uploads/2026/09/Sample-Dinner-Menu-Q3-2026.pdf",
   "website": "https://legv.mt",
   "lat": 35.9096819,
   "lng": 14.5087134,
@@ -20,6 +22,6 @@
   ],
   "chef": "Andrew Borg and David Tanti",
   "chefSource": "michelin",
-  "dinnerNoteMt": "Menu tad-degustazzjoni; il-prezz għad irid jiżdied",
+  "dinnerNoteMt": "Menu tad-degustazzjoni (menus oħra minn €95)",
   "areaMt": "Tas-Sliema"
 }

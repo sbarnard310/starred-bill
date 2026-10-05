@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 122,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 295,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.hotelmilka.si/restaurant",
   "website": "https://www.hotelmilka.si/restaurant",
   "lat": 46.4751488,
   "lng": 13.7847333,
@@ -20,5 +22,5 @@
   ],
   "chef": "David Žefran",
   "chefSource": "michelin",
-  "dinnerNoteSl": "Degustacijski meni; cena bo dodana"
+  "dinnerNoteSl": "Degustacijski meni"
 }

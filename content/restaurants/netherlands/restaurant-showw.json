@@ -7,8 +7,10 @@
   "rating": 4.9,
   "reviews": 212,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurantshoww.com/en/menu",
   "website": "https://www.restaurantshoww.com",
   "lat": 52.3372043,
   "lng": 4.893425,
@@ -21,6 +23,6 @@
   ],
   "chef": "Dorus Floris",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Moderne keuken"
 }

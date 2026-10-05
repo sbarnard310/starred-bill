@@ -7,8 +7,11 @@
   "rating": 4.8,
   "reviews": 214,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 330,
+  "dinnerNote": "Tasting menu",
+  "wine": 170,
+  "sourceType": "site",
+  "source": "https://www.palais-coburg.com/fileadmin/Palais_Coburg/_pdfs/DE/SNGR/Menuekarten_DE_01.10._.pdf",
   "website": "https://www.palais-coburg.com/wine-dine/silvio-nickol",
   "lat": 48.205937,
   "lng": 16.3769455,
@@ -19,6 +22,6 @@
   ],
   "chef": "Silvio Nickol and Florian Daube",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

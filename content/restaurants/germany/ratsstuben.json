@@ -8,8 +8,11 @@
   "rating": 4.9,
   "reviews": 241,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "wine": 89,
+  "sourceType": "site",
+  "source": "https://hotel-haltern.de/ratsstuben/speisekarte/",
   "website": "https://hotel-haltern.de/",
   "lat": 51.7433982,
   "lng": 7.1873302,
@@ -20,6 +23,6 @@
   ],
   "chef": "Daniel Georgiev",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
   "cuisineDe": "Moderne Küche"
 }

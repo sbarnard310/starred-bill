@@ -8,8 +8,11 @@
   "rating": 4.5,
   "reviews": 66,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 192,
+  "dinnerNote": "Tasting menu (other menus from €158)",
+  "wine": 136,
+  "sourceType": "site",
+  "source": "https://www.midoripenhalonga.com/contents/pdf/menu/Menu-MIDORI-2026-ING.pdf",
   "website": "https://www.midoripenhalonga.com/en/",
   "lat": 38.7616883,
   "lng": -9.3962995,
@@ -20,6 +23,6 @@
   ],
   "chef": "Pedro Almeida and Tiago Santo",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 158 €)",
   "cuisinePt": "Japonesa"
 }

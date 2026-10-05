@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 127,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu (other menus from €159)",
+  "sourceType": "site",
+  "source": "https://schwarzgold-dortmund.de/fileadmin/dateien/akutelles_menue/menue_09-26_schwarzgold_straight-outta-ruhrpott.pdf",
   "website": "https://schwarzgold-dortmund.de/",
   "lat": 51.5420051,
   "lng": 7.4101378,
@@ -21,6 +23,6 @@
   ],
   "chef": "Pierre Beckerling",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 159 €)",
   "cuisineDe": "Regional"
 }

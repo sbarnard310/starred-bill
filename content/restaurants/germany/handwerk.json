@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 399,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 149,
+  "dinnerNote": "Tasting menu (other menus from €139)",
+  "wine": 76,
+  "sourceType": "site",
+  "source": "https://www.handwerk-hannover.com",
   "website": "https://www.handwerk-hannover.com",
   "lat": 52.356735,
   "lng": 9.763843,
@@ -20,7 +23,7 @@
   ],
   "chef": "Thomas Wohlfeld",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 139 €)",
   "cuisineDe": "Moderne Küche",
   "areaDe": "Hannover"
 }

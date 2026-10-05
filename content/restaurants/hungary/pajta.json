@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 1330,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 52000,
+  "dinnerNote": "Tasting menu (other menus from HUF 42,000)",
+  "sourceType": "site",
+  "source": "https://pajta.hu/kastu-ajandekkartya/",
   "website": "https://pajta.hu/",
   "lat": 46.8498752,
   "lng": 16.4043202,
@@ -23,5 +25,5 @@
   ],
   "chef": "István Akács",
   "chefSource": "michelin",
-  "dinnerNoteHu": "Kóstolómenü; az ár később kerül fel"
+  "dinnerNoteHu": "Kóstolómenü (további menük: HUF 42,000-tól)"
 }

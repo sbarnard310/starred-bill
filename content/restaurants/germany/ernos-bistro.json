@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 216,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 198,
+  "dinnerNote": "Tasting menu (other menus from €159)",
+  "sourceType": "site",
+  "source": "https://ernosbistro.de/kueche",
   "website": "https://ernosbistro.de/",
   "lat": 50.1190432,
   "lng": 8.6659109,
@@ -16,6 +18,6 @@
   "michelinId": "72809",
   "chef": "Valéry Mathis",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 159 €)",
   "cuisineDe": "Französisch-klassisch"
 }

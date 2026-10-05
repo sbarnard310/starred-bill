@@ -8,8 +8,11 @@
   "rating": 5,
   "reviews": 40,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu",
+  "wine": 70,
+  "sourceType": "site",
+  "source": "https://restaurant-thefirst.de/wp-content/uploads/sites/9/2026/09/Speisekarte-The-First-No.35-Allergene.pdf",
   "website": "https://restaurant-thefirst.de/",
   "lat": 50.8747868,
   "lng": 11.3423392,
@@ -20,6 +23,6 @@
   ],
   "chef": "Marcello Fabbri",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Saisonal"
 }

@@ -8,8 +8,15 @@
   "rating": 4.8,
   "reviews": 314,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "sourceType": "site",
+  "source": "https://www.alma.nl/en/fine-dining/menu",
+  "lunch": 70,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.alma.nl/en/fine-dining/menu",
   "website": "https://www.alma.nl/",
   "lat": 51.5809993,
   "lng": 5.1970972,
@@ -19,6 +26,7 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Modern Frans"
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
+  "cuisineNl": "Modern Frans",
+  "lunchNoteNl": "Lunchmenu"
 }

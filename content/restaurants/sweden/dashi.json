@@ -7,12 +7,14 @@
   "rating": 4.8,
   "reviews": 213,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1295,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://dashisthlm.se",
   "website": "https://dashisthlm.se",
   "lat": 59.3426722,
   "lng": 18.0657669,
   "placeId": "ChIJPx3u7budX0YRB2JLoqpp-vQ",
   "michelinId": "1203721",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny"
 }

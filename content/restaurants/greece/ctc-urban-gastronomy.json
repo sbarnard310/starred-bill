@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 1453,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "wine": 80,
+  "sourceType": "site",
+  "source": "https://ctc-restaurant.com/the-menu/",
   "website": "https://www.ctc-restaurant.com/",
   "lat": 37.9804964,
   "lng": 23.7168694,
@@ -21,5 +24,5 @@
   ],
   "chef": "Alexandros Tsiotinis",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας· η τιμή θα προστεθεί"
+  "dinnerNoteEl": "Μενού γευσιγνωσίας"
 }

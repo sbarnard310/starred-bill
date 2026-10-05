@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 103,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "sourceType": "site",
+  "source": "https://www.stadtpfeiffer.de/ein-menue.php",
   "website": "https://www.stadtpfeiffer.de/",
   "lat": 51.3381371,
   "lng": 12.380167,
@@ -22,6 +24,6 @@
   ],
   "chef": "Detlef Schlegel",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 135 €)",
   "cuisineDe": "Kreativ"
 }

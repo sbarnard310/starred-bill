@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 480,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2150,
+  "dinnerNote": "Tasting menu",
+  "wine": 1800,
+  "sourceType": "site",
+  "source": "https://www.restaurant-kontrast.no/menu",
   "website": "https://www.restaurant-kontrast.no/",
   "lat": 59.922727,
   "lng": 10.7511251,
@@ -19,5 +22,5 @@
   ],
   "chef": "Mikael Svensson",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny"
 }

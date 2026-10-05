@@ -6,8 +6,10 @@
   "stars": 1,
   "cuisine": "Modern Cuisine",
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu (other menus from €90)",
+  "sourceType": "site",
+  "source": "https://www.zemono.si/en/tasting-menu.php",
   "website": "https://www.zemono.si",
   "lat": 45.8557213,
   "lng": 13.9491988,
@@ -21,5 +23,5 @@
   ],
   "chef": "Tomaž Kavčič",
   "chefSource": "site",
-  "dinnerNoteSl": "Degustacijski meni; cena bo dodana"
+  "dinnerNoteSl": "Degustacijski meni (drugi meniji od 90 €)"
 }

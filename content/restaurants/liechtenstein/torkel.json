@@ -1,0 +1,19 @@
+{
+  "name": "Torkel",
+  "city": "liechtenstein",
+  "area": "Vaduz",
+  "address": "Hintergass 9, 9490, Vaduz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 298,
+  "dinnerType": "menu",
+  "dinner": 163,
+  "dinnerNote": "Tasting menu (other menus from CHF 48)",
+  "sourceType": "site",
+  "source": "https://www.torkel.li",
+  "website": "https://www.torkel.li",
+  "lat": 47.1443084,
+  "lng": 9.5195393,
+  "placeId": "ChIJpUeErmkxm0cRjhOXx0JeJ6o"
+}

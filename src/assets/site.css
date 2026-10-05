@@ -253,7 +253,7 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .map-wait { color: var(--muted); font-size: .9rem; }
 .map-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px 24px; flex-wrap: wrap; margin-top: 14px; }
 .map-status { font-size: .85rem; color: var(--muted); }
-.map-legend .pin-num { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; color: #fff; font-size: .75rem; font-weight: 700; background: var(--pin); }
+.map-legend .pin-num { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; color: #fff; font-size: .75rem; font-weight: 700; background: var(--pin); box-shadow: 0 0 0 1.5px #ffffff; }
 .map-legend { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: .92rem; }
 .map-legend li { display: inline-flex; align-items: center; gap: 8px; }
 .map-legend svg { width: 22px; height: 22px; color: var(--pin); }

@@ -1,0 +1,17 @@
+{
+  "name": "Kitchen By Osman Sezener",
+  "city": "turkiye",
+  "area": "Bodrum",
+  "address": "Dirmil Mahallesi, Balyek Caddesi No:5A, Yalıkavak, 48400, Bodrum",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 191,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.editionhotels.com/bodrum/restaurants-and-bars/kitchen/",
+  "lat": 37.1149915,
+  "lng": 27.3109897,
+  "placeId": "ChIJ35wBdEJxvhQRPl1MYDk6fkw"
+}

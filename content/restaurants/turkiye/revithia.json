@@ -1,0 +1,17 @@
+{
+  "name": "Revithia",
+  "city": "turkiye",
+  "area": "Ürgüp",
+  "address": "Temenni Mahallesi, Eski Kayakapı Mahallesi, Davut Ağa Sokak No:1, 50400, Ürgüp",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.9,
+  "reviews": 300,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kayakapi.com/revithia",
+  "lat": 38.6361046,
+  "lng": 34.9066582,
+  "placeId": "ChIJt8xHPeVvKhUR1lBWeQh-GB8"
+}

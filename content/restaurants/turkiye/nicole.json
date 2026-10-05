@@ -1,0 +1,16 @@
+{
+  "name": "Nicole",
+  "city": "istanbul",
+  "address": "Tomtom Kaptan Sokak No:18, Beyoğlu, 34433, Istanbul",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 752,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://nicole.com.tr/",
+  "lat": 41.0302119,
+  "lng": 28.9777509,
+  "placeId": "ChIJzbHMuN-5yhQRZp8L9yPb-NM"
+}

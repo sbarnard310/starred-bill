@@ -1,0 +1,17 @@
+{
+  "name": "Sankai by Nagaya",
+  "city": "istanbul",
+  "address": "Bebek, Cevdet Paşa Caddesi No:34, Beşiktaş, 34342, Istanbul",
+  "stars": 1,
+  "cuisine": "Japanese Contemporary",
+  "rating": 4.3,
+  "reviews": 89,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://sankai.com.tr/",
+  "lat": 41.0779114,
+  "lng": 29.0441298,
+  "placeId": "ChIJP5ueOS23yhQRpSLxX8OiVgk"
+}

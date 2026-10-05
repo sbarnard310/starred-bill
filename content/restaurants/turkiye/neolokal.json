@@ -1,0 +1,16 @@
+{
+  "name": "Neolokal",
+  "city": "istanbul",
+  "address": "Arap Camii Mahallesi, Bankalar Caddesi No:11/1, Beyoğlu, 34420, Istanbul",
+  "stars": 1,
+  "cuisine": "Turkish",
+  "rating": 4.3,
+  "reviews": 1345,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.neolokal.com/",
+  "lat": 41.0239621,
+  "lng": 28.973378,
+  "placeId": "ChIJGbaw0-e5yhQRXCPUhlJLb8w"
+}

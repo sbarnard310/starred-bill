@@ -1,0 +1,16 @@
+{
+  "name": "Araka",
+  "city": "istanbul",
+  "address": "Kapalı Bakkal Sokak No:8, Yeniköy/Sarıyer, 34464, Istanbul",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.2,
+  "reviews": 345,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://araka.com.tr/",
+  "lat": 41.1171693,
+  "lng": 29.0630471,
+  "placeId": "ChIJ8yRKQxPLyhQRQx-2zdPdWa0"
+}

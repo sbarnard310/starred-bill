@@ -1,0 +1,17 @@
+{
+  "name": "Maçakızı",
+  "city": "turkiye",
+  "area": "Bodrum",
+  "address": "Göltürkbükü Mahallesi, Keleşharim Caddesi No:70, 48400, Bodrum",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.1,
+  "reviews": 104,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.macakizi.com/",
+  "lat": 37.1356417,
+  "lng": 27.3806702,
+  "placeId": "ChIJzd_i6yxvvhQRiz7skl-JPrc"
+}

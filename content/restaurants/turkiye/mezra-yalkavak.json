@@ -1,0 +1,19 @@
+{
+  "name": "Mezra Yalıkavak",
+  "city": "turkiye",
+  "area": "Bodrum",
+  "address": "Dirmil Mahallesi, 6885. Sokak No:3, 48990, Bodrum",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.2,
+  "reviews": 220,
+  "dinnerType": "menu",
+  "dinner": 11000,
+  "dinnerNote": "Tasting menu (other menus from TRY 7,000)",
+  "sourceType": "site",
+  "source": "https://www.mezrayalikavak.com/",
+  "website": "https://www.mezrayalikavak.com/",
+  "lat": 37.1149719,
+  "lng": 27.3254393,
+  "placeId": "ChIJp7stYbNxvhQR7c2bmJROfJE"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Vino Locale",
+  "city": "turkiye",
+  "area": "Izmir",
+  "address": "Kuşçular Mahallesi, 8037. Sokak No:3, Urla, 35430, Izmir",
+  "stars": 2,
+  "cuisine": "Turkish",
+  "rating": 4.6,
+  "reviews": 953,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.urlavinolocale.com",
+  "lat": 38.2808906,
+  "lng": 26.7467029,
+  "placeId": "ChIJq2JkTViSuxQRiogufj1FxhQ"
+}

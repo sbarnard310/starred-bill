@@ -1,0 +1,16 @@
+{
+  "name": "Araf İstanbul",
+  "city": "istanbul",
+  "address": "AG/E İç Kapı, 19 Mayıs Mahallesi Sümer Sokak Sümko N Blok No:1, No:2, Kadıköy, 34742, Istanbul",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 485,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.arafistanbul.com/",
+  "lat": 40.9788119,
+  "lng": 29.0932956,
+  "placeId": "ChIJxUyUAoTHyhQRvHcXuQDSu14"
+}

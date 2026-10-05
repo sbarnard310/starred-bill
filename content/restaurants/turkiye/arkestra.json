@@ -1,0 +1,16 @@
+{
+  "name": "Arkestra",
+  "city": "istanbul",
+  "address": "Etiler, Dilhayat Sokak No:28, Beşiktaş, 34337, Istanbul",
+  "stars": 1,
+  "cuisine": "Fusion",
+  "rating": 4.3,
+  "reviews": 614,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://arkestra.com.tr/",
+  "lat": 41.0782231,
+  "lng": 29.0313777,
+  "placeId": "ChIJW1D7CIu3yhQRDmAZbPUrjjw"
+}

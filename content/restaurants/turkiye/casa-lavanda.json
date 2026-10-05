@@ -1,0 +1,16 @@
+{
+  "name": "Casa Lavanda",
+  "city": "istanbul",
+  "address": "Ulupelit Köyü, Seçilmiş Sokak No:2, Şile, 34980, Istanbul",
+  "stars": 1,
+  "cuisine": "Traditional Cuisine",
+  "rating": 4.3,
+  "reviews": 1190,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.casalavanda.com.tr/",
+  "lat": 41.0871196,
+  "lng": 29.5117319,
+  "placeId": "ChIJaTmToXbIyhQR9P4KlGaCudI"
+}

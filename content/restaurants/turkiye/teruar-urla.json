@@ -1,0 +1,17 @@
+{
+  "name": "Teruar Urla",
+  "city": "turkiye",
+  "area": "Izmir",
+  "address": "Kusçular Mahallesi, 8028. Sokak No:16, Urla, 35437, Izmir",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.6,
+  "reviews": 600,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.teruarurla.com/",
+  "lat": 38.2524197,
+  "lng": 26.739059,
+  "placeId": "ChIJhZHd4V2TuxQRcnUStkAqXkA"
+}

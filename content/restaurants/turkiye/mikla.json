@@ -1,0 +1,16 @@
+{
+  "name": "Mikla",
+  "city": "istanbul",
+  "address": "Meşrutiyet Caddesi No:15, 18th floor (18. kat), Tepebaşı/Beyoğlu, 34430, Istanbul",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.3,
+  "reviews": 2716,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.miklarestaurant.com/",
+  "lat": 41.0311672,
+  "lng": 28.9741604,
+  "placeId": "ChIJReR3RuC5yhQR_t7o9KL5qYQ"
+}

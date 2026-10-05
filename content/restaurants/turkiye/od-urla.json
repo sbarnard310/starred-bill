@@ -1,0 +1,17 @@
+{
+  "name": "OD Urla",
+  "city": "turkiye",
+  "area": "Izmir",
+  "address": "Rüstem Mahallesi, Süt Pınarı Mevkii, 2018/9 Sokak No:28, Urla, 35430, Izmir",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 3529,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://odurla.com",
+  "lat": 38.3446199,
+  "lng": 26.7616803,
+  "placeId": "ChIJiRZa7tiTuxQRfU1XBTgWeZk"
+}

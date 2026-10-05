@@ -1,0 +1,19 @@
+{
+  "name": "JOHN Chef's Hall",
+  "city": "latvia",
+  "area": "Riga",
+  "address": "A22 Hotel, Ausekļa iela 22, 1010, Riga",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 75,
+  "dinnerType": "menu",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu (other menus from €55)",
+  "sourceType": "site",
+  "source": "https://jch.johnrestaurant.com/eng",
+  "website": "https://jch.johnrestaurant.com/eng",
+  "lat": 56.9624805,
+  "lng": 24.1006105,
+  "placeId": "ChIJg7zRrmXP7kYRlKI2O3WBrmQ"
+}

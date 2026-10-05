@@ -1,0 +1,19 @@
+{
+  "name": "Max Cekot Kitchen",
+  "city": "latvia",
+  "area": "Riga",
+  "address": "Jelgavas iela 42, 1004, Riga",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 491,
+  "dinnerType": "menu",
+  "dinner": 220,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://maxcekot.com/en/book_a_table?new",
+  "website": "https://maxcekot.com/",
+  "lat": 56.9299126,
+  "lng": 24.0989828,
+  "placeId": "ChIJY4eR1nXR7kYRsg_pC-a8vK4"
+}

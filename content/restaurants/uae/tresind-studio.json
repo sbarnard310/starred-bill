@@ -1,0 +1,16 @@
+{
+  "name": "Trèsind Studio",
+  "city": "dubai",
+  "address": "St. Regis Gardens, The Palm Jumeirah, Dubai",
+  "stars": 3,
+  "cuisine": "Indian",
+  "rating": 4.7,
+  "reviews": 407,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://tresindstudio.com/",
+  "lat": 25.114932,
+  "lng": 55.1391176,
+  "placeId": "ChIJcfzwzo0TXz4RyQpaHkMBWsE"
+}

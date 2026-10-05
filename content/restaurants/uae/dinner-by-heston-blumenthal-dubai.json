@@ -1,0 +1,16 @@
+{
+  "name": "Dinner by Heston Blumenthal",
+  "city": "dubai",
+  "address": "Atlantis The Royal, Crescent Road, The Palm Jumeirah, Dubai",
+  "stars": 1,
+  "cuisine": "Traditional British",
+  "rating": 4.4,
+  "reviews": 297,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.atlantis.com/dubai/dining/dinner-by-heston",
+  "lat": 25.1384573,
+  "lng": 55.1275537,
+  "placeId": "ChIJyY9QH4kVXz4RnUMVAli0mv0"
+}

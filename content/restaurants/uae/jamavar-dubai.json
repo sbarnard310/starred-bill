@@ -1,0 +1,19 @@
+{
+  "name": "Jamavar",
+  "city": "dubai",
+  "address": "Address Residences,  Opera District, Downtown Dubai, Dubai",
+  "stars": 1,
+  "cuisine": "Indian",
+  "rating": 4.6,
+  "reviews": 516,
+  "dinnerType": "menu",
+  "dinner": 450,
+  "dinnerNote": "Tasting menu (other menus from AED 375)",
+  "sourceType": "site",
+  "source": "https://jamavarrestaurants.com/feed/",
+  "wine": 375,
+  "website": "https://jamavarrestaurants.com/dubai/",
+  "lat": 25.197712,
+  "lng": 55.2710297,
+  "placeId": "ChIJ96_Q7nZpXz4RnbdR5xFBOOc"
+}

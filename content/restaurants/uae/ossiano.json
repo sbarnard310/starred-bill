@@ -1,0 +1,13 @@
+{
+  "name": "Ossiano",
+  "city": "dubai",
+  "address": "Atlantis The Palm, Crescent Road, The Palm, Dubai",
+  "stars": 1,
+  "cuisine": "Creative",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.atlantis.com/dubai/dining/ossiano",
+  "lat": 25.1318677,
+  "lng": 55.1180262
+}

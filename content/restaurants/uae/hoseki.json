@@ -1,0 +1,16 @@
+{
+  "name": "Hōseki",
+  "city": "dubai",
+  "address": "Bulgari Resort Dubai Hotel, 4th Floor, Jumeirah Bay Island, Jumeirah 2, Dubai",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 146,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.bulgarihotels.com/en_US/dubai/bars-and-restaurants/japanese-restaurant-hoseki",
+  "lat": 25.2106143,
+  "lng": 55.2351396,
+  "placeId": "ChIJQa-YAtJDXz4Rpkq8QSKfyZc"
+}

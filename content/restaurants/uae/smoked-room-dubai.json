@@ -1,0 +1,16 @@
+{
+  "name": "Smoked Room",
+  "city": "dubai",
+  "address": "St Regis Gardens, The Palm Jumeirah, Dubai",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.3,
+  "reviews": 9,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://grupodanigarcia.com/smoked-room/en/dubai/",
+  "lat": 25.1148676,
+  "lng": 55.1378975,
+  "placeId": "ChIJn3a0sfRrXz4R5whgQTYsDQs"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Il Ristorante-Niko Romito",
+  "city": "dubai",
+  "address": "Bulgari Resort Dubai Hotel, Jumeirah Bay Island, Jumeirah 2, Dubai",
+  "stars": 2,
+  "cuisine": "Italian",
+  "rating": 3.9,
+  "reviews": 309,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.bulgarihotels.com/en_US/dubai/bars-and-restaurants/il-ristorante-niko-romito",
+  "lat": 25.2104546,
+  "lng": 55.2348847,
+  "placeId": "ChIJCdhLjwxDXz4RAeChgdPfVzI"
+}

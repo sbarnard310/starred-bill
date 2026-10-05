@@ -1,0 +1,16 @@
+{
+  "name": "FZN by Björn Frantzén",
+  "city": "dubai",
+  "address": "Atlantis The Palm Jumeirah, Crescent Road, Dubai",
+  "stars": 3,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 393,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantfzn.com/",
+  "lat": 25.1320377,
+  "lng": 55.1182319,
+  "placeId": "ChIJfe8szNoVXz4RiHMA4feYebQ"
+}

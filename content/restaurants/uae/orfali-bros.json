@@ -1,0 +1,18 @@
+{
+  "name": "Orfali Bros",
+  "city": "dubai",
+  "address": "Wasl 51 Mall, Jumeirah 1, Dubai",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 2337,
+  "dinnerType": "menu",
+  "dinner": 350,
+  "dinnerNote": "Tasting menu (other menus from AED 295)",
+  "sourceType": "site",
+  "source": "https://orfalibros.com/",
+  "website": "https://www.orfalibros.com",
+  "lat": 25.2187895,
+  "lng": 55.2613791,
+  "placeId": "ChIJv6Zm1-hDXz4R9c0k9cOGun4"
+}

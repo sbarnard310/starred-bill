@@ -1,0 +1,16 @@
+{
+  "name": "Hakkasan Dubai",
+  "city": "dubai",
+  "address": "Atlantis The Palm, Crescent Road, The Palm Jumeriah, Dubai",
+  "stars": 1,
+  "cuisine": "Chinese",
+  "rating": 4.5,
+  "reviews": 890,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.atlantis.com/dubai/dining/hakkasan",
+  "lat": 25.132521,
+  "lng": 55.1180364,
+  "placeId": "ChIJ_2ErNz9DXz4R-mulEek2sbI"
+}

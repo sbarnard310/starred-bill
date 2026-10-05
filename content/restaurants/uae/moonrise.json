@@ -1,0 +1,18 @@
+{
+  "name": "moonrise",
+  "city": "dubai",
+  "address": "Eden House, 41 Street, Al Satwa, Dubai",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 378,
+  "dinnerType": "menu",
+  "dinner": 995,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.moon-rise.xyz/menu-1",
+  "website": "https://www.moon-rise.xyz",
+  "lat": 25.2199042,
+  "lng": 55.2763284,
+  "placeId": "ChIJS6LLvexDXz4RUPTv3HNI7Pc"
+}

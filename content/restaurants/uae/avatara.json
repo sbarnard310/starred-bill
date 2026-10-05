@@ -1,0 +1,16 @@
+{
+  "name": "avatāra",
+  "city": "dubai",
+  "address": "Business Park 1, Dubai Hills Estate, Dubai Hills, Dubai",
+  "stars": 1,
+  "cuisine": "Indian Vegetarian",
+  "rating": 4.8,
+  "reviews": 629,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://avatara.ae/",
+  "lat": 25.107342,
+  "lng": 55.240847,
+  "placeId": "ChIJn7cXwXxDXz4Rn_20GD1EDJE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Manāo",
+  "city": "dubai",
+  "address": "Wasl Vita Mall , Jumeirah 1, Dubai",
+  "stars": 1,
+  "cuisine": "Thai contemporary",
+  "rating": 4.9,
+  "reviews": 333,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://manao.ae",
+  "lat": 25.2109571,
+  "lng": 55.2558556,
+  "placeId": "ChIJW2DSDblDXz4Rdrt-RN0-7qE"
+}

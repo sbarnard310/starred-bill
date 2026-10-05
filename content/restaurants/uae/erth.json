@@ -1,0 +1,17 @@
+{
+  "name": "Erth",
+  "city": "uae",
+  "area": "Abu Dhabi",
+  "address": "North Parking, Al Hosn, Abu Dhabi",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 555,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://erthrestaurant.ae/",
+  "lat": 24.4829789,
+  "lng": 54.3569321,
+  "placeId": "ChIJM3VaORNnXj4Ryr6wlrjXhc8"
+}

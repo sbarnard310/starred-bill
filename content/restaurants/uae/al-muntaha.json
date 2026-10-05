@@ -1,0 +1,17 @@
+{
+  "name": "Al Muntaha",
+  "city": "dubai",
+  "address": "Burj Al Arab Jumeirah, Dubai",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.5,
+  "reviews": 497,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://www.jumeirah.com/en/dine/dubai/burj-al-arab-muntaha",
+  "lat": 25.1414067,
+  "lng": 55.1853653,
+  "placeId": "ChIJAQAAzwZqXz4RlgbKZIEuuk0"
+}

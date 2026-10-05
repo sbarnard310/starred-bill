@@ -1,0 +1,16 @@
+{
+  "name": "11 Woodfire",
+  "city": "dubai",
+  "address": "Villa 11, 75B Street, Jumeirah 1, Dubai",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 2355,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.11woodfire.com/",
+  "lat": 25.2156197,
+  "lng": 55.2512424,
+  "placeId": "ChIJ0XAHzFhDXz4RWB0pNY1dpuU"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Row on 45",
+  "city": "dubai",
+  "address": "45th Floor, Tower 2, Grosvenor House Hotel, Al Emreef Street, Dubai Marina, Dubai",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 152,
+  "dinnerType": "menu",
+  "dinner": 1245,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.rowon45dubai.com/our-menus",
+  "website": "https://www.rowon45dubai.com",
+  "lat": 25.0861613,
+  "lng": 55.1435576,
+  "placeId": "ChIJBRo76ehrXz4R5CCsd8vFsvc"
+}

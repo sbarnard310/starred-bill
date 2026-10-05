@@ -1,0 +1,16 @@
+{
+  "name": "YŌSO",
+  "city": "lisbon",
+  "address": "Rampa Das Necessidades 6, 1350-188, Lisbon",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 155,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://yoso-omakase.com/",
+  "lat": 38.7058434,
+  "lng": -9.1706413,
+  "placeId": "ChIJPUlW7iM1GQ0RRBFaXZrCdk0"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "A Cozinha do Paço",
+  "city": "portugal",
+  "area": "Évora",
+  "address": "Paço do Morgado de Oliveira, Estrada M527 - Km10, 7000-016, Évora",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 38,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.antoniomacanita.com/pt/adegas/fitapreta/enoturismo-alentejo/restaurante-a-cozinha-do-paco",
+  "lat": 38.6354396,
+  "lng": -7.9555723,
+  "placeId": "ChIJVUsPA9rlGQ0Rg8RQlzlSxjg"
+}

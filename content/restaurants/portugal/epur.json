@@ -1,0 +1,16 @@
+{
+  "name": "EPUR",
+  "city": "lisbon",
+  "address": "Largo da Academia Nacional de Belas Artes 14, 1200-005, Lisbon",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 321,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.epur.pt/",
+  "lat": 38.7087383,
+  "lng": -9.1398799,
+  "placeId": "ChIJ4R_1UOU1GQ0RwgigGauVvPs"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Henrique Sá Pessoa",
+  "city": "lisbon",
+  "address": "Travessa da Légua De Póvoa 11, Corpo 3, Bloco B, Loja L - Páteo Bagatela, 1250-138, Lisbon",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 42,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.henriquesapessoa.com/",
+  "lat": 38.7235618,
+  "lng": -9.1559051,
+  "placeId": "ChIJs47gSDAzGQ0Rh8OWluBD79k"
+}

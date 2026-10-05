@@ -1,0 +1,16 @@
+{
+  "name": "Éon",
+  "city": "porto",
+  "address": "Rua Ricardo Severo 21, 4050-515, Porto",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 29,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://palacetesevero.com/",
+  "lat": 41.1561698,
+  "lng": -8.6254234,
+  "placeId": "ChIJm3Z1COFlJA0RGV920XApZEE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Le Monument",
+  "city": "porto",
+  "address": "Avenida dos Aliados 151, 4000-067, Porto",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 348,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotelstheone.com/pt/hoteis-porto/the-one-monumental-palace/restaurantes",
+  "lat": 41.1484635,
+  "lng": -8.6114469,
+  "placeId": "ChIJZfuOMpllJA0RX7KKaNLwg-k"
+}

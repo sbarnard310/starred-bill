@@ -1,0 +1,19 @@
+{
+  "name": "Ocean",
+  "city": "portugal",
+  "area": "Porches",
+  "address": "Rua Anneliese Pohl - Alporchinhos, 8400-450, Porches",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 330,
+  "dinnerType": "menu",
+  "dinner": 395,
+  "dinnerNote": "Tasting menu (other menus from €225)",
+  "sourceType": "site",
+  "source": "https://restauranteocean.com/pt/menu",
+  "website": "https://restauranteocean.com/pt",
+  "lat": 37.1008268,
+  "lng": -8.3792041,
+  "placeId": "ChIJx-TDmUPRGg0RvmRyo6SdzZM"
+}

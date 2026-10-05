@@ -1,0 +1,16 @@
+{
+  "name": "CURA",
+  "city": "lisbon",
+  "address": "Rua Rodrigo da Fonseca 88, 1099-039, Lisbon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 312,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://m.fourseasons.com/pt/lisbon/dining/restaurants/cura/",
+  "lat": 38.7257479,
+  "lng": -9.155379,
+  "placeId": "ChIJo2vQX0szGQ0R5QhuFFOeY64"
+}

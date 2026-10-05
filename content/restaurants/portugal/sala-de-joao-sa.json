@@ -1,0 +1,16 @@
+{
+  "name": "SÁLA de João Sá",
+  "city": "lisbon",
+  "address": "Rua dos Bacalhoeiros 103, 1100-068, Lisbon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 637,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantesala.pt/",
+  "lat": 38.7091165,
+  "lng": -9.1338667,
+  "placeId": "ChIJm89J3cU1GQ0R2jwq9BnxatA"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Il Gallo d'Oro",
+  "city": "portugal",
+  "area": "Funchal",
+  "address": "Estrada Monumental 147, 9004-532, Funchal",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 492,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.portobay.com/en/restaurants/restaurants-madeira/il-gallo-doro",
+  "lat": 32.6382988,
+  "lng": -16.9266478,
+  "placeId": "ChIJtSh4JPdfYAwRh7W55N3cEjY"
+}

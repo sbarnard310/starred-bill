@@ -1,0 +1,16 @@
+{
+  "name": "Grenache",
+  "city": "lisbon",
+  "address": "Pátio de Dom Fradique 12, 1100-624, Lisbon",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.7,
+  "reviews": 373,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://grenache.pt/",
+  "lat": 38.7124025,
+  "lng": -9.13165,
+  "placeId": "ChIJRRUDRjU1GQ0RMctgCBoUAao"
+}

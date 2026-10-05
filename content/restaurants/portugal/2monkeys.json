@@ -1,0 +1,16 @@
+{
+  "name": "2Monkeys",
+  "city": "lisbon",
+  "address": "Rua Câmara Pestana 23, 1150-082, Lisbon",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 204,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://2monkeys.com.pt/",
+  "lat": 38.7180859,
+  "lng": -9.1400416,
+  "placeId": "ChIJseFGkk8zGQ0ReBcJKCtOKJ0"
+}

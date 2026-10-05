@@ -1,0 +1,16 @@
+{
+  "name": "Kanazawa",
+  "city": "lisbon",
+  "address": "Rua Damião De Góis 3 A, 1400-291, Lisbon",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.9,
+  "reviews": 355,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kanazawa.com.pt",
+  "lat": 38.6979595,
+  "lng": -9.2256498,
+  "placeId": "ChIJsVqK_HrLHg0RIks_llCFqB0"
+}

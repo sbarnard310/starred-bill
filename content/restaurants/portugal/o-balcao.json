@@ -1,0 +1,17 @@
+{
+  "name": "Ó Balcão",
+  "city": "portugal",
+  "area": "Santarém",
+  "address": "Rua Pedro de Santarém 73, 2000-223, Santarém",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 1041,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://tabernaobalcao.com/",
+  "lat": 39.2318717,
+  "lng": -8.6858859,
+  "placeId": "ChIJQV-cS2zuGA0RTSvmBEFtEqg"
+}

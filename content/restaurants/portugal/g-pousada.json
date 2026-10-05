@@ -1,0 +1,19 @@
+{
+  "name": "G Pousada",
+  "city": "portugal",
+  "area": "Bragança",
+  "address": "Estrada de Turismo, 5300-271, Bragança",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 80,
+  "dinnerType": "menu",
+  "dinner": 95,
+  "dinnerNote": "Tasting menu (other menus from €60)",
+  "sourceType": "site",
+  "source": "https://gpousada.com/menu/",
+  "website": "https://www.gpousada.com/",
+  "lat": 41.8026186,
+  "lng": -6.7541046,
+  "placeId": "ChIJ8-Lx_oRJOg0R33nwWd8Rkd0"
+}

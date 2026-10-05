@@ -1,0 +1,16 @@
+{
+  "name": "In Diferente",
+  "city": "porto",
+  "address": "Rua do Doutor Sousa Rosa 23, 4150-719, Porto",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 685,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://indiferente.pt/en/",
+  "lat": 41.1554764,
+  "lng": -8.6769615,
+  "placeId": "ChIJjYLThhNvJA0RQDzPq7l3Yd0"
+}

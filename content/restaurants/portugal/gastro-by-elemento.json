@@ -1,0 +1,19 @@
+{
+  "name": "Gastro by Elemento",
+  "city": "porto",
+  "address": "Rua Maria Adelaide Freitas Gonçalves 13, 4350-109, Porto",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 163,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://gastroelemento.com/menu-english/",
+  "wine": 75,
+  "website": "https://www.gastroelemento.com/",
+  "lat": 41.1643051,
+  "lng": -8.588231,
+  "placeId": "ChIJU5Ynx4BlJA0Ra5NW2i_68kw"
+}

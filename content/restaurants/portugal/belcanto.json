@@ -1,0 +1,19 @@
+{
+  "name": "Belcanto",
+  "city": "lisbon",
+  "address": "Rua Serpa Pinto 10A, 1200-026, Lisbon",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 1867,
+  "dinnerType": "menu",
+  "dinner": 300,
+  "dinnerNote": "Tasting menu (other menus from €120)",
+  "sourceType": "site",
+  "source": "https://www.belcanto.pt/carta/Belcanto_Menu_QRCode.pdf?v=102026",
+  "wine": 60,
+  "website": "https://www.belcanto.pt/",
+  "lat": 38.7104102,
+  "lng": -9.1415741,
+  "placeId": "ChIJITj75340GQ0RXULVgWMFloA"
+}

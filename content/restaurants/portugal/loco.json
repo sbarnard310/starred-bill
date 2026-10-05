@@ -1,0 +1,18 @@
+{
+  "name": "Loco",
+  "city": "lisbon",
+  "address": "Rua dos Navegantes 53 B, 1200-731, Lisbon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 536,
+  "dinnerType": "menu",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.loco.pt/menu-bebidas/",
+  "website": "https://www.loco.pt/",
+  "lat": 38.7123702,
+  "lng": -9.1605213,
+  "placeId": "ChIJgXtRbGIzGQ0RPLCCkufw600"
+}

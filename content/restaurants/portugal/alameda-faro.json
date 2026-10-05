@@ -1,0 +1,17 @@
+{
+  "name": "Alameda",
+  "city": "portugal",
+  "area": "Faro",
+  "address": "Rua da Polícia da Segurança Pública 10, 8000-151, Faro",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 548,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantealamedafaro.com",
+  "lat": 37.015965,
+  "lng": -7.9285331,
+  "placeId": "ChIJufG0J2VTBQ0RsWJhdz2Gqmc"
+}

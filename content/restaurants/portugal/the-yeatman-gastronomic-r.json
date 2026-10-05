@@ -1,0 +1,20 @@
+{
+  "name": "The Yeatman Gastronomic R.",
+  "city": "portugal",
+  "area": "Vila Nova de Gaia",
+  "address": "Rua do Choupelo (Santa Marinha), 4400-088, Vila Nova de Gaia",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 57,
+  "dinnerType": "menu",
+  "dinner": 300,
+  "dinnerNote": "Tasting menu (other menus from €260)",
+  "sourceType": "site",
+  "source": "https://www.the-yeatman-hotel.com/en/food/restaurant/",
+  "wine": 120,
+  "website": "https://www.the-yeatman-hotel.com/en/food/restaurant/",
+  "lat": 41.1336845,
+  "lng": -8.6133869,
+  "placeId": "ChIJcb6xRIFlJA0RSspxmETyV74"
+}

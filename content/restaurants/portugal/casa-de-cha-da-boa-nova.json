@@ -1,0 +1,17 @@
+{
+  "name": "Casa de Chá da Boa Nova",
+  "city": "portugal",
+  "area": "Leça da Palmeira",
+  "address": "Avenida da Liberdade, 1681, 4450-718, Leça da Palmeira",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 1337,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.casadechadaboanova.pt/",
+  "lat": 41.2027411,
+  "lng": -8.7147233,
+  "placeId": "ChIJsVkuMyVpJA0RepT94kmmVK0"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Gusto by Heinz Beck",
+  "city": "portugal",
+  "area": "Almancil",
+  "address": "Estrada da Quinta do Lago, 8135-106, Almancil",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.8,
+  "reviews": 143,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hilton.com/en/hotels/faoapci-conrad-algarve/dining/gusto-by-heinz-beck/",
+  "lat": 37.0633302,
+  "lng": -8.0301921,
+  "placeId": "ChIJE8rGznCzGg0RhYdyrdZKlVQ"
+}

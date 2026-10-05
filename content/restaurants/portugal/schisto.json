@@ -1,0 +1,17 @@
+{
+  "name": "Schistó",
+  "city": "portugal",
+  "area": "Peso da Régua",
+  "address": "Rua de Vilarinho dos Freires, 5050-364, Peso da Régua",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 25,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://schisto.pt/",
+  "lat": 41.1548135,
+  "lng": -7.7691469,
+  "placeId": "ChIJbUcIQcVTOw0RzsYz-5kk5EY"
+}

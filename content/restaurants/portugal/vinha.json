@@ -1,0 +1,17 @@
+{
+  "name": "Vinha",
+  "city": "portugal",
+  "area": "Vila Nova de Gaia",
+  "address": "Rua Quinta Fonte da Vinha 383, 4430-487, Vila Nova de Gaia",
+  "stars": 1,
+  "cuisine": "Portuguese",
+  "rating": 4.7,
+  "reviews": 576,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.vinhaboutiquehotel.com/en/tastes",
+  "lat": 41.1320681,
+  "lng": -8.5756156,
+  "placeId": "ChIJBZtUj1JlJA0RX6mSQ7od8Xo"
+}

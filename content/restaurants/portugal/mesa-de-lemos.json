@@ -1,0 +1,19 @@
+{
+  "name": "Mesa de Lemos",
+  "city": "portugal",
+  "area": "Silgueiros",
+  "address": "Quinta de Lemos - Passos de Silgueiros, 3500-541, Silgueiros",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 457,
+  "dinnerType": "menu",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €50)",
+  "sourceType": "site",
+  "source": "https://mesadelemos.com/",
+  "website": "https://mesadelemos.com/",
+  "lat": 40.577633,
+  "lng": -7.98049,
+  "placeId": "ChIJv71QEGo6Iw0R5s-Q3VPuFyA"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Fortaleza do Guincho",
+  "city": "portugal",
+  "area": "Cascais",
+  "address": "Estrada do Guincho 2413, 2750-642, Cascais",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1536,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.fortalezadoguincho.com/",
+  "lat": 38.7282977,
+  "lng": -9.4759076,
+  "placeId": "ChIJO-t2cnbDHg0RbT9KwBQBwJc"
+}

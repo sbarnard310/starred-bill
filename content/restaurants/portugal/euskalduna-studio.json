@@ -1,0 +1,19 @@
+{
+  "name": "Euskalduna Studio",
+  "city": "porto",
+  "address": "Rua Santo Ildefonso 404, 4000-466, Porto",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 643,
+  "dinnerType": "menu",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €150)",
+  "sourceType": "site",
+  "source": "https://www.euskaldunastudio.pt/menu.html",
+  "wine": 95,
+  "website": "https://www.euskaldunastudio.pt",
+  "lat": 41.147396,
+  "lng": -8.600956,
+  "placeId": "ChIJ03K2iu5kJA0RsUPYh2Oi5nc"
+}

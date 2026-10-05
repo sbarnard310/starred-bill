@@ -1,0 +1,17 @@
+{
+  "name": "Kappo",
+  "city": "portugal",
+  "area": "Cascais",
+  "address": "Avenida Emídio Navarro 23A, 2750-337, Cascais",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 276,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kappo.pt",
+  "lat": 38.6971584,
+  "lng": -9.422948,
+  "placeId": "ChIJlyhHBYPFHg0RUhMGeY6WCqY"
+}

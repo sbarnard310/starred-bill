@@ -1,0 +1,19 @@
+{
+  "name": "Feitoria",
+  "city": "lisbon",
+  "address": "Doca do Bom Sucesso, 1400-038, Lisbon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 643,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "site",
+  "source": "https://www.restaurantefeitoria.com/PT/menu-semente-andre-cruz/",
+  "wine": 90,
+  "website": "https://www.restaurantefeitoria.com/",
+  "lat": 38.6936647,
+  "lng": -9.2129467,
+  "placeId": "ChIJh32rQULLHg0RkgF8wCakjIk"
+}

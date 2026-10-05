@@ -1,0 +1,18 @@
+{
+  "name": "Pedro Lemos",
+  "city": "porto",
+  "address": "Rua do Ouro 258, 4150-554, Porto",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 499,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://pedrolemos.pt/wp-content/uploads/2026/03/Menu-PT.pdf",
+  "website": "https://www.pedrolemos.net/",
+  "lat": 41.1480595,
+  "lng": -8.6501319,
+  "placeId": "ChIJxT5-pYNvJA0R_MDHylK8WWc"
+}

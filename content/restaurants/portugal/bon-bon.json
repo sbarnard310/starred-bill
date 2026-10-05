@@ -1,0 +1,20 @@
+{
+  "name": "Bon Bon",
+  "city": "portugal",
+  "area": "Lagoa",
+  "address": "Estrada de Sesmarias, 8400-010, Lagoa",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 381,
+  "dinnerType": "menu",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "site",
+  "source": "https://bonbon.pt/pt-pt/menu/",
+  "wine": 105,
+  "website": "https://bonbon.pt/",
+  "lat": 37.116478,
+  "lng": -8.480948,
+  "placeId": "ChIJP9vvfCnWGg0R3TfJiGLJZ5E"
+}

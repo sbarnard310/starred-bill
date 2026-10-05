@@ -1,0 +1,16 @@
+{
+  "name": "Marlene,",
+  "city": "lisbon",
+  "address": "Avenida Infante D. Henrique. Doca do Jardim do Tabaco, 1100-651, Lisbon",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 180,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.marlene.pt",
+  "lat": 38.7120612,
+  "lng": -9.1240727,
+  "placeId": "ChIJ6yKFIHU0GQ0R_eBA3ru1Ylc"
+}

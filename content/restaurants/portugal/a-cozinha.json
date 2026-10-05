@@ -1,0 +1,17 @@
+{
+  "name": "A Cozinha",
+  "city": "portugal",
+  "area": "Guimaraes",
+  "address": "Largo do Serralho 4, 4800-472, Guimaraes",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 686,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restauranteacozinha.pt/",
+  "lat": 41.4429053,
+  "lng": -8.2941256,
+  "placeId": "ChIJszl3wOnvJA0RJHgvvsx5p9E"
+}

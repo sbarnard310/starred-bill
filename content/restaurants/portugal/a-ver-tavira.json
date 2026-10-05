@@ -1,0 +1,20 @@
+{
+  "name": "A Ver Tavira",
+  "city": "portugal",
+  "area": "Tavira",
+  "address": "Calçada da Galeria 13, 8800-306, Tavira",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.3,
+  "reviews": 637,
+  "dinnerType": "menu",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://avertavira.com/wp-content/uploads/2026/04/Menus-Jantar-PT-6-e-9-e-veg.-2026.pdf",
+  "wine": 85,
+  "website": "https://avertavira.com/",
+  "lat": 37.12565,
+  "lng": -7.651429,
+  "placeId": "ChIJc0cmxHkDEA0R-va0hM1Mpww"
+}

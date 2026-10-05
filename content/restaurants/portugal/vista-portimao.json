@@ -1,0 +1,20 @@
+{
+  "name": "Vista",
+  "city": "portugal",
+  "area": "Portimao",
+  "address": "Avenida Tomás Cabreira, 8500-802, Portimao",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 150,
+  "dinnerType": "menu",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://cdn.prod.website-files.com/6912211b14b346e4e0e31f41/6a9151f84300d3aef47f97a4_MENU_VISTA_2026.pdf",
+  "wine": 140,
+  "website": "https://www.vistarestaurante.com/",
+  "lat": 37.1186321,
+  "lng": -8.5373631,
+  "placeId": "ChIJsaUQZuIoGw0R-Tp8rYvOp2A"
+}

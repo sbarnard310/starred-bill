@@ -1,0 +1,16 @@
+{
+  "name": "Encanto",
+  "city": "lisbon",
+  "address": "Largo De São Carlos 10, 1200 410, Lisbon",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "rating": 4.6,
+  "reviews": 385,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.encantojoseavillez.pt",
+  "lat": 38.7099833,
+  "lng": -9.1414928,
+  "placeId": "ChIJ-7dkqCk1GQ0RkfmRBwE4CTw"
+}

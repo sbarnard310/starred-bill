@@ -1,0 +1,17 @@
+{
+  "name": "Desarma",
+  "city": "portugal",
+  "area": "Funchal",
+  "address": "Rua das Maravilhas 74, 9000-177, Funchal",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 360,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.desarma.pt/",
+  "lat": 32.648641,
+  "lng": -16.9194868,
+  "placeId": "ChIJ3RTe_J9fYAwRxP19_yBpTcY"
+}

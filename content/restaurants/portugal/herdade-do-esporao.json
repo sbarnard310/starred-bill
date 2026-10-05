@@ -1,0 +1,20 @@
+{
+  "name": "Herdade do Esporão",
+  "city": "portugal",
+  "area": "Reguengos de Monsaraz",
+  "address": "Herdade do Esporão, 7200-999, Reguengos de Monsaraz",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 1475,
+  "dinnerType": "menu",
+  "dinner": 65,
+  "dinnerNote": "Tasting menu (other menus from €55)",
+  "sourceType": "site",
+  "source": "https://esporao.com/pt/turismo/restaurante-da-herdade-do-esporao",
+  "wine": 50,
+  "website": "https://esporao.com/pt/turismo/restaurante-da-herdade-do-esporao",
+  "lat": 38.38073,
+  "lng": -7.55312,
+  "placeId": "ChIJsW3GGqVMFw0R9rCSO0HxuEs"
+}

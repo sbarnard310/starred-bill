@@ -1,0 +1,18 @@
+{
+  "name": "Fifty Seconds",
+  "city": "lisbon",
+  "address": "Cais das Naus, 1990-173, Lisbon",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 409,
+  "dinnerType": "menu",
+  "dinner": 495,
+  "dinnerNote": "Tasting menu (other menus from €175)",
+  "sourceType": "site",
+  "source": "https://www.fiftysecondsexperience.com/wp-content/uploads/2026/09/MENU-VERT-DERIVA-PT-16.9.26.pdf",
+  "website": "https://www.fiftysecondsexperience.com/",
+  "lat": 38.7747556,
+  "lng": -9.0911606,
+  "placeId": "ChIJi1Qa6ooxGQ0RXBaNcwtKzmA"
+}

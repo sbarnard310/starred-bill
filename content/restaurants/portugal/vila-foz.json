@@ -1,0 +1,19 @@
+{
+  "name": "Vila Foz",
+  "city": "porto",
+  "address": "Avenida De Montevideu 236, 4150-516, Porto",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 725,
+  "dinnerType": "menu",
+  "dinner": 400,
+  "dinnerNote": "Tasting menu (other menus from €50)",
+  "sourceType": "site",
+  "source": "https://www.vilafozhotel.pt/restaurant-vila-foz-reservas",
+  "wine": 140,
+  "website": "https://www.vilafozhotel.pt/restaurant-vila-foz-reservas",
+  "lat": 41.1614535,
+  "lng": -8.6846149,
+  "placeId": "ChIJo73XAA1vJA0Ren6trqlHRIk"
+}

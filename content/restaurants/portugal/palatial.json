@@ -1,0 +1,17 @@
+{
+  "name": "Palatial",
+  "city": "portugal",
+  "area": "Braga",
+  "address": "Av. da Independência 8, Arcos, 4705-162, Braga",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 108,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://palatial.pt/",
+  "lat": 41.5238795,
+  "lng": -8.4192035,
+  "placeId": "ChIJaRHoTr_5JA0ROdasYaaUxdc"
+}

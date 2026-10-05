@@ -1,0 +1,16 @@
+{
+  "name": "AIRA",
+  "city": "stockholm",
+  "address": "Biskopsvägen 9, 115 21, Stockholm",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 393,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.aira.se",
+  "lat": 59.3209372,
+  "lng": 18.123702,
+  "placeId": "ChIJo-jR6FCDX0YRyX4XLbig0yI"
+}

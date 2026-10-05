@@ -1,0 +1,17 @@
+{
+  "name": "PM & Vänner Restaurant",
+  "city": "sweden",
+  "area": "Växjö",
+  "address": "Storgatan 22, 352 31, Växjö",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.4,
+  "reviews": 1383,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://pmrestauranger.se",
+  "lat": 56.8789279,
+  "lng": 14.8043573,
+  "placeId": "ChIJIYcLKI0jV0YRemfw1hsl_lU"
+}

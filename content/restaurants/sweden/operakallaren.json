@@ -1,0 +1,18 @@
+{
+  "name": "Operakällaren",
+  "city": "stockholm",
+  "address": "Operahuset, Karl XII's Torg, 111 86, Stockholm",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 784,
+  "dinnerType": "menu",
+  "dinner": 4500,
+  "dinnerNote": "Tasting menu (other menus from SEK 3,300)",
+  "sourceType": "site",
+  "source": "https://operakallaren.se/",
+  "website": "https://www.operakallaren.se/",
+  "lat": 59.3297475,
+  "lng": 18.0713797,
+  "placeId": "ChIJb6M0N1mdX0YR189aG7qitog"
+}

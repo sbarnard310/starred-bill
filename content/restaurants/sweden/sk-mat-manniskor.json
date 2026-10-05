@@ -1,0 +1,16 @@
+{
+  "name": "SK Mat & Människor",
+  "city": "gothenburg",
+  "address": "Johannebergsgatan 24, 412 55, Gothenburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1242,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://skmat.se",
+  "lat": 57.6972648,
+  "lng": 11.9828127,
+  "placeId": "ChIJC3BEjXbzT0YRsB_gtrUm-20"
+}

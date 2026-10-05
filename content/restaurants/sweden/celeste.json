@@ -1,0 +1,16 @@
+{
+  "name": "Celeste",
+  "city": "stockholm",
+  "address": "Torkel Knutssonsgatan 24, 11849, Stockholm",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 124,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.celesterestaurant.se/",
+  "lat": 59.3164219,
+  "lng": 18.0571676,
+  "placeId": "ChIJeyXilFZ3X0YR4cuEOlxrGcc"
+}

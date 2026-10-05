@@ -1,0 +1,16 @@
+{
+  "name": "Frantzén",
+  "city": "stockholm",
+  "address": "Klara Norra Kyrkogata 26, 111 22, Stockholm",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 773,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantfrantzen.com/",
+  "lat": 59.3341673,
+  "lng": 18.0597575,
+  "placeId": "ChIJhwomM2edX0YR9gW2q53gJRg"
+}

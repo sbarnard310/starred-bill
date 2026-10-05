@@ -1,0 +1,16 @@
+{
+  "name": "ADAM ALBIN",
+  "city": "stockholm",
+  "address": "Regeringsgatan 2, 111 53, Stockholm",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 676,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.adamalbin.se/",
+  "lat": 59.3298102,
+  "lng": 18.0687883,
+  "placeId": "ChIJKdaIv2mdX0YR9RuQJ2s4kME"
+}

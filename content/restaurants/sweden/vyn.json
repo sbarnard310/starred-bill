@@ -1,0 +1,17 @@
+{
+  "name": "VYN",
+  "city": "sweden",
+  "area": "Simrishamn",
+  "address": "Höga vägen 72, 272 92, Simrishamn",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 407,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.vynrestaurant.se",
+  "lat": 55.4962176,
+  "lng": 14.3130043,
+  "placeId": "ChIJLbEtuLtvVEYRhbjWJlyxJlI"
+}

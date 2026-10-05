@@ -1,0 +1,16 @@
+{
+  "name": "Dashi",
+  "city": "stockholm",
+  "address": "Rådmansgatan 23, 114 25, Stockholm",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 213,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://dashisthlm.se",
+  "lat": 59.3426722,
+  "lng": 18.0657669,
+  "placeId": "ChIJPx3u7budX0YRB2JLoqpp-vQ"
+}

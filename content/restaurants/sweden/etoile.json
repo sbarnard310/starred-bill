@@ -1,0 +1,16 @@
+{
+  "name": "Etoile",
+  "city": "stockholm",
+  "address": "Norra Stationsgatan 51, 113 44, Stockholm",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 306,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantetoile.se/",
+  "lat": 59.3495123,
+  "lng": 18.0437729,
+  "placeId": "ChIJgVLWIy2dX0YRwzH2Ot8s_KM"
+}

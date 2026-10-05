@@ -1,0 +1,16 @@
+{
+  "name": "Nour",
+  "city": "stockholm",
+  "address": "Norrlandsgatan 24, 111 43, Stockholm",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 137,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantnour.se",
+  "lat": 59.3357675,
+  "lng": 18.071196,
+  "placeId": "ChIJpWwPqfidX0YRhMopIamkCHY"
+}

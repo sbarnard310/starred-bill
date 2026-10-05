@@ -1,0 +1,16 @@
+{
+  "name": "Seafood Gastro",
+  "city": "stockholm",
+  "address": "Södra Blasieholmshamnen 8, 11148, Stockholm",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.7,
+  "reviews": 45,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://mdghs.se/en/seafood-gastro/",
+  "lat": 59.3294565,
+  "lng": 18.0756768,
+  "placeId": "ChIJSXGfco2dX0YRi5M7Vjb_mjQ"
+}

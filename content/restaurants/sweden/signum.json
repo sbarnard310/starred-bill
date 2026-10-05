@@ -1,0 +1,19 @@
+{
+  "name": "Signum",
+  "city": "sweden",
+  "area": "Mölnlycke",
+  "address": "Hällsnäs Hotell,  Långenäsvägen 150, 435 35, Mölnlycke",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 78,
+  "dinnerType": "menu",
+  "dinner": 4000,
+  "dinnerNote": "Tasting menu (other menus from SEK 1,600)",
+  "sourceType": "site",
+  "source": "https://restaurantsignum.com/meny",
+  "website": "https://restaurantsignum.com/",
+  "lat": 57.675447,
+  "lng": 12.1786546,
+  "placeId": "ChIJcwxYz2PxT0YRbOv1sdSxCMg"
+}

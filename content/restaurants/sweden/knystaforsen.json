@@ -1,0 +1,17 @@
+{
+  "name": "Knystaforsen",
+  "city": "sweden",
+  "area": "Rydöbruk",
+  "address": "Rydöforsvägen 4, 31442, Rydöbruk",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 190,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://knystaforsen.se",
+  "lat": 56.958207,
+  "lng": 13.1400487,
+  "placeId": "ChIJg2GpRjZVUEYReSMzvNyjG50"
+}

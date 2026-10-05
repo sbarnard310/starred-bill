@@ -1,0 +1,16 @@
+{
+  "name": "ergo.",
+  "city": "stockholm",
+  "address": "Artillerigatan 14, 114 51, Stockholm",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 72,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantergo.se/",
+  "lat": 59.3337092,
+  "lng": 18.0808598,
+  "placeId": "ChIJCYoQXG6dX0YRQvD9fggfOA0"
+}

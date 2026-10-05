@@ -1,0 +1,17 @@
+{
+  "name": "Vollmers",
+  "city": "sweden",
+  "area": "Malmo",
+  "address": "Tegelgårdsgatan 5, 211 33, Malmo",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 416,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.vollmers.nu/",
+  "lat": 55.6046461,
+  "lng": 12.9966201,
+  "placeId": "ChIJcenHbP6jU0YRISVlIYKXnrQ"
+}

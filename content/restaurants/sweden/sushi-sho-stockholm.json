@@ -1,0 +1,16 @@
+{
+  "name": "Sushi Sho",
+  "city": "stockholm",
+  "address": "Upplandsgatan 45, 113 28, Stockholm",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 1202,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.sushisho.se/",
+  "lat": 59.3411916,
+  "lng": 18.0498009,
+  "placeId": "ChIJVVVV8m-dX0YRrWZ8HbLSOhM"
+}

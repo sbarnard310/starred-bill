@@ -1,0 +1,16 @@
+{
+  "name": "Koka",
+  "city": "gothenburg",
+  "address": "Viktoriagatan 12, 411  25, Gothenburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 946,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurangkoka.se/",
+  "lat": 57.6986003,
+  "lng": 11.9654719,
+  "placeId": "ChIJkfbFj27zT0YR56rN52ES0g4"
+}

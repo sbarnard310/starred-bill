@@ -1,0 +1,14 @@
+{
+  "name": "28+",
+  "city": "gothenburg",
+  "address": "Götabergsgatan 28, 411 34, Gothenburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://28plus.se/",
+  "lat": 57.6981746,
+  "lng": 11.9738899,
+  "placeId": "EjBHw7Z0YWJlcmdzZ2F0YW4gMjgsIDI4LCA0MTEgMzQgR8O2dGVib3JnLCBTd2VkZW4iHhocChYKFAoSCbP3YL1x809GEbBdOsox-yunEgIyOA"
+}

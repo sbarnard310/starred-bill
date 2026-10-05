@@ -1,0 +1,17 @@
+{
+  "name": "Mosconi",
+  "city": "luxembourg",
+  "area": "Luxembourg City",
+  "address": "13 rue Münster, 2160, Luxembourg City",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.5,
+  "reviews": 282,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mosconi.lu/",
+  "lat": 49.6089647,
+  "lng": 6.1358397,
+  "placeId": "ChIJp1DpaM1IlUcRjRysHYw1Nc0"
+}

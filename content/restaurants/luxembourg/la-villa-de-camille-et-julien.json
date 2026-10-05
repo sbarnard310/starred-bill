@@ -1,0 +1,17 @@
+{
+  "name": "La Villa de Camille et Julien",
+  "city": "luxembourg",
+  "area": "Luxembourg City",
+  "address": "5 rue de Pulvermühl, 2090, Luxembourg City",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.4,
+  "reviews": 627,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lavilla.lu/fr",
+  "lat": 49.6089034,
+  "lng": 6.1505965,
+  "placeId": "ChIJRcPaL8hIlUcR3Y0_ROWRDmw"
+}

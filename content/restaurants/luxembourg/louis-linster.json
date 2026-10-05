@@ -1,0 +1,17 @@
+{
+  "name": "Louis Linster",
+  "city": "luxembourg",
+  "area": "Frisange",
+  "address": "17 route de Luxembourg, 5752, Frisange",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.9,
+  "reviews": 756,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://louis-linster.lu/",
+  "lat": 49.51803,
+  "lng": 6.187337,
+  "placeId": "ChIJ-YMZHnc4lUcRtX0IuXdH_y8"
+}

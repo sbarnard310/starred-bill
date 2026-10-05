@@ -1,0 +1,20 @@
+{
+  "name": "Fani",
+  "city": "luxembourg",
+  "area": "Roeser",
+  "address": "51 Grand Rue, 3394, Roeser",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.7,
+  "reviews": 419,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "site",
+  "source": "https://fani.lu/menu/",
+  "wine": 80,
+  "website": "https://ristorantefani.lu/Fani.lu",
+  "lat": 49.5398788,
+  "lng": 6.1445492,
+  "placeId": "ChIJFQyPIBBIlUcRqQ6MOJm-1us"
+}

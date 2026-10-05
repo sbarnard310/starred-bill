@@ -1,0 +1,19 @@
+{
+  "name": "Fields by René Mathieu",
+  "city": "luxembourg",
+  "area": "Findel",
+  "address": "6 Rue de Trèves, 2632, Findel",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.9,
+  "reviews": 86,
+  "dinnerType": "menu",
+  "dinner": 85,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.airfield.lu/wp-content/uploads/2026/09/MENU-IMMERSION-VEGETALE-09.26.3docx.pdf",
+  "website": "https://fields.lu/",
+  "lat": 49.6281524,
+  "lng": 6.2030348,
+  "placeId": "ChIJFR-oPo5FlUcRcJ_NIXiybTI"
+}

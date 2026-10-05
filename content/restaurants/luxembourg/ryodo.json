@@ -1,0 +1,19 @@
+{
+  "name": "Ryôdô",
+  "city": "luxembourg",
+  "area": "Luxembourg City",
+  "address": "27 rue Raymond Poincaré, 2342, Luxembourg City",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 347,
+  "dinnerType": "menu",
+  "dinner": 85,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://ryodoes.com/menu/menu-du-jour/",
+  "website": "https://ryodoes.com/",
+  "lat": 49.6024093,
+  "lng": 6.1169817,
+  "placeId": "ChIJyxPx02dJlUcRsHN9NdOkVaA"
+}

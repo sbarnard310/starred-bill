@@ -1,0 +1,19 @@
+{
+  "name": "Archibald De Prince",
+  "city": "luxembourg",
+  "area": "Lauterborn",
+  "address": "Maison 6, 6562, Lauterborn",
+  "stars": 1,
+  "cuisine": "Organic",
+  "rating": 4.9,
+  "reviews": 207,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.archibalddeprince.lu/la-table/",
+  "website": "https://www.archibalddeprince.lu",
+  "lat": 49.7974245,
+  "lng": 6.3881829,
+  "placeId": "ChIJx110PI1flUcRvvMfvY9kc70"
+}

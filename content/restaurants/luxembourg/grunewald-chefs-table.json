@@ -1,0 +1,17 @@
+{
+  "name": "Grünewald Chef’s Table",
+  "city": "luxembourg",
+  "area": "Luxembourg City",
+  "address": "2 Rue des Hauts-Fourneaux, 1719, Luxembourg City",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 131,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://gct.lu",
+  "lat": 49.6334303,
+  "lng": 6.1383319,
+  "placeId": "ChIJ0ZlWNmNPlUcRYKIL5laBx98"
+}

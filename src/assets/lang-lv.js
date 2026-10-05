@@ -49,6 +49,7 @@
     formerTitle: "Vairs bez zvaigznes",
     formerNote: "Restorāni, kas bija iepriekšējā šī saraksta izdevumā, bet kopš tā laika zaudējuši zvaigznes, slēgti vai mainījušies. Tikai informācijai.",
     formerly: "agrāk", stLost: "Zaudēja zvaigzni", stClosed: "Slēgts", stChanged: "Mainījies",
+    tapHint: "Pieskarieties restorānam, lai redzētu visas cenas un sīkāku informāciju.",
     showing: "Restorāni ar zvaigznēm: {a} no {b}", showingFormer: ", un vēl {c} bez zvaigznes",
     wishNote: "Jūsu vēlmju saraksts tiek saglabāts tikai šajā pārlūkā.",
     wishAdd: "Pievienot {name} vēlmju sarakstam", wishRemove: "Noņemt {name} no vēlmju saraksta", wishAddT: "Pievienot vēlmju sarakstam", wishRemoveT: "Noņemt no vēlmju saraksta",

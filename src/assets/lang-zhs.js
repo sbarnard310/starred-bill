@@ -56,6 +56,7 @@
     formerTitle: "已不再是星级餐厅",
     formerNote: "曾列于本榜单上一版、但之后失去星级、停业或有所变动的餐厅，仅供参考。",
     formerly: "此前", stLost: "失去星级", stClosed: "已停业", stChanged: "已变动",
+    tapHint: "点按餐厅即可查看完整价格和详细信息。",
     showing: "显示 {b} 家星级餐厅中的 {a} 家", showingFormer: "，另有 {c} 家已不再是星级",
     wishNote: "心愿单只保存在这个浏览器中。",
     wishAdd: "将{name}加入心愿单", wishRemove: "将{name}从心愿单移除", wishAddT: "加入心愿单", wishRemoveT: "从心愿单移除",

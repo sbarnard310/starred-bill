@@ -52,6 +52,7 @@
     formerTitle: "Har ikke lenger stjerner",
     formerNote: "Restauranter som var med i forrige utgave av listen, men som siden har mistet stjernene, stengt eller endret seg. Vises bare til informasjon.",
     formerly: "tidligere", stLost: "Mistet stjernen", stClosed: "Stengt", stChanged: "Endret",
+    tapHint: "Trykk på en restaurant for å se alle priser og detaljer.",
     showing: "Viser {a} av {b} stjernerestauranter", showingFormer: ", pluss {c} uten stjerner",
     wishNote: "Ønskelisten din lagres bare i denne nettleseren.",
     wishAdd: "Legg {name} til på ønskelisten", wishRemove: "Fjern {name} fra ønskelisten", wishAddT: "Legg til på ønskelisten", wishRemoveT: "Fjern fra ønskelisten",

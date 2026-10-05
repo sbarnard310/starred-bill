@@ -347,8 +347,16 @@ function toggleRow(btn) {
   // Closing a row above this one would pull it up the screen, so keep it where the finger was.
   const moved = row.getBoundingClientRect().top - before;
   if (moved) window.scrollBy(0, moved);
+  // The "tap a restaurant" hint goes once someone has opened one.
+  if (open && !$("tapHint").hidden) { $("tapHint").hidden = true; store.set(PREFS_KEY, Object.assign(store.get(PREFS_KEY, {}), { tapHint: 1 })); }
 }
-document.addEventListener("click", (e) => { const b = e.target.closest("#ledger .sum"); if (b) toggleRow(b); });
+if (store.get(PREFS_KEY, {}).tapHint) $("tapHint").hidden = true;
+// A closed row opens from a tap anywhere on it (photo included) except its heart; an open one closes from its top line.
+document.addEventListener("click", (e) => {
+  const row = e.target.closest("#ledger .row"), b = row && row.querySelector(".sum");
+  if (!b || !b.offsetParent) return;
+  if (e.target.closest(".sum") || e.target === row || (!row.classList.contains("open") && !e.target.closest("a, button"))) toggleRow(b);
+});
 
 // ---------- Till receipt (phones) and torn-off stub (computers) ----------
 // How each country's menu prices treat service, for the receipt's footer line (from each country's serviceText).

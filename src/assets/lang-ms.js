@@ -53,6 +53,7 @@
     formerTitle: "Tidak lagi berbintang",
     formerNote: "Restoran yang tersenarai dalam edisi lepas senarai ini tetapi sejak itu kehilangan bintang, ditutup atau berubah. Ditunjukkan sebagai rujukan sahaja.",
     formerly: "dahulu", stLost: "Hilang bintang", stClosed: "Ditutup", stChanged: "Berubah",
+    tapHint: "Ketik restoran untuk melihat semua harga dan butiran.",
     showing: "Menunjukkan {a} daripada {b} restoran berbintang", showingFormer: ", serta {c} yang tidak lagi berbintang",
     wishNote: "Senarai hajat anda hanya disimpan dalam pelayar ini.",
     wishAdd: "Tambah {name} ke senarai hajat", wishRemove: "Buang {name} daripada senarai hajat", wishAddT: "Tambah ke senarai hajat", wishRemoveT: "Buang daripada senarai hajat",

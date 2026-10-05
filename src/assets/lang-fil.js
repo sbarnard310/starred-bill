@@ -52,6 +52,7 @@
     formerTitle: "Wala nang bituin",
     formerNote: "Mga restawrang nasa nakaraang edisyon ng listahang ito pero nawalan na ng bituin, nagsara o nagbago mula noon. Para sa sanggunian lamang.",
     formerly: "dati", stLost: "Nawalan ng bituin", stClosed: "Sarado", stChanged: "Nagbago",
+    tapHint: "I-tap ang isang restaurant para makita ang lahat ng presyo at detalye.",
     showing: "Ipinapakita ang {a} sa {b} restawrang may bituin", showingFormer: ", at {c} na wala nang bituin",
     wishNote: "Sa browser na ito lang naka-save ang wishlist mo.",
     wishAdd: "Idagdag ang {name} sa wishlist mo", wishRemove: "Alisin ang {name} sa wishlist mo", wishAddT: "Idagdag sa wishlist", wishRemoveT: "Alisin sa wishlist",

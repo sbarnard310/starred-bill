@@ -49,6 +49,7 @@
     formerTitle: "Nebeturi žvaigždutės",
     formerNote: "Restoranai, kurie buvo ankstesniame šio sąrašo leidime, bet nuo tada prarado žvaigždutes, užsidarė ar pasikeitė. Pateikiama tik informacijai.",
     formerly: "anksčiau", stLost: "Prarado žvaigždutę", stClosed: "Uždarytas", stChanged: "Pasikeitė",
+    tapHint: "Bakstelėkite restoraną, kad pamatytumėte visas kainas ir išsamią informaciją.",
     showing: "Restoranai su žvaigždutėmis: {a} iš {b}", showingFormer: ", ir dar {c} be žvaigždutės",
     wishNote: "Jūsų norų sąrašas saugomas tik šioje naršyklėje.",
     wishAdd: "Pridėti {name} į norų sąrašą", wishRemove: "Pašalinti {name} iš norų sąrašo", wishAddT: "Pridėti į norų sąrašą", wishRemoveT: "Pašalinti iš norų sąrašo",

@@ -52,6 +52,7 @@
     formerTitle: "Już bez gwiazdki",
     formerNote: "Restauracje, które były w poprzednim wydaniu tej listy, ale od tego czasu straciły gwiazdki, zamknęły się lub zmieniły. Tylko dla informacji.",
     formerly: "dawniej", stLost: "Straciła gwiazdkę", stClosed: "Zamknięta", stChanged: "Zmieniona",
+    tapHint: "Dotknij restauracji, aby zobaczyć wszystkie ceny i szczegóły.",
     showing: "Restauracje z gwiazdkami: {a} z {b}", showingFormer: ", oraz {c} bez gwiazdki",
     wishNote: "Ulubione są zapisane tylko w tej przeglądarce.",
     wishAdd: "Dodaj {name} do ulubionych", wishRemove: "Usuń {name} z ulubionych", wishAddT: "Dodaj do ulubionych", wishRemoveT: "Usuń z ulubionych",

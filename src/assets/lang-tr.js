@@ -53,6 +53,7 @@
     formerTitle: "Artık yıldızlı değil",
     formerNote: "Bu listenin önceki baskısında yer alan, ancak o zamandan beri yıldızlarını kaybeden, kapanan ya da değişen restoranlar. Yalnızca bilgi için gösterilir.",
     formerly: "eskiden", stLost: "Yıldızını kaybetti", stClosed: "Kapandı", stChanged: "Değişti",
+    tapHint: "Tüm fiyatları ve ayrıntıları görmek için bir restorana dokunun.",
     showing: "{b} yıldızlı restorandan {a} tanesi", showingFormer: ", artı artık yıldızlı olmayan {c} restoran",
     wishNote: "İstek listeniz yalnızca bu tarayıcıda saklanır.",
     wishAdd: "{name} restoranını istek listenize ekleyin", wishRemove: "{name} restoranını istek listenizden çıkarın", wishAddT: "İstek listesine ekle", wishRemoveT: "İstek listesinden çıkar",

@@ -51,6 +51,7 @@
     formerTitle: "Már nem csillagos",
     formerNote: "Éttermek, amelyek a lista előző kiadásában szerepeltek, de azóta elvesztették csillagukat, bezártak vagy megváltoztak. Csak tájékoztatásul.",
     formerly: "korábban", stLost: "Csillagot vesztett", stClosed: "Bezárt", stChanged: "Megváltozott",
+    tapHint: "Koppints egy étteremre az összes árért és részletért.",
     showing: "{a} / {b} csillagos étterem", showingFormer: ", valamint {c} már nem csillagos",
     wishNote: "A kívánságlistád csak ebben a böngészőben van mentve.",
     wishAdd: "{name} hozzáadása a kívánságlistához", wishRemove: "{name} törlése a kívánságlistáról", wishAddT: "Kívánságlistára", wishRemoveT: "Törlés a kívánságlistáról",

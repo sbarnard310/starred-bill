@@ -55,6 +55,7 @@
     formerTitle: "Já sem estrela",
     formerNote: "Restaurantes que estavam na edição anterior desta lista mas que entretanto perderam as estrelas, fecharam ou mudaram. Apenas para referência.",
     formerly: "antes", stLost: "Perdeu a estrela", stClosed: "Fechado", stChanged: "Mudou",
+    tapHint: "Toque num restaurante para ver todos os preços e detalhes.",
     showing: "{a} de {b} restaurantes com estrela", showingFormer: ", mais {c} sem estrela",
     wishNote: "Os seus favoritos ficam guardados só neste navegador.",
     wishAdd: "Adicionar {name} aos favoritos", wishRemove: "Remover {name} dos favoritos", wishAddT: "Adicionar aos favoritos", wishRemoveT: "Remover dos favoritos",

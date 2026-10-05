@@ -58,6 +58,7 @@
     formerTitle: "Nicht mehr mit Stern",
     formerNote: "Restaurants, die in der vorigen Ausgabe dieser Liste standen, seitdem aber ihre Sterne verloren, geschlossen oder sich verändert haben. Nur zur Information.",
     formerly: "früher", stLost: "Stern verloren", stClosed: "Geschlossen", stChanged: "Verändert",
+    tapHint: "Tippe auf ein Restaurant, um alle Preise und Details zu sehen.",
     showing: "{a} von {b} Sternerestaurants", showingFormer: ", dazu {c} ohne Stern",
     wishNote: "Deine Merkliste wird nur in diesem Browser gespeichert.",
     wishAdd: "{name} auf die Merkliste setzen", wishRemove: "{name} von der Merkliste entfernen", wishAddT: "Auf die Merkliste", wishRemoveT: "Von der Merkliste entfernen",

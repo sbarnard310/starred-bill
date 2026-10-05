@@ -52,6 +52,7 @@
     formerTitle: "Ei enää tähteä",
     formerNote: "Ravintolat, jotka olivat listan edellisessä painoksessa mutta ovat sittemmin menettäneet tähtensä, sulkeneet ovensa tai muuttuneet. Vain tiedoksi.",
     formerly: "aiemmin", stLost: "Menetti tähden", stClosed: "Suljettu", stChanged: "Muuttunut",
+    tapHint: "Napauta ravintolaa nähdäksesi kaikki hinnat ja tiedot.",
     showing: "{a}/{b} tähtiravintolaa", showingFormer: " sekä {c} ilman tähteä",
     wishNote: "Toivelistasi tallennetaan vain tähän selaimeen.",
     wishAdd: "Lisää {name} toivelistalle", wishRemove: "Poista {name} toivelistalta", wishAddT: "Lisää toivelistalle", wishRemoveT: "Poista toivelistalta",

@@ -49,6 +49,7 @@
     formerTitle: "Enam ilma täheta",
     formerNote: "Restoranid, mis olid selle nimekirja eelmises väljaandes, kuid on vahepeal tähed kaotanud, suletud või muutunud. Ainult teadmiseks.",
     formerly: "varem", stLost: "Kaotas tähe", stClosed: "Suletud", stChanged: "Muutunud",
+    tapHint: "Puuduta restorani, et näha kõiki hindu ja üksikasju.",
     showing: "{a} tähistatud restorani {b}-st", showingFormer: ", lisaks {c} ilma täheta",
     wishNote: "Sinu soovinimekiri salvestatakse ainult selles brauseris.",
     wishAdd: "Lisa {name} soovinimekirja", wishRemove: "Eemalda {name} soovinimekirjast", wishAddT: "Lisa soovinimekirja", wishRemoveT: "Eemalda soovinimekirjast",

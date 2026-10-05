@@ -52,6 +52,7 @@
     formerTitle: "Už bez hvězdy",
     formerNote: "Restaurace, které byly v předchozím vydání tohoto seznamu, ale od té doby přišly o hvězdy, zavřely nebo se změnily. Jen pro informaci.",
     formerly: "dříve", stLost: "Ztratila hvězdu", stClosed: "Zavřeno", stChanged: "Změna",
+    tapHint: "Klepnutím na restauraci zobrazíte všechny ceny a podrobnosti.",
     showing: "Restaurace s hvězdou: {a} z {b}", showingFormer: ", a {c} už bez hvězdy",
     wishNote: "Oblíbené se ukládají jen v tomto prohlížeči.",
     wishAdd: "Přidat {name} do oblíbených", wishRemove: "Odebrat {name} z oblíbených", wishAddT: "Přidat do oblíbených", wishRemoveT: "Odebrat z oblíbených",

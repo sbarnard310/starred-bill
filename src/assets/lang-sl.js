@@ -52,6 +52,7 @@
     formerTitle: "Brez zvezdice",
     formerNote: "Restavracije, ki so bile v prejšnji izdaji tega seznama, a so medtem izgubile zvezdice, se zaprle ali spremenile. Le v vednost.",
     formerly: "prej", stLost: "Izgubila zvezdico", stClosed: "Zaprto", stChanged: "Spremenjeno",
+    tapHint: "Tapnite restavracijo za vse cene in podrobnosti.",
     showing: "Restavracije z zvezdico: {a} od {b}", showingFormer: ", in {c} brez zvezdice",
     wishNote: "Seznam želja je shranjen samo v tem brskalniku.",
     wishAdd: "Dodaj {name} na seznam želja", wishRemove: "Odstrani {name} s seznama želja", wishAddT: "Dodaj na seznam želja", wishRemoveT: "Odstrani s seznama želja",

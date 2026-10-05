@@ -57,6 +57,7 @@
     formerTitle: "Niet langer met ster",
     formerNote: "Restaurants die in de vorige editie van deze lijst stonden, maar sindsdien hun sterren kwijt zijn, gesloten of veranderd zijn. Alleen ter informatie.",
     formerly: "voorheen", stLost: "Ster verloren", stClosed: "Gesloten", stChanged: "Veranderd",
+    tapHint: "Tik op een restaurant voor alle prijzen en details.",
     showing: "{a} van {b} sterrenrestaurants", showingFormer: ", plus {c} zonder ster",
     wishNote: "Je verlanglijst wordt alleen in deze browser bewaard.",
     wishAdd: "{name} op je verlanglijst zetten", wishRemove: "{name} van je verlanglijst halen", wishAddT: "Op verlanglijst", wishRemoveT: "Van verlanglijst halen",

@@ -52,6 +52,7 @@
     formerTitle: "Không còn sao",
     formerNote: "Các nhà hàng có trong ấn bản trước của danh sách này nhưng từ đó đã mất sao, đóng cửa hoặc thay đổi. Chỉ để tham khảo.",
     formerly: "trước đây", stLost: "Mất sao", stClosed: "Đã đóng cửa", stChanged: "Đã thay đổi",
+    tapHint: "Chạm vào một nhà hàng để xem toàn bộ giá và thông tin chi tiết.",
     showing: "Đang hiện {a} trên {b} nhà hàng gắn sao", showingFormer: ", cùng {c} nhà hàng không còn sao",
     wishNote: "Danh sách của bạn chỉ được lưu trong trình duyệt này.",
     wishAdd: "Thêm {name} vào danh sách muốn đến", wishRemove: "Bỏ {name} khỏi danh sách muốn đến", wishAddT: "Thêm vào danh sách", wishRemoveT: "Bỏ khỏi danh sách",

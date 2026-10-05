@@ -51,6 +51,7 @@
     formerTitle: "M'għadx għandu stilla",
     formerNote: "Ristoranti li kienu fl-edizzjoni ta' qabel ta' din il-lista iżda minn dakinhar tilfu l-istilel, għalqu jew inbidlu. Għar-referenza biss.",
     formerly: "qabel", stLost: "Tilef l-istilla", stClosed: "Magħluq", stChanged: "Inbidel",
+    tapHint: "Agħfas fuq restorant biex tara l-prezzijiet u d-dettalji kollha.",
     showing: "Qed jintwerew {a} minn {b} ristoranti bl-istilla", showingFormer: ", flimkien ma' {c} li m'għadx għandhom stilla",
     wishNote: "Il-lista tax-xewqat tiegħek tinżamm biss f'dan il-browser.",
     wishAdd: "Żid lil {name} mal-lista tax-xewqat", wishRemove: "Neħħi lil {name} mil-lista tax-xewqat", wishAddT: "Żid mal-lista tax-xewqat", wishRemoveT: "Neħħi mil-lista tax-xewqat",

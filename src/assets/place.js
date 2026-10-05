@@ -86,6 +86,8 @@ function save() {
   setWishlist(state.wishlist);
 }
 
+// The "No longer starred" rows, shown only when no star or wishlist filter is on; the recent ones also get grey map pins.
+const formerRows = () => state.activeStars || state.wishOnly ? [] : FORMER.filter((r) => (!state.changesOnly || r.change) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
 function filtered() {
   const rows = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && dietMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
   const coll = new Intl.Collator(locale());
@@ -419,7 +421,7 @@ function renderLedger() {
       '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
       "</div>";
   });
-  const former = state.activeStars || state.wishOnly ? [] : FORMER.filter((r) => (!state.changesOnly || r.change) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
+  const former = formerRows();
   if (former.length) {
     const label = { lost: t("stLost"), closed: t("stClosed"), changed: t("stChanged") };
     html += '<div class="row divider" role="row"><span role="cell"><strong>' + t("formerTitle") + '</strong><span class="note">' + t("formerNote") + "</span></span></div>";
@@ -521,7 +523,7 @@ function observeThumbs() {
   document.querySelectorAll(".thumb[data-pid]").forEach((el) => thumbObserver.observe(el));
 }
 
-const mapState = { map: null, info: null, markers: new Map(), near: null };
+const mapState = { map: null, info: null, markers: new Map(), lost: new Map(), near: null };
 function infoHtml(r) {
   const price = priceOf(r) == null ? t(L() && r.noLunch ? "noLunch" : "infoNoPrice") : money(priceOf(r), r) + " " + (typeOf(r) === "main" ? t("perMain") : typeOf(r) === "spend" ? t("typicalSpend") : t(L() ? "infoLunch" : "infoDinner"));
   return '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' +
@@ -533,6 +535,16 @@ function infoHtml(r) {
     '<div style="margin-top:6px;font-size:13px">' + esc(price) + (wineOf(r) ? " · " + t("infoWine") + " " + money(wineOf(r), r) : "") + "</div>" +
     (r.rating ? '<div style="font-size:13px;color:#5A6E62">★ ' + r.rating.toFixed(1) + " " + t("infoGoogle") + "</div>" : "") +
     (r.change ? '<div style="font-size:12px;color:' + (r.change === "down" ? "#A33A2E" : "#1E6142") + '">' + esc(pick(r, "changeNote") + ", " + monthYear(r.changeDate)) + "</div>" : "") +
+    '<a href="' + mapsUrl(r) + '" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + t("infoOpen") + "</a></div>";
+}
+function lostInfoHtml(r) {
+  const label = { lost: t("stLost"), changed: t("stChanged") };
+  return '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' +
+    '<div style="font-weight:700;font-size:15px">' + esc(nameOf(r)) + "</div>" +
+    (altNameOf(r) ? '<div style="font-size:12px;color:#5A6E62">' + esc(altNameOf(r)) + "</div>" : "") +
+    '<div style="color:#8B938E;font-size:13px">' + "✱".repeat(r.formerStars) + ' <span style="color:#5A6E62">' + esc(t("formerly")) + " · " + esc(cuisineOf(r)) + " · " + esc(areaOf(r)) + "</span></div>" +
+    '<div style="margin-top:6px;font-size:13px"><strong style="color:#A33A2E">' + esc(label[r.status] || label.changed) + "</strong>" +
+    (pick(r, "statusNote") ? " · " + esc(pick(r, "statusNote")) : "") + "</div>" +
     '<a href="' + mapsUrl(r) + '" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + t("infoOpen") + "</a></div>";
 }
 async function initMap() {
@@ -551,6 +563,11 @@ async function initMap() {
       const m = new Marker({ position: { lat: r.lat, lng: r.lng }, title: nameOf(r), icon: pinIcon(r.stars), zIndex: r.stars * 10 });
       m.addListener("click", () => { mapState.info.setContent(infoHtml(r)); mapState.info.open({ anchor: m, map: mapState.map }); });
       mapState.markers.set(r.id, m);
+    });
+    FORMER.filter(lostPin).forEach((r) => {
+      const m = new Marker({ position: { lat: r.lat, lng: r.lng }, title: nameOf(r), icon: pinIcon(r.formerStars, false, true), zIndex: 1 });
+      m.addListener("click", () => { mapState.info.setContent(lostInfoHtml(r)); mapState.info.open({ anchor: m, map: mapState.map }); });
+      mapState.lost.set(r.id, m);
     });
     // "Near me" looks among the pins the filters are showing; if none is close, it points to the world map instead.
     mapState.near = addNearMe(mapState.map, () => placed.filter((r) => mapState.markers.get(r.id).getMap()).map((r) => ({
@@ -572,6 +589,9 @@ function updateMap(fit) {
     if ((m.getMap() != null) !== on) m.setMap(on ? mapState.map : null);
     if (on) { bounds.extend(m.getPosition()); n++; }
   });
+  // Grey pins follow the "No longer starred" rows, but don't count towards "Showing n" or the framing.
+  const former = new Set(formerRows().map((r) => r.id));
+  mapState.lost.forEach((m, id) => m.setMap(former.has(id) ? mapState.map : null));
   mapState.info.close();
   $("mapStatus").textContent = n ? t("mapShowing", { n }) : t("mapNone");
   if (fit && n > 1) mapState.map.fitBounds(bounds, 40);
@@ -614,7 +634,7 @@ async function loadRates() {
 
 // ---------- Render and events ----------
 function render() { renderMealFilter(); renderShowFilter(); renderStarFilter(); renderChips(); renderDietFilter(); renderLedger(); }
-function renderAll() { applyStatic(); render(); renderFigures(); renderTiers(); renderLegend(RESTAURANTS); }
+function renderAll() { applyStatic(); render(); renderFigures(); renderTiers(); renderLegend(RESTAURANTS); if (FORMER.some(lostPin)) $("mapLegend").insertAdjacentHTML("beforeend", legendLost()); }
 
 let toastTimer;
 function toast(msg, undo) {

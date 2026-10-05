@@ -11,8 +11,13 @@ const MAP_PINS = {
   2: { fill: "#8F651A", ink: "#FFFFFF", edge: "#FFFFFF", line: "#8F651A", lineInk: "#7A5714" },
   3: { fill: "#4A300A", ink: "#FFFFFF", edge: "#FFFFFF", line: "#4A300A", lineInk: "#4A300A" },
 };
+// Grey pins, numbered with the stars they had, for restaurants still open that lost their stars in the last three years (e.g. noma).
+const LOST_PIN = { fill: "#D5D9D6", ink: "#56605A", edge: "#8B938E" };
+const lostPin = (r) => r.status && r.status !== "closed" && r.formerStars && r.lat != null && r.lng != null &&
+  (!r.changeDate || r.changeDate >= (new Date().getFullYear() - 3) + new Date().toISOString().slice(4, 7));
 // The legend's little round pins, filled or hollow, coloured like the map's.
 const legendPin = (s, hollow) => '<span class="pin-num' + (hollow ? " hollow" : "") + '" style="--pin:' + MAP_PINS[s][hollow ? "line" : "fill"] + ";color:" + MAP_PINS[s][hollow ? "lineInk" : "ink"] + '" aria-hidden="true">' + s + "</span>";
+const legendLost = () => "<li>" + '<span class="pin-num" style="--pin:' + LOST_PIN.fill + ";color:" + LOST_PIN.ink + '" aria-hidden="true">✱</span><span>' + esc(t("formerTitle")) + "</span></li>";
 
 // ---------- Words (English, Traditional Chinese, French, Cantonese, Japanese, Spanish and Italian) ----------
 // {place} is the page's place name and {placeIn} the same name as it reads mid-sentence ("the UK").
@@ -1952,10 +1957,12 @@ function loadGoogle() {
   return mapsBoot;
 }
 // hollow: a white pin with a coloured outline, for restaurants without prices on the site yet.
-function pinIcon(stars, hollow) {
-  const p = MAP_PINS[stars];
-  const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='40' viewBox='0 0 30 40'><path d='M15 38.5S2 26.6 2 15.5a13 13 0 0 1 26 0C28 26.6 15 38.5 15 38.5z' fill='" + (hollow ? "#ffffff" : p.fill) + "' stroke='" + (hollow ? p.line : p.edge) + "' stroke-width='" + (hollow ? 3 : 2) + "'/><text x='15' y='20.5' text-anchor='middle' font-family='Arial,sans-serif' font-size='13' font-weight='700' fill='" + (hollow ? p.lineInk : p.ink) + "'>" + stars + "</text></svg>";
-  return { url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg), scaledSize: new google.maps.Size(30, 40), anchor: new google.maps.Point(15, 39) };
+// lost: a smaller grey pin for a restaurant that lost its stars (stars is then how many it had).
+function pinIcon(stars, hollow, lost) {
+  const p = lost ? LOST_PIN : MAP_PINS[stars];
+  const [w, h] = lost ? [24, 32] : [30, 40];
+  const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='" + w + "' height='" + h + "' viewBox='0 0 30 40'><path d='M15 38.5S2 26.6 2 15.5a13 13 0 0 1 26 0C28 26.6 15 38.5 15 38.5z' fill='" + (hollow ? "#ffffff" : p.fill) + "' stroke='" + (hollow ? p.line : p.edge) + "' stroke-width='" + (hollow ? 3 : 2) + "'/><text x='15' y='20.5' text-anchor='middle' font-family='Arial,sans-serif' font-size='13' font-weight='700' fill='" + (hollow ? p.lineInk : p.ink) + "'>" + stars + "</text></svg>";
+  return { url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg), scaledSize: new google.maps.Size(w, h), anchor: new google.maps.Point(w / 2, h - 1) };
 }
 function renderLegend(list) {
   $("mapLegend").setAttribute("aria-label", t("legendAria"));

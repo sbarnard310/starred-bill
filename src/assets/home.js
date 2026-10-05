@@ -238,8 +238,10 @@ function renderResults() {
 
 // ---------- World map ----------
 // Filled pins are restaurants with prices on this site; outlined pins are every other starred restaurant
-// in the MICHELIN Guide, loaded from /data/world.json once the map starts.
-const world = { map: null, info: null, markers: [], clusterer: null, loaded: false };
+// in the MICHELIN Guide, loaded from /data/world.json once the map starts. Grey pins (world.lost, never clustered)
+// are restaurants that recently lost their stars, shown only when no star filter is on.
+const LOST = (DATA.former || []).filter(lostPin);
+const world = { map: null, info: null, markers: [], lost: [], clusterer: null, loaded: false };
 const infoBox = (body) => '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' + body + "</div>";
 function infoHtml(r) {
   return infoBox('<div style="font-weight:700;font-size:15px">' + esc(nameOf(r)) + "</div>" +
@@ -248,6 +250,15 @@ function infoHtml(r) {
     '<div style="margin-top:6px;font-size:13px">' + esc(priceLabel(r)) + "</div>" +
     (r.rating ? '<div style="font-size:13px;color:#5A6E62">★ ' + r.rating.toFixed(1) + " " + t("infoGoogle") + "</div>" : "") +
     '<a href="' + cityLink(r) + '" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + esc(t("infoCompare", { place: pick(r, "cityName") })) + " →</a>");
+}
+function lostInfoHtml(r) {
+  const label = { lost: t("stLost"), changed: t("stChanged") };
+  return infoBox('<div style="font-weight:700;font-size:15px">' + esc(nameOf(r)) + "</div>" +
+    (altNameOf(r) ? '<div style="font-size:12px;color:#5A6E62">' + esc(altNameOf(r)) + "</div>" : "") +
+    '<div style="color:#8B938E;font-size:13px">' + "✱".repeat(r.formerStars) + ' <span style="color:#5A6E62">' + esc(t("formerly")) + " · " + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + "</span></div>" +
+    '<div style="margin-top:6px;font-size:13px"><strong style="color:#A33A2E">' + esc(label[r.status] || label.changed) + "</strong>" +
+    (pick(r, "statusNote") ? " · " + esc(pick(r, "statusNote")) : "") + "</div>" +
+    '<a href="' + cityLink(r) + '" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + esc(pick(r, "cityName")) + " →</a>");
 }
 function worldInfoHtml(w) {
   const link = (href, label) => '<a href="' + esc(href) + '" target="_blank" rel="noopener" style="color:#1E6142;font-weight:600;font-size:13px;margin-right:12px">' + esc(label) + " ↗</a>";
@@ -279,6 +290,14 @@ async function initWorldMap() {
       m.r = r; m.stars = r.stars;
       m.where = [r.town || r.cityName, (DATA.countries.find((c) => c.id === r.country) || {}).name].filter(Boolean).join(", ");
       m.find = fold([r.name, r.nameZh, r.nameJa, r.town, r.cityName, r.cityNameZh, m.where, r.cuisine].join(" "));
+      return m;
+    });
+    world.lost = LOST.map((r) => {
+      const m = new Marker({ position: { lat: r.lat, lng: r.lng }, title: nameOf(r), icon: pinIcon(r.formerStars, false, true), zIndex: 1 });
+      m.addListener("click", () => openCard(m));
+      m.r = r; m.lost = true; m.stars = 0;
+      m.where = [r.town || r.cityName, (DATA.countries.find((c) => c.id === r.country) || {}).name].filter(Boolean).join(", ");
+      m.find = fold([r.name, r.nameZh, r.nameJa, r.town, r.cityName, m.where].join(" "));
       return m;
     });
     if (window.markerClusterer) {
@@ -327,6 +346,7 @@ function updateWorldMap(fit) {
   world.info.close();
   if (world.clusterer) { world.clusterer.clearMarkers(); world.clusterer.addMarkers(shown); }
   else world.markers.forEach((m) => m.setMap(shown.includes(m) ? world.map : null));
+  world.lost.forEach((m) => m.setMap(homeState.stars ? null : world.map));
   $("mapStatus").textContent = shown.length ? t("mapShowing", { n: shown.length.toLocaleString("en-GB") }) : t("mapNone");
   if (fit && shown.length > 1) {
     const b = new google.maps.LatLngBounds();
@@ -365,9 +385,9 @@ document.addEventListener("click", (e) => {
 });
 // Opens a restaurant's card. From a search result the pin may still be inside a cluster, so the card is placed by position.
 function openCard(m, fromSearch) {
-  world.info.setContent(m.r ? infoHtml(m.r) : worldInfoHtml(m.w));
+  world.info.setContent(m.lost ? lostInfoHtml(m.r) : m.r ? infoHtml(m.r) : worldInfoHtml(m.w));
   if (fromSearch) {
-    world.info.setOptions({ pixelOffset: new google.maps.Size(0, -38) });
+    world.info.setOptions({ pixelOffset: new google.maps.Size(0, m.lost ? -30 : -38) });
     world.info.setPosition(m.getPosition());
     world.info.open({ map: world.map });
   } else {
@@ -394,14 +414,14 @@ function mapSearch() {
     });
   });
   const places = Object.values(groups).sort((a, b) => (a.kind === b.kind ? 0 : a.kind === "country" ? -1 : 1) || b.markers.length - a.markers.length).slice(0, 4);
-  const rests = world.markers.filter((m) => m.find.includes(q))
+  const rests = world.markers.concat(world.lost).filter((m) => m.find.includes(q))
     .sort((a, b) => (fold(a.r ? a.r.name : a.w.name).startsWith(q) ? 0 : 1) - (fold(b.r ? b.r.name : b.w.name).startsWith(q) ? 0 : 1) || b.stars - a.stars)
     .slice(0, 8 - places.length);
   mapHits = places.map((g) => ({ place: g })).concat(rests.map((m) => ({ marker: m })));
   $("mapResults").innerHTML = mapHits.length ? mapHits.map((h, i) => h.place
     ? '<li><a href="#map" data-hit="' + i + '"><span>' + esc(h.place.label) + '</span><span class="sub">' + esc(t("destRestaurants", { n: h.place.markers.length })) + "</span></a></li>"
-    : '<li><a href="#map" data-hit="' + i + '"><span>' + esc(h.marker.r ? nameOf(h.marker.r) : h.marker.w.name) + " " + starIcons(h.marker.stars) + '</span><span class="sub">' +
-      esc(h.marker.where) + "</span></a></li>").join("")
+    : '<li><a href="#map" data-hit="' + i + '"><span>' + esc(h.marker.r ? nameOf(h.marker.r) : h.marker.w.name) + " " + (h.marker.lost ? "" : starIcons(h.marker.stars)) + '</span><span class="sub">' +
+      esc(h.marker.where + (h.marker.lost ? " · " + t("formerTitle") : "")) + "</span></a></li>").join("")
     : '<li class="none">' + esc(t("searchNone", { q: $("mapQ").value.trim() })) + "</li>";
   $("mapResults").hidden = false;
 }
@@ -433,7 +453,7 @@ function renderMapStars() {
 }
 function renderMapLegend() {
   renderLegend(pinStars());
-  $("mapLegend").insertAdjacentHTML("beforeend", "<li>" + legendPin(1, true) + "<span>" + esc(t("legendHollow")) + "</span></li>");
+  $("mapLegend").insertAdjacentHTML("beforeend", "<li>" + legendPin(1, true) + "<span>" + esc(t("legendHollow")) + "</span></li>" + (LOST.length ? legendLost() : ""));
 }
 
 // ---------- Render and events ----------
@@ -448,7 +468,7 @@ document.addEventListener("click", (e) => {
   if (el.dataset.lang) {
     setLang(el.dataset.lang);
     renderAll();
-    world.markers.forEach((m) => { if (m.r) m.setTitle(nameOf(m.r)); });
+    world.markers.concat(world.lost).forEach((m) => { if (m.r) m.setTitle(nameOf(m.r)); });
     if (world.near) world.near.relabel();
   } else if (el.dataset.mapstars) {
     homeState.stars = Number(el.dataset.mapstars); renderMapStars(); updateWorldMap(true);

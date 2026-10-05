@@ -663,6 +663,11 @@ def build_home():
         "restaurants": [dict({k: r[k] for k in keep if r.get(k) is not None}, **({"town": r["area"].split(", ")[0]} if r["cityType"] != "city" and r.get("area") else {}))
                         for r in starred],
         "knownIds": [r["id"] for r in starred],
+        # Restaurants that lost their stars but are still open, for the map's grey pins (home.js picks the recent ones).
+        "former": [dict({k: r[k] for k in keep + ("status", "formerStars", "changeDate") if r.get(k) is not None},
+                        **{k: v for k, v in r.items() if k.startswith("statusNote")},
+                        **({"town": r["area"].split(", ")[0]} if r["cityType"] != "city" and r.get("area") else {}))
+                   for r in restaurants if r.get("status") in ("lost", "changed") and r.get("lat") is not None],
         "countries": countries, "groups": groups, "soon": soon, "noStars": no_star_countries(),
         "places": [dict(link(p), type=p["type"]) for p in by_size(pages)],
         "currencies": CURRENCIES, "switchable": currency_data.get("switchable", []), "updated": site.get("updated", ""),

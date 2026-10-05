@@ -14,5 +14,7 @@
   "status": "lost",
   "formerStars": 1,
   "statusNote": "Lost its star in December 2024",
-  "statusNoteZh": "於 2024 年 12 月失去星級"
+  "statusNoteZh": "於 2024 年 12 月失去星級",
+  "lat": 40.760767,
+  "lng": -73.97385
 }

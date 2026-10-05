@@ -1,0 +1,17 @@
+{
+  "name": "LD Restaurant",
+  "city": "croatia",
+  "area": "Korcula",
+  "address": "Don Pavla Poše 1-6, 20260, Korcula",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ldrestaurant.com/",
+  "lat": 42.961559,
+  "lng": 17.1370118,
+  "placeId": "ChIJ-YCtU9tRShMRKFdFa1ZGkIY"
+}

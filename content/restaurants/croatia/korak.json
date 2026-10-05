@@ -1,0 +1,17 @@
+{
+  "name": "Korak",
+  "city": "croatia",
+  "area": "Jastrebarsko",
+  "address": "Plešivica 34, 10450, Jastrebarsko",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 283,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.korakwinery.com/",
+  "lat": 45.7260304,
+  "lng": 15.6500062,
+  "placeId": "ChIJe7io55g0ZEcRG8Sxwre9wY4"
+}

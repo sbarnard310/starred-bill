@@ -1,0 +1,17 @@
+{
+  "name": "Boškinac",
+  "city": "croatia",
+  "area": "Novalja",
+  "address": "Škopaljska Ulica 220, 53291, Novalja",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 668,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.boskinac.com/",
+  "lat": 44.571006,
+  "lng": 14.8975384,
+  "placeId": "ChIJ108RuC9KYkcRPD17upI32pE"
+}

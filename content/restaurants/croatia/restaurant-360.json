@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant 360",
+  "city": "croatia",
+  "area": "Dubrovnik",
+  "address": "Ul. Svetog Dominika 2, 20000, Dubrovnik",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 1245,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.360dubrovnik.com/",
+  "lat": 42.6415506,
+  "lng": 18.1115484,
+  "placeId": "ChIJQwHbajMLTBMRfawgswpz8RA"
+}

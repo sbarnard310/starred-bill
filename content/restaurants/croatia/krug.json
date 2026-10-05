@@ -1,0 +1,17 @@
+{
+  "name": "Krug",
+  "city": "croatia",
+  "area": "Split",
+  "address": "Trumbićeva obala 17, 21000, Split",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 366,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://krugrestaurantsplit.com/",
+  "lat": 43.5067029,
+  "lng": 16.4324645,
+  "placeId": "ChIJzRq0FshdNRMRK4lMSkM-rXU"
+}

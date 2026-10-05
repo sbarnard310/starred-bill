@@ -1,0 +1,20 @@
+{
+  "name": "Harry’s Piccolo Poreč",
+  "city": "croatia",
+  "area": "Porec",
+  "address": "Pical 2, 52440, Porec",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 5,
+  "reviews": 46,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.harryspiccoloporec.com/en/menu/",
+  "wine": 50,
+  "website": "https://www.harryspiccoloporec.com/",
+  "lat": 45.237008,
+  "lng": 13.5974684,
+  "placeId": "ChIJgxf2g2eXfEcRuN4gXk1rh1o"
+}

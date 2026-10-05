@@ -1,0 +1,15 @@
+{
+  "name": "Dubravkin Put",
+  "city": "croatia",
+  "area": "Zagreb",
+  "address": "Dubravkin Put 2, 10000, Zagreb",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.dubravkin-put.com/",
+  "lat": 45.8188384,
+  "lng": 15.9725596,
+  "placeId": "ChIJdff5wBzXZUcRkRVGCpn1Ifw"
+}

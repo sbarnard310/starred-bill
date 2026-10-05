@@ -1,0 +1,17 @@
+{
+  "name": "Monte",
+  "city": "croatia",
+  "area": "Rovinj",
+  "address": "Montalbano 75, 52210, Rovinj",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 536,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.monte.hr/",
+  "lat": 45.0826939,
+  "lng": 13.6310596,
+  "placeId": "ChIJU7bPD4HAfEcRJFBCvUfSZPA"
+}

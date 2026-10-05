@@ -1,0 +1,19 @@
+{
+  "name": "Nebo",
+  "city": "croatia",
+  "area": "Rijeka",
+  "address": "Opatijska ulica 9, 51000, Rijeka",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.3,
+  "reviews": 224,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €70)",
+  "sourceType": "site",
+  "source": "https://neborijeka.com/menu/",
+  "website": "https://neborijeka.com/",
+  "lat": 45.3470174,
+  "lng": 14.3507329,
+  "placeId": "ChIJ6bUIldOnZEcRr6QC55a-8Zw"
+}

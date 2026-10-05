@@ -1,0 +1,17 @@
+{
+  "name": "Pelegrini",
+  "city": "croatia",
+  "area": "Sibenik",
+  "address": "Jurja Dalmatinca 1, 22000, Sibenik",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 825,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://pelegrini.hr/",
+  "lat": 43.7360217,
+  "lng": 15.8889282,
+  "placeId": "ChIJs0fJFVgvNRMRAjWXBrw2jCU"
+}

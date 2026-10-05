@@ -1,0 +1,15 @@
+{
+  "name": "Fame Osteria",
+  "city": "sao-paulo",
+  "address": "Rua Oscar Freire 216, 01426-001, São Paulo",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.2,
+  "reviews": 221,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": -23.5673009,
+  "lng": -46.6641133,
+  "placeId": "ChIJYfLDPLZZzpQRB4RR0EJEbGU"
+}

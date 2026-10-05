@@ -1,0 +1,16 @@
+{
+  "name": "Jun Sakamoto",
+  "city": "sao-paulo",
+  "address": "Rua Lisboa 55, 05413-000, São Paulo",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 611,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.junsakamoto.com.br",
+  "lat": -23.563121,
+  "lng": -46.6771879,
+  "placeId": "ChIJEWScnHhXzpQRUhXd6D12m0U"
+}

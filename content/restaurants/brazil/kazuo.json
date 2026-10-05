@@ -1,0 +1,16 @@
+{
+  "name": "Kazuo",
+  "city": "sao-paulo",
+  "address": "Rua Prudente Correia 432, 01450-030, São Paulo",
+  "stars": 1,
+  "cuisine": "Asian Influences",
+  "rating": 4.4,
+  "reviews": 301,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kazuorestaurante.com.br/",
+  "lat": -23.5768215,
+  "lng": -46.6865408,
+  "placeId": "ChIJGyKyqmpXzpQRMbT1Exoy34s"
+}

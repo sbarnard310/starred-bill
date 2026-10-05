@@ -1,0 +1,16 @@
+{
+  "name": "Kuro",
+  "city": "sao-paulo",
+  "address": "Rua Padre João Manuel 712, 01411-000, São Paulo",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 226,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kuroeshiro.com.br/",
+  "lat": -23.5636428,
+  "lng": -46.6641507,
+  "placeId": "ChIJt4WbID5ZzpQROnt6ZE23Bys"
+}

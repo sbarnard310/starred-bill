@@ -1,0 +1,16 @@
+{
+  "name": "Picchi",
+  "city": "sao-paulo",
+  "address": "Rua Oscar Freire 533, 01426-001, São Paulo",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.3,
+  "reviews": 696,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantepicchi.com.br/",
+  "lat": -23.5653892,
+  "lng": -46.6666262,
+  "placeId": "ChIJE5cyxftvVwEREVYAEV6Vul4"
+}

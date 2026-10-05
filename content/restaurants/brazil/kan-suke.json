@@ -1,0 +1,15 @@
+{
+  "name": "Kan Suke",
+  "city": "sao-paulo",
+  "address": "Rua Manoel da Nóbrega 76 - Loja 12, 01401-000, São Paulo",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 478,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": -23.5684,
+  "lng": -46.64936,
+  "placeId": "ChIJNbaJJr9ZzpQRP9Y6s2oYcXw"
+}

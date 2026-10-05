@@ -1,0 +1,16 @@
+{
+  "name": "Murakami",
+  "city": "sao-paulo",
+  "address": "Alameda Lorena 1186, 01424-004, São Paulo",
+  "stars": 1,
+  "cuisine": "Japanese Contemporary",
+  "rating": 4.8,
+  "reviews": 352,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.murakamimu.com",
+  "lat": -23.5660139,
+  "lng": -46.6634795,
+  "placeId": "ChIJtVl600tZzpQR_ime0PfBk4A"
+}

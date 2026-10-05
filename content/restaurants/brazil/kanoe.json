@@ -1,0 +1,16 @@
+{
+  "name": "KANOE",
+  "city": "sao-paulo",
+  "address": "Alameda Itu 1578, 01421-004, São Paulo",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 25,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kanoerestaurant.com/",
+  "lat": -23.5578032,
+  "lng": -46.6660508,
+  "placeId": "ChIJU6gtyC5ZzpQRurkyG9csLFE"
+}

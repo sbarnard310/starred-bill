@@ -1,0 +1,16 @@
+{
+  "name": "Tuju",
+  "city": "sao-paulo",
+  "address": "Rua Frei Galvão, 135, 01454-060, São Paulo",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 365,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tuju.com.br",
+  "lat": -23.5805339,
+  "lng": -46.6855567,
+  "placeId": "ChIJm2pQ-1dXzpQRLcFNxi6yWeI"
+}

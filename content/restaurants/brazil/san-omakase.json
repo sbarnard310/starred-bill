@@ -1,0 +1,16 @@
+{
+  "name": "San Omakase",
+  "city": "rio-de-janeiro",
+  "address": "Rua Conde de Bernadotte, 26 - Loja 103, 22430-200, Rio de Janeiro",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 5,
+  "reviews": 2880,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.sanomakase.com.br/",
+  "lat": -22.98085,
+  "lng": -43.22252,
+  "placeId": "ChIJ5yfTpD3VmwARHcakeHhweZo"
+}

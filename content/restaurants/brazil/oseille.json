@@ -1,0 +1,15 @@
+{
+  "name": "Oseille",
+  "city": "rio-de-janeiro",
+  "address": "Rua Joana Angélica, 155, 22420-030, Rio de Janeiro",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 167,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": -22.9830324,
+  "lng": -43.2049864,
+  "placeId": "ChIJx3sGNsHVmwARMA5CncK0nsY"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Casa 201",
+  "city": "rio-de-janeiro",
+  "address": "Rua Lopes Quintas, 201, 22460-010, Rio de Janeiro",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.7,
+  "reviews": 123,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.casa201.com.br",
+  "lat": -22.964603,
+  "lng": -43.220451,
+  "placeId": "ChIJ62puNIzVmwARX97FjP43YWc"
+}

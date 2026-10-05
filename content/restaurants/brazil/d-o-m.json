@@ -1,0 +1,16 @@
+{
+  "name": "D.O.M.",
+  "city": "sao-paulo",
+  "address": "Rua Barão de Capanema 549, 01411-011, São Paulo",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 2736,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.domrestaurante.com.br/",
+  "lat": -23.5661451,
+  "lng": -46.667572,
+  "placeId": "ChIJ_Qdn5dZZzpQRWJ5lDWdVmSY"
+}

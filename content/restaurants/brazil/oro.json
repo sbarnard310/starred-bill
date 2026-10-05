@@ -1,0 +1,16 @@
+{
+  "name": "Oro",
+  "city": "rio-de-janeiro",
+  "address": "Avenida General San Martin 889, 22441-015, Rio de Janeiro",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 1590,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ororestaurante.com.br/",
+  "lat": -22.98601,
+  "lng": -43.22471,
+  "placeId": "ChIJJSAnM03UmwARJ8pWMKzJmP4"
+}

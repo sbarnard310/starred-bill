@@ -1,0 +1,16 @@
+{
+  "name": "Madame Olympe",
+  "city": "rio-de-janeiro",
+  "address": "Rua Conde de Bernadotte, 26 - loja 101, 22430-200, Rio de Janeiro",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.4,
+  "reviews": 28,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.madameolympe.com.br/",
+  "lat": -22.9810638,
+  "lng": -43.2227631,
+  "placeId": "ChIJE8CiVgDVmwAR79WColXIpss"
+}

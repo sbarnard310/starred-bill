@@ -1,0 +1,16 @@
+{
+  "name": "Kinoshita",
+  "city": "sao-paulo",
+  "address": "Rua Jacques Félix 405, 04509-000, São Paulo",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 1026,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantekinoshita.com.br/",
+  "lat": -23.5918216,
+  "lng": -46.6712197,
+  "placeId": "ChIJs9_bqalZzpQRxKNPIObUrWk"
+}

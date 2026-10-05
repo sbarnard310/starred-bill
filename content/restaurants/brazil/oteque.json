@@ -1,0 +1,16 @@
+{
+  "name": "Oteque",
+  "city": "rio-de-janeiro",
+  "address": "Rua Conde de Irajá 581, 22271-020, Rio de Janeiro",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 109,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.oteque.com/",
+  "lat": -22.95747,
+  "lng": -43.194424,
+  "placeId": "ChIJd30eZgB_mQAR-KdRFwN99rE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Ryo Gastronomia",
+  "city": "sao-paulo",
+  "address": "Rua Pedroso Alvarenga 667, 04531-011, São Paulo",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 375,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ryogastronomia.com.br/",
+  "lat": -23.5814487,
+  "lng": -46.6769049,
+  "placeId": "ChIJJSTXZWdXzpQRNHaPeq5OHMk"
+}

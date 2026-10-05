@@ -1,0 +1,16 @@
+{
+  "name": "Evvai",
+  "city": "sao-paulo",
+  "address": "Rua Joaquim Antunes 108, 05415-000, São Paulo",
+  "stars": 3,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 2459,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.evvai.com.br/",
+  "lat": -23.5670869,
+  "lng": -46.6790725,
+  "placeId": "ChIJ15xqwHlXzpQR-wSlgx8ckJM"
+}

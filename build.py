@@ -670,6 +670,80 @@ def build_home():
     }))
 
 
+def near_where(r):
+    """Where a restaurant is for the near-me list, e.g. "Notting Hill, London" or "Aughton, Lancashire, England"."""
+    city = r["cityName"]
+    if r["cityType"] in ("city", "district"):
+        return f"{r['area']}, {city}" if r.get("area") and city not in r["area"] else city
+    return r.get("area") or city if not r.get("area") or city in r["area"] else f"{r['area']}, {city}"
+
+
+NEAR_DIETS = {d: i for i, d in enumerate(DIETS)}
+
+
+def build_near_me(starred):
+    """/near-me/: finds the visitor (or a place they type) and lists the starred restaurants around them on a map.
+    The restaurants come from /data/near.json, one compact row each (columns listed in the file)."""
+    cols = ["id", "name", "stars", "lat", "lng", "cuisine", "where", "path", "dinner", "dinnerType", "lunch", "cur", "diets", "chef", "rating"]
+    rows = []
+    for r in starred:
+        if r.get("lat") is None:
+            continue
+        lunch = -1 if r.get("noLunch") else (r["lunch"] if r.get("lunch") is not None and r.get("lunchType", "menu") == "menu" else None)
+        rows.append([r["id"], r["name"], r["stars"], round(r["lat"], 6), round(r["lng"], 6), r.get("cuisine", ""), near_where(r), r["cityPath"],
+                     r.get("dinner"), r.get("dinnerType", "menu"), lunch, r["cur"], "".join(str(NEAR_DIETS[d]) for d in r.get("diets", [])),
+                     r.get("chef", ""), r.get("rating")])
+    # Starred restaurants in the MICHELIN Guide we don't have a file for yet (none since 5 Oct 2026, but the list can run ahead).
+    world = json.loads((OUT / "data" / "world.json").read_text("utf-8"))["r"] if (OUT / "data" / "world.json").exists() else []
+    for name, stars, lat, lng, cuisine, where, mpath in world:
+        rows.append(["", name, stars, lat, lng, cuisine, where, "https://guide.michelin.com/en" + mpath, None, "menu", None, "", "", "", None])
+    body = as_json({"cols": cols, "diets": list(DIETS), "r": rows}).encode("utf-8")
+    (OUT / "data" / "near.json").write_bytes(body)
+    stats = guide_stats()
+    cities = [p for p in by_size(pages) if (p["type"] == "city" or p["id"] in ("hong-kong", "macau", "singapore")) and starred_n[p["id"]] >= 5][:36]
+    popular = "".join(f'<a class="city-link" href="{p["path"]}">{e(p["name"])}<span class="count">{starred_n[p["id"]]}</span></a>' for p in cities)
+    faq = [
+        ("How do I find Michelin star restaurants near me?",
+         "Tap “Use my location” at the top of this page, or type a town, city or postcode. The map and list then show every Michelin-starred "
+         "restaurant within the distance you choose, nearest first, with its dinner and lunch prices and a link to the full price comparison."),
+        ("How many Michelin star restaurants are there?",
+         f"{stats['total']} restaurants in {stats['countries']} countries and territories hold Michelin stars in the current guides: "
+         f"{stats['n3']} with three stars, {stats['n2']} with two and {stats['n1']} with one. Every one of them is on this map."),
+        ("What's the cheapest Michelin star restaurant near me?",
+         "Choose “Cheapest first” under Sort once you've found your location. Lunch is usually the cheapest way in: switch to Lunch to compare "
+         f"lunch menus, which cost a median {stats['lunch1']} at one-star restaurants, against {stats['price1']} for a one-star dinner tasting menu."),
+        ("Do you store my location?",
+         "No. Your browser works out the distances on your device, and your location is never sent to The Starred Bill. If you tick "
+         "“Remember this location”, it's saved in your browser only, and you can forget it with one tap."),
+        ("Which Michelin restaurants near me have vegetarian or vegan menus?",
+         "Use the Dietary filter to show only restaurants with a vegetarian tasting menu, vegan options, gluten-free, halal or kosher options, "
+         "as listed by the MICHELIN Guide."),
+    ]
+    faq_html = '<section class="guide-faq" id="faq"><h2>Frequently asked questions</h2>' + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faq) + "</section>"
+    static = (f'<h2>Popular cities for Michelin star restaurants</h2>\n<p>Not where you are? Browse the cities with the most starred restaurants, '
+              f'each with its dinner, lunch and wine pairing prices side by side.</p>\n<div class="dest-cities near-popular">{popular}</div>\n'
+              f'<p><a href="/#destinations">All {len([p for p in pages if p["type"] == "country"])} countries →</a></p>\n{faq_html}')
+    lede = (f"Find the Michelin-starred restaurants closest to you, with what dinner and lunch cost at each. Use your location or type a town, "
+            f"and see every starred restaurant nearby on a map, nearest first, from {stats['total']} in {stats['countries']} countries.")
+    graph = [
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "All destinations", "item": SITE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Near me", "item": SITE_URL + "/near-me/"}]},
+        {"@type": "WebPage", "name": "Michelin star restaurants near me", "url": SITE_URL + "/near-me/", "description": lede},
+        {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
+    ]
+    write("/near-me/", render("near.html", {
+        "title": "Michelin Star Restaurants Near Me, With Prices",
+        "description": e(f"Find Michelin-starred restaurants near you on a map, nearest first, with dinner and lunch prices. {stats['total']} restaurants in {stats['countries']} countries."),
+        "canonical": SITE_URL + "/near-me/", "htmlLang": "en", "ogType": "website", "ogAlt": "Michelin star restaurants near me",
+        "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
+        "crumbs": '<a href="/">All destinations</a><span aria-current="page">Near me</span>',
+        "lede": e(lede), "static": static,
+        "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "knownIds": [r["id"] for r in starred],
+                         "nearUrl": f"/data/near.json?v={hashlib.sha1(body).hexdigest()[:10]}"}),
+    }))
+
+
 def build_redirects():
     """Pages at old addresses that send visitors on to where the page lives now, keeping any ?q= search."""
     for old, pid in sorted(redirects.items()):
@@ -822,7 +896,7 @@ def build_extras():
         shutil.copytree(SRC / "og", OUT / "og")
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
-    urls = ["/"] + [p["path"] for p in by_size(pages)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + ["/privacy/"]
+    urls = ["/", "/near-me/"] + [p["path"] for p in by_size(pages)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + ["/privacy/"]
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{SITE_URL}{u}</loc></url>\n" for u in urls) + "</urlset>\n", "utf-8")
@@ -847,6 +921,7 @@ copy_assets()
 for p in pages:
     build_place(p)
 build_home()
+build_near_me([r for r in restaurants if not r.get("status")])
 build_account_pages()
 build_guides()
 build_redirects()

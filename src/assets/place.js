@@ -468,7 +468,7 @@ async function initMap() {
     mapState.near = addNearMe(mapState.map, () => placed.filter((r) => mapState.markers.get(r.id).getMap()).map((r) => ({
       lat: r.lat, lng: r.lng, stars: r.stars, name: () => nameOf(r),
       open: () => { const m = mapState.markers.get(r.id); mapState.map.setCenter(m.getPosition()); if (mapState.map.getZoom() < 15) mapState.map.setZoom(15); google.maps.event.trigger(m, "click"); }
-    })), { radius: 30000, far: withLang("/") + "&near=1#map" });
+    })), { radius: 30000, far: "/near-me/?locate=1" });
     updateMap(true);
   } catch (e) {
     $("mapCanvas").innerHTML = '<p class="map-wait">' + t("mapError") + "</p>";

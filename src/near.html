@@ -30,7 +30,7 @@
 <!-- Visit statistics: Umami, no cookies (see the privacy page) -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="0717d470-551a-4b38-8632-c2e273c3cc5d" data-domains="starredbill.com,www.starredbill.com"></script>
 </head>
-<body class="info-page guide-page" data-static-crumbs>
+<body class="info-page near-page" data-static-crumbs>
 {{icons}}
 <header class="site-header">
   <div class="wrap">
@@ -38,7 +38,7 @@
     <div class="header-actions">
       <nav class="nav" aria-label="Sections">
         <a href="/#destinations" id="destLink" data-i18n="navDestinations">Destinations</a>
-        <a href="/near-me/" class="nav-near"><svg aria-hidden="true"><use href="#locate"/></svg><span data-i18n="navNear">Near me</span></a>
+        <a href="/near-me/" class="nav-near" aria-current="page"><svg aria-hidden="true"><use href="#locate"/></svg><span data-i18n="navNear">Near me</span></a>
         <a href="/guides/" class="nav-guides" data-i18n="navGuides">Guides</a>
       </nav>
       <button type="button" class="account-btn" id="accountBtn"></button>
@@ -58,8 +58,55 @@
   </div>
 </header>
 
-<main class="wrap prose guide" id="guideMain">
-{{main}}
+<main id="nearMain">
+  <section class="near-hero">
+    <div class="wrap">
+      <span class="eyebrow">Near me</span>
+      <h1>Michelin star restaurants near me</h1>
+      <p class="lede">{{lede}}</p>
+      <div class="near-find">
+        <button type="button" class="cta-btn near-locate" id="locateBtn"><svg aria-hidden="true"><use href="#locate"/></svg><span>Use my location</span></button>
+        <span class="near-or">or</span>
+        <form class="near-search" id="placeForm" role="search">
+          <label class="search" for="placeQ">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="placeQ" type="search" autocomplete="off" enterkeyhint="search" placeholder="Type a town, city or postcode" aria-label="Town, city or postcode">
+          </label>
+          <button type="submit" class="near-go">Search</button>
+        </form>
+      </div>
+      <p class="near-status" id="nearStatus" aria-live="polite"></p>
+      <p class="near-privacy">Your location stays in your browser: we never see it or store it. <a href="/privacy/">Privacy</a></p>
+    </div>
+  </section>
+
+  <section class="near-results" id="results" hidden>
+    <div class="wrap">
+      <div class="near-cards" id="nearCards"></div>
+      <div class="near-filters" id="nearFilters">
+        <label class="near-sel"><span>Within</span><select id="fRadius"></select></label>
+        <div class="seg" id="fMeal" role="group" aria-label="Meal"></div>
+        <div class="seg" id="fStars" role="group" aria-label="Michelin stars"></div>
+        <label class="near-sel"><span>Dietary</span><select id="fDiet"></select></label>
+        <label class="near-sel"><span>Sort</span><select id="fSort"></select></label>
+      </div>
+      <div class="near-layout">
+        <div class="map-canvas near-map" id="nearMap" role="region" aria-label="Map of Michelin-starred restaurants near you"><p class="map-wait">Loading the map…</p></div>
+        <div class="near-side">
+          <p class="near-count" id="nearCount" aria-live="polite"></p>
+          <ol class="near-rows" id="nearRows"></ol>
+          <button type="button" class="linkish near-more" id="nearMore" hidden></button>
+        </div>
+      </div>
+      <p class="near-remember" id="rememberLine" hidden></p>
+    </div>
+  </section>
+
+  <section class="near-static">
+    <div class="wrap prose guide">
+{{static}}
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -73,6 +120,7 @@
 <script id="page-data" type="application/json">{{data}}</script>
 <script src="{{asset:common.js}}"></script>
 <script src="{{asset:account.js}}"></script>
-<script src="{{asset:info-page.js}}"></script>
+<script src="https://unpkg.com/@googlemaps/markerclusterer@2.6.2/dist/index.min.js"></script>
+<script src="{{asset:near.js}}"></script>
 </body>
 </html>

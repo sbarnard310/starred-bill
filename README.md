@@ -25,6 +25,8 @@ build.py                 turns content/ + src/ into the finished site in _site/
 
 Each restaurant is stored once, in its city. It then appears on that city's page and on every page above it (region, country), plus any collection that includes it. So a London restaurant shows on London, England and United Kingdom without being entered three times.
 
+The Near me page (`/near-me/`) is built from the same restaurant files, so it needs no data of its own: every starred restaurant with a map position appears on it automatically. Link to it with `?q=` and a place to open it already searched, e.g. `/near-me/?q=Bath`.
+
 ## Places
 
 Every file in `content/places/` has an `id` (lower-case, hyphens, used in the web address), a `type`, a `name` and an optional `nameZh`.

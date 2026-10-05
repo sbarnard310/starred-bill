@@ -330,6 +330,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .nav { gap: 0; }
   .nav a:not(.nav-guides) { display: none; }
   .share-btn span { display: none; }
+  /* The wishlist shows its heart and count only, so the header fits one row with the Near me and Guides pills. */
+  .wish-link span[data-i18n] { display: none; }
   .header-actions { gap: 6px; }
   .share-btn, .account-btn, .wish-link { padding-inline: 10px; }
   .nav a.nav-guides { border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); border-radius: 999px; padding: 6px 10px; color: var(--band-ink); }
@@ -691,3 +693,82 @@ footer a.foot-guide { color: inherit; }
 .cookie-actions button { font: inherit; font-weight: 600; padding: 8px 18px; border-radius: 999px; border: 1px solid var(--band-ink); background: transparent; color: var(--band-ink); cursor: pointer; }
 .cookie-actions button:hover { background: rgba(255,255,255,.12); }
 .cookie-settings-btn { font: inherit; font-weight: 600; padding: 8px 18px; border-radius: 999px; border: 1px solid var(--green); background: var(--surface); color: var(--green); cursor: pointer; }
+
+/* "Near me" in the menu: the locate icon with its label; on phones the icon alone, as a pill beside Guides. */
+.nav a.nav-near { display: inline-flex; align-items: center; gap: 5px; }
+.nav a.nav-near svg { width: 15px; height: 15px; }
+.nav a[aria-current="page"] { color: var(--band-ink); }
+@media (max-width: 720px) {
+  .nav a.nav-near { display: inline-flex; border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); border-radius: 999px; padding: 6px 8px; margin-right: 6px; color: var(--band-ink); }
+  .nav a.nav-near span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+
+/* /near-me/ */
+.near-hero { background: var(--band); color: var(--band-ink); padding-block: 40px 36px; }
+.near-hero .eyebrow { color: var(--gold); }
+.near-hero h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(2.1rem, 5.4vw, 3.4rem); margin: 6px 0 0; line-height: 1.1; }
+.near-hero .lede { color: var(--band-muted); max-width: 62ch; margin: 14px 0 0; line-height: 1.55; }
+.near-find { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 24px; }
+.near-locate { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; font-size: 1rem; background: var(--gold); color: #12261C; }
+.near-locate svg { width: 20px; height: 20px; }
+.near-locate:disabled { cursor: progress; opacity: .85; }
+.near-or { color: var(--band-muted); font-size: .9rem; }
+.near-search { display: flex; gap: 8px; flex: 1 1 320px; max-width: 520px; margin: 0; padding: 0; background: none; border: 0; }
+.near-search .search { flex: 1; }
+.near-search input { color: var(--ink); }
+.near-go { padding: 0 18px; border: 1px solid color-mix(in srgb, var(--band-ink) 35%, transparent); border-radius: var(--radius); background: none; color: var(--band-ink); font: inherit; font-weight: 600; cursor: pointer; }
+.near-go:hover { background: color-mix(in srgb, var(--band-ink) 10%, transparent); }
+.near-status { margin: 14px 0 0; min-height: 1.4em; color: var(--band-ink); }
+.near-status.error { color: #F3B4A8; }
+.near-privacy { margin: 6px 0 0; font-size: .82rem; color: var(--band-muted); }
+.near-privacy a { color: inherit; }
+.near-results { padding-block: 28px 8px; }
+.near-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
+.near-card { display: grid; gap: 3px; align-content: start; padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+button.near-card:hover { border-color: var(--green); }
+.nc-label { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+.nc-name { font-weight: 700; line-height: 1.3; }
+.nc-name .stars svg { width: 12px; height: 12px; }
+.nc-meta { font-size: .85rem; color: var(--muted); }
+.nc-big { font-family: var(--font-display); font-size: 2rem; line-height: 1.1; }
+.near-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 20px 0 14px; }
+.near-sel { display: inline-flex; align-items: center; gap: 8px; font-size: .88rem; color: var(--muted); }
+.near-sel select { padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: inherit; font-size: .88rem; }
+.near-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+.near-map { height: 640px; position: sticky; top: 12px; }
+.near-count { margin: 0 0 8px; font-size: .92rem; color: var(--muted); }
+.near-count strong { color: var(--ink); }
+.near-rows { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.near-row { display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; }
+.near-row + .near-row { border-top: 1px solid var(--line); }
+.nr-main { min-width: 0; display: grid; gap: 2px; }
+.nr-main .stars svg { width: 12px; height: 12px; }
+.nr-name { font-weight: 700; color: var(--ink); text-decoration: none; }
+.nr-name:hover { color: var(--green); text-decoration: underline; }
+.nr-where, .nr-chef { font-size: .84rem; color: var(--muted); }
+.nr-chef { font-style: italic; }
+.nr-price { font-family: var(--font-num); font-size: .86rem; margin-top: 2px; }
+.nr-lunch { color: var(--muted); }
+.nr-side { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.nr-d { font-family: var(--font-num); font-size: .85rem; color: var(--muted); white-space: nowrap; }
+.nr-side .wish, .nr-pin { width: 34px; height: 34px; }
+.nr-pin { border: 1px solid transparent; background: none; border-radius: 8px; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
+.nr-pin:hover { color: var(--green); background: var(--green-soft); }
+.nr-pin svg { width: 18px; height: 18px; }
+.near-more { margin-top: 10px; }
+.near-remember { font-size: .88rem; color: var(--muted); margin: 14px 0 0; }
+.near-remember label { display: inline-flex; gap: 8px; align-items: center; color: var(--ink); cursor: pointer; }
+.near-static { padding-block: 8px 24px; }
+.near-static .guide { padding-block: 24px 24px; }
+.near-popular { margin-top: 12px; }
+@media (max-width: 900px) {
+  .near-layout { grid-template-columns: 1fr; }
+  .near-map { height: 380px; position: static; }
+}
+@media (max-width: 720px) {
+  .near-cards { grid-template-columns: 1fr 1fr; }
+  .near-total { grid-column: 1 / -1; }
+  .near-search { flex-basis: 100%; }
+  .near-locate { width: 100%; justify-content: center; }
+  .near-or { width: 100%; text-align: center; }
+}

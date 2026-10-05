@@ -94,6 +94,9 @@ The same artifact has an "Updates log" tab: a dated record of every fix and ever
 - `at` is the commit time in UTC (`2026-10-03T13:02:25Z`), `commit` its short hash, and the doc id `<YYYY-MM-DD>-<short-slug>`.
 - After `git pull --rebase`, if it brought in the owner's Pages CMS edits (commit message ending "(via Pages CMS)") that aren't logged yet, add them too, reading the diff to say what changed. Skip edits that were undone straight away.
 
+## Daily summary
+A scheduled task ("Daily summary", 23:30 UK time every day, in the app's Scheduled list) writes a plain-English summary of the day's work from the git log, the updates log and the to-do list (pages created, restaurants and stars, prices, features, design, fixes, languages, the owner's own edits, to-do changes, Book Radar), files its chat in the "Daily summary" sidebar section and sends a phone notification. Its instructions are in ~/.claude/scheduled-tasks/daily-summary/SKILL.md. Keep the updates log and to-do list up to date, as the summary is built from them.
+
 ## Destination queue
 The to-do list's "New destinations" items carry "Queue N of 8" in their notes (Spain, Italy, Kyoto/Osaka/Nara, Seoul and Bangkok, the quick-win cities, the rest of France, Germany, mainland China). When the owner starts a new chat with "next destination", "carry on" or similar, read the list, take the lowest-numbered queue item still marked `todo` (one marked `doing` belongs to another chat), set it to `doing`, build it the way the existing destinations were built, publish, add the updates-log entry, then mark it `done` with `doneAt`. Big countries start with their main cities; note in the item what's left.
 

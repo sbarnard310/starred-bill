@@ -119,6 +119,8 @@ function applyStatic() {
   $("sort").setAttribute("aria-label", t("sortLabel"));
   $("ledger").setAttribute("aria-label", t("tableLabel"));
   $("cMsg").placeholder = t("cMsgPh");
+  $("cuisineQ").placeholder = t("cuisineSearchPh");
+  $("sheetClose").setAttribute("aria-label", t("sheetClose"));
   $("mapCanvas").setAttribute("aria-label", t("mapLabel"));
   $("crumbs").setAttribute("aria-label", t("crumbsAria"));
   $("currencySwitch").setAttribute("aria-label", t("currencyAria"));
@@ -167,24 +169,104 @@ function renderStarFilter() {
   $("starFilter").innerHTML = opts.map((o) =>
     '<button type="button" data-stars="' + o.s + '" aria-pressed="' + (state.activeStars === o.s) + '"' + (o.s ? ' aria-label="' + esc(t("starsAria", { n: o.s })) + '"' : "") + ">" + o.label + '<span class="count">' + o.n + "</span></button>").join("");
 }
+const fold = (s) => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+// Each cuisine in the current language; two that translate the same keep the English in brackets.
+function cuisineLabeller() {
+  const shown = (c) => { const r = ALL_RESTAURANTS.find((x) => x.cuisine === c); return r ? cuisineOf(r) : c; };
+  const seen = {};
+  [...new Set(RESTAURANTS.map((r) => r.cuisine))].forEach((c) => { seen[shown(c)] = (seen[shown(c)] || 0) + 1; });
+  return (c) => seen[shown(c)] > 1 && shown(c) !== c ? shown(c) + (cjk() ? "（" + c + "）" : " (" + c + ")") : shown(c);
+}
 function renderChips() {
   const counts = {};
   RESTAURANTS.forEach((r) => { counts[r.cuisine] = (counts[r.cuisine] || 0) + (starMatch(r) && wishMatch(r) ? 1 : 0); });
   const coll = new Intl.Collator(locale());
-  // Each cuisine in the current language; two that translate the same keep the English in brackets.
-  const shown = (c) => { const r = ALL_RESTAURANTS.find((x) => x.cuisine === c); return r ? cuisineOf(r) : c; };
-  const seen = {};
-  Object.keys(counts).forEach((c) => { seen[shown(c)] = (seen[shown(c)] || 0) + 1; });
-  const label = (c) => seen[shown(c)] > 1 && shown(c) !== c ? shown(c) + (cjk() ? "（" + c + "）" : " (" + c + ")") : shown(c);
+  const label = cuisineLabeller();
   const cats = Object.keys(counts).sort((a, b) => coll.compare(label(a), label(b)));
+  // A search box helps once the list is long; it narrows the chips, not the restaurants.
+  $("cuisineQ").hidden = cats.length < 12;
+  const q = $("cuisineQ").hidden ? "" : fold($("cuisineQ").value.trim());
   const total = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r)).length;
-  let html = '<span class="chip all' + (state.activeCat === "All" ? " active" : "") + '"><button type="button" data-cat="All" aria-pressed="' + (state.activeCat === "All") + '">' + t("all") + '<span class="count">' + total + "</span></button></span>";
+  let html = q ? "" : '<span class="chip all' + (state.activeCat === "All" ? " active" : "") + '"><button type="button" data-cat="All" aria-pressed="' + (state.activeCat === "All") + '">' + t("all") + '<span class="count">' + total + "</span></button></span>";
   cats.forEach((c) => {
+    if (q && !fold(label(c)).includes(q) && !fold(c).includes(q)) return;
     const on = state.activeCat === c;
     html += '<span class="chip' + (on ? " active" : "") + (counts[c] ? "" : " zero") + '"><button type="button" data-cat="' + esc(c) + '" aria-pressed="' + on + '">' + esc(label(c)) + '<span class="count">' + counts[c] + "</span></button></span>";
   });
   $("chips").innerHTML = html;
 }
+// What each drop-down button says, the removable tags under the bar, and the phone panel's "Show 12 restaurants" button.
+function renderFilterSummary(n) {
+  const show = state.wishOnly ? ["wishlist", t("showWish")] : state.changesOnly ? ["changes", t("showChanges")] : state.beenOnly ? ["been", t("showBeen")] : null;
+  const stars = state.activeStars ? starIcons(state.activeStars) : null;
+  const cat = state.activeCat !== "All" ? esc(cuisineLabeller()(state.activeCat)) : null;
+  const set = (id, html, on) => { $(id).innerHTML = html; $(id).closest(".filter-group").classList.toggle("on", on); };
+  set("showVal", show ? esc(show[1]) : t("all"), !!show);
+  set("starsVal", stars || t("all"), !!stars);
+  set("cuisineVal", cat || t("all"), !!cat);
+  const tags = [];
+  if (show) tags.push(["show", esc(show[1])]);
+  if (stars) tags.push(["stars", '<span aria-label="' + esc(t("starsAria", { n: state.activeStars })) + '">' + stars + "</span>"]);
+  if (cat) tags.push(["cat", cat]);
+  $("filtersCount").textContent = tags.length || "";
+  $("activeTags").innerHTML = tags.map(([k, html]) =>
+    '<button type="button" class="ftag" data-unfilter="' + k + '" aria-label="' + esc(t("removeFilter", { f: k === "stars" ? t("starsAria", { n: state.activeStars }) : (show && k === "show" ? show[1] : cuisineLabeller()(state.activeCat)) })) + '">' + html + '<span aria-hidden="true">×</span></button>').join("") +
+    (tags.length ? '<button type="button" class="linkish fclear" data-unfilter="all">' + t("filtersClear") + "</button>" : "");
+  $("activeTags").hidden = !tags.length;
+  $("sheetDone").textContent = t("filtersShowN", { n });
+}
+
+// Computers: Show, Stars and Cuisine open as drop-downs. Phones: they sit in a panel that slides up.
+const phoneWidth = matchMedia("(max-width: 720px)");
+function closeDrops(except) {
+  document.querySelectorAll(".filter-group.open").forEach((g) => {
+    if (g === except) return;
+    g.classList.remove("open"); g.querySelector(".fdrop-btn").setAttribute("aria-expanded", "false");
+  });
+}
+function toggleDrop(g) {
+  if (document.body.classList.contains("sheet-open")) return;
+  const open = !g.classList.contains("open");
+  closeDrops(g);
+  g.classList.toggle("open", open);
+  g.querySelector(".fdrop-btn").setAttribute("aria-expanded", String(open));
+  if (open && g.dataset.group === "cuisine" && !$("cuisineQ").hidden) $("cuisineQ").focus();
+}
+function openSheet() {
+  closeDrops();
+  document.body.classList.add("sheet-open");
+  $("fgroups").setAttribute("role", "dialog"); $("fgroups").setAttribute("aria-modal", "true");
+  $("sheetBackdrop").hidden = false;
+  $("filtersBtn").setAttribute("aria-expanded", "true");
+  $("sheetClose").focus();
+}
+function closeSheet() {
+  if (!document.body.classList.contains("sheet-open")) return;
+  document.body.classList.remove("sheet-open");
+  $("fgroups").removeAttribute("role"); $("fgroups").removeAttribute("aria-modal");
+  $("sheetBackdrop").hidden = true;
+  $("filtersBtn").setAttribute("aria-expanded", "false");
+  $("filtersBtn").focus();
+}
+// A choice made in a computer drop-down closes it; in the phone panel the panel stays open until "Show … restaurants".
+// (Checked before the click re-draws the buttons, which takes them out of the page.)
+let choseInDrop = false;
+document.addEventListener("click", (e) => { choseInDrop = !!e.target.closest(".fdrop-panel button"); }, true);
+function choseFilter() { if (choseInDrop && !document.body.classList.contains("sheet-open")) closeDrops(); }
+$("filtersBtn").addEventListener("click", openSheet);
+$("sheetClose").addEventListener("click", closeSheet);
+$("sheetDone").addEventListener("click", () => { closeSheet(); $("compare").scrollIntoView(); });
+$("sheetBackdrop").addEventListener("click", closeSheet);
+document.querySelectorAll(".fdrop-btn").forEach((b) => b.addEventListener("click", () => toggleDrop(b.closest(".filter-group"))));
+$("cuisineQ").addEventListener("input", renderChips);
+document.addEventListener("click", (e) => { if (e.target.isConnected && !e.target.closest(".filter-group")) closeDrops(); });
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  if (document.body.classList.contains("sheet-open")) { closeSheet(); return; }
+  const g = document.querySelector(".filter-group.open");
+  if (g) { closeDrops(); g.querySelector(".fdrop-btn").focus(); }
+});
+phoneWidth.addEventListener("change", () => { closeSheet(); closeDrops(); });
 
 // ---------- Table ----------
 function nameCell(r) {
@@ -234,6 +316,7 @@ function renderLedger() {
     });
   }
   $("ledger").innerHTML = html;
+  renderFilterSummary(rows.length);
   observeThumbs();
   updateMap(true);
   $("showing").textContent = t("showing", { a: rows.length, b: RESTAURANTS.length }) + (former.length ? t("showingFormer", { c: former.length }) : "") +
@@ -489,13 +572,19 @@ document.addEventListener("click", (e) => {
   } else if (el.dataset.been) {
     toggleBeen(el.dataset.been);
   } else if (el.dataset.show) {
-    state.wishOnly = el.dataset.show === "wishlist"; state.changesOnly = el.dataset.show === "changes"; state.beenOnly = el.dataset.show === "been"; render();
+    state.wishOnly = el.dataset.show === "wishlist"; state.changesOnly = el.dataset.show === "changes"; state.beenOnly = el.dataset.show === "been"; render(); choseFilter();
   } else if (el.dataset.stars) {
-    state.activeStars = Number(el.dataset.stars); render();
+    state.activeStars = Number(el.dataset.stars); render(); choseFilter();
+  } else if (el.dataset.unfilter) {
+    const k = el.dataset.unfilter;
+    if (k === "show" || k === "all") { state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; }
+    if (k === "stars" || k === "all") state.activeStars = 0;
+    if (k === "cat" || k === "all") state.activeCat = "All";
+    render();
   } else if (el.id === "clearFilters") {
     state.activeStars = 0; state.activeCat = "All"; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.query = ""; $("q").value = ""; render();
   } else if (el.dataset.cat) {
-    state.activeCat = el.dataset.cat; render();
+    state.activeCat = el.dataset.cat; $("cuisineQ").value = ""; render(); choseFilter();
     if (el.classList.contains("tag")) $("compare").scrollIntoView();
   } else if (el.id === "undo") {
     if (state.lastUndo) { state.lastUndo(); state.lastUndo = null; save(); render(); }

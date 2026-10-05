@@ -98,9 +98,68 @@ section { scroll-margin-top: 64px; }
 .search input:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-soft); }
 select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 
-.filters { display: grid; gap: 14px; margin-bottom: 18px; }
-.filter-group { display: grid; grid-template-columns: 110px 1fr; gap: 8px 12px; align-items: start; }
-.flabel { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--muted); padding-top: 9px; }
+/* Filters. Computers: Dinner/Lunch, then Show, Stars and Cuisine as drop-down buttons in one row.
+   Phones (720px and below): Dinner/Lunch and a "Filters" button that opens a panel from the bottom. */
+.filters { display: grid; gap: 10px; margin-bottom: 18px; }
+.filter-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.fgroups { display: contents; }
+.filter-group { position: relative; }
+.fdrop-btn, .filters-btn { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); padding: 7px 14px; font-size: .88rem; font-weight: 500; cursor: pointer; line-height: 1.5; }
+.fdrop-btn::after { content: ""; width: 7px; height: 7px; border: solid var(--muted); border-width: 0 1.5px 1.5px 0; transform: translateY(-2px) rotate(45deg); margin-left: 2px; transition: transform .15s; }
+.filter-group.open .fdrop-btn::after { transform: translateY(1px) rotate(225deg); }
+.flabel { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+.fdrop-btn .flabel { font-size: .78rem; letter-spacing: 0; text-transform: none; font-weight: 500; }
+.fdrop-val { display: inline-flex; align-items: center; gap: 4px; max-width: 16em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fdrop-val .stars svg { width: 12px; height: 12px; }
+.filter-group.on .fdrop-btn { border-color: var(--green); box-shadow: inset 0 0 0 1px var(--green); }
+.filter-group.on .fdrop-val { color: var(--green); font-weight: 600; }
+.fdrop-btn:hover, .filters-btn:hover { border-color: color-mix(in srgb, var(--ink) 35%, var(--line)); }
+.fdrop-panel { display: none; position: absolute; top: calc(100% + 6px); left: 0; z-index: 8; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 32px rgba(0, 0, 0, .18); padding: 12px; width: max-content; max-width: calc(100vw - 32px); }
+.filter-group.open .fdrop-panel { display: grid; gap: 10px; }
+.filter-group[data-group="cuisine"] .fdrop-panel { width: min(520px, calc(100vw - 32px)); max-height: 360px; overflow: auto; }
+.fdrop-panel .seg { flex-wrap: nowrap; white-space: nowrap; }
+.cuisine-q { width: 100%; padding: 8px 12px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); font-size: .9rem; }
+.filters-btn, .sheet-head, .sheet-foot { display: none; }
+.filters-btn svg { width: 16px; height: 16px; }
+.filters-btn .count { display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 999px; background: var(--green); color: var(--surface); font-size: .74rem; font-weight: 700; font-family: var(--font-num); }
+.filters-btn .count:empty { display: none; }
+.active-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.active-tags[hidden] { display: none; }
+.ftag { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--green); border-radius: 999px; background: color-mix(in srgb, var(--green) 10%, var(--surface)); color: var(--ink); padding: 5px 10px 5px 12px; font-size: .84rem; font-weight: 500; cursor: pointer; }
+.ftag > span[aria-hidden] { font-size: 1.05rem; line-height: 1; color: var(--muted); }
+.ftag .stars svg { width: 12px; height: 12px; }
+.fclear { font-size: .84rem; }
+.sheet-backdrop { position: fixed; inset: 0; z-index: 44; background: rgba(0, 0, 0, .45); }
+.sheet-backdrop[hidden] { display: none; }
+@media (min-width: 721px) {
+  /* The drop-down buttons already say what's chosen, so the tags row only adds "Clear all". */
+  .active-tags .ftag { display: none; }
+  .filters { grid-template-columns: auto 1fr; align-items: center; }
+  .active-tags { justify-content: flex-start; }
+}
+@media (max-width: 720px) {
+  .filter-bar { flex-wrap: nowrap; justify-content: space-between; }
+  .filters-btn { display: inline-flex; }
+  .fgroups { display: none; }
+  body.sheet-open { overflow: hidden; }
+  body.sheet-open .fgroups { display: grid; gap: 22px; align-content: start; position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; max-height: 85vh; overflow: auto; overscroll-behavior: contain;
+    background: var(--bg); color: var(--ink); border-radius: 16px 16px 0 0; box-shadow: 0 -10px 40px rgba(0, 0, 0, .25); padding: 0 16px; animation: sheet-up .2s ease-out; }
+  .sheet-head { display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1; background: var(--bg); padding: 16px 0 10px; border-bottom: 1px solid var(--line); }
+  .sheet-head h3 { margin: 0; font-size: 1.1rem; }
+  .sheet-close { border: 0; background: none; font-size: 1.8rem; line-height: 1; width: 40px; height: 40px; margin-right: -8px; cursor: pointer; color: var(--ink); }
+  .sheet-foot { display: block; position: sticky; bottom: 0; background: var(--bg); padding: 12px 0 calc(12px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); }
+  .sheet-done { width: 100%; border: 0; border-radius: var(--radius); background: var(--green); color: var(--surface); padding: 14px; font-size: 1rem; font-weight: 600; cursor: pointer; }
+  /* In the panel every group is open, and its button is just a heading. */
+  .fdrop-btn { border: 0; background: none; padding: 0; pointer-events: none; box-shadow: none !important; }
+  .fdrop-btn::after, .fdrop-val { display: none; }
+  .fdrop-btn .flabel { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; }
+  .fdrop-panel { display: grid; gap: 10px; position: static; box-shadow: none; border: 0; padding: 0; background: none; }
+  .filter-group[data-group="cuisine"] .fdrop-panel { width: auto; max-height: none; overflow: visible; }
+  .fdrop-panel .seg { flex-wrap: wrap; white-space: normal; }
+}
+@keyframes sheet-up { from { transform: translateY(100%); } to { transform: none; } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sheet-done, :root:not([data-theme="light"]) .filters-btn .count { color: var(--bg); } }
+:root[data-theme="dark"] .sheet-done, :root[data-theme="dark"] .filters-btn .count { color: var(--bg); }
 .seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); overflow: hidden; justify-self: start; }
 .seg button { border: 0; background: none; cursor: pointer; padding: 7px 14px; display: inline-flex; gap: 6px; align-items: center; font-size: .88rem; font-weight: 500; }
 .seg button + button { border-left: 1px solid var(--line); }
@@ -258,8 +317,6 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .wrap { padding-inline: 16px; }
   .nav { display: none; }
   .toolbar { grid-template-columns: 1fr; }
-  .filter-group { grid-template-columns: 1fr; }
-  .flabel { padding-top: 0; }
   .figures { grid-template-columns: 1fr 1fr; }
   .figure:first-child { grid-column: 1 / -1; }
   form { grid-template-columns: 1fr; padding: 18px; }

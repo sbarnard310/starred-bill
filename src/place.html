@@ -104,24 +104,39 @@
       </div>
       <p class="rate-line" id="rateLine" hidden></p>
 
-      <div class="filters">
-        <div class="filter-group">
-          <span class="flabel" id="mealLabel" data-i18n="fMeal"></span>
+      <!-- Filters: Dinner/Lunch always shows. On computers Show, Stars and Cuisine are drop-down buttons in one row;
+           on phones they sit in a panel that slides up from the "Filters" button. Chosen filters appear as removable tags. -->
+      <div class="filters" id="filters">
+        <div class="filter-bar">
           <div class="seg" id="mealFilter" role="group" aria-labelledby="mealLabel"></div>
+          <span class="sr-only" id="mealLabel" data-i18n="fMeal"></span>
+          <button type="button" class="filters-btn" id="filtersBtn" aria-expanded="false" aria-controls="fgroups">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+            <span data-i18n="filtersBtn"></span><span class="count" id="filtersCount"></span>
+          </button>
+          <div class="fgroups" id="fgroups" aria-labelledby="filtersTitle">
+            <div class="sheet-head"><h3 id="filtersTitle" data-i18n="filtersBtn"></h3><button type="button" class="sheet-close" id="sheetClose">×</button></div>
+            <div class="filter-group" data-group="show">
+              <button type="button" class="fdrop-btn" aria-expanded="false"><span class="flabel" id="showLabel" data-i18n="fShow"></span><span class="fdrop-val" id="showVal"></span></button>
+              <div class="fdrop-panel"><div class="seg" id="showFilter" role="group" aria-labelledby="showLabel"></div></div>
+            </div>
+            <div class="filter-group" data-group="stars">
+              <button type="button" class="fdrop-btn" aria-expanded="false"><span class="flabel" id="starsLabel" data-i18n="fStars"></span><span class="fdrop-val" id="starsVal"></span></button>
+              <div class="fdrop-panel"><div class="seg" id="starFilter" role="group" aria-labelledby="starsLabel"></div></div>
+            </div>
+            <div class="filter-group" data-group="cuisine">
+              <button type="button" class="fdrop-btn" aria-expanded="false"><span class="flabel" id="cuisineLabel" data-i18n="fCuisine"></span><span class="fdrop-val" id="cuisineVal"></span></button>
+              <div class="fdrop-panel">
+                <input type="search" class="cuisine-q" id="cuisineQ" autocomplete="off">
+                <div class="chips" id="chips" role="group" aria-labelledby="cuisineLabel"></div>
+              </div>
+            </div>
+            <div class="sheet-foot"><button type="button" class="sheet-done" id="sheetDone"></button></div>
+          </div>
         </div>
-        <div class="filter-group">
-          <span class="flabel" id="showLabel" data-i18n="fShow"></span>
-          <div class="seg" id="showFilter" role="group" aria-labelledby="showLabel"></div>
-        </div>
-        <div class="filter-group">
-          <span class="flabel" id="starsLabel" data-i18n="fStars"></span>
-          <div class="seg" id="starFilter" role="group" aria-labelledby="starsLabel"></div>
-        </div>
-        <div class="filter-group">
-          <span class="flabel" id="cuisineLabel" data-i18n="fCuisine"></span>
-          <div class="chips" id="chips" role="group" aria-labelledby="cuisineLabel"></div>
-        </div>
+        <div class="active-tags" id="activeTags"></div>
       </div>
+      <div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
 
       <div class="ledger" id="ledger" role="table">{{ledger}}</div>
       <div class="ledger-foot">

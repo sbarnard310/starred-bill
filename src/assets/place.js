@@ -309,8 +309,10 @@ function nameCell(r) {
   const initial = (nameOf(r).replace(/^(The|Restaurant)\s+/i, "")[0] || "?").toUpperCase();
   const thumb = '<span class="thumb" aria-hidden="true"' + (r.placeId && !r.status ? ' data-pid="' + esc(r.placeId) + '" data-name="' + esc(nameOf(r)) + '"' : "") + ">" + esc(initial) + "</span>";
   const alt = altNameOf(r);
-  return '<span class="name" role="cell">' + thumb + '<span class="name-text"><span class="nm-txt">' + esc(nameOf(r)) + "</span>" +
-    (r.status === "closed" ? "" : '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("findOnMaps", { name: nameOf(r) })) + '" title="' + esc(t("findOnMapsTitle")) + '"><svg aria-hidden="true"><use href="#pin"/></svg></a>') +
+  const pin = r.status === "closed" ? "" : '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("findOnMaps", { name: nameOf(r) })) + '" title="' + esc(t("findOnMapsTitle")) + '"><svg aria-hidden="true"><use href="#pin"/></svg></a>';
+  // The map pin stays on the line with the name's last word (or last character, for names without spaces) when the name wraps.
+  const name = nameOf(r), cut = name.includes(" ") ? name.lastIndexOf(" ") + 1 : Math.max(name.length - 1, 0);
+  return '<span class="name" role="cell">' + thumb + '<span class="name-text"><span class="nm-txt">' + esc(name.slice(0, cut)) + '<span class="nm-end">' + esc(name.slice(cut)) + pin + "</span></span>" +
     (alt ? '<span class="alt-name" lang="' + altLangOf(r) + '">' + esc(alt) + "</span>" : "") +
     (areaOf(r) ? '<span class="area">' + esc(areaOf(r)) + "</span>" : "") +
     (r.chef ? '<span class="chef-line">' + esc(t("chefLabel", { name: r.chef })) + "</span>" : "") +

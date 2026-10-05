@@ -244,6 +244,7 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .filter-group[data-group="diet"] .seg button .count { margin-left: auto; padding-left: 12px; }
 .seg svg.leaf { color: var(--green); }
 .seg button[aria-pressed="true"] svg.leaf { color: inherit; }
+.nm-end { white-space: nowrap; }
 .map { display: inline-grid; place-items: center; width: 26px; height: 26px; margin-left: 4px; vertical-align: -6px; border-radius: 6px; color: var(--green); }
 .map:hover { background: var(--green-soft); }
 .map svg { width: 16px; height: 16px; }
@@ -393,7 +394,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .tap-hint:not([hidden]) { display: flex; align-items: center; gap: 8px; margin: 0 0 8px; font-size: .85rem; color: var(--muted); }
   .tap-chev { width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); flex: none; }
   .empty-page .tap-hint { display: none; }
-  .row:where(:not(.head):not(.divider)) { grid-template-columns: 44px minmax(0, 1fr) 36px 10px; grid-template-areas: "thumb sum wish chev"; gap: 0 10px; padding: 0 12px 0 12px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .row:where(:not(.head):not(.divider)) { grid-template-columns: 44px minmax(0, 1fr) 36px 10px; grid-template-areas: "thumb sum wish chev" "thumb credit wish chev"; gap: 0 10px; padding: 0 12px 0 12px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
   /* The arrow: down when closed, up when open. */
   .row:where(:not(.head):not(.divider))::after { content: ""; grid-area: chev; align-self: center; width: 7px; height: 7px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: translateY(-2px) rotate(45deg); transition: transform .2s ease; }
   .row.open::after { align-self: start; margin-top: 30px; transform: rotate(-135deg); }
@@ -402,7 +403,12 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .row:where(:not(.head):not(.divider)) > .name { display: contents; }
   .row .thumb { grid-area: thumb; width: 44px; height: 44px; align-self: center; font-size: 1.15rem; }
   .row:not(.open) .thumb { pointer-events: none; }
-  .row .name-text { display: none; }
+  /* A closed row shows only the photo credit from the name cell, on a third line under the area (Google asks for it beside each photo). */
+  .row:not(.open) .name-text { display: block; grid-area: credit; min-width: 0; padding-bottom: 8px; }
+  .row:not(.open) .name-text > :not(.credit) { display: none; }
+  .row:not(.open) .credit, .row:not(.open) .credit:empty { display: block; min-height: 1.3em; margin-top: -1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  /* A long photographer's name is shortened so "Google Maps" always shows. */
+  .row:not(.open) .credit a { display: inline-block; max-width: calc(100% - 10.5em); overflow: hidden; text-overflow: ellipsis; vertical-align: bottom; }
   .row.open .thumb { align-self: start; margin-top: 10px; }
   .row.open .name-text { display: block; grid-area: name; }
   .row .wish-cell { display: contents; }
@@ -411,7 +417,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .row.open .wish { align-self: start; margin-top: 6px; }
   .row.open > .sum-cell { align-self: start; }
   .sum-cell { display: block; grid-area: sum; min-width: 0; }
-  .sum { all: unset; box-sizing: border-box; width: 100%; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name stars" "sub price"; gap: 2px 10px; align-items: center; padding: 10px 0; -webkit-tap-highlight-color: transparent; }
+  .sum { all: unset; box-sizing: border-box; width: 100%; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name stars" "sub price"; gap: 2px 10px; align-items: center; padding: 10px 0 2px; -webkit-tap-highlight-color: transparent; }
   .sum:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 6px; }
   .sum-name { grid-area: name; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .sum-sub { grid-area: sub; font-size: .82rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

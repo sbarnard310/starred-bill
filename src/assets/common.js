@@ -59,6 +59,8 @@ const I18N = {
     reviews: "{n} reviews", ratingAria: "Google rating {r} out of 5",
     srcSite: "Restaurant website", srcPress: "Review source", srcTitle: "Where this price came from",
     perMain: "per main", typicalSpend: "typical spend", notListed: "Not listed",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Table for 1", rcptDinnerOnly: "Dinner only", rcptNoPairing: "no pairing listed", rcptPlusWine: "+ wine {p}", rcptDinnerWine: "Dinner + wine", rcptLunchWine: "Lunch + wine", rcptChecked: "Checked {d}", rcptIncl: "Per person, service included", rcptPlus: "Per person, ++ (service and tax added)", rcptTaxTip: "Per person, before tax and tip", rcptTip: "Per person, before tip", rcptTax: "Per person, tax included",
     findOnMaps: "Find {name} on Google Maps", findOnMapsTitle: "Find on Google Maps",
     showOnly: "Show only {cat}",
     chgNew: "New", chgTitle: "{note} in the {date} Michelin Guide",
@@ -201,6 +203,8 @@ const I18N = {
     reviews: "{n} 則評論", ratingAria: "Google 評分 {r}（滿分 5）",
     srcSite: "餐廳官網", srcPress: "評論來源", srcTitle: "價格資料來源",
     perMain: "每道主菜", typicalSpend: "人均消費", notListed: "未公布",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "僅供應晚餐", rcptNoPairing: "未列出餐酒搭配", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚餐 + 配酒", rcptLunchWine: "午餐 + 配酒", rcptChecked: "{d} 查核", rcptIncl: "每人價格，已含服務費", rcptPlus: "每人價格，另加 ++（服務費及稅）", rcptTaxTip: "每人價格，未含稅及小費", rcptTip: "每人價格，未含小費", rcptTax: "每人價格，已含稅",
     findOnMaps: "在 Google 地圖查看{name}", findOnMapsTitle: "在 Google 地圖查看",
     showOnly: "只顯示{cat}",
     chgNew: "新進", chgTitle: "{date}米其林指南：{note}",
@@ -341,6 +345,8 @@ const I18N = {
     reviews: "{n} avis", ratingAria: "Note Google : {r} sur 5",
     srcSite: "Site du restaurant", srcPress: "Source", srcTitle: "D'où vient ce prix",
     perMain: "par plat", typicalSpend: "dépense moyenne", notListed: "Non communiqué",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Table pour 1", rcptDinnerOnly: "Dîner uniquement", rcptNoPairing: "pas d'accord mets-vins", rcptPlusWine: "+ vins {p}", rcptDinnerWine: "Dîner + vins", rcptLunchWine: "Déjeuner + vins", rcptChecked: "Vérifié : {d}", rcptIncl: "Par personne, service compris", rcptPlus: "Par personne, ++ (service et taxes en sus)", rcptTaxTip: "Par personne, hors taxes et pourboire", rcptTip: "Par personne, hors pourboire", rcptTax: "Par personne, taxes comprises",
     findOnMaps: "Trouver {name} sur Google Maps", findOnMapsTitle: "Voir sur Google Maps",
     showOnly: "Afficher seulement : {cat}",
     chgNew: "Nouveau", chgTitle: "{note} – Guide Michelin {date}",
@@ -462,6 +468,8 @@ const I18N = {
     reviews: "{n} 個評論", ratingAria: "Google 評分 {r}（滿分 5）",
     srcSite: "餐廳官網", srcPress: "資料來源", srcTitle: "價錢嘅來源",
     perMain: "每道主菜", typicalSpend: "人均消費", notListed: "未有公布",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "只做晚市", rcptNoPairing: "未有列出配酒", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚市 + 配酒", rcptLunchWine: "午市 + 配酒", rcptChecked: "{d} 核實", rcptIncl: "每位價錢，已包服務費", rcptPlus: "每位價錢，另加 ++（服務費同稅）", rcptTaxTip: "每位價錢，未計稅同貼士", rcptTip: "每位價錢，未計貼士", rcptTax: "每位價錢，已含稅",
     findOnMaps: "喺 Google 地圖搵{name}", findOnMapsTitle: "喺 Google 地圖睇",
     showOnly: "淨係顯示{cat}",
     chgNew: "新上榜", chgTitle: "{date}米芝蓮指南：{note}",
@@ -584,6 +592,8 @@ const I18N = {
     reviews: "{n}件", ratingAria: "Google評価 5点中{r}",
     srcSite: "公式サイト", srcPress: "情報源", srcTitle: "この料金の情報源",
     perMain: "1品あたり", typicalSpend: "予算の目安", notListed: "非公開",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · 1名様", rcptDinnerOnly: "ディナーのみ", rcptNoPairing: "ペアリング記載なし", rcptPlusWine: "+ ペアリング {p}", rcptDinnerWine: "ディナー + ペアリング", rcptLunchWine: "ランチ + ペアリング", rcptChecked: "{d} 確認", rcptIncl: "1人あたり・サービス料込み", rcptPlus: "1人あたり・++（サービス料・税別）", rcptTaxTip: "1人あたり・税・チップ別", rcptTip: "1人あたり・チップ別", rcptTax: "1人あたり・税込",
     findOnMaps: "Googleマップで{name}を見る", findOnMapsTitle: "Googleマップで見る",
     showOnly: "{cat}だけを表示",
     chgNew: "新規", chgTitle: "{date}のミシュランガイド：{note}",
@@ -725,6 +735,8 @@ const I18N = {
     reviews: "{n} reseña|{n} reseñas", ratingAria: "Nota de Google: {r} sobre 5",
     srcSite: "Web del restaurante", srcPress: "Fuente: reseña", srcTitle: "De dónde sale este precio",
     perMain: "por plato principal", typicalSpend: "gasto habitual", notListed: "No publicado",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Mesa para 1", rcptDinnerOnly: "Solo cenas", rcptNoPairing: "sin maridaje publicado", rcptPlusWine: "+ maridaje {p}", rcptDinnerWine: "Cena + maridaje", rcptLunchWine: "Almuerzo + maridaje", rcptChecked: "Revisado: {d}", rcptIncl: "Por persona, servicio incluido", rcptPlus: "Por persona, ++ (servicio e impuestos aparte)", rcptTaxTip: "Por persona, sin impuestos ni propina", rcptTip: "Por persona, sin propina", rcptTax: "Por persona, impuestos incluidos",
     findOnMaps: "Buscar {name} en Google Maps", findOnMapsTitle: "Buscar en Google Maps",
     showOnly: "Mostrar solo {cat}",
     chgNew: "Nuevo", chgTitle: "{note} en la Guía Michelin de {date}",
@@ -842,6 +854,8 @@ const I18N = {
     reviews: "{n} anmeldelser", ratingAria: "Google-bedømmelse {r} ud af 5",
     srcSite: "Restaurantens hjemmeside", srcPress: "Kilde", srcTitle: "Hvor prisen kommer fra",
     perMain: "pr. hovedret", typicalSpend: "typisk forbrug", notListed: "Ikke oplyst",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Bord til 1", rcptDinnerOnly: "Kun middag", rcptNoPairing: "ingen vinmenu oplyst", rcptPlusWine: "+ vin {p}", rcptDinnerWine: "Middag + vin", rcptLunchWine: "Frokost + vin", rcptChecked: "Tjekket {d}", rcptIncl: "Pr. person, inkl. service", rcptPlus: "Pr. person, ++ (service og moms oveni)", rcptTaxTip: "Pr. person, før moms og drikkepenge", rcptTip: "Pr. person, før drikkepenge", rcptTax: "Pr. person, inkl. moms",
     findOnMaps: "Find {name} på Google Maps", findOnMapsTitle: "Find på Google Maps",
     showOnly: "Vis kun {cat}",
     chgNew: "Ny", chgTitle: "{note} i Michelinguiden fra {date}",
@@ -945,6 +959,8 @@ const I18N = {
     reviews: "{n} recensioner", ratingAria: "Google-betyg {r} av 5",
     srcSite: "Restaurangens webbplats", srcPress: "Källa", srcTitle: "Var priset kommer ifrån",
     perMain: "per huvudrätt", typicalSpend: "typisk nota", notListed: "Inte angivet",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Bord för 1", rcptDinnerOnly: "Endast middag", rcptNoPairing: "inget vinpaket angivet", rcptPlusWine: "+ vin {p}", rcptDinnerWine: "Middag + vin", rcptLunchWine: "Lunch + vin", rcptChecked: "Kontrollerat {d}", rcptIncl: "Per person, service ingår", rcptPlus: "Per person, ++ (service och moms tillkommer)", rcptTaxTip: "Per person, före skatt och dricks", rcptTip: "Per person, före dricks", rcptTax: "Per person, moms ingår",
     findOnMaps: "Hitta {name} på Google Maps", findOnMapsTitle: "Hitta på Google Maps",
     showOnly: "Visa bara {cat}",
     chgNew: "Ny", chgTitle: "{note} i Michelinguiden från {date}",
@@ -1048,6 +1064,8 @@ const I18N = {
     reviews: "{n} umsagnir", ratingAria: "Google-einkunn {r} af 5",
     srcSite: "Vefsíða staðarins", srcPress: "Heimild", srcTitle: "Hvaðan verðið kemur",
     perMain: "á aðalrétt", typicalSpend: "venjuleg eyðsla", notListed: "Ekki gefið upp",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Borð fyrir 1", rcptDinnerOnly: "Aðeins kvöldverður", rcptNoPairing: "engin vínpörun skráð", rcptPlusWine: "+ vín {p}", rcptDinnerWine: "Kvöldverður + vín", rcptLunchWine: "Hádegisverður + vín", rcptChecked: "Athugað {d}", rcptIncl: "Á mann, þjónusta innifalin", rcptPlus: "Á mann, ++ (þjónusta og skattur bætast við)", rcptTaxTip: "Á mann, fyrir skatt og þjórfé", rcptTip: "Á mann, fyrir þjórfé", rcptTax: "Á mann, skattur innifalinn",
     findOnMaps: "Finna {name} á Google Maps", findOnMapsTitle: "Finna á Google Maps",
     showOnly: "Sýna aðeins {cat}",
     chgNew: "Nýtt", chgTitle: "{note} í Michelin-handbókinni {date}",
@@ -1151,6 +1169,8 @@ const I18N = {
     reviews: "{n} ressenyes", ratingAria: "Nota de Google {r} de 5",
     srcSite: "Web del restaurant", srcPress: "Font", srcTitle: "D'on surt aquest preu",
     perMain: "per plat principal", typicalSpend: "despesa habitual", notListed: "No publicat",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Taula per a 1", rcptDinnerOnly: "Només sopars", rcptNoPairing: "sense maridatge publicat", rcptPlusWine: "+ maridatge {p}", rcptDinnerWine: "Sopar + maridatge", rcptLunchWine: "Dinar + maridatge", rcptChecked: "Revisat: {d}", rcptIncl: "Per persona, servei inclòs", rcptPlus: "Per persona, ++ (servei i impostos a part)", rcptTaxTip: "Per persona, sense impostos ni propina", rcptTip: "Per persona, sense propina", rcptTax: "Per persona, impostos inclosos",
     findOnMaps: "Troba {name} a Google Maps", findOnMapsTitle: "Troba-ho a Google Maps",
     showOnly: "Mostra només {cat}",
     chgNew: "Nou", chgTitle: "{note} a la Guia Michelin de {date}",
@@ -1254,6 +1274,8 @@ const I18N = {
     reviews: "{n} รีวิว", ratingAria: "คะแนน Google {r} จาก 5",
     srcSite: "เว็บไซต์ร้าน", srcPress: "แหล่งที่มา", srcTitle: "ราคานี้มาจากที่ใด",
     perMain: "ต่อจานหลัก", typicalSpend: "ค่าใช้จ่ายโดยทั่วไป", notListed: "ไม่ได้ระบุ",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · โต๊ะสำหรับ 1 ท่าน", rcptDinnerOnly: "เฉพาะมื้อค่ำ", rcptNoPairing: "ไม่มีไวน์จับคู่", rcptPlusWine: "+ ไวน์ {p}", rcptDinnerWine: "มื้อค่ำ + ไวน์", rcptLunchWine: "มื้อกลางวัน + ไวน์", rcptChecked: "ตรวจสอบ {d}", rcptIncl: "ต่อคน รวมค่าบริการ", rcptPlus: "ต่อคน ++ (บวกค่าบริการและภาษี)", rcptTaxTip: "ต่อคน ไม่รวมภาษีและทิป", rcptTip: "ต่อคน ไม่รวมทิป", rcptTax: "ต่อคน รวมภาษี",
     findOnMaps: "ค้นหา {name} บน Google Maps", findOnMapsTitle: "ค้นหาบน Google Maps",
     showOnly: "แสดงเฉพาะ{cat}",
     chgNew: "ใหม่", chgTitle: "{note} ในมิชลิน ไกด์ {date}",
@@ -1365,6 +1387,8 @@ const I18N = {
     reviews: "리뷰 {n}개", ratingAria: "Google 평점 5점 만점에 {r}점",
     srcSite: "공식 사이트", srcPress: "출처", srcTitle: "이 가격의 출처",
     perMain: "요리당", typicalSpend: "평균 예산", notListed: "비공개",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · 1인 테이블", rcptDinnerOnly: "디너만 운영", rcptNoPairing: "페어링 정보 없음", rcptPlusWine: "+ 와인 {p}", rcptDinnerWine: "디너 + 와인", rcptLunchWine: "런치 + 와인", rcptChecked: "{d} 확인", rcptIncl: "1인 기준, 서비스 요금 포함", rcptPlus: "1인 기준, ++ (서비스 요금·세금 별도)", rcptTaxTip: "1인 기준, 세금·팁 별도", rcptTip: "1인 기준, 팁 별도", rcptTax: "1인 기준, 세금 포함",
     findOnMaps: "Google 지도에서 {name} 보기", findOnMapsTitle: "Google 지도에서 보기",
     showOnly: "{cat}만 보기",
     chgNew: "신규", chgTitle: "{date} 미쉐린 가이드: {note}",
@@ -1506,6 +1530,8 @@ const I18N = {
     reviews: "{n} recensione|{n} recensioni", ratingAria: "Voto Google {r} su 5",
     srcSite: "Sito del ristorante", srcPress: "Fonte: recensione", srcTitle: "Da dove viene questo prezzo",
     perMain: "per piatto principale", typicalSpend: "spesa tipica", notListed: "Non pubblicato",
+    // The till receipt on destination pages.
+    rcptHead: "The Starred Bill · Tavolo per 1", rcptDinnerOnly: "Solo cena", rcptNoPairing: "nessun abbinamento indicato", rcptPlusWine: "+ vini {p}", rcptDinnerWine: "Cena + vini", rcptLunchWine: "Pranzo + vini", rcptChecked: "Verificato: {d}", rcptIncl: "A persona, servizio incluso", rcptPlus: "A persona, ++ (servizio e tasse a parte)", rcptTaxTip: "A persona, tasse e mancia escluse", rcptTip: "A persona, mancia esclusa", rcptTax: "A persona, tasse incluse",
     findOnMaps: "Trova {name} su Google Maps", findOnMapsTitle: "Trova su Google Maps",
     showOnly: "Mostra solo {cat}",
     chgNew: "Nuovo", chgTitle: "{note} nella Guida Michelin di {date}",

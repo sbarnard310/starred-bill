@@ -18,6 +18,8 @@
   --font-body: "Figtree", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-num: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   --radius: 10px;
+  /* The till receipt: cream paper in light and dark mode alike. */
+  --rc-paper: #F5F0E4; --rc-ink: #1F2A22; --rc-muted: #6B6455; --rc-dots: #A39A86; --rc-rule: #C9C0AC; --rc-band: #E9E1CC; --rc-link: #1E6142;
 }
 /* Japanese text (pages in Japanese, and Japanese names on other pages) uses Japanese letterforms. */
 :lang(ja) { --font-display: "Gloock", "Noto Serif JP", "Hiragino Mincho ProN", serif; --font-body: "Figtree", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif; }
@@ -208,7 +210,7 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 
 /* Ledger */
 .ledger { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-.row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr) 72px 84px minmax(0, 1.5fr) minmax(0, 1.4fr) 76px 76px; gap: 14px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
+.row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr) 72px 84px minmax(0, 1.5fr) minmax(150px, 1fr) 76px; gap: 14px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
 .row:first-child { border-top: 0; }
 .row.head { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding-block: 10px; background: color-mix(in srgb, var(--green-soft) 50%, var(--surface)); }
 .row .name { font-weight: 600; min-width: 0; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 12px; align-items: center; }
@@ -223,7 +225,7 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .row.divider strong { font-family: var(--font-display); font-weight: 400; font-size: 1.15rem; }
 .row.divider .note { margin-top: 4px; max-width: 70ch; }
 .row.former { background: color-mix(in srgb, var(--bg) 55%, var(--surface)); }
-.row.former .name, .row.former .cat, .row.former .stars-cell, .row.former .rating-cell, .row.former .dinner, .row.former .wine { opacity: .5; filter: grayscale(1); }
+.row.former .name, .row.former .cat, .row.former .stars-cell, .row.former .rating-cell, .row.former .dinner { opacity: .5; filter: grayscale(1); }
 .row.former .tag { cursor: default; }
 .status-pill { display: inline-block; margin-right: 6px; padding: 2px 8px; border-radius: 999px; font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--line); color: var(--ink); }
 .chg { display: block; margin-top: 3px; font-size: .68rem; font-weight: 700; letter-spacing: .02em; line-height: 1.25; cursor: help; }
@@ -250,15 +252,13 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .notes { min-width: 0; font-size: .88rem; color: var(--muted); line-height: 1.4; }
 .rating { display: inline-flex; align-items: center; gap: 5px; }
 .rating svg { width: 13px; height: 13px; color: var(--green); }
-.wine { text-align: right; }
-.dprice { text-align: right; }
 .tag { display: inline-block; font-size: .8rem; padding: 3px 10px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-weight: 500; cursor: pointer; border: 0; text-align: left; max-width: 100%; }
 .row .cat { min-width: 0; }
 .stars { display: inline-flex; gap: 2px; color: var(--gold); }
 .stars svg { width: 15px; height: 15px; }
 .price { text-align: right; }
 .price.muted { color: var(--muted); }
-.dinner { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; }
+.dinner { display: flex; justify-content: flex-end; }
 .bar { height: 6px; border-radius: 3px; background: var(--green-soft); overflow: hidden; }
 .bar span { display: block; height: 100%; background: var(--green); border-radius: 3px; transition: width .3s ease; }
 .wish { width: 36px; height: 36px; border: 1px solid transparent; background: none; border-radius: 8px; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
@@ -268,6 +268,32 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .wish[aria-pressed="true"] svg { fill: currentColor; }
 .seg .wish-icon svg { width: 14px; height: 14px; fill: var(--heart); stroke: var(--heart); display: block; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Prices as a till receipt. Computers: a torn-off stub in the price column, its left edge perforated.
+   Phones (720px and below): a full receipt with dotted leaders, a total and a torn bottom edge. */
+.stub { position: relative; display: grid; justify-items: end; gap: 1px; width: 100%; min-width: 0; padding: 8px 12px 8px 18px; border-radius: 3px 6px 6px 3px; background: var(--rc-paper); color: var(--rc-ink);
+  font-family: var(--font-num); font-variant-numeric: tabular-nums; text-align: right; box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+  -webkit-mask: radial-gradient(circle at 0 50%, transparent 2.5px, #000 3px) 0 0 / 100% 8px repeat-y; mask: radial-gradient(circle at 0 50%, transparent 2.5px, #000 3px) 0 0 / 100% 8px repeat-y; }
+.stub::before { content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px; border-left: 2px dotted var(--rc-dots); }
+.stub-price { font-size: 1.22rem; line-height: 1.2; white-space: nowrap; }
+.stub-price.muted { color: var(--rc-muted); }
+.stub-sub { font-size: .68rem; line-height: 1.3; color: var(--rc-muted); }
+.receipt { display: none; min-width: 0; color: var(--rc-ink); font-family: var(--font-num); font-variant-numeric: tabular-nums; font-size: .82rem; line-height: 1.3; }
+.rc-paper { display: grid; gap: 3px; padding: 10px 12px 6px; background: var(--rc-paper); border-radius: 4px 4px 0 0; }
+.receipt::after { content: ""; display: block; height: 9px;
+  background: linear-gradient(to bottom right, var(--rc-paper) 50%, transparent 50%) 0 0 / 12px 9px repeat-x, linear-gradient(to bottom left, var(--rc-paper) 50%, transparent 50%) 0 0 / 12px 9px repeat-x; }
+.rc-head { text-align: center; font-size: .66rem; letter-spacing: .16em; text-transform: uppercase; color: var(--rc-muted); padding-bottom: 6px; margin-bottom: 2px; border-bottom: 1px dashed var(--rc-rule); }
+.rc-line { display: grid; grid-template-columns: auto minmax(12px, 1fr) auto; align-items: baseline; column-gap: 6px; padding: 2px 6px; margin-inline: -6px; border-radius: 3px; }
+.rc-line.on { background: var(--rc-band); }
+.rc-dots { align-self: end; margin-bottom: .32em; border-bottom: 2px dotted var(--rc-dots); }
+.rc-v { white-space: nowrap; text-align: right; }
+.rc-k { white-space: nowrap; }
+.rc-v.muted { color: var(--rc-muted); font-size: .74rem; white-space: normal; }
+.rc-note { grid-column: 1 / -1; font-size: .7rem; line-height: 1.3; color: var(--rc-muted); overflow-wrap: anywhere; }
+.rc-total { margin-top: 2px; padding-top: 6px; border-top: 1px dashed var(--rc-rule); border-radius: 0; font-weight: 600; }
+.rc-foot { margin-top: 3px; text-align: center; font-size: .66rem; color: var(--rc-muted); line-height: 1.4; }
+.rc-foot .src { color: var(--rc-link); text-underline-offset: 2px; }
+.receipt .notice { justify-self: start; color: var(--rc-ink); background: color-mix(in srgb, #B3862B 26%, var(--rc-paper)); font-family: var(--font-body); }
 
 /* Map */
 .map-canvas { width: 100%; height: 540px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; display: grid; place-items: center; }
@@ -333,24 +359,23 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 }
 @media (max-width: 900px) {
   .row.head { display: none; }
-  .row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name wish" "cat stars" "notes notes" "dinner dinner" "rating wine"; gap: 8px 12px; padding: 16px; }
+  .row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name wish" "cat stars" "rating rating" "notes dinner"; gap: 8px 12px; padding: 16px; }
   .row .name { grid-area: name; }
   .row .cat { grid-area: cat; }
   .row .stars-cell { grid-area: stars; justify-self: end; }
   .row .notes { grid-area: notes; }
-  .row .dinner { grid-area: dinner; grid-template-columns: auto 1fr auto; }
+  .row .dinner { grid-area: dinner; align-self: start; }
+  .row .dinner .mlabel { display: none; }
   .row .rating-cell { grid-area: rating; }
-  .row .wine { grid-area: wine; }
   .row .wish-cell { grid-area: wish; justify-self: end; }
   .map-canvas { height: 440px; }
-  .row .wine { justify-self: end; white-space: nowrap; }
   .row .rating-cell { white-space: nowrap; }
   .row .rating-cell .note { display: inline; margin-left: 6px; }
   .row .tag { white-space: normal; text-align: left; }
   .mlabel { display: inline; font-family: var(--font-body); font-size: .8rem; color: var(--muted); margin-right: 6px; }
 }
 /* Phones' two-line restaurant rows (summaryCell in place.js) are hidden on bigger screens. */
-.sum-cell, .other-meal, .acts-cell, .been-lbl { display: none; }
+.sum-cell, .acts-cell, .been-lbl { display: none; }
 /* Phones: each restaurant is a two-line row (name, area · cuisine; stars, price) that opens when tapped to show the rest. */
 @media (max-width: 720px) {
   .row:where(:not(.head):not(.divider)) { grid-template-columns: repeat(3, minmax(0, 1fr)) 40px; grid-template-areas: "sum sum sum wish"; gap: 0 8px; padding: 0 6px 0 14px; }
@@ -382,17 +407,23 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .row.open > .stars-cell .chg { margin: 0; }
   .row.open .nm-txt, .row.open .name .area, .row.open .name .map { display: none; }
   .row.open > .notes { display: block; }
-  .row.open:not(.former) > .rating-cell, .row.open:not(.former) > .wine, .row.open > .other-meal { display: flex; flex-direction: column; align-items: flex-start; justify-self: stretch; gap: 1px; padding: 6px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); text-align: left; white-space: normal; min-width: 0; }
-  .row.open > .other-meal { grid-area: other; }
+  .row.open:not(.former) > .rating-cell { display: flex; flex-direction: column; align-items: flex-start; justify-self: stretch; gap: 1px; padding: 6px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); text-align: left; white-space: normal; min-width: 0; }
   .row.open .rating-cell .note { display: block; margin: 0; }
   .row.open .mlabel { display: block; margin: 0; font-size: .72rem; font-weight: 400; }
-  .row.open .wine, .row.open .other-meal .num, .row.open .rating .num { font-weight: 600; }
+  .row.open .rating .num { font-weight: 600; }
   .row.open > .acts-cell { grid-area: acts; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
   .maps-pill { display: inline-flex; align-items: center; gap: 4px; font-size: .8rem; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--green); text-decoration: none; font-weight: 500; }
   .maps-pill svg { width: 14px; height: 14px; }
   .acts-cell .been { width: auto; height: auto; display: inline-flex; gap: 4px; align-items: center; font-size: .8rem; font-weight: 500; padding: 3px 10px 3px 7px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
   .acts-cell .been svg { width: 16px; height: 16px; }
   .acts-cell .been-lbl { display: inline; }
+  /* The till receipt replaces the menu note and the price boxes in an opened row (former restaurants keep their note). */
+  .row.rc-row.open { grid-template-areas: "sum sum sum wish" "name name name name" "stars stars stars stars" "receipt receipt receipt receipt" "rating rating rating rating" "acts acts acts acts"; }
+  .row.rc-row.open > .notes { display: none; }
+  .row.rc-row.open > .receipt { display: block; grid-area: receipt; }
+  .row.rc-row.open > .rating-cell { flex-direction: row; align-items: baseline; gap: 6px; padding: 0; border: 0; background: none; }
+  .row.rc-row.open > .rating-cell .mlabel { display: inline; font-size: .8rem; }
+  .row.rc-row.open > .rating-cell .note { display: inline; }
 }
 @media (max-width: 720px) {
   .wrap { padding-inline: 16px; }
@@ -420,7 +451,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 .hseg [aria-current="page"], .hseg [aria-pressed="true"] { background: var(--band-ink); color: var(--band); }
 .alt-name { display: block; font-weight: 500; font-size: .82rem; color: var(--ink); opacity: .75; }
 .notice { display: inline-block; margin: 0 6px 4px 0; padding: 1px 7px; border-radius: 999px; font-size: .7rem; font-weight: 700; background: color-mix(in srgb, var(--gold) 22%, transparent); color: var(--ink); }
-.row.nolunch .dinner, .row.nolunch .wine, .row.nolunch .notes { opacity: .65; }
+.row.nolunch .dinner, .row.nolunch .notes { opacity: .65; }
 .rate-line { margin: -4px 0 14px; font-size: .82rem; color: var(--muted); }
 :lang(zh-Hant-TW) .eyebrow, :lang(zh-Hant-TW) .flabel, :lang(zh-Hant-TW) .figure .label, :lang(zh-Hant-TW) .row.head { letter-spacing: .04em; }
 

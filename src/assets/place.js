@@ -332,12 +332,6 @@ function summaryCell(r) {
   return '<span class="sum-cell" role="cell"><button type="button" class="sum" data-row="' + esc(r.id) + '" aria-expanded="' + (state.openRow === r.id) + '">' +
     '<span class="sum-name">' + esc(nameOf(r)) + '</span><span class="sum-sub">' + sub + "</span>" + right + "</button></span>";
 }
-// Inside an opened row: the other meal's price.
-function otherMealCell(r) {
-  const lunch = !L();
-  return '<span class="other-meal" role="cell"><span class="mlabel">' + t(lunch ? "mealLunch" : "mealDinner") + "</span>" +
-    priceHtml(shown(r, lunch ? (r.noLunch ? null : r.lunch) : r.dinner), lunch ? (r.lunchType || "menu") : r.dinnerType, r, lunch && r.noLunch ? "noLunch" : "") + "</span>";
-}
 // Inside an opened row on phones: the cuisine (tap to show only that cuisine), Google Maps and "been there".
 const actsCell = (r) => '<span class="acts-cell" role="cell">' +
   (r.status ? '<span class="tag">' + esc(cuisineOf(r)) + "</span>" : '<button type="button" class="tag" data-cat="' + esc(r.cuisine) + '">' + esc(cuisineOf(r)) + "</button>") +
@@ -356,27 +350,71 @@ function toggleRow(btn) {
 }
 document.addEventListener("click", (e) => { const b = e.target.closest("#ledger .sum"); if (b) toggleRow(b); });
 
+// ---------- Till receipt (phones) and torn-off stub (computers) ----------
+// How each country's menu prices treat service, for the receipt's footer line (from each country's serviceText).
+const SERVICE_KIND = Object.assign({},
+  ...["andorra", "austria", "belgium", "croatia", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "hungary", "iceland", "italy", "latvia", "liechtenstein", "lithuania", "luxembourg", "malta", "monaco", "netherlands", "new-zealand", "norway", "poland", "portugal", "serbia", "slovenia", "south-korea", "spain", "sweden", "switzerland"].map((c) => ({ [c]: "rcptIncl" })),
+  ...["singapore", "thailand", "malaysia", "vietnam"].map((c) => ({ [c]: "rcptPlus" })),
+  ...["usa", "canada"].map((c) => ({ [c]: "rcptTaxTip" })),
+  ...["argentina", "mexico", "turkiye"].map((c) => ({ [c]: "rcptTip" })),
+  { japan: "rcptTax" });
+const PRICES_CHECKED = new Date("2026-10-15T12:00:00Z");
+const sep = '<span class="sr-only">, </span>';
+// What a meal costs on its own: the figure, or why there isn't one.
+function mealValue(r, meal) {
+  const lunch = meal === "lunch";
+  if (lunch && r.noLunch) return { muted: t("rcptDinnerOnly") };
+  const n = shown(r, lunch ? r.lunch : r.dinner);
+  if (n == null) return { muted: t("notListed") };
+  const type = lunch ? (r.lunchType || "menu") : r.dinnerType;
+  return { n, text: money(n, r), type, extra: type === "main" ? t("perMain") : type === "spend" ? t("typicalSpend") : "" };
+}
+function receiptLine(label, v, note, on) {
+  const notes = [v.extra, note].filter(Boolean).join(" · ");
+  return '<span class="rc-line' + (on ? " on" : "") + '"><span class="rc-k">' + esc(label) + '</span><span class="rc-dots" aria-hidden="true"></span>' +
+    (v.dash ? '<span class="rc-v muted" aria-hidden="true">–</span>' : sep + '<span class="rc-v' + (v.muted ? " muted" : "") + '">' + esc(v.muted || v.text) + "</span>") +
+    (notes ? sep + '<span class="rc-note">' + esc(notes) + "</span>" : "") + "</span>";
+}
+function receipt(r) {
+  const meal = L() ? "lunch" : "dinner";
+  const dinner = mealValue(r, "dinner"), lunch = mealValue(r, "lunch"), chosen = L() ? lunch : dinner;
+  const wine = wineOf(r);
+  const total = chosen.n != null && chosen.type === "menu" && wine ? chosen.n + wine : null;
+  const src = srcOf(r) && srcTypeOf(r) !== "none" ? ' <a class="src" href="' + esc(srcOf(r)) + '" target="_blank" rel="noopener" title="' + esc(t("srcTitle")) + '">' + (srcTypeOf(r) === "site" ? t("srcSite") : t("srcPress")) + "</a>" : "";
+  const checked = PRICES_CHECKED.toLocaleDateString(locale(), { month: cjk() ? "numeric" : "short", year: "numeric" });
+  return '<span class="receipt" role="cell"><span class="rc-paper">' +
+    '<span class="rc-head" aria-hidden="true">' + esc(t("rcptHead")) + "</span>" +
+    (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") +
+    receiptLine(t("mealDinner"), dinner, pick(r, "dinnerNote"), meal === "dinner") +
+    receiptLine(t("mealLunch"), lunch, r.noLunch ? "" : pick(r, "lunchNote"), meal === "lunch") +
+    receiptLine(t("hWine"), wine ? { text: money(wine, r) } : { dash: true }, wine ? "" : t("rcptNoPairing"), false) +
+    (total != null ? '<span class="rc-line rc-total"><span class="rc-k">' + esc(t(L() ? "rcptLunchWine" : "rcptDinnerWine")) + '</span><span class="rc-dots" aria-hidden="true"></span>' + sep + '<span class="rc-v">' + money(total, r) + "</span></span>" : "") +
+    '<span class="rc-foot">' + esc(t(SERVICE_KIND[r.country] || "m1Title")) + "<br>" + esc(t("rcptChecked", { d: checked })) + (src ? " ·" + src : "") + "</span>" +
+    "</span></span>";
+}
+// The computer table's price column: the chosen meal's price on a cream stub, with the wine pairing under it.
+function stub(r) {
+  const v = mealValue(r, L() ? "lunch" : "dinner"), wine = wineOf(r);
+  return '<span class="stub">' + (v.muted ? '<span class="stub-price muted">–</span><span class="stub-sub">' + esc(v.muted) + "</span>"
+    : '<span class="stub-price">' + esc(v.text) + "</span>" + (v.extra ? '<span class="stub-sub">' + esc(v.extra) + "</span>" : "") +
+      '<span class="stub-sub">' + (wine ? esc(t("rcptPlusWine", { p: money(wine, r) })) : esc(t("rcptNoPairing"))) + "</span>") + "</span>";
+}
 function renderLedger() {
   const rows = filtered();
-  const max = Math.max(...RESTAURANTS.filter(isMenu).map(priceOf), 1);
-  let html = '<div class="row head" role="row"><span role="columnheader">' + t("hRestaurant") + '</span><span role="columnheader">' + t("hCuisine") + '</span><span role="columnheader">' + t("hStars") + '</span><span role="columnheader">' + t("hGoogle") + '</span><span role="columnheader">' + t(L() ? "hNotesLunch" : "hNotes") + '</span><span role="columnheader" style="text-align:right">' + t("hPrice") + '</span><span role="columnheader" style="text-align:right">' + t("hWine") + '</span><span role="columnheader" class="sr-only">' + t("hWish") + "</span></div>";
+  let html = '<div class="row head" role="row"><span role="columnheader">' + t("hRestaurant") + '</span><span role="columnheader">' + t("hCuisine") + '</span><span role="columnheader">' + t("hStars") + '</span><span role="columnheader">' + t("hGoogle") + '</span><span role="columnheader">' + t(L() ? "hNotesLunch" : "hNotes") + '</span><span role="columnheader" style="text-align:right">' + t("hPrice") + '</span><span role="columnheader" class="sr-only">' + t("hWish") + "</span></div>";
   if (!rows.length && !EMPTY) {
     html += '<div class="empty">' + (state.wishOnly && !RESTAURANTS.some(onWishlist) ? t("emptyWish")
       : t("noMatch") + ' <button type="button" class="linkish" id="clearFilters">' + t("clearFilters") + "</button>") + "</div>";
   }
   rows.forEach((r) => {
     const on = onWishlist(r);
-    html += '<div class="row' + (L() && r.noLunch ? " nolunch" : "") + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
+    html += '<div class="row rc-row' + (L() && r.noLunch ? " nolunch" : "") + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
       '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cuisine) + '" title="' + esc(t("showOnly", { cat: cuisineOf(r) })) + '">' + esc(cuisineOf(r)) + "</button></span>" +
       '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
       '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + "</span>" : "") : '<span class="num muted">–</span>') + "</span>" +
       '<span class="notes" role="cell">' + (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc(noteOf(r) || "–") +
         (srcOf(r) && srcTypeOf(r) !== "none" ? ' <a class="src" href="' + esc(srcOf(r)) + '" target="_blank" rel="noopener" title="' + esc(t("srcTitle")) + '">' + (srcTypeOf(r) === "site" ? t("srcSite") : t("srcPress")) + "</a>" : "") + "</span>" +
-      '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + '</span><span class="bar"><span style="width:' + (isMenu(r) ? (priceOf(r) / max * 100).toFixed(1) : 0) + '%"></span></span><span class="dprice">' +
-        (priceOf(r) == null ? '<span class="num muted">–</span><span class="note">' + t(L() && r.noLunch ? "noLunch" : "notListed") + "</span>"
-          : '<span class="num">' + money(priceOf(r), r) + "</span>" + (typeOf(r) === "main" ? '<span class="note">' + t("perMain") + "</span>" : typeOf(r) === "spend" ? '<span class="note">' + t("typicalSpend") + "</span>" : "")) + "</span></span>" +
-      '<span class="wine num' + (wineOf(r) ? "" : " muted") + '" role="cell"><span class="mlabel">' + t("hWine") + "</span>" + (wineOf(r) ? money(wineOf(r), r) : "–") + "</span>" +
-      otherMealCell(r) + actsCell(r) +
+      '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + "</span>" + stub(r) + "</span>" + receipt(r) + actsCell(r) +
       '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
       "</div>";
   });
@@ -390,8 +428,8 @@ function renderLedger() {
         '<span class="stars-cell" role="cell">' + starIcons(r.formerStars) + '<span class="note">' + t("formerly") + "</span></span>" +
         '<span class="rating-cell" role="cell"><span class="num muted">–</span></span>' +
         '<span class="notes" role="cell"><span class="status-pill status-' + esc(r.status) + '">' + (r.change === "down" ? "▼ " : "") + (label[r.status] || label.changed) + "</span>" + esc(pick(r, "statusNote")) + "</span>" +
-        '<span class="dinner" role="cell"><span class="dprice"><span class="num muted">–</span></span></span>' +
-        '<span class="wine num muted" role="cell">–</span>' + actsCell(r) + '<span class="wish-cell" role="cell">' + beenButton(r) + "</span></div>";
+        '<span class="dinner" role="cell"><span class="stub"><span class="stub-price muted">–</span></span></span>' +
+        actsCell(r) + '<span class="wish-cell" role="cell">' + beenButton(r) + "</span></div>";
     });
   }
   $("ledger").innerHTML = html;

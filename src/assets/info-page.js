@@ -18,3 +18,27 @@ document.addEventListener("click", (e) => {
   if (el) { setLang(el.dataset.lang); render(); }
 });
 render();
+
+// Guide tables marked data-sortable: tap a heading to sort by it, tap again to reverse.
+document.querySelectorAll("table[data-sortable]").forEach((table) => {
+  const heads = [...table.querySelectorAll("thead th")];
+  heads.forEach((th, i) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = th.textContent;
+    th.textContent = "";
+    th.appendChild(btn);
+    btn.addEventListener("click", () => {
+      const asc = th.getAttribute("aria-sort") === "descending" ? true : th.getAttribute("aria-sort") === "ascending" ? false : i === 0;
+      heads.forEach((h) => h.setAttribute("aria-sort", "none"));
+      th.setAttribute("aria-sort", asc ? "ascending" : "descending");
+      const body = table.tBodies[0];
+      const key = (tr) => tr.children[i].dataset.sort || "";
+      [...body.rows].sort((a, b) => {
+        const x = key(a), y = key(b), nx = Number(x), ny = Number(y);
+        const d = x !== "" && y !== "" && !isNaN(nx) && !isNaN(ny) ? nx - ny : x.localeCompare(y);
+        return asc ? d : -d;
+      }).forEach((tr) => body.appendChild(tr));
+    });
+  });
+});

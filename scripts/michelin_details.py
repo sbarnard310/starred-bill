@@ -4,7 +4,7 @@
     python3 scripts/michelin_details.py fetch            download every starred restaurant from the MICHELIN Guide's search index
     python3 scripts/michelin_details.py apply            match them to content/restaurants and write michelinId, diets and chef
     python3 scripts/michelin_details.py review           list restaurants still without a chef, with Michelin's description
-    python3 scripts/michelin_details.py chefs FILE       add chefs from FILE: {"restaurant-id": {"chef": "…", "source": "michelin|site|manual"}}
+    python3 scripts/michelin_details.py chefs FILE       add chefs from FILE: {"restaurant-id": {"chef": "…", "source": "michelin|site|press|manual"}}
 
 Run fetch then apply after each guide release. A chef with "chefSource": "manual" is never overwritten.
 The download is kept in scripts/michelin-details.json (not committed).

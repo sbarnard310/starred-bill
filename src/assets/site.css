@@ -802,6 +802,23 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 footer a.foot-guide { color: inherit; }
 /* Trademark notice: its own full-width line under the footer's other items. */
 footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
+/* Data tables on the list guides (by country, three-star list): numbers in their own columns, sortable headings. */
+.guide-table.data td { font-family: var(--font-body); white-space: normal; }
+.guide-table.data td:first-child { white-space: normal; }
+.guide-table.data td.num { font-family: var(--font-num); white-space: nowrap; }
+.guide-table.data td.num .muted { font-family: var(--font-body); }
+.guide-table.three-list td:first-child { min-width: 12ch; }
+.guide-table th button { all: inherit; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
+.guide-table th button:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 2px; }
+.guide-table th[aria-sort="descending"] button::after { content: "↓"; }
+.guide-table th[aria-sort="ascending"] button::after { content: "↑"; }
+.jump-links { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 8px; }
+.jump-links a { border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; text-decoration: none; background: var(--surface); font-size: .9rem; }
+.jump-links span { color: var(--muted); font-family: var(--font-num); font-size: .82rem; margin-left: 2px; }
+.guide h3[id^="three-"] { scroll-margin-top: 140px; }
+.change-lists { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; margin: 14px 0; }
+.change-lists > div { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 4px 18px 10px; }
+.change-lists ul { padding-left: 18px; margin: 6px 0; }
 @media (max-width: 720px) {
   /* On phones each row of a guide table becomes a card, with its column names beside the values. */
   .table-wrap { overflow: visible; border: 0; background: none; }

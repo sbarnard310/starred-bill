@@ -74,7 +74,7 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 | `status`, `formerStars`, `statusNote`, `statusNoteZh` | only for restaurants no longer starred: `lost`, `closed` or `changed` |
 | `notice`, `noticeZh` | a current notice, e.g. temporarily closed |
 | `website`, `lat`, `lng`, `placeId` | website, map position and Google place id (for the photo) |
-| `chef`, `chefSource` | head chef, and where the name came from: `michelin`, `site` (the restaurant's website) or `manual` (never overwritten) |
+| `chef`, `chefSource` | head chef, and where the name came from: `michelin`, `site` (the restaurant's website), `press` (recent reviews, interviews, hotel or booking pages such as OMAKASE, checked by hand) or `manual` (never overwritten). The MICHELIN refresh replaces any but `manual` when the guide names a chef |
 | `diets` | dietary options from the MICHELIN Guide: any of `vegetarian-only`, `vegetarian-menu`, `vegetarian`, `vegan`, `gluten-free`, `halal`, `kosher` |
 | `michelinId` | the restaurant's record id in the MICHELIN Guide, so refreshes match it exactly |
 
@@ -95,9 +95,14 @@ Each file in `content/guides/` is one article at `/guides/<file name>/`, listed 
 | `published`, `updated` | dates like `2026-10-05`; change `updated` whenever you edit |
 | `lang` | `en-US` or `en-GB` |
 | `body` | the article, in HTML |
+| `keywords` | the searches the page targets, from its content brief, main one first; written into the page's keywords meta tag and Article data. The build lists any that don't appear in the title, headline, article or FAQ (ignoring case, punctuation and small words such as "a", "the" and "in") |
 | `faq` | questions (`q`) and answers (`a`), shown under the article and given to Google as an FAQ |
 
-Figures in the body and FAQ written in double curly brackets are worked out from the restaurant data each time the site is built, so they never go stale: `{{total}}`, `{{n1}}`, `{{n2}}`, `{{n3}}` (starred restaurants), `{{countries}}`, `{{topCountry}}`/`{{topCountryN}}`, `{{secondCountry}}`, `{{thirdCountry}}` (most starred restaurants), `{{top3Country}}`/`{{top3N}}`, `{{second3Country}}`/`{{second3N}}` (most three-star), `{{price1}}`–`{{price3}}` and `{{range1}}`–`{{range3}}` (median dinner tasting menu and middle half, in US dollars), `{{lunch1}}`–`{{lunch3}}`, `{{wine1}}`–`{{wine3}}`, `{{priced}}`, `{{oneIn3}}`, `{{guideYear}}` and `{{checked}}` (from `site.json`). A link written `<a data-guide="green-michelin-star">…</a>` becomes a link once that guide exists, and plain text until then.
+Figures in the body and FAQ written in double curly brackets are worked out from the restaurant data each time the site is built, so they never go stale: `{{total}}`, `{{n1}}`, `{{n2}}`, `{{n3}}` (starred restaurants), `{{countries}}`, `{{topCountry}}`/`{{topCountryN}}`, `{{secondCountry}}`, `{{thirdCountry}}` (most starred restaurants), `{{top3Country}}`/`{{top3N}}`, `{{second3Country}}`/`{{second3N}}` (most three-star), `{{price1}}`–`{{price3}}` and `{{range1}}`–`{{range3}}` (median dinner tasting menu and middle half, in US dollars), `{{lunch1}}`–`{{lunch3}}`, `{{wine1}}`–`{{wine3}}`, `{{priced}}`, `{{oneIn3}}`, `{{guideYear}}` and `{{checked}}` (from `site.json`). For the list guides there are also `{{n3UK}}`, `{{n3London}}`, `{{ukTotal}}`, `{{londonTotal}}`, `{{usTotal}}`, `{{usStates}}`, `{{n3us}}`, `{{topState}}`/`{{topStateN}}` (and `second…`, `third…`), `{{new3}}`/`{{lost3}}` (restaurants that gained or lost a third star this year, from `change`, `changeDate` and `formerStars`), `{{cheapest3}}`, `{{cheapest3Place}}` and `{{cheapest3Price}}` (also with `UK` or `London` after `cheapest3`), and per country `{{in_<id>}}`, `{{n3_<id>}}` and `{{split_<id>}}` with hyphens written as underscores (`{{in_new_zealand}}`, `{{split_uk}}` = "165 one-star, 23 two-star and 10 three-star").
+
+Whole tables built from the restaurant data go on a line of their own: `{{table:countries}}` and `{{table:us-states}}` (sortable star counts), `{{table:three-star-jump}}` (links to each country), `{{table:three-star}}` (every three-star restaurant by country, linked to its MICHELIN Guide page), `{{table:three-star-uk}}`, `{{table:three-star-london}}`, and `{{table:three-star-changes}}` (also `-uk` and `-london`): the new and lost three stars this year. Each table carries its own dated note.
+
+A link written `<a data-guide="green-michelin-star">…</a>` becomes a link once that guide exists, and plain text until then.
 
 ## Editing
 

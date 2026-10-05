@@ -38,7 +38,7 @@ STATUSES = ("lost", "closed", "changed")
 CHANGES = ("new", "up", "down")
 # Dietary options, from the MICHELIN Guide (scripts/michelin_details.py). "vegetarian-only" marks a vegetarian or vegan restaurant.
 DIETS = ("vegetarian-only", "vegetarian-menu", "vegetarian", "vegan", "gluten-free", "halal", "kosher")
-CHEF_SOURCES = ("michelin", "site", "manual")
+CHEF_SOURCES = ("michelin", "site", "press", "manual")
 ID_PATTERN = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
 
 problems = []
@@ -253,6 +253,9 @@ for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").
         if g.get(field) and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", g[field]):
             problem(where, f"{field} must be a date like 2026-10-05")
     g["faq"] = [tidy(f) for f in g.get("faq", []) if tidy(f).get("q") and tidy(f).get("a")]
+    if not isinstance(g.get("keywords", []), list) or not all(isinstance(k, str) and k.strip() for k in g.get("keywords", [])):
+        problem(where, "keywords must be a list of search phrases, the main one first")
+    g["keywords"] = [k.strip() for k in g.get("keywords", []) if isinstance(k, str) and k.strip()]
     g["id"] = gid
     guides[gid] = g
 
@@ -876,6 +879,33 @@ def build_compare(starred):
     }))
 
 
+def build_compare(starred):
+    """/compare/: up to three restaurants from the visitor's wishlist as till receipts side by side, in one currency.
+    The prices come from /data/compare.json, one compact row per starred restaurant (columns listed in the file).
+    The page is personal (it reads the wishlist in the browser), so it stays out of search engines and the sitemap."""
+    cols = ["id", "name", "stars", "cuisine", "where", "path", "country", "cur", "dinner", "dinnerType", "dinnerNote", "lunch", "lunchType",
+            "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice"]
+    rows = [[r["id"], r["name"], r["stars"], r.get("cuisine", ""), near_where(r), r["cityPath"], r["country"], r["cur"],
+             r.get("dinner"), r.get("dinnerType", "menu"), r.get("dinnerNote", ""), r.get("lunch"), r.get("lunchType", "menu"),
+             r.get("lunchNote", ""), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"),
+             r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0]
+            for r in starred]
+    body = as_json({"cols": cols, "r": rows}).encode("utf-8")
+    (OUT / "data" / "compare.json").write_bytes(body)
+    lede = ("Tick two or three restaurants from your wishlist to see their bills side by side: dinner, lunch and the wine pairing, "
+            "all in the currency you choose.")
+    write("/compare/", render("compare.html", {
+        "title": "Compare your saved restaurants · The Starred Bill",
+        "description": e("Compare Michelin-starred restaurants from your wishlist side by side: dinner, lunch and wine pairing prices in one currency."),
+        "canonical": SITE_URL + "/compare/", "htmlLang": "en", "ogType": "website", "ogAlt": "Compare Michelin-starred restaurants side by side",
+        "crumbs": '<a href="/">All destinations</a><span aria-current="page">Compare</span>',
+        "lede": e(lede),
+        "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "switchable": currency_data.get("switchable", []),
+                         "rateDate": currency_data.get("rateDate"),
+                         "compareUrl": f"/data/compare.json?v={hashlib.sha1(body).hexdigest()[:10]}"}),
+    }))
+
+
 def build_redirects():
     """Pages at old addresses that send visitors on to where the page lives now, keeping any ?q= search."""
     for old, pid in sorted(redirects.items()):
@@ -950,10 +980,195 @@ def guide_stats():
     month = site.get("updated", "")
     stats["checked"] = (MONTH_NAMES[int(month[5:7]) - 1] + " " + month[:4]) if re.fullmatch(r"\d{4}-\d{2}", month) else ""
     stats["guideYear"] = month[:4]
+    stats.update(list_stats(live, stats["guideYear"]))
     return stats
 
 
+def usd_text(n, step=5):
+    return f"${int(round(n / step) * step):,}" if n is not None else "–"
+
+
+def in_london(r):
+    return "london" in r["_chain"]
+
+
+def three_star_changes(year, keep=lambda r: True):
+    """Restaurants that reached three stars in the latest guides (marked new or up that year), and those that lost them."""
+    gained = [r for r in restaurants if r.get("stars") == 3 and not r.get("status") and r.get("change") in ("new", "up")
+              and r.get("changeDate", "").startswith(year) and keep(r)]
+    lost = [r for r in restaurants if r.get("changeDate", "").startswith(year) and keep(r) and (
+        (r.get("status") and r.get("formerStars") == 3) or (r.get("stars") == 2 and r.get("change") == "down" and not r.get("status")))]
+    return sorted(gained, key=lambda r: r["name"].lower()), sorted(lost, key=lambda r: r["name"].lower())
+
+
+def list_stats(live, year):
+    """Figures for the data guides: the US by state, the UK and London, and the cheapest three-star menus."""
+    usd = lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"]
+    out = {}
+    three = [r for r in live if r["stars"] == 3]
+    for key, rows in (("", three), ("UK", [r for r in three if r["country"] == "uk"]), ("London", [r for r in three if in_london(r)])):
+        out[f"n3{key}"] = str(len(rows))
+        menus = sorted((r for r in rows if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=usd)
+        if menus:
+            r = menus[0]
+            out[f"cheapest3{key}"], out[f"cheapest3{key}Place"] = r["name"], place_name(r)
+            out[f"cheapest3{key}Price"] = money(r["dinner"], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(usd(r))})")
+    # Per country, e.g. {{in_canada}} (starred restaurants), {{n3_sweden}} (three-star), {{split_ireland}} ("14 one-star and 2 two-star").
+    for cid in {r["country"] for r in live}:
+        c = [sum(1 for r in live if r["country"] == cid and r["stars"] == n) for n in (1, 2, 3)]
+        key = cid.replace("-", "_")
+        out[f"in_{key}"], out[f"n3_{key}"] = f"{sum(c):,}", str(c[2])
+        parts = [f"{n:,} {w}-star" for n, w in zip(c, ("one", "two", "three")) if n]
+        out[f"split_{key}"] = parts[0] if len(parts) == 1 else ", ".join(parts[:-1]) + " and " + parts[-1]
+    out["ukTotal"] = f"{sum(1 for r in live if r['country'] == 'uk'):,}"
+    out["londonTotal"] = str(sum(1 for r in live if in_london(r)))
+    us = [r for r in live if r["country"] == "usa"]
+    states = {}
+    for r in us:
+        states[us_state(r)] = states.get(us_state(r), 0) + 1
+    ranked = sorted(states.items(), key=lambda s: -s[1])
+    out.update({"usTotal": f"{len(us):,}", "usStates": str(len(states)), "n3us": str(sum(1 for r in us if r["stars"] == 3))})
+    for i, key in enumerate(("topState", "secondState", "thirdState")):
+        if len(ranked) > i:
+            out[key], out[key + "N"] = places[ranked[i][0]]["name"], str(ranked[i][1])
+    gained, lost = three_star_changes(year)
+    out["new3"], out["lost3"] = str(len(gained)), str(len(lost))
+    return out
+
+
+def us_state(r):
+    """The state (or Washington DC) a US restaurant sits in."""
+    c = r["_chain"]
+    return c[-2] if len(c) > 1 else c[-1]
+
+
+def place_name(r):
+    """Where a restaurant is, as a list would name it: its city, else the town from its area ("Bray, Berkshire" -> Bray)."""
+    if r["cityType"] == "district":
+        return places[r["_chain"][1]]["name"]
+    if r["cityType"] == "city":
+        return r["cityName"]
+    return (r.get("area") or r["cityName"]).split(", ")[0]
+
+
+def michelin_links():
+    """Our restaurants' pages on the MICHELIN Guide, matched against content/world-starred.json by name and position."""
+    path = CONTENT / "world-starred.json"
+    if not path.exists():
+        return {}
+    near = {}
+    for w in read_json(path).get("restaurants", []):
+        near.setdefault((round(w[2]), round(w[3])), []).append(w)
+    out = {}
+    for r in restaurants:
+        if r.get("lat") is None or r.get("status"):
+            continue
+        cands = [w for dy in (-1, 0, 1) for dx in (-1, 0, 1) for w in near.get((round(r["lat"]) + dy, round(r["lng"]) + dx), [])]
+        match = next((w for w in cands if same_restaurant(w, r)), None)
+        if match:
+            out[r["id"]] = "https://guide.michelin.com/en" + match[6]
+    return out
+
+
+def guide_blocks(stats):
+    """Tables the data guides drop in with {{table:name}}, built from the restaurant data at every build."""
+    live = [r for r in restaurants if r.get("stars") in (1, 2, 3) and not r.get("status")]
+    links = michelin_links()
+    year, checked = stats["guideYear"], stats["checked"]
+    stars_cell = lambda n: f'<span class="g-stars" aria-label="{n} star{"s" if n > 1 else ""}">{"★" * n}</span>'
+    note = lambda text: f'<p class="table-note">{text} Last checked {e(checked)}.</p>'
+
+    def counts_table(groups, first):
+        rows = "".join(
+            f'<tr><td data-label="{first}" data-sort="{e(name)}"><a href="{e(path)}">{e(name)}</a></td>'
+            + "".join(f'<td class="num" data-label="{label}" data-sort="{c[i]}">{c[i]:,}</td>' for i, label in enumerate(("One star", "Two stars", "Three stars")))
+            + f'<td class="num" data-label="Total" data-sort="{sum(c)}"><strong>{sum(c):,}</strong></td></tr>'
+            for name, path, c in sorted(groups, key=lambda g: (-sum(g[2]), -g[2][2], g[0])))
+        heads = "".join(f'<th scope="col" aria-sort="{"descending" if h == "Total" else "none"}">{h}</th>' if h != first else f'<th scope="col">{h}</th>'
+                        for h in (first, "One star", "Two stars", "Three stars", "Total"))
+        return f'<div class="table-wrap"><table class="guide-table data" data-sortable><thead><tr>{heads}</tr></thead><tbody>{rows}</tbody></table></div>'
+
+    def tally(rows, key):
+        out = {}
+        for r in rows:
+            out.setdefault(key(r), [0, 0, 0])[r["stars"] - 1] += 1
+        return out
+
+    def price_cell(r):
+        if r.get("dinner") is None:
+            return '<span class="muted">Not published</span>'
+        text = money(r["dinner"], r["cur"])
+        if r["cur"] != "USD":
+            text += f'<br><span class="muted">about {usd_text(r["dinner"] / CURRENCIES[r["cur"]]["perUSD"])}</span>'
+        if r.get("dinnerType", "menu") != "menu":
+            text += '<br><span class="muted">à la carte main course</span>' if r["dinnerType"] == "main" else '<br><span class="muted">typical spend</span>'
+        return text
+
+    def restaurant_table(rows):
+        body = ""
+        for r in sorted(rows, key=lambda r: (place_name(r).lower(), r["name"].lower())):
+            name = e(r["name"])
+            if r["id"] in links:
+                name = f'<a href="{e(links[r["id"]])}">{name}</a>'
+            body += (f'<tr><td data-label="Restaurant">{name}</td>'
+                     f'<td data-label="City"><a href="{e(r["cityPath"])}">{e(place_name(r))}</a></td>'
+                     f'<td data-label="Chef">{e(r.get("chef") or "–")}</td>'
+                     f'<td data-label="Cuisine">{e(r.get("cuisine") or "–")}</td>'
+                     f'<td class="num" data-label="Tasting menu, per person">{price_cell(r)}</td></tr>')
+        heads = "".join(f'<th scope="col">{h}</th>' for h in ("Restaurant", "City", "Chef", "Cuisine", "Tasting menu, per person"))
+        return f'<div class="table-wrap"><table class="guide-table data three-list"><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>'
+
+    list_note = note(f"Stars from the {e(year)} MICHELIN Guide editions; each restaurant’s name links to its MICHELIN Guide page and its city to our prices there. "
+                     "Prices are the main dinner tasting menu per person in local currency, before service and drinks, with US dollars at recent exchange rates.")
+
+    def change_lists(keep):
+        gained, lost = three_star_changes(year, keep)
+        item = lambda r, text: (f'<li><strong>{e(r["name"])}</strong>, {e(place_name(r))}, {e(places[r["country"]]["name"])}'
+                                + (f" · {e(text)}" if text else "") + "</li>")
+        new_html = "".join(item(r, r.get("changeNote", "")) for r in gained) or "<li>None in the guides published so far this year.</li>"
+        lost_html = "".join(item(r, r.get("statusNote") or r.get("changeNote", "")) for r in lost) or "<li>None in the guides published so far this year.</li>"
+        return (f'<div class="change-lists"><div><h3>New three stars in {e(year)}</h3><ul>{new_html}</ul></div>'
+                f'<div><h3>Lost three stars in {e(year)}</h3><ul>{lost_html}</ul></div></div>')
+
+    blocks = {}
+    by_country = tally(live, lambda r: r["country"])
+    blocks["countries"] = counts_table([(places[c]["name"], places[c]["path"], n) for c, n in by_country.items()], "Country") + note(
+        f"Every Michelin-starred restaurant on The Starred Bill, which follows the current MICHELIN Guide edition for each country and territory "
+        f"({e(year)} or the latest before it). Tap a column heading to sort.")
+    by_state = tally([r for r in live if r["country"] == "usa"], us_state)
+    blocks["us-states"] = counts_table([(places[s]["name"], places[s]["path"], n) for s, n in by_state.items()], "State") + note(
+        "States and districts covered by a current MICHELIN Guide edition. Tap a column heading to sort.")
+    three = [r for r in live if r["stars"] == 3]
+    countries3 = sorted({r["country"] for r in three}, key=lambda c: (-sum(1 for r in three if r["country"] == c), places[c]["name"]))
+    jump = '<nav class="jump-links" aria-label="Jump to a country">' + "".join(
+        f'<a href="#three-{c}">{e(places[c]["name"])} <span>{sum(1 for r in three if r["country"] == c)}</span></a>' for c in countries3) + "</nav>"
+    sections = "".join(f'<h3 id="three-{c}">{e(places[c]["name"])}: {sum(1 for r in three if r["country"] == c)} three-star restaurant'
+                       f'{"s" if sum(1 for r in three if r["country"] == c) > 1 else ""}</h3>'
+                       + restaurant_table([r for r in three if r["country"] == c]) for c in countries3)
+    blocks["three-star-jump"] = jump
+    blocks["three-star"] = sections + list_note
+    blocks["three-star-uk"] = restaurant_table([r for r in three if r["country"] == "uk"]) + list_note
+    blocks["three-star-london"] = restaurant_table([r for r in three if in_london(r)]) + list_note
+    blocks["three-star-changes"] = change_lists(lambda r: True)
+    blocks["three-star-changes-uk"] = change_lists(lambda r: r["country"] == "uk")
+    blocks["three-star-changes-london"] = change_lists(in_london)
+    return blocks
+
+
 MONTH_NAMES = ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+
+
+KEYWORD_FILLER = {"a", "an", "the", "in", "is", "are", "there", "of"}
+
+
+def keyword_words(text):
+    """A phrase reduced to its words, so a keyword check ignores case, punctuation and small words ("what is michelin star" is found in "What is a Michelin star?")."""
+    return " " + " ".join(w for w in re.findall(r"[a-z0-9]+", text.lower().replace("’", "'").replace("'", "")) if w not in KEYWORD_FILLER) + " "
+
+
+def uk_date(d):
+    """2026-10-05 -> 5 October 2026 (guides in UK English)."""
+    return f"{int(d[8:10])} {MONTH_NAMES[int(d[5:7]) - 1]} {d[:4]}"
 
 
 def us_date(d):
@@ -961,11 +1176,19 @@ def us_date(d):
     return f"{MONTH_NAMES[int(d[5:7]) - 1]} {int(d[8:10])}, {d[:4]}"
 
 
-def guide_text(text, stats):
-    """Fill in {{figures}} and turn <a data-guide="name"> into a link once that guide exists (plain text until then)."""
+def guide_text(text, stats, blocks=None):
+    """Fill in {{figures}} and {{table:name}} blocks, and turn <a data-guide="name"> into a link once that guide exists (plain text until then)."""
+    # A table on a line of its own may arrive wrapped in <p> from the editor; a table can't sit inside a paragraph.
+    text = re.sub(r"(?:<p>\s*)?\{\{table:([\w-]+)\}\}(?:\s*</p>)?", lambda m: (blocks or {}).get(m.group(1), m.group(0)), text)
     text = re.sub(r"\{\{(\w+)\}\}", lambda m: e(stats[m.group(1)]) if m.group(1) in stats else m.group(0), text)
     return re.sub(r'<a data-guide="([\w-]+)">(.*?)</a>',
                   lambda m: f'<a href="/guides/{m.group(1)}/">{m.group(2)}</a>' if m.group(1) in guides else m.group(2), text)
+
+
+# The order of the Guides page for guides published the same day: the pillar first, then as the content briefs number them.
+GUIDE_ORDER = ("what-is-a-michelin-star", "how-restaurants-get-a-michelin-star", "michelin-stars-by-country", "green-michelin-star",
+               "bib-gourmand-vs-michelin-star", "three-michelin-star-restaurants", "three-michelin-star-restaurants-london",
+               "three-michelin-star-restaurants-uk")
 
 
 def build_guides():
@@ -973,16 +1196,23 @@ def build_guides():
     if not guides:
         return
     stats = guide_stats()
+    blocks = guide_blocks(stats)
     data = as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES})
     home_crumb = '<a href="/">All destinations</a>'
     for g in guides.values():
         path = f"/guides/{g['id']}/"
-        body = guide_text(g["body"], stats)
+        body = guide_text(g["body"], stats, blocks)
+        for leftover in sorted(set(re.findall(r"\{\{[\w:-]+\}\}", body))):
+            print(f"  Guide {g['id']}: {leftover} isn't a figure or table the build knows, so it shows as written")
+        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", " ".join([g["title"], g["h1"], body] + [f["q"] + " " + f["a"] for f in g["faq"]]))).lower()
+        missing = [k for k in g["keywords"] if keyword_words(k) not in keyword_words(text)]
+        if missing:
+            print(f"  Guide {g['id']}: these keywords don't appear word for word: " + "; ".join(missing))
         faqs = [{"q": guide_text(f["q"], stats), "a": guide_text(f["a"], stats)} for f in g["faq"]]
         faq_html = ('<section class="guide-faq" id="faq"><h2>Frequently asked questions</h2>' + "".join(
             f'<h3>{f["q"]}</h3><p>{f["a"]}</p>' for f in faqs) + "</section>") if faqs else ""
         main = (f'<article lang="{e(g.get("lang", "en-US"))}">\n<h1>{e(g["h1"])}</h1>\n'
-                f'<p class="prose-date">Updated {us_date(g["updated"])} · Star counts and prices checked {stats["checked"]}</p>\n'
+                f'<p class="prose-date">Updated {(uk_date if g.get("lang") == "en-GB" else us_date)(g["updated"])} · Star counts and prices checked {stats["checked"]}</p>\n'
                 f'{body}\n{faq_html}\n</article>')
         strip = lambda t: re.sub(r"<[^>]+>", "", t)
         graph = [
@@ -992,6 +1222,7 @@ def build_guides():
                 {"@type": "ListItem", "position": 3, "name": g["h1"], "item": SITE_URL + path}]},
             {"@type": "Article", "headline": g["h1"], "description": g["description"], "inLanguage": g.get("lang", "en-US"),
              "datePublished": g["published"], "dateModified": g["updated"], "mainEntityOfPage": SITE_URL + path,
+             **({"keywords": ", ".join(g["keywords"])} if g["keywords"] else {}),
              "image": SITE_URL + "/og/default.png",
              "author": {"@type": "Organization", "name": "The Starred Bill", "url": SITE_URL + "/"},
              "publisher": {"@type": "Organization", "name": "The Starred Bill", "url": SITE_URL + "/",
@@ -1003,16 +1234,17 @@ def build_guides():
         write(path, render("guide.html", {
             "title": e(g["title"]), "description": e(g["description"]), "canonical": SITE_URL + path, "htmlLang": e(g.get("lang", "en-US")),
             "ogType": "article", "ogAlt": e(g["h1"]),
+            "keywordsMeta": f'<meta name="keywords" content="{e(", ".join(g["keywords"]))}">\n' if g["keywords"] else "",
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": home_crumb + '<a href="/guides/">Guides</a>' + f'<span aria-current="page">{e(g["h1"])}</span>',
             "main": main, "data": data,
         }))
     cards = "".join(f'<li><a href="/guides/{g["id"]}/"><strong>{e(g["h1"])}</strong></a><span>{e(g["summary"])}</span></li>'
-                    for g in sorted(guides.values(), key=lambda g: g["published"]))
+                    for g in sorted(guides.values(), key=lambda g: (g["published"], GUIDE_ORDER.index(g["id"]) if g["id"] in GUIDE_ORDER else len(GUIDE_ORDER), g["id"])))
     write("/guides/", render("guide.html", {
         "title": "Michelin Guides and Explainers · The Starred Bill",
         "description": "Plain-English explainers on Michelin stars: what they mean, how restaurants earn them and what a starred meal costs.",
-        "canonical": SITE_URL + "/guides/", "htmlLang": "en", "ogType": "website", "ogAlt": "The Starred Bill guides",
+        "canonical": SITE_URL + "/guides/", "htmlLang": "en", "ogType": "website", "ogAlt": "The Starred Bill guides", "keywordsMeta": "",
         "crumbs": home_crumb + '<span aria-current="page">Guides</span>',
         "main": f'<h1>Guides</h1>\n<p>Explainers on Michelin stars, written to go with the prices on The Starred Bill.</p>\n<ul class="guide-list">{cards}</ul>',
         "data": data,

@@ -260,6 +260,7 @@ content:
           values:
             - { value: michelin, label: "MICHELIN Guide" }
             - { value: site, label: "Restaurant's website" }
+            - { value: press, label: "Reviews, interviews or booking sites" }
             - { value: manual, label: "Typed by hand" }
       - name: diets
         label: Dietary options
@@ -1634,9 +1635,14 @@ content:
         label: Spelling
         description: en-US for US spelling, en-GB for UK spelling.
         type: string
+      - name: keywords
+        label: Target keywords
+        description: The searches this page is written for, from its content brief, the main one first. They go into the page's keywords tags, and the build lists any that don't appear in the title, headline, article or FAQ.
+        type: string
+        list: true
       - name: body
         label: Article
-        description: "Figures in double curly brackets, like {{n3}} or {{price1}}, are filled in from the restaurant data when the site is built (README lists them). A link written as <a data-guide=\"name\">…</a> becomes a link once that guide exists."
+        description: "Figures in double curly brackets, like {{n3}} or {{price1}}, are filled in from the restaurant data when the site is built (README lists them). A line holding just {{table:name}}, like {{table:countries}}, becomes a table built from the restaurant data (README lists them). A link written as <a data-guide=\"name\">…</a> becomes a link once that guide exists."
         type: rich-text
         required: true
       - name: faq

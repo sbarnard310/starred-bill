@@ -1,0 +1,28 @@
+{
+  "id": "three-michelin-star-restaurants-london",
+  "title": "3 Michelin Star Restaurants in London (2026 List)",
+  "description": "Every 3 Michelin star restaurant in London, with chef, cuisine and tasting menu price, plus booking tips and this year’s star changes.",
+  "h1": "3 Michelin Star Restaurants in London",
+  "summary": "All of London’s three-star restaurants, with chefs, tasting menu prices and booking tips.",
+  "published": "2026-10-05",
+  "updated": "2026-10-05",
+  "lang": "en-GB",
+  "keywords": [
+    "3 michelin star restaurants london"
+  ],
+  "body": "<p class=\"lede\">London has {{n3London}} restaurants with three Michelin stars in the {{guideYear}} MICHELIN Guide Great Britain & Ireland, the most of any city in the UK. Dinner tasting menus at London’s three-star restaurants start at {{cheapest3LondonPrice}} per person, at {{cheapest3London}}. List last checked {{checked}}.</p>\n<p>Here are all of the 3 Michelin star restaurants in London, with their chefs, cuisine and what the main tasting menu costs. Each name links to the restaurant’s page on the MICHELIN Guide. For the rest of the city’s {{londonTotal}} starred restaurants, with lunch and wine pairing prices, see our <a href=\"/uk/england/london/\">London page</a>.</p>\n\n<h2 id=\"list\">Every three-star restaurant in London</h2>\n{{table:three-star-london}}\n\n<h2 id=\"changes\">New and lost three stars in London in {{guideYear}}</h2>\n{{table:three-star-changes-london}}\n\n<h2 id=\"booking\">How to book</h2>\n<ul>\n<li><strong>Know the release date.</strong> Most of these restaurants open bookings a set number of weeks or months ahead, or on a fixed day each month. Their own websites say when.</li>\n<li><strong>Book direct.</strong> Use the restaurant’s website or the platform it links to, and join the waiting list if the date you want has gone; cancellations come up, especially a day or two before.</li>\n<li><strong>Expect a deposit.</strong> Many take a deposit or the full menu price when you book, with firm cancellation terms.</li>\n<li><strong>Try lunch.</strong> Where there is a lunch menu, it is usually the cheapest way in. Our destination pages list lunch prices wherever a restaurant offers one.</li>\n<li><strong>Check the service charge.</strong> UK menu prices usually include VAT, and most restaurants add a discretionary service charge of 12.5% to 15% on top.</li>\n</ul>\n<p>For three-star restaurants elsewhere in the country, including Bray and the Lake District, see <a data-guide=\"three-michelin-star-restaurants-uk\">3 Michelin star restaurants in the UK</a>, and for the world, <a data-guide=\"three-michelin-star-restaurants\">every three-Michelin-star restaurant</a>.</p>",
+  "faq": [
+    {
+      "q": "How many 3 Michelin star restaurants are there in London?",
+      "a": "{{n3London}}, in the {{guideYear}} MICHELIN Guide Great Britain & Ireland. London has {{londonTotal}} starred restaurants in all."
+    },
+    {
+      "q": "What is the cheapest three-star restaurant in London?",
+      "a": "Of the London three-star restaurants that publish a dinner tasting menu price, {{cheapest3London}} is the cheapest, at {{cheapest3LondonPrice}} per person before service and drinks."
+    },
+    {
+      "q": "Does London have the most three-star restaurants in the UK?",
+      "a": "Yes. London has {{n3London}} of the UK’s {{n3UK}} three-star restaurants."
+    }
+  ]
+}

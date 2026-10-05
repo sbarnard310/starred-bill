@@ -1,0 +1,17 @@
+{
+  "name": "Le GV",
+  "city": "malta",
+  "area": "Sliema",
+  "address": "Thornton Street, SLM 3143, Sliema",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 143,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://legv.mt",
+  "lat": 35.9096819,
+  "lng": 14.5087134,
+  "placeId": "ChIJrfFSmnFFDhMRL1bitQRASIA"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Noni",
+  "city": "malta",
+  "area": "Valletta",
+  "address": "211 Republic Street, VLT 1118, Valletta",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 755,
+  "dinnerType": "menu",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://noni.com.mt/wp-content/uploads/2023/12/Noni_Tasting-Menus-NOV23_Web.pdf",
+  "wine": 75,
+  "website": "https://noni.com.mt/",
+  "lat": 35.9005092,
+  "lng": 14.5160236,
+  "placeId": "ChIJYTUJgilFDhMRGiVIvsQ7HyA"
+}

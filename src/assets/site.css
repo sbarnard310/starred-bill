@@ -294,6 +294,18 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .rc-foot { margin-top: 3px; text-align: center; font-size: .66rem; color: var(--rc-muted); line-height: 1.4; }
 .rc-foot .src { color: var(--rc-link); text-underline-offset: 2px; }
 .receipt .notice { justify-self: start; color: var(--rc-ink); background: color-mix(in srgb, #B3862B 26%, var(--rc-paper)); font-family: var(--font-body); }
+/* The wishlist as one bill (homepage): the same paper, one line per saved restaurant, then subtotal, estimated extras and total. */
+.bill-wrap { margin-top: 28px; max-width: 540px; }
+.bill-intro { color: var(--muted); margin: -4px 0 12px; max-width: 60ch; }
+.bill-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-bottom: 14px; }
+.bill-wine { display: inline-flex; align-items: center; gap: 6px; font-size: .9rem; cursor: pointer; }
+.bill-wine input { width: 16px; height: 16px; accent-color: var(--green); }
+.receipt.bill { display: block; font-size: .84rem; filter: drop-shadow(0 2px 3px rgba(0, 0, 0, .08)); }
+.receipt.bill .rc-paper { padding: 14px 16px 8px; gap: 5px; }
+.bill-line .rc-k { white-space: normal; overflow-wrap: anywhere; }
+.bill-line.out .rc-k { color: var(--rc-muted); }
+.rc-sub { margin-top: 4px; padding-top: 7px; border-top: 1px dashed var(--rc-rule); border-radius: 0; }
+.receipt.bill .rc-total { font-size: .95rem; }
 
 /* Map */
 .map-canvas { width: 100%; height: 540px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; display: grid; place-items: center; }

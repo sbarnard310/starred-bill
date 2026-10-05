@@ -665,7 +665,7 @@ def build_home():
         "knownIds": [r["id"] for r in starred],
         "countries": countries, "groups": groups, "soon": soon, "noStars": no_star_countries(),
         "places": [dict(link(p), type=p["type"]) for p in by_size(pages)],
-        "currencies": CURRENCIES, "updated": site.get("updated", ""),
+        "currencies": CURRENCIES, "switchable": currency_data.get("switchable", []), "updated": site.get("updated", ""),
         "worldUrl": world_url, "worldTotal": world_total, "languages": DEFAULT_LANGUAGES,
     }
     countries.sort(key=lambda c: c["name"])  # A to Z (the page re-sorts in the visitor's language)
@@ -695,6 +695,18 @@ def near_where(r):
 
 
 NEAR_DIETS = {d: i for i, d in enumerate(DIETS)}
+
+
+def build_bill_data(starred):
+    """/data/bill.json: the lunch and wine prices the homepage's wishlist bill adds up (the homepage itself carries only dinner).
+    One row per restaurant with any of them, keyed by id; noLunch is 1 when there's no lunch service. Loaded only when the wishlist has something in it."""
+    cols = ["lunch", "lunchType", "noLunch", "wine", "lunchWine"]
+    rows = {}
+    for r in starred:
+        row = [r.get("lunch"), r.get("lunchType", "menu"), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine")]
+        if row[0] is not None or row[2] or row[3] is not None or row[4] is not None:
+            rows[r["id"]] = row
+    (OUT / "data" / "bill.json").write_bytes(as_json({"cols": cols, "r": rows}).encode("utf-8"))
 
 
 def build_near_me(starred):
@@ -939,6 +951,7 @@ for p in pages:
     build_place(p)
 build_home()
 build_near_me([r for r in restaurants if not r.get("status")])
+build_bill_data([r for r in restaurants if not r.get("status")])
 build_account_pages()
 build_guides()
 build_redirects()

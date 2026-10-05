@@ -161,8 +161,66 @@ function renderWishlist() {
   $("wishList").innerHTML = where + '<ul class="wish-list">' + list.map((r) =>
     '<li><a class="wl-name" href="' + cityLink(r) + '">' + esc(nameOf(r)) + '</a><span class="wl-meta">' + starIcons(r.stars) + " " + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + "</span>" +
     '<span class="wl-price num">' + esc(r.dinner == null ? "–" : localMoney(r.dinner, r.cur)) + "</span>" +
-    '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '" aria-label="' + esc(t("wishRemove", { name: nameOf(r) })) + '">' + t("wishRemoveShort") + "</button></li>").join("") + "</ul>";
+    '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '" aria-label="' + esc(t("wishRemove", { name: nameOf(r) })) + '">' + t("wishRemoveShort") + "</button></li>").join("") + "</ul>" +
+    '<div class="bill-wrap" id="bill"></div>';
+  renderBill(list);
 }
+
+// ---------- The wishlist as one bill ----------
+// Every saved restaurant's meal (and wine pairing, if chosen) on one till receipt, with each country's usual service, tax and tips
+// estimated on top (SERVICE in common.js). Lunch and wine prices come from /data/bill.json, loaded the first time it's needed.
+const BILL_KEY = "starredbill-bill";
+const bill = Object.assign({ meal: "dinner", wine: false, cur: "" }, (() => { try { return JSON.parse(localStorage.getItem(BILL_KEY)) || {}; } catch (e) { return {}; } })());
+let billData = null, billLoading = null;
+const saveBill = () => { try { localStorage.setItem(BILL_KEY, JSON.stringify(bill)); } catch (e) { /* private window: the choice lasts for this visit */ } };
+const billRate = (from) => DATA.currencies[bill.cur].perUSD / DATA.currencies[from].perUSD;
+const billMoney = (n, approx) => (approx ? "≈" : "") + localMoney(approx ? Math.round(n) : Math.round(n * 100) / 100, bill.cur);
+const billSep = '<span class="sr-only">, </span>';
+function billItem(r) {
+  const b = (billData && billData.r[r.id]) || [null, "menu", 0, null, null];
+  const lunch = bill.meal === "lunch";
+  const price = lunch ? (b[2] ? null : b[0]) : r.dinner, type = lunch ? (b[1] || "menu") : (r.dinnerType || "menu");
+  const why = lunch && b[2] ? "billNoLunch" : price == null ? "billNoPrice" : type === "main" ? "billPerMain" : "";
+  const wine = bill.wine ? (lunch ? b[4] : b[3]) : null;
+  const own = why ? 0 : price + (wine || 0), rate = billRate(r.cur);
+  const [kind, pct] = SERVICE[r.country] || ["before", 0];
+  return { r, why, amount: own * rate, extra: own * rate * serviceAdd(r.country), approx: r.cur !== bill.cur, noWine: bill.wine && !why && wine == null, kind, pct };
+}
+function renderBill(list) {
+  const box = $("bill");
+  if (!box) return;
+  if (!billData) {
+    if (!billLoading) billLoading = fetch("/data/bill.json").then((res) => res.json()).then((d) => { billData = d; renderWishlist(); }).catch(() => { billData = { r: {} }; renderWishlist(); });
+    box.innerHTML = "";
+    return;
+  }
+  const curs = [...new Set(list.map((r) => r.cur))];
+  const choices = DATA.switchable.slice();
+  if (curs.length === 1 && !choices.includes(curs[0])) choices.unshift(curs[0]);
+  if (!choices.includes(bill.cur)) bill.cur = curs.length === 1 && choices.includes(curs[0]) ? curs[0] : choices.includes("GBP") ? "GBP" : choices[0];
+  const items = list.map(billItem), counted = items.filter((x) => !x.why);
+  const approx = counted.some((x) => x.approx);
+  const sub = counted.reduce((a, x) => a + x.amount, 0), extra = counted.reduce((a, x) => a + x.extra, 0);
+  const kindNote = (x) => x.kind === "included" ? t("billIncluded") : x.kind === "tax" ? t("billTax") : !x.pct ? "" :
+    t({ before: "billBefore", plusplus: "billPlus", taxtip: "billTaxTip", tip: "billTip" }[x.kind], { p: x.pct.toLocaleString("en-GB") });
+  const line = (x) => '<span class="rc-line bill-line' + (x.why ? " out" : "") + '"><span class="rc-k">' + esc(nameOf(x.r)) + '</span><span class="rc-dots" aria-hidden="true"></span>' + billSep +
+    '<span class="rc-v' + (x.why ? " muted" : "") + '">' + (x.why ? "–" : billMoney(x.amount, x.approx)) + "</span>" + billSep +
+    '<span class="rc-note">' + esc([whereOf(x.r), x.why ? t(x.why) : kindNote(x), x.noWine ? t("rcptNoPairing") : ""].filter(Boolean).join(" · ")) + "</span></span>";
+  const seg = (attr, opts, on) => '<div class="seg" role="group">' + opts.map(([v, label]) => '<button type="button" data-' + attr + '="' + esc(v) + '" aria-pressed="' + (v === on) + '">' + esc(label) + "</button>").join("") + "</div>";
+  box.innerHTML = '<h3 class="sub-head">' + esc(t("billTitle")) + '</h3><p class="bill-intro">' + esc(t("billIntro")) + "</p>" +
+    '<div class="bill-controls">' + seg("billmeal", [["dinner", t("mealDinner")], ["lunch", t("mealLunch")]], bill.meal) +
+    '<label class="bill-wine"><input type="checkbox" id="billWine"' + (bill.wine ? " checked" : "") + "> " + esc(t("billWine")) + "</label>" +
+    seg("billcur", choices.map((c) => [c, DATA.currencies[c].symbol.trim()]), bill.cur) + "</div>" +
+    '<div class="receipt bill"><span class="rc-paper">' +
+    '<span class="rc-head" aria-hidden="true">' + esc(t("billHead", { meal: t(bill.meal === "lunch" ? "mealLunch" : "mealDinner") })) + "</span>" +
+    items.map(line).join("") +
+    (counted.length ? '<span class="rc-line rc-sub"><span class="rc-k">' + esc(t("billSubtotal")) + '</span><span class="rc-dots" aria-hidden="true"></span>' + billSep + '<span class="rc-v">' + billMoney(sub, approx) + "</span></span>" +
+      '<span class="rc-line"><span class="rc-k">' + esc(t("billExtras")) + '</span><span class="rc-dots" aria-hidden="true"></span>' + billSep + '<span class="rc-v">' + billMoney(extra, approx) + "</span></span>" +
+      '<span class="rc-line rc-total"><span class="rc-k">' + esc(t("billTotal")) + '</span><span class="rc-dots" aria-hidden="true"></span>' + billSep + '<span class="rc-v">' + billMoney(sub + extra, approx) + "</span></span>" : "") +
+    '<span class="rc-foot">' + esc(t("billCount", { a: counted.length, b: items.length, n: items.length })) + "<br>" + esc(t("billFoot")) + (approx ? "<br>" + esc(t("billConverted")) : "") + "</span>" +
+    "</span></div>";
+}
+document.addEventListener("change", (e) => { if (e.target.id === "billWine") { bill.wine = e.target.checked; saveBill(); renderWishlist(); } });
 
 // ---------- Search ----------
 function renderResults() {
@@ -394,6 +452,9 @@ document.addEventListener("click", (e) => {
     if (world.near) world.near.relabel();
   } else if (el.dataset.mapstars) {
     homeState.stars = Number(el.dataset.mapstars); renderMapStars(); updateWorldMap(true);
+  } else if (el.dataset.billmeal || el.dataset.billcur) {
+    if (el.dataset.billmeal) bill.meal = el.dataset.billmeal; else bill.cur = el.dataset.billcur;
+    saveBill(); renderWishlist();
   } else if (el.dataset.unwish) {
     setWishlist(loadWishlist().filter((x) => x !== el.dataset.unwish)); renderWishlist();
   }

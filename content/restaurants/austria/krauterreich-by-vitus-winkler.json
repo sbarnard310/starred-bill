@@ -1,0 +1,19 @@
+{
+  "name": "Kräuterreich by Vitus Winkler",
+  "city": "salzburg",
+  "area": "Sankt Veit im Pongau",
+  "address": "Kirchweg 2, 5621, Sankt Veit im Pongau",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 40,
+  "dinnerType": "menu",
+  "dinner": 238,
+  "dinnerNote": "Tasting menu (other menus from €178)",
+  "sourceType": "site",
+  "source": "https://www.sonnhof-vituswinkler.at/de/kulinarik/gourmetrestaurant/",
+  "website": "https://www.sonnhof-vituswinkler.at/",
+  "lat": 47.32784,
+  "lng": 13.15309,
+  "placeId": "ChIJB_3KpP_ZdkcR57z8bOAK104"
+}

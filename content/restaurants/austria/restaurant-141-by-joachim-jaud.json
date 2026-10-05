@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant 141 by Joachim Jaud",
+  "city": "tirol",
+  "area": "Mieming",
+  "address": "Obermieming 141, 6414, Mieming",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 42,
+  "dinnerType": "menu",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu (other menus from €194)",
+  "sourceType": "site",
+  "source": "https://restaurant-141.at/",
+  "website": "https://restaurant-141.at/",
+  "lat": 47.3076251,
+  "lng": 10.9869243,
+  "placeId": "ChIJAVokL0QfnUcRz1NDS8qRySg"
+}

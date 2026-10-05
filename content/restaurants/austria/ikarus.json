@@ -1,0 +1,19 @@
+{
+  "name": "Ikarus",
+  "city": "salzburg",
+  "address": "Wilhelm-Spazier-Straße 7a, 5020, Salzburg",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 580,
+  "dinnerType": "menu",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu (other menus from €205)",
+  "sourceType": "site",
+  "source": "https://www.hangar-7.com/de/kulinarik/restaurant-ikarus",
+  "wine": 225,
+  "website": "https://www.hangar-7.com/de/",
+  "lat": 47.7935688,
+  "lng": 13.0078642,
+  "placeId": "ChIJvTsynjyQdkcR10NE96LAmKc"
+}

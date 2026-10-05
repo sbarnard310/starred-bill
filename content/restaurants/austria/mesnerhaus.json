@@ -1,0 +1,17 @@
+{
+  "name": "Mesnerhaus",
+  "city": "salzburg",
+  "area": "Mauterndorf",
+  "address": "Markt 56, 5570, Mauterndorf",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.5,
+  "reviews": 214,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mesnerhaus.at",
+  "lat": 47.133416,
+  "lng": 13.6785494,
+  "placeId": "ChIJ_1RTQUrDcEcR8Af10VI3l2A"
+}

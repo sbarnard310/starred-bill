@@ -1,0 +1,16 @@
+{
+  "name": "TIAN",
+  "city": "vienna",
+  "address": "Himmelpfortgasse 23, 1010, Vienna",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "rating": 4.6,
+  "reviews": 952,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tian-restaurant.com/",
+  "lat": 48.20523,
+  "lng": 16.3744339,
+  "placeId": "ChIJtzt5cZ4HbUcRklnIDmBY1s4"
+}

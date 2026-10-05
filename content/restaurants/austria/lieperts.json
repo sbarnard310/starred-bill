@@ -1,0 +1,20 @@
+{
+  "name": "Lieperts",
+  "city": "steiermark",
+  "area": "Leutschach an der Weinstraße",
+  "address": "Arnfelser Straße 2, 8463, Leutschach an der Weinstraße",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 284,
+  "dinnerType": "menu",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu (other menus from €159)",
+  "sourceType": "site",
+  "source": "https://www.lieperts.at/fine-dining-suedsteiermark/",
+  "wine": 59,
+  "website": "https://www.lieperts.at",
+  "lat": 46.6675112,
+  "lng": 15.4676211,
+  "placeId": "ChIJtcHEcMqZb0cRfN15RImk2UE"
+}

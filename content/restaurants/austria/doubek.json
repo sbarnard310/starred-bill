@@ -1,0 +1,16 @@
+{
+  "name": "Doubek",
+  "city": "vienna",
+  "address": "Kochgasse 13, 1080, Vienna",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 133,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantdoubek.at/",
+  "lat": 48.213172,
+  "lng": 16.3494292,
+  "placeId": "ChIJwwc1kVEHbUcRZ9fSL_0kobQ"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Gaumenkitzel",
+  "city": "niederosterreich",
+  "area": "Kirchberg am Wechsel",
+  "address": "Tratten 36, 2880, Kirchberg am Wechsel",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 27,
+  "dinnerType": "menu",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €66)",
+  "sourceType": "site",
+  "source": "https://www.molzbachhof.at/genuss/gourmetrestaurant/",
+  "website": "https://www.molzbachhof.at/genuss/gourmetrestaurant/",
+  "lat": 47.6001897,
+  "lng": 16.0021182,
+  "placeId": "ChIJW-apdeDXbUcRSQ4HDMuKZ4w"
+}

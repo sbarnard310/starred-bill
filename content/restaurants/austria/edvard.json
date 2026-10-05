@@ -1,0 +1,18 @@
+{
+  "name": "Edvard",
+  "city": "vienna",
+  "address": "Schottenring 24, 1010, Vienna",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 373,
+  "dinnerType": "menu",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu (other menus from €105)",
+  "sourceType": "site",
+  "source": "https://www.edvard-restaurant.com/wp-content/uploads/2026/09/Anantara_Palais_Hansen_Vienna_EDVARD_Menukarte_DI_DO_Sept-2026.pdf",
+  "website": "https://www.edvard-restaurant.com/en/",
+  "lat": 48.2162673,
+  "lng": 16.3681893,
+  "placeId": "ChIJxf5WUrsHbUcRh6M6GhzLoM0"
+}

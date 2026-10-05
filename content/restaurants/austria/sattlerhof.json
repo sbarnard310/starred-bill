@@ -1,0 +1,19 @@
+{
+  "name": "Sattlerhof",
+  "city": "steiermark",
+  "area": "Gamlitz",
+  "address": "Sernau 2a, 8462, Gamlitz",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.4,
+  "reviews": 263,
+  "dinnerType": "menu",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://sattlerhof.at/michelin-restaurant-suedsteiermark/",
+  "website": "https://sattlerhof.at/",
+  "lat": 46.7133295,
+  "lng": 15.5393249,
+  "placeId": "ChIJwydF8W6ib0cRbS99eCRFKmk"
+}

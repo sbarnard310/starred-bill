@@ -1,0 +1,16 @@
+{
+  "name": "Silvio Nickol Gourmet Restaurant",
+  "city": "vienna",
+  "address": "Coburgbastei 4, 1010, Vienna",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 214,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.palais-coburg.com/wine-dine/silvio-nickol",
+  "lat": 48.205937,
+  "lng": 16.3769455,
+  "placeId": "ChIJZTTxTPUHbUcRKCVviXL6orY"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Verdi",
+  "city": "oberosterreich",
+  "area": "Linz",
+  "address": "Pachmayrstraße 137, 4040, Linz",
+  "stars": 1,
+  "cuisine": "International",
+  "rating": 4.8,
+  "reviews": 637,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://verdi.at/restaurant/",
+  "lat": 48.3417578,
+  "lng": 14.2711746,
+  "placeId": "ChIJy7OdZL2Zc0cRxgdK4ky9zGk"
+}

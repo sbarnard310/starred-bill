@@ -1,0 +1,17 @@
+{
+  "name": "Guat'z Essen",
+  "city": "tirol",
+  "area": "Stumm",
+  "address": "Obere März 36, 6275, Stumm",
+  "stars": 1,
+  "cuisine": "Vegetarian",
+  "rating": 4.9,
+  "reviews": 276,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://guatzessen.at/permakultur",
+  "lat": 47.2972176,
+  "lng": 11.8866642,
+  "placeId": "ChIJeQjINsHbd0cRfD9s9A0z_Sg"
+}

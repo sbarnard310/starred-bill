@@ -1,0 +1,17 @@
+{
+  "name": "Guth",
+  "city": "vorarlberg",
+  "area": "Lauterach",
+  "address": "Wälderstraße 10, 6923, Lauterach",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 343,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantguth.at/",
+  "lat": 47.4718342,
+  "lng": 9.7310731,
+  "placeId": "ChIJVYGc8eASm0cRNpnmY_Ch1IA"
+}

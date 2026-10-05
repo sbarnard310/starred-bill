@@ -1,0 +1,20 @@
+{
+  "name": "Zur goldenen Birn",
+  "city": "steiermark",
+  "area": "Graz",
+  "address": "Leonhardstraße 8, 8010, Graz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 48,
+  "dinnerType": "menu",
+  "dinner": 208,
+  "dinnerNote": "Tasting menu (other menus from €180)",
+  "sourceType": "site",
+  "source": "https://www.zurgoldenenbirn.at/de/",
+  "wine": 100,
+  "website": "https://www.zurgoldenenbirn.at",
+  "lat": 47.0720331,
+  "lng": 15.4489632,
+  "placeId": "ChIJ4WoKuOFLbkcRoyKweJXVk08"
+}

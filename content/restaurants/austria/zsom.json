@@ -1,0 +1,16 @@
+{
+  "name": "Z'SOM",
+  "city": "vienna",
+  "address": "Gußhausstraße 12, 1040, Vienna",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 557,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://zsom-restaurant.at",
+  "lat": 48.1974846,
+  "lng": 16.3718646,
+  "placeId": "ChIJ6w5ZaIwHbUcR6ZoNnsCe_-k"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Tanglberg",
+  "city": "oberosterreich",
+  "area": "Vorchdorf",
+  "address": "Pettenbacher straße 3, 4655, Vorchdorf",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.9,
+  "reviews": 170,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tanglberg.at/",
+  "lat": 48.0033128,
+  "lng": 13.9235021,
+  "placeId": "ChIJU84HCe_6c0cRDXsqo8pY8JQ"
+}

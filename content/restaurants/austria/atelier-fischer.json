@@ -1,0 +1,17 @@
+{
+  "name": "Atelier Fischer",
+  "city": "salzburg",
+  "area": "Sankt Gilgen",
+  "address": "Ischler Straße 16, 5340, Sankt Gilgen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 3.7,
+  "reviews": 57,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.atelier-fischer.at",
+  "lat": 47.7657934,
+  "lng": 13.3677626,
+  "placeId": "ChIJ73ceizq7dkcRG3krSq7c9mU"
+}

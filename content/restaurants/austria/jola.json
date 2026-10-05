@@ -1,0 +1,16 @@
+{
+  "name": "JOLA",
+  "city": "vienna",
+  "address": "Salzgries 15, 1010, Vienna",
+  "stars": 1,
+  "cuisine": "Vegan",
+  "rating": 5,
+  "reviews": 484,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.jola.wien",
+  "lat": 48.2131766,
+  "lng": 16.3714017,
+  "placeId": "ChIJ69GzhyIHbUcRDWSajEacrpI"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Himmelreich",
+  "city": "niederosterreich",
+  "area": "Zaußenberg",
+  "address": "Ortsstraße 4, 3701, Zaußenberg",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 5,
+  "reviews": 130,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-himmelreich.at/",
+  "lat": 48.4305386,
+  "lng": 15.9803526,
+  "placeId": "ChIJiSTFRIZlbUcRBh30utKcULw"
+}

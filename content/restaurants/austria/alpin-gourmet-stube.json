@@ -1,0 +1,17 @@
+{
+  "name": "Alpin Gourmet Stube",
+  "city": "tirol",
+  "area": "Sankt Anton am Arlberg",
+  "address": "Sankt Jakober Dorfstraße 35, 6580, Sankt Anton am Arlberg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 24,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotel-gletscherblick.at/de/genuss/alpin-gourmet-stube/",
+  "lat": 47.1407338,
+  "lng": 10.2830469,
+  "placeId": "ChIJA5RUvhqxnEcRGo4T-Wr9_7k"
+}

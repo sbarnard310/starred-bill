@@ -1,0 +1,16 @@
+{
+  "name": "Amador",
+  "city": "vienna",
+  "address": "Grinzinger Straße 86, 1190, Vienna",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 501,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-amador.com/",
+  "lat": 48.2539188,
+  "lng": 16.3584526,
+  "placeId": "ChIJUV5dfRgGbUcRXHN5xPvHT-U"
+}

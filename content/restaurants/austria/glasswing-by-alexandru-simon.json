@@ -1,0 +1,16 @@
+{
+  "name": "Glasswing by Alexandru Simon",
+  "city": "vienna",
+  "address": "Kärntner Ring 8, 1010, Vienna",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.9,
+  "reviews": 192,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.glasswing-restaurant.com",
+  "lat": 48.2016444,
+  "lng": 16.3712178,
+  "placeId": "ChIJu7HT7lcHbUcRNhssXDUwWsI"
+}

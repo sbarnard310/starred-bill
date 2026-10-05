@@ -1,0 +1,16 @@
+{
+  "name": "Addiert",
+  "city": "vienna",
+  "address": "Franz-Josefs-Kai 43, 1010, Vienna",
+  "stars": 1,
+  "cuisine": "Korean Contemporary",
+  "rating": 4.8,
+  "reviews": 55,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.addiert.at/",
+  "lat": 48.2149448,
+  "lng": 16.3727213,
+  "placeId": "ChIJJ8DMBcIHbUcR9dqbZ_tUcWo"
+}

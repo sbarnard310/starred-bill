@@ -1,0 +1,19 @@
+{
+  "name": "Bergfried - Chefs Table",
+  "city": "tirol",
+  "area": "Tux",
+  "address": "Lanersbach 483, 6293, Tux",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 571,
+  "dinnerType": "menu",
+  "dinner": 222,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.bergfried.at/kulinarik/chefs-table-tastingmenue.html",
+  "website": "https://www.bergfried.at/kulinarik/chefs-table-tastingmenue.html",
+  "lat": 47.1541685,
+  "lng": 11.7242537,
+  "placeId": "ChIJY9CFqYXgd0cRYNZaDhtlOC8"
+}

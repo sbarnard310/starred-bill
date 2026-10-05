@@ -1,0 +1,16 @@
+{
+  "name": "Herzig",
+  "city": "vienna",
+  "address": "Schanzstrasse 14, 1150, Vienna",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 299,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-herzig.at/",
+  "lat": 48.2001109,
+  "lng": 16.3168728,
+  "placeId": "ChIJhx36L7EHbUcRgtI0wP_b_Vw"
+}

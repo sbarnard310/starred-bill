@@ -1,0 +1,17 @@
+{
+  "name": "Rote Wand Chef's Table",
+  "city": "vorarlberg",
+  "area": "Lech am Arlberg",
+  "address": "Zug 5, 6764, Lech am Arlberg",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 81,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.rotewand.com/gourmet/rote-wand-chefs-table/",
+  "lat": 47.2005705,
+  "lng": 10.1092578,
+  "placeId": "ChIJr9qNfEWnnEcRzDK3g7iDYhs"
+}

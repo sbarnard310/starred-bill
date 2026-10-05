@@ -1,0 +1,19 @@
+{
+  "name": "La Fenice",
+  "city": "vorarlberg",
+  "area": "Lech am Arlberg",
+  "address": "Tannberg 187, 6764, Lech am Arlberg",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.6,
+  "reviews": 11,
+  "dinnerType": "menu",
+  "dinner": 235,
+  "dinnerNote": "Tasting menu (other menus from €155)",
+  "sourceType": "site",
+  "source": "https://www.arlberghotel.at/wp-content/uploads/Lafenice_DE_Juli26.pdf",
+  "website": "https://www.arlberghotel.at/de/kulinarik/la-fenice/",
+  "lat": 47.2083376,
+  "lng": 10.1413176,
+  "placeId": "ChIJBzDY8vannEcR6XBy_uXkoT8"
+}

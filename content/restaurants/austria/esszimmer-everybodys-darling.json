@@ -1,0 +1,16 @@
+{
+  "name": "Esszimmer - Everybody's Darling",
+  "city": "vienna",
+  "address": "Tuchlauben 22, 1010, Vienna",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.2,
+  "reviews": 374,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://everybodysdarling.at/esszimmer/",
+  "lat": 48.2108907,
+  "lng": 16.3717837,
+  "placeId": "ChIJz_gBHs0HbUcR8sc3K6dfT7c"
+}

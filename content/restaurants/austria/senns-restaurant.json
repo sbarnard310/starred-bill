@@ -1,0 +1,19 @@
+{
+  "name": "SENNS.Restaurant",
+  "city": "salzburg",
+  "address": "Söllheimerstrasse 16, 5020, Salzburg",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 249,
+  "dinnerType": "menu",
+  "dinner": 499,
+  "dinnerNote": "Tasting menu (other menus from €225)",
+  "sourceType": "site",
+  "source": "https://www.senns.restaurant/de",
+  "wine": 349,
+  "website": "https://www.senns.restaurant/de",
+  "lat": 47.8361594,
+  "lng": 13.063525,
+  "placeId": "ChIJoXYp0vWadkcRuYv8twSPchA"
+}

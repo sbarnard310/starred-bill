@@ -1,0 +1,17 @@
+{
+  "name": "s'kammerli",
+  "city": "tirol",
+  "area": "Nauders",
+  "address": "Nauders 196, 6543, Nauders",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 30,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kammerli.com/",
+  "lat": 46.890608,
+  "lng": 10.50109,
+  "placeId": "ChIJh1pePHIzg0cRWGxXRLu9FlA"
+}

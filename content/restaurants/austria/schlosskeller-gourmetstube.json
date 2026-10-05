@@ -1,0 +1,18 @@
+{
+  "name": "Schlosskeller Gourmetstube",
+  "city": "steiermark",
+  "area": "Leibnitz",
+  "address": "Seggaubergstraße 5, 8430, Leibnitz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "dinnerType": "menu",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://www.schlosskellersuedsteiermark.at/",
+  "wine": 60,
+  "website": "https://www.schlosskellersuedsteiermark.at/",
+  "lat": 46.7782445,
+  "lng": 15.5243218,
+  "placeId": "ChIJbTg0SQOjb0cRdt17J7m5bVM"
+}

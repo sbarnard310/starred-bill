@@ -1,0 +1,18 @@
+{
+  "name": "Mraz & Sohn",
+  "city": "vienna",
+  "address": "Wallensteinstraße 59, 1200, Vienna",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 812,
+  "dinnerType": "menu",
+  "dinner": 188,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.mrazundsohn.at/products/menu",
+  "website": "https://www.mrazundsohn.at/",
+  "lat": 48.2313078,
+  "lng": 16.376268,
+  "placeId": "ChIJ-XQUQE0GbUcReMwA7OY540U"
+}

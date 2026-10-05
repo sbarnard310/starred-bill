@@ -1,0 +1,17 @@
+{
+  "name": "Rossbarth",
+  "city": "oberosterreich",
+  "area": "Linz",
+  "address": "Klammstraße 7, 4020, Linz",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 243,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://rossbarth.at/",
+  "lat": 48.3025679,
+  "lng": 14.2832683,
+  "placeId": "ChIJOZ-cFYOXc0cRFqfGxf_7AK4"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Hubertusstube",
+  "city": "tirol",
+  "area": "Neustift im Stubaital",
+  "address": "Scheibe 44, 6167, Neustift im Stubaital",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.3,
+  "reviews": 3,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotel-jagdhof.at/hubertusstube",
+  "lat": 47.1082718,
+  "lng": 11.2996497,
+  "placeId": "ChIJCQv8jbZHnUcRkUgKFRMvR6c"
+}

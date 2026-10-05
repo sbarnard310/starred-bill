@@ -1,0 +1,18 @@
+{
+  "name": "Beef Club",
+  "city": "tirol",
+  "area": "Fiss",
+  "address": "Laurschweg 28, 6533, Fiss",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 65,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://www.schlosshotel-fiss.com/de/gourmet/beef-club/",
+  "lat": 47.0552532,
+  "lng": 10.6105543,
+  "placeId": "ChIJrxTJeRbRnEcRyIKROMbkc6c"
+}

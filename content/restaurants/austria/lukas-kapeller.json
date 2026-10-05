@@ -1,0 +1,17 @@
+{
+  "name": "Lukas Kapeller",
+  "city": "oberosterreich",
+  "area": "Steyr",
+  "address": "Damberggasse 27, 4400, Steyr",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 18,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lukas-kapeller.at/restaurant/",
+  "lat": 48.0339875,
+  "lng": 14.4315961,
+  "placeId": "ChIJ9ZRxrETPc0cR7d1GBEU1NO8"
+}

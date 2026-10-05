@@ -1,0 +1,17 @@
+{
+  "name": "Mangold",
+  "city": "vorarlberg",
+  "area": "Lochau",
+  "address": "Pfänderstraße 3, 6911, Lochau",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 616,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-mangold.at/",
+  "lat": 47.5299154,
+  "lng": 9.7520133,
+  "placeId": "ChIJ9dYy8xUNm0cR1uU22sDSb5Y"
+}

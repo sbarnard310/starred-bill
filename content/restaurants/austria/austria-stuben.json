@@ -1,0 +1,19 @@
+{
+  "name": "Austria Stuben",
+  "city": "tirol",
+  "area": "Obergurgl",
+  "address": "Kressbrunnenweg 3, 6456, Obergurgl",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 5,
+  "reviews": 4,
+  "dinnerType": "menu",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://austria-bellevue.com/austria/wp-content/uploads/2026/08/04_austria_Gourmet_Menu_Einschubblatt-Sommer26_DE.pdf",
+  "website": "https://www.austriastuben.at",
+  "lat": 46.8713805,
+  "lng": 11.0288489,
+  "placeId": "ChIJ__DleFjNgkcRMzISQdlcMlQ"
+}

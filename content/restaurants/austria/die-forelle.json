@@ -1,0 +1,17 @@
+{
+  "name": "Die Forelle",
+  "city": "karnten",
+  "area": "Weissensee",
+  "address": "Techendorf 80, 9762, Weissensee",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 245,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.dieforelle.at",
+  "lat": 46.7175735,
+  "lng": 13.2896656,
+  "placeId": "ChIJa3Bx5PuocEcRKIdAiCxRvMU"
+}

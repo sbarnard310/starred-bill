@@ -1,0 +1,20 @@
+{
+  "name": "Ullrs Gourmetstube",
+  "city": "tirol",
+  "area": "Sankt Anton am Arlberg",
+  "address": "Alte Arlbergstraße 2, 6580, Sankt Anton am Arlberg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 14,
+  "dinnerType": "menu",
+  "dinner": 220,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.ullrhaus.at/de/restaurant-st-anton/gourmetstube/",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://www.ullrhaus.at/de/restaurant-st-anton/gourmetstube/",
+  "lat": 47.1273702,
+  "lng": 10.2629842,
+  "placeId": "ChIJJXTIpnWxnEcR-j0RjPmzoSk"
+}

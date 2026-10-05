@@ -1,0 +1,20 @@
+{
+  "name": "Geschwister Rauch - Restaurant",
+  "city": "steiermark",
+  "area": "Bad Gleichenberg",
+  "address": "Trautmannsdorf 6, 8343, Bad Gleichenberg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 624,
+  "dinnerType": "menu",
+  "dinner": 102,
+  "dinnerNote": "Tasting menu (other menus from €55)",
+  "sourceType": "site",
+  "source": "https://www.geschwister-rauch.at/fileadmin/user_upload/Speisekarten/Wirtshaus_Speisekarte.pdf",
+  "wine": 68,
+  "website": "https://www.geschwister-rauch.at/",
+  "lat": 46.8732383,
+  "lng": 15.8830557,
+  "placeId": "ChIJNabo8qAGb0cRLZ3bQJIJBCs"
+}

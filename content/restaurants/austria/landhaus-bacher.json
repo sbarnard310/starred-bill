@@ -1,0 +1,17 @@
+{
+  "name": "Landhaus Bacher",
+  "city": "niederosterreich",
+  "area": "Mautern an der Donau",
+  "address": "Südtiroler Platz 2, 3512, Mautern an der Donau",
+  "stars": 2,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 631,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.landhaus-bacher.at",
+  "lat": 48.3931154,
+  "lng": 15.5793549,
+  "placeId": "ChIJ_0MTndapbUcRgApdMHFuuwI"
+}

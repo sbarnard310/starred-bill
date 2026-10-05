@@ -1,0 +1,19 @@
+{
+  "name": "Döllerer",
+  "city": "salzburg",
+  "area": "Golling an der Salzach",
+  "address": "Markt 56, 5440, Golling an der Salzach",
+  "stars": 2,
+  "cuisine": "Innovative",
+  "rating": 4.8,
+  "reviews": 119,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "sourceType": "site",
+  "source": "https://www.doellerer.at/restaurant/menues-karte/",
+  "website": "https://www.doellerer.at",
+  "lat": 47.5972979,
+  "lng": 13.1677057,
+  "placeId": "ChIJKbDmFhfAdkcRG2Qt7Rua3WY"
+}

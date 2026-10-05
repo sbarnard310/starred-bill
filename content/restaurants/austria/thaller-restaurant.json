@@ -1,0 +1,17 @@
+{
+  "name": "Thaller - Restaurant",
+  "city": "steiermark",
+  "area": "Sankt Veit am Vogau",
+  "address": "Am Kirchplatz 4, 8423, Sankt Veit am Vogau",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.6,
+  "reviews": 289,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.gasthaus-thaller.at/",
+  "lat": 46.7466243,
+  "lng": 15.6256799,
+  "placeId": "ChIJGT_XlxWhb0cRgjz_P6HkInA"
+}

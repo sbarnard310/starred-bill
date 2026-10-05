@@ -1,0 +1,19 @@
+{
+  "name": "Gannerhof",
+  "city": "tirol",
+  "area": "Innervillgraten",
+  "address": "Gasse 93, 9932, Innervillgraten",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.5,
+  "reviews": 173,
+  "dinnerType": "menu",
+  "dinner": 103,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.gannerhof.at/assets/downloads/gannerhof-preisliste_v24.pdf",
+  "website": "https://www.gannerhof.at/",
+  "lat": 46.8065609,
+  "lng": 12.3753849,
+  "placeId": "ChIJ-0H73Lp_d0cRbUJCO0L39F4"
+}

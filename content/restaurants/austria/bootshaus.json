@@ -1,0 +1,20 @@
+{
+  "name": "Bootshaus",
+  "city": "oberosterreich",
+  "area": "Traunkirchen",
+  "address": "Klosterplatz 4, 4801, Traunkirchen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 450,
+  "dinnerType": "menu",
+  "dinner": 219,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "site",
+  "source": "https://www.dastraunsee.at/restaurant-bootshaus",
+  "wine": 90,
+  "website": "https://www.dastraunsee.at/restaurant-bootshaus",
+  "lat": 47.8459854,
+  "lng": 13.7900377,
+  "placeId": "ChIJWbLqMYhWcUcRDq0vY1NlvBE"
+}

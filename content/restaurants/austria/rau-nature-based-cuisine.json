@@ -1,0 +1,20 @@
+{
+  "name": "RAU nature-based cuisine",
+  "city": "oberosterreich",
+  "area": "Großraming",
+  "address": "Pechgraben 23, 4463, Großraming",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 269,
+  "dinnerType": "menu",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "sourceType": "site",
+  "source": "https://www.im-rau.com/",
+  "wine": 110,
+  "website": "https://www.im-rau.com/",
+  "lat": 47.9161177,
+  "lng": 14.5368869,
+  "placeId": "ChIJ8QUA1OLSc0cR5S0emdDaKBI"
+}

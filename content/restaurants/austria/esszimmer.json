@@ -1,0 +1,16 @@
+{
+  "name": "Esszimmer",
+  "city": "salzburg",
+  "address": "Müllner Hauptstraße 33, 5020, Salzburg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 434,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.esszimmer.com/",
+  "lat": 47.8066955,
+  "lng": 13.0341933,
+  "placeId": "ChIJtabfwHGQdkcR0hwnIZ_OY6g"
+}

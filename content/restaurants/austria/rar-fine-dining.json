@@ -1,0 +1,19 @@
+{
+  "name": "RAR Fine Dining",
+  "city": "salzburg",
+  "area": "Maria Alm",
+  "address": "Hochkönigstraße 27, 5761, Maria Alm",
+  "stars": 1,
+  "cuisine": "Alpine",
+  "rating": 4.8,
+  "reviews": 1086,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €175)",
+  "sourceType": "site",
+  "source": "https://www.hochkoenigin.com/de/kulinarik/rar-fine-dining-restaurant/",
+  "website": "https://www.hochkoenigin.com/de/kulinarik/",
+  "lat": 47.4045006,
+  "lng": 12.9022686,
+  "placeId": "ChIJO1zkXcTjdkcRHz35IHmjOpY"
+}

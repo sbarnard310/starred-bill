@@ -1,0 +1,17 @@
+{
+  "name": "Ansitz 12",
+  "city": "tirol",
+  "area": "Lienz",
+  "address": "Schweizergasse 40, 9900, Lienz",
+  "stars": 1,
+  "cuisine": "Austrian",
+  "rating": 5,
+  "reviews": 41,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ansitz12.at/",
+  "lat": 46.8317467,
+  "lng": 12.7607227,
+  "placeId": "ChIJ55bbJkRdd0cRNZIMBSdMzZk"
+}

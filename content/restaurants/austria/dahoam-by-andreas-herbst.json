@@ -1,0 +1,20 @@
+{
+  "name": "dahoam by Andreas Herbst",
+  "city": "salzburg",
+  "area": "Leogang",
+  "address": "Rain 100, 5771, Leogang",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.9,
+  "reviews": 20,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €80)",
+  "sourceType": "site",
+  "source": "https://restaurant-dahoam.com/de/",
+  "wine": 80,
+  "website": "https://restaurant-dahoam.com/de/",
+  "lat": 47.4383683,
+  "lng": 12.7207056,
+  "placeId": "ChIJmaVuuvD_dkcR2h8tk5-gsS8"
+}

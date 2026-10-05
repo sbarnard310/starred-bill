@@ -1,0 +1,17 @@
+{
+  "name": "Die Weinbank - Restaurant",
+  "city": "steiermark",
+  "area": "Ehrenhausen",
+  "address": "Hauptstraße 44, 8461, Ehrenhausen",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 389,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://dieweinbank.at/",
+  "lat": 46.724348,
+  "lng": 15.5856935,
+  "placeId": "ChIJDQRxOoahb0cR4LOkEWMpfQQ"
+}

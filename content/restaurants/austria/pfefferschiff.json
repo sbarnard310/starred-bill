@@ -1,0 +1,18 @@
+{
+  "name": "Pfefferschiff",
+  "city": "salzburg",
+  "address": "Söllheim 3, 5300, Salzburg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 250,
+  "dinnerType": "menu",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu (other menus from €120)",
+  "sourceType": "site",
+  "source": "https://www.vigne.at/de/restaurant/kochkurse/",
+  "website": "https://www.vigne.at/",
+  "lat": 47.8379197,
+  "lng": 13.0790652,
+  "placeId": "ChIJZ1MX4FqadkcR7Y27kZpg16U"
+}

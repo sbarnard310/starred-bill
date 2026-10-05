@@ -1,0 +1,19 @@
+{
+  "name": "Artis",
+  "city": "steiermark",
+  "area": "Graz",
+  "address": "Schmiedgasse 18, 8010, Graz",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 286,
+  "dinnerType": "menu",
+  "dinner": 215,
+  "dinnerNote": "Tasting menu (other menus from €155)",
+  "sourceType": "site",
+  "source": "https://restaurant-artis.at/menue.php",
+  "website": "https://restaurant-artis.at",
+  "lat": 47.0689865,
+  "lng": 15.4390449,
+  "placeId": "ChIJUWqSQAs1bkcR0tUCRd96uHs"
+}

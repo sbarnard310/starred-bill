@@ -1,0 +1,19 @@
+{
+  "name": "Stüva",
+  "city": "tirol",
+  "area": "Ischgl",
+  "address": "Dorfstraße 73, 6561, Ischgl",
+  "stars": 2,
+  "cuisine": "Creative French",
+  "rating": 4.6,
+  "reviews": 98,
+  "dinnerType": "menu",
+  "dinner": 269,
+  "dinnerNote": "Tasting menu (other menus from €154)",
+  "sourceType": "site",
+  "source": "https://yscla.at/wp-content/uploads/pdfs/stuva-de.pdf",
+  "website": "https://www.yscla.at/",
+  "lat": 47.00948,
+  "lng": 10.28901,
+  "placeId": "ChIJI_ornGGznEcR80JSduGHBV4"
+}

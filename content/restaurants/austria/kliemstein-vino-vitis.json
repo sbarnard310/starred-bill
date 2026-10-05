@@ -1,0 +1,17 @@
+{
+  "name": "Kliemstein Vino Vitis",
+  "city": "oberosterreich",
+  "area": "Linz",
+  "address": "Obere Donaulände 15, 4020, Linz",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.9,
+  "reviews": 172,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kliemstein-linz.at/",
+  "lat": 48.3063856,
+  "lng": 14.2831305,
+  "placeId": "ChIJuRSeIIaXc0cR5LK6aujvU6g"
+}

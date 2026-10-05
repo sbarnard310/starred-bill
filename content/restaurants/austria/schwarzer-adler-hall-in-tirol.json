@@ -1,0 +1,17 @@
+{
+  "name": "Schwarzer Adler",
+  "city": "tirol",
+  "area": "Hall in Tirol",
+  "address": "Eugenstrasse 3, 6060, Hall in Tirol",
+  "stars": 2,
+  "cuisine": "European Contemporary",
+  "rating": 4.5,
+  "reviews": 141,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.schwarzeradler-hall.tirol/restaurant/",
+  "lat": 47.2811239,
+  "lng": 11.5082487,
+  "placeId": "ChIJd2j8l19vnUcRhFKm2pir2VQ"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Kammer5",
+  "city": "oberosterreich",
+  "area": "Ort im Innkreis",
+  "address": "Kammer 5, 4974, Ort im Innkreis",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 118,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kammer5.at/",
+  "lat": 48.3072856,
+  "lng": 13.4297995,
+  "placeId": "ChIJCe4EqIlBdEcRaspxJvmIpog"
+}

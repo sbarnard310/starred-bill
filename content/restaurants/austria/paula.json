@@ -1,0 +1,19 @@
+{
+  "name": "Paula",
+  "city": "oberosterreich",
+  "area": "Sankt Wolfgang im Salzkammergut",
+  "address": "Markt 88, 5360, Sankt Wolfgang im Salzkammergut",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.3,
+  "reviews": 551,
+  "dinnerType": "menu",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "sourceType": "site",
+  "source": "https://www.weisserbaer.at/de/restaurant-paula",
+  "website": "https://www.weisserbaer.at/de/",
+  "lat": 47.7381569,
+  "lng": 13.4479361,
+  "placeId": "ChIJwfqYa02wdkcRQdKCcvLdIKQ"
+}

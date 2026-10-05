@@ -1,0 +1,16 @@
+{
+  "name": "[aend]",
+  "city": "vienna",
+  "address": "Mollardgasse 76, 1060, Vienna",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 379,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://aend.at/",
+  "lat": 48.1896624,
+  "lng": 16.3411265,
+  "placeId": "ChIJyzxtjCGobUcRrzm4UjNaO7w"
+}

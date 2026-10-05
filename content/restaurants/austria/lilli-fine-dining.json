@@ -1,0 +1,20 @@
+{
+  "name": "Lilli Fine Dining",
+  "city": "steiermark",
+  "area": "Fehring",
+  "address": "Hauptplatz 9, 8350, Fehring",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 264,
+  "dinnerType": "menu",
+  "dinner": 79,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://lilli-fehring.at/",
+  "wine": 42,
+  "website": "https://lilli-fehring.at/",
+  "lat": 46.9355451,
+  "lng": 16.010589,
+  "placeId": "ChIJjXllEdQDb0cRXl0X9yexiEU"
+}

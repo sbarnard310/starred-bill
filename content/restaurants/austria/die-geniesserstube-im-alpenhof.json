@@ -1,0 +1,19 @@
+{
+  "name": "Die Geniesserstube im Alpenhof",
+  "city": "tirol",
+  "area": "Tux",
+  "address": "Hintertux 750, 6294, Tux",
+  "stars": 1,
+  "cuisine": "Alpine",
+  "rating": 4.9,
+  "reviews": 478,
+  "dinnerType": "menu",
+  "dinner": 205,
+  "dinnerNote": "Tasting menu (other menus from €195)",
+  "sourceType": "site",
+  "source": "https://www.alpenhof.at/fileadmin/userdaten/dokumente/Genie%C3%9Fermen%C3%BC_Alpenhof_September_26.pdf",
+  "website": "https://www.alpenhof.at/kulinarik/restaurant-geniesserstube/",
+  "lat": 47.115608,
+  "lng": 11.6841259,
+  "placeId": "ChIJq2hnvrrhd0cRQTE6s8rp6lU"
+}

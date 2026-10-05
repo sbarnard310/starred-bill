@@ -1,0 +1,19 @@
+{
+  "name": "Kirchenwirt",
+  "city": "salzburg",
+  "area": "Leogang",
+  "address": "Leogang 3, 5771, Leogang",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.8,
+  "reviews": 225,
+  "dinnerType": "menu",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €145)",
+  "sourceType": "site",
+  "source": "https://www.hotelkirchenwirt.at/restaurant/",
+  "website": "https://K1326.com",
+  "lat": 47.4388503,
+  "lng": 12.7608766,
+  "placeId": "ChIJb6e4WnD8dkcREtKqJH3n5ik"
+}

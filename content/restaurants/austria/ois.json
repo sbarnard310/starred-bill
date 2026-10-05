@@ -1,0 +1,17 @@
+{
+  "name": "Ois",
+  "city": "oberosterreich",
+  "area": "Neufelden",
+  "address": "Unternberg 6, 4120, Neufelden",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 497,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.muehltalhof.at/",
+  "lat": 48.4814599,
+  "lng": 14.0023486,
+  "placeId": "ChIJswnAHmmAc0cR_6cM5pOOGO8"
+}

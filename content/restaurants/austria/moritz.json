@@ -1,0 +1,17 @@
+{
+  "name": "Moritz",
+  "city": "karnten",
+  "area": "Grafenstein",
+  "address": "Oberwuchel 5, 9131, Grafenstein",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantmoritz.at/",
+  "lat": 46.6318956,
+  "lng": 14.449163,
+  "placeId": "ChIJJeI5cyEMcEcRDdKSanBW8nE"
+}

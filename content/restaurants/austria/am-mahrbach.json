@@ -1,0 +1,20 @@
+{
+  "name": "Am Mahrbach",
+  "city": "burgenland",
+  "area": "Königsdorf",
+  "address": "Apfelstraße 4, 7563, Königsdorf",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 5,
+  "reviews": 43,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.am-mahrbach.at/essen-und-trinken",
+  "wine": 50,
+  "website": "https://www.am-mahrbach.at/essen-und-trinken",
+  "lat": 47.0234528,
+  "lng": 16.186559,
+  "placeId": "ChIJMTIZJQDlbkcRIa1reqOTcFw"
+}

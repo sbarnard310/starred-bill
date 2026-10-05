@@ -1,0 +1,19 @@
+{
+  "name": "Lukas Restaurant",
+  "city": "oberosterreich",
+  "area": "Schärding",
+  "address": "Unterer Stadtplatz 7, 4780, Schärding",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 310,
+  "dinnerType": "menu",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €49)",
+  "sourceType": "site",
+  "source": "https://www.lukas-restaurant.at/karte.html",
+  "website": "https://www.lukas-restaurant.at/",
+  "lat": 48.4577665,
+  "lng": 13.4301299,
+  "placeId": "ChIJq82uwWJcdEcRy9yFITgbzqU"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Zeezout",
+  "city": "rotterdam",
+  "address": "Westerkade 11b, 3016 CL, Rotterdam",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.7,
+  "reviews": 681,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantzeezout.nl/",
+  "lat": 51.9061331,
+  "lng": 4.4774595,
+  "placeId": "ChIJUzJk6GIzxEcR6E99pKVTKfI"
+}

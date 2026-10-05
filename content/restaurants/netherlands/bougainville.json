@@ -1,0 +1,16 @@
+{
+  "name": "Bougainville",
+  "city": "amsterdam",
+  "address": "Dam 27, 1012 JS, Amsterdam",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 483,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantbougainville.com/",
+  "lat": 52.3725511,
+  "lng": 4.8931716,
+  "placeId": "ChIJn8V5MccJxkcRHVZpXXoRPps"
+}

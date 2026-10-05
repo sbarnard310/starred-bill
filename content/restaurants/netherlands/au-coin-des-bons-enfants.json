@@ -1,0 +1,18 @@
+{
+  "name": "Au Coin des Bons Enfants",
+  "city": "maastricht",
+  "address": "Ezelmarkt 4, 6211 LJ, Maastricht",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 231,
+  "dinnerType": "menu",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.aucoin.nl",
+  "website": "https://www.aucoin.nl",
+  "lat": 50.8461782,
+  "lng": 5.6873764,
+  "placeId": "ChIJTci4kLDpwEcRZ0iQdsjlsKU"
+}

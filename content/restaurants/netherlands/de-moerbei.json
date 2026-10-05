@@ -1,0 +1,19 @@
+{
+  "name": "De Moerbei",
+  "city": "zuid-holland",
+  "area": "Warmond",
+  "address": "Dorpsstraat 5a, 2361 AK, Warmond",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 374,
+  "dinnerType": "menu",
+  "dinner": 79,
+  "dinnerNote": "Tasting menu (other menus from €65)",
+  "sourceType": "site",
+  "source": "https://www.demoerbeiwarmond.nl/menu/",
+  "website": "https://www.demoerbeiwarmond.nl/",
+  "lat": 52.1952173,
+  "lng": 4.5027333,
+  "placeId": "ChIJ0eloBkzBxUcRUuFnYqJ_gjI"
+}

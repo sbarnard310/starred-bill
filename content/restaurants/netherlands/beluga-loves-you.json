@@ -1,0 +1,16 @@
+{
+  "name": "Beluga Loves You",
+  "city": "maastricht",
+  "address": "Plein 1992 nr 12, 6221 JP, Maastricht",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 631,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://belugalovesyou.com/",
+  "lat": 50.8462005,
+  "lng": 5.6990715,
+  "placeId": "ChIJfeXZx73pwEcRysmFc58mnOI"
+}

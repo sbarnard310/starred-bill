@@ -1,0 +1,17 @@
+{
+  "name": "Nami",
+  "city": "noord-brabant",
+  "area": "Cromvoirt",
+  "address": "Deutersestraat 39B, 5266 AW, Cromvoirt",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 176,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://nami.nl/",
+  "lat": 51.6651672,
+  "lng": 5.2296395,
+  "placeId": "ChIJaycGvm7sxkcRgV6--kDOHCk"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Marrees",
+  "city": "limburg-netherlands",
+  "area": "Weert",
+  "address": "Stadhuispassage 10, 6001 KK, Weert",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 175,
+  "dinnerType": "menu",
+  "dinner": 75,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurantmarrees.nl/feed/",
+  "website": "https://www.restaurantmarrees.nl/",
+  "lat": 51.2510546,
+  "lng": 5.7034285,
+  "placeId": "ChIJSaIVHC4tx0cRtANh8X1-WSk"
+}

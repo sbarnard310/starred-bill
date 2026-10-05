@@ -1,0 +1,16 @@
+{
+  "name": "Restaurant Parkheuvel",
+  "city": "rotterdam",
+  "address": "Heuvellaan 21, 3016 GL, Rotterdam",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 677,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.parkheuvel.nl/",
+  "lat": 51.9038322,
+  "lng": 4.4715805,
+  "placeId": "ChIJSxHdIIM0xEcRvcnb5I6LJJc"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "The White Room by Jacob Jan Boerma",
+  "city": "amsterdam",
+  "address": "Dam 9, 1012 JS, Amsterdam",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 456,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantthewhiteroom.com/",
+  "lat": 52.372726,
+  "lng": 4.894229,
+  "placeId": "ChIJsfwjUMcJxkcRcRi3dxYbCKo"
+}

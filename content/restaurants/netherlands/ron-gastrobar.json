@@ -1,0 +1,16 @@
+{
+  "name": "Ron Gastrobar",
+  "city": "amsterdam",
+  "address": "Sophialaan 55, 1075 BP, Amsterdam",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.3,
+  "reviews": 1901,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://rongastrobar.nl/",
+  "lat": 52.3522317,
+  "lng": 4.8566529,
+  "placeId": "ChIJ477hiQPixUcReMGcBUPbVLk"
+}

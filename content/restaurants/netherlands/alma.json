@@ -1,0 +1,17 @@
+{
+  "name": "Alma",
+  "city": "noord-brabant",
+  "area": "Oisterwijk",
+  "address": "De Lind 45a, 5061 HT, Oisterwijk",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 314,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.alma.nl/",
+  "lat": 51.5809993,
+  "lng": 5.1970972,
+  "placeId": "ChIJoXKlUIvrxkcRgzALON9wHH0"
+}

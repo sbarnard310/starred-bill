@@ -1,0 +1,19 @@
+{
+  "name": "De Bokkedoorns",
+  "city": "noord-holland",
+  "area": "Overveen",
+  "address": "Zeeweg 53, 2051 EB, Overveen",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 524,
+  "dinnerType": "menu",
+  "dinner": 220,
+  "dinnerNote": "Tasting menu (other menus from €145)",
+  "sourceType": "site",
+  "source": "https://www.bokkedoorns.nl/menukaart/",
+  "website": "https://www.bokkedoorns.nl/",
+  "lat": 52.3982758,
+  "lng": 4.5663309,
+  "placeId": "ChIJFT5WMYfuxUcRgOF4R-izDp4"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Flore",
+  "city": "amsterdam",
+  "address": "Nieuwe Doelenstraat 2, 1012 CP, Amsterdam",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 269,
+  "dinnerType": "menu",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://restaurantflore.com/",
+  "wine": 90,
+  "website": "https://restaurantflore.com/",
+  "lat": 52.3676602,
+  "lng": 4.8942749,
+  "placeId": "ChIJByFbDsAJxkcRN01cFVhNlAY"
+}

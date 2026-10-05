@@ -1,0 +1,19 @@
+{
+  "name": "'t Lansink",
+  "city": "overijssel",
+  "area": "Hengelo",
+  "address": "C.T. Storkstraat 18, 7553 AR, Hengelo",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 598,
+  "dinnerType": "menu",
+  "dinner": 139,
+  "dinnerNote": "Tasting menu (other menus from €109)",
+  "sourceType": "site",
+  "source": "https://hotellansink.nl/menu/",
+  "website": "https://www.hotellansink.nl/",
+  "lat": 52.2596555,
+  "lng": 6.7823913,
+  "placeId": "ChIJj7leFQMOuEcRw98L7cjYynE"
+}

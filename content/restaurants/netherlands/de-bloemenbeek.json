@@ -1,0 +1,19 @@
+{
+  "name": "De Bloemenbeek",
+  "city": "overijssel",
+  "area": "De Lutte",
+  "address": "Beuningerstraat 6, 7587 LD, De Lutte",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.5,
+  "reviews": 380,
+  "dinnerType": "menu",
+  "dinner": 400,
+  "dinnerNote": "Tasting menu (other menus from €210)",
+  "sourceType": "site",
+  "source": "https://www.bloemenbeek.nl/",
+  "website": "https://www.bloemenbeek.nl/",
+  "lat": 52.319597,
+  "lng": 6.9978667,
+  "placeId": "ChIJKYzZQvQXuEcRCLnglJqempA"
+}

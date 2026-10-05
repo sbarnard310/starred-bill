@@ -1,0 +1,17 @@
+{
+  "name": "Latour",
+  "city": "zuid-holland",
+  "area": "Noordwijk aan Zee",
+  "address": "Koningin Astrid Boulevard 5, 2202 BK, Noordwijk aan Zee",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 295,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantlatour.nl/nl-nl/",
+  "lat": 52.2413879,
+  "lng": 4.4277214,
+  "placeId": "ChIJx7KqLHnAxUcRPeqNspXmcWs"
+}

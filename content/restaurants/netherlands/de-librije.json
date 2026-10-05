@@ -1,0 +1,17 @@
+{
+  "name": "De Librije",
+  "city": "overijssel",
+  "area": "Zwolle",
+  "address": "Spinhuisplein 1, 8011 ZZ, Zwolle",
+  "stars": 3,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 1193,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.librije.com/",
+  "lat": 52.5153997,
+  "lng": 6.0979029,
+  "placeId": "ChIJZTzQ4y_fx0cR4m292pUWJyM"
+}

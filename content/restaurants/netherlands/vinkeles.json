@@ -1,0 +1,16 @@
+{
+  "name": "Vinkeles",
+  "city": "amsterdam",
+  "address": "Keizersgracht 384, 1016 GB, Amsterdam",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 409,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.vinkeles.com/",
+  "lat": 52.3692162,
+  "lng": 4.8840168,
+  "placeId": "ChIJg8bf-sIJxkcR9mc7li6y48E"
+}

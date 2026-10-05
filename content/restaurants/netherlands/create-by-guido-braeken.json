@@ -1,0 +1,17 @@
+{
+  "name": "Create by Guido Braeken",
+  "city": "limburg-netherlands",
+  "area": "Eijsden",
+  "address": "Kasteellaan 1, 6245 SB, Eijsden",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.9,
+  "reviews": 79,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-create.nl",
+  "lat": 50.7961718,
+  "lng": 5.7062586,
+  "placeId": "ChIJHzAbTADpwEcRmqDvJuC263E"
+}

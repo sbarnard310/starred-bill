@@ -1,0 +1,19 @@
+{
+  "name": "Pieters Restaurant",
+  "city": "zuid-holland",
+  "area": "Bergambacht",
+  "address": "Hoofdstraat 75, 2861 AL, Bergambacht",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 114,
+  "dinnerType": "menu",
+  "dinner": 148,
+  "dinnerNote": "Tasting menu (other menus from €108)",
+  "sourceType": "site",
+  "source": "https://www.pietersrestaurant.nl/",
+  "website": "https://www.pietersrestaurant.nl/",
+  "lat": 51.9344534,
+  "lng": 4.7831691,
+  "placeId": "ChIJsakJX1DVxUcRe3zn1N-fyz0"
+}

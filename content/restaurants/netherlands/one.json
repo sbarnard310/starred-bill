@@ -1,0 +1,17 @@
+{
+  "name": "ONE",
+  "city": "limburg-netherlands",
+  "area": "Roermond",
+  "address": "ECI 17, 6041 MA, Roermond",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 355,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantone.nl/",
+  "lat": 51.1895014,
+  "lng": 5.9808834,
+  "placeId": "ChIJx0iVE6lMx0cRX-T4A64A1PM"
+}

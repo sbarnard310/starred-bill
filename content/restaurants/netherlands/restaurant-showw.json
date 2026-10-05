@@ -1,0 +1,16 @@
+{
+  "name": "Restaurant Showw",
+  "city": "amsterdam",
+  "address": "Gelrestraat 28, 1079 MZ, Amsterdam",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 212,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantshoww.com",
+  "lat": 52.3372043,
+  "lng": 4.893425,
+  "placeId": "ChIJFepjd7oLxkcRf--jYYUy8ao"
+}

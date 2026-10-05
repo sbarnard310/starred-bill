@@ -1,0 +1,19 @@
+{
+  "name": "Maeve",
+  "city": "utrecht",
+  "address": "Kromme Nieuwegracht 18, 3512 HH, Utrecht",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.8,
+  "reviews": 339,
+  "dinnerType": "menu",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "site",
+  "source": "https://www.restaurantmaeve.nl/arrangementen/",
+  "wine": 160,
+  "website": "https://www.restaurantmaeve.nl/",
+  "lat": 52.0923609,
+  "lng": 5.1243245,
+  "placeId": "ChIJaW85wfhvxkcRTvEVaIlFUUc"
+}

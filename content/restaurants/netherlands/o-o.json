@@ -1,0 +1,17 @@
+{
+  "name": "O&O",
+  "city": "noord-brabant",
+  "area": "Sint Willebrord",
+  "address": "Dorpsstraat 138, 4711 EL, Sint Willebrord",
+  "stars": 1,
+  "cuisine": "Asian",
+  "rating": 4.9,
+  "reviews": 711,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantoeno.nl/",
+  "lat": 51.5525395,
+  "lng": 4.5917081,
+  "placeId": "ChIJe0UiHeIYxEcRyE6h5JrPYAs"
+}

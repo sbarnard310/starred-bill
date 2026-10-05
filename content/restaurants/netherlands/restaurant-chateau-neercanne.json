@@ -1,0 +1,16 @@
+{
+  "name": "Restaurant Château Neercanne",
+  "city": "maastricht",
+  "address": "Von Dopfflaan 10, 6213 NG, Maastricht",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.7,
+  "reviews": 1714,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.oostwegelcollection.nl/chateau-neercanne/restaurants/chateau-neercanne",
+  "lat": 50.8186702,
+  "lng": 5.66746,
+  "placeId": "ChIJueerN-LowEcRt2mMhYhmkvk"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "De Vlindertuin",
+  "city": "drenthe",
+  "area": "Zuidlaren",
+  "address": "Stationsweg 41, 9471 GK, Zuidlaren",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 245,
+  "dinnerType": "menu",
+  "dinner": 215,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-devlindertuin.nl/",
+  "website": "https://www.restaurant-devlindertuin.nl/",
+  "lat": 53.0925254,
+  "lng": 6.6803737,
+  "placeId": "ChIJ6XzF2T4pyEcRaa6_ZE0fvA8"
+}

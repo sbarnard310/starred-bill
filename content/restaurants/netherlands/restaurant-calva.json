@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant Calva",
+  "city": "zuid-holland",
+  "area": "Nootdorp",
+  "address": "Markt 53, 2631 ED, Nootdorp",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.9,
+  "reviews": 528,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantcalva.nl/",
+  "lat": 52.0459589,
+  "lng": 4.3933204,
+  "placeId": "ChIJFXqYzuHJxUcRPt28TRsLXZk"
+}

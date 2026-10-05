@@ -1,0 +1,17 @@
+{
+  "name": "Rijnzicht",
+  "city": "gelderland",
+  "area": "Doornenburg",
+  "address": "Sterreschans 15, 6686 MS, Doornenburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 366,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.rijnzicht.nl/",
+  "lat": 51.890057,
+  "lng": 6.0226068,
+  "placeId": "ChIJSUHKNUCgx0cRJ-9nYFTfYMk"
+}

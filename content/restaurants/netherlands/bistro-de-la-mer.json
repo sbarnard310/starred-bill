@@ -1,0 +1,16 @@
+{
+  "name": "Bistro de la Mer",
+  "city": "amsterdam",
+  "address": "Utrechtsestraat 57, 1017 VJ, Amsterdam",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.4,
+  "reviews": 404,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.bistrodelamer.com",
+  "lat": 52.3640668,
+  "lng": 4.8982876,
+  "placeId": "ChIJFX-OmpQJxkcRcF18TZlXxsw"
+}

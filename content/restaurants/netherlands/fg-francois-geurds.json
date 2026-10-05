@@ -1,0 +1,16 @@
+{
+  "name": "FG - François Geurds",
+  "city": "rotterdam",
+  "address": "Katshoek 37B, 3032 AE, Rotterdam",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.3,
+  "reviews": 415,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.fgrestaurant.nl/",
+  "lat": 51.9265521,
+  "lng": 4.4795369,
+  "placeId": "ChIJd9GnZ2ozxEcREbrToNssxKE"
+}

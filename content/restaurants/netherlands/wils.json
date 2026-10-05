@@ -1,0 +1,16 @@
+{
+  "name": "Wils",
+  "city": "amsterdam",
+  "address": "Stadionplein 26, 1076 CM, Amsterdam",
+  "stars": 1,
+  "cuisine": "World Cuisine",
+  "rating": 4.5,
+  "reviews": 391,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantwils.nl/",
+  "lat": 52.3433421,
+  "lng": 4.856129,
+  "placeId": "ChIJVWJPJUHhxUcR4eHuJtj8zMc"
+}

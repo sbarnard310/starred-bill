@@ -1,0 +1,19 @@
+{
+  "name": "De Nieuwe Winkel",
+  "city": "gelderland",
+  "area": "Nijmegen",
+  "address": "Gebroeders Van Limburgplein 7, 6511 BW, Nijmegen",
+  "stars": 2,
+  "cuisine": "Organic",
+  "rating": 4.8,
+  "reviews": 506,
+  "dinnerType": "menu",
+  "dinner": 265,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://denieuwewinkel.com/menukaart/",
+  "website": "https://www.denieuwewinkel.com/",
+  "lat": 51.8473893,
+  "lng": 5.8595982,
+  "placeId": "ChIJcRC6ZUUIx0cR16USmjNd2jk"
+}

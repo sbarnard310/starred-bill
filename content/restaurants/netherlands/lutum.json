@@ -1,0 +1,17 @@
+{
+  "name": "Lutum",
+  "city": "utrecht",
+  "area": "Wijk bij Duurstede",
+  "address": "Markt 15, 3961 BC, Wijk bij Duurstede",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 597,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantlutum.nl/",
+  "lat": 51.9720257,
+  "lng": 5.3453939,
+  "placeId": "ChIJ46cig0RZxkcR3AG0WThRSSA"
+}

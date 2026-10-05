@@ -1,0 +1,16 @@
+{
+  "name": "Amarone",
+  "city": "rotterdam",
+  "address": "Meent 72a, 3011 JN, Rotterdam",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 559,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantamarone.nl/",
+  "lat": 51.9223914,
+  "lng": 4.483346,
+  "placeId": "ChIJkx_Eb1kzxEcR_D2VB5OPkHk"
+}

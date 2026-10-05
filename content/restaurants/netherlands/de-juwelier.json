@@ -1,0 +1,16 @@
+{
+  "name": "De Juwelier",
+  "city": "amsterdam",
+  "address": "Utrechtsestraat 51, 1017 VJ, Amsterdam",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.1,
+  "reviews": 495,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-dejuwelier.nl",
+  "lat": 52.3642318,
+  "lng": 4.8982008,
+  "placeId": "ChIJBXvoaX8JxkcRuWOWTJHtcKc"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Codium",
+  "city": "zeeland",
+  "area": "Goes",
+  "address": "Vlasmarkt 6, 4461 CW, Goes",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 211,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantcodium.nl/",
+  "lat": 51.5046611,
+  "lng": 3.8889127,
+  "placeId": "ChIJoRq0KF6JxEcRbzMyIConoPQ"
+}

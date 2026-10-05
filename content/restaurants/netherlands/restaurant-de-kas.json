@@ -1,0 +1,16 @@
+{
+  "name": "Restaurant De Kas",
+  "city": "amsterdam",
+  "address": "Kamerlingh Onneslaan 3, 1097 DE, Amsterdam",
+  "stars": 1,
+  "cuisine": "Organic",
+  "rating": 4.7,
+  "reviews": 3736,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantdekas.com/",
+  "lat": 52.3522847,
+  "lng": 4.9302753,
+  "placeId": "ChIJJ-S23XoJxkcRDsSNU2mgH34"
+}

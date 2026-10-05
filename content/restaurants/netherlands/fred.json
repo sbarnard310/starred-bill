@@ -1,0 +1,16 @@
+{
+  "name": "Fred",
+  "city": "rotterdam",
+  "address": "Boompjes 41, 3011 XB, Rotterdam",
+  "stars": 2,
+  "cuisine": "Creative French",
+  "rating": 4.7,
+  "reviews": 606,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantfred.nl/",
+  "lat": 51.9162159,
+  "lng": 4.489421,
+  "placeId": "ChIJabXGIiMzxEcRyThdVxlYIhA"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Da Vinci",
+  "city": "limburg-netherlands",
+  "area": "Maasbracht",
+  "address": "Havenstraat 27, 6051 CS, Maasbracht",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.8,
+  "reviews": 542,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantdavinci.nl/",
+  "lat": 51.1452279,
+  "lng": 5.8850739,
+  "placeId": "ChIJ68KZxXDKwEcRQUbEhD9D2UA"
+}

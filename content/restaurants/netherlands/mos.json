@@ -1,0 +1,16 @@
+{
+  "name": "MOS",
+  "city": "amsterdam",
+  "address": "IJdok 185, 1013 MM, Amsterdam",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.7,
+  "reviews": 924,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://mosamsterdam.nl/",
+  "lat": 52.383797,
+  "lng": 4.895512,
+  "placeId": "ChIJ1dPTPsoJxkcRTmyCkfNISjI"
+}

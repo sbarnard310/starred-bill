@@ -1,0 +1,17 @@
+{
+  "name": "De Nederlanden",
+  "city": "utrecht",
+  "area": "Vreeland",
+  "address": "Duinkerken 3, 3633 EM, Vreeland",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 402,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.nederlanden.nl/",
+  "lat": 52.2295965,
+  "lng": 5.0324559,
+  "placeId": "ChIJqxl4WJRyxkcRjLyHEiOAPEg"
+}

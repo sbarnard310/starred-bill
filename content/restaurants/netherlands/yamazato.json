@@ -1,0 +1,16 @@
+{
+  "name": "Yamazato",
+  "city": "amsterdam",
+  "address": "Ferdinand Bolstraat 333, 1072 LH, Amsterdam",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 761,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.okura.nl/dine-and-drink/yamazato-restaurant/",
+  "lat": 52.3486674,
+  "lng": 4.8928801,
+  "placeId": "ChIJMzqLEIsJxkcRTBXw6KN7hYM"
+}

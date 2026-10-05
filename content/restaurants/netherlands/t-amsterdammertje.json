@@ -1,0 +1,19 @@
+{
+  "name": "'t Amsterdammertje",
+  "city": "utrecht",
+  "area": "Loenen aan de Vecht",
+  "address": "Rijksstraatweg 119, 3632 AB, Loenen aan de Vecht",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 603,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €105)",
+  "sourceType": "site",
+  "source": "https://www.restaurantamsterdammertje.nl/wp-content/uploads/2026/09/10.-Menukaart-Oktober-2026-NL.pdf",
+  "website": "https://www.restaurantamsterdammertje.nl/",
+  "lat": 52.2098585,
+  "lng": 5.0216548,
+  "placeId": "ChIJc8feAl9yxkcRvHwtWQdAju8"
+}

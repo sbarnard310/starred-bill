@@ -1,0 +1,16 @@
+{
+  "name": "Ciel Bleu",
+  "city": "amsterdam",
+  "address": "Ferdinand Bolstraat 333, 1072 LH, Amsterdam",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 484,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.cielbleu.nl/",
+  "lat": 52.3486359,
+  "lng": 4.8928264,
+  "placeId": "ChIJMzqLEIsJxkcRaZsOtXi1IsA"
+}

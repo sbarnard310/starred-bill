@@ -1,0 +1,17 @@
+{
+  "name": "Novaela",
+  "city": "zuid-holland",
+  "area": "Delft",
+  "address": "Bagijnhof 118, 2611 AS, Delft",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.9,
+  "reviews": 122,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://novaela.nl/",
+  "lat": 52.0139764,
+  "lng": 4.3536044,
+  "placeId": "ChIJaReWNAm1xUcRHeqldFEHxHE"
+}

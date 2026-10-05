@@ -1,0 +1,19 @@
+{
+  "name": "Restaurant De Burgemeester",
+  "city": "utrecht",
+  "area": "Linschoten",
+  "address": "Raadhuisstraat 17, 3461 CW, Linschoten",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 340,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €70)",
+  "sourceType": "site",
+  "source": "https://www.deburgemeester.nl/menu/",
+  "website": "https://www.deburgemeester.nl/",
+  "lat": 52.0619466,
+  "lng": 4.9146783,
+  "placeId": "ChIJ7-B6XIl5xkcR48RyBtcHGGQ"
+}

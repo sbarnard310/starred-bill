@@ -1,0 +1,17 @@
+{
+  "name": "Basiliek",
+  "city": "gelderland",
+  "area": "Harderwijk",
+  "address": "Vischmarkt 57 L, 3841 BE, Harderwijk",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 338,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantbasiliek.nl/",
+  "lat": 52.3512784,
+  "lng": 5.6211715,
+  "placeId": "ChIJoZbs8dMzxkcR01gwFw7uBBY"
+}

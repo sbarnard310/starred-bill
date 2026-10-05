@@ -1,0 +1,18 @@
+{
+  "name": "Tout à Fait",
+  "city": "maastricht",
+  "address": "St-Bernardusstraat 16, 6211 HL, Maastricht",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 291,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €90)",
+  "sourceType": "site",
+  "source": "https://toutafait.nl/menu/",
+  "website": "https://www.toutafait.nl/",
+  "lat": 50.8466488,
+  "lng": 5.6940708,
+  "placeId": "ChIJV4xf8rvpwEcRWYiBpw-Ed48"
+}

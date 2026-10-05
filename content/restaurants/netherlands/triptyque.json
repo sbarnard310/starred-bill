@@ -1,0 +1,19 @@
+{
+  "name": "Triptyque",
+  "city": "zuid-holland",
+  "area": "Wateringen",
+  "address": "Plein 13G, 2291 CA, Wateringen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 145,
+  "dinnerType": "menu",
+  "dinner": 55,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://triptyque.nl/restaurant/",
+  "website": "https://triptyque.nl/",
+  "lat": 52.0247891,
+  "lng": 4.2741909,
+  "placeId": "ChIJh_-DKpCzxUcRXw56QOAuXGM"
+}

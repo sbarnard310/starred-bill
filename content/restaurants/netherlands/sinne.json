@@ -1,0 +1,16 @@
+{
+  "name": "Sinne",
+  "city": "amsterdam",
+  "address": "Ceintuurbaan 342H, 1072 GP, Amsterdam",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 674,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantsinne.nl/",
+  "lat": 52.3530586,
+  "lng": 4.8942525,
+  "placeId": "ChIJzwzS5owJxkcRDZfCjur-OPU"
+}

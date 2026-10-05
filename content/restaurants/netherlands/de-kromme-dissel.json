@@ -1,0 +1,20 @@
+{
+  "name": "De Kromme Dissel",
+  "city": "gelderland",
+  "area": "Heelsum",
+  "address": "Klein Zwitserlandlaan 5, 6866 DS, Heelsum",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 431,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €52)",
+  "sourceType": "site",
+  "source": "https://www.krommedissel.nl/menu/",
+  "wine": 91,
+  "website": "https://www.krommedissel.nl/",
+  "lat": 51.9848455,
+  "lng": 5.7586213,
+  "placeId": "ChIJJc0tfqGux0cRxaAs0wWpqLM"
+}

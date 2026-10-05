@@ -1,0 +1,19 @@
+{
+  "name": "Merlet",
+  "city": "noord-holland",
+  "area": "Schoorl",
+  "address": "Duinweg 15, 1871 AC, Schoorl",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 732,
+  "dinnerType": "menu",
+  "dinner": 59,
+  "dinnerNote": "Tasting menu (other menus from €49)",
+  "sourceType": "site",
+  "source": "https://merlet.nl/grand-cafe/menukaarten",
+  "website": "https://www.merlet.nl/",
+  "lat": 52.6998032,
+  "lng": 4.6944638,
+  "placeId": "ChIJTdKgQhxaz0cRFaMdTHA5JEA"
+}

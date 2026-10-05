@@ -1,0 +1,16 @@
+{
+  "name": "RIJKS®",
+  "city": "amsterdam",
+  "address": "Museumstraat 2, 1071 XX, Amsterdam",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.4,
+  "reviews": 1830,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.rijksrestaurant.nl/",
+  "lat": 52.3595346,
+  "lng": 4.8842855,
+  "placeId": "ChIJQdf58O4JxkcReTjTVHWqYFk"
+}

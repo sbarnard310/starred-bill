@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant 1857",
+  "city": "noord-brabant",
+  "area": "Roosendaal",
+  "address": "Molenstraat 18, 4701 JS, Roosendaal",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.8,
+  "reviews": 177,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant1857.com",
+  "lat": 51.5343696,
+  "lng": 4.4598749,
+  "placeId": "ChIJo6jZfqMXxEcRXqZNQC4bjuE"
+}

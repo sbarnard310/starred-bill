@@ -1,0 +1,17 @@
+{
+  "name": "Central Park",
+  "city": "zuid-holland",
+  "area": "Voorburg",
+  "address": "Oosteinde 14, 2271 EH, Voorburg",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 752,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.centralparkvoorburg.com/",
+  "lat": 52.0699858,
+  "lng": 4.369485,
+  "placeId": "ChIJs1GkErW3xUcRlVjcvv_4TXs"
+}

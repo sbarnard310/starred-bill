@@ -1,0 +1,17 @@
+{
+  "name": "Zenith",
+  "city": "gelderland",
+  "area": "Apeldoorn",
+  "address": "Koninginnelaan 37, 7315 BL, Apeldoorn",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 284,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantzenith.nl/",
+  "lat": 52.2230557,
+  "lng": 5.9558434,
+  "placeId": "ChIJdfEnoy3Hx0cRKZTv0TMIlSk"
+}

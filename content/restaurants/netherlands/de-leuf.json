@@ -1,0 +1,19 @@
+{
+  "name": "De Leuf",
+  "city": "limburg-netherlands",
+  "area": "Ubachsberg",
+  "address": "Dalstraat 2, 6367 JS, Ubachsberg",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 429,
+  "dinnerType": "menu",
+  "dinner": 154,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://deleuf.nl/",
+  "website": "https://www.deleuf.nl/",
+  "lat": 50.8525073,
+  "lng": 5.9522269,
+  "placeId": "ChIJGUiIMRqWwEcRf7bToR1h83I"
+}

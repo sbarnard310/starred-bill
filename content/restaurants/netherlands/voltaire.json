@@ -1,0 +1,19 @@
+{
+  "name": "Voltaire",
+  "city": "utrecht",
+  "area": "Leersum",
+  "address": "Broekhuizerlaan 2, 3956 NS, Leersum",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 105,
+  "dinnerType": "menu",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu (other menus from €100)",
+  "sourceType": "site",
+  "source": "https://parcbroekhuizen.nl/blog/2025/10/29/kerst-bij-restaurant-voltaire/",
+  "website": "https://www.parcbroekhuizen.nl/",
+  "lat": 52.0078481,
+  "lng": 5.3997725,
+  "placeId": "ChIJBSFeToVbxkcRAuRa6al2zHI"
+}

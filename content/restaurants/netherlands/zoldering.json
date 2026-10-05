@@ -1,0 +1,16 @@
+{
+  "name": "Zoldering",
+  "city": "amsterdam",
+  "address": "Utrechtsestraat 141h, 1017 VM, Amsterdam",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 405,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.zoldering.nl/",
+  "lat": 52.361354,
+  "lng": 4.8993625,
+  "placeId": "ChIJ-7KWKfIJxkcRjSc9EMSbNOQ"
+}

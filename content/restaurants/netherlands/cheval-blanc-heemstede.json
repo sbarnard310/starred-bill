@@ -1,0 +1,17 @@
+{
+  "name": "Cheval Blanc",
+  "city": "noord-holland",
+  "area": "Heemstede",
+  "address": "Jan van Goyenstraat 29, 2102 CA, Heemstede",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 208,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.cheval-blanc.nl/",
+  "lat": 52.3602095,
+  "lng": 4.6289256,
+  "placeId": "ChIJIeYKDErvxUcRtQ0L_0LXrms"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Joann",
+  "city": "overijssel",
+  "area": "Enschede",
+  "address": "Nijverheidstraat 2, 7511 JM, Enschede",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 338,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantjoann.nl/",
+  "lat": 52.2202226,
+  "lng": 6.8909735,
+  "placeId": "ChIJ9zIh7cUVuEcRDt8jxKhq7mw"
+}

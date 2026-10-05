@@ -1,0 +1,17 @@
+{
+  "name": "Karel 5",
+  "city": "utrecht",
+  "address": "Geertebolwerk 1, 3511 XA, Utrecht",
+  "stars": 1,
+  "cuisine": "Creative",
+  "dinnerType": "menu",
+  "dinner": 325,
+  "dinnerNote": "Tasting menu (other menus from €190)",
+  "sourceType": "site",
+  "source": "https://www.karelv.nl/feestdagen/restaurant-karel-5-kerst",
+  "wine": 105,
+  "website": "https://www.karelv.nl/restaurant/",
+  "lat": 52.0879046,
+  "lng": 5.118613,
+  "placeId": "ChIJwZ0gr1tvxkcRLD_Dq6RXIHk"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant Affect",
+  "city": "overijssel",
+  "area": "Zwolle",
+  "address": "Thorbeckegracht 41, 8011 VN, Zwolle",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 123,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantaffect.com/",
+  "lat": 52.5148437,
+  "lng": 6.0959952,
+  "placeId": "ChIJzf91X6Xfx0cRot_ep8QMTBg"
+}

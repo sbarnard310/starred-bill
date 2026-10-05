@@ -1,0 +1,20 @@
+{
+  "name": "Odille",
+  "city": "noord-brabant",
+  "area": "Sint-Oedenrode",
+  "address": "Markt 14, 5492 AB, Sint-Oedenrode",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 142,
+  "dinnerType": "menu",
+  "dinner": 105,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://odille.nl/",
+  "wine": 55,
+  "website": "https://odille.nl/",
+  "lat": 51.5644992,
+  "lng": 5.4604372,
+  "placeId": "ChIJ5X3YDmLhxkcR-gZhHzveXU8"
+}

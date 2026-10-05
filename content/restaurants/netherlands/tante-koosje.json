@@ -1,0 +1,17 @@
+{
+  "name": "Tante Koosje",
+  "city": "utrecht",
+  "area": "Loenen aan de Vecht",
+  "address": "Kerkstraat 1, 3632 EL, Loenen aan de Vecht",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 451,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tante-koosje.nl/",
+  "lat": 52.2090905,
+  "lng": 5.0235487,
+  "placeId": "ChIJF2bPS15yxkcRUuL8NHUgFaI"
+}

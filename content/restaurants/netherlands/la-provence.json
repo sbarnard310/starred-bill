@@ -1,0 +1,17 @@
+{
+  "name": "La Provence",
+  "city": "utrecht",
+  "area": "Driebergen-Rijsenburg",
+  "address": "Hoofdstraat 109, 3971 KG, Driebergen-Rijsenburg",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.6,
+  "reviews": 237,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantlaprovence.nl/",
+  "lat": 52.0522638,
+  "lng": 5.282136,
+  "placeId": "ChIJfcFO5SFdxkcRBCj4gjlAMUg"
+}

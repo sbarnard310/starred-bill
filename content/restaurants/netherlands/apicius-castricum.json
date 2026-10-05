@@ -1,0 +1,17 @@
+{
+  "name": "Apicius",
+  "city": "noord-holland",
+  "area": "Castricum",
+  "address": "Van der Mijleweg 16, 1901 KD, Castricum",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 233,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.apicius.nl/",
+  "lat": 52.5588765,
+  "lng": 4.6561881,
+  "placeId": "ChIJexaK7g33xUcR4UZCZiegd8A"
+}

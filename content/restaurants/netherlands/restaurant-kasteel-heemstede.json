@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant Kasteel Heemstede",
+  "city": "utrecht",
+  "area": "Houten",
+  "address": "Heemsteedseweg 20, 3992 LS, Houten",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 417,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-kasteelheemstede.nl/",
+  "lat": 52.0330316,
+  "lng": 5.1252355,
+  "placeId": "ChIJFb0MbCpkxkcRYJkc4nesVXs"
+}

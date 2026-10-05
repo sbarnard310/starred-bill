@@ -1,0 +1,17 @@
+{
+  "name": "ML",
+  "city": "noord-holland",
+  "area": "Haarlem",
+  "address": "Klokhuisplein 5, 2011 HK, Haarlem",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.1,
+  "reviews": 1305,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mlinhaarlem.nl/",
+  "lat": 52.3807364,
+  "lng": 4.6381713,
+  "placeId": "ChIJsa953mvvxUcRy50HHiu7Qhk"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Spetters",
+  "city": "zeeland",
+  "area": "Breskens",
+  "address": "Kaai 5, 4511 RC, Breskens",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.6,
+  "reviews": 349,
+  "dinnerType": "menu",
+  "dinner": 97,
+  "dinnerNote": "Tasting menu (other menus from €77)",
+  "sourceType": "site",
+  "source": "https://www.restaurantspetters.nl/menu",
+  "website": "https://www.restaurantspetters.nl/",
+  "lat": 51.3952661,
+  "lng": 3.5681281,
+  "placeId": "ChIJ4ZnqSUKZxEcRsYaxWytzF48"
+}

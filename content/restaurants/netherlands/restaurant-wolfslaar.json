@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant Wolfslaar",
+  "city": "noord-brabant",
+  "area": "Breda",
+  "address": "Wolfslaardreef 100, 4834 SP, Breda",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 346,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantwolfslaar.com",
+  "lat": 51.5607208,
+  "lng": 4.8038928,
+  "placeId": "ChIJR1ap776hxkcRf8wJWsHSejE"
+}

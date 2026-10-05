@@ -1,0 +1,18 @@
+{
+  "name": "Lars Amsterdam",
+  "city": "amsterdam",
+  "address": "Danzigerkade 179, 1013 AP, Amsterdam",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 424,
+  "dinnerType": "menu",
+  "dinner": 222,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "site",
+  "source": "https://larsamsterdam.nl/",
+  "website": "https://www.larsamsterdam.nl/",
+  "lat": 52.4012764,
+  "lng": 4.8746416,
+  "placeId": "ChIJdd2greUJxkcRtaZnDt4JiFQ"
+}

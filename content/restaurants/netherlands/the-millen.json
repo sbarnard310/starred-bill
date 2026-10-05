@@ -1,0 +1,16 @@
+{
+  "name": "The Millèn",
+  "city": "rotterdam",
+  "address": "Weena 686, 3012 CN, Rotterdam",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 379,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurantthemillen.nl/",
+  "lat": 51.9226379,
+  "lng": 4.4714977,
+  "placeId": "ChIJz5pdBBk1xEcRWiG_v3hSEUY"
+}

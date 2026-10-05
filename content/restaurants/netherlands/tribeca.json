@@ -1,0 +1,17 @@
+{
+  "name": "Tribeca",
+  "city": "noord-brabant",
+  "area": "Heeze",
+  "address": "Jan Deckersstraat 7, 5591 HN, Heeze",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 486,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-tribeca.com/",
+  "lat": 51.3793,
+  "lng": 5.577939,
+  "placeId": "ChIJjc-M8oAox0cR0A7PvbW0A6s"
+}

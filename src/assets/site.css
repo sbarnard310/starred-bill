@@ -516,6 +516,10 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 .explore-more[open] summary::before { content: "–"; }
 .explore-more summary .count { font-family: var(--font-num); letter-spacing: 0; }
 .explore-more .explore-row { margin-top: 10px; }
+.explore-row .extra { display: none; }
+.explore-row.open .extra { display: inline-flex; }
+.explore-toggle { background: none; border: 0; padding: 6px 4px; cursor: pointer; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--band-muted); }
+.explore-toggle:hover { color: var(--band-ink); }
 .place-link.zero { opacity: .6; }
 
 /* Accounts: the header button, the sign-in window, the ✓ "been there" button and the prompts to sign up */

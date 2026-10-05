@@ -13,7 +13,8 @@ const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !
 // French, Spanish and Italian names carry their preposition ("à Paris", "en España", "a Roma").
 pageVars = () => ({ place: pick(PAGE, "name"), placeIn: cjk() || ko() ? pick(PAGE, "name") : PAGE["inSentence" + (LANGS[LANG].suffixes[0] || "")] || PAGE.inSentence || PAGE.name });
 
-const state = { meal: "dinner", activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
+const EXPLORE_SHOWN = 6;
+const state = { exploreOpen: new Set(), meal: "dinner", activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
   currency: PAGE.currency, rates: Object.fromEntries(Object.entries(DATA.currencies).map(([k, v]) => [k, v.perUSD])), rateDate: new Date(DATA.rateDate + "T12:00:00Z") };
 
 // ---------- Helpers ----------
@@ -128,15 +129,21 @@ function applyStatic() {
     PAGE.crumbs.map((c) => '<a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a>").join("") +
     '<span aria-current="page">' + esc(pick(PAGE, "name")) + "</span>";
   // Places without stars yet sit in a fold, so long lists (e.g. England's counties) stay tidy.
-  $("explore").innerHTML = PAGE.links.map((group) => group.more
-    ? '<details class="explore-more"><summary>' + esc(t(group.label)) + ' <span class="count">' + group.items.length + "</span></summary>" +
-      '<div class="explore-row">' + group.items.map((p) => p.current
-        ? '<span class="place-link" aria-current="page">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></span>"
-        : '<a class="place-link' + (p.n ? "" : " zero") + '" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>").join("") + "</div></details>"
-    : '<div class="explore-row"><span class="explore-label">' + esc(t(group.label, { country: pick(group, "country") })) + "</span>" +
-    group.items.map((p) => p.current
-      ? '<span class="place-link" aria-current="page">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></span>"
-      : '<a class="place-link' + (p.n ? "" : " zero") + '" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>").join("") + "</div>").join("");
+  // Every other row shows its first few (the busiest, plus this page) and a "+ 6 more" button for the rest.
+  const placeLink = (p, extra) => (p.current
+    ? '<span class="place-link" aria-current="page">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></span>"
+    : '<a class="place-link' + (p.n ? "" : " zero") + (extra ? " extra" : "") + '" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>");
+  $("explore").innerHTML = PAGE.links.map((group, gi) => {
+    if (group.more) return '<details class="explore-more"><summary>' + esc(t(group.label)) + ' <span class="count">' + group.items.length + "</span></summary>" +
+      '<div class="explore-row">' + group.items.map((p) => placeLink(p)).join("") + "</div></details>";
+    const hidden = group.items.length > EXPLORE_SHOWN + 1 ? group.items.filter((p, i) => i >= EXPLORE_SHOWN && !p.current).length : 0;
+    const open = state.exploreOpen.has(gi);
+    return '<div class="explore-row' + (open ? " open" : "") + '"><span class="explore-label">' + esc(t(group.label, { country: pick(group, "country") })) + "</span>" +
+      group.items.map((p, i) => placeLink(p, hidden && i >= EXPLORE_SHOWN)).join("") +
+      // When an "All areas" fold follows, it already lists the rest.
+      (hidden && !(PAGE.links[gi + 1] || {}).more ? '<button type="button" class="explore-toggle" data-explore="' + gi + '" aria-expanded="' + open + '">' +
+        (open ? "– " + esc(t("exploreFewer")) : "+ " + esc(t("exploreMore", { n: hidden }))) + "</button>" : "") + "</div>";
+  }).join("");
   $("currencySwitch").innerHTML = currencyOptions.map((k) =>
     '<button type="button" data-currency="' + k + '" aria-pressed="' + (k === state.currency) + '">' + DATA.currencies[k].symbol + "</button>").join("");
   const converted = approx();
@@ -563,6 +570,10 @@ document.addEventListener("click", (e) => {
     if (mapState.map) { mapState.markers.forEach((m, id) => m.setTitle(nameOf(RESTAURANTS.find((r) => r.id === id)))); }
     if (mapState.near) mapState.near.relabel();
     $("jumpMap").setAttribute("aria-label", t("jumpMapAria"));
+  } else if (el.dataset.explore) {
+    const gi = Number(el.dataset.explore);
+    if (state.exploreOpen.has(gi)) state.exploreOpen.delete(gi); else state.exploreOpen.add(gi);
+    applyStatic();
   } else if (el.dataset.meal) {
     state.meal = el.dataset.meal; save(); renderAll();
   } else if (el.dataset.currency) {

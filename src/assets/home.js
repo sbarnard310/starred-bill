@@ -56,11 +56,13 @@ function renderNoStars() {
   if (!n) { $("noStars").innerHTML = ""; return; }
   const coll = new Intl.Collator(locale());
   const noted = regions.flatMap((g) => g.countries.filter((c) => c.note)).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
+  // A country with its own explainer (content/guides) links to it.
+  const named = (c) => c.guide ? '<a href="/guides/' + esc(c.guide) + '/">' + esc(pick(c, "name")) + "</a>" : esc(pick(c, "name"));
   $("noStars").innerHTML = '<h3 class="sub-head">' + esc(t("noStarsTitle")) + '</h3><p class="nostar-intro">' + esc(t("noStarsText", { n })) + "</p>" +
-    '<div class="nostar-notes">' + noted.map((c) => '<p><strong>' + esc(pick(c, "name")) + "</strong> " + esc(pick(c, "note")) + "</p>").join("") + "</div>" +
+    '<div class="nostar-notes">' + noted.map((c) => '<p><strong>' + named(c) + "</strong> " + esc(pick(c, "note")) + "</p>").join("") + "</div>" +
     regions.map((g) => '<details class="dest-more nostar-region"><summary>' + esc(pick(g, "name")) + ' <span class="count">' + g.countries.length + "</span></summary>" +
       '<ul class="nostar-list">' + g.countries.slice().sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")))
-        .map((c) => "<li>" + esc(pick(c, "name")) + (c.note ? " *" : "") + "</li>").join("") + "</ul></details>").join("");
+        .map((c) => "<li>" + named(c) + (c.note ? " *" : "") + "</li>").join("") + "</ul></details>").join("");
 }
 // Quick jump to a country: A–Z letters (letters with no country are greyed out), or the country names
 // themselves in Chinese and Japanese, where names don't start with a letter.

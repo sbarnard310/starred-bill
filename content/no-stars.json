@@ -1,5 +1,5 @@
 {
-  "about": "Countries (UN members) with no Michelin-starred restaurant, shown on the homepage under the country cards. Unless a note says otherwise, the reason is that the MICHELIN Guide doesn't cover the country. When a country gains a star, delete it here (the build warns if a country is in both lists).",
+  "about": "Countries (UN members) with no Michelin-starred restaurant, shown on the homepage under the country cards. Unless a note says otherwise, the reason is that the MICHELIN Guide doesn't cover the country. When a country gains a star, delete it here (the build warns if a country is in both lists). A country can also name a `guide` (the id of a page in content/guides) to link its name to it.",
   "regions": [
     {
       "name": "Africa",
@@ -187,7 +187,10 @@
         },
         {
           "name": "South Africa",
-          "nameZh": "南非"
+          "nameZh": "南非",
+          "note": "Michelin rates South African hotels with Keys but publishes no restaurant guide anywhere in Africa.",
+          "noteZh": "米其林為南非酒店頒發「鑰匙」，但在非洲各地都沒有出版餐廳指南。",
+          "guide": "michelin-star-restaurants-south-africa"
         },
         {
           "name": "South Sudan",
@@ -389,7 +392,10 @@
         },
         {
           "name": "India",
-          "nameZh": "印度"
+          "nameZh": "印度",
+          "note": "No restaurant guide yet, though Michelin rates Indian hotels with Keys and the government says a deal to bring the guide is close.",
+          "noteZh": "目前尚無餐廳指南，但米其林已為印度酒店頒發「鑰匙」，印度政府亦表示引進指南的協議即將達成。",
+          "guide": "michelin-star-restaurants-india"
         },
         {
           "name": "Indonesia",
@@ -566,8 +572,9 @@
         {
           "name": "Australia",
           "nameZh": "澳洲",
-          "note": "Michelin has never published a guide here; Australian restaurants are rated with chef's hats by local guides instead.",
-          "noteZh": "米其林從未在澳洲出版指南；當地餐廳改由本地指南以「廚師帽」評級。"
+          "note": "Its first MICHELIN Guide, for South Australia, reveals its stars on 14 October 2026; until then Australian restaurants are rated with chef's hats by local guides.",
+          "noteZh": "澳洲首本米其林指南（南澳版）將於 2026 年 10 月 14 日公布星級；在此之前，當地餐廳由本地指南以「廚師帽」評級。",
+          "guide": "michelin-star-restaurants-australia"
         },
         {
           "name": "Fiji",

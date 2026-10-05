@@ -1,0 +1,15 @@
+{
+  "name": "Gostilna Pri Lojzetu",
+  "city": "slovenia",
+  "area": "Vipava",
+  "address": "Dvorec Zemono, 5271, Vipava",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.zemono.si",
+  "lat": 45.8557213,
+  "lng": 13.9491988,
+  "placeId": "ChIJMQ1kLYEYe0cRrwOZ3ivSNlc"
+}

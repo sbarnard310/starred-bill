@@ -1,0 +1,17 @@
+{
+  "name": "Grič",
+  "city": "slovenia",
+  "area": "Šentjošt nad Horjulom",
+  "address": "Šentjošt nad Horjulom 24d, 1354, Šentjošt nad Horjulom",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.8,
+  "reviews": 590,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.gric.si",
+  "lat": 46.0283624,
+  "lng": 14.2216299,
+  "placeId": "ChIJBbxNjT7aekcRgeMK695BU8Q"
+}

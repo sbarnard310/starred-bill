@@ -1,0 +1,19 @@
+{
+  "name": "Pavus",
+  "city": "slovenia",
+  "area": "Lasko",
+  "address": "Grad Tabor Laško, Cesta na Svetino 23, 3270, Lasko",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 798,
+  "dinnerType": "menu",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €100)",
+  "sourceType": "site",
+  "source": "https://www.pavus.si/kulinarika/Menu",
+  "website": "https://www.pavus.si/",
+  "lat": 46.1571174,
+  "lng": 15.237399,
+  "placeId": "ChIJ6XE1IKJzZUcRqlpjITuFfwc"
+}

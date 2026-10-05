@@ -1,0 +1,19 @@
+{
+  "name": "Hiša Linhart",
+  "city": "slovenia",
+  "area": "Radovljica",
+  "address": "Linhartov trg 17, 4240, Radovljica",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 406,
+  "dinnerType": "menu",
+  "dinner": 109,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.hisalinhart.si",
+  "website": "https://www.hisalinhart.si",
+  "lat": 46.3408368,
+  "lng": 14.1750205,
+  "placeId": "ChIJHZPEkRKWekcRoGpnkGIQKyI"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Galerija okusov",
+  "city": "slovenia",
+  "area": "Petrovče",
+  "address": "Novo Celje 9, 3301, Petrovče",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 462,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://galerijaokusov.si/en/home",
+  "lat": 46.2457883,
+  "lng": 15.1784594,
+  "placeId": "ChIJG0-fHLdvZUcRFo_NxHMZoq8"
+}

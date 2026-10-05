@@ -1,0 +1,17 @@
+{
+  "name": "Hiša Franko",
+  "city": "slovenia",
+  "area": "Kobarid",
+  "address": "Staro selo 1, 5222, Kobarid",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 978,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hisafranko.com/",
+  "lat": 46.247312,
+  "lng": 13.5378132,
+  "placeId": "ChIJg2ySsFBbekcR-PLGw2nIRAY"
+}

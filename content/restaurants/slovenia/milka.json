@@ -1,0 +1,17 @@
+{
+  "name": "Milka",
+  "city": "slovenia",
+  "area": "Kranjska Gora",
+  "address": "Vršiška cesta 45, 4280, Kranjska Gora",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 122,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotelmilka.si/restaurant",
+  "lat": 46.4751488,
+  "lng": 13.7847333,
+  "placeId": "ChIJkU08p0F9ekcRR9HMa_96Sko"
+}

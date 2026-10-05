@@ -1,0 +1,17 @@
+{
+  "name": "Dam",
+  "city": "slovenia",
+  "area": "Nova Gorica",
+  "address": "Ulica Vinka Vodopivca 24, 5000, Nova Gorica",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 265,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.damhotel.si",
+  "lat": 45.9582635,
+  "lng": 13.6622519,
+  "placeId": "ChIJLXuy9Q4Be0cRjrDfWpHQi7Y"
+}

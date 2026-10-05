@@ -1,0 +1,17 @@
+{
+  "name": "Hiša Denk",
+  "city": "slovenia",
+  "area": "Zgornja Kungota",
+  "address": "Zgornja Kungota 11A, 2201, Zgornja Kungota",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 1548,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hisadenk.si/",
+  "lat": 46.6383891,
+  "lng": 15.6146801,
+  "placeId": "ChIJ99dVhUeeb0cRI4WX52HTYm8"
+}

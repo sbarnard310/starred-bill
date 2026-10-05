@@ -675,6 +675,8 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 .guide-list a { font-size: 1.1rem; text-decoration: none; }
 .guide-list span { color: var(--muted); }
 footer a.foot-guide { color: inherit; }
+/* Trademark notice: its own full-width line under the footer's other items. */
+footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 @media (max-width: 720px) {
   /* On phones each row of a guide table becomes a card, with its column names beside the values. */
   .table-wrap { overflow: visible; border: 0; background: none; }

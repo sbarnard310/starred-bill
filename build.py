@@ -845,6 +845,33 @@ def build_pick(near_url):
     }))
 
 
+def build_compare(starred):
+    """/compare/: up to three restaurants from the visitor's wishlist as till receipts side by side, in one currency.
+    The prices come from /data/compare.json, one compact row per starred restaurant (columns listed in the file).
+    The page is personal (it reads the wishlist in the browser), so it stays out of search engines and the sitemap."""
+    cols = ["id", "name", "stars", "cuisine", "where", "path", "country", "cur", "dinner", "dinnerType", "dinnerNote", "lunch", "lunchType",
+            "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice"]
+    rows = [[r["id"], r["name"], r["stars"], r.get("cuisine", ""), near_where(r), r["cityPath"], r["country"], r["cur"],
+             r.get("dinner"), r.get("dinnerType", "menu"), r.get("dinnerNote", ""), r.get("lunch"), r.get("lunchType", "menu"),
+             r.get("lunchNote", ""), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"),
+             r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0]
+            for r in starred]
+    body = as_json({"cols": cols, "r": rows}).encode("utf-8")
+    (OUT / "data" / "compare.json").write_bytes(body)
+    lede = ("Tick two or three restaurants from your wishlist to see their bills side by side: dinner, lunch and the wine pairing, "
+            "all in the currency you choose.")
+    write("/compare/", render("compare.html", {
+        "title": "Compare your saved restaurants · The Starred Bill",
+        "description": e("Compare Michelin-starred restaurants from your wishlist side by side: dinner, lunch and wine pairing prices in one currency."),
+        "canonical": SITE_URL + "/compare/", "htmlLang": "en", "ogType": "website", "ogAlt": "Compare Michelin-starred restaurants side by side",
+        "crumbs": '<a href="/">All destinations</a><span aria-current="page">Compare</span>',
+        "lede": e(lede),
+        "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "switchable": currency_data.get("switchable", []),
+                         "rateDate": currency_data.get("rateDate"),
+                         "compareUrl": f"/data/compare.json?v={hashlib.sha1(body).hexdigest()[:10]}"}),
+    }))
+
+
 def build_redirects():
     """Pages at old addresses that send visitors on to where the page lives now, keeping any ?q= search."""
     for old, pid in sorted(redirects.items()):
@@ -1025,6 +1052,7 @@ for p in pages:
 build_home()
 build_pick(build_near_me([r for r in restaurants if not r.get("status")]))
 build_bill_data([r for r in restaurants if not r.get("status")])
+build_compare([r for r in restaurants if not r.get("status")])
 build_account_pages()
 build_guides()
 build_redirects()

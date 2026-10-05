@@ -81,7 +81,7 @@
     acctLinkExpired: "Dak il-link skada jew diġà ntuża. Agħfas Idħol biex tieħu wieħed ġdid.",
     been: "Mort", beenAdd: "Immarka lil {name} bħala mżur", beenRemove: "Neħħi lil {name} minn dawk imżura", beenAddT: "Immarka bħala mżur", beenRemoveT: "Neħħi minn dawk imżura",
     toastBeen: "{name} immarkat bħala mżur", toastNotBeen: "{name} tneħħa minn dawk imżura", showBeen: "Dawk imżura",
-    beenProgress: "Mort f'{n} mill-{total} ristoranti hawnhekk.", wishNoteOut: "Il-lista tax-xewqat tiegħek tinżamm biss fuq dan l-apparat.", wishNoteSignIn: "Idħol biex iżżommha fuq kull apparat",
+    beenProgress: "Mort f'{n} mill-{total} ristoranti hawnhekk.", wishNoteOut: "Il-lista tax-xewqat tiegħek tinżamm biss fuq dan l-apparat.", wishNoteSignIn: "Idħol biex iżżommha fuq kull apparat", wishCompare: "Qabbel ir-ristoranti salvati ħdejn xulxin",
     wishNoteIn: "Il-lista tax-xewqat u r-ristoranti li żort huma maħżuna fil-kont tiegħek.", wishSynced: "Maħżun fil-kont tiegħek.", acctSee: "Ara l-kont tiegħek",
     shareInsta: "Għal Instagram, ikkopja l-link u waħħlu fi story jew messaġġ.",
     shareMore: "Instagram, Messaġġi u aktar",

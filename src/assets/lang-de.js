@@ -88,7 +88,7 @@
     acctLinkExpired: "Dieser Anmeldelink ist abgelaufen oder wurde schon benutzt. Tippe auf Anmelden, um einen neuen zu bekommen.",
     been: "Schon dort gewesen", beenAdd: "{name} als besucht markieren", beenRemove: "{name} nicht mehr als besucht markieren", beenAddT: "Als besucht markieren", beenRemoveT: "Nicht mehr als besucht markieren",
     toastBeen: "{name} ist als besucht markiert", toastNotBeen: "{name} ist nicht mehr als besucht markiert", showBeen: "Schon dort gewesen",
-    beenProgress: "Du warst in {n} der {total} Restaurants hier.", wishNoteOut: "Deine Merkliste wird nur auf diesem Gerät gespeichert.", wishNoteSignIn: "Melde dich an, um sie auf jedem Gerät zu haben",
+    beenProgress: "Du warst in {n} der {total} Restaurants hier.", wishNoteOut: "Deine Merkliste wird nur auf diesem Gerät gespeichert.", wishNoteSignIn: "Melde dich an, um sie auf jedem Gerät zu haben", wishCompare: "Gespeicherte Restaurants nebeneinander vergleichen",
     wishNoteIn: "Deine Merkliste und deine besuchten Restaurants sind in deinem Konto gespeichert.", wishSynced: "In deinem Konto gespeichert.", acctSee: "Zu deinem Konto",
     shareInsta: "Für Instagram: Kopiere den Link und füge ihn in eine Story oder Nachricht ein.",
     shareMore: "Instagram, Nachrichten und mehr",

@@ -361,7 +361,6 @@ document.addEventListener("click", (e) => {
 });
 
 // ---------- Till receipt (phones) and torn-off stub (computers) ----------
-const PRICES_CHECKED = new Date("2026-10-15T12:00:00Z");
 const sep = '<span class="sr-only">, </span>';
 // What a meal costs on its own: the figure, or why there isn't one.
 function mealValue(r, meal) {
@@ -443,6 +442,7 @@ function renderLedger() {
     (acctSignedIn() && RESTAURANTS.some(onBeen) ? " · " + t("beenProgress", { n: RESTAURANTS.filter(onBeen).length, total: RESTAURANTS.length }) : "");
   $("wishNote").innerHTML = acctSignedIn() ? esc(t("wishNoteIn"))
     : esc(t("wishNoteOut")) + ' <button type="button" class="linkish" data-signin="">' + esc(t("wishNoteSignIn")) + "</button>";
+  if (state.wishlist.length >= 2) $("wishNote").insertAdjacentHTML("beforeend", ' · <a href="/compare/">' + esc(t("wishCompare")) + " →</a>");
 }
 
 // ---------- Headline figures and star tiers ----------

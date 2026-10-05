@@ -85,7 +85,7 @@
     acctLinkExpired: "Esse link de acesso expirou ou já foi usado. Toque em Entrar para receber outro.",
     been: "Já fui", beenAdd: "Marcar {name} como visitado", beenRemove: "Desmarcar {name} como visitado", beenAddT: "Marcar como visitado", beenRemoveT: "Desmarcar como visitado",
     toastBeen: "{name} marcado como visitado", toastNotBeen: "{name} já não está marcado como visitado", showBeen: "Já fui",
-    beenProgress: "Já foi a {n} dos {total} restaurantes daqui.", wishNoteOut: "Os seus favoritos ficam guardados só neste dispositivo.", wishNoteSignIn: "Entre para os ter em todos os dispositivos",
+    beenProgress: "Já foi a {n} dos {total} restaurantes daqui.", wishNoteOut: "Os seus favoritos ficam guardados só neste dispositivo.", wishNoteSignIn: "Entre para os ter em todos os dispositivos", wishCompare: "Compare os seus restaurantes guardados lado a lado",
     wishNoteIn: "Os seus favoritos e os restaurantes visitados estão guardados na sua conta.", wishSynced: "Guardado na sua conta.", acctSee: "Ver a sua conta",
     shareInsta: "Para o Instagram, copie o link e cole-o numa story ou mensagem.",
     shareMore: "Instagram, Mensagens e mais",

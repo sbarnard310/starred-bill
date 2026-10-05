@@ -87,7 +87,7 @@
     acctLinkExpired: "Deze aanmeldlink is verlopen of al gebruikt. Tik op Aanmelden voor een nieuwe.",
     been: "Geweest", beenAdd: "{name} markeren als bezocht", beenRemove: "{name} niet meer als bezocht markeren", beenAddT: "Markeren als bezocht", beenRemoveT: "Niet meer als bezocht markeren",
     toastBeen: "{name} is gemarkeerd als bezocht", toastNotBeen: "{name} staat niet meer bij bezocht", showBeen: "Geweest",
-    beenProgress: "Je bent in {n} van de {total} restaurants hier geweest.", wishNoteOut: "Je verlanglijst wordt alleen op dit apparaat bewaard.", wishNoteSignIn: "Meld je aan om hem op elk apparaat te hebben",
+    beenProgress: "Je bent in {n} van de {total} restaurants hier geweest.", wishNoteOut: "Je verlanglijst wordt alleen op dit apparaat bewaard.", wishNoteSignIn: "Meld je aan om hem op elk apparaat te hebben", wishCompare: "Vergelijk je bewaarde restaurants naast elkaar",
     wishNoteIn: "Je verlanglijst en je bezochte restaurants zijn in je account bewaard.", wishSynced: "In je account bewaard.", acctSee: "Naar je account",
     shareInsta: "Voor Instagram: kopieer de link en plak hem in een story of bericht.",
     shareMore: "Instagram, Berichten en meer",

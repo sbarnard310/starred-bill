@@ -79,7 +79,7 @@
     acctLinkExpired: "Šī pieteikšanās saite ir beigusies vai jau izmantota. Pieskarieties “Pieteikties”, lai saņemtu jaunu.",
     been: "Esmu bijis", beenAdd: "Atzīmēt {name} kā apmeklētu", beenRemove: "Noņemt {name} no apmeklētajiem", beenAddT: "Atzīmēt kā apmeklētu", beenRemoveT: "Noņemt no apmeklētajiem",
     toastBeen: "Atzīmēts kā apmeklēts: {name}", toastNotBeen: "Noņemts no apmeklētajiem: {name}", showBeen: "Apmeklētie",
-    beenProgress: "Esat apmeklējis {n} no {total} šejienes restorāniem.", wishNoteOut: "Jūsu vēlmju saraksts tiek saglabāts tikai šajā ierīcē.", wishNoteSignIn: "Piesakieties, lai tas būtu visās ierīcēs",
+    beenProgress: "Esat apmeklējis {n} no {total} šejienes restorāniem.", wishNoteOut: "Jūsu vēlmju saraksts tiek saglabāts tikai šajā ierīcē.", wishNoteSignIn: "Piesakieties, lai tas būtu visās ierīcēs", wishCompare: "Salīdziniet saglabātos restorānus blakus",
     wishNoteIn: "Jūsu vēlmju saraksts un apmeklētie restorāni ir saglabāti jūsu kontā.", wishSynced: "Saglabāts jūsu kontā.", acctSee: "Skatīt kontu",
     shareInsta: "Instagram: nokopējiet saiti un ielīmējiet to stāstā vai ziņā.",
     shareMore: "Instagram, ziņas un citur",

@@ -82,7 +82,7 @@
     acctLinkExpired: "Povezava za prijavo je potekla ali je bila že uporabljena. Tapnite Prijava za novo.",
     been: "Obiskano", beenAdd: "Označi {name} kot obiskano", beenRemove: "Odstrani {name} z obiskanih", beenAddT: "Označi kot obiskano", beenRemoveT: "Odstrani z obiskanih",
     toastBeen: "Označeno kot obiskano: {name}", toastNotBeen: "Odstranjeno z obiskanih: {name}", showBeen: "Obiskano",
-    beenProgress: "Obiskali ste {n} od {total} tukajšnjih restavracij.", wishNoteOut: "Seznam želja je shranjen samo na tej napravi.", wishNoteSignIn: "Prijavite se, da ga imate na vseh napravah",
+    beenProgress: "Obiskali ste {n} od {total} tukajšnjih restavracij.", wishNoteOut: "Seznam želja je shranjen samo na tej napravi.", wishNoteSignIn: "Prijavite se, da ga imate na vseh napravah", wishCompare: "Primerjajte shranjene restavracije drugo ob drugi",
     wishNoteIn: "Vaš seznam želja in obiskane restavracije so shranjeni v vašem računu.", wishSynced: "Shranjeno v vašem računu.", acctSee: "Oglejte si račun",
     shareInsta: "Za Instagram kopirajte povezavo in jo prilepite v zgodbo ali sporočilo.",
     shareMore: "Instagram, Sporočila in drugo",

@@ -83,7 +83,7 @@
     acctLinkExpired: "Bu giriş bağlantısının süresi dolmuş ya da zaten kullanılmış. Yenisi için Giriş yap'a dokunun.",
     been: "Gittim", beenAdd: "{name} restoranını gidildi olarak işaretle", beenRemove: "{name} restoranını gidilenlerden çıkar", beenAddT: "Gidildi olarak işaretle", beenRemoveT: "Gidilenlerden çıkar",
     toastBeen: "Gidildi olarak işaretlendi: {name}", toastNotBeen: "Gidilenlerden çıkarıldı: {name}", showBeen: "Gittiklerim",
-    beenProgress: "Buradaki {total} restorandan {n} tanesine gittiniz.", wishNoteOut: "İstek listeniz yalnızca bu cihazda saklanır.", wishNoteSignIn: "Her cihazda tutmak için giriş yapın",
+    beenProgress: "Buradaki {total} restorandan {n} tanesine gittiniz.", wishNoteOut: "İstek listeniz yalnızca bu cihazda saklanır.", wishNoteSignIn: "Her cihazda tutmak için giriş yapın", wishCompare: "Kaydettiğiniz restoranları yan yana karşılaştırın",
     wishNoteIn: "İstek listeniz ve gittiğiniz restoranlar hesabınızda saklanıyor.", wishSynced: "Hesabınıza kaydedildi.", acctSee: "Hesabınızı görün",
     shareInsta: "Instagram için bağlantıyı kopyalayıp bir hikâyeye ya da mesaja yapıştırın.",
     shareMore: "Instagram, Mesajlar ve diğerleri",

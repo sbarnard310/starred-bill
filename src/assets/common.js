@@ -116,7 +116,7 @@ const I18N = {
     acctLinkExpired: "That sign-in link has expired or was already used. Tap Sign in to get a new one.",
     been: "Been there", beenAdd: "Mark {name} as been there", beenRemove: "Remove {name} from been there", beenAddT: "Mark as been there", beenRemoveT: "Remove from been there",
     toastBeen: "Marked {name} as been there", toastNotBeen: "Removed {name} from been there", showBeen: "Been there",
-    beenProgress: "You've been to {n} of the {total} here.", wishNoteOut: "Your wishlist is saved on this device only.", wishNoteSignIn: "Sign in to keep it on every device",
+    beenProgress: "You've been to {n} of the {total} here.", wishNoteOut: "Your wishlist is saved on this device only.", wishNoteSignIn: "Sign in to keep it on every device", wishCompare: "Compare your saved restaurants side by side",
     wishNoteIn: "Your wishlist and been-there list are saved to your account.", wishCtaHome: "Your wishlist is saved on this device only. Sign up free to keep it on every device and tick off the restaurants you've been to.",
     wishCtaBtn: "Sign up free", wishSynced: "Saved to your account.", acctSee: "See your account",
     shareInsta: "For Instagram, copy the link and paste it into a story or message.",
@@ -263,7 +263,7 @@ const I18N = {
     acctLinkExpired: "這個登入連結已過期或已使用過，請點選「登入」取得新連結。",
     been: "去過了", beenAdd: "將{name}標示為去過", beenRemove: "取消{name}的去過標示", beenAddT: "標示為去過", beenRemoveT: "取消去過標示",
     toastBeen: "已將{name}標示為去過", toastNotBeen: "已取消{name}的去過標示", showBeen: "去過了",
-    beenProgress: "這裡的 {total} 家餐廳中，你去過 {n} 家。", wishNoteOut: "你的願望清單只儲存在這部裝置上。", wishNoteSignIn: "登入即可在每部裝置上保留",
+    beenProgress: "這裡的 {total} 家餐廳中，你去過 {n} 家。", wishNoteOut: "你的願望清單只儲存在這部裝置上。", wishNoteSignIn: "登入即可在每部裝置上保留", wishCompare: "並排比較你收藏的餐廳",
     wishNoteIn: "你的願望清單與去過清單已儲存到你的帳戶。", wishCtaHome: "你的願望清單只儲存在這部裝置上。免費註冊，即可在每部裝置上保留，並勾選你去過的餐廳。",
     wishCtaBtn: "免費註冊", wishSynced: "已儲存到你的帳戶。", acctSee: "查看你的帳戶",
     shareInsta: "若要分享到 Instagram，請複製連結，再貼到限時動態或訊息中。",
@@ -408,7 +408,7 @@ const I18N = {
     acctLinkExpired: "Ce lien de connexion a expiré ou a déjà servi. Touchez Connexion pour en recevoir un nouveau.",
     been: "J'y suis allé", beenAdd: "Marquer {name} comme visité", beenRemove: "Retirer {name} des restaurants visités", beenAddT: "Marquer comme visité", beenRemoveT: "Retirer des restaurants visités",
     toastBeen: "{name} marqué comme visité", toastNotBeen: "{name} retiré des restaurants visités", showBeen: "Visités",
-    beenProgress: "Vous êtes allé dans {n} des {total} restaurants ici.", wishNoteOut: "Vos envies sont enregistrées sur cet appareil uniquement.", wishNoteSignIn: "Connectez-vous pour les retrouver partout",
+    beenProgress: "Vous êtes allé dans {n} des {total} restaurants ici.", wishNoteOut: "Vos envies sont enregistrées sur cet appareil uniquement.", wishNoteSignIn: "Connectez-vous pour les retrouver partout", wishCompare: "Comparer vos restaurants enregistrés côte à côte",
     wishNoteIn: "Vos envies et vos restaurants visités sont enregistrés dans votre compte.", wishCtaHome: "Vos envies sont enregistrées sur cet appareil uniquement. Créez un compte gratuit pour les retrouver partout et cocher les restaurants où vous êtes allé.",
     wishCtaBtn: "Créer un compte gratuit", wishSynced: "Enregistré dans votre compte.", acctSee: "Voir votre compte",
     shareInsta: "Pour Instagram, copiez le lien puis collez-le dans une story ou un message.",
@@ -534,7 +534,7 @@ const I18N = {
     acctLinkExpired: "呢條登入連結已經過期或者用過，請撳「登入」攞條新嘅。",
     been: "去過", beenAdd: "將{name}標示為去過", beenRemove: "取消{name}嘅去過標示", beenAddT: "標示為去過", beenRemoveT: "取消去過標示",
     toastBeen: "已經將{name}標示為去過", toastNotBeen: "已經取消{name}嘅去過標示", showBeen: "去過",
-    beenProgress: "呢度 {total} 間餐廳入面，你去過 {n} 間。", wishNoteOut: "你嘅心水清單只係儲喺呢部裝置。", wishNoteSignIn: "登入就可以喺每部裝置保留",
+    beenProgress: "呢度 {total} 間餐廳入面，你去過 {n} 間。", wishNoteOut: "你嘅心水清單只係儲喺呢部裝置。", wishNoteSignIn: "登入就可以喺每部裝置保留", wishCompare: "並排比較你心水嘅餐廳",
     wishNoteIn: "你嘅心水清單同去過清單已經儲咗喺你嘅帳戶。", wishCtaHome: "你嘅心水清單只係儲喺呢部裝置。免費登記就可以喺每部裝置保留，仲可以剔低你去過嘅餐廳。",
     wishCtaBtn: "免費登記", wishSynced: "已經儲咗喺你嘅帳戶。", acctSee: "睇你嘅帳戶",
     shareInsta: "想分享去 Instagram，就複製條連結，再貼落限時動態或者訊息度。",
@@ -661,7 +661,7 @@ const I18N = {
     acctLinkExpired: "このログイン用リンクは期限切れか、すでに使われています。「ログイン」から新しいリンクを受け取ってください。",
     been: "行った", beenAdd: "{name}を「行った」にする", beenRemove: "{name}の「行った」を外す", beenAddT: "「行った」にする", beenRemoveT: "「行った」を外す",
     toastBeen: "{name}を「行った」にしました", toastNotBeen: "{name}の「行った」を外しました", showBeen: "行った店",
-    beenProgress: "ここにある{total}軒のうち{n}軒に行きました。", wishNoteOut: "お気に入りはこの端末にのみ保存されています。", wishNoteSignIn: "ログインするとどの端末でも使えます",
+    beenProgress: "ここにある{total}軒のうち{n}軒に行きました。", wishNoteOut: "お気に入りはこの端末にのみ保存されています。", wishNoteSignIn: "ログインするとどの端末でも使えます", wishCompare: "お気に入りのレストランを並べて比較",
     wishNoteIn: "お気に入りと行った店はアカウントに保存されています。", wishCtaHome: "お気に入りはこの端末にのみ保存されています。無料登録すると、どの端末でも使えて、行ったレストランにチェックを付けられます。",
     wishCtaBtn: "無料で登録", wishSynced: "アカウントに保存されています。", acctSee: "アカウントを見る",
     shareInsta: "Instagramでは、リンクをコピーしてストーリーズやメッセージに貼り付けてください。",
@@ -807,7 +807,7 @@ const I18N = {
     acctLinkExpired: "Ese enlace de acceso ha caducado o ya se ha usado. Toca Iniciar sesión para recibir uno nuevo.",
     been: "He estado", beenAdd: "Marcar que he estado en {name}", beenRemove: "Quitar {name} de los visitados", beenAddT: "Marcar como visitado", beenRemoveT: "Quitar de visitados",
     toastBeen: "{name} marcado como visitado", toastNotBeen: "{name} quitado de visitados", showBeen: "He estado",
-    beenProgress: "Has estado en {n} de los {total} de aquí.", wishNoteOut: "Tus favoritos se guardan solo en este dispositivo.", wishNoteSignIn: "Inicia sesión para tenerlos en todos tus dispositivos",
+    beenProgress: "Has estado en {n} de los {total} de aquí.", wishNoteOut: "Tus favoritos se guardan solo en este dispositivo.", wishNoteSignIn: "Inicia sesión para tenerlos en todos tus dispositivos", wishCompare: "Compara tus restaurantes guardados lado a lado",
     wishNoteIn: "Tus favoritos y los restaurantes visitados se guardan en tu cuenta.", wishCtaHome: "Tus favoritos se guardan solo en este dispositivo. Regístrate gratis para tenerlos en todos tus dispositivos y marcar los restaurantes en los que has estado.",
     wishCtaBtn: "Regístrate gratis", wishSynced: "Guardado en tu cuenta.", acctSee: "Ver tu cuenta",
     shareInsta: "Para Instagram, copia el enlace y pégalo en una historia o un mensaje.",
@@ -919,7 +919,7 @@ const I18N = {
     acctLinkExpired: "Loginlinket er udløbet eller allerede brugt. Tryk på Log ind for at få et nyt.",
     been: "Har været der", beenAdd: "Markér {name} som besøgt", beenRemove: "Fjern {name} fra besøgte", beenAddT: "Markér som besøgt", beenRemoveT: "Fjern fra besøgte",
     toastBeen: "{name} er markeret som besøgt", toastNotBeen: "{name} er fjernet fra besøgte", showBeen: "Har været der",
-    beenProgress: "Du har besøgt {n} af de {total} her.", wishNoteOut: "Din ønskeliste gemmes kun på denne enhed.", wishNoteSignIn: "Log ind for at have den på alle enheder",
+    beenProgress: "Du har besøgt {n} af de {total} her.", wishNoteOut: "Din ønskeliste gemmes kun på denne enhed.", wishNoteSignIn: "Log ind for at have den på alle enheder", wishCompare: "Sammenlign dine gemte restauranter side om side",
     wishNoteIn: "Din ønskeliste og dine besøgte restauranter er gemt på din konto.", wishSynced: "Gemt på din konto.", acctSee: "Se din konto",
     shareInsta: "Til Instagram: kopiér linket, og indsæt det i en story eller besked.",
     shareMore: "Instagram, Beskeder og mere",
@@ -1025,7 +1025,7 @@ const I18N = {
     acctLinkExpired: "Inloggningslänken har gått ut eller redan använts. Tryck på Logga in för att få en ny.",
     been: "Har varit där", beenAdd: "Markera {name} som besökt", beenRemove: "Ta bort {name} från besökta", beenAddT: "Markera som besökt", beenRemoveT: "Ta bort från besökta",
     toastBeen: "{name} är markerad som besökt", toastNotBeen: "{name} har tagits bort från besökta", showBeen: "Har varit där",
-    beenProgress: "Du har besökt {n} av de {total} här.", wishNoteOut: "Din önskelista sparas bara på den här enheten.", wishNoteSignIn: "Logga in för att ha den på alla enheter",
+    beenProgress: "Du har besökt {n} av de {total} här.", wishNoteOut: "Din önskelista sparas bara på den här enheten.", wishNoteSignIn: "Logga in för att ha den på alla enheter", wishCompare: "Jämför dina sparade restauranger sida vid sida",
     wishNoteIn: "Din önskelista och dina besökta restauranger sparas på ditt konto.", wishSynced: "Sparat på ditt konto.", acctSee: "Se ditt konto",
     shareInsta: "Till Instagram: kopiera länken och klistra in den i en story eller ett meddelande.",
     shareMore: "Instagram, Meddelanden med mera",
@@ -1131,7 +1131,7 @@ const I18N = {
     acctLinkExpired: "Innskráningarhlekkurinn er útrunninn eða hefur þegar verið notaður. Ýttu á Skrá inn til að fá nýjan.",
     been: "Hef komið", beenAdd: "Merkja {name} sem heimsóttan", beenRemove: "Taka {name} af heimsóttum", beenAddT: "Merkja sem heimsóttan", beenRemoveT: "Taka af heimsóttum",
     toastBeen: "{name} merktur sem heimsóttur", toastNotBeen: "{name} tekinn af heimsóttum", showBeen: "Hef komið",
-    beenProgress: "Þú hefur heimsótt {n} af {total} hér.", wishNoteOut: "Óskalistinn er aðeins vistaður í þessu tæki.", wishNoteSignIn: "Skráðu þig inn til að hafa hann í öllum tækjum",
+    beenProgress: "Þú hefur heimsótt {n} af {total} hér.", wishNoteOut: "Óskalistinn er aðeins vistaður í þessu tæki.", wishNoteSignIn: "Skráðu þig inn til að hafa hann í öllum tækjum", wishCompare: "Berðu vistuðu veitingastaðina saman hlið við hlið",
     wishNoteIn: "Óskalistinn og heimsóttu staðirnir eru vistaðir á aðganginum þínum.", wishSynced: "Vistað á aðganginum þínum.", acctSee: "Sjá aðganginn",
     shareInsta: "Fyrir Instagram: afritaðu hlekkinn og límdu hann í sögu eða skilaboð.",
     shareMore: "Instagram, Skilaboð og fleira",
@@ -1237,7 +1237,7 @@ const I18N = {
     acctLinkExpired: "Aquest enllaç d'accés ha caducat o ja s'ha fet servir. Toca Inicia la sessió per obtenir-ne un de nou.",
     been: "Hi he estat", beenAdd: "Marca {name} com a visitat", beenRemove: "Treu {name} dels visitats", beenAddT: "Marca com a visitat", beenRemoveT: "Treu dels visitats",
     toastBeen: "{name} marcat com a visitat", toastNotBeen: "{name} tret dels visitats", showBeen: "Hi he estat",
-    beenProgress: "Has estat a {n} dels {total} d'aquí.", wishNoteOut: "Els preferits només es desen en aquest dispositiu.", wishNoteSignIn: "Inicia la sessió per tenir-los a tots els dispositius",
+    beenProgress: "Has estat a {n} dels {total} d'aquí.", wishNoteOut: "Els preferits només es desen en aquest dispositiu.", wishNoteSignIn: "Inicia la sessió per tenir-los a tots els dispositius", wishCompare: "Compara els teus restaurants desats un al costat de l'altre",
     wishNoteIn: "Els preferits i els restaurants visitats es desen al teu compte.", wishSynced: "Desat al teu compte.", acctSee: "Mostra el compte",
     shareInsta: "Per a Instagram, copia l'enllaç i enganxa'l en una història o un missatge.",
     shareMore: "Instagram, Missatges i més",
@@ -1343,7 +1343,7 @@ const I18N = {
     acctLinkExpired: "ลิงก์เข้าสู่ระบบหมดอายุหรือถูกใช้ไปแล้ว แตะเข้าสู่ระบบเพื่อรับลิงก์ใหม่",
     been: "เคยไปแล้ว", beenAdd: "ทำเครื่องหมายว่าเคยไป {name}", beenRemove: "ลบ {name} ออกจากร้านที่เคยไป", beenAddT: "ทำเครื่องหมายว่าเคยไป", beenRemoveT: "ลบออกจากร้านที่เคยไป",
     toastBeen: "ทำเครื่องหมายว่าเคยไป {name} แล้ว", toastNotBeen: "ลบ {name} ออกจากร้านที่เคยไปแล้ว", showBeen: "เคยไปแล้ว",
-    beenProgress: "คุณเคยไปแล้ว {n} จาก {total} ร้านที่นี่", wishNoteOut: "รายการโปรดบันทึกไว้ในอุปกรณ์นี้เท่านั้น", wishNoteSignIn: "เข้าสู่ระบบเพื่อใช้ได้ทุกอุปกรณ์",
+    beenProgress: "คุณเคยไปแล้ว {n} จาก {total} ร้านที่นี่", wishNoteOut: "รายการโปรดบันทึกไว้ในอุปกรณ์นี้เท่านั้น", wishNoteSignIn: "เข้าสู่ระบบเพื่อใช้ได้ทุกอุปกรณ์", wishCompare: "เปรียบเทียบร้านที่บันทึกไว้แบบเคียงข้างกัน",
     wishNoteIn: "รายการโปรดและร้านที่เคยไปบันทึกไว้ในบัญชีของคุณ", wishSynced: "บันทึกในบัญชีของคุณแล้ว", acctSee: "ดูบัญชีของคุณ",
     shareInsta: "สำหรับ Instagram ให้คัดลอกลิงก์แล้ววางในสตอรี่หรือข้อความ",
     shareMore: "Instagram ข้อความ และอื่น ๆ",
@@ -1467,7 +1467,7 @@ const I18N = {
     acctLinkExpired: "이 로그인 링크는 만료되었거나 이미 사용되었습니다. ‘로그인’을 눌러 새 링크를 받으세요.",
     been: "가 봤어요", beenAdd: "{name}에 가 봤다고 표시", beenRemove: "{name}의 ‘가 봤어요’ 해제", beenAddT: "가 봤다고 표시", beenRemoveT: "‘가 봤어요’ 해제",
     toastBeen: "{name}에 가 봤다고 표시했습니다", toastNotBeen: "{name}의 ‘가 봤어요’를 해제했습니다", showBeen: "가 본 곳",
-    beenProgress: "여기 있는 {total}곳 중 {n}곳에 가 봤습니다.", wishNoteOut: "위시리스트는 이 기기에만 저장됩니다.", wishNoteSignIn: "로그인하면 어느 기기에서나 쓸 수 있습니다",
+    beenProgress: "여기 있는 {total}곳 중 {n}곳에 가 봤습니다.", wishNoteOut: "위시리스트는 이 기기에만 저장됩니다.", wishNoteSignIn: "로그인하면 어느 기기에서나 쓸 수 있습니다", wishCompare: "저장한 레스토랑 나란히 비교하기",
     wishNoteIn: "위시리스트와 가 본 곳이 계정에 저장되어 있습니다.", wishCtaHome: "위시리스트는 이 기기에만 저장됩니다. 무료 계정을 만들면 어느 기기에서나 쓰고 가 본 레스토랑을 체크할 수 있습니다.",
     wishCtaBtn: "무료 가입", wishSynced: "계정에 저장되었습니다.", acctSee: "내 계정 보기",
     shareInsta: "Instagram에서는 링크를 복사해 스토리나 메시지에 붙여 넣으세요.",
@@ -1613,7 +1613,7 @@ const I18N = {
     acctLinkExpired: "Questo link di accesso è scaduto o è già stato usato. Tocca Accedi per riceverne uno nuovo.",
     been: "Ci sono stato", beenAdd: "Segna che sei stato da {name}", beenRemove: "Togli {name} dai visitati", beenAddT: "Segna come visitato", beenRemoveT: "Togli dai visitati",
     toastBeen: "{name} segnato come visitato", toastNotBeen: "{name} tolto dai visitati", showBeen: "Visitati",
-    beenProgress: "Sei stato in {n} dei {total} ristoranti di questa pagina.", wishNoteOut: "I tuoi preferiti sono salvati solo su questo dispositivo.", wishNoteSignIn: "Accedi per averli su ogni dispositivo",
+    beenProgress: "Sei stato in {n} dei {total} ristoranti di questa pagina.", wishNoteOut: "I tuoi preferiti sono salvati solo su questo dispositivo.", wishNoteSignIn: "Accedi per averli su ogni dispositivo", wishCompare: "Confronta i ristoranti salvati fianco a fianco",
     wishNoteIn: "I tuoi preferiti e i ristoranti visitati sono salvati nel tuo account.", wishCtaHome: "I tuoi preferiti sono salvati solo su questo dispositivo. Registrati gratis per averli su ogni dispositivo e segnare i ristoranti in cui sei stato.",
     wishCtaBtn: "Registrati gratis", wishSynced: "Salvato nel tuo account.", acctSee: "Vai al tuo account",
     shareInsta: "Per Instagram, copia il link e incollalo in una storia o in un messaggio.",
@@ -1871,6 +1871,8 @@ const SERVICE_LABEL = { before: "m1Title", included: "rcptIncl", plusplus: "rcpt
 const serviceLabel = (country) => SERVICE_LABEL[(SERVICE[country] || ["before"])[0]];
 // The share usually added on top of a menu price in that country, as a fraction (0.125 for 12.5%); unknown countries count as 0.
 const serviceAdd = (country) => (SERVICE[country] || [0, 0])[1] / 100;
+// When the prices were last checked, for the receipts' footer (destination pages and /compare/).
+const PRICES_CHECKED = new Date("2026-10-15T12:00:00Z");
 const symbolOf = (cur) => { const s = DATA.currencies[cur].symbol; return /[A-Za-z]$/.test(s) ? s + "\u00a0" : s; };
 // Prices in a restaurant's own currency, e.g. "£195" or "NT$4,980".
 function localMoney(n, cur) {
@@ -2051,7 +2053,7 @@ function addNearMe(map, points, { radius = Infinity, far = null } = {}) {
 // (and the installed app) a button for the phone's own share sheet, which reaches Instagram, Messages and the rest.
 // The share sheet gets the link only, because some apps' Copy keeps just the text when both are given.
 let shareText = () => t("shareTextHome");
-const shareUrl = () => location.origin + location.pathname + (LANG_PREF !== "en" ? "?lang=" + LANG_PREF : "");
+let shareUrl = () => location.origin + location.pathname + (LANG_PREF !== "en" ? "?lang=" + LANG_PREF : "");
 function renderSharePanel() {
   const url = shareUrl(), text = shareText(), e = encodeURIComponent;
   const links = [["X", "https://x.com/intent/post?text=" + e(text) + "&url=" + e(url)],

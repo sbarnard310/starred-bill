@@ -82,7 +82,7 @@
     acctLinkExpired: "Innloggingslenken har utløpt eller er allerede brukt. Trykk på Logg inn for å få en ny.",
     been: "Har vært der", beenAdd: "Merk {name} som besøkt", beenRemove: "Fjern {name} fra besøkte", beenAddT: "Merk som besøkt", beenRemoveT: "Fjern fra besøkte",
     toastBeen: "{name} er merket som besøkt", toastNotBeen: "{name} er fjernet fra besøkte", showBeen: "Har vært der",
-    beenProgress: "Du har besøkt {n} av de {total} her.", wishNoteOut: "Ønskelisten din lagres bare på denne enheten.", wishNoteSignIn: "Logg inn for å ha den på alle enheter",
+    beenProgress: "Du har besøkt {n} av de {total} her.", wishNoteOut: "Ønskelisten din lagres bare på denne enheten.", wishNoteSignIn: "Logg inn for å ha den på alle enheter", wishCompare: "Sammenlign de lagrede restaurantene side om side",
     wishNoteIn: "Ønskelisten din og restaurantene du har besøkt er lagret på kontoen din.", wishSynced: "Lagret på kontoen din.", acctSee: "Se kontoen din",
     shareInsta: "For Instagram: kopier lenken og lim den inn i en story eller melding.",
     shareMore: "Instagram, Meldinger og mer",

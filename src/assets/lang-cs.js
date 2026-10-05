@@ -82,7 +82,7 @@
     acctLinkExpired: "Tento přihlašovací odkaz vypršel nebo už byl použit. Klepněte na Přihlásit se a získáte nový.",
     been: "Navštíveno", beenAdd: "Označit {name} jako navštívenou", beenRemove: "Odebrat {name} z navštívených", beenAddT: "Označit jako navštívenou", beenRemoveT: "Odebrat z navštívených",
     toastBeen: "Označeno jako navštívené: {name}", toastNotBeen: "Odebráno z navštívených: {name}", showBeen: "Navštíveno",
-    beenProgress: "Navštívili jste {n} z {total} zdejších restaurací.", wishNoteOut: "Oblíbené se ukládají jen na tomto zařízení.", wishNoteSignIn: "Přihlaste se a mějte je na všech zařízeních",
+    beenProgress: "Navštívili jste {n} z {total} zdejších restaurací.", wishNoteOut: "Oblíbené se ukládají jen na tomto zařízení.", wishNoteSignIn: "Přihlaste se a mějte je na všech zařízeních", wishCompare: "Porovnejte uložené restaurace vedle sebe",
     wishNoteIn: "Vaše oblíbené a navštívené restaurace jsou uložené ve vašem účtu.", wishSynced: "Uloženo ve vašem účtu.", acctSee: "Zobrazit účet",
     shareInsta: "Pro Instagram zkopírujte odkaz a vložte ho do příběhu nebo zprávy.",
     shareMore: "Instagram, Zprávy a další",

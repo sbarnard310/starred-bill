@@ -82,7 +82,7 @@
     acctLinkExpired: "Liên kết đăng nhập đã hết hạn hoặc đã được dùng. Chạm Đăng nhập để nhận liên kết mới.",
     been: "Đã đến", beenAdd: "Đánh dấu đã đến {name}", beenRemove: "Bỏ đánh dấu đã đến {name}", beenAddT: "Đánh dấu đã đến", beenRemoveT: "Bỏ đánh dấu đã đến",
     toastBeen: "Đã đánh dấu đã đến {name}", toastNotBeen: "Đã bỏ đánh dấu đã đến {name}", showBeen: "Đã đến",
-    beenProgress: "Bạn đã đến {n} trên {total} nhà hàng ở đây.", wishNoteOut: "Danh sách của bạn chỉ được lưu trên thiết bị này.", wishNoteSignIn: "Đăng nhập để có trên mọi thiết bị",
+    beenProgress: "Bạn đã đến {n} trên {total} nhà hàng ở đây.", wishNoteOut: "Danh sách của bạn chỉ được lưu trên thiết bị này.", wishNoteSignIn: "Đăng nhập để có trên mọi thiết bị", wishCompare: "So sánh các nhà hàng đã lưu cạnh nhau",
     wishNoteIn: "Danh sách muốn đến và các nơi đã đến được lưu vào tài khoản của bạn.", wishSynced: "Đã lưu vào tài khoản.", acctSee: "Xem tài khoản",
     shareInsta: "Với Instagram, hãy sao chép liên kết và dán vào tin hoặc tin nhắn.",
     shareMore: "Instagram, Tin nhắn và hơn nữa",

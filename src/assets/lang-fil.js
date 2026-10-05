@@ -82,7 +82,7 @@
     acctLinkExpired: "Nag-expire na o nagamit na ang sign-in link na iyon. I-tap ang Mag-sign in para makakuha ng bago.",
     been: "Napuntahan na", beenAdd: "Markahan ang {name} bilang napuntahan na", beenRemove: "Alisin ang {name} sa napuntahan na", beenAddT: "Markahan bilang napuntahan na", beenRemoveT: "Alisin sa napuntahan na",
     toastBeen: "Minarkahan ang {name} bilang napuntahan na", toastNotBeen: "Inalis ang {name} sa napuntahan na", showBeen: "Napuntahan na",
-    beenProgress: "Napuntahan mo na ang {n} sa {total} dito.", wishNoteOut: "Sa device na ito lang naka-save ang wishlist mo.", wishNoteSignIn: "Mag-sign in para nasa bawat device ito",
+    beenProgress: "Napuntahan mo na ang {n} sa {total} dito.", wishNoteOut: "Sa device na ito lang naka-save ang wishlist mo.", wishNoteSignIn: "Mag-sign in para nasa bawat device ito", wishCompare: "Ihambing nang magkatabi ang mga naka-save na restawran",
     wishNoteIn: "Naka-save sa account mo ang wishlist at mga napuntahan mo.", wishSynced: "Naka-save sa account mo.", acctSee: "Tingnan ang account mo",
     shareInsta: "Para sa Instagram, kopyahin ang link at i-paste sa story o message.",
     shareMore: "Instagram, Messages at iba pa",

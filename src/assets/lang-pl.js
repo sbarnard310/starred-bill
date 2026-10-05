@@ -82,7 +82,7 @@
     acctLinkExpired: "Ten link do logowania wygasł lub został już użyty. Dotknij „Zaloguj się”, aby dostać nowy.",
     been: "Byłem tam", beenAdd: "Oznacz {name} jako odwiedzoną", beenRemove: "Usuń {name} z odwiedzonych", beenAddT: "Oznacz jako odwiedzoną", beenRemoveT: "Usuń z odwiedzonych",
     toastBeen: "Oznaczono jako odwiedzoną: {name}", toastNotBeen: "Usunięto z odwiedzonych: {name}", showBeen: "Odwiedzone",
-    beenProgress: "Odwiedzone tutaj: {n} z {total}.", wishNoteOut: "Ulubione są zapisane tylko na tym urządzeniu.", wishNoteSignIn: "Zaloguj się, aby mieć je na każdym urządzeniu",
+    beenProgress: "Odwiedzone tutaj: {n} z {total}.", wishNoteOut: "Ulubione są zapisane tylko na tym urządzeniu.", wishNoteSignIn: "Zaloguj się, aby mieć je na każdym urządzeniu", wishCompare: "Porównaj zapisane restauracje obok siebie",
     wishNoteIn: "Twoje ulubione i odwiedzone restauracje są zapisane na Twoim koncie.", wishSynced: "Zapisano na Twoim koncie.", acctSee: "Zobacz swoje konto",
     shareInsta: "Na Instagram: skopiuj link i wklej go do relacji lub wiadomości.",
     shareMore: "Instagram, Wiadomości i więcej",

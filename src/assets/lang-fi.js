@@ -82,7 +82,7 @@
     acctLinkExpired: "Kirjautumislinkki on vanhentunut tai jo käytetty. Saat uuden napauttamalla Kirjaudu.",
     been: "Olen käynyt", beenAdd: "Merkitse {name} käydyksi", beenRemove: "Poista {name} käydyistä", beenAddT: "Merkitse käydyksi", beenRemoveT: "Poista käydyistä",
     toastBeen: "{name} merkittiin käydyksi", toastNotBeen: "{name} poistettiin käydyistä", showBeen: "Olen käynyt",
-    beenProgress: "Olet käynyt {n}/{total} täkäläisessä ravintolassa.", wishNoteOut: "Toivelistasi tallennetaan vain tälle laitteelle.", wishNoteSignIn: "Kirjaudu, niin saat sen kaikille laitteille",
+    beenProgress: "Olet käynyt {n}/{total} täkäläisessä ravintolassa.", wishNoteOut: "Toivelistasi tallennetaan vain tälle laitteelle.", wishNoteSignIn: "Kirjaudu, niin saat sen kaikille laitteille", wishCompare: "Vertaa tallentamiasi ravintoloita rinnakkain",
     wishNoteIn: "Toivelistasi ja käydyt ravintolat on tallennettu tilillesi.", wishSynced: "Tallennettu tilillesi.", acctSee: "Näytä tilisi",
     shareInsta: "Instagramia varten kopioi linkki ja liitä se tarinaan tai viestiin.",
     shareMore: "Instagram, Viestit ja muut",

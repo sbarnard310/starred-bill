@@ -1072,3 +1072,78 @@ button.near-card:hover { border-color: var(--green); }
   .pick-actions { width: 100%; }
   .pick-actions > * { flex: 1; justify-content: center; }
 }
+
+/* /compare/: ticked wishlist restaurants as till receipts side by side. Each receipt's lines share rows with its
+   neighbours (subgrid), so Dinner, Lunch, Wine and the total line up across all of them. */
+.cmp-body { padding-block: 28px 40px; }
+/* The link to it from the homepage and account wishlists. */
+.wish-compare { margin: 10px 0 14px; }
+.wish-compare .btn-line { display: inline-block; text-decoration: none; }
+.cmp-pick-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.cmp-pick-head h2 { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; margin: 0; }
+.cmp-hint { color: var(--muted); margin: 0; font-size: .92rem; }
+.cmp-filter { display: block; max-width: 360px; margin-top: 12px; }
+.cmp-filter input { padding-block: 9px; }
+.cmp-pick { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.cmp-chip { display: flex; align-items: center; gap: 10px; padding: 8px 14px 8px 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); cursor: pointer; max-width: 100%; }
+.cmp-chip:hover { border-color: color-mix(in srgb, var(--green) 45%, var(--line)); }
+.cmp-chip.on { border-color: var(--green); background: var(--green-soft); }
+.cmp-chip:has(input:disabled) { opacity: .55; cursor: default; }
+.cmp-chip input { width: 18px; height: 18px; margin: 0; accent-color: var(--green); flex: none; }
+.cc-text { display: grid; min-width: 0; }
+.cc-name { font-weight: 600; line-height: 1.25; }
+.cc-sub { font-size: .8rem; color: var(--muted); }
+.cc-sub .stars svg { width: 11px; height: 11px; }
+.cmp-none { color: var(--muted); font-size: .9rem; }
+.cmp-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin: 26px 0 16px; }
+.cmp-receipts { --n: 2; display: grid; grid-template-columns: repeat(var(--n), minmax(0, 290px)); grid-template-rows: repeat(6, auto); justify-content: center; column-gap: 18px; padding-bottom: 12px; }
+.cmp-rc { position: relative; grid-row: span 6; display: grid; grid-template-rows: subgrid; row-gap: 3px; align-content: start; min-width: 0; padding: 10px 14px 8px; background: var(--rc-paper); border-radius: 4px 4px 0 0;
+  color: var(--rc-ink); font-family: var(--font-num); font-variant-numeric: tabular-nums; font-size: .82rem; line-height: 1.3; box-shadow: 0 1px 2px rgba(6, 20, 14, .08); }
+/* The torn edge along the bottom of each receipt. */
+.cmp-rc::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 9px;
+  background: linear-gradient(to bottom right, var(--rc-paper) 50%, transparent 50%) 0 0 / 12px 9px repeat-x, linear-gradient(to bottom left, var(--rc-paper) 50%, transparent 50%) 0 0 / 12px 9px repeat-x; }
+.cr-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "top top" "name acts" "meta meta" "where where" "notice notice";
+  column-gap: 4px; row-gap: 2px; padding-bottom: 8px; margin-bottom: 2px; border-bottom: 1px dashed var(--rc-rule); align-content: start; }
+.cr-head .rc-head { grid-area: top; padding-bottom: 6px; margin-bottom: 4px; }
+.cr-name { grid-area: name; align-self: center; }
+.cr-meta { grid-area: meta; }
+.cr-where { grid-area: where; }
+.cr-name { font-family: var(--font-display); font-weight: 400; font-size: 1.2rem; line-height: 1.2; margin: 2px 0 0; overflow-wrap: anywhere; }
+.cr-name a { color: inherit; text-decoration: none; }
+.cr-name a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.cr-meta, .cr-where { font-family: var(--font-body); font-size: .8rem; color: var(--rc-muted); }
+.cr-meta .stars svg { width: 12px; height: 12px; }
+.cr-head .notice { grid-area: notice; justify-self: start; margin-top: 4px; color: var(--rc-ink); background: color-mix(in srgb, #B3862B 26%, var(--rc-paper)); font-family: var(--font-body); }
+.cr-acts { grid-area: acts; align-self: start; display: flex; margin-right: -8px; }
+.cr-acts .wish, .cr-x { width: 30px; height: 30px; }
+.cr-acts .wish { color: var(--rc-muted); }
+.cr-acts .wish[aria-pressed="true"] { color: var(--heart); }
+.cr-x { border: 0; background: none; border-radius: 8px; color: var(--rc-muted); cursor: pointer; font-size: 1.3rem; line-height: 1; }
+.cr-x:hover { color: var(--rc-ink); background: var(--rc-band); }
+.cmp-rc .rc-line { align-self: start; }
+.cmp-rc .rc-total { align-self: end; }
+/* The lowest figure on a line: in green, with a small tick. */
+.cmp-rc .rc-line.best .rc-v { color: var(--rc-link); font-weight: 600; }
+.cmp-rc .rc-line.best .rc-v::before { content: "✓ "; font-weight: 400; }
+.cmp-rc .rc-foot { align-self: end; padding-top: 6px; }
+.cmp-verdict { max-width: 70ch; margin: 22px auto 0; text-align: center; }
+.cmp-verdict p { margin: 4px 0; }
+.cmp-rate { text-align: center; margin: 10px auto 0; }
+@media (max-width: 720px) {
+  .cmp-body { padding-block: 20px 32px; }
+  .cmp-pick { display: grid; }
+  .cmp-rc .rc-note { font-family: var(--font-body); font-size: .7rem; overflow-wrap: break-word; }
+  .cmp-receipts { column-gap: 10px; margin-inline: -6px; }
+  .cmp-rc { padding: 8px 9px 6px; font-size: .76rem; }
+  .cr-name { font-size: 1.02rem; }
+  .cr-head .rc-head { display: none; }
+  /* On phones the heart and × sit on their own line above the name. */
+  .cr-head { grid-template-columns: minmax(0, 1fr); grid-template-areas: "acts" "name" "meta" "where" "notice"; }
+  .cr-acts { justify-self: end; margin: -4px -6px -2px 0; }
+  /* Narrow receipts put each figure under its label. */
+  .cmp-rc .rc-line { grid-template-columns: 1fr; row-gap: 0; }
+  .cmp-rc .rc-dots { display: none; }
+  .cmp-rc .rc-v { text-align: left; white-space: normal; }
+  .cmp-rc .rc-k { white-space: normal; color: var(--rc-muted); font-size: .7rem; }
+  .cmp-rc .rc-total .rc-k { color: var(--rc-ink); }
+}

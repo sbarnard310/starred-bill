@@ -79,7 +79,7 @@
     acctLinkExpired: "See sisselogimislink on aegunud või juba kasutatud. Uue saamiseks puuduta „Logi sisse”.",
     been: "Olen käinud", beenAdd: "Märgi {name} külastatuks", beenRemove: "Eemalda {name} külastatute hulgast", beenAddT: "Märgi külastatuks", beenRemoveT: "Eemalda külastatute hulgast",
     toastBeen: "Märgitud külastatuks: {name}", toastNotBeen: "Eemaldatud külastatute hulgast: {name}", showBeen: "Külastatud",
-    beenProgress: "Oled käinud siin {n} restoranis {total}-st.", wishNoteOut: "Sinu soovinimekiri salvestatakse ainult selles seadmes.", wishNoteSignIn: "Logi sisse, et hoida seda kõigis seadmetes",
+    beenProgress: "Oled käinud siin {n} restoranis {total}-st.", wishNoteOut: "Sinu soovinimekiri salvestatakse ainult selles seadmes.", wishNoteSignIn: "Logi sisse, et hoida seda kõigis seadmetes", wishCompare: "Võrdle salvestatud restorane kõrvuti",
     wishNoteIn: "Sinu soovinimekiri ja külastatud restoranid on salvestatud sinu kontole.", wishSynced: "Salvestatud sinu kontole.", acctSee: "Vaata oma kontot",
     shareInsta: "Instagrami jaoks kopeeri link ja kleebi see loosse või sõnumisse.",
     shareMore: "Instagram, Sõnumid ja muu",

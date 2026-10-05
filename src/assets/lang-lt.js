@@ -79,7 +79,7 @@
     acctLinkExpired: "Ši prisijungimo nuoroda nebegalioja arba jau panaudota. Bakstelėkite „Prisijungti“, kad gautumėte naują.",
     been: "Lankiausi", beenAdd: "Pažymėti {name} kaip aplankytą", beenRemove: "Pašalinti {name} iš aplankytų", beenAddT: "Pažymėti kaip aplankytą", beenRemoveT: "Pašalinti iš aplankytų",
     toastBeen: "Pažymėta kaip aplankyta: {name}", toastNotBeen: "Pašalinta iš aplankytų: {name}", showBeen: "Aplankyti",
-    beenProgress: "Aplankėte {n} iš {total} čia esančių restoranų.", wishNoteOut: "Jūsų norų sąrašas saugomas tik šiame įrenginyje.", wishNoteSignIn: "Prisijunkite, kad jį turėtumėte visuose įrenginiuose",
+    beenProgress: "Aplankėte {n} iš {total} čia esančių restoranų.", wishNoteOut: "Jūsų norų sąrašas saugomas tik šiame įrenginyje.", wishNoteSignIn: "Prisijunkite, kad jį turėtumėte visuose įrenginiuose", wishCompare: "Palyginkite išsaugotus restoranus greta",
     wishNoteIn: "Jūsų norų sąrašas ir aplankyti restoranai išsaugoti jūsų paskyroje.", wishSynced: "Išsaugota jūsų paskyroje.", acctSee: "Žiūrėti paskyrą",
     shareInsta: "„Instagram“: nukopijuokite nuorodą ir įklijuokite ją į istoriją ar žinutę.",
     shareMore: "„Instagram“, žinutės ir kt.",

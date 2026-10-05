@@ -83,7 +83,7 @@
     acctLinkExpired: "Pautan log masuk itu telah tamat tempoh atau sudah digunakan. Ketik Log masuk untuk mendapatkan yang baharu.",
     been: "Pernah pergi", beenAdd: "Tandakan {name} sebagai pernah dikunjungi", beenRemove: "Buang {name} daripada senarai pernah dikunjungi", beenAddT: "Tandakan sebagai pernah dikunjungi", beenRemoveT: "Buang daripada senarai pernah dikunjungi",
     toastBeen: "{name} ditandakan sebagai pernah dikunjungi", toastNotBeen: "{name} dibuang daripada senarai pernah dikunjungi", showBeen: "Pernah pergi",
-    beenProgress: "Anda pernah ke {n} daripada {total} restoran di sini.", wishNoteOut: "Senarai hajat anda hanya disimpan pada peranti ini.", wishNoteSignIn: "Log masuk untuk menyimpannya pada setiap peranti",
+    beenProgress: "Anda pernah ke {n} daripada {total} restoran di sini.", wishNoteOut: "Senarai hajat anda hanya disimpan pada peranti ini.", wishNoteSignIn: "Log masuk untuk menyimpannya pada setiap peranti", wishCompare: "Bandingkan restoran yang disimpan sebelah-menyebelah",
     wishNoteIn: "Senarai hajat dan restoran yang pernah anda kunjungi disimpan dalam akaun anda.", wishSynced: "Disimpan dalam akaun anda.", acctSee: "Lihat akaun anda",
     shareInsta: "Untuk Instagram, salin pautan dan tampalkannya dalam story atau mesej.",
     shareMore: "Instagram, Mesej dan banyak lagi",

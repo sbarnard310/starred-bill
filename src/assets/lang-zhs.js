@@ -86,7 +86,7 @@
     acctLinkExpired: "这个登录链接已过期或已使用过，请点击“登录”获取新链接。",
     been: "去过了", beenAdd: "将{name}标记为去过", beenRemove: "取消{name}的去过标记", beenAddT: "标记为去过", beenRemoveT: "取消去过标记",
     toastBeen: "已将{name}标记为去过", toastNotBeen: "已取消{name}的去过标记", showBeen: "去过了",
-    beenProgress: "这里的 {total} 家餐厅中，你去过 {n} 家。", wishNoteOut: "你的心愿单只保存在这台设备上。", wishNoteSignIn: "登录即可在每台设备上保留",
+    beenProgress: "这里的 {total} 家餐厅中，你去过 {n} 家。", wishNoteOut: "你的心愿单只保存在这台设备上。", wishNoteSignIn: "登录即可在每台设备上保留", wishCompare: "并排比较你收藏的餐厅",
     wishNoteIn: "你的心愿单与去过清单已保存到你的账户。", wishSynced: "已保存到你的账户。", acctSee: "查看你的账户",
     shareInsta: "如需分享到 Instagram，请复制链接，再粘贴到快拍或消息中。",
     shareMore: "Instagram、信息及更多",

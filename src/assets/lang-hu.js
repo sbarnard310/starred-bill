@@ -81,7 +81,7 @@
     acctLinkExpired: "Ez a bejelentkezési link lejárt vagy már felhasználták. Koppints a Bejelentkezésre egy újért.",
     been: "Jártam itt", beenAdd: "{name} megjelölése meglátogatottként", beenRemove: "{name} törlése a meglátogatottak közül", beenAddT: "Megjelölés meglátogatottként", beenRemoveT: "Törlés a meglátogatottak közül",
     toastBeen: "{name} megjelölve meglátogatottként", toastNotBeen: "{name} törölve a meglátogatottak közül", showBeen: "Jártam itt",
-    beenProgress: "Az itteni {total} étteremből {n} helyen jártál.", wishNoteOut: "A kívánságlistád csak ezen az eszközön van mentve.", wishNoteSignIn: "Jelentkezz be, hogy minden eszközön meglegyen",
+    beenProgress: "Az itteni {total} étteremből {n} helyen jártál.", wishNoteOut: "A kívánságlistád csak ezen az eszközön van mentve.", wishNoteSignIn: "Jelentkezz be, hogy minden eszközön meglegyen", wishCompare: "Hasonlítsa össze a mentett éttermeket egymás mellett",
     wishNoteIn: "A kívánságlistád és a meglátogatott éttermek a fiókodban vannak mentve.", wishSynced: "Mentve a fiókodba.", acctSee: "A fiókod",
     shareInsta: "Instagramhoz másold ki a linket, és illeszd be egy történetbe vagy üzenetbe.",
     shareMore: "Instagram, Üzenetek és más",

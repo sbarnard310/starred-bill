@@ -1,0 +1,19 @@
+{
+  "name": "De Jonkman",
+  "city": "west-vlaanderen",
+  "area": "Sint-Kruis",
+  "address": "Maalsesteenweg 438, 8310, Sint-Kruis",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 361,
+  "dinnerType": "menu",
+  "dinner": 265,
+  "dinnerNote": "Tasting menu (other menus from €125)",
+  "sourceType": "site",
+  "source": "https://dejonkman.be/nl/menu",
+  "website": "https://dejonkman.be/nl",
+  "lat": 51.2077602,
+  "lng": 3.2782036,
+  "placeId": "ChIJWZ_9-Blaw0cRCxlitCQInrY"
+}

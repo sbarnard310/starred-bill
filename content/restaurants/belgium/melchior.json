@@ -1,0 +1,20 @@
+{
+  "name": "Melchior",
+  "city": "vlaams-brabant",
+  "area": "Tienen",
+  "address": "Veemarkt 47, 3300, Tienen",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.6,
+  "reviews": 365,
+  "dinnerType": "menu",
+  "dinner": 50,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.melchi-or.be/nl/menu",
+  "wine": 36,
+  "website": "https://www.melchi-or.be/",
+  "lat": 50.8058182,
+  "lng": 4.9408783,
+  "placeId": "ChIJewjNTWhswUcRKOUYMQ5kRAo"
+}

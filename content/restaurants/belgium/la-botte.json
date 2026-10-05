@@ -1,0 +1,17 @@
+{
+  "name": "La Botte",
+  "city": "limburg",
+  "area": "Genk",
+  "address": "Europalaan 99, 3600, Genk",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.8,
+  "reviews": 1238,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://labotte.be/",
+  "lat": 50.9662866,
+  "lng": 5.5011215,
+  "placeId": "ChIJW-19VNPewEcRIbWREWTVzlE"
+}

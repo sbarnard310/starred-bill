@@ -1,0 +1,20 @@
+{
+  "name": "Le Beau Rivage by Curtis",
+  "city": "namur",
+  "area": "Dave",
+  "address": "Rue du Rivage 8, 5100, Dave",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 257,
+  "dinnerType": "menu",
+  "dinner": 60,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "http://www.curtismaquet.be/wp-content/uploads/2026/08/Menu_Aout_Septembre_2026_Pages_EN.pdf",
+  "wine": 40,
+  "website": "https://www.curtismaquet.be/",
+  "lat": 50.414704,
+  "lng": 4.8851687,
+  "placeId": "ChIJ4wDobO-ZwUcRI2664C3euKw"
+}

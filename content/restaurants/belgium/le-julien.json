@@ -1,0 +1,17 @@
+{
+  "name": "Le Julien",
+  "city": "oost-vlaanderen",
+  "area": "Lotenhulle",
+  "address": "Prinsenstraat 9, 9880, Lotenhulle",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.7,
+  "reviews": 440,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://lejulien.be/",
+  "lat": 51.0598787,
+  "lng": 3.4666139,
+  "placeId": "ChIJP2avJyZww0cRMvNBCr5h3LE"
+}

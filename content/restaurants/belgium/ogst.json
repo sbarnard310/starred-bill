@@ -1,0 +1,17 @@
+{
+  "name": "Ogst",
+  "city": "limburg",
+  "area": "Hasselt",
+  "address": "Ridder Portmansstraat 4, 3500, Hasselt",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.6,
+  "reviews": 338,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ogst.be/",
+  "lat": 50.9294564,
+  "lng": 5.3335502,
+  "placeId": "ChIJY1ZdgoAhwUcRBpJOOB5BaEc"
+}

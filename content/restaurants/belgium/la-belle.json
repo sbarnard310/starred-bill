@@ -1,0 +1,20 @@
+{
+  "name": "La Belle",
+  "city": "antwerpen",
+  "area": "Geel",
+  "address": "Bel 162, 2440, Geel",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.6,
+  "reviews": 259,
+  "dinnerType": "menu",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu (other menus from €80)",
+  "sourceType": "site",
+  "source": "https://la-belle.be/nl/menu/",
+  "wine": 45,
+  "website": "https://la-belle.be/",
+  "lat": 51.1630964,
+  "lng": 5.0637505,
+  "placeId": "ChIJY7tqCwZKwUcRJkjfmdGo7fc"
+}

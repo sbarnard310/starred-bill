@@ -1,0 +1,23 @@
+{
+  "name": "Hoeve De Bies",
+  "city": "limburg",
+  "area": "St-Martens-Voeren",
+  "address": "Bies 4, 3790, St-Martens-Voeren",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €70)",
+  "sourceType": "site",
+  "source": "https://www.hoevedebies.be/nl/menu",
+  "wine": 60,
+  "lunch": 125,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.hoevedebies.be/nl/menu",
+  "website": "https://www.hoevedebies.be/",
+  "lat": 50.7466639,
+  "lng": 5.8150516,
+  "placeId": "ChIJm8em5iuTwEcRqc6I9hzxBoA"
+}

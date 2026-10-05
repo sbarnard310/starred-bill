@@ -1,0 +1,17 @@
+{
+  "name": "La Grange d'Hamois",
+  "city": "namur",
+  "area": "Emptinne",
+  "address": "Chaussée d'Andenne 10a, 5363, Emptinne",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.6,
+  "reviews": 413,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lagrangedhamois.be/",
+  "lat": 50.3343431,
+  "lng": 5.1037114,
+  "placeId": "ChIJD7wEc-mwwUcRLMPp4tFlAhI"
+}

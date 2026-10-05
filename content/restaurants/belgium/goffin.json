@@ -1,0 +1,20 @@
+{
+  "name": "Goffin",
+  "city": "west-vlaanderen",
+  "area": "Sint-Kruis",
+  "address": "Maalsesteenweg 2, 8310, Sint-Kruis",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 254,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €56)",
+  "sourceType": "site",
+  "source": "https://www.timothygoffin.be/menu",
+  "wine": 48,
+  "website": "https://timothygoffin.be/",
+  "lat": 51.2119551,
+  "lng": 3.2417056,
+  "placeId": "ChIJM1e4kq1Qw0cRd-VL6SDO-LY"
+}

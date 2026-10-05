@@ -1,0 +1,19 @@
+{
+  "name": "OAK",
+  "city": "oost-vlaanderen",
+  "area": "Gent",
+  "address": "Burgstraat 16, 9000, Gent",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 677,
+  "dinnerType": "menu",
+  "dinner": 159,
+  "dinnerNote": "Tasting menu (other menus from €75)",
+  "sourceType": "site",
+  "source": "https://oakgent.be/menu/",
+  "website": "https://www.oakgent.be/",
+  "lat": 51.0566815,
+  "lng": 3.7190482,
+  "placeId": "ChIJwfnUD2txw0cR0_9xO0hX36c"
+}

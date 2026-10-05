@@ -1,0 +1,17 @@
+{
+  "name": "Pré de chez vous",
+  "city": "namur",
+  "area": "Bouge",
+  "address": "Chaussée de Louvain 380, 5004, Bouge",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 365,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.predechezvous.be",
+  "lat": 50.4802711,
+  "lng": 4.882023,
+  "placeId": "ChIJ53j0S4OZwUcRxRBBPGi5gZM"
+}

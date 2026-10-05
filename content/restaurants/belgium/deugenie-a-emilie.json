@@ -1,0 +1,19 @@
+{
+  "name": "d'Eugénie à Emilie",
+  "city": "hainaut",
+  "area": "Baudour",
+  "address": "place de la Résistance 1, 7331, Baudour",
+  "stars": 2,
+  "cuisine": "Classic French",
+  "rating": 4.8,
+  "reviews": 361,
+  "dinnerType": "menu",
+  "dinner": 235,
+  "dinnerNote": "Tasting menu (other menus from €125)",
+  "sourceType": "site",
+  "source": "https://eugenie-emilie.be/nos-menus",
+  "website": "https://eugenie-emilie.be/",
+  "lat": 50.4833038,
+  "lng": 3.8379089,
+  "placeId": "ChIJsRhY4iJXwkcR8LEucY5oV4M"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Bistrot Blaise",
+  "city": "luxembourg-belgium",
+  "area": "Marche-en-Famenne",
+  "address": "Rue Porte Haute 5, 6900, Marche-en-Famenne",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.9,
+  "reviews": 291,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://bistrotblaise.be/",
+  "lat": 50.2265169,
+  "lng": 5.3451207,
+  "placeId": "ChIJYUIrKC9LwEcRK_zxlz6U6D8"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Le Vieux Château",
+  "city": "hainaut",
+  "area": "Flobecq",
+  "address": "rue du Docteur Degrave 23, 7880, Flobecq",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 630,
+  "dinnerType": "menu",
+  "dinner": 95,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://levieuxchateau.be/",
+  "website": "https://www.levieuxchateau.be/",
+  "lat": 50.7374064,
+  "lng": 3.7337919,
+  "placeId": "ChIJvWDVhfAGw0cRbST_ePiPVaY"
+}

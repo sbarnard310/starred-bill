@@ -1,0 +1,17 @@
+{
+  "name": "Sir Kwinten",
+  "city": "vlaams-brabant",
+  "area": "Sint-Kwintens-Lennik",
+  "address": "Markt 9, 1750, Sint-Kwintens-Lennik",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 713,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.sirkwinten.be/",
+  "lat": 50.8056605,
+  "lng": 4.1554453,
+  "placeId": "ChIJkwwnAlO4w0cRE97PHRm_cvc"
+}

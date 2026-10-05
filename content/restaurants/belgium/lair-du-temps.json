@@ -1,0 +1,19 @@
+{
+  "name": "L'air du temps",
+  "city": "namur",
+  "area": "Liernu",
+  "address": "rue de la Croix Monet 2, 5310, Liernu",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 986,
+  "dinnerType": "menu",
+  "dinner": 405,
+  "dinnerNote": "Tasting menu (other menus from €195)",
+  "sourceType": "site",
+  "source": "https://airdutemps.be/tableexclusive/",
+  "website": "https://airdutemps.be/",
+  "lat": 50.5927328,
+  "lng": 4.8329862,
+  "placeId": "ChIJv1MLXMh1wUcRydtIRRQyLXQ"
+}

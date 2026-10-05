@@ -1,0 +1,16 @@
+{
+  "name": "Bozar Restaurant",
+  "city": "bruxelles-capitale",
+  "address": "rue Baron Horta 3, 1000, Brussels",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.5,
+  "reviews": 637,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://bozarrestaurant.be/",
+  "lat": 50.8442419,
+  "lng": 4.359821,
+  "placeId": "ChIJY7sk7IDEw0cRa0IDhObt1Qs"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Attablez-vous",
+  "city": "namur",
+  "address": "Tienne Maquet 16, 5000, Namur",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.7,
+  "reviews": 754,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.attablezvous.be/",
+  "lat": 50.444706,
+  "lng": 4.8540444,
+  "placeId": "ChIJ54D-NYWZwUcReU-sygrne3w"
+}

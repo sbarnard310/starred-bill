@@ -1,0 +1,17 @@
+{
+  "name": "Modest",
+  "city": "limburg",
+  "area": "Opglabbeek",
+  "address": "Weg naar Opoeteren 117, 3660, Opglabbeek",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.7,
+  "reviews": 194,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantmodest.be/",
+  "lat": 51.0494814,
+  "lng": 5.599175,
+  "placeId": "ChIJYS1lLdzRwEcR7hUSNjHVKZs"
+}

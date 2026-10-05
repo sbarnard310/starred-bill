@@ -1,0 +1,23 @@
+{
+  "name": "The Jane",
+  "city": "antwerpen",
+  "address": "Limastraat 5, 2000, Antwerpen",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 1572,
+  "dinnerType": "menu",
+  "dinner": 325,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.thejaneantwerp.com/menu/",
+  "lunch": 175,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.thejaneantwerp.com/menu/",
+  "website": "https://www.thejaneantwerp.com",
+  "lat": 51.2343837,
+  "lng": 4.4046962,
+  "placeId": "ChIJvQDh9hj3w0cRPe9AMD95QGw"
+}

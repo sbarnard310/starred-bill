@@ -1,0 +1,19 @@
+{
+  "name": "La Roseraie Modave",
+  "city": "liege",
+  "area": "Modave",
+  "address": "route de Limet 80, 4577, Modave",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 603,
+  "dinnerType": "menu",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €50)",
+  "sourceType": "site",
+  "source": "https://www.laroseraiemodave.com/menus/",
+  "website": "https://www.laroseraiemodave.com/",
+  "lat": 50.4541319,
+  "lng": 5.2866657,
+  "placeId": "ChIJkYP82l2swUcRw1CVbx37FMc"
+}

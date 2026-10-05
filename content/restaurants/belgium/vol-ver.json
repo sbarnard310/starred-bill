@@ -1,0 +1,19 @@
+{
+  "name": "Vol-Ver",
+  "city": "west-vlaanderen",
+  "area": "Marke",
+  "address": "Watervalstraat 23, 8510, Marke",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 374,
+  "dinnerType": "menu",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €54)",
+  "sourceType": "site",
+  "source": "https://www.vol-ver.be/nl/menu/vol-ver-menu.html",
+  "website": "https://www.vol-ver.be/index.php/nl/",
+  "lat": 50.7970808,
+  "lng": 3.2351421,
+  "placeId": "ChIJ4TKZUEolw0cRREo1HOB3h7Q"
+}

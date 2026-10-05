@@ -1,0 +1,17 @@
+{
+  "name": "Fleur de Lin",
+  "city": "oost-vlaanderen",
+  "area": "Zele",
+  "address": "Lokerenbaan 100, 9240, Zele",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 512,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://fleurdelin.be/",
+  "lat": 51.0757529,
+  "lng": 4.040875,
+  "placeId": "ChIJs12TkoKaw0cRT2bEO-xxCfE"
+}

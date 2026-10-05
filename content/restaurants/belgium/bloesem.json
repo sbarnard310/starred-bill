@@ -1,0 +1,17 @@
+{
+  "name": "Bloesem",
+  "city": "antwerpen",
+  "area": "Borgerhout",
+  "address": "De Leescorfstraat 8, 2140, Borgerhout",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 106,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantbloesem.com/",
+  "lat": 51.2005469,
+  "lng": 4.4489079,
+  "placeId": "ChIJqdb6kt73w0cRBNxxsGgPBo4"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Misera",
+  "city": "antwerpen",
+  "address": "Michel de Braeystraat 18, 2000, Antwerpen",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.7,
+  "reviews": 108,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://nicolasmisera.com/",
+  "lat": 51.2055456,
+  "lng": 4.3817781,
+  "placeId": "ChIJj9psnq73w0cRRmuP7j0Y-p8"
+}

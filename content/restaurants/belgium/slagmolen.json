@@ -1,0 +1,20 @@
+{
+  "name": "Slagmolen",
+  "city": "limburg",
+  "area": "Opglabbeek",
+  "address": "Molenweg 177, 3660, Opglabbeek",
+  "stars": 2,
+  "cuisine": "French",
+  "rating": 4.8,
+  "reviews": 578,
+  "dinnerType": "menu",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://slagmolen.be/restaurant/",
+  "wine": 75,
+  "website": "https://www.slagmolen.be/",
+  "lat": 51.0432542,
+  "lng": 5.6155142,
+  "placeId": "ChIJfVlhtIHawEcRruVOXIWaMH4"
+}

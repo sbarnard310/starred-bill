@@ -1,0 +1,20 @@
+{
+  "name": "Zet'Joe by Geert Van Hecke",
+  "city": "west-vlaanderen",
+  "area": "Brugge",
+  "address": "Langestraat 11, 8000, Brugge",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.7,
+  "reviews": 325,
+  "dinnerType": "menu",
+  "dinner": 107,
+  "dinnerNote": "Tasting menu (other menus from €53)",
+  "sourceType": "site",
+  "source": "https://zetjoe.be/",
+  "wine": 39,
+  "website": "https://www.zetjoe.be",
+  "lat": 51.2097162,
+  "lng": 3.2321611,
+  "placeId": "ChIJzbceychQw0cRAX_4EtGWiRE"
+}

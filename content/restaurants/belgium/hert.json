@@ -1,0 +1,19 @@
+{
+  "name": "Hert",
+  "city": "antwerpen",
+  "area": "Turnhout",
+  "address": "Turnovatoren 18 (GPS: P.J. Brepolsplein), 2300, Turnhout",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 374,
+  "dinnerType": "menu",
+  "dinner": 90,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://hert.be/afhaalmenu/",
+  "website": "https://www.hert.be/",
+  "lat": 51.3230729,
+  "lng": 4.9521178,
+  "placeId": "ChIJo5OvKU2zxkcReF3MK9QyLI4"
+}

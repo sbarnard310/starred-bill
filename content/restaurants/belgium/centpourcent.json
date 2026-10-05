@@ -1,0 +1,20 @@
+{
+  "name": "Centpourcent",
+  "city": "antwerpen",
+  "area": "Sint-Katelijne-Waver",
+  "address": "Antwerpsesteenweg 1, 2860, Sint-Katelijne-Waver",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 443,
+  "dinnerType": "menu",
+  "dinner": 62,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.centpourcent.be/nl/de-kaart/menus/",
+  "wine": 80,
+  "website": "https://www.centpourcent.be/",
+  "lat": 51.0558544,
+  "lng": 4.4632984,
+  "placeId": "ChIJEatm5J_lw0cRX3pjF8uVAEg"
+}

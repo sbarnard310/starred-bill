@@ -1,0 +1,20 @@
+{
+  "name": "Cuchara",
+  "city": "limburg",
+  "area": "Lommel",
+  "address": "Lepelstraat 3, 3920, Lommel",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 313,
+  "dinnerType": "menu",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://cuchara.be/menu/",
+  "wine": 55,
+  "website": "https://www.cuchara.be",
+  "lat": 51.231034,
+  "lng": 5.3096729,
+  "placeId": "ChIJA3DaJLTSxkcR_OgK9d50CVU"
+}

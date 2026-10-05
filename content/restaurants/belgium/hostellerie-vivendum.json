@@ -1,0 +1,20 @@
+{
+  "name": "Hostellerie Vivendum",
+  "city": "limburg",
+  "area": "Dilsen",
+  "address": "Vissersstraat 2, 3650, Dilsen",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 470,
+  "dinnerType": "menu",
+  "dinner": 400,
+  "dinnerNote": "Tasting menu (other menus from €80)",
+  "sourceType": "site",
+  "source": "https://www.restaurant-vivendum.com/arrangementen",
+  "wine": 120,
+  "website": "https://www.restaurant-vivendum.com/",
+  "lat": 51.0332774,
+  "lng": 5.7367212,
+  "placeId": "ChIJc79Bg4zFwEcRHeAJ8z5xAQY"
+}

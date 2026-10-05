@@ -1,0 +1,17 @@
+{
+  "name": "Sensum Gent",
+  "city": "west-vlaanderen",
+  "area": "Sint-Denijs-Westrem",
+  "address": "Kortrijksesteenweg 1026, 9051, Sint-Denijs-Westrem",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 275,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://sensumgent.be/",
+  "lat": 51.0236852,
+  "lng": 3.7029908,
+  "placeId": "ChIJ17v_QcenxEcR8tP55_pRpaA"
+}

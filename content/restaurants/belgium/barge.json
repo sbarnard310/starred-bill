@@ -1,0 +1,16 @@
+{
+  "name": "Barge",
+  "city": "bruxelles-capitale",
+  "address": "boulevard d'Ypres 33, 1000, Brussels",
+  "stars": 1,
+  "cuisine": "Farm to table",
+  "rating": 4.8,
+  "reviews": 516,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://bargerestaurant.be/",
+  "lat": 50.8568731,
+  "lng": 4.3469912,
+  "placeId": "ChIJlS0j6pvDw0cR2DWORKF5U-g"
+}

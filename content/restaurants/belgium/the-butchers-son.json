@@ -1,0 +1,16 @@
+{
+  "name": "The Butcher's son",
+  "city": "antwerpen",
+  "address": "Boomgaardstraat 1, 2018, Antwerpen",
+  "stars": 1,
+  "cuisine": "Traditional Cuisine",
+  "rating": 4.4,
+  "reviews": 246,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.thebutchersson.be/",
+  "lat": 51.1994683,
+  "lng": 4.4159792,
+  "placeId": "ChIJNz0ttRL6w0cR1lO6a9TlgH8"
+}

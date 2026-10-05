@@ -1,0 +1,17 @@
+{
+  "name": "Rebelle",
+  "city": "west-vlaanderen",
+  "area": "Marke",
+  "address": "Rekkemsestraat 226, 8510, Marke",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 520,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantrebelle.be/",
+  "lat": 50.8039661,
+  "lng": 3.2218248,
+  "placeId": "ChIJvfs2fKw6w0cR6AicNgt47EM"
+}

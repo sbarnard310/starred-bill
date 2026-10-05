@@ -1,0 +1,20 @@
+{
+  "name": "Hostellerie St-Nicolas",
+  "city": "west-vlaanderen",
+  "area": "Elverdinge",
+  "address": "Veurnseweg 532, 8906, Elverdinge",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 517,
+  "dinnerType": "menu",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu (other menus from €60)",
+  "sourceType": "site",
+  "source": "https://hostellerie-stnicolas.com/restaurant/menuhsn/",
+  "wine": 110,
+  "website": "https://hostellerie-stnicolas.com/",
+  "lat": 50.8857292,
+  "lng": 2.818281,
+  "placeId": "ChIJ5eB5cOXF3EcRYvtXKTGXL90"
+}

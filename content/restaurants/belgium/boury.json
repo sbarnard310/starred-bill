@@ -1,0 +1,17 @@
+{
+  "name": "Boury",
+  "city": "west-vlaanderen",
+  "area": "Roeselare",
+  "address": "Rumbeeksesteenweg 300, 8800, Roeselare",
+  "stars": 3,
+  "cuisine": "Creative French",
+  "rating": 4.9,
+  "reviews": 905,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantboury.be/",
+  "lat": 50.9374466,
+  "lng": 3.1403981,
+  "placeId": "ChIJJWbHmcM1w0cRrzNcwfHum0M"
+}

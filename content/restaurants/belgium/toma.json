@@ -1,0 +1,16 @@
+{
+  "name": "¡Toma!",
+  "city": "liege",
+  "address": "boulevard de la Sauvenière 70 bis, 4000, Liège",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 412,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.toma-restaurant.be/",
+  "lat": 50.6437485,
+  "lng": 5.5660312,
+  "placeId": "ChIJMTEeSH37wEcRe2JRaTfEdPg"
+}

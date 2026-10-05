@@ -1,0 +1,20 @@
+{
+  "name": "Hof van Cleve - Floris Van Der Veken",
+  "city": "oost-vlaanderen",
+  "area": "Kruishoutem",
+  "address": "Riemegemstraat 1, 9770, Kruishoutem",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 750,
+  "dinnerType": "menu",
+  "dinner": 240,
+  "dinnerNote": "Tasting menu (other menus from €180)",
+  "sourceType": "site",
+  "source": "https://hofvancleve.com/menu",
+  "wine": 100,
+  "website": "https://www.hofvancleve.com/",
+  "lat": 50.9035909,
+  "lng": 3.509638,
+  "placeId": "ChIJ6U6ntWgUw0cRZrq8q_ohqUU"
+}

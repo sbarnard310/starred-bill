@@ -1,0 +1,20 @@
+{
+  "name": "Innesto",
+  "city": "limburg",
+  "area": "Zonhoven",
+  "address": "Kapelhof 13, 3520, Zonhoven",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 488,
+  "dinnerType": "menu",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.innesto.be/menu/",
+  "wine": 38,
+  "website": "https://www.innesto.be/",
+  "lat": 50.9874928,
+  "lng": 5.3687051,
+  "placeId": "ChIJRV2xBGcmwUcRAIzH_wY8Cbw"
+}

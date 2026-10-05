@@ -1,0 +1,17 @@
+{
+  "name": "JER",
+  "city": "limburg",
+  "area": "Hasselt",
+  "address": "Persoonstraat 16, 3500, Hasselt",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 278,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.jer.be/",
+  "lat": 50.9308937,
+  "lng": 5.3406079,
+  "placeId": "ChIJE3ehGIIhwUcR5ozVcID-wOA"
+}

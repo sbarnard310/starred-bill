@@ -1,0 +1,17 @@
+{
+  "name": "Sans Cravate",
+  "city": "west-vlaanderen",
+  "area": "Brugge",
+  "address": "Langestraat 159, 8000, Brugge",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.3,
+  "reviews": 765,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.sanscravate.be/nl/",
+  "lat": 51.2123748,
+  "lng": 3.2381662,
+  "placeId": "ChIJlSE0HLZQw0cRlxTWL7FhGII"
+}

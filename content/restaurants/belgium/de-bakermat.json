@@ -1,0 +1,17 @@
+{
+  "name": "De Bakermat",
+  "city": "oost-vlaanderen",
+  "area": "Ninove",
+  "address": "Leopoldlaan 95, 9400, Ninove",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 540,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.debakermatninove.be/",
+  "lat": 50.8262371,
+  "lng": 4.0203277,
+  "placeId": "ChIJfXkxdSW7w0cRco2u8gYkbPw"
+}

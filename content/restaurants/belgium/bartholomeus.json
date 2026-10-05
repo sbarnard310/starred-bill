@@ -1,0 +1,17 @@
+{
+  "name": "Bartholomeus",
+  "city": "west-vlaanderen",
+  "area": "Heist",
+  "address": "Zeedijk 267, 8301, Heist",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 496,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantbartholomeus.be/",
+  "lat": 51.341769,
+  "lng": 3.2436215,
+  "placeId": "ChIJPeqMVVioxEcRLjcV34aOWgs"
+}

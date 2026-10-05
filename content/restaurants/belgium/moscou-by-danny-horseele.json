@@ -1,0 +1,19 @@
+{
+  "name": "Moscou By Danny Horseele",
+  "city": "oost-vlaanderen",
+  "area": "Gentbrugge",
+  "address": "Oefenpleinstraat 3, 9050, Gentbrugge",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.9,
+  "reviews": 115,
+  "dinnerType": "menu",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://www.restaurantmoscou.be/menu",
+  "website": "https://www.restaurantmoscou.be/",
+  "lat": 51.0316454,
+  "lng": 3.7544109,
+  "placeId": "ChIJa901vSh1w0cRkeYP0Llv6sc"
+}

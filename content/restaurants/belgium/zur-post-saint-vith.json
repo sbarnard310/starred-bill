@@ -1,0 +1,17 @@
+{
+  "name": "Zur Post",
+  "city": "liege",
+  "area": "Saint Vith",
+  "address": "Hauptstraße 39, 4780, Saint Vith",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 244,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotelzurpost.be/",
+  "lat": 50.2803313,
+  "lng": 6.1261435,
+  "placeId": "ChIJr-zWuOSJv0cRelc1O2bSn2g"
+}

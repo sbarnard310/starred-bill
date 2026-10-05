@@ -1,0 +1,16 @@
+{
+  "name": "La Villa in the Sky",
+  "city": "bruxelles-capitale",
+  "address": "Avenue Louise 480, 1050, Brussels",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 1540,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lavillainthesky.be/",
+  "lat": 50.8172539,
+  "lng": 4.3719965,
+  "placeId": "ChIJURIANu_Ew0cRxqCnfbJzWfQ"
+}

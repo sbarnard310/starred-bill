@@ -1,0 +1,20 @@
+{
+  "name": "Maison Colette",
+  "city": "antwerpen",
+  "area": "Tongerlo",
+  "address": "De Trannoyplein 17, 2260, Tongerlo",
+  "stars": 2,
+  "cuisine": "French",
+  "rating": 4.6,
+  "reviews": 65,
+  "dinnerType": "menu",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://maison-colette.be/signatuurmenu",
+  "wine": 80,
+  "website": "https://maison-colette.be/",
+  "lat": 51.1038295,
+  "lng": 4.916895,
+  "placeId": "ChIJj-en5zhPwUcRln0RXSZqJsA"
+}

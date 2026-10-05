@@ -1,0 +1,17 @@
+{
+  "name": "Arden",
+  "city": "namur",
+  "area": "Villers-sur-Lesse",
+  "address": "rue de Montainpré 27, 5580, Villers-sur-Lesse",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.7,
+  "reviews": 41,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.chateaudevignee.be/",
+  "lat": 50.1577096,
+  "lng": 5.0748306,
+  "placeId": "ChIJn0_BK-LHwUcRq4_u64GcKkg"
+}

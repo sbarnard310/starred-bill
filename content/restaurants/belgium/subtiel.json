@@ -1,0 +1,17 @@
+{
+  "name": "Subtiel",
+  "city": "west-vlaanderen",
+  "area": "De Panne",
+  "address": "Westhoeklaan 31, 8660, De Panne",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 71,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.subtiel-dining.be/",
+  "lat": 51.093558,
+  "lng": 2.583072,
+  "placeId": "ChIJDfbHg7aX3EcRbSJC56whjpo"
+}

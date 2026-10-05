@@ -1,0 +1,17 @@
+{
+  "name": "'t Korennaer",
+  "city": "oost-vlaanderen",
+  "area": "Nieuwkerken-Waas",
+  "address": "Nieuwkerkenstraat 4, 9100, Nieuwkerken-Waas",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.7,
+  "reviews": 405,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.korennaer.be/nl/",
+  "lat": 51.1929598,
+  "lng": 4.1782208,
+  "placeId": "ChIJ98ftvPaLw0cRWTo1bmivL2c"
+}

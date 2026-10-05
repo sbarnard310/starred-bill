@@ -1,0 +1,19 @@
+{
+  "name": "Sense",
+  "city": "oost-vlaanderen",
+  "area": "Waasmunster",
+  "address": "Fortenstraat 62, 9250, Waasmunster",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.5,
+  "reviews": 134,
+  "dinnerType": "menu",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €69)",
+  "sourceType": "site",
+  "source": "https://www.restaurantsense.be/menu",
+  "website": "https://www.restaurantsense.be/",
+  "lat": 51.1229343,
+  "lng": 4.1029001,
+  "placeId": "ChIJecWclo2Pw0cRSvB-De6sTdE"
+}

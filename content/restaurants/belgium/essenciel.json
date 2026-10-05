@@ -1,0 +1,17 @@
+{
+  "name": "EssenCiel",
+  "city": "vlaams-brabant",
+  "area": "Leuven",
+  "address": "Bondgenotenlaan 114, 3000, Leuven",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 310,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.essenciel.be/",
+  "lat": 50.8805967,
+  "lng": 4.711476,
+  "placeId": "ChIJjRoSkNdgwUcRYrG2-h0eCWI"
+}

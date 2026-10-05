@@ -1,0 +1,17 @@
+{
+  "name": "Le Chalet de la Forêt",
+  "city": "bruxelles-capitale",
+  "area": "Uccle",
+  "address": "drêve de Lorraine 43, 1180, Uccle",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 732,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lechaletdelaforet.be/",
+  "lat": 50.7847298,
+  "lng": 4.3866247,
+  "placeId": "ChIJQwCS-TfFw0cRTTJBXQalDYo"
+}

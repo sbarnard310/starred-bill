@@ -1,0 +1,16 @@
+{
+  "name": "Nathan",
+  "city": "antwerpen",
+  "address": "Lange Koepoortstraat 13, 2000, Antwerpen",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 451,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurant-nathan.be/",
+  "lat": 51.2231806,
+  "lng": 4.4027957,
+  "placeId": "ChIJbfI9blj2w0cRlV7XhRfJGAk"
+}

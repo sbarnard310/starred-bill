@@ -1,0 +1,17 @@
+{
+  "name": "EED",
+  "city": "vlaams-brabant",
+  "area": "Leuven",
+  "address": "Vaartstraat 14, 3000, Leuven",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 235,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.eedleuven.be/",
+  "lat": 50.880639,
+  "lng": 4.7024848,
+  "placeId": "ChIJAx-M4tlgwUcRmXyrj6eUHOw"
+}

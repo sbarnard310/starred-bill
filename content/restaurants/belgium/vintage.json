@@ -1,0 +1,17 @@
+{
+  "name": "Vintage",
+  "city": "antwerpen",
+  "area": "Kontich",
+  "address": "Rijkerooistraat 14, 2550, Kontich",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 511,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.vintagekontich.be",
+  "lat": 51.1156066,
+  "lng": 4.4378315,
+  "placeId": "ChIJefSDVw3ww0cRgjL6KVthkQc"
+}

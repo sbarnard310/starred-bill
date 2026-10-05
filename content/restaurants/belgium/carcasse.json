@@ -1,0 +1,19 @@
+{
+  "name": "Carcasse",
+  "city": "west-vlaanderen",
+  "area": "Sint-Idesbald",
+  "address": "Henri Christiaenlaan 5, 8670, Sint-Idesbald",
+  "stars": 1,
+  "cuisine": "Meats and Grills",
+  "rating": 4.5,
+  "reviews": 784,
+  "dinnerType": "menu",
+  "dinner": 139,
+  "dinnerNote": "Tasting menu (other menus from €75)",
+  "sourceType": "site",
+  "source": "https://www.carcasse.be/menu",
+  "website": "https://www.carcasse.be/",
+  "lat": 51.1098819,
+  "lng": 2.6110153,
+  "placeId": "ChIJhzjOFACX3EcRePILDQnM_oU"
+}

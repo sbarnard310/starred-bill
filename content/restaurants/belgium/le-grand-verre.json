@@ -1,0 +1,17 @@
+{
+  "name": "Le Grand Verre",
+  "city": "luxembourg-belgium",
+  "area": "Durbuy",
+  "address": "Place aux Foires 26, 6940, Durbuy",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.5,
+  "reviews": 121,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.legrandverre.be/",
+  "lat": 50.3520328,
+  "lng": 5.4557638,
+  "placeId": "ChIJI2DizLNPwEcRUAKTOXA4jj4"
+}

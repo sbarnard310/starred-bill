@@ -1,0 +1,20 @@
+{
+  "name": "l'Impératif d'Éole",
+  "city": "hainaut",
+  "area": "Quévy-le-Grand",
+  "address": "Grand'Route 58, 7040, Quévy-le-Grand",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.4,
+  "reviews": 95,
+  "dinnerType": "menu",
+  "dinner": 139,
+  "dinnerNote": "Tasting menu (other menus from €59)",
+  "sourceType": "site",
+  "source": "https://www.limperatifdeole.be/menu",
+  "wine": 39,
+  "website": "https://www.limperatifdeole.be/",
+  "lat": 50.3799155,
+  "lng": 3.9652916,
+  "placeId": "ChIJtfLhHgBFwkcRwYTpjPWIc2M"
+}

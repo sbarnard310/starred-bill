@@ -1,0 +1,17 @@
+{
+  "name": "HAUT",
+  "city": "west-vlaanderen",
+  "area": "Oostende",
+  "address": "Leopold III-Laan 2 28.01, 8400, Oostende",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 357,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://hautrestaurant.be/",
+  "lat": 51.2275327,
+  "lng": 2.9245179,
+  "placeId": "ChIJ2xQ_6Yyp3EcR1xp9ebnh82Y"
+}

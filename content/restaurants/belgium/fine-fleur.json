@@ -1,0 +1,16 @@
+{
+  "name": "Fine Fleur",
+  "city": "antwerpen",
+  "address": "Lange Gasthuisstraat 41b, 2000, Antwerpen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 179,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantfinefleur.be/",
+  "lat": 51.2138105,
+  "lng": 4.4055889,
+  "placeId": "ChIJcUPHgIz3w0cRBTsuXyGn5NM"
+}

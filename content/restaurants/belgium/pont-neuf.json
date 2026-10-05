@@ -1,0 +1,16 @@
+{
+  "name": "Pont-Neuf",
+  "city": "antwerpen",
+  "address": "Verbindingsdok Oostkaai 9, 2000, Antwerpen",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.7,
+  "reviews": 120,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.pont-neuf.be/",
+  "lat": 51.230647,
+  "lng": 4.4080496,
+  "placeId": "ChIJtVnfgRj3w0cRKDFpC-MstcY"
+}

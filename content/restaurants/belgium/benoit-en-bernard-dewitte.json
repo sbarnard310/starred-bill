@@ -1,0 +1,19 @@
+{
+  "name": "Benoit en Bernard Dewitte",
+  "city": "oost-vlaanderen",
+  "area": "Ouwegem",
+  "address": "Beertegemstraat 52, 9750, Ouwegem",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 409,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €58)",
+  "sourceType": "site",
+  "source": "https://www.benoitdewitte.be/nl/menu",
+  "website": "https://www.restaurantdewitte.be",
+  "lat": 50.9133244,
+  "lng": 3.606346,
+  "placeId": "ChIJ52wMS2ISw0cRt2axufKrsfQ"
+}

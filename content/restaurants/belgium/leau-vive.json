@@ -1,0 +1,17 @@
+{
+  "name": "L'Eau Vive",
+  "city": "namur",
+  "area": "Arbre",
+  "address": "route de Floreffe 37, 5170, Arbre",
+  "stars": 2,
+  "cuisine": "Modern French",
+  "rating": 4.8,
+  "reviews": 665,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.eau-vive.be/",
+  "lat": 50.3636851,
+  "lng": 4.8469885,
+  "placeId": "ChIJ481JQ9qWwUcRCnIhVZ_EeJY"
+}

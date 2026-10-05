@@ -1,0 +1,19 @@
+{
+  "name": "Le Cor de Chasse",
+  "city": "luxembourg-belgium",
+  "area": "Wéris",
+  "address": "rue des Combattants 16, 6940, Wéris",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 487,
+  "dinnerType": "menu",
+  "dinner": 65,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.lecordechasse.be/media/images/upload/carte-restaurant-170726.pdf",
+  "website": "https://www.lecordechasse.be/",
+  "lat": 50.32426,
+  "lng": 5.52895,
+  "placeId": "ChIJZYQ-T7tPwEcRxkxSxwmJUyU"
+}

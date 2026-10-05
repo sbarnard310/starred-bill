@@ -1,0 +1,17 @@
+{
+  "name": "Tinèlle",
+  "city": "antwerpen",
+  "area": "Mechelen",
+  "address": "Goswin de Stassartstraat 90, 2800, Mechelen",
+  "stars": 1,
+  "cuisine": "French Contemporary",
+  "rating": 4.5,
+  "reviews": 410,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://tinelle.be/",
+  "lat": 51.0336931,
+  "lng": 4.4800059,
+  "placeId": "ChIJxRJSYB3lw0cRilR6q9eF2sU"
+}

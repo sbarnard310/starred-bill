@@ -1,0 +1,18 @@
+{
+  "name": "Zilte",
+  "city": "antwerpen",
+  "address": "Hanzestedenplaats 5, 2000, Antwerpen",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 655,
+  "dinnerType": "menu",
+  "dinner": 340,
+  "dinnerNote": "Tasting menu (other menus from €210)",
+  "sourceType": "site",
+  "source": "https://www.zilte.be/menu",
+  "website": "https://www.zilte.be/",
+  "lat": 51.228828,
+  "lng": 4.4047543,
+  "placeId": "ChIJBXfAoKQ1wUcR6RTA6Ko7laI"
+}

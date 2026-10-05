@@ -1,0 +1,19 @@
+{
+  "name": "Nebo",
+  "city": "antwerpen",
+  "address": "Panamarenkoplein 5, 2000, Antwerpen",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 192,
+  "dinnerType": "menu",
+  "dinner": 90,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurantnebo.be/menu",
+  "wine": 50,
+  "website": "https://www.restaurantnebo.be",
+  "lat": 51.2051513,
+  "lng": 4.3829209,
+  "placeId": "ChIJzzbG3f_3w0cRQLYw8YYuq14"
+}

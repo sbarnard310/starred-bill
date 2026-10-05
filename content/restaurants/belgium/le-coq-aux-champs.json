@@ -1,0 +1,20 @@
+{
+  "name": "Le Coq aux Champs",
+  "city": "liege",
+  "area": "Soheit-Tinlot",
+  "address": "rue du Montys 71, 4557, Soheit-Tinlot",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.7,
+  "reviews": 918,
+  "dinnerType": "menu",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu (other menus from €50)",
+  "sourceType": "site",
+  "source": "https://www.lecoqauxchamps.be/menu",
+  "wine": 36,
+  "website": "https://www.lecoqauxchamps.be/",
+  "lat": 50.47134,
+  "lng": 5.3878484,
+  "placeId": "ChIJgYrhMHxTwEcRopXMP7AdyMk"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Philippe Fauchet",
+  "city": "liege",
+  "area": "Saint-Georges-sur-Meuse",
+  "address": "rue de Warfée 62, 4470, Saint-Georges-sur-Meuse",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 322,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://philippefauchet.be/le-menu/",
+  "website": "https://www.philippefauchet.be/",
+  "lat": 50.6096146,
+  "lng": 5.37086,
+  "placeId": "ChIJm6VJcdcBwUcRDiojP78doF8"
+}

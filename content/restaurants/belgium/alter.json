@@ -1,0 +1,19 @@
+{
+  "name": "Alter",
+  "city": "limburg",
+  "area": "Tongeren",
+  "address": "Bilzersteenweg 366, 3700, Tongeren",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 392,
+  "dinnerType": "menu",
+  "dinner": 115,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://restaurant-alter.be/",
+  "website": "https://www.restaurant-alter.be/",
+  "lat": 50.8024317,
+  "lng": 5.4657753,
+  "placeId": "ChIJv90KSn7hwEcRNiMX0wcF_o8"
+}

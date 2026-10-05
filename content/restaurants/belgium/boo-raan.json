@@ -1,0 +1,19 @@
+{
+  "name": "Boo Raan",
+  "city": "west-vlaanderen",
+  "area": "Knokke",
+  "address": "Edward Verheyestraat 17, 8300, Knokke",
+  "stars": 1,
+  "cuisine": "Thai",
+  "rating": 4.5,
+  "reviews": 422,
+  "dinnerType": "menu",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu (other menus from €70)",
+  "sourceType": "site",
+  "source": "https://booraan.be",
+  "website": "https://booraan.be",
+  "lat": 51.3397049,
+  "lng": 3.2893828,
+  "placeId": "ChIJe4QkcNKnxEcRk5bL5ZdYy-E"
+}

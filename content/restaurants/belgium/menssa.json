@@ -1,0 +1,20 @@
+{
+  "name": "Menssa",
+  "city": "bruxelles-capitale",
+  "area": "Woluwe-Saint-Pierre",
+  "address": "Avenue de Tervueren 453, 1150, Woluwe-Saint-Pierre",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 176,
+  "dinnerType": "menu",
+  "dinner": 370,
+  "dinnerNote": "Tasting menu (other menus from €155)",
+  "sourceType": "site",
+  "source": "https://www.menssa.be/",
+  "wine": 85,
+  "website": "https://menssa.be",
+  "lat": 50.8228567,
+  "lng": 4.4466158,
+  "placeId": "ChIJrfiY8NXbw0cRer3pt1VSa2c"
+}

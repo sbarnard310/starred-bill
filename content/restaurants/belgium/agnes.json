@@ -1,0 +1,17 @@
+{
+  "name": "Agnes",
+  "city": "vlaams-brabant",
+  "area": "Sint-Martens-Bodegem",
+  "address": "Processiestraat 3, 1700, Sint-Martens-Bodegem",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.9,
+  "reviews": 99,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://agnes.restaurant",
+  "lat": 50.8621519,
+  "lng": 4.2149344,
+  "placeId": "ChIJPTULVpzBw0cRcE4AGVVy8Og"
+}

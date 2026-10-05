@@ -1,0 +1,17 @@
+{
+  "name": "Hof Ter Hulst",
+  "city": "antwerpen",
+  "area": "Hulshout",
+  "address": "Kerkstraat 33, 2235, Hulshout",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.7,
+  "reviews": 319,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hofterhulst.be/",
+  "lat": 51.0769653,
+  "lng": 4.793442,
+  "placeId": "ChIJ_QeEsX5awUcRClXBqSBkzE0"
+}

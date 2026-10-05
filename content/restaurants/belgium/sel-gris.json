@@ -1,0 +1,17 @@
+{
+  "name": "Sel Gris",
+  "city": "west-vlaanderen",
+  "area": "Knokke",
+  "address": "Zeedijk 314, 8301, Knokke",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 647,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.selgris.be/nl",
+  "lat": 51.3441513,
+  "lng": 3.2563085,
+  "placeId": "ChIJLwcA2VioxEcReCD8wyzVR8A"
+}

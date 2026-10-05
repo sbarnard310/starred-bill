@@ -1,0 +1,18 @@
+{
+  "name": "Bistrot du Nord",
+  "city": "antwerpen",
+  "address": "Lange Dijkstraat 36, 2060, Antwerpen",
+  "stars": 1,
+  "cuisine": "Traditional Cuisine",
+  "rating": 4.8,
+  "reviews": 270,
+  "dinnerType": "menu",
+  "dinner": 59,
+  "dinnerNote": "Tasting menu (other menus from €57)",
+  "sourceType": "site",
+  "source": "https://www.bistrotdunord.be/menu/",
+  "website": "https://www.bistrotdunord.be/",
+  "lat": 51.2275728,
+  "lng": 4.418654,
+  "placeId": "ChIJM1turqz3w0cRxNTm7ow7ZzQ"
+}

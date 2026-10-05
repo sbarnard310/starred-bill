@@ -1,0 +1,16 @@
+{
+  "name": "Héliport Brasserie",
+  "city": "liege",
+  "address": "allée de Érables, 4000, Liège",
+  "stars": 1,
+  "cuisine": "Creative French",
+  "rating": 4.4,
+  "reviews": 275,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.heliportbrasserie.be/-rubrique3-.html",
+  "lat": 50.5789946,
+  "lng": 5.5961592,
+  "placeId": "ChIJWZv9Z5j3wEcRVAc7p_mzONc"
+}

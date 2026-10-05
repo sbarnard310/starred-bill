@@ -1,0 +1,16 @@
+{
+  "name": "Comme chez Soi",
+  "city": "bruxelles-capitale",
+  "address": "place Rouppe 23, 1000, Brussels",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.7,
+  "reviews": 868,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.commechezsoi.be/",
+  "lat": 50.8423511,
+  "lng": 4.3459079,
+  "placeId": "ChIJTQxNAnrEw0cRsz3Wx2HWO5o"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Les Gourmands",
+  "city": "hainaut",
+  "area": "Blaregnies",
+  "address": "rue de Sars 15, 7040, Blaregnies",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.4,
+  "reviews": 38,
+  "dinnerType": "menu",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu (other menus from €50)",
+  "sourceType": "site",
+  "source": "https://www.les-gourmands.be/menu-incontournable/",
+  "website": "https://www.les-gourmands.be/",
+  "lat": 50.360669,
+  "lng": 3.8873851,
+  "placeId": "ChIJAy5Nax1dwkcRW5SdZPjesDA"
+}

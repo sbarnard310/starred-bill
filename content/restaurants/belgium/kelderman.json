@@ -1,0 +1,17 @@
+{
+  "name": "Kelderman",
+  "city": "oost-vlaanderen",
+  "area": "Aalst",
+  "address": "Parklaan 4, 9300, Aalst",
+  "stars": 1,
+  "cuisine": "Traditional Cuisine",
+  "rating": 4.8,
+  "reviews": 353,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://visrestaurant-kelderman.be/",
+  "lat": 50.9301848,
+  "lng": 4.041829,
+  "placeId": "ChIJWwYLbUO9w0cRKZxSFBRV6_4"
+}

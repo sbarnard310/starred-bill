@@ -1,0 +1,17 @@
+{
+  "name": "Da Mimmo",
+  "city": "bruxelles-capitale",
+  "area": "Woluwe-Saint-Lambert",
+  "address": "avenue du Roi Chevalier 24, 1200, Woluwe-Saint-Lambert",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.6,
+  "reviews": 415,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.da-mimmo.be/",
+  "lat": 50.8435331,
+  "lng": 4.418125,
+  "placeId": "ChIJja1dpVfbw0cRkQQNN2ApMsc"
+}

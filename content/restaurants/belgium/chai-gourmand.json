@@ -1,0 +1,17 @@
+{
+  "name": "Chai Gourmand",
+  "city": "namur",
+  "area": "Beuzet",
+  "address": "rue Chainisse 53, 5030, Beuzet",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 499,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.chaigourmand.be/",
+  "lat": 50.5295085,
+  "lng": 4.7455322,
+  "placeId": "ChIJ247srj-CwUcRiYTPSSCjb04"
+}

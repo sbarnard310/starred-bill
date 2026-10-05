@@ -1,0 +1,17 @@
+{
+  "name": "Neon",
+  "city": "antwerpen",
+  "area": "Lier",
+  "address": "Barbara-Vettersplein 4, 2500, Lier",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.9,
+  "reviews": 162,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.neonrestaurant.be",
+  "lat": 51.13007,
+  "lng": 4.57375,
+  "placeId": "ChIJaZihUiz9w0cR3WdAMeNC_iI"
+}

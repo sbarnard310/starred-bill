@@ -1,0 +1,17 @@
+{
+  "name": "De Kristalijn",
+  "city": "limburg",
+  "area": "Genk",
+  "address": "Wiemesmeerstraat 105, 3600, Genk",
+  "stars": 1,
+  "cuisine": "Modern French",
+  "rating": 4.7,
+  "reviews": 459,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.dekristalijn.be/",
+  "lat": 50.9700557,
+  "lng": 5.5558768,
+  "placeId": "ChIJOzTrzPvbwEcRmE88jaYIB-4"
+}

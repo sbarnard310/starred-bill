@@ -1,0 +1,20 @@
+{
+  "name": "Maison Marit",
+  "city": "brabant-wallon",
+  "area": "Braine-l'Alleud",
+  "address": "chaussée de Nivelles 336, 1420, Braine-l'Alleud",
+  "stars": 1,
+  "cuisine": "Classic French",
+  "rating": 4.7,
+  "reviews": 465,
+  "dinnerType": "menu",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu (other menus from €55)",
+  "sourceType": "site",
+  "source": "https://www.maisonmarit.be/nl/menu",
+  "wine": 40,
+  "website": "https://www.maisonmarit.be/",
+  "lat": 50.6602202,
+  "lng": 4.3797168,
+  "placeId": "ChIJ-XAh8grSw0cRfPqNNCqsUr4"
+}

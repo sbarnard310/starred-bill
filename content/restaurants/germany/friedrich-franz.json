@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 131,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 285,
+  "dinnerNote": "Tasting menu (other menus from €195)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/bad-doberan/friedrich-franz-9b",
   "website": "https://www.grandhotel-heiligendamm.de/",
   "lat": 54.143778,
   "lng": 11.8423661,
@@ -21,6 +23,6 @@
   ],
   "chef": "Ronny Siewert",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 195 €)",
   "cuisineDe": "Moderne Küche"
 }

@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 556,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/rottach-egern/haubentaucher-40",
   "website": "https://www.haubentaucher-tegernsee.de/",
   "lat": 47.6953833,
   "lng": 11.766113,
@@ -20,6 +22,6 @@
   ],
   "chef": "Alois Neuschmid",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 115 €)",
   "cuisineDe": "Kreativ"
 }

@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 78,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu (other menus from €129)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/bietigheim-bissingen/maerz---das-restaurant-4b",
   "website": "https://maerzundmaerz.de/",
   "lat": 48.9609392,
   "lng": 9.1290315,
@@ -18,7 +20,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
   "cuisineDe": "Französisch-kreativ",
   "chef": "Benjamin Maerz",
   "chefSource": "press"

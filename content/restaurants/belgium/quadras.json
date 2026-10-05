@@ -8,8 +8,15 @@
   "rating": 4.8,
   "reviews": 235,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 158,
+  "dinnerNote": "Tasting menu (other menus from €75)",
+  "sourceType": "press",
+  "source": "https://www.gaultmillau.be/en/restaurants/quadras-saint-vith",
+  "lunch": 69,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gaultmillau.be/en/restaurants/quadras-saint-vith",
   "website": "https://www.restaurant-quadras.be/",
   "lat": 50.2844902,
   "lng": 6.1220795,
@@ -18,12 +25,14 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 75)",
   "cuisineNl": "Creatief",
   "areaNl": "Sankt Vith",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 75 €)",
   "cuisineFr": "Cuisine créative",
   "areaFr": "Saint-Vith",
   "chef": "Ricarda Grommes",
-  "chefSource": "press"
+  "chefSource": "press",
+  "lunchNoteNl": "Lunchmenu",
+  "lunchNoteFr": "Menu déjeuner"
 }

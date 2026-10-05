@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 778,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/ratatouille-food-wine-haarlem",
   "website": "https://ratatouillefoodandwine.nl/",
   "lat": 52.3787751,
   "lng": 4.6376115,
@@ -21,6 +23,6 @@
   ],
   "chef": "Jozua Jaring",
   "chefSource": "site",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 110)",
   "cuisineNl": "Moderne keuken"
 }

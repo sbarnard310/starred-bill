@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 444,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 198,
+  "dinnerNote": "Tasting menu (other menus from €166)",
+  "sourceType": "press",
+  "source": "https://www.der-grosse-guide.de/place/1487-apron",
   "website": "https://www.restaurant-apron.at/",
   "lat": 48.1995377,
   "lng": 16.3771002,
@@ -17,7 +19,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 166 €)",
   "cuisineDe": "Kreativ",
   "chef": "Jakob Karner",
   "chefSource": "press"

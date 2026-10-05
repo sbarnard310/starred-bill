@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 941,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 113,
+  "dinnerNote": "Tasting menu (other menus from €68)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/dresden/restaurant-genuss-atelier-f7",
   "website": "https://www.genuss-atelier.net/",
   "lat": 51.0676334,
   "lng": 13.7761213,
@@ -20,6 +22,6 @@
   ],
   "chef": "Marcus Blonkowski",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 68 €)",
   "cuisineDe": "Moderne Küche"
 }

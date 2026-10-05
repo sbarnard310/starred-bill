@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 31,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 220,
+  "dinnerNote": "Tasting menu (other menus from €190)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/andernach/purs-new-nordic-japanese-cuisine-6c",
   "website": "https://purs.com/",
   "lat": 50.4389346,
   "lng": 7.3973765,
@@ -18,7 +20,7 @@
   "diets": [
     "vegetarian-menu"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 190 €)",
   "chef": "Christian Eckhardt",
   "chefSource": "press"
 }

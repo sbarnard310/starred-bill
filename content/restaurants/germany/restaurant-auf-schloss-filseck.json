@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 214,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €150)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/uhingen/restaurant-auf-schloss-filseck-e0",
   "website": "https://www.restaurant-auf-schloss-filseck.de/",
   "lat": 48.7008984,
   "lng": 9.6043769,
@@ -21,6 +23,6 @@
   ],
   "chef": "Daniele Corona",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 150 €)",
   "cuisineDe": "Mediterran"
 }

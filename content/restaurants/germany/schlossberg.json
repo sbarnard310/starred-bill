@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 67,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 230,
+  "dinnerNote": "Tasting menu (other menus from €158)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/baiersbronn/schlossberg-a0",
   "website": "https://www.hotel-sackmann.de/",
   "lat": 48.5970111,
   "lng": 8.3838973,
@@ -22,6 +24,6 @@
   ],
   "chef": "Jörg Sackmann and Nico Sackmann",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 158 €)",
   "cuisineDe": "Kreativ"
 }

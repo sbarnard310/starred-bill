@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 649,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berlin/golvet-12",
   "website": "https://golvet.de/",
   "lat": 52.5055114,
   "lng": 13.3676288,
@@ -21,6 +23,6 @@
   ],
   "chef": "Nicholas Hahn",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
   "cuisineDe": "Kreativ"
 }

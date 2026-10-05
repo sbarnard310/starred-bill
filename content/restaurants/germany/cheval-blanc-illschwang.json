@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 36,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 224,
+  "dinnerNote": "Tasting menu (other menus from €188)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/illschwang/cheval-blanc-36",
   "website": "https://www.weisses-ross.de/",
   "lat": 49.4480661,
   "lng": 11.6842236,
@@ -21,6 +23,6 @@
   ],
   "chef": "Christian Fleischmann",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 188 €)",
   "cuisineDe": "Klassische Küche"
 }

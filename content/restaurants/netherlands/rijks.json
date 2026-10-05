@@ -7,8 +7,10 @@
   "rating": 4.4,
   "reviews": 1830,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 140,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/rijks-amsterdam",
   "website": "https://www.rijksrestaurant.nl/",
   "lat": 52.3595346,
   "lng": 4.8842855,
@@ -22,6 +24,6 @@
   ],
   "chef": "Joris Bijdendijk",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief"
 }

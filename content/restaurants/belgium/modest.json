@@ -10,6 +10,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 48,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gaultmillau.be/en/restaurants/modest-opglabbeek",
   "website": "https://www.restaurantmodest.be/",
   "lat": 51.0494814,
   "lng": 5.599175,
@@ -23,5 +28,7 @@
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
   "cuisineFr": "Cuisine française créative",
   "chef": "Sander Spreeuwers",
-  "chefSource": "press"
+  "chefSource": "press",
+  "lunchNoteNl": "Lunchmenu",
+  "lunchNoteFr": "Menu déjeuner"
 }

@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 232,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 285,
+  "dinnerNote": "Tasting menu",
+  "wine": 179,
+  "sourceType": "press",
+  "source": "https://www.travelsforstars.com/blog/2025/07/31/ophelia-konstanz",
   "website": "https://www.restaurant-ophelia.de/",
   "lat": 47.6672561,
   "lng": 9.1874379,
@@ -18,7 +21,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Französisch-kreativ",
   "areaDe": "Konstanz",
   "chef": "Dirk Hoberg",

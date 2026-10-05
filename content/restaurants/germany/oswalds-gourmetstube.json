@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 38,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 239,
+  "dinnerNote": "Tasting menu (other menus from €199)",
+  "sourceType": "press",
+  "source": "https://www.der-grosse-guide.de/place/872-oswald-39-s-gourmetstube",
   "website": "https://www.hotel-oswald.de/",
   "lat": 49.0135383,
   "lng": 13.0296432,
@@ -21,6 +23,6 @@
   ],
   "chef": "Thomas Gerber",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 199 €)",
   "cuisineDe": "Französisch-modern"
 }

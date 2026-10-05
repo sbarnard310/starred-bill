@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 368,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.falter.at/lokal/3209/pramerl-the-wolf",
   "website": "https://pramerlandthewolf.com/",
   "lat": 48.2220395,
   "lng": 16.3648603,
@@ -17,7 +19,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ",
   "chef": "Wolfgang Zankl",
   "chefSource": "press"

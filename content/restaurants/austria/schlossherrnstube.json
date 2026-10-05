@@ -8,8 +8,10 @@
   "rating": 5,
   "reviews": 1,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 198,
+  "dinnerNote": "Tasting menu (other menus from €128)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/at/ischgl/schlossherrnstube-cf",
   "notice": "Temporarily closed (Google)",
   "website": "https://www.schlosshotel-ischgl.com/de/gourmet-fine-dine/schlossherrnstube",
   "lat": 47.0087994,
@@ -21,6 +23,6 @@
   ],
   "chef": "Patrick Raaß",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 128 €)",
   "cuisineDe": "Modern"
 }

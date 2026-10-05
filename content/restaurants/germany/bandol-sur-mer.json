@@ -7,8 +7,10 @@
   "rating": 4.9,
   "reviews": 364,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 174,
+  "dinnerNote": "Tasting menu (other menus from €149)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berlin/bandol-sur-mer-40",
   "website": "https://www.bandolsurmer.de/",
   "lat": 52.5290651,
   "lng": 13.3953009,
@@ -20,6 +22,6 @@
   ],
   "chef": "Andreas Saul",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 149 €)",
   "cuisineDe": "Kreativ"
 }

@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 31,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/dermbach/bjoernsox-1f",
   "website": "https://www.rhoener-botschaft.de",
   "lat": 50.7161353,
   "lng": 10.1198493,
@@ -17,6 +19,6 @@
   "michelinId": "554534",
   "chef": "Björn Leist",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ"
 }

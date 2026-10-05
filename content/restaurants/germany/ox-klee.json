@@ -7,8 +7,11 @@
   "rating": 4.8,
   "reviews": 599,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 260,
+  "dinnerNote": "Tasting menu (other menus from €245)",
+  "wine": 130,
+  "sourceType": "site",
+  "source": "https://oxundklee.de/",
   "website": "https://oxundklee.de/",
   "lat": 50.9272801,
   "lng": 6.9658846,
@@ -20,6 +23,6 @@
   ],
   "chef": "Daniel Gottschlich",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 245 €)",
   "cuisineDe": "Moderne Küche"
 }

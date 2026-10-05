@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 501,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 395,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.falter.at/lokal/10399/amador",
   "website": "https://www.restaurant-amador.com/",
   "lat": 48.2539188,
   "lng": 16.3584526,
@@ -19,6 +21,6 @@
   ],
   "chef": "Juan Amador",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ"
 }

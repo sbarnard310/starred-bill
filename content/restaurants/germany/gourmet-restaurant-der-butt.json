@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 157,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 229,
+  "dinnerNote": "Tasting menu (other menus from €189)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/rostock/der-butt-77",
   "website": "https://www.hohe-duene.de/hotel-ostsee/restaurant/gourmetrestaurant-der-butt.html",
   "lat": 54.1795174,
   "lng": 12.0992982,
@@ -20,6 +22,6 @@
   ],
   "chef": "André Münch",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 189 €)",
   "cuisineDe": "Moderne Küche"
 }

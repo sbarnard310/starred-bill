@@ -6,8 +6,10 @@
   "stars": 1,
   "cuisine": "Seasonal Cuisine",
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/at/straden/saziani-stub’n-a9",
   "website": "https://www.neumeister.cc/",
   "lat": 46.8098446,
   "lng": 15.8656398,
@@ -20,6 +22,6 @@
   ],
   "chef": "Christoph Mandl",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Saisonal"
 }

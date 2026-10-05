@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 457,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 129,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berlin/bricole-1b",
   "website": "https://www.bricole.de/",
   "lat": 52.5410035,
   "lng": 13.4224087,
@@ -20,6 +22,6 @@
   ],
   "chef": "Steven Zeidler",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Französisch-modern"
 }

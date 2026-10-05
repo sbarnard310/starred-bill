@@ -6,8 +6,10 @@
   "stars": 1,
   "cuisine": "Modern Cuisine",
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €185)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/baiersbronn/1789-68",
   "website": "https://www.traube-tonbach.de/kulinarik/1789/",
   "lat": 48.5369525,
   "lng": 8.3582841,
@@ -19,6 +21,6 @@
   ],
   "chef": "Florian Stolte",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 185 €)",
   "cuisineDe": "Moderne Küche"
 }

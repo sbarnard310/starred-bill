@@ -8,8 +8,10 @@
   "rating": 4.4,
   "reviews": 224,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 95,
+  "dinnerNote": "Tasting menu (other menus from €75)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/zout-citroen-oosterhout",
   "website": "https://www.zoutencitroen.nl/",
   "lat": 51.6402997,
   "lng": 4.8602475,
@@ -21,6 +23,6 @@
     "vegan",
     "gluten-free"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 75)",
   "cuisineNl": "Creatief"
 }

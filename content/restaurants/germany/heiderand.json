@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 404,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 132,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/dresden/heiderand-8d",
   "website": "https://www.heiderand.restaurant",
   "lat": 51.0623119,
   "lng": 13.855478,
@@ -21,6 +23,6 @@
   ],
   "chef": "Martin Walther",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "cuisineDe": "Moderne Küche"
 }

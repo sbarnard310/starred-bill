@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 133,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 265,
+  "dinnerNote": "Tasting menu",
+  "wine": 170,
+  "sourceType": "press",
+  "source": "https://www.travelsforstars.com/blog/2025/01/29/doubek-vienna",
   "website": "https://restaurantdoubek.at/",
   "lat": 48.213172,
   "lng": 16.3494292,
@@ -16,6 +19,6 @@
   "michelinId": "1212061",
   "chef": "Stefan Doubek",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ"
 }

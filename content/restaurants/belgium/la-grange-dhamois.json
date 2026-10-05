@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 413,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 74,
+  "dinnerNote": "Tasting menu (other menus from €50)",
+  "sourceType": "press",
+  "source": "https://www.gaultmillau.be/en/restaurants/la-grange-dhamois-emptinne",
   "website": "https://www.lagrangedhamois.be/",
   "lat": 50.3343431,
   "lng": 5.1037114,
@@ -17,8 +19,8 @@
   "michelinId": "1197473",
   "chef": "Grégory Gillain",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
   "cuisineNl": "Modern Frans",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 50 €)",
   "cuisineFr": "Cuisine française moderne"
 }

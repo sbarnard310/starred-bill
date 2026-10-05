@@ -8,8 +8,11 @@
   "rating": 4.5,
   "reviews": 147,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 230,
+  "dinnerNote": "Tasting menu",
+  "wine": 110,
+  "sourceType": "site",
+  "source": "https://res.cloudinary.com/maistra/image/upload/v1790593741/Pdf%20and%20doc/New%20Website%20v2/Restaurants/Agli%20amici/28.09.26/AARovinj_EN_2026_q47f8d.pdf",
   "website": "https://www.maistra.com/grand-park-hotel-rovinj/sub/agli-amici-rovinj",
   "lat": 45.0747789,
   "lng": 13.6360524,
@@ -20,5 +23,5 @@
   ],
   "chef": "Simone De Lucca",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana"
+  "dinnerNoteHr": "Degustacijski meni"
 }

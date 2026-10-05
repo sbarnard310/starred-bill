@@ -8,8 +8,10 @@
   "rating": 4.4,
   "reviews": 566,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €92.50)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/vista-willemstad",
   "website": "https://www.vistawillemstad.nl/",
   "lat": 51.6960377,
   "lng": 4.4430462,
@@ -20,6 +22,6 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf €92.50)",
   "cuisineNl": "Modern Frans"
 }

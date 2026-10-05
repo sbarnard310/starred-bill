@@ -11,8 +11,11 @@
   "rating": 4.6,
   "reviews": 2459,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1650,
+  "dinnerNote": "Tasting menu",
+  "wine": 1159,
+  "sourceType": "press",
+  "source": "https://www.travelsforstars.com/blog/2026/05/06/evvai-sao-paulo",
   "website": "https://www.evvai.com.br/",
   "lat": -23.5670869,
   "lng": -46.6790725,
@@ -25,6 +28,6 @@
   ],
   "chef": "Luiz Filipe Souza",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Moderna"
 }

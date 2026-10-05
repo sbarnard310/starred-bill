@@ -8,8 +8,10 @@
   "rating": 4.4,
   "reviews": 449,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/t-raedthuys-duiven",
   "website": "https://www.raedthuys-duiven.nl/",
   "lat": 51.9503278,
   "lng": 6.0236683,
@@ -20,6 +22,6 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 85)",
   "cuisineNl": "Modern Frans"
 }

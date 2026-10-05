@@ -7,8 +7,15 @@
   "rating": 4.3,
   "reviews": 914,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 285,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.falter.at/lokal/5508/restaurant-konstantin-filippou",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.falter.at/lokal/5508/restaurant-konstantin-filippou",
   "website": "https://konstantinfilippou.com/",
   "lat": 48.2106747,
   "lng": 16.3798024,
@@ -16,6 +23,7 @@
   "michelinId": "405344",
   "chef": "Konstantin Filippou",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Moderne Küche"
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Moderne Küche",
+  "lunchNoteDe": "Mittagsmenü"
 }

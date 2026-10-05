@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 226,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 178,
+  "dinnerNote": "Tasting menu (other menus from €84)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/bad-krozingen/storchen-f2",
   "website": "https://storchen-schmidhofen.de/",
   "lat": 47.89284,
   "lng": 7.69288,
@@ -20,6 +22,6 @@
   ],
   "chef": "Jochen Helfesrieder and Fritz Helfesrieder",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 84 €)",
   "cuisineDe": "Klassische Küche"
 }

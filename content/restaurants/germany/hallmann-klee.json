@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 851,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €108)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berlin/hallmann-&amp;-klee-71",
   "website": "https://www.hallmann-klee.de/",
   "lat": 52.4738168,
   "lng": 13.4497485,
@@ -20,6 +22,6 @@
   ],
   "chef": "Sarah Hallmann",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 108 €)",
   "cuisineDe": "Moderne Küche"
 }

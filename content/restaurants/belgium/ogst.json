@@ -8,8 +8,15 @@
   "rating": 4.6,
   "reviews": 338,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "press",
+  "source": "https://www.gaultmillau.be/en/restaurants/ogst-hasselt",
+  "lunch": 62,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gaultmillau.be/en/restaurants/ogst-hasselt",
   "website": "https://www.ogst.be/",
   "lat": 50.9294564,
   "lng": 5.3335502,
@@ -18,10 +25,12 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 95)",
   "cuisineNl": "Modern Frans",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 95 €)",
   "cuisineFr": "Cuisine française moderne",
   "chef": "Sébastien Wygaerts",
-  "chefSource": "press"
+  "chefSource": "press",
+  "lunchNoteNl": "Lunchmenu",
+  "lunchNoteFr": "Menu déjeuner"
 }

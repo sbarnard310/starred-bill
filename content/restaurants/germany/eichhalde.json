@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 207,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 215,
+  "dinnerNote": "Tasting menu (other menus from €89)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/freiburg-im-breisgau/eichhalde-52",
   "website": "https://www.eichhalde-freiburg.de/",
   "lat": 48.006711,
   "lng": 7.8648027,
@@ -17,6 +19,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 89 €)",
   "cuisineDe": "Italienisch"
 }

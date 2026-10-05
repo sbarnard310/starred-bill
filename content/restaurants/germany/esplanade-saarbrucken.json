@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 365,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 254,
+  "dinnerNote": "Tasting menu (other menus from €72)",
+  "sourceType": "press",
+  "source": "https://www.gusto-online.de/esplanade.html",
   "website": "https://www.esplanade-sb.de/",
   "lat": 49.2349097,
   "lng": 6.9996028,
@@ -17,6 +19,6 @@
   "michelinId": "539722",
   "chef": "Silio Del Fabro",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 72 €)",
   "cuisineDe": "Klassische Küche"
 }

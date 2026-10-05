@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 254,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/koblenz/verbene-40",
   "website": "https://www.restaurant-verbene.de/",
   "lat": 50.3613819,
   "lng": 7.5967303,
@@ -22,6 +24,6 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
   "cuisineDe": "Moderne Küche"
 }

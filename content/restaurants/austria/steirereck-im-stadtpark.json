@@ -7,8 +7,15 @@
   "rating": 4.4,
   "reviews": 3983,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 275,
+  "dinnerNote": "Tasting menu (other menus from €255)",
+  "sourceType": "press",
+  "source": "https://www.falter.at/lokal/829/steirereck-im-stadtpark",
+  "lunch": 178,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.falter.at/lokal/829/steirereck-im-stadtpark",
   "website": "https://www.steirereck.at/",
   "lat": 48.2043967,
   "lng": 16.3815669,
@@ -19,6 +26,7 @@
   ],
   "chef": "Heinz Reitbauer and Michael Bauböck",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Kreativ"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 255 €)",
+  "cuisineDe": "Kreativ",
+  "lunchNoteDe": "Mittagsmenü"
 }

@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 223,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 335,
+  "dinnerNote": "Tasting menu (other menus from €178)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/baiersbronn/bareiss-dd",
   "website": "https://www.bareiss.com/",
   "lat": 48.5201324,
   "lng": 8.3268245,
@@ -21,6 +23,6 @@
   ],
   "chef": "Claus-Peter Lumpp",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 178 €)",
   "cuisineDe": "Französisch-klassisch"
 }

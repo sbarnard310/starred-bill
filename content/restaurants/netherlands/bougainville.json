@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 483,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 199,
+  "dinnerNote": "Tasting menu (other menus from €179)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/bougainville-amsterdam",
   "website": "https://restaurantbougainville.com/",
   "lat": 52.3725511,
   "lng": 4.8931716,
@@ -24,6 +26,6 @@
   ],
   "chef": "Tim Golsteijn",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 179)",
   "cuisineNl": "Moderne keuken"
 }

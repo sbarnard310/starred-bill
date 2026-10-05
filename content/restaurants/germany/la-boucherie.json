@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 20,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €140)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/kreuzwertheim/la-boucherie-06",
   "website": "https://www.landgasthofzumkaffelstein.de/kulinarik/la-boucherie/",
   "lat": 49.7649722,
   "lng": 9.5160361,
@@ -20,6 +22,6 @@
   ],
   "chef": "Daniel Schröder",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
   "cuisineDe": "Modern"
 }

@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 248,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 109,
+  "dinnerNote": "Tasting menu (other menus from €69)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/pirmasens/die-brasserie-98",
   "website": "https://www.diebrasserie-ps.de/",
   "lat": 49.1947507,
   "lng": 7.6202732,
@@ -21,6 +23,6 @@
   ],
   "chef": "Vjekoslav Pavic",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 69 €)",
   "cuisineDe": "Klassische Küche"
 }

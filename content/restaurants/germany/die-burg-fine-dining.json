@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 569,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu (other menus from €100)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/donaueschingen/die-burg-4e",
   "website": "https://www.burg-aasen.de/",
   "lat": 47.9813093,
   "lng": 8.5524568,
@@ -21,6 +23,6 @@
   ],
   "chef": "Jason Grom",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 100 €)",
   "cuisineDe": "Marktküche"
 }

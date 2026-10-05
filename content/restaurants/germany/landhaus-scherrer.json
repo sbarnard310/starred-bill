@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 544,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €132)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/hamburg/landhaus-scherrer-75",
   "website": "https://www.landhausscherrer.de/",
   "lat": 53.5461021,
   "lng": 9.9167551,
@@ -20,6 +22,6 @@
   ],
   "chef": "Heinz Otto Wehmann",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 132 €)",
   "cuisineDe": "Klassische Küche"
 }

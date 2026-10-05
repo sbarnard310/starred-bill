@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 216,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 325,
+  "dinnerNote": "Tasting menu (other menus from €295)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/baiersbronn/schwarzwaldstube-b6",
   "website": "https://www.traube-tonbach.de/kulinarik/schwarzwaldstube/",
   "lat": 48.5369113,
   "lng": 8.3582803,
@@ -22,6 +24,6 @@
   ],
   "chef": "Torsten Michel",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 295 €)",
   "cuisineDe": "Französisch-klassisch"
 }

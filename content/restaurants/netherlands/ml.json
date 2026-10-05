@@ -8,8 +8,10 @@
   "rating": 4.1,
   "reviews": 1305,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 172,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/ml-haarlem",
   "website": "https://www.mlinhaarlem.nl/",
   "lat": 52.3807364,
   "lng": 4.6381713,
@@ -20,6 +22,6 @@
   ],
   "chef": "Mark Gratama",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 99)",
   "cuisineNl": "Creatief"
 }

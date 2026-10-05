@@ -11,8 +11,10 @@
   "rating": 5,
   "reviews": 484,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.falter.at/lokal/2774/jola",
   "website": "https://www.jola.wien",
   "lat": 48.2131766,
   "lng": 16.3714017,
@@ -25,5 +27,5 @@
   ],
   "chef": "Jonathan Wittenbink",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt"
+  "dinnerNoteDe": "Degustationsmenü"
 }

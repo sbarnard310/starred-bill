@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 136,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 275,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/hamburg/lakeside-bc",
   "website": "https://www.thefontenay.com/restaurants-bar/lakeside-restaurant/",
   "lat": 53.5654337,
   "lng": 9.9977083,
@@ -19,6 +21,6 @@
   ],
   "chef": "Julian Stowasser",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 66,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 269,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.schloss-elmau.de/fileadmin/Downloads/Restaurants/IKIGAI/IKIGAI_MEN%C3%9C_DE.pdf",
   "website": "https://www.schloss-elmau.de/restaurants/ikigai/",
   "lat": 47.4621643,
   "lng": 11.186197,
@@ -21,6 +23,6 @@
   ],
   "chef": "Chris Rainer",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

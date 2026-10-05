@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 386,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu (other menus from €139)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/paderborn/balthasar-6d",
   "website": "https://www.restaurant-balthasar.de/",
   "lat": 51.7152518,
   "lng": 8.7638033,
@@ -20,6 +22,6 @@
   ],
   "chef": "Elmar Simon",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 139 €)",
   "cuisineDe": "Französisch-modern"
 }

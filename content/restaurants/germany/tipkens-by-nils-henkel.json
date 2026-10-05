@@ -8,8 +8,10 @@
   "rating": 4.4,
   "reviews": 31,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 240,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "sourceType": "press",
+  "source": "https://www.der-grosse-guide.de/place/2704-severin-39-s-resort-spa-tipken-39-s-by-nils-henkel",
   "website": "https://www.severins-sylt.de/",
   "lat": 54.8907917,
   "lng": 8.3780691,
@@ -21,6 +23,6 @@
   ],
   "chef": "René Verse",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
   "cuisineDe": "Modern"
 }

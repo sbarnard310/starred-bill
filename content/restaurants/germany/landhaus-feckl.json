@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 782,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 128,
+  "dinnerNote": "Tasting menu (other menus from €59)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/ehningen/landhaus-feckl-20",
   "website": "https://www.landhausfeckl.de/",
   "lat": 48.661195,
   "lng": 8.9547833,
@@ -20,6 +22,6 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 59 €)",
   "cuisineDe": "Französisch-klassisch"
 }

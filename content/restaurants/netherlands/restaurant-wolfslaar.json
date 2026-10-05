@@ -8,8 +8,15 @@
   "rating": 4.7,
   "reviews": 346,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/wolfslaar-breda",
+  "lunch": 72.5,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gault-millau.nl/en/restaurants/wolfslaar-breda",
   "website": "https://www.restaurantwolfslaar.com",
   "lat": 51.5607208,
   "lng": 4.8038928,
@@ -21,6 +28,7 @@
   ],
   "chef": "Maarten Camps",
   "chefSource": "site",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Modern Frans"
+  "dinnerNoteNl": "Proeverijmenu",
+  "cuisineNl": "Modern Frans",
+  "lunchNoteNl": "Lunchmenu"
 }

@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 435,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu (other menus from €170)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/wernigerode/pietsch-11",
   "website": "https://www.robin-pietsch.de/",
   "lat": 51.8352945,
   "lng": 10.7890106,
@@ -20,7 +22,7 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 170 €)",
   "cuisineDe": "Kreativ",
   "chef": "Robin Pietsch",
   "chefSource": "press"

@@ -11,8 +11,11 @@
   "rating": 4.8,
   "reviews": 393,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2000,
+  "dinnerNote": "Tasting menu",
+  "wine": 1400,
+  "sourceType": "press",
+  "source": "https://www.travelsforstars.com/blog/2025/05/27/fzn-by-bjorn-frantzen-dubai",
   "website": "https://www.restaurantfzn.com/",
   "lat": 25.1320377,
   "lng": 55.1182319,
@@ -23,5 +26,5 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا"
+  "dinnerNoteAr": "قائمة تذوق"
 }

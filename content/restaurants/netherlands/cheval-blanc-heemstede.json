@@ -8,8 +8,15 @@
   "rating": 4.7,
   "reviews": 208,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 95,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/cheval-blanc-heemstede",
+  "lunch": 70,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gault-millau.nl/en/restaurants/cheval-blanc-heemstede",
   "website": "https://www.cheval-blanc.nl/",
   "lat": 52.3602095,
   "lng": 4.6289256,
@@ -21,6 +28,7 @@
   ],
   "chef": "Huub van der Velden",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Moderne keuken"
+  "dinnerNoteNl": "Proeverijmenu",
+  "cuisineNl": "Moderne keuken",
+  "lunchNoteNl": "Lunchmenu"
 }

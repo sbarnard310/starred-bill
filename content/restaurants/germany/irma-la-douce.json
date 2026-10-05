@@ -7,8 +7,10 @@
   "rating": 4.5,
   "reviews": 388,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 110,
+  "dinnerNote": "Tasting menu (other menus from €89)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berlin/irma-la-douce-d9",
   "website": "https://www.irmaladouce.de/",
   "lat": 52.5014034,
   "lng": 13.3638583,
@@ -18,6 +20,6 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 89 €)",
   "cuisineDe": "Französisch-klassisch"
 }

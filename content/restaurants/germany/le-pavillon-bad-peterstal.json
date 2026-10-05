@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 56,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 240,
+  "dinnerNote": "Tasting menu (other menus from €182)",
+  "sourceType": "press",
+  "source": "https://www.gusto-online.de/le-pavillon.html",
   "website": "https://www.dollenberg.de",
   "lat": 48.4574092,
   "lng": 8.2507048,
@@ -18,7 +20,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 182 €)",
   "cuisineDe": "Französisch-klassisch",
   "chef": "Martin Herrmann",
   "chefSource": "press"

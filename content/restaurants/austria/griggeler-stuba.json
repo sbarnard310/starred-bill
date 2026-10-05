@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 12,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 255,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.der-grosse-guide.de/place/1715-burg-vital-resort-griggeler-stuba",
   "website": "https://www.burgvitalresort.com/de/kulinarik/griggeler-stuba/",
   "lat": 47.2172212,
   "lng": 10.1384191,
@@ -20,6 +22,6 @@
   ],
   "chef": "Sebastian Jakob",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

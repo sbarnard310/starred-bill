@@ -8,8 +8,10 @@
   "rating": 4.1,
   "reviews": 492,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 219,
+  "dinnerNote": "Tasting menu (other menus from €175)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/ettlingen/restaurant-erbprinz-8a",
   "website": "https://www.erbprinz.de/de",
   "lat": 48.941273,
   "lng": 8.4045683,
@@ -17,6 +19,6 @@
   "michelinId": "80644",
   "chef": "Ralph Knebel",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 175 €)",
   "cuisineDe": "Klassische Küche"
 }

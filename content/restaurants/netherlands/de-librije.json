@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 1193,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 315,
+  "dinnerNote": "Tasting menu (other menus from €295)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/de-librije-zwolle",
   "website": "https://www.librije.com/",
   "lat": 52.5153997,
   "lng": 6.0979029,
@@ -21,6 +23,6 @@
   ],
   "chef": "Nelson Tanate",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 295)",
   "cuisineNl": "Moderne keuken"
 }

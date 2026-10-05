@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 651,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu (other menus from €225)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berlin/tulus-lotrek-41",
   "website": "https://www.tuluslotrek.de/",
   "lat": 52.4893627,
   "lng": 13.4137112,
@@ -20,6 +22,6 @@
   ],
   "chef": "Maximilian Strohe",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 225 €)",
   "cuisineDe": "Moderne Küche"
 }

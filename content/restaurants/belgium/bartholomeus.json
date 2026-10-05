@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 496,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 265,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.gaultmillau.be/en/restaurants/bartholomeus-heist",
   "website": "https://www.restaurantbartholomeus.be/",
   "lat": 51.341769,
   "lng": 3.2436215,
@@ -17,8 +19,8 @@
   "michelinId": "209930",
   "chef": "Bart Desmidt",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Moderne keuken",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine moderne"
 }

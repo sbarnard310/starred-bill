@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 225,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu (other menus from €185)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/darmstadt/ox-25",
   "website": "https://ox-restaurant.de/",
   "lat": 49.8760593,
   "lng": 8.66055,
@@ -18,6 +20,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 185 €)",
   "cuisineDe": "Moderne Küche"
 }

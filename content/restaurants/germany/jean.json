@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 136,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu (other menus from €75)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/eltville-am-rhein/jean-10",
   "website": "https://www.hotel-frankenbach.de/",
   "lat": 50.0273185,
   "lng": 8.1215575,
@@ -20,6 +22,6 @@
   ],
   "chef": "Johannes Frankenbach",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 75 €)",
   "cuisineDe": "Französisch-klassisch"
 }

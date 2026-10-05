@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 411,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu (other menus from €200)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/hamburg/100-200-kitchen-fe",
   "website": "https://100200.kitchen/",
   "lat": 53.5374405,
   "lng": 10.0286303,
@@ -19,6 +21,6 @@
   ],
   "chef": "Thomas Imbusch",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 200 €)",
   "cuisineDe": "Kreativ"
 }

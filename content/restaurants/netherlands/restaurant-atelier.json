@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 277,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/nl/gulpen/atelier-e9",
   "website": "https://www.restaurantatelier.nl/",
   "lat": 50.8155288,
   "lng": 5.8914267,
@@ -21,6 +23,6 @@
   ],
   "chef": "Hans Kinkartz",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
   "cuisineNl": "Creatief Frans"
 }

@@ -8,8 +8,10 @@
   "rating": 4.2,
   "reviews": 573,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.falter.at/lokal/3233/taubenkobel",
   "website": "https://www.taubenkobel.com/",
   "lat": 47.8515574,
   "lng": 16.6264336,
@@ -19,7 +21,7 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Französisch-zeitgemäß",
   "chef": "Alain Weissgerber",
   "chefSource": "press"

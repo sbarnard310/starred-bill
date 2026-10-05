@@ -12,8 +12,10 @@
   "rating": 4.7,
   "reviews": 236,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "sourceType": "press",
+  "source": "https://www.gusto-online.de/tante-anna.html",
   "lat": 51.3658402,
   "lng": 7.2469673,
   "placeId": "ChIJMSbKvjAnuUcR9CH2Cu6xXSM",
@@ -23,6 +25,6 @@
   ],
   "chef": "Thies Henkel",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
   "cuisineDe": "Moderne Küche"
 }

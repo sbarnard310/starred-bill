@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 409,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 315,
+  "dinnerNote": "Tasting menu (other menus from €195)",
+  "sourceType": "press",
+  "source": "https://www.gusto-online.de/vendome.html",
   "website": "https://www.althoffcollection.com/de/althoff-grandhotel-schloss-bensberg",
   "lat": 50.9662805,
   "lng": 7.1608252,
@@ -21,6 +23,6 @@
   ],
   "chef": "Dennis Kuckuck",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 195 €)",
   "cuisineDe": "Kreativ"
 }

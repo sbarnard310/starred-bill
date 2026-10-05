@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 616,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 129,
+  "dinnerNote": "Tasting menu (other menus from €102)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/at/lochau/restaurant-mangold-a5",
   "website": "https://www.restaurant-mangold.at/",
   "lat": 47.5299154,
   "lng": 9.7520133,
@@ -21,6 +23,6 @@
   ],
   "chef": "Michael Schwarzenbacher",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 102 €)",
   "cuisineDe": "Klassische Küche"
 }

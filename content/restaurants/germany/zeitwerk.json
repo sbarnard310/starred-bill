@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 615,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €150)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/wernigerode/zeitwerk-52",
   "website": "https://robin-pietsch.de/zeitwerk/",
   "lat": 51.8353677,
   "lng": 10.7890914,
@@ -21,6 +23,6 @@
   ],
   "chef": "Robin Pietsch",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 150 €)",
   "cuisineDe": "Kreativ"
 }

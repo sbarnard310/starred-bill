@@ -12,8 +12,10 @@
   "rating": 4.9,
   "reviews": 142,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/detmold/porte-neuf-48",
   "website": "https://www.porteneuf.de",
   "lat": 51.9361566,
   "lng": 8.8835349,
@@ -25,6 +27,6 @@
   ],
   "chef": "Daniel C Fischer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "cuisineDe": "Moderne Küche"
 }

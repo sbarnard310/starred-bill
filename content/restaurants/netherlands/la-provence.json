@@ -8,8 +8,15 @@
   "rating": 4.6,
   "reviews": 237,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 132.5,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/la-provence-driebergen-rijsenburg",
+  "lunch": 85,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gault-millau.nl/en/restaurants/la-provence-driebergen-rijsenburg",
   "website": "https://www.restaurantlaprovence.nl/",
   "lat": 52.0522638,
   "lng": 5.282136,
@@ -18,6 +25,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Creatief Frans"
+  "dinnerNoteNl": "Proeverijmenu",
+  "cuisineNl": "Creatief Frans",
+  "lunchNoteNl": "Lunchmenu"
 }

@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 1276,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 295,
+  "dinnerNote": "Tasting menu (other menus from €175)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berlin/facil-7b",
   "website": "https://facil.de/de/",
   "lat": 52.5090625,
   "lng": 13.3737404,
@@ -20,6 +22,6 @@
   ],
   "chef": "Michael Kempf and Joachim Gerner",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 175 €)",
   "cuisineDe": "Kreativ"
 }

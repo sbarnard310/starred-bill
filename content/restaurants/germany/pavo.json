@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 117,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/pfronten/pavo-45",
   "website": "https://www.blaueburg.com",
   "lat": 47.5700348,
   "lng": 10.5918519,
@@ -18,6 +20,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 459,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €105)",
+  "sourceType": "press",
+  "source": "https://www.gaultmillau.be/en/restaurants/de-kristalijn-genk",
   "website": "https://www.dekristalijn.be/",
   "lat": 50.9700557,
   "lng": 5.5558768,
@@ -21,8 +23,8 @@
   ],
   "chef": "Koen Somers",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
   "cuisineNl": "Modern Frans",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 105 €)",
   "cuisineFr": "Cuisine française moderne"
 }

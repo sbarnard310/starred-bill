@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 383,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 100,
+  "dinnerNote": "Tasting menu (other menus from €60)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/nl/aalten/olde-marckt-ba",
   "website": "https://www.oldemarckt.nl/",
   "lat": 51.9275068,
   "lng": 6.5815844,
@@ -20,6 +22,6 @@
   ],
   "chef": "Bram Stoverink",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
   "cuisineNl": "Modern Frans"
 }

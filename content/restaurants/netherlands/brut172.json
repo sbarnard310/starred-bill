@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 460,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 260,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/nl/reijmerstok/brut172-6d",
   "website": "https://www.brut172.com/",
   "lat": 50.7964487,
   "lng": 5.8364502,
@@ -21,6 +23,6 @@
     "vegan",
     "kosher"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief"
 }

@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 74,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "press",
+  "source": "https://www.der-grosse-guide.de/place/1576-moerwald-relais-chateaux-gourmet-toni-m",
   "website": "https://www.moerwald.at/en/",
   "lat": 48.4392766,
   "lng": 15.7864341,
@@ -17,6 +19,6 @@
   "michelinId": "166921",
   "chef": "Toni Mörwald",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "cuisineDe": "Klassische Küche"
 }

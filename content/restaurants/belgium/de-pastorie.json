@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 454,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.gaultmillau.be/en/restaurants/de-pastorie-lichtaart",
   "website": "https://www.restaurantdepastorie.be/",
   "lat": 51.2262199,
   "lng": 4.9240299,
@@ -24,8 +26,8 @@
   ],
   "chef": "Carl Wens",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Moderne keuken",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine moderne"
 }

@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 149,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 189,
+  "dinnerNote": "Tasting menu (other menus from €86)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/niederwinkling/buchner-welchenberg-1658-07",
   "website": "https://www.buchner-welchenberg.de/",
   "lat": 48.8765829,
   "lng": 12.7757295,
@@ -17,6 +19,6 @@
   "michelinId": "71530",
   "chef": "Mathias Achatz",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 86 €)",
   "cuisineDe": "Moderne Küche"
 }

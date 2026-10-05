@@ -11,8 +11,11 @@
   "rating": 4.9,
   "reviews": 41,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 249,
+  "dinnerNote": "Tasting menu",
+  "wine": 159,
+  "sourceType": "press",
+  "source": "https://www.travelsforstars.com/blog/2026/07/17/the-dune-frankfurt",
   "website": "https://www.althoffcollection.com/de/the-florentin/kulinarik",
   "lat": 50.0976127,
   "lng": 8.6690663,
@@ -24,5 +27,5 @@
   ],
   "chef": "Niclas Nußbaumer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt"
+  "dinnerNoteDe": "Degustationsmenü"
 }

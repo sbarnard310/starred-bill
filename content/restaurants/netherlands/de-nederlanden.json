@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 402,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu (other menus from €150)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/de-nederlanden-vreeland",
   "website": "https://www.nederlanden.nl/",
   "lat": 52.2295965,
   "lng": 5.0324559,
@@ -24,6 +26,6 @@
   ],
   "chef": "Wilco Berends",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 150)",
   "cuisineNl": "Moderne keuken"
 }

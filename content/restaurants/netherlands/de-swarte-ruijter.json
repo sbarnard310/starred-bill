@@ -8,8 +8,15 @@
   "rating": 4.7,
   "reviews": 406,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 69,
+  "dinnerNote": "Tasting menu (other menus from €40)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/de-swarte-ruijter-holten",
+  "lunch": 32.5,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gault-millau.nl/en/restaurants/de-swarte-ruijter-holten",
   "website": "https://swarteruijter.nl/",
   "lat": 52.2948139,
   "lng": 6.4204764,
@@ -21,6 +28,7 @@
     "vegan",
     "kosher"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Moderne keuken"
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 40)",
+  "cuisineNl": "Moderne keuken",
+  "lunchNoteNl": "Lunchmenu"
 }

@@ -7,8 +7,10 @@
   "rating": 4.9,
   "reviews": 284,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 205,
+  "dinnerNote": "Tasting menu (other menus from €189)",
+  "sourceType": "press",
+  "source": "https://www.der-grosse-guide.de/place/2845-zwanzig23-by-lukas-jakobi",
   "website": "https://www.zwanzig23.com",
   "lat": 51.2061634,
   "lng": 6.7789165,
@@ -19,6 +21,6 @@
   ],
   "chef": "Lukas Jakobi",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 189 €)",
   "cuisineDe": "Kreativ"
 }

@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 22,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/bad-kissingen/laudensacks-gourmet-restaurant-ea",
   "website": "https://www.laudensacks.de/gourmet/speisekarte",
   "lat": 50.190867,
   "lng": 10.0774434,
@@ -20,6 +22,6 @@
   ],
   "chef": "Frederik Desch",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 115 €)",
   "cuisineDe": "Klassische Küche"
 }

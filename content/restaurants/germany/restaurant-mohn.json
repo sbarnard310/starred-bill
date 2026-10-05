@@ -12,8 +12,10 @@
   "rating": 5,
   "reviews": 323,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €69)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/hohnhorst/restaurant-mohn-0a",
   "lat": 52.3685388,
   "lng": 9.3724644,
   "placeId": "ChIJPzZBXFR_sEcR5zGJqE2m2ZQ",
@@ -22,6 +24,6 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 69 €)",
   "cuisineDe": "Saisonal"
 }

@@ -8,8 +8,10 @@
   "rating": 4.3,
   "reviews": 820,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu (other menus from €140)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/frasdorf/restaurant-karner-ad",
   "website": "https://www.restaurant-karner.com/",
   "lat": 47.7997713,
   "lng": 12.2825454,
@@ -20,6 +22,6 @@
   ],
   "chef": "Hannes Fussel",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
   "cuisineDe": "Kreativ"
 }

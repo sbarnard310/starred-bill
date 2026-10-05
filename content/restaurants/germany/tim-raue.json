@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 1527,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 292,
+  "dinnerNote": "Tasting menu (other menus from €212)",
+  "wine": 168,
+  "sourceType": "press",
+  "source": "https://berlin.t-online.de/region/berlin/id_101310760/tim-raue-in-berlin-das-kostet-ein-abend-beim-tv-sternekoch.html",
   "website": "https://tim-raue.com/",
   "lat": 52.5070342,
   "lng": 13.3933841,
@@ -20,6 +23,6 @@
   ],
   "chef": "Tim Raue",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 212 €)",
   "cuisineDe": "Asiatische Einflüsse"
 }

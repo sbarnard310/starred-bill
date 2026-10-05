@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 1235,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 143,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berlin/bonvivant-3b",
   "website": "https://bonvivant.berlin/",
   "lat": 52.4946425,
   "lng": 13.3537639,
@@ -20,5 +22,5 @@
   ],
   "chef": "Nikodemus Berger",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 130 €)"
 }

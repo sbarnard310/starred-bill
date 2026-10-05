@@ -7,8 +7,10 @@
   "rating": 4.3,
   "reviews": 1901,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 114.5,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/ron-gastrobar-amsterdam",
   "website": "https://rongastrobar.nl/",
   "lat": 52.3522317,
   "lng": 4.8566529,
@@ -20,7 +22,7 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief Frans",
   "chef": "Ron Blaauw",
   "chefSource": "press"

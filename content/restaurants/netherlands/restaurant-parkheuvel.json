@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 677,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 205,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/nl/rotterdam/parkheuvel-e4",
   "website": "https://www.parkheuvel.nl/",
   "lat": 51.9038322,
   "lng": 4.4715805,
@@ -21,7 +23,7 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 165)",
   "cuisineNl": "Moderne keuken",
   "chef": "Erik van Loo",
   "chefSource": "press"

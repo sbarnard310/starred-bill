@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 451,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €105)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/tante-koosje-loenen-aan-de-vecht",
   "website": "https://www.tante-koosje.nl/",
   "lat": 52.2090905,
   "lng": 5.0235487,
@@ -25,6 +27,6 @@
   ],
   "chef": "Roland Veldhuijzen",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
   "cuisineNl": "Modern Frans"
 }

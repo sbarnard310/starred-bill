@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 335,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €90)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/waldenbuch/gasthof-krone-c5",
   "website": "https://krone-waldenbuch.de/startseite.html",
   "lat": 48.6382832,
   "lng": 9.1323653,
@@ -20,6 +22,6 @@
   ],
   "chef": "Erik Metzger",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "cuisineDe": "Klassische Küche"
 }

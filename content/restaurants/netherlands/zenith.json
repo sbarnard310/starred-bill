@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 284,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 101,
+  "dinnerNote": "Tasting menu (other menus from €71)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/restaurant-zenith-apeldoorn",
   "website": "https://restaurantzenith.nl/",
   "lat": 52.2230557,
   "lng": 5.9558434,
@@ -23,6 +25,6 @@
   ],
   "chef": "Joey Stinissen",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 71)",
   "cuisineNl": "Moderne keuken"
 }

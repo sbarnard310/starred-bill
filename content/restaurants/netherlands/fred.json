@@ -7,8 +7,15 @@
   "rating": 4.7,
   "reviews": 606,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/fred-rotterdam",
+  "lunch": 99,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gault-millau.nl/en/restaurants/fred-rotterdam",
   "website": "https://www.restaurantfred.nl/",
   "lat": 51.9162159,
   "lng": 4.489421,
@@ -23,6 +30,7 @@
   ],
   "chef": "Fred Mustert",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Creatief Frans"
+  "dinnerNoteNl": "Proeverijmenu",
+  "cuisineNl": "Creatief Frans",
+  "lunchNoteNl": "Lunchmenu"
 }

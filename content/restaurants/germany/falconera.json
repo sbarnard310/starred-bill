@@ -10,6 +10,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 79,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.der-grosse-guide.de/place/2001-falconera",
   "website": "https://falconera.de/",
   "lat": 47.685155,
   "lng": 8.8982028,
@@ -23,5 +28,6 @@
   "chef": "Johannes Wuhrer",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Französisch-klassisch"
+  "cuisineDe": "Französisch-klassisch",
+  "lunchNoteDe": "Mittagsmenü"
 }

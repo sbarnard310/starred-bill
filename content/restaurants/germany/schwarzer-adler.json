@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 449,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 177,
+  "dinnerNote": "Tasting menu (other menus from €158)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/vogtsburg-im-kaiserstuhl/schwarzer-adler-2e",
   "website": "https://www.franz-keller.de/",
   "lat": 48.0952162,
   "lng": 7.6560639,
@@ -20,6 +22,6 @@
   ],
   "chef": "Christian Baur and Konstantin Keller",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 158 €)",
   "cuisineDe": "Französisch-klassisch"
 }

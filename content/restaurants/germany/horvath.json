@@ -7,8 +7,10 @@
   "rating": 4.5,
   "reviews": 663,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 260,
+  "dinnerNote": "Tasting menu (other menus from €160)",
+  "sourceType": "press",
+  "source": "https://www.gusto-online.de/horvath.html",
   "website": "https://www.restaurant-horvath.de/",
   "lat": 52.4963922,
   "lng": 13.420793,
@@ -23,6 +25,6 @@
   ],
   "chef": "Sebastian Frank",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 160 €)",
   "cuisineDe": "Kreativ"
 }

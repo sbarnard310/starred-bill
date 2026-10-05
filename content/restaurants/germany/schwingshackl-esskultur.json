@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 214,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu (other menus from €129)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/bernried/schwingshackl-esskultur-b0",
   "website": "https://naturhotel-rebling.de/index.php/kulinarik-wein/schwingshackl-esskultur",
   "lat": 48.9296729,
   "lng": 12.9259944,
@@ -18,7 +20,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
   "cuisineDe": "Klassische Küche",
   "chef": "Erich Schwingshackl",
   "chefSource": "press"

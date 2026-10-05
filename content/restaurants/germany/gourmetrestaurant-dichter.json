@@ -8,13 +8,15 @@
   "rating": 4.9,
   "reviews": 84,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 278,
+  "dinnerNote": "Tasting menu (other menus from €218)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/rottach-egern/gourmetrestaurant-dichter-1a",
   "website": "https://www.gourmetrestaurant-dichter.de/",
   "lat": 47.6941309,
   "lng": 11.7538484,
   "placeId": "ChIJG13_PuuOnUcRtEGKr6oREpE",
   "michelinId": "77069",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 218 €)",
   "cuisineDe": "Moderne Küche"
 }

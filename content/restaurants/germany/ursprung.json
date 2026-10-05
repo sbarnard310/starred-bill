@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 41,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €145)",
+  "sourceType": "press",
+  "source": "https://www.der-grosse-guide.de/place/898-ursprung-das-restaurant",
   "website": "https://www.widmanns-albleben.de/",
   "lat": 48.7296219,
   "lng": 10.0653263,
@@ -21,6 +23,6 @@
   ],
   "chef": "Andreas Widmann",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 145 €)",
   "cuisineDe": "Kreativ"
 }

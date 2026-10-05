@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 36,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/schmallenberg/hofstube-deimann-bd",
   "website": "https://www.deimann.de/hofstube",
   "lat": 51.1595842,
   "lng": 8.3407164,
@@ -17,6 +19,6 @@
   "michelinId": "509902",
   "chef": "Felix Weber",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 233,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 69,
+  "dinnerNote": "Tasting menu (other menus from €49)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/apicius-castricum",
   "website": "https://www.apicius.nl/",
   "lat": 52.5588765,
   "lng": 4.6561881,
@@ -19,6 +21,6 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 49)",
   "cuisineNl": "Moderne keuken"
 }

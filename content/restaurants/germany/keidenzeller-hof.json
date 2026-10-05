@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 207,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 140,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/langenzenn/keidenzeller-hof-8f",
   "website": "https://www.keidenzeller-hof.de",
   "lat": 49.4672666,
   "lng": 10.7768228,
@@ -21,6 +23,6 @@
   ],
   "chef": "Martin Grimmer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "cuisineDe": "Moderne Küche"
 }

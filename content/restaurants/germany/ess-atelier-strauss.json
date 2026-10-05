@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 29,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/oberstdorf/ess-atelier-strauss-1b",
   "website": "https://www.loewen-strauss.de/",
   "lat": 47.4085094,
   "lng": 10.2783328,
@@ -18,7 +20,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Klassische Küche",
   "chef": "Peter A. Strauss",
   "chefSource": "press"

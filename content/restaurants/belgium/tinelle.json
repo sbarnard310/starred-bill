@@ -10,6 +10,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 53,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gaultmillau.be/en/restaurants/tinelle-mechelen",
   "website": "https://tinelle.be/",
   "lat": 51.0336931,
   "lng": 4.4800059,
@@ -25,5 +30,7 @@
   "cuisineNl": "Eigentijds Frans",
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
   "cuisineFr": "Cuisine française contemporaine",
-  "areaFr": "Malines"
+  "areaFr": "Malines",
+  "lunchNoteNl": "Lunchmenu",
+  "lunchNoteFr": "Menu déjeuner"
 }

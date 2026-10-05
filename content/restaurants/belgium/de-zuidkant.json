@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 262,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 140,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "press",
+  "source": "https://www.gaultmillau.be/en/restaurants/de-zuidkant-damme",
   "website": "https://www.restaurantdezuidkant.be/",
   "lat": 51.251887,
   "lng": 3.2825787,
@@ -18,9 +20,9 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 115)",
   "cuisineNl": "Moderne keuken",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 115 €)",
   "cuisineFr": "Cuisine moderne",
   "chef": "Patrick van Hoorn",
   "chefSource": "press"

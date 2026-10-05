@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 245,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu (other menus from €160)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/de-lindenhof-giethoorn",
   "website": "https://restaurantdelindenhof.nl/",
   "lat": 52.7465818,
   "lng": 6.0797711,
@@ -21,6 +23,6 @@
   ],
   "chef": "Martin Kruithof",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 160)",
   "cuisineNl": "Creatief"
 }

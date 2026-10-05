@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 66,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 215,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/cuxhaven/sterneck-19",
   "website": "https://www.badhotel-sternhagen.de/",
   "lat": 53.886445,
   "lng": 8.645506,
@@ -21,6 +23,6 @@
   ],
   "chef": "Marc Rennhack",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "cuisineDe": "Kreativ"
 }

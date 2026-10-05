@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 496,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 245,
+  "dinnerNote": "Tasting menu (other menus from €169)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/stuttgart/speisemeisterei-d6",
   "website": "https://www.speisemeisterei.de/",
   "lat": 48.7128114,
   "lng": 9.2137855,
@@ -19,6 +21,6 @@
   ],
   "chef": "Stefan Gschwendtner",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 169 €)",
   "cuisineDe": "Kreativ"
 }

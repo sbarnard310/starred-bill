@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 185,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/hr/rovinj/cap-aureo-9e",
   "lat": 45.0754807,
   "lng": 13.6369528,
   "placeId": "ChIJl9Rc1hXBfEcR9iwHg5-3Mr8",
@@ -20,5 +22,5 @@
   ],
   "chef": "Jeffrey Vella",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana"
+  "dinnerNoteHr": "Degustacijski meni"
 }

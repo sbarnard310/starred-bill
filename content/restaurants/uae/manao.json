@@ -11,8 +11,10 @@
   "rating": 4.9,
   "reviews": 333,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 490,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.travelsforstars.com/blog/2025/05/25/manao-dubai",
   "website": "https://manao.ae",
   "lat": 25.2109571,
   "lng": 55.2558556,
@@ -23,5 +25,5 @@
   ],
   "chef": "Abhiraj Khatwani",
   "chefSource": "michelin",
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا"
+  "dinnerNoteAr": "قائمة تذوق"
 }

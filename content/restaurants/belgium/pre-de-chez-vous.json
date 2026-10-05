@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 365,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 96,
+  "dinnerNote": "Tasting menu (other menus from €82)",
+  "sourceType": "press",
+  "source": "https://www.gaultmillau.be/en/restaurants/pre-de-chez-vous-bouge",
   "website": "https://www.predechezvous.be",
   "lat": 50.4802711,
   "lng": 4.882023,
@@ -18,9 +20,9 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 82)",
   "cuisineNl": "Moderne keuken",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 82 €)",
   "cuisineFr": "Cuisine moderne",
   "chef": "Julien Malaisse",
   "chefSource": "press"

@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 576,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/pt/vila-nova-de-gaia/vinha-restaurant-7f",
   "website": "https://www.vinhaboutiquehotel.com/en/tastes",
   "lat": 41.1320681,
   "lng": -8.5756156,
@@ -20,6 +22,6 @@
   ],
   "chef": "Jonathan Seiller",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Portuguesa"
 }

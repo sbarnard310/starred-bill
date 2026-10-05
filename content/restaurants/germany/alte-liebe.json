@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 326,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu (other menus from €150)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/augsburg/alte-liebe-a8",
   "website": "https://www.alte-liebe-augsburg.de/",
   "lat": 48.3575728,
   "lng": 10.8969716,
@@ -21,6 +23,6 @@
   ],
   "chef": "Benjamin Mitschele",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 150 €)",
   "cuisineDe": "Moderne Küche"
 }

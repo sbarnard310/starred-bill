@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 79,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 205,
+  "dinnerNote": "Tasting menu (other menus from €175)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/nl/eijsden/create-by-guido-braeken-8d",
   "website": "https://www.restaurant-create.nl",
   "lat": 50.7961718,
   "lng": 5.7062586,
@@ -19,7 +21,7 @@
     "vegetarian",
     "halal"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 175)",
   "cuisineNl": "Modern Frans",
   "chef": "Guido Braeken",
   "chefSource": "press"

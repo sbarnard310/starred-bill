@@ -7,8 +7,10 @@
   "rating": 4.9,
   "reviews": 167,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 238,
+  "dinnerNote": "Tasting menu (other menus from €173)",
+  "sourceType": "press",
+  "source": "https://www.der-grosse-guide.de/place/3166-la-vie-by-thomas-buehner",
   "website": "https://laviebythomasbuehner.de/",
   "lat": 51.2378037,
   "lng": 6.8229278,
@@ -19,6 +21,6 @@
   ],
   "chef": "Timo Fritsche",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 173 €)",
   "cuisineDe": "Moderne Küche"
 }

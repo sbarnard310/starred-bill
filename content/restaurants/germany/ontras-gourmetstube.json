@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 638,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €119)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/regensburg/ontra-53",
   "website": "https://www.ontra-regensburg.de/gourmetmenue/",
   "lat": 49.0016893,
   "lng": 12.1025791,
@@ -20,6 +22,6 @@
   ],
   "chef": "Peter Grasmeier",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
   "cuisineDe": "Moderne Küche"
 }

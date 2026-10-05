@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 310,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 260,
+  "dinnerNote": "Tasting menu (other menus from €220)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/karlsruhe/sein-be",
   "website": "https://www.restaurant-sein.de",
   "lat": 49.006215,
   "lng": 8.3818129,
@@ -20,6 +22,6 @@
   ],
   "chef": "Thorsten Bender",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 220 €)",
   "cuisineDe": "Moderne Küche"
 }

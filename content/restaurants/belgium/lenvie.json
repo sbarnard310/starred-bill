@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 309,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €65)",
+  "sourceType": "press",
+  "source": "https://www.gaultmillau.be/en/restaurants/lenvie-sint-denijs",
   "website": "https://www.lenvie-restaurant.be/",
   "lat": 50.7499139,
   "lng": 3.3705692,
@@ -20,8 +22,8 @@
   ],
   "chef": "David Grosdent",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 65)",
   "cuisineNl": "Modern Frans",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 65 €)",
   "cuisineFr": "Cuisine française moderne"
 }

@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 226,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 475,
+  "dinnerNote": "Tasting menu (other menus from €255)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berlin/lorenz-adlon-esszimmer-af",
   "website": "https://www.lorenzadlon-esszimmer.de/",
   "lat": 52.5159333,
   "lng": 13.380011,
@@ -17,6 +19,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 255 €)",
   "cuisineDe": "Kreativ"
 }

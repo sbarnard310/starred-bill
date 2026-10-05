@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 206,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 270,
+  "dinnerNote": "Tasting menu (other menus from €160)",
+  "sourceType": "press",
+  "source": "https://www.der-grosse-guide.de/place/1236-coeur-d-39-artichaut",
   "website": "https://www.coeur-dartichaut.de/",
   "lat": 51.9636793,
   "lng": 7.6289064,
@@ -18,7 +20,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 160 €)",
   "cuisineDe": "Französisch-modern",
   "chef": "Frédéric Morel",
   "chefSource": "press"

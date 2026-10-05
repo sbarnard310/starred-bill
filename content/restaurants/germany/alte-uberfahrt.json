@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 268,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 140,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "press",
+  "source": "https://www.der-grosse-guide.de/place/2675-alte-ueberfahrt",
   "website": "https://www.alte-ueberfahrt.de/",
   "lat": 52.3797969,
   "lng": 12.9449636,
@@ -20,6 +22,6 @@
   ],
   "chef": "Thomas Hübner",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 130 €)",
   "cuisineDe": "Moderne Küche"
 }

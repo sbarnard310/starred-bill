@@ -8,8 +8,15 @@
   "rating": 4.8,
   "reviews": 339,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 240,
+  "dinnerNote": "Tasting menu (other menus from €160)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/de-kromme-watergang-hoofdplaat",
+  "lunch": 98,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gault-millau.nl/en/restaurants/de-kromme-watergang-hoofdplaat",
   "website": "https://www.krommewatergang.nl/",
   "lat": 51.377304,
   "lng": 3.6031759,
@@ -21,6 +28,7 @@
   ],
   "chef": "Tom Vinke",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Streekgebonden"
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 160)",
+  "cuisineNl": "Streekgebonden",
+  "lunchNoteNl": "Lunchmenu"
 }

@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 324,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 320,
+  "dinnerNote": "Tasting menu (other menus from €247)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/piesport/schanz.-restaurant.-21",
   "website": "https://www.schanz-restaurant.de/de/",
   "lat": 49.8776003,
   "lng": 6.9266002,
@@ -20,6 +22,6 @@
   ],
   "chef": "Thomas Schanz",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 247 €)",
   "cuisineDe": "Französisch-modern"
 }

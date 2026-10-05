@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 1477,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 140,
+  "dinnerNote": "Tasting menu (other menus from €89)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berlin/cookies-cream-7f",
   "website": "https://www.cookiescream.com/",
   "lat": 52.5163221,
   "lng": 13.3880944,
@@ -22,6 +24,6 @@
   ],
   "chef": "Patrick Ziegert",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 89 €)",
   "cuisineDe": "Vegetarisch"
 }

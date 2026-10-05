@@ -7,8 +7,16 @@
   "rating": 4.5,
   "reviews": 2736,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1300,
+  "dinnerNote": "Tasting menu",
+  "wine": 850,
+  "sourceType": "site",
+  "source": "https://domrestaurante.com.br/cardapio/",
+  "lunch": 250,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://domrestaurante.com.br/cardapio/",
   "website": "https://www.domrestaurante.com.br/",
   "lat": -23.5661451,
   "lng": -46.667572,
@@ -22,6 +30,7 @@
   ],
   "chef": "Alex Atala",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
-  "cuisinePt": "Criativa"
+  "dinnerNotePt": "Menu de degustação",
+  "cuisinePt": "Criativa",
+  "lunchNotePt": "Menu de almoço"
 }

@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 894,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 267,
+  "dinnerNote": "Tasting menu (other menus from €169)",
+  "sourceType": "press",
+  "source": "https://www.gusto-online.de/jellyfish.html",
   "website": "https://www.jellyfish-restaurant.de/",
   "lat": 53.5666172,
   "lng": 9.965481,
@@ -17,6 +19,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 169 €)",
   "cuisineDe": "Fisch und Meeresfrüchte"
 }

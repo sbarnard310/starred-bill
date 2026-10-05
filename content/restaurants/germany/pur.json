@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 88,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 255,
+  "dinnerNote": "Tasting menu (other menus from €195)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/berchtesgaden/pur-db",
   "website": "https://www.kempinski.com/de/kempinski-hotel-berchtesgaden/restaurants-bars/gourmet-restaurant-pur",
   "lat": 47.6340765,
   "lng": 13.0468265,
@@ -21,6 +23,6 @@
   ],
   "chef": "Ulrich Heimann",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 195 €)",
   "cuisineDe": "Moderne Küche"
 }

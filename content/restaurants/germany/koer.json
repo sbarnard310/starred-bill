@@ -7,8 +7,10 @@
   "rating": 4.9,
   "reviews": 238,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 128,
+  "dinnerNote": "Tasting menu (other menus from €65)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/hamburg/koer-d0",
   "website": "https://www.koer-hamburg.de/",
   "lat": 53.5839548,
   "lng": 9.9960681,
@@ -19,6 +21,6 @@
   ],
   "chef": "Paul Decker",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 65 €)",
   "cuisineDe": "Kreativ"
 }

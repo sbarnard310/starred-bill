@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 355,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €140)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/nl/roermond/one-d9",
   "website": "https://restaurantone.nl/",
   "lat": 51.1895014,
   "lng": 5.9808834,
@@ -22,6 +24,6 @@
   ],
   "chef": "Edwin Soumang",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 140)",
   "cuisineNl": "Creatief"
 }

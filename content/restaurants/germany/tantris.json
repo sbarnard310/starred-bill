@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 1276,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 345,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.vivamonaco.de/345-euro-menue-im-zwei-sterne-restaurant-tantris/",
   "website": "https://tantris.de/",
   "lat": 48.1697565,
   "lng": 11.588259,
@@ -20,6 +22,6 @@
   ],
   "chef": "Benjamin Chmura",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Französisch-zeitgemäß"
 }

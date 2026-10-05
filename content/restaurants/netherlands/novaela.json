@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 122,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €125)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/novaela-delft",
   "lunch": 75,
   "lunchType": "menu",
   "lunchNote": "Lunch menu",
@@ -25,7 +27,7 @@
   ],
   "chef": "Daniel Duijster Gomero",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 125)",
   "cuisineNl": "Creatief Frans",
   "lunchNoteNl": "Lunchmenu"
 }

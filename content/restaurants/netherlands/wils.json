@@ -7,8 +7,10 @@
   "rating": 4.5,
   "reviews": 391,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/wils-amsterdam",
   "website": "https://www.restaurantwils.nl/",
   "lat": 52.3433421,
   "lng": 4.856129,
@@ -20,6 +22,6 @@
   ],
   "chef": "Joris Bijdendijk",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Wereldkeuken"
 }

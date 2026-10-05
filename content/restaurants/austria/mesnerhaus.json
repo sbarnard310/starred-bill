@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 214,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €63)",
+  "sourceType": "press",
+  "source": "https://www.falter.at/lokal/7206/restaurant-mesnerhaus",
   "website": "https://www.mesnerhaus.at",
   "lat": 47.133416,
   "lng": 13.6785494,
@@ -19,7 +21,7 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 63 €)",
   "cuisineDe": "Saisonal",
   "chef": "Josef Steffner",
   "chefSource": "press"

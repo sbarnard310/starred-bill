@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 838,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 209,
+  "dinnerNote": "Tasting menu (other menus from €119)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/grenzach-wyhlen/eckert---fine-dining-9b",
   "website": "https://www.eckert-grenzach.de",
   "lat": 47.5532458,
   "lng": 7.658225,
@@ -22,6 +24,6 @@
   ],
   "chef": "Nicolai Peter Wiedmer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
   "cuisineDe": "Kreativ"
 }

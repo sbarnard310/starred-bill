@@ -11,8 +11,10 @@
   "rating": 4.9,
   "reviews": 74,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 205,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "press",
+  "source": "https://www.gusto-online.de/rausch.html",
   "website": "https://rauschrauschrausch.com/",
   "lat": 50.12074,
   "lng": 8.670387,
@@ -23,6 +25,6 @@
   ],
   "chef": "Jochim Busch",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "cuisineDe": "Moderne Küche"
 }

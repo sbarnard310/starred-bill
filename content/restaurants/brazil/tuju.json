@@ -11,8 +11,11 @@
   "rating": 4.8,
   "reviews": 365,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1650,
+  "dinnerNote": "Tasting menu",
+  "wine": 1150,
+  "sourceType": "press",
+  "source": "https://www.travelsforstars.com/blog/2026/05/07/tuju-sao-paulo",
   "website": "https://www.tuju.com.br",
   "lat": -23.5805339,
   "lng": -46.6855567,
@@ -28,6 +31,6 @@
   ],
   "chef": "Ivan Ralston",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Criativa"
 }

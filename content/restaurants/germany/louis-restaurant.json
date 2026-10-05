@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 46,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 235,
+  "dinnerNote": "Tasting menu (other menus from €185)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/saarlouis/louis-restaurant-6d",
   "website": "https://lamaison-hotel.de/",
   "lat": 49.317148,
   "lng": 6.7556133,
@@ -22,6 +24,6 @@
   ],
   "chef": "Sebastian Sandor",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 185 €)",
   "cuisineDe": "Asiatisch"
 }

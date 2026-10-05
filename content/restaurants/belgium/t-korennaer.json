@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 405,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu (other menus from €79)",
+  "sourceType": "press",
+  "source": "https://www.gaultmillau.be/en/restaurants/t-korennaer-nieuwkerken-waas",
   "website": "https://www.korennaer.be/nl/",
   "lat": 51.1929598,
   "lng": 4.1782208,
@@ -18,9 +20,9 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 79)",
   "cuisineNl": "Frans",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 79 €)",
   "cuisineFr": "Cuisine française",
   "chef": "Edwin Van Goethem",
   "chefSource": "press"

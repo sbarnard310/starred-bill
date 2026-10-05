@@ -8,13 +8,15 @@
   "rating": 4.8,
   "reviews": 206,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/regensburg/aska-–-traditional-sushi-bar-14",
   "website": "https://aska.restaurant/",
   "lat": 49.0200415,
   "lng": 12.0963365,
   "placeId": "ChIJj-yhhHbBn0cRcBfQ_9MlDcE",
   "michelinId": "1186893",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
   "cuisineDe": "Japanisch"
 }

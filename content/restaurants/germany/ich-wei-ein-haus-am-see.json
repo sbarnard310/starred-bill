@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 140,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/krakow-am-see/ich-weiß-ein-haus-am-see-d9",
   "website": "https://www.hausamsee.de/",
   "lat": 53.6685683,
   "lng": 12.2984015,
@@ -17,6 +19,6 @@
   "michelinId": "74698",
   "chef": "Raik Zeigner",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Französisch-klassisch"
 }

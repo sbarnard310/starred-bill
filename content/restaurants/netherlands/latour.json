@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 295,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/latour-noordwijk-aan-zee",
   "website": "https://www.restaurantlatour.nl/nl-nl/",
   "lat": 52.2413879,
   "lng": 4.4277214,
@@ -23,6 +25,6 @@
   ],
   "chef": "Kenny Friederichs",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
   "cuisineNl": "Moderne keuken"
 }

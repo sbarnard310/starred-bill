@@ -8,8 +8,15 @@
   "rating": 4.7,
   "reviews": 417,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu (other menus from €145)",
+  "sourceType": "press",
+  "source": "https://www.gault-millau.nl/en/restaurants/restaurant-kasteel-heemstede-houten",
+  "lunch": 100,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.gault-millau.nl/en/restaurants/restaurant-kasteel-heemstede-houten",
   "website": "https://restaurant-kasteelheemstede.nl/",
   "lat": 52.0330316,
   "lng": 5.1252355,
@@ -22,6 +29,7 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Moderne keuken"
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 145)",
+  "cuisineNl": "Moderne keuken",
+  "lunchNoteNl": "Lunchmenu"
 }

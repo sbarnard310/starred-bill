@@ -70,6 +70,18 @@ content:
         label: Area in Italian
         description: Only for places offered in Italian.
         type: string
+      - name: areaDa
+        label: Area in Danish
+        description: Only for places offered in Danish.
+        type: string
+      - name: areaIs
+        label: Area in Icelandic
+        description: Only for places offered in Icelandic.
+        type: string
+      - name: areaCa
+        label: Area in Catalan
+        description: Only for places offered in Catalan.
+        type: string
       - name: areaKo
         label: Area in Korean
         description: Only for places offered in Korean.
@@ -130,6 +142,15 @@ content:
       - name: changeNoteIt
         label: Star change note in Italian
         type: string
+      - name: changeNoteDa
+        label: Star change note in Danish
+        type: string
+      - name: changeNoteIs
+        label: Star change note in Icelandic
+        type: string
+      - name: changeNoteCa
+        label: Star change note in Catalan
+        type: string
       - name: changeNoteKo
         label: Star change note in Korean
         type: string
@@ -181,6 +202,15 @@ content:
         type: string
       - name: dinnerNoteIt
         label: Dinner note in Italian
+        type: string
+      - name: dinnerNoteDa
+        label: Dinner note in Danish
+        type: string
+      - name: dinnerNoteIs
+        label: Dinner note in Icelandic
+        type: string
+      - name: dinnerNoteCa
+        label: Dinner note in Catalan
         type: string
       - name: dinnerNoteKo
         label: Dinner note in Korean
@@ -237,6 +267,15 @@ content:
         type: string
       - name: lunchNoteIt
         label: Lunch note in Italian
+        type: string
+      - name: lunchNoteDa
+        label: Lunch note in Danish
+        type: string
+      - name: lunchNoteIs
+        label: Lunch note in Icelandic
+        type: string
+      - name: lunchNoteCa
+        label: Lunch note in Catalan
         type: string
       - name: lunchNoteKo
         label: Lunch note in Korean
@@ -297,6 +336,15 @@ content:
         type: string
       - name: statusNoteIt
         label: Status note in Italian
+        type: string
+      - name: statusNoteDa
+        label: Status note in Danish
+        type: string
+      - name: statusNoteIs
+        label: Status note in Icelandic
+        type: string
+      - name: statusNoteCa
+        label: Status note in Catalan
         type: string
       - name: statusNoteKo
         label: Status note in Korean
@@ -377,6 +425,15 @@ content:
       - name: nameIt
         label: Name in Italian
         type: string
+      - name: nameDa
+        label: Name in Danish
+        type: string
+      - name: nameIs
+        label: Name in Icelandic
+        type: string
+      - name: nameCa
+        label: Name in Catalan
+        type: string
       - name: nameKo
         label: Name in Korean
         type: string
@@ -385,7 +442,7 @@ content:
         type: string
       - name: languages
         label: Languages offered
-        description: The language buttons on this page and the pages inside it. Leave empty for English only. Otherwise English plus the main official language: Chinese (and Cantonese) for Taiwan, Hong Kong and Macau, French for France and Monaco, Japanese for Japan, Spanish for Spain, Italian for Italy, Korean for South Korea.
+        description: The language buttons on this page and the pages inside it. Leave empty for English only. Otherwise English plus the main official language: Chinese (and Cantonese) for Taiwan, Hong Kong and Macau, French for France and Monaco, Japanese for Japan, Spanish for Spain, Italian for Italy, Korean for South Korea, Danish for Denmark, Icelandic for Iceland, Catalan for Andorra.
         type: select
         options:
           multiple: true
@@ -398,6 +455,9 @@ content:
             - { value: es, label: "Español (Spanish)" }
             - { value: it, label: "Italiano (Italian)" }
             - { value: ko, label: "한국어 (Korean)" }
+            - { value: da, label: "Dansk (Danish)" }
+            - { value: is, label: "Íslenska (Icelandic)" }
+            - { value: ca, label: "Català (Catalan)" }
       - name: parent
         label: Inside (regions, cities and districts)
         description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom. A district sits inside a city, e.g. Manhattan inside New York.
@@ -443,6 +503,18 @@ content:
         label: Name mid-sentence in Italian
         description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
         type: string
+      - name: inSentenceDa
+        label: Name mid-sentence in Danish
+        description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
+        type: string
+      - name: inSentenceIs
+        label: Name mid-sentence in Icelandic
+        description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
+        type: string
+      - name: inSentenceCa
+        label: Name mid-sentence in Catalan
+        description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
+        type: string
       - name: inSentenceKo
         label: Name mid-sentence in Korean
         description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
@@ -465,6 +537,15 @@ content:
         type: text
       - name: introIt
         label: "Introduction (Italian)"
+        type: text
+      - name: introDa
+        label: "Introduction (Danish)"
+        type: text
+      - name: introIs
+        label: "Introduction (Icelandic)"
+        type: text
+      - name: introCa
+        label: "Introduction (Catalan)"
         type: text
       - name: introKo
         label: "Introduction (Korean)"
@@ -491,6 +572,15 @@ content:
       - name: serviceTextIt
         label: "Method: per person, before service (Italian)"
         type: text
+      - name: serviceTextDa
+        label: "Method: per person, before service (Danish)"
+        type: text
+      - name: serviceTextIs
+        label: "Method: per person, before service (Icelandic)"
+        type: text
+      - name: serviceTextCa
+        label: "Method: per person, before service (Catalan)"
+        type: text
       - name: serviceTextKo
         label: "Method: per person, before service (Korean)"
         type: text
@@ -514,6 +604,15 @@ content:
         type: text
       - name: sourcesTextIt
         label: "Method: where prices come from (Italian)"
+        type: text
+      - name: sourcesTextDa
+        label: "Method: where prices come from (Danish)"
+        type: text
+      - name: sourcesTextIs
+        label: "Method: where prices come from (Icelandic)"
+        type: text
+      - name: sourcesTextCa
+        label: "Method: where prices come from (Catalan)"
         type: text
       - name: sourcesTextKo
         label: "Method: where prices come from (Korean)"
@@ -539,6 +638,15 @@ content:
         type: text
       - name: starsTextIt
         label: "Method: stars and Google rating (Italian)"
+        type: text
+      - name: starsTextDa
+        label: "Method: stars and Google rating (Danish)"
+        type: text
+      - name: starsTextIs
+        label: "Method: stars and Google rating (Icelandic)"
+        type: text
+      - name: starsTextCa
+        label: "Method: stars and Google rating (Catalan)"
         type: text
       - name: starsTextKo
         label: "Method: stars and Google rating (Korean)"

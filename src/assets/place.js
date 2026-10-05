@@ -53,7 +53,7 @@ const onBeen = (r) => Object.prototype.hasOwnProperty.call(state.visited, r.id);
 const starMatch = (r) => !state.activeStars || r.stars === state.activeStars;
 const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOnly || !!r.change) && (!state.beenOnly || onBeen(r));
 const searchText = (r) => [r.name, r.nameZh, r.nameJa, r.nameKo, r.cuisine, r.cuisineZh, r.cuisineJa, CUISINE_ZH[r.cuisine], CUISINE_FR[r.cuisine], CUISINE_ES[r.cuisine], CUISINE_IT[r.cuisine], CUISINE_KO[r.cuisine],
-  r.area, r.areaZh, r.areaJa, r.areaEs, r.areaIt, r.areaKo, r.cityName, r.cityNameZh, r.cityNameJa, r.cityNameEs, r.cityNameIt, r.cityNameKo].filter(Boolean).join(" ").toLowerCase();
+  r.area, r.areaZh, r.areaJa, r.areaEs, r.areaIt, r.areaKo, r.cityName, r.cityNameZh, r.cityNameJa, r.cityNameEs, r.cityNameIt, r.cityNameKo, r.areaDa, r.areaIs, r.areaCa].filter(Boolean).join(" ").toLowerCase();
 const queryMatch = (r) => { const q = state.query.trim().toLowerCase(); return !q || searchText(r).includes(q); };
 const changeBadge = (r) => !r.change ? "" : '<span class="chg chg-' + (r.change === "down" ? "down" : "up") + '" title="' + esc(t("chgTitle", { note: pick(r, "changeNote"), date: monthYear(r.changeDate) })) + '">' + (r.change === "down" ? "▼ " : "▲ ") + (r.change === "new" ? t("chgNew") + " " : "") + monthYear(r.changeDate) + "</span>";
 

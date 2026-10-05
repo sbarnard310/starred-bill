@@ -11,5 +11,15 @@
   "sourcesText": "Dinner is the main tasting menu where there is one, and wine is the cheapest wine pairing for it. Where a restaurant offers menus of different lengths, the note says “from” and the shorter one is shown. Prices come from each restaurant's own website where they're published, otherwise from recent reviews. Lunch is shown where a restaurant serves it, and the note says which days.",
   "sourcesTextZh": "晚餐以主要品嚐套餐為準，餐酒搭配則取該套餐最便宜的葡萄酒搭配。若餐廳提供長短不同的套餐，說明欄會註明「起」並顯示較短的一種。有公布價格的，以餐廳官網為準；否則參考近期評論。有供應午餐的餐廳會列出午餐價格，並註明供應日。",
   "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Nordic Countries 2026, announced on 1 June 2026. A green ▲ marks a restaurant that gained a star in the June 2025 or June 2026 guide; a red ▼ marks one that lost its stars.",
-  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 6 月 1 日公布的《米其林指南北歐 2026》。綠色 ▲ 代表在 2025 年 6 月或 2026 年 6 月的指南中獲得星級；紅色 ▼ 代表失去星級。"
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 6 月 1 日公布的《米其林指南北歐 2026》。綠色 ▲ 代表在 2025 年 6 月或 2026 年 6 月的指南中獲得星級；紅色 ▼ 代表失去星級。",
+  "languages": [
+    "en",
+    "da"
+  ],
+  "nameDa": "Danmark",
+  "inSentenceDa": "i Danmark",
+  "introDa": "Priserne er i danske kroner (DKK), med en knap til at se dem i pund, euro eller amerikanske dollar. Priserne er tjekket i oktober 2026; i Danmark er service og 25 % moms allerede med i menupriserne.",
+  "serviceTextDa": "Alle beløb er for én gæst. Danske menupriser er inklusive 25 % moms og service, så det er de fulde priser før drikkevarer; drikkepenge er frivillige. Nogle restauranter lægger et gebyr på firmakort eller kort udstedt uden for EU. Tillæg som kaviar er ikke medregnet. Priser i andre valutaer bruger dagens kurs og er omtrentlige.",
+  "sourcesTextDa": "Middag er den vigtigste smagsmenu, hvis der er en, og vin er den billigste vinmenu til den. Hvis en restaurant har menuer af forskellig længde, står der “fra” i noten, og den korteste vises. Priserne kommer fra restaurantens egen hjemmeside, hvis de står der, og ellers fra nye anmeldelser. Frokost vises, hvor restauranten serverer den, og noten fortæller hvilke dage.",
+  "starsTextDa": "Google-bedømmelsen ud af 5 og antallet af anmeldelser er tjekket i oktober 2026. Stjernerne kommer fra MICHELIN-guiden Nordic Countries 2026, offentliggjort 1. juni 2026. En grøn ▲ markerer en restaurant, der fik en stjerne i guiden fra juni 2025 eller juni 2026; en rød ▼ en, der mistede sine stjerner."
 }

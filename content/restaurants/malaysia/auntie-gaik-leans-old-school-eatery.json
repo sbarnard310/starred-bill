@@ -12,5 +12,12 @@
   "sourceType": "none",
   "lat": 5.4180516,
   "lng": 100.3423801,
-  "placeId": "ChIJfZkTH4_DSjARqJ12xbnOYv4"
+  "placeId": "ChIJfZkTH4_DSjARqJ12xbnOYv4",
+  "michelinId": "1201640",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ],
+  "chef": "Gaik Lean",
+  "chefSource": "michelin"
 }

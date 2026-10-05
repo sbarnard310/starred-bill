@@ -25,5 +25,12 @@
   "website": "https://www.raffles.com/fr/paris/dining/il-carpaccio/",
   "lat": 48.87577,
   "lng": 2.29997,
-  "placeId": "ChIJaQacl-pv5kcRZEBerrFI3lM"
+  "placeId": "ChIJaQacl-pv5kcRZEBerrFI3lM",
+  "michelinId": "300866",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Oliver Piras and Alessandra Del Favero",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,13 @@
   "website": "https://www.vlristorante.it/",
   "lat": 40.6673722,
   "lng": 16.6129579,
-  "placeId": "ChIJ677rum5_RxMRMebrLL7AIGU"
+  "placeId": "ChIJ677rum5_RxMRMebrLL7AIGU",
+  "michelinId": "559004",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Vitantonio Lombardo",
+  "chefSource": "site"
 }

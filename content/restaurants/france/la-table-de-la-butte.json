@@ -23,5 +23,13 @@
   "website": "https://labutte.fr/",
   "lat": 48.6109489,
   "lng": -4.2981363,
-  "placeId": "ChIJEYHeLfeqFkgRRPt3DXOjjaQ"
+  "placeId": "ChIJEYHeLfeqFkgRRPt3DXOjjaQ",
+  "michelinId": "12424",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Nicolas Conraux",
+  "chefSource": "michelin"
 }

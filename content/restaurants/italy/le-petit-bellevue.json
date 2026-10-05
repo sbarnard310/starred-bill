@@ -13,5 +13,12 @@
   "website": "https://www.hotelbellevue.it/it/ristoranti/view/le-petit-bellevue",
   "lat": 45.6067309,
   "lng": 7.3556842,
-  "placeId": "ChIJJy8kNnLhiEcRDyamosx0Hok"
+  "placeId": "ChIJJy8kNnLhiEcRDyamosx0Hok",
+  "michelinId": "161611",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Niccolò de Riu",
+  "chefSource": "michelin"
 }

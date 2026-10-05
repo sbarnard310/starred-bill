@@ -15,5 +15,11 @@
   "website": "https://www.lessentiel.be/",
   "lat": 50.4754247,
   "lng": 4.7387117,
-  "placeId": "ChIJc5FFKMmEwUcR7qhHz4WyCp4"
+  "placeId": "ChIJc5FFKMmEwUcR7qhHz4WyCp4",
+  "michelinId": "210192",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Raphaël Adam",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,8 @@
   "website": "https://www.noz.global/experience/noz-17",
   "lat": 40.743587,
   "lng": -74.005878,
-  "placeId": "ChIJT4q4QIFZwokRs1nRu7_ckVI"
+  "placeId": "ChIJT4q4QIFZwokRs1nRu7_ckVI",
+  "michelinId": "1198444",
+  "chef": "Junichi Matsuzaki",
+  "chefSource": "michelin"
 }

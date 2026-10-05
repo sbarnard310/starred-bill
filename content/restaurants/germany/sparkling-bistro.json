@@ -12,5 +12,8 @@
   "website": "https://www.restaurantsparklingbistro.com/",
   "lat": 48.1519723,
   "lng": 11.5779835,
-  "placeId": "ChIJsby3GOt1nkcRpZ4xQ78l6jA"
+  "placeId": "ChIJsby3GOt1nkcRpZ4xQ78l6jA",
+  "michelinId": "547708",
+  "chef": "Jürgen Wolfsgruber and Leander Bauer",
+  "chefSource": "michelin"
 }

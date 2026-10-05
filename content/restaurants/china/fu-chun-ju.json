@@ -12,5 +12,12 @@
   "website": "https://thepuxuan.com/en/beijing-wangfujing-luxury-hotel-dining/cantonese-cuisine-fu-chun-ju-restaurant/",
   "lat": 39.922423,
   "lng": 116.403739,
-  "placeId": "ChIJSfS3rtdS8DURubHVcmf9d_g"
+  "placeId": "ChIJSfS3rtdS8DURubHVcmf9d_g",
+  "michelinId": "1186713",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Yeung Wai Kit",
+  "chefSource": "site"
 }

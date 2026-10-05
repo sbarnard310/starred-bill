@@ -13,5 +13,11 @@
   "website": "https://www.oldemarckt.nl/",
   "lat": 51.9275068,
   "lng": 6.5815844,
-  "placeId": "ChIJNaxI0U15uEcRlA4r3F247Bk"
+  "placeId": "ChIJNaxI0U15uEcRlA4r3F247Bk",
+  "michelinId": "1210157",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Bram Stoverink",
+  "chefSource": "michelin"
 }

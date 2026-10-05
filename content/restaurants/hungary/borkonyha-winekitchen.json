@@ -12,5 +12,10 @@
   "website": "https://borkonyha.hu/",
   "lat": 47.4993951,
   "lng": 19.0524595,
-  "placeId": "ChIJ4x9AsGrcQUcRNcTpm2xilYo"
+  "placeId": "ChIJ4x9AsGrcQUcRNcTpm2xilYo",
+  "michelinId": "370956",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

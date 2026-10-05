@@ -12,5 +12,8 @@
   "website": "https://www.almalohidenver.com/",
   "lat": 39.7582201,
   "lng": -105.0116429,
-  "placeId": "ChIJtcachtF5bIcRZsMfPFA72Ks"
+  "placeId": "ChIJtcachtF5bIcRZsMfPFA72Ks",
+  "michelinId": "1212922",
+  "chef": "Johnny Curiel",
+  "chefSource": "michelin"
 }

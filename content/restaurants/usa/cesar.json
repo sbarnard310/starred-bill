@@ -21,5 +21,8 @@
   "website": "https://www.cesar.restaurant/",
   "lat": 40.727178,
   "lng": -74.007609,
-  "placeId": "ChIJeyzWYABZwokRkxhWJzFpqvU"
+  "placeId": "ChIJeyzWYABZwokRkxhWJzFpqvU",
+  "michelinId": "1215182",
+  "chef": "César Ramirez",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,13 @@
   "website": "https://www.gidleigh.co.uk/dining-drinking/restaurant",
   "lat": 50.676848,
   "lng": -3.875037,
-  "placeId": "ChIJu2q3Tj1UbEgRxlbj-Se9ROc"
+  "placeId": "ChIJu2q3Tj1UbEgRxlbj-Se9ROc",
+  "michelinId": "192662",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ian Webber",
+  "chefSource": "site"
 }

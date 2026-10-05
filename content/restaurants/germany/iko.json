@@ -15,5 +15,10 @@
   "website": "https://www.iko-restaurant.de/",
   "lat": 52.2697166,
   "lng": 8.1281943,
-  "placeId": "ChIJh8Pcnrb6uUcRu633SSkaYlI"
+  "placeId": "ChIJh8Pcnrb6uUcRu633SSkaYlI",
+  "michelinId": "565284",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

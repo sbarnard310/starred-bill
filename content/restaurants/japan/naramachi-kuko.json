@@ -12,5 +12,8 @@
   "website": "https://kuko-nara.jp/",
   "lat": 34.6765865,
   "lng": 135.8290168,
-  "placeId": "ChIJWyRsnBs5AWARLfiOIkysCiw"
+  "placeId": "ChIJWyRsnBs5AWARLfiOIkysCiw",
+  "michelinId": "1197094",
+  "chef": "Kazuyuki Miyamoto",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,13 @@
   "website": "https://www.eckert-grenzach.de",
   "lat": 47.5532458,
   "lng": 7.658225,
-  "placeId": "ChIJZxXgxw63kUcRtTdTGKBzGZ4"
+  "placeId": "ChIJZxXgxw63kUcRtTdTGKBzGZ4",
+  "michelinId": "81133",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Nicolai Peter Wiedmer",
+  "chefSource": "michelin"
 }

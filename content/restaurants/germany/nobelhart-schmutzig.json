@@ -12,5 +12,11 @@
   "website": "https://www.nobelhartundschmutzig.com/",
   "lat": 52.5051559,
   "lng": 13.3906005,
-  "placeId": "ChIJNdtTjdNRqEcR-n4Xa0Y92G4"
+  "placeId": "ChIJNdtTjdNRqEcR-n4Xa0Y92G4",
+  "michelinId": "469763",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Micha Schäfer",
+  "chefSource": "michelin"
 }

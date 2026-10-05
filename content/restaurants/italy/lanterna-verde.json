@@ -23,5 +23,12 @@
   "website": "https://www.lanternaverde.com/",
   "lat": 46.3284,
   "lng": 9.49741,
-  "placeId": "ChIJXzJsE0RkhEcRFDstf89oWwo"
+  "placeId": "ChIJXzJsE0RkhEcRFDstf89oWwo",
+  "michelinId": "157754",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Roberto Tonola",
+  "chefSource": "michelin"
 }

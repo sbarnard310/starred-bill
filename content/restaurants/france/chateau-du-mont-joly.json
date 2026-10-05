@@ -15,5 +15,12 @@
   "website": "https://www.chateaumontjoly.com",
   "lat": 47.12314,
   "lng": 5.45684,
-  "placeId": "ChIJl-8ehyez8kcRP9Fd223oFs8"
+  "placeId": "ChIJl-8ehyez8kcRP9Fd223oFs8",
+  "michelinId": "204212",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Romuald Fassenet",
+  "chefSource": "michelin"
 }

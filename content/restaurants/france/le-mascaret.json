@@ -15,5 +15,14 @@
   "website": "https://lemascaret.fr/",
   "lat": 49.0671674,
   "lng": -1.583558,
-  "placeId": "ChIJ19JzDqeGDEgRw7YKSSK5iWU"
+  "placeId": "ChIJ19JzDqeGDEgRw7YKSSK5iWU",
+  "michelinId": "196302",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Philippe Hardy",
+  "chefSource": "michelin"
 }

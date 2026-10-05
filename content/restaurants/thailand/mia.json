@@ -17,5 +17,12 @@
   "website": "https://www.miarestaurantbkk.com",
   "lat": 13.721191,
   "lng": 100.5713481,
-  "placeId": "ChIJTbzH3iWf4jARdfwR4GLGTZ8"
+  "placeId": "ChIJTbzH3iWf4jARdfwR4GLGTZ8",
+  "michelinId": "1190558",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -15,5 +15,14 @@
   "website": "https://chateaudecourban.com",
   "lat": 47.9194802,
   "lng": 4.7375618,
-  "placeId": "ChIJyzwhusit7UcR3UTAxTQpjOU"
+  "placeId": "ChIJyzwhusit7UcR3UTAxTQpjOU",
+  "michelinId": "208295",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Maxime Lesobre",
+  "chefSource": "site"
 }

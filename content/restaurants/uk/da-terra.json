@@ -21,5 +21,13 @@
   "website": "https://daterra.co.uk/",
   "lat": 51.530411,
   "lng": -0.05607,
-  "placeId": "ChIJn-wx7LQddkgRMWv5bVEiEfQ"
+  "placeId": "ChIJn-wx7LQddkgRMWv5bVEiEfQ",
+  "michelinId": "1154511",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Rafael Cagali",
+  "chefSource": "michelin"
 }

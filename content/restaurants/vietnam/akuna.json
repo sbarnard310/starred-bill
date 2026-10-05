@@ -12,5 +12,11 @@
   "website": "https://akunarestaurant.com",
   "lat": 10.7798895,
   "lng": 106.7074227,
-  "placeId": "ChIJ3ZrrlpIvdTER7s7xny5hbVA"
+  "placeId": "ChIJ3ZrrlpIvdTER7s7xny5hbVA",
+  "michelinId": "1211041",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sam Aisbett",
+  "chefSource": "site"
 }

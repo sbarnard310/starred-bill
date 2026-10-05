@@ -12,5 +12,8 @@
   "website": "https://www.akintoronto.com/",
   "lat": 43.6490955,
   "lng": -79.3747233,
-  "placeId": "ChIJVVx7BwDL1IkRWAatxtx5fPY"
+  "placeId": "ChIJVVx7BwDL1IkRWAatxtx5fPY",
+  "michelinId": "1212180",
+  "chef": "Eric Chong",
+  "chefSource": "michelin"
 }

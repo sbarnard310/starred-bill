@@ -12,5 +12,12 @@
   "website": "https://tantris.de/",
   "lat": 48.1697565,
   "lng": 11.588259,
-  "placeId": "ChIJtSGICsp1nkcRsO8j0sObIio"
+  "placeId": "ChIJtSGICsp1nkcRsO8j0sObIio",
+  "michelinId": "75719",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Benjamin Chmura",
+  "chefSource": "michelin"
 }

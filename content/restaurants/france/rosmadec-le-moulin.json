@@ -15,5 +15,12 @@
   "website": "https://rosmadec.com/",
   "lat": 47.8547815,
   "lng": -3.7479724,
-  "placeId": "ChIJAaQX6HvoEEgRQhWJvGqGf9c"
+  "placeId": "ChIJAaQX6HvoEEgRQhWJvGqGf9c",
+  "michelinId": "7051",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Sébastien Martinez",
+  "chefSource": "michelin"
 }

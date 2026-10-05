@@ -20,5 +20,12 @@
   "website": "https://www.nublorestaurant.com/",
   "lat": 42.5778988,
   "lng": -2.8465842,
-  "placeId": "ChIJvWlR24WLTw0RiaiPZRJF8c0"
+  "placeId": "ChIJvWlR24WLTw0RiaiPZRJF8c0",
+  "michelinId": "1195671",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Miguel Caño",
+  "chefSource": "michelin"
 }

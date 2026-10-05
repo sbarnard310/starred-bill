@@ -24,5 +24,12 @@
   "website": "https://www.parrilladonjulio.com.ar",
   "lat": -34.5862674,
   "lng": -58.4244386,
-  "placeId": "ChIJoYl36oa1vJURWWhqD9z3UV8"
+  "placeId": "ChIJoYl36oa1vJURWWhqD9z3UV8",
+  "michelinId": "532169",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Pablo Rivero",
+  "chefSource": "michelin"
 }

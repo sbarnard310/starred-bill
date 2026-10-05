@@ -23,5 +23,11 @@
   "website": "https://www.thekerfieldarms.co.uk/",
   "lat": 51.4730004,
   "lng": -0.0898627,
-  "placeId": "ChIJExecbgADdkgRfhIBRRGzEb8"
+  "placeId": "ChIJExecbgADdkgRfhIBRRGzEb8",
+  "michelinId": "1218324",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

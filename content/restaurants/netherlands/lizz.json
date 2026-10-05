@@ -13,5 +13,15 @@
   "website": "https://wshs.nl/eat-drink/lizz/",
   "lat": 52.0105398,
   "lng": 4.7136004,
-  "placeId": "ChIJHX1uBdnVxUcRl5yH5J1bpCs"
+  "placeId": "ChIJHX1uBdnVxUcRl5yH5J1bpCs",
+  "michelinId": "1195911",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Remco Kuijpers",
+  "chefSource": "site"
 }

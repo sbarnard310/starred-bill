@@ -13,5 +13,9 @@
   "website": "https://www.hofterhulst.be/",
   "lat": 51.0769653,
   "lng": 4.793442,
-  "placeId": "ChIJ_QeEsX5awUcRClXBqSBkzE0"
+  "placeId": "ChIJ_QeEsX5awUcRClXBqSBkzE0",
+  "michelinId": "209836",
+  "diets": [
+    "vegetarian"
+  ]
 }

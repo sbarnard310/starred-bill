@@ -17,5 +17,9 @@
   "website": "https://www.ledubkk.com",
   "lat": 13.7288536,
   "lng": 100.5347961,
-  "placeId": "ChIJL7-My9KY4jARzlw1ffk9vo8"
+  "placeId": "ChIJL7-My9KY4jARzlw1ffk9vo8",
+  "michelinId": "546990",
+  "diets": [
+    "vegetarian"
+  ]
 }

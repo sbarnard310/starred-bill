@@ -15,5 +15,11 @@
   "website": "https://www.lech-line.de",
   "lat": 48.0473043,
   "lng": 10.8721887,
-  "placeId": "ChIJPaXP-9MjnEcR3lYwGgxUjo4"
+  "placeId": "ChIJPaXP-9MjnEcR3lYwGgxUjo4",
+  "michelinId": "1204062",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christian Sauer",
+  "chefSource": "michelin"
 }

@@ -29,5 +29,10 @@
   "website": "https://www.restaurantmassana.com/",
   "lat": 41.98505,
   "lng": 2.81958,
-  "placeId": "ChIJ1WHjceDmuhIRgdW3srr16BA"
+  "placeId": "ChIJ1WHjceDmuhIRgdW3srr16BA",
+  "michelinId": "220306",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

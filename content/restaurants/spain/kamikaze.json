@@ -31,5 +31,11 @@
   "website": "https://www.kamikazebarcelona.com/",
   "lat": 41.392434,
   "lng": 2.155568,
-  "placeId": "ChIJb8OJj6GjpBIR15m3GfR9CsY"
+  "placeId": "ChIJb8OJj6GjpBIR15m3GfR9CsY",
+  "michelinId": "1207068",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Enric Buendía",
+  "chefSource": "michelin"
 }

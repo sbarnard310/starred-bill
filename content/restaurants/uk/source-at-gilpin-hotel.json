@@ -20,5 +20,8 @@
   "website": "https://thegilpin.co.uk/eat-and-drink/source/",
   "lat": 54.355562,
   "lng": -2.881426,
-  "placeId": "ChIJ98WP_xuTfEgRmdYlkSNf7PM"
+  "placeId": "ChIJ98WP_xuTfEgRmdYlkSNf7PM",
+  "michelinId": "1206579",
+  "chef": "Kevin Scanlan",
+  "chefSource": "site"
 }

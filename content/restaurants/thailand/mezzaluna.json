@@ -17,5 +17,13 @@
   "website": "https://lebua.com/restaurants/mezzaluna",
   "lat": 13.7221259,
   "lng": 100.516932,
-  "placeId": "ChIJmXuobsWY4jARc3EtJwWV21s"
+  "placeId": "ChIJmXuobsWY4jARc3EtJwWV21s",
+  "michelinId": "546997",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ryuki Kawasaki",
+  "chefSource": "site"
 }

@@ -13,5 +13,8 @@
   "website": "https://www.kammerli.com/",
   "lat": 46.890608,
   "lng": 10.50109,
-  "placeId": "ChIJh1pePHIzg0cRWGxXRLu9FlA"
+  "placeId": "ChIJh1pePHIzg0cRWGxXRLu9FlA",
+  "michelinId": "1212409",
+  "chef": "Oliver Mijic",
+  "chefSource": "michelin"
 }

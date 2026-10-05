@@ -13,5 +13,13 @@
   "website": "https://elxato.com/",
   "lat": 38.6172486,
   "lng": -0.123197,
-  "placeId": "ChIJF-72jeQCYg0Razvn2HwmjMs"
+  "placeId": "ChIJF-72jeQCYg0Razvn2HwmjMs",
+  "michelinId": "221899",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Cristina Figueira",
+  "chefSource": "michelin"
 }

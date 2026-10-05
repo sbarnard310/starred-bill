@@ -14,5 +14,8 @@
   "website": "https://www.shoushin.ca/",
   "lat": 43.731412,
   "lng": -79.4040597,
-  "placeId": "ChIJR3xT8ukyK4gR9PQmJRx6ADY"
+  "placeId": "ChIJR3xT8ukyK4gR9PQmJRx6ADY",
+  "michelinId": "563623",
+  "chef": "Jackie Lin",
+  "chefSource": "michelin"
 }

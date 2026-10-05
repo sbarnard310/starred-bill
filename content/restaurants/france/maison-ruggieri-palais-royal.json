@@ -30,5 +30,12 @@
   "website": "https://maisonruggieri.com/",
   "lat": 48.8657726,
   "lng": 2.3390338,
-  "placeId": "ChIJtSN-XgBv5kcRBDLZcMnHOX0"
+  "placeId": "ChIJtSN-XgBv5kcRBDLZcMnHOX0",
+  "michelinId": "1246210",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

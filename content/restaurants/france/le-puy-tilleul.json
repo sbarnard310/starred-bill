@@ -21,5 +21,8 @@
   "website": "https://laboriedhelipse.com/restaurant-hotel-cantal",
   "lat": 45.0524212,
   "lng": 2.4821894,
-  "placeId": "ChIJ2w4KQU_590cRAu9wEno8JoM"
+  "placeId": "ChIJ2w4KQU_590cRAu9wEno8JoM",
+  "michelinId": "1215869",
+  "chef": "Xavier Taffart",
+  "chefSource": "site"
 }

@@ -16,5 +16,14 @@
   "website": "https://www.oasis-saporiantichi.it/",
   "lat": 41.0633639,
   "lng": 15.251974,
-  "placeId": "ChIJGblIsnCQORMR3Jg0iYQN2jo"
+  "placeId": "ChIJGblIsnCQORMR3Jg0iYQN2jo",
+  "michelinId": "156002",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Serena Falco e Michelina Fischetti",
+  "chefSource": "michelin"
 }

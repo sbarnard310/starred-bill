@@ -16,5 +16,13 @@
   "website": "https://schwitzers.com/gourmet-restaurant/",
   "lat": 48.9209362,
   "lng": 8.4748202,
-  "placeId": "ChIJowNke4APl0cRLJZdmAhiKb8"
+  "placeId": "ChIJowNke4APl0cRLJZdmAhiKb8",
+  "michelinId": "438511",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Cédric Schwitzer",
+  "chefSource": "michelin"
 }

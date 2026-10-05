@@ -20,5 +20,12 @@
   "website": "https://ganzenest.nl/nl/",
   "lat": 52.0370964,
   "lng": 4.3457403,
-  "placeId": "ChIJ-8JsCUC3xUcRV5zNIlLNkRc"
+  "placeId": "ChIJ-8JsCUC3xUcRV5zNIlLNkRc",
+  "michelinId": "1194624",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Erik Tas",
+  "chefSource": "michelin"
 }

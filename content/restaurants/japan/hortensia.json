@@ -35,5 +35,10 @@
   "website": "https://www.hortensiatokyo.com/",
   "lat": 35.672436,
   "lng": 139.772791,
-  "placeId": "ChIJL7tb0CSLGGARJWOhdejXMYE"
+  "placeId": "ChIJL7tb0CSLGGARJWOhdejXMYE",
+  "michelinId": "1213189",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

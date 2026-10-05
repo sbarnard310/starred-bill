@@ -13,5 +13,11 @@
   "website": "https://seesteg-norderney.de/",
   "lat": 53.7075958,
   "lng": 7.1385585,
-  "placeId": "ChIJdVN7v08FtkcROqcuWm_SFJg"
+  "placeId": "ChIJdVN7v08FtkcROqcuWm_SFJg",
+  "michelinId": "258253",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Markus Kebschull",
+  "chefSource": "michelin"
 }

@@ -29,5 +29,8 @@
   "website": "https://myoujyaku.com/",
   "lat": 35.659411,
   "lng": 139.726652,
-  "placeId": "ChIJxxsn3a-LGGARYqb5FTmUL98"
+  "placeId": "ChIJxxsn3a-LGGARYqb5FTmUL98",
+  "michelinId": "1202541",
+  "chef": "Hidetoshi Nakamura",
+  "chefSource": "michelin"
 }

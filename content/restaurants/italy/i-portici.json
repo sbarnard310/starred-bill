@@ -13,5 +13,12 @@
   "website": "https://www.iporticihotel.com/",
   "lat": 44.5019817,
   "lng": 11.3448122,
-  "placeId": "ChIJRw8NyJvUf0cRdSzaPExI5UM"
+  "placeId": "ChIJRw8NyJvUf0cRdSzaPExI5UM",
+  "michelinId": "236635",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Nicola Annunziata",
+  "chefSource": "michelin"
 }

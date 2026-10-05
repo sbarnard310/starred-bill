@@ -16,5 +16,12 @@
   "website": "https://www.dersternhersfeld.de/kulinarik#letable",
   "lat": 50.8675674,
   "lng": 9.7063686,
-  "placeId": "ChIJi0Z4o5lUo0cRsHfghHdCdTE"
+  "placeId": "ChIJi0Z4o5lUo0cRsHfghHdCdTE",
+  "michelinId": "164933",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Constantin Kaiser",
+  "chefSource": "michelin"
 }

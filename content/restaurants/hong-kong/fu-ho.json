@@ -26,5 +26,12 @@
   "website": "https://www.fuho.com.hk/",
   "lat": 22.3006247,
   "lng": 114.1720828,
-  "placeId": "ChIJQUAHOOwABDQRBwmGLmcFS40"
+  "placeId": "ChIJQUAHOOwABDQRBwmGLmcFS40",
+  "michelinId": "314221",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

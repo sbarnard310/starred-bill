@@ -12,5 +12,11 @@
   "website": "https://rauschrauschrausch.com/",
   "lat": 50.12074,
   "lng": 8.670387,
-  "placeId": "ChIJbZAKU8EJvUcRrFhUvcDWAMo"
+  "placeId": "ChIJbZAKU8EJvUcRrFhUvcDWAMo",
+  "michelinId": "1241295",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jochim Busch",
+  "chefSource": "site"
 }

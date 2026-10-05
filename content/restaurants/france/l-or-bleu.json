@@ -24,5 +24,13 @@
   "website": "https://tiara-miramar-beach-resort.com",
   "lat": 43.4853664,
   "lng": 6.9453085,
-  "placeId": "ChIJszBF3pSEzhIRxa5ssY7XSVo"
+  "placeId": "ChIJszBF3pSEzhIRxa5ssY7XSVo",
+  "michelinId": "260677",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ],
+  "chef": "Alain Montigny",
+  "chefSource": "michelin"
 }

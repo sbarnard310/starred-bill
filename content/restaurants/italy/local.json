@@ -12,5 +12,12 @@
   "website": "https://www.ristorantelocal.com/it/home",
   "lat": 45.4356,
   "lng": 12.345893,
-  "placeId": "ChIJdzcksyeufkcRKolpWat_x9M"
+  "placeId": "ChIJdzcksyeufkcRKolpWat_x9M",
+  "michelinId": "496366",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Salvatore Sodano",
+  "chefSource": "michelin"
 }

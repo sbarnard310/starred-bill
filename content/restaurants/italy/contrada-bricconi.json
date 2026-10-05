@@ -23,5 +23,12 @@
   "website": "https://www.contradabricconi.it/",
   "lat": 45.922027,
   "lng": 9.950369,
-  "placeId": "ChIJw62TxzPmg0cRoIbCPGRZf4A"
+  "placeId": "ChIJw62TxzPmg0cRoIbCPGRZf4A",
+  "michelinId": "1202926",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Michele Lazzarini",
+  "chefSource": "michelin"
 }

@@ -26,5 +26,8 @@
   "website": "https://www.neigedete.fr/",
   "lat": 48.8454303,
   "lng": 2.2989942,
-  "placeId": "ChIJj5cSZD1w5kcRxG5lX68BY50"
+  "placeId": "ChIJj5cSZD1w5kcRxG5lX68BY50",
+  "michelinId": "448600",
+  "chef": "Hideki Nishi",
+  "chefSource": "michelin"
 }

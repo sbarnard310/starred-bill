@@ -17,5 +17,13 @@
   "website": "https://www.samrubsamrubthai.com",
   "lat": 13.7268938,
   "lng": 100.5373823,
-  "placeId": "ChIJP-vfELmZ4jARGlXpoG1esoU"
+  "placeId": "ChIJP-vfELmZ4jARGlXpoG1esoU",
+  "michelinId": "1205962",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Prin Polsuk",
+  "chefSource": "michelin"
 }

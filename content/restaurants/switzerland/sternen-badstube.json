@@ -15,5 +15,13 @@
   "website": "https://www.sternenwangen.ch/",
   "lat": 47.4110124,
   "lng": 8.6454555,
-  "placeId": "ChIJ8eSVLYmhmkcRqLrD8RVBjoQ"
+  "placeId": "ChIJ8eSVLYmhmkcRqLrD8RVBjoQ",
+  "michelinId": "180318",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Matthias Brunner",
+  "chefSource": "michelin"
 }

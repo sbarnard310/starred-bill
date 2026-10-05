@@ -13,5 +13,12 @@
   "website": "https://www.lemurenberg.ch/",
   "lat": 47.4545219,
   "lng": 7.7386967,
-  "placeId": "ChIJlTVduajLkUcRVy0tiX5RqV8"
+  "placeId": "ChIJlTVduajLkUcRVy0tiX5RqV8",
+  "michelinId": "178933",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Denis Schmitt",
+  "chefSource": "michelin"
 }

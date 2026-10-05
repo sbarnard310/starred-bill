@@ -22,5 +22,9 @@
   "website": "https://www.dorchestercollection.com/fr/paris/hotel-plaza-athenee/restaurants-bars/la-grande-table-du-plaza-athenee",
   "lat": 48.8661718,
   "lng": 2.3042735,
-  "placeId": "ChIJ--BdhnVv5kcRSWKURvS_zc4"
+  "placeId": "ChIJ--BdhnVv5kcRSWKURvS_zc4",
+  "michelinId": "1199647",
+  "diets": [
+    "vegetarian"
+  ]
 }

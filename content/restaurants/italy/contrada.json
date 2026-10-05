@@ -22,5 +22,8 @@
   "website": "https://www.castelmonastero.com/",
   "lat": 43.351044,
   "lng": 11.56022,
-  "placeId": "ChIJgwr7hEvbKxMRhHlbpNHHzR4"
+  "placeId": "ChIJgwr7hEvbKxMRhHlbpNHHzR4",
+  "michelinId": "264805",
+  "chef": "Davide Canella",
+  "chefSource": "michelin"
 }

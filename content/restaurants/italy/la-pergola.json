@@ -20,5 +20,12 @@
   "website": "https://romecavalieri.com/it/la-pergola-it/",
   "lat": 41.918795,
   "lng": 12.446115,
-  "placeId": "ChIJHw9AUoRgLxMR2Up1TWI6ZS8"
+  "placeId": "ChIJHw9AUoRgLxMR2Up1TWI6ZS8",
+  "michelinId": "69016",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Heinz Beck",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,13 @@
   "website": "https://www.urlavinolocale.com",
   "lat": 38.2808906,
   "lng": 26.7467029,
-  "placeId": "ChIJq2JkTViSuxQRiogufj1FxhQ"
+  "placeId": "ChIJq2JkTViSuxQRiogufj1FxhQ",
+  "michelinId": "1208257",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Ozan Kumbasar",
+  "chefSource": "michelin"
 }

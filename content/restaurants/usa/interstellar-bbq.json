@@ -12,5 +12,8 @@
   "website": "https://www.theinterstellarbbq.com/",
   "lat": 30.4620479,
   "lng": -97.8155459,
-  "placeId": "ChIJneGxbHszW4YRTjsORksF0Xw"
+  "placeId": "ChIJneGxbHszW4YRTjsORksF0Xw",
+  "michelinId": "1209381",
+  "chef": "John Bates",
+  "chefSource": "michelin"
 }

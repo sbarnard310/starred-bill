@@ -12,5 +12,9 @@
   "website": "https://www.terra-dining.com",
   "lat": 3.1525692,
   "lng": 101.6200964,
-  "placeId": "ChIJBfTsHZlJzDERjl9OeqGJWBI"
+  "placeId": "ChIJBfTsHZlJzDERjl9OeqGJWBI",
+  "michelinId": "1213788",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -18,5 +18,14 @@
   "website": "https://kochinyc.com/",
   "lat": 40.761977,
   "lng": -73.993512,
-  "placeId": "ChIJN8SzjFRZwokR-b5lqNXcg44"
+  "placeId": "ChIJN8SzjFRZwokR-b5lqNXcg44",
+  "michelinId": "1189390",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Sungchul Shim",
+  "chefSource": "michelin"
 }

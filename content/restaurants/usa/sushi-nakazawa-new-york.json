@@ -17,5 +17,12 @@
   "website": "https://www.sushinakazawa.com/new-york",
   "lat": 40.731716,
   "lng": -74.00451,
-  "placeId": "ChIJsw80F5NZwokRcDtxajLLOeA"
+  "placeId": "ChIJsw80F5NZwokRcDtxajLLOeA",
+  "michelinId": "435810",
+  "diets": [
+    "halal",
+    "kosher"
+  ],
+  "chef": "Daisuke Nakazawa",
+  "chefSource": "michelin"
 }

@@ -11,5 +11,11 @@
   "sourceType": "none",
   "lat": -23.5673009,
   "lng": -46.6641133,
-  "placeId": "ChIJYfLDPLZZzpQRB4RR0EJEbGU"
+  "placeId": "ChIJYfLDPLZZzpQRB4RR0EJEbGU",
+  "michelinId": "1205967",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Marco Renzetti",
+  "chefSource": "michelin"
 }

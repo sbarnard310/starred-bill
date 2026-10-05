@@ -26,5 +26,9 @@
   "website": "https://restaurant-baieta-paris.fr/",
   "lat": 48.8501648,
   "lng": 2.3523102,
-  "placeId": "ChIJ_78oYuRx5kcR4eAyZp92YKs"
+  "placeId": "ChIJ_78oYuRx5kcR4eAyZp92YKs",
+  "michelinId": "1000239",
+  "diets": [
+    "vegetarian"
+  ]
 }

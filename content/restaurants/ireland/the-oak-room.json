@@ -18,5 +18,8 @@
   "website": "https://www.adaremanor.com/dining/the-oak-room/",
   "lat": 52.563653,
   "lng": -8.77724,
-  "placeId": "ChIJoSjqiuVHW0gRvLlUyP_E5oo"
+  "placeId": "ChIJoSjqiuVHW0gRvLlUyP_E5oo",
+  "michelinId": "559348",
+  "chef": "Michael Tweedie",
+  "chefSource": "site"
 }

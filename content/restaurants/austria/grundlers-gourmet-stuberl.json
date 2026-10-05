@@ -11,5 +11,11 @@
   "website": "https://www.kulinarikhotel-alpin.at/gourmet-stueberl/",
   "lat": 47.5088961,
   "lng": 11.7040198,
-  "placeId": "ChIJe-Wyv_2BnUcR7N1-toKf-W4"
+  "placeId": "ChIJe-Wyv_2BnUcR7N1-toKf-W4",
+  "michelinId": "1212338",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alexander Gründler",
+  "chefSource": "site"
 }

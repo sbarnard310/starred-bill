@@ -24,5 +24,10 @@
   "website": "https://www.fourseasons.com/seoul/dining/restaurants/yu_yuan",
   "lat": 37.57049,
   "lng": 126.97545,
-  "placeId": "ChIJ3dVqNJOifDURoB_zAowK8I0"
+  "placeId": "ChIJ3dVqNJOifDURoB_zAowK8I0",
+  "michelinId": "512043",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ]
 }

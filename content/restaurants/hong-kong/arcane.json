@@ -25,5 +25,13 @@
   "website": "https://www.arcane.hk/",
   "lat": 22.2806189,
   "lng": 114.1567744,
-  "placeId": "ChIJc4Jv2WQABDQRo6myIK7s1M4"
+  "placeId": "ChIJc4Jv2WQABDQRo6myIK7s1M4",
+  "michelinId": "467735",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Shane Osborn",
+  "chefSource": "michelin"
 }

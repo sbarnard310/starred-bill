@@ -13,5 +13,12 @@
   "website": "https://7pines-sardinia.com/it/ristoranti-bar/capogiro",
   "lat": 41.1283048,
   "lng": 9.4720013,
-  "placeId": "ChIJ6fJOINBH2RIRPUxEBSH5J1c"
+  "placeId": "ChIJ6fJOINBH2RIRPUxEBSH5J1c",
+  "michelinId": "1211168",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Pasquale D'Ambrosio",
+  "chefSource": "michelin"
 }

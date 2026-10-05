@@ -19,5 +19,12 @@
   "website": "https://harmonie.restaurant",
   "lat": 50.664144,
   "lng": 3.1458716,
-  "placeId": "ChIJm7L39Gkpw0cRahkY97qla7k"
+  "placeId": "ChIJm7L39Gkpw0cRahkY97qla7k",
+  "michelinId": "1245894",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Mathieu Boutroy",
+  "chefSource": "michelin"
 }

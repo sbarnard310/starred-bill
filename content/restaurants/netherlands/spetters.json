@@ -15,5 +15,9 @@
   "website": "https://www.restaurantspetters.nl/",
   "lat": 51.3952661,
   "lng": 3.5681281,
-  "placeId": "ChIJ4ZnqSUKZxEcRsYaxWytzF48"
+  "placeId": "ChIJ4ZnqSUKZxEcRsYaxWytzF48",
+  "michelinId": "213448",
+  "diets": [
+    "vegetarian"
+  ]
 }

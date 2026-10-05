@@ -13,5 +13,13 @@
   "website": "https://www.inlain.ch/de/kulinarik/vivanda",
   "lat": 46.6531441,
   "lng": 10.0329165,
-  "placeId": "ChIJw9d4QExmg0cRzOrai1rd354"
+  "placeId": "ChIJw9d4QExmg0cRzOrai1rd354",
+  "michelinId": "310725",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Dario Cadonau",
+  "chefSource": "michelin"
 }

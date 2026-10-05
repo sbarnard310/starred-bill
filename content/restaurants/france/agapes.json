@@ -17,5 +17,9 @@
   "website": "https://www.agapes-toulouse.fr",
   "lat": 43.6047,
   "lng": 1.4509752,
-  "placeId": "ChIJ-Xuw0s-9rhIRRQrtCzSzP1U"
+  "placeId": "ChIJ-Xuw0s-9rhIRRQrtCzSzP1U",
+  "michelinId": "1210663",
+  "diets": [
+    "vegetarian"
+  ]
 }

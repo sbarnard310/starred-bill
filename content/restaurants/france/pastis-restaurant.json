@@ -13,5 +13,12 @@
   "website": "https://www.pastis-restaurant.com",
   "lat": 43.6100075,
   "lng": 3.8738324,
-  "placeId": "ChIJRTORL6ivthIRzSZZAvQWXac"
+  "placeId": "ChIJRTORL6ivthIRzSZZAvQWXac",
+  "michelinId": "376152",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Daniel Lutrand",
+  "chefSource": "michelin"
 }

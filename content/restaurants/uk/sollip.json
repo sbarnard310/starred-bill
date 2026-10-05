@@ -21,5 +21,9 @@
   "website": "https://www.sollip.co.uk/",
   "lat": 51.5025583,
   "lng": -0.0846577,
-  "placeId": "ChIJsZvatGQDdkgR8-eqk7XdOsw"
+  "placeId": "ChIJsZvatGQDdkgR8-eqk7XdOsw",
+  "michelinId": "1192554",
+  "diets": [
+    "vegetarian"
+  ]
 }

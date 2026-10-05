@@ -15,5 +15,10 @@
   "website": "https://www.heron.scot/",
   "lat": 55.974846,
   "lng": -3.171885,
-  "placeId": "ChIJaRvnGI65h0gROVFLlt-wr64"
+  "placeId": "ChIJaRvnGI65h0gROVFLlt-wr64",
+  "michelinId": "1197434",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

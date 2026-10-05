@@ -21,5 +21,11 @@
   "website": "https://www.bolan.co.th",
   "lat": 13.7262972,
   "lng": 100.577944,
-  "placeId": "ChIJwUpwgAaf4jARIi0DQx2JJ-4"
+  "placeId": "ChIJwUpwgAaf4jARIi0DQx2JJ-4",
+  "michelinId": "546908",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

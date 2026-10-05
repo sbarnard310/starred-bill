@@ -12,5 +12,11 @@
   "website": "https://www.sevenswans.de/",
   "lat": 50.1096762,
   "lng": 8.6871455,
-  "placeId": "ChIJIyjHNaEOvUcR0jMK4ufgWps"
+  "placeId": "ChIJIyjHNaEOvUcR0jMK4ufgWps",
+  "michelinId": "354452",
+  "diets": [
+    "vegan"
+  ],
+  "chef": "Ricky Saward",
+  "chefSource": "michelin"
 }

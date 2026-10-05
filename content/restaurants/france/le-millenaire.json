@@ -13,5 +13,14 @@
   "website": "https://www.restaurant-lemillenaire.com/",
   "lat": 49.256073,
   "lng": 4.0341837,
-  "placeId": "ChIJt9ZOF6116UcR8w6XwM1XzQc"
+  "placeId": "ChIJt9ZOF6116UcR8w6XwM1XzQc",
+  "michelinId": "7283",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Benjamin Andreux",
+  "chefSource": "michelin"
 }

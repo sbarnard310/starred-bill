@@ -15,5 +15,11 @@
   "website": "https://restaurantsubstans.dk/",
   "lat": 56.1655264,
   "lng": 10.2266839,
-  "placeId": "ChIJGczXS5I_TEYRsj9WhjBu75I"
+  "placeId": "ChIJGczXS5I_TEYRsj9WhjBu75I",
+  "michelinId": "446209",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

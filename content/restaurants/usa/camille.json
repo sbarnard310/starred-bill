@@ -14,5 +14,8 @@
   "website": "https://camilleorlando.com/",
   "lat": 28.5683554,
   "lng": -81.3259894,
-  "placeId": "ChIJs-RASQ1l54gR4DSRO8UE7mI"
+  "placeId": "ChIJs-RASQ1l54gR4DSRO8UE7mI",
+  "michelinId": "1211038",
+  "chef": "Tung Phan",
+  "chefSource": "michelin"
 }

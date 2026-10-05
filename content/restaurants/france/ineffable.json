@@ -18,5 +18,12 @@
   "website": "https://restaurant-ineffable.fr",
   "lat": 43.8991167,
   "lng": 4.748067,
-  "placeId": "ChIJnQmzp8TptRIRdRUXmjNRqBY"
+  "placeId": "ChIJnQmzp8TptRIRdRUXmjNRqBY",
+  "michelinId": "1214888",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Nicolas Thomas",
+  "chefSource": "michelin"
 }

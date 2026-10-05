@@ -30,5 +30,12 @@
   "website": "https://www.mandarinoriental.com/en/hong-kong/the-landmark/dine/amber",
   "lat": 22.2805311,
   "lng": 114.1577065,
-  "placeId": "ChIJK_Ki6GQABDQR6msLLCzNE04"
+  "placeId": "ChIJK_Ki6GQABDQR6msLLCzNE04",
+  "michelinId": "569032",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Richard Ekkebus",
+  "chefSource": "michelin"
 }

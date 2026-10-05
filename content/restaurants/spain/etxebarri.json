@@ -25,5 +25,13 @@
   "website": "https://www.asadoretxebarri.com/",
   "lat": 43.114351,
   "lng": -2.59744,
-  "placeId": "ChIJfwMp6PLSTw0RFlSWXV3fkio"
+  "placeId": "ChIJfwMp6PLSTw0RFlSWXV3fkio",
+  "michelinId": "217768",
+  "diets": [
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Bittor Arginzoniz",
+  "chefSource": "michelin"
 }

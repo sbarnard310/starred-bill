@@ -17,5 +17,12 @@
   "website": "https://kitchentablelondon.co.uk/",
   "lat": 51.5203616,
   "lng": -0.13647,
-  "placeId": "ChIJ3aa-YCkbdkgRo5LPUQzy0hI"
+  "placeId": "ChIJ3aa-YCkbdkgRo5LPUQzy0hI",
+  "michelinId": "367282",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "James Knappett",
+  "chefSource": "michelin"
 }

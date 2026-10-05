@@ -23,5 +23,8 @@
   "website": "https://www.chateaudelagaude.com",
   "lat": 43.568911,
   "lng": 5.478535,
-  "placeId": "ChIJs2hNPUmNyRIRYNlrXdzb-Aw"
+  "placeId": "ChIJs2hNPUmNyRIRYNlrXdzb-Aw",
+  "michelinId": "1183884",
+  "chef": "Mathieu Derible",
+  "chefSource": "michelin"
 }

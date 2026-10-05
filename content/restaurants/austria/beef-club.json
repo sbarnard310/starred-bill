@@ -14,5 +14,8 @@
   "website": "https://www.schlosshotel-fiss.com/de/gourmet/beef-club/",
   "lat": 47.0552532,
   "lng": 10.6105543,
-  "placeId": "ChIJrxTJeRbRnEcRyIKROMbkc6c"
+  "placeId": "ChIJrxTJeRbRnEcRyIKROMbkc6c",
+  "michelinId": "1212340",
+  "chef": "Klaus Kneringer",
+  "chefSource": "michelin"
 }

@@ -16,5 +16,15 @@
   "website": "https://www.oliveafarmtotable.com/en/farmtotable",
   "lat": 31.990977599999997,
   "lng": -116.64197910000001,
-  "placeId": "ChIJbYfJrqXt2IARBBKPw8lnU2w"
+  "placeId": "ChIJbYfJrqXt2IARBBKPw8lnU2w",
+  "michelinId": "1212086",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Ange Joy Diaz",
+  "chefSource": "michelin"
 }

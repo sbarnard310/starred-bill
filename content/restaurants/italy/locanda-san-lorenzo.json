@@ -15,5 +15,8 @@
   "website": "https://www.locandasanlorenzo.it/",
   "lat": 46.1395908,
   "lng": 12.363875,
-  "placeId": "ChIJRU47VRcKeUcRdgQDoz930Ss"
+  "placeId": "ChIJRU47VRcKeUcRdgQDoz930Ss",
+  "michelinId": "146994",
+  "chef": "Renzo Dal Farra",
+  "chefSource": "michelin"
 }

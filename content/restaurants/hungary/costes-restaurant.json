@@ -12,5 +12,12 @@
   "website": "https://www.costesrestaurant.hu/",
   "lat": 47.4889155,
   "lng": 19.0621952,
-  "placeId": "ChIJpeuc5VrcQUcRbYqJIm-xk4M"
+  "placeId": "ChIJpeuc5VrcQUcRbYqJIm-xk4M",
+  "michelinId": "262697",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jenő Rácz",
+  "chefSource": "site"
 }

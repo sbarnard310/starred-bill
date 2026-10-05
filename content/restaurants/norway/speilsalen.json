@@ -16,5 +16,14 @@
   "website": "https://britannia.no/en/dine-with-us/speilsalen",
   "lat": 63.4318148,
   "lng": 10.3990388,
-  "placeId": "ChIJab_zEdAxbUYRiMCFnG3IS34"
+  "placeId": "ChIJab_zEdAxbUYRiMCFnG3IS34",
+  "michelinId": "553281",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Håkon Solbakk",
+  "chefSource": "site"
 }

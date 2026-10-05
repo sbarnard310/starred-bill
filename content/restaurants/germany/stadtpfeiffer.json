@@ -13,5 +13,13 @@
   "website": "https://www.stadtpfeiffer.de/",
   "lat": 51.3381371,
   "lng": 12.380167,
-  "placeId": "ChIJI9ioyCT4pkcRj_KGib8xvts"
+  "placeId": "ChIJI9ioyCT4pkcRj_KGib8xvts",
+  "michelinId": "74954",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Detlef Schlegel",
+  "chefSource": "michelin"
 }

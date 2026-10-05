@@ -14,5 +14,8 @@
   "website": "https://www.herplacephilly.com/",
   "lat": 39.9508248,
   "lng": -75.1701166,
-  "placeId": "ChIJMW-WlpXHxokRw9Sf2FaFXjE"
+  "placeId": "ChIJMW-WlpXHxokRw9Sf2FaFXjE",
+  "michelinId": "1213705",
+  "chef": "Amanda Shulman",
+  "chefSource": "michelin"
 }

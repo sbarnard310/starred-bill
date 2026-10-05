@@ -20,5 +20,9 @@
   "website": "https://www.mgm.mo/en/cotai/dining/five-foot-road",
   "lat": 22.145728,
   "lng": 113.568046,
-  "placeId": "ChIJs_xka0lxATQR2v6Ea_ypN_8"
+  "placeId": "ChIJs_xka0lxATQR2v6Ea_ypN_8",
+  "michelinId": "1185894",
+  "diets": [
+    "vegetarian"
+  ]
 }

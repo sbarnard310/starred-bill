@@ -14,5 +14,12 @@
   "website": "https://fraula.es/",
   "lat": 39.4694922,
   "lng": -0.366224,
-  "placeId": "ChIJV_Gxa5lJYA0Rrf9WixkE_no"
+  "placeId": "ChIJV_Gxa5lJYA0Rrf9WixkE_no",
+  "michelinId": "1194656",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Roseta Félix and Daniel Malavía",
+  "chefSource": "michelin"
 }

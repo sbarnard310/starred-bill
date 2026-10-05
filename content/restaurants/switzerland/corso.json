@@ -13,5 +13,13 @@
   "website": "https://restaurant-corso.ch/",
   "lat": 47.4250425,
   "lng": 9.3788108,
-  "placeId": "ChIJPWUCTwUfm0cRqwiJV3olOfo"
+  "placeId": "ChIJPWUCTwUfm0cRqwiJV3olOfo",
+  "michelinId": "547750",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Markus Schenk",
+  "chefSource": "michelin"
 }

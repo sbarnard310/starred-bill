@@ -23,5 +23,11 @@
   "website": "https://www.grand-monarque.com",
   "lat": 48.444414,
   "lng": 1.4831927,
-  "placeId": "ChIJqQdZn0YM5EcR5bTlagqJcxg"
+  "placeId": "ChIJqQdZn0YM5EcR5bTlagqJcxg",
+  "michelinId": "10665",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

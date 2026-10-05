@@ -31,5 +31,13 @@
   "website": "https://gofiorestaurant.com/",
   "lat": 40.419318,
   "lng": -3.700159,
-  "placeId": "ChIJVZqm8YEoQg0RuCSMSdWBFDk"
+  "placeId": "ChIJVZqm8YEoQg0RuCSMSdWBFDk",
+  "michelinId": "482939",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Safe Cruz",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://www.kalirestaurant.com/",
   "lat": 34.083456,
   "lng": -118.32454,
-  "placeId": "ChIJdfiEi8m4woAR82sc6js_AXs"
+  "placeId": "ChIJdfiEi8m4woAR82sc6js_AXs",
+  "michelinId": "559814",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Kevin Meehan",
+  "chefSource": "michelin"
 }

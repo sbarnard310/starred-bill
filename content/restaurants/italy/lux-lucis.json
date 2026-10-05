@@ -21,5 +21,14 @@
   "website": "https://www.principefortedeimarmi.com/it/dining-experience/lux-lucis/",
   "lat": 43.95165,
   "lng": 10.175858,
-  "placeId": "ChIJgQa3GQQK1RIRwD7GOCliZDs"
+  "placeId": "ChIJgQa3GQQK1RIRwD7GOCliZDs",
+  "michelinId": "328919",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

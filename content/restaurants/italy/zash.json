@@ -13,5 +13,11 @@
   "website": "https://www.zash.it/",
   "lat": 37.7079174,
   "lng": 15.1998992,
-  "placeId": "ChIJW5sW3BMHFBMRneAf_1UaToI"
+  "placeId": "ChIJW5sW3BMHFBMRneAf_1UaToI",
+  "michelinId": "491395",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Giuseppe Raciti",
+  "chefSource": "michelin"
 }

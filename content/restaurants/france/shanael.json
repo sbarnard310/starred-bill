@@ -29,5 +29,11 @@
   "website": "https://www.shanael.com",
   "lat": 43.124166,
   "lng": 5.9328026,
-  "placeId": "ChIJ8eXIs88byRIR4q-OTehtSY4"
+  "placeId": "ChIJ8eXIs88byRIR4q-OTehtSY4",
+  "michelinId": "1245906",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Anthony Denon",
+  "chefSource": "michelin"
 }

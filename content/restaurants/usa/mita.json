@@ -21,5 +21,14 @@
   "website": "https://www.mitadc.com/",
   "lat": 38.917703,
   "lng": -77.023063,
-  "placeId": "ChIJ44jFvt-3t4kRViqXvYDPqg4"
+  "placeId": "ChIJ44jFvt-3t4kRViqXvYDPqg4",
+  "michelinId": "1198122",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Tatiana Mora and Miguel Guerra",
+  "chefSource": "michelin"
 }

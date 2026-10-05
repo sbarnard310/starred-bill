@@ -15,5 +15,8 @@
   "website": "https://www.restaurant-tri.com/",
   "lat": 56.7820975,
   "lng": 8.2331898,
-  "placeId": "ChIJsYe0MKfzSUYRXiGemGY8mb0"
+  "placeId": "ChIJsYe0MKfzSUYRXiGemGY8mb0",
+  "michelinId": "1203718",
+  "chef": "Nicolas Min Jørgensen",
+  "chefSource": "michelin"
 }

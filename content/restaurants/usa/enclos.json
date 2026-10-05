@@ -15,5 +15,11 @@
   "website": "https://enclos-sonoma.com/",
   "lat": 38.2915888,
   "lng": -122.4558351,
-  "placeId": "ChIJKUxebcKvhYARsK13AtWct1E"
+  "placeId": "ChIJKUxebcKvhYARsK13AtWct1E",
+  "michelinId": "1217753",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Brian Limoges",
+  "chefSource": "michelin"
 }

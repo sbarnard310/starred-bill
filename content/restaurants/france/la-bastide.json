@@ -25,5 +25,14 @@
   "website": "https://www.beaumier.com/fr/proprietes/hotel-capelongue/gastronomie/",
   "lat": 43.821659,
   "lng": 5.3174831,
-  "placeId": "ChIJyVC1PlYXyhIRGSuoFTmCenI"
+  "placeId": "ChIJyVC1PlYXyhIRGSuoFTmCenI",
+  "michelinId": "10332",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Noël Bérard",
+  "chefSource": "michelin"
 }

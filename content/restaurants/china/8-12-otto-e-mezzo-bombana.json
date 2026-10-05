@@ -12,5 +12,8 @@
   "website": "https://www.ottoemezzobombana.com/branch/shanghai/",
   "lat": 31.244394,
   "lng": 121.48346,
-  "placeId": "ChIJZw4r81ZwsjURq8TKugQv_XY"
+  "placeId": "ChIJZw4r81ZwsjURq8TKugQv_XY",
+  "michelinId": "506702",
+  "chef": "Umberto Bombana",
+  "chefSource": "michelin"
 }

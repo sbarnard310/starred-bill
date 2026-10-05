@@ -27,5 +27,8 @@
   "website": "https://www.garena.restaurant/",
   "lat": 43.129277,
   "lng": -2.765999,
-  "placeId": "ChIJfbg0SzHLTw0RlnI0RR7sjkY"
+  "placeId": "ChIJfbg0SzHLTw0RlnI0RR7sjkY",
+  "michelinId": "1194816",
+  "chef": "Julen Baz",
+  "chefSource": "michelin"
 }

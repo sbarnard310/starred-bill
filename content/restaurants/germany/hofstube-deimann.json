@@ -13,5 +13,8 @@
   "website": "https://www.deimann.de/hofstube",
   "lat": 51.1595842,
   "lng": 8.3407164,
-  "placeId": "ChIJs6o21iHxu0cRioxgjZMPSBE"
+  "placeId": "ChIJs6o21iHxu0cRioxgjZMPSBE",
+  "michelinId": "509902",
+  "chef": "Felix Weber",
+  "chefSource": "michelin"
 }

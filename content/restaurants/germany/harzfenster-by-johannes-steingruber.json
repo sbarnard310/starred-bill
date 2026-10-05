@@ -15,5 +15,12 @@
   "website": "https://restaurant-harzfenster.de",
   "lat": 51.8960099,
   "lng": 10.1917506,
-  "placeId": "ChIJ_ZewdCk3pUcRKBUOTi9tsCY"
+  "placeId": "ChIJ_ZewdCk3pUcRKBUOTi9tsCY",
+  "michelinId": "1206564",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Johannes Steingrüber",
+  "chefSource": "michelin"
 }

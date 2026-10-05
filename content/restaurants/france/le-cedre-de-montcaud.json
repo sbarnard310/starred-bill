@@ -17,5 +17,11 @@
   "website": "https://www.chateaudemontcaud.com/fr/restaurants/le-cedre-de-montcaud",
   "lat": 44.1719004,
   "lng": 4.5709434,
-  "placeId": "ChIJvztTryha-EcRTp0Q7Rglqdk"
+  "placeId": "ChIJvztTryha-EcRTp0Q7Rglqdk",
+  "michelinId": "701",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Matthieu Hervé",
+  "chefSource": "michelin"
 }

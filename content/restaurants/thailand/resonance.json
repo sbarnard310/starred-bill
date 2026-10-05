@@ -23,5 +23,11 @@
   "website": "https://www.resonancebkk.com",
   "lat": 13.7214476,
   "lng": 100.5915645,
-  "placeId": "ChIJdZFTPMmf4jARVricLfz3k7M"
+  "placeId": "ChIJdZFTPMmf4jARVricLfz3k7M",
+  "michelinId": "1200597",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Shunsuke Shimomura",
+  "chefSource": "michelin"
 }

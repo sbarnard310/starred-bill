@@ -15,5 +15,11 @@
   "website": "https://foretivre.com",
   "lat": 46.3084678,
   "lng": 6.5503051,
-  "placeId": "ChIJb2yULD0XjEcR3xbBftNC894"
+  "placeId": "ChIJb2yULD0XjEcR3xbBftNC894",
+  "michelinId": "173430",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Frédéric Molina",
+  "chefSource": "michelin"
 }

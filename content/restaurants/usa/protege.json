@@ -13,5 +13,11 @@
   "website": "https://www.protegepaloalto.com/",
   "lat": 37.427853,
   "lng": -122.14362,
-  "placeId": "ChIJ14CVruW6j4ARoh-i6iIAe5g"
+  "placeId": "ChIJ14CVruW6j4ARoh-i6iIAe5g",
+  "michelinId": "563788",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Anthony Secviar",
+  "chefSource": "michelin"
 }

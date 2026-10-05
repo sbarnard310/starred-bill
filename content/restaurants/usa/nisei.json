@@ -17,5 +17,12 @@
   "website": "https://www.restaurantnisei.com/",
   "lat": 37.798158,
   "lng": -122.42208,
-  "placeId": "ChIJYSfspPSBhYARcVCbbkjGXg0"
+  "placeId": "ChIJYSfspPSBhYARcVCbbkjGXg0",
+  "michelinId": "1199633",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ],
+  "chef": "David Yoshimura",
+  "chefSource": "michelin"
 }

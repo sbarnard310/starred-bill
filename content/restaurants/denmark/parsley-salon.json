@@ -25,5 +25,8 @@
   "website": "https://www.parsleysalon.dk/",
   "lat": 55.737543,
   "lng": 12.575234,
-  "placeId": "ChIJhTbZQNNTUkYRrlURja_vdgM"
+  "placeId": "ChIJhTbZQNNTUkYRrlURja_vdgM",
+  "michelinId": "1215743",
+  "chef": "Allan Schultz",
+  "chefSource": "michelin"
 }

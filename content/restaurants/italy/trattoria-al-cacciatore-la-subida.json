@@ -13,5 +13,8 @@
   "website": "https://www.lasubida.it/",
   "lat": 45.9644549,
   "lng": 13.4962756,
-  "placeId": "ChIJCXKrvQmse0cRYCCG3QON2DI"
+  "placeId": "ChIJCXKrvQmse0cRYCCG3QON2DI",
+  "michelinId": "132144",
+  "chef": "Alessandro Gavagna",
+  "chefSource": "site"
 }

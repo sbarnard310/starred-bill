@@ -27,5 +27,8 @@
   "lunchSource": "https://www.catchtable.net/shop/sosuheon",
   "lat": 37.55294,
   "lng": 126.9634,
-  "placeId": "ChIJ6fwnPgCjfDURRK3JXHKApos"
+  "placeId": "ChIJ6fwnPgCjfDURRK3JXHKApos",
+  "michelinId": "1216489",
+  "chef": "Kyung-jae Park",
+  "chefSource": "michelin"
 }

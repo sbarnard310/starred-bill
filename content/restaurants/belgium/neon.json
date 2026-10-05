@@ -13,5 +13,11 @@
   "website": "https://www.neonrestaurant.be",
   "lat": 51.13007,
   "lng": 4.57375,
-  "placeId": "ChIJaZihUiz9w0cR3WdAMeNC_iI"
+  "placeId": "ChIJaZihUiz9w0cR3WdAMeNC_iI",
+  "michelinId": "1204961",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nils Proost",
+  "chefSource": "michelin"
 }

@@ -24,5 +24,10 @@
   "website": "https://www.zhejiangheen.com/",
   "lat": 22.2787,
   "lng": 114.17763,
-  "placeId": "ChIJD6sCOVoABDQRpzM2ZLis8bs"
+  "placeId": "ChIJD6sCOVoABDQRpzM2ZLis8bs",
+  "michelinId": "380364",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

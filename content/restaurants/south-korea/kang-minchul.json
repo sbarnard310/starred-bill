@@ -24,5 +24,9 @@
   "website": "https://www.kangminchul.com/",
   "lat": 37.5249,
   "lng": 127.04365,
-  "placeId": "ChIJX-lvM5WlfDURSDv31GaVe4g"
+  "placeId": "ChIJX-lvM5WlfDURSDv31GaVe4g",
+  "michelinId": "1202955",
+  "diets": [
+    "vegetarian"
+  ]
 }

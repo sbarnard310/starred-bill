@@ -12,5 +12,8 @@
   "website": "https://www.laesa.de/",
   "lat": 48.7714421,
   "lng": 9.1791046,
-  "placeId": "ChIJpZ6lkK_bmUcREHqOeXdDnD8"
+  "placeId": "ChIJpZ6lkK_bmUcREHqOeXdDnD8",
+  "michelinId": "1209789",
+  "chef": "Moritz Bilsing and Emilio Löffler",
+  "chefSource": "michelin"
 }

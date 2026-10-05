@@ -13,5 +13,13 @@
   "website": "https://www.karelv.nl/restaurant/",
   "lat": 52.0879046,
   "lng": 5.118613,
-  "placeId": "ChIJwZ0gr1tvxkcRLD_Dq6RXIHk"
+  "placeId": "ChIJwZ0gr1tvxkcRLD_Dq6RXIHk",
+  "michelinId": "213093",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Leon Mazairac",
+  "chefSource": "michelin"
 }

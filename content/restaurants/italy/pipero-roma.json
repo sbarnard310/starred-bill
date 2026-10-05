@@ -25,5 +25,8 @@
   "website": "https://www.piperoroma.it/",
   "lat": 41.897786,
   "lng": 12.468814,
-  "placeId": "ChIJ__9P5kRgLxMR8DBAF5WMSiI"
+  "placeId": "ChIJ__9P5kRgLxMR8DBAF5WMSiI",
+  "michelinId": "520322",
+  "chef": "Ciro Scamardella",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,13 @@
   "website": "https://restaurant-cueillette.fr/",
   "lat": 44.9474128,
   "lng": 1.8560131,
-  "placeId": "ChIJsa3WJ2crrRIReASE4-uBVYs"
+  "placeId": "ChIJsa3WJ2crrRIReASE4-uBVYs",
+  "michelinId": "1204675",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Oscar Garcia",
+  "chefSource": "michelin"
 }

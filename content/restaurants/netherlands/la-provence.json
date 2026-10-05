@@ -13,5 +13,9 @@
   "website": "https://www.restaurantlaprovence.nl/",
   "lat": 52.0522638,
   "lng": 5.282136,
-  "placeId": "ChIJfcFO5SFdxkcRBCj4gjlAMUg"
+  "placeId": "ChIJfcFO5SFdxkcRBCj4gjlAMUg",
+  "michelinId": "212401",
+  "diets": [
+    "vegetarian"
+  ]
 }

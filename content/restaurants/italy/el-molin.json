@@ -13,5 +13,14 @@
   "website": "https://www.alessandrogilmozzi.it",
   "lat": 46.292019,
   "lng": 11.4594756,
-  "placeId": "ChIJ22WSM_99eEcRW1sWtWCnB-Q"
+  "placeId": "ChIJ22WSM_99eEcRW1sWtWCnB-Q",
+  "michelinId": "130400",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Alessandro Gilmozzi",
+  "chefSource": "michelin"
 }

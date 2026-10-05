@@ -13,5 +13,12 @@
   "website": "https://hubertwallner.com/",
   "lat": 46.6227443,
   "lng": 14.1179695,
-  "placeId": "ChIJ10NXPqV5cEcRU-yZwMNkleA"
+  "placeId": "ChIJ10NXPqV5cEcRU-yZwMNkleA",
+  "michelinId": "1212806",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Hubert Wallner",
+  "chefSource": "michelin"
 }

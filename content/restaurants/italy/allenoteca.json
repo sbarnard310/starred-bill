@@ -13,5 +13,12 @@
   "website": "https://www.davidepalluda.it/",
   "lat": 44.7969064,
   "lng": 7.9929925,
-  "placeId": "ChIJg1NnkLLwh0cRyOHFVdpLOA8"
+  "placeId": "ChIJg1NnkLLwh0cRyOHFVdpLOA8",
+  "michelinId": "128675",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Davide Palluda",
+  "chefSource": "michelin"
 }

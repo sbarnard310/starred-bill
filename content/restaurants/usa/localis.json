@@ -15,5 +15,11 @@
   "website": "https://localissacramento.com/",
   "lat": 38.5665938,
   "lng": -121.4829661,
-  "placeId": "ChIJYUnm_ubQmoARMQ2616W5Yi8"
+  "placeId": "ChIJYUnm_ubQmoARMQ2616W5Yi8",
+  "michelinId": "559372",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christopher Barnum-Dann",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,12 @@
   "website": "https://www.chateauberne.com/",
   "lat": 43.5164138,
   "lng": 6.3660986,
-  "placeId": "ChIJ3_jDcApTyRIR_tN8MdFrXLs"
+  "placeId": "ChIJ3_jDcApTyRIR_tN8MdFrXLs",
+  "michelinId": "498025",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Louis Rameau",
+  "chefSource": "michelin"
 }

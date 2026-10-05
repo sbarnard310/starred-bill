@@ -16,5 +16,11 @@
   "website": "https://timothygoffin.be/",
   "lat": 51.2119551,
   "lng": 3.2417056,
-  "placeId": "ChIJM1e4kq1Qw0cRd-VL6SDO-LY"
+  "placeId": "ChIJM1e4kq1Qw0cRd-VL6SDO-LY",
+  "michelinId": "330218",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Timothy Goffin",
+  "chefSource": "site"
 }

@@ -20,5 +20,11 @@
   "website": "https://trescharestaurant.com/",
   "lat": -34.600216,
   "lng": -58.4439581,
-  "placeId": "ChIJ1Rgp0JfLvJURz9KmgBEdyAM"
+  "placeId": "ChIJ1Rgp0JfLvJURz9KmgBEdyAM",
+  "michelinId": "1206958",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Tomás Treschanski",
+  "chefSource": "michelin"
 }

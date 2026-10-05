@@ -24,5 +24,12 @@
   "website": "https://marguerite.com.sg/",
   "lat": 1.284973,
   "lng": 103.863951,
-  "placeId": "ChIJa3HUZmgZ2jERrWFEDnAu24o"
+  "placeId": "ChIJa3HUZmgZ2jERrWFEDnAu24o",
+  "michelinId": "1200574",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Michael Wilson",
+  "chefSource": "michelin"
 }

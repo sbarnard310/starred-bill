@@ -14,5 +14,12 @@
   "website": "https://www.pedrolemos.net/",
   "lat": 41.1480595,
   "lng": -8.6501319,
-  "placeId": "ChIJxT5-pYNvJA0R_MDHylK8WWc"
+  "placeId": "ChIJxT5-pYNvJA0R_MDHylK8WWc",
+  "michelinId": "311644",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Pedro Lemos",
+  "chefSource": "michelin"
 }

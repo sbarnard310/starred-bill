@@ -24,5 +24,8 @@
   "website": "https://www.restaurantlabyrinth.com/",
   "lat": 1.289749,
   "lng": 103.8563,
-  "placeId": "ChIJj99Fo3IZ2jERFIUg_m-VhO8"
+  "placeId": "ChIJj99Fo3IZ2jERFIUg_m-VhO8",
+  "michelinId": "501506",
+  "chef": "LG Han",
+  "chefSource": "michelin"
 }

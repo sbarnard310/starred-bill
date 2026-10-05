@@ -23,5 +23,11 @@
   "website": "https://www.la-bouitte.com",
   "lat": 45.3690312,
   "lng": 6.513333,
-  "placeId": "ChIJzUmldWcqikcRuUZe7ICLk1U"
+  "placeId": "ChIJzUmldWcqikcRuUZe7ICLk1U",
+  "michelinId": "8096",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "René Meilleur and Maxime Meilleur",
+  "chefSource": "michelin"
 }

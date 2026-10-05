@@ -12,5 +12,11 @@
   "website": "https://isidoresatx.com/",
   "lat": 29.4407547,
   "lng": -98.4807852,
-  "placeId": "ChIJ-9eV5Gb1XIYRg-VP6Jm2Rt4"
+  "placeId": "ChIJ-9eV5Gb1XIYRg-VP6Jm2Rt4",
+  "michelinId": "1219260",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Danny Parada / Ian Lanphear",
+  "chefSource": "michelin"
 }

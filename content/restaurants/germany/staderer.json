@@ -15,5 +15,8 @@
   "website": "https://dasaltmuehltal.de/staderer/",
   "lat": 48.893446,
   "lng": 11.181198,
-  "placeId": "ChIJH3zJDGgfn0cR1wiOtNgcxjI"
+  "placeId": "ChIJH3zJDGgfn0cR1wiOtNgcxjI",
+  "michelinId": "1241480",
+  "chef": "Benjamin Schöneich",
+  "chefSource": "michelin"
 }

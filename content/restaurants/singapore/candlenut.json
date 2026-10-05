@@ -24,5 +24,9 @@
   "website": "https://www.comodempsey.sg/restaurant/candlenut",
   "lat": 1.305859,
   "lng": 103.810072,
-  "placeId": "ChIJ5ySHC3IZ2jERu-xiMMTjAVE"
+  "placeId": "ChIJ5ySHC3IZ2jERu-xiMMTjAVE",
+  "michelinId": "501368",
+  "diets": [
+    "vegetarian"
+  ]
 }

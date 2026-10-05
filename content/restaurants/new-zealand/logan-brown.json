@@ -24,5 +24,12 @@
   "website": "https://www.loganbrown.co.nz/",
   "lat": -41.294868,
   "lng": 174.774671,
-  "placeId": "ChIJGYqIZ9ivOG0RCtH44thVAkQ"
+  "placeId": "ChIJGYqIZ9ivOG0RCtH44thVAkQ",
+  "michelinId": "1241033",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

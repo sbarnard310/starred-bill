@@ -13,5 +13,13 @@
   "website": "https://www.sushibywalt.com",
   "lat": 38.9077399,
   "lng": 1.430802,
-  "placeId": "ChIJ9ShcaWZHmRIRC3rtZTTR4k8"
+  "placeId": "ChIJ9ShcaWZHmRIRC3rtZTTR4k8",
+  "michelinId": "1208233",
+  "diets": [
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Walter Sidoravicius",
+  "chefSource": "site"
 }

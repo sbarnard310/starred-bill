@@ -18,5 +18,12 @@
   "website": "https://www.ever-restaurant.com/",
   "lat": 41.886839,
   "lng": -87.660426,
-  "placeId": "ChIJqUoVvkgtDogRLGIKXcfaiKk"
+  "placeId": "ChIJqUoVvkgtDogRLGIKXcfaiKk",
+  "michelinId": "1184711",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Curtis Duffy",
+  "chefSource": "michelin"
 }

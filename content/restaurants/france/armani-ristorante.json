@@ -25,5 +25,11 @@
   "website": "https://www.armani.com/fr-ch/armani-restaurant/experience/emporio-armani-caffe-ristorante-paris/",
   "lat": 48.8537124,
   "lng": 2.3325851,
-  "placeId": "ChIJJyybR4xx5kcRiTv3fACK9Y0"
+  "placeId": "ChIJJyybR4xx5kcRiTv3fACK9Y0",
+  "michelinId": "5936",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Massimo Tringali",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://laquacountryside.it/",
   "lat": 40.6456678,
   "lng": 14.4515515,
-  "placeId": "ChIJ_c-Ui_yZOxMRPEu8gqtNtbk"
+  "placeId": "ChIJ_c-Ui_yZOxMRPEu8gqtNtbk",
+  "michelinId": "1195756",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Nicola Somma",
+  "chefSource": "michelin"
 }

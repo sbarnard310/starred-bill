@@ -28,5 +28,13 @@
   "website": "https://ramonfreixaatelier.com/",
   "lat": 40.424167,
   "lng": -3.684181,
-  "placeId": "ChIJXXIgAgApQg0R2Xg6SR1lci8"
+  "placeId": "ChIJXXIgAgApQg0R2Xg6SR1lci8",
+  "michelinId": "1242633",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Ramón Freixa",
+  "chefSource": "michelin"
 }

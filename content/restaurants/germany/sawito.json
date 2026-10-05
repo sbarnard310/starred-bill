@@ -13,5 +13,11 @@
   "website": "https://restaurant-sawito.com/",
   "lat": 52.5645708,
   "lng": 13.112693,
-  "placeId": "ChIJFd9afFb5qEcRakoeV-QFluY"
+  "placeId": "ChIJFd9afFb5qEcRakoeV-QFluY",
+  "michelinId": "1194313",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marco Wahl",
+  "chefSource": "michelin"
 }

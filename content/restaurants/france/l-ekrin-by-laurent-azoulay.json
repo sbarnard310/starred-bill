@@ -12,5 +12,13 @@
   "sourceType": "none",
   "website": "https://www.lekaila.com",
   "lat": 45.3940091,
-  "lng": 6.5673633
+  "lng": 6.5673633,
+  "michelinId": "70162",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ],
+  "chef": "Laurent Azoulay",
+  "chefSource": "michelin"
 }

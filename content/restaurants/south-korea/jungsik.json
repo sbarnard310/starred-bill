@@ -25,5 +25,12 @@
   "website": "https://www.jungsik.kr/",
   "lat": 37.525584,
   "lng": 127.041069,
-  "placeId": "ChIJLwsYxYijfDURiJD-QZw6MYU"
+  "placeId": "ChIJLwsYxYijfDURiJD-QZw6MYU",
+  "michelinId": "511965",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Yim Jung-sik",
+  "chefSource": "michelin"
 }

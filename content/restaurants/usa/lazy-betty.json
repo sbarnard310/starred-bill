@@ -14,5 +14,12 @@
   "website": "https://www.lazybettyatl.com/",
   "lat": 33.7815172,
   "lng": -84.3837962,
-  "placeId": "ChIJ00zCHiAH9YgR3l-kmURAKrM"
+  "placeId": "ChIJ00zCHiAH9YgR3l-kmURAKrM",
+  "michelinId": "1196006",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Ron Hsu",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,12 @@
   "website": "https://www.choux.nl/",
   "lat": 52.3776924,
   "lng": 4.9066171,
-  "placeId": "ChIJV5ZnZbAJxkcRhkiVQ7jkbXw"
+  "placeId": "ChIJV5ZnZbAJxkcRhkiVQ7jkbXw",
+  "michelinId": "502423",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -20,5 +20,14 @@
   "website": "https://homeatpenarth.co.uk/",
   "lat": 51.436161,
   "lng": -3.175201,
-  "placeId": "ChIJIVUNnmYDbkgRKd7RpSdDEW0"
+  "placeId": "ChIJIVUNnmYDbkgRKd7RpSdDEW0",
+  "michelinId": "1196052",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "James Sommerin",
+  "chefSource": "michelin"
 }

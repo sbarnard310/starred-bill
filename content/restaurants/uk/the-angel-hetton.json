@@ -21,5 +21,14 @@
   "website": "https://angelhetton.co.uk/",
   "lat": 54.025884,
   "lng": -2.059688,
-  "placeId": "ChIJ4xnzvx31e0gRtti7Aj3ZaaY"
+  "placeId": "ChIJ4xnzvx31e0gRtti7Aj3ZaaY",
+  "michelinId": "189123",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Michael Wignall",
+  "chefSource": "site"
 }

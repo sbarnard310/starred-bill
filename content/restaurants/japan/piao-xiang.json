@@ -25,5 +25,8 @@
   "website": "https://www.piao-xiang.com/",
   "lat": 35.649081,
   "lng": 139.719531,
-  "placeId": "ChIJw8sY3t6LGGARrQbArsw9N60"
+  "placeId": "ChIJw8sY3t6LGGARrQbArsw9N60",
+  "michelinId": "1209722",
+  "chef": "Yoshiki Igeta",
+  "chefSource": "site"
 }

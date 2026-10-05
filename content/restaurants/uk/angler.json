@@ -20,5 +20,13 @@
   "website": "https://www.anglerrestaurant.com/",
   "lat": 51.5189674,
   "lng": -0.086521,
-  "placeId": "ChIJU07oP6wcdkgRxecDS1lBdlc"
+  "placeId": "ChIJU07oP6wcdkgRxecDS1lBdlc",
+  "michelinId": "392235",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Craig Johnston",
+  "chefSource": "site"
 }

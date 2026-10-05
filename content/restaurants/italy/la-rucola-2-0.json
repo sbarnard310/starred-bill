@@ -25,5 +25,13 @@
   "website": "https://www.ristorantelarucola.it/",
   "lat": 45.492837,
   "lng": 10.608131,
-  "placeId": "ChIJgblnplOTgUcRxoiaYum_OkQ"
+  "placeId": "ChIJgblnplOTgUcRxoiaYum_OkQ",
+  "michelinId": "153119",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Francesco Turturro",
+  "chefSource": "michelin"
 }

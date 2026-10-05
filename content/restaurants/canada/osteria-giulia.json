@@ -12,5 +12,12 @@
   "website": "https://osteriagiulia.ca/",
   "lat": 43.6744503,
   "lng": -79.3967752,
-  "placeId": "ChIJcVIJ04s1K4gRwB1yYrOB0mM"
+  "placeId": "ChIJcVIJ04s1K4gRwB1yYrOB0mM",
+  "michelinId": "1201734",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Rob Rossi",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://bozarrestaurant.be/",
   "lat": 50.8442419,
   "lng": 4.359821,
-  "placeId": "ChIJY7sk7IDEw0cRa0IDhObt1Qs"
+  "placeId": "ChIJY7sk7IDEw0cRa0IDhObt1Qs",
+  "michelinId": "306344",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Karen Torosyan",
+  "chefSource": "michelin"
 }

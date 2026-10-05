@@ -19,5 +19,13 @@
   "website": "https://www.uglybutterfly.co.uk/",
   "lat": 50.420336,
   "lng": -5.097161,
-  "placeId": "ChIJn_Zm_ZjdakgRZlegtSF8Q_s"
+  "placeId": "ChIJn_Zm_ZjdakgRZlegtSF8Q_s",
+  "michelinId": "1241870",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Adam Handling",
+  "chefSource": "michelin"
 }

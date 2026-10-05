@@ -13,5 +13,12 @@
   "website": "https://www.restaurantmarie.de/",
   "lat": 52.3855784,
   "lng": 9.7493772,
-  "placeId": "ChIJAaUQEqp0sEcRY7t-jjdRGVM"
+  "placeId": "ChIJAaUQEqp0sEcRY7t-jjdRGVM",
+  "michelinId": "1204342",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Sven Holthaus",
+  "chefSource": "michelin"
 }

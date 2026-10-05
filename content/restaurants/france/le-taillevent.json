@@ -25,5 +25,8 @@
   "website": "https://www.letaillevent.com/",
   "lat": 48.874195,
   "lng": 2.3024829,
-  "placeId": "ChIJp_LMzsFv5kcRahcM9RvYYV4"
+  "placeId": "ChIJp_LMzsFv5kcRahcM9RvYYV4",
+  "michelinId": "6107",
+  "chef": "Philip Chronopoulos",
+  "chefSource": "site"
 }

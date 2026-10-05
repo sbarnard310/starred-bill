@@ -20,5 +20,15 @@
   "website": "https://www.chishuru.com/",
   "lat": 51.5167307,
   "lng": -0.1399754,
-  "placeId": "ChIJbTkU-5obdkgR8MpRXunujW4"
+  "placeId": "ChIJbTkU-5obdkgR8MpRXunujW4",
+  "michelinId": "1210872",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Adejoké Bakare",
+  "chefSource": "michelin"
 }

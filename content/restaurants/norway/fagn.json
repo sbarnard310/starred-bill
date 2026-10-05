@@ -13,5 +13,11 @@
   "website": "https://fagn.no/",
   "lat": 63.4339936,
   "lng": 10.3962931,
-  "placeId": "ChIJ8_RkhpwxbUYRl5pLbMUeCdM"
+  "placeId": "ChIJ8_RkhpwxbUYRl5pLbMUeCdM",
+  "michelinId": "554228",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Ådne Børseth Helgetun",
+  "chefSource": "michelin"
 }

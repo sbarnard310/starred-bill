@@ -12,5 +12,8 @@
   "website": "https://www.masakisaito.ca/",
   "lat": 43.6723007,
   "lng": -79.395785,
-  "placeId": "ChIJ-1ow0r41K4gRWy6_o_lMCyk"
+  "placeId": "ChIJ-1ow0r41K4gRWy6_o_lMCyk",
+  "michelinId": "1198946",
+  "chef": "Masaki Saito",
+  "chefSource": "michelin"
 }

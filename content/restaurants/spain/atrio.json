@@ -13,5 +13,14 @@
   "website": "https://atriocaceres.com/",
   "lat": 39.4730278,
   "lng": -6.3714187,
-  "placeId": "ChIJm1JTpdbfFQ0Rv2Lf-opFjX0"
+  "placeId": "ChIJm1JTpdbfFQ0Rv2Lf-opFjX0",
+  "michelinId": "218843",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Toño Pérez",
+  "chefSource": "michelin"
 }

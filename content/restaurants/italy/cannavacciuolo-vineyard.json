@@ -18,5 +18,12 @@
   "website": "https://laquavineyard.it/",
   "lat": 43.544369,
   "lng": 10.685182,
-  "placeId": "ChIJ-ZdibcELKhMRF7Qt3wnuI9w"
+  "placeId": "ChIJ-ZdibcELKhMRF7Qt3wnuI9w",
+  "michelinId": "1203075",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Lodovico Eulogio",
+  "chefSource": "michelin"
 }

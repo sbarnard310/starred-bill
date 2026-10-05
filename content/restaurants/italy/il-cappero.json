@@ -13,5 +13,12 @@
   "website": "https://www.ilcapperoristorante.it/",
   "lat": 38.4308153,
   "lng": 14.9570928,
-  "placeId": "ChIJv6XVjlh-FhMR1geHspg6HWM"
+  "placeId": "ChIJv6XVjlh-FhMR1geHspg6HWM",
+  "michelinId": "402060",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Onofrio Pagnotto",
+  "chefSource": "michelin"
 }

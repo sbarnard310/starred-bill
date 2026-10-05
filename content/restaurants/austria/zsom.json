@@ -12,5 +12,12 @@
   "website": "https://zsom-restaurant.at",
   "lat": 48.1974846,
   "lng": 16.3718646,
-  "placeId": "ChIJ6w5ZaIwHbUcR6ZoNnsCe_-k"
+  "placeId": "ChIJ6w5ZaIwHbUcR6ZoNnsCe_-k",
+  "michelinId": "1204322",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Diego Briones",
+  "chefSource": "michelin"
 }

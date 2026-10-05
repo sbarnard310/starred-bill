@@ -13,5 +13,11 @@
   "website": "https://www.hisafranko.com/",
   "lat": 46.247312,
   "lng": 13.5378132,
-  "placeId": "ChIJg2ySsFBbekcR-PLGw2nIRAY"
+  "placeId": "ChIJg2ySsFBbekcR-PLGw2nIRAY",
+  "michelinId": "1160194",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Ana Roš Stojan",
+  "chefSource": "michelin"
 }

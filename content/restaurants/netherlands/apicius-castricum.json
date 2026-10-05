@@ -13,5 +13,10 @@
   "website": "https://www.apicius.nl/",
   "lat": 52.5588765,
   "lng": 4.6561881,
-  "placeId": "ChIJexaK7g33xUcR4UZCZiegd8A"
+  "placeId": "ChIJexaK7g33xUcR4UZCZiegd8A",
+  "michelinId": "212340",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

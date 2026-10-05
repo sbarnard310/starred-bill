@@ -13,5 +13,11 @@
   "website": "https://solena-restaurant.com/",
   "lat": 44.8405363,
   "lng": -0.5903561,
-  "placeId": "ChIJ4UU8buUnVQ0RVPlOvTqP_Qw"
+  "placeId": "ChIJ4UU8buUnVQ0RVPlOvTqP_Qw",
+  "michelinId": "325232",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Victor Ostronzec",
+  "chefSource": "michelin"
 }

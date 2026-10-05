@@ -27,5 +27,11 @@
   "website": "https://table.paris/",
   "lat": 48.8486151,
   "lng": 2.3759654,
-  "placeId": "ChIJoSONvAVy5kcRiFFvBHOUYv8"
+  "placeId": "ChIJoSONvAVy5kcRiFFvBHOUYv8",
+  "michelinId": "407110",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Bruno Verjus",
+  "chefSource": "michelin"
 }

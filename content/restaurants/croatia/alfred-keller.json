@@ -13,5 +13,11 @@
   "website": "https://w.eventlin.com/Restaurant-Alfred-Keller?merchant=25854",
   "lat": 44.5308235,
   "lng": 14.4580907,
-  "placeId": "ChIJQaFfzSv4YkcRlvG3d5LhpCE"
+  "placeId": "ChIJQaFfzSv4YkcRlvG3d5LhpCE",
+  "michelinId": "1195903",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Daniel Skokić",
+  "chefSource": "michelin"
 }

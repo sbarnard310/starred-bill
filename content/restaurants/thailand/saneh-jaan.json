@@ -21,5 +21,9 @@
   "website": "https://www.sanehjaan.com",
   "lat": 13.7356117,
   "lng": 100.5457543,
-  "placeId": "ChIJUWI9ztie4jARZTiHjCyTWao"
+  "placeId": "ChIJUWI9ztie4jARZTiHjCyTWao",
+  "michelinId": "547010",
+  "diets": [
+    "vegetarian"
+  ]
 }

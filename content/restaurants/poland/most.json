@@ -13,5 +13,11 @@
   "website": "https://miedzy-mostami.pl",
   "lat": 51.1148091,
   "lng": 17.0312538,
-  "placeId": "ChIJSSnUgyPpD0cRsKD_2oDXtIM"
+  "placeId": "ChIJSSnUgyPpD0cRsKD_2oDXtIM",
+  "michelinId": "1219253",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

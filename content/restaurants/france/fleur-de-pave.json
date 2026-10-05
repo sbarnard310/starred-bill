@@ -25,5 +25,12 @@
   "website": "https://fleurdepave.com/",
   "lat": 48.8677,
   "lng": 2.34333,
-  "placeId": "ChIJd3fGOlBv5kcRbE41EBJjT-U"
+  "placeId": "ChIJd3fGOlBv5kcRbE41EBJjT-U",
+  "michelinId": "1184884",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Sylvain Sendra",
+  "chefSource": "michelin"
 }

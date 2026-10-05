@@ -20,5 +20,11 @@
   "website": "https://www.marsanhelenedarroze.com/",
   "lat": 48.8499883,
   "lng": 2.3279216,
-  "placeId": "ChIJ81phINFx5kcRW5UjTPo8aGc"
+  "placeId": "ChIJ81phINFx5kcRW5UjTPo8aGc",
+  "michelinId": "5912",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Hélène Darroze",
+  "chefSource": "michelin"
 }

@@ -33,5 +33,8 @@
   "website": "https://senomakase.com/",
   "lat": 40.462235,
   "lng": -3.670171,
-  "placeId": "ChIJh12gFQApQg0R97bQnRmGqpU"
+  "placeId": "ChIJh12gFQApQg0R97bQnRmGqpU",
+  "michelinId": "1214049",
+  "chef": "Steven Wu",
+  "chefSource": "michelin"
 }

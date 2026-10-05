@@ -13,5 +13,11 @@
   "website": "https://www.elretirollanes.es/",
   "lat": 43.4123756,
   "lng": -4.7621095,
-  "placeId": "ChIJtx3YjuTqSQ0R74Oo_l49F3U"
+  "placeId": "ChIJtx3YjuTqSQ0R74Oo_l49F3U",
+  "michelinId": "332258",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Ricardo González Sotres",
+  "chefSource": "michelin"
 }

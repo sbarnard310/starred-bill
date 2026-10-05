@@ -12,5 +12,8 @@
   "website": "https://www.11woodfire.com/",
   "lat": 25.2156197,
   "lng": 55.2512424,
-  "placeId": "ChIJ0XAHzFhDXz4RWB0pNY1dpuU"
+  "placeId": "ChIJ0XAHzFhDXz4RWB0pNY1dpuU",
+  "michelinId": "1200075",
+  "chef": "Brando Moros",
+  "chefSource": "site"
 }

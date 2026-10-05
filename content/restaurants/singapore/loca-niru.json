@@ -22,5 +22,8 @@
   "website": "https://locaniru.sg/",
   "lat": 1.298737,
   "lng": 103.843251,
-  "placeId": "ChIJqRCMk20Z2jERhRJiBDgvYiw"
+  "placeId": "ChIJqRCMk20Z2jERhRJiBDgvYiw",
+  "michelinId": "1246701",
+  "chef": "Shusuke Kubota",
+  "chefSource": "site"
 }

@@ -17,5 +17,12 @@
   "website": "https://www.aulisphuket.com",
   "lat": 8.2878698,
   "lng": 98.274228,
-  "placeId": "ChIJa5G2159bUDARtErVOCyhyNQ"
+  "placeId": "ChIJa5G2159bUDARtErVOCyhyNQ",
+  "michelinId": "1210910",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Charlie Wilson",
+  "chefSource": "site"
 }

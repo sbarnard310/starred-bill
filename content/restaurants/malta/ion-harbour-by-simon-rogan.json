@@ -13,5 +13,12 @@
   "website": "https://ionharbour.com/",
   "lat": 35.8962481,
   "lng": 14.5141768,
-  "placeId": "ChIJO4HhfR9FDhMRiFSyTAtcga8"
+  "placeId": "ChIJO4HhfR9FDhMRiFSyTAtcga8",
+  "michelinId": "1194568",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christian Cali",
+  "chefSource": "michelin"
 }

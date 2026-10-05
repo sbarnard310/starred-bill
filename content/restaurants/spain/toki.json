@@ -26,5 +26,11 @@
   "website": "https://restaurantetoki.com/",
   "lat": 40.42788,
   "lng": -3.697275,
-  "placeId": "ChIJlayPgPMpQg0RTfnpWV0v1bg"
+  "placeId": "ChIJlayPgPMpQg0RTfnpWV0v1bg",
+  "michelinId": "1205025",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Tadayoshi Teddy Motoa",
+  "chefSource": "michelin"
 }

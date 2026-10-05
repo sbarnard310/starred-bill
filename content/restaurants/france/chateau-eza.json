@@ -23,5 +23,9 @@
   "website": "https://www.chateaueza.com/",
   "lat": 43.7276935,
   "lng": 7.3610962,
-  "placeId": "ChIJMU_UF2bDzRIR2OeasRNgJbk"
+  "placeId": "ChIJMU_UF2bDzRIR2OeasRNgJbk",
+  "michelinId": "11133",
+  "diets": [
+    "vegetarian"
+  ]
 }

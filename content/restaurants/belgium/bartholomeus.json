@@ -13,5 +13,8 @@
   "website": "https://www.restaurantbartholomeus.be/",
   "lat": 51.341769,
   "lng": 3.2436215,
-  "placeId": "ChIJPeqMVVioxEcRLjcV34aOWgs"
+  "placeId": "ChIJPeqMVVioxEcRLjcV34aOWgs",
+  "michelinId": "209930",
+  "chef": "Bart Desmidt",
+  "chefSource": "michelin"
 }

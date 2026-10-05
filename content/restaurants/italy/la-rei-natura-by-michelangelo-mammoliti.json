@@ -13,5 +13,14 @@
   "website": "https://www.ilboscaretoresort.it/ristorante/",
   "lat": 44.59437,
   "lng": 7.9997666,
-  "placeId": "ChIJieiHWAKx0hIRDIin1Xj3feo"
+  "placeId": "ChIJieiHWAKx0hIRDIin1Xj3feo",
+  "michelinId": "256966",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Michelangelo Mammoliti",
+  "chefSource": "michelin"
 }

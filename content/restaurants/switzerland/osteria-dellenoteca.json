@@ -16,5 +16,14 @@
   "website": "https://www.osteriaenoteca.ch/",
   "lat": 46.1683701,
   "lng": 8.7577196,
-  "placeId": "ChIJnz235g7IhUcRe_qnNHZn5lM"
+  "placeId": "ChIJnz235g7IhUcRe_qnNHZn5lM",
+  "michelinId": "178755",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jacopo Rovetini",
+  "chefSource": "site"
 }

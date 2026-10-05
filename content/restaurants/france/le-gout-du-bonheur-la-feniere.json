@@ -15,5 +15,16 @@
   "website": "https://aubergelafeniere.com/",
   "lat": 43.7487002,
   "lng": 5.3642746,
-  "placeId": "ChIJBU6Bzs8YyhIRkoH8etilhaI"
+  "placeId": "ChIJBU6Bzs8YyhIRkoH8etilhaI",
+  "michelinId": "4313",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Nadia Sammut",
+  "chefSource": "michelin"
 }

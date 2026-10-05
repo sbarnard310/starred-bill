@@ -13,5 +13,12 @@
   "website": "https://taytarestaurante.com/",
   "lat": 40.9630387,
   "lng": -5.6703452,
-  "placeId": "ChIJ87xD1WomPw0RIkty_jC7eSw"
+  "placeId": "ChIJ87xD1WomPw0RIkty_jC7eSw",
+  "michelinId": "222821",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Víctor Gutiérrez and Paula Gutiérrez",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,8 @@
   "website": "https://raicescarlosmaldonado.es/",
   "lat": 39.9565163,
   "lng": -4.8321518,
-  "placeId": "ChIJpwbsfgwcQA0RHzxz8Azk8Zc"
+  "placeId": "ChIJpwbsfgwcQA0RHzxz8Azk8Zc",
+  "michelinId": "536106",
+  "chef": "Carlos Maldonado",
+  "chefSource": "michelin"
 }

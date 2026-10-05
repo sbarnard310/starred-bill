@@ -13,5 +13,13 @@
   "website": "https://restauranteacozinha.pt/",
   "lat": 41.4429053,
   "lng": -8.2941256,
-  "placeId": "ChIJszl3wOnvJA0RJHgvvsx5p9E"
+  "placeId": "ChIJszl3wOnvJA0RJHgvvsx5p9E",
+  "michelinId": "542187",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "António Loureiro",
+  "chefSource": "michelin"
 }

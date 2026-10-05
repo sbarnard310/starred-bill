@@ -23,5 +23,9 @@
   "lunchSource": "https://autoreserve.com/en/restaurants/GjvwaRoVnRjqr58D745m",
   "lat": 22.2768816,
   "lng": 114.1708815,
-  "placeId": "ChIJfdUO4VwABDQRfyiP8SS7iPA"
+  "placeId": "ChIJfdUO4VwABDQRfyiP8SS7iPA",
+  "michelinId": "230736",
+  "diets": [
+    "vegetarian"
+  ]
 }

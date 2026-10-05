@@ -25,5 +25,12 @@
   "website": "https://www.rosewoodhotels.com/en/hong-kong/dining/chaat",
   "lat": 22.2947649,
   "lng": 114.1757148,
-  "placeId": "ChIJSTHbhggBBDQRUkh7fJaBA7o"
+  "placeId": "ChIJSTHbhggBBDQRUkh7fJaBA7o",
+  "michelinId": "1192501",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Gaurav Kuthari",
+  "chefSource": "site"
 }

@@ -14,5 +14,11 @@
   "website": "https://jan-hartwig.com/",
   "lat": 48.1447975,
   "lng": 11.5629878,
-  "placeId": "ChIJrW8egwN1nkcRcSAVCJYQpZY"
+  "placeId": "ChIJrW8egwN1nkcRcSAVCJYQpZY",
+  "michelinId": "1204321",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jan Hartwig",
+  "chefSource": "michelin"
 }

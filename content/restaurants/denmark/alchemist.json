@@ -25,5 +25,11 @@
   "website": "https://www.alchemist.dk/",
   "lat": 55.694342,
   "lng": 12.614098,
-  "placeId": "ChIJGbFWVvBSUkYR5x0i6Z836Ao"
+  "placeId": "ChIJGbFWVvBSUkYR5x0i6Z836Ao",
+  "michelinId": "1186492",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Rasmus Munk",
+  "chefSource": "michelin"
 }

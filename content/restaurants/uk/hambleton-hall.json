@@ -21,5 +21,12 @@
   "website": "https://www.hambletonhall.com/",
   "lat": 52.657432,
   "lng": -0.668098,
-  "placeId": "ChIJezc35e-Ad0gRz6wNpxdnvAI"
+  "placeId": "ChIJezc35e-Ad0gRz6wNpxdnvAI",
+  "michelinId": "193643",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Aaron Patterson",
+  "chefSource": "michelin"
 }

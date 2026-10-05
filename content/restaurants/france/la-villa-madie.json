@@ -17,5 +17,8 @@
   "website": "https://lavillamadie.com/",
   "lat": 43.2110889,
   "lng": 5.544944,
-  "placeId": "ChIJm3JVyr66yRIRxtkixEeVcKY"
+  "placeId": "ChIJm3JVyr66yRIRxtkixEeVcKY",
+  "michelinId": "178193",
+  "chef": "Dimitri Droisneau",
+  "chefSource": "michelin"
 }

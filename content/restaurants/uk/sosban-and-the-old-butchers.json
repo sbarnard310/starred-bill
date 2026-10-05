@@ -17,5 +17,8 @@
   "website": "https://sosbanandtheoldbutchers.com/",
   "lat": 53.226038,
   "lng": -4.162962,
-  "placeId": "ChIJCx3IgPmpZUgR7sfjsrRDJJY"
+  "placeId": "ChIJCx3IgPmpZUgR7sfjsrRDJJY",
+  "michelinId": "383404",
+  "chef": "Stephen Stevens",
+  "chefSource": "michelin"
 }

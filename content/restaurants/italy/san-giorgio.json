@@ -15,5 +15,13 @@
   "website": "https://www.ristorantesangiorgiogenova.it/",
   "lat": 44.4016634,
   "lng": 8.945731,
-  "placeId": "ChIJfeGjkrdD0xIR7JnQbnO0Ycw"
+  "placeId": "ChIJfeGjkrdD0xIR7JnQbnO0Ycw",
+  "michelinId": "562345",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alessandro Marino",
+  "chefSource": "michelin"
 }

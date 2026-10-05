@@ -12,5 +12,10 @@
   "website": "https://www.donalfonsotoronto.com/",
   "lat": 43.64071,
   "lng": -79.37647,
-  "placeId": "ChIJzUm3X2TL1IkRDkPiZYlOC7U"
+  "placeId": "ChIJzUm3X2TL1IkRDkPiZYlOC7U",
+  "michelinId": "565367",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

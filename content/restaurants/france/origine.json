@@ -21,5 +21,12 @@
   "website": "https://restaurantorigine.fr",
   "lat": 47.3158841,
   "lng": 5.0442865,
-  "placeId": "ChIJe3XPceGd8kcRYe_8SkqsB6c"
+  "placeId": "ChIJe3XPceGd8kcRYe_8SkqsB6c",
+  "michelinId": "2859",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Tomofumi Uchimura",
+  "chefSource": "michelin"
 }

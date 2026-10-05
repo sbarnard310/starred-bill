@@ -13,5 +13,9 @@
   "website": "https://ox-restaurant.de/",
   "lat": 49.8760593,
   "lng": 8.66055,
-  "placeId": "ChIJm0rYiY1xvUcR_d4JFRu8Wxk"
+  "placeId": "ChIJm0rYiY1xvUcR_d4JFRu8Wxk",
+  "michelinId": "1194853",
+  "diets": [
+    "vegetarian"
+  ]
 }

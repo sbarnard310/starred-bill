@@ -23,5 +23,13 @@
   "website": "https://villalaetitia.enotecalatorre.group/",
   "lat": 41.916491,
   "lng": 12.469327,
-  "placeId": "ChIJXSxaU_BgLxMRo5GX70m-__M"
+  "placeId": "ChIJXSxaU_BgLxMRo5GX70m-__M",
+  "michelinId": "402346",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Domenico Stile",
+  "chefSource": "site"
 }

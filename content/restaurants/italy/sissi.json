@@ -13,5 +13,12 @@
   "website": "https://sissi.andreafenoglio.com/it/home/1-0.html",
   "lat": 46.6738587,
   "lng": 11.1608085,
-  "placeId": "ChIJm57e3VW5gkcRhQzxikGARqg"
+  "placeId": "ChIJm57e3VW5gkcRhQzxikGARqg",
+  "michelinId": "139980",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Andrea Fenoglio",
+  "chefSource": "michelin"
 }

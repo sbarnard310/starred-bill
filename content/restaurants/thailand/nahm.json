@@ -17,5 +17,15 @@
   "website": "https://www.comohotels.com/thailand/como-metropolitan-bangkok/nahm-bangkok",
   "lat": 13.7231647,
   "lng": 100.5389536,
-  "placeId": "ChIJHULm2C-f4jAR-phOAtQVND4"
+  "placeId": "ChIJHULm2C-f4jAR-phOAtQVND4",
+  "michelinId": "546998",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Pim Techamuanvivit",
+  "chefSource": "site"
 }

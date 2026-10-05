@@ -12,5 +12,11 @@
   "website": "https://arkestra.com.tr/",
   "lat": 41.0782231,
   "lng": 29.0313777,
-  "placeId": "ChIJW1D7CIu3yhQRDmAZbPUrjjw"
+  "placeId": "ChIJW1D7CIu3yhQRDmAZbPUrjjw",
+  "michelinId": "1209180",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Cenk Debensason",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,11 @@
   "website": "https://www.maisondunand.com",
   "lat": 13.722902,
   "lng": 100.5274932,
-  "placeId": "ChIJP2w4zdmf4jARdiVjvr2ZPWk"
+  "placeId": "ChIJP2w4zdmf4jARdiVjvr2ZPWk",
+  "michelinId": "1203838",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Arnaud Dunand Sauthier",
+  "chefSource": "michelin"
 }

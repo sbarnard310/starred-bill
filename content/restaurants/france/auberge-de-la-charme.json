@@ -15,5 +15,14 @@
   "website": "https://aubergedelacharme.com",
   "lat": 47.3758124,
   "lng": 4.8989819,
-  "placeId": "ChIJ4V0APc997UcR-qWntPSn7j4"
+  "placeId": "ChIJ4V0APc997UcR-qWntPSn7j4",
+  "michelinId": "2878",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Nicolas Isnard and David Le Comte",
+  "chefSource": "michelin"
 }

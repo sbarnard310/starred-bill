@@ -13,5 +13,13 @@
   "website": "https://www.marottaristorante.com",
   "lat": 41.146241,
   "lng": 14.4096379,
-  "placeId": "ChIJnR3ikzNROhMR-SW4Ts3PS-o"
+  "placeId": "ChIJnR3ikzNROhMR-SW4Ts3PS-o",
+  "michelinId": "1196801",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Domenico Marotta",
+  "chefSource": "michelin"
 }

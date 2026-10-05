@@ -16,5 +16,13 @@
   "website": "https://metaworld.ch",
   "lat": 46.0038608,
   "lng": 8.9511664,
-  "placeId": "ChIJjxRbhr0thEcRb2i_JHkcCKA"
+  "placeId": "ChIJjxRbhr0thEcRb2i_JHkcCKA",
+  "michelinId": "1192226",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Arturo Fragnito",
+  "chefSource": "site"
 }

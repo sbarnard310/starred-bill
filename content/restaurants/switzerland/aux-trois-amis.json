@@ -13,5 +13,12 @@
   "website": "https://www.aux3amis.ch/",
   "lat": 47.0900127,
   "lng": 7.1398195,
-  "placeId": "ChIJcYl7jscajkcRbDOPJYK2Xrk"
+  "placeId": "ChIJcYl7jscajkcRbDOPJYK2Xrk",
+  "michelinId": "510220",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Marc Joshua Engel",
+  "chefSource": "michelin"
 }

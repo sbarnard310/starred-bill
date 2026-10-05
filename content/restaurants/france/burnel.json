@@ -15,5 +15,8 @@
   "website": "https://www.burnel.fr",
   "lat": 48.3111097,
   "lng": 6.0317932,
-  "placeId": "ChIJs0JwAnpBk0cRJNQExfUMBmc"
+  "placeId": "ChIJs0JwAnpBk0cRJNQExfUMBmc",
+  "michelinId": "1212101",
+  "chef": "Maye Cissoko",
+  "chefSource": "michelin"
 }

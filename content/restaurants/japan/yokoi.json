@@ -12,5 +12,10 @@
   "website": "https://kyo-yokoi.com",
   "lat": 34.99764,
   "lng": 135.76235,
-  "placeId": "ChIJ-_N-vXIJAWAR69mbsUWOjXc"
+  "placeId": "ChIJ-_N-vXIJAWAR69mbsUWOjXc",
+  "michelinId": "1211981",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

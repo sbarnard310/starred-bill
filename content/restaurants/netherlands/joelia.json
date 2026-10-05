@@ -15,5 +15,14 @@
   "website": "https://www.joelia.eu/",
   "lat": 51.9237472,
   "lng": 4.4776933,
-  "placeId": "ChIJA7FBnac0xEcRkoOE6zmKFlQ"
+  "placeId": "ChIJA7FBnac0xEcRkoOE6zmKFlQ",
+  "michelinId": "468115",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Sofiane Bons",
+  "chefSource": "michelin"
 }

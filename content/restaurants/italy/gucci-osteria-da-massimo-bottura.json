@@ -23,5 +23,12 @@
   "website": "https://www.gucciosteria.com/it/florence",
   "lat": 43.769804,
   "lng": 11.256713,
-  "placeId": "ChIJXWil3wBUKhMRCNkg3KPI-FY"
+  "placeId": "ChIJXWil3wBUKhMRCNkg3KPI-FY",
+  "michelinId": "558763",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Takahiko Kondo",
+  "chefSource": "michelin"
 }

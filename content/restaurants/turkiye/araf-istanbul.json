@@ -12,5 +12,11 @@
   "website": "https://www.arafistanbul.com/",
   "lat": 40.9788119,
   "lng": 29.0932956,
-  "placeId": "ChIJxUyUAoTHyhQRvHcXuQDSu14"
+  "placeId": "ChIJxUyUAoTHyhQRvHcXuQDSu14",
+  "michelinId": "1213077",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

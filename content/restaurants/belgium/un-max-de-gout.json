@@ -13,5 +13,11 @@
   "website": "https://maxdegout.be/",
   "lat": 50.4767771,
   "lng": 5.5785763,
-  "placeId": "ChIJkamNxyxfwEcRvJCwxs-BJf4"
+  "placeId": "ChIJkamNxyxfwEcRvJCwxs-BJf4",
+  "michelinId": "1154465",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maxime Zimmer",
+  "chefSource": "michelin"
 }

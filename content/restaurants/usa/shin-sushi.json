@@ -16,5 +16,8 @@
   "source": "https://www.timeout.com/los-angeles/restaurants/shin-sushi",
   "lat": 34.158761,
   "lng": -118.494401,
-  "placeId": "ChIJdUHh7MCZwoAR71vwlsZ5V_o"
+  "placeId": "ChIJdUHh7MCZwoAR71vwlsZ5V_o",
+  "michelinId": "569866",
+  "chef": "Taketoshi Azumi",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,10 @@
   "website": "https://www.primorestaurant.it/",
   "lat": 40.3526,
   "lng": 18.177374,
-  "placeId": "ChIJQYEsWeMuRBMRFWgAR-W62oY"
+  "placeId": "ChIJQYEsWeMuRBMRFWgAR-W62oY",
+  "michelinId": "500269",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

@@ -23,5 +23,8 @@
   "website": "https://litamarylebone.com/",
   "lat": 51.520828,
   "lng": -0.1526149,
-  "placeId": "ChIJpyhiLAAbdkgRGUaeAOxxRLc"
+  "placeId": "ChIJpyhiLAAbdkgRGUaeAOxxRLc",
+  "michelinId": "1214031",
+  "chef": "Kostas Papathanasiou",
+  "chefSource": "site"
 }

@@ -13,5 +13,10 @@
   "website": "https://www.lejardindefrance.de/baden-baden/aktuell",
   "lat": 48.7595,
   "lng": 8.23999,
-  "placeId": "ChIJr-a_nEMfl0cRxdZ3FK-_eSs"
+  "placeId": "ChIJr-a_nEMfl0cRxdZ3FK-_eSs",
+  "michelinId": "70940",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -21,5 +21,12 @@
   "website": "https://www.peninsula.com/en/london/hotel-fine-dining/brooklands",
   "lat": 51.5017267,
   "lng": -0.1518849,
-  "placeId": "ChIJn6GfuNgFdkgRVm_XNMCoaCM"
+  "placeId": "ChIJn6GfuNgFdkgRVm_XNMCoaCM",
+  "michelinId": "1209475",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Claude Bosi",
+  "chefSource": "michelin"
 }

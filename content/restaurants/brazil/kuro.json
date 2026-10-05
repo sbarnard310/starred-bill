@@ -12,5 +12,11 @@
   "website": "https://kuroeshiro.com.br/",
   "lat": -23.5636428,
   "lng": -46.6641507,
-  "placeId": "ChIJt4WbID5ZzpQROnt6ZE23Bys"
+  "placeId": "ChIJt4WbID5ZzpQROnt6ZE23Bys",
+  "michelinId": "1189316",
+  "diets": [
+    "kosher"
+  ],
+  "chef": "Gerard Barberan",
+  "chefSource": "michelin"
 }

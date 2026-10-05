@@ -15,5 +15,13 @@
   "website": "https://moorhall.com/the-barn",
   "lat": 53.540256,
   "lng": -2.890277,
-  "placeId": "ChIJK6FTyO8Xe0gRmcacpo3BR30"
+  "placeId": "ChIJK6FTyO8Xe0gRmcacpo3BR30",
+  "michelinId": "545480",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Mark Birchall",
+  "chefSource": "site"
 }

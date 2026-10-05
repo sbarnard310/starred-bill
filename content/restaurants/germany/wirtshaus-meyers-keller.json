@@ -13,5 +13,10 @@
   "website": "https://jockl-kaiser.de/",
   "lat": 48.8413149,
   "lng": 10.493869,
-  "placeId": "ChIJ0xE_APoomUcR1otajztXXU4"
+  "placeId": "ChIJ0xE_APoomUcR1otajztXXU4",
+  "michelinId": "76081",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

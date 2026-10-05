@@ -13,5 +13,13 @@
   "website": "https://www.restaurant-verbene.de/",
   "lat": 50.3613819,
   "lng": 7.5967303,
-  "placeId": "ChIJV1WV9rp8vkcR1O2bl_glXvc"
+  "placeId": "ChIJV1WV9rp8vkcR1O2bl_glXvc",
+  "michelinId": "566065",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

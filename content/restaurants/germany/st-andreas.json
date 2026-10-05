@@ -13,5 +13,9 @@
   "website": "https://www.hotel-blauerengel.de",
   "lat": 50.5865356,
   "lng": 12.7014864,
-  "placeId": "ChIJrUWTZBTKoEcRZSz0GJbPlbU"
+  "placeId": "ChIJrUWTZBTKoEcRZSz0GJbPlbU",
+  "michelinId": "79397",
+  "diets": [
+    "vegetarian"
+  ]
 }

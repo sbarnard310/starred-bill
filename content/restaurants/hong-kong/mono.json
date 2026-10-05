@@ -25,5 +25,11 @@
   "website": "https://www.mono.hk/",
   "lat": 22.2805997,
   "lng": 114.1567846,
-  "placeId": "ChIJCx5dprEBBDQR0ulHVcrC7Os"
+  "placeId": "ChIJCx5dprEBBDQR0ulHVcrC7Os",
+  "michelinId": "1191514",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Ricardo Chaneton",
+  "chefSource": "site"
 }

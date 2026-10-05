@@ -15,5 +15,13 @@
   "website": "https://franckputelat.com/",
   "lat": 43.2013363,
   "lng": 2.3603104,
-  "placeId": "ChIJYQv3X0IsrhIRkRimhHDtYKk"
+  "placeId": "ChIJYQv3X0IsrhIRkRimhHDtYKk",
+  "michelinId": "120905",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Franck Putelat",
+  "chefSource": "michelin"
 }

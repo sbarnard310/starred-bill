@@ -13,5 +13,12 @@
   "website": "https://www.widmanns-albleben.de/",
   "lat": 48.7296219,
   "lng": 10.0653263,
-  "placeId": "ChIJF-n8a4sRmUcR7fpe186c-xs"
+  "placeId": "ChIJF-n8a4sRmUcR7fpe186c-xs",
+  "michelinId": "548009",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Andreas Widmann",
+  "chefSource": "michelin"
 }

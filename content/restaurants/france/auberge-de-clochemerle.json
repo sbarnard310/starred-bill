@@ -23,5 +23,13 @@
   "website": "https://www.aubergedeclochemerle.fr/",
   "lat": 46.056618,
   "lng": 4.594029,
-  "placeId": "ChIJTZ-Kmb6A9EcRo4cyMOIAqNQ"
+  "placeId": "ChIJTZ-Kmb6A9EcRo4cyMOIAqNQ",
+  "michelinId": "40970",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Romain Barthe",
+  "chefSource": "site"
 }

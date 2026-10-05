@@ -13,5 +13,13 @@
   "website": "https://www.vespasianorcia.com/",
   "lat": 42.7925868,
   "lng": 13.0922147,
-  "placeId": "ChIJnZWmDeZrLhMRbuMpsOU6Qnw"
+  "placeId": "ChIJnZWmDeZrLhMRbuMpsOU6Qnw",
+  "michelinId": "257204",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Fabio Cappiello",
+  "chefSource": "michelin"
 }

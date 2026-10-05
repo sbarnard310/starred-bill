@@ -14,5 +14,13 @@
   "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
   "website": "https://www.aksornbkk.com",
   "lat": 13.7244904,
-  "lng": 100.516235
+  "lng": 100.516235,
+  "michelinId": "1194928",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "David Thompson",
+  "chefSource": "michelin"
 }

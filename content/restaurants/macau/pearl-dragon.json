@@ -26,5 +26,12 @@
   "website": "https://www.studiocity-macau.com/en/dining/pearl-dragon",
   "lat": 22.141596,
   "lng": 113.561055,
-  "placeId": "ChIJI6k8HRpwATQRh4B9IFt4xg8"
+  "placeId": "ChIJI6k8HRpwATQRh4B9IFt4xg8",
+  "michelinId": "512730",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Otto Wong",
+  "chefSource": "site"
 }

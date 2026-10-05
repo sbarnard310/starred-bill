@@ -20,5 +20,12 @@
   "website": "https://www.les-glycines-dordogne.com",
   "lat": 44.9407834,
   "lng": 1.0074802,
-  "placeId": "ChIJs1OhE0dMqxIRoYh-LaywilE"
+  "placeId": "ChIJs1OhE0dMqxIRoYh-LaywilE",
+  "michelinId": "11131",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Pascal Lombard",
+  "chefSource": "site"
 }

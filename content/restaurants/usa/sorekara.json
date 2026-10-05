@@ -12,5 +12,8 @@
   "website": "https://sorekarafl.com",
   "lat": 28.5689965,
   "lng": -81.3259631,
-  "placeId": "ChIJDe1xketl54gRUziBLAd5JPA"
+  "placeId": "ChIJDe1xketl54gRUziBLAd5JPA",
+  "michelinId": "1206493",
+  "chef": "William Shen",
+  "chefSource": "michelin"
 }

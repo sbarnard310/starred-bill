@@ -13,5 +13,11 @@
   "website": "https://www.robin-pietsch.de/",
   "lat": 51.8352945,
   "lng": 10.7890106,
-  "placeId": "ChIJ_-sdrTINpUcRHGZXobA3qHM"
+  "placeId": "ChIJ_-sdrTINpUcRHGZXobA3qHM",
+  "michelinId": "1183673",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

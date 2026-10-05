@@ -17,5 +17,12 @@
   "website": "https://www.franciebrooklyn.com/",
   "lat": 40.71019,
   "lng": -73.964086,
-  "placeId": "ChIJ35V_tZlbwokRzolpCln-mG4"
+  "placeId": "ChIJ35V_tZlbwokRzolpCln-mG4",
+  "michelinId": "1191604",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christopher Cipollone",
+  "chefSource": "site"
 }

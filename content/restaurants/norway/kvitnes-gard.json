@@ -12,5 +12,11 @@
   "sourceType": "none",
   "lat": 68.576012,
   "lng": 15.2292249,
-  "placeId": "ChIJE1_Lv0433EURcYyrB5WVkqc"
+  "placeId": "ChIJE1_Lv0433EURcYyrB5WVkqc",
+  "michelinId": "1192335",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Halvar Ellingsen",
+  "chefSource": "michelin"
 }

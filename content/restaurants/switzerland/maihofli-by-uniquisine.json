@@ -12,5 +12,14 @@
   "website": "https://www.maihoefli-luzern.ch/",
   "lat": 47.0652678,
   "lng": 8.3115827,
-  "placeId": "ChIJHQMxVEL7j0cRciMUAXKUA6U"
+  "placeId": "ChIJHQMxVEL7j0cRciMUAXKUA6U",
+  "michelinId": "182391",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Robert Steuri",
+  "chefSource": "michelin"
 }

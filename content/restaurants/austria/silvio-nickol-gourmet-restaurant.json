@@ -12,5 +12,11 @@
   "website": "https://www.palais-coburg.com/wine-dine/silvio-nickol",
   "lat": 48.205937,
   "lng": 16.3769455,
-  "placeId": "ChIJZTTxTPUHbUcRKCVviXL6orY"
+  "placeId": "ChIJZTTxTPUHbUcRKCVviXL6orY",
+  "michelinId": "106381",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Silvio Nickol and Florian Daube",
+  "chefSource": "michelin"
 }

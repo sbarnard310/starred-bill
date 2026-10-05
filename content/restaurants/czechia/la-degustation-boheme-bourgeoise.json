@@ -12,5 +12,13 @@
   "website": "https://www.ladegustation.cz/",
   "lat": 50.0910775,
   "lng": 14.4250418,
-  "placeId": "ChIJV126_8GUC0cR13kZj9XQV-M"
+  "placeId": "ChIJV126_8GUC0cR13kZj9XQV-M",
+  "michelinId": "205770",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Oldřich Sahajdák",
+  "chefSource": "site"
 }

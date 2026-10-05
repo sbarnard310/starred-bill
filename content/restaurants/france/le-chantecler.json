@@ -16,5 +16,12 @@
   "website": "https://www.lenegresco.com/restaurants/le-chantecler",
   "lat": 43.6943565,
   "lng": 7.2580138,
-  "placeId": "ChIJdcqjygzQzRIRJvAyqYUV8_I"
+  "placeId": "ChIJdcqjygzQzRIRJvAyqYUV8_I",
+  "michelinId": "5433",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Virginie Basselot",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://pepevieira.com/",
   "lat": 42.4089495,
   "lng": -8.7545413,
-  "placeId": "ChIJoxQRkNZoLw0RV2H7QGzqXew"
+  "placeId": "ChIJoxQRkNZoLw0RV2H7QGzqXew",
+  "michelinId": "231253",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Xosé Torres Cannas",
+  "chefSource": "michelin"
 }

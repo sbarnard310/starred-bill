@@ -21,5 +21,13 @@
   "website": "https://www.pied-a-terre.co.uk/",
   "lat": 51.5191109,
   "lng": -0.1352265,
-  "placeId": "ChIJh8IKCiwbdkgRiefHU7gpZfU"
+  "placeId": "ChIJh8IKCiwbdkgRiefHU7gpZfU",
+  "michelinId": "69570",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "David Moore",
+  "chefSource": "michelin"
 }

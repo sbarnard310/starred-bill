@@ -25,5 +25,13 @@
   "website": "https://hortorestaurant.com/",
   "lat": 45.46619,
   "lng": 9.187569,
-  "placeId": "ChIJAZ4TrxbHhkcRUistusZt1tM"
+  "placeId": "ChIJAZ4TrxbHhkcRUistusZt1tM",
+  "michelinId": "1204821",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Alessandro Pinton",
+  "chefSource": "michelin"
 }

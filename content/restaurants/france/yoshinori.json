@@ -25,5 +25,12 @@
   "website": "https://www.yoshinori-paris.com/",
   "lat": 48.8528439,
   "lng": 2.3377712,
-  "placeId": "ChIJtUlMOtlx5kcRJS7U0OQIPYc"
+  "placeId": "ChIJtUlMOtlx5kcRJS7U0OQIPYc",
+  "michelinId": "543108",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Yoshinori Morié",
+  "chefSource": "michelin"
 }

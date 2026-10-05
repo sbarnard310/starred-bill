@@ -17,5 +17,11 @@
   "website": "https://www.lazybearsf.com/",
   "lat": 37.76024,
   "lng": -122.419672,
-  "placeId": "ChIJk35bizx-j4AREil6UPp7Jn4"
+  "placeId": "ChIJk35bizx-j4AREil6UPp7Jn4",
+  "michelinId": "468662",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "David Barzelay",
+  "chefSource": "site"
 }

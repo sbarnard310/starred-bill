@@ -15,5 +15,12 @@
   "website": "https://www.restaurantefeitoria.com/",
   "lat": 38.6936647,
   "lng": -9.2129467,
-  "placeId": "ChIJh32rQULLHg0RkgF8wCakjIk"
+  "placeId": "ChIJh32rQULLHg0RkgF8wCakjIk",
+  "michelinId": "257754",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "André Cruz",
+  "chefSource": "michelin"
 }

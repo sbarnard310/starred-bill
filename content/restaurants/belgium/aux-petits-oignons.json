@@ -13,5 +13,12 @@
   "website": "https://www.auxpetitsoignons.be/",
   "lat": 50.7419555,
   "lng": 4.8801357,
-  "placeId": "ChIJ8SBAMuNxwUcRq_cazJGMljI"
+  "placeId": "ChIJ8SBAMuNxwUcRq_cazJGMljI",
+  "michelinId": "254100",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Stéphane Lefebvre",
+  "chefSource": "michelin"
 }

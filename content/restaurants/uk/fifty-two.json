@@ -25,5 +25,11 @@
   "website": "https://fiftytworuddingpark.co.uk/",
   "lat": 53.972673,
   "lng": -1.495162,
-  "placeId": "ChIJOcTYYwBReUgRFhN_XEvmVDA"
+  "placeId": "ChIJOcTYYwBReUgRFhN_XEvmVDA",
+  "michelinId": "1215726",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

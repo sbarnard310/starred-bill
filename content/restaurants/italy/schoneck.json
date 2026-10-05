@@ -13,5 +13,11 @@
   "website": "https://www.schoeneck.it/it/home",
   "lat": 46.8186079,
   "lng": 11.8482868,
-  "placeId": "ChIJXy2rmIf1d0cRgq6_dGHc9R8"
+  "placeId": "ChIJXy2rmIf1d0cRgq6_dGHc9R8",
+  "michelinId": "133536",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -11,5 +11,10 @@
   "sourceType": "none",
   "lat": 34.998419,
   "lng": 135.770075,
-  "placeId": "ChIJiQNFqcAIAWARo7tPQYiew9A"
+  "placeId": "ChIJiQNFqcAIAWARo7tPQYiew9A",
+  "michelinId": "1210275",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

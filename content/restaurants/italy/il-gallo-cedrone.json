@@ -14,5 +14,10 @@
   "website": "https://www.ilgallocedrone.it/it",
   "lat": 46.2351343,
   "lng": 10.8242148,
-  "placeId": "ChIJBbjSIp5egkcRwxqeVigWORM"
+  "placeId": "ChIJBbjSIp5egkcRwxqeVigWORM",
+  "michelinId": "254876",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

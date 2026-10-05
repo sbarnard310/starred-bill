@@ -24,5 +24,11 @@
   "website": "https://www.maison-benoit-vidal.com",
   "lat": 45.9226978,
   "lng": 6.171891,
-  "placeId": "ChIJG7LpK0QJiUcR0NvzHLTzf80"
+  "placeId": "ChIJG7LpK0QJiUcR0NvzHLTzf80",
+  "michelinId": "1211770",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Benoît Vidal",
+  "chefSource": "michelin"
 }

@@ -26,5 +26,12 @@
   "website": "https://www.epure.hk/",
   "lat": 22.2960349,
   "lng": 114.1683295,
-  "placeId": "ChIJZRSgrvIABDQRCzAAgtD9CMg"
+  "placeId": "ChIJZRSgrvIABDQRCzAAgtD9CMg",
+  "michelinId": "446709",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Aven Lau",
+  "chefSource": "site"
 }

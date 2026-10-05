@@ -28,5 +28,11 @@
   "website": "https://www.ameliarestaurant.com/",
   "lat": 43.321763,
   "lng": -1.980029,
-  "placeId": "ChIJhwSoqVelUQ0RY-IbWu6ubUg"
+  "placeId": "ChIJhwSoqVelUQ0RY-IbWu6ubUg",
+  "michelinId": "1191398",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Paulo Airaudo",
+  "chefSource": "michelin"
 }

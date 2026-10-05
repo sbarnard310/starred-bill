@@ -25,5 +25,14 @@
   "website": "https://tussockhill.co.nz/tussock-hill-cellar-door/",
   "lat": -43.580472,
   "lng": 172.655608,
-  "placeId": "ChIJcbMvsGEnMm0R3mgl5KUKLX4"
+  "placeId": "ChIJcbMvsGEnMm0R3mgl5KUKLX4",
+  "michelinId": "1241078",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Adam Harrison",
+  "chefSource": "site"
 }

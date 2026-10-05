@@ -11,5 +11,8 @@
   "website": "https://www.hreuropa.com/",
   "lat": 42.8161985,
   "lng": -1.6418103,
-  "placeId": "ChIJvfbazf6SUA0R7pqn1nTfpaM"
+  "placeId": "ChIJvfbazf6SUA0R7pqn1nTfpaM",
+  "michelinId": "222149",
+  "chef": "Pilar Idoate",
+  "chefSource": "michelin"
 }

@@ -22,5 +22,11 @@
   "website": "https://www.fourseasons.com/fr/paris/dining/restaurants/le_cinq/",
   "lat": 48.8687604,
   "lng": 2.3008612,
-  "placeId": "ChIJqTQzIehv5kcRaF3hD1SzX5A"
+  "placeId": "ChIJqTQzIehv5kcRaF3hD1SzX5A",
+  "michelinId": "6102",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Christian Le Squer",
+  "chefSource": "michelin"
 }

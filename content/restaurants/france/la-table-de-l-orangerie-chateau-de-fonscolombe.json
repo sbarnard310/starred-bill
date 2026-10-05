@@ -15,5 +15,12 @@
   "website": "https://2lcollection.com/fr/fonscolombe-la-table-de-lorangerie.html",
   "lat": 43.6395369,
   "lng": 5.4683418,
-  "placeId": "ChIJSZYgvCKKyRIRJZaIP64AcOk"
+  "placeId": "ChIJSZYgvCKKyRIRJZaIP64AcOk",
+  "michelinId": "1197279",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Marc Fontanne",
+  "chefSource": "michelin"
 }

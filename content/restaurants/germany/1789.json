@@ -11,5 +11,12 @@
   "website": "https://www.traube-tonbach.de/kulinarik/1789/",
   "lat": 48.5369525,
   "lng": 8.3582841,
-  "placeId": "EjtUb25iYWNoc3RyYcOfZSAyMzcvMTc4OSwgNzIyNzAgQmFpZXJzYnJvbm4tVG9uYmFjaCwgR2VybWFueSIgGh4KFgoUChIJI5VpUf0wl0cRxn1corgShyASBDE3ODk"
+  "placeId": "EjtUb25iYWNoc3RyYcOfZSAyMzcvMTc4OSwgNzIyNzAgQmFpZXJzYnJvbm4tVG9uYmFjaCwgR2VybWFueSIgGh4KFgoUChIJI5VpUf0wl0cRxn1corgShyASBDE3ODk",
+  "michelinId": "1191834",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Florian Stolte",
+  "chefSource": "michelin"
 }

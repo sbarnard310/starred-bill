@@ -26,5 +26,9 @@
   "website": "https://www.racineshk.com/",
   "lat": 22.2849409,
   "lng": 114.148281,
-  "placeId": "ChIJTRCPFfkBBDQRrHB6BhKI8u8"
+  "placeId": "ChIJTRCPFfkBBDQRrHB6BhKI8u8",
+  "michelinId": "1210713",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -21,5 +21,15 @@
   "website": "https://www.pineappleandpearls.com/",
   "lat": 38.880707,
   "lng": -76.99514,
-  "placeId": "ChIJYXzP0cy5t4kRCAgWebW88x0"
+  "placeId": "ChIJYXzP0cy5t4kRCAgWebW88x0",
+  "michelinId": "499974",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Aaron Silverman",
+  "chefSource": "michelin"
 }

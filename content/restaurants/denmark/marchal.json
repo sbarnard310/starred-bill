@@ -29,5 +29,13 @@
   "website": "https://www.dangleterre.com/da/dining/marchal/",
   "lat": 55.68064,
   "lng": 12.584676,
-  "placeId": "ChIJtRm9KRhTUkYRhIT68DTO0r8"
+  "placeId": "ChIJtRm9KRhTUkYRhIT68DTO0r8",
+  "michelinId": "407471",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Alexander Baert",
+  "chefSource": "site"
 }

@@ -15,5 +15,13 @@
   "website": "https://www.chateau-de-courcelles.fr",
   "lat": 49.3378585,
   "lng": 3.5696394,
-  "placeId": "ChIJSUjVJQlV6EcRpg5YLVQzdDM"
+  "placeId": "ChIJSUjVJQlV6EcRpg5YLVQzdDM",
+  "michelinId": "10931",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Massimiliano Sena",
+  "chefSource": "michelin"
 }

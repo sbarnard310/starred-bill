@@ -13,5 +13,8 @@
   "website": "https://www.lagrangedhamois.be/",
   "lat": 50.3343431,
   "lng": 5.1037114,
-  "placeId": "ChIJD7wEc-mwwUcRLMPp4tFlAhI"
+  "placeId": "ChIJD7wEc-mwwUcRLMPp4tFlAhI",
+  "michelinId": "1197473",
+  "chef": "Grégory Gillain",
+  "chefSource": "michelin"
 }

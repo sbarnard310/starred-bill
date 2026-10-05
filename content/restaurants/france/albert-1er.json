@@ -20,5 +20,11 @@
   "website": "https://www.hameaualbert.fr",
   "lat": 45.9245641,
   "lng": 6.8748108,
-  "placeId": "ChIJifI8j6JPiUcRENlQeJGWv6Q"
+  "placeId": "ChIJifI8j6JPiUcRENlQeJGWv6Q",
+  "michelinId": "10611",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Damien Leveau",
+  "chefSource": "michelin"
 }

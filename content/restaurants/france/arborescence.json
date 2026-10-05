@@ -23,5 +23,8 @@
   "website": "https://www.r-arborescence.com",
   "lat": 50.676915,
   "lng": 3.141823,
-  "placeId": "ChIJU4al_I4pw0cReL3dOWGGlSk"
+  "placeId": "ChIJU4al_I4pw0cReL3dOWGGlSk",
+  "michelinId": "1204361",
+  "chef": "Félix Robert",
+  "chefSource": "michelin"
 }

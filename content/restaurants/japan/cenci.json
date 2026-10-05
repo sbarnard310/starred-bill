@@ -12,5 +12,11 @@
   "website": "https://cenci-kyoto.com/",
   "lat": 35.017056,
   "lng": 135.78024,
-  "placeId": "ChIJw2vMBfAIAWAR86pLyFaUBas"
+  "placeId": "ChIJw2vMBfAIAWAR86pLyFaUBas",
+  "michelinId": "1195587",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

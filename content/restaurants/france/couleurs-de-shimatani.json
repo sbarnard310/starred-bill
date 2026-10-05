@@ -23,5 +23,8 @@
   "website": "https://www.shimatani.fr/",
   "lat": 43.1751771,
   "lng": 5.6101244,
-  "placeId": "ChIJu_qJP7KvyRIR_bbJUxU6wpg"
+  "placeId": "ChIJu_qJP7KvyRIR_bbJUxU6wpg",
+  "michelinId": "1204940",
+  "chef": "Yuichiro Shimatani",
+  "chefSource": "michelin"
 }

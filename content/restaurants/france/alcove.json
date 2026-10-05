@@ -19,5 +19,11 @@
   "website": "https://www.beauvallon.com/briqueterie/restaurants-bar",
   "lat": 49.008458,
   "lng": 3.9076402,
-  "placeId": "ChIJjztaVYoV6UcR6l1nmoDkotg"
+  "placeId": "ChIJjztaVYoV6UcR6l1nmoDkotg",
+  "michelinId": "11097",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nawal Rezagui",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,8 @@
   "website": "https://www.shingomiami.com/",
   "lat": 25.752999,
   "lng": -80.2568,
-  "placeId": "ChIJu5d4Dui32YgRs6qW_4aQOWM"
+  "placeId": "ChIJu5d4Dui32YgRs6qW_4aQOWM",
+  "michelinId": "1204469",
+  "chef": "Shingo Akikuni",
+  "chefSource": "michelin"
 }

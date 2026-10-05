@@ -25,5 +25,12 @@
   "website": "https://www.fondaxesc.com/",
   "lat": 42.248259,
   "lng": 2.091522,
-  "placeId": "ChIJl8wM3w1rpRIR2Psock_ZaqI"
+  "placeId": "ChIJl8wM3w1rpRIR2Psock_ZaqI",
+  "michelinId": "220318",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Francesc Rovira",
+  "chefSource": "michelin"
 }

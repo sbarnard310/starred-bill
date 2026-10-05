@@ -26,5 +26,11 @@
   "website": "https://www.restaurantemina.es/",
   "lat": 43.261271,
   "lng": -2.938556,
-  "placeId": "ChIJff6iXMlPTg0RLNkfMmjmaZA"
+  "placeId": "ChIJff6iXMlPTg0RLNkfMmjmaZA",
+  "michelinId": "226975",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Álvaro Garrido",
+  "chefSource": "michelin"
 }

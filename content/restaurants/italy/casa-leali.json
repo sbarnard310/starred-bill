@@ -23,5 +23,10 @@
   "website": "https://www.casalealiristorante.it/",
   "lat": 45.573876,
   "lng": 10.507994,
-  "placeId": "ChIJv9hKINiRgUcRU1EgqHWL-rk"
+  "placeId": "ChIJv9hKINiRgUcRU1EgqHWL-rk",
+  "michelinId": "1102813",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

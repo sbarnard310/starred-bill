@@ -15,5 +15,11 @@
   "website": "https://www.zauberlehrling.de/",
   "lat": 48.7740472,
   "lng": 9.1843065,
-  "placeId": "ChIJsycMBLXEmUcRk3baJ3n-vw0"
+  "placeId": "ChIJsycMBLXEmUcRk3baJ3n-vw0",
+  "michelinId": "84426",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Fabian Heldmann",
+  "chefSource": "michelin"
 }

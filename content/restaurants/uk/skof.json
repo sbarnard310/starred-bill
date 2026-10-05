@@ -24,5 +24,12 @@
   "website": "https://www.skofmanchester.co.uk/",
   "lat": 53.486389,
   "lng": -2.240131,
-  "placeId": "ChIJIzz-GgCxe0gRy4aKFrcFLxg"
+  "placeId": "ChIJIzz-GgCxe0gRy4aKFrcFLxg",
+  "michelinId": "1211678",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Tom Barnes",
+  "chefSource": "michelin"
 }

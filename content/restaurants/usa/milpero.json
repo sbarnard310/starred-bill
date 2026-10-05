@@ -12,5 +12,8 @@
   "website": "https://milperodenver.com/",
   "lat": 39.7723508,
   "lng": -104.9818105,
-  "placeId": "ChIJt4KCNOl5bIcRseIyRUaU8Fo"
+  "placeId": "ChIJt4KCNOl5bIcRseIyRUaU8Fo",
+  "michelinId": "1251385",
+  "chef": "Johnny Curiel",
+  "chefSource": "michelin"
 }

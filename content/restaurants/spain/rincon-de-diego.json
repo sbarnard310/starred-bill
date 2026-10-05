@@ -27,5 +27,13 @@
   "website": "https://www.rincondediego.com/",
   "lat": 41.066734,
   "lng": 1.063058,
-  "placeId": "ChIJzTHb1i1boRIRzaIKuEjT7FA"
+  "placeId": "ChIJzTHb1i1boRIRzaIKuEjT7FA",
+  "michelinId": "218991",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Diego Campos and Rubén Campos",
+  "chefSource": "michelin"
 }

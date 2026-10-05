@@ -17,5 +17,12 @@
   "website": "https://www.nikusteakhouse.com/",
   "lat": 37.76975,
   "lng": -122.403621,
-  "placeId": "ChIJ9fZ1hrV_j4AR-j0CLhwaYc0"
+  "placeId": "ChIJ9fZ1hrV_j4AR-j0CLhwaYc0",
+  "michelinId": "1184688",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Dustin Falcon",
+  "chefSource": "michelin"
 }

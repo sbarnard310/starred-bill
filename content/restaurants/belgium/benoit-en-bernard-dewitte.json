@@ -15,5 +15,9 @@
   "website": "https://www.restaurantdewitte.be",
   "lat": 50.9133244,
   "lng": 3.606346,
-  "placeId": "ChIJ52wMS2ISw0cRt2axufKrsfQ"
+  "placeId": "ChIJ52wMS2ISw0cRt2axufKrsfQ",
+  "michelinId": "210598",
+  "diets": [
+    "vegetarian"
+  ]
 }

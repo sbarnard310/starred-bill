@@ -13,5 +13,10 @@
   "website": "https://obauer.com/",
   "lat": 47.4755112,
   "lng": 13.1902449,
-  "placeId": "ChIJB1nokUrbdkcRA085yJWlYFM"
+  "placeId": "ChIJB1nokUrbdkcRA085yJWlYFM",
+  "michelinId": "106306",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

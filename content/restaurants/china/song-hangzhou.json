@@ -9,5 +9,9 @@
   "sourceType": "none",
   "website": "https://www.fourseasons.com/hangzhoucentre/dining/restaurants/song",
   "lat": 30.278739,
-  "lng": 120.172647
+  "lng": 120.172647,
+  "michelinId": "1217000",
+  "diets": [
+    "vegetarian"
+  ]
 }

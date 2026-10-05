@@ -15,5 +15,11 @@
   "website": "https://www.haebel.hamburg/",
   "lat": 53.5532432,
   "lng": 9.9574392,
-  "placeId": "ChIJR7BrCm-PsUcRazHpLieQ2lA"
+  "placeId": "ChIJR7BrCm-PsUcRazHpLieQ2lA",
+  "michelinId": "565887",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Fabio Haebel",
+  "chefSource": "michelin"
 }

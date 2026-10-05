@@ -13,5 +13,11 @@
   "website": "https://www.hohe-duene.de/hotel-ostsee/restaurant/gourmetrestaurant-der-butt.html",
   "lat": 54.1795174,
   "lng": 12.0992982,
-  "placeId": "ChIJj2BmSZz4rEcRp2GaUiQqu08"
+  "placeId": "ChIJj2BmSZz4rEcRp2GaUiQqu08",
+  "michelinId": "207713",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "André Münch",
+  "chefSource": "site"
 }

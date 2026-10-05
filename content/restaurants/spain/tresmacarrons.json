@@ -27,5 +27,11 @@
   "website": "https://www.tresmacarrons.com/",
   "lat": 41.483134,
   "lng": 2.332616,
-  "placeId": "ChIJV7dpq9ywpBIRInmPsN6Rgf8"
+  "placeId": "ChIJV7dpq9ywpBIRInmPsN6Rgf8",
+  "michelinId": "326292",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Miquel Aldana",
+  "chefSource": "michelin"
 }

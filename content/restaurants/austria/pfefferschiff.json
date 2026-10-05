@@ -14,5 +14,10 @@
   "website": "https://www.vigne.at/",
   "lat": 47.8379197,
   "lng": 13.0790652,
-  "placeId": "ChIJZ1MX4FqadkcR7Y27kZpg16U"
+  "placeId": "ChIJZ1MX4FqadkcR7Y27kZpg16U",
+  "michelinId": "104742",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

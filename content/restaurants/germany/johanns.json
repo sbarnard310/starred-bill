@@ -13,5 +13,12 @@
   "website": "https://www.restaurant-johanns.de/",
   "lat": 48.729862,
   "lng": 13.6007906,
-  "placeId": "ChIJr6nSkYLtdEcR1xQnMCu6NYo"
+  "placeId": "ChIJr6nSkYLtdEcR1xQnMCu6NYo",
+  "michelinId": "426123",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Michael Simon Reis",
+  "chefSource": "michelin"
 }

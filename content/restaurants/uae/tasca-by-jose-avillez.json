@@ -12,5 +12,12 @@
   "website": "https://www.mandarinoriental.com/en/dubai/jumeira-beach/dine/tasca-by-jose-avillez",
   "lat": 25.2168806,
   "lng": 55.2510082,
-  "placeId": "ChIJbRlhGJRDXz4R49-Ekyvn8mo"
+  "placeId": "ChIJbRlhGJRDXz4R49-Ekyvn8mo",
+  "michelinId": "1195645",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

@@ -70,8 +70,13 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 | `status`, `formerStars`, `statusNote`, `statusNoteZh` | only for restaurants no longer starred: `lost`, `closed` or `changed` |
 | `notice`, `noticeZh` | a current notice, e.g. temporarily closed |
 | `website`, `lat`, `lng`, `placeId` | website, map position and Google place id (for the photo) |
+| `chef`, `chefSource` | head chef, and where the name came from: `michelin`, `site` (the restaurant's website) or `manual` (never overwritten) |
+| `diets` | dietary options from the MICHELIN Guide: any of `vegetarian-only`, `vegetarian-menu`, `vegetarian`, `vegan`, `gluten-free`, `halal`, `kosher` |
+| `michelinId` | the restaurant's record id in the MICHELIN Guide, so refreshes match it exactly |
 
 Leave out any field you don't have.
+
+Chefs and dietary options are refreshed from the MICHELIN Guide with `python3 scripts/michelin_details.py fetch` then `apply` (see the script for `review` and `chefs FILE`). `scripts/chef_from_sites.py` gathers chef mentions from restaurants' own websites for checking by hand.
 
 ## Guides
 

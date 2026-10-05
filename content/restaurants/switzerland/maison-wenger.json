@@ -20,5 +20,13 @@
   "website": "https://www.maisonwenger.ch/",
   "lat": 47.2240004,
   "lng": 6.9571543,
-  "placeId": "ChIJfwAEb6n_jUcR6yHJCWK7tmo"
+  "placeId": "ChIJfwAEb6n_jUcR6yHJCWK7tmo",
+  "michelinId": "179797",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jérémy Desbraux",
+  "chefSource": "michelin"
 }

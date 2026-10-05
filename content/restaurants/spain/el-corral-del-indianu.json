@@ -13,5 +13,11 @@
   "website": "https://www.elcorraldelindianu.com",
   "lat": 43.3902522,
   "lng": -5.1842735,
-  "placeId": "ChIJY0Fh_PUYNg0R62nRJ0raHdU"
+  "placeId": "ChIJY0Fh_PUYNg0R62nRJ0raHdU",
+  "michelinId": "217700",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "José Antonio Campoviejo",
+  "chefSource": "michelin"
 }

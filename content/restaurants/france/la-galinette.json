@@ -23,5 +23,8 @@
   "website": "https://www.restaurant-galinette.com",
   "lat": 42.7024784,
   "lng": 2.8932142,
-  "placeId": "ChIJGZQzLlJusBIRPkLZteDFoMA"
+  "placeId": "ChIJGZQzLlJusBIRPkLZteDFoMA",
+  "michelinId": "6909",
+  "chef": "Christophe Comes",
+  "chefSource": "michelin"
 }

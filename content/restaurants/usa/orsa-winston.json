@@ -18,5 +18,14 @@
   "website": "https://www.orsaandwinston.com/",
   "lat": 34.04847,
   "lng": -118.247949,
-  "placeId": "ChIJh9W-NkrGwoARmn2KQbXkdhg"
+  "placeId": "ChIJh9W-NkrGwoARmn2KQbXkdhg",
+  "michelinId": "559635",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Josef Centeno",
+  "chefSource": "michelin"
 }

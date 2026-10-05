@@ -20,5 +20,10 @@
   "website": "https://lumiererestaurant.co.uk/",
   "lat": 51.900393,
   "lng": -2.077196,
-  "placeId": "ChIJ2_aI0ZkbcUgROeIGjlBgaEo"
+  "placeId": "ChIJ2_aI0ZkbcUgROeIGjlBgaEo",
+  "michelinId": "186990",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

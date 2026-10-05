@@ -25,5 +25,8 @@
   "website": "https://www.automne-akishige.com/",
   "lat": 48.8547615,
   "lng": 2.3822285,
-  "placeId": "ChIJdznawgly5kcRxXTXI8Zkpvk"
+  "placeId": "ChIJdznawgly5kcRxXTXI8Zkpvk",
+  "michelinId": "1000112",
+  "chef": "Nobuyuki Akishige",
+  "chefSource": "michelin"
 }

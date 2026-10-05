@@ -29,5 +29,11 @@
   "website": "https://ristoranteolio.it/",
   "lat": 45.600485,
   "lng": 9.028276,
-  "placeId": "ChIJJ-bNtvuThkcRvuF9rNWMkQA"
+  "placeId": "ChIJJ-bNtvuThkcRvuF9rNWMkQA",
+  "michelinId": "1208040",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

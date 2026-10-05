@@ -21,5 +21,11 @@
   "website": "https://kika.nz/",
   "lat": -44.695391,
   "lng": 169.136435,
-  "placeId": "ChIJc5tNvEVP1akRRxaL5vyMLWY"
+  "placeId": "ChIJc5tNvEVP1akRRxaL5vyMLWY",
+  "michelinId": "1247537",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

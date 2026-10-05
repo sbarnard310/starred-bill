@@ -23,5 +23,8 @@
   "lunchSource": "https://polle.com/place/2OKHm3/",
   "lat": 37.52535,
   "lng": 127.04573,
-  "placeId": "ChIJ5WOsGoyjfDUR9wNJyWemF5A"
+  "placeId": "ChIJ5WOsGoyjfDUR9wNJyWemF5A",
+  "michelinId": "1195338",
+  "chef": "Matsumoto Mizuho",
+  "chefSource": "michelin"
 }

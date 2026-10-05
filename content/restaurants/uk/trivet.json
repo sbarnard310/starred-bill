@@ -20,5 +20,11 @@
   "website": "https://trivetrestaurant.co.uk/",
   "lat": 51.502192,
   "lng": -0.084739,
-  "placeId": "ChIJhZkSsNQDdkgRwGJZ7Z2rMjg"
+  "placeId": "ChIJhZkSsNQDdkgRwGJZ7Z2rMjg",
+  "michelinId": "1186430",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jonny Lake",
+  "chefSource": "site"
 }

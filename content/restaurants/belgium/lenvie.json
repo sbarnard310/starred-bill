@@ -13,5 +13,11 @@
   "website": "https://www.lenvie-restaurant.be/",
   "lat": 50.7499139,
   "lng": 3.3705692,
-  "placeId": "ChIJKyxCKFoiw0cReymePe9p9Lk"
+  "placeId": "ChIJKyxCKFoiw0cReymePe9p9Lk",
+  "michelinId": "485040",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "David Grosdent",
+  "chefSource": "michelin"
 }

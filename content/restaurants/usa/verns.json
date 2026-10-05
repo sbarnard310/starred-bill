@@ -12,5 +12,13 @@
   "website": "https://www.vernschs.com/",
   "lat": 32.7923928,
   "lng": -79.9457326,
-  "placeId": "ChIJcQ0ZQn57_ogRB6B_A4LHb0A"
+  "placeId": "ChIJcQ0ZQn57_ogRB6B_A4LHb0A",
+  "michelinId": "1216596",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Daniel Heinze",
+  "chefSource": "michelin"
 }

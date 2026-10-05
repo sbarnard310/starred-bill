@@ -13,5 +13,14 @@
   "website": "https://borgosantandrea.it/it/dining/ristorante-alici/",
   "lat": 40.6188758,
   "lng": 14.5766031,
-  "placeId": "ChIJTWWjar-VOxMRzRDEH_NRrrs"
+  "placeId": "ChIJTWWjar-VOxMRzRDEH_NRrrs",
+  "michelinId": "1192784",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Crescenzo Scotti",
+  "chefSource": "michelin"
 }

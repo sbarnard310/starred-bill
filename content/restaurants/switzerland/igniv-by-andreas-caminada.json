@@ -10,5 +10,12 @@
   "sourceType": "none",
   "website": "https://www.igniv.com",
   "lat": 46.6388224,
-  "lng": 8.5900427
+  "lng": 8.5900427,
+  "michelinId": "1207200",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Valentin Sträuli",
+  "chefSource": "michelin"
 }

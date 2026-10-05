@@ -13,5 +13,8 @@
   "website": "https://www.esplanade-sb.de/",
   "lat": 49.2349097,
   "lng": 6.9996028,
-  "placeId": "ChIJnZKDYae2lUcRrzqk8mu6gwY"
+  "placeId": "ChIJnZKDYae2lUcRrzqk8mu6gwY",
+  "michelinId": "539722",
+  "chef": "Silio Del Fabro",
+  "chefSource": "michelin"
 }

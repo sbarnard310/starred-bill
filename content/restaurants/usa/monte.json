@@ -13,5 +13,13 @@
   "website": "https://monteslc.com/",
   "lat": 40.7224078,
   "lng": -111.8932934,
-  "placeId": "ChIJRYKVoI-LUocRq6kLwQ2NskI"
+  "placeId": "ChIJRYKVoI-LUocRq6kLwQ2NskI",
+  "michelinId": "1247517",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Martín Babio",
+  "chefSource": "michelin"
 }

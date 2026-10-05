@@ -15,5 +15,11 @@
   "website": "https://www.lejardinier-houston.com/",
   "lat": 29.7265256,
   "lng": -95.389877,
-  "placeId": "ChIJIUTbMUu_QIYRvNV3_RXqZDw"
+  "placeId": "ChIJIUTbMUu_QIYRvNV3_RXqZDw",
+  "michelinId": "1196507",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alain Verzeroli",
+  "chefSource": "michelin"
 }

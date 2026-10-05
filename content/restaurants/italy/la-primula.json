@@ -13,5 +13,8 @@
   "website": "https://www.ristorantelaprimula.it/",
   "lat": 46.0348797,
   "lng": 12.6814506,
-  "placeId": "ChIJAYl2r917eUcR1mhggnwYhVA"
+  "placeId": "ChIJAYl2r917eUcR1mhggnwYhVA",
+  "michelinId": "151300",
+  "chef": "Andrea Canton",
+  "chefSource": "site"
 }

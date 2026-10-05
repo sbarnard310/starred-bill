@@ -13,5 +13,11 @@
   "website": "https://www.rougenoir.at",
   "lat": 46.7164326,
   "lng": 13.3114464,
-  "placeId": "ChIJA0ujdX6pcEcRCC0Mj510OKk"
+  "placeId": "ChIJA0ujdX6pcEcRCC0Mj510OKk",
+  "michelinId": "1214578",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Stefan Glantschnig",
+  "chefSource": "michelin"
 }

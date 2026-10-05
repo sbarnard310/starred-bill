@@ -19,5 +19,12 @@
   "website": "https://www.raffles.com/doha/dining/alba/",
   "lat": 25.3901706,
   "lng": 51.5318587,
-  "placeId": "ChIJ0aOzocLDRT4RCBzFzR7GY6o"
+  "placeId": "ChIJ0aOzocLDRT4RCBzFzR7GY6o",
+  "michelinId": "1213877",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ],
+  "chef": "Cristhian Serraino",
+  "chefSource": "michelin"
 }

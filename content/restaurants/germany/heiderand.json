@@ -13,5 +13,12 @@
   "website": "https://www.heiderand.restaurant",
   "lat": 51.0623119,
   "lng": 13.855478,
-  "placeId": "ChIJiSPhpMjJCUcRA_KR5DQLaWs"
+  "placeId": "ChIJiSPhpMjJCUcRA_KR5DQLaWs",
+  "michelinId": "1190908",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Martin Walther",
+  "chefSource": "michelin"
 }

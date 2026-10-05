@@ -12,5 +12,11 @@
   "website": "https://heimatjuwel.de/",
   "lat": 53.5801378,
   "lng": 9.9476808,
-  "placeId": "ChIJpQWjEP-FsUcRh2m6rzxrJiE"
+  "placeId": "ChIJpQWjEP-FsUcRh2m6rzxrJiE",
+  "michelinId": "502073",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marcel Görke",
+  "chefSource": "michelin"
 }

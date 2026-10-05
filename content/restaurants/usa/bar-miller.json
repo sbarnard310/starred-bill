@@ -22,5 +22,10 @@
   "website": "https://www.barmiller.com/",
   "lat": 40.724018,
   "lng": -73.980636,
-  "placeId": "ChIJoXWHAlJZwokRVBsijjIYQoQ"
+  "placeId": "ChIJoXWHAlJZwokRVBsijjIYQoQ",
+  "michelinId": "1210902",
+  "diets": [
+    "gluten-free",
+    "kosher"
+  ]
 }

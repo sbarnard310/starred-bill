@@ -28,5 +28,12 @@
   "website": "https://anglebarcelona.com/",
   "lat": 41.388267,
   "lng": 2.159702,
-  "placeId": "ChIJecv7K4yipBIRs8mIO7ud1vY"
+  "placeId": "ChIJecv7K4yipBIRs8mIO7ud1vY",
+  "michelinId": "118398",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jordi Cruz",
+  "chefSource": "michelin"
 }

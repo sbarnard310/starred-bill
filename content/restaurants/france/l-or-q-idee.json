@@ -23,5 +23,8 @@
   "website": "https://www.lorqidee.fr",
   "lat": 49.0501575,
   "lng": 2.0976083,
-  "placeId": "ChIJhS9KVm715kcRHBH9ghmjRjw"
+  "placeId": "ChIJhS9KVm715kcRHBH9ghmjRjw",
+  "michelinId": "539866",
+  "chef": "Naoëlle d'Hainaut",
+  "chefSource": "michelin"
 }

@@ -16,5 +16,13 @@
   "website": "https://www.conchasdepiedra.com/",
   "lat": 31.9797539,
   "lng": -116.6530853,
-  "placeId": "ChIJMTO_H83t2IAR-csqUh7MEKM"
+  "placeId": "ChIJMTO_H83t2IAR-csqUh7MEKM",
+  "michelinId": "1208369",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Drew Deckman",
+  "chefSource": "michelin"
 }

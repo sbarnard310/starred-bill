@@ -17,5 +17,8 @@
   "website": "https://www.hotel-liondor-romorantin.fr",
   "lat": 47.3602993,
   "lng": 1.7438252,
-  "placeId": "ChIJe9ciUvwz-0cR0TnOms3ZUkY"
+  "placeId": "ChIJe9ciUvwz-0cR0TnOms3ZUkY",
+  "michelinId": "12658",
+  "chef": "Loïc Le Bail",
+  "chefSource": "site"
 }

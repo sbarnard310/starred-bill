@@ -13,5 +13,8 @@
   "website": "https://www.ketschauer-hof.com/kulinarik/restaurant-l-a-jordan/",
   "lat": 49.4076835,
   "lng": 8.1850992,
-  "placeId": "ChIJU35p4NA3lkcRHbeK_4Haaz0"
+  "placeId": "ChIJU35p4NA3lkcRHbeK_4Haaz0",
+  "michelinId": "166357",
+  "chef": "Daniel Schimkowitsch",
+  "chefSource": "michelin"
 }

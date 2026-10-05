@@ -13,5 +13,13 @@
   "website": "https://www.camatilde.it",
   "lat": 44.652336,
   "lng": 10.52569,
-  "placeId": "ChIJMSxMpScFgEcR_2jlpDnfIko"
+  "placeId": "ChIJMSxMpScFgEcR_2jlpDnfIko",
+  "michelinId": "173881",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Andrea Incerti Vezzani",
+  "chefSource": "michelin"
 }

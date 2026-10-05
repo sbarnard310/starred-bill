@@ -15,5 +15,11 @@
   "website": "https://www.restaurant-opus-v.de/",
   "lat": 49.4857999,
   "lng": 8.4697743,
-  "placeId": "ChIJz6NQ1SPMl0cRoGDuwitU3cE"
+  "placeId": "ChIJz6NQ1SPMl0cRoGDuwitU3cE",
+  "michelinId": "421720",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Dominik Paul",
+  "chefSource": "michelin"
 }

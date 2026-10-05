@@ -28,5 +28,13 @@
   "website": "https://www.neruaguggenheimbilbao.com/",
   "lat": 43.26887,
   "lng": -2.932337,
-  "placeId": "ChIJ1TWrrCZQTg0REIRME28oDuA"
+  "placeId": "ChIJ1TWrrCZQTg0REIRME28oDuA",
+  "michelinId": "218659",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Josean Alija",
+  "chefSource": "michelin"
 }

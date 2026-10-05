@@ -22,5 +22,8 @@
   "website": "https://www.capestel.com",
   "lat": 43.7183964,
   "lng": 7.3739796,
-  "placeId": "ChIJPVENpefDzRIRUt9V_ZOBkuM"
+  "placeId": "ChIJPVENpefDzRIRUt9V_ZOBkuM",
+  "michelinId": "1241400",
+  "chef": "Kevin Garcia",
+  "chefSource": "michelin"
 }

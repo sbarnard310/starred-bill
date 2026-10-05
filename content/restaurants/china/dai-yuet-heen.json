@@ -10,5 +10,9 @@
   "sourceType": "none",
   "website": "https://www.ritzcarlton.com/en/hotels/nkgrz-the-ritz-carlton-nanjing/overview/",
   "lat": 32.0470851,
-  "lng": 118.7795738
+  "lng": 118.7795738,
+  "michelinId": "1216378",
+  "diets": [
+    "vegetarian"
+  ]
 }

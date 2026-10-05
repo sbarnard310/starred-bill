@@ -13,5 +13,13 @@
   "website": "https://restaurantsylvestre.com",
   "lat": 45.4144213,
   "lng": 6.6349308,
-  "placeId": "ChIJiS_FQqx4iUcRv6iUeKqbo1k"
+  "placeId": "ChIJiS_FQqx4iUcRv6iUeKqbo1k",
+  "michelinId": "1199371",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

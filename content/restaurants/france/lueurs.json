@@ -19,5 +19,12 @@
   "website": "https://lepetitserrant.com/lueurs/",
   "lat": 47.4103362,
   "lng": -0.6177721,
-  "placeId": "ChIJz8MY65rVB0gR1IU21pPOptQ"
+  "placeId": "ChIJz8MY65rVB0gR1IU21pPOptQ",
+  "michelinId": "1217420",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Romain Zarazaga",
+  "chefSource": "michelin"
 }

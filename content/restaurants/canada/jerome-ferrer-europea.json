@@ -13,5 +13,11 @@
   "website": "https://jeromeferrer.ca",
   "lat": 45.4966021,
   "lng": -73.5719172,
-  "placeId": "ChIJqcPWD0IayUwRqDoraLS_lIo"
+  "placeId": "ChIJqcPWD0IayUwRqDoraLS_lIo",
+  "michelinId": "1216698",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jérôme Ferrer",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,8 @@
   "website": "https://akordu.com/",
   "lat": 34.68575,
   "lng": 135.835467,
-  "placeId": "ChIJGduke4U5AWAR0gfSaX-LuMI"
+  "placeId": "ChIJGduke4U5AWAR0gfSaX-LuMI",
+  "michelinId": "1196783",
+  "chef": "Hiroshi Kawashima",
+  "chefSource": "michelin"
 }

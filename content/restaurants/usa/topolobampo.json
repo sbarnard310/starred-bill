@@ -17,5 +17,8 @@
   "website": "https://topolochicago.com/",
   "lat": 41.890704,
   "lng": -87.630969,
-  "placeId": "ChIJ25jYKrIsDogRhv_ykBvwfOQ"
+  "placeId": "ChIJ25jYKrIsDogRhv_ykBvwfOQ",
+  "michelinId": "269297",
+  "chef": "Meagan O'Connor",
+  "chefSource": "site"
 }

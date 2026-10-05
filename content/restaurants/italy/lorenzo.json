@@ -23,5 +23,11 @@
   "website": "https://www.ristorantelorenzo.com/it/",
   "lat": 43.956556,
   "lng": 10.172216,
-  "placeId": "ChIJ50jKFh0K1RIRUbWjmFgZEmk"
+  "placeId": "ChIJ50jKFh0K1RIRUbWjmFgZEmk",
+  "michelinId": "135164",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

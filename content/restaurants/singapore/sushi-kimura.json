@@ -28,5 +28,8 @@
   "website": "https://sushikimuraplus.com.sg/",
   "lat": 1.304922,
   "lng": 103.824923,
-  "placeId": "ChIJnZJNZVQZ2jERKBmNFZjphCo"
+  "placeId": "ChIJnZJNZVQZ2jERKBmNFZjphCo",
+  "michelinId": "1247953",
+  "chef": "Tomoo Kimura",
+  "chefSource": "michelin"
 }

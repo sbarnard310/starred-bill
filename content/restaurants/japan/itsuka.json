@@ -31,5 +31,10 @@
   "website": "https://www.itsuka8.com/",
   "lat": 35.670272,
   "lng": 139.720168,
-  "placeId": "ChIJ__-T5pyMGGARoS5HMM3m1nA"
+  "placeId": "ChIJ__-T5pyMGGARoS5HMM3m1nA",
+  "michelinId": "1193862",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

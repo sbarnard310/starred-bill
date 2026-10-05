@@ -13,5 +13,11 @@
   "website": "https://www.tavernadelcapitano.com/",
   "lat": 40.5833911,
   "lng": 14.3565359,
-  "placeId": "ChIJu0hf01-cOxMRCbhwJlww-3s"
+  "placeId": "ChIJu0hf01-cOxMRCbhwJlww-3s",
+  "michelinId": "139635",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Matteo Caputo",
+  "chefSource": "michelin"
 }

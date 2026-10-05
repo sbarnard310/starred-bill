@@ -17,5 +17,13 @@
   "website": "https://cent33.com/",
   "lat": 44.8550026,
   "lng": -0.573945,
-  "placeId": "ChIJ_TieeQ0pVQ0RiiNDG2WbRRw"
+  "placeId": "ChIJ_TieeQ0pVQ0RiiNDG2WbRRw",
+  "michelinId": "1155013",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Fabien Beaufour",
+  "chefSource": "michelin"
 }

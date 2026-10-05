@@ -12,5 +12,8 @@
   "website": "https://www.mandarinoriental.com/en/shenzhen/futian/dine/opus-388",
   "lat": 22.5594715,
   "lng": 114.0668141,
-  "placeId": "ChIJj2cWk2j0AzQRZiGboMvDcio"
+  "placeId": "ChIJj2cWk2j0AzQRZiGboMvDcio",
+  "michelinId": "1244768",
+  "chef": "Alessio Durante",
+  "chefSource": "michelin"
 }

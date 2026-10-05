@@ -23,5 +23,12 @@
   "website": "https://lepontdacigne.com/",
   "lat": 48.1305627,
   "lng": -1.5346294,
-  "placeId": "ChIJ15aB1t3ZDkgRkhxM_hKhTD0"
+  "placeId": "ChIJ15aB1t3ZDkgRkhxM_hKhTD0",
+  "michelinId": "7335",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Sylvain Guillemot",
+  "chefSource": "site"
 }

@@ -19,5 +19,11 @@
   "website": "https://restaurantsolbam.com/",
   "lat": 37.51575,
   "lng": 127.03411,
-  "placeId": "ChIJL2hHUjujfDURbxzijlzZtxs"
+  "placeId": "ChIJL2hHUjujfDURbxzijlzZtxs",
+  "michelinId": "1201705",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Tae-jun Eom",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,16 @@
   "website": "https://restaurantflore.com/",
   "lat": 52.3676602,
   "lng": 4.8942749,
-  "placeId": "ChIJByFbDsAJxkcRN01cFVhNlAY"
+  "placeId": "ChIJByFbDsAJxkcRN01cFVhNlAY",
+  "michelinId": "1197629",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Bas van Kranen",
+  "chefSource": "michelin"
 }

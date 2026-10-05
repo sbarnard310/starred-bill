@@ -15,5 +15,11 @@
   "website": "https://www.midi-restaurant.de",
   "lat": 49.2746882,
   "lng": 7.1556823,
-  "placeId": "ChIJv5_Lc_DIlUcRRN--PcEw4nw"
+  "placeId": "ChIJv5_Lc_DIlUcRRN--PcEw4nw",
+  "michelinId": "1207008",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Peter Wirbel",
+  "chefSource": "michelin"
 }

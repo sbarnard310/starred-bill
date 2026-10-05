@@ -26,5 +26,8 @@
   "website": "https://soigneseoul.com/",
   "lat": 37.51933,
   "lng": 127.01903,
-  "placeId": "ChIJIU2RrnahfDURNvCJDhODupM"
+  "placeId": "ChIJIU2RrnahfDURNvCJDhODupM",
+  "michelinId": "512018",
+  "chef": "Jun Lee",
+  "chefSource": "michelin"
 }

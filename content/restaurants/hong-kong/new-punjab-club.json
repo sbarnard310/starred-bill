@@ -26,5 +26,13 @@
   "website": "https://www.newpunjabclub.com/",
   "lat": 22.2799854,
   "lng": 114.155194,
-  "placeId": "ChIJq6pG0HoABDQR99qjeaTvEws"
+  "placeId": "ChIJq6pG0HoABDQR99qjeaTvEws",
+  "michelinId": "567832",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Palash Mitra",
+  "chefSource": "site"
 }

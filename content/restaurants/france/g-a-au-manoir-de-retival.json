@@ -23,5 +23,11 @@
   "website": "https://www.restaurant-ga.fr",
   "lat": 49.5249389,
   "lng": 0.7348884,
-  "placeId": "ChIJlc1GcCf44EcRXhLaoz1iUtg"
+  "placeId": "ChIJlc1GcCf44EcRXhLaoz1iUtg",
+  "michelinId": "47160",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "David Goerne",
+  "chefSource": "michelin"
 }

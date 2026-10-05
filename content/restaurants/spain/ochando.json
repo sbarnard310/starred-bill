@@ -13,5 +13,8 @@
   "website": "https://ochandorestaurante.com/",
   "lat": 37.5901344,
   "lng": -5.7333002,
-  "placeId": "ChIJU4CgyMFZEg0RVuYZ6rkQ4h4"
+  "placeId": "ChIJU4CgyMFZEg0RVuYZ6rkQ4h4",
+  "michelinId": "1206016",
+  "chef": "Juan Carlos Ochando",
+  "chefSource": "michelin"
 }

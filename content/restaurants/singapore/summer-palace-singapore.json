@@ -26,5 +26,11 @@
   "website": "https://www.hilton.com/en/hotels/sinodci-conrad-singapore-orchard/dining/summer-palace",
   "lat": 1.304652,
   "lng": 103.824749,
-  "placeId": "ChIJPTigtosZ2jERrLUm0plK7bY"
+  "placeId": "ChIJPTigtosZ2jERrLUm0plK7bY",
+  "michelinId": "501658",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

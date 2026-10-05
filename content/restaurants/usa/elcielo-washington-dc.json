@@ -18,5 +18,13 @@
   "website": "https://elcielowashington.com/",
   "lat": 38.909014,
   "lng": -76.999479,
-  "placeId": "ChIJw43KgEy5t4kRarwZlIG4yg0"
+  "placeId": "ChIJw43KgEy5t4kRarwZlIG4yg0",
+  "michelinId": "1191941",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Juan Manuel Barrientos",
+  "chefSource": "michelin"
 }

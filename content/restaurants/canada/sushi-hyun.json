@@ -14,5 +14,8 @@
   "website": "https://www.sushihyun.com/",
   "lat": 49.287176,
   "lng": -123.1285175,
-  "placeId": "ChIJm2CCe1FxhlQR2eesr8wR_ws"
+  "placeId": "ChIJm2CCe1FxhlQR2eesr8wR_ws",
+  "michelinId": "1242789",
+  "chef": "Juhyun Lee",
+  "chefSource": "michelin"
 }

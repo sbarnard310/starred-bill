@@ -23,5 +23,10 @@
   "website": "https://www.domainedelacorniche.com/",
   "lat": 49.0227565,
   "lng": 1.6096554,
-  "placeId": "ChIJNxbPL5a55kcR55snQoeFve8"
+  "placeId": "ChIJNxbPL5a55kcR55snQoeFve8",
+  "michelinId": "12652",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

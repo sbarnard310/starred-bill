@@ -13,5 +13,11 @@
   "website": "https://www.alte-ueberfahrt.de/",
   "lat": 52.3797969,
   "lng": 12.9449636,
-  "placeId": "ChIJ045zbZ7zqEcRrsItoc6VoLY"
+  "placeId": "ChIJ045zbZ7zqEcRrsItoc6VoLY",
+  "michelinId": "511580",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thomas Hübner",
+  "chefSource": "michelin"
 }

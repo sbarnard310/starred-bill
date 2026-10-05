@@ -15,5 +15,12 @@
   "website": "https://restaurant-kern.fr",
   "lat": 46.2496878,
   "lng": 6.6164302,
-  "placeId": "ChIJZR01kTEZjEcRv0qDS9PosKk"
+  "placeId": "ChIJZR01kTEZjEcRv0qDS9PosKk",
+  "michelinId": "1214203",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jean-Philippe Lemaire",
+  "chefSource": "michelin"
 }

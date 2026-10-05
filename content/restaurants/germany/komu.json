@@ -12,5 +12,11 @@
   "website": "https://komu-restaurant.de/",
   "lat": 48.1360691,
   "lng": 11.5704952,
-  "placeId": "ChIJkXU5mvV1nkcR9I3UFP_m3rs"
+  "placeId": "ChIJkXU5mvV1nkcR9I3UFP_m3rs",
+  "michelinId": "1209956",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christoph Kunz",
+  "chefSource": "michelin"
 }

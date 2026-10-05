@@ -17,5 +17,8 @@
   "website": "https://www.baantepabkk.com",
   "lat": 13.7608267,
   "lng": 100.6263514,
-  "placeId": "ChIJg1tidYdhHTER4NNOidyhVvc"
+  "placeId": "ChIJg1tidYdhHTER4NNOidyhVvc",
+  "michelinId": "1200629",
+  "chef": "Chudaree Debhakam",
+  "chefSource": "michelin"
 }

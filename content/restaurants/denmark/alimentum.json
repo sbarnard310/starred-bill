@@ -13,5 +13,13 @@
   "website": "https://www.alimentum.dk",
   "lat": 57.0457734,
   "lng": 9.9292863,
-  "placeId": "ChIJ_YMuorAzSUYREjly3RNeIS8"
+  "placeId": "ChIJ_YMuorAzSUYREjly3RNeIS8",
+  "michelinId": "1186019",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Søren Birch",
+  "chefSource": "michelin"
 }

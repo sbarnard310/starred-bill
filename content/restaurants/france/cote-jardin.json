@@ -15,5 +15,8 @@
   "website": "https://www.cotejardin45.fr",
   "lat": 47.6803325,
   "lng": 2.6296242,
-  "placeId": "ChIJjeBuuZBe5UcRDZlwUk9FzlI"
+  "placeId": "ChIJjeBuuZBe5UcRDZlwUk9FzlI",
+  "michelinId": "3403",
+  "chef": "Arnaud Billard",
+  "chefSource": "michelin"
 }

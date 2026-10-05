@@ -15,5 +15,13 @@
   "website": "https://mesadelemos.com/",
   "lat": 40.577633,
   "lng": -7.98049,
-  "placeId": "ChIJv71QEGo6Iw0R5s-Q3VPuFyA"
+  "placeId": "ChIJv71QEGo6Iw0R5s-Q3VPuFyA",
+  "michelinId": "545905",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Diogo Rocha",
+  "chefSource": "michelin"
 }

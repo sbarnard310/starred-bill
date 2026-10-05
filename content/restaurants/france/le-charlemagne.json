@@ -23,5 +23,11 @@
   "website": "https://www.lecharlemagne.fr/",
   "lat": 47.0772707,
   "lng": 4.8497698,
-  "placeId": "ChIJeX3NajuM8kcRq4bwH1dUbWw"
+  "placeId": "ChIJeX3NajuM8kcRq4bwH1dUbWw",
+  "michelinId": "911",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Rudy Villien",
+  "chefSource": "michelin"
 }

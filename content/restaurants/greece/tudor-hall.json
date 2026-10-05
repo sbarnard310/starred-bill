@@ -14,5 +14,13 @@
   "website": "https://www.tudorhall.gr",
   "lat": 37.9762726,
   "lng": 23.7349168,
-  "placeId": "ChIJYdVsvz69oRQRiiL1z2qIbw8"
+  "placeId": "ChIJYdVsvz69oRQRiiL1z2qIbw8",
+  "michelinId": "1185923",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Nikos Livadias",
+  "chefSource": "michelin"
 }

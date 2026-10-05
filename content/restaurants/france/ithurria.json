@@ -23,5 +23,8 @@
   "website": "https://www.ithurria.com/restaurant",
   "lat": 43.3079451,
   "lng": -1.4992206,
-  "placeId": "ChIJYSbE2cYiUQ0RoKe9Nn9MPdU"
+  "placeId": "ChIJYSbE2cYiUQ0RoKe9Nn9MPdU",
+  "michelinId": "9818",
+  "chef": "Martin Isabal",
+  "chefSource": "michelin"
 }

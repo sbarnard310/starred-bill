@@ -16,5 +16,13 @@
   "website": "https://www.jante-restaurant.de/",
   "lat": 52.3702201,
   "lng": 9.7607965,
-  "placeId": "ChIJQfsL304LsEcRhvMbiIkzdao"
+  "placeId": "ChIJQfsL304LsEcRhvMbiIkzdao",
+  "michelinId": "476235",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Tony Hohlefeld",
+  "chefSource": "michelin"
 }

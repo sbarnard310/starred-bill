@@ -12,5 +12,13 @@
   "website": "https://www.matthiasrestaurant.com/",
   "lat": 52.538311,
   "lng": 13.4200023,
-  "placeId": "ChIJte69WIFPqEcRK-m9QqI74xE"
+  "placeId": "ChIJte69WIFPqEcRK-m9QqI74xE",
+  "michelinId": "1216132",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Silvio Pfeufer",
+  "chefSource": "michelin"
 }

@@ -18,5 +18,11 @@
   "website": "https://chateau-de-theoule.com/page/mareluna.29631.html",
   "lat": 43.5080143,
   "lng": 6.9395889,
-  "placeId": "ChIJ8ZafsLyDzhIRVXpXXj_n4qE"
+  "placeId": "ChIJ8ZafsLyDzhIRVXpXXj_n4qE",
+  "michelinId": "1214736",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Francesco Fezza",
+  "chefSource": "michelin"
 }

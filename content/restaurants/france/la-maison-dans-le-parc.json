@@ -15,5 +15,12 @@
   "website": "https://lamaisondansleparc.com/",
   "lat": 48.6941608,
   "lng": 6.1849668,
-  "placeId": "ChIJq8rhzGyYlEcRYNFyA-MzbOE"
+  "placeId": "ChIJq8rhzGyYlEcRYNFyA-MzbOE",
+  "michelinId": "207569",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Charles Coulombeau",
+  "chefSource": "michelin"
 }

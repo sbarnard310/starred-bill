@@ -16,5 +16,13 @@
   "website": "https://rosetta.com.mx",
   "lat": 19.4197758,
   "lng": -99.1598009,
-  "placeId": "ChIJdSGAWgP_0YURwNtY7rftf2E"
+  "placeId": "ChIJdSGAWgP_0YURwNtY7rftf2E",
+  "michelinId": "1208694",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Elena Reygadas",
+  "chefSource": "michelin"
 }

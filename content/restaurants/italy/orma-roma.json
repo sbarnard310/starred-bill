@@ -23,5 +23,14 @@
   "website": "https://www.ormaroma.it/",
   "lat": 41.9084,
   "lng": 12.493375,
-  "placeId": "ChIJKVt51nphLxMRBW3trNDzgiQ"
+  "placeId": "ChIJKVt51nphLxMRBW3trNDzgiQ",
+  "michelinId": "1208126",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Roy Caceres",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,11 @@
   "website": "https://metarestaurant.sg/",
   "lat": 1.29391,
   "lng": 103.84176,
-  "placeId": "ChIJ6WJrhG0Z2jERFtVbDrD08jM"
+  "placeId": "ChIJ6WJrhG0Z2jERFtVbDrD08jM",
+  "michelinId": "570540",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Sun Kim",
+  "chefSource": "michelin"
 }

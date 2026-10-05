@@ -20,5 +20,10 @@
   "website": "https://sketch.london/the-lecture-room",
   "lat": 51.5126775,
   "lng": -0.1415369,
-  "placeId": "ChIJk4chQY4FdkgRDxmXasfbHlc"
+  "placeId": "ChIJk4chQY4FdkgRDxmXasfbHlc",
+  "michelinId": "69392",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

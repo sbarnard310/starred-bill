@@ -26,5 +26,9 @@
   "website": "https://www.laiheenmacau.com/",
   "lat": 22.146466,
   "lng": 113.554715,
-  "placeId": "ChIJuTWmuA1wATQRkG1w04YxeT4"
+  "placeId": "ChIJuTWmuA1wATQRkG1w04YxeT4",
+  "michelinId": "476398",
+  "diets": [
+    "vegetarian"
+  ]
 }

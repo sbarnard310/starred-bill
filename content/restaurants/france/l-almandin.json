@@ -15,5 +15,11 @@
   "website": "https://www.hotel-ile-lagune.com/",
   "lat": 42.6095379,
   "lng": 3.036187,
-  "placeId": "ChIJe5OF5BR8sBIRBA1AHFRQGxg"
+  "placeId": "ChIJe5OF5BR8sBIRBA1AHFRQGxg",
+  "michelinId": "7780",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Frédéric Bacquié",
+  "chefSource": "michelin"
 }

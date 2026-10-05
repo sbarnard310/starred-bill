@@ -15,5 +15,13 @@
   "website": "https://www.du-bourg.ch",
   "lat": 47.1411639,
   "lng": 7.2457509,
-  "placeId": "ChIJERExTHoZjkcR29GFu2KOHAM"
+  "placeId": "ChIJERExTHoZjkcR29GFu2KOHAM",
+  "michelinId": "1218243",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Manuel Zaugg",
+  "chefSource": "michelin"
 }

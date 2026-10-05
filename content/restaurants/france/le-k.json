@@ -20,5 +20,11 @@
   "website": "https://www.domainedelaklauss.com/",
   "lat": 49.4192618,
   "lng": 6.3758497,
-  "placeId": "ChIJlf69Mk8XlUcRbmbTELNfBOk"
+  "placeId": "ChIJlf69Mk8XlUcRbmbTELNfBOk",
+  "michelinId": "528031",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Benoit Potdevin",
+  "chefSource": "michelin"
 }

@@ -29,5 +29,9 @@
   "website": "https://www.octavo.com.hk/",
   "lat": 22.2943052,
   "lng": 114.1745953,
-  "placeId": "ChIJg__RY9cBBDQR5o2skPP1_hg"
+  "placeId": "ChIJg__RY9cBBDQR5o2skPP1_hg",
+  "michelinId": "1204102",
+  "diets": [
+    "vegetarian"
+  ]
 }

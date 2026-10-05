@@ -21,5 +21,12 @@
   "website": "https://www.inddeebkk.com",
   "lat": 13.7376984,
   "lng": 100.5422893,
-  "placeId": "ChIJkeHE36Gf4jARwYY0UIcD6-g"
+  "placeId": "ChIJkeHE36Gf4jARwYY0UIcD6-g",
+  "michelinId": "1210057",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

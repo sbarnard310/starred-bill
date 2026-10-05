@@ -15,5 +15,8 @@
   "website": "https://www.lapetitemaisondecucuron.com/",
   "lat": 43.773919,
   "lng": 5.4387208,
-  "placeId": "ChIJvTYxoqsjyhIRqIueAaXbmk8"
+  "placeId": "ChIJvTYxoqsjyhIRqIueAaXbmk8",
+  "michelinId": "2728",
+  "chef": "Éric Sapet",
+  "chefSource": "michelin"
 }

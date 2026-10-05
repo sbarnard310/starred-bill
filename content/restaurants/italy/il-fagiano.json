@@ -20,5 +20,11 @@
   "website": "https://www.ghf.it/it/ristoranti-e-bar/ristorante-il-fagiano/",
   "lat": 45.622704,
   "lng": 10.570339,
-  "placeId": "ChIJpfUOJvmNgUcR4mzLH-plPRg"
+  "placeId": "ChIJpfUOJvmNgUcR4mzLH-plPRg",
+  "michelinId": "162099",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maurizio Bufi",
+  "chefSource": "michelin"
 }

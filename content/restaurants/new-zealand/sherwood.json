@@ -18,5 +18,12 @@
   "website": "https://sherwoodqueenstown.nz/restaurant",
   "lat": -45.023815,
   "lng": 168.69736,
-  "placeId": "ChIJTZ5A_-Yd1akRW_1-6Xe9wEA"
+  "placeId": "ChIJTZ5A_-Yd1akRW_1-6Xe9wEA",
+  "michelinId": "1241043",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Chris Scott",
+  "chefSource": "site"
 }

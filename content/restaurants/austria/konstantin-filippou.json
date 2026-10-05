@@ -12,5 +12,8 @@
   "website": "https://konstantinfilippou.com/",
   "lat": 48.2106747,
   "lng": 16.3798024,
-  "placeId": "ChIJxZvrdaAHbUcRfK4VTaO9nzI"
+  "placeId": "ChIJxZvrdaAHbUcRfK4VTaO9nzI",
+  "michelinId": "405344",
+  "chef": "Konstantin Filippou",
+  "chefSource": "michelin"
 }

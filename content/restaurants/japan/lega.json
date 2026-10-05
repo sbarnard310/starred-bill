@@ -12,5 +12,8 @@
   "website": "https://www.lega-nara.com/",
   "lat": 34.508241,
   "lng": 135.717264,
-  "placeId": "ChIJ5wCp16ItAWARufExVgboUXU"
+  "placeId": "ChIJ5wCp16ItAWARufExVgboUXU",
+  "michelinId": "1205525",
+  "chef": "Shogo Sugawara",
+  "chefSource": "site"
 }

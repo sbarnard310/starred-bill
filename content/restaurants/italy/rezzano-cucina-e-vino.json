@@ -13,5 +13,9 @@
   "website": "https://www.rezzanocucinaevino.it",
   "lat": 44.2720162,
   "lng": 9.3949059,
-  "placeId": "ChIJx8Eg8AuX1BIRdZXQNI_m07A"
+  "placeId": "ChIJx8Eg8AuX1BIRdZXQNI_m07A",
+  "michelinId": "152800",
+  "diets": [
+    "vegetarian"
+  ]
 }

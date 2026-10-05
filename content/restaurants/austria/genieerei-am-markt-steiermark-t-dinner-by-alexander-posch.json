@@ -13,5 +13,13 @@
   "website": "https://www.geniessereiammarkt.at/",
   "lat": 47.0685329,
   "lng": 15.447078,
-  "placeId": "ChIJm8H6T4BKbkcR5hwr_j6LICc"
+  "placeId": "ChIJm8H6T4BKbkcR5hwr_j6LICc",
+  "michelinId": "1240876",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alexander Posch",
+  "chefSource": "michelin"
 }

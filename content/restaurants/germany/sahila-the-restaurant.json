@@ -19,5 +19,9 @@
   "website": "https://sahila-restaurant.de/",
   "lat": 50.932944,
   "lng": 6.9527411,
-  "placeId": "ChIJX5RGd94lv0cR5hvtiXOD2l4"
+  "placeId": "ChIJX5RGd94lv0cR5hvtiXOD2l4",
+  "michelinId": "1197795",
+  "diets": [
+    "vegetarian"
+  ]
 }

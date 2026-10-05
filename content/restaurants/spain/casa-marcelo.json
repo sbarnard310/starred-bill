@@ -15,5 +15,8 @@
   "website": "https://www.casamarcelo.net",
   "lat": 42.880834,
   "lng": -8.5466466,
-  "placeId": "ChIJT360x0P-Lg0RnQ_j3JPH3pI"
+  "placeId": "ChIJT360x0P-Lg0RnQ_j3JPH3pI",
+  "michelinId": "223252",
+  "chef": "Marcelo Tejedor",
+  "chefSource": "michelin"
 }

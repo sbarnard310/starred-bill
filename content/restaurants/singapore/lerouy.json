@@ -24,5 +24,11 @@
   "website": "https://lerouy.com/",
   "lat": 1.293924,
   "lng": 103.841922,
-  "placeId": "ChIJbSjVgQ0Z2jER4D6B04Wg9tY"
+  "placeId": "ChIJbSjVgQ0Z2jER4D6B04Wg9tY",
+  "michelinId": "1195638",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christophe Lerouy",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,13 @@
   "website": "https://inati.nz/",
   "lat": -43.53215,
   "lng": 172.632474,
-  "placeId": "ChIJeS560z2KMW0Rkq0hCGpDF54"
+  "placeId": "ChIJeS560z2KMW0Rkq0hCGpDF54",
+  "michelinId": "1241075",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ],
+  "chef": "Simon Levy",
+  "chefSource": "site"
 }

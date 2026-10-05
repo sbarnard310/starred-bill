@@ -16,5 +16,12 @@
   "website": "https://ristorantecrocifisso.it/",
   "lat": 36.8944278,
   "lng": 15.0713855,
-  "placeId": "ChIJ0Xc3Yq8pEhMRNPtfqeGJyXg"
+  "placeId": "ChIJ0Xc3Yq8pEhMRNPtfqeGJyXg",
+  "michelinId": "393940",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Marco Baglieri",
+  "chefSource": "michelin"
 }

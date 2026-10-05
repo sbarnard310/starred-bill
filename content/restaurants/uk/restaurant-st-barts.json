@@ -21,5 +21,14 @@
   "website": "https://www.restaurant-stbarts.co.uk/",
   "lat": 51.5183494,
   "lng": -0.0992235,
-  "placeId": "ChIJ921POt8bdkgRwx80KJsqCRk"
+  "placeId": "ChIJ921POt8bdkgRwx80KJsqCRk",
+  "michelinId": "1207025",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Johnnie Crowe",
+  "chefSource": "michelin"
 }

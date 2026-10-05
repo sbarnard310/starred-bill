@@ -20,5 +20,8 @@
   "website": "https://www.restaurant-oxte.com/",
   "lat": 48.8757794,
   "lng": 2.2956526,
-  "placeId": "ChIJCU_1nuxv5kcRmfS3m_h6mCg"
+  "placeId": "ChIJCU_1nuxv5kcRmfS3m_h6mCg",
+  "michelinId": "1000243",
+  "chef": "Enrique Casarrubias",
+  "chefSource": "michelin"
 }

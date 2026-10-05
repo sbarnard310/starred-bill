@@ -13,5 +13,8 @@
   "website": "https://ristoranteildesco.it/",
   "lat": 45.4416145,
   "lng": 10.9999722,
-  "placeId": "ChIJV5LeNUhff0cRtfxsKicXT1s"
+  "placeId": "ChIJV5LeNUhff0cRtfxsKicXT1s",
+  "michelinId": "157087",
+  "chef": "Matteo Rizzo",
+  "chefSource": "michelin"
 }

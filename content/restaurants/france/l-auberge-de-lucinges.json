@@ -15,5 +15,12 @@
   "website": "https://www.laubergedelucinges.fr",
   "lat": 46.1905123,
   "lng": 6.3184274,
-  "placeId": "ChIJGZwkoX9tjEcRAOhjsD0QuOw"
+  "placeId": "ChIJGZwkoX9tjEcRAOhjsD0QuOw",
+  "michelinId": "1183966",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Benjamin Breton",
+  "chefSource": "michelin"
 }

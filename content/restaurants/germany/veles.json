@@ -14,5 +14,11 @@
   "website": "https://www.veles-restaurant.de/",
   "lat": 49.4491082,
   "lng": 11.0541219,
-  "placeId": "ChIJgb9zEFZWn0cRsnDUeYV0aJ8"
+  "placeId": "ChIJgb9zEFZWn0cRsnDUeYV0aJ8",
+  "michelinId": "1196950",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Vadim Karasev",
+  "chefSource": "michelin"
 }

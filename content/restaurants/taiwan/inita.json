@@ -23,5 +23,8 @@
   "website": "https://www.inita.tw/",
   "lat": 25.0460871,
   "lng": 121.5505871,
-  "placeId": "ChIJ_3AziLWrQjQRVrBDTa890So"
+  "placeId": "ChIJ_3AziLWrQjQRVrBDTa890So",
+  "michelinId": "1204755",
+  "chef": "Kunihiro Hagimoto",
+  "chefSource": "site"
 }

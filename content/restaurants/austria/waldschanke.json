@@ -13,5 +13,12 @@
   "website": "https://www.waldschaenke.at/",
   "lat": 48.2450151,
   "lng": 13.8351943,
-  "placeId": "ChIJ9wHA4Z91dEcRdzzAGOzjwLQ"
+  "placeId": "ChIJ9wHA4Z91dEcRdzzAGOzjwLQ",
+  "michelinId": "104685",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Clemens Grabmer",
+  "chefSource": "michelin"
 }

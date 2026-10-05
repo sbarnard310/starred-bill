@@ -12,5 +12,9 @@
   "website": "https://mgmgrand.mgmresorts.com/en/restaurants/latelier-joel-robuchon-french-restaurant.html",
   "lat": 36.1022899,
   "lng": -115.1693492,
-  "placeId": "ChIJZ-93QcvFyIARqArsJhw7Mso"
+  "placeId": "ChIJZ-93QcvFyIARqArsJhw7Mso",
+  "michelinId": "1201404",
+  "diets": [
+    "vegetarian"
+  ]
 }

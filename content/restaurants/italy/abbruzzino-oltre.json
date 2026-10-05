@@ -13,5 +13,13 @@
   "website": "https://www.abbruzzinoltre.it",
   "lat": 38.9770969,
   "lng": 16.3202202,
-  "placeId": "ChIJYwzsXQDlPxMRzO3cKkcA-hA"
+  "placeId": "ChIJYwzsXQDlPxMRzO3cKkcA-hA",
+  "michelinId": "1213182",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Luca Abbruzzino",
+  "chefSource": "site"
 }

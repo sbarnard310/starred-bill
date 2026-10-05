@@ -12,5 +12,13 @@
   "source": "https://restaurantecasagerardo.es/reservar-en-casa-gerardo/",
   "website": "https://www.restaurantecasagerardo.es/",
   "lat": 43.53658,
-  "lng": -5.7872
+  "lng": -5.7872,
+  "michelinId": "222449",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Marcos Morán and Pedro Morán",
+  "chefSource": "michelin"
 }

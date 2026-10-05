@@ -14,5 +14,13 @@
   "website": "https://tschuggen.ch/de/restaurants/la-brezza",
   "lat": 46.7774999,
   "lng": 9.6694197,
-  "placeId": "ChIJnY9OYPK8hEcRL1oS48rDZ2I"
+  "placeId": "ChIJnY9OYPK8hEcRL1oS48rDZ2I",
+  "michelinId": "1191835",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Marco Campanella",
+  "chefSource": "michelin"
 }

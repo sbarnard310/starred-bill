@@ -13,5 +13,12 @@
   "website": "https://www.strandhotel-duenenmeer.de/kulinarik/ostseeloungeimduenenmeer/",
   "lat": 54.2828961,
   "lng": 12.3124112,
-  "placeId": "ChIJ53qRXqDxrEcRs6DR4AIfzXc"
+  "placeId": "ChIJ53qRXqDxrEcRs6DR4AIfzXc",
+  "michelinId": "1214302",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Christopher Huhnstock-Kerber",
+  "chefSource": "michelin"
 }

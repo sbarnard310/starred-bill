@@ -23,5 +23,9 @@
   "website": "https://www.laparolina.it/",
   "lat": 42.821849,
   "lng": 11.869254,
-  "placeId": "ChIJzXySeMk5KRMR5715M7EhEbI"
+  "placeId": "ChIJzXySeMk5KRMR5715M7EhEbI",
+  "michelinId": "123877",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -23,5 +23,9 @@
   "website": "https://www.moulindelatardoire.fr",
   "lat": 45.6768252,
   "lng": 0.5138297,
-  "placeId": "ChIJLxIFJmJR_kcR1cpmbWcs2ww"
+  "placeId": "ChIJLxIFJmJR_kcR1cpmbWcs2ww",
+  "michelinId": "473770",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -15,5 +15,11 @@
   "website": "https://royalchampagne.com/fr/le-royal.html",
   "lat": 49.0907189,
   "lng": 3.9770727,
-  "placeId": "ChIJkehuJt5s6UcRiQ1ZfLtPvx8"
+  "placeId": "ChIJkehuJt5s6UcRiQ1ZfLtPvx8",
+  "michelinId": "1024398",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -12,5 +12,15 @@
   "website": "https://www.upperhouse.com/en/chengdu/restaurants-and-bars/mi-xun-teahouse/",
   "lat": 30.654727,
   "lng": 104.081984,
-  "placeId": "ChIJLXJ_RkLF7zYRmfvt-dJnYhE"
+  "placeId": "ChIJLXJ_RkLF7zYRmfvt-dJnYhE",
+  "michelinId": "1196234",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Steven Tang/ 唐先印",
+  "chefSource": "michelin"
 }

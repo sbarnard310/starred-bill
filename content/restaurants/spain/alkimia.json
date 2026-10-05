@@ -26,5 +26,13 @@
   "website": "https://alkimia.cat/",
   "lat": 41.38291,
   "lng": 2.163593,
-  "placeId": "ChIJ5c4QTsGipBIRaakXWVSPrSY"
+  "placeId": "ChIJ5c4QTsGipBIRaakXWVSPrSY",
+  "michelinId": "506019",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jordi Vilà",
+  "chefSource": "michelin"
 }

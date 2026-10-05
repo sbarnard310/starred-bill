@@ -12,5 +12,8 @@
   "website": "https://saintgermainnola.com/",
   "lat": 29.9676193,
   "lng": -90.0447341,
-  "placeId": "ChIJOw-wC7GnIIYRJnpHUhmf00Q"
+  "placeId": "ChIJOw-wC7GnIIYRJnpHUhmf00Q",
+  "michelinId": "1214988",
+  "chef": "Blake Aguillard and Trey Smith",
+  "chefSource": "michelin"
 }

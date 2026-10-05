@@ -18,5 +18,11 @@
   "website": "https://www.sonsanddaughterssf.com/",
   "lat": 37.76159,
   "lng": -122.41085,
-  "placeId": "ChIJvXXIOoyAhYARe-ixq3WdmrY"
+  "placeId": "ChIJvXXIOoyAhYARe-ixq3WdmrY",
+  "michelinId": "293062",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Harrison Cheney",
+  "chefSource": "michelin"
 }

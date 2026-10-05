@@ -16,5 +16,12 @@
   "website": "https://www.hirsch-fellbach.de/",
   "lat": 48.8339908,
   "lng": 9.2634674,
-  "placeId": "ChIJbc5V5XzPmUcRHvMxfGR2Afw"
+  "placeId": "ChIJbc5V5XzPmUcRHvMxfGR2Afw",
+  "michelinId": "372716",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Michael Oettinger",
+  "chefSource": "michelin"
 }

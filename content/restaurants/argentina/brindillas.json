@@ -20,5 +20,12 @@
   "website": "https://www.brindillas.com",
   "lat": -33.0057601,
   "lng": -68.9106305,
-  "placeId": "ChIJe6XahsAJfpYRdKgCZwMHdEY"
+  "placeId": "ChIJe6XahsAJfpYRdKgCZwMHdEY",
+  "michelinId": "532744",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Mariano Gallego",
+  "chefSource": "michelin"
 }

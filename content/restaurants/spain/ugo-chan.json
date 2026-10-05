@@ -28,5 +28,8 @@
   "website": "https://www.ugochan.com/",
   "lat": 40.463329,
   "lng": -3.688179,
-  "placeId": "ChIJh67g7DApQg0RNGfPlGDvLg4"
+  "placeId": "ChIJh67g7DApQg0RNGfPlGDvLg4",
+  "michelinId": "1198803",
+  "chef": "Hugo Muñoz",
+  "chefSource": "michelin"
 }

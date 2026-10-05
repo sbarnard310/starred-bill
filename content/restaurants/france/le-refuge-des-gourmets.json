@@ -15,5 +15,12 @@
   "website": "https://refugedesgourmets.com/",
   "lat": 46.2482745,
   "lng": 6.3282703,
-  "placeId": "ChIJJUD3ImJsjEcRYG6jY8dyT0U"
+  "placeId": "ChIJJUD3ImJsjEcRYG6jY8dyT0U",
+  "michelinId": "4486",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Hubert Chanove",
+  "chefSource": "michelin"
 }

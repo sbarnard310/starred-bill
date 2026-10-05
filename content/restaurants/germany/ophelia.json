@@ -13,5 +13,9 @@
   "website": "https://www.restaurant-ophelia.de/",
   "lat": 47.6672561,
   "lng": 9.1874379,
-  "placeId": "ChIJV9mC_wX3mkcRr_vLd30Hqus"
+  "placeId": "ChIJV9mC_wX3mkcRr_vLd30Hqus",
+  "michelinId": "294736",
+  "diets": [
+    "vegetarian"
+  ]
 }

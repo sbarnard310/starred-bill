@@ -13,5 +13,9 @@
   "website": "https://www.vollmers.nu/",
   "lat": 55.6046461,
   "lng": 12.9966201,
-  "placeId": "ChIJcenHbP6jU0YRISVlIYKXnrQ"
+  "placeId": "ChIJcenHbP6jU0YRISVlIYKXnrQ",
+  "michelinId": "431376",
+  "diets": [
+    "vegetarian"
+  ]
 }

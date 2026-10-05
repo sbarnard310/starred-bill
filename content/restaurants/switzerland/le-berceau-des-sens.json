@@ -15,5 +15,12 @@
   "website": "https://www.berceau-des-sens.ch/",
   "lat": 46.5605957,
   "lng": 6.6827179,
-  "placeId": "ChIJ9V48sC8sjEcRPXrTRG2wu3g"
+  "placeId": "ChIJ9V48sC8sjEcRPXrTRG2wu3g",
+  "michelinId": "179509",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Christophe Schmitt",
+  "chefSource": "site"
 }

@@ -16,5 +16,8 @@
   "website": "https://www.aponiente.com/",
   "lat": 36.6032543,
   "lng": -6.2164679,
-  "placeId": "ChIJS8jxvenPDQ0Rl6kdS43TPQc"
+  "placeId": "ChIJS8jxvenPDQ0Rl6kdS43TPQc",
+  "michelinId": "222512",
+  "chef": "Ángel León González",
+  "chefSource": "michelin"
 }

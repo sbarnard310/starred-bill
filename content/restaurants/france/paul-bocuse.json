@@ -15,5 +15,11 @@
   "website": "https://bocuse.fr/",
   "lat": 45.8156437,
   "lng": 4.8475623,
-  "placeId": "ChIJ_ZtSoCSV9EcRwSyhmyggeeQ"
+  "placeId": "ChIJ_ZtSoCSV9EcRwSyhmyggeeQ",
+  "michelinId": "4403",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

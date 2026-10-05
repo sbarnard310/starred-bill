@@ -23,5 +23,10 @@
   "website": "https://restaurantcalice.fr/",
   "lat": 43.3435711,
   "lng": 3.2232426,
-  "placeId": "ChIJlxMqbIkPsRIRhoZ5GjVX4nk"
+  "placeId": "ChIJlxMqbIkPsRIRhoZ5GjVX4nk",
+  "michelinId": "1211277",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

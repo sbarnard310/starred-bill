@@ -11,5 +11,9 @@
   "website": "https://www.dubravkin-put.com/",
   "lat": 45.8188384,
   "lng": 15.9725596,
-  "placeId": "ChIJdff5wBzXZUcRkRVGCpn1Ifw"
+  "placeId": "ChIJdff5wBzXZUcRkRVGCpn1Ifw",
+  "michelinId": "477418",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -15,5 +15,13 @@
   "website": "https://www.cashelpalacehotel.ie/dining/the-bishops-buttery",
   "lat": 52.517231,
   "lng": -7.889144,
-  "placeId": "ChIJcycC563LXEgRwttTDeHhhHk"
+  "placeId": "ChIJcycC563LXEgRwttTDeHhhHk",
+  "michelinId": "1204289",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Stefan McEnteer",
+  "chefSource": "site"
 }

@@ -13,5 +13,11 @@
   "website": "https://www.merkles-restaurant.de/",
   "lat": 48.1415478,
   "lng": 7.7074626,
-  "placeId": "ChIJARVR5_U9kUcR2LcKc_VxFOo"
+  "placeId": "ChIJARVR5_U9kUcR2LcKc_VxFOo",
+  "michelinId": "72486",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thomas Merkle",
+  "chefSource": "michelin"
 }

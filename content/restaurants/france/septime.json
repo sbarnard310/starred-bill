@@ -27,5 +27,14 @@
   "website": "https://www.septime-charonne.fr/",
   "lat": 48.85363,
   "lng": 2.3809166,
-  "placeId": "ChIJE6kCUghy5kcRmWSg3RUHIwM"
+  "placeId": "ChIJE6kCUghy5kcRmWSg3RUHIwM",
+  "michelinId": "344933",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Bertrand Grébaut",
+  "chefSource": "michelin"
 }

@@ -30,5 +30,11 @@
   "website": "https://www.robuchon.jp/shop-list/latelier",
   "lat": 35.6604,
   "lng": 139.729046,
-  "placeId": "ChIJK0TdDneLGGARW8iHQb4cVzE"
+  "placeId": "ChIJK0TdDneLGGARW8iHQb4cVzE",
+  "michelinId": "1194216",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

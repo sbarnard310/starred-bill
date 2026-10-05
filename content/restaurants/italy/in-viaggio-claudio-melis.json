@@ -16,5 +16,11 @@
   "website": "https://www.inviaggioristorante.com/",
   "lat": 46.6729096,
   "lng": 11.1765125,
-  "placeId": "ChIJZ2GY2XuegkcRUBNbJ09Tayk"
+  "placeId": "ChIJZ2GY2XuegkcRUBNbJ09Tayk",
+  "michelinId": "1154911",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

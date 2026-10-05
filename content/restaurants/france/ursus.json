@@ -15,5 +15,12 @@
   "website": "https://maison-bouvier.com/restaurant-ursus/",
   "lat": 45.4579161,
   "lng": 6.9011983,
-  "placeId": "ChIJgzF5yKoMiUcRenRwPGvdqek"
+  "placeId": "ChIJgzF5yKoMiUcRenRwPGvdqek",
+  "michelinId": "266168",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Clément Bouvier",
+  "chefSource": "michelin"
 }

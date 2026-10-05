@@ -13,5 +13,12 @@
   "website": "https://www.malathounis.de/",
   "lat": 48.793824,
   "lng": 9.3423876,
-  "placeId": "ChIJCX-CVU3GmUcRJWFUaTClzmI"
+  "placeId": "ChIJCX-CVU3GmUcRJWFUaTClzmI",
+  "michelinId": "74406",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Joannis Malathounis",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,12 @@
   "website": "https://www.domaine-locguenole.com/restaurants-bars-restaurant-gastronomique-bretagne/linattendu-restaurant-gastronomique-morbihan/",
   "lat": 47.7735735,
   "lng": -3.2761308,
-  "placeId": "ChIJgcGunE1dEEgRY6lF1rPXAM8"
+  "placeId": "ChIJgcGunE1dEEgRY6lF1rPXAM8",
+  "michelinId": "11371",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Yann Maget",
+  "chefSource": "michelin"
 }

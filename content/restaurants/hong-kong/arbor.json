@@ -26,5 +26,9 @@
   "website": "https://www.arbor-hk.com/",
   "lat": 22.2829955,
   "lng": 114.1552579,
-  "placeId": "ChIJn9ixrw0BBDQRKt4lkh1td-I"
+  "placeId": "ChIJn9ixrw0BBDQRKt4lkh1td-I",
+  "michelinId": "567786",
+  "diets": [
+    "vegetarian"
+  ]
 }

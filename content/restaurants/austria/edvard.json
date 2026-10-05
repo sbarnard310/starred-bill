@@ -14,5 +14,8 @@
   "website": "https://www.edvard-restaurant.com/en/",
   "lat": 48.2162673,
   "lng": 16.3681893,
-  "placeId": "ChIJxf5WUrsHbUcRh6M6GhzLoM0"
+  "placeId": "ChIJxf5WUrsHbUcRh6M6GhzLoM0",
+  "michelinId": "395138",
+  "chef": "Paul Gamauf",
+  "chefSource": "michelin"
 }

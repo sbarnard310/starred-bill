@@ -20,5 +20,11 @@
   "website": "https://www.reservebeaulieu.com",
   "lat": 43.7059731,
   "lng": 7.33508,
-  "placeId": "ChIJqRtkm7TEzRIRrIdhhUlqTlE"
+  "placeId": "ChIJqRtkm7TEzRIRrIdhhUlqTlE",
+  "michelinId": "10198",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Julien Roucheteau",
+  "chefSource": "michelin"
 }

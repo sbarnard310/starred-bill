@@ -15,5 +15,11 @@
   "website": "https://www.villavest.dk",
   "lat": 57.4766654,
   "lng": 9.7962815,
-  "placeId": "ChIJudCGtuHESEYRYPjBj7rZ6-A"
+  "placeId": "ChIJudCGtuHESEYRYPjBj7rZ6-A",
+  "michelinId": "467315",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Anders Holm",
+  "chefSource": "michelin"
 }

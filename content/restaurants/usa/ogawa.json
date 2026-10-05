@@ -17,5 +17,13 @@
   "website": "https://www.ogawamiami.com/",
   "lat": 25.841443,
   "lng": -80.20065,
-  "placeId": "ChIJ0-tCRMux2YgRJIUcLt_1B7s"
+  "placeId": "ChIJ0-tCRMux2YgRJIUcLt_1B7s",
+  "michelinId": "1204468",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Masayuki Komatsu",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://schwarzgold-dortmund.de/",
   "lat": 51.5420051,
   "lng": 7.4101378,
-  "placeId": "ChIJkf0eouYbuUcR7be4gpLXhHw"
+  "placeId": "ChIJkf0eouYbuUcR7be4gpLXhHw",
+  "michelinId": "1205891",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Pierre Beckerling",
+  "chefSource": "michelin"
 }

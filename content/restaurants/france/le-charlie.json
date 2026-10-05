@@ -18,5 +18,9 @@
   "website": "https://menus.fr/porticcio/le-charlie",
   "lat": 41.8954004,
   "lng": 8.8106627,
-  "placeId": "ChIJVxbVWcFB2hIREWCguK-qZ_4"
+  "placeId": "ChIJVxbVWcFB2hIREWCguK-qZ_4",
+  "michelinId": "1214520",
+  "diets": [
+    "gluten-free"
+  ]
 }

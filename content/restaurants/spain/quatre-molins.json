@@ -27,5 +27,8 @@
   "website": "https://quatremolins.com/",
   "lat": 41.26463,
   "lng": 0.904893,
-  "placeId": "ChIJo_sKiVg1oRIR2d7WVP_mXEA"
+  "placeId": "ChIJo_sKiVg1oRIR2d7WVP_mXEA",
+  "michelinId": "1077240",
+  "chef": "Rafel Muria",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,15 @@
   "website": "https://www.neolokal.com/",
   "lat": 41.0239621,
   "lng": 28.973378,
-  "placeId": "ChIJGbaw0-e5yhQRXCPUhlJLb8w"
+  "placeId": "ChIJGbaw0-e5yhQRXCPUhlJLb8w",
+  "michelinId": "1195530",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Maksut Aşkar",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,9 @@
   "website": "https://verdi.at/restaurant/",
   "lat": 48.3417578,
   "lng": 14.2711746,
-  "placeId": "ChIJy7OdZL2Zc0cRxgdK4ky9zGk"
+  "placeId": "ChIJy7OdZL2Zc0cRxgdK4ky9zGk",
+  "michelinId": "1212934",
+  "diets": [
+    "vegetarian"
+  ]
 }

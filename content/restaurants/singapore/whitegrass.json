@@ -26,5 +26,8 @@
   "website": "https://www.whitegrass.com.sg/",
   "lat": 1.295539,
   "lng": 103.85198,
-  "placeId": "ChIJkZFsaaQZ2jERNwIpeScG3vM"
+  "placeId": "ChIJkZFsaaQZ2jERNwIpeScG3vM",
+  "michelinId": "501680",
+  "chef": "Takuya Yamashita",
+  "chefSource": "michelin"
 }

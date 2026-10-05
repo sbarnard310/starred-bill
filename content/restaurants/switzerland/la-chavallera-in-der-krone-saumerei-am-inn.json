@@ -13,5 +13,12 @@
   "website": "https://krone-lapunt.ch/de/",
   "lat": 46.5784319,
   "lng": 9.9260674,
-  "placeId": "ChIJD4kTLgBjg0cRmvZwMSkwh9A"
+  "placeId": "ChIJD4kTLgBjg0cRmvZwMSkwh9A",
+  "michelinId": "184468",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "James Baron",
+  "chefSource": "michelin"
 }

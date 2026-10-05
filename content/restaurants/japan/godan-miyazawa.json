@@ -12,5 +12,13 @@
   "website": "https://jiki-miyazawa.com/",
   "lat": 34.997973,
   "lng": 135.760946,
-  "placeId": "ChIJ10-7uaIIAWARCARlHoPXgsU"
+  "placeId": "ChIJ10-7uaIIAWARCARlHoPXgsU",
+  "michelinId": "1192960",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

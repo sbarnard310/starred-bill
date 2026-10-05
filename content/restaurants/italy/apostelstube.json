@@ -16,5 +16,12 @@
   "website": "https://www.hotelelephant.com/it/restaurants/restaurant-apostelstube",
   "lat": 46.7194264,
   "lng": 11.6532447,
-  "placeId": "ChIJ_9PXXAwFeEcRHk6iBCoyQvA"
+  "placeId": "ChIJ_9PXXAwFeEcRHk6iBCoyQvA",
+  "michelinId": "1184082",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Mathias Bachmann",
+  "chefSource": "michelin"
 }

@@ -14,5 +14,11 @@
   "website": "https://www.cue-amsterdam.com/",
   "lat": 52.3644527,
   "lng": 4.8979574,
-  "placeId": "ChIJmQn4sSwJxkcRlfgr7QtbEyA"
+  "placeId": "ChIJmQn4sSwJxkcRlfgr7QtbEyA",
+  "michelinId": "1217372",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "George Kataras",
+  "chefSource": "michelin"
 }

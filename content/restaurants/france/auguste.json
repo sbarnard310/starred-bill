@@ -25,5 +25,8 @@
   "website": "https://www.restaurantauguste.fr/",
   "lat": 48.8561689,
   "lng": 2.317003,
-  "placeId": "ChIJd5iHBSpw5kcR7DW8kyCpX6g"
+  "placeId": "ChIJd5iHBSpw5kcR7DW8kyCpX6g",
+  "michelinId": "66350",
+  "chef": "Gaël Orieux",
+  "chefSource": "michelin"
 }

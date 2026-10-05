@@ -16,5 +16,11 @@
   "website": "https://www.lieperts.at",
   "lat": 46.6675112,
   "lng": 15.4676211,
-  "placeId": "ChIJtcHEcMqZb0cRfN15RImk2UE"
+  "placeId": "ChIJtcHEcMqZb0cRfN15RImk2UE",
+  "michelinId": "1213586",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Manuel Liepert",
+  "chefSource": "michelin"
 }

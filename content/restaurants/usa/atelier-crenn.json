@@ -17,5 +17,12 @@
   "website": "https://www.ateliercrenn.com/",
   "lat": 37.79835,
   "lng": -122.43586,
-  "placeId": "ChIJx1ULhNCAhYARSRq9NDWTeqI"
+  "placeId": "ChIJx1ULhNCAhYARSRq9NDWTeqI",
+  "michelinId": "325316",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Dominique Crenn",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,8 @@
   "website": "https://www.corridor109.com/",
   "lat": 34.082927,
   "lng": -118.309286,
-  "placeId": "ChIJo_avB77HwoAR6KembIfXRCk"
+  "placeId": "ChIJo_avB77HwoAR6KembIfXRCk",
+  "michelinId": "1200213",
+  "chef": "Brian Baik",
+  "chefSource": "michelin"
 }

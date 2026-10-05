@@ -25,5 +25,10 @@
   "website": "https://www.restaurantlepetitleon.fr/",
   "lat": 45.010322,
   "lng": 1.0897856,
-  "placeId": "ChIJwUS0jMhX_0cR4EG8TtJy7Uk"
+  "placeId": "ChIJwUS0jMhX_0cR4EG8TtJy7Uk",
+  "michelinId": "1193587",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

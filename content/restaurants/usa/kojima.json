@@ -21,5 +21,8 @@
   "website": "https://kojima-2130.square.site/",
   "lat": 34.039178,
   "lng": -118.441885,
-  "placeId": "ChIJ0ybze4W7woARnWibOHEoHPU"
+  "placeId": "ChIJ0ybze4W7woARnWibOHEoHPU",
+  "michelinId": "1248017",
+  "chef": "Hayato Kojima",
+  "chefSource": "michelin"
 }

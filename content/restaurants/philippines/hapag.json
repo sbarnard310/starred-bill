@@ -12,5 +12,9 @@
   "website": "https://www.hapagmnl.com",
   "lat": 14.56457,
   "lng": 121.03695,
-  "placeId": "ChIJcehp3LG3lzMRWPRm0CI5j4Q"
+  "placeId": "ChIJcehp3LG3lzMRWPRm0CI5j4Q",
+  "michelinId": "1216029",
+  "diets": [
+    "vegetarian"
+  ]
 }

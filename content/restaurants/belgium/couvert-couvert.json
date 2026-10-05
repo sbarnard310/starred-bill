@@ -13,5 +13,11 @@
   "website": "https://www.couvertcouvert.be/",
   "lat": 50.8629609,
   "lng": 4.6596864,
-  "placeId": "ChIJT4ToJKdhwUcRHq2mDWiYgxg"
+  "placeId": "ChIJT4ToJKdhwUcRHq2mDWiYgxg",
+  "michelinId": "210001",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "halal"
+  ]
 }

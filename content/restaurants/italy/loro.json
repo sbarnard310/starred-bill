@@ -15,5 +15,11 @@
   "website": "https://www.loroandco.com/",
   "lat": 45.693861,
   "lng": 9.83242,
-  "placeId": "ChIJMdDJ2hZcgUcRKMH1g6hyKME"
+  "placeId": "ChIJMdDJ2hZcgUcRKMH1g6hyKME",
+  "michelinId": "155343",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Pierantonio Rocchetti",
+  "chefSource": "michelin"
 }

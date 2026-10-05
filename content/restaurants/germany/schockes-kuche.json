@@ -13,5 +13,10 @@
   "website": "https://schockes-laurentiushof.de/",
   "lat": 49.204023,
   "lng": 8.0346581,
-  "placeId": "ChIJyaO2t1RalkcR3VeMTTvpfzU"
+  "placeId": "ChIJyaO2t1RalkcR3VeMTTvpfzU",
+  "michelinId": "1199854",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

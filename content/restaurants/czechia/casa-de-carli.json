@@ -12,5 +12,13 @@
   "website": "https://www.casadecarli.com",
   "lat": 50.0905287,
   "lng": 14.4217856,
-  "placeId": "ChIJ9c-uz-mUC0cRc2WhhS4ba28"
+  "placeId": "ChIJ9c-uz-mUC0cRc2WhhS4ba28",
+  "michelinId": "377239",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Matteo De Carli",
+  "chefSource": "michelin"
 }

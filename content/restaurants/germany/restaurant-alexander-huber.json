@@ -15,5 +15,12 @@
   "website": "https://www.huber-wirt.de/",
   "lat": 48.3069731,
   "lng": 12.5964184,
-  "placeId": "ChIJM939a83BdUcRCKRSHo2kWtI"
+  "placeId": "ChIJM939a83BdUcRCKRSHo2kWtI",
+  "michelinId": "398106",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Alexander Huber",
+  "chefSource": "michelin"
 }

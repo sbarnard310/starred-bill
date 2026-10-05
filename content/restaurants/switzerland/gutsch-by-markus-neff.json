@@ -13,5 +13,12 @@
   "website": "https://guetsch.com/",
   "lat": 46.6559326,
   "lng": 8.6275263,
-  "placeId": "ChIJvfhtQv9zhUcRxtU77eBK6m8"
+  "placeId": "ChIJvfhtQv9zhUcRxtU77eBK6m8",
+  "michelinId": "1190998",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Markus Neff",
+  "chefSource": "michelin"
 }

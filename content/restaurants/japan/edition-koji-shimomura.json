@@ -30,5 +30,13 @@
   "website": "https://www.koji-shimomura.jp/",
   "lat": 35.66558,
   "lng": 139.738152,
-  "placeId": "ChIJd56XtISLGGARgym0xO42yCw"
+  "placeId": "ChIJd56XtISLGGARgym0xO42yCw",
+  "michelinId": "1193872",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Koji Shimomura",
+  "chefSource": "site"
 }

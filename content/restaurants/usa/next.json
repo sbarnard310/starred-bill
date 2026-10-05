@@ -17,5 +17,9 @@
   "website": "https://www.nextrestaurant.com/",
   "lat": 41.886692,
   "lng": -87.651881,
-  "placeId": "ChIJqdQDvtAsDogRMmlkDTCE-W4"
+  "placeId": "ChIJqdQDvtAsDogRMmlkDTCE-W4",
+  "michelinId": "410318",
+  "diets": [
+    "vegetarian"
+  ]
 }

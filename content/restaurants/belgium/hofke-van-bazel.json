@@ -21,5 +21,12 @@
   "website": "https://www.hofkevanbazel.be/",
   "lat": 51.1471664,
   "lng": 4.3002815,
-  "placeId": "ChIJxxtUMAHzw0cR86eV7_pbGd0"
+  "placeId": "ChIJxxtUMAHzw0cR86eV7_pbGd0",
+  "michelinId": "209198",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Kris De Roy",
+  "chefSource": "michelin"
 }

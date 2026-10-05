@@ -15,5 +15,8 @@
   "website": "https://www.restaurantedonaire.com",
   "lat": 28.0916898,
   "lng": -16.7387881,
-  "placeId": "ChIJL_TNs9eXagwRb8d9BJ1RFTU"
+  "placeId": "ChIJL_TNs9eXagwRb8d9BJ1RFTU",
+  "michelinId": "1186563",
+  "chef": "Jesús Camacho",
+  "chefSource": "michelin"
 }

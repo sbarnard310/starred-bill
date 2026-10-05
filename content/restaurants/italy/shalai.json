@@ -13,5 +13,15 @@
   "website": "https://www.shalai.it/ristorante.html",
   "lat": 37.8433039,
   "lng": 15.1419716,
-  "placeId": "ChIJDd154E4bFBMR5WULsH-dpGI"
+  "placeId": "ChIJDd154E4bFBMR5WULsH-dpGI",
+  "michelinId": "366016",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Giovanni Santoro",
+  "chefSource": "site"
 }

@@ -23,5 +23,8 @@
   "website": "https://www.loreedelaforet.fr",
   "lat": 49.41545,
   "lng": 2.36804,
-  "placeId": "ChIJM30py9Kz50cRPLAv382nZ68"
+  "placeId": "ChIJM30py9Kz50cRPLAv382nZ68",
+  "michelinId": "2215",
+  "chef": "Nicolas Leclercq",
+  "chefSource": "michelin"
 }

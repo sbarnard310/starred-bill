@@ -19,5 +19,11 @@
   "website": "https://wolfgangpuck.com/restaurants/cut-singapore/",
   "lat": 1.285726,
   "lng": 103.859784,
-  "placeId": "ChIJnWdQKQQZ2jERxH3g-HsHchE"
+  "placeId": "ChIJnWdQKQQZ2jERxH3g-HsHchE",
+  "michelinId": "501446",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Wolfgang Puck",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,11 @@
   "website": "https://www.levivier-restaurant.com",
   "lat": 43.9257707,
   "lng": 5.0633622,
-  "placeId": "ChIJ0a7rFQsKyhIR7F93KXdopBQ"
+  "placeId": "ChIJ0a7rFQsKyhIR7F93KXdopBQ",
+  "michelinId": "3857",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Romain Gandolphe",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,11 @@
   "website": "https://galerijaokusov.si/en/home",
   "lat": 46.2457883,
   "lng": 15.1784594,
-  "placeId": "ChIJG0-fHLdvZUcRFo_NxHMZoq8"
+  "placeId": "ChIJG0-fHLdvZUcRFo_NxHMZoq8",
+  "michelinId": "1164925",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marko Magajne",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://www.koer-hamburg.de/",
   "lat": 53.5839548,
   "lng": 9.9960681,
-  "placeId": "ChIJd2W2jDiJsUcRPqtt7EKYKhU"
+  "placeId": "ChIJd2W2jDiJsUcRPqtt7EKYKhU",
+  "michelinId": "1211024",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Paul Decker",
+  "chefSource": "site"
 }

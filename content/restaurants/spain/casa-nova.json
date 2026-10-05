@@ -32,5 +32,13 @@
   "website": "https://www.casanovarest.com/",
   "lat": 41.355373,
   "lng": 1.641892,
-  "placeId": "ChIJU8IhtNZwpBIRHxpoxUdvUhE"
+  "placeId": "ChIJU8IhtNZwpBIRHxpoxUdvUhE",
+  "michelinId": "1200978",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Andrés Torres",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,12 @@
   "website": "https://www.casadelmar.fr",
   "lat": 41.5948102,
   "lng": 9.3099771,
-  "placeId": "ChIJNYDl6H2B2RIR3Xe1Jee6YtU"
+  "placeId": "ChIJNYDl6H2B2RIR3Xe1Jee6YtU",
+  "michelinId": "63654",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Fabio Bragagnolo",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,13 @@
   "website": "https://www.belvedere-grindelwald.ch/de/restaurant/gourmet-1910/",
   "lat": 46.6253591,
   "lng": 8.0293781,
-  "placeId": "ChIJeS5DIlOZj0cR6R3Z-bqvCs4"
+  "placeId": "ChIJeS5DIlOZj0cR6R3Z-bqvCs4",
+  "michelinId": "1203398",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Dávid Imre Rózsa",
+  "chefSource": "michelin"
 }

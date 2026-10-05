@@ -23,5 +23,11 @@
   "website": "https://lepavillonnyc.com/",
   "lat": 40.752517,
   "lng": -73.978369,
-  "placeId": "ChIJjcAJd-tZwokRJ0GkkJ2Urp0"
+  "placeId": "ChIJjcAJd-tZwokRJ0GkkJ2Urp0",
+  "michelinId": "1192744",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Daniel Boulud and Will Nacev",
+  "chefSource": "michelin"
 }

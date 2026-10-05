@@ -15,5 +15,12 @@
   "website": "https://www.acquarol.it/",
   "lat": 46.4556659,
   "lng": 11.2589442,
-  "placeId": "ChIJw0T3eA-bgkcR2Nlt0MHbOH4"
+  "placeId": "ChIJw0T3eA-bgkcR2Nlt0MHbOH4",
+  "michelinId": "1190481",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Alessandro Bellingeri",
+  "chefSource": "michelin"
 }

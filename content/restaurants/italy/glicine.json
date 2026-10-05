@@ -15,5 +15,14 @@
   "website": "https://www.hotelsantacaterina.it/ristoranti-e-bar/ristorante-glicine/",
   "lat": 40.6294267,
   "lng": 14.5928504,
-  "placeId": "ChIJlWZ_kWiXOxMRbmB5HIkKCVg"
+  "placeId": "ChIJlWZ_kWiXOxMRbmB5HIkKCVg",
+  "michelinId": "1179776",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Giuseppe Stanzione",
+  "chefSource": "site"
 }

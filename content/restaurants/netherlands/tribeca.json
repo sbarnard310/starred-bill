@@ -13,5 +13,13 @@
   "website": "https://restaurant-tribeca.com/",
   "lat": 51.3793,
   "lng": 5.577939,
-  "placeId": "ChIJjc-M8oAox0cR0A7PvbW0A6s"
+  "placeId": "ChIJjc-M8oAox0cR0A7PvbW0A6s",
+  "michelinId": "502881",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jan Sobecki",
+  "chefSource": "michelin"
 }

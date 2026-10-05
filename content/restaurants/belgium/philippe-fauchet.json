@@ -15,5 +15,11 @@
   "website": "https://www.philippefauchet.be/",
   "lat": 50.6096146,
   "lng": 5.37086,
-  "placeId": "ChIJm6VJcdcBwUcRDiojP78doF8"
+  "placeId": "ChIJm6VJcdcBwUcRDiojP78doF8",
+  "michelinId": "210384",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

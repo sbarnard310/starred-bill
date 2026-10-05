@@ -13,5 +13,13 @@
   "website": "https://www.jeune-jolie.com",
   "lat": 33.1631027,
   "lng": -117.3516968,
-  "placeId": "ChIJjzQAaqpz3IAREZe5sCZsfGY"
+  "placeId": "ChIJjzQAaqpz3IAREZe5sCZsfGY",
+  "michelinId": "1183686",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Eric Bost",
+  "chefSource": "michelin"
 }

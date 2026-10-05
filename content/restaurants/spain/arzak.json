@@ -28,5 +28,13 @@
   "website": "https://www.arzak.es/",
   "lat": 43.321402,
   "lng": -1.949093,
-  "placeId": "ChIJk16VNUOlUQ0RN9deX3Lcna8"
+  "placeId": "ChIJk16VNUOlUQ0RN9deX3Lcna8",
+  "michelinId": "219902",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Juan Mari Arzak and Elena Arzak",
+  "chefSource": "michelin"
 }

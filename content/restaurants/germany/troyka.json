@@ -13,5 +13,11 @@
   "website": "https://www.troyka.de/start",
   "lat": 51.0587895,
   "lng": 6.3316091,
-  "placeId": "ChIJi2WSBwCmwEcRwsG1yrMCJ9U"
+  "placeId": "ChIJi2WSBwCmwEcRwsG1yrMCJ9U",
+  "michelinId": "1194999",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alexander Wulf and Marcel Kokot",
+  "chefSource": "michelin"
 }

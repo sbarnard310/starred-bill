@@ -27,5 +27,8 @@
   "website": "https://olamartinberasategui.com/",
   "lat": 43.257931,
   "lng": -2.926433,
-  "placeId": "ChIJ1VbeTENPTg0Ri7NGFhyFCi4"
+  "placeId": "ChIJ1VbeTENPTg0Ri7NGFhyFCi4",
+  "michelinId": "1154384",
+  "chef": "Raúl Cabrera",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,15 @@
   "website": "https://www.dorchestercollection.com/ascot/coworth-park/dining/woven-by-adam-smith",
   "lat": 51.404658,
   "lng": -0.61646,
-  "placeId": "ChIJmeCjynR5dkgRhxndVVNOdy4"
+  "placeId": "ChIJmeCjynR5dkgRhxndVVNOdy4",
+  "michelinId": "304144",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Adam Smith",
+  "chefSource": "michelin"
 }

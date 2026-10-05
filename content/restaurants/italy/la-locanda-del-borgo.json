@@ -13,5 +13,14 @@
   "website": "https://www.aquapetra.com/dining/la-locanda-del-borgo/",
   "lat": 41.2249757,
   "lng": 14.5325649,
-  "placeId": "ChIJ-bgA83lFOhMRd7kZcPFcKl4"
+  "placeId": "ChIJ-bgA83lFOhMRd7kZcPFcKl4",
+  "michelinId": "393977",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Luciano Villani",
+  "chefSource": "michelin"
 }

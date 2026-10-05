@@ -20,5 +20,13 @@
   "website": "https://www.thetorridon.com/",
   "lat": 57.52892,
   "lng": -5.52819,
-  "placeId": "ChIJtaAmraIUjkgR6Tw32rxCkBY"
+  "placeId": "ChIJtaAmraIUjkgR6Tw32rxCkBY",
+  "michelinId": "1215791",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Danny Young",
+  "chefSource": "michelin"
 }

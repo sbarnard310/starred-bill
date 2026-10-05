@@ -13,5 +13,11 @@
   "website": "https://pmrestauranger.se",
   "lat": 56.8789279,
   "lng": 14.8043573,
-  "placeId": "ChIJIYcLKI0jV0YRemfw1hsl_lU"
+  "placeId": "ChIJIYcLKI0jV0YRemfw1hsl_lU",
+  "michelinId": "478098",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Anders Lauring",
+  "chefSource": "michelin"
 }

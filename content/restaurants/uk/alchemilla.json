@@ -22,5 +22,14 @@
   "website": "https://www.alchemillarestaurant.uk/",
   "lat": 52.954991,
   "lng": -1.165557,
-  "placeId": "ChIJodlRNojBeUgRHmU9kUb_Xwg"
+  "placeId": "ChIJodlRNojBeUgRHmU9kUb_Xwg",
+  "michelinId": "530690",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alex Bond",
+  "chefSource": "michelin"
 }

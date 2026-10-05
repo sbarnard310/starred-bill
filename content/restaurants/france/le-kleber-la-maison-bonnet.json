@@ -17,5 +17,8 @@
   "website": "https://lamaisonbonnet.fr/",
   "lat": 44.7314765,
   "lng": 4.9234014,
-  "placeId": "ChIJ32f0F45atRIRf2QgBj5_Vuw"
+  "placeId": "ChIJ32f0F45atRIRf2QgBj5_Vuw",
+  "michelinId": "1184988",
+  "chef": "Sébastien Bonnet",
+  "chefSource": "site"
 }

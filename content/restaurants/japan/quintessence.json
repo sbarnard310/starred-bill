@@ -23,5 +23,8 @@
   "website": "https://www.quintessence.jp/",
   "lat": 35.624038,
   "lng": 139.732977,
-  "placeId": "ChIJ8T36HxCLGGARvpARPDyaKLA"
+  "placeId": "ChIJ8T36HxCLGGARvpARPDyaKLA",
+  "michelinId": "1193907",
+  "chef": "Shuzo Kishida",
+  "chefSource": "michelin"
 }

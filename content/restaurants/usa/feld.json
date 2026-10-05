@@ -21,5 +21,13 @@
   "website": "https://www.feldrestaurant.com/",
   "lat": 41.895985,
   "lng": -87.677571,
-  "placeId": "ChIJSwxFi48tDogR5dycH3Ei-IE"
+  "placeId": "ChIJSwxFi48tDogR5dycH3Ei-IE",
+  "michelinId": "1205920",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Jacob Potashnick",
+  "chefSource": "michelin"
 }

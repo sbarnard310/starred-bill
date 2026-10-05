@@ -16,5 +16,11 @@
   "website": "https://www.centpourcent.be/",
   "lat": 51.0558544,
   "lng": 4.4632984,
-  "placeId": "ChIJEatm5J_lw0cRX3pjF8uVAEg"
+  "placeId": "ChIJEatm5J_lw0cRX3pjF8uVAEg",
+  "michelinId": "210132",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Axel Colonna-Cesari",
+  "chefSource": "michelin"
 }

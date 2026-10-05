@@ -30,5 +30,11 @@
   "website": "https://www.bakeamungia.com/",
   "lat": 43.357481,
   "lng": -2.850579,
-  "placeId": "ChIJHy0LHZFHTg0RPxks3IGDlSc"
+  "placeId": "ChIJHy0LHZFHTg0RPxks3IGDlSc",
+  "michelinId": "1212207",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alatz Bilbao",
+  "chefSource": "michelin"
 }

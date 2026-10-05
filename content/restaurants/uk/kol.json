@@ -21,5 +21,11 @@
   "website": "https://kolrestaurant.com/",
   "lat": 51.5147873,
   "lng": -0.1574918,
-  "placeId": "ChIJvfnOCgUbdkgR3FvbixhS2cw"
+  "placeId": "ChIJvfnOCgUbdkgR3FvbixhS2cw",
+  "michelinId": "1195137",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

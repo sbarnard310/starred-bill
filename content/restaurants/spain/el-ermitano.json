@@ -13,5 +13,12 @@
   "website": "https://www.elermitano.com/",
   "lat": 42.00712,
   "lng": -5.65799,
-  "placeId": "ChIJ5fZXfRBMOA0RifgANGakSdY"
+  "placeId": "ChIJ5fZXfRBMOA0RifgANGakSdY",
+  "michelinId": "218530",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Pedro Mario Pérez and Óscar Manuel Pérez",
+  "chefSource": "michelin"
 }

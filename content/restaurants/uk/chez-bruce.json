@@ -20,5 +20,10 @@
   "website": "https://www.chezbruce.co.uk/",
   "lat": 51.4464026,
   "lng": -0.1653296,
-  "placeId": "ChIJFTMRjekFdkgRNMUgOPPr5VY"
+  "placeId": "ChIJFTMRjekFdkgRNMUgOPPr5VY",
+  "michelinId": "123657",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

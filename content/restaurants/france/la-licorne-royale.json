@@ -15,5 +15,13 @@
   "website": "https://www.hotel-licorne.com",
   "lat": 49.3985891,
   "lng": 1.4766068,
-  "placeId": "ChIJpzgupR0r50cRdMqJJJCBW2A"
+  "placeId": "ChIJpzgupR0r50cRdMqJJJCBW2A",
+  "michelinId": "202259",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Christophe Poirier",
+  "chefSource": "michelin"
 }

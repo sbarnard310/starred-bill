@@ -9,5 +9,9 @@
   "sourceType": "none",
   "website": "https://www.lameloise.com.cn",
   "lat": 31.2357826,
-  "lng": 121.5010241
+  "lng": 121.5010241,
+  "michelinId": "563686",
+  "diets": [
+    "vegetarian-menu"
+  ]
 }

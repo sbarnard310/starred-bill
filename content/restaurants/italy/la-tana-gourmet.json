@@ -13,5 +13,8 @@
   "website": "https://latanagourmet.it/",
   "lat": 45.85289,
   "lng": 11.49528,
-  "placeId": "ChIJ0WaJOM64eEcRg3PWxLPbDRU"
+  "placeId": "ChIJ0WaJOM64eEcRg3PWxLPbDRU",
+  "michelinId": "462650",
+  "chef": "Alessandro Dal Degan",
+  "chefSource": "michelin"
 }

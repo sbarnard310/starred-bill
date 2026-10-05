@@ -23,5 +23,8 @@
   "website": "https://www.mandarinoriental.com/it/milan/la-scala/dine/seta",
   "lat": 45.469412,
   "lng": 9.191008,
-  "placeId": "ChIJ4SpfKbLGhkcRelRO_y0t8ZE"
+  "placeId": "ChIJ4SpfKbLGhkcRelRO_y0t8ZE",
+  "michelinId": "476818",
+  "chef": "Antonio Guida",
+  "chefSource": "michelin"
 }

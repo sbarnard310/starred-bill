@@ -24,5 +24,11 @@
   "website": "https://www.lemasdepierre.com",
   "lat": 43.6829022,
   "lng": 7.1244509,
-  "placeId": "ChIJ_cJ8ShvTzRIRRZ5958j3itQ"
+  "placeId": "ChIJ_cJ8ShvTzRIRRZ5958j3itQ",
+  "michelinId": "114016",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

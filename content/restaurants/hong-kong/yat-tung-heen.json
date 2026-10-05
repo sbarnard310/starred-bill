@@ -24,5 +24,12 @@
   "website": "https://www.yattungheen.com/",
   "lat": 22.3080802,
   "lng": 114.1717998,
-  "placeId": "ChIJffLwceoABDQRgOVMpNQC1kw"
+  "placeId": "ChIJffLwceoABDQRgOVMpNQC1kw",
+  "michelinId": "512631",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Tam Tung",
+  "chefSource": "site"
 }

@@ -20,5 +20,12 @@
   "website": "https://gymkhanalondon.com/",
   "lat": 51.5085431,
   "lng": -0.141547,
-  "placeId": "ChIJtwn55ikFdkgRAvOuPIWeLM0"
+  "placeId": "ChIJtwn55ikFdkgRAvOuPIWeLM0",
+  "michelinId": "411332",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

@@ -13,5 +13,13 @@
   "website": "https://www.ricchebuonochef.it/",
   "lat": 44.2075887,
   "lng": 8.4163876,
-  "placeId": "ChIJ8UyZX4v80hIR1NC6H6h2uyc"
+  "placeId": "ChIJ8UyZX4v80hIR1NC6H6h2uyc",
+  "michelinId": "155839",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Giuseppe Ricchebuono",
+  "chefSource": "michelin"
 }

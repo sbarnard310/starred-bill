@@ -20,5 +20,10 @@
   "website": "https://trinityrestaurant.co.uk/",
   "lat": 51.4635167,
   "lng": -0.14151,
-  "placeId": "ChIJHdc2Rq0FdkgRNkQ9YeRS1ig"
+  "placeId": "ChIJHdc2Rq0FdkgRNkQ9YeRS1ig",
+  "michelinId": "188092",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

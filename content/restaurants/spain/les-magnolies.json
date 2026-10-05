@@ -27,5 +27,12 @@
   "website": "https://www.lesmagnolies.com/",
   "lat": 41.81882,
   "lng": 2.508246,
-  "placeId": "ChIJa5nqvesruxIRRhvP_PwzwFs"
+  "placeId": "ChIJa5nqvesruxIRRhvP_PwzwFs",
+  "michelinId": "217635",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Víctor Torres",
+  "chefSource": "michelin"
 }

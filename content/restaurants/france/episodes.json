@@ -20,5 +20,14 @@
   "website": "https://www.episodes-paris.fr/",
   "lat": 48.8835225,
   "lng": 2.3046062,
-  "placeId": "ChIJLdpVyutx5kcRrXbY4fHD4Cs"
+  "placeId": "ChIJLdpVyutx5kcRrXbY4fHD4Cs",
+  "michelinId": "534332",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Guillaume Goupil",
+  "chefSource": "site"
 }

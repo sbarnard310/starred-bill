@@ -31,5 +31,11 @@
   "website": "https://www.kojyu.jp/",
   "lat": 35.671381,
   "lng": 139.763089,
-  "placeId": "ChIJVWDJ2-iLGGARrb9VTXObGIE"
+  "placeId": "ChIJVWDJ2-iLGGARrb9VTXObGIE",
+  "michelinId": "1193923",
+  "diets": [
+    "kosher"
+  ],
+  "chef": "Toru Okuda",
+  "chefSource": "michelin"
 }

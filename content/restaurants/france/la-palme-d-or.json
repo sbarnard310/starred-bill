@@ -18,5 +18,8 @@
   "website": "https://www.lapalmedor-restaurant.fr/",
   "lat": 43.5478128,
   "lng": 7.0306323,
-  "placeId": "ChIJecNdHr2BzhIR0pJ-zd3EL1Y"
+  "placeId": "ChIJecNdHr2BzhIR0pJ-zd3EL1Y",
+  "michelinId": "1654",
+  "chef": "Christian Sinicropi",
+  "chefSource": "michelin"
 }

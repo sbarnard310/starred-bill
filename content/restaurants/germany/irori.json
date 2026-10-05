@@ -15,5 +15,11 @@
   "website": "https://irori.restaurant/irori-im-isenhof/",
   "lat": 49.1912675,
   "lng": 8.2499514,
-  "placeId": "ChIJpRNVBg9JlkcRjRzbybsxUg8"
+  "placeId": "ChIJpRNVBg9JlkcRjRzbybsxUg8",
+  "michelinId": "1214842",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Max Goldberg",
+  "chefSource": "michelin"
 }

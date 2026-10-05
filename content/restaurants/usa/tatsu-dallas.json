@@ -14,5 +14,11 @@
   "website": "https://www.tatsu-dallas.com/",
   "lat": 32.7866332,
   "lng": -96.7773016,
-  "placeId": "ChIJh_edlDiZToYR1URAczTccmE"
+  "placeId": "ChIJh_edlDiZToYR1URAczTccmE",
+  "michelinId": "1208679",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Tatsuya Sekiguchi",
+  "chefSource": "michelin"
 }

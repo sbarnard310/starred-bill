@@ -25,5 +25,8 @@
   "website": "https://www.andreaaprea.com/",
   "lat": 45.47346,
   "lng": 9.20427,
-  "placeId": "ChIJmQdzfe_HhkcRnJXOgR5YmtA"
+  "placeId": "ChIJmQdzfe_HhkcRnJXOgR5YmtA",
+  "michelinId": "1203068",
+  "chef": "Andrea Aprea",
+  "chefSource": "michelin"
 }

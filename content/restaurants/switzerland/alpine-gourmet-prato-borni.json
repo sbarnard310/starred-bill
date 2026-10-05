@@ -14,5 +14,12 @@
   "website": "https://www.zermatterhof.ch/restaurants-and-bars/alpine-gourmet-prato-borni/",
   "lat": 46.0198662,
   "lng": 7.7467463,
-  "placeId": "ChIJ5TZByd41j0cRCDA9vezHNA8"
+  "placeId": "ChIJ5TZByd41j0cRCDA9vezHNA8",
+  "michelinId": "184870",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Stefan Lünse",
+  "chefSource": "site"
 }

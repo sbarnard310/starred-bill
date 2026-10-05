@@ -12,5 +12,13 @@
   "website": "https://www.quetzaltoronto.com/",
   "lat": 43.6565748,
   "lng": -79.4067462,
-  "placeId": "ChIJz7oN7gU1K4gRtjOP6_CCSiU"
+  "placeId": "ChIJz7oN7gU1K4gRtjOP6_CCSiU",
+  "michelinId": "1198891",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

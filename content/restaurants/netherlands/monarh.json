@@ -15,5 +15,11 @@
   "website": "https://www.monarh.nl/",
   "lat": 51.555637,
   "lng": 5.0696473,
-  "placeId": "ChIJdyP2Kj--xkcR05ZXmD9foGA"
+  "placeId": "ChIJdyP2Kj--xkcR05ZXmD9foGA",
+  "michelinId": "467779",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

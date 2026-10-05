@@ -12,5 +12,10 @@
   "website": "https://www.fgrestaurant.nl/",
   "lat": 51.9265521,
   "lng": 4.4795369,
-  "placeId": "ChIJd9GnZ2ozxEcREbrToNssxKE"
+  "placeId": "ChIJd9GnZ2ozxEcREbrToNssxKE",
+  "michelinId": "235199",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

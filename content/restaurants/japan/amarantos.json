@@ -31,5 +31,10 @@
   "website": "https://www.amarantos2021.com/",
   "lat": 35.67096,
   "lng": 139.763905,
-  "placeId": "ChIJ2bQw_tmLGGARprV9Gllket0"
+  "placeId": "ChIJ2bQw_tmLGGARprV9Gllket0",
+  "michelinId": "1200259",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

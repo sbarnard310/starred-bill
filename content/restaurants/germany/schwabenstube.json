@@ -16,5 +16,12 @@
   "website": "https://www.adler-asperg.de/de/",
   "lat": 48.9046036,
   "lng": 9.1352183,
-  "placeId": "ChIJq6p2MkbRmUcRa5XuquftPZY"
+  "placeId": "ChIJq6p2MkbRmUcRa5XuquftPZY",
+  "michelinId": "79390",
+  "diets": [
+    "vegetarian-menu",
+    "vegan"
+  ],
+  "chef": "Moritz Feichtinger",
+  "chefSource": "michelin"
 }

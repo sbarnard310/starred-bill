@@ -13,5 +13,8 @@
   "website": "https://www.losguayres.com",
   "lat": 27.8225974,
   "lng": -15.7595468,
-  "placeId": "ChIJi6U4tpOAQAwRb0njOj6AC9s"
+  "placeId": "ChIJi6U4tpOAQAwRb0njOj6AC9s",
+  "michelinId": "389530",
+  "chef": "Ruyman González",
+  "chefSource": "michelin"
 }

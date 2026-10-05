@@ -15,5 +15,12 @@
   "website": "https://www.logisdelacadene.fr",
   "lat": 44.8934854,
   "lng": -0.1559683,
-  "placeId": "ChIJK7-slC5OVQ0Rgi5WjPBTjPU"
+  "placeId": "ChIJK7-slC5OVQ0Rgi5WjPBTjPU",
+  "michelinId": "255271",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Thibaut Gamba",
+  "chefSource": "michelin"
 }

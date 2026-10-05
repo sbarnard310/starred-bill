@@ -15,5 +15,8 @@
   "website": "https://cyrilattrazic.fr/",
   "lat": 44.7169426,
   "lng": 3.2877885,
-  "placeId": "ChIJbcdTBTY9sxIRoxschZB717c"
+  "placeId": "ChIJbcdTBTY9sxIRoxschZB717c",
+  "michelinId": "542",
+  "chef": "Cyril Attrazic",
+  "chefSource": "michelin"
 }

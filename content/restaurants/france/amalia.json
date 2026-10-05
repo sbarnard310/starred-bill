@@ -31,5 +31,15 @@
   "website": "https://amaliarestaurant.com/",
   "lat": 48.8681622,
   "lng": 2.371705,
-  "placeId": "ChIJv0-JCeNt5kcRaV9ngQ1Eu64"
+  "placeId": "ChIJv0-JCeNt5kcRaV9ngQ1Eu64",
+  "michelinId": "1213403",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Eugenio Anfuso",
+  "chefSource": "michelin"
 }

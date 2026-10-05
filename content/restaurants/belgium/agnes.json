@@ -13,5 +13,13 @@
   "website": "https://agnes.restaurant",
   "lat": 50.8621519,
   "lng": 4.2149344,
-  "placeId": "ChIJPTULVpzBw0cRcE4AGVVy8Og"
+  "placeId": "ChIJPTULVpzBw0cRcE4AGVVy8Og",
+  "michelinId": "1207215",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

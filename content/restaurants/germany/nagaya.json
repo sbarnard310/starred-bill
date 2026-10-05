@@ -12,5 +12,8 @@
   "website": "https://www.nagaya.de/",
   "lat": 51.2253636,
   "lng": 6.7863334,
-  "placeId": "ChIJgfuvBxfKuEcRJwIZdlQ9QJU"
+  "placeId": "ChIJgfuvBxfKuEcRJwIZdlQ9QJU",
+  "michelinId": "262757",
+  "chef": "Yoshizumi Nagaya",
+  "chefSource": "michelin"
 }

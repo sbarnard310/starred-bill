@@ -28,5 +28,10 @@
   "website": "https://www.fourseasons.com/hongkong/dining/restaurants/lung_king_heen/",
   "lat": 22.2860122,
   "lng": 114.1580538,
-  "placeId": "ChIJzbDWTWIABDQRhRm8m1oEQbc"
+  "placeId": "ChIJzbDWTWIABDQRhRm8m1oEQbc",
+  "michelinId": "230782",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

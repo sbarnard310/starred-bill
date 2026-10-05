@@ -16,5 +16,12 @@
   "website": "https://www.melchi-or.be/",
   "lat": 50.8058182,
   "lng": 4.9408783,
-  "placeId": "ChIJewjNTWhswUcRKOUYMQ5kRAo"
+  "placeId": "ChIJewjNTWhswUcRKOUYMQ5kRAo",
+  "michelinId": "526280",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Gilles Melchior",
+  "chefSource": "site"
 }

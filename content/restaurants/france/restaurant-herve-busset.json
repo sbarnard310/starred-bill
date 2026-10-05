@@ -23,5 +23,8 @@
   "website": "https://restaurant-herve-busset.fr",
   "lat": 44.3484736,
   "lng": 2.5758132,
-  "placeId": "ChIJcb1LcOZjrRIR_2wSYfZ6eUo"
+  "placeId": "ChIJcb1LcOZjrRIR_2wSYfZ6eUo",
+  "michelinId": "1209761",
+  "chef": "Hervé Busset",
+  "chefSource": "michelin"
 }

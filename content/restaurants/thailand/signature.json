@@ -18,5 +18,13 @@
   "website": "https://www.signaturebangkok.com",
   "lat": 13.7505406,
   "lng": 100.5319672,
-  "placeId": "ChIJRxVBdTyf4jARGLWgEHjEIq4"
+  "placeId": "ChIJRxVBdTyf4jARGLWgEHjEIq4",
+  "michelinId": "1194955",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Thierry Drapeau",
+  "chefSource": "michelin"
 }

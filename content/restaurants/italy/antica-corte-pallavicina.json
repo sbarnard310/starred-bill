@@ -15,5 +15,13 @@
   "website": "https://www.anticacortepallavicinarelais.it/",
   "lat": 45.0215397,
   "lng": 10.0856758,
-  "placeId": "ChIJLxUWD5VXgEcRka5xy4ZzfPw"
+  "placeId": "ChIJLxUWD5VXgEcRka5xy4ZzfPw",
+  "michelinId": "266464",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Massimo Spigaroli",
+  "chefSource": "site"
 }

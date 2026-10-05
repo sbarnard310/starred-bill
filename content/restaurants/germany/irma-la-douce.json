@@ -12,5 +12,10 @@
   "website": "https://www.irmaladouce.de/",
   "lat": 52.5014034,
   "lng": 13.3638583,
-  "placeId": "ChIJJ1g6XO9RqEcR5MdnxcU4O30"
+  "placeId": "ChIJJ1g6XO9RqEcR5MdnxcU4O30",
+  "michelinId": "1190076",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -13,5 +13,11 @@
   "website": "https://www.landhausfeckl.de/",
   "lat": 48.661195,
   "lng": 8.9547833,
-  "placeId": "ChIJIQdkODDgmUcRCbCuIT8r1_E"
+  "placeId": "ChIJIQdkODDgmUcRCbCuIT8r1_E",
+  "michelinId": "80462",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

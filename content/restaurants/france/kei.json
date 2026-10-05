@@ -25,5 +25,8 @@
   "website": "https://restaurant-kei.fr/",
   "lat": 48.8643513,
   "lng": 2.342169,
-  "placeId": "ChIJqTnaAiNu5kcRQsRFgf8qeoA"
+  "placeId": "ChIJqTnaAiNu5kcRQsRFgf8qeoA",
+  "michelinId": "325113",
+  "chef": "Kei Kobayashi",
+  "chefSource": "michelin"
 }

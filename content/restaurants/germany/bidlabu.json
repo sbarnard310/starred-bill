@@ -14,5 +14,12 @@
   "website": "https://bidlabu.de/",
   "lat": 50.1142593,
   "lng": 8.6742761,
-  "placeId": "ChIJq8wrMqwOvUcRhiD7OxtjFz8"
+  "placeId": "ChIJq8wrMqwOvUcRhiD7OxtjFz8",
+  "michelinId": "1183655",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "André Rickert and Janina Allgaier",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,13 @@
   "website": "https://www.enricobartolini.net/i-ristoranti/glam",
   "lat": 45.4413057,
   "lng": 12.3298209,
-  "placeId": "ChIJcypW7sOxfkcRz-086hZfk34"
+  "placeId": "ChIJcypW7sOxfkcRz-086hZfk34",
+  "michelinId": "526938",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Donato Ascani",
+  "chefSource": "michelin"
 }

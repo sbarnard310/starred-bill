@@ -14,5 +14,12 @@
   "website": "https://www.toutafait.nl/",
   "lat": 50.8466488,
   "lng": 5.6940708,
-  "placeId": "ChIJV4xf8rvpwEcRWYiBpw-Ed48"
+  "placeId": "ChIJV4xf8rvpwEcRWYiBpw-Ed48",
+  "michelinId": "212759",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Bart Ausems",
+  "chefSource": "michelin"
 }

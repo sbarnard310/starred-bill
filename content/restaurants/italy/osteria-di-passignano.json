@@ -23,5 +23,13 @@
   "website": "https://www.osteriadipassignano.com/",
   "lat": 43.576867,
   "lng": 11.245811,
-  "placeId": "ChIJ67nz44FJKhMRARsnAuVBgp0"
+  "placeId": "ChIJ67nz44FJKhMRARsnAuVBgp0",
+  "michelinId": "154030",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Matteo Lorenzini",
+  "chefSource": "michelin"
 }

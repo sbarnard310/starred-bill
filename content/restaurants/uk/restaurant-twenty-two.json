@@ -20,5 +20,10 @@
   "website": "https://www.restaurant22.co.uk/",
   "lat": 52.213903,
   "lng": 0.124355,
-  "placeId": "ChIJC42pIutw2EcRw2mkaRZODc8"
+  "placeId": "ChIJC42pIutw2EcRw2mkaRZODc8",
+  "michelinId": "186833",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

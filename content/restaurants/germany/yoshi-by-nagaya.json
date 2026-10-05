@@ -14,5 +14,8 @@
   "website": "https://yoshibynagaya.wixsite.com/nagayaduesseldorf",
   "lat": 51.2242643,
   "lng": 6.7857395,
-  "placeId": "ChIJWUcA0iTKuEcRyWKjRopwL0A"
+  "placeId": "ChIJWUcA0iTKuEcRyWKjRopwL0A",
+  "michelinId": "520845",
+  "chef": "Yoshizumi Nagaya",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,12 @@
   "website": "https://tourdargent.com/",
   "lat": 48.8498353,
   "lng": 2.3549236,
-  "placeId": "ChIJ5eQBbSBx5kcRvEQZIALlPF4"
+  "placeId": "ChIJ5eQBbSBx5kcRvEQZIALlPF4",
+  "michelinId": "5908",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Yannick Franques",
+  "chefSource": "michelin"
 }

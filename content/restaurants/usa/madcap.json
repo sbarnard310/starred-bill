@@ -15,5 +15,12 @@
   "website": "https://www.madcapmarin.com/",
   "lat": 37.974712,
   "lng": -122.56168,
-  "placeId": "ChIJbX6zwz-XhYARl4iaPz63f7E"
+  "placeId": "ChIJbX6zwz-XhYARl4iaPz63f7E",
+  "michelinId": "558685",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Ron Siegel",
+  "chefSource": "michelin"
 }

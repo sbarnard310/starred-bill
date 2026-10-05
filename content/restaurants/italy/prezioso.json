@@ -15,5 +15,12 @@
   "website": "https://www.fragsburg.com/it/arte-culinaria/gourmet-restaurant-prezioso/",
   "lat": 46.642027,
   "lng": 11.1909286,
-  "placeId": "ChIJn0u2RZi9gkcRfePx5NqBUyk"
+  "placeId": "ChIJn0u2RZi9gkcRfePx5NqBUyk",
+  "michelinId": "162615",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Egon Heiss",
+  "chefSource": "michelin"
 }

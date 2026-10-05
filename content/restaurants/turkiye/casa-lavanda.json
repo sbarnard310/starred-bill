@@ -12,5 +12,14 @@
   "website": "https://www.casalavanda.com.tr/",
   "lat": 41.0871196,
   "lng": 29.5117319,
-  "placeId": "ChIJaTmToXbIyhQR9P4KlGaCudI"
+  "placeId": "ChIJaTmToXbIyhQR9P4KlGaCudI",
+  "michelinId": "1195854",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Emre Şen",
+  "chefSource": "michelin"
 }

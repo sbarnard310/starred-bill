@@ -14,5 +14,16 @@
   "website": "https://beckon-denver.com/",
   "lat": 39.7609504,
   "lng": -104.9824196,
-  "placeId": "ChIJQ_9Q0DJ5bIcRbDAIulshVuY"
+  "placeId": "ChIJQ_9Q0DJ5bIcRbDAIulshVuY",
+  "michelinId": "1205053",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Duncan Holmes",
+  "chefSource": "michelin"
 }

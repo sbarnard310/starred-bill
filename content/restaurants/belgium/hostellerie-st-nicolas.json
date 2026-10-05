@@ -16,5 +16,12 @@
   "website": "https://hostellerie-stnicolas.com/",
   "lat": 50.8857292,
   "lng": 2.818281,
-  "placeId": "ChIJ5eB5cOXF3EcRYvtXKTGXL90"
+  "placeId": "ChIJ5eB5cOXF3EcRYvtXKTGXL90",
+  "michelinId": "209852",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Michael Vanderhaeghe",
+  "chefSource": "michelin"
 }

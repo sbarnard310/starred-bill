@@ -21,5 +21,11 @@
   "website": "https://www.cannubibangkok.com",
   "lat": 13.7280315,
   "lng": 100.5377108,
-  "placeId": "ChIJRz3UM0eZ4jAR5l4nHLAwqu4"
+  "placeId": "ChIJRz3UM0eZ4jAR5l4nHLAwqu4",
+  "michelinId": "1240866",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andrea Susto",
+  "chefSource": "site"
 }

@@ -13,5 +13,11 @@
   "website": "https://www.ontra-regensburg.de/gourmetmenue/",
   "lat": 49.0016893,
   "lng": 12.1025791,
-  "placeId": "ChIJN9kLxMTBn0cRuAc8JwRwEZ0"
+  "placeId": "ChIJN9kLxMTBn0cRuAc8JwRwEZ0",
+  "michelinId": "1209534",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Peter Grasmeier",
+  "chefSource": "michelin"
 }

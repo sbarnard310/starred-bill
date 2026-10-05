@@ -13,5 +13,8 @@
   "website": "https://krugrestaurantsplit.com/",
   "lat": 43.5067029,
   "lng": 16.4324645,
-  "placeId": "ChIJzRq0FshdNRMRK4lMSkM-rXU"
+  "placeId": "ChIJzRq0FshdNRMRK4lMSkM-rXU",
+  "michelinId": "1216680",
+  "chef": "Karlo Kaleb",
+  "chefSource": "michelin"
 }

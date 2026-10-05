@@ -12,5 +12,11 @@
   "website": "https://disneyworld.disney.go.com/dining/victoria-and-alberts-overview/",
   "lat": 28.411352,
   "lng": -81.5872943,
-  "placeId": "ChIJfae0pxd-3YgR1ZtP2RQreIY"
+  "placeId": "ChIJfae0pxd-3YgR1ZtP2RQreIY",
+  "michelinId": "1200106",
+  "diets": [
+    "vegan"
+  ],
+  "chef": "Miguel Santeliz",
+  "chefSource": "site"
 }

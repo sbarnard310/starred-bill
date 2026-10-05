@@ -12,5 +12,8 @@
   "website": "https://www.junsakamoto.com.br",
   "lat": -23.563121,
   "lng": -46.6771879,
-  "placeId": "ChIJEWScnHhXzpQRUhXd6D12m0U"
+  "placeId": "ChIJEWScnHhXzpQRUhXd6D12m0U",
+  "michelinId": "428549",
+  "chef": "Jun Sakamoto",
+  "chefSource": "michelin"
 }

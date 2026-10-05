@@ -21,5 +21,11 @@
   "website": "https://www.ortega.co.nz/",
   "lat": -41.294361,
   "lng": 174.784833,
-  "placeId": "ChIJE4mZQcWvOG0RbL9fNoW-Ccw"
+  "placeId": "ChIJE4mZQcWvOG0RbL9fNoW-Ccw",
+  "michelinId": "1245503",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

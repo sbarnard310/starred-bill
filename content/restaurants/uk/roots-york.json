@@ -20,5 +20,16 @@
   "website": "https://www.rootsyork.com/",
   "lat": 53.961807,
   "lng": -1.090483,
-  "placeId": "ChIJZ9yDUhsxeUgRS_YYqBG-aHI"
+  "placeId": "ChIJZ9yDUhsxeUgRS_YYqBG-aHI",
+  "michelinId": "1090849",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Will Lockwood",
+  "chefSource": "site"
 }

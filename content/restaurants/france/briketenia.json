@@ -23,5 +23,10 @@
   "website": "https://www.briketenia.com/",
   "lat": 43.41952,
   "lng": -1.6059286,
-  "placeId": "ChIJc0pAf44TUQ0RFN1NoX_D00A"
+  "placeId": "ChIJc0pAf44TUQ0RFN1NoX_D00A",
+  "michelinId": "235136",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

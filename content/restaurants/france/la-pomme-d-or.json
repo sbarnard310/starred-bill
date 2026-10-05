@@ -23,5 +23,11 @@
   "website": "https://lapommedorsancerre.fr",
   "lat": 47.3297996,
   "lng": 2.8391262,
-  "placeId": "ChIJb6CsJXED8EcRhOOX3kaZsNc"
+  "placeId": "ChIJb6CsJXED8EcRhOOX3kaZsNc",
+  "michelinId": "8437",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Yann Tournier",
+  "chefSource": "site"
 }

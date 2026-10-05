@@ -12,5 +12,8 @@
   "website": "https://www.ristorantelarossa.it",
   "lat": 45.03681,
   "lng": 7.68156,
-  "placeId": "ChIJjZOyf2iz0hIRq0sL-9Ummi8"
+  "placeId": "ChIJjZOyf2iz0hIRq0sL-9Ummi8",
+  "michelinId": "1201186",
+  "chef": "Andrea Larossa",
+  "chefSource": "michelin"
 }

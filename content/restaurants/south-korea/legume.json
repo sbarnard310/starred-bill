@@ -24,5 +24,14 @@
   "website": "https://www.legume.kr/",
   "lat": 37.51938,
   "lng": 127.01932,
-  "placeId": "ChIJG4cH3j6jfDURUapdZ0hDtX0"
+  "placeId": "ChIJG4cH3j6jfDURUapdZ0hDtX0",
+  "michelinId": "1209158",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Si-woo Sung",
+  "chefSource": "michelin"
 }

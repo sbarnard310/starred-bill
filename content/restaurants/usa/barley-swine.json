@@ -14,5 +14,12 @@
   "website": "https://barleyswine.com/",
   "lat": 30.3415073,
   "lng": -97.7387028,
-  "placeId": "ChIJid3yLt-0RIYR_JPyeaoX0Uc"
+  "placeId": "ChIJid3yLt-0RIYR_JPyeaoX0Uc",
+  "michelinId": "1196563",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Bryce Gilmore",
+  "chefSource": "site"
 }

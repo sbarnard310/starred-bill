@@ -13,5 +13,11 @@
   "website": "https://terrazzabosquet.exvitt.it",
   "lat": 40.6284812,
   "lng": 14.3758036,
-  "placeId": "ChIJPz4brq2eOxMR9I2DqNaRPYw"
+  "placeId": "ChIJPz4brq2eOxMR9I2DqNaRPYw",
+  "michelinId": "164071",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Antonino Montefusco",
+  "chefSource": "michelin"
 }

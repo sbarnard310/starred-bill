@@ -18,5 +18,10 @@
   "website": "https://www.minibarbyjoseandres.com/",
   "lat": 38.896294,
   "lng": -77.02386,
-  "placeId": "ChIJMY6KQ5C3t4kREDURgsrWo2s"
+  "placeId": "ChIJMY6KQ5C3t4kREDURgsrWo2s",
+  "michelinId": "499965",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

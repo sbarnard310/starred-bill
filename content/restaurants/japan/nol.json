@@ -24,5 +24,12 @@
   "website": "https://nol.jp/",
   "lat": 35.695272,
   "lng": 139.78362,
-  "placeId": "ChIJW5Xqk7-PGGARQ22bS6qik9Y"
+  "placeId": "ChIJW5Xqk7-PGGARQ22bS6qik9Y",
+  "michelinId": "1196725",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Tatsuya Noda",
+  "chefSource": "michelin"
 }

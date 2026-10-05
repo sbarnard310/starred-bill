@@ -13,5 +13,11 @@
   "website": "https://www.schluesselmels.ch/",
   "lat": 47.0463482,
   "lng": 9.4185999,
-  "placeId": "ChIJ4-gA1l7NhEcREa7t7J6DG9U"
+  "placeId": "ChIJ4-gA1l7NhEcREa7t7J6DG9U",
+  "michelinId": "179694",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

@@ -19,5 +19,11 @@
   "website": "https://www.crizia.com.ar",
   "lat": -34.583215,
   "lng": -58.435084,
-  "placeId": "ChIJ02MiFom1vJURSNqKehH_raQ"
+  "placeId": "ChIJ02MiFom1vJURSNqKehH_raQ",
+  "michelinId": "531944",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Gabriel Oggero",
+  "chefSource": "michelin"
 }

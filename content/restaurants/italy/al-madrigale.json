@@ -19,5 +19,11 @@
   "website": "https://www.almadrigale.it/",
   "lat": 41.964748,
   "lng": 12.799181,
-  "placeId": "ChIJQYDe8uN5LxMR2HIpcOlh57w"
+  "placeId": "ChIJQYDe8uN5LxMR2HIpcOlh57w",
+  "michelinId": "1218304",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Gian Marco Bianchi",
+  "chefSource": "michelin"
 }

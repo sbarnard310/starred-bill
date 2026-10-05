@@ -25,5 +25,12 @@
   "website": "https://www.martinberasategui.com/es/inicio",
   "lat": 43.266935,
   "lng": -2.015721,
-  "placeId": "ChIJdazzUbCxUQ0Rw9XhbhKiMKM"
+  "placeId": "ChIJdazzUbCxUQ0Rw9XhbhKiMKM",
+  "michelinId": "220791",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Martín Berasategui",
+  "chefSource": "michelin"
 }

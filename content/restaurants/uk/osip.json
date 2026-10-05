@@ -15,5 +15,12 @@
   "website": "https://osiprestaurant.com/",
   "lat": 51.105925,
   "lng": -2.398995,
-  "placeId": "ChIJAw991vUxckgRoE_7OL_C27w"
+  "placeId": "ChIJAw991vUxckgRoE_7OL_C27w",
+  "michelinId": "1190934",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Merlin Labron-Johnson",
+  "chefSource": "michelin"
 }

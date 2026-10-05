@@ -12,5 +12,12 @@
   "website": "https://facil.de/de/",
   "lat": 52.5090625,
   "lng": 13.3737404,
-  "placeId": "ChIJA-K5lEpQqEcRHGv7ScsVIXs"
+  "placeId": "ChIJA-K5lEpQqEcRHGv7ScsVIXs",
+  "michelinId": "71252",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Michael Kempf and Joachim Gerner",
+  "chefSource": "michelin"
 }

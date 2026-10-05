@@ -13,5 +13,11 @@
   "website": "https://7132.com/en/7132-diverse-dining-vals/",
   "lat": 46.6225471,
   "lng": 9.1811855,
-  "placeId": "ChIJux1gOKjkhEcR85YGT1Tr8BI"
+  "placeId": "ChIJux1gOKjkhEcR85YGT1Tr8BI",
+  "michelinId": "461289",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marcel Koolen",
+  "chefSource": "michelin"
 }

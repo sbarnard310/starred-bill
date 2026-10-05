@@ -15,5 +15,13 @@
   "website": "https://www.fieldrestaurant.cz/en/",
   "lat": 50.0918645,
   "lng": 14.4220871,
-  "placeId": "ChIJxyKFfMKUC0cRauBsYpvume8"
+  "placeId": "ChIJxyKFfMKUC0cRauBsYpvume8",
+  "michelinId": "464432",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Radek Kašpárek",
+  "chefSource": "site"
 }

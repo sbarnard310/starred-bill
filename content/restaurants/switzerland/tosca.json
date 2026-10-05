@@ -12,5 +12,12 @@
   "website": "https://www.tosca-geneva.ch/",
   "lat": 46.2027478,
   "lng": 6.1581734,
-  "placeId": "ChIJy4NktzZljEcRd0MB7uF7RHk"
+  "placeId": "ChIJy4NktzZljEcRd0MB7uF7RHk",
+  "michelinId": "525872",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

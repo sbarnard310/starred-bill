@@ -14,5 +14,13 @@
   "website": "https://www.cannavacciuolobistrot.it/",
   "lat": 45.062633,
   "lng": 7.7008978,
-  "placeId": "ChIJ-f-CvJ5yiEcR9YkHqilhGP8"
+  "placeId": "ChIJ-f-CvJ5yiEcR9YkHqilhGP8",
+  "michelinId": "538719",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Antonino Cannavacciuolo",
+  "chefSource": "michelin"
 }

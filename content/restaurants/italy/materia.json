@@ -23,5 +23,13 @@
   "website": "https://www.ristorantemateria.it/",
   "lat": 45.83836,
   "lng": 9.06852,
-  "placeId": "ChIJi4p5PJ2dhkcRLQk3JH4gRew"
+  "placeId": "ChIJi4p5PJ2dhkcRLQk3JH4gRew",
+  "michelinId": "519598",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Davide Caranchini",
+  "chefSource": "michelin"
 }

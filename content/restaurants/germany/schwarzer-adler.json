@@ -13,5 +13,11 @@
   "website": "https://www.franz-keller.de/",
   "lat": 48.0952162,
   "lng": 7.6560639,
-  "placeId": "ChIJAdvaajcUkUcR4CEWYIuSxb8"
+  "placeId": "ChIJAdvaajcUkUcR4CEWYIuSxb8",
+  "michelinId": "78491",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christian Baur and Konstantin Keller",
+  "chefSource": "michelin"
 }

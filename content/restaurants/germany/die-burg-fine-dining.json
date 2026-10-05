@@ -13,5 +13,12 @@
   "website": "https://www.burg-aasen.de/",
   "lat": 47.9813093,
   "lng": 8.5524568,
-  "placeId": "ChIJIwftSBWakEcRNxF9Nbg0ebA"
+  "placeId": "ChIJIwftSBWakEcRNxF9Nbg0ebA",
+  "michelinId": "556275",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Jason Grom",
+  "chefSource": "michelin"
 }

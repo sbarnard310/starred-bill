@@ -12,5 +12,13 @@
   "website": "https://www.fpjourne-le-restaurant.ch/",
   "lat": 46.2034895,
   "lng": 6.1510328,
-  "placeId": "ChIJof3XN3dljEcR6JQE0IWxg44"
+  "placeId": "ChIJof3XN3dljEcR6JQE0IWxg44",
+  "michelinId": "1210757",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Dominique Gauthier",
+  "chefSource": "michelin"
 }

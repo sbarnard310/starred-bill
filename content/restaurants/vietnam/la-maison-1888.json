@@ -13,5 +13,15 @@
   "website": "https://www.danang.intercontinental.com/dining/la-maison-1888",
   "lat": 16.1218937,
   "lng": 108.3066406,
-  "placeId": "ChIJdRIphoo9QjERmdeVIV3SAw0"
+  "placeId": "ChIJdRIphoo9QjERmdeVIV3SAw0",
+  "michelinId": "1211833",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Christian Le Squer",
+  "chefSource": "site"
 }

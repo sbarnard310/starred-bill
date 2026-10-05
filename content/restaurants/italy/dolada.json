@@ -13,5 +13,13 @@
   "website": "https://www.dolada.it/",
   "lat": 46.1736379,
   "lng": 12.3601001,
-  "placeId": "ChIJpem2AkqneUcRwyh4ej8cNOI"
+  "placeId": "ChIJpem2AkqneUcRwyh4ej8cNOI",
+  "michelinId": "145511",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Riccardo De Pra",
+  "chefSource": "michelin"
 }

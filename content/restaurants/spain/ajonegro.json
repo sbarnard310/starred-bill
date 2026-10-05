@@ -13,5 +13,10 @@
   "website": "https://restauranteajonegro.es/",
   "lat": 42.4657582,
   "lng": -2.4460143,
-  "placeId": "ChIJLW6xVkerWg0RAoy1FrbC0ps"
+  "placeId": "ChIJLW6xVkerWg0RAoy1FrbC0ps",
+  "michelinId": "1154936",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

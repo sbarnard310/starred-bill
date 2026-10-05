@@ -30,5 +30,11 @@
   "website": "https://largent.tokyo/",
   "lat": 35.670573,
   "lng": 139.746524,
-  "placeId": "ChIJDXFH5MyLGGARMytSvZtzpvM"
+  "placeId": "ChIJDXFH5MyLGGARMytSvZtzpvM",
+  "michelinId": "1195687",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -13,5 +13,12 @@
   "website": "https://www.keidenzeller-hof.de",
   "lat": 49.4672666,
   "lng": 10.7768228,
-  "placeId": "ChIJ54etzXOpmEcRKFtV551athY"
+  "placeId": "ChIJ54etzXOpmEcRKFtV551athY",
+  "michelinId": "398266",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Martin Grimmer",
+  "chefSource": "michelin"
 }

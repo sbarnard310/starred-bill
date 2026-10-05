@@ -9,5 +9,9 @@
   "sourceType": "none",
   "website": "https://www.dadongdadong.com/",
   "lat": 31.230507,
-  "lng": 121.437471
+  "lng": 121.437471,
+  "michelinId": "506502",
+  "diets": [
+    "vegetarian-menu"
+  ]
 }

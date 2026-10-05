@@ -19,5 +19,12 @@
   "website": "https://www.restaurantonice.com/",
   "lat": 43.69872,
   "lng": 7.28284,
-  "placeId": "ChIJmWsd9cPbzRIRnxwhAZWw_yQ"
+  "placeId": "ChIJmWsd9cPbzRIRnxwhAZWw_yQ",
+  "michelinId": "1207866",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Lorenzo Ragni and Florencia Montes",
+  "chefSource": "michelin"
 }

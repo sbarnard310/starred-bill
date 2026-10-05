@@ -15,5 +15,8 @@
   "website": "https://www.lostal-restaurant.fr",
   "lat": 45.7810567,
   "lng": 3.0879692,
-  "placeId": "ChIJBYptKvkb90cR7_h_sykDihY"
+  "placeId": "ChIJBYptKvkb90cR7_h_sykDihY",
+  "michelinId": "489160",
+  "chef": "Emmanuel Hébrard",
+  "chefSource": "michelin"
 }

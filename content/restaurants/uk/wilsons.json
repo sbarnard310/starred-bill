@@ -24,5 +24,11 @@
   "website": "https://www.wilsonsbristol.co.uk/",
   "lat": 51.467929,
   "lng": -2.605233,
-  "placeId": "ChIJuav-4uaNcUgRG-imcjTbsd4"
+  "placeId": "ChIJuav-4uaNcUgRG-imcjTbsd4",
+  "michelinId": "503469",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jan Ostle",
+  "chefSource": "michelin"
 }

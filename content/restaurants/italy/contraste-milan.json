@@ -23,5 +23,12 @@
   "website": "https://contrastemilano.it/",
   "lat": 45.446095,
   "lng": 9.17929,
-  "placeId": "ChIJ_ZtXxwnEhkcRcjJYx_eS3Ak"
+  "placeId": "ChIJ_ZtXxwnEhkcRcjJYx_eS3Ak",
+  "michelinId": "479517",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Matias Perdomo",
+  "chefSource": "michelin"
 }

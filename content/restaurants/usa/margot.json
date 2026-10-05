@@ -14,5 +14,13 @@
   "website": "https://www.margotdenver.com/",
   "lat": 39.6885016,
   "lng": -104.9805065,
-  "placeId": "ChIJreGQhDd5bIcRP3OYKrquLHk"
+  "placeId": "ChIJreGQhDd5bIcRP3OYKrquLHk",
+  "michelinId": "1241646",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Justin Fulton",
+  "chefSource": "michelin"
 }

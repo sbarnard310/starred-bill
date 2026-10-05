@@ -15,5 +15,9 @@
   "website": "https://www.lacoldana.it/",
   "lat": 45.30426,
   "lng": 9.51811,
-  "placeId": "ChIJ01kWXi4sgUcR3cRZuhSZLXg"
+  "placeId": "ChIJ01kWXi4sgUcR3cRZuhSZLXg",
+  "michelinId": "1206067",
+  "diets": [
+    "vegetarian"
+  ]
 }

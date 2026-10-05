@@ -13,5 +13,9 @@
   "website": "https://www.selbysrestaurant.com/",
   "lat": 37.4685638,
   "lng": -122.2104559,
-  "placeId": "ChIJN6lxI3Kjj4ARtyvHC8OJ__k"
+  "placeId": "ChIJN6lxI3Kjj4ARtyvHC8OJ__k",
+  "michelinId": "1185291",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -12,5 +12,8 @@
   "website": "https://restaurantdoubek.at/",
   "lat": 48.213172,
   "lng": 16.3494292,
-  "placeId": "ChIJwwc1kVEHbUcRZ9fSL_0kobQ"
+  "placeId": "ChIJwwc1kVEHbUcRZ9fSL_0kobQ",
+  "michelinId": "1212061",
+  "chef": "Stefan Doubek",
+  "chefSource": "michelin"
 }

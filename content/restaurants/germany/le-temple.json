@@ -13,5 +13,8 @@
   "website": "https://www.le-temple.de/",
   "lat": 49.6425213,
   "lng": 7.0114426,
-  "placeId": "ChIJvwEKfyCQlUcRqxOiyFLZjfc"
+  "placeId": "ChIJvwEKfyCQlUcRqxOiyFLZjfc",
+  "michelinId": "73822",
+  "chef": "Oliver Schäfer and Christiane Detemple-Schäfer",
+  "chefSource": "michelin"
 }

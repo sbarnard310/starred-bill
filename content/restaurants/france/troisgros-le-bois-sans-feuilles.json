@@ -15,5 +15,13 @@
   "website": "https://www.troisgros.fr/",
   "lat": 46.01033,
   "lng": 3.99236,
-  "placeId": "ChIJCwP48WAP9EcRE1P1i_b7cEs"
+  "placeId": "ChIJCwP48WAP9EcRE1P1i_b7cEs",
+  "michelinId": "12613",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "César Troisgros",
+  "chefSource": "michelin"
 }

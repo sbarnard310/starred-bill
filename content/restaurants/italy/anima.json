@@ -25,5 +25,14 @@
   "website": "https://www.enricobartolini.net/i-ristoranti/milano-verticale",
   "lat": 45.481238,
   "lng": 9.188497,
-  "placeId": "ChIJXR5VKMLBhkcRnogPgUdnbNU"
+  "placeId": "ChIJXR5VKMLBhkcRnogPgUdnbNU",
+  "michelinId": "1196521",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Michele Cobuzzi",
+  "chefSource": "michelin"
 }

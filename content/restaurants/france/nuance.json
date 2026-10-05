@@ -23,5 +23,12 @@
   "website": "https://nuance-restaurant.fr/",
   "lat": 47.8372701,
   "lng": -4.329514,
-  "placeId": "ChIJ0z1jg3o7F0gRQ79ouwelC7E"
+  "placeId": "ChIJ0z1jg3o7F0gRQ79ouwelC7E",
+  "michelinId": "1215929",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jules Rolland",
+  "chefSource": "michelin"
 }

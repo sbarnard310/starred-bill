@@ -14,5 +14,8 @@
   "website": "https://kadenceorlando.com/",
   "lat": 28.5687259,
   "lng": -81.3458703,
-  "placeId": "ChIJPbVFebF654gRFipJm9-WS6Q"
+  "placeId": "ChIJPbVFebF654gRFipJm9-WS6Q",
+  "michelinId": "1194458",
+  "chef": "Mark Berdin",
+  "chefSource": "michelin"
 }

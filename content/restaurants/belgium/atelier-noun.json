@@ -13,5 +13,11 @@
   "website": "https://www.ateliernoun.be/",
   "lat": 50.8573268,
   "lng": 4.6141409,
-  "placeId": "ChIJt2hg9eBhwUcRXHyZRYos4Ro"
+  "placeId": "ChIJt2hg9eBhwUcRXHyZRYos4Ro",
+  "michelinId": "1102847",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Bert Castermans",
+  "chefSource": "site"
 }

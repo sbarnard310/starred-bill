@@ -16,5 +16,12 @@
   "website": "https://la-belle.be/",
   "lat": 51.1630964,
   "lng": 5.0637505,
-  "placeId": "ChIJY7tqCwZKwUcRJkjfmdGo7fc"
+  "placeId": "ChIJY7tqCwZKwUcRJkjfmdGo7fc",
+  "michelinId": "386823",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Peter Vangenechten",
+  "chefSource": "michelin"
 }

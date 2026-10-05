@@ -23,5 +23,12 @@
   "website": "https://www.thierry-schwartz.fr/",
   "lat": 48.4605162,
   "lng": 7.4837429,
-  "placeId": "ChIJlVv9CVtNkUcRgesHAVtonNE"
+  "placeId": "ChIJlVv9CVtNkUcRgesHAVtonNE",
+  "michelinId": "5573",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Thierry Schwartz",
+  "chefSource": "michelin"
 }

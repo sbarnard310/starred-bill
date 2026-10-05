@@ -14,5 +14,12 @@
   "website": "https://www.dematos-luzern.ch/",
   "lat": 47.0505139,
   "lng": 8.3030539,
-  "placeId": "ChIJ261pqjL7j0cRxox0VT_j8-o"
+  "placeId": "ChIJ261pqjL7j0cRxox0VT_j8-o",
+  "michelinId": "1217854",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Oscar de Matos",
+  "chefSource": "michelin"
 }

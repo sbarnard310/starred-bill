@@ -20,5 +20,12 @@
   "website": "https://www.restaurantperceel.nl/",
   "lat": 51.9219398,
   "lng": 4.5849566,
-  "placeId": "ChIJffXjgFctxEcRvyBXaVsEJdk"
+  "placeId": "ChIJffXjgFctxEcRvyBXaVsEJdk",
+  "michelinId": "254479",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ]
 }

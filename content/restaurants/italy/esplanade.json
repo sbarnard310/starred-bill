@@ -23,5 +23,13 @@
   "website": "https://www.ristorante-esplanade.com/",
   "lat": 45.465873,
   "lng": 10.549861,
-  "placeId": "ChIJD8ULAFmUgUcRmx3LzbLRkVY"
+  "placeId": "ChIJD8ULAFmUgUcRmx3LzbLRkVY",
+  "michelinId": "132874",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Massimo Fezzardi",
+  "chefSource": "michelin"
 }

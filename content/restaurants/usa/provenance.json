@@ -12,5 +12,8 @@
   "website": "https://provenancephl.com/",
   "lat": 39.942842,
   "lng": -75.1455115,
-  "placeId": "ChIJUaanwS7JxokR4VDhtfhJ3io"
+  "placeId": "ChIJUaanwS7JxokR4VDhtfhJ3io",
+  "michelinId": "1219216",
+  "chef": "Nicholas Bazik",
+  "chefSource": "michelin"
 }

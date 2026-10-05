@@ -15,5 +15,12 @@
   "website": "https://www.spinechile.com",
   "lat": 45.746704,
   "lng": 11.337221,
-  "placeId": "ChIJ1d7QkKaxeEcRHMIjpLsaNdc"
+  "placeId": "ChIJ1d7QkKaxeEcRHMIjpLsaNdc",
+  "michelinId": "376776",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Corrado Fasolato",
+  "chefSource": "michelin"
 }

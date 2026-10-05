@@ -12,5 +12,11 @@
   "website": "https://www.maaemo.no",
   "lat": 59.9075293,
   "lng": 10.7586363,
-  "placeId": "ChIJhyP_qopuQUYRwvq5k9QGIy8"
+  "placeId": "ChIJhyP_qopuQUYRwvq5k9QGIy8",
+  "michelinId": "1194933",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Esben Holmboe Bang",
+  "chefSource": "michelin"
 }

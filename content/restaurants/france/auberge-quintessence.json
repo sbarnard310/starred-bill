@@ -18,5 +18,12 @@
   "website": "https://auberge-quintessence.com/",
   "lat": 44.0996599,
   "lng": 7.0229406,
-  "placeId": "ChIJQRvGpSBTzBIR6V1wns0h4Es"
+  "placeId": "ChIJQRvGpSBTzBIR6V1wns0h4Es",
+  "michelinId": "534324",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Christophe Billau",
+  "chefSource": "michelin"
 }

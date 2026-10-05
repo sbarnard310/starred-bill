@@ -21,5 +21,8 @@
   "website": "https://miura-beverlyhills.com/",
   "lat": 34.067431,
   "lng": -118.400566,
-  "placeId": "ChIJ_5ydTHu7woARcQmby2lfPME"
+  "placeId": "ChIJ_5ydTHu7woARcQmby2lfPME",
+  "michelinId": "1246958",
+  "chef": "Derek Wilcox",
+  "chefSource": "michelin"
 }

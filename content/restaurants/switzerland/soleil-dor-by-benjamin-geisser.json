@@ -15,5 +15,12 @@
   "website": "https://restaurant-soleildor.ch/",
   "lat": 47.4202187,
   "lng": 9.3722685,
-  "placeId": "ChIJAdUsHZEfm0cRSvCBti_RLmQ"
+  "placeId": "ChIJAdUsHZEfm0cRSvCBti_RLmQ",
+  "michelinId": "1217098",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Benjamin Geisser",
+  "chefSource": "michelin"
 }

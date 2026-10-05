@@ -15,5 +15,14 @@
   "website": "https://www.1804muc.de",
   "lat": 48.161743,
   "lng": 11.602656,
-  "placeId": "ChIJCUeOzHx1nkcR8qrOfFvCNF8"
+  "placeId": "ChIJCUeOzHx1nkcR8qrOfFvCNF8",
+  "michelinId": "1198221",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Lukas Adebahr",
+  "chefSource": "michelin"
 }

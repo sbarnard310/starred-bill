@@ -15,5 +15,15 @@
   "website": "https://www.villamaiella.it/",
   "lat": 42.188822,
   "lng": 14.2047054,
-  "placeId": "ChIJRflHgMhWMBMRDZUqNJXb6cE"
+  "placeId": "ChIJRflHgMhWMBMRDZUqNJXb6cE",
+  "michelinId": "136659",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Arcangelo Tinari",
+  "chefSource": "michelin"
 }

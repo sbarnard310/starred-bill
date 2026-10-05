@@ -13,5 +13,9 @@
   "website": "https://hermetikken-restaurant.no",
   "lat": 58.9675838,
   "lng": 5.7221671,
-  "placeId": "ChIJwUDyOPc1OkYRYq8KAbZLJ0A"
+  "placeId": "ChIJwUDyOPc1OkYRYq8KAbZLJ0A",
+  "michelinId": "1210805",
+  "diets": [
+    "vegetarian"
+  ]
 }

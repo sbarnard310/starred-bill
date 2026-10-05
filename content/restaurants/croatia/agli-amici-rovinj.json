@@ -13,5 +13,11 @@
   "website": "https://www.maistra.com/grand-park-hotel-rovinj/sub/agli-amici-rovinj",
   "lat": 45.0747789,
   "lng": 13.6360524,
-  "placeId": "ChIJST0MVbLBfEcR_PVPZNZhkbg"
+  "placeId": "ChIJST0MVbLBfEcR_PVPZNZhkbg",
+  "michelinId": "1196580",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Simone De Lucca",
+  "chefSource": "michelin"
 }

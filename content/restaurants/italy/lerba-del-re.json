@@ -20,5 +20,8 @@
   "website": "https://www.lerbadelre.it/",
   "lat": 44.64916,
   "lng": 10.92368,
-  "placeId": "ChIJEZGbfhHvf0cRT88ib_V7dQg"
+  "placeId": "ChIJEZGbfhHvf0cRT88ib_V7dQg",
+  "michelinId": "171577",
+  "chef": "Luca Marchini",
+  "chefSource": "site"
 }

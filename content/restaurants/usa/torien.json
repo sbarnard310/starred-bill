@@ -17,5 +17,11 @@
   "website": "https://torien-nyc.com/",
   "lat": 40.724706,
   "lng": -73.993269,
-  "placeId": "ChIJ00d8thlZwokRokFYn2wZy5E"
+  "placeId": "ChIJ00d8thlZwokRokFYn2wZy5E",
+  "michelinId": "1184914",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Hideo An",
+  "chefSource": "michelin"
 }

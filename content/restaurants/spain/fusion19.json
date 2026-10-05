@@ -15,5 +15,12 @@
   "website": "https://www.fusion19.com",
   "lat": 39.805798,
   "lng": 3.1170442,
-  "placeId": "ChIJ-y08KCItlhIROQvnC7bxB4w"
+  "placeId": "ChIJ-y08KCItlhIROQvnC7bxB4w",
+  "michelinId": "500987",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Aleix Serra and Marc Marsol",
+  "chefSource": "michelin"
 }

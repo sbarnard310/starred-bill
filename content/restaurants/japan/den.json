@@ -18,5 +18,8 @@
   "website": "https://www.jimbochoden.com/",
   "lat": 35.67321,
   "lng": 139.712697,
-  "placeId": "ChIJKxOIF5iMGGARiFoVm5Ay8W4"
+  "placeId": "ChIJKxOIF5iMGGARiFoVm5Ay8W4",
+  "michelinId": "1194066",
+  "chef": "Zaiyu Hasegawa",
+  "chefSource": "michelin"
 }

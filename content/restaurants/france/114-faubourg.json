@@ -26,5 +26,10 @@
   "website": "https://www.oetkerhotels.com/fr/hotels/le-bristol-paris/restaurants-bars/114-faubourg/",
   "lat": 48.8718054,
   "lng": 2.3143326,
-  "placeId": "ChIJ4xN1LM9v5kcR8kqBdK645h0"
+  "placeId": "ChIJ4xN1LM9v5kcR8kqBdK645h0",
+  "michelinId": "262212",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

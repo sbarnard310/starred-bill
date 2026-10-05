@@ -19,5 +19,11 @@
   "website": "https://www.wearethewilderness.co.uk/",
   "lat": 52.487252,
   "lng": -1.91044,
-  "placeId": "ChIJz8jboIm8cEgRfyB-H8DV8t0"
+  "placeId": "ChIJz8jboIm8cEgRfyB-H8DV8t0",
+  "michelinId": "519022",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alex Claridge",
+  "chefSource": "michelin"
 }

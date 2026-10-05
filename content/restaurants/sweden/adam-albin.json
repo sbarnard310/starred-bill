@@ -12,5 +12,13 @@
   "website": "https://www.adamalbin.se/",
   "lat": 59.3298102,
   "lng": 18.0687883,
-  "placeId": "ChIJKdaIv2mdX0YR9RuQJ2s4kME"
+  "placeId": "ChIJKdaIv2mdX0YR9RuQJ2s4kME",
+  "michelinId": "465737",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Adam Dahlberg and Albin Wessman",
+  "chefSource": "site"
 }

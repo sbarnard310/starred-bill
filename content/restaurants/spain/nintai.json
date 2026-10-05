@@ -16,5 +16,9 @@
   "website": "https://www.restaurantenintai.com/",
   "lat": 36.5097674,
   "lng": -4.8997997,
-  "placeId": "ChIJdwj_CzzXcg0RbVkvSWuwNTI"
+  "placeId": "ChIJdwj_CzzXcg0RbVkvSWuwNTI",
+  "michelinId": "1195113",
+  "diets": [
+    "gluten-free"
+  ]
 }

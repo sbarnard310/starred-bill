@@ -20,5 +20,10 @@
   "website": "https://luca.restaurant/",
   "lat": 51.5223158,
   "lng": -0.1018292,
-  "placeId": "ChIJpyQHEFEbdkgR1KctxC2Recc"
+  "placeId": "ChIJpyQHEFEbdkgR1KctxC2Recc",
+  "michelinId": "521823",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

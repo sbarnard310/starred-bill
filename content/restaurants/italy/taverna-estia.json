@@ -15,5 +15,12 @@
   "website": "https://www.tavernaestia.it/",
   "lat": 40.9083323,
   "lng": 14.4232938,
-  "placeId": "ChIJayYsomKuOxMRQINDUOZQjaY"
+  "placeId": "ChIJayYsomKuOxMRQINDUOZQjaY",
+  "michelinId": "128109",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Francesco Sposito",
+  "chefSource": "michelin"
 }

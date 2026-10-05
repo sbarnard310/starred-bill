@@ -20,5 +20,13 @@
   "website": "https://www.thepeatinn.co.uk/",
   "lat": 56.278377,
   "lng": -2.884509,
-  "placeId": "ChIJbe_Bt0ZRhkgR0-NEI0LmJxM"
+  "placeId": "ChIJbe_Bt0ZRhkgR0-NEI0LmJxM",
+  "michelinId": "190302",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Geoffrey Smeddle",
+  "chefSource": "site"
 }

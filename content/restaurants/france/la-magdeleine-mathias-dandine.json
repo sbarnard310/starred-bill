@@ -15,5 +15,8 @@
   "website": "https://relais-magdeleine.com/",
   "lat": 43.2989399,
   "lng": 5.6248585,
-  "placeId": "ChIJZ46aIbijyRIRj_dyJNMjkxQ"
+  "placeId": "ChIJZ46aIbijyRIRj_dyJNMjkxQ",
+  "michelinId": "1186093",
+  "chef": "Mathias Dandine",
+  "chefSource": "michelin"
 }

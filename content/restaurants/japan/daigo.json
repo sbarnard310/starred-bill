@@ -31,5 +31,16 @@
   "website": "https://www.atago-daigo.jp/",
   "lat": 35.66344,
   "lng": 139.749184,
-  "placeId": "ChIJLXYlT5SLGGARR1b1ARFUUmw"
+  "placeId": "ChIJLXYlT5SLGGARR1b1ARFUUmw",
+  "michelinId": "1194034",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Yusuke Nomura",
+  "chefSource": "michelin"
 }

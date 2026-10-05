@@ -20,5 +20,11 @@
   "website": "https://roannay.be",
   "lat": 50.4581496,
   "lng": 5.951217,
-  "placeId": "ChIJ88j1dQZ9wEcRz-6yq3mPgk4"
+  "placeId": "ChIJ88j1dQZ9wEcRz-6yq3mPgk4",
+  "michelinId": "1204777",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Matthieu Vande Velde",
+  "chefSource": "michelin"
 }

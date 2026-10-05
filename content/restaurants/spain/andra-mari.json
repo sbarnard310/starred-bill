@@ -25,5 +25,11 @@
   "website": "https://www.andra-mari.com/",
   "lat": 43.234941,
   "lng": -2.832417,
-  "placeId": "ChIJo3esY2tJTg0Rbwb9dv-FeYk"
+  "placeId": "ChIJo3esY2tJTg0Rbwb9dv-FeYk",
+  "michelinId": "220169",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

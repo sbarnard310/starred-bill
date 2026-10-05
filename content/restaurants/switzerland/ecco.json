@@ -13,5 +13,14 @@
   "website": "https://giardinohotels.ch/ascona/restaurants/restaurant-ecco-ascona/",
   "lat": 46.1502304,
   "lng": 8.7900462,
-  "placeId": "ChIJSarOQU3IhUcRQ8PiQVdaXVk"
+  "placeId": "ChIJSarOQU3IhUcRQ8PiQVdaXVk",
+  "michelinId": "195782",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Reto Brändli",
+  "chefSource": "michelin"
 }

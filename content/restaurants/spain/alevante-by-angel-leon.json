@@ -13,5 +13,9 @@
   "website": "https://alevanteangelleon.com/",
   "lat": 36.3468318,
   "lng": -6.1648673,
-  "placeId": "ChIJEctnb0YxDA0RQgstYS-K1Mo"
+  "placeId": "ChIJEctnb0YxDA0RQgstYS-K1Mo",
+  "michelinId": "504009",
+  "diets": [
+    "gluten-free"
+  ]
 }

@@ -15,5 +15,11 @@
   "website": "https://www.pipeandglass.co.uk/",
   "lat": 53.895362,
   "lng": -0.535087,
-  "placeId": "ChIJ-Z3mg-7FeEgR16ZYedveGao"
+  "placeId": "ChIJ-Z3mg-7FeEgR16ZYedveGao",
+  "michelinId": "186493",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -31,5 +31,9 @@
   "website": "https://www.grandlisboapalace.com/en/restaurants-n-bars/palace-garden",
   "lat": 22.144185,
   "lng": 113.573973,
-  "placeId": "ChIJJ9UTQ0JvATQRrfoPltdnTZw"
+  "placeId": "ChIJJ9UTQ0JvATQRrfoPltdnTZw",
+  "michelinId": "1204368",
+  "diets": [
+    "vegetarian"
+  ]
 }

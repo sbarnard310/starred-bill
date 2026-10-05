@@ -13,5 +13,12 @@
   "website": "https://www.resortragaz.ch/de/",
   "lat": 47.0004645,
   "lng": 9.5037451,
-  "placeId": "ChIJaU5I16HLhEcRoqClGBg7u-I"
+  "placeId": "ChIJaU5I16HLhEcRoqClGBg7u-I",
+  "michelinId": "1184740",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

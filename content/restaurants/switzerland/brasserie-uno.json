@@ -13,5 +13,12 @@
   "website": "https://www.brasserieuno.com/",
   "lat": 46.0191567,
   "lng": 7.7475233,
-  "placeId": "ChIJ4Ztpyqc1j0cRDQTgzN3KwXg"
+  "placeId": "ChIJ4Ztpyqc1j0cRDQTgzN3KwXg",
+  "michelinId": "1154675",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Luis Romo, Andreas Alm",
+  "chefSource": "michelin"
 }

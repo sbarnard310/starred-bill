@@ -21,5 +21,10 @@
   "website": "https://www.bridges-nyc.com/",
   "lat": 40.713902,
   "lng": -73.998058,
-  "placeId": "ChIJ5Q8Bl1NbwokRjuIXKz8OfRQ"
+  "placeId": "ChIJ5Q8Bl1NbwokRjuIXKz8OfRQ",
+  "michelinId": "1216261",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -17,5 +17,14 @@
   "website": "https://www.rosesluxury.com/",
   "lat": 38.880648,
   "lng": -76.995059,
-  "placeId": "ChIJUZM20My5t4kRnhgopk_e4YA"
+  "placeId": "ChIJUZM20My5t4kRnhgopk_e4YA",
+  "michelinId": "499990",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

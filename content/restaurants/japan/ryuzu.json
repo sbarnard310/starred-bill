@@ -30,5 +30,8 @@
   "website": "https://www.restaurant-ryuzu.com/",
   "lat": 35.664729,
   "lng": 139.733371,
-  "placeId": "ChIJGcAHwYKLGGARdXaJAZ9g4S4"
+  "placeId": "ChIJGcAHwYKLGGARdXaJAZ9g4S4",
+  "michelinId": "1194233",
+  "chef": "Ryuta Iizuka",
+  "chefSource": "michelin"
 }

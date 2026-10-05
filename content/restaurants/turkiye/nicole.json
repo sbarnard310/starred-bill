@@ -12,5 +12,11 @@
   "website": "https://nicole.com.tr/",
   "lat": 41.0302119,
   "lng": 28.9777509,
-  "placeId": "ChIJzbHMuN-5yhQRZp8L9yPb-NM"
+  "placeId": "ChIJzbHMuN-5yhQRZp8L9yPb-NM",
+  "michelinId": "1195531",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

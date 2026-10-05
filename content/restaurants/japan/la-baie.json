@@ -19,5 +19,8 @@
   "lunchType": "menu",
   "lunchNote": "Cheapest lunch course (others up to ¥29,000)",
   "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/kq995041"
+  "lunchSource": "https://omakaseje.com/restaurants/kq995041",
+  "michelinId": "1193279",
+  "chef": "Christophe Gibert",
+  "chefSource": "michelin"
 }

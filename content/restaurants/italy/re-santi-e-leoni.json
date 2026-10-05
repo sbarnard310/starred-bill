@@ -15,5 +15,13 @@
   "website": "https://resantieleoni.com/",
   "lat": 40.9282413,
   "lng": 14.5266743,
-  "placeId": "ChIJcVDFaZmzOxMRdMyR66kz1o8"
+  "placeId": "ChIJcVDFaZmzOxMRdMyR66kz1o8",
+  "michelinId": "1191970",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Francesco Nunziata",
+  "chefSource": "site"
 }

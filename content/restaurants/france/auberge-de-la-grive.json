@@ -15,5 +15,8 @@
   "website": "https://aubergedelagrive.com",
   "lat": 49.5167484,
   "lng": 3.2253823,
-  "placeId": "ChIJG2xBa3Np6EcRdRNeCYEXJUo"
+  "placeId": "ChIJG2xBa3Np6EcRdRNeCYEXJUo",
+  "michelinId": "1208108",
+  "chef": "Nicolas Gautier",
+  "chefSource": "michelin"
 }

@@ -26,5 +26,15 @@
   "website": "https://www.mandarinoriental.com/es-es/madrid/hotel-ritz/dine/deessa",
   "lat": 40.415856,
   "lng": -3.692812,
-  "placeId": "ChIJScMpJv4pQg0R9suDAQ4Lx-I"
+  "placeId": "ChIJScMpJv4pQg0R9suDAQ4Lx-I",
+  "michelinId": "1196919",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Quique Dacosta and Domenico Vildacci",
+  "chefSource": "michelin"
 }

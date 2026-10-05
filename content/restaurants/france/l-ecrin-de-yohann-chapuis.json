@@ -23,5 +23,10 @@
   "website": "https://www.restaurant-greuze.fr",
   "lat": 46.5656876,
   "lng": 4.9078059,
-  "placeId": "ChIJtUUAzgka80cRTl935ZdYY7s"
+  "placeId": "ChIJtUUAzgka80cRTl935ZdYY7s",
+  "michelinId": "9031",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

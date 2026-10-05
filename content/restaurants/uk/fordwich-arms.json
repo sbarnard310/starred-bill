@@ -16,5 +16,12 @@
   "website": "https://www.fordwicharms.co.uk/",
   "lat": 51.295738,
   "lng": 1.12642,
-  "placeId": "ChIJ62pJuH7K3kcRIlpgEkFwFks"
+  "placeId": "ChIJ62pJuH7K3kcRIlpgEkFwFks",
+  "michelinId": "555447",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

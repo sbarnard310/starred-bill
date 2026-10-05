@@ -23,5 +23,11 @@
   "lunchSource": "https://www.siksinhot.com/P/481964",
   "lat": 37.521137,
   "lng": 127.04969,
-  "placeId": "ChIJVVjCIW6kfDUR7cOSCmAmdUE"
+  "placeId": "ChIJVVjCIW6kfDUR7cOSCmAmdUE",
+  "michelinId": "548152",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Kyung-won Jang",
+  "chefSource": "michelin"
 }

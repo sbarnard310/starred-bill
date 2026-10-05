@@ -12,5 +12,13 @@
   "website": "https://www.madameolympe.com.br/",
   "lat": -22.9810638,
   "lng": -43.2227631,
-  "placeId": "ChIJE8CiVgDVmwAR79WColXIpss"
+  "placeId": "ChIJE8CiVgDVmwAR79WColXIpss",
+  "michelinId": "1218866",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Claude Troisgros and Jéssica Trindade",
+  "chefSource": "michelin"
 }

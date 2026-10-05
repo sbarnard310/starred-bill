@@ -25,5 +25,11 @@
   "website": "https://nouri.com.sg/",
   "lat": 1.28086,
   "lng": 103.84713,
-  "placeId": "ChIJq9pPbw0Z2jERqnm8RBMSAjY"
+  "placeId": "ChIJq9pPbw0Z2jERqnm8RBMSAjY",
+  "michelinId": "560366",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Ivan Brehm",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,8 @@
   "website": "https://fleurdelin.be/",
   "lat": 51.0757529,
   "lng": 4.040875,
-  "placeId": "ChIJs12TkoKaw0cRT2bEO-xxCfE"
+  "placeId": "ChIJs12TkoKaw0cRT2bEO-xxCfE",
+  "michelinId": "417211",
+  "chef": "Lode De Roover",
+  "chefSource": "michelin"
 }

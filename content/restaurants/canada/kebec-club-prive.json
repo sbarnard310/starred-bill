@@ -13,5 +13,10 @@
   "website": "https://www.kebecclubprive.ca/",
   "lat": 46.8157354,
   "lng": -71.2195792,
-  "placeId": "ChIJ6yHKky-XuEwRevN9SNTIbNo"
+  "placeId": "ChIJ6yHKky-XuEwRevN9SNTIbNo",
+  "michelinId": "1215949",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

@@ -20,5 +20,9 @@
   "website": "https://www.philippe-meyers.be/",
   "lat": 50.6823016,
   "lng": 4.3700555,
-  "placeId": "ChIJi1yIdgjOw0cRQkCRbeF97NA"
+  "placeId": "ChIJi1yIdgjOw0cRQkCRbeF97NA",
+  "michelinId": "209268",
+  "diets": [
+    "vegetarian"
+  ]
 }

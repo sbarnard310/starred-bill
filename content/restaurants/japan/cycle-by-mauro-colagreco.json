@@ -35,5 +35,12 @@
   "website": "https://cyclerestaurant.com/",
   "lat": 35.68734,
   "lng": 139.76205,
-  "placeId": "ChIJT0lK9DSNGGARIoc0dYDKbYU"
+  "placeId": "ChIJT0lK9DSNGGARIoc0dYDKbYU",
+  "michelinId": "1212474",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Mauro Colagreco",
+  "chefSource": "site"
 }

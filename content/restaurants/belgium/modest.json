@@ -13,5 +13,9 @@
   "website": "https://www.restaurantmodest.be/",
   "lat": 51.0494814,
   "lng": 5.599175,
-  "placeId": "ChIJYS1lLdzRwEcR7hUSNjHVKZs"
+  "placeId": "ChIJYS1lLdzRwEcR7hUSNjHVKZs",
+  "michelinId": "1201040",
+  "diets": [
+    "vegetarian"
+  ]
 }

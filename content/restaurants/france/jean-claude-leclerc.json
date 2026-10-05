@@ -23,5 +23,10 @@
   "website": "https://restaurant-jcl.com/",
   "lat": 45.7788173,
   "lng": 3.0804584,
-  "placeId": "ChIJZeiJjdwb90cRF9JgKVH17a0"
+  "placeId": "ChIJZeiJjdwb90cRF9JgKVH17a0",
+  "michelinId": "2231",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

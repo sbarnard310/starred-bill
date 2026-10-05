@@ -14,5 +14,11 @@
   "website": "https://www.addisondelmar.com/",
   "lat": 32.9412972,
   "lng": -117.1988908,
-  "placeId": "ChIJrVfI5sEH3IARfAmbFue9xNc"
+  "placeId": "ChIJrVfI5sEH3IARfAmbFue9xNc",
+  "michelinId": "564447",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "William Bradley",
+  "chefSource": "michelin"
 }

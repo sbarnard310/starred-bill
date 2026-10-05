@@ -23,5 +23,14 @@
   "website": "https://www.tombrownatthecapital.com/",
   "lat": 51.5001262,
   "lng": -0.1615559,
-  "placeId": "ChIJcxfV3jgFdkgRPIzugJ79Ki0"
+  "placeId": "ChIJcxfV3jgFdkgRPIzugJ79Ki0",
+  "michelinId": "1240806",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Tom Brown",
+  "chefSource": "michelin"
 }

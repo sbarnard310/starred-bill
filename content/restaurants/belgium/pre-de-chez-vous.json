@@ -13,5 +13,9 @@
   "website": "https://www.predechezvous.be",
   "lat": 50.4802711,
   "lng": 4.882023,
-  "placeId": "ChIJ53j0S4OZwUcRxRBBPGi5gZM"
+  "placeId": "ChIJ53j0S4OZwUcRxRBBPGi5gZM",
+  "michelinId": "1200481",
+  "diets": [
+    "vegetarian"
+  ]
 }

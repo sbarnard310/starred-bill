@@ -13,5 +13,12 @@
   "website": "https://kettnerskamota.de/",
   "lat": 51.3889835,
   "lng": 7.0014943,
-  "placeId": "ChIJQTh6LSHFuEcRZszCqCKla9Q"
+  "placeId": "ChIJQTh6LSHFuEcRZszCqCKla9Q",
+  "michelinId": "1200004",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jürgen Kettner",
+  "chefSource": "michelin"
 }

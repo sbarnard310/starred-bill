@@ -13,5 +13,12 @@
   "website": "https://www.chateaudevignee.be/",
   "lat": 50.1577096,
   "lng": 5.0748306,
-  "placeId": "ChIJn0_BK-LHwUcRq4_u64GcKkg"
+  "placeId": "ChIJn0_BK-LHwUcRq4_u64GcKkg",
+  "michelinId": "1191932",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Marius Bosmans",
+  "chefSource": "site"
 }

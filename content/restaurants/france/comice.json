@@ -20,5 +20,14 @@
   "website": "https://comice.paris/",
   "lat": 48.8495058,
   "lng": 2.2761393,
-  "placeId": "ChIJAc56Jah65kcRPUvIVLIaIjI"
+  "placeId": "ChIJAc56Jah65kcRPUvIVLIaIjI",
+  "michelinId": "542769",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Noam Gedalof",
+  "chefSource": "michelin"
 }

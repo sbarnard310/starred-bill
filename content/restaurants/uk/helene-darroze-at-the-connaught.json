@@ -20,5 +20,11 @@
   "website": "https://www.the-connaught.co.uk/restaurants-bars/helene-darroze-at-the-connaught/",
   "lat": 51.510188,
   "lng": -0.1492905,
-  "placeId": "ChIJNdaqLSwFdkgRcp3iqGlL6Ek"
+  "placeId": "ChIJNdaqLSwFdkgRcp3iqGlL6Ek",
+  "michelinId": "234580",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Hélène Darroze",
+  "chefSource": "michelin"
 }

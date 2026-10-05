@@ -20,5 +20,15 @@
   "website": "https://www.thecrosskenilworth.co.uk/",
   "lat": 52.350357,
   "lng": -1.579699,
-  "placeId": "ChIJEfI24KnKcEgRux16UWonpic"
+  "placeId": "ChIJEfI24KnKcEgRux16UWonpic",
+  "michelinId": "410110",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Adam Bennett",
+  "chefSource": "michelin"
 }

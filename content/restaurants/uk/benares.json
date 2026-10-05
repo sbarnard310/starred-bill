@@ -21,5 +21,15 @@
   "website": "https://benaresrestaurant.com/",
   "lat": 51.5097876,
   "lng": -0.1450274,
-  "placeId": "ChIJAStk3ysFdkgR8XBBK_CEfuU"
+  "placeId": "ChIJAStk3ysFdkgR8XBBK_CEfuU",
+  "michelinId": "69398",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Sameer Taneja",
+  "chefSource": "michelin"
 }

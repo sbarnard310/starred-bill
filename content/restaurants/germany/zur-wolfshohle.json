@@ -14,5 +14,9 @@
   "website": "https://www.wolfshoehle-freiburg.de",
   "lat": 47.9944494,
   "lng": 7.8547474,
-  "placeId": "ChIJJ6-J6pkckUcR2OpI_Oev2yc"
+  "placeId": "ChIJJ6-J6pkckUcR2OpI_Oev2yc",
+  "michelinId": "1198858",
+  "diets": [
+    "vegetarian"
+  ]
 }

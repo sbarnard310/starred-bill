@@ -23,5 +23,12 @@
   "website": "https://www.maisons-de-bricourt.com/fr/page/le-coquillage",
   "lat": 48.6431008,
   "lng": -1.8711983,
-  "placeId": "ChIJ-QZAMLudDkgRcPgG-jo2NTU"
+  "placeId": "ChIJ-QZAMLudDkgRcPgG-jo2NTU",
+  "michelinId": "1584",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Hugo Roellinger",
+  "chefSource": "michelin"
 }

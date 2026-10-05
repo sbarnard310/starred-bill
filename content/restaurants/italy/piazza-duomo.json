@@ -13,5 +13,11 @@
   "website": "https://www.piazzaduomoalba.it",
   "lat": 44.7006536,
   "lng": 8.0363522,
-  "placeId": "ChIJSw-GLl2z0hIRX8zyKXltoq8"
+  "placeId": "ChIJSw-GLl2z0hIRX8zyKXltoq8",
+  "michelinId": "124135",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Enrico Crippa",
+  "chefSource": "michelin"
 }

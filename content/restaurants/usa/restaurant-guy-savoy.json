@@ -12,5 +12,13 @@
   "website": "https://www.caesars.com/caesars-palace/restaurants/guy-savoy",
   "lat": 36.1152957,
   "lng": -115.1747136,
-  "placeId": "ChIJIWDXdTvEyIARa1jZlG5t6Uc"
+  "placeId": "ChIJIWDXdTvEyIARa1jZlG5t6Uc",
+  "michelinId": "1201402",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Guy Savoy",
+  "chefSource": "site"
 }

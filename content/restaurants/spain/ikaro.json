@@ -13,5 +13,11 @@
   "website": "https://www.restauranteikaro.com/",
   "lat": 42.4643373,
   "lng": -2.4485193,
-  "placeId": "ChIJlziupUerWg0RenC8MSqseg0"
+  "placeId": "ChIJlziupUerWg0RenC8MSqseg0",
+  "michelinId": "550340",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Carolina Sánchez and Iñaki Murua",
+  "chefSource": "michelin"
 }

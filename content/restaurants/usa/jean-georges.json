@@ -22,5 +22,12 @@
   "website": "https://www.jean-georgesrestaurant.com/",
   "lat": 40.76907,
   "lng": -73.98155,
-  "placeId": "ChIJh5JzbfZYwokRR7KqJOksL7Y"
+  "placeId": "ChIJh5JzbfZYwokRR7KqJOksL7Y",
+  "michelinId": "70381",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Joseph Rhee",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,11 @@
   "website": "https://www.gordonramsayrestaurants.com/high/bishopsgate/",
   "lat": 51.5144387,
   "lng": -0.0834119,
-  "placeId": "ChIJ_0dDsFIDdkgRhVvXnvnF49A"
+  "placeId": "ChIJ_0dDsFIDdkgRhVvXnvnF49A",
+  "michelinId": "1215971",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

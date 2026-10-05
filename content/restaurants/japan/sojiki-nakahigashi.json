@@ -12,5 +12,8 @@
   "website": "https://soujiki-nakahigashi.jp/",
   "lat": 35.027601,
   "lng": 135.792708,
-  "placeId": "ChIJga5LcQEJAWARQ9OxOxh3-m0"
+  "placeId": "ChIJga5LcQEJAWARQ9OxOxh3-m0",
+  "michelinId": "1192989",
+  "chef": "Hisao Nakahigashi",
+  "chefSource": "michelin"
 }

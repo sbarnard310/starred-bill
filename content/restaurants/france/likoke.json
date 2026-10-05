@@ -15,5 +15,12 @@
   "website": "https://likoke.fr/",
   "lat": 44.4040212,
   "lng": 4.133207,
-  "placeId": "ChIJ02pfifTztBIR0j5HH-jpqzg"
+  "placeId": "ChIJ02pfifTztBIR0j5HH-jpqzg",
+  "michelinId": "402223",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Guido Alfredo Niño Torres",
+  "chefSource": "michelin"
 }

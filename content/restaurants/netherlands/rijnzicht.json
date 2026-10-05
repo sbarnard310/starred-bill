@@ -13,5 +13,14 @@
   "website": "https://www.rijnzicht.nl/",
   "lat": 51.890057,
   "lng": 6.0226068,
-  "placeId": "ChIJSUHKNUCgx0cRJ-9nYFTfYMk"
+  "placeId": "ChIJSUHKNUCgx0cRJ-9nYFTfYMk",
+  "michelinId": "544250",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Mike Cornelissen",
+  "chefSource": "michelin"
 }

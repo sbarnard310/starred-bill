@@ -25,5 +25,8 @@
   "website": "https://www.restaurants-toureiffel.com/fr/restaurant-jules-verne.html",
   "lat": 48.85756,
   "lng": 2.29462,
-  "placeId": "ChIJl_7p8uFv5kcRj5ZGEf31ILM"
+  "placeId": "ChIJl_7p8uFv5kcRj5ZGEf31ILM",
+  "michelinId": "5988",
+  "chef": "Frédéric Anton",
+  "chefSource": "site"
 }

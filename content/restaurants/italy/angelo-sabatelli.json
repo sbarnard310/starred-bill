@@ -13,5 +13,12 @@
   "website": "https://www.angelosabatelliristorante.com",
   "lat": 40.8500527,
   "lng": 17.1227135,
-  "placeId": "ChIJUa4VG2WxRxMRafIwGafrFVE"
+  "placeId": "ChIJUa4VG2WxRxMRafIwGafrFVE",
+  "michelinId": "526276",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Angelo Sabatelli",
+  "chefSource": "michelin"
 }

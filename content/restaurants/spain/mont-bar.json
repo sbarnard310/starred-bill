@@ -31,5 +31,9 @@
   "website": "https://www.montbar.com/",
   "lat": 41.386257,
   "lng": 2.161851,
-  "placeId": "ChIJ0dN7e4yipBIRegh8fqP2o98"
+  "placeId": "ChIJ0dN7e4yipBIRegh8fqP2o98",
+  "michelinId": "471282",
+  "diets": [
+    "gluten-free"
+  ]
 }

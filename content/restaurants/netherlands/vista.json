@@ -13,5 +13,11 @@
   "website": "https://www.vistawillemstad.nl/",
   "lat": 51.6960377,
   "lng": 4.4430462,
-  "placeId": "ChIJA-FL6eI7xEcR9UER4H3wHfU"
+  "placeId": "ChIJA-FL6eI7xEcR9UER4H3wHfU",
+  "michelinId": "488719",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

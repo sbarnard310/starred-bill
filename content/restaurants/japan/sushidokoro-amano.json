@@ -19,5 +19,9 @@
   "lunchType": "menu",
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/jf903327"
+  "lunchSource": "https://omakaseje.com/restaurants/jf903327",
+  "michelinId": "1193172",
+  "diets": [
+    "vegetarian"
+  ]
 }

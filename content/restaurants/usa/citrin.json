@@ -17,5 +17,8 @@
   "website": "https://www.citrinandmelisse.com/",
   "lat": 34.024447,
   "lng": -118.491439,
-  "placeId": "ChIJB1gJrcelwoARTqn5Yh3E57s"
+  "placeId": "ChIJB1gJrcelwoARTqn5Yh3E57s",
+  "michelinId": "1196539",
+  "chef": "Ken Takayama",
+  "chefSource": "michelin"
 }

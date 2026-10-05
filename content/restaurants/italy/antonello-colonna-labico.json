@@ -23,5 +23,16 @@
   "website": "https://antonellocolonna.it/resort-spa/ristorante/",
   "lat": 41.78292,
   "lng": 12.873689,
-  "placeId": "ChIJxVH5zWJ-JRMR0ChUhYsqjb8"
+  "placeId": "ChIJxVH5zWJ-JRMR0ChUhYsqjb8",
+  "michelinId": "365827",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Antonello Colonna",
+  "chefSource": "site"
 }

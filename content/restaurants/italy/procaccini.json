@@ -25,5 +25,14 @@
   "website": "https://procaccini.com/",
   "lat": 45.48374,
   "lng": 9.170846,
-  "placeId": "ChIJ-wcYPsPBhkcR-HLMSUocJdI"
+  "placeId": "ChIJ-wcYPsPBhkcR-HLMSUocJdI",
+  "michelinId": "1214646",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Emin Haziri",
+  "chefSource": "michelin"
 }

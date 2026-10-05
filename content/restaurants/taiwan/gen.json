@@ -26,5 +26,9 @@
   "website": "https://www.gentaiwan.com/",
   "lat": 22.6042,
   "lng": 120.29872,
-  "placeId": "ChIJkR6GIAADbjQRlQjRUqtZbz8"
+  "placeId": "ChIJkR6GIAADbjQRlQjRUqtZbz8",
+  "michelinId": "1214088",
+  "diets": [
+    "vegetarian"
+  ]
 }

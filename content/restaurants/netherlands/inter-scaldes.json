@@ -13,5 +13,13 @@
   "website": "https://www.interscaldes.nl",
   "lat": 51.4571608,
   "lng": 4.0241076,
-  "placeId": "ChIJjwM2-8dkxEcR1h5jNVeLrpw"
+  "placeId": "ChIJjwM2-8dkxEcR1h5jNVeLrpw",
+  "michelinId": "212683",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jannis Brevet",
+  "chefSource": "michelin"
 }

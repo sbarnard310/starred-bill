@@ -15,5 +15,12 @@
   "website": "https://www.ristorantetivolicortina.it/",
   "lat": 46.5338851,
   "lng": 12.1222949,
-  "placeId": "ChIJxR_5mSs0eEcR8lzcFs6Alx4"
+  "placeId": "ChIJxR_5mSs0eEcR8lzcFs6Alx4",
+  "michelinId": "132267",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

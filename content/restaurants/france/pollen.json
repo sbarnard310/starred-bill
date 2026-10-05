@@ -15,5 +15,9 @@
   "website": "https://www.pollen-restaurant.fr",
   "lat": 43.9493415,
   "lng": 4.8035568,
-  "placeId": "ChIJ__-IioXrtRIRlEJPMJWgcoA"
+  "placeId": "ChIJ__-IioXrtRIRlEJPMJWgcoA",
+  "michelinId": "1000267",
+  "diets": [
+    "vegetarian"
+  ]
 }

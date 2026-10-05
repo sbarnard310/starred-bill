@@ -13,5 +13,9 @@
   "website": "https://gastrome.dk/",
   "lat": 56.1870316,
   "lng": 10.2177829,
-  "placeId": "ChIJXxtXwZY_TEYRtGWo4R4nmNw"
+  "placeId": "ChIJXxtXwZY_TEYRtGWo4R4nmNw",
+  "michelinId": "446293",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -15,5 +15,11 @@
   "website": "https://elrincondejuancarlos.com/",
   "lat": 28.1018325,
   "lng": -16.7535126,
-  "placeId": "ChIJG61GKRWMagwRQjBhxSfEtwg"
+  "placeId": "ChIJG61GKRWMagwRQjBhxSfEtwg",
+  "michelinId": "1194880",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Juan Carlos Padrón and Jonathan Padrón",
+  "chefSource": "michelin"
 }

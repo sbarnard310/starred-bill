@@ -15,5 +15,13 @@
   "website": "https://www.hotel-chateau-blanchard.com/",
   "lat": 45.63603,
   "lng": 4.385362,
-  "placeId": "ChIJb5AG3_hQ9EcRAVAM02eqUt4"
+  "placeId": "ChIJb5AG3_hQ9EcRAVAM02eqUt4",
+  "michelinId": "10745",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Sylvain Roux",
+  "chefSource": "michelin"
 }

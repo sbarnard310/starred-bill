@@ -13,5 +13,8 @@
   "website": "https://www.segreto.ch/de",
   "lat": 47.450773,
   "lng": 9.3964148,
-  "placeId": "ChIJE80Rc3wem0cRoaxcj148ZFE"
+  "placeId": "ChIJE80Rc3wem0cRoaxcj148ZFE",
+  "michelinId": "180017",
+  "chef": "Martin Benninger",
+  "chefSource": "michelin"
 }

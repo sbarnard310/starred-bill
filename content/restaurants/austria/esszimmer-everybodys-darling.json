@@ -12,5 +12,11 @@
   "website": "https://everybodysdarling.at/esszimmer/",
   "lat": 48.2108907,
   "lng": 16.3717837,
-  "placeId": "ChIJz_gBHs0HbUcR8sc3K6dfT7c"
+  "placeId": "ChIJz_gBHs0HbUcR8sc3K6dfT7c",
+  "michelinId": "1205026",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alexander Kumptner",
+  "chefSource": "michelin"
 }

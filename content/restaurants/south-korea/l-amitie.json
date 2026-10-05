@@ -23,5 +23,8 @@
   "lunchSource": "https://www.diningcode.com/profile.php?rid=JTwMMvwInBjG",
   "lat": 37.52591,
   "lng": 127.04455,
-  "placeId": "ChIJH2jZ86GlfDURAVZBp3imf64"
+  "placeId": "ChIJH2jZ86GlfDURAVZBp3imf64",
+  "michelinId": "511975",
+  "chef": "Jang Myoung-sik",
+  "chefSource": "michelin"
 }

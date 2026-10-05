@@ -13,5 +13,14 @@
   "website": "https://www.paolocasanova.ch/engadin/restaurantcolani-by-paolocasanova.html",
   "lat": 46.5860919,
   "lng": 9.9379409,
-  "placeId": "ChIJX8onNahjg0cRrvUI-Ly4f6I"
+  "placeId": "ChIJX8onNahjg0cRrvUI-Ly4f6I",
+  "michelinId": "182422",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Paolo Casanova",
+  "chefSource": "michelin"
 }

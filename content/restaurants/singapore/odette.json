@@ -24,5 +24,12 @@
   "website": "https://odetterestaurant.com/",
   "lat": 1.289646,
   "lng": 103.8516,
-  "placeId": "ChIJbUjtT6cZ2jERJOB8kHFKljI"
+  "placeId": "ChIJbUjtT6cZ2jERJOB8kHFKljI",
+  "michelinId": "501592",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Julien Royer",
+  "chefSource": "michelin"
 }

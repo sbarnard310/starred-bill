@@ -12,5 +12,12 @@
   "website": "https://www.setzkasten-duesseldorf.de/",
   "lat": 51.2195261,
   "lng": 6.782331,
-  "placeId": "ChIJBwF3z37LuEcRsCmCkeB95QY"
+  "placeId": "ChIJBwF3z37LuEcRsCmCkeB95QY",
+  "michelinId": "567906",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Egor Hopp",
+  "chefSource": "michelin"
 }

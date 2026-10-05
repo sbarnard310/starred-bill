@@ -13,5 +13,11 @@
   "website": "https://zarzo.nl/",
   "lat": 51.4352972,
   "lng": 5.4841506,
-  "placeId": "ChIJZdE37P3YxkcR7Aj4GavWs-8"
+  "placeId": "ChIJZdE37P3YxkcR7Aj4GavWs-8",
+  "michelinId": "417270",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

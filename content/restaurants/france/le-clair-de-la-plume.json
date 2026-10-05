@@ -25,5 +25,13 @@
   "website": "https://www.clairplume.com",
   "lat": 44.4195003,
   "lng": 4.9071356,
-  "placeId": "ChIJFVpJD5F6tRIRY8SFoay70w0"
+  "placeId": "ChIJFVpJD5F6tRIRY8SFoay70w0",
+  "michelinId": "286100",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Benjamin Reilhes",
+  "chefSource": "michelin"
 }

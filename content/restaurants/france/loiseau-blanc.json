@@ -25,5 +25,11 @@
   "website": "https://www.peninsula.com/fr/paris/hotel-fine-dining/french-rooftop-loiseau-blanc",
   "lat": 48.8707602,
   "lng": 2.2933134,
-  "placeId": "ChIJZXST6-5v5kcR2yYcipYCUqA"
+  "placeId": "ChIJZXST6-5v5kcR2yYcipYCUqA",
+  "michelinId": "449125",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "David Bizet",
+  "chefSource": "michelin"
 }

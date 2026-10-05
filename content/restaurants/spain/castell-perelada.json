@@ -25,5 +25,8 @@
   "website": "https://www.castellperaladarestaurant.com/",
   "lat": 42.307884,
   "lng": 3.01149,
-  "placeId": "ChIJ99YGoNGOuhIR15l-EaBibZA"
+  "placeId": "ChIJ99YGoNGOuhIR15l-EaBibZA",
+  "michelinId": "504898",
+  "chef": "Javier Martínez",
+  "chefSource": "michelin"
 }

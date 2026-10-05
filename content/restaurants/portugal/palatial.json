@@ -13,5 +13,11 @@
   "website": "https://palatial.pt/",
   "lat": 41.5238795,
   "lng": -8.4192035,
-  "placeId": "ChIJaRHoTr_5JA0ROdasYaaUxdc"
+  "placeId": "ChIJaRHoTr_5JA0ROdasYaaUxdc",
+  "michelinId": "1216037",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Rui Filipe",
+  "chefSource": "site"
 }

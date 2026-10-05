@@ -13,5 +13,11 @@
   "website": "https://www.restaurantmoritz.at/",
   "lat": 46.6318956,
   "lng": 14.449163,
-  "placeId": "ChIJJeI5cyEMcEcRDdKSanBW8nE"
+  "placeId": "ChIJJeI5cyEMcEcRDdKSanBW8nE",
+  "michelinId": "1212679",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Roman Pichler",
+  "chefSource": "michelin"
 }

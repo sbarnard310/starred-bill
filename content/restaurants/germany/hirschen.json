@@ -15,5 +15,9 @@
   "website": "https://www.douce-steiner.de",
   "lat": 47.8404612,
   "lng": 7.7088806,
-  "placeId": "ChIJK4e_vuAHkUcRSW8QqafGTSE"
+  "placeId": "ChIJK4e_vuAHkUcRSW8QqafGTSE",
+  "michelinId": "78032",
+  "diets": [
+    "vegetarian"
+  ]
 }

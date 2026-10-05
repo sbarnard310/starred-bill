@@ -16,5 +16,12 @@
   "website": "https://restaurantelacabana.com/",
   "lat": 37.92464,
   "lng": -1.163767,
-  "placeId": "ChIJi59-phx_Yw0RuSCDtYjHTRk"
+  "placeId": "ChIJi59-phx_Yw0RuSCDtYjHTRk",
+  "michelinId": "221809",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Pablo González",
+  "chefSource": "michelin"
 }

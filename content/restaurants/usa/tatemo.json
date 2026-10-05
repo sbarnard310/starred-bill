@@ -14,5 +14,12 @@
   "website": "https://www.tatemohtx.com/",
   "lat": 29.8068644,
   "lng": -95.4605072,
-  "placeId": "ChIJCbdfsUW_QIYRrevB02-CIV0"
+  "placeId": "ChIJCbdfsUW_QIYRrevB02-CIV0",
+  "michelinId": "1207798",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Emmanuel Chavez",
+  "chefSource": "michelin"
 }

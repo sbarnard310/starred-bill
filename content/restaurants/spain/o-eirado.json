@@ -13,5 +13,11 @@
   "website": "https://www.oeirado.com",
   "lat": 42.4326366,
   "lng": -8.6434132,
-  "placeId": "ChIJ33xNfsZxLw0R_VlU-oT6B4A"
+  "placeId": "ChIJ33xNfsZxLw0R_VlU-oT6B4A",
+  "michelinId": "226406",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Iñaki Bretal",
+  "chefSource": "michelin"
 }

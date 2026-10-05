@@ -13,5 +13,8 @@
   "website": "https://www.restauranteordesa.es",
   "lat": 42.5475683,
   "lng": 0.1624873,
-  "placeId": "ChIJeULZtLVFWA0Rodzf0GPKlso"
+  "placeId": "ChIJeULZtLVFWA0Rodzf0GPKlso",
+  "michelinId": "1199939",
+  "chef": "Rubén Coronas",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,12 @@
   "website": "https://www.ruths-hotel.dk/en/oke",
   "lat": 57.7270067,
   "lng": 10.5216174,
-  "placeId": "ChIJbUjcg4pPT0YRMiTyyDAK05s"
+  "placeId": "ChIJbUjcg4pPT0YRMiTyyDAK05s",
+  "michelinId": "1240769",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jack Cramer",
+  "chefSource": "site"
 }

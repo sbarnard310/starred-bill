@@ -13,5 +13,13 @@
   "website": "https://www.maassftl.com/",
   "lat": 26.1301498,
   "lng": -80.1035216,
-  "placeId": "ChIJF6pqghMB2YgRl7OIepJ4H0s"
+  "placeId": "ChIJF6pqghMB2YgRl7OIepJ4H0s",
+  "michelinId": "1211395",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "David Brito",
+  "chefSource": "michelin"
 }

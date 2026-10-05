@@ -15,5 +15,13 @@
   "website": "https://www.baumaniere.com",
   "lat": 43.7402659,
   "lng": 4.7873628,
-  "placeId": "ChIJH_doE0LhtRIROj436AJRQ-k"
+  "placeId": "ChIJH_doE0LhtRIROj436AJRQ-k",
+  "michelinId": "815",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Glenn Viel",
+  "chefSource": "michelin"
 }

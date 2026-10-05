@@ -19,5 +19,11 @@
   "website": "https://www.labellevie-hotel.com",
   "lat": 43.970939,
   "lng": 4.5895596,
-  "placeId": "ChIJnbBd07PHtRIRhhM5CvRuQ6w"
+  "placeId": "ChIJnbBd07PHtRIRhhM5CvRuQ6w",
+  "michelinId": "1241679",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Denis Martin",
+  "chefSource": "michelin"
 }

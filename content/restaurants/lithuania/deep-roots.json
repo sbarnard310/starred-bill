@@ -13,5 +13,10 @@
   "website": "https://deeproots.lt/",
   "lat": 54.680328,
   "lng": 25.2810799,
-  "placeId": "ChIJLTomE-aV3UYRNSKLfm9_3q0"
+  "placeId": "ChIJLTomE-aV3UYRNSKLfm9_3q0",
+  "michelinId": "1249514",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

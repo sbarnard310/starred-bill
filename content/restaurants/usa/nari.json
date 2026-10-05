@@ -17,5 +17,13 @@
   "website": "https://www.narisf.com/",
   "lat": 37.785542,
   "lng": -122.428832,
-  "placeId": "ChIJCf9p82aBhYARQolIoRsK6fE"
+  "placeId": "ChIJCf9p82aBhYARQolIoRsK6fE",
+  "michelinId": "1185781",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Pim Techamuanvivit",
+  "chefSource": "michelin"
 }

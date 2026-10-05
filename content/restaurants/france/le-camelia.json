@@ -19,5 +19,11 @@
   "website": "https://www.lecameliadebry.com/",
   "lat": 50.319083,
   "lng": 3.676437,
-  "placeId": "ChIJxX0b8pn1wkcRa4NL6Hw4sWA"
+  "placeId": "ChIJxX0b8pn1wkcRa4NL6Hw4sWA",
+  "michelinId": "1242759",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

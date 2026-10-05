@@ -13,5 +13,14 @@
   "website": "https://www.portobay.com/en/restaurants/restaurants-madeira/il-gallo-doro",
   "lat": 32.6382988,
   "lng": -16.9266478,
-  "placeId": "ChIJtSh4JPdfYAwRh7W55N3cEjY"
+  "placeId": "ChIJtSh4JPdfYAwRh7W55N3cEjY",
+  "michelinId": "216835",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Benoît Sinthon",
+  "chefSource": "michelin"
 }

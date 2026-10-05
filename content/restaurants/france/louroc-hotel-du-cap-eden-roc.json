@@ -15,5 +15,11 @@
   "website": "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc",
   "lat": 43.5483167,
   "lng": 7.1216544,
-  "placeId": "ChIJgUQSbb1_zhIRaXQjX38vUD8"
+  "placeId": "ChIJgUQSbb1_zhIRaXQjX38vUD8",
+  "michelinId": "373",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sébastien Broda",
+  "chefSource": "michelin"
 }

@@ -19,5 +19,11 @@
   "lunchType": "menu",
   "lunchNote": "Cheapest lunch course (others up to ¥33,550)",
   "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/iw312088"
+  "lunchSource": "https://omakaseje.com/restaurants/iw312088",
+  "michelinId": "1210401",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Shohei Mori",
+  "chefSource": "michelin"
 }

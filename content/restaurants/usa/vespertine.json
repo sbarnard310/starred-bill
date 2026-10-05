@@ -17,5 +17,11 @@
   "website": "https://vespertine.la/",
   "lat": 34.024204,
   "lng": -118.38166,
-  "placeId": "ChIJVd04SYW5woAROE52K0dXeYE"
+  "placeId": "ChIJVd04SYW5woAROE52K0dXeYE",
+  "michelinId": "560079",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jordan Kahn",
+  "chefSource": "michelin"
 }

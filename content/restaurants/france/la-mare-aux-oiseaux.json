@@ -23,5 +23,11 @@
   "website": "https://mareauxoiseaux.fr",
   "lat": 47.3729206,
   "lng": -2.2140297,
-  "placeId": "ChIJn79kkqZjBUgRYLjdQyhLuYA"
+  "placeId": "ChIJn79kkqZjBUgRYLjdQyhLuYA",
+  "michelinId": "7974",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Éric Guérin",
+  "chefSource": "site"
 }

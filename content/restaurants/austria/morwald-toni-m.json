@@ -13,5 +13,8 @@
   "website": "https://www.moerwald.at/en/",
   "lat": 48.4392766,
   "lng": 15.7864341,
-  "placeId": "ChIJZVN5nbRibUcRgnqqiwI-Zr0"
+  "placeId": "ChIJZVN5nbRibUcRgnqqiwI-Zr0",
+  "michelinId": "166921",
+  "chef": "Toni Mörwald",
+  "chefSource": "michelin"
 }

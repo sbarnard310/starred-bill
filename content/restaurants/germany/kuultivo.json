@@ -13,5 +13,9 @@
   "website": "https://www.kuultivo.com",
   "lat": 51.3267358,
   "lng": 12.3447487,
-  "placeId": "ChIJEU49icD3pkcRdHQ56Qo1lYw"
+  "placeId": "ChIJEU49icD3pkcRdHQ56Qo1lYw",
+  "michelinId": "1200655",
+  "diets": [
+    "vegetarian"
+  ]
 }

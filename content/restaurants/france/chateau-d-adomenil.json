@@ -15,5 +15,8 @@
   "website": "https://www.adomenil.com",
   "lat": 48.5649943,
   "lng": 6.4627831,
-  "placeId": "ChIJF7CXTbqBlEcRE3S9yvizFPA"
+  "placeId": "ChIJF7CXTbqBlEcRE3S9yvizFPA",
+  "michelinId": "11668",
+  "chef": "Cyril Leclerc",
+  "chefSource": "michelin"
 }

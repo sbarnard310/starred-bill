@@ -17,5 +17,12 @@
   "website": "https://www.ristorantevillafeltrinelli.com/it/",
   "lat": 45.693253,
   "lng": 10.669477,
-  "placeId": "ChIJe82o1b6KgUcRm5udhtXKqt0"
+  "placeId": "ChIJe82o1b6KgUcRm5udhtXKqt0",
+  "michelinId": "162102",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Stefano Baiocco",
+  "chefSource": "site"
 }

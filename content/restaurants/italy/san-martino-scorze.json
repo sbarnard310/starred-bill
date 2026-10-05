@@ -15,5 +15,10 @@
   "website": "https://www.ristorantesanmartino.info/",
   "lat": 45.5892243,
   "lng": 12.110501,
-  "placeId": "ChIJ1UQCGGIzeUcRxWjONgYdLpg"
+  "placeId": "ChIJ1UQCGGIzeUcRxWjONgYdLpg",
+  "michelinId": "152354",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

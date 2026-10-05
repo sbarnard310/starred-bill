@@ -12,5 +12,13 @@
   "website": "https://patio.gr/",
   "lat": 37.8138188,
   "lng": 23.7736533,
-  "placeId": "ChIJUyfI9a_qoRQRRXvofx5C8ys"
+  "placeId": "ChIJUyfI9a_qoRQRRXvofx5C8ys",
+  "michelinId": "1206642",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Panagiotis Giakalis",
+  "chefSource": "michelin"
 }

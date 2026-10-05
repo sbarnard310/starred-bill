@@ -13,5 +13,8 @@
   "website": "https://www.marerestaurante.com",
   "lat": 36.5311693,
   "lng": -6.2955994,
-  "placeId": "ChIJ1-AX0HrRDQ0RVQ8s3qASKNo"
+  "placeId": "ChIJ1-AX0HrRDQ0RVQ8s3qASKNo",
+  "michelinId": "1213853",
+  "chef": "Juan Viu",
+  "chefSource": "michelin"
 }

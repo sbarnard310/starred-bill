@@ -14,5 +14,13 @@
   "website": "https://www.anarkiagroup.com/inicio/la-salita",
   "lat": 39.4623668,
   "lng": -0.3696366,
-  "placeId": "ChIJ9UOhGJFIYA0R3xWddCYdzrM"
+  "placeId": "ChIJ9UOhGJFIYA0R3xWddCYdzrM",
+  "michelinId": "1192181",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Begoña Rodrigo",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,9 @@
   "website": "https://www.restaurant-kamo.be/",
   "lat": 50.8193858,
   "lng": 4.3615157,
-  "placeId": "ChIJa9qo48ErckERUT_z55NVblk"
+  "placeId": "ChIJa9qo48ErckERUT_z55NVblk",
+  "michelinId": "233191",
+  "diets": [
+    "vegetarian"
+  ]
 }

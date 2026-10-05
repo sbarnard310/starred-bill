@@ -13,5 +13,11 @@
   "website": "https://www.vororestaurant.com",
   "lat": 39.6690394,
   "lng": 3.4395565,
-  "placeId": "ChIJGWe1G_MVlhIRi3JLd51CDVQ"
+  "placeId": "ChIJGWe1G_MVlhIRi3JLd51CDVQ",
+  "michelinId": "1154852",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Álvaro Salazar",
+  "chefSource": "michelin"
 }

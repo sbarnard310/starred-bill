@@ -14,5 +14,13 @@
   "website": "https://www.larsamsterdam.nl/",
   "lat": 52.4012764,
   "lng": 4.8746416,
-  "placeId": "ChIJdd2greUJxkcRtaZnDt4JiFQ"
+  "placeId": "ChIJdd2greUJxkcRtaZnDt4JiFQ",
+  "michelinId": "1154434",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Lars Scharp",
+  "chefSource": "michelin"
 }

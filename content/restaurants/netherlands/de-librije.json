@@ -13,5 +13,12 @@
   "website": "https://www.librije.com/",
   "lat": 52.5153997,
   "lng": 6.0979029,
-  "placeId": "ChIJZTzQ4y_fx0cR4m292pUWJyM"
+  "placeId": "ChIJZTzQ4y_fx0cR4m292pUWJyM",
+  "michelinId": "213296",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Nelson Tanate",
+  "chefSource": "michelin"
 }

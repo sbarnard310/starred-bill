@@ -12,5 +12,16 @@
   "website": "https://www.tuju.com.br",
   "lat": -23.5805339,
   "lng": -46.6855567,
-  "placeId": "ChIJm2pQ-1dXzpQRLcFNxi6yWeI"
+  "placeId": "ChIJm2pQ-1dXzpQRLcFNxi6yWeI",
+  "michelinId": "447270",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Ivan Ralston",
+  "chefSource": "michelin"
 }

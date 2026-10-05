@@ -28,5 +28,11 @@
   "website": "https://www.tairroir.com/",
   "lat": 25.082896,
   "lng": 121.559303,
-  "placeId": "ChIJIduw3BKsQjQR3Gkz01ZqB8s"
+  "placeId": "ChIJIduw3BKsQjQR3Gkz01ZqB8s",
+  "michelinId": "550898",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Kai Ho",
+  "chefSource": "site"
 }

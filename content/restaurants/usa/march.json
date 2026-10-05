@@ -12,5 +12,11 @@
   "website": "https://www.marchrestaurant.com/",
   "lat": 29.7432132,
   "lng": -95.4004288,
-  "placeId": "ChIJEzo-VtLBQIYRAFxlZfioQC8"
+  "placeId": "ChIJEzo-VtLBQIYRAFxlZfioQC8",
+  "michelinId": "1207797",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Felipe Riccio",
+  "chefSource": "site"
 }

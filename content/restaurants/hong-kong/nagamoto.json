@@ -23,5 +23,8 @@
   "website": "https://nagamoto.hk/",
   "lat": 22.2806394,
   "lng": 114.1566986,
-  "placeId": "ChIJJ7h6rLUBBDQRZe_Nb2_N47s"
+  "placeId": "ChIJJ7h6rLUBBDQRZe_Nb2_N47s",
+  "michelinId": "1201133",
+  "chef": "Teruhiko Nagamoto",
+  "chefSource": "site"
 }

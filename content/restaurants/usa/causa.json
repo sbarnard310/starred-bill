@@ -17,5 +17,12 @@
   "website": "https://www.causadc.com/",
   "lat": 38.906905,
   "lng": -77.024685,
-  "placeId": "ChIJP1ej4ae3t4kRZmPbTsaTz_w"
+  "placeId": "ChIJP1ej4ae3t4kRZmPbTsaTz_w",
+  "michelinId": "1198347",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Carlos Delgado",
+  "chefSource": "michelin"
 }

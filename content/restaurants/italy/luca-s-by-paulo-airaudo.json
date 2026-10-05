@@ -22,5 +22,11 @@
   "website": "https://www.lagemmahotel.com/lucasristorante",
   "lat": 43.7707,
   "lng": 11.25406,
-  "placeId": "ChIJwYBAtx1VKhMRoy7-loQK68I"
+  "placeId": "ChIJwYBAtx1VKhMRoy7-loQK68I",
+  "michelinId": "1209455",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

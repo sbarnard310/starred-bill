@@ -12,5 +12,14 @@
   "website": "https://www.rijksrestaurant.nl/",
   "lat": 52.3595346,
   "lng": 4.8842855,
-  "placeId": "ChIJQdf58O4JxkcReTjTVHWqYFk"
+  "placeId": "ChIJQdf58O4JxkcReTjTVHWqYFk",
+  "michelinId": "395758",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Joris Bijdendijk",
+  "chefSource": "michelin"
 }

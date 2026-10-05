@@ -12,5 +12,12 @@
   "website": "https://restaurantthemillen.nl/",
   "lat": 51.9226379,
   "lng": 4.4714977,
-  "placeId": "ChIJz5pdBBk1xEcRWiG_v3hSEUY"
+  "placeId": "ChIJz5pdBBk1xEcRWiG_v3hSEUY",
+  "michelinId": "550138",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Wim Severein",
+  "chefSource": "michelin"
 }

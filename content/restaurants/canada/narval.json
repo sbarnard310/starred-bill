@@ -17,5 +17,8 @@
   "website": "https://restaurantnarval.ca",
   "lat": 48.450805,
   "lng": -68.5269536,
-  "placeId": "ChIJCxbsKPrZlUwRwmTIY-mNbW8"
+  "placeId": "ChIJCxbsKPrZlUwRwmTIY-mNbW8",
+  "michelinId": "1218289",
+  "chef": "Norman St-Pierre",
+  "chefSource": "michelin"
 }

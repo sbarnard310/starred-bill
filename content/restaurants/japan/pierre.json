@@ -12,5 +12,10 @@
   "website": "https://www.icosaka.com/",
   "lat": 34.70645,
   "lng": 135.494552,
-  "placeId": "ChIJw0LI_YvmAGARyXFgKZkMnq0"
+  "placeId": "ChIJw0LI_YvmAGARyXFgKZkMnq0",
+  "michelinId": "1193242",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

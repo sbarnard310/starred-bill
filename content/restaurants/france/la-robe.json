@@ -15,5 +15,11 @@
   "website": "https://www.restaurant-la-robe.com",
   "lat": 46.9776592,
   "lng": -1.3117964,
-  "placeId": "ChIJiXxeShzYBUgRmr0S7gQYtik"
+  "placeId": "ChIJiXxeShzYBUgRmr0S7gQYtik",
+  "michelinId": "393080",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Xavier Giraudet",
+  "chefSource": "site"
 }

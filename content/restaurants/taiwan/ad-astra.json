@@ -23,5 +23,11 @@
   "website": "https://www.adastra.com.tw/",
   "lat": 25.0544699,
   "lng": 121.5241219,
-  "placeId": "ChIJHeQU2UCpQjQRhNcDeQ1fUMI"
+  "placeId": "ChIJHeQU2UCpQjQRhNcDeQ1fUMI",
+  "michelinId": "1206669",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Kevin Rose",
+  "chefSource": "site"
 }

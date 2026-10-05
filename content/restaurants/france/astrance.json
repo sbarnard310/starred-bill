@@ -26,5 +26,12 @@
   "website": "https://www.astranceparis.fr/",
   "lat": 48.8650917,
   "lng": 2.2900701,
-  "placeId": "ChIJ_QxhRv1v5kcRyxeqcySoeBQ"
+  "placeId": "ChIJ_QxhRv1v5kcRyxeqcySoeBQ",
+  "michelinId": "6423",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ],
+  "chef": "Pascal Barbot",
+  "chefSource": "michelin"
 }

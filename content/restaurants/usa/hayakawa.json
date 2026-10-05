@@ -14,5 +14,8 @@
   "website": "https://www.hayakawaatl.com",
   "lat": 33.7837861,
   "lng": -84.4110531,
-  "placeId": "ChIJD9CHgFyn9YgRO1bt1qCxE0I"
+  "placeId": "ChIJD9CHgFyn9YgRO1bt1qCxE0I",
+  "michelinId": "1196000",
+  "chef": "Atsushi Hayakawa",
+  "chefSource": "michelin"
 }

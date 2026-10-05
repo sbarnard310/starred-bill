@@ -13,5 +13,11 @@
   "website": "https://www.fernando.com.mt/",
   "lat": 35.9099793,
   "lng": 14.5069007,
-  "placeId": "ChIJE1Z6EHVFDhMRSNT87y4Zqlo"
+  "placeId": "ChIJE1Z6EHVFDhMRSNT87y4Zqlo",
+  "michelinId": "1194537",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Laszlo Sragli",
+  "chefSource": "site"
 }

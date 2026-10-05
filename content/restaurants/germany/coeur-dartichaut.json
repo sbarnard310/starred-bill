@@ -13,5 +13,9 @@
   "website": "https://www.coeur-dartichaut.de/",
   "lat": 51.9636793,
   "lng": 7.6289064,
-  "placeId": "ChIJM8AAoq-7uUcRDMHeywc1_pE"
+  "placeId": "ChIJM8AAoq-7uUcRDMHeywc1_pE",
+  "michelinId": "1189244",
+  "diets": [
+    "vegetarian"
+  ]
 }

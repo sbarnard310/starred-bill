@@ -23,5 +23,11 @@
   "website": "https://restaurant-edem.com/",
   "lat": 46.9384854,
   "lng": 4.7307841,
-  "placeId": "ChIJV3Ac1iL28kcRzyRjpPxCtLE"
+  "placeId": "ChIJV3Ac1iL28kcRzyRjpPxCtLE",
+  "michelinId": "414351",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Édouard Mignot",
+  "chefSource": "site"
 }

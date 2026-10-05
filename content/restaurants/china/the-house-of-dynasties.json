@@ -9,5 +9,9 @@
   "sourceType": "none",
   "website": "https://www.rosewoodhotels.com/en/beijing/dining/the-house-of-dynasties",
   "lat": 39.9188696,
-  "lng": 116.4541092
+  "lng": 116.4541092,
+  "michelinId": "1212966",
+  "diets": [
+    "vegetarian"
+  ]
 }

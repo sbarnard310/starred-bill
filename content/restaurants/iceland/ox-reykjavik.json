@@ -18,5 +18,11 @@
   "website": "https://ox.restaurant/",
   "lat": 64.1446561,
   "lng": -21.9234607,
-  "placeId": "ChIJ4cwndD911kgREr5O8AbXe7E"
+  "placeId": "ChIJ4cwndD911kgREr5O8AbXe7E",
+  "michelinId": "569272",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thráinn Freyr Vigfússon",
+  "chefSource": "michelin"
 }

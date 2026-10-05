@@ -16,5 +16,13 @@
   "website": "https://www.bjoern-freitag.de",
   "lat": 51.6629515,
   "lng": 6.9652779,
-  "placeId": "ChIJBfhCHh7yuEcRXYd4LgjkcPs"
+  "placeId": "ChIJBfhCHh7yuEcRXYd4LgjkcPs",
+  "michelinId": "72112",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Björn Freitag",
+  "chefSource": "michelin"
 }

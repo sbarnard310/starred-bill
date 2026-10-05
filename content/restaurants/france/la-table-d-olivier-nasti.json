@@ -23,5 +23,11 @@
   "website": "https://www.lechambard.fr",
   "lat": 48.1386841,
   "lng": 7.2656078,
-  "placeId": "ChIJE5WL7OVgkUcRaNiOhlO1-pI"
+  "placeId": "ChIJE5WL7OVgkUcRaNiOhlO1-pI",
+  "michelinId": "11475",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Olivier Nasti",
+  "chefSource": "site"
 }

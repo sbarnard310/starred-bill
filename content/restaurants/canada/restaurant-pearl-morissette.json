@@ -15,5 +15,8 @@
   "website": "https://restaurantpearlmorissette.com/",
   "lat": 43.1562434,
   "lng": -79.3562157,
-  "placeId": "ChIJJYQ6w5VS04kRT_2C9D_qyno"
+  "placeId": "ChIJJYQ6w5VS04kRT_2C9D_qyno",
+  "michelinId": "565364",
+  "chef": "Eric Robertson, Daniel Hadida",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,12 @@
   "website": "https://www.ilpalagioristorante.it/",
   "lat": 43.777409,
   "lng": 11.266524,
-  "placeId": "ChIJeQnHJxBUKhMRX5S3veq0ZXw"
+  "placeId": "ChIJeQnHJxBUKhMRX5S3veq0ZXw",
+  "michelinId": "234519",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Paolo Lavezzini",
+  "chefSource": "site"
 }

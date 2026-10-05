@@ -23,5 +23,8 @@
   "website": "https://ananti.kr/ko/ganm/GN0703",
   "lat": 37.51619,
   "lng": 127.03099,
-  "placeId": "ChIJEUtuhoCnfDURX--PABdLcnU"
+  "placeId": "ChIJEUtuhoCnfDURX--PABdLcnU",
+  "michelinId": "1240835",
+  "chef": "Jin-sung Noh",
+  "chefSource": "michelin"
 }

@@ -24,5 +24,11 @@
   "website": "https://www.iggys.com.sg/",
   "lat": 1.305924,
   "lng": 103.829338,
-  "placeId": "ChIJFQYC8YwZ2jERaWLMF9m1AqM"
+  "placeId": "ChIJFQYC8YwZ2jERaWLMF9m1AqM",
+  "michelinId": "501489",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

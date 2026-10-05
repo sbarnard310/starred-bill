@@ -15,5 +15,12 @@
   "website": "https://schaefli-wigoltingen.ch/",
   "lat": 47.5957416,
   "lng": 9.0325819,
-  "placeId": "ChIJN9nyJ-bymkcRhMqEPz5SCdc"
+  "placeId": "ChIJN9nyJ-bymkcRhMqEPz5SCdc",
+  "michelinId": "180366",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Christian Kuchler",
+  "chefSource": "michelin"
 }

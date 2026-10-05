@@ -15,5 +15,12 @@
   "website": "https://www.ristoranteiltiglio.it",
   "lat": 42.9182376,
   "lng": 13.316814,
-  "placeId": "ChIJq4WkneMOLhMRgQV7dwADvms"
+  "placeId": "ChIJq4WkneMOLhMRgQV7dwADvms",
+  "michelinId": "1157261",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Enrico Mazzaroni",
+  "chefSource": "michelin"
 }

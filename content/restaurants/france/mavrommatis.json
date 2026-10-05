@@ -26,5 +26,11 @@
   "website": "https://www.mavrommatis.com/",
   "lat": 48.8405528,
   "lng": 2.3511901,
-  "placeId": "ChIJBUtKLOxx5kcRddHIo2VDCew"
+  "placeId": "ChIJBUtKLOxx5kcRddHIo2VDCew",
+  "michelinId": "5916",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Andréas Mavrommatis",
+  "chefSource": "site"
 }

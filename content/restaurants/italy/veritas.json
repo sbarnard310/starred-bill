@@ -16,5 +16,11 @@
   "website": "https://www.veritasrestaurant.it/",
   "lat": 40.8372277,
   "lng": 14.2311901,
-  "placeId": "ChIJhQf7Dv0IOxMRE0ElVRpF8II"
+  "placeId": "ChIJhQf7Dv0IOxMRE0ElVRpF8II",
+  "michelinId": "256344",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

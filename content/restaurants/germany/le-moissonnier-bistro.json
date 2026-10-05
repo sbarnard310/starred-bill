@@ -14,5 +14,11 @@
   "website": "https://lemoissonnier.de/",
   "lat": 50.9507694,
   "lng": 6.9524362,
-  "placeId": "ChIJw9dt7KElv0cRJZZpH5nyJpg"
+  "placeId": "ChIJw9dt7KElv0cRJZZpH5nyJpg",
+  "michelinId": "74577",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Eric Menchon",
+  "chefSource": "michelin"
 }

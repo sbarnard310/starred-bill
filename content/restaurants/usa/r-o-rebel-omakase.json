@@ -13,5 +13,11 @@
   "website": "https://omakaserebel.com/",
   "lat": 33.5434019,
   "lng": -117.7824063,
-  "placeId": "ChIJbS4e2ELl3IARpUd8ZG8K_Z4"
+  "placeId": "ChIJbS4e2ELl3IARpUd8ZG8K_Z4",
+  "michelinId": "1202646",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jordan Nakasone",
+  "chefSource": "michelin"
 }

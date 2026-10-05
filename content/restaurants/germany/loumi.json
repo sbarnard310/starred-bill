@@ -14,5 +14,8 @@
   "website": "https://www.loumi-dining.com/loumi-dining",
   "lat": 52.500686,
   "lng": 13.4133674,
-  "placeId": "ChIJ5WgX8MtPqEcR0R9_l12Zl6U"
+  "placeId": "ChIJ5WgX8MtPqEcR0R9_l12Zl6U",
+  "michelinId": "1215781",
+  "chef": "Karl-Louis Kömmler",
+  "chefSource": "michelin"
 }

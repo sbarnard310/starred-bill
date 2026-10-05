@@ -13,5 +13,13 @@
   "website": "https://www.kresios.com/",
   "lat": 41.2045624,
   "lng": 14.5000207,
-  "placeId": "ChIJBRJDB_RDOhMRdTYmFrinF4A"
+  "placeId": "ChIJBRJDB_RDOhMRdTYmFrinF4A",
+  "michelinId": "363223",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Giuseppe Iannotti",
+  "chefSource": "michelin"
 }

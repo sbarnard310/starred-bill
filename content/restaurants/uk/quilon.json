@@ -21,5 +21,15 @@
   "website": "https://www.quilon.co.uk/",
   "lat": 51.4987577,
   "lng": -0.1375764,
-  "placeId": "ChIJu3jc0d4EdkgRmVLp_Cwwti4"
+  "placeId": "ChIJu3jc0d4EdkgRmVLp_Cwwti4",
+  "michelinId": "69650",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Sriram Aylur",
+  "chefSource": "michelin"
 }

@@ -14,5 +14,14 @@
   "website": "https://im-schiffchen.de/",
   "lat": 51.3015121,
   "lng": 6.7338663,
-  "placeId": "ChIJnY6XPZa3uEcRHEhbtN7-hoU"
+  "placeId": "ChIJnY6XPZa3uEcRHEhbtN7-hoU",
+  "michelinId": "72276",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Jean-Claude Bourgueil",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,11 @@
   "website": "https://www.demijlpaal.org/",
   "lat": 50.7805933,
   "lng": 5.4613821,
-  "placeId": "ChIJiVFuh7XjwEcRHfYg1SVfECs"
+  "placeId": "ChIJiVFuh7XjwEcRHfYg1SVfECs",
+  "michelinId": "210474",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jan Menten",
+  "chefSource": "site"
 }

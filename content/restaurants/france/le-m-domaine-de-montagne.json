@@ -17,5 +17,11 @@
   "website": "https://domainedemontagne.com",
   "lat": 47.9252929,
   "lng": 6.8628817,
-  "placeId": "ChIJ1ZfaqGrNk0cR6Wd-_wmIN14"
+  "placeId": "ChIJ1ZfaqGrNk0cR6Wd-_wmIN14",
+  "michelinId": "1241731",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maximilian Troebs",
+  "chefSource": "michelin"
 }

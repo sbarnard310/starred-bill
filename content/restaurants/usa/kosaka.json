@@ -17,5 +17,11 @@
   "website": "https://www.kosakanyc.com/",
   "lat": 40.738316,
   "lng": -74.00137,
-  "placeId": "ChIJZY2-HL5ZwokRnIcy5aBG-o0"
+  "placeId": "ChIJZY2-HL5ZwokRnIcy5aBG-o0",
+  "michelinId": "510090",
+  "diets": [
+    "kosher"
+  ],
+  "chef": "Masatomo Soma",
+  "chefSource": "michelin"
 }

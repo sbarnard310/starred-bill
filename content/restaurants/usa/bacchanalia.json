@@ -14,5 +14,8 @@
   "website": "https://www.starprovisions.com/bacchanalia",
   "lat": 33.7948042,
   "lng": -84.4273895,
-  "placeId": "ChIJX7jCB-wE9YgRNyeBypQUGaE"
+  "placeId": "ChIJX7jCB-wE9YgRNyeBypQUGaE",
+  "michelinId": "1196004",
+  "chef": "Clifford Harrison",
+  "chefSource": "michelin"
 }

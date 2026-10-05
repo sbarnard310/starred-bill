@@ -15,5 +15,12 @@
   "website": "https://www.trbhutong.com/",
   "lat": 39.927966,
   "lng": 116.403524,
-  "placeId": "ChIJX7PV49hS8DURuT2QxQbm7KU"
+  "placeId": "ChIJX7PV49hS8DURuT2QxQbm7KU",
+  "michelinId": "1186810",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Lucas Garigliano",
+  "chefSource": "site"
 }

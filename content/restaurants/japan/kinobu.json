@@ -18,5 +18,12 @@
   "lunchType": "menu",
   "lunchNote": "Cheapest lunch course (others up to ¥41,991)",
   "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/ld156282"
+  "lunchSource": "https://omakaseje.com/restaurants/ld156282",
+  "michelinId": "1192936",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

@@ -25,5 +25,8 @@
   "website": "https://restaurant-laparte.fr/",
   "lat": 43.6449305,
   "lng": 1.5107135,
-  "placeId": "ChIJnagRL72irhIR80eaFwThzWg"
+  "placeId": "ChIJnagRL72irhIR80eaFwThzWg",
+  "michelinId": "486501",
+  "chef": "Jérémy Morin",
+  "chefSource": "michelin"
 }

@@ -16,5 +16,11 @@
   "website": "https://www.das-achental.com/essenz",
   "lat": 47.7855563,
   "lng": 12.4655456,
-  "placeId": "ChIJB70KQ9JpdkcRKCDJBXmFfno"
+  "placeId": "ChIJB70KQ9JpdkcRKCDJBXmFfno",
+  "michelinId": "1195435",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Edip Sigl",
+  "chefSource": "site"
 }

@@ -13,5 +13,10 @@
   "website": "https://erthrestaurant.ae/",
   "lat": 24.4829789,
   "lng": 54.3569321,
-  "placeId": "ChIJM3VaORNnXj4Ryr6wlrjXhc8"
+  "placeId": "ChIJM3VaORNnXj4Ryr6wlrjXhc8",
+  "michelinId": "1208382",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ]
 }

@@ -15,5 +15,12 @@
   "website": "https://www.hangar-7.com/de/",
   "lat": 47.7935688,
   "lng": 13.0078642,
-  "placeId": "ChIJvTsynjyQdkcR10NE96LAmKc"
+  "placeId": "ChIJvTsynjyQdkcR10NE96LAmKc",
+  "michelinId": "105727",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Martin Klein",
+  "chefSource": "site"
 }

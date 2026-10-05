@@ -16,5 +16,11 @@
   "website": "https://exquisite-concepts.com/maltes-hidden-kitchen/",
   "lat": 48.761902,
   "lng": 8.2414442,
-  "placeId": "ChIJLQX956ofl0cRsU8vcYnntOY"
+  "placeId": "ChIJLQX956ofl0cRsU8vcYnntOY",
+  "michelinId": "1154740",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Malte Kuhn",
+  "chefSource": "michelin"
 }

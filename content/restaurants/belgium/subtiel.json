@@ -13,5 +13,9 @@
   "website": "https://www.subtiel-dining.be/",
   "lat": 51.093558,
   "lng": 2.583072,
-  "placeId": "ChIJDfbHg7aX3EcRbSJC56whjpo"
+  "placeId": "ChIJDfbHg7aX3EcRbSJC56whjpo",
+  "michelinId": "1218331",
+  "diets": [
+    "vegetarian"
+  ]
 }

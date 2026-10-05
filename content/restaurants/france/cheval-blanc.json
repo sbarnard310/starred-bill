@@ -18,5 +18,11 @@
   "website": "https://www.cheval-blanc-lembach.fr/",
   "lat": 49.0032985,
   "lng": 7.7907053,
-  "placeId": "ChIJVx8VT6D0lkcRrJHMszFrc84"
+  "placeId": "ChIJVx8VT6D0lkcRrJHMszFrc84",
+  "michelinId": "4111",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Pascal Bastian",
+  "chefSource": "site"
 }

@@ -13,5 +13,11 @@
   "website": "https://adagourmet.it/",
   "lat": 43.1085426,
   "lng": 12.390168,
-  "placeId": "ChIJCyj7CEWhLhMRTuOS4CPlUUs"
+  "placeId": "ChIJCyj7CEWhLhMRTuOS4CPlUUs",
+  "michelinId": "1207728",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Ada Stifani",
+  "chefSource": "michelin"
 }

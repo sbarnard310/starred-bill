@@ -13,5 +13,8 @@
   "website": "https://paz.fo/",
   "lat": 62.0101327,
   "lng": -6.775808,
-  "placeId": "ChIJo9pFTmkvvEgRrzffEi4Fhzc"
+  "placeId": "ChIJo9pFTmkvvEgRrzffEi4Fhzc",
+  "michelinId": "1218213",
+  "chef": "Poul Andrias Ziska",
+  "chefSource": "michelin"
 }

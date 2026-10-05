@@ -15,5 +15,12 @@
   "website": "https://neborijeka.com/",
   "lat": 45.3470174,
   "lng": 14.3507329,
-  "placeId": "ChIJ6bUIldOnZEcRr6QC55a-8Zw"
+  "placeId": "ChIJ6bUIldOnZEcRr6QC55a-8Zw",
+  "michelinId": "1193444",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Gabriela Filca",
+  "chefSource": "michelin"
 }

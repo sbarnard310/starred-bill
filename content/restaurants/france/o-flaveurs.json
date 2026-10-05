@@ -15,5 +15,13 @@
   "website": "https://oflaveurs.com/",
   "lat": 46.3018121,
   "lng": 6.3139725,
-  "placeId": "ChIJ0TT3XMxrjEcRdhDfQzwBeQI"
+  "placeId": "ChIJ0TT3XMxrjEcRdhDfQzwBeQI",
+  "michelinId": "69941",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jérôme Mamet",
+  "chefSource": "michelin"
 }

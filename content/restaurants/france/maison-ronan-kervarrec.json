@@ -23,5 +23,13 @@
   "website": "https://maisonkervarrec.com",
   "lat": 48.153434,
   "lng": -1.6804562,
-  "placeId": "ChIJT115w-bdDkgRzNCFV9XyNQM"
+  "placeId": "ChIJT115w-bdDkgRzNCFV9XyNQM",
+  "michelinId": "7333",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ronan Kervarrec",
+  "chefSource": "site"
 }

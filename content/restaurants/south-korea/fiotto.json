@@ -12,5 +12,8 @@
   "sourceType": "none",
   "lat": 35.16127,
   "lng": 129.1833,
-  "placeId": "ChIJVds1KMWNaDUR0eBDjoc3IfM"
+  "placeId": "ChIJVds1KMWNaDUR0eBDjoc3IfM",
+  "michelinId": "1209157",
+  "chef": "Lee Dong-ho",
+  "chefSource": "michelin"
 }

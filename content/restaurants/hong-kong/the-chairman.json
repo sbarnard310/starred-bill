@@ -20,5 +20,9 @@
   "website": "https://www.thechairmangroup.com/",
   "lat": 22.28444,
   "lng": 114.15297,
-  "placeId": "ChIJhcOtY3wABDQR39uGw41EIYM"
+  "placeId": "ChIJhcOtY3wABDQR39uGw41EIYM",
+  "michelinId": "314269",
+  "diets": [
+    "vegetarian"
+  ]
 }

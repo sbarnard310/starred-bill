@@ -28,5 +28,9 @@
   "source": "https://omakase.in/en/r/bs278667",
   "lat": 35.661741,
   "lng": 139.720819,
-  "placeId": "ChIJD7jmvWiLGGARZ7KIXeeVv7U"
+  "placeId": "ChIJD7jmvWiLGGARZ7KIXeeVv7U",
+  "michelinId": "1214400",
+  "diets": [
+    "gluten-free"
+  ]
 }

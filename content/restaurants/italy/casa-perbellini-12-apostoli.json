@@ -15,5 +15,12 @@
   "website": "https://www.casaperbellini.com",
   "lat": 45.4426941,
   "lng": 10.9961161,
-  "placeId": "ChIJu8s0-1dff0cR-BmaS83pW3U"
+  "placeId": "ChIJu8s0-1dff0cR-BmaS83pW3U",
+  "michelinId": "458343",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Giancarlo Perbellini",
+  "chefSource": "michelin"
 }

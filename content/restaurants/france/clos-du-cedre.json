@@ -23,5 +23,12 @@
   "website": "https://www.cedrebeaune.com",
   "lat": 47.0272469,
   "lng": 4.8357823,
-  "placeId": "ChIJmysB1CLz8kcRebtnOqFnz9w"
+  "placeId": "ChIJmysB1CLz8kcRebtnOqFnz9w",
+  "michelinId": "878",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jordan Billan",
+  "chefSource": "michelin"
 }

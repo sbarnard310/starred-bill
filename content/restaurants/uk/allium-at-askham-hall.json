@@ -17,5 +17,13 @@
   "website": "https://www.askhamhall.co.uk/our-food/",
   "lat": 54.608483,
   "lng": -2.75094,
-  "placeId": "ChIJWfq1xvb6fEgRSoW0qEmeuRc"
+  "placeId": "ChIJWfq1xvb6fEgRSoW0qEmeuRc",
+  "michelinId": "437882",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Richard Swale",
+  "chefSource": "site"
 }

@@ -23,5 +23,12 @@
   "website": "https://lugny.fr/",
   "lat": 47.4956359,
   "lng": 3.8548891,
-  "placeId": "ChIJSWY9QLGT7UcR8FGXOgFGnL8"
+  "placeId": "ChIJSWY9QLGT7UcR8FGXOgFGnL8",
+  "michelinId": "10073",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Franco Bowanee",
+  "chefSource": "michelin"
 }

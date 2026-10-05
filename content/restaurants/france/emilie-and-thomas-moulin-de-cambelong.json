@@ -25,5 +25,11 @@
   "website": "https://moulindecambelong.com/restaurant-etoile-et/",
   "lat": 44.5926727,
   "lng": 2.3963756,
-  "placeId": "ChIJz6zzDaF9shIRJH4ouvUORQo"
+  "placeId": "ChIJz6zzDaF9shIRJH4ouvUORQo",
+  "michelinId": "1209759",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Émilie Roussey and Thomas Roussey",
+  "chefSource": "michelin"
 }

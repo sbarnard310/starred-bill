@@ -13,5 +13,11 @@
   "website": "https://piazzettamilu.it/",
   "lat": 40.7018717,
   "lng": 14.4829218,
-  "placeId": "ChIJscnMZUi9OxMREz-vsvqv53k"
+  "placeId": "ChIJscnMZUi9OxMREz-vsvqv53k",
+  "michelinId": "440407",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maicol Izzo",
+  "chefSource": "site"
 }

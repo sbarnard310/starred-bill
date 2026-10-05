@@ -12,5 +12,12 @@
   "website": "https://www.antiqvvm.pt",
   "lat": 41.14776,
   "lng": -8.62831,
-  "placeId": "ChIJLQkIHxBlJA0R5IWxWtu1I-o"
+  "placeId": "ChIJLQkIHxBlJA0R5IWxWtu1I-o",
+  "michelinId": "483580",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Vítor Matos",
+  "chefSource": "michelin"
 }

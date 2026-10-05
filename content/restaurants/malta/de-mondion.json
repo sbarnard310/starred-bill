@@ -13,5 +13,14 @@
   "website": "https://demondion.xaracollection.com/",
   "lat": 35.8851399,
   "lng": 14.4046065,
-  "placeId": "ChIJWfvfuL9RDhMRqrd76ypybmI"
+  "placeId": "ChIJWfvfuL9RDhMRqrd76ypybmI",
+  "michelinId": "1184167",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Clint Grech",
+  "chefSource": "michelin"
 }

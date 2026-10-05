@@ -13,5 +13,10 @@
   "website": "https://www.lungarnocollection.com/it/firenze/borgo-san-jacopo/",
   "lat": 43.768084,
   "lng": 11.251472,
-  "placeId": "ChIJA45TS1VRKhMRgbM7H3V5234"
+  "placeId": "ChIJA45TS1VRKhMRgbM7H3V5234",
+  "michelinId": "161932",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -13,5 +13,13 @@
   "website": "https://www.kaskis.fi",
   "lat": 60.4467293,
   "lng": 22.2724407,
-  "placeId": "ChIJQZaTtfx2jEYRWtEVeMZa6DA"
+  "placeId": "ChIJQZaTtfx2jEYRWtEVeMZa6DA",
+  "michelinId": "481859",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Erik Mansikka",
+  "chefSource": "michelin"
 }

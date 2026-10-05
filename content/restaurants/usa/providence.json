@@ -21,5 +21,8 @@
   "website": "https://providencela.com/",
   "lat": 34.083576,
   "lng": -118.330183,
-  "placeId": "ChIJaUBtetO-woARqyrV4ASPECg"
+  "placeId": "ChIJaUBtetO-woARqyrV4ASPECg",
+  "michelinId": "559844",
+  "chef": "Michael Cimarusti",
+  "chefSource": "michelin"
 }

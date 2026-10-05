@@ -17,5 +17,8 @@
   "website": "https://www.statebirdsf.com/",
   "lat": 37.783737,
   "lng": -122.43283,
-  "placeId": "ChIJQ7kGpLmAhYARKeCe2pDobWk"
+  "placeId": "ChIJQ7kGpLmAhYARKeCe2pDobWk",
+  "michelinId": "365863",
+  "chef": "Stuart Brioza",
+  "chefSource": "site"
 }

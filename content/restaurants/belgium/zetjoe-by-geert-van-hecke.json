@@ -16,5 +16,11 @@
   "website": "https://www.zetjoe.be",
   "lat": 51.2097162,
   "lng": 3.2321611,
-  "placeId": "ChIJzbceychQw0cRAX_4EtGWiRE"
+  "placeId": "ChIJzbceychQw0cRAX_4EtGWiRE",
+  "michelinId": "527137",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Geert Van Hecke",
+  "chefSource": "michelin"
 }

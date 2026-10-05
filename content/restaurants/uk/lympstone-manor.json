@@ -20,5 +20,14 @@
   "website": "https://lympstonemanor.co.uk/",
   "lat": 50.640284,
   "lng": -3.418128,
-  "placeId": "ChIJIYKaem2gbUgRYo40cmEVNVo"
+  "placeId": "ChIJIYKaem2gbUgRYo40cmEVNVo",
+  "michelinId": "530320",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Michael Caines",
+  "chefSource": "michelin"
 }

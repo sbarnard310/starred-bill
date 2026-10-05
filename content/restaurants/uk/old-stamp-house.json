@@ -13,5 +13,13 @@
   "website": "https://www.oldstamphouse.com/",
   "lat": 54.430987,
   "lng": -2.962429,
-  "placeId": "ChIJP0q0H_DqfEgRY8vd3iwXXOs"
+  "placeId": "ChIJP0q0H_DqfEgRY8vd3iwXXOs",
+  "michelinId": "437826",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ryan Blackburn",
+  "chefSource": "michelin"
 }

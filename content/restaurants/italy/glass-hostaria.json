@@ -23,5 +23,15 @@
   "website": "https://glasshostaria.it/",
   "lat": 41.890477,
   "lng": 12.469103,
-  "placeId": "ChIJ5UjGdkdgLxMRzT7K8LNlcXU"
+  "placeId": "ChIJ5UjGdkdgLxMRzT7K8LNlcXU",
+  "michelinId": "206107",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Cristina Bowerman",
+  "chefSource": "michelin"
 }

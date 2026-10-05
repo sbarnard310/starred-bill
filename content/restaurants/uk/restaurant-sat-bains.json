@@ -17,5 +17,12 @@
   "website": "https://www.restaurantsatbains.com/",
   "lat": 52.925107,
   "lng": -1.167604,
-  "placeId": "ChIJAf60hkPCeUgRPlidw4M0eWo"
+  "placeId": "ChIJAf60hkPCeUgRPlidw4M0eWo",
+  "michelinId": "188580",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Sat Bains",
+  "chefSource": "michelin"
 }

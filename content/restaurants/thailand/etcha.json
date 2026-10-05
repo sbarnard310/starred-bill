@@ -21,5 +21,8 @@
   "website": "https://etchabkk.com",
   "lat": 13.7498963,
   "lng": 100.5348852,
-  "placeId": "ChIJeY8lii2f4jARa9-Po0Ov8g8"
+  "placeId": "ChIJeY8lii2f4jARa9-Po0Ov8g8",
+  "michelinId": "1241479",
+  "chef": "Giacomo Primante",
+  "chefSource": "michelin"
 }

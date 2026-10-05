@@ -13,5 +13,12 @@
   "website": "https://restaurantdelindenhof.nl/",
   "lat": 52.7465818,
   "lng": 6.0797711,
-  "placeId": "ChIJobsPTzdvyEcRQJH8L9EYsMU"
+  "placeId": "ChIJobsPTzdvyEcRQJH8L9EYsMU",
+  "michelinId": "212485",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Martin Kruithof",
+  "chefSource": "michelin"
 }

@@ -18,5 +18,12 @@
   "website": "https://www.restaurant-umami.com",
   "lat": 48.5810249,
   "lng": 7.7428981,
-  "placeId": "ChIJM5PP5kzIlkcRs0K_AWJNFT4"
+  "placeId": "ChIJM5PP5kzIlkcRs0K_AWJNFT4",
+  "michelinId": "202668",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "René Fieger",
+  "chefSource": "michelin"
 }

@@ -32,5 +32,8 @@
   "website": "https://www.esquissetokyo.com/",
   "lat": 35.671688,
   "lng": 139.763347,
-  "placeId": "ChIJ2Y7e7-WLGGARn2nDEZzmbb0"
+  "placeId": "ChIJ2Y7e7-WLGGARn2nDEZzmbb0",
+  "michelinId": "1193869",
+  "chef": "Lionel Beccat",
+  "chefSource": "site"
 }

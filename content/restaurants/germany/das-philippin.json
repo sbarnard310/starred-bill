@@ -13,5 +13,11 @@
   "website": "https://das-philippin.de",
   "lat": 48.8080978,
   "lng": 8.9466663,
-  "placeId": "ChIJm1Ys-1Bil0cRrIgYNRmPQ6U"
+  "placeId": "ChIJm1Ys-1Bil0cRrIgYNRmPQ6U",
+  "michelinId": "1217913",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Tim Striegel",
+  "chefSource": "michelin"
 }

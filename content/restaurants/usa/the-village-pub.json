@@ -13,5 +13,11 @@
   "website": "https://www.thevillagepub.net/",
   "lat": 37.42897,
   "lng": -122.25178,
-  "placeId": "ChIJG1kW_BCkj4AR8ZZ326YvxPU"
+  "placeId": "ChIJG1kW_BCkj4AR8ZZ326YvxPU",
+  "michelinId": "123242",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Mark Sullivan",
+  "chefSource": "site"
 }

@@ -15,5 +15,12 @@
   "website": "https://restaurant-rozo.fr/",
   "lat": 50.6752,
   "lng": 3.0909516,
-  "placeId": "ChIJpxBBSXgqw0cRu_LUCSHWxn4"
+  "placeId": "ChIJpxBBSXgqw0cRu_LUCSHWxn4",
+  "michelinId": "1202595",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Diego Delbecq",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,12 @@
   "website": "https://www.oxomoconyc.com/",
   "lat": 40.730022,
   "lng": -73.955504,
-  "placeId": "ChIJ__-z7kBZwokRezHqB39zBLI"
+  "placeId": "ChIJ__-z7kBZwokRezHqB39zBLI",
+  "michelinId": "563205",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Justin Bazdarich",
+  "chefSource": "site"
 }

@@ -13,5 +13,11 @@
   "website": "https://www.wein-tafelhaus.de/",
   "lat": 49.8215136,
   "lng": 6.9027898,
-  "placeId": "ChIJSYHvGw0qvkcRSa8CbCCM6PA"
+  "placeId": "ChIJSYHvGw0qvkcRSa8CbCCM6PA",
+  "michelinId": "78255",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alexander Oos",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,13 @@
   "website": "https://www.grantleyhall.co.uk/bars-restaurants/shaun-rankin-at-grantley-hall/",
   "lat": 54.11882,
   "lng": -1.63174,
-  "placeId": "ChIJq6qq6lSqfkgRyC1Yv-hWRYQ"
+  "placeId": "ChIJq6qq6lSqfkgRyC1Yv-hWRYQ",
+  "michelinId": "1190186",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Shaun Rankin",
+  "chefSource": "michelin"
 }

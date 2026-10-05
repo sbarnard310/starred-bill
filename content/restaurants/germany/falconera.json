@@ -13,5 +13,13 @@
   "website": "https://falconera.de/",
   "lat": 47.685155,
   "lng": 8.8982028,
-  "placeId": "ChIJAw6kKBCJmkcRx59xgvFFWJ8"
+  "placeId": "ChIJAw6kKBCJmkcRx59xgvFFWJ8",
+  "michelinId": "76355",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Johannes Wuhrer",
+  "chefSource": "michelin"
 }

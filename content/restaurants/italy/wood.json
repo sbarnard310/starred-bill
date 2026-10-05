@@ -14,5 +14,13 @@
   "website": "https://www.woodcervinia.it/",
   "lat": 45.9334388,
   "lng": 7.6294846,
-  "placeId": "ChIJo5b1o-nMiEcRH_t-jOg5WLg"
+  "placeId": "ChIJo5b1o-nMiEcRH_t-jOg5WLg",
+  "michelinId": "460913",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Amanda Eriksson",
+  "chefSource": "michelin"
 }

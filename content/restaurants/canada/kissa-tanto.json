@@ -12,5 +12,12 @@
   "website": "https://www.kissatanto.com/",
   "lat": 49.2805255,
   "lng": -123.0980763,
-  "placeId": "ChIJD8oBSnBxhlQRaX3X1supJ0g"
+  "placeId": "ChIJD8oBSnBxhlQRaX3X1supJ0g",
+  "michelinId": "1198924",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

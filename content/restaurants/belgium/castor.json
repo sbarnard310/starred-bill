@@ -21,5 +21,12 @@
   "website": "https://www.cas-tor.be/",
   "lat": 50.8719025,
   "lng": 3.3429009,
-  "placeId": "ChIJWY9azxk8w0cRsoibvthexXs"
+  "placeId": "ChIJWY9azxk8w0cRsoibvthexXs",
+  "michelinId": "488679",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Maarten Bouckaert",
+  "chefSource": "michelin"
 }

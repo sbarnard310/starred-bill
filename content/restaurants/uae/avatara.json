@@ -12,5 +12,15 @@
   "website": "https://avatara.ae/",
   "lat": 25.107342,
   "lng": 55.240847,
-  "placeId": "ChIJn7cXwXxDXz4Rn_20GD1EDJE"
+  "placeId": "ChIJn7cXwXxDXz4Rn_20GD1EDJE",
+  "michelinId": "1201932",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Omkar Walve",
+  "chefSource": "site"
 }

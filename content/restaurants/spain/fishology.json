@@ -33,5 +33,14 @@
   "website": "https://www.fishology.es/",
   "lat": 41.380983,
   "lng": 2.154461,
-  "placeId": "ChIJaWwEYxqjpBIRBweS5Nnc2HY"
+  "placeId": "ChIJaWwEYxqjpBIRBweS5Nnc2HY",
+  "michelinId": "1199745",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Riccardo Radice",
+  "chefSource": "michelin"
 }

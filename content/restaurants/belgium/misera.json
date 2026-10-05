@@ -12,5 +12,11 @@
   "website": "https://nicolasmisera.com/",
   "lat": 51.2055456,
   "lng": 4.3817781,
-  "placeId": "ChIJj9psnq73w0cRRmuP7j0Y-p8"
+  "placeId": "ChIJj9psnq73w0cRRmuP7j0Y-p8",
+  "michelinId": "1203601",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nicolas Misera",
+  "chefSource": "michelin"
 }

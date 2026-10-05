@@ -29,5 +29,8 @@
   "website": "https://www.cucinacereda.com/",
   "lat": 45.698355,
   "lng": 9.59091,
-  "placeId": "ChIJEas2yqlTgUcRjSlBFct2WNk"
+  "placeId": "ChIJEas2yqlTgUcRjSlBFct2WNk",
+  "michelinId": "523282",
+  "chef": "Giuseppe Cereda",
+  "chefSource": "site"
 }

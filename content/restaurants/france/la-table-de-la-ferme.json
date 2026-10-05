@@ -15,5 +15,13 @@
   "website": "https://www.murtoli.com/",
   "lat": 41.5229756,
   "lng": 8.9469027,
-  "placeId": "ChIJSdEchmfM2xIR8UFufD3nrgQ"
+  "placeId": "ChIJSdEchmfM2xIR8UFufD3nrgQ",
+  "michelinId": "511764",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Laurent Renard",
+  "chefSource": "site"
 }

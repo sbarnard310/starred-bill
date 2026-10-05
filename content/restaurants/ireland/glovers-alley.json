@@ -15,5 +15,10 @@
   "website": "https://gloversalley.com/",
   "lat": 53.339275,
   "lng": -6.26143,
-  "placeId": "ChIJ4cbHq54OZ0gR-nvSqo6_BpM"
+  "placeId": "ChIJ4cbHq54OZ0gR-nvSqo6_BpM",
+  "michelinId": "552341",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

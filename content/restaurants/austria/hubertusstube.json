@@ -13,5 +13,8 @@
   "website": "https://www.hotel-jagdhof.at/hubertusstube",
   "lat": 47.1082718,
   "lng": 11.2996497,
-  "placeId": "ChIJCQv8jbZHnUcRkUgKFRMvR6c"
+  "placeId": "ChIJCQv8jbZHnUcRkUgKFRMvR6c",
+  "michelinId": "105481",
+  "chef": "Alban Pfurtscheller",
+  "chefSource": "michelin"
 }

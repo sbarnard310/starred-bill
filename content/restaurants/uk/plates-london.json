@@ -25,5 +25,12 @@
   "website": "https://plates-london.com/plant-based-restaurant-london/",
   "lat": 51.5265904,
   "lng": -0.0819587,
-  "placeId": "ChIJ8UUT9LscdkgRUpwod2WlxEg"
+  "placeId": "ChIJ8UUT9LscdkgRUpwod2WlxEg",
+  "michelinId": "1213456",
+  "diets": [
+    "vegetarian-only",
+    "vegan"
+  ],
+  "chef": "Kirk Haworth",
+  "chefSource": "michelin"
 }

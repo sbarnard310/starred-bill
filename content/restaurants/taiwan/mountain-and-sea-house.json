@@ -26,5 +26,12 @@
   "website": "https://www.mountain-n-seahouse.com/en",
   "lat": 25.0380165,
   "lng": 121.5313736,
-  "placeId": "ChIJRy7kxmipQjQRACw5aOpSyLI"
+  "placeId": "ChIJRy7kxmipQjQRACw5aOpSyLI",
+  "michelinId": "569918",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Sheng-Chang Hsiao",
+  "chefSource": "michelin"
 }

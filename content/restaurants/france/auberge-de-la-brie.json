@@ -23,5 +23,12 @@
   "website": "https://www.aubergedelabrie.net",
   "lat": 48.8857071,
   "lng": 2.8562352,
-  "placeId": "ChIJndkN6qmn6EcRKI0VFt9m9uI"
+  "placeId": "ChIJndkN6qmn6EcRKI0VFt9m9uI",
+  "michelinId": "2605",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Alain Pavard",
+  "chefSource": "michelin"
 }

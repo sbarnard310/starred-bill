@@ -26,5 +26,8 @@
   "website": "https://www.cebomadrid.com/",
   "lat": 40.416221,
   "lng": -3.698463,
-  "placeId": "ChIJaZxVboEoQg0R2Xyk4VBN6QA"
+  "placeId": "ChIJaZxVboEoQg0R2Xyk4VBN6QA",
+  "michelinId": "1203091",
+  "chef": "Javier Sanz and Juan Sahuquillo",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://miyamasou.jp/",
   "lat": 35.233154,
   "lng": 135.793011,
-  "placeId": "ChIJ_UQgQvW6AWARv8m8MI8Vzag"
+  "placeId": "ChIJ_UQgQvW6AWARv8m8MI8Vzag",
+  "michelinId": "1193055",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Hisato Nakahigashi",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,12 @@
   "website": "https://www.murakamimu.com",
   "lat": -23.5660139,
   "lng": -46.6634795,
-  "placeId": "ChIJtVl600tZzpQR_ime0PfBk4A"
+  "placeId": "ChIJtVl600tZzpQR_ime0PfBk4A",
+  "michelinId": "1186326",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Tsuyoshi Murakami",
+  "chefSource": "michelin"
 }

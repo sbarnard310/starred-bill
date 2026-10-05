@@ -29,5 +29,13 @@
   "website": "https://maisonpellestorveyrier.com",
   "lat": 43.62324,
   "lng": 1.34197,
-  "placeId": "ChIJ2Wmr7SCxrhIRSM8Q-tHC178"
+  "placeId": "ChIJ2Wmr7SCxrhIRSM8Q-tHC178",
+  "michelinId": "1218785",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Quentin Pellestor-Veyrier",
+  "chefSource": "michelin"
 }

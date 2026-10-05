@@ -12,5 +12,11 @@
   "website": "https://www.zwanzig23.com",
   "lat": 51.2061634,
   "lng": 6.7789165,
-  "placeId": "ChIJg4UYn-_LuEcRekxlL9IVIsc"
+  "placeId": "ChIJg4UYn-_LuEcRekxlL9IVIsc",
+  "michelinId": "1208435",
+  "diets": [
+    "vegan"
+  ],
+  "chef": "Lukas Jakobi",
+  "chefSource": "michelin"
 }

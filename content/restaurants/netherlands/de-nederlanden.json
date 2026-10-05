@@ -13,5 +13,15 @@
   "website": "https://www.nederlanden.nl/",
   "lat": 52.2295965,
   "lng": 5.0324559,
-  "placeId": "ChIJqxl4WJRyxkcRjLyHEiOAPEg"
+  "placeId": "ChIJqxl4WJRyxkcRjLyHEiOAPEg",
+  "michelinId": "213145",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Wilco Berends",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,9 @@
   "website": "https://sardinia.baglionihotels.com/it/ristoranti/gusto-by-sadler",
   "lat": 40.8215359,
   "lng": 9.6775825,
-  "placeId": "ChIJCaMtmDfN3hIRMSCOaZjQUKQ"
+  "placeId": "ChIJCaMtmDfN3hIRMSCOaZjQUKQ",
+  "michelinId": "1196120",
+  "diets": [
+    "vegetarian-menu"
+  ]
 }

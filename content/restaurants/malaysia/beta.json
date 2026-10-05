@@ -12,5 +12,10 @@
   "website": "https://www.betakl.com",
   "lat": 3.1545381,
   "lng": 101.7090051,
-  "placeId": "ChIJlTA1sdU3zDERKbujTkG2pJc"
+  "placeId": "ChIJlTA1sdU3zDERKbujTkG2pJc",
+  "michelinId": "1202285",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

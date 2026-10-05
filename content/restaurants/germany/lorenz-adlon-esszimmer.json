@@ -12,5 +12,9 @@
   "website": "https://www.lorenzadlon-esszimmer.de/",
   "lat": 52.5159333,
   "lng": 13.380011,
-  "placeId": "ChIJHQQciMZRqEcRHxZ6uyymozw"
+  "placeId": "ChIJHQQciMZRqEcRHxZ6uyymozw",
+  "michelinId": "71246",
+  "diets": [
+    "vegetarian"
+  ]
 }

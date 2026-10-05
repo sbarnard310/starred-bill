@@ -15,5 +15,8 @@
   "website": "https://www.lamerise.alsace/",
   "lat": 48.8800665,
   "lng": 7.7224093,
-  "placeId": "ChIJxVnwLf6TlkcR8GtzoEA5Fkw"
+  "placeId": "ChIJxVnwLf6TlkcR8GtzoEA5Fkw",
+  "michelinId": "518257",
+  "chef": "Cédric Decker",
+  "chefSource": "michelin"
 }

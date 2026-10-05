@@ -20,5 +20,12 @@
   "website": "https://www.restaurant-interlude.co.uk/",
   "lat": 51.02019,
   "lng": -0.260658,
-  "placeId": "ChIJ89bxV9rtdUgRfx2x_BwYKcQ"
+  "placeId": "ChIJ89bxV9rtdUgRfx2x_BwYKcQ",
+  "michelinId": "1090846",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Jean Delport",
+  "chefSource": "michelin"
 }

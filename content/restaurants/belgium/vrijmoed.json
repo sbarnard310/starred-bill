@@ -16,5 +16,12 @@
   "website": "https://www.vrijmoed.be/nl",
   "lat": 51.0511061,
   "lng": 3.7288256,
-  "placeId": "ChIJy-svI09xw0cR7Jxnl0xh4kE"
+  "placeId": "ChIJy-svI09xw0cR7Jxnl0xh4kE",
+  "michelinId": "269264",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Michaël Vrijmoed",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,12 @@
   "website": "https://www.bellsrestaurant.com/",
   "lat": 34.7440264,
   "lng": -120.279387,
-  "placeId": "ChIJfT-piWsF7IAR5sFnqRC8c7Y"
+  "placeId": "ChIJfT-piWsF7IAR5sFnqRC8c7Y",
+  "michelinId": "1186551",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Daisy Ryan and Greg Ryan",
+  "chefSource": "michelin"
 }

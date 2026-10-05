@@ -13,5 +13,13 @@
   "website": "https://restaurantone.nl/",
   "lat": 51.1895014,
   "lng": 5.9808834,
-  "placeId": "ChIJx0iVE6lMx0cRX-T4A64A1PM"
+  "placeId": "ChIJx0iVE6lMx0cRX-T4A64A1PM",
+  "michelinId": "368581",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Edwin Soumang",
+  "chefSource": "michelin"
 }

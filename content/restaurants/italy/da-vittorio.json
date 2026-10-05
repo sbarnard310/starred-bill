@@ -17,5 +17,12 @@
   "website": "https://www.davittorio.com/",
   "lat": 45.677413,
   "lng": 9.771522,
-  "placeId": "ChIJC6fjv1NbgUcReZVlgUiiKOU"
+  "placeId": "ChIJC6fjv1NbgUcReZVlgUiiKOU",
+  "michelinId": "128107",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ]
 }

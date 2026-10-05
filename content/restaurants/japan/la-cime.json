@@ -14,5 +14,9 @@
   "website": "https://www.la-cime.com/",
   "lat": 34.685818,
   "lng": 135.503519,
-  "placeId": "ChIJJQbuz-HmAGARlT3utlf3bPA"
+  "placeId": "ChIJJQbuz-HmAGARlT3utlf3bPA",
+  "michelinId": "1193278",
+  "diets": [
+    "vegetarian"
+  ]
 }

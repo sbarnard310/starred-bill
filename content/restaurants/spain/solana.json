@@ -13,5 +13,15 @@
   "website": "https://www.restaurantesolana.com",
   "lat": 43.3263141,
   "lng": -3.4531514,
-  "placeId": "ChIJAe7gvk_CTg0RZWlUBgDvqRo"
+  "placeId": "ChIJAe7gvk_CTg0RZWlUBgDvqRo",
+  "michelinId": "226699",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Ignacio Solana",
+  "chefSource": "michelin"
 }

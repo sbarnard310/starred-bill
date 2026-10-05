@@ -15,5 +15,8 @@
   "website": "https://www.lapyramide.com/",
   "lat": 45.5166376,
   "lng": 4.8668625,
-  "placeId": "ChIJL3M8Bajf9EcRdykVsVfrGp8"
+  "placeId": "ChIJL3M8Bajf9EcRdykVsVfrGp8",
+  "michelinId": "13518",
+  "chef": "Patrick Henriroux",
+  "chefSource": "site"
 }

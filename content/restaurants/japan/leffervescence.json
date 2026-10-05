@@ -30,5 +30,8 @@
   "website": "https://www.leffervescence.jp/",
   "lat": 35.660299,
   "lng": 139.719454,
-  "placeId": "ChIJV7oGAWWLGGARslO9OGTuG-A"
+  "placeId": "ChIJV7oGAWWLGGARslO9OGTuG-A",
+  "michelinId": "1194251",
+  "chef": "Shinobu Namae",
+  "chefSource": "michelin"
 }

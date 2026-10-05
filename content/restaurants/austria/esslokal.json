@@ -16,5 +16,11 @@
   "website": "https://www.esslokal.com/",
   "lat": 48.4591171,
   "lng": 15.7208653,
-  "placeId": "ChIJu--XagSdckcR9iErI4bicfo"
+  "placeId": "ChIJu--XagSdckcR9iErI4bicfo",
+  "michelinId": "1212821",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Roland Huber",
+  "chefSource": "michelin"
 }

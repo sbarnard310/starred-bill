@@ -19,5 +19,12 @@
   "website": "https://www.hotelbleucarry.com",
   "lat": 43.330463,
   "lng": 5.1514965,
-  "placeId": "ChIJtSMNTajdyRIRfWviGAqVbVs"
+  "placeId": "ChIJtSMNTajdyRIRfWviGAqVbVs",
+  "michelinId": "1214853",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

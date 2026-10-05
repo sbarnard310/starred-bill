@@ -27,5 +27,12 @@
   "website": "https://www.montecarlosbm.com/fr/restaurant-monaco/le-grill",
   "lat": 43.739367,
   "lng": 7.4271,
-  "placeId": "ChIJHdZOIWPCzRIRNy7ivBWcyfA"
+  "placeId": "ChIJHdZOIWPCzRIRNy7ivBWcyfA",
+  "michelinId": "9786",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Dominique Lory",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://www.thefontenay.com/restaurants-bar/lakeside-restaurant/",
   "lat": 53.5654337,
   "lng": 9.9977083,
-  "placeId": "ChIJBxBWnSaPsUcRaWgkWhttxS0"
+  "placeId": "ChIJBxBWnSaPsUcRaWgkWhttxS0",
+  "michelinId": "526192",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Julian Stowasser",
+  "chefSource": "michelin"
 }

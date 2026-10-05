@@ -17,5 +17,12 @@
   "website": "https://www.jontdc.com/",
   "lat": 38.915885,
   "lng": -77.03215,
-  "placeId": "ChIJI_Nce0u3t4kRjBL-1l-nHs0"
+  "placeId": "ChIJI_Nce0u3t4kRjBL-1l-nHs0",
+  "michelinId": "1164948",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Ryan Ratino",
+  "chefSource": "michelin"
 }

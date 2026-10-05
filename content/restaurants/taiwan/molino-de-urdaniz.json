@@ -27,5 +27,10 @@
   "website": "https://hotelmvsa.com/en/dining/molino-de-urdaniz",
   "lat": 25.0507432,
   "lng": 121.5372068,
-  "placeId": "ChIJoRTSRRCrQjQRn9SZUCoa5Xw"
+  "placeId": "ChIJoRTSRRCrQjQRn9SZUCoa5Xw",
+  "michelinId": "1190910",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

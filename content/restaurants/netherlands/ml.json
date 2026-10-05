@@ -13,5 +13,11 @@
   "website": "https://www.mlinhaarlem.nl/",
   "lat": 52.3807364,
   "lng": 4.6381713,
-  "placeId": "ChIJsa953mvvxUcRy50HHiu7Qhk"
+  "placeId": "ChIJsa953mvvxUcRy50HHiu7Qhk",
+  "michelinId": "560903",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Mark Gratama",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,15 @@
   "website": "https://www.restaurantdepastorie.be/",
   "lat": 51.2262199,
   "lng": 4.9240299,
-  "placeId": "ChIJ46NFAyFNwUcR6NoZxYarYfU"
+  "placeId": "ChIJ46NFAyFNwUcR6NoZxYarYfU",
+  "michelinId": "209876",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Carl Wens",
+  "chefSource": "michelin"
 }

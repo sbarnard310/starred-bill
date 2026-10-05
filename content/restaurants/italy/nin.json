@@ -13,5 +13,13 @@
   "website": "https://www.ristorantenin.it",
   "lat": 45.7154863,
   "lng": 10.7716421,
-  "placeId": "ChIJraEm3fEfgkcR5rHXkAM08yM"
+  "placeId": "ChIJraEm3fEfgkcR5rHXkAM08yM",
+  "michelinId": "1207982",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Andrea De Lillo",
+  "chefSource": "michelin"
 }

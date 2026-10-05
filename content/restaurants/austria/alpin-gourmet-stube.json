@@ -13,5 +13,11 @@
   "website": "https://www.hotel-gletscherblick.at/de/genuss/alpin-gourmet-stube/",
   "lat": 47.1407338,
   "lng": 10.2830469,
-  "placeId": "ChIJA5RUvhqxnEcRGo4T-Wr9_7k"
+  "placeId": "ChIJA5RUvhqxnEcRGo4T-Wr9_7k",
+  "michelinId": "1212333",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Paul Markovics",
+  "chefSource": "michelin"
 }

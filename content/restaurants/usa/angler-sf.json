@@ -23,5 +23,11 @@
   "website": "https://anglersf.com/",
   "lat": 37.793167,
   "lng": -122.39213,
-  "placeId": "ChIJgURgKGuBhYARMIlKBN79aOQ"
+  "placeId": "ChIJgURgKGuBhYARMIlKBN79aOQ",
+  "michelinId": "569677",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Lucho Martinez",
+  "chefSource": "site"
 }

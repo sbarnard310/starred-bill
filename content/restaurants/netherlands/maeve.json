@@ -15,5 +15,10 @@
   "website": "https://www.restaurantmaeve.nl/",
   "lat": 52.0923609,
   "lng": 5.1243245,
-  "placeId": "ChIJaW85wfhvxkcRTvEVaIlFUUc"
+  "placeId": "ChIJaW85wfhvxkcRTvEVaIlFUUc",
+  "michelinId": "1199891",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

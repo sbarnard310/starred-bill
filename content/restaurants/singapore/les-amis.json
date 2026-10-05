@@ -18,5 +18,11 @@
   "website": "https://www.lesamis.com.sg/",
   "lat": 1.30626,
   "lng": 103.83204,
-  "placeId": "ChIJR5yDbY0Z2jER6GcsxL56OLk"
+  "placeId": "ChIJR5yDbY0Z2jER6GcsxL56OLk",
+  "michelinId": "501510",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Sébastien Lepinoy",
+  "chefSource": "michelin"
 }

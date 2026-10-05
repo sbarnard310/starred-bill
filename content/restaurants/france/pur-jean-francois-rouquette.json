@@ -20,5 +20,11 @@
   "website": "https://www.paris-restaurant-pur.fr/",
   "lat": 48.868617,
   "lng": 2.3303786,
-  "placeId": "ChIJlVvipTFu5kcR6VwB1PiwKv8"
+  "placeId": "ChIJlVvipTFu5kcR6VwB1PiwKv8",
+  "michelinId": "69298",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jean-François Rouquette",
+  "chefSource": "michelin"
 }

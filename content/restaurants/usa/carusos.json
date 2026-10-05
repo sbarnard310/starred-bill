@@ -13,5 +13,12 @@
   "website": "https://www.rosewoodhotels.com/en/miramar-beach-montecito/dining/carusos",
   "lat": 34.4200948,
   "lng": -119.6257156,
-  "placeId": "ChIJc3vlaSUT6YARjVj5-kbcxrI"
+  "placeId": "ChIJc3vlaSUT6YARjVj5-kbcxrI",
+  "michelinId": "1189550",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Massimo Falsini",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://hautrestaurant.be/",
   "lat": 51.2275327,
   "lng": 2.9245179,
-  "placeId": "ChIJ2xQ_6Yyp3EcR1xp9ebnh82Y"
+  "placeId": "ChIJ2xQ_6Yyp3EcR1xp9ebnh82Y",
+  "michelinId": "1214246",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Dimitri Proost",
+  "chefSource": "site"
 }

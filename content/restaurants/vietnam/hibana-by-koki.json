@@ -13,5 +13,8 @@
   "website": "https://capellahotels.com/en/capella-hanoi/dining/koki",
   "lat": 21.0258394,
   "lng": 105.8565699,
-  "placeId": "ChIJy_ZMBPerNTERliJFmPbKHOU"
+  "placeId": "ChIJy_ZMBPerNTERliJFmPbKHOU",
+  "michelinId": "1202288",
+  "chef": "Hiroshi Yamaguchi",
+  "chefSource": "michelin"
 }

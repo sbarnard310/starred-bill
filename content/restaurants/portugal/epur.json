@@ -12,5 +12,12 @@
   "website": "https://www.epur.pt/",
   "lat": 38.7087383,
   "lng": -9.1398799,
-  "placeId": "ChIJ4R_1UOU1GQ0RwgigGauVvPs"
+  "placeId": "ChIJ4R_1UOU1GQ0RwgigGauVvPs",
+  "michelinId": "1077232",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Vincent Farges",
+  "chefSource": "michelin"
 }

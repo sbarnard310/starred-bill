@@ -15,5 +15,9 @@
   "website": "https://restaurantecallizo.es/",
   "lat": 42.4176644,
   "lng": 0.1381766,
-  "placeId": "ChIJQ_OfZsb6pxIROrbPqvzXc4U"
+  "placeId": "ChIJQ_OfZsb6pxIROrbPqvzXc4U",
+  "michelinId": "563747",
+  "diets": [
+    "gluten-free"
+  ]
 }

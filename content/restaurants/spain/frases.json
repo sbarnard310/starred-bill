@@ -12,5 +12,12 @@
   "website": "https://www.frasesrestaurante.com/",
   "lat": 37.9861889,
   "lng": -1.127942,
-  "placeId": "ChIJQ0hZrBqCYw0RzAifjPj4lFQ"
+  "placeId": "ChIJQ0hZrBqCYw0RzAifjPj4lFQ",
+  "michelinId": "1197921",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Marco Antonio Iniesta",
+  "chefSource": "michelin"
 }

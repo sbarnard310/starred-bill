@@ -26,5 +26,10 @@
   "website": "https://www.imperialtreasure.com/france/",
   "lat": 48.870498,
   "lng": 2.2992201,
-  "placeId": "ChIJtcwJ8sRv5kcRK1e1LOEyoHg"
+  "placeId": "ChIJtcwJ8sRv5kcRK1e1LOEyoHg",
+  "michelinId": "1186891",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

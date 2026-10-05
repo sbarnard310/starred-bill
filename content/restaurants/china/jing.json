@@ -12,5 +12,11 @@
   "website": "https://www.peninsula.com/en/beijing/hotel-fine-dining/jing-western-restaurant",
   "lat": 39.913636,
   "lng": 116.4103593,
-  "placeId": "ChIJF_tJftJS8DURghmTAVtSU_E"
+  "placeId": "ChIJF_tJftJS8DURghmTAVtSU_E",
+  "michelinId": "1186726",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "William Mahi",
+  "chefSource": "michelin"
 }

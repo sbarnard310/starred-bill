@@ -13,5 +13,9 @@
   "website": "https://purs.com/",
   "lat": 50.4389346,
   "lng": 7.3973765,
-  "placeId": "ChIJV_YKi9BhvkcRwjWYsBvkSIg"
+  "placeId": "ChIJV_YKi9BhvkcRwjWYsBvkSIg",
+  "michelinId": "489321",
+  "diets": [
+    "vegetarian-menu"
+  ]
 }

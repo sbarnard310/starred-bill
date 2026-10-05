@@ -12,5 +12,12 @@
   "website": "https://oizumisushi.com/",
   "lat": -23.6115894,
   "lng": -46.6837962,
-  "placeId": "ChIJeULgXSVRzpQRuw7GVNI-QO0"
+  "placeId": "ChIJeULgXSVRzpQRuw7GVNI-QO0",
+  "michelinId": "1210333",
+  "diets": [
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Danilo Maciel",
+  "chefSource": "michelin"
 }

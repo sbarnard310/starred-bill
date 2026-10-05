@@ -13,5 +13,14 @@
   "website": "https://www.oz-restaurant.com/",
   "lat": 46.7210956,
   "lng": 9.4461197,
-  "placeId": "ChIJD3vq-FbrhEcRm15VdggBGLQ"
+  "placeId": "ChIJD3vq-FbrhEcRm15VdggBGLQ",
+  "michelinId": "1195906",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Simeon Nikolov",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,13 @@
   "website": "https://vecchioristoro.com",
   "lat": 45.7386406,
   "lng": 7.3155868,
-  "placeId": "ChIJB8eKqbcgiUcRAgdbVoNvf7g"
+  "placeId": "ChIJB8eKqbcgiUcRAgdbVoNvf7g",
+  "michelinId": "124965",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Tommaso Lupo and Filippo Oggioni",
+  "chefSource": "michelin"
 }

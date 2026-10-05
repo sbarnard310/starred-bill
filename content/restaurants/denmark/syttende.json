@@ -13,5 +13,10 @@
   "website": "https://www.syttende.dk",
   "lat": 54.9139503,
   "lng": 9.7833821,
-  "placeId": "ChIJkfnpOvM5s0cR8fpW5HEDmTs"
+  "placeId": "ChIJkfnpOvM5s0cR8fpW5HEDmTs",
+  "michelinId": "1192529",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

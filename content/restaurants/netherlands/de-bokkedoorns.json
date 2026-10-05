@@ -15,5 +15,12 @@
   "website": "https://www.bokkedoorns.nl/",
   "lat": 52.3982758,
   "lng": 4.5663309,
-  "placeId": "ChIJFT5WMYfuxUcRgOF4R-izDp4"
+  "placeId": "ChIJFT5WMYfuxUcRgOF4R-izDp4",
+  "michelinId": "212555",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Roy Eijkelkamp",
+  "chefSource": "site"
 }

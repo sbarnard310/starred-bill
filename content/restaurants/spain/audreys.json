@@ -13,5 +13,13 @@
   "website": "https://www.audreys.es/",
   "lat": 38.6501744,
   "lng": 0.072623,
-  "placeId": "ChIJX9Pn-AD-nRIRnjnr0cB0tXc"
+  "placeId": "ChIJX9Pn-AD-nRIRnjnr0cB0tXc",
+  "michelinId": "468885",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Rafa Soler",
+  "chefSource": "michelin"
 }

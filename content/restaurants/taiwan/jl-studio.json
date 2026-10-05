@@ -25,5 +25,8 @@
   "website": "https://jlstudiotw.com/",
   "lat": 24.1411392,
   "lng": 120.6589807,
-  "placeId": "ChIJBRqTMlQ9aTQRGYKWYTi3llo"
+  "placeId": "ChIJBRqTMlQ9aTQRGYKWYTi3llo",
+  "michelinId": "1188523",
+  "chef": "Jimmy Lim",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.tallerarzuaga.com/",
   "lat": 41.6280676,
   "lng": -4.3237821,
-  "placeId": "ChIJseWhBL3jRg0RFw86Ei44ME4"
+  "placeId": "ChIJseWhBL3jRg0RFw86Ei44ME4",
+  "michelinId": "533048",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Sara Ferreres",
+  "chefSource": "michelin"
 }

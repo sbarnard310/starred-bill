@@ -25,5 +25,8 @@
   "website": "https://lepuitssaintjacques.fr/",
   "lat": 43.5907291,
   "lng": 1.149996,
-  "placeId": "ChIJCUAbfzRMqRIR87gtBhrjoy0"
+  "placeId": "ChIJCUAbfzRMqRIR87gtBhrjoy0",
+  "michelinId": "3850",
+  "chef": "William Candelon",
+  "chefSource": "michelin"
 }

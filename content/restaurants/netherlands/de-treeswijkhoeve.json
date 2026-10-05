@@ -13,5 +13,14 @@
   "website": "https://www.treeswijkhoeve.nl/nl",
   "lat": 51.3780193,
   "lng": 5.4693081,
-  "placeId": "ChIJPb_Pp3fXxkcRJ2Yn6pLTvi4"
+  "placeId": "ChIJPb_Pp3fXxkcRJ2Yn6pLTvi4",
+  "michelinId": "213148",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Dick Middelweerd",
+  "chefSource": "michelin"
 }

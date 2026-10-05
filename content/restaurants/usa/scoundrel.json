@@ -13,5 +13,12 @@
   "website": "https://www.scoundrelgvl.com/",
   "lat": 34.851235,
   "lng": -82.398522,
-  "placeId": "ChIJNYvUMvwxWIgR9ZTlSZk7wl4"
+  "placeId": "ChIJNYvUMvwxWIgR9ZTlSZk7wl4",
+  "michelinId": "1241977",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Joe Cash",
+  "chefSource": "michelin"
 }

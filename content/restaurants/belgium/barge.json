@@ -12,5 +12,11 @@
   "website": "https://bargerestaurant.be/",
   "lat": 50.8568731,
   "lng": 4.3469912,
-  "placeId": "ChIJlS0j6pvDw0cR2DWORKF5U-g"
+  "placeId": "ChIJlS0j6pvDw0cR2DWORKF5U-g",
+  "michelinId": "1188703",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Grégoire Gillard",
+  "chefSource": "michelin"
 }

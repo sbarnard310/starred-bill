@@ -12,5 +12,11 @@
   "website": "https://restaurantepicchi.com.br/",
   "lat": -23.5653892,
   "lng": -46.6666262,
-  "placeId": "ChIJE5cyxftvVwEREVYAEV6Vul4"
+  "placeId": "ChIJE5cyxftvVwEREVYAEV6Vul4",
+  "michelinId": "479711",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Pier Paolo Picchi",
+  "chefSource": "michelin"
 }

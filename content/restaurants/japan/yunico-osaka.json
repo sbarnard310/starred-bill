@@ -14,5 +14,10 @@
   "lng": 135.499109,
   "placeId": "ChIJV1i3CmXzAGARa9IlJ_agcIA",
   "dinner": 22990,
-  "source": "https://omakaseje.com/restaurants/sy198489"
+  "source": "https://omakaseje.com/restaurants/sy198489",
+  "michelinId": "1194638",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

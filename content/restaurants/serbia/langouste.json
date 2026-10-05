@@ -13,5 +13,14 @@
   "website": "https://www.langouste.rs/",
   "lat": 44.8176948,
   "lng": 20.450754,
-  "placeId": "ChIJd3dWxU1lWkcRkI96X_C98Tg"
+  "placeId": "ChIJd3dWxU1lWkcRkI96X_C98Tg",
+  "michelinId": "1186676",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Marko Derić",
+  "chefSource": "michelin"
 }

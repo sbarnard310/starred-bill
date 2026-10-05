@@ -16,5 +16,13 @@
   "website": "https://www.sud777.com.mx/",
   "lat": 19.3090281,
   "lng": -99.2093428,
-  "placeId": "ChIJNTreqsH_zYUR82jk2MVoXMM"
+  "placeId": "ChIJNTreqsH_zYUR82jk2MVoXMM",
+  "michelinId": "1208234",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Edgar Núñez",
+  "chefSource": "michelin"
 }

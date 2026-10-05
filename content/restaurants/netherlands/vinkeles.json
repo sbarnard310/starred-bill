@@ -12,5 +12,15 @@
   "website": "https://www.vinkeles.com/",
   "lat": 52.3692162,
   "lng": 4.8840168,
-  "placeId": "ChIJg8bf-sIJxkcR9mc7li6y48E"
+  "placeId": "ChIJg8bf-sIJxkcR9mc7li6y48E",
+  "michelinId": "115263",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Jurgen van der Zalm",
+  "chefSource": "site"
 }

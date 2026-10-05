@@ -23,5 +23,12 @@
   "website": "https://www.labombe.co.uk/",
   "lat": 51.5050011,
   "lng": -0.1500251,
-  "placeId": "ChIJV0irD_MFdkgR6zRi3FNkXQM"
+  "placeId": "ChIJV0irD_MFdkgR6zRi3FNkXQM",
+  "michelinId": "1243050",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Evan Moore",
+  "chefSource": "site"
 }

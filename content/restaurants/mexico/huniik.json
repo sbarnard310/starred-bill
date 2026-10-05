@@ -20,5 +20,8 @@
   "website": "https://www.huniik.com",
   "lat": 20.9762466,
   "lng": -89.62150779999999,
-  "placeId": "ChIJG_gayOp2Vo8R7ZP4TYIkEDc"
+  "placeId": "ChIJG_gayOp2Vo8R7ZP4TYIkEDc",
+  "michelinId": "1245308",
+  "chef": "Roberto Solís",
+  "chefSource": "michelin"
 }

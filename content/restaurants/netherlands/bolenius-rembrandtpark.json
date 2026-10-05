@@ -12,5 +12,14 @@
   "website": "https://bolenius-rembrandtpark.nl",
   "lat": 52.35945,
   "lng": 4.844129,
-  "placeId": "ChIJK-siJMzjxUcRiU3bQ-0LbCU"
+  "placeId": "ChIJK-siJMzjxUcRiU3bQ-0LbCU",
+  "michelinId": "256723",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Luc Kusters",
+  "chefSource": "michelin"
 }

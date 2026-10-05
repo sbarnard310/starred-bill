@@ -21,5 +21,13 @@
   "website": "https://www.restaurantalouette.dk/",
   "lat": 55.682994,
   "lng": 12.581165,
-  "placeId": "ChIJcXrr90dTUkYRNJo6gjI26uk"
+  "placeId": "ChIJcXrr90dTUkYRNJo6gjI26uk",
+  "michelinId": "564763",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Nick Curtin",
+  "chefSource": "michelin"
 }

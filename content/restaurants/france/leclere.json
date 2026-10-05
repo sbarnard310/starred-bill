@@ -13,5 +13,8 @@
   "website": "https://www.restaurantleclere.com",
   "lat": 43.6067486,
   "lng": 3.8739319,
-  "placeId": "ChIJJaL9OKivthIREU5SGh4COgQ"
+  "placeId": "ChIJJaL9OKivthIREU5SGh4COgQ",
+  "michelinId": "508644",
+  "chef": "Guillaume Leclère",
+  "chefSource": "michelin"
 }

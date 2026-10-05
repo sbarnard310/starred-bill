@@ -27,5 +27,14 @@
   "website": "https://www.growrestaurant.it/",
   "lat": 45.659976,
   "lng": 9.25611,
-  "placeId": "ChIJRxeqMeG7hkcRZJ2--t2Deno"
+  "placeId": "ChIJRxeqMeG7hkcRZJ2--t2Deno",
+  "michelinId": "1202455",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Matteo Vergine",
+  "chefSource": "michelin"
 }

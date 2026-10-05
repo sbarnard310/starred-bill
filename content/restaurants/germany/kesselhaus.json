@@ -16,5 +16,11 @@
   "website": "https://www.kesselhaus-os.de/",
   "lat": 52.2653824,
   "lng": 8.0642438,
-  "placeId": "ChIJCZJHc3jluUcRk2A24X6nDUM"
+  "placeId": "ChIJCZJHc3jluUcRk2A24X6nDUM",
+  "michelinId": "1179716",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Constantin Krauß",
+  "chefSource": "michelin"
 }

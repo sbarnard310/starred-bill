@@ -13,5 +13,12 @@
   "website": "https://www.ristoranteguido.it/",
   "lat": 44.03226,
   "lng": 12.62138,
-  "placeId": "ChIJVdAeUdPCLBMRGx_WpnR5D-M"
+  "placeId": "ChIJVdAeUdPCLBMRGx_WpnR5D-M",
+  "michelinId": "147978",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

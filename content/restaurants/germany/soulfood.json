@@ -16,5 +16,12 @@
   "website": "https://www.restaurant-soulfood.com/",
   "lat": 49.6930717,
   "lng": 11.6295198,
-  "placeId": "ChIJ3Yte_hLGoUcRLEW2pHLQR9s"
+  "placeId": "ChIJ3Yte_hLGoUcRLEW2pHLQR9s",
+  "michelinId": "399689",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Michael Laus",
+  "chefSource": "site"
 }

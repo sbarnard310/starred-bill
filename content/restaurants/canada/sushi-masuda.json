@@ -14,5 +14,8 @@
   "website": "https://www.sushimasuda.com/",
   "lat": 49.2876672,
   "lng": -123.1191909,
-  "placeId": "ChIJsX0QBDBxhlQRiAP9i2t_vv8"
+  "placeId": "ChIJsX0QBDBxhlQRiAP9i2t_vv8",
+  "michelinId": "1214860",
+  "chef": "Yoji Masuda",
+  "chefSource": "michelin"
 }

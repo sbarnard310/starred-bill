@@ -12,5 +12,12 @@
   "website": "https://kanoerestaurant.com/",
   "lat": -23.5578032,
   "lng": -46.6660508,
-  "placeId": "ChIJU6gtyC5ZzpQRurkyG9csLFE"
+  "placeId": "ChIJU6gtyC5ZzpQRurkyG9csLFE",
+  "michelinId": "1212190",
+  "diets": [
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Tadashi Shiraishi",
+  "chefSource": "michelin"
 }

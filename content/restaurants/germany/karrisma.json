@@ -15,5 +15,11 @@
   "website": "https://karrisma-lindau.de/",
   "lat": 47.5474074,
   "lng": 9.6854321,
-  "placeId": "ChIJH4Q859UNm0cRps5IM02vUQc"
+  "placeId": "ChIJH4Q859UNm0cRps5IM02vUQc",
+  "michelinId": "552203",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Julian Karr",
+  "chefSource": "michelin"
 }

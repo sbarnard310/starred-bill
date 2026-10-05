@@ -13,5 +13,13 @@
   "website": "https://www.letrabe.it/",
   "lat": 40.4469187,
   "lng": 15.0429487,
-  "placeId": "ChIJgU2vF_pXORMRd84vIOdlUGc"
+  "placeId": "ChIJgU2vF_pXORMRd84vIOdlUGc",
+  "michelinId": "144354",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Marco Rispo",
+  "chefSource": "michelin"
 }

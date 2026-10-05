@@ -24,5 +24,8 @@
   "website": "https://www.restaurantpangium.sg/",
   "lat": 1.314367,
   "lng": 103.809238,
-  "placeId": "ChIJZ8bHbNAb2jEROKgwVHYF89A"
+  "placeId": "ChIJZ8bHbNAb2jEROKgwVHYF89A",
+  "michelinId": "1209995",
+  "chef": "Malcolm Lee",
+  "chefSource": "michelin"
 }

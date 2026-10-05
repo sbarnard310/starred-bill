@@ -13,5 +13,9 @@
   "website": "https://www.dissapore.eu",
   "lat": 40.7073742,
   "lng": 17.6581893,
-  "placeId": "ChIJcUGsR61CRhMRjVZCr42WZ7g"
+  "placeId": "ChIJcUGsR61CRhMRjVZCr42WZ7g",
+  "michelinId": "1206134",
+  "diets": [
+    "gluten-free"
+  ]
 }

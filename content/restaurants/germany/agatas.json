@@ -12,5 +12,10 @@
   "website": "https://www.agatas.de/",
   "lat": 51.2123287,
   "lng": 6.7762351,
-  "placeId": "ChIJBUFP7ozJuEcRcPqBJIBrtFE"
+  "placeId": "ChIJBUFP7ozJuEcRcPqBJIBrtFE",
+  "michelinId": "567367",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -23,5 +23,8 @@
   "website": "https://www.saisons-restaurant.fr",
   "lat": 45.77744,
   "lng": 4.76787,
-  "placeId": "ChIJ1-VP6JHs9EcRtnAyWKc0ngQ"
+  "placeId": "ChIJ1-VP6JHs9EcRtnAyWKc0ngQ",
+  "michelinId": "4469",
+  "chef": "Florian Pansin",
+  "chefSource": "michelin"
 }

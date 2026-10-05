@@ -20,5 +20,11 @@
   "website": "https://restaurantstory.co.uk/",
   "lat": 51.5028085,
   "lng": -0.077787,
-  "placeId": "ChIJcb5nuUUDdkgRp2TnVMSprT0"
+  "placeId": "ChIJcb5nuUUDdkgRp2TnVMSprT0",
+  "michelinId": "402204",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Tom Sellers",
+  "chefSource": "michelin"
 }

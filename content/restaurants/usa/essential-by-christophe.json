@@ -17,5 +17,14 @@
   "website": "https://www.essentialbychristophe.com/",
   "lat": 40.780833,
   "lng": -73.976657,
-  "placeId": "ChIJw6JyhoxZwokR3mKl4FLg5rM"
+  "placeId": "ChIJw6JyhoxZwokR3mKl4FLg5rM",
+  "michelinId": "1203903",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Christophe Bellanca",
+  "chefSource": "michelin"
 }

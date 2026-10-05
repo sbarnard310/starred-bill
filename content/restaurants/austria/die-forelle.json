@@ -13,5 +13,12 @@
   "website": "https://www.dieforelle.at",
   "lat": 46.7175735,
   "lng": 13.2896656,
-  "placeId": "ChIJa3Bx5PuocEcRKIdAiCxRvMU"
+  "placeId": "ChIJa3Bx5PuocEcRKIdAiCxRvMU",
+  "michelinId": "1212784",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Hannes Müller",
+  "chefSource": "michelin"
 }

@@ -16,5 +16,13 @@
   "website": "https://www.andrewfairlie.co.uk/",
   "lat": 56.283232,
   "lng": -3.751734,
-  "placeId": "ChIJz-HNiJqCiEgRLMflx3KO4hM"
+  "placeId": "ChIJz-HNiJqCiEgRLMflx3KO4hM",
+  "michelinId": "189833",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

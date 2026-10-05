@@ -12,5 +12,13 @@
   "website": "https://chimdining.com",
   "lat": 3.1444067,
   "lng": 101.7195484,
-  "placeId": "ChIJe82e0fI3zDERywfjSDUmlWs"
+  "placeId": "ChIJe82e0fI3zDERywfjSDUmlWs",
+  "michelinId": "1215028",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Willy",
+  "chefSource": "site"
 }

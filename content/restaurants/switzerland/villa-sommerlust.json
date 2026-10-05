@@ -12,5 +12,12 @@
   "website": "https://sommerlust.ch/",
   "lat": 47.6945459,
   "lng": 8.647056,
-  "placeId": "ChIJG0wZXOeBmkcR9yiGFzcF6aU"
+  "placeId": "ChIJG0wZXOeBmkcR9yiGFzcF6aU",
+  "michelinId": "180064",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Dan Rodriguez-Zaugg and Alejandro Perez Polo",
+  "chefSource": "michelin"
 }

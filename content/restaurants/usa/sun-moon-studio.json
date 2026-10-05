@@ -16,5 +16,12 @@
   "website": "https://www.sunmoonstudio.com/",
   "lat": 37.8143884,
   "lng": -122.2866969,
-  "placeId": "ChIJ05gry4t_hYAR4tpX79itpGo"
+  "placeId": "ChIJ05gry4t_hYAR4tpX79itpGo",
+  "michelinId": "1217483",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Alan Hsu and Sarah Cooper",
+  "chefSource": "michelin"
 }

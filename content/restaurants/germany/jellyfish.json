@@ -12,5 +12,9 @@
   "website": "https://www.jellyfish-restaurant.de/",
   "lat": 53.5666172,
   "lng": 9.965481,
-  "placeId": "ChIJ6w8RcUSPsUcRGlZpLu8uKIo"
+  "placeId": "ChIJ6w8RcUSPsUcRGlZpLu8uKIo",
+  "michelinId": "344992",
+  "diets": [
+    "vegetarian"
+  ]
 }

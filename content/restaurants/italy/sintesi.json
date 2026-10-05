@@ -15,5 +15,13 @@
   "website": "https://ristorantesintesi.it/",
   "lat": 41.725881,
   "lng": 12.679792,
-  "placeId": "ChIJr8PEsGuFJRMRkrr90_LIUEY"
+  "placeId": "ChIJr8PEsGuFJRMRkrr90_LIUEY",
+  "michelinId": "1199115",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Matteo Compagnucci and Sara Scarsella",
+  "chefSource": "michelin"
 }

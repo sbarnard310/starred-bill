@@ -15,5 +15,13 @@
   "website": "https://www.craccoportofino.it",
   "lat": 44.302429,
   "lng": 9.2103994,
-  "placeId": "ChIJ2U2uF0ef1BIR167TH6N1N7g"
+  "placeId": "ChIJ2U2uF0ef1BIR167TH6N1N7g",
+  "michelinId": "1196675",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Mattia Pecis",
+  "chefSource": "michelin"
 }

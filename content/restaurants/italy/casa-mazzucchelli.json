@@ -13,5 +13,11 @@
   "website": "https://www.casamazzucchelli.com",
   "lat": 44.4125719,
   "lng": 11.2578948,
-  "placeId": "ChIJWZ4VZmHVKhMRN__a2NL0eyc"
+  "placeId": "ChIJWZ4VZmHVKhMRN__a2NL0eyc",
+  "michelinId": "152043",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Aurora Mazzucchelli",
+  "chefSource": "site"
 }

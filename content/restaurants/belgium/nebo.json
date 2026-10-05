@@ -15,5 +15,8 @@
   "website": "https://www.restaurantnebo.be",
   "lat": 51.2051513,
   "lng": 4.3829209,
-  "placeId": "ChIJzzbG3f_3w0cRQLYw8YYuq14"
+  "placeId": "ChIJzzbG3f_3w0cRQLYw8YYuq14",
+  "michelinId": "1197020",
+  "chef": "Dimitri De Koninck",
+  "chefSource": "site"
 }

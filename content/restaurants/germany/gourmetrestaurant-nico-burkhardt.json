@@ -15,5 +15,11 @@
   "website": "https://pfauen-schorndorf.de/gourmetrestaurant-nico-burkhardt-3/",
   "lat": 48.8062032,
   "lng": 9.528005,
-  "placeId": "ChIJwTfLu4S7mUcRT3dlDccGbKY"
+  "placeId": "ChIJwTfLu4S7mUcRT3dlDccGbKY",
+  "michelinId": "568469",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nico Burkhardt",
+  "chefSource": "michelin"
 }

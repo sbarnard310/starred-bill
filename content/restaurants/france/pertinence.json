@@ -26,5 +26,9 @@
   "website": "https://www.restaurantpertinence.com/",
   "lat": 48.8571707,
   "lng": 2.3033772,
-  "placeId": "ChIJCUflYd9v5kcRdXFSXN7bOz0"
+  "placeId": "ChIJCUflYd9v5kcRdXFSXN7bOz0",
+  "michelinId": "527883",
+  "diets": [
+    "gluten-free"
+  ]
 }

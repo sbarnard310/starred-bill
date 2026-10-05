@@ -23,5 +23,8 @@
   "website": "https://www.humblechickenuk.com/",
   "lat": 51.5138258,
   "lng": -0.1317621,
-  "placeId": "ChIJj2LUnbgFdkgRs__gtpjkPRg"
+  "placeId": "ChIJj2LUnbgFdkgRs__gtpjkPRg",
+  "michelinId": "1196274",
+  "chef": "Angelo Sato",
+  "chefSource": "michelin"
 }

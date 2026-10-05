@@ -15,5 +15,12 @@
   "website": "https://www.shmonenyc.com/",
   "lat": 40.73329,
   "lng": -73.998603,
-  "placeId": "ChIJBdMLKZBZwokRJ0tYbQ6nfZ4"
+  "placeId": "ChIJBdMLKZBZwokRJ0tYbQ6nfZ4",
+  "michelinId": "1202987",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Eyal Shani",
+  "chefSource": "michelin"
 }

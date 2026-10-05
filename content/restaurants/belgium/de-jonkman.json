@@ -15,5 +15,11 @@
   "website": "https://dejonkman.be/nl",
   "lat": 51.2077602,
   "lng": 3.2782036,
-  "placeId": "ChIJWZ_9-Blaw0cRCxlitCQInrY"
+  "placeId": "ChIJWZ_9-Blaw0cRCxlitCQInrY",
+  "michelinId": "209367",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Filip Claeys",
+  "chefSource": "michelin"
 }

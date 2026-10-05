@@ -23,5 +23,12 @@
   "website": "https://www.le7emecontinent.com/",
   "lat": 47.7480409,
   "lng": 7.4029807,
-  "placeId": "ChIJSXZ8okSZkUcRwgSqC4l9YH0"
+  "placeId": "ChIJSXZ8okSZkUcRwgSqC4l9YH0",
+  "michelinId": "326012",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Laurent Haller",
+  "chefSource": "michelin"
 }

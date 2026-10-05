@@ -19,5 +19,11 @@
   "website": "https://www.thegoring.com/",
   "lat": 51.497523,
   "lng": -0.1456983,
-  "placeId": "ChIJXalKaSEFdkgRFq49_DDicaA"
+  "placeId": "ChIJXalKaSEFdkgRFq49_DDicaA",
+  "michelinId": "69646",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

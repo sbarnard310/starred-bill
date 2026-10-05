@@ -16,5 +16,11 @@
   "website": "https://www.maisonmarit.be/",
   "lat": 50.6602202,
   "lng": 4.3797168,
-  "placeId": "ChIJ-XAh8grSw0cRfPqNNCqsUr4"
+  "placeId": "ChIJ-XAh8grSw0cRfPqNNCqsUr4",
+  "michelinId": "209267",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Dimitri Marit",
+  "chefSource": "michelin"
 }

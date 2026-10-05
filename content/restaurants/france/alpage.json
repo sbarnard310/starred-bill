@@ -13,5 +13,13 @@
   "website": "https://www.annapurna-courchevel.com/fr/restaurant-alpage.html",
   "lat": 45.4012235,
   "lng": 6.6369297,
-  "placeId": "ChIJudQwI5mDiUcRxqOWFAVhBH0"
+  "placeId": "ChIJudQwI5mDiUcRxqOWFAVhBH0",
+  "michelinId": "1205984",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jean-Rémi Caillon",
+  "chefSource": "michelin"
 }

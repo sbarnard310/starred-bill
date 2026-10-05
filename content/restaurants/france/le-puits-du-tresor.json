@@ -25,5 +25,12 @@
   "website": "https://lepuitsdutresor.com",
   "lat": 43.3346453,
   "lng": 2.3787415,
-  "placeId": "ChIJJ0aQKdglrhIR-AUoJuVffR8"
+  "placeId": "ChIJJ0aQKdglrhIR-AUoJuVffR8",
+  "michelinId": "4062",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

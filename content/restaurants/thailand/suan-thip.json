@@ -16,5 +16,9 @@
   "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
   "lat": 13.9270623,
   "lng": 100.5022228,
-  "placeId": "ChIJAQAAAACP4jAR9UqTqNPLPsA"
+  "placeId": "ChIJAQAAAACP4jAR9UqTqNPLPsA",
+  "michelinId": "566286",
+  "diets": [
+    "vegetarian"
+  ]
 }

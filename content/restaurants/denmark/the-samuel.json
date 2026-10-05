@@ -21,5 +21,11 @@
   "website": "https://www.thesamuel.dk/",
   "lat": 55.732402,
   "lng": 12.568429,
-  "placeId": "ChIJ97nnHBpTUkYRtJSEQUisX6o"
+  "placeId": "ChIJ97nnHBpTUkYRtJSEQUisX6o",
+  "michelinId": "1192763",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jonathan Berntsen",
+  "chefSource": "site"
 }

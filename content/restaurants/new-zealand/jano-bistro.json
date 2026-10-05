@@ -22,5 +22,12 @@
   "website": "https://www.janobistro.co.nz/",
   "lat": -41.29465,
   "lng": 174.77145,
-  "placeId": "ChIJWQdQpSewOG0RRH-hkjrhyMs"
+  "placeId": "ChIJWQdQpSewOG0RRH-hkjrhyMs",
+  "michelinId": "1241034",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Pierre-Alain Fenoux",
+  "chefSource": "michelin"
 }

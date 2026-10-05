@@ -13,5 +13,11 @@
   "website": "https://www.cetariaristorante.it/",
   "lat": 40.7469801,
   "lng": 14.7701282,
-  "placeId": "ChIJeRjKBD7EOxMR48kJi7Y8FoA"
+  "placeId": "ChIJeRjKBD7EOxMR48kJi7Y8FoA",
+  "michelinId": "1154505",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

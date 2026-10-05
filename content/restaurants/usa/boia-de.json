@@ -17,5 +17,12 @@
   "website": "https://www.boiaderestaurant.com/",
   "lat": 25.823945,
   "lng": -80.191452,
-  "placeId": "ChIJte0b2xux2YgRr8f-xaLb0jw"
+  "placeId": "ChIJte0b2xux2YgRr8f-xaLb0jw",
+  "michelinId": "1198831",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Luciana Giangrandi and Alex Meyer",
+  "chefSource": "michelin"
 }

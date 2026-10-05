@@ -17,5 +17,12 @@
   "website": "https://ristorantecantinone.com/",
   "lat": 46.44052,
   "lng": 9.35916,
-  "placeId": "ChIJERa6IXpfhEcR6Z8xg5wiCvU"
+  "placeId": "ChIJERa6IXpfhEcR6Z8xg5wiCvU",
+  "michelinId": "138834",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Stefano Masanti",
+  "chefSource": "michelin"
 }

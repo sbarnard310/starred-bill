@@ -15,5 +15,11 @@
   "website": "https://favorite-mainz.de/",
   "lat": 49.9899559,
   "lng": 8.289494,
-  "placeId": "ChIJb_Vc1quXvUcRxGh8RrQT1zg"
+  "placeId": "ChIJb_Vc1quXvUcRxGh8RrQT1zg",
+  "michelinId": "82495",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

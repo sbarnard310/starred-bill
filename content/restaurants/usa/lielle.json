@@ -21,5 +21,14 @@
   "website": "https://www.lielle.la/",
   "lat": 34.055261,
   "lng": -118.397624,
-  "placeId": "ChIJmQOZTgC7woARN-0kvvPBCBw"
+  "placeId": "ChIJmQOZTgC7woARN-0kvvPBCBw",
+  "michelinId": "1248011",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Marcus Jernmark",
+  "chefSource": "michelin"
 }

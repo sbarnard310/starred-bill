@@ -15,5 +15,12 @@
   "website": "https://www.largineavenco.it/",
   "lat": 46.0025426,
   "lng": 13.4631925,
-  "placeId": "ChIJJ43wA-Ose0cRyKcWTMKsuYE"
+  "placeId": "ChIJJ43wA-Ose0cRyKcWTMKsuYE",
+  "michelinId": "415230",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Antonia Klugmann",
+  "chefSource": "michelin"
 }

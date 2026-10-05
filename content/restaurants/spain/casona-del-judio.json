@@ -13,5 +13,12 @@
   "website": "https://www.casonadeljudio.com/",
   "lat": 43.4686232,
   "lng": -3.8292585,
-  "placeId": "ChIJbbbvHXtJSQ0RkjcmG4mjpQY"
+  "placeId": "ChIJbbbvHXtJSQ0RkjcmG4mjpQY",
+  "michelinId": "342407",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Sergio Bastard",
+  "chefSource": "michelin"
 }

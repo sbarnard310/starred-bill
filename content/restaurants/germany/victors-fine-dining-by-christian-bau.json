@@ -15,5 +15,8 @@
   "website": "https://www.victors-fine-dining.de/",
   "lat": 49.5351732,
   "lng": 6.3872109,
-  "placeId": "ChIJXy2UBMJqlUcREpPkYNXvM9k"
+  "placeId": "ChIJXy2UBMJqlUcREpPkYNXvM9k",
+  "michelinId": "76534",
+  "chef": "Christian Bau",
+  "chefSource": "site"
 }

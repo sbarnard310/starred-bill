@@ -13,5 +13,12 @@
   "website": "https://www.grupsantitaura.com/es/dins-santitaura/",
   "lat": 39.565643,
   "lng": 2.6529955,
-  "placeId": "ChIJq6qq6hLElxIRc9AqB63IDok"
+  "placeId": "ChIJq6qq6hLElxIRc9AqB63IDok",
+  "michelinId": "1185103",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Santi Taura",
+  "chefSource": "michelin"
 }

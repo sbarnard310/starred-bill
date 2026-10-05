@@ -9,5 +9,9 @@
   "sourceType": "none",
   "website": "https://www.whiteswanhotel.com/",
   "lat": 23.108321,
-  "lng": 113.237649
+  "lng": 113.237649,
+  "michelinId": "559134",
+  "diets": [
+    "vegetarian"
+  ]
 }

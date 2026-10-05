@@ -15,5 +15,9 @@
   "website": "https://www.acasadima.com/",
   "lat": 42.5813042,
   "lng": 8.8318859,
-  "placeId": "ChIJs6gyrxPr0BIRrr9p_xsd8R4"
+  "placeId": "ChIJs6gyrxPr0BIRrr9p_xsd8R4",
+  "michelinId": "2528",
+  "diets": [
+    "vegetarian"
+  ]
 }

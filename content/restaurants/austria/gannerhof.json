@@ -15,5 +15,11 @@
   "website": "https://www.gannerhof.at/",
   "lat": 46.8065609,
   "lng": 12.3753849,
-  "placeId": "ChIJ-0H73Lp_d0cRbUJCO0L39F4"
+  "placeId": "ChIJ-0H73Lp_d0cRbUJCO0L39F4",
+  "michelinId": "1212344",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Josef Mühlmann",
+  "chefSource": "michelin"
 }

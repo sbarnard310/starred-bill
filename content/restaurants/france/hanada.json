@@ -25,5 +25,12 @@
   "website": "https://sushihanada.com/",
   "lat": 48.858699,
   "lng": 2.331507,
-  "placeId": "ChIJcz7vuM5v5kcRTFPcS3IrFUU"
+  "placeId": "ChIJcz7vuM5v5kcRTFPcS3IrFUU",
+  "michelinId": "1242987",
+  "diets": [
+    "halal",
+    "kosher"
+  ],
+  "chef": "Masayoshi Hanada",
+  "chefSource": "site"
 }

@@ -30,5 +30,8 @@
   "website": "https://restaurantnemo.net/",
   "lat": 35.659492,
   "lng": 139.714261,
-  "placeId": "ChIJYZOf1P2LGGARI2qUrl8L2Ac"
+  "placeId": "ChIJYZOf1P2LGGARI2qUrl8L2Ac",
+  "michelinId": "1197023",
+  "chef": "Kenichi Nemoto",
+  "chefSource": "michelin"
 }

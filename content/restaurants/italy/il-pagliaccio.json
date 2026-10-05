@@ -20,5 +20,13 @@
   "website": "https://www.ristoranteilpagliaccio.com/",
   "lat": 41.89793,
   "lng": 12.467373,
-  "placeId": "ChIJxXT3hURgLxMRuzmYPjBhY8k"
+  "placeId": "ChIJxXT3hURgLxMRuzmYPjBhY8k",
+  "michelinId": "118297",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Anthony Genovese",
+  "chefSource": "michelin"
 }

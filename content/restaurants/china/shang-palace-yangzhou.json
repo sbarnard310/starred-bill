@@ -13,5 +13,12 @@
   "website": "https://www.shangri-la.com/cn/yangzhou/shangrila/dining/restaurants/shang-palace/",
   "lat": 32.39654,
   "lng": 119.375191,
-  "placeId": "ChIJm1G-2m59tjURX-bqhPkxmjM"
+  "placeId": "ChIJm1G-2m59tjURX-bqhPkxmjM",
+  "michelinId": "1216419",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ],
+  "chef": "Zhu Yifei",
+  "chefSource": "site"
 }

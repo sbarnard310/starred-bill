@@ -21,5 +21,9 @@
   "website": "https://leigarden.hk/",
   "lat": 1.295336,
   "lng": 103.852362,
-  "placeId": "ChIJNfw8b6QZ2jERDj-WK2kAsPw"
+  "placeId": "ChIJNfw8b6QZ2jERDj-WK2kAsPw",
+  "michelinId": "501509",
+  "diets": [
+    "vegetarian"
+  ]
 }

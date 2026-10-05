@@ -24,5 +24,15 @@
   "website": "https://www.lembrunrestaurant.fr",
   "lat": 48.3902009,
   "lng": -4.4914853,
-  "placeId": "ChIJBSbaDQe5FkgRbKx8DLk1NPs"
+  "placeId": "ChIJBSbaDQe5FkgRbKx8DLk1NPs",
+  "michelinId": "1164861",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Guillaume Pape",
+  "chefSource": "michelin"
 }

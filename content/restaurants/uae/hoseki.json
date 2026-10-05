@@ -12,5 +12,8 @@
   "website": "https://www.bulgarihotels.com/en_US/dubai/bars-and-restaurants/japanese-restaurant-hoseki",
   "lat": 25.2106143,
   "lng": 55.2351396,
-  "placeId": "ChIJQa-YAtJDXz4Rpkq8QSKfyZc"
+  "placeId": "ChIJQa-YAtJDXz4Rpkq8QSKfyZc",
+  "michelinId": "1196967",
+  "chef": "Masahiro Sugiyama",
+  "chefSource": "michelin"
 }

@@ -19,5 +19,14 @@
   "lunchType": "menu",
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/zu860688"
+  "lunchSource": "https://omakaseje.com/restaurants/zu860688",
+  "michelinId": "1210299",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Jean-Georges Vongerichten",
+  "chefSource": "michelin"
 }

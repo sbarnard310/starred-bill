@@ -26,5 +26,12 @@
   "website": "https://www.guysavoy.com/",
   "lat": 48.8566248,
   "lng": 2.3391955,
-  "placeId": "ChIJ64SRn-xv5kcRH7AlSsBFASQ"
+  "placeId": "ChIJ64SRn-xv5kcRH7AlSsBFASQ",
+  "michelinId": "6477",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Guy Savoy",
+  "chefSource": "michelin"
 }

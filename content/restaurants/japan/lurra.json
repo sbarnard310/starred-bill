@@ -12,5 +12,11 @@
   "website": "https://lurrakyoto.com/",
   "lat": 35.010044,
   "lng": 135.780637,
-  "placeId": "ChIJiciyvxkJAWAR5mtItjbbqm0"
+  "placeId": "ChIJiciyvxkJAWAR5mtItjbbqm0",
+  "michelinId": "1193079",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jacob Kear",
+  "chefSource": "site"
 }

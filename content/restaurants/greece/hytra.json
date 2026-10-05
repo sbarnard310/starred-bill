@@ -14,5 +14,12 @@
   "website": "https://www.hytra.gr",
   "lat": 37.9813817,
   "lng": 23.7528491,
-  "placeId": "ChIJdTdlpiqjoRQRIk7Wh7FYGBY"
+  "placeId": "ChIJdTdlpiqjoRQRIk7Wh7FYGBY",
+  "michelinId": "112983",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

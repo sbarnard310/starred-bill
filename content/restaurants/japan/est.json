@@ -30,5 +30,13 @@
   "website": "https://www.est-tokyo.com/",
   "lat": 35.688162,
   "lng": 139.763396,
-  "placeId": "ChIJ8X1X0FSNGGAR9y3HrPtiS3A"
+  "placeId": "ChIJ8X1X0FSNGGAR9y3HrPtiS3A",
+  "michelinId": "1196238",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Guillaume Bracaval",
+  "chefSource": "michelin"
 }

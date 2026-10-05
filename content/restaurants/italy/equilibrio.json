@@ -13,5 +13,8 @@
   "website": "https://equilibrioristorante.com",
   "lat": 43.8997111,
   "lng": 7.9572418,
-  "placeId": "ChIJ_53rPtVx0hIRvjwnW7JdqvM"
+  "placeId": "ChIJ_53rPtVx0hIRvjwnW7JdqvM",
+  "michelinId": "1206064",
+  "chef": "Jacopo Chieppa",
+  "chefSource": "michelin"
 }

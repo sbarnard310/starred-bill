@@ -15,5 +15,11 @@
   "website": "https://sattlerhof.at/",
   "lat": 46.7133295,
   "lng": 15.5393249,
-  "placeId": "ChIJwydF8W6ib0cRbS99eCRFKmk"
+  "placeId": "ChIJwydF8W6ib0cRbS99eCRFKmk",
+  "michelinId": "1213172",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Markus Sattler",
+  "chefSource": "michelin"
 }

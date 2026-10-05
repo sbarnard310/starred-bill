@@ -23,5 +23,8 @@
   "website": "https://www.restaurant-lamadeleine.fr/",
   "lat": 48.1958057,
   "lng": 3.2741795,
-  "placeId": "ChIJh53Y3qka70cR9pp-n7LcjO0"
+  "placeId": "ChIJh53Y3qka70cR9pp-n7LcjO0",
+  "michelinId": "8572",
+  "chef": "Patrick Gauthier",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,11 @@
   "website": "https://www.nomicos.fr/",
   "lat": 48.8702767,
   "lng": 2.2830545,
-  "placeId": "ChIJxZgG1_Zv5kcR07nvyjrPAS4"
+  "placeId": "ChIJxZgG1_Zv5kcR07nvyjrPAS4",
+  "michelinId": "305485",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Jean-Louis Nomicos",
+  "chefSource": "michelin"
 }

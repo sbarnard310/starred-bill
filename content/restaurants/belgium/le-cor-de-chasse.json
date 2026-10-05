@@ -15,5 +15,12 @@
   "website": "https://www.lecordechasse.be/",
   "lat": 50.32426,
   "lng": 5.52895,
-  "placeId": "ChIJZYQ-T7tPwEcRxkxSxwmJUyU"
+  "placeId": "ChIJZYQ-T7tPwEcRxkxSxwmJUyU",
+  "michelinId": "371937",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Mario Elias",
+  "chefSource": "michelin"
 }

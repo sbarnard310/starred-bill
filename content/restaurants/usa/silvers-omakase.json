@@ -15,5 +15,11 @@
   "website": "https://www.silversomakase.com/",
   "lat": 34.415283,
   "lng": -119.6920226,
-  "placeId": "ChIJASLuZ2sT6YAR6Oc6_TOqIgc"
+  "placeId": "ChIJASLuZ2sT6YAR6Oc6_TOqIgc",
+  "michelinId": "1214386",
+  "diets": [
+    "kosher"
+  ],
+  "chef": "Lennon Silvers Lee",
+  "chefSource": "michelin"
 }

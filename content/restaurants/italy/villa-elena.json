@@ -27,5 +27,13 @@
   "website": "https://www.enricobartolini.net/ristorante-villaelena-bergamo",
   "lat": 45.710544,
   "lng": 9.648062,
-  "placeId": "ChIJLVJdksBRgUcRHNdHD9fWRLU"
+  "placeId": "ChIJLVJdksBRgUcRHNdHD9fWRLU",
+  "michelinId": "495745",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Marco Galtarossa",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,14 @@
   "website": "https://www.ilfuocosacro.com",
   "lat": 41.0529512,
   "lng": 9.4460803,
-  "placeId": "ChIJ0Xlxc6ZI2RIReYt7OEfBJqk"
+  "placeId": "ChIJ0Xlxc6ZI2RIReYt7OEfBJqk",
+  "michelinId": "1184432",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Luigi Bergeretto and Alessandro Menditto",
+  "chefSource": "michelin"
 }

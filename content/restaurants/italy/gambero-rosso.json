@@ -15,5 +15,10 @@
   "website": "https://www.gamberorosso.net/",
   "lat": 38.2990691,
   "lng": 16.3276783,
-  "placeId": "ChIJbeQChHMlFRMROU6t6G1XhyA"
+  "placeId": "ChIJbeQChHMlFRMROU6t6G1XhyA",
+  "michelinId": "139394",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

@@ -27,5 +27,8 @@
   "website": "https://www.relaisposte.com",
   "lat": 43.7787343,
   "lng": -1.2179647,
-  "placeId": "ChIJ1SJ8u_5VUQ0RYvELxH02JUM"
+  "placeId": "ChIJ1SJ8u_5VUQ0RYvELxH02JUM",
+  "michelinId": "11709",
+  "chef": "Jean Coussau",
+  "chefSource": "site"
 }

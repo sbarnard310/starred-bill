@@ -16,5 +16,9 @@
   "website": "https://www.lapalta.it/",
   "lat": 44.9914946,
   "lng": 9.4703811,
-  "placeId": "ChIJN93ukfzOgEcRonnfgDuosZk"
+  "placeId": "ChIJN93ukfzOgEcRonnfgDuosZk",
+  "michelinId": "127504",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -13,5 +13,12 @@
   "website": "https://noel.hr/",
   "lat": 45.810998,
   "lng": 15.9880697,
-  "placeId": "ChIJ6YHB8FTWZUcRVtizzodGlhA"
+  "placeId": "ChIJ6YHB8FTWZUcRVtizzodGlhA",
+  "michelinId": "547912",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ],
+  "chef": "Bruno Vokal",
+  "chefSource": "michelin"
 }

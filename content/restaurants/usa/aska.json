@@ -18,5 +18,12 @@
   "website": "https://askanyc.com/",
   "lat": 40.712377,
   "lng": -73.966755,
-  "placeId": "ChIJUwatTl1ZwokRUDXxYoFa-hk"
+  "placeId": "ChIJUwatTl1ZwokRUDXxYoFa-hk",
+  "michelinId": "510111",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Fredrik Berselius",
+  "chefSource": "michelin"
 }

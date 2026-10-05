@@ -25,5 +25,14 @@
   "website": "https://www.akrame.com/",
   "lat": 48.8714069,
   "lng": 2.3252971,
-  "placeId": "ChIJbZwQYu5v5kcR3uAetlru3Go"
+  "placeId": "ChIJbZwQYu5v5kcR3uAetlru3Go",
+  "michelinId": "507272",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Akrame Benallal",
+  "chefSource": "michelin"
 }

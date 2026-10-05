@@ -26,5 +26,11 @@
   "website": "https://www.tate.com.hk/",
   "lat": 22.284689,
   "lng": 114.150175,
-  "placeId": "ChIJlRpgqnsABDQRnPOTTc7WkCQ"
+  "placeId": "ChIJlRpgqnsABDQRnPOTTc7WkCQ",
+  "michelinId": "380308",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Vicky Lau",
+  "chefSource": "michelin"
 }

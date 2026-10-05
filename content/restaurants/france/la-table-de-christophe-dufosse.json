@@ -15,5 +15,13 @@
   "website": "https://www.ledomainedebeaulieu.fr",
   "lat": 50.581874,
   "lng": 2.5070873,
-  "placeId": "ChIJ6zD5m2Ud3UcRI8X9Qqrc6Bc"
+  "placeId": "ChIJ6zD5m2Ud3UcRI8X9Qqrc6Bc",
+  "michelinId": "118886",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Christophe Dufossé",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,9 @@
   "website": "https://visrestaurant-kelderman.be/",
   "lat": 50.9301848,
   "lng": 4.041829,
-  "placeId": "ChIJWwYLbUO9w0cRKZxSFBRV6_4"
+  "placeId": "ChIJWwYLbUO9w0cRKZxSFBRV6_4",
+  "michelinId": "209094",
+  "diets": [
+    "vegetarian"
+  ]
 }

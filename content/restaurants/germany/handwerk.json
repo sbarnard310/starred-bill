@@ -13,5 +13,11 @@
   "website": "https://www.handwerk-hannover.com",
   "lat": 52.356735,
   "lng": 9.763843,
-  "placeId": "ChIJQb0zyDsLsEcRGQgrYcNdy74"
+  "placeId": "ChIJQb0zyDsLsEcRGQgrYcNdy74",
+  "michelinId": "552200",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thomas Wohlfeld",
+  "chefSource": "michelin"
 }

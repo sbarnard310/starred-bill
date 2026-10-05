@@ -13,5 +13,12 @@
   "website": "https://hotel-fiescherblick.ch/restaurant/",
   "lat": 46.6252103,
   "lng": 8.0459154,
-  "placeId": "ChIJ89MgKfqbj0cRW9mn5EUQ0U4"
+  "placeId": "ChIJ89MgKfqbj0cRW9mn5EUQ0U4",
+  "michelinId": "1214588",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Aurélien Mettler",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://stbenedikt.de/",
   "lat": 50.7283878,
   "lng": 6.1833687,
-  "placeId": "ChIJP-vDpaadwEcRLuxFNc0cI1A"
+  "placeId": "ChIJP-vDpaadwEcRLuxFNc0cI1A",
+  "michelinId": "70668",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Maximilian Kreus",
+  "chefSource": "michelin"
 }

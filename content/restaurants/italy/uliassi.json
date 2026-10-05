@@ -13,5 +13,11 @@
   "website": "https://www.uliassi.com",
   "lat": 43.7194599,
   "lng": 13.2206587,
-  "placeId": "ChIJcR28_J1zLRMRk_P3vABNEog"
+  "placeId": "ChIJcR28_J1zLRMRk_P3vABNEog",
+  "michelinId": "152534",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

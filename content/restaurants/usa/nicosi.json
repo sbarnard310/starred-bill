@@ -12,5 +12,11 @@
   "website": "https://nicosisatx.com",
   "lat": 29.4409555,
   "lng": -98.4806909,
-  "placeId": "ChIJAQBA7vb1XIYRt1Aal0okoeA"
+  "placeId": "ChIJAQBA7vb1XIYRt1Aal0okoeA",
+  "michelinId": "1214951",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

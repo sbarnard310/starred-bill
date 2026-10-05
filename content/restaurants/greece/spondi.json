@@ -12,5 +12,14 @@
   "website": "https://www.spondi.gr",
   "lat": 37.965176,
   "lng": 23.7431892,
-  "placeId": "ChIJ87zFe2y9oRQR_ryfDQ9QfNI"
+  "placeId": "ChIJ87zFe2y9oRQR_ryfDQ9QfNI",
+  "michelinId": "112979",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Arnaud Bignon",
+  "chefSource": "michelin"
 }

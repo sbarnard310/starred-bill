@@ -15,5 +15,12 @@
   "website": "https://www.chassagnette.fr/",
   "lat": 43.5677811,
   "lng": 4.6683735,
-  "placeId": "ChIJh84ZFkdythIRGzvBRr819xA"
+  "placeId": "ChIJh84ZFkdythIRGzvBRr819xA",
+  "michelinId": "466",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Armand Arnal",
+  "chefSource": "michelin"
 }

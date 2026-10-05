@@ -35,5 +35,8 @@
   "website": "https://www.heritagebykei.com/ja",
   "lat": 35.665937,
   "lng": 139.731182,
-  "placeId": "ChIJGUC_l3iLGGARJ0V_A5BfZJs"
+  "placeId": "ChIJGUC_l3iLGGARJ0V_A5BfZJs",
+  "michelinId": "1193835",
+  "chef": "Kei Kobayashi",
+  "chefSource": "michelin"
 }

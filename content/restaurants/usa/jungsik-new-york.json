@@ -21,5 +21,14 @@
   "website": "https://www.jungsik.com/",
   "lat": 40.718726,
   "lng": -74.009111,
-  "placeId": "ChIJpSTN0R9awokRI29rK_SfbeA"
+  "placeId": "ChIJpSTN0R9awokRI29rK_SfbeA",
+  "michelinId": "360775",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Daeik Kim",
+  "chefSource": "michelin"
 }

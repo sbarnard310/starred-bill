@@ -13,5 +13,12 @@
   "website": "https://www.fabricarestaurante.com/ricardo-temino",
   "lat": 42.3432013,
   "lng": -3.7002022,
-  "placeId": "ChIJn189LqD9RQ0RTTB23FTOuZ0"
+  "placeId": "ChIJn189LqD9RQ0RTTB23FTOuZ0",
+  "michelinId": "1210671",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Ricardo Temiño",
+  "chefSource": "michelin"
 }

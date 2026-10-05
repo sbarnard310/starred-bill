@@ -27,5 +27,13 @@
   "website": "https://www.montecarlosbm.com/en/restaurant-monaco/le-louis-xv-alain-ducasse-hotel-de-paris",
   "lat": 43.739184,
   "lng": 7.427105,
-  "placeId": "ChIJF-Ovdo3CzRIR73yXhC1KpF4"
+  "placeId": "ChIJF-Ovdo3CzRIR73yXhC1KpF4",
+  "michelinId": "9785",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Emmanuel Pilon",
+  "chefSource": "michelin"
 }

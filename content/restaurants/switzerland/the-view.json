@@ -15,5 +15,13 @@
   "website": "https://www.theviewlugano.com/ristorante/the-view-ristorante-gourmet/",
   "lat": 45.9867232,
   "lng": 8.9500872,
-  "placeId": "ChIJDWSVcasthEcRFWKMQZva4pA"
+  "placeId": "ChIJDWSVcasthEcRFWKMQZva4pA",
+  "michelinId": "473933",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Diego Della Schiava",
+  "chefSource": "site"
 }

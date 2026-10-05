@@ -30,5 +30,14 @@
   "website": "https://irwin.paris/",
   "lat": 48.8734966,
   "lng": 2.3179304,
-  "placeId": "ChIJ12IFfgBv5kcRrXCid5q23Nk"
+  "placeId": "ChIJ12IFfgBv5kcRrXCid5q23Nk",
+  "michelinId": "1241527",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Irwin Durand",
+  "chefSource": "site"
 }

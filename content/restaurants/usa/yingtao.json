@@ -21,5 +21,8 @@
   "website": "https://yingtaonyc.com/",
   "lat": 40.765597,
   "lng": -73.98753,
-  "placeId": "ChIJkYkkoh1ZwokRE01ymVZhhpg"
+  "placeId": "ChIJkYkkoh1ZwokRE01ymVZhhpg",
+  "michelinId": "1208771",
+  "chef": "Emily Yuen",
+  "chefSource": "michelin"
 }

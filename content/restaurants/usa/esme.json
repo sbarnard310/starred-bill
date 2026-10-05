@@ -18,5 +18,13 @@
   "website": "https://www.esmechicago.com/",
   "lat": 41.922037,
   "lng": -87.63856,
-  "placeId": "ChIJzVJtmfjTD4gRFfVzZaod3Ns"
+  "placeId": "ChIJzVJtmfjTD4gRFfVzZaod3Ns",
+  "michelinId": "1196918",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Jenner Tomaska",
+  "chefSource": "michelin"
 }

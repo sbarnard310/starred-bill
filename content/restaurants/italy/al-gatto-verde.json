@@ -15,5 +15,13 @@
   "website": "https://ristorantealgattoverde.com",
   "lat": 44.6102868,
   "lng": 10.980026,
-  "placeId": "ChIJYQwpBIXnf0cRekgb5iH_HMM"
+  "placeId": "ChIJYQwpBIXnf0cRekgb5iH_HMM",
+  "michelinId": "1211479",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jessica Rosval",
+  "chefSource": "michelin"
 }

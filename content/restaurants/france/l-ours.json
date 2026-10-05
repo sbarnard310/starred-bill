@@ -27,5 +27,13 @@
   "website": "https://loursrestaurant.com/",
   "lat": 48.8476098,
   "lng": 2.4367513,
-  "placeId": "ChIJGciJs6Ny5kcR3Kw9jrkIRHI"
+  "placeId": "ChIJGciJs6Ny5kcR3Kw9jrkIRHI",
+  "michelinId": "1000259",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

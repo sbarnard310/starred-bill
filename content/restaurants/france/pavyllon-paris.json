@@ -25,5 +25,13 @@
   "website": "https://www.yannick-alleno.com/les-etablissements-du-groupe/pavyllon-paris",
   "lat": 48.8659971,
   "lng": 2.3162586,
-  "placeId": "ChIJNb0Vrftv5kcRMegtKrTeefg"
+  "placeId": "ChIJNb0Vrftv5kcRMegtKrTeefg",
+  "michelinId": "1186416",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Yannick Alléno",
+  "chefSource": "site"
 }

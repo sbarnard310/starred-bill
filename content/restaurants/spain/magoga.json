@@ -13,5 +13,13 @@
   "website": "https://www.restaurantemagoga.com",
   "lat": 37.605446,
   "lng": -0.98376,
-  "placeId": "ChIJ4_jwCCdCYw0RMNUaOB3y0fo"
+  "placeId": "ChIJ4_jwCCdCYw0RMNUaOB3y0fo",
+  "michelinId": "469559",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "María Gómez",
+  "chefSource": "michelin"
 }

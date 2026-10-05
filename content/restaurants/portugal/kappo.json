@@ -13,5 +13,8 @@
   "website": "https://www.kappo.pt",
   "lat": 38.6971584,
   "lng": -9.422948,
-  "placeId": "ChIJlyhHBYPFHg0RUhMGeY6WCqY"
+  "placeId": "ChIJlyhHBYPFHg0RUhMGeY6WCqY",
+  "michelinId": "1196985",
+  "chef": "Tiago Penão",
+  "chefSource": "michelin"
 }

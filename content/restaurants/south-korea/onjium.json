@@ -25,5 +25,8 @@
   "lunchSource": "https://www.catchtable.net/shop/onjiumrestaurant/menus",
   "lat": 37.58048,
   "lng": 126.97345,
-  "placeId": "ChIJk5DRDD2jfDURUA4aAk0Frx0"
+  "placeId": "ChIJk5DRDD2jfDURUA4aAk0Frx0",
+  "michelinId": "570665",
+  "chef": "Cho Eun-hee and Park Sung-bae",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,12 @@
   "website": "https://www.nawathaicuisine.com",
   "lat": 13.7232579,
   "lng": 100.5838816,
-  "placeId": "ChIJBcsS30qf4jARijfxeJq66YI"
+  "placeId": "ChIJBcsS30qf4jARijfxeJq66YI",
+  "michelinId": "1208008",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Joe Hoshino and Saki Hoshino",
+  "chefSource": "michelin"
 }

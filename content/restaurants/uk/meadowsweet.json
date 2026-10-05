@@ -20,5 +20,9 @@
   "website": "https://www.meadowsweetholt.com/",
   "lat": 52.904645,
   "lng": 1.087398,
-  "placeId": "ChIJi1YlRCJv10cRSJGOVV8-EyE"
+  "placeId": "ChIJi1YlRCJv10cRSJGOVV8-EyE",
+  "michelinId": "1196227",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -16,5 +16,9 @@
   "website": "https://nch.ee",
   "lat": 59.4951028,
   "lng": 24.8263897,
-  "placeId": "ChIJC68P3HCTkkYR5TiLl9FXMOQ"
+  "placeId": "ChIJC68P3HCTkkYR5TiLl9FXMOQ",
+  "michelinId": "563141",
+  "diets": [
+    "vegetarian"
+  ]
 }

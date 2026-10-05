@@ -13,5 +13,8 @@
   "website": "https://www.restaurant-la-chaumiere.ch/",
   "lat": 46.1623711,
   "lng": 6.1475608,
-  "placeId": "ChIJ2WwADyR7jEcRY-TA5c7RME4"
+  "placeId": "ChIJ2WwADyR7jEcRY-TA5c7RME4",
+  "michelinId": "528088",
+  "chef": "Serge Labrosse",
+  "chefSource": "michelin"
 }

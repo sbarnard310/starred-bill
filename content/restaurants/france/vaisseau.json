@@ -32,5 +32,11 @@
   "website": "https://www.restaurant-vaisseau.com/",
   "lat": 48.8532272,
   "lng": 2.3827958,
-  "placeId": "ChIJA73L0W9z5kcRqULmP_W05uw"
+  "placeId": "ChIJA73L0W9z5kcRqULmP_W05uw",
+  "michelinId": "1212003",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Adrien Cachot",
+  "chefSource": "michelin"
 }

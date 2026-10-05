@@ -16,5 +16,14 @@
   "website": "https://www.aniarrestaurant.ie/",
   "lat": 53.271245,
   "lng": -9.056998,
-  "placeId": "ChIJa-hTrfuWW0gROPvIJzZYai8"
+  "placeId": "ChIJa-hTrfuWW0gROPvIJzZYai8",
+  "michelinId": "367484",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "JP McMahon",
+  "chefSource": "site"
 }

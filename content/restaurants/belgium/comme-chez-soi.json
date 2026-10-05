@@ -12,5 +12,11 @@
   "website": "https://www.commechezsoi.be/",
   "lat": 50.8423511,
   "lng": 4.3459079,
-  "placeId": "ChIJTQxNAnrEw0cRsz3Wx2HWO5o"
+  "placeId": "ChIJTQxNAnrEw0cRsz3Wx2HWO5o",
+  "michelinId": "113872",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Lionel Rigolet",
+  "chefSource": "michelin"
 }

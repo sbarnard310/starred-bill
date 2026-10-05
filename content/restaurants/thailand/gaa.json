@@ -17,5 +17,12 @@
   "website": "https://www.gaabkk.com",
   "lat": 13.72725,
   "lng": 100.57828,
-  "placeId": "ChIJ9Rn3Stqe4jARvC9rgWzu31Q"
+  "placeId": "ChIJ9Rn3Stqe4jARvC9rgWzu31Q",
+  "michelinId": "1194845",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Garima Arora",
+  "chefSource": "michelin"
 }

@@ -26,5 +26,11 @@
   "website": "https://fredericsimonin.com/",
   "lat": 48.8799368,
   "lng": 2.2942663,
-  "placeId": "ChIJR2puoJNv5kcRKwrZ40ztbfA"
+  "placeId": "ChIJR2puoJNv5kcRKwrZ40ztbfA",
+  "michelinId": "280978",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Frédéric Simonin",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,11 @@
   "website": "https://freresibarboure.com",
   "lat": 43.4179898,
   "lng": -1.598086,
-  "placeId": "ChIJ6e7KCooTUQ0Rb6zJakcbrIc"
+  "placeId": "ChIJ6e7KCooTUQ0Rb6zJakcbrIc",
+  "michelinId": "1128",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Xabi Ibarboure",
+  "chefSource": "michelin"
 }

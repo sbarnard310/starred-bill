@@ -23,5 +23,12 @@
   "website": "https://www.jerome-nutile.com",
   "lat": 43.8208935,
   "lng": 4.3709411,
-  "placeId": "ChIJowKfy40ttBIRVgUsoQW3OGg"
+  "placeId": "ChIJowKfy40ttBIRVgUsoQW3OGg",
+  "michelinId": "474533",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jérôme Nutile",
+  "chefSource": "michelin"
 }

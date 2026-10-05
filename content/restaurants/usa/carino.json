@@ -21,5 +21,12 @@
   "website": "https://www.carinochicago.com/",
   "lat": 41.966958,
   "lng": -87.658514,
-  "placeId": "ChIJ8USkYSzTD4gRNzwpxKgihBI"
+  "placeId": "ChIJ8USkYSzTD4gRNzwpxKgihBI",
+  "michelinId": "1212614",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Norman Fenton",
+  "chefSource": "michelin"
 }

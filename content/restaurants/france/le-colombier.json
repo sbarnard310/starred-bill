@@ -14,5 +14,11 @@
   "source": "https://domaine-colombier.com/fr/restaurants/restaurant-gastronomique-drome.html",
   "website": "https://domaine-colombier.com/",
   "lat": 44.4688517,
-  "lng": 4.7429648
+  "lng": 4.7429648,
+  "michelinId": "11927",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

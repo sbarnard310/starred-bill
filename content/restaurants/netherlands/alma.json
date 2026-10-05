@@ -13,5 +13,10 @@
   "website": "https://www.alma.nl/",
   "lat": 51.5809993,
   "lng": 5.1970972,
-  "placeId": "ChIJoXKlUIvrxkcRgzALON9wHH0"
+  "placeId": "ChIJoXKlUIvrxkcRgzALON9wHH0",
+  "michelinId": "1188023",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

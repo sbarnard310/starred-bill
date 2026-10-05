@@ -13,5 +13,10 @@
   "website": "https://www.belmond.com/hotels/europe/portugal/madeira/belmond-reids-palace/william-restaurant",
   "lat": 32.64069,
   "lng": -16.92367,
-  "placeId": "ChIJ9cHnevRfYAwRXIWHzFyR5N8"
+  "placeId": "ChIJ9cHnevRfYAwRXIWHzFyR5N8",
+  "michelinId": "216831",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

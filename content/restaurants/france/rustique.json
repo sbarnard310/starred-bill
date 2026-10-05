@@ -15,5 +15,8 @@
   "website": "https://www.rustiquelyon.fr",
   "lat": 45.7520806,
   "lng": 4.8262529,
-  "placeId": "ChIJv9dhnQ3r9EcRSK4TvV7AUGI"
+  "placeId": "ChIJv9dhnQ3r9EcRSK4TvV7AUGI",
+  "michelinId": "1190896",
+  "chef": "Maxime Laurenson",
+  "chefSource": "michelin"
 }

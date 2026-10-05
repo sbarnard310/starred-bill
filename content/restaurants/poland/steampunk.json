@@ -16,5 +16,9 @@
   "website": "https://wodna-wieza.pl/steampunk-restauracja/",
   "lat": 49.9742373,
   "lng": 18.9437731,
-  "placeId": "ChIJPVquX9C7FkcRJITfd9llIAI"
+  "placeId": "ChIJPVquX9C7FkcRJITfd9llIAI",
+  "michelinId": "1242062",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -23,5 +23,14 @@
   "website": "https://www.assiettechampenoise.com",
   "lat": 49.2478347,
   "lng": 4.0032666,
-  "placeId": "ChIJo5lBCo916UcR3cmE9t0JBY8"
+  "placeId": "ChIJo5lBCo916UcR3cmE9t0JBY8",
+  "michelinId": "12567",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Arnaud Lallement",
+  "chefSource": "site"
 }

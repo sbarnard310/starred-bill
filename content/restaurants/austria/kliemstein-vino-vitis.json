@@ -13,5 +13,11 @@
   "website": "https://www.kliemstein-linz.at/",
   "lat": 48.3063856,
   "lng": 14.2831305,
-  "placeId": "ChIJuRSeIIaXc0cR5LK6aujvU6g"
+  "placeId": "ChIJuRSeIIaXc0cR5LK6aujvU6g",
+  "michelinId": "1212974",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andreas Zika",
+  "chefSource": "site"
 }

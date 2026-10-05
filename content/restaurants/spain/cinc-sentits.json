@@ -26,5 +26,11 @@
   "website": "https://www.cincsentits.com/",
   "lat": 41.3785,
   "lng": 2.152177,
-  "placeId": "ChIJ8TMSh46ipBIRVmVx_17vwLE"
+  "placeId": "ChIJ8TMSh46ipBIRVmVx_17vwLE",
+  "michelinId": "203796",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Jordi Artal",
+  "chefSource": "michelin"
 }

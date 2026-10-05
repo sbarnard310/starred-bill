@@ -13,5 +13,12 @@
   "website": "https://pontdebrent.ch/",
   "lat": 46.4588171,
   "lng": 6.9009618,
-  "placeId": "ChIJdX7ACkqbjkcRGFfOkckpvs0"
+  "placeId": "ChIJdX7ACkqbjkcRGFfOkckpvs0",
+  "michelinId": "1214910",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Joeffrey Fraiche",
+  "chefSource": "site"
 }

@@ -23,5 +23,13 @@
   "website": "https://www.latabledu11.com",
   "lat": 48.8028642,
   "lng": 2.1233414,
-  "placeId": "ChIJAQAAAMd95kcR6ik1eTjIUJE"
+  "placeId": "ChIJAQAAAMd95kcR6ik1eTjIUJE",
+  "michelinId": "472663",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jean-Baptiste Lavergne-Morazzani",
+  "chefSource": "michelin"
 }

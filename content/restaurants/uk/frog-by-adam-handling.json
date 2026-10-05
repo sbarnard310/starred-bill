@@ -21,5 +21,14 @@
   "website": "https://www.frogbyadamhandling.com/",
   "lat": 51.51085,
   "lng": -0.12217,
-  "placeId": "ChIJww-u68sEdkgR3lqhkcsnvBY"
+  "placeId": "ChIJww-u68sEdkgR3lqhkcsnvBY",
+  "michelinId": "546419",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Adam Handling",
+  "chefSource": "michelin"
 }

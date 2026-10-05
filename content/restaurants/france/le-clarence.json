@@ -25,5 +25,12 @@
   "website": "https://www.le-clarence.paris/la-table/",
   "lat": 48.8673498,
   "lng": 2.3098732,
-  "placeId": "ChIJH5K8McVv5kcRHrJn-zUA3KQ"
+  "placeId": "ChIJH5K8McVv5kcRHrJn-zUA3KQ",
+  "michelinId": "487420",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ],
+  "chef": "Andrea Capasso",
+  "chefSource": "site"
 }

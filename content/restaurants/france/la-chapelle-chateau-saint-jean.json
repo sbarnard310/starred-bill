@@ -23,5 +23,12 @@
   "website": "https://www.chateau-saint-jean.com/restaurants-bar/restaurant-la-chapelle/",
   "lat": 46.3233297,
   "lng": 2.6049801,
-  "placeId": "ChIJjfEkxQ-p8EcRpzuVYxpdRLs"
+  "placeId": "ChIJjfEkxQ-p8EcRpzuVYxpdRLs",
+  "michelinId": "1184892",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Olivier Valade",
+  "chefSource": "michelin"
 }

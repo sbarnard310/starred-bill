@@ -27,5 +27,8 @@
   "website": "https://surcuisine.com/",
   "lat": 24.1379723,
   "lng": 120.6836711,
-  "placeId": "ChIJN8xZCmc9aTQRvRLjwnUFnKw"
+  "placeId": "ChIJN8xZCmc9aTQRvRLjwnUFnKw",
+  "michelinId": "1189361",
+  "chef": "Ed Lin",
+  "chefSource": "michelin"
 }

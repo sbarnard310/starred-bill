@@ -15,5 +15,13 @@
   "website": "https://www.hochkoenigin.com/de/kulinarik/",
   "lat": 47.4045006,
   "lng": 12.9022686,
-  "placeId": "ChIJO1zkXcTjdkcRHz35IHmjOpY"
+  "placeId": "ChIJO1zkXcTjdkcRHz35IHmjOpY",
+  "michelinId": "1216877",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Maximilian Reuter",
+  "chefSource": "michelin"
 }

@@ -18,5 +18,8 @@
   "website": "https://www.atomixnyc.com/",
   "lat": 40.744292,
   "lng": -73.982807,
-  "placeId": "ChIJ3bmAHghZwokRRXYO57yLuss"
+  "placeId": "ChIJ3bmAHghZwokRRXYO57yLuss",
+  "michelinId": "563200",
+  "chef": "Junghyun Park",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,15 @@
   "website": "https://www.thomaskeller.com/tfl",
   "lat": 38.40443,
   "lng": -122.36474,
-  "placeId": "ChIJAAAAAERVhIARYeTLvbbzAxs"
+  "placeId": "ChIJAAAAAERVhIARYeTLvbbzAxs",
+  "michelinId": "122806",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Thomas Keller",
+  "chefSource": "michelin"
 }

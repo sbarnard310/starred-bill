@@ -15,5 +15,13 @@
   "website": "https://www.lucknampark.co.uk/dining/restaurant-hywel-jones-by-lucknam-park/",
   "lat": 51.45626,
   "lng": -2.258723,
-  "placeId": "ChIJnQPElFZ4cUgRVcLIStjSWF8"
+  "placeId": "ChIJnQPElFZ4cUgRVcLIStjSWF8",
+  "michelinId": "192436",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Hywel Jones",
+  "chefSource": "site"
 }

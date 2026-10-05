@@ -13,5 +13,14 @@
   "website": "https://gallerybychele.com",
   "lat": 14.55901,
   "lng": 121.05613,
-  "placeId": "ChIJ3X1BrEjJlzMRWuNj6Ffpiig"
+  "placeId": "ChIJ3X1BrEjJlzMRWuNj6Ffpiig",
+  "michelinId": "1216044",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "José Luis Gonzalez",
+  "chefSource": "michelin"
 }

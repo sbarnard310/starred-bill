@@ -13,5 +13,11 @@
   "website": "https://www.rotewand.com/gourmet/rote-wand-chefs-table/",
   "lat": 47.2005705,
   "lng": 10.1092578,
-  "placeId": "ChIJr9qNfEWnnEcRzDK3g7iDYhs"
+  "placeId": "ChIJr9qNfEWnnEcRzDK3g7iDYhs",
+  "michelinId": "1212358",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Florian Armbruster",
+  "chefSource": "michelin"
 }

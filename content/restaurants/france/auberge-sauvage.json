@@ -20,5 +20,12 @@
   "website": "https://aubergesauvage.fr",
   "lat": 48.6007516,
   "lng": -1.4196972,
-  "placeId": "ChIJi7pC8HWtDkgRZuBGiBCcyDo"
+  "placeId": "ChIJi7pC8HWtDkgRZuBGiBCcyDo",
+  "michelinId": "1193545",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Thomas Benady",
+  "chefSource": "michelin"
 }

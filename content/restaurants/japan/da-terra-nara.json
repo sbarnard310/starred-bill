@@ -12,5 +12,8 @@
   "website": "https://da-terra.jp/",
   "lat": 34.472669,
   "lng": 135.816499,
-  "placeId": "ChIJQ3mIRxHNBmAR2nvMxwGSKko"
+  "placeId": "ChIJQ3mIRxHNBmAR2nvMxwGSKko",
+  "michelinId": "1197086",
+  "chef": "Hirokazu Nakai",
+  "chefSource": "michelin"
 }

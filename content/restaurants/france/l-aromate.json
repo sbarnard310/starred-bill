@@ -16,5 +16,11 @@
   "website": "https://laromate.fr/",
   "lat": 43.6992157,
   "lng": 7.269895,
-  "placeId": "ChIJF5tVukrbzRIRXkbLYOrH-Ww"
+  "placeId": "ChIJF5tVukrbzRIRXkbLYOrH-Ww",
+  "michelinId": "233368",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Mickaël Gracieux",
+  "chefSource": "michelin"
 }

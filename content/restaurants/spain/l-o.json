@@ -25,5 +25,14 @@
   "website": "https://monstbenet.com/es/restaurantes/restaurante-lo/",
   "lat": 41.744897,
   "lng": 1.900387,
-  "placeId": "ChIJJaQc_Ff3pBIR7YXKvD7qMs0"
+  "placeId": "ChIJJaQc_Ff3pBIR7YXKvD7qMs0",
+  "michelinId": "232393",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Ivan Margalef",
+  "chefSource": "michelin"
 }

@@ -24,5 +24,12 @@
   "website": "https://www.restaurantdelaloire.fr",
   "lat": 46.1472011,
   "lng": 4.1007524,
-  "placeId": "ChIJPekmt8P380cRJVI1Arm92vk"
+  "placeId": "ChIJPekmt8P380cRJVI1Arm92vk",
+  "michelinId": "7133",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Fabien Raux",
+  "chefSource": "michelin"
 }

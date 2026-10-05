@@ -31,5 +31,8 @@
   "website": "https://www.frassi.com.tw/",
   "lat": 25.0828482,
   "lng": 121.5591578,
-  "placeId": "ChIJ1Sk-qa2tQjQRXxXekf5f9p8"
+  "placeId": "ChIJ1Sk-qa2tQjQRXxXekf5f9p8",
+  "michelinId": "1210661",
+  "chef": "Iacopo Frassi",
+  "chefSource": "site"
 }

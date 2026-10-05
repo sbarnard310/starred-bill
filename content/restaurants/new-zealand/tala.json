@@ -24,5 +24,8 @@
   "website": "https://www.tala.co.nz/",
   "lat": -36.85561,
   "lng": 174.78036,
-  "placeId": "ChIJnbOIYiNJDW0RBWRieSjmtk0"
+  "placeId": "ChIJnbOIYiNJDW0RBWRieSjmtk0",
+  "michelinId": "1241069",
+  "chef": "Henry Onesemo",
+  "chefSource": "site"
 }

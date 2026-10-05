@@ -15,5 +15,11 @@
   "website": "https://www.budersand.de/de",
   "lat": 54.7611439,
   "lng": 8.2962752,
-  "placeId": "ChIJaxRL7APktEcRwJbi8bkWbAM"
+  "placeId": "ChIJaxRL7APktEcRwJbi8bkWbAM",
+  "michelinId": "259836",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Felix Gabel",
+  "chefSource": "michelin"
 }

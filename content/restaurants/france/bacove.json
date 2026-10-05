@@ -15,5 +15,8 @@
   "website": "https://restaurant-bacove.com",
   "lat": 50.7482544,
   "lng": 2.2554187,
-  "placeId": "ChIJLYCx96T53EcRjs9R3UOzj2Q"
+  "placeId": "ChIJLYCx96T53EcRjs9R3UOzj2Q",
+  "michelinId": "8129",
+  "chef": "Camille Delcroix",
+  "chefSource": "michelin"
 }

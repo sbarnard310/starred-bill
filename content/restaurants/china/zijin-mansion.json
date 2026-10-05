@@ -12,5 +12,12 @@
   "website": "https://www.hilton.com/en/hotels/bjswawa-waldorf-astoria-beijing/dining/zijin-mansion/",
   "lat": 39.916259,
   "lng": 116.414122,
-  "placeId": "ChIJ8Zu4GtJS8DURy95elmhTEFg"
+  "placeId": "ChIJ8Zu4GtJS8DURy95elmhTEFg",
+  "michelinId": "1186824",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

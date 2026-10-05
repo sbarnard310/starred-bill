@@ -13,5 +13,8 @@
   "website": "https://www.nostranoristorante.it",
   "lat": 43.9136749,
   "lng": 12.9193802,
-  "placeId": "ChIJI1gAcj4ZLRMRsTSsTgLhuEQ"
+  "placeId": "ChIJI1gAcj4ZLRMRsTSsTgLhuEQ",
+  "michelinId": "475673",
+  "chef": "Stefano Ciotti",
+  "chefSource": "michelin"
 }

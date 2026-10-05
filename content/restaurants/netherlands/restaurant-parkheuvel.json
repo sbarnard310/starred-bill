@@ -12,5 +12,13 @@
   "website": "https://www.parkheuvel.nl/",
   "lat": 51.9038322,
   "lng": 4.4715805,
-  "placeId": "ChIJSxHdIIM0xEcRvcnb5I6LJJc"
+  "placeId": "ChIJSxHdIIM0xEcRvcnb5I6LJJc",
+  "michelinId": "114949",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

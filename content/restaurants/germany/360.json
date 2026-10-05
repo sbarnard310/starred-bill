@@ -15,5 +15,8 @@
   "website": "https://www.restaurant360grad.de/",
   "lat": 50.3844391,
   "lng": 8.0614395,
-  "placeId": "ChIJm04tVd_MvUcRhCv4LzXsVDQ"
+  "placeId": "ChIJm04tVd_MvUcRhCv4LzXsVDQ",
+  "michelinId": "491772",
+  "chef": "Alexander Hohlwein",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,14 @@
   "website": "https://www.titrinned.dk",
   "lat": 55.5598623,
   "lng": 9.7546031,
-  "placeId": "ChIJC7v6GiGRTEYR0jehIet0AJw"
+  "placeId": "ChIJC7v6GiGRTEYR0jehIet0AJw",
+  "michelinId": "467307",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Michael Nørtoft",
+  "chefSource": "michelin"
 }

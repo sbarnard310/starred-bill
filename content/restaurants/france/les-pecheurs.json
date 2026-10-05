@@ -17,5 +17,12 @@
   "website": "https://capdantibes-beachhotel.com/",
   "lat": 43.5614172,
   "lng": 7.1181731,
-  "placeId": "ChIJmX9xuI1_zhIR0fRkfvQniUg"
+  "placeId": "ChIJmX9xuI1_zhIR0fRkfvQniUg",
+  "michelinId": "3930",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Nicolas Rondelli",
+  "chefSource": "michelin"
 }

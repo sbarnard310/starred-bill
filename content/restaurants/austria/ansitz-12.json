@@ -13,5 +13,11 @@
   "website": "https://www.ansitz12.at/",
   "lat": 46.8317467,
   "lng": 12.7607227,
-  "placeId": "ChIJ55bbJkRdd0cRNZIMBSdMzZk"
+  "placeId": "ChIJ55bbJkRdd0cRNZIMBSdMzZk",
+  "michelinId": "1245488",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "David Senfter",
+  "chefSource": "michelin"
 }

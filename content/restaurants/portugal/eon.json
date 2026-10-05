@@ -12,5 +12,11 @@
   "website": "https://palacetesevero.com/",
   "lat": 41.1561698,
   "lng": -8.6254234,
-  "placeId": "ChIJm3Z1COFlJA0RGV920XApZEE"
+  "placeId": "ChIJm3Z1COFlJA0RGV920XApZEE",
+  "michelinId": "1215936",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Tiago Bonito",
+  "chefSource": "michelin"
 }

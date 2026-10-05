@@ -13,5 +13,7 @@
   "website": "https://www.restaurantdavinci.nl/",
   "lat": 51.1452279,
   "lng": 5.8850739,
-  "placeId": "ChIJ68KZxXDKwEcRQUbEhD9D2UA"
+  "placeId": "ChIJ68KZxXDKwEcRQUbEhD9D2UA",
+  "chef": "Margo Reuten",
+  "chefSource": "site"
 }

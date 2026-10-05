@@ -15,5 +15,13 @@
   "website": "https://www.gedult.ch/",
   "lat": 47.0572781,
   "lng": 7.6266928,
-  "placeId": "ChIJQWeeh84tjkcROn5Khpmo9ro"
+  "placeId": "ChIJQWeeh84tjkcROn5Khpmo9ro",
+  "michelinId": "270731",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Lukas Kiener",
+  "chefSource": "michelin"
 }

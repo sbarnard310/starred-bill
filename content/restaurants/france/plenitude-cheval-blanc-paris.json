@@ -20,5 +20,13 @@
   "website": "https://www.chevalblanc.com/fr/maison/paris/restaurants-et-bars/plenitude/",
   "lat": 48.8588148,
   "lng": 2.3421588,
-  "placeId": "ChIJ1YFmqNZv5kcRBAVR2JH8pEo"
+  "placeId": "ChIJ1YFmqNZv5kcRBAVR2JH8pEo",
+  "michelinId": "1198294",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ],
+  "chef": "Arnaud Donckele",
+  "chefSource": "michelin"
 }

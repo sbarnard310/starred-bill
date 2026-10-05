@@ -17,5 +17,14 @@
   "website": "https://elcielomiami.com/",
   "lat": 25.769521,
   "lng": -80.191524,
-  "placeId": "ChIJ6VVxuZy22YgRlpY7iByTz_Q"
+  "placeId": "ChIJ6VVxuZy22YgRlpY7iByTz_Q",
+  "michelinId": "1194427",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Juan Manuel Barrientos",
+  "chefSource": "michelin"
 }

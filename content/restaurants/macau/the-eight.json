@@ -26,5 +26,9 @@
   "website": "https://www.grandlisboahotels.com/en/dining/the-8",
   "lat": 22.190475,
   "lng": 113.54341,
-  "placeId": "ChIJ6TQTLOl6ATQRM6WceXtvdME"
+  "placeId": "ChIJ6TQTLOl6ATQRM6WceXtvdME",
+  "michelinId": "231088",
+  "diets": [
+    "vegetarian"
+  ]
 }

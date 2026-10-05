@@ -13,5 +13,10 @@
   "website": "https://www.romantikhotel-hirsch.de/de/",
   "lat": 48.3505143,
   "lng": 9.1942682,
-  "placeId": "ChIJY8kui8AfmkcRKHSMLiYoAZw"
+  "placeId": "ChIJY8kui8AfmkcRKHSMLiYoAZw",
+  "michelinId": "77747",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

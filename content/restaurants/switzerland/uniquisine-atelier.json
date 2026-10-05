@@ -13,5 +13,12 @@
   "website": "https://www.uniquisine.ch/",
   "lat": 46.9757757,
   "lng": 8.3419323,
-  "placeId": "ChIJBYT0rUX3j0cR9ZATWm64DWY"
+  "placeId": "ChIJBYT0rUX3j0cR9ZATWm64DWY",
+  "michelinId": "553620",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Christoph Oliver Aebersold",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,14 @@
   "website": "https://www.estelanyc.com/",
   "lat": 40.72471,
   "lng": -73.9948,
-  "placeId": "ChIJf3f-f4VZwokRcBCEciTOGRQ"
+  "placeId": "ChIJf3f-f4VZwokRcBCEciTOGRQ",
+  "michelinId": "405986",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ignacio Mattos",
+  "chefSource": "michelin"
 }

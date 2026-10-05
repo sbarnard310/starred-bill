@@ -13,5 +13,12 @@
   "website": "https://www.cheval-blanc.nl/",
   "lat": 52.3602095,
   "lng": 4.6289256,
-  "placeId": "ChIJIeYKDErvxUcRtQ0L_0LXrms"
+  "placeId": "ChIJIeYKDErvxUcRtQ0L_0LXrms",
+  "michelinId": "212552",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Huub van der Velden",
+  "chefSource": "michelin"
 }

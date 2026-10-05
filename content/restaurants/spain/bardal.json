@@ -13,5 +13,8 @@
   "website": "https://restaurantebardal.com/",
   "lat": 36.74161,
   "lng": -5.16655,
-  "placeId": "ChIJfycB4TgxDQ0RPC-1VC7ddac"
+  "placeId": "ChIJfycB4TgxDQ0RPC-1VC7ddac",
+  "michelinId": "519925",
+  "chef": "Benito Gómez",
+  "chefSource": "michelin"
 }

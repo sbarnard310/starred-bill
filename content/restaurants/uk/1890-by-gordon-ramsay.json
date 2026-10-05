@@ -21,5 +21,12 @@
   "website": "https://www.gordonramsayrestaurants.com/restaurant-1890",
   "lat": 51.5102984,
   "lng": -0.120722,
-  "placeId": "ChIJpYnCw78FdkgRoVHfIfSrTas"
+  "placeId": "ChIJpYnCw78FdkgRoVHfIfSrTas",
+  "michelinId": "1200582",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

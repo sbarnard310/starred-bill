@@ -13,5 +13,11 @@
   "website": "https://www.alpenroyal.com/it/alpenroyal-gourmet-restaurant.asp",
   "lat": 46.5588796,
   "lng": 11.7463421,
-  "placeId": "ChIJH4q4asAVeEcRhxjQsGZgYjo"
+  "placeId": "ChIJH4q4asAVeEcRhxjQsGZgYjo",
+  "michelinId": "295057",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Mario Porcelli",
+  "chefSource": "michelin"
 }

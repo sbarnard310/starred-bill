@@ -13,5 +13,13 @@
   "website": "https://www.ristorantecoria.it",
   "lat": 37.5053157,
   "lng": 15.0860216,
-  "placeId": "ChIJPwRtw80PERMR3C75OsnRwr0"
+  "placeId": "ChIJPwRtw80PERMR3C75OsnRwr0",
+  "michelinId": "332376",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Domenico Colonnetta and Francesco Patti",
+  "chefSource": "site"
 }

@@ -21,5 +21,10 @@
   "website": "https://www.spaltenna.it/it/ristoranti/il-pievano",
   "lat": 43.465446,
   "lng": 11.429386,
-  "placeId": "ChIJbR6XoeDLKxMRUK0k47Cw-zE"
+  "placeId": "ChIJbR6XoeDLKxMRUK0k47Cw-zE",
+  "michelinId": "162066",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

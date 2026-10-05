@@ -13,5 +13,13 @@
   "website": "https://www.baezarufete.com",
   "lat": 38.368797,
   "lng": -0.433443,
-  "placeId": "ChIJ8_vV1sc5Yg0RCXkhibtfYB8"
+  "placeId": "ChIJ8_vV1sc5Yg0RCXkhibtfYB8",
+  "michelinId": "480699",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Joaquín Baeza",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,10 @@
   "website": "https://www.freustil.de/",
   "lat": 54.4009946,
   "lng": 13.611444,
-  "placeId": "ChIJ911kByE_q0cRzjl0NbJhAl0"
+  "placeId": "ChIJ911kByE_q0cRzjl0NbJhAl0",
+  "michelinId": "102550",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -13,5 +13,11 @@
   "website": "https://hotel-haltern.de/",
   "lat": 51.7433982,
   "lng": 7.1873302,
-  "placeId": "ChIJ-1_z8Dn5uEcRYVYD44yumao"
+  "placeId": "ChIJ-1_z8Dn5uEcRYVYD44yumao",
+  "michelinId": "100167",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Daniel Georgiev",
+  "chefSource": "michelin"
 }

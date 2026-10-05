@@ -12,5 +12,9 @@
   "website": "https://pramerlandthewolf.com/",
   "lat": 48.2220395,
   "lng": 16.3648603,
-  "placeId": "ChIJ8QjCUrcHbUcRm-Osr0bkZmY"
+  "placeId": "ChIJ8QjCUrcHbUcRm-Osr0bkZmY",
+  "michelinId": "517395",
+  "diets": [
+    "vegetarian"
+  ]
 }

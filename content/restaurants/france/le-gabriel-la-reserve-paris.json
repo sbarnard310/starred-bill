@@ -25,5 +25,14 @@
   "website": "https://www.lareserve-paris.com/",
   "lat": 48.8697309,
   "lng": 2.3132078,
-  "placeId": "ChIJA1PHDM9v5kcRsdD0Snjw06k"
+  "placeId": "ChIJA1PHDM9v5kcRsdD0Snjw06k",
+  "michelinId": "476630",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Jérôme Banctel",
+  "chefSource": "michelin"
 }

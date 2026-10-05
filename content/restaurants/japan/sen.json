@@ -14,5 +14,13 @@
   "website": "https://sen-tenkawa.com/",
   "lat": 34.245224,
   "lng": 135.856042,
-  "placeId": "ChIJEZBjg2HBBmAR8yy6aPAgmR4"
+  "placeId": "ChIJEZBjg2HBBmAR8yy6aPAgmR4",
+  "michelinId": "1218506",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Toshiharu Sunayama",
+  "chefSource": "michelin"
 }

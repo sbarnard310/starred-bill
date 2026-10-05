@@ -23,5 +23,11 @@
   "website": "https://hostellerielamontagne.com/",
   "lat": 48.2225256,
   "lng": 4.8874741,
-  "placeId": "ChIJ9c6_Adde7EcRhE8cqwsJdcU"
+  "placeId": "ChIJ9c6_Adde7EcRhE8cqwsJdcU",
+  "michelinId": "2342",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jean-Baptiste Natali",
+  "chefSource": "michelin"
 }

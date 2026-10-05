@@ -29,5 +29,11 @@
   "website": "https://www.mandarinoriental.com/en/singapore/marina-bay/dine/cherry-garden-by-chef-fei",
   "lat": 1.290398,
   "lng": 103.8581,
-  "placeId": "ChIJ8wanXKgZ2jERg2Arsgtf_W8"
+  "placeId": "ChIJ8wanXKgZ2jERg2Arsgtf_W8",
+  "michelinId": "501371",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Fei Wong",
+  "chefSource": "site"
 }

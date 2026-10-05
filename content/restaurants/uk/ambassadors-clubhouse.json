@@ -23,5 +23,12 @@
   "website": "https://ambassadorsclubhouse.com/",
   "lat": 51.5112065,
   "lng": -0.1399315,
-  "placeId": "ChIJ9wPPUaQFdkgRV6fcyggxHng"
+  "placeId": "ChIJ9wPPUaQFdkgRV6fcyggxHng",
+  "michelinId": "1214958",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

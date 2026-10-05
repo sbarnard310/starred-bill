@@ -15,5 +15,9 @@
   "website": "https://lodesvignes.fr",
   "lat": 46.2802,
   "lng": 4.74395,
-  "placeId": "ChIJMYXk3GFw80cR2mqO_mlCl1E"
+  "placeId": "ChIJMYXk3GFw80cR2mqO_mlCl1E",
+  "michelinId": "3319",
+  "diets": [
+    "vegetarian"
+  ]
 }

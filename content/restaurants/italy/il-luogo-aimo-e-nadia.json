@@ -20,5 +20,13 @@
   "website": "https://www.aimoenadia.com/il-luogo-aimo-e-nadia",
   "lat": 45.458435,
   "lng": 9.130776,
-  "placeId": "ChIJ9aorjSvChkcRD0Zd5dxZ2s4"
+  "placeId": "ChIJ9aorjSvChkcRD0Zd5dxZ2s4",
+  "michelinId": "141150",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alessandro Negrini and Fabio Pisani",
+  "chefSource": "site"
 }

@@ -12,5 +12,8 @@
   "website": "https://www.mandarinoriental.com/fr/zurich/savoy/dine/orsini",
   "lat": 47.3701183,
   "lng": 8.5402159,
-  "placeId": "ChIJDc2DkwAKkEcRR6BfM4Jl9Bc"
+  "placeId": "ChIJDc2DkwAKkEcRR6BfM4Jl9Bc",
+  "michelinId": "1211219",
+  "chef": "Dario Moresco",
+  "chefSource": "site"
 }

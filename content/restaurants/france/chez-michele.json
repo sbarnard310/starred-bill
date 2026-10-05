@@ -23,5 +23,13 @@
   "website": "https://www.chezmichele.fr",
   "lat": 48.7457994,
   "lng": 6.858981,
-  "placeId": "ChIJScX0O6ZulEcRBC1a0g30Y_c"
+  "placeId": "ChIJScX0O6ZulEcRBC1a0g30Y_c",
+  "michelinId": "4020",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Bruno Poiré",
+  "chefSource": "michelin"
 }

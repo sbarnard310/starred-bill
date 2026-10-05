@@ -21,5 +21,11 @@
   "website": "https://restaurant-shiraz.com/",
   "lat": 51.3017681,
   "lng": 7.2117775,
-  "placeId": "ChIJY8LM8zImuUcRke9xTvsAfXk"
+  "placeId": "ChIJY8LM8zImuUcRke9xTvsAfXk",
+  "michelinId": "1193342",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Reyad Danah",
+  "chefSource": "michelin"
 }

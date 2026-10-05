@@ -12,5 +12,12 @@
   "website": "https://www.borealhki.fi/",
   "lat": 60.164988,
   "lng": 24.9420568,
-  "placeId": "ChIJV85-83kLkkYR2Lw6xICKIq4"
+  "placeId": "ChIJV85-83kLkkYR2Lw6xICKIq4",
+  "michelinId": "1249430",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Pasha Demin",
+  "chefSource": "michelin"
 }

@@ -24,5 +24,13 @@
   "website": "https://www.aubergebasque.com",
   "lat": 43.3675657,
   "lng": -1.5846002,
-  "placeId": "ChIJa2pQSrgRUQ0RSvMAonxViQo"
+  "placeId": "ChIJa2pQSrgRUQ0RSvMAonxViQo",
+  "michelinId": "198247",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Cédric Béchade",
+  "chefSource": "site"
 }

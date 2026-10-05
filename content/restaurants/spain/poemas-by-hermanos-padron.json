@@ -13,5 +13,11 @@
   "website": "https://www.restaurantepoemas.com",
   "lat": 28.1211968,
   "lng": -15.4272769,
-  "placeId": "ChIJhb8hvdCVQAwRga39T1jyqNA"
+  "placeId": "ChIJhb8hvdCVQAwRga39T1jyqNA",
+  "michelinId": "1185265",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Adrián García",
+  "chefSource": "michelin"
 }

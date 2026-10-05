@@ -14,5 +14,11 @@
   "website": "https://www.restaurant-delice.de/de/",
   "lat": 48.7702819,
   "lng": 9.1762495,
-  "placeId": "ChIJt5D3Q0zbmUcRddQaU3_57zo"
+  "placeId": "ChIJt5D3Q0zbmUcRddQaU3_57zo",
+  "michelinId": "77934",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andreas Hettinger",
+  "chefSource": "michelin"
 }

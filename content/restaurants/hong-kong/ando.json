@@ -25,5 +25,8 @@
   "website": "https://www.andohk.com/",
   "lat": 22.2817911,
   "lng": 114.1553834,
-  "placeId": "ChIJgxUMAe8BBDQR-9T1PEYvk80"
+  "placeId": "ChIJgxUMAe8BBDQR-9T1PEYvk80",
+  "michelinId": "1192507",
+  "chef": "Agustin Balbi",
+  "chefSource": "michelin"
 }

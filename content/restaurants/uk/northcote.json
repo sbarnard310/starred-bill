@@ -20,5 +20,15 @@
   "website": "https://www.northcote.com/",
   "lat": 53.809141,
   "lng": -2.447423,
-  "placeId": "ChIJq8U_hS2ce0gRLBPVc4J4rSY"
+  "placeId": "ChIJq8U_hS2ce0gRLBPVc4J4rSY",
+  "michelinId": "186540",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Lisa Goodwin-Allen",
+  "chefSource": "michelin"
 }

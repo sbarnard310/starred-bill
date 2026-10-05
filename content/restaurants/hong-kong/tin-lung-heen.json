@@ -27,5 +27,12 @@
   "website": "https://www.tinlungheen.com/",
   "lat": 22.3032802,
   "lng": 114.1598747,
-  "placeId": "ChIJdb45FZEABDQRW12akQkMM9M"
+  "placeId": "ChIJdb45FZEABDQRW12akQkMM9M",
+  "michelinId": "352518",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Paul Lau",
+  "chefSource": "site"
 }

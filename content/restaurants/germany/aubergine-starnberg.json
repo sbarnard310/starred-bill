@@ -15,5 +15,11 @@
   "website": "https://www.aubergine-starnberg.de/",
   "lat": 48.0017757,
   "lng": 11.3498541,
-  "placeId": "ChIJu5b14SXQnUcRuu-h8Den9T8"
+  "placeId": "ChIJu5b14SXQnUcRuu-h8Den9T8",
+  "michelinId": "388304",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maximilian Moser",
+  "chefSource": "site"
 }

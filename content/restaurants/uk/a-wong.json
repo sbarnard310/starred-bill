@@ -19,5 +19,11 @@
   "website": "https://www.awong.co.uk/",
   "lat": 51.4930091,
   "lng": -0.1406558,
-  "placeId": "ChIJkQhKHeAEdkgRbgw0TGfq-W8"
+  "placeId": "ChIJkQhKHeAEdkgRbgw0TGfq-W8",
+  "michelinId": "389725",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andrew Wong",
+  "chefSource": "michelin"
 }

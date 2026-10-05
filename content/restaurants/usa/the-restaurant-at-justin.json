@@ -16,5 +16,8 @@
   "website": "https://www.justinwine.com/",
   "lat": 35.6563869,
   "lng": -120.9113324,
-  "placeId": "ChIJm22pMP8p7YARcieBuVH8Qe4"
+  "placeId": "ChIJm22pMP8p7YARcieBuVH8Qe4",
+  "michelinId": "1191690",
+  "chef": "Rachel Haggstrom",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://hertog-jan.com/",
   "lat": 51.2145635,
   "lng": 4.4054987,
-  "placeId": "ChIJmzvXzQ1Rw0cR6I4u4lxwSOA"
+  "placeId": "ChIJmzvXzQ1Rw0cR6I4u4lxwSOA",
+  "michelinId": "1194349",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Gert De Mangeleer",
+  "chefSource": "site"
 }

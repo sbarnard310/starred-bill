@@ -12,5 +12,12 @@
   "website": "https://www.bayerischerhof.de/de/",
   "lat": 48.140707,
   "lng": 11.5737529,
-  "placeId": "ChIJP-53e_N1nkcRXMNihzXCH30"
+  "placeId": "ChIJP-53e_N1nkcRXMNihzXCH30",
+  "michelinId": "1198719",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Kevin Romes",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://lacroixdor.ch/fr/home",
   "lat": 46.7296519,
   "lng": 6.4158748,
-  "placeId": "ChIJO9VMmJi2jUcR3U8IiUcx1QA"
+  "placeId": "ChIJO9VMmJi2jUcR3U8IiUcx1QA",
+  "michelinId": "1202971",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "David Sauvignet and Damien Lanza",
+  "chefSource": "michelin"
 }

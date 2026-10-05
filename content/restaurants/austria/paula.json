@@ -15,5 +15,8 @@
   "website": "https://www.weisserbaer.at/de/",
   "lat": 47.7381569,
   "lng": 13.4479361,
-  "placeId": "ChIJwfqYa02wdkcRQdKCcvLdIKQ"
+  "placeId": "ChIJwfqYa02wdkcRQdKCcvLdIKQ",
+  "michelinId": "1212905",
+  "chef": "Sebastian Leutgeb",
+  "chefSource": "michelin"
 }

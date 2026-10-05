@@ -25,5 +25,13 @@
   "website": "https://www.tancredi-sirmione.com/",
   "lat": 45.477196,
   "lng": 10.610896,
-  "placeId": "ChIJ88htD1PrgUcR2Q06EMaTk_s"
+  "placeId": "ChIJ88htD1PrgUcR2Q06EMaTk_s",
+  "michelinId": "271421",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Vincenzo Manicone",
+  "chefSource": "michelin"
 }

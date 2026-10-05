@@ -13,5 +13,11 @@
   "website": "https://www.gardena.it/it/ristorante-anna-stuben.asp",
   "lat": 46.5724104,
   "lng": 11.6730691,
-  "placeId": "ChIJ4cQnMvwSeEcRO8sMog-KMBc"
+  "placeId": "ChIJ4cQnMvwSeEcRO8sMog-KMBc",
+  "michelinId": "143848",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Reimund Brunner",
+  "chefSource": "michelin"
 }

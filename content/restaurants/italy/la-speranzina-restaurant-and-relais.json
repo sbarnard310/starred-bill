@@ -17,5 +17,12 @@
   "website": "https://www.lasperanzina.it/",
   "lat": 45.493159,
   "lng": 10.608587,
-  "placeId": "ChIJr1LCp1OTgUcRCxhLg95XG48"
+  "placeId": "ChIJr1LCp1OTgUcRCxhLg95XG48",
+  "michelinId": "153139",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Delfo Schiaffino",
+  "chefSource": "michelin"
 }

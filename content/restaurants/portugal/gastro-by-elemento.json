@@ -15,5 +15,11 @@
   "website": "https://www.gastroelemento.com/",
   "lat": 41.1643051,
   "lng": -8.588231,
-  "placeId": "ChIJU5Ynx4BlJA0Ra5NW2i_68kw"
+  "placeId": "ChIJU5Ynx4BlJA0Ra5NW2i_68kw",
+  "michelinId": "1208493",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Ricardo Dias Ferreira",
+  "chefSource": "michelin"
 }

@@ -30,5 +30,12 @@
   "website": "https://www.restaurantjueun.com/",
   "lat": 37.57276,
   "lng": 126.96991,
-  "placeId": "ChIJPbq7MnyjfDUROwBrnGcV-C8"
+  "placeId": "ChIJPbq7MnyjfDUROwBrnGcV-C8",
+  "michelinId": "1202880",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Park Ju-eun",
+  "chefSource": "site"
 }

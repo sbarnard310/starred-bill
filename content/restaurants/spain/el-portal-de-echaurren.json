@@ -13,5 +13,13 @@
   "website": "https://www.echaurren.com",
   "lat": 42.3257846,
   "lng": -3.0144146,
-  "placeId": "ChIJD_OcNQBxRQ0RNV5klgMm-sA"
+  "placeId": "ChIJD_OcNQBxRQ0RNV5klgMm-sA",
+  "michelinId": "228550",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Francis Paniego",
+  "chefSource": "michelin"
 }

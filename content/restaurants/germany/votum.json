@@ -13,5 +13,8 @@
   "website": "https://vo-tum.de/",
   "lat": 52.3700102,
   "lng": 9.7354833,
-  "placeId": "ChIJ3VwqInJ1sEcRHYzUFCjK6Yw"
+  "placeId": "ChIJ3VwqInJ1sEcRHYzUFCjK6Yw",
+  "michelinId": "1195570",
+  "chef": "Benjamin Gallein",
+  "chefSource": "site"
 }

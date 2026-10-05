@@ -13,5 +13,11 @@
   "website": "https://krone-waldenbuch.de/startseite.html",
   "lat": 48.6382832,
   "lng": 9.1323653,
-  "placeId": "ChIJV0a3Jw3EmUcRO2K6FZEpoT8"
+  "placeId": "ChIJV0a3Jw3EmUcRO2K6FZEpoT8",
+  "michelinId": "78548",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Erik Metzger",
+  "chefSource": "site"
 }

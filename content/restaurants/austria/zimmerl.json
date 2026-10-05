@@ -13,5 +13,8 @@
   "website": "https://www.restaurantzimmerl.at/",
   "lat": 48.8178576,
   "lng": 15.2788907,
-  "placeId": "ChIJMZjf30bbckcRJRxq0GnmtEg"
+  "placeId": "ChIJMZjf30bbckcRJRxq0GnmtEg",
+  "michelinId": "1242840",
+  "chef": "Bernhard Zimmerl",
+  "chefSource": "michelin"
 }

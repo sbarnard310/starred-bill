@@ -16,5 +16,14 @@
   "website": "https://www.jansmink.com/",
   "lat": 52.8754952,
   "lng": 5.9993171,
-  "placeId": "ChIJXy6mMnZnyEcRYnSX9uz9RL4"
+  "placeId": "ChIJXy6mMnZnyEcRYnSX9uz9RL4",
+  "michelinId": "1157095",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Jan Smink",
+  "chefSource": "michelin"
 }

@@ -26,5 +26,9 @@
   "website": "https://yuen-ji.com/",
   "lat": 24.1743625,
   "lng": 120.6236048,
-  "placeId": "ChIJgajel8c9aTQRRSnCtlKnp4Y"
+  "placeId": "ChIJgajel8c9aTQRRSnCtlKnp4Y",
+  "michelinId": "1213886",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -18,5 +18,11 @@
   "website": "https://www.yuunewyork.com/restaurantyuu/",
   "lat": 40.723363,
   "lng": -73.952163,
-  "placeId": "ChIJh2cqMDNZwokRqMMqNP9srxI"
+  "placeId": "ChIJh2cqMDNZwokRqMMqNP9srxI",
+  "michelinId": "1209310",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Yuu Shimano",
+  "chefSource": "michelin"
 }

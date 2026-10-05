@@ -31,5 +31,10 @@
   "website": "https://abysse.jp/",
   "lat": 35.648478,
   "lng": 139.705688,
-  "placeId": "ChIJAQAAAGOLGGARxWRVGcdrynM"
+  "placeId": "ChIJAQAAAGOLGGARxWRVGcdrynM",
+  "michelinId": "1193840",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

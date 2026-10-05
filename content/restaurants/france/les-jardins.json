@@ -27,5 +27,11 @@
   "website": "https://restaurant-lesjardins.fr/",
   "lat": 44.4933522,
   "lng": 1.3154983,
-  "placeId": "ChIJm5Gq_kSErBIRM1Xj-vpGGx4"
+  "placeId": "ChIJm5Gq_kSErBIRM1Xj-vpGGx4",
+  "michelinId": "1192474",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marius Halter",
+  "chefSource": "michelin"
 }

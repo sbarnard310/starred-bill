@@ -13,5 +13,13 @@
   "website": "https://www.hotel-stein.de",
   "lat": 50.3693993,
   "lng": 7.5814339,
-  "placeId": "ChIJ53WTRQBjvkcRA6s2zIVzhA4"
+  "placeId": "ChIJ53WTRQBjvkcRA6s2zIVzhA4",
+  "michelinId": "81986",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Mike Schiller",
+  "chefSource": "michelin"
 }

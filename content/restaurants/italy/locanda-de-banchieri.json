@@ -15,5 +15,14 @@
   "website": "https://www.locandadebanchieri.it/ristorante",
   "lat": 44.114434,
   "lng": 10.001537,
-  "placeId": "ChIJ-62g_Lsb1RIRkz7L75Op2YA"
+  "placeId": "ChIJ-62g_Lsb1RIRkz7L75Op2YA",
+  "michelinId": "1200012",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Giacomo Devoto",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,12 @@
   "website": "https://restaurant-villa-merton.de/",
   "lat": 50.1272242,
   "lng": 8.6534434,
-  "placeId": "ChIJS_nNOkcJvUcRxeHxHqMNAvo"
+  "placeId": "ChIJS_nNOkcJvUcRxeHxHqMNAvo",
+  "michelinId": "72801",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Philippe Giar",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,11 @@
   "website": "https://www.hotel-radio.fr/",
   "lat": 45.7699115,
   "lng": 3.0615915,
-  "placeId": "ChIJfSamIjUa90cRf4ZAWFAnKwM"
+  "placeId": "ChIJfSamIjUa90cRf4ZAWFAnKwM",
+  "michelinId": "10778",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Wilfrid Chaplain",
+  "chefSource": "michelin"
 }

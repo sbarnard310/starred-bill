@@ -12,5 +12,13 @@
   "website": "https://www.oetkercollection.com/hotels/palacio-tangara/",
   "lat": -23.6319967,
   "lng": -46.7228448,
-  "placeId": "ChIJq6pqFTxRzpQRNk65TqWPGt8"
+  "placeId": "ChIJq6pqFTxRzpQRNk65TqWPGt8",
+  "michelinId": "544116",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jean-Georges Vongerichten",
+  "chefSource": "michelin"
 }

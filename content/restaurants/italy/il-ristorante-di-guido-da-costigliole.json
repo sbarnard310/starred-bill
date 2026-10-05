@@ -15,5 +15,13 @@
   "website": "https://www.guidodacostigliole.it/",
   "lat": 44.7054966,
   "lng": 8.2100874,
-  "placeId": "ChIJtfDnEfmLh0cR1xr4jo88e34"
+  "placeId": "ChIJtfDnEfmLh0cR1xr4jo88e34",
+  "michelinId": "151762",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Fabio Sgrò",
+  "chefSource": "michelin"
 }

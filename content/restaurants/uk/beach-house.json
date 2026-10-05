@@ -20,5 +20,13 @@
   "website": "https://beachhouseoxwich.co.uk/",
   "lat": 51.557069,
   "lng": -4.161213,
-  "placeId": "ChIJW5MIgk2SbkgRsUS3vNq2XSY"
+  "placeId": "ChIJW5MIgk2SbkgRsUS3vNq2XSY",
+  "michelinId": "501284",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Hywel Griffith",
+  "chefSource": "michelin"
 }

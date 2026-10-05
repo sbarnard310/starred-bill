@@ -13,5 +13,13 @@
   "website": "https://www.victoria-jungfrau.ch/",
   "lat": 46.6870206,
   "lng": 7.8579196,
-  "placeId": "ChIJT3zLn5Glj0cRmwdNmQhKYe8"
+  "placeId": "ChIJT3zLn5Glj0cRmwdNmQhKYe8",
+  "michelinId": "1201148",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Stefan Beer",
+  "chefSource": "michelin"
 }

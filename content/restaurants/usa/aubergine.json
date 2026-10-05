@@ -15,5 +15,13 @@
   "website": "https://www.auberginecarmel.com/",
   "lat": 36.55406,
   "lng": -121.924355,
-  "placeId": "ChIJZ7svYhXmjYARp68gV6eBnX4"
+  "placeId": "ChIJZ7svYhXmjYARp68gV6eBnX4",
+  "michelinId": "559386",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ],
+  "chef": "Justin Cogley",
+  "chefSource": "michelin"
 }

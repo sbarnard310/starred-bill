@@ -15,5 +15,11 @@
   "website": "https://www.lameloise.fr/",
   "lat": 46.9079723,
   "lng": 4.7530292,
-  "placeId": "ChIJudiCOaT38kcRe7IPbWSafXY"
+  "placeId": "ChIJudiCOaT38kcRe7IPbWSafXY",
+  "michelinId": "10582",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Éric Pras",
+  "chefSource": "michelin"
 }

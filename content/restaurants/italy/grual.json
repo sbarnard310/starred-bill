@@ -13,5 +13,12 @@
   "website": "https://grual.lefayresorts.com/it/",
   "lat": 46.1669869,
   "lng": 10.7666316,
-  "placeId": "ChIJa4kveptbgkcRJZ6lNH4ol88"
+  "placeId": "ChIJa4kveptbgkcRJZ6lNH4ol88",
+  "michelinId": "1197633",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ],
+  "chef": "Matteo Maezza",
+  "chefSource": "michelin"
 }

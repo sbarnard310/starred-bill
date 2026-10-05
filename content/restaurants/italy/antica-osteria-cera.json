@@ -15,5 +15,9 @@
   "website": "https://www.osteriacera.it/",
   "lat": 45.3881476,
   "lng": 12.1302222,
-  "placeId": "ChIJb8FQgHS4fkcRMWrbSmuqSyE"
+  "placeId": "ChIJb8FQgHS4fkcRMWrbSmuqSyE",
+  "michelinId": "128500",
+  "diets": [
+    "vegetarian-menu"
+  ]
 }

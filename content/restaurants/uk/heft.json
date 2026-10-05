@@ -20,5 +20,13 @@
   "website": "https://hefthighnewton.co.uk/",
   "lat": 54.238639,
   "lng": -2.919031,
-  "placeId": "ChIJdymw-pSXfEgRbqAsiu1NwlM"
+  "placeId": "ChIJdymw-pSXfEgRbqAsiu1NwlM",
+  "michelinId": "1192303",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Kevin Tickle",
+  "chefSource": "michelin"
 }

@@ -24,5 +24,11 @@
   "website": "https://www.lannroz.fr/fr/restaurant-gastronomique-etoile-carnac-morbihan",
   "lat": 47.5789228,
   "lng": -3.0782748,
-  "placeId": "ChIJj9yyk3FtEEgRZ55BkT8gkCE"
+  "placeId": "ChIJj9yyk3FtEEgRZ55BkT8gkCE",
+  "michelinId": "376833",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Stéphane Cosnier",
+  "chefSource": "michelin"
 }

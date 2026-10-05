@@ -15,5 +15,15 @@
   "website": "https://www.farlamhall.com/",
   "lat": 54.934134,
   "lng": -2.672856,
-  "placeId": "ChIJ35XxvuQJfUgRady5YQBai08"
+  "placeId": "ChIJ35XxvuQJfUgRady5YQBai08",
+  "michelinId": "1206391",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Hrishikesh Desai",
+  "chefSource": "site"
 }

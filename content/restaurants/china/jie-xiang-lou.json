@@ -12,5 +12,10 @@
   "website": "https://www.sevenvillas.cn",
   "lat": 30.22914,
   "lng": 120.13323,
-  "placeId": "ChIJq6_pKjR9SzQRkXoeqT0gGIA"
+  "placeId": "ChIJq6_pKjR9SzQRkXoeqT0gGIA",
+  "michelinId": "1199479",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

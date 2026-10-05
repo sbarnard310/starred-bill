@@ -15,5 +15,8 @@
   "website": "https://www.sushiinabamanhattanbeach.com/",
   "lat": 33.8403635,
   "lng": -118.3536365,
-  "placeId": "ChIJx7NewtO0woARCEk05DbH2tA"
+  "placeId": "ChIJx7NewtO0woARCEk05DbH2tA",
+  "michelinId": "1184656",
+  "chef": "Yasuhiro Hirano",
+  "chefSource": "michelin"
 }

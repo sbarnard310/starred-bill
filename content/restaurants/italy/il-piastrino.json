@@ -13,5 +13,13 @@
   "website": "https://www.piastrino.it/",
   "lat": 43.82111,
   "lng": 12.2645054,
-  "placeId": "ChIJiXPWE06PLBMRCh6xXS5NiOU"
+  "placeId": "ChIJiXPWE06PLBMRCh6xXS5NiOU",
+  "michelinId": "144784",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Riccardo Agostini",
+  "chefSource": "michelin"
 }

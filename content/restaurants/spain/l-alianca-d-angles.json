@@ -25,5 +25,12 @@
   "website": "https://www.alianca1919.com/",
   "lat": 41.95616,
   "lng": 2.6391,
-  "placeId": "ChIJfc2wK5PZuhIRIGFGGDFv-No"
+  "placeId": "ChIJfc2wK5PZuhIRIGFGGDFv-No",
+  "michelinId": "217573",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Àlex Carrera",
+  "chefSource": "michelin"
 }

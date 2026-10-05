@@ -19,5 +19,13 @@
   "website": "https://maison-doucet.com/",
   "lat": 46.4334609,
   "lng": 4.2751068,
-  "placeId": "ChIJFRoL5qbq80cRkz195RCgeIY"
+  "placeId": "ChIJFRoL5qbq80cRkz195RCgeIY",
+  "michelinId": "2015",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Frédéric Doucet",
+  "chefSource": "michelin"
 }

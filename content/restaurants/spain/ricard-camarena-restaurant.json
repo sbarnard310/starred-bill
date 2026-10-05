@@ -15,5 +15,13 @@
   "website": "https://www.ricardcamarena.com/",
   "lat": 39.48512,
   "lng": -0.3852003,
-  "placeId": "ChIJDXL1jclIYA0RjKrQUUOSQkw"
+  "placeId": "ChIJDXL1jclIYA0RjKrQUUOSQkw",
+  "michelinId": "532581",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Ricard Camarena Ivards",
+  "chefSource": "michelin"
 }

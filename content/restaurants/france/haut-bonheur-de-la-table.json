@@ -23,5 +23,11 @@
   "website": "https://www.hautbonheurdelatable.com/",
   "lat": 50.7999474,
   "lng": 2.4857285,
-  "placeId": "ChIJ09iSFnXl3EcRhH14YKXFdn0"
+  "placeId": "ChIJ09iSFnXl3EcRhH14YKXFdn0",
+  "michelinId": "178397",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Eugène Hobraiche",
+  "chefSource": "michelin"
 }

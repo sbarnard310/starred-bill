@@ -26,5 +26,9 @@
   "website": "https://www.starworldmacau.com/restaurant/feng-wei-ju",
   "lat": 22.189952,
   "lng": 113.547928,
-  "placeId": "ChIJZ2VBzOl6ATQRN0HIR86Usks"
+  "placeId": "ChIJZ2VBzOl6ATQRN0HIR86Usks",
+  "michelinId": "475193",
+  "diets": [
+    "vegetarian"
+  ]
 }

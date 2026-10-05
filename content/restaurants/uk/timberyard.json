@@ -20,5 +20,14 @@
   "website": "https://www.timberyard.co/",
   "lat": 55.946531,
   "lng": -3.2021,
-  "placeId": "ChIJgVp2GpnHh0gR1F6-ienL1HU"
+  "placeId": "ChIJgVp2GpnHh0gR1F6-ienL1HU",
+  "michelinId": "383416",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Bartholomew Stratfold",
+  "chefSource": "michelin"
 }

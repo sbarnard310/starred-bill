@@ -23,5 +23,8 @@
   "website": "https://i1company.jp/",
   "lat": 35.701212,
   "lng": 139.739466,
-  "placeId": "ChIJa0WEW1qMGGARPztXG-uvYjI"
+  "placeId": "ChIJa0WEW1qMGGARPztXG-uvYjI",
+  "michelinId": "1193898",
+  "chef": "Hideki Ishikawa",
+  "chefSource": "michelin"
 }

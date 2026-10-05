@@ -25,5 +25,9 @@
   "lunchSource": "https://anikofoodie.com/kitcho/",
   "lat": 25.0442868,
   "lng": 121.5506888,
-  "placeId": "ChIJsbZtjcSrQjQR1kcL4c-g_7g"
+  "placeId": "ChIJsbZtjcSrQjQR1kcL4c-g_7g",
+  "michelinId": "550738",
+  "diets": [
+    "vegetarian"
+  ]
 }

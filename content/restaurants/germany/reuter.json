@@ -15,5 +15,9 @@
   "website": "https://www.hotelreuter.de/restaurant/gourmet-restaurant",
   "lat": 51.8540706,
   "lng": 8.2912568,
-  "placeId": "ChIJgzeK2BwpukcRrzo2iwU-2oY"
+  "placeId": "ChIJgzeK2BwpukcRrzo2iwU-2oY",
+  "michelinId": "83639",
+  "diets": [
+    "vegetarian"
+  ]
 }

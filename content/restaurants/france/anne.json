@@ -25,5 +25,11 @@
   "website": "https://www.pavillon-de-la-reine.com/restaurant",
   "lat": 48.856273,
   "lng": 2.3659439,
-  "placeId": "ChIJGZbt11dv5kcRxGUcs6VnlSc"
+  "placeId": "ChIJGZbt11dv5kcRxGUcs6VnlSc",
+  "michelinId": "1000362",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thibault Sombardier",
+  "chefSource": "site"
 }

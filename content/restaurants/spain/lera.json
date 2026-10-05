@@ -15,5 +15,11 @@
   "website": "https://restaurantelera.es/",
   "lat": 41.967639,
   "lng": -5.3137839,
-  "placeId": "ChIJSfXePrRoOA0RsMyjvrnoBQ8"
+  "placeId": "ChIJSfXePrRoOA0RsMyjvrnoBQ8",
+  "michelinId": "489741",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Luis Alberto Lera Collantes",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,13 @@
   "website": "https://maisoncaillet.com/",
   "lat": 49.7446677,
   "lng": 0.4919745,
-  "placeId": "ChIJk1_3h-No4EcR-GOfpT3juLA"
+  "placeId": "ChIJk1_3h-No4EcR-GOfpT3juLA",
+  "michelinId": "9313",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Pierre Caillet",
+  "chefSource": "michelin"
 }

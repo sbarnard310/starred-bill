@@ -15,5 +15,10 @@
   "website": "https://www.pietersrestaurant.nl/",
   "lat": 51.9344534,
   "lng": 4.7831691,
-  "placeId": "ChIJsakJX1DVxUcRe3zn1N-fyz0"
+  "placeId": "ChIJsakJX1DVxUcRe3zn1N-fyz0",
+  "michelinId": "425341",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

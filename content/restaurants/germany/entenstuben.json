@@ -14,5 +14,12 @@
   "website": "https://www.entenstuben.de/",
   "lat": 49.4535946,
   "lng": 11.0939143,
-  "placeId": "ChIJb-Q5SphXn0cRRDbZd-d4xQI"
+  "placeId": "ChIJb-Q5SphXn0cRRDbZd-d4xQI",
+  "michelinId": "265290",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Fabian Denninger",
+  "chefSource": "michelin"
 }

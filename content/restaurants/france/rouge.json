@@ -17,5 +17,8 @@
   "website": "https://www.margaret-hotelchouleur.com",
   "lat": 43.83717,
   "lng": 4.35788,
-  "placeId": "ChIJv6e9IAottBIRa76ehrrC2u4"
+  "placeId": "ChIJv6e9IAottBIRa76ehrrC2u4",
+  "michelinId": "1200806",
+  "chef": "Luka-Tao Debenath",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,16 @@
   "website": "https://www.unalomebygc.com/",
   "lat": 55.865632,
   "lng": -4.283787,
-  "placeId": "ChIJA8BKg0BFiEgRduJssJEZ5rE"
+  "placeId": "ChIJA8BKg0BFiEgRduJssJEZ5rE",
+  "michelinId": "1194436",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Graeme Cheevers",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,11 @@
   "website": "https://bistrotblaise.be/",
   "lat": 50.2265169,
   "lng": 5.3451207,
-  "placeId": "ChIJYUIrKC9LwEcRK_zxlz6U6D8"
+  "placeId": "ChIJYUIrKC9LwEcRK_zxlz6U6D8",
+  "michelinId": "1200686",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "François-Xavier Simon",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,13 @@
   "website": "https://www.lescaleta.com/",
   "lat": 38.7570756,
   "lng": -0.4451945,
-  "placeId": "ChIJcTrsHV6PYQ0R6lS93LclZQc"
+  "placeId": "ChIJcTrsHV6PYQ0R6lS93LclZQc",
+  "michelinId": "219581",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Kiko Moya",
+  "chefSource": "michelin"
 }

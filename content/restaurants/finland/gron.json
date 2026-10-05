@@ -12,5 +12,13 @@
   "website": "https://www.restaurantgron.com/",
   "lat": 60.1646073,
   "lng": 24.9326985,
-  "placeId": "ChIJ00j2lMoLkkYRnvJPB2_P81I"
+  "placeId": "ChIJ00j2lMoLkkYRnvJPB2_P81I",
+  "michelinId": "521038",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Toni Kostian",
+  "chefSource": "michelin"
 }

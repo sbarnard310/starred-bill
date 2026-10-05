@@ -13,5 +13,12 @@
   "website": "https://www.oberschwaebischer-hof.de/",
   "lat": 48.1759617,
   "lng": 9.975686,
-  "placeId": "ChIJH1Zg2Lzdm0cR7O6pXi6yBEU"
+  "placeId": "ChIJH1Zg2Lzdm0cR7O6pXi6yBEU",
+  "michelinId": "1195566",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Julius Reisch and Johann Seiringer",
+  "chefSource": "michelin"
 }

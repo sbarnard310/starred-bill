@@ -15,5 +15,8 @@
   "website": "https://www.latable-bergerie.fr",
   "lat": 47.26803,
   "lng": -0.59238,
-  "placeId": "ChIJo7HX4L7NB0gRzGSkGhSukMM"
+  "placeId": "ChIJo7HX4L7NB0gRzGSkGhSukMM",
+  "michelinId": "268292",
+  "chef": "David Guitton",
+  "chefSource": "michelin"
 }

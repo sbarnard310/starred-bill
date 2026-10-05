@@ -15,5 +15,13 @@
   "website": "https://www.mammertsberg.ch/",
   "lat": 47.4860199,
   "lng": 9.3920453,
-  "placeId": "ChIJs3wzF_4dm0cRtrh2t9xVDpE"
+  "placeId": "ChIJs3wzF_4dm0cRtrh2t9xVDpE",
+  "michelinId": "1200885",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Silvio Germann",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,12 @@
   "website": "https://www.anticmoli.com/",
   "lat": 40.609048,
   "lng": 0.337083,
-  "placeId": "ChIJES08jwlfoBIRA0cbEvNo_-k"
+  "placeId": "ChIJES08jwlfoBIRA0cbEvNo_-k",
+  "michelinId": "224051",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Vicent Guimerà Sales",
+  "chefSource": "michelin"
 }

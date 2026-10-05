@@ -29,5 +29,11 @@
   "website": "https://acquarestaurant.it/",
   "lat": 45.634656,
   "lng": 8.887829,
-  "placeId": "ChIJs7bjq6CPhkcRrFguqoakAv8"
+  "placeId": "ChIJs7bjq6CPhkcRrFguqoakAv8",
+  "michelinId": "1201998",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Lorenzo Menoncin",
+  "chefSource": "michelin"
 }

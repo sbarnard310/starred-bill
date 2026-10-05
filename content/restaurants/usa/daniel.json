@@ -22,5 +22,14 @@
   "website": "https://www.danielnyc.com/",
   "lat": 40.766752,
   "lng": -73.967504,
-  "placeId": "ChIJ09ZGju5YwokRXOcNC23JRwk"
+  "placeId": "ChIJ09ZGju5YwokRXOcNC23JRwk",
+  "michelinId": "68178",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Eddy Leroux",
+  "chefSource": "michelin"
 }

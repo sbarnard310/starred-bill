@@ -17,5 +17,8 @@
   "website": "https://www.noda.nyc/",
   "lat": 40.740454,
   "lng": -73.99308,
-  "placeId": "ChIJBxKYEqZZwokRL__Emm2Tl2Y"
+  "placeId": "ChIJBxKYEqZZwokRL__Emm2Tl2Y",
+  "michelinId": "562510",
+  "chef": "Shigeyuki Tsunoda",
+  "chefSource": "michelin"
 }

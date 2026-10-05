@@ -22,5 +22,12 @@
   "website": "https://www.lenclume.co.uk/",
   "lat": 54.201771,
   "lng": -2.953868,
-  "placeId": "ChIJjbtjyxSYfEgR8juzNPgcI6g"
+  "placeId": "ChIJjbtjyxSYfEgR8juzNPgcI6g",
+  "michelinId": "187468",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Simon Rogan Mbe",
+  "chefSource": "michelin"
 }

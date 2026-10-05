@@ -13,5 +13,11 @@
   "website": "https://www.vinhaboutiquehotel.com/en/tastes",
   "lat": 41.1320681,
   "lng": -8.5756156,
-  "placeId": "ChIJBZtUj1JlJA0RX6mSQ7od8Xo"
+  "placeId": "ChIJBZtUj1JlJA0RX6mSQ7od8Xo",
+  "michelinId": "1206427",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Jonathan Seiller",
+  "chefSource": "michelin"
 }

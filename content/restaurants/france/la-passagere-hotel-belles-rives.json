@@ -18,5 +18,12 @@
   "website": "https://la-passagere.com/",
   "lat": 43.5648223,
   "lng": 7.1155673,
-  "placeId": "ChIJ43WjFYt_zhIRl3SPc3VM8IQ"
+  "placeId": "ChIJ43WjFYt_zhIRl3SPc3VM8IQ",
+  "michelinId": "3916",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Aurélien Véquaud",
+  "chefSource": "michelin"
 }

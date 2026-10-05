@@ -17,5 +17,8 @@
   "website": "https://mejunyc.com/",
   "lat": 40.74366,
   "lng": -73.955517,
-  "placeId": "ChIJ6alY3R1ZwokRQXUSqpo8OIM"
+  "placeId": "ChIJ6alY3R1ZwokRQXUSqpo8OIM",
+  "michelinId": "1207503",
+  "chef": "Hooni Kim",
+  "chefSource": "michelin"
 }

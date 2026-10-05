@@ -12,5 +12,12 @@
   "website": "https://lesdeux-muc.de/",
   "lat": 48.1393139,
   "lng": 11.5746554,
-  "placeId": "ChIJJT5JpfR1nkcRG1zJ91or5eg"
+  "placeId": "ChIJJT5JpfR1nkcRG1zJ91or5eg",
+  "michelinId": "93014",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Nathalie Leblond",
+  "chefSource": "michelin"
 }

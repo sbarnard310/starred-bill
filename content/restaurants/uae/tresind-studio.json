@@ -12,5 +12,14 @@
   "website": "https://tresindstudio.com/",
   "lat": 25.114932,
   "lng": 55.1391176,
-  "placeId": "ChIJcfzwzo0TXz4RyQpaHkMBWsE"
+  "placeId": "ChIJcfzwzo0TXz4RyQpaHkMBWsE",
+  "michelinId": "1201933",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Himanshu Saini",
+  "chefSource": "site"
 }

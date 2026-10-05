@@ -23,5 +23,9 @@
   "website": "https://lespresdeugenie.com/les-tables/lorangerie/",
   "lat": 43.6960081,
   "lng": -0.3801786,
-  "placeId": "ChIJD6BkQV5xVg0RSZsafdGLI6s"
+  "placeId": "ChIJD6BkQV5xVg0RSZsafdGLI6s",
+  "michelinId": "1209337",
+  "diets": [
+    "vegetarian"
+  ]
 }

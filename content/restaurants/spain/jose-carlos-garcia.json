@@ -13,5 +13,11 @@
   "website": "https://www.restaurantejcg.com/",
   "lat": 36.718313,
   "lng": -4.410671,
-  "placeId": "ChIJhc9caOj3cg0R314W8tcmG_k"
+  "placeId": "ChIJhc9caOj3cg0R314W8tcmG_k",
+  "michelinId": "364283",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "José Carlos García",
+  "chefSource": "michelin"
 }

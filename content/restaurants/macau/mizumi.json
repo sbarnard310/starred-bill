@@ -24,5 +24,8 @@
   "website": "https://www.wynnresortsmacau.com/en/wynn-palace/dining/mizumi-wp",
   "lat": 22.146648,
   "lng": 113.571182,
-  "placeId": "ChIJgb1PcwJwATQReeMSnp8gCRs"
+  "placeId": "ChIJgb1PcwJwATQReeMSnp8gCRs",
+  "michelinId": "1215974",
+  "chef": "Hironori Maeda",
+  "chefSource": "michelin"
 }

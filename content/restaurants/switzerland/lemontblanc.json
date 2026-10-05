@@ -13,5 +13,13 @@
   "website": "https://lecrans.com/",
   "lat": 46.3152152,
   "lng": 7.4626213,
-  "placeId": "ChIJqcDk9bXhjkcRUw9hYbK1RK4"
+  "placeId": "ChIJqcDk9bXhjkcRUw9hYbK1RK4",
+  "michelinId": "182695",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Yannick Crepaux",
+  "chefSource": "michelin"
 }

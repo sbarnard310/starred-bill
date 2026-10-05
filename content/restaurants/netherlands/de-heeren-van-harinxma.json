@@ -13,5 +13,12 @@
   "website": "https://www.lauswolt.nl/eten-drinken/de-heeren-van-harinxma",
   "lat": 53.0586024,
   "lng": 6.0899357,
-  "placeId": "ChIJE4YclEZbyEcRC9dVWXSe67I"
+  "placeId": "ChIJE4YclEZbyEcRC9dVWXSe67I",
+  "michelinId": "212245",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Seb Smit",
+  "chefSource": "site"
 }

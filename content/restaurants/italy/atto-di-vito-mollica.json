@@ -21,5 +21,14 @@
   "website": "https://www.attodivitomollica.com/",
   "lat": 43.771521,
   "lng": 11.257375,
-  "placeId": "ChIJBZGWxU1VKhMRDdBZosnDJ9E"
+  "placeId": "ChIJBZGWxU1VKhMRDdBZosnDJ9E",
+  "michelinId": "1201542",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Vito Mollica",
+  "chefSource": "michelin"
 }

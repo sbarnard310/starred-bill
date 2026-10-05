@@ -24,5 +24,10 @@
   "website": "https://www.tenoshima.com/",
   "lat": 35.671024,
   "lng": 139.725138,
-  "placeId": "ChIJ9wG2MD2NGGARC-51T31cfAo"
+  "placeId": "ChIJ9wG2MD2NGGARC-51T31cfAo",
+  "michelinId": "1194065",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

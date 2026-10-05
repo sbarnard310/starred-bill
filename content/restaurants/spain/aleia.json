@@ -33,5 +33,13 @@
   "website": "https://www.aleiarestaurant.com/",
   "lat": 41.397994,
   "lng": 2.158003,
-  "placeId": "ChIJuQRMUWmjpBIRoCWVQoLeCj4"
+  "placeId": "ChIJuQRMUWmjpBIRoCWVQoLeCj4",
+  "michelinId": "1198558",
+  "diets": [
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Rafa de Bedoya",
+  "chefSource": "michelin"
 }

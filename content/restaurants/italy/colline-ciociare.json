@@ -22,5 +22,11 @@
   "lunchSource": "https://www.ilgolosario.it/it/colline-ciociare-ip00285",
   "lat": 41.792165,
   "lng": 13.180608,
-  "placeId": "ChIJ5-Xs3UmKLxMR66u-KTdpqFc"
+  "placeId": "ChIJ5-Xs3UmKLxMR66u-KTdpqFc",
+  "michelinId": "123938",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Salvatore Tassa",
+  "chefSource": "michelin"
 }

@@ -18,5 +18,11 @@
   "website": "https://www.restaurant-miraflores.com",
   "lat": 45.7684145,
   "lng": 4.8584873,
-  "placeId": "ChIJjd9AGvPq9EcRDp6a9VcyAKk"
+  "placeId": "ChIJjd9AGvPq9EcRDp6a9VcyAKk",
+  "michelinId": "1190862",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Carlos Camino",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://swarteruijter.nl/",
   "lat": 52.2948139,
   "lng": 6.4204764,
-  "placeId": "ChIJz271mAzxx0cRKfqfufb6wls"
+  "placeId": "ChIJz271mAzxx0cRKfqfufb6wls",
+  "michelinId": "212645",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ]
 }

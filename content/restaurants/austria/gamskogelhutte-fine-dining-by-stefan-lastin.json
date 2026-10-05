@@ -13,5 +13,12 @@
   "website": "https://www.gamskogelhuette.at/",
   "lat": 47.0552472,
   "lng": 13.6022202,
-  "placeId": "ChIJy7K_AIrDcEcRZfR2MjjFCCA"
+  "placeId": "ChIJy7K_AIrDcEcRZfR2MjjFCCA",
+  "michelinId": "1212680",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Stefan Lastin",
+  "chefSource": "michelin"
 }

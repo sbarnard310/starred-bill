@@ -20,5 +20,11 @@
   "website": "https://www.theblueposts.co.uk/evelyns-table/",
   "lat": 51.5111621,
   "lng": -0.1326022,
-  "placeId": "ChIJtZpbttMEdkgRl7-te2KdeSg"
+  "placeId": "ChIJtZpbttMEdkgRl7-te2KdeSg",
+  "michelinId": "552962",
+  "diets": [
+    "vegan"
+  ],
+  "chef": "Seamus Sam",
+  "chefSource": "site"
 }

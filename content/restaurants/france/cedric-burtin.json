@@ -23,5 +23,12 @@
   "website": "https://cedricburtin.com",
   "lat": 46.7569078,
   "lng": 4.8205067,
-  "placeId": "ChIJL_7__w_98kcR8kouggOnc4Q"
+  "placeId": "ChIJL_7__w_98kcR8kouggOnc4Q",
+  "michelinId": "1896",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Cédric Burtin",
+  "chefSource": "michelin"
 }

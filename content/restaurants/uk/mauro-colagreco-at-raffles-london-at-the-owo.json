@@ -24,5 +24,15 @@
   "website": "https://www.raffles.com/london/dining/mauro-colagreco/",
   "lat": 51.5053846,
   "lng": -0.1263389,
-  "placeId": "ChIJs8xCnzIFdkgR_zipkqUZols"
+  "placeId": "ChIJs8xCnzIFdkgR_zipkqUZols",
+  "michelinId": "1211512",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Mauro Colagreco",
+  "chefSource": "site"
 }

@@ -15,5 +15,12 @@
   "website": "https://www.aumirestaurant.com",
   "lat": 45.6127512,
   "lng": 0.1816045,
-  "placeId": "ChIJEcgF5Ewz_kcRWy8iX1j-8BA"
+  "placeId": "ChIJEcgF5Ewz_kcRWy8iX1j-8BA",
+  "michelinId": "1204113",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Mickael Clautour",
+  "chefSource": "site"
 }

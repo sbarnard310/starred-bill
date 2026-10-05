@@ -12,5 +12,14 @@
   "website": "https://www.bulgarihotels.com/en_US/beijing/dining/il-ristorante-niko-romito",
   "lat": 39.9463887,
   "lng": 116.4515797,
-  "placeId": "ChIJF4C6Dpus8TUR6VpkEE6m6eA"
+  "placeId": "ChIJF4C6Dpus8TUR6VpkEE6m6eA",
+  "michelinId": "1186723",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Niko Romito",
+  "chefSource": "michelin"
 }

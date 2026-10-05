@@ -18,5 +18,8 @@
   "website": "https://heritagerestaurant.fullbellyfoodgroup.com/",
   "lat": 33.775291,
   "lng": -118.166777,
-  "placeId": "ChIJDcD184Qx3YARLeMltHfb8PU"
+  "placeId": "ChIJDcD184Qx3YARLeMltHfb8PU",
+  "michelinId": "1196790",
+  "chef": "Philip Pretty",
+  "chefSource": "michelin"
 }

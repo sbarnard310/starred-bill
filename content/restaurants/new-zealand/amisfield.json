@@ -21,5 +21,12 @@
   "website": "https://amisfield.co.nz/",
   "lat": -44.986688,
   "lng": 168.816031,
-  "placeId": "ChIJQw4OaFgf1akRsNbxrHgfmpU"
+  "placeId": "ChIJQw4OaFgf1akRsNbxrHgfmpU",
+  "michelinId": "1241044",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

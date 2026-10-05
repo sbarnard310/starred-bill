@@ -21,5 +21,11 @@
   "website": "https://www.poggiorossoristorante.com/",
   "lat": 43.388724,
   "lng": 11.458726,
-  "placeId": "ChIJC5cEVxvPKxMR9iLcFzapgLA"
+  "placeId": "ChIJC5cEVxvPKxMR9iLcFzapgLA",
+  "michelinId": "161336",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Stelios Sakalis",
+  "chefSource": "michelin"
 }

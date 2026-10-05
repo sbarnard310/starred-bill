@@ -15,5 +15,9 @@
   "website": "https://esquisse-annecy.fr/",
   "lat": 45.89973,
   "lng": 6.12235,
-  "placeId": "ChIJtYU0VviPi0cRUs3nDerZbbo"
+  "placeId": "ChIJtYU0VviPi0cRUs3nDerZbbo",
+  "michelinId": "338023",
+  "diets": [
+    "vegetarian"
+  ]
 }

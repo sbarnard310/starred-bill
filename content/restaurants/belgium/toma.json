@@ -12,5 +12,11 @@
   "website": "https://www.toma-restaurant.be/",
   "lat": 50.6437485,
   "lng": 5.5660312,
-  "placeId": "ChIJMTEeSH37wEcRe2JRaTfEdPg"
+  "placeId": "ChIJMTEeSH37wEcRe2JRaTfEdPg",
+  "michelinId": "1194375",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thomas Troupin",
+  "chefSource": "michelin"
 }

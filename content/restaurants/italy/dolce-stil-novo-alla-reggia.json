@@ -13,5 +13,10 @@
   "website": "https://dolcestilnovo.com/",
   "lat": 45.1351147,
   "lng": 7.6249928,
-  "placeId": "ChIJl35ibktpiEcRl2_R2UG-c1Y"
+  "placeId": "ChIJl35ibktpiEcRl2_R2UG-c1Y",
+  "michelinId": "234904",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

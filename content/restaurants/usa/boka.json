@@ -18,5 +18,13 @@
   "website": "https://www.bokachicago.com/",
   "lat": 41.913597,
   "lng": -87.648244,
-  "placeId": "ChIJg7aSMj3TD4gRlHUmzqlebUI"
+  "placeId": "ChIJg7aSMj3TD4gRlHUmzqlebUI",
+  "michelinId": "268977",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Lee Wolen",
+  "chefSource": "michelin"
 }

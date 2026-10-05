@@ -17,5 +17,9 @@
   "website": "https://www.jejunoodlebar.com/",
   "lat": 40.732952,
   "lng": -74.00744,
-  "placeId": "ChIJvSw_uuxZwokRwESVzh5G33s"
+  "placeId": "ChIJvSw_uuxZwokRwESVzh5G33s",
+  "michelinId": "554164",
+  "diets": [
+    "vegetarian"
+  ]
 }

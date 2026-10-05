@@ -12,5 +12,12 @@
   "website": "https://www.tuluslotrek.de/",
   "lat": 52.4893627,
   "lng": 13.4137112,
-  "placeId": "ChIJ95zYL89PqEcRlyKANk7ORQQ"
+  "placeId": "ChIJ95zYL89PqEcRlyKANk7ORQQ",
+  "michelinId": "514852",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Maximilian Strohe",
+  "chefSource": "michelin"
 }

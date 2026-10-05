@@ -17,5 +17,13 @@
   "website": "https://www.kinkhao.com/",
   "lat": 37.785267,
   "lng": -122.40951,
-  "placeId": "ChIJn_ZxYo-AhYAR22wJt4at2K0"
+  "placeId": "ChIJn_ZxYo-AhYAR22wJt4at2K0",
+  "michelinId": "445271",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Pim Techamuanvivit",
+  "chefSource": "michelin"
 }

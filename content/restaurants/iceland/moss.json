@@ -18,5 +18,11 @@
   "website": "https://www.bluelagoon.com/restaurant/moss",
   "lat": 63.8801207,
   "lng": -22.4502404,
-  "placeId": "ChIJhQptAHcd1kgR3TKqo6ANnTo"
+  "placeId": "ChIJhQptAHcd1kgR3TKqo6ANnTo",
+  "michelinId": "559763",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

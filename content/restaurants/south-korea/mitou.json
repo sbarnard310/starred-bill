@@ -18,5 +18,8 @@
   "noLunch": true,
   "lat": 37.52206,
   "lng": 127.04502,
-  "placeId": "ChIJGZ6vIe2jfDURWOUsVCO94cA"
+  "placeId": "ChIJGZ6vIe2jfDURWOUsVCO94cA",
+  "michelinId": "570656",
+  "chef": "Bo-mi Kim & Young-woon Kwon",
+  "chefSource": "michelin"
 }

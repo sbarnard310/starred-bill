@@ -20,5 +20,11 @@
   "website": "https://hakkasan.com/abu-dhabi/",
   "lat": 24.461469,
   "lng": 54.3173868,
-  "placeId": "ChIJp_C3jZZlXj4RCcd7ZdVIgig"
+  "placeId": "ChIJp_C3jZZlXj4RCcd7ZdVIgig",
+  "michelinId": "514821",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

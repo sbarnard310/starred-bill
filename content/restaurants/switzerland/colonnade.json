@@ -12,5 +12,12 @@
   "website": "https://www.mandarinoriental.com/en/luzern/palace/dine/colonnade",
   "lat": 47.0551796,
   "lng": 8.3198996,
-  "placeId": "ChIJne-Gjyr7j0cRYloR66Cpbag"
+  "placeId": "ChIJne-Gjyr7j0cRYloR66Cpbag",
+  "michelinId": "1203454",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Gilad Peled",
+  "chefSource": "michelin"
 }

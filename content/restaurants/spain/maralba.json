@@ -13,5 +13,12 @@
   "website": "https://www.maralbarestaurante.es/",
   "lat": 38.8696375,
   "lng": -1.0910555,
-  "placeId": "ChIJH6uXbRtPYQ0RjGiBxTRkQIs"
+  "placeId": "ChIJH6uXbRtPYQ0RjGiBxTRkQIs",
+  "michelinId": "217425",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Fran Martínez",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,13 @@
   "website": "https://nineteen18.lt",
   "lat": 54.6812129,
   "lng": 25.2855231,
-  "placeId": "ChIJX96WpnGV3UYRBS2_fXCj4DA"
+  "placeId": "ChIJX96WpnGV3UYRBS2_fXCj4DA",
+  "michelinId": "1209019",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Vita Bartininkaitė and Justinas Misus",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,11 @@
   "website": "https://www.kieler-kaufmann.de/ahlmanns",
   "lat": 54.3387107,
   "lng": 10.1513168,
-  "placeId": "ChIJHdrqszlXskcRehDmDay3teE"
+  "placeId": "ChIJHdrqszlXskcRehDmDay3teE",
+  "michelinId": "503171",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Lasse Knickrehm",
+  "chefSource": "michelin"
 }

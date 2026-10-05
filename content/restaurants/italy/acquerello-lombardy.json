@@ -25,5 +25,9 @@
   "website": "https://www.ristoranteacquerello.com/",
   "lat": 45.669181,
   "lng": 8.870921,
-  "placeId": "ChIJmyEJ_yuJhkcRwF8MHS1xN9U"
+  "placeId": "ChIJmyEJ_yuJhkcRwF8MHS1xN9U",
+  "michelinId": "197794",
+  "diets": [
+    "vegetarian"
+  ]
 }

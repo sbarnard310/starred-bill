@@ -12,5 +12,11 @@
   "website": "https://100200.kitchen/",
   "lat": 53.5374405,
   "lng": 10.0286303,
-  "placeId": "ChIJSW4gcouOsUcRAONgvMCx-eo"
+  "placeId": "ChIJSW4gcouOsUcRAONgvMCx-eo",
+  "michelinId": "552220",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thomas Imbusch",
+  "chefSource": "michelin"
 }

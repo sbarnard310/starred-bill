@@ -21,5 +21,12 @@
   "website": "https://www.cibo.restaurant",
   "lat": 47.3219201,
   "lng": 5.0455563,
-  "placeId": "ChIJwSK1aoGd8kcR-5Iw7_F62xE"
+  "placeId": "ChIJwSK1aoGd8kcR-5Iw7_F62xE",
+  "michelinId": "1192058",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Angelo Ferrigno",
+  "chefSource": "michelin"
 }

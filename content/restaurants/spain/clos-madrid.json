@@ -28,5 +28,11 @@
   "website": "https://www.restauranteclosmadrid.es/",
   "lat": 40.446579,
   "lng": -3.699918,
-  "placeId": "ChIJF6dzp_koQg0R62gcjySme7g"
+  "placeId": "ChIJF6dzp_koQg0R62gcjySme7g",
+  "michelinId": "547386",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

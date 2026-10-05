@@ -20,5 +20,8 @@
   "website": "https://ikoyilondon.com/",
   "lat": 51.5123195,
   "lng": -0.1155388,
-  "placeId": "ChIJkw2CZtEEdkgRgiNBxbdniHE"
+  "placeId": "ChIJkw2CZtEEdkgRgiNBxbdniHE",
+  "michelinId": "542588",
+  "chef": "Jeremy Chan",
+  "chefSource": "michelin"
 }

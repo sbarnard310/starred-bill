@@ -13,5 +13,11 @@
   "website": "https://doblers-restaurant.de/web/",
   "lat": 49.4810346,
   "lng": 8.4761985,
-  "placeId": "ChIJjVT9aKDOl0cRn9miYAuSC-U"
+  "placeId": "ChIJjVT9aKDOl0cRn9miYAuSC-U",
+  "michelinId": "75298",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Eric Schumacher",
+  "chefSource": "michelin"
 }

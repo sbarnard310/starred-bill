@@ -14,5 +14,12 @@
   "website": "https://www.vintage1997.com/",
   "lat": 45.068485,
   "lng": 7.676379,
-  "placeId": "ChIJa0jQOW1tiEcRwvK7Iuyverg"
+  "placeId": "ChIJa0jQOW1tiEcRwvK7Iuyverg",
+  "michelinId": "154574",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

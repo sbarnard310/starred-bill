@@ -15,5 +15,8 @@
   "website": "https://www.hotelbelcastel.com",
   "lat": 44.3881,
   "lng": 2.33588,
-  "placeId": "ChIJKc58aWR4rRIRs3LEE1W1bC0"
+  "placeId": "ChIJKc58aWR4rRIRs3LEE1W1bC0",
+  "michelinId": "959",
+  "chef": "Nicole Fagegaltier",
+  "chefSource": "michelin"
 }

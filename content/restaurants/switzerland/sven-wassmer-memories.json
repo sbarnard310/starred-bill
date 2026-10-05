@@ -13,5 +13,13 @@
   "website": "https://memories.ch/",
   "lat": 47.000088,
   "lng": 9.5037706,
-  "placeId": "ChIJR_-toqTLhEcRxAQrKbQDLDQ"
+  "placeId": "ChIJR_-toqTLhEcRxAQrKbQDLDQ",
+  "michelinId": "1184739",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Sven Wassmer",
+  "chefSource": "michelin"
 }

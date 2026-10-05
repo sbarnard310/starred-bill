@@ -169,8 +169,8 @@ function renderResults() {
   const has = (...xs) => xs.filter(Boolean).join(" ").toLowerCase().includes(q);
   const places = DATA.places.filter((p) => has(p.name, p.nameZh)).slice(0, 4).map((p) =>
     '<li><a href="' + withLang(p.path) + '"><span>' + esc(pick(p, "name")) + '</span><span class="sub">' + esc(t("destRestaurants", { n: p.n })) + "</span></a></li>");
-  const rests = ALL.filter((r) => has(r.name, r.nameZh, r.nameJa, r.cuisine, r.cuisineZh, CUISINE_ZH[r.cuisine], r.town, r.cityName, r.cityNameZh)).slice(0, 8 - places.length).map((r) =>
-    '<li><a href="' + cityLink(r) + '"><span>' + esc(nameOf(r)) + " " + starIcons(r.stars) + '</span><span class="sub">' + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + " · " + esc(priceLabel(r)) + "</span></a></li>");
+  const rests = ALL.filter((r) => has(r.name, r.nameZh, r.nameJa, r.cuisine, r.cuisineZh, CUISINE_ZH[r.cuisine], r.town, r.cityName, r.cityNameZh, r.chef)).slice(0, 8 - places.length).map((r) =>
+    '<li><a href="' + cityLink(r) + '"><span>' + esc(nameOf(r)) + " " + starIcons(r.stars) + '</span><span class="sub">' + (r.chef && r.chef.toLowerCase().includes(q) ? esc(t("chefLabel", { name: r.chef })) + " · " : "") + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + " · " + esc(priceLabel(r)) + "</span></a></li>");
   const items = places.concat(rests);
   $("results").innerHTML = items.length ? items.join("") : '<li class="none">' + esc(t("searchNone", { q: $("homeQ").value.trim() })) + "</li>";
   $("results").hidden = false;

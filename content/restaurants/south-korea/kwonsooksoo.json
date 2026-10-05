@@ -24,5 +24,9 @@
   "website": "https://www.kwonsooksoo.com/",
   "lat": 37.52437,
   "lng": 127.04355,
-  "placeId": "ChIJZ1-yoYijfDURvkRg_wdaQao"
+  "placeId": "ChIJZ1-yoYijfDURvkRg_wdaQao",
+  "michelinId": "511972",
+  "diets": [
+    "vegetarian"
+  ]
 }

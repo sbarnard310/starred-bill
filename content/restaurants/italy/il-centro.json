@@ -13,5 +13,15 @@
   "website": "https://www.ristoranteilcentro.com/",
   "lat": 44.7905049,
   "lng": 8.0624786,
-  "placeId": "ChIJY8SHv6v2h0cR6lvRbmrgGAc"
+  "placeId": "ChIJY8SHv6v2h0cR6lvRbmrgGAc",
+  "michelinId": "146932",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Elide Mollo",
+  "chefSource": "site"
 }

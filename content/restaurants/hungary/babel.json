@@ -12,5 +12,10 @@
   "website": "https://www.babel-budapest.hu",
   "lat": 47.492668,
   "lng": 19.0522285,
-  "placeId": "ChIJTRHN2mjbQUcRVXkBzfo09sE"
+  "placeId": "ChIJTRHN2mjbQUcRVXkBzfo09sE",
+  "michelinId": "447174",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -13,5 +13,12 @@
   "website": "https://www.alte-liebe-augsburg.de/",
   "lat": 48.3575728,
   "lng": 10.8969716,
-  "placeId": "ChIJe0U2K1C9nkcRJOU3n1b0P9U"
+  "placeId": "ChIJe0U2K1C9nkcRJOU3n1b0P9U",
+  "michelinId": "1195952",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Benjamin Mitschele",
+  "chefSource": "michelin"
 }

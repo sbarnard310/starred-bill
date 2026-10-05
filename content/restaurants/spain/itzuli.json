@@ -33,5 +33,11 @@
   "website": "https://www.restauranteitzuli.com/",
   "lat": 43.312106,
   "lng": -2.026801,
-  "placeId": "ChIJRfF94cm7UQ0RcO1OdT2TPpQ"
+  "placeId": "ChIJRfF94cm7UQ0RcO1OdT2TPpQ",
+  "michelinId": "1240961",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Iñigo Lavado",
+  "chefSource": "michelin"
 }

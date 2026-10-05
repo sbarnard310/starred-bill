@@ -13,5 +13,8 @@
   "website": "https://www.locandadonserafino.it/",
   "lat": 36.9245977,
   "lng": 14.7407767,
-  "placeId": "ChIJe7N7uXiZERMRXmEGHV5njqg"
+  "placeId": "ChIJe7N7uXiZERMRXmEGHV5njqg",
+  "michelinId": "160082",
+  "chef": "Vincenzo Candiano",
+  "chefSource": "michelin"
 }

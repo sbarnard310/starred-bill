@@ -23,5 +23,11 @@
   "website": "https://vigiers.com/",
   "lat": 44.791468,
   "lng": 0.2874804,
-  "placeId": "ChIJ70ALTLy4qhIRxBVX8rsKDJA"
+  "placeId": "ChIJ70ALTLy4qhIRxBVX8rsKDJA",
+  "michelinId": "8319",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

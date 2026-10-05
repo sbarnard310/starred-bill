@@ -15,5 +15,12 @@
   "website": "https://www.atmospheres-hotel.com",
   "lat": 45.6606861,
   "lng": 5.8522537,
-  "placeId": "ChIJK0vGnp8Ji0cRzpjt6RBcivU"
+  "placeId": "ChIJK0vGnp8Ji0cRzpjt6RBcivU",
+  "michelinId": "1346",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Alain Perrillat-Mercerot",
+  "chefSource": "michelin"
 }

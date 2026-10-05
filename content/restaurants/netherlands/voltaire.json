@@ -15,5 +15,12 @@
   "website": "https://www.parcbroekhuizen.nl/",
   "lat": 52.0078481,
   "lng": 5.3997725,
-  "placeId": "ChIJBSFeToVbxkcRAuRa6al2zHI"
+  "placeId": "ChIJBSFeToVbxkcRAuRa6al2zHI",
+  "michelinId": "527823",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

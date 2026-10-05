@@ -13,5 +13,9 @@
   "website": "https://www.latabledemary.ch/",
   "lat": 46.7805014,
   "lng": 6.6677225,
-  "placeId": "ChIJtQtl9PHPjUcRyeyM7K2QdZc"
+  "placeId": "ChIJtQtl9PHPjUcRyeyM7K2QdZc",
+  "michelinId": "195973",
+  "diets": [
+    "vegetarian"
+  ]
 }

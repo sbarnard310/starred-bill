@@ -15,5 +15,13 @@
   "website": "https://thecloud.restaurant/",
   "lat": 48.17737,
   "lng": 11.55652,
-  "placeId": "ChIJt96jin12nkcRIY-FM4ZpPWc"
+  "placeId": "ChIJt96jin12nkcRIY-FM4ZpPWc",
+  "michelinId": "1218863",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jens Madsen",
+  "chefSource": "michelin"
 }

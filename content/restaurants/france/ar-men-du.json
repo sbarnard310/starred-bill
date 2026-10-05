@@ -24,5 +24,12 @@
   "website": "https://www.men-du.com",
   "lat": 47.7888421,
   "lng": -3.7999121,
-  "placeId": "ChIJx7pYHxbCEEgREej1x_A1F5E"
+  "placeId": "ChIJx7pYHxbCEEgREej1x_A1F5E",
+  "michelinId": "54294",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Jérôme Gourmelen",
+  "chefSource": "michelin"
 }

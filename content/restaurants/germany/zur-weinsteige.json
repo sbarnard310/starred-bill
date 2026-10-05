@@ -12,5 +12,12 @@
   "website": "https://www.zur-weinsteige.de/",
   "lat": 48.7710222,
   "lng": 9.1870889,
-  "placeId": "ChIJ51pgArTEmUcRuZm_bz3kRUs"
+  "placeId": "ChIJ51pgArTEmUcRuZm_bz3kRUs",
+  "michelinId": "84427",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Jörg Scherle and Holger Haag",
+  "chefSource": "michelin"
 }

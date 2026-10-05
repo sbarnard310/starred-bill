@@ -14,5 +14,12 @@
   "website": "https://www.aucoin.nl",
   "lat": 50.8461782,
   "lng": 5.6873764,
-  "placeId": "ChIJTci4kLDpwEcRZ0iQdsjlsKU"
+  "placeId": "ChIJTci4kLDpwEcRZ0iQdsjlsKU",
+  "michelinId": "212760",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Timo Reichelt",
+  "chefSource": "michelin"
 }

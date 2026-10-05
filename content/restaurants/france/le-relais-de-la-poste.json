@@ -19,5 +19,11 @@
   "website": "https://relais-poste.com/",
   "lat": 48.6609673,
   "lng": 7.8230795,
-  "placeId": "ChIJzx3cP4TGlkcRgZM1OadM2S0"
+  "placeId": "ChIJzx3cP4TGlkcRgZM1OadM2S0",
+  "michelinId": "8753",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Thomas Koebel",
+  "chefSource": "site"
 }

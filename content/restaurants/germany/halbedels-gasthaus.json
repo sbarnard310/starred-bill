@@ -13,5 +13,12 @@
   "website": "https://www.halbedels-gasthaus.de/",
   "lat": 50.6889689,
   "lng": 7.1662272,
-  "placeId": "ChIJnXES3BTkvkcRdUdK7EQz1FU"
+  "placeId": "ChIJnXES3BTkvkcRdUdK7EQz1FU",
+  "michelinId": "71580",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Rainer-Maria Halbedel",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,13 @@
   "website": "https://www.dorchestercollection.com/fr/paris/le-meurice/restaurants-bars/restaurant-le-meurice-alain-ducasse",
   "lat": 48.86525,
   "lng": 2.3278399,
-  "placeId": "ChIJQdFbHk9v5kcRBtFW38NDhbc"
+  "placeId": "ChIJQdFbHk9v5kcRBtFW38NDhbc",
+  "michelinId": "5757",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Amaury Bouhours",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,12 @@
   "website": "https://www.lamicheline.ch/",
   "lat": 46.2007883,
   "lng": 6.1658942,
-  "placeId": "ChIJA4OyfaFljEcRtdtEz75YkyE"
+  "placeId": "ChIJA4OyfaFljEcRtdtEz75YkyE",
+  "michelinId": "1200257",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Andrés Arocena",
+  "chefSource": "michelin"
 }

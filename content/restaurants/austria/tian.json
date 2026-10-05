@@ -12,5 +12,14 @@
   "website": "https://www.tian-restaurant.com/",
   "lat": 48.20523,
   "lng": 16.3744339,
-  "placeId": "ChIJtzt5cZ4HbUcRklnIDmBY1s4"
+  "placeId": "ChIJtzt5cZ4HbUcRklnIDmBY1s4",
+  "michelinId": "347995",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Paul Ivic",
+  "chefSource": "michelin"
 }

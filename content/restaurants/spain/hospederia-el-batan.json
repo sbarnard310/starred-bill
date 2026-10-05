@@ -13,5 +13,11 @@
   "website": "https://www.elbatan.es",
   "lat": 40.42797,
   "lng": -1.5602059,
-  "placeId": "ChIJfYWyUHW5XQ0RutRYFMVNCws"
+  "placeId": "ChIJfYWyUHW5XQ0RutRYFMVNCws",
+  "michelinId": "223985",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "María José Meda",
+  "chefSource": "michelin"
 }

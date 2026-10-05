@@ -21,5 +21,9 @@
   "website": "https://shisenhanten.com.sg/",
   "lat": 1.302395,
   "lng": 103.8365,
-  "placeId": "ChIJ8UdydJEZ2jER67QvNxywrqQ"
+  "placeId": "ChIJ8UdydJEZ2jER67QvNxywrqQ",
+  "michelinId": "501650",
+  "diets": [
+    "vegetarian-menu"
+  ]
 }

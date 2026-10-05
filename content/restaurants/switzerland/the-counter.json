@@ -12,5 +12,10 @@
   "website": "https://www.the-counter.ch/",
   "lat": 47.3772406,
   "lng": 8.5406099,
-  "placeId": "ChIJL6O4dLILkEcRfmmjrK7_2-g"
+  "placeId": "ChIJL6O4dLILkEcRfmmjrK7_2-g",
+  "michelinId": "1211381",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -14,5 +14,8 @@
   "website": "https://www.hyotei.co.jp",
   "lat": 35.011355,
   "lng": 135.786742,
-  "placeId": "ChIJw5-sbOAIAWAR3IVM2hFyg5A"
+  "placeId": "ChIJw5-sbOAIAWAR3IVM2hFyg5A",
+  "michelinId": "1193036",
+  "chef": "Yoshihiro Takahashi",
+  "chefSource": "michelin"
 }

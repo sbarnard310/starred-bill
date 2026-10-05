@@ -13,5 +13,11 @@
   "website": "https://www.laeradelosnogales.com",
   "lat": 42.5067095,
   "lng": -0.3378358,
-  "placeId": "ChIJd1OmsQAhWA0RQgCMJX1-Cgg"
+  "placeId": "ChIJd1OmsQAhWA0RQgCMJX1-Cgg",
+  "michelinId": "1196960",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Toño Rodríguez",
+  "chefSource": "michelin"
 }

@@ -16,5 +16,8 @@
   "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
   "lat": 13.752571,
   "lng": 100.5046981,
-  "placeId": "ChIJaxq89xaZ4jARQtKhE1uqq9c"
+  "placeId": "ChIJaxq89xaZ4jARQtKhE1uqq9c",
+  "michelinId": "547603",
+  "chef": "Jay Fai",
+  "chefSource": "michelin"
 }

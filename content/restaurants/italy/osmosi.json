@@ -15,5 +15,15 @@
   "website": "https://osmosimontepulciano.it/",
   "lat": 43.134216,
   "lng": 11.837205,
-  "placeId": "ChIJr_5OC3hZKRMR3375s3uAeu0"
+  "placeId": "ChIJr_5OC3hZKRMR3375s3uAeu0",
+  "michelinId": "1196419",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Mirko Marcelli",
+  "chefSource": "michelin"
 }

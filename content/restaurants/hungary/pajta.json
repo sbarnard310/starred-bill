@@ -13,5 +13,14 @@
   "website": "https://pajta.hu/",
   "lat": 46.8498752,
   "lng": 16.4043202,
-  "placeId": "ChIJv5XR0TMmb0cRLX6tbpaYq8s"
+  "placeId": "ChIJv5XR0TMmb0cRLX6tbpaYq8s",
+  "michelinId": "547086",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "István Akács",
+  "chefSource": "michelin"
 }

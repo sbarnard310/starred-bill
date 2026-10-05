@@ -21,5 +21,8 @@
   "website": "https://restauranth.com/",
   "lat": 48.8543896,
   "lng": 2.368087,
-  "placeId": "ChIJQ-V5FQBy5kcRRd_d6D3GQGg"
+  "placeId": "ChIJQ-V5FQBy5kcRRd_d6D3GQGg",
+  "michelinId": "507823",
+  "chef": "Hubert Duchenne",
+  "chefSource": "michelin"
 }

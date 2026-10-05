@@ -206,6 +206,17 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .chg-down { color: var(--danger); }
 .status-pill.status-closed { background: var(--danger-soft); color: var(--danger); }
 .row .area { display: block; font-weight: 400; font-size: .85rem; color: var(--muted); }
+.row .chef-line { display: block; font-weight: 400; font-size: .8rem; color: var(--muted); font-style: italic; }
+.diet-badges { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.diet-badge { display: inline-flex; align-items: center; gap: 3px; padding: 1px 7px 1px 5px; border-radius: 999px; font-size: .7rem; font-weight: 600; line-height: 1.5; color: var(--green); background: color-mix(in srgb, var(--green) 11%, transparent); border: 1px solid color-mix(in srgb, var(--green) 28%, transparent); white-space: nowrap; }
+.diet-badge svg, .seg svg.leaf { width: 12px; height: 12px; flex: none; fill: currentColor; }
+/* The Dietary drop-down lists its seven options one under another. */
+.filter-group[data-group="diet"] .seg { display: grid; border-radius: 12px; white-space: nowrap; }
+.filter-group[data-group="diet"] .seg button { justify-content: flex-start; }
+.filter-group[data-group="diet"] .seg button + button { border-left: 0; border-top: 1px solid var(--line); }
+.filter-group[data-group="diet"] .seg button .count { margin-left: auto; padding-left: 12px; }
+.seg svg.leaf { color: var(--green); }
+.seg button[aria-pressed="true"] svg.leaf { color: inherit; }
 .map { display: inline-grid; place-items: center; width: 26px; height: 26px; margin-left: 4px; vertical-align: -6px; border-radius: 6px; color: var(--green); }
 .map:hover { background: var(--green-soft); }
 .map svg { width: 16px; height: 16px; }

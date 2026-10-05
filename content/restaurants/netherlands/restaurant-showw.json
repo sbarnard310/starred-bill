@@ -12,5 +12,13 @@
   "website": "https://www.restaurantshoww.com",
   "lat": 52.3372043,
   "lng": 4.893425,
-  "placeId": "ChIJFepjd7oLxkcRf--jYYUy8ao"
+  "placeId": "ChIJFepjd7oLxkcRf--jYYUy8ao",
+  "michelinId": "1210792",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Dorus Floris",
+  "chefSource": "michelin"
 }

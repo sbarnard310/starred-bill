@@ -24,5 +24,10 @@
   "noLunch": true,
   "lat": 35.671572,
   "lng": 139.774073,
-  "placeId": "ChIJlem96IqJGGARvMGghbakQxo"
+  "placeId": "ChIJlem96IqJGGARvMGghbakQxo",
+  "michelinId": "1193933",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ]
 }

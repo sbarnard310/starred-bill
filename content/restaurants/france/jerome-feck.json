@@ -15,5 +15,13 @@
   "website": "https://www.hotel-dangleterre.fr/fr/restaurant/",
   "lat": 48.9569608,
   "lng": 4.3649249,
-  "placeId": "ChIJmR_KGRff60cRVOpjriWjOVg"
+  "placeId": "ChIJmR_KGRff60cRVOpjriWjOVg",
+  "michelinId": "1871",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jérôme Feck",
+  "chefSource": "michelin"
 }

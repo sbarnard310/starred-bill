@@ -13,5 +13,11 @@
   "website": "https://restaurantemalak.com/",
   "lat": 37.767638,
   "lng": -3.7873502,
-  "placeId": "ChIJbZeTpQDXbQ0RsQvNBPrUyBE"
+  "placeId": "ChIJbZeTpQDXbQ0RsQvNBPrUyBE",
+  "michelinId": "1201942",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Javier Jurado",
+  "chefSource": "michelin"
 }

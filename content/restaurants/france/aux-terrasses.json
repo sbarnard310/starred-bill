@@ -25,5 +25,8 @@
   "website": "https://www.aux-terrasses.com",
   "lat": 46.5590372,
   "lng": 4.9143701,
-  "placeId": "ChIJz8n1wq4Q80cRdRHNW-yeMhA"
+  "placeId": "ChIJz8n1wq4Q80cRdRHNW-yeMhA",
+  "michelinId": "9032",
+  "chef": "Jean-Michel Carrette",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,9 @@
   "website": "https://www.boskinac.com/",
   "lat": 44.571006,
   "lng": 14.8975384,
-  "placeId": "ChIJ108RuC9KYkcRPD17upI32pE"
+  "placeId": "ChIJ108RuC9KYkcRPD17upI32pE",
+  "michelinId": "480027",
+  "diets": [
+    "vegetarian"
+  ]
 }

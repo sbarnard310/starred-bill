@@ -22,5 +22,16 @@
   "website": "https://www.anne-sophie-pic.com",
   "lat": 44.9176875,
   "lng": 4.8855601,
-  "placeId": "ChIJPW8V6jxY9UcRviWonC3leP8"
+  "placeId": "ChIJPW8V6jxY9UcRviWonC3leP8",
+  "michelinId": "13417",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Anne-Sophie Pic",
+  "chefSource": "site"
 }

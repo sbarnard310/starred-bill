@@ -13,5 +13,13 @@
   "website": "https://www.surfclubrestaurant.com/",
   "lat": 25.878331,
   "lng": -80.1216265,
-  "placeId": "ChIJY9UXppmz2YgR8eMDCqFBR-0"
+  "placeId": "ChIJY9UXppmz2YgR8eMDCqFBR-0",
+  "michelinId": "1197311",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Thomas Keller",
+  "chefSource": "michelin"
 }

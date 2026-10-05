@@ -16,5 +16,13 @@
   "website": "https://birdys-brunnen.ch/",
   "lat": 46.9935811,
   "lng": 8.6063937,
-  "placeId": "ChIJY_nVqNxRhUcRCKP2hUgWRns"
+  "placeId": "ChIJY_nVqNxRhUcRCKP2hUgWRns",
+  "michelinId": "1209116",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Christian Vogel",
+  "chefSource": "michelin"
 }

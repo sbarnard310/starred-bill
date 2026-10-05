@@ -13,5 +13,12 @@
   "website": "https://www.springmarietta.com",
   "lat": 33.9535173,
   "lng": -84.5509835,
-  "placeId": "ChIJF4nE3yQU9YgRQYpaRDibsts"
+  "placeId": "ChIJF4nE3yQU9YgRQYpaRDibsts",
+  "michelinId": "1210096",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Brian So",
+  "chefSource": "michelin"
 }

@@ -14,5 +14,8 @@
   "website": "https://www.kaiseki.ca/",
   "lat": 43.7263028,
   "lng": -79.3341896,
-  "placeId": "ChIJO5qmpaDN1IkRBXUbqD48SOU"
+  "placeId": "ChIJO5qmpaDN1IkRBXUbqD48SOU",
+  "michelinId": "1200365",
+  "chef": "Masaki Hashimoto",
+  "chefSource": "michelin"
 }

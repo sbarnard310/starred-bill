@@ -13,5 +13,11 @@
   "website": "https://www.korakwinery.com/",
   "lat": 45.7260304,
   "lng": 15.6500062,
-  "placeId": "ChIJe7io55g0ZEcRG8Sxwre9wY4"
+  "placeId": "ChIJe7io55g0ZEcRG8Sxwre9wY4",
+  "michelinId": "1198030",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Bernard Korak",
+  "chefSource": "michelin"
 }

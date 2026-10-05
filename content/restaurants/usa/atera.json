@@ -17,5 +17,11 @@
   "website": "https://ateranyc.com/",
   "lat": 40.71685,
   "lng": -74.005591,
-  "placeId": "ChIJ_Y7rMCBawokR0mnRmN5kL2o"
+  "placeId": "ChIJ_Y7rMCBawokR0mnRmN5kL2o",
+  "michelinId": "366502",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Ronny Emborg",
+  "chefSource": "site"
 }

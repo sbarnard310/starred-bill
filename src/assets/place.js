@@ -14,7 +14,7 @@ const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !
 pageVars = () => ({ place: pick(PAGE, "name"), placeIn: cjk() || ko() ? pick(PAGE, "name") : PAGE["inSentence" + (LANGS[LANG].suffixes[0] || "")] || PAGE.inSentence || PAGE.name });
 
 const EXPLORE_SHOWN = 6;
-const state = { exploreOpen: new Set(), meal: "dinner", activeCat: "All", activeStars: 0, wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
+const state = { exploreOpen: new Set(), meal: "dinner", activeCat: "All", activeStars: 0, diet: "", wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
   currency: PAGE.currency, rates: Object.fromEntries(Object.entries(DATA.currencies).map(([k, v]) => [k, v.perUSD])), rateDate: new Date(DATA.rateDate + "T12:00:00Z") };
 
 // ---------- Helpers ----------
@@ -53,7 +53,16 @@ const onWishlist = (r) => state.wishlist.includes(r.id);
 const onBeen = (r) => Object.prototype.hasOwnProperty.call(state.visited, r.id);
 const starMatch = (r) => !state.activeStars || r.stars === state.activeStars;
 const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOnly || !!r.change) && (!state.beenOnly || onBeen(r));
-const searchText = (r) => [r.name, r.nameZh, r.nameJa, r.nameKo, r.cuisine, r.cuisineZh, r.cuisineJa, CUISINE_ZH[r.cuisine], CUISINE_FR[r.cuisine], CUISINE_ES[r.cuisine], CUISINE_IT[r.cuisine], CUISINE_KO[r.cuisine],
+// Dietary filter options (from the MICHELIN Guide). "Vegetarian options" also counts restaurants with a vegetarian menu or a vegetarian kitchen.
+const DIET_KEYS = [["vegetarian-only", "dietVegOnly"], ["vegetarian-menu", "dietVegMenu"], ["vegetarian", "dietVeg"], ["vegan", "dietVegan"], ["gluten-free", "dietGf"], ["halal", "dietHalal"], ["kosher", "dietKosher"]];
+const hasDiet = (r, d) => { const ds = r.diets || []; return ds.includes(d) || (d === "vegetarian" && (ds.includes("vegetarian-menu") || ds.includes("vegetarian-only"))); };
+const dietMatch = (r) => !state.diet || hasDiet(r, state.diet);
+const dietLabel = (d) => t((DIET_KEYS.find(([k]) => k === d) || [])[1] || "all");
+// Leaf badges for the three that matter most when choosing; the rest are in the filter only.
+const BADGES = [["vegetarian-only", "badgeVegOnly", "dietVegOnly"], ["vegetarian-menu", "badgeVegMenu", "dietVegMenu"], ["vegan", "badgeVegan", "dietVegan"]];
+const dietBadges = (r) => BADGES.filter(([d]) => (r.diets || []).includes(d) && !(d === "vegetarian-menu" && r.diets.includes("vegetarian-only")))
+  .map(([d, short, full]) => '<span class="diet-badge" title="' + esc(t(full)) + '"><svg aria-hidden="true"><use href="#leaf"/></svg><span class="sr-only">' + esc(t(full)) + '</span><span aria-hidden="true">' + esc(t(short)) + "</span></span>").join("");
+const searchText = (r) => [r.name, r.chef, ...((r.diets || []).map(dietLabel)), ...BADGES.filter(([d]) => (r.diets || []).includes(d)).map(([, short]) => t(short)), r.nameZh, r.nameJa, r.nameKo, r.cuisine, r.cuisineZh, r.cuisineJa, CUISINE_ZH[r.cuisine], CUISINE_FR[r.cuisine], CUISINE_ES[r.cuisine], CUISINE_IT[r.cuisine], CUISINE_KO[r.cuisine],
   r.area, r.areaZh, r.areaJa, r.areaEs, r.areaIt, r.areaKo, r.cityName, r.cityNameZh, r.cityNameJa, r.cityNameEs, r.cityNameIt, r.cityNameKo, r.areaDa, r.areaIs, r.areaCa, r.areaTh, r.nameTh].filter(Boolean).join(" ").toLowerCase();
 const queryMatch = (r) => { const q = state.query.trim().toLowerCase(); return !q || searchText(r).includes(q); };
 const changeBadge = (r) => !r.change ? "" : '<span class="chg chg-' + (r.change === "down" ? "down" : "up") + '" title="' + esc(t("chgTitle", { note: pick(r, "changeNote"), date: monthYear(r.changeDate) })) + '">' + (r.change === "down" ? "▼ " : "▲ ") + (r.change === "new" ? t("chgNew") + " " : "") + monthYear(r.changeDate) + "</span>";
@@ -77,7 +86,7 @@ function save() {
 }
 
 function filtered() {
-  const rows = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
+  const rows = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && dietMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
   const coll = new Intl.Collator(locale());
   const sorters = {
     "price-asc": (a, b) => priceRank(a) - priceRank(b) || byPrice(a, b),
@@ -171,7 +180,7 @@ function renderShowFilter() {
   renderWishCount();
 }
 function renderStarFilter() {
-  const base = RESTAURANTS.filter(wishMatch);
+  const base = RESTAURANTS.filter((r) => wishMatch(r) && dietMatch(r));
   const opts = [{ s: 0, label: t("all"), n: base.length }].concat([1, 2, 3].map((s) => ({ s, label: starIcons(s), n: base.filter((r) => r.stars === s).length })));
   $("starFilter").innerHTML = opts.map((o) =>
     '<button type="button" data-stars="' + o.s + '" aria-pressed="' + (state.activeStars === o.s) + '"' + (o.s ? ' aria-label="' + esc(t("starsAria", { n: o.s })) + '"' : "") + ">" + o.label + '<span class="count">' + o.n + "</span></button>").join("");
@@ -186,14 +195,14 @@ function cuisineLabeller() {
 }
 function renderChips() {
   const counts = {};
-  RESTAURANTS.forEach((r) => { counts[r.cuisine] = (counts[r.cuisine] || 0) + (starMatch(r) && wishMatch(r) ? 1 : 0); });
+  RESTAURANTS.forEach((r) => { counts[r.cuisine] = (counts[r.cuisine] || 0) + (starMatch(r) && wishMatch(r) && dietMatch(r) ? 1 : 0); });
   const coll = new Intl.Collator(locale());
   const label = cuisineLabeller();
   const cats = Object.keys(counts).sort((a, b) => coll.compare(label(a), label(b)));
   // A search box helps once the list is long; it narrows the chips, not the restaurants.
   $("cuisineQ").hidden = cats.length < 12;
   const q = $("cuisineQ").hidden ? "" : fold($("cuisineQ").value.trim());
-  const total = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r)).length;
+  const total = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && dietMatch(r)).length;
   let html = q ? "" : '<span class="chip all' + (state.activeCat === "All" ? " active" : "") + '"><button type="button" data-cat="All" aria-pressed="' + (state.activeCat === "All") + '">' + t("all") + '<span class="count">' + total + "</span></button></span>";
   cats.forEach((c) => {
     if (q && !fold(label(c)).includes(q) && !fold(c).includes(q)) return;
@@ -202,22 +211,33 @@ function renderChips() {
   });
   $("chips").innerHTML = html;
 }
+function renderDietFilter() {
+  const base = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat));
+  // Options no restaurant on this page offers are left out, so a small page isn't padded with zeros.
+  const opts = DIET_KEYS.map(([d, key]) => ({ d, label: t(key), n: base.filter((r) => hasDiet(r, d)).length, any: RESTAURANTS.some((r) => hasDiet(r, d)) })).filter((o) => o.any || state.diet === o.d);
+  $("dietGroup").hidden = !opts.length;
+  $("dietFilter").innerHTML = '<button type="button" data-diet="" aria-pressed="' + !state.diet + '">' + t("all") + '<span class="count">' + base.length + "</span></button>" +
+    opts.map((o) => '<button type="button" data-diet="' + o.d + '" aria-pressed="' + (state.diet === o.d) + '">' + (BADGES.some(([b]) => b === o.d) ? '<svg class="leaf" aria-hidden="true"><use href="#leaf"/></svg>' : "") + esc(o.label) + '<span class="count">' + o.n + "</span></button>").join("");
+}
 // What each drop-down button says, the removable tags under the bar, and the phone panel's "Show 12 restaurants" button.
 function renderFilterSummary(n) {
   const show = state.wishOnly ? ["wishlist", t("showWish")] : state.changesOnly ? ["changes", t("showChanges")] : state.beenOnly ? ["been", t("showBeen")] : null;
   const stars = state.activeStars ? starIcons(state.activeStars) : null;
   const cat = state.activeCat !== "All" ? esc(cuisineLabeller()(state.activeCat)) : null;
+  const diet = state.diet ? esc(dietLabel(state.diet)) : null;
   const set = (id, html, on) => { $(id).innerHTML = html; $(id).closest(".filter-group").classList.toggle("on", on); };
   set("showVal", show ? esc(show[1]) : t("all"), !!show);
   set("starsVal", stars || t("all"), !!stars);
   set("cuisineVal", cat || t("all"), !!cat);
+  set("dietVal", diet || t("all"), !!diet);
   const tags = [];
   if (show) tags.push(["show", esc(show[1])]);
   if (stars) tags.push(["stars", '<span aria-label="' + esc(t("starsAria", { n: state.activeStars })) + '">' + stars + "</span>"]);
   if (cat) tags.push(["cat", cat]);
+  if (diet) tags.push(["diet", diet]);
   $("filtersCount").textContent = tags.length || "";
   $("activeTags").innerHTML = tags.map(([k, html]) =>
-    '<button type="button" class="ftag" data-unfilter="' + k + '" aria-label="' + esc(t("removeFilter", { f: k === "stars" ? t("starsAria", { n: state.activeStars }) : (show && k === "show" ? show[1] : cuisineLabeller()(state.activeCat)) })) + '">' + html + '<span aria-hidden="true">×</span></button>').join("") +
+    '<button type="button" class="ftag" data-unfilter="' + k + '" aria-label="' + esc(t("removeFilter", { f: k === "stars" ? t("starsAria", { n: state.activeStars }) : k === "diet" ? dietLabel(state.diet) : (show && k === "show" ? show[1] : cuisineLabeller()(state.activeCat)) })) + '">' + html + '<span aria-hidden="true">×</span></button>').join("") +
     (tags.length ? '<button type="button" class="linkish fclear" data-unfilter="all">' + t("filtersClear") + "</button>" : "");
   $("activeTags").hidden = !tags.length;
   $("sheetDone").textContent = t("filtersShowN", { n });
@@ -283,7 +303,10 @@ function nameCell(r) {
   return '<span class="name" role="cell">' + thumb + '<span class="name-text">' + esc(nameOf(r)) +
     (r.status === "closed" ? "" : '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("findOnMaps", { name: nameOf(r) })) + '" title="' + esc(t("findOnMapsTitle")) + '"><svg aria-hidden="true"><use href="#pin"/></svg></a>') +
     (alt ? '<span class="alt-name" lang="' + altLangOf(r) + '">' + esc(alt) + "</span>" : "") +
-    (areaOf(r) ? '<span class="area">' + esc(areaOf(r)) + "</span>" : "") + '<span class="credit"></span></span></span>';
+    (areaOf(r) ? '<span class="area">' + esc(areaOf(r)) + "</span>" : "") +
+    (r.chef ? '<span class="chef-line">' + esc(t("chefLabel", { name: r.chef })) + "</span>" : "") +
+    (r.status ? "" : (r.diets || []).some((d) => BADGES.some(([b]) => b === d)) ? '<span class="diet-badges">' + dietBadges(r) + "</span>" : "") +
+    '<span class="credit"></span></span></span>';
 }
 function renderLedger() {
   const rows = filtered();
@@ -417,6 +440,8 @@ function infoHtml(r) {
     '<div style="font-weight:700;font-size:15px">' + esc(nameOf(r)) + "</div>" +
     (altNameOf(r) ? '<div style="font-size:12px;color:#5A6E62">' + esc(altNameOf(r)) + "</div>" : "") +
     '<div style="color:#B3862B;font-size:13px">' + "✱".repeat(r.stars) + ' <span style="color:#5A6E62">' + esc(cuisineOf(r)) + " · " + esc(areaOf(r)) + "</span></div>" +
+    (r.chef ? '<div style="font-size:12px;color:#5A6E62">' + esc(t("chefLabel", { name: r.chef })) + "</div>" : "") +
+    (BADGES.some(([d]) => (r.diets || []).includes(d)) ? '<div style="font-size:12px;color:#1E6142;font-weight:600;margin-top:2px">🌿 ' + BADGES.filter(([d]) => r.diets.includes(d) && !(d === "vegetarian-menu" && r.diets.includes("vegetarian-only"))).map(([, , full]) => esc(t(full))).join(" · ") + "</div>" : "") +
     '<div style="margin-top:6px;font-size:13px">' + esc(price) + (wineOf(r) ? " · " + t("infoWine") + " " + money(wineOf(r), r) : "") + "</div>" +
     (r.rating ? '<div style="font-size:13px;color:#5A6E62">★ ' + r.rating.toFixed(1) + " " + t("infoGoogle") + "</div>" : "") +
     (r.change ? '<div style="font-size:12px;color:' + (r.change === "down" ? "#A33A2E" : "#1E6142") + '">' + esc(pick(r, "changeNote") + ", " + monthYear(r.changeDate)) + "</div>" : "") +
@@ -500,7 +525,7 @@ async function loadRates() {
 }
 
 // ---------- Render and events ----------
-function render() { renderMealFilter(); renderShowFilter(); renderStarFilter(); renderChips(); renderLedger(); }
+function render() { renderMealFilter(); renderShowFilter(); renderStarFilter(); renderChips(); renderDietFilter(); renderLedger(); }
 function renderAll() { applyStatic(); render(); renderFigures(); renderTiers(); renderLegend(RESTAURANTS); }
 
 let toastTimer;
@@ -586,14 +611,17 @@ document.addEventListener("click", (e) => {
     state.wishOnly = el.dataset.show === "wishlist"; state.changesOnly = el.dataset.show === "changes"; state.beenOnly = el.dataset.show === "been"; render(); choseFilter();
   } else if (el.dataset.stars) {
     state.activeStars = Number(el.dataset.stars); render(); choseFilter();
+  } else if (el.dataset.diet != null) {
+    state.diet = el.dataset.diet; render(); choseFilter();
   } else if (el.dataset.unfilter) {
     const k = el.dataset.unfilter;
     if (k === "show" || k === "all") { state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; }
     if (k === "stars" || k === "all") state.activeStars = 0;
     if (k === "cat" || k === "all") state.activeCat = "All";
+    if (k === "diet" || k === "all") state.diet = "";
     render();
   } else if (el.id === "clearFilters") {
-    state.activeStars = 0; state.activeCat = "All"; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.query = ""; $("q").value = ""; render();
+    state.activeStars = 0; state.activeCat = "All"; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.query = ""; $("q").value = ""; render();
   } else if (el.dataset.cat) {
     state.activeCat = el.dataset.cat; $("cuisineQ").value = ""; render(); choseFilter();
     if (el.classList.contains("tag")) $("compare").scrollIntoView();

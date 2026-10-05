@@ -23,5 +23,11 @@
   "website": "https://www.corenucopia.com/",
   "lat": 51.4902602,
   "lng": -0.1554088,
-  "placeId": "ChIJBxZMvIQFdkgRaG_9eyLTRvY"
+  "placeId": "ChIJBxZMvIQFdkgRaG_9eyLTRvY",
+  "michelinId": "1244302",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Clare Smyth",
+  "chefSource": "michelin"
 }

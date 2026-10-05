@@ -14,5 +14,12 @@
   "website": "https://www.meierszweisinn.de/",
   "lat": 49.4641108,
   "lng": 11.1184521,
-  "placeId": "ChIJrYtH3vRXn0cRDV9utARhu_8"
+  "placeId": "ChIJrYtH3vRXn0cRDV9utARhu_8",
+  "michelinId": "496186",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Stefan Meier",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,8 @@
   "source": "https://www.exploretock.com/sushi-sho-nyc",
   "lat": 40.752698,
   "lng": -73.980801,
-  "placeId": "ChIJT_JHTgFZwokRXleXHadsVaE"
+  "placeId": "ChIJT_JHTgFZwokRXleXHadsVaE",
+  "michelinId": "1213976",
+  "chef": "Keiji Nakazawa",
+  "chefSource": "michelin"
 }

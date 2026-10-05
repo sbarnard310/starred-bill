@@ -18,5 +18,14 @@
   "website": "https://n-naka.com/",
   "lat": 34.02526,
   "lng": -118.41206,
-  "placeId": "ChIJb7GeyDS6woAROVvLEUiLZEk"
+  "placeId": "ChIJb7GeyDS6woAROVvLEUiLZEk",
+  "michelinId": "560073",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Niki Nakayama",
+  "chefSource": "michelin"
 }

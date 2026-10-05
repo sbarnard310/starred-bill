@@ -30,5 +30,13 @@
   "website": "https://www.laboscana.net/",
   "lat": 41.66112,
   "lng": 0.80932,
-  "placeId": "ChIJ____v03pphIRnvNqobXAvIw"
+  "placeId": "ChIJ____v03pphIRnvNqobXAvIw",
+  "michelinId": "465372",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Joel Castañé",
+  "chefSource": "michelin"
 }

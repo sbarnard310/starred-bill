@@ -15,5 +15,12 @@
   "website": "https://www.hisalinhart.si",
   "lat": 46.3408368,
   "lng": 14.1750205,
-  "placeId": "ChIJHZPEkRKWekcRoGpnkGIQKyI"
+  "placeId": "ChIJHZPEkRKWekcRoGpnkGIQKyI",
+  "michelinId": "1199431",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Uroš Štefelin",
+  "chefSource": "michelin"
 }

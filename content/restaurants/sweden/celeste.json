@@ -12,5 +12,9 @@
   "website": "https://www.celesterestaurant.se/",
   "lat": 59.3164219,
   "lng": 18.0571676,
-  "placeId": "ChIJeyXilFZ3X0YR4cuEOlxrGcc"
+  "placeId": "ChIJeyXilFZ3X0YR4cuEOlxrGcc",
+  "michelinId": "1209889",
+  "diets": [
+    "vegetarian"
+  ]
 }

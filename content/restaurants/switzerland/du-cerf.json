@@ -13,5 +13,8 @@
   "website": "https://www.cerf-sonceboz.ch/",
   "lat": 47.1963569,
   "lng": 7.1782266,
-  "placeId": "ChIJfYdfvhcdjkcR-ojg_A8krMg"
+  "placeId": "ChIJfYdfvhcdjkcR-ojg_A8krMg",
+  "michelinId": "180157",
+  "chef": "Jean-Marc Soldati",
+  "chefSource": "michelin"
 }

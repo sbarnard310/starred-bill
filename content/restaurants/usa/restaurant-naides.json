@@ -21,5 +21,8 @@
   "website": "https://www.restaurantnaides.com/",
   "lat": 37.790253,
   "lng": -122.409153,
-  "placeId": "ChIJzyIspeuBhYARUNRInz8tBdk"
+  "placeId": "ChIJzyIspeuBhYARUNRInz8tBdk",
+  "michelinId": "1247302",
+  "chef": "Patrick Gabon",
+  "chefSource": "michelin"
 }

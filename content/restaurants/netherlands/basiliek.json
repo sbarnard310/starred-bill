@@ -13,5 +13,15 @@
   "website": "https://restaurantbasiliek.nl/",
   "lat": 52.3512784,
   "lng": 5.6211715,
-  "placeId": "ChIJoZbs8dMzxkcR01gwFw7uBBY"
+  "placeId": "ChIJoZbs8dMzxkcR01gwFw7uBBY",
+  "michelinId": "1203189",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Yornie van Dijk",
+  "chefSource": "site"
 }

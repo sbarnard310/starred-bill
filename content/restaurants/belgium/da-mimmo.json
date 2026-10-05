@@ -13,5 +13,12 @@
   "website": "https://www.da-mimmo.be/",
   "lat": 50.8435331,
   "lng": 4.418125,
-  "placeId": "ChIJja1dpVfbw0cRkQQNN2ApMsc"
+  "placeId": "ChIJja1dpVfbw0cRkQQNN2ApMsc",
+  "michelinId": "209466",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Louis Verstrepen",
+  "chefSource": "michelin"
 }

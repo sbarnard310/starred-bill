@@ -12,5 +12,8 @@
   "website": "https://mizai.jp/",
   "lat": 35.002993,
   "lng": 135.782364,
-  "placeId": "ChIJnds0DdsIAWARE0dXPUqNYkc"
+  "placeId": "ChIJnds0DdsIAWARE0dXPUqNYkc",
+  "michelinId": "1193053",
+  "chef": "Hitoshi Ishihara",
+  "chefSource": "michelin"
 }

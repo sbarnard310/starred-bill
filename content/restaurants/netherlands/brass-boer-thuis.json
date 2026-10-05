@@ -13,5 +13,12 @@
   "website": "https://www.brassboer.com/thuis/",
   "lat": 52.5112754,
   "lng": 6.0956761,
-  "placeId": "ChIJ6bRBnu3fx0cRfnI-FYCsDNU"
+  "placeId": "ChIJ6bRBnu3fx0cRfnI-FYCsDNU",
+  "michelinId": "1154700",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Jonnie Boer",
+  "chefSource": "michelin"
 }

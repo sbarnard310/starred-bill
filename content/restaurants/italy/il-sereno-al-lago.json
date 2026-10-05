@@ -25,5 +25,14 @@
   "website": "https://www.serenohotels.com/it/property/il-sereno/restaurant/",
   "lat": 45.858849,
   "lng": 9.117415,
-  "placeId": "ChIJd9NydtwnhEcRuxyP8YroqSE"
+  "placeId": "ChIJd9NydtwnhEcRuxyP8YroqSE",
+  "michelinId": "1201798",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Raffaele Lenzi",
+  "chefSource": "michelin"
 }

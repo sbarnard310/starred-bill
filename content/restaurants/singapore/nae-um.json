@@ -24,5 +24,8 @@
   "website": "https://naeum.sg/",
   "lat": 1.28033,
   "lng": 103.84755,
-  "placeId": "ChIJ0zevoBEZ2jER9eYTLSlcX1Q"
+  "placeId": "ChIJ0zevoBEZ2jER9eYTLSlcX1Q",
+  "michelinId": "1197344",
+  "chef": "Louis Han",
+  "chefSource": "michelin"
 }

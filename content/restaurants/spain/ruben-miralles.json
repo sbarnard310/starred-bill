@@ -13,5 +13,14 @@
   "website": "https://www.rubenmiralles.com",
   "lat": 40.4702712,
   "lng": 0.4746362,
-  "placeId": "ChIJVX5ZenZPoBIR6Q1if6UnbZY"
+  "placeId": "ChIJVX5ZenZPoBIR6Q1if6UnbZY",
+  "michelinId": "1199284",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Rubén Miralles",
+  "chefSource": "michelin"
 }

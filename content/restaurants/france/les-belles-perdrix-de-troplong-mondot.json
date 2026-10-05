@@ -15,5 +15,11 @@
   "website": "https://www.troplong-mondot.com/restaurant",
   "lat": 44.8884848,
   "lng": -0.1407129,
-  "placeId": "ChIJ9VlMzNJRVQ0RY9Z-Ql_20Mg"
+  "placeId": "ChIJ9VlMzNJRVQ0RY9Z-Ql_20Mg",
+  "michelinId": "393968",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "David Charrier",
+  "chefSource": "michelin"
 }

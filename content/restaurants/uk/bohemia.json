@@ -21,5 +21,12 @@
   "website": "https://www.bohemiajersey.com/",
   "lat": 49.181494,
   "lng": -2.102187,
-  "placeId": "ChIJYefz_15NDEgRDjAx9KR2D3E"
+  "placeId": "ChIJYefz_15NDEgRDjAx9KR2D3E",
+  "michelinId": "186954",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Tom Earnshaw",
+  "chefSource": "site"
 }

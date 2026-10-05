@@ -28,5 +28,8 @@
   "website": "https://eika.tw/",
   "lat": 25.0574848,
   "lng": 121.5105147,
-  "placeId": "ChIJnaykAxWpQjQRnSZt6p0IkUU"
+  "placeId": "ChIJnaykAxWpQjQRnSZt6p0IkUU",
+  "michelinId": "1213318",
+  "chef": "Ryohei Hieda",
+  "chefSource": "site"
 }

@@ -16,5 +16,14 @@
   "website": "https://www.krommedissel.nl/",
   "lat": 51.9848455,
   "lng": 5.7586213,
-  "placeId": "ChIJJc0tfqGux0cRxaAs0wWpqLM"
+  "placeId": "ChIJJc0tfqGux0cRxaAs0wWpqLM",
+  "michelinId": "212577",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Tonny Berentsen",
+  "chefSource": "michelin"
 }

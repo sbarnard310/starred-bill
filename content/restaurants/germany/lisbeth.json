@@ -12,5 +12,12 @@
   "website": "https://www.cantinepapalisbeth.de/",
   "lat": 53.5462616,
   "lng": 9.9873002,
-  "placeId": "ChIJsQxsc52PsUcRVfwbnEzLRN8"
+  "placeId": "ChIJsQxsc52PsUcRVfwbnEzLRN8",
+  "michelinId": "1209340",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "André Stolle",
+  "chefSource": "michelin"
 }

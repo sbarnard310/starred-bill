@@ -13,5 +13,12 @@
   "website": "https://www.dekristalijn.be/",
   "lat": 50.9700557,
   "lng": 5.5558768,
-  "placeId": "ChIJOzTrzPvbwEcRmE88jaYIB-4"
+  "placeId": "ChIJOzTrzPvbwEcRmE88jaYIB-4",
+  "michelinId": "209675",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Koen Somers",
+  "chefSource": "michelin"
 }

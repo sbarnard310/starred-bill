@@ -25,5 +25,11 @@
   "website": "https://www.roganic.com.hk/",
   "lat": 22.278439,
   "lng": 114.184715,
-  "placeId": "ChIJYflTD-oBBDQRM6IR244lvXU"
+  "placeId": "ChIJYflTD-oBBDQRM6IR244lvXU",
+  "michelinId": "1185143",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Oliver Marlow",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,8 @@
   "website": "https://gia-hanoi.com",
   "lat": 21.0274223,
   "lng": 105.8359626,
-  "placeId": "ChIJd-kmys-rNTER_J9m_DM-oAY"
+  "placeId": "ChIJd-kmys-rNTER_J9m_DM-oAY",
+  "michelinId": "1202148",
+  "chef": "Sam Tran",
+  "chefSource": "michelin"
 }

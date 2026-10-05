@@ -11,5 +11,14 @@
   "website": "https://42restaurant.hu/",
   "lat": 47.7930164,
   "lng": 18.7414568,
-  "placeId": "Ei5Fc3p0ZXJnb20sIFN6w6ljaGVueWkgdMOpciAyMy00MiwgMjUwMCBIdW5nYXJ5Ih4aHAoWChQKEgk1oeuLi2FqRxGUahFalF8NJRICNDI"
+  "placeId": "Ei5Fc3p0ZXJnb20sIFN6w6ljaGVueWkgdMOpciAyMy00MiwgMjUwMCBIdW5nYXJ5Ih4aHAoWChQKEgk1oeuLi2FqRxGUahFalF8NJRICNDI",
+  "michelinId": "1196729",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Kevin Szabó",
+  "chefSource": "site"
 }

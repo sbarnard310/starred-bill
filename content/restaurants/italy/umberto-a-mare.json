@@ -13,5 +13,10 @@
   "website": "https://www.umbertoamare.it",
   "lat": 40.7370555,
   "lng": 13.8550343,
-  "placeId": "ChIJ95QdaO5AOxMRpFSUdZ9J9Dg"
+  "placeId": "ChIJ95QdaO5AOxMRpFSUdZ9J9Dg",
+  "michelinId": "136937",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

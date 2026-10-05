@@ -13,5 +13,12 @@
   "website": "https://www.kayakapi.com/revithia",
   "lat": 38.6361046,
   "lng": 34.9066582,
-  "placeId": "ChIJt8xHPeVvKhUR1lBWeQh-GB8"
+  "placeId": "ChIJt8xHPeVvKhUR1lBWeQh-GB8",
+  "michelinId": "1213363",
+  "diets": [
+    "vegetarian-menu",
+    "vegan"
+  ],
+  "chef": "Duran Özdemir",
+  "chefSource": "michelin"
 }

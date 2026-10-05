@@ -13,5 +13,12 @@
   "website": "https://www.kempinski.com/de/kempinski-hotel-berchtesgaden/restaurants-bars/gourmet-restaurant-pur",
   "lat": 47.6340765,
   "lng": 13.0468265,
-  "placeId": "ChIJ393iCWrrdkcRR35wkhV1o-s"
+  "placeId": "ChIJ393iCWrrdkcRR35wkhV1o-s",
+  "michelinId": "1187942",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Ulrich Heimann",
+  "chefSource": "site"
 }

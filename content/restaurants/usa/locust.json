@@ -12,5 +12,8 @@
   "website": "https://www.locustnashville.com/",
   "lat": 36.1273369,
   "lng": -86.7892725,
-  "placeId": "ChIJZTkU2HdlZIgR_V55oayk0Lw"
+  "placeId": "ChIJZTkU2HdlZIgR_V55oayk0Lw",
+  "michelinId": "1215047",
+  "chef": "Trevor Moran",
+  "chefSource": "michelin"
 }

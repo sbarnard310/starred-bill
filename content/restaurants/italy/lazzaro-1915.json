@@ -13,5 +13,11 @@
   "website": "https://www.lazzaro1915.it",
   "lat": 45.2499891,
   "lng": 12.0203099,
-  "placeId": "ChIJp7XOLIvqfkcRbPvgqjP1Xxg"
+  "placeId": "ChIJp7XOLIvqfkcRbPvgqjP1Xxg",
+  "michelinId": "266925",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -20,5 +20,11 @@
   "website": "https://www.liathrestaurant.com/",
   "lat": 53.301224,
   "lng": -6.178155,
-  "placeId": "ChIJCeKKM-MJZ0gRWv5ghBu6cAs"
+  "placeId": "ChIJCeKKM-MJZ0gRWv5ghBu6cAs",
+  "michelinId": "498457",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Damien Grey",
+  "chefSource": "michelin"
 }

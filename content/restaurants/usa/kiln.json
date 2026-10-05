@@ -21,5 +21,11 @@
   "website": "https://www.kilnsf.com/",
   "lat": 37.776196,
   "lng": -122.420292,
-  "placeId": "ChIJlZn9AxyBhYARAY1cJE9KydY"
+  "placeId": "ChIJlZn9AxyBhYARAY1cJE9KydY",
+  "michelinId": "1210355",
+  "diets": [
+    "kosher"
+  ],
+  "chef": "John Wesley",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,15 @@
   "website": "https://www.soilrestaurant.gr",
   "lat": 37.9669545,
   "lng": 23.7429946,
-  "placeId": "ChIJr9_aRfm9oRQRWj0x3vCftJE"
+  "placeId": "ChIJr9_aRfm9oRQRWj0x3vCftJE",
+  "michelinId": "1199525",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Anastasios Mantis",
+  "chefSource": "michelin"
 }

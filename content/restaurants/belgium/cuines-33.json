@@ -13,5 +13,8 @@
   "website": "https://www.cuines33.be",
   "lat": 51.3394371,
   "lng": 3.2879658,
-  "placeId": "ChIJ1WK9RdKnxEcRGKnrOlBK6Vs"
+  "placeId": "ChIJ1WK9RdKnxEcRGKnrOlBK6Vs",
+  "michelinId": "356239",
+  "chef": "Edwin Menue",
+  "chefSource": "michelin"
 }

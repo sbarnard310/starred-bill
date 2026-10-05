@@ -29,5 +29,11 @@
   "website": "https://yama-dessert.com/",
   "lat": 35.643773,
   "lng": 139.722916,
-  "placeId": "ChIJewCB5KeLGGARj2HrKRvkR_M"
+  "placeId": "ChIJewCB5KeLGGARj2HrKRvkR_M",
+  "michelinId": "1214953",
+  "diets": [
+    "vegan"
+  ],
+  "chef": "Koichi Katsumata",
+  "chefSource": "michelin"
 }

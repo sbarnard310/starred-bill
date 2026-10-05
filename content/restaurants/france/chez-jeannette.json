@@ -25,5 +25,11 @@
   "website": "https://www.peyrassol.com/restaurants-hebergements/restaurants/chez-jeannette/",
   "lat": 43.3778445,
   "lng": 6.2636325,
-  "placeId": "ChIJ0ctfU5RJyRIRo5lAggmTdg0"
+  "placeId": "ChIJ0ctfU5RJyRIRo5lAggmTdg0",
+  "michelinId": "1214404",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Benjamin Le Balch",
+  "chefSource": "michelin"
 }

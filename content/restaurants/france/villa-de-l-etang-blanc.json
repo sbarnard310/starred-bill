@@ -15,5 +15,11 @@
   "website": "https://www.villaetangblanc.fr",
   "lat": 43.7017352,
   "lng": -1.3617077,
-  "placeId": "ChIJDels5qtQUQ0R-MToNKHH8KA"
+  "placeId": "ChIJDels5qtQUQ0R-MToNKHH8KA",
+  "michelinId": "115663",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "David Sulpice",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,8 @@
   "website": "https://www.chevalblanc.com/fr/maison/paris/restaurants-et-bars/hakuba/",
   "lat": 48.8587333,
   "lng": 2.3422408,
-  "placeId": "ChIJBWqlSgBv5kcRGYBEZG-nj7Y"
+  "placeId": "ChIJBWqlSgBv5kcRGYBEZG-nj7Y",
+  "michelinId": "1213865",
+  "chef": "Takuya Watanabe",
+  "chefSource": "michelin"
 }

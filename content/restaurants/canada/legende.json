@@ -13,5 +13,15 @@
   "website": "https://www.restaurantlegende.com",
   "lat": 46.8170936,
   "lng": -71.210159,
-  "placeId": "ChIJ82-3c-CVuEwROS-6hFk_0CA"
+  "placeId": "ChIJ82-3c-CVuEwROS-6hFk_0CA",
+  "michelinId": "1215958",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Elliot Beaudoin",
+  "chefSource": "michelin"
 }

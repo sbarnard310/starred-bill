@@ -17,5 +17,11 @@
   "website": "https://www.kimptonmaalaibangkok.com/bangkok-restaurants/avant",
   "lat": 13.7376889,
   "lng": 100.5434457,
-  "placeId": "ChIJXfTB2L2f4jARtLgqJNfth2c"
+  "placeId": "ChIJXfTB2L2f4jARtLgqJNfth2c",
+  "michelinId": "1214225",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Haikal Johari",
+  "chefSource": "site"
 }

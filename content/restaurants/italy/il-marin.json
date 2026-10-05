@@ -13,5 +13,15 @@
   "website": "https://ilmarin.it/",
   "lat": 44.4087159,
   "lng": 8.9274716,
-  "placeId": "ChIJ9S5wYuBD0xIRMi0dLDYD82s"
+  "placeId": "ChIJ9S5wYuBD0xIRMi0dLDYD82s",
+  "michelinId": "337639",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Marco Visciola",
+  "chefSource": "michelin"
 }

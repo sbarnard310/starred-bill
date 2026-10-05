@@ -26,5 +26,12 @@
   "website": "https://www.fourseasons.com/hongkong/dining/restaurants/caprice/",
   "lat": 22.2866489,
   "lng": 114.1566097,
-  "placeId": "ChIJzbDWTWIABDQRfEbzv7wxi40"
+  "placeId": "ChIJzbDWTWIABDQRfEbzv7wxi40",
+  "michelinId": "230659",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Guillaume Galliot",
+  "chefSource": "michelin"
 }

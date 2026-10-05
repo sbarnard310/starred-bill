@@ -31,5 +31,11 @@
   "website": "https://seisoka.com/",
   "lat": 35.64751,
   "lng": 139.724008,
-  "placeId": "ChIJoQjlsA2LGGARcqak4efaXrg"
+  "placeId": "ChIJoQjlsA2LGGARcqak4efaXrg",
+  "michelinId": "1194020",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

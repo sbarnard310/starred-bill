@@ -15,5 +15,12 @@
   "website": "https://www.lapresef.com/",
   "lat": 46.150563,
   "lng": 9.489801,
-  "placeId": "ChIJc-xcJWVthEcR45niXnMDBYo"
+  "placeId": "ChIJc-xcJWVthEcR45niXnMDBYo",
+  "michelinId": "319557",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Gianni Tarabini",
+  "chefSource": "michelin"
 }

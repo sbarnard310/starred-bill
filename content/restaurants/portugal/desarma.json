@@ -13,5 +13,13 @@
   "website": "https://www.desarma.pt/",
   "lat": 32.648641,
   "lng": -16.9194868,
-  "placeId": "ChIJ3RTe_J9fYAwRxP19_yBpTcY"
+  "placeId": "ChIJ3RTe_J9fYAwRxP19_yBpTcY",
+  "michelinId": "1208387",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Octávio Freitas",
+  "chefSource": "michelin"
 }

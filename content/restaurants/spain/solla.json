@@ -14,5 +14,8 @@
   "website": "https://www.restaurantesolla.com",
   "lat": 42.4334655,
   "lng": -8.6686035,
-  "placeId": "ChIJa7ERgiRuLw0RG8-XvnH445o"
+  "placeId": "ChIJa7ERgiRuLw0RG8-XvnH445o",
+  "michelinId": "222377",
+  "chef": "Pepe Solla",
+  "chefSource": "michelin"
 }

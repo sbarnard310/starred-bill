@@ -12,5 +12,9 @@
   "website": "https://saga-okina.com/",
   "lat": 35.022746,
   "lng": 135.6756,
-  "placeId": "ChIJDWoMRR2qAWARrfVgztklJNY"
+  "placeId": "ChIJDWoMRR2qAWARrfVgztklJNY",
+  "michelinId": "1192894",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -16,5 +16,14 @@
   "website": "https://www.whatleymanor.com/eat-drink/the-dining-room/",
   "lat": 51.58398,
   "lng": -2.153703,
-  "placeId": "ChIJGSITaSZycUgRrJhsozDkCbk"
+  "placeId": "ChIJGSITaSZycUgRrJhsozDkCbk",
+  "michelinId": "193454",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ricki Weston",
+  "chefSource": "michelin"
 }

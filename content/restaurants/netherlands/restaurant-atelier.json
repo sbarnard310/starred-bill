@@ -13,5 +13,12 @@
   "website": "https://www.restaurantatelier.nl/",
   "lat": 50.8155288,
   "lng": 5.8914267,
-  "placeId": "ChIJ2dXM8k6UwEcRhO4qxjeHuRc"
+  "placeId": "ChIJ2dXM8k6UwEcRhO4qxjeHuRc",
+  "michelinId": "212517",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Hans Kinkartz",
+  "chefSource": "michelin"
 }

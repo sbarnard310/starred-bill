@@ -13,5 +13,12 @@
   "website": "https://ratatouillefoodandwine.nl/",
   "lat": 52.3787751,
   "lng": 4.6376115,
-  "placeId": "ChIJ-3Pl2WvvxUcR8vACacFGNYw"
+  "placeId": "ChIJ-3Pl2WvvxUcR8vACacFGNYw",
+  "michelinId": "477175",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Jozua Jaring",
+  "chefSource": "site"
 }

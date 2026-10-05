@@ -35,5 +35,8 @@
   "website": "https://la-gloire.jp/",
   "lat": 35.671554,
   "lng": 139.739,
-  "placeId": "ChIJF9RNWx6LGGARWCDFdjkiPEI"
+  "placeId": "ChIJF9RNWx6LGGARWCDFdjkiPEI",
+  "michelinId": "1218215",
+  "chef": "Haruhito Narumi",
+  "chefSource": "site"
 }

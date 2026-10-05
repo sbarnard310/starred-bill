@@ -23,5 +23,11 @@
   "lunchSource": "https://www.diningcode.com/profile.php?rid=oCNe33h5PsXJ",
   "lat": 37.54533,
   "lng": 126.98443,
-  "placeId": "ChIJWQe-N-6jfDUR8a_Qr2Xrhfk"
+  "placeId": "ChIJWQe-N-6jfDUR8a_Qr2Xrhfk",
+  "michelinId": "1192575",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Dae-hyun Yoon and Hee-eun Kim",
+  "chefSource": "michelin"
 }

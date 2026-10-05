@@ -15,5 +15,11 @@
   "website": "https://www.restaurantchestnutwestcork.ie/",
   "lat": 51.562655,
   "lng": -9.460819,
-  "placeId": "ChIJl3BicfyhRUgRS6xR4dGed0Q"
+  "placeId": "ChIJl3BicfyhRUgRS6xR4dGed0Q",
+  "michelinId": "559685",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

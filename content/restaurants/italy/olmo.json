@@ -19,5 +19,11 @@
   "website": "https://www.cucinapop.do/",
   "lat": 45.48761,
   "lng": 9.0124,
-  "placeId": "ChIJpVRN4RTrhkcRX2ugXuHaeZM"
+  "placeId": "ChIJpVRN4RTrhkcRX2ugXuHaeZM",
+  "michelinId": "1211632",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -18,5 +18,8 @@
   "noLunch": true,
   "lat": 37.52291,
   "lng": 127.04545,
-  "placeId": "ChIJ_TH_xA2lfDURO7DMMZXDl9U"
+  "placeId": "ChIJ_TH_xA2lfDURO7DMMZXDl9U",
+  "michelinId": "570655",
+  "chef": "Dong-wook Kim",
+  "chefSource": "michelin"
 }

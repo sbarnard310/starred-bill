@@ -17,5 +17,9 @@
   "website": "https://www.condita.co.uk/",
   "lat": 55.937113,
   "lng": -3.178761,
-  "placeId": "ChIJlYNWgXfHh0gRvI5gfzxrWqQ"
+  "placeId": "ChIJlYNWgXfHh0gRvI5gfzxrWqQ",
+  "michelinId": "1154781",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -21,5 +21,8 @@
   "website": "https://www.restaurantmuku.nyc/",
   "lat": 40.72184,
   "lng": -74.009995,
-  "placeId": "ChIJYTKtj2dZwokR3IYU3st5VuA"
+  "placeId": "ChIJYTKtj2dZwokR3IYU3st5VuA",
+  "michelinId": "1243511",
+  "chef": "Manabu Asanuma",
+  "chefSource": "michelin"
 }

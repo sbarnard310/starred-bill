@@ -23,5 +23,8 @@
   "website": "https://www.restaurant-lehittau.fr/",
   "lat": 43.6617126,
   "lng": -1.2961309,
-  "placeId": "ChIJc-cU5IRRUQ0RmYo0bM72Jg8"
+  "placeId": "ChIJc-cU5IRRUQ0RmYo0bM72Jg8",
+  "michelinId": "30528",
+  "chef": "Yannick Duc",
+  "chefSource": "michelin"
 }

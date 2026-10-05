@@ -15,5 +15,9 @@
   "website": "https://www.hert.be/",
   "lat": 51.3230729,
   "lng": 4.9521178,
-  "placeId": "ChIJo5OvKU2zxkcReF3MK9QyLI4"
+  "placeId": "ChIJo5OvKU2zxkcReF3MK9QyLI4",
+  "michelinId": "1160137",
+  "diets": [
+    "vegetarian"
+  ]
 }

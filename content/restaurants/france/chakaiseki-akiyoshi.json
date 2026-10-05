@@ -25,5 +25,11 @@
   "website": "https://chakaiseki-akiyoshi.fr/",
   "lat": 48.8469761,
   "lng": 2.2988947,
-  "placeId": "ChIJXZOfs6Zx5kcRLQByGMVUS1A"
+  "placeId": "ChIJXZOfs6Zx5kcRLQByGMVUS1A",
+  "michelinId": "1207207",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Yuichiro Akiyoshi",
+  "chefSource": "michelin"
 }

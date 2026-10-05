@@ -18,5 +18,12 @@
   "website": "https://www.hotelilpellicano.com/it/esperienze-culinarie/ristorante-il-pellicano.html",
   "lat": 42.380472,
   "lng": 11.192448,
-  "placeId": "ChIJ6cdHyA5dKBMR-7KB208oCYk"
+  "placeId": "ChIJ6cdHyA5dKBMR-7KB208oCYk",
+  "michelinId": "163265",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Michelino Gioia",
+  "chefSource": "michelin"
 }

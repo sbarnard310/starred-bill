@@ -12,5 +12,14 @@
   "website": "https://www.saltbudapest.com",
   "lat": 47.4904,
   "lng": 19.05914,
-  "placeId": "ChIJB4Em2kTcQUcR1pQhOKV-wNM"
+  "placeId": "ChIJB4Em2kTcQUcR1pQhOKV-wNM",
+  "michelinId": "1196768",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Szilárd Tóth",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,14 @@
   "website": "https://www.bluehillfarm.com/",
   "lat": 40.731971,
   "lng": -73.999639,
-  "placeId": "ChIJi9BURJFZwokRDcqvIgxdXds"
+  "placeId": "ChIJi9BURJFZwokRDcqvIgxdXds",
+  "michelinId": "69616",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Dan Barber",
+  "chefSource": "michelin"
 }

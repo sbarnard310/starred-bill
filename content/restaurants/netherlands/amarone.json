@@ -12,5 +12,10 @@
   "website": "https://restaurantamarone.nl/",
   "lat": 51.9223914,
   "lng": 4.483346,
-  "placeId": "ChIJkx_Eb1kzxEcR_D2VB5OPkHk"
+  "placeId": "ChIJkx_Eb1kzxEcR_D2VB5OPkHk",
+  "michelinId": "203196",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

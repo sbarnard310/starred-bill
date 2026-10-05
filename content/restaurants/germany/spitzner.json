@@ -13,5 +13,11 @@
   "website": "https://www.spitzner-restaurant.de/",
   "lat": 51.9581485,
   "lng": 7.6260295,
-  "placeId": "ChIJf91X-8S6uUcRsfCaIMfJQiQ"
+  "placeId": "ChIJf91X-8S6uUcRsfCaIMfJQiQ",
+  "michelinId": "93106",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Karl-Nikolas Spitzner",
+  "chefSource": "michelin"
 }

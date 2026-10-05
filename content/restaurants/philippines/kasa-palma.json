@@ -12,5 +12,12 @@
   "website": "https://kasapalma.com/",
   "lat": 14.56597,
   "lng": 121.0344,
-  "placeId": "ChIJg038Lf_JlzMR66VgyUN-vUE"
+  "placeId": "ChIJg038Lf_JlzMR66VgyUN-vUE",
+  "michelinId": "1216063",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Aaron Isip",
+  "chefSource": "site"
 }

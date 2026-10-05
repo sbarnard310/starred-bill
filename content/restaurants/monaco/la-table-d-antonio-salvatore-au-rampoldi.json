@@ -24,5 +24,12 @@
   "website": "https://rampoldi.mc/la-table-dantonio-salvatore/",
   "lat": 43.740371,
   "lng": 7.427897,
-  "placeId": "ChIJb_pQt8jDzRIRGolJPs3X1vg"
+  "placeId": "ChIJb_pQt8jDzRIRGolJPs3X1vg",
+  "michelinId": "1192647",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Antonio Salvatore",
+  "chefSource": "michelin"
 }

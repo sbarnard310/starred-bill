@@ -13,5 +13,10 @@
   "website": "https://www.hotel-villa-sorgenfrei.de/restaurant",
   "lat": 51.1086096,
   "lng": 13.6753756,
-  "placeId": "ChIJ0W1k2t7RCUcRKNA8TG-1weE"
+  "placeId": "ChIJ0W1k2t7RCUcRKNA8TG-1weE",
+  "michelinId": "83505",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

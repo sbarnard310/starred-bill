@@ -13,5 +13,13 @@
   "website": "https://villapetrusse.lu/fr/restaurant-le-lys.html",
   "lat": 49.6087711,
   "lng": 6.1246747,
-  "placeId": "ChIJw1dYGYBJlUcRVGV_3BJkpL8"
+  "placeId": "ChIJw1dYGYBJlUcRVGV_3BJkpL8",
+  "michelinId": "1241469",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Kim De Dood",
+  "chefSource": "michelin"
 }

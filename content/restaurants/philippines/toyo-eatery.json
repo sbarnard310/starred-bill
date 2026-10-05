@@ -12,5 +12,10 @@
   "website": "https://toyoeatery.com",
   "lat": 14.5311282,
   "lng": 121.0226506,
-  "placeId": "ChIJLTls5S_JlzMRb7f42HFUagY"
+  "placeId": "ChIJLTls5S_JlzMRb7f42HFUagY",
+  "michelinId": "1216080",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

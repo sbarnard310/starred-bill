@@ -15,5 +15,11 @@
   "website": "https://www.lerelaisdesmoines.com",
   "lat": 43.4662157,
   "lng": 6.4905162,
-  "placeId": "ChIJy-4aLhWuzhIR8nGSN8YdMCk"
+  "placeId": "ChIJy-4aLhWuzhIR8nGSN8YdMCk",
+  "michelinId": "411",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

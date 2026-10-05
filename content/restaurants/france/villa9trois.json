@@ -23,5 +23,12 @@
   "website": "https://villa9trois.com/",
   "lat": 48.8639214,
   "lng": 2.433313,
-  "placeId": "ChIJXYCkv2dt5kcRZs2yU8Iyx9U"
+  "placeId": "ChIJXYCkv2dt5kcRZs2yU8Iyx9U",
+  "michelinId": "66439",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Sylvain Grosjean",
+  "chefSource": "site"
 }

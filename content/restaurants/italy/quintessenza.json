@@ -13,5 +13,8 @@
   "website": "https://www.quintessenzaristorante.it",
   "lat": 41.2814264,
   "lng": 16.4150326,
-  "placeId": "ChIJw72Tg3IEOBMRbpGBV-P1k6o"
+  "placeId": "ChIJw72Tg3IEOBMRbpGBV-P1k6o",
+  "michelinId": "1195965",
+  "chef": "Stefano Di Gennaro",
+  "chefSource": "michelin"
 }

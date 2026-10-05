@@ -19,5 +19,13 @@
   "website": "https://www.saintpierre.com.sg/",
   "lat": 1.286238,
   "lng": 103.854219,
-  "placeId": "ChIJ2eBfe3UZ2jERWLXoC909C84"
+  "placeId": "ChIJ2eBfe3UZ2jERWLXoC909C84",
+  "michelinId": "501607",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Emmanuel Stroobant",
+  "chefSource": "site"
 }

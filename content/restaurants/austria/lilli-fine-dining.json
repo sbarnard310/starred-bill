@@ -16,5 +16,11 @@
   "website": "https://lilli-fehring.at/",
   "lat": 46.9355451,
   "lng": 16.010589,
-  "placeId": "ChIJjXllEdQDb0cRXl0X9yexiEU"
+  "placeId": "ChIJjXllEdQDb0cRXl0X9yexiEU",
+  "michelinId": "1216125",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Walter Triebl",
+  "chefSource": "michelin"
 }

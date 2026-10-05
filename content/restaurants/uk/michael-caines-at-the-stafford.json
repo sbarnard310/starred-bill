@@ -23,5 +23,13 @@
   "website": "https://thestaffordlondon.com/michael-caines-at-the-stafford/",
   "lat": 51.5057705,
   "lng": -0.1404344,
-  "placeId": "ChIJE7N9g70FdkgROu5U4NT5b5A"
+  "placeId": "ChIJE7N9g70FdkgROu5U4NT5b5A",
+  "michelinId": "1245013",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Michael Caines",
+  "chefSource": "michelin"
 }

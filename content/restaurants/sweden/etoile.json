@@ -12,5 +12,11 @@
   "website": "https://www.restaurantetoile.se/",
   "lat": 59.3495123,
   "lng": 18.0437729,
-  "placeId": "ChIJgVLWIy2dX0YRwzH2Ot8s_KM"
+  "placeId": "ChIJgVLWIy2dX0YRwzH2Ot8s_KM",
+  "michelinId": "570168",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jonas Lagerström",
+  "chefSource": "michelin"
 }

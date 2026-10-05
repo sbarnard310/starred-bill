@@ -12,5 +12,8 @@
   "website": "https://www.hotelstheone.com/pt/hoteis-porto/the-one-monumental-palace/restaurantes",
   "lat": 41.1484635,
   "lng": -8.6114469,
-  "placeId": "ChIJZfuOMpllJA0RX7KKaNLwg-k"
+  "placeId": "ChIJZfuOMpllJA0RX7KKaNLwg-k",
+  "michelinId": "1077231",
+  "chef": "Julien Montbabut",
+  "chefSource": "michelin"
 }

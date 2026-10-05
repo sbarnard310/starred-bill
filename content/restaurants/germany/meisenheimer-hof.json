@@ -13,5 +13,11 @@
   "website": "https://www.meisenheimer-hof.de/kulinarik",
   "lat": 49.7073941,
   "lng": 7.6704922,
-  "placeId": "ChIJRw5_RhkBlkcRq8f3iwOm-yI"
+  "placeId": "ChIJRw5_RhkBlkcRq8f3iwOm-yI",
+  "michelinId": "417650",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Markus Pape",
+  "chefSource": "michelin"
 }

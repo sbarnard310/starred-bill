@@ -30,5 +30,11 @@
   "website": "https://losier.shiseido.co.jp/",
   "lat": 35.669667,
   "lng": 139.761203,
-  "placeId": "ChIJBwTDyeiLGGAR6u34mg9lSEA"
+  "placeId": "ChIJBwTDyeiLGGAR6u34mg9lSEA",
+  "michelinId": "1194253",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Olivier Chaignon",
+  "chefSource": "michelin"
 }

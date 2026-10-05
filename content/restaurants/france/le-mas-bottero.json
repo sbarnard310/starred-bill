@@ -23,5 +23,13 @@
   "website": "https://lemasbottero.com/",
   "lat": 43.6089688,
   "lng": 5.330341,
-  "placeId": "ChIJs4JgsWr0yRIRudyJLbJJoTo"
+  "placeId": "ChIJs4JgsWr0yRIRudyJLbJJoTo",
+  "michelinId": "541546",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Nicolas Bottero",
+  "chefSource": "michelin"
 }

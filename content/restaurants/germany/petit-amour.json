@@ -15,5 +15,11 @@
   "website": "https://petitamour-hh.com/",
   "lat": 53.5513517,
   "lng": 9.930977,
-  "placeId": "ChIJr7up6YWFsUcRdD7M3YrquGY"
+  "placeId": "ChIJr7up6YWFsUcRdD7M3YrquGY",
+  "michelinId": "472666",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Eike Iken",
+  "chefSource": "site"
 }

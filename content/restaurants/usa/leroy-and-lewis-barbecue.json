@@ -12,5 +12,9 @@
   "website": "https://leroyandlewisbbq.com/",
   "lat": 30.2105038,
   "lng": -97.7872512,
-  "placeId": "ChIJ9XodaJW0RIYRFlcMvIfeqJE"
+  "placeId": "ChIJ9XodaJW0RIYRFlcMvIfeqJE",
+  "michelinId": "1209382",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -26,5 +26,8 @@
   "website": "https://www.quinsourestaurant.fr/",
   "lat": 48.8476485,
   "lng": 2.325489,
-  "placeId": "ChIJh1sXFdJx5kcRPk-FmWcYRfU"
+  "placeId": "ChIJh1sXFdJx5kcRPk-FmWcYRfU",
+  "michelinId": "516654",
+  "chef": "Antonin Bonnet",
+  "chefSource": "michelin"
 }

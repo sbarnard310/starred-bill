@@ -15,5 +15,12 @@
   "website": "https://hotel.lago-ulm.de/gourmet-restaurant-seestern/",
   "lat": 48.412238,
   "lng": 10.012923,
-  "placeId": "ChIJJwi2GOhnmUcRjVeONxHvzRQ"
+  "placeId": "ChIJJwi2GOhnmUcRjVeONxHvzRQ",
+  "michelinId": "562488",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Klaus Buderath and Benedikt Wittek",
+  "chefSource": "michelin"
 }

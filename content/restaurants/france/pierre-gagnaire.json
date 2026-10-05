@@ -25,5 +25,12 @@
   "website": "https://pierregagnaire-lerestaurant.com/",
   "lat": 48.8732731,
   "lng": 2.3003493,
-  "placeId": "ChIJn82-Depv5kcRbitLK3lP0Bg"
+  "placeId": "ChIJn82-Depv5kcRbitLK3lP0Bg",
+  "michelinId": "6112",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Pierre Gagnaire",
+  "chefSource": "michelin"
 }

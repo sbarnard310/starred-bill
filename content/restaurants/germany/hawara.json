@@ -14,5 +14,12 @@
   "website": "https://www.hawara-restaurant.de/",
   "lat": 47.9893883,
   "lng": 7.8569165,
-  "placeId": "ChIJOc6b2w8bkUcRGmscjdi5YS4"
+  "placeId": "ChIJOc6b2w8bkUcRGmscjdi5YS4",
+  "michelinId": "1207906",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Yannick Spielmann & Nicolai Heuer",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,11 @@
   "website": "https://www.ferpelgastronomico.com/",
   "lat": 43.5592015,
   "lng": -6.7450058,
-  "placeId": "ChIJY12opNZfMQ0RsugCv-_OlCs"
+  "placeId": "ChIJY12opNZfMQ0RsugCv-_OlCs",
+  "michelinId": "497188",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Elio Fernández",
+  "chefSource": "michelin"
 }

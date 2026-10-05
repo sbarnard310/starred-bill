@@ -13,5 +13,14 @@
   "website": "https://www.labbysergiarola.com/en/",
   "lat": 38.7616714,
   "lng": -9.3986077,
-  "placeId": "ChIJkfDSox3FHg0RCi0y34M7X-A"
+  "placeId": "ChIJkfDSox3FHg0RCi0y34M7X-A",
+  "michelinId": "473463",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Sergi Arola",
+  "chefSource": "michelin"
 }

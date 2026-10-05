@@ -15,5 +15,12 @@
   "website": "https://www.gaestehaus-erfort.de/",
   "lat": 49.2295502,
   "lng": 7.0076258,
-  "placeId": "ChIJI1f68yG0lUcR0BSfvh4rdZw"
+  "placeId": "ChIJI1f68yG0lUcR0BSfvh4rdZw",
+  "michelinId": "77186",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Klaus Erfort",
+  "chefSource": "michelin"
 }

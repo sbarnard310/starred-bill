@@ -13,5 +13,12 @@
   "website": "https://www.badhotel-sternhagen.de/",
   "lat": 53.886445,
   "lng": 8.645506,
-  "placeId": "ChIJyZTy28EEtEcR4dRSe_3ZVT8"
+  "placeId": "ChIJyZTy28EEtEcR4dRSe_3ZVT8",
+  "michelinId": "71950",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Marc Rennhack",
+  "chefSource": "michelin"
 }

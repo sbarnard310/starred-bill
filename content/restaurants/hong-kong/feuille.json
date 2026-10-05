@@ -26,5 +26,12 @@
   "website": "https://feuille.hk/",
   "lat": 22.2849272,
   "lng": 114.1528886,
-  "placeId": "ChIJAfJO_8oBBDQRiq9Cv0N9ZfM"
+  "placeId": "ChIJAfJO_8oBBDQRiq9Cv0N9ZfM",
+  "michelinId": "1210406",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "David Toutain",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.lafinca.es",
   "lat": 38.2559837,
   "lng": -0.6504141,
-  "placeId": "ChIJNQnzeii0Yw0RiAFryDegh4c"
+  "placeId": "ChIJNQnzeii0Yw0RiAFryDegh4c",
+  "michelinId": "219979",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Susi Díaz",
+  "chefSource": "michelin"
 }

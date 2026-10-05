@@ -12,5 +12,8 @@
   "website": "https://motonari-kyoto.jp/",
   "lat": 35.036465,
   "lng": 135.762995,
-  "placeId": "ChIJf1lJxD8JAWARmdAp62rTios"
+  "placeId": "ChIJf1lJxD8JAWARmdAp62rTios",
+  "michelinId": "1212432",
+  "chef": "Shinya Matsumoto",
+  "chefSource": "michelin"
 }

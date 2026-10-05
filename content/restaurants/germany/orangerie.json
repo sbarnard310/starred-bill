@@ -13,5 +13,12 @@
   "website": "https://www.orangerie-timmendorfer-strand.de/",
   "lat": 54.0007295,
   "lng": 10.7798458,
-  "placeId": "ChIJ60bVvVN0skcRuBTpw2h8DjU"
+  "placeId": "ChIJ60bVvVN0skcRuBTpw2h8DjU",
+  "michelinId": "78167",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Thomas Lemke and Simone Melis",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,12 @@
   "website": "https://kyoto-kitcho.com/restaurant/hana/",
   "lat": 35.003395,
   "lng": 135.772945,
-  "placeId": "ChIJI-P4dpwIAWAR__cHhdAO5-E"
+  "placeId": "ChIJI-P4dpwIAWAR__cHhdAO5-E",
+  "michelinId": "1193025",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Kunio Tokuoka",
+  "chefSource": "site"
 }

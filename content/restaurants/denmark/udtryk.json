@@ -26,5 +26,11 @@
   "website": "https://norrlyst.dk/udtryk/",
   "lat": 55.679569,
   "lng": 12.568509,
-  "placeId": "ChIJn1w7Q6ZTUkYRHVs90CYuMPg"
+  "placeId": "ChIJn1w7Q6ZTUkYRHVs90CYuMPg",
+  "michelinId": "1241136",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Pascal Dallarosa",
+  "chefSource": "site"
 }

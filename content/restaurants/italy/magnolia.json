@@ -16,5 +16,13 @@
   "website": "https://www.magnoliaristorante.it/",
   "lat": 44.0731058,
   "lng": 12.3498464,
-  "placeId": "ChIJv8jHz7y3LBMR1zBF6x5BYAg"
+  "placeId": "ChIJv8jHz7y3LBMR1zBF6x5BYAg",
+  "michelinId": "130945",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alberto Faccani",
+  "chefSource": "michelin"
 }

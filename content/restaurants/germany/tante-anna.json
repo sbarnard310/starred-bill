@@ -12,5 +12,11 @@
   "sourceType": "none",
   "lat": 51.3658402,
   "lng": 7.2469673,
-  "placeId": "ChIJMSbKvjAnuUcR9CH2Cu6xXSM"
+  "placeId": "ChIJMSbKvjAnuUcR9CH2Cu6xXSM",
+  "michelinId": "77786",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thies Henkel",
+  "chefSource": "michelin"
 }

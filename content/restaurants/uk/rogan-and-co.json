@@ -20,5 +20,9 @@
   "website": "https://www.roganandco.co.uk/",
   "lat": 54.200881,
   "lng": -2.953641,
-  "placeId": "ChIJ13H6KGuYfEgRZShEsP9XnYQ"
+  "placeId": "ChIJ13H6KGuYfEgRZShEsP9XnYQ",
+  "michelinId": "233443",
+  "diets": [
+    "vegetarian"
+  ]
 }

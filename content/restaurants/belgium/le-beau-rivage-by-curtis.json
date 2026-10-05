@@ -16,5 +16,9 @@
   "website": "https://www.curtismaquet.be/",
   "lat": 50.414704,
   "lng": 4.8851687,
-  "placeId": "ChIJ4wDobO-ZwUcRI2664C3euKw"
+  "placeId": "ChIJ4wDobO-ZwUcRI2664C3euKw",
+  "michelinId": "1214239",
+  "diets": [
+    "vegetarian"
+  ]
 }

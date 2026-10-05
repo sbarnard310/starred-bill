@@ -16,5 +16,10 @@
   "website": "https://www.instagram.com/lechiquerestaurant",
   "lat": 20.5885902,
   "lng": -87.1091328,
-  "placeId": "ChIJM5U4eDaGTo8R6BZOAFT5-j4"
+  "placeId": "ChIJM5U4eDaGTo8R6BZOAFT5-j4",
+  "michelinId": "1208262",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

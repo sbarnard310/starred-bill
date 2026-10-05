@@ -15,5 +15,12 @@
   "website": "https://www.sonnhof-vituswinkler.at/",
   "lat": 47.32784,
   "lng": 13.15309,
-  "placeId": "ChIJB_3KpP_ZdkcR57z8bOAK104"
+  "placeId": "ChIJB_3KpP_ZdkcR57z8bOAK104",
+  "michelinId": "1212478",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Vitus Winkler",
+  "chefSource": "michelin"
 }

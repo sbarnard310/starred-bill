@@ -17,5 +17,9 @@
   "website": "https://www.arbane-philippe-mille.com",
   "lat": 49.2573961,
   "lng": 4.0272938,
-  "placeId": "ChIJ19fWQQB16UcRaO3m-XojFAg"
+  "placeId": "ChIJ19fWQQB16UcRaO3m-XojFAg",
+  "michelinId": "1214420",
+  "diets": [
+    "vegetarian"
+  ]
 }

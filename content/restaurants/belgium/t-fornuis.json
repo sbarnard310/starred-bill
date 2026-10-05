@@ -13,5 +13,8 @@
   "website": "https://fornuisantwerpen.be/",
   "lat": 51.2190002,
   "lng": 4.3994372,
-  "placeId": "ChIJi13m7Pb2w0cRJS-ZqJttnYc"
+  "placeId": "ChIJi13m7Pb2w0cRJS-ZqJttnYc",
+  "michelinId": "115217",
+  "chef": "Johan Segers",
+  "chefSource": "michelin"
 }

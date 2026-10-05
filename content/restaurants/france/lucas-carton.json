@@ -25,5 +25,12 @@
   "website": "https://lucascarton.com/",
   "lat": 48.8697476,
   "lng": 2.3232442,
-  "placeId": "ChIJrf6XLDNu5kcRgypP8GERVqw"
+  "placeId": "ChIJrf6XLDNu5kcRgypP8GERVqw",
+  "michelinId": "6108",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Cyril Lignac",
+  "chefSource": "site"
 }

@@ -16,5 +16,12 @@
   "website": "https://www.lecoqauxchamps.be/",
   "lat": 50.47134,
   "lng": 5.3878484,
-  "placeId": "ChIJgYrhMHxTwEcRopXMP7AdyMk"
+  "placeId": "ChIJgYrhMHxTwEcRopXMP7AdyMk",
+  "michelinId": "210428",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christophe Pauly",
+  "chefSource": "michelin"
 }

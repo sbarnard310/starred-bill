@@ -26,5 +26,11 @@
   "website": "https://www.restaurantallen.com/",
   "lat": 37.5036,
   "lng": 127.0418,
-  "placeId": "ChIJQ-Y88belfDURrUsKUS6HMVY"
+  "placeId": "ChIJQ-Y88belfDURrUsKUS6HMVY",
+  "michelinId": "1200922",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Hyun-min Suh",
+  "chefSource": "michelin"
 }

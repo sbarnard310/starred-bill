@@ -12,5 +12,10 @@
   "sourceType": "none",
   "lat": 32.4030991,
   "lng": 119.4339269,
-  "placeId": "ChIJVVVVqN2HtjUR2w5aITWQias"
+  "placeId": "ChIJVVVVqN2HtjUR2w5aITWQias",
+  "michelinId": "1216540",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ]
 }

@@ -31,5 +31,12 @@
   "website": "https://maebcn.com/",
   "lat": 41.401191,
   "lng": 2.144456,
-  "placeId": "ChIJjWu7nsuZpBIRgX4WmQwdOps"
+  "placeId": "ChIJjWu7nsuZpBIRgX4WmQwdOps",
+  "michelinId": "1211425",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Diego Mondragón and Germán Espinosa",
+  "chefSource": "michelin"
 }

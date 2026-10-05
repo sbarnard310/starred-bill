@@ -11,5 +11,8 @@
   "sourceType": "none",
   "lat": 34.69739,
   "lng": 135.497797,
-  "placeId": "ChIJCw4Sbw3nAGARPEWAor6pVSU"
+  "placeId": "ChIJCw4Sbw3nAGARPEWAor6pVSU",
+  "michelinId": "1195577",
+  "chef": "Kota Ono",
+  "chefSource": "michelin"
 }

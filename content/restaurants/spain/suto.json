@@ -25,5 +25,8 @@
   "lunchSource": "https://joinpearl.co/restaurants/barcelona/suto",
   "lat": 41.379936,
   "lng": 2.133465,
-  "placeId": "ChIJv31mchmZpBIRwcQH2AzA_RE"
+  "placeId": "ChIJv31mchmZpBIRwcQH2AzA_RE",
+  "michelinId": "1201273",
+  "chef": "Yoshikazu Suto",
+  "chefSource": "michelin"
 }

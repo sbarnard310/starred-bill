@@ -13,5 +13,11 @@
   "website": "https://www.burgvitalresort.com/de/kulinarik/griggeler-stuba/",
   "lat": 47.2172212,
   "lng": 10.1384191,
-  "placeId": "ChIJR4YhucGmnEcRn3A-kHLl9Rw"
+  "placeId": "ChIJR4YhucGmnEcRn3A-kHLl9Rw",
+  "michelinId": "105219",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sebastian Jakob",
+  "chefSource": "michelin"
 }

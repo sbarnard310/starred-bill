@@ -12,5 +12,10 @@
   "website": "https://villa-communico.com/",
   "lat": 34.686082,
   "lng": 135.845773,
-  "placeId": "ChIJgQM2cwA5AWAReNG7r4lpqVk"
+  "placeId": "ChIJgQM2cwA5AWAReNG7r4lpqVk",
+  "michelinId": "1196794",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

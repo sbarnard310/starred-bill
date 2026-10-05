@@ -14,5 +14,14 @@
   "website": "https://www.restaurant-magdalena.ch/",
   "lat": 47.0168571,
   "lng": 8.6660051,
-  "placeId": "ChIJE6dnsMNPhUcRdBj9ai38FwM"
+  "placeId": "ChIJE6dnsMNPhUcRdBj9ai38FwM",
+  "michelinId": "1191538",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Dominik Hartmann",
+  "chefSource": "michelin"
 }

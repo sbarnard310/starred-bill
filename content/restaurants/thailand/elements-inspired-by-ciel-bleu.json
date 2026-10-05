@@ -17,5 +17,10 @@
   "website": "https://www.okurabangkok.com/dining/elements-inspired-by-ciel-bleu",
   "lat": 13.7428645,
   "lng": 100.5476497,
-  "placeId": "ChIJ5-kost6e4jARu60oSMCaKS4"
+  "placeId": "ChIJ5-kost6e4jARu60oSMCaKS4",
+  "michelinId": "546919",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

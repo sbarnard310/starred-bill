@@ -16,5 +16,12 @@
   "website": "https://www.restaurant-clara.de/",
   "lat": 50.979178,
   "lng": 11.0337381,
-  "placeId": "ChIJUdpZvL1ypEcRqYjPHgilyjM"
+  "placeId": "ChIJUdpZvL1ypEcRqYjPHgilyjM",
+  "michelinId": "72533",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christopher Weigel",
+  "chefSource": "michelin"
 }

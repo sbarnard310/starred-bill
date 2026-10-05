@@ -13,5 +13,13 @@
   "website": "https://lesmontagnards.ch/",
   "lat": 46.6029321,
   "lng": 7.1001271,
-  "placeId": "ChIJc3-5VQCKjkcRe3jfThDHBB8"
+  "placeId": "ChIJc3-5VQCKjkcRe3jfThDHBB8",
+  "michelinId": "1195769",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alexandre Miquel",
+  "chefSource": "site"
 }

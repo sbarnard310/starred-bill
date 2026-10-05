@@ -13,5 +13,9 @@
   "website": "https://www.restaurantdezuidkant.be/",
   "lat": 51.251887,
   "lng": 3.2825787,
-  "placeId": "ChIJ7VDTVs5Zw0cR1l8QHDX_BFA"
+  "placeId": "ChIJ7VDTVs5Zw0cR1l8QHDX_BFA",
+  "michelinId": "209570",
+  "diets": [
+    "vegetarian"
+  ]
 }

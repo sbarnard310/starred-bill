@@ -16,5 +16,9 @@
   "website": "https://esporao.com/pt/turismo/restaurante-da-herdade-do-esporao",
   "lat": 38.38073,
   "lng": -7.55312,
-  "placeId": "ChIJsW3GGqVMFw0R9rCSO0HxuEs"
+  "placeId": "ChIJsW3GGqVMFw0R9rCSO0HxuEs",
+  "michelinId": "215906",
+  "diets": [
+    "vegetarian"
+  ]
 }

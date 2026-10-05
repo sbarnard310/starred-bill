@@ -20,5 +20,12 @@
   "website": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/",
   "lat": 51.4854381,
   "lng": -0.1621766,
-  "placeId": "ChIJkUBQqPAFdkgRtPhH7EIvzJU"
+  "placeId": "ChIJkUBQqPAFdkgRtPhH7EIvzJU",
+  "michelinId": "69945",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Kim Ratcharoen",
+  "chefSource": "site"
 }

@@ -19,5 +19,8 @@
   "lunchType": "menu",
   "lunchNote": "Cheapest lunch course (others up to ¥28,000)",
   "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/id881401"
+  "lunchSource": "https://omakaseje.com/restaurants/id881401",
+  "michelinId": "1192978",
+  "chef": "Masayasu Yonemura",
+  "chefSource": "michelin"
 }

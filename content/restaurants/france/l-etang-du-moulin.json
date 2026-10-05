@@ -23,5 +23,11 @@
   "website": "https://www.etang-du-moulin.com",
   "lat": 47.1975481,
   "lng": 6.7214393,
-  "placeId": "ChIJrcQ7C_D2jUcRCeFW9woJs5s"
+  "placeId": "ChIJrcQ7C_D2jUcRCeFW9woJs5s",
+  "michelinId": "1185",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jacques Barnachon",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,8 @@
   "website": "https://theodors-restaurant.de/",
   "lat": 50.7398206,
   "lng": 7.1232541,
-  "placeId": "ChIJ44W5erDhvkcRD-zGBYZQcJs"
+  "placeId": "ChIJ44W5erDhvkcRD-zGBYZQcJs",
+  "michelinId": "1240778",
+  "chef": "Fritz Benson",
+  "chefSource": "michelin"
 }

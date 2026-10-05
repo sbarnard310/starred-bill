@@ -23,5 +23,12 @@
   "website": "https://restaurant-origines.fr/",
   "lat": 45.5014095,
   "lng": 3.2436174,
-  "placeId": "ChIJ_U5RIotX9kcRfrx1zox-DaQ"
+  "placeId": "ChIJ_U5RIotX9kcRfrx1zox-DaQ",
+  "michelinId": "1024413",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Adrien Descouls",
+  "chefSource": "michelin"
 }

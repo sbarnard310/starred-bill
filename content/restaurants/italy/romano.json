@@ -23,5 +23,12 @@
   "website": "https://www.romanoristorante.it/",
   "lat": 43.872277,
   "lng": 10.248277,
-  "placeId": "ChIJzQEonPKh1RIRK-92qGp80qA"
+  "placeId": "ChIJzQEonPKh1RIRK-92qGp80qA",
+  "michelinId": "157362",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Nicola Gronchi",
+  "chefSource": "michelin"
 }

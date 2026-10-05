@@ -15,5 +15,12 @@
   "website": "https://www.perebise.com",
   "lat": 45.8393167,
   "lng": 6.2106864,
-  "placeId": "ChIJgd4kEyuTi0cRnuohGnxC0bc"
+  "placeId": "ChIJgd4kEyuTi0cRnuohGnxC0bc",
+  "michelinId": "13212",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jean Sulpice",
+  "chefSource": "michelin"
 }

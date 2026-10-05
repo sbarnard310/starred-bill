@@ -20,5 +20,11 @@
   "website": "https://restaurantaugust.de/",
   "lat": 48.3710103,
   "lng": 10.9126019,
-  "placeId": "ChIJBzM8CmgenEcRqrj1bDQ6WDY"
+  "placeId": "ChIJBzM8CmgenEcRqrj1bDQ6WDY",
+  "michelinId": "495065",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christian Grünwald",
+  "chefSource": "michelin"
 }

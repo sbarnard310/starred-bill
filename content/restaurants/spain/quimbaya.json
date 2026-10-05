@@ -26,5 +26,11 @@
   "website": "https://quimbayarestaurant.com/",
   "lat": 40.436379,
   "lng": -3.693075,
-  "placeId": "ChIJRxnN-xspQg0Rw7yGicV9UGM"
+  "placeId": "ChIJRxnN-xspQg0Rw7yGicV9UGM",
+  "michelinId": "1193573",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Edwin Rodríguez",
+  "chefSource": "michelin"
 }

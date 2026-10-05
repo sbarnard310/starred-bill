@@ -13,5 +13,13 @@
   "website": "https://www.enricobartolini.net/ristorante-sant-uffizio",
   "lat": 45.0271679,
   "lng": 8.2778294,
-  "placeId": "ChIJVVVlI06-h0cRwO7O81q2PYY"
+  "placeId": "ChIJVVVlI06-h0cRwO7O81q2PYY",
+  "michelinId": "163087",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Gabriele Boffa",
+  "chefSource": "michelin"
 }

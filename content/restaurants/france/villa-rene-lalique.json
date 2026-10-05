@@ -15,5 +15,11 @@
   "website": "https://villarenelalique.com",
   "lat": 48.9185,
   "lng": 7.365027,
-  "placeId": "ChIJ_bfWkg8nlEcRA572EP81B1U"
+  "placeId": "ChIJ_bfWkg8nlEcRA572EP81B1U",
+  "michelinId": "482620",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Paul Stradner",
+  "chefSource": "michelin"
 }

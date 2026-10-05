@@ -12,5 +12,13 @@
   "website": "https://www.doprestaurante.pt/",
   "lat": 41.142819,
   "lng": -8.6146931,
-  "placeId": "ChIJVWOR6uFkJA0R13CBg-6Zivc"
+  "placeId": "ChIJVWOR6uFkJA0R13CBg-6Zivc",
+  "michelinId": "306208",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Rui Paula",
+  "chefSource": "michelin"
 }

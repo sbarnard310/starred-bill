@@ -14,5 +14,8 @@
   "website": "https://www.omakasetableatl.com/",
   "lat": 33.846511,
   "lng": -84.3739683,
-  "placeId": "ChIJFUGvhbcP9YgRWUdLXI3bhxA"
+  "placeId": "ChIJFUGvhbcP9YgRWUdLXI3bhxA",
+  "michelinId": "1210849",
+  "chef": "Leonard Yu",
+  "chefSource": "michelin"
 }

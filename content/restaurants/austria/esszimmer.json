@@ -12,5 +12,11 @@
   "website": "https://www.esszimmer.com/",
   "lat": 47.8066955,
   "lng": 13.0341933,
-  "placeId": "ChIJtabfwHGQdkcR0hwnIZ_OY6g"
+  "placeId": "ChIJtabfwHGQdkcR0hwnIZ_OY6g",
+  "michelinId": "105701",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andreas Kaiblinger",
+  "chefSource": "michelin"
 }

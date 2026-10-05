@@ -18,5 +18,15 @@
   "website": "https://www.roosterowl.com/",
   "lat": 38.921467,
   "lng": -77.03216,
-  "placeId": "ChIJFRi3Siq3t4kRoH7xEpeT7iI"
+  "placeId": "ChIJFRi3Siq3t4kRoH7xEpeT7iI",
+  "michelinId": "1164753",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Yuan Tang",
+  "chefSource": "site"
 }

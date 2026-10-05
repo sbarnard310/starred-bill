@@ -13,5 +13,11 @@
   "website": "https://www.restaurantlilo.com/",
   "lat": 33.1640604,
   "lng": -117.3511456,
-  "placeId": "ChIJi_11lwRy3IARYn7ySFVDrxw"
+  "placeId": "ChIJi_11lwRy3IARYn7ySFVDrxw",
+  "michelinId": "1240863",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Eric Bost",
+  "chefSource": "michelin"
 }

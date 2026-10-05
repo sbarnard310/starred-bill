@@ -12,5 +12,9 @@
   "website": "https://www.restaurant-apron.at/",
   "lat": 48.1995377,
   "lng": 16.3771002,
-  "placeId": "ChIJpdlEJmIHbUcR2cYtzzukbHg"
+  "placeId": "ChIJpdlEJmIHbUcR2cYtzzukbHg",
+  "michelinId": "562487",
+  "diets": [
+    "vegetarian"
+  ]
 }

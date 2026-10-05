@@ -16,5 +16,12 @@
   "website": "https://www.rebers-pflug.de",
   "lat": 49.1231582,
   "lng": 9.7567053,
-  "placeId": "ChIJDxkjAoVamEcRGARJ9KZuhEk"
+  "placeId": "ChIJDxkjAoVamEcRGARJ9KZuhEk",
+  "michelinId": "77546",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Hans-Harald Reber",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.barrorestaurante.es",
   "lat": 40.6577005,
   "lng": -4.709749,
-  "placeId": "ChIJIYPG0M7zQA0Ror1sSrxTxuY"
+  "placeId": "ChIJIYPG0M7zQA0Ror1sSrxTxuY",
+  "michelinId": "1208394",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Carlos Casillas Hernández",
+  "chefSource": "michelin"
 }

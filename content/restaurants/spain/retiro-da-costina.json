@@ -13,5 +13,13 @@
   "website": "https://retirodacostina.com/",
   "lat": 43.0334653,
   "lng": -8.8038837,
-  "placeId": "ChIJRTlCBbLpLg0RB3kXgX-fzVw"
+  "placeId": "ChIJRTlCBbLpLg0RB3kXgX-fzVw",
+  "michelinId": "223114",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Manuel García",
+  "chefSource": "michelin"
 }

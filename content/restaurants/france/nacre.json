@@ -17,5 +17,10 @@
   "website": "https://www.restaurant-nacre.com/",
   "lat": 44.7662756,
   "lng": -1.1401852,
-  "placeId": "ChIJ2zyxhY-hVA0RtnHAS46bE-g"
+  "placeId": "ChIJ2zyxhY-hVA0RtnHAS46bE-g",
+  "michelinId": "1210252",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

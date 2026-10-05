@@ -13,5 +13,11 @@
   "website": "https://www.der-wilde-eder.at/fine-dining-zeitraum/",
   "lat": 47.3002006,
   "lng": 15.5748252,
-  "placeId": "ChIJY-1lbnhAbkcR6Wtu9XvqUJY"
+  "placeId": "ChIJY-1lbnhAbkcR6Wtu9XvqUJY",
+  "michelinId": "1213596",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Stefan Eder",
+  "chefSource": "michelin"
 }

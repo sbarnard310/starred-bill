@@ -28,5 +28,12 @@
   "website": "https://www.osarestaurante.com/",
   "lat": 40.428853,
   "lng": -3.732739,
-  "placeId": "ChIJb8yyUbMpQg0RLtHW6aW7vR0"
+  "placeId": "ChIJb8yyUbMpQg0RLtHW6aW7vR0",
+  "michelinId": "1206982",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jorge Muñoz",
+  "chefSource": "michelin"
 }

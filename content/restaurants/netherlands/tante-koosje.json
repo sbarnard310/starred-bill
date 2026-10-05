@@ -13,5 +13,16 @@
   "website": "https://www.tante-koosje.nl/",
   "lat": 52.2090905,
   "lng": 5.0235487,
-  "placeId": "ChIJF2bPS15yxkcRUuL8NHUgFaI"
+  "placeId": "ChIJF2bPS15yxkcRUuL8NHUgFaI",
+  "michelinId": "212727",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Roland Veldhuijzen",
+  "chefSource": "michelin"
 }

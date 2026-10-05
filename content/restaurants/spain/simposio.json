@@ -13,5 +13,11 @@
   "website": "https://rogerjulian.es/",
   "lat": 39.5621719,
   "lng": -0.4991305,
-  "placeId": "ChIJA50zxwxbYA0Rh4vdxDkuuU8"
+  "placeId": "ChIJA50zxwxbYA0Rh4vdxDkuuU8",
+  "michelinId": "1206321",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

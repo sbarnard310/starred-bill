@@ -27,5 +27,13 @@
   "website": "https://canjubany.com/",
   "lat": 41.929388,
   "lng": 2.301892,
-  "placeId": "ChIJOwXcR9YnpRIRQ4N4bAXQPcI"
+  "placeId": "ChIJOwXcR9YnpRIRQ4N4bAXQPcI",
+  "michelinId": "218953",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Nandu Jubany",
+  "chefSource": "michelin"
 }

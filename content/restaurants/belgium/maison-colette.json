@@ -16,5 +16,8 @@
   "website": "https://maison-colette.be/",
   "lat": 51.1038295,
   "lng": 4.916895,
-  "placeId": "ChIJj-en5zhPwUcRln0RXSZqJsA"
+  "placeId": "ChIJj-en5zhPwUcRln0RXSZqJsA",
+  "michelinId": "1216899",
+  "chef": "Thijs Vervloet",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,8 @@
   "website": "https://www.leprieure.com/",
   "lat": 43.9631479,
   "lng": 4.7962522,
-  "placeId": "ChIJA_RLdUXrtRIRqmXG0QK5J4w"
+  "placeId": "ChIJA_RLdUXrtRIRqmXG0QK5J4w",
+  "michelinId": "13557",
+  "chef": "Christophe Chiavola",
+  "chefSource": "site"
 }

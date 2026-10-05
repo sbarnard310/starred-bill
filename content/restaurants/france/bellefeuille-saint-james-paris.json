@@ -20,5 +20,11 @@
   "website": "https://www.saint-james-paris.com/",
   "lat": 48.8704851,
   "lng": 2.2797777,
-  "placeId": "ChIJh6iPsZNv5kcRbwL5NqrZtqA"
+  "placeId": "ChIJh6iPsZNv5kcRbwL5NqrZtqA",
+  "michelinId": "12242",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Grégory Garimbay",
+  "chefSource": "michelin"
 }

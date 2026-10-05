@@ -15,5 +15,13 @@
   "website": "https://storstad.de/",
   "lat": 49.0200421,
   "lng": 12.0963527,
-  "placeId": "ChIJUa6Q5aXBn0cR4Y5bvPHOkAc"
+  "placeId": "ChIJUa6Q5aXBn0cR4Y5bvPHOkAc",
+  "michelinId": "94559",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Simone Kubitzek and Hella Eggers",
+  "chefSource": "michelin"
 }

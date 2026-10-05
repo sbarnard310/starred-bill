@@ -20,5 +20,12 @@
   "website": "https://www.whiteswanatfence.co.uk/",
   "lat": 53.839256,
   "lng": -2.250863,
-  "placeId": "ChIJ-5MZifqQe0gRs8own2MRFKI"
+  "placeId": "ChIJ-5MZifqQe0gRs8own2MRFKI",
+  "michelinId": "460346",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Tom Parker",
+  "chefSource": "site"
 }

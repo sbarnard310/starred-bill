@@ -22,5 +22,11 @@
   "website": "https://hanrestaurante.com",
   "lat": -34.5947996,
   "lng": -58.4416823,
-  "placeId": "ChIJIbzNhGrLvJURCgFPGbjz4uU"
+  "placeId": "ChIJIbzNhGrLvJURCgFPGbjz4uU",
+  "michelinId": "1217199",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Pablo Park",
+  "chefSource": "michelin"
 }

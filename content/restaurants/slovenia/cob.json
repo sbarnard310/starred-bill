@@ -16,5 +16,14 @@
   "website": "https://www.cob.si",
   "lat": 45.516425,
   "lng": 13.5927606,
-  "placeId": "ChIJ_8R0lsZle0cRySgbhLqqSY4"
+  "placeId": "ChIJ_8R0lsZle0cRySgbhLqqSY4",
+  "michelinId": "1192531",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Filip Matjaž",
+  "chefSource": "michelin"
 }

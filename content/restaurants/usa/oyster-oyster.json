@@ -17,5 +17,17 @@
   "website": "https://www.oysteroysterdc.com/",
   "lat": 38.909302,
   "lng": -77.023015,
-  "placeId": "ChIJQcHOEK-3t4kRbvsIP3ccItA"
+  "placeId": "ChIJQcHOEK-3t4kRbvsIP3ccItA",
+  "michelinId": "1185069",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Rob Rubba",
+  "chefSource": "michelin"
 }

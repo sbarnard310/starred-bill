@@ -12,5 +12,13 @@
   "website": "https://www.thedoldergrand.com/the-restaurant/",
   "lat": 47.372759,
   "lng": 8.5728423,
-  "placeId": "ChIJXeB5Fc-gmkcR5W5tM1kEwB4"
+  "placeId": "ChIJXeB5Fc-gmkcR5W5tM1kEwB4",
+  "michelinId": "196194",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Heiko Nieder",
+  "chefSource": "michelin"
 }

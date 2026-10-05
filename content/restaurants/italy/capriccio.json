@@ -23,5 +23,8 @@
   "website": "https://ristorantecapriccio.it/",
   "lat": 45.55285,
   "lng": 10.56121,
-  "placeId": "ChIJjw8_pxSSgUcREvK2VoeV8ZU"
+  "placeId": "ChIJjw8_pxSSgUcREvK2VoeV8ZU",
+  "michelinId": "139132",
+  "chef": "Giuliana Germiniasi",
+  "chefSource": "michelin"
 }

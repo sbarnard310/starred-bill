@@ -13,5 +13,10 @@
   "website": "https://www.restaurantmirabelle.no/",
   "lat": 60.0069851,
   "lng": 5.200237,
-  "placeId": "ChIJf1yu6G-PPEYRKy9QWGqSVno"
+  "placeId": "ChIJf1yu6G-PPEYRKy9QWGqSVno",
+  "michelinId": "1219249",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

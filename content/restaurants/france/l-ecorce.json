@@ -17,5 +17,8 @@
   "website": "https://www.lecorce.com",
   "lat": 43.6063672,
   "lng": 1.4418517,
-  "placeId": "ChIJDYAr5Y-7rhIR8XILDFaUD6A"
+  "placeId": "ChIJDYAr5Y-7rhIR8XILDFaUD6A",
+  "michelinId": "1243609",
+  "chef": "Bertrand Millar",
+  "chefSource": "site"
 }

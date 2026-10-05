@@ -24,5 +24,11 @@
   "website": "https://www.relaisdestroismas.com",
   "lat": 42.5244835,
   "lng": 3.0890189,
-  "placeId": "ChIJqcCeDOZ_sBIR6yAau82k_6E"
+  "placeId": "ChIJqcCeDOZ_sBIR6yAau82k_6E",
+  "michelinId": "64112",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Laurent Lemal",
+  "chefSource": "michelin"
 }

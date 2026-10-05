@@ -12,5 +12,10 @@
   "website": "https://www.seventhson.hk",
   "lat": 31.22914,
   "lng": 121.4576697,
-  "placeId": "ChIJXYBDiBBwsjURxZf6M-T_3qo"
+  "placeId": "ChIJXYBDiBBwsjURxZf6M-T_3qo",
+  "michelinId": "506660",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

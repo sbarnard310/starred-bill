@@ -24,5 +24,12 @@
   "website": "https://metropole.com/en/restaurant-montecarlo/les-ambassadeurs-by-christophe-cussac/",
   "lat": 43.740506,
   "lng": 7.427562,
-  "placeId": "ChIJzZxY1ubDzRIREvykG2qnyk4"
+  "placeId": "ChIJzZxY1ubDzRIREvykG2qnyk4",
+  "michelinId": "1206520",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christophe Cussac",
+  "chefSource": "michelin"
 }

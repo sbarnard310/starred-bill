@@ -12,5 +12,13 @@
   "website": "https://www.restaurant-neobiota.de/",
   "lat": 50.9281867,
   "lng": 6.9445901,
-  "placeId": "ChIJbxCLJjslv0cRGpR-Nzp-K3o"
+  "placeId": "ChIJbxCLJjslv0cRGpR-Nzp-K3o",
+  "michelinId": "556355",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Sonja Baumann and Erik Scheffler",
+  "chefSource": "michelin"
 }

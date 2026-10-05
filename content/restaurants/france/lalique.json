@@ -15,5 +15,13 @@
   "website": "https://www.lafauriepeyragueylalique.com/le-restaurant/",
   "lat": 44.5493811,
   "lng": -0.3374123,
-  "placeId": "ChIJJeUOLJgTVQ0R7QzHIaN8XB0"
+  "placeId": "ChIJJeUOLJgTVQ0R7QzHIaN8XB0",
+  "michelinId": "1000331",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jérôme Schilling",
+  "chefSource": "michelin"
 }

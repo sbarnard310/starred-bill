@@ -15,5 +15,13 @@
   "website": "https://www.maison-albar-hotels-l-imperator.com",
   "lat": 43.8388191,
   "lng": 4.3527079,
-  "placeId": "ChIJ31L2rrMttBIRPyzC2P6O76U"
+  "placeId": "ChIJ31L2rrMttBIRPyzC2P6O76U",
+  "michelinId": "1186194",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

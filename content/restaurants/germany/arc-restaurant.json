@@ -12,5 +12,9 @@
   "website": "https://www.arcrestaurant.de/",
   "lat": 53.5724603,
   "lng": 9.9597672,
-  "placeId": "ChIJA5Pi4ZeJsUcRIbuHbMnUdZM"
+  "placeId": "ChIJA5Pi4ZeJsUcRIbuHbMnUdZM",
+  "michelinId": "1216632",
+  "diets": [
+    "vegetarian"
+  ]
 }

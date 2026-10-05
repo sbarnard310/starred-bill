@@ -20,5 +20,14 @@
   "website": "https://www.restaurantpine.co.uk/restaurant",
   "lat": 55.009532,
   "lng": -1.926698,
-  "placeId": "ChIJRaHllmTbfUgRR3aT2AO-xD8"
+  "placeId": "ChIJRaHllmTbfUgRR3aT2AO-xD8",
+  "michelinId": "1198778",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Cal Byerley",
+  "chefSource": "michelin"
 }

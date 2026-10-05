@@ -30,5 +30,8 @@
   "website": "https://www.voramarportbou.com/",
   "lat": 42.426527,
   "lng": 3.161554,
-  "placeId": "ChIJjf_U9R58uhIRM5DBJs7vYSM"
+  "placeId": "ChIJjf_U9R58uhIRM5DBJs7vYSM",
+  "michelinId": "1159995",
+  "chef": "Guillem Gavilan",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,8 @@
   "website": "https://www.aubergesaintjean.com/",
   "lat": 44.8134329,
   "lng": -0.1389675,
-  "placeId": "ChIJo8c4O9daVQ0R0rPPiJPV7i0"
+  "placeId": "ChIJo8c4O9daVQ0R0rPPiJPV7i0",
+  "michelinId": "7924",
+  "chef": "Thomas L'Hérisson",
+  "chefSource": "michelin"
 }

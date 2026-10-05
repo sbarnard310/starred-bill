@@ -13,5 +13,12 @@
   "website": "https://www.antoniomacanita.com/pt/adegas/fitapreta/enoturismo-alentejo/restaurante-a-cozinha-do-paco",
   "lat": 38.6354396,
   "lng": -7.9555723,
-  "placeId": "ChIJVUsPA9rlGQ0Rg8RQlzlSxjg"
+  "placeId": "ChIJVUsPA9rlGQ0Rg8RQlzlSxjg",
+  "michelinId": "1243612",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Afonso Dantas",
+  "chefSource": "michelin"
 }

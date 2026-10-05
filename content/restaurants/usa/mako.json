@@ -18,5 +18,9 @@
   "website": "https://www.makochicago.com/",
   "lat": 41.885775,
   "lng": -87.646897,
-  "placeId": "ChIJDdy6PActDogRtHVYT64x2sY"
+  "placeId": "ChIJDdy6PActDogRtHVYT64x2sY",
+  "michelinId": "1179698",
+  "diets": [
+    "gluten-free"
+  ]
 }

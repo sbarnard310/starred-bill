@@ -15,5 +15,12 @@
   "website": "https://aubergedemontmin.com/",
   "lat": 45.8072811,
   "lng": 6.2486842,
-  "placeId": "ChIJSSMJ3rOVi0cRUbuXt4hykSs"
+  "placeId": "ChIJSSMJ3rOVi0cRUbuXt4hykSs",
+  "michelinId": "1185177",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Florian Favario",
+  "chefSource": "michelin"
 }

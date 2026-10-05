@@ -13,5 +13,11 @@
   "website": "https://www.mosconi.lu/",
   "lat": 49.6089647,
   "lng": 6.1358397,
-  "placeId": "ChIJp1DpaM1IlUcRjRysHYw1Nc0"
+  "placeId": "ChIJp1DpaM1IlUcRjRysHYw1Nc0",
+  "michelinId": "114770",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Ilario Mosconi",
+  "chefSource": "michelin"
 }

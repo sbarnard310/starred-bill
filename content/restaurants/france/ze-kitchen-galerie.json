@@ -25,5 +25,8 @@
   "website": "https://zekitchengalerie.fr/",
   "lat": 48.85513,
   "lng": 2.3412194,
-  "placeId": "ChIJGxxYC99x5kcRpd3qg8kfdgA"
+  "placeId": "ChIJGxxYC99x5kcRpd3qg8kfdgA",
+  "michelinId": "5954",
+  "chef": "William Ledeuil",
+  "chefSource": "michelin"
 }

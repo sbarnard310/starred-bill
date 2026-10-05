@@ -25,5 +25,8 @@
   "website": "https://cloudstreet.com.sg/",
   "lat": 1.280977,
   "lng": 103.84701,
-  "placeId": "ChIJox0yPU8Z2jERHKePRm932o0"
+  "placeId": "ChIJox0yPU8Z2jERHKePRm932o0",
+  "michelinId": "1190387",
+  "chef": "Rishi Naleendra",
+  "chefSource": "michelin"
 }

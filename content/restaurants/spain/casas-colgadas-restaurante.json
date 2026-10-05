@@ -13,5 +13,12 @@
   "website": "https://www.restaurantecasascolgadas.com",
   "lat": 40.077857,
   "lng": -2.1283593,
-  "placeId": "ChIJ3V0x8DlnXQ0RVz3AsXUBlmQ"
+  "placeId": "ChIJ3V0x8DlnXQ0RVz3AsXUBlmQ",
+  "michelinId": "1203462",
+  "diets": [
+    "halal",
+    "kosher"
+  ],
+  "chef": "Jesús Segura",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,13 @@
   "website": "https://stangl.ambi.cz/",
   "lat": 50.0914482,
   "lng": 14.4546772,
-  "placeId": "ChIJ_7EAWgGVC0cRCWr7pUQ4Y20"
+  "placeId": "ChIJ_7EAWgGVC0cRCWr7pUQ4Y20",
+  "michelinId": "1217876",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Martin Štangl",
+  "chefSource": "michelin"
 }

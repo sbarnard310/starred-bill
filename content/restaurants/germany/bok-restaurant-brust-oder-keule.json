@@ -13,5 +13,12 @@
   "website": "https://www.brustoderkeule.de/",
   "lat": 51.9719525,
   "lng": 7.6191805,
-  "placeId": "ChIJ1QpYrOy6uUcRoIvQKMk4I3M"
+  "placeId": "ChIJ1QpYrOy6uUcRoIvQKMk4I3M",
+  "michelinId": "274581",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Johannes Kemper",
+  "chefSource": "site"
 }

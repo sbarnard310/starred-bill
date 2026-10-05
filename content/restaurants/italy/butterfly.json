@@ -23,5 +23,12 @@
   "website": "https://www.ristorantebutterfly.it/",
   "lat": 43.894723,
   "lng": 10.536404,
-  "placeId": "ChIJj1hkPsOD1RIRNLtpCdQWpqM"
+  "placeId": "ChIJj1hkPsOD1RIRNLtpCdQWpqM",
+  "michelinId": "138694",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Fabrizio Girasoli and Andrea Girasoli",
+  "chefSource": "michelin"
 }

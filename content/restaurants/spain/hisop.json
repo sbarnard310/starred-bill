@@ -26,5 +26,15 @@
   "website": "https://www.hisop.com/",
   "lat": 41.394511,
   "lng": 2.148069,
-  "placeId": "ChIJx2nrT5yipBIRcT4_prXJJck"
+  "placeId": "ChIJx2nrT5yipBIRcT4_prXJJck",
+  "michelinId": "67967",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Oriol Ivern",
+  "chefSource": "michelin"
 }

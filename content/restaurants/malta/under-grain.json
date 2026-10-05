@@ -13,5 +13,12 @@
   "website": "https://grain.mt/",
   "lat": 35.8989233,
   "lng": 14.5154686,
-  "placeId": "ChIJW-Ys12FFDhMROe8MrYoMZPk"
+  "placeId": "ChIJW-Ys12FFDhMROe8MrYoMZPk",
+  "michelinId": "1189537",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Victor Borg",
+  "chefSource": "site"
 }

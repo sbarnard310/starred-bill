@@ -13,5 +13,11 @@
   "website": "https://www.colbo-restaurant.de/",
   "lat": 49.7831321,
   "lng": 9.1820607,
-  "placeId": "ChIJSzuCoVVRvUcRQ8HCryrRFSA"
+  "placeId": "ChIJSzuCoVVRvUcRQ8HCryrRFSA",
+  "michelinId": "1216734",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Moritz Techet",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.gric.si",
   "lat": 46.0283624,
   "lng": 14.2216299,
-  "placeId": "ChIJBbxNjT7aekcRgeMK695BU8Q"
+  "placeId": "ChIJBbxNjT7aekcRgeMK695BU8Q",
+  "michelinId": "1179791",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Luka Košir",
+  "chefSource": "michelin"
 }

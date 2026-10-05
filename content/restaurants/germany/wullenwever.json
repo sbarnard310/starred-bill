@@ -13,5 +13,12 @@
   "website": "https://www.wullenwever.de/",
   "lat": 53.8696544,
   "lng": 10.682255,
-  "placeId": "ChIJYWZOtVcJskcRiO1p7xL3UFM"
+  "placeId": "ChIJYWZOtVcJskcRiO1p7xL3UFM",
+  "michelinId": "75185",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Roy Petermann and Jean-Luc Petermann",
+  "chefSource": "michelin"
 }

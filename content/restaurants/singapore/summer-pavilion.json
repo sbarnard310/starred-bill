@@ -21,5 +21,11 @@
   "website": "https://www.summerpavilion.com.sg/",
   "lat": 1.291284,
   "lng": 103.8603,
-  "placeId": "ChIJhyAGsKkZ2jERMy2EGAnyv4k"
+  "placeId": "ChIJhyAGsKkZ2jERMy2EGAnyv4k",
+  "michelinId": "501659",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -15,5 +15,11 @@
   "website": "https://www.ombellule.fr/",
   "lat": 45.7687695,
   "lng": 4.8469216,
-  "placeId": "ChIJDxPX_EXr9EcRB0E5hiLKKtk"
+  "placeId": "ChIJDxPX_EXr9EcRB0E5hiLKKtk",
+  "michelinId": "1216851",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

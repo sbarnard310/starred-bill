@@ -31,5 +31,11 @@
   "website": "https://www.islares.restaurant/",
   "lat": 43.267142,
   "lng": -2.935332,
-  "placeId": "ChIJ8dkn475PTg0RId5X2UZIrEM"
+  "placeId": "ChIJ8dkn475PTg0RId5X2UZIrEM",
+  "michelinId": "1204750",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Julen Bergantiños",
+  "chefSource": "michelin"
 }

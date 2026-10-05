@@ -20,5 +20,13 @@
   "website": "https://olivetreebath.co.uk/",
   "lat": 51.387207,
   "lng": -2.36309,
-  "placeId": "ChIJTfaLXGuBcUgR1REyIkS4Z5I"
+  "placeId": "ChIJTfaLXGuBcUgR1REyIkS4Z5I",
+  "michelinId": "186456",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Chris Cleghorn",
+  "chefSource": "michelin"
 }

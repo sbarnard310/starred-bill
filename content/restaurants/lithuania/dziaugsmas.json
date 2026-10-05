@@ -13,5 +13,9 @@
   "website": "https://www.dziaugsmas.com/",
   "lat": 54.6829747,
   "lng": 25.2805396,
-  "placeId": "ChIJX5ha2xOU3UYRheGrhxlkZho"
+  "placeId": "ChIJX5ha2xOU3UYRheGrhxlkZho",
+  "michelinId": "1208989",
+  "diets": [
+    "vegetarian"
+  ]
 }

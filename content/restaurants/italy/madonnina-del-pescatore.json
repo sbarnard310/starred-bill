@@ -21,5 +21,14 @@
   "website": "https://www.morenocedroni.it/",
   "lat": 43.681562,
   "lng": 13.2803037,
-  "placeId": "ChIJcc9A7712LRMRWPJsgA0L2ZY"
+  "placeId": "ChIJcc9A7712LRMRWPJsgA0L2ZY",
+  "michelinId": "152555",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Moreno Cedroni",
+  "chefSource": "michelin"
 }

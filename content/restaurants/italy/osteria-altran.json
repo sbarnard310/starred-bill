@@ -13,5 +13,8 @@
   "website": "https://osteria-altran.eatbu.com",
   "lat": 45.8132892,
   "lng": 13.410651,
-  "placeId": "ChIJG7SlBbqle0cRrSNMbhhDZJE"
+  "placeId": "ChIJG7SlBbqle0cRrSNMbhhDZJE",
+  "michelinId": "150129",
+  "chef": "Alessio Devidè",
+  "chefSource": "michelin"
 }

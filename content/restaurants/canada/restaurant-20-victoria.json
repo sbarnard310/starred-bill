@@ -12,5 +12,12 @@
   "website": "https://www.exploretock.com/restaurant20victoria",
   "lat": 43.6498653,
   "lng": -79.3769956,
-  "placeId": "ChIJJYukdjfL1IkRmO6n1JfjfKU"
+  "placeId": "ChIJJYukdjfL1IkRmO6n1JfjfKU",
+  "michelinId": "1200378",
+  "diets": [
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Rafa Covarrubias",
+  "chefSource": "michelin"
 }

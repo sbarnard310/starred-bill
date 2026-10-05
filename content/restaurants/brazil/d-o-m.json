@@ -12,5 +12,14 @@
   "website": "https://www.domrestaurante.com.br/",
   "lat": -23.5661451,
   "lng": -46.667572,
-  "placeId": "ChIJ_Qdn5dZZzpQRWJ5lDWdVmSY"
+  "placeId": "ChIJ_Qdn5dZZzpQRWJ5lDWdVmSY",
+  "michelinId": "428596",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alex Atala",
+  "chefSource": "michelin"
 }

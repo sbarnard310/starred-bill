@@ -30,5 +30,11 @@
   "website": "https://www.ambroisie-paris.com/",
   "lat": 48.855494,
   "lng": 2.3645215,
-  "placeId": "ChIJK-TZ1v9x5kcRvQoSvNJ21Vo"
+  "placeId": "ChIJK-TZ1v9x5kcRvQoSvNJ21Vo",
+  "michelinId": "5821",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Shintaro Awa",
+  "chefSource": "michelin"
 }

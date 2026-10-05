@@ -13,5 +13,10 @@
   "website": "https://restaurantoeno.nl/",
   "lat": 51.5525395,
   "lng": 4.5917081,
-  "placeId": "ChIJe0UiHeIYxEcRyE6h5JrPYAs"
+  "placeId": "ChIJe0UiHeIYxEcRyE6h5JrPYAs",
+  "michelinId": "213024",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

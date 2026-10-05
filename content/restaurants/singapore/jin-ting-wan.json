@@ -28,5 +28,11 @@
   "website": "https://www.marinabaysands.com/restaurants/jin-ting-wan.html",
   "lat": 1.282322,
   "lng": 103.858496,
-  "placeId": "ChIJNRyXogUZ2jER6TJqkgATJmM"
+  "placeId": "ChIJNRyXogUZ2jER6TJqkgATJmM",
+  "michelinId": "1245415",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Albert Li",
+  "chefSource": "michelin"
 }

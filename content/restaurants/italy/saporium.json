@@ -25,5 +25,14 @@
   "website": "https://www.saporium.com/it/borgo-santo.pietro/",
   "lat": 43.141436,
   "lng": 11.127872,
-  "placeId": "ChIJvXhFzhqPKRMRB8_KT8z-dMs"
+  "placeId": "ChIJvXhFzhqPKRMRB8_KT8z-dMs",
+  "michelinId": "367722",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Ariel Hagen",
+  "chefSource": "michelin"
 }

@@ -19,5 +19,8 @@
   "website": "https://masa-frankfurt.de",
   "lat": 50.1119257,
   "lng": 8.7129018,
-  "placeId": "ChIJE_1UJMsPvUcRRBx0yi9ATA8"
+  "placeId": "ChIJE_1UJMsPvUcRRBx0yi9ATA8",
+  "michelinId": "1196872",
+  "chef": "Masaru Oae",
+  "chefSource": "michelin"
 }

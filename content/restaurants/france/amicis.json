@@ -21,5 +21,13 @@
   "website": "https://www.restaurant-amicis.fr/",
   "lat": 44.8436643,
   "lng": -0.5772326,
-  "placeId": "ChIJxf9BWQAnVQ0RgotSBym_ZvA"
+  "placeId": "ChIJxf9BWQAnVQ0RgotSBym_ZvA",
+  "michelinId": "1214338",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alexandre Baumard",
+  "chefSource": "michelin"
 }

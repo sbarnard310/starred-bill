@@ -13,5 +13,11 @@
   "website": "https://www.ferrari.com/en-EN/ristorante-cavallino",
   "lat": 44.5300002,
   "lng": 10.8650464,
-  "placeId": "ChIJDcJQWafjf0cR2gLItJnQmMw"
+  "placeId": "ChIJDcJQWafjf0cR2gLItJnQmMw",
+  "michelinId": "1195788",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

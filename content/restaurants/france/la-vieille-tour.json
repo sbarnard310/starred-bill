@@ -23,5 +23,11 @@
   "website": "https://www.la-vieille-tour.com",
   "lat": 48.5307941,
   "lng": -2.7261477,
-  "placeId": "ChIJyRLy7zMDDkgRqEcLdHdr8gY"
+  "placeId": "ChIJyRLy7zMDDkgRqEcLdHdr8gY",
+  "michelinId": "7741",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nicolas Adam",
+  "chefSource": "michelin"
 }

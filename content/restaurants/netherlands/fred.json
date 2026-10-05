@@ -12,5 +12,15 @@
   "website": "https://www.restaurantfred.nl/",
   "lat": 51.9162159,
   "lng": 4.489421,
-  "placeId": "ChIJabXGIiMzxEcRyThdVxlYIhA"
+  "placeId": "ChIJabXGIiMzxEcRyThdVxlYIhA",
+  "michelinId": "233128",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Fred Mustert",
+  "chefSource": "michelin"
 }

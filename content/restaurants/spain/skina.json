@@ -13,5 +13,8 @@
   "website": "https://www.restauranteskina.com/",
   "lat": 36.5116735,
   "lng": -4.9012506,
-  "placeId": "ChIJ-Q9epwfYcg0RaTPKmHo19EI"
+  "placeId": "ChIJ-Q9epwfYcg0RaTPKmHo19EI",
+  "michelinId": "221482",
+  "chef": "Mario Cachinero",
+  "chefSource": "michelin"
 }

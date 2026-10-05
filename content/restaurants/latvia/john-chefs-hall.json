@@ -15,5 +15,12 @@
   "website": "https://jch.johnrestaurant.com/eng",
   "lat": 56.9624805,
   "lng": 24.1006105,
-  "placeId": "ChIJg7zRrmXP7kYRlKI2O3WBrmQ"
+  "placeId": "ChIJg7zRrmXP7kYRlKI2O3WBrmQ",
+  "michelinId": "1215546",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Kristaps Silis",
+  "chefSource": "site"
 }

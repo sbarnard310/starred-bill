@@ -24,5 +24,11 @@
   "website": "https://www.racines-restaurant.fr/",
   "lat": 48.1069922,
   "lng": -1.6828172,
-  "placeId": "ChIJ4V5-o9LfDkgReY326j7kMgc"
+  "placeId": "ChIJ4V5-o9LfDkgReY326j7kMgc",
+  "michelinId": "542026",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Virginie Giboire",
+  "chefSource": "michelin"
 }

@@ -14,5 +14,10 @@
   "website": "https://giardinohotels.ch/",
   "lat": 46.4776485,
   "lng": 9.8109132,
-  "placeId": "ChIJ79yAE4h_g0cRfCvQaP29oyY"
+  "placeId": "ChIJ79yAE4h_g0cRfCvQaP29oyY",
+  "michelinId": "184602",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

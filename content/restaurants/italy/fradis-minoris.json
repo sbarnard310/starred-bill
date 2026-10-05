@@ -13,5 +13,14 @@
   "website": "https://www.fradisminoris.it",
   "lat": 38.9867335,
   "lng": 9.0067135,
-  "placeId": "ChIJ37mrbeQn5xIRPB0SOKNX1Nw"
+  "placeId": "ChIJ37mrbeQn5xIRPB0SOKNX1Nw",
+  "michelinId": "500275",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Francesco Stara",
+  "chefSource": "michelin"
 }

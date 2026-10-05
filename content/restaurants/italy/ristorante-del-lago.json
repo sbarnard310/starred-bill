@@ -15,5 +15,10 @@
   "website": "https://www.ristorantedellagoacquapartita.it/",
   "lat": 43.86577,
   "lng": 12.027197,
-  "placeId": "ChIJd1y9i0d8KxMRHGJ4txMQgRE"
+  "placeId": "ChIJd1y9i0d8KxMRHGJ4txMQgRE",
+  "michelinId": "391105",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

@@ -13,5 +13,13 @@
   "website": "https://tilia.bz/",
   "lat": 46.7236326,
   "lng": 12.2241114,
-  "placeId": "ChIJcZ38Mo0reEcRbzSgAxGItsg"
+  "placeId": "ChIJcZ38Mo0reEcRbzSgAxGItsg",
+  "michelinId": "305044",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Chris Oberhammer",
+  "chefSource": "michelin"
 }

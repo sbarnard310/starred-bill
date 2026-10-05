@@ -13,5 +13,10 @@
   "website": "https://entree-restaurant.cz/",
   "lat": 49.589751,
   "lng": 17.2870542,
-  "placeId": "ChIJT_yxwitMEkcR_gsPCUbZ_a8"
+  "placeId": "ChIJT_yxwitMEkcR_gsPCUbZ_a8",
+  "michelinId": "1211412",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -15,5 +15,9 @@
   "website": "https://www.lestempliers.com",
   "lat": 47.80058,
   "lng": 2.7394904,
-  "placeId": "ChIJQaQRdhSK70cRuo_7xYActOs"
+  "placeId": "ChIJQaQRdhSK70cRuo_7xYActOs",
+  "michelinId": "10282",
+  "diets": [
+    "vegetarian"
+  ]
 }

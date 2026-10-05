@@ -23,5 +23,9 @@
   "website": "https://www.lamecaniquedesfreresbonano.fr/",
   "lat": 43.5783695,
   "lng": 3.0232386,
-  "placeId": "ChIJhQLpp5icsRIRi7h2mgYWm9c"
+  "placeId": "ChIJhQLpp5icsRIRi7h2mgYWm9c",
+  "michelinId": "540682",
+  "diets": [
+    "vegetarian"
+  ]
 }

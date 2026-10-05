@@ -13,5 +13,9 @@
   "website": "https://www.essenciel.be/",
   "lat": 50.8805967,
   "lng": 4.711476,
-  "placeId": "ChIJjRoSkNdgwUcRYrG2-h0eCWI"
+  "placeId": "ChIJjRoSkNdgwUcRYrG2-h0eCWI",
+  "michelinId": "1181344",
+  "diets": [
+    "vegetarian"
+  ]
 }

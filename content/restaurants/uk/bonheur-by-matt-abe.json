@@ -23,5 +23,11 @@
   "website": "https://www.bonheurbymattabe.com/",
   "lat": 51.5112593,
   "lng": -0.155109,
-  "placeId": "ChIJmx5ydgAFdkgRr871ONe-sks"
+  "placeId": "ChIJmx5ydgAFdkgRr871ONe-sks",
+  "michelinId": "1242773",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Matt Abé",
+  "chefSource": "michelin"
 }

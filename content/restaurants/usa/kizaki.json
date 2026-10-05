@@ -14,5 +14,11 @@
   "website": "https://kizakiden.com/",
   "lat": 39.6883588,
   "lng": -104.9804798,
-  "placeId": "ChIJT6LLNQB_bIcRFlId0L9BFOM"
+  "placeId": "ChIJT6LLNQB_bIcRFlId0L9BFOM",
+  "michelinId": "1241644",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Toshi Kizaki",
+  "chefSource": "michelin"
 }

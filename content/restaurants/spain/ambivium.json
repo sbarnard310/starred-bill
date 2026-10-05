@@ -13,5 +13,12 @@
   "website": "https://www.restauranteambivium.com/",
   "lat": 41.5946148,
   "lng": -4.0875496,
-  "placeId": "ChIJ5V5_NULrRg0RnMryopZ3LUI"
+  "placeId": "ChIJ5V5_NULrRg0RnMryopZ3LUI",
+  "michelinId": "532964",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Cristobal Muñoz",
+  "chefSource": "michelin"
 }

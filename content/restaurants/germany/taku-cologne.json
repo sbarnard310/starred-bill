@@ -12,5 +12,12 @@
   "website": "https://www.taku.de",
   "lat": 50.9417798,
   "lng": 6.9563194,
-  "placeId": "ChIJMci7QqUlv0cRwtkkg_Y7M0k"
+  "placeId": "ChIJMci7QqUlv0cRwtkkg_Y7M0k",
+  "michelinId": "74566",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Mirko Gaul",
+  "chefSource": "michelin"
 }

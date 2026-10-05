@@ -12,5 +12,10 @@
   "website": "https://www.restaurant-molina.com/",
   "lat": 3.1587347,
   "lng": 101.7041242,
-  "placeId": "ChIJwSUnAEVJzDERpJVtwKxn0Sk"
+  "placeId": "ChIJwSUnAEVJzDERpJVtwKxn0Sk",
+  "michelinId": "1214944",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

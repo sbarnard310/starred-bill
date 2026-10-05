@@ -12,5 +12,11 @@
   "website": "https://restaurant-haerlin.de/de/",
   "lat": 53.5554424,
   "lng": 9.9914638,
-  "placeId": "ChIJXetoHRmPsUcRO9lASc7qR3U"
+  "placeId": "ChIJXetoHRmPsUcRO9lASc7qR3U",
+  "michelinId": "73514",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christoph Rüffer",
+  "chefSource": "michelin"
 }

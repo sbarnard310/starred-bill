@@ -19,5 +19,11 @@
   "website": "https://janonline.com/fr/restaurantjan/",
   "lat": 43.6998945,
   "lng": 7.2848004,
-  "placeId": "ChIJ7cguWLjazRIR0sVOtnZhvUM"
+  "placeId": "ChIJ7cguWLjazRIR0sVOtnZhvUM",
+  "michelinId": "437448",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Jan Hendrik van der Westhuizen",
+  "chefSource": "michelin"
 }

@@ -33,5 +33,12 @@
   "website": "https://www.enigmaconcept.es/",
   "lat": 41.376873,
   "lng": 2.15418,
-  "placeId": "ChIJA6vUunyipBIRMtoRD_vIbII"
+  "placeId": "ChIJA6vUunyipBIRMtoRD_vIbII",
+  "michelinId": "530167",
+  "diets": [
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Albert Adrià",
+  "chefSource": "michelin"
 }

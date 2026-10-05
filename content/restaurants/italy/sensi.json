@@ -13,5 +13,14 @@
   "website": "https://sensiamalfi.it/",
   "lat": 40.6339198,
   "lng": 14.6030985,
-  "placeId": "ChIJrdEO1q2VOxMR7tVFwKbxa9M"
+  "placeId": "ChIJrdEO1q2VOxMR7tVFwKbxa9M",
+  "michelinId": "536205",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alessandro Tormolino",
+  "chefSource": "site"
 }

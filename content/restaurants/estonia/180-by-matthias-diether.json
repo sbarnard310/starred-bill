@@ -15,5 +15,11 @@
   "website": "https://www.180degrees.ee/",
   "lat": 59.4520952,
   "lng": 24.7289707,
-  "placeId": "ChIJXcD9802TkkYRpmWn9kmmJZ8"
+  "placeId": "ChIJXcD9802TkkYRpmWn9kmmJZ8",
+  "michelinId": "1198972",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

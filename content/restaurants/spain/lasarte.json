@@ -26,5 +26,8 @@
   "website": "https://www.restaurantlasarte.com/",
   "lat": 41.393628,
   "lng": 2.162202,
-  "placeId": "ChIJ06Abq5OipBIRAAbiw3cStt8"
+  "placeId": "ChIJ06Abq5OipBIRAAbiw3cStt8",
+  "michelinId": "173843",
+  "chef": "Paolo Casagrande",
+  "chefSource": "site"
 }

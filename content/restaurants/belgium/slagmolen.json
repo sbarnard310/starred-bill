@@ -16,5 +16,11 @@
   "website": "https://www.slagmolen.be/",
   "lat": 51.0432542,
   "lng": 5.6155142,
-  "placeId": "ChIJfVlhtIHawEcRruVOXIWaMH4"
+  "placeId": "ChIJfVlhtIHawEcRruVOXIWaMH4",
+  "michelinId": "210264",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Bert Meewis and Giel Meewis",
+  "chefSource": "site"
 }

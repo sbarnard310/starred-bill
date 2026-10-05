@@ -16,5 +16,13 @@
   "website": "https://restaurant-rosmarin.ch/",
   "lat": 47.3876095,
   "lng": 8.1808479,
-  "placeId": "ChIJaxW7iAwWkEcRmUlyuaBoXL8"
+  "placeId": "ChIJaxW7iAwWkEcRmUlyuaBoXL8",
+  "michelinId": "1207137",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Philipp Audolensky",
+  "chefSource": "michelin"
 }

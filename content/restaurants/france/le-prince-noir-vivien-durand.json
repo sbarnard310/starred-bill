@@ -24,5 +24,12 @@
   "website": "https://www.leprincenoir-restaurant.com",
   "lat": 44.8779637,
   "lng": -0.5291046,
-  "placeId": "ChIJTfkoVIpOVEARH8CxwqpWPvA"
+  "placeId": "ChIJTfkoVIpOVEARH8CxwqpWPvA",
+  "michelinId": "185578",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Vivien Durand",
+  "chefSource": "michelin"
 }

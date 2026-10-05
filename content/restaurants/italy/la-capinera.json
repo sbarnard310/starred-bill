@@ -12,5 +12,13 @@
   "website": "https://www.pietrodagostino.it/",
   "lat": 37.863136,
   "lng": 15.295927,
-  "placeId": "ChIJWYWZKHQRFBMRryMGBl2GEg4"
+  "placeId": "ChIJWYWZKHQRFBMRryMGBl2GEg4",
+  "michelinId": "167020",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Pietro D'Agostino",
+  "chefSource": "site"
 }

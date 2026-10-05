@@ -12,5 +12,13 @@
   "website": "https://www.oteque.com/",
   "lat": -22.95747,
   "lng": -43.194424,
-  "placeId": "ChIJd30eZgB_mQAR-KdRFwN99rE"
+  "placeId": "ChIJd30eZgB_mQAR-KdRFwN99rE",
+  "michelinId": "540343",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ],
+  "chef": "Alberto Landgraf",
+  "chefSource": "michelin"
 }

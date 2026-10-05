@@ -20,5 +20,10 @@
   "website": "https://www.thecloveclub.com/",
   "lat": 51.5271054,
   "lng": -0.0793371,
-  "placeId": "ChIJkbGoX7ocdkgRgfrpjeC7xzM"
+  "placeId": "ChIJkbGoX7ocdkgRgfrpjeC7xzM",
+  "michelinId": "401807",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

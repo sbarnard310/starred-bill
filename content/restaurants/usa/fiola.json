@@ -18,5 +18,12 @@
   "website": "https://www.fioladc.com/",
   "lat": 38.89283,
   "lng": -77.01991,
-  "placeId": "ChIJJT16aoW3t4kRuvr4twwPMFY"
+  "placeId": "ChIJJT16aoW3t4kRuvr4twwPMFY",
+  "michelinId": "499539",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Antonio Mermolia",
+  "chefSource": "site"
 }

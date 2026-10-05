@@ -24,5 +24,10 @@
   "website": "https://anglothai.co.uk/",
   "lat": 51.515139,
   "lng": -0.161181,
-  "placeId": "ChIJf1zYBOYbdkgRpisa6lDN5es"
+  "placeId": "ChIJf1zYBOYbdkgRpisa6lDN5es",
+  "michelinId": "1216638",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

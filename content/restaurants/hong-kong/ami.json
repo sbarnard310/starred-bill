@@ -29,5 +29,12 @@
   "website": "https://www.ami-woodear.hk/",
   "lat": 22.2818112,
   "lng": 114.1594529,
-  "placeId": "ChIJR7jMGe0BBDQRasBaiTh6uhs"
+  "placeId": "ChIJR7jMGe0BBDQRasBaiTh6uhs",
+  "michelinId": "1197938",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Nicolas Boutin",
+  "chefSource": "site"
 }

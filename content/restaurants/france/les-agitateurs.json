@@ -21,5 +21,12 @@
   "website": "https://lesagitateurs.com/",
   "lat": 43.7005783,
   "lng": 7.2843229,
-  "placeId": "ChIJk76xaCnbzRIRZRqji8u5qxc"
+  "placeId": "ChIJk76xaCnbzRIRZRqji8u5qxc",
+  "michelinId": "1024410",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Samuel Victori",
+  "chefSource": "michelin"
 }

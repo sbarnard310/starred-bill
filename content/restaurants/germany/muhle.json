@@ -13,5 +13,11 @@
   "website": "https://www.muehle-schluchsee.de/",
   "lat": 47.8209966,
   "lng": 8.1899382,
-  "placeId": "ChIJQRbP-db1kEcRSd-eeLHLQN0"
+  "placeId": "ChIJQRbP-db1kEcRSd-eeLHLQN0",
+  "michelinId": "1195341",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Fabian Obergfell",
+  "chefSource": "michelin"
 }

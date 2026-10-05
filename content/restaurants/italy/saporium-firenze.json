@@ -24,5 +24,14 @@
   "website": "https://www.saporium.com/it/firenze/",
   "lat": 43.7646,
   "lng": 11.265986,
-  "placeId": "ChIJ65G8pvdTKhMR0GWt3eTB5To"
+  "placeId": "ChIJ65G8pvdTKhMR0GWt3eTB5To",
+  "michelinId": "462528",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Ariel Hagen",
+  "chefSource": "michelin"
 }

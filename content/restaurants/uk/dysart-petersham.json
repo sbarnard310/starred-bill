@@ -21,5 +21,13 @@
   "website": "https://www.thedysartpetersham.co.uk/",
   "lat": 51.4464604,
   "lng": -0.3001695,
-  "placeId": "ChIJDauqLMw0cEERuqNQ5irvxGk"
+  "placeId": "ChIJDauqLMw0cEERuqNQ5irvxGk",
+  "michelinId": "395639",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Kenneth Culhane",
+  "chefSource": "site"
 }

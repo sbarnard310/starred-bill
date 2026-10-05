@@ -24,5 +24,12 @@
   "website": "https://lagarde.com.ar/zonda/",
   "lat": -33.0238354,
   "lng": -68.8723795,
-  "placeId": "ChIJRbFYF3B1fpYRgCdVcxlERTI"
+  "placeId": "ChIJRbFYF3B1fpYRgCdVcxlERTI",
+  "michelinId": "1207155",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Augusto García",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,10 @@
   "website": "https://www.thesamlinghotel.co.uk/",
   "lat": 54.414764,
   "lng": -2.951172,
-  "placeId": "ChIJQ1DQStnqfEgRUVt32byIgMo"
+  "placeId": "ChIJQ1DQStnqfEgRUVt32byIgMo",
+  "michelinId": "192344",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

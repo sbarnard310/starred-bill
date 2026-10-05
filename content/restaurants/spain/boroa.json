@@ -27,5 +27,10 @@
   "website": "https://www.boroa.com/",
   "lat": 43.235298,
   "lng": -2.759852,
-  "placeId": "ChIJNY2wEqQ2Tg0RqBK4ECQ5xjo"
+  "placeId": "ChIJNY2wEqQ2Tg0RqBK4ECQ5xjo",
+  "michelinId": "217545",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -24,5 +24,8 @@
   "website": "https://quiratrestaurant.com/",
   "lat": 41.372924,
   "lng": 2.154929,
-  "placeId": "ChIJcWTe2S2jpBIRJuBzwStkSGI"
+  "placeId": "ChIJcWTe2S2jpBIRJuBzwStkSGI",
+  "michelinId": "1196989",
+  "chef": "Víctor Torres",
+  "chefSource": "michelin"
 }

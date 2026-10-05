@@ -13,5 +13,12 @@
   "website": "https://www.gasthaus-thaller.at/",
   "lat": 46.7466243,
   "lng": 15.6256799,
-  "placeId": "ChIJGT_XlxWhb0cRgjz_P6HkInA"
+  "placeId": "ChIJGT_XlxWhb0cRgjz_P6HkInA",
+  "michelinId": "105868",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Norbert Thaller",
+  "chefSource": "michelin"
 }

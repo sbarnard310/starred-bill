@@ -15,5 +15,12 @@
   "website": "https://www.steinheuers.de/steinheuers-restaurant/",
   "lat": 50.5511373,
   "lng": 7.164113,
-  "placeId": "ChIJXYG8TgD7vkcRWs3EbgvnzP8"
+  "placeId": "ChIJXYG8TgD7vkcRWs3EbgvnzP8",
+  "michelinId": "75934",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christian Binder",
+  "chefSource": "michelin"
 }

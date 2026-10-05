@@ -23,5 +23,11 @@
   "website": "https://maisonmedard.com",
   "lat": 47.4240084,
   "lng": 2.8743311,
-  "placeId": "ChIJW1zHQ73i70cR6N5ROUm3dlI"
+  "placeId": "ChIJW1zHQ73i70cR6N5ROUm3dlI",
+  "michelinId": "488259",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Julien Medard",
+  "chefSource": "michelin"
 }

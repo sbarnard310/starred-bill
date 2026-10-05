@@ -24,5 +24,12 @@
   "website": "https://www.shilla.net/seoul/index.do",
   "lat": 37.555813,
   "lng": 127.00517,
-  "placeId": "ChIJf8Lq1wSjfDURbuyVUM14Svc"
+  "placeId": "ChIJf8Lq1wSjfDURbuyVUM14Svc",
+  "michelinId": "511973",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

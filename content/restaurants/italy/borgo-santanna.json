@@ -13,5 +13,13 @@
   "website": "https://www.borgosantanna.it/",
   "lat": 44.577783,
   "lng": 7.9950812,
-  "placeId": "ChIJPQogVq6x0hIRnnBrzXrGqPQ"
+  "placeId": "ChIJPQogVq6x0hIRnnBrzXrGqPQ",
+  "michelinId": "1186560",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Pasquale Laera",
+  "chefSource": "michelin"
 }

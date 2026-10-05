@@ -16,5 +16,12 @@
   "website": "https://www.ristorantecasabertini.it",
   "lat": 43.4061444,
   "lng": 13.5381739,
-  "placeId": "ChIJORP76F6JLRMRrH6GIauhb6U"
+  "placeId": "ChIJORP76F6JLRMRrH6GIauhb6U",
+  "michelinId": "1202972",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Andrea Bertini",
+  "chefSource": "michelin"
 }

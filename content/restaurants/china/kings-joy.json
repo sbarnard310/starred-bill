@@ -12,5 +12,14 @@
   "website": "https://www.kingsjoy.com",
   "lat": 39.946681,
   "lng": 116.410004,
-  "placeId": "ChIJfboVgUtT8DUR_jT_hhMVPQA"
+  "placeId": "ChIJfboVgUtT8DUR_jT_hhMVPQA",
+  "michelinId": "1186733",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Gary Yin",
+  "chefSource": "michelin"
 }

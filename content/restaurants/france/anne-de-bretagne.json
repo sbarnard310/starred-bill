@@ -15,5 +15,11 @@
   "website": "https://www.annedebretagne.com",
   "lat": 47.1547821,
   "lng": -2.2133811,
-  "placeId": "ChIJCzCL8WFsBUgRQpVeWONFLTQ"
+  "placeId": "ChIJCzCL8WFsBUgRQpVeWONFLTQ",
+  "michelinId": "12407",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Mathieu Guibert",
+  "chefSource": "michelin"
 }

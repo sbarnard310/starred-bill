@@ -13,5 +13,9 @@
   "website": "https://www.restaurant-philipp.de/",
   "lat": 49.7056147,
   "lng": 10.0242588,
-  "placeId": "ChIJGRhUiSqEokcRKwm7vzLfqHw"
+  "placeId": "ChIJGRhUiSqEokcRKwm7vzLfqHw",
+  "michelinId": "76346",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -20,5 +20,14 @@
   "website": "https://opheem.com/",
   "lat": 52.48163,
   "lng": -1.907733,
-  "placeId": "ChIJnbHPM2u9cEgR6QBpYYNMxAE"
+  "placeId": "ChIJnbHPM2u9cEgR6QBpYYNMxAE",
+  "michelinId": "556316",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Aktar Islam",
+  "chefSource": "michelin"
 }

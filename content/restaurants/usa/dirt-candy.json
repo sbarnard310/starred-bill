@@ -18,5 +18,14 @@
   "website": "https://www.dirtcandynyc.com/",
   "lat": 40.71794,
   "lng": -73.99087,
-  "placeId": "ChIJBXlte51ZwokRXzXtdaBG9xM"
+  "placeId": "ChIJBXlte51ZwokRXzXtdaBG9xM",
+  "michelinId": "472167",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Amanda Cohen",
+  "chefSource": "michelin"
 }

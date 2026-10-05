@@ -22,5 +22,9 @@
   "website": "https://www.jojiny.com/",
   "lat": 40.753263,
   "lng": -73.978345,
-  "placeId": "ChIJBchQ93pZwokR5AtYEzo6p1o"
+  "placeId": "ChIJBchQ93pZwokR5AtYEzo6p1o",
+  "michelinId": "1204329",
+  "diets": [
+    "kosher"
+  ]
 }

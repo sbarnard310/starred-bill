@@ -12,5 +12,12 @@
   "website": "https://oxundklee.de/",
   "lat": 50.9272801,
   "lng": 6.9658846,
-  "placeId": "ChIJzWH7uAMlv0cRNKQei9KMIvg"
+  "placeId": "ChIJzWH7uAMlv0cRNKQei9KMIvg",
+  "michelinId": "506838",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Daniel Gottschlich",
+  "chefSource": "michelin"
 }

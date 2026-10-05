@@ -14,5 +14,9 @@
   "website": "https://www.restaurantdemo.fi/",
   "lat": 60.163377,
   "lng": 24.9070483,
-  "placeId": "ChIJ-cwofMkLkkYRBipdZNu328c"
+  "placeId": "ChIJ-cwofMkLkkYRBipdZNu328c",
+  "michelinId": "119682",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -8,5 +8,13 @@
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
   "lat": 31.2249544,
-  "lng": 121.4428282
+  "lng": 121.4428282,
+  "michelinId": "1245176",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Zhou Xiaoyan",
+  "chefSource": "michelin"
 }

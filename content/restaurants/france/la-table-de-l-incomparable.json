@@ -15,5 +15,9 @@
   "website": "https://hotel-lincomparable.com/",
   "lat": 45.6710414,
   "lng": 5.8996575,
-  "placeId": "ChIJlQmQ9vSni0cRdg_UQ0O1_ww"
+  "placeId": "ChIJlQmQ9vSni0cRdg_UQ0O1_ww",
+  "michelinId": "1192210",
+  "diets": [
+    "vegetarian"
+  ]
 }

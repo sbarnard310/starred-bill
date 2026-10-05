@@ -15,5 +15,11 @@
   "website": "https://www.lecercleguiraud.com/",
   "lat": 44.5330491,
   "lng": -0.3425195,
-  "placeId": "ChIJmdAFJJkNVQ0RxSSnnnQ-M44"
+  "placeId": "ChIJmdAFJJkNVQ0RxSSnnnQ-M44",
+  "michelinId": "1209912",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Yoann Amado",
+  "chefSource": "michelin"
 }

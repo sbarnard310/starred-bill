@@ -13,5 +13,8 @@
   "website": "https://ristorante.ilnazionale.com/",
   "lat": 44.2439086,
   "lng": 7.5334613,
-  "placeId": "ChIJWyLeEV1xzRIRSG5PlgGcfMI"
+  "placeId": "ChIJWyLeEV1xzRIRSG5PlgGcfMI",
+  "michelinId": "157003",
+  "chef": "Fabio Ingallinera",
+  "chefSource": "site"
 }

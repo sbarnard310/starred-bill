@@ -15,5 +15,12 @@
   "website": "https://www.alexandre-mazzia.com/",
   "lat": 43.2701104,
   "lng": 5.3862325,
-  "placeId": "ChIJ2VJHkVrHyRIRilr7mWdCXFk"
+  "placeId": "ChIJ2VJHkVrHyRIRilr7mWdCXFk",
+  "michelinId": "444625",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ]
 }

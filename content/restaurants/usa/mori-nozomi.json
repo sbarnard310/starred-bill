@@ -21,5 +21,8 @@
   "website": "https://www.morinozomi.com/",
   "lat": 34.033698,
   "lng": -118.441796,
-  "placeId": "ChIJh_EchAm7woAR_M_f_w6W50c"
+  "placeId": "ChIJh_EchAm7woAR_M_f_w6W50c",
+  "michelinId": "1217966",
+  "chef": "Nozomi Mori",
+  "chefSource": "michelin"
 }

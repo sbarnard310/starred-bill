@@ -13,5 +13,8 @@
   "website": "https://christianandfriends.de/",
   "lat": 50.5523614,
   "lng": 9.676736,
-  "placeId": "ChIJ_XFGep42o0cRp4KK1pR0AzI"
+  "placeId": "ChIJ_XFGep42o0cRp4KK1pR0AzI",
+  "michelinId": "484021",
+  "chef": "Christian Steska and Jansen Schouten",
+  "chefSource": "michelin"
 }

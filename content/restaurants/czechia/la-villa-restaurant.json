@@ -13,5 +13,10 @@
   "website": "https://www.lavilla.cz/",
   "lat": 49.2375653,
   "lng": 17.6536869,
-  "placeId": "ChIJO6In91YLE0cRuhmajfjdvt8"
+  "placeId": "ChIJO6In91YLE0cRuhmajfjdvt8",
+  "michelinId": "1211435",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

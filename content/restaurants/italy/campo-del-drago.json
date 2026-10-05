@@ -24,5 +24,11 @@
   "website": "https://www.rosewoodhotels.com/it/castiglion-del-bosco/dining/ristorante-campo-del-drago",
   "lat": 43.083683,
   "lng": 11.422118,
-  "placeId": "ChIJb_6pejB5KRMR3OZxmmD_1tQ"
+  "placeId": "ChIJb_6pejB5KRMR3OZxmmD_1tQ",
+  "michelinId": "365786",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Matteo Temperini",
+  "chefSource": "michelin"
 }

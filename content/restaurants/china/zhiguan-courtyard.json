@@ -11,5 +11,10 @@
   "sourceType": "none",
   "lat": 39.9139472,
   "lng": 116.4089588,
-  "placeId": "ChIJ0wbtc9JS8DUR8_ppu-ionek"
+  "placeId": "ChIJ0wbtc9JS8DUR8_ppu-ionek",
+  "michelinId": "1186823",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

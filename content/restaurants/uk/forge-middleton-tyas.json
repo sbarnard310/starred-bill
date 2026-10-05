@@ -20,5 +20,13 @@
   "website": "https://middletonlodge.co.uk/eat/forge/",
   "lat": 54.458091,
   "lng": -1.660081,
-  "placeId": "ChIJ7T57fayffkgRmWb8VkeBZuM"
+  "placeId": "ChIJ7T57fayffkgRmWb8VkeBZuM",
+  "michelinId": "1190154",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jake Jones",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,11 @@
   "website": "https://www.theledbury.com/",
   "lat": 51.5166662,
   "lng": -0.2000272,
-  "placeId": "ChIJe29QNB0QdkgR5Kkx_0-jdo4"
+  "placeId": "ChIJe29QNB0QdkgR5Kkx_0-jdo4",
+  "michelinId": "120052",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Brett Graham",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,11 @@
   "website": "https://hub-praga.pl/",
   "lat": 52.2512002,
   "lng": 21.035961,
-  "placeId": "ChIJbW87lUrNHkcRGVFtjBJ8aYw"
+  "placeId": "ChIJbW87lUrNHkcRGVFtjBJ8aYw",
+  "michelinId": "1204297",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Witek Iwański",
+  "chefSource": "michelin"
 }

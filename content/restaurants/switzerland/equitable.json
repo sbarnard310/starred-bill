@@ -15,5 +15,11 @@
   "website": "https://www.equi-table.ch/",
   "lat": 47.3778541,
   "lng": 8.5212339,
-  "placeId": "ChIJHYncIBgKkEcRYw8pOjUBaO0"
+  "placeId": "ChIJHYncIBgKkEcRYw8pOjUBaO0",
+  "michelinId": "196006",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Julian Martin",
+  "chefSource": "michelin"
 }

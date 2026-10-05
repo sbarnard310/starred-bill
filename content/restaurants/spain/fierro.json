@@ -12,5 +12,10 @@
   "website": "https://fierrovlc.com/",
   "lat": 39.4625709,
   "lng": -0.3726653,
-  "placeId": "ChIJbZ_iActIYA0R3g-kBk3ytLU"
+  "placeId": "ChIJbZ_iActIYA0R3g-kBk3ytLU",
+  "michelinId": "555504",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

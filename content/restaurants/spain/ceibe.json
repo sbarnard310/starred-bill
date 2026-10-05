@@ -13,5 +13,9 @@
   "website": "https://ceiberestaurante.es/",
   "lat": 42.3377294,
   "lng": -7.8637958,
-  "placeId": "ChIJL9-m9Ir_Lw0RVh139VZWQrs"
+  "placeId": "ChIJL9-m9Ir_Lw0RVh139VZWQrs",
+  "michelinId": "1194339",
+  "diets": [
+    "gluten-free"
+  ]
 }

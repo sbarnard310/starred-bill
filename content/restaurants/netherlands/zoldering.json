@@ -12,5 +12,12 @@
   "website": "https://www.zoldering.nl/",
   "lat": 52.361354,
   "lng": 4.8993625,
-  "placeId": "ChIJ-7KWKfIJxkcRjSc9EMSbNOQ"
+  "placeId": "ChIJ-7KWKfIJxkcRjSc9EMSbNOQ",
+  "michelinId": "1184006",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Tomas Bron",
+  "chefSource": "michelin"
 }

@@ -22,5 +22,13 @@
   "website": "https://www.reflet-obione.com",
   "lat": 43.6122303,
   "lng": 3.8730671,
-  "placeId": "ChIJufchzNSvthIRRb9n9K_MKoY"
+  "placeId": "ChIJufchzNSvthIRRb9n9K_MKoY",
+  "michelinId": "1186512",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Laurent Cherchi",
+  "chefSource": "michelin"
 }

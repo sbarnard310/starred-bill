@@ -12,5 +12,8 @@
   "website": "https://upstairssgn.com/home/en",
   "lat": 10.8044888,
   "lng": 106.7291323,
-  "placeId": "ChIJByyUIwAndTER2dEEgRtcHxM"
+  "placeId": "ChIJByyUIwAndTER2dEEgRtcHxM",
+  "michelinId": "1245586",
+  "chef": "Hiep Truong",
+  "chefSource": "michelin"
 }

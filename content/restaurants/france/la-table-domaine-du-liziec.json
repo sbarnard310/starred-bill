@@ -27,5 +27,12 @@
   "website": "https://ledomaineduliziec.com",
   "lat": 47.6676156,
   "lng": -2.7285793,
-  "placeId": "ChIJ5ydHBlkfEEgRmAam3FRdYMc"
+  "placeId": "ChIJ5ydHBlkfEEgRmAam3FRdYMc",
+  "michelinId": "1218611",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Olivier Samson",
+  "chefSource": "michelin"
 }

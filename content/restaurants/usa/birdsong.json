@@ -17,5 +17,12 @@
   "website": "https://www.birdsongsf.com/",
   "lat": 37.779508,
   "lng": -122.41033,
-  "placeId": "ChIJTwtvfIOAhYARHMEe0c2Xi4s"
+  "placeId": "ChIJTwtvfIOAhYARHMEe0c2Xi4s",
+  "michelinId": "563785",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Christopher Bleidorn",
+  "chefSource": "michelin"
 }

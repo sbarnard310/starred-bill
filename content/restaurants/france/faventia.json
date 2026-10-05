@@ -23,5 +23,14 @@
   "website": "https://www.terre-blanche.com/",
   "lat": 43.590664,
   "lng": 6.7319345,
-  "placeId": "ChIJMWS0seEfzBIRAcv6d2nz30Y"
+  "placeId": "ChIJMWS0seEfzBIRAcv6d2nz30Y",
+  "michelinId": "54747",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Quentin André",
+  "chefSource": "michelin"
 }

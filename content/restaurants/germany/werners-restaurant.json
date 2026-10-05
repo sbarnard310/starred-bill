@@ -13,5 +13,13 @@
   "website": "https://www.hotel-schloss-eberstein.de/",
   "lat": 48.7493732,
   "lng": 8.3432667,
-  "placeId": "ChIJk32p1REYl0cRPhq_YqINvxc"
+  "placeId": "ChIJk32p1REYl0cRPhq_YqINvxc",
+  "michelinId": "99887",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Bernd Werner",
+  "chefSource": "michelin"
 }

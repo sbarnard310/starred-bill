@@ -25,5 +25,13 @@
   "website": "https://www.maisonfantinlatour.fr/",
   "lat": 45.1899476,
   "lng": 5.7324792,
-  "placeId": "ChIJX6Q9N4v0ikcRAfkEUpqw7BY"
+  "placeId": "ChIJX6Q9N4v0ikcRAfkEUpqw7BY",
+  "michelinId": "108123",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Stéphane Froidevaux",
+  "chefSource": "site"
 }

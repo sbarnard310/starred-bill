@@ -15,5 +15,12 @@
   "website": "https://www.lesmaisonsmarcon.fr",
   "lat": 45.1389186,
   "lng": 4.4342053,
-  "placeId": "ChIJM_Y85_919UcReASpU9RrmFA"
+  "placeId": "ChIJM_Y85_919UcReASpU9RrmFA",
+  "michelinId": "65448",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jacques Marcon",
+  "chefSource": "michelin"
 }

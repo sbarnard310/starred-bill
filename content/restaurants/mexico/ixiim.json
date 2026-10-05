@@ -20,5 +20,13 @@
   "website": "https://yucatan.chablehotels.com/cuisine/ixiim/",
   "lat": 20.755234599999998,
   "lng": -89.86822719999999,
-  "placeId": "ChIJfYlX6jUYVo8Rfr-9dPR8eL8"
+  "placeId": "ChIJfYlX6jUYVo8Rfr-9dPR8eL8",
+  "michelinId": "1245309",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Luis Ronzón",
+  "chefSource": "michelin"
 }

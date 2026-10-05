@@ -13,5 +13,11 @@
   "website": "https://www.hotelmilka.si/restaurant",
   "lat": 46.4751488,
   "lng": 13.7847333,
-  "placeId": "ChIJkU08p0F9ekcRR9HMa_96Sko"
+  "placeId": "ChIJkU08p0F9ekcRR9HMa_96Sko",
+  "michelinId": "1202726",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "David Žefran",
+  "chefSource": "michelin"
 }

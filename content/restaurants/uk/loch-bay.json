@@ -15,5 +15,8 @@
   "website": "https://www.lochbay-restaurant.co.uk/",
   "lat": 57.51557,
   "lng": -6.57252,
-  "placeId": "ChIJqXMVp3WzjUgR9CW9iFQyygg"
+  "placeId": "ChIJqXMVp3WzjUgR9CW9iFQyygg",
+  "michelinId": "502587",
+  "chef": "Michael Smith",
+  "chefSource": "site"
 }

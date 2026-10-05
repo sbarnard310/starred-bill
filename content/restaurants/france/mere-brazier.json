@@ -15,5 +15,11 @@
   "website": "https://lamerebrazier.fr/",
   "lat": 45.7714309,
   "lng": 4.8372034,
-  "placeId": "ChIJczdxcvvq9EcRF6hF_LmY8-U"
+  "placeId": "ChIJczdxcvvq9EcRF6hF_LmY8-U",
+  "michelinId": "235635",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Mathieu Viannay",
+  "chefSource": "site"
 }

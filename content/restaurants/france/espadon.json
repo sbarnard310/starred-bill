@@ -22,5 +22,10 @@
   "website": "https://www.ritzparis.com/fr/hotel/paris/bars-restaurants/restaurant-espadon",
   "lat": 48.8680554,
   "lng": 2.329016,
-  "placeId": "ChIJscSQoF1v5kcRBLtRQXzzwpE"
+  "placeId": "ChIJscSQoF1v5kcRBLtRQXzzwpE",
+  "michelinId": "5756",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

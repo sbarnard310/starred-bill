@@ -14,5 +14,13 @@
   "website": "https://www.restaurante-riff.com/",
   "lat": 39.4657836,
   "lng": -0.3684603,
-  "placeId": "ChIJ_bUFI7ZIYA0RBGv2YwGXskw"
+  "placeId": "ChIJ_bUFI7ZIYA0RBGv2YwGXskw",
+  "michelinId": "173177",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Bernd Knöller",
+  "chefSource": "michelin"
 }

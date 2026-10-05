@@ -15,5 +15,9 @@
   "website": "https://www.jean-yves-schillinger.com/",
   "lat": 48.0755636,
   "lng": 7.3533263,
-  "placeId": "ChIJ81TRBOZlkUcRTlWoyzHLGew"
+  "placeId": "ChIJ81TRBOZlkUcRTlWoyzHLGew",
+  "michelinId": "2319",
+  "diets": [
+    "vegetarian"
+  ]
 }

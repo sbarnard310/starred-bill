@@ -15,5 +15,8 @@
   "website": "https://www.traubetrimbach.ch/",
   "lat": 47.3630688,
   "lng": 7.8953583,
-  "placeId": "ChIJ1yfqJLsxkEcRv_8s2bh-_zI"
+  "placeId": "ChIJ1yfqJLsxkEcRv_8s2bh-_zI",
+  "michelinId": "179829",
+  "chef": "Arno Sgier",
+  "chefSource": "michelin"
 }

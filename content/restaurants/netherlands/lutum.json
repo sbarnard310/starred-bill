@@ -13,5 +13,11 @@
   "website": "https://restaurantlutum.nl/",
   "lat": 51.9720257,
   "lng": 5.3453939,
-  "placeId": "ChIJ46cig0RZxkcR3AG0WThRSSA"
+  "placeId": "ChIJ46cig0RZxkcR3AG0WThRSSA",
+  "michelinId": "213221",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Roy Schipper & Rik Veen",
+  "chefSource": "michelin"
 }

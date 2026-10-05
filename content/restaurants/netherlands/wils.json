@@ -12,5 +12,12 @@
   "website": "https://www.restaurantwils.nl/",
   "lat": 52.3433421,
   "lng": 4.856129,
-  "placeId": "ChIJVWJPJUHhxUcR4eHuJtj8zMc"
+  "placeId": "ChIJVWJPJUHhxUcR4eHuJtj8zMc",
+  "michelinId": "1186539",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Joris Bijdendijk",
+  "chefSource": "michelin"
 }

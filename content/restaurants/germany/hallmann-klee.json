@@ -12,5 +12,12 @@
   "website": "https://www.hallmann-klee.de/",
   "lat": 52.4738168,
   "lng": 13.4497485,
-  "placeId": "ChIJa6BtJAtPqEcRfVVCtKgmXAA"
+  "placeId": "ChIJa6BtJAtPqEcRfVVCtKgmXAA",
+  "michelinId": "552880",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Sarah Hallmann",
+  "chefSource": "michelin"
 }

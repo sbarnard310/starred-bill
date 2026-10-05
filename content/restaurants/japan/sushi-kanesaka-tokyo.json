@@ -30,5 +30,8 @@
   "website": "https://www.sushi-kanesaka.com/",
   "lat": 35.667938,
   "lng": 139.762691,
-  "placeId": "ChIJ4bf41-eLGGAR-8MK9GqIm7c"
+  "placeId": "ChIJ4bf41-eLGGAR-8MK9GqIm7c",
+  "michelinId": "1193997",
+  "chef": "Shinji Kanesaka",
+  "chefSource": "michelin"
 }

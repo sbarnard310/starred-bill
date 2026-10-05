@@ -20,5 +20,8 @@
   "website": "https://www.lareserve-ramatuelle.com/restaurant/restaurant-gastronomique-saint-tropez/",
   "lat": 43.1923476,
   "lng": 6.6481676,
-  "placeId": "ChIJz-DfgPjFzhIRgZLdXQr6O4E"
+  "placeId": "ChIJz-DfgPjFzhIRgZLdXQr6O4E",
+  "michelinId": "262610",
+  "chef": "Éric Canino",
+  "chefSource": "michelin"
 }

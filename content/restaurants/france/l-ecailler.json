@@ -29,5 +29,9 @@
   "website": "https://www.lecaillerlaflotte.fr/",
   "lat": 46.18773,
   "lng": -1.32429,
-  "placeId": "ChIJKU0hCUL_A0gRm90XqwXKuMs"
+  "placeId": "ChIJKU0hCUL_A0gRm90XqwXKuMs",
+  "michelinId": "20567",
+  "diets": [
+    "vegetarian"
+  ]
 }

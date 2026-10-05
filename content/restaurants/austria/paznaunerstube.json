@@ -14,5 +14,12 @@
   "website": "https://www.trofana-royal.at/gourmet/die-paznaunerstube/",
   "lat": 47.0086422,
   "lng": 10.286374,
-  "placeId": "ChIJozrJ_HuznEcRLC5K8z_5Rv4"
+  "placeId": "ChIJozrJ_HuznEcRLC5K8z_5Rv4",
+  "michelinId": "104898",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Martin Sieberer",
+  "chefSource": "michelin"
 }

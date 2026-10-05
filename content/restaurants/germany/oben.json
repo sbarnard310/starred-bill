@@ -13,5 +13,11 @@
   "website": "https://restaurant-oben.de/",
   "lat": 49.38722,
   "lng": 8.7356572,
-  "placeId": "ChIJM0_LMDnAl0cR052mxJhBtR0"
+  "placeId": "ChIJM0_LMDnAl0cR052mxJhBtR0",
+  "michelinId": "528388",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Robert Rädel",
+  "chefSource": "michelin"
 }

@@ -26,5 +26,13 @@
   "website": "https://tantalus.co.nz/restaurant/",
   "lat": -36.799618,
   "lng": 175.068343,
-  "placeId": "ChIJN4M27_zIcm0RDkJHxmBp5Nc"
+  "placeId": "ChIJN4M27_zIcm0RDkJHxmBp5Nc",
+  "michelinId": "1248088",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Axel Curtet-Latreille",
+  "chefSource": "michelin"
 }

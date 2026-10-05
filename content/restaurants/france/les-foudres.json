@@ -21,5 +21,11 @@
   "website": "https://www.chaismonnethotel.com/restaurant",
   "lat": 45.6910242,
   "lng": -0.3344321,
-  "placeId": "ChIJqc94-iPzAEgRmTx99nkxphQ"
+  "placeId": "ChIJqc94-iPzAEgRmTx99nkxphQ",
+  "michelinId": "1077203",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Fröde Torset",
+  "chefSource": "site"
 }

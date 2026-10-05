@@ -13,5 +13,14 @@
   "website": "https://restaurantzenith.nl/",
   "lat": 52.2230557,
   "lng": 5.9558434,
-  "placeId": "ChIJdfEnoy3Hx0cRKZTv0TMIlSk"
+  "placeId": "ChIJdfEnoy3Hx0cRKZTv0TMIlSk",
+  "michelinId": "1195891",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Joey Stinissen",
+  "chefSource": "michelin"
 }

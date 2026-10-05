@@ -25,5 +25,8 @@
   "website": "https://mallory-gabsi.com/",
   "lat": 48.876837,
   "lng": 2.2915873,
-  "placeId": "ChIJM4_nbTpv5kcRFJubN2v3Cpw"
+  "placeId": "ChIJM4_nbTpv5kcRFJubN2v3Cpw",
+  "michelinId": "1201666",
+  "chef": "Mallory Gabsi",
+  "chefSource": "michelin"
 }

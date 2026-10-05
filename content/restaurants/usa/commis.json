@@ -16,5 +16,11 @@
   "website": "https://www.commisrestaurant.com/",
   "lat": 37.8246825,
   "lng": -122.254846,
-  "placeId": "ChIJFzl5Mfh9hYARQmOK6_pAIYw"
+  "placeId": "ChIJFzl5Mfh9hYARQmOK6_pAIYw",
+  "michelinId": "259803",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "James Syhabout",
+  "chefSource": "michelin"
 }

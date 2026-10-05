@@ -13,5 +13,12 @@
   "website": "https://www.gupf.ch/",
   "lat": 47.4310779,
   "lng": 9.4918454,
-  "placeId": "ChIJ5SUAx3QZm0cRfcJXT1qIkng"
+  "placeId": "ChIJ5SUAx3QZm0cRfcJXT1qIkng",
+  "michelinId": "179910",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Walter Klose",
+  "chefSource": "michelin"
 }

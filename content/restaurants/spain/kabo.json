@@ -13,5 +13,9 @@
   "website": "https://www.restaurantekabo.com",
   "lat": 42.8118407,
   "lng": -1.6433174,
-  "placeId": "ChIJ5yEZ9BiTUA0RHouai8D0wS4"
+  "placeId": "ChIJ5yEZ9BiTUA0RHouai8D0wS4",
+  "michelinId": "1201120",
+  "diets": [
+    "gluten-free"
+  ]
 }

@@ -12,5 +12,10 @@
   "website": "https://www.restaurantekinoshita.com.br/",
   "lat": -23.5918216,
   "lng": -46.6712197,
-  "placeId": "ChIJs9_bqalZzpQRxKNPIObUrWk"
+  "placeId": "ChIJs9_bqalZzpQRxKNPIObUrWk",
+  "michelinId": "428535",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

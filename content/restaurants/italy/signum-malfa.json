@@ -15,5 +15,16 @@
   "website": "https://www.hotelsignum.it",
   "lat": 38.57992,
   "lng": 14.83344,
-  "placeId": "ChIJa25JkC1uFhMR7VIMcd5xXT4"
+  "placeId": "ChIJa25JkC1uFhMR7VIMcd5xXT4",
+  "michelinId": "164741",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Martina Caruso",
+  "chefSource": "michelin"
 }

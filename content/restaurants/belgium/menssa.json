@@ -16,5 +16,10 @@
   "website": "https://menssa.be",
   "lat": 50.8228567,
   "lng": 4.4466158,
-  "placeId": "ChIJrfiY8NXbw0cRer3pt1VSa2c"
+  "placeId": "ChIJrfiY8NXbw0cRer3pt1VSa2c",
+  "michelinId": "1206185",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

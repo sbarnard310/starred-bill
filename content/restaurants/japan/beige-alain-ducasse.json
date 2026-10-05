@@ -30,5 +30,13 @@
   "website": "https://beige-tokyo.com/",
   "lat": 35.67308,
   "lng": 139.766511,
-  "placeId": "ChIJDxzYF-SLGGARQYB8-Z27qAI"
+  "placeId": "ChIJDxzYF-SLGGARQYB8-Z27qAI",
+  "michelinId": "1194164",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

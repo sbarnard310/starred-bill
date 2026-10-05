@@ -13,5 +13,12 @@
   "website": "https://www.restaurantwolfslaar.com",
   "lat": 51.5607208,
   "lng": 4.8038928,
-  "placeId": "ChIJR1ap776hxkcRf8wJWsHSejE"
+  "placeId": "ChIJR1ap776hxkcRf8wJWsHSejE",
+  "michelinId": "212308",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Maarten Camps",
+  "chefSource": "site"
 }

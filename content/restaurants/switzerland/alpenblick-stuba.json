@@ -13,5 +13,11 @@
   "website": "https://www.alpenblick-adelboden.ch/",
   "lat": 46.4936543,
   "lng": 7.5607158,
-  "placeId": "ChIJ0ysJXCECj0cROkwaOeeSzZU"
+  "placeId": "ChIJ0ysJXCECj0cROkwaOeeSzZU",
+  "michelinId": "178658",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Björn Inniger",
+  "chefSource": "michelin"
 }

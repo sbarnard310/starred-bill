@@ -13,5 +13,15 @@
   "website": "https://www.mb-tenerife.com/es/",
   "lat": 28.171041,
   "lng": -16.799017,
-  "placeId": "ChIJeX4lHyHNQQwRROLp-p8Ktoo"
+  "placeId": "ChIJeX4lHyHNQQwRROLp-p8Ktoo",
+  "michelinId": "228154",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Erlantz Gorostiza",
+  "chefSource": "michelin"
 }

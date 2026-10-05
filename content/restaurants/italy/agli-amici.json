@@ -13,5 +13,13 @@
   "website": "https://www.agliamici.it/",
   "lat": 46.1021988,
   "lng": 13.2661162,
-  "placeId": "ChIJdbGWVW5KekcR-_s8SxYpGXM"
+  "placeId": "ChIJdbGWVW5KekcR-_s8SxYpGXM",
+  "michelinId": "155717",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Emanuele Scarello",
+  "chefSource": "michelin"
 }

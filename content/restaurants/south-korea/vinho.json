@@ -20,5 +20,12 @@
   "website": "https://www.restaurantvinho.kr/",
   "lat": 37.51866,
   "lng": 127.03814,
-  "placeId": "ChIJqWOZj6KjfDURWWKxJdKW6-I"
+  "placeId": "ChIJqWOZj6KjfDURWWKxJdKW6-I",
+  "michelinId": "1207561",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Sung-bin Jeon",
+  "chefSource": "michelin"
 }

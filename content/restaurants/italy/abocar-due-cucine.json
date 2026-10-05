@@ -15,5 +15,9 @@
   "website": "https://abocarduecucine.it/",
   "lat": 44.0626895,
   "lng": 12.5663487,
-  "placeId": "ChIJQzOscJjDLBMR2oJFyuzi_Mk"
+  "placeId": "ChIJQzOscJjDLBMR2oJFyuzi_Mk",
+  "michelinId": "433503",
+  "diets": [
+    "vegetarian"
+  ]
 }

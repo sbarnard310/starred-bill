@@ -28,5 +28,8 @@
   "website": "https://abacrestaurant.com/",
   "lat": 41.41045,
   "lng": 2.136511,
-  "placeId": "ChIJjZxWjQ-YpBIR_xbBOD9lZ1k"
+  "placeId": "ChIJjZxWjQ-YpBIR_xbBOD9lZ1k",
+  "michelinId": "67790",
+  "chef": "Jordi Cruz",
+  "chefSource": "michelin"
 }

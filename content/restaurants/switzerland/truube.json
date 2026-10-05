@@ -13,5 +13,12 @@
   "website": "https://www.truube.ch/",
   "lat": 47.3661606,
   "lng": 9.4606828,
-  "placeId": "ChIJNZsrnXAim0cRqaW3Wi_K8Xw"
+  "placeId": "ChIJNZsrnXAim0cRqaW3Wi_K8Xw",
+  "michelinId": "179222",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Silvia Manser",
+  "chefSource": "michelin"
 }

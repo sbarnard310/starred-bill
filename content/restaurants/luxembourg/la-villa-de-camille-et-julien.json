@@ -13,5 +13,12 @@
   "website": "https://www.lavilla.lu/fr",
   "lat": 49.6089034,
   "lng": 6.1505965,
-  "placeId": "ChIJRcPaL8hIlUcR3Y0_ROWRDmw"
+  "placeId": "ChIJRcPaL8hIlUcR3Y0_ROWRDmw",
+  "michelinId": "1191959",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Julien Lucas",
+  "chefSource": "site"
 }

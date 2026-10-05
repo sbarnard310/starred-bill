@@ -25,5 +25,8 @@
   "website": "https://www.omakase.com.sg/",
   "lat": 1.313769,
   "lng": 103.828683,
-  "placeId": "ChIJz4l7i-kZ2jER108n4oib6XY"
+  "placeId": "ChIJz4l7i-kZ2jER108n4oib6XY",
+  "michelinId": "1215894",
+  "chef": "Kazuki Arimoto",
+  "chefSource": "site"
 }

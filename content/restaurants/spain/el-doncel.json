@@ -13,5 +13,8 @@
   "website": "https://eldoncel.com/",
   "lat": 41.0692522,
   "lng": -2.643727,
-  "placeId": "ChIJjwaw-D1FQw0Rd-9WYPw7Wjk"
+  "placeId": "ChIJjwaw-D1FQw0Rd-9WYPw7Wjk",
+  "michelinId": "223530",
+  "chef": "Enrique Pérez",
+  "chefSource": "michelin"
 }

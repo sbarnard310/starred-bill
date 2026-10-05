@@ -15,5 +15,13 @@
   "website": "https://www.arlberghotel.at/de/kulinarik/la-fenice/",
   "lat": 47.2083376,
   "lng": 10.1413176,
-  "placeId": "ChIJBzDY8vannEcR6XBy_uXkoT8"
+  "placeId": "ChIJBzDY8vannEcR6XBy_uXkoT8",
+  "michelinId": "1212360",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Patrick Tober",
+  "chefSource": "site"
 }

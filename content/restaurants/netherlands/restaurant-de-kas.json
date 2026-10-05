@@ -12,5 +12,15 @@
   "website": "https://restaurantdekas.com/",
   "lat": 52.3522847,
   "lng": 4.9302753,
-  "placeId": "ChIJJ-S23XoJxkcRDsSNU2mgH34"
+  "placeId": "ChIJJ-S23XoJxkcRDsSNU2mgH34",
+  "michelinId": "212184",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Wim de Beer & Jos Timmer",
+  "chefSource": "michelin"
 }

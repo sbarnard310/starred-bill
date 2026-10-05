@@ -13,5 +13,11 @@
   "website": "https://da-lucio.com",
   "lat": 44.0782476,
   "lng": 12.570068,
-  "placeId": "ChIJJXPo2xDDLBMR4FgjfDvMY3I"
+  "placeId": "ChIJJXPo2xDDLBMR4FgjfDvMY3I",
+  "michelinId": "1199126",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

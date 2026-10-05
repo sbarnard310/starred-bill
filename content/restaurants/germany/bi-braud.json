@@ -13,5 +13,11 @@
   "website": "https://bebrout.com/",
   "lat": 48.4005362,
   "lng": 9.9924975,
-  "placeId": "ChIJr5yPDIZmmUcRLKr_mJSiZFI"
+  "placeId": "ChIJr5yPDIZmmUcRLKr_mJSiZFI",
+  "michelinId": "1196406",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alina Meissner-Bebrout and Tim Ostertag",
+  "chefSource": "michelin"
 }

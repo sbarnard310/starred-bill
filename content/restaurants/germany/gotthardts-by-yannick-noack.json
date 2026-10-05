@@ -15,5 +15,11 @@
   "website": "https://faehr.haus/restaurant-bar/restaurant-gotthardts/",
   "lat": 50.3580498,
   "lng": 7.5598451,
-  "placeId": "ChIJOzBqZFxjvkcRwBk3-zPfhNI"
+  "placeId": "ChIJOzBqZFxjvkcRwBk3-zPfhNI",
+  "michelinId": "1216361",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Yannick Noack",
+  "chefSource": "michelin"
 }

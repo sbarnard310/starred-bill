@@ -23,5 +23,15 @@
   "website": "https://ochre.fr/",
   "lat": 48.8778387,
   "lng": 2.1830535,
-  "placeId": "ChIJUSvWlOhj5kcRMvvtN6puGY4"
+  "placeId": "ChIJUSvWlOhj5kcRMvvtN6puGY4",
+  "michelinId": "1184103",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Baptiste Renouard",
+  "chefSource": "michelin"
 }

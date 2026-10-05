@@ -13,5 +13,13 @@
   "website": "https://www.ristoranteandreina.it/",
   "lat": 43.4404141,
   "lng": 13.6217174,
-  "placeId": "ChIJXR3I5-V5MhMRErYcGck5B-c"
+  "placeId": "ChIJXR3I5-V5MhMRErYcGck5B-c",
+  "michelinId": "138521",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Errico Recanati",
+  "chefSource": "site"
 }

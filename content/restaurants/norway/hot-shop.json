@@ -12,5 +12,11 @@
   "website": "https://www.restauranthotshop.no",
   "lat": 59.9281988,
   "lng": 10.7685963,
-  "placeId": "ChIJqcqB90FuQUYRuY-l67sYke0"
+  "placeId": "ChIJqcqB90FuQUYRuY-l67sYke0",
+  "michelinId": "1192282",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ]
 }

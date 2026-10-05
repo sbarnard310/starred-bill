@@ -15,5 +15,10 @@
   "website": "https://www.restaurant-allium.fr",
   "lat": 47.97616,
   "lng": -4.09825,
-  "placeId": "ChIJU5IJCrfVEEgRceLq8DS4dds"
+  "placeId": "ChIJU5IJCrfVEEgRceLq8DS4dds",
+  "michelinId": "479813",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

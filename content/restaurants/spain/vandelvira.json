@@ -16,5 +16,13 @@
   "website": "https://vandelvirarestaurante.es/",
   "lat": 37.9941772,
   "lng": -3.4689799,
-  "placeId": "ChIJt4SN9eaLbg0Ry7l08xk4U4Y"
+  "placeId": "ChIJt4SN9eaLbg0Ry7l08xk4U4Y",
+  "michelinId": "1203546",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Juan Carlos García",
+  "chefSource": "michelin"
 }

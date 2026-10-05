@@ -13,5 +13,12 @@
   "website": "https://www.zoutencitroen.nl/",
   "lat": 51.6402997,
   "lng": 4.8602475,
-  "placeId": "ChIJp6k8FzqZxkcRastZll1KEq0"
+  "placeId": "ChIJp6k8FzqZxkcRastZll1KEq0",
+  "michelinId": "335286",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

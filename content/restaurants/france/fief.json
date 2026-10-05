@@ -20,5 +20,14 @@
   "website": "https://fiefrestaurant.fr/",
   "lat": 48.8636981,
   "lng": 2.372288,
-  "placeId": "ChIJA_9pJnVt5kcRf7FroqePNw4"
+  "placeId": "ChIJA_9pJnVt5kcRf7FroqePNw4",
+  "michelinId": "1193542",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Victor Mercier",
+  "chefSource": "michelin"
 }

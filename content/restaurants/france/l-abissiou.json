@@ -15,5 +15,10 @@
   "website": "https://www.labissiou.fr",
   "lat": 46.4955501,
   "lng": -1.7873309,
-  "placeId": "ChIJge0n04xnBEgRxt6c-aHsp6g"
+  "placeId": "ChIJge0n04xnBEgRxt6c-aHsp6g",
+  "michelinId": "1193734",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

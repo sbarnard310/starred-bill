@@ -18,5 +18,12 @@
   "website": "https://www.ristorantesuigeneris.com/",
   "lat": 45.624977,
   "lng": 9.041206,
-  "placeId": "ChIJ6xKpeBGRhkcRM8h1RxICf1Y"
+  "placeId": "ChIJ6xKpeBGRhkcRM8h1RxICf1Y",
+  "michelinId": "1207984",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Alfio Nicolosi",
+  "chefSource": "michelin"
 }

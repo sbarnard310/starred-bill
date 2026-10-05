@@ -13,5 +13,12 @@
   "website": "https://www.tstoveke.be/",
   "lat": 50.9049469,
   "lng": 4.3507766,
-  "placeId": "ChIJI005cUTCw0cR60lkDX7vnvo"
+  "placeId": "ChIJI005cUTCw0cR60lkDX7vnvo",
+  "michelinId": "172687",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Daniel Antuna",
+  "chefSource": "michelin"
 }

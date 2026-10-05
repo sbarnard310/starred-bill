@@ -21,5 +21,12 @@
   "website": "https://www.waterside-inn.co.uk/",
   "lat": 51.509109,
   "lng": -0.699438,
-  "placeId": "ChIJn0V5zNN8dkgRJgNIU9EByT0"
+  "placeId": "ChIJn0V5zNN8dkgRJgNIU9EByT0",
+  "michelinId": "186643",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Alain Roux",
+  "chefSource": "site"
 }

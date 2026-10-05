@@ -25,5 +25,8 @@
   "website": "https://www.fogony.com/",
   "lat": 42.41556,
   "lng": 1.132068,
-  "placeId": "ChIJp1YopNkFphIRScBxYDYyyOc"
+  "placeId": "ChIJp1YopNkFphIRScBxYDYyyOc",
+  "michelinId": "223608",
+  "chef": "Zaraida Cotonat",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,13 @@
   "website": "https://www.lareserve-geneve.com",
   "lat": 46.2504122,
   "lng": 6.1494507,
-  "placeId": "ChIJyftQYUtkjEcRhmOkfSa3ZxI"
+  "placeId": "ChIJyftQYUtkjEcRhmOkfSa3ZxI",
+  "michelinId": "114640",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Frank Xu",
+  "chefSource": "michelin"
 }

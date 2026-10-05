@@ -12,5 +12,13 @@
   "website": "https://www.restaurantsinne.nl/",
   "lat": 52.3530586,
   "lng": 4.8942525,
-  "placeId": "ChIJzwzS5owJxkcRDZfCjur-OPU"
+  "placeId": "ChIJzwzS5owJxkcRDZfCjur-OPU",
+  "michelinId": "423504",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Alexander Ioannou",
+  "chefSource": "michelin"
 }

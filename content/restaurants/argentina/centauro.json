@@ -23,5 +23,12 @@
   "website": "https://centaurorestaurant.com/",
   "lat": -32.8883477,
   "lng": -68.8484542,
-  "placeId": "ChIJdY5LkMgJfpYRN_BFxGKu5HI"
+  "placeId": "ChIJdY5LkMgJfpYRN_BFxGKu5HI",
+  "michelinId": "1209250",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Aris Pabón",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,8 @@
   "website": "https://www.bom-nyc.com/",
   "lat": 40.739618,
   "lng": -73.99245,
-  "placeId": "ChIJRY8CqGJZwokR285BA7eLv5g"
+  "placeId": "ChIJRY8CqGJZwokR285BA7eLv5g",
+  "michelinId": "1206453",
+  "chef": "Brian Kim",
+  "chefSource": "site"
 }

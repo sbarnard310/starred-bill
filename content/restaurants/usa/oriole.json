@@ -17,5 +17,13 @@
   "website": "https://www.oriolechicago.com/",
   "lat": 41.886209,
   "lng": -87.645302,
-  "placeId": "ChIJ4_ovZs8sDogRyw3X3QCiI-Y"
+  "placeId": "ChIJ4_ovZs8sDogRyw3X3QCiI-Y",
+  "michelinId": "498990",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Noah Sandoval",
+  "chefSource": "michelin"
 }

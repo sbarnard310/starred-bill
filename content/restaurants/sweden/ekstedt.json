@@ -12,5 +12,14 @@
   "website": "https://www.ekstedt.nu/",
   "lat": 59.3367688,
   "lng": 18.0747963,
-  "placeId": "ChIJhThAV1udX0YRWy5QWVtNNWY"
+  "placeId": "ChIJhThAV1udX0YRWy5QWVtNNWY",
+  "michelinId": "352195",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Niklas Ekstedt",
+  "chefSource": "michelin"
 }

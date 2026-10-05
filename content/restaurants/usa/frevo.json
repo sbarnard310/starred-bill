@@ -18,5 +18,12 @@
   "website": "https://frevonyc.com/",
   "lat": 40.733199,
   "lng": -73.998822,
-  "placeId": "ChIJL6-NTmBZwokRGacx3GWq3D0"
+  "placeId": "ChIJL6-NTmBZwokRGacx3GWq3D0",
+  "michelinId": "1184254",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Franco Sampogna",
+  "chefSource": "michelin"
 }

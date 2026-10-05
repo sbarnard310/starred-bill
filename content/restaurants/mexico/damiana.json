@@ -16,5 +16,13 @@
   "website": "https://www.damianarestaurant.com",
   "lat": 32.1375372,
   "lng": -116.5290129,
-  "placeId": "ChIJQ00SMYfv2IARK9XO0GMsKpw"
+  "placeId": "ChIJQ00SMYfv2IARK9XO0GMsKpw",
+  "michelinId": "1211640",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Esteban Lluis",
+  "chefSource": "michelin"
 }

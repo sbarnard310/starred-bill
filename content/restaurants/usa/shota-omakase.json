@@ -21,5 +21,12 @@
   "website": "https://www.shotaomakase.com/",
   "lat": 40.713524,
   "lng": -73.965932,
-  "placeId": "ChIJ34eY6E5ZwokRvof_huM7t3U"
+  "placeId": "ChIJ34eY6E5ZwokRvof_huM7t3U",
+  "michelinId": "1211211",
+  "diets": [
+    "halal",
+    "kosher"
+  ],
+  "chef": "Cheng Lin",
+  "chefSource": "michelin"
 }

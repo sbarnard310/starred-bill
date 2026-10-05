@@ -18,5 +18,11 @@
   "website": "https://www.7adamsrestaurant.com/",
   "lat": 37.786141,
   "lng": -122.432632,
-  "placeId": "ChIJXVvsirKBhYARfWD1MEpT_Uw"
+  "placeId": "ChIJXVvsirKBhYARfWD1MEpT_Uw",
+  "michelinId": "1211881",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Serena Fisher and David Fisher",
+  "chefSource": "michelin"
 }

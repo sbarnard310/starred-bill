@@ -23,5 +23,12 @@
   "website": "https://www.alchemille.alsace/",
   "lat": 48.1487566,
   "lng": 7.2500389,
-  "placeId": "ChIJ2w5akF9gkUcRTvMEqemqcjM"
+  "placeId": "ChIJ2w5akF9gkUcRTvMEqemqcjM",
+  "michelinId": "481820",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jérôme Jaegle",
+  "chefSource": "michelin"
 }

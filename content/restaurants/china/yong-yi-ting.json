@@ -9,5 +9,10 @@
   "sourceType": "none",
   "website": "https://www.mandarinoriental.com/en/shanghai/pudong",
   "lat": 31.245216,
-  "lng": 121.50343
+  "lng": 121.50343,
+  "michelinId": "506747",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

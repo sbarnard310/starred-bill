@@ -16,5 +16,13 @@
   "website": "https://njorden.com/",
   "lat": 46.4952391,
   "lng": 6.3913754,
-  "placeId": "ChIJASd8x0VJjEcRh6nUp6LJR-w"
+  "placeId": "ChIJASd8x0VJjEcRh6nUp6LJR-w",
+  "michelinId": "1200254",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Philippe Deslarzes",
+  "chefSource": "site"
 }

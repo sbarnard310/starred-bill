@@ -23,5 +23,12 @@
   "website": "https://www.frankenbourg.com",
   "lat": 48.2836435,
   "lng": 7.3026266,
-  "placeId": "ChIJM8dIbAlZkUcR6_1N-TWg3yg"
+  "placeId": "ChIJM8dIbAlZkUcR6_1N-TWg3yg",
+  "michelinId": "4138",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Sébastien Buecher",
+  "chefSource": "michelin"
 }

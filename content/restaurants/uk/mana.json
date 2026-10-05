@@ -21,5 +21,11 @@
   "website": "https://www.manarestaurant.co.uk/",
   "lat": 53.484823,
   "lng": -2.227866,
-  "placeId": "ChIJoYJfFbuxe0gR2qbJfYKOysA"
+  "placeId": "ChIJoYJfFbuxe0gR2qbJfYKOysA",
+  "michelinId": "1154290",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Simon Martin",
+  "chefSource": "michelin"
 }

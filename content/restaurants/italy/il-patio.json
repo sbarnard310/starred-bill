@@ -13,5 +13,11 @@
   "website": "https://www.ristoranteilpatio.it/",
   "lat": 45.5652115,
   "lng": 8.0526276,
-  "placeId": "ChIJHdWJbTSeiEcRNnUlOH9oKq0"
+  "placeId": "ChIJHdWJbTSeiEcRNnUlOH9oKq0",
+  "michelinId": "146030",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Simone Vineis",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,12 @@
   "website": "https://www.marlene.pt",
   "lat": 38.7120612,
   "lng": -9.1240727,
-  "placeId": "ChIJ6yKFIHU0GQ0R_eBA3ru1Ylc"
+  "placeId": "ChIJ6yKFIHU0GQ0R_eBA3ru1Ylc",
+  "michelinId": "1202484",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Marlene Vieira",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,12 @@
   "website": "https://www.maisonrostang.com/",
   "lat": 48.881407,
   "lng": 2.2985363,
-  "placeId": "ChIJNVJhNJRv5kcRPUWaSPU5KZg"
+  "placeId": "ChIJNVJhNJRv5kcRPUWaSPU5KZg",
+  "michelinId": "6478",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Nicolas Beaumann",
+  "chefSource": "michelin"
 }

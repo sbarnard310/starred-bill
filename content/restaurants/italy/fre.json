@@ -13,5 +13,12 @@
   "website": "https://www.revamonforte.com/it/resort-con-ristorante-langhe",
   "lat": 44.5651402,
   "lng": 7.9551082,
-  "placeId": "ChIJMTEE8qi60hIR0vXhwa2csjg"
+  "placeId": "ChIJMTEE8qi60hIR0vXhwa2csjg",
+  "michelinId": "1157210",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Francesco Marchese",
+  "chefSource": "michelin"
 }

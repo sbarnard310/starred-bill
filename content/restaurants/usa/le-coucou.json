@@ -17,5 +17,11 @@
   "website": "https://lecoucou.com/",
   "lat": 40.719162,
   "lng": -74.00001,
-  "placeId": "ChIJyw5j84lZwokRnUI_UknPSNA"
+  "placeId": "ChIJyw5j84lZwokRnUI_UknPSNA",
+  "michelinId": "510102",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Daniel Rose",
+  "chefSource": "michelin"
 }

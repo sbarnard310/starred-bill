@@ -13,5 +13,13 @@
   "website": "https://www.hilton.com/en/hotels/faoapci-conrad-algarve/dining/gusto-by-heinz-beck/",
   "lat": 37.0633302,
   "lng": -8.0301921,
-  "placeId": "ChIJE8rGznCzGg0RhYdyrdZKlVQ"
+  "placeId": "ChIJE8rGznCzGg0RhYdyrdZKlVQ",
+  "michelinId": "378372",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Heinz Beck",
+  "chefSource": "michelin"
 }

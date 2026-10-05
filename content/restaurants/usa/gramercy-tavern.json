@@ -18,5 +18,8 @@
   "website": "https://www.gramercytavern.com/",
   "lat": 40.738483,
   "lng": -73.988434,
-  "placeId": "ChIJvSQIgqFZwokRFYQbJdzceSs"
+  "placeId": "ChIJvSQIgqFZwokRFYQbJdzceSs",
+  "michelinId": "69890",
+  "chef": "Michael Anthony",
+  "chefSource": "site"
 }

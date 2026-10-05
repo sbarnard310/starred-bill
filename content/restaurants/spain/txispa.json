@@ -25,5 +25,11 @@
   "website": "https://txispa.com/",
   "lat": 43.114598,
   "lng": -2.602429,
-  "placeId": "ChIJz-u9dpzTTw0RZHHXvqX4fb8"
+  "placeId": "ChIJz-u9dpzTTw0RZHHXvqX4fb8",
+  "michelinId": "1208494",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Tetsuro Maeda",
+  "chefSource": "michelin"
 }

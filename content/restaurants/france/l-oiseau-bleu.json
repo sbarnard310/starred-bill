@@ -21,5 +21,12 @@
   "website": "https://www.loiseaubleu.fr/",
   "lat": 44.8442594,
   "lng": -0.552961,
-  "placeId": "ChIJ42z13iUmVQ0RpBQ8Dd6VK7c"
+  "placeId": "ChIJ42z13iUmVQ0RpBQ8Dd6VK7c",
+  "michelinId": "1228",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "François Sauvêtre",
+  "chefSource": "michelin"
 }

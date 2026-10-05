@@ -24,5 +24,12 @@
   "website": "https://waketoku.com/",
   "lat": 35.655748,
   "lng": 139.723292,
-  "placeId": "ChIJdVd2oPGGHWAR-OIqEZ32eMw"
+  "placeId": "ChIJdVd2oPGGHWAR-OIqEZ32eMw",
+  "michelinId": "1194259",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ]
 }

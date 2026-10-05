@@ -12,5 +12,13 @@
   "website": "https://www.theashbeehotel.it/menu-st-george-restaurant-by-heinz-beck/",
   "lat": 37.8554565,
   "lng": 15.2900353,
-  "placeId": "ChIJk3INh58RFBMRp9846eqSPUA"
+  "placeId": "ChIJk3INh58RFBMRp9846eqSPUA",
+  "michelinId": "439039",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Salvatore Iuliano",
+  "chefSource": "michelin"
 }

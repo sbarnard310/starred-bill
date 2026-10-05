@@ -15,5 +15,11 @@
   "website": "https://laitthymsel.com/",
   "lat": 47.4745452,
   "lng": -0.5510094,
-  "placeId": "ChIJk4EQC8V4CEgRUzHPEZht8oY"
+  "placeId": "ChIJk4EQC8V4CEgRUzHPEZht8oY",
+  "michelinId": "900037",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Gaëtan Morvan",
+  "chefSource": "michelin"
 }

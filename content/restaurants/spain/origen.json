@@ -13,5 +13,14 @@
   "website": "https://www.origencarcaixent.com/",
   "lat": 39.1193545,
   "lng": -0.4521044,
-  "placeId": "ChIJByIW_4SlYQ0R1DIIpnY-N7I"
+  "placeId": "ChIJByIW_4SlYQ0R1DIIpnY-N7I",
+  "michelinId": "1214557",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Àlex Vidal",
+  "chefSource": "michelin"
 }

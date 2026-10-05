@@ -13,5 +13,13 @@
   "website": "https://www.chateauvieux.ch/",
   "lat": 46.2014858,
   "lng": 6.0383506,
-  "placeId": "ChIJI2nckjJ9jEcRyEbVNo13ODI"
+  "placeId": "ChIJI2nckjJ9jEcRyEbVNo13ODI",
+  "michelinId": "172004",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Philippe Chevrier",
+  "chefSource": "michelin"
 }

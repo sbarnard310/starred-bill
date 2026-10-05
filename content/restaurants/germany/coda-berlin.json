@@ -14,5 +14,11 @@
   "website": "https://www.coda-berlin.com/",
   "lat": 52.4900681,
   "lng": 13.4274391,
-  "placeId": "ChIJvVDs7bZPqEcRVuzEV98NWz8"
+  "placeId": "ChIJvVDs7bZPqEcRVuzEV98NWz8",
+  "michelinId": "549658",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "René Frank",
+  "chefSource": "michelin"
 }

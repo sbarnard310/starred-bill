@@ -16,5 +16,11 @@
   "website": "https://www.am-mahrbach.at/essen-und-trinken",
   "lat": 47.0234528,
   "lng": 16.186559,
-  "placeId": "ChIJMTIZJQDlbkcRIa1reqOTcFw"
+  "placeId": "ChIJMTIZJQDlbkcRIa1reqOTcFw",
+  "michelinId": "1215752",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Philipp Kroboth",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,13 @@
   "website": "https://www.st-placide.com",
   "lat": 48.6296543,
   "lng": -2.010532,
-  "placeId": "ChIJQYeAckiBDkgRqP4rTifjGGg"
+  "placeId": "ChIJQYeAckiBDkgRqP4rTifjGGg",
+  "michelinId": "8083",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "kosher"
+  ],
+  "chef": "Luc Mobihan",
+  "chefSource": "michelin"
 }

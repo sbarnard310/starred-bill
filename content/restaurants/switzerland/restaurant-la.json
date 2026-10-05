@@ -15,5 +15,12 @@
   "website": "https://www.restaurant-la.com/",
   "lat": 47.562886,
   "lng": 7.5848343,
-  "placeId": "ChIJXW8AJqa5kUcRo_TzVwWN_bI"
+  "placeId": "ChIJXW8AJqa5kUcRo_TzVwWN_bI",
+  "michelinId": "527317",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Matthieu Judenne",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,11 @@
   "website": "https://www.sources-hotels.com/bordeaux/restaurants/restaurant-grand-vigne/",
   "lat": 44.7310086,
   "lng": -0.5571095,
-  "placeId": "ChIJ82kXZakhVQ0R99We_bPst38"
+  "placeId": "ChIJ82kXZakhVQ0R99We_bPst38",
+  "michelinId": "1244",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nicolas Masse",
+  "chefSource": "michelin"
 }

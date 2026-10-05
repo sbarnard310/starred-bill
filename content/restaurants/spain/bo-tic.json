@@ -25,5 +25,13 @@
   "website": "https://www.bo-tic.com/",
   "lat": 41.987918,
   "lng": 3.015951,
-  "placeId": "ChIJI5JbhhPmuhIRWGkTnrSLXbA"
+  "placeId": "ChIJI5JbhhPmuhIRWGkTnrSLXbA",
+  "michelinId": "530178",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Albert Sastregener",
+  "chefSource": "michelin"
 }

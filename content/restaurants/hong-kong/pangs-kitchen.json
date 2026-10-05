@@ -19,5 +19,9 @@
   "source": "https://www.openrice.com/en/hongkong/r-pangs-kitchen-happy-valley-guangdong-noodles-rice-noodles-r10604/reviews",
   "lat": 22.26921,
   "lng": 114.18452,
-  "placeId": "ChIJAWBMkU4ABDQRWjbA0zXxX4Y"
+  "placeId": "ChIJAWBMkU4ABDQRWjbA0zXxX4Y",
+  "michelinId": "380261",
+  "diets": [
+    "vegetarian"
+  ]
 }

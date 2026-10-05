@@ -15,5 +15,8 @@
   "website": "https://restaurant-kasbur.fr",
   "lat": 48.7419047,
   "lng": 7.3977237,
-  "placeId": "ChIJ83EDeruglkcRPqLBUTYwjaA"
+  "placeId": "ChIJ83EDeruglkcRPqLBUTYwjaA",
+  "michelinId": "8532",
+  "chef": "Yves Kieffer",
+  "chefSource": "michelin"
 }

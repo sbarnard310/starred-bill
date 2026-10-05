@@ -9,5 +9,9 @@
   "sourceType": "none",
   "website": "https://www.fourseasons.com/beijing/dining/restaurants/cai_yi_xuan",
   "lat": 39.9489154,
-  "lng": 116.4604404
+  "lng": 116.4604404,
+  "michelinId": "1186697",
+  "diets": [
+    "vegetarian"
+  ]
 }

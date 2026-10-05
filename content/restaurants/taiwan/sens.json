@@ -28,5 +28,11 @@
   "website": "https://www.senstw.com/tw",
   "lat": 25.0588994,
   "lng": 121.5473342,
-  "placeId": "ChIJvbzheu-rQjQRksOAOpGWk9M"
+  "placeId": "ChIJvbzheu-rQjQRksOAOpGWk9M",
+  "michelinId": "1204678",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Darius Wu",
+  "chefSource": "site"
 }

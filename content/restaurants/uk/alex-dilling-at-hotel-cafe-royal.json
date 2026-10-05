@@ -21,5 +21,16 @@
   "website": "https://alexdilling.com/",
   "lat": 51.5100201,
   "lng": -0.1359557,
-  "placeId": "ChIJt8UvMj4FdkgRYv-IhfUpsqg"
+  "placeId": "ChIJt8UvMj4FdkgRYv-IhfUpsqg",
+  "michelinId": "1204362",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Alex Dilling",
+  "chefSource": "michelin"
 }

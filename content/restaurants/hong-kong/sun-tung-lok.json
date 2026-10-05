@@ -23,5 +23,9 @@
   "website": "https://www.suntunglok.com.hk/",
   "lat": 22.30099,
   "lng": 114.17221,
-  "placeId": "ChIJQUAHOOwABDQRbIsmNAIEbxc"
+  "placeId": "ChIJQUAHOOwABDQRbIsmNAIEbxc",
+  "michelinId": "314259",
+  "diets": [
+    "vegetarian"
+  ]
 }

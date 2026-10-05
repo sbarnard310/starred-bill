@@ -19,5 +19,9 @@
   "website": "https://www.theroyaloakwhatcote.co.uk/",
   "lat": 52.099222,
   "lng": -1.563082,
-  "placeId": "ChIJk1vEKFTTcEgR4L8b2no8xpM"
+  "placeId": "ChIJk1vEKFTTcEgR4L8b2no8xpM",
+  "michelinId": "555901",
+  "diets": [
+    "vegetarian"
+  ]
 }

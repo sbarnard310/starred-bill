@@ -20,5 +20,14 @@
   "website": "https://www.muranolondon.com/",
   "lat": 51.5071742,
   "lng": -0.1472229,
-  "placeId": "ChIJTUlS0S4FdkgRAGTHjEn0wF4"
+  "placeId": "ChIJTUlS0S4FdkgRAGTHjEn0wF4",
+  "michelinId": "235288",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Angela Hartnett",
+  "chefSource": "michelin"
 }

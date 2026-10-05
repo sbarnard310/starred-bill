@@ -25,5 +25,11 @@
   "website": "https://heritagesparis.fr/",
   "lat": 48.8769662,
   "lng": 2.3140253,
-  "placeId": "ChIJK2kd9qdv5kcRu_lKzpkV-uw"
+  "placeId": "ChIJK2kd9qdv5kcRu_lKzpkV-uw",
+  "michelinId": "1245292",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ]
 }

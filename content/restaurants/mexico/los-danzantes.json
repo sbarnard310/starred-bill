@@ -16,5 +16,13 @@
   "website": "https://losdanzantesoaxaca.com.mx",
   "lat": 17.0652024,
   "lng": -96.7239883,
-  "placeId": "ChIJpYomwD4ix4UR8Ao0DNgeIX4"
+  "placeId": "ChIJpYomwD4ix4UR8Ao0DNgeIX4",
+  "michelinId": "1208517",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Claudia Lara",
+  "chefSource": "michelin"
 }

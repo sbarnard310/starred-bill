@@ -29,5 +29,12 @@
   "website": "https://etapedoree.fr",
   "lat": 45.7168754,
   "lng": 4.7828957,
-  "placeId": "ChIJWb0jazGL9EcR__k5tgBx8uQ"
+  "placeId": "ChIJWb0jazGL9EcR__k5tgBx8uQ",
+  "michelinId": "1216893",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Yo Miyazaki",
+  "chefSource": "michelin"
 }

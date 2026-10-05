@@ -17,5 +17,12 @@
   "website": "https://www.fourhorsemenbk.com/",
   "lat": 40.712926,
   "lng": -73.9575,
-  "placeId": "ChIJbTCMl19ZwokRUohF137p9cQ"
+  "placeId": "ChIJbTCMl19ZwokRUohF137p9cQ",
+  "michelinId": "1160151",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Nick Curtola",
+  "chefSource": "michelin"
 }

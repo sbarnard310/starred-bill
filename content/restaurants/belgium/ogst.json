@@ -13,5 +13,9 @@
   "website": "https://www.ogst.be/",
   "lat": 50.9294564,
   "lng": 5.3335502,
-  "placeId": "ChIJY1ZdgoAhwUcRBpJOOB5BaEc"
+  "placeId": "ChIJY1ZdgoAhwUcRBpJOOB5BaEc",
+  "michelinId": "456120",
+  "diets": [
+    "vegetarian"
+  ]
 }

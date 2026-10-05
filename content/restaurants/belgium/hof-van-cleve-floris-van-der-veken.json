@@ -16,5 +16,12 @@
   "website": "https://www.hofvancleve.com/",
   "lat": 50.9035909,
   "lng": 3.509638,
-  "placeId": "ChIJ6U6ntWgUw0cRZrq8q_ohqUU"
+  "placeId": "ChIJ6U6ntWgUw0cRZrq8q_ohqUU",
+  "michelinId": "209968",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Peter Goossens",
+  "chefSource": "michelin"
 }

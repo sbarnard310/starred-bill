@@ -15,5 +15,11 @@
   "website": "https://villa-salone.com",
   "lat": 43.64144,
   "lng": 5.0986,
-  "placeId": "ChIJSyyhL0f_yRIRv9yTrhLHZKQ"
+  "placeId": "ChIJSyyhL0f_yRIRv9yTrhLHZKQ",
+  "michelinId": "1191299",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alexandre Lechêne",
+  "chefSource": "site"
 }

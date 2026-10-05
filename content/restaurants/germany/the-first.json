@@ -13,5 +13,11 @@
   "website": "https://restaurant-thefirst.de/",
   "lat": 50.8747868,
   "lng": 11.3423392,
-  "placeId": "ChIJdy0OQu8HpEcRho36bmcHiz8"
+  "placeId": "ChIJdy0OQu8HpEcRho36bmcHiz8",
+  "michelinId": "1205382",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marcello Fabbri",
+  "chefSource": "michelin"
 }

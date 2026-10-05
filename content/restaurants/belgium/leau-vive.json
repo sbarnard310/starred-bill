@@ -13,5 +13,9 @@
   "website": "https://www.eau-vive.be/",
   "lat": 50.3636851,
   "lng": 4.8469885,
-  "placeId": "ChIJ481JQ9qWwUcRCnIhVZ_EeJY"
+  "placeId": "ChIJ481JQ9qWwUcRCnIhVZ_EeJY",
+  "michelinId": "210323",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -26,5 +26,10 @@
   "website": "https://www.elite-concepts.com/home/main/en",
   "lat": 22.294118,
   "lng": 114.1741651,
-  "placeId": "ChIJG2ro3_IABDQR5kCz_zPZNvE"
+  "placeId": "ChIJG2ro3_IABDQR5kCz_zPZNvE",
+  "michelinId": "1191719",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

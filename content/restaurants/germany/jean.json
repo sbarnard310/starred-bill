@@ -13,5 +13,11 @@
   "website": "https://www.hotel-frankenbach.de/",
   "lat": 50.0273185,
   "lng": 8.1215575,
-  "placeId": "ChIJnzSH5SuVvUcR8RELjSTj0Wk"
+  "placeId": "ChIJnzSH5SuVvUcR8RELjSTj0Wk",
+  "michelinId": "358982",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Johannes Frankenbach",
+  "chefSource": "michelin"
 }

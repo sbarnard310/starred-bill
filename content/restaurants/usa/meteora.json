@@ -17,5 +17,12 @@
   "website": "https://meteora.la/",
   "lat": 34.083694,
   "lng": -118.339832,
-  "placeId": "ChIJ9-5CroC5woARfbFyVsudp1c"
+  "placeId": "ChIJ9-5CroC5woARfbFyVsudp1c",
+  "michelinId": "1203535",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jordan Kahn",
+  "chefSource": "michelin"
 }

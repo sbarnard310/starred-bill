@@ -20,5 +20,12 @@
   "website": "https://alexanderhotels.co.uk/great-fosters/food-drink/the-tudor-pass/",
   "lat": 51.417275,
   "lng": -0.544566,
-  "placeId": "ChIJd-VQWkZ3dkgRFwu0WogdyT8"
+  "placeId": "ChIJd-VQWkZ3dkgRFwu0WogdyT8",
+  "michelinId": "1204973",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Stefano Di Giosia",
+  "chefSource": "site"
 }

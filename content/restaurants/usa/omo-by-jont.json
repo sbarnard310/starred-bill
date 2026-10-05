@@ -15,5 +15,8 @@
   "website": "https://www.omobyjont.com/",
   "lat": 28.5951074,
   "lng": -81.350583,
-  "placeId": "ChIJO3PrEmdx54gRW1c11w1Yxlo"
+  "placeId": "ChIJO3PrEmdx54gRW1c11w1Yxlo",
+  "michelinId": "1212846",
+  "chef": "Ryan Ratino",
+  "chefSource": "michelin"
 }

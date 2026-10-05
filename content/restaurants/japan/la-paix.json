@@ -30,5 +30,8 @@
   "website": "https://lapaix-m.jp/",
   "lat": 35.685136,
   "lng": 139.775586,
-  "placeId": "ChIJ6dVNgFaJGGARe4Y9eEX_EdQ"
+  "placeId": "ChIJ6dVNgFaJGGARe4Y9eEX_EdQ",
+  "michelinId": "1194221",
+  "chef": "Ippei Matsumoto",
+  "chefSource": "michelin"
 }

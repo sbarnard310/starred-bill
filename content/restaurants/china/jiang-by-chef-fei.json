@@ -12,5 +12,11 @@
   "website": "https://www.mandarinoriental.com/en/guangzhou/tianhe/dine/jiang-by-chef-fei",
   "lat": 23.1371978,
   "lng": 113.327758,
-  "placeId": "ChIJCTuG6f_-AjQRd1vNj2O3Y4s"
+  "placeId": "ChIJCTuG6f_-AjQRd1vNj2O3Y4s",
+  "michelinId": "559154",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

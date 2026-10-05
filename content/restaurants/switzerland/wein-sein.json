@@ -12,5 +12,13 @@
   "website": "https://www.weinundsein.ch/",
   "lat": 46.9475264,
   "lng": 7.4496372,
-  "placeId": "ChIJLxGbdcQ5jkcRCqTWtJffF-Y"
+  "placeId": "ChIJLxGbdcQ5jkcRCqTWtJffF-Y",
+  "michelinId": "566413",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Pascal Melliger",
+  "chefSource": "michelin"
 }

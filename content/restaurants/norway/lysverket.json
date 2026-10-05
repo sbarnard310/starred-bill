@@ -13,5 +13,12 @@
   "website": "https://www.lysverket.no",
   "lat": 60.3893076,
   "lng": 5.3289615,
-  "placeId": "ChIJA5Bcbqn-PEYRiN3lhF2jfvw"
+  "placeId": "ChIJA5Bcbqn-PEYRiN3lhF2jfvw",
+  "michelinId": "479557",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christopher Haatuft",
+  "chefSource": "michelin"
 }

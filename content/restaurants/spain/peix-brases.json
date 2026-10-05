@@ -14,5 +14,9 @@
   "website": "https://www.peixibrases.com/",
   "lat": 38.8460357,
   "lng": 0.1079727,
-  "placeId": "ChIJS3LRUhkbnhIRez6lBvUw6Yk"
+  "placeId": "ChIJS3LRUhkbnhIRez6lBvUw6Yk",
+  "michelinId": "263413",
+  "diets": [
+    "vegetarian"
+  ]
 }

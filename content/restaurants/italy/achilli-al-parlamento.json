@@ -29,5 +29,11 @@
   "website": "https://achilli.restaurant/",
   "lat": 41.902462,
   "lng": 12.476943,
-  "placeId": "ChIJyez7alFgLxMRkieOc9RPtR8"
+  "placeId": "ChIJyez7alFgLxMRkieOc9RPtR8",
+  "michelinId": "320484",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Pierluigi Gallo",
+  "chefSource": "site"
 }

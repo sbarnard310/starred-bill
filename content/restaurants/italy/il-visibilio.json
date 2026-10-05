@@ -20,5 +20,10 @@
   "website": "https://www.ilvisibilio.com/",
   "lat": 43.391583,
   "lng": 11.389824,
-  "placeId": "ChIJ58QsL3LNKxMReeL9HBycFVA"
+  "placeId": "ChIJ58QsL3LNKxMReeL9HBycFVA",
+  "michelinId": "1202978",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

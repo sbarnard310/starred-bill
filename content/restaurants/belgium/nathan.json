@@ -12,5 +12,9 @@
   "website": "https://www.restaurant-nathan.be/",
   "lat": 51.2231806,
   "lng": 4.4027957,
-  "placeId": "ChIJbfI9blj2w0cRlV7XhRfJGAk"
+  "placeId": "ChIJbfI9blj2w0cRlV7XhRfJGAk",
+  "michelinId": "523867",
+  "diets": [
+    "vegetarian"
+  ]
 }

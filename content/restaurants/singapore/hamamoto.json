@@ -24,5 +24,8 @@
   "website": "https://hamamoto.com.sg/",
   "lat": 1.277941,
   "lng": 103.844184,
-  "placeId": "ChIJL0GR3AIZ2jER0yJEIL0jQGE"
+  "placeId": "ChIJL0GR3AIZ2jER0yJEIL0jQGE",
+  "michelinId": "1200572",
+  "chef": "Kazuhiro Hamamoto",
+  "chefSource": "site"
 }

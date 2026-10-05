@@ -23,5 +23,11 @@
   "website": "https://www.chevredor.fr/restaurant-gastronomique-chevre-dor/",
   "lat": 43.727378,
   "lng": 7.3620885,
-  "placeId": "ChIJvz5LoCnDzRIR7Kp0maxYW7Y"
+  "placeId": "ChIJvz5LoCnDzRIR7Kp0maxYW7Y",
+  "michelinId": "11132",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Tom Meyer",
+  "chefSource": "michelin"
 }

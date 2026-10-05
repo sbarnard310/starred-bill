@@ -14,5 +14,12 @@
   "website": "https://www.zilte.be/",
   "lat": 51.228828,
   "lng": 4.4047543,
-  "placeId": "ChIJBXfAoKQ1wUcR6RTA6Ko7laI"
+  "placeId": "ChIJBXfAoKQ1wUcR6RTA6Ko7laI",
+  "michelinId": "319866",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Viki Geunes",
+  "chefSource": "site"
 }

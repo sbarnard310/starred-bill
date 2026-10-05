@@ -13,5 +13,11 @@
   "website": "https://www.asadoralfonso.com",
   "lat": 14.1114544,
   "lng": 120.8833073,
-  "placeId": "ChIJD-dRdxGdvTMRVx7Gs54soEg"
+  "placeId": "ChIJD-dRdxGdvTMRVx7Gs54soEg",
+  "michelinId": "1241241",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Rodrigo Andres Osorio",
+  "chefSource": "michelin"
 }

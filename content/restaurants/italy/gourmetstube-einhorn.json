@@ -13,5 +13,11 @@
   "website": "https://www.stafler.com/it/hotel-gourmet-alto-adige.html",
   "lat": 46.8511074,
   "lng": 11.5204481,
-  "placeId": "ChIJhVecT7yqgkcR06OIqxuF1hU"
+  "placeId": "ChIJhVecT7yqgkcR06OIqxuF1hU",
+  "michelinId": "162883",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Peter Girtler",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,10 @@
   "lat": 51.5177438,
   "lng": -0.13691,
   "placeId": "ChIJU7uHDYcbdkgRttS28-dNO7E",
-  "noLunch": false
+  "noLunch": false,
+  "michelinId": "1189211",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

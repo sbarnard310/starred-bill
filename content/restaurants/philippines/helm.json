@@ -12,5 +12,10 @@
   "website": "https://www.joshboutwood.com/restaurants/helm",
   "lat": 14.557905,
   "lng": 121.0252505,
-  "placeId": "ChIJ5xodzjbJlzMRR-CqxmDTUMY"
+  "placeId": "ChIJ5xodzjbJlzMRR-CqxmDTUMY",
+  "michelinId": "1216111",
+  "diets": [
+    "halal",
+    "kosher"
+  ]
 }

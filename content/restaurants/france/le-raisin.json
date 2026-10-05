@@ -23,5 +23,8 @@
   "website": "https://www.leraisin.com/",
   "lat": 46.4340961,
   "lng": 4.9390332,
-  "placeId": "ChIJ40jo_uMU80cRgLzwY3WU3Y8"
+  "placeId": "ChIJ40jo_uMU80cRgLzwY3WU3Y8",
+  "michelinId": "7066",
+  "chef": "Frédéric Michel",
+  "chefSource": "site"
 }

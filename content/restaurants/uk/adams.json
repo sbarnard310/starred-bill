@@ -21,5 +21,15 @@
   "website": "https://www.adamsrestaurant.co.uk/",
   "lat": 52.479936,
   "lng": -1.901363,
-  "placeId": "ChIJrZ_-BYy8cEgRkqxbY9bSL1o"
+  "placeId": "ChIJrZ_-BYy8cEgRkqxbY9bSL1o",
+  "michelinId": "384405",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Adam Stokes",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://restaurant-papilio.cz/",
   "lat": 49.9933899,
   "lng": 14.2048483,
-  "placeId": "ChIJP8NUJpi9C0cRT6B19xq1Mrs"
+  "placeId": "ChIJP8NUJpi9C0cRT6B19xq1Mrs",
+  "michelinId": "1211491",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jan Knedla",
+  "chefSource": "michelin"
 }

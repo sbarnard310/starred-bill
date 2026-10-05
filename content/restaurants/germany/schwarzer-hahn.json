@@ -15,5 +15,9 @@
   "website": "https://www.deidesheimerhof.de/de/home",
   "lat": 49.4081899,
   "lng": 8.1873598,
-  "placeId": "ChIJteSCbdE3lkcR6vnyHNO8Nrk"
+  "placeId": "ChIJteSCbdE3lkcR6vnyHNO8Nrk",
+  "michelinId": "72005",
+  "diets": [
+    "vegetarian"
+  ]
 }

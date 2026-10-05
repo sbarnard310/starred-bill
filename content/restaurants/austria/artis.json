@@ -15,5 +15,9 @@
   "website": "https://restaurant-artis.at",
   "lat": 47.0689865,
   "lng": 15.4390449,
-  "placeId": "ChIJUWqSQAs1bkcR0tUCRd96uHs"
+  "placeId": "ChIJUWqSQAs1bkcR0tUCRd96uHs",
+  "michelinId": "1212496",
+  "diets": [
+    "vegetarian"
+  ]
 }

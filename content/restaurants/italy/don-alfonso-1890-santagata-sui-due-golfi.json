@@ -13,5 +13,13 @@
   "website": "https://www.donalfonso.com/",
   "lat": 40.6078108,
   "lng": 14.3737397,
-  "placeId": "ChIJp-2DJAmcOxMRu3OrabnWz5s"
+  "placeId": "ChIJp-2DJAmcOxMRu3OrabnWz5s",
+  "michelinId": "151521",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ernesto Iaccarino",
+  "chefSource": "michelin"
 }

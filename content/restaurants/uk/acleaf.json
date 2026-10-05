@@ -16,5 +16,13 @@
   "website": "https://www.acleaf.co.uk/",
   "lat": 50.401637,
   "lng": -4.056674,
-  "placeId": "ChIJcS1N3gHtbEgR4rl0x-kU9r8"
+  "placeId": "ChIJcS1N3gHtbEgR4rl0x-kU9r8",
+  "michelinId": "1191312",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Scott Paton",
+  "chefSource": "site"
 }

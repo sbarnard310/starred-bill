@@ -14,5 +14,8 @@
   "website": "https://kapposato.com/",
   "lat": 43.7034841,
   "lng": -79.3880837,
-  "placeId": "ChIJvx9VEXAzK4gRGjlwDaXo68g"
+  "placeId": "ChIJvx9VEXAzK4gRGjlwDaXo68g",
+  "michelinId": "1206440",
+  "chef": "Takeshi Sato",
+  "chefSource": "michelin"
 }

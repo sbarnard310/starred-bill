@@ -13,5 +13,14 @@
   "website": "https://lapeca.it/",
   "lat": 45.3848934,
   "lng": 11.3990641,
-  "placeId": "ChIJV71tzOU-f0cROUwQmHRoAUM"
+  "placeId": "ChIJV71tzOU-f0cROUwQmHRoAUM",
+  "michelinId": "138506",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Nicola Portinari",
+  "chefSource": "michelin"
 }

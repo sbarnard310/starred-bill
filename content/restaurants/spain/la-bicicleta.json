@@ -13,5 +13,16 @@
   "website": "https://www.labicicletahoznayo.com",
   "lat": 43.3902515,
   "lng": -3.7020062,
-  "placeId": "ChIJHS3n4FXKTg0RYBmHJVM679g"
+  "placeId": "ChIJHS3n4FXKTg0RYBmHJVM679g",
+  "michelinId": "437453",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Eduardo Quintana",
+  "chefSource": "michelin"
 }

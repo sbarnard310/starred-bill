@@ -25,5 +25,11 @@
   "website": "https://restaurant.alangeaam.fr/",
   "lat": 48.8715425,
   "lng": 2.2924321,
-  "placeId": "ChIJW_uHie5v5kcRxSkJ0_OHC7k"
+  "placeId": "ChIJW_uHie5v5kcRxSkJ0_OHC7k",
+  "michelinId": "529199",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alan Geaam",
+  "chefSource": "site"
 }

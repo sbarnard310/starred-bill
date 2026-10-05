@@ -12,5 +12,8 @@
   "website": "https://www.wildcommoncharleston.com/",
   "lat": 32.7907327,
   "lng": -79.9460589,
-  "placeId": "ChIJzUn6Qi17_ogRX1VX24enKTE"
+  "placeId": "ChIJzUn6Qi17_ogRX1VX24enKTE",
+  "michelinId": "1215124",
+  "chef": "Orlando Pagán",
+  "chefSource": "michelin"
 }

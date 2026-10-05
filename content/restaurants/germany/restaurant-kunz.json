@@ -13,5 +13,11 @@
   "website": "https://www.restaurant-kunz.de",
   "lat": 49.4956618,
   "lng": 7.1124796,
-  "placeId": "ChIJhyoWbxKVlUcRjE-l4COdEuY"
+  "placeId": "ChIJhyoWbxKVlUcRjE-l4COdEuY",
+  "michelinId": "77308",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Patrick Jenal",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://www.restaurant-herzig.at/",
   "lat": 48.2001109,
   "lng": 16.3168728,
-  "placeId": "ChIJhx36L7EHbUcRgtI0wP_b_Vw"
+  "placeId": "ChIJhx36L7EHbUcRgtI0wP_b_Vw",
+  "michelinId": "1181264",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sören Herzig",
+  "chefSource": "michelin"
 }

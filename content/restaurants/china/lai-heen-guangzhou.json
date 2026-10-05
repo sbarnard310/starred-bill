@@ -9,5 +9,13 @@
   "sourceType": "none",
   "website": "https://www.ritzcarlton.com/en/hotels/canrz-the-ritz-carlton-guangzhou/dining/",
   "lat": 23.11883,
-  "lng": 113.321816
+  "lng": 113.321816,
+  "michelinId": "559155",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Aiden Huang",
+  "chefSource": "site"
 }

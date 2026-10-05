@@ -16,5 +16,11 @@
   "website": "https://www.kaiserhof-rv.de/restaurant-kaisersaal/",
   "lat": 47.7834784,
   "lng": 9.6098769,
-  "placeId": "ChIJPRkpnZWvm0cRc0fgO95yTeI"
+  "placeId": "ChIJPRkpnZWvm0cRc0fgO95yTeI",
+  "michelinId": "1204788",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Kevin Leitner",
+  "chefSource": "michelin"
 }

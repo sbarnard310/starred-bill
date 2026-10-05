@@ -29,5 +29,11 @@
   "website": "https://hakunei.com/",
   "lat": 35.657009,
   "lng": 139.722224,
-  "placeId": "ChIJlc_cJz-LGGARuZ65d4ldMr8"
+  "placeId": "ChIJlc_cJz-LGGARuZ65d4ldMr8",
+  "michelinId": "1212685",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

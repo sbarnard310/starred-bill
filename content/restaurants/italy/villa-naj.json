@@ -25,5 +25,8 @@
   "website": "https://www.villanaj.it/",
   "lat": 44.982134,
   "lng": 9.091064,
-  "placeId": "ChIJg94PNnsth0cRjx4xAGqx9BQ"
+  "placeId": "ChIJg94PNnsth0cRjx4xAGqx9BQ",
+  "michelinId": "1085221",
+  "chef": "Dario Fisichella",
+  "chefSource": "site"
 }

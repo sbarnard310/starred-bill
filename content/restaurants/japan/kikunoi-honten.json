@@ -12,5 +12,8 @@
   "website": "https://kikunoi.jp/",
   "lat": 35.001535,
   "lng": 135.782079,
-  "placeId": "ChIJVVXF5doIAWARUetIixOU-sw"
+  "placeId": "ChIJVVXF5doIAWARUetIixOU-sw",
+  "michelinId": "1192932",
+  "chef": "Yoshihiro Murata",
+  "chefSource": "michelin"
 }

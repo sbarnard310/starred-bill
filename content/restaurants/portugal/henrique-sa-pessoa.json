@@ -12,5 +12,11 @@
   "website": "https://www.henriquesapessoa.com/",
   "lat": 38.7235618,
   "lng": -9.1559051,
-  "placeId": "ChIJs47gSDAzGQ0Rh8OWluBD79k"
+  "placeId": "ChIJs47gSDAzGQ0Rh8OWluBD79k",
+  "michelinId": "495726",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Henrique Sá Pessoa",
+  "chefSource": "michelin"
 }

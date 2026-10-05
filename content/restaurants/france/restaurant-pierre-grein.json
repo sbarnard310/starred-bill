@@ -24,5 +24,13 @@
   "website": "https://restaurantpierregrein.fr/",
   "lat": 43.830996,
   "lng": 5.7987402,
-  "placeId": "ChIJLTYaZ8nNyxIRkHoy_cfbcvE"
+  "placeId": "ChIJLTYaZ8nNyxIRkHoy_cfbcvE",
+  "michelinId": "511500",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Pierre Grein",
+  "chefSource": "michelin"
 }

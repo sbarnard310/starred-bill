@@ -27,5 +27,14 @@
   "website": "https://www.lescols.com/",
   "lat": 42.19459,
   "lng": 2.501098,
-  "placeId": "ChIJJQAGN_XKuhIRj4fev4m_6FI"
+  "placeId": "ChIJJQAGN_XKuhIRj4fev4m_6FI",
+  "michelinId": "221957",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Fina Puigdevall / Martina Puigvert Puigdevall",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.cotodequevedo.com",
   "lat": 38.5798152,
   "lng": -3.0492196,
-  "placeId": "ChIJi84FowUrbw0ROdz9cB3ePWM"
+  "placeId": "ChIJi84FowUrbw0ROdz9cB3ePWM",
+  "michelinId": "1077227",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "José Antonio Medina",
+  "chefSource": "michelin"
 }

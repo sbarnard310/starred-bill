@@ -13,5 +13,11 @@
   "website": "https://www.zurpost.eu",
   "lat": 51.0324091,
   "lng": 7.1150119,
-  "placeId": "ChIJDX9nzOgpv0cRQ0whgrXtDJU"
+  "placeId": "ChIJDX9nzOgpv0cRQ0whgrXtDJU",
+  "michelinId": "83223",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alejandro Wilbrand and Christopher Wilbrand",
+  "chefSource": "michelin"
 }

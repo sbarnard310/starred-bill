@@ -21,5 +21,11 @@
   "website": "https://www.amaya.biz/",
   "lat": 51.4993036,
   "lng": -0.1571945,
-  "placeId": "ChIJp_GF9TsFdkgR-LPVooRUYyE"
+  "placeId": "ChIJp_GF9TsFdkgR-LPVooRUYyE",
+  "michelinId": "69643",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "halal"
+  ]
 }

@@ -13,5 +13,12 @@
   "website": "https://frederikshoj.com/",
   "lat": 56.124947,
   "lng": 10.2089264,
-  "placeId": "ChIJw6FQimRATEYRIG6puzRPJMU"
+  "placeId": "ChIJw6FQimRATEYRIG6puzRPJMU",
+  "michelinId": "446229",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

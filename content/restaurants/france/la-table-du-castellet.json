@@ -15,5 +15,15 @@
   "website": "https://www.hotelducastellet.net/fr/la-table-du-castellet.html",
   "lat": 43.2499288,
   "lng": 5.7838874,
-  "placeId": "ChIJSaLF9W8JyRIRQBNfndvCzD0"
+  "placeId": "ChIJSaLF9W8JyRIRQBNfndvCzD0",
+  "michelinId": "1207771",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Fabien Ferré",
+  "chefSource": "michelin"
 }

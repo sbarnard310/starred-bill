@@ -24,5 +24,8 @@
   "website": "https://www.fft-crony.jp/",
   "lat": 35.655769,
   "lng": 139.743334,
-  "placeId": "ChIJz29nSWWLGGARQibtSAIQLP0"
+  "placeId": "ChIJz29nSWWLGGARQibtSAIQLP0",
+  "michelinId": "1194937",
+  "chef": "Michihiro Haruta",
+  "chefSource": "michelin"
 }

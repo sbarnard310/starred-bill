@@ -13,5 +13,14 @@
   "website": "https://www.ristoranteloreleisorrento.com",
   "lat": 40.6298333,
   "lng": 14.3813239,
-  "placeId": "ChIJ6SHC4ReZOxMRFrm8hwdATQQ"
+  "placeId": "ChIJ6SHC4ReZOxMRFrm8hwdATQQ",
+  "michelinId": "1192559",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ciro Sicignano",
+  "chefSource": "michelin"
 }

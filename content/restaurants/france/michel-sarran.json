@@ -13,5 +13,9 @@
   "website": "https://www.michel-sarran.com",
   "lat": 43.6072744,
   "lng": 1.4345204,
-  "placeId": "ChIJN5UmzGe7rhIRnmeYt85tFYc"
+  "placeId": "ChIJN5UmzGe7rhIRnmeYt85tFYc",
+  "michelinId": "8963",
+  "diets": [
+    "vegetarian"
+  ]
 }

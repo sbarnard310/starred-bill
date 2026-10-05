@@ -21,5 +21,11 @@
   "website": "https://www.veeraswamy.com/",
   "lat": 51.5099386,
   "lng": -0.1378476,
-  "placeId": "ChIJnVRkK9QEdkgRz8uiqq2HfjM"
+  "placeId": "ChIJnVRkK9QEdkgRz8uiqq2HfjM",
+  "michelinId": "69433",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "halal"
+  ]
 }

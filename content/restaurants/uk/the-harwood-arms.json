@@ -20,5 +20,12 @@
   "website": "https://harwoodarms.com/",
   "lat": 51.4828975,
   "lng": -0.1964558,
-  "placeId": "ChIJYbZdgoUPdkgRrBtAYcMgkBc"
+  "placeId": "ChIJYbZdgoUPdkgRrBtAYcMgkBc",
+  "michelinId": "256308",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Josh Cutress",
+  "chefSource": "site"
 }

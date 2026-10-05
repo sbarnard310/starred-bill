@@ -13,5 +13,15 @@
   "website": "https://www.teruarurla.com/",
   "lat": 38.2524197,
   "lng": 26.739059,
-  "placeId": "ChIJhZHd4V2TuxQRcnUStkAqXkA"
+  "placeId": "ChIJhZHd4V2TuxQRcnUStkAqXkA",
+  "michelinId": "1208172",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Osman Serdaroğlu",
+  "chefSource": "michelin"
 }

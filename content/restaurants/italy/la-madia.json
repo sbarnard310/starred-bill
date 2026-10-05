@@ -15,5 +15,13 @@
   "website": "https://www.ristorantelamadia.it/",
   "lat": 37.1070131,
   "lng": 13.9338055,
-  "placeId": "ChIJ-6MwyjVeEBMRr7QLyWOtM9Y"
+  "placeId": "ChIJ-6MwyjVeEBMRr7QLyWOtM9Y",
+  "michelinId": "159609",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Pino Cuttaia",
+  "chefSource": "michelin"
 }

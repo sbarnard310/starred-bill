@@ -13,5 +13,13 @@
   "website": "https://www.locandaorico.ch/",
   "lat": 46.1921056,
   "lng": 9.0189483,
-  "placeId": "ChIJQxATSDZKhEcRod926TUwDMk"
+  "placeId": "ChIJQxATSDZKhEcRod926TUwDMk",
+  "michelinId": "178844",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Lorenzo Albrici",
+  "chefSource": "site"
 }

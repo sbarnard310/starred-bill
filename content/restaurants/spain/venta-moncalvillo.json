@@ -13,5 +13,15 @@
   "website": "https://ventamoncalvillo.com/web/",
   "lat": 42.3712413,
   "lng": -2.5804578,
-  "placeId": "ChIJlSjf5ixQRQ0Rgcbjyrf31fM"
+  "placeId": "ChIJlSjf5ixQRQ0Rgcbjyrf31fM",
+  "michelinId": "219828",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Ignacio Echapresto",
+  "chefSource": "michelin"
 }

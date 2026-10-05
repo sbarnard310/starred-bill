@@ -17,5 +17,12 @@
   "website": "https://www.tuomenyc.com/",
   "lat": 40.724194,
   "lng": -73.9828,
-  "placeId": "ChIJU7iTdXhZwokR2n5XFHPVdAY"
+  "placeId": "ChIJU7iTdXhZwokR2n5XFHPVdAY",
+  "michelinId": "468067",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Thomas Chen",
+  "chefSource": "michelin"
 }

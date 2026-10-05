@@ -13,5 +13,11 @@
   "website": "https://www.360dubrovnik.com/",
   "lat": 42.6415506,
   "lng": 18.1115484,
-  "placeId": "ChIJQwHbajMLTBMRfawgswpz8RA"
+  "placeId": "ChIJQwHbajMLTBMRfawgswpz8RA",
+  "michelinId": "480082",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marijo Curić",
+  "chefSource": "michelin"
 }

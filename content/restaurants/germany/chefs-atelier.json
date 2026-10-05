@@ -15,5 +15,11 @@
   "website": "https://www.chefsatelier.de",
   "lat": 51.3836464,
   "lng": 6.9957349,
-  "placeId": "ChIJRUf2aQDFuEcRd9usSE1Z5CE"
+  "placeId": "ChIJRUf2aQDFuEcRd9usSE1Z5CE",
+  "michelinId": "1217602",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alexander Hoppe",
+  "chefSource": "michelin"
 }

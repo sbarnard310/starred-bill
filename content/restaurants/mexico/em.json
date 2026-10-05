@@ -18,5 +18,14 @@
   "website": "https://itsemilia.rest/",
   "lat": 19.4152551,
   "lng": -99.1620626,
-  "placeId": "ChIJ1bf3HX__0YURqxkTy1DKP9s"
+  "placeId": "ChIJ1bf3HX__0YURqxkTy1DKP9s",
+  "michelinId": "1208187",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Lucho Martinez",
+  "chefSource": "michelin"
 }

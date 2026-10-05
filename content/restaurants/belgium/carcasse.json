@@ -15,5 +15,9 @@
   "website": "https://www.carcasse.be/",
   "lat": 51.1098819,
   "lng": 2.6110153,
-  "placeId": "ChIJhzjOFACX3EcRePILDQnM_oU"
+  "placeId": "ChIJhzjOFACX3EcRePILDQnM_oU",
+  "michelinId": "456100",
+  "diets": [
+    "vegetarian"
+  ]
 }

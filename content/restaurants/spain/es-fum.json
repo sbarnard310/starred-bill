@@ -16,5 +16,12 @@
   "website": "https://www.restaurant-esfum.com/",
   "lat": 39.5282611,
   "lng": 2.5506805,
-  "placeId": "ChIJvcQA-bqOlxIR18OjsvjtgSY"
+  "placeId": "ChIJvcQA-bqOlxIR18OjsvjtgSY",
+  "michelinId": "227651",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Miguel Navarro",
+  "chefSource": "michelin"
 }

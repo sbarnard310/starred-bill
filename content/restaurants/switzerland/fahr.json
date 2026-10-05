@@ -16,5 +16,14 @@
   "website": "https://fahr-sulz.ch/",
   "lat": 47.377839,
   "lng": 8.3210191,
-  "placeId": "ChIJUwQJdowRkEcR5UFzSTOpaYo"
+  "placeId": "ChIJUwQJdowRkEcR5UFzSTOpaYo",
+  "michelinId": "1157260",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Manuel Steigmeier",
+  "chefSource": "michelin"
 }

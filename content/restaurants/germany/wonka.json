@@ -15,5 +15,9 @@
   "website": "https://www.restaurant-wonka.de/",
   "lat": 49.4586974,
   "lng": 11.0648669,
-  "placeId": "ChIJvaULng2fDEER-AG2as_2iFw"
+  "placeId": "ChIJvaULng2fDEER-AG2as_2iFw",
+  "michelinId": "76166",
+  "diets": [
+    "vegan"
+  ]
 }

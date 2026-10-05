@@ -13,5 +13,9 @@
   "website": "https://gaptrast.no/",
   "lat": 60.392238,
   "lng": 5.3164713,
-  "placeId": "ChIJgUiMla39PEYRa8mIQgCsksg"
+  "placeId": "ChIJgUiMla39PEYRa8mIQgCsksg",
+  "michelinId": "1240771",
+  "diets": [
+    "vegetarian"
+  ]
 }

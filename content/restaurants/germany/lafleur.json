@@ -15,5 +15,12 @@
   "website": "https://www.restaurant-lafleur.de/",
   "lat": 50.1214911,
   "lng": 8.6565825,
-  "placeId": "ChIJQW5EY0UJvUcR09Vpe75ZD1s"
+  "placeId": "ChIJQW5EY0UJvUcR09Vpe75ZD1s",
+  "michelinId": "332461",
+  "diets": [
+    "vegetarian-menu",
+    "vegan"
+  ],
+  "chef": "Andreas Krolik",
+  "chefSource": "site"
 }

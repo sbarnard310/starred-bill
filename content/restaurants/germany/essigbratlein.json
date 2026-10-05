@@ -12,5 +12,13 @@
   "website": "https://essigbraetlein.de/",
   "lat": 49.455062,
   "lng": 11.0748188,
-  "placeId": "ChIJ47pfsa9Xn0cRcvyrpJd1XFg"
+  "placeId": "ChIJ47pfsa9Xn0cRcvyrpJd1XFg",
+  "michelinId": "76161",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Andree Köthe",
+  "chefSource": "michelin"
 }

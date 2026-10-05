@@ -27,5 +27,11 @@
   "website": "https://www.cityofdreamsmacau.com/en/dining/jade-dragon",
   "lat": 22.149137,
   "lng": 113.56715,
-  "placeId": "ChIJIb6sPwRwATQR7XJPFXV9J-M"
+  "placeId": "ChIJIb6sPwRwATQR7XJPFXV9J-M",
+  "michelinId": "417795",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Au Yeung",
+  "chefSource": "site"
 }

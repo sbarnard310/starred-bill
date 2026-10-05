@@ -13,5 +13,12 @@
   "website": "https://restaurant-gutlaerchenhof.de/",
   "lat": 51.0362026,
   "lng": 6.7865908,
-  "placeId": "ChIJTwmPesE2v0cR8FCrRzYL6cY"
+  "placeId": "ChIJTwmPesE2v0cR8FCrRzYL6cY",
+  "michelinId": "76694",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Torben Schuster",
+  "chefSource": "michelin"
 }

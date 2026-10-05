@@ -18,5 +18,13 @@
   "website": "https://hotelvillaretiro.com/",
   "lat": 40.912312,
   "lng": 0.490225,
-  "placeId": "ChIJK6c30PjmoBIRa80-tCTfXaA"
+  "placeId": "ChIJK6c30PjmoBIRa80-tCTfXaA",
+  "michelinId": "230383",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Fran López",
+  "chefSource": "michelin"
 }

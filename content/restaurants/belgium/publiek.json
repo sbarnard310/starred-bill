@@ -20,5 +20,12 @@
   "website": "https://www.publiekgent.be/",
   "lat": 51.0577461,
   "lng": 3.7329964,
-  "placeId": "ChIJG55QGjZxw0cR8A2N2JmgOmY"
+  "placeId": "ChIJG55QGjZxw0cR8A2N2JmgOmY",
+  "michelinId": "391826",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

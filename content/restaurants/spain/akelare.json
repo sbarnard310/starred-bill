@@ -26,5 +26,11 @@
   "website": "https://akelarre.net/",
   "lat": 43.307698,
   "lng": -2.043635,
-  "placeId": "ChIJXdMPlZ6wUQ0RgkKFNtNEFXE"
+  "placeId": "ChIJXdMPlZ6wUQ0RgkKFNtNEFXE",
+  "michelinId": "219922",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Pedro Subijana",
+  "chefSource": "michelin"
 }

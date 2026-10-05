@@ -13,5 +13,12 @@
   "website": "https://www.villacrespi.it",
   "lat": 45.7964778,
   "lng": 8.4159486,
-  "placeId": "ChIJCbA4Ku4MhkcRDYaPQYuwaCI"
+  "placeId": "ChIJCbA4Ku4MhkcRDYaPQYuwaCI",
+  "michelinId": "143798",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Antonino Cannavacciuolo",
+  "chefSource": "michelin"
 }

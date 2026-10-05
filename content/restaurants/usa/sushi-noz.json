@@ -17,5 +17,8 @@
   "website": "https://www.sushinoz.com/",
   "lat": 40.77384,
   "lng": -73.958275,
-  "placeId": "ChIJmUAVNb5YwokRyFZIbhQ_cxM"
+  "placeId": "ChIJmUAVNb5YwokRyFZIbhQ_cxM",
+  "michelinId": "562513",
+  "chef": "Nozomu Abe",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,9 @@
   "website": "https://www.restaurantfinefleur.be/",
   "lat": 51.2138105,
   "lng": 4.4055889,
-  "placeId": "ChIJcUPHgIz3w0cRBTsuXyGn5NM"
+  "placeId": "ChIJcUPHgIz3w0cRBTsuXyGn5NM",
+  "michelinId": "1198423",
+  "diets": [
+    "vegetarian"
+  ]
 }

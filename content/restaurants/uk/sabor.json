@@ -20,5 +20,11 @@
   "website": "https://www.saborrestaurants.co.uk/",
   "lat": 51.5114463,
   "lng": -0.1394943,
-  "placeId": "ChIJoXHzltUEdkgRc7QLGWRren0"
+  "placeId": "ChIJoXHzltUEdkgRc7QLGWRren0",
+  "michelinId": "559396",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nieves Barragán Mohacho",
+  "chefSource": "michelin"
 }

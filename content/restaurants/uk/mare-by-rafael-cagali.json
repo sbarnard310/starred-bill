@@ -19,5 +19,12 @@
   "website": "https://www.marehove.com/",
   "lat": 50.827437,
   "lng": -0.169397,
-  "placeId": "ChIJHYDmgXCFdUgRSNW_H5HV6qk"
+  "placeId": "ChIJHYDmgXCFdUgRSNW_H5HV6qk",
+  "michelinId": "1243056",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Rafael Cagali",
+  "chefSource": "michelin"
 }

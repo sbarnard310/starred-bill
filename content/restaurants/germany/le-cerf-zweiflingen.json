@@ -13,5 +13,12 @@
   "website": "https://schlosshotel-friedrichsruhe.de/gourmet-restaurant-le-cerf/",
   "lat": 49.2436455,
   "lng": 9.5258355,
-  "placeId": "ChIJu5kVBGw_mEcR96W2TuWdKWI"
+  "placeId": "ChIJu5kVBGw_mEcR96W2TuWdKWI",
+  "michelinId": "83229",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Boris Rommel",
+  "chefSource": "michelin"
 }

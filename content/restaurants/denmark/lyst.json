@@ -13,5 +13,11 @@
   "website": "https://www.restaurantlyst.com",
   "lat": 55.7060238,
   "lng": 9.5548961,
-  "placeId": "ChIJF2k_dfWDTEYR5Lqy28DEYjI"
+  "placeId": "ChIJF2k_dfWDTEYR5Lqy28DEYjI",
+  "michelinId": "1190011",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Daniel McBurnie",
+  "chefSource": "michelin"
 }

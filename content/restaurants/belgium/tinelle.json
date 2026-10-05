@@ -13,5 +13,12 @@
   "website": "https://tinelle.be/",
   "lat": 51.0336931,
   "lng": 4.4800059,
-  "placeId": "ChIJxRJSYB3lw0cRilR6q9eF2sU"
+  "placeId": "ChIJxRJSYB3lw0cRilR6q9eF2sU",
+  "michelinId": "1154749",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Ken Verschueren",
+  "chefSource": "michelin"
 }

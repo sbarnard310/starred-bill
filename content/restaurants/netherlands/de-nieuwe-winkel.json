@@ -15,5 +15,13 @@
   "website": "https://www.denieuwewinkel.com/",
   "lat": 51.8473893,
   "lng": 5.8595982,
-  "placeId": "ChIJcRC6ZUUIx0cR16USmjNd2jk"
+  "placeId": "ChIJcRC6ZUUIx0cR16USmjNd2jk",
+  "michelinId": "1186134",
+  "diets": [
+    "vegetarian-menu",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Emile van der Staak",
+  "chefSource": "michelin"
 }

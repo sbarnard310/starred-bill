@@ -12,5 +12,15 @@
   "website": "https://www.mamanirestaurant.com/",
   "lat": 32.7984656,
   "lng": -96.8037637,
-  "placeId": "ChIJV-YmSQCZToYRFXUxw3gwL-A"
+  "placeId": "ChIJV-YmSQCZToYRFXUxw3gwL-A",
+  "michelinId": "1243341",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Christophe De Lellis",
+  "chefSource": "michelin"
 }

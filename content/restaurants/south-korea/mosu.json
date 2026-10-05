@@ -28,5 +28,10 @@
   "website": "https://mosuseoul.com/",
   "lat": 37.54115,
   "lng": 126.99615,
-  "placeId": "ChIJJeNdcbOjfDURCzyDecCVK7o"
+  "placeId": "ChIJJeNdcbOjfDURCzyDecCVK7o",
+  "michelinId": "565615",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

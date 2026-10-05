@@ -13,5 +13,11 @@
   "website": "https://www.restaurant-karner.com/",
   "lat": 47.7997713,
   "lng": 12.2825454,
-  "placeId": "ChIJrwsmEmoUdkcRZx538vGmTW4"
+  "placeId": "ChIJrwsmEmoUdkcRZx538vGmTW4",
+  "michelinId": "1196906",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Hannes Fussel",
+  "chefSource": "michelin"
 }

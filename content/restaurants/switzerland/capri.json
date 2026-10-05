@@ -14,5 +14,12 @@
   "website": "https://www.montcervinpalace.ch/restaurants-bars/ristorante-capri/",
   "lat": 46.0218254,
   "lng": 7.7480652,
-  "placeId": "ChIJIYjXKN81j0cR31TnZ7aZ0wA"
+  "placeId": "ChIJIYjXKN81j0cR31TnZ7aZ0wA",
+  "michelinId": "256814",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Salvatore Elefante",
+  "chefSource": "site"
 }

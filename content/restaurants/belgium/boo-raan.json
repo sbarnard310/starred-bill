@@ -15,5 +15,11 @@
   "website": "https://booraan.be",
   "lat": 51.3397049,
   "lng": 3.2893828,
-  "placeId": "ChIJe4QkcNKnxEcRk5bL5ZdYy-E"
+  "placeId": "ChIJe4QkcNKnxEcRk5bL5ZdYy-E",
+  "michelinId": "548670",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Dokkoon Kapueak",
+  "chefSource": "michelin"
 }

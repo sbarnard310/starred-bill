@@ -18,5 +18,13 @@
   "website": "https://www.elevenmadisonpark.com/",
   "lat": 40.741523,
   "lng": -73.987222,
-  "placeId": "ChIJEWbXz6ZZwokRLKmKrtPfVFY"
+  "placeId": "ChIJEWbXz6ZZwokRLKmKrtPfVFY",
+  "michelinId": "68335",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Daniel Humm",
+  "chefSource": "michelin"
 }

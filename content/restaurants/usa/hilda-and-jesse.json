@@ -18,5 +18,12 @@
   "website": "https://www.hildaandjessesf.com/",
   "lat": 37.80009,
   "lng": -122.41101,
-  "placeId": "ChIJOTx-qBuBhYARiQ7wRTHOyj4"
+  "placeId": "ChIJOTx-qBuBhYARiQ7wRTHOyj4",
+  "michelinId": "1203596",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Ollie Liedags",
+  "chefSource": "site"
 }

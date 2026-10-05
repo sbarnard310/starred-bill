@@ -16,5 +16,14 @@
   "website": "https://www.vistarestaurante.com/",
   "lat": 37.1186321,
   "lng": -8.5373631,
-  "placeId": "ChIJsaUQZuIoGw0R-Tp8rYvOp2A"
+  "placeId": "ChIJsaUQZuIoGw0R-Tp8rYvOp2A",
+  "michelinId": "365067",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "João Oliveira",
+  "chefSource": "michelin"
 }

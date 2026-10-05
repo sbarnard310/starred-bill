@@ -13,5 +13,12 @@
   "website": "https://www.attisholz.ch/",
   "lat": 47.2283252,
   "lng": 7.575171,
-  "placeId": "ChIJx4R0q7rXkUcRba4IzGcCtJc"
+  "placeId": "ChIJx4R0q7rXkUcRba4IzGcCtJc",
+  "michelinId": "180151",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jörg Slaschek",
+  "chefSource": "michelin"
 }

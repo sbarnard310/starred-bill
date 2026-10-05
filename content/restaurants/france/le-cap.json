@@ -15,5 +15,12 @@
   "website": "https://www.fourseasons.com/fr/capferrat/dining/restaurants/le_cap/",
   "lat": 43.6770545,
   "lng": 7.3314132,
-  "placeId": "ChIJr5bDI3PbzRIRQ8hg-UCx31A"
+  "placeId": "ChIJr5bDI3PbzRIRQ8hg-UCx31A",
+  "michelinId": "12838",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Yoric Tièche",
+  "chefSource": "michelin"
 }

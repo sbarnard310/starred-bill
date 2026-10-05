@@ -13,5 +13,9 @@
   "website": "https://www.jer.be/",
   "lat": 50.9308937,
   "lng": 5.3406079,
-  "placeId": "ChIJE3ehGIIhwUcR5ozVcID-wOA"
+  "placeId": "ChIJE3ehGIIhwUcR5ozVcID-wOA",
+  "michelinId": "209795",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -29,5 +29,8 @@
   "website": "https://www.montecarlosbm.com/fr/restaurant/labysse-monte-carlo",
   "lat": 43.738489,
   "lng": 7.425928,
-  "placeId": "ChIJ7bXwexPDzRIRL7H479f89sY"
+  "placeId": "ChIJ7bXwexPDzRIRL7H479f89sY",
+  "michelinId": "1214416",
+  "chef": "Yannick Alléno",
+  "chefSource": "site"
 }

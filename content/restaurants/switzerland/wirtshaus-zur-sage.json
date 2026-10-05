@@ -13,5 +13,8 @@
   "website": "https://www.säge-flüh.ch/",
   "lat": 47.4883006,
   "lng": 7.4980391,
-  "placeId": "ChIJbzTMINvAkUcRCMXOOofA888"
+  "placeId": "ChIJbzTMINvAkUcRCMXOOofA888",
+  "michelinId": "179187",
+  "chef": "Patrick Zimmermann",
+  "chefSource": "michelin"
 }

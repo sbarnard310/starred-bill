@@ -23,5 +23,13 @@
   "website": "https://www.lecerisier.com",
   "lat": 50.6421148,
   "lng": 3.0640904,
-  "placeId": "ChIJcbJcl_Yrw0cR_thUZfNGZWo"
+  "placeId": "ChIJcbJcl_Yrw0cR_thUZfNGZWo",
+  "michelinId": "1179872",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Guillaume Barengo",
+  "chefSource": "michelin"
 }

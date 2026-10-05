@@ -19,5 +19,8 @@
   "lunchType": "menu",
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/sb197398"
+  "lunchSource": "https://omakaseje.com/restaurants/sb197398",
+  "michelinId": "1201127",
+  "chef": "Makoto Fujiwara",
+  "chefSource": "site"
 }

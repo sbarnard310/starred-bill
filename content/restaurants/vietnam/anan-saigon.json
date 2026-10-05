@@ -12,5 +12,11 @@
   "website": "https://anansaigon.com",
   "lat": 10.7719227,
   "lng": 106.7028706,
-  "placeId": "ChIJZ_dpJ0EvdTER5wOl-TLvN-8"
+  "placeId": "ChIJZ_dpJ0EvdTER5wOl-TLvN-8",
+  "michelinId": "1201413",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Peter Cuong Franklin",
+  "chefSource": "michelin"
 }

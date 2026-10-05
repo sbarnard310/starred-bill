@@ -13,5 +13,11 @@
   "website": "https://novarestaurante.com/",
   "lat": 42.33977,
   "lng": -7.8623301,
-  "placeId": "ChIJlbLiG8j-Lw0RWJjTTJV-qps"
+  "placeId": "ChIJlbLiG8j-Lw0RWJjTTJV-qps",
+  "michelinId": "396484",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Julio Sotomayor and Daniel Guzmán",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,13 @@
   "website": "https://www.thepantheonhotel.com/idylio-by-apreda/",
   "lat": 41.898305,
   "lng": 12.475718,
-  "placeId": "ChIJ_VLQ2ZlhLxMRebq7bszCIhk"
+  "placeId": "ChIJ_VLQ2ZlhLxMRebq7bszCIhk",
+  "michelinId": "1183672",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Francesco Apreda",
+  "chefSource": "michelin"
 }

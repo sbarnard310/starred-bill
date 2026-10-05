@@ -30,5 +30,9 @@
   "website": "https://www.robuchon.jp/shop-list/latable",
   "lat": 35.641907,
   "lng": 139.714544,
-  "placeId": "ChIJtxdIhBaLGGARvCnhexq9s74"
+  "placeId": "ChIJtxdIhBaLGGARvCnhexq9s74",
+  "michelinId": "1194212",
+  "diets": [
+    "vegetarian"
+  ]
 }

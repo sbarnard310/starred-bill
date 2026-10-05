@@ -14,5 +14,11 @@
   "website": "https://www.restaurant-pottkind.de/",
   "lat": 50.9193944,
   "lng": 6.9609491,
-  "placeId": "ChIJ97jGdFUlv0cRweaWDO8SQg4"
+  "placeId": "ChIJ97jGdFUlv0cRweaWDO8SQg4",
+  "michelinId": "1185731",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Enrico Sablotny and Lukas Winkelmann",
+  "chefSource": "michelin"
 }

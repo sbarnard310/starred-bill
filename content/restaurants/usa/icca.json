@@ -21,5 +21,11 @@
   "lunchSource": "https://www.exploretock.com/icca",
   "lat": 40.714134,
   "lng": -74.007713,
-  "placeId": "ChIJyRIhC_dbwokRqGoh89KPQME"
+  "placeId": "ChIJyRIhC_dbwokRqGoh89KPQME",
+  "michelinId": "1197301",
+  "diets": [
+    "kosher"
+  ],
+  "chef": "Kazushige Suzuki",
+  "chefSource": "michelin"
 }

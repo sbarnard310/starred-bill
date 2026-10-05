@@ -15,5 +15,11 @@
   "website": "https://www.ristoranteinkiostro.it/",
   "lat": 44.8287075,
   "lng": 10.3368267,
-  "placeId": "ChIJd-HC6SBAgEcRdRlHl8OD144"
+  "placeId": "ChIJd-HC6SBAgEcRdRlHl8OD144",
+  "michelinId": "350982",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Salvatore Morello",
+  "chefSource": "michelin"
 }

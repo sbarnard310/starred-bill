@@ -12,5 +12,13 @@
   "website": "https://jp-kashiwaya.com/",
   "lat": 34.69685,
   "lng": 135.50052,
-  "placeId": "ChIJfZuMrWDnAGARvDBc5K1awM4"
+  "placeId": "ChIJfZuMrWDnAGARvDBc5K1awM4",
+  "michelinId": "1205394",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Hideaki Matsuo",
+  "chefSource": "site"
 }

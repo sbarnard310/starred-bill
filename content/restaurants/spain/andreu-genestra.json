@@ -13,5 +13,14 @@
   "website": "https://www.andreugenestra.com",
   "lat": 39.4379554,
   "lng": 2.8001231,
-  "placeId": "ChIJMzokPCUWlhIR58zX3CAsSL0"
+  "placeId": "ChIJMzokPCUWlhIR58zX3CAsSL0",
+  "michelinId": "1208507",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Andreu Genestra Garcia",
+  "chefSource": "michelin"
 }

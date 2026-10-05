@@ -15,5 +15,12 @@
   "website": "https://www.restaurantmarrees.nl/",
   "lat": 51.2510546,
   "lng": 5.7034285,
-  "placeId": "ChIJSaIVHC4tx0cRtANh8X1-WSk"
+  "placeId": "ChIJSaIVHC4tx0cRtANh8X1-WSk",
+  "michelinId": "1154275",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Jan Marrees",
+  "chefSource": "michelin"
 }

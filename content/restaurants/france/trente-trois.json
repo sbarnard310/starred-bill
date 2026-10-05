@@ -25,5 +25,13 @@
   "website": "https://www.restaurant-trente-trois.com/",
   "lat": 48.8652115,
   "lng": 2.304464,
-  "placeId": "ChIJAcfncI5v5kcR1JqbYutYwrU"
+  "placeId": "ChIJAcfncI5v5kcR1JqbYutYwrU",
+  "michelinId": "1193519",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Sébastien Sanjou",
+  "chefSource": "michelin"
 }

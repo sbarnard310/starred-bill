@@ -12,5 +12,11 @@
   "website": "https://restaurangkoka.se/",
   "lat": 57.6986003,
   "lng": 11.9654719,
-  "placeId": "ChIJkfbFj27zT0YR56rN52ES0g4"
+  "placeId": "ChIJkfbFj27zT0YR56rN52ES0g4",
+  "michelinId": "451239",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

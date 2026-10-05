@@ -17,5 +17,13 @@
   "website": "https://www.chimbysiamwisdombkk.com",
   "lat": 13.7891795,
   "lng": 100.5185611,
-  "placeId": "ChIJg3htxvue4jARtGnzcjPrWnU"
+  "placeId": "ChIJg3htxvue4jARtGnzcjPrWnU",
+  "michelinId": "546913",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Thanintorn Chantharawan",
+  "chefSource": "michelin"
 }

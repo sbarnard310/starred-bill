@@ -13,5 +13,13 @@
   "website": "https://www.althoffcollection.com/de/althoff-seehotel-ueberfahrt/restaurant-ueberfahrt",
   "lat": 47.6966645,
   "lng": 11.7581005,
-  "placeId": "ChIJDaXFaJWOnUcRqxYKSDxOfVM"
+  "placeId": "ChIJDaXFaJWOnUcRqxYKSDxOfVM",
+  "michelinId": "83780",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Christian Jürgens",
+  "chefSource": "michelin"
 }

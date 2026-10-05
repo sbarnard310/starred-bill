@@ -17,5 +17,9 @@
   "website": "https://www.moulinabbaye.com/",
   "lat": 45.3631,
   "lng": 0.6462835,
-  "placeId": "ChIJkWG3oTIK_0cRiSb_f-oiLpc"
+  "placeId": "ChIJkWG3oTIK_0cRiSb_f-oiLpc",
+  "michelinId": "10400",
+  "diets": [
+    "vegetarian"
+  ]
 }

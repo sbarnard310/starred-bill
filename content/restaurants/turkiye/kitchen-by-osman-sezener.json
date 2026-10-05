@@ -13,5 +13,14 @@
   "website": "https://www.editionhotels.com/bodrum/restaurants-and-bars/kitchen/",
   "lat": 37.1149915,
   "lng": 27.3109897,
-  "placeId": "ChIJ35wBdEJxvhQRPl1MYDk6fkw"
+  "placeId": "ChIJ35wBdEJxvhQRPl1MYDk6fkw",
+  "michelinId": "1208228",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Osman Sezener",
+  "chefSource": "michelin"
 }

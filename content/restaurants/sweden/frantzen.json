@@ -12,5 +12,11 @@
   "website": "https://www.restaurantfrantzen.com/",
   "lat": 59.3341673,
   "lng": 18.0597575,
-  "placeId": "ChIJhwomM2edX0YR9gW2q53gJRg"
+  "placeId": "ChIJhwomM2edX0YR9gW2q53gJRg",
+  "michelinId": "532347",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Björn Frantzén",
+  "chefSource": "michelin"
 }

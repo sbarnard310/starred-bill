@@ -25,5 +25,12 @@
   "website": "https://www.fourseasons.com/fr/paris/dining/restaurants/le_george/",
   "lat": 48.8687251,
   "lng": 2.3007485,
-  "placeId": "ChIJD3IF1elv5kcRXNjbG86rzcE"
+  "placeId": "ChIJD3IF1elv5kcRXNjbG86rzcE",
+  "michelinId": "483379",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Simone Zanoni",
+  "chefSource": "michelin"
 }

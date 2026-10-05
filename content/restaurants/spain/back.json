@@ -13,5 +13,13 @@
   "website": "https://www.backrestaurante.com/",
   "lat": 36.509052,
   "lng": -4.894597,
-  "placeId": "ChIJYZLWAwAocw0R0AQizXdQXq0"
+  "placeId": "ChIJYZLWAwAocw0R0AQizXdQXq0",
+  "michelinId": "540822",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "David Olivas",
+  "chefSource": "michelin"
 }

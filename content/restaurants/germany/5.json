@@ -12,5 +12,12 @@
   "website": "https://www.5.fo/",
   "lat": 48.7800231,
   "lng": 9.1780757,
-  "placeId": "ChIJEX4pJTTbmUcRCwNHSMZJ0p0"
+  "placeId": "ChIJEX4pJTTbmUcRCwNHSMZJ0p0",
+  "michelinId": "327198",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Alexander Dinter",
+  "chefSource": "michelin"
 }

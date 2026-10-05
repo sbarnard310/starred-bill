@@ -15,5 +15,13 @@
   "website": "https://www.malgapanna.it/",
   "lat": 46.376804,
   "lng": 11.643984,
-  "placeId": "ChIJ0xjIWwhmeEcR6VejegbcjpE"
+  "placeId": "ChIJ0xjIWwhmeEcR6VejegbcjpE",
+  "michelinId": "141648",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Paolo Donei",
+  "chefSource": "site"
 }

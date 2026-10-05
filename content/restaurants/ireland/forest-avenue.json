@@ -25,5 +25,12 @@
   "website": "https://www.forestavenuerestaurant.ie/",
   "lat": 53.331285,
   "lng": -6.251581,
-  "placeId": "ChIJ08KIUaMOZ0gRsWR5zZlb95U"
+  "placeId": "ChIJ08KIUaMOZ0gRsWR5zZlb95U",
+  "michelinId": "1198717",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "John Wyer",
+  "chefSource": "michelin"
 }

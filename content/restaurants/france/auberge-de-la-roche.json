@@ -19,5 +19,8 @@
   "website": "https://www.laubergedelaroche.com",
   "lat": 44.0692494,
   "lng": 7.1756621,
-  "placeId": "ChIJ1Q6fsH6tzRIRkHJkAd-yG3g"
+  "placeId": "ChIJ1Q6fsH6tzRIRkHJkAd-yG3g",
+  "michelinId": "1203180",
+  "chef": "Louis-Philippe Riel",
+  "chefSource": "michelin"
 }

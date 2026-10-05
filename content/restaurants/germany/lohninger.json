@@ -14,5 +14,8 @@
   "website": "https://lohninger.de/",
   "lat": 50.1053592,
   "lng": 8.6780946,
-  "placeId": "ChIJ2503uAIMvUcRF3mmlxAS-ic"
+  "placeId": "ChIJ2503uAIMvUcRF3mmlxAS-ic",
+  "michelinId": "266202",
+  "chef": "Mario Lohninger",
+  "chefSource": "michelin"
 }

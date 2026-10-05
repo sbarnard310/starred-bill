@@ -27,5 +27,13 @@
   "website": "https://www.elstinars.com/",
   "lat": 41.82745,
   "lng": 2.953381,
-  "placeId": "ChIJEWkweooduxIRnLAxgnFMXi8"
+  "placeId": "ChIJEWkweooduxIRnLAxgnFMXi8",
+  "michelinId": "220882",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Marc Gascons",
+  "chefSource": "michelin"
 }

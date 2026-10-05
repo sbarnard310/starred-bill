@@ -28,5 +28,13 @@
   "website": "https://come.com.es/",
   "lat": 41.376166,
   "lng": 2.154095,
-  "placeId": "ChIJVwv2p3yipBIR303yebWvbbM"
+  "placeId": "ChIJVwv2p3yipBIR303yebWvbbM",
+  "michelinId": "1201951",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Paco Méndez",
+  "chefSource": "michelin"
 }

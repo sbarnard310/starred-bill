@@ -13,5 +13,8 @@
   "website": "https://versatilrural.com/",
   "lat": 40.2372182,
   "lng": -6.0476206,
-  "placeId": "ChIJ8QmRTx9CPg0R--Vd5o9iGAE"
+  "placeId": "ChIJ8QmRTx9CPg0R--Vd5o9iGAE",
+  "michelinId": "1154693",
+  "chef": "Alejandro Hernández",
+  "chefSource": "michelin"
 }

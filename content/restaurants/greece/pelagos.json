@@ -15,5 +15,13 @@
   "website": "https://www.pelagosathens.com",
   "lat": 37.8058168,
   "lng": 23.7722339,
-  "placeId": "ChIJYT2q81TroRQRkJ2kcTN5qLc"
+  "placeId": "ChIJYT2q81TroRQRkJ2kcTN5qLc",
+  "michelinId": "1196439",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Luca Piscazzi",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,14 @@
   "website": "https://www.restaurantetrigo.com/",
   "lat": 41.654679,
   "lng": -4.730628,
-  "placeId": "ChIJmRnTabISRw0RHIPn57YZYDM"
+  "placeId": "ChIJmRnTabISRw0RHIPn57YZYDM",
+  "michelinId": "227109",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Víctor Martín",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,11 @@
   "website": "https://www.thewalnuttreeinn.com/",
   "lat": 51.843504,
   "lng": -2.963228,
-  "placeId": "ChIJSTdo4DfQcUgRR56RDvRexiM"
+  "placeId": "ChIJSTdo4DfQcUgRR56RDvRexiM",
+  "michelinId": "214137",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Shaun Hill",
+  "chefSource": "michelin"
 }

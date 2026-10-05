@@ -16,5 +16,11 @@
   "website": "https://burntends.com.sg/",
   "lat": 1.304889,
   "lng": 103.808666,
-  "placeId": "ChIJLZ9DYnIZ2jERQ51Am7WzJLM"
+  "placeId": "ChIJLZ9DYnIZ2jERQ51Am7WzJLM",
+  "michelinId": "1200777",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Dave Pynt",
+  "chefSource": "michelin"
 }

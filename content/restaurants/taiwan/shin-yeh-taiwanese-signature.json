@@ -26,5 +26,10 @@
   "website": "https://www.shinyeh.com.tw/content/zh/Brand/Index.aspx?BrandId=11",
   "lat": 25.0803851,
   "lng": 121.5593471,
-  "placeId": "ChIJZ_PFctytQjQRH86SUgMyWG4"
+  "placeId": "ChIJZ_PFctytQjQRH86SUgMyWG4",
+  "michelinId": "1199082",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

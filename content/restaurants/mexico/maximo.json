@@ -16,5 +16,8 @@
   "website": "https://www.maximobistrot.com.mx/",
   "lat": 19.4189482,
   "lng": -99.1580841,
-  "placeId": "ChIJdw0B4zv_0YURK8xSHYwyp2E"
+  "placeId": "ChIJdw0B4zv_0YURK8xSHYwyp2E",
+  "michelinId": "1208229",
+  "chef": "Eduardo Garcia",
+  "chefSource": "michelin"
 }

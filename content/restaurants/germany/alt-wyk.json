@@ -15,5 +15,11 @@
   "website": "https://www.alt-wyk.de/",
   "lat": 54.690147,
   "lng": 8.5709235,
-  "placeId": "ChIJYVsUHgjttEcRGcrsEGU2zl8"
+  "placeId": "ChIJYVsUHgjttEcRGcrsEGU2zl8",
+  "michelinId": "72722",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "René Dittrich",
+  "chefSource": "michelin"
 }

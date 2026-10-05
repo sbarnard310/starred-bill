@@ -18,5 +18,14 @@
   "website": "https://www.sorrelrestaurant.com/",
   "lat": 37.788334,
   "lng": -122.44614,
-  "placeId": "ChIJSUqmKoyAhYARHqx0N3gnl8o"
+  "placeId": "ChIJSUqmKoyAhYARHqx0N3gnl8o",
+  "michelinId": "562943",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Alexander Hong",
+  "chefSource": "michelin"
 }

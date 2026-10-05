@@ -26,5 +26,8 @@
   "website": "https://sushi-shikon.com/",
   "lat": 22.2806103,
   "lng": 114.1577893,
-  "placeId": "ChIJf4R5aHwABDQR2OIi4wZ1g58"
+  "placeId": "ChIJf4R5aHwABDQR2OIi4wZ1g58",
+  "michelinId": "380306",
+  "chef": "Satoshi Tada",
+  "chefSource": "site"
 }

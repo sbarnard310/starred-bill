@@ -12,5 +12,12 @@
   "website": "https://www.condividere.com/",
   "lat": 45.0802655,
   "lng": 7.6911056,
-  "placeId": "ChIJz6tr4WttiEcRIcL8mxYWE1I"
+  "placeId": "ChIJz6tr4WttiEcRIcL8mxYWE1I",
+  "michelinId": "533893",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Federico Zanasi",
+  "chefSource": "michelin"
 }

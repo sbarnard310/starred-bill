@@ -18,5 +18,8 @@
   "noLunch": true,
   "lat": 37.54969,
   "lng": 127.0666,
-  "placeId": "ChIJkTTxM1GlfDURaFBGMDEIHQc"
+  "placeId": "ChIJkTTxM1GlfDURaFBGMDEIHQc",
+  "michelinId": "1215839",
+  "chef": "Do-hyeon Kim",
+  "chefSource": "michelin"
 }

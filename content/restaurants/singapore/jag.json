@@ -24,5 +24,13 @@
   "website": "https://www.restaurantjag.com/",
   "lat": 1.29094,
   "lng": 103.84028,
-  "placeId": "ChIJKf8-B1IZ2jERKoqDakRkZy0"
+  "placeId": "ChIJKf8-B1IZ2jERKoqDakRkZy0",
+  "michelinId": "570537",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Laurence Tan",
+  "chefSource": "site"
 }

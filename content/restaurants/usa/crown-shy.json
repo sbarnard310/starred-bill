@@ -17,5 +17,12 @@
   "website": "https://www.crownshy.nyc/",
   "lat": 40.706707,
   "lng": -74.008721,
-  "placeId": "ChIJ__9LNBZawokREnkOiVx7ydc"
+  "placeId": "ChIJ__9LNBZawokREnkOiVx7ydc",
+  "michelinId": "1164955",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jassimran Singh",
+  "chefSource": "site"
 }

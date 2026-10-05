@@ -28,5 +28,10 @@
   "website": "https://www.hofmannrestaurante.com/",
   "lat": 41.397171,
   "lng": 2.153061,
-  "placeId": "ChIJU2yMmZmipBIRincP1doW8ak"
+  "placeId": "ChIJU2yMmZmipBIRincP1doW8ak",
+  "michelinId": "67780",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

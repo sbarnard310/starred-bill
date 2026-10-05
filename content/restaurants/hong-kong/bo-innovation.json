@@ -26,5 +26,11 @@
   "website": "https://www.boinnovation.com/",
   "lat": 22.2821169,
   "lng": 114.1541593,
-  "placeId": "ChIJqX6Q4FwABDQRE5FoTKCffFU"
+  "placeId": "ChIJqX6Q4FwABDQRE5FoTKCffFU",
+  "michelinId": "230658",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alvin Leung",
+  "chefSource": "site"
 }

@@ -15,5 +15,12 @@
   "website": "https://www.farioceret.fr",
   "lat": 42.4863199,
   "lng": 2.747708,
-  "placeId": "ChIJuxdEvTyhuhIR-FcTN_fmyvg"
+  "placeId": "ChIJuxdEvTyhuhIR-FcTN_fmyvg",
+  "michelinId": "1215907",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Kevin de Porre",
+  "chefSource": "michelin"
 }

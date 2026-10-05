@@ -17,5 +17,8 @@
   "website": "https://www.63clinton.com/",
   "lat": 40.719483,
   "lng": -73.984993,
-  "placeId": "ChIJ385rlW9ZwokRHTamoLqoosI"
+  "placeId": "ChIJ385rlW9ZwokRHTamoLqoosI",
+  "michelinId": "1198091",
+  "chef": "Samuel Clonts",
+  "chefSource": "michelin"
 }

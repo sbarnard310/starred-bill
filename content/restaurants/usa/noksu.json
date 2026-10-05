@@ -21,5 +21,8 @@
   "website": "https://noksunyc.com/",
   "lat": 40.74835,
   "lng": -73.987997,
-  "placeId": "ChIJSfeOCf5ZwokRWuoMT5Kc6KY"
+  "placeId": "ChIJSfeOCf5ZwokRWuoMT5Kc6KY",
+  "michelinId": "1210165",
+  "chef": "Aaron Chang",
+  "chefSource": "michelin"
 }

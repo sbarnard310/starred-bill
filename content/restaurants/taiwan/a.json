@@ -29,5 +29,11 @@
   "website": "https://restaurant-a.com/",
   "lat": 25.0414321,
   "lng": 121.5426954,
-  "placeId": "ChIJt2exNxurQjQROcDnwKLeXA4"
+  "placeId": "ChIJt2exNxurQjQROcDnwKLeXA4",
+  "michelinId": "1210698",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alain Huang",
+  "chefSource": "michelin"
 }

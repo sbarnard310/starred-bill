@@ -23,5 +23,16 @@
   "website": "https://www.giulioterrinoni.it/",
   "lat": 41.897303,
   "lng": 12.46747,
-  "placeId": "ChIJWYdrYkRgLxMR_lor-OXSdNs"
+  "placeId": "ChIJWYdrYkRgLxMR_lor-OXSdNs",
+  "michelinId": "496136",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Giulio Terrinoni",
+  "chefSource": "michelin"
 }

@@ -14,5 +14,10 @@
   "website": "https://www.noor.nl/",
   "lat": 53.2144067,
   "lng": 6.5023321,
-  "placeId": "ChIJJwm5qE7NyUcRRAQ7t3S4-Yc"
+  "placeId": "ChIJJwm5qE7NyUcRRAQ7t3S4-Yc",
+  "michelinId": "1200050",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

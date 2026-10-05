@@ -20,5 +20,8 @@
   "website": "https://www.restaurantjordnaer.dk/",
   "lat": 55.748142,
   "lng": 12.541235,
-  "placeId": "ChIJWxyiJPFNUkYRTp10-YnYcNg"
+  "placeId": "ChIJWxyiJPFNUkYRTp10-YnYcNg",
+  "michelinId": "535485",
+  "chef": "Eric Kragh Vildgaard",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,13 @@
   "website": "https://www.thestaratharome.co.uk/",
   "lat": 54.231039,
   "lng": -1.010066,
-  "placeId": "ChIJ0xnpUULQfkgRZH-1lgDGzls"
+  "placeId": "ChIJ0xnpUULQfkgRZH-1lgDGzls",
+  "michelinId": "187611",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Steve Smith",
+  "chefSource": "michelin"
 }

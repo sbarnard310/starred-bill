@@ -15,5 +15,14 @@
   "website": "https://www.thekitchenrestaurant.com",
   "lat": 38.564058,
   "lng": -121.501422,
-  "placeId": "ChIJxyCQgkfamoARaCjr8r-6xcM"
+  "placeId": "ChIJxyCQgkfamoARaCjr8r-6xcM",
+  "michelinId": "559371",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Kelly McCown",
+  "chefSource": "michelin"
 }

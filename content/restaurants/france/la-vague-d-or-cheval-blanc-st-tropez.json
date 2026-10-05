@@ -15,5 +15,11 @@
   "website": "https://www.chevalblanc.com/fr/maison/st-tropez",
   "lat": 43.2665849,
   "lng": 6.6261535,
-  "placeId": "ChIJDTV3yw7HzhIRYjMG0CraIeI"
+  "placeId": "ChIJDTV3yw7HzhIRYjMG0CraIeI",
+  "michelinId": "12973",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Arnaud Donckele",
+  "chefSource": "michelin"
 }

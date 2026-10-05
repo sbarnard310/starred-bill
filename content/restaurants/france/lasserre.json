@@ -21,5 +21,8 @@
   "website": "https://www.restaurant-lasserre.com/",
   "lat": 48.8663787,
   "lng": 2.3099647,
-  "placeId": "ChIJ8xc0xtpv5kcRG2Qj7G2kO88"
+  "placeId": "ChIJ8xc0xtpv5kcRG2Qj7G2kO88",
+  "michelinId": "6109",
+  "chef": "Jean-Louis Nomicos",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,13 @@
   "website": "https://restaurantsignum.com/",
   "lat": 57.675447,
   "lng": 12.1786546,
-  "placeId": "ChIJcwxYz2PxT0YRbOv1sdSxCMg"
+  "placeId": "ChIJcwxYz2PxT0YRbOv1sdSxCMg",
+  "michelinId": "1205585",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Thomas Sjögren",
+  "chefSource": "michelin"
 }

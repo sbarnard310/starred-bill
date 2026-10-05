@@ -18,5 +18,15 @@
   "website": "https://www.passedat.fr",
   "lat": 43.2802565,
   "lng": 5.3520484,
-  "placeId": "ChIJ8aADZtXGyRIRIRQwQMBeREU"
+  "placeId": "ChIJ8aADZtXGyRIRIRQwQMBeREU",
+  "michelinId": "11752",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Gérald Passédat",
+  "chefSource": "michelin"
 }

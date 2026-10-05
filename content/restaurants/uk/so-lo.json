@@ -20,5 +20,13 @@
   "website": "https://www.restaurantsolo.co.uk/",
   "lat": 53.5446,
   "lng": -2.900359,
-  "placeId": "ChIJ_9Yr9_gXe0gR2ZLy1XHCLeA"
+  "placeId": "ChIJ_9Yr9_gXe0gR2ZLy1XHCLeA",
+  "michelinId": "1199856",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Tim Allen",
+  "chefSource": "michelin"
 }

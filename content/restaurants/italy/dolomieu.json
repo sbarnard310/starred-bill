@@ -16,5 +16,13 @@
   "website": "https://www.dvchalet.it/it/ristorante-dolomieu-stella-michelin",
   "lat": 46.223693,
   "lng": 10.8257548,
-  "placeId": "ChIJXQHg6jpcgkcRgUjmXwqtgD4"
+  "placeId": "ChIJXQHg6jpcgkcRgUjmXwqtgD4",
+  "michelinId": "355975",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Fiorenzo Perremuto",
+  "chefSource": "michelin"
 }

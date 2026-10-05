@@ -25,5 +25,11 @@
   "website": "https://larome-paris.com/",
   "lat": 48.8732722,
   "lng": 2.3089154,
-  "placeId": "ChIJZazvjMZv5kcREZMvWJYA6q8"
+  "placeId": "ChIJZazvjMZv5kcREZMvWJYA6q8",
+  "michelinId": "174292",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thomas Boullault",
+  "chefSource": "michelin"
 }

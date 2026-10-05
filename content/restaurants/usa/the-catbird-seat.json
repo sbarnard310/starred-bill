@@ -15,5 +15,12 @@
   "website": "https://www.thecatbirdseatrestaurant.com/",
   "lat": 36.15058,
   "lng": -86.778879,
-  "placeId": "ChIJq3tfSZJmZIgRLkkEXv4QxkQ"
+  "placeId": "ChIJq3tfSZJmZIgRLkkEXv4QxkQ",
+  "michelinId": "1214983",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Andy Doubrava and Tiffani Ortiz",
+  "chefSource": "michelin"
 }

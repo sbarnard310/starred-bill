@@ -15,5 +15,11 @@
   "website": "https://www.danb.fr",
   "lat": 43.53894,
   "lng": 5.29218,
-  "placeId": "ChIJx3v2JzHwyRIRGIYbELz2_l4"
+  "placeId": "ChIJx3v2JzHwyRIRGIYbELz2_l4",
+  "michelinId": "9400",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Dan Bessoudo",
+  "chefSource": "michelin"
 }

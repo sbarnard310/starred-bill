@@ -14,5 +14,10 @@
   "website": "https://www.shinrestaurant.ch",
   "lat": 47.3705379,
   "lng": 8.5415242,
-  "placeId": "ChIJlRK4WrcLkEcR0OWU5jhQfLU"
+  "placeId": "ChIJlRK4WrcLkEcR0OWU5jhQfLU",
+  "michelinId": "1190872",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

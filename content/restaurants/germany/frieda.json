@@ -15,5 +15,12 @@
   "website": "https://www.frieda-restaurant.de/",
   "lat": 51.3594485,
   "lng": 12.3624098,
-  "placeId": "ChIJt5r6Sp73pkcROI8bDUKkvM0"
+  "placeId": "ChIJt5r6Sp73pkcROI8bDUKkvM0",
+  "michelinId": "1179811",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Lisa Angermann",
+  "chefSource": "michelin"
 }

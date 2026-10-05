@@ -2,3 +2,5 @@
 .DS_Store
 _site/
 scripts/*-export.json
+scripts/michelin-details.json
+scripts/chef-review.json

@@ -23,5 +23,10 @@
   "website": "https://la-huchette.com",
   "lat": 46.2987913,
   "lng": 4.8826914,
-  "placeId": "ChIJg7Kym9ho80cRX7JavJ0AdBw"
+  "placeId": "ChIJg7Kym9ho80cRX7JavJ0AdBw",
+  "michelinId": "1184873",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

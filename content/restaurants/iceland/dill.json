@@ -19,5 +19,11 @@
   "website": "https://www.dillrestaurant.is/",
   "lat": 64.1443654,
   "lng": -21.922443,
-  "placeId": "ChIJxeTXptJ01kgR4Dcvo45O5Cs"
+  "placeId": "ChIJxeTXptJ01kgR4Dcvo45O5Cs",
+  "michelinId": "1186101",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Gunnar Karl Gíslason",
+  "chefSource": "michelin"
 }

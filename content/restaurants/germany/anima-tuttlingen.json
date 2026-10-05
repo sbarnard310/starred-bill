@@ -13,5 +13,11 @@
   "website": "https://www.restaurant-anima.de",
   "lat": 47.9863428,
   "lng": 8.82098,
-  "placeId": "ChIJRURGawR0mkcRVjzu7iARRvg"
+  "placeId": "ChIJRURGawR0mkcRVjzu7iARRvg",
+  "michelinId": "509922",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Heiko Lacher",
+  "chefSource": "michelin"
 }

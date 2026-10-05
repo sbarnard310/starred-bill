@@ -12,5 +12,14 @@
   "website": "https://www.kanazawa.com.pt",
   "lat": 38.6979595,
   "lng": -9.2256498,
-  "placeId": "ChIJsVqK_HrLHg0RIks_llCFqB0"
+  "placeId": "ChIJsVqK_HrLHg0RIks_llCFqB0",
+  "michelinId": "500442",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Paulo Morais",
+  "chefSource": "michelin"
 }

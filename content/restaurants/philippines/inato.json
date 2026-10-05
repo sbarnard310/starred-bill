@@ -12,5 +12,11 @@
   "website": "https://www.inato.ph",
   "lat": 14.5313019,
   "lng": 121.0227506,
-  "placeId": "ChIJMcdnfQDJlzMRrBytvGj2bbc"
+  "placeId": "ChIJMcdnfQDJlzMRrBytvGj2bbc",
+  "michelinId": "1216108",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "JP Cruz",
+  "chefSource": "michelin"
 }

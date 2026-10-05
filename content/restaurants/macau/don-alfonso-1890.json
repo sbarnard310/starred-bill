@@ -32,5 +32,10 @@
   "website": "https://www.grandlisboapalace.com/en/restaurants-n-bars/don-alfonso-1890",
   "lat": 22.143574,
   "lng": 113.573284,
-  "placeId": "ChIJP8EtJeFvATQREsArjsdPYI8"
+  "placeId": "ChIJP8EtJeFvATQREsArjsdPYI8",
+  "michelinId": "1212351",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -20,5 +20,14 @@
   "website": "https://www.nuttreeinn.co.uk/",
   "lat": 51.836173,
   "lng": -1.149907,
-  "placeId": "ChIJFaMP1xzodkgRiKawLC1MN2s"
+  "placeId": "ChIJFaMP1xzodkgRiKawLC1MN2s",
+  "michelinId": "188453",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Mike North",
+  "chefSource": "site"
 }

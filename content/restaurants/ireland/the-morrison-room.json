@@ -20,5 +20,11 @@
   "website": "https://www.cartonhouse.com/dining/the-morrison-room",
   "lat": 53.390521,
   "lng": -6.567504,
-  "placeId": "ChIJuxMr1VJvZ0gRZWrjukXTmrQ"
+  "placeId": "ChIJuxMr1VJvZ0gRZWrjukXTmrQ",
+  "michelinId": "1201124",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

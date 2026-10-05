@@ -13,5 +13,14 @@
   "website": "https://www.viniliaresort.com",
   "lat": 40.417763,
   "lng": 17.599371,
-  "placeId": "ChIJYcLi42ryRhMRirX_s1NYT8Q"
+  "placeId": "ChIJYcLi42ryRhMRirX_s1NYT8Q",
+  "michelinId": "533895",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Pietro Penna",
+  "chefSource": "michelin"
 }

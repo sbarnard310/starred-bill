@@ -12,5 +12,10 @@
   "website": "https://www.xinrongji.com/list",
   "lat": 31.23138,
   "lng": 121.46432,
-  "placeId": "ChIJOS2cRRRwsjUR3z1Pn8AhA5I"
+  "placeId": "ChIJOS2cRRRwsjUR3z1Pn8AhA5I",
+  "michelinId": "570583",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ]
 }

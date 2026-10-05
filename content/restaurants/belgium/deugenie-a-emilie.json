@@ -15,5 +15,11 @@
   "website": "https://eugenie-emilie.be/",
   "lat": 50.4833038,
   "lng": 3.8379089,
-  "placeId": "ChIJsRhY4iJXwkcR8LEucY5oV4M"
+  "placeId": "ChIJsRhY4iJXwkcR8LEucY5oV4M",
+  "michelinId": "259755",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Éric Fernez",
+  "chefSource": "michelin"
 }

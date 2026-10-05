@@ -15,5 +15,11 @@
   "website": "https://www.restaurantelaaquarela.com/",
   "lat": 27.7744701,
   "lng": -15.6930938,
-  "placeId": "ChIJ71Bn0vmBQAwRXxg0OTXrJuc"
+  "placeId": "ChIJ71Bn0vmBQAwRXxg0OTXrJuc",
+  "michelinId": "255384",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Desiré Cabrera",
+  "chefSource": "michelin"
 }

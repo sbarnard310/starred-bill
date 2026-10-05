@@ -13,5 +13,12 @@
   "website": "https://www.soelring-hof.de/",
   "lat": 54.8536822,
   "lng": 8.2887697,
-  "placeId": "ChIJuaITYqDgtEcReuFP9Veym8Y"
+  "placeId": "ChIJuaITYqDgtEcReuFP9Veym8Y",
+  "michelinId": "84509",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jan-Philipp Berner",
+  "chefSource": "michelin"
 }

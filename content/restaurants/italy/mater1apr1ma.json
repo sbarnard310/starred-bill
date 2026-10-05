@@ -25,5 +25,15 @@
   "website": "https://materiaprimapontinia.it/",
   "lat": 41.41026,
   "lng": 13.043346,
-  "placeId": "ChIJ9eG4TnwRJRMRqa1IbxVaTJk"
+  "placeId": "ChIJ9eG4TnwRJRMRqa1IbxVaTJk",
+  "michelinId": "1154802",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Fabio Verrelli D'Amico",
+  "chefSource": "site"
 }

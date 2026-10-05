@@ -23,5 +23,8 @@
   "website": "https://palegrie.fr/",
   "lat": 45.1266848,
   "lng": 5.5281747,
-  "placeId": "ChIJ__qICDuTikcR1ii96HlsIAI"
+  "placeId": "ChIJ__qICDuTikcR1ii96HlsIAI",
+  "michelinId": "1210955",
+  "chef": "Guillaume Monjuré",
+  "chefSource": "michelin"
 }

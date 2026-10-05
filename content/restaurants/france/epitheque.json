@@ -15,5 +15,10 @@
   "website": "https://baptistepoinot.com/",
   "lat": 44.9326634,
   "lng": 4.8909199,
-  "placeId": "ChIJ1WN4NS1Y9UcRKvVR3JpPQRg"
+  "placeId": "ChIJ1WN4NS1Y9UcRKvVR3JpPQRg",
+  "michelinId": "120897",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

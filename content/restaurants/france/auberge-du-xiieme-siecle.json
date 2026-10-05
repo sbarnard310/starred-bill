@@ -25,5 +25,11 @@
   "website": "https://www.auberge12emesiecle.fr",
   "lat": 47.2464071,
   "lng": 0.5436827,
-  "placeId": "ChIJcYxwRUkk_UcRK73JK5RznAo"
+  "placeId": "ChIJcYxwRUkk_UcRK73JK5RznAo",
+  "michelinId": "666",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Kevin Gardien",
+  "chefSource": "michelin"
 }

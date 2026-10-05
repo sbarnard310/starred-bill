@@ -20,5 +20,11 @@
   "website": "https://labecasse.de/",
   "lat": 50.7702641,
   "lng": 6.069238,
-  "placeId": "ChIJ9eVxliqawEcRxNSKQrQ-EeA"
+  "placeId": "ChIJ9eVxliqawEcRxNSKQrQ-EeA",
+  "michelinId": "70660",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andreas Schaffrath",
+  "chefSource": "michelin"
 }

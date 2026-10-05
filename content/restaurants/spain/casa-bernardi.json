@@ -13,5 +13,13 @@
   "website": "https://casabernardi.es/",
   "lat": 38.6917839,
   "lng": 0.0785022,
-  "placeId": "ChIJSbuQehoHnhIRqYgfM3CgUbY"
+  "placeId": "ChIJSbuQehoHnhIRqYgfM3CgUbY",
+  "michelinId": "1201177",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Ferdinando Bernardi",
+  "chefSource": "michelin"
 }

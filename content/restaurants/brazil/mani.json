@@ -15,5 +15,12 @@
   "website": "https://restaurantemani.com.br/",
   "lat": -23.5663215,
   "lng": -46.6797249,
-  "placeId": "ChIJEZoT03lXzpQRL25jLcp0Ycs"
+  "placeId": "ChIJEZoT03lXzpQRL25jLcp0Ycs",
+  "michelinId": "428597",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Helena Rizzo",
+  "chefSource": "michelin"
 }

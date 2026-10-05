@@ -12,5 +12,11 @@
   "website": "https://www.steirereck.at/",
   "lat": 48.2043967,
   "lng": 16.3815669,
-  "placeId": "ChIJKS_u4XYHbUcRFEBBkdJ8HG0"
+  "placeId": "ChIJKS_u4XYHbUcRFEBBkdJ8HG0",
+  "michelinId": "106382",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Heinz Reitbauer and Michael Bauböck",
+  "chefSource": "michelin"
 }

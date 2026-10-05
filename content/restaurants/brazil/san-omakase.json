@@ -12,5 +12,11 @@
   "website": "https://www.sanomakase.com.br/",
   "lat": -22.98085,
   "lng": -43.22252,
-  "placeId": "ChIJ5yfTpD3VmwARHcakeHhweZo"
+  "placeId": "ChIJ5yfTpD3VmwARHcakeHhweZo",
+  "michelinId": "1210798",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "André Nobuyuki Kawai",
+  "chefSource": "michelin"
 }

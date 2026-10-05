@@ -15,5 +15,8 @@
   "website": "https://www.hotelrestaurant-lorchidee.fr",
   "lat": 47.8651295,
   "lng": 7.3520977,
-  "placeId": "ChIJjbqskBKOkUcRGx6LmyV_vZE"
+  "placeId": "ChIJjbqskBKOkUcRGx6LmyV_vZE",
+  "michelinId": "1000144",
+  "chef": "Chatchai Klanklong",
+  "chefSource": "site"
 }

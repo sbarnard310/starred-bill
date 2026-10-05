@@ -21,5 +21,11 @@
   "website": "https://www.londonermacao.com/macau-restaurants/huaiyang-garden.html",
   "lat": 22.145888,
   "lng": 113.56522,
-  "placeId": "ChIJBcNsOCBxATQRPxIHhp7KpuE"
+  "placeId": "ChIJBcNsOCBxATQRPxIHhp7KpuE",
+  "michelinId": "1204313",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

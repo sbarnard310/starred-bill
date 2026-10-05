@@ -15,5 +15,11 @@
   "website": "https://www.lemulsion-restaurant.com",
   "lat": 45.598532,
   "lng": 5.2312885,
-  "placeId": "ChIJ9Xb3E6oti0cRn1xDBxIjark"
+  "placeId": "ChIJ9Xb3E6oti0cRn1xDBxIjark",
+  "michelinId": "327218",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Romain Hubert",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,13 @@
   "website": "https://www.mauroelli.com/",
   "lat": 45.80428,
   "lng": 9.189167,
-  "placeId": "ChIJbXOdOoOfhkcRufjhwkFhZ5U"
+  "placeId": "ChIJbXOdOoOfhkcRufjhwkFhZ5U",
+  "michelinId": "124197",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Mauro Elli",
+  "chefSource": "michelin"
 }

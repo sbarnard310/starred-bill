@@ -14,5 +14,10 @@
   "website": "https://www.olo-ravintola.fi/",
   "lat": 60.1680792,
   "lng": 24.9548241,
-  "placeId": "ChIJcbPkLMkLkkYRFeWoki1-0vk"
+  "placeId": "ChIJcbPkLMkLkkYRFeWoki1-0vk",
+  "michelinId": "173845",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

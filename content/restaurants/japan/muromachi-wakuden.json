@@ -12,5 +12,14 @@
   "website": "https://www.wakuden.jp/ryotei/muromachi/",
   "lat": 35.010146,
   "lng": 135.763257,
-  "placeId": "ChIJqxQuuI8IAWAR-TM9RzwBeIY"
+  "placeId": "ChIJqxQuuI8IAWAR-TM9RzwBeIY",
+  "michelinId": "1193058",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Daisuke Ogawa",
+  "chefSource": "michelin"
 }

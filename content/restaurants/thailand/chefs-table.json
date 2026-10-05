@@ -17,5 +17,11 @@
   "website": "https://www.lebua.com/restaurants/chefs-table",
   "lat": 13.7215006,
   "lng": 100.5171696,
-  "placeId": "ChIJkbyJIMeZ4jARgc1-140HJkU"
+  "placeId": "ChIJkbyJIMeZ4jARgc1-140HJkU",
+  "michelinId": "1184372",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

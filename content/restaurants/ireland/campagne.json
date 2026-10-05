@@ -20,5 +20,11 @@
   "website": "https://www.campagne.ie/",
   "lat": 52.655984,
   "lng": -7.246065,
-  "placeId": "ChIJnV_RGAs6XUgRhMQ4NfWTWME"
+  "placeId": "ChIJnV_RGAs6XUgRhMQ4NfWTWME",
+  "michelinId": "235814",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Garrett Byrne",
+  "chefSource": "michelin"
 }

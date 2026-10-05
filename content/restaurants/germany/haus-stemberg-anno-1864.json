@@ -13,5 +13,11 @@
   "website": "https://haus-stemberg.de/",
   "lat": 51.3313091,
   "lng": 7.0914851,
-  "placeId": "ChIJedbIPCbauEcRFiH6aD3cfK0"
+  "placeId": "ChIJedbIPCbauEcRFiH6aD3cfK0",
+  "michelinId": "78440",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sascha Stemberg",
+  "chefSource": "michelin"
 }

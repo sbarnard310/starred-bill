@@ -32,5 +32,12 @@
   "website": "https://esserestaurant.dk/",
   "lat": 55.706846,
   "lng": 12.593711,
-  "placeId": "ChIJZ7egZwBTUkYRAQ5WQBRR2nM"
+  "placeId": "ChIJZ7egZwBTUkYRAQ5WQBRR2nM",
+  "michelinId": "1247868",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Matt Orlando",
+  "chefSource": "michelin"
 }

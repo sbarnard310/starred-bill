@@ -13,5 +13,11 @@
   "website": "https://www.raedthuys-duiven.nl/",
   "lat": 51.9503278,
   "lng": 6.0236683,
-  "placeId": "ChIJmQ2Zt4ehx0cRteMDdLFlA0g"
+  "placeId": "ChIJmQ2Zt4ehx0cRteMDdLFlA0g",
+  "michelinId": "212229",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

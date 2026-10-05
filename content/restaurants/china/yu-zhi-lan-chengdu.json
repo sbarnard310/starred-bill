@@ -11,5 +11,15 @@
   "sourceType": "none",
   "lat": 30.6691974,
   "lng": 104.0561672,
-  "placeId": "ChIJ3yrQyCnF7zYR3AQi0SIjESg"
+  "placeId": "ChIJ3yrQyCnF7zYR3AQi0SIjESg",
+  "michelinId": "1196150",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Lan Guijun",
+  "chefSource": "michelin"
 }

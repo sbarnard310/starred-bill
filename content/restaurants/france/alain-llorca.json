@@ -15,5 +15,12 @@
   "website": "https://www.alainllorca.com",
   "lat": 43.6952832,
   "lng": 7.1089745,
-  "placeId": "ChIJl1uHNkXTzRIRkHk0JtRVOFs"
+  "placeId": "ChIJl1uHNkXTzRIRkHk0JtRVOFs",
+  "michelinId": "168074",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Alain Llorca",
+  "chefSource": "site"
 }

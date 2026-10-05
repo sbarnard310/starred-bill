@@ -12,5 +12,13 @@
   "website": "https://almorestaurante.com/",
   "lat": 37.9842525,
   "lng": -1.132081,
-  "placeId": "ChIJQdZB0M6DYw0RZX9zFJkBjRg"
+  "placeId": "ChIJQdZB0M6DYw0RZX9zFJkBjRg",
+  "michelinId": "1186881",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Juan Guillamón",
+  "chefSource": "michelin"
 }

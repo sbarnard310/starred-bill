@@ -21,5 +21,13 @@
   "website": "https://www.herbergonderdelinden.com/",
   "lat": 53.2582148,
   "lng": 6.457543,
-  "placeId": "ChIJ6zjm6HfLyUcRmApb5iJmnKM"
+  "placeId": "ChIJ6zjm6HfLyUcRmApb5iJmnKM",
+  "michelinId": "212514",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Steven Klein Nijenhuis",
+  "chefSource": "michelin"
 }

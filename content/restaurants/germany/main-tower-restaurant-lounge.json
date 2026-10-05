@@ -15,5 +15,12 @@
   "website": "https://www.maintower-restaurant.de/",
   "lat": 50.1123942,
   "lng": 8.6722747,
-  "placeId": "ChIJJ78ZeqwOvUcRRWY4XT-9-JY"
+  "placeId": "ChIJJ78ZeqwOvUcRRWY4XT-9-JY",
+  "michelinId": "1198316",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Martin Weghofer",
+  "chefSource": "site"
 }

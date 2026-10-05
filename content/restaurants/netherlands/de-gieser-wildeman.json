@@ -21,5 +21,11 @@
   "website": "https://degieserwildeman.nl/",
   "lat": 51.9019056,
   "lng": 4.9391336,
-  "placeId": "ChIJB5b9InSHxkcRJ9Q3glPUDTk"
+  "placeId": "ChIJB5b9InSHxkcRJ9Q3glPUDTk",
+  "michelinId": "212865",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marco van der Wijngaard",
+  "chefSource": "site"
 }

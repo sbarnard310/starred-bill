@@ -13,5 +13,12 @@
   "website": "https://gillesvarone.ch/",
   "lat": 46.2501082,
   "lng": 7.3506266,
-  "placeId": "ChIJTyMp7pHdjkcR_Cp3kqv5dZE"
+  "placeId": "ChIJTyMp7pHdjkcR_Cp3kqv5dZE",
+  "michelinId": "1204200",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Gilles Varone",
+  "chefSource": "michelin"
 }

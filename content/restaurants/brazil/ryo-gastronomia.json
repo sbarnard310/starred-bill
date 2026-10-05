@@ -12,5 +12,12 @@
   "website": "https://www.ryogastronomia.com.br/",
   "lat": -23.5814487,
   "lng": -46.6769049,
-  "placeId": "ChIJJSTXZWdXzpQRNHaPeq5OHMk"
+  "placeId": "ChIJJSTXZWdXzpQRNHaPeq5OHMk",
+  "michelinId": "543966",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Edson Yamashita",
+  "chefSource": "michelin"
 }

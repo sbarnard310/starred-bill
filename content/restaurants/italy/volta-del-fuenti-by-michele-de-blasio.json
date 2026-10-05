@@ -13,5 +13,10 @@
   "website": "https://www.giardinidelfuenti.com/volta-del-fuenti/",
   "lat": 40.6622055,
   "lng": 14.7138129,
-  "placeId": "ChIJKUHs4jbBOxMRuGIlQxNPI6I"
+  "placeId": "ChIJKUHs4jbBOxMRuGIlQxNPI6I",
+  "michelinId": "1202474",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

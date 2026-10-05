@@ -13,5 +13,8 @@
   "website": "https://www.admiral-weisenheim.de/",
   "lat": 49.51273,
   "lng": 8.1545977,
-  "placeId": "ChIJywa4NGk6lkcR4stzg8gGtxo"
+  "placeId": "ChIJywa4NGk6lkcR4stzg8gGtxo",
+  "michelinId": "464293",
+  "chef": "Holger Stehr",
+  "chefSource": "michelin"
 }

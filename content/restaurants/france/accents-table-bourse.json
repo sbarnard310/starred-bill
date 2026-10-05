@@ -25,5 +25,12 @@
   "website": "https://accents-restaurant.com/",
   "lat": 48.8699134,
   "lng": 2.3404253,
-  "placeId": "ChIJCfSJczxu5kcR5iWOIrx0RLg"
+  "placeId": "ChIJCfSJczxu5kcR5iWOIrx0RLg",
+  "michelinId": "521183",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Romain Mahi",
+  "chefSource": "michelin"
 }

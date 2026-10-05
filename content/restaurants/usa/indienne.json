@@ -17,5 +17,15 @@
   "website": "https://indiennechicago.com/",
   "lat": 41.894605,
   "lng": -87.634748,
-  "placeId": "ChIJgaWIsk8tDogRXfsAkui5JOM"
+  "placeId": "ChIJgaWIsk8tDogRXfsAkui5JOM",
+  "michelinId": "1206191",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Sujan Sarkar",
+  "chefSource": "michelin"
 }

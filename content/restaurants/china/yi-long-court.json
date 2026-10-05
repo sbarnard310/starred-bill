@@ -9,5 +9,10 @@
   "sourceType": "none",
   "website": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/yi-long-court-chinese-restaurant",
   "lat": 31.243758,
-  "lng": 121.507579
+  "lng": 121.507579,
+  "michelinId": "506743",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

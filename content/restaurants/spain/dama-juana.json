@@ -13,5 +13,8 @@
   "website": "https://www.damajuanajaen.es",
   "lat": 37.767224,
   "lng": -3.7854772,
-  "placeId": "ChIJZV8p5pbXbQ0RqCwTVSCIF4A"
+  "placeId": "ChIJZV8p5pbXbQ0RqCwTVSCIF4A",
+  "michelinId": "1160055",
+  "chef": "Juan Aceituno",
+  "chefSource": "michelin"
 }

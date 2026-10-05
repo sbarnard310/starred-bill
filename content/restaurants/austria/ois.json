@@ -13,5 +13,12 @@
   "website": "https://www.muehltalhof.at/",
   "lat": 48.4814599,
   "lng": 14.0023486,
-  "placeId": "ChIJswnAHmmAc0cR_6cM5pOOGO8"
+  "placeId": "ChIJswnAHmmAc0cR_6cM5pOOGO8",
+  "michelinId": "1212932",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Philip Rachinger",
+  "chefSource": "michelin"
 }

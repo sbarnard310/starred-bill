@@ -13,5 +13,17 @@
   "website": "https://www.tenerumiristorante.it/",
   "lat": 38.4305495,
   "lng": 14.9560516,
-  "placeId": "ChIJxUJ8o1F_FhMRra1-3iGIwD0"
+  "placeId": "ChIJxUJ8o1F_FhMRra1-3iGIwD0",
+  "michelinId": "1199328",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Davide Guidara",
+  "chefSource": "michelin"
 }

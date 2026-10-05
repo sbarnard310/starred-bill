@@ -13,5 +13,13 @@
   "website": "https://www.labandiera.it/",
   "lat": 42.3698762,
   "lng": 13.9082843,
-  "placeId": "ChIJZ8cv3HvKMRMRBJxOTmkwuwU"
+  "placeId": "ChIJZ8cv3HvKMRMRBJxOTmkwuwU",
+  "michelinId": "131617",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Marcello Spadone e Mattia Spadone",
+  "chefSource": "michelin"
 }

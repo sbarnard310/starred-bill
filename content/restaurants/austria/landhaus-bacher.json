@@ -13,5 +13,12 @@
   "website": "https://www.landhaus-bacher.at",
   "lat": 48.3931154,
   "lng": 15.5793549,
-  "placeId": "ChIJ_0MTndapbUcRgApdMHFuuwI"
+  "placeId": "ChIJ_0MTndapbUcRgApdMHFuuwI",
+  "michelinId": "105049",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Thomas Dorfer",
+  "chefSource": "michelin"
 }

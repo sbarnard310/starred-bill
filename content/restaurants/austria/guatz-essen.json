@@ -13,5 +13,14 @@
   "website": "https://guatzessen.at/permakultur",
   "lat": 47.2972176,
   "lng": 11.8866642,
-  "placeId": "ChIJeQjINsHbd0cRfD9s9A0z_Sg"
+  "placeId": "ChIJeQjINsHbd0cRfD9s9A0z_Sg",
+  "michelinId": "1212407",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Peter Fankhauser",
+  "chefSource": "michelin"
 }

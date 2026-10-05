@@ -15,5 +15,11 @@
   "website": "https://www.pavus.si/",
   "lat": 46.1571174,
   "lng": 15.237399,
-  "placeId": "ChIJ6XE1IKJzZUcRqlpjITuFfwc"
+  "placeId": "ChIJ6XE1IKJzZUcRqlpjITuFfwc",
+  "michelinId": "1164922",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marko Pavčnik",
+  "chefSource": "michelin"
 }

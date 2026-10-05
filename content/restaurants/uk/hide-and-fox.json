@@ -26,5 +26,10 @@
   "website": "https://hideandfox.co.uk/",
   "lat": 51.080539,
   "lng": 1.076279,
-  "placeId": "ChIJfzSpsWnB3kcRy02t0WP9Vvk"
+  "placeId": "ChIJfzSpsWnB3kcRy02t0WP9Vvk",
+  "michelinId": "1184110",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

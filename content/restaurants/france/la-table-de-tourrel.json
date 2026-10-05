@@ -20,5 +20,8 @@
   "website": "https://www.detourrel.com/fr/restaurant/",
   "lat": 43.7891048,
   "lng": 4.8307716,
-  "placeId": "ChIJwUSwtVfltRIRezZDJA7bhfU"
+  "placeId": "ChIJwUSwtVfltRIRezZDJA7bhfU",
+  "michelinId": "1000191",
+  "chef": "Thomas Cavasin",
+  "chefSource": "site"
 }

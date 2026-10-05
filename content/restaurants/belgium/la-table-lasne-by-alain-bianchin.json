@@ -13,5 +13,8 @@
   "website": "https://www.latablelasne.be/",
   "lat": 50.6985703,
   "lng": 4.4694851,
-  "placeId": "ChIJG2xo1X7Rw0cR7epAleuvayY"
+  "placeId": "ChIJG2xo1X7Rw0cR7epAleuvayY",
+  "michelinId": "1205634",
+  "chef": "Alain Bianchin",
+  "chefSource": "site"
 }

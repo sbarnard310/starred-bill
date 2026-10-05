@@ -13,5 +13,14 @@
   "website": "https://plumedhorse.com/",
   "lat": 37.2563623,
   "lng": -122.0352659,
-  "placeId": "ChIJ01EehuBKjoARf8mKQoPv8oA"
+  "placeId": "ChIJ01EehuBKjoARf8mKQoPv8oA",
+  "michelinId": "123240",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Peter Armellino",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,8 @@
   "website": "https://www.bruno-oger.com",
   "lat": 43.5716556,
   "lng": 7.014556,
-  "placeId": "ChIJS4x5TPyBzhIRyQ_ceZRqxqE"
+  "placeId": "ChIJS4x5TPyBzhIRyQ_ceZRqxqE",
+  "michelinId": "263836",
+  "chef": "Bruno Oger",
+  "chefSource": "michelin"
 }

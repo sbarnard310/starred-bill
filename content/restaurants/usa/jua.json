@@ -18,5 +18,8 @@
   "website": "https://juanyc.com/",
   "lat": 40.740014,
   "lng": -73.987448,
-  "placeId": "ChIJfTgbIE9ZwokRdRjFE2OMZN8"
+  "placeId": "ChIJfTgbIE9ZwokRdRjFE2OMZN8",
+  "michelinId": "1186485",
+  "chef": "Hoyoung Kim",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.restaurant-auf-schloss-filseck.de/",
   "lat": 48.7008984,
   "lng": 9.6043769,
-  "placeId": "ChIJ_3rNeRWjmUcRm369hz4LYik"
+  "placeId": "ChIJ_3rNeRWjmUcRm369hz4LYik",
+  "michelinId": "96894",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Daniele Corona",
+  "chefSource": "michelin"
 }

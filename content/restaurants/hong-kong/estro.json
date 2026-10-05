@@ -25,5 +25,11 @@
   "website": "https://www.estro.hk/",
   "lat": 22.2801332,
   "lng": 114.1572026,
-  "placeId": "ChIJUVwefskBBDQRLp-GyShVfyA"
+  "placeId": "ChIJUVwefskBBDQRLp-GyShVfyA",
+  "michelinId": "1198381",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Antimo Maria Merone",
+  "chefSource": "site"
 }

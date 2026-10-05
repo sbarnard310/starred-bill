@@ -13,5 +13,13 @@
   "website": "https://www.lechaletdelaforet.be/",
   "lat": 50.7847298,
   "lng": 4.3866247,
-  "placeId": "ChIJQwCS-TfFw0cRTTJBXQalDYo"
+  "placeId": "ChIJQwCS-TfFw0cRTTJBXQalDYo",
+  "michelinId": "209445",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Pascal Devalkeneer",
+  "chefSource": "michelin"
 }

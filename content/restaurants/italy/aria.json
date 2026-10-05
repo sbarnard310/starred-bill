@@ -13,5 +13,13 @@
   "website": "https://www.ariarestaurant.it/",
   "lat": 40.8433646,
   "lng": 14.2540383,
-  "placeId": "ChIJ0dc45VMJOxMRAIBNNu6Bo8I"
+  "placeId": "ChIJ0dc45VMJOxMRAIBNNu6Bo8I",
+  "michelinId": "1197785",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Paolo Barrale",
+  "chefSource": "site"
 }

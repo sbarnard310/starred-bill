@@ -13,5 +13,13 @@
   "website": "https://aandepoel.nl/",
   "lat": 52.2999557,
   "lng": 4.8447485,
-  "placeId": "ChIJa7QlyS3gxUcRxUOJ_-EIV1M"
+  "placeId": "ChIJa7QlyS3gxUcRxUOJ_-EIV1M",
+  "michelinId": "212192",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

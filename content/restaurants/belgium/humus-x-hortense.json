@@ -13,5 +13,15 @@
   "website": "https://humushortense.be/",
   "lat": 50.8294878,
   "lng": 4.3703766,
-  "placeId": "ChIJ08qMpn3Ew0cRnJofBbugJ1Y"
+  "placeId": "ChIJ08qMpn3Ew0cRnJofBbugJ1Y",
+  "michelinId": "537346",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Nicolas Decloedt",
+  "chefSource": "michelin"
 }

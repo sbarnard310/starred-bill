@@ -12,5 +12,9 @@
   "website": "https://restaurantcelera.com",
   "lat": 14.566919,
   "lng": 121.008008,
-  "placeId": "ChIJuXYsfgDJlzMRUSeJ03Rn1z4"
+  "placeId": "ChIJuXYsfgDJlzMRUSeJ03Rn1z4",
+  "michelinId": "1241027",
+  "diets": [
+    "vegetarian"
+  ]
 }

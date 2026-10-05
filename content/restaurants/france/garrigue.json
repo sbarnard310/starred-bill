@@ -27,5 +27,11 @@
   "website": "https://www.garrigue-restaurant.fr",
   "lat": 43.7381545,
   "lng": 5.4649088,
-  "placeId": "ChIJG3U0LJYjyhIRcL4fB3YGirI"
+  "placeId": "ChIJG3U0LJYjyhIRcL4fB3YGirI",
+  "michelinId": "1243656",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nicolas Seibold",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://www.restaurantstallen.no/",
   "lat": 59.9238866,
   "lng": 10.7263103,
-  "placeId": "ChIJObWXpz1tQUYRBm7OfhIR868"
+  "placeId": "ChIJObWXpz1tQUYRBm7OfhIR868",
+  "michelinId": "1186394",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sebastian Myhre",
+  "chefSource": "michelin"
 }

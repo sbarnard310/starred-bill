@@ -20,5 +20,12 @@
   "website": "https://galvinrestaurants.com/",
   "lat": 51.520295,
   "lng": -0.0783716,
-  "placeId": "ChIJg5eH2LMcdkgRIY4RDHmB8RA"
+  "placeId": "ChIJg5eH2LMcdkgRIY4RDHmB8RA",
+  "michelinId": "267922",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Chris Galvin",
+  "chefSource": "site"
 }

@@ -25,5 +25,8 @@
   "website": "https://moebiusmilano.it/",
   "lat": 45.48142,
   "lng": 9.202867,
-  "placeId": "ChIJSVm3PfbHhkcRPeDWzSh9BS8"
+  "placeId": "ChIJSVm3PfbHhkcRPeDWzSh9BS8",
+  "michelinId": "1186044",
+  "chef": "Enrico Croatti",
+  "chefSource": "site"
 }

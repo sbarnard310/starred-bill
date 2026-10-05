@@ -23,5 +23,13 @@
   "website": "https://dimoragenista.it/",
   "lat": 41.804282,
   "lng": 12.977024,
-  "placeId": "ChIJY0l2CwB9JRMRIRKc3GlUczA"
+  "placeId": "ChIJY0l2CwB9JRMRIRKc3GlUczA",
+  "michelinId": "318744",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Marco Bottega",
+  "chefSource": "michelin"
 }

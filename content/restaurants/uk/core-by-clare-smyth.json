@@ -21,5 +21,12 @@
   "website": "https://www.corebyclaresmyth.com/",
   "lat": 51.5126689,
   "lng": -0.2030649,
-  "placeId": "ChIJVVU8V-IPdkgRzKjRtNrdvDw"
+  "placeId": "ChIJVVU8V-IPdkgRzKjRtNrdvDw",
+  "michelinId": "551291",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Clare Smyth",
+  "chefSource": "michelin"
 }

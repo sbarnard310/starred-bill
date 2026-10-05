@@ -15,5 +15,13 @@
   "website": "https://ryodoes.com/",
   "lat": 49.6024093,
   "lng": 6.1169817,
-  "placeId": "ChIJyxPx02dJlUcRsHN9NdOkVaA"
+  "placeId": "ChIJyxPx02dJlUcRsHN9NdOkVaA",
+  "michelinId": "1192197",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Ryôdô Kajiwara",
+  "chefSource": "michelin"
 }

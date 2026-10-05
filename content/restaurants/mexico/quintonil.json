@@ -26,5 +26,13 @@
   "website": "https://quintonil.com/",
   "lat": 19.4308408,
   "lng": -99.1917115,
-  "placeId": "ChIJbS8EZf8B0oURwwD8B0MpqK0"
+  "placeId": "ChIJbS8EZf8B0oURwwD8B0MpqK0",
+  "michelinId": "1208195",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jorge Vallejo",
+  "chefSource": "michelin"
 }

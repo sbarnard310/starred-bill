@@ -23,5 +23,12 @@
   "website": "https://aubergeleprieure.fr/",
   "lat": 44.1408186,
   "lng": 0.6089812,
-  "placeId": "ChIJCZpUPHlMqhIRcSnU09gD9P4"
+  "placeId": "ChIJCZpUPHlMqhIRcSnU09gD9P4",
+  "michelinId": "63830",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Benjamin Toursel",
+  "chefSource": "michelin"
 }

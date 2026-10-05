@@ -17,5 +17,13 @@
   "website": "https://www.gknyc.com/",
   "lat": 40.75397,
   "lng": -73.982025,
-  "placeId": "ChIJw_TGEwBZwokR-zLts543O-4"
+  "placeId": "ChIJw_TGEwBZwokR-zLts543O-4",
+  "michelinId": "474823",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Gabriel Kreuther",
+  "chefSource": "michelin"
 }

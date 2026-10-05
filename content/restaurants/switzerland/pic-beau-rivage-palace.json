@@ -13,5 +13,14 @@
   "website": "https://www.brp.ch/",
   "lat": 46.5080909,
   "lng": 6.6297747,
-  "placeId": "ChIJgwZPe88vjEcR_E-7VldymPE"
+  "placeId": "ChIJgwZPe88vjEcR_E-7VldymPE",
+  "michelinId": "179504",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jordan Theurillat",
+  "chefSource": "michelin"
 }

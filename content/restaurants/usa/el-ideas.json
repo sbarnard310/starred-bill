@@ -17,5 +17,13 @@
   "website": "https://www.elideas.com/",
   "lat": 41.862929,
   "lng": -87.686825,
-  "placeId": "ChIJbbQglnAtDogR-Y6w6ETH91A"
+  "placeId": "ChIJbbQglnAtDogR-Y6w6ETH91A",
+  "michelinId": "374769",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Phillip Foss",
+  "chefSource": "michelin"
 }

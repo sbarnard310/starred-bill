@@ -12,5 +12,8 @@
   "website": "https://www.kyoryori-nakamura.com/",
   "lat": 35.010397,
   "lng": 135.765083,
-  "placeId": "ChIJzYVfPY4IAWAR9YmMkv5T9Rk"
+  "placeId": "ChIJzYVfPY4IAWAR9YmMkv5T9Rk",
+  "michelinId": "1192881",
+  "chef": "Motokazu Nakamura",
+  "chefSource": "michelin"
 }

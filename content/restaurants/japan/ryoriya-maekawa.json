@@ -12,5 +12,8 @@
   "website": "https://ryouriya-maekawa.com/",
   "lat": 34.998689,
   "lng": 135.767871,
-  "placeId": "ChIJo_l8-ZIJAWARxRqfI9CMdt0"
+  "placeId": "ChIJo_l8-ZIJAWARxRqfI9CMdt0",
+  "michelinId": "1195263",
+  "chef": "Koichi Maekawa",
+  "chefSource": "michelin"
 }

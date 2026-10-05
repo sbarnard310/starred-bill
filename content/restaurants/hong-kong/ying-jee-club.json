@@ -27,5 +27,13 @@
   "website": "https://yingjeeclub.hk/",
   "lat": 22.284338,
   "lng": 114.156654,
-  "placeId": "ChIJw-yCSGMABDQRho89_TXRM1g"
+  "placeId": "ChIJw-yCSGMABDQRho89_TXRM1g",
+  "michelinId": "545662",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Cheung Kin Ming",
+  "chefSource": "site"
 }

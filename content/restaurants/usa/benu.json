@@ -17,5 +17,12 @@
   "website": "https://www.benusf.com/",
   "lat": 37.785376,
   "lng": -122.39906,
-  "placeId": "ChIJSToWqn2AhYAR1CuH2iGMvuo"
+  "placeId": "ChIJSToWqn2AhYAR1CuH2iGMvuo",
+  "michelinId": "325324",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Corey Lee",
+  "chefSource": "michelin"
 }

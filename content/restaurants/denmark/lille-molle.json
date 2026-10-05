@@ -26,5 +26,8 @@
   "website": "https://restaurantlillemoelle.dk/",
   "lat": 55.671387,
   "lng": 12.596112,
-  "placeId": "ChIJ29LGogVTUkYRcswK32qPzAY"
+  "placeId": "ChIJ29LGogVTUkYRcswK32qPzAY",
+  "michelinId": "1245835",
+  "chef": "Christoffer Sørensen",
+  "chefSource": "michelin"
 }

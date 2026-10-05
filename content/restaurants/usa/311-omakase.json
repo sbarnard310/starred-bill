@@ -13,5 +13,8 @@
   "website": "https://311boston.com/",
   "lat": 42.3430505,
   "lng": -71.0736623,
-  "placeId": "ChIJnWDc3Bh744kRdAPopyBzyVk"
+  "placeId": "ChIJnWDc3Bh744kRdAPopyBzyVk",
+  "michelinId": "1218419",
+  "chef": "Wei Fa Chen",
+  "chefSource": "michelin"
 }

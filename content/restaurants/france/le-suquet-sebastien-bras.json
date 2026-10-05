@@ -27,5 +27,10 @@
   "website": "https://www.bras.fr",
   "lat": 44.6808205,
   "lng": 2.8939547,
-  "placeId": "ChIJv7m2porBshIRGcpcIOT_HIo"
+  "placeId": "ChIJv7m2porBshIRGcpcIOT_HIo",
+  "michelinId": "11501",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

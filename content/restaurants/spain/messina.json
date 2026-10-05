@@ -13,5 +13,13 @@
   "website": "https://www.restaurantemessina.com",
   "lat": 36.5084597,
   "lng": -4.8806499,
-  "placeId": "ChIJVWH3NvYncw0RYd7C6ytZxrc"
+  "placeId": "ChIJVWH3NvYncw0RYd7C6ytZxrc",
+  "michelinId": "221474",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Mauricio Giovanini",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,9 @@
   "website": "https://www.restaurant-ducsdelorraine.com/",
   "lat": 48.169025,
   "lng": 6.4491422,
-  "placeId": "ChIJl1ud94-gk0cRClcdA_xIy74"
+  "placeId": "ChIJl1ud94-gk0cRClcdA_xIy74",
+  "michelinId": "3039",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -23,5 +23,13 @@
   "website": "https://www.moreriagastro.com/",
   "lat": 40.412847,
   "lng": -3.714092,
-  "placeId": "ChIJozCS4HcoQg0RrX_GowuiJko"
+  "placeId": "ChIJozCS4HcoQg0RrX_GowuiJko",
+  "michelinId": "561745",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "David García",
+  "chefSource": "michelin"
 }

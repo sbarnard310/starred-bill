@@ -13,5 +13,12 @@
   "website": "https://www.elbohio.net/",
   "lat": 40.1264098,
   "lng": -3.8463784,
-  "placeId": "ChIJm_Zqah_xQQ0RZua_O3edAiQ"
+  "placeId": "ChIJm_Zqah_xQQ0RZua_O3edAiQ",
+  "michelinId": "220629",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Pepe Rodríguez",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.molinodealcuneza.com/",
   "lat": 41.1055995,
   "lng": -2.6044708,
-  "placeId": "ChIJUQ1FnQZRQw0RFvRQZfROD4k"
+  "placeId": "ChIJUQ1FnQZRQw0RFvRQZfROD4k",
+  "michelinId": "504019",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Samuel Moreno",
+  "chefSource": "michelin"
 }

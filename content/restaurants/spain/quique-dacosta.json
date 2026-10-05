@@ -13,5 +13,12 @@
   "website": "https://www.quiquedacosta.es/",
   "lat": 38.8537884,
   "lng": 0.0852209,
-  "placeId": "ChIJU1izUBkbnhIRfn-1gHM6C8Y"
+  "placeId": "ChIJU1izUBkbnhIRfn-1gHM6C8Y",
+  "michelinId": "219860",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Quique Dacosta",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,11 @@
   "website": "https://restaurantborn.com/",
   "lat": 1.280395,
   "lng": 103.843918,
-  "placeId": "ChIJEbQ9xpYZ2jERyBrI8a2FtEY"
+  "placeId": "ChIJEbQ9xpYZ2jERyBrI8a2FtEY",
+  "michelinId": "1204753",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Zor Tan",
+  "chefSource": "site"
 }

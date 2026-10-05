@@ -16,5 +16,11 @@
   "website": "https://storiedamorerestaurant.it/",
   "lat": 45.5381705,
   "lng": 11.9290391,
-  "placeId": "ChIJ3f54YKXTfkcRkpjhT6eJtus"
+  "placeId": "ChIJ3f54YKXTfkcRkpjhT6eJtus",
+  "michelinId": "264952",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Davide Filippetto",
+  "chefSource": "michelin"
 }

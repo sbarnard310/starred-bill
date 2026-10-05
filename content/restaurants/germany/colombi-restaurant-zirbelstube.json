@@ -12,5 +12,13 @@
   "website": "https://www.colombi.de/",
   "lat": 47.9971187,
   "lng": 7.8475694,
-  "placeId": "ChIJyawXzZ0ckUcRcQnRHsvBppc"
+  "placeId": "ChIJyawXzZ0ckUcRcQnRHsvBppc",
+  "michelinId": "80811",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Sven Usinger",
+  "chefSource": "michelin"
 }

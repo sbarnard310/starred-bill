@@ -24,5 +24,13 @@
   "website": "https://www.7thdoor.kr/",
   "lat": 37.52237,
   "lng": 127.05429,
-  "placeId": "ChIJJ1xm8n-lfDUR5AOAQSJ0oeM"
+  "placeId": "ChIJJ1xm8n-lfDUR5AOAQSJ0oeM",
+  "michelinId": "1192592",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Kim Dae-chun",
+  "chefSource": "michelin"
 }

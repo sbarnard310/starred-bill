@@ -16,5 +16,9 @@
   "website": "https://www.edleins.de/",
   "lat": 48.831168,
   "lng": 12.9575939,
-  "placeId": "ChIJ4bWTfQwRdUcRHYOTCTkE_KI"
+  "placeId": "ChIJ4bWTfQwRdUcRHYOTCTkE_KI",
+  "michelinId": "1207304",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -12,5 +12,12 @@
   "website": "https://grenache.pt/",
   "lat": 38.7124025,
   "lng": -9.13165,
-  "placeId": "ChIJRRUDRjU1GQ0RMctgCBoUAao"
+  "placeId": "ChIJRRUDRjU1GQ0RMctgCBoUAao",
+  "michelinId": "1184214",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Philippe Gelfi",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,9 @@
   "lunchNoteZh": "僅供應晚餐",
   "lat": 25.0479656,
   "lng": 121.5402246,
-  "placeId": "ChIJYSnuobSrQjQRYJh45svt_T8"
+  "placeId": "ChIJYSnuobSrQjQRYJh45svt_T8",
+  "michelinId": "1210701",
+  "diets": [
+    "vegetarian"
+  ]
 }

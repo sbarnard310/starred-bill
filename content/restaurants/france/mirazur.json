@@ -15,5 +15,13 @@
   "website": "https://www.mirazur.fr/",
   "lat": 43.7859304,
   "lng": 7.5280514,
-  "placeId": "ChIJm8DZegnszRIRmG_rHu0gA5c"
+  "placeId": "ChIJm8DZegnszRIRmG_rHu0gA5c",
+  "michelinId": "16132",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Mauro Colagreco",
+  "chefSource": "michelin"
 }

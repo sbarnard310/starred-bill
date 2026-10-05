@@ -25,5 +25,11 @@
   "website": "https://www.latrota.com/",
   "lat": 42.498296,
   "lng": 12.848628,
-  "placeId": "ChIJ7yfAeK1VLhMROOaIWOcAwrM"
+  "placeId": "ChIJ7yfAeK1VLhMROOaIWOcAwrM",
+  "michelinId": "148178",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

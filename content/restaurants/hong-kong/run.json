@@ -28,5 +28,12 @@
   "website": "https://run-restaurant.stregishongkong.com/",
   "lat": 22.2801399,
   "lng": 114.175716,
-  "placeId": "ChIJg3k8mcEBBDQRglaFDOUqUNU"
+  "placeId": "ChIJg3k8mcEBBDQRglaFDOUqUNU",
+  "michelinId": "1184876",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Hung Chi-Kwong",
+  "chefSource": "site"
 }

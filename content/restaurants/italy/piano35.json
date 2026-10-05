@@ -12,5 +12,11 @@
   "website": "https://www.piano35.com/",
   "lat": 45.06945,
   "lng": 7.663038,
-  "placeId": "ChIJ4SZ-wxptiEcR5eWgSgbHVc8"
+  "placeId": "ChIJ4SZ-wxptiEcR5eWgSgbHVc8",
+  "michelinId": "504897",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

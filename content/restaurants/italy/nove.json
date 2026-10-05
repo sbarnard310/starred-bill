@@ -15,5 +15,13 @@
   "website": "https://www.noveristorante.it",
   "lat": 44.0117944,
   "lng": 8.172401,
-  "placeId": "ChIJ_3M-57Vd0hIRg6kV_9o8ldY"
+  "placeId": "ChIJ_3M-57Vd0hIRg6kV_9o8ldY",
+  "michelinId": "323889",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Antonio Romano",
+  "chefSource": "site"
 }

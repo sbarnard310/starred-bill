@@ -12,5 +12,13 @@
   "website": "https://www.ctc-restaurant.com/",
   "lat": 37.9804964,
   "lng": 23.7168694,
-  "placeId": "ChIJ9WOIj1y9oRQRlzRu3DA1rHw"
+  "placeId": "ChIJ9WOIj1y9oRQRlzRu3DA1rHw",
+  "michelinId": "475413",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alexandros Tsiotinis",
+  "chefSource": "michelin"
 }

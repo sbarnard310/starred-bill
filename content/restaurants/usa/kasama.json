@@ -22,5 +22,12 @@
   "website": "https://www.kasamachicago.com/",
   "lat": 41.899631,
   "lng": -87.675706,
-  "placeId": "ChIJccHhHs3TD4gRxVcCWUh7-xQ"
+  "placeId": "ChIJccHhHs3TD4gRxVcCWUh7-xQ",
+  "michelinId": "1190971",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Tim Flores and Genie Kwon",
+  "chefSource": "michelin"
 }

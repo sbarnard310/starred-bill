@@ -23,5 +23,8 @@
   "website": "https://belledemars.fr",
   "lat": 43.2764816,
   "lng": 5.3943551,
-  "placeId": "ChIJV0Prw_nByRIR3Uw-2vnGRjk"
+  "placeId": "ChIJV0Prw_nByRIR3Uw-2vnGRjk",
+  "michelinId": "1211272",
+  "chef": "Michel Marini",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,13 @@
   "website": "https://www.lachaumiere-dole.fr",
   "lat": 47.065013,
   "lng": 5.4950802,
-  "placeId": "ChIJVeukgnJLjUcRk2YcKmik8yA"
+  "placeId": "ChIJVeukgnJLjUcRk2YcKmik8yA",
+  "michelinId": "11044",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Laurent Barberot",
+  "chefSource": "michelin"
 }

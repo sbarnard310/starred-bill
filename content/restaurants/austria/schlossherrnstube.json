@@ -14,5 +14,11 @@
   "website": "https://www.schlosshotel-ischgl.com/de/gourmet-fine-dine/schlossherrnstube",
   "lat": 47.0087994,
   "lng": 10.2870374,
-  "placeId": "ChIJTw2XSi-znEcR4OqS_3fMhA8"
+  "placeId": "ChIJTw2XSi-znEcR4OqS_3fMhA8",
+  "michelinId": "254861",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Patrick Raaß",
+  "chefSource": "michelin"
 }

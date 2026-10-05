@@ -13,5 +13,15 @@
   "website": "https://osteriafrancescana.it/",
   "lat": 44.6448099,
   "lng": 10.9215518,
-  "placeId": "ChIJf_Es1BLvf0cRXen4-JhzYBk"
+  "placeId": "ChIJf_Es1BLvf0cRXen4-JhzYBk",
+  "michelinId": "141517",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Massimo Bottura",
+  "chefSource": "michelin"
 }

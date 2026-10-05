@@ -13,5 +13,12 @@
   "website": "https://www.mandarinoriental.com/en/abu-dhabi/emirates-palace/dine/talea-by-antonio-guida",
   "lat": 24.4625137,
   "lng": 54.316228,
-  "placeId": "ChIJZVxxffBlXj4ReQtX5rVcaaA"
+  "placeId": "ChIJZVxxffBlXj4ReQtX5rVcaaA",
+  "michelinId": "1201263",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ],
+  "chef": "Antonio Guida",
+  "chefSource": "michelin"
 }

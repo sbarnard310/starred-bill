@@ -12,5 +12,12 @@
   "website": "https://www.sushisho.se/",
   "lat": 59.3411916,
   "lng": 18.0498009,
-  "placeId": "ChIJVVVV8m-dX0YRrWZ8HbLSOhM"
+  "placeId": "ChIJVVVV8m-dX0YRrWZ8HbLSOhM",
+  "michelinId": "465733",
+  "diets": [
+    "halal",
+    "kosher"
+  ],
+  "chef": "Carl Ishizaki",
+  "chefSource": "michelin"
 }

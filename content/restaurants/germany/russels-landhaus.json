@@ -15,5 +15,9 @@
   "website": "https://www.ruessels-landhaus.de/",
   "lat": 49.7682481,
   "lng": 6.8921194,
-  "placeId": "ChIJZUjIZiGBlUcRP2LsDBEi4AQ"
+  "placeId": "ChIJZUjIZiGBlUcRP2LsDBEi4AQ",
+  "michelinId": "78257",
+  "diets": [
+    "vegetarian"
+  ]
 }

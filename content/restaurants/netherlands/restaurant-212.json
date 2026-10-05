@@ -12,5 +12,9 @@
   "website": "https://212.amsterdam/",
   "lat": 52.365853,
   "lng": 4.900326,
-  "placeId": "ChIJk_uX-pUJxkcRLufCYmS40lk"
+  "placeId": "ChIJk_uX-pUJxkcRLufCYmS40lk",
+  "michelinId": "558722",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -18,5 +18,14 @@
   "website": "https://www.vieux-logis.com/",
   "lat": 44.8757019,
   "lng": 0.8297197,
-  "placeId": "ChIJCTx4qYUxqxIRO9CUkMcvR5s"
+  "placeId": "ChIJCTx4qYUxqxIRO9CUkMcvR5s",
+  "michelinId": "13344",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Vincent Arnould",
+  "chefSource": "michelin"
 }

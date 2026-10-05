@@ -12,5 +12,12 @@
   "website": "https://sh.taian-table.cn",
   "lat": 31.2238977,
   "lng": 121.4281783,
-  "placeId": "ChIJS7pzDVhlsjUR_lDrwj9htu8"
+  "placeId": "ChIJS7pzDVhlsjUR_lDrwj9htu8",
+  "michelinId": "506724",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Stefan Stiller",
+  "chefSource": "michelin"
 }

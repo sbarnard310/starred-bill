@@ -17,5 +17,8 @@
   "website": "https://www.oijimi.com/",
   "lat": 40.739637,
   "lng": -73.992412,
-  "placeId": "ChIJee0VTWZZwokRDYFpAoConlw"
+  "placeId": "ChIJee0VTWZZwokRDYFpAoConlw",
+  "michelinId": "1202653",
+  "chef": "Brian Kim",
+  "chefSource": "michelin"
 }

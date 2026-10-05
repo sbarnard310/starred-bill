@@ -12,5 +12,8 @@
   "website": "https://adhoc2014.jp",
   "lat": 34.694143,
   "lng": 135.489021,
-  "placeId": "ChIJEVXjCfXmAGARApzjxQc6ZkU"
+  "placeId": "ChIJEVXjCfXmAGARApzjxQc6ZkU",
+  "michelinId": "1193091",
+  "chef": "Tatsuhiro Takayama",
+  "chefSource": "michelin"
 }

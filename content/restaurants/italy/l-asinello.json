@@ -25,5 +25,13 @@
   "website": "https://www.asinelloristorante.it/",
   "lat": 43.385119,
   "lng": 11.480819,
-  "placeId": "ChIJ8bAZT1XPKxMRC2NvivR7FUQ"
+  "placeId": "ChIJ8bAZT1XPKxMRC2NvivR7FUQ",
+  "michelinId": "349133",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Senio Venturi",
+  "chefSource": "michelin"
 }

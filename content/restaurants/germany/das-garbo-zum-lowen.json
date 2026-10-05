@@ -16,5 +16,8 @@
   "website": "https://www.garbo-loewen.de/",
   "lat": 49.0779967,
   "lng": 8.3879792,
-  "placeId": "ChIJAR1f58apl0cRKrUTDikAG84"
+  "placeId": "ChIJAR1f58apl0cRKrUTDikAG84",
+  "michelinId": "497619",
+  "chef": "Marcel Kazda",
+  "chefSource": "michelin"
 }

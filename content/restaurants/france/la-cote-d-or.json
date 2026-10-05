@@ -15,5 +15,8 @@
   "website": "https://www.bernard-loiseau.com/",
   "lat": 47.2797873,
   "lng": 4.2321852,
-  "placeId": "ChIJSyTypvEF8kcROYSCo94720o"
+  "placeId": "ChIJSyTypvEF8kcROYSCo94720o",
+  "michelinId": "13081",
+  "chef": "Louis-Philippe Vigilant",
+  "chefSource": "michelin"
 }

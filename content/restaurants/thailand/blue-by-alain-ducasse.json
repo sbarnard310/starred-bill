@@ -17,5 +17,12 @@
   "website": "https://www.blue-alainducasse.com",
   "lat": 13.7265916,
   "lng": 100.5105619,
-  "placeId": "ChIJaa9v9cKZ4jARCdXA1Oxli0A"
+  "placeId": "ChIJaa9v9cKZ4jARCdXA1Oxli0A",
+  "michelinId": "1191110",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Evens López",
+  "chefSource": "michelin"
 }

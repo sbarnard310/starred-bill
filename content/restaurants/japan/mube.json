@@ -12,5 +12,13 @@
   "website": "https://mube.co.jp",
   "lat": 35.052502,
   "lng": 135.738416,
-  "placeId": "ChIJxyOk6L-pAWARYuKXjO_yvlM"
+  "placeId": "ChIJxyOk6L-pAWARYuKXjO_yvlM",
+  "michelinId": "1244424",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

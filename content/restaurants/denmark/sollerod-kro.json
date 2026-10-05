@@ -29,5 +29,10 @@
   "website": "https://www.soelleroed-kro.dk/",
   "lat": 55.813697,
   "lng": 12.495155,
-  "placeId": "ChIJua9HeudOUkYRDn953dEtd1Y"
+  "placeId": "ChIJua9HeudOUkYRDn953dEtd1Y",
+  "michelinId": "113310",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

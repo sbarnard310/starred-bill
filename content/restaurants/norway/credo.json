@@ -12,5 +12,12 @@
   "website": "https://www.restaurantcredo.no",
   "lat": 59.9136752,
   "lng": 10.7179633,
-  "placeId": "ChIJj2nrhZwxbUYR9u_gaKC89IE"
+  "placeId": "ChIJj2nrhZwxbUYR9u_gaKC89IE",
+  "michelinId": "1248105",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Heidi Bjerkan",
+  "chefSource": "michelin"
 }

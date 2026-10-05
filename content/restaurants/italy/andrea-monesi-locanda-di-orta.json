@@ -13,5 +13,12 @@
   "website": "https://www.andreamonesi.com/",
   "lat": 45.7987785,
   "lng": 8.4058245,
-  "placeId": "ChIJW2fpEfYMhkcRRK7iJzsrJ1I"
+  "placeId": "ChIJW2fpEfYMhkcRRK7iJzsrJ1I",
+  "michelinId": "363484",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Andrea Monesi",
+  "chefSource": "site"
 }

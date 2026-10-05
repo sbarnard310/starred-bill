@@ -26,5 +26,10 @@
   "website": "https://www.tasty.com.hk/",
   "lat": 22.279792,
   "lng": 114.183822,
-  "placeId": "ChIJ-2pGxlYABDQRvNCrDm656xI"
+  "placeId": "ChIJ-2pGxlYABDQRvNCrDm656xI",
+  "michelinId": "416951",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

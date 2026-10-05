@@ -13,5 +13,13 @@
   "website": "https://www.dongeppi.com",
   "lat": 40.631762,
   "lng": 14.3931433,
-  "placeId": "ChIJvR5qfEaZOxMRjp_uv5l7gMc"
+  "placeId": "ChIJvR5qfEaZOxMRjp_uv5l7gMc",
+  "michelinId": "472707",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Mario Affinita",
+  "chefSource": "michelin"
 }

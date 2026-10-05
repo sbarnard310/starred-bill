@@ -24,5 +24,9 @@
   "website": "https://restaurantaoc.dk/",
   "lat": 55.683193,
   "lng": 12.588987,
-  "placeId": "ChIJM6fyhhhTUkYRy5Y4y78NEYU"
+  "placeId": "ChIJM6fyhhhTUkYRy5Y4y78NEYU",
+  "michelinId": "112758",
+  "diets": [
+    "vegetarian"
+  ]
 }

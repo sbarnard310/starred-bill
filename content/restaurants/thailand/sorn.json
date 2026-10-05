@@ -17,5 +17,8 @@
   "website": "https://www.sornfinesouthern.com",
   "lat": 13.7231336,
   "lng": 100.5684937,
-  "placeId": "ChIJWfYJ3QWf4jAR9erXv7kK7sA"
+  "placeId": "ChIJWfYJ3QWf4jAR9erXv7kK7sA",
+  "michelinId": "566269",
+  "chef": "Supaksorn Jongsiri",
+  "chefSource": "michelin"
 }

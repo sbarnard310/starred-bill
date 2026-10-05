@@ -13,5 +13,12 @@
   "website": "https://www.ristorantesarri.it/",
   "lat": 43.87008,
   "lng": 8.0059,
-  "placeId": "ChIJwadrskts0hIRJKrT0NUWxM0"
+  "placeId": "ChIJwadrskts0hIRJKrT0NUWxM0",
+  "michelinId": "439653",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Andrea Sarri",
+  "chefSource": "michelin"
 }

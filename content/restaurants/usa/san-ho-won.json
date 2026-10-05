@@ -17,5 +17,11 @@
   "website": "https://www.sanhowon.com/",
   "lat": 37.759574,
   "lng": -122.410024,
-  "placeId": "ChIJBQpgwVh_j4ARocWBZnqOXEg"
+  "placeId": "ChIJBQpgwVh_j4ARocWBZnqOXEg",
+  "michelinId": "1188587",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Corey Lee and Jeong-In Hwang",
+  "chefSource": "michelin"
 }

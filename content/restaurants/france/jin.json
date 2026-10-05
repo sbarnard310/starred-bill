@@ -30,5 +30,9 @@
   "website": "https://jin-paris.com/",
   "lat": 48.86532,
   "lng": 2.3318698,
-  "placeId": "ChIJSxJyyC9u5kcROOLgDin8wz0"
+  "placeId": "ChIJSxJyyC9u5kcROOLgDin8wz0",
+  "michelinId": "407112",
+  "diets": [
+    "kosher"
+  ]
 }

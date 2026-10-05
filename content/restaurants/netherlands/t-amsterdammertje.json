@@ -15,5 +15,16 @@
   "website": "https://www.restaurantamsterdammertje.nl/",
   "lat": 52.2098585,
   "lng": 5.0216548,
-  "placeId": "ChIJc8feAl9yxkcRvHwtWQdAju8"
+  "placeId": "ChIJc8feAl9yxkcRvHwtWQdAju8",
+  "michelinId": "256343",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "André Gerrits",
+  "chefSource": "michelin"
 }

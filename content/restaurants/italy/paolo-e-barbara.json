@@ -13,5 +13,9 @@
   "website": "https://www.paolobarbara.it/",
   "lat": 43.8148723,
   "lng": 7.7738025,
-  "placeId": "ChIJ4yQojVz1zRIRLcUAasMCtoI"
+  "placeId": "ChIJ4yQojVz1zRIRLcUAasMCtoI",
+  "michelinId": "151346",
+  "diets": [
+    "vegetarian"
+  ]
 }

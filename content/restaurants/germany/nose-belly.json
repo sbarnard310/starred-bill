@@ -16,5 +16,11 @@
   "website": "https://www.noseandbelly.de",
   "lat": 48.3716097,
   "lng": 10.892181,
-  "placeId": "ChIJEcawrbS9nkcRdqeKaXPaVZY"
+  "placeId": "ChIJEcawrbS9nkcRdqeKaXPaVZY",
+  "michelinId": "1195951",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Hendrik Ketter",
+  "chefSource": "michelin"
 }

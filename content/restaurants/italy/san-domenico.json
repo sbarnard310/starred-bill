@@ -15,5 +15,12 @@
   "website": "https://www.sandomenico.it/",
   "lat": 44.3556597,
   "lng": 11.7126953,
-  "placeId": "ChIJN7ruqX5KKxMRi7fMLtNLs4Q"
+  "placeId": "ChIJN7ruqX5KKxMRi7fMLtNLs4Q",
+  "michelinId": "136759",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Massimiliano Mascia",
+  "chefSource": "michelin"
 }

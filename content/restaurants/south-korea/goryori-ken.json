@@ -18,5 +18,8 @@
   "noLunch": true,
   "lat": 37.52298,
   "lng": 127.03478,
-  "placeId": "ChIJzfoBFYajfDUR-x_J11iVJdU"
+  "placeId": "ChIJzfoBFYajfDUR-x_J11iVJdU",
+  "michelinId": "565605",
+  "chef": "Kim Geon",
+  "chefSource": "michelin"
 }

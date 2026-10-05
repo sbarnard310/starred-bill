@@ -13,5 +13,10 @@
   "website": "https://www.restaurant-create.nl",
   "lat": 50.7961718,
   "lng": 5.7062586,
-  "placeId": "ChIJHzAbTADpwEcRmqDvJuC263E"
+  "placeId": "ChIJHzAbTADpwEcRmqDvJuC263E",
+  "michelinId": "1217884",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ]
 }

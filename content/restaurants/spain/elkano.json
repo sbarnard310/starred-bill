@@ -25,5 +25,8 @@
   "website": "https://www.restauranteelkano.com/",
   "lat": 43.303004,
   "lng": -2.204909,
-  "placeId": "ChIJH9GgGaLIUQ0RhEde7VfKpQI"
+  "placeId": "ChIJH9GgGaLIUQ0RhEde7VfKpQI",
+  "michelinId": "220227",
+  "chef": "Aitor Arregi",
+  "chefSource": "michelin"
 }

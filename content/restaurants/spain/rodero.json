@@ -13,5 +13,13 @@
   "website": "https://restauranterodero.com/",
   "lat": 42.8160025,
   "lng": -1.6367286,
-  "placeId": "ChIJNRZ9mgCTUA0RvF2gclvSRy8"
+  "placeId": "ChIJNRZ9mgCTUA0RvF2gclvSRy8",
+  "michelinId": "222147",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Koldo Rodero",
+  "chefSource": "michelin"
 }

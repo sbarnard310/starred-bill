@@ -16,5 +16,8 @@
   "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
   "lat": 13.7632058,
   "lng": 100.5376886,
-  "placeId": "ChIJOTiQRnKf4jAR5hsFRsOF2RM"
+  "placeId": "ChIJOTiQRnKf4jAR5hsFRsOF2RM",
+  "michelinId": "1200249",
+  "chef": "Chalee Kader",
+  "chefSource": "michelin"
 }

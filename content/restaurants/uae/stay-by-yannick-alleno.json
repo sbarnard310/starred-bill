@@ -12,5 +12,13 @@
   "website": "https://www.oneandonlyresorts.com/the-palm/dining/stay-by-yannick-alleno",
   "lat": 25.0992961,
   "lng": 55.1326916,
-  "placeId": "ChIJ61_DMsoUXz4RV3jdxajvWm4"
+  "placeId": "ChIJ61_DMsoUXz4RV3jdxajvWm4",
+  "michelinId": "518837",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

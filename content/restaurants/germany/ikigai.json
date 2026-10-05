@@ -13,5 +13,12 @@
   "website": "https://www.schloss-elmau.de/restaurants/ikigai/",
   "lat": 47.4621643,
   "lng": 11.186197,
-  "placeId": "ChIJW5M3uq4InUcR9589boH_wpw"
+  "placeId": "ChIJW5M3uq4InUcR9589boH_wpw",
+  "michelinId": "122205",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Chris Rainer",
+  "chefSource": "site"
 }

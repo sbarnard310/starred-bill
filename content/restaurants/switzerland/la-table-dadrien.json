@@ -13,5 +13,11 @@
   "website": "https://chalet-adrien.com/",
   "lat": 46.1035076,
   "lng": 7.224638,
-  "placeId": "ChIJ-VCk1rfPjkcRybVrZkP4FQo"
+  "placeId": "ChIJ-VCk1rfPjkcRybVrZkP4FQo",
+  "michelinId": "184756",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

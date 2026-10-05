@@ -16,5 +16,8 @@
   "website": "https://www.interalpen.com/kulinarik/gourmet-kueche/",
   "lat": 47.331274,
   "lng": 11.1187317,
-  "placeId": "ChIJv03oxJwQnUcRQDqWGMqvJC8"
+  "placeId": "ChIJv03oxJwQnUcRQDqWGMqvJC8",
+  "michelinId": "1212417",
+  "chef": "Mathias Hendl",
+  "chefSource": "michelin"
 }

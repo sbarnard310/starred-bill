@@ -23,5 +23,10 @@
   "website": "https://www.shangri-la.com/hongkong/islandshangrila/dining/restaurants/summer-palace/",
   "lat": 22.2770061,
   "lng": 114.1644721,
-  "placeId": "ChIJk9G5MWYABDQRlUUK5IIVDxY"
+  "placeId": "ChIJk9G5MWYABDQRlUUK5IIVDxY",
+  "michelinId": "230837",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

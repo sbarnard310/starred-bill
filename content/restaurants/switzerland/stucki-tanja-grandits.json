@@ -13,5 +13,14 @@
   "website": "https://www.tanjagrandits.ch/",
   "lat": 47.5336861,
   "lng": 7.5869107,
-  "placeId": "ChIJpS3OlUK4kUcR0e7yqwPer54"
+  "placeId": "ChIJpS3OlUK4kUcR0e7yqwPer54",
+  "michelinId": "178811",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Tanja Grandits",
+  "chefSource": "michelin"
 }

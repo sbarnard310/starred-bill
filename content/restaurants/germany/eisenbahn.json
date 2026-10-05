@@ -15,5 +15,8 @@
   "website": "https://www.landhauswolf.eu/",
   "lat": 49.0988122,
   "lng": 9.7702979,
-  "placeId": "ChIJo1JL4o1QmEcRl2WxsP273qk"
+  "placeId": "ChIJo1JL4o1QmEcRl2WxsP273qk",
+  "michelinId": "84151",
+  "chef": "Thomas Wolf",
+  "chefSource": "michelin"
 }

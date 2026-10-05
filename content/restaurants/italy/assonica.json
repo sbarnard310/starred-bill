@@ -23,5 +23,14 @@
   "website": "https://assonica.it/it",
   "lat": 45.743141,
   "lng": 9.652678,
-  "placeId": "ChIJrUBfGaBWgUcRIBFXkhRIEaI"
+  "placeId": "ChIJrUBfGaBWgUcRIBFXkhRIEaI",
+  "michelinId": "1194516",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alex Manzoni and Vittorio Manzoni",
+  "chefSource": "michelin"
 }

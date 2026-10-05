@@ -23,5 +23,12 @@
   "website": "https://lesainthilaire.com/",
   "lat": 44.0993399,
   "lng": 4.1058045,
-  "placeId": "ChIJDfTGWW9CtBIRzaeGlXKcWn4"
+  "placeId": "ChIJDfTGWW9CtBIRzaeGlXKcWn4",
+  "michelinId": "1208787",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Sébastien Rath",
+  "chefSource": "michelin"
 }

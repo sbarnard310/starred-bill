@@ -13,5 +13,13 @@
   "website": "https://www.casadechadaboanova.pt/",
   "lat": 41.2027411,
   "lng": -8.7147233,
-  "placeId": "ChIJsVkuMyVpJA0RepT94kmmVK0"
+  "placeId": "ChIJsVkuMyVpJA0RepT94kmmVK0",
+  "michelinId": "449379",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Rui Paula",
+  "chefSource": "michelin"
 }

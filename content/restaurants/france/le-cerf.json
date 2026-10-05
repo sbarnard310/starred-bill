@@ -23,5 +23,12 @@
   "website": "https://www.lecerf.com/",
   "lat": 48.6210097,
   "lng": 7.4935434,
-  "placeId": "ChIJazaQfpSvlkcRIKpPhnujeg0"
+  "placeId": "ChIJazaQfpSvlkcRIKpPhnujeg0",
+  "michelinId": "11749",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Joël Philipps",
+  "chefSource": "site"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.zaranda.es",
   "lat": 39.5657787,
   "lng": 2.6554437,
-  "placeId": "ChIJ96dh0IwoQg0RVQTtUBZwfOs"
+  "placeId": "ChIJ96dh0IwoQg0RVQTtUBZwfOs",
+  "michelinId": "1191909",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Fernando Pérez Arellano",
+  "chefSource": "michelin"
 }

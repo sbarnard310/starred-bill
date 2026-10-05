@@ -15,5 +15,8 @@
   "website": "https://christophercoutanceau.com",
   "lat": 46.1553146,
   "lng": -1.1599316,
-  "placeId": "ChIJ87_sn6VTAUgRsNVFS7MOq3w"
+  "placeId": "ChIJ87_sn6VTAUgRsNVFS7MOq3w",
+  "michelinId": "7447",
+  "chef": "Christopher Coutanceau",
+  "chefSource": "michelin"
 }

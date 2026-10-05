@@ -25,5 +25,11 @@
   "website": "https://www.neso.paris/",
   "lat": 48.8760396,
   "lng": 2.34745,
-  "placeId": "ChIJha4y7zFv5kcRQ2uALYab4lo"
+  "placeId": "ChIJha4y7zFv5kcRQ2uALYab4lo",
+  "michelinId": "1000227",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Guillaume Sanchez",
+  "chefSource": "site"
 }

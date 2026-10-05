@@ -16,5 +16,14 @@
   "website": "https://avertavira.com/",
   "lat": 37.12565,
   "lng": -7.651429,
-  "placeId": "ChIJc0cmxHkDEA0R-va0hM1Mpww"
+  "placeId": "ChIJc0cmxHkDEA0R-va0hM1Mpww",
+  "michelinId": "555816",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Luís Brito",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,12 @@
   "website": "https://www.restaurant-hannappel.de/",
   "lat": 51.4370622,
   "lng": 7.1050518,
-  "placeId": "ChIJRz7bjsXduEcRQ419JozyvKs"
+  "placeId": "ChIJRz7bjsXduEcRQ419JozyvKs",
+  "michelinId": "72605",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Tobias Weyers",
+  "chefSource": "michelin"
 }

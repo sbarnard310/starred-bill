@@ -21,5 +21,8 @@
   "website": "https://courdesloges.com",
   "lat": 45.7633598,
   "lng": 4.8274228,
-  "placeId": "ChIJd-T3karr9EcRGhZeMiQ6NQQ"
+  "placeId": "ChIJd-T3karr9EcRGhZeMiQ6NQQ",
+  "michelinId": "4374",
+  "chef": "Anthony Bonnet",
+  "chefSource": "site"
 }

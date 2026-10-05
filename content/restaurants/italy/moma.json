@@ -23,5 +23,12 @@
   "website": "https://www.ristorantemoma.it/",
   "lat": 41.90569,
   "lng": 12.4909,
-  "placeId": "ChIJCT-Ek6lhLxMR51yCUkjKb-w"
+  "placeId": "ChIJCT-Ek6lhLxMR51yCUkjKb-w",
+  "michelinId": "423027",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Andrea Pasqualucci",
+  "chefSource": "michelin"
 }

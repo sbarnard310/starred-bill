@@ -12,5 +12,10 @@
   "website": "https://kazuorestaurante.com.br/",
   "lat": -23.5768215,
   "lng": -46.6865408,
-  "placeId": "ChIJGyKyqmpXzpQRMbT1Exoy34s"
+  "placeId": "ChIJGyKyqmpXzpQRMbT1Exoy34s",
+  "michelinId": "1212133",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ]
 }

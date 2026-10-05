@@ -15,5 +15,11 @@
   "website": "https://www.restaurant-masters.de/",
   "lat": 50.8747844,
   "lng": 11.3422232,
-  "placeId": "ChIJi1MJRqYGpEcRWFVVdXdtDaU"
+  "placeId": "ChIJi1MJRqYGpEcRWFVVdXdtDaU",
+  "michelinId": "1184735",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Danny Schwabe",
+  "chefSource": "michelin"
 }

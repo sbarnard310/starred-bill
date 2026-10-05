@@ -13,5 +13,13 @@
   "website": "https://rosami.xaracollection.com/",
   "lat": 35.9143291,
   "lng": 14.493543,
-  "placeId": "ChIJq39pxUBFDhMRBzCvNwX5Vpo"
+  "placeId": "ChIJq39pxUBFDhMRBzCvNwX5Vpo",
+  "michelinId": "1205145",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Davide Marcon",
+  "chefSource": "site"
 }

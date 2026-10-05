@@ -17,5 +17,12 @@
   "website": "https://www.elskerestaurant.com/",
   "lat": 41.884353,
   "lng": -87.66086,
-  "placeId": "ChIJSWTvSyYtDogRE-4fa_DPwZA"
+  "placeId": "ChIJSWTvSyYtDogRE-4fa_DPwZA",
+  "michelinId": "528996",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "David Posey and Anna Posey",
+  "chefSource": "michelin"
 }

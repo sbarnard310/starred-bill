@@ -24,5 +24,10 @@
   "website": "https://www.marriott.com/en-us/dining/restaurant-bar/hkgdt-jw-marriott-hotel-hong-kong/5308052-man-ho-chinese-restaurant.mi",
   "lat": 22.2776712,
   "lng": 114.1659424,
-  "placeId": "ChIJaTcUlWcABDQRtEckm4zxT6c"
+  "placeId": "ChIJaTcUlWcABDQRtEckm4zxT6c",
+  "michelinId": "230785",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

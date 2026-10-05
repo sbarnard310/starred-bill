@@ -12,5 +12,11 @@
   "website": "https://palacerestaurant.fi/",
   "lat": 60.1653036,
   "lng": 24.9523857,
-  "placeId": "ChIJpdIjrMgLkkYRxba2xc1Dy5w"
+  "placeId": "ChIJpdIjrMgLkkYRxba2xc1Dy5w",
+  "michelinId": "543488",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Eero Vottonen",
+  "chefSource": "site"
 }

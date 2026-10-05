@@ -13,5 +13,8 @@
   "website": "https://www.asgarzas.com",
   "lat": 43.3213756,
   "lng": -8.8719851,
-  "placeId": "ChIJFXnjnMKiLg0RFxBTuNKTYus"
+  "placeId": "ChIJFXnjnMKiLg0RFxBTuNKTYus",
+  "michelinId": "221436",
+  "chef": "Fernando Agrasar and Eva Fares",
+  "chefSource": "michelin"
 }

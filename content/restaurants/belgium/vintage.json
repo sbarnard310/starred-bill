@@ -13,5 +13,11 @@
   "website": "https://www.vintagekontich.be",
   "lat": 51.1156066,
   "lng": 4.4378315,
-  "placeId": "ChIJefSDVw3ww0cRgjL6KVthkQc"
+  "placeId": "ChIJefSDVw3ww0cRgjL6KVthkQc",
+  "michelinId": "1195885",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Cyril Moulin",
+  "chefSource": "michelin"
 }

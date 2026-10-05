@@ -13,5 +13,13 @@
   "website": "https://www.ilsanpietro.com/it/ristorazione/zass/",
   "lat": 40.623268,
   "lng": 14.5038074,
-  "placeId": "ChIJTTegVVqXOxMRX4nA4MSAv-I"
+  "placeId": "ChIJTTegVVqXOxMRX4nA4MSAv-I",
+  "michelinId": "163300",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alois Vanlangenaeker",
+  "chefSource": "michelin"
 }

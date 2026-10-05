@@ -12,5 +12,10 @@
   "website": "https://jae-restaurant.de/",
   "lat": 51.2111461,
   "lng": 6.7842633,
-  "placeId": "ChIJacO1QnvLuEcRohI6tLpwOGE"
+  "placeId": "ChIJacO1QnvLuEcRohI6tLpwOGE",
+  "michelinId": "1205584",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

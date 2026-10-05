@@ -29,5 +29,12 @@
   "website": "https://www.miramontilaltro.it/",
   "lat": 45.613582,
   "lng": 10.204399,
-  "placeId": "ChIJQXveLMJ5gUcRvJrLByV5rPs"
+  "placeId": "ChIJQXveLMJ5gUcRvJrLByV5rPs",
+  "michelinId": "132024",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Philippe Léveillé",
+  "chefSource": "michelin"
 }

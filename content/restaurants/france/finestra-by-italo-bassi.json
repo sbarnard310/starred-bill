@@ -20,5 +20,13 @@
   "website": "https://finestra-d-amore.fr/",
   "lat": 41.3879548,
   "lng": 9.1637107,
-  "placeId": "ChIJiTOmrwzZ2xIRugYCE8H3rnA"
+  "placeId": "ChIJiTOmrwzZ2xIRugYCE8H3rnA",
+  "michelinId": "1209701",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Italo Bassi and Edoardo Menna",
+  "chefSource": "michelin"
 }

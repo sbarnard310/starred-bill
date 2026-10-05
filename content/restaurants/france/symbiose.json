@@ -23,5 +23,11 @@
   "website": "https://www.symbiose-cabourg.com/",
   "lat": 49.2924541,
   "lng": -0.1143153,
-  "placeId": "ChIJuxLbYVN9CkgRQoC0Oab71oY"
+  "placeId": "ChIJuxLbYVN9CkgRQoC0Oab71oY",
+  "michelinId": "1211835",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ]
 }

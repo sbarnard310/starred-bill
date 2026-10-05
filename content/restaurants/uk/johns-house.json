@@ -20,5 +20,9 @@
   "website": "https://www.johnshouse.co.uk/",
   "lat": 52.732857,
   "lng": -1.145988,
-  "placeId": "ChIJF66vsK7feUgR2H43KFnAMGQ"
+  "placeId": "ChIJF66vsK7feUgR2H43KFnAMGQ",
+  "michelinId": "461593",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -15,5 +15,12 @@
   "website": "https://www.ostape.com",
   "lat": 43.2895753,
   "lng": -1.3619713,
-  "placeId": "ChIJz5SrJ2ovUQ0RkYeLKqjmgd0"
+  "placeId": "ChIJz5SrJ2ovUQ0RkYeLKqjmgd0",
+  "michelinId": "63762",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "John Argaud",
+  "chefSource": "michelin"
 }

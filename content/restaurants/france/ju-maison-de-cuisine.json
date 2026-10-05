@@ -15,5 +15,11 @@
   "website": "https://ju-maisondecuisine.com/",
   "lat": 43.8231711,
   "lng": 5.3065565,
-  "placeId": "ChIJTUu9auoRyhIRyWCmh2ioPsw"
+  "placeId": "ChIJTUu9auoRyhIRyWCmh2ioPsw",
+  "michelinId": "1214377",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Julien Allano",
+  "chefSource": "michelin"
 }

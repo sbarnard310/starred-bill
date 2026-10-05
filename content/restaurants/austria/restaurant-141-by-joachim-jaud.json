@@ -15,5 +15,11 @@
   "website": "https://restaurant-141.at/",
   "lat": 47.3076251,
   "lng": 10.9869243,
-  "placeId": "ChIJAVokL0QfnUcRz1NDS8qRySg"
+  "placeId": "ChIJAVokL0QfnUcRz1NDS8qRySg",
+  "michelinId": "1214579",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Joachim Jaud",
+  "chefSource": "site"
 }

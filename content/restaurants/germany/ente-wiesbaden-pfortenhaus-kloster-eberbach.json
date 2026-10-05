@@ -15,5 +15,10 @@
   "website": "https://www.hommage-hotels.com/nassauer-hof-wiesbaden/kulinarik/restaurant-ente",
   "lat": 50.041712,
   "lng": 8.047292,
-  "placeId": "ChIJWfOfNiTrvUcRXmFBnAePpEk"
+  "placeId": "ChIJWfOfNiTrvUcRXmFBnAePpEk",
+  "michelinId": "78842",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

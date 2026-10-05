@@ -20,5 +20,11 @@
   "website": "https://www.thereveriesaigon.com/restaurants-bars/long-trieu",
   "lat": 10.7739539,
   "lng": 106.7047515,
-  "placeId": "ChIJ6UU_dNwvdTERFpGN89SPZgQ"
+  "placeId": "ChIJ6UU_dNwvdTERFpGN89SPZgQ",
+  "michelinId": "1202045",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Angus Chan",
+  "chefSource": "site"
 }

@@ -23,5 +23,8 @@
   "website": "https://www.tavie.com.hk/",
   "lat": 22.282766,
   "lng": 114.15529,
-  "placeId": "ChIJB-qdUXsABDQRlotSKcO6_3Q"
+  "placeId": "ChIJB-qdUXsABDQRlotSKcO6_3Q",
+  "michelinId": "475135",
+  "chef": "Hideaki Sato",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.brut172.com/",
   "lat": 50.7964487,
   "lng": 5.8364502,
-  "placeId": "ChIJS-bORZqVwEcRfOqTN1Km-yo"
+  "placeId": "ChIJS-bORZqVwEcRfOqTN1Km-yo",
+  "michelinId": "1191678",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ]
 }

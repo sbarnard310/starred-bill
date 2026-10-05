@@ -28,5 +28,12 @@
   "website": "https://www.restauranteabarra.com/",
   "lat": 40.438683,
   "lng": -3.687633,
-  "placeId": "ChIJg8E4AOwoQg0RbtjZ1H2hoXM"
+  "placeId": "ChIJg8E4AOwoQg0RbtjZ1H2hoXM",
+  "michelinId": "504110",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Sergio Manzano",
+  "chefSource": "michelin"
 }

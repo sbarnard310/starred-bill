@@ -25,5 +25,11 @@
   "website": "https://restaurant-apicius.com/",
   "lat": 48.8732881,
   "lng": 2.3072835,
-  "placeId": "ChIJYaoSyMZv5kcRAVkrVOMEh08"
+  "placeId": "ChIJYaoSyMZv5kcRAVkrVOMEh08",
+  "michelinId": "6479",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Mathieu Pacaud",
+  "chefSource": "michelin"
 }

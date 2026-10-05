@@ -12,5 +12,10 @@
   "website": "https://auberge.com/the-woodward/dine/latelier-robuchon/",
   "lat": 46.2122201,
   "lng": 6.1525513,
-  "placeId": "ChIJy-iGfkJljEcRopfNMrCqTyk"
+  "placeId": "ChIJy-iGfkJljEcRopfNMrCqTyk",
+  "michelinId": "1195898",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

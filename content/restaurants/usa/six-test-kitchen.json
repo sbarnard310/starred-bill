@@ -15,5 +15,8 @@
   "website": "https://sixtestkitchen.com/",
   "lat": 35.5757084,
   "lng": -120.6898229,
-  "placeId": "ChIJYe0t119e7IAR-x_rWOYv51s"
+  "placeId": "ChIJYe0t119e7IAR-x_rWOYv51s",
+  "michelinId": "1191704",
+  "chef": "Ricky Odbert",
+  "chefSource": "michelin"
 }

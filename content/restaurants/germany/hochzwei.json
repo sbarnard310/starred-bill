@@ -13,5 +13,10 @@
   "website": "https://gasthof-zum-bad.de/restaurant/",
   "lat": 48.500147,
   "lng": 10.1241636,
-  "placeId": "ChIJsz_0IGJDmUcR1PxCXACWOis"
+  "placeId": "ChIJsz_0IGJDmUcR1PxCXACWOis",
+  "michelinId": "82202",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

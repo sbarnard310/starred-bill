@@ -13,5 +13,13 @@
   "website": "https://www.kaatje.nl/",
   "lat": 52.7265596,
   "lng": 5.9610873,
-  "placeId": "ChIJ_8o7G9VkyEcRPIZzDnzhz8o"
+  "placeId": "ChIJ_8o7G9VkyEcRPIZzDnzhz8o",
+  "michelinId": "212284",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

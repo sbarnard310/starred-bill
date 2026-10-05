@@ -23,5 +23,8 @@
   "website": "https://www.au-gourmet.fr/",
   "lat": 48.7516602,
   "lng": 7.9485905,
-  "placeId": "ChIJZ9V4b7rClkcRybWoEHZT4hU"
+  "placeId": "ChIJZ9V4b7rClkcRybWoEHZT4hU",
+  "michelinId": "2976",
+  "chef": "Ludovic Kientz",
+  "chefSource": "michelin"
 }

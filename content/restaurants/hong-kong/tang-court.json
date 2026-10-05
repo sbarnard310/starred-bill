@@ -25,5 +25,14 @@
   "website": "https://www.langhamhotels.com/en/the-langham/hong-kong/dine/tang-court/",
   "lat": 22.296572,
   "lng": 114.1698,
-  "placeId": "ChIJd2vXkvIABDQRX8k5mX-dJvU"
+  "placeId": "ChIJd2vXkvIABDQRX8k5mX-dJvU",
+  "michelinId": "230897",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Wong Chi Fai",
+  "chefSource": "site"
 }

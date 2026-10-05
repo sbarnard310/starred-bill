@@ -18,5 +18,13 @@
   "website": "https://www.sepiachicago.com/",
   "lat": 41.884095,
   "lng": -87.64261,
-  "placeId": "ChIJ_0NFbsYsDogRHqnXKkBCgs8"
+  "placeId": "ChIJ_0NFbsYsDogRHqnXKkBCgs8",
+  "michelinId": "273488",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Andrew Zimmerman",
+  "chefSource": "michelin"
 }

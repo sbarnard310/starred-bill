@@ -20,5 +20,16 @@
   "website": "https://www.theforestside.com/",
   "lat": 54.463961,
   "lng": -3.015805,
-  "placeId": "ChIJe2pHUubBfEgRXsz1fDOfm9Q"
+  "placeId": "ChIJe2pHUubBfEgRXsz1fDOfm9Q",
+  "michelinId": "471541",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Paul Leonard",
+  "chefSource": "michelin"
 }

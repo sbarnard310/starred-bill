@@ -15,5 +15,13 @@
   "website": "https://www.hyleristorante.it/",
   "lat": 39.2847315,
   "lng": 16.6443721,
-  "placeId": "ChIJUcSuTdN7QBMREvhJAg67c_I"
+  "placeId": "ChIJUcSuTdN7QBMREvhJAg67c_I",
+  "michelinId": "528060",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Antonio Biafora",
+  "chefSource": "michelin"
 }

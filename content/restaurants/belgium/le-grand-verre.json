@@ -13,5 +13,8 @@
   "website": "https://www.legrandverre.be/",
   "lat": 50.3520328,
   "lng": 5.4557638,
-  "placeId": "ChIJI2DizLNPwEcRUAKTOXA4jj4"
+  "placeId": "ChIJI2DizLNPwEcRUAKTOXA4jj4",
+  "michelinId": "1198299",
+  "chef": "Wout Bru",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,8 @@
   "website": "https://www.thepinecreemore.ca",
   "lat": 44.330893,
   "lng": -80.105895,
-  "placeId": "ChIJy4dyoG97KogRGYpXlpA4Ip4"
+  "placeId": "ChIJy4dyoG97KogRGYpXlpA4Ip4",
+  "michelinId": "1209935",
+  "chef": "Jeremy Austin",
+  "chefSource": "michelin"
 }

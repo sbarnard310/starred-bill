@@ -12,5 +12,11 @@
   "website": "https://www.brothers-munich.com/",
   "lat": 48.156266,
   "lng": 11.5758627,
-  "placeId": "ChIJt3PaPup1nkcRxj7eNtX8VHU"
+  "placeId": "ChIJt3PaPup1nkcRxj7eNtX8VHU",
+  "michelinId": "1204064",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Daniel Bodamer",
+  "chefSource": "michelin"
 }

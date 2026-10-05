@@ -26,5 +26,11 @@
   "website": "https://www.mandarinoriental.com/en/hong-kong/victoria-harbour/dine/man-wah",
   "lat": 22.282213,
   "lng": 114.15951,
-  "placeId": "ChIJAatzZWQABDQRX0tB0DoS3Q0"
+  "placeId": "ChIJAatzZWQABDQRX0tB0DoS3Q0",
+  "michelinId": "405764",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

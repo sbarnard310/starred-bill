@@ -12,5 +12,14 @@
   "website": "https://www.neuetaverne.ch/de/",
   "lat": 47.3720798,
   "lng": 8.5402735,
-  "placeId": "ChIJSetnU64LkEcR8iIrqCbvkkk"
+  "placeId": "ChIJSetnU64LkEcR8iIrqCbvkkk",
+  "michelinId": "1190591",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Fabian Fuchs",
+  "chefSource": "michelin"
 }

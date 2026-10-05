@@ -12,5 +12,9 @@
   "website": "https://www.waidwerk-restaurant.de/",
   "lat": 49.4354114,
   "lng": 11.0212737,
-  "placeId": "ChIJHRvJwApXn0cR5gQ9-cmqYh8"
+  "placeId": "ChIJHRvJwApXn0cR5gQ9-cmqYh8",
+  "michelinId": "557131",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -17,5 +17,11 @@
   "website": "https://www.capellahotels.com/en/capella-bangkok/dining/cote-by-mauro-colagreco",
   "lat": 13.713092,
   "lng": 100.510847,
-  "placeId": "ChIJf8OOlnmZ4jAR1XxCVTOPfPY"
+  "placeId": "ChIJf8OOlnmZ4jAR1XxCVTOPfPY",
+  "michelinId": "1194863",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Davide Garavaglia",
+  "chefSource": "michelin"
 }

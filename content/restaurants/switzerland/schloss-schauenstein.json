@@ -13,5 +13,13 @@
   "website": "https://schauenstein.ch/",
   "lat": 46.7212107,
   "lng": 9.4462679,
-  "placeId": "ChIJmdeEklvqhEcRnfl0CO7_szw"
+  "placeId": "ChIJmdeEklvqhEcRnfl0CO7_szw",
+  "michelinId": "179221",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Andreas Caminada",
+  "chefSource": "michelin"
 }

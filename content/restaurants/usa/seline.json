@@ -22,5 +22,11 @@
   "website": "https://www.selinerestaurant.com/",
   "lat": 33.997649,
   "lng": -118.479348,
-  "placeId": "ChIJFULx1d67woARMCpRP_B7x3Q"
+  "placeId": "ChIJFULx1d67woARMCpRP_B7x3Q",
+  "michelinId": "1217962",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Dave Beran",
+  "chefSource": "michelin"
 }

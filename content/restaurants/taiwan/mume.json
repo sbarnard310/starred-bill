@@ -26,5 +26,9 @@
   "website": "https://www.mume.tw/",
   "lat": 25.036278,
   "lng": 121.548015,
-  "placeId": "ChIJp6GC5NGrQjQRDuHabyIYADA"
+  "placeId": "ChIJp6GC5NGrQjQRDuHabyIYADA",
+  "michelinId": "550774",
+  "diets": [
+    "vegetarian"
+  ]
 }

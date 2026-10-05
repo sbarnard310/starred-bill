@@ -13,5 +13,12 @@
   "website": "https://www.porteneuf.de",
   "lat": 51.9361566,
   "lng": 8.8835349,
-  "placeId": "ChIJ02-izxFFukcRv-Ygd93z3Fc"
+  "placeId": "ChIJ02-izxFFukcRv-Ygd93z3Fc",
+  "michelinId": "1202895",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Daniel C Fischer",
+  "chefSource": "michelin"
 }

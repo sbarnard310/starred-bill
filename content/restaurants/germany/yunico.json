@@ -15,5 +15,12 @@
   "website": "https://www.kamehabonn.de/yunico/",
   "lat": 50.718668,
   "lng": 7.1525078,
-  "placeId": "ChIJOQ8y5KzmvkcRy8A_Sn4dJa8"
+  "placeId": "ChIJOQ8y5KzmvkcRy8A_Sn4dJa8",
+  "michelinId": "264090",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christian Sturm-Willms",
+  "chefSource": "michelin"
 }

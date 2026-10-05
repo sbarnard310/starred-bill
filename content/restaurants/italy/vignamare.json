@@ -13,5 +13,12 @@
   "website": "https://www.peqagri.it/pages/ristorante-vignamare",
   "lat": 43.9729346,
   "lng": 8.150574,
-  "placeId": "ChIJ-1ySP2Fd0hIRUEuAeEVuezw"
+  "placeId": "ChIJ-1ySP2Fd0hIRUEuAeEVuezw",
+  "michelinId": "1202856",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ],
+  "chef": "Alessandro Di Giacomo",
+  "chefSource": "michelin"
 }

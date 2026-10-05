@@ -12,5 +12,8 @@
   "website": "https://jp-kashiwaya.com/",
   "lat": 34.770287,
   "lng": 135.501289,
-  "placeId": "ChIJqfvZeunkAGAR_NKRUEtRPXE"
+  "placeId": "ChIJqfvZeunkAGAR_NKRUEtRPXE",
+  "michelinId": "1193128",
+  "chef": "Hideaki Matsuo",
+  "chefSource": "michelin"
 }

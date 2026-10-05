@@ -16,5 +16,12 @@
   "website": "https://www.taniere3.com",
   "lat": 46.8135735,
   "lng": -71.2022076,
-  "placeId": "ChIJ_Xs0crubuEwRmjgxCj6TwY4"
+  "placeId": "ChIJ_Xs0crubuEwRmjgxCj6TwY4",
+  "michelinId": "1216408",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "François-Emmanuel Nicol",
+  "chefSource": "michelin"
 }

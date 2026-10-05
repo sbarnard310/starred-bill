@@ -25,5 +25,11 @@
   "website": "https://www.ristoranteserrae.it/",
   "lat": 43.80197,
   "lng": 11.298013,
-  "placeId": "ChIJIUSDVn9VKhMRKgSzhQdHoY8"
+  "placeId": "ChIJIUSDVn9VKhMRKgSzhQdHoY8",
+  "michelinId": "1212536",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Antonello Sardi",
+  "chefSource": "site"
 }

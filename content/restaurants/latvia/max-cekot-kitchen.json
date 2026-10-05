@@ -15,5 +15,13 @@
   "website": "https://maxcekot.com/",
   "lat": 56.9299126,
   "lng": 24.0989828,
-  "placeId": "ChIJY4eR1nXR7kYRsg_pC-a8vK4"
+  "placeId": "ChIJY4eR1nXR7kYRsg_pC-a8vK4",
+  "michelinId": "1204952",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Max Cekot",
+  "chefSource": "site"
 }

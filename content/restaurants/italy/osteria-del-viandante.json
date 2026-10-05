@@ -16,5 +16,11 @@
   "website": "https://osteriadelviandante.com/",
   "lat": 44.65333,
   "lng": 10.781861,
-  "placeId": "ChIJN_v-Grrwf0cROkFXZtrmkNo"
+  "placeId": "ChIJN_v-Grrwf0cROkFXZtrmkNo",
+  "michelinId": "150122",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jacopo Malpeli",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,11 @@
   "website": "https://www.thehandandflowers.co.uk/",
   "lat": 51.569662,
   "lng": -0.783657,
-  "placeId": "ChIJd4f8qriJdkgRyL2wvKU_-e8"
+  "placeId": "ChIJd4f8qriJdkgRyL2wvKU_-e8",
+  "michelinId": "188364",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -20,5 +20,9 @@
   "website": "https://restaurantkomaf.be/",
   "lat": 51.2004242,
   "lng": 4.5090875,
-  "placeId": "ChIJcy-3_JT5w0cRsaiLA8gcRhs"
+  "placeId": "ChIJcy-3_JT5w0cRsaiLA8gcRhs",
+  "michelinId": "1211631",
+  "diets": [
+    "vegetarian"
+  ]
 }

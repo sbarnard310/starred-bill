@@ -20,5 +20,8 @@
   "website": "https://www.levicomte.be",
   "lat": 50.5243991,
   "lng": 3.5731458,
-  "placeId": "ChIJRZvrOEj7wkcRt129aIIlXa4"
+  "placeId": "ChIJRZvrOEj7wkcRt129aIIlXa4",
+  "michelinId": "1213440",
+  "chef": "Quentin Gallopyn",
+  "chefSource": "site"
 }

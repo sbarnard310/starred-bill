@@ -24,5 +24,12 @@
   "website": "https://www.jororestaurant.co.uk/",
   "lat": 53.44283,
   "lng": -1.547792,
-  "placeId": "ChIJwThW7X14eUgRCtU4JxYGyjQ"
+  "placeId": "ChIJwThW7X14eUgRCtU4JxYGyjQ",
+  "michelinId": "527950",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Luke French",
+  "chefSource": "site"
 }

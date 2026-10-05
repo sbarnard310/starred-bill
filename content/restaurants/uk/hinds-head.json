@@ -20,5 +20,11 @@
   "website": "https://www.hindsheadbray.com/",
   "lat": 51.508104,
   "lng": -0.702054,
-  "placeId": "ChIJx0LwzG-oZ0gRvjQZTuvq46Y"
+  "placeId": "ChIJx0LwzG-oZ0gRvjQZTuvq46Y",
+  "michelinId": "186645",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

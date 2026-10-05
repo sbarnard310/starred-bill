@@ -20,5 +20,13 @@
   "website": "https://www.ristorantealloro.it/",
   "lat": 41.914007,
   "lng": 12.473004,
-  "placeId": "ChIJ78OrZyJhLxMRjI91m6yLGS0"
+  "placeId": "ChIJ78OrZyJhLxMRjI91m6yLGS0",
+  "michelinId": "487299",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ]
 }

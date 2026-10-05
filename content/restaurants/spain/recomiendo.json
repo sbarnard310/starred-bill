@@ -13,5 +13,12 @@
   "website": "https://www.recomiendopower.com/",
   "lat": 37.908204,
   "lng": -4.776105,
-  "placeId": "ChIJ2dE_gHLfbA0RxjL5L2khycs"
+  "placeId": "ChIJ2dE_gHLfbA0RxjL5L2khycs",
+  "michelinId": "1193633",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Periko Ortega",
+  "chefSource": "michelin"
 }

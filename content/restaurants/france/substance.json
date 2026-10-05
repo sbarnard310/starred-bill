@@ -25,5 +25,11 @@
   "website": "https://www.substance.paris/",
   "lat": 48.8673445,
   "lng": 2.2976536,
-  "placeId": "ChIJ1-NReNxv5kcR3yM08L3wXCA"
+  "placeId": "ChIJ1-NReNxv5kcR3yM08L3wXCA",
+  "michelinId": "1154762",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Aurora Storari and Flavio Lucarini",
+  "chefSource": "michelin"
 }

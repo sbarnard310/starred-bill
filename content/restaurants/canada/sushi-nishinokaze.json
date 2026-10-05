@@ -19,5 +19,8 @@
   "website": "https://sushinishinokaze.com/",
   "lat": 45.525185,
   "lng": -73.5976652,
-  "placeId": "ChIJoQvfJgAZyUwRkA7agWDfjYU"
+  "placeId": "ChIJoQvfJgAZyUwRkA7agWDfjYU",
+  "michelinId": "1245066",
+  "chef": "Vincent Gee",
+  "chefSource": "michelin"
 }

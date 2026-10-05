@@ -23,5 +23,13 @@
   "lunchSource": "https://www.masanyc.com/",
   "website": "https://www.masanyc.com/",
   "lat": 40.76819,
-  "lng": -73.98234
+  "lng": -73.98234,
+  "michelinId": "69756",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ],
+  "chef": "Masa Takayama",
+  "chefSource": "michelin"
 }

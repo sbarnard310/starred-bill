@@ -26,5 +26,12 @@
   "website": "https://www.mandarinoriental.com/en/taipei/songshan/dine/ya-ge",
   "lat": 25.055801,
   "lng": 121.548349,
-  "placeId": "ChIJCToTHearQjQR4sFNUhOOeU8"
+  "placeId": "ChIJCToTHearQjQR4sFNUhOOeU8",
+  "michelinId": "550918",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Yuen Ming San",
+  "chefSource": "site"
 }

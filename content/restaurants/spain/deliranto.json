@@ -25,5 +25,8 @@
   "website": "https://deliranto.com/",
   "lat": 41.076748,
   "lng": 1.132635,
-  "placeId": "ChIJc8CxqytaoRIRWa4yjZ0X8lk"
+  "placeId": "ChIJc8CxqytaoRIRWa4yjZ0X8lk",
+  "michelinId": "527947",
+  "chef": "Josep Moreno",
+  "chefSource": "michelin"
 }

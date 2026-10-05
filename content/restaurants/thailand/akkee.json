@@ -17,5 +17,11 @@
   "website": "https://www.akkeerestaurant.com",
   "lat": 13.8984893,
   "lng": 100.5151325,
-  "placeId": "ChIJGVvkeXCF4jARp6rXqZlVM18"
+  "placeId": "ChIJGVvkeXCF4jARp6rXqZlVM18",
+  "michelinId": "1212985",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

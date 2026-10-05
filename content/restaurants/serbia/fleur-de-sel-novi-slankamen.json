@@ -13,5 +13,11 @@
   "website": "https://www.sapat.rs/restaurant-fleur-de-sel/?lang=en",
   "lat": 45.1540366,
   "lng": 20.2173251,
-  "placeId": "ChIJ88fsKwD7WkcRQ-Vw4opLWMo"
+  "placeId": "ChIJ88fsKwD7WkcRQ-Vw4opLWMo",
+  "michelinId": "1212486",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nikola Stojakovic",
+  "chefSource": "michelin"
 }

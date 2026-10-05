@@ -21,5 +21,11 @@
   "website": "https://www.koancph.dk/",
   "lat": 55.695497,
   "lng": 12.600161,
-  "placeId": "ChIJoxbQhIBTUkYR15NWp69nCt0"
+  "placeId": "ChIJoxbQhIBTUkYR15NWp69nCt0",
+  "michelinId": "1200874",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Kristian Baumann",
+  "chefSource": "michelin"
 }

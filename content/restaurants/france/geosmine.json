@@ -25,5 +25,11 @@
   "website": "https://www.geosmine.com/",
   "lat": 48.8655091,
   "lng": 2.3705908,
-  "placeId": "ChIJ0YZ8pABt5kcRusXBA2KP8uU"
+  "placeId": "ChIJ0YZ8pABt5kcRusXBA2KP8uU",
+  "michelinId": "1208274",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maxime Bouttier",
+  "chefSource": "michelin"
 }

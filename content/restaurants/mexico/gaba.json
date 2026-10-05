@@ -20,5 +20,13 @@
   "website": "https://gabarestaurante.com/",
   "lat": 19.409324700000003,
   "lng": -99.1795874,
-  "placeId": "ChIJ1WZ53iX_0YURMkdgcdGY2kw"
+  "placeId": "ChIJ1WZ53iX_0YURMkdgcdGY2kw",
+  "michelinId": "1211150",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Victor Toriz",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,15 @@
   "website": "https://www.auxpesked.com",
   "lat": 48.5221338,
   "lng": -2.7632962,
-  "placeId": "ChIJRX52jDUdDkgR67e7EH37P0w"
+  "placeId": "ChIJRX52jDUdDkgR67e7EH37P0w",
+  "michelinId": "7738",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Mathieu Aumont",
+  "chefSource": "site"
 }

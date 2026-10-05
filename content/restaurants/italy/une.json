@@ -15,5 +15,13 @@
   "website": "https://ristoranteune.com/",
   "lat": 43.0177785,
   "lng": 12.7839323,
-  "placeId": "ChIJdx8_Ow-BLhMR7ThcMbQMvkQ"
+  "placeId": "ChIJdx8_Ow-BLhMR7ThcMbQMvkQ",
+  "michelinId": "1199912",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Giulio Gigli",
+  "chefSource": "michelin"
 }

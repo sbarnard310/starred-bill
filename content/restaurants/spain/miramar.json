@@ -25,5 +25,8 @@
   "website": "https://www.restaurantmiramar.com/",
   "lat": 42.371082,
   "lng": 3.160127,
-  "placeId": "ChIJ6bKJc5V8uhIRfhqasoyh5Tw"
+  "placeId": "ChIJ6bKJc5V8uhIRfhqasoyh5Tw",
+  "michelinId": "220890",
+  "chef": "Paco Pérez",
+  "chefSource": "michelin"
 }

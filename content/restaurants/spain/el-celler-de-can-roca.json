@@ -28,5 +28,8 @@
   "website": "https://www.cellercanroca.com/",
   "lat": 41.993203,
   "lng": 2.807927,
-  "placeId": "ChIJk14z3xHnuhIR-sQ5JACOBic"
+  "placeId": "ChIJk14z3xHnuhIR-sQ5JACOBic",
+  "michelinId": "220312",
+  "chef": "Joan Roca i Fontané",
+  "chefSource": "michelin"
 }

@@ -19,5 +19,11 @@
   "website": "https://www.hoevedebies.be/",
   "lat": 50.7466639,
   "lng": 5.8150516,
-  "placeId": "ChIJm8em5iuTwEcRqc6I9hzxBoA"
+  "placeId": "ChIJm8em5iuTwEcRqc6I9hzxBoA",
+  "michelinId": "1090864",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maurice Huynen",
+  "chefSource": "michelin"
 }

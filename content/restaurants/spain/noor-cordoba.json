@@ -13,5 +13,11 @@
   "website": "https://noorrestaurant.es/",
   "lat": 37.8899393,
   "lng": -4.7585272,
-  "placeId": "ChIJ6_O4fI_fbA0RIlLV24ME7Ys"
+  "placeId": "ChIJ6_O4fI_fbA0RIlLV24ME7Ys",
+  "michelinId": "481742",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Paco Morales",
+  "chefSource": "michelin"
 }

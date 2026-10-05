@@ -20,5 +20,11 @@
   "website": "https://www.gravetyemanor.co.uk/dining/the-dining-room/",
   "lat": 51.08932,
   "lng": -0.05691,
-  "placeId": "ChIJAzmDQi_0dUgRWwLpufwqrgw"
+  "placeId": "ChIJAzmDQi_0dUgRWwLpufwqrgw",
+  "michelinId": "192915",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

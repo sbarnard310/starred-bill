@@ -19,5 +19,12 @@
   "sourceType": "none",
   "lat": 20.682983399999998,
   "lng": -103.36519779999999,
-  "placeId": "ChIJ1wkopfuvKIQRVmN1b4YqhH4"
+  "placeId": "ChIJ1wkopfuvKIQRVmN1b4YqhH4",
+  "michelinId": "1243805",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Óscar Segundo and Cynthia Xrysw Ruelas Díaz",
+  "chefSource": "michelin"
 }

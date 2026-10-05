@@ -30,5 +30,8 @@
   "website": "https://www.yudaotw.com/",
   "lat": 22.976823,
   "lng": 120.160965,
-  "placeId": "ChIJ3TodK1F1bjQRCbXXahcYHJc"
+  "placeId": "ChIJ3TodK1F1bjQRCbXXahcYHJc",
+  "michelinId": "1246698",
+  "chef": "Nick Yang",
+  "chefSource": "michelin"
 }

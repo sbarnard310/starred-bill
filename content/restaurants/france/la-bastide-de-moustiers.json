@@ -17,5 +17,8 @@
   "website": "https://www.bastide-moustiers.com/",
   "lat": 43.8384829,
   "lng": 6.2182274,
-  "placeId": "ChIJ-dv0IBPuyxIRRqJ-k3F9qmI"
+  "placeId": "ChIJ-dv0IBPuyxIRRqJ-k3F9qmI",
+  "michelinId": "12018",
+  "chef": "Adrien De Crignis",
+  "chefSource": "michelin"
 }

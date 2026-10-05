@@ -15,5 +15,11 @@
   "website": "https://www.austriastuben.at",
   "lat": 46.8713805,
   "lng": 11.0288489,
-  "placeId": "ChIJ__DleFjNgkcRMzISQdlcMlQ"
+  "placeId": "ChIJ__DleFjNgkcRMzISQdlcMlQ",
+  "michelinId": "1212364",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Verena Stattmann",
+  "chefSource": "michelin"
 }

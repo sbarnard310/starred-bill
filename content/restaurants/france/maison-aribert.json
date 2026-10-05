@@ -15,5 +15,12 @@
   "website": "https://www.maisonaribert.com",
   "lat": 45.1417394,
   "lng": 5.8315479,
-  "placeId": "ChIJPyb8uf1hikcRkTKkP6QWUrs"
+  "placeId": "ChIJPyb8uf1hikcRkTKkP6QWUrs",
+  "michelinId": "9182",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christophe Aribert",
+  "chefSource": "michelin"
 }

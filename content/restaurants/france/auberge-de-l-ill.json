@@ -23,5 +23,12 @@
   "website": "https://www.auberge-de-l-ill.com",
   "lat": 48.1843645,
   "lng": 7.4330591,
-  "placeId": "ChIJzX5hJ-pCkUcRgzO2hBUErIU"
+  "placeId": "ChIJzX5hJ-pCkUcRgzO2hBUErIU",
+  "michelinId": "3838",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Marc Haeberlin",
+  "chefSource": "michelin"
 }

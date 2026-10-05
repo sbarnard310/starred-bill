@@ -13,5 +13,8 @@
   "website": "https://www.auronapavalley.com/",
   "lat": 38.5839271,
   "lng": -122.5671011,
-  "placeId": "ChIJMaW7PHlDhIARZcaR5KPGG8g"
+  "placeId": "ChIJMaW7PHlDhIARZcaR5KPGG8g",
+  "michelinId": "1186306",
+  "chef": "Evan Neumann",
+  "chefSource": "site"
 }

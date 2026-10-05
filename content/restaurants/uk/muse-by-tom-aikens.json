@@ -21,5 +21,11 @@
   "website": "https://www.musebytomaikens.co.uk/",
   "lat": 51.4994673,
   "lng": -0.1509184,
-  "placeId": "ChIJp65UQTAFdkgREFotZ21mwPs"
+  "placeId": "ChIJp65UQTAFdkgREFotZ21mwPs",
+  "michelinId": "1188132",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Tom Aikens",
+  "chefSource": "michelin"
 }

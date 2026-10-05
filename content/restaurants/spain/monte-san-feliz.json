@@ -16,5 +16,11 @@
   "website": "https://www.montesanfeliz.com/",
   "lat": 43.1685435,
   "lng": -5.8225128,
-  "placeId": "ChIJj6eN3z_7Ng0RIrBc1jbrrbs"
+  "placeId": "ChIJj6eN3z_7Ng0RIrBc1jbrrbs",
+  "michelinId": "1190765",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Xune Andrade",
+  "chefSource": "michelin"
 }

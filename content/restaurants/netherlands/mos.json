@@ -12,5 +12,15 @@
   "website": "https://mosamsterdam.nl/",
   "lat": 52.383797,
   "lng": 4.895512,
-  "placeId": "ChIJ1dPTPsoJxkcRTmyCkfNISjI"
+  "placeId": "ChIJ1dPTPsoJxkcRTmyCkfNISjI",
+  "michelinId": "474494",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Egon van Hoof",
+  "chefSource": "michelin"
 }

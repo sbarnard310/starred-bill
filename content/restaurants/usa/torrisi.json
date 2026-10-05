@@ -17,5 +17,9 @@
   "website": "https://www.torrisinyc.com/",
   "lat": 40.724364,
   "lng": -73.995278,
-  "placeId": "ChIJWd7fRdZZwokRhru5tn4KsVM"
+  "placeId": "ChIJWd7fRdZZwokRhru5tn4KsVM",
+  "michelinId": "1197832",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -13,5 +13,9 @@
   "website": "https://www.restaurantrebelle.be/",
   "lat": 50.8039661,
   "lng": 3.2218248,
-  "placeId": "ChIJvfs2fKw6w0cR6AicNgt47EM"
+  "placeId": "ChIJvfs2fKw6w0cR6AicNgt47EM",
+  "michelinId": "548550",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -25,5 +25,12 @@
   "website": "https://canbosch.com/",
   "lat": 41.066891,
   "lng": 1.058936,
-  "placeId": "ChIJqTsrLy1boRIRvjRuhkEbhsg"
+  "placeId": "ChIJqTsrLy1boRIRvjRuhkEbhsg",
+  "michelinId": "218990",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Arnau Bosch",
+  "chefSource": "michelin"
 }

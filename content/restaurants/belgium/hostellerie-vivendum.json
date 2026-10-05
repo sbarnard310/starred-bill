@@ -16,5 +16,12 @@
   "website": "https://www.restaurant-vivendum.com/",
   "lat": 51.0332774,
   "lng": 5.7367212,
-  "placeId": "ChIJc79Bg4zFwEcRHeAJ8z5xAQY"
+  "placeId": "ChIJc79Bg4zFwEcRHeAJ8z5xAQY",
+  "michelinId": "209598",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ],
+  "chef": "Alex Clevers",
+  "chefSource": "michelin"
 }

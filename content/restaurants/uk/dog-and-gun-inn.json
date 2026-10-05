@@ -15,5 +15,12 @@
   "website": "https://www.dogandgunskelton.co.uk/",
   "lat": 54.710723,
   "lng": -2.875345,
-  "placeId": "ChIJzQ-xtlPifEgRTyGs4Mh3wdQ"
+  "placeId": "ChIJzQ-xtlPifEgRTyGs4Mh3wdQ",
+  "michelinId": "555446",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Ben Queen-Fryer",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,8 @@
   "website": "https://arrea.eus/",
   "lat": 42.669275,
   "lng": -2.349784,
-  "placeId": "ChIJZRGpcCEFUA0RUf0xVgivg1c"
+  "placeId": "ChIJZRGpcCEFUA0RUf0xVgivg1c",
+  "michelinId": "1085201",
+  "chef": "Edorta Lamo",
+  "chefSource": "michelin"
 }

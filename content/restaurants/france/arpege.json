@@ -25,5 +25,12 @@
   "website": "https://www.alain-passard.com/",
   "lat": 48.8557538,
   "lng": 2.3170127,
-  "placeId": "ChIJQ-oAFypw5kcR2T9NszPcZO4"
+  "placeId": "ChIJQ-oAFypw5kcR2T9NszPcZO4",
+  "michelinId": "5986",
+  "diets": [
+    "vegetarian-menu",
+    "vegan"
+  ],
+  "chef": "Alain Passard",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,13 @@
   "website": "https://www.hotel-sackmann.de/",
   "lat": 48.5970111,
   "lng": 8.3838973,
-  "placeId": "ChIJE0txnEE6l0cRNZWGICywnDs"
+  "placeId": "ChIJE0txnEE6l0cRNZWGICywnDs",
+  "michelinId": "70987",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Jörg Sackmann and Nico Sackmann",
+  "chefSource": "michelin"
 }

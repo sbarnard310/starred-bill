@@ -22,5 +22,11 @@
   "website": "https://restaurant-epicentre.com/",
   "lat": 43.6990551,
   "lng": 7.2858868,
-  "placeId": "ChIJC-GpTdnbzRIRyzHwhjXfYuU"
+  "placeId": "ChIJC-GpTdnbzRIRyzHwhjXfYuU",
+  "michelinId": "1218827",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ]
 }

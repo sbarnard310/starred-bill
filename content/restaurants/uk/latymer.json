@@ -15,5 +15,14 @@
   "website": "https://www.exclusive.co.uk/latymer/",
   "lat": 51.356698,
   "lng": -0.708865,
-  "placeId": "ChIJGUMg65x_dkgRTfXkyeRkp6k"
+  "placeId": "ChIJGUMg65x_dkgRTfXkyeRkp6k",
+  "michelinId": "1191303",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Steve Smith",
+  "chefSource": "site"
 }

@@ -15,5 +15,8 @@
   "website": "https://www.restaurantehaydee.rest/es/inicio/",
   "lat": 28.0909726,
   "lng": -16.7412967,
-  "placeId": "ChIJqzwL3E_VQQwRoXVAeFGAv8s"
+  "placeId": "ChIJqzwL3E_VQQwRoXVAeFGAv8s",
+  "michelinId": "1217755",
+  "chef": "Víctor Suárez",
+  "chefSource": "michelin"
 }

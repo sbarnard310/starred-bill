@@ -20,5 +20,11 @@
   "website": "https://www.bijjef.nl/",
   "lat": 53.0247407,
   "lng": 4.7498178,
-  "placeId": "ChIJWdF0Qu45z0cRlfiYb_UsJk0"
+  "placeId": "ChIJWdF0Qu45z0cRlfiYb_UsJk0",
+  "michelinId": "213181",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

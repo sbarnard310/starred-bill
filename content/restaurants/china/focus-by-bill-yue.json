@@ -8,5 +8,8 @@
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
   "lat": 30.5855347,
-  "lng": 104.0508529
+  "lng": 104.0508529,
+  "michelinId": "1249451",
+  "chef": "Bill Yue",
+  "chefSource": "michelin"
 }

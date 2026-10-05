@@ -20,5 +20,12 @@
   "website": "https://www.upstairs.restaurant/",
   "lat": 52.682912,
   "lng": -1.827757,
-  "placeId": "ChIJCzetwqWncEgRe52k6ER3n0E"
+  "placeId": "ChIJCzetwqWncEgRe52k6ER3n0E",
+  "michelinId": "1195396",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "halal",
+    "kosher"
+  ]
 }

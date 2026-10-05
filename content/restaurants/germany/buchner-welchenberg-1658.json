@@ -13,5 +13,8 @@
   "website": "https://www.buchner-welchenberg.de/",
   "lat": 48.8765829,
   "lng": 12.7757295,
-  "placeId": "ChIJC8ehrF1sdUcRBZrsDms8ls4"
+  "placeId": "ChIJC8ehrF1sdUcRBZrsDms8ls4",
+  "michelinId": "71530",
+  "chef": "Mathias Achatz",
+  "chefSource": "michelin"
 }

@@ -27,5 +27,13 @@
   "website": "https://www.toscadiangelo.com/",
   "lat": 22.3032095,
   "lng": 114.1599308,
-  "placeId": "ChIJdb45FZEABDQRZrrqoTvcnNw"
+  "placeId": "ChIJdb45FZEABDQRZrrqoTvcnNw",
+  "michelinId": "352519",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Angelo Aglianó",
+  "chefSource": "site"
 }

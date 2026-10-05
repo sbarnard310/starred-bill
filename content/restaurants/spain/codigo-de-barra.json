@@ -15,5 +15,8 @@
   "website": "https://restaurantecodigodebarracadiz.com/",
   "lat": 36.5338202,
   "lng": -6.2954072,
-  "placeId": "ChIJqQKeGGLRDQ0RXZS0uekmjao"
+  "placeId": "ChIJqQKeGGLRDQ0RXZS0uekmjao",
+  "michelinId": "1192783",
+  "chef": "Léon Griffioen",
+  "chefSource": "michelin"
 }

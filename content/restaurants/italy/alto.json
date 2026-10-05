@@ -13,5 +13,14 @@
   "website": "https://www.altoristorante.com",
   "lat": 44.5379081,
   "lng": 10.8243773,
-  "placeId": "ChIJ-TAkCMbjf0cRypwdP0VB2C4"
+  "placeId": "ChIJ-TAkCMbjf0cRypwdP0VB2C4",
+  "michelinId": "1199116",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Mattia Trabetti",
+  "chefSource": "michelin"
 }

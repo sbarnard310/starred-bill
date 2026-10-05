@@ -13,5 +13,11 @@
   "website": "https://www.schlosswirt-forst.it/it/ristorante-gourmet/ristorante-gourmet/",
   "lat": 46.6780899,
   "lng": 11.1191355,
-  "placeId": "ChIJhdUMPgC5gkcRJ6ZkUJ8cNbs"
+  "placeId": "ChIJhdUMPgC5gkcRJ6ZkUJ8cNbs",
+  "michelinId": "529224",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Luis Haller",
+  "chefSource": "michelin"
 }

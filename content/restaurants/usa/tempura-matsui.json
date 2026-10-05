@@ -22,5 +22,9 @@
   "website": "https://www.tempuramatsui.com/",
   "lat": 40.748191,
   "lng": -73.974663,
-  "placeId": "ChIJ3aiOZQRZwokRyTh5pEHCyXY"
+  "placeId": "ChIJ3aiOZQRZwokRyTh5pEHCyXY",
+  "michelinId": "476476",
+  "diets": [
+    "vegetarian"
+  ]
 }

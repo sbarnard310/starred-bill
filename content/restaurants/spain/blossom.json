@@ -13,5 +13,12 @@
   "website": "https://blossommalaga.com/",
   "lat": 36.720118,
   "lng": -4.417583,
-  "placeId": "ChIJeYu9YXL3cg0R_tDHQ6JhhbA"
+  "placeId": "ChIJeYu9YXL3cg0R_tDHQ6JhhbA",
+  "michelinId": "1202609",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Emi Schobert",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,15 @@
   "website": "https://www.macakizi.com/",
   "lat": 37.1356417,
   "lng": 27.3806702,
-  "placeId": "ChIJzd_i6yxvvhQRiz7skl-JPrc"
+  "placeId": "ChIJzd_i6yxvvhQRiz7skl-JPrc",
+  "michelinId": "1208202",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Aret Sahakyan",
+  "chefSource": "michelin"
 }

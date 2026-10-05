@@ -15,5 +15,12 @@
   "website": "https://www.lagrenouillere.fr",
   "lat": 50.4710226,
   "lng": 1.7544175,
-  "placeId": "ChIJjQ5C4dfF3UcRtvuEJhbVPk8"
+  "placeId": "ChIJjQ5C4dfF3UcRtvuEJhbVPk8",
+  "michelinId": "5062",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Alexandre Gauthier",
+  "chefSource": "michelin"
 }

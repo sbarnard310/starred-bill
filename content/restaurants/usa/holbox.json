@@ -17,5 +17,8 @@
   "website": "https://www.holboxla.com/",
   "lat": 34.017384,
   "lng": -118.27802,
-  "placeId": "ChIJMc9-jgrIwoARvFaE32ZlJzA"
+  "placeId": "ChIJMc9-jgrIwoARvFaE32ZlJzA",
+  "michelinId": "569592",
+  "chef": "Gilbert Cetina",
+  "chefSource": "michelin"
 }

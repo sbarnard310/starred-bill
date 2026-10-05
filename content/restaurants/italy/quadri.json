@@ -14,5 +14,13 @@
   "website": "https://alajmo.it/pages/homepage-ristorante-quadri",
   "lat": 45.4342534,
   "lng": 12.3379939,
-  "placeId": "ChIJd1tvhJOxfkcRLYiW3jKIJYI"
+  "placeId": "ChIJd1tvhJOxfkcRLYiW3jKIJYI",
+  "michelinId": "156535",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Sergio Preziosa",
+  "chefSource": "michelin"
 }

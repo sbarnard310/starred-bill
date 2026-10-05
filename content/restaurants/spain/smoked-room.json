@@ -28,5 +28,8 @@
   "website": "https://smokedroomrestaurants.com/es/madrid/",
   "lat": 40.438556,
   "lng": -3.691358,
-  "placeId": "ChIJq1UftCkpQg0RWN7BXvf4TVs"
+  "placeId": "ChIJq1UftCkpQg0RWN7BXvf4TVs",
+  "michelinId": "1197125",
+  "chef": "Massimiliano Delle Vedove",
+  "chefSource": "site"
 }

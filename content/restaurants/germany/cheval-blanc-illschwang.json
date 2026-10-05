@@ -13,5 +13,12 @@
   "website": "https://www.weisses-ross.de/",
   "lat": 49.4480661,
   "lng": 11.6842236,
-  "placeId": "ChIJO9V43MHVoUcR9vzSB8a0epU"
+  "placeId": "ChIJO9V43MHVoUcR9vzSB8a0epU",
+  "michelinId": "554556",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christian Fleischmann",
+  "chefSource": "site"
 }

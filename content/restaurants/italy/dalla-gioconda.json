@@ -13,5 +13,13 @@
   "website": "https://www.dallagioconda.it/",
   "lat": 43.963886,
   "lng": 12.7725315,
-  "placeId": "ChIJpcBun0LgLBMRskauKsdMAR0"
+  "placeId": "ChIJpcBun0LgLBMRskauKsdMAR0",
+  "michelinId": "135448",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Davide Di Fabio",
+  "chefSource": "michelin"
 }

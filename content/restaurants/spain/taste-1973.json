@@ -13,5 +13,13 @@
   "website": "https://www.taste1973restaurant.com",
   "lat": 28.0561987,
   "lng": -16.7348606,
-  "placeId": "ChIJtbSR-gWXagwRYmh0HmMAvJY"
+  "placeId": "ChIJtbSR-gWXagwRYmh0HmMAvJY",
+  "michelinId": "1191296",
+  "diets": [
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Diego Schattenhofer",
+  "chefSource": "michelin"
 }

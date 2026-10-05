@@ -15,5 +15,11 @@
   "website": "https://www.schwane.de/",
   "lat": 49.8649712,
   "lng": 10.2267305,
-  "placeId": "ChIJq6pmb09gokcR_LLna21Yv8g"
+  "placeId": "ChIJq6pmb09gokcR_LLna21Yv8g",
+  "michelinId": "1181338",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Hendrik Friedrich",
+  "chefSource": "site"
 }

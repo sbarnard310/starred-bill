@@ -23,5 +23,12 @@
   "website": "https://www.frenchie-restaurant.com/",
   "lat": 48.867722,
   "lng": 2.3478539,
-  "placeId": "ChIJX8C6phdu5kcRA59bbRIGM5M"
+  "placeId": "ChIJX8C6phdu5kcRA59bbRIGM5M",
+  "michelinId": "262795",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Grégory Marchand",
+  "chefSource": "michelin"
 }

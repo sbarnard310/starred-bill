@@ -15,5 +15,13 @@
   "website": "https://jlbrendel.com/",
   "lat": 48.1664136,
   "lng": 7.2972837,
-  "placeId": "ChIJbf5f7KlgkUcROD27CKVK8gE"
+  "placeId": "ChIJbf5f7KlgkUcROD27CKVK8gE",
+  "michelinId": "7380",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jean-Luc Brendel",
+  "chefSource": "michelin"
 }

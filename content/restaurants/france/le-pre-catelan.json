@@ -25,5 +25,13 @@
   "website": "https://leprecatelan.paris/",
   "lat": 48.8639374,
   "lng": 2.2507182,
-  "placeId": "ChIJXZ9lqzZl5kcRxIInGxIRFaI"
+  "placeId": "ChIJXZ9lqzZl5kcRxIInGxIRFaI",
+  "michelinId": "6445",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Frédéric Anton",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,10 @@
   "website": "https://laubergedelaforge.com",
   "lat": 43.6376833,
   "lng": 1.5951738,
-  "placeId": "ChIJ3RBL7n-ZrhIR02AfYI-RmhQ"
+  "placeId": "ChIJ3RBL7n-ZrhIR02AfYI-RmhQ",
+  "michelinId": "464495",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

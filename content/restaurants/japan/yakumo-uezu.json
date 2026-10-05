@@ -24,5 +24,11 @@
   "website": "https://www.yakumo-uezu.com/",
   "lat": 35.618768,
   "lng": 139.67426,
-  "placeId": "ChIJN366KqP1GGARVm2TnL8af3s"
+  "placeId": "ChIJN366KqP1GGARVm2TnL8af3s",
+  "michelinId": "1200145",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -13,5 +13,12 @@
   "website": "https://www.lillaspastia.es",
   "lat": 42.136332,
   "lng": -0.4101935,
-  "placeId": "ChIJ17JQEEpEWA0R2drTwG2fqPY"
+  "placeId": "ChIJ17JQEEpEWA0R2drTwG2fqPY",
+  "michelinId": "220607",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Carmelo Bosque",
+  "chefSource": "michelin"
 }

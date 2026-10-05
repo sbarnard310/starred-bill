@@ -11,5 +11,13 @@
   "website": "https://www.neumeister.cc/",
   "lat": 46.8098446,
   "lng": 15.8656398,
-  "placeId": "ChIJTaUrplkPb0cReiUL2s4r1SY"
+  "placeId": "ChIJTaUrplkPb0cReiUL2s4r1SY",
+  "michelinId": "106074",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christoph Mandl",
+  "chefSource": "michelin"
 }

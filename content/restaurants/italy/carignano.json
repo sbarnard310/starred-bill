@@ -12,5 +12,8 @@
   "website": "https://ristorantecarignano.it/",
   "lat": 45.065155,
   "lng": 7.6840119,
-  "placeId": "ChIJL28dO29tiEcRlf0ZAcYXqAY"
+  "placeId": "ChIJL28dO29tiEcRlf0ZAcYXqAY",
+  "michelinId": "164245",
+  "chef": "Davide Scabin",
+  "chefSource": "michelin"
 }

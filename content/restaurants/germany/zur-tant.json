@@ -15,5 +15,8 @@
   "website": "https://www.zurtant.de/",
   "lat": 50.851828,
   "lng": 7.0083312,
-  "placeId": "ChIJj4DNeg4hv0cRTN5roqs6aS0"
+  "placeId": "ChIJj4DNeg4hv0cRTN5roqs6aS0",
+  "michelinId": "74628",
+  "chef": "Thomas Lösche",
+  "chefSource": "michelin"
 }

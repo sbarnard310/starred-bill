@@ -12,5 +12,11 @@
   "website": "https://www.restaurantfzn.com/",
   "lat": 25.1320377,
   "lng": 55.1182319,
-  "placeId": "ChIJfe8szNoVXz4RiHMA4feYebQ"
+  "placeId": "ChIJfe8szNoVXz4RiHMA4feYebQ",
+  "michelinId": "1204872",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ]
 }

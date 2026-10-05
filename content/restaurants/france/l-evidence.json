@@ -15,5 +15,12 @@
   "website": "https://www.restaurant-levidence.com",
   "lat": 47.2873743,
   "lng": 0.7133337,
-  "placeId": "ChIJewzLg-DZ_EcRWkRzJm6wrRk"
+  "placeId": "ChIJewzLg-DZ_EcRWkRzJm6wrRk",
+  "michelinId": "1000149",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

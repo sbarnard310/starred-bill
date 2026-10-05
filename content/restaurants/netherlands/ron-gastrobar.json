@@ -12,5 +12,12 @@
   "website": "https://rongastrobar.nl/",
   "lat": 52.3522317,
   "lng": 4.8566529,
-  "placeId": "ChIJ477hiQPixUcReMGcBUPbVLk"
+  "placeId": "ChIJ477hiQPixUcReMGcBUPbVLk",
+  "michelinId": "212167",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

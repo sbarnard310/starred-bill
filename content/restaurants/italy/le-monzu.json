@@ -13,5 +13,10 @@
   "website": "https://www.manfredihotels.com/le-monzu/",
   "lat": 40.5454969,
   "lng": 14.2502024,
-  "placeId": "ChIJMUf-5S94OxMRCKqMFjn_tMc"
+  "placeId": "ChIJMUf-5S94OxMRCKqMFjn_tMc",
+  "michelinId": "161231",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -25,5 +25,12 @@
   "website": "https://www.restaurantechiron.com/",
   "lat": 40.191578,
   "lng": -3.676486,
-  "placeId": "ChIJJUYTasceQg0RRDvKAk9NHOM"
+  "placeId": "ChIJJUYTasceQg0RRDvKAk9NHOM",
+  "michelinId": "224077",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Iván Muñoz",
+  "chefSource": "michelin"
 }

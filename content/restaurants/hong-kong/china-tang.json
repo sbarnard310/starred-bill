@@ -25,5 +25,9 @@
   "website": "https://chinatang.hk/",
   "lat": 22.2804857,
   "lng": 114.1579105,
-  "placeId": "ChIJT-ll42QABDQRUBFAn4n-2pk"
+  "placeId": "ChIJT-ll42QABDQRUBFAn4n-2pk",
+  "michelinId": "446675",
+  "diets": [
+    "vegetarian-menu"
+  ]
 }

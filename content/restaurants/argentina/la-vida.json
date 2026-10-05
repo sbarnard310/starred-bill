@@ -20,5 +20,12 @@
   "website": "https://www.susanabalbohotels.com",
   "lat": -32.9897026,
   "lng": -68.8874432,
-  "placeId": "ChIJ8cBwlCsLfpYRhoHlwki_V88"
+  "placeId": "ChIJ8cBwlCsLfpYRhoHlwki_V88",
+  "michelinId": "1207154",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Flavia Amad Di Leo",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,12 @@
   "website": "https://www.marktgassehotel.ch/",
   "lat": 47.3719489,
   "lng": 8.5437311,
-  "placeId": "ChIJZbkhcZOhmkcRtd-eRrYqZ8c"
+  "placeId": "ChIJZbkhcZOhmkcRtd-eRrYqZ8c",
+  "michelinId": "1190160",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Daniel Zeindlhofer",
+  "chefSource": "michelin"
 }

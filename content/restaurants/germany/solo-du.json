@@ -16,5 +16,13 @@
   "website": "https://www.kulturhof.bayern/solo-du",
   "lat": 47.627961,
   "lng": 12.989256,
-  "placeId": "ChIJdVCD16DtdkcRlzcSWKMflKQ"
+  "placeId": "ChIJdVCD16DtdkcRlzcSWKMflKQ",
+  "michelinId": "1202274",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Zsolt Fodor",
+  "chefSource": "michelin"
 }

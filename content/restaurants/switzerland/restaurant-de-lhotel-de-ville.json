@@ -13,5 +13,13 @@
   "website": "https://www.hotel-restaurant-ollon.ch/",
   "lat": 46.2968491,
   "lng": 6.9951099,
-  "placeId": "ChIJjx-6QaK9jkcRI9h7nzX11Pw"
+  "placeId": "ChIJjx-6QaK9jkcRI9h7nzX11Pw",
+  "michelinId": "179826",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Grégory Halgand",
+  "chefSource": "site"
 }

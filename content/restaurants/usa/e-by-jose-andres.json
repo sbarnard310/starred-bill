@@ -12,5 +12,12 @@
   "website": "https://www.ebyjoseandres.com/",
   "lat": 36.1104947,
   "lng": -115.1743902,
-  "placeId": "ChIJFbD_qDHEyIARB2AQf9-Ff3Q"
+  "placeId": "ChIJFbD_qDHEyIARB2AQf9-Ff3Q",
+  "michelinId": "1245955",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "José Andrés",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,12 @@
   "website": "https://www.ampfarrhof.com/",
   "lat": 46.7909868,
   "lng": 15.3771913,
-  "placeId": "ChIJTynBcMqZb0cRVBeIu7R5IeA"
+  "placeId": "ChIJTynBcMqZb0cRVBeIu7R5IeA",
+  "michelinId": "1213592",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Harald Irka",
+  "chefSource": "michelin"
 }

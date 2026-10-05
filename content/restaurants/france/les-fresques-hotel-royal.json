@@ -15,5 +15,8 @@
   "website": "https://hotel-royal.evianresort.com/",
   "lat": 46.3966417,
   "lng": 6.59945,
-  "placeId": "ChIJIXCvsFMjjEcR4bk60qa3UIE"
+  "placeId": "ChIJIXCvsFMjjEcR4bk60qa3UIE",
+  "michelinId": "400460",
+  "chef": "Yohan Fatela",
+  "chefSource": "site"
 }

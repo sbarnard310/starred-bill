@@ -17,5 +17,8 @@
   "website": "https://www.smythchicago.com/",
   "lat": 41.885049,
   "lng": -87.660632,
-  "placeId": "ChIJxRcpzSctDogRBKHyFUKauHc"
+  "placeId": "ChIJxRcpzSctDogRBKHyFUKauHc",
+  "michelinId": "513128",
+  "chef": "John Shields and Karen Urie-Shields",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,15 @@
   "website": "https://www.hotel-alpenblick.ch/",
   "lat": 46.6638654,
   "lng": 7.8601204,
-  "placeId": "ChIJf5d-kIejj0cRy2ERVxKt1fI"
+  "placeId": "ChIJf5d-kIejj0cRy2ERVxKt1fI",
+  "michelinId": "179404",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Richard Stöckli",
+  "chefSource": "site"
 }

@@ -13,5 +13,14 @@
   "website": "https://cenadordeamos.com/",
   "lat": 43.4124884,
   "lng": -3.6988243,
-  "placeId": "ChIJL4yXdGPKTg0RySq4Ufm7wOU"
+  "placeId": "ChIJL4yXdGPKTg0RySq4Ufm7wOU",
+  "michelinId": "224475",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Jesús Sánchez Sáinz",
+  "chefSource": "michelin"
 }

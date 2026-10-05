@@ -17,5 +17,13 @@
   "website": "https://www.hotelxcaretmexico.com/en/ha-restaurant/",
   "lat": 20.5867231,
   "lng": -87.1121284,
-  "placeId": "ChIJOao-d2hFTo8RaZq5OBlvlRE"
+  "placeId": "ChIJOao-d2hFTo8RaZq5OBlvlRE",
+  "michelinId": "1208266",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Carlos Gaytán",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,13 @@
   "website": "https://www.encantojoseavillez.pt",
   "lat": 38.7099833,
   "lng": -9.1414928,
-  "placeId": "ChIJ-7dkqCk1GQ0RkfmRBwE4CTw"
+  "placeId": "ChIJ-7dkqCk1GQ0RkfmRBwE4CTw",
+  "michelinId": "1201614",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "José Avillez",
+  "chefSource": "michelin"
 }

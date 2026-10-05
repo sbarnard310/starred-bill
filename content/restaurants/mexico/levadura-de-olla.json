@@ -24,5 +24,14 @@
   "website": "https://www.levaduradeolla.mx",
   "lat": 17.0643137,
   "lng": -96.7250225,
-  "placeId": "ChIJieIittUjx4URUtcCSc0c4Cw"
+  "placeId": "ChIJieIittUjx4URUtcCSc0c4Cw",
+  "michelinId": "1208537",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Thalía Barrios Garcia",
+  "chefSource": "michelin"
 }

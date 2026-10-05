@@ -18,5 +18,11 @@
   "website": "https://www.maisondestetes.com/fr/restaurant-girardin.html",
   "lat": 48.0785765,
   "lng": 7.3554964,
-  "placeId": "ChIJIZ7GSedlkUcRiAFjY4zS0B0"
+  "placeId": "ChIJIZ7GSedlkUcRiAFjY4zS0B0",
+  "michelinId": "515393",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Éric Girardin",
+  "chefSource": "michelin"
 }

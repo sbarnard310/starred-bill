@@ -13,5 +13,11 @@
   "website": "https://www.lukas-kapeller.at/restaurant/",
   "lat": 48.0339875,
   "lng": 14.4315961,
-  "placeId": "ChIJ9ZRxrETPc0cR7d1GBEU1NO8"
+  "placeId": "ChIJ9ZRxrETPc0cR7d1GBEU1NO8",
+  "michelinId": "1212989",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Lukas Kapeller and Michael Schlöglhofer",
+  "chefSource": "michelin"
 }

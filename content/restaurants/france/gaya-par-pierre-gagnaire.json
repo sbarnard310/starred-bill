@@ -25,5 +25,12 @@
   "website": "https://restaurantgaya.com/",
   "lat": 48.8565083,
   "lng": 2.324072,
-  "placeId": "ChIJHxHFCSpu5kcRJCFKQQug9Fg"
+  "placeId": "ChIJHxHFCSpu5kcRJCFKQQug9Fg",
+  "michelinId": "1102789",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ]
 }

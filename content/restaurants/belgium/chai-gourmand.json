@@ -13,5 +13,8 @@
   "website": "https://www.chaigourmand.be/",
   "lat": 50.5295085,
   "lng": 4.7455322,
-  "placeId": "ChIJ247srj-CwUcRiYTPSSCjb04"
+  "placeId": "ChIJ247srj-CwUcRiYTPSSCjb04",
+  "michelinId": "1186169",
+  "chef": "Pierre Massin",
+  "chefSource": "michelin"
 }

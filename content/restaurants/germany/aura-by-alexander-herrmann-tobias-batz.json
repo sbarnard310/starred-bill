@@ -16,5 +16,13 @@
   "website": "https://www.herrmanns-posthotel.de/de/gourmetwelten/aura.html",
   "lat": 50.1073707,
   "lng": 11.6069241,
-  "placeId": "ChIJK5-8OtELoUcRazTkJ_jtLxs"
+  "placeId": "ChIJK5-8OtELoUcRazTkJ_jtLxs",
+  "michelinId": "85183",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Alexander Herrmann & Tobias Bätz",
+  "chefSource": "michelin"
 }

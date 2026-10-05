@@ -17,5 +17,11 @@
   "website": "https://www.sushinakazawa.com/",
   "lat": 38.894624,
   "lng": -77.027005,
-  "placeId": "ChIJ-f__HJq3t4kRmvtJRiDzurk"
+  "placeId": "ChIJ-f__HJq3t4kRmvtJRiDzurk",
+  "michelinId": "1160153",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Daisuke Nakazawa",
+  "chefSource": "michelin"
 }

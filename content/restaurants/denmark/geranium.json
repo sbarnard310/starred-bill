@@ -29,5 +29,14 @@
   "website": "https://www.geranium.dk/",
   "lat": 55.703472,
   "lng": 12.572095,
-  "placeId": "ChIJAQshwflSUkYRF9f4wpDIt7U"
+  "placeId": "ChIJAQshwflSUkYRF9f4wpDIt7U",
+  "michelinId": "307051",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Rasmus Kofoed",
+  "chefSource": "michelin"
 }

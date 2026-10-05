@@ -19,5 +19,12 @@
   "website": "https://www.maison-chenet.com",
   "lat": 43.98619,
   "lng": 4.77475,
-  "placeId": "ChIJa0G4Zy7rtRIRz9pp0PHGvZM"
+  "placeId": "ChIJa0G4Zy7rtRIRz9pp0PHGvZM",
+  "michelinId": "236497",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Maxime Chenet",
+  "chefSource": "michelin"
 }

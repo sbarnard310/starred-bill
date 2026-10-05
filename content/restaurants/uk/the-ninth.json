@@ -21,5 +21,12 @@
   "website": "https://www.theninthlondon.com/",
   "lat": 51.5188446,
   "lng": -0.1349237,
-  "placeId": "ChIJl9_NdCwbdkgRpKEhBGIYGmU"
+  "placeId": "ChIJl9_NdCwbdkgRpKEhBGIYGmU",
+  "michelinId": "490550",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jun Tanaka",
+  "chefSource": "michelin"
 }

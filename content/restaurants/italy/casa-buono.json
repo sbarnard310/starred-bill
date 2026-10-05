@@ -13,5 +13,14 @@
   "website": "https://ristorantecasabuono.com/",
   "lat": 43.8462058,
   "lng": 7.5886453,
-  "placeId": "ChIJ57_C29WTzRIRRaLJNRxJI_Q"
+  "placeId": "ChIJ57_C29WTzRIRRaLJNRxJI_Q",
+  "michelinId": "1191319",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Antonio Buono",
+  "chefSource": "site"
 }

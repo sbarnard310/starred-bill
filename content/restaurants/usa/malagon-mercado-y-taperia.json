@@ -12,5 +12,13 @@
   "website": "https://www.malagonchs.com/",
   "lat": 32.7928242,
   "lng": -79.94155,
-  "placeId": "ChIJe1E1N0B7_ogRi4DdR7JZ9ms"
+  "placeId": "ChIJe1E1N0B7_ogRi4DdR7JZ9ms",
+  "michelinId": "1215130",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Juan Cassalett",
+  "chefSource": "michelin"
 }

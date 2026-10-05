@@ -15,5 +15,12 @@
   "website": "https://www.lamm-rosswag.de/",
   "lat": 48.936683,
   "lng": 8.916984,
-  "placeId": "ChIJXfLuVvx7l0cRThcA_lMFzOc"
+  "placeId": "ChIJXfLuVvx7l0cRThcA_lMFzOc",
+  "michelinId": "84783",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Steffen Ruggaber",
+  "chefSource": "michelin"
 }

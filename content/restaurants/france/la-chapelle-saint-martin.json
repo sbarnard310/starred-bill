@@ -15,5 +15,12 @@
   "website": "https://www.chapellesaintmartin.com",
   "lat": 45.8924535,
   "lng": 1.1784757,
-  "placeId": "ChIJYStFsQDK_kcRdrZdrf9FFX4"
+  "placeId": "ChIJYStFsQDK_kcRdrZdrf9FFX4",
+  "michelinId": "11602",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Gilles Dudognon and Henri Dudognon",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,11 @@
   "website": "https://www.restaurantmyse.co.uk/",
   "lat": 54.172389,
   "lng": -0.979018,
-  "placeId": "ChIJ2TGF40zRfkgRA48bPb0HuXA"
+  "placeId": "ChIJ2TGF40zRfkgRA48bPb0HuXA",
+  "michelinId": "1207734",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Joshua Overington",
+  "chefSource": "site"
 }

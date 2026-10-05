@@ -29,5 +29,8 @@
   "website": "https://higashiyama-muku.jp/",
   "lat": 35.64732,
   "lng": 139.693148,
-  "placeId": "ChIJn_QOCmyLGGARf8LM_E4TTzM"
+  "placeId": "ChIJn_QOCmyLGGARf8LM_E4TTzM",
+  "michelinId": "1213450",
+  "chef": "Tatsuki Mishima",
+  "chefSource": "michelin"
 }

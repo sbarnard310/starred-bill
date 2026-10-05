@@ -23,5 +23,13 @@
   "website": "https://lelan.jp/",
   "lat": 35.667538,
   "lng": 139.70695,
-  "placeId": "ChIJlSwXD5yNGGAR7IGdG0ASpLs"
+  "placeId": "ChIJlSwXD5yNGGAR7IGdG0ASpLs",
+  "michelinId": "1200246",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

@@ -21,5 +21,8 @@
   "website": "https://www.omija.fr/",
   "lat": 47.210365,
   "lng": -1.5472623,
-  "placeId": "ChIJbZCuS_PvBUgRbVFb-x_bHqs"
+  "placeId": "ChIJbZCuS_PvBUgRbVFb-x_bHqs",
+  "michelinId": "1186680",
+  "chef": "Romain Bonnet",
+  "chefSource": "michelin"
 }

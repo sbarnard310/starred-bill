@@ -24,5 +24,12 @@
   "website": "https://www.quincerestaurant.com/",
   "lat": 37.797505,
   "lng": -122.403261,
-  "placeId": "ChIJ8biHnb-AhYARSpU8MDPb5vs"
+  "placeId": "ChIJ8biHnb-AhYARSpU8MDPb5vs",
+  "michelinId": "122560",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Michael Tusk",
+  "chefSource": "michelin"
 }

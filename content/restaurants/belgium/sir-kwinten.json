@@ -13,5 +13,12 @@
   "website": "https://www.sirkwinten.be/",
   "lat": 50.8056605,
   "lng": 4.1554453,
-  "placeId": "ChIJkwwnAlO4w0cRE97PHRm_cvc"
+  "placeId": "ChIJkwwnAlO4w0cRE97PHRm_cvc",
+  "michelinId": "210402",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Glenn Verhasselt",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,8 @@
   "website": "https://www.breizhcafe.com/la-table-breizh-cafe",
   "lat": 48.6708737,
   "lng": -1.8517181,
-  "placeId": "ChIJhfZBP9idDkgRZzLjdqvr0XU"
+  "placeId": "ChIJhfZBP9idDkgRZzLjdqvr0XU",
+  "michelinId": "282070",
+  "chef": "Raphaël-Fumio Kudaka",
+  "chefSource": "michelin"
 }

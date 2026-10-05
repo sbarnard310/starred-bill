@@ -23,5 +23,13 @@
   "website": "https://www.aubergesaintremy.com",
   "lat": 43.7885608,
   "lng": 4.8333205,
-  "placeId": "ChIJv0VRxUDktRIRzFNPP-9NV2U"
+  "placeId": "ChIJv0VRxUDktRIRzFNPP-9NV2U",
+  "michelinId": "430007",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Fanny Rey",
+  "chefSource": "michelin"
 }

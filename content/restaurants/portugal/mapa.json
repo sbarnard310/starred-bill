@@ -13,5 +13,12 @@
   "website": "https://www.l-and.com/restaurant",
   "lat": 38.645633,
   "lng": -8.2467305,
-  "placeId": "ChIJJW09EfKWGQ0R1xGaZSVeWEQ"
+  "placeId": "ChIJJW09EfKWGQ0R1xGaZSVeWEQ",
+  "michelinId": "1213147",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Miguel Laffan",
+  "chefSource": "site"
 }

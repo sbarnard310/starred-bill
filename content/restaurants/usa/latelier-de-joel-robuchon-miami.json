@@ -17,5 +17,11 @@
   "website": "https://latelier-miami.com/",
   "lat": 25.814444,
   "lng": -80.192144,
-  "placeId": "ChIJJ3pnTr6x2YgRUcKI0-aDyJs"
+  "placeId": "ChIJJ3pnTr6x2YgRUcKI0-aDyJs",
+  "michelinId": "1194424",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "James Friedberg",
+  "chefSource": "site"
 }

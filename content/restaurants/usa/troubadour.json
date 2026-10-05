@@ -13,5 +13,11 @@
   "website": "https://www.troubadourhbg.com/",
   "lat": 38.6116465,
   "lng": -122.8710511,
-  "placeId": "ChIJr4-QP0sXhIARaxCxI3oi8AQ"
+  "placeId": "ChIJr4-QP0sXhIARaxCxI3oi8AQ",
+  "michelinId": "1208102",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sean McGaughey and Melissa McGaughey",
+  "chefSource": "michelin"
 }

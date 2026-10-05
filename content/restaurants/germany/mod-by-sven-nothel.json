@@ -21,5 +21,11 @@
   "website": "https://www.mod-dining.com/",
   "lat": 51.4770801,
   "lng": 6.6674968,
-  "placeId": "ChIJp2MzCr69uEcRpx-sGoaoRN0"
+  "placeId": "ChIJp2MzCr69uEcRpx-sGoaoRN0",
+  "michelinId": "1194558",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

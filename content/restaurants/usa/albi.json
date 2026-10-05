@@ -17,5 +17,11 @@
   "website": "https://www.albidc.com/",
   "lat": 38.874115,
   "lng": -77.000967,
-  "placeId": "ChIJ240L8N25t4kRCoGiQ2-21bI"
+  "placeId": "ChIJ240L8N25t4kRCoGiQ2-21bI",
+  "michelinId": "1185180",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Michael Rafidi",
+  "chefSource": "michelin"
 }

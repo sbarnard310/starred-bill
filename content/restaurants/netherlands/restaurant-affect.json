@@ -13,5 +13,15 @@
   "website": "https://www.restaurantaffect.com/",
   "lat": 52.5148437,
   "lng": 6.0959952,
-  "placeId": "ChIJzf91X6Xfx0cRot_ep8QMTBg"
+  "placeId": "ChIJzf91X6Xfx0cRot_ep8QMTBg",
+  "michelinId": "1210256",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Lars Aukema",
+  "chefSource": "michelin"
 }

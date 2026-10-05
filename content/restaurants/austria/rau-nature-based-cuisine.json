@@ -16,5 +16,12 @@
   "website": "https://www.im-rau.com/",
   "lat": 47.9161177,
   "lng": 14.5368869,
-  "placeId": "ChIJ8QUA1OLSc0cR5S0emdDaKBI"
+  "placeId": "ChIJ8QUA1OLSc0cR5S0emdDaKBI",
+  "michelinId": "1212939",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Klemens Gold",
+  "chefSource": "michelin"
 }

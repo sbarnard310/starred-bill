@@ -16,5 +16,13 @@
   "website": "https://www.casasgarra.it",
   "lat": 41.270434,
   "lng": 16.4341752,
-  "placeId": "ChIJI-jxN3AFOBMRWyhuwzBX5yg"
+  "placeId": "ChIJI-jxN3AFOBMRWyhuwzBX5yg",
+  "michelinId": "1192213",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Felice Sgarra",
+  "chefSource": "michelin"
 }

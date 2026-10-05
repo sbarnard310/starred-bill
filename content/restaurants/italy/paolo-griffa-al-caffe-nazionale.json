@@ -12,5 +12,13 @@
   "website": "https://www.paologriffa.com/",
   "lat": 45.7376217,
   "lng": 7.3208336,
-  "placeId": "ChIJgRBw9LAgiUcRWGM9l83qU7c"
+  "placeId": "ChIJgRBw9LAgiUcRWGM9l83qU7c",
+  "michelinId": "1203766",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Paolo Griffa",
+  "chefSource": "michelin"
 }

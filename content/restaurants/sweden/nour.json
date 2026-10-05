@@ -12,5 +12,9 @@
   "website": "https://www.restaurantnour.se",
   "lat": 59.3357675,
   "lng": 18.071196,
-  "placeId": "ChIJpWwPqfidX0YRhMopIamkCHY"
+  "placeId": "ChIJpWwPqfidX0YRhMopIamkCHY",
+  "michelinId": "1193344",
+  "diets": [
+    "vegetarian"
+  ]
 }

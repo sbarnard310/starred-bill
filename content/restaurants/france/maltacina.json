@@ -27,5 +27,15 @@
   "website": "https://www.maltacina.com",
   "lat": 44.9981821,
   "lng": 5.7731209,
-  "placeId": "ChIJ4ZcFUSd9ikcRGXwcgB5riHc"
+  "placeId": "ChIJ4ZcFUSd9ikcRGXwcgB5riHc",
+  "michelinId": "1217113",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Kevin Mangione / Lunis Chaïb / Théo Doumecq",
+  "chefSource": "michelin"
 }

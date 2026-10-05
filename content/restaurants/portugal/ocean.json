@@ -15,5 +15,12 @@
   "website": "https://restauranteocean.com/pt",
   "lat": 37.1008268,
   "lng": -8.3792041,
-  "placeId": "ChIJx-TDmUPRGg0RvmRyo6SdzZM"
+  "placeId": "ChIJx-TDmUPRGg0RvmRyo6SdzZM",
+  "michelinId": "216602",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Hans Neuner",
+  "chefSource": "michelin"
 }

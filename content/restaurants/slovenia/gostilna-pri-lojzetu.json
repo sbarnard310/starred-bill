@@ -11,5 +11,14 @@
   "website": "https://www.zemono.si",
   "lat": 45.8557213,
   "lng": 13.9491988,
-  "placeId": "ChIJMQ1kLYEYe0cRrwOZ3ivSNlc"
+  "placeId": "ChIJMQ1kLYEYe0cRrwOZ3ivSNlc",
+  "michelinId": "1160169",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Tomaž Kavčič",
+  "chefSource": "site"
 }

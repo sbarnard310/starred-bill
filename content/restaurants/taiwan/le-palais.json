@@ -26,5 +26,9 @@
   "website": "https://www.palaisdechinehotel.com/pdc-en/pages/26/0/66",
   "lat": 25.0491625,
   "lng": 121.5168892,
-  "placeId": "ChIJr4YudW2pQjQR6s2rQHF7d5A"
+  "placeId": "ChIJr4YudW2pQjQR6s2rQHF7d5A",
+  "michelinId": "551698",
+  "diets": [
+    "vegetarian"
+  ]
 }

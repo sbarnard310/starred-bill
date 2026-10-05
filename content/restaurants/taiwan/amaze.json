@@ -28,5 +28,11 @@
   "website": "https://www.amaze598.com/",
   "lat": 25.0813502,
   "lng": 121.5519929,
-  "placeId": "ChIJl7GwCgCtQjQR7YnBoPnBtzQ"
+  "placeId": "ChIJl7GwCgCtQjQR7YnBoPnBtzQ",
+  "michelinId": "1217008",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jim Yang",
+  "chefSource": "michelin"
 }

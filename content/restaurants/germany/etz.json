@@ -14,5 +14,12 @@
   "website": "https://etzrestaurant.de/",
   "lat": 49.4575699,
   "lng": 11.0537152,
-  "placeId": "ChIJt7cI6LZXn0cRGnyQZiwAUTo"
+  "placeId": "ChIJt7cI6LZXn0cRGnyQZiwAUTo",
+  "michelinId": "1198269",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Felix Schneider",
+  "chefSource": "michelin"
 }

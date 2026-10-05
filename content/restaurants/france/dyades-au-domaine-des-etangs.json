@@ -15,5 +15,12 @@
   "website": "https://fr.auberge.com/domaine-des-etangs/dine/",
   "lat": 45.7761702,
   "lng": 0.6439324,
-  "placeId": "ChIJqf3PD19q_kcR-XtMzKgf9xM"
+  "placeId": "ChIJqf3PD19q_kcR-XtMzKgf9xM",
+  "michelinId": "260388",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

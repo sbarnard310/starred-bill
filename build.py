@@ -28,6 +28,9 @@ DEFAULT_LANGUAGES = ["en"]  # a country without `languages` (and the homepage, a
 PRICE_TYPES = ("menu", "main", "spend")
 STATUSES = ("lost", "closed", "changed")
 CHANGES = ("new", "up", "down")
+# Dietary options, from the MICHELIN Guide (scripts/michelin_details.py). "vegetarian-only" marks a vegetarian or vegan restaurant.
+DIETS = ("vegetarian-only", "vegetarian-menu", "vegetarian", "vegan", "gluten-free", "halal", "kosher")
+CHEF_SOURCES = ("michelin", "site", "manual")
 ID_PATTERN = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
 
 problems = []
@@ -197,6 +200,12 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
     for field in ("dinner", "wine", "lunch", "lunchWine", "rating", "reviews", "lat", "lng"):
         if r.get(field) is not None and not isinstance(r[field], (int, float)):
             problem(where, f"{field} must be a number (no currency sign or quotes)")
+    if r.get("diets") is not None and (not isinstance(r["diets"], list) or set(r["diets"]) - set(DIETS)):
+        problem(where, f"diets must be a list made from {', '.join(DIETS)}")
+    if r.get("chef") is not None and not isinstance(r["chef"], str):
+        problem(where, "chef must be a name in quotes, e.g. \"Clare Smyth\"")
+    if r.get("chefSource") and r["chefSource"] not in CHEF_SOURCES:
+        problem(where, f"chefSource must be one of {', '.join(CHEF_SOURCES)}")
     country = places.get(country_of(city["id"]))
     r.update({
         "id": rid,
@@ -250,7 +259,7 @@ pages = list(places.values())
 
 
 def public(r):
-    return {k: v for k, v in r.items() if not k.startswith("_")}
+    return {k: v for k, v in r.items() if not k.startswith("_") and k not in ("chefSource", "michelinId")}
 
 
 def names(p):
@@ -632,7 +641,7 @@ def build_home():
         print("  Countries with no continent (add them to CONTINENTS in build.py):", ", ".join(no_continent))
     groups = [link(g) for g in by_size(g for g in pages if g["type"] == "group")]
     keep = ("id", "name", "nameZh", "nameJa", "stars", "cuisine", "cuisineZh", "lat", "lng", "dinner", "dinnerType", "cur", "rating",
-            "country", "cityName", "cityNameZh", "cityPath")
+            "country", "cityName", "cityNameZh", "cityPath", "chef")
     data = {
         # Restaurants listed under a region or country rather than a city also carry their town, e.g. Aughton.
         "restaurants": [dict({k: r[k] for k in keep if r.get(k) is not None}, **({"town": r["area"].split(", ")[0]} if r["cityType"] != "city" and r.get("area") else {}))

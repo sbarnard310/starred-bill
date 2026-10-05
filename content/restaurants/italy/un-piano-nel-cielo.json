@@ -13,5 +13,14 @@
   "website": "https://www.casangelina.com/it/dining/un-piano-nel-cielo/",
   "lat": 40.6136373,
   "lng": 14.5218291,
-  "placeId": "ChIJj3L_GdmWOxMR6XZ4evGMW6k"
+  "placeId": "ChIJj3L_GdmWOxMR6XZ4evGMW6k",
+  "michelinId": "334119",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Leopoldo Elefante",
+  "chefSource": "michelin"
 }

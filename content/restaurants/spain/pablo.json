@@ -13,5 +13,8 @@
   "website": "https://www.restaurantepablo.es",
   "lat": 42.6004864,
   "lng": -5.5665652,
-  "placeId": "ChIJFR7rHseaNw0R0QL7VEAgZxY"
+  "placeId": "ChIJFR7rHseaNw0R0QL7VEAgZxY",
+  "michelinId": "461366",
+  "chef": "Juanjo Losada",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.hotel-oswald.de/",
   "lat": 49.0135383,
   "lng": 13.0296432,
-  "placeId": "ChIJUwTWQj08dUcROYovLUHTiFQ"
+  "placeId": "ChIJUwTWQj08dUcROYovLUHTiFQ",
+  "michelinId": "466614",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Thomas Gerber",
+  "chefSource": "michelin"
 }

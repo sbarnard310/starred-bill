@@ -13,5 +13,11 @@
   "website": "https://www.caracolgourmet.it/",
   "lat": 40.7827339,
   "lng": 14.0834126,
-  "placeId": "ChIJRQPu5m8SOxMRARv2Ij92Qtg"
+  "placeId": "ChIJRQPu5m8SOxMRARv2Ij92Qtg",
+  "michelinId": "160848",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Angelo Carannante",
+  "chefSource": "michelin"
 }

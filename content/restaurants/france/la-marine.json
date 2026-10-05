@@ -15,5 +15,12 @@
   "website": "https://www.alexandrecouillon.com",
   "lat": 47.0237104,
   "lng": -2.2999341,
-  "placeId": "ChIJsXfnkhwWBUgRHDPaEO3Pdx8"
+  "placeId": "ChIJsXfnkhwWBUgRHDPaEO3Pdx8",
+  "michelinId": "3780",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Alexandre Couillon",
+  "chefSource": "michelin"
 }

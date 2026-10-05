@@ -14,5 +14,10 @@
   "website": "https://www.restaurant-gabelspiel.de/",
   "lat": 48.113638,
   "lng": 11.5777451,
-  "placeId": "ChIJJwA5pRLfnUcR37q5yOMXZlA"
+  "placeId": "ChIJJwA5pRLfnUcR37q5yOMXZlA",
+  "michelinId": "533505",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

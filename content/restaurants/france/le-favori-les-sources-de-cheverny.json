@@ -25,5 +25,10 @@
   "website": "https://www.sources-hotels.com/valdeloire/restaurants/restaurant-le-favori/",
   "lat": 47.4770964,
   "lng": 1.4326274,
-  "placeId": "ChIJyRElSUit5EcRTbLPrPHNtig"
+  "placeId": "ChIJyRElSUit5EcRTbLPrPHNtig",
+  "michelinId": "1192730",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

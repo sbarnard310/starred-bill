@@ -13,5 +13,15 @@
   "website": "https://www.cocinandos.com/",
   "lat": 42.6019852,
   "lng": -5.5810161,
-  "placeId": "ChIJmTrDcYyaNw0R7vionrUwnqc"
+  "placeId": "ChIJmTrDcYyaNw0R7vionrUwnqc",
+  "michelinId": "220835",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Yolanda León and Juanjo Pérez",
+  "chefSource": "michelin"
 }

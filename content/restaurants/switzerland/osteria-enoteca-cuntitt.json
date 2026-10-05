@@ -13,5 +13,13 @@
   "website": "https://cuntitt.ch/",
   "lat": 45.8600788,
   "lng": 9.0088473,
-  "placeId": "ChIJ6xNf_v0phEcRL5ONRXrisnQ"
+  "placeId": "ChIJ6xNf_v0phEcRL5ONRXrisnQ",
+  "michelinId": "1200388",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Federico Palladino",
+  "chefSource": "site"
 }

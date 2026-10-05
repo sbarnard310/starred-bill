@@ -18,5 +18,12 @@
   "website": "https://www.aubergeduvieuxpuits.fr",
   "lat": 43.0481728,
   "lng": 2.7893292,
-  "placeId": "ChIJwz7atuhJsBIRZ6esU5Pl6As"
+  "placeId": "ChIJwz7atuhJsBIRZ6esU5Pl6As",
+  "michelinId": "3247",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Gilles Goujon",
+  "chefSource": "site"
 }

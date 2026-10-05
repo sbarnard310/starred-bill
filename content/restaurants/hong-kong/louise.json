@@ -23,5 +23,12 @@
   "website": "https://www.louise.hk/",
   "lat": 22.2834752,
   "lng": 114.1522258,
-  "placeId": "ChIJd6OiTXMBBDQRNd77cWct7iM"
+  "placeId": "ChIJd6OiTXMBBDQRNd77cWct7iM",
+  "michelinId": "1184858",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Julien Royer",
+  "chefSource": "michelin"
 }

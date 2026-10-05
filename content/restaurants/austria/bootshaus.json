@@ -16,5 +16,11 @@
   "website": "https://www.dastraunsee.at/restaurant-bootshaus",
   "lat": 47.8459854,
   "lng": 13.7900377,
-  "placeId": "ChIJWbLqMYhWcUcRDq0vY1NlvBE"
+  "placeId": "ChIJWbLqMYhWcUcRDq0vY1NlvBE",
+  "michelinId": "1212990",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Lukas Nagl",
+  "chefSource": "michelin"
 }

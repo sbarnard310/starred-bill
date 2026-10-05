@@ -27,5 +27,12 @@
   "website": "https://latabledepierrereboul.com",
   "lat": 43.5260557,
   "lng": 5.4379941,
-  "placeId": "ChIJJyA8qlKNyRIRvLMH2gkpb18"
+  "placeId": "ChIJJyA8qlKNyRIRvLMH2gkpb18",
+  "michelinId": "9836",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Pierre Reboul",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,15 @@
   "website": "https://www.kitchencomo.com/",
   "lat": 45.833404,
   "lng": 9.071568,
-  "placeId": "ChIJO8Wwmp6dhkcRMlze-t9XUEU"
+  "placeId": "ChIJO8Wwmp6dhkcRMlze-t9XUEU",
+  "michelinId": "325766",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Andrea Casali",
+  "chefSource": "site"
 }

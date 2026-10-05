@@ -17,5 +17,13 @@
   "website": "https://www.littlepearldc.com/",
   "lat": 38.883356,
   "lng": -76.993637,
-  "placeId": "ChIJZamGfTO4t4kRnjETn_wWEqM"
+  "placeId": "ChIJZamGfTO4t4kRnjETn_wWEqM",
+  "michelinId": "1164949",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

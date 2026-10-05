@@ -20,5 +20,12 @@
   "website": "https://paul-ainsworth-no6.co.uk/",
   "lat": 50.541505,
   "lng": -4.939891,
-  "placeId": "ChIJATtogiR1a0gRm4MKH886HJI"
+  "placeId": "ChIJATtogiR1a0gRm4MKH886HJI",
+  "michelinId": "188670",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Paul Ainsworth",
+  "chefSource": "site"
 }

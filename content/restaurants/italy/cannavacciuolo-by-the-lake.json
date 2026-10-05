@@ -13,5 +13,11 @@
   "website": "https://laquabythelake.it/",
   "lat": 45.8194894,
   "lng": 8.4047596,
-  "placeId": "ChIJy8ktN0sNhkcRPGt6sJvNRcw"
+  "placeId": "ChIJy8ktN0sNhkcRPGt6sJvNRcw",
+  "michelinId": "1210228",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Gianni Bertone",
+  "chefSource": "michelin"
 }

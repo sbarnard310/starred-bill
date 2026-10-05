@@ -22,5 +22,8 @@
   "website": "https://yannickdelpech-acte2.fr",
   "lat": 43.5931972,
   "lng": 1.4605546,
-  "placeId": "ChIJQ3FQWR29rhIR5_m3LzvoUlc"
+  "placeId": "ChIJQ3FQWR29rhIR5_m3LzvoUlc",
+  "michelinId": "1215727",
+  "chef": "Yannick Delpech",
+  "chefSource": "michelin"
 }

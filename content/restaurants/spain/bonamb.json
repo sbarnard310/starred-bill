@@ -13,5 +13,12 @@
   "website": "https://bonamb.com/",
   "lat": 38.7697082,
   "lng": 0.1481393,
-  "placeId": "ChIJERyvt38PnhIRAwcr9D1fTxA"
+  "placeId": "ChIJERyvt38PnhIRAwcr9D1fTxA",
+  "michelinId": "354160",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

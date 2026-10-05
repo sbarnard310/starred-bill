@@ -32,5 +32,10 @@
   "website": "https://robuchonmonaco.com/",
   "lat": 43.742019,
   "lng": 7.430229,
-  "placeId": "ChIJEUPMOZ7DzRIRt01YrG5yMZc"
+  "placeId": "ChIJEUPMOZ7DzRIRt01YrG5yMZc",
+  "michelinId": "1241114",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

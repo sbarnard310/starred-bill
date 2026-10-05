@@ -15,5 +15,9 @@
   "website": "https://www.homesteadcottage.com/",
   "lat": 52.990241,
   "lng": -9.404603,
-  "placeId": "ChIJB0Nyrn4HW0gRzSzCVqxIucg"
+  "placeId": "ChIJB0Nyrn4HW0gRzSzCVqxIucg",
+  "michelinId": "1209559",
+  "diets": [
+    "vegetarian"
+  ]
 }

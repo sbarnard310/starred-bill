@@ -12,5 +12,14 @@
   "website": "https://araka.com.tr/",
   "lat": 41.1171693,
   "lng": 29.0630471,
-  "placeId": "ChIJ8yRKQxPLyhQRQx-2zdPdWa0"
+  "placeId": "ChIJ8yRKQxPLyhQRQx-2zdPdWa0",
+  "michelinId": "1195473",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Zeynep Pınar Taşdemir",
+  "chefSource": "site"
 }

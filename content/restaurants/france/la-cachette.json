@@ -15,5 +15,14 @@
   "website": "https://www.lacachette-valence.fr",
   "lat": 44.9323313,
   "lng": 4.8865476,
-  "placeId": "ChIJwRvUMTNY9UcRJg_sTrlA4Ls"
+  "placeId": "ChIJwRvUMTNY9UcRJg_sTrlA4Ls",
+  "michelinId": "118773",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Masashi Ijichi",
+  "chefSource": "michelin"
 }

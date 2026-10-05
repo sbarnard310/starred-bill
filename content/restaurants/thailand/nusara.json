@@ -21,5 +21,11 @@
   "website": "https://www.nusarabkk.com",
   "lat": 13.7457026,
   "lng": 100.4915215,
-  "placeId": "ChIJe_d6d0OZ4jARL0uQgNHQRPI"
+  "placeId": "ChIJe_d6d0OZ4jARL0uQgNHQRPI",
+  "michelinId": "1192382",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thitid Tassanakajohn",
+  "chefSource": "site"
 }

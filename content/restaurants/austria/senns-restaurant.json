@@ -15,5 +15,12 @@
   "website": "https://www.senns.restaurant/de",
   "lat": 47.8361594,
   "lng": 13.063525,
-  "placeId": "ChIJoXYp0vWadkcRuYv8twSPchA"
+  "placeId": "ChIJoXYp0vWadkcRuYv8twSPchA",
+  "michelinId": "434434",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Andreas Senn and Christian Geisler",
+  "chefSource": "michelin"
 }

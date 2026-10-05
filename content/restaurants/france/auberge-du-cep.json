@@ -15,5 +15,8 @@
   "website": "https://aubergeducep.com",
   "lat": 46.1921358,
   "lng": 4.6969883,
-  "placeId": "ChIJ8f3IbPd780cRSGCNiOqm5MQ"
+  "placeId": "ChIJ8f3IbPd780cRSGCNiOqm5MQ",
+  "michelinId": "484619",
+  "chef": "Aurélien Merot",
+  "chefSource": "site"
 }

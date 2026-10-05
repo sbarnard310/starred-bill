@@ -12,5 +12,13 @@
   "website": "https://www.wakuden.jp/",
   "lat": 35.001635,
   "lng": 135.779734,
-  "placeId": "ChIJNdtJJO8IAWAROLakASqxLBM"
+  "placeId": "ChIJNdtJJO8IAWAROLakASqxLBM",
+  "michelinId": "1192957",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Shinsuke Tsuruta",
+  "chefSource": "michelin"
 }

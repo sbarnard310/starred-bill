@@ -13,5 +13,11 @@
   "website": "https://www.das-marktrestaurant.de/",
   "lat": 47.4390442,
   "lng": 11.2598384,
-  "placeId": "ChIJsZPD3agOnUcRqOy9i36atHg"
+  "placeId": "ChIJsZPD3agOnUcRqOy9i36atHg",
+  "michelinId": "304644",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andreas Hillejan",
+  "chefSource": "michelin"
 }

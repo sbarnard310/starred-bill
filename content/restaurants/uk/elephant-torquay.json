@@ -20,5 +20,12 @@
   "website": "https://www.elephantrestaurant.co.uk/",
   "lat": 50.458868,
   "lng": -3.524875,
-  "placeId": "ChIJT9uxTigQbUgR9PFD_a9gKM8"
+  "placeId": "ChIJT9uxTigQbUgR9PFD_a9gKM8",
+  "michelinId": "189401",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Simon Hulstone",
+  "chefSource": "michelin"
 }

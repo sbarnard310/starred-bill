@@ -17,5 +17,8 @@
   "website": "https://www.varietyjones.ie/",
   "lat": 53.342957,
   "lng": -6.276191,
-  "placeId": "ChIJF-JWLLwNZ0gRyLN1NTAEKT8"
+  "placeId": "ChIJF-JWLLwNZ0gRyLN1NTAEKT8",
+  "michelinId": "1183630",
+  "chef": "Keelan Higgs",
+  "chefSource": "michelin"
 }

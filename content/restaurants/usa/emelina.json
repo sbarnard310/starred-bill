@@ -13,5 +13,13 @@
   "website": "https://emelinawpb.com/",
   "lat": 26.6976528,
   "lng": -80.0551759,
-  "placeId": "ChIJz8UO9oLX2IgRkPBUtghdzkA"
+  "placeId": "ChIJz8UO9oLX2IgRkPBUtghdzkA",
+  "michelinId": "1247028",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Osmel González and Camila Salazar",
+  "chefSource": "michelin"
 }

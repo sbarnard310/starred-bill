@@ -30,5 +30,11 @@
   "website": "https://www.bulgarihotels.com/ja_JP/tokyo/dining/il-ristorante-niko-romito",
   "lat": 35.67962,
   "lng": 139.769211,
-  "placeId": "ChIJbbRmoIGLGGARy78MxhsOHB0"
+  "placeId": "ChIJbbRmoIGLGGARy78MxhsOHB0",
+  "michelinId": "1208307",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

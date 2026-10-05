@@ -15,5 +15,11 @@
   "website": "https://www.auberge-de-montfleury.fr",
   "lat": 44.5635926,
   "lng": 4.4714401,
-  "placeId": "ChIJNzeLDs8etRIRb312wR02Hns"
+  "placeId": "ChIJNzeLDs8etRIRb312wR02Hns",
+  "michelinId": "9571",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Matias Alesandrelli",
+  "chefSource": "michelin"
 }

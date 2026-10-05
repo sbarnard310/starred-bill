@@ -20,5 +20,10 @@
   "website": "https://www.thesportsmanseasalter.co.uk/",
   "lat": 51.344186,
   "lng": 0.958506,
-  "placeId": "ChIJNUQmRbMy2UcRPBwfciVLmJU"
+  "placeId": "ChIJNUQmRbMy2UcRPBwfciVLmJU",
+  "michelinId": "189581",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

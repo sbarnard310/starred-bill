@@ -21,5 +21,9 @@
   "website": "https://yongfusg.com/",
   "lat": 1.295146,
   "lng": 103.857647,
-  "placeId": "ChIJI0-nRFsZ2jERPykku9hJOMw"
+  "placeId": "ChIJI0-nRFsZ2jERPykku9hJOMw",
+  "michelinId": "1218314",
+  "diets": [
+    "vegetarian"
+  ]
 }

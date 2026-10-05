@@ -23,5 +23,12 @@
   "website": "https://www.arnsbourg.com",
   "lat": 48.9500545,
   "lng": 7.5440087,
-  "placeId": "ChIJk43l-OKElkcRRW-RZdxe4lg"
+  "placeId": "ChIJk43l-OKElkcRRW-RZdxe4lg",
+  "michelinId": "671",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Fabien Mengus",
+  "chefSource": "site"
 }

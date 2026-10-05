@@ -24,5 +24,12 @@
   "website": "https://www.gorserestaurant.co.uk/",
   "lat": 51.48613,
   "lng": -3.200061,
-  "placeId": "ChIJZw43pAkbbkgRrnvBkY6pLUI"
+  "placeId": "ChIJZw43pAkbbkgRrnvBkY6pLUI",
+  "michelinId": "1213970",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Tom Waters",
+  "chefSource": "michelin"
 }

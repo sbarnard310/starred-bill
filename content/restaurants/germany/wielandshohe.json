@@ -12,5 +12,11 @@
   "website": "https://www.wielandshoehe.de/",
   "lat": 48.7572078,
   "lng": 9.1706992,
-  "placeId": "ChIJa_eB91XbmUcRJp2g6_BYWhE"
+  "placeId": "ChIJa_eB91XbmUcRJp2g6_BYWhE",
+  "michelinId": "77962",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Vincent Klink and Jörg Neth",
+  "chefSource": "michelin"
 }

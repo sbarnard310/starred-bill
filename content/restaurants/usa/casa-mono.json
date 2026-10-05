@@ -17,5 +17,10 @@
   "website": "https://casamononyc.com/",
   "lat": 40.735895,
   "lng": -73.987342,
-  "placeId": "ChIJUd1sYJ9ZwokRRkqniQdJ144"
+  "placeId": "ChIJUd1sYJ9ZwokRRkqniQdJ144",
+  "michelinId": "68328",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

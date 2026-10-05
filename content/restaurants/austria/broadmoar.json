@@ -13,5 +13,12 @@
   "website": "https://www.broadmoar.com",
   "lat": 46.9091181,
   "lng": 15.3567653,
-  "placeId": "ChIJIzBTVCfIb0cRtMNlxlIGKl8"
+  "placeId": "ChIJIzBTVCfIb0cRtMNlxlIGKl8",
+  "michelinId": "1213594",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Patrick Faist",
+  "chefSource": "michelin"
 }

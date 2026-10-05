@@ -26,5 +26,11 @@
   "website": "https://www.imteppanyaki.com/",
   "lat": 22.2841392,
   "lng": 114.1918676,
-  "placeId": "ChIJPVpl2qoBBDQRLcKAgtOUjAU"
+  "placeId": "ChIJPVpl2qoBBDQRLcKAgtOUjAU",
+  "michelinId": "1197437",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Lawrence Mok",
+  "chefSource": "site"
 }

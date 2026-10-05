@@ -13,5 +13,13 @@
   "website": "https://www.restaurantemarcos.com",
   "lat": 43.5401186,
   "lng": -5.6601735,
-  "placeId": "ChIJkQs_fZN9Ng0RmmN0Or3kj6Y"
+  "placeId": "ChIJkQs_fZN9Ng0RmmN0Or3kj6Y",
+  "michelinId": "1204867",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Marcos Mistry",
+  "chefSource": "michelin"
 }

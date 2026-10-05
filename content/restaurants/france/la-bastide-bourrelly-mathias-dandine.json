@@ -15,5 +15,8 @@
   "website": "https://labastidebourrelly.com",
   "lat": 43.4610152,
   "lng": 5.3534389,
-  "placeId": "ChIJly8c_ILsyRIRc67iMyoVbeQ"
+  "placeId": "ChIJly8c_ILsyRIRc67iMyoVbeQ",
+  "michelinId": "1210229",
+  "chef": "Mathias Dandine and Guillaume Lemelle",
+  "chefSource": "michelin"
 }

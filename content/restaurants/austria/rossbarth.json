@@ -13,5 +13,13 @@
   "website": "https://rossbarth.at/",
   "lat": 48.3025679,
   "lng": 14.2832683,
-  "placeId": "ChIJOZ-cFYOXc0cRFqfGxf_7AK4"
+  "placeId": "ChIJOZ-cFYOXc0cRFqfGxf_7AK4",
+  "michelinId": "1212944",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Marco Barth and Sebastian Rossbach",
+  "chefSource": "michelin"
 }

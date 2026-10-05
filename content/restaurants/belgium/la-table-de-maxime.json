@@ -20,5 +20,11 @@
   "website": "https://www.maximecollard.be/",
   "lat": 49.9600036,
   "lng": 5.1224546,
-  "placeId": "ChIJS44KM-zWwUcRA44RsG9lpnM"
+  "placeId": "ChIJS44KM-zWwUcRA44RsG9lpnM",
+  "michelinId": "261923",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maxime Collard",
+  "chefSource": "site"
 }

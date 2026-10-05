@@ -28,5 +28,10 @@
   "website": "https://www.27quatre.com/sushi-yoshinaga",
   "lat": 48.8698375,
   "lng": 2.3349558,
-  "placeId": "ChIJIeDnbvVv5kcRCkaxpqe56vk"
+  "placeId": "ChIJIeDnbvVv5kcRCkaxpqe56vk",
+  "michelinId": "1209538",
+  "diets": [
+    "halal",
+    "kosher"
+  ]
 }

@@ -17,5 +17,15 @@
   "website": "https://www.haoma.dk",
   "lat": 13.7435066,
   "lng": 100.5676933,
-  "placeId": "ChIJ8c3kP_qe4jARjg8dTyubyiA"
+  "placeId": "ChIJ8c3kP_qe4jARjg8dTyubyiA",
+  "michelinId": "1200081",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Deepanker Khosla",
+  "chefSource": "michelin"
 }

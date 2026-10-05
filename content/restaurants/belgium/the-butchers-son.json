@@ -12,5 +12,11 @@
   "website": "https://www.thebutchersson.be/",
   "lat": 51.1994683,
   "lng": 4.4159792,
-  "placeId": "ChIJNz0ttRL6w0cR1lO6a9TlgH8"
+  "placeId": "ChIJNz0ttRL6w0cR1lO6a9TlgH8",
+  "michelinId": "528214",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Bert Jan Michielsen",
+  "chefSource": "michelin"
 }

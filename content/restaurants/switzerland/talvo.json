@@ -13,5 +13,8 @@
   "website": "https://www.talvo.ch/",
   "lat": 46.47851,
   "lng": 9.81179,
-  "placeId": "ChIJ31bJBwF-g0cRuJOGtdIpw-Y"
+  "placeId": "ChIJ31bJBwF-g0cRuJOGtdIpw-Y",
+  "michelinId": "1216995",
+  "chef": "Kevin Fernandez",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,10 @@
   "website": "https://www.archibalddeprince.lu",
   "lat": 49.7974245,
   "lng": 6.3881829,
-  "placeId": "ChIJx110PI1flUcRvvMfvY9kc70"
+  "placeId": "ChIJx110PI1flUcRvvMfvY9kc70",
+  "michelinId": "1217044",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

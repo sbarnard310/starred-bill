@@ -12,5 +12,12 @@
   "website": "https://belugalovesyou.com/",
   "lat": 50.8462005,
   "lng": 5.6990715,
-  "placeId": "ChIJfeXZx73pwEcRysmFc58mnOI"
+  "placeId": "ChIJfeXZx73pwEcRysmFc58mnOI",
+  "michelinId": "212779",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

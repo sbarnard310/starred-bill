@@ -17,5 +17,12 @@
   "website": "https://www.aubergedesglazick.com",
   "lat": 48.1805696,
   "lng": -4.2345193,
-  "placeId": "ChIJVSnLvnTNFkgRg7j5AokIWVg"
+  "placeId": "ChIJVSnLvnTNFkgRg7j5AokIWVg",
+  "michelinId": "6993",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Olivier Bellin",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,14 @@
   "website": "https://sankai.com.tr/",
   "lat": 41.0779114,
   "lng": 29.0441298,
-  "placeId": "ChIJP5ueOS23yhQRpSLxX8OiVgk"
+  "placeId": "ChIJP5ueOS23yhQRpSLxX8OiVgk",
+  "michelinId": "1209151",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Yoshizumi Nagaya",
+  "chefSource": "michelin"
 }

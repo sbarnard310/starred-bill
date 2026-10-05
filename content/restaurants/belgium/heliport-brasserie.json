@@ -12,5 +12,12 @@
   "website": "https://www.heliportbrasserie.be/-rubrique3-.html",
   "lat": 50.5789946,
   "lng": 5.5961592,
-  "placeId": "ChIJWZv9Z5j3wEcRVAc7p_mzONc"
+  "placeId": "ChIJWZv9Z5j3wEcRVAc7p_mzONc",
+  "michelinId": "404066",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

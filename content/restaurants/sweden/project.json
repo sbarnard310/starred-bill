@@ -12,5 +12,11 @@
   "website": "https://www.projectgbg.com/",
   "lat": 57.6979745,
   "lng": 11.9825147,
-  "placeId": "ChIJyQ4a73bzT0YRTeSmWq6ijeA"
+  "placeId": "ChIJyQ4a73bzT0YRTeSmWq6ijeA",
+  "michelinId": "523342",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Cameron Irving",
+  "chefSource": "michelin"
 }

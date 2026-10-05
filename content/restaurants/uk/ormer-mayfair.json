@@ -21,5 +21,11 @@
   "website": "https://www.flemings-mayfair.co.uk/fine-dining-london/ormer-mayfair-restaurant",
   "lat": 51.5065597,
   "lng": -0.1453868,
-  "placeId": "ChIJQxoh3SgFdkgRqFi4kGLn29c"
+  "placeId": "ChIJQxoh3SgFdkgRqFi4kGLn29c",
+  "michelinId": "503229",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

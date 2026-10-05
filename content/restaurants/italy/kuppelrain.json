@@ -13,5 +13,10 @@
   "website": "https://www.kuppelrain.com/it/ristorante",
   "lat": 46.6264329,
   "lng": 10.8975683,
-  "placeId": "ChIJ34GhxmLCgkcRYYswNt5UhQM"
+  "placeId": "ChIJ34GhxmLCgkcRYYswNt5UhQM",
+  "michelinId": "129608",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

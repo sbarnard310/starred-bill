@@ -13,5 +13,13 @@
   "website": "https://odurla.com",
   "lat": 38.3446199,
   "lng": 26.7616803,
-  "placeId": "ChIJiRZa7tiTuxQRfU1XBTgWeZk"
+  "placeId": "ChIJiRZa7tiTuxQRfU1XBTgWeZk",
+  "michelinId": "1208004",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Osman Sezener",
+  "chefSource": "michelin"
 }

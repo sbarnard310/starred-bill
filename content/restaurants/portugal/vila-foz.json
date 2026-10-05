@@ -15,5 +15,12 @@
   "website": "https://www.vilafozhotel.pt/restaurant-vila-foz-reservas",
   "lat": 41.1614535,
   "lng": -8.6846149,
-  "placeId": "ChIJo73XAA1vJA0Ren6trqlHRIk"
+  "placeId": "ChIJo73XAA1vJA0Ren6trqlHRIk",
+  "michelinId": "1190608",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Arnaldo Azevedo",
+  "chefSource": "michelin"
 }

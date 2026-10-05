@@ -12,5 +12,15 @@
   "website": "https://www.restaurant-horvath.de/",
   "lat": 52.4963922,
   "lng": 13.420793,
-  "placeId": "ChIJ74LRF8tPqEcRNeBJAS2qxaQ"
+  "placeId": "ChIJ74LRF8tPqEcRNeBJAS2qxaQ",
+  "michelinId": "86151",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Sebastian Frank",
+  "chefSource": "michelin"
 }

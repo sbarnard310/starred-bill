@@ -20,5 +20,10 @@
   "website": "https://www.umurestaurant.com/",
   "lat": 51.5113444,
   "lng": -0.1444006,
-  "placeId": "ChIJ9cBDsSsFdkgR79Fc_1y6_cI"
+  "placeId": "ChIJ9cBDsSsFdkgR79Fc_1y6_cI",
+  "michelinId": "69405",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

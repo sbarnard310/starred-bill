@@ -17,5 +17,11 @@
   "website": "https://lejardinier-miami.com/",
   "lat": 25.814363,
   "lng": -80.19222,
-  "placeId": "ChIJq6q6Rlex2YgRLVY5meAunEM"
+  "placeId": "ChIJq6q6Rlex2YgRLVY5meAunEM",
+  "michelinId": "1197316",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alain Verzeroli",
+  "chefSource": "michelin"
 }

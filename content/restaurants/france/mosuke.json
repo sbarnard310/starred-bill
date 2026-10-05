@@ -25,5 +25,15 @@
   "website": "https://www.mosuke-restaurant.com/",
   "lat": 48.8364014,
   "lng": 2.3225579,
-  "placeId": "ChIJZf2wJx9x5kcRTD2DAPk3rP0"
+  "placeId": "ChIJZf2wJx9x5kcRTD2DAPk3rP0",
+  "michelinId": "1193371",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Mory Sacko",
+  "chefSource": "site"
 }

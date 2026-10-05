@@ -17,5 +17,8 @@
   "website": "https://stubbornseed.com/",
   "lat": 25.770023,
   "lng": -80.135047,
-  "placeId": "ChIJkwRTevG02YgRQqy7_cHUWGQ"
+  "placeId": "ChIJkwRTevG02YgRQqy7_cHUWGQ",
+  "michelinId": "1194423",
+  "chef": "Jeremy Ford",
+  "chefSource": "michelin"
 }

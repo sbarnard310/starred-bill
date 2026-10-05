@@ -18,5 +18,11 @@
   "website": "https://www.couventdesminimes-hotelspa.com/",
   "lat": 43.9395915,
   "lng": 5.7723757,
-  "placeId": "ChIJ9Tum8HLLyxIRIPxBR_PVQE0"
+  "placeId": "ChIJ9Tum8HLLyxIRIPxBR_PVQE0",
+  "michelinId": "232620",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

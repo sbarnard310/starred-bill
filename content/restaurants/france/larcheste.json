@@ -25,5 +25,8 @@
   "website": "https://www.archeste.fr/",
   "lat": 48.8617268,
   "lng": 2.2782052,
-  "placeId": "ChIJKQ4LW_9v5kcRCw8nEuxkyOw"
+  "placeId": "ChIJKQ4LW_9v5kcRCw8nEuxkyOw",
+  "michelinId": "515892",
+  "chef": "Yoshiaki Ito",
+  "chefSource": "site"
 }

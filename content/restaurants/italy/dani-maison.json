@@ -15,5 +15,14 @@
   "website": "https://danimaison.it",
   "lat": 40.7302578,
   "lng": 13.9487527,
-  "placeId": "ChIJrxdcgeVqOxMR9D5e-zLM7Vo"
+  "placeId": "ChIJrxdcgeVqOxMR9D5e-zLM7Vo",
+  "michelinId": "503771",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Nino Di Costanzo",
+  "chefSource": "michelin"
 }

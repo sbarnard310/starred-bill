@@ -21,5 +21,12 @@
   "website": "https://www.restaurantsuhring.com",
   "lat": 13.7108084,
   "lng": 100.5457264,
-  "placeId": "ChIJa4FyWkef4jARYosTC995W8U"
+  "placeId": "ChIJa4FyWkef4jARYosTC995W8U",
+  "michelinId": "547021",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Mathias Sühring and Thomas Sühring",
+  "chefSource": "michelin"
 }

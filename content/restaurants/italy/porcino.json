@@ -15,5 +15,12 @@
   "website": "https://www.badiahill.com/it/ristorante-porcino/",
   "lat": 46.6075518,
   "lng": 11.8938127,
-  "placeId": "ChIJyTJYdtI9eEcRMh_-8G58Jsg"
+  "placeId": "ChIJyTJYdtI9eEcRMh_-8G58Jsg",
+  "michelinId": "1204324",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Marco Verginer",
+  "chefSource": "michelin"
 }

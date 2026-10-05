@@ -16,5 +16,11 @@
   "website": "https://www.sartory-augsburg.de/",
   "lat": 48.3651683,
   "lng": 10.8985227,
-  "placeId": "ChIJ__8vYlS9nkcR7UmHIyDPQTk"
+  "placeId": "ChIJ__8vYlS9nkcR7UmHIyDPQTk",
+  "michelinId": "79403",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Simon Lang",
+  "chefSource": "michelin"
 }

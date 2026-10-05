@@ -20,5 +20,10 @@
   "website": "https://www.acquapazza.com/",
   "lat": 40.895071,
   "lng": 12.967202,
-  "placeId": "ChIJqwdOjOzyJBMRCMd33NixVgo"
+  "placeId": "ChIJqwdOjOzyJBMRCMd33NixVgo",
+  "michelinId": "1192022",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

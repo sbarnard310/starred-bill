@@ -15,5 +15,13 @@
   "website": "https://www.ligallirestaurant.it/it/",
   "lat": 40.6283391,
   "lng": 14.4841948,
-  "placeId": "ChIJd-Fwn2iXOxMR6Tr5OpqMvSg"
+  "placeId": "ChIJd-Fwn2iXOxMR6Tr5OpqMvSg",
+  "michelinId": "197918",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Savio Perna",
+  "chefSource": "michelin"
 }

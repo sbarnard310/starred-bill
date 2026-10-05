@@ -16,5 +16,11 @@
   "website": "https://bordeaux.intercontinental.com/le-pressoir-dargent-gordon-ramsay/",
   "lat": 44.8424463,
   "lng": -0.5747973,
-  "placeId": "ChIJz9rRRNonVQ0RklBlQyf60Vk"
+  "placeId": "ChIJz9rRRNonVQ0RklBlQyf60Vk",
+  "michelinId": "232797",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alexandre Koa",
+  "chefSource": "michelin"
 }

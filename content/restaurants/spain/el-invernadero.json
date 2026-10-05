@@ -28,5 +28,15 @@
   "website": "https://elinvernaderorestaurante.com/",
   "lat": 40.444525,
   "lng": -3.698895,
-  "placeId": "ChIJF2e3OHopQg0RM2CPwRwgE2Y"
+  "placeId": "ChIJF2e3OHopQg0RM2CPwRwgE2Y",
+  "michelinId": "562125",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Rodrigo De la Calle",
+  "chefSource": "michelin"
 }

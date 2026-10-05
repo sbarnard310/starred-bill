@@ -13,5 +13,12 @@
   "website": "https://www.locandadelpilone.com/",
   "lat": 44.6636848,
   "lng": 8.0470513,
-  "placeId": "ChIJvd0i1mW00hIRbiJA_zy0Vwk"
+  "placeId": "ChIJvd0i1mW00hIRbiJA_zy0Vwk",
+  "michelinId": "124136",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Federico Gallo",
+  "chefSource": "site"
 }

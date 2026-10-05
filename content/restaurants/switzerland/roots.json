@@ -12,5 +12,14 @@
   "website": "https://roots-basel.ch/",
   "lat": 47.55043,
   "lng": 7.581,
-  "placeId": "ChIJ_RpcgKC5kUcRJeac8Vfo-NQ"
+  "placeId": "ChIJ_RpcgKC5kUcRJeac8Vfo-NQ",
+  "michelinId": "568552",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Pascal Steffen",
+  "chefSource": "michelin"
 }

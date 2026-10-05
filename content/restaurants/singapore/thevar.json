@@ -25,5 +25,12 @@
   "website": "https://thevar.sg/",
   "lat": 1.29362,
   "lng": 103.841477,
-  "placeId": "ChIJT19LkL4Z2jERuLB_g4cX3mI"
+  "placeId": "ChIJT19LkL4Z2jERuLB_g4cX3mI",
+  "michelinId": "570545",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ],
+  "chef": "Mano Thevar",
+  "chefSource": "michelin"
 }

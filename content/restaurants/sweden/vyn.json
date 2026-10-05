@@ -13,5 +13,8 @@
   "website": "https://www.vynrestaurant.se",
   "lat": 55.4962176,
   "lng": 14.3130043,
-  "placeId": "ChIJLbEtuLtvVEYRhbjWJlyxJlI"
+  "placeId": "ChIJLbEtuLtvVEYRhbjWJlyxJlI",
+  "michelinId": "1212325",
+  "chef": "Daniel Berlin",
+  "chefSource": "michelin"
 }

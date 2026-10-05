@@ -15,5 +15,13 @@
   "website": "https://www.restaurantlescedres.fr",
   "lat": 45.0502101,
   "lng": 4.9838433,
-  "placeId": "ChIJtaxm-BdO9UcRI9mNLxb4Ls8"
+  "placeId": "ChIJtaxm-BdO9UcRI9mNLxb4Ls8",
+  "michelinId": "7498",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jacques Bertrand",
+  "chefSource": "michelin"
 }

@@ -33,5 +33,11 @@
   "website": "https://emimadrid.com/",
   "lat": 40.438794,
   "lng": -3.715167,
-  "placeId": "ChIJ-XWGCQApQg0RudGlyNawyMY"
+  "placeId": "ChIJ-XWGCQApQg0RudGlyNawyMY",
+  "michelinId": "1243679",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Rubén Hernández Mosquero",
+  "chefSource": "michelin"
 }

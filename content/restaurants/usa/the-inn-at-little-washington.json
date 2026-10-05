@@ -15,5 +15,13 @@
   "website": "https://www.theinnatlittlewashington.com/",
   "lat": 38.7134767,
   "lng": -78.1595348,
-  "placeId": "ChIJ9ydRxCsztIkROPnyuZc6Dbw"
+  "placeId": "ChIJ9ydRxCsztIkROPnyuZc6Dbw",
+  "michelinId": "507098",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Patrick O’Connell",
+  "chefSource": "michelin"
 }

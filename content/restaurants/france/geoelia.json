@@ -25,5 +25,12 @@
   "website": "https://geoelia.com/",
   "lat": 48.8632822,
   "lng": 2.2744526,
-  "placeId": "ChIJI15J0wVl5kcRJ15AKiwqxfM"
+  "placeId": "ChIJI15J0wVl5kcRJ15AKiwqxfM",
+  "michelinId": "1242537",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Camille Saint-M'Leux",
+  "chefSource": "michelin"
 }

@@ -27,5 +27,13 @@
   "website": "https://www.auffo-restaurant.com/",
   "lat": 43.2857857,
   "lng": 5.3500335,
-  "placeId": "ChIJw1ANKWXByRIRv6c1--sMXas"
+  "placeId": "ChIJw1ANKWXByRIRv6c1--sMXas",
+  "michelinId": "1241875",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Coline Faulquier",
+  "chefSource": "michelin"
 }

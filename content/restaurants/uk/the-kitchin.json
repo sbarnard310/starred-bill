@@ -20,5 +20,14 @@
   "website": "https://thekitchin.com/",
   "lat": 55.977065,
   "lng": -3.172585,
-  "placeId": "ChIJLy3eIwS4h0gRe4oubEitnNQ"
+  "placeId": "ChIJLy3eIwS4h0gRe4oubEitnNQ",
+  "michelinId": "173506",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Tom Kitchin",
+  "chefSource": "site"
 }

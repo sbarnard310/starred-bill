@@ -8,5 +8,9 @@
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
   "lat": 30.21818,
-  "lng": 120.12294
+  "lng": 120.12294,
+  "michelinId": "1199474",
+  "diets": [
+    "vegetarian"
+  ]
 }

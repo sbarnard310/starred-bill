@@ -13,5 +13,12 @@
   "website": "https://www.casamarcial.com",
   "lat": 43.4184082,
   "lng": -5.1931556,
-  "placeId": "ChIJefNOj6QZNg0RLQfBY8NJwn4"
+  "placeId": "ChIJefNOj6QZNg0RLQfBY8NJwn4",
+  "michelinId": "217702",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Nacho Manzano Sánchez/ Esther Manzano",
+  "chefSource": "michelin"
 }

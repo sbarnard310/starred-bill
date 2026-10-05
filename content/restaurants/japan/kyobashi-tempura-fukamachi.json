@@ -29,5 +29,9 @@
   "lunchSource": "https://omakaseje.com/restaurants/si733726",
   "lat": 35.67649,
   "lng": 139.77049,
-  "placeId": "ChIJrXFD_uKLGGARseFHs8I_T38"
+  "placeId": "ChIJrXFD_uKLGGARseFHs8I_T38",
+  "michelinId": "1193917",
+  "diets": [
+    "vegetarian"
+  ]
 }

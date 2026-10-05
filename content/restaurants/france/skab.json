@@ -23,5 +23,8 @@
   "website": "https://www.restaurant-skab.fr/",
   "lat": 43.833187,
   "lng": 4.35921,
-  "placeId": "ChIJUd_qiwgttBIR8f2sCkqJxlE"
+  "placeId": "ChIJUd_qiwgttBIR8f2sCkqJxlE",
+  "michelinId": "372696",
+  "chef": "Damien Sanchez",
+  "chefSource": "michelin"
 }

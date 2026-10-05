@@ -25,5 +25,11 @@
   "website": "https://www.duecolombe.com/",
   "lat": 45.62138,
   "lng": 10.018,
-  "placeId": "ChIJg6AnqIR2gUcRWzSN2M-AIjY"
+  "placeId": "ChIJg6AnqIR2gUcRWzSN2M-AIjY",
+  "michelinId": "150043",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

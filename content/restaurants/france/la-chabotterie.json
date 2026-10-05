@@ -15,5 +15,12 @@
   "website": "https://lachabotterie.com",
   "lat": 46.879939,
   "lng": -1.4064951,
-  "placeId": "ChIJSY5mAcbTBUgR_JXDpD0hiCg"
+  "placeId": "ChIJSY5mAcbTBUgR_JXDpD0hiCg",
+  "michelinId": "1197312",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Benjamin Patissier",
+  "chefSource": "michelin"
 }

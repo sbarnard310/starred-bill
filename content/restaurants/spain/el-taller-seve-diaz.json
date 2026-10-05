@@ -14,5 +14,11 @@
   "website": "https://www.eltallersevediaz.com",
   "lat": 28.416585,
   "lng": -16.5531212,
-  "placeId": "ChIJuYbpmpR_agwRMnXIHCVYkHc"
+  "placeId": "ChIJuYbpmpR_agwRMnXIHCVYkHc",
+  "michelinId": "533564",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Seve Díaz",
+  "chefSource": "michelin"
 }

@@ -22,5 +22,13 @@
   "website": "https://www.bastible.com/",
   "lat": 53.332145,
   "lng": -6.27491,
-  "placeId": "ChIJvTns8RgMZ0gRqZyo1qSy_FQ"
+  "placeId": "ChIJvTns8RgMZ0gRqZyo1qSy_FQ",
+  "michelinId": "491371",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Killian Walsh",
+  "chefSource": "site"
 }

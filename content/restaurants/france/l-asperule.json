@@ -13,5 +13,8 @@
   "website": "https://restaurant-asperule.fr/",
   "lat": 47.3248221,
   "lng": 5.044981,
-  "placeId": "ChIJZ54w2n2d8kcR1I4Kmk8Yttc"
+  "placeId": "ChIJZ54w2n2d8kcR1I4Kmk8Yttc",
+  "michelinId": "1024389",
+  "chef": "Keigo Kimura",
+  "chefSource": "michelin"
 }

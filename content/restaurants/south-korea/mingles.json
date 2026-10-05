@@ -25,5 +25,12 @@
   "website": "https://www.restaurant-mingles.com/",
   "lat": 37.52535,
   "lng": 127.04426,
-  "placeId": "ChIJjXuM24mjfDURSwmouRnxNlM"
+  "placeId": "ChIJjXuM24mjfDURSwmouRnxNlM",
+  "michelinId": "511985",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Mingoo Kang",
+  "chefSource": "michelin"
 }

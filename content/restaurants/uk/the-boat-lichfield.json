@@ -24,5 +24,12 @@
   "website": "https://theboat.restaurant/",
   "lat": 52.651783,
   "lng": -1.889214,
-  "placeId": "ChIJrRL19SyncEgR6_6e7-TqPOc"
+  "placeId": "ChIJrRL19SyncEgR6_6e7-TqPOc",
+  "michelinId": "256499",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Liam Dillon",
+  "chefSource": "michelin"
 }

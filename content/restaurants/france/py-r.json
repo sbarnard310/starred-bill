@@ -13,5 +13,10 @@
   "website": "https://www.py-r.com/",
   "lat": 43.599313,
   "lng": 1.4408583,
-  "placeId": "ChIJ0UcJQ327rhIRCbI2BX68yQM"
+  "placeId": "ChIJ0UcJQ327rhIRCbI2BX68yQM",
+  "michelinId": "401633",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

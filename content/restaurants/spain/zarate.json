@@ -26,5 +26,8 @@
   "website": "https://zarate.restaurant/",
   "lat": 43.258953,
   "lng": -2.937087,
-  "placeId": "ChIJw0URXy9QTg0RSRH7KYSpJgE"
+  "placeId": "ChIJw0URXy9QTg0RSRH7KYSpJgE",
+  "michelinId": "423514",
+  "chef": "Sergio Ortiz de Zarate",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,11 @@
   "website": "https://www.gerberwyss.ch/",
   "lat": 46.7784323,
   "lng": 6.6402494,
-  "placeId": "ChIJyY5bo7zPjUcR2Yk4gSvAqVg"
+  "placeId": "ChIJyY5bo7zPjUcR2Yk4gSvAqVg",
+  "michelinId": "1195873",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

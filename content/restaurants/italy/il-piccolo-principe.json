@@ -20,5 +20,14 @@
   "website": "https://www.principedipiemonte.com/it/ristorazione/ristorante-il-piccolo-principe.html",
   "lat": 43.880976,
   "lng": 10.235587,
-  "placeId": "ChIJQ7S_F5Wh1RIRLqip6sWThbM"
+  "placeId": "ChIJQ7S_F5Wh1RIRLqip6sWThbM",
+  "michelinId": "164495",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Giuseppe Mancino",
+  "chefSource": "michelin"
 }

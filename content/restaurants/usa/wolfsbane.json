@@ -21,5 +21,11 @@
   "website": "https://wolfsbanesf.com/",
   "lat": 37.758023,
   "lng": -122.388137,
-  "placeId": "ChIJk-mYOAB_j4ARdDPkxEHNfTA"
+  "placeId": "ChIJk-mYOAB_j4ARdDPkxEHNfTA",
+  "michelinId": "1247593",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Rupert Blease",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,12 @@
   "website": "https://tim-raue.com/",
   "lat": 52.5070342,
   "lng": 13.3933841,
-  "placeId": "ChIJpdyYVNFRqEcRFTrYsDXDrY4"
+  "placeId": "ChIJpdyYVNFRqEcRFTrYsDXDrY4",
+  "michelinId": "277978",
+  "diets": [
+    "vegetarian-menu",
+    "vegan"
+  ],
+  "chef": "Tim Raue",
+  "chefSource": "michelin"
 }

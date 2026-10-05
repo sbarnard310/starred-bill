@@ -21,5 +21,12 @@
   "website": "https://resto-nuance.be/",
   "lat": 51.0957136,
   "lng": 4.505835,
-  "placeId": "ChIJISt2ZCz7w0cRvZj4g3X2IBU"
+  "placeId": "ChIJISt2ZCz7w0cRvZj4g3X2IBU",
+  "michelinId": "231216",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Thierry Theys",
+  "chefSource": "site"
 }

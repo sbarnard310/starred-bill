@@ -16,5 +16,8 @@
   "website": "https://www.seepark.ch/de/themen/restaurants/centric-dining",
   "lat": 46.744993,
   "lng": 7.6343099,
-  "placeId": "ChIJqSzvMrezj0cRWj2CKYFc8ng"
+  "placeId": "ChIJqSzvMrezj0cRWj2CKYFc8ng",
+  "michelinId": "184726",
+  "chef": "Sascha Spring",
+  "chefSource": "michelin"
 }

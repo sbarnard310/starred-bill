@@ -12,5 +12,8 @@
   "sourceType": "none",
   "lat": 35.163577,
   "lng": 129.161301,
-  "placeId": "ChIJxYhym0KNaDURznUJelakfU0"
+  "placeId": "ChIJxYhym0KNaDURznUJelakfU0",
+  "michelinId": "1208705",
+  "chef": "Kim Wan-gyu",
+  "chefSource": "michelin"
 }

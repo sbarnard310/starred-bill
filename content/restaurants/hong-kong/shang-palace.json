@@ -21,5 +21,9 @@
   "website": "https://www.shangri-la.com/hongkong/kowloonshangrila/dining/restaurants/shang-palace/",
   "lat": 22.297325,
   "lng": 114.177155,
-  "placeId": "ChIJ1d481O8ABDQRl8zusW3EjMs"
+  "placeId": "ChIJ1d481O8ABDQRl8zusW3EjMs",
+  "michelinId": "230829",
+  "diets": [
+    "vegetarian"
+  ]
 }

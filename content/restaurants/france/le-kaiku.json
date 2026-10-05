@@ -15,5 +15,11 @@
   "website": "https://www.kaiku.fr/",
   "lat": 43.3887002,
   "lng": -1.6644341,
-  "placeId": "ChIJhxwC3fARUQ0RX3s5yjiwq8g"
+  "placeId": "ChIJhxwC3fARUQ0RX3s5yjiwq8g",
+  "michelinId": "7939",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nicolas Borombo",
+  "chefSource": "michelin"
 }

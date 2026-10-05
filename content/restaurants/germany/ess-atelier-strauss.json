@@ -13,5 +13,9 @@
   "website": "https://www.loewen-strauss.de/",
   "lat": 47.4085094,
   "lng": 10.2783328,
-  "placeId": "ChIJq2ejALGbnEcRbdYl9fv-Y3k"
+  "placeId": "ChIJq2ejALGbnEcRbdYl9fv-Y3k",
+  "michelinId": "339721",
+  "diets": [
+    "vegetarian"
+  ]
 }

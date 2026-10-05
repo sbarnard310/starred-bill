@@ -9,5 +9,8 @@
   "sourceType": "none",
   "website": "https://www.restaurantblackswan.com",
   "lat": 40.0419149,
-  "lng": 116.5682626
+  "lng": 116.5682626,
+  "michelinId": "1215416",
+  "chef": "Vianney Massot",
+  "chefSource": "michelin"
 }

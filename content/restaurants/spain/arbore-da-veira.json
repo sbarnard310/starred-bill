@@ -13,5 +13,13 @@
   "website": "https://arboredaveira.com/",
   "lat": 43.377457,
   "lng": -8.433224,
-  "placeId": "ChIJkfgOsn18Lg0RrLF-5XbaPWs"
+  "placeId": "ChIJkfgOsn18Lg0RrLF-5XbaPWs",
+  "michelinId": "564363",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Luis Veira",
+  "chefSource": "michelin"
 }

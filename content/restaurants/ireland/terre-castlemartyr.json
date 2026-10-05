@@ -18,5 +18,8 @@
   "website": "https://terre.ie/",
   "lat": 51.911752,
   "lng": -8.059658,
-  "placeId": "ChIJj58j6sV7Q0gRMSlUfxS_a9k"
+  "placeId": "ChIJj58j6sV7Q0gRMSlUfxS_a9k",
+  "michelinId": "1203607",
+  "chef": "Lewis Barker",
+  "chefSource": "site"
 }

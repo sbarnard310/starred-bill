@@ -13,5 +13,9 @@
   "website": "https://www.wiesen-restaurant.nl/",
   "lat": 51.4378387,
   "lng": 5.4753117,
-  "placeId": "ChIJx95V8gTZxkcR9NavRDXeM1o"
+  "placeId": "ChIJx95V8gTZxkcR9NavRDXeM1o",
+  "michelinId": "326580",
+  "diets": [
+    "vegetarian"
+  ]
 }

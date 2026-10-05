@@ -12,5 +12,15 @@
   "website": "https://www.belmond.com/dining/europe/italy/venice/oro/",
   "lat": 45.4271,
   "lng": 12.3412,
-  "placeId": "ChIJ0U-xZiqufkcR7NP7JREjP1E"
+  "placeId": "ChIJ0U-xZiqufkcR7NP7JREjP1E",
+  "michelinId": "164430",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Vania Ghedini",
+  "chefSource": "michelin"
 }

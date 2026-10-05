@@ -12,5 +12,13 @@
   "website": "https://www.restaurantsavage.no/",
   "lat": 59.9093941,
   "lng": 10.7401093,
-  "placeId": "ChIJoYdyGlVvQUYRQiTpfSvhOQs"
+  "placeId": "ChIJoYdyGlVvQUYRQiTpfSvhOQs",
+  "michelinId": "1205580",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Andrea Selvaggini",
+  "chefSource": "site"
 }

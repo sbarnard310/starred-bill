@@ -27,5 +27,13 @@
   "website": "https://www.mora.com.hk/",
   "lat": 22.2850528,
   "lng": 114.1494147,
-  "placeId": "ChIJm92xTUQBBDQRVKRQ4gLPFKU"
+  "placeId": "ChIJm92xTUQBBDQRVKRQ4gLPFKU",
+  "michelinId": "1200897",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Vicky Lau - 劉韻棋",
+  "chefSource": "michelin"
 }

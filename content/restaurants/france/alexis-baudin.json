@@ -27,5 +27,12 @@
   "website": "https://alexisbaudin.fr",
   "lat": 49.4091468,
   "lng": 6.307997,
-  "placeId": "ChIJZygggLM9lUcRDWKCaFMZeqk"
+  "placeId": "ChIJZygggLM9lUcRDWKCaFMZeqk",
+  "michelinId": "1241420",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Alexis Baudin",
+  "chefSource": "site"
 }

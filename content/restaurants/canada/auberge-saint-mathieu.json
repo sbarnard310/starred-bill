@@ -19,5 +19,14 @@
   "website": "https://auberge-st-mathieu-du-lac.com/",
   "lat": 46.5776905,
   "lng": -72.9280284,
-  "placeId": "ChIJz-HZ7kBExkwR1gsznbGzL6s"
+  "placeId": "ChIJz-HZ7kBExkwR1gsznbGzL6s",
+  "michelinId": "1215923",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Samy Benabed",
+  "chefSource": "michelin"
 }

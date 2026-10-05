@@ -12,5 +12,11 @@
   "website": "https://www.attablezvous.be/",
   "lat": 50.444706,
   "lng": 4.8540444,
-  "placeId": "ChIJ54D-NYWZwUcReU-sygrne3w"
+  "placeId": "ChIJ54D-NYWZwUcReU-sygrne3w",
+  "michelinId": "437442",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Charles-Edouard Jeandrain",
+  "chefSource": "michelin"
 }

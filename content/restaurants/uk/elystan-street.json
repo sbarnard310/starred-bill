@@ -20,5 +20,13 @@
   "website": "https://www.elystanstreet.com/",
   "lat": 51.4915449,
   "lng": -0.1675485,
-  "placeId": "ChIJyYH9U2oFdkgRCr9oJuLmHiA"
+  "placeId": "ChIJyYH9U2oFdkgRCr9oJuLmHiA",
+  "michelinId": "504069",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Philip Howard",
+  "chefSource": "michelin"
 }

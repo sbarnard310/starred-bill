@@ -17,5 +17,11 @@
   "website": "https://www.prurestaurant.com",
   "lat": 8.0384939,
   "lng": 98.2765202,
-  "placeId": "ChIJEzq5U284UDARMU-I3GW73kY"
+  "placeId": "ChIJEzq5U284UDARMU-I3GW73kY",
+  "michelinId": "565723",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jimmy Ophorst",
+  "chefSource": "michelin"
 }

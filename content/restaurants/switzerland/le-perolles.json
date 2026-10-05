@@ -12,5 +12,13 @@
   "website": "https://www.leperolles.ch/",
   "lat": 46.8018337,
   "lng": 7.1515315,
-  "placeId": "ChIJ9fgU1J9pjkcRk-uxoN74XK0"
+  "placeId": "ChIJ9fgU1J9pjkcRk-uxoN74XK0",
+  "michelinId": "1154587",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Victor Moriez",
+  "chefSource": "michelin"
 }

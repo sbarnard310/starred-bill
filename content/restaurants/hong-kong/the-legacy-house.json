@@ -26,5 +26,10 @@
   "website": "https://www.rosewoodhotels.com/en/hong-kong/dining/the-legacy-house",
   "lat": 22.2950422,
   "lng": 114.1757655,
-  "placeId": "ChIJFUR_Nq4BBDQR8Hu2IZ173wk"
+  "placeId": "ChIJFUR_Nq4BBDQR8Hu2IZ173wk",
+  "michelinId": "1184545",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

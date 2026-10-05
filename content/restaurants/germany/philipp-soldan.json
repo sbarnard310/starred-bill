@@ -15,5 +15,11 @@
   "website": "https://sonne-frankenberg.de/philipp-soldan/",
   "lat": 51.0592147,
   "lng": 8.8017264,
-  "placeId": "ChIJZ_wFawCBu0cREixvSX35f2U"
+  "placeId": "ChIJZ_wFawCBu0cREixvSX35f2U",
+  "michelinId": "80723",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Erik Arnecke",
+  "chefSource": "michelin"
 }

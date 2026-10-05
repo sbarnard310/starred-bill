@@ -25,5 +25,15 @@
   "website": "https://www.mugaritz.com/",
   "lat": 43.272221,
   "lng": -1.917305,
-  "placeId": "ChIJrbLj_tauUQ0RpCer8fGceF8"
+  "placeId": "ChIJrbLj_tauUQ0RpCer8fGceF8",
+  "michelinId": "219990",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Andoni Luis Aduriz",
+  "chefSource": "michelin"
 }

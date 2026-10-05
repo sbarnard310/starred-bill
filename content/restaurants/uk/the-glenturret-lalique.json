@@ -15,5 +15,13 @@
   "website": "https://www.theglenturretrestaurant.com/",
   "lat": 56.389026,
   "lng": -3.852716,
-  "placeId": "ChIJ7UavnTybiEgRcEthDk2Kfvs"
+  "placeId": "ChIJ7UavnTybiEgRcEthDk2Kfvs",
+  "michelinId": "1195729",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Mark Donald",
+  "chefSource": "michelin"
 }

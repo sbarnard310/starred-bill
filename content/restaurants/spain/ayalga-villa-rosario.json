@@ -13,5 +13,8 @@
   "website": "https://www.ayalgavillarosario.com",
   "lat": 43.4651241,
   "lng": -5.067508,
-  "placeId": "ChIJEaqeUFUdNg0RjbGlUNGygdM"
+  "placeId": "ChIJEaqeUFUdNg0RjbGlUNGygdM",
+  "michelinId": "1189510",
+  "chef": "Israel Moreno",
+  "chefSource": "michelin"
 }

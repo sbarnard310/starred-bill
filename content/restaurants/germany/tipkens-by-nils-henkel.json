@@ -13,5 +13,12 @@
   "website": "https://www.severins-sylt.de/",
   "lat": 54.8907917,
   "lng": 8.3780691,
-  "placeId": "ChIJGRSJ8KzdtEcRqQ3Ny4vfrGw"
+  "placeId": "ChIJGRSJ8KzdtEcRqQ3Ny4vfrGw",
+  "michelinId": "473264",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "René Verse",
+  "chefSource": "michelin"
 }

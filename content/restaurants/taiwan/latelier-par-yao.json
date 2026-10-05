@@ -25,5 +25,11 @@
   "website": "https://www.twlatelier.com/",
   "lat": 24.1528622,
   "lng": 120.7051419,
-  "placeId": "ChIJMVxaewM9aTQRYMBGjlOwKBE"
+  "placeId": "ChIJMVxaewM9aTQRYMBGjlOwKBE",
+  "michelinId": "1199426",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Yao Chiang",
+  "chefSource": "site"
 }

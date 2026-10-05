@@ -15,5 +15,10 @@
   "website": "https://www.ristorantelacaravella.it/",
   "lat": 40.6338537,
   "lng": 14.6016228,
-  "placeId": "ChIJfxPP562VOxMRQs2xFFccBuI"
+  "placeId": "ChIJfxPP562VOxMRQs2xFFccBuI",
+  "michelinId": "124596",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

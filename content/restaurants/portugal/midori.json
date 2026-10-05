@@ -13,5 +13,11 @@
   "website": "https://www.midoripenhalonga.com/en/",
   "lat": 38.7616883,
   "lng": -9.3962995,
-  "placeId": "ChIJj0CNyXLFHg0RDEt-j-3ocQ8"
+  "placeId": "ChIJj0CNyXLFHg0RDEt-j-3ocQ8",
+  "michelinId": "217054",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Pedro Almeida and Tiago Santo",
+  "chefSource": "michelin"
 }

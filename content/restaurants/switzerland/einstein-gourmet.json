@@ -13,5 +13,11 @@
   "website": "https://www.einstein.ch/de/",
   "lat": 47.4215598,
   "lng": 9.3753719,
-  "placeId": "ChIJSfjp8Ewem0cRcVBki60dN3Y"
+  "placeId": "ChIJSfjp8Ewem0cRcVBki60dN3Y",
+  "michelinId": "184567",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Sebastian Zier and Richard Schmidtkonz",
+  "chefSource": "michelin"
 }

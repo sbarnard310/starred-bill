@@ -15,5 +15,8 @@
   "website": "https://www.mezrayalikavak.com/",
   "lat": 37.1149719,
   "lng": 27.3254393,
-  "placeId": "ChIJp7stYbNxvhQR7c2bmJROfJE"
+  "placeId": "ChIJp7stYbNxvhQR7c2bmJROfJE",
+  "michelinId": "1213287",
+  "chef": "Serhat Doğramacı",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,15 @@
   "website": "https://www.merlet.nl/",
   "lat": 52.6998032,
   "lng": 4.6944638,
-  "placeId": "ChIJTdKgQhxaz0cRFaMdTHA5JEA"
+  "placeId": "ChIJTdKgQhxaz0cRFaMdTHA5JEA",
+  "michelinId": "213917",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Marco Helsloot",
+  "chefSource": "michelin"
 }

@@ -26,5 +26,11 @@
   "website": "https://nhomeparis.com/",
   "lat": 48.8661738,
   "lng": 2.3374459,
-  "placeId": "ChIJxcBu_PVv5kcRHZkD-hm_UEE"
+  "placeId": "ChIJxcBu_PVv5kcRHZkD-hm_UEE",
+  "michelinId": "1204801",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ]
 }

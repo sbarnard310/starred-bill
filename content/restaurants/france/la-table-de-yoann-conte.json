@@ -15,5 +15,8 @@
   "website": "https://yoann-conte.com",
   "lat": 45.8889235,
   "lng": 6.1721868,
-  "placeId": "ChIJgxteONeRi0cRR0LFSG3gYhg"
+  "placeId": "ChIJgxteONeRi0cRR0LFSG3gYhg",
+  "michelinId": "298215",
+  "chef": "Yoann Conte",
+  "chefSource": "michelin"
 }

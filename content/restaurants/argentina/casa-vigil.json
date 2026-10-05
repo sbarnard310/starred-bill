@@ -25,5 +25,12 @@
   "website": "https://www.universovigil.com/",
   "lat": -33.0446245,
   "lng": -68.7213938,
-  "placeId": "ChIJXQfWX3ByfpYRZOWkgz0nxNc"
+  "placeId": "ChIJXQfWX3ByfpYRZOWkgz0nxNc",
+  "michelinId": "551367",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Iván Azar",
+  "chefSource": "michelin"
 }

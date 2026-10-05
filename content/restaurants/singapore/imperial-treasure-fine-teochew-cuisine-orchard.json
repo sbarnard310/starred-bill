@@ -19,5 +19,9 @@
   "website": "https://www.imperialtreasure.com/",
   "lat": 1.304144,
   "lng": 103.83147,
-  "placeId": "ChIJn3KRuzgZ2jERq14svIz5O9g"
+  "placeId": "ChIJn3KRuzgZ2jERq14svIz5O9g",
+  "michelinId": "501495",
+  "diets": [
+    "vegetarian"
+  ]
 }

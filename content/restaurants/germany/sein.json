@@ -13,5 +13,11 @@
   "website": "https://www.restaurant-sein.de",
   "lat": 49.006215,
   "lng": 8.3818129,
-  "placeId": "ChIJDZ9NaPYGl0cRA_wLc-_2PMo"
+  "placeId": "ChIJDZ9NaPYGl0cRA_wLc-_2PMo",
+  "michelinId": "530805",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thorsten Bender",
+  "chefSource": "michelin"
 }

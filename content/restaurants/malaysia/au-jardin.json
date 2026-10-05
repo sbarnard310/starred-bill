@@ -13,5 +13,13 @@
   "website": "https://www.restaurant-aujardin.com",
   "lat": 5.412,
   "lng": 100.327,
-  "placeId": "ChIJO7pVFaDDSjARUI1CyPfDXwM"
+  "placeId": "ChIJO7pVFaDDSjARUI1CyPfDXwM",
+  "michelinId": "1201632",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Su Kim Hock",
+  "chefSource": "site"
 }

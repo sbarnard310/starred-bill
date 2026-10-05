@@ -23,5 +23,12 @@
   "website": "https://www.sushishunei.com/",
   "lat": 48.8851108,
   "lng": 2.3357826,
-  "placeId": "ChIJOZNwHS1v5kcRnO0W988mtRo"
+  "placeId": "ChIJOZNwHS1v5kcRnO0W988mtRo",
+  "michelinId": "1197029",
+  "diets": [
+    "halal",
+    "kosher"
+  ],
+  "chef": "Shunei Kimura",
+  "chefSource": "site"
 }

@@ -25,5 +25,11 @@
   "website": "https://www.ristoranteverso.com/",
   "lat": 45.46481,
   "lng": 9.189585,
-  "placeId": "ChIJCa-LmFvHhkcRN6i9ZPTlFeQ"
+  "placeId": "ChIJCa-LmFvHhkcRN6i9ZPTlFeQ",
+  "michelinId": "1206135",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

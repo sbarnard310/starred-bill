@@ -15,5 +15,8 @@
   "website": "https://www.diepeschrather-muehle.de/",
   "lat": 50.9939971,
   "lng": 7.0775649,
-  "placeId": "ChIJMZFQjtbCuEcR5U8U4b-lBeI"
+  "placeId": "ChIJMZFQjtbCuEcR5U8U4b-lBeI",
+  "michelinId": "1215854",
+  "chef": "Nelson Müller",
+  "chefSource": "michelin"
 }

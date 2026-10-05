@@ -15,5 +15,13 @@
   "website": "https://www.exclusive.co.uk/the-pass/",
   "lat": 51.015953,
   "lng": -0.263726,
-  "placeId": "ChIJYURf88rtdUgRCe1Lh0TdyVI"
+  "placeId": "ChIJYURf88rtdUgRCe1Lh0TdyVI",
+  "michelinId": "1204190",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Ben Wilkinson",
+  "chefSource": "michelin"
 }

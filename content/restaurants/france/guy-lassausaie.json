@@ -23,5 +23,8 @@
   "website": "https://www.guy-lassausaie.com/",
   "lat": 45.8727314,
   "lng": 4.7705653,
-  "placeId": "ChIJWxP_WdCT9EcRJ4GEO_OVhx4"
+  "placeId": "ChIJWxP_WdCT9EcRJ4GEO_OVhx4",
+  "michelinId": "2033",
+  "chef": "Guy Lassausaie",
+  "chefSource": "michelin"
 }

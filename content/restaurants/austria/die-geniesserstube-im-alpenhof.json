@@ -15,5 +15,11 @@
   "website": "https://www.alpenhof.at/kulinarik/restaurant-geniesserstube/",
   "lat": 47.115608,
   "lng": 11.6841259,
-  "placeId": "ChIJq2hnvrrhd0cRQTE6s8rp6lU"
+  "placeId": "ChIJq2hnvrrhd0cRQTE6s8rp6lU",
+  "michelinId": "1212420",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maximilian Stock",
+  "chefSource": "michelin"
 }

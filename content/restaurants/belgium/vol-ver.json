@@ -15,5 +15,13 @@
   "website": "https://www.vol-ver.be/index.php/nl/",
   "lat": 50.7970808,
   "lng": 3.2351421,
-  "placeId": "ChIJ4TKZUEolw0cRREo1HOB3h7Q"
+  "placeId": "ChIJ4TKZUEolw0cRREo1HOB3h7Q",
+  "michelinId": "446549",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Sébastien Verveken",
+  "chefSource": "michelin"
 }

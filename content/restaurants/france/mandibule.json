@@ -15,5 +15,8 @@
   "website": "https://www.mandibulerestaurant.com",
   "lat": 44.974393,
   "lng": 5.0258222,
-  "placeId": "ChIJ4TswMuRT9UcRqTxyhEzxSCU"
+  "placeId": "ChIJ4TswMuRT9UcRqTxyhEzxSCU",
+  "michelinId": "1216681",
+  "chef": "Maxime Szczepaniak",
+  "chefSource": "michelin"
 }

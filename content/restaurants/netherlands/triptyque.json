@@ -15,5 +15,13 @@
   "website": "https://triptyque.nl/",
   "lat": 52.0247891,
   "lng": 4.2741909,
-  "placeId": "ChIJh_-DKpCzxUcRXw56QOAuXGM"
+  "placeId": "ChIJh_-DKpCzxUcRXw56QOAuXGM",
+  "michelinId": "1194623",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Niven & Virginie van Bronckhorst-Kunz",
+  "chefSource": "michelin"
 }

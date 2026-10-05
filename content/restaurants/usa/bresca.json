@@ -12,5 +12,11 @@
   "website": "https://www.brescadc.com/",
   "lat": 38.915782,
   "lng": -77.03195,
-  "placeId": "ChIJIfKOC-i3t4kRjYSije_nwy0"
+  "placeId": "ChIJIfKOC-i3t4kRjYSije_nwy0",
+  "michelinId": "562386",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Ryan Ratino",
+  "chefSource": "michelin"
 }

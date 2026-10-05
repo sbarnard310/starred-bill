@@ -17,5 +17,8 @@
   "website": "https://misterjius.com/",
   "lat": 37.79371,
   "lng": -122.406654,
-  "placeId": "ChIJyRDJYIuAhYARyAPkIc7A2Vo"
+  "placeId": "ChIJyRDJYIuAhYARyAPkIc7A2Vo",
+  "michelinId": "503271",
+  "chef": "Brandon Jew",
+  "chefSource": "michelin"
 }

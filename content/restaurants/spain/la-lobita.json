@@ -13,5 +13,11 @@
   "website": "https://www.lalobita.es/",
   "lat": 41.8367514,
   "lng": -3.0064064,
-  "placeId": "ChIJ1YoirS38RA0RxG0SIkJOST8"
+  "placeId": "ChIJ1YoirS38RA0RxG0SIkJOST8",
+  "michelinId": "227263",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Elena Lucas",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,13 @@
   "website": "https://www.themodernnyc.com/the-modern/",
   "lat": 40.76106,
   "lng": -73.97628,
-  "placeId": "ChIJMW-gxPtYwokRzDlnsRgq9rA"
+  "placeId": "ChIJMW-gxPtYwokRzDlnsRgq9rA",
+  "michelinId": "113266",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Thomas Allan",
+  "chefSource": "site"
 }

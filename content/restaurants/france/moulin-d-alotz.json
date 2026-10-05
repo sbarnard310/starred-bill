@@ -23,5 +23,13 @@
   "website": "https://www.moulindalotz.com",
   "lat": 43.4214848,
   "lng": -1.538436,
-  "placeId": "ChIJE4XJ_ZYVUQ0RyzNVtsbz02U"
+  "placeId": "ChIJE4XJ_ZYVUQ0RyzNVtsbz02U",
+  "michelinId": "1118",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Fabrice Idiart",
+  "chefSource": "michelin"
 }

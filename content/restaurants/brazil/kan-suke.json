@@ -11,5 +11,8 @@
   "sourceType": "none",
   "lat": -23.5684,
   "lng": -46.64936,
-  "placeId": "ChIJNbaJJr9ZzpQRP9Y6s2oYcXw"
+  "placeId": "ChIJNbaJJr9ZzpQRP9Y6s2oYcXw",
+  "michelinId": "436643",
+  "chef": "Keisuke Egashira",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,15 @@
   "website": "https://www.hotel-carantec.fr/",
   "lat": 48.6706639,
   "lng": -3.9127356,
-  "placeId": "ChIJNWY6gRPgE0gRyuj7208FeRk"
+  "placeId": "ChIJNWY6gRPgE0gRyuj7208FeRk",
+  "michelinId": "10517",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Nicolas Carro",
+  "chefSource": "michelin"
 }

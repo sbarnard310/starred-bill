@@ -13,5 +13,13 @@
   "website": "https://www.hotelvillacimbrone.com/it/il-flauto-di-pan/",
   "lat": 40.6446307,
   "lng": 14.6111085,
-  "placeId": "ChIJ8xM5vKCVOxMRTEfbuNQAYas"
+  "placeId": "ChIJ8xM5vKCVOxMRTEfbuNQAYas",
+  "michelinId": "163379",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Lorenzo Montoro",
+  "chefSource": "site"
 }

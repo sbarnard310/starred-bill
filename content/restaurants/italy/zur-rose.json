@@ -15,5 +15,13 @@
   "website": "https://www.zur-rose.com",
   "lat": 46.455093,
   "lng": 11.258857,
-  "placeId": "ChIJPxWrsSqBgkcRlyGmR3Mopbs"
+  "placeId": "ChIJPxWrsSqBgkcRlyGmR3Mopbs",
+  "michelinId": "125034",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Herbert Hintner and Daniel Hintner",
+  "chefSource": "michelin"
 }

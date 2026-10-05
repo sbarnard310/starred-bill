@@ -20,5 +20,9 @@
   "website": "https://www.trois-tours.ch/",
   "lat": 46.8003662,
   "lng": 7.1762559,
-  "placeId": "ChIJjUiZ4RtpjkcRvD0t7VI0tuI"
+  "placeId": "ChIJjUiZ4RtpjkcRvD0t7VI0tuI",
+  "michelinId": "1195868",
+  "diets": [
+    "gluten-free"
+  ]
 }

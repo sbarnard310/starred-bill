@@ -13,5 +13,9 @@
   "website": "https://www.casindelgamba.it/",
   "lat": 45.6178,
   "lng": 11.2615,
-  "placeId": "ChIJa6VM53dNf0cR4TbgRlaPI7k"
+  "placeId": "ChIJa6VM53dNf0cR4TbgRlaPI7k",
+  "michelinId": "124546",
+  "diets": [
+    "vegetarian"
+  ]
 }

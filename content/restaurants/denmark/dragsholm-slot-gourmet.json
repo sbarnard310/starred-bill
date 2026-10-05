@@ -15,5 +15,13 @@
   "website": "https://www.dragsholm-slot.dk/en",
   "lat": 55.771236,
   "lng": 11.390805,
-  "placeId": "ChIJnU0pJYeETUYRccwUtLFxNco"
+  "placeId": "ChIJnU0pJYeETUYRccwUtLFxNco",
+  "michelinId": "467311",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Rasmus Storm",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,8 @@
   "website": "https://bastionkinsale.com/",
   "lat": 51.705702,
   "lng": -8.524059,
-  "placeId": "ChIJvVahSfthREgR6hyQM41z7bA"
+  "placeId": "ChIJvVahSfthREgR6hyQM41z7bA",
+  "michelinId": "470401",
+  "chef": "Paul McDonald",
+  "chefSource": "michelin"
 }

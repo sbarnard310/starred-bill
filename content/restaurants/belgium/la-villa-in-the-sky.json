@@ -12,5 +12,11 @@
   "website": "https://www.lavillainthesky.be/",
   "lat": 50.8172539,
   "lng": 4.3719965,
-  "placeId": "ChIJURIANu_Ew0cRxqCnfbJzWfQ"
+  "placeId": "ChIJURIANu_Ew0cRxqCnfbJzWfQ",
+  "michelinId": "210907",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alexandre Dionisio",
+  "chefSource": "michelin"
 }

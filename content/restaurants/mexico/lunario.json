@@ -19,5 +19,13 @@
   "website": "https://www.restaurantelunario.com/",
   "lat": 32.0170392,
   "lng": -116.66363129999999,
-  "placeId": "ChIJn-6Udmrv2IARlUW4xwk6Po4"
+  "placeId": "ChIJn-6Udmrv2IARlUW4xwk6Po4",
+  "michelinId": "1208363",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Sheyla Alvarado",
+  "chefSource": "michelin"
 }

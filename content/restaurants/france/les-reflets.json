@@ -23,5 +23,8 @@
   "website": "https://www.restaurantlesreflets.fr/",
   "lat": 46.6650174,
   "lng": -1.4496109,
-  "placeId": "ChIJVVUlwAEwBEgRCi4jySLr4v8"
+  "placeId": "ChIJVVUlwAEwBEgRCi4jySLr4v8",
+  "michelinId": "1154692",
+  "chef": "Nathan Cretney",
+  "chefSource": "michelin"
 }

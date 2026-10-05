@@ -21,5 +21,11 @@
   "website": "https://www.racine.re/",
   "lat": 49.2528607,
   "lng": 4.03752,
-  "placeId": "ChIJJRr7G6116UcR5frIDtU5dZw"
+  "placeId": "ChIJJRr7G6116UcR5frIDtU5dZw",
+  "michelinId": "508739",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Kazuyuki Tanaka",
+  "chefSource": "michelin"
 }

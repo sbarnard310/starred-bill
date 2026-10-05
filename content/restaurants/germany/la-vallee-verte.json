@@ -13,5 +13,8 @@
   "website": "https://hohenhaus.de/restaurants/gourmetrestaurant-la-vallee-verte/",
   "lat": 51.0413568,
   "lng": 10.0796044,
-  "placeId": "ChIJj3vXrXmjpEcRmPNciSqVEEA"
+  "placeId": "ChIJj3vXrXmjpEcRmPNciSqVEEA",
+  "michelinId": "537169",
+  "chef": "Alexander Mayer",
+  "chefSource": "michelin"
 }

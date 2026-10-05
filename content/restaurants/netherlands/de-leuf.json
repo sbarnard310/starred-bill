@@ -15,5 +15,10 @@
   "website": "https://www.deleuf.nl/",
   "lat": 50.8525073,
   "lng": 5.9522269,
-  "placeId": "ChIJGUiIMRqWwEcRf7bToR1h83I"
+  "placeId": "ChIJGUiIMRqWwEcRf7bToR1h83I",
+  "michelinId": "213082",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

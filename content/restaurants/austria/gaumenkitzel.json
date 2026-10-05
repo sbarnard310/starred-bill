@@ -15,5 +15,11 @@
   "website": "https://www.molzbachhof.at/genuss/gourmetrestaurant/",
   "lat": 47.6001897,
   "lng": 16.0021182,
-  "placeId": "ChIJW-apdeDXbUcRSQ4HDMuKZ4w"
+  "placeId": "ChIJW-apdeDXbUcRSQ4HDMuKZ4w",
+  "michelinId": "1212861",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Peter Pichler",
+  "chefSource": "michelin"
 }

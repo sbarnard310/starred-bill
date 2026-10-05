@@ -24,5 +24,12 @@
   "website": "https://www.rowon5london.com/",
   "lat": 51.5105221,
   "lng": -0.1397601,
-  "placeId": "ChIJu8QEs-8FdkgRE0znNGEGBoQ"
+  "placeId": "ChIJu8QEs-8FdkgRE0znNGEGBoQ",
+  "michelinId": "1215080",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Spencer Metzger",
+  "chefSource": "michelin"
 }

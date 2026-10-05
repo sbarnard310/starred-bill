@@ -24,5 +24,12 @@
   "website": "https://www.cityofdreamsmacau.com/en/dining/alain-ducasse-morpheus",
   "lat": 22.150174,
   "lng": 113.566977,
-  "placeId": "ChIJe_6MvZ5xATQRocpAwXdfTC0"
+  "placeId": "ChIJe_6MvZ5xATQRocpAwXdfTC0",
+  "michelinId": "567859",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Alain Ducasse",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,11 @@
   "website": "https://knystaforsen.se",
   "lat": 56.958207,
   "lng": 13.1400487,
-  "placeId": "ChIJg2GpRjZVUEYReSMzvNyjG50"
+  "placeId": "ChIJg2GpRjZVUEYReSMzvNyjG50",
+  "michelinId": "1198160",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nicolai Tram",
+  "chefSource": "michelin"
 }

@@ -26,5 +26,13 @@
   "website": "https://www.ottoemezzobombana.com/",
   "lat": 22.146509,
   "lng": 113.555397,
-  "placeId": "ChIJUaiawA1wATQRep7RUC7_ud0"
+  "placeId": "ChIJUaiawA1wATQRep7RUC7_ud0",
+  "michelinId": "475197",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ],
+  "chef": "Umberto Bombana",
+  "chefSource": "site"
 }

@@ -21,5 +21,9 @@
   "website": "https://roki-collection.com/dine/essence/",
   "lat": -45.0341,
   "lng": 168.655069,
-  "placeId": "ChIJb6PDkGcd1akRdpE232oDeXI"
+  "placeId": "ChIJb6PDkGcd1akRdpE232oDeXI",
+  "michelinId": "1247217",
+  "diets": [
+    "vegetarian"
+  ]
 }

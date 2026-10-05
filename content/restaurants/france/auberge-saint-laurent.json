@@ -23,5 +23,11 @@
   "website": "https://www.auberge-saintlaurent.fr/",
   "lat": 47.6540637,
   "lng": 7.4539991,
-  "placeId": "ChIJsXQS6tuXkUcRv5QakwkJ06M"
+  "placeId": "ChIJsXQS6tuXkUcRv5QakwkJ06M",
+  "michelinId": "8624",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Laurent Arbeit",
+  "chefSource": "michelin"
 }

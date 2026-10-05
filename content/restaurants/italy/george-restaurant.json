@@ -13,5 +13,12 @@
   "website": "https://www.georgerestaurant.it/",
   "lat": 40.8372677,
   "lng": 14.2300686,
-  "placeId": "ChIJLQKHEf0IOxMRMClP898p2_k"
+  "placeId": "ChIJLQKHEf0IOxMRMClP898p2_k",
+  "michelinId": "1090754",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Domenico Candela",
+  "chefSource": "michelin"
 }

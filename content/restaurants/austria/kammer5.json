@@ -13,5 +13,10 @@
   "website": "https://www.kammer5.at/",
   "lat": 48.3072856,
   "lng": 13.4297995,
-  "placeId": "ChIJCe4EqIlBdEcRaspxJvmIpog"
+  "placeId": "ChIJCe4EqIlBdEcRaspxJvmIpog",
+  "michelinId": "1212976",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

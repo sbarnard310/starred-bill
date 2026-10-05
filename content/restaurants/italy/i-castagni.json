@@ -23,5 +23,8 @@
   "website": "https://www.ristoranteicastagni.com/",
   "lat": 45.292768,
   "lng": 8.857758,
-  "placeId": "ChIJiXJnEtbihkcRFUwd52pPd-0"
+  "placeId": "ChIJiXJnEtbihkcRFUwd52pPd-0",
+  "michelinId": "157634",
+  "chef": "Enrico Gerli",
+  "chefSource": "michelin"
 }

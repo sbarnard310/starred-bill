@@ -29,5 +29,10 @@
   "lunchSource": "https://www.ctee.com.tw/news/20241209700321-430901",
   "lat": 24.1571646,
   "lng": 120.6386801,
-  "placeId": "ChIJISQloDA9aTQRqdW3DJmQsMs"
+  "placeId": "ChIJISQloDA9aTQRqdW3DJmQsMs",
+  "michelinId": "1218035",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

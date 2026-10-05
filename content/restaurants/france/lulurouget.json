@@ -22,5 +22,8 @@
   "website": "https://www.lulurouget.fr/",
   "lat": 47.2046854,
   "lng": -1.562099,
-  "placeId": "ChIJq6qqqqfuBUgRgw-B-uBd6eA"
+  "placeId": "ChIJq6qqqqfuBUgRgw-B-uBd6eA",
+  "michelinId": "370401",
+  "chef": "Ludovic Pouzelgues",
+  "chefSource": "michelin"
 }

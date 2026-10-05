@@ -23,5 +23,12 @@
   "website": "https://www.cornusrestaurant.co.uk/",
   "lat": 51.4942405,
   "lng": -0.1477227,
-  "placeId": "ChIJhTXjCSIFdkgRENUSN1Qxkos"
+  "placeId": "ChIJhTXjCSIFdkgRENUSN1Qxkos",
+  "michelinId": "1214946",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Gary Foulkes",
+  "chefSource": "site"
 }

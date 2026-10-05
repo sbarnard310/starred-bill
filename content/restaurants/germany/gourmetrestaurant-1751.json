@@ -13,5 +13,12 @@
   "website": "https://www.weinhaus-uhle.de/restaurant",
   "lat": 53.6279892,
   "lng": 11.4137669,
-  "placeId": "ChIJGeAVUx3brUcRemx3UHUpoKY"
+  "placeId": "ChIJGeAVUx3brUcRemx3UHUpoKY",
+  "michelinId": "77605",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Marcel Kube",
+  "chefSource": "michelin"
 }

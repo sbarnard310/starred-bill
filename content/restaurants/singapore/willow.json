@@ -26,5 +26,8 @@
   "website": "https://www.willowrestaurant.sg/",
   "lat": 1.28746,
   "lng": 103.847351,
-  "placeId": "ChIJ_-Z13O8Z2jERMGjkmo2o31c"
+  "placeId": "ChIJ_-Z13O8Z2jERMGjkmo2o31c",
+  "michelinId": "1204758",
+  "chef": "Nicolas Tam",
+  "chefSource": "michelin"
 }

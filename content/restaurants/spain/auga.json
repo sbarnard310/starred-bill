@@ -13,5 +13,8 @@
   "website": "https://www.restauranteauga.com",
   "lat": 43.5465083,
   "lng": -5.6665859,
-  "placeId": "ChIJtfGTamh8Ng0RKxwJ0Y6vGRM"
+  "placeId": "ChIJtfGTamh8Ng0RKxwJ0Y6vGRM",
+  "michelinId": "220295",
+  "chef": "Gonzalo Pañeda",
+  "chefSource": "michelin"
 }

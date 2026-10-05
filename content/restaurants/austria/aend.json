@@ -12,5 +12,11 @@
   "website": "https://aend.at/",
   "lat": 48.1896624,
   "lng": 16.3411265,
-  "placeId": "ChIJyzxtjCGobUcRrzm4UjNaO7w"
+  "placeId": "ChIJyzxtjCGobUcRrzm4UjNaO7w",
+  "michelinId": "550678",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Fabian Günzel",
+  "chefSource": "michelin"
 }

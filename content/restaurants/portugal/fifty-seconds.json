@@ -14,5 +14,8 @@
   "website": "https://www.fiftysecondsexperience.com/",
   "lat": 38.7747556,
   "lng": -9.0911606,
-  "placeId": "ChIJi1Qa6ooxGQ0RXBaNcwtKzmA"
+  "placeId": "ChIJi1Qa6ooxGQ0RXBaNcwtKzmA",
+  "michelinId": "1154326",
+  "chef": "Rui Silvestre",
+  "chefSource": "michelin"
 }

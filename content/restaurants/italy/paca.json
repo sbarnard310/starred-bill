@@ -15,5 +15,10 @@
   "website": "https://www.pacaristorante.it/",
   "lat": 43.87718,
   "lng": 11.102182,
-  "placeId": "ChIJpVS32Ob3KhMRzHXHBA90UWw"
+  "placeId": "ChIJpVS32Ob3KhMRzHXHBA90UWw",
+  "michelinId": "1192021",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

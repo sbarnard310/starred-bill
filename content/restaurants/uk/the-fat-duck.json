@@ -21,5 +21,13 @@
   "website": "https://thefatduck.co.uk/",
   "lat": 51.507858,
   "lng": -0.701753,
-  "placeId": "ChIJ9847-dN8dkgRTNy_Eh1e5RE"
+  "placeId": "ChIJ9847-dN8dkgRTNy_Eh1e5RE",
+  "michelinId": "486623",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Heston Blumenthal",
+  "chefSource": "michelin"
 }

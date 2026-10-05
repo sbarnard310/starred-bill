@@ -17,5 +17,11 @@
   "website": "https://www.saisonsf.com/",
   "lat": 37.779688,
   "lng": -122.392222,
-  "placeId": "ChIJPUo32Aj3MhURXL06eVIEoHc"
+  "placeId": "ChIJPUo32Aj3MhURXL06eVIEoHc",
+  "michelinId": "293069",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Richard Lee",
+  "chefSource": "michelin"
 }

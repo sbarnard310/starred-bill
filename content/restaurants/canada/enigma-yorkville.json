@@ -12,5 +12,12 @@
   "website": "https://www.enigmayorkville.com/",
   "lat": 43.6692078,
   "lng": -79.3908739,
-  "placeId": "ChIJubw9yF01K4gRQyRiKs5j7yE"
+  "placeId": "ChIJubw9yF01K4gRQyRiKs5j7yE",
+  "michelinId": "1198889",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Zachary Barnes",
+  "chefSource": "site"
 }

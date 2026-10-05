@@ -16,5 +16,11 @@
   "website": "https://elserbal.com/",
   "lat": 43.4776869,
   "lng": -3.7881718,
-  "placeId": "ChIJ6yRXjrFLSQ0RqBrm0WBDD-I"
+  "placeId": "ChIJ6yRXjrFLSQ0RqBrm0WBDD-I",
+  "michelinId": "1197026",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

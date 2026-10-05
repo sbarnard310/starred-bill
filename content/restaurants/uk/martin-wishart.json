@@ -20,5 +20,15 @@
   "website": "https://restaurantmartinwishart.co.uk/",
   "lat": 55.97551,
   "lng": -3.170399,
-  "placeId": "ChIJ_aq3sQW4h0gRR4PtvTl1RZ8"
+  "placeId": "ChIJ_aq3sQW4h0gRR4PtvTl1RZ8",
+  "michelinId": "70177",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Martin Wishart",
+  "chefSource": "site"
 }

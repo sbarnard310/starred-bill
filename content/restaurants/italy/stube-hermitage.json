@@ -13,5 +13,11 @@
   "website": "https://stubehermitage.it/",
   "lat": 46.2131692,
   "lng": 10.8244764,
-  "placeId": "ChIJaRGjhUhcgkcRMSUfRcfyM9o"
+  "placeId": "ChIJaRGjhUhcgkcRMSUfRcfyM9o",
+  "michelinId": "162469",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Domenico Sepe",
+  "chefSource": "michelin"
 }

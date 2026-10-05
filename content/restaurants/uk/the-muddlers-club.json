@@ -22,5 +22,13 @@
   "website": "https://themuddlersclubbelfast.com/",
   "lat": 54.601518,
   "lng": -5.927366,
-  "placeId": "ChIJS_YuBFQIYUgRtCAvevI5MvM"
+  "placeId": "ChIJS_YuBFQIYUgRtCAvevI5MvM",
+  "michelinId": "471115",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Gareth McCaughey",
+  "chefSource": "michelin"
 }

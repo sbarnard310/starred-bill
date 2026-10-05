@@ -13,5 +13,13 @@
   "website": "https://www.qafiz.it/",
   "lat": 38.2814827,
   "lng": 15.9488692,
-  "placeId": "ChIJIW1XRT4DFRMRKF37ZrxQSoY"
+  "placeId": "ChIJIW1XRT4DFRMRKF37ZrxQSoY",
+  "michelinId": "529760",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Nino Rossi",
+  "chefSource": "michelin"
 }

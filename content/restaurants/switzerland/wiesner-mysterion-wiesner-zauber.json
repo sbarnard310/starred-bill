@@ -13,5 +13,14 @@
   "website": "https://www.wiesner-mysterion.ch",
   "lat": 46.9791881,
   "lng": 7.9858069,
-  "placeId": "ChIJ4WEN3DPBj0cRYLxd6zEwm88"
+  "placeId": "ChIJ4WEN3DPBj0cRYLxd6zEwm88",
+  "michelinId": "1206773",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Stefan Wiesner",
+  "chefSource": "michelin"
 }

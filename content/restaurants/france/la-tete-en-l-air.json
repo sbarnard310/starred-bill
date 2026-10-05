@@ -15,5 +15,8 @@
   "website": "https://www.lateteenlair-vannes.com",
   "lat": 47.6605029,
   "lng": -2.7545627,
-  "placeId": "ChIJZT8EC4UeEEgRaWTloEfFw1M"
+  "placeId": "ChIJZT8EC4UeEEgRaWTloEfFw1M",
+  "michelinId": "493908",
+  "chef": "Clément Raby",
+  "chefSource": "michelin"
 }

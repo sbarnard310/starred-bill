@@ -13,5 +13,11 @@
   "website": "https://www.restaurant-cedric.de/",
   "lat": 48.8044011,
   "lng": 9.3885778,
-  "placeId": "ChIJu3eZJ1LHmUcRekNAi1llUQI"
+  "placeId": "ChIJu3eZJ1LHmUcRekNAi1llUQI",
+  "michelinId": "1204630",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Cédric Staudenmayer",
+  "chefSource": "michelin"
 }

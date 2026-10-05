@@ -12,5 +12,12 @@
   "website": "https://www.blind.pt",
   "lat": 41.1451049,
   "lng": -8.6060592,
-  "placeId": "ChIJTe2jLE1lJA0RFQ2osd5Phes"
+  "placeId": "ChIJTe2jLE1lJA0RFQ2osd5Phes",
+  "michelinId": "1191346",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Vítor Matos",
+  "chefSource": "michelin"
 }

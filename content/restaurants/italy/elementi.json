@@ -13,5 +13,12 @@
   "website": "https://www.elementifinedining.it",
   "lat": 43.0557056,
   "lng": 12.4661407,
-  "placeId": "ChIJJXWrcPmfLhMRQ8CudCAUZmA"
+  "placeId": "ChIJJXWrcPmfLhMRQ8CudCAUZmA",
+  "michelinId": "1198594",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Andrea Impero",
+  "chefSource": "michelin"
 }

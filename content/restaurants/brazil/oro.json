@@ -12,5 +12,13 @@
   "website": "https://ororestaurante.com.br/",
   "lat": -22.98601,
   "lng": -43.22471,
-  "placeId": "ChIJJSAnM03UmwARJ8pWMKzJmP4"
+  "placeId": "ChIJJSAnM03UmwARJ8pWMKzJmP4",
+  "michelinId": "498425",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Felipe Bronze",
+  "chefSource": "michelin"
 }

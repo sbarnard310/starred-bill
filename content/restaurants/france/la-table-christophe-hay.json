@@ -25,5 +25,13 @@
   "website": "https://www.latabledacote.fr/",
   "lat": 47.8220926,
   "lng": 1.9124177,
-  "placeId": "ChIJwVCBTzLn5EcR0yVR5mua9xE"
+  "placeId": "ChIJwVCBTzLn5EcR0yVR5mua9xE",
+  "michelinId": "1000352",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Loïs Bée",
+  "chefSource": "michelin"
 }

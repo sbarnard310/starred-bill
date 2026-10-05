@@ -13,5 +13,13 @@
   "website": "https://www.ldrestaurant.com/",
   "lat": 42.961559,
   "lng": 17.1370118,
-  "placeId": "ChIJ-YCtU9tRShMRKFdFa1ZGkIY"
+  "placeId": "ChIJ-YCtU9tRShMRKFdFa1ZGkIY",
+  "michelinId": "480090",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Marko Gajski",
+  "chefSource": "site"
 }

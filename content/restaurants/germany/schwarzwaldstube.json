@@ -13,5 +13,13 @@
   "website": "https://www.traube-tonbach.de/kulinarik/schwarzwaldstube/",
   "lat": 48.5369113,
   "lng": 8.3582803,
-  "placeId": "ChIJidkYT_0wl0cRwM1SNn5mWLI"
+  "placeId": "ChIJidkYT_0wl0cRwM1SNn5mWLI",
+  "michelinId": "1191833",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Torsten Michel",
+  "chefSource": "michelin"
 }

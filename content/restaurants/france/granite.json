@@ -26,5 +26,9 @@
   "website": "https://www.granite.paris/",
   "lat": 48.8610315,
   "lng": 2.3419097,
-  "placeId": "ChIJ63m1Hxpv5kcRtffG6PtiUyY"
+  "placeId": "ChIJ63m1Hxpv5kcRtffG6PtiUyY",
+  "michelinId": "1198315",
+  "diets": [
+    "vegetarian"
+  ]
 }

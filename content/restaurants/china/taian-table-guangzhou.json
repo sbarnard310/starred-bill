@@ -9,5 +9,9 @@
   "sourceType": "none",
   "website": "https://gz.taian-table.cn/",
   "lat": 23.1380432,
-  "lng": 113.2807021
+  "lng": 113.2807021,
+  "michelinId": "1195975",
+  "diets": [
+    "vegetarian"
+  ]
 }

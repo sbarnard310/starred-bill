@@ -13,5 +13,11 @@
   "website": "https://www.winzerhof-stahl.de/",
   "lat": 49.5232104,
   "lng": 10.1045712,
-  "placeId": "ChIJ1ZLxp--AmEcR6V4mHzETBq8"
+  "placeId": "ChIJ1ZLxp--AmEcR6V4mHzETBq8",
+  "michelinId": "1207289",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christian Stahl and Mirko Schweiger",
+  "chefSource": "michelin"
 }

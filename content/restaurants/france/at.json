@@ -27,5 +27,11 @@
   "website": "https://www.atsushitanaka.com/",
   "lat": 48.8496507,
   "lng": 2.3544763,
-  "placeId": "ChIJSXUGuORx5kcR_w2q7eJxLRo"
+  "placeId": "ChIJSXUGuORx5kcR_w2q7eJxLRo",
+  "michelinId": "453259",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Atsushi Tanaka",
+  "chefSource": "site"
 }

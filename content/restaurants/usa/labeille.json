@@ -17,5 +17,12 @@
   "website": "https://www.labeille.nyc/",
   "lat": 40.721939,
   "lng": -74.009951,
-  "placeId": "ChIJq75Ur-tZwokRo7I_F_PhlcU"
+  "placeId": "ChIJq75Ur-tZwokRo7I_F_PhlcU",
+  "michelinId": "1199872",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ],
+  "chef": "Mitsunobu Nagae",
+  "chefSource": "michelin"
 }

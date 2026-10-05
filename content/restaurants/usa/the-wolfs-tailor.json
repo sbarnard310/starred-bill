@@ -12,5 +12,8 @@
   "website": "https://www.thewolfstailor.com/",
   "lat": 39.77277,
   "lng": -105.01088,
-  "placeId": "ChIJgZlxHYt4bIcRbUoKhywj5CE"
+  "placeId": "ChIJgZlxHYt4bIcRbUoKhywj5CE",
+  "michelinId": "1205487",
+  "chef": "Taylor Stark",
+  "chefSource": "michelin"
 }

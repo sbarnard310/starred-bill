@@ -17,5 +17,9 @@
   "website": "https://loscabos.grandvelas.com/dining/cocina-de-autor",
   "lat": 22.968208699999998,
   "lng": -109.7918064,
-  "placeId": "ChIJS5GX-nBOr4YRNMuOCqobHZY"
+  "placeId": "ChIJS5GX-nBOr4YRNMuOCqobHZY",
+  "michelinId": "1211468",
+  "diets": [
+    "vegetarian"
+  ]
 }

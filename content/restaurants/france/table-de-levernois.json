@@ -15,5 +15,13 @@
   "website": "https://www.levernois.com/fr/la-table-de-levernois.html",
   "lat": 46.9928458,
   "lng": 4.8777507,
-  "placeId": "ChIJ73mdZ0Pz8kcRcj2Fy1-IzKo"
+  "placeId": "ChIJ73mdZ0Pz8kcRcj2Fy1-IzKo",
+  "michelinId": "920",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Philippe Augé",
+  "chefSource": "michelin"
 }

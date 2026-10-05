@@ -20,5 +20,14 @@
   "website": "https://customshousebaltimore.com/",
   "lat": 51.483504,
   "lng": -9.372531,
-  "placeId": "ChIJA0NaauijRUgR3Zf9fYrgwd4"
+  "placeId": "ChIJA0NaauijRUgR3Zf9fYrgwd4",
+  "michelinId": "1192117",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Ahmet Dede",
+  "chefSource": "michelin"
 }

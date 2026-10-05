@@ -13,5 +13,12 @@
   "website": "https://laboticadematapozuelos.com/",
   "lat": 41.4143484,
   "lng": -4.7914841,
-  "placeId": "ChIJG1BSSrZGRw0R-eubJPJEHlY"
+  "placeId": "ChIJG1BSSrZGRw0R-eubJPJEHlY",
+  "michelinId": "274798",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Miguel Ángel de la Cruz García",
+  "chefSource": "michelin"
 }

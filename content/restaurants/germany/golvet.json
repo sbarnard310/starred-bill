@@ -12,5 +12,13 @@
   "website": "https://golvet.de/",
   "lat": 52.5055114,
   "lng": 13.3676288,
-  "placeId": "ChIJAQBUZrVRqEcRdYAZYRLFNbA"
+  "placeId": "ChIJAQBUZrVRqEcRdYAZYRLFNbA",
+  "michelinId": "527643",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "halal"
+  ],
+  "chef": "Nicholas Hahn",
+  "chefSource": "michelin"
 }

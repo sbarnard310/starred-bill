@@ -15,5 +15,10 @@
   "website": "https://midsummerhouse.co.uk/",
   "lat": 52.212055,
   "lng": 0.128401,
-  "placeId": "ChIJVxbfNZNw2EcRGFNqzq2WExs"
+  "placeId": "ChIJVxbfNZNw2EcRGFNqzq2WExs",
+  "michelinId": "186832",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

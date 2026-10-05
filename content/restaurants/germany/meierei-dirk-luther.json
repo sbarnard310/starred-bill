@@ -13,5 +13,12 @@
   "website": "https://www.alter-meierhof.de/",
   "lat": 54.822771,
   "lng": 9.5000515,
-  "placeId": "ChIJX0ZtXbpDs0cRyloIbHI9NdA"
+  "placeId": "ChIJX0ZtXbpDs0cRyloIbHI9NdA",
+  "michelinId": "81057",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Dirk Luther",
+  "chefSource": "michelin"
 }

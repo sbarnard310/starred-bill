@@ -12,5 +12,12 @@
   "website": "https://la-cuisine-koeln.de/",
   "lat": 50.9803037,
   "lng": 7.0689759,
-  "placeId": "ChIJYzk4Cv0pv0cR74e35cayQzU"
+  "placeId": "ChIJYzk4Cv0pv0cR74e35cayQzU",
+  "michelinId": "1160085",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Marlon Rademacher",
+  "chefSource": "michelin"
 }

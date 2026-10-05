@@ -21,5 +21,8 @@
   "website": "https://www.lepavillondesboulevards.fr",
   "lat": 44.8532133,
   "lng": -0.5926893,
-  "placeId": "ChIJfTM6GwYoVQ0RyNTN1pD9DCY"
+  "placeId": "ChIJfTM6GwYoVQ0RyNTN1pD9DCY",
+  "michelinId": "1220",
+  "chef": "Thomas Morel",
+  "chefSource": "michelin"
 }

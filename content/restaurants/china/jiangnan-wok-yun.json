@@ -10,5 +10,10 @@
   "sourceType": "none",
   "website": "https://www.shangri-la.com/cn/nanjing/shangrila/dining/restaurants/jiangnan-wok-yun/",
   "lat": 32.0804551,
-  "lng": 118.7773866
+  "lng": 118.7773866,
+  "michelinId": "1216566",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ]
 }

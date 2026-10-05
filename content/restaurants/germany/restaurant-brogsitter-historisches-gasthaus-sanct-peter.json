@@ -20,5 +20,11 @@
   "website": "https://www.sanct-peter.de/",
   "lat": 50.5306779,
   "lng": 7.0780355,
-  "placeId": "ChIJ6TlsGL7-vkcR7q1wtIdXErU"
+  "placeId": "ChIJ6TlsGL7-vkcR7q1wtIdXErU",
+  "michelinId": "75937",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sebastian Baumann",
+  "chefSource": "michelin"
 }

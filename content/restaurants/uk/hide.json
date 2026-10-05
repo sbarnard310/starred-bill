@@ -21,5 +21,12 @@
   "website": "https://hide.co.uk/",
   "lat": 51.5061533,
   "lng": -0.1443531,
-  "placeId": "ChIJn1DE_XsFdkgR6NyYk4IWd64"
+  "placeId": "ChIJn1DE_XsFdkgR6NyYk4IWd64",
+  "michelinId": "555475",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Josh Angus",
+  "chefSource": "site"
 }

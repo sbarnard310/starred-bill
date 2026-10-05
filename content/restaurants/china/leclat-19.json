@@ -11,5 +11,8 @@
   "sourceType": "none",
   "lat": 30.203099,
   "lng": 120.138321,
-  "placeId": "ChIJQ3QVDm19SzQRSoTTBL8l1qU"
+  "placeId": "ChIJQ3QVDm19SzQRSoTTBL8l1qU",
+  "michelinId": "1216457",
+  "chef": "Olivier Elzer",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://www.mononcle.no",
   "lat": 59.917166,
   "lng": 10.7389457,
-  "placeId": "ChIJF6SOh3dvQUYRf3c7twtZWVA"
+  "placeId": "ChIJF6SOh3dvQUYRf3c7twtZWVA",
+  "michelinId": "1202889",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ]
 }

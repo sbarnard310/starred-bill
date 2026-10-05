@@ -15,5 +15,13 @@
   "website": "https://laurieraphael.com/",
   "lat": 46.8171185,
   "lng": -71.2027233,
-  "placeId": "ChIJg_3REOeVuEwRdlpAUhTVIIM"
+  "placeId": "ChIJg_3REOeVuEwRdlpAUhTVIIM",
+  "michelinId": "1216409",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Raphaël Vézina",
+  "chefSource": "site"
 }

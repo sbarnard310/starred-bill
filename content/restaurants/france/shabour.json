@@ -20,5 +20,15 @@
   "website": "https://www.restaurantshabour.com/",
   "lat": 48.8659204,
   "lng": 2.3490797,
-  "placeId": "ChIJzean6Hlv5kcR9jkXW9USvyg"
+  "placeId": "ChIJzean6Hlv5kcR9jkXW9USvyg",
+  "michelinId": "1186515",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Assaf Granit",
+  "chefSource": "michelin"
 }

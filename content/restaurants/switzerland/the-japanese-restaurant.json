@@ -13,5 +13,12 @@
   "website": "https://www.thechediandermatt.com",
   "lat": 46.6358503,
   "lng": 8.5944996,
-  "placeId": "ChIJxxkpqlBxhUcR8Ds1pCPMEds"
+  "placeId": "ChIJxxkpqlBxhUcR8Ds1pCPMEds",
+  "michelinId": "430422",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Fabio Toffolon and Dominik Sato",
+  "chefSource": "michelin"
 }

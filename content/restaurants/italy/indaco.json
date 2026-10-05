@@ -13,5 +13,14 @@
   "website": "https://www.reginaisabella.com/it/hotel-con-ristorante-bar-ischia/ristorante-indaco",
   "lat": 40.7554715,
   "lng": 13.8853358,
-  "placeId": "ChIJO5hpV3FAOxMRn75H8RrMO-w"
+  "placeId": "ChIJO5hpV3FAOxMRn75H8RrMO-w",
+  "michelinId": "365994",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Pasquale Palamaro",
+  "chefSource": "michelin"
 }

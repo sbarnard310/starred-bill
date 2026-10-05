@@ -21,5 +21,12 @@
   "website": "https://www.deja-restaurant.com",
   "lat": 48.5873652,
   "lng": 7.7685673,
-  "placeId": "ChIJQ2-x7-vJlkcR3oLzlVBIUss"
+  "placeId": "ChIJQ2-x7-vJlkcR3oLzlVBIUss",
+  "michelinId": "1201380",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jeanne Satori + David Degoursy",
+  "chefSource": "michelin"
 }

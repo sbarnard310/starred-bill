@@ -25,5 +25,11 @@
   "website": "https://www.chevalblanc.com/fr/maison/paris/restaurants-et-bars/le-tout-paris/",
   "lat": 48.8588392,
   "lng": 2.342155,
-  "placeId": "ChIJxYJUC2lv5kcRlhdpWba_aGU"
+  "placeId": "ChIJxYJUC2lv5kcRlhdpWba_aGU",
+  "michelinId": "1198272",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "William Bequin",
+  "chefSource": "michelin"
 }

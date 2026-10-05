@@ -13,5 +13,13 @@
   "website": "https://www.votavota.it/",
   "lat": 36.7826492,
   "lng": 14.5571721,
-  "placeId": "ChIJm-r6rSm5ERMRF32DnX0Og3c"
+  "placeId": "ChIJm-r6rSm5ERMRF32DnX0Og3c",
+  "michelinId": "556135",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Giuseppe Causarano and Antonio Colombo",
+  "chefSource": "michelin"
 }

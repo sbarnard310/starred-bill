@@ -12,5 +12,16 @@
   "website": "https://restaurantbougainville.com/",
   "lat": 52.3725511,
   "lng": 4.8931716,
-  "placeId": "ChIJn8V5MccJxkcRHVZpXXoRPps"
+  "placeId": "ChIJn8V5MccJxkcRHVZpXXoRPps",
+  "michelinId": "555495",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Tim Golsteijn",
+  "chefSource": "michelin"
 }

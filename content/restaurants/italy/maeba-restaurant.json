@@ -13,5 +13,13 @@
   "website": "https://www.maeba.it/",
   "lat": 41.1218387,
   "lng": 15.0657388,
-  "placeId": "ChIJkdR2FU2IORMRdnbWXoQU8gs"
+  "placeId": "ChIJkdR2FU2IORMRdnbWXoQU8gs",
+  "michelinId": "556096",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Salvatore Ciccarelli",
+  "chefSource": "michelin"
 }

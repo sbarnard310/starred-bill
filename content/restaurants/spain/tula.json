@@ -13,5 +13,11 @@
   "website": "https://www.tularestaurante.com/",
   "lat": 38.7707289,
   "lng": 0.1925837,
-  "placeId": "ChIJweqhqPsOnhIRNCqMNYXKU7M"
+  "placeId": "ChIJweqhqPsOnhIRNCqMNYXKU7M",
+  "michelinId": "1090883",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Borja Susilla and Clara Puig",
+  "chefSource": "michelin"
 }

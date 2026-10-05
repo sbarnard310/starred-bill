@@ -15,5 +15,14 @@
   "website": "https://www.singlethreadfarms.com/",
   "lat": 38.6122599,
   "lng": -122.8697229,
-  "placeId": "ChIJ8TVwjTMXhIARQ5MLkvMyVvY"
+  "placeId": "ChIJ8TVwjTMXhIARQ5MLkvMyVvY",
+  "michelinId": "524105",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Kyle Connaughton",
+  "chefSource": "michelin"
 }

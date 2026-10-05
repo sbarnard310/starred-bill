@@ -12,5 +12,12 @@
   "website": "https://storchen.ch/en/restaurants/la-rotisserie/",
   "lat": 47.3712935,
   "lng": 8.5418052,
-  "placeId": "ChIJA4wBqwAKkEcR1Y1kaDLt-H8"
+  "placeId": "ChIJA4wBqwAKkEcR1Y1kaDLt-H8",
+  "michelinId": "114192",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Stefan Jäckel",
+  "chefSource": "site"
 }

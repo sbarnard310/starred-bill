@@ -23,5 +23,13 @@
   "website": "https://www.restaurantenmarge.com",
   "lat": 43.49083,
   "lng": 1.44087,
-  "placeId": "ChIJWw_VdYO8rhIRMBXUMwo-UIE"
+  "placeId": "ChIJWw_VdYO8rhIRMBXUMwo-UIE",
+  "michelinId": "380135",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ],
+  "chef": "Frank Renimel",
+  "chefSource": "michelin"
 }

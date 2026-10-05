@@ -20,5 +20,11 @@
   "website": "https://www.monchstein.at/",
   "lat": 47.8039566,
   "lng": 13.03569,
-  "placeId": "ChIJp0IwjKmRdkcRLtsC7nTls_g"
+  "placeId": "ChIJp0IwjKmRdkcRLtsC7nTls_g",
+  "michelinId": "116361",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Simon Wagner",
+  "chefSource": "michelin"
 }

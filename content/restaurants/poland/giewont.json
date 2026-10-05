@@ -15,5 +15,14 @@
   "website": "https://restaurantgiewont.com/",
   "lat": 49.2904379,
   "lng": 19.9217654,
-  "placeId": "ChIJAzx7JuTtFUcRL-JV3oWpA8E"
+  "placeId": "ChIJAzx7JuTtFUcRL-JV3oWpA8E",
+  "michelinId": "1198809",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Przemysław Sieradzki",
+  "chefSource": "site"
 }

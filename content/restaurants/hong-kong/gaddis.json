@@ -27,5 +27,11 @@
   "website": "https://www.peninsula.com/en/hong-kong/hotel-fine-dining/gaddis-french-restaurant",
   "lat": 22.294992,
   "lng": 114.17179,
-  "placeId": "ChIJRdyfK_AABDQR0VYtAOAhltg"
+  "placeId": "ChIJRdyfK_AABDQR0VYtAOAhltg",
+  "michelinId": "230738",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Anne-Sophie Nicolas",
+  "chefSource": "michelin"
 }

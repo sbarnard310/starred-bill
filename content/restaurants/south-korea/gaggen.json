@@ -22,5 +22,12 @@
   "noLunch": true,
   "lat": 37.52451,
   "lng": 127.04523,
-  "placeId": "ChIJKzILV7ulfDUR4-cgf86P2s4"
+  "placeId": "ChIJKzILV7ulfDUR4-cgf86P2s4",
+  "michelinId": "1212873",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Hyeon-Ah Choi and Jin-hee Won",
+  "chefSource": "michelin"
 }

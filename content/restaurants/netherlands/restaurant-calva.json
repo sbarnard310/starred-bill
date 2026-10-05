@@ -13,5 +13,12 @@
   "website": "https://www.restaurantcalva.nl/",
   "lat": 52.0459589,
   "lng": 4.3933204,
-  "placeId": "ChIJFXqYzuHJxUcRPt28TRsLXZk"
+  "placeId": "ChIJFXqYzuHJxUcRPt28TRsLXZk",
+  "michelinId": "532572",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ]
 }

@@ -13,5 +13,8 @@
   "website": "https://www.elmolinourdaniz.com",
   "lat": 42.909132,
   "lng": -1.533913,
-  "placeId": "ChIJo254LwvqUA0RdtQtu5lDeis"
+  "placeId": "ChIJo254LwvqUA0RdtQtu5lDeis",
+  "michelinId": "224056",
+  "chef": "David Yárnoz Martín",
+  "chefSource": "michelin"
 }

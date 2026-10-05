@@ -15,5 +15,12 @@
   "website": "https://www.demoerbeiwarmond.nl/",
   "lat": 52.1952173,
   "lng": 4.5027333,
-  "placeId": "ChIJ0eloBkzBxUcRUuFnYqJ_gjI"
+  "placeId": "ChIJ0eloBkzBxUcRUuFnYqJ_gjI",
+  "michelinId": "213205",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Michael Corpel",
+  "chefSource": "michelin"
 }

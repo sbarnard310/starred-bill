@@ -12,5 +12,12 @@
   "website": "https://cocosgn.com",
   "lat": 10.7808709,
   "lng": 106.6932479,
-  "placeId": "ChIJ87LjurgvdTERohxhKxCsPDM"
+  "placeId": "ChIJ87LjurgvdTERohxhKxCsPDM",
+  "michelinId": "1207539",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Thanh Vuong Vo",
+  "chefSource": "michelin"
 }

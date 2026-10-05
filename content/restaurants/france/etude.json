@@ -15,5 +15,11 @@
   "website": "https://www.etude-aix.fr/",
   "lat": 43.5283527,
   "lng": 5.446453,
-  "placeId": "ChIJkRqq8YmNyRIRv4tDGpOVG64"
+  "placeId": "ChIJkRqq8YmNyRIRv4tDGpOVG64",
+  "michelinId": "1207141",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Loïc Pétri",
+  "chefSource": "michelin"
 }

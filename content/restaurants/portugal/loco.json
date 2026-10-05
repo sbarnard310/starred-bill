@@ -14,5 +14,11 @@
   "website": "https://www.loco.pt/",
   "lat": 38.7123702,
   "lng": -9.1605213,
-  "placeId": "ChIJgXtRbGIzGQ0RPLCCkufw600"
+  "placeId": "ChIJgXtRbGIzGQ0RPLCCkufw600",
+  "michelinId": "495728",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alexandre Silva",
+  "chefSource": "michelin"
 }

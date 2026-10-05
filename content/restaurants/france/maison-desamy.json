@@ -23,5 +23,13 @@
   "website": "https://www.restaurant-maisondesamy.fr",
   "lat": 46.5349276,
   "lng": -1.2208933,
-  "placeId": "ChIJU-c8bC6fBkgRGw5K1xWfsu0"
+  "placeId": "ChIJU-c8bC6fBkgRGw5K1xWfsu0",
+  "michelinId": "1193729",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Simon Bessonnet",
+  "chefSource": "michelin"
 }

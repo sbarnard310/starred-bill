@@ -13,5 +13,12 @@
   "website": "https://www.bruderherzfinedine.at",
   "lat": 47.0533247,
   "lng": 10.6233813,
-  "placeId": "ChIJD5cFIOjRnEcR50hz4i4FRwA"
+  "placeId": "ChIJD5cFIOjRnEcR50hz4i4FRwA",
+  "michelinId": "1212337",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Christian Marent",
+  "chefSource": "michelin"
 }

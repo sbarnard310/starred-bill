@@ -12,5 +12,8 @@
   "website": "https://cieldining.com",
   "lat": 10.805146,
   "lng": 106.7341963,
-  "placeId": "ChIJ15AVEwAndTER67Ng7TJICpE"
+  "placeId": "ChIJ15AVEwAndTER67Ng7TJICpE",
+  "michelinId": "1217538",
+  "chef": "Viet Hong",
+  "chefSource": "site"
 }

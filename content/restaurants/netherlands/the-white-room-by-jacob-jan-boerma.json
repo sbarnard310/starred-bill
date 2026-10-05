@@ -12,5 +12,12 @@
   "website": "https://www.restaurantthewhiteroom.com/",
   "lat": 52.372726,
   "lng": 4.894229,
-  "placeId": "ChIJsfwjUMcJxkcRcRi3dxYbCKo"
+  "placeId": "ChIJsfwjUMcJxkcRcRi3dxYbCKo",
+  "michelinId": "115197",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Jacob Jan Boerma",
+  "chefSource": "michelin"
 }

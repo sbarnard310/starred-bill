@@ -12,5 +12,12 @@
   "website": "https://www.labarbecue.com/",
   "lat": 30.254782,
   "lng": -97.71734,
-  "placeId": "ChIJIR1tw661RIYRUgfHust5Vv0"
+  "placeId": "ChIJIR1tw661RIYRUgfHust5Vv0",
+  "michelinId": "1196558",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Ali Clem",
+  "chefSource": "site"
 }

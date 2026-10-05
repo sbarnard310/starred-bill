@@ -23,5 +23,14 @@
   "website": "https://www.takaotakano.com/",
   "lat": 45.7704565,
   "lng": 4.8426431,
-  "placeId": "ChIJEcqr9PDq9EcRvr6CTKNFWfY"
+  "placeId": "ChIJEcqr9PDq9EcRvr6CTKNFWfY",
+  "michelinId": "407977",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Takao Takano",
+  "chefSource": "michelin"
 }

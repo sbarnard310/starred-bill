@@ -23,5 +23,8 @@
   "website": "https://www.villamirasol.fr/fr/restaurant-gastronomique-mirasol",
   "lat": 43.891157,
   "lng": -0.5036755,
-  "placeId": "ChIJI81-uBPRVQ0RrkwQDEYw8IY"
+  "placeId": "ChIJI81-uBPRVQ0RrkwQDEYw8IY",
+  "michelinId": "1199186",
+  "chef": "Philippe Lagraula",
+  "chefSource": "michelin"
 }

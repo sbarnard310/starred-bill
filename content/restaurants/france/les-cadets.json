@@ -21,5 +21,11 @@
   "website": "https://www.restaurantlescadets.fr",
   "lat": 47.2227059,
   "lng": -1.5633164,
-  "placeId": "ChIJj7cDALXtBUgRxvReNen441A"
+  "placeId": "ChIJj7cDALXtBUgRxvReNen441A",
+  "michelinId": "1203086",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

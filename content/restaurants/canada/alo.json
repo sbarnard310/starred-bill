@@ -14,5 +14,11 @@
   "website": "https://alorestaurant.com/",
   "lat": 43.6485043,
   "lng": -79.3959736,
-  "placeId": "ChIJryijc9s0K4gRG9aU7SDTXdA"
+  "placeId": "ChIJryijc9s0K4gRG9aU7SDTXdA",
+  "michelinId": "549178",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Patrick Kriss",
+  "chefSource": "michelin"
 }

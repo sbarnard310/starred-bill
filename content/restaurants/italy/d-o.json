@@ -23,5 +23,14 @@
   "website": "https://www.cucinapop.do/",
   "lat": 45.487024,
   "lng": 9.011799,
-  "placeId": "ChIJkeSg2_PrhkcRl4P-fI4Mv4I"
+  "placeId": "ChIJkeSg2_PrhkcRl4P-fI4Mv4I",
+  "michelinId": "504378",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Davide Oldani",
+  "chefSource": "michelin"
 }

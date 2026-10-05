@@ -26,5 +26,11 @@
   "website": "https://www.texturerestaurant.com/",
   "lat": 55.689706,
   "lng": 12.573983,
-  "placeId": "ChIJRxVkAFJTUkYRGaQE2cWK7fU"
+  "placeId": "ChIJRxVkAFJTUkYRGaQE2cWK7fU",
+  "michelinId": "1215658",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Karim Khouani",
+  "chefSource": "michelin"
 }

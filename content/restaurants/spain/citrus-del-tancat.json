@@ -24,5 +24,14 @@
   "website": "https://citrusdeltancat.com/",
   "lat": 40.527957,
   "lng": 0.510362,
-  "placeId": "ChIJ78UjhPhRoBIRRONVoAmVO-o"
+  "placeId": "ChIJ78UjhPhRoBIRRONVoAmVO-o",
+  "michelinId": "1211222",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Aitor López",
+  "chefSource": "michelin"
 }

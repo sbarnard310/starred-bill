@@ -12,5 +12,14 @@
   "website": "https://makrisathens.com/en/",
   "lat": 37.9767678,
   "lng": 23.7230301,
-  "placeId": "ChIJbSeMEYC9oRQR6v8p_yhQWOk"
+  "placeId": "ChIJbSeMEYC9oRQR6v8p_yhQWOk",
+  "michelinId": "1210677",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Petros Dimas",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,13 @@
   "website": "https://tomygousset.com/tomy-and-co/",
   "lat": 48.8605434,
   "lng": 2.3095202,
-  "placeId": "ChIJc-FTvNlv5kcRhrLo0P6xZIg"
+  "placeId": "ChIJc-FTvNlv5kcRhrLo0P6xZIg",
+  "michelinId": "515432",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Tomy Gousset",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://www.restaurantergo.se/",
   "lat": 59.3337092,
   "lng": 18.0808598,
-  "placeId": "ChIJCYoQXG6dX0YRQvD9fggfOA0"
+  "placeId": "ChIJCYoQXG6dX0YRQvD9fggfOA0",
+  "michelinId": "1212220",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Petter Johansson",
+  "chefSource": "site"
 }

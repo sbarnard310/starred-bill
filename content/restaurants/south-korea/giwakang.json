@@ -29,5 +29,12 @@
   "website": "https://www.giwakang.com/",
   "lat": 37.52107,
   "lng": 127.02893,
-  "placeId": "ChIJvw75L8mjfDURSr7jm2tfq4U"
+  "placeId": "ChIJvw75L8mjfDURSr7jm2tfq4U",
+  "michelinId": "1241139",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Min-chul Kang",
+  "chefSource": "michelin"
 }

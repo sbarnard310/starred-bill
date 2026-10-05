@@ -25,5 +25,13 @@
   "website": "https://fleurdeloire.com/fr/restaurant-christophe-hay.html",
   "lat": 47.5823386,
   "lng": 1.3378048,
-  "placeId": "ChIJYbQnG5-p5EcRVktU2m62Xgw"
+  "placeId": "ChIJYbQnG5-p5EcRVktU2m62Xgw",
+  "michelinId": "118502",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Christophe Hay",
+  "chefSource": "michelin"
 }

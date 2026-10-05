@@ -15,5 +15,11 @@
   "website": "https://www.sonnenalp.de/gourmetrestaurant-silberdistel",
   "lat": 47.4904129,
   "lng": 10.2570174,
-  "placeId": "ChIJr0BXi2SDnEcRNo4JpyVxfo0"
+  "placeId": "ChIJr0BXi2SDnEcRNo4JpyVxfo0",
+  "michelinId": "263094",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Florian Wagenbach",
+  "chefSource": "site"
 }

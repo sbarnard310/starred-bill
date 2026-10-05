@@ -9,5 +9,10 @@
   "sourceType": "none",
   "website": "https://www.xinrongji.com/list",
   "lat": 30.2636133,
-  "lng": 120.0971693
+  "lng": 120.0971693,
+  "michelinId": "1199323",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ]
 }

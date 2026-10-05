@@ -23,5 +23,17 @@
   "website": "https://joia.it/",
   "lat": 45.477254,
   "lng": 9.201698,
-  "placeId": "ChIJT1Z9mMfGhkcRGkxbiVHt0d4"
+  "placeId": "ChIJT1Z9mMfGhkcRGkxbiVHt0d4",
+  "michelinId": "69260",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Sauro Ricci - Raffaele Minghini",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,8 @@
   "lunchSource": "https://ai-finedining.com/restaurants/%E8%AC%99%E5%AE%89%E5%92%8C-ken-anho/",
   "lat": 25.0345957,
   "lng": 121.552898,
-  "placeId": "ChIJN0-koc6rQjQRwxmq75C-AwI"
+  "placeId": "ChIJN0-koc6rQjQRwxmq75C-AwI",
+  "michelinId": "550737",
+  "chef": "Isao Wachi",
+  "chefSource": "michelin"
 }

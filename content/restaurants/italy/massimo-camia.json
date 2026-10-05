@@ -13,5 +13,11 @@
   "website": "https://www.massimocamia.it",
   "lat": 44.5803385,
   "lng": 7.9103944,
-  "placeId": "ChIJXZNZYcuv0hIRX0QszdZOtZo"
+  "placeId": "ChIJXZNZYcuv0hIRX0QszdZOtZo",
+  "michelinId": "431176",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Massimo Camia",
+  "chefSource": "michelin"
 }

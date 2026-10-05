@@ -15,5 +15,13 @@
   "website": "https://www.bosqaspen.com/",
   "lat": 39.18857,
   "lng": -106.81978,
-  "placeId": "ChIJpwZsz2I5QIcRTrrX_dgF0aM"
+  "placeId": "ChIJpwZsz2I5QIcRTrrX_dgF0aM",
+  "michelinId": "1206081",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Barclay Dodge",
+  "chefSource": "michelin"
 }

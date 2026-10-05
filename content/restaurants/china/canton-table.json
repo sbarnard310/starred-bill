@@ -12,5 +12,14 @@
   "website": "https://www.threeonthebund.com/en/restaurant/102008183385",
   "lat": 31.2363359,
   "lng": 121.4889373,
-  "placeId": "ChIJvyekmVhwsjURklTPmEjsRvE"
+  "placeId": "ChIJvyekmVhwsjURklTPmEjsRvE",
+  "michelinId": "1192026",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

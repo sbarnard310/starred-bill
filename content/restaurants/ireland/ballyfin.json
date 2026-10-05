@@ -19,5 +19,12 @@
   "website": "https://www.ballyfin.com/dining/the-restaurant",
   "lat": 53.057612,
   "lng": -7.431594,
-  "placeId": "ChIJ6WU0-CsMXUgRab9bbRMw2fo"
+  "placeId": "ChIJ6WU0-CsMXUgRab9bbRMw2fo",
+  "michelinId": "1211586",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Richard Picard-Edwards",
+  "chefSource": "site"
 }

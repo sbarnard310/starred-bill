@@ -24,5 +24,11 @@
   "website": "https://www.dorchestercollection.com/it/rome/hotel-eden/ristoranti-bar/la-terrazza/",
   "lat": 41.906379,
   "lng": 12.486031,
-  "placeId": "ChIJpduOjKphLxMR4AJb2V3VE5U"
+  "placeId": "ChIJpduOjKphLxMR4AJb2V3VE5U",
+  "michelinId": "68963",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

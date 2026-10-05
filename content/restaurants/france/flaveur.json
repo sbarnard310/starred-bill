@@ -21,5 +21,11 @@
   "website": "https://www.restaurant-flaveur.com/",
   "lat": 43.7014072,
   "lng": 7.2718302,
-  "placeId": "ChIJu3VywqXazRIRjj6xExZ6iBo"
+  "placeId": "ChIJu3VywqXazRIRjj6xExZ6iBo",
+  "michelinId": "257322",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Gaël Tourteaux and Mickaël Tourteaux",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,12 @@
   "website": "https://www.leverbois.fr",
   "lat": 49.2216723,
   "lng": 2.4667838,
-  "placeId": "ChIJIaPDBcpJ5kcR4fqDF-LY1ss"
+  "placeId": "ChIJIaPDBcpJ5kcR4fqDF-LY1ss",
+  "michelinId": "1983",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Guillaume Guibet",
+  "chefSource": "michelin"
 }

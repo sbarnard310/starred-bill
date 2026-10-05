@@ -15,5 +15,11 @@
   "website": "https://www.en-pleine-nature.com",
   "lat": 43.585293,
   "lng": 1.5294347,
-  "placeId": "ChIJxehjE4SWrhIRoqc9z27c2D0"
+  "placeId": "ChIJxehjE4SWrhIRoqc9z27c2D0",
+  "michelinId": "358841",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sylvain Joffre",
+  "chefSource": "michelin"
 }

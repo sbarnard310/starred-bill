@@ -12,5 +12,11 @@
   "website": "https://indiferente.pt/en/",
   "lat": 41.1554764,
   "lng": -8.6769615,
-  "placeId": "ChIJjYLThhNvJA0RQDzPq7l3Yd0"
+  "placeId": "ChIJjYLThhNvJA0RQDzPq7l3Yd0",
+  "michelinId": "1090774",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Angélica Salvador",
+  "chefSource": "michelin"
 }

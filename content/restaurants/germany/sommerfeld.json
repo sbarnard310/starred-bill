@@ -14,5 +14,9 @@
   "website": "https://www.sommerfeld-frankfurt.de/",
   "lat": 50.1076641,
   "lng": 8.670725,
-  "placeId": "ChIJb3IFcKoOvUcRqhp6BtVGvxk"
+  "placeId": "ChIJb3IFcKoOvUcRqhp6BtVGvxk",
+  "michelinId": "1214649",
+  "diets": [
+    "vegetarian"
+  ]
 }

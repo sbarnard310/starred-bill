@@ -26,5 +26,12 @@
   "website": "https://www.restaurantevett.com/",
   "lat": 37.52334,
   "lng": 127.0362,
-  "placeId": "ChIJTaVjWi6hfDURVegqLOB9oSs"
+  "placeId": "ChIJTaVjWi6hfDURVegqLOB9oSs",
+  "michelinId": "570663",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Joseph Lidgerwood",
+  "chefSource": "michelin"
 }

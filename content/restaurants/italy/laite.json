@@ -13,5 +13,13 @@
   "website": "https://www.ristorantelaite.com/",
   "lat": 46.5685736,
   "lng": 12.6948157,
-  "placeId": "ChIJU18heoroeUcRZv-ldVd3FXI"
+  "placeId": "ChIJU18heoroeUcRZv-ldVd3FXI",
+  "michelinId": "151908",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Fabrizia Meroi",
+  "chefSource": "michelin"
 }

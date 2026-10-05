@@ -13,5 +13,13 @@
   "website": "https://www.cullerdepau.com/es/",
   "lat": 42.4753696,
   "lng": -8.8958875,
-  "placeId": "ChIJlcdndk9ALw0R1AIwgh8b65Q"
+  "placeId": "ChIJlcdndk9ALw0R1AIwgh8b65Q",
+  "michelinId": "258636",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Javier Olleros Rodríguez",
+  "chefSource": "michelin"
 }

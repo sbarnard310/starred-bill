@@ -19,5 +19,13 @@
   "website": "https://almae-collection.com/lanauve/restaurants/",
   "lat": 45.6849656,
   "lng": -0.3541359,
-  "placeId": "ChIJlQ70_NXzAEgRFK9tgyOufqY"
+  "placeId": "ChIJlQ70_NXzAEgRFK9tgyOufqY",
+  "michelinId": "1209975",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Anthony Carballo",
+  "chefSource": "michelin"
 }

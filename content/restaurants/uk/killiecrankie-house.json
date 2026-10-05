@@ -24,5 +24,9 @@
   "website": "https://www.killiecrankiehouse.com/",
   "lat": 56.744289,
   "lng": -3.777188,
-  "placeId": "ChIJ8beD7fupiEgRIS5mITGs0Ac"
+  "placeId": "ChIJ8beD7fupiEgRIS5mITGs0Ac",
+  "michelinId": "1198899",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -13,5 +13,12 @@
   "website": "https://www.mecrestaurant.it",
   "lat": 38.1139131,
   "lng": 13.3572594,
-  "placeId": "ChIJqau0havvGRMRpZ-DiUz_5EE"
+  "placeId": "ChIJqau0havvGRMRpZ-DiUz_5EE",
+  "michelinId": "1193689",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Carmelo Trentacosti",
+  "chefSource": "michelin"
 }

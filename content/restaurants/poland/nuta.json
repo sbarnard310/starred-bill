@@ -13,5 +13,11 @@
   "website": "https://nuta.com.pl/",
   "lat": 52.2290249,
   "lng": 21.023509,
-  "placeId": "ChIJxeVHXKXNHkcRZUxdFx1GLEA"
+  "placeId": "ChIJxeVHXKXNHkcRZUxdFx1GLEA",
+  "michelinId": "1199252",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andrea Camastra",
+  "chefSource": "michelin"
 }

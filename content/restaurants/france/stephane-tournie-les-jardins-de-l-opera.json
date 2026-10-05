@@ -25,5 +25,8 @@
   "website": "https://www.lesjardinsdelopera.fr",
   "lat": 43.60391,
   "lng": 1.44401,
-  "placeId": "ChIJ_W73_Z28rhIRawjDjp_IZD0"
+  "placeId": "ChIJ_W73_Z28rhIRawjDjp_IZD0",
+  "michelinId": "8962",
+  "chef": "Stéphane Tournié",
+  "chefSource": "site"
 }

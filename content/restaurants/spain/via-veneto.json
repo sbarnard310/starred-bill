@@ -28,5 +28,15 @@
   "website": "https://www.viavenetobarcelona.com/",
   "lat": 41.392404,
   "lng": 2.138829,
-  "placeId": "ChIJI8Kpv3CYpBIRgYfrEaTZnyc"
+  "placeId": "ChIJI8Kpv3CYpBIRgYfrEaTZnyc",
+  "michelinId": "67959",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "David Andrés",
+  "chefSource": "michelin"
 }

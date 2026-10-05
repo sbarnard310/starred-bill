@@ -15,5 +15,11 @@
   "website": "https://www.hotel-marinca.com/la-verriere",
   "lat": 41.6913495,
   "lng": 8.902559,
-  "placeId": "ChIJawXl3Dc32hIRcTnCHVv_lRw"
+  "placeId": "ChIJawXl3Dc32hIRcTnCHVv_lRw",
+  "michelinId": "117353",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Romain Masset",
+  "chefSource": "michelin"
 }

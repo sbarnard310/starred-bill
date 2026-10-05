@@ -22,5 +22,11 @@
   "website": "https://husony.com/",
   "lat": 40.717397,
   "lng": -74.010584,
-  "placeId": "ChIJJy7oGqZZwokReiM-H1qtHYs"
+  "placeId": "ChIJJy7oGqZZwokReiM-H1qtHYs",
+  "michelinId": "1218089",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Buddha Lo",
+  "chefSource": "michelin"
 }

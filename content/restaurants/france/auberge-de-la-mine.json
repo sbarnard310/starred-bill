@@ -23,5 +23,9 @@
   "website": "https://www.aubergedelamine.com",
   "lat": 48.6468685,
   "lng": -0.5220022,
-  "placeId": "ChIJX7HCfAWGCUgR0IgD37ZNX_4"
+  "placeId": "ChIJX7HCfAWGCUgR0IgD37ZNX_4",
+  "michelinId": "3206",
+  "diets": [
+    "vegetarian"
+  ]
 }

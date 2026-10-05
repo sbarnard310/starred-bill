@@ -12,5 +12,9 @@
   "website": "https://www.aira.se",
   "lat": 59.3209372,
   "lng": 18.123702,
-  "placeId": "ChIJo-jR6FCDX0YRyX4XLbig0yI"
+  "placeId": "ChIJo-jR6FCDX0YRyX4XLbig0yI",
+  "michelinId": "1192266",
+  "diets": [
+    "vegetarian"
+  ]
 }

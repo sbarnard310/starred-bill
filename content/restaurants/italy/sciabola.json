@@ -22,5 +22,12 @@
   "website": "https://www.ristorantesciabola.it/",
   "lat": 43.955479,
   "lng": 10.177982,
-  "placeId": "ChIJ26Crk0cL1RIRCqol12rJBLs"
+  "placeId": "ChIJ26Crk0cL1RIRCqol12rJBLs",
+  "michelinId": "1215969",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Alessandro Ferrarini",
+  "chefSource": "michelin"
 }

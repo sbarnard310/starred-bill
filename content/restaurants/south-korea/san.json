@@ -28,5 +28,8 @@
   "website": "https://restaurantsan.com/",
   "lat": 37.52631,
   "lng": 127.03391,
-  "placeId": "ChIJr__jo2OjfDURT4N0VNw62MM"
+  "placeId": "ChIJr__jo2OjfDURT4N0VNw62MM",
+  "michelinId": "1241613",
+  "chef": "Seong-hyun Jo",
+  "chefSource": "michelin"
 }

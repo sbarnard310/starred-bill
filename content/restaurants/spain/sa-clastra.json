@@ -15,5 +15,12 @@
   "website": "https://www.castellsonclaret.com/gastronomia/restaurante-sa-clastra-alta-cocina-en-mallorca",
   "lat": 39.5918479,
   "lng": 2.4800457,
-  "placeId": "ChIJH8Zsw_6LlxIRcsJ6gJNu6Xo"
+  "placeId": "ChIJH8Zsw_6LlxIRcsJ6gJNu6Xo",
+  "michelinId": "1197148",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jordi Cantó",
+  "chefSource": "michelin"
 }

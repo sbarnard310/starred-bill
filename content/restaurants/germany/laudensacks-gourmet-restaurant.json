@@ -13,5 +13,11 @@
   "website": "https://www.laudensacks.de/gourmet/speisekarte",
   "lat": 50.190867,
   "lng": 10.0774434,
-  "placeId": "ChIJIcn3HDjjokcRsoYgGC0jq5k"
+  "placeId": "ChIJIcn3HDjjokcRsoYgGC0jq5k",
+  "michelinId": "81964",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Frederik Desch",
+  "chefSource": "michelin"
 }

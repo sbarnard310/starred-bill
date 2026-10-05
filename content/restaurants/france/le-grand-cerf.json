@@ -23,5 +23,13 @@
   "website": "https://le-grand-cerf.fr/",
   "lat": 49.1618024,
   "lng": 4.0109723,
-  "placeId": "ChIJX3Zb1fdy6UcRP1cULfAsq6E"
+  "placeId": "ChIJX3Zb1fdy6UcRP1cULfAsq6E",
+  "michelinId": "7297",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Dominique Giraudeau and Pascal Champion",
+  "chefSource": "michelin"
 }

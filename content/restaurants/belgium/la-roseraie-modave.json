@@ -15,5 +15,11 @@
   "website": "https://www.laroseraiemodave.com/",
   "lat": 50.4541319,
   "lng": 5.2866657,
-  "placeId": "ChIJkYP82l2swUcRw1CVbx37FMc"
+  "placeId": "ChIJkYP82l2swUcRw1CVbx37FMc",
+  "michelinId": "211087",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marie Trignon",
+  "chefSource": "michelin"
 }

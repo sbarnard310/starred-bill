@@ -30,5 +30,8 @@
   "website": "https://www.pilgrimparis.com/",
   "lat": 48.8425254,
   "lng": 2.313917,
-  "placeId": "ChIJq6pmRzFw5kcRNS0HHWYKbQ4"
+  "placeId": "ChIJq6pmRzFw5kcRNS0HHWYKbQ4",
+  "michelinId": "1000208",
+  "chef": "Masaki Nagao",
+  "chefSource": "site"
 }

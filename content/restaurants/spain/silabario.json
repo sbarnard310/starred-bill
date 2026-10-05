@@ -13,5 +13,8 @@
   "website": "https://www.silabario.gal",
   "lat": 42.2363322,
   "lng": -8.7220499,
-  "placeId": "ChIJ1fvRS2piLw0RuAhNR3uNuTs"
+  "placeId": "ChIJ1fvRS2piLw0RuAhNR3uNuTs",
+  "michelinId": "560920",
+  "chef": "Alberto González",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,11 @@
   "website": "https://www.sergevieira.com/",
   "lat": 44.8442761,
   "lng": 3.0019613,
-  "placeId": "ChIJRyjBJ9zQshIRf5uCYmkPMnI"
+  "placeId": "ChIJRyjBJ9zQshIRf5uCYmkPMnI",
+  "michelinId": "258222",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Aurélien Gransagne",
+  "chefSource": "michelin"
 }

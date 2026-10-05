@@ -16,5 +16,11 @@
   "website": "https://www.innesto.be/",
   "lat": 50.9874928,
   "lng": 5.3687051,
-  "placeId": "ChIJRV2xBGcmwUcRAIzH_wY8Cbw"
+  "placeId": "ChIJRV2xBGcmwUcRAIzH_wY8Cbw",
+  "michelinId": "209829",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Koen Verjans",
+  "chefSource": "michelin"
 }

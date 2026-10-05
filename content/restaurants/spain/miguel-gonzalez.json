@@ -13,5 +13,13 @@
   "website": "https://restaurantemiguelgonzalez.com/",
   "lat": 42.33592,
   "lng": -7.86502,
-  "placeId": "ChIJUXkEsW7-Lw0R-RXY4IKPoyw"
+  "placeId": "ChIJUXkEsW7-Lw0R-RXY4IKPoyw",
+  "michelinId": "1160046",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Miguel González",
+  "chefSource": "michelin"
 }

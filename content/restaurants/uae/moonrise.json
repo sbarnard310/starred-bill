@@ -14,5 +14,8 @@
   "website": "https://www.moon-rise.xyz",
   "lat": 25.2199042,
   "lng": 55.2763284,
-  "placeId": "ChIJS6LLvexDXz4RUPTv3HNI7Pc"
+  "placeId": "ChIJS6LLvexDXz4RUPTv3HNI7Pc",
+  "michelinId": "1201927",
+  "chef": "Solemann Haddad",
+  "chefSource": "site"
 }

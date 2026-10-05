@@ -12,5 +12,12 @@
   "website": "https://www.bastionnashville.com/",
   "lat": 36.1428944,
   "lng": -86.766474,
-  "placeId": "ChIJIS56-XFmZIgRsvTzijiFReo"
+  "placeId": "ChIJIS56-XFmZIgRsvTzijiFReo",
+  "michelinId": "1214985",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Josh Habiger",
+  "chefSource": "site"
 }

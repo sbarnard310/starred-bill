@@ -13,5 +13,12 @@
   "website": "https://www.restaurantguth.at/",
   "lat": 47.4718342,
   "lng": 9.7310731,
-  "placeId": "ChIJVYGc8eASm0cRNpnmY_Ch1IA"
+  "placeId": "ChIJVYGc8eASm0cRNpnmY_Ch1IA",
+  "michelinId": "105167",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Thomas Scheucher",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,9 @@
   "website": "https://www.quellenhof-gourmetstube1897.it/it/",
   "lat": 46.7459911,
   "lng": 11.2044911,
-  "placeId": "ChIJ4UFS-aWwgkcRPwL0zPbFuy0"
+  "placeId": "ChIJ4UFS-aWwgkcRPwL0zPbFuy0",
+  "michelinId": "532678",
+  "diets": [
+    "vegetarian"
+  ]
 }

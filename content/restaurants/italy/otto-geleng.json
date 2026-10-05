@@ -12,5 +12,12 @@
   "website": "https://www.belmond.com/it/dining/europe/italy/taormina/otto-geleng/",
   "lat": 37.852584,
   "lng": 15.290778,
-  "placeId": "ChIJ_0rtY0kRFBMRAE_KfYSmgOY"
+  "placeId": "ChIJ_0rtY0kRFBMRAE_KfYSmgOY",
+  "michelinId": "1181341",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Roberto Toro",
+  "chefSource": "michelin"
 }

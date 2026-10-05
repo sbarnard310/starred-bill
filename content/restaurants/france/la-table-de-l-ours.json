@@ -15,5 +15,11 @@
   "website": "https://www.hotellesbarmes.com",
   "lat": 45.4473775,
   "lng": 6.9746163,
-  "placeId": "ChIJR5iHqesLiUcRKNxGONdgqJI"
+  "placeId": "ChIJR5iHqesLiUcRKNxGONdgqJI",
+  "michelinId": "67670",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Antoine Gras",
+  "chefSource": "michelin"
 }

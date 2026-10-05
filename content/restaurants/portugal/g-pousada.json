@@ -15,5 +15,11 @@
   "website": "https://www.gpousada.com/",
   "lat": 41.8026186,
   "lng": -6.7541046,
-  "placeId": "ChIJ8-Lx_oRJOg0R33nwWd8Rkd0"
+  "placeId": "ChIJ8-Lx_oRJOg0R33nwWd8Rkd0",
+  "michelinId": "216627",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Óscar Geadas",
+  "chefSource": "site"
 }

@@ -15,5 +15,15 @@
   "website": "https://www.counterclt.com/",
   "lat": 35.227359,
   "lng": -80.8739371,
-  "placeId": "ChIJP7Nwj_6hVogRLjZmi8ZIIio"
+  "placeId": "ChIJP7Nwj_6hVogRLjZmi8ZIIio",
+  "michelinId": "1214995",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Sam Hart",
+  "chefSource": "michelin"
 }

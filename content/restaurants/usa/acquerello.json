@@ -18,5 +18,14 @@
   "website": "https://www.acquerellosf.com/",
   "lat": 37.79167,
   "lng": -122.42131,
-  "placeId": "ChIJwYdY3uqAhYARXUJUOIELoqU"
+  "placeId": "ChIJwYdY3uqAhYARXUJUOIELoqU",
+  "michelinId": "123501",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Suzette Gresham",
+  "chefSource": "michelin"
 }

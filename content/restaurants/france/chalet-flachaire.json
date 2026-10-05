@@ -27,5 +27,8 @@
   "website": "https://www.chaletflachaire.fr",
   "lat": 46.2854543,
   "lng": 6.7302501,
-  "placeId": "ChIJ30lSKYofjEcRqvCWy32CnoU"
+  "placeId": "ChIJ30lSKYofjEcRqvCWy32CnoU",
+  "michelinId": "1242583",
+  "chef": "Thomas Flachaire",
+  "chefSource": "michelin"
 }

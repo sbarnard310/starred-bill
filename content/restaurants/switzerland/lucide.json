@@ -14,5 +14,15 @@
   "website": "https://www.lucide-luzern.ch/",
   "lat": 47.0507301,
   "lng": 8.3115606,
-  "placeId": "ChIJNddVzhD7j0cRpwepIrJjJ6E"
+  "placeId": "ChIJNddVzhD7j0cRpwepIrJjJ6E",
+  "michelinId": "179640",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Maximilian Huber",
+  "chefSource": "michelin"
 }

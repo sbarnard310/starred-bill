@@ -23,5 +23,12 @@
   "website": "https://www.lopidom.fr",
   "lat": 47.3925849,
   "lng": 0.6446365,
-  "placeId": "ChIJ4WXbEXIq_UcRdEZMYGOQCMc"
+  "placeId": "ChIJ4WXbEXIq_UcRdEZMYGOQCMc",
+  "michelinId": "424882",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jérôme Roy",
+  "chefSource": "michelin"
 }

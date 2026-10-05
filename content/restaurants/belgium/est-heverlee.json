@@ -21,5 +21,12 @@
   "website": "https://www.restaurant-est.be/",
   "lat": 50.8609837,
   "lng": 4.6649637,
-  "placeId": "ChIJV7Cpk2NhwUcRmn07ubvWFHk"
+  "placeId": "ChIJV7Cpk2NhwUcRmn07ubvWFHk",
+  "michelinId": "1242817",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Abel Demeestere",
+  "chefSource": "michelin"
 }

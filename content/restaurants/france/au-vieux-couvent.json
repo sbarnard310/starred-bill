@@ -15,5 +15,14 @@
   "website": "https://www.auvieuxcouvent.fr",
   "lat": 48.317236,
   "lng": 7.7069299,
-  "placeId": "ChIJi5tglms3kUcRrM4ckHHVKsE"
+  "placeId": "ChIJi5tglms3kUcRrM4ckHHVKsE",
+  "michelinId": "7353",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alexis Albrecht",
+  "chefSource": "michelin"
 }

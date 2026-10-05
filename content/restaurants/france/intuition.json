@@ -23,5 +23,11 @@
   "website": "https://www.restaurant-intuition.fr",
   "lat": 49.1144055,
   "lng": -1.0985834,
-  "placeId": "ChIJo494ACmUC0gRYhTInHoaM-Y"
+  "placeId": "ChIJo494ACmUC0gRYhTInHoaM-Y",
+  "michelinId": "414372",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

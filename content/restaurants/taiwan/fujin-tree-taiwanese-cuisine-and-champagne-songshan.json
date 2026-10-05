@@ -26,5 +26,10 @@
   "website": "https://www.fujintreeshop.com/",
   "lat": 25.0565712,
   "lng": 121.5528189,
-  "placeId": "ChIJnaPPuO6rQjQRNZlSdw5Irik"
+  "placeId": "ChIJnaPPuO6rQjQRNZlSdw5Irik",
+  "michelinId": "1194393",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

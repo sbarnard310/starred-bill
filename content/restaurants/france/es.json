@@ -25,5 +25,8 @@
   "website": "https://es-restaurant.fr/",
   "lat": 48.856449,
   "lng": 2.3211774,
-  "placeId": "ChIJ3dS2pSpw5kcR_W2ALSc4OWA"
+  "placeId": "ChIJ3dS2pSpw5kcR_W2ALSc4OWA",
+  "michelinId": "403026",
+  "chef": "Takayuki Honjo",
+  "chefSource": "michelin"
 }

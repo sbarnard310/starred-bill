@@ -25,5 +25,13 @@
   "lunchSource": "https://www.mirrormedia.mg/story/20260327food001",
   "lat": 25.054178,
   "lng": 121.524244,
-  "placeId": "ChIJo1t66japQjQRa5J0QU3DmYw"
+  "placeId": "ChIJo1t66japQjQRa5J0QU3DmYw",
+  "michelinId": "569910",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Paul Lee",
+  "chefSource": "michelin"
 }

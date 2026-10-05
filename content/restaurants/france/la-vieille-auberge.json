@@ -15,5 +15,8 @@
   "website": "https://www.la-vieille-auberge-77.com",
   "lat": 48.8130658,
   "lng": 2.8295952,
-  "placeId": "ChIJtSsu5TCo6EcRW9_My-zqExk"
+  "placeId": "ChIJtSsu5TCo6EcRW9_My-zqExk",
+  "michelinId": "1206650",
+  "chef": "Nicolas Tissier",
+  "chefSource": "michelin"
 }

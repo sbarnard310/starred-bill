@@ -13,5 +13,13 @@
   "website": "https://www.restaurantarrels.com/",
   "lat": 39.6786129,
   "lng": -0.2781263,
-  "placeId": "ChIJ1_2k9BYVYA0RRq5vCnMafJo"
+  "placeId": "ChIJ1_2k9BYVYA0RRq5vCnMafJo",
+  "michelinId": "1154554",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Vicky Sevilla",
+  "chefSource": "michelin"
 }

@@ -14,5 +14,14 @@
   "website": "https://www.wirtschaftimfranz.ch",
   "lat": 47.3722302,
   "lng": 8.5195348,
-  "placeId": "ChIJe9KzPh8KkEcRtF2_80Zz1cQ"
+  "placeId": "ChIJe9KzPh8KkEcRtF2_80Zz1cQ",
+  "michelinId": "482140",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Sebastian Funck",
+  "chefSource": "michelin"
 }

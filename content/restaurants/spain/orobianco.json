@@ -13,5 +13,11 @@
   "wine": 71,
   "website": "https://www.orobianco.es/",
   "lat": 38.6665147,
-  "lng": 0.0451019
+  "lng": 0.0451019,
+  "michelinId": "524981",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Paolo Casagrande",
+  "chefSource": "michelin"
 }

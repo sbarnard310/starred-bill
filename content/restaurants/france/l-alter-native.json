@@ -25,5 +25,12 @@
   "website": "https://www.lalternativegoujon.fr",
   "lat": 43.3426371,
   "lng": 3.21756,
-  "placeId": "ChIJR3SmxTAPsRIRENqsdB-YBZE"
+  "placeId": "ChIJR3SmxTAPsRIRENqsdB-YBZE",
+  "michelinId": "1197275",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

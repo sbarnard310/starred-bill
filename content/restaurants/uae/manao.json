@@ -12,5 +12,11 @@
   "website": "https://manao.ae",
   "lat": 25.2109571,
   "lng": 55.2558556,
-  "placeId": "ChIJW2DSDblDXz4Rdrt-RN0-7qE"
+  "placeId": "ChIJW2DSDblDXz4Rdrt-RN0-7qE",
+  "michelinId": "1217282",
+  "diets": [
+    "halal"
+  ],
+  "chef": "Abhiraj Khatwani",
+  "chefSource": "michelin"
 }

@@ -22,5 +22,8 @@
   "website": "https://yardbirdrestaurant.com/",
   "lat": 22.2869992,
   "lng": 114.1492298,
-  "placeId": "ChIJk_hd_HsABDQR5ZMLVcC33Vk"
+  "placeId": "ChIJk_hd_HsABDQR5ZMLVcC33Vk",
+  "michelinId": "1191544",
+  "chef": "Matt Abergel",
+  "chefSource": "site"
 }

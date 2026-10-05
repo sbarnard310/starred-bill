@@ -13,5 +13,8 @@
   "website": "https://www.debergenske.no/en/bergen/restaurants/omakase-by-sergey-pak/",
   "lat": 60.3939119,
   "lng": 5.329652,
-  "placeId": "ChIJIcr8GAD_PEYRdGgj6BW0gCg"
+  "placeId": "ChIJIcr8GAD_PEYRdGgj6BW0gCg",
+  "michelinId": "1215015",
+  "chef": "Sergey Pak",
+  "chefSource": "michelin"
 }

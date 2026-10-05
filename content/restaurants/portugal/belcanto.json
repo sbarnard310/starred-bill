@@ -15,5 +15,12 @@
   "website": "https://www.belcanto.pt/",
   "lat": 38.7104102,
   "lng": -9.1415741,
-  "placeId": "ChIJITj75340GQ0RXULVgWMFloA"
+  "placeId": "ChIJITj75340GQ0RXULVgWMFloA",
+  "michelinId": "357840",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "José Avillez",
+  "chefSource": "michelin"
 }

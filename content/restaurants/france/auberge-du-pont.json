@@ -25,5 +25,11 @@
   "website": "https://auberge-du-pont.com/",
   "lat": 45.7973696,
   "lng": 3.2581585,
-  "placeId": "ChIJP58owkbh9kcRHBQlFOcFhJQ"
+  "placeId": "ChIJP58owkbh9kcRHBQlFOcFhJQ",
+  "michelinId": "37415",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ]
 }

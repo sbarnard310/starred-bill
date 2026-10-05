@@ -26,5 +26,11 @@
   "website": "https://www.idam.com/",
   "lat": 25.2957162,
   "lng": 51.5393359,
-  "placeId": "ChIJdaeOehfFRT4RBm6C9yJEbKo"
+  "placeId": "ChIJdaeOehfFRT4RBm6C9yJEbKo",
+  "michelinId": "1213825",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

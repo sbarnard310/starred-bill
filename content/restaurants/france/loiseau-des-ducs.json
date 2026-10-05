@@ -13,5 +13,13 @@
   "website": "https://www.bernard-loiseau.com/",
   "lat": 47.320818,
   "lng": 5.0412609,
-  "placeId": "ChIJR6vaU-id8kcRWcnBwy7TYHE"
+  "placeId": "ChIJR6vaU-id8kcRWcnBwy7TYHE",
+  "michelinId": "414353",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Iulian Fistos",
+  "chefSource": "michelin"
 }

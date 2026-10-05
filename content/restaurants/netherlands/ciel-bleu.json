@@ -12,5 +12,8 @@
   "website": "https://www.cielbleu.nl/",
   "lat": 52.3486359,
   "lng": 4.8928264,
-  "placeId": "ChIJMzqLEIsJxkcRaZsOtXi1IsA"
+  "placeId": "ChIJMzqLEIsJxkcRaZsOtXi1IsA",
+  "michelinId": "115430",
+  "chef": "Arjan Speelman",
+  "chefSource": "michelin"
 }

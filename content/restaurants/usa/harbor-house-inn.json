@@ -15,5 +15,11 @@
   "website": "https://www.theharborhouseinn.com/",
   "lat": 39.1355655,
   "lng": -123.7190639,
-  "placeId": "ChIJRQKgSsUAgYAR4dtFnWx1UTg"
+  "placeId": "ChIJRQKgSsUAgYAR4dtFnWx1UTg",
+  "michelinId": "569657",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Matthew Kammerer",
+  "chefSource": "michelin"
 }

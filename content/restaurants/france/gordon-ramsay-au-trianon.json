@@ -20,5 +20,11 @@
   "website": "https://waldorfastoriaversailles.fr/",
   "lat": 48.8108088,
   "lng": 2.1203284,
-  "placeId": "ChIJN4KDSMd95kcRHu0Ve8wdXY4"
+  "placeId": "ChIJN4KDSMd95kcRHu0Ve8wdXY4",
+  "michelinId": "6813",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Gabriele Ravasio",
+  "chefSource": "michelin"
 }

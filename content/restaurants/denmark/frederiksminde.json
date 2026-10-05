@@ -15,5 +15,14 @@
   "website": "https://frederiksminde.com/",
   "lat": 55.12424,
   "lng": 12.049009,
-  "placeId": "ChIJ3ZzeKT_FUkYRJrvXKnxShDU"
+  "placeId": "ChIJ3ZzeKT_FUkYRJrvXKnxShDU",
+  "michelinId": "467297",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Jonas Mikkelsen",
+  "chefSource": "michelin"
 }

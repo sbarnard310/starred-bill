@@ -30,5 +30,8 @@
   "website": "https://prevelle.fr/",
   "lat": 48.8599912,
   "lng": 2.3152937,
-  "placeId": "ChIJQXGR4M1v5kcRPzerL5FBK_U"
+  "placeId": "ChIJQXGR4M1v5kcRPzerL5FBK_U",
+  "michelinId": "1242233",
+  "chef": "Romain Meder",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,14 @@
   "website": "https://www.wildhoneystjames.co.uk/",
   "lat": 51.5074626,
   "lng": -0.1321565,
-  "placeId": "ChIJCXHRB9EEdkgRrOgHyE2YKbs"
+  "placeId": "ChIJCXHRB9EEdkgRrOgHyE2YKbs",
+  "michelinId": "1183631",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Anthony Demetre",
+  "chefSource": "michelin"
 }

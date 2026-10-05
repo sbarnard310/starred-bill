@@ -30,5 +30,8 @@
   "website": "https://aldehyde.paris/",
   "lat": 48.85496,
   "lng": 2.3554,
-  "placeId": "ChIJuZn5THBx5kcRIN1OExKjBoU"
+  "placeId": "ChIJuZn5THBx5kcRIN1OExKjBoU",
+  "michelinId": "1215861",
+  "chef": "Youssef Marzouk",
+  "chefSource": "michelin"
 }

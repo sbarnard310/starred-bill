@@ -15,5 +15,11 @@
   "website": "https://www.restaurant-alter.be/",
   "lat": 50.8024317,
   "lng": 5.4657753,
-  "placeId": "ChIJv90KSn7hwEcRNiMX0wcF_o8"
+  "placeId": "ChIJv90KSn7hwEcRNiMX0wcF_o8",
+  "michelinId": "325897",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jo Grootaers",
+  "chefSource": "site"
 }

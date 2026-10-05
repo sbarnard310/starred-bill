@@ -15,5 +15,10 @@
   "website": "https://www.laciaudeltornavento.it/",
   "lat": 44.6892253,
   "lng": 8.0867172,
-  "placeId": "ChIJ0VNxv-O00hIR8ji-_VcmTxY"
+  "placeId": "ChIJ0VNxv-O00hIR8ji-_VcmTxY",
+  "michelinId": "155232",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

@@ -21,5 +21,10 @@
   "website": "https://www.formelbgroup.dk/formelb",
   "lat": 55.670666,
   "lng": 12.535531,
-  "placeId": "ChIJtxaAuZlTUkYRt9S0ULtIiuA"
+  "placeId": "ChIJtxaAuZlTUkYRt9S0ULtIiuA",
+  "michelinId": "112784",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

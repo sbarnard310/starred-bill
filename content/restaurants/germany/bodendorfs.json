@@ -13,5 +13,11 @@
   "website": "https://www.landhaus-stricker.com/",
   "lat": 54.9010855,
   "lng": 8.3328345,
-  "placeId": "ChIJZVacNirctEcRSCdXjS0ZrLg"
+  "placeId": "ChIJZVacNirctEcRSCdXjS0ZrLg",
+  "michelinId": "78062",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Holger Bodendorf and Denis Brühl",
+  "chefSource": "michelin"
 }

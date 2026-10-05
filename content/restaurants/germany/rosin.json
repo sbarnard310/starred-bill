@@ -15,5 +15,12 @@
   "website": "https://www.frankrosin.de/",
   "lat": 51.7191315,
   "lng": 7.0132284,
-  "placeId": "ChIJZbFwzTDxuEcRzPHlS8w7wss"
+  "placeId": "ChIJZbFwzTDxuEcRzPHlS8w7wss",
+  "michelinId": "72113",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Frank Rosin and Oliver Engelke",
+  "chefSource": "michelin"
 }

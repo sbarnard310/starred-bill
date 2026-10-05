@@ -21,5 +21,12 @@
   "website": "https://www.trishnalondon.com/",
   "lat": 51.5183427,
   "lng": -0.1529346,
-  "placeId": "ChIJ8fHhiM0adkgR5dxGPhTVlvA"
+  "placeId": "ChIJ8fHhiM0adkgR5dxGPhTVlvA",
+  "michelinId": "256306",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

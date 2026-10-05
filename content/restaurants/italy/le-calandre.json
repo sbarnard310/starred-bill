@@ -13,5 +13,13 @@
   "website": "https://alajmo.it/pages/homepage-le-calandre",
   "lat": 45.4215425,
   "lng": 11.8096633,
-  "placeId": "ChIJRwG9TKLZfkcRqCF9Hf_ANrk"
+  "placeId": "ChIJRwG9TKLZfkcRqCF9Hf_ANrk",
+  "michelinId": "150111",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Massimiliano Alajmo",
+  "chefSource": "site"
 }

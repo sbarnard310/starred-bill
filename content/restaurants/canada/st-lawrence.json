@@ -15,5 +15,11 @@
   "website": "https://www.stlawrencerestaurant.com/",
   "lat": 49.2832679,
   "lng": -123.0978836,
-  "placeId": "ChIJl9_waXFxhlQRbBq6lKwoHic"
+  "placeId": "ChIJl9_waXFxhlQRbBq6lKwoHic",
+  "michelinId": "1198916",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jean-Christophe Poirier",
+  "chefSource": "michelin"
 }

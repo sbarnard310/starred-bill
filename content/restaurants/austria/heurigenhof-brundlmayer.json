@@ -12,5 +12,11 @@
   "sourceType": "none",
   "lat": 48.4739271,
   "lng": 15.6746034,
-  "placeId": "ChIJWQkbZZ-cckcRIflviApVALQ"
+  "placeId": "ChIJWQkbZZ-cckcRIflviApVALQ",
+  "michelinId": "109757",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Matthias Schütz",
+  "chefSource": "michelin"
 }

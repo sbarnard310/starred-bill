@@ -13,5 +13,11 @@
   "website": "https://lejulien.be/",
   "lat": 51.0598787,
   "lng": 3.4666139,
-  "placeId": "ChIJP2avJyZww0cRMvNBCr5h3LE"
+  "placeId": "ChIJP2avJyZww0cRMvNBCr5h3LE",
+  "michelinId": "1217196",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Davy Devlieghere",
+  "chefSource": "site"
 }

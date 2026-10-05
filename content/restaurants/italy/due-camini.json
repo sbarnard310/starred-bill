@@ -13,5 +13,16 @@
   "website": "https://www.ristoranteduecamini.it",
   "lat": 40.8760649,
   "lng": 17.396077,
-  "placeId": "ChIJP54bYIVJRhMRPI6tpqSaNsE"
+  "placeId": "ChIJP54bYIVJRhMRPI6tpqSaNsE",
+  "michelinId": "503934",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Domingo Schingaro",
+  "chefSource": "michelin"
 }

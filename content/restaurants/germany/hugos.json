@@ -12,5 +12,12 @@
   "website": "https://www.berlin.intercontinental.com/de/dine/hugos-restaurant/",
   "lat": 52.506852,
   "lng": 13.3455401,
-  "placeId": "ChIJF6VjuqxRqEcRiTGE53QfKHE"
+  "placeId": "ChIJF6VjuqxRqEcRiTGE53QfKHE",
+  "michelinId": "71250",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Johannes Gehrich",
+  "chefSource": "michelin"
 }

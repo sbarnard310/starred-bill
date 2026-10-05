@@ -30,5 +30,13 @@
   "website": "https://sitiolaestocada.com/restaurante/",
   "lat": -33.430301,
   "lng": -69.2050301,
-  "placeId": "ChIJb6DzQlI1fJYRk3GjpH83_PY"
+  "placeId": "ChIJb6DzQlI1fJYRk3GjpH83_PY",
+  "michelinId": "1247785",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Enzo González Petra",
+  "chefSource": "michelin"
 }

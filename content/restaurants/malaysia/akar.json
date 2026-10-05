@@ -12,5 +12,10 @@
   "website": "https://www.akarkl.com",
   "lat": 3.1528453,
   "lng": 101.6208917,
-  "placeId": "ChIJzQV-vENJzDER1u-w_fLKF6E"
+  "placeId": "ChIJzQV-vENJzDER1u-w_fLKF6E",
+  "michelinId": "1201858",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

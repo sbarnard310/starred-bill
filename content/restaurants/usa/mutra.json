@@ -16,5 +16,14 @@
   "website": "https://mutramiami.com/",
   "lat": 25.889159,
   "lng": -80.15407,
-  "placeId": "ChIJVxmvsZCz2YgRamqn_tHB5Tw"
+  "placeId": "ChIJVxmvsZCz2YgRamqn_tHB5Tw",
+  "michelinId": "1243269",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Raz Shabtai",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.restaurant-mangold.at/",
   "lat": 47.5299154,
   "lng": 9.7520133,
-  "placeId": "ChIJ9dYy8xUNm0cR1uU22sDSb5Y"
+  "placeId": "ChIJ9dYy8xUNm0cR1uU22sDSb5Y",
+  "michelinId": "105301",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Michael Schwarzenbacher",
+  "chefSource": "michelin"
 }

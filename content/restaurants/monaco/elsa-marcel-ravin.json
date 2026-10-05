@@ -20,5 +20,11 @@
   "website": "https://www.montecarlosbm.com/en/restaurant-monaco/elsa",
   "lat": 43.750654,
   "lng": 7.444318,
-  "placeId": "ChIJl0nvd33CzRIRdDJJT4pX_m0"
+  "placeId": "ChIJl0nvd33CzRIRdDJJT4pX_m0",
+  "michelinId": "7519",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Domenico D'Antonio",
+  "chefSource": "michelin"
 }

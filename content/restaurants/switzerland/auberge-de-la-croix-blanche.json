@@ -13,5 +13,10 @@
   "website": "https://www.croixblanche.ch/",
   "lat": 46.8831298,
   "lng": 7.0690391,
-  "placeId": "ChIJTYO9TIFyjkcRNtYpUawejBA"
+  "placeId": "ChIJTYO9TIFyjkcRNtYpUawejBA",
+  "michelinId": "180281",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

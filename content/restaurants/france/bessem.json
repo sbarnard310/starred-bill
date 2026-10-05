@@ -15,5 +15,13 @@
   "website": "https://www.bessem-restaurant.com/",
   "lat": 43.54057,
   "lng": 6.9334529,
-  "placeId": "ChIJ24xwsCeDzhIRA2CTreat538"
+  "placeId": "ChIJ24xwsCeDzhIRA2CTreat538",
+  "michelinId": "534329",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "halal"
+  ],
+  "chef": "Bessem Ben Abdallah",
+  "chefSource": "michelin"
 }

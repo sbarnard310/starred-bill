@@ -15,5 +15,11 @@
   "website": "https://www.jaegerhof.ch/",
   "lat": 47.430792,
   "lng": 9.3833953,
-  "placeId": "ChIJv3o1wc8fm0cRT1cZxUF0fa4"
+  "placeId": "ChIJv3o1wc8fm0cRT1cZxUF0fa4",
+  "michelinId": "513169",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Agron Lleshi",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://lagrappedor.com/",
   "lat": 49.6610743,
   "lng": 5.8492842,
-  "placeId": "ChIJB7gjo5Hr6kcR-VbUNu2XC1k"
+  "placeId": "ChIJB7gjo5Hr6kcR-VbUNu2XC1k",
+  "michelinId": "1203424",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Clément Petitjean",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,8 @@
   "website": "https://www.ristoranteiltino.com/",
   "lat": 41.747204,
   "lng": 12.257445,
-  "placeId": "ChIJ19Hgjd7vJRMR1aISebojPA8"
+  "placeId": "ChIJ19Hgjd7vJRMR1aISebojPA8",
+  "michelinId": "493840",
+  "chef": "Daniele Usai",
+  "chefSource": "michelin"
 }

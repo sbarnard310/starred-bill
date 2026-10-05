@@ -13,5 +13,12 @@
   "website": "https://www.ammolite-restaurant.de/",
   "lat": 48.259724,
   "lng": 7.7251226,
-  "placeId": "ChIJc1psbCs6kUcR8Fhv3Go60Rg"
+  "placeId": "ChIJc1psbCs6kUcR8Fhv3Go60Rg",
+  "michelinId": "379196",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Peter Hagen-Wiest",
+  "chefSource": "michelin"
 }

@@ -30,5 +30,8 @@
   "website": "https://www.palacehoteltokyo.com/",
   "lat": 35.684502,
   "lng": 139.76123,
-  "placeId": "ChIJvdCFOViNGGARX8UQQd7MBmg"
+  "placeId": "ChIJvdCFOViNGGARX8UQQd7MBmg",
+  "michelinId": "1193871",
+  "chef": "Kei Kojima",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,10 @@
   "website": "https://jpg.josunhotel.com/dining/EatanicGarden.do",
   "lat": 37.50304,
   "lng": 127.04158,
-  "placeId": "ChIJKWHZw3alfDUR5A5F61Oqj5I"
+  "placeId": "ChIJKWHZw3alfDUR5A5F61Oqj5I",
+  "michelinId": "1202660",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

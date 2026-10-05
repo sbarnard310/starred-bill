@@ -17,5 +17,12 @@
   "website": "https://www.hooganetbeaufort.com/",
   "lat": 45.5420842,
   "lng": -73.562878,
-  "placeId": "ChIJLWsVh-4byUwR8JlDKIYRZvY"
+  "placeId": "ChIJLWsVh-4byUwR8JlDKIYRZvY",
+  "michelinId": "1215904",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Marc-André Jetté",
+  "chefSource": "michelin"
 }

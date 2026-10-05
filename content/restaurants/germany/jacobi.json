@@ -14,5 +14,11 @@
   "website": "https://jacobi-freiburg.de/",
   "lat": 47.9944572,
   "lng": 7.85392,
-  "placeId": "ChIJVSkJYnwdkUcR8yEDQrPtQ6o"
+  "placeId": "ChIJVSkJYnwdkUcR8yEDQrPtQ6o",
+  "michelinId": "1209341",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christoph Kaiser",
+  "chefSource": "michelin"
 }

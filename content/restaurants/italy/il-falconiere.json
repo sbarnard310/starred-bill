@@ -18,5 +18,13 @@
   "website": "https://www.ilfalconiere.it/it/hotel-toscana-con-ristorante-stellato/ristorante-il-falconiere",
   "lat": 43.290269,
   "lng": 11.971394,
-  "placeId": "ChIJ5yQMZZr4KxMRNwMIYrcvh-4"
+  "placeId": "ChIJ5yQMZZr4KxMRNwMIYrcvh-4",
+  "michelinId": "132367",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Silvia Baracchi",
+  "chefSource": "site"
 }

@@ -25,5 +25,12 @@
   "website": "https://aubergepompoire.fr",
   "lat": 47.2830529,
   "lng": 0.4450558,
-  "placeId": "ChIJ0QZez3w6_UcRPInQlV2aOGQ"
+  "placeId": "ChIJ0QZez3w6_UcRPInQlV2aOGQ",
+  "michelinId": "200566",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Bastien Gillet",
+  "chefSource": "michelin"
 }

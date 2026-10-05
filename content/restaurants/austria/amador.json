@@ -12,5 +12,11 @@
   "website": "https://www.restaurant-amador.com/",
   "lat": 48.2539188,
   "lng": 16.3584526,
-  "placeId": "ChIJUV5dfRgGbUcRXHN5xPvHT-U"
+  "placeId": "ChIJUV5dfRgGbUcRXHN5xPvHT-U",
+  "michelinId": "489481",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Juan Amador",
+  "chefSource": "michelin"
 }

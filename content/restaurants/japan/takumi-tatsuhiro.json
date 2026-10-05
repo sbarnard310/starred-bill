@@ -35,5 +35,13 @@
   "lunchSource": "https://omakaseje.com/restaurants/pm662118",
   "lat": 35.688768,
   "lng": 139.713111,
-  "placeId": "ChIJtaK7lumMGGARpQ2aPbzVFek"
+  "placeId": "ChIJtaK7lumMGGARpQ2aPbzVFek",
+  "michelinId": "1241425",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

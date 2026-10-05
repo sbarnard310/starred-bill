@@ -23,5 +23,8 @@
   "website": "https://www.lepatio-thierryrenou.com/",
   "lat": 44.6568136,
   "lng": -1.1480683,
-  "placeId": "ChIJazYdm9ieVA0RuXuFnhuTAzE"
+  "placeId": "ChIJazYdm9ieVA0RuXuFnhuTAzE",
+  "michelinId": "396",
+  "chef": "Thierry Renou",
+  "chefSource": "michelin"
 }

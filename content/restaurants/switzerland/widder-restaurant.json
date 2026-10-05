@@ -12,5 +12,13 @@
   "website": "https://www.widderhotel.com/de/restaurants/widder-restaurant/",
   "lat": 47.3722203,
   "lng": 8.5398636,
-  "placeId": "ChIJhfDAJAcKkEcR59EtQQox4TQ"
+  "placeId": "ChIJhfDAJAcKkEcR59EtQQox4TQ",
+  "michelinId": "1191539",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Stefan Heilemann",
+  "chefSource": "michelin"
 }

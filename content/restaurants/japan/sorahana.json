@@ -31,5 +31,11 @@
   "website": "https://sorahana-japan.net/",
   "lat": 35.662679,
   "lng": 139.744266,
-  "placeId": "ChIJMf2LOOKLGGARDeHguUL6iSw"
+  "placeId": "ChIJMf2LOOKLGGARDeHguUL6iSw",
+  "michelinId": "1195780",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

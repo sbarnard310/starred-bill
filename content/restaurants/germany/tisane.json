@@ -12,5 +12,12 @@
   "website": "https://restaurant-tisane.de/",
   "lat": 49.4540833,
   "lng": 11.0758388,
-  "placeId": "ChIJ940zLexXn0cRopAltNMmwDo"
+  "placeId": "ChIJ940zLexXn0cRopAltNMmwDo",
+  "michelinId": "1198243",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "René Stein",
+  "chefSource": "michelin"
 }

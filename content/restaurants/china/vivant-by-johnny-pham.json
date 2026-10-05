@@ -9,5 +9,10 @@
   "sourceType": "none",
   "website": "https://www.vivantshanghai.com",
   "lat": 31.2320088,
-  "lng": 121.4733067
+  "lng": 121.4733067,
+  "michelinId": "1219313",
+  "diets": [
+    "gluten-free",
+    "halal"
+  ]
 }

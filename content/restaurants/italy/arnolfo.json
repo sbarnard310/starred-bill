@@ -25,5 +25,14 @@
   "website": "https://www.arnolfo.com/",
   "lat": 43.422108,
   "lng": 11.11637,
-  "placeId": "ChIJHRIqD-A6KhMRDnWRom_Tpgw"
+  "placeId": "ChIJHRIqD-A6KhMRDnWRom_Tpgw",
+  "michelinId": "131768",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Gaetano Trovato",
+  "chefSource": "michelin"
 }

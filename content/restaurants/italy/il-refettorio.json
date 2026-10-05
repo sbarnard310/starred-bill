@@ -13,5 +13,14 @@
   "website": "https://monasterosantarosa.com/it/ristorazione/",
   "lat": 40.6207949,
   "lng": 14.5770614,
-  "placeId": "ChIJJRYPwhWVOxMRRnQcdlysOjo"
+  "placeId": "ChIJJRYPwhWVOxMRRnQcdlysOjo",
+  "michelinId": "367264",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alfonso Crescenzo",
+  "chefSource": "michelin"
 }

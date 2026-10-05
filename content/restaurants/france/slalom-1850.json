@@ -13,5 +13,11 @@
   "website": "https://www.hotelstrato.com/",
   "lat": 45.4102934,
   "lng": 6.6380783,
-  "placeId": "ChIJSyMxSal4iUcRf2TK4FHkjl0"
+  "placeId": "ChIJSyMxSal4iUcRf2TK4FHkjl0",
+  "michelinId": "264476",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Thomas Prod'homme",
+  "chefSource": "michelin"
 }

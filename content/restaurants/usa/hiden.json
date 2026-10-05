@@ -17,5 +17,12 @@
   "website": "https://hidenmiami.com/",
   "lat": 25.800824,
   "lng": -80.201283,
-  "placeId": "ChIJEaa-UrK22YgR6rXu_t7u2hg"
+  "placeId": "ChIJEaa-UrK22YgR6rXu_t7u2hg",
+  "michelinId": "1199538",
+  "diets": [
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Seijun Okano",
+  "chefSource": "michelin"
 }

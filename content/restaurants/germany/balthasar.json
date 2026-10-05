@@ -13,5 +13,11 @@
   "website": "https://www.restaurant-balthasar.de/",
   "lat": 51.7152518,
   "lng": 8.7638033,
-  "placeId": "ChIJq8ZRF8BMukcRrUvaKrIt-Hg"
+  "placeId": "ChIJq8ZRF8BMukcRrUvaKrIt-Hg",
+  "michelinId": "76485",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Elmar Simon",
+  "chefSource": "michelin"
 }

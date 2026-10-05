@@ -13,5 +13,12 @@
   "website": "https://www.vilajoya.com",
   "lat": 37.08059,
   "lng": -8.31367,
-  "placeId": "ChIJi9jPs0rTGg0RLT27vOaUYqY"
+  "placeId": "ChIJi9jPs0rTGg0RLT27vOaUYqY",
+  "michelinId": "214828",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Dieter Koschina",
+  "chefSource": "michelin"
 }

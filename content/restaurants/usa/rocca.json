@@ -12,5 +12,8 @@
   "website": "https://roccatampa.com/",
   "lat": 27.96251,
   "lng": -82.4646,
-  "placeId": "ChIJ1WZIXhjFwogR1M-_3DXnG6Y"
+  "placeId": "ChIJ1WZIXhjFwogR1M-_3DXnG6Y",
+  "michelinId": "1199931",
+  "chef": "Bryce Bonsack",
+  "chefSource": "michelin"
 }

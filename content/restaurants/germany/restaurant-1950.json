@@ -15,5 +15,12 @@
   "website": "https://www.tressbrueder.de/bio-fine-dining-restaurant-1950",
   "lat": 48.3201555,
   "lng": 9.4323725,
-  "placeId": "ChIJCzI9zoInmkcR8pJpTS3L2lo"
+  "placeId": "ChIJCzI9zoInmkcR8pJpTS3L2lo",
+  "michelinId": "1190619",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Simon Tress",
+  "chefSource": "michelin"
 }

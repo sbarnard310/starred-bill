@@ -12,5 +12,13 @@
   "website": "https://www.herve-restaurant.com",
   "lat": 37.9666571,
   "lng": 23.7093681,
-  "placeId": "ChIJC_jIHhe9oRQRww-ZA41MGck"
+  "placeId": "ChIJC_jIHhe9oRQRww-ZA41MGck",
+  "michelinId": "1200618",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Hervé Pronzato",
+  "chefSource": "michelin"
 }

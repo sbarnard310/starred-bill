@@ -17,5 +17,8 @@
   "website": "https://www.citrinandmelisse.com/",
   "lat": 34.024541,
   "lng": -118.491583,
-  "placeId": "ChIJ7fOMUsSkwoARIOVuE_23I1Q"
+  "placeId": "ChIJ7fOMUsSkwoARIOVuE_23I1Q",
+  "michelinId": "560034",
+  "chef": "Josiah Citrin",
+  "chefSource": "michelin"
 }

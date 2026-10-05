@@ -13,5 +13,11 @@
   "website": "https://www.june.restaurant",
   "lat": 47.8405088,
   "lng": 12.4743211,
-  "placeId": "ChIJS_BVNwBtdkcRTkNwal3UYTM"
+  "placeId": "ChIJS_BVNwBtdkcRTkNwal3UYTM",
+  "michelinId": "1213481",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Rico Birndt",
+  "chefSource": "michelin"
 }

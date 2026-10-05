@@ -25,5 +25,12 @@
   "website": "https://elscasals.cat/",
   "lat": 42.031391,
   "lng": 1.960895,
-  "placeId": "ChIJOR_iFiAOpRIR8lBob-9HLlE"
+  "placeId": "ChIJOR_iFiAOpRIR8lBob-9HLlE",
+  "michelinId": "222768",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Oriol Rovira Prat",
+  "chefSource": "michelin"
 }

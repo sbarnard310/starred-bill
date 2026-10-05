@@ -15,5 +15,12 @@
   "website": "https://jamavarrestaurants.com/dubai/",
   "lat": 25.197712,
   "lng": 55.2710297,
-  "placeId": "ChIJ96_Q7nZpXz4RnbdR5xFBOOc"
+  "placeId": "ChIJ96_Q7nZpXz4RnbdR5xFBOOc",
+  "michelinId": "1210531",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

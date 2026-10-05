@@ -13,5 +13,13 @@
   "website": "https://www.palatebusan.com",
   "lat": 35.15659,
   "lng": 129.17844,
-  "placeId": "ChIJvUxGj8PtaDURh_IyReJM320"
+  "placeId": "ChIJvUxGj8PtaDURh_IyReJM320",
+  "michelinId": "1194553",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Kim Jae-hoon",
+  "chefSource": "michelin"
 }

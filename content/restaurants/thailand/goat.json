@@ -17,5 +17,12 @@
   "website": "https://www.thegoatbkk.com",
   "lat": 13.7274366,
   "lng": 100.5872356,
-  "placeId": "ChIJpe0yABKf4jARAc0xgSi-RgY"
+  "placeId": "ChIJpe0yABKf4jARAc0xgSi-RgY",
+  "michelinId": "1213954",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Parkorn Kosiyabong",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,8 @@
   "website": "https://www.semma.nyc/",
   "lat": 40.73606,
   "lng": -74.000673,
-  "placeId": "ChIJxZmzO7hZwokRx2fls4uU4YU"
+  "placeId": "ChIJxZmzO7hZwokRx2fls4uU4YU",
+  "michelinId": "1198567",
+  "chef": "Vijay Kumar",
+  "chefSource": "michelin"
 }

@@ -18,5 +18,12 @@
   "website": "https://www.comohotels.com/it/tuscany/como-castello-del-nero/dining/la-torre",
   "lat": 43.55299,
   "lng": 11.187825,
-  "placeId": "ChIJTf0t3xNIKhMR-NUMU8DxgO0"
+  "placeId": "ChIJTf0t3xNIKhMR-NUMU8DxgO0",
+  "michelinId": "166500",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Giovanni Luca Di Pirro",
+  "chefSource": "site"
 }

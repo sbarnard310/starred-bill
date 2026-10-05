@@ -15,5 +15,8 @@
   "website": "https://lankerellec.com/",
   "lat": 48.7766651,
   "lng": -3.5847022,
-  "placeId": "ChIJJxPe5QbTE0gR_NRAk8wCC4E"
+  "placeId": "ChIJJxPe5QbTE0gR_NRAk8wCC4E",
+  "michelinId": "13334",
+  "chef": "Anthony Avoine",
+  "chefSource": "michelin"
 }

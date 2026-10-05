@@ -18,5 +18,8 @@
   "website": "https://www.colettesainttropez.com",
   "lat": 43.2637243,
   "lng": 6.6697135,
-  "placeId": "ChIJ09pmg87AzhIR9llFMfIexd0"
+  "placeId": "ChIJ09pmg87AzhIR9llFMfIexd0",
+  "michelinId": "1192024",
+  "chef": "Philippe Colinet",
+  "chefSource": "michelin"
 }

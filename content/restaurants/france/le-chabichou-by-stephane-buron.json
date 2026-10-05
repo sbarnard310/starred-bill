@@ -25,5 +25,12 @@
   "website": "https://www.chabichou-courchevel.com",
   "lat": 45.41616,
   "lng": 6.629984,
-  "placeId": "ChIJ0_af91J_iUcRXN2Hmlxwcj4"
+  "placeId": "ChIJ0_af91J_iUcRXN2Hmlxwcj4",
+  "michelinId": "10938",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Stéphane Buron",
+  "chefSource": "michelin"
 }

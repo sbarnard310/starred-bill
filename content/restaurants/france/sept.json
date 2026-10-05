@@ -13,5 +13,12 @@
   "website": "https://www.restaurant-sept.fr/",
   "lat": 43.5967943,
   "lng": 1.4467407,
-  "placeId": "ChIJFeNlemC7rhIRr38XYpIyhA0"
+  "placeId": "ChIJFeNlemC7rhIRr38XYpIyhA0",
+  "michelinId": "1207676",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Guillaume Momboisse",
+  "chefSource": "michelin"
 }

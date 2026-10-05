@@ -26,5 +26,10 @@
   "website": "https://www.saddle-madrid.com/",
   "lat": 40.427447,
   "lng": -3.6912,
-  "placeId": "ChIJf6BKBFcpQg0R2JMv9g5gOyA"
+  "placeId": "ChIJf6BKBFcpQg0R2JMv9g5gOyA",
+  "michelinId": "1184765",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -15,5 +15,13 @@
   "website": "https://www.ancoracesenatico.it",
   "lat": 44.1955658,
   "lng": 12.4042192,
-  "placeId": "ChIJf-WeLAC3LBMRfV68qE5GKw0"
+  "placeId": "ChIJf-WeLAC3LBMRfV68qE5GKw0",
+  "michelinId": "1213776",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Marco Garattoni",
+  "chefSource": "michelin"
 }

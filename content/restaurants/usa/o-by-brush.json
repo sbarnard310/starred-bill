@@ -15,5 +15,13 @@
   "website": "https://www.obybrush.com/",
   "lat": 33.8374855,
   "lng": -84.3810816,
-  "placeId": "ChIJAQAkDY4F9YgRHFdUJW4jKo8"
+  "placeId": "ChIJAQAkDY4F9YgRHFdUJW4jKo8",
+  "michelinId": "1212278",
+  "diets": [
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Jason Liang",
+  "chefSource": "michelin"
 }

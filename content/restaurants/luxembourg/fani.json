@@ -16,5 +16,11 @@
   "website": "https://ristorantefani.lu/Fani.lu",
   "lat": 49.5398788,
   "lng": 6.1445492,
-  "placeId": "ChIJFQyPIBBIlUcRqQ6MOJm-1us"
+  "placeId": "ChIJFQyPIBBIlUcRqQ6MOJm-1us",
+  "michelinId": "520502",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

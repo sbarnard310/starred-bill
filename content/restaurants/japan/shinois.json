@@ -24,5 +24,8 @@
   "website": "https://shinois.com/",
   "lat": 35.639301,
   "lng": 139.728182,
-  "placeId": "ChIJoVieO_GLGGARmorh-DZUURk"
+  "placeId": "ChIJoVieO_GLGGARmorh-DZUURk",
+  "michelinId": "1193966",
+  "chef": "Hiroyuki Shinohara",
+  "chefSource": "site"
 }

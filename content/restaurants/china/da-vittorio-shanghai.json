@@ -12,5 +12,13 @@
   "website": "https://www.davittorio.com/en/restaurants/da-vittorio-shanghai.html",
   "lat": 31.2291093,
   "lng": 121.4931985,
-  "placeId": "ChIJRW5TYvNwsjURITrlRgMfwr4"
+  "placeId": "ChIJRW5TYvNwsjURITrlRgMfwr4",
+  "michelinId": "570570",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Leonardo Zambrino",
+  "chefSource": "site"
 }

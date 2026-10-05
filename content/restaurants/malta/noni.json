@@ -16,5 +16,11 @@
   "website": "https://noni.com.mt/",
   "lat": 35.9005092,
   "lng": 14.5160236,
-  "placeId": "ChIJYTUJgilFDhMRGiVIvsQ7HyA"
+  "placeId": "ChIJYTUJgilFDhMRGiVIvsQ7HyA",
+  "michelinId": "1184172",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jonathan Brincat",
+  "chefSource": "michelin"
 }

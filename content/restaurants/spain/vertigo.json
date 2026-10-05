@@ -13,5 +13,11 @@
   "website": "https://www.restaurantevertigo.com",
   "lat": 42.4087961,
   "lng": -7.4764957,
-  "placeId": "ChIJCbLeRXINMA0RdZ9PN7yKRxg"
+  "placeId": "ChIJCbLeRXINMA0RdZ9PN7yKRxg",
+  "michelinId": "1205008",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Claudia Pinto",
+  "chefSource": "michelin"
 }

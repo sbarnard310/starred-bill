@@ -15,5 +15,11 @@
   "website": "https://www.pointe-saint-mathieu.com",
   "lat": 48.3309068,
   "lng": -4.77086,
-  "placeId": "ChIJfwEKpIKSFkgRCuktqZz4694"
+  "placeId": "ChIJfwEKpIKSFkgRCuktqZz4694",
+  "michelinId": "10844",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Nolwenn Corre",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,11 @@
   "website": "https://www.cafeboulud.com/nyc/",
   "lat": 40.765169,
   "lng": -73.967619,
-  "placeId": "ChIJCcAxi5RYwokRdUqdw5_FHIk"
+  "placeId": "ChIJCcAxi5RYwokRdUqdw5_FHIk",
+  "michelinId": "68304",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Romain Paumier",
+  "chefSource": "michelin"
 }

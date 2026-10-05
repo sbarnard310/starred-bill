@@ -13,5 +13,12 @@
   "website": "https://www.selgris.be/nl",
   "lat": 51.3441513,
   "lng": 3.2563085,
-  "placeId": "ChIJLwcA2VioxEcReCD8wyzVR8A"
+  "placeId": "ChIJLwcA2VioxEcReCD8wyzVR8A",
+  "michelinId": "209929",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Frederik Deceuninck",
+  "chefSource": "site"
 }

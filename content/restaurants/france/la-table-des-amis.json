@@ -20,5 +20,10 @@
   "website": "https://www.leseydins.com",
   "lat": 43.8511871,
   "lng": 5.3018513,
-  "placeId": "ChIJX1WC8aQRyhIRhfUxyj3PkvI"
+  "placeId": "ChIJX1WC8aQRyhIRhfUxyj3PkvI",
+  "michelinId": "1207714",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

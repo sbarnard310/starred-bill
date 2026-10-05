@@ -15,5 +15,10 @@
   "website": "https://www.marcel-von-winckelmann.de/restaurant",
   "lat": 48.5802555,
   "lng": 13.3986555,
-  "placeId": "ChIJqWj7SWZZdEcR8Ivp9lidDfw"
+  "placeId": "ChIJqWj7SWZZdEcR8Ivp9lidDfw",
+  "michelinId": "1216468",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

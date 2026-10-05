@@ -14,5 +14,12 @@
   "website": "https://www.peterbrunel.com",
   "lat": 45.8806081,
   "lng": 10.875047,
-  "placeId": "ChIJk4s8xywRgkcRWt6vd2yCOsc"
+  "placeId": "ChIJk4s8xywRgkcRWt6vd2yCOsc",
+  "michelinId": "1185733",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Peter Brunel",
+  "chefSource": "michelin"
 }

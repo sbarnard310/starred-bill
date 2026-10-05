@@ -23,5 +23,11 @@
   "website": "https://www.legadorestaurants.com/",
   "lat": 51.5244168,
   "lng": -0.0783756,
-  "placeId": "ChIJie6cOxsddkgRwMuFOl3itdI"
+  "placeId": "ChIJie6cOxsddkgRwMuFOl3itdI",
+  "michelinId": "1242985",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nieves Barragán Mohacho",
+  "chefSource": "michelin"
 }

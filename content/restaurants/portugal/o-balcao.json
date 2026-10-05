@@ -13,5 +13,13 @@
   "website": "https://tabernaobalcao.com/",
   "lat": 39.2318717,
   "lng": -8.6858859,
-  "placeId": "ChIJQV-cS2zuGA0RTSvmBEFtEqg"
+  "placeId": "ChIJQV-cS2zuGA0RTSvmBEFtEqg",
+  "michelinId": "1077263",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Rodrigo Castelo",
+  "chefSource": "michelin"
 }

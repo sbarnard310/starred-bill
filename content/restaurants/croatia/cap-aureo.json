@@ -12,5 +12,12 @@
   "sourceType": "none",
   "lat": 45.0754807,
   "lng": 13.6369528,
-  "placeId": "ChIJl9Rc1hXBfEcR9iwHg5-3Mr8"
+  "placeId": "ChIJl9Rc1hXBfEcR9iwHg5-3Mr8",
+  "michelinId": "1193703",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jeffrey Vella",
+  "chefSource": "michelin"
 }

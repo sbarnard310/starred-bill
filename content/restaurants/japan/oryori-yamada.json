@@ -12,5 +12,13 @@
   "website": "https://www.oryori-yamada.jp/",
   "lat": 34.696644,
   "lng": 135.503821,
-  "placeId": "ChIJ61kHNW3nAGAR82Kaj03b5Lo"
+  "placeId": "ChIJ61kHNW3nAGAR82Kaj03b5Lo",
+  "michelinId": "1193810",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

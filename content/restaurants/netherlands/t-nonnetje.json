@@ -13,5 +13,14 @@
   "website": "https://www.hetnonnetje.nl/",
   "lat": 52.3510204,
   "lng": 5.620182,
-  "placeId": "ChIJLZow-NMzxkcR_awPVM0zib0"
+  "placeId": "ChIJLZow-NMzxkcR_awPVM0zib0",
+  "michelinId": "212564",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Michel van der Kroft",
+  "chefSource": "michelin"
 }

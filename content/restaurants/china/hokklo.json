@@ -10,5 +10,11 @@
   "sourceType": "none",
   "website": "https://www.hilton.com/en/hotels/xmnwawa-waldorf-astoria-xiamen/dining/",
   "lat": 24.4869649,
-  "lng": 118.1229876
+  "lng": 118.1229876,
+  "michelinId": "1213671",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

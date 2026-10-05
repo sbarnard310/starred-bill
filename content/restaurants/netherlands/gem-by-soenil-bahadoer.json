@@ -13,5 +13,16 @@
   "website": "https://restaurantgem.com/",
   "lat": 51.5531164,
   "lng": 5.6808823,
-  "placeId": "ChIJhbIdtPcZx0cRRCrpWnFMB3Q"
+  "placeId": "ChIJhbIdtPcZx0cRRCrpWnFMB3Q",
+  "michelinId": "1240969",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Soenil Bahadoer",
+  "chefSource": "michelin"
 }

@@ -20,5 +20,12 @@
   "website": "https://www.loewenbubikon.ch/",
   "lat": 47.2684196,
   "lng": 8.8188114,
-  "placeId": "ChIJ2xTSROK5mkcRyodnqdmWGcc"
+  "placeId": "ChIJ2xTSROK5mkcRyodnqdmWGcc",
+  "michelinId": "178934",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Domenico Miggiano",
+  "chefSource": "michelin"
 }

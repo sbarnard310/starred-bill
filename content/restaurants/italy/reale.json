@@ -13,5 +13,14 @@
   "website": "https://www.nikoromito.com/reale",
   "lat": 41.7800349,
   "lng": 14.094554,
-  "placeId": "ChIJnxxH1W96MBMRSkUGag8Oltc"
+  "placeId": "ChIJnxxH1W96MBMRSkUGag8Oltc",
+  "michelinId": "336542",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Niko Romito",
+  "chefSource": "site"
 }

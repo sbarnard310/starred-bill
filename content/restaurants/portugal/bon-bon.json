@@ -16,5 +16,12 @@
   "website": "https://bonbon.pt/",
   "lat": 37.116478,
   "lng": -8.480948,
-  "placeId": "ChIJP9vvfCnWGg0R3TfJiGLJZ5E"
+  "placeId": "ChIJP9vvfCnWGg0R3TfJiGLJZ5E",
+  "michelinId": "472583",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "José Lopes",
+  "chefSource": "michelin"
 }

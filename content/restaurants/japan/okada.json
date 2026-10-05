@@ -14,5 +14,13 @@
   "lng": 135.830455,
   "placeId": "ChIJ0w0nW2c5AWAR2KyuMBte-y4",
   "dinner": 25000,
-  "source": "https://omakaseje.com/restaurants/li355640"
+  "source": "https://omakaseje.com/restaurants/li355640",
+  "michelinId": "1196787",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

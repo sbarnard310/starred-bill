@@ -15,5 +15,12 @@
   "website": "https://restaurantemuna.com/",
   "lat": 42.5434,
   "lng": -6.59309,
-  "placeId": "ChIJ06J5C526MA0Rlj3y0tRfvBg"
+  "placeId": "ChIJ06J5C526MA0Rlj3y0tRfvBg",
+  "michelinId": "555507",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Samuel Naveira",
+  "chefSource": "michelin"
 }

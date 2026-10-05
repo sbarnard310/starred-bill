@@ -25,5 +25,9 @@
   "website": "https://www.divellec-paris.fr/",
   "lat": 48.8610318,
   "lng": 2.3114674,
-  "placeId": "ChIJv1HUW9dv5kcRSrNx_IaOe-g"
+  "placeId": "ChIJv1HUW9dv5kcRSrNx_IaOe-g",
+  "michelinId": "515672",
+  "diets": [
+    "vegetarian"
+  ]
 }

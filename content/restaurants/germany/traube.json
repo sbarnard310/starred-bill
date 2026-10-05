@@ -13,5 +13,11 @@
   "website": "https://www.traube-blansingen.de/",
   "lat": 47.6909385,
   "lng": 7.5398759,
-  "placeId": "ChIJtalU4j6jkUcRIpkuqoSOizk"
+  "placeId": "ChIJtalU4j6jkUcRIpkuqoSOizk",
+  "michelinId": "1181496",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Brian Wawryk",
+  "chefSource": "michelin"
 }

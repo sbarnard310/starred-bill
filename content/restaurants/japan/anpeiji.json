@@ -19,5 +19,8 @@
   "lunchType": "menu",
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/do446707"
+  "lunchSource": "https://omakaseje.com/restaurants/do446707",
+  "michelinId": "1205317",
+  "chef": "Masashi Anpeiji",
+  "chefSource": "michelin"
 }

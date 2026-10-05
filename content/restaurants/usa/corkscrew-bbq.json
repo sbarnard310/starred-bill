@@ -13,5 +13,11 @@
   "website": "https://www.corkscreworders.com/",
   "lat": 30.0806984,
   "lng": -95.4200092,
-  "placeId": "ChIJRfY7ATs0R4YRNVMqjkDzTHU"
+  "placeId": "ChIJRfY7ATs0R4YRNVMqjkDzTHU",
+  "michelinId": "1196504",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Will Buckman",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,10 @@
   "website": "https://www.restaurantcodium.nl/",
   "lat": 51.5046611,
   "lng": 3.8889127,
-  "placeId": "ChIJoRq0KF6JxEcRbzMyIConoPQ"
+  "placeId": "ChIJoRq0KF6JxEcRbzMyIConoPQ",
+  "michelinId": "1186121",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

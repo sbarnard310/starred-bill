@@ -13,5 +13,8 @@
   "website": "https://www.au-crocodile.com/Restaurant/",
   "lat": 48.58372,
   "lng": 7.747566,
-  "placeId": "ChIJcdAb-E3IlkcRFuzy9nI8oBg"
+  "placeId": "ChIJcdAb-E3IlkcRFuzy9nI8oBg",
+  "michelinId": "476576",
+  "chef": "Romain Brillat",
+  "chefSource": "michelin"
 }

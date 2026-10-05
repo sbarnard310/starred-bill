@@ -22,5 +22,9 @@
   "website": "https://www.lek2altitude.com/fr/deguster/l-altitude.html",
   "lat": 45.4024154,
   "lng": 6.6379133,
-  "placeId": "ChIJebkNM0WDiUcRQAz9LHKO1EA"
+  "placeId": "ChIJebkNM0WDiUcRQAz9LHKO1EA",
+  "michelinId": "1212698",
+  "diets": [
+    "vegetarian"
+  ]
 }

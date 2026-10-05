@@ -23,5 +23,14 @@
   "website": "https://www.restaurantbruno.com/",
   "lat": 43.4699245,
   "lng": 6.3794424,
-  "placeId": "ChIJMZRQX5BSyRIRw0AKVO33TTI"
+  "placeId": "ChIJMZRQX5BSyRIRw0AKVO33TTI",
+  "michelinId": "4259",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

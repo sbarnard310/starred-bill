@@ -12,5 +12,12 @@
   "website": "https://maximilianlorenz.de/",
   "lat": 50.9445676,
   "lng": 6.9607682,
-  "placeId": "ChIJvyGbgb8lv0cRkC7ZXzBvzWg"
+  "placeId": "ChIJvyGbgb8lv0cRkC7ZXzBvzWg",
+  "michelinId": "562760",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Maximilian Lorenz",
+  "chefSource": "michelin"
 }

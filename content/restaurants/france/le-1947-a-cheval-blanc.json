@@ -16,5 +16,15 @@
   "website": "https://www.chevalblanc.com/fr/maison/courchevel/restaurants-et-bars/le-1947-cheval-blanc/",
   "lat": 45.4094877,
   "lng": 6.6338696,
-  "placeId": "ChIJebDjJst5iUcRKYmYbva4sgI"
+  "placeId": "ChIJebDjJst5iUcRKYmYbva4sgI",
+  "michelinId": "176983",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Yannick Alléno",
+  "chefSource": "site"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.iduesud.ch/",
   "lat": 45.9949859,
   "lng": 8.9459979,
-  "placeId": "ChIJl7FFspcthEcRo5BVmXqhbbI"
+  "placeId": "ChIJl7FFspcthEcRo5BVmXqhbbI",
+  "michelinId": "184254",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Marco Veneruso",
+  "chefSource": "site"
 }

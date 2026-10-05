@@ -15,5 +15,13 @@
   "website": "https://www.guidoristorante.it/",
   "lat": 44.6389249,
   "lng": 7.9865995,
-  "placeId": "ChIJt14uf2es0hIRf8y7fpB6hMI"
+  "placeId": "ChIJt14uf2es0hIRf8y7fpB6hMI",
+  "michelinId": "361561",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ugo Alciati",
+  "chefSource": "site"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.monte.hr/",
   "lat": 45.0826939,
   "lng": 13.6310596,
-  "placeId": "ChIJU7bPD4HAfEcRJFBCvUfSZPA"
+  "placeId": "ChIJU7bPD4HAfEcRJFBCvUfSZPA",
+  "michelinId": "480046",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Danijel Đekić",
+  "chefSource": "michelin"
 }

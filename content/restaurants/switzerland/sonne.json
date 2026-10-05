@@ -15,5 +15,12 @@
   "website": "https://www.sonne-scheunenberg.ch/",
   "lat": 47.0886093,
   "lng": 7.3755559,
-  "placeId": "ChIJSZbwJQ8jjkcRx2Ay7rGyRZk"
+  "placeId": "ChIJSZbwJQ8jjkcRx2Ay7rGyRZk",
+  "michelinId": "180069",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Kurt Mösching",
+  "chefSource": "michelin"
 }

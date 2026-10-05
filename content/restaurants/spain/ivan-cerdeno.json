@@ -13,5 +13,8 @@
   "website": "https://www.ivancerdeno.com",
   "lat": 39.8617628,
   "lng": -4.0460555,
-  "placeId": "ChIJ2QCWTcx0ag0RIQdHJzBBz0M"
+  "placeId": "ChIJ2QCWTcx0ag0RIQdHJzBBz0M",
+  "michelinId": "1154987",
+  "chef": "Iván Cerdeño",
+  "chefSource": "michelin"
 }

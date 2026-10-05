@@ -15,5 +15,12 @@
   "sourceType": "none",
   "lat": 37.55696,
   "lng": 126.97809,
-  "placeId": "ChIJ971zYXGjfDURWeiU2g-VPvI"
+  "placeId": "ChIJ971zYXGjfDURWeiU2g-VPvI",
+  "michelinId": "1199936",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ],
+  "chef": "Ha-wan, Jung",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,16 @@
   "website": "https://www.deburgemeester.nl/",
   "lat": 52.0619466,
   "lng": 4.9146783,
-  "placeId": "ChIJ7-B6XIl5xkcR48RyBtcHGGQ"
+  "placeId": "ChIJ7-B6XIl5xkcR48RyBtcHGGQ",
+  "michelinId": "212829",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Sander Spruijt",
+  "chefSource": "michelin"
 }

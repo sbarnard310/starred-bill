@@ -12,5 +12,11 @@
   "website": "https://standrestaurant.hu",
   "lat": 47.5001729,
   "lng": 19.0596687,
-  "placeId": "ChIJTW7kvGrdQUcRfw3zIx9kEhE"
+  "placeId": "ChIJTW7kvGrdQUcRfw3zIx9kEhE",
+  "michelinId": "555755",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

@@ -15,5 +15,8 @@
   "website": "https://villapinewood.com",
   "lat": 43.5272455,
   "lng": 2.347021,
-  "placeId": "ChIJjS2_97kZrhIRVOy0lL9RwJg"
+  "placeId": "ChIJjS2_97kZrhIRVOy0lL9RwJg",
+  "michelinId": "1193745",
+  "chef": "Thomas Cabrol",
+  "chefSource": "michelin"
 }

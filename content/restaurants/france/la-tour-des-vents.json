@@ -15,5 +15,11 @@
   "website": "https://domainedelatourdesvents.com/",
   "lat": 44.796818,
   "lng": 0.461633,
-  "placeId": "ChIJeaoS5S3bqhIRysSmb-JqJGU"
+  "placeId": "ChIJeaoS5S3bqhIRysSmb-JqJGU",
+  "michelinId": "1018",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

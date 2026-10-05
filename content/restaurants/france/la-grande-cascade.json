@@ -25,5 +25,13 @@
   "website": "https://www.restaurantsparisiens.com/la-grande-cascade/",
   "lat": 48.8626663,
   "lng": 2.2404762,
-  "placeId": "ChIJBU9a9RVl5kcRauGO7npEArM"
+  "placeId": "ChIJBU9a9RVl5kcRauGO7npEArM",
+  "michelinId": "6446",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Frédéric Robert",
+  "chefSource": "michelin"
 }

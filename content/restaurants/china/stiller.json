@@ -9,5 +9,10 @@
   "sourceType": "none",
   "website": "https://gz.stiller.cn",
   "lat": 23.138026,
-  "lng": 113.280695
+  "lng": 113.280695,
+  "michelinId": "1196225",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

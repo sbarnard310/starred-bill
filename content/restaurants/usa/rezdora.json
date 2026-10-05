@@ -18,5 +18,12 @@
   "website": "https://www.rezdora.nyc/",
   "lat": 40.739032,
   "lng": -73.989182,
-  "placeId": "ChIJDdKSyCVZwokR-9svvc9YDFo"
+  "placeId": "ChIJDdKSyCVZwokR-9svvc9YDFo",
+  "michelinId": "1183937",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Stefano Secchi",
+  "chefSource": "site"
 }

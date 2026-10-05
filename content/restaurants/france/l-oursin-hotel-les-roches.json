@@ -19,5 +19,12 @@
   "website": "https://www.hotellesroches.com/restaurant-gastronomique/",
   "lat": 43.1483499,
   "lng": 6.4008804,
-  "placeId": "ChIJt1MSXlYtyRIRGz9whgQERgw"
+  "placeId": "ChIJt1MSXlYtyRIRGz9whgQERgw",
+  "michelinId": "1241981",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Antoine Gras",
+  "chefSource": "site"
 }

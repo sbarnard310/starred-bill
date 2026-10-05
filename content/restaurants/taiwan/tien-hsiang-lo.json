@@ -26,5 +26,9 @@
   "website": "https://taipei.landishotelsresorts.com/chinese-trad/dining-detail.php?id=7",
   "lat": 25.062841,
   "lng": 121.529965,
-  "placeId": "ChIJt3yXuFupQjQR4fGsPcwIluI"
+  "placeId": "ChIJt3yXuFupQjQR4fGsPcwIluI",
+  "michelinId": "551804",
+  "diets": [
+    "vegetarian"
+  ]
 }

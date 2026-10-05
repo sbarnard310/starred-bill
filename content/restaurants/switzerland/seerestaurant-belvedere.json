@@ -13,5 +13,12 @@
   "website": "https://www.seerestaurant-belvedere.ch/de/",
   "lat": 46.9833332,
   "lng": 8.3117704,
-  "placeId": "ChIJyTPQgKPwj0cR7Qz9GBOJqRE"
+  "placeId": "ChIJyTPQgKPwj0cR7Qz9GBOJqRE",
+  "michelinId": "327918",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Fabian Inderbitzin",
+  "chefSource": "michelin"
 }

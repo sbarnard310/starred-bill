@@ -12,5 +12,8 @@
   "website": "https://parspralinen.com/pages/das-restaurant",
   "lat": 52.5074197,
   "lng": 13.3213876,
-  "placeId": "ChIJ7VnVhkJRqEcRZwN0INGn-EU"
+  "placeId": "ChIJ7VnVhkJRqEcRZwN0INGn-EU",
+  "michelinId": "1212214",
+  "chef": "Florian Sperlhofer",
+  "chefSource": "michelin"
 }

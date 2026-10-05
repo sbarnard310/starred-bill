@@ -13,5 +13,11 @@
   "website": "https://www.genuss-atelier.net/",
   "lat": 51.0676334,
   "lng": 13.7761213,
-  "placeId": "ChIJeU-U6jLPCUcRxJrBSPAOAdo"
+  "placeId": "ChIJeU-U6jLPCUcRxJrBSPAOAdo",
+  "michelinId": "488340",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Marcus Blonkowski",
+  "chefSource": "michelin"
 }

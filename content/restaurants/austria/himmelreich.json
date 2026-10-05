@@ -13,5 +13,12 @@
   "website": "https://www.restaurant-himmelreich.at/",
   "lat": 48.4305386,
   "lng": 15.9803526,
-  "placeId": "ChIJiSTFRIZlbUcRBh30utKcULw"
+  "placeId": "ChIJiSTFRIZlbUcRBh30utKcULw",
+  "michelinId": "1213050",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Marco Gangl",
+  "chefSource": "michelin"
 }

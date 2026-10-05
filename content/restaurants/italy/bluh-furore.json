@@ -13,5 +13,12 @@
   "website": "https://www.enricobartolini.net/ristorante-furore-costieraamalfitana",
   "lat": 40.6152174,
   "lng": 14.5423636,
-  "placeId": "ChIJFweNWrj9OxMRyiY3ZUr1AO0"
+  "placeId": "ChIJFweNWrj9OxMRyiY3ZUr1AO0",
+  "michelinId": "1209846",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Vincenzo Russo",
+  "chefSource": "michelin"
 }

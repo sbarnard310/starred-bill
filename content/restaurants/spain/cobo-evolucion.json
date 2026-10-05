@@ -13,5 +13,8 @@
   "website": "https://www.coboestratos.com",
   "lat": 42.3415093,
   "lng": -3.698853,
-  "placeId": "ChIJi35sDAn9RQ0RyX7FzcuFNCg"
+  "placeId": "ChIJi35sDAn9RQ0RyX7FzcuFNCg",
+  "michelinId": "1200255",
+  "chef": "Miguel Cobo",
+  "chefSource": "michelin"
 }

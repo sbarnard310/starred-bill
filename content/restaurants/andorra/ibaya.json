@@ -23,5 +23,13 @@
   "website": "https://www.sporthotels.ad/",
   "lat": 42.5755768,
   "lng": 1.6709488,
-  "placeId": "ChIJoUL53x5jrxIRabIfsHT2p2Y"
+  "placeId": "ChIJoUL53x5jrxIRabIfsHT2p2Y",
+  "michelinId": "1190141",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Francis Paniego and Jordi Grau",
+  "chefSource": "michelin"
 }

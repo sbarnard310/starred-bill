@@ -13,5 +13,13 @@
   "website": "https://www.ristoranteoseleta.it/",
   "lat": 45.5252757,
   "lng": 10.7912839,
-  "placeId": "ChIJCae56L_vgUcRkW-rTeSMMxE"
+  "placeId": "ChIJCae56L_vgUcRkW-rTeSMMxE",
+  "michelinId": "380546",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Marco Marras",
+  "chefSource": "michelin"
 }

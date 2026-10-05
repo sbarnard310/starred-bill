@@ -17,5 +17,8 @@
   "website": "https://arietecoconutgrove.com/",
   "lat": 25.725091,
   "lng": -80.245256,
-  "placeId": "ChIJEV1uzNq32YgReJLG9ncPUQQ"
+  "placeId": "ChIJEV1uzNq32YgReJLG9ncPUQQ",
+  "michelinId": "1197759",
+  "chef": "Michael Beltran",
+  "chefSource": "michelin"
 }

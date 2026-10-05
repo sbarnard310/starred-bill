@@ -21,5 +21,13 @@
   "website": "https://www.atlantide1874.fr/",
   "lat": 47.2012378,
   "lng": -1.5777426,
-  "placeId": "ChIJc2h7DAnsBUgRoX2zZVBWzRg"
+  "placeId": "ChIJc2h7DAnsBUgRoX2zZVBWzRg",
+  "michelinId": "5270",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jean-Yves Guého",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,11 @@
   "website": "https://www.maximinhellio.fr",
   "lat": 49.3592817,
   "lng": 0.0770849,
-  "placeId": "ChIJexlUFq7U4UcR0InPj699d9I"
+  "placeId": "ChIJexlUFq7U4UcR0InPj699d9I",
+  "michelinId": "495886",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maximin Hellio",
+  "chefSource": "michelin"
 }

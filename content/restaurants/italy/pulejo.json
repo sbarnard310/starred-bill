@@ -15,5 +15,12 @@
   "website": "https://pulejo.it/",
   "lat": 41.907167,
   "lng": 12.459359,
-  "placeId": "ChIJmYbImQNhLxMRHBgz6XzHZXA"
+  "placeId": "ChIJmYbImQNhLxMRHBgz6XzHZXA",
+  "michelinId": "1201898",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Davide Puleio",
+  "chefSource": "site"
 }

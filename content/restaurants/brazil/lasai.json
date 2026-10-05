@@ -12,5 +12,11 @@
   "website": "https://lasai.com.br/",
   "lat": -22.9532398,
   "lng": -43.1964089,
-  "placeId": "ChIJhWl8Qd5_mQAR-xc4FQjSFaQ"
+  "placeId": "ChIJhWl8Qd5_mQAR-xc4FQjSFaQ",
+  "michelinId": "434753",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Rafa Costa e Silva",
+  "chefSource": "michelin"
 }

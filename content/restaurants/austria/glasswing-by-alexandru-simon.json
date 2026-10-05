@@ -12,5 +12,8 @@
   "website": "https://www.glasswing-restaurant.com",
   "lat": 48.2016444,
   "lng": 16.3712178,
-  "placeId": "ChIJu7HT7lcHbUcRNhssXDUwWsI"
+  "placeId": "ChIJu7HT7lcHbUcRNhssXDUwWsI",
+  "michelinId": "205556",
+  "chef": "Alexandru Simon",
+  "chefSource": "michelin"
 }

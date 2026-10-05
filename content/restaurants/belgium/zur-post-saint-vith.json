@@ -13,5 +13,8 @@
   "website": "https://www.hotelzurpost.be/",
   "lat": 50.2803313,
   "lng": 6.1261435,
-  "placeId": "ChIJr-zWuOSJv0cRelc1O2bSn2g"
+  "placeId": "ChIJr-zWuOSJv0cRelc1O2bSn2g",
+  "michelinId": "210392",
+  "chef": "Eric Pankert",
+  "chefSource": "site"
 }

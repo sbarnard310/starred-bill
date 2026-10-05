@@ -17,5 +17,11 @@
   "website": "https://www.ignivbangkok.com",
   "lat": 13.7400528,
   "lng": 100.5401497,
-  "placeId": "ChIJLcAZ8Kqf4jARcqRxTY1Ajx8"
+  "placeId": "ChIJLcAZ8Kqf4jARcqRxTY1Ajx8",
+  "michelinId": "1194848",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -12,5 +12,12 @@
   "website": "https://m.fourseasons.com/pt/lisbon/dining/restaurants/cura/",
   "lat": 38.7257479,
   "lng": -9.155379,
-  "placeId": "ChIJo2vQX0szGQ0R5QhuFFOeY64"
+  "placeId": "ChIJo2vQX0szGQ0R5QhuFFOeY64",
+  "michelinId": "1194476",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Rodolfo Lavrador",
+  "chefSource": "michelin"
 }

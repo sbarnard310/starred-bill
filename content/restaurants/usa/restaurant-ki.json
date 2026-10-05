@@ -18,5 +18,8 @@
   "website": "https://restaurantki.com/",
   "lat": 34.050172,
   "lng": -118.241166,
-  "placeId": "ChIJ6fB8aADHwoARxXCY99wLo0U"
+  "placeId": "ChIJ6fB8aADHwoARxXCY99wLo0U",
+  "michelinId": "1217963",
+  "chef": "Ki Kim",
+  "chefSource": "michelin"
 }

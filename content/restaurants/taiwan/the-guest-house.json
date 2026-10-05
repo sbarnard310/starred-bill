@@ -25,5 +25,9 @@
   "lunchSource": "https://icecreamcat.tw/theguest/",
   "lat": 25.0446816,
   "lng": 121.5220238,
-  "placeId": "ChIJJVBTsHGpQjQRujvx-I3zXPI"
+  "placeId": "ChIJJVBTsHGpQjQRujvx-I3zXPI",
+  "michelinId": "550901",
+  "diets": [
+    "vegetarian"
+  ]
 }

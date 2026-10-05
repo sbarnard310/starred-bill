@@ -14,5 +14,12 @@
   "website": "https://www.restaurantbayview.com",
   "lat": 46.2141318,
   "lng": 6.1516872,
-  "placeId": "ChIJFSXo9yJljEcRJ9pU5VO6_AY"
+  "placeId": "ChIJFSXo9yJljEcRJ9pU5VO6_AY",
+  "michelinId": "114390",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Danny Khezzar",
+  "chefSource": "michelin"
 }

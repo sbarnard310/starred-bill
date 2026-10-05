@@ -15,5 +15,11 @@
   "website": "https://www.maisonavoise.com/",
   "lat": 48.8173763,
   "lng": 2.2665575,
-  "placeId": "ChIJoRbFSDx75kcR7SM5m2FIfHc"
+  "placeId": "ChIJoRbFSDx75kcR7SM5m2FIfHc",
+  "michelinId": "1216617",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alexis Voisenet",
+  "chefSource": "michelin"
 }

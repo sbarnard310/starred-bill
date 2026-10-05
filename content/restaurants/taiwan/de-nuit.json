@@ -26,5 +26,9 @@
   "website": "https://www.denuit.com.tw/",
   "lat": 25.0334532,
   "lng": 121.5505992,
-  "placeId": "ChIJPWwjG02rQjQRzynbmBywDOE"
+  "placeId": "ChIJPWwjG02rQjQRzynbmBywDOE",
+  "michelinId": "1193645",
+  "diets": [
+    "vegetarian"
+  ]
 }

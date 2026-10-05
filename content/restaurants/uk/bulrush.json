@@ -22,5 +22,15 @@
   "website": "https://www.bulrushrestaurant.co.uk/",
   "lat": 51.462752,
   "lng": -2.597816,
-  "placeId": "ChIJzSpDnt-NcUgREyNmjiEKMWI"
+  "placeId": "ChIJzSpDnt-NcUgREyNmjiEKMWI",
+  "michelinId": "489200",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "George Livesey",
+  "chefSource": "site"
 }

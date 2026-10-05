@@ -10,5 +10,12 @@
   "sourceType": "none",
   "website": "https://carlton-stmoritz.ch/en/restaurants/da-vittorio-st-moritz",
   "lat": 46.4998838,
-  "lng": 9.8468053
+  "lng": 9.8468053,
+  "michelinId": "384903",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Paolo Rota",
+  "chefSource": "michelin"
 }

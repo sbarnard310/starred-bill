@@ -13,5 +13,12 @@
   "website": "https://www.schwarzeradler-hall.tirol/restaurant/",
   "lat": 47.2811239,
   "lng": 11.5082487,
-  "placeId": "ChIJd2j8l19vnUcRhFKm2pir2VQ"
+  "placeId": "ChIJd2j8l19vnUcRhFKm2pir2VQ",
+  "michelinId": "109176",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Johannes Nuding",
+  "chefSource": "michelin"
 }

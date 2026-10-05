@@ -12,5 +12,8 @@
   "website": "https://ernosbistro.de/",
   "lat": 50.1190432,
   "lng": 8.6659109,
-  "placeId": "ChIJyXKvok0JvUcRfgsBJsylTeg"
+  "placeId": "ChIJyXKvok0JvUcRfgsBJsylTeg",
+  "michelinId": "72809",
+  "chef": "Valéry Mathis",
+  "chefSource": "michelin"
 }

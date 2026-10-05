@@ -26,5 +26,11 @@
   "website": "https://www.azafranresto.com",
   "lat": -32.8886365,
   "lng": -68.8490969,
-  "placeId": "ChIJFyEWbkAJfpYRDb2xBz1l0nU"
+  "placeId": "ChIJFyEWbkAJfpYRDb2xBz1l0nU",
+  "michelinId": "532684",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sebastián Weigandt",
+  "chefSource": "michelin"
 }

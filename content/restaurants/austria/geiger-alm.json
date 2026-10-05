@@ -13,5 +13,13 @@
   "website": "https://www.geigeralm.at/",
   "lat": 47.6605502,
   "lng": 13.743594,
-  "placeId": "ChIJnV63i0JPcUcRi_wzU82VVPU"
+  "placeId": "ChIJnV63i0JPcUcRi_wzU82VVPU",
+  "michelinId": "1213071",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Dominik Utassy",
+  "chefSource": "michelin"
 }

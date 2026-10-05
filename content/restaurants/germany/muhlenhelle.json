@@ -13,5 +13,13 @@
   "website": "https://www.muehlenhelle.de/",
   "lat": 50.9832866,
   "lng": 7.5311837,
-  "placeId": "ChIJxYjW-tPJvkcRLwa8p4bcm9k"
+  "placeId": "ChIJxYjW-tPJvkcRLwa8p4bcm9k",
+  "michelinId": "73402",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Michael Quendler",
+  "chefSource": "michelin"
 }

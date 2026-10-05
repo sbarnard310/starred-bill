@@ -124,6 +124,37 @@ content:
         label: Cuisine in Japanese
         description: Michelin's Japanese label, e.g. 日本料理.
         type: string
+      - name: chef
+        label: Head chef
+        description: The chef who leads the kitchen, e.g. Clare Smyth. Shows under the restaurant's name and can be searched.
+        type: string
+      - name: chefSource
+        label: Where the chef's name came from
+        description: Choose "Typed by hand" if you change the chef, so the MICHELIN refresh script never overwrites it.
+        type: select
+        options:
+          values:
+            - { value: michelin, label: "MICHELIN Guide" }
+            - { value: site, label: "Restaurant's website" }
+            - { value: manual, label: "Typed by hand" }
+      - name: diets
+        label: Dietary options
+        description: From the MICHELIN Guide. Vegetarian restaurant, vegetarian menu and vegan get a leaf badge; all of them are in the Dietary filter.
+        type: select
+        options:
+          multiple: true
+          values:
+            - { value: vegetarian-only, label: "Vegetarian or vegan restaurant" }
+            - { value: vegetarian-menu, label: "Vegetarian tasting menu" }
+            - { value: vegetarian, label: "Vegetarian options" }
+            - { value: vegan, label: "Vegan options" }
+            - { value: gluten-free, label: "Gluten-free options" }
+            - { value: halal, label: "Halal" }
+            - { value: kosher, label: "Kosher" }
+      - name: michelinId
+        label: MICHELIN Guide record id
+        description: Filled in by the refresh script so it can match this restaurant exactly. Leave as it is.
+        type: string
       - name: change
         label: Recent star change
         description: Shows a ▲ or ▼ badge. Leave empty if nothing changed in the last two guides.

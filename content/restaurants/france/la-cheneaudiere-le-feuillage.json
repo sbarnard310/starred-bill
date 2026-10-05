@@ -15,5 +15,9 @@
   "website": "https://www.cheneaudiere.com/",
   "lat": 48.3908475,
   "lng": 7.1837931,
-  "placeId": "ChIJDRENUmz8k0cRkzDOv8wG_8c"
+  "placeId": "ChIJDRENUmz8k0cRkzDOv8wG_8c",
+  "michelinId": "1215748",
+  "diets": [
+    "vegetarian"
+  ]
 }

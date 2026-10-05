@@ -26,5 +26,11 @@
   "website": "https://www.robuchon.hk/",
   "lat": 22.281199,
   "lng": 114.15816,
-  "placeId": "ChIJwVykxpIABDQR1MZ-gH1ykQk"
+  "placeId": "ChIJwVykxpIABDQR1MZ-gH1ykQk",
+  "michelinId": "230806",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Julien Tongourian",
+  "chefSource": "site"
 }

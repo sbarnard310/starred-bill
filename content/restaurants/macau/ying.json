@@ -20,5 +20,9 @@
   "website": "https://www.altiramacau.com/en/dining/Ying",
   "lat": 22.161956,
   "lng": 113.555125,
-  "placeId": "ChIJh3CxzKZ6ATQRhViCe4zmmOs"
+  "placeId": "ChIJh3CxzKZ6ATQRhViCe4zmmOs",
+  "michelinId": "231092",
+  "diets": [
+    "vegetarian"
+  ]
 }

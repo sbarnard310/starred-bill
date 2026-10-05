@@ -21,5 +21,8 @@
   "website": "https://corimanyc.com/",
   "lat": 40.714656,
   "lng": -73.992907,
-  "placeId": "ChIJgaiXlpNbwokRN0vlYTshs-c"
+  "placeId": "ChIJgaiXlpNbwokRN0vlYTshs-c",
+  "michelinId": "1212608",
+  "chef": "Fidel Caballero",
+  "chefSource": "michelin"
 }

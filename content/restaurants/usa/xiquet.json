@@ -18,5 +18,12 @@
   "website": "https://www.xiquetdl.com/",
   "lat": 38.921554,
   "lng": -77.072475,
-  "placeId": "ChIJZZNZ9Lu3t4kRsIt1tM8JHjk"
+  "placeId": "ChIJZZNZ9Lu3t4kRsIt1tM8JHjk",
+  "michelinId": "1184921",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Danny Lledó",
+  "chefSource": "michelin"
 }

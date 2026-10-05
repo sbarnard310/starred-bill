@@ -15,5 +15,8 @@
   "website": "https://www.atelier-peintre.fr/",
   "lat": 48.0765208,
   "lng": 7.3580855,
-  "placeId": "ChIJUZEm8eZlkUcRISjy_Ib3lxY"
+  "placeId": "ChIJUZEm8eZlkUcRISjy_Ib3lxY",
+  "michelinId": "256665",
+  "chef": "Loïc Lefebvre",
+  "chefSource": "michelin"
 }

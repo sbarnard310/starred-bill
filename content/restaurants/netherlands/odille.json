@@ -16,5 +16,13 @@
   "website": "https://odille.nl/",
   "lat": 51.5644992,
   "lng": 5.4604372,
-  "placeId": "ChIJ5X3YDmLhxkcR-gZhHzveXU8"
+  "placeId": "ChIJ5X3YDmLhxkcR-gZhHzveXU8",
+  "michelinId": "1205206",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Casimir Evens",
+  "chefSource": "michelin"
 }

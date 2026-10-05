@@ -13,5 +13,9 @@
   "website": "https://naturhotel-rebling.de/index.php/kulinarik-wein/schwingshackl-esskultur",
   "lat": 48.9296729,
   "lng": 12.9259944,
-  "placeId": "ChIJHZYNhrmOnUcR9dNE6P45H44"
+  "placeId": "ChIJHZYNhrmOnUcR9dNE6P45H44",
+  "michelinId": "79756",
+  "diets": [
+    "vegetarian"
+  ]
 }

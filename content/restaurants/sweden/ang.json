@@ -13,5 +13,8 @@
   "website": "https://www.restaurangang.se",
   "lat": 57.0649323,
   "lng": 12.5594919,
-  "placeId": "ChIJOXrPKkYzUEYRPdukmh03oZw"
+  "placeId": "ChIJOXrPKkYzUEYRPdukmh03oZw",
+  "michelinId": "1192333",
+  "chef": "Filip Gemzell",
+  "chefSource": "michelin"
 }

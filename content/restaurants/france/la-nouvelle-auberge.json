@@ -25,5 +25,9 @@
   "website": "https://www.nauberge.com/",
   "lat": 48.0462924,
   "lng": 7.2085659,
-  "placeId": "ChIJq3q8cvFikUcRJgC-seVIDGQ"
+  "placeId": "ChIJq3q8cvFikUcRJgC-seVIDGQ",
+  "michelinId": "5207",
+  "diets": [
+    "vegetarian"
+  ]
 }

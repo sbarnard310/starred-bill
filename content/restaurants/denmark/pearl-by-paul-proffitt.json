@@ -13,5 +13,11 @@
   "website": "https://pearlbypaulproffitt.dk",
   "lat": 54.86473,
   "lng": 9.50161,
-  "placeId": "ChIJZ8St8wlFs0cRMcHl0PmMmds"
+  "placeId": "ChIJZ8St8wlFs0cRMcHl0PmMmds",
+  "michelinId": "1217594",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Paul Proffitt",
+  "chefSource": "site"
 }

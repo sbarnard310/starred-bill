@@ -13,5 +13,10 @@
   "website": "https://www.mesnerhaus.at",
   "lat": 47.133416,
   "lng": 13.6785494,
-  "placeId": "ChIJ_1RTQUrDcEcR8Af10VI3l2A"
+  "placeId": "ChIJ_1RTQUrDcEcR8Af10VI3l2A",
+  "michelinId": "105361",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

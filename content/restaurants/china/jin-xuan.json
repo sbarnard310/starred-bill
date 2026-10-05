@@ -12,5 +12,13 @@
   "website": "https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/dining/",
   "lat": 31.2384407,
   "lng": 121.4968159,
-  "placeId": "ChIJw_Lc5fpwsjUR2_AbVAb9hN4"
+  "placeId": "ChIJw_Lc5fpwsjUR2_AbVAb9hN4",
+  "michelinId": "506679",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Angelo Aglianó",
+  "chefSource": "site"
 }

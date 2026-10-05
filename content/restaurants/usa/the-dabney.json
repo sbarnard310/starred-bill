@@ -17,5 +17,8 @@
   "website": "https://thedabney.com/",
   "lat": 38.906292,
   "lng": -77.024594,
-  "placeId": "ChIJrTuAH-23t4kRUu2vghXPScI"
+  "placeId": "ChIJrTuAH-23t4kRUu2vghXPScI",
+  "michelinId": "502397",
+  "chef": "Jeremiah Langhorne",
+  "chefSource": "michelin"
 }

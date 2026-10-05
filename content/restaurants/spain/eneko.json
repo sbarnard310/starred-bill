@@ -25,5 +25,8 @@
   "website": "https://www.eneko.restaurant/",
   "lat": 43.260874,
   "lng": -2.814855,
-  "placeId": "ChIJGzL7JVRITg0RxXA0ZCCCPWg"
+  "placeId": "ChIJGzL7JVRITg0RxXA0ZCCCPWg",
+  "michelinId": "366912",
+  "chef": "Eneko Atxa",
+  "chefSource": "michelin"
 }

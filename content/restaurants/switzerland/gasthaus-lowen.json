@@ -13,5 +13,11 @@
   "website": "https://loewen-menzingen.ch/",
   "lat": 47.178566,
   "lng": 8.5903986,
-  "placeId": "ChIJofnurXGsmkcRPe7FSwsOA9M"
+  "placeId": "ChIJofnurXGsmkcRPe7FSwsOA9M",
+  "michelinId": "179704",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

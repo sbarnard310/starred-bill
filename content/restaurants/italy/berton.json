@@ -23,5 +23,12 @@
   "website": "https://www.ristoranteberton.com/",
   "lat": 45.48218,
   "lng": 9.194416,
-  "placeId": "ChIJfR0lDMzGhkcRouaRlwhGnMo"
+  "placeId": "ChIJfR0lDMzGhkcRouaRlwhGnMo",
+  "michelinId": "429627",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Andrea Berton",
+  "chefSource": "michelin"
 }

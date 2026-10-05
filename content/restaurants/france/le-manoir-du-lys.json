@@ -15,5 +15,12 @@
   "website": "https://www.manoir-du-lys.fr",
   "lat": 48.5623198,
   "lng": -0.4443803,
-  "placeId": "ChIJfSt9RR-OCUgRtSl4VRaO3pk"
+  "placeId": "ChIJfSt9RR-OCUgRtSl4VRaO3pk",
+  "michelinId": "10110",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Franck Quinton",
+  "chefSource": "michelin"
 }

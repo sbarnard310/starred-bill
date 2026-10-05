@@ -25,5 +25,8 @@
   "website": "https://www.chateaudesperes.fr",
   "lat": 47.992376,
   "lng": -1.4282385,
-  "placeId": "ChIJdffIpgAsD0gRgTNmysNhDAQ"
+  "placeId": "ChIJdffIpgAsD0gRgTNmysNhDAQ",
+  "michelinId": "1204118",
+  "chef": "Jérôme Jouadé",
+  "chefSource": "michelin"
 }

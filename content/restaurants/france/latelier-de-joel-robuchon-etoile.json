@@ -23,5 +23,11 @@
   "website": "https://atelier-robuchon-etoile.com/",
   "lat": 48.8728404,
   "lng": 2.2973168,
-  "placeId": "ChIJwSZX3Otv5kcRe1gL5hAzplM"
+  "placeId": "ChIJwSZX3Otv5kcRe1gL5hAzplM",
+  "michelinId": "308504",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Éric Bouchenoire",
+  "chefSource": "site"
 }

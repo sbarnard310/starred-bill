@@ -29,5 +29,9 @@
   "website": "https://www.laviebythomasbuehner.com/en",
   "lat": 25.08254,
   "lng": 121.55429,
-  "placeId": "ChIJ4d2s5PetQjQRpRzOcM6Djrg"
+  "placeId": "ChIJ4d2s5PetQjQRpRzOcM6Djrg",
+  "michelinId": "1207773",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -15,5 +15,13 @@
   "website": "https://www.manfredihotels.com/aroma/",
   "lat": 41.890375,
   "lng": 12.494854,
-  "placeId": "ChIJ_RzlBblhLxMR11BvqYi8aoQ"
+  "placeId": "ChIJ_RzlBblhLxMR11BvqYi8aoQ",
+  "michelinId": "265531",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Giuseppe Di Iorio",
+  "chefSource": "michelin"
 }

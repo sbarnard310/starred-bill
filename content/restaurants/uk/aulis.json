@@ -22,5 +22,11 @@
   "website": "https://www.aulis.co.uk/aulis-london",
   "lat": 51.5143368,
   "lng": -0.1343223,
-  "placeId": "ChIJyZd6oCcFdkgR8CXAKet9630"
+  "placeId": "ChIJyZd6oCcFdkgR8CXAKet9630",
+  "michelinId": "557328",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Mark Catchpole",
+  "chefSource": "site"
 }

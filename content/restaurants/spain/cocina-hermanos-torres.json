@@ -28,5 +28,15 @@
   "website": "https://www.cocinahermanostorres.com/",
   "lat": 41.386527,
   "lng": 2.140017,
-  "placeId": "ChIJrcC3iq2ZpBIRyVqXiw2N8XU"
+  "placeId": "ChIJrcC3iq2ZpBIRyVqXiw2N8XU",
+  "michelinId": "557011",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Javier Torres / Sergio Torres",
+  "chefSource": "michelin"
 }

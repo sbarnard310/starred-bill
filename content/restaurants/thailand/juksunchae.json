@@ -18,5 +18,13 @@
   "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
   "website": "https://www.juksunchae.com",
   "lat": 13.7328167,
-  "lng": 100.5766771
+  "lng": 100.5766771,
+  "michelinId": "1209812",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Henry Lee",
+  "chefSource": "michelin"
 }

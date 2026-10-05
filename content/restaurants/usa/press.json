@@ -13,5 +13,12 @@
   "website": "https://www.pressnapavalley.com/",
   "lat": 38.48874,
   "lng": -122.45023,
-  "placeId": "ChIJq4L3m9NQhIAR8MaZwYPwSjY"
+  "placeId": "ChIJq4L3m9NQhIAR8MaZwYPwSjY",
+  "michelinId": "122440",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Philip Tessier",
+  "chefSource": "site"
 }

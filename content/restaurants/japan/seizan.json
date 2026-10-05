@@ -24,5 +24,8 @@
   "website": "https://seizan-mita.com/",
   "lat": 35.647433,
   "lng": 139.739938,
-  "placeId": "ChIJq6pmg6-LGGARhJ-wWOu2HYo"
+  "placeId": "ChIJq6pmg6-LGGARhJ-wWOu2HYo",
+  "michelinId": "1194018",
+  "chef": "Haruhiko Yamamoto",
+  "chefSource": "michelin"
 }

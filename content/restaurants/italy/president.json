@@ -13,5 +13,13 @@
   "website": "https://www.ristorantepresident.it/",
   "lat": 40.74731,
   "lng": 14.49951,
-  "placeId": "ChIJ_5qMmpa8OxMR7xqIFeY8SCw"
+  "placeId": "ChIJ_5qMmpa8OxMR7xqIFeY8SCw",
+  "michelinId": "146069",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Paolo Gramaglia",
+  "chefSource": "site"
 }

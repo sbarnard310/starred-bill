@@ -15,5 +15,11 @@
   "website": "https://www.yscla.at/",
   "lat": 47.00948,
   "lng": 10.28901,
-  "placeId": "ChIJI_ornGGznEcR80JSduGHBV4"
+  "placeId": "ChIJI_ornGGznEcR80JSduGHBV4",
+  "michelinId": "104899",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Benjamin Parth",
+  "chefSource": "michelin"
 }

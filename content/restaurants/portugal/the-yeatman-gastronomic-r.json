@@ -16,5 +16,13 @@
   "website": "https://www.the-yeatman-hotel.com/en/food/restaurant/",
   "lat": 41.1336845,
   "lng": -8.6133869,
-  "placeId": "ChIJcb6xRIFlJA0RSspxmETyV74"
+  "placeId": "ChIJcb6xRIFlJA0RSspxmETyV74",
+  "michelinId": "296064",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ricardo Costa",
+  "chefSource": "michelin"
 }

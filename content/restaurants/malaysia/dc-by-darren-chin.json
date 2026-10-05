@@ -12,5 +12,11 @@
   "website": "https://www.restaurant-dc.com/",
   "lat": 3.141698,
   "lng": 101.627274,
-  "placeId": "ChIJ7W0aCDBJzDERLXoIAb7IIbU"
+  "placeId": "ChIJ7W0aCDBJzDERLXoIAb7IIbU",
+  "michelinId": "1201833",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Darren Chin",
+  "chefSource": "site"
 }

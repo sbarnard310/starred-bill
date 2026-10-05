@@ -23,5 +23,11 @@
   "website": "https://www.mondobracali.it/",
   "lat": 43.058419,
   "lng": 10.899522,
-  "placeId": "ChIJ4Yd3JRfsKRMRFikscn-uUsE"
+  "placeId": "ChIJ4Yd3JRfsKRMRFikscn-uUsE",
+  "michelinId": "139707",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Francesco Bracali",
+  "chefSource": "michelin"
 }

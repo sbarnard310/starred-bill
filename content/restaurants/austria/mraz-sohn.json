@@ -14,5 +14,11 @@
   "website": "https://www.mrazundsohn.at/",
   "lat": 48.2313078,
   "lng": 16.376268,
-  "placeId": "ChIJ-XQUQE0GbUcReMwA7OY540U"
+  "placeId": "ChIJ-XQUQE0GbUcReMwA7OY540U",
+  "michelinId": "106455",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Markus Mraz and Lukas Mraz",
+  "chefSource": "michelin"
 }

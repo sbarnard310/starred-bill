@@ -23,5 +23,14 @@
   "website": "https://www.lunasiaristorante.com/it/index",
   "lat": 43.86546,
   "lng": 10.24472,
-  "placeId": "ChIJ-6kJpvah1RIRtYSYmi0ckHs"
+  "placeId": "ChIJ-6kJpvah1RIRtYSYmi0ckHs",
+  "michelinId": "500267",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Luca Landi",
+  "chefSource": "michelin"
 }

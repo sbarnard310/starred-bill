@@ -15,5 +15,11 @@
   "website": "https://www.cyrusrestaurant.com/",
   "lat": 38.7063682,
   "lng": -122.9006188,
-  "placeId": "ChIJ1UhpBvsFhIARF1n-brdta8k"
+  "placeId": "ChIJ1UhpBvsFhIARF1n-brdta8k",
+  "michelinId": "1191423",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Douglas Keane",
+  "chefSource": "michelin"
 }

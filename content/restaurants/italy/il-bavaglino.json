@@ -13,5 +13,14 @@
   "website": "https://www.giuseppecosta.com",
   "lat": 38.1554559,
   "lng": 13.0810216,
-  "placeId": "ChIJqxjXKiOTGRMR5uS-aDovBUQ"
+  "placeId": "ChIJqxjXKiOTGRMR5uS-aDovBUQ",
+  "michelinId": "1206991",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Giuseppe Costa",
+  "chefSource": "michelin"
 }

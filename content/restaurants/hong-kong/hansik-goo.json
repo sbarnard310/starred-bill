@@ -25,5 +25,11 @@
   "website": "https://www.hansikgoo.hk/",
   "lat": 22.2850215,
   "lng": 114.1528913,
-  "placeId": "ChIJWxl5xB8BBDQRIqbV5q6CKUg"
+  "placeId": "ChIJWxl5xB8BBDQRIqbV5q6CKUg",
+  "michelinId": "1198262",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Mingoo Kang",
+  "chefSource": "michelin"
 }

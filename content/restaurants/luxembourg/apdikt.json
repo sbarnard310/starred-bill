@@ -13,5 +13,8 @@
   "website": "https://www.restaurantapdikt.lu/",
   "lat": 49.6597193,
   "lng": 5.916165,
-  "placeId": "ChIJ5WqMiLOz6kcRvJGC3IXje04"
+  "placeId": "ChIJ5WqMiLOz6kcRvJGC3IXje04",
+  "michelinId": "532986",
+  "chef": "Mathieu Van Wetteren",
+  "chefSource": "michelin"
 }

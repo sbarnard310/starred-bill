@@ -17,5 +17,8 @@
   "website": "https://www.ynyshir.co.uk/",
   "lat": 52.544528,
   "lng": -3.94395,
-  "placeId": "ChIJ3_3QZQeEb0gRV1TASSuMz8w"
+  "placeId": "ChIJ3_3QZQeEb0gRV1TASSuMz8w",
+  "michelinId": "194857",
+  "chef": "Gareth Ward",
+  "chefSource": "michelin"
 }

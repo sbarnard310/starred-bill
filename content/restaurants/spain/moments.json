@@ -31,5 +31,13 @@
   "website": "https://www.mandarinoriental.com/es-es/barcelona/passeig-de-gracia/dine/moments",
   "lat": 41.391169,
   "lng": 2.166483,
-  "placeId": "ChIJ6zCmfe2ipBIRHC8FSUmHIEg"
+  "placeId": "ChIJ6zCmfe2ipBIRHC8FSUmHIEg",
+  "michelinId": "275162",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Raül Balam",
+  "chefSource": "michelin"
 }

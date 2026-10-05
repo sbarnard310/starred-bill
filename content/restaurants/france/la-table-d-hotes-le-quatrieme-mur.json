@@ -13,5 +13,8 @@
   "website": "https://quatrieme-mur.com/",
   "lat": 44.84258,
   "lng": -0.57423,
-  "placeId": "ChIJqRDnZ9onVQ0RDrzHMSVEL8o"
+  "placeId": "ChIJqRDnZ9onVQ0RDrzHMSVEL8o",
+  "michelinId": "540523",
+  "chef": "Philippe Etchebest",
+  "chefSource": "site"
 }

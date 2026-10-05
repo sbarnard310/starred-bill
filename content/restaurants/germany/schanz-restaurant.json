@@ -13,5 +13,11 @@
   "website": "https://www.schanz-restaurant.de/de/",
   "lat": 49.8776003,
   "lng": 6.9266002,
-  "placeId": "ChIJ90bKo-grvkcRV-35p1oIEio"
+  "placeId": "ChIJ90bKo-grvkcRV-35p1oIEio",
+  "michelinId": "337183",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thomas Schanz",
+  "chefSource": "michelin"
 }

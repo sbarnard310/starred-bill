@@ -13,5 +13,13 @@
   "website": "https://capepa.es/",
   "lat": 38.818996,
   "lng": 0.007204,
-  "placeId": "ChIJn2UkGa0CnhIRFOL9kVq28SA"
+  "placeId": "ChIJn2UkGa0CnhIRFOL9kVq28SA",
+  "michelinId": "221962",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Emmanuelle Baron",
+  "chefSource": "michelin"
 }

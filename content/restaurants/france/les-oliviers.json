@@ -25,5 +25,12 @@
   "website": "https://www.restaurant-les-oliviers-bandol.fr",
   "lat": 43.1332056,
   "lng": 5.7511869,
-  "placeId": "ChIJuVBqSxMHyRIRUXSGE52rk50"
+  "placeId": "ChIJuVBqSxMHyRIRUXSGE52rk50",
+  "michelinId": "122360",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Martin Féragus",
+  "chefSource": "site"
 }

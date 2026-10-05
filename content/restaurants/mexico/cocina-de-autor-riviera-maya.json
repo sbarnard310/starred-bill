@@ -20,5 +20,13 @@
   "website": "https://rivieramaya.grandvelas.com/dining/cocina-de-autor",
   "lat": 20.6737307,
   "lng": -87.0233538,
-  "placeId": "ChIJv8JgA3hdTo8RS2MmmI8Xzaw"
+  "placeId": "ChIJv8JgA3hdTo8RS2MmmI8Xzaw",
+  "michelinId": "1213125",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Nahúm Velasco",
+  "chefSource": "michelin"
 }

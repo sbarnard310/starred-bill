@@ -21,5 +21,12 @@
   "website": "https://www.domainedemanville.fr/",
   "lat": 43.7324195,
   "lng": 4.8014926,
-  "placeId": "ChIJB6Iea0nhtRIRNHcOzp3uRps"
+  "placeId": "ChIJB6Iea0nhtRIRNHcOzp3uRps",
+  "michelinId": "444623",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Lieven Van Aken",
+  "chefSource": "michelin"
 }

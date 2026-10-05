@@ -13,5 +13,13 @@
   "website": "https://obarestaurante.es/",
   "lat": 39.2873133,
   "lng": -1.4694894,
-  "placeId": "ChIJ_fEMf_rfZg0RI07QDOzqE5c"
+  "placeId": "ChIJ_fEMf_rfZg0RI07QDOzqE5c",
+  "michelinId": "1202044",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Javier Sanz/ Juan Sahuquillo",
+  "chefSource": "michelin"
 }

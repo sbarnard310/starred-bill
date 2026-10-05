@@ -28,5 +28,8 @@
   "website": "https://diverxo.com/",
   "lat": 40.458291,
   "lng": -3.685672,
-  "placeId": "ChIJfUIagAMpQg0RRYLx9K82nJc"
+  "placeId": "ChIJfUIagAMpQg0RRYLx9K82nJc",
+  "michelinId": "443589",
+  "chef": "Dabiz Muñoz",
+  "chefSource": "site"
 }

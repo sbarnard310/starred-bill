@@ -12,5 +12,11 @@
   "website": "https://www.100200.kitchen/glorie-la-carte-im-100200",
   "lat": 53.5374345,
   "lng": 10.0285679,
-  "placeId": "ChIJ92tbAgCPsUcRIpqz8BySXp8"
+  "placeId": "ChIJ92tbAgCPsUcRIpqz8BySXp8",
+  "michelinId": "1213476",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Thomas Alfons Imbusch",
+  "chefSource": "michelin"
 }

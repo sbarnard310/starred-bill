@@ -17,5 +17,14 @@
   "website": "https://closdessens.com/",
   "lat": 45.9176317,
   "lng": 6.1445765,
-  "placeId": "ChIJqWNssZePi0cRYwsMdWxrcZY"
+  "placeId": "ChIJqWNssZePi0cRYwsMdWxrcZY",
+  "michelinId": "324",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Franck Derouet",
+  "chefSource": "michelin"
 }

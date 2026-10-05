@@ -15,5 +15,11 @@
   "website": "https://www.latabledechaintre.com",
   "lat": 46.2604162,
   "lng": 4.7601996,
-  "placeId": "ChIJj05vs59680cRj1KFxiZ8dTY"
+  "placeId": "ChIJj05vs59680cRj1KFxiZ8dTY",
+  "michelinId": "1855",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

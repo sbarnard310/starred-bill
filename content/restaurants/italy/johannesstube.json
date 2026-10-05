@@ -13,5 +13,11 @@
   "website": "https://www.johannesstube.com/",
   "lat": 46.4296498,
   "lng": 11.5334034,
-  "placeId": "ChIJIZho8U5weEcRjgD-ND6_IFY"
+  "placeId": "ChIJIZho8U5weEcRjgD-ND6_IFY",
+  "michelinId": "325072",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Philip Lochmann",
+  "chefSource": "michelin"
 }

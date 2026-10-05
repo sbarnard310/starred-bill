@@ -16,5 +16,13 @@
   "website": "https://www.macadecastro.com",
   "lat": 39.8343,
   "lng": 3.11829,
-  "placeId": "ChIJA0koiuoslhIRExIrzbyyDs4"
+  "placeId": "ChIJA0koiuoslhIRExIrzbyyDs4",
+  "michelinId": "218008",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Macarena De Castro Martín",
+  "chefSource": "michelin"
 }

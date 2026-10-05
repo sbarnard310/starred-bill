@@ -13,5 +13,8 @@
   "website": "https://www.sanscravate.be/nl/",
   "lat": 51.2123748,
   "lng": 3.2381662,
-  "placeId": "ChIJlSE0HLZQw0cRlxTWL7FhGII"
+  "placeId": "ChIJlSE0HLZQw0cRlxTWL7FhGII",
+  "michelinId": "209353",
+  "chef": "Henk Van Oudenhouve",
+  "chefSource": "michelin"
 }

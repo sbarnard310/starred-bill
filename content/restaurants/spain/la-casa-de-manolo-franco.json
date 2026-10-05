@@ -32,5 +32,13 @@
   "website": "https://www.lacasademanolofranco.com/",
   "lat": 40.501,
   "lng": -4.067955,
-  "placeId": "ChIJMfxTKyKfQQ0R_u-5-ulUXr0"
+  "placeId": "ChIJMfxTKyKfQQ0R_u-5-ulUXr0",
+  "michelinId": "1185083",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Manu Franco",
+  "chefSource": "michelin"
 }

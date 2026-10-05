@@ -30,5 +30,9 @@
   "website": "https://www.gucciosteria.com/ja/tokyo",
   "lat": 35.670459,
   "lng": 139.762079,
-  "placeId": "ChIJGZmQVXyLGGARIr01OW-8CGg"
+  "placeId": "ChIJGZmQVXyLGGARIr01OW-8CGg",
+  "michelinId": "1201836",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -13,5 +13,8 @@
   "website": "https://schisto.pt/",
   "lat": 41.1548135,
   "lng": -7.7691469,
-  "placeId": "ChIJbUcIQcVTOw0RzsYz-5kk5EY"
+  "placeId": "ChIJbUcIQcVTOw0RzsYz-5kk5EY",
+  "michelinId": "1219170",
+  "chef": "Vítor Matos",
+  "chefSource": "michelin"
 }

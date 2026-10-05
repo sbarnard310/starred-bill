@@ -15,5 +15,11 @@
   "website": "https://www.kucherslandhotel.de/genuss-restaurant-eifel/michelin-sterne-restaurant/",
   "lat": 50.2106931,
   "lng": 6.8832352,
-  "placeId": "ChIJ_2xNO5K0v0cRTxZcOqQGHnk"
+  "placeId": "ChIJ_2xNO5K0v0cRTxZcOqQGHnk",
+  "michelinId": "80214",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Florian Kucher",
+  "chefSource": "michelin"
 }

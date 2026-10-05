@@ -14,5 +14,12 @@
   "website": "https://mgmgrand.mgmresorts.com/en/restaurants/joel-robuchon-french-restaurant.html",
   "lat": 36.1019984,
   "lng": -115.1688491,
-  "placeId": "ChIJJULcuqLFyIARupiJy1b4gWQ"
+  "placeId": "ChIJJULcuqLFyIARupiJy1b4gWQ",
+  "michelinId": "1245958",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

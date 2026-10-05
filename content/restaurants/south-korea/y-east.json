@@ -25,5 +25,12 @@
   "website": "https://www.yeastseoul.co.kr/",
   "lat": 37.5263,
   "lng": 127.03556,
-  "placeId": "ChIJB2BRX3OjfDURrLzEVUCryxk"
+  "placeId": "ChIJB2BRX3OjfDURrLzEVUCryxk",
+  "michelinId": "1206188",
+  "diets": [
+    "halal",
+    "kosher"
+  ],
+  "chef": "Young-dong Cho",
+  "chefSource": "michelin"
 }

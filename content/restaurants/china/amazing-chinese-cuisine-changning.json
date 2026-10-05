@@ -9,5 +9,12 @@
   "sourceType": "none",
   "website": "https://www.selectionbydu.com/en",
   "lat": 31.2024972,
-  "lng": 121.3886
+  "lng": 121.3886,
+  "michelinId": "506682",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ]
 }

@@ -20,5 +20,9 @@
   "website": "https://www.restaurantaure.dk/",
   "lat": 55.684166,
   "lng": 12.610397,
-  "placeId": "ChIJV_8E0sJTUkYRRlJfxBk5d6k"
+  "placeId": "ChIJV_8E0sJTUkYRRlJfxBk5d6k",
+  "michelinId": "1212810",
+  "diets": [
+    "vegetarian"
+  ]
 }

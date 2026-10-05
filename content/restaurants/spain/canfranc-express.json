@@ -13,5 +13,8 @@
   "website": "https://www.barcelo.com/es-es/canfranc-estacion-a-royal-hideaway-hotel/gastronomia/canfranc-express/",
   "lat": 42.753857,
   "lng": -0.5147982,
-  "placeId": "ChIJ_YWmcTubVw0ROwvHVP0MA24"
+  "placeId": "ChIJ_YWmcTubVw0ROwvHVP0MA24",
+  "michelinId": "1209862",
+  "chef": "Eduardo Salanova",
+  "chefSource": "michelin"
 }

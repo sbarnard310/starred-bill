@@ -14,5 +14,11 @@
   "website": "https://www.schlosskellersuedsteiermark.at/",
   "lat": 46.7782445,
   "lng": 15.5243218,
-  "placeId": "ChIJbTg0SQOjb0cRdt17J7m5bVM"
+  "placeId": "ChIJbTg0SQOjb0cRdt17J7m5bVM",
+  "michelinId": "1213581",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Markus Rath",
+  "chefSource": "michelin"
 }

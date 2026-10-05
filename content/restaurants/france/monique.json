@@ -25,5 +25,12 @@
   "website": "https://www.monique-restaurant.com",
   "lat": 43.7845468,
   "lng": 4.1927965,
-  "placeId": "ChIJMb2OWv8ntBIRmNxkF7DiwJE"
+  "placeId": "ChIJMb2OWv8ntBIRmNxkF7DiwJE",
+  "michelinId": "1213895",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Julien Caligo",
+  "chefSource": "site"
 }

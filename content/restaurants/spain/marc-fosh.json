@@ -15,5 +15,13 @@
   "website": "https://www.marcfosh.com/",
   "lat": 39.5735982,
   "lng": 2.6513729,
-  "placeId": "ChIJp8jNHVGSlxIRcQ5-_4bPYBg"
+  "placeId": "ChIJp8jNHVGSlxIRcQ5-_4bPYBg",
+  "michelinId": "282249",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Marc Fosh",
+  "chefSource": "michelin"
 }

@@ -28,5 +28,13 @@
   "website": "https://enotecapacoperez.com/",
   "lat": 41.386878,
   "lng": 2.196935,
-  "placeId": "ChIJ0Ulj4g6jpBIRDNNmVg5Hr2E"
+  "placeId": "ChIJ0Ulj4g6jpBIRDNNmVg5Hr2E",
+  "michelinId": "204150",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Paco Pérez",
+  "chefSource": "michelin"
 }

@@ -11,5 +11,8 @@
   "sourceType": "none",
   "lat": 34.695621,
   "lng": 135.499246,
-  "placeId": "ChIJD-nwMD7nAGARQUVqvF4KDdw"
+  "placeId": "ChIJD-nwMD7nAGARQUVqvF4KDdw",
+  "michelinId": "1193123",
+  "chef": "Toshihiro Shimizu",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,11 @@
   "website": "https://www.restaurant-kuno.de/main/index.php",
   "lat": 49.7904688,
   "lng": 9.9305144,
-  "placeId": "ChIJ3yHb5DCQokcR5lJ_l-tNi0M"
+  "placeId": "ChIJ3yHb5DCQokcR5lJ_l-tNi0M",
+  "michelinId": "85265",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Robin Hofmann and Patrick Grieshaber",
+  "chefSource": "michelin"
 }

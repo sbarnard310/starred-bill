@@ -13,5 +13,13 @@
   "website": "https://www.dattilo.it",
   "lat": 39.2664765,
   "lng": 17.0819276,
-  "placeId": "ChIJs1WmLxFaQBMRAbVd3JAcziA"
+  "placeId": "ChIJs1WmLxFaQBMRAbVd3JAcziA",
+  "michelinId": "255129",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Caterina Ceraudo",
+  "chefSource": "michelin"
 }

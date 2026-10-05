@@ -13,5 +13,11 @@
   "website": "https://www.speiseberg.com",
   "lat": 51.5049411,
   "lng": 11.9514969,
-  "placeId": "ChIJlwmjsv17pkcRNYLnggpN29M"
+  "placeId": "ChIJlwmjsv17pkcRNYLnggpN29M",
+  "michelinId": "1195738",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christoph Baumgartner",
+  "chefSource": "michelin"
 }

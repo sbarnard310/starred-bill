@@ -15,5 +15,13 @@
   "website": "https://www.burg-staufeneck.de/de/",
   "lat": 48.6917367,
   "lng": 9.7666002,
-  "placeId": "ChIJa77XbwChmUcR9XJU3QWhJ70"
+  "placeId": "ChIJa77XbwChmUcR9XJU3QWhJ70",
+  "michelinId": "1192313",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Markus Waibel and Dominik Holl",
+  "chefSource": "michelin"
 }

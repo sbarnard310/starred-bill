@@ -14,5 +14,10 @@
   "website": "https://mountainhub.de/gourmet-restaurant/",
   "lat": 48.3552847,
   "lng": 11.7880342,
-  "placeId": "ChIJsd8P8BkVnkcR8Ey42-m-B98"
+  "placeId": "ChIJsd8P8BkVnkcR8Ey42-m-B98",
+  "michelinId": "1193355",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -28,5 +28,11 @@
   "website": "https://www.disfrutarbarcelona.com/",
   "lat": 41.387976,
   "lng": 2.153037,
-  "placeId": "ChIJTSzGu4WipBIRkznre9Zwis0"
+  "placeId": "ChIJTSzGu4WipBIRkznre9Zwis0",
+  "michelinId": "459806",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Eduard Xatruch, Oriol Castro and Mateu Casañas",
+  "chefSource": "michelin"
 }

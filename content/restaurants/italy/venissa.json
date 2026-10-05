@@ -13,5 +13,15 @@
   "website": "https://www.venissa.it/",
   "lat": 45.4886784,
   "lng": 12.4111088,
-  "placeId": "ChIJ2SrR5QOtfkcR_a5aJSbMxUI"
+  "placeId": "ChIJ2SrR5QOtfkcR_a5aJSbMxUI",
+  "michelinId": "275339",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Chiara Pavan",
+  "chefSource": "michelin"
 }

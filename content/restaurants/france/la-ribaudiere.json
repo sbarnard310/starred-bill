@@ -23,5 +23,12 @@
   "website": "https://laribaudiere.com/",
   "lat": 45.6735606,
   "lng": -0.2248163,
-  "placeId": "ChIJmYM1bkqJAEgRCWFI8FBw3wY"
+  "placeId": "ChIJmYM1bkqJAEgRCWFI8FBw3wY",
+  "michelinId": "3892",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Thierry Verrat and Julien Verrat",
+  "chefSource": "michelin"
 }

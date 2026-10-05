@@ -13,5 +13,13 @@
   "website": "https://alquimiavalladolid.es/",
   "lat": 41.6538741,
   "lng": -4.7224762,
-  "placeId": "ChIJnQNToL4TRw0RsFaF87qEMYY"
+  "placeId": "ChIJnQNToL4TRw0RsFaF87qEMYY",
+  "michelinId": "1090843",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alvar Hinojal",
+  "chefSource": "michelin"
 }

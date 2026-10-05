@@ -13,5 +13,13 @@
   "website": "https://www.frascafoodandwine.com/",
   "lat": 40.0193351,
   "lng": -105.2724941,
-  "placeId": "ChIJ32ggfCnsa4cReukO2DP2hXY"
+  "placeId": "ChIJ32ggfCnsa4cReukO2DP2hXY",
+  "michelinId": "1205005",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Lachlan Mackinnon-Patterson",
+  "chefSource": "site"
 }

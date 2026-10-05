@@ -15,5 +15,14 @@
   "website": "https://www.levieuxchateau.be/",
   "lat": 50.7374064,
   "lng": 3.7337919,
-  "placeId": "ChIJvWDVhfAGw0cRbST_ePiPVaY"
+  "placeId": "ChIJvWDVhfAGw0cRbST_ePiPVaY",
+  "michelinId": "1154894",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Tanguy De Turck",
+  "chefSource": "michelin"
 }

@@ -22,5 +22,11 @@
   "website": "https://www.behindrestaurant.co.uk/",
   "lat": 51.5392307,
   "lng": -0.0575568,
-  "placeId": "ChIJdyD4g3MddkgRu4WVVDnjZv8"
+  "placeId": "ChIJdyD4g3MddkgRu4WVVDnjZv8",
+  "michelinId": "1193677",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andy Beynon",
+  "chefSource": "site"
 }

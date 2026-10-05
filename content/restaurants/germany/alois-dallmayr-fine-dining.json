@@ -14,5 +14,11 @@
   "website": "https://www.dallmayr.com/de/delikatessenhaus/restaurant/",
   "lat": 48.1383054,
   "lng": 11.5771585,
-  "placeId": "ChIJUbU58wV1nkcR6jK2iXRta70"
+  "placeId": "ChIJUbU58wV1nkcR6jK2iXRta70",
+  "michelinId": "566926",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Rosina Ostler",
+  "chefSource": "michelin"
 }

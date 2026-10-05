@@ -15,5 +15,11 @@
   "website": "https://www.restaurant-lasociete.de/",
   "lat": 50.9285296,
   "lng": 6.9372169,
-  "placeId": "ChIJ3zbD7_4kv0cRPAo60PqMe_4"
+  "placeId": "ChIJ3zbD7_4kv0cRPAo60PqMe_4",
+  "michelinId": "74572",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Leon Hofmockel",
+  "chefSource": "michelin"
 }

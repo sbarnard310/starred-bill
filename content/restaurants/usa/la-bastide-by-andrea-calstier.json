@@ -21,5 +21,8 @@
   "website": "https://www.labastidebyac.com/",
   "lat": 41.337692,
   "lng": -73.563022,
-  "placeId": "ChIJz1CaY7atwokRqKVLEyrWico"
+  "placeId": "ChIJz1CaY7atwokRqKVLEyrWico",
+  "michelinId": "1212797",
+  "chef": "Andrea Calstier",
+  "chefSource": "michelin"
 }

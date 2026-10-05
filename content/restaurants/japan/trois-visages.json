@@ -30,5 +30,11 @@
   "website": "https://troisvisages.jp/",
   "lat": 35.667149,
   "lng": 139.765611,
-  "placeId": "ChIJZ6S6tmaLGGARzKiPwbhy4aU"
+  "placeId": "ChIJZ6S6tmaLGGARzKiPwbhy4aU",
+  "michelinId": "1202508",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Ryohei Kuninaga",
+  "chefSource": "michelin"
 }

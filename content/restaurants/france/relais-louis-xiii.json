@@ -25,5 +25,13 @@
   "website": "https://relaislouis13.fr/",
   "lat": 48.8546533,
   "lng": 2.3408104,
-  "placeId": "ChIJqbFrDt9x5kcRGKvCYWvzK28"
+  "placeId": "ChIJqbFrDt9x5kcRGKvCYWvzK28",
+  "michelinId": "5911",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Manuel Martinez",
+  "chefSource": "site"
 }

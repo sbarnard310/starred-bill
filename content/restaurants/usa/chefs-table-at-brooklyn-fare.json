@@ -22,5 +22,11 @@
   "website": "https://www.brooklynfare.com/chefs-table/",
   "lat": 40.756082,
   "lng": -73.9965,
-  "placeId": "ChIJiVVSAE1awokRzdvqVP_z3aA"
+  "placeId": "ChIJiVVSAE1awokRzdvqVP_z3aA",
+  "michelinId": "283703",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Cesar Ramirez",
+  "chefSource": "michelin"
 }

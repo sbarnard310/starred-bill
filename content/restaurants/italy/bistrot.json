@@ -23,5 +23,12 @@
   "website": "https://ristorantebistrot.it/",
   "lat": 43.955393,
   "lng": 10.170001,
-  "placeId": "ChIJg8hnlQMK1RIReNMK1t_24MI"
+  "placeId": "ChIJg8hnlQMK1RIReNMK1t_24MI",
+  "michelinId": "135165",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Andrea Mattei",
+  "chefSource": "michelin"
 }

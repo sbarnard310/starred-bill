@@ -25,5 +25,13 @@
   "website": "https://www.restaurant-alliance.fr/",
   "lat": 48.8500038,
   "lng": 2.353269,
-  "placeId": "ChIJeWenk-Rx5kcRRoSlhTbzWlM"
+  "placeId": "ChIJeWenk-Rx5kcRRoSlhTbzWlM",
+  "michelinId": "489523",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "kosher"
+  ],
+  "chef": "Toshitaka Omiya",
+  "chefSource": "michelin"
 }

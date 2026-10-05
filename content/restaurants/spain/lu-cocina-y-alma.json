@@ -13,5 +13,11 @@
   "website": "https://www.lucocinayalma.com",
   "lat": 36.6876345,
   "lng": -6.1357554,
-  "placeId": "ChIJoy5Sk5XGDQ0RAPg46JVv_-k"
+  "placeId": "ChIJoy5Sk5XGDQ0RAPg46JVv_-k",
+  "michelinId": "553300",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Juanlu Fernández",
+  "chefSource": "michelin"
 }

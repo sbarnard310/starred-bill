@@ -13,5 +13,8 @@
   "website": "https://abantalrestaurante.es/",
   "lat": 37.3878998,
   "lng": -5.9836581,
-  "placeId": "ChIJZ9KMjB1sEg0R6NhDbHBZO9M"
+  "placeId": "ChIJZ9KMjB1sEg0R6NhDbHBZO9M",
+  "michelinId": "223478",
+  "chef": "Julio Fernández Quintero",
+  "chefSource": "michelin"
 }

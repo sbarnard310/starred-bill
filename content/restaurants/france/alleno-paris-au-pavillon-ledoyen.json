@@ -21,5 +21,8 @@
   "website": "https://www.yannick-alleno.com/les-etablissements-du-groupe/alleno-paris",
   "lat": 48.8660932,
   "lng": 2.3164993,
-  "placeId": "ChIJt_i_hmdv5kcRmMIR274srQM"
+  "placeId": "ChIJt_i_hmdv5kcRmMIR274srQM",
+  "michelinId": "6104",
+  "chef": "Yannick Alléno",
+  "chefSource": "michelin"
 }

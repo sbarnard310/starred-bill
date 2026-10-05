@@ -21,5 +21,8 @@
   "website": "https://www.somnirestaurant.com/",
   "lat": 34.082256,
   "lng": -118.388587,
-  "placeId": "ChIJVa5jok65woARLJWEqmHTCp8"
+  "placeId": "ChIJVa5jok65woARLJWEqmHTCp8",
+  "michelinId": "559610",
+  "chef": "Aitor Zabala",
+  "chefSource": "michelin"
 }

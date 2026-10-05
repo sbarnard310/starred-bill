@@ -25,5 +25,13 @@
   "website": "https://moorhall.com/",
   "lat": 53.542336,
   "lng": -2.891918,
-  "placeId": "ChIJJab6re8Xe0gRYSmRlCHV2dY"
+  "placeId": "ChIJJab6re8Xe0gRYSmRlCHV2dY",
+  "michelinId": "488930",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Mark Birchall",
+  "chefSource": "michelin"
 }

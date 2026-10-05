@@ -23,5 +23,9 @@
   "website": "https://loafon.com/en/",
   "lat": 22.379858,
   "lng": 114.27188,
-  "placeId": "ChIJPeF-qr0FBDQRklrGXCqEbjY"
+  "placeId": "ChIJPeF-qr0FBDQRklrGXCqEbjY",
+  "michelinId": "258468",
+  "diets": [
+    "vegetarian"
+  ]
 }

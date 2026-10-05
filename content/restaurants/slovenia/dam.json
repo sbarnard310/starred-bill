@@ -13,5 +13,12 @@
   "website": "https://www.damhotel.si",
   "lat": 45.9582635,
   "lng": 13.6622519,
-  "placeId": "ChIJLXuy9Q4Be0cRjrDfWpHQi7Y"
+  "placeId": "ChIJLXuy9Q4Be0cRjrDfWpHQi7Y",
+  "michelinId": "1160171",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Uroš Fakuč",
+  "chefSource": "michelin"
 }

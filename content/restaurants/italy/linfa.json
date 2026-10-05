@@ -24,5 +24,12 @@
   "website": "https://www.mktn.it/linfa",
   "lat": 43.470403,
   "lng": 11.042079,
-  "placeId": "ChIJ9_dn12o9KhMRETNuJsCF-yQ"
+  "placeId": "ChIJ9_dn12o9KhMRETNuJsCF-yQ",
+  "michelinId": "1192183",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Giovanni Cerroni",
+  "chefSource": "michelin"
 }

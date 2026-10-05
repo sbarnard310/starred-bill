@@ -15,5 +15,14 @@
   "website": "https://fields.lu/",
   "lat": 49.6281524,
   "lng": 6.2030348,
-  "placeId": "ChIJFR-oPo5FlUcRcJ_NIXiybTI"
+  "placeId": "ChIJFR-oPo5FlUcRcJ_NIXiybTI",
+  "michelinId": "1217672",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "René Mathieu",
+  "chefSource": "michelin"
 }

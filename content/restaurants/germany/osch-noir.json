@@ -15,5 +15,13 @@
   "website": "https://www.oeschberghof.com/restaurants-bars/oesch-noir",
   "lat": 47.9655184,
   "lng": 8.5471151,
-  "placeId": "ChIJ6wEYtjebkEcRvy1btBPpHcE"
+  "placeId": "ChIJ6wEYtjebkEcRvy1btBPpHcE",
+  "michelinId": "1184066",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Manuel Ulrich",
+  "chefSource": "site"
 }

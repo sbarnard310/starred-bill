@@ -22,5 +22,15 @@
   "website": "https://www.alinearestaurant.com/",
   "lat": 41.913274,
   "lng": -87.648174,
-  "placeId": "ChIJuyI60yLTD4gROwTWENq1He0"
+  "placeId": "ChIJuyI60yLTD4gROwTWENq1He0",
+  "michelinId": "268970",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Grant Achatz",
+  "chefSource": "michelin"
 }

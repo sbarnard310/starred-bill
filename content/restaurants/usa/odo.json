@@ -22,5 +22,8 @@
   "website": "https://www.odo.nyc/",
   "lat": 40.740705,
   "lng": -73.99299,
-  "placeId": "ChIJlRDB34FZwokRUVAP-qsAoUY"
+  "placeId": "ChIJlRDB34FZwokRUVAP-qsAoUY",
+  "michelinId": "1164895",
+  "chef": "Hiroki Odo",
+  "chefSource": "michelin"
 }

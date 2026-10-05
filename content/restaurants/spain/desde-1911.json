@@ -26,5 +26,13 @@
   "website": "https://www.desde1911.es/",
   "lat": 40.448534,
   "lng": -3.709888,
-  "placeId": "ChIJnXNVR5spQg0Rme2Rv3TPPJM"
+  "placeId": "ChIJnXNVR5spQg0Rme2Rv3TPPJM",
+  "michelinId": "1198535",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

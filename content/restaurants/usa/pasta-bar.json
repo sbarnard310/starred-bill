@@ -17,5 +17,10 @@
   "website": "https://www.pastabarencino.com/",
   "lat": 34.156721,
   "lng": -118.483862,
-  "placeId": "ChIJO84WyaaXwoARGH9mHWHN5mw"
+  "placeId": "ChIJO84WyaaXwoARGH9mHWHN5mw",
+  "michelinId": "1191950",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ]
 }

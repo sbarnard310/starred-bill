@@ -13,5 +13,11 @@
   "website": "https://www.hennekirkebykro.dk/",
   "lat": 55.7270112,
   "lng": 8.2423144,
-  "placeId": "ChIJr7LY1kHlSkYR-FgaMam2-xU"
+  "placeId": "ChIJr7LY1kHlSkYR-FgaMam2-xU",
+  "michelinId": "467305",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Paul Cunningham",
+  "chefSource": "michelin"
 }

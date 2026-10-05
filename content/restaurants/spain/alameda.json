@@ -25,5 +25,10 @@
   "website": "https://restaurantealameda.net/",
   "lat": 43.361219,
   "lng": -1.792582,
-  "placeId": "ChIJfbZAHQYJUQ0RAH0yeLbrfHA"
+  "placeId": "ChIJfbZAHQYJUQ0RAH0yeLbrfHA",
+  "michelinId": "220551",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

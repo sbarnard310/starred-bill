@@ -25,5 +25,13 @@
   "website": "https://www.enricobartolini.net/",
   "lat": 45.4516,
   "lng": 9.161865,
-  "placeId": "ChIJr54jbebDhkcRlR68yNtO368"
+  "placeId": "ChIJr54jbebDhkcRlR68yNtO368",
+  "michelinId": "478337",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Enrico Bartolini and Davide Boglioli",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,10 @@
   "website": "https://www.restauracjamuga.pl/",
   "lat": 52.4038298,
   "lng": 16.9288155,
-  "placeId": "ChIJx52iXTlbBEcRzijuioddnik"
+  "placeId": "ChIJx52iXTlbBEcRzijuioddnik",
+  "michelinId": "1191388",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

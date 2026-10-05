@@ -15,5 +15,11 @@
   "website": "https://www.jardindesplumes.fr",
   "lat": 49.0756756,
   "lng": 1.5253889,
-  "placeId": "ChIJ4dtQsgbJ5kcR4gY54WVK80w"
+  "placeId": "ChIJ4dtQsgbJ5kcR4gY54WVK80w",
+  "michelinId": "413864",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "David Gallienne",
+  "chefSource": "michelin"
 }

@@ -16,5 +16,8 @@
   "website": "https://www.obendorfers-eisvogel.de/",
   "lat": 49.338408,
   "lng": 12.261695,
-  "placeId": "ChIJMeEMK9v1n0cRHqpPbC2l4yw"
+  "placeId": "ChIJMeEMK9v1n0cRHqpPbC2l4yw",
+  "michelinId": "168526",
+  "chef": "Sebastian Obendorfer",
+  "chefSource": "site"
 }

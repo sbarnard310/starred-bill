@@ -21,5 +21,11 @@
   "website": "https://www.jatakcph.com/",
   "lat": 55.687052,
   "lng": 12.547932,
-  "placeId": "ChIJu7H8HXxTUkYRuLKQbQU824w"
+  "placeId": "ChIJu7H8HXxTUkYRuLKQbQU824w",
+  "michelinId": "1200871",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jonathan Tam",
+  "chefSource": "michelin"
 }

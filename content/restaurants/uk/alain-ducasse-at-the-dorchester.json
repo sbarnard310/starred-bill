@@ -21,5 +21,12 @@
   "website": "https://www.alainducasse-dorchester.com/",
   "lat": 51.5073381,
   "lng": -0.152575,
-  "placeId": "ChIJDaP2Ky4FdkgR7VspCxVWiDk"
+  "placeId": "ChIJDaP2Ky4FdkgR7VspCxVWiDk",
+  "michelinId": "214656",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

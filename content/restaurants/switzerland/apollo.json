@@ -13,5 +13,14 @@
   "website": "https://hotelgrischa.ch/restaurants/apollo/",
   "lat": 46.7914018,
   "lng": 9.8201949,
-  "placeId": "ChIJUXyOZ0qhhEcR4ABma0cUDkY"
+  "placeId": "ChIJUXyOZ0qhhEcR4ABma0cUDkY",
+  "michelinId": "1213061",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Thomas Huber",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,12 @@
   "website": "https://www.josephs-fine-dining.de/",
   "lat": 51.600267,
   "lng": 10.5450555,
-  "placeId": "ChIJi2bZjqcdpUcR7VtI5_5sri8"
+  "placeId": "ChIJi2bZjqcdpUcR7VtI5_5sri8",
+  "michelinId": "1205728",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Ralph Hollokoi",
+  "chefSource": "site"
 }

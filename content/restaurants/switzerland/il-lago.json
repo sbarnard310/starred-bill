@@ -12,5 +12,11 @@
   "website": "https://www.fourseasons.com/geneva",
   "lat": 46.2068583,
   "lng": 6.1466147,
-  "placeId": "ChIJE7P2qShljEcRZUc-PjvxJpg"
+  "placeId": "ChIJE7P2qShljEcRZUc-PjvxJpg",
+  "michelinId": "171989",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -24,5 +24,12 @@
   "website": "https://arayarestaurant.com/",
   "lat": 1.278868,
   "lng": 103.841816,
-  "placeId": "ChIJZXWDPcYZ2jERTnbzNEZ_hDE"
+  "placeId": "ChIJZXWDPcYZ2jERTnbzNEZ_hDE",
+  "michelinId": "1212874",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Francisco Araya and Fernanda Fuentes",
+  "chefSource": "site"
 }

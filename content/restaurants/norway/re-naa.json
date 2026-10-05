@@ -15,5 +15,11 @@
   "website": "https://www.restaurantrenaa.no/",
   "lat": 58.9739705,
   "lng": 5.7308447,
-  "placeId": "ChIJG7IDHko1OkYRNC5tAviphS0"
+  "placeId": "ChIJG7IDHko1OkYRNC5tAviphS0",
+  "michelinId": "479519",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Sven Erik Renaa",
+  "chefSource": "michelin"
 }

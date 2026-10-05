@@ -12,5 +12,14 @@
   "website": "https://www.musaaferhouston.com",
   "lat": 29.7405722,
   "lng": -95.4639608,
-  "placeId": "ChIJk3AANG_BQIYRslF9Sn9-03U"
+  "placeId": "ChIJk3AANG_BQIYRslF9Sn9-03U",
+  "michelinId": "1196499",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Mayank Istwal",
+  "chefSource": "site"
 }

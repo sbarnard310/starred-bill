@@ -21,5 +21,9 @@
   "website": "https://www.marinabaysands.com/restaurants/waku-ghin.html",
   "lat": 1.283175,
   "lng": 103.8598,
-  "placeId": "ChIJeeuv1AUZ2jEROtmhPHnPYQ4"
+  "placeId": "ChIJeeuv1AUZ2jEROtmhPHnPYQ4",
+  "michelinId": "501679",
+  "diets": [
+    "vegetarian"
+  ]
 }

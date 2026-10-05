@@ -9,5 +9,11 @@
   "sourceType": "none",
   "website": "https://www.ambreciel.cn",
   "lat": 30.2652928,
-  "lng": 120.0982588
+  "lng": 120.0982588,
+  "michelinId": "1206781",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alan Yu",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,12 @@
   "website": "https://atama.de/",
   "lat": 49.27289,
   "lng": 7.11203,
-  "placeId": "ChIJrxpFDzTIlUcRpSTFTZGHBks"
+  "placeId": "ChIJrxpFDzTIlUcRpSTFTZGHBks",
+  "michelinId": "1216921",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Martin Stopp",
+  "chefSource": "site"
 }

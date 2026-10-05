@@ -13,5 +13,13 @@
   "website": "https://www.unicrestaurantibiza.com",
   "lat": 38.8898956,
   "lng": 1.4077202,
-  "placeId": "ChIJt9yIeyxEmRIRtjCLULPn59A"
+  "placeId": "ChIJt9yIeyxEmRIRtjCLULPn59A",
+  "michelinId": "500769",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "David Grussaute",
+  "chefSource": "michelin"
 }

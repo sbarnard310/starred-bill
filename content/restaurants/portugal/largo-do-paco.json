@@ -11,5 +11,8 @@
   "website": "https://www.casadacalcada.com/largo-do-paco",
   "lat": 41.2683621,
   "lng": -8.0776486,
-  "placeId": "ChIJJxGvaOW-JA0RJLBkgyRLy_4"
+  "placeId": "ChIJJxGvaOW-JA0RJLBkgyRLy_4",
+  "michelinId": "216595",
+  "chef": "Francisco Quintas",
+  "chefSource": "michelin"
 }

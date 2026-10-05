@@ -12,5 +12,8 @@
   "website": "https://www.cordishotels.com/en/shanghai-hongqiao/dine/ming-court/",
   "lat": 31.19512,
   "lng": 121.31633,
-  "placeId": "ChIJMV5mA-dmsjURLDVdz9QhNhM"
+  "placeId": "ChIJMV5mA-dmsjURLDVdz9QhNhM",
+  "michelinId": "570629",
+  "chef": "Paul Qian",
+  "chefSource": "site"
 }

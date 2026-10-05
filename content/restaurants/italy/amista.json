@@ -16,5 +16,14 @@
   "website": "https://www.ristoranteamista.com/",
   "lat": 45.48968,
   "lng": 10.899484,
-  "placeId": "ChIJQS4yvIfjgUcR8iPuwSV8Mes"
+  "placeId": "ChIJQS4yvIfjgUcR8iPuwSV8Mes",
+  "michelinId": "499002",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Donato De Leonardis",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,12 @@
   "website": "https://www.chapeau-rouge.fr/fr/restaurant-gastronomique-dijon",
   "lat": 47.3212722,
   "lng": 5.0356396,
-  "placeId": "ChIJOXCqiI6d8kcRMJcqZB6QdkQ"
+  "placeId": "ChIJOXCqiI6d8kcRMJcqZB6QdkQ",
+  "michelinId": "11028",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "William Frachot",
+  "chefSource": "michelin"
 }

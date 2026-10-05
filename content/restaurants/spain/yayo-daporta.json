@@ -13,5 +13,12 @@
   "website": "https://yayodaporta.com/",
   "lat": 42.5128612,
   "lng": -8.8148041,
-  "placeId": "ChIJOzPUZLhqLw0RkdwjW8CG8ko"
+  "placeId": "ChIJOzPUZLhqLw0RkdwjW8CG8ko",
+  "michelinId": "218974",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Yayo Daporta",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,8 @@
   "website": "https://www.villa-keller.de/dopamin-fine-dining",
   "lat": 49.6085603,
   "lng": 6.5576478,
-  "placeId": "ChIJG3C8cTdvlUcRoFnT3wc6eIs"
+  "placeId": "ChIJG3C8cTdvlUcRoFnT3wc6eIs",
+  "michelinId": "1244250",
+  "chef": "Axel Boesen",
+  "chefSource": "michelin"
 }

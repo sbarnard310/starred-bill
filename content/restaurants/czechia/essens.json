@@ -13,5 +13,11 @@
   "website": "https://www.restaurantessens.cz/",
   "lat": 48.7803038,
   "lng": 16.7578589,
-  "placeId": "ChIJgeskivwtbUcRo2FcqmjWC74"
+  "placeId": "ChIJgeskivwtbUcRo2FcqmjWC74",
+  "michelinId": "1211374",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

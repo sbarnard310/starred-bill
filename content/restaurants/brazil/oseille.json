@@ -11,5 +11,8 @@
   "sourceType": "none",
   "lat": -22.9830324,
   "lng": -43.2049864,
-  "placeId": "ChIJx3sGNsHVmwARMA5CncK0nsY"
+  "placeId": "ChIJx3sGNsHVmwARMA5CncK0nsY",
+  "michelinId": "1213062",
+  "chef": "Thomas Troisgros",
+  "chefSource": "michelin"
 }

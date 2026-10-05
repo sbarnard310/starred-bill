@@ -13,5 +13,11 @@
   "website": "https://www.ilbucoristorante.it/",
   "lat": 40.6272425,
   "lng": 14.3750106,
-  "placeId": "ChIJg-fzla2eOxMR97VkN4NwoLQ"
+  "placeId": "ChIJg-fzla2eOxMR97VkN4NwoLQ",
+  "michelinId": "153435",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

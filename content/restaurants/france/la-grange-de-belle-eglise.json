@@ -15,5 +15,12 @@
   "website": "https://www.lagrangedebelleeglise.com/",
   "lat": 49.1922098,
   "lng": 2.2145117,
-  "placeId": "ChIJ2cWW7G9a5kcROuMrfQPdhPs"
+  "placeId": "ChIJ2cWW7G9a5kcROuMrfQPdhPs",
+  "michelinId": "971",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Thomas Filippa",
+  "chefSource": "michelin"
 }

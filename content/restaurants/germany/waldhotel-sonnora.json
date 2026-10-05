@@ -13,5 +13,11 @@
   "website": "https://www.hotel-sonnora.de/",
   "lat": 49.9377323,
   "lng": 6.8109342,
-  "placeId": "ChIJwYTUnAPTv0cRZNx6gTEo3i0"
+  "placeId": "ChIJwYTUnAPTv0cRZNx6gTEo3i0",
+  "michelinId": "78982",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Clemens Rambichler",
+  "chefSource": "michelin"
 }

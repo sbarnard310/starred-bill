@@ -15,5 +15,13 @@
   "website": "https://www.legindreau.com",
   "lat": 44.5383407,
   "lng": 1.2913203,
-  "placeId": "ChIJi7X11auErBIReZXIwTHVR7w"
+  "placeId": "ChIJi7X11auErBIReZXIwTHVR7w",
+  "michelinId": "8113",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Pascal Bardet",
+  "chefSource": "michelin"
 }

@@ -9,5 +9,11 @@
   "sourceType": "none",
   "website": "https://www.atlantis.com/dubai/dining/ossiano",
   "lat": 25.1318677,
-  "lng": 55.1180262
+  "lng": 55.1180262,
+  "michelinId": "516093",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ]
 }

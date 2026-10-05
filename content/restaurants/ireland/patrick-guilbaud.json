@@ -15,5 +15,10 @@
   "website": "https://www.restaurantpatrickguilbaud.ie/",
   "lat": 53.338452,
   "lng": -6.252997,
-  "placeId": "ChIJwWaz2ZkOZ0gRimydVTwK0xA"
+  "placeId": "ChIJwWaz2ZkOZ0gRimydVTwK0xA",
+  "michelinId": "70432",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -12,5 +12,13 @@
   "website": "https://bcnhouston.com/",
   "lat": 29.7348796,
   "lng": -95.3899265,
-  "placeId": "ChIJjYk683y_QIYRVaLUbeMhExI"
+  "placeId": "ChIJjYk683y_QIYRVaLUbeMhExI",
+  "michelinId": "1196497",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Luis Roger",
+  "chefSource": "michelin"
 }

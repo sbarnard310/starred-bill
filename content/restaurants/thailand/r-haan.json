@@ -17,5 +17,12 @@
   "website": "https://www.r-haan.com",
   "lat": 13.7318414,
   "lng": 100.5795745,
-  "placeId": "ChIJ-dmMWquf4jAREDFTxbjSFh0"
+  "placeId": "ChIJ-dmMWquf4jAREDFTxbjSFh0",
+  "michelinId": "566237",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Chumpol Jangprai",
+  "chefSource": "site"
 }

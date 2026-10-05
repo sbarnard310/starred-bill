@@ -15,5 +15,12 @@
   "website": "https://ilsilene.it/",
   "lat": 42.919334,
   "lng": 11.587361,
-  "placeId": "ChIJV0mcDAVtKRMRjnfbvbfeS04"
+  "placeId": "ChIJV0mcDAVtKRMRjnfbvbfeS04",
+  "michelinId": "152371",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Roberto Rossi",
+  "chefSource": "michelin"
 }

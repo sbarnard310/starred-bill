@@ -25,5 +25,11 @@
   "website": "https://xn--jeanfranoispiege-jpb.com/le-grand-restaurant",
   "lat": 48.8701983,
   "lng": 2.3193146,
-  "placeId": "ChIJb5_kRsxv5kcR5jP_LwSlGAQ"
+  "placeId": "ChIJb5_kRsxv5kcR5jP_LwSlGAQ",
+  "michelinId": "463112",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jean-François Piège",
+  "chefSource": "michelin"
 }

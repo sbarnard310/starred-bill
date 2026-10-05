@@ -15,5 +15,8 @@
   "website": "https://www.lamaisondepierre.fr",
   "lat": 43.38693,
   "lng": -1.30407,
-  "placeId": "ChIJi2yFbY4wUQ0RA6A8N0FQZ4U"
+  "placeId": "ChIJi2yFbY4wUQ0RA6A8N0FQZ4U",
+  "michelinId": "1000176",
+  "chef": "Nicolas Montceau",
+  "chefSource": "michelin"
 }

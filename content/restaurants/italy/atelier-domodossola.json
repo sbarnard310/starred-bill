@@ -13,5 +13,12 @@
   "website": "https://www.eurossola.com/it/atelier-restaurant/",
   "lat": 46.1149939,
   "lng": 8.2957587,
-  "placeId": "ChIJD9Ab6BPxhUcRZG0MK5kSzao"
+  "placeId": "ChIJD9Ab6BPxhUcRZG0MK5kSzao",
+  "michelinId": "161790",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Giorgio Bartolucci",
+  "chefSource": "michelin"
 }

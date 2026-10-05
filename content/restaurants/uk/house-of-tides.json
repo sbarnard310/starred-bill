@@ -21,5 +21,9 @@
   "website": "https://www.houseoftides.co.uk/",
   "lat": 54.967968,
   "lng": -1.610114,
-  "placeId": "ChIJIUdV2rZwfkgR5-uvmFBQqq4"
+  "placeId": "ChIJIUdV2rZwfkgR5-uvmFBQqq4",
+  "michelinId": "428967",
+  "diets": [
+    "vegetarian-menu"
+  ]
 }

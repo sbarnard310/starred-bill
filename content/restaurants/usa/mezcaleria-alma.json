@@ -12,5 +12,8 @@
   "website": "https://www.mezcaleriaalma.com/",
   "lat": 39.7581,
   "lng": -105.011624,
-  "placeId": "ChIJ88IGKnF5bIcRLI5p5QH0Peg"
+  "placeId": "ChIJ88IGKnF5bIcRLI5p5QH0Peg",
+  "michelinId": "1241649",
+  "chef": "Johnny Curiel",
+  "chefSource": "michelin"
 }

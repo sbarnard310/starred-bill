@@ -15,5 +15,11 @@
   "website": "https://www.lukas-restaurant.at/",
   "lat": 48.4577665,
   "lng": 13.4301299,
-  "placeId": "ChIJq82uwWJcdEcRy9yFITgbzqU"
+  "placeId": "ChIJq82uwWJcdEcRy9yFITgbzqU",
+  "michelinId": "1212930",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Lukas Kienbauer",
+  "chefSource": "michelin"
 }

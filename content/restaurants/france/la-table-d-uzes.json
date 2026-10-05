@@ -25,5 +25,11 @@
   "website": "https://www.latableduzes.fr/",
   "lat": 44.0125567,
   "lng": 4.4215282,
-  "placeId": "ChIJu1o5qWG1tRIRqSHXodtqomc"
+  "placeId": "ChIJu1o5qWG1tRIRqSHXodtqomc",
+  "michelinId": "399589",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Christophe Ducros",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,13 @@
   "website": "https://www.belmond.com/pt-br/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/",
   "lat": -22.9671007,
   "lng": -43.179147,
-  "placeId": "ChIJpz_IEFTVmwAR3GAQ-40y2NM"
+  "placeId": "ChIJpz_IEFTVmwAR3GAQ-40y2NM",
+  "michelinId": "434573",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Alberto Morisawa",
+  "chefSource": "michelin"
 }

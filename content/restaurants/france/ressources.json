@@ -18,5 +18,14 @@
   "website": "https://restaurantressources.com/",
   "lat": 44.8489572,
   "lng": -0.5837068,
-  "placeId": "ChIJVSwioewnVQ0R27K3mDe55pI"
+  "placeId": "ChIJVSwioewnVQ0R27K3mDe55pI",
+  "michelinId": "1204727",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Tanguy Laviale",
+  "chefSource": "michelin"
 }

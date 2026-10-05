@@ -18,5 +18,10 @@
   "website": "https://www.chateauvalmer.com",
   "lat": 43.19189,
   "lng": 6.588246,
-  "placeId": "ChIJqUE0xVXFzhIRGpYy8TWezng"
+  "placeId": "ChIJqUE0xVXFzhIRGpYy8TWezng",
+  "michelinId": "10978",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

@@ -13,5 +13,12 @@
   "website": "https://www.diebrasserie-ps.de/",
   "lat": 49.1947507,
   "lng": 7.6202732,
-  "placeId": "ChIJjWCFXH98lkcRrvbeFhqG_MI"
+  "placeId": "ChIJjWCFXH98lkcRrvbeFhqG_MI",
+  "michelinId": "443189",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Vjekoslav Pavic",
+  "chefSource": "michelin"
 }

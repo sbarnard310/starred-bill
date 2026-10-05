@@ -31,5 +31,11 @@
   "website": "https://www.hosutaiwan.com/",
   "lat": 25.036396,
   "lng": 121.553234,
-  "placeId": "ChIJwxazX2qrQjQRH-xOKKedrM4"
+  "placeId": "ChIJwxazX2qrQjQRH-xOKKedrM4",
+  "michelinId": "1204773",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Ian Lee/李易晏",
+  "chefSource": "michelin"
 }

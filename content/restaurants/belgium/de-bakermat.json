@@ -13,5 +13,8 @@
   "website": "https://www.debakermatninove.be/",
   "lat": 50.8262371,
   "lng": 4.0203277,
-  "placeId": "ChIJfXkxdSW7w0cRco2u8gYkbPw"
+  "placeId": "ChIJfXkxdSW7w0cRco2u8gYkbPw",
+  "michelinId": "440448",
+  "chef": "Kevin Graf",
+  "chefSource": "site"
 }

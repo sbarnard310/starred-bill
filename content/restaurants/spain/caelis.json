@@ -27,5 +27,14 @@
   "website": "https://www.caelis.com/",
   "lat": 41.386922,
   "lng": 2.174329,
-  "placeId": "ChIJxXEkMe6ipBIRHtCUX_CpuCE"
+  "placeId": "ChIJxXEkMe6ipBIRHtCUX_CpuCE",
+  "michelinId": "528039",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Romain Fornell",
+  "chefSource": "michelin"
 }

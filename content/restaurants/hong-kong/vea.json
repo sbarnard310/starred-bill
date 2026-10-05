@@ -20,5 +20,13 @@
   "website": "https://www.vea.hk/",
   "lat": 22.2850013,
   "lng": 114.1529424,
-  "placeId": "ChIJrZRui3wABDQRzgwMfdtdkJ4"
+  "placeId": "ChIJrZRui3wABDQRzgwMfdtdkJ4",
+  "michelinId": "512627",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Vicky Cheng",
+  "chefSource": "site"
 }

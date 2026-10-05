@@ -13,5 +13,8 @@
   "website": "https://www.lecattedrali.com/",
   "lat": 44.9078373,
   "lng": 8.1173043,
-  "placeId": "ChIJrzNJ3IXth0cRtYC2UB4uTRU"
+  "placeId": "ChIJrzNJ3IXth0cRtYC2UB4uTRU",
+  "michelinId": "1212906",
+  "chef": "Gianluca Renzi",
+  "chefSource": "michelin"
 }

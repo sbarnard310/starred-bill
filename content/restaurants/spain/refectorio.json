@@ -15,5 +15,8 @@
   "website": "https://www.abadia-retuerta.com/",
   "lat": 41.6156187,
   "lng": -4.4106521,
-  "placeId": "ChIJ8YIynzodRw0RN04ny7TuCKg"
+  "placeId": "ChIJ8YIynzodRw0RN04ny7TuCKg",
+  "michelinId": "368160",
+  "chef": "Marc Segarra Sauné",
+  "chefSource": "michelin"
 }

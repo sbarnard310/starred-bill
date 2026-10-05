@@ -14,5 +14,14 @@
   "website": "https://www.restaurant-zoe.com/",
   "lat": 46.9474398,
   "lng": 7.450242,
-  "placeId": "ChIJS-nzjD05jkcRgPgsE5QPeoU"
+  "placeId": "ChIJS-nzjD05jkcRgPgsE5QPeoU",
+  "michelinId": "1209159",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Joel Coray et Maël Hêche",
+  "chefSource": "michelin"
 }

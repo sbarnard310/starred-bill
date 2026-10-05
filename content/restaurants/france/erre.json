@@ -27,5 +27,11 @@
   "website": "https://roncemay.com/fr/restaurant-erre.html",
   "lat": 47.8445378,
   "lng": 3.3006775,
-  "placeId": "ChIJlU9KrNix70cRqBjurYJMWEw"
+  "placeId": "ChIJlU9KrNix70cRqBjurYJMWEw",
+  "michelinId": "1244197",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Clément Vergeat",
+  "chefSource": "site"
 }

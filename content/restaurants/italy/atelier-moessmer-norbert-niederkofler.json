@@ -13,5 +13,12 @@
   "website": "https://ateliernorbertniederkofler.com/it/",
   "lat": 46.792729,
   "lng": 11.949213,
-  "placeId": "ChIJf6LW4bcheEcRuUfcDFw1q30"
+  "placeId": "ChIJf6LW4bcheEcRuUfcDFw1q30",
+  "michelinId": "1209246",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Norbert Niederkofler",
+  "chefSource": "michelin"
 }

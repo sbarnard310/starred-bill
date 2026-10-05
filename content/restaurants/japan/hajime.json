@@ -15,5 +15,14 @@
   "website": "https://www.hajime-artistes.com/",
   "lat": 34.688612,
   "lng": 135.496084,
-  "placeId": "ChIJDQRP2frmAGARBw_HFaCnauI"
+  "placeId": "ChIJDQRP2frmAGARBw_HFaCnauI",
+  "michelinId": "1193237",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

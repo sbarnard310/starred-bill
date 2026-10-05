@@ -13,5 +13,9 @@
   "website": "https://www.michaels-leitenberg.de/",
   "lat": 47.8046083,
   "lng": 12.3074069,
-  "placeId": "ChIJO9siSYgUdkcRvXby91kPHrk"
+  "placeId": "ChIJO9siSYgUdkcRvXby91kPHrk",
+  "michelinId": "1179710",
+  "diets": [
+    "vegetarian"
+  ]
 }

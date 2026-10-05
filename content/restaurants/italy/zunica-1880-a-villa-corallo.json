@@ -13,5 +13,11 @@
   "website": "https://villacorallo.it/site/ristorante-zunica-1880-villa-corallo",
   "lat": 42.797304,
   "lng": 13.779888,
-  "placeId": "ChIJRYLY63zvMRMRNHq3edDqm-A"
+  "placeId": "ChIJRYLY63zvMRMRNHq3edDqm-A",
+  "michelinId": "131620",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Gianni Dezio",
+  "chefSource": "michelin"
 }

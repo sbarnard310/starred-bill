@@ -13,5 +13,12 @@
   "website": "https://www.reserve-rimbaud.com",
   "lat": 43.6171176,
   "lng": 3.8930311,
-  "placeId": "ChIJE_HlB3GvthIRb_7TZa8LseE"
+  "placeId": "ChIJE_HlB3GvthIRb_7TZa8LseE",
+  "michelinId": "27793",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -24,5 +24,11 @@
   "website": "https://www.ezia-restaurant.fr",
   "lat": 47.6410265,
   "lng": 1.4451918,
-  "placeId": "ChIJ45PvQxml5EcRWFNN1VoDBNM"
+  "placeId": "ChIJ45PvQxml5EcRWFNN1VoDBNM",
+  "michelinId": "1204009",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nicolas Aubry",
+  "chefSource": "michelin"
 }

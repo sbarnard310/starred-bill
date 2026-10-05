@@ -26,5 +26,9 @@
   "website": "https://hai-li.tw/",
   "lat": 22.6291861,
   "lng": 120.2916502,
-  "placeId": "ChIJv3iEzJgFbjQRS0w55A4zZYE"
+  "placeId": "ChIJv3iEzJgFbjQRS0w55A4zZYE",
+  "michelinId": "1208775",
+  "diets": [
+    "vegetarian"
+  ]
 }

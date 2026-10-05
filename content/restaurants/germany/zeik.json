@@ -14,5 +14,12 @@
   "website": "https://zeik.de/",
   "lat": 53.5889628,
   "lng": 10.001535,
-  "placeId": "ChIJ4TtMXdCIsUcRAcmdiwyZVD0"
+  "placeId": "ChIJ4TtMXdCIsUcRAcmdiwyZVD0",
+  "michelinId": "89801",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Maurizio Oster",
+  "chefSource": "michelin"
 }

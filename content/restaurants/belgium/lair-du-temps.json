@@ -15,5 +15,12 @@
   "website": "https://airdutemps.be/",
   "lat": 50.5927328,
   "lng": 4.8329862,
-  "placeId": "ChIJv1MLXMh1wUcRydtIRRQyLXQ"
+  "placeId": "ChIJv1MLXMh1wUcRydtIRRQyLXQ",
+  "michelinId": "371956",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Sang Hoon Degeimbre",
+  "chefSource": "michelin"
 }

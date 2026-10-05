@@ -28,5 +28,11 @@
   "website": "https://sinerestaurant.com/",
   "lat": 45.461868,
   "lng": 9.217725,
-  "placeId": "ChIJc5x5tg7HhkcRtmGvx_h4zf8"
+  "placeId": "ChIJc5x5tg7HhkcRtmGvx_h4zf8",
+  "michelinId": "1154535",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

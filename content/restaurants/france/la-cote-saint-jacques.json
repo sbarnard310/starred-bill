@@ -24,5 +24,11 @@
   "website": "https://www.cotesaintjacques.com/",
   "lat": 47.9833796,
   "lng": 3.3853151,
-  "placeId": "ChIJRcnErLGr70cRElzKgm1V9Zc"
+  "placeId": "ChIJRcnErLGr70cRElzKgm1V9Zc",
+  "michelinId": "11454",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jean-Michel Lorain",
+  "chefSource": "michelin"
 }

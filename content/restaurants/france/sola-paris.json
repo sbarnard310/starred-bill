@@ -26,5 +26,11 @@
   "website": "https://www.restaurant-sola.com/",
   "lat": 48.8515799,
   "lng": 2.3483585,
-  "placeId": "ChIJZ3ZKSOFx5kcRJa7xR8aZU_g"
+  "placeId": "ChIJZ3ZKSOFx5kcRJa7xR8aZU_g",
+  "michelinId": "318144",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Kosuke Nabeta",
+  "chefSource": "michelin"
 }

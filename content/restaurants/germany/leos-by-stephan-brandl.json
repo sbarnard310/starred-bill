@@ -13,5 +13,11 @@
   "website": "https://www.bayerwaldhof.de/",
   "lat": 49.215674,
   "lng": 12.829522,
-  "placeId": "ChIJjTsb731OdUcRK1uzIjXZZtM"
+  "placeId": "ChIJjTsb731OdUcRK1uzIjXZZtM",
+  "michelinId": "523767",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Stephan Brandl",
+  "chefSource": "michelin"
 }

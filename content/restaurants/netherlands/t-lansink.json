@@ -15,5 +15,12 @@
   "website": "https://www.hotellansink.nl/",
   "lat": 52.2596555,
   "lng": 6.7823913,
-  "placeId": "ChIJj7leFQMOuEcRw98L7cjYynE"
+  "placeId": "ChIJj7leFQMOuEcRw98L7cjYynE",
+  "michelinId": "212606",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal"
+  ]
 }

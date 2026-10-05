@@ -13,5 +13,11 @@
   "website": "https://www.picovelasco.com",
   "lat": 43.3688338,
   "lng": -3.4447959,
-  "placeId": "ChIJbcDWQXDBTg0R6qTezimo2uw"
+  "placeId": "ChIJbcDWQXDBTg0R6qTezimo2uw",
+  "michelinId": "1212001",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Nacho Solana",
+  "chefSource": "michelin"
 }

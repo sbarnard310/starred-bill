@@ -15,5 +15,8 @@
   "website": "https://www.restaurant-grand-cap.fr/",
   "lat": 42.9114961,
   "lng": 3.0571854,
-  "placeId": "ChIJq-JN-idZsBIRid2tF8MFri4"
+  "placeId": "ChIJq-JN-idZsBIRid2tF8MFri4",
+  "michelinId": "507774",
+  "chef": "Erwan Houssin",
+  "chefSource": "michelin"
 }

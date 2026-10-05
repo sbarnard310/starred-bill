@@ -20,5 +20,12 @@
   "website": "https://www.restaurantversaen.nl/",
   "lat": 51.7973459,
   "lng": 5.6523719,
-  "placeId": "ChIJMWkkPikCx0cREbD6a7QxOuY"
+  "placeId": "ChIJMWkkPikCx0cREbD6a7QxOuY",
+  "michelinId": "450400",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -16,5 +16,11 @@
   "website": "https://www.restaurantarvi.ca",
   "lat": 46.8234567,
   "lng": -71.2271181,
-  "placeId": "ChIJC74baqqXuEwRR6mr-LAZEPc"
+  "placeId": "ChIJC74baqqXuEwRR6mr-LAZEPc",
+  "michelinId": "1216135",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Julien Masia",
+  "chefSource": "michelin"
 }

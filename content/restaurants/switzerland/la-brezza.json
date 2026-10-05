@@ -13,5 +13,11 @@
   "website": "https://edenroc.ch/",
   "lat": 46.150934,
   "lng": 8.772871,
-  "placeId": "ChIJDeVE6vnJhUcRvURHnxMlBiI"
+  "placeId": "ChIJDeVE6vnJhUcRvURHnxMlBiI",
+  "michelinId": "183591",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Marco Campanella",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,11 @@
   "website": "https://www.hotelroyalgeneva.com/fr/l-aparte.html",
   "lat": 46.2134994,
   "lng": 6.145432,
-  "placeId": "ChIJG6LF5SBljEcRV2X1bg60qdk"
+  "placeId": "ChIJG6LF5SBljEcRV2X1bg60qdk",
+  "michelinId": "114414",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

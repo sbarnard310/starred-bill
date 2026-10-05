@@ -15,5 +15,12 @@
   "website": "https://www.bergfried.at/kulinarik/chefs-table-tastingmenue.html",
   "lat": 47.1541685,
   "lng": 11.7242537,
-  "placeId": "ChIJY9CFqYXgd0cRYNZaDhtlOC8"
+  "placeId": "ChIJY9CFqYXgd0cRYNZaDhtlOC8",
+  "michelinId": "1212418",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Sebastian Stock",
+  "chefSource": "michelin"
 }

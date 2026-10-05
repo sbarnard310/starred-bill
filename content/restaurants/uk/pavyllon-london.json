@@ -20,5 +20,8 @@
   "website": "https://www.pavyllonlondon.com/",
   "lat": 51.5045981,
   "lng": -0.150181,
-  "placeId": "ChIJBfOjfiUFdkgRvsanD9nfpA0"
+  "placeId": "ChIJBfOjfiUFdkgRvsanD9nfpA0",
+  "michelinId": "1210253",
+  "chef": "Benjamin Ferra Y Castell",
+  "chefSource": "michelin"
 }

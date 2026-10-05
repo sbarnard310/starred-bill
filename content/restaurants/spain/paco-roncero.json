@@ -28,5 +28,12 @@
   "website": "https://www.pacoroncerorestaurante.com/",
   "lat": 40.417848,
   "lng": -3.700269,
-  "placeId": "ChIJ8XazK4EoQg0RZLOowkzfVGM"
+  "placeId": "ChIJ8XazK4EoQg0RZLOowkzfVGM",
+  "michelinId": "67467",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Paco Roncero",
+  "chefSource": "michelin"
 }

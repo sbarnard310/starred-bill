@@ -15,5 +15,15 @@
   "website": "https://www.bloemenbeek.nl/",
   "lat": 52.319597,
   "lng": 6.9978667,
-  "placeId": "ChIJKYzZQvQXuEcRCLnglJqempA"
+  "placeId": "ChIJKYzZQvQXuEcRCLnglJqempA",
+  "michelinId": "213794",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Michel van Riswijk and Vincent Goris",
+  "chefSource": "michelin"
 }

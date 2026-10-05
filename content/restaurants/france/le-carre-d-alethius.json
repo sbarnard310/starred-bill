@@ -15,5 +15,8 @@
   "website": "https://www.lecarredalethius.com",
   "lat": 44.8614644,
   "lng": 4.8331975,
-  "placeId": "ChIJPZI4avVMtRIRQjDv5cQfNJU"
+  "placeId": "ChIJPZI4avVMtRIRQjDv5cQfNJU",
+  "michelinId": "286092",
+  "chef": "Olivier Samin",
+  "chefSource": "michelin"
 }

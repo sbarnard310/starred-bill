@@ -16,5 +16,11 @@
   "website": "https://www.oliviastar.pl/restauracje/arco-by-paco-perez/",
   "lat": 54.4035847,
   "lng": 18.5710527,
-  "placeId": "ChIJ88ycMWV1_UYRcXqGWU2VsJs"
+  "placeId": "ChIJ88ycMWV1_UYRcXqGWU2VsJs",
+  "michelinId": "1210195",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Paco Pérez",
+  "chefSource": "site"
 }

@@ -13,5 +13,13 @@
   "website": "https://www.relaisblu.com/it/restaurant/fine-dining",
   "lat": 40.58996,
   "lng": 14.3303537,
-  "placeId": "ChIJDZGLfaudOxMRrAcc6YRrtNM"
+  "placeId": "ChIJDZGLfaudOxMRrAcc6YRrtNM",
+  "michelinId": "186017",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Fumiko Sakai",
+  "chefSource": "michelin"
 }

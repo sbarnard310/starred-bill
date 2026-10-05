@@ -15,5 +15,8 @@
   "website": "https://www.les-gourmands.be/",
   "lat": 50.360669,
   "lng": 3.8873851,
-  "placeId": "ChIJAy5Nax1dwkcRW5SdZPjesDA"
+  "placeId": "ChIJAy5Nax1dwkcRW5SdZPjesDA",
+  "michelinId": "209241",
+  "chef": "Didier Bernard",
+  "chefSource": "site"
 }

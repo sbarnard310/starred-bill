@@ -30,5 +30,11 @@
   "website": "https://ancestralrestaurante.com/",
   "lat": 40.421858,
   "lng": -3.841251,
-  "placeId": "ChIJV8box5nxQQ0Rd1mn354IgBs"
+  "placeId": "ChIJV8box5nxQQ0Rd1mn354IgBs",
+  "michelinId": "1241234",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Víctor Infantes and Saúl González",
+  "chefSource": "michelin"
 }

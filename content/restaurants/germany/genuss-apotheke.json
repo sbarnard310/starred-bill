@@ -13,5 +13,12 @@
   "website": "https://www.genuss-apotheke.de",
   "lat": 47.551733,
   "lng": 7.9480494,
-  "placeId": "ChIJ17cMZDxJkEcRrG2_1MJjRyg"
+  "placeId": "ChIJ17cMZDxJkEcRrG2_1MJjRyg",
+  "michelinId": "77226",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Raimar Pilz",
+  "chefSource": "michelin"
 }

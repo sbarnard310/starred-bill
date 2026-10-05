@@ -13,5 +13,13 @@
   "website": "https://www.serranoalejandro.es/",
   "lat": 42.6865108,
   "lng": -2.9422008,
-  "placeId": "ChIJQ1mJbgybTw0Ro_TTPhgQ5uw"
+  "placeId": "ChIJQ1mJbgybTw0Ro_TTPhgQ5uw",
+  "michelinId": "1191480",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alejandro Serrano",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,13 @@
   "website": "https://lesmoles.com/",
   "lat": 40.604282,
   "lng": 0.420607,
-  "placeId": "ChIJX2FVvFpYoBIRH3JF41gj28c"
+  "placeId": "ChIJX2FVvFpYoBIRH3JF41gj28c",
+  "michelinId": "224050",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jeroni Castell",
+  "chefSource": "michelin"
 }

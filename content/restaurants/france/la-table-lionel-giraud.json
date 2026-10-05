@@ -25,5 +25,12 @@
   "website": "https://maison.saintcrescent.com/",
   "lat": 43.1743172,
   "lng": 2.9918502,
-  "placeId": "ChIJKUjyHl-ssRIRswBFJ4AyXio"
+  "placeId": "ChIJKUjyHl-ssRIRswBFJ4AyXio",
+  "michelinId": "5321",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Lionel Giraud",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,12 @@
   "website": "https://theneptune.co.uk/",
   "lat": 52.951155,
   "lng": 0.509264,
-  "placeId": "ChIJ33Cf0VGR10cRKw31PKPKRvs"
+  "placeId": "ChIJ33Cf0VGR10cRKw31PKPKRvs",
+  "michelinId": "202386",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Kevin Mangeolles",
+  "chefSource": "michelin"
 }

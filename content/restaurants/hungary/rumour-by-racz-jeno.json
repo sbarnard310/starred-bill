@@ -12,5 +12,12 @@
   "website": "https://rumour.restaurant/",
   "lat": 47.4938437,
   "lng": 19.0506611,
-  "placeId": "ChIJd_7RAxXdQUcRoxz3MvqPlcQ"
+  "placeId": "ChIJd_7RAxXdQUcRoxz3MvqPlcQ",
+  "michelinId": "570328",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jenő Rácz",
+  "chefSource": "site"
 }

@@ -16,5 +16,9 @@
   "website": "https://www.atalayarestaurante.com",
   "lat": 40.2492377,
   "lng": 0.284626,
-  "placeId": "ChIJuaoEm5QVoBIRDSJwwoh8hkc"
+  "placeId": "ChIJuaoEm5QVoBIRDSJwwoh8hkc",
+  "michelinId": "557268",
+  "diets": [
+    "vegetarian"
+  ]
 }

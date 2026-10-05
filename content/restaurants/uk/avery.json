@@ -20,5 +20,11 @@
   "website": "https://www.averyedi.co.uk/",
   "lat": 55.957862,
   "lng": -3.206436,
-  "placeId": "ChIJPySK-b_Hh0gRg0xibUPkYfM"
+  "placeId": "ChIJPySK-b_Hh0gRg0xibUPkYfM",
+  "michelinId": "1210944",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Rodney Wages",
+  "chefSource": "michelin"
 }

@@ -30,5 +30,10 @@
   "website": "https://www.robuchon.jp/",
   "lat": 35.641903,
   "lng": 139.714528,
-  "placeId": "ChIJGQRJhBaLGGARmNkQIO1GVJo"
+  "placeId": "ChIJGQRJhBaLGGARmNkQIO1GVJo",
+  "michelinId": "1193981",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

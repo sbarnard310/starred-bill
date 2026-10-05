@@ -12,5 +12,13 @@
   "sourceType": "none",
   "lat": 40.650822,
   "lng": 14.6130382,
-  "placeId": "ChIJw3hIK8KVOxMRzNtljERt15M"
+  "placeId": "ChIJw3hIK8KVOxMRzNtljERt15M",
+  "michelinId": "147227",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Gianni Vanacore",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,12 @@
   "website": "https://www.bandolsurmer.de/",
   "lat": 52.5290651,
   "lng": 13.3953009,
-  "placeId": "ChIJzxxz9eVRqEcRX2oG338jQnY"
+  "placeId": "ChIJzxxz9eVRqEcRX2oG338jQnY",
+  "michelinId": "276398",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Andreas Saul",
+  "chefSource": "michelin"
 }

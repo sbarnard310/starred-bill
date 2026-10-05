@@ -12,5 +12,12 @@
   "website": "https://www.landhausscherrer.de/",
   "lat": 53.5461021,
   "lng": 9.9167551,
-  "placeId": "ChIJ5ysjNpyFsUcRPCWBm4c4T9U"
+  "placeId": "ChIJ5ysjNpyFsUcRPCWBm4c4T9U",
+  "michelinId": "73539",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Heinz Otto Wehmann",
+  "chefSource": "michelin"
 }

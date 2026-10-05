@@ -13,5 +13,8 @@
   "website": "https://lesdeux-kitzbuehel.at/",
   "lat": 47.4456666,
   "lng": 12.3893438,
-  "placeId": "ChIJ__9DNXRNdkcRfcL2vSY9LkI"
+  "placeId": "ChIJ__9DNXRNdkcRfcL2vSY9LkI",
+  "michelinId": "1212757",
+  "chef": "Marc Fröhlich",
+  "chefSource": "michelin"
 }

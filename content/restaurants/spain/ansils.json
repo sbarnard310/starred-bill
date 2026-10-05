@@ -11,5 +11,11 @@
   "website": "https://www.restauranteansils.com",
   "lat": 42.5909183,
   "lng": 0.5097959,
-  "placeId": "ChIJGfee8CB5qBIR8TK2CC9eBjw"
+  "placeId": "ChIJGfee8CB5qBIR8TK2CC9eBjw",
+  "michelinId": "1213265",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Iris Jordán",
+  "chefSource": "michelin"
 }

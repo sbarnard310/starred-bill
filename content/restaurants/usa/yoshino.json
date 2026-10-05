@@ -17,5 +17,8 @@
   "website": "https://www.yoshinonewyork.com/",
   "lat": 40.726283,
   "lng": -73.992039,
-  "placeId": "ChIJ6WTjLENZwokRsU3IurxvnCI"
+  "placeId": "ChIJ6WTjLENZwokRsU3IurxvnCI",
+  "michelinId": "1185037",
+  "chef": "Tadashi Yoshida",
+  "chefSource": "site"
 }

@@ -21,5 +21,12 @@
   "website": "https://www.omakasedc.com/",
   "lat": 38.881845,
   "lng": -76.994928,
-  "placeId": "ChIJFZO8ACO5t4kRZPCSdzahTs4"
+  "placeId": "ChIJFZO8ACO5t4kRZPCSdzahTs4",
+  "michelinId": "1210617",
+  "diets": [
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Yi Wang",
+  "chefSource": "michelin"
 }

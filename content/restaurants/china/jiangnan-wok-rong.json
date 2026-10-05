@@ -10,5 +10,11 @@
   "sourceType": "none",
   "website": "https://www.shangri-la.com/fuzhou/shangrila/dining/restaurants/jiangnan-wok-rong/",
   "lat": 26.080538,
-  "lng": 119.312599
+  "lng": 119.312599,
+  "michelinId": "1215705",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

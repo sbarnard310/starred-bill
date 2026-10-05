@@ -18,5 +18,12 @@
   "website": "https://www.marcomartinichef.com/",
   "lat": 41.880543,
   "lng": 12.484601,
-  "placeId": "ChIJPcztJc1hLxMRBaztLYCX_fQ"
+  "placeId": "ChIJPcztJc1hLxMRBaztLYCX_fQ",
+  "michelinId": "507732",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

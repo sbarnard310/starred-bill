@@ -12,5 +12,9 @@
   "website": "https://www.eichhalde-freiburg.de/",
   "lat": 48.006711,
   "lng": 7.8648027,
-  "placeId": "ChIJ31Fpb4kckUcR4WNDK7RYi84"
+  "placeId": "ChIJ31Fpb4kckUcR4WNDK7RYi84",
+  "michelinId": "72905",
+  "diets": [
+    "vegetarian"
+  ]
 }

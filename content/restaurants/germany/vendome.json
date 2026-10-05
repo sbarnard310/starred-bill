@@ -13,5 +13,12 @@
   "website": "https://www.althoffcollection.com/de/althoff-grandhotel-schloss-bensberg",
   "lat": 50.9662805,
   "lng": 7.1608252,
-  "placeId": "ChIJNUh1coLXvkcRJZvIscLpxLY"
+  "placeId": "ChIJNUh1coLXvkcRJZvIscLpxLY",
+  "michelinId": "71160",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Dennis Kuckuck",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,11 @@
   "website": "https://www.restaurantlouise.fr",
   "lat": 47.7487936,
   "lng": -3.3650768,
-  "placeId": "ChIJM8__UVFeEEgR3EW8jPJQRCE"
+  "placeId": "ChIJM8__UVFeEEgR3EW8jPJQRCE",
+  "michelinId": "1000376",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Julien Corderoch",
+  "chefSource": "michelin"
 }

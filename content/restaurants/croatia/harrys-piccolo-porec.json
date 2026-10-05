@@ -16,5 +16,13 @@
   "website": "https://www.harryspiccoloporec.com/",
   "lat": 45.237008,
   "lng": 13.5974684,
-  "placeId": "ChIJgxf2g2eXfEcRuN4gXk1rh1o"
+  "placeId": "ChIJgxf2g2eXfEcRuN4gXk1rh1o",
+  "michelinId": "1247195",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Goran Hrastovčak",
+  "chefSource": "michelin"
 }

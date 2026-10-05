@@ -13,5 +13,12 @@
   "website": "https://www.dagorini.it/",
   "lat": 43.8587914,
   "lng": 11.9745195,
-  "placeId": "ChIJm4ZgVPF7KxMRhWFgp9w2rPY"
+  "placeId": "ChIJm4ZgVPF7KxMRhWFgp9w2rPY",
+  "michelinId": "548309",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Gianluca Gorini",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,13 @@
   "website": "https://www.lapommedapi.com",
   "lat": 48.6842867,
   "lng": -3.9871351,
-  "placeId": "ChIJ2z8q3IXhE0gRQSYBn_pRgII"
+  "placeId": "ChIJ2z8q3IXhE0gRQSYBn_pRgII",
+  "michelinId": "8169",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jérémie Le Calvez",
+  "chefSource": "michelin"
 }

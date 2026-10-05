@@ -15,5 +15,11 @@
   "website": "https://www.restaurantsense.be/",
   "lat": 51.1229343,
   "lng": 4.1029001,
-  "placeId": "ChIJecWclo2Pw0cRSvB-De6sTdE"
+  "placeId": "ChIJecWclo2Pw0cRSvB-De6sTdE",
+  "michelinId": "1192293",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Michiel De Bruyn",
+  "chefSource": "michelin"
 }

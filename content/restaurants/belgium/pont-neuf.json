@@ -12,5 +12,8 @@
   "website": "https://www.pont-neuf.be/",
   "lat": 51.230647,
   "lng": 4.4080496,
-  "placeId": "ChIJtVnfgRj3w0cRKDFpC-MstcY"
+  "placeId": "ChIJtVnfgRj3w0cRKDFpC-MstcY",
+  "michelinId": "1192483",
+  "chef": "Tommy Bocklandt",
+  "chefSource": "michelin"
 }

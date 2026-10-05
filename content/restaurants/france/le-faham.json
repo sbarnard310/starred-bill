@@ -25,5 +25,8 @@
   "website": "https://lefaham.com/",
   "lat": 48.8857122,
   "lng": 2.3117036,
-  "placeId": "ChIJh7RqoiVv5kcR5w3Op2E4r2k"
+  "placeId": "ChIJh7RqoiVv5kcR5w3Op2E4r2k",
+  "michelinId": "1186239",
+  "chef": "Kelly Rangama",
+  "chefSource": "michelin"
 }

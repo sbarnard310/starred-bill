@@ -15,5 +15,15 @@
   "website": "https://airelles.com/fr/destination/chateau-de-versailles-hotel/restaurants/chef-alain-ducasse",
   "lat": 48.801401,
   "lng": 2.120209,
-  "placeId": "ChIJEf6hhV595kcRDzwQiK56fmE"
+  "placeId": "ChIJEf6hhV595kcRDzwQiK56fmE",
+  "michelinId": "1198212",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Stéphane Duchiron",
+  "chefSource": "michelin"
 }

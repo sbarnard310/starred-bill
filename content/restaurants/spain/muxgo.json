@@ -13,5 +13,14 @@
   "website": "https://www.muxgo.es",
   "lat": 28.1219882,
   "lng": -15.4279542,
-  "placeId": "ChIJKTBugNiVQAwRZSc4n1eb_jQ"
+  "placeId": "ChIJKTBugNiVQAwRZSc4n1eb_jQ",
+  "michelinId": "1199932",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Borja Marrero",
+  "chefSource": "michelin"
 }

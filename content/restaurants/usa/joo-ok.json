@@ -21,5 +21,8 @@
   "website": "https://www.joo-ok.com/",
   "lat": 40.747503,
   "lng": -73.986724,
-  "placeId": "ChIJfXtCJgBZwokRt0ncRw3PEk4"
+  "placeId": "ChIJfXtCJgBZwokRt0ncRw3PEk4",
+  "michelinId": "1214822",
+  "chef": "Chang-ho Shin",
+  "chefSource": "michelin"
 }

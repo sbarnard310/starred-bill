@@ -17,5 +17,15 @@
   "website": "https://www.thomaskeller.com/perseny",
   "lat": 40.768054,
   "lng": -73.982588,
-  "placeId": "ChIJp3PsL_ZYwokRZYqs_40RJF4"
+  "placeId": "ChIJp3PsL_ZYwokRZYqs_40RJF4",
+  "michelinId": "69452",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Thomas Keller",
+  "chefSource": "michelin"
 }

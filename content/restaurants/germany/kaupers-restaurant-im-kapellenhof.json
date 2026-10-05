@@ -13,5 +13,11 @@
   "website": "https://www.kaupers-kapellenhof.de/",
   "lat": 49.8639732,
   "lng": 8.2551053,
-  "placeId": "ChIJWcYZKZSPvUcRfwBI6g-tusY"
+  "placeId": "ChIJWcYZKZSPvUcRfwBI6g-tusY",
+  "michelinId": "314584",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sebastian Kauper and Nora Breyer",
+  "chefSource": "michelin"
 }

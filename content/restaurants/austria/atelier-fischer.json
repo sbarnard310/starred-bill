@@ -13,5 +13,11 @@
   "website": "https://www.atelier-fischer.at",
   "lat": 47.7657934,
   "lng": 13.3677626,
-  "placeId": "ChIJ73ceizq7dkcRG3krSq7c9mU"
+  "placeId": "ChIJ73ceizq7dkcRG3krSq7c9mU",
+  "michelinId": "1212477",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Stefan Fischer",
+  "chefSource": "michelin"
 }

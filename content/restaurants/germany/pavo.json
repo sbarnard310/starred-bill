@@ -13,5 +13,9 @@
   "website": "https://www.blaueburg.com",
   "lat": 47.5700348,
   "lng": 10.5918519,
-  "placeId": "ChIJB5-G28mKnEcREg_VO89kMk8"
+  "placeId": "ChIJB5-G28mKnEcREg_VO89kMk8",
+  "michelinId": "1164848",
+  "diets": [
+    "vegetarian"
+  ]
 }

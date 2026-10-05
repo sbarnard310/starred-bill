@@ -15,5 +15,11 @@
   "website": "https://www.dasjames.com/",
   "lat": 54.8119855,
   "lng": 9.4556862,
-  "placeId": "ChIJtdXE83JDs0cRJqlctEaKg-Q"
+  "placeId": "ChIJtdXE83JDs0cRJqlctEaKg-Q",
+  "michelinId": "1194647",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Quirin Brundobler",
+  "chefSource": "michelin"
 }

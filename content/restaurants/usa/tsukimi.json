@@ -17,5 +17,8 @@
   "website": "https://www.tsukimi.nyc/",
   "lat": 40.729016,
   "lng": -73.985251,
-  "placeId": "ChIJRQgS7etZwokR8IMUTfuDXOM"
+  "placeId": "ChIJRQgS7etZwokR8IMUTfuDXOM",
+  "michelinId": "1185033",
+  "chef": "Takanori Akiyama",
+  "chefSource": "site"
 }

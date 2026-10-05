@@ -13,5 +13,8 @@
   "website": "https://aubergeresorts.com/aubergedusoleil/dine/the-restaurant-at-auberge-du-soleil/",
   "lat": 38.49199,
   "lng": -122.40534,
-  "placeId": "ChIJH5O5lv5WhIARCuyN4aS9lYg"
+  "placeId": "ChIJH5O5lv5WhIARCuyN4aS9lYg",
+  "michelinId": "122233",
+  "chef": "Robert Curry",
+  "chefSource": "michelin"
 }

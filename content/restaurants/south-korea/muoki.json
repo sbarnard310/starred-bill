@@ -24,5 +24,8 @@
   "website": "https://www.muoki.kr/",
   "lat": 37.51896,
   "lng": 127.04222,
-  "placeId": "ChIJx08AyXWkfDURs2BBkP20hJo"
+  "placeId": "ChIJx08AyXWkfDURs2BBkP20hJo",
+  "michelinId": "565616",
+  "chef": "Park Moo-hyun",
+  "chefSource": "michelin"
 }

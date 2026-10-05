@@ -24,5 +24,11 @@
   "website": "https://www.ineorestaurant.com/",
   "lat": 41.902438,
   "lng": 12.49618,
-  "placeId": "ChIJK9E6ZZJhLxMRm79uE0FEZmk"
+  "placeId": "ChIJK9E6ZZJhLxMRm79uE0FEZmk",
+  "michelinId": "1208598",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Heros De Agostinis",
+  "chefSource": "michelin"
 }

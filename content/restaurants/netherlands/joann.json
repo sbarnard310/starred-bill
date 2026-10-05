@@ -13,5 +13,15 @@
   "website": "https://restaurantjoann.nl/",
   "lat": 52.2202226,
   "lng": 6.8909735,
-  "placeId": "ChIJ9zIh7cUVuEcRDt8jxKhq7mw"
+  "placeId": "ChIJ9zIh7cUVuEcRDt8jxKhq7mw",
+  "michelinId": "1154701",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Emiel Kwekkeboom",
+  "chefSource": "michelin"
 }

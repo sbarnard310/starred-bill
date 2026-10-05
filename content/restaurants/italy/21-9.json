@@ -15,5 +15,12 @@
   "website": "https://www.ristorante21punto9.it/",
   "lat": 44.731959,
   "lng": 7.9884537,
-  "placeId": "ChIJW1OmkRUe0xIRrwWpLy6Hu7Q"
+  "placeId": "ChIJW1OmkRUe0xIRrwWpLy6Hu7Q",
+  "michelinId": "498881",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Flavio Costa",
+  "chefSource": "michelin"
 }

@@ -28,5 +28,16 @@
   "website": "https://www.restaurantecoque.com/",
   "lat": 40.430643,
   "lng": -3.690676,
-  "placeId": "ChIJoRkIVamMQQ0RlLGpgzeAxzA"
+  "placeId": "ChIJoRkIVamMQQ0RlLGpgzeAxzA",
+  "michelinId": "530804",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Mario Sandoval",
+  "chefSource": "michelin"
 }

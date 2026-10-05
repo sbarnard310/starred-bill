@@ -13,5 +13,12 @@
   "website": "https://www.cafegupi.de/",
   "lat": 47.5948316,
   "lng": 7.6290732,
-  "placeId": "ChIJtSP1jTO7kUcResz5hzNNeeU"
+  "placeId": "ChIJtSP1jTO7kUcResz5hzNNeeU",
+  "michelinId": "1199778",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Christoph Düster",
+  "chefSource": "michelin"
 }

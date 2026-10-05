@@ -13,5 +13,13 @@
   "website": "https://www.1741.fr",
   "lat": 48.5805005,
   "lng": 7.7535355,
-  "placeId": "EjQyMiBRdWFpIGRlcyBCYXRlbGllcnMgMTc0MSwgNjcwMDAgU3RyYXNib3VyZywgRnJhbmNlIiAaHgoWChQKEgnTn5KQVMiWRxGqtnoVMdjvoxIEMTc0MQ"
+  "placeId": "EjQyMiBRdWFpIGRlcyBCYXRlbGllcnMgMTc0MSwgNjcwMDAgU3RyYXNib3VyZywgRnJhbmNlIiAaHgoWChQKEgnTn5KQVMiWRxGqtnoVMdjvoxIEMTc0MQ",
+  "michelinId": "375930",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Jérémy Page",
+  "chefSource": "michelin"
 }

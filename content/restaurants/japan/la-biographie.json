@@ -19,5 +19,11 @@
   "lunchType": "menu",
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/kz521623"
+  "lunchSource": "https://omakaseje.com/restaurants/kz521623",
+  "michelinId": "1195611",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

@@ -18,5 +18,13 @@
   "website": "https://www.raniadc.com/",
   "lat": 38.89561,
   "lng": -77.0268,
-  "placeId": "ChIJgQnWynC3t4kRoG2k8vB3owU"
+  "placeId": "ChIJgQnWynC3t4kRoG2k8vB3owU",
+  "michelinId": "1203008",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

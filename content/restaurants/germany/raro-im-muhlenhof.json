@@ -16,5 +16,12 @@
   "website": "https://www.raro-restaurant.de",
   "lat": 49.4762099,
   "lng": 8.7080193,
-  "placeId": "ChIJh4EhWGzDl0cRE6fQ3fTUAUc"
+  "placeId": "ChIJh4EhWGzDl0cRE6fQ3fTUAUc",
+  "michelinId": "1213101",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "halal",
+    "kosher"
+  ]
 }

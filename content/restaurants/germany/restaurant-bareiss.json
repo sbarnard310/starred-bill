@@ -13,5 +13,12 @@
   "website": "https://www.bareiss.com/",
   "lat": 48.5201324,
   "lng": 8.3268245,
-  "placeId": "ChIJ4XNEF70xl0cR3_eB34t-Qo4"
+  "placeId": "ChIJ4XNEF70xl0cR3_eB34t-Qo4",
+  "michelinId": "70977",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Claus-Peter Lumpp",
+  "chefSource": "michelin"
 }

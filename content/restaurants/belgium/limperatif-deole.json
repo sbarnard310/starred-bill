@@ -16,5 +16,12 @@
   "website": "https://www.limperatifdeole.be/",
   "lat": 50.3799155,
   "lng": 3.9652916,
-  "placeId": "ChIJtfLhHgBFwkcRwYTpjPWIc2M"
+  "placeId": "ChIJtfLhHgBFwkcRwYTpjPWIc2M",
+  "michelinId": "1209431",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Benjamin Laborie",
+  "chefSource": "michelin"
 }

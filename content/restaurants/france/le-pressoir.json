@@ -15,5 +15,13 @@
   "website": "https://www.le-pressoir.fr",
   "lat": 47.6966578,
   "lng": -2.7508368,
-  "placeId": "ChIJhZ9lTgcfEEgREdtNEn37QIA"
+  "placeId": "ChIJhZ9lTgcfEEgREdtNEn37QIA",
+  "michelinId": "9346",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Vincent David",
+  "chefSource": "michelin"
 }

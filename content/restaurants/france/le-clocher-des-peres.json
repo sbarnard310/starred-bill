@@ -15,5 +15,9 @@
   "website": "https://www.chambres-d-hote-maurienne-le-clocher-des-peres.fr",
   "lat": 45.3664596,
   "lng": 6.3168158,
-  "placeId": "ChIJrfiKPjQyikcRJzJwHycyaB4"
+  "placeId": "ChIJrfiKPjQyikcRJzJwHycyaB4",
+  "michelinId": "340828",
+  "diets": [
+    "vegetarian"
+  ]
 }

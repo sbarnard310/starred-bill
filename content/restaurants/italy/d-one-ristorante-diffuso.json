@@ -16,5 +16,14 @@
   "website": "https://www.donerestaurant.it/",
   "lat": 42.6772065,
   "lng": 13.9897625,
-  "placeId": "ChIJrZqDlj6UMRMR8AxPMMHBsnc"
+  "placeId": "ChIJrZqDlj6UMRMR8AxPMMHBsnc",
+  "michelinId": "507312",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Davide Pezzuto",
+  "chefSource": "michelin"
 }

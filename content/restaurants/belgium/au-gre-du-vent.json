@@ -20,5 +20,11 @@
   "website": "https://www.resto-augreduvent.be/",
   "lat": 50.5161633,
   "lng": 4.2619825,
-  "placeId": "ChIJv3_EV1QxwkcRCtUczysCu3k"
+  "placeId": "ChIJv3_EV1QxwkcRCtUczysCu3k",
+  "michelinId": "385464",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Stéphanie Thunus",
+  "chefSource": "michelin"
 }

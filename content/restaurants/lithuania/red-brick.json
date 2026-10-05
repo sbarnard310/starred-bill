@@ -13,5 +13,13 @@
   "website": "https://red-brick.lt",
   "lat": 55.3396361,
   "lng": 24.9135679,
-  "placeId": "ChIJcxa5Fj6X50YR6b64ZC7VXuQ"
+  "placeId": "ChIJcxa5Fj6X50YR6b64ZC7VXuQ",
+  "michelinId": "1213306",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Arnór Ingi Bjarkason",
+  "chefSource": "michelin"
 }

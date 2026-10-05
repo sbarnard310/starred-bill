@@ -30,5 +30,10 @@
   "website": "https://www.zostera.fr/",
   "lat": 48.8743525,
   "lng": 2.2826529,
-  "placeId": "ChIJmc1-M0xv5kcRc7IR1byBo7U"
+  "placeId": "ChIJmc1-M0xv5kcRc7IR1byBo7U",
+  "michelinId": "6416",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

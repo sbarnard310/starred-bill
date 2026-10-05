@@ -12,5 +12,11 @@
   "website": "https://laviebythomasbuehner.de/",
   "lat": 51.2378037,
   "lng": 6.8229278,
-  "placeId": "ChIJ6zQobgDJuEcR_p0qTfsFfQI"
+  "placeId": "ChIJ6zQobgDJuEcR_p0qTfsFfQI",
+  "michelinId": "1210743",
+  "diets": [
+    "vegan"
+  ],
+  "chef": "Timo Fritsche",
+  "chefSource": "michelin"
 }

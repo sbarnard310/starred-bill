@@ -16,5 +16,8 @@
   "website": "https://bagatelle.de/",
   "lat": 49.7648216,
   "lng": 6.6349596,
-  "placeId": "ChIJ6Tmh3bx9lUcRogoGH2j1bnQ"
+  "placeId": "ChIJ6Tmh3bx9lUcRogoGH2j1bnQ",
+  "michelinId": "78242",
+  "chef": "Gerald Schöberl",
+  "chefSource": "michelin"
 }

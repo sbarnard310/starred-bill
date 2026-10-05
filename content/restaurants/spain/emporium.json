@@ -25,5 +25,11 @@
   "website": "https://www.emporiumhotel.com/",
   "lat": 42.25582,
   "lng": 3.07609,
-  "placeId": "ChIJQbdSuT-KuhIR1NRNYmLIzrk"
+  "placeId": "ChIJQbdSuT-KuhIR1NRNYmLIzrk",
+  "michelinId": "228280",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Marius Jordá i Giró / Joan Jordá i Giró",
+  "chefSource": "michelin"
 }

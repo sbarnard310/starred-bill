@@ -19,5 +19,13 @@
   "website": "https://domainelesbruyeres.com/",
   "lat": 48.790545,
   "lng": 1.6961807,
-  "placeId": "ChIJOS3ZLhmj5kcRDjlq9QLyQdk"
+  "placeId": "ChIJOS3ZLhmj5kcRDjlq9QLyQdk",
+  "michelinId": "1202267",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Cybèle Idelot",
+  "chefSource": "michelin"
 }

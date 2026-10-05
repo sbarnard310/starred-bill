@@ -14,5 +14,12 @@
   "website": "https://brhhh.com/atlantic-hamburg/taste/",
   "lat": 53.5568271,
   "lng": 10.0047017,
-  "placeId": "ChIJY2Xs2d-OsUcRnU3ZrgXM3RY"
+  "placeId": "ChIJY2Xs2d-OsUcRnU3ZrgXM3RY",
+  "michelinId": "1208868",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Fokke Mick",
+  "chefSource": "michelin"
 }

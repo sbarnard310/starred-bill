@@ -15,5 +15,12 @@
   "website": "https://latelierdesaugustins.com",
   "lat": 45.7677374,
   "lng": 4.8308367,
-  "placeId": "ChIJ1Z21F_7q9EcReZ2iUWAaxCM"
+  "placeId": "ChIJ1Z21F_7q9EcReZ2iUWAaxCM",
+  "michelinId": "441239",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Nicolas Guilloton",
+  "chefSource": "michelin"
 }

@@ -14,5 +14,8 @@
   "website": "https://www.masayoshi.ca/",
   "lat": 49.2457708,
   "lng": -123.0901179,
-  "placeId": "ChIJS7QNEQd0hlQRuTZ2xFQRWHk"
+  "placeId": "ChIJS7QNEQd0hlQRuTZ2xFQRWHk",
+  "michelinId": "1198929",
+  "chef": "Masayoshi Baba",
+  "chefSource": "michelin"
 }

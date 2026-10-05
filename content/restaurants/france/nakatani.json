@@ -25,5 +25,8 @@
   "website": "https://restaurant-nakatani.com/",
   "lat": 48.8482237,
   "lng": 2.3196445,
-  "placeId": "ChIJu5YsFy1w5kcRXZLyDsRiskI"
+  "placeId": "ChIJu5YsFy1w5kcRXZLyDsRiskI",
+  "michelinId": "450779",
+  "chef": "Shinsuke Nakatani",
+  "chefSource": "michelin"
 }

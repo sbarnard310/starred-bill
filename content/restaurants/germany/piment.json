@@ -12,5 +12,11 @@
   "website": "https://restaurant-piment.de/",
   "lat": 53.5820645,
   "lng": 9.9797292,
-  "placeId": "ChIJee-pR7WIsUcReZ7J4BAjEcA"
+  "placeId": "ChIJee-pR7WIsUcReZ7J4BAjEcA",
+  "michelinId": "73559",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Wahabi Nouri",
+  "chefSource": "michelin"
 }

@@ -19,5 +19,12 @@
   "website": "https://parisbutter.co.nz/",
   "lat": -36.845463,
   "lng": 174.73701,
-  "placeId": "ChIJDwwNeYRHDW0R6CVXXf7s9sc"
+  "placeId": "ChIJDwwNeYRHDW0R6CVXXf7s9sc",
+  "michelinId": "1241048",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

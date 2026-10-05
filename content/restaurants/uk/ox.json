@@ -21,5 +21,12 @@
   "website": "https://oxbelfast.com/",
   "lat": 54.599262,
   "lng": -5.922005,
-  "placeId": "ChIJtYvu31QIYUgRLtFOFF5F6hM"
+  "placeId": "ChIJtYvu31QIYUgRLtFOFF5F6hM",
+  "michelinId": "399109",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

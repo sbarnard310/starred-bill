@@ -15,5 +15,14 @@
   "website": "https://www.assarestaurant.com/",
   "lat": 47.5916586,
   "lng": 1.3362149,
-  "placeId": "ChIJnZkmz8dX40cR7-LQrx6ZRBc"
+  "placeId": "ChIJnZkmz8dX40cR7-LQrx6ZRBc",
+  "michelinId": "429487",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Anthony Maubert",
+  "chefSource": "michelin"
 }

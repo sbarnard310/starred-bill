@@ -18,5 +18,12 @@
   "website": "https://www.mudbrick.co.nz/",
   "lat": -36.792384,
   "lng": 175.000192,
-  "placeId": "ChIJZYYC_LjLcm0R_RxEHIMZU44"
+  "placeId": "ChIJZYYC_LjLcm0R_RxEHIMZU44",
+  "michelinId": "1246391",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ]
 }

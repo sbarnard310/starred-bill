@@ -30,5 +30,11 @@
   "website": "https://www.imperialhotel.co.jp/tokyo",
   "lat": 35.672455,
   "lng": 139.758435,
-  "placeId": "ChIJT7wVXe6LGGAR53FVJzNY8gU"
+  "placeId": "ChIJT7wVXe6LGGAR53FVJzNY8gU",
+  "michelinId": "1194250",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

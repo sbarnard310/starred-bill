@@ -24,5 +24,10 @@
   "website": "https://maztokyo.jp/",
   "lat": 35.679726,
   "lng": 139.737003,
-  "placeId": "ChIJHbq1qLiNGGARNlnd4lieF7I"
+  "placeId": "ChIJHbq1qLiNGGARNlnd4lieF7I",
+  "michelinId": "1204977",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

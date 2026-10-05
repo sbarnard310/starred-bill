@@ -12,5 +12,8 @@
   "website": "https://www.okura.nl/dine-and-drink/yamazato-restaurant/",
   "lat": 52.3486674,
   "lng": 4.8928801,
-  "placeId": "ChIJMzqLEIsJxkcRTBXw6KN7hYM"
+  "placeId": "ChIJMzqLEIsJxkcRTBXw6KN7hYM",
+  "michelinId": "115431",
+  "chef": "Tsukasa Hagimori",
+  "chefSource": "site"
 }

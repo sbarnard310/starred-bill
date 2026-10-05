@@ -13,5 +13,14 @@
   "website": "https://www.limurestaurant.it",
   "lat": 38.0827311,
   "lng": 13.5077378,
-  "placeId": "ChIJ94tLu7zjGRMR0UisaXLLcJw"
+  "placeId": "ChIJ94tLu7zjGRMR0UisaXLLcJw",
+  "michelinId": "1199953",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Antonino Ferreri",
+  "chefSource": "site"
 }

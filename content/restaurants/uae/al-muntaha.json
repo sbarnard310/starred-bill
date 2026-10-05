@@ -13,5 +13,10 @@
   "website": "https://www.jumeirah.com/en/dine/dubai/burj-al-arab-muntaha",
   "lat": 25.1414067,
   "lng": 55.1853653,
-  "placeId": "ChIJAQAAzwZqXz4RlgbKZIEuuk0"
+  "placeId": "ChIJAQAAzwZqXz4RlgbKZIEuuk0",
+  "michelinId": "1195673",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ]
 }

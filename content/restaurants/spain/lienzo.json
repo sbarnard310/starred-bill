@@ -12,5 +12,12 @@
   "website": "https://www.restaurantelienzo.com/",
   "lat": 39.4750292,
   "lng": -0.3697428,
-  "placeId": "ChIJz02M-rFIYA0RJGbjth1LmEA"
+  "placeId": "ChIJz02M-rFIYA0RJGbjth1LmEA",
+  "michelinId": "492322",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "María José Martínez",
+  "chefSource": "michelin"
 }

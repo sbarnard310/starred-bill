@@ -13,5 +13,14 @@
   "website": "https://thelincehotels.com/santaclara/restaurantes/",
   "lat": 41.3530831,
   "lng": -8.7395553,
-  "placeId": "ChIJ1TBSyNtFJA0Rah6XYfAYHlI"
+  "placeId": "ChIJ1TBSyNtFJA0Rah6XYfAYHlI",
+  "michelinId": "1214539",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Vítor Matos and Hugo Rocha",
+  "chefSource": "michelin"
 }

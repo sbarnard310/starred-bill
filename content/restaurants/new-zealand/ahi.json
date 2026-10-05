@@ -26,5 +26,15 @@
   "website": "https://ahirestaurant.co.nz/",
   "lat": -36.843563,
   "lng": 174.76645,
-  "placeId": "ChIJn3Evd2xHDW0RWNG-B0TrPxg"
+  "placeId": "ChIJn3Evd2xHDW0RWNG-B0TrPxg",
+  "michelinId": "1241055",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Ben Bayly",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,9 @@
   "website": "https://www.statholdergaarden.no/",
   "lat": 59.9094664,
   "lng": 10.7431174,
-  "placeId": "ChIJzYVw9ohuQUYRYTegBXk18tw"
+  "placeId": "ChIJzYVw9ohuQUYRYTegBXk18tw",
+  "michelinId": "113191",
+  "diets": [
+    "vegetarian"
+  ]
 }

@@ -13,5 +13,10 @@
   "website": "https://narimorurla.com/fine-dining",
   "lat": 38.3193131,
   "lng": 26.7672542,
-  "placeId": "ChIJQ2S0Bw-TuxQRhZmTg9xVCCk"
+  "placeId": "ChIJQ2S0Bw-TuxQRhZmTg9xVCCk",
+  "michelinId": "1213087",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

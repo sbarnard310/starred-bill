@@ -15,5 +15,14 @@
   "website": "https://www.juliengatillon.fr/vous",
   "lat": 45.8574776,
   "lng": 6.6183242,
-  "placeId": "ChIJUfhQsm_ji0cReLIlI8lcPfI"
+  "placeId": "ChIJUfhQsm_ji0cReLIlI8lcPfI",
+  "michelinId": "1212397",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Jean Pastre",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,13 @@
   "website": "https://www.latabledaurelienlargeau.fr/",
   "lat": 43.4810141,
   "lng": -1.5586234,
-  "placeId": "ChIJcZbPEzhrUQ0ReJ51lB2HJbM"
+  "placeId": "ChIJcZbPEzhrUQ0ReJ51lB2HJbM",
+  "michelinId": "1216728",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Aurélien Largeau",
+  "chefSource": "michelin"
 }

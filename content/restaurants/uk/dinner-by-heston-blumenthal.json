@@ -20,5 +20,14 @@
   "website": "https://www.dinnerbyheston.co.uk/",
   "lat": 51.5021106,
   "lng": -0.1599147,
-  "placeId": "ChIJRzX0mDkFdkgR-qAx8kL982A"
+  "placeId": "ChIJRzX0mDkFdkgR-qAx8kL982A",
+  "michelinId": "328278",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

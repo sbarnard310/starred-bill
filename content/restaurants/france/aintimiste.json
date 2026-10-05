@@ -23,5 +23,12 @@
   "website": "https://aintimiste.fr/",
   "lat": 46.0858481,
   "lng": 5.4078158,
-  "placeId": "ChIJPRyw8QKpjEcRPuUi0puCypE"
+  "placeId": "ChIJPRyw8QKpjEcRPuUi0puCypE",
+  "michelinId": "1196929",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Jérôme Busset",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,14 @@
   "website": "https://www.lephebus.com/",
   "lat": 43.9289042,
   "lng": 5.2559385,
-  "placeId": "ChIJ9cyXfkENyhIRtf1CDYW1prc"
+  "placeId": "ChIJ9cyXfkENyhIRtf1CDYW1prc",
+  "michelinId": "11463",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Xavier Mathieu",
+  "chefSource": "michelin"
 }

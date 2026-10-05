@@ -15,5 +15,8 @@
   "website": "https://www.restaurant-perigueux.com/",
   "lat": 45.1840692,
   "lng": 0.7223774,
-  "placeId": "ChIJw-H10FRw_0cRP7_AShepiXc"
+  "placeId": "ChIJw-H10FRw_0cRP7_AShepiXc",
+  "michelinId": "117707",
+  "chef": "Éric Vidal",
+  "chefSource": "michelin"
 }

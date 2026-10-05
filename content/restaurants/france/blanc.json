@@ -30,5 +30,11 @@
   "website": "https://www.blanc-paris.com/",
   "lat": 48.8651172,
   "lng": 2.2874808,
-  "placeId": "ChIJ-We0YUpv5kcREptIC-71C_Y"
+  "placeId": "ChIJ-We0YUpv5kcREptIC-71C_Y",
+  "michelinId": "1211547",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Shinichi Sato",
+  "chefSource": "site"
 }

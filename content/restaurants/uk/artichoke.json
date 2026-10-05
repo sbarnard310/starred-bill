@@ -20,5 +20,13 @@
   "website": "https://www.artichokerestaurant.co.uk/",
   "lat": 51.666449,
   "lng": -0.616289,
-  "placeId": "ChIJmQxX5J1ndkgRL58ho32D3Gs"
+  "placeId": "ChIJmQxX5J1ndkgRL58ho32D3Gs",
+  "michelinId": "186314",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Laurie Gear",
+  "chefSource": "site"
 }

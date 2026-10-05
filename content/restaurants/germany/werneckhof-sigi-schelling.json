@@ -20,5 +20,9 @@
   "website": "https://werneckhof-schelling.de",
   "lat": 48.1592227,
   "lng": 11.5884325,
-  "placeId": "ChIJmyWezhp1nkcR3xaIsAZUQE4"
+  "placeId": "ChIJmyWezhp1nkcR3xaIsAZUQE4",
+  "michelinId": "1194858",
+  "diets": [
+    "vegetarian"
+  ]
 }

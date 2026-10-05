@@ -15,5 +15,11 @@
   "website": "https://www.chateaudepray.fr",
   "lat": 47.424971,
   "lng": 1.0160758,
-  "placeId": "ChIJHwMTtH-1_EcRS7n0VmipXiw"
+  "placeId": "ChIJHwMTtH-1_EcRS7n0VmipXiw",
+  "michelinId": "9885",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Arnaud Philippon",
+  "chefSource": "michelin"
 }

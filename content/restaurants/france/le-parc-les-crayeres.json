@@ -13,5 +13,14 @@
   "website": "https://lescrayeres.com/restaurant-le-parc.html",
   "lat": 49.2410909,
   "lng": 4.0517461,
-  "placeId": "ChIJt418KV116UcRgkS3d9pAIp4"
+  "placeId": "ChIJt418KV116UcRgkS3d9pAIp4",
+  "michelinId": "12566",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Christophe Moret",
+  "chefSource": "michelin"
 }

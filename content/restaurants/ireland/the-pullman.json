@@ -20,5 +20,12 @@
   "website": "https://www.glenloabbeyhotel.ie/the-pullman.html",
   "lat": 53.30076,
   "lng": -9.098281,
-  "placeId": "ChIJO8mpZHaWW0gRIB6CEDWsBmc"
+  "placeId": "ChIJO8mpZHaWW0gRIB6CEDWsBmc",
+  "michelinId": "195195",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Angelo Vagiotis",
+  "chefSource": "michelin"
 }

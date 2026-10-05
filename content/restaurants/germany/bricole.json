@@ -12,5 +12,12 @@
   "website": "https://www.bricole.de/",
   "lat": 52.5410035,
   "lng": 13.4224087,
-  "placeId": "ChIJQUACIP5NqEcRUZbYNUUL1DU"
+  "placeId": "ChIJQUACIP5NqEcRUZbYNUUL1DU",
+  "michelinId": "1191770",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Steven Zeidler",
+  "chefSource": "michelin"
 }

@@ -24,5 +24,8 @@
   "website": "https://sazenka.com/",
   "lat": 35.649578,
   "lng": 139.728395,
-  "placeId": "ChIJqZDavAuLGGARV-fj_CVDFnI"
+  "placeId": "ChIJqZDavAuLGGARV-fj_CVDFnI",
+  "michelinId": "1193950",
+  "chef": "Tomoya Kawada",
+  "chefSource": "michelin"
 }

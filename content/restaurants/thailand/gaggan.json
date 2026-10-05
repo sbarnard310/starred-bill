@@ -21,5 +21,10 @@
   "website": "https://www.gaggan.com",
   "lat": 13.7407937,
   "lng": 100.5675901,
-  "placeId": "ChIJi_nHcf-f4jARAI6VOXH0wII"
+  "placeId": "ChIJi_nHcf-f4jARAI6VOXH0wII",
+  "michelinId": "1191242",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

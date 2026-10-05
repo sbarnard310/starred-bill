@@ -12,5 +12,12 @@
   "website": "https://www.althoffcollection.com/de/the-florentin/kulinarik",
   "lat": 50.0976127,
   "lng": 8.6690663,
-  "placeId": "ChIJ4z4HbgANvUcRwTeKB5EsTLM"
+  "placeId": "ChIJ4z4HbgANvUcRwTeKB5EsTLM",
+  "michelinId": "1242570",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Niclas Nußbaumer",
+  "chefSource": "michelin"
 }

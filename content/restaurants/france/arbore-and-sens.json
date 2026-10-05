@@ -25,5 +25,8 @@
   "website": "https://restaurant-arbore-et-sens.fr",
   "lat": 47.1274814,
   "lng": 0.9965813,
-  "placeId": "ChIJReGO_smV_EcRzA1zVIep_44"
+  "placeId": "ChIJReGO_smV_EcRzA1zVIep_44",
+  "michelinId": "1192731",
+  "chef": "Clément Dumont",
+  "chefSource": "michelin"
 }

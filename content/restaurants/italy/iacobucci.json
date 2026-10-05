@@ -15,5 +15,11 @@
   "website": "https://www.agostinoiacobucci.it/",
   "lat": 44.5602196,
   "lng": 11.3538901,
-  "placeId": "ChIJUW18eD_Tf0cRdpSMNiNlnjo"
+  "placeId": "ChIJUW18eD_Tf0cRdpSMNiNlnjo",
+  "michelinId": "1183678",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Agostino Iacobucci",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,11 @@
   "website": "https://lafourchettedesducs.com/",
   "lat": 48.4619764,
   "lng": 7.4884025,
-  "placeId": "ChIJw5kHoVtNkUcRPtRLB2PcEZk"
+  "placeId": "ChIJw5kHoVtNkUcRPtRLB2PcEZk",
+  "michelinId": "5571",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nicolas Stamm-Corby",
+  "chefSource": "michelin"
 }

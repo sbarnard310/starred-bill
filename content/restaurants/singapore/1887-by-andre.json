@@ -22,5 +22,8 @@
   "website": "https://www.1887byandre.com/",
   "lat": 1.295161,
   "lng": 103.854869,
-  "placeId": "ChIJl7vtlcUZ2jERgaoVPsqVXRw"
+  "placeId": "ChIJl7vtlcUZ2jERgaoVPsqVXRw",
+  "michelinId": "1249513",
+  "chef": "André Chiang",
+  "chefSource": "michelin"
 }

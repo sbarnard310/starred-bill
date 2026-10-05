@@ -15,5 +15,8 @@
   "website": "https://www.lausanne-palace.ch/restaurants-bars/la-table-du-lausanne-palace/le-restaurant/",
   "lat": 46.5195779,
   "lng": 6.6314453,
-  "placeId": "ChIJ1Zt6NgwvjEcR2rm2NSRArHc"
+  "placeId": "ChIJ1Zt6NgwvjEcR2rm2NSRArHc",
+  "michelinId": "1193699",
+  "chef": "Franck Pelux",
+  "chefSource": "michelin"
 }

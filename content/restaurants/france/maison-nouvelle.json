@@ -21,5 +21,8 @@
   "website": "https://maison-nouvelle.fr/",
   "lat": 44.8524805,
   "lng": -0.5721376,
-  "placeId": "ChIJQetHmUApVQ0RR5Xn7CFNcbQ"
+  "placeId": "ChIJQetHmUApVQ0RR5Xn7CFNcbQ",
+  "michelinId": "1199611",
+  "chef": "Philippe Etchebest",
+  "chefSource": "site"
 }

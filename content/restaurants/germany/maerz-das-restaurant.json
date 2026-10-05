@@ -13,5 +13,9 @@
   "website": "https://maerzundmaerz.de/",
   "lat": 48.9609392,
   "lng": 9.1290315,
-  "placeId": "ChIJ_0NBrL3VmUcRSK0zezNmg9s"
+  "placeId": "ChIJ_0NBrL3VmUcRSK0zezNmg9s",
+  "michelinId": "79798",
+  "diets": [
+    "vegetarian"
+  ]
 }

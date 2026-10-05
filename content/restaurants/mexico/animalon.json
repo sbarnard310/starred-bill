@@ -26,5 +26,13 @@
   "website": "https://www.animalonbaja.com/",
   "lat": 32.066330799999996,
   "lng": -116.6009191,
-  "placeId": "ChIJzdd3Rdxy2IAR0lNrx4Qo_KA"
+  "placeId": "ChIJzdd3Rdxy2IAR0lNrx4Qo_KA",
+  "michelinId": "1208368",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Javier Plascencia",
+  "chefSource": "michelin"
 }

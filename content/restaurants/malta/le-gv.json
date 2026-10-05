@@ -13,5 +13,11 @@
   "website": "https://legv.mt",
   "lat": 35.9096819,
   "lng": 14.5087134,
-  "placeId": "ChIJrfFSmnFFDhMRL1bitQRASIA"
+  "placeId": "ChIJrfFSmnFFDhMRL1bitQRASIA",
+  "michelinId": "1215842",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andrew Borg and David Tanti",
+  "chefSource": "michelin"
 }

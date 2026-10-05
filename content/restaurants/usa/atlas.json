@@ -14,5 +14,12 @@
   "website": "https://atlasrestaurant.com/",
   "lat": 33.8404462,
   "lng": -84.3836692,
-  "placeId": "ChIJC1jB5Y4F9YgRSA2D0d6UDJc"
+  "placeId": "ChIJC1jB5Y4F9YgRSA2D0d6UDJc",
+  "michelinId": "1195994",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Freddy Money",
+  "chefSource": "michelin"
 }

@@ -27,5 +27,8 @@
   "website": "https://restaurantnoi.hk/",
   "lat": 22.286618,
   "lng": 114.1566761,
-  "placeId": "ChIJsQzNJAkBBDQR-iTpcmehnWM"
+  "placeId": "ChIJsQzNJAkBBDQR-iTpcmehnWM",
+  "michelinId": "1204599",
+  "chef": "Paulo Airaudo",
+  "chefSource": "michelin"
 }

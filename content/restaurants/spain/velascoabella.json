@@ -31,5 +31,13 @@
   "website": "https://www.velascoabella.com/",
   "lat": 40.455964,
   "lng": -3.679723,
-  "placeId": "ChIJ47mISlQpQg0RM1RQwirQGsw"
+  "placeId": "ChIJ47mISlQpQg0RM1RQwirQGsw",
+  "michelinId": "1207225",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Óscar Velasco",
+  "chefSource": "michelin"
 }

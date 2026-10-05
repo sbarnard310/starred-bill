@@ -26,5 +26,10 @@
   "website": "https://logy.tw/",
   "lat": 25.0749106,
   "lng": 121.5748182,
-  "placeId": "ChIJNWCqhOGrQjQR_4bJNRZ8uM0"
+  "placeId": "ChIJNWCqhOGrQjQR_4bJNRZ8uM0",
+  "michelinId": "569914",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

@@ -23,5 +23,13 @@
   "website": "https://www.lestresoms.com/",
   "lat": 45.8896367,
   "lng": 6.1366994,
-  "placeId": "ChIJWVBsVx6Qi0cRB7oTBug1SCo"
+  "placeId": "ChIJWVBsVx6Qi0cRB7oTBug1SCo",
+  "michelinId": "9937",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Eric Prowalski",
+  "chefSource": "site"
 }

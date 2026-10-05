@@ -15,5 +15,8 @@
   "website": "https://hoteldepavie.com",
   "lat": 44.8934495,
   "lng": -0.1566263,
-  "placeId": "ChIJMRwuQfFPVQ0RGQpS3RGocNc"
+  "placeId": "ChIJMRwuQfFPVQ0RGQpS3RGocNc",
+  "michelinId": "12781",
+  "chef": "Sébastien Faramond",
+  "chefSource": "michelin"
 }

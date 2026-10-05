@@ -13,5 +13,12 @@
   "website": "https://restaurantvar.fi/",
   "lat": 60.396319,
   "lng": 25.6640296,
-  "placeId": "ChIJVS18IWz1kUYRtcmhg7IeuMg"
+  "placeId": "ChIJVS18IWz1kUYRtcmhg7IeuMg",
+  "michelinId": "1198201",
+  "diets": [
+    "vegetarian",
+    "halal"
+  ],
+  "chef": "Oskar Kotka",
+  "chefSource": "michelin"
 }

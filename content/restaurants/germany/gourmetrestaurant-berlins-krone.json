@@ -13,5 +13,11 @@
   "website": "https://www.kronelamm.de",
   "lat": 48.6940108,
   "lng": 8.6892208,
-  "placeId": "ChIJmdUSW2dCl0cR0YH8Q-68720"
+  "placeId": "ChIJmdUSW2dCl0cR0YH8Q-68720",
+  "michelinId": "84551",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Franz Berlin",
+  "chefSource": "michelin"
 }

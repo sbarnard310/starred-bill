@@ -27,5 +27,8 @@
   "website": "https://www.azurmendi.restaurant/",
   "lat": 43.26065,
   "lng": -2.81454,
-  "placeId": "ChIJCeEOclRITg0R_hLIpCMim5A"
+  "placeId": "ChIJCeEOclRITg0R_hLIpCMim5A",
+  "michelinId": "220786",
+  "chef": "Eneko Atxa Azurmendi",
+  "chefSource": "michelin"
 }

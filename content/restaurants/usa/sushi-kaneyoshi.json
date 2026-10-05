@@ -17,5 +17,8 @@
   "website": "https://www.kaneyoshi.us/",
   "lat": 34.050065,
   "lng": -118.241363,
-  "placeId": "ChIJIXKeGv_HwoARtFSSk2sS2AI"
+  "placeId": "ChIJIXKeGv_HwoARtFSSk2sS2AI",
+  "michelinId": "1195793",
+  "chef": "Yoshiyuki Inoue",
+  "chefSource": "michelin"
 }

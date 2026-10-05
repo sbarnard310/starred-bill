@@ -19,5 +19,13 @@
   "website": "https://closvauban.com",
   "lat": 47.8589801,
   "lng": 5.3334864,
-  "placeId": "ChIJkWgD7eEj7UcRTJI4mJq1g64"
+  "placeId": "ChIJkWgD7eEj7UcRTJI4mJq1g64",
+  "michelinId": "1216782",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Valentin Loison",
+  "chefSource": "michelin"
 }

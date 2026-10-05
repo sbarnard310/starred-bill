@@ -12,5 +12,11 @@
   "website": "https://www.nubrestaurante.com/",
   "lat": 28.089486,
   "lng": -16.7352801,
-  "placeId": "ChIJOXsLkcDNQQwRxgVyrfWO88Q"
+  "placeId": "ChIJOXsLkcDNQQwRxgVyrfWO88Q",
+  "michelinId": "1194862",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ]
 }

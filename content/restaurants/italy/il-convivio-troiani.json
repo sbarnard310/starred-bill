@@ -20,5 +20,11 @@
   "website": "https://www.ilconviviotroiani.it/",
   "lat": 41.901541,
   "lng": 12.472793,
-  "placeId": "ChIJ-aRG9FBgLxMRslFkAD02DNo"
+  "placeId": "ChIJ-aRG9FBgLxMRslFkAD02DNo",
+  "michelinId": "68949",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

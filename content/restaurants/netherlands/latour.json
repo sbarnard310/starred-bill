@@ -13,5 +13,14 @@
   "website": "https://www.restaurantlatour.nl/nl-nl/",
   "lat": 52.2413879,
   "lng": 4.4277214,
-  "placeId": "ChIJx7KqLHnAxUcRPeqNspXmcWs"
+  "placeId": "ChIJx7KqLHnAxUcRPeqNspXmcWs",
+  "michelinId": "212879",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Kenny Friederichs",
+  "chefSource": "michelin"
 }

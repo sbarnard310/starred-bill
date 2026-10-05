@@ -13,5 +13,8 @@
   "website": "https://www.erbprinz.de/de",
   "lat": 48.941273,
   "lng": 8.4045683,
-  "placeId": "ChIJbyzeFIMFl0cRg0LxwqbQ_Y4"
+  "placeId": "ChIJbyzeFIMFl0cRg0LxwqbQ_Y4",
+  "michelinId": "80644",
+  "chef": "Ralph Knebel",
+  "chefSource": "michelin"
 }

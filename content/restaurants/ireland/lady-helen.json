@@ -18,5 +18,15 @@
   "website": "https://www.ladyhelen.ie/",
   "lat": 52.529243,
   "lng": -7.187806,
-  "placeId": "ChIJVVVVVYAzXUgRnW0gx-gY6_M"
+  "placeId": "ChIJVVVVVYAzXUgRnW0gx-gY6_M",
+  "michelinId": "366187",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "John Kelly",
+  "chefSource": "michelin"
 }

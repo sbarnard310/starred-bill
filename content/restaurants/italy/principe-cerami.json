@@ -12,5 +12,11 @@
   "website": "https://www.principecerami.com/",
   "lat": 37.8502374,
   "lng": 15.2833763,
-  "placeId": "ChIJ05rrf6QRFBMR8LP_YgMhAg0"
+  "placeId": "ChIJ05rrf6QRFBMR8LP_YgMhAg0",
+  "michelinId": "167141",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Massimo Mantarro",
+  "chefSource": "site"
 }

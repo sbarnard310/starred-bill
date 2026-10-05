@@ -23,5 +23,8 @@
   "website": "https://leneuviemeart.com/",
   "lat": 45.767953,
   "lng": 4.8564194,
-  "placeId": "ChIJzZhX5juz9UcR74W_XDtOxIo"
+  "placeId": "ChIJzZhX5juz9UcR74W_XDtOxIo",
+  "michelinId": "441237",
+  "chef": "Christophe Roure",
+  "chefSource": "michelin"
 }

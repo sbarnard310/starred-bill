@@ -24,5 +24,8 @@
   "noLunch": true,
   "lat": 35.669269,
   "lng": 139.759203,
-  "placeId": "ChIJ04DI3-iLGGARdv1aRxgdFO0"
+  "placeId": "ChIJ04DI3-iLGGARdv1aRxgdFO0",
+  "michelinId": "1194135",
+  "chef": "Harutaka Takahashi",
+  "chefSource": "michelin"
 }

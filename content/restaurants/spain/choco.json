@@ -13,5 +13,8 @@
   "website": "https://www.restaurantechoco.com/",
   "lat": 37.8850096,
   "lng": -4.7623009,
-  "placeId": "ChIJy-qRHYffbA0RVQx7hteG6BE"
+  "placeId": "ChIJy-qRHYffbA0RVQx7hteG6BE",
+  "michelinId": "219667",
+  "chef": "Kisko García",
+  "chefSource": "michelin"
 }

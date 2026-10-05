@@ -16,5 +16,12 @@
   "website": "https://www.neueblumenau.ch/",
   "lat": 47.4941739,
   "lng": 9.3530135,
-  "placeId": "ChIJPwkywGTimkcRJjAL5itpYDM"
+  "placeId": "ChIJPwkywGTimkcRJjAL5itpYDM",
+  "michelinId": "179572",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

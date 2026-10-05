@@ -14,5 +14,9 @@
   "website": "https://www.finnjavel.fi/salonki/",
   "lat": 60.1719135,
   "lng": 24.9314505,
-  "placeId": "ChIJO6MCR88LkkYRLkqzBvXqrnk"
+  "placeId": "ChIJO6MCR88LkkYRLkqzBvXqrnk",
+  "michelinId": "1194498",
+  "diets": [
+    "vegetarian"
+  ]
 }

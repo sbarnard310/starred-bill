@@ -23,5 +23,13 @@
   "website": "https://www.dacaino.com/",
   "lat": 42.622022,
   "lng": 11.490628,
-  "placeId": "ChIJBY28iyIDKRMRPCvsN3s5E2A"
+  "placeId": "ChIJBY28iyIDKRMRPCvsN3s5E2A",
+  "michelinId": "142369",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Valeria Piccini",
+  "chefSource": "michelin"
 }

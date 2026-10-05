@@ -25,5 +25,11 @@
   "website": "https://www.prairial-restaurant.fr",
   "lat": 45.7415161,
   "lng": 4.8229022,
-  "placeId": "ChIJmSs1dP_q9EcRwmrEzLAo5fg"
+  "placeId": "ChIJmSs1dP_q9EcRwmrEzLAo5fg",
+  "michelinId": "474220",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Gaëtan Gentil",
+  "chefSource": "michelin"
 }

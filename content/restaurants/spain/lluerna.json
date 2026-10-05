@@ -27,5 +27,14 @@
   "website": "https://lluernarestaurant.com/",
   "lat": 41.455473,
   "lng": 2.206562,
-  "placeId": "ChIJd44t9I68pBIRW2Jgo7sGy9E"
+  "placeId": "ChIJd44t9I68pBIRW2Jgo7sGy9E",
+  "michelinId": "218432",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ],
+  "chef": "Víctor Quintillà Imbernon",
+  "chefSource": "michelin"
 }

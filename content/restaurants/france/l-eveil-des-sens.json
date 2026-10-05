@@ -23,5 +23,11 @@
   "website": "https://www.restaurant-leveildessens.fr",
   "lat": 48.3060431,
   "lng": -0.6084258,
-  "placeId": "ChIJb3rxtrmmCUgR3MbV3WLLotw"
+  "placeId": "ChIJb3rxtrmmCUgR3MbV3WLLotw",
+  "michelinId": "274697",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nicolas Nobis",
+  "chefSource": "michelin"
 }

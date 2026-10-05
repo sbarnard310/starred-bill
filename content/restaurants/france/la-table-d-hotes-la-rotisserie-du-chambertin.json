@@ -23,5 +23,8 @@
   "website": "https://www.rotisserie-chambertin.com/",
   "lat": 47.2240872,
   "lng": 4.969631,
-  "placeId": "ChIJg06e49-a8kcRFaNTUYXiW14"
+  "placeId": "ChIJg06e49-a8kcRFaNTUYXiW14",
+  "michelinId": "533952",
+  "chef": "Thomas Collomb",
+  "chefSource": "michelin"
 }

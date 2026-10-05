@@ -23,5 +23,13 @@
   "website": "https://ristorantesadler.it/",
   "lat": 45.472628,
   "lng": 9.192619,
-  "placeId": "ChIJ3XRbnfXDhkcRc_KG7r7ylF4"
+  "placeId": "ChIJ3XRbnfXDhkcRc_KG7r7ylF4",
+  "michelinId": "69160",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Claudio Sadler",
+  "chefSource": "site"
 }

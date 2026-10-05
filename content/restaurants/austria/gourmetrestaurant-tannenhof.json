@@ -13,5 +13,12 @@
   "website": "https://gourmet.hoteltannenhof.net/",
   "lat": 47.1397632,
   "lng": 10.2770669,
-  "placeId": "ChIJK2nw2UmxnEcR612igtN7ysQ"
+  "placeId": "ChIJK2nw2UmxnEcR612igtN7ysQ",
+  "michelinId": "1212332",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Dennis Ilies",
+  "chefSource": "michelin"
 }

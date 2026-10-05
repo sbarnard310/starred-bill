@@ -23,5 +23,12 @@
   "website": "https://www.osteriadellabrughiera.it/",
   "lat": 45.739322,
   "lng": 9.626508,
-  "placeId": "ChIJl84mXmxUgUcRyqAs0R3Z3aI"
+  "placeId": "ChIJl84mXmxUgUcRyqAs0R3Z3aI",
+  "michelinId": "157751",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Paolo Cortinovis and Beatrice Arrigoni",
+  "chefSource": "michelin"
 }

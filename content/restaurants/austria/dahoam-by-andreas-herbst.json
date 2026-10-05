@@ -16,5 +16,12 @@
   "website": "https://restaurant-dahoam.com/de/",
   "lat": 47.4383683,
   "lng": 12.7207056,
-  "placeId": "ChIJmaVuuvD_dkcR2h8tk5-gsS8"
+  "placeId": "ChIJmaVuuvD_dkcR2h8tk5-gsS8",
+  "michelinId": "1212475",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Andreas Herbst",
+  "chefSource": "michelin"
 }

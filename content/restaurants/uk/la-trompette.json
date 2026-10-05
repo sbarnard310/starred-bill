@@ -20,5 +20,12 @@
   "website": "https://www.latrompette.co.uk/",
   "lat": 51.491995,
   "lng": -0.2558505,
-  "placeId": "ChIJgaR1WkAOdkgRh32MzysCr2Y"
+  "placeId": "ChIJgaR1WkAOdkgRh32MzysCr2Y",
+  "michelinId": "123665",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Greg Wellman",
+  "chefSource": "site"
 }

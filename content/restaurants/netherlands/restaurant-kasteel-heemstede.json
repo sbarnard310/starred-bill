@@ -13,5 +13,13 @@
   "website": "https://restaurant-kasteelheemstede.nl/",
   "lat": 52.0330316,
   "lng": 5.1252355,
-  "placeId": "ChIJFb0MbCpkxkcRYJkc4nesVXs"
+  "placeId": "ChIJFb0MbCpkxkcRYJkc4nesVXs",
+  "michelinId": "212652",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

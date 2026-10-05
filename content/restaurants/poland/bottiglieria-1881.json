@@ -15,5 +15,11 @@
   "website": "https://www.1881.com.pl/",
   "lat": 50.0486603,
   "lng": 19.9460552,
-  "placeId": "ChIJOzG7EEJbFkcRa-v6voT78XY"
+  "placeId": "ChIJOzG7EEJbFkcRa-v6voT78XY",
+  "michelinId": "485985",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Przemysław Klima",
+  "chefSource": "michelin"
 }

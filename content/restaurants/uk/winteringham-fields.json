@@ -21,5 +21,13 @@
   "website": "https://winteringhamfields.co.uk/",
   "lat": 53.687704,
   "lng": -0.590431,
-  "placeId": "ChIJG_1EdIvoeEgR2zGvzE4HHa4"
+  "placeId": "ChIJG_1EdIvoeEgR2zGvzE4HHa4",
+  "michelinId": "189679",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

@@ -13,5 +13,9 @@
   "website": "https://rozbrat20.com.pl/",
   "lat": 52.2242187,
   "lng": 21.0350918,
-  "placeId": "ChIJybeTD_3MHkcRGfdFct4736w"
+  "placeId": "ChIJybeTD_3MHkcRGfdFct4736w",
+  "michelinId": "487005",
+  "diets": [
+    "gluten-free"
+  ]
 }

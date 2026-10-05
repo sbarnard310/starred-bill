@@ -15,5 +15,12 @@
   "website": "https://steins-traube.de/",
   "lat": 49.9838324,
   "lng": 8.1746485,
-  "placeId": "ChIJWaaQXXGUvUcR0beTevT-oqg"
+  "placeId": "ChIJWaaQXXGUvUcR0beTevT-oqg",
+  "michelinId": "75262",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Philipp Stein",
+  "chefSource": "michelin"
 }

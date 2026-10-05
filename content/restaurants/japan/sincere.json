@@ -23,5 +23,8 @@
   "noLunch": true,
   "lat": 35.676969,
   "lng": 139.704359,
-  "placeId": "ChIJXfAVBLmMGGARVMUiNhNEcNg"
+  "placeId": "ChIJXfAVBLmMGGARVMUiNhNEcNg",
+  "michelinId": "1193987",
+  "chef": "Shinsuke Ishii",
+  "chefSource": "michelin"
 }

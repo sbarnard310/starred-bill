@@ -15,5 +15,11 @@
   "website": "https://the-tourist-trap.de/",
   "lat": 49.4946298,
   "lng": 8.4687498,
-  "placeId": "ChIJkZDzVi3Nl0cRdj5x5kLx-2w"
+  "placeId": "ChIJkZDzVi3Nl0cRdj5x5kLx-2w",
+  "michelinId": "1245339",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Dennis Maier",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,11 @@
   "website": "https://storchen-schmidhofen.de/",
   "lat": 47.89284,
   "lng": 7.69288,
-  "placeId": "ChIJw79fDMgIkUcRaVFONkNagnA"
+  "placeId": "ChIJw79fDMgIkUcRaVFONkNagnA",
+  "michelinId": "74746",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jochen Helfesrieder and Fritz Helfesrieder",
+  "chefSource": "michelin"
 }

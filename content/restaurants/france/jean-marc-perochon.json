@@ -15,5 +15,11 @@
   "website": "https://www.lesbrisants.com",
   "lat": 46.61923,
   "lng": -1.87165,
-  "placeId": "ChIJWbnfrzRZBEgRrhvNjyNcy9M"
+  "placeId": "ChIJWbnfrzRZBEgRrhvNjyNcy9M",
+  "michelinId": "118905",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jean-Marc Pérochon",
+  "chefSource": "michelin"
 }

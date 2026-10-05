@@ -25,5 +25,14 @@
   "website": "https://jamavarrestaurants.com/doha/",
   "lat": 25.3185882,
   "lng": 51.5363128,
-  "placeId": "ChIJf6oic1LFRT4RpitALpNivyc"
+  "placeId": "ChIJf6oic1LFRT4RpitALpNivyc",
+  "michelinId": "1197472",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Surender Mohan",
+  "chefSource": "site"
 }

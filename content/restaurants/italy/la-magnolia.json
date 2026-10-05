@@ -15,5 +15,11 @@
   "website": "https://www.lamagnoliaristorante.com/it/",
   "lat": 43.949717,
   "lng": 10.177495,
-  "placeId": "ChIJ0yrpnQYK1RIRbid1aE-oiWQ"
+  "placeId": "ChIJ0yrpnQYK1RIRbid1aE-oiWQ",
+  "michelinId": "162005",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

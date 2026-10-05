@@ -30,5 +30,10 @@
   "website": "https://www.chuan-ya.com/",
   "lat": 25.0350743,
   "lng": 121.5672136,
-  "placeId": "ChIJY01hzqWrQjQREol52AZgkos"
+  "placeId": "ChIJY01hzqWrQjQREol52AZgkos",
+  "michelinId": "1217034",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

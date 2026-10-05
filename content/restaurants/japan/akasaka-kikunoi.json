@@ -31,5 +31,9 @@
   "website": "https://kikunoi.jp/",
   "lat": 35.669635,
   "lng": 139.734126,
-  "placeId": "ChIJk6mYo4GLGGARvnt5nw4Dbbs"
+  "placeId": "ChIJk6mYo4GLGGARvnt5nw4Dbbs",
+  "michelinId": "1193820",
+  "diets": [
+    "vegetarian"
+  ]
 }

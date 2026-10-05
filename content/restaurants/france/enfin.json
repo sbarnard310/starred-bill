@@ -24,5 +24,12 @@
   "website": "https://www.enfin-barr.com",
   "lat": 48.4049121,
   "lng": 7.4254505,
-  "placeId": "ChIJ5SYaSVdTkUcRqh9LV7rx9IE"
+  "placeId": "ChIJ5SYaSVdTkUcRqh9LV7rx9IE",
+  "michelinId": "1201779",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Carole Eckert",
+  "chefSource": "michelin"
 }

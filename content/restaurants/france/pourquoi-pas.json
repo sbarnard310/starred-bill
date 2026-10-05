@@ -15,5 +15,8 @@
   "website": "https://www.castelbrac.com/",
   "lat": 48.6344213,
   "lng": -2.0490902,
-  "placeId": "ChIJYVDYuMSADkgRGateIaMrEZg"
+  "placeId": "ChIJYVDYuMSADkgRGateIaMrEZg",
+  "michelinId": "484180",
+  "chef": "Julien Hennote",
+  "chefSource": "michelin"
 }

@@ -13,5 +13,11 @@
   "website": "https://www.haubentaucher-tegernsee.de/",
   "lat": 47.6953833,
   "lng": 11.766113,
-  "placeId": "ChIJKfxrx7iOnUcRvszyPBP72Iw"
+  "placeId": "ChIJKfxrx7iOnUcRvszyPBP72Iw",
+  "michelinId": "524996",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Alois Neuschmid",
+  "chefSource": "michelin"
 }

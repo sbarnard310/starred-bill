@@ -27,5 +27,15 @@
   "website": "https://www.yannick-alleno.com/en/les-etablissements-du-groupe/pavyllon-monte-carlo",
   "lat": 43.738462,
   "lng": 7.425868,
-  "placeId": "ChIJBWPKPYjCzRIR4WqdFUJ_Cfo"
+  "placeId": "ChIJBWPKPYjCzRIR4WqdFUJ_Cfo",
+  "michelinId": "9787",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Yannick Alléno",
+  "chefSource": "site"
 }

@@ -23,5 +23,8 @@
   "noLunch": true,
   "lat": 35.661579,
   "lng": 139.716582,
-  "placeId": "ChIJD7UDAmSLGGAR4jsmxNMCJjs"
+  "placeId": "ChIJD7UDAmSLGGAR4jsmxNMCJjs",
+  "michelinId": "1194160",
+  "chef": "Tomofumi Saito",
+  "chefSource": "michelin"
 }

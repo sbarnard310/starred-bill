@@ -14,5 +14,8 @@
   "website": "https://www.bistrotdunord.be/",
   "lat": 51.2275728,
   "lng": 4.418654,
-  "placeId": "ChIJM1turqz3w0cRxNTm7ow7ZzQ"
+  "placeId": "ChIJM1turqz3w0cRxNTm7ow7ZzQ",
+  "michelinId": "359021",
+  "chef": "Michaël Rewers",
+  "chefSource": "michelin"
 }

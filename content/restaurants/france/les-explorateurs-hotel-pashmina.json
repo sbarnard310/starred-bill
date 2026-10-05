@@ -15,5 +15,11 @@
   "website": "https://www.hotelpashmina.com/",
   "lat": 45.2957656,
   "lng": 6.5862441,
-  "placeId": "ChIJowBiMmKGiUcRtHCsSbbOnso"
+  "placeId": "ChIJowBiMmKGiUcRtHCsSbbOnso",
+  "michelinId": "491764",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

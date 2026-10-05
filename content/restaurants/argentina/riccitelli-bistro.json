@@ -24,5 +24,12 @@
   "website": "https://matiasriccitelli.com/bistro-visitas/",
   "lat": -33.0339742,
   "lng": -68.959131,
-  "placeId": "ChIJM0cASSrefZYRGsl8S18rrec"
+  "placeId": "ChIJM0cASSrefZYRGsl8S18rrec",
+  "michelinId": "1209837",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Juan Ventureyra",
+  "chefSource": "michelin"
 }

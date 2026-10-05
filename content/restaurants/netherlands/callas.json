@@ -20,5 +20,10 @@
   "website": "https://www.restaurantcallas.nl/",
   "lat": 52.0866664,
   "lng": 4.3130668,
-  "placeId": "ChIJX7aGbzm3xUcROXbLVicgbj4"
+  "placeId": "ChIJX7aGbzm3xUcROXbLVicgbj4",
+  "michelinId": "115041",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

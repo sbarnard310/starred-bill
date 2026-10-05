@@ -10,5 +10,14 @@
   "website": "https://www.ackermannshof.ch/",
   "lat": 47.5631925,
   "lng": 7.5846153,
-  "placeId": "ChIJpXGWMaa5kUcRZz-9qOEw9AU"
+  "placeId": "ChIJpXGWMaa5kUcRZz-9qOEw9AU",
+  "michelinId": "347172",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Duc Tan Arrigoni",
+  "chefSource": "michelin"
 }

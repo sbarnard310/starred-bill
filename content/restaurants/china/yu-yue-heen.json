@@ -12,5 +12,11 @@
   "website": "https://www.fourseasons.com/guangzhou/dining/restaurants/yu_yue_heen",
   "lat": 23.1204162,
   "lng": 113.3175202,
-  "placeId": "ChIJGao3Bw7_AjQRAcn_NxwVV8c"
+  "placeId": "ChIJGao3Bw7_AjQRAcn_NxwVV8c",
+  "michelinId": "559257",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ]
 }

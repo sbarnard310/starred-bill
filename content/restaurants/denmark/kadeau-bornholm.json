@@ -14,5 +14,11 @@
   "website": "https://kadeau.dk/",
   "lat": 55.0045738,
   "lng": 14.9690273,
-  "placeId": "ChIJ_61wba8UVUYR7y_ZT0SrqPA"
+  "placeId": "ChIJ_61wba8UVUYR7y_ZT0SrqPA",
+  "michelinId": "478197",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Nicolai Nørregaard",
+  "chefSource": "michelin"
 }

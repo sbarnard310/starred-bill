@@ -25,5 +25,11 @@
   "website": "https://www.restaurant-pantagruel.com/",
   "lat": 48.864083,
   "lng": 2.336137,
-  "placeId": "ChIJdwLJVERv5kcRzAkzVCFMhBc"
+  "placeId": "ChIJdwLJVERv5kcRzAkzVCFMhBc",
+  "michelinId": "1193334",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jason Gouzy",
+  "chefSource": "michelin"
 }

@@ -27,5 +27,11 @@
   "website": "https://lenvolhk.stregishongkong.com/",
   "lat": 22.2799005,
   "lng": 114.1761315,
-  "placeId": "ChIJ8TgQDNEBBDQREcrQS4Y1isY"
+  "placeId": "ChIJ8TgQDNEBBDQREcrQS4Y1isY",
+  "michelinId": "1184875",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Olivier Elzer",
+  "chefSource": "michelin"
 }

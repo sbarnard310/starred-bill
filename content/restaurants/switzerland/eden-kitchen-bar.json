@@ -12,5 +12,13 @@
   "website": "https://www.lareserve-zurich.com/restaurants/eden-kitchen-and-bar/",
   "lat": 47.3627837,
   "lng": 8.5473255,
-  "placeId": "ChIJbbNdcDGnmkcR96QYsCL_hbs"
+  "placeId": "ChIJbbNdcDGnmkcR96QYsCL_hbs",
+  "michelinId": "1200235",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Marco Ortolani",
+  "chefSource": "michelin"
 }

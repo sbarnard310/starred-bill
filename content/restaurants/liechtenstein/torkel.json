@@ -15,5 +15,13 @@
   "website": "https://www.torkel.li",
   "lat": 47.1443084,
   "lng": 9.5195393,
-  "placeId": "ChIJpUeErmkxm0cRjhOXx0JeJ6o"
+  "placeId": "ChIJpUeErmkxm0cRjhOXx0JeJ6o",
+  "michelinId": "180520",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ivo Berger",
+  "chefSource": "michelin"
 }

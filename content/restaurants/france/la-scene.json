@@ -25,5 +25,12 @@
   "website": "https://www.la-scene.paris/",
   "lat": 48.8720059,
   "lng": 2.3144577,
-  "placeId": "ChIJF81Lvo5v5kcR34BLAZe2U1o"
+  "placeId": "ChIJF81Lvo5v5kcR34BLAZe2U1o",
+  "michelinId": "1186413",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Stéphanie Le Quellec",
+  "chefSource": "site"
 }

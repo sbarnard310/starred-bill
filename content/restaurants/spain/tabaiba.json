@@ -13,5 +13,12 @@
   "website": "https://tabaibarestaurante.com/",
   "lat": 28.1353754,
   "lng": -15.4397592,
-  "placeId": "ChIJ93sdTHWVQAwRyETTKEH56KQ"
+  "placeId": "ChIJ93sdTHWVQAwRyETTKEH56KQ",
+  "michelinId": "1195419",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Abraham Ortega",
+  "chefSource": "michelin"
 }

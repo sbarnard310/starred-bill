@@ -13,5 +13,11 @@
   "website": "https://restaurant-mizar.de/",
   "lat": 49.7941767,
   "lng": 9.9232488,
-  "placeId": "ChIJAQAE_TWQokcRW55rsP9IApE"
+  "placeId": "ChIJAQAE_TWQokcRW55rsP9IApE",
+  "michelinId": "1213938",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Konstantin Kuntzsch",
+  "chefSource": "michelin"
 }

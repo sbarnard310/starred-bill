@@ -23,5 +23,11 @@
   "website": "https://restaurant-ebullition.eu/",
   "lat": 43.6132891,
   "lng": 3.8797575,
-  "placeId": "ChIJMeeAI6mvthIRvtEYEAMzFyk"
+  "placeId": "ChIJMeeAI6mvthIRvtEYEAMzFyk",
+  "michelinId": "1191916",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Boris Caillol",
+  "chefSource": "michelin"
 }

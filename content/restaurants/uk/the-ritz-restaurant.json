@@ -24,5 +24,13 @@
   "website": "https://www.theritzlondon.com/the-ritz-restaurant/",
   "lat": 51.5069929,
   "lng": -0.1418453,
-  "placeId": "ChIJV8gP0ykFdkgRbsmzJFpywNA"
+  "placeId": "ChIJV8gP0ykFdkgRbsmzJFpywNA",
+  "michelinId": "69472",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "John Williams",
+  "chefSource": "site"
 }

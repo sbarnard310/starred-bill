@@ -13,5 +13,13 @@
   "website": "https://www.alsorriso.com/",
   "lat": 45.7406906,
   "lng": 8.4116747,
-  "placeId": "ChIJ27_EEqIShkcRDWssPBQIRNk"
+  "placeId": "ChIJ27_EEqIShkcRDWssPBQIRNk",
+  "michelinId": "153384",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Luisa Marelli",
+  "chefSource": "michelin"
 }

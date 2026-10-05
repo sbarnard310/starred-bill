@@ -15,5 +15,12 @@
   "website": "https://www.botrinis.com",
   "lat": 38.0232617,
   "lng": 23.7936937,
-  "placeId": "ChIJ2x4_mPaYoRQRi8YGpT4_wIo"
+  "placeId": "ChIJ2x4_mPaYoRQRi8YGpT4_wIo",
+  "michelinId": "350038",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Ettore Botrini",
+  "chefSource": "michelin"
 }

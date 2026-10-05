@@ -15,5 +15,8 @@
   "website": "https://www.starkfood.co.uk/",
   "lat": 51.790781,
   "lng": 0.968653,
-  "placeId": "ChIJ_XMHxUsR2UcRP5A92hFRP00"
+  "placeId": "ChIJ_XMHxUsR2UcRP5A92hFRP00",
+  "michelinId": "530672",
+  "chef": "Ben Crittenden",
+  "chefSource": "michelin"
 }

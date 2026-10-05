@@ -12,5 +12,11 @@
   "website": "https://zasunola.com/",
   "lat": 29.9752743,
   "lng": -90.1001612,
-  "placeId": "ChIJVVVEYGKvIIYRmbRoIxRmaiA"
+  "placeId": "ChIJVVVEYGKvIIYRmbRoIxRmaiA",
+  "michelinId": "1211793",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Sue Zemanick",
+  "chefSource": "michelin"
 }

@@ -23,5 +23,13 @@
   "website": "https://64goodgestreet.co.uk/",
   "lat": 51.5190312,
   "lng": -0.1368487,
-  "placeId": "ChIJVVUuwSsbdkgRRSNEGe3BRBU"
+  "placeId": "ChIJVVUuwSsbdkgRRSNEGe3BRBU",
+  "michelinId": "1209876",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Stuart Andrew",
+  "chefSource": "site"
 }

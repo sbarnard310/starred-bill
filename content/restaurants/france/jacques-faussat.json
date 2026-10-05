@@ -25,5 +25,13 @@
   "website": "https://www.jacquesfaussat.com/",
   "lat": 48.8830027,
   "lng": 2.3066708,
-  "placeId": "ChIJNQsxDrxv5kcRk9Lx6KN1giU"
+  "placeId": "ChIJNQsxDrxv5kcRk9Lx6KN1giU",
+  "michelinId": "6489",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jacques Faussat",
+  "chefSource": "michelin"
 }

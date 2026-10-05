@@ -13,5 +13,9 @@
   "website": "https://www.ristorantepasha.com/it/",
   "lat": 40.9452777,
   "lng": 17.1797101,
-  "placeId": "ChIJ0SezF23IRxMREkmJhELMlhA"
+  "placeId": "ChIJ0SezF23IRxMREkmJhELMlhA",
+  "michelinId": "496166",
+  "diets": [
+    "vegetarian"
+  ]
 }

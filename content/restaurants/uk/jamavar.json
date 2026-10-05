@@ -21,5 +21,14 @@
   "website": "https://jamavarrestaurants.com/indian-restaurant-mayfair/",
   "lat": 51.5103041,
   "lng": -0.1484316,
-  "placeId": "ChIJmyw0PSwFdkgRTdpWlbA5OmU"
+  "placeId": "ChIJmyw0PSwFdkgRTdpWlbA5OmU",
+  "michelinId": "514613",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Surender Mohan",
+  "chefSource": "site"
 }

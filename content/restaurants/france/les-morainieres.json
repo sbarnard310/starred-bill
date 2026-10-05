@@ -27,5 +27,10 @@
   "website": "https://www.les-morainieres.com",
   "lat": 45.7448198,
   "lng": 5.7983813,
-  "placeId": "ChIJw8sm9ssNi0cR3RdyiZ1r3cY"
+  "placeId": "ChIJw8sm9ssNi0cR3RdyiZ1r3cY",
+  "michelinId": "42509",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

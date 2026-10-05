@@ -12,5 +12,16 @@
   "website": "https://www.oostwegelcollection.nl/chateau-neercanne/restaurants/chateau-neercanne",
   "lat": 50.8186702,
   "lng": 5.66746,
-  "placeId": "ChIJueerN-LowEcRt2mMhYhmkvk"
+  "placeId": "ChIJueerN-LowEcRt2mMhYhmkvk",
+  "michelinId": "212788",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Robert Levels",
+  "chefSource": "site"
 }

@@ -15,5 +15,11 @@
   "website": "https://www.cheznoircarmel.com/",
   "lat": 36.5569588,
   "lng": -121.9221052,
-  "placeId": "ChIJSZwHIcTnjYAR40RvFRpNQLM"
+  "placeId": "ChIJSZwHIcTnjYAR40RvFRpNQLM",
+  "michelinId": "1204573",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Jonny Black",
+  "chefSource": "michelin"
 }

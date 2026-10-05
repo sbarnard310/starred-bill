@@ -25,5 +25,10 @@
   "website": "https://www.restaurantortensia.com/",
   "lat": 48.8584133,
   "lng": 2.2875568,
-  "placeId": "ChIJUYo80Kxv5kcRsqQsipykxFM"
+  "placeId": "ChIJUYo80Kxv5kcRsqQsipykxFM",
+  "michelinId": "1202241",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

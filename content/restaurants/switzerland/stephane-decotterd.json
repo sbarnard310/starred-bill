@@ -13,5 +13,13 @@
   "website": "https://maisondecotterd.com/restaurant-stephane-decotterd/",
   "lat": 46.4326918,
   "lng": 6.9216223,
-  "placeId": "ChIJZXt5KISbjkcR2Oyxn_Cc3gM"
+  "placeId": "ChIJZXt5KISbjkcR2Oyxn_Cc3gM",
+  "michelinId": "1196969",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Stéphane Décotterd",
+  "chefSource": "michelin"
 }

@@ -17,5 +17,8 @@
   "website": "https://www.montblanc-restaurant.com",
   "lat": 45.7498163,
   "lng": 6.5843326,
-  "placeId": "ChIJef-ojVLgi0cR3t50vfsp3is"
+  "placeId": "ChIJef-ojVLgi0cR3t50vfsp3is",
+  "michelinId": "1160189",
+  "chef": "Benoit Goulard",
+  "chefSource": "site"
 }

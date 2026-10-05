@@ -28,5 +28,13 @@
   "website": "https://chefjavieraranda.com/en/",
   "lat": 40.449311,
   "lng": -3.678363,
-  "placeId": "ChIJd6M8r94oQg0RwUOiAobTPIo"
+  "placeId": "ChIJd6M8r94oQg0RwUOiAobTPIo",
+  "michelinId": "504209",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Javier Aranda",
+  "chefSource": "michelin"
 }

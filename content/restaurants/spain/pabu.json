@@ -31,5 +31,14 @@
   "website": "https://www.restaurantepabu.com/",
   "lat": 40.456412,
   "lng": -3.689115,
-  "placeId": "ChIJl37AmnwpQg0R2pcFRgLqEBE"
+  "placeId": "ChIJl37AmnwpQg0R2pcFRgLqEBE",
+  "michelinId": "1211601",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Coco Montes",
+  "chefSource": "michelin"
 }

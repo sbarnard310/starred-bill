@@ -22,5 +22,8 @@
   "source": "https://pocket-concierge.jp/en/restaurants/245225",
   "lat": 35.658713,
   "lng": 139.729049,
-  "placeId": "ChIJ8YRM9HaLGGAREUm4zmzF3R4"
+  "placeId": "ChIJ8YRM9HaLGGAREUm4zmzF3R4",
+  "michelinId": "1193994",
+  "chef": "Takashi Ono",
+  "chefSource": "michelin"
 }

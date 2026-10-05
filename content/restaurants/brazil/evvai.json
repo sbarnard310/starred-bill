@@ -12,5 +12,13 @@
   "website": "https://www.evvai.com.br/",
   "lat": -23.5670869,
   "lng": -46.6790725,
-  "placeId": "ChIJ15xqwHlXzpQR-wSlgx8ckJM"
+  "placeId": "ChIJ15xqwHlXzpQR-wSlgx8ckJM",
+  "michelinId": "543958",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Luiz Filipe Souza",
+  "chefSource": "michelin"
 }

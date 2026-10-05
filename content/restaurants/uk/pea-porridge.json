@@ -20,5 +20,8 @@
   "website": "https://peaporridge.co.uk/",
   "lat": 52.249572,
   "lng": 0.71447,
-  "placeId": "ChIJHdYXI0NM2EcRePfzBSTf1JI"
+  "placeId": "ChIJHdYXI0NM2EcRePfzBSTf1JI",
+  "michelinId": "263897",
+  "chef": "Justin Sharp",
+  "chefSource": "site"
 }

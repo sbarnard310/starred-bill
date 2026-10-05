@@ -13,5 +13,12 @@
   "website": "https://robin-pietsch.de/zeitwerk/",
   "lat": 51.8353677,
   "lng": 10.7890914,
-  "placeId": "ChIJNfkK8e0MpUcR57NfK5KWe1o"
+  "placeId": "ChIJNfkK8e0MpUcR57NfK5KWe1o",
+  "michelinId": "427215",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Robin Pietsch",
+  "chefSource": "site"
 }

@@ -15,5 +15,11 @@
   "website": "https://www.restaurantelaprensa.com",
   "lat": 41.633181,
   "lng": -0.8746479,
-  "placeId": "ChIJDx1wggMVWQ0RutblRxGThwk"
+  "placeId": "ChIJDx1wggMVWQ0RutblRxGThwk",
+  "michelinId": "224684",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Marisa Barberán",
+  "chefSource": "michelin"
 }

@@ -26,5 +26,9 @@
   "website": "https://www.grandmayfull.com/",
   "lat": 25.080373,
   "lng": 121.553699,
-  "placeId": "ChIJ9xgvag2sQjQR5aqGShkLT6M"
+  "placeId": "ChIJ9xgvag2sQjQR5aqGShkLT6M",
+  "michelinId": "550772",
+  "diets": [
+    "vegetarian"
+  ]
 }

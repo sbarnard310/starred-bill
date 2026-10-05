@@ -13,5 +13,13 @@
   "website": "https://www.teko-by-langerodriguez.de/",
   "lat": 51.4322441,
   "lng": 7.003483,
-  "placeId": "ChIJgWa-so3DuEcRoRvDzkF-3mQ"
+  "placeId": "ChIJgWa-so3DuEcRoRvDzkF-3mQ",
+  "michelinId": "1218183",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Hans Robert Lange Rodriguez",
+  "chefSource": "michelin"
 }

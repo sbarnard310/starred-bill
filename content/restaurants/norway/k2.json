@@ -13,5 +13,14 @@
   "website": "https://www.restaurantk2.no",
   "lat": 58.9697479,
   "lng": 5.7461623,
-  "placeId": "ChIJ3V5jkuI1OkYR_ZSJ6MlMyXw"
+  "placeId": "ChIJ3V5jkuI1OkYR_ZSJ6MlMyXw",
+  "michelinId": "1192264",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ],
+  "chef": "Ola Klepp",
+  "chefSource": "michelin"
 }

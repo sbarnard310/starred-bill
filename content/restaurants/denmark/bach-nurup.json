@@ -13,5 +13,12 @@
   "website": "https://bachognurup.dk/",
   "lat": 57.0478385,
   "lng": 9.9182428,
-  "placeId": "ChIJ0eRabjgzSUYRfO1Vcc-uuvU"
+  "placeId": "ChIJ0eRabjgzSUYRfO1Vcc-uuvU",
+  "michelinId": "1240766",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Christian Nurup",
+  "chefSource": "michelin"
 }

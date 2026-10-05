@@ -12,5 +12,8 @@
   "website": "https://www.kosentampa.com/",
   "lat": 27.9623377,
   "lng": -82.4638787,
-  "placeId": "ChIJ27GzUEPFwogRulJovqXIaH0"
+  "placeId": "ChIJ27GzUEPFwogRulJovqXIaH0",
+  "michelinId": "1206513",
+  "chef": "Andrew Huang",
+  "chefSource": "michelin"
 }

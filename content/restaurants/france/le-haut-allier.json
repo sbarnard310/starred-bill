@@ -15,5 +15,13 @@
   "website": "https://www.hotel-lehautallier.com",
   "lat": 44.919595,
   "lng": 3.6743081,
-  "placeId": "ChIJo1xVXZdUsxIRBdtki8QokTY"
+  "placeId": "ChIJo1xVXZdUsxIRBdtki8QokTY",
+  "michelinId": "9872",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Clément Brun",
+  "chefSource": "michelin"
 }

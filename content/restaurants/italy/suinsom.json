@@ -14,5 +14,13 @@
   "website": "https://www.tyrolhotel.it/it/ristorante-michelin-suinsom-val-gardena/",
   "lat": 46.5565821,
   "lng": 11.7597819,
-  "placeId": "ChIJT0aaMTMVeEcR8pgte32ez0w"
+  "placeId": "ChIJT0aaMTMVeEcR8pgte32ez0w",
+  "michelinId": "163920",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Alessandro Martellini",
+  "chefSource": "site"
 }

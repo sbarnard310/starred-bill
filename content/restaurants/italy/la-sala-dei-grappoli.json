@@ -20,5 +20,13 @@
   "website": "https://www.banfi.it/ristoranti/",
   "lat": 42.980536,
   "lng": 11.39892,
-  "placeId": "ChIJFTzy5cl1KRMRtWgTdDiaqV4"
+  "placeId": "ChIJFTzy5cl1KRMRtWgTdDiaqV4",
+  "michelinId": "469523",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Domenico Francone",
+  "chefSource": "michelin"
 }

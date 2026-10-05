@@ -12,5 +12,9 @@
   "website": "https://www.1876.restaurant/",
   "lat": 51.2436309,
   "lng": 6.8020825,
-  "placeId": "ChIJw88hToPJuEcRQS0AOYIrFx0"
+  "placeId": "ChIJw88hToPJuEcRQS0AOYIrFx0",
+  "michelinId": "72269",
+  "diets": [
+    "vegetarian"
+  ]
 }

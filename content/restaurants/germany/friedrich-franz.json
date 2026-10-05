@@ -13,5 +13,12 @@
   "website": "https://www.grandhotel-heiligendamm.de/",
   "lat": 54.143778,
   "lng": 11.8423661,
-  "placeId": "ChIJk6EU-qarrUcRrnTmRp7uGnI"
+  "placeId": "ChIJk6EU-qarrUcRrnTmRp7uGnI",
+  "michelinId": "72087",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Ronny Siewert",
+  "chefSource": "michelin"
 }

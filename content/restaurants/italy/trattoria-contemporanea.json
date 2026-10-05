@@ -15,5 +15,13 @@
   "website": "https://trattoriacontemporanea.it/",
   "lat": 45.696784,
   "lng": 9.034291,
-  "placeId": "ChIJvzUMsDaRhkcRhLxYinDEQPE"
+  "placeId": "ChIJvzUMsDaRhkcRhLxYinDEQPE",
+  "michelinId": "1199710",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Davide Marzullo",
+  "chefSource": "michelin"
 }

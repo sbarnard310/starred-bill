@@ -24,5 +24,11 @@
   "website": "https://www.nogi-s.com/",
   "lat": 35.66844,
   "lng": 139.72905,
-  "placeId": "ChIJQ4ig-X6LGGAR7jKZ0y3b8T0"
+  "placeId": "ChIJQ4ig-X6LGGAR7jKZ0y3b8T0",
+  "michelinId": "1194123",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ]
 }

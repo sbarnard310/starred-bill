@@ -14,5 +14,12 @@
   "website": "https://www.rowon45dubai.com",
   "lat": 25.0861613,
   "lng": 55.1435576,
-  "placeId": "ChIJBRo76ehrXz4R5CCsd8vFsvc"
+  "placeId": "ChIJBRo76ehrXz4R5CCsd8vFsvc",
+  "michelinId": "1206691",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Jason Atherton",
+  "chefSource": "michelin"
 }

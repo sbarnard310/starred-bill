@@ -20,5 +20,8 @@
   "website": "https://www.restaurantcrissier.com/",
   "lat": 46.5539594,
   "lng": 6.5765737,
-  "placeId": "ChIJt4zlNHkxjEcRn15FZoLyI5w"
+  "placeId": "ChIJt4zlNHkxjEcRn15FZoLyI5w",
+  "michelinId": "179051",
+  "chef": "Franck Giovannini",
+  "chefSource": "michelin"
 }

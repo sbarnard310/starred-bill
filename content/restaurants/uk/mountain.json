@@ -20,5 +20,9 @@
   "website": "https://mountainbeakstreet.com/",
   "lat": 51.5120143,
   "lng": -0.1382586,
-  "placeId": "ChIJGXGPYsEFdkgRAIIfSSET698"
+  "placeId": "ChIJGXGPYsEFdkgRAIIfSSET698",
+  "michelinId": "1209805",
+  "diets": [
+    "vegetarian"
+  ]
 }

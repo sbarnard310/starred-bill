@@ -14,5 +14,11 @@
   "website": "https://www.hupperts-restaurant.de/",
   "lat": 48.7614095,
   "lng": 9.151474,
-  "placeId": "ChIJ3YMvgWDbmUcRWXQUOAwgwDc"
+  "placeId": "ChIJ3YMvgWDbmUcRWXQUOAwgwDc",
+  "michelinId": "457685",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Michael Huppert",
+  "chefSource": "michelin"
 }

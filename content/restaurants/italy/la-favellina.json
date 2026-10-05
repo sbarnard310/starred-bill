@@ -15,5 +15,11 @@
   "website": "https://www.lafavellina.it/",
   "lat": 45.6195715,
   "lng": 11.4018545,
-  "placeId": "ChIJsxmbuedKf0cRZYgtA9-URX8"
+  "placeId": "ChIJsxmbuedKf0cRZYgtA9-URX8",
+  "michelinId": "298424",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Federico Pettenuzzo",
+  "chefSource": "michelin"
 }

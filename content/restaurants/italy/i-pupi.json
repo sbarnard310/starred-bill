@@ -13,5 +13,15 @@
   "website": "https://www.ipupiristorante.it/",
   "lat": 38.0803301,
   "lng": 13.5116679,
-  "placeId": "ChIJbUjKYVjiGRMRYnhvV2flfa0"
+  "placeId": "ChIJbUjKYVjiGRMRYnhvV2flfa0",
+  "michelinId": "360842",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Tony Lo Coco",
+  "chefSource": "michelin"
 }

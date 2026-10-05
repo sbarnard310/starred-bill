@@ -15,5 +15,13 @@
   "website": "https://www.arnaudviel.com",
   "lat": 48.7391758,
   "lng": -0.0285254,
-  "placeId": "ChIJWaWznDgACkgRffaimHdnGLo"
+  "placeId": "ChIJWaWznDgACkgRffaimHdnGLo",
+  "michelinId": "433",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Arnaud Viel",
+  "chefSource": "michelin"
 }

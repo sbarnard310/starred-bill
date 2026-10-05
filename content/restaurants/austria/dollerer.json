@@ -15,5 +15,11 @@
   "website": "https://www.doellerer.at",
   "lat": 47.5972979,
   "lng": 13.1677057,
-  "placeId": "ChIJKbDmFhfAdkcRG2Qt7Rua3WY"
+  "placeId": "ChIJKbDmFhfAdkcRG2Qt7Rua3WY",
+  "michelinId": "1192424",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Andreas Döllerer",
+  "chefSource": "michelin"
 }

@@ -15,5 +15,14 @@
   "website": "https://www.improntadacqua.com/",
   "lat": 44.2953631,
   "lng": 9.3696755,
-  "placeId": "ChIJocDfQAaX1BIRFfbkACkccXU"
+  "placeId": "ChIJocDfQAaX1BIRFfbkACkccXU",
+  "michelinId": "548490",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Ivan Maniago",
+  "chefSource": "michelin"
 }

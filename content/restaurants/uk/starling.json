@@ -24,5 +24,12 @@
   "website": "https://www.starlingbistro.co.uk/",
   "lat": 51.370974,
   "lng": -0.363012,
-  "placeId": "ChIJ_TVdCf8LdkgReqi95RbtsP0"
+  "placeId": "ChIJ_TVdCf8LdkgReqi95RbtsP0",
+  "michelinId": "1215449",
+  "diets": [
+    "vegetarian",
+    "kosher"
+  ],
+  "chef": "Nick Beardshaw",
+  "chefSource": "michelin"
 }

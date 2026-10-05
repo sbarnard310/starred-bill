@@ -32,5 +32,12 @@
   "website": "https://faro.shiseido.co.jp/",
   "lat": 35.66852,
   "lng": 139.761906,
-  "placeId": "ChIJW9Qxj-iLGGARrLFLJoOzto4"
+  "placeId": "ChIJW9Qxj-iLGGARrLFLJoOzto4",
+  "michelinId": "1194154",
+  "diets": [
+    "vegetarian-menu",
+    "vegan"
+  ],
+  "chef": "Mizuki Yamaguchi",
+  "chefSource": "michelin"
 }

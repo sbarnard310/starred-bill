@@ -25,5 +25,14 @@
   "website": "https://www.anona.fr/",
   "lat": 48.881942,
   "lng": 2.3186535,
-  "placeId": "ChIJhXXqWUZv5kcRIeS11clgDck"
+  "placeId": "ChIJhXXqWUZv5kcRIeS11clgDck",
+  "michelinId": "1186514",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Thibaut Spiwack",
+  "chefSource": "michelin"
 }

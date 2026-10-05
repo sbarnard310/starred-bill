@@ -14,5 +14,11 @@
   "website": "https://www.central-soelden.com/kulinarik/gourmet-und-wein/oetztaler-stube.html",
   "lat": 46.9668234,
   "lng": 11.0087392,
-  "placeId": "ChIJ_6nbXFsynUcRM8Astoo4uK4"
+  "placeId": "ChIJ_6nbXFsynUcRM8Astoo4uK4",
+  "michelinId": "107937",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Stefan Speiser",
+  "chefSource": "site"
 }

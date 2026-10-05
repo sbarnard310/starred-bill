@@ -15,5 +15,11 @@
   "website": "https://www.morstonhall.com/",
   "lat": 52.954697,
   "lng": 0.988074,
-  "placeId": "ChIJRfJcs1RE10cRklklgI_Ewec"
+  "placeId": "ChIJRfJcs1RE10cRklklgI_Ewec",
+  "michelinId": "192497",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Farrel Hirsch",
+  "chefSource": "site"
 }

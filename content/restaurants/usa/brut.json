@@ -14,5 +14,8 @@
   "website": "https://www.brutodenver.com/",
   "lat": 39.7527561,
   "lng": -104.9969767,
-  "placeId": "ChIJabPzMvx5bIcRuR-TMXhM1xQ"
+  "placeId": "ChIJabPzMvx5bIcRuR-TMXhM1xQ",
+  "michelinId": "1205052",
+  "chef": "Byron Gomez",
+  "chefSource": "michelin"
 }

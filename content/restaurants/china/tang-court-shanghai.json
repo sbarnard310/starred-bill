@@ -9,5 +9,12 @@
   "sourceType": "none",
   "website": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
   "lat": 31.208949,
-  "lng": 121.445604
+  "lng": 121.445604,
+  "michelinId": "506725",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Tony Su",
+  "chefSource": "michelin"
 }

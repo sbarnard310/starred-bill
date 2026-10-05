@@ -13,5 +13,9 @@
   "website": "https://www.le-cigalon.ch/",
   "lat": 46.1991216,
   "lng": 6.2209024,
-  "placeId": "ChIJqQVK2dBvjEcR8W7vGC2rNmI"
+  "placeId": "ChIJqQVK2dBvjEcR8W7vGC2rNmI",
+  "michelinId": "179243",
+  "diets": [
+    "vegetarian"
+  ]
 }

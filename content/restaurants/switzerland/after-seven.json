@@ -10,5 +10,13 @@
   "sourceType": "none",
   "website": "https://www.backstagehotel.ch/de/backstage-hotel/hotel/",
   "lat": 46.021962,
-  "lng": 7.7478621
+  "lng": 7.7478621,
+  "michelinId": "391030",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Florian Neubauer",
+  "chefSource": "michelin"
 }

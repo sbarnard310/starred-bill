@@ -13,5 +13,13 @@
   "website": "https://confusion-restaurant.com/it/",
   "lat": 41.1345678,
   "lng": 9.5375439,
-  "placeId": "ChIJm6te3yBB2RIRDj9H0f_GJy8"
+  "placeId": "ChIJm6te3yBB2RIRDj9H0f_GJy8",
+  "michelinId": "511146",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Italo Bassi",
+  "chefSource": "michelin"
 }

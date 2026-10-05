@@ -15,5 +15,14 @@
   "website": "https://www.maisondecoret.com",
   "lat": 46.1246273,
   "lng": 3.4192286,
-  "placeId": "ChIJ8Yb7dQzN9kcRQGzmbHog7S0"
+  "placeId": "ChIJ8Yb7dQzN9kcRQGzmbHog7S0",
+  "michelinId": "9470",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Jacques Decoret",
+  "chefSource": "michelin"
 }

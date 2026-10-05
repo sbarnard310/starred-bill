@@ -31,5 +31,9 @@
   "website": "https://eterrestaurant.com/",
   "lat": 40.393175,
   "lng": -3.691912,
-  "placeId": "ChIJl8Vm314nQg0RdSw5ZpYvHM4"
+  "placeId": "ChIJl8Vm314nQg0RdSw5ZpYvHM4",
+  "michelinId": "1195762",
+  "diets": [
+    "gluten-free"
+  ]
 }

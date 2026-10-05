@@ -15,5 +15,12 @@
   "website": "https://www.restaurant-elements.de/",
   "lat": 51.0808169,
   "lng": 13.7608648,
-  "placeId": "ChIJIVXumiDPCUcR4Bsn7EjbqMw"
+  "placeId": "ChIJIVXumiDPCUcR4Bsn7EjbqMw",
+  "michelinId": "351459",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Stephan Mießner",
+  "chefSource": "michelin"
 }

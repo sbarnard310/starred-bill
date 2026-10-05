@@ -12,5 +12,12 @@
   "website": "https://www.woeschi.ch/",
   "lat": 47.3405124,
   "lng": 8.5380296,
-  "placeId": "ChIJESuqj2OnmkcRpJr0HGTrUTU"
+  "placeId": "ChIJESuqj2OnmkcRpJr0HGTrUTU",
+  "michelinId": "1209387",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "David Klocksin",
+  "chefSource": "michelin"
 }

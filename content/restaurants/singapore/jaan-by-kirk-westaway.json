@@ -25,5 +25,12 @@
   "website": "https://www.jaan.sg/",
   "lat": 1.293387,
   "lng": 103.85314,
-  "placeId": "ChIJZ9ocfqYZ2jERwF5WxOIqsLw"
+  "placeId": "ChIJZ9ocfqYZ2jERwF5WxOIqsLw",
+  "michelinId": "501497",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Kirk Westaway",
+  "chefSource": "michelin"
 }

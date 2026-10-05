@@ -13,5 +13,11 @@
   "website": "https://www.wachter-foodbar.de/",
   "lat": 47.8506316,
   "lng": 12.3450485,
-  "placeId": "ChIJk8L9KhwTdkcRBigYcNx7urc"
+  "placeId": "ChIJk8L9KhwTdkcRBigYcNx7urc",
+  "michelinId": "1204299",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Dominik Wachter",
+  "chefSource": "michelin"
 }

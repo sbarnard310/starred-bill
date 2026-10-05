@@ -20,5 +20,12 @@
   "website": "https://www.sabero.nl",
   "lat": 51.3431989,
   "lng": 5.5599538,
-  "placeId": "ChIJ_SmR5UpLx0cRR14iYl2AUqI"
+  "placeId": "ChIJ_SmR5UpLx0cRR14iYl2AUqI",
+  "michelinId": "1209599",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Nico Boreas",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,10 @@
   "website": "https://www.freia-restaurant.com",
   "lat": 47.216871,
   "lng": -1.5364084,
-  "placeId": "ChIJE9O4vBTvBUgR1IPNAXzANdc"
+  "placeId": "ChIJE9O4vBTvBUgR1IPNAXzANdc",
+  "michelinId": "1213511",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ]
 }

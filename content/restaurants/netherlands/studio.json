@@ -14,5 +14,9 @@
   "website": "https://studio.restaurant/",
   "lat": 50.8487304,
   "lng": 5.6993143,
-  "placeId": "ChIJoXuiqLzpwEcR4Mf1UIP4448"
+  "placeId": "ChIJoXuiqLzpwEcR4Mf1UIP4448",
+  "michelinId": "1195888",
+  "diets": [
+    "vegetarian"
+  ]
 }

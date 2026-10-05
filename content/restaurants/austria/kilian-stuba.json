@@ -13,5 +13,8 @@
   "website": "https://arosahotels.de/hotels/kleinwalsertal/gastronomie/kilian-stuba.html",
   "lat": 47.3491179,
   "lng": 10.1721815,
-  "placeId": "ChIJVVWVKAKfnEcRw4kDY71cgY4"
+  "placeId": "ChIJVVWVKAKfnEcRw4kDY71cgY4",
+  "michelinId": "107207",
+  "chef": "Sascha Kemmerer and Hans-Jörg Frick",
+  "chefSource": "michelin"
 }

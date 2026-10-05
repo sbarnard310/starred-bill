@@ -22,5 +22,15 @@
   "website": "https://www.le-bernardin.com/",
   "lat": 40.761432,
   "lng": -73.981684,
-  "placeId": "ChIJV7QQ6kdZwokRax4615zpSGU"
+  "placeId": "ChIJV7QQ6kdZwokRax4615zpSGU",
+  "michelinId": "69438",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Eric Ripert",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,8 @@
   "website": "https://www.bulgarihotels.com/en_US/dubai/bars-and-restaurants/il-ristorante-niko-romito",
   "lat": 25.2104546,
   "lng": 55.2348847,
-  "placeId": "ChIJCdhLjwxDXz4RAeChgdPfVzI"
+  "placeId": "ChIJCdhLjwxDXz4RAeChgdPfVzI",
+  "michelinId": "1196980",
+  "chef": "Giacomo Amicucci",
+  "chefSource": "michelin"
 }

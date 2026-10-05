@@ -20,5 +20,11 @@
   "website": "https://www.kitchenw8.com/",
   "lat": 51.4990858,
   "lng": -0.1969096,
-  "placeId": "ChIJ1-By1fMPdkgRHFSgAdcS41Y"
+  "placeId": "ChIJ1-By1fMPdkgRHFSgAdcS41Y",
+  "michelinId": "263297",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Mark Kempson",
+  "chefSource": "site"
 }

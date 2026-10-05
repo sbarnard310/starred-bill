@@ -13,5 +13,12 @@
   "website": "https://www.bagagastronomico.com",
   "lat": 37.7668005,
   "lng": -3.7861942,
-  "placeId": "ChIJebipB3XXbQ0RX9KDUNCP8pw"
+  "placeId": "ChIJebipB3XXbQ0RX9KDUNCP8pw",
+  "michelinId": "550038",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Pedro Sánchez",
+  "chefSource": "michelin"
 }

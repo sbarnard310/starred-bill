@@ -30,5 +30,13 @@
   "website": "https://www.larevelia.com/",
   "lat": 43.264957,
   "lng": -2.753109,
-  "placeId": "ChIJoWm4gNU3Tg0RMLrR5QUsXGA"
+  "placeId": "ChIJoWm4gNU3Tg0RMLrR5QUsXGA",
+  "michelinId": "1217406",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Fernando González",
+  "chefSource": "michelin"
 }

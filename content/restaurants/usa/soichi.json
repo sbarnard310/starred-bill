@@ -14,5 +14,11 @@
   "website": "https://www.soichisushi.com",
   "lat": 32.7627776,
   "lng": -117.1418816,
-  "placeId": "ChIJfQEdreJV2YARnieTJoa2pGQ"
+  "placeId": "ChIJfQEdreJV2YARnieTJoa2pGQ",
+  "michelinId": "1183570",
+  "diets": [
+    "kosher"
+  ],
+  "chef": "Soichi Kadoya",
+  "chefSource": "michelin"
 }

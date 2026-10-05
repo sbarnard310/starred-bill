@@ -24,5 +24,13 @@
   "website": "https://pujol.com.mx/",
   "lat": 19.432376299999998,
   "lng": -99.1948132,
-  "placeId": "ChIJWZ2zdav40YURFvsU_rU3uaE"
+  "placeId": "ChIJWZ2zdav40YURFvsU_rU3uaE",
+  "michelinId": "1208201",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Enrique Olvera",
+  "chefSource": "michelin"
 }

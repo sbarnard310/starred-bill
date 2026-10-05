@@ -13,5 +13,12 @@
   "website": "https://www.auclubalpin.ch",
   "lat": 46.0304103,
   "lng": 7.1153946,
-  "placeId": "ChIJfxAEAQDLjkcRG0m2zC1TfQE"
+  "placeId": "ChIJfxAEAQDLjkcRG0m2zC1TfQE",
+  "michelinId": "1200146",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Mariano Buda",
+  "chefSource": "michelin"
 }

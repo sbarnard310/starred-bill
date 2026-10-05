@@ -13,5 +13,12 @@
   "website": "https://www.restaurantealamedafaro.com",
   "lat": 37.015965,
   "lng": -7.9285331,
-  "placeId": "ChIJufG0J2VTBQ0RsWJhdz2Gqmc"
+  "placeId": "ChIJufG0J2VTBQ0RsWJhdz2Gqmc",
+  "michelinId": "1198788",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Rui Sequeira",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,13 @@
   "website": "https://les-plaisirs-gourmands.com/",
   "lat": 48.5896587,
   "lng": 7.7633035,
-  "placeId": "ChIJO_f4TRXIlkcRHNh_MzRNS8E"
+  "placeId": "ChIJO_f4TRXIlkcRHNh_MzRNS8E",
+  "michelinId": "1000106",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "Guillaume Scheer",
+  "chefSource": "michelin"
 }

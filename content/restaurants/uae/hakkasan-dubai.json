@@ -12,5 +12,13 @@
   "website": "https://www.atlantis.com/dubai/dining/hakkasan",
   "lat": 25.132521,
   "lng": 55.1180364,
-  "placeId": "ChIJ_2ErNz9DXz4R-mulEek2sbI"
+  "placeId": "ChIJ_2ErNz9DXz4R-mulEek2sbI",
+  "michelinId": "516107",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
+  ]
 }

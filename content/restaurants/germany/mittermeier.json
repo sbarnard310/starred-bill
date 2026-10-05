@@ -13,5 +13,11 @@
   "website": "https://www.villamittermeier.de/",
   "lat": 49.3800816,
   "lng": 10.1851467,
-  "placeId": "ChIJiWI2h6OPmEcRBmrqkdAl0WM"
+  "placeId": "ChIJiWI2h6OPmEcRBmrqkdAl0WM",
+  "michelinId": "167333",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ]
 }

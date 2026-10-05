@@ -13,5 +13,11 @@
   "website": "https://novaela.nl/",
   "lat": 52.0139764,
   "lng": 4.3536044,
-  "placeId": "ChIJaReWNAm1xUcRHeqldFEHxHE"
+  "placeId": "ChIJaReWNAm1xUcRHeqldFEHxHE",
+  "michelinId": "1212670",
+  "diets": [
+    "halal"
+  ],
+  "chef": "Daniel Duijster Gomero",
+  "chefSource": "michelin"
 }

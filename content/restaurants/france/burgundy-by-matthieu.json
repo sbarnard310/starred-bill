@@ -23,5 +23,8 @@
   "website": "https://burgundybym.fr/",
   "lat": 45.7628677,
   "lng": 4.8321372,
-  "placeId": "ChIJd-wmoFXq9EcRUdhxLd2Bf98"
+  "placeId": "ChIJd-wmoFXq9EcRUdhxLd2Bf98",
+  "michelinId": "1191778",
+  "chef": "Matthieu Girardon",
+  "chefSource": "site"
 }

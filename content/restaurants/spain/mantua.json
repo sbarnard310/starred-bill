@@ -13,5 +13,13 @@
   "website": "https://www.restaurantemantua.com/",
   "lat": 36.6874327,
   "lng": -6.135958,
-  "placeId": "ChIJneTu6ZXGDQ0RA3sqA_aWp9w"
+  "placeId": "ChIJneTu6ZXGDQ0RA3sqA_aWp9w",
+  "michelinId": "563745",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Israel Ramos",
+  "chefSource": "michelin"
 }

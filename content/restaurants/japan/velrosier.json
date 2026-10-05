@@ -19,5 +19,11 @@
   "lunchType": "menu",
   "lunchNote": "Cheapest lunch course (others up to ¥33,000)",
   "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/ll584899"
+  "lunchSource": "https://omakaseje.com/restaurants/ll584899",
+  "michelinId": "1193046",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Yuji Iwasaki",
+  "chefSource": "site"
 }

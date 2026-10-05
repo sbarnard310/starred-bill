@@ -20,5 +20,12 @@
   "website": "https://www.sanmartinotreviglio.it/",
   "lat": 45.524103,
   "lng": 9.593707,
-  "placeId": "ChIJec2O3pNJgUcRppqmU7WRMVo"
+  "placeId": "ChIJec2O3pNJgUcRppqmU7WRMVo",
+  "michelinId": "155366",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Stefano Locatelli",
+  "chefSource": "michelin"
 }

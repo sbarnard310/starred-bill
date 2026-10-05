@@ -13,5 +13,12 @@
   "website": "https://www.mls.lu/fr/",
   "lat": 49.5977462,
   "lng": 6.2495447,
-  "placeId": "ChIJwUUSlKNGlUcRkh88I2nxTTg"
+  "placeId": "ChIJwUUSlKNGlUcRkh88I2nxTTg",
+  "michelinId": "210792",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

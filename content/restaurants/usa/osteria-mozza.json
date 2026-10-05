@@ -17,5 +17,12 @@
   "website": "https://www.osteriamozza.com/",
   "lat": 34.083425,
   "lng": -118.338686,
-  "placeId": "ChIJBacpEtO4woAR8TxewBOIolo"
+  "placeId": "ChIJBacpEtO4woAR8TxewBOIolo",
+  "michelinId": "559827",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Nancy Silverton",
+  "chefSource": "michelin"
 }

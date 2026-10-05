@@ -13,5 +13,11 @@
   "website": "https://www.tanglberg.at/",
   "lat": 48.0033128,
   "lng": 13.9235021,
-  "placeId": "ChIJU84HCe_6c0cRDXsqo8pY8JQ"
+  "placeId": "ChIJU84HCe_6c0cRDXsqo8pY8JQ",
+  "michelinId": "106229",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Maximilian Schellerer",
+  "chefSource": "michelin"
 }

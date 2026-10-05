@@ -26,5 +26,11 @@
   "website": "https://yongfuhk.com/",
   "lat": 22.2782025,
   "lng": 114.169856,
-  "placeId": "ChIJidd2DagBBDQR7ZT_w4lvMdY"
+  "placeId": "ChIJidd2DagBBDQR7ZT_w4lvMdY",
+  "michelinId": "1191533",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal"
+  ]
 }

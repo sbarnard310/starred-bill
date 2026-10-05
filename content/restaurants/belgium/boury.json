@@ -13,5 +13,10 @@
   "website": "https://www.restaurantboury.be/",
   "lat": 50.9374466,
   "lng": 3.1403981,
-  "placeId": "ChIJJWbHmcM1w0cRrzNcwfHum0M"
+  "placeId": "ChIJJWbHmcM1w0cRrzNcwfHum0M",
+  "michelinId": "313484",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ]
 }

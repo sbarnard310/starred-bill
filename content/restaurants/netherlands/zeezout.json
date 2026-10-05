@@ -12,5 +12,14 @@
   "website": "https://restaurantzeezout.nl/",
   "lat": 51.9061331,
   "lng": 4.4774595,
-  "placeId": "ChIJUzJk6GIzxEcR6E99pKVTKfI"
+  "placeId": "ChIJUzJk6GIzxEcR6E99pKVTKfI",
+  "michelinId": "114957",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ]
 }

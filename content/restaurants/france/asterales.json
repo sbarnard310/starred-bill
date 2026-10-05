@@ -15,5 +15,12 @@
   "website": "https://www.hotel-du-golf-vercors.fr/",
   "lat": 45.02677,
   "lng": 5.52001,
-  "placeId": "ChIJuXS6RrqQikcRSiJnM_nFNug"
+  "placeId": "ChIJuXS6RrqQikcRSiJnM_nFNug",
+  "michelinId": "1208982",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Ludovic Nardozza",
+  "chefSource": "michelin"
 }

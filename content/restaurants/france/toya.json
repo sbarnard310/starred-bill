@@ -15,5 +15,14 @@
   "website": "https://toya-restaurant.fr/",
   "lat": 49.0564967,
   "lng": 6.627029,
-  "placeId": "ChIJ103NJF_4lEcR58UJAL7XCz4"
+  "placeId": "ChIJ103NJF_4lEcR58UJAL7XCz4",
+  "michelinId": "325678",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Loïc Villemin",
+  "chefSource": "michelin"
 }

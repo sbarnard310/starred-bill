@@ -13,5 +13,12 @@
   "website": "https://www.eatrenalin.de/",
   "lat": 48.2617631,
   "lng": 7.7377402,
-  "placeId": "ChIJy0j0zHs7kUcRJT-AhjzF7Sc"
+  "placeId": "ChIJy0j0zHs7kUcRJT-AhjzF7Sc",
+  "michelinId": "1204033",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Peter Hagen-Wiest",
+  "chefSource": "michelin"
 }

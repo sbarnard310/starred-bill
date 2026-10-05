@@ -23,5 +23,8 @@
   "website": "https://lessentieldeauville.com/",
   "lat": 49.3600044,
   "lng": 0.079443,
-  "placeId": "ChIJXdetg67U4UcRIVgtxz04ThY"
+  "placeId": "ChIJXdetg67U4UcRIVgtxz04ThY",
+  "michelinId": "255041",
+  "chef": "Charles Thuillant",
+  "chefSource": "michelin"
 }

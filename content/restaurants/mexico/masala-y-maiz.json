@@ -16,5 +16,12 @@
   "website": "https://www.masalaymaiz.com/",
   "lat": 19.433015899999997,
   "lng": -99.148962,
-  "placeId": "ChIJmWtRD1z_0YURSJiNhdfktTY"
+  "placeId": "ChIJmWtRD1z_0YURSJiNhdfktTY",
+  "michelinId": "1210966",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Norma Listman and Saqib Keval",
+  "chefSource": "michelin"
 }

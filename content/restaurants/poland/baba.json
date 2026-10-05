@@ -13,5 +13,11 @@
   "website": "https://baba.wroclaw.pl/",
   "lat": 51.1127484,
   "lng": 17.0318258,
-  "placeId": "ChIJOcs5kx_pD0cRRbGleWjsjoE"
+  "placeId": "ChIJOcs5kx_pD0cRRbGleWjsjoE",
+  "michelinId": "1219184",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Beata Śniechowska",
+  "chefSource": "michelin"
 }

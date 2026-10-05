@@ -27,5 +27,8 @@
   "website": "https://www.malenagastronomia.com/",
   "lat": 41.656333,
   "lng": 0.389469,
-  "placeId": "ChIJp1zrEJQWpxIR28P4IC4qPwU"
+  "placeId": "ChIJp1zrEJQWpxIR28P4IC4qPwU",
+  "michelinId": "252969",
+  "chef": "Xixo Castaño",
+  "chefSource": "michelin"
 }

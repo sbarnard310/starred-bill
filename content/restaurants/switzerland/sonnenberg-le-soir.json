@@ -13,5 +13,12 @@
   "website": "https://sonnenberg.ch/restaurant/",
   "lat": 47.0442434,
   "lng": 8.2734005,
-  "placeId": "ChIJDzArBT37j0cR8HbQt9TqEEE"
+  "placeId": "ChIJDzArBT37j0cR8HbQt9TqEEE",
+  "michelinId": "1242614",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Luca Haase",
+  "chefSource": "michelin"
 }

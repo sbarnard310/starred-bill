@@ -22,5 +22,12 @@
   "website": "https://www.cailbruich.co.uk/",
   "lat": 55.877521,
   "lng": -4.289281,
-  "placeId": "ChIJbZg7c8xFiEgR2ycx_qleygw"
+  "placeId": "ChIJbZg7c8xFiEgR2ycx_qleygw",
+  "michelinId": "258122",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Lorna McNee",
+  "chefSource": "michelin"
 }

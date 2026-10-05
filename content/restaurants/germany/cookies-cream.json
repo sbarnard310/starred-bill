@@ -12,5 +12,14 @@
   "website": "https://www.cookiescream.com/",
   "lat": 52.5163221,
   "lng": 13.3880944,
-  "placeId": "ChIJV4_rtsRRqEcRIKoaNDZ0VnQ"
+  "placeId": "ChIJV4_rtsRRqEcRIKoaNDZ0VnQ",
+  "michelinId": "311485",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Patrick Ziegert",
+  "chefSource": "michelin"
 }

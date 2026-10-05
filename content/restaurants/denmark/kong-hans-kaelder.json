@@ -21,5 +21,13 @@
   "website": "https://konghans.dk/",
   "lat": 55.678742,
   "lng": 12.583996,
-  "placeId": "ChIJXdbkpBdTUkYRO6NpiMExk-w"
+  "placeId": "ChIJXdbkpBdTUkYRO6NpiMExk-w",
+  "michelinId": "112769",
+  "diets": [
+    "vegetarian",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Mark Lundgaard",
+  "chefSource": "site"
 }

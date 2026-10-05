@@ -13,5 +13,12 @@
   "website": "https://www.stephansstuben.com",
   "lat": 48.3969664,
   "lng": 10.0088519,
-  "placeId": "ChIJfUXdqPNmmUcRjaPuQCjaoG8"
+  "placeId": "ChIJfUXdqPNmmUcRjaPuQCjaoG8",
+  "michelinId": "76045",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Marco Langer",
+  "chefSource": "michelin"
 }

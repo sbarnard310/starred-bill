@@ -13,5 +13,10 @@
   "website": "https://restaurant-aro.dk",
   "lat": 55.4022012,
   "lng": 10.4081362,
-  "placeId": "ChIJ0W0vNR0gTUYR7Jnh72syIEY"
+  "placeId": "ChIJ0W0vNR0gTUYR7Jnh72syIEY",
+  "michelinId": "1192283",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

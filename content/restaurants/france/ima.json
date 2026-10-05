@@ -15,5 +15,13 @@
   "website": "https://ima.restaurant/",
   "lat": 48.106684,
   "lng": -1.684632,
-  "placeId": "ChIJy4xtHR3fDkgROUt7k6PBYfQ"
+  "placeId": "ChIJy4xtHR3fDkgROUt7k6PBYfQ",
+  "michelinId": "542006",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Julien Lemarié",
+  "chefSource": "michelin"
 }

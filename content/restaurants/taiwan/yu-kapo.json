@@ -29,5 +29,8 @@
   "lunchSource": "https://www.jeffiafang.com/2305031241-2/",
   "lat": 25.0539984,
   "lng": 121.5636541,
-  "placeId": "ChIJXVoEUeCrQjQRQLRks8Ezcf8"
+  "placeId": "ChIJXVoEUeCrQjQRQLRks8Ezcf8",
+  "michelinId": "1198592",
+  "chef": "Masa Chung",
+  "chefSource": "michelin"
 }

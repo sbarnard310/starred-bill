@@ -13,5 +13,8 @@
   "website": "https://www.wakuriya.com/",
   "lat": 37.52114,
   "lng": -122.3366,
-  "placeId": "ChIJw5XHiMifj4ARPKqzyYwc8kw"
+  "placeId": "ChIJw5XHiMifj4ARPKqzyYwc8kw",
+  "michelinId": "283968",
+  "chef": "Katsuhiro Yamasaki",
+  "chefSource": "michelin"
 }

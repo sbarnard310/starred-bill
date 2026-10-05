@@ -13,5 +13,11 @@
   "website": "https://www.hotelalteschule.de/",
   "lat": 53.3364693,
   "lng": 13.5034577,
-  "placeId": "ChIJxf0VSHTVq0cRwsBspKaB0xA"
+  "placeId": "ChIJxf0VSHTVq0cRwsBspKaB0xA",
+  "michelinId": "206355",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Daniel Schmidthaler",
+  "chefSource": "michelin"
 }

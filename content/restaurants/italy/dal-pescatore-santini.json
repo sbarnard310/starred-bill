@@ -23,5 +23,11 @@
   "website": "https://www.dalpescatore.com/",
   "lat": 45.171273,
   "lng": 10.356579,
-  "placeId": "ChIJEbzybxqzgUcRn1pQZjdmsH0"
+  "placeId": "ChIJEbzybxqzgUcRn1pQZjdmsH0",
+  "michelinId": "128768",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Nadia e Giovanni Santini",
+  "chefSource": "michelin"
 }

@@ -25,5 +25,10 @@
   "website": "https://www.georgesblanc.com",
   "lat": 46.2201083,
   "lng": 4.9894987,
-  "placeId": "ChIJQzj7WQFd80cRxBRybErBK6M"
+  "placeId": "ChIJQzj7WQFd80cRxBRybErBK6M",
+  "michelinId": "13587",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

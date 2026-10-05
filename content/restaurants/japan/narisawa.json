@@ -30,5 +30,14 @@
   "website": "https://www.narisawa-yoshihiro.com/",
   "lat": 35.671585,
   "lng": 139.722147,
-  "placeId": "ChIJrbAVNIOMGGARXNvkApcqvng"
+  "placeId": "ChIJrbAVNIOMGGARXNvkApcqvng",
+  "michelinId": "1194112",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Yoshihiro Narisawa",
+  "chefSource": "michelin"
 }

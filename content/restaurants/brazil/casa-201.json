@@ -12,5 +12,13 @@
   "website": "https://www.casa201.com.br",
   "lat": -22.964603,
   "lng": -43.220451,
-  "placeId": "ChIJ62puNIzVmwARX97FjP43YWc"
+  "placeId": "ChIJ62puNIzVmwARX97FjP43YWc",
+  "michelinId": "1213068",
+  "diets": [
+    "vegetarian",
+    "gluten-free",
+    "kosher"
+  ],
+  "chef": "João Paulo Frankenfeld",
+  "chefSource": "michelin"
 }

@@ -12,5 +12,14 @@
   "website": "https://www.deltarestaurant.gr",
   "lat": 37.9391772,
   "lng": 23.6913453,
-  "placeId": "ChIJPSgVfVa9oRQRwZ4mJ5kITvQ"
+  "placeId": "ChIJPSgVfVa9oRQRwZ4mJ5kITvQ",
+  "michelinId": "1199824",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "George Papazacharias",
+  "chefSource": "michelin"
 }

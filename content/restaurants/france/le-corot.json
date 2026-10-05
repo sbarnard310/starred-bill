@@ -19,5 +19,15 @@
   "website": "https://www.etangs-corot.com/",
   "lat": 48.8220267,
   "lng": 2.1830041,
-  "placeId": "ChIJT2wHyoF85kcRHMUUuRcPMek"
+  "placeId": "ChIJT2wHyoF85kcRHMUUuRcPMek",
+  "michelinId": "6824",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Rémi Chambard",
+  "chefSource": "michelin"
 }

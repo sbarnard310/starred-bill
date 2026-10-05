@@ -17,5 +17,14 @@
   "website": "https://www.floconsdesel.com",
   "lat": 45.8302404,
   "lng": 6.5969625,
-  "placeId": "ChIJ4xBKAP_ii0cR_L-Q0gDCjn4"
+  "placeId": "ChIJ4xBKAP_ii0cR_L-Q0gDCjn4",
+  "michelinId": "4717",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Emmanuel Renaut",
+  "chefSource": "site"
 }

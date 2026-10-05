@@ -13,5 +13,12 @@
   "website": "https://www.bachofer.info/",
   "lat": 48.8323223,
   "lng": 9.316526,
-  "placeId": "ChIJX4-iWK_ImUcRGyFXXAvpHi4"
+  "placeId": "ChIJX4-iWK_ImUcRGyFXXAvpHi4",
+  "michelinId": "78518",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Bernd Bachofer",
+  "chefSource": "michelin"
 }

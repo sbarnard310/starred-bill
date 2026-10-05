@@ -17,5 +17,13 @@
   "website": "https://www.losfelixmiami.com/",
   "lat": 25.727677,
   "lng": -80.242818,
-  "placeId": "ChIJ3YT7i5K32YgRvjbujmZU6Ak"
+  "placeId": "ChIJ3YT7i5K32YgRvjbujmZU6Ak",
+  "michelinId": "1199851",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Sebastián Vargas",
+  "chefSource": "michelin"
 }

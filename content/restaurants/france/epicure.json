@@ -25,5 +25,12 @@
   "website": "https://www.oetkerhotels.com/fr/hotels/le-bristol-paris/restaurants-bars/epicure/",
   "lat": 48.8716826,
   "lng": 2.3147289,
-  "placeId": "ChIJVeUHqupv5kcRDHPinmB3LtU"
+  "placeId": "ChIJVeUHqupv5kcRDHPinmB3LtU",
+  "michelinId": "6106",
+  "diets": [
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Arnaud Faye",
+  "chefSource": "michelin"
 }

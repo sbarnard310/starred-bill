@@ -22,5 +22,12 @@
   "website": "https://donjuan2.yachtsdeparis.fr/",
   "lat": 48.8630387,
   "lng": 2.2959142,
-  "placeId": "ChIJV893WNdx5kcRId2B1-rDEZU"
+  "placeId": "ChIJV893WNdx5kcRId2B1-rDEZU",
+  "michelinId": "1199170",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Frédéric Anton",
+  "chefSource": "michelin"
 }

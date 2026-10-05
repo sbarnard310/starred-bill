@@ -15,5 +15,11 @@
   "website": "https://www.ly-au14fevrier.com/",
   "lat": 45.7622206,
   "lng": 4.8263815,
-  "placeId": "ChIJo5P-gavr9EcRCo1zWC9T0wU"
+  "placeId": "ChIJo5P-gavr9EcRCo1zWC9T0wU",
+  "michelinId": "281900",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Tsuyoshi Arai",
+  "chefSource": "michelin"
 }

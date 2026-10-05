@@ -26,5 +26,13 @@
   "website": "https://www.koyshunka.com/KoyShunka/esp_home.html",
   "lat": 41.385908,
   "lng": 2.175425,
-  "placeId": "ChIJzwnCHfqipBIRBQbVUnQ5gXU"
+  "placeId": "ChIJzwnCHfqipBIRBQbVUnQ5gXU",
+  "michelinId": "303784",
+  "diets": [
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Hideki Matsuhisa",
+  "chefSource": "michelin"
 }

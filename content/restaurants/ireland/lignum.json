@@ -26,5 +26,9 @@
   "website": "https://lignum.ie/",
   "lat": 53.236819,
   "lng": -8.552184,
-  "placeId": "ChIJyST3Y4h5XEgRUP3ft5B0bc4"
+  "placeId": "ChIJyST3Y4h5XEgRUP3ft5B0bc4",
+  "michelinId": "1193439",
+  "diets": [
+    "vegetarian"
+  ]
 }

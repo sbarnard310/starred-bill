@@ -13,5 +13,11 @@
   "website": "https://www.restaurant-mota.com/",
   "lat": 55.9097107,
   "lng": 11.6594175,
-  "placeId": "ChIJn9NWleZ3UkYRQ881BFLMkQc"
+  "placeId": "ChIJn9NWleZ3UkYRQ881BFLMkQc",
+  "michelinId": "1197019",
+  "diets": [
+    "vegetarian"
+  ],
+  "chef": "Claus Henriksen",
+  "chefSource": "michelin"
 }

@@ -21,5 +21,15 @@
   "website": "https://www.manoirdelaregate.com/",
   "lat": 47.293636,
   "lng": -1.5265172,
-  "placeId": "ChIJL_JUx83xBUgRL-TkTBCMoI4"
+  "placeId": "ChIJL_JUx83xBUgRL-TkTBCMoI4",
+  "michelinId": "5290",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal",
+    "kosher"
+  ],
+  "chef": "Mathieu Pérou",
+  "chefSource": "michelin"
 }

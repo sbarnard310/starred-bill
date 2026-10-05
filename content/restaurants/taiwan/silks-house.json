@@ -30,5 +30,9 @@
   "website": "https://www.regenttaiwan.com/dining/silks-house",
   "lat": 25.0542098,
   "lng": 121.5239459,
-  "placeId": "ChIJ5ymH9mipQjQRvCXzKzCR3OI"
+  "placeId": "ChIJ5ymH9mipQjQRvCXzKzCR3OI",
+  "michelinId": "550860",
+  "diets": [
+    "vegetarian"
+  ]
 }

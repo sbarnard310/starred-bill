@@ -15,5 +15,8 @@
   "website": "https://www.restaurantjulienbinz.com",
   "lat": 48.1256598,
   "lng": 7.2828846,
-  "placeId": "ChIJOwfYiyhhkUcRAkCDBYqDW8M"
+  "placeId": "ChIJOwfYiyhhkUcRAkCDBYqDW8M",
+  "michelinId": "509704",
+  "chef": "Julien Binz",
+  "chefSource": "michelin"
 }

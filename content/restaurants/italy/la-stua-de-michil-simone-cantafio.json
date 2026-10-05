@@ -15,5 +15,12 @@
   "website": "https://www.lastuademichil.it/it/",
   "lat": 46.5471597,
   "lng": 11.8762348,
-  "placeId": "ChIJobhX9gU_eEcRSIoHkcV5l-A"
+  "placeId": "ChIJobhX9gU_eEcRSIoHkcV5l-A",
+  "michelinId": "124441",
+  "diets": [
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Simone Cantafio",
+  "chefSource": "michelin"
 }

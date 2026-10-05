@@ -18,5 +18,13 @@
   "website": "https://www.restaurant-racines-nice.com",
   "lat": 43.7087319,
   "lng": 7.2624907,
-  "placeId": "ChIJIc-mUOPRzRIRnNlsIxBDGn0"
+  "placeId": "ChIJIc-mUOPRzRIRnNlsIxBDGn0",
+  "michelinId": "1192760",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian-menu",
+    "vegetarian"
+  ],
+  "chef": "Bruno Cirino",
+  "chefSource": "site"
 }

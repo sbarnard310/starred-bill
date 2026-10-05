@@ -12,5 +12,8 @@
   "website": "https://kaidosushi.es/",
   "lat": 39.470454,
   "lng": -0.3575637,
-  "placeId": "ChIJpWeGRw5JYA0RWBgBYbijiWQ"
+  "placeId": "ChIJpWeGRw5JYA0RWBgBYbijiWQ",
+  "michelinId": "1194958",
+  "chef": "Yoshikazu Yanome",
+  "chefSource": "michelin"
 }

@@ -28,5 +28,12 @@
   "website": "https://atemporestaurant.com/es/",
   "lat": 41.390986,
   "lng": 2.152388,
-  "placeId": "ChIJHbrt5pLnuhIRtGv2L0MoImQ"
+  "placeId": "ChIJHbrt5pLnuhIRtGv2L0MoImQ",
+  "michelinId": "1196425",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ],
+  "chef": "Iñaki Aldrey",
+  "chefSource": "michelin"
 }

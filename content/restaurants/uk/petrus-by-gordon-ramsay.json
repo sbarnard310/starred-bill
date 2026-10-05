@@ -20,5 +20,10 @@
   "website": "https://www.gordonramsayrestaurants.com/petrus",
   "lat": 51.4995628,
   "lng": -0.1567357,
-  "placeId": "ChIJBWbG7DsFdkgRUoGawp2ooK8"
+  "placeId": "ChIJBWbG7DsFdkgRUoGawp2ooK8",
+  "michelinId": "284688",
+  "diets": [
+    "vegetarian",
+    "vegan"
+  ]
 }

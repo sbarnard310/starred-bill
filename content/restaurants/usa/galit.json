@@ -17,5 +17,13 @@
   "website": "https://www.galitrestaurant.com/",
   "lat": 41.92607,
   "lng": -87.64959,
-  "placeId": "ChIJ37gaSeXTD4gR4G_7yDPUKME"
+  "placeId": "ChIJ37gaSeXTD4gR4G_7yDPUKME",
+  "michelinId": "1181435",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Zach Engel",
+  "chefSource": "michelin"
 }

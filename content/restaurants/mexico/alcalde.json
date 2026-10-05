@@ -20,5 +20,13 @@
   "website": "https://alcalde.com.mx/",
   "lat": 20.6793273,
   "lng": -103.3897964,
-  "placeId": "ChIJSxhI0W6uKIQRLbizqZhTQuQ"
+  "placeId": "ChIJSxhI0W6uKIQRLbizqZhTQuQ",
+  "michelinId": "1243800",
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Francisco Ruano",
+  "chefSource": "michelin"
 }

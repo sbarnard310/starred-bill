@@ -13,5 +13,11 @@
   "website": "https://www.restauranteraulresino.com/",
   "lat": 40.4221851,
   "lng": 0.4293978,
-  "placeId": "ChIJV4VR5aJFoBIR4Juzq61XzAI"
+  "placeId": "ChIJV4VR5aJFoBIR4Juzq61XzAI",
+  "michelinId": "468137",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Raúl Resino",
+  "chefSource": "michelin"
 }

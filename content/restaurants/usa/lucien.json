@@ -13,5 +13,8 @@
   "website": "https://luciensd.com/",
   "lat": 32.8464595,
   "lng": -117.2741357,
-  "placeId": "ChIJObi7SjUD3IAR6J0Sbt-VQtA"
+  "placeId": "ChIJObi7SjUD3IAR6J0Sbt-VQtA",
+  "michelinId": "1246218",
+  "chef": "Elijah Arizmendi",
+  "chefSource": "michelin"
 }

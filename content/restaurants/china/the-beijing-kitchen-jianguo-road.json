@@ -6,9 +6,11 @@
   "cuisine": "Cantonese",
   "rating": 4.5,
   "reviews": 10,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 384,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/1/15904160.html",
   "lat": 39.9092255,
   "lng": 116.4725228,
   "placeId": "ChIJFyv8YU2s8TUR3GZM3c_73nU",
@@ -16,7 +18,7 @@
   "diets": [
     "vegan"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "北京厨房（建国路）"
 }

@@ -6,9 +6,11 @@
   "cuisine": "French Contemporary",
   "rating": 4.6,
   "reviews": 7,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 1520,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/26/133914586.html",
   "website": "https://www.mandarinoriental.com/en/shenzhen/futian/dine/opus-388",
   "lat": 22.5594715,
   "lng": 114.0668141,
@@ -16,6 +18,6 @@
   "michelinId": "1244768",
   "chef": "Alessio Durante",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "时尚法国菜"
 }

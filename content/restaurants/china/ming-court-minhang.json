@@ -6,9 +6,11 @@
   "cuisine": "Cantonese",
   "rating": 5,
   "reviews": 7,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 613,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/412587.html",
   "website": "https://www.cordishotels.com/en/shanghai-hongqiao/dine/ming-court/",
   "lat": 31.19512,
   "lng": 121.31633,
@@ -16,7 +18,7 @@
   "michelinId": "570629",
   "chef": "Paul Qian",
   "chefSource": "site",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "明阁（闵行）"
 }

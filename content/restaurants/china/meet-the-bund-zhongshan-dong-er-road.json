@@ -6,9 +6,11 @@
   "cuisine": "Fujian",
   "rating": 4.6,
   "reviews": 108,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 828,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/23043277.html",
   "lat": 31.228818,
   "lng": 121.493593,
   "placeId": "ChIJXb1uXPNwsjURH7Es8Zaq9vw",
@@ -16,7 +18,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "闽菜",
   "nameZhs": "遇外滩（中山东二路）",
   "chef": "Chen Zhiping",

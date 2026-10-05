@@ -5,9 +5,11 @@
   "address": "39F, The Ritz-Carlton, 18 Zhongshan Road, Xuanwu, 210018, Nanjing",
   "stars": 1,
   "cuisine": "Cantonese",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 622,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/nanjing9/25038997.html",
   "website": "https://www.ritzcarlton.com/en/hotels/nkgrz-the-ritz-carlton-nanjing/overview/",
   "lat": 32.0470851,
   "lng": 118.7795738,
@@ -15,7 +17,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "帝粤轩",
   "areaZhs": "南京",

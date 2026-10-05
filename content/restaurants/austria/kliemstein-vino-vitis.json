@@ -12,8 +12,11 @@
   "rating": 4.9,
   "reviews": 172,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu",
+  "wine": 99,
+  "sourceType": "site",
+  "source": "https://www.kliemstein-linz.at/",
   "website": "https://www.kliemstein-linz.at/",
   "lat": 48.3063856,
   "lng": 14.2831305,
@@ -24,6 +27,6 @@
   ],
   "chef": "Andreas Zika",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Klassische Küche"
 }

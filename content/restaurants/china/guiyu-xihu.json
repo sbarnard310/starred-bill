@@ -4,16 +4,18 @@
   "address": "2-1 Manjuelong Road, Xihu, Hangzhou",
   "stars": 1,
   "cuisine": "Zhejiang",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 638,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/hangzhou14/5142462.html",
   "lat": 30.21818,
   "lng": 120.12294,
   "michelinId": "1199474",
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "浙江菜",
   "nameZhs": "桂语山房（西湖）"
 }

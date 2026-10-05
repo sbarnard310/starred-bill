@@ -4,9 +4,11 @@
   "address": "2F, White Swan Hotel, 1 Shamian South Street, Liwan, Guangzhou",
   "stars": 1,
   "cuisine": "Dim Sum",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 248,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/152/15281406.html",
   "website": "https://www.whiteswanhotel.com/",
   "lat": 23.108321,
   "lng": 113.237649,
@@ -14,7 +16,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "点心",
   "nameZhs": "宏图府"
 }

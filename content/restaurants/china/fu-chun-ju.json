@@ -6,9 +6,11 @@
   "cuisine": "Cantonese",
   "rating": 4.2,
   "reviews": 17,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 618,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/1/22456256.html",
   "website": "https://thepuxuan.com/en/beijing-wangfujing-luxury-hotel-dining/cantonese-cuisine-fu-chun-ju-restaurant/",
   "lat": 39.922423,
   "lng": 116.403739,
@@ -20,7 +22,7 @@
   ],
   "chef": "Yeung Wai Kit",
   "chefSource": "site",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "富春居"
 }

@@ -4,9 +4,11 @@
   "address": "2F, Four Seasons Hotel, 48 Liangmaqiao Road, Chaoyang, Beijing",
   "stars": 1,
   "cuisine": "Cantonese",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 632,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/1/4965382.html",
   "website": "https://www.fourseasons.com/beijing/dining/restaurants/cai_yi_xuan",
   "lat": 39.9489154,
   "lng": 116.4604404,
@@ -14,7 +16,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "采逸轩",
   "chef": "Li Qiang",

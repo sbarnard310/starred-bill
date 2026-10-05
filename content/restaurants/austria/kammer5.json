@@ -12,8 +12,11 @@
   "rating": 4.8,
   "reviews": 118,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "wine": 74,
+  "sourceType": "site",
+  "source": "https://www.kammer5.at/menue-k5/",
   "website": "https://www.kammer5.at/",
   "lat": 48.3072856,
   "lng": 13.4297995,
@@ -23,7 +26,7 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
   "cuisineDe": "Moderne Küche",
   "chef": "Adrian Schlager",
   "chefSource": "press"

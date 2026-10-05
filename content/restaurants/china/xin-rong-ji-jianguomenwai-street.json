@@ -4,9 +4,11 @@
   "address": "5F, Tower A, Yintai Centre, 2 Jianguomenwai Street, Chaoyang, Beijing",
   "stars": 1,
   "cuisine": "Taizhou",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 650,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/1/22514434.html",
   "lat": 39.906171,
   "lng": 116.453263,
   "michelinId": "1186817",
@@ -16,7 +18,7 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "台州菜",
   "nameZhs": "新荣记（建国门外大街）"
 }

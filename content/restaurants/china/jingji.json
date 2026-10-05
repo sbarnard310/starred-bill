@@ -4,16 +4,18 @@
   "address": "2F, The Ritz-Carlton Hotel, 83A Jianguo Road, Chaoyang, Beijing",
   "stars": 2,
   "cuisine": "Beijing Cuisine",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 1280,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/1/25032876.html",
   "lat": 39.9092647,
   "lng": 116.4747033,
   "michelinId": "1192182",
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "京菜",
   "nameZhs": "京季"
 }

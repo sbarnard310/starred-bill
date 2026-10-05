@@ -6,9 +6,11 @@
   "cuisine": "Vegetarian",
   "rating": 4.4,
   "reviews": 158,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 1016,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/1/6946766.html",
   "website": "https://www.kingsjoy.com",
   "lat": 39.946681,
   "lng": 116.410004,
@@ -22,7 +24,7 @@
   ],
   "chef": "Gary Yin",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "素食",
   "nameZhs": "京兆尹"
 }

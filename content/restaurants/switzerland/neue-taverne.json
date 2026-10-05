@@ -9,6 +9,11 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunch": 42,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.neuetaverne.ch/media/tav_290926_business_lunch_en_.pdf",
   "website": "https://www.neuetaverne.ch/de/",
   "lat": 47.3720798,
   "lng": 8.5402735,
@@ -27,5 +32,8 @@
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
   "cuisineFr": "Cuisine végétarienne",
   "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
-  "cuisineIt": "Vegetariana"
+  "cuisineIt": "Vegetariana",
+  "lunchNoteDe": "Mittagsmenü",
+  "lunchNoteFr": "Menu déjeuner",
+  "lunchNoteIt": "Menu pranzo"
 }

@@ -4,9 +4,11 @@
   "address": "2F, LN Garden Hotel, 368 Huanshi East Road, Yuexiu, Guangzhou",
   "stars": 2,
   "cuisine": "Innovative",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 2094,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/152/25048395.html",
   "website": "https://gz.taian-table.cn/",
   "lat": 23.1380432,
   "lng": 113.2807021,
@@ -14,7 +16,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "创新菜",
   "nameZhs": "泰安门",
   "chef": "Stefan Stiller",

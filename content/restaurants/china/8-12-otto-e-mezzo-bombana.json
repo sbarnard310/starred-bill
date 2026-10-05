@@ -6,9 +6,11 @@
   "cuisine": "Italian",
   "rating": 4.3,
   "reviews": 43,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 1681,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/4935776.html",
   "website": "https://www.ottoemezzobombana.com/branch/shanghai/",
   "lat": 31.244394,
   "lng": 121.48346,
@@ -16,6 +18,6 @@
   "michelinId": "506702",
   "chef": "Umberto Bombana",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "意大利菜"
 }

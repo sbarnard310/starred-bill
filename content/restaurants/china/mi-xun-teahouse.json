@@ -6,9 +6,11 @@
   "cuisine": "Vegetarian",
   "rating": 4.7,
   "reviews": 9,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 235,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/104/24963287.html",
   "website": "https://www.upperhouse.com/en/chengdu/restaurants-and-bars/mi-xun-teahouse/",
   "lat": 30.654727,
   "lng": 104.081984,
@@ -23,7 +25,7 @@
   ],
   "chef": "Steven Tang/ 唐先印",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "素食",
   "nameZhs": "谧寻茶室"
 }

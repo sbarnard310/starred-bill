@@ -6,9 +6,11 @@
   "cuisine": "Sichuan",
   "rating": 4.6,
   "reviews": 21,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 1916,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/104/5238621.html",
   "lat": 30.6691974,
   "lng": 104.0561672,
   "placeId": "ChIJ3yrQyCnF7zYR3AQi0SIjESg",
@@ -22,7 +24,7 @@
   ],
   "chef": "Lan Guijun",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "川菜",
   "nameZhs": "玉芝兰"
 }

@@ -4,9 +4,11 @@
   "address": "4F, Rosewood Hotel, Jing Guang Centre, Hujialou, 1 Chaoyangmenwai Street, Chaoyang, Beijing",
   "stars": 1,
   "cuisine": "Cantonese",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 838,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/1/24919324.html",
   "website": "https://www.rosewoodhotels.com/en/beijing/dining/the-house-of-dynasties",
   "lat": 39.9188696,
   "lng": 116.4541092,
@@ -14,7 +16,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "龙庭",
   "chef": "Tan Shiye",

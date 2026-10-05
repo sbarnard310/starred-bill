@@ -4,9 +4,11 @@
   "address": "B1 Level, International Finance Centre, 11 Jinrong Street, Xicheng, Beijing",
   "stars": 1,
   "cuisine": "Taizhou",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 488,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/1/4959667.html",
   "lat": 39.917499,
   "lng": 116.353313,
   "michelinId": "1186815",
@@ -14,7 +16,7 @@
     "vegetarian",
     "halal"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "台州菜",
   "nameZhs": "新荣记（金融大街）"
 }

@@ -4,9 +4,11 @@
   "address": "Shop 109, Shanghai Centre, 1376 West Nanjing Road, Jingan, Shanghai",
   "stars": 1,
   "cuisine": "Cantonese",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 466,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/139038524.html",
   "lat": 31.2280406,
   "lng": 121.4468481,
   "michelinId": "1215114",
@@ -15,7 +17,7 @@
     "vegan",
     "gluten-free"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "景煊"
 }

@@ -4,9 +4,11 @@
   "address": "No. 5, Dazhongxiuqi Village, west area of Xixi National Wetland Park, Tianmushan Road, Yuhang, Hangzhou",
   "stars": 1,
   "cuisine": "Taizhou",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 799,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/14/21397558.html",
   "website": "https://www.xinrongji.com/list",
   "lat": 30.2636133,
   "lng": 120.0971693,
@@ -15,7 +17,7 @@
     "vegetarian",
     "halal"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "台州菜",
   "nameZhs": "新荣记"
 }

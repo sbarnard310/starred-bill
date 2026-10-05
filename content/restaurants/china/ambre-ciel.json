@@ -4,9 +4,11 @@
   "address": "1F, Meifan Plaza Proya, 588 Xixi Road, Xihu, Hangzhou",
   "stars": 1,
   "cuisine": "Innovative",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 1513,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/westlake2026903/131059850.html",
   "website": "https://www.ambreciel.cn",
   "lat": 30.2652928,
   "lng": 120.0982588,
@@ -16,7 +18,7 @@
   ],
   "chef": "Alan Yu",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "创新菜",
   "nameZhs": "珀"
 }

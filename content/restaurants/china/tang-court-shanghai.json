@@ -8,9 +8,11 @@
   "changeNote": "Gained a second star",
   "changeDate": "2026-04",
   "changeNoteZhs": "晋升二星",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 880,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/shanghai2/5009076-hotels.html",
   "website": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
   "lat": 31.208949,
   "lng": 121.445604,
@@ -21,7 +23,7 @@
   ],
   "chef": "Tony Su",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "唐阁"
 }

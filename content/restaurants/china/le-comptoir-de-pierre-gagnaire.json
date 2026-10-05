@@ -4,9 +4,11 @@
   "address": "Capella, Jian Ye Li, 480 West Jianguo Road, Xuhui, 200031, Shanghai",
   "stars": 1,
   "cuisine": "French Contemporary",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 1134,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/16991871.html",
   "website": "https://capellahotels.com/en/capella-shanghai/dining/le-comptoir-de-pierre-gagnaire",
   "lat": 31.221621,
   "lng": 121.459782,
@@ -17,6 +19,6 @@
   ],
   "chef": "Pierre Gagnaire",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "时尚法国菜"
 }

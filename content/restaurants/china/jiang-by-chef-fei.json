@@ -6,9 +6,11 @@
   "cuisine": "Cantonese",
   "rating": 4,
   "reviews": 34,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 671,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/152/7206268.html",
   "website": "https://www.mandarinoriental.com/en/guangzhou/tianhe/dine/jiang-by-chef-fei",
   "lat": 23.1371978,
   "lng": 113.327758,
@@ -19,7 +21,7 @@
     "vegan",
     "halal"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "江"
 }

@@ -6,9 +6,11 @@
   "cuisine": "Cantonese",
   "rating": 4.1,
   "reviews": 24,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 756,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/8587581.html",
   "website": "https://www.ritzcarlton.com/en/hotels/shasz-the-ritz-carlton-shanghai-pudong/dining/",
   "lat": 31.2384407,
   "lng": 121.4968159,
@@ -21,7 +23,7 @@
   ],
   "chef": "Angelo Aglianó",
   "chefSource": "site",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "金轩"
 }

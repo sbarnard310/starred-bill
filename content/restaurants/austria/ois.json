@@ -8,8 +8,15 @@
   "rating": 4.8,
   "reviews": 497,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu (other menus from €98)",
+  "sourceType": "site",
+  "source": "https://www.muehltalhof.at/kueche/",
+  "lunch": 98,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.muehltalhof.at/kueche/",
   "website": "https://www.muehltalhof.at/",
   "lat": 48.4814599,
   "lng": 14.0023486,
@@ -21,6 +28,7 @@
   ],
   "chef": "Philip Rachinger",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Moderne Küche"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 98 €)",
+  "cuisineDe": "Moderne Küche",
+  "lunchNoteDe": "Mittagsmenü"
 }

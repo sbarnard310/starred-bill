@@ -8,8 +8,15 @@
   "rating": 4.8,
   "reviews": 357,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from CHF 80)",
+  "sourceType": "site",
+  "source": "https://le-cigalon.ch/carte-menu/",
+  "lunch": 64,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://le-cigalon.ch/carte-menu/",
   "website": "https://www.le-cigalon.ch/",
   "lat": 46.1991216,
   "lng": 6.2209024,
@@ -18,10 +25,13 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 80)",
   "cuisineDe": "Fisch und Meeresfrüchte",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 80)",
   "cuisineFr": "Poissons et fruits de mer",
-  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
-  "cuisineIt": "Pesce e frutti di mare"
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 80)",
+  "cuisineIt": "Pesce e frutti di mare",
+  "lunchNoteDe": "Mittagsmenü",
+  "lunchNoteFr": "Menu déjeuner",
+  "lunchNoteIt": "Menu pranzo"
 }

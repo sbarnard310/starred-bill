@@ -4,9 +4,11 @@
   "address": "Shop 602, 6F, iapm, 999 Middle Huaihai Road, Xuhui, Shanghai",
   "stars": 1,
   "cuisine": "Chinese Contemporary",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 412,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/7525915.html",
   "website": "https://www.dadongdadong.com/",
   "lat": 31.230507,
   "lng": 121.437471,
@@ -14,7 +16,7 @@
   "diets": [
     "vegetarian-menu"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "时尚中国菜",
   "nameZhs": "大董（徐汇）",
   "chef": "Dong Zhenxiang",

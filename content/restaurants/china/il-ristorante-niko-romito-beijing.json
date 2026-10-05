@@ -6,9 +6,11 @@
   "cuisine": "Italian",
   "rating": 4.4,
   "reviews": 111,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 957,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/1/18590435.html",
   "website": "https://www.bulgarihotels.com/en_US/beijing/dining/il-ristorante-niko-romito",
   "lat": 39.9463887,
   "lng": 116.4515797,
@@ -22,6 +24,6 @@
   ],
   "chef": "Niko Romito",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "意大利菜"
 }

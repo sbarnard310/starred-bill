@@ -6,9 +6,11 @@
   "cuisine": "Taizhou",
   "rating": 4.3,
   "reviews": 8,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 1996,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/5005791.html",
   "website": "https://www.xinrongji.com/list",
   "lat": 31.22789,
   "lng": 121.45071,
@@ -21,7 +23,7 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "台州菜",
   "nameZhs": "荣府宴"
 }

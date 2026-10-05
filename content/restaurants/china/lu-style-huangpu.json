@@ -4,9 +4,11 @@
   "address": "Room 207, 2F, Uni Elite, Lane 838, South Huangpi Road, Huangpu, Shanghai",
   "stars": 1,
   "cuisine": "Shandong",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 858,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/22577874.html",
   "lat": 31.213823,
   "lng": 121.472565,
   "michelinId": "1203592",
@@ -15,7 +17,7 @@
     "vegan",
     "halal"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "鲁菜",
   "nameZhs": "鲁采（黄浦）"
 }

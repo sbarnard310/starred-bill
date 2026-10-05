@@ -4,16 +4,18 @@
   "address": "3F, 55 South Wulumuqi Road, Xuhui, 200031, Shanghai",
   "stars": 2,
   "cuisine": "Cantonese",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 633,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/16559122.html",
   "lat": 31.208252,
   "lng": 121.4441427,
   "michelinId": "563684",
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "吉品轩"
 }

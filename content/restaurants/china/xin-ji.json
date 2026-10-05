@@ -6,9 +6,11 @@
   "cuisine": "Cantonese",
   "rating": 4.5,
   "reviews": 16,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 158,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/152/5323896.html",
   "lat": 23.114612,
   "lng": 113.25478,
   "placeId": "ChIJ1YCof5f4AjQRwg5Xw99AZG4",
@@ -16,7 +18,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
   "nameZhs": "信记海鲜饭店"
 }

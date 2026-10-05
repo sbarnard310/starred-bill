@@ -7,9 +7,11 @@
   "cuisine": "Fujian",
   "rating": 4.8,
   "reviews": 4,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 318,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/fuzhou164/7821893-food.html",
   "lat": 26.0843624,
   "lng": 119.2890354,
   "placeId": "ChIJf8lxsD1RQDQRuAe3MSxOEzA",
@@ -18,7 +20,7 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "闽菜",
   "nameZhs": "文儒九号",
   "areaZhs": "福州"

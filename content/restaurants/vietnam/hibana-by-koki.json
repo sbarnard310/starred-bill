@@ -1,0 +1,17 @@
+{
+  "name": "Hibana by Koki",
+  "city": "vietnam",
+  "area": "Hanoi",
+  "address": "B1F, Capella Hanoi, 11 Le Phung Hieu Street, Hoan Kiem Ward, 100000, Hanoi",
+  "stars": 1,
+  "cuisine": "Teppanyaki",
+  "rating": 4.7,
+  "reviews": 280,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://capellahotels.com/en/capella-hanoi/dining/koki",
+  "lat": 21.0258394,
+  "lng": 105.8565699,
+  "placeId": "ChIJy_ZMBPerNTERliJFmPbKHOU"
+}

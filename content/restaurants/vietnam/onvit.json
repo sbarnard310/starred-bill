@@ -1,0 +1,17 @@
+{
+  "name": "ONVIT",
+  "city": "vietnam",
+  "area": "Hanoi",
+  "address": "3F, Grand Plaza Hotel, 117 Tran Duy Hung Street, Yen Hoa Ward, 100000, Hanoi",
+  "stars": 1,
+  "cuisine": "Korean Contemporary",
+  "rating": 4.5,
+  "reviews": 56,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://onvithanoi.com",
+  "lat": 21.0074302,
+  "lng": 105.7968181,
+  "placeId": "ChIJbehikumrNTERg118vNT_FG0"
+}

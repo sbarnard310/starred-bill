@@ -1,0 +1,16 @@
+{
+  "name": "Ănăn Saigon",
+  "city": "ho-chi-minh-city",
+  "address": "89 Ton That Dam Street, Saigon Ward, 710000, Ho Chi Minh City",
+  "stars": 1,
+  "cuisine": "Vietnamese Contemporary",
+  "rating": 4.1,
+  "reviews": 2442,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://anansaigon.com",
+  "lat": 10.7719227,
+  "lng": 106.7028706,
+  "placeId": "ChIJZ_dpJ0EvdTER5wOl-TLvN-8"
+}

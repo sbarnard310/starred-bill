@@ -1,0 +1,16 @@
+{
+  "name": "Upstairs",
+  "city": "ho-chi-minh-city",
+  "address": "36 Nguyen Ba Huan Street, An Khanh Ward, 700000, Ho Chi Minh City",
+  "stars": 1,
+  "cuisine": "Vietnamese Contemporary",
+  "rating": 4.8,
+  "reviews": 157,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://upstairssgn.com/home/en",
+  "lat": 10.8044888,
+  "lng": 106.7291323,
+  "placeId": "ChIJByyUIwAndTER2dEEgRtcHxM"
+}

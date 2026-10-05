@@ -1,0 +1,16 @@
+{
+  "name": "Coco Dining",
+  "city": "ho-chi-minh-city",
+  "address": "143 Nam Ky Khoi Nghia Street, Xuan Hoa Ward, 700000, Ho Chi Minh City",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.6,
+  "reviews": 534,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://cocosgn.com",
+  "lat": 10.7808709,
+  "lng": 106.6932479,
+  "placeId": "ChIJ87LjurgvdTERohxhKxCsPDM"
+}

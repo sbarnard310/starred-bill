@@ -1,0 +1,16 @@
+{
+  "name": "Akuna",
+  "city": "ho-chi-minh-city",
+  "address": "9F, Le Méridien Hotel, 3C Ton Duc Thang Street, Saigon Ward, 700000, Ho Chi Minh City",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.3,
+  "reviews": 200,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://akunarestaurant.com",
+  "lat": 10.7798895,
+  "lng": 106.7074227,
+  "placeId": "ChIJ3ZrrlpIvdTER7s7xny5hbVA"
+}

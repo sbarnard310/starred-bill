@@ -1,0 +1,16 @@
+{
+  "name": "CieL ",
+  "city": "ho-chi-minh-city",
+  "address": "50 6/3 Street, An Khanh Ward, 713000, Ho Chi Minh City",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.8,
+  "reviews": 251,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://cieldining.com",
+  "lat": 10.805146,
+  "lng": 106.7341963,
+  "placeId": "ChIJ15AVEwAndTER67Ng7TJICpE"
+}

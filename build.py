@@ -378,7 +378,26 @@ def render(template, values):
     return out
 
 
+EXTERNAL_LINK = re.compile(r'<a\s[^>]*href="https?://([^/"]+)[^"]*"[^>]*>')
+
+
+def link_targets(html_text):
+    """The site's rule: links to other websites open in a new tab, links within starredbill.com stay in the same tab."""
+    def fix(m):
+        tag, host = m.group(0), m.group(1).lower()
+        if host in ("starredbill.com", "www.starredbill.com"):
+            return re.sub(r'\s+target="_blank"', "", tag)
+        if "target=" not in tag:
+            tag = tag[:-1] + ' target="_blank">'
+        if "rel=" not in tag:
+            tag = tag[:-1] + ' rel="noopener">'
+        return tag
+    return EXTERNAL_LINK.sub(fix, html_text)
+
+
 def write(path, text):
+    if path.endswith("/") or path.endswith(".html"):
+        text = link_targets(text)
     target = OUT / path.strip("/") / "index.html" if path.endswith("/") else OUT / path
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(text, "utf-8")

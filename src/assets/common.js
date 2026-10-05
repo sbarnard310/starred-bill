@@ -1642,6 +1642,16 @@ function localMoney(n, cur) {
   if (n == null) return "";
   return symbolOf(cur) + n.toLocaleString("en-GB", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
 }
+// The site's rule: links to other websites open in a new tab, links within the site stay in the same tab.
+// (The build sets this on every page; this catches links that scripts add afterwards.)
+document.addEventListener("click", (e) => {
+  const a = e.target.closest && e.target.closest("a[href]");
+  if (!a || !/^https?:/.test(a.href)) return;
+  const external = new URL(a.href).host !== location.host;
+  if (external && !a.target) { a.target = "_blank"; a.rel = a.rel || "noopener"; }
+  if (!external && a.target === "_blank") a.removeAttribute("target");
+}, true);
+
 function langSwitchHtml() {
   return PAGE_LANGS.map((k) =>
     '<button type="button" data-lang="' + k + '" aria-pressed="' + (k === LANG) + '" lang="' + LANGS[k].html + '">' + LANGS[k].label + "</button>").join("");

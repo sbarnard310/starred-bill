@@ -26,6 +26,8 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
 - Publish: commit to `main` and push. The `gh` CLI is at `/usr/local/bin/gh` (add it to PATH). Watch the run with `gh run list --workflow deploy.yml` / `gh run watch`.
 - Commit messages: a short imperative subject. Never commit `_site/`.
 
+- Links: other websites open in a new tab (`target="_blank" rel="noopener"`), pages within starredbill.com stay in the same tab. `link_targets()` in build.py applies this to every page it writes and a click handler in common.js covers links scripts add, but write new links that way too.
+
 ## Data rules
 - A restaurant file's name is its id, and visitors' wishlists store it. Never rename a published restaurant file.
 - Prices are numbers in the country's currency, per person, before service. Record where each price came from:

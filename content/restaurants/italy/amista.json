@@ -1,0 +1,20 @@
+{
+  "name": "Amistà",
+  "city": "veneto",
+  "area": "Corrubbio",
+  "address": "Via Cedrare 78, 37029, Corrubbio",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 182,
+  "dinnerType": "menu",
+  "dinner": 50,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.ristoranteamista.com/menu",
+  "wine": 70,
+  "website": "https://www.ristoranteamista.com/",
+  "lat": 45.48968,
+  "lng": 10.899484,
+  "placeId": "ChIJQS4yvIfjgUcR8iPuwSV8Mes"
+}

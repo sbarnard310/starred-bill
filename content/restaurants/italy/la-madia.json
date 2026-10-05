@@ -1,0 +1,19 @@
+{
+  "name": "La Madia",
+  "city": "sicily",
+  "area": "Licata",
+  "address": "Corso Filippo Re Capriata 22, 92027, Licata",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 745,
+  "dinnerType": "menu",
+  "dinner": 190,
+  "dinnerNote": "Tasting menu (other menus from €100)",
+  "sourceType": "site",
+  "source": "https://ristorantelamadia.it/il-menu/",
+  "website": "https://www.ristorantelamadia.it/",
+  "lat": 37.1070131,
+  "lng": 13.9338055,
+  "placeId": "ChIJ-6MwyjVeEBMRr7QLyWOtM9Y"
+}

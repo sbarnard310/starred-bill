@@ -1,0 +1,17 @@
+{
+  "name": "Massimo Camia",
+  "city": "piedmont",
+  "area": "Novello",
+  "address": "Località Fornaci, 17, 12060, Novello",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 593,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.massimocamia.it",
+  "lat": 44.5803385,
+  "lng": 7.9103944,
+  "placeId": "ChIJXZNZYcuv0hIRX0QszdZOtZo"
+}

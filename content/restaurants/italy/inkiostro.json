@@ -1,0 +1,19 @@
+{
+  "name": "Inkiostro",
+  "city": "emilia-romagna",
+  "area": "Parma",
+  "address": "Via San Leonardo 124, 43122, Parma",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 373,
+  "dinnerType": "menu",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €55)",
+  "sourceType": "site",
+  "source": "https://www.ristoranteinkiostro.it/_files/ugd/9d6faf_dc4c3d3925e54b07a1d42b4ceda9a4c8.pdf",
+  "website": "https://www.ristoranteinkiostro.it/",
+  "lat": 44.8287075,
+  "lng": 10.3368267,
+  "placeId": "ChIJd-HC6SBAgEcRdRlHl8OD144"
+}

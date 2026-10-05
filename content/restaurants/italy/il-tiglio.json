@@ -1,0 +1,19 @@
+{
+  "name": "Il Tiglio",
+  "city": "marche",
+  "area": "Montemonaco",
+  "address": "Via Isola San Biagio 34, 63088, Montemonaco",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 709,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu (other menus from €68)",
+  "sourceType": "site",
+  "source": "https://ristoranteiltiglio.it/i-nostri-menu/",
+  "website": "https://www.ristoranteiltiglio.it",
+  "lat": 42.9182376,
+  "lng": 13.316814,
+  "placeId": "ChIJq4WkneMOLhMRgQV7dwADvms"
+}

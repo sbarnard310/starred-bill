@@ -1,0 +1,17 @@
+{
+  "name": "Il Desco",
+  "city": "veneto",
+  "area": "Verona",
+  "address": "Via Dietro San Sebastiano 7, 37121, Verona",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.8,
+  "reviews": 428,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ristoranteildesco.it/",
+  "lat": 45.4416145,
+  "lng": 10.9999722,
+  "placeId": "ChIJV5LeNUhff0cRtfxsKicXT1s"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Cetaria",
+  "city": "campania",
+  "area": "Baronissi",
+  "address": "Piazza della Repubblica 9, 84081, Baronissi",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.4,
+  "reviews": 299,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.cetariaristorante.it/",
+  "lat": 40.7469801,
+  "lng": 14.7701282,
+  "placeId": "ChIJeRjKBD7EOxMR48kJi7Y8FoA"
+}

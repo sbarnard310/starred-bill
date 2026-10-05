@@ -1,0 +1,17 @@
+{
+  "name": "Le Trabe",
+  "city": "campania",
+  "area": "Paestum",
+  "address": "Via Capo di Fiume 4, 84047, Paestum",
+  "stars": 1,
+  "cuisine": "Campanian",
+  "rating": 4.5,
+  "reviews": 1373,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.letrabe.it/",
+  "lat": 40.4469187,
+  "lng": 15.0429487,
+  "placeId": "ChIJgU2vF_pXORMRd84vIOdlUGc"
+}

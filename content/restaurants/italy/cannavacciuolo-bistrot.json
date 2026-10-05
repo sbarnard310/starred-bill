@@ -1,0 +1,18 @@
+{
+  "name": "Cannavacciuolo Bistrot",
+  "city": "turin",
+  "address": "Via Umberto Cosmo 6, 10131, Turin",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 3934,
+  "dinnerType": "menu",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://www.cannavacciuolobistrot.it/torino/menu/",
+  "website": "https://www.cannavacciuolobistrot.it/",
+  "lat": 45.062633,
+  "lng": 7.7008978,
+  "placeId": "ChIJ-f-CvJ5yiEcR9YkHqilhGP8"
+}

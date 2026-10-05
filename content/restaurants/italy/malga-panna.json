@@ -1,0 +1,19 @@
+{
+  "name": "Malga Panna",
+  "city": "trentino-south-tyrol",
+  "area": "Moena",
+  "address": "Strada de Sort 64, località Sorte, 38035, Moena",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.7,
+  "reviews": 986,
+  "dinnerType": "menu",
+  "dinner": 140,
+  "dinnerNote": "Tasting menu (other menus from €120)",
+  "sourceType": "site",
+  "source": "https://www.malgapanna.it/",
+  "website": "https://www.malgapanna.it/",
+  "lat": 46.376804,
+  "lng": 11.643984,
+  "placeId": "ChIJ0xjIWwhmeEcR6VejegbcjpE"
+}

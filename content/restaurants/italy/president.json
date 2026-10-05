@@ -1,0 +1,17 @@
+{
+  "name": "President",
+  "city": "campania",
+  "area": "Pompei",
+  "address": "Piazza Schettini 12/13, 80045, Pompei",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.6,
+  "reviews": 288,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristorantepresident.it/",
+  "lat": 40.74731,
+  "lng": 14.49951,
+  "placeId": "ChIJ_5qMmpa8OxMR7xqIFeY8SCw"
+}

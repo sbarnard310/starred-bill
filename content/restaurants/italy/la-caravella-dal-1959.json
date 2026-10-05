@@ -1,0 +1,19 @@
+{
+  "name": "La Caravella dal 1959",
+  "city": "campania",
+  "area": "Amalfi",
+  "address": "Via Matteo Camera 12, 84011, Amalfi",
+  "stars": 1,
+  "cuisine": "Campanian",
+  "rating": 4.4,
+  "reviews": 278,
+  "dinnerType": "menu",
+  "dinner": 400,
+  "dinnerNote": "Tasting menu (other menus from €90)",
+  "sourceType": "site",
+  "source": "https://www.ristorantelacaravella.it/wp-content/uploads/2023/11/2024-online-vini-PERCORSI-DI-DEGUSTAZIONE.pdf",
+  "website": "https://www.ristorantelacaravella.it/",
+  "lat": 40.6338537,
+  "lng": 14.6016228,
+  "placeId": "ChIJfxPP562VOxMRQs2xFFccBuI"
+}

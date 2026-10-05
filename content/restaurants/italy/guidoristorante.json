@@ -1,0 +1,19 @@
+{
+  "name": "Guidoristorante",
+  "city": "piedmont",
+  "area": "Serralunga d'Alba",
+  "address": "Via Alba 15, 12050, Serralunga d'Alba",
+  "stars": 1,
+  "cuisine": "Piedmontese",
+  "rating": 4.7,
+  "reviews": 629,
+  "dinnerType": "menu",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €90)",
+  "sourceType": "site",
+  "source": "https://www.guidoristorante.it/menu/",
+  "website": "https://www.guidoristorante.it/",
+  "lat": 44.6389249,
+  "lng": 7.9865995,
+  "placeId": "ChIJt14uf2es0hIRf8y7fpB6hMI"
+}

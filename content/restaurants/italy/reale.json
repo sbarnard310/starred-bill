@@ -1,0 +1,17 @@
+{
+  "name": "Reale",
+  "city": "abruzzo",
+  "area": "Castel di Sangro",
+  "address": "Contrada Santa Liberata, località Casadonna, 67031, Castel di Sangro",
+  "stars": 3,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 421,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.nikoromito.com/reale",
+  "lat": 41.7800349,
+  "lng": 14.094554,
+  "placeId": "ChIJnxxH1W96MBMRSkUGag8Oltc"
+}

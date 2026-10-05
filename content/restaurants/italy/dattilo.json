@@ -1,0 +1,17 @@
+{
+  "name": "Dattilo",
+  "city": "calabria",
+  "area": "Strongoli",
+  "address": "Contrada Dattilo 6, 88816, Strongoli",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.5,
+  "reviews": 171,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.dattilo.it",
+  "lat": 39.2664765,
+  "lng": 17.0819276,
+  "placeId": "ChIJs1WmLxFaQBMRAbVd3JAcziA"
+}

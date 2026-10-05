@@ -1,0 +1,17 @@
+{
+  "name": "Al Sorriso",
+  "city": "piedmont",
+  "area": "Soriso",
+  "address": "Via Roma 18, 28010, Soriso",
+  "stars": 1,
+  "cuisine": "Piedmontese",
+  "rating": 4.4,
+  "reviews": 148,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.alsorriso.com/",
+  "lat": 45.7406906,
+  "lng": 8.4116747,
+  "placeId": "ChIJ27_EEqIShkcRDWssPBQIRNk"
+}

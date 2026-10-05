@@ -1,0 +1,17 @@
+{
+  "name": "Italo Bassi Confusion Restaurant",
+  "city": "sardinia",
+  "area": "Porto Cervo",
+  "address": "Via Aga Khan 1, Promenade du Port, 07021, Porto Cervo",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4,
+  "reviews": 205,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://confusion-restaurant.com/it/",
+  "lat": 41.1345678,
+  "lng": 9.5375439,
+  "placeId": "ChIJm6te3yBB2RIRDj9H0f_GJy8"
+}

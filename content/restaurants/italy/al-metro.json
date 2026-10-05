@@ -1,0 +1,17 @@
+{
+  "name": "Al Metrò",
+  "city": "abruzzo",
+  "area": "San Salvo Marina",
+  "address": "Via Magellano 35, 66050, San Salvo Marina",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 412,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristorantealmetro.it/",
+  "lat": 42.0681141,
+  "lng": 14.7751494,
+  "placeId": "ChIJ9_Cvn0jbMBMRIQi5AIsYbkg"
+}

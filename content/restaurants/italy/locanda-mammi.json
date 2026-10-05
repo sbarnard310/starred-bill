@@ -1,0 +1,17 @@
+{
+  "name": "Locanda Mammì",
+  "city": "molise",
+  "area": "Agnone",
+  "address": "Contrada Castelnuovo 86, 86081, Agnone",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 473,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.locandamammi.it",
+  "lat": 41.8299804,
+  "lng": 14.3839118,
+  "placeId": "ChIJE-Ycki2PMBMRWomWOcINGs4"
+}

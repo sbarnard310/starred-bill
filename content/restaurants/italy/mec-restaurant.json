@@ -1,0 +1,17 @@
+{
+  "name": "Mec Restaurant",
+  "city": "sicily",
+  "area": "Palermo",
+  "address": "Via Vittorio Emanuele 452, 90134, Palermo",
+  "stars": 1,
+  "cuisine": "Sicilian",
+  "rating": 4.6,
+  "reviews": 379,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mecrestaurant.it",
+  "lat": 38.1139131,
+  "lng": 13.3572594,
+  "placeId": "ChIJqau0havvGRMRpZ-DiUz_5EE"
+}

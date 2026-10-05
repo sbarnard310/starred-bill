@@ -1,0 +1,19 @@
+{
+  "name": "Impronta d'Acqua",
+  "city": "liguria",
+  "area": "Cavi di Lavagna",
+  "address": "Via Aurelia 2121, 16030, Cavi di Lavagna",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.8,
+  "reviews": 200,
+  "dinnerType": "menu",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://www.improntadacqua.com/menu",
+  "website": "https://www.improntadacqua.com/",
+  "lat": 44.2953631,
+  "lng": 9.3696755,
+  "placeId": "ChIJocDfQAaX1BIRFfbkACkccXU"
+}

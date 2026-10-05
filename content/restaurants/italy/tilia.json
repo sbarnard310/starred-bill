@@ -1,0 +1,17 @@
+{
+  "name": "Tilia",
+  "city": "trentino-south-tyrol",
+  "area": "Toblach",
+  "address": "Via Dolomiti 31/b, 39034, Toblach",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 220,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://tilia.bz/",
+  "lat": 46.7236326,
+  "lng": 12.2241114,
+  "placeId": "ChIJcZ38Mo0reEcRbzSgAxGItsg"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Crocifisso",
+  "city": "sicily",
+  "area": "Noto",
+  "address": "Via Principe Umberto 46, 96017, Noto",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.4,
+  "reviews": 507,
+  "dinnerType": "menu",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €70)",
+  "sourceType": "site",
+  "source": "https://ristorantecrocifisso.it/wp-content/uploads/2026/03/TASTING-MENU-ITALIAN-2025.pdf",
+  "wine": 70,
+  "website": "https://ristorantecrocifisso.it/",
+  "lat": 36.8944278,
+  "lng": 15.0713855,
+  "placeId": "ChIJ0Xc3Yq8pEhMRNPtfqeGJyXg"
+}

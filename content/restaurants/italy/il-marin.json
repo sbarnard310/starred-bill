@@ -1,0 +1,17 @@
+{
+  "name": "Il Marin",
+  "city": "liguria",
+  "area": "Genoa",
+  "address": "Calata Cattaneo, 15, Edificio Millo, Porto Antico, 16121, Genoa",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.4,
+  "reviews": 807,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ilmarin.it/",
+  "lat": 44.4087159,
+  "lng": 8.9274716,
+  "placeId": "ChIJ9S5wYuBD0xIRMi0dLDYD82s"
+}

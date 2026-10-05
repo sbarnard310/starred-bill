@@ -1,0 +1,19 @@
+{
+  "name": "Antica Corte Pallavicina",
+  "city": "emilia-romagna",
+  "area": "Polesine Parmense",
+  "address": "Strada del Palazzo Due Torri 3, 43016, Polesine Parmense",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.7,
+  "reviews": 1840,
+  "dinnerType": "menu",
+  "dinner": 55,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.anticacortepallavicinarelais.it/menu-degustazione/",
+  "website": "https://www.anticacortepallavicinarelais.it/",
+  "lat": 45.0215397,
+  "lng": 10.0856758,
+  "placeId": "ChIJLxUWD5VXgEcRka5xy4ZzfPw"
+}

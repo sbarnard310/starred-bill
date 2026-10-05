@@ -1,0 +1,17 @@
+{
+  "name": "Lazzaro 1915",
+  "city": "veneto",
+  "area": "Pontelongo",
+  "address": "Via Roma 351, 35029, Pontelongo",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.7,
+  "reviews": 193,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lazzaro1915.it",
+  "lat": 45.2499891,
+  "lng": 12.0203099,
+  "placeId": "ChIJp7XOLIvqfkcRbPvgqjP1Xxg"
+}

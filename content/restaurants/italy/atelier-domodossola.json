@@ -1,0 +1,17 @@
+{
+  "name": "Atelier",
+  "city": "piedmont",
+  "area": "Domodossola",
+  "address": "Piazza Matteotti 36, 28845, Domodossola",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 315,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.eurossola.com/it/atelier-restaurant/",
+  "lat": 46.1149939,
+  "lng": 8.2957587,
+  "placeId": "ChIJD9Ab6BPxhUcRZG0MK5kSzao"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Maeba Restaurant",
+  "city": "campania",
+  "area": "Ariano Irpino",
+  "address": "Contrada Serra 29, 83031, Ariano Irpino",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.7,
+  "reviews": 221,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.maeba.it/",
+  "lat": 41.1218387,
+  "lng": 15.0657388,
+  "placeId": "ChIJkdR2FU2IORMRdnbWXoQU8gs"
+}

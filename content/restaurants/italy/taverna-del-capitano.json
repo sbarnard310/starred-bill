@@ -1,0 +1,17 @@
+{
+  "name": "Taverna del Capitano",
+  "city": "campania",
+  "area": "Marina del Cantone",
+  "address": "Piazza delle Sirene 10/11, 80061, Marina del Cantone",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 444,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tavernadelcapitano.com/",
+  "lat": 40.5833911,
+  "lng": 14.3565359,
+  "placeId": "ChIJu0hf01-cOxMRCbhwJlww-3s"
+}

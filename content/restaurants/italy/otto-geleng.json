@@ -1,0 +1,16 @@
+{
+  "name": "Otto Geleng",
+  "city": "taormina",
+  "address": "Via Teatro Greco 59, 98039, Taormina",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.7,
+  "reviews": 79,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.belmond.com/it/dining/europe/italy/taormina/otto-geleng/",
+  "lat": 37.852584,
+  "lng": 15.290778,
+  "placeId": "ChIJ_0rtY0kRFBMRAE_KfYSmgOY"
+}

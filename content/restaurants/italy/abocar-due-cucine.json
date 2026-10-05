@@ -1,0 +1,19 @@
+{
+  "name": "Abocar Due Cucine",
+  "city": "emilia-romagna",
+  "area": "Rimini",
+  "address": "Via Carlo Farini 13, 47921, Rimini",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 696,
+  "dinnerType": "menu",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://abocarduecucine.it/menu/",
+  "website": "https://abocarduecucine.it/",
+  "lat": 44.0626895,
+  "lng": 12.5663487,
+  "placeId": "ChIJQzOscJjDLBMR2oJFyuzi_Mk"
+}

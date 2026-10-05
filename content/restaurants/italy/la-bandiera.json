@@ -1,0 +1,17 @@
+{
+  "name": "La Bandiera",
+  "city": "abruzzo",
+  "area": "Civitella Casanova",
+  "address": "Contrada Pastini 4, 65010, Civitella Casanova",
+  "stars": 1,
+  "cuisine": "Cuisine from Abruzzo",
+  "rating": 4.8,
+  "reviews": 800,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.labandiera.it/",
+  "lat": 42.3698762,
+  "lng": 13.9082843,
+  "placeId": "ChIJZ8cv3HvKMRMRBJxOTmkwuwU"
+}

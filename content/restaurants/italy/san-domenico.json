@@ -1,0 +1,19 @@
+{
+  "name": "San Domenico",
+  "city": "emilia-romagna",
+  "area": "Imola",
+  "address": "Via Sacchi 1, 40026, Imola",
+  "stars": 2,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 903,
+  "dinnerType": "menu",
+  "dinner": 175,
+  "dinnerNote": "Tasting menu (other menus from €120)",
+  "sourceType": "site",
+  "source": "https://www.sandomenico.it/menu/radici/",
+  "website": "https://www.sandomenico.it/",
+  "lat": 44.3556597,
+  "lng": 11.7126953,
+  "placeId": "ChIJN7ruqX5KKxMRi7fMLtNLs4Q"
+}

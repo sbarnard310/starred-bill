@@ -1,0 +1,17 @@
+{
+  "name": "Ada",
+  "city": "umbria",
+  "area": "Perugia",
+  "address": "Via del Bovaro 2, 06121, Perugia",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 220,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://adagourmet.it/",
+  "lat": 43.1085426,
+  "lng": 12.390168,
+  "placeId": "ChIJCyj7CEWhLhMRTuOS4CPlUUs"
+}

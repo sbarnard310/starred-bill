@@ -1,0 +1,17 @@
+{
+  "name": "Il Fuoco Sacro",
+  "city": "sardinia",
+  "area": "San Pantaleo",
+  "address": "Strada di Buddeo, 07026, San Pantaleo",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.6,
+  "reviews": 227,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ilfuocosacro.com",
+  "lat": 41.0529512,
+  "lng": 9.4460803,
+  "placeId": "ChIJ0Xlxc6ZI2RIReYt7OEfBJqk"
+}

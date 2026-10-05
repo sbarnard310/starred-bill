@@ -1,0 +1,17 @@
+{
+  "name": "Le Calandre",
+  "city": "veneto",
+  "area": "Rubano",
+  "address": "Via Liguria 1, località Sarmeola, 35030, Rubano",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 937,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://alajmo.it/pages/homepage-le-calandre",
+  "lat": 45.4215425,
+  "lng": 11.8096633,
+  "placeId": "ChIJRwG9TKLZfkcRqCF9Hf_ANrk"
+}

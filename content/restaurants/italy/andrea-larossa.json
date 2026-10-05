@@ -1,0 +1,16 @@
+{
+  "name": "Andrea Larossa",
+  "city": "turin",
+  "address": "Via Sabaudia 4, 10133, Turin",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.6,
+  "reviews": 608,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristorantelarossa.it",
+  "lat": 45.03681,
+  "lng": 7.68156,
+  "placeId": "ChIJjZOyf2iz0hIRq0sL-9Ummi8"
+}

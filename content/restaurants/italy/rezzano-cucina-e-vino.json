@@ -1,0 +1,17 @@
+{
+  "name": "Rezzano Cucina e Vino",
+  "city": "liguria",
+  "area": "Sestri Levante",
+  "address": "Via Asilo Maria Teresa 34, 16039, Sestri Levante",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.6,
+  "reviews": 194,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.rezzanocucinaevino.it",
+  "lat": 44.2720162,
+  "lng": 9.3949059,
+  "placeId": "ChIJx8Eg8AuX1BIRdZXQNI_m07A"
+}

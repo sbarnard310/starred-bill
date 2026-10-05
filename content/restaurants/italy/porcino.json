@@ -1,0 +1,19 @@
+{
+  "name": "Porcino",
+  "city": "trentino-south-tyrol",
+  "area": "Badia",
+  "address": "Strada Damez 2/a, 39036, Badia",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 94,
+  "dinnerType": "menu",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.badiahill.com/site/assets/files/3822/menu_porcino_09_09_it.pdf",
+  "website": "https://www.badiahill.com/it/ristorante-porcino/",
+  "lat": 46.6075518,
+  "lng": 11.8938127,
+  "placeId": "ChIJyTJYdtI9eEcRMh_-8G58Jsg"
+}

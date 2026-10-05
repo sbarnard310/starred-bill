@@ -1,0 +1,19 @@
+{
+  "name": "Al Gatto Verde",
+  "city": "emilia-romagna",
+  "area": "Modena",
+  "address": "Stradello Bonaghino 56, 41126, Modena",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 115,
+  "dinnerType": "menu",
+  "dinner": 70,
+  "dinnerNote": "Tasting menu (other menus from €50)",
+  "sourceType": "site",
+  "source": "https://ristorantealgattoverde.com/menu/",
+  "website": "https://ristorantealgattoverde.com",
+  "lat": 44.6102868,
+  "lng": 10.980026,
+  "placeId": "ChIJYQwpBIXnf0cRekgb5iH_HMM"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Vecchia Malcesine",
+  "city": "veneto",
+  "area": "Malcesine",
+  "address": "Via Pisort 6, 37018, Malcesine",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.7,
+  "reviews": 314,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.vecchiamalcesine.com/",
+  "lat": 45.7624261,
+  "lng": 10.8079125,
+  "placeId": "ChIJDa1UuKcegkcRQg5UGSXZ7R4"
+}

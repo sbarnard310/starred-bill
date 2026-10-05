@@ -1,0 +1,17 @@
+{
+  "name": "Sapio",
+  "city": "sicily",
+  "area": "Catania",
+  "address": "Piazza Antonino Gandolfo 11, 95131, Catania",
+  "stars": 1,
+  "cuisine": "Sicilian",
+  "rating": 4.7,
+  "reviews": 374,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.sapiorestaurant.it/",
+  "lat": 37.505208,
+  "lng": 15.0949852,
+  "placeId": "ChIJj33ntLf8ExMRhyrf5SRYd_A"
+}

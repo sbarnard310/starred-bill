@@ -1,0 +1,19 @@
+{
+  "name": "Ristorante del Lago",
+  "city": "emilia-romagna",
+  "area": "Bagno di Romagna",
+  "address": "Via Acquapartita 147, 47021, Bagno di Romagna",
+  "stars": 1,
+  "cuisine": "Cuisine from Romagna",
+  "rating": 4.8,
+  "reviews": 885,
+  "dinnerType": "menu",
+  "dinner": 106,
+  "dinnerNote": "Tasting menu (other menus from €103)",
+  "sourceType": "site",
+  "source": "https://www.ristorantedellagoacquapartita.it/menu-3/",
+  "website": "https://www.ristorantedellagoacquapartita.it/",
+  "lat": 43.86577,
+  "lng": 12.027197,
+  "placeId": "ChIJd1y9i0d8KxMRHGJ4txMQgRE"
+}

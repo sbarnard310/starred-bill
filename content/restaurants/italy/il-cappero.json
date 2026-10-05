@@ -1,0 +1,17 @@
+{
+  "name": "Il Cappero",
+  "city": "sicily",
+  "area": "Isola Vulcano",
+  "address": "Via Vulcanello, 98055, Isola Vulcano",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.6,
+  "reviews": 104,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ilcapperoristorante.it/",
+  "lat": 38.4308153,
+  "lng": 14.9570928,
+  "placeId": "ChIJv6XVjlh-FhMR1geHspg6HWM"
+}

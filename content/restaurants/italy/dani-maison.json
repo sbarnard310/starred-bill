@@ -1,0 +1,19 @@
+{
+  "name": "daní maison",
+  "city": "campania",
+  "area": "Ischia",
+  "address": "Via Montetignuso 4, 80077, Ischia",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.7,
+  "reviews": 245,
+  "dinnerType": "menu",
+  "dinner": 280,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://danimaison.it/en/menus/",
+  "website": "https://danimaison.it",
+  "lat": 40.7302578,
+  "lng": 13.9487527,
+  "placeId": "ChIJrxdcgeVqOxMR9D5e-zLM7Vo"
+}

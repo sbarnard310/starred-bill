@@ -1,0 +1,19 @@
+{
+  "name": "Tivoli",
+  "city": "veneto",
+  "area": "Cortina d'Ampezzo",
+  "address": "Località Lacedel 34, 32043, Cortina d'Ampezzo",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 472,
+  "dinnerType": "menu",
+  "dinner": 70,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.ristorantetivolicortina.it/wp-content/uploads/2026/08/CARTA_VINI_TIVOLI_2026_IT_CARTA_VINI.pdf",
+  "website": "https://www.ristorantetivolicortina.it/",
+  "lat": 46.5338851,
+  "lng": 12.1222949,
+  "placeId": "ChIJxR_5mSs0eEcR8lzcFs6Alx4"
+}

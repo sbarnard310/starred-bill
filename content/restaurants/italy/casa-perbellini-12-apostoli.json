@@ -1,0 +1,19 @@
+{
+  "name": "Casa Perbellini 12 Apostoli",
+  "city": "veneto",
+  "area": "Verona",
+  "address": "Vicolo Corticella San Marco 3, 37121, Verona",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 1013,
+  "dinnerType": "menu",
+  "dinner": 395,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.casaperbellini.com/chefs-table/",
+  "website": "https://www.casaperbellini.com",
+  "lat": 45.4426941,
+  "lng": 10.9961161,
+  "placeId": "ChIJu8s0-1dff0cR-BmaS83pW3U"
+}

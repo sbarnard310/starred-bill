@@ -1,0 +1,17 @@
+{
+  "name": "Nin",
+  "city": "veneto",
+  "area": "Brenzone sul Garda",
+  "address": "Via Zanardelli 5, 37010, Brenzone sul Garda",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 84,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristorantenin.it",
+  "lat": 45.7154863,
+  "lng": 10.7716421,
+  "placeId": "ChIJraEm3fEfgkcR5rHXkAM08yM"
+}

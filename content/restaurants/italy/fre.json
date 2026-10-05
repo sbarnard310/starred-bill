@@ -1,0 +1,17 @@
+{
+  "name": "FRE",
+  "city": "piedmont",
+  "area": "Monforte d'Alba",
+  "address": "Località San Sebastiano 68, 12065, Monforte d'Alba",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 170,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.revamonforte.com/it/resort-con-ristorante-langhe",
+  "lat": 44.5651402,
+  "lng": 7.9551082,
+  "placeId": "ChIJMTEE8qi60hIR0vXhwa2csjg"
+}

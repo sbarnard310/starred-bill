@@ -1,0 +1,19 @@
+{
+  "name": "Iacobucci",
+  "city": "emilia-romagna",
+  "area": "Castel Maggiore",
+  "address": "Via Ronco 1, Villa Zarri, 40013, Castel Maggiore",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.7,
+  "reviews": 458,
+  "dinnerType": "menu",
+  "dinner": 159,
+  "dinnerNote": "Tasting menu (other menus from €139)",
+  "sourceType": "site",
+  "source": "https://www.agostinoiacobucci.it/menu/",
+  "website": "https://www.agostinoiacobucci.it/",
+  "lat": 44.5602196,
+  "lng": 11.3538901,
+  "placeId": "ChIJUW18eD_Tf0cRdpSMNiNlnjo"
+}

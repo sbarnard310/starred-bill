@@ -1,0 +1,17 @@
+{
+  "name": "Andreina",
+  "city": "marche",
+  "area": "Loreto",
+  "address": "Via Zona Industriale Brodolini, 2, 60025, Loreto",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 852,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristoranteandreina.it/",
+  "lat": 43.4404141,
+  "lng": 13.6217174,
+  "placeId": "ChIJXR3I5-V5MhMRErYcGck5B-c"
+}

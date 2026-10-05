@@ -1,0 +1,19 @@
+{
+  "name": "Li Galli",
+  "city": "campania",
+  "area": "Positano",
+  "address": "Viale Pasitea 318, 84017, Positano",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.2,
+  "reviews": 123,
+  "dinnerType": "menu",
+  "dinner": 280,
+  "dinnerNote": "Tasting menu (other menus from €180)",
+  "sourceType": "site",
+  "source": "https://www.ligallirestaurant.it/cms-admin/materiale/pagine/file-798-L2/LiGalliFoodITA.pdf",
+  "website": "https://www.ligallirestaurant.it/it/",
+  "lat": 40.6283391,
+  "lng": 14.4841948,
+  "placeId": "ChIJd-Fwn2iXOxMR6Tr5OpqMvSg"
+}

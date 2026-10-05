@@ -1,0 +1,17 @@
+{
+  "name": "Locanda Sant'Uffizio Enrico Bartolini",
+  "city": "piedmont",
+  "area": "Cioccaro",
+  "address": "Strada Sant'Uffizio 1, 14030, Cioccaro",
+  "stars": 2,
+  "cuisine": "Piedmontese",
+  "rating": 4.6,
+  "reviews": 121,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.enricobartolini.net/ristorante-sant-uffizio",
+  "lat": 45.0271679,
+  "lng": 8.2778294,
+  "placeId": "ChIJVVVlI06-h0cRwO7O81q2PYY"
+}

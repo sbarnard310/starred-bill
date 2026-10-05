@@ -1,0 +1,17 @@
+{
+  "name": "Coria",
+  "city": "sicily",
+  "area": "Catania",
+  "address": "Via Prefettura 21, 95124, Catania",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.7,
+  "reviews": 345,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristorantecoria.it",
+  "lat": 37.5053157,
+  "lng": 15.0860216,
+  "placeId": "ChIJPwRtw80PERMR3C75OsnRwr0"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "St. George by Heinz Beck",
+  "city": "taormina",
+  "address": "Viale San Pancrazio 46, 98039, Taormina",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 123,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.theashbeehotel.it/menu-st-george-restaurant-by-heinz-beck/",
+  "lat": 37.8554565,
+  "lng": 15.2900353,
+  "placeId": "ChIJk3INh58RFBMRp9846eqSPUA"
+}

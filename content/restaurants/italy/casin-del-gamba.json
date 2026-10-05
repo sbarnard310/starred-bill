@@ -1,0 +1,17 @@
+{
+  "name": "Casin del Gamba",
+  "city": "veneto",
+  "area": "Altissimo",
+  "address": "Via Roccolo Pizzati 1, 36070, Altissimo",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.8,
+  "reviews": 281,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.casindelgamba.it/",
+  "lat": 45.6178,
+  "lng": 11.2615,
+  "placeId": "ChIJa6VM53dNf0cR4TbgRlaPI7k"
+}

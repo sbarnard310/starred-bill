@@ -1,0 +1,17 @@
+{
+  "name": "Il Flauto di Pan",
+  "city": "campania",
+  "area": "Ravello",
+  "address": "Via Santa Chiara 26, 84010, Ravello",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 3.8,
+  "reviews": 153,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotelvillacimbrone.com/it/il-flauto-di-pan/",
+  "lat": 40.6446307,
+  "lng": 14.6111085,
+  "placeId": "ChIJ8xM5vKCVOxMRTEfbuNQAYas"
+}

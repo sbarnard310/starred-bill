@@ -1,0 +1,17 @@
+{
+  "name": "Andrea Monesi - Locanda di Orta",
+  "city": "piedmont",
+  "area": "Orta San Giulio",
+  "address": "Via Olina 14, 28016, Orta San Giulio",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.4,
+  "reviews": 443,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.andreamonesi.com/",
+  "lat": 45.7987785,
+  "lng": 8.4058245,
+  "placeId": "ChIJW2fpEfYMhkcRRK7iJzsrJ1I"
+}

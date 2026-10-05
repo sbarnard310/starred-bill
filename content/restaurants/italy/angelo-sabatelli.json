@@ -1,0 +1,17 @@
+{
+  "name": "Angelo Sabatelli",
+  "city": "apulia",
+  "area": "Putignano",
+  "address": "Via Santa Chiara 1, 70017, Putignano",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 211,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.angelosabatelliristorante.com",
+  "lat": 40.8500527,
+  "lng": 17.1227135,
+  "placeId": "ChIJUa4VG2WxRxMRafIwGafrFVE"
+}

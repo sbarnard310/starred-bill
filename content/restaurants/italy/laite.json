@@ -1,0 +1,17 @@
+{
+  "name": "Laite",
+  "city": "friuli-venezia-giulia",
+  "area": "Sappada",
+  "address": "Borgata Hoffe 10, 33012, Sappada",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.8,
+  "reviews": 445,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristorantelaite.com/",
+  "lat": 46.5685736,
+  "lng": 12.6948157,
+  "placeId": "ChIJU18heoroeUcRZv-ldVd3FXI"
+}

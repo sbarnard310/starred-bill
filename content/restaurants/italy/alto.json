@@ -1,0 +1,17 @@
+{
+  "name": "Alto",
+  "city": "emilia-romagna",
+  "area": "Fiorano Modenese",
+  "address": "Via Circondariale San Francesco 2, 41042, Fiorano Modenese",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 79,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.altoristorante.com",
+  "lat": 44.5379081,
+  "lng": 10.8243773,
+  "placeId": "ChIJ-TAkCMbjf0cRypwdP0VB2C4"
+}

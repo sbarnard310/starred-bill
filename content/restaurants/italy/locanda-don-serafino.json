@@ -1,0 +1,17 @@
+{
+  "name": "Locanda Don Serafino",
+  "city": "sicily",
+  "area": "Ragusa",
+  "address": "Via Avv. Ottaviano 13, 97100, Ragusa",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 399,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.locandadonserafino.it/",
+  "lat": 36.9245977,
+  "lng": 14.7407767,
+  "placeId": "ChIJe7N7uXiZERMRXmEGHV5njqg"
+}

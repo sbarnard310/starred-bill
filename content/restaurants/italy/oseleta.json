@@ -1,0 +1,17 @@
+{
+  "name": "Oseleta",
+  "city": "veneto",
+  "area": "Cavaion Veronese",
+  "address": "Località Cordevigo, 37010, Cavaion Veronese",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 230,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristoranteoseleta.it/",
+  "lat": 45.5252757,
+  "lng": 10.7912839,
+  "placeId": "ChIJCae56L_vgUcRkW-rTeSMMxE"
+}

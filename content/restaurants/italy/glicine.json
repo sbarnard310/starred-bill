@@ -1,0 +1,19 @@
+{
+  "name": "Glicine",
+  "city": "campania",
+  "area": "Amalfi",
+  "address": "Via Mauro Comite 9, 84011, Amalfi",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.7,
+  "reviews": 854,
+  "dinnerType": "menu",
+  "dinner": 220,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://www.hotelsantacaterina.it/wp-content/uploads/2026/04/Menu-Glicine-Aprile-2026.pdf",
+  "website": "https://www.hotelsantacaterina.it/ristoranti-e-bar/ristorante-glicine/",
+  "lat": 40.6294267,
+  "lng": 14.5928504,
+  "placeId": "ChIJlWZ_kWiXOxMRbmB5HIkKCVg"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Rossellinis",
+  "city": "campania",
+  "area": "Ravello",
+  "address": "Via San Giovanni del Toro 28, 84010, Ravello",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4,
+  "reviews": 34,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 40.650822,
+  "lng": 14.6130382,
+  "placeId": "ChIJw3hIK8KVOxMRzNtljERt15M"
+}

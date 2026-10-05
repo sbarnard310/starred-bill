@@ -1,0 +1,19 @@
+{
+  "name": "Signum",
+  "city": "sicily",
+  "area": "Malfa",
+  "address": "Via Pastifico 12, 98050, Malfa",
+  "stars": 1,
+  "cuisine": "Sicilian",
+  "rating": 4.2,
+  "reviews": 394,
+  "dinnerType": "menu",
+  "dinner": 95,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.hotelsignum.it/ristorante-gourmet-eolie/menu/percorsi-gourmet.html",
+  "website": "https://www.hotelsignum.it",
+  "lat": 38.57992,
+  "lng": 14.83344,
+  "placeId": "ChIJa25JkC1uFhMR7VIMcd5xXT4"
+}

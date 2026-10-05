@@ -1,0 +1,16 @@
+{
+  "name": "Principe Cerami",
+  "city": "taormina",
+  "address": "Piazza San Domenico 5, 98039, Taormina",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 43,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.principecerami.com/",
+  "lat": 37.8502374,
+  "lng": 15.2833763,
+  "placeId": "ChIJ05rrf6QRFBMR8LP_YgMhAg0"
+}

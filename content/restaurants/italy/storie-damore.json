@@ -1,0 +1,20 @@
+{
+  "name": "Storie d'Amore",
+  "city": "veneto",
+  "area": "Borgoricco",
+  "address": "Via Desman 418, 35010, Borgoricco",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 333,
+  "dinnerType": "menu",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €60)",
+  "sourceType": "site",
+  "source": "https://storiedamorerestaurant.it/",
+  "wine": 90,
+  "website": "https://storiedamorerestaurant.it/",
+  "lat": 45.5381705,
+  "lng": 11.9290391,
+  "placeId": "ChIJ3f54YKXTfkcRkpjhT6eJtus"
+}

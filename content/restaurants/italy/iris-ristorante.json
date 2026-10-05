@@ -1,0 +1,17 @@
+{
+  "name": "Iris Ristorante",
+  "city": "veneto",
+  "area": "Verona",
+  "address": "Via Leoni 10, 37121, Verona",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 115,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.irisristorante.it/",
+  "lat": 45.4397874,
+  "lng": 11.0005401,
+  "placeId": "ChIJhUG_erRff0cRTLNlHQiPrmE"
+}

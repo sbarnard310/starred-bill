@@ -1,0 +1,17 @@
+{
+  "name": "Votavota",
+  "city": "sicily",
+  "area": "Marina di Ragusa",
+  "address": "Lungomare Andrea Doria 48, 97010, Marina di Ragusa",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.5,
+  "reviews": 633,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.votavota.it/",
+  "lat": 36.7826492,
+  "lng": 14.5571721,
+  "placeId": "ChIJm-r6rSm5ERMRF32DnX0Og3c"
+}

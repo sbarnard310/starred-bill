@@ -1,0 +1,17 @@
+{
+  "name": "Don Geppi",
+  "city": "campania",
+  "area": "Sant' Agnello",
+  "address": "Corso Marion Crawford 40, 80065, Sant' Agnello",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 62,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.dongeppi.com",
+  "lat": 40.631762,
+  "lng": 14.3931433,
+  "placeId": "ChIJvR5qfEaZOxMRjp_uv5l7gMc"
+}

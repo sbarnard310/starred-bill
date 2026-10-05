@@ -1,0 +1,17 @@
+{
+  "name": "Agli Amici",
+  "city": "friuli-venezia-giulia",
+  "area": "Godia",
+  "address": "Via Liguria 250, 33100, Godia",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 456,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.agliamici.it/",
+  "lat": 46.1021988,
+  "lng": 13.2661162,
+  "placeId": "ChIJdbGWVW5KekcR-_s8SxYpGXM"
+}

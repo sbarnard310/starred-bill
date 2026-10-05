@@ -1,0 +1,20 @@
+{
+  "name": "Apostelstube",
+  "city": "trentino-south-tyrol",
+  "area": "Brixen",
+  "address": "Via Rio Bianco 4, 39042, Brixen",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 5,
+  "reviews": 34,
+  "dinnerType": "menu",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.hotelelephant.com/redakteure/user_upload/website/apostelstube/Menue_Apostelstube_deutsch_ab_01.10.26.pdf",
+  "wine": 85,
+  "website": "https://www.hotelelephant.com/it/restaurants/restaurant-apostelstube",
+  "lat": 46.7194264,
+  "lng": 11.6532447,
+  "placeId": "ChIJ_9PXXAwFeEcRHk6iBCoyQvA"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Nove",
+  "city": "liguria",
+  "area": "Alassio",
+  "address": "Via Privata Montagù 9/1, 17021, Alassio",
+  "stars": 1,
+  "cuisine": "Ligurian",
+  "rating": 4.6,
+  "reviews": 157,
+  "dinnerType": "menu",
+  "dinner": 240,
+  "dinnerNote": "Tasting menu (other menus from €200)",
+  "sourceType": "site",
+  "source": "https://www.noveristorante.it/menu.html",
+  "website": "https://www.noveristorante.it",
+  "lat": 44.0117944,
+  "lng": 8.172401,
+  "placeId": "ChIJ_3M-57Vd0hIRg6kV_9o8ldY"
+}

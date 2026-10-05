@@ -1,0 +1,20 @@
+{
+  "name": "In Viaggio - Claudio Melis",
+  "city": "trentino-south-tyrol",
+  "area": "Merano",
+  "address": "Via Belvedere 17, 39012, Merano",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 79,
+  "dinnerType": "menu",
+  "dinner": 188,
+  "dinnerNote": "Tasting menu (other menus from €138)",
+  "sourceType": "site",
+  "source": "https://inviaggioristorante.com/",
+  "wine": 74,
+  "website": "https://www.inviaggioristorante.com/",
+  "lat": 46.6729096,
+  "lng": 11.1765125,
+  "placeId": "ChIJZ2GY2XuegkcRUBNbJ09Tayk"
+}

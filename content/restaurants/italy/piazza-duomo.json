@@ -1,0 +1,17 @@
+{
+  "name": "Piazza Duomo",
+  "city": "piedmont",
+  "area": "Alba",
+  "address": "Vicolo dell'Arco 12, Angolo Piazza Risorgimento 4, 12051, Alba",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 1191,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.piazzaduomoalba.it",
+  "lat": 44.7006536,
+  "lng": 8.0363522,
+  "placeId": "ChIJSw-GLl2z0hIRX8zyKXltoq8"
+}

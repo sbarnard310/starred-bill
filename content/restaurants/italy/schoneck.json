@@ -1,0 +1,17 @@
+{
+  "name": "Schöneck",
+  "city": "trentino-south-tyrol",
+  "area": "Molini",
+  "address": "Via Schloss Schöneck 11, 39030, Molini",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.7,
+  "reviews": 415,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.schoeneck.it/it/home",
+  "lat": 46.8186079,
+  "lng": 11.8482868,
+  "placeId": "ChIJXy2rmIf1d0cRgq6_dGHc9R8"
+}

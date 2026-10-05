@@ -1,0 +1,17 @@
+{
+  "name": "Paolo e Barbara",
+  "city": "liguria",
+  "area": "San Remo",
+  "address": "Via Roma 47, 18038, San Remo",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.5,
+  "reviews": 171,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.paolobarbara.it/",
+  "lat": 43.8148723,
+  "lng": 7.7738025,
+  "placeId": "ChIJ4yQojVz1zRIRLcUAasMCtoI"
+}

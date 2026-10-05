@@ -1,0 +1,19 @@
+{
+  "name": "L'Argine a Vencò",
+  "city": "friuli-venezia-giulia",
+  "area": "Dolegna del Collio",
+  "address": "Località Vencò 15, 34070, Dolegna del Collio",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.6,
+  "reviews": 701,
+  "dinnerType": "menu",
+  "dinner": 115,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://largineavenco.it/menu/",
+  "website": "https://www.largineavenco.it/",
+  "lat": 46.0025426,
+  "lng": 13.4631925,
+  "placeId": "ChIJJ43wA-Ose0cRyKcWTMKsuYE"
+}

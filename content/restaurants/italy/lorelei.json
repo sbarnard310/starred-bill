@@ -1,0 +1,17 @@
+{
+  "name": "Lorelei",
+  "city": "campania",
+  "area": "Sorrento",
+  "address": "Via Aniello Califano 4, 80067, Sorrento",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.5,
+  "reviews": 449,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristoranteloreleisorrento.com",
+  "lat": 40.6298333,
+  "lng": 14.3813239,
+  "placeId": "ChIJ6SHC4ReZOxMRFrm8hwdATQQ"
+}

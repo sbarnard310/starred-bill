@@ -1,0 +1,17 @@
+{
+  "name": "SanBrite",
+  "city": "veneto",
+  "area": "Cortina d'Ampezzo",
+  "address": "Località Alverà 200/E, 32043, Cortina d'Ampezzo",
+  "stars": 1,
+  "cuisine": "Alpine",
+  "rating": 4.7,
+  "reviews": 453,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.sanbrite.it/",
+  "lat": 46.5434618,
+  "lng": 12.1565176,
+  "placeId": "ChIJnfBx_UA0eEcRUgc0IMvOrk0"
+}

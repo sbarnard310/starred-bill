@@ -1,0 +1,20 @@
+{
+  "name": "La Palta",
+  "city": "emilia-romagna",
+  "area": "Borgonovo Val Tidone",
+  "address": "Località Bilegno 67, 29011, Borgonovo Val Tidone",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.7,
+  "reviews": 662,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.lapalta.it/menu/",
+  "wine": 40,
+  "website": "https://www.lapalta.it/",
+  "lat": 44.9914946,
+  "lng": 9.4703811,
+  "placeId": "ChIJN93ukfzOgEcRonnfgDuosZk"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Oro Restaurant",
+  "city": "venice",
+  "address": "Isola della Giudecca 10, 30133, Venice",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.3,
+  "reviews": 87,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.belmond.com/dining/europe/italy/venice/oro/",
+  "lat": 45.4271,
+  "lng": 12.3412,
+  "placeId": "ChIJ0U-xZiqufkcR7NP7JREjP1E"
+}

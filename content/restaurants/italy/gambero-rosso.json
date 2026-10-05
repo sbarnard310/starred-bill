@@ -1,0 +1,19 @@
+{
+  "name": "Gambero Rosso",
+  "city": "calabria",
+  "area": "Marina di Gioiosa Ionica",
+  "address": "Via Montezemolo 65, 89046, Marina di Gioiosa Ionica",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.8,
+  "reviews": 761,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu (other menus from €50)",
+  "sourceType": "site",
+  "source": "https://www.gamberorosso.net/categoria-prodotto/menu-degustazioni/",
+  "website": "https://www.gamberorosso.net/",
+  "lat": 38.2990691,
+  "lng": 16.3276783,
+  "placeId": "ChIJbeQChHMlFRMROU6t6G1XhyA"
+}

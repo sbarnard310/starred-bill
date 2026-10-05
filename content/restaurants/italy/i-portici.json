@@ -1,0 +1,17 @@
+{
+  "name": "I Portici",
+  "city": "emilia-romagna",
+  "area": "Bologna",
+  "address": "Via dell'Indipendenza 69, 40121, Bologna",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.3,
+  "reviews": 1223,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.iporticihotel.com/",
+  "lat": 44.5019817,
+  "lng": 11.3448122,
+  "placeId": "ChIJRw8NyJvUf0cRdSzaPExI5UM"
+}

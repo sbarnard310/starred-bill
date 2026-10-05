@@ -1,0 +1,17 @@
+{
+  "name": "Locanda Margon",
+  "city": "trentino-south-tyrol",
+  "area": "Ravina",
+  "address": "Via Margone 15, 38123, Ravina",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 701,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.locandamargon.it/",
+  "lat": 46.0368139,
+  "lng": 11.1065928,
+  "placeId": "ChIJuamR9fhzgkcRRU7Sa0Wwgqs"
+}

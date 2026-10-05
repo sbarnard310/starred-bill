@@ -1,0 +1,16 @@
+{
+  "name": "La Capinera",
+  "city": "taormina",
+  "address": "Via Nazionale 177, località Spisone, 98039, Taormina",
+  "stars": 1,
+  "cuisine": "Sicilian",
+  "rating": 4.4,
+  "reviews": 605,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.pietrodagostino.it/",
+  "lat": 37.863136,
+  "lng": 15.295927,
+  "placeId": "ChIJWYWZKHQRFBMRryMGBl2GEg4"
+}

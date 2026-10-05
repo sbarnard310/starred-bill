@@ -1,0 +1,16 @@
+{
+  "name": "Local",
+  "city": "venice",
+  "address": "Salizzada dei Greci, sestiere Castello 3303, 30122, Venice",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 747,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristorantelocal.com/it/home",
+  "lat": 45.4356,
+  "lng": 12.345893,
+  "placeId": "ChIJdzcksyeufkcRKolpWat_x9M"
+}

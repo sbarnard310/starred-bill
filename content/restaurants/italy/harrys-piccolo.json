@@ -1,0 +1,20 @@
+{
+  "name": "Harry's Piccolo",
+  "city": "friuli-venezia-giulia",
+  "area": "Trieste",
+  "address": "Via San Nicolò 5A, 34121, Trieste",
+  "stars": 2,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.9,
+  "reviews": 138,
+  "dinnerType": "menu",
+  "dinner": 100,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://harryspiccolo.it/wp-content/uploads/2025/08/menu_A21_4-ENG.pdf",
+  "wine": 50,
+  "website": "https://www.harryspiccolo.it",
+  "lat": 45.6511471,
+  "lng": 13.7700495,
+  "placeId": "ChIJcS9-wutre0cRSX0VpdBkLI0"
+}

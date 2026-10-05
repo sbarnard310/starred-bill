@@ -1,0 +1,17 @@
+{
+  "name": "Il Bavaglino",
+  "city": "sicily",
+  "area": "Terrasini",
+  "address": "Via dei Mille 2/b, 90049, Terrasini",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4,
+  "reviews": 44,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.giuseppecosta.com",
+  "lat": 38.1554559,
+  "lng": 13.0810216,
+  "placeId": "ChIJqxjXKiOTGRMR5uS-aDovBUQ"
+}

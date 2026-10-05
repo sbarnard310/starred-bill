@@ -1,0 +1,17 @@
+{
+  "name": "Ca' Matilde",
+  "city": "emilia-romagna",
+  "area": "Rubbianino",
+  "address": "Via Polita 14, 42020, Rubbianino",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.8,
+  "reviews": 639,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.camatilde.it",
+  "lat": 44.652336,
+  "lng": 10.52569,
+  "placeId": "ChIJMSxMpScFgEcR_2jlpDnfIko"
+}

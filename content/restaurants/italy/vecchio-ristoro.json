@@ -1,0 +1,16 @@
+{
+  "name": "Vecchio Ristoro",
+  "city": "aosta-valley",
+  "address": "Via Tourneuve 4, 11100, Aosta",
+  "stars": 1,
+  "cuisine": "Cuisine from the Aosta Valley",
+  "rating": 4.7,
+  "reviews": 365,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://vecchioristoro.com",
+  "lat": 45.7386406,
+  "lng": 7.3155868,
+  "placeId": "ChIJB8eKqbcgiUcRAgdbVoNvf7g"
+}

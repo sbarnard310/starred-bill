@@ -1,0 +1,19 @@
+{
+  "name": "Taverna Estia",
+  "city": "campania",
+  "area": "Brusciano",
+  "address": "Via Guido De Ruggiero 108, 80031, Brusciano",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 471,
+  "dinnerType": "menu",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu (other menus from €200)",
+  "sourceType": "site",
+  "source": "https://www.tavernaestia.it/menu/",
+  "website": "https://www.tavernaestia.it/",
+  "lat": 40.9083323,
+  "lng": 14.4232938,
+  "placeId": "ChIJayYsomKuOxMRQINDUOZQjaY"
+}

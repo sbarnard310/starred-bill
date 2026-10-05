@@ -1,0 +1,16 @@
+{
+  "name": "Condividere",
+  "city": "turin",
+  "address": "Via Bologna 20/a, 10152, Turin",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.8,
+  "reviews": 778,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.condividere.com/",
+  "lat": 45.0802655,
+  "lng": 7.6911056,
+  "placeId": "ChIJz6tr4WttiEcRIcL8mxYWE1I"
+}

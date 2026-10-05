@@ -1,0 +1,19 @@
+{
+  "name": "Une",
+  "city": "umbria",
+  "area": "Capodacqua",
+  "address": "Via Fiorenzuola 37, 06034, Capodacqua",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 383,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.ristoranteune.com/",
+  "website": "https://ristoranteune.com/",
+  "lat": 43.0177785,
+  "lng": 12.7839323,
+  "placeId": "ChIJdx8_Ow-BLhMR7ThcMbQMvkQ"
+}

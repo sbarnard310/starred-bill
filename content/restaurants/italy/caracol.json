@@ -1,0 +1,17 @@
+{
+  "name": "Caracol",
+  "city": "campania",
+  "area": "Bacoli",
+  "address": "Via Faro 44, località Capo Miseno, 80070, Bacoli",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.7,
+  "reviews": 348,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.caracolgourmet.it/",
+  "lat": 40.7827339,
+  "lng": 14.0834126,
+  "placeId": "ChIJRQPu5m8SOxMRARv2Ij92Qtg"
+}

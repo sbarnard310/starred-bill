@@ -1,0 +1,17 @@
+{
+  "name": "Cortile Spirito Santo",
+  "city": "sicily",
+  "area": "Syracuse",
+  "address": "Via Salomone 21, Ortigia, 96100, Syracuse",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 321,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.cortilespiritosanto.com",
+  "lat": 37.0564227,
+  "lng": 15.2944533,
+  "placeId": "ChIJkfYRUQPNExMRwdyZfcqRlS8"
+}

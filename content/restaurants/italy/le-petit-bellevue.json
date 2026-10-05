@@ -1,0 +1,17 @@
+{
+  "name": "Le Petit Bellevue",
+  "city": "aosta-valley",
+  "area": "Cogne",
+  "address": "Rue Grand Paradis 22, 11012, Cogne",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.7,
+  "reviews": 44,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.hotelbellevue.it/it/ristoranti/view/le-petit-bellevue",
+  "lat": 45.6067309,
+  "lng": 7.3556842,
+  "placeId": "ChIJJy8kNnLhiEcRDyamosx0Hok"
+}

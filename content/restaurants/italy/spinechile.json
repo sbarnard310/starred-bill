@@ -1,0 +1,19 @@
+{
+  "name": "Spinechile",
+  "city": "veneto",
+  "area": "Schio",
+  "address": "Contra' Pacche 2, località Tretto, 36015, Schio",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 318,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €60)",
+  "sourceType": "site",
+  "source": "https://www.spinechile.com/menu/",
+  "website": "https://www.spinechile.com",
+  "lat": 45.746704,
+  "lng": 11.337221,
+  "placeId": "ChIJ1d7QkKaxeEcRHMIjpLsaNdc"
+}

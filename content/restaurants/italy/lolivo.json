@@ -1,0 +1,17 @@
+{
+  "name": "L'Olivo",
+  "city": "campania",
+  "area": "Anacapri",
+  "address": "Via Capodimonte 14, 80071, Anacapri",
+  "stars": 2,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.3,
+  "reviews": 147,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.jumeirah.com/en/dine/italy/l-olivo",
+  "lat": 40.5559154,
+  "lng": 14.2220085,
+  "placeId": "ChIJ-S_r1d55OxMR3nVJEeW2KaE"
+}

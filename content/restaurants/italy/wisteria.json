@@ -1,0 +1,16 @@
+{
+  "name": "Wistèria",
+  "city": "venice",
+  "address": "Fondamenta del Forner, Sestiere San Polo 2908, 30125, Venice",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 607,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.wisteria-restaurant.com/it/",
+  "lat": 45.43566,
+  "lng": 12.32682,
+  "placeId": "ChIJC9bavOOxfkcRQ1E-5SEBVZw"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Vescovado",
+  "city": "liguria",
+  "area": "Noli",
+  "address": "Piazzale Rosselli, 17026, Noli",
+  "stars": 1,
+  "cuisine": "Ligurian",
+  "rating": 4.4,
+  "reviews": 406,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ricchebuonochef.it/",
+  "lat": 44.2075887,
+  "lng": 8.4163876,
+  "placeId": "ChIJ8UyZX4v80hIR1NC6H6h2uyc"
+}

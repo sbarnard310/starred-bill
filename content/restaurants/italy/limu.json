@@ -1,0 +1,17 @@
+{
+  "name": "Līmū",
+  "city": "sicily",
+  "area": "Bagheria",
+  "address": "Via Ciro Scianna 177, 90011, Bagheria",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 232,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.limurestaurant.it",
+  "lat": 38.0827311,
+  "lng": 13.5077378,
+  "placeId": "ChIJ94tLu7zjGRMR0UisaXLLcJw"
+}

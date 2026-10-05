@@ -1,0 +1,17 @@
+{
+  "name": "Fradis Minoris",
+  "city": "sardinia",
+  "area": "Pula",
+  "address": "Laguna di Nora, 09050, Pula",
+  "stars": 1,
+  "cuisine": "Sardinian",
+  "rating": 4.4,
+  "reviews": 382,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.fradisminoris.it",
+  "lat": 38.9867335,
+  "lng": 9.0067135,
+  "placeId": "ChIJ37mrbeQn5xIRPB0SOKNX1Nw"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "La Ciau del Tornavento",
+  "city": "piedmont",
+  "area": "Treiso",
+  "address": "Piazza Leopoldo Baracco 7, 12050, Treiso",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.6,
+  "reviews": 1807,
+  "dinnerType": "menu",
+  "dinner": 140,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://www.laciaudeltornavento.it/it/carta-e-menu",
+  "website": "https://www.laciaudeltornavento.it/",
+  "lat": 44.6892253,
+  "lng": 8.0867172,
+  "placeId": "ChIJ0VNxv-O00hIR8ji-_VcmTxY"
+}

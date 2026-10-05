@@ -1,0 +1,17 @@
+{
+  "name": "Tre Olivi",
+  "city": "campania",
+  "area": "Paestum",
+  "address": "Via Poseidonia 41, 84047, Paestum",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 194,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.paganopaestum.it/tre_olivi/ristorante-tre-olivi-paestum/",
+  "lat": 40.42511,
+  "lng": 14.98659,
+  "placeId": "ChIJJ2c0vQH9OxMRXSHjZPj7Frs"
+}

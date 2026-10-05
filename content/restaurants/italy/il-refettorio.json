@@ -1,0 +1,17 @@
+{
+  "name": "Il Refettorio",
+  "city": "campania",
+  "area": "Conca dei Marini",
+  "address": "Via Roma 2, 84010, Conca dei Marini",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 3.9,
+  "reviews": 23,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://monasterosantarosa.com/it/ristorazione/",
+  "lat": 40.6207949,
+  "lng": 14.5770614,
+  "placeId": "ChIJJRYPwhWVOxMRRnQcdlysOjo"
+}

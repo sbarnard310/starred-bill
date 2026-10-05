@@ -1,0 +1,17 @@
+{
+  "name": "La Primula",
+  "city": "friuli-venezia-giulia",
+  "area": "San Quirino",
+  "address": "Via San Rocco 47, 33080, San Quirino",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.6,
+  "reviews": 505,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristorantelaprimula.it/",
+  "lat": 46.0348797,
+  "lng": 12.6814506,
+  "placeId": "ChIJAYl2r917eUcR1mhggnwYhVA"
+}

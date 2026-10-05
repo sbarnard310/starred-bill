@@ -1,0 +1,19 @@
+{
+  "name": "Locanda San Lorenzo",
+  "city": "veneto",
+  "area": "Puos d'Alpago",
+  "address": "Via IV Novembre 79, 32016, Puos d'Alpago",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 729,
+  "dinnerType": "menu",
+  "dinner": 240,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "sourceType": "site",
+  "source": "https://www.locandasanlorenzo.it/",
+  "website": "https://www.locandasanlorenzo.it/",
+  "lat": 46.1395908,
+  "lng": 12.363875,
+  "placeId": "ChIJRU47VRcKeUcRdgQDoz930Ss"
+}

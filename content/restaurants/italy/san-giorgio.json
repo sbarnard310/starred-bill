@@ -1,0 +1,19 @@
+{
+  "name": "San Giorgio",
+  "city": "liguria",
+  "area": "Genoa",
+  "address": "Viale Brigate Bisagno 69r, 16129, Genoa",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 898,
+  "dinnerType": "menu",
+  "dinner": 80,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.ristorantesangiorgiogenova.it/il-menu/",
+  "website": "https://www.ristorantesangiorgiogenova.it/",
+  "lat": 44.4016634,
+  "lng": 8.945731,
+  "placeId": "ChIJfeGjkrdD0xIR7JnQbnO0Ycw"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Casa Buono",
+  "city": "liguria",
+  "area": "Ventimiglia",
+  "address": "Corso Cuneo 28, Località Trucco, 18039, Ventimiglia",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.8,
+  "reviews": 378,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ristorantecasabuono.com/",
+  "lat": 43.8462058,
+  "lng": 7.5886453,
+  "placeId": "ChIJ57_C29WTzRIRRaLJNRxJI_Q"
+}

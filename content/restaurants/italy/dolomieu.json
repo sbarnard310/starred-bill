@@ -1,0 +1,20 @@
+{
+  "name": "Dolomieu",
+  "city": "trentino-south-tyrol",
+  "area": "Madonna di Campiglio",
+  "address": "Via Castelletto Inferiore 10, 38086, Madonna di Campiglio",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 187,
+  "dinnerType": "menu",
+  "dinner": 370,
+  "dinnerNote": "Tasting menu (other menus from €55)",
+  "sourceType": "site",
+  "source": "https://www.dvchalet.it/files/getbyid/carta_vini_inverno_25-26,3424.pdf",
+  "wine": 95,
+  "website": "https://www.dvchalet.it/it/ristorante-dolomieu-stella-michelin",
+  "lat": 46.223693,
+  "lng": 10.8257548,
+  "placeId": "ChIJXQHg6jpcgkcRgUjmXwqtgD4"
+}

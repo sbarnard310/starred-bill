@@ -1,0 +1,19 @@
+{
+  "name": "Re Santi e Leoni",
+  "city": "campania",
+  "area": "Nola",
+  "address": "Via Anfiteatro Laterizio 92, 80035, Nola",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 4.8,
+  "reviews": 281,
+  "dinnerType": "menu",
+  "dinner": 90,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://resantieleoni.com/menu/",
+  "website": "https://resantieleoni.com/",
+  "lat": 40.9282413,
+  "lng": 14.5266743,
+  "placeId": "ChIJcVDFaZmzOxMRdMyR66kz1o8"
+}

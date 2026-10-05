@@ -1,0 +1,17 @@
+{
+  "name": "Da Lucio",
+  "city": "emilia-romagna",
+  "area": "Rimini",
+  "address": "Viale Ortigara 80, 47921, Rimini",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.7,
+  "reviews": 1518,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://da-lucio.com",
+  "lat": 44.0782476,
+  "lng": 12.570068,
+  "placeId": "ChIJJXPo2xDDLBMR4FgjfDvMY3I"
+}

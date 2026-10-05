@@ -1,0 +1,17 @@
+{
+  "name": "Zass",
+  "city": "campania",
+  "area": "Positano",
+  "address": "Via Laurito 2, 84017, Positano",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.1,
+  "reviews": 9,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ilsanpietro.com/it/ristorazione/zass/",
+  "lat": 40.623268,
+  "lng": 14.5038074,
+  "placeId": "ChIJTTegVVqXOxMRX4nA4MSAv-I"
+}

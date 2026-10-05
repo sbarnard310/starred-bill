@@ -1,0 +1,17 @@
+{
+  "name": "Locanda del Pilone",
+  "city": "piedmont",
+  "area": "Alba",
+  "address": "Frazione Madonna di Como 34, 12051, Alba",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 280,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.locandadelpilone.com/",
+  "lat": 44.6636848,
+  "lng": 8.0470513,
+  "placeId": "ChIJvd0i1mW00hIRbiJA_zy0Vwk"
+}

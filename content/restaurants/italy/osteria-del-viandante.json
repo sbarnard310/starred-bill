@@ -1,0 +1,20 @@
+{
+  "name": "Osteria del Viandante",
+  "city": "emilia-romagna",
+  "area": "Rubiera",
+  "address": "Piazza XXIV Maggio 15, 42048, Rubiera",
+  "stars": 1,
+  "cuisine": "Emilian",
+  "rating": 4.6,
+  "reviews": 433,
+  "dinnerType": "menu",
+  "dinner": 60,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://osteriadelviandante.com/i-menu/",
+  "wine": 80,
+  "website": "https://osteriadelviandante.com/",
+  "lat": 44.65333,
+  "lng": 10.781861,
+  "placeId": "ChIJN_v-Grrwf0cROkFXZtrmkNo"
+}

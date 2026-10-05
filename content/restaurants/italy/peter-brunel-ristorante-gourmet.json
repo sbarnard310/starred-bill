@@ -1,0 +1,18 @@
+{
+  "name": "Peter Brunel Ristorante Gourmet",
+  "city": "trentino-south-tyrol",
+  "area": "Arco",
+  "address": "Via Linfano 47, 38062, Arco",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 351,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://www.peterbrunel.com",
+  "lat": 45.8806081,
+  "lng": 10.875047,
+  "placeId": "ChIJk4s8xywRgkcRWt6vd2yCOsc"
+}

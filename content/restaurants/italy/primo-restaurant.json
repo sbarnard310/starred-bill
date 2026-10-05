@@ -1,0 +1,19 @@
+{
+  "name": "Primo Restaurant",
+  "city": "apulia",
+  "area": "Lecce",
+  "address": "Via 47° Reggimento Fanteria 7, 73100, Lecce",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.5,
+  "reviews": 349,
+  "dinnerType": "menu",
+  "dinner": 110,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.primorestaurant.it/menu/",
+  "website": "https://www.primorestaurant.it/",
+  "lat": 40.3526,
+  "lng": 18.177374,
+  "placeId": "ChIJQYEsWeMuRBMRFWgAR-W62oY"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "I Pupi",
+  "city": "sicily",
+  "area": "Bagheria",
+  "address": "Vicolo Cavallotti 11, 90011, Bagheria",
+  "stars": 1,
+  "cuisine": "Sicilian",
+  "rating": 4.4,
+  "reviews": 513,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ipupiristorante.it/",
+  "lat": 38.0803301,
+  "lng": 13.5116679,
+  "placeId": "ChIJbUjKYVjiGRMRYnhvV2flfa0"
+}

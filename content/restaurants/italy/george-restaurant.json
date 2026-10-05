@@ -1,0 +1,17 @@
+{
+  "name": "George Restaurant",
+  "city": "campania",
+  "area": "Naples",
+  "address": "corso Vittorio Emanuele 135, 80121, Naples",
+  "stars": 2,
+  "cuisine": "Contemporary",
+  "rating": 4.6,
+  "reviews": 220,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.georgerestaurant.it/",
+  "lat": 40.8372677,
+  "lng": 14.2300686,
+  "placeId": "ChIJLQKHEf0IOxMRMClP898p2_k"
+}

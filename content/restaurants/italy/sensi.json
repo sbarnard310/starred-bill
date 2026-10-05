@@ -1,0 +1,17 @@
+{
+  "name": "Sensi",
+  "city": "campania",
+  "area": "Amalfi",
+  "address": "Via Pietro Comite 4, 84011, Amalfi",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.6,
+  "reviews": 409,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://sensiamalfi.it/",
+  "lat": 40.6339198,
+  "lng": 14.6030985,
+  "placeId": "ChIJrdEO1q2VOxMR7tVFwKbxa9M"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Sarri",
+  "city": "liguria",
+  "area": "Imperia",
+  "address": "Lungomare C. Colombo 108, Borgo Prino, 18100, Imperia",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.6,
+  "reviews": 626,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristorantesarri.it/",
+  "lat": 43.87008,
+  "lng": 8.0059,
+  "placeId": "ChIJwadrskts0hIRJKrT0NUWxM0"
+}

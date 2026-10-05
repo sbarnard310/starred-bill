@@ -1,0 +1,17 @@
+{
+  "name": "Borgo Sant'Anna",
+  "city": "piedmont",
+  "area": "Monforte d'Alba",
+  "address": "Località Sant'Anna 84, 12065, Monforte d'Alba",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.8,
+  "reviews": 569,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.borgosantanna.it/",
+  "lat": 44.577783,
+  "lng": 7.9950812,
+  "placeId": "ChIJPQogVq6x0hIRnnBrzXrGqPQ"
+}

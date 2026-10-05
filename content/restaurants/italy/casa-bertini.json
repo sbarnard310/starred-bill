@@ -1,0 +1,20 @@
+{
+  "name": "Casa Bertini",
+  "city": "marche",
+  "area": "Recanati",
+  "address": "Via le Grazie 7b, 62019, Recanati",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 219,
+  "dinnerType": "menu",
+  "dinner": 100,
+  "dinnerNote": "Tasting menu (other menus from €80)",
+  "sourceType": "site",
+  "source": "https://www.ristorantecasabertini.it/menu/",
+  "wine": 40,
+  "website": "https://www.ristorantecasabertini.it",
+  "lat": 43.4061444,
+  "lng": 13.5381739,
+  "placeId": "ChIJORP76F6JLRMRrH6GIauhb6U"
+}

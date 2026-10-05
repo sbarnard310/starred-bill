@@ -1,0 +1,17 @@
+{
+  "name": "Il Piastrino",
+  "city": "emilia-romagna",
+  "area": "Pennabilli",
+  "address": "Via Parco Begni 7, 47864, Pennabilli",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.7,
+  "reviews": 448,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.piastrino.it/",
+  "lat": 43.82111,
+  "lng": 12.2645054,
+  "placeId": "ChIJiXPWE06PLBMRCh6xXS5NiOU"
+}

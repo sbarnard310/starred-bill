@@ -1,0 +1,20 @@
+{
+  "name": "D.one Ristorante Diffuso",
+  "city": "abruzzo",
+  "area": "Montepagano",
+  "address": "Via del Borgo 1, 64026, Montepagano",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 355,
+  "dinnerType": "menu",
+  "dinner": 100,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.donerestaurant.it/feed/",
+  "wine": 60,
+  "website": "https://www.donerestaurant.it/",
+  "lat": 42.6772065,
+  "lng": 13.9897625,
+  "placeId": "ChIJrZqDlj6UMRMR8AxPMMHBsnc"
+}

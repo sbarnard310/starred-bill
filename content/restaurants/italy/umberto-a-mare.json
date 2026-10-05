@@ -1,0 +1,17 @@
+{
+  "name": "Umberto a Mare",
+  "city": "campania",
+  "area": "Forio",
+  "address": "Via del Soccorso 8, 80075, Forio",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.3,
+  "reviews": 346,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.umbertoamare.it",
+  "lat": 40.7370555,
+  "lng": 13.8550343,
+  "placeId": "ChIJ95QdaO5AOxMRpFSUdZ9J9Dg"
+}

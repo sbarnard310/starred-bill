@@ -1,0 +1,17 @@
+{
+  "name": "Trattoria da Amerigo",
+  "city": "emilia-romagna",
+  "area": "Savigno",
+  "address": "Via Marconi 16, 40060, Savigno",
+  "stars": 1,
+  "cuisine": "Emilian",
+  "rating": 4.7,
+  "reviews": 1614,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://amerigo1934.com/",
+  "lat": 44.3903557,
+  "lng": 11.0739644,
+  "placeId": "ChIJHR-IJQDMKhMRxTv5ilSvqSc"
+}

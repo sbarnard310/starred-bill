@@ -1,0 +1,16 @@
+{
+  "name": "Del Cambio",
+  "city": "turin",
+  "address": "Piazza Carignano 2, 10123, Turin",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.3,
+  "reviews": 631,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://delcambio.it/",
+  "lat": 45.0695181,
+  "lng": 7.6848806,
+  "placeId": "ChIJL0Gv1rdtiEcRpANd7zb7WvY"
+}

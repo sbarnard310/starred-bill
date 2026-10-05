@@ -1,0 +1,17 @@
+{
+  "name": "Johannesstube",
+  "city": "trentino-south-tyrol",
+  "area": "Nova Levante",
+  "address": "Via San Valentino 3, 39056, Nova Levante",
+  "stars": 1,
+  "cuisine": "Alpine",
+  "rating": 4.9,
+  "reviews": 39,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.johannesstube.com/",
+  "lat": 46.4296498,
+  "lng": 11.5334034,
+  "placeId": "ChIJIZho8U5weEcRjgD-ND6_IFY"
+}

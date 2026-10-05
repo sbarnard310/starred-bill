@@ -1,0 +1,19 @@
+{
+  "name": "Ancòra",
+  "city": "emilia-romagna",
+  "area": "Cesenatico",
+  "address": "Viale Trento 31, 47042, Cesenatico",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 87,
+  "dinnerType": "menu",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu (other menus from €79)",
+  "sourceType": "site",
+  "source": "https://www.ancoracesenatico.it",
+  "website": "https://www.ancoracesenatico.it",
+  "lat": 44.1955658,
+  "lng": 12.4042192,
+  "placeId": "ChIJf-WeLAC3LBMRfV68qE5GKw0"
+}

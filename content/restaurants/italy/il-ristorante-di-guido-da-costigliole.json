@@ -1,0 +1,19 @@
+{
+  "name": "Il Ristorante di Guido da Costigliole",
+  "city": "piedmont",
+  "area": "Santo Stefano Belbo",
+  "address": "Località San Maurizio 39, 12058, Santo Stefano Belbo",
+  "stars": 1,
+  "cuisine": "Piedmontese",
+  "rating": 4.1,
+  "reviews": 92,
+  "dinnerType": "menu",
+  "dinner": 70,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.guidodacostigliole.it/menu/",
+  "website": "https://www.guidodacostigliole.it/",
+  "lat": 44.7054966,
+  "lng": 8.2100874,
+  "placeId": "ChIJtfDnEfmLh0cR1xr4jo88e34"
+}

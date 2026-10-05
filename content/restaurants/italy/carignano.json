@@ -1,0 +1,16 @@
+{
+  "name": "Carignano",
+  "city": "turin",
+  "address": "Via Carlo Alberto 35, 10123, Turin",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.4,
+  "reviews": 503,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ristorantecarignano.it/",
+  "lat": 45.065155,
+  "lng": 7.6840119,
+  "placeId": "ChIJL28dO29tiEcRlf0ZAcYXqAY"
+}

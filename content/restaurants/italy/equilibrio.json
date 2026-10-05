@@ -1,0 +1,17 @@
+{
+  "name": "Equilibrio",
+  "city": "liguria",
+  "area": "Dolcedo",
+  "address": "Località Martin 13, 18020, Dolcedo",
+  "stars": 1,
+  "cuisine": "Ligurian",
+  "rating": 4.9,
+  "reviews": 315,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://equilibrioristorante.com",
+  "lat": 43.8997111,
+  "lng": 7.9572418,
+  "placeId": "ChIJ_53rPtVx0hIRvjwnW7JdqvM"
+}

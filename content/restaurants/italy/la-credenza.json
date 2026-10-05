@@ -1,0 +1,20 @@
+{
+  "name": "La Credenza",
+  "city": "piedmont",
+  "area": "San Maurizio Canavese",
+  "address": "Via Cavour 22, 10077, San Maurizio Canavese",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 665,
+  "dinnerType": "menu",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "site",
+  "source": "https://credenzagroup.it/locali/ristorante-la-credenza/menu/",
+  "wine": 170,
+  "website": "https://credenzagroup.it/locali/ristorante-la-credenza/",
+  "lat": 45.217537,
+  "lng": 7.6319706,
+  "placeId": "ChIJA8UlCmxmiEcRpdxT-DAqhn4"
+}

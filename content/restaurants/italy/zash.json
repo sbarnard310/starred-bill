@@ -1,0 +1,17 @@
+{
+  "name": "Zash",
+  "city": "sicily",
+  "area": "Archi",
+  "address": "SP 2 I/II 60, 95018, Archi",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 464,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.zash.it/",
+  "lat": 37.7079174,
+  "lng": 15.1998992,
+  "placeId": "ChIJW5sW3BMHFBMRneAf_1UaToI"
+}

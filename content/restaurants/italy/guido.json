@@ -1,0 +1,17 @@
+{
+  "name": "Guido",
+  "city": "emilia-romagna",
+  "area": "Rimini",
+  "address": "Lungomare Guido Spadazzi 12, 47924, Rimini",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 4.7,
+  "reviews": 606,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristoranteguido.it/",
+  "lat": 44.03226,
+  "lng": 12.62138,
+  "placeId": "ChIJVdAeUdPCLBMRGx_WpnR5D-M"
+}

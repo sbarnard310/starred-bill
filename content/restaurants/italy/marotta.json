@@ -1,0 +1,17 @@
+{
+  "name": "Marotta",
+  "city": "campania",
+  "area": "Squille",
+  "address": "Via Marrochelle 52, 81010, Squille",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 128,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.marottaristorante.com",
+  "lat": 41.146241,
+  "lng": 14.4096379,
+  "placeId": "ChIJnR3ikzNROhMR-SW4Ts3PS-o"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "La Tana Gourmet",
+  "city": "veneto",
+  "area": "Asiago",
+  "address": "Via Kaberlaba 19, 36012, Asiago",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 374,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://latanagourmet.it/",
+  "lat": 45.85289,
+  "lng": 11.49528,
+  "placeId": "ChIJ0WaJOM64eEcRg3PWxLPbDRU"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "San Martino",
+  "city": "veneto",
+  "area": "Scorzè",
+  "address": "Piazza Cappelletto 1, Località Rio San Martino, 30037, Scorzè",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 325,
+  "dinnerType": "menu",
+  "dinner": 50,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.ristorantesanmartino.info/wp-content/uploads/2026/10/MENU-GOURMET-2026.pdf",
+  "website": "https://www.ristorantesanmartino.info/",
+  "lat": 45.5892243,
+  "lng": 12.110501,
+  "placeId": "ChIJ1UQCGGIzeUcRxWjONgYdLpg"
+}

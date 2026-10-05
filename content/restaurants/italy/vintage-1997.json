@@ -1,0 +1,18 @@
+{
+  "name": "Vintage 1997",
+  "city": "turin",
+  "address": "Piazza Solferino 16/h, 10121, Turin",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.3,
+  "reviews": 577,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.vintage1997.com/i-nostri-menu",
+  "website": "https://www.vintage1997.com/",
+  "lat": 45.068485,
+  "lng": 7.676379,
+  "placeId": "ChIJa0jQOW1tiEcRwvK7Iuyverg"
+}

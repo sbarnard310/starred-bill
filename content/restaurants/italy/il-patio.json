@@ -1,0 +1,17 @@
+{
+  "name": "Il Patio",
+  "city": "piedmont",
+  "area": "Biella",
+  "address": "Via Giuseppe Arnulfo 4/L, 13900, Biella",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.7,
+  "reviews": 312,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristoranteilpatio.it/",
+  "lat": 45.5652115,
+  "lng": 8.0526276,
+  "placeId": "ChIJHdWJbTSeiEcRNnUlOH9oKq0"
+}

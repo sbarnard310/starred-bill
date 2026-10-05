@@ -1,0 +1,17 @@
+{
+  "name": "Capogiro",
+  "city": "sardinia",
+  "area": "Baia Sardinia",
+  "address": "Località Li Mucchi Bianchi, 07021, Baia Sardinia",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 67,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://7pines-sardinia.com/it/ristoranti-bar/capogiro",
+  "lat": 41.1283048,
+  "lng": 9.4720013,
+  "placeId": "ChIJ6fJOINBH2RIRPUxEBSH5J1c"
+}

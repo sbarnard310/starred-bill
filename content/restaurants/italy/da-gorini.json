@@ -1,0 +1,17 @@
+{
+  "name": "Da Gorini",
+  "city": "emilia-romagna",
+  "area": "San Piero in Bagno",
+  "address": "Via Verdi 5, 47021, San Piero in Bagno",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 705,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.dagorini.it/",
+  "lat": 43.8587914,
+  "lng": 11.9745195,
+  "placeId": "ChIJm4ZgVPF7KxMRhWFgp9w2rPY"
+}

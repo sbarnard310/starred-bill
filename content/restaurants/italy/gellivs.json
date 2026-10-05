@@ -1,0 +1,17 @@
+{
+  "name": "Gellivs",
+  "city": "veneto",
+  "area": "Oderzo",
+  "address": "Calle Pretoria 6, 31046, Oderzo",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 632,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.gellivs.it/",
+  "lat": 45.7828798,
+  "lng": 12.4946107,
+  "placeId": "ChIJi8g1aC1DeUcR8LIpOuQ_ucM"
+}

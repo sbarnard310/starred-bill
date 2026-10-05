@@ -1,0 +1,19 @@
+{
+  "name": "Zur Rose",
+  "city": "trentino-south-tyrol",
+  "area": "San Michele",
+  "address": "Via Josef Innerhofer 2, 39057, San Michele",
+  "stars": 1,
+  "cuisine": "Regional Cuisine",
+  "rating": 4.7,
+  "reviews": 300,
+  "dinnerType": "menu",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €100)",
+  "sourceType": "site",
+  "source": "https://www.zur-rose.com/media/herbst_menue_september_2026_2.pdf",
+  "website": "https://www.zur-rose.com",
+  "lat": 46.455093,
+  "lng": 11.258857,
+  "placeId": "ChIJPxWrsSqBgkcRlyGmR3Mopbs"
+}

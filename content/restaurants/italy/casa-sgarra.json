@@ -1,0 +1,20 @@
+{
+  "name": "Casa Sgarra",
+  "city": "apulia",
+  "area": "Trani",
+  "address": "Lungomare C. Colombo 114, 76125, Trani",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.9,
+  "reviews": 581,
+  "dinnerType": "menu",
+  "dinner": 220,
+  "dinnerNote": "Tasting menu (other menus from €90)",
+  "sourceType": "site",
+  "source": "https://casasgarra.it/wp-content/uploads/2026/06/casa_sgarra_carta_vini_2026.pdf",
+  "wine": 45,
+  "website": "https://www.casasgarra.it",
+  "lat": 41.270434,
+  "lng": 16.4341752,
+  "placeId": "ChIJI-jxN3AFOBMRWyhuwzBX5yg"
+}

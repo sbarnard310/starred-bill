@@ -1,0 +1,17 @@
+{
+  "name": "Indaco",
+  "city": "campania",
+  "area": "Lacco Ameno",
+  "address": "Piazza Santa Restituta 1, 80076, Lacco Ameno",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.5,
+  "reviews": 85,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.reginaisabella.com/it/hotel-con-ristorante-bar-ischia/ristorante-indaco",
+  "lat": 40.7554715,
+  "lng": 13.8853358,
+  "placeId": "ChIJO5hpV3FAOxMRn75H8RrMO-w"
+}

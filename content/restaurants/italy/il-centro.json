@@ -1,0 +1,17 @@
+{
+  "name": "Il Centro",
+  "city": "piedmont",
+  "area": "Priocca",
+  "address": "Via Umberto I 5, 12040, Priocca",
+  "stars": 1,
+  "cuisine": "Piedmontese",
+  "rating": 4.7,
+  "reviews": 718,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristoranteilcentro.com/",
+  "lat": 44.7905049,
+  "lng": 8.0624786,
+  "placeId": "ChIJY8SHv6v2h0cR6lvRbmrgGAc"
+}

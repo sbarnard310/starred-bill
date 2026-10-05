@@ -1,0 +1,16 @@
+{
+  "name": "Piano35",
+  "city": "turin",
+  "address": "Corso Inghilterra 3, 10138, Turin",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.5,
+  "reviews": 2229,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.piano35.com/",
+  "lat": 45.06945,
+  "lng": 7.663038,
+  "placeId": "ChIJ4SZ-wxptiEcR5eWgSgbHVc8"
+}

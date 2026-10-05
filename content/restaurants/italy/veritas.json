@@ -1,0 +1,20 @@
+{
+  "name": "Veritas",
+  "city": "campania",
+  "area": "Naples",
+  "address": "Corso Vittorio Emanuele 141, 80121, Naples",
+  "stars": 1,
+  "cuisine": "Campanian",
+  "rating": 4.4,
+  "reviews": 441,
+  "dinnerType": "menu",
+  "dinner": 140,
+  "dinnerNote": "Tasting menu (other menus from €80)",
+  "sourceType": "site",
+  "source": "https://www.veritasrestaurant.it/regala-2/",
+  "wine": 40,
+  "website": "https://www.veritasrestaurant.it/",
+  "lat": 40.8372277,
+  "lng": 14.2311901,
+  "placeId": "ChIJhQf7Dv0IOxMRE0ElVRpF8II"
+}

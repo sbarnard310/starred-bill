@@ -1,0 +1,17 @@
+{
+  "name": "La Peca",
+  "city": "veneto",
+  "area": "Lonigo",
+  "address": "Via Alberto Giovanelli 2, 36045, Lonigo",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 483,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://lapeca.it/",
+  "lat": 45.3848934,
+  "lng": 11.3990641,
+  "placeId": "ChIJV71tzOU-f0cROUwQmHRoAUM"
+}

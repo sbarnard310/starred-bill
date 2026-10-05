@@ -1,0 +1,17 @@
+{
+  "name": "Nazionale",
+  "city": "piedmont",
+  "area": "Vernante",
+  "address": "Via Cavour 60, 12019, Vernante",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.6,
+  "reviews": 651,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ristorante.ilnazionale.com/",
+  "lat": 44.2439086,
+  "lng": 7.5334613,
+  "placeId": "ChIJWyLeEV1xzRIRSG5PlgGcfMI"
+}

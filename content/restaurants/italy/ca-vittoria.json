@@ -1,0 +1,17 @@
+{
+  "name": "Ca' Vittoria",
+  "city": "piedmont",
+  "area": "Tigliole",
+  "address": "Via Roma 14, 14016, Tigliole",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 337,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristorantevittoria.it",
+  "lat": 44.8866139,
+  "lng": 8.075849,
+  "placeId": "ChIJWcUi1G3uh0cRAcXqyXuoiUI"
+}

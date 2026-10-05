@@ -1,0 +1,17 @@
+{
+  "name": "Vignamare",
+  "city": "liguria",
+  "area": "Andora",
+  "address": "Strada Castello, 20 - Colla Micheri, 17051, Andora",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 149,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.peqagri.it/pages/ristorante-vignamare",
+  "lat": 43.9729346,
+  "lng": 8.150574,
+  "placeId": "ChIJ-1ySP2Fd0hIRUEuAeEVuezw"
+}

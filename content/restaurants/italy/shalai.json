@@ -1,0 +1,17 @@
+{
+  "name": "Shalai",
+  "city": "sicily",
+  "area": "Linguaglossa",
+  "address": "Via Guglielmo Marconi 25, 95015, Linguaglossa",
+  "stars": 1,
+  "cuisine": "Sicilian",
+  "rating": 4.6,
+  "reviews": 321,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.shalai.it/ristorante.html",
+  "lat": 37.8433039,
+  "lng": 15.1419716,
+  "placeId": "ChIJDd154E4bFBMR5WULsH-dpGI"
+}

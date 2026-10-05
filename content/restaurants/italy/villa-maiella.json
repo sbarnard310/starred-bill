@@ -1,0 +1,19 @@
+{
+  "name": "Villa Maiella",
+  "city": "abruzzo",
+  "area": "Guardiagrele",
+  "address": "Via Sette Dolori 30, Località Villa Maiella, 66016, Guardiagrele",
+  "stars": 1,
+  "cuisine": "Cuisine from Abruzzo",
+  "rating": 4.8,
+  "reviews": 806,
+  "dinnerType": "menu",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu (other menus from €80)",
+  "sourceType": "site",
+  "source": "https://www.villamaiella.it/en/menu-food/",
+  "website": "https://www.villamaiella.it/",
+  "lat": 42.188822,
+  "lng": 14.2047054,
+  "placeId": "ChIJRflHgMhWMBMRDZUqNJXb6cE"
+}

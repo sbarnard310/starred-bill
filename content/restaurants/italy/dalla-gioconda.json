@@ -1,0 +1,17 @@
+{
+  "name": "Dalla Gioconda",
+  "city": "marche",
+  "area": "Gabicce Monte",
+  "address": "Via dell'Orizzonte 2, 61011, Gabicce Monte",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.5,
+  "reviews": 510,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.dallagioconda.it/",
+  "lat": 43.963886,
+  "lng": 12.7725315,
+  "placeId": "ChIJpcBun0LgLBMRskauKsdMAR0"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Alici",
+  "city": "campania",
+  "area": "Amalfi",
+  "address": "Via Giovanni Augustariccio 33, 84011, Amalfi",
+  "stars": 1,
+  "cuisine": "Campanian",
+  "rating": 4.8,
+  "reviews": 367,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://borgosantandrea.it/it/dining/ristorante-alici/",
+  "lat": 40.6188758,
+  "lng": 14.5766031,
+  "placeId": "ChIJTWWjar-VOxMRzRDEH_NRrrs"
+}

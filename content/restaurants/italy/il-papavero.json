@@ -1,0 +1,17 @@
+{
+  "name": "Il Papavero",
+  "city": "campania",
+  "area": "Eboli",
+  "address": "Corso Garibaldi 112/113, 84025, Eboli",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 514,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.ristoranteilpapavero.it/",
+  "lat": 40.6190612,
+  "lng": 15.0539834,
+  "placeId": "ChIJZa10bA1gORMR_sNo5AncF2U"
+}

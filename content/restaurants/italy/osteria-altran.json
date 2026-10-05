@@ -1,0 +1,17 @@
+{
+  "name": "Osteria Altran",
+  "city": "friuli-venezia-giulia",
+  "area": "Ruda",
+  "address": "Località Cortona 19, 33050, Ruda",
+  "stars": 1,
+  "cuisine": "Italian Contemporary",
+  "rating": 4.7,
+  "reviews": 109,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://osteria-altran.eatbu.com",
+  "lat": 45.8132892,
+  "lng": 13.410651,
+  "placeId": "ChIJG7SlBbqle0cRrSNMbhhDZJE"
+}

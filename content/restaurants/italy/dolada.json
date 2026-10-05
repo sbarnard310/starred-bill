@@ -1,0 +1,17 @@
+{
+  "name": "Dolada",
+  "city": "veneto",
+  "area": "Plois",
+  "address": "Via Dolada 21, 32016, Plois",
+  "stars": 1,
+  "cuisine": "Country cooking",
+  "rating": 4.7,
+  "reviews": 271,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.dolada.it/",
+  "lat": 46.1736379,
+  "lng": 12.3601001,
+  "placeId": "ChIJpem2AkqneUcRwyh4ej8cNOI"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Uliassi",
+  "city": "marche",
+  "area": "Senigallia",
+  "address": "Banchina di Levante 6, 60019, Senigallia",
+  "stars": 3,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 1602,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.uliassi.com",
+  "lat": 43.7194599,
+  "lng": 13.2206587,
+  "placeId": "ChIJcR28_J1zLRMRk_P3vABNEog"
+}

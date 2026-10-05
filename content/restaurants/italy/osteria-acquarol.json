@@ -1,0 +1,19 @@
+{
+  "name": "Osteria Acquarol",
+  "city": "trentino-south-tyrol",
+  "area": "San Michele",
+  "address": "Via Johann Georg Plazer 10, 39057, San Michele",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 271,
+  "dinnerType": "menu",
+  "dinner": 200,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "site",
+  "source": "https://www.acquarol.it/it/p/il-menu-2",
+  "website": "https://www.acquarol.it/",
+  "lat": 46.4556659,
+  "lng": 11.2589442,
+  "placeId": "ChIJw0T3eA-bgkcR2Nlt0MHbOH4"
+}

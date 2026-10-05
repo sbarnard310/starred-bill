@@ -1,0 +1,20 @@
+{
+  "name": "Magnolia",
+  "city": "emilia-romagna",
+  "area": "Longiano",
+  "address": "Via Pelliciano 35, loc. Montilgallo, 47020, Longiano",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.8,
+  "reviews": 619,
+  "dinnerType": "menu",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.magnoliaristorante.it/menu/",
+  "wine": 60,
+  "website": "https://www.magnoliaristorante.it/",
+  "lat": 44.0731058,
+  "lng": 12.3498464,
+  "placeId": "ChIJv8jHz7y3LBMR1zBF6x5BYAg"
+}

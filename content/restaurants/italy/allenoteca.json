@@ -1,0 +1,17 @@
+{
+  "name": "All'Enoteca",
+  "city": "piedmont",
+  "area": "Canale",
+  "address": "Via Roma 57, 12043, Canale",
+  "stars": 1,
+  "cuisine": "Piedmontese",
+  "rating": 4.6,
+  "reviews": 793,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.davidepalluda.it/",
+  "lat": 44.7969064,
+  "lng": 7.9929925,
+  "placeId": "ChIJg1NnkLLwh0cRyOHFVdpLOA8"
+}

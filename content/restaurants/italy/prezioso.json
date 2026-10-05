@@ -1,0 +1,19 @@
+{
+  "name": "Prezioso",
+  "city": "trentino-south-tyrol",
+  "area": "Merano",
+  "address": "Via Fragsburg 3, 39012, Merano",
+  "stars": 1,
+  "cuisine": "Alpine",
+  "rating": 4.8,
+  "reviews": 29,
+  "dinnerType": "menu",
+  "dinner": 202,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.fragsburg.com/en/culinary/table-reservation/",
+  "website": "https://www.fragsburg.com/it/arte-culinaria/gourmet-restaurant-prezioso/",
+  "lat": 46.642027,
+  "lng": 11.1909286,
+  "placeId": "ChIJn0u2RZi9gkcRfePx5NqBUyk"
+}

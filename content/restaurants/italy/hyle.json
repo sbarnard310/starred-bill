@@ -1,0 +1,19 @@
+{
+  "name": "Hyle",
+  "city": "calabria",
+  "area": "San Giovanni in Fiore",
+  "address": "Contrada Torre Garga SS 107, 87055, San Giovanni in Fiore",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 5,
+  "reviews": 324,
+  "dinnerType": "menu",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu (other menus from €120)",
+  "sourceType": "site",
+  "source": "https://www.hyleristorante.it/filosofia-di-menu",
+  "website": "https://www.hyleristorante.it/",
+  "lat": 39.2847315,
+  "lng": 16.6443721,
+  "placeId": "ChIJUcSuTdN7QBMREvhJAg67c_I"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Relais Blu",
+  "city": "campania",
+  "area": "Massa Lubrense",
+  "address": "Via Roncato 60, 80061, Massa Lubrense",
+  "stars": 1,
+  "cuisine": "Mediterranean Cuisine",
+  "rating": 4.8,
+  "reviews": 670,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.relaisblu.com/it/restaurant/fine-dining",
+  "lat": 40.58996,
+  "lng": 14.3303537,
+  "placeId": "ChIJDZGLfaudOxMRrAcc6YRrtNM"
+}

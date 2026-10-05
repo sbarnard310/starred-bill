@@ -1,0 +1,17 @@
+{
+  "name": "I Tenerumi",
+  "city": "sicily",
+  "area": "Isola Vulcano",
+  "address": "Via Vulcanello, 98055, Isola Vulcano",
+  "stars": 2,
+  "cuisine": "Vegetarian",
+  "rating": 4.6,
+  "reviews": 41,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tenerumiristorante.it/",
+  "lat": 38.4305495,
+  "lng": 14.9560516,
+  "placeId": "ChIJxUJ8o1F_FhMRra1-3iGIwD0"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Nostrano",
+  "city": "marche",
+  "area": "Pesaro",
+  "address": "Piazzale della Libertà 7, 61121, Pesaro",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.6,
+  "reviews": 624,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.nostranoristorante.it",
+  "lat": 43.9136749,
+  "lng": 12.9193802,
+  "placeId": "ChIJI1gAcj4ZLRMRsTSsTgLhuEQ"
+}

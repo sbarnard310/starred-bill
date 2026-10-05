@@ -1,0 +1,18 @@
+{
+  "name": "Wood",
+  "city": "aosta-valley",
+  "area": "Breuil Cervinia",
+  "address": "Via Guido Rey 26, 11021, Breuil Cervinia",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.4,
+  "reviews": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "notice": "Temporarily closed (Google)",
+  "website": "https://www.woodcervinia.it/",
+  "lat": 45.9334388,
+  "lng": 7.6294846,
+  "placeId": "ChIJo5b1o-nMiEcRH_t-jOg5WLg"
+}

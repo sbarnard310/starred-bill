@@ -1,0 +1,19 @@
+{
+  "name": "Cracco Portofino",
+  "city": "liguria",
+  "area": "Portofino",
+  "address": "Molo Umberto I 9, 16034, Portofino",
+  "stars": 1,
+  "cuisine": "Fish and Seafood",
+  "rating": 3.9,
+  "reviews": 222,
+  "dinnerType": "menu",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu (other menus from €160)",
+  "sourceType": "site",
+  "source": "https://www.craccoportofino.it/wp-content/uploads/2026/09/Off-Menu-sett-SS26-1.pdf",
+  "website": "https://www.craccoportofino.it",
+  "lat": 44.302429,
+  "lng": 9.2103994,
+  "placeId": "ChIJ2U2uF0ef1BIR167TH6N1N7g"
+}

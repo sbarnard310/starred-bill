@@ -1,0 +1,19 @@
+{
+  "name": "Trattoria Zappatori",
+  "city": "piedmont",
+  "area": "Pinerolo",
+  "address": "Corso Torino 34, 10064, Pinerolo",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 380,
+  "dinnerType": "menu",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "site",
+  "source": "https://trattoriazappatori.it/menu/",
+  "website": "https://www.trattoriazappatori.it",
+  "lat": 44.8847909,
+  "lng": 7.3320196,
+  "placeId": "ChIJs5M66wQliEcRwjo3EzayVtU"
+}

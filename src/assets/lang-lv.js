@@ -8,7 +8,7 @@
     acctSentCode: "Mēs nosūtījām 6 ciparu kodu uz {email}. Ievadiet to zemāk, lai pieteiktos šeit. (Saite e-pastā arī darbojas, bet sākuma ekrāna lietotnē tā atver pārlūku.)", acctCodeLabel: "Kods no e-pasta", acctVerify: "Pieteikties ar kodu", acctVerifying: "Pārbauda…", acctCodeWrong: "Šis kods nederēja. Pārbaudiet to vai pieprasiet jaunu.", acctBadCode: "Ievadiet 6 ciparu kodu no e-pasta.",
     notrackOn: "Šis pārlūks vairs netiek ieskaitīts apmeklējumu statistikā.", notrackOff: "Šis pārlūks atkal tiek ieskaitīts apmeklējumu statistikā.",
     cookieText: "Vai drīkstam izmantot Google Analytics sīkdatnes, lai redzētu, kā vietne tiek lietota? Apmeklējumus jebkurā gadījumā skaitām bez sīkdatnēm.", cookieAccept: "Piekrītu", cookieReject: "Noraidu", cookieSettings: "Mainīt sīkdatņu izvēli",
-    navCompare: "Salīdzināt", navMap: "Karte", navStars: "Pēc zvaigznēm", navMethod: "Metode", navContact: "Kontakti", navDestinations: "Galamērķi", navGuides: "Ceļveži", navNear: "Tuvumā", wishlist: "Vēlmju saraksts", wishTitle: "Jūsu vēlmju saraksts",
+    navCompare: "Salīdzināt", navMap: "Karte", navStars: "Pēc zvaigznēm", navMethod: "Metode", navContact: "Kontakti", navDestinations: "Galamērķi", navGuides: "Ceļveži", navNear: "Tuvumā", navPick: "Palīdzi izvēlēties", wishlist: "Vēlmju saraksts", wishTitle: "Jūsu vēlmju saraksts",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Michelin ceļveža restorāni",
     heroTitle: "Cik <em>maksā</em> Michelin zvaigzne {placeIn}?",

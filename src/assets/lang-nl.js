@@ -16,7 +16,7 @@
     acctSentCode: "We hebben een code van 6 cijfers naar {email} gestuurd. Typ hem hieronder om je hier aan te melden. (De link in de e-mail werkt ook, maar in de app op je beginscherm opent die je browser.)", acctCodeLabel: "Code uit de e-mail", acctVerify: "Aanmelden met code", acctVerifying: "Controleren…", acctCodeWrong: "Die code werkte niet. Controleer hem of vraag een nieuwe aan.", acctBadCode: "Typ de code van 6 cijfers uit de e-mail.",
     notrackOn: "Deze browser telt niet meer mee in de bezoekersstatistieken.", notrackOff: "Deze browser telt weer mee in de bezoekersstatistieken.",
     cookieText: "Mogen we cookies van Google Analytics gebruiken om te zien hoe de site wordt gebruikt? Bezoeken worden hoe dan ook zonder cookies geteld.", cookieAccept: "Accepteren", cookieReject: "Weigeren", cookieSettings: "Cookiekeuze wijzigen",
-    navCompare: "Vergelijken", navMap: "Kaart", navStars: "Per ster", navMethod: "Werkwijze", navContact: "Contact", navDestinations: "Bestemmingen", navGuides: "Gidsen", navNear: "In de buurt", wishlist: "Verlanglijst", wishTitle: "Je verlanglijst",
+    navCompare: "Vergelijken", navMap: "Kaart", navStars: "Per ster", navMethod: "Werkwijze", navContact: "Contact", navDestinations: "Bestemmingen", navGuides: "Gidsen", navNear: "In de buurt", navPick: "Help me kiezen", wishlist: "Verlanglijst", wishTitle: "Je verlanglijst",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restaurants in de Michelingids",
     heroTitle: "Wat een Michelinster <em>kost</em> {placeIn}.",

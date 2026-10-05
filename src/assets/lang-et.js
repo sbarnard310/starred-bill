@@ -8,7 +8,7 @@
     acctSentCode: "Saatsime aadressile {email} 6-kohalise koodi. Sisesta see allpool, et siin sisse logida. (Kirjas olev link töötab ka, kuid avakuva rakenduses avab see brauseri.)", acctCodeLabel: "Kood kirjast", acctVerify: "Logi koodiga sisse", acctVerifying: "Kontrollime…", acctCodeWrong: "See kood ei sobinud. Kontrolli seda või küsi uus.", acctBadCode: "Sisesta kirjast saadud 6-kohaline kood.",
     notrackOn: "Seda brauserit ei arvestata enam külastusstatistikas.", notrackOff: "Seda brauserit arvestatakse taas külastusstatistikas.",
     cookieText: "Kas tohime kasutada Google Analyticsi küpsiseid, et näha, kuidas saiti kasutatakse? Külastusi loeme igal juhul küpsisteta.", cookieAccept: "Nõustun", cookieReject: "Keeldun", cookieSettings: "Muuda küpsiste valikut",
-    navCompare: "Võrdle", navMap: "Kaart", navStars: "Tähtede järgi", navMethod: "Metoodika", navContact: "Kontakt", navDestinations: "Sihtkohad", navGuides: "Juhendid", navNear: "Minu lähedal", wishlist: "Soovinimekiri", wishTitle: "Sinu soovinimekiri",
+    navCompare: "Võrdle", navMap: "Kaart", navStars: "Tähtede järgi", navMethod: "Metoodika", navContact: "Kontakt", navDestinations: "Sihtkohad", navGuides: "Juhendid", navNear: "Minu lähedal", navPick: "Aita valida", wishlist: "Soovinimekiri", wishTitle: "Sinu soovinimekiri",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Michelini teejuhi restoranid",
     heroTitle: "Mis <em>maksab</em> Michelini täht {placeIn}?",

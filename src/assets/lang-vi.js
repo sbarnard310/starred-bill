@@ -11,7 +11,7 @@
     acctSentCode: "Chúng tôi đã gửi mã 6 chữ số đến {email}. Nhập mã bên dưới để đăng nhập tại đây. (Liên kết trong email cũng dùng được, nhưng trong ứng dụng trên màn hình chính, nó sẽ mở trình duyệt.)", acctCodeLabel: "Mã trong email", acctVerify: "Đăng nhập bằng mã", acctVerifying: "Đang kiểm tra…", acctCodeWrong: "Mã đó không dùng được. Hãy kiểm tra lại hoặc yêu cầu mã mới.", acctBadCode: "Nhập mã 6 chữ số trong email.",
     notrackOn: "Trình duyệt này không còn được tính vào thống kê lượt truy cập.", notrackOff: "Trình duyệt này đã được tính lại vào thống kê lượt truy cập.",
     cookieText: "Chúng tôi có thể dùng cookie của Google Analytics để xem cách mọi người sử dụng trang không? Lượt truy cập vẫn được đếm mà không cần cookie.", cookieAccept: "Chấp nhận", cookieReject: "Từ chối", cookieSettings: "Đổi lựa chọn cookie",
-    navCompare: "So sánh", navMap: "Bản đồ", navStars: "Theo sao", navMethod: "Phương pháp", navContact: "Liên hệ", navDestinations: "Điểm đến", navGuides: "Cẩm nang", navNear: "Gần tôi", wishlist: "Danh sách muốn đến", wishTitle: "Danh sách muốn đến của bạn",
+    navCompare: "So sánh", navMap: "Bản đồ", navStars: "Theo sao", navMethod: "Phương pháp", navContact: "Liên hệ", navDestinations: "Điểm đến", navGuides: "Cẩm nang", navNear: "Gần tôi", navPick: "Giúp tôi chọn", wishlist: "Danh sách muốn đến", wishTitle: "Danh sách muốn đến của bạn",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Nhà hàng trong Cẩm nang MICHELIN",
     heroTitle: "Một sao Michelin {placeIn} <em>giá</em> bao nhiêu?",

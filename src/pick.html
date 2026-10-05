@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="{{htmlLang}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -9,7 +9,7 @@
 <meta property="og:title" content="{{title}}">
 <meta property="og:description" content="{{description}}">
 <meta property="og:url" content="{{canonical}}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{{ogType}}">
 <meta property="og:site_name" content="The Starred Bill">
 <meta property="og:image" content="{{ogImage}}">
 <meta property="og:image:width" content="1200">
@@ -17,7 +17,6 @@
 <meta property="og:image:alt" content="{{ogAlt}}">
 <meta name="twitter:card" content="summary_large_image">
 {{jsonld}}
-<meta name="robots" content="noindex">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#10362A">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
@@ -31,7 +30,7 @@
 <!-- Visit statistics: Umami, no cookies (see the privacy page) -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="0717d470-551a-4b38-8632-c2e273c3cc5d" data-domains="starredbill.com,www.starredbill.com"></script>
 </head>
-<body class="account-page">
+<body class="info-page near-page pick-page" data-static-crumbs>
 {{icons}}
 <div class="masthead">
 <header class="site-header">
@@ -42,7 +41,7 @@
         <nav class="nav" aria-label="Sections">
           <a href="/#destinations" id="destLink" data-i18n="navDestinations">Destinations</a>
           <a href="/near-me/" class="nav-near"><svg aria-hidden="true"><use href="#locate"/></svg><span data-i18n="navNear">Near me</span></a>
-          <a href="/pick/" class="nav-pick"><svg aria-hidden="true"><use href="#spark"/></svg><span data-i18n="navPick">Help me pick</span></a>
+          <a href="/pick/" class="nav-pick" aria-current="page"><svg aria-hidden="true"><use href="#spark"/></svg><span data-i18n="navPick">Help me pick</span></a>
           <a href="/guides/" class="nav-guides" data-i18n="navGuides">Guides</a>
         </nav>
         <button type="button" class="account-btn" id="accountBtn"></button>
@@ -57,7 +56,7 @@
 </header>
   <div class="switchbar">
     <div class="wrap">
-      <nav class="crumbs" id="crumbs" aria-label="Where you are"></nav>
+      <nav class="crumbs" id="crumbs" aria-label="Where you are">{{crumbs}}</nav>
       <div class="hseg-right">
         <button type="button" class="install-btn" id="installBtn" hidden></button>
         <div class="hseg" role="group" aria-label="Language / 語言" id="langSwitch"></div>
@@ -66,16 +65,41 @@
   </div>
 </div>
 
-<main class="wrap acct-main" id="acctMain">
-  <h1 class="acct-h1" data-i18n="accTitle">Your account</h1>
-  <p class="acct-lede" id="acctLede"></p>
-  <div id="acctBody"><p class="acct-loading" data-i18n="accLoading"></p></div>
+<main id="pickMain">
+  <section class="near-hero pick-hero">
+    <div class="wrap">
+      <span class="eyebrow">Help me pick</span>
+      <h1>Help me pick a Michelin star restaurant</h1>
+      <p class="lede">{{lede}}</p>
+    </div>
+  </section>
+
+  <section class="pick-stage">
+    <div class="wrap">
+      <div class="pick-quiz" id="quiz">
+        <div class="pick-top">
+          <button type="button" class="pick-back" id="backBtn" hidden><span aria-hidden="true">←</span> Back</button>
+          <ol class="pick-steps" id="stepDots" aria-label="Questions"></ol>
+          <span class="pick-stepno" id="stepNo"></span>
+        </div>
+        <div class="pick-body" id="stepBody"><p class="pick-wait">Loading the restaurants…</p></div>
+        <p class="pick-left" id="leftCount" aria-live="polite"></p>
+      </div>
+      <div class="pick-result" id="result" hidden></div>
+    </div>
+  </section>
+
+  <section class="near-static">
+    <div class="wrap prose guide">
+{{static}}
+    </div>
+  </section>
 </main>
 
 <footer>
   <div class="wrap">
     <span>The Starred Bill</span>
-    <a href="/guides/what-is-a-michelin-star/" class="foot-guide" lang="en">What is a Michelin star?</a>
+    <a href="/guides/what-is-a-michelin-star/" class="foot-guide">What is a Michelin star?</a>
     <span data-i18n="footNote"></span>
     <p class="foot-legal" lang="en">The Starred Bill is independent and is not affiliated with or endorsed by Michelin. MICHELIN and MICHELIN Guide are trademarks of Michelin.</p>
   </div>
@@ -84,6 +108,6 @@
 <script id="page-data" type="application/json">{{data}}</script>
 <script src="{{asset:common.js}}"></script>
 <script src="{{asset:account.js}}"></script>
-<script src="{{asset:account-page.js}}"></script>
+<script src="{{asset:pick.js}}"></script>
 </body>
 </html>

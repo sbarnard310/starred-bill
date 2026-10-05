@@ -12,7 +12,7 @@
     acctSentCode: "{email} adresine 6 haneli bir kod gönderdik. Burada giriş yapmak için aşağıya yazın. (E-postadaki bağlantı da çalışır, ancak ana ekran uygulamasında tarayıcıyı açar.)", acctCodeLabel: "E-postadaki kod", acctVerify: "Kodla giriş yap", acctVerifying: "Kontrol ediliyor…", acctCodeWrong: "Bu kod çalışmadı. Kontrol edin ya da yeni bir kod isteyin.", acctBadCode: "E-postadaki 6 haneli kodu yazın.",
     notrackOn: "Bu tarayıcı artık ziyaret istatistiklerine sayılmıyor.", notrackOff: "Bu tarayıcı yeniden ziyaret istatistiklerine sayılıyor.",
     cookieText: "Sitenin nasıl kullanıldığını görmek için Google Analytics çerezlerini kullanabilir miyiz? Ziyaretler her durumda çerezsiz sayılır.", cookieAccept: "Kabul et", cookieReject: "Reddet", cookieSettings: "Çerez tercihini değiştir",
-    navCompare: "Karşılaştır", navMap: "Harita", navStars: "Yıldıza göre", navMethod: "Yöntem", navContact: "İletişim", navDestinations: "Destinasyonlar", navGuides: "Rehberler", navNear: "Yakınımda", wishlist: "İstek listesi", wishTitle: "İstek listeniz",
+    navCompare: "Karşılaştır", navMap: "Harita", navStars: "Yıldıza göre", navMethod: "Yöntem", navContact: "İletişim", navDestinations: "Destinasyonlar", navGuides: "Rehberler", navNear: "Yakınımda", navPick: "Seçmeme yardım et", wishlist: "İstek listesi", wishTitle: "İstek listeniz",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Michelin Rehberi restoranları",
     heroTitle: "{placeIn} bir Michelin yıldızı ne <em>kadar</em>?",

@@ -8,7 +8,7 @@
     acctSentCode: "Išsiuntėme 6 skaitmenų kodą adresu {email}. Įveskite jį žemiau, kad prisijungtumėte čia. (Nuoroda laiške irgi veikia, bet pradžios ekrano programėlėje ji atidaro naršyklę.)", acctCodeLabel: "Kodas iš laiško", acctVerify: "Prisijungti su kodu", acctVerifying: "Tikrinama…", acctCodeWrong: "Šis kodas netiko. Patikrinkite jį arba paprašykite naujo.", acctBadCode: "Įveskite 6 skaitmenų kodą iš laiško.",
     notrackOn: "Ši naršyklė nebeįtraukiama į lankomumo statistiką.", notrackOff: "Ši naršyklė vėl įtraukiama į lankomumo statistiką.",
     cookieText: "Ar galime naudoti „Google Analytics“ slapukus, kad matytume, kaip naudojamasi svetaine? Apsilankymai bet kuriuo atveju skaičiuojami be slapukų.", cookieAccept: "Sutinku", cookieReject: "Atsisakau", cookieSettings: "Keisti slapukų pasirinkimą",
-    navCompare: "Palyginimas", navMap: "Žemėlapis", navStars: "Pagal žvaigždutes", navMethod: "Metodika", navContact: "Kontaktai", navDestinations: "Kryptys", navGuides: "Gidai", navNear: "Netoli manęs", wishlist: "Norų sąrašas", wishTitle: "Jūsų norų sąrašas",
+    navCompare: "Palyginimas", navMap: "Žemėlapis", navStars: "Pagal žvaigždutes", navMethod: "Metodika", navContact: "Kontaktai", navDestinations: "Kryptys", navGuides: "Gidai", navNear: "Netoli manęs", navPick: "Padėkite išsirinkti", wishlist: "Norų sąrašas", wishTitle: "Jūsų norų sąrašas",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · „Michelin“ gido restoranai",
     heroTitle: "Kiek <em>kainuoja</em> „Michelin“ žvaigždutė {placeIn}?",

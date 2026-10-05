@@ -10,7 +10,7 @@
     acctSentCode: "Послали смо шестоцифрени код на {email}. Унесите га испод да бисте се овде пријавили. (Линк у имејлу такође ради, али у апликацији на почетном екрану отвара прегледач.)", acctCodeLabel: "Код из имејла", acctVerify: "Пријава кодом", acctVerifying: "Проверавамо…", acctCodeWrong: "Тај код није успео. Проверите га или затражите нови.", acctBadCode: "Унесите шестоцифрени код из имејла.",
     notrackOn: "Овај прегледач се више не рачуна у статистику посета.", notrackOff: "Овај прегледач се поново рачуна у статистику посета.",
     cookieText: "Можемо ли да користимо колачиће Google Analytics-а да видимо како се сајт користи? Посете ионако бројимо без колачића.", cookieAccept: "Прихвати", cookieReject: "Одбиј", cookieSettings: "Промени избор колачића",
-    navCompare: "Поређење", navMap: "Мапа", navStars: "По звездицама", navMethod: "Метод", navContact: "Контакт", navDestinations: "Дестинације", navGuides: "Водичи", navNear: "У близини", wishlist: "Листа жеља", wishTitle: "Ваша листа жеља",
+    navCompare: "Поређење", navMap: "Мапа", navStars: "По звездицама", navMethod: "Метод", navContact: "Контакт", navDestinations: "Дестинације", navGuides: "Водичи", navNear: "У близини", navPick: "Помози ми да изаберем", wishlist: "Листа жеља", wishTitle: "Ваша листа жеља",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Ресторани из Мишленовог водича",
     heroTitle: "Колико <em>кошта</em> Мишленова звездица {placeIn}?",

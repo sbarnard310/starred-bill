@@ -27,6 +27,8 @@ Each restaurant is stored once, in its city. It then appears on that city's page
 
 The Near me page (`/near-me/`) is built from the same restaurant files, so it needs no data of its own: every starred restaurant with a map position appears on it automatically. Link to it with `?q=` and a place to open it already searched, e.g. `/near-me/?q=Bath`.
 
+The Help me pick page (`/pick/`) reads the same data: six questions (where, lunch or dinner, budget, stars, food, dietary needs), then a best match, a best value and a wildcard. Its "food mood" groups come from each restaurant's `cuisine` (`MOODS` in `src/assets/pick.js`), its value pick from `dinner`, `lunch`, `wine` and `lunchWine`, and its wildcard prefers a recent `change`. Link to it with `?w=` and a page's address to answer the first question, e.g. `/pick/?w=/uk/england/london/`.
+
 ## Places
 
 Every file in `content/places/` has an `id` (lower-case, hyphens, used in the web address), a `type`, a `name` and an optional `nameZh`.

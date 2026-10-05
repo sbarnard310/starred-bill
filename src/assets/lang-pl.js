@@ -11,7 +11,7 @@
     acctSentCode: "Wysłaliśmy 6-cyfrowy kod na adres {email}. Wpisz go poniżej, aby się tu zalogować. (Link w e-mailu też działa, ale w aplikacji na ekranie głównym otworzy przeglądarkę.)", acctCodeLabel: "Kod z e-maila", acctVerify: "Zaloguj się kodem", acctVerifying: "Sprawdzanie…", acctCodeWrong: "Ten kod nie zadziałał. Sprawdź go lub poproś o nowy.", acctBadCode: "Wpisz 6-cyfrowy kod z e-maila.",
     notrackOn: "Ta przeglądarka nie jest już liczona w statystykach odwiedzin.", notrackOff: "Ta przeglądarka znów jest liczona w statystykach odwiedzin.",
     cookieText: "Czy możemy używać plików cookie Google Analytics, aby sprawdzać, jak korzystacie ze strony? Odwiedziny i tak liczymy bez plików cookie.", cookieAccept: "Akceptuję", cookieReject: "Odrzucam", cookieSettings: "Zmień wybór cookie",
-    navCompare: "Porównanie", navMap: "Mapa", navStars: "Według gwiazdek", navMethod: "Metoda", navContact: "Kontakt", navDestinations: "Kierunki", navGuides: "Poradniki", navNear: "W pobliżu", wishlist: "Ulubione", wishTitle: "Twoje ulubione",
+    navCompare: "Porównanie", navMap: "Mapa", navStars: "Według gwiazdek", navMethod: "Metoda", navContact: "Kontakt", navDestinations: "Kierunki", navGuides: "Poradniki", navNear: "W pobliżu", navPick: "Pomóż mi wybrać", wishlist: "Ulubione", wishTitle: "Twoje ulubione",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restauracje z Przewodnika Michelin",
     heroTitle: "Ile <em>kosztuje</em> gwiazdka Michelin {placeIn}?",

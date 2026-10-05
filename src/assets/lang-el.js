@@ -11,7 +11,7 @@
     acctSentCode: "Στείλαμε έναν εξαψήφιο κωδικό στο {email}. Πληκτρολογήστε τον παρακάτω για να συνδεθείτε εδώ. (Ο σύνδεσμος στο email λειτουργεί επίσης, αλλά στην εφαρμογή της αρχικής οθόνης ανοίγει το πρόγραμμα περιήγησης.)", acctCodeLabel: "Κωδικός από το email", acctVerify: "Σύνδεση με κωδικό", acctVerifying: "Έλεγχος…", acctCodeWrong: "Ο κωδικός δεν λειτούργησε. Ελέγξτε τον ή ζητήστε νέο.", acctBadCode: "Πληκτρολογήστε τον εξαψήφιο κωδικό από το email.",
     notrackOn: "Αυτό το πρόγραμμα περιήγησης δεν μετριέται πλέον στα στατιστικά επισκέψεων.", notrackOff: "Αυτό το πρόγραμμα περιήγησης μετριέται ξανά στα στατιστικά επισκέψεων.",
     cookieText: "Μπορούμε να χρησιμοποιούμε cookies του Google Analytics για να βλέπουμε πώς χρησιμοποιείται ο ιστότοπος; Οι επισκέψεις μετριούνται χωρίς cookies σε κάθε περίπτωση.", cookieAccept: "Αποδοχή", cookieReject: "Απόρριψη", cookieSettings: "Αλλαγή επιλογής cookies",
-    navCompare: "Σύγκριση", navMap: "Χάρτης", navStars: "Ανά αστέρια", navMethod: "Μέθοδος", navContact: "Επικοινωνία", navDestinations: "Προορισμοί", navGuides: "Οδηγοί", navNear: "Κοντά μου", wishlist: "Λίστα επιθυμιών", wishTitle: "Η λίστα επιθυμιών σας",
+    navCompare: "Σύγκριση", navMap: "Χάρτης", navStars: "Ανά αστέρια", navMethod: "Μέθοδος", navContact: "Επικοινωνία", navDestinations: "Προορισμοί", navGuides: "Οδηγοί", navNear: "Κοντά μου", navPick: "Βοήθεια επιλογής", wishlist: "Λίστα επιθυμιών", wishTitle: "Η λίστα επιθυμιών σας",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Εστιατόρια του Οδηγού Michelin",
     heroTitle: "Πόσο <em>κοστίζει</em> ένα αστέρι Michelin {placeIn};",

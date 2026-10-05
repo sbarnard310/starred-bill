@@ -824,10 +824,17 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 .cookie-actions button:hover { background: rgba(255,255,255,.12); }
 .cookie-settings-btn { font: inherit; font-weight: 600; padding: 8px 18px; border-radius: 999px; border: 1px solid var(--green); background: var(--surface); color: var(--green); cursor: pointer; }
 
-/* "Near me" in the menu: the locate icon with its label. */
-.nav a.nav-near { display: inline-flex; align-items: center; gap: 5px; }
-.nav a.nav-near svg { width: 15px; height: 15px; }
+/* "Near me" and "Help me pick" in the menu: an icon with its label. */
+.nav a.nav-near, .nav a.nav-pick { display: inline-flex; align-items: center; gap: 5px; }
+.nav a.nav-near svg, .nav a.nav-pick svg { width: 15px; height: 15px; }
 .nav a[aria-current="page"] { color: var(--band-ink); }
+/* Destination pages also list their own sections (Compare, Map, By stars…), so on computers Near me and Share show just
+   their icons there, keeping the header on one line. The words stay for screen readers, and in the phone menu. */
+@media (min-width: 721px) {
+  .site-header:has(a[href="#method"]) .nav-near span, .site-header:has(a[href="#method"]) .share-btn span {
+    position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .site-header:has(a[href="#method"]) .share-btn { padding-inline: 9px; }
+}
 
 /* Phone header (720px and below): one row stays on screen (logo, search, wishlist heart, menu button) and the
    breadcrumb bar scrolls away with the page. The menu button drops down the section links, Sign in and Share.
@@ -855,8 +862,8 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
   .header-menu .nav a:hover { background: none; text-decoration: underline; text-underline-offset: 3px; }
   .header-menu .nav a[hidden] { display: none; }
   /* Near me and Guides lead the list; the links to this page's sections follow. */
-  .header-menu .nav a.nav-near, .header-menu .nav a.nav-guides { order: -1; }
-  .header-menu .nav a.nav-near svg { width: 17px; height: 17px; }
+  .header-menu .nav a.nav-near, .header-menu .nav a.nav-pick, .header-menu .nav a.nav-guides { order: -1; }
+  .header-menu .nav a.nav-near svg, .header-menu .nav a.nav-pick svg { width: 17px; height: 17px; }
   .header-menu .account-btn, .header-menu .share-btn { padding: 8px 16px; }
   .switchbar #currencySwitch { display: none; }
 }
@@ -937,4 +944,131 @@ button.near-card:hover { border-color: var(--green); }
   .near-search { flex-basis: 100%; }
   .near-locate { width: 100%; justify-content: center; }
   .near-or { width: 100%; text-align: center; }
+}
+
+/* /pick/ ("Help me pick"): one question per screen in a card that overlaps the green band, then three picks. */
+.pick-hero { padding-bottom: 72px; }
+.pick-stage { margin-top: -48px; padding-bottom: 12px; }
+.pick-quiz, .pick-result { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 14px 40px rgba(16, 54, 42, .12); padding: 22px 26px 24px; }
+.pick-quiz, .pick-result { scroll-margin-top: 126px; }
+.pick-top { display: flex; align-items: center; gap: 14px; min-height: 34px; }
+.pick-back { border: 0; background: none; color: var(--green); font: inherit; font-weight: 600; padding: 6px 4px; cursor: pointer; }
+.pick-steps { display: flex; gap: 6px; list-style: none; margin: 0 0 0 auto; padding: 0; }
+.pick-steps li > * { display: block; width: 28px; height: 6px; border-radius: 3px; background: var(--line); border: 0; padding: 0; }
+.pick-steps li.done > * { background: var(--green); cursor: pointer; }
+.pick-steps li.now > * { background: var(--gold); }
+.pick-stepno { font-family: var(--font-num); font-size: .8rem; color: var(--muted); white-space: nowrap; }
+.pick-back:not([hidden]) + .pick-steps { margin-left: auto; }
+.pick-body { padding-top: 10px; }
+.pick-body h2 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); outline: none; }
+.pick-hint { color: var(--muted); margin: 8px 0 18px; max-width: 62ch; }
+.pick-wait { color: var(--muted); padding: 30px 0; margin: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .pick-in { animation: pick-in .28s ease-out; }
+  @keyframes pick-in { from { opacity: 0; transform: translateX(14px); } to { opacity: 1; transform: none; } }
+}
+.pick-opts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pick-opts-wide { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pick-opt { position: relative; display: grid; gap: 4px; align-content: start; text-align: left; padding: 18px 54px 18px 18px; border: 1.5px solid var(--line); border-radius: 12px;
+  background: var(--surface); color: var(--ink); font: inherit; cursor: pointer; transition: border-color .15s, background .15s, transform .15s; }
+.pick-opt:hover:not(:disabled) { border-color: var(--green); background: var(--green-soft); transform: translateY(-1px); }
+.pick-opt[aria-pressed="true"] { border-color: var(--green); }
+.pick-opt:disabled { opacity: .5; cursor: not-allowed; }
+.po-title { font-weight: 700; font-size: 1.08rem; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.po-title .stars { color: var(--gold); }
+.po-title .stars svg { width: 13px; height: 13px; }
+.po-sub { color: var(--muted); font-size: .9rem; }
+.po-n { position: absolute; top: 16px; right: 14px; font-family: var(--font-num); font-size: .78rem; color: var(--muted); background: var(--bg); border-radius: 999px; padding: 2px 8px; }
+.pick-where { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+.pick-where .near-locate { flex: none; }
+.pick-find { position: relative; flex: 1 1 300px; max-width: 520px; }
+.pick-find .search { width: 100%; }
+.pick-suggest { position: absolute; z-index: 5; left: 0; right: 0; top: calc(100% + 4px); list-style: none; margin: 0; padding: 4px; background: var(--surface);
+  border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 30px rgba(0, 0, 0, .14); }
+.pick-suggest button { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; width: 100%; text-align: left; padding: 9px 10px; border: 0; border-radius: 8px; background: none; color: var(--ink); font: inherit; cursor: pointer; }
+.pick-suggest button:hover, .pick-suggest button:focus-visible { background: var(--green-soft); outline: none; }
+.ps-ctx { color: var(--muted); font-size: .88rem; }
+.ps-n { margin-left: auto; font-family: var(--font-num); font-size: .78rem; color: var(--muted); }
+.ps-none { padding: 10px; color: var(--muted); font-size: .92rem; }
+.pick-status { min-height: 1.3em; margin: 10px 0 0; font-size: .92rem; }
+.pick-status.error { color: var(--danger); }
+.pick-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.pick-chip { display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: inherit; font-size: .93rem; cursor: pointer; }
+.pick-chip span { font-family: var(--font-num); font-size: .76rem; color: var(--muted); }
+.pick-chip:hover { border-color: var(--green); }
+.pick-chip[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: var(--surface); }
+.pick-chip[aria-pressed="true"] span { color: inherit; opacity: .8; }
+.pick-privacy { margin: 16px 0 0; font-size: .82rem; color: var(--muted); }
+.pick-budget { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.pick-amount { font-family: var(--font-display); font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.1; }
+.pick-amount small { font-family: var(--font-body); font-size: .95rem; color: var(--muted); }
+.pick-range { width: 100%; margin: 18px 0 4px; accent-color: var(--green); height: 28px; }
+.pick-scale { display: flex; justify-content: space-between; font-family: var(--font-num); font-size: .78rem; color: var(--muted); }
+.pick-wine { display: inline-flex; align-items: center; gap: 9px; margin-top: 18px; font-weight: 600; cursor: pointer; }
+.pick-wine input { width: 18px; height: 18px; accent-color: var(--green); }
+.pick-note { font-size: .88rem; color: var(--muted); margin: 8px 0 0; max-width: 70ch; }
+.pick-fit { margin: 14px 0 0; }
+.pick-next { margin-top: 20px; display: flex; justify-content: flex-end; }
+.pick-next .cta-btn { padding: 12px 28px; font-size: 1rem; }
+.pick-left { margin: 18px 0 0; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+.pick-left:empty { display: none; }
+.pick-rhead { display: flex; justify-content: space-between; align-items: flex-end; gap: 14px; flex-wrap: wrap; }
+.pick-rhead h2 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); margin-top: 4px; outline: none; }
+.pick-rhead .eyebrow { color: var(--gold); }
+.pick-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.pick-actions .cta-btn { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.pick-actions svg { width: 17px; height: 17px; }
+.pick-ghost { padding: 10px 18px; border: 1px solid var(--line); border-radius: 999px; background: none; color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; }
+.pick-ghost:hover { border-color: var(--green); }
+.pick-summary { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.pick-summary .pick-chip { font-size: .84rem; padding: 5px 12px; }
+.pick-hack { margin-top: 18px; padding: 14px 16px; border-radius: 12px; background: color-mix(in srgb, var(--gold) 14%, var(--surface)); border: 1px solid color-mix(in srgb, var(--gold) 45%, transparent); }
+.pick-hack p { margin: 0 0 6px; }
+.pick-hack a { color: var(--ink); font-weight: 600; }
+.pick-hack .stars svg { width: 12px; height: 12px; color: var(--gold); }
+.pick-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+.pick-card { display: flex; flex-direction: column; gap: 4px; padding: 16px 18px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); border-top: 4px solid var(--green); }
+.pick-card.pick-value { border-top-color: var(--gold); }
+.pick-card.pick-wild { border-top-color: var(--heart); }
+.pc-head { display: flex; align-items: center; justify-content: space-between; }
+.pc-label { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+.pc-head .wish { width: 36px; height: 36px; }
+.pick-card h3 { font-size: 1.45rem; line-height: 1.15; }
+.pick-card h3 a { color: var(--ink); text-decoration: none; }
+.pick-card h3 a:hover { color: var(--green); text-decoration: underline; }
+.pick-card > .stars { color: var(--gold); }
+.pick-card > .stars svg { width: 15px; height: 15px; }
+.pc-where, .pc-chef { margin: 0; color: var(--muted); font-size: .88rem; }
+.pc-chef { font-style: italic; }
+.pc-why { margin: 8px 0 4px; font-size: .95rem; line-height: 1.45; }
+.pc-prices { display: grid; gap: 2px; padding: 10px 0; border-top: 1px dashed var(--line); margin-top: auto; }
+.pc-price { font-family: var(--font-num); font-size: .95rem; }
+.pc-conv, .pc-sub { color: var(--muted); }
+.pc-sub { font-family: var(--font-num); font-size: .82rem; }
+.pc-est { font-style: italic; }
+.pick-card .diet-badges { margin: 0 0 8px; }
+.pc-go { font-weight: 600; color: var(--green); text-decoration: none; }
+.pc-go:hover { text-decoration: underline; }
+.pick-more { margin-top: 26px; }
+.pick-more h3 { font-size: 1.3rem; margin-bottom: 10px; }
+.pick-more .wish { width: 34px; height: 34px; }
+.pick-empty { margin-top: 18px; }
+.pick-result .pick-note { margin-top: 16px; }
+@media (max-width: 900px) {
+  .pick-cards { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .pick-hero { padding-bottom: 60px; }
+  .pick-stage { margin-top: -40px; }
+  .pick-stage .wrap { padding-inline: 12px; }
+  .pick-quiz, .pick-result { scroll-margin-top: 70px; }
+  .pick-quiz, .pick-result { padding: 16px 16px 18px; border-radius: 14px; }
+  .pick-opts, .pick-opts-wide { grid-template-columns: 1fr; gap: 8px; }
+  .pick-opts-wide { grid-template-columns: 1fr 1fr; }
+  .pick-opt { padding: 14px 50px 14px 14px; }
+  .pick-steps li > * { width: 18px; }
+  .pick-where .near-locate { width: 100%; justify-content: center; }
+  .pick-find { flex-basis: 100%; }
+  .pick-actions { width: 100%; }
+  .pick-actions > * { flex: 1; justify-content: center; }
 }

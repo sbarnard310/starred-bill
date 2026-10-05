@@ -12,7 +12,7 @@
     acctSentCode: "Kami telah menghantar kod 6 digit ke {email}. Taipkannya di bawah untuk log masuk di sini. (Pautan dalam e-mel juga berfungsi, tetapi dalam aplikasi skrin utama ia membuka pelayar.)", acctCodeLabel: "Kod daripada e-mel", acctVerify: "Log masuk dengan kod", acctVerifying: "Menyemak…", acctCodeWrong: "Kod itu tidak berfungsi. Semak semula atau minta kod baharu.", acctBadCode: "Taipkan kod 6 digit daripada e-mel.",
     notrackOn: "Pelayar ini tidak lagi dikira dalam statistik lawatan.", notrackOff: "Pelayar ini dikira semula dalam statistik lawatan.",
     cookieText: "Bolehkah kami menggunakan kuki Google Analytics untuk melihat cara laman ini digunakan? Lawatan tetap dikira tanpa kuki.", cookieAccept: "Terima", cookieReject: "Tolak", cookieSettings: "Tukar pilihan kuki",
-    navCompare: "Banding", navMap: "Peta", navStars: "Ikut bintang", navMethod: "Kaedah", navContact: "Hubungi", navDestinations: "Destinasi", navGuides: "Panduan", navNear: "Berhampiran", wishlist: "Senarai hajat", wishTitle: "Senarai hajat anda",
+    navCompare: "Banding", navMap: "Peta", navStars: "Ikut bintang", navMethod: "Kaedah", navContact: "Hubungi", navDestinations: "Destinasi", navGuides: "Panduan", navNear: "Berhampiran", navPick: "Bantu saya memilih", wishlist: "Senarai hajat", wishTitle: "Senarai hajat anda",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restoran Panduan Michelin",
     heroTitle: "Berapakah <em>harga</em> sebutir bintang Michelin {placeIn}?",

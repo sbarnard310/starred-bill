@@ -11,7 +11,7 @@
     acctSentCode: "Vi har sendt en sekssifret kode til {email}. Skriv den inn nedenfor for å logge inn her. (Lenken i e-posten fungerer også, men i appen på hjemskjermen åpner den nettleseren i stedet.)", acctCodeLabel: "Kode fra e-posten", acctVerify: "Logg inn med kode", acctVerifying: "Sjekker…", acctCodeWrong: "Koden fungerte ikke. Sjekk den eller be om en ny.", acctBadCode: "Skriv inn den sekssifrede koden fra e-posten.",
     notrackOn: "Denne nettleseren telles ikke lenger med i besøksstatistikken.", notrackOff: "Denne nettleseren telles med i besøksstatistikken igjen.",
     cookieText: "Kan vi bruke informasjonskapsler fra Google Analytics for å se hvordan siden brukes? Besøk telles uten informasjonskapsler uansett.", cookieAccept: "Godta", cookieReject: "Avslå", cookieSettings: "Endre valg for informasjonskapsler",
-    navCompare: "Sammenlign", navMap: "Kart", navStars: "Etter stjerner", navMethod: "Metode", navContact: "Kontakt", navDestinations: "Reisemål", navGuides: "Guider", navNear: "Nær meg", wishlist: "Ønskeliste", wishTitle: "Ønskelisten din",
+    navCompare: "Sammenlign", navMap: "Kart", navStars: "Etter stjerner", navMethod: "Metode", navContact: "Kontakt", navDestinations: "Reisemål", navGuides: "Guider", navNear: "Nær meg", navPick: "Hjelp meg å velge", wishlist: "Ønskeliste", wishTitle: "Ønskelisten din",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restauranter i Michelinguiden",
     heroTitle: "Hva en Michelinstjerne <em>koster</em> {placeIn}.",

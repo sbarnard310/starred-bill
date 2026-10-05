@@ -11,7 +11,7 @@
     acctSentCode: "Nagpadala kami ng 6 na digit na code sa {email}. I-type ito sa ibaba para mag-sign in dito. (Gumagana rin ang link sa email, pero sa app sa home screen ay bubuksan nito ang browser.)", acctCodeLabel: "Code mula sa email", acctVerify: "Mag-sign in gamit ang code", acctVerifying: "Sinusuri…", acctCodeWrong: "Hindi gumana ang code na iyon. Suriin ito, o humingi ng bago.", acctBadCode: "I-type ang 6 na digit na code mula sa email.",
     notrackOn: "Hindi na binibilang ang browser na ito sa estadistika ng pagbisita.", notrackOff: "Binibilang muli ang browser na ito sa estadistika ng pagbisita.",
     cookieText: "Puwede ba naming gamitin ang cookies ng Google Analytics para makita kung paano ginagamit ang site? Binibilang pa rin ang mga pagbisita nang walang cookies.", cookieAccept: "Tanggapin", cookieReject: "Tanggihan", cookieSettings: "Baguhin ang pinili sa cookies",
-    navCompare: "Ihambing", navMap: "Mapa", navStars: "Ayon sa bituin", navMethod: "Paraan", navContact: "Makipag-ugnayan", navDestinations: "Mga destinasyon", navGuides: "Mga gabay", navNear: "Malapit sa akin", wishlist: "Wishlist", wishTitle: "Ang iyong wishlist",
+    navCompare: "Ihambing", navMap: "Mapa", navStars: "Ayon sa bituin", navMethod: "Paraan", navContact: "Makipag-ugnayan", navDestinations: "Mga destinasyon", navGuides: "Mga gabay", navNear: "Malapit sa akin", navPick: "Tulungan akong pumili", wishlist: "Wishlist", wishTitle: "Ang iyong wishlist",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Mga restawran sa MICHELIN Guide",
     heroTitle: "Magkano ang <em>halaga</em> ng isang Michelin star {placeIn}?",

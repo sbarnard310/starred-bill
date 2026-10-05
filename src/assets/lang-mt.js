@@ -10,7 +10,7 @@
     acctSentCode: "Bgħatnielek kodiċi ta' 6 ċifri fuq {email}. Iktbu hawn taħt biex tidħol hawnhekk. (Il-link fl-email jaħdem ukoll, imma fl-app fuq l-iskrin ewlieni jiftaħ il-browser minflok.)", acctCodeLabel: "Kodiċi mill-email", acctVerify: "Idħol bil-kodiċi", acctVerifying: "Qed niċċekkjaw…", acctCodeWrong: "Dak il-kodiċi ma ħadimx. Iċċekkjah jew itlob ieħor.", acctBadCode: "Ikteb il-kodiċi ta' 6 ċifri mill-email.",
     notrackOn: "Dan il-browser m'għadux jingħadd fl-istatistika taż-żjarat.", notrackOff: "Dan il-browser reġa' qed jingħadd fl-istatistika taż-żjarat.",
     cookieText: "Nistgħu nużaw cookies ta' Google Analytics biex naraw kif jintuża s-sit? Iż-żjarat jingħaddu mingħajr cookies xorta waħda.", cookieAccept: "Naċċetta", cookieReject: "Nirrifjuta", cookieSettings: "Ibdel l-għażla tal-cookies",
-    navCompare: "Qabbel", navMap: "Mappa", navStars: "Skont l-istilel", navMethod: "Metodu", navContact: "Ikkuntattjana", navDestinations: "Destinazzjonijiet", navGuides: "Gwidi", navNear: "Qribi", wishlist: "Lista tax-xewqat", wishTitle: "Il-lista tax-xewqat tiegħek",
+    navCompare: "Qabbel", navMap: "Mappa", navStars: "Skont l-istilel", navMethod: "Metodu", navContact: "Ikkuntattjana", navDestinations: "Destinazzjonijiet", navGuides: "Gwidi", navNear: "Qribi", navPick: "Għinni nagħżel", wishlist: "Lista tax-xewqat", wishTitle: "Il-lista tax-xewqat tiegħek",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Ristoranti fil-Gwida Michelin",
     heroTitle: "Kemm <em>tiswa</em> stilla Michelin {placeIn}?",

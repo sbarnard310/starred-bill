@@ -11,7 +11,7 @@
     acctSentCode: "Lähetimme 6-numeroisen koodin osoitteeseen {email}. Kirjoita se alle kirjautuaksesi tässä. (Sähköpostin linkki toimii myös, mutta aloitusnäytön sovelluksessa se avaa selaimen.)", acctCodeLabel: "Koodi sähköpostista", acctVerify: "Kirjaudu koodilla", acctVerifying: "Tarkistetaan…", acctCodeWrong: "Koodi ei toiminut. Tarkista se tai pyydä uusi.", acctBadCode: "Kirjoita sähköpostin 6-numeroinen koodi.",
     notrackOn: "Tätä selainta ei enää lasketa kävijätilastoihin.", notrackOff: "Tämä selain lasketaan taas kävijätilastoihin.",
     cookieText: "Saammeko käyttää Google Analyticsin evästeitä nähdäksemme, miten sivustoa käytetään? Käynnit lasketaan joka tapauksessa ilman evästeitä.", cookieAccept: "Hyväksy", cookieReject: "Hylkää", cookieSettings: "Muuta evästevalintaa",
-    navCompare: "Vertaa", navMap: "Kartta", navStars: "Tähtien mukaan", navMethod: "Menetelmä", navContact: "Yhteystiedot", navDestinations: "Kohteet", navGuides: "Oppaat", navNear: "Lähelläni", wishlist: "Toivelista", wishTitle: "Toivelistasi",
+    navCompare: "Vertaa", navMap: "Kartta", navStars: "Tähtien mukaan", navMethod: "Menetelmä", navContact: "Yhteystiedot", navDestinations: "Kohteet", navGuides: "Oppaat", navNear: "Lähelläni", navPick: "Auta valitsemaan", wishlist: "Toivelista", wishTitle: "Toivelistasi",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Michelin-oppaan ravintolat",
     heroTitle: "Mitä Michelin-tähti <em>maksaa</em> {placeIn}?",

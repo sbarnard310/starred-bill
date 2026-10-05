@@ -717,7 +717,8 @@ def build_bill_data(starred):
 def build_near_me(starred):
     """/near-me/: finds the visitor (or a place they type) and lists the starred restaurants around them on a map.
     The restaurants come from /data/near.json, one compact row each (columns listed in the file)."""
-    cols = ["id", "name", "stars", "lat", "lng", "cuisine", "where", "path", "dinner", "dinnerType", "lunch", "cur", "diets", "chef", "rating"]
+    cols = ["id", "name", "stars", "lat", "lng", "cuisine", "where", "path", "dinner", "dinnerType", "lunch", "cur", "diets", "chef", "rating",
+            "reviews", "wine", "lunchWine", "change"]
     rows = []
     for r in starred:
         if r.get("lat") is None:
@@ -725,13 +726,15 @@ def build_near_me(starred):
         lunch = -1 if r.get("noLunch") else (r["lunch"] if r.get("lunch") is not None and r.get("lunchType", "menu") == "menu" else None)
         rows.append([r["id"], r["name"], r["stars"], round(r["lat"], 6), round(r["lng"], 6), r.get("cuisine", ""), near_where(r), r["cityPath"],
                      r.get("dinner"), r.get("dinnerType", "menu"), lunch, r["cur"], "".join(str(NEAR_DIETS[d]) for d in r.get("diets", [])),
-                     r.get("chef", ""), r.get("rating")])
+                     r.get("chef", ""), r.get("rating"), r.get("reviews"),
+                     r.get("wine") if r.get("dinnerType", "menu") == "menu" else None, r.get("lunchWine") if lunch and lunch > 0 else None, r.get("change", "")])
     # Starred restaurants in the MICHELIN Guide we don't have a file for yet (none since 5 Oct 2026, but the list can run ahead).
     world = json.loads((OUT / "data" / "world.json").read_text("utf-8"))["r"] if (OUT / "data" / "world.json").exists() else []
     for name, stars, lat, lng, cuisine, where, mpath in world:
-        rows.append(["", name, stars, lat, lng, cuisine, where, "https://guide.michelin.com/en" + mpath, None, "menu", None, "", "", "", None])
+        rows.append(["", name, stars, lat, lng, cuisine, where, "https://guide.michelin.com/en" + mpath, None, "menu", None, "", "", "", None, None, None, None, ""])
     body = as_json({"cols": cols, "diets": list(DIETS), "r": rows}).encode("utf-8")
     (OUT / "data" / "near.json").write_bytes(body)
+    near_url = f"/data/near.json?v={hashlib.sha1(body).hexdigest()[:10]}"
     stats = guide_stats()
     cities = [p for p in by_size(pages) if (p["type"] == "city" or p["id"] in ("hong-kong", "macau", "singapore")) and starred_n[p["id"]] >= 5][:36]
     popular = "".join(f'<a class="city-link" href="{p["path"]}">{e(p["name"])}<span class="count">{starred_n[p["id"]]}</span></a>' for p in cities)
@@ -773,7 +776,72 @@ def build_near_me(starred):
         "crumbs": '<a href="/">All destinations</a><span aria-current="page">Near me</span>',
         "lede": e(lede), "static": static,
         "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "knownIds": [r["id"] for r in starred],
-                         "nearUrl": f"/data/near.json?v={hashlib.sha1(body).hexdigest()[:10]}"}),
+                         "nearUrl": near_url}),
+    }))
+    return near_url
+
+
+def build_pick(near_url):
+    """/pick/ ("Help me pick"): six quick questions (where, which meal, budget, stars, food, dietary needs), one per screen,
+    then three picks with a reason each: best match, best value and a wildcard. It all runs in the browser (pick.js),
+    reading the same /data/near.json as Near me. The answers go in the web address, so a result can be shared."""
+    stats = guide_stats()
+    # Every country, region, city and district with starred restaurants, biggest first: [name, path, count, where it is].
+    spots, popular = [], []
+    for p in by_size(q for q in pages if q["type"] != "group" and starred_n[q["id"]]):
+        above = [places[c]["name"] for c in chain(p["id"])[1:]]
+        spots.append([p["name"], p["path"], starred_n[p["id"]], ", ".join(above[:1] + above[-1:]) if len(above) > 1 else "".join(above)])
+        if p["type"] == "city" or p["id"] in ("hong-kong", "macau", "singapore"):
+            popular.append(p["path"])
+    popular = popular[:8]
+    faq = [
+        ("How do I choose a Michelin star restaurant?",
+         "Start with where and when you'll eat, then your budget per person. Lunch is often the cheapest way into a starred kitchen. "
+         "Then decide how many stars you want, what kind of food you're in the mood for and any dietary needs. This page asks those six "
+         "questions and suggests three restaurants that fit."),
+        ("Is a three-star restaurant always better than a one-star?",
+         "Not for every meal. Three stars mark exceptional cooking worth a special journey, but a one-star tasting menu can be just as memorable "
+         f"for far less: one-star dinners cost a median {stats['price1']} per person against {stats['price3']} at three stars."),
+        ("What's the cheapest way to eat at a Michelin star restaurant?",
+         f"Book lunch. Where a starred restaurant serves it, the lunch menu is usually much cheaper than dinner: a median {stats['lunch1']} at "
+         f"one-star restaurants. Choose “Whichever's better value” on this page to compare each restaurant's cheapest menu."),
+        ("How much should I budget for wine?",
+         f"A wine pairing typically adds about half to two-thirds of the menu price: a median {stats['wine1']} at one-star restaurants. "
+         "Switch on “Include wine pairing” and we'll count it in. Where a restaurant's pairing price isn't listed, we leave room for one."),
+        ("Where do the stars and prices come from?",
+         "Stars come only from the MICHELIN Guide. Prices are per person before service, taken from each restaurant's own website where "
+         "possible, or recent reviews and booking sites, and each one links to its source on the destination pages."),
+    ]
+    faq_html = '<section class="guide-faq" id="faq"><h2>Frequently asked questions</h2>' + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faq) + "</section>"
+    static = (
+        "<h2>How to pick a Michelin star restaurant</h2>\n"
+        "<p>With " + stats["total"] + " starred restaurants in " + stats["countries"] + " countries, the hard part is choosing. "
+        "These are the things that make the most difference to the meal and the bill:</p>\n<ul>"
+        "<li><strong>Lunch or dinner.</strong> Many starred kitchens serve a shorter lunch menu for much less than dinner.</li>"
+        "<li><strong>Stars.</strong> One star is high-quality cooking worth a stop, two is excellent cooking worth a detour, three is "
+        "exceptional cuisine worth a special journey.</li>"
+        "<li><strong>Budget.</strong> Prices here are per person before service. Add a wine pairing and the bill can rise by half again.</li>"
+        "<li><strong>Food and diet.</strong> The MICHELIN Guide lists which restaurants offer vegetarian menus, vegan options and more.</li></ul>\n"
+        '<p>Want to read more first? Start with <a href="/guides/what-is-a-michelin-star/">What is a Michelin star?</a>, or see every '
+        'starred restaurant around you with <a href="/near-me/">Near me</a>.</p>\n' + faq_html)
+    lede = ("Answer six quick questions and we'll suggest three Michelin-starred restaurants that fit: the best match, the best value "
+            "and a wildcard, with what each one costs.")
+    graph = [
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "All destinations", "item": SITE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Help me pick", "item": SITE_URL + "/pick/"}]},
+        {"@type": "WebPage", "name": "Help me pick a Michelin star restaurant", "url": SITE_URL + "/pick/", "description": lede},
+        {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
+    ]
+    write("/pick/", render("pick.html", {
+        "title": "Help Me Pick a Michelin Star Restaurant",
+        "description": e(f"Six quick questions, three Michelin-starred restaurants that fit your budget, taste and diet. From {stats['total']} restaurants in {stats['countries']} countries."),
+        "canonical": SITE_URL + "/pick/", "htmlLang": "en", "ogType": "website", "ogAlt": "Help me pick a Michelin star restaurant",
+        "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
+        "crumbs": '<a href="/">All destinations</a><span aria-current="page">Help me pick</span>',
+        "lede": e(lede), "static": static,
+        "data": as_json({"currencies": CURRENCIES, "switchable": currency_data.get("switchable", ["GBP", "EUR", "USD"]),
+                         "languages": DEFAULT_LANGUAGES, "spots": spots, "popular": popular, "nearUrl": near_url}),
     }))
 
 
@@ -929,7 +997,7 @@ def build_extras():
         shutil.copytree(SRC / "og", OUT / "og")
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
-    urls = ["/", "/near-me/"] + [p["path"] for p in by_size(pages)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + ["/privacy/"]
+    urls = ["/", "/near-me/", "/pick/"] + [p["path"] for p in by_size(pages)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + ["/privacy/"]
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{SITE_URL}{u}</loc></url>\n" for u in urls) + "</urlset>\n", "utf-8")
@@ -955,7 +1023,7 @@ copy_assets()
 for p in pages:
     build_place(p)
 build_home()
-build_near_me([r for r in restaurants if not r.get("status")])
+build_pick(build_near_me([r for r in restaurants if not r.get("status")]))
 build_bill_data([r for r in restaurants if not r.get("status")])
 build_account_pages()
 build_guides()

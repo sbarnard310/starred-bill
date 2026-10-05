@@ -11,7 +11,7 @@
     acctSentCode: "Poslali jsme šestimístný kód na {email}. Zadejte ho níže a přihlaste se tady. (Odkaz v e-mailu funguje také, ale v aplikaci na ploše otevře prohlížeč.)", acctCodeLabel: "Kód z e-mailu", acctVerify: "Přihlásit se kódem", acctVerifying: "Ověřujeme…", acctCodeWrong: "Tento kód nefungoval. Zkontrolujte ho, nebo si vyžádejte nový.", acctBadCode: "Zadejte šestimístný kód z e-mailu.",
     notrackOn: "Tento prohlížeč se už nezapočítává do statistik návštěvnosti.", notrackOff: "Tento prohlížeč se znovu započítává do statistik návštěvnosti.",
     cookieText: "Můžeme používat soubory cookie Google Analytics, abychom viděli, jak se web používá? Návštěvy počítáme bez cookies tak jako tak.", cookieAccept: "Přijmout", cookieReject: "Odmítnout", cookieSettings: "Změnit volbu cookies",
-    navCompare: "Srovnání", navMap: "Mapa", navStars: "Podle hvězd", navMethod: "Metodika", navContact: "Kontakt", navDestinations: "Destinace", navGuides: "Průvodce", navNear: "V okolí", wishlist: "Oblíbené", wishTitle: "Vaše oblíbené",
+    navCompare: "Srovnání", navMap: "Mapa", navStars: "Podle hvězd", navMethod: "Metodika", navContact: "Kontakt", navDestinations: "Destinace", navGuides: "Průvodce", navNear: "V okolí", navPick: "Pomozte mi vybrat", wishlist: "Oblíbené", wishTitle: "Vaše oblíbené",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restaurace z Průvodce Michelin",
     heroTitle: "Kolik <em>stojí</em> michelinská hvězda {placeIn}?",

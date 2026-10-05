@@ -10,7 +10,7 @@
     acctSentCode: "Elküldtünk egy 6 jegyű kódot a(z) {email} címre. Írd be lent, hogy itt bejelentkezz. (Az e-mailben lévő link is működik, de a kezdőképernyős alkalmazásban a böngészőt nyitja meg.)", acctCodeLabel: "Kód az e-mailből", acctVerify: "Bejelentkezés kóddal", acctVerifying: "Ellenőrzés…", acctCodeWrong: "Ez a kód nem működött. Ellenőrizd, vagy kérj újat.", acctBadCode: "Írd be az e-mailben kapott 6 jegyű kódot.",
     notrackOn: "Ezt a böngészőt már nem számoljuk a látogatási statisztikában.", notrackOff: "Ezt a böngészőt újra számoljuk a látogatási statisztikában.",
     cookieText: "Használhatunk Google Analytics sütiket, hogy lássuk, hogyan használják az oldalt? A látogatásokat mindenképp sütik nélkül számoljuk.", cookieAccept: "Elfogadom", cookieReject: "Elutasítom", cookieSettings: "Sütibeállítás módosítása",
-    navCompare: "Összehasonlítás", navMap: "Térkép", navStars: "Csillagok szerint", navMethod: "Módszer", navContact: "Kapcsolat", navDestinations: "Úti célok", navGuides: "Útmutatók", navNear: "A közelemben", wishlist: "Kívánságlista", wishTitle: "A kívánságlistád",
+    navCompare: "Összehasonlítás", navMap: "Térkép", navStars: "Csillagok szerint", navMethod: "Módszer", navContact: "Kapcsolat", navDestinations: "Úti célok", navGuides: "Útmutatók", navNear: "A közelemben", navPick: "Segíts választani", wishlist: "Kívánságlista", wishTitle: "A kívánságlistád",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · A Michelin-kalauz éttermei",
     heroTitle: "Mennyibe <em>kerül</em> egy Michelin-csillag {placeIn}?",

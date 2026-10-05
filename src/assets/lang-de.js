@@ -17,7 +17,7 @@
     acctSentCode: "Wir haben einen 6-stelligen Code an {email} geschickt. Gib ihn unten ein, um dich hier anzumelden. (Der Link in der E-Mail funktioniert auch, öffnet in der App auf dem Startbildschirm aber stattdessen den Browser.)", acctCodeLabel: "Code aus der E-Mail", acctVerify: "Mit Code anmelden", acctVerifying: "Wird geprüft…", acctCodeWrong: "Dieser Code hat nicht funktioniert. Prüfe ihn oder fordere einen neuen an.", acctBadCode: "Gib den 6-stelligen Code aus der E-Mail ein.",
     notrackOn: "Dieser Browser wird nicht mehr in der Besuchsstatistik gezählt.", notrackOff: "Dieser Browser wird wieder in der Besuchsstatistik gezählt.",
     cookieText: "Dürfen wir Cookies von Google Analytics verwenden, um zu sehen, wie die Seite genutzt wird? Besuche werden so oder so ohne Cookies gezählt.", cookieAccept: "Akzeptieren", cookieReject: "Ablehnen", cookieSettings: "Cookie-Auswahl ändern",
-    navCompare: "Vergleich", navMap: "Karte", navStars: "Nach Sternen", navMethod: "Methode", navContact: "Kontakt", navDestinations: "Reiseziele", navGuides: "Ratgeber", navNear: "In meiner Nähe", wishlist: "Merkliste", wishTitle: "Deine Merkliste",
+    navCompare: "Vergleich", navMap: "Karte", navStars: "Nach Sternen", navMethod: "Methode", navContact: "Kontakt", navDestinations: "Reiseziele", navGuides: "Ratgeber", navNear: "In meiner Nähe", navPick: "Entscheidungshilfe", wishlist: "Merkliste", wishTitle: "Deine Merkliste",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restaurants im Guide Michelin",
     heroTitle: "Was ein Michelin-Stern {placeIn} <em>kostet</em>.",

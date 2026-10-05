@@ -11,7 +11,7 @@
     acctSentCode: "Poslali smo šesteroznamenkasti kôd na {email}. Upišite ga ispod da biste se ovdje prijavili. (Poveznica u e-poruci također radi, ali u aplikaciji na početnom zaslonu otvara preglednik.)", acctCodeLabel: "Kôd iz e-poruke", acctVerify: "Prijava kôdom", acctVerifying: "Provjeravamo…", acctCodeWrong: "Taj kôd nije uspio. Provjerite ga ili zatražite novi.", acctBadCode: "Upišite šesteroznamenkasti kôd iz e-poruke.",
     notrackOn: "Ovaj se preglednik više ne broji u statistici posjeta.", notrackOff: "Ovaj se preglednik ponovno broji u statistici posjeta.",
     cookieText: "Smijemo li koristiti kolačiće Google Analyticsa da vidimo kako se stranica koristi? Posjete ionako brojimo bez kolačića.", cookieAccept: "Prihvati", cookieReject: "Odbij", cookieSettings: "Promijeni izbor kolačića",
-    navCompare: "Usporedba", navMap: "Karta", navStars: "Po zvjezdicama", navMethod: "Metoda", navContact: "Kontakt", navDestinations: "Odredišta", navGuides: "Vodiči", navNear: "U blizini", wishlist: "Popis želja", wishTitle: "Vaš popis želja",
+    navCompare: "Usporedba", navMap: "Karta", navStars: "Po zvjezdicama", navMethod: "Metoda", navContact: "Kontakt", navDestinations: "Odredišta", navGuides: "Vodiči", navNear: "U blizini", navPick: "Pomozi mi odabrati", wishlist: "Popis želja", wishTitle: "Vaš popis želja",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restorani iz vodiča Michelin",
     heroTitle: "Koliko <em>stoji</em> Michelinova zvjezdica {placeIn}?",

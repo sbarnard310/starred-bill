@@ -15,7 +15,7 @@
     acctSentCode: "我们已将 6 位数验证码发送到 {email}。在下方输入即可在这里登录。（邮件中的链接也可以用，但在主屏幕应用中会改为打开浏览器。）", acctCodeLabel: "邮件中的验证码", acctVerify: "用验证码登录", acctVerifying: "验证中…", acctCodeWrong: "验证码无效。请检查，或重新获取。", acctBadCode: "请输入邮件中的 6 位数验证码。",
     notrackOn: "此浏览器已不再计入访问统计。", notrackOff: "此浏览器已重新计入访问统计。",
     cookieText: "我们可以使用 Google Analytics Cookie 来了解大家如何使用本网站吗？无论你怎么选，我们都只以不使用 Cookie 的方式统计访问量。", cookieAccept: "接受", cookieReject: "拒绝", cookieSettings: "更改 Cookie 选择",
-    navCompare: "比较", navMap: "地图", navStars: "星级", navMethod: "说明", navContact: "联系我们", navDestinations: "目的地", navGuides: "指南", navNear: "我附近", wishlist: "心愿单", wishTitle: "你的心愿单",
+    navCompare: "比较", navMap: "地图", navStars: "星级", navMethod: "说明", navContact: "联系我们", navDestinations: "目的地", navGuides: "指南", navNear: "我附近", navPick: "帮我挑选", wishlist: "心愿单", wishTitle: "你的心愿单",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · 米其林指南餐厅",
     heroTitle: "在{place}，一颗米其林星<em>要价</em>多少？",

@@ -21,5 +21,11 @@
   "lat": 50.6814685,
   "lng": 4.2730837,
   "placeId": "ChIJQWmwBP3Lw0cRL-YRiiRU_io",
-  "michelinId": "509863"
+  "michelinId": "509863",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 80)",
+  "lunchNoteNl": "Lunchmenu",
+  "cuisineNl": "Moderne keuken",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 80 €)",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine moderne"
 }

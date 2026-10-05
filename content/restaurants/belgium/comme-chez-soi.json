@@ -18,5 +18,9 @@
     "vegetarian"
   ],
   "chef": "Lionel Rigolet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "cuisineNl": "Klassieke keuken",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "cuisineFr": "Cuisine classique"
 }

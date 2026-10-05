@@ -19,5 +19,11 @@
     "vegetarian-menu"
   ],
   "chef": "Marco Campanella",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "cuisineDe": "Mediterran",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "cuisineFr": "Cuisine méditerranéenne",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "cuisineIt": "Mediterranea"
 }

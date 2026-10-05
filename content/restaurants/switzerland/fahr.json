@@ -25,5 +25,11 @@
     "gluten-free"
   ],
   "chef": "Manuel Steigmeier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 150)",
+  "cuisineDe": "Regional",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 150)",
+  "cuisineFr": "Cuisine régionale",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 150)",
+  "cuisineIt": "Regionale"
 }

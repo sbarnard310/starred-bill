@@ -3,5 +3,8 @@
   "type": "city",
   "parent": "greece",
   "name": "Athens",
-  "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added."
+  "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
+  "nameEl": "Αθήνα",
+  "inSentenceEl": "στην Αθήνα",
+  "introEl": "Οι τιμές είναι σε ευρώ, με διακόπτη για να τις δείτε σε λίρες, ευρώ ή δολάρια ΗΠΑ. Τιμές ελεγμένες τον Οκτώβριο του 2026· όπου δεν εμφανίζεται ακόμη η τιμή ενός εστιατορίου, θα προστεθεί."
 }

@@ -22,8 +22,15 @@ CONTENT, SRC, OUT = ROOT / "content", ROOT / "src", ROOT / "_site"
 SITE_URL = "https://starredbill.com"
 PLACE_TYPES = ("country", "region", "city", "district", "group")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
-LANGUAGES = ("en", "zh", "yue", "fr", "ja", "es", "it", "ko", "da", "sv", "is", "ca", "th")
-LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja", "Es", "It", "Ko", "Da", "Sv", "Is", "Ca", "Th")  # e.g. nameZh, introYue, dinnerNoteFr, areaJa, statusNoteEs
+# Languages added from 5 Oct 2026 keep their words in src/assets/lang-<code>.js, loaded only by pages that offer them.
+LANG_FILES = ("zhs", "de", "nl", "pt", "nb", "fi", "pl", "cs", "hu", "sl", "hr", "sr", "el", "tr", "lt", "lv", "et", "mt", "ms", "fil", "vi")
+LANGUAGES = ("en", "zh", "yue", "fr", "ja", "es", "it", "ko", "da", "sv", "is", "ca", "th") + LANG_FILES
+LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja", "Es", "It", "Ko", "Da", "Sv", "Is", "Ca", "Th") + tuple(c[0].upper() + c[1:] for c in LANG_FILES)  # e.g. nameZh, introYue, dinnerNoteFr, areaJa, statusNoteEs, nameZhs
+# How a place reads mid-sentence where a preposition in front of its name is enough ("in München", "em Lisboa", "tại Hà Nội").
+# Languages that decline names (Finnish "Helsingissä", Polish "w Warszawie"…) aren't listed: each place sets inSentence<Sfx> itself.
+IN_PREPOSITIONS = (("Da", "i"), ("Sv", "i"), ("Is", "í"), ("Ca", "a"), ("Th", "ใน"), ("De", "in"), ("Nl", "in"), ("Pt", "em"), ("Nb", "i"),
+                   ("Ms", "di"), ("Fil", "sa"), ("Vi", "tại"))
+DECLINED = ("Fi", "Pl", "Cs", "Hu", "Sl", "Hr", "Sr", "El", "Tr", "Lt", "Lv", "Et", "Mt")
 DEFAULT_LANGUAGES = ["en"]  # a country without `languages` (and the homepage, account and privacy pages) is English only
 PRICE_TYPES = ("menu", "main", "spend")
 STATUSES = ("lost", "closed", "changed")
@@ -165,6 +172,12 @@ for pid, p in places.items():
             problem(f"places ({pid})", f"old address {old} is still in use by {paths.get(old) or redirects.get(old)}")
         else:
             redirects[old] = pid
+# In languages that decline names, every place offering the language says how it reads mid-sentence (Polish "w Warszawie").
+for pid, p in places.items():
+    for lang in inherited(p, "languages") or []:
+        sfx = lang[0].upper() + lang[1:]
+        if sfx in DECLINED and not p.get("inSentence" + sfx):
+            problem(f"places ({pid})", f"is offered in {lang}, so it needs inSentence{sfx}: its name as it reads after \"in\" in that language")
 
 restaurants = []
 seen = {}
@@ -423,8 +436,9 @@ def build_place(p):
     page = dict(names(p), **{
         "id": p["id"], "type": p["type"], "inSentence": in_sentence(p), "inSentenceFr": inherited_name_fr(p),
         "inSentenceEs": inherited_name_es(p), "inSentenceIt": inherited_name_it(p),
-        # Danish "i København", Icelandic "í Reykjavík" (a place can set its own, e.g. "á Íslandi"), Catalan "a Andorra".
-        **{"inSentence" + sfx: p.get("inSentence" + sfx) or f"{prep}{'' if sfx == 'Th' else ' '}{p.get('name' + sfx) or p['name']}" for sfx, prep in (("Da", "i"), ("Sv", "i"), ("Is", "í"), ("Ca", "a"), ("Th", "ใน"))},
+        # Danish "i København", Icelandic "í Reykjavík" (a place can set its own, e.g. "á Íslandi"), Catalan "a Andorra", German "in München".
+        **{"inSentence" + sfx: p.get("inSentence" + sfx) or f"{prep}{'' if sfx == 'Th' else ' '}{p.get('name' + sfx) or p['name']}" for sfx, prep in IN_PREPOSITIONS},
+        **{"inSentence" + sfx: p["inSentence" + sfx] for sfx in DECLINED if p.get("inSentence" + sfx)},
         "path": p["path"], "currency": currency, "showCity": len({r["city"] for r in starred}) > 1,
         "crumbs": [dict(names(c), path=c["path"], n=starred_n[c["id"]]) for c in crumbs],
         "links": explore_links(p),
@@ -457,7 +471,9 @@ def build_place(p):
         f"<li><strong>{e(r['name'])}</strong> · {r['stars']} Michelin star{'s' if r['stars'] > 1 else ''} · {e(r.get('cuisine', ''))} · {e(r.get('area') or r['cityName'])}"
         + (f" · dinner {money(r['dinner'], r['cur'])}" if r.get("dinner") is not None else "") + "</li>"
         for r in sorted(starred, key=lambda r: (-r["stars"], r["name"]))) + "</ol>"
+    lang_scripts = "".join(f'<script src="/assets/lang-{c}.js?v={assets[f"lang-{c}.js"]}"></script>\n' for c in data["languages"] if c in LANG_FILES)
     write(p["path"], render("place.html", {
+        "langScripts": lang_scripts,
         "title": e(f"The Starred Bill · {p['name']}"), "description": e(description), "canonical": SITE_URL + p["path"],
         "eyebrow": e(f"{p['name']} · Michelin Guide restaurants"),
         "h1": f"What a Michelin star <em>costs</em> in {e(where)}.",
@@ -909,7 +925,8 @@ def build_service_worker():
     for f in sorted(OUT.rglob("*")):
         if f.is_file():
             digest.update(str(f.relative_to(OUT)).encode() + f.read_bytes())
-    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [f"/assets/{name}?v={v}" for name, v in sorted(assets.items())]
+    # Language files are left out: each is saved the first time a page that offers it is opened.
+    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [f"/assets/{name}?v={v}" for name, v in sorted(assets.items()) if not name.startswith("lang-")]
     sw = (SRC / "sw.js").read_text("utf-8").replace("{{version}}", digest.hexdigest()[:12]).replace("{{precache}}", json.dumps(precache))
     (OUT / "sw.js").write_text(sw, "utf-8")
 

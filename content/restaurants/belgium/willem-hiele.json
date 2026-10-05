@@ -22,5 +22,11 @@
   "lat": 51.1907161,
   "lng": 2.9734058,
   "placeId": "ChIJ4Q4MHFWW3EcR_LPF7RLN_U0",
-  "michelinId": "1203519"
+  "michelinId": "1203519",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 150)",
+  "lunchNoteNl": "Lunchmenu",
+  "cuisineNl": "Creatief",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 150 €)",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine créative"
 }

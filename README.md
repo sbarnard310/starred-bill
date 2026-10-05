@@ -6,7 +6,7 @@ Live at https://starredbill.com
 
 - Homepage with a world map, destination cards, search and your wishlist: https://starredbill.com/
 - A page for every country, region and city, e.g. https://starredbill.com/uk/england/london/, https://starredbill.com/ireland/ or https://starredbill.com/taiwan/
-- Add `?lang=en` for English. Taiwan, Hong Kong and Macau offer Chinese (`?lang=zh`), Hong Kong and Macau also Cantonese (`?lang=yue`), France and Monaco French (`?lang=fr`), Japan Japanese (`?lang=ja`), Spain Spanish (`?lang=es`) Italy Italian (`?lang=it`) and South Korea Korean (`?lang=ko`), Denmark Danish (`?lang=da`), Sweden Swedish (`?lang=sv`), Iceland Icelandic (`?lang=is`) Andorra Catalan (`?lang=ca`) and Thailand Thai (`?lang=th`).
+- Add `?lang=en` for English. Taiwan, Hong Kong and Macau offer Chinese (`?lang=zh`), Hong Kong and Macau also Cantonese (`?lang=yue`), France and Monaco French (`?lang=fr`), Japan Japanese (`?lang=ja`), Spain Spanish (`?lang=es`) Italy Italian (`?lang=it`) and South Korea Korean (`?lang=ko`), Denmark Danish (`?lang=da`), Sweden Swedish (`?lang=sv`), Iceland Icelandic (`?lang=is`) Andorra Catalan (`?lang=ca`) and Thailand Thai (`?lang=th`). Since 5 Oct 2026 also: Germany, Austria, Liechtenstein German (`?lang=de`); Switzerland German, French and Italian; Belgium Dutch (`?lang=nl`) and French; the Netherlands Dutch; Luxembourg French and German; Portugal and Brazil Portuguese (`?lang=pt`); mainland China Simplified Chinese (`?lang=zhs`); Norway Norwegian (`?lang=nb`); Finland Finnish (`?lang=fi`); Poland Polish (`?lang=pl`); Czechia Czech (`?lang=cs`); Hungary Hungarian (`?lang=hu`); Slovenia Slovenian (`?lang=sl`); Croatia Croatian (`?lang=hr`); Serbia Serbian in Cyrillic (`?lang=sr`); Greece Greek (`?lang=el`); Türkiye Turkish (`?lang=tr`); Lithuania, Latvia and Estonia Lithuanian, Latvian and Estonian (`?lang=lt`, `lv`, `et`); Malta Maltese (`?lang=mt`); Malaysia Malay (`?lang=ms`); the Philippines Filipino (`?lang=fil`); Vietnam Vietnamese (`?lang=vi`). The UAE stays English until Arabic is added.
 
 ## How it fits together
 
@@ -45,7 +45,7 @@ Restaurants don't need a city page of their own: one outside the cities we cover
 
 Groups are for areas that overlap the main structure, such as "the Riviera" (France and Italy) or "Northern England". Every place gets a page. One with no starred restaurants yet says so and links up to the nearest place that has some (e.g. Dorset links to England), so it's ready for its first star.
 
-Optional `languages`, set on a country: the language buttons its pages offer (English and Chinese unless set). The rule is English, Chinese and the country's official language: Hong Kong and Macau add Cantonese, France French, Japan Japanese, Spain Spanish and Italy Italian. Any text field can have a `...Zh`, `...Yue` (Cantonese), `...Fr`, `...Ja` (Japanese), `...Es` (Spanish) or `...It` (Italian) version; Cantonese falls back to the Chinese text, and a missing translation falls back to English. French, Spanish and Italian place names also have `inSentenceFr`, `inSentenceEs` and `inSentenceIt`, the name with its preposition ("à Paris", "en el País Vasco", "nel Lazio"); Spanish defaults to "en" + the name, and Italian to "a" + a city or "in" + a country or region.
+Optional `languages`, set on a country: the language buttons its pages offer (English and Chinese unless set). The rule is English, Chinese and the country's official language: Hong Kong and Macau add Cantonese, France French, Japan Japanese, Spain Spanish and Italy Italian. Any text field can have a `...Zh`, `...Yue` (Cantonese), `...Fr`, `...Ja` (Japanese), `...Es` (Spanish) or `...It` (Italian) version; Cantonese falls back to the Chinese text, and a missing translation falls back to English. French, Spanish and Italian place names also have `inSentenceFr`, `inSentenceEs` and `inSentenceIt`, the name with its preposition ("à Paris", "en el País Vasco", "nel Lazio"); Spanish defaults to "en" + the name, and Italian to "a" + a city or "in" + a country or region. The languages added on 5 Oct 2026 use the suffixes `Zhs`, `De`, `Nl`, `Pt`, `Nb`, `Fi`, `Pl`, `Cs`, `Hu`, `Sl`, `Hr`, `Sr`, `El`, `Tr`, `Lt`, `Lv`, `Et`, `Mt`, `Ms`, `Fil` and `Vi` (e.g. `nameDe`, `introZhs`, `dinnerNoteFil`). German, Dutch, Portuguese, Norwegian, Malay, Filipino and Vietnamese build the mid-sentence name from a preposition ("in München", "no Porto" set by hand); the others decline names, so every place offering them must set it (`inSentenceFi` "Helsingissä", `inSentencePl` "w Polsce"), and the build says which are missing.
 
 Optional text, set on a country and used by everything inside it unless a region or city sets its own: `inSentence` (the name mid-sentence, e.g. "the UK"), `intro`, `serviceText`, `sourcesText`, `starsText`, each with a `...Zh` version for Chinese.
 
@@ -55,11 +55,11 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 
 | field | meaning |
 |---|---|
-| `name`, `nameZh`, `nameJa` | restaurant name (on Chinese pages, a restaurant with only `nameJa` shows it under the English name) |
+| `name`, `nameZh`, `nameJa`, `nameZhs` | restaurant name (on Chinese pages, a restaurant with only `nameJa` shows it under the English name; `nameZhs` is the Simplified Chinese name for mainland China, from the MICHELIN Guide) |
 | `city` | id of its city in `content/places/` |
 | `area`, `areaZh`, `areaJa`, `address`, `addressZh`, `addressJa` | neighbourhood and full address |
 | `stars` | 1, 2 or 3 |
-| `cuisine`, `cuisineZh`, `cuisineJa` | Michelin's cuisine label; a new one creates a new filter button |
+| `cuisine`, `cuisineZh`, `cuisineJa` | Michelin's cuisine label; a new one creates a new filter button. Other languages use the MICHELIN Guide's own label where set (`cuisineDe`, `cuisineNl`, `cuisineFr`, `cuisineIt`, `cuisinePt`, `cuisineTr`, `cuisineZhs`), otherwise the language's `CUISINE_..` map |
 | `rating`, `reviews`, `ratingNote` | Google rating out of 5 and number of reviews |
 | `dinner` | dinner price per person in the country's currency, as a number |
 | `dinnerType` | `menu` (tasting or set menu), `main` (typical main course) or `spend` (typical spend) |

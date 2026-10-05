@@ -28,5 +28,11 @@
     "vegetarian"
   ],
   "chef": "Maarten Bouckaert",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 110)",
+  "lunchNoteNl": "Lunchmenu",
+  "cuisineNl": "Modern Frans",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 110 €)",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine française moderne"
 }

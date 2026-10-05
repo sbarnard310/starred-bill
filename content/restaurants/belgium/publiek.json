@@ -27,5 +27,11 @@
     "vegetarian",
     "vegan",
     "halal"
-  ]
+  ],
+  "dinnerNoteNl": "Proeverijmenu",
+  "lunchNoteNl": "Lunchmenu",
+  "cuisineNl": "Moderne keuken",
+  "dinnerNoteFr": "Menu dégustation",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine moderne"
 }

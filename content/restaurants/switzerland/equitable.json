@@ -21,5 +21,11 @@
     "vegetarian"
   ],
   "chef": "Julian Martin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Moderne Küche",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine moderne",
+  "dinnerNoteIt": "Menu degustazione",
+  "cuisineIt": "Moderna"
 }

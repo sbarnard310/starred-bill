@@ -20,5 +20,7 @@
     "vegetarian"
   ],
   "chef": "Alexandre Silva",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNotePt": "Menu de degustação",
+  "cuisinePt": "Moderna"
 }

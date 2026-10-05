@@ -6,5 +6,14 @@
   "intro": "Prices are in Chinese yuan (CN¥), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Many restaurants, especially in hotels, add a 10–15% service charge on top of menu prices. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering China."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering China.",
+  "languages": [
+    "en",
+    "zhs"
+  ],
+  "nameZhs": "中国",
+  "introZhs": "价格以人民币（CN¥）显示，可切换为英镑、欧元或美元。价格于 2026 年 10 月核实；尚未显示价格的餐厅，价格将陆续补充。",
+  "serviceTextZhs": "所有金额均为每位客人的价格。 许多餐厅（尤其是酒店餐厅）会在套餐价格之外另收 10–15% 的服务费。 不含鱼子酱等加价项目。 以其他币种显示的价格按当日汇率换算，仅供参考。",
+  "sourcesTextZhs": "晚餐以餐厅的主要品鉴套餐为准，配酒则为该套餐的配酒（如有）。价格来自各餐厅的官网与菜单；未公布价格的餐厅将陆续补充。",
+  "starsTextZhs": "Google 评分（满分 5）与评价数于 2026 年 10 月核实。星级来自最新一版中国大陆米其林指南。"
 }

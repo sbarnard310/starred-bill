@@ -22,5 +22,7 @@
     "vegetarian"
   ],
   "chef": "Walter Triebl",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Modern"
 }

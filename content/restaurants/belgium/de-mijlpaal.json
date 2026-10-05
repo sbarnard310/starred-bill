@@ -27,5 +27,11 @@
     "vegetarian"
   ],
   "chef": "Jan Menten",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 80)",
+  "lunchNoteNl": "Lunchmenu",
+  "cuisineNl": "Creatief",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 80 €)",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine créative"
 }

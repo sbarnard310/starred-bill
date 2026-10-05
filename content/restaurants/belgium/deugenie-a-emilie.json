@@ -21,5 +21,9 @@
     "vegetarian"
   ],
   "chef": "Éric Fernez",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 125)",
+  "cuisineNl": "Klassiek Frans",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 125 €)",
+  "cuisineFr": "Cuisine française classique"
 }

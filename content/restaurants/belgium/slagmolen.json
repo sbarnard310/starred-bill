@@ -22,5 +22,9 @@
     "vegetarian"
   ],
   "chef": "Bert Meewis and Giel Meewis",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteNl": "Proeverijmenu",
+  "cuisineNl": "Frans",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine française"
 }

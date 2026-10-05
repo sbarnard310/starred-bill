@@ -6,5 +6,15 @@
   "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Menu prices include VAT. Service is usually included, though some restaurants add a service charge; tipping is optional. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Latvia."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Latvia.",
+  "languages": [
+    "en",
+    "lv"
+  ],
+  "nameLv": "Latvija",
+  "inSentenceLv": "Latvijā",
+  "introLv": "Cenas norādītas eiro, ar pogu tās var skatīt mārciņās, eiro vai ASV dolāros. Cenas pārbaudītas 2026. gada oktobrī; ja restorāna cena vēl nav redzama, tā tiks pievienota.",
+  "serviceTextLv": "Visas summas ir vienam viesim. Ēdienkartes cenās ir iekļauts PVN. Apkalpošana parasti ir iekļauta, lai gan daži restorāni pieskaita apkalpošanas maksu; dzeramnauda ir brīvprātīga. Piemaksas, piemēram, par ikriem, nav iekļautas. Cenas citās valūtās tiek rēķinātas pēc dienas kursa un ir aptuvenas.",
+  "sourcesTextLv": "Vakariņas ir restorāna galvenā degustācijas ēdienkarte, un vīns – vīnu pāri pie tās, ja tādi tiek piedāvāti. Cenas ņemtas no katra restorāna vietnes un ēdienkartēm; tie, kas tās nepublicē, tiks pievienoti vēlāk.",
+  "starsTextLv": "Google vērtējums (no 5) un atsauksmju skaits pārbaudīts 2026. gada oktobrī. Zvaigznes ņemtas no jaunākā Michelin ceļveža, kas aptver Latviju."
 }

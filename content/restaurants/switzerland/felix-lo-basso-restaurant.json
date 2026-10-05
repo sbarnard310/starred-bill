@@ -14,5 +14,11 @@
   "lat": 45.9954696,
   "lng": 8.9322998,
   "placeId": "ChIJE7utXTwthEcRXlOG33UaVhs",
-  "michelinId": "1218455"
+  "michelinId": "1218455",
+  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "cuisineDe": "Italienisch-zeitgemäß",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "cuisineFr": "Cuisine italienne contemporaine",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "cuisineIt": "Italiana contemporanea"
 }

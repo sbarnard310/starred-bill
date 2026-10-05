@@ -22,5 +22,9 @@
     "vegetarian-menu"
   ],
   "chef": "Dimitri Marit",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 55)",
+  "cuisineNl": "Klassiek Frans",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 55 €)",
+  "cuisineFr": "Cuisine française classique"
 }

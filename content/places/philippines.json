@@ -6,5 +6,14 @@
   "intro": "Prices are in Philippine pesos (₱), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Many restaurants add a 10% service charge; VAT is usually included. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Philippines."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Philippines.",
+  "languages": [
+    "en",
+    "fil"
+  ],
+  "nameFil": "Pilipinas",
+  "introFil": "Nasa piso ng Pilipinas (₱) ang mga presyo, may switch para makita ang mga ito sa pound, euro o US dollar. Sinuri ang mga presyo noong Oktubre 2026; idadagdag pa ang presyo ng restawrang wala pang nakalistang presyo.",
+  "serviceTextFil": "Para sa isang bisita ang bawat halaga. Maraming restawran ang nagdadagdag ng 10% service charge; karaniwang kasama na ang VAT. Hindi kasama ang mga dagdag gaya ng caviar. Ang mga presyo sa ibang pera ay gumagamit ng palitan sa araw na iyon at tantiya lamang.",
+  "sourcesTextFil": "Ang hapunan ay ang pangunahing tasting menu ng restawran, at ang wine ay ang wine pairing nito kung mayroon. Galing ang mga presyo sa sariling website at menu ng bawat restawran; idadagdag pa ang mga hindi naglalathala ng presyo.",
+  "starsTextFil": "Ang score sa Google mula 5 at ang bilang ng review, sinuri noong Oktubre 2026. Galing ang mga bituin sa pinakabagong MICHELIN Guide para sa Pilipinas."
 }

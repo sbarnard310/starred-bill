@@ -6,5 +6,15 @@
   "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Menu prices include VAT. Service is usually included, though some restaurants add a service charge; tipping is optional. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Estonia."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Estonia.",
+  "languages": [
+    "en",
+    "et"
+  ],
+  "nameEt": "Eesti",
+  "inSentenceEt": "Eestis",
+  "introEt": "Hinnad on eurodes, nupuga saab neid näha naelsterlingites, eurodes või USA dollarites. Hinnad on kontrollitud 2026. aasta oktoobris; kui restorani hinda veel ei näidata, lisatakse see hiljem.",
+  "serviceTextEt": "Kõik summad on ühe külalise kohta. Menüü hinnad sisaldavad käibemaksu. Teenindus on tavaliselt hinna sees, kuigi mõni restoran lisab teenustasu; jootraha on vabatahtlik. Lisatasud, näiteks kaaviari eest, ei ole arvestatud. Muudes valuutades näidatud hinnad kasutavad päeva vahetuskurssi ja on ligikaudsed.",
+  "sourcesTextEt": "Õhtusöök on restorani peamine degustatsioonimenüü ja vein selle veinipakett, kui seda pakutakse. Hinnad pärinevad iga restorani kodulehelt ja menüüdest; restoranid, kes neid ei avalda, lisatakse hiljem.",
+  "starsTextEt": "Google'i hinnang (viiest) ja arvustuste arv on kontrollitud 2026. aasta oktoobris. Tähed pärinevad uusimast Eesti Michelini teejuhist."
 }

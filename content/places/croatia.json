@@ -6,5 +6,15 @@
   "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Menu prices include VAT. Service is usually included, though some restaurants add a service charge; tipping is optional. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Croatia."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Croatia.",
+  "languages": [
+    "en",
+    "hr"
+  ],
+  "nameHr": "Hrvatska",
+  "inSentenceHr": "u Hrvatskoj",
+  "introHr": "Cijene su u eurima, uz gumb za prikaz u funtama, eurima ili američkim dolarima. Cijene provjerene u listopadu 2026.; gdje cijena restorana još nije prikazana, tek će biti dodana.",
+  "serviceTextHr": "Svi iznosi vrijede za jednog gosta. Cijene menija uključuju PDV. Usluga je obično uključena, iako neki restorani dodaju naknadu za uslugu; napojnica je dobrovoljna. Nadoplate poput kavijara nisu uključene. Cijene u drugim valutama preračunate su po dnevnom tečaju i približne su.",
+  "sourcesTextHr": "Večera je glavni degustacijski meni restorana, a vino njegova vinska pratnja ako je nudi. Cijene su preuzete s mrežnih stranica i menija restorana; restorani koji ih ne objavljuju tek će biti dodani.",
+  "starsTextHr": "Ocjena na Googleu (od 5) i broj recenzija provjereni su u listopadu 2026. Zvjezdice su iz najnovijeg vodiča MICHELIN za Hrvatsku."
 }

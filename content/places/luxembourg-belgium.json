@@ -3,5 +3,11 @@
   "type": "region",
   "parent": "belgium",
   "name": "Luxembourg",
-  "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added."
+  "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
+  "nameNl": "Luxemburg",
+  "inSentenceNl": "in de provincie Luxemburg",
+  "introNl": "De prijzen staan in euro, met een knop om ze in ponden, euro's of Amerikaanse dollars te zien. Prijzen gecontroleerd in oktober 2026; waar de prijs van een restaurant nog ontbreekt, volgt die nog.",
+  "nameFr": "Luxembourg belge",
+  "inSentenceFr": "en province de Luxembourg",
+  "introFr": "Les prix sont en euros, avec un bouton pour les afficher en livres sterling, en euros ou en dollars américains. Prix vérifiés en octobre 2026 ; lorsque le prix d'un restaurant n'apparaît pas encore, il reste à ajouter."
 }

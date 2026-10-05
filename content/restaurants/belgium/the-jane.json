@@ -20,5 +20,11 @@
   "lat": 51.2343837,
   "lng": 4.4046962,
   "placeId": "ChIJvQDh9hj3w0cRPe9AMD95QGw",
-  "michelinId": "1244485"
+  "michelinId": "1244485",
+  "dinnerNoteNl": "Proeverijmenu",
+  "lunchNoteNl": "Lunchmenu",
+  "cuisineNl": "Creatief",
+  "dinnerNoteFr": "Menu dégustation",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine créative"
 }

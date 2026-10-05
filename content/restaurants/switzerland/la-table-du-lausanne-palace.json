@@ -18,5 +18,12 @@
   "placeId": "ChIJ1Zt6NgwvjEcR2rm2NSRArHc",
   "michelinId": "1193699",
   "chef": "Franck Pelux",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Französisch-modern",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine française moderne",
+  "dinnerNoteIt": "Menu degustazione",
+  "cuisineIt": "Francese moderna",
+  "areaIt": "Losanna"
 }

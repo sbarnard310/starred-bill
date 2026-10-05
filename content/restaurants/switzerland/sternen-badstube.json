@@ -23,5 +23,11 @@
     "gluten-free"
   ],
   "chef": "Matthias Brunner",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 53)",
+  "cuisineDe": "Klassische Küche",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 53)",
+  "cuisineFr": "Cuisine classique",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 53)",
+  "cuisineIt": "Classica"
 }

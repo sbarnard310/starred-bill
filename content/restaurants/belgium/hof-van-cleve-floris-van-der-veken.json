@@ -23,5 +23,9 @@
     "vegetarian"
   ],
   "chef": "Peter Goossens",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 180)",
+  "cuisineNl": "Creatief",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 180 €)",
+  "cuisineFr": "Cuisine créative"
 }

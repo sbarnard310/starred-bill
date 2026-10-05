@@ -6,5 +6,29 @@
   "intro": "Prices are in Swiss francs (CHF), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Menu prices include VAT. Service is usually included, though some restaurants add a service charge; tipping is optional. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Switzerland."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Switzerland.",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it"
+  ],
+  "nameDe": "Schweiz",
+  "inSentenceDe": "in der Schweiz",
+  "introDe": "Die Preise sind in Schweizer Franken (CHF) angegeben, mit einer Umschaltung auf Pfund, Euro oder US-Dollar. Preise geprüft im Oktober 2026; wo der Preis eines Restaurants noch fehlt, wird er noch ergänzt.",
+  "serviceTextDe": "Alle Beträge gelten für einen Gast. Die Menüpreise enthalten die Mehrwertsteuer. Der Service ist meist inbegriffen, manche Restaurants berechnen aber einen Servicezuschlag; Trinkgeld ist freiwillig. Aufpreise etwa für Kaviar sind nicht enthalten. Preise in anderen Währungen beruhen auf dem Tageskurs und sind Näherungswerte.",
+  "sourcesTextDe": "Abendessen ist das wichtigste Degustationsmenü des Restaurants und Wein die Weinbegleitung dazu, sofern es eine gibt. Die Preise stammen von der Website und den Speisekarten der Restaurants; Restaurants, die keine veröffentlichen, werden noch ergänzt.",
+  "starsTextDe": "Die Google-Bewertung (von 5) und die Zahl der Bewertungen wurden im Oktober 2026 geprüft. Die Sterne stammen aus der neuesten Ausgabe des Guide MICHELIN für die Schweiz.",
+  "nameFr": "Suisse",
+  "inSentenceFr": "en Suisse",
+  "introFr": "Les prix sont en francs suisses (CHF), avec un bouton pour les afficher en livres sterling, en euros ou en dollars américains. Prix vérifiés en octobre 2026 ; lorsque le prix d'un restaurant n'apparaît pas encore, il reste à ajouter.",
+  "serviceTextFr": "Chaque montant s'entend pour une personne. Les prix des menus comprennent la TVA. Le service est généralement compris, même si certains restaurants ajoutent des frais de service ; le pourboire est libre. Les suppléments comme le caviar ne sont pas inclus. Les prix affichés dans une autre devise utilisent le taux de change du jour et sont approximatifs.",
+  "sourcesTextFr": "Le dîner correspond au menu dégustation principal du restaurant, et le vin à son accord mets-vins lorsqu'il en propose un. Les prix proviennent du site et des menus de chaque restaurant ; ceux qui ne les publient pas restent à ajouter.",
+  "starsTextFr": "La note Google sur 5 et le nombre d'avis ont été vérifiés en octobre 2026. Les étoiles proviennent de la dernière édition du Guide MICHELIN Suisse.",
+  "nameIt": "Svizzera",
+  "inSentenceIt": "in Svizzera",
+  "introIt": "I prezzi sono in franchi svizzeri (CHF), con un selettore per vederli in sterline, euro o dollari americani. Prezzi verificati a ottobre 2026; dove il prezzo di un ristorante non compare ancora, è da aggiungere.",
+  "serviceTextIt": "Ogni importo è per un ospite. I prezzi dei menu includono l'IVA. Il servizio è di solito compreso, anche se alcuni ristoranti aggiungono un supplemento; la mancia è facoltativa. I supplementi come il caviale non sono inclusi. I prezzi in altre valute usano il cambio del giorno e sono indicativi.",
+  "sourcesTextIt": "La cena è il menu degustazione principale del ristorante e il vino è il suo abbinamento, quando c'è. I prezzi provengono dal sito e dai menu di ciascun ristorante; quelli che non li pubblicano sono ancora da aggiungere.",
+  "starsTextIt": "Il punteggio Google su 5 e il numero di recensioni sono stati verificati a ottobre 2026. Le stelle sono quelle dell'ultima Guida MICHELIN Svizzera."
 }

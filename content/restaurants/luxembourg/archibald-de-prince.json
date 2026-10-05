@@ -20,5 +20,9 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine bio",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Bio"
 }

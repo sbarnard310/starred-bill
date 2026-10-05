@@ -23,5 +23,14 @@
   "placeId": "ChIJt4zlNHkxjEcRn15FZoLyI5w",
   "michelinId": "179051",
   "chef": "Franck Giovannini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 360)",
+  "lunchNoteDe": "Mittagsmenü",
+  "cuisineDe": "Französisch-klassisch",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 360)",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine française classique",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 360)",
+  "lunchNoteIt": "Menu pranzo",
+  "cuisineIt": "Francese classica"
 }

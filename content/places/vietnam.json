@@ -6,5 +6,14 @@
   "intro": "Prices are in Vietnamese dong (₫), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Many restaurants quote prices “++”, adding service and VAT to the bill. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Vietnam."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Vietnam.",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "nameVi": "Việt Nam",
+  "introVi": "Giá tính bằng đồng Việt Nam (₫), có nút chuyển sang bảng Anh, euro hoặc đô la Mỹ. Giá được kiểm tra vào tháng 10 năm 2026; nhà hàng nào chưa hiện giá sẽ được bổ sung sau.",
+  "serviceTextVi": "Mọi con số là cho một khách. Nhiều nhà hàng niêm yết giá “++”, tức cộng thêm phí phục vụ và VAT vào hóa đơn. Phụ phí như trứng cá muối không được tính. Giá bằng đơn vị tiền khác dùng tỷ giá trong ngày và chỉ mang tính ước tính.",
+  "sourcesTextVi": "Bữa tối là thực đơn nếm thử chính của nhà hàng, còn rượu vang là gói rượu kết hợp đi kèm nếu có. Giá lấy từ trang web và thực đơn của từng nhà hàng; nhà hàng nào không công bố giá sẽ được bổ sung sau.",
+  "starsTextVi": "Điểm Google (trên 5) và số đánh giá được kiểm tra vào tháng 10 năm 2026. Sao lấy từ ấn bản Cẩm nang MICHELIN mới nhất dành cho Việt Nam."
 }

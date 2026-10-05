@@ -6,5 +6,15 @@
   "intro": "Prices are in Brazilian reais (R$), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. A 10% service charge is usually added to the bill. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Brazil."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Brazil.",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "namePt": "Brasil",
+  "inSentencePt": "no Brasil",
+  "introPt": "Os preços estão em reais (R$), com um botão para os ver em libras, euros ou dólares americanos. Preços verificados em outubro de 2026; quando o preço de um restaurante ainda não aparece, falta adicioná-lo.",
+  "serviceTextPt": "Todos os valores são para um cliente. Normalmente é acrescentada à conta uma taxa de serviço de 10%. Suplementos como caviar ficam de fora. Os preços noutras moedas usam a taxa de câmbio do dia e são aproximados.",
+  "sourcesTextPt": "O jantar é o principal menu de degustação do restaurante, e o vinho é a sua harmonização, quando existe. Os preços vêm do site e dos menus de cada restaurante; os que não os publicam ainda estão por adicionar.",
+  "starsTextPt": "A avaliação Google (em 5) e o número de avaliações foram verificados em outubro de 2026. As estrelas vêm do Guia MICHELIN mais recente para o Brasil."
 }

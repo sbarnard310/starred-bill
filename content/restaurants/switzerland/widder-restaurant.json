@@ -20,5 +20,11 @@
     "gluten-free"
   ],
   "chef": "Stefan Heilemann",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "cuisineDe": "Französisch-modern",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "cuisineFr": "Cuisine française moderne",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "cuisineIt": "Francese moderna"
 }

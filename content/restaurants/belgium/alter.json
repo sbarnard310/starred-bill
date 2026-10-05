@@ -21,5 +21,9 @@
     "vegetarian"
   ],
   "chef": "Jo Grootaers",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteNl": "Proeverijmenu",
+  "cuisineNl": "Creatief",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine créative"
 }

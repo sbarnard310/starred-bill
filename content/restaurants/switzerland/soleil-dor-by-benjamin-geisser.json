@@ -22,5 +22,13 @@
     "gluten-free"
   ],
   "chef": "Benjamin Geisser",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Kreativ",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine créative",
+  "areaFr": "Saint-Gall",
+  "dinnerNoteIt": "Menu degustazione",
+  "cuisineIt": "Creativa",
+  "areaIt": "San Gallo"
 }

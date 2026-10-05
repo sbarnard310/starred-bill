@@ -26,5 +26,8 @@
     "vegetarian"
   ],
   "chef": "Sebastian Baumann",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü",
+  "lunchNoteDe": "Mittagsmenü",
+  "cuisineDe": "Moderne Küche"
 }

@@ -6,5 +6,14 @@
   "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Menu prices include VAT. Service is usually included, though some restaurants add a service charge; tipping is optional. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Malta."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Malta.",
+  "languages": [
+    "en",
+    "mt"
+  ],
+  "inSentenceMt": "f'Malta",
+  "introMt": "Il-prezzijiet huma f'ewro, b'buttuna biex tarahom f'liri sterlini, ewro jew dollari Amerikani. Il-prezzijiet ġew iċċekkjati f'Ottubru 2026; fejn il-prezz ta' ristorant għadu ma jidhirx, għad irid jiżdied.",
+  "serviceTextMt": "Kull ammont huwa għal mistieden wieħed. Il-prezzijiet tal-menu jinkludu l-VAT. Is-servizz normalment ikun inkluż, għalkemm xi ristoranti jżidu ħlas tas-servizz; it-tip huwa volontarju. Supplimenti bħall-kavjar ma jidħlux. Il-prezzijiet f'muniti oħra jużaw ir-rata tal-kambju tal-jum u huma approssimattivi.",
+  "sourcesTextMt": "Il-pranzu huwa l-menu tad-degustazzjoni prinċipali tar-ristorant, u l-inbid huwa l-għażla ta' nbid għalih, jekk hemm. Il-prezzijiet ġejjin mis-sit u l-menus ta' kull ristorant; dawk li ma jippubblikawhomx għad iridu jiżdiedu.",
+  "starsTextMt": "Il-klassifika Google (minn 5) u n-numru ta' reviżjonijiet ġew iċċekkjati f'Ottubru 2026. L-istilel ġejjin mill-aktar Gwida MICHELIN riċenti għal Malta."
 }

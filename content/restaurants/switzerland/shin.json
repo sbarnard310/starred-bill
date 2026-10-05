@@ -19,5 +19,11 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Asiatisch-zeitgemäß",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine asiatique contemporaine",
+  "dinnerNoteIt": "Menu degustazione",
+  "cuisineIt": "Asiatica contemporanea"
 }

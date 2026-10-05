@@ -20,5 +20,10 @@
     "vegetarian"
   ],
   "chef": "Julien Lucas",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "cuisineFr": "Cuisine française",
+  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "cuisineDe": "Französisch",
+  "areaDe": "Luxemburg"
 }

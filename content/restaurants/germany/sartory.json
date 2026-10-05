@@ -22,5 +22,7 @@
     "vegetarian"
   ],
   "chef": "Simon Lang",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
+  "cuisineDe": "Klassische Küche"
 }

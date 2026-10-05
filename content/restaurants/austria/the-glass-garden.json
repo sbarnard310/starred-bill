@@ -26,5 +26,8 @@
     "vegetarian"
   ],
   "chef": "Simon Wagner",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 52 €)",
+  "lunchNoteDe": "Mittagsmenü",
+  "cuisineDe": "Kreativ"
 }

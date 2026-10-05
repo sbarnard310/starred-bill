@@ -22,5 +22,7 @@
     "vegetarian"
   ],
   "chef": "Philipp Kroboth",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Saisonal"
 }

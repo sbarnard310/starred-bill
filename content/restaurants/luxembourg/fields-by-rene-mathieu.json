@@ -24,5 +24,9 @@
     "vegan"
   ],
   "chef": "René Mathieu",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine de saison",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Saisonal"
 }

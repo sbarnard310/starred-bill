@@ -26,5 +26,8 @@
     "vegetarian"
   ],
   "chef": "Andreas Schaffrath",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
+  "lunchNoteDe": "Mittagsmenü",
+  "cuisineDe": "Französisch-klassisch"
 }

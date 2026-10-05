@@ -18,5 +18,9 @@
     "vegetarian"
   ],
   "chef": "Grégoire Gillard",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "cuisineNl": "Marktkeuken",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "cuisineFr": "Cuisine du marché"
 }

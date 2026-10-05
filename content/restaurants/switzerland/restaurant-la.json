@@ -22,5 +22,11 @@
     "gluten-free"
   ],
   "chef": "Matthieu Judenne",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 50)",
+  "cuisineDe": "Saisonal",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 50)",
+  "cuisineFr": "Cuisine de saison",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 50)",
+  "cuisineIt": "Cucina di stagione"
 }

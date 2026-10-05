@@ -25,5 +25,11 @@
     "vegetarian"
   ],
   "chef": "Maurice Huynen",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 70)",
+  "lunchNoteNl": "Lunchmenu",
+  "cuisineNl": "Modern Frans",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 70 €)",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine française moderne"
 }

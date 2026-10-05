@@ -24,5 +24,11 @@
     "gluten-free"
   ],
   "chef": "Christian Vogel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Kreativ",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine créative",
+  "dinnerNoteIt": "Menu degustazione",
+  "cuisineIt": "Creativa"
 }

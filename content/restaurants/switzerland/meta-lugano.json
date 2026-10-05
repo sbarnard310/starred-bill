@@ -24,5 +24,11 @@
     "gluten-free"
   ],
   "chef": "Arturo Fragnito",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Italienisch",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine italienne",
+  "dinnerNoteIt": "Menu degustazione",
+  "cuisineIt": "Italiana"
 }

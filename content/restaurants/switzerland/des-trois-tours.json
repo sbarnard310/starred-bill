@@ -24,5 +24,14 @@
   "michelinId": "1195868",
   "diets": [
     "gluten-free"
-  ]
+  ],
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 180)",
+  "lunchNoteDe": "Mittagsmenü",
+  "cuisineDe": "Französisch-zeitgemäß",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 180)",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine française contemporaine",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 180)",
+  "lunchNoteIt": "Menu pranzo",
+  "cuisineIt": "Francese contemporanea"
 }

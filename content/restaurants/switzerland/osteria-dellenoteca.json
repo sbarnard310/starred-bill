@@ -25,5 +25,11 @@
     "gluten-free"
   ],
   "chef": "Jacopo Rovetini",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Mediterran",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine méditerranéenne",
+  "dinnerNoteIt": "Menu degustazione",
+  "cuisineIt": "Mediterranea"
 }

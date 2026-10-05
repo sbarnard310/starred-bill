@@ -6,5 +6,21 @@
   "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Menu prices include VAT. Service is usually included, though some restaurants add a service charge; tipping is optional. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Belgium."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Belgium.",
+  "languages": [
+    "en",
+    "nl",
+    "fr"
+  ],
+  "nameNl": "België",
+  "introNl": "De prijzen staan in euro, met een knop om ze in ponden, euro's of Amerikaanse dollars te zien. Prijzen gecontroleerd in oktober 2026; waar de prijs van een restaurant nog ontbreekt, volgt die nog.",
+  "serviceTextNl": "Alle bedragen gelden voor één gast. Menuprijzen zijn inclusief btw. Bediening is meestal inbegrepen, al rekenen sommige restaurants servicekosten; fooi is vrijwillig. Toeslagen zoals kaviaar tellen niet mee. Prijzen in andere munten gebruiken de wisselkoers van de dag en zijn bij benadering.",
+  "sourcesTextNl": "Diner is het belangrijkste proeverijmenu van het restaurant, en wijn het bijbehorende wijnarrangement als dat er is. De prijzen komen van de eigen website en menukaarten van elk restaurant; restaurants die ze niet publiceren, volgen nog.",
+  "starsTextNl": "De Google-score (van 5) en het aantal recensies zijn gecontroleerd in oktober 2026. De sterren komen uit de nieuwste MICHELIN Gids België & Luxemburg.",
+  "nameFr": "Belgique",
+  "inSentenceFr": "en Belgique",
+  "introFr": "Les prix sont en euros, avec un bouton pour les afficher en livres sterling, en euros ou en dollars américains. Prix vérifiés en octobre 2026 ; lorsque le prix d'un restaurant n'apparaît pas encore, il reste à ajouter.",
+  "serviceTextFr": "Chaque montant s'entend pour une personne. Les prix des menus comprennent la TVA. Le service est généralement compris, même si certains restaurants ajoutent des frais de service ; le pourboire est libre. Les suppléments comme le caviar ne sont pas inclus. Les prix affichés dans une autre devise utilisent le taux de change du jour et sont approximatifs.",
+  "sourcesTextFr": "Le dîner correspond au menu dégustation principal du restaurant, et le vin à son accord mets-vins lorsqu'il en propose un. Les prix proviennent du site et des menus de chaque restaurant ; ceux qui ne les publient pas restent à ajouter.",
+  "starsTextFr": "La note Google sur 5 et le nombre d'avis ont été vérifiés en octobre 2026. Les étoiles proviennent de la dernière édition du Guide MICHELIN Belgique & Luxembourg."
 }

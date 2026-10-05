@@ -14,5 +14,11 @@
   "lat": 47.2916285,
   "lng": 8.5476016,
   "placeId": "ChIJ32VxsN6nmkcRwnx_9t7jYEY",
-  "michelinId": "179225"
+  "michelinId": "179225",
+  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "cuisineDe": "Klassische Küche",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "cuisineFr": "Cuisine classique",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "cuisineIt": "Classica"
 }

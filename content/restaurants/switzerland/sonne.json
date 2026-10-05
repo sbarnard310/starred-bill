@@ -22,5 +22,11 @@
     "vegan"
   ],
   "chef": "Kurt Mösching",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 185)",
+  "cuisineDe": "Modern",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 185)",
+  "cuisineFr": "Cuisine actuelle",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 185)",
+  "cuisineIt": "Contemporanea"
 }

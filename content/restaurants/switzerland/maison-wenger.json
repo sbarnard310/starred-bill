@@ -28,5 +28,14 @@
     "gluten-free"
   ],
   "chef": "Jérémy Desbraux",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 200)",
+  "lunchNoteDe": "Mittagsmenü",
+  "cuisineDe": "Französisch-modern",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 200)",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine française moderne",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 200)",
+  "lunchNoteIt": "Menu pranzo",
+  "cuisineIt": "Francese moderna"
 }

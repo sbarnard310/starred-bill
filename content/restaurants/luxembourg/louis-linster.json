@@ -19,5 +19,9 @@
     "vegetarian-menu"
   ],
   "chef": "Louis Linster",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "cuisineFr": "Cuisine française moderne",
+  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "cuisineDe": "Französisch-modern"
 }

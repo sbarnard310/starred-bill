@@ -27,5 +27,8 @@
     "vegetarian"
   ],
   "chef": "Sabrina Fenzl",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
+  "lunchNoteDe": "Mittagsmenü",
+  "cuisineDe": "Moderne Küche"
 }

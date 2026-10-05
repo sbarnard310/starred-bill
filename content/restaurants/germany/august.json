@@ -26,5 +26,8 @@
     "vegetarian"
   ],
   "chef": "Christian Grünwald",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 150 €)",
+  "lunchNoteDe": "Mittagsmenü",
+  "cuisineDe": "Kreativ"
 }

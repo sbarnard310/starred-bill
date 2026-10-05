@@ -3,5 +3,6 @@
   "type": "region",
   "parent": "austria",
   "name": "Vorarlberg",
-  "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added."
+  "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
+  "introDe": "Die Preise sind in Euro angegeben, mit einer Umschaltung auf Pfund, Euro oder US-Dollar. Preise geprüft im Oktober 2026; wo der Preis eines Restaurants noch fehlt, wird er noch ergänzt."
 }

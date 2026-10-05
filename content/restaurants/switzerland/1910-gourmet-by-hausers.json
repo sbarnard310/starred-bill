@@ -23,5 +23,11 @@
     "gluten-free"
   ],
   "chef": "Dávid Imre Rózsa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Modern",
+  "dinnerNoteFr": "Menu dégustation",
+  "cuisineFr": "Cuisine actuelle",
+  "dinnerNoteIt": "Menu degustazione",
+  "cuisineIt": "Contemporanea"
 }

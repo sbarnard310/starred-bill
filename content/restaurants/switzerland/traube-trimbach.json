@@ -18,5 +18,11 @@
   "placeId": "ChIJ1yfqJLsxkEcRv_8s2bh-_zI",
   "michelinId": "179829",
   "chef": "Arno Sgier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 180)",
+  "cuisineDe": "Französisch-zeitgemäß",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 180)",
+  "cuisineFr": "Cuisine française contemporaine",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 180)",
+  "cuisineIt": "Francese contemporanea"
 }

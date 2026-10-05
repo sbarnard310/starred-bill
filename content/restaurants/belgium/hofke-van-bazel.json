@@ -28,5 +28,11 @@
     "vegetarian"
   ],
   "chef": "Kris De Roy",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 89)",
+  "lunchNoteNl": "Lunchmenu",
+  "cuisineNl": "Eigentijds Frans",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 89 €)",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine française contemporaine"
 }

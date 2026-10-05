@@ -28,6 +28,11 @@
 :lang(ko) h1, :lang(ko) h2 { word-break: keep-all; }
 :lang(th) { --font-display: "Gloock", "Noto Serif Thai", serif; --font-body: "Figtree", "Noto Sans Thai", "Thonburi", system-ui, sans-serif; }
 .alt-name:lang(th) { font-family: var(--font-body); }
+/* Simplified Chinese (mainland China pages) uses Simplified letterforms. */
+:lang(zh-Hans) { --font-display: "Gloock", "Noto Serif SC", "PingFang SC", serif; --font-body: "Figtree", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif; }
+/* Greek, Serbian Cyrillic and Vietnamese need letters Gloock and Figtree don't have, so whole pages switch to Noto. */
+:lang(el), :lang(sr), :lang(vi) { --font-display: "Noto Serif", Georgia, serif; --font-body: "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+:lang(el) .brand, :lang(sr) .brand, :lang(vi) .brand { font-family: "Gloock", Georgia, serif; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0C1712; --surface: #13221A; --ink: #E4EEE7; --muted: #98AE9F; --line: #24392D;

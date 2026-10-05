@@ -6,5 +6,15 @@
   "intro": "Prices are in euros, with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Menu prices include VAT. Service is usually included, though some restaurants add a service charge; tipping is optional. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Lithuania."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Lithuania.",
+  "languages": [
+    "en",
+    "lt"
+  ],
+  "nameLt": "Lietuva",
+  "inSentenceLt": "Lietuvoje",
+  "introLt": "Kainos nurodytos eurais, o mygtuku jas galima perjungti į svarus, eurus ar JAV dolerius. Kainos patikrintos 2026 m. spalį; jei restorano kaina dar nerodoma, ji bus pridėta vėliau.",
+  "serviceTextLt": "Visos sumos nurodytos vienam svečiui. Meniu kainos su PVM. Aptarnavimas paprastai įskaičiuotas, nors kai kurie restoranai prideda aptarnavimo mokestį; arbatpinigiai savanoriški. Priedai, pavyzdžiui, ikrai, neįskaičiuoti. Kainos kitomis valiutomis skaičiuojamos pagal dienos kursą ir yra apytikslės.",
+  "sourcesTextLt": "Vakarienė – tai pagrindinis restorano degustacinis meniu, o vynas – vynų derinys prie jo, jei siūlomas. Kainos paimtos iš kiekvieno restorano svetainės ir meniu; tų, kurie jų neskelbia, kainos bus pridėtos vėliau.",
+  "starsTextLt": "„Google“ įvertinimas (iš 5) ir atsiliepimų skaičius patikrinti 2026 m. spalį. Žvaigždutės paimtos iš naujausio Lietuvos „Michelin“ gido."
 }

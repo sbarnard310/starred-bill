@@ -44,6 +44,10 @@ content:
       - name: nameTh
         label: Name in Thai
         type: string
+      - name: nameZhs
+        label: Name in Simplified Chinese
+        description: For restaurants in mainland China, e.g. 新荣记.
+        type: string
       - name: city
         label: City
         description: The city it's in. It then also appears on that city's region and country pages, and any collection that includes them.
@@ -101,6 +105,90 @@ content:
         label: Area in Japanese
         description: Only for places offered in Japanese, e.g. 港区西麻布.
         type: string
+      - name: areaZhs
+        label: Area in Simplified Chinese
+        description: Only for places offered in Simplified Chinese.
+        type: string
+      - name: areaDe
+        label: Area in German
+        description: Only for places offered in German.
+        type: string
+      - name: areaNl
+        label: Area in Dutch
+        description: Only for places offered in Dutch.
+        type: string
+      - name: areaPt
+        label: Area in Portuguese
+        description: Only for places offered in Portuguese.
+        type: string
+      - name: areaNb
+        label: Area in Norwegian
+        description: Only for places offered in Norwegian.
+        type: string
+      - name: areaFi
+        label: Area in Finnish
+        description: Only for places offered in Finnish.
+        type: string
+      - name: areaPl
+        label: Area in Polish
+        description: Only for places offered in Polish.
+        type: string
+      - name: areaCs
+        label: Area in Czech
+        description: Only for places offered in Czech.
+        type: string
+      - name: areaHu
+        label: Area in Hungarian
+        description: Only for places offered in Hungarian.
+        type: string
+      - name: areaSl
+        label: Area in Slovenian
+        description: Only for places offered in Slovenian.
+        type: string
+      - name: areaHr
+        label: Area in Croatian
+        description: Only for places offered in Croatian.
+        type: string
+      - name: areaSr
+        label: Area in Serbian
+        description: Only for places offered in Serbian.
+        type: string
+      - name: areaEl
+        label: Area in Greek
+        description: Only for places offered in Greek.
+        type: string
+      - name: areaTr
+        label: Area in Turkish
+        description: Only for places offered in Turkish.
+        type: string
+      - name: areaLt
+        label: Area in Lithuanian
+        description: Only for places offered in Lithuanian.
+        type: string
+      - name: areaLv
+        label: Area in Latvian
+        description: Only for places offered in Latvian.
+        type: string
+      - name: areaEt
+        label: Area in Estonian
+        description: Only for places offered in Estonian.
+        type: string
+      - name: areaMt
+        label: Area in Maltese
+        description: Only for places offered in Maltese.
+        type: string
+      - name: areaMs
+        label: Area in Malay
+        description: Only for places offered in Malay.
+        type: string
+      - name: areaFil
+        label: Area in Filipino
+        description: Only for places offered in Filipino.
+        type: string
+      - name: areaVi
+        label: Area in Vietnamese
+        description: Only for places offered in Vietnamese.
+        type: string
       - name: address
         label: Address
         description: Full address, also used for the Google Maps link.
@@ -127,6 +215,34 @@ content:
       - name: cuisineJa
         label: Cuisine in Japanese
         description: Michelin's Japanese label, e.g. 日本料理.
+        type: string
+      - name: cuisineZhs
+        label: Cuisine in Simplified Chinese
+        description: Michelin's own Simplified Chinese label, where the guide has one.
+        type: string
+      - name: cuisineDe
+        label: Cuisine in German
+        description: Michelin's own German label, where the guide has one.
+        type: string
+      - name: cuisineNl
+        label: Cuisine in Dutch
+        description: Michelin's own Dutch label, where the guide has one.
+        type: string
+      - name: cuisineFr
+        label: Cuisine in French
+        description: Michelin's own French label, where the guide has one.
+        type: string
+      - name: cuisineIt
+        label: Cuisine in Italian
+        description: Michelin's own Italian label, where the guide has one.
+        type: string
+      - name: cuisinePt
+        label: Cuisine in Portuguese
+        description: Michelin's own Portuguese label, where the guide has one.
+        type: string
+      - name: cuisineTr
+        label: Cuisine in Turkish
+        description: Michelin's own Turkish label, where the guide has one.
         type: string
       - name: chef
         label: Head chef
@@ -205,6 +321,69 @@ content:
       - name: changeNoteJa
         label: Star change note in Japanese
         type: string
+      - name: changeNoteZhs
+        label: Star change note in Simplified Chinese
+        type: string
+      - name: changeNoteDe
+        label: Star change note in German
+        type: string
+      - name: changeNoteNl
+        label: Star change note in Dutch
+        type: string
+      - name: changeNotePt
+        label: Star change note in Portuguese
+        type: string
+      - name: changeNoteNb
+        label: Star change note in Norwegian
+        type: string
+      - name: changeNoteFi
+        label: Star change note in Finnish
+        type: string
+      - name: changeNotePl
+        label: Star change note in Polish
+        type: string
+      - name: changeNoteCs
+        label: Star change note in Czech
+        type: string
+      - name: changeNoteHu
+        label: Star change note in Hungarian
+        type: string
+      - name: changeNoteSl
+        label: Star change note in Slovenian
+        type: string
+      - name: changeNoteHr
+        label: Star change note in Croatian
+        type: string
+      - name: changeNoteSr
+        label: Star change note in Serbian
+        type: string
+      - name: changeNoteEl
+        label: Star change note in Greek
+        type: string
+      - name: changeNoteTr
+        label: Star change note in Turkish
+        type: string
+      - name: changeNoteLt
+        label: Star change note in Lithuanian
+        type: string
+      - name: changeNoteLv
+        label: Star change note in Latvian
+        type: string
+      - name: changeNoteEt
+        label: Star change note in Estonian
+        type: string
+      - name: changeNoteMt
+        label: Star change note in Maltese
+        type: string
+      - name: changeNoteMs
+        label: Star change note in Malay
+        type: string
+      - name: changeNoteFil
+        label: Star change note in Filipino
+        type: string
+      - name: changeNoteVi
+        label: Star change note in Vietnamese
+        type: string
       - name: changeDate
         label: Star change date
         description: Year and month of the Michelin Guide announcement, e.g. 2026-02.
@@ -271,6 +450,69 @@ content:
         type: string
       - name: dinnerNoteJa
         label: Dinner note in Japanese
+        type: string
+      - name: dinnerNoteZhs
+        label: Dinner note in Simplified Chinese
+        type: string
+      - name: dinnerNoteDe
+        label: Dinner note in German
+        type: string
+      - name: dinnerNoteNl
+        label: Dinner note in Dutch
+        type: string
+      - name: dinnerNotePt
+        label: Dinner note in Portuguese
+        type: string
+      - name: dinnerNoteNb
+        label: Dinner note in Norwegian
+        type: string
+      - name: dinnerNoteFi
+        label: Dinner note in Finnish
+        type: string
+      - name: dinnerNotePl
+        label: Dinner note in Polish
+        type: string
+      - name: dinnerNoteCs
+        label: Dinner note in Czech
+        type: string
+      - name: dinnerNoteHu
+        label: Dinner note in Hungarian
+        type: string
+      - name: dinnerNoteSl
+        label: Dinner note in Slovenian
+        type: string
+      - name: dinnerNoteHr
+        label: Dinner note in Croatian
+        type: string
+      - name: dinnerNoteSr
+        label: Dinner note in Serbian
+        type: string
+      - name: dinnerNoteEl
+        label: Dinner note in Greek
+        type: string
+      - name: dinnerNoteTr
+        label: Dinner note in Turkish
+        type: string
+      - name: dinnerNoteLt
+        label: Dinner note in Lithuanian
+        type: string
+      - name: dinnerNoteLv
+        label: Dinner note in Latvian
+        type: string
+      - name: dinnerNoteEt
+        label: Dinner note in Estonian
+        type: string
+      - name: dinnerNoteMt
+        label: Dinner note in Maltese
+        type: string
+      - name: dinnerNoteMs
+        label: Dinner note in Malay
+        type: string
+      - name: dinnerNoteFil
+        label: Dinner note in Filipino
+        type: string
+      - name: dinnerNoteVi
+        label: Dinner note in Vietnamese
         type: string
       - name: wine
         label: Wine pairing price (dinner)
@@ -342,6 +584,69 @@ content:
         type: string
       - name: lunchNoteJa
         label: Lunch note in Japanese
+        type: string
+      - name: lunchNoteZhs
+        label: Lunch note in Simplified Chinese
+        type: string
+      - name: lunchNoteDe
+        label: Lunch note in German
+        type: string
+      - name: lunchNoteNl
+        label: Lunch note in Dutch
+        type: string
+      - name: lunchNotePt
+        label: Lunch note in Portuguese
+        type: string
+      - name: lunchNoteNb
+        label: Lunch note in Norwegian
+        type: string
+      - name: lunchNoteFi
+        label: Lunch note in Finnish
+        type: string
+      - name: lunchNotePl
+        label: Lunch note in Polish
+        type: string
+      - name: lunchNoteCs
+        label: Lunch note in Czech
+        type: string
+      - name: lunchNoteHu
+        label: Lunch note in Hungarian
+        type: string
+      - name: lunchNoteSl
+        label: Lunch note in Slovenian
+        type: string
+      - name: lunchNoteHr
+        label: Lunch note in Croatian
+        type: string
+      - name: lunchNoteSr
+        label: Lunch note in Serbian
+        type: string
+      - name: lunchNoteEl
+        label: Lunch note in Greek
+        type: string
+      - name: lunchNoteTr
+        label: Lunch note in Turkish
+        type: string
+      - name: lunchNoteLt
+        label: Lunch note in Lithuanian
+        type: string
+      - name: lunchNoteLv
+        label: Lunch note in Latvian
+        type: string
+      - name: lunchNoteEt
+        label: Lunch note in Estonian
+        type: string
+      - name: lunchNoteMt
+        label: Lunch note in Maltese
+        type: string
+      - name: lunchNoteMs
+        label: Lunch note in Malay
+        type: string
+      - name: lunchNoteFil
+        label: Lunch note in Filipino
+        type: string
+      - name: lunchNoteVi
+        label: Lunch note in Vietnamese
         type: string
       - name: lunchWine
         label: Wine pairing price (lunch)
@@ -417,6 +722,69 @@ content:
         type: string
       - name: statusNoteJa
         label: Status note in Japanese
+        type: string
+      - name: statusNoteZhs
+        label: Status note in Simplified Chinese
+        type: string
+      - name: statusNoteDe
+        label: Status note in German
+        type: string
+      - name: statusNoteNl
+        label: Status note in Dutch
+        type: string
+      - name: statusNotePt
+        label: Status note in Portuguese
+        type: string
+      - name: statusNoteNb
+        label: Status note in Norwegian
+        type: string
+      - name: statusNoteFi
+        label: Status note in Finnish
+        type: string
+      - name: statusNotePl
+        label: Status note in Polish
+        type: string
+      - name: statusNoteCs
+        label: Status note in Czech
+        type: string
+      - name: statusNoteHu
+        label: Status note in Hungarian
+        type: string
+      - name: statusNoteSl
+        label: Status note in Slovenian
+        type: string
+      - name: statusNoteHr
+        label: Status note in Croatian
+        type: string
+      - name: statusNoteSr
+        label: Status note in Serbian
+        type: string
+      - name: statusNoteEl
+        label: Status note in Greek
+        type: string
+      - name: statusNoteTr
+        label: Status note in Turkish
+        type: string
+      - name: statusNoteLt
+        label: Status note in Lithuanian
+        type: string
+      - name: statusNoteLv
+        label: Status note in Latvian
+        type: string
+      - name: statusNoteEt
+        label: Status note in Estonian
+        type: string
+      - name: statusNoteMt
+        label: Status note in Maltese
+        type: string
+      - name: statusNoteMs
+        label: Status note in Malay
+        type: string
+      - name: statusNoteFil
+        label: Status note in Filipino
+        type: string
+      - name: statusNoteVi
+        label: Status note in Vietnamese
         type: string
       - name: website
         label: Website
@@ -512,9 +880,72 @@ content:
       - name: nameJa
         label: Name in Japanese
         type: string
+      - name: nameZhs
+        label: Name in Simplified Chinese
+        type: string
+      - name: nameDe
+        label: Name in German
+        type: string
+      - name: nameNl
+        label: Name in Dutch
+        type: string
+      - name: namePt
+        label: Name in Portuguese
+        type: string
+      - name: nameNb
+        label: Name in Norwegian
+        type: string
+      - name: nameFi
+        label: Name in Finnish
+        type: string
+      - name: namePl
+        label: Name in Polish
+        type: string
+      - name: nameCs
+        label: Name in Czech
+        type: string
+      - name: nameHu
+        label: Name in Hungarian
+        type: string
+      - name: nameSl
+        label: Name in Slovenian
+        type: string
+      - name: nameHr
+        label: Name in Croatian
+        type: string
+      - name: nameSr
+        label: Name in Serbian
+        type: string
+      - name: nameEl
+        label: Name in Greek
+        type: string
+      - name: nameTr
+        label: Name in Turkish
+        type: string
+      - name: nameLt
+        label: Name in Lithuanian
+        type: string
+      - name: nameLv
+        label: Name in Latvian
+        type: string
+      - name: nameEt
+        label: Name in Estonian
+        type: string
+      - name: nameMt
+        label: Name in Maltese
+        type: string
+      - name: nameMs
+        label: Name in Malay
+        type: string
+      - name: nameFil
+        label: Name in Filipino
+        type: string
+      - name: nameVi
+        label: Name in Vietnamese
+        type: string
       - name: languages
         label: Languages offered
-        description: The language buttons on this page and the pages inside it. Leave empty for English only. Otherwise English plus the main official language: Chinese (and Cantonese) for Taiwan, Hong Kong and Macau, French for France and Monaco, Japanese for Japan, Spanish for Spain, Italian for Italy, Korean for South Korea, Danish for Denmark, Icelandic for Iceland, Catalan for Andorra, Thai for Thailand.
+        description: "The language buttons on this page and the pages inside it. Leave empty for English only. Otherwise English plus the main official language (e.g. French for France, German for Germany and Austria, Dutch for the Netherlands). Switzerland has German, French and Italian; Belgium Dutch and French; Luxembourg French and German; mainland China Simplified Chinese; Taiwan, Hong Kong and Macau Chinese (Hong Kong and Macau also Cantonese)."
         type: select
         options:
           multiple: true
@@ -532,6 +963,27 @@ content:
             - { value: is, label: "Íslenska (Icelandic)" }
             - { value: ca, label: "Català (Catalan)" }
             - { value: th, label: "ไทย (Thai)" }
+            - { value: zhs, label: "简体中文 (Simplified Chinese)" }
+            - { value: de, label: "Deutsch (German)" }
+            - { value: nl, label: "Nederlands (Dutch)" }
+            - { value: pt, label: "Português (Portuguese)" }
+            - { value: nb, label: "Norsk (Norwegian)" }
+            - { value: fi, label: "Suomi (Finnish)" }
+            - { value: pl, label: "Polski (Polish)" }
+            - { value: cs, label: "Čeština (Czech)" }
+            - { value: hu, label: "Magyar (Hungarian)" }
+            - { value: sl, label: "Slovenščina (Slovenian)" }
+            - { value: hr, label: "Hrvatski (Croatian)" }
+            - { value: sr, label: "Српски (Serbian, Cyrillic)" }
+            - { value: el, label: "Ελληνικά (Greek)" }
+            - { value: tr, label: "Türkçe (Turkish)" }
+            - { value: lt, label: "Lietuvių (Lithuanian)" }
+            - { value: lv, label: "Latviešu (Latvian)" }
+            - { value: et, label: "Eesti (Estonian)" }
+            - { value: mt, label: "Malti (Maltese)" }
+            - { value: ms, label: "Bahasa Melayu (Malay)" }
+            - { value: fil, label: "Filipino" }
+            - { value: vi, label: "Tiếng Việt (Vietnamese)" }
       - name: parent
         label: Inside (regions, cities and districts)
         description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom. A district sits inside a city, e.g. Manhattan inside New York.
@@ -601,6 +1053,89 @@ content:
         label: Name mid-sentence in Korean
         description: With its preposition, e.g. "nel Lazio". Leave empty for "a" + a city or "in" + a country or region.
         type: string
+      - name: inSentenceZhs
+        label: Name mid-sentence in Simplified Chinese
+        type: string
+      - name: inSentenceDe
+        label: Name mid-sentence in German
+        description: With its preposition, e.g. "in Bayern". Leave empty for "in" + the German name.
+        type: string
+      - name: inSentenceNl
+        label: Name mid-sentence in Dutch
+        description: With its preposition, e.g. "in België". Leave empty for "in" + the Dutch name.
+        type: string
+      - name: inSentencePt
+        label: Name mid-sentence in Portuguese
+        description: With its preposition, e.g. "no Porto". Leave empty for "em" + the Portuguese name.
+        type: string
+      - name: inSentenceNb
+        label: Name mid-sentence in Norwegian
+        description: With its preposition, e.g. "i Norge". Leave empty for "i" + the Norwegian name.
+        type: string
+      - name: inSentenceFi
+        label: Name mid-sentence in Finnish
+        description: How the name reads after "in", e.g. "Helsingissä". Required on every page offered in Finnish.
+        type: string
+      - name: inSentencePl
+        label: Name mid-sentence in Polish
+        description: How the name reads after "in", e.g. "w Polsce". Required on every page offered in Polish.
+        type: string
+      - name: inSentenceCs
+        label: Name mid-sentence in Czech
+        description: How the name reads after "in", e.g. "v Praze". Required on every page offered in Czech.
+        type: string
+      - name: inSentenceHu
+        label: Name mid-sentence in Hungarian
+        description: How the name reads after "in", e.g. "Budapesten". Required on every page offered in Hungarian.
+        type: string
+      - name: inSentenceSl
+        label: Name mid-sentence in Slovenian
+        description: How the name reads after "in", e.g. "v Sloveniji". Required on every page offered in Slovenian.
+        type: string
+      - name: inSentenceHr
+        label: Name mid-sentence in Croatian
+        description: How the name reads after "in", e.g. "u Hrvatskoj". Required on every page offered in Croatian.
+        type: string
+      - name: inSentenceSr
+        label: Name mid-sentence in Serbian
+        description: How the name reads after "in", e.g. "у Србији". Required on every page offered in Serbian.
+        type: string
+      - name: inSentenceEl
+        label: Name mid-sentence in Greek
+        description: How the name reads after "in", e.g. "στην Αθήνα". Required on every page offered in Greek.
+        type: string
+      - name: inSentenceTr
+        label: Name mid-sentence in Turkish
+        description: How the name reads after "in", e.g. "İstanbul'da". Required on every page offered in Turkish.
+        type: string
+      - name: inSentenceLt
+        label: Name mid-sentence in Lithuanian
+        description: How the name reads after "in", e.g. "Lietuvoje". Required on every page offered in Lithuanian.
+        type: string
+      - name: inSentenceLv
+        label: Name mid-sentence in Latvian
+        description: How the name reads after "in", e.g. "Latvijā". Required on every page offered in Latvian.
+        type: string
+      - name: inSentenceEt
+        label: Name mid-sentence in Estonian
+        description: How the name reads after "in", e.g. "Eestis". Required on every page offered in Estonian.
+        type: string
+      - name: inSentenceMt
+        label: Name mid-sentence in Maltese
+        description: How the name reads after "in", e.g. "f'Malta". Required on every page offered in Maltese.
+        type: string
+      - name: inSentenceMs
+        label: Name mid-sentence in Malay
+        description: With its preposition, e.g. "di Kuala Lumpur". Leave empty for "di" + the Malay name.
+        type: string
+      - name: inSentenceFil
+        label: Name mid-sentence in Filipino
+        description: With its preposition, e.g. "sa Pilipinas". Leave empty for "sa" + the Filipino name.
+        type: string
+      - name: inSentenceVi
+        label: Name mid-sentence in Vietnamese
+        description: With its preposition, e.g. "tại Hà Nội". Leave empty for "tại" + the Vietnamese name.
+        type: string
       - name: intro
         label: Introduction
         description: Extra sentence under the page title, e.g. which currency prices are in. Regions and cities use their country's unless they have their own.
@@ -640,6 +1175,69 @@ content:
         type: text
       - name: introJa
         label: "Introduction (Japanese)"
+        type: text
+      - name: introZhs
+        label: "Introduction (Simplified Chinese)"
+        type: text
+      - name: introDe
+        label: "Introduction (German)"
+        type: text
+      - name: introNl
+        label: "Introduction (Dutch)"
+        type: text
+      - name: introPt
+        label: "Introduction (Portuguese)"
+        type: text
+      - name: introNb
+        label: "Introduction (Norwegian)"
+        type: text
+      - name: introFi
+        label: "Introduction (Finnish)"
+        type: text
+      - name: introPl
+        label: "Introduction (Polish)"
+        type: text
+      - name: introCs
+        label: "Introduction (Czech)"
+        type: text
+      - name: introHu
+        label: "Introduction (Hungarian)"
+        type: text
+      - name: introSl
+        label: "Introduction (Slovenian)"
+        type: text
+      - name: introHr
+        label: "Introduction (Croatian)"
+        type: text
+      - name: introSr
+        label: "Introduction (Serbian)"
+        type: text
+      - name: introEl
+        label: "Introduction (Greek)"
+        type: text
+      - name: introTr
+        label: "Introduction (Turkish)"
+        type: text
+      - name: introLt
+        label: "Introduction (Lithuanian)"
+        type: text
+      - name: introLv
+        label: "Introduction (Latvian)"
+        type: text
+      - name: introEt
+        label: "Introduction (Estonian)"
+        type: text
+      - name: introMt
+        label: "Introduction (Maltese)"
+        type: text
+      - name: introMs
+        label: "Introduction (Malay)"
+        type: text
+      - name: introFil
+        label: "Introduction (Filipino)"
+        type: text
+      - name: introVi
+        label: "Introduction (Vietnamese)"
         type: text
       - name: serviceText
         label: "Method: per person, before service"
@@ -681,6 +1279,69 @@ content:
       - name: serviceTextJa
         label: "Method: per person, before service (Japanese)"
         type: text
+      - name: serviceTextZhs
+        label: "Method: per person, before service (Simplified Chinese)"
+        type: text
+      - name: serviceTextDe
+        label: "Method: per person, before service (German)"
+        type: text
+      - name: serviceTextNl
+        label: "Method: per person, before service (Dutch)"
+        type: text
+      - name: serviceTextPt
+        label: "Method: per person, before service (Portuguese)"
+        type: text
+      - name: serviceTextNb
+        label: "Method: per person, before service (Norwegian)"
+        type: text
+      - name: serviceTextFi
+        label: "Method: per person, before service (Finnish)"
+        type: text
+      - name: serviceTextPl
+        label: "Method: per person, before service (Polish)"
+        type: text
+      - name: serviceTextCs
+        label: "Method: per person, before service (Czech)"
+        type: text
+      - name: serviceTextHu
+        label: "Method: per person, before service (Hungarian)"
+        type: text
+      - name: serviceTextSl
+        label: "Method: per person, before service (Slovenian)"
+        type: text
+      - name: serviceTextHr
+        label: "Method: per person, before service (Croatian)"
+        type: text
+      - name: serviceTextSr
+        label: "Method: per person, before service (Serbian)"
+        type: text
+      - name: serviceTextEl
+        label: "Method: per person, before service (Greek)"
+        type: text
+      - name: serviceTextTr
+        label: "Method: per person, before service (Turkish)"
+        type: text
+      - name: serviceTextLt
+        label: "Method: per person, before service (Lithuanian)"
+        type: text
+      - name: serviceTextLv
+        label: "Method: per person, before service (Latvian)"
+        type: text
+      - name: serviceTextEt
+        label: "Method: per person, before service (Estonian)"
+        type: text
+      - name: serviceTextMt
+        label: "Method: per person, before service (Maltese)"
+        type: text
+      - name: serviceTextMs
+        label: "Method: per person, before service (Malay)"
+        type: text
+      - name: serviceTextFil
+        label: "Method: per person, before service (Filipino)"
+        type: text
+      - name: serviceTextVi
+        label: "Method: per person, before service (Vietnamese)"
+        type: text
       - name: sourcesText
         label: "Method: where prices come from"
         type: text
@@ -719,6 +1380,69 @@ content:
         type: text
       - name: sourcesTextJa
         label: "Method: where prices come from (Japanese)"
+        type: text
+      - name: sourcesTextZhs
+        label: "Method: where prices come from (Simplified Chinese)"
+        type: text
+      - name: sourcesTextDe
+        label: "Method: where prices come from (German)"
+        type: text
+      - name: sourcesTextNl
+        label: "Method: where prices come from (Dutch)"
+        type: text
+      - name: sourcesTextPt
+        label: "Method: where prices come from (Portuguese)"
+        type: text
+      - name: sourcesTextNb
+        label: "Method: where prices come from (Norwegian)"
+        type: text
+      - name: sourcesTextFi
+        label: "Method: where prices come from (Finnish)"
+        type: text
+      - name: sourcesTextPl
+        label: "Method: where prices come from (Polish)"
+        type: text
+      - name: sourcesTextCs
+        label: "Method: where prices come from (Czech)"
+        type: text
+      - name: sourcesTextHu
+        label: "Method: where prices come from (Hungarian)"
+        type: text
+      - name: sourcesTextSl
+        label: "Method: where prices come from (Slovenian)"
+        type: text
+      - name: sourcesTextHr
+        label: "Method: where prices come from (Croatian)"
+        type: text
+      - name: sourcesTextSr
+        label: "Method: where prices come from (Serbian)"
+        type: text
+      - name: sourcesTextEl
+        label: "Method: where prices come from (Greek)"
+        type: text
+      - name: sourcesTextTr
+        label: "Method: where prices come from (Turkish)"
+        type: text
+      - name: sourcesTextLt
+        label: "Method: where prices come from (Lithuanian)"
+        type: text
+      - name: sourcesTextLv
+        label: "Method: where prices come from (Latvian)"
+        type: text
+      - name: sourcesTextEt
+        label: "Method: where prices come from (Estonian)"
+        type: text
+      - name: sourcesTextMt
+        label: "Method: where prices come from (Maltese)"
+        type: text
+      - name: sourcesTextMs
+        label: "Method: where prices come from (Malay)"
+        type: text
+      - name: sourcesTextFil
+        label: "Method: where prices come from (Filipino)"
+        type: text
+      - name: sourcesTextVi
+        label: "Method: where prices come from (Vietnamese)"
         type: text
       - name: starsText
         label: "Method: stars and Google rating"
@@ -761,6 +1485,69 @@ content:
         label: "Method: stars and Google rating (Japanese)"
         type: text
 
+      - name: starsTextZhs
+        label: "Method: stars and Google rating (Simplified Chinese)"
+        type: text
+      - name: starsTextDe
+        label: "Method: stars and Google rating (German)"
+        type: text
+      - name: starsTextNl
+        label: "Method: stars and Google rating (Dutch)"
+        type: text
+      - name: starsTextPt
+        label: "Method: stars and Google rating (Portuguese)"
+        type: text
+      - name: starsTextNb
+        label: "Method: stars and Google rating (Norwegian)"
+        type: text
+      - name: starsTextFi
+        label: "Method: stars and Google rating (Finnish)"
+        type: text
+      - name: starsTextPl
+        label: "Method: stars and Google rating (Polish)"
+        type: text
+      - name: starsTextCs
+        label: "Method: stars and Google rating (Czech)"
+        type: text
+      - name: starsTextHu
+        label: "Method: stars and Google rating (Hungarian)"
+        type: text
+      - name: starsTextSl
+        label: "Method: stars and Google rating (Slovenian)"
+        type: text
+      - name: starsTextHr
+        label: "Method: stars and Google rating (Croatian)"
+        type: text
+      - name: starsTextSr
+        label: "Method: stars and Google rating (Serbian)"
+        type: text
+      - name: starsTextEl
+        label: "Method: stars and Google rating (Greek)"
+        type: text
+      - name: starsTextTr
+        label: "Method: stars and Google rating (Turkish)"
+        type: text
+      - name: starsTextLt
+        label: "Method: stars and Google rating (Lithuanian)"
+        type: text
+      - name: starsTextLv
+        label: "Method: stars and Google rating (Latvian)"
+        type: text
+      - name: starsTextEt
+        label: "Method: stars and Google rating (Estonian)"
+        type: text
+      - name: starsTextMt
+        label: "Method: stars and Google rating (Maltese)"
+        type: text
+      - name: starsTextMs
+        label: "Method: stars and Google rating (Malay)"
+        type: text
+      - name: starsTextFil
+        label: "Method: stars and Google rating (Filipino)"
+        type: text
+      - name: starsTextVi
+        label: "Method: stars and Google rating (Vietnamese)"
+        type: text
   - name: guides
     label: Guides
     description: Explainer articles at starredbill.com/guides/<file name>/. The file name is the page's address, so don't rename a published guide.

@@ -27,5 +27,8 @@
     "vegetarian"
   ],
   "chef": "Cliff Hämmerle",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 49 €)",
+  "lunchNoteDe": "Mittagsmenü",
+  "cuisineDe": "Französisch-modern"
 }

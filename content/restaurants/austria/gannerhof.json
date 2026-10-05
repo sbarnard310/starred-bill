@@ -21,5 +21,7 @@
     "vegetarian"
   ],
   "chef": "Josef Mühlmann",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü",
+  "cuisineDe": "Regional"
 }

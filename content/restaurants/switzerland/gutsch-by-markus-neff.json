@@ -20,5 +20,11 @@
     "vegan"
   ],
   "chef": "Markus Neff",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "cuisineDe": "Französisch-klassisch",
+  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "cuisineFr": "Cuisine française classique",
+  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "cuisineIt": "Francese classica"
 }

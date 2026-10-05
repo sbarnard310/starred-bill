@@ -26,5 +26,11 @@
     "vegetarian"
   ],
   "chef": "Maxime Collard",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
+  "lunchNoteNl": "Lunchmenu",
+  "cuisineNl": "Moderne keuken",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès 105 €)",
+  "lunchNoteFr": "Menu déjeuner",
+  "cuisineFr": "Cuisine moderne"
 }

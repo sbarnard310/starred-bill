@@ -19,5 +19,12 @@
   "placeId": "ChIJqSzvMrezj0cRWj2CKYFc8ng",
   "michelinId": "184726",
   "chef": "Sascha Spring",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 48)",
+  "cuisineDe": "Moderne Küche",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 48)",
+  "cuisineFr": "Cuisine moderne",
+  "areaFr": "Thoune",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 48)",
+  "cuisineIt": "Moderna"
 }

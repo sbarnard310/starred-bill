@@ -27,5 +27,8 @@
     "vegan"
   ],
   "chef": "Nico Boreas",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteNl": "Proeverijmenu",
+  "lunchNoteNl": "Lunchmenu",
+  "cuisineNl": "Aziatisch en westers"
 }

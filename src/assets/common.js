@@ -1,4 +1,4 @@
-// Shared by every page: settings, words in English and Traditional Chinese, and small helpers.
+// Shared by every page: settings, words in English, Traditional Chinese and the first eleven other languages, and small helpers.
 
 // ---------- Settings ----------
 // Google Maps Platform browser key, used for restaurant photos and the maps.
@@ -1596,7 +1596,12 @@ const CUISINE_FR = {
   "Modern Cuisine": "Cuisine moderne", "Creative": "Créative", "Classic Cuisine": "Cuisine classique", "Traditional Cuisine": "Cuisine traditionnelle",
   "Japanese": "Japonaise", "Italian": "Italienne", "Chinese": "Chinoise", "Cantonese": "Cantonaise", "Greek": "Grecque", "Mexican": "Mexicaine",
   "Fish and Seafood": "Poissons et fruits de mer", "Seafood": "Fruits de mer", "French": "Française", "Indian": "Indienne", "Korean": "Coréenne",
-  "Thai": "Thaïlandaise", "Spanish": "Espagnole", "Vegan": "Végane", "Mediterranean Cuisine": "Cuisine méditerranéenne", "Steakhouse": "Grillades"
+  "Thai": "Thaïlandaise", "Spanish": "Espagnole", "Vegan": "Végane", "Mediterranean Cuisine": "Cuisine méditerranéenne", "Steakhouse": "Grillades",
+  "Contemporary": "Contemporaine", "Classic French": "Classique française", "Creative French": "Française créative", "French Contemporary": "Française contemporaine",
+  "Modern French": "Française moderne", "Asian Contemporary": "Asiatique contemporaine", "Italian Contemporary": "Italienne contemporaine",
+  "Japanese Contemporary": "Japonaise contemporaine", "Country cooking": "Cuisine du terroir", "Farm to table": "De la ferme à la table", "Innovative": "Innovante",
+  "Meats and Grills": "Viandes et grillades", "Organic": "Bio", "Regional Cuisine": "Cuisine régionale", "Seasonal Cuisine": "Cuisine de saison",
+  "Sharing": "À partager", "Tuscan": "Toscane", "Vegetarian": "Végétarienne"
 };
 // Cuisine names in Spanish and Italian (Michelin's own labels where they exist).
 const CUISINE_ES = {
@@ -1638,7 +1643,9 @@ const CUISINE_IT = {
   "Grills": "Carne alla griglia", "Mexican": "Messicana", "Vegetarian": "Vegetariana", "Vegan": "Vegana", "Farm to table": "Dal produttore alla tavola",
   "Innovative": "Innovativa", "International": "Internazionale", "World Cuisine": "Cucina del mondo", "Italian": "Italiana", "Italian Contemporary": "Italiana contemporanea",
   "French": "Francese", "Spanish": "Spagnola", "Mediterranean Cuisine": "Mediterranea", "Chinese": "Cinese", "Korean": "Coreana", "Indian": "Indiana", "Thai": "Thailandese",
-  "Market Cuisine": "Di mercato", "Country cooking": "Casalinga", "Roman": "Romana", "Lombardian": "Lombarda", "Tuscan": "Toscana", "Steakhouse": "Carne"
+  "Market Cuisine": "Di mercato", "Country cooking": "Casalinga", "Roman": "Romana", "Lombardian": "Lombarda", "Tuscan": "Toscana", "Steakhouse": "Carne",
+  "Classic French": "Francese classica", "Creative French": "Francese creativa", "French Contemporary": "Francese contemporanea", "Modern French": "Francese moderna",
+  "Asian Contemporary": "Asiatica contemporanea", "Japanese Contemporary": "Giapponese contemporanea", "Seasonal Cuisine": "Di stagione", "Sharing": "Da condividere"
 };
 
 // Each language's cuisine names (Japanese and Cantonese use the restaurant's own field or Chinese).
@@ -1661,6 +1668,10 @@ const LANGS = {
   ca: { label: "CA", html: "ca", suffixes: ["Ca"], locale: "ca-ES" },
   th: { label: "ไทย", html: "th", suffixes: ["Th"], locale: "th-TH" }
 };
+// Languages added from 5 Oct 2026 (German, Dutch, Portuguese, Simplified Chinese…) live in assets/lang-<code>.js,
+// which only the pages offering them load, just before this file. Each brings its LANGS entry, words, cuisine names and months.
+const LANG_FILES = window.SB_LANGS || {};
+for (const [k, x] of Object.entries(LANG_FILES)) { LANGS[k] = x.lang; I18N[k] = x.words; CUISINES[k] = x.cuisines; }
 const DATA = JSON.parse(document.getElementById("page-data").textContent);
 // The languages this page offers (Hong Kong adds Cantonese, France adds French, Japan adds Japanese).
 const PAGE_LANGS = DATA.languages || ["en", "zh"];
@@ -1677,14 +1688,19 @@ const store = {
 const LANG_KEY = "starredbill-lang", WISHLIST_KEY = "starredbill-wishlist", PREFS_KEY = "starredbill-prefs";
 function browserLang() {
   const b = (navigator.language || "").toLowerCase();
+  if (LANGS.zhs && /^zh-(cn|sg|hans)/.test(b)) return "zhs";
+  const base = { no: "nb", nn: "nb", tl: "fil" }[b.split("-")[0]] || b.split("-")[0];
+  const loaded = Object.keys(LANG_FILES).find((k) => k === base);
+  if (loaded) return loaded;
   return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : b.startsWith("es") ? "es" : b.startsWith("it") ? "it" : b.startsWith("ko") ? "ko" : b.startsWith("da") ? "da" : b.startsWith("sv") ? "sv" : b.startsWith("is") ? "is" : b.startsWith("ca") ? "ca" : b.startsWith("th") ? "th" : "en";
 }
 // The visitor's choice, kept across pages even where it isn't offered.
 let LANG_PREF = LANGS[params.get("lang")] ? params.get("lang") : store.get(LANG_KEY, browserLang());
-// What this page shows: the choice if offered, Cantonese → Chinese (and back), otherwise English.
+// What this page shows: the choice if offered, any Chinese → the Chinese this page has, otherwise English.
 function resolveLang(pref) {
   if (PAGE_LANGS.includes(pref)) return pref;
-  if (pref === "yue" && PAGE_LANGS.includes("zh")) return "zh";
+  if ((pref === "yue" || pref === "zhs") && PAGE_LANGS.includes("zh")) return "zh";
+  if ((pref === "zh" || pref === "yue") && PAGE_LANGS.includes("zhs")) return "zhs";
   return "en";
 }
 let LANG = resolveLang(LANG_PREF);
@@ -1718,8 +1734,8 @@ function setVisited(map, from) {
 // ---------- Helpers ----------
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-// Chinese script (Mandarin or Cantonese): changes date formats, sorting and which name is shown first.
-const zh = () => LANG === "zh" || LANG === "yue";
+// Chinese script (Mandarin, Cantonese or Simplified): changes date formats, sorting and which name is shown first.
+const zh = () => LANG === "zh" || LANG === "yue" || LANG === "zhs";
 const fr = () => LANG === "fr";
 const ja = () => LANG === "ja";
 const es = () => LANG === "es";
@@ -1745,8 +1761,8 @@ function pick(o, f) {
 const nameOf = (r) => pick(r, "name");
 // The name in a second script under the main one: the English name under a Chinese or Japanese one,
 // otherwise the Japanese or Chinese name under the English one.
-const altNameOf = (r) => ja() ? (r.nameJa ? r.name : "") : ko() ? (r.nameKo ? r.name : "") : zh() ? (r.nameZh ? r.name : r.nameJa || "") : (r.nameJa || r.nameKo || r.nameZh || "");
-const altLangOf = (r) => altNameOf(r) === r.name ? "en" : altNameOf(r) === r.nameJa ? "ja" : altNameOf(r) === r.nameKo ? "ko" : "zh-Hant";
+const altNameOf = (r) => ja() ? (r.nameJa ? r.name : "") : ko() ? (r.nameKo ? r.name : "") : zh() ? (nameOf(r) !== r.name ? r.name : r.nameJa || "") : (r.nameJa || r.nameKo || r.nameZh || r.nameZhs || "");
+const altLangOf = (r) => altNameOf(r) === r.name ? "en" : altNameOf(r) === r.nameJa ? "ja" : altNameOf(r) === r.nameKo ? "ko" : altNameOf(r) === r.nameZhs ? "zh-Hans" : "zh-Hant";
 const cuisineOf = (r) => {
   for (const sfx of LANGS[LANG].suffixes) if (r["cuisine" + sfx]) return r["cuisine" + sfx];
   const m = CUISINES[LANG];
@@ -1762,6 +1778,7 @@ const MONTHS = { en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "S
   is: ["jan.", "feb.", "mar.", "apr.", "maí", "jún.", "júl.", "ágú.", "sep.", "okt.", "nóv.", "des."],
   ca: ["gen.", "febr.", "març", "abr.", "maig", "juny", "jul.", "ag.", "set.", "oct.", "nov.", "des."],
   th: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."] };
+for (const [k, x] of Object.entries(LANG_FILES)) MONTHS[k] = x.months;
 const monthYear = (ym) => {
   const [y, m] = String(ym || "").split("-");
   if (!m) return y || "";
@@ -1845,7 +1862,7 @@ function loadGoogle() {
   if (!mapsBoot) mapsBoot = new Promise((resolve, reject) => {
     window.__starredBillMaps = resolve;
     const s = document.createElement("script");
-    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja", es: "es", it: "it", ko: "ko", da: "da", sv: "sv", is: "is", ca: "ca", th: "th" }[LANG] || "en-GB") + "&callback=__starredBillMaps";
+    s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) + "&v=weekly&loading=async&language=" + ({ zh: "zh-TW", yue: "zh-HK", fr: "fr", ja: "ja", es: "es", it: "it", ko: "ko", da: "da", sv: "sv", is: "is", ca: "ca", th: "th" }[LANG] || LANGS[LANG].maps || "en-GB") + "&callback=__starredBillMaps";
     s.async = true;
     s.onerror = reject;
     document.head.appendChild(s);

@@ -19,5 +19,7 @@
     "vegetarian"
   ],
   "chef": "Witek Iwański",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNotePl": "Menu degustacyjne; cena zostanie dodana",
+  "areaPl": "Warszawa"
 }

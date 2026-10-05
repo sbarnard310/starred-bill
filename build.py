@@ -504,7 +504,7 @@ WORLD_COUNTRIES = {
     "Abu Dhabi": ("uae", "United Arab Emirates", "阿拉伯聯合大公國"), "Dubai": ("uae", "United Arab Emirates", "阿拉伯聯合大公國"),
     "Andorra": ("andorra", "Andorra", "安道爾"), "Argentina": ("argentina", "Argentina", "阿根廷"), "Austria": ("austria", "Austria", "奧地利"),
     "Belgium": ("belgium", "Belgium", "比利時"), "Brazil": ("brazil", "Brazil", "巴西"), "Canada": ("canada", "Canada", "加拿大"),
-    "Chinese Mainland": ("china", "Mainland China", "中國大陸"), "Croatia": ("croatia", "Croatia", "克羅埃西亞"), "Czechia": ("czechia", "Czechia", "捷克"),
+    "Chinese Mainland": ("china", "China", "中國"), "Croatia": ("croatia", "Croatia", "克羅埃西亞"), "Czechia": ("czechia", "Czechia", "捷克"),
     "Estonia": ("estonia", "Estonia", "愛沙尼亞"), "Finland": ("finland", "Finland", "芬蘭"), "Germany": ("germany", "Germany", "德國"),
     "Greece": ("greece", "Greece", "希臘"), "Hungary": ("hungary", "Hungary", "匈牙利"), "Iceland": ("iceland", "Iceland", "冰島"),
     "Italy": ("italy", "Italy", "義大利"), "Latvia": ("latvia", "Latvia", "拉脫維亞"), "Liechtenstein": ("liechtenstein", "Liechtenstein", "列支敦斯登"),

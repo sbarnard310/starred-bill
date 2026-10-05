@@ -1,0 +1,16 @@
+{
+  "name": "Štangl",
+  "city": "prague",
+  "address": "Pernerova 49, 18600, Prague",
+  "stars": 1,
+  "cuisine": "Seasonal Cuisine",
+  "rating": 4.9,
+  "reviews": 317,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://stangl.ambi.cz/",
+  "lat": 50.0914482,
+  "lng": 14.4546772,
+  "placeId": "ChIJ_7EAWgGVC0cRCWr7pUQ4Y20"
+}

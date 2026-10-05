@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant Papilio",
+  "city": "czechia",
+  "area": "Vysoký Újezd",
+  "address": "Tyršova náves 1, 26716, Vysoký Újezd",
+  "stars": 2,
+  "cuisine": "Creative",
+  "rating": 4.9,
+  "reviews": 197,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://restaurant-papilio.cz/",
+  "lat": 49.9933899,
+  "lng": 14.2048483,
+  "placeId": "ChIJP8NUJpi9C0cRT6B19xq1Mrs"
+}

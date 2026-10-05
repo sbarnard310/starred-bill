@@ -1,0 +1,17 @@
+{
+  "name": "Entrée",
+  "city": "czechia",
+  "area": "Olomouc",
+  "address": "Ostravská 1, 77900, Olomouc",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 2888,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://entree-restaurant.cz/",
+  "lat": 49.589751,
+  "lng": 17.2870542,
+  "placeId": "ChIJT_yxwitMEkcR_gsPCUbZ_a8"
+}

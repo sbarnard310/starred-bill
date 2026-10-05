@@ -1,0 +1,16 @@
+{
+  "name": "LEVITATE",
+  "city": "prague",
+  "address": "Vinohradská 1228/47, 12000, Prague",
+  "stars": 1,
+  "cuisine": "Asian Influences",
+  "rating": 4.6,
+  "reviews": 387,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.levitate.cz",
+  "lat": 50.0775134,
+  "lng": 14.4401108,
+  "placeId": "ChIJUzk2Jo2UC0cRfXNiQEekSYk"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Field",
+  "city": "prague",
+  "address": "U Milosrdných 12, 110 00, Prague",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 2206,
+  "dinnerType": "menu",
+  "dinner": 1950,
+  "dinnerNote": "Tasting menu (other menus from CZK 1,450)",
+  "sourceType": "site",
+  "source": "https://www.fieldrestaurant.cz/en/menu",
+  "wine": 950,
+  "website": "https://www.fieldrestaurant.cz/en/",
+  "lat": 50.0918645,
+  "lng": 14.4220871,
+  "placeId": "ChIJxyKFfMKUC0cRauBsYpvume8"
+}

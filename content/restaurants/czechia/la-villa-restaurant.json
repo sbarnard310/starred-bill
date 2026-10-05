@@ -1,0 +1,17 @@
+{
+  "name": "La Villa Restaurant",
+  "city": "czechia",
+  "area": "Zlín",
+  "address": "Stráže 3661, 76001, Zlín",
+  "stars": 1,
+  "cuisine": "Classic Cuisine",
+  "rating": 4.8,
+  "reviews": 439,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lavilla.cz/",
+  "lat": 49.2375653,
+  "lng": 17.6536869,
+  "placeId": "ChIJO6In91YLE0cRuhmajfjdvt8"
+}

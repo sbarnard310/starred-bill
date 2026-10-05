@@ -1,0 +1,16 @@
+{
+  "name": "Casa De Carli",
+  "city": "prague",
+  "address": "Vězeňská 5, 11 000, Prague",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.5,
+  "reviews": 478,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.casadecarli.com",
+  "lat": 50.0905287,
+  "lng": 14.4217856,
+  "placeId": "ChIJ9c-uz-mUC0cRc2WhhS4ba28"
+}

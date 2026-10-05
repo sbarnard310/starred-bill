@@ -1,0 +1,17 @@
+{
+  "name": "ESSENS",
+  "city": "czechia",
+  "area": "Hlohovec",
+  "address": "K Zámečku 16, 69143, Hlohovec",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 136,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.restaurantessens.cz/",
+  "lat": 48.7803038,
+  "lng": 16.7578589,
+  "placeId": "ChIJgeskivwtbUcRo2FcqmjWC74"
+}

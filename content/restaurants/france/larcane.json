@@ -13,9 +13,9 @@
   "changeNoteFr": "Étoile perdue",
   "changeNoteZh": "失去星級",
   "changeDate": "2025-03",
-  "status": "changed",
+  "status": "closed",
   "formerStars": 1,
-  "statusNote": "Lost its star in the 2025 guide after a change of chef or concept",
-  "statusNoteFr": "Étoile perdue dans le guide 2025, après un changement de chef ou de concept",
-  "statusNoteZh": "於 2025 年指南失去星級（主廚或概念更替）"
+  "statusNote": "Lost its star in the 2025 guide; has since closed for good",
+  "statusNoteFr": "Étoile perdue dans le guide 2025 ; fermé définitivement depuis",
+  "statusNoteZh": "於 2025 年指南失去星級；其後已永久歇業"
 }

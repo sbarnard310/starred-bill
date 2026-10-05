@@ -14,6 +14,7 @@ Live at https://starredbill.com
 content/                 the data (edit these, ideally through Pages CMS)
   restaurants/<country>/<restaurant>.json   one file per restaurant
   places/<place>.json    one file per country, region, city or collection
+  guides/<guide>.json    one file per explainer article, published at /guides/<guide>/
   currencies.json        currency symbols and fallback exchange rates
   site.json              site-wide settings (when prices were last checked)
 src/                     the design (templates, styles and scripts)
@@ -72,9 +73,26 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 
 Leave out any field you don't have.
 
+## Guides
+
+Each file in `content/guides/` is one article at `/guides/<file name>/`, listed on `/guides/`. They're English only, in US or UK spelling as the content brief says.
+
+| Field | What it is |
+|---|---|
+| `id` | the web address, same as the file name; never change it once published |
+| `h1` | the headline |
+| `title`, `description` | what search results show (up to 60 and 155 characters; the build stops if they're longer) |
+| `summary` | one line for the Guides page |
+| `published`, `updated` | dates like `2026-10-05`; change `updated` whenever you edit |
+| `lang` | `en-US` or `en-GB` |
+| `body` | the article, in HTML |
+| `faq` | questions (`q`) and answers (`a`), shown under the article and given to Google as an FAQ |
+
+Figures in the body and FAQ written in double curly brackets are worked out from the restaurant data each time the site is built, so they never go stale: `{{total}}`, `{{n1}}`, `{{n2}}`, `{{n3}}` (starred restaurants), `{{countries}}`, `{{topCountry}}`/`{{topCountryN}}`, `{{secondCountry}}`, `{{thirdCountry}}` (most starred restaurants), `{{top3Country}}`/`{{top3N}}`, `{{second3Country}}`/`{{second3N}}` (most three-star), `{{price1}}`–`{{price3}}` and `{{range1}}`–`{{range3}}` (median dinner tasting menu and middle half, in US dollars), `{{lunch1}}`–`{{lunch3}}`, `{{wine1}}`–`{{wine3}}`, `{{priced}}`, `{{oneIn3}}`, `{{guideYear}}` and `{{checked}}` (from `site.json`). A link written `<a data-guide="green-michelin-star">…</a>` becomes a link once that guide exists, and plain text until then.
+
 ## Editing
 
-The easiest way is Pages CMS: go to https://app.pagescms.org, sign in with GitHub and open **starred-bill**. Restaurants, Places, Currencies and Site settings each have a form; click **Save** and the site updates within a couple of minutes.
+The easiest way is Pages CMS: go to https://app.pagescms.org, sign in with GitHub and open **starred-bill**. Restaurants, Places, Guides, Currencies and Site settings each have a form; click **Save** and the site updates within a couple of minutes.
 
 You can also edit a file on GitHub (pencil icon) and click **Commit changes**. Either way GitHub rebuilds the site and it's live within a couple of minutes. If something in the data is wrong, such as a misspelt city id or a price typed as `"£95"`, the build stops, the live site stays as it was, and the **Actions** tab says exactly what to fix.
 

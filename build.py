@@ -208,6 +208,31 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
     })
     restaurants.append(r)
 
+# Guides: one JSON file per article in content/guides/, its name being the page's address (/guides/<name>/).
+guides = {}
+GUIDE_FIELDS = ("title", "description", "h1", "summary", "published", "updated", "body")
+for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").exists() else []:
+    where = f"guides/{path.name}"
+    g = tidy(read_json(path) or {})
+    gid = path.stem
+    if g.get("id") and g["id"] != gid:
+        problem(where, f"id is \"{g['id']}\" but the file is named {gid}.json; they must match")
+    if not ID_PATTERN.fullmatch(gid):
+        problem(where, "the file name must be lowercase words joined by hyphens, like what-is-a-michelin-star")
+    for field in GUIDE_FIELDS:
+        if not g.get(field):
+            problem(where, f"needs a {field}")
+    if len(g.get("title", "")) > 60:
+        problem(where, f"title is {len(g['title'])} characters; search results cut it off after 60")
+    if len(g.get("description", "")) > 155:
+        problem(where, f"description is {len(g['description'])} characters; keep it to 155")
+    for field in ("published", "updated"):
+        if g.get(field) and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", g[field]):
+            problem(where, f"{field} must be a date like 2026-10-05")
+    g["faq"] = [tidy(f) for f in g.get("faq", []) if tidy(f).get("q") and tidy(f).get("a")]
+    g["id"] = gid
+    guides[gid] = g
+
 if problems:
     print("The site wasn't built because of these problems in the data:\n  - " + "\n  - ".join(problems))
     sys.exit(1)
@@ -656,6 +681,110 @@ def build_account_pages():
     }))
 
 
+# ---------- Guides ----------
+def guide_stats():
+    """Figures the guides can quote, worked out from the restaurant data so they stay current:
+    star counts, the countries with the most stars, and typical prices in US dollars."""
+    live = [r for r in restaurants if r.get("stars") in (1, 2, 3) and not r.get("status")]
+    usd = lambda r, field: r[field] / CURRENCIES[r["cur"]]["perUSD"]
+    def median(values):
+        v = sorted(values)
+        return v[len(v) // 2] if v else None
+    def dollars(n, step=5):
+        return f"${int(round(n / step) * step):,}" if n is not None else "–"
+    stats = {"total": len(live), "countries": len({r["country"] for r in live})}
+    priced = 0
+    for s in (1, 2, 3):
+        at = [r for r in live if r["stars"] == s]
+        menus = sorted(usd(r, "dinner") for r in at if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu")
+        lunches = [usd(r, "lunch") for r in at if r.get("lunch") is not None and r.get("lunchType", "menu") == "menu"]
+        wines = [usd(r, "wine") for r in at if r.get("wine") is not None]
+        priced += len(menus)
+        stats.update({f"n{s}": f"{len(at):,}", f"price{s}": dollars(median(menus)), f"lunch{s}": dollars(median(lunches)),
+                      f"wine{s}": dollars(median(wines)),
+                      f"range{s}": f"{dollars(menus[len(menus) // 4])} and {dollars(menus[3 * len(menus) // 4])}" if menus else "–"})
+    stats["priced"] = f"{priced:,}"
+    stats["oneIn3"] = str(round(len(live) / max(1, sum(1 for r in live if r["stars"] == 3))))
+    by_country = sorted(((sum(1 for r in live if r["country"] == c), c) for c in {r["country"] for r in live}), reverse=True)
+    by_three = sorted(((sum(1 for r in live if r["country"] == c and r["stars"] == 3), c) for c in {r["country"] for r in live}), reverse=True)
+    for i, key in enumerate(("top", "second", "third")):
+        stats[f"{key}Country"], stats[f"{key}CountryN"] = places[by_country[i][1]]["name"], f"{by_country[i][0]:,}"
+    for i, key in enumerate(("top3", "second3")):
+        stats[f"{key}Country"], stats[f"{key}N"] = places[by_three[i][1]]["name"], str(by_three[i][0])
+    stats["total"] = f"{stats['total']:,}"
+    stats["countries"] = str(stats["countries"])
+    month = site.get("updated", "")
+    stats["checked"] = (MONTH_NAMES[int(month[5:7]) - 1] + " " + month[:4]) if re.fullmatch(r"\d{4}-\d{2}", month) else ""
+    stats["guideYear"] = month[:4]
+    return stats
+
+
+MONTH_NAMES = ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+
+
+def us_date(d):
+    """2026-10-05 -> October 5, 2026 (the guides use US English)."""
+    return f"{MONTH_NAMES[int(d[5:7]) - 1]} {int(d[8:10])}, {d[:4]}"
+
+
+def guide_text(text, stats):
+    """Fill in {{figures}} and turn <a data-guide="name"> into a link once that guide exists (plain text until then)."""
+    text = re.sub(r"\{\{(\w+)\}\}", lambda m: e(stats[m.group(1)]) if m.group(1) in stats else m.group(0), text)
+    return re.sub(r'<a data-guide="([\w-]+)">(.*?)</a>',
+                  lambda m: f'<a href="/guides/{m.group(1)}/">{m.group(2)}</a>' if m.group(1) in guides else m.group(2), text)
+
+
+def build_guides():
+    """Each guide at /guides/<name>/, and a list of them at /guides/."""
+    if not guides:
+        return
+    stats = guide_stats()
+    data = as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES})
+    home_crumb = '<a href="/">All destinations</a>'
+    for g in guides.values():
+        path = f"/guides/{g['id']}/"
+        body = guide_text(g["body"], stats)
+        faqs = [{"q": guide_text(f["q"], stats), "a": guide_text(f["a"], stats)} for f in g["faq"]]
+        faq_html = ('<section class="guide-faq" id="faq"><h2>Frequently asked questions</h2>' + "".join(
+            f'<h3>{f["q"]}</h3><p>{f["a"]}</p>' for f in faqs) + "</section>") if faqs else ""
+        main = (f'<article lang="{e(g.get("lang", "en-US"))}">\n<h1>{e(g["h1"])}</h1>\n'
+                f'<p class="prose-date">Updated {us_date(g["updated"])} · Star counts and prices checked {stats["checked"]}</p>\n'
+                f'{body}\n{faq_html}\n</article>')
+        strip = lambda t: re.sub(r"<[^>]+>", "", t)
+        graph = [
+            {"@type": "BreadcrumbList", "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "All destinations", "item": SITE_URL + "/"},
+                {"@type": "ListItem", "position": 2, "name": "Guides", "item": SITE_URL + "/guides/"},
+                {"@type": "ListItem", "position": 3, "name": g["h1"], "item": SITE_URL + path}]},
+            {"@type": "Article", "headline": g["h1"], "description": g["description"], "inLanguage": g.get("lang", "en-US"),
+             "datePublished": g["published"], "dateModified": g["updated"], "mainEntityOfPage": SITE_URL + path,
+             "image": SITE_URL + "/og/default.png",
+             "author": {"@type": "Organization", "name": "The Starred Bill", "url": SITE_URL + "/"},
+             "publisher": {"@type": "Organization", "name": "The Starred Bill", "url": SITE_URL + "/",
+                           "logo": {"@type": "ImageObject", "url": SITE_URL + "/icons/icon-512.png"}}},
+        ]
+        if faqs:
+            graph.append({"@type": "FAQPage", "mainEntity": [
+                {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in faqs]})
+        write(path, render("guide.html", {
+            "title": e(g["title"]), "description": e(g["description"]), "canonical": SITE_URL + path, "htmlLang": e(g.get("lang", "en-US")),
+            "ogType": "article", "ogAlt": e(g["h1"]),
+            "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
+            "crumbs": home_crumb + '<a href="/guides/">Guides</a>' + f'<span aria-current="page">{e(g["h1"])}</span>',
+            "main": main, "data": data,
+        }))
+    cards = "".join(f'<li><a href="/guides/{g["id"]}/"><strong>{e(g["h1"])}</strong></a><span>{e(g["summary"])}</span></li>'
+                    for g in sorted(guides.values(), key=lambda g: g["published"]))
+    write("/guides/", render("guide.html", {
+        "title": "Michelin Guides and Explainers · The Starred Bill",
+        "description": "Plain-English explainers on Michelin stars: what they mean, how restaurants earn them and what a starred meal costs.",
+        "canonical": SITE_URL + "/guides/", "htmlLang": "en", "ogType": "website", "ogAlt": "The Starred Bill guides",
+        "crumbs": home_crumb + '<span aria-current="page">Guides</span>',
+        "main": f'<h1>Guides</h1>\n<p>Explainers on Michelin stars, written to go with the prices on The Starred Bill.</p>\n<ul class="guide-list">{cards}</ul>',
+        "data": data,
+    }))
+
+
 def build_extras():
     shutil.copy2(SRC / "favicon.svg", OUT / "favicon.svg")
     shutil.copy2(SRC / "404.html", OUT / "404.html")
@@ -665,7 +794,7 @@ def build_extras():
         shutil.copytree(SRC / "og", OUT / "og")
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
-    urls = ["/"] + [p["path"] for p in by_size(pages)] + ["/privacy/"]
+    urls = ["/"] + [p["path"] for p in by_size(pages)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + ["/privacy/"]
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{SITE_URL}{u}</loc></url>\n" for u in urls) + "</urlset>\n", "utf-8")
@@ -691,11 +820,14 @@ for p in pages:
     build_place(p)
 build_home()
 build_account_pages()
+build_guides()
 build_redirects()
 build_extras()
 build_service_worker()
 print(f"Built {len(pages) + 1} pages from {len(restaurants)} restaurants into {OUT.relative_to(ROOT)}/:")
 print("  /  (homepage)")
+for g in guides:
+    print(f"  /guides/{g}/  {guides[g]['h1']}")
 for p in sorted(pages, key=lambda p: p["path"]):
     print(f"  {p['path']}  {p['name']}, {starred_n[p['id']]} starred")
 for old, pid in sorted(redirects.items()):

@@ -694,6 +694,73 @@ content:
         label: "Method: stars and Google rating (Japanese)"
         type: text
 
+  - name: guides
+    label: Guides
+    description: Explainer articles at starredbill.com/guides/<file name>/. The file name is the page's address, so don't rename a published guide.
+    type: collection
+    path: content/guides
+    format: json
+    filename: "{fields.id}.json"
+    operations:
+      rename: false
+    view:
+      primary: h1
+      fields: [h1, updated]
+    fields:
+      - name: id
+        label: Web address
+        description: Lowercase words joined by hyphens, e.g. what-is-a-michelin-star. Can't change once published.
+        type: string
+        required: true
+      - name: h1
+        label: Headline (H1)
+        type: string
+        required: true
+      - name: title
+        label: Title in search results
+        description: Up to 60 characters.
+        type: string
+        required: true
+      - name: description
+        label: Description in search results
+        description: Up to 155 characters.
+        type: text
+        required: true
+      - name: summary
+        label: One-line summary for the Guides page
+        type: string
+        required: true
+      - name: published
+        label: First published
+        description: A date like 2026-10-05.
+        type: string
+        required: true
+      - name: updated
+        label: Last updated
+        description: Change this whenever you edit the article. A date like 2026-10-05.
+        type: string
+        required: true
+      - name: lang
+        label: Spelling
+        description: en-US for US spelling, en-GB for UK spelling.
+        type: string
+      - name: body
+        label: Article
+        description: "Figures in double curly brackets, like {{n3}} or {{price1}}, are filled in from the restaurant data when the site is built (README lists them). A link written as <a data-guide=\"name\">…</a> becomes a link once that guide exists."
+        type: rich-text
+        required: true
+      - name: faq
+        label: Frequently asked questions
+        description: Shown under the article and given to Google as an FAQ.
+        type: object
+        list: true
+        fields:
+          - name: q
+            label: Question
+            type: string
+          - name: a
+            label: Answer
+            type: text
   - name: currencies
     label: Currencies
     description: Symbols and fallback exchange rates. Live rates are used when available; these only apply if they can't be fetched.

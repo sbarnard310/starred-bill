@@ -1,11 +1,14 @@
 {
   "name": "SOLA",
   "city": "london",
-  "area": "Soho",
+  "area": "Notting Hill",
+  "address": "115a Westbourne Grove, London W2 4UP",
   "stars": 0,
   "cuisine": "Californian",
   "dinnerType": "menu",
   "status": "changed",
   "formerStars": 1,
-  "statusNote": "Moved to Notting Hill in June 2026; not yet listed in the guide again"
+  "statusNote": "Moved from Soho to Notting Hill in June 2026; not yet listed in the guide again",
+  "lat": 51.515043,
+  "lng": -0.194155
 }

@@ -1,0 +1,17 @@
+{
+  "name": "Pajta",
+  "city": "hungary",
+  "area": "Őriszentpéter",
+  "address": "Templomszer 7, 9941, Őriszentpéter",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 1330,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://pajta.hu/",
+  "lat": 46.8498752,
+  "lng": 16.4043202,
+  "placeId": "ChIJv5XR0TMmb0cRLX6tbpaYq8s"
+}

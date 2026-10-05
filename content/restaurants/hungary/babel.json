@@ -1,0 +1,16 @@
+{
+  "name": "Babel",
+  "city": "budapest",
+  "address": "Piarista Köz 2, 1052, Budapest",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.6,
+  "reviews": 690,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.babel-budapest.hu",
+  "lat": 47.492668,
+  "lng": 19.0522285,
+  "placeId": "ChIJTRHN2mjbQUcRVXkBzfo09sE"
+}

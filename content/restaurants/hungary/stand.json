@@ -1,0 +1,16 @@
+{
+  "name": "Stand",
+  "city": "budapest",
+  "address": "Székely Mihály utca 2, 1061, Budapest",
+  "stars": 2,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 700,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://standrestaurant.hu",
+  "lat": 47.5001729,
+  "lng": 19.0596687,
+  "placeId": "ChIJTW7kvGrdQUcRfw3zIx9kEhE"
+}

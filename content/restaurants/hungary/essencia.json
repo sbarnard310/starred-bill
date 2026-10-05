@@ -1,0 +1,16 @@
+{
+  "name": "essência",
+  "city": "budapest",
+  "address": "Sas utca 17, 1051, Budapest",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.8,
+  "reviews": 748,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://essenciarestaurant.hu",
+  "lat": 47.5010989,
+  "lng": 19.0520834,
+  "placeId": "ChIJ19o4RGXdQUcRanV3UxHAd5w"
+}

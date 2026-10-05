@@ -1,0 +1,15 @@
+{
+  "name": "42",
+  "city": "hungary",
+  "area": "Esztergom",
+  "address": "Széchenyi tér 23, 2500, Esztergom",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://42restaurant.hu/",
+  "lat": 47.7930164,
+  "lng": 18.7414568,
+  "placeId": "Ei5Fc3p0ZXJnb20sIFN6w6ljaGVueWkgdMOpciAyMy00MiwgMjUwMCBIdW5nYXJ5Ih4aHAoWChQKEgk1oeuLi2FqRxGUahFalF8NJRICNDI"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Salt",
+  "city": "budapest",
+  "address": "Hotel Rum Budapest, Királyi Pál utca 4, 1053, Budapest",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.4,
+  "reviews": 788,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.saltbudapest.com",
+  "lat": 47.4904,
+  "lng": 19.05914,
+  "placeId": "ChIJB4Em2kTcQUcR1pQhOKV-wNM"
+}

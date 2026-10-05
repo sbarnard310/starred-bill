@@ -1,0 +1,16 @@
+{
+  "name": "Costes Restaurant",
+  "city": "budapest",
+  "address": "Ráday utca 4, 1092, Budapest",
+  "stars": 1,
+  "cuisine": "Modern Cuisine",
+  "rating": 4.7,
+  "reviews": 826,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.costesrestaurant.hu/",
+  "lat": 47.4889155,
+  "lng": 19.0621952,
+  "placeId": "ChIJpeuc5VrcQUcRbYqJIm-xk4M"
+}

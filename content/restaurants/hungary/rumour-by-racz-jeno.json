@@ -1,0 +1,16 @@
+{
+  "name": "Rumour by Rácz Jenő",
+  "city": "budapest",
+  "address": "Petőfi tér 3, 1051, Budapest",
+  "stars": 1,
+  "cuisine": "Creative",
+  "rating": 4.7,
+  "reviews": 756,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://rumour.restaurant/",
+  "lat": 47.4938437,
+  "lng": 19.0506611,
+  "placeId": "ChIJd_7RAxXdQUcRoxz3MvqPlcQ"
+}

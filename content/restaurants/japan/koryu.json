@@ -1,0 +1,23 @@
+{
+  "name": "Koryu",
+  "city": "osaka",
+  "address": "3-3-3 Uchiawajimachi, Chuo-ku, 540-0038, Osaka",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.4,
+  "reviews": 103,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.koryu.net/",
+  "lat": 34.686929,
+  "lng": 135.510132,
+  "placeId": "ChIJZ6sRyQ3nAGAR864xMJvRHBo",
+  "dinner": 36300,
+  "source": "https://omakaseje.com/restaurants/yh341576",
+  "lunch": 36300,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/yh341576"
+}

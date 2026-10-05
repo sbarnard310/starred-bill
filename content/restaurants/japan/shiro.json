@@ -1,0 +1,16 @@
+{
+  "name": "shiro",
+  "city": "kyoto",
+  "address": "2F, 287 Takoyakushicho, Nakagyo-ku, 604-0021, Kyoto",
+  "stars": 1,
+  "cuisine": "Contemporary",
+  "rating": 5,
+  "reviews": 397,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ido-kyoto.com/shiro/",
+  "lat": 35.012542,
+  "lng": 135.758148,
+  "placeId": "ChIJaY8QbwHhAGARbgaIQp47wZI"
+}

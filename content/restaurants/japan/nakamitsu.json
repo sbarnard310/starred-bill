@@ -1,0 +1,16 @@
+{
+  "name": "Nakamitsu",
+  "city": "kyoto",
+  "address": "496-2 Sambongi Gochome, Nakagyo-ku, 604-0872, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 5,
+  "reviews": 41,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://nakamitsu-kyoto.com/",
+  "lat": 35.015149,
+  "lng": 135.760926,
+  "placeId": "ChIJhSTZHAAJAWARiC33aFVEck4"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ad hoc",
+  "city": "osaka",
+  "address": "Hotarumachi, 1-1-48 Fukushima, Fukushima-ku, 553-0003, Osaka",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.7,
+  "reviews": 243,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://adhoc2014.jp",
+  "lat": 34.694143,
+  "lng": 135.489021,
+  "placeId": "ChIJEVXjCfXmAGARApzjxQc6ZkU"
+}

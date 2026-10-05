@@ -1,0 +1,16 @@
+{
+  "name": "Germoglio",
+  "city": "kyoto",
+  "address": "2F, 172 Higashisakaicho, Shimogyo-ku, 600-8217, Kyoto",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.7,
+  "reviews": 55,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.germogliokyoto.com/",
+  "lat": 34.989348,
+  "lng": 135.758377,
+  "placeId": "ChIJP7gxbs8JAWARk9Yrfs2KEDA"
+}

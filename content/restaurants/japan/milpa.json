@@ -1,0 +1,22 @@
+{
+  "name": "milpa",
+  "city": "osaka",
+  "address": "1-16-25 Kitahorie, Nishi-ku, 550-0014, Osaka",
+  "stars": 1,
+  "cuisine": "Mexican",
+  "rating": 4.7,
+  "reviews": 65,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥43,560); usually including tax and service",
+  "sourceType": "press",
+  "lat": 34.674076,
+  "lng": 135.495057,
+  "placeId": "ChIJUzMxBADnAGARKqZ-TYuQWO0",
+  "dinner": 29040,
+  "source": "https://omakaseje.com/restaurants/mt861344",
+  "lunch": 29040,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥43,560)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/mt861344"
+}

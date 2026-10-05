@@ -1,0 +1,18 @@
+{
+  "name": "Sushi Shigenaga",
+  "city": "osaka",
+  "address": "3F, 1-6-13 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
+  "stars": 1,
+  "cuisine": "Sushi",
+  "rating": 4.6,
+  "reviews": 60,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.sushi-shigenaga.jp/",
+  "lat": 34.697446,
+  "lng": 135.498095,
+  "placeId": "ChIJW7qGhv7nAGAR-KtLL6mr3R8",
+  "dinner": 31200,
+  "source": "https://omakaseje.com/restaurants/yk812596"
+}

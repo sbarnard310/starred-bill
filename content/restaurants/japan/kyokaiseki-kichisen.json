@@ -1,0 +1,23 @@
+{
+  "name": "Kyokaiseki Kichisen",
+  "city": "kyoto",
+  "address": "5 Shimogamo Morimotocho, Sakyo-ku, 606-0805, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 3.8,
+  "reviews": 190,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥88,000); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.kichisen-kyoto.com/",
+  "lat": 35.035717,
+  "lng": 135.771236,
+  "placeId": "ChIJq6rqd5UIAWARDxj4sQBzO1o",
+  "dinner": 33000,
+  "source": "https://omakaseje.com/restaurants/tp968738",
+  "lunch": 18700,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥88,000)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/tp968738"
+}

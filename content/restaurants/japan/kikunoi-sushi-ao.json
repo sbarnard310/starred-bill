@@ -1,0 +1,17 @@
+{
+  "name": "Kikunoi Sushi Ao",
+  "city": "kyoto",
+  "address": "463-30 Shimokawaracho, Higashiyama-ku, 605-0825, Kyoto",
+  "stars": 1,
+  "cuisine": "Sushi",
+  "rating": 5,
+  "reviews": 9,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "lat": 34.999895,
+  "lng": 135.77967,
+  "placeId": "ChIJ66C1TwAJAWARVcCnGMt9kX0",
+  "dinner": 44000,
+  "source": "https://omakaseje.com/restaurants/se358106"
+}

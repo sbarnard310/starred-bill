@@ -1,0 +1,23 @@
+{
+  "name": "IDÉAL bistro",
+  "city": "osaka",
+  "address": "2F, 1-6-5 Tanimachi, Chuo-ku, 540-0012, Osaka",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.3,
+  "reviews": 117,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥20,100); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://idealfoodflower.com",
+  "lat": 34.688864,
+  "lng": 135.517088,
+  "placeId": "ChIJKek-8yjnAGARHJZE6D2BCsk",
+  "dinner": 12200,
+  "source": "https://omakaseje.com/restaurants/of863818",
+  "lunch": 3800,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/of863818"
+}

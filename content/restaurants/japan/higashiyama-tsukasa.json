@@ -1,0 +1,23 @@
+{
+  "name": "Higashiyama Tsukasa",
+  "city": "kyoto",
+  "address": "2F, 127 Nishimachi, Higashiyama-ku, 605-0037, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 40,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.instagram.com/higashiyama.tsukasa/",
+  "lat": 35.009382,
+  "lng": 135.781836,
+  "placeId": "ChIJY83d95gJAWARDBtyJ1AFYNw",
+  "dinner": 30250,
+  "source": "https://omakaseje.com/restaurants/ys864789",
+  "lunch": 30250,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/ys864789"
+}

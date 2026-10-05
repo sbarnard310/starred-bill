@@ -1,0 +1,18 @@
+{
+  "name": "Sushi Hoshiyama",
+  "city": "osaka",
+  "address": "1-16 Sugaharacho, Kita-ku, 530-0046, Osaka",
+  "stars": 1,
+  "cuisine": "Sushi",
+  "rating": 4.1,
+  "reviews": 158,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://sushi-hoshiyama.com/",
+  "lat": 34.692732,
+  "lng": 135.510694,
+  "placeId": "ChIJX6eVtu3mAGARs4MZ53vxI74",
+  "dinner": 33000,
+  "source": "https://omakaseje.com/restaurants/pn359683"
+}

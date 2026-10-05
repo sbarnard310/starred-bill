@@ -1,0 +1,17 @@
+{
+  "name": "Gion Kida",
+  "city": "kyoto",
+  "address": "570-192 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 56,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "lat": 35.002502,
+  "lng": 135.776138,
+  "placeId": "ChIJAQAk58MIAWARqfORBa_fkO4",
+  "dinner": 42350,
+  "source": "https://omakaseje.com/restaurants/zl479291"
+}

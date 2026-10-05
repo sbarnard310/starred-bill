@@ -1,0 +1,23 @@
+{
+  "name": "KOGA",
+  "city": "kyoto",
+  "address": "230 Nakaogawacho, Kamigyo-ku, 602-0053, Kyoto",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.8,
+  "reviews": 53,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥47,000); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://koga-kyoto.jp/",
+  "lat": 35.030161,
+  "lng": 135.754271,
+  "placeId": "ChIJ1YSCNAAJAWARNw29gn6qxnE",
+  "dinner": 22000,
+  "source": "https://omakaseje.com/restaurants/ua936251",
+  "lunch": 12000,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥31,000)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/ua936251"
+}

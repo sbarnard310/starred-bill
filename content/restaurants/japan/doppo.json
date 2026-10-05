@@ -1,0 +1,16 @@
+{
+  "name": "Doppo",
+  "city": "kyoto",
+  "address": "1-1 Izumoji Matsunoshitacho, Kita-ku, 603-8133, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 5,
+  "reviews": 14,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://jiki-miyazawa.com/",
+  "lat": 35.042915,
+  "lng": 135.762222,
+  "placeId": "ChIJVaoucBAJAWARpez4jN7s9mc"
+}

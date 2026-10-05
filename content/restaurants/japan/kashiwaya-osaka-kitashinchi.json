@@ -1,0 +1,16 @@
+{
+  "name": "Kashiwaya Osaka Kitashinchi",
+  "city": "osaka",
+  "address": "5F, 1-7-4 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 32,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://jp-kashiwaya.com/",
+  "lat": 34.69685,
+  "lng": 135.50052,
+  "placeId": "ChIJfZuMrWDnAGARvDBc5K1awM4"
+}

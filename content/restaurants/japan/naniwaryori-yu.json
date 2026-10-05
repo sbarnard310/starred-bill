@@ -1,0 +1,17 @@
+{
+  "name": "Naniwaryori Yu",
+  "city": "osaka",
+  "address": "1-9-17 Higashitemma, Kita-ku, 530-0044, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 116,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "lat": 34.696409,
+  "lng": 135.515054,
+  "placeId": "ChIJt8bcbtrmAGARCk7sihgrtrw",
+  "dinner": 15400,
+  "source": "https://omakaseje.com/restaurants/rc923524"
+}

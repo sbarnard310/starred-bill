@@ -1,0 +1,23 @@
+{
+  "name": "KOKE",
+  "city": "kyoto",
+  "address": "287 Takoyakushicho, Nakagyo-ku, 604-0021, Kyoto",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.6,
+  "reviews": 175,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥51,750); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://ido-kyoto.com/koke/",
+  "lat": 35.012512,
+  "lng": 135.7581,
+  "placeId": "ChIJaaNHaXMJAWARrWc6YuCKh7Y",
+  "dinner": 33350,
+  "source": "https://omakaseje.com/restaurants/fx406544",
+  "lunch": 17250,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥46,000)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/fx406544"
+}

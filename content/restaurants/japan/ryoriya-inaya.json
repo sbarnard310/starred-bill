@@ -1,0 +1,23 @@
+{
+  "name": "Ryoriya Inaya",
+  "city": "osaka",
+  "address": "7F, 1-10-2 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 152,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥66,000); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.inaya-h.com/",
+  "lat": 34.697954,
+  "lng": 135.497901,
+  "placeId": "ChIJuXOCfeHnAGARSHrj7GTFRVc",
+  "dinner": 27500,
+  "source": "https://omakaseje.com/restaurants/qr669452",
+  "lunch": 27500,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥66,000)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/qr669452"
+}

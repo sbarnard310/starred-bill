@@ -1,0 +1,18 @@
+{
+  "name": "Hyotei",
+  "city": "kyoto",
+  "address": "35 Nanzenji Kusagawacho, Sakyo-ku, 606-8437, Kyoto",
+  "stars": 3,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 858,
+  "dinnerType": "menu",
+  "dinner": 37950,
+  "dinnerNote": "Tasting menu (other menus from €31,625)",
+  "sourceType": "site",
+  "source": "https://hyotei.co.jp/",
+  "website": "https://www.hyotei.co.jp",
+  "lat": 35.011355,
+  "lng": 135.786742,
+  "placeId": "ChIJw5-sbOAIAWAR3IVM2hFyg5A"
+}

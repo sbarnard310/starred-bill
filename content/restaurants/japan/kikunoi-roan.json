@@ -1,0 +1,16 @@
+{
+  "name": "Kikunoi Roan",
+  "city": "kyoto",
+  "address": "118 Saitocho, Shimogyo-ku, 600-8012, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 491,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kikunoi.jp/",
+  "lat": 35.003449,
+  "lng": 135.770647,
+  "placeId": "ChIJvyv4VZUIAWARGzch14mGD8E"
+}

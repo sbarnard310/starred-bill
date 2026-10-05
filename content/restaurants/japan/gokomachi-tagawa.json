@@ -1,0 +1,23 @@
+{
+  "name": "Gokomachi Tagawa",
+  "city": "kyoto",
+  "address": "575 Matsumotocho, Nakagyo-ku, 604-0982, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 147,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.gokoumachi-tagawa.com/",
+  "lat": 35.015008,
+  "lng": 135.766373,
+  "placeId": "ChIJJTIQ_osIAWARa9En4ut9zKQ",
+  "dinner": 29040,
+  "source": "https://omakaseje.com/restaurants/il482435",
+  "lunch": 29040,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/il482435"
+}

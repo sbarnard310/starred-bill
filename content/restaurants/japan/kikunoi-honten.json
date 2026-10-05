@@ -1,0 +1,16 @@
+{
+  "name": "Kikunoi Honten",
+  "city": "kyoto",
+  "address": "459 Shimokawaracho, Higashiyama-ku, 605-0825, Kyoto",
+  "stars": 3,
+  "cuisine": "Japanese",
+  "rating": 4.4,
+  "reviews": 974,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kikunoi.jp/",
+  "lat": 35.001535,
+  "lng": 135.782079,
+  "placeId": "ChIJVVXF5doIAWARUetIixOU-sw"
+}

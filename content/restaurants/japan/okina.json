@@ -1,0 +1,16 @@
+{
+  "name": "Okina",
+  "city": "kyoto",
+  "address": "11 Sagashakado Daimoncho, Ukyo-ku, 616-8422, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 101,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://saga-okina.com/",
+  "lat": 35.022746,
+  "lng": 135.6756,
+  "placeId": "ChIJDWoMRR2qAWARrfVgztklJNY"
+}

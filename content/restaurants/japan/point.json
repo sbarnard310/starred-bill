@@ -1,0 +1,23 @@
+{
+  "name": "Point",
+  "city": "osaka",
+  "address": "3-12-20 Fukushima, Fukushima-ku, 553-0003, Osaka",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.7,
+  "reviews": 26,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥35,200); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://point-accueillir.com",
+  "lat": 34.694117,
+  "lng": 135.48563,
+  "placeId": "ChIJf-lwBwDnAGARezHpjTiGKBg",
+  "dinner": 22000,
+  "source": "https://omakaseje.com/restaurants/rp501098",
+  "lunch": 11000,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥13,200)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/rp501098"
+}

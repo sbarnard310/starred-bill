@@ -1,0 +1,16 @@
+{
+  "name": "Yusokuryori Mankamero",
+  "city": "kyoto",
+  "address": "387 Ebisucho, Kamigyo-ku, 602-8118, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 177,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.mankamerou.com/",
+  "lat": 35.022114,
+  "lng": 135.750507,
+  "placeId": "ChIJAfdlRtgHAWARbsTbNrfIopk"
+}

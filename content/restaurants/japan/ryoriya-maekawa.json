@@ -1,0 +1,16 @@
+{
+  "name": "Ryoriya Maekawa",
+  "city": "kyoto",
+  "address": "405 Nambacho, Shimogyo-ku, 600-8027, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 50,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://ryouriya-maekawa.com/",
+  "lat": 34.998689,
+  "lng": 135.767871,
+  "placeId": "ChIJo_l8-ZIJAWARxRqfI9CMdt0"
+}

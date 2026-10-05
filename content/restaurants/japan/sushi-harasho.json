@@ -1,0 +1,16 @@
+{
+  "name": "Sushi Harasho",
+  "city": "osaka",
+  "address": "3-30 Uenomiyacho, Tennoji-ku, 543-0037, Osaka",
+  "stars": 2,
+  "cuisine": "Sushi",
+  "rating": 4.4,
+  "reviews": 158,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://sushi-harasho.jp/",
+  "lat": 34.662195,
+  "lng": 135.51986,
+  "placeId": "ChIJjRQYyYbnAGARaKOHYlteIxk"
+}

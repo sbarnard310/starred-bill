@@ -1,0 +1,16 @@
+{
+  "name": "Wa Yamamura",
+  "city": "nara",
+  "address": "2-11-15 Shibatsujicho, Nara, 630-8114, Nara",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 302,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www15-yamamura.sakura.ne.jp/index.html",
+  "lat": 34.685875,
+  "lng": 135.812879,
+  "placeId": "ChIJ91lCc8s7AWARKDXm1F3a2a4"
+}

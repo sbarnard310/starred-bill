@@ -1,0 +1,23 @@
+{
+  "name": "Ajikitcho Bumbuan",
+  "city": "osaka",
+  "address": "B1F, Osaka Metro Hommachi Bldg, 3-6-4 Hommachi, Chuo-ku, 541-0053, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 159,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥42,350); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://bunbu-an.jp/",
+  "lat": 34.68307,
+  "lng": 135.501093,
+  "placeId": "ChIJt_Bx7x3nAGARobr1HJ73T0w",
+  "dinner": 13310,
+  "source": "https://omakaseje.com/restaurants/fk996277",
+  "lunch": 4840,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥42,350)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/fk996277"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "YUNiCO",
+  "city": "osaka",
+  "address": "6F, 1-11-19 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.4,
+  "reviews": 57,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://y-unico.jp/",
+  "lat": 34.69794,
+  "lng": 135.499109,
+  "placeId": "ChIJV1i3CmXzAGARa9IlJ_agcIA",
+  "dinner": 22990,
+  "source": "https://omakaseje.com/restaurants/sy198489"
+}

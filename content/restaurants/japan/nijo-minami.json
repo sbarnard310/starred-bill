@@ -1,0 +1,15 @@
+{
+  "name": "Nijo Minami",
+  "city": "kyoto",
+  "address": "92-12 Enokicho, Nakagyo-ku, 604-0931, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 12,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 35.013142,
+  "lng": 135.768119,
+  "placeId": "ChIJWVzOOK0JAWARy3BQSNNihNI"
+}

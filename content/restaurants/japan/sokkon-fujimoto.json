@@ -1,0 +1,16 @@
+{
+  "name": "Sokkon Fujimoto",
+  "city": "kyoto",
+  "address": "580-1 Matsumotocho, Nakagyo-ku, 604-0982, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 42,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://sokkon-Fujimoto.gorp.jp",
+  "lat": 35.015307,
+  "lng": 135.766751,
+  "placeId": "ChIJlQ84ro0IAWARdnmL_hot_uk"
+}

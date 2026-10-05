@@ -1,0 +1,16 @@
+{
+  "name": "Miyamaso",
+  "city": "kyoto",
+  "address": "375 Hanase Harachicho, Sakyo-ku, 601-1102, Kyoto",
+  "stars": 3,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 250,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://miyamasou.jp/",
+  "lat": 35.233154,
+  "lng": 135.793011,
+  "placeId": "ChIJ_UQgQvW6AWARv8m8MI8Vzag"
+}

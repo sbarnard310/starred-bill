@@ -1,0 +1,15 @@
+{
+  "name": "Nijojo Furuta",
+  "city": "kyoto",
+  "address": "371 Furushirocho, Nakagyo-ku, 604-0045, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.2,
+  "reviews": 44,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 35.012209,
+  "lng": 135.753872,
+  "placeId": "ChIJOccsQ4AIAWARvrgPsgAejJc"
+}

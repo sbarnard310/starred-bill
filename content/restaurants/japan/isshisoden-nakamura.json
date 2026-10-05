@@ -1,0 +1,16 @@
+{
+  "name": "Isshisoden Nakamura",
+  "city": "kyoto",
+  "address": "136 Matsushitacho, Nakagyo-ku, 604-8093, Kyoto",
+  "stars": 3,
+  "cuisine": "Japanese",
+  "rating": 4.2,
+  "reviews": 185,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kyoryori-nakamura.com/",
+  "lat": 35.010397,
+  "lng": 135.765083,
+  "placeId": "ChIJzYVfPY4IAWAR9YmMkv5T9Rk"
+}

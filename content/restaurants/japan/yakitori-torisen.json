@@ -1,0 +1,17 @@
+{
+  "name": "Yakitori Torisen",
+  "city": "osaka",
+  "address": "3F, 1-4-26 Dojima, Kita-ku, 530-0003, Osaka",
+  "stars": 1,
+  "cuisine": "Yakitori",
+  "rating": 4.8,
+  "reviews": 68,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥26,000); usually including tax and service",
+  "sourceType": "press",
+  "lat": 34.696189,
+  "lng": 135.498063,
+  "placeId": "ChIJicrhe1TnAGARRL4ACXnFRs8",
+  "dinner": 16000,
+  "source": "https://omakaseje.com/restaurants/um855297"
+}

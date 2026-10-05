@@ -1,0 +1,18 @@
+{
+  "name": "Droit",
+  "city": "kyoto",
+  "address": "8 Yoshida Izumidonocho, Sakyo-ku, 606-8301, Kyoto",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 5,
+  "reviews": 2,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥41,140); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://droit-kyoto.jp/",
+  "lat": 35.026198,
+  "lng": 135.778527,
+  "placeId": "ChIJ80UmMcEJAWAR32JtKs-485w",
+  "dinner": 27830,
+  "source": "https://omakaseje.com/restaurants/nz117835"
+}

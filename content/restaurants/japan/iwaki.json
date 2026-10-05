@@ -1,0 +1,23 @@
+{
+  "name": "Iwaki",
+  "city": "osaka",
+  "address": "2F, 1-6-29 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 55,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://k-iwaki.com",
+  "lat": 34.697482,
+  "lng": 135.499446,
+  "placeId": "ChIJs9OgM-zmAGAR3KuZmzW6zi8",
+  "dinner": 32000,
+  "source": "https://omakaseje.com/restaurants/nx705178",
+  "lunch": 32000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/nx705178"
+}

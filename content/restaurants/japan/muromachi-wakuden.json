@@ -1,0 +1,16 @@
+{
+  "name": "Muromachi Wakuden",
+  "city": "kyoto",
+  "address": "679 Marukizaimokucho, Nakagyo-ku, 604-8106, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 320,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.wakuden.jp/ryotei/muromachi/",
+  "lat": 35.010146,
+  "lng": 135.763257,
+  "placeId": "ChIJqxQuuI8IAWAR-TM9RzwBeIY"
+}

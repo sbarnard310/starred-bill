@@ -1,0 +1,15 @@
+{
+  "name": "Hiraishi",
+  "city": "osaka",
+  "address": "3F, 1-9-6 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
+  "stars": 1,
+  "cuisine": "Tempura",
+  "rating": 4.8,
+  "reviews": 79,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 34.697693,
+  "lng": 135.499257,
+  "placeId": "ChIJQ4BRNezmAGARbVhyUoEEtwc"
+}

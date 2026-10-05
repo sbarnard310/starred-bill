@@ -1,0 +1,15 @@
+{
+  "name": "Ogata",
+  "city": "kyoto",
+  "address": "726 Shinkamanzacho, Shimogyo-ku, 600-8471, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 187,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 35.003191,
+  "lng": 135.755967,
+  "placeId": "ChIJKV-kY5wIAWAR63MGW1r_MaY"
+}

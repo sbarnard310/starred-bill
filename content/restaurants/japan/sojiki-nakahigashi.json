@@ -1,0 +1,16 @@
+{
+  "name": "Sojiki Nakahigashi",
+  "city": "kyoto",
+  "address": "32-3 Jodoji Ishibashicho, Sakyo-ku, 606-8406, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 334,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://soujiki-nakahigashi.jp/",
+  "lat": 35.027601,
+  "lng": 135.792708,
+  "placeId": "ChIJga5LcQEJAWARQ9OxOxh3-m0"
+}

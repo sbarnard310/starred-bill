@@ -1,0 +1,22 @@
+{
+  "name": "Gion Owatari",
+  "city": "kyoto",
+  "address": "570-265 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 111,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥46,000); usually including tax and service",
+  "sourceType": "press",
+  "lat": 35.001444,
+  "lng": 135.777074,
+  "placeId": "ChIJzSbocsQIAWAR_nZSJamugG8",
+  "dinner": 38000,
+  "source": "https://omakaseje.com/restaurants/kg782248",
+  "lunch": 38000,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥46,000)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/kg782248"
+}

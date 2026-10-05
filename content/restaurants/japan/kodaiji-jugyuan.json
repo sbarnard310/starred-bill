@@ -1,0 +1,23 @@
+{
+  "name": "Kodaiji Jugyuan",
+  "city": "kyoto",
+  "address": "353 Masuyacho, Higashiyama-ku, 605-0826, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 382,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥126,500); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://jugyuan.jp/",
+  "lat": 34.998694,
+  "lng": 135.781565,
+  "placeId": "ChIJW8liP9AIAWARX12XJ33-YTM",
+  "dinner": 37950,
+  "source": "https://omakaseje.com/restaurants/dl934134",
+  "lunch": 25300,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥126,500)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/dl934134"
+}

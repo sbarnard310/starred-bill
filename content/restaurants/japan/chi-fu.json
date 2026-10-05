@@ -1,0 +1,23 @@
+{
+  "name": "Chi-Fu",
+  "city": "osaka",
+  "address": "4-4-8 Nishitemma, Kita-ku, 530-0047, Osaka",
+  "stars": 1,
+  "cuisine": "Chinese",
+  "rating": 4.3,
+  "reviews": 107,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥24,200); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://chi-fu.jp/",
+  "lat": 34.697434,
+  "lng": 135.504716,
+  "placeId": "ChIJMTCDsOnmAGAR1KUkS3lRLHA",
+  "dinner": 19360,
+  "source": "https://omakaseje.com/restaurants/ry888040",
+  "lunch": 19360,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥24,200)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/ry888040"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "MUBE",
+  "city": "kyoto",
+  "address": "11-1 Omiya Gentakukitamachi, Kita-ku, 603-8462, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 30,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://mube.co.jp",
+  "lat": 35.052502,
+  "lng": 135.738416,
+  "placeId": "ChIJxyOk6L-pAWARYuKXjO_yvlM"
+}

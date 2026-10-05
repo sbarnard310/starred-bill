@@ -1,0 +1,16 @@
+{
+  "name": "Pierre",
+  "city": "osaka",
+  "address": "20F, InterContinental Osaka, 3-60 Ofukacho, Kita-ku, 530-0011, Osaka",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.5,
+  "reviews": 262,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.icosaka.com/",
+  "lat": 34.70645,
+  "lng": 135.494552,
+  "placeId": "ChIJw0LI_YvmAGARyXFgKZkMnq0"
+}

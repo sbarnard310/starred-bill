@@ -1,0 +1,15 @@
+{
+  "name": "Oryori Horikawa",
+  "city": "osaka",
+  "address": "4-8-17 Temma, Kita-ku, 530-0043, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 78,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 34.693707,
+  "lng": 135.514269,
+  "placeId": "ChIJd5LKltnmAGARpmCOawM7OZg"
+}

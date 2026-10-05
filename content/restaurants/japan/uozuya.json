@@ -1,0 +1,15 @@
+{
+  "name": "Uozuya",
+  "city": "kyoto",
+  "address": "8 Mibu Higashihinokicho, Nakagyo-ku, 604-8843, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 15,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 34.999842,
+  "lng": 135.735956,
+  "placeId": "ChIJSTpcjDYGAWARpEkBHzsmLKw"
+}

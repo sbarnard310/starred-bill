@@ -1,0 +1,18 @@
+{
+  "name": "capi",
+  "city": "osaka",
+  "address": "6F, 1-10-2 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.4,
+  "reviews": 46,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥34,100); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://capi-osaka.com/",
+  "lat": 34.697954,
+  "lng": 135.497901,
+  "placeId": "ChIJp02WRRHnAGARciPxV9pN75I",
+  "dinner": 28600,
+  "source": "https://omakaseje.com/restaurants/db286320"
+}

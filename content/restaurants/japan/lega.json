@@ -1,0 +1,16 @@
+{
+  "name": "Lega'",
+  "city": "nara",
+  "address": "133 Hachigawa, Katsuragi, 639-2163, Nara",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.6,
+  "reviews": 41,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.lega-nara.com/",
+  "lat": 34.508241,
+  "lng": 135.717264,
+  "placeId": "ChIJ5wCp16ItAWARufExVgboUXU"
+}

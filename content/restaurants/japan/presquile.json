@@ -1,0 +1,23 @@
+{
+  "name": "PRESQU'ÎLE",
+  "city": "osaka",
+  "address": "2F, Yodoyabashi odona, 4-1-1 Imabashi, Chuo-ku, 541-0042, Osaka",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 3.7,
+  "reviews": 1981,
+  "dinnerType": "menu",
+  "dinner": 21780,
+  "dinnerNote": "Cheapest dinner course (others up to ¥35,090); usually including tax and service",
+  "sourceType": "press",
+  "source": "https://omakaseje.com/restaurants/gb709069",
+  "lunch": 12100,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/gb709069",
+  "website": "https://presquile.jp/",
+  "lat": 34.690995,
+  "lng": 135.500142,
+  "placeId": "ChIJYxQFueXmAGAR5kWBXxH_Wuw"
+}

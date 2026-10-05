@@ -1,0 +1,23 @@
+{
+  "name": "Ogawa",
+  "city": "kyoto",
+  "address": "515 Anenishinotoincho, Nakagyo-ku, 604-8273, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 77,
+  "dinnerType": "menu",
+  "dinner": 30000,
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "source": "https://omakaseje.com/restaurants/zq494841",
+  "website": "https://kyoto-ogawa.com/",
+  "lat": 35.008838,
+  "lng": 135.755203,
+  "placeId": "ChIJRXig-cEIAWAR-XRwXA_oegE",
+  "lunch": 6600,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥14,300)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/zq494841"
+}

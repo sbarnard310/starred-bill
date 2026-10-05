@@ -1,0 +1,16 @@
+{
+  "name": "HANA-Kitcho",
+  "city": "kyoto",
+  "address": "3-2 Yamatocho, Higashiyama-ku, 605-0802, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 127,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kyoto-kitcho.com/restaurant/hana/",
+  "lat": 35.003395,
+  "lng": 135.772945,
+  "placeId": "ChIJI-P4dpwIAWAR__cHhdAO5-E"
+}

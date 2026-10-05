@@ -1,0 +1,16 @@
+{
+  "name": "Oryori Yamada",
+  "city": "osaka",
+  "address": "4F, 4-7-7 Nishitemma, Kita-ku, 530-0047, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 53,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.oryori-yamada.jp/",
+  "lat": 34.696644,
+  "lng": 135.503821,
+  "placeId": "ChIJ61kHNW3nAGAR82Kaj03b5Lo"
+}

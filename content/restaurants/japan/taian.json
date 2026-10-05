@@ -1,0 +1,17 @@
+{
+  "name": "Taian",
+  "city": "osaka",
+  "address": "1-21-2 Shimanochi, Chuo-ku, 542-0082, Osaka",
+  "stars": 3,
+  "cuisine": "Japanese",
+  "rating": 3.8,
+  "reviews": 267,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥31,460); usually including tax and service",
+  "sourceType": "press",
+  "lat": 34.673353,
+  "lng": 135.507205,
+  "placeId": "ChIJq48uCT7nAGARla-2QjFW32U",
+  "dinner": 24200,
+  "source": "https://omakaseje.com/restaurants/cz950958"
+}

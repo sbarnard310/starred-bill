@@ -1,0 +1,22 @@
+{
+  "name": "Mizuno",
+  "city": "kyoto",
+  "address": "245-2 Nakanocho, Higashiyama-ku, 605-0082, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.9,
+  "reviews": 47,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "lat": 35.006275,
+  "lng": 135.775651,
+  "placeId": "ChIJkz6aoD4JAWARIHl5rtoIt7I",
+  "dinner": 25000,
+  "source": "https://omakaseje.com/restaurants/hg953144",
+  "lunch": 25000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/hg953144"
+}

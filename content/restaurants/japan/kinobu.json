@@ -1,0 +1,22 @@
+{
+  "name": "Kinobu",
+  "city": "kyoto",
+  "address": "416 Iwatoyamacho, Shimogyo-ku, 600-8445, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 514,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥41,991); usually including tax and service",
+  "sourceType": "press",
+  "lat": 35.000953,
+  "lng": 135.756597,
+  "placeId": "ChIJG1KGrp4IAWARwp2d7lmI5lw",
+  "dinner": 28869,
+  "source": "https://omakaseje.com/restaurants/ld156282",
+  "lunch": 28869,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥41,991)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/ld156282"
+}

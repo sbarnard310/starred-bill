@@ -1,0 +1,15 @@
+{
+  "name": "Gion Matayoshi",
+  "city": "kyoto",
+  "address": "570-123 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 201,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 35.003349,
+  "lng": 135.774545,
+  "placeId": "ChIJF2tmi8MIAWARjnuvxZjfwTk"
+}

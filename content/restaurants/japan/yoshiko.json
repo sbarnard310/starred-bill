@@ -1,0 +1,15 @@
+{
+  "name": "Yoshiko",
+  "city": "osaka",
+  "address": "1-8-5 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
+  "stars": 1,
+  "cuisine": "Fugu / Pufferfish",
+  "rating": 4.5,
+  "reviews": 26,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 34.697385,
+  "lng": 135.500176,
+  "placeId": "ChIJb6TyI-zmAGARNBQuqjLYhDA"
+}

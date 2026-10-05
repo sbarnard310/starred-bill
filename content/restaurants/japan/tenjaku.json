@@ -1,0 +1,15 @@
+{
+  "name": "Tenjaku",
+  "city": "kyoto",
+  "address": "570 Botambokocho, Kamigyo-ku, 602-8475, Kyoto",
+  "stars": 1,
+  "cuisine": "Tempura",
+  "rating": 4.9,
+  "reviews": 102,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 35.031403,
+  "lng": 135.741907,
+  "placeId": "ChIJ62ueae8HAWARUWDU4AnAsUE"
+}

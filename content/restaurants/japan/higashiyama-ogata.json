@@ -1,0 +1,15 @@
+{
+  "name": "Higashiyama Ogata",
+  "city": "kyoto",
+  "address": "91-5 Okazaki Enshojicho, Sakyo-ku, 606-8344, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.2,
+  "reviews": 62,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 35.011402,
+  "lng": 135.784732,
+  "placeId": "ChIJUSt8gkgJAWART-sAzp4tPUU"
+}

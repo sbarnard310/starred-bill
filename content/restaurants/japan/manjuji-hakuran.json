@@ -1,0 +1,17 @@
+{
+  "name": "Manjuji Hakuran",
+  "city": "kyoto",
+  "address": "360 Gokuishicho, Shimogyo-ku, 600-8429, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.8,
+  "reviews": 17,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "lat": 34.997629,
+  "lng": 135.759185,
+  "placeId": "ChIJwYWdRAAJAWARvYhWrQCdENI",
+  "dinner": 22000,
+  "source": "https://omakaseje.com/restaurants/hg781104"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Muromachi Yui",
+  "city": "kyoto",
+  "address": "459 Kimbukicho, Nakagyo-ku, 604-0846, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.9,
+  "reviews": 35,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://muromachi-yui.jp/",
+  "lat": 35.012233,
+  "lng": 135.758455,
+  "placeId": "ChIJgYkvWBYJAWARYhvfLZtlWAw",
+  "dinner": 30000,
+  "source": "https://omakaseje.com/restaurants/ti327047"
+}

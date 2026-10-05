@@ -1,0 +1,16 @@
+{
+  "name": "Kokyu",
+  "city": "kyoto",
+  "address": "204 Seiryucho, Kamigyo-ku, 602-0822, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 81,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kokyu-kyoto.com/",
+  "lat": 35.031138,
+  "lng": 135.769534,
+  "placeId": "ChIJCw16RWgIAWARcbvfN3lQrpQ"
+}

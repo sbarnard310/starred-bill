@@ -1,0 +1,23 @@
+{
+  "name": "Teruya",
+  "city": "osaka",
+  "address": "2-1-24 Ueshio, Chuo-ku, 542-0064, Osaka",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 45,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.teruya-osaka.jp/",
+  "lat": 34.66929,
+  "lng": 135.517727,
+  "placeId": "ChIJaXa70zLnAGARSe4PQ0ga4ks",
+  "dinner": 30000,
+  "source": "https://omakaseje.com/restaurants/ck261894",
+  "lunch": 30000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/ck261894"
+}

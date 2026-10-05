@@ -1,0 +1,19 @@
+{
+  "name": "HAJIME",
+  "city": "osaka",
+  "address": "1-9-11 Edobori, Nishi-ku, 550-0002, Osaka",
+  "stars": 3,
+  "cuisine": "Innovative",
+  "rating": 4.5,
+  "reviews": 316,
+  "dinnerType": "menu",
+  "dinner": 76500,
+  "dinnerNote": "Cheapest dinner course (others up to ¥138,000); usually including tax and service",
+  "sourceType": "press",
+  "source": "https://omakaseje.com/restaurants/kc465795",
+  "wine": 27500,
+  "website": "https://www.hajime-artistes.com/",
+  "lat": 34.688612,
+  "lng": 135.496084,
+  "placeId": "ChIJDQRP2frmAGARBw_HFaCnauI"
+}

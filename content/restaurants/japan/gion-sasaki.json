@@ -1,0 +1,16 @@
+{
+  "name": "Gion Sasaki",
+  "city": "kyoto",
+  "address": "566-27 Komatsucho, Higashiyama-ku, 605-0811, Kyoto",
+  "stars": 3,
+  "cuisine": "Japanese",
+  "rating": 4.4,
+  "reviews": 277,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://gionsasaki.com/",
+  "lat": 34.998881,
+  "lng": 135.775049,
+  "placeId": "ChIJQ5k9icYIAWARLllXhdR6meY"
+}

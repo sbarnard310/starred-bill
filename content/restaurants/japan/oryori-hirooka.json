@@ -1,0 +1,23 @@
+{
+  "name": "Oryori Hirooka",
+  "city": "nara",
+  "address": "15 Ganrinincho, Nara, 630-8221, Nara",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.9,
+  "reviews": 63,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://oryorihirooka-nara.com",
+  "lat": 34.68129,
+  "lng": 135.829859,
+  "placeId": "ChIJB2-wlUg5AWARKk5c-FJ128k",
+  "dinner": 16500,
+  "source": "https://omakaseje.com/restaurants/dv433010",
+  "lunch": 16500,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/dv433010"
+}

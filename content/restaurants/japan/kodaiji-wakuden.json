@@ -1,0 +1,16 @@
+{
+  "name": "Kodaiji Wakuden",
+  "city": "kyoto",
+  "address": "512 Washiocho, Higashiyama-ku, 605-0072, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 207,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.wakuden.jp/",
+  "lat": 35.001635,
+  "lng": 135.779734,
+  "placeId": "ChIJNdtJJO8IAWAROLakASqxLBM"
+}

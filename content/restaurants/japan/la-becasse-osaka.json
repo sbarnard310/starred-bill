@@ -1,0 +1,23 @@
+{
+  "name": "La Bécasse",
+  "city": "osaka",
+  "address": "3-3-9 Hiranomachi, Chuo-ku, 541-0046, Osaka",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.6,
+  "reviews": 101,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥48,400); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.labecasse1990.com/",
+  "lat": 34.68763,
+  "lng": 135.502257,
+  "placeId": "ChIJu3ny4uTmAGARYsFXPVvJuxk",
+  "dinner": 24200,
+  "source": "https://omakaseje.com/restaurants/fo132968",
+  "lunch": 24200,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥36,300)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/fo132968"
+}

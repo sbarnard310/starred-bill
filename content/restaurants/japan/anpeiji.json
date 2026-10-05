@@ -1,0 +1,23 @@
+{
+  "name": "anpeiji",
+  "city": "kyoto",
+  "address": "56 Nakajima Hinokamicho, Fushimi-ku, 612-8465, Kyoto",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.7,
+  "reviews": 102,
+  "dinnerType": "menu",
+  "dinner": 25000,
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "source": "https://omakaseje.com/restaurants/do446707",
+  "website": "https://www.anpeiji.com/",
+  "lat": 34.944128,
+  "lng": 135.74508,
+  "placeId": "ChIJOxEZ9oQFAWARa-ZmjZv4pD0",
+  "lunch": 17000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/do446707"
+}

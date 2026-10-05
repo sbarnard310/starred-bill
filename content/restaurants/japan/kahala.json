@@ -1,0 +1,15 @@
+{
+  "name": "KAHALA",
+  "city": "osaka",
+  "address": "2F, 1-9-2 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
+  "stars": 2,
+  "cuisine": "Innovative",
+  "rating": 4.7,
+  "reviews": 50,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 34.697522,
+  "lng": 135.499685,
+  "placeId": "ChIJJ2c3rRHnAGARy4Y2SErhQZI"
+}

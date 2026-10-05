@@ -1,0 +1,16 @@
+{
+  "name": "Naramachi Kuko",
+  "city": "nara",
+  "address": "42 Narukawacho, Nara, 630-8335, Nara",
+  "stars": 1,
+  "cuisine": "Chinese",
+  "rating": 4.5,
+  "reviews": 32,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kuko-nara.jp/",
+  "lat": 34.6765865,
+  "lng": 135.8290168,
+  "placeId": "ChIJWyRsnBs5AWARLfiOIkysCiw"
+}

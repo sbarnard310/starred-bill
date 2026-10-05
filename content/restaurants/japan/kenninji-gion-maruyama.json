@@ -1,0 +1,16 @@
+{
+  "name": "Kenninji Gion Maruyama",
+  "city": "kyoto",
+  "address": "566-16 Komatsucho, Higashiyama-ku, 605-0811, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.4,
+  "reviews": 141,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://gionmaruyama.com/",
+  "lat": 34.998809,
+  "lng": 135.774574,
+  "placeId": "ChIJxZU0isYIAWARTt94AyTfVco"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Tokuha Motonari",
+  "city": "kyoto",
+  "address": "287-5 Shingoryoguchicho, Kamigyo-ku, 602-0897, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 56,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://motonari-kyoto.jp/",
+  "lat": 35.036465,
+  "lng": 135.762995,
+  "placeId": "ChIJf1lJxD8JAWARmdAp62rTios"
+}

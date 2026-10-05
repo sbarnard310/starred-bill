@@ -1,0 +1,23 @@
+{
+  "name": "Ajikitcho Horieten",
+  "city": "osaka",
+  "address": "1-22-6 Kitahorie, Nishi-ku, 550-0014, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.1,
+  "reviews": 23,
+  "dinnerType": "menu",
+  "dinner": 30250,
+  "dinnerNote": "Cheapest dinner course (others up to ¥42,350); usually including tax and service",
+  "sourceType": "press",
+  "source": "https://omakaseje.com/restaurants/xs590558",
+  "website": "https://ajikitcho.com/",
+  "lat": 34.673655,
+  "lng": 135.494016,
+  "placeId": "ChIJCy8csAXnAGARSJA5Ix-JZGI",
+  "lunch": 24200,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥42,350)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/xs590558"
+}

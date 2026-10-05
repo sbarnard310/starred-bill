@@ -1,0 +1,16 @@
+{
+  "name": "YOKOI",
+  "city": "kyoto",
+  "address": "88 Manjujinakanocho, Shimogyo-ku, 600-8405, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.9,
+  "reviews": 51,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kyo-yokoi.com",
+  "lat": 34.99764,
+  "lng": 135.76235,
+  "placeId": "ChIJ-_N-vXIJAWAR69mbsUWOjXc"
+}

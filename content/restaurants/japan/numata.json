@@ -1,0 +1,16 @@
+{
+  "name": "Numata",
+  "city": "osaka",
+  "address": "7F, 1-10-2 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
+  "stars": 2,
+  "cuisine": "Tempura",
+  "rating": 4.6,
+  "reviews": 76,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tenpura-tenboshi.com/tenboshi/numata.html",
+  "lat": 34.697954,
+  "lng": 135.497901,
+  "placeId": "ChIJwfy2vUvnAGAR73iGlL_yQkI"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "P greco",
+  "city": "osaka",
+  "address": "4-1-20 Nishitemma, Kita-ku, 530-0047, Osaka",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.4,
+  "reviews": 37,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥46,161); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.pgreco.jp/",
+  "lat": 34.696173,
+  "lng": 135.505946,
+  "placeId": "ChIJPXXKGejmAGARD_TwSEOBvg8",
+  "dinner": 23858,
+  "source": "https://omakaseje.com/restaurants/bm835187",
+  "lunch": 23858,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥46,161)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/bm835187"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "a canto",
+  "city": "osaka",
+  "address": "3-1-10 Uchikyuhojimachi, Chuo-ku, 540-0013, Osaka",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.8,
+  "reviews": 58,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.a-canto.com/",
+  "lat": 34.678984,
+  "lng": 135.515695,
+  "placeId": "ChIJCXN2H1_nAGARf6sEMKS_Ui4",
+  "dinner": 16500,
+  "source": "https://omakaseje.com/restaurants/qg713803",
+  "lunch": 16500,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/qg713803"
+}

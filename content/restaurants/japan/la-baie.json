@@ -1,0 +1,23 @@
+{
+  "name": "La Baie",
+  "city": "osaka",
+  "address": "5F, The Ritz-Carlton, Osaka, 2-5-25 Umeda, Kita-ku, 530-0001, Osaka",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.6,
+  "reviews": 380,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥42,000); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://labaie.ritzcarltonosaka.com/",
+  "lat": 34.698462,
+  "lng": 135.492663,
+  "placeId": "ChIJz4HJq4zmAGAR-YQ7Xv7XU4E",
+  "dinner": 27000,
+  "source": "https://omakaseje.com/restaurants/kq995041",
+  "lunch": 14500,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥29,000)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/kq995041"
+}

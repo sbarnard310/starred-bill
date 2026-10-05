@@ -1,0 +1,16 @@
+{
+  "name": "Gion Maruyama",
+  "city": "kyoto",
+  "address": "570-171 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.4,
+  "reviews": 215,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://gionmaruyama.com/",
+  "lat": 35.002587,
+  "lng": 135.776068,
+  "placeId": "ChIJEXuN3sMIAWARTmm1lQ5BF5U"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Matsuki",
+  "city": "nara",
+  "address": "1 Fushigazushicho, Nara, 630-8394, Nara",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 129,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kappou-matsuki.com/",
+  "lat": 34.679216,
+  "lng": 135.83323,
+  "placeId": "ChIJC5SHdCc6AWARbG8X-Y0_Ehk"
+}

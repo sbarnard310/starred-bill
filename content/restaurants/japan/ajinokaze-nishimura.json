@@ -1,0 +1,22 @@
+{
+  "name": "Ajinokaze Nishimura",
+  "city": "nara",
+  "address": "1023-3 Odono, Sakurai, 633-0062, Nara",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 105,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "lat": 34.518038,
+  "lng": 135.844418,
+  "placeId": "ChIJx8lUG0vLBmARpsDWl6UQm9o",
+  "dinner": 13200,
+  "source": "https://omakaseje.com/restaurants/ho438880",
+  "lunch": 6600,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/ho438880"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "TAKAYAMA",
+  "city": "kyoto",
+  "address": "2F, Good Nature Station, 318-6 Inaricho, Shimogyo-ku, 600-8022, Kyoto",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.8,
+  "reviews": 144,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥38,000); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://takayama-kyoto.com/",
+  "lat": 35.002526,
+  "lng": 135.76915,
+  "placeId": "ChIJC_bhzTgJAWAR3EeeZr1IF0A",
+  "dinner": 33000,
+  "source": "https://omakaseje.com/restaurants/ys264287",
+  "lunch": 33000,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥38,000)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/ys264287"
+}

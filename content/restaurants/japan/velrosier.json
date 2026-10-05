@@ -1,0 +1,23 @@
+{
+  "name": "VELROSIER",
+  "city": "kyoto",
+  "address": "2F, Good Nature Station, 318-6 Inaricho, Shimogyo-ku, 600-8022, Kyoto",
+  "stars": 1,
+  "cuisine": "Chinese",
+  "rating": 4.6,
+  "reviews": 261,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥36,300); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.vel-rosier.com/",
+  "lat": 35.002538,
+  "lng": 135.769152,
+  "placeId": "ChIJOYeOxBfzAGARX7Y1d6EOORI",
+  "dinner": 24200,
+  "source": "https://omakaseje.com/restaurants/ll584899",
+  "lunch": 12100,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥33,000)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/ll584899"
+}

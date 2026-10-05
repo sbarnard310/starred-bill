@@ -1,0 +1,23 @@
+{
+  "name": "atelier HANADA",
+  "city": "osaka",
+  "address": "2F, Yodoyabashi odona, 4-3-1 Kitahama, Chuo-ku, 541-0041, Osaka",
+  "stars": 1,
+  "cuisine": "Chinese",
+  "rating": 4.6,
+  "reviews": 82,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥56,483); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://atelierhanada.jp/",
+  "lat": 34.691074,
+  "lng": 135.500344,
+  "placeId": "ChIJD2TnfQDnAGARydFy3ZbYWZ8",
+  "dinner": 15062,
+  "source": "https://omakaseje.com/restaurants/wh215473",
+  "lunch": 10041,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥30,124)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/wh215473"
+}

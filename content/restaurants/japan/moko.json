@@ -1,0 +1,23 @@
+{
+  "name": "MOKO",
+  "city": "kyoto",
+  "address": "235-2 Tamauecho, Nakagyo-ku, 604-0005, Kyoto",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.9,
+  "reviews": 153,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://moko-kyoto.com",
+  "lat": 35.016851,
+  "lng": 135.757149,
+  "placeId": "ChIJT1StRfIJAWARJT5o70kaYvM",
+  "dinner": 22000,
+  "source": "https://omakaseje.com/restaurants/dw935691",
+  "lunch": 9000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/dw935691"
+}

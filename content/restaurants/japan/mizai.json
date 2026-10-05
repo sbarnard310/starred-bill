@@ -1,0 +1,16 @@
+{
+  "name": "Mizai",
+  "city": "kyoto",
+  "address": "613 Maruyamacho, Higashiyama-ku, 605-0071, Kyoto",
+  "stars": 3,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 234,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://mizai.jp/",
+  "lat": 35.002993,
+  "lng": 135.782364,
+  "placeId": "ChIJnds0DdsIAWARE0dXPUqNYkc"
+}

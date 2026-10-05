@@ -1,0 +1,23 @@
+{
+  "name": "Sanso Kyoyamato",
+  "city": "kyoto",
+  "address": "359 Masuyacho, Higashiyama-ku, 605-0826, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 76,
+  "dinnerType": "menu",
+  "dinnerNote": "Cheapest dinner course (others up to ¥75,900); usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.kyoyamato.com/",
+  "lat": 34.999252,
+  "lng": 135.78139,
+  "placeId": "ChIJmcC7bdAIAWARI29Cei-Npuc",
+  "dinner": 44275,
+  "source": "https://omakaseje.com/restaurants/rw846837",
+  "lunch": 25300,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥44,275)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/rw846837"
+}

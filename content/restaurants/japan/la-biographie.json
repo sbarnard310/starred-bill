@@ -1,0 +1,23 @@
+{
+  "name": "La Biographie···",
+  "city": "kyoto",
+  "address": "422-1 Tanakacho, Kamigyo-ku, 602-8163, Kyoto",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.6,
+  "reviews": 56,
+  "dinnerType": "menu",
+  "dinner": 30800,
+  "dinnerNote": "Cheapest dinner course (others up to ¥42,350); usually including tax and service",
+  "sourceType": "press",
+  "source": "https://omakaseje.com/restaurants/kz521623",
+  "website": "https://la-biographie.info/",
+  "lat": 35.020156,
+  "lng": 135.742944,
+  "placeId": "ChIJJ6ffGWQHAWAReWN2QMrHIG4",
+  "lunch": 18150,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/kz521623"
+}

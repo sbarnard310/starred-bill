@@ -1,0 +1,16 @@
+{
+  "name": "Da terra",
+  "city": "nara",
+  "address": "884 Kawahara, Asukamura, Takaichi-gun, 634-0141, Nara",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.7,
+  "reviews": 73,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://da-terra.jp/",
+  "lat": 34.472669,
+  "lng": 135.816499,
+  "placeId": "ChIJQ3mIRxHNBmAR2nvMxwGSKko"
+}

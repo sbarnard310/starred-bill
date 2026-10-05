@@ -1,0 +1,23 @@
+{
+  "name": "Nishitemma Ichigaya",
+  "city": "osaka",
+  "address": "2-10-9 Nishitemma, Kita-ku, 530-0047, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 34,
+  "dinnerType": "menu",
+  "dinner": 18000,
+  "dinnerNote": "Cheapest dinner course (others up to ¥30,000); usually including tax and service",
+  "sourceType": "press",
+  "source": "https://omakaseje.com/restaurants/nx484768",
+  "website": "https://ichigaya.savor-japanese-restaurant.com/",
+  "lat": 34.696403,
+  "lng": 135.50196,
+  "placeId": "ChIJecxalDbnAGAROYS9NloYChU",
+  "lunch": 18000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/nx484768"
+}

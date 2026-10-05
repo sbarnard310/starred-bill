@@ -1,0 +1,23 @@
+{
+  "name": "agnel d'or",
+  "city": "osaka",
+  "address": "2-4-4 Nishihommachi, Nishi-ku, 550-0005, Osaka",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.5,
+  "reviews": 273,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://www.agneldor.com/",
+  "lat": 34.682548,
+  "lng": 135.490981,
+  "placeId": "ChIJRd3a7P7mAGAR1cOIhn6oQWM",
+  "dinner": 25902,
+  "source": "https://omakaseje.com/restaurants/qb117583",
+  "lunch": 15975,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/qb117583"
+}

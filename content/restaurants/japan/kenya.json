@@ -1,0 +1,13 @@
+{
+  "name": "Kenya",
+  "city": "kyoto",
+  "address": "12-3 Kamitakano Shimoaramakicho, Sakyo-ku, 606-0093, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kenya-sakai.com/",
+  "lat": 35.056686,
+  "lng": 135.791449
+}

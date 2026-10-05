@@ -1,0 +1,18 @@
+{
+  "name": "Higashiyama Yoshihisa",
+  "city": "kyoto",
+  "address": "422 Myohoimmaekawacho, Higashiyama-ku, 605-0932, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 99,
+  "dinnerType": "menu",
+  "dinner": 34000,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.higashiyama-yosihisa.com/menu.html",
+  "website": "https://www.higashiyama-yosihisa.com/",
+  "lat": 34.992065,
+  "lng": 135.773901,
+  "placeId": "ChIJn3lf01EJAWARbrQUx84vYj4"
+}

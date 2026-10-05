@@ -1,0 +1,16 @@
+{
+  "name": "cenci",
+  "city": "kyoto",
+  "address": "44-7 Shogoin Entomicho, Sakyo-ku, 606-8323, Kyoto",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.6,
+  "reviews": 434,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://cenci-kyoto.com/",
+  "lat": 35.017056,
+  "lng": 135.78024,
+  "placeId": "ChIJw2vMBfAIAWAR86pLyFaUBas"
+}

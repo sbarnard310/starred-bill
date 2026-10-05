@@ -1,0 +1,15 @@
+{
+  "name": "Kaishoku Shimizu",
+  "city": "osaka",
+  "address": "1F, Shin Daibiru, 1-2-1 Dojimahama, Kita-ku, 530-0004, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.4,
+  "reviews": 67,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 34.695621,
+  "lng": 135.499246,
+  "placeId": "ChIJD-nwMD7nAGARQUVqvF4KDdw"
+}

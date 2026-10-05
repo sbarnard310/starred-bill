@@ -1,0 +1,15 @@
+{
+  "name": "Yonemasu",
+  "city": "osaka",
+  "address": "1-9-16 Oyodominami, Kita-ku, 531-0075, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.3,
+  "reviews": 58,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 34.703019,
+  "lng": 135.487567,
+  "placeId": "ChIJIfNOJojmAGARw1mhRDZXWt4"
+}

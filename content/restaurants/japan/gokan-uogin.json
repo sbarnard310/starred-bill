@@ -1,0 +1,23 @@
+{
+  "name": "GOKAN UOGIN",
+  "city": "nara",
+  "address": "6-4-13 Omiyacho, Nara, 630-8115, Nara",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 66,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://gokan-uogin.jp/",
+  "lat": 34.684906,
+  "lng": 135.807029,
+  "placeId": "ChIJtfkGL547AWARl0mgW5nB7yc",
+  "dinner": 25000,
+  "source": "https://omakaseje.com/restaurants/eb644269",
+  "lunch": 25000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/eb644269"
+}

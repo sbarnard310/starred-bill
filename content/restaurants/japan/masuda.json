@@ -1,0 +1,17 @@
+{
+  "name": "Masuda",
+  "city": "osaka",
+  "address": "2F, 1-3-12 Shinsaibashisuji, Chuo-ku, 542-0085, Osaka",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 116,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "lat": 34.673799,
+  "lng": 135.501957,
+  "placeId": "ChIJd1s5LBfnAGAR55BgFHZLY3Q",
+  "dinner": 21780,
+  "source": "https://omakaseje.com/restaurants/au405649"
+}

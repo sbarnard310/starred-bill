@@ -1,0 +1,16 @@
+{
+  "name": "Gion Nishikawa",
+  "city": "kyoto",
+  "address": "473 Shimokawaracho, Higashiyama-ku, 605-0825, Kyoto",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.1,
+  "reviews": 320,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://gion-nishikawa.co.jp",
+  "lat": 34.999797,
+  "lng": 135.778857,
+  "placeId": "ChIJB1aZxO0HAWAR8l3CP2AA0C8"
+}

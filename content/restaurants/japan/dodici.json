@@ -1,0 +1,23 @@
+{
+  "name": "DODICI",
+  "city": "kyoto",
+  "address": "239 Kamihakusancho, Nakagyo-ku, 604-0943, Kyoto",
+  "stars": 1,
+  "cuisine": "Italian",
+  "rating": 4.6,
+  "reviews": 98,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://dodici-kyoto.jp/",
+  "lat": 35.011866,
+  "lng": 135.765726,
+  "placeId": "ChIJU-CK_ksJAWARKRojwg1e98o",
+  "dinner": 25410,
+  "source": "https://omakaseje.com/restaurants/ww495235",
+  "lunch": 14520,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥25,410)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/ww495235"
+}

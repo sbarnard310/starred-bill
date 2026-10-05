@@ -1,0 +1,16 @@
+{
+  "name": "Kentan Horibe",
+  "city": "kyoto",
+  "address": "273 Tenjinyamacho, Nakagyo-ku, 604-8221, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.5,
+  "reviews": 142,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.kyoto-horibe.com/",
+  "lat": 35.004999,
+  "lng": 135.757018,
+  "placeId": "ChIJe_n4XpsIAWARyyaJO4RzB14"
+}

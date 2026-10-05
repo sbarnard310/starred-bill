@@ -1,0 +1,15 @@
+{
+  "name": "Tsukumo",
+  "city": "nara",
+  "address": "968 Kideracho, Nara, 630-8306, Nara",
+  "stars": 2,
+  "cuisine": "Japanese",
+  "rating": 4.7,
+  "reviews": 134,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "lat": 34.675974,
+  "lng": 135.834095,
+  "placeId": "ChIJVVUx0046AWARXL_ggppVFJs"
+}

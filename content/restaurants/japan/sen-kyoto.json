@@ -1,0 +1,16 @@
+{
+  "name": "SEN",
+  "city": "kyoto",
+  "address": "379 Shiogamacho, Shimogyo-ku, 600-8103, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 144,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://kyoto-sen.com/",
+  "lat": 34.996445,
+  "lng": 135.763986,
+  "placeId": "ChIJsWL3YnoJAWARCGW2cPIuqMM"
+}

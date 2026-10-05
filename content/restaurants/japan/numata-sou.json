@@ -1,0 +1,16 @@
+{
+  "name": "Numata Sou",
+  "city": "osaka",
+  "address": "3F, 4-7-7 Nishitemma, Kita-ku, 530-0047, Osaka",
+  "stars": 1,
+  "cuisine": "Tempura",
+  "rating": 4.8,
+  "reviews": 79,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.tenpura-tenboshi.com/sou/",
+  "lat": 34.696668,
+  "lng": 135.503786,
+  "placeId": "ChIJe9hwFgDnAGARgaHfltNE2oE"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Shunsaiten Tsuchiya",
+  "city": "osaka",
+  "address": "41-4 Toyotsucho, Suita, 564-0051, Osaka",
+  "stars": 2,
+  "cuisine": "Tempura",
+  "rating": 4.5,
+  "reviews": 238,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://www.shunsaiten-tsuchiya.com/",
+  "lat": 34.760534,
+  "lng": 135.490966,
+  "placeId": "ChIJe3SCFADlAGARXGl65SrVqsA"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Shimmonzen Yonemura",
+  "city": "kyoto",
+  "address": "255 Umemotocho, Higashiyama-ku, 605-0064, Kyoto",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 4.6,
+  "reviews": 257,
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner course; usually including tax and service",
+  "sourceType": "press",
+  "website": "https://r-yonemura.jp/",
+  "lat": 35.006215,
+  "lng": 135.776646,
+  "placeId": "ChIJB1aZxO0HAWARCa_AzffRouA",
+  "dinner": 28000,
+  "source": "https://omakaseje.com/restaurants/id881401",
+  "lunch": 15000,
+  "lunchType": "menu",
+  "lunchNote": "Cheapest lunch course (others up to ¥28,000)",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/id881401"
+}

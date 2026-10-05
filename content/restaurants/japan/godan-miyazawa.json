@@ -1,0 +1,16 @@
+{
+  "name": "Godan Miyazawa",
+  "city": "kyoto",
+  "address": "557 Oecho, Shimogyo-ku, 600-8402, Kyoto",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "rating": 4.6,
+  "reviews": 255,
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu; price still to be added",
+  "sourceType": "none",
+  "website": "https://jiki-miyazawa.com/",
+  "lat": 34.997973,
+  "lng": 135.760946,
+  "placeId": "ChIJ10-7uaIIAWARCARlHoPXgsU"
+}

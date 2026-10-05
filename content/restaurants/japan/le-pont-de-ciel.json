@@ -1,0 +1,23 @@
+{
+  "name": "LE PONT DE CIEL",
+  "city": "osaka",
+  "address": "B1F, Nihonseimei Yodoyabashi Bldg, 3-5-29 Kitahama, Chuo-ku, 540-0031, Osaka",
+  "stars": 1,
+  "cuisine": "French",
+  "rating": 4.5,
+  "reviews": 298,
+  "dinnerType": "menu",
+  "dinner": 22000,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://pont-de-ciel.co.jp/",
+  "lunch": 15400,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://pont-de-ciel.co.jp/",
+  "website": "https://pont-de-ciel.co.jp/",
+  "lat": 34.692109,
+  "lng": 135.50233,
+  "placeId": "ChIJT5BbLd_mAGARRXNK4edQb5I"
+}

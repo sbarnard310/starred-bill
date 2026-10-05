@@ -1,0 +1,18 @@
+{
+  "name": "SÉN",
+  "city": "nara",
+  "address": "267 Kawai, Tenkawamura, Yoshino-gun, 638-0301, Nara",
+  "stars": 1,
+  "cuisine": "Innovative",
+  "rating": 5,
+  "reviews": 13,
+  "dinnerType": "menu",
+  "dinner": 25000,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://sen-tenkawa.com/",
+  "website": "https://sen-tenkawa.com/",
+  "lat": 34.245224,
+  "lng": 135.856042,
+  "placeId": "ChIJEZBjg2HBBmAR8yy6aPAgmR4"
+}

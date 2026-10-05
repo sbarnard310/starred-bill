@@ -1,0 +1,85 @@
+/* Right-to-left pages (Arabic, for Qatar and the UAE). Loaded after site.css, only by pages that offer a right-to-left language
+   (RTL_LANGUAGES in build.py); every rule waits for <html dir="rtl">, which common.js sets when the visitor picks Arabic.
+   Flex and grid layouts flip by themselves; these rules mirror what site.css places by left and right.
+   When a site.css rule gains a left/right position, margin, padding, border or text-align, mirror it here too. */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;600&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap");
+
+/* Arabic letterforms. Latin names and figures keep Gloock, Figtree and IBM Plex Mono; Arabic letters fall through to Noto. */
+:lang(ar) {
+  --font-display: "Gloock", "Noto Naskh Arabic", "Geeza Pro", serif;
+  --font-body: "Figtree", "Noto Sans Arabic", "Geeza Pro", "Segoe UI", system-ui, sans-serif;
+  --font-num: "IBM Plex Mono", "Noto Sans Arabic", ui-monospace, monospace;
+}
+/* Arabic letters join up, so no letter-spacing, and it has no italics or capitals. Small labels get a little larger to stay legible. */
+[dir="rtl"] * { letter-spacing: 0 !important; }
+[dir="rtl"] .si-code input { letter-spacing: .25em !important; }
+[dir="rtl"] .row .chef-line, [dir="rtl"] .nr-chef { font-style: normal; }
+[dir="rtl"] .eyebrow, [dir="rtl"] .flabel, [dir="rtl"] .figure .label, [dir="rtl"] .row.head, [dir="rtl"] .explore-label,
+[dir="rtl"] .explore-more summary, [dir="rtl"] .explore-toggle { font-size: .8rem; }
+[dir="rtl"] .rc-head { font-size: .72rem; }
+[dir="rtl"] h1, [dir="rtl"] h2 { line-height: 1.35; }
+
+/* Search boxes: magnifier on the right, clear button on the left. */
+[dir="rtl"] .search svg { left: auto; right: 15px; }
+[dir="rtl"] .search input { padding: 13px 46px 13px 44px; }
+[dir="rtl"] .search-clear { right: auto; left: 8px; }
+[dir="rtl"] select { padding: 12px 14px 12px 36px; }
+
+/* Filters */
+[dir="rtl"] .fdrop-btn::after { margin-left: 0; margin-right: 2px; }
+[dir="rtl"] .fdrop-panel { left: auto; right: 0; }
+[dir="rtl"] .seg button + button { border-left: 0; border-right: 1px solid var(--line); }
+[dir="rtl"] .filter-group[data-group="diet"] .seg button + button { border-right: 0; }
+[dir="rtl"] .filter-group[data-group="diet"] .seg button .count { margin-left: 0; margin-right: auto; padding-left: 0; padding-right: 12px; }
+[dir="rtl"] .chip button .count { margin-left: 0; margin-right: 4px; }
+[dir="rtl"] .ftag { padding: 5px 12px 5px 10px; }
+[dir="rtl"] .sort-dir { margin-left: 0; margin-right: 2px; }
+@media (max-width: 720px) {
+  [dir="rtl"] .sheet-close { margin-right: 0; margin-left: -8px; }
+  [dir="rtl"] .filters-btn { margin-left: 0; margin-right: auto; }
+}
+
+/* The restaurant list */
+[dir="rtl"] .status-pill { margin-right: 0; margin-left: 6px; }
+[dir="rtl"] .diet-badge { padding: 1px 5px 1px 7px; }
+[dir="rtl"] .map { margin-left: 0; margin-right: 4px; }
+[dir="rtl"] .tag, [dir="rtl"] button.dest-open, [dir="rtl"] .near-list button, [dir="rtl"] .near-card { text-align: right; }
+[dir="rtl"] .price, [dir="rtl"] .tier dd { text-align: left; }
+[dir="rtl"] .notice { margin: 0 0 4px 6px; }
+[dir="rtl"] .tier .avg small { margin-left: 0; margin-right: 6px; }
+@media (max-width: 720px) {
+  [dir="rtl"] .row .rating-cell .note { margin-left: 0; margin-right: 6px; }
+  [dir="rtl"] .row .tag { text-align: right; }
+  [dir="rtl"] .mlabel { margin-right: 0; margin-left: 6px; }
+  [dir="rtl"] .sum-sub .notice, [dir="rtl"] .sum-sub .status-pill { margin: 0 0 0 6px; }
+  [dir="rtl"] .row.open:not(.former) > .rating-cell { text-align: right; }
+  [dir="rtl"] .acts-cell .been { padding: 3px 7px 3px 10px; }
+}
+
+/* The till receipt: the stub's perforated edge moves to the right, figures line up on the left. */
+[dir="rtl"] .stub { padding: 8px 18px 8px 12px; border-radius: 6px 3px 3px 6px; text-align: left;
+  -webkit-mask: radial-gradient(circle at 100% 50%, transparent 2.5px, #000 3px) 0 0 / 100% 8px repeat-y; mask: radial-gradient(circle at 100% 50%, transparent 2.5px, #000 3px) 0 0 / 100% 8px repeat-y; }
+[dir="rtl"] .stub::before { left: auto; right: 7px; border-left: 0; border-right: 2px dotted var(--rc-dots); }
+[dir="rtl"] .rc-v { text-align: left; }
+/* Prices and currency names ("US$") keep their own direction inside Arabic text. */
+[dir="rtl"] [data-currency], [dir="rtl"] .cur-sym, [dir="rtl"] .cur-pick select, [dir="rtl"] .cur-pick option { unicode-bidi: plaintext; }
+[dir="rtl"] .stub-price, [dir="rtl"] .rc-v, [dir="rtl"] .sum-price, [dir="rtl"] .price { unicode-bidi: isolate; }
+
+/* Header, bands and breadcrumbs */
+[dir="rtl"] .hseg > * + * { border-left: 0; border-right: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); }
+[dir="rtl"] .explore-label { margin-right: 0; margin-left: 4px; }
+[dir="rtl"] .prerender { padding: 16px 38px 16px 18px; }
+[dir="rtl"] .dest-more > summary::after { margin: -4px auto 0 0; }
+[dir="rtl"] .account-btn.signed-in { padding-left: 12px; padding-right: 6px; }
+
+/* Floating buttons, toasts and dialogs */
+[dir="rtl"] .toast { padding: 10px 16px 10px 12px; }
+[dir="rtl"] .jump-map { right: auto; left: 16px; padding: 0 14px 0 18px; }
+[dir="rtl"] .near-btn { padding: 0 11px 0 14px; }
+[dir="rtl"] .lightbox-close { right: auto; left: -14px; }
+@media (max-width: 720px) { [dir="rtl"] .lightbox-close { left: 6px; } }
+[dir="rtl"] .si-close { right: auto; left: 10px; }
+[dir="rtl"] .si-title { padding-right: 0; padding-left: 30px; }
+
+/* Phone rows: a Latin name (dir="auto" in place.js) is cut short at its own end, but still sits on the right. */
+[dir="rtl"] .sum-name { text-align: right; }

@@ -23,13 +23,14 @@ SITE_URL = "https://starredbill.com"
 PLACE_TYPES = ("country", "region", "city", "district", "group")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
 # Languages added from 5 Oct 2026 keep their words in src/assets/lang-<code>.js, loaded only by pages that offer them.
-LANG_FILES = ("zhs", "de", "nl", "pt", "nb", "fi", "pl", "cs", "hu", "sl", "hr", "sr", "el", "tr", "lt", "lv", "et", "mt", "ms", "fil", "vi")
+LANG_FILES = ("zhs", "de", "nl", "pt", "nb", "fi", "pl", "cs", "hu", "sl", "hr", "sr", "el", "tr", "lt", "lv", "et", "mt", "ms", "fil", "vi", "ar")
+RTL_LANGUAGES = ("ar",)  # right to left: their pages also load assets/rtl.css
 LANGUAGES = ("en", "zh", "yue", "fr", "ja", "es", "it", "ko", "da", "sv", "is", "ca", "th") + LANG_FILES
 LANG_SUFFIXES = ("Zh", "Yue", "Fr", "Ja", "Es", "It", "Ko", "Da", "Sv", "Is", "Ca", "Th") + tuple(c[0].upper() + c[1:] for c in LANG_FILES)  # e.g. nameZh, introYue, dinnerNoteFr, areaJa, statusNoteEs, nameZhs
 # How a place reads mid-sentence where a preposition in front of its name is enough ("in München", "em Lisboa", "tại Hà Nội").
 # Languages that decline names (Finnish "Helsingissä", Polish "w Warszawie"…) aren't listed: each place sets inSentence<Sfx> itself.
 IN_PREPOSITIONS = (("Da", "i"), ("Sv", "i"), ("Is", "í"), ("Ca", "a"), ("Th", "ใน"), ("De", "in"), ("Nl", "in"), ("Pt", "em"), ("Nb", "i"),
-                   ("Ms", "di"), ("Fil", "sa"), ("Vi", "tại"))
+                   ("Ms", "di"), ("Fil", "sa"), ("Vi", "tại"), ("Ar", "في"))
 DECLINED = ("Fi", "Pl", "Cs", "Hu", "Sl", "Hr", "Sr", "El", "Tr", "Lt", "Lv", "Et", "Mt")
 DEFAULT_LANGUAGES = ["en"]  # a country without `languages` (and the homepage, account and privacy pages) is English only
 PRICE_TYPES = ("menu", "main", "spend")
@@ -334,7 +335,7 @@ def search_example(rs, zh, field=None):
         if zh:
             area = area[len(r.get("cityNameZh", "")):] if area.startswith(r.get("cityNameZh") or "\0") else area
         else:
-            area = area.split(", ")[0]
+            area = re.split("[,،] ", area)[0]  # Arabic areas use the Arabic comma
         if area and area != (r.get("cityNameZh") if zh else r.get("cityName")):
             counts[area] = counts.get(area, 0) + 1
     return max(sorted(counts), key=counts.get) if counts else ""
@@ -446,6 +447,7 @@ def build_place(p):
         "searchExFr": search_example(starred, False, "areaFr"), "searchExJa": search_example(starred, False, "areaJa"),
         "searchExEs": search_example(starred, False, "areaEs"), "searchExIt": search_example(starred, False, "areaIt"),
         "searchExKo": search_example(starred, False, "areaKo"),
+        "searchExAr": search_example(starred, False, "areaAr"),
     })
     for field in PLACE_TEXTS:
         for suffix in ("",) + LANG_SUFFIXES:
@@ -472,6 +474,8 @@ def build_place(p):
         + (f" · dinner {money(r['dinner'], r['cur'])}" if r.get("dinner") is not None else "") + "</li>"
         for r in sorted(starred, key=lambda r: (-r["stars"], r["name"]))) + "</ol>"
     lang_scripts = "".join(f'<script src="/assets/lang-{c}.js?v={assets[f"lang-{c}.js"]}"></script>\n' for c in data["languages"] if c in LANG_FILES)
+    if set(data["languages"]) & set(RTL_LANGUAGES):
+        lang_scripts += f'<link rel="stylesheet" href="/assets/rtl.css?v={assets["rtl.css"]}">\n'
     write(p["path"], render("place.html", {
         "langScripts": lang_scripts,
         "title": e(f"The Starred Bill · {p['name']}"), "description": e(description), "canonical": SITE_URL + p["path"],
@@ -1038,7 +1042,7 @@ def build_service_worker():
         if f.is_file():
             digest.update(str(f.relative_to(OUT)).encode() + f.read_bytes())
     # Language files are left out: each is saved the first time a page that offers it is opened.
-    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [f"/assets/{name}?v={v}" for name, v in sorted(assets.items()) if not name.startswith("lang-")]
+    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [f"/assets/{name}?v={v}" for name, v in sorted(assets.items()) if not name.startswith("lang-") and name != "rtl.css"]
     sw = (SRC / "sw.js").read_text("utf-8").replace("{{version}}", digest.hexdigest()[:12]).replace("{{precache}}", json.dumps(precache))
     (OUT / "sw.js").write_text(sw, "utf-8")
 

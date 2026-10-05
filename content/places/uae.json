@@ -6,5 +6,14 @@
   "intro": "Prices are in UAE dirhams (AED), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026; where a restaurant's price isn't shown yet, it's still to be added.",
   "serviceText": "Every figure is for one guest. Menu prices in the UAE are often quoted before VAT, municipality fees and a service charge, which are added to the bill. Supplements such as caviar are left out. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website and menus; restaurants that don't publish them are still to be priced.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering United Arab Emirates."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering United Arab Emirates.",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "nameAr": "الإمارات العربية المتحدة",
+  "introAr": "الأسعار بالدرهم الإماراتي (AED)، مع خيار لعرضها بالجنيه الإسترليني أو اليورو أو الدولار الأمريكي. رُوجعت الأسعار في أكتوبر 2026، وحيث لا يظهر سعر مطعم بعد، فسيُضاف لاحقًا.",
+  "serviceTextAr": "كل المبالغ لضيف واحد. تُذكر أسعار القوائم في الإمارات غالبًا قبل ضريبة القيمة المضافة ورسوم البلدية ورسوم الخدمة، التي تُضاف إلى الفاتورة. الإضافات مثل الكافيار غير مشمولة. الأسعار المعروضة بعملات أخرى محسوبة بسعر صرف اليوم وهي تقريبية.",
+  "sourcesTextAr": "العشاء هو قائمة التذوق الرئيسية في المطعم، والنبيذ هو مرافقة النبيذ الخاصة بها حيث تُقدَّم. الأسعار من مواقع المطاعم وقوائمها، أما المطاعم التي لا تنشر أسعارها فستُضاف أسعارها لاحقًا.",
+  "starsTextAr": "تقييم Google (من 5) وعدد المراجعات، رُوجعا في أكتوبر 2026. النجوم من أحدث إصدار لدليل ميشلان في الإمارات العربية المتحدة."
 }

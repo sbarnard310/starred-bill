@@ -1777,8 +1777,12 @@ function setLang(lang) {
   store.set(LANG_KEY, LANG_PREF);
   const p = new URLSearchParams(location.search); p.set("lang", LANG_PREF);
   history.replaceState(null, "", location.pathname + "?" + p.toString() + location.hash);
-  document.documentElement.lang = LANGS[LANG].html;
+  setHtmlLang();
 }
+// Arabic (lang-ar.js) sets dir: "rtl", which flips the page; assets/rtl.css holds the mirrored styles.
+const rtl = () => LANGS[LANG].dir === "rtl";
+const fwdArrow = () => rtl() ? "←" : "→";
+function setHtmlLang() { document.documentElement.lang = LANGS[LANG].html; document.documentElement.dir = rtl() ? "rtl" : "ltr"; }
 const loadWishlist = () => { const wl = store.get(WISHLIST_KEY, []); return Array.isArray(wl) ? wl.filter((x) => typeof x === "string") : []; };
 // "Been there": restaurant id -> the date visited ("" when not given). Kept for signed-in people only (account.js).
 const VISITED_KEY = "starredbill-visited";
@@ -1894,7 +1898,7 @@ function langSwitchHtml() {
     '<button type="button" data-lang="' + k + '" aria-pressed="' + (k === LANG) + '" lang="' + LANGS[k].html + '">' + LANGS[k].label + "</button>").join("");
 }
 function applyI18n() {
-  document.documentElement.lang = LANGS[LANG].html;
+  setHtmlLang();
   document.querySelectorAll("[data-i18n]").forEach((el) => { el.innerHTML = t(el.dataset.i18n); });
   document.querySelectorAll(".search-clear").forEach((b) => { b.setAttribute("aria-label", t("clearSearch")); b.title = t("clearSearch"); });
   $("langSwitch").innerHTML = langSwitchHtml();
@@ -2008,7 +2012,7 @@ function addNearMe(map, points, { radius = Infinity, far = null } = {}) {
         '<li><button type="button" data-near="' + i + '"><span class="near-name">' + esc(x.name()) + " " + starIcons(x.stars) + '</span><span class="near-d">' +
         esc(t("nearAway", { d: distanceText(x.d) })) + "</span></button></li>").join("") + "</ol>"
       : '<p class="near-msg">' + esc(closest ? t("nearNone", { name: closest.name(), d: distanceText(closest.d) }) : t("mapNone")) +
-        (far ? ' <a href="' + esc(far) + '">' + esc(t("nearWorld")) + " →</a>" : "") + "</p>";
+        (far ? ' <a href="' + esc(far) + '">' + esc(t("nearWorld")) + " " + fwdArrow() + "</a>" : "") + "</p>";
     box.hidden = false;
   };
   box.addEventListener("click", (e) => {

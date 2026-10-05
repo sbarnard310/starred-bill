@@ -36,8 +36,10 @@ const approx = (r) => r ? r.cur !== state.currency : PAGE_CURRENCIES.some((c) =>
 function money(n, r) {
   if (n == null) return "";
   const sym = symbolOf(state.currency);
-  if (approx(r)) return "≈" + sym + Math.round(n).toLocaleString("en-GB");
-  return sym + n.toLocaleString("en-GB", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
+  // On right-to-left pages a price is wrapped in invisible left-to-right marks, so "≈£73" doesn't turn into "£73≈".
+  const ltr = (s) => rtl() ? "\u2066" + s + "\u2069" : s;
+  if (approx(r)) return ltr("≈" + sym + Math.round(n).toLocaleString("en-GB"));
+  return ltr(sym + n.toLocaleString("en-GB", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 }));
 }
 // Meal-aware accessors: the Dinner | Lunch switch decides which figures are shown.
 const L = () => state.meal === "lunch";
@@ -118,7 +120,7 @@ function applyStatic() {
   if (intro) $("heroText").innerHTML = t("heroText") + " " + esc(intro);
   if (EMPTY) {
     const up = PAGE.crumbs.slice().reverse().find((c) => c.n);
-    $("heroText").innerHTML = esc(t("emptyPlace")) + (up ? '<br><a class="empty-up" href="' + withLang(up.path) + '">' + esc(t("emptySee", { n: up.n, name: pick(up, "name") })) + " →</a>" : "");
+    $("heroText").innerHTML = esc(t("emptyPlace")) + (up ? '<br><a class="empty-up" href="' + withLang(up.path) + '">' + esc(t("emptySee", { n: up.n, name: pick(up, "name") })) + " " + fwdArrow() + "</a>" : "");
     document.querySelector('[data-i18n="compareTitle"]').textContent = t("formerTitle");
     document.querySelector('[data-i18n="compareText"]').textContent = t("formerNote");
   }
@@ -334,7 +336,7 @@ function summaryCell(r) {
     : '<span class="sum-stars">' + (r.change ? '<span class="chg-' + (r.change === "down" ? "down" : "up") + '" aria-hidden="true">' + (r.change === "down" ? "▼" : "▲") + "</span>" : "") + starIcons(r.stars) + "</span>" +
       '<span class="sum-price">' + priceHtml(priceOf(r), typeOf(r), r, L() && r.noLunch ? "noLunch" : "notListed") + "</span>";
   return '<span class="sum-cell" role="cell"><button type="button" class="sum" data-row="' + esc(r.id) + '" aria-expanded="' + (state.openRow === r.id) + '">' +
-    '<span class="sum-name">' + esc(nameOf(r)) + '</span><span class="sum-sub">' + sub + "</span>" + right + "</button></span>";
+    '<span class="sum-name" dir="auto">' + esc(nameOf(r)) + '</span><span class="sum-sub">' + sub + "</span>" + right + "</button></span>";
 }
 // Inside an opened row on phones: the cuisine (tap to show only that cuisine), Google Maps and "been there".
 const actsCell = (r) => '<span class="acts-cell" role="cell">' +

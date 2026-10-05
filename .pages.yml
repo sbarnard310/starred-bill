@@ -189,6 +189,10 @@ content:
         label: Area in Vietnamese
         description: Only for places offered in Vietnamese.
         type: string
+      - name: areaAr
+        label: Area in Arabic
+        description: Only for places offered in Arabic.
+        type: string
       - name: address
         label: Address
         description: Full address, also used for the Google Maps link.
@@ -384,6 +388,9 @@ content:
       - name: changeNoteVi
         label: Star change note in Vietnamese
         type: string
+      - name: changeNoteAr
+        label: Star change note in Arabic
+        type: string
       - name: changeDate
         label: Star change date
         description: Year and month of the Michelin Guide announcement, e.g. 2026-02.
@@ -513,6 +520,9 @@ content:
         type: string
       - name: dinnerNoteVi
         label: Dinner note in Vietnamese
+        type: string
+      - name: dinnerNoteAr
+        label: Dinner note in Arabic
         type: string
       - name: wine
         label: Wine pairing price (dinner)
@@ -647,6 +657,9 @@ content:
         type: string
       - name: lunchNoteVi
         label: Lunch note in Vietnamese
+        type: string
+      - name: lunchNoteAr
+        label: Lunch note in Arabic
         type: string
       - name: lunchWine
         label: Wine pairing price (lunch)
@@ -785,6 +798,9 @@ content:
         type: string
       - name: statusNoteVi
         label: Status note in Vietnamese
+        type: string
+      - name: statusNoteAr
+        label: Status note in Arabic
         type: string
       - name: website
         label: Website
@@ -943,6 +959,9 @@ content:
       - name: nameVi
         label: Name in Vietnamese
         type: string
+      - name: nameAr
+        label: Name in Arabic
+        type: string
       - name: languages
         label: Languages offered
         description: "The language buttons on this page and the pages inside it. Leave empty for English only. Otherwise English plus the main official language (e.g. French for France, German for Germany and Austria, Dutch for the Netherlands). Switzerland has German, French and Italian; Belgium Dutch and French; Luxembourg French and German; mainland China Simplified Chinese; Taiwan, Hong Kong and Macau Chinese (Hong Kong and Macau also Cantonese)."
@@ -984,6 +1003,7 @@ content:
             - { value: ms, label: "Bahasa Melayu (Malay)" }
             - { value: fil, label: "Filipino" }
             - { value: vi, label: "Tiếng Việt (Vietnamese)" }
+            - { value: ar, label: "العربية (Arabic, right to left)" }
       - name: parent
         label: Inside (regions, cities and districts)
         description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom. A district sits inside a city, e.g. Manhattan inside New York.
@@ -1136,6 +1156,10 @@ content:
         label: Name mid-sentence in Vietnamese
         description: With its preposition, e.g. "tại Hà Nội". Leave empty for "tại" + the Vietnamese name.
         type: string
+      - name: inSentenceAr
+        label: Name mid-sentence in Arabic
+        description: With its preposition, e.g. "في الدوحة". Leave empty for "في" + the Arabic name.
+        type: string
       - name: intro
         label: Introduction
         description: Extra sentence under the page title, e.g. which currency prices are in. Regions and cities use their country's unless they have their own.
@@ -1238,6 +1262,9 @@ content:
         type: text
       - name: introVi
         label: "Introduction (Vietnamese)"
+        type: text
+      - name: introAr
+        label: "Introduction (Arabic)"
         type: text
       - name: serviceText
         label: "Method: per person, before service"
@@ -1342,6 +1369,9 @@ content:
       - name: serviceTextVi
         label: "Method: per person, before service (Vietnamese)"
         type: text
+      - name: serviceTextAr
+        label: "Method: per person, before service (Arabic)"
+        type: text
       - name: sourcesText
         label: "Method: where prices come from"
         type: text
@@ -1443,6 +1473,9 @@ content:
         type: text
       - name: sourcesTextVi
         label: "Method: where prices come from (Vietnamese)"
+        type: text
+      - name: sourcesTextAr
+        label: "Method: where prices come from (Arabic)"
         type: text
       - name: starsText
         label: "Method: stars and Google rating"
@@ -1547,6 +1580,9 @@ content:
         type: text
       - name: starsTextVi
         label: "Method: stars and Google rating (Vietnamese)"
+        type: text
+      - name: starsTextAr
+        label: "Method: stars and Google rating (Arabic)"
         type: text
   - name: guides
     label: Guides

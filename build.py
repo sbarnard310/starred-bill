@@ -623,8 +623,12 @@ def page_titles(p, page, languages, starred):
         sfxs = [sfx, "Zh"] if sfx in ("Yue", "Zhs") else [sfx]
         name_of = lambda o: next((o["name" + s] for s in sfxs if s and o.get("name" + s)), o["name"])
         name, where = name_of(p), page.get("inSentence" + sfx) or page["inSentence"]
-        if country and name == p["name"] and (where == name or where.endswith(" " + name)):  # not "in Belgisch-Limburg"
-            where, name = f"{where} ({name_of(country)})", f"{name} ({name_of(country)})"
+        if country and name == p["name"]:
+            # Only where the place reads as its bare name ("Limburg", "in Limburg"), not "Belgian Limburg" or "in Belgisch-Limburg".
+            before = where[:-len(name)].strip() if where.endswith(name) else None
+            if before == "" or (before and lang != "en" and " " not in before):
+                where = f"{where} ({name_of(country)})"
+            name = f"{name} ({name_of(country)})"
         tail = (w["empty"] if not n else (w.get("allOne") if n == 1 else w["all"]) if priced == n else w["some"] if priced else
                 (w["none"] if n > 1 else ""))
         heads = [w.get("headOne", w["head"]) if n == 1 else w["head"]] + ([w["short"]] if w.get("short") else [])

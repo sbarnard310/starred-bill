@@ -104,6 +104,9 @@ function filtered() {
 }
 
 shareText = () => t("shareTextPlace");
+// Another destination's address in this page's language when it has one (/fr/france/lyon/), else its English one
+// (carrying the visitor's language, for pages further on that offer it).
+const placeHref = (p) => LANG !== "en" && (p.langs || []).includes(LANG) ? "/" + LANG + p.path : LANG_PREF === "en" ? p.path : withLang(p.path);
 
 // ---------- Static text, breadcrumbs and switches ----------
 function applyStatic() {
@@ -121,7 +124,7 @@ function applyStatic() {
   if (intro) $("heroText").innerHTML = t("heroText") + " " + esc(intro);
   if (EMPTY) {
     const up = PAGE.crumbs.slice().reverse().find((c) => c.n);
-    $("heroText").innerHTML = esc(t("emptyPlace")) + (up ? '<br><a class="empty-up" href="' + withLang(up.path) + '">' + esc(t("emptySee", { n: up.n, name: pick(up, "name") })) + " " + fwdArrow() + "</a>" : "");
+    $("heroText").innerHTML = esc(t("emptyPlace")) + (up ? '<br><a class="empty-up" href="' + placeHref(up) + '">' + esc(t("emptySee", { n: up.n, name: pick(up, "name") })) + " " + fwdArrow() + "</a>" : "");
     document.querySelector('[data-i18n="compareTitle"]').textContent = t("formerTitle");
     document.querySelector('[data-i18n="compareText"]').textContent = t("formerNote");
   }
@@ -142,13 +145,13 @@ function applyStatic() {
   $("currencySwitch").setAttribute("aria-label", t("currencyAria"));
   $("currencyPick").setAttribute("aria-label", t("currencyAria"));
   $("crumbs").innerHTML = '<a href="' + withLang("/") + '">' + t("crumbHome") + "</a>" +
-    PAGE.crumbs.map((c) => '<a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a>").join("") +
+    PAGE.crumbs.map((c) => '<a href="' + placeHref(c) + '">' + esc(pick(c, "name")) + "</a>").join("") +
     '<span aria-current="page">' + esc(pick(PAGE, "name")) + "</span>";
   // Places without stars yet sit in a fold, so long lists (e.g. England's counties) stay tidy.
   // Every other row shows its first few (the busiest, plus this page) and a "+ 6 more" button for the rest.
   const placeLink = (p, extra) => (p.current
     ? '<span class="place-link" aria-current="page">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></span>"
-    : '<a class="place-link' + (p.n ? "" : " zero") + (extra ? " extra" : "") + '" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>");
+    : '<a class="place-link' + (p.n ? "" : " zero") + (extra ? " extra" : "") + '" href="' + placeHref(p) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>");
   $("explore").innerHTML = PAGE.links.map((group, gi) => {
     if (group.more) return '<details class="explore-more"><summary>' + esc(t(group.label)) + ' <span class="count">' + group.items.length + "</span></summary>" +
       '<div class="explore-row">' + group.items.map((p) => placeLink(p)).join("") + "</div></details>";
@@ -703,7 +706,7 @@ document.addEventListener("click", (e) => {
   const el = e.target.closest("button");
   if (!el || el.closest("#photoBox")) return;
   if (el.dataset.lang) {
-    setLang(el.dataset.lang);
+    if (setLang(el.dataset.lang)) return;  // each language has its own address, which is now opening
     renderAll();
     if (mapState.map) { mapState.markers.forEach((m, id) => m.setTitle(nameOf(RESTAURANTS.find((r) => r.id === id)))); }
     if (mapState.near) mapState.near.relabel();

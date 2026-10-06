@@ -1742,6 +1742,9 @@ for (const [k, x] of Object.entries(LANG_FILES)) { LANGS[k] = x.lang; I18N[k] = 
 const DATA = JSON.parse(document.getElementById("page-data").textContent);
 // The languages this page offers (Hong Kong adds Cantonese, France adds French, Japan adds Japanese).
 const PAGE_LANGS = DATA.languages || ["en", "zh"];
+// Destination pages have an address per language (/france/paris/, /fr/france/paris/), so search engines can find each one:
+// DATA.langPaths lists them and DATA.lang says which this is. Other pages are English only and switch in place.
+const LANG_PATHS = DATA.langPaths || null;
 const params = new URLSearchParams(location.search);
 // The owner's own devices: open any page with ?notrack=1 once and this browser stops counting in Umami and Google Analytics
 // (?notrack=0 undoes it). "umami.disabled" is Umami's own switch; the rest of the site checks NOTRACK.
@@ -1761,8 +1764,11 @@ function browserLang() {
   if (loaded) return loaded;
   return b === "zh-hk" || b === "zh-mo" ? "yue" : b.startsWith("zh") ? "zh" : b.startsWith("fr") ? "fr" : b.startsWith("ja") ? "ja" : b.startsWith("es") ? "es" : b.startsWith("it") ? "it" : b.startsWith("ko") ? "ko" : b.startsWith("da") ? "da" : b.startsWith("sv") ? "sv" : b.startsWith("is") ? "is" : b.startsWith("ca") ? "ca" : b.startsWith("th") ? "th" : "en";
 }
-// The visitor's choice, kept across pages even where it isn't offered.
-let LANG_PREF = LANGS[params.get("lang")] ? params.get("lang") : store.get(LANG_KEY, browserLang());
+// The visitor's choice, kept across pages even where it isn't offered. Opening a page's French address counts as choosing French.
+const PARAM_LANG = LANGS[params.get("lang")] ? params.get("lang") : null;
+const ADDRESS_LANG = LANG_PATHS && DATA.lang !== "en" ? DATA.lang : null;
+let LANG_PREF = PARAM_LANG || ADDRESS_LANG || store.get(LANG_KEY, browserLang());
+if (PARAM_LANG || ADDRESS_LANG) store.set(LANG_KEY, LANG_PREF);
 // What this page shows: the choice if offered, any Chinese → the Chinese this page has, otherwise English.
 function resolveLang(pref) {
   if (PAGE_LANGS.includes(pref)) return pref;
@@ -1771,10 +1777,30 @@ function resolveLang(pref) {
   return "en";
 }
 let LANG = resolveLang(LANG_PREF);
+// The address of this page in another language, keeping any search or filters. English carries ?lang=en,
+// so a browser that can't save the choice isn't sent straight back to the language it guessed.
+function langUrl(lang) {
+  const q = new URLSearchParams(location.search);
+  if (lang === "en") q.set("lang", "en"); else q.delete("lang");
+  return LANG_PATHS[lang] + (q.toString() ? "?" + q : "") + location.hash;
+}
+// A visitor who reads another language this page offers goes to that version (search engines read English, so they stay).
+const LANG_MOVING = !!(LANG_PATHS && LANG !== DATA.lang && LANG_PATHS[LANG]);
+if (LANG_MOVING) location.replace(langUrl(LANG));
+else if (LANG_PATHS && params.has("lang")) {
+  // The address already says the language, so ?lang= comes out of it (and out of links shared from here).
+  const q = new URLSearchParams(location.search); q.delete("lang");
+  history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : "") + location.hash);
+}
+// Switching language: on a destination page this opens that language's address (returning true), elsewhere it switches in place.
 function setLang(lang) {
   LANG_PREF = lang;
   LANG = resolveLang(lang);
   store.set(LANG_KEY, LANG_PREF);
+  if (LANG_PATHS) {
+    if (LANG !== DATA.lang && LANG_PATHS[LANG]) { location.href = langUrl(LANG); return true; }
+    return false;
+  }
   const p = new URLSearchParams(location.search); p.set("lang", LANG_PREF);
   history.replaceState(null, "", location.pathname + "?" + p.toString() + location.hash);
   setHtmlLang();
@@ -2057,7 +2083,7 @@ function addNearMe(map, points, { radius = Infinity, far = null } = {}) {
 // (and the installed app) a button for the phone's own share sheet, which reaches Instagram, Messages and the rest.
 // The share sheet gets the link only, because some apps' Copy keeps just the text when both are given.
 let shareText = () => t("shareTextHome");
-let shareUrl = () => location.origin + location.pathname + (LANG_PREF !== "en" ? "?lang=" + LANG_PREF : "");
+let shareUrl = () => location.origin + location.pathname + (LANG_PREF !== "en" && !LANG_PATHS ? "?lang=" + LANG_PREF : "");
 function renderSharePanel() {
   const url = shareUrl(), text = shareText(), e = encodeURIComponent;
   const links = [["X", "https://x.com/intent/post?text=" + e(text) + "&url=" + e(url)],

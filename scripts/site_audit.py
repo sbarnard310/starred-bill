@@ -32,6 +32,7 @@ def page_checks(site):
 
     out = collections.defaultdict(list)
     titles, descs, sizes, broken = collections.defaultdict(list), collections.defaultdict(list), [], collections.Counter()
+    alternates, translated = {}, 0  # each page's language versions (hreflang), and how many pages aren't in English
     for p in sorted(S.rglob("index.html")):
         s = p.read_text("utf-8", errors="replace")
         if 'http-equiv="refresh"' in s:
@@ -59,6 +60,11 @@ def page_checks(site):
             out["description_too_short"].append(url)
         if 'rel="canonical"' not in s:
             out["no_canonical"].append(url)
+        m = re.search(r'<html lang="([^"]+)"', s)
+        translated += bool(m and not m.group(1).startswith("en"))
+        alts = dict(re.findall(r'<link rel="alternate" hreflang="([^"]+)" href="https://starredbill.com([^"]*)"', s))
+        if alts:
+            alternates[url] = alts
         if len(re.findall(r"<h1[\s>]", s)) != 1:
             out["not_one_h1"].append(url)
         for j in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
@@ -75,6 +81,16 @@ def page_checks(site):
             if not exists(h):
                 broken[h] += 1
                 out["broken_links"].append(f"{h} (on {url})")
+    # Language versions must each list all the others, including themselves, and point at pages that exist.
+    out.setdefault("hreflang_problems", [])
+    for url, alts in alternates.items():
+        if url not in alts.values():
+            out["hreflang_problems"].append(f"{url} doesn't list itself")
+        for lang, other in alts.items():
+            if not exists(other):
+                out["hreflang_problems"].append(f"{url} names {other} ({lang}), which doesn't exist")
+            elif lang != "x-default" and alternates.get(other) != alts:
+                out["hreflang_problems"].append(f"{url} and {other} ({lang}) list different versions")
     out["duplicate_titles"] = [f"{t} ({', '.join(u)})" for t, u in titles.items() if t and len(u) > 1]
     out["duplicate_descriptions"] = [", ".join(u[:3]) for d, u in descs.items() if d and len(u) > 1]
     sitemap = re.findall(r"<loc>https://starredbill.com(.*?)</loc>", (S / "sitemap.xml").read_text("utf-8"))
@@ -82,7 +98,7 @@ def page_checks(site):
     sizes.sort(reverse=True)
     heavy = [f"{u} ({b // 1024} KB)" for b, u in sizes if b > 500 * 1024]
     data = [f"{p.relative_to(S)} ({p.stat().st_size // 1024} KB)" for p in sorted((S / "data").glob("*.json")) if p.stat().st_size > 500 * 1024]
-    return dict(out), {"pages": len(sizes), "heavy_pages": heavy, "heavy_data": data,
+    return dict(out), {"pages": len(sizes), "translated_pages": translated, "heavy_pages": heavy, "heavy_data": data,
                        "median_page_kb": sizes[len(sizes) // 2][0] // 1024 if sizes else 0}
 
 

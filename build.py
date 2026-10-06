@@ -33,6 +33,10 @@ IN_PREPOSITIONS = (("Da", "i"), ("Sv", "i"), ("Is", "í"), ("Ca", "a"), ("Th", "
                    ("Ms", "di"), ("Fil", "sa"), ("Vi", "tại"), ("Ar", "في"))
 DECLINED = ("Fi", "Pl", "Cs", "Hu", "Sl", "Hr", "Sr", "El", "Tr", "Lt", "Lv", "Et", "Mt")
 DEFAULT_LANGUAGES = ["en"]  # a country without `languages` (and the homepage, account and privacy pages) is English only
+# Each language version of a destination page has its own address, e.g. /fr/france/paris/ (English keeps /france/paris/).
+# Search engines are told about the versions with hreflang codes: ISO 639-1, plus the script for Chinese (they don't know yue or fil).
+HREFLANG = {"zh": "zh-Hant", "yue": "zh-HK", "zhs": "zh-Hans", "fil": "tl"}
+CJK_NAMES = ("zh", "yue", "zhs", "ja", "ko")  # languages that use the place's name mid-sentence, without a preposition
 PRICE_TYPES = ("menu", "main", "spend")
 STATUSES = ("lost", "closed", "changed")
 CHANGES = ("new", "up", "down")
@@ -173,6 +177,9 @@ for pid, p in places.items():
             problem(f"places ({pid})", f"old address {old} is still in use by {paths.get(old) or redirects.get(old)}")
         else:
             redirects[old] = pid
+for pid, p in places.items():
+    if p["path"].split("/")[1] in LANGUAGES:
+        problem(f"places ({pid})", f"its address {p['path']} starts with a language code, which the translated pages use (e.g. /fr/france/)")
 # In languages that decline names, every place offering the language says how it reads mid-sentence (Polish "w Warszawie").
 for pid, p in places.items():
     for lang in inherited(p, "languages") or []:
@@ -467,31 +474,167 @@ def build_place(p):
     where = in_sentence(p)
     description = place_description(where, starred, stars, menus)
     intro = page["intro"]
-    crumb_html = '<a href="/">All destinations</a>' + "".join(f'<a href="{c["path"]}">{e(c["name"])}</a>' for c in crumbs) + \
-        f'<span aria-current="page">{e(p["name"])}</span>'
-    explore_html = "".join(
-        '<div class="explore-row">' + "".join(
-            f'<span class="place-link" aria-current="page">{e(i["name"])}</span>' if i["current"] else f'<a class="place-link" href="{i["path"]}">{e(i["name"])}</a>'
-            for i in row["items"]) + "</div>" for row in page["links"] if not row.get("more"))
-    ledger = '<ol class="prerender">' + "".join(
-        f"<li><strong>{e(r['name'])}</strong> · {r['stars']} Michelin star{'s' if r['stars'] > 1 else ''} · {e(r.get('cuisine', ''))} · {e(r.get('area') or r['cityName'])}"
-        + (f" · dinner {money(r['dinner'], r['cur'])}" if r.get("dinner") is not None else "") + "</li>"
-        for r in sorted(starred, key=lambda r: (-r["stars"], r["name"]))) + "</ol>"
-    lang_scripts = "".join(f'<script src="/assets/lang-{c}.js?v={assets[f"lang-{c}.js"]}"></script>\n' for c in data["languages"] if c in LANG_FILES)
-    if set(data["languages"]) & set(RTL_LANGUAGES):
+    langs = data["languages"]
+    lang_paths = {lang: lang_path(p["path"], lang) for lang in langs}
+    for item in page["crumbs"] + [i for row in page["links"] for i in row["items"]]:
+        item_langs = place_langs(places[paths[item["path"]]])
+        if len(item_langs) > 1:
+            item["langs"] = item_langs
+    lang_scripts = "".join(f'<script src="/assets/lang-{c}.js?v={assets[f"lang-{c}.js"]}"></script>\n' for c in langs if c in LANG_FILES)
+    if set(langs) & set(RTL_LANGUAGES):
         lang_scripts += f'<link rel="stylesheet" href="/assets/rtl.css?v={assets["rtl.css"]}">\n'
-    write(p["path"], render("place.html", {
-        "langScripts": lang_scripts,
-        "title": e(titles["en"]), "description": e(description), "canonical": SITE_URL + p["path"],
-        "eyebrow": e(f"{p['name']} · Michelin Guide restaurants"),
-        "h1": f"What a Michelin star <em>costs</em> in {e(where)}.",
-        "heroText": e((f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {where}, side by side." + (" " + intro if intro else ""))
-                      if starred else f"There are currently no restaurants with a Michelin star in {where}, but we'll update this page as soon as one appears."),
-        "crumbs": crumb_html, "explore": explore_html, "ledger": ledger, "data": as_json(data),
-        "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}"),
-        "jsonld": json_ld(p, crumbs, starred, description),
-    }))
+    # Every version names the others, so search engines show each visitor the one in their language (English for everyone else).
+    alternates = "".join(f'<link rel="alternate" hreflang="{HREFLANG.get(lang, lang)}" href="{SITE_URL}{lang_paths[lang]}">\n' for lang in langs) + \
+        f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{p["path"]}">\n' if len(langs) > 1 else ""
+    for lang in langs:
+        if lang == "en":
+            texts = {
+                "description": description, "h1": f"What a Michelin star <em>costs</em> in {e(where)}.",
+                "eyebrow": f"{p['name']} · Michelin Guide restaurants", "crumbHome": "All destinations",
+                "heroText": (f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {where}, side by side." + (" " + intro if intro else ""))
+                if starred else f"There are currently no restaurants with a Michelin star in {where}, but we'll update this page as soon as one appears.",
+            }
+        else:
+            texts = translated_texts(page, lang, starred)
+        name = lambda o, f="name": pick_lang(o, f, lang)
+        href = lambda c: lang_path(c["path"], lang) if lang in c.get("langs", ()) else c["path"]
+        crumb_html = f'<a href="/">{e(texts["crumbHome"])}</a>' + "".join(f'<a href="{href(c)}">{e(name(c))}</a>' for c in page["crumbs"]) + \
+            f'<span aria-current="page">{e(name(page))}</span>'
+        explore_html = "".join(
+            '<div class="explore-row">' + "".join(
+                f'<span class="place-link" aria-current="page">{e(name(i))}</span>' if i["current"] else f'<a class="place-link" href="{href(i)}">{e(name(i))}</a>'
+                for i in row["items"]) + "</div>" for row in page["links"] if not row.get("more"))
+        ledger = '<ol class="prerender">' + "".join(
+            f"<li><strong>{e(name(r))}</strong> · "
+            + (f"{r['stars']} Michelin star{'s' if r['stars'] > 1 else ''}" if lang == "en" else "★" * r["stars"])
+            + f" · {e(cuisine_in(r, lang))} · {e(name(r, 'area') or name(r, 'cityName'))}"
+            + (f" · {'dinner ' if lang == 'en' else ''}{money(r['dinner'], r['cur'])}" if r.get("dinner") is not None else "") + "</li>"
+            for r in sorted(starred, key=lambda r: (-r["stars"], r["name"]))) + "</ol>"
+        version = dict(data, lang=lang, langPaths=lang_paths) if len(langs) > 1 else data
+        write(lang_paths[lang], render("place.html", {
+            "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
+            "title": e(titles[lang]), "description": e(texts["description"]), "canonical": SITE_URL + lang_paths[lang],
+            "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
+            "crumbs": crumb_html, "explore": explore_html, "ledger": ledger, "data": as_json(version),
+            "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
+            "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts),
+        }))
 
+
+def lang_path(path, lang):
+    """A destination page's address in a language: English keeps /france/paris/, French is /fr/france/paris/."""
+    return path if lang == "en" else f"/{lang}{path}"
+
+
+def place_langs(p):
+    return inherited(p, "languages") or DEFAULT_LANGUAGES
+
+
+def plain(text):
+    return html.unescape(re.sub(r"<[^>]+>", "", text))
+
+
+def pick_lang(o, field, lang):
+    """A field in a language when it's there, like pick() in common.js: nameFr in French, nameYue then nameZh in Cantonese."""
+    for sfx in (("Yue", "Zh") if lang == "yue" else () if lang == "en" else (lang[0].upper() + lang[1:],)):
+        if o.get(field + sfx):
+            return o[field + sfx]
+    return o.get(field) or ""
+
+
+def read_words():
+    """The words the build writes into translated pages (title, heading, intro, breadcrumb), and each language's lang
+    attribute and cuisine names, read from the same dictionaries the pages use: common.js and each lang-<code>.js."""
+    keys = "heroEyebrow|heroTitle|heroText|emptyPlace|crumbHome"
+    def found(text):
+        out = {}
+        for m in re.finditer(r"\b(" + keys + r'): ("(?:[^"\\]|\\.)*")', text):
+            out.setdefault(m.group(1), json.loads(m.group(2).replace("\\'", "'")))
+        return out
+    words, attrs, cuisines = {}, {}, {}
+    js = (SRC / "assets" / "common.js").read_text("utf-8")
+    body = js[js.index("const I18N = {"):]
+    body = body[:re.search(r"^};", body, re.M).start()]
+    blocks = re.split(r"^  (\w+): \{$", body, flags=re.M)
+    for lang, text in zip(blocks[1::2], blocks[2::2]):
+        words[lang] = found(text)
+    for m in re.finditer(r'^  (\w+): \{ label: "[^"]*", html: "([^"]+)"', js, re.M):
+        attrs[m.group(1)] = (m.group(2), "")
+    for code in LANG_FILES:
+        text = (SRC / "assets" / f"lang-{code}.js").read_text("utf-8")
+        words[code] = found(text[text.index("words: {"):])
+        m = re.search(r'lang: \{[^}]*html: "([^"]+)"(?:, dir: "(\w+)")?', text)
+        attrs[code] = (m.group(1), m.group(2) or "")
+    # Cuisine names: CUISINE_FR etc. in common.js (CUISINES says which language uses which), `cuisines` in each lang-<code>.js.
+    pairs = lambda text: dict(re.findall(r'"([^"]+)": "([^"]*)"', text))
+    for lang, const in re.findall(r"(\w+): (CUISINE_[A-Z]+)", js[js.index("const CUISINES = {"):].split("\n")[0]):
+        block = js[js.index(f"const {const} = {{"):]
+        cuisines[lang] = pairs(block[:block.index("};")])
+    for code in LANG_FILES:
+        text = (SRC / "assets" / f"lang-{code}.js").read_text("utf-8")
+        block = text[text.index("cuisines: {"):]
+        cuisines[code] = pairs(block[:block.index("}")])
+    for lang in LANGUAGES:
+        missing = [k for k in keys.split("|") if k not in words.get(lang, {}) and not (lang == "yue" and k in words["zh"])]
+        if missing or lang not in attrs:
+            print(f"  Language {lang}: {', '.join(missing) or 'its LANGS entry'} not found for its pages' own addresses, so English is used")
+    return words, attrs, cuisines
+
+
+WORDS, HTML_LANG, CUISINE_NAMES = read_words()
+
+
+def html_attrs(lang):
+    code, direction = HTML_LANG.get(lang, ("en-GB", ""))
+    return f'lang="{code}"' + (f' dir="{direction}"' if direction else "")
+
+
+def word(lang, key, values):
+    """One of the pages' own phrases in a language, like t() in common.js (Cantonese falls back to Chinese, others to English)."""
+    text = WORDS.get(lang, {}).get(key) or (WORDS["zh"].get(key) if lang == "yue" else None) or WORDS["en"][key]
+    return re.sub(r"\{(\w+)\}", lambda m: values.get(m.group(1), m.group(0)), text)
+
+
+def sentences(text):
+    """Text split into sentences, not at short abbreviations (Danish "pr. person", German "z. B.")."""
+    out, start = [], 0
+    for m in re.finditer(r"[.!?؟](?=\s|$)|[。！？]", text or ""):
+        if m.group(0) == "." and re.search(r"(?:^|[\s(])[a-zæøåäöüß]{1,3}$", text[start:m.start()]):
+            continue
+        out.append(text[start:m.end()].strip())
+        start = m.end()
+    return [x for x in out + [(text or "")[start:].strip()] if x]
+
+
+def cuisine_in(r, lang):
+    """A restaurant's cuisine in a language, like cuisineOf() in common.js."""
+    own = pick_lang(r, "cuisine", lang)
+    return own if own != r.get("cuisine") else CUISINE_NAMES.get(lang, {}).get(own, own)
+
+
+def translated_texts(page, lang, starred):
+    """The heading, intro and description of a destination page in another language, for its own address (page_titles() writes its title)."""
+    place = pick_lang(page, "name", lang)
+    place_in = place if lang in CJK_NAMES else page.get("inSentence" + lang[0].upper() + lang[1:]) or page["inSentence"]
+    values = {"place": place, "placeIn": place_in}
+    h1 = word(lang, "heroTitle", {k: e(v) for k, v in values.items()})
+    intro = pick_lang(page, "intro", lang)
+    if starred:
+        hero = word(lang, "heroText", values)
+        text = hero + (" " + intro if intro else "")
+        # The opening sentence, then as many of the place's own sentences as fit.
+        description = sentences(hero)[0]
+        for more in sentences(intro):
+            if len(description) + len(more) + 1 > 155:
+                break
+            description += ("" if lang in CJK_NAMES else " ") + more
+    else:
+        text = description = word(lang, "emptyPlace", values)
+    if len(description) > 155:
+        cut = description[:154]
+        description = (cut[:cut.rfind(" ")] if cut.rfind(" ") > 100 else cut).rstrip(",.;:、，") + "…"
+    return {"description": description, "h1": h1, "eyebrow": word(lang, "heroEyebrow", values),
+            "heroText": text, "crumbHome": word(lang, "crumbHome", values)}
 
 def place_description(where, starred, stars, menus):
     """The page's search-result snippet: the fullest wording that fits in 155 characters, as Google cuts off longer ones."""
@@ -643,10 +786,13 @@ def page_titles(p, page, languages, starred):
     return titles
 
 
-def json_ld(p, crumbs, starred, description):
+def json_ld(p, crumbs, starred, description, lang="en", texts=None):
     """Structured data for search engines: the breadcrumb trail, and the starred restaurants as a list.
-    Google ratings are deliberately left out (Google doesn't allow ratings copied from elsewhere)."""
-    trail = [{"name": "All destinations", "path": "/"}] + [{"name": c["name"], "path": c["path"]} for c in crumbs] + [{"name": p["name"], "path": p["path"]}]
+    Google ratings are deliberately left out (Google doesn't allow ratings copied from elsewhere).
+    A translated page names its trail in its language and links to the same language where the page above offers it."""
+    at = lambda c: lang_path(c["path"], lang) if lang in place_langs(c) else c["path"]
+    trail = [{"name": texts["crumbHome"] if texts else "All destinations", "path": "/"}] + \
+        [{"name": pick_lang(c, "name", lang), "path": at(c)} for c in crumbs + [p]]
     graph = [{"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": c["name"], "item": SITE_URL + c["path"]} for i, c in enumerate(trail)]}]
     if starred:
@@ -663,7 +809,7 @@ def json_ld(p, crumbs, starred, description):
             if r.get("dinner") is not None and r.get("dinnerType") == "menu":
                 item["priceRange"] = f"Tasting menu {money(r['dinner'], r['cur'])}"
             items.append({"@type": "ListItem", "position": i + 1, "item": {k: v for k, v in item.items() if v}})
-        graph.append({"@type": "ItemList", "name": f"Michelin-starred restaurants in {in_sentence(p)}", "description": description,
+        graph.append({"@type": "ItemList", "name": f"Michelin-starred restaurants in {in_sentence(p)}" if lang == "en" else plain(texts["h1"]), "description": description,
                       "numberOfItems": len(items), "itemListElement": items})
     return '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>"
 
@@ -999,33 +1145,6 @@ def build_pick(near_url):
         "lede": e(lede), "static": static,
         "data": as_json({"currencies": CURRENCIES, "switchable": currency_data.get("switchable", ["GBP", "EUR", "USD"]),
                          "languages": DEFAULT_LANGUAGES, "spots": spots, "popular": popular, "nearUrl": near_url}),
-    }))
-
-
-def build_compare(starred):
-    """/compare/: up to three restaurants from the visitor's wishlist as till receipts side by side, in one currency.
-    The prices come from /data/compare.json, one compact row per starred restaurant (columns listed in the file).
-    The page is personal (it reads the wishlist in the browser), so it stays out of search engines and the sitemap."""
-    cols = ["id", "name", "stars", "cuisine", "where", "path", "country", "cur", "dinner", "dinnerType", "dinnerNote", "lunch", "lunchType",
-            "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice"]
-    rows = [[r["id"], r["name"], r["stars"], r.get("cuisine", ""), near_where(r), r["cityPath"], r["country"], r["cur"],
-             r.get("dinner"), r.get("dinnerType", "menu"), r.get("dinnerNote", ""), r.get("lunch"), r.get("lunchType", "menu"),
-             r.get("lunchNote", ""), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"),
-             r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0]
-            for r in starred]
-    body = as_json({"cols": cols, "r": rows}).encode("utf-8")
-    (OUT / "data" / "compare.json").write_bytes(body)
-    lede = ("Tick two or three restaurants from your wishlist to see their bills side by side: dinner, lunch and the wine pairing, "
-            "all in the currency you choose.")
-    write("/compare/", render("compare.html", {
-        "title": "Compare your saved restaurants · The Starred Bill",
-        "description": e("Compare Michelin-starred restaurants from your wishlist side by side: dinner, lunch and wine pairing prices in one currency."),
-        "canonical": SITE_URL + "/compare/", "htmlLang": "en", "ogType": "website", "ogAlt": "Compare Michelin-starred restaurants side by side",
-        "crumbs": '<a href="/">All destinations</a><span aria-current="page">Compare</span>',
-        "lede": e(lede),
-        "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "switchable": currency_data.get("switchable", []),
-                         "rateDate": currency_data.get("rateDate"),
-                         "compareUrl": f"/data/compare.json?v={hashlib.sha1(body).hexdigest()[:10]}"}),
     }))
 
 
@@ -1410,7 +1529,7 @@ def build_extras():
         shutil.copytree(SRC / "og", OUT / "og")
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
-    urls = ["/", "/near-me/", "/pick/"] + [p["path"] for p in by_size(pages)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + ["/privacy/"]
+    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) for lang in place_langs(p)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + ["/privacy/"]
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{SITE_URL}{u}</loc></url>\n" for u in urls) + "</urlset>\n", "utf-8")

@@ -12,6 +12,7 @@
   "dinner": 255,
   "dinnerType": "menu",
   "dinnerNote": "Essential menu, 7 courses (3 courses $175)",
+  "wine": 170,
   "sourceType": "press",
   "source": "https://shaneasavours.com/essential-by-christophe-new-york/",
   "noLunch": true,

@@ -13,6 +13,7 @@
   "dinner": 250,
   "dinnerType": "menu",
   "dinnerNote": "Menu Prestige (Dégustation €175)",
+  "wine": 75,
   "dinnerNoteFr": "Menu Prestige (Dégustation 175 €)",
   "sourceType": "site",
   "source": "https://www.archeste.fr/",

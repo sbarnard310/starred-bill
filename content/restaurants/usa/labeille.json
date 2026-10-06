@@ -12,6 +12,7 @@
   "dinner": 255,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu (shorter menu $190)",
+  "wine": 235,
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/new-york/reviews/labeille",
   "noLunch": true,

@@ -10,6 +10,7 @@
   "dinner": 150,
   "dinnerType": "menu",
   "dinnerNote": "Menu in 6 courses (4 courses £120)",
+  "wine": 95,
   "sourceType": "site",
   "source": "https://www.exclusive.co.uk/bybrook/",
   "noLunch": true,

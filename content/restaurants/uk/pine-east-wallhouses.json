@@ -15,6 +15,7 @@
   "lunch": 120,
   "lunchType": "menu",
   "lunchNote": "Lunch menu",
+  "lunchWine": 70,
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantpine.co.uk/restaurant",
   "website": "https://www.restaurantpine.co.uk/restaurant",

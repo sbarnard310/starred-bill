@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 543,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu (other menus from CHF 115)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/schweiz/cheseaux-noreaz/la-table-de-mary/",
   "website": "https://www.latabledemary.ch/",
   "lat": 46.7805014,
   "lng": 6.6677225,
@@ -18,10 +20,10 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 115)",
   "cuisineDe": "Französisch-klassisch",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 115)",
   "cuisineFr": "Cuisine française classique",
-  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 115)",
   "cuisineIt": "Francese classica"
 }

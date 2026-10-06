@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 65,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 215,
+  "dinnerNote": "Tasting menu (other menus from €150)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/fiss/schlosshotel-fiss-beef-club/",
   "notice": "Temporarily closed (Google)",
   "website": "https://www.schlosshotel-fiss.com/de/gourmet/beef-club/",
   "lat": 47.0552532,
@@ -18,6 +20,6 @@
   "michelinId": "1212340",
   "chef": "Klaus Kneringer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 150 €)",
   "cuisineDe": "Moderne Küche"
 }

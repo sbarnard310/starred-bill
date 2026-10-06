@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 157,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €140)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/würzburg/kuno-1408-ff",
   "website": "https://www.restaurant-kuno.de/main/index.php",
   "lat": 49.7904688,
   "lng": 9.9305144,
@@ -20,6 +22,6 @@
   ],
   "chef": "Robin Hofmann and Patrick Grieshaber",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
   "cuisineDe": "Kreativ"
 }

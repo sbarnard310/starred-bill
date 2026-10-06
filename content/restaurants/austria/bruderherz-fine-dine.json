@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 28,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/fiss/bruderherz-fine-dine/",
   "website": "https://www.bruderherzfinedine.at",
   "lat": 47.0533247,
   "lng": 10.6233813,
@@ -21,6 +23,6 @@
   ],
   "chef": "Christian Marent",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ"
 }

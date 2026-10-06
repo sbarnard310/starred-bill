@@ -8,8 +8,10 @@
   "rating": 5,
   "reviews": 10,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/birkweiler/schockes-küche-37",
   "website": "https://schockes-laurentiushof.de/",
   "lat": 49.204023,
   "lng": 8.0346581,
@@ -19,6 +21,6 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
   "cuisineDe": "Moderne Küche"
 }

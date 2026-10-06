@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 637,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 161,
+  "dinnerNote": "Tasting menu (other menus from €139)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/linz/restaurant-verdi/",
   "website": "https://verdi.at/restaurant/",
   "lat": 48.3417578,
   "lng": 14.2711746,
@@ -18,7 +20,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 139 €)",
   "chef": "Erich Lukas",
   "chefSource": "press"
 }

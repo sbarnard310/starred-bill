@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 243,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 178,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/weißenbrunn/gasthof-alex-42",
   "website": "https://www.gasthofalex.de/",
   "lat": 50.188066,
   "lng": 11.4062317,
@@ -17,6 +19,6 @@
   "michelinId": "1198697",
   "chef": "Domenik Alex",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Marktküche"
 }

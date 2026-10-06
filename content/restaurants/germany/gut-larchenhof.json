@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 258,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 199,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/pulheim/gut-lärchenhof-57",
   "website": "https://restaurant-gutlaerchenhof.de/",
   "lat": 51.0362026,
   "lng": 6.7865908,
@@ -21,6 +23,6 @@
   ],
   "chef": "Torben Schuster",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Französisch-modern"
 }

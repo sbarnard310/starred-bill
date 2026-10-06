@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 317,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 295,
+  "dinnerNote": "Tasting menu (other menus from €195)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/muenchen/atelier-5a",
   "website": "https://www.bayerischerhof.de/de/",
   "lat": 48.140707,
   "lng": 11.5737529,
@@ -20,6 +22,6 @@
   ],
   "chef": "Kevin Romes",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 195 €)",
   "cuisineDe": "Moderne Küche"
 }

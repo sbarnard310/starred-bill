@@ -7,8 +7,10 @@
   "rating": 4.9,
   "reviews": 126,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu (other menus from €190)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/nürnberg/tisane-7c",
   "website": "https://restaurant-tisane.de/",
   "lat": 49.4540833,
   "lng": 11.0758388,
@@ -20,6 +22,6 @@
   ],
   "chef": "René Stein",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 190 €)",
   "cuisineDe": "Moderne Küche"
 }

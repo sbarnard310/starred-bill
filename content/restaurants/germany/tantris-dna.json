@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 155,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/münchen/tantris-dna-7b",
   "website": "https://tantris.de/",
   "lat": 48.1697555,
   "lng": 11.5882597,
@@ -19,6 +21,6 @@
   ],
   "chef": "Benjamin Chmura",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Französisch-klassisch"
 }

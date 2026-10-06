@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 40,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 220,
+  "dinnerNote": "Tasting menu (other menus from €190)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/soelden/oetztaler-stube/",
   "notice": "Temporarily closed (Google)",
   "website": "https://www.central-soelden.com/kulinarik/gourmet-und-wein/oetztaler-stube.html",
   "lat": 46.9668234,
@@ -21,6 +23,6 @@
   ],
   "chef": "Stefan Speiser",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 190 €)",
   "cuisineDe": "Moderne Küche"
 }

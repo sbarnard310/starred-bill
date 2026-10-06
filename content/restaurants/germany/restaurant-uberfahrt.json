@@ -8,8 +8,10 @@
   "rating": 4.3,
   "reviews": 91,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/deutschland/rottach-egern/restaurant-ueberfahrt/",
   "website": "https://www.althoffcollection.com/de/althoff-seehotel-ueberfahrt/restaurant-ueberfahrt",
   "lat": 47.6966645,
   "lng": 11.7581005,
@@ -22,6 +24,6 @@
   ],
   "chef": "Christian Jürgens",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
   "cuisineDe": "Klassische Küche"
 }

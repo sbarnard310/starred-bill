@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 413,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 260,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/köln/la-cuisine-rademacher-57",
   "website": "https://la-cuisine-koeln.de/",
   "lat": 50.9803037,
   "lng": 7.0689759,
@@ -20,6 +22,6 @@
   ],
   "chef": "Marlon Rademacher",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "cuisineDe": "Französisch-modern"
 }

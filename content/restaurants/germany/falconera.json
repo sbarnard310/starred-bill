@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 257,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu (other menus from €69)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/Öhningen/falconera-ce",
   "lunch": 79,
   "lunchType": "menu",
   "lunchNote": "Lunch menu",
@@ -27,7 +29,7 @@
   ],
   "chef": "Johannes Wuhrer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 69 €)",
   "cuisineDe": "Französisch-klassisch",
   "lunchNoteDe": "Mittagsmenü"
 }

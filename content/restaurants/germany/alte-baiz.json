@@ -8,13 +8,15 @@
   "rating": 4.8,
   "reviews": 14,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 174,
+  "dinnerNote": "Tasting menu (other menus from €154)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/deutschland/neuhausen/alte-baiz-im-gruener-wald/",
   "website": "https://www.gruenerwald.de",
   "lat": 48.8182484,
   "lng": 8.7698838,
   "placeId": "ChIJ0yb6Sphvl0cRYA6Af3iNR4Y",
   "michelinId": "1186043",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 154 €)",
   "cuisineDe": "Moderne Küche"
 }

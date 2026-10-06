@@ -12,8 +12,10 @@
   "rating": 4.6,
   "reviews": 33,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 265,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/waidhofen-an-der-thaya-land/restaurant-zimmerl/",
   "website": "https://www.restaurantzimmerl.at/",
   "lat": 48.8178576,
   "lng": 15.2788907,
@@ -21,6 +23,6 @@
   "michelinId": "1242840",
   "chef": "Bernhard Zimmerl",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ"
 }

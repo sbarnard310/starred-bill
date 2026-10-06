@@ -7,8 +7,15 @@
   "rating": 4.7,
   "reviews": 487,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu (other menus from €180)",
+  "sourceType": "site",
+  "source": "https://essigbraetlein.de/abend/",
+  "lunch": 130,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://essigbraetlein.de/mittag/",
   "website": "https://essigbraetlein.de/",
   "lat": 49.455062,
   "lng": 11.0748188,
@@ -21,6 +28,7 @@
   ],
   "chef": "Andree Köthe",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Innovativ"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 180 €)",
+  "cuisineDe": "Innovativ",
+  "lunchNoteDe": "Mittagsmenü"
 }

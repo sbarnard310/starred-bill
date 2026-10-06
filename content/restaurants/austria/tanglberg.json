@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 170,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 178,
+  "dinnerNote": "Tasting menu (other menus from €148)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/vorchdorf/restaurant-tanglberg/",
   "website": "https://www.tanglberg.at/",
   "lat": 48.0033128,
   "lng": 13.9235021,
@@ -20,6 +22,6 @@
   ],
   "chef": "Maximilian Schellerer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 148 €)",
   "cuisineDe": "Französisch"
 }

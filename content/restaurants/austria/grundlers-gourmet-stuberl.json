@@ -6,8 +6,10 @@
   "stars": 1,
   "cuisine": "Classic Cuisine",
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu (other menus from €160)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/achenkirch/gruendlers-gourmet-stueberl/",
   "website": "https://www.kulinarikhotel-alpin.at/gourmet-stueberl/",
   "lat": 47.5088961,
   "lng": 11.7040198,
@@ -18,6 +20,6 @@
   ],
   "chef": "Alexander Gründler",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 160 €)",
   "cuisineDe": "Klassische Küche"
 }

@@ -7,8 +7,16 @@
   "rating": 4.8,
   "reviews": 434,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 199,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "wine": 72,
+  "sourceType": "site",
+  "source": "https://www.esszimmer.com/",
+  "lunch": 72,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.esszimmer.com/",
   "website": "https://www.esszimmer.com/",
   "lat": 47.8066955,
   "lng": 13.0341933,
@@ -19,6 +27,7 @@
   ],
   "chef": "Andreas Kaiblinger",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Kreativ"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
+  "cuisineDe": "Kreativ",
+  "lunchNoteDe": "Mittagsmenü"
 }

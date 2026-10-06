@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 180,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 169,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/düsseldorf/jae-ea",
   "website": "https://jae-restaurant.de/",
   "lat": 51.2111461,
   "lng": 6.7842633,
@@ -18,5 +20,5 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt"
+  "dinnerNoteDe": "Degustationsmenü"
 }

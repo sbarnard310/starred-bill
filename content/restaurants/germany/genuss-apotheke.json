@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 217,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 188,
+  "dinnerNote": "Tasting menu (other menus from €89)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/bad-säckingen/genuss-apotheke-c2",
   "website": "https://www.genuss-apotheke.de",
   "lat": 47.551733,
   "lng": 7.9480494,
@@ -21,6 +23,6 @@
   ],
   "chef": "Raimar Pilz",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 89 €)",
   "cuisineDe": "Kreativ"
 }

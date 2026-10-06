@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 58,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 198,
+  "dinnerNote": "Tasting menu (other menus from €170)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/bad-kötzting/leos-by-stephan-brandl-6f",
   "website": "https://www.bayerwaldhof.de/",
   "lat": 49.215674,
   "lng": 12.829522,
@@ -20,6 +22,6 @@
   ],
   "chef": "Stephan Brandl",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 170 €)",
   "cuisineDe": "Klassische Küche"
 }

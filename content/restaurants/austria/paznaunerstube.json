@@ -8,8 +8,10 @@
   "rating": 5,
   "reviews": 23,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 295,
+  "dinnerNote": "Tasting menu (other menus from €180)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/ischgl/paznaunerstube/",
   "notice": "Temporarily closed (Google)",
   "website": "https://www.trofana-royal.at/gourmet/die-paznaunerstube/",
   "lat": 47.0086422,
@@ -22,6 +24,6 @@
   ],
   "chef": "Martin Sieberer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 180 €)",
   "cuisineDe": "Modern"
 }

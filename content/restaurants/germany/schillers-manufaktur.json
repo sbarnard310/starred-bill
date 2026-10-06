@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 27,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu (other menus from €145)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/deutschland/koblenz/schillers-manufaktur/",
   "website": "https://www.hotel-stein.de",
   "lat": 50.3693993,
   "lng": 7.5814339,
@@ -22,6 +24,6 @@
   ],
   "chef": "Mike Schiller",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 145 €)",
   "cuisineDe": "Klassische Küche"
 }

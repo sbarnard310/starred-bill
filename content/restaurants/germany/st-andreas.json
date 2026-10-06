@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 37,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €165)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/aue/st.-andreas-03",
   "website": "https://www.hotel-blauerengel.de",
   "lat": 50.5865356,
   "lng": 12.7014864,
@@ -18,7 +20,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
   "cuisineDe": "Moderne Küche",
   "areaDe": "Aue",
   "chef": "Benjamin Unger",

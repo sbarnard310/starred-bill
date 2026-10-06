@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 644,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €89)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/deutschland/noerdlingen/meyers-keller-jockl-kaiser/",
   "website": "https://jockl-kaiser.de/",
   "lat": 48.8413149,
   "lng": 10.493869,
@@ -19,7 +21,7 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 89 €)",
   "cuisineDe": "Marktküche",
   "chef": "Joachim Kaiser",
   "chefSource": "press"

@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 223,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 177,
+  "dinnerNote": "Tasting menu (other menus from €105)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/münster/bok-restaurant-ab",
   "website": "https://www.brustoderkeule.de/",
   "lat": 51.9719525,
   "lng": 7.6191805,
@@ -21,6 +23,6 @@
   ],
   "chef": "Johannes Kemper",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 105 €)",
   "cuisineDe": "Kreativ"
 }

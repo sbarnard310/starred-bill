@@ -8,8 +8,10 @@
   "rating": 5,
   "reviews": 24,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €88)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/st-anton-am-arlberg/alpin-gourmet-stube/",
   "website": "https://www.hotel-gletscherblick.at/de/genuss/alpin-gourmet-stube/",
   "lat": 47.1407338,
   "lng": 10.2830469,
@@ -20,6 +22,6 @@
   ],
   "chef": "Paul Markovics",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 88 €)",
   "cuisineDe": "Moderne Küche"
 }

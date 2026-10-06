@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 617,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 158,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "wine": 79,
+  "sourceType": "site",
+  "source": "https://www2.obauer.com/cms/uploads/Speisekarte/Speisekarte_Deutsch.pdf",
   "website": "https://obauer.com/",
   "lat": 47.4755112,
   "lng": 13.1902449,
@@ -19,7 +22,7 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "cuisineDe": "Klassische Küche",
   "chef": "Karl and Rudolf Obauer",
   "chefSource": "press"

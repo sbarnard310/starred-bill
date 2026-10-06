@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 287,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 222,
+  "dinnerNote": "Tasting menu (other menus from €185)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/deutschland/aachen/restaurant-st-benedikt/",
   "website": "https://stbenedikt.de/",
   "lat": 50.7283878,
   "lng": 6.1833687,
@@ -21,6 +23,6 @@
   ],
   "chef": "Maximilian Kreus",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 185 €)",
   "cuisineDe": "Kreativ"
 }

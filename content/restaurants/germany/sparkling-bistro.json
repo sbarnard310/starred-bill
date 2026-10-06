@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 295,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 250,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/münchen/restaurant-sparkling-bistro-f3",
   "website": "https://www.restaurantsparklingbistro.com/",
   "lat": 48.1519723,
   "lng": 11.5779835,
@@ -16,6 +18,6 @@
   "michelinId": "547708",
   "chef": "Jürgen Wolfsgruber and Leander Bauer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "cuisineDe": "Moderne Küche"
 }

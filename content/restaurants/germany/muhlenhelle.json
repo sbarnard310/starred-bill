@@ -8,8 +8,10 @@
   "rating": 4.7,
   "reviews": 391,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu (other menus from €64)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/gummersbach/die-mühlenhelle-8e",
   "website": "https://www.muehlenhelle.de/",
   "lat": 50.9832866,
   "lng": 7.5311837,
@@ -22,6 +24,6 @@
   ],
   "chef": "Michael Quendler",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 64 €)",
   "cuisineDe": "Französisch-modern"
 }

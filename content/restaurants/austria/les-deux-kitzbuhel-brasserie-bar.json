@@ -7,9 +7,11 @@
   "cuisine": "Modern French",
   "rating": 4.3,
   "reviews": 66,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "main",
+  "dinner": 38,
+  "dinnerNote": "Typical main course",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/kitzbuehel/les-deux-brasserie-bar-kitzbuehel/",
   "website": "https://lesdeux-kitzbuehel.at/",
   "lat": 47.4456666,
   "lng": 12.3893438,
@@ -17,6 +19,6 @@
   "michelinId": "1212757",
   "chef": "Marc Fröhlich",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Typischer Hauptgang",
   "cuisineDe": "Französisch-modern"
 }

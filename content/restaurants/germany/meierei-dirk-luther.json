@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 95,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 310,
+  "dinnerNote": "Tasting menu (other menus from €290)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/glücksburg/meierei-dirk-luther-82",
   "website": "https://www.alter-meierhof.de/",
   "lat": 54.822771,
   "lng": 9.5000515,
@@ -21,6 +23,6 @@
   ],
   "chef": "Dirk Luther",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 290 €)",
   "cuisineDe": "Klassische Küche"
 }

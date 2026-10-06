@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 561,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 188,
+  "dinnerNote": "Tasting menu (other menus from CHF 140)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/schweiz/steffisburg/restaurant-panorama-hartlisberg/",
   "website": "https://www.panorama-hartlisberg.ch/",
   "lat": 46.7873268,
   "lng": 7.6209616,
@@ -19,10 +21,10 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 140)",
   "cuisineDe": "Französisch-modern",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 140)",
   "cuisineFr": "Cuisine française moderne",
-  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "dinnerNoteIt": "Menu degustazione (altri menu da CHF 140)",
   "cuisineIt": "Francese moderna"
 }

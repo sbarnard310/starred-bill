@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 415,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 159,
+  "dinnerNote": "Tasting menu (other menus from €149)",
+  "wine": 89,
+  "sourceType": "site",
+  "source": "https://bebrout.com/assets/img/speisekarte/Menu.pdf",
   "website": "https://bebrout.com/",
   "lat": 48.4005362,
   "lng": 9.9924975,
@@ -20,6 +23,6 @@
   ],
   "chef": "Alina Meissner-Bebrout and Tim Ostertag",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 149 €)",
   "cuisineDe": "Modern"
 }

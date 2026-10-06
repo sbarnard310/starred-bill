@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 81,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 225,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/lech-am-arlberg/rote-wand-chefs-table/",
   "website": "https://www.rotewand.com/gourmet/rote-wand-chefs-table/",
   "lat": 47.2005705,
   "lng": 10.1092578,
@@ -20,6 +22,6 @@
   ],
   "chef": "Florian Armbruster",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

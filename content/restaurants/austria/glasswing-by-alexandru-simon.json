@@ -11,8 +11,10 @@
   "rating": 4.9,
   "reviews": 192,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/at/wien/glasswing-f1",
   "website": "https://www.glasswing-restaurant.com",
   "lat": 48.2016444,
   "lng": 16.3712178,
@@ -20,6 +22,6 @@
   "michelinId": "205556",
   "chef": "Alexandru Simon",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Modern"
 }

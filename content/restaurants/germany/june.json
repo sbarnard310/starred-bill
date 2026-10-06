@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 339,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 120,
+  "dinnerNote": "Tasting menu (other menus from €90)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/Übersee/june-restaurant-08",
   "website": "https://www.june.restaurant",
   "lat": 47.8405088,
   "lng": 12.4743211,
@@ -20,6 +22,6 @@
   ],
   "chef": "Rico Birndt",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "cuisineDe": "Regional"
 }

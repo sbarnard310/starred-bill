@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 617,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 218,
+  "dinnerNote": "Tasting menu (other menus from €179)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/düsseldorf/nagaya-4d",
   "website": "https://www.nagaya.de/",
   "lat": 51.2253636,
   "lng": 6.7863334,
@@ -16,6 +18,6 @@
   "michelinId": "262757",
   "chef": "Yoshizumi Nagaya",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 179 €)",
   "cuisineDe": "Japanisch"
 }

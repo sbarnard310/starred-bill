@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 32,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 168,
+  "dinnerNote": "Tasting menu (other menus from €78)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/sonnenbühl/hirsch-05",
   "website": "https://www.romantikhotel-hirsch.de/de/",
   "lat": 48.3505143,
   "lng": 9.1942682,
@@ -19,7 +21,7 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 78 €)",
   "cuisineDe": "Klassische Küche",
   "chef": "Gerd Windhösel",
   "chefSource": "press"

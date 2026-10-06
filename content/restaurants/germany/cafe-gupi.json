@@ -12,8 +12,10 @@
   "rating": 4.9,
   "reviews": 100,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 117,
+  "dinnerNote": "Tasting menu (other menus from €79)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/weil-am-rhein/café-gupi-af",
   "website": "https://www.cafegupi.de/",
   "lat": 47.5948316,
   "lng": 7.6290732,
@@ -25,6 +27,6 @@
   ],
   "chef": "Christoph Düster",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 79 €)",
   "cuisineDe": "Modern"
 }

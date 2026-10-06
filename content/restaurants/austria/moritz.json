@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 185,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €130)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/grafenstein/restaurant-moritz/",
   "website": "https://www.restaurantmoritz.at/",
   "lat": 46.6318956,
   "lng": 14.449163,
@@ -20,6 +22,6 @@
   ],
   "chef": "Roman Pichler",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 130 €)",
   "cuisineDe": "Moderne Küche"
 }

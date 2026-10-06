@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 1337,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 275,
+  "dinnerNote": "Tasting menu (other menus from €175)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/pt/leça-da-palmeira/casa-de-chá-da-boa-nova-d1",
   "website": "https://www.casadechadaboanova.pt/",
   "lat": 41.2027411,
   "lng": -8.7147233,
@@ -22,6 +24,6 @@
   ],
   "chef": "Rui Paula",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 175 €)",
   "cuisinePt": "Moderna"
 }

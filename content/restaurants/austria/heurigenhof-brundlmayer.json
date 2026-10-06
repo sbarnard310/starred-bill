@@ -12,8 +12,10 @@
   "rating": 4.5,
   "reviews": 477,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 203,
+  "dinnerNote": "Tasting menu (other menus from €119)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/langenlois/heurigenhof-bruendlmayer/",
   "lat": 48.4739271,
   "lng": 15.6746034,
   "placeId": "ChIJWQkbZZ-cckcRIflviApVALQ",
@@ -23,6 +25,6 @@
   ],
   "chef": "Matthias Schütz",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
   "cuisineDe": "Französisch-klassisch"
 }

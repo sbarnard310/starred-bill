@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 118,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 220,
+  "dinnerNote": "Tasting menu (other menus from €99)",
+  "sourceType": "press",
+  "source": "https://www.feinschmecker.de/restaurant/de/hannover/votum-b4",
   "website": "https://vo-tum.de/",
   "lat": 52.3700102,
   "lng": 9.7354833,
@@ -17,7 +19,7 @@
   "michelinId": "1195570",
   "chef": "Benjamin Gallein",
   "chefSource": "site",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
   "cuisineDe": "Kreativ",
   "areaDe": "Hannover"
 }

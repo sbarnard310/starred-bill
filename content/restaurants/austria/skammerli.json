@@ -12,8 +12,10 @@
   "rating": 5,
   "reviews": 30,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 165,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/nauders/kammerli/",
   "website": "https://www.kammerli.com/",
   "lat": 46.890608,
   "lng": 10.50109,
@@ -21,6 +23,6 @@
   "michelinId": "1212409",
   "chef": "Oliver Mijic",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche"
 }

@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 281,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 239,
+  "dinnerNote": "Tasting menu (other menus from €125)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/deutschland/simmershofen/restaurant-winzerhof-stahl/",
   "website": "https://www.winzerhof-stahl.de/",
   "lat": 49.5232104,
   "lng": 10.1045712,
@@ -20,6 +22,6 @@
   ],
   "chef": "Christian Stahl and Mirko Schweiger",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 125 €)",
   "cuisineDe": "Moderne Küche"
 }

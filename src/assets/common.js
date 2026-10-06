@@ -1888,13 +1888,14 @@ const heart = '<svg aria-hidden="true"><use href="#heart"/></svg>';
 // [kind, percent usually added on top of the menu price (service, plus tax or tip where those come on top)]. Estimates only.
 const SERVICE = {
   uk: ["before", 12.5], ireland: ["before", 12.5], "hong-kong": ["before", 10], macau: ["before", 10], taiwan: ["before", 10], china: ["before", 10],
-  brazil: ["before", 10], philippines: ["before", 10], qatar: ["before", 10], uae: ["before", 23],  // UAE: 10% service, 7% municipality fee, then 5% VAT
-  singapore: ["plusplus", 19.9], thailand: ["plusplus", 17.7], malaysia: ["plusplus", 18.8], vietnam: ["plusplus", 13.4],  // ++: service, then tax on top
-  usa: ["taxtip", 29], canada: ["taxtip", 31],  // sales tax about 9% (US) or 13% (Canada), plus a tip of about 20% or 18%
+  brazil: ["before", 10], philippines: ["before", 10], qatar: ["before", 10], uae: ["before", 10],  // UAE prices must include VAT (and mostly the municipality fee); hotels add 10% service
+  hungary: ["before", 15],  // most upscale Budapest restaurants add 10–15% (Rumour and Babel 15%)
+  singapore: ["plusplus", 19.9], thailand: ["plusplus", 17.7], malaysia: ["plusplus", 16.6], vietnam: ["plusplus", 13.4],  // ++: service, then tax on top (Malaysia's F&B service tax is 6%, Vietnam's VAT 8% to end-2026)
+  usa: ["taxtip", 29], canada: ["taxtip", 30],  // sales tax about 9% (US) or 11% (Canada: 5% BC, 13% Ontario, 15% Québec), plus a tip of about 20% or 18–20%
   argentina: ["tip", 10], mexico: ["tip", 12.5], turkiye: ["tip", 10],
   japan: ["tax", 0],  // tax included; service is included in some sources' prices and not others
 };
-["andorra", "austria", "belgium", "croatia", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "hungary", "iceland", "italy", "latvia",
+["andorra", "austria", "belgium", "croatia", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "iceland", "italy", "latvia",
   "liechtenstein", "lithuania", "luxembourg", "malta", "monaco", "netherlands", "new-zealand", "norway", "poland", "portugal", "serbia", "slovenia", "south-korea",
   "spain", "sweden", "switzerland"].forEach((c) => { SERVICE[c] = ["included", 0]; });
 const SERVICE_LABEL = { before: "m1Title", included: "rcptIncl", plusplus: "rcptPlus", taxtip: "rcptTaxTip", tip: "rcptTip", tax: "rcptTax" };

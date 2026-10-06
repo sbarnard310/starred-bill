@@ -202,8 +202,9 @@ function billItem(r) {
   const why = lunch && b[2] ? "billNoLunch" : price == null ? "billNoPrice" : type === "main" ? "billPerMain" : "";
   const wine = bill.wine ? (lunch ? b[4] : b[3]) : null;
   const own = why ? 0 : price + (wine || 0), rate = billRate(r.cur);
-  const [kind, pct] = SERVICE[r.country] || ["before", 0];
-  return { r, why, amount: own * rate, extra: own * rate * serviceAdd(r.country), approx: r.cur !== bill.cur, noWine: bill.wine && !why && wine == null, kind, pct };
+  // A typical spend (mainland China) is what diners report paying, service and all, so nothing is added to it.
+  const [kind, pct] = type === "spend" ? ["spend", 0] : SERVICE[r.country] || ["before", 0];
+  return { r, why, amount: own * rate, extra: kind === "spend" ? 0 : own * rate * serviceAdd(r.country), approx: r.cur !== bill.cur, noWine: bill.wine && !why && wine == null, kind, pct };
 }
 function renderBill(list) {
   const box = $("bill");
@@ -220,7 +221,7 @@ function renderBill(list) {
   const items = list.map(billItem), counted = items.filter((x) => !x.why);
   const approx = counted.some((x) => x.approx);
   const sub = counted.reduce((a, x) => a + x.amount, 0), extra = counted.reduce((a, x) => a + x.extra, 0);
-  const kindNote = (x) => x.kind === "included" ? t("billIncluded") : x.kind === "tax" ? t("billTax") : !x.pct ? "" :
+  const kindNote = (x) => x.kind === "included" ? t("billIncluded") : x.kind === "tax" ? t("billTax") : x.kind === "spend" ? t("typicalSpend") : !x.pct ? "" :
     t({ before: "billBefore", plusplus: "billPlus", taxtip: "billTaxTip", tip: "billTip" }[x.kind], { p: x.pct.toLocaleString("en-GB") });
   const line = (x) => '<span class="rc-line bill-line' + (x.why ? " out" : "") + '"><span class="rc-k">' + esc(nameOf(x.r)) + '</span><span class="rc-dots" aria-hidden="true"></span>' + billSep +
     '<span class="rc-v' + (x.why ? " muted" : "") + '">' + (x.why ? "–" : billMoney(x.amount, x.approx)) + "</span>" + billSep +

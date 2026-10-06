@@ -14,5 +14,7 @@
   "lat": 35.003377,
   "lng": 135.774437,
   "placeId": "ChIJ6dIeosEIAWARXxd2aOzLKjQ",
-  "michelinId": "1192982"
+  "michelinId": "1192982",
+  "chef": "Daisuke Matsumoto",
+  "chefSource": "press"
 }

@@ -35,5 +35,7 @@
   "cuisineIt": "Toscana",
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
-  "lunchNoteIt": "Menu pranzo"
+  "lunchNoteIt": "Menu pranzo",
+  "chef": "Ivan Baretti",
+  "chefSource": "michelin"
 }

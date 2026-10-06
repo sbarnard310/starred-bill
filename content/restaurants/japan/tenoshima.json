@@ -29,5 +29,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Ryohei Hayashi",
+  "chefSource": "press"
 }

@@ -18,5 +18,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
-  "michelinId": "1193177"
+  "michelinId": "1193177",
+  "chef": "Tadashi Hoshiyama",
+  "chefSource": "press"
 }

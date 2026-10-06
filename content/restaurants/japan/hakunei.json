@@ -35,5 +35,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Dai Hayashi",
+  "chefSource": "press"
 }

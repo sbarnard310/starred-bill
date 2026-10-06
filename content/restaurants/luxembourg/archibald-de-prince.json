@@ -31,5 +31,7 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr–So",
   "lunchSourceType": "site",
   "lunchSource": "https://www.archibalddeprince.lu/la-table/",
-  "cuisineDe": "Bio"
+  "cuisineDe": "Bio",
+  "chef": "Archibald De Prince",
+  "chefSource": "michelin"
 }

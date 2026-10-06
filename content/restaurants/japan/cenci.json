@@ -18,5 +18,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Ken Sakamoto",
+  "chefSource": "press"
 }

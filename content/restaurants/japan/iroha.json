@@ -18,5 +18,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
-  "michelinId": "1193099"
+  "michelinId": "1193099",
+  "chef": "Masatoshi Yoshimoto",
+  "chefSource": "press"
 }

@@ -17,5 +17,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
-  "michelinId": "1205446"
+  "michelinId": "1205446",
+  "chef": "Kenta Miyawaki",
+  "chefSource": "press"
 }

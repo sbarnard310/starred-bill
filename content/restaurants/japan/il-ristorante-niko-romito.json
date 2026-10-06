@@ -36,5 +36,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Niko Romito",
+  "chefSource": "michelin"
 }

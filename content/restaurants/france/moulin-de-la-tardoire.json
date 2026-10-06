@@ -27,5 +27,7 @@
   "michelinId": "473770",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "chef": "Matthieu Brudo",
+  "chefSource": "michelin"
 }

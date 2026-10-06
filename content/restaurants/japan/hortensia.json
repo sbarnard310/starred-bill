@@ -40,5 +40,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Tetsuji Koga",
+  "chefSource": "press"
 }

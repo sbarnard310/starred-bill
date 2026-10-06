@@ -28,5 +28,7 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · do–za",
   "lunchSourceType": "site",
   "lunchSource": "https://deleuf.nl/",
-  "cuisineNl": "Creatief"
+  "cuisineNl": "Creatief",
+  "chef": "Robin van de Bunt",
+  "chefSource": "michelin"
 }

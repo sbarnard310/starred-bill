@@ -20,5 +20,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/va573211",
-  "michelinId": "1194307"
+  "michelinId": "1194307",
+  "chef": "Masami Tanaka",
+  "chefSource": "press"
 }

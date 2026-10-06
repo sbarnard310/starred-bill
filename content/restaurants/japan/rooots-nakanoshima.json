@@ -20,5 +20,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/dh563410",
-  "michelinId": "1214967"
+  "michelinId": "1214967",
+  "chef": "Kenta Kakihara",
+  "chefSource": "press"
 }

@@ -38,5 +38,7 @@
     "gluten-free",
     "halal",
     "kosher"
-  ]
+  ],
+  "chef": "Takahiro Noguchi",
+  "chefSource": "site"
 }

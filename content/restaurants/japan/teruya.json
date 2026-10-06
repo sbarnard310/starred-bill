@@ -20,5 +20,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/ck261894",
-  "michelinId": "1193219"
+  "michelinId": "1193219",
+  "chef": "Katsunori Teruya",
+  "chefSource": "press"
 }

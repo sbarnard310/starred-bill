@@ -20,5 +20,7 @@
   "lunchNote": "Cheapest lunch course (others up to ¥13,200)",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/rp501098",
-  "michelinId": "1195400"
+  "michelinId": "1195400",
+  "chef": "Kenji Nakata",
+  "chefSource": "press"
 }

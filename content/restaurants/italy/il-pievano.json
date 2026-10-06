@@ -26,5 +26,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian"
-  ]
+  ],
+  "chef": "Antonio Iacoviello",
+  "chefSource": "michelin"
 }

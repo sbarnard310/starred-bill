@@ -30,5 +30,7 @@
     "vegetarian-menu",
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Salvatore Bianco",
+  "chefSource": "michelin"
 }

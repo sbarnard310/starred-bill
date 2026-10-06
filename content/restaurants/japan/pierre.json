@@ -19,5 +19,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Yoshitaka Shibahara",
+  "chefSource": "press"
 }

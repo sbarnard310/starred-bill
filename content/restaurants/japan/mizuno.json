@@ -19,5 +19,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/hg953144",
-  "michelinId": "1210691"
+  "michelinId": "1210691",
+  "chef": "Takahiro Mizuno",
+  "chefSource": "press"
 }

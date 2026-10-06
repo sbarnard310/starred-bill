@@ -19,5 +19,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/wf756778",
-  "michelinId": "1193095"
+  "michelinId": "1193095",
+  "chef": "Yoshitsugu Yamamoto",
+  "chefSource": "press"
 }

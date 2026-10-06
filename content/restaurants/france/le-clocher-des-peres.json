@@ -27,5 +27,7 @@
   "michelinId": "340828",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "chef": "Pierre Troccaz",
+  "chefSource": "michelin"
 }

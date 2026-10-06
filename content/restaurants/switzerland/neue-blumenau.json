@@ -38,5 +38,7 @@
   "lunchWine": 168,
   "lunchSourceType": "site",
   "lunchSource": "https://www.neueblumenau.ch/menues",
-  "cuisineIt": "Contemporanea"
+  "cuisineIt": "Contemporanea",
+  "chef": "Bernadette Lisibach",
+  "chefSource": "michelin"
 }

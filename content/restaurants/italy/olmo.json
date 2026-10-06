@@ -34,5 +34,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Riccardo Merli",
+  "chefSource": "michelin"
 }

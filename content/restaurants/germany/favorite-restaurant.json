@@ -29,5 +29,7 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
   "lunchSourceType": "site",
   "lunchSource": "https://www.favorite-mainz.de/en/genuss-kulinarik/sternerestaurant/",
-  "cuisineDe": "Mediterran"
+  "cuisineDe": "Mediterran",
+  "chef": "Aniello Casalino",
+  "chefSource": "michelin"
 }

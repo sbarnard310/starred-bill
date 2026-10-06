@@ -17,5 +17,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
-  "michelinId": "1193180"
+  "michelinId": "1193180",
+  "chef": "Jiro Murakami",
+  "chefSource": "press"
 }

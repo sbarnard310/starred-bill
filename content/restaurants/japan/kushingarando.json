@@ -18,5 +18,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
-  "michelinId": "1205242"
+  "michelinId": "1205242",
+  "chef": "Hiroaki Osawa",
+  "chefSource": "press"
 }

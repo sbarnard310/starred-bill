@@ -21,5 +21,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Japanisch"
+  "cuisineDe": "Japanisch",
+  "chef": "Atsushi Sugimoto",
+  "chefSource": "michelin"
 }

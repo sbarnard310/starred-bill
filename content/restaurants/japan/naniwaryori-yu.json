@@ -17,5 +17,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
-  "michelinId": "1193230"
+  "michelinId": "1193230",
+  "chef": "Hideto Furuike",
+  "chefSource": "press"
 }

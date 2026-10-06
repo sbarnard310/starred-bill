@@ -20,5 +20,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/gs540162",
-  "michelinId": "1193259"
+  "michelinId": "1193259",
+  "chef": "Daisuke Miyamoto",
+  "chefSource": "press"
 }

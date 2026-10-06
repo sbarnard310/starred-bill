@@ -36,5 +36,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Kotaro Meguro",
+  "chefSource": "press"
 }

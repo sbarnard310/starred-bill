@@ -20,5 +20,7 @@
   "lunchNote": "Lunch course",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/dv433010",
-  "michelinId": "1197192"
+  "michelinId": "1197192",
+  "chef": "Nobuyuki Hirooka",
+  "chefSource": "press"
 }

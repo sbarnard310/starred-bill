@@ -17,5 +17,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
-  "michelinId": "1216727"
+  "michelinId": "1216727",
+  "chef": "Eiki Abe",
+  "chefSource": "press"
 }

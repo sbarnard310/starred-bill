@@ -20,5 +20,7 @@
   "lat": 34.068334,
   "lng": -118.398404,
   "placeId": "ChIJwXV42C27woARZnY7NuiUIu4",
-  "michelinId": "559603"
+  "michelinId": "559603",
+  "chef": "Osamu Fujita",
+  "chefSource": "michelin"
 }

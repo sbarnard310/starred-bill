@@ -9,6 +9,7 @@
   "dinnerType": "menu",
   "dinner": 175,
   "dinnerNote": "Tasting menu (other menus from €69)",
+  "wine": 155,
   "sourceType": "site",
   "source": "https://www.restaurantdemo.fi/",
   "website": "https://www.restaurantdemo.fi/",
@@ -23,6 +24,7 @@
   "lunch": 175,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchWine": 155,
   "lunchNoteFi": "Sama menu lounaalla · ti–pe",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantdemo.fi/"

@@ -7,11 +7,12 @@
   "cuisine": "Creative",
   "rating": 4.7,
   "reviews": 128,
+  "dinner": 1995,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Fri–Sat",
-  "lunchNoteDa": "Åbent til frokost · fre.–lør.",
+  "dinnerNote": "Tasting menu",
+  "wine": 1400,
+  "sourceType": "site",
+  "source": "https://www.restaurant-mota.com/?lang=en",
   "website": "https://www.restaurant-mota.com/",
   "lat": 55.9097107,
   "lng": 11.6594175,
@@ -21,5 +22,13 @@
     "vegetarian"
   ],
   "chef": "Claus Henriksen",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDa": "Smagsmenu",
+  "lunch": 1995,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteDa": "Samme menu til frokost · fre.–lør.",
+  "lunchWine": 1400,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-mota.com/?lang=en"
 }

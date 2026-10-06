@@ -7,11 +7,12 @@
   "cuisine": "Creative",
   "rating": 4.8,
   "reviews": 82,
+  "dinner": 1600,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Mon, Wed–Sat",
-  "lunchNoteDa": "Åbent til frokost · man., ons.–lør.",
+  "dinnerNote": "Tasting menu",
+  "wine": 1250,
+  "sourceType": "site",
+  "source": "https://bachognurup.dk/en/menu-en/evening/",
   "website": "https://bachognurup.dk/",
   "lat": 57.0478385,
   "lng": 9.9182428,
@@ -22,5 +23,13 @@
     "vegan"
   ],
   "chef": "Christian Nurup",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDa": "Smagsmenu",
+  "lunch": 1600,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon, Wed–Sat",
+  "lunchNoteDa": "Samme menu til frokost · man., ons.–lør.",
+  "lunchWine": 1250,
+  "lunchSourceType": "site",
+  "lunchSource": "https://bachognurup.dk/en/menu-en/evening/"
 }

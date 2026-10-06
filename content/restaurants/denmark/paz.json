@@ -7,14 +7,18 @@
   "cuisine": "Creative",
   "rating": 4.9,
   "reviews": 27,
+  "dinner": 3400,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu",
+  "wine": 2400,
+  "sourceType": "site",
+  "source": "https://paz.fo/menu/",
   "website": "https://paz.fo/",
   "lat": 62.0101327,
   "lng": -6.775808,
   "placeId": "ChIJo9pFTmkvvEgRrzffEi4Fhzc",
   "michelinId": "1218213",
   "chef": "Poul Andrias Ziska",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDa": "Smagsmenu"
 }

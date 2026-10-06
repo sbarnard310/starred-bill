@@ -7,11 +7,12 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.8,
   "reviews": 224,
+  "dinner": 2200,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Fri–Sat",
-  "lunchNoteDa": "Åbent til frokost · fre.–lør.",
+  "dinnerNote": "Tasting menu",
+  "wine": 1600,
+  "sourceType": "site",
+  "source": "https://gastrome.dk/menukort-aften/",
   "website": "https://gastrome.dk/",
   "lat": 56.1870316,
   "lng": 10.2177829,
@@ -21,5 +22,13 @@
     "vegetarian"
   ],
   "chef": "William Jørgensen",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNoteDa": "Smagsmenu",
+  "lunch": 2200,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteDa": "Samme menu til frokost · fre.–lør.",
+  "lunchWine": 1600,
+  "lunchSourceType": "site",
+  "lunchSource": "https://gastrome.dk/menukort-aften/"
 }

@@ -9,6 +9,7 @@
   "dinnerType": "menu",
   "dinner": 2650,
   "dinnerNote": "Tasting menu",
+  "wine": 1900,
   "sourceType": "site",
   "source": "https://www.restaurantergo.se/menu",
   "website": "https://www.restaurantergo.se/",
@@ -25,6 +26,7 @@
   "lunch": 2650,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchWine": 1900,
   "lunchNoteSv": "Samma meny till lunch · tors–lör",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantergo.se/menu"

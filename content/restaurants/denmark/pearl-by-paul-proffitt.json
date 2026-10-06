@@ -7,11 +7,11 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.8,
   "reviews": 43,
+  "dinner": 1395,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Fri–Sat",
-  "lunchNoteDa": "Åbent til frokost · fre.–lør.",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://pearlbypaulproffitt.dk/menu-dk/",
   "website": "https://pearlbypaulproffitt.dk",
   "lat": 54.86473,
   "lng": 9.50161,
@@ -21,5 +21,12 @@
     "vegetarian"
   ],
   "chef": "Paul Proffitt",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteDa": "Smagsmenu",
+  "lunch": 1395,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteDa": "Samme menu til frokost · fre.–lør.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://pearlbypaulproffitt.dk/menu-dk/"
 }

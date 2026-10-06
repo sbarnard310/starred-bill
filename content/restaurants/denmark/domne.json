@@ -10,6 +10,7 @@
   "dinnerType": "menu",
   "dinner": 1900,
   "dinnerNote": "Tasting menu",
+  "wine": 1200,
   "sourceType": "site",
   "source": "https://www.restaurantdomaene.dk/menu",
   "noLunch": true,

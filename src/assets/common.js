@@ -2104,8 +2104,8 @@ document.addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("sharePanel").hidden) { $("sharePanel").hidden = true; $("shareBtn").focus(); } });
 window.addEventListener("scroll", () => { if (!$("sharePanel").hidden && Math.abs($("shareBtn").getBoundingClientRect().bottom + 10 - parseFloat($("sharePanel").style.top)) > 4) $("sharePanel").hidden = true; }, { passive: true });
 
-// ---------- Phone header ----------
-// On phones the header keeps one row: the logo, search, the wishlist and a menu button. The menu holds the section
+// ---------- Phone and tablet header ----------
+// On phones and tablets (1140px and below) the header keeps one row: the logo, search, the wishlist and a menu button. The menu holds the section
 // links, Sign in and Share. Search jumps to the page's own search box, or the homepage's on pages without one.
 function setMenu(open) {
   document.querySelector(".site-header").classList.toggle("menu-open", open);
@@ -2117,7 +2117,7 @@ document.addEventListener("click", (e) => {
   if (menuOpen() && (e.target.closest("#headerMenu a, #accountBtn") || !e.target.closest("#headerMenu, #menuBtn, #sharePanel"))) setMenu(false);
 });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && menuOpen()) { setMenu(false); $("menuBtn").focus(); } });
-matchMedia("(min-width: 721px)").addEventListener("change", () => setMenu(false));
+matchMedia("(min-width: 1141px)").addEventListener("change", () => setMenu(false));
 $("searchLink").addEventListener("click", (e) => {
   const box = $("q") || $("homeQ");
   if (!box) return;

@@ -66,7 +66,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 /* Header */
 /* Header: the top row (.site-header) and the breadcrumb bar (.switchbar) stay on screen together on computers;
-   on phones only the top row does (see "Phone header" below). */
+   on phones and tablets only the top row does (see "Phone and tablet header" below). */
 .masthead { position: sticky; top: 0; z-index: 10; }
 .site-header { padding-top: env(safe-area-inset-top, 0px); background: var(--band); color: var(--band-ink); border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; flex-wrap: wrap; }
@@ -331,8 +331,9 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .tier .top { display: flex; justify-content: space-between; align-items: center; }
 .tier .stars svg { width: 20px; height: 20px; }
 .tier h3 { font-size: 1.2rem; }
-.tier .avg { font-family: var(--font-num); font-size: 2rem; line-height: 1; }
-.tier .avg small { font-family: var(--font-body); font-size: .85rem; color: var(--muted); margin-left: 6px; }
+/* The label ("average dinner") drops under the price when both don't fit, e.g. Icelandic "meðalkvöldverður" on small phones. */
+.tier .avg { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 6px; font-family: var(--font-num); font-size: 2rem; line-height: 1; }
+.tier .avg small { font-family: var(--font-body); font-size: .85rem; color: var(--muted); }
 .tier dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 0; font-size: .9rem; }
 .tier dt { color: var(--muted); }
 .tier dd { margin: 0; text-align: right; font-family: var(--font-num); font-variant-numeric: tabular-nums; }
@@ -459,7 +460,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 }
 @media (max-width: 720px) {
   .wrap { padding-inline: 16px; }
-  /* The wishlist shows its heart and count only, so the header fits one row (see "Phone header"). */
+  /* The wishlist shows its heart and count only, so the header fits one row (see "Phone and tablet header"). */
   .wish-link span[data-i18n] { display: none; }
   /* The homepage map's star buttons, tightened so all four fit on one row. */
   #mapStars button { padding-inline: 9px; gap: 4px; }
@@ -853,18 +854,19 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 .nav a[aria-current="page"] { color: var(--band-ink); }
 /* Destination pages also list their own sections (Compare, Map, By stars…), so on computers Near me and Share show just
    their icons there, keeping the header on one line. The words stay for screen readers, and in the phone menu. */
-@media (min-width: 721px) {
+@media (min-width: 1141px) {
   .site-header:has(a[href="#method"]) .nav-near span, .site-header:has(a[href="#method"]) .share-btn span {
     position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .site-header:has(a[href="#method"]) .share-btn { padding-inline: 9px; }
 }
 
-/* Phone header (720px and below): one row stays on screen (logo, search, wishlist heart, menu button) and the
-   breadcrumb bar scrolls away with the page. The menu button drops down the section links, Sign in and Share.
-   On computers .header-menu is just a wrapper, and the search and menu buttons are hidden. */
+/* Phone and tablet header (1140px and below, where the full header no longer fits one line): one row stays on screen
+   (logo, search, wishlist, menu button) and the breadcrumb bar scrolls away with the page. The menu button drops down
+   the section links, Sign in and Share. On computers .header-menu is just a wrapper, and the search and menu buttons
+   are hidden. Phones also move the currency switch beside Dinner/Lunch and show the wishlist as just a heart. */
 .header-menu { display: contents; }
 .search-link, .menu-btn { display: none; }
-@media (max-width: 720px) {
+@media (max-width: 1140px) {
   .masthead { display: contents; }
   .site-header { position: sticky; top: 0; z-index: 10; }
   .site-header .wrap { flex-wrap: nowrap; padding-block: 10px; gap: 8px; }
@@ -888,6 +890,12 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
   .header-menu .nav a.nav-near, .header-menu .nav a.nav-pick, .header-menu .nav a.nav-guides { order: -1; }
   .header-menu .nav a.nav-near svg, .header-menu .nav a.nav-pick svg { width: 17px; height: 17px; }
   .header-menu .account-btn, .header-menu .share-btn { padding: 8px 16px; }
+}
+@media (min-width: 721px) and (max-width: 1140px) {
+  /* Tablets: the menu drops down at the right as a panel, rather than across the whole width. */
+  .header-menu { left: auto; right: 12px; width: 340px; border: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); border-top: 0; border-radius: 0 0 14px 14px; }
+}
+@media (max-width: 720px) {
   .switchbar #currencySwitch { display: none; }
 }
 @media (max-width: 360px) {

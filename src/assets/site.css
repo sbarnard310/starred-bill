@@ -799,19 +799,63 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 /* Featured picture under a guide's date line (src/img/guides/, see docs/image-style.md). */
 .guide-hero { margin: 20px 0 22px; }
 .guide-hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); background: var(--line); }
-/* /guides/: picture cards, two across on computers, one on phones. The whole card is the link. */
-.guide-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 24px; }
-.guide-list li { position: relative; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; transition: border-color .15s, box-shadow .15s; }
-.guide-list li:hover { border-color: var(--green); box-shadow: 0 6px 18px rgba(0, 0, 0, .08); }
-.guide-list li:focus-within { outline: 2px solid var(--green); outline-offset: 2px; }
-.guide-list img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: var(--line); }
-.guide-list li > div { display: grid; gap: 6px; padding: 16px 18px 18px; }
-.guide-list a { font-size: 1.1rem; text-decoration: none; }
-.guide-list a:focus-visible { outline: none; }
-.guide-list a::after { content: ""; position: absolute; inset: 0; }
-.guide-list span { color: var(--muted); }
+/* /guides/: wider than an article. The pillar guide leads as a wide card, then the rest in picture cards under
+   their sections (three across on computers, two on tablets, one on phones), then links to put them to use.
+   Each card is one link (its heading's ::after covers the card). */
+.guide-index { max-width: 1120px; }
+.guide-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.guide-jump a { padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font-size: .9rem; font-weight: 500; text-decoration: none; }
+.guide-jump a:hover { border-color: var(--green); color: var(--green); }
+.guide-feature, .guide-list li { position: relative; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; transition: border-color .15s, box-shadow .15s; }
+.guide-feature:hover, .guide-list li:hover { border-color: var(--green); box-shadow: 0 6px 18px rgba(0, 0, 0, .08); }
+.guide-feature:focus-within, .guide-list li:focus-within { outline: 2px solid var(--green); outline-offset: 2px; }
+.guide-feature h2 a, .guide-list h3 a { color: var(--ink); text-decoration: none; }
+.guide-feature h2 a:focus-visible, .guide-list h3 a:focus-visible { outline: none; }
+.guide-feature h2 a::after, .guide-list h3 a::after { content: ""; position: absolute; inset: 0; }
+.guide-feature img, .guide-list img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: var(--line); }
+/* Stand-in until a guide has its picture: cream paper and gold stars, as in docs/image-style.md. */
+.guide-ph { display: flex; align-items: center; justify-content: center; gap: 4%; width: 100%; aspect-ratio: 16 / 9; background: #F3ECDD; color: #B8902F; }
+.guide-ph svg { width: 12%; height: auto; aspect-ratio: 1; }
+.guide-feature { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); margin-top: 28px; }
+.guide-feature img, .guide-feature .guide-ph { height: 100%; }
+.guide-feature > div { display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 28px 32px; }
+.guide-feature h2 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.15; }
+.guide-feature p { margin: 0; }
+.guide-kicker { color: var(--gold); font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.guide-go { margin-top: 4px; color: var(--green); font-weight: 600; }
+.guide-group { margin-top: 48px; padding-block: 0; scroll-margin-top: 140px; }
+.guide-group + .guide-group { margin-top: 40px; padding-top: 36px; }
+.guide-group > h2 { margin: 0 0 2px; font-size: 1.65rem; }
+.guide-group-note { color: var(--muted); }
+.guide-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 20px; margin-top: 18px; }
+.guide .guide-list li { display: flex; flex-direction: column; max-width: none; margin: 0; }
+.guide-list li > div { flex: 1; display: flex; flex-direction: column; gap: 8px; padding: 16px 18px 18px; }
+.guide .guide-list h3 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1.25rem; line-height: 1.2; }
+.guide-list li p { margin: 0; color: var(--muted); line-height: 1.5; }
+/* Card footer: the guide's key figure on a scrap of till-receipt paper, and the reading time. */
+.guide .guide-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-top: auto; padding-top: 6px; font-size: .82rem; color: var(--muted); line-height: 1.4; }
+.guide-feature .guide-meta { margin-top: 4px; padding-top: 0; }
+.guide-fig { position: relative; padding: 4px 10px 4px 16px; border-radius: 3px; background: var(--rc-paper); color: var(--rc-ink); font-family: var(--font-num); font-size: .76rem; }
+.guide-fig::before { content: ""; position: absolute; left: 6px; top: 5px; bottom: 5px; border-left: 2px dotted var(--rc-dots); }
+.guide-next { margin-top: 56px; padding: 28px; border-radius: var(--radius); background: var(--band); color: var(--band-ink); }
+.guide .guide-next h2 { margin: 0 0 16px; color: var(--band-ink); font-size: 1.5rem; }
+.guide-next-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 12px; }
+.guide .guide-next-links a { display: grid; grid-template-columns: auto 1fr; align-items: start; gap: 2px 12px; padding: 14px 16px; border: 1px solid rgba(255, 255, 255, .16); border-radius: var(--radius); color: var(--band-ink); text-decoration: none; transition: border-color .15s, background .15s; }
+.guide .guide-next-links a:hover { border-color: var(--gold); background: rgba(255, 255, 255, .05); }
+.guide-next-links svg { grid-row: span 2; width: 22px; height: 22px; margin-top: 1px; color: var(--gold); }
+.guide-next-links strong { font-weight: 600; }
+.guide-next-links span { color: var(--band-muted); font-size: .9rem; line-height: 1.4; }
+.guide .guide-cities { display: flex; flex-wrap: wrap; gap: 6px 16px; max-width: none; margin: 20px 0 0; font-size: .92rem; }
+.guide-cities span { color: var(--band-muted); }
+.guide .guide-cities a { color: var(--band-ink); }
 @media (max-width: 720px) {
-  .guide-list { grid-template-columns: 1fr; gap: 16px; }
+  .guide-feature { grid-template-columns: 1fr; }
+  .guide-feature img, .guide-feature .guide-ph { height: auto; }
+  .guide-feature > div { padding: 18px 18px 20px; }
+  .guide-group { margin-top: 36px; }
+  .guide-group + .guide-group { margin-top: 32px; padding-top: 28px; }
+  .guide-list { gap: 16px; }
+  .guide-next { padding: 22px 18px; }
 }
 footer a.foot-guide { color: inherit; }
 /* Trademark notice: its own full-width line under the footer's other items. */

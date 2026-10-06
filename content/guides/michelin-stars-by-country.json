@@ -4,6 +4,8 @@
   "description": "How many Michelin star restaurants there are in every country and US state, with one-, two- and three-star counts, updated after every guide.",
   "h1": "Michelin Star Restaurants by Country and State",
   "summary": "How many starred restaurants every country and US state has, updated after each guide.",
+  "section": "where",
+  "figure": "Most stars: {{topCountry}}, with {{topCountryN}}",
   "published": "2026-10-05",
   "updated": "2026-10-05",
   "lang": "en-US",

@@ -83,3 +83,6 @@
 /* Phone rows: a Latin name (dir="auto" in place.js) is cut short at its own end, but still sits on the right. */
 [dir="rtl"] .sum-name { text-align: right; }
 @media (min-width: 721px) and (max-width: 1140px) { [dir="rtl"] .header-menu { right: auto; left: 12px; } }
+/* Guides page card figures (site.css .guide-fig): the receipt's dotted edge on the right. */
+[dir="rtl"] .guide-fig { padding: 4px 16px 4px 10px; }
+[dir="rtl"] .guide-fig::before { left: auto; right: 6px; }

@@ -4,6 +4,8 @@
   "description": "Every 3 Michelin star restaurant in London, with chef, cuisine and tasting menu price, plus booking tips and this year’s star changes.",
   "h1": "3 Michelin Star Restaurants in London",
   "summary": "All of London’s three-star restaurants, with chefs, tasting menu prices and booking tips.",
+  "section": "where",
+  "figure": "{{n3London}} in London, dinner from {{cheapest3LondonPrice}}",
   "published": "2026-10-05",
   "updated": "2026-10-05",
   "lang": "en-GB",

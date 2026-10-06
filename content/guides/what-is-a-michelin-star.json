@@ -4,6 +4,8 @@
   "description": "What a Michelin star means, what one, two and three stars stand for, how inspectors judge, where the stars came from and what a starred meal costs.",
   "h1": "What Is a Michelin Star?",
   "summary": "What the stars mean, how inspectors judge, where they came from and what a starred meal costs.",
+  "section": "stars",
+  "figure": "{{total}} starred restaurants in {{countries}} countries",
   "published": "2026-10-05",
   "updated": "2026-10-05",
   "lang": "en-US",

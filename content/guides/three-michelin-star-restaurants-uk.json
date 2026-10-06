@@ -4,6 +4,8 @@
   "description": "Every 3 Michelin star restaurant in the UK, in London and beyond, with chef, cuisine and tasting menu price, plus this year’s star changes.",
   "h1": "3 Michelin Star Restaurants in the UK",
   "summary": "Every three-star restaurant in the UK, from London to Bray and the Lake District.",
+  "section": "where",
+  "figure": "{{n3UK}} in the UK, dinner from {{cheapest3UKPrice}}",
   "published": "2026-10-05",
   "updated": "2026-10-05",
   "lang": "en-GB",

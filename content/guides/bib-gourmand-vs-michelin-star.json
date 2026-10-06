@@ -4,6 +4,8 @@
   "description": "Bib Gourmand vs Michelin star vs the Michelin Guide: what each means, what you’ll pay, and the symbols to look for, explained in one table.",
   "h1": "Bib Gourmand vs Michelin Star vs the Michelin Guide",
   "summary": "What a star, a Bib Gourmand and a plain Guide listing each mean, and what you’ll pay.",
+  "section": "stars",
+  "figure": "Typical one-star dinner: {{price1}}",
   "published": "2026-10-05",
   "updated": "2026-10-05",
   "lang": "en-US",

@@ -4,6 +4,8 @@
   "description": "Every three-Michelin-star restaurant in the world, by country, with chef, cuisine and tasting menu price, plus the new and lost three stars this year.",
   "h1": "Every Three-Michelin-Star Restaurant in the World",
   "summary": "The full list of three-star restaurants, country by country, with chefs and tasting menu prices.",
+  "section": "where",
+  "figure": "{{n3}} three-star restaurants, dinner typically {{price3}}",
   "published": "2026-10-05",
   "updated": "2026-10-05",
   "lang": "en-US",

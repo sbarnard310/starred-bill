@@ -241,6 +241,12 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
 
 # Guides: one JSON file per article in content/guides/, its name being the page's address (/guides/<name>/).
 guides = {}
+# The Guides page's groups, in order: a guide's `section` puts it in one (else it goes under "More guides").
+GUIDE_SECTIONS = {
+    "stars": ("Understanding the stars", "What the stars mean, how restaurants win and lose them, and the MICHELIN Guide’s other awards."),
+    "where": ("Where to find them", "Every starred restaurant by country, the world’s three-star tables and the best of London."),
+    "no-stars": ("No stars yet", "Big food countries the MICHELIN Guide hasn’t starred, and when that might change."),
+}
 GUIDE_FIELDS = ("title", "description", "h1", "summary", "published", "updated", "body")
 for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").exists() else []:
     where = f"guides/{path.name}"
@@ -257,6 +263,8 @@ for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").
         problem(where, f"title is {len(g['title'])} characters; search results cut it off after 60")
     if len(g.get("description", "")) > 155:
         problem(where, f"description is {len(g['description'])} characters; keep it to 155")
+    if g.get("section") and g["section"] not in GUIDE_SECTIONS:
+        problem(where, f"section is \"{g['section']}\"; use one of " + ", ".join(GUIDE_SECTIONS))
     for field in ("published", "updated"):
         if g.get(field) and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", g[field]):
             problem(where, f"{field} must be a date like 2026-10-05")
@@ -1550,6 +1558,12 @@ GUIDE_ORDER = ("what-is-a-michelin-star", "how-restaurants-get-a-michelin-star",
                "three-michelin-star-restaurants-uk")
 
 
+# The Guides page leads with this one (also linked from every footer), then the rest under their sections.
+GUIDE_PILLAR = "what-is-a-michelin-star"
+# "Popular" destination links at the foot of the Guides page.
+GUIDE_CITIES = ("london", "paris", "tokyo", "new-york", "hong-kong", "singapore", "copenhagen")
+
+
 GUIDE_IMAGES = SRC / "img" / "guides"
 
 
@@ -1608,23 +1622,69 @@ def build_guides():
             "keywordsMeta": f'<meta name="keywords" content="{e(", ".join(g["keywords"]))}">\n' if g["keywords"] else "",
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": home_crumb + '<a href="/guides/">Guides</a>' + f'<span aria-current="page">{e(g["h1"])}</span>',
-            "main": main, "data": data,
+            "main": main, "mainClass": "wrap prose guide", "data": data,
         }))
-    def card(g):
+    order = lambda g: (g["published"], GUIDE_ORDER.index(g["id"]) if g["id"] in GUIDE_ORDER else len(GUIDE_ORDER), g["id"])
+    def read_time(g):
+        words = len(re.sub(r"<[^>]+>|\{\{[^}]+\}\}", " ", " ".join([g["body"]] + [f["q"] + " " + f["a"] for f in g["faq"]])).split())
+        return f"{max(2, -(-words // 220))} min read"
+    def picture(g, size):
         img = guide_image(g)
-        pic = f'<img src="{img}-card.jpg" alt="" width="800" height="450" loading="lazy" decoding="async">' if img else ""
-        return f'<li>{pic}<div><a href="/guides/{g["id"]}/"><strong>{e(g["h1"])}</strong></a><span>{e(g["summary"])}</span></div></li>'
-    cards = "".join(card(g)
-                    for g in sorted(guides.values(), key=lambda g: (g["published"], GUIDE_ORDER.index(g["id"]) if g["id"] in GUIDE_ORDER else len(GUIDE_ORDER), g["id"])))
+        if img:
+            return f'<img src="{img}-card.jpg" alt="" width="800" height="450" {size} decoding="async">'
+        # Until a guide has its picture: cream paper with gold stars, in the house style (docs/image-style.md).
+        return '<span class="guide-ph" aria-hidden="true">' + '<svg><use href="#star"/></svg>' * 3 + "</span>"
+    def meta(g):
+        fig = guide_text(e(g["figure"]), stats) if g.get("figure") else ""
+        return (f'<p class="guide-meta">' + (f'<span class="guide-fig">{fig}</span>' if fig else "")
+                + f'<span class="guide-time">{read_time(g)}</span></p>')
+    LAZY, EAGER = 'loading="lazy"', 'fetchpriority="high"'
+    def card(g):
+        return (f'<li>{picture(g, LAZY)}<div><h3><a href="/guides/{g["id"]}/">{e(g["h1"])}</a></h3>'
+                f'<p>{e(g["summary"])}</p>{meta(g)}</div></li>')
+    pillar = guides.get(GUIDE_PILLAR)
+    feature = (f'<article class="guide-feature">{picture(pillar, EAGER)}<div>'
+               f'<p class="guide-kicker">Start here</p><h2><a href="/guides/{pillar["id"]}/">{e(pillar["h1"])}</a></h2>'
+               f'<p>{e(pillar["description"])}</p>{meta(pillar)}<span class="guide-go" aria-hidden="true">Read the guide →</span></div></article>') if pillar else ""
+    rest = sorted((g for g in guides.values() if g is not pillar), key=order)
+    groups = [(key, *GUIDE_SECTIONS[key], [g for g in rest if g.get("section") == key]) for key in GUIDE_SECTIONS]
+    groups.append(("more", "More guides", "", [g for g in rest if g.get("section") not in GUIDE_SECTIONS]))
+    groups = [grp for grp in groups if grp[3]]
+    jump = '<nav class="guide-jump" aria-label="Guide topics">' + "".join(f'<a href="#{k}">{e(t)}</a>' for k, t, _, _ in groups) + "</nav>"
+    sections = "".join(f'<section class="guide-group" id="{k}"><h2>{e(t)}</h2>' + (f'<p class="guide-group-note">{e(note)}</p>' if note else "")
+                       + f'<ul class="guide-list">{"".join(card(g) for g in gs)}</ul></section>' for k, t, note, gs in groups)
+    cities = "".join(f'<a href="{places[p]["path"]}">{e(places[p]["name"])}</a>' for p in GUIDE_CITIES if p in places)
+    onward = ('<aside class="guide-next"><h2>Put the guides to use</h2><div class="guide-next-links">'
+              '<a href="/near-me/"><svg aria-hidden="true"><use href="#locate"/></svg><strong>Near me</strong><span>Every starred restaurant around you, nearest first</span></a>'
+              '<a href="/pick/"><svg aria-hidden="true"><use href="#spark"/></svg><strong>Help me pick</strong><span>Six quick questions, three picks to fit your budget</span></a>'
+              '<a href="/#destinations"><svg aria-hidden="true"><use href="#pin"/></svg><strong>All destinations</strong><span>Dinner, lunch and wine pairing prices, city by city</span></a>'
+              f'</div>' + (f'<p class="guide-cities"><span>Popular:</span>{cities}</p>' if cities else "") + '</aside>')
+    lede = (f'Plain-English guides to Michelin stars: what one, two and three stars mean, how restaurants earn them, where to find them '
+            f'and what a starred meal really costs. Every figure comes from the {stats["total"]} starred restaurants on The Starred Bill, '
+            f'so the guides stay up to date as the prices do.')
+    intro = (f'<h1>Michelin Star Guides</h1>\n<p class="lede">{lede}</p>\n'
+             f'<p class="prose-date">{len(guides)} guides · Stars from the MICHELIN Guide · Figures and prices checked {stats["checked"]}</p>\n')
+    description = "Plain-English guides to Michelin stars: what they mean, how restaurants earn them, where to find them and what a starred meal costs."
+    graph = [
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "All destinations", "item": SITE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Guides", "item": SITE_URL + "/guides/"}]},
+        {"@type": "CollectionPage", "name": "Michelin Star Guides", "description": description, "url": SITE_URL + "/guides/", "inLanguage": "en",
+         "isPartOf": {"@type": "WebSite", "name": "The Starred Bill", "url": SITE_URL + "/"},
+         "mainEntity": {"@type": "ItemList", "itemListElement": [
+             {"@type": "ListItem", "position": i + 1, "url": SITE_URL + f"/guides/{g['id']}/", "name": g["h1"]}
+             for i, g in enumerate(([pillar] if pillar else []) + [g for grp in groups for g in grp[3]])]}},
+    ]
     write("/guides/", render("guide.html", {
-        "title": "Michelin Guides and Explainers · The Starred Bill",
-        "description": "Plain-English explainers on Michelin stars: what they mean, how restaurants earn them and what a starred meal costs.",
+        "title": "Michelin Star Guides: What the Stars Mean and Cost",
+        "description": description,
         "canonical": SITE_URL + "/guides/", "htmlLang": "en", "ogType": "website", "ogAlt": "The Starred Bill guides", "keywordsMeta": "",
+        **({"ogImage": SITE_URL + guide_image(pillar) + "-og.jpg", "ogAlt": e(pillar.get("imageAlt") or pillar["h1"])} if pillar and guide_image(pillar) else {}),
+        "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
         "crumbs": home_crumb + '<span aria-current="page">Guides</span>',
-        "main": f'<h1>Guides</h1>\n<p>Explainers on Michelin stars, written to go with the prices on The Starred Bill.</p>\n<ul class="guide-list">{cards}</ul>',
-        "data": data,
+        "main": intro + jump + feature + sections + onward,
+        "mainClass": "wrap prose guide guide-index", "data": data,
     }))
-
 
 def build_extras():
     shutil.copy2(SRC / "favicon.svg", OUT / "favicon.svg")

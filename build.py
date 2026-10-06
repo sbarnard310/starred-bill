@@ -461,10 +461,7 @@ def build_place(p):
     stars = [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)]
     menus = sorted((r for r in starred if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
     where = in_sentence(p)
-    description = (f"Dinner, lunch and wine pairing prices at {len(starred)} Michelin-starred restaurants in {where}"
-                   f" ({stars[2]} three-star, {stars[1]} two-star, {stars[0]} one-star)"
-                   + (f", from {money(menus[0]['dinner'], menus[0]['cur'])} to {money(menus[-1]['dinner'], menus[-1]['cur'])} for a dinner menu." if menus else ".")) if starred else \
-        f"There are currently no Michelin-starred restaurants in {where}. We'll add their dinner, lunch and wine pairing prices here as soon as one gets a star."
+    description = place_description(where, starred, stars, menus)
     intro = page["intro"]
     crumb_html = '<a href="/">All destinations</a>' + "".join(f'<a href="{c["path"]}">{e(c["name"])}</a>' for c in crumbs) + \
         f'<span aria-current="page">{e(p["name"])}</span>'
@@ -490,6 +487,32 @@ def build_place(p):
         "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}"),
         "jsonld": json_ld(p, crumbs, starred, description),
     }))
+
+
+def place_description(where, starred, stars, menus):
+    """The page's search-result snippet: the fullest wording that fits in 155 characters, as Google cuts off longer ones."""
+    if not starred:
+        return f"There are no Michelin-starred restaurants in {where} yet. We'll add their dinner, lunch and wine pairing prices here as soon as one gets a star."
+    n = len(starred)
+    places = f"{n} Michelin-starred restaurant{'s' if n > 1 else ''} in {where}"
+    tiers = [(k, label) for k, label in zip(stars[::-1], ("three", "two", "one")) if k]
+    mix = ", ".join(f"{k} {label}-star" for k, label in tiers) if len(tiers) > 1 else \
+        f"all {tiers[0][1]}-star" if n > 1 else f"{tiers[0][1]} star{'s' if tiers[0][1] != 'one' else ''}"
+    if menus:
+        lo, hi = money(menus[0]["dinner"], menus[0]["cur"]), money(menus[-1]["dinner"], menus[-1]["cur"])
+        span = f"from {lo} to {hi}" if lo != hi else lo
+        dinner, short = f", from {lo} to {hi} for a dinner menu" if lo != hi else f", {lo} for a dinner menu", f", dinner menus {span}"
+    else:
+        dinner = short = ""
+    options = [
+        f"Dinner, lunch and wine pairing prices at {places} ({mix}){dinner}.",
+        f"Dinner, lunch and wine pairing prices at {places} ({mix}){short}.",
+        f"Dinner, lunch and wine pairing prices at {places}{dinner}.",
+        f"Dinner, lunch and wine prices at {places}{short}.",
+        f"Dinner, lunch and wine pairing prices at {places}.",
+        f"Menu prices at {places}.",
+    ]
+    return next((o for o in options if len(o) <= 155), options[-1])
 
 
 def json_ld(p, crumbs, starred, description):
@@ -681,7 +704,6 @@ def build_home():
         "worldUrl": world_url, "worldTotal": world_total, "languages": DEFAULT_LANGUAGES,
     }
     countries.sort(key=lambda c: c["name"])  # A to Z (the page re-sorts in the visitor's language)
-    country_names = ", ".join(c["name"] for c in countries)
     cards = "".join(
         f'<article class="dest"><div class="dest-top"><h3><a href="{c["path"]}">{e(c["name"])}</a></h3></div>'
         f'<p class="dest-meta">{c["n"]} starred restaurants</p>'
@@ -689,7 +711,7 @@ def build_home():
         for c in countries)
     write("/", render("home.html", {
         "title": "The Starred Bill · Michelin-starred restaurant prices",
-        "description": e(f"Compare dinner, lunch and wine pairing prices at {len(starred)} Michelin-starred restaurants in {country_names}, city by city."),
+        "description": e(f"Compare dinner, lunch and wine pairing prices at {len(starred):,} Michelin-starred restaurants in {len(countries)} countries, from London and Paris to Tokyo."),
         "canonical": SITE_URL + "/",
         "eyebrow": "Michelin star restaurants, priced",
         "h1": "What a Michelin star <em>costs</em>, city by city.",
@@ -940,7 +962,7 @@ def build_account_pages():
         "canonical": SITE_URL + "/account/", "data": as_json(data),
     }))
     write("/privacy/", render("privacy.html", {
-        "title": "Privacy notice · The Starred Bill", "description": "What The Starred Bill keeps about you, and why.",
+        "title": "Privacy notice · The Starred Bill", "description": "What The Starred Bill keeps about you and why: your wishlist and been-there list, visit statistics, cookie choices, and how to see or delete your data.",
         "canonical": SITE_URL + "/privacy/", "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES}),
     }))
 

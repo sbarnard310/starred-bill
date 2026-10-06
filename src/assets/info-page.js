@@ -9,7 +9,7 @@ function render() {
   $("destLink").href = withLang("/") + "#destinations";
   document.querySelectorAll(".acct-link").forEach((a) => { a.href = withLang("/account/"); });
   if (document.body.hasAttribute("data-static-crumbs")) return;
-  const h1 = document.querySelector('[data-for="' + lang + '"] h1');
+  const h1 = document.querySelector('[data-for="' + lang + '"] :is(h1, .h1)');
   document.title = (h1 ? h1.textContent : "") + " · The Starred Bill";
   $("crumbs").innerHTML = '<a href="' + withLang("/") + '">' + esc(t("crumbHome")) + '</a><span aria-current="page">' + esc(h1 ? h1.textContent : "") + "</span>";
 }

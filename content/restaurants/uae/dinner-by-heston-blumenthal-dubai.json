@@ -7,8 +7,10 @@
   "rating": 4.4,
   "reviews": 297,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 670,
+  "dinnerNote": "Tasting menu (other menus from AED 580)",
+  "sourceType": "press",
+  "source": "https://www.timeoutdubai.com/food-drink/dinner-by-heston-blumenthal-new-menu",
   "website": "https://www.atlantis.com/dubai/dining/dinner-by-heston",
   "lat": 25.1384573,
   "lng": 55.1275537,
@@ -19,5 +21,5 @@
     "vegan",
     "halal"
   ],
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا"
+  "dinnerNoteAr": "قائمة تذوق (قوائم أخرى من AED 580)"
 }

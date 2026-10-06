@@ -7,8 +7,10 @@
   "rating": 4.5,
   "reviews": 890,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 738,
+  "dinnerNote": "Tasting menu (other menus from AED 538)",
+  "sourceType": "press",
+  "source": "https://dizzer.ae/deals/signature-set-menus-hakkasan-atlantis-the-palm-dining-deal/",
   "website": "https://www.atlantis.com/dubai/dining/hakkasan",
   "lat": 25.132521,
   "lng": 55.1180364,
@@ -21,5 +23,5 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا"
+  "dinnerNoteAr": "قائمة تذوق (قوائم أخرى من AED 538)"
 }

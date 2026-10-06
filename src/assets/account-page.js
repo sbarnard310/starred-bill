@@ -1,8 +1,23 @@
 // The account page: what you've ticked off (stats, milestones, progress by destination), your been-there
 // list with dates, your wishlist, and your data (download, sign out, delete). account.js does the signing in.
 
-const ALL = DATA.restaurants;
-const byId = new Map(ALL.map((r) => [r.id, r]));
+// The restaurants come from /data/account.json (build_account_pages() in build.py), fetched only once someone is signed in:
+// one row of values each, with the place it sits in given as a number in the file's list of places.
+let byId = null, loading = null, loadFailed = false;
+function loadRestaurants() {
+  if (!loading) loading = fetch(DATA.accountUrl).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); }).then((d) => {
+    byId = new Map(d.r.map((a) => {
+      const r = {};
+      d.cols.forEach((c, i) => { if (a[i] != null && a[i] !== "") r[c] = a[i]; });
+      d.cityCols.forEach((c, i) => { if (d.cities[r.city][i] !== "") r[c] = d.cities[r.city][i]; });
+      delete r.city;
+      r.chain = r.cityPath.split("/").filter(Boolean);  // the place ids from the country down, e.g. uk, england, london
+      return [r.id, r];
+    }));
+    DATA.knownIds = [...byId.keys()];
+  }).catch(() => { loadFailed = true; }).then(render);
+  return loading;
+}
 const ui = { confirmDelete: false, message: "" };
 const starsOf = (r) => r.stars || r.formerStars || 0;
 const pageLink = (r) => withLang(r.cityPath) + "&q=" + encodeURIComponent(r.name);
@@ -88,6 +103,12 @@ function render() {
     return;
   }
   $("acctLede").textContent = t("accSignedInAs", { email: account.user.email || "" });
+  if (!byId) {
+    // The account page is English only.
+    $("acctBody").innerHTML = msg + '<p class="acct-loading">' + (loadFailed ? "Your restaurants couldn't load just now. Please reload the page to try again." : esc(t("accLoading"))) + "</p>";
+    if (!loadFailed) loadRestaurants();
+    return;
+  }
   const visited = loadVisited();
   const been = Object.keys(visited).map((id) => byId.get(id)).filter(Boolean);
   $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + progress(been) + beenList(been) + wishList() + dataSection();

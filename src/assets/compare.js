@@ -1,5 +1,5 @@
 // /compare/: up to three restaurants from the visitor's wishlist as till receipts side by side, in one currency.
-// The prices come from /data/compare.json (build_compare() in build.py). The ticked restaurants are kept in the
+// The prices come from /data/compare/<n>.json (build_compare() in build.py). The ticked restaurants are kept in the
 // address (?r=id,id,id), so a comparison can be shared, and in the browser for next time.
 
 const MAX = 3;
@@ -11,17 +11,31 @@ shareText = () => cmp.sel.length > 1 ? "Michelin-starred restaurants side by sid
 shareUrl = () => location.origin + location.pathname + (cmp.sel.length ? "?r=" + cmp.sel.map(encodeURIComponent).join(",") : "");
 
 // ---------- Data ----------
-const dataReady = fetch(DATA.compareUrl).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); }).then((d) => {
-  cmp.rows = d.r.map((a) => {
-    const r = {};
-    d.cols.forEach((c, i) => { r[c] = a[i]; });
-    return r;
+// The restaurants are shared between small files by a number worked out from each id (compare_part() in build.py),
+// so the page loads only the files holding the wishlist and any restaurants in a shared link.
+const partOf = (id) => { let h = 0; for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) % 1000003; return h % DATA.compareParts.length; };
+const parts = new Map();
+function loadIds(ids) {
+  const wanted = [...new Set(ids.map(partOf))];
+  wanted.forEach((n) => {
+    if (!parts.has(n)) parts.set(n, fetch(DATA.compareParts[n]).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); }).then((d) => {
+      d.r.forEach((a) => {
+        const r = {};
+        d.cols.forEach((c, i) => { r[c] = a[i]; });
+        cmp.byId.set(r.id, r);
+      });
+    }).catch((err) => { parts.delete(n); throw err; }));
   });
-  cmp.rows.forEach((r) => cmp.byId.set(r.id, r));
-  // The header's wishlist count leaves out restaurants that have lost their stars, as on other pages.
-  DATA.knownIds = cmp.rows.map((r) => r.id);
-  renderWishCount();
-});
+  return Promise.all(wanted.map((n) => parts.get(n))).then(() => {
+    cmp.rows = [...cmp.byId.values()];
+    // The header's wishlist count leaves out restaurants that have lost their stars, as on other pages:
+    // every starred restaurant on the wishlist is in a file that has loaded.
+    DATA.knownIds = cmp.rows.map((r) => r.id);
+    renderWishCount();
+  });
+}
+const linkIds = () => (params.get("r") || "").split(",").map((s) => s.trim()).filter(Boolean);
+const dataReady = loadIds(loadWishlist().concat(linkIds()));
 const selRows = () => cmp.sel.map((id) => cmp.byId.get(id)).filter(Boolean);
 // The restaurants to choose from: the wishlist, plus any from a shared link that aren't on it.
 const pool = () => { const wl = loadWishlist(); return wl.concat(cmp.shared.concat(cmp.sel).filter((id, i, a) => !wl.includes(id) && a.indexOf(id) === i)).map((id) => cmp.byId.get(id)).filter(Boolean); };
@@ -230,14 +244,14 @@ $("cmpCur").addEventListener("change", (e) => {
   track("currency", { currency: cmp.cur });
 });
 // Changes from the account (another device) or another tab.
-const refresh = () => { if (cmp.rows) { renderWishCount(); render(); } };
+const refresh = () => { if (cmp.rows) loadIds(loadWishlist()).then(render).catch(() => {}); };
 window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY) refresh(); });
 ["sb:wishlist", "sb:account"].forEach((ev) => window.addEventListener(ev, (e) => { if (e.type === "sb:account" || e.detail.from === "sync") refresh(); }));
 
 dataReady.then(() => {
   if (store.get(PREFS_KEY, {}).meal === "lunch") cmp.meal = "lunch";
   const wl = loadWishlist().filter((id) => cmp.byId.has(id));
-  const fromLink = (params.get("r") || "").split(",").map((s) => s.trim()).filter((id) => cmp.byId.has(id));
+  const fromLink = linkIds().filter((id) => cmp.byId.has(id));
   const last = (store.get(PREFS_KEY, {}).compare || []).filter((id) => wl.includes(id));
   // A shared link wins; then the last comparison made here; then the first three saved.
   cmp.sel = [];

@@ -1,13 +1,30 @@
 // The homepage: search, a world map of every starred restaurant, destination cards and the wishlist.
 
-const ALL = DATA.restaurants;
+// The restaurants (map pins, search and the wishlist) come from /data/home.json (build_home_data() in build.py), fetched as
+// the page opens: one row of values each, with the place it sits in given as a number in the file's list of places.
+// Until it arrives, the figures and cards use the counts in the page itself.
+let ALL = [], LOST = [], homeLoaded = false;
+const homeRows = (d) => d.r.map((a) => {
+  const r = {};
+  d.cols.forEach((c, i) => { if (a[i] != null && a[i] !== "") r[c] = a[i]; });
+  d.cityCols.forEach((c, i) => { if (d.cities[r.city][i] !== "") r[c] = d.cities[r.city][i]; });
+  delete r.city;
+  return r;
+});
+const homeReady = (window.homeData || fetch(DATA.homeUrl).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); })).then((d) => {
+  ALL = homeRows(d);
+  LOST = homeRows(d.former).filter(lostPin);
+  DATA.knownIds = ALL.map((r) => r.id);
+  homeLoaded = true;
+});
 const homeState = { stars: 0 };
 const cityLink = (r) => withLang(r.cityPath) + "&q=" + encodeURIComponent(r.name);
 // Where a restaurant is, e.g. "London", or "Aughton, England" for one listed under a region.
 const whereOf = (r) => r.town ? r.town + ", " + pick(r, "cityName") : pick(r, "cityName");
 const priceLabel = (r) => r.dinner == null ? t("infoNoPrice")
   : localMoney(r.dinner, r.cur) + " " + (r.dinnerType === "main" ? t("perMain") : r.dinnerType === "spend" ? t("typicalSpend") : t("infoDinner"));
-const starCountsOf = (list) => { const n = [0, 1, 2, 3].map((s) => list.filter((r) => r.stars === s).length); return t("starCounts").replace("{3}", n[3]).replace("{2}", n[2]).replace("{1}", n[1]); };
+// "12 three-star, 30 two-star…" from counts [total, one-star, two-star, three-star].
+const starCountText = (n) => t("starCounts").replace("{3}", n[3]).replace("{2}", n[2]).replace("{1}", n[1]);
 
 function applyStatic() {
   applyI18n();
@@ -20,8 +37,8 @@ function applyStatic() {
   if (DATA.worldTotal) document.querySelector('[data-i18n="mapHomeText"]').textContent = t("mapHomeWorldText", { n: DATA.worldTotal.toLocaleString("en-GB") });
 }
 function renderFigures() {
-  $("fRestaurants").textContent = ALL.length;
-  $("fRestaurantsSub").textContent = starCountsOf(ALL);
+  $("fRestaurants").textContent = DATA.starCounts[0];
+  $("fRestaurantsSub").textContent = starCountText(DATA.starCounts);
   // A destination with no separate city pages (e.g. Hong Kong) counts as one city.
   const cities = DATA.places.filter((p) => p.type === "city").length + DATA.countries.filter((c) => !c.cities.length).length;
   $("fDest").textContent = DATA.countries.length;
@@ -33,7 +50,7 @@ function renderFigures() {
 function destCard(c) {
   return '<article class="dest" id="dest-' + esc(c.id) + '">' +
     '<div class="dest-top"><h3><a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a></h3></div>" +
-    '<p class="dest-meta">' + esc(t("destRestaurants", { n: c.n })) + " · " + esc(starCountsOf(ALL.filter((r) => r.country === c.id))) +
+    '<p class="dest-meta">' + esc(t("destRestaurants", { n: c.n })) + " · " + esc(starCountText([c.n].concat(c.own))) +
     (c.guide && c.guide[0] + c.guide[1] + c.guide[2] > c.n ? '<br><span class="dest-guide">' + esc(t("destGuide", { n: c.guide[0] + c.guide[1] + c.guide[2] }) + " · " +
       t("starCounts").replace("{3}", c.guide[2]).replace("{2}", c.guide[1]).replace("{1}", c.guide[0])) + "</span>" : "") + "</p>" +
     (c.from ? '<p class="dest-from">' + esc(t("destFrom", { p: localMoney(c.from.price, c.from.cur) })) + ' <span class="dest-from-name">' + esc(pick(c.from, "name")) + "</span></p>" : "") +
@@ -108,7 +125,7 @@ let destCont = "";  // the continent shown ("" for all)
 let destSort = "az", destDesc = true;  // destDesc: high to low (or A to Z); clicking the chosen button again flips it
 // A country's [one-star, two-star, three-star] counts in the whole MICHELIN Guide (our pages may cover only some cities),
 // falling back to our own restaurants.
-const starsByCountry = (c) => c.box ? c.stars : c.guide || [1, 2, 3].map((s) => ALL.filter((r) => r.country === c.id && r.stars === s).length);
+const starsByCountry = (c) => c.box ? c.stars : c.guide || c.own;
 function renderDestSort() {
   const opts = [{ v: "az", label: t("destSortAZ") }, { v: "most", label: t("destSortMost") }]
     .concat([3, 2, 1].map((s) => ({ v: String(s), label: starIcons(s), aria: t("destSortStars", { n: s }) })));
@@ -151,6 +168,7 @@ function renderDestinations() {
 
 // ---------- Wishlist ----------
 function renderWishlist() {
+  if (!homeLoaded) { renderWishCount(); return; }  // drawn once the restaurants arrive
   const list = loadWishlist().map((id) => ALL.find((r) => r.id === id)).filter(Boolean);
   renderWishCount();
   // Signed out: an invitation to keep the list everywhere. Signed in: where it's kept.
@@ -241,7 +259,6 @@ function renderResults() {
 // Filled pins are restaurants with prices on this site; outlined pins are every other starred restaurant
 // in the MICHELIN Guide, loaded from /data/world.json once the map starts. Grey pins (world.lost, never clustered)
 // are restaurants that recently lost their stars, shown only when no star filter is on.
-const LOST = (DATA.former || []).filter(lostPin);
 const world = { map: null, info: null, markers: [], lost: [], clusterer: null, loaded: false };
 const infoBox = (body) => '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' + body + "</div>";
 function infoHtml(r) {
@@ -277,6 +294,7 @@ function clusterIcon(count) {
 async function initWorldMap() {
   try {
     await loadGoogle();
+    await homeReady;
     const { Map, InfoWindow } = await google.maps.importLibrary("maps");
     const { Marker } = await google.maps.importLibrary("marker");
     $("mapCanvas").innerHTML = "";
@@ -445,7 +463,8 @@ function showHit(i) {
 }
 
 // Star counts for the filter and legend: every pin once the world list has loaded, otherwise just ours.
-const pinStars = () => world.loaded ? world.markers.map((m) => ({ stars: m.stars })) : ALL;
+const pinStars = () => world.loaded ? world.markers.map((m) => ({ stars: m.stars })) : homeLoaded ? ALL
+  : [1, 2, 3].flatMap((s) => Array(DATA.starCounts[s]).fill({ stars: s }));  // the page's own counts until the restaurants arrive
 function renderMapStars() {
   const list = pinStars();
   const opts = [{ s: 0, label: t("all"), n: list.length }].concat([1, 2, 3].map((s) => ({ s, label: starIcons(s), n: list.filter((r) => r.stars === s).length })));
@@ -496,6 +515,10 @@ window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY) renderWi
 ["sb:wishlist", "sb:account"].forEach((ev) => window.addEventListener(ev, (e) => { if (e.type === "sb:account" || e.detail.from === "sync") renderWishlist(); }));
 
 renderAll();
+homeReady.then(() => {
+  renderWishlist(); renderMapLegend();
+  if (document.activeElement === $("homeQ")) renderResults();
+}).catch(() => {});
 if (GOOGLE_MAPS_API_KEY) initWorldMap(); else $("map").hidden = true;
 // Keep a country's list open when the page redraws (e.g. after a language change).
 document.addEventListener("toggle", (e) => {

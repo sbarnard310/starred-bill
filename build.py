@@ -289,6 +289,35 @@ def public(r):
     return {k: v for k, v in r.items() if not k.startswith("_") and k not in ("chefSource", "michelinId")}
 
 
+# Pages carry only the translations they can show, which keeps the biggest (France, Italy, Japan) light enough for phones.
+SUFFIX_AT_END = re.compile("(" + "|".join(sorted(LANG_SUFFIXES, key=len, reverse=True)) + ")$")
+# Restaurant fields that come in several languages. Restaurant names stay in every script, as pages show one under the other.
+RESTAURANT_TEXTS = ("area", "cityName", "cuisine", "dinnerNote", "lunchNote", "changeNote", "statusNote", "address", "notice")
+# Place fields that come in several languages (names, the texts on the page and how a name reads mid-sentence).
+PAGE_TEXTS = ("name", "country", "inSentence", "searchEx") + PLACE_TEXTS
+
+
+def lang_suffixes(langs):
+    """The data suffixes a page's languages read, e.g. ["en", "yue"] -> {"Yue", "Zh"} (Cantonese falls back to Chinese)."""
+    return {code[0].upper() + code[1:] for code in langs if code != "en"} | ({"Zh"} if "yue" in langs else set())
+
+
+def only_langs(data, suffixes, texts):
+    """A copy of a dict (and the dicts and lists inside it) without blank fields or translations into languages
+    outside `suffixes`, e.g. a page offering English and French keeps areaFr but not areaJa."""
+    if isinstance(data, list):
+        return [only_langs(x, suffixes, texts) for x in data]
+    if not isinstance(data, dict):
+        return data
+    out = {}
+    for k, v in data.items():
+        m = SUFFIX_AT_END.search(k)
+        if v == "" or (m and k[:m.start()] in texts and m.group(1) not in suffixes):
+            continue
+        out[k] = only_langs(v, suffixes, texts)
+    return out
+
+
 def names(p):
     """A place's name in every language it has, e.g. {"name": "Paris", "nameZh": "巴黎", "nameFr": "Paris"}."""
     return {k: p[k] for k in ["name"] + ["name" + s for s in LANG_SUFFIXES] if p.get(k)}
@@ -465,21 +494,24 @@ def build_place(p):
     for field in PLACE_TEXTS:
         for suffix in ("",) + LANG_SUFFIXES:
             page[field + suffix] = inherited(p, field + suffix) or ""
-    data = {"page": page, "languages": inherited(p, "languages") or DEFAULT_LANGUAGES, "restaurants": [public(r) for r in rs], "currencies": CURRENCIES,
-            "switchable": currency_data.get("switchable", []), "rateDate": currency_data.get("rateDate")}
-    titles = page["titles"] = page_titles(p, page, data["languages"], starred)
+    langs = inherited(p, "languages") or DEFAULT_LANGUAGES
+    suffixes = lang_suffixes(langs)
+    titles = page["titles"] = page_titles(p, page, langs, starred)
 
     stars = [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)]
     menus = sorted((r for r in starred if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
     where = in_sentence(p)
     description = place_description(where, starred, stars, menus)
     intro = page["intro"]
-    langs = data["languages"]
     lang_paths = {lang: lang_path(p["path"], lang) for lang in langs}
     for item in page["crumbs"] + [i for row in page["links"] for i in row["items"]]:
         item_langs = place_langs(places[paths[item["path"]]])
         if len(item_langs) > 1:
             item["langs"] = item_langs
+    # The website and city ids are only used by the build (structured data, page membership).
+    data = {"page": only_langs(page, suffixes, PAGE_TEXTS), "languages": langs,
+            "restaurants": [only_langs({k: v for k, v in public(r).items() if k not in ("website", "city", "cityPath")}, suffixes, RESTAURANT_TEXTS) for r in rs],
+            "currencies": CURRENCIES, "switchable": currency_data.get("switchable", []), "rateDate": currency_data.get("rateDate")}
     lang_scripts = "".join(f'<script src="/assets/lang-{c}.js?v={assets[f"lang-{c}.js"]}"></script>\n' for c in langs if c in LANG_FILES)
     if set(langs) & set(RTL_LANGUAGES):
         lang_scripts += f'<link rel="stylesheet" href="/assets/rtl.css?v={assets["rtl.css"]}">\n'
@@ -939,6 +971,52 @@ def no_star_countries():
     return [dict(g, countries=[c for c in g["countries"] if c["name"] not in starred]) for g in data["regions"]]
 
 
+def write_data(name, obj):
+    """A file under /data/ that pages load; its address carries a version, so browsers and the app keep it until it changes."""
+    body = as_json(obj).encode("utf-8")
+    path = OUT / "data" / name
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(body)
+    return f"/data/{name}?v={hashlib.sha1(body).hexdigest()[:10]}"
+
+
+def rows_with_cities(rs, cols, city_cols, value):
+    """Compact rows for a data file: one list of values per restaurant in `cols` order, its place given as a number
+    in a separate list of places (`city_cols`), so the place's address and names aren't repeated for every restaurant.
+    Missing values are null, and trailing ones are left off."""
+    cities, index, rows = [], {}, []
+    for r in rs:
+        if r["cityPath"] not in index:
+            index[r["cityPath"]] = len(cities)
+            cities.append([r.get(c, "") for c in city_cols])
+        row = [index[r["cityPath"]] if c == "city" else value(r, c) for c in cols]
+        while row and row[-1] in (None, ""):
+            row.pop()
+        rows.append(row)
+    return {"cols": cols, "cityCols": city_cols, "cities": cities, "r": rows}
+
+
+def build_home_data(starred):
+    """/data/home.json: the homepage's restaurants for the map, search and wishlist, plus those that lost their stars
+    but are still open (the map's grey pins; home.js picks the recent ones). Read by homeRows() in home.js."""
+    def value(r, c):
+        if c == "town":  # restaurants listed under a region or country rather than a city carry their town, e.g. Aughton
+            return r["area"].split(", ")[0] if r["cityType"] != "city" and r.get("area") else None
+        if c in ("lat", "lng"):
+            return round(r[c], 5) if r.get(c) is not None else None
+        if c == "dinnerType":  # set menus, the usual kind, are left blank
+            return None if r.get(c, "menu") == "menu" else r[c]
+        if c == "changeDate":  # only needed to tell how recently a restaurant lost its stars
+            return r.get(c) if r.get("status") else None
+        return r.get(c)
+    former = [r for r in restaurants if r.get("status") in ("lost", "changed") and r.get("lat") is not None]
+    cols = ["id", "name", "stars", "cuisine", "lat", "lng", "dinner", "dinnerType", "rating", "city", "chef", "town", "nameZh", "nameJa", "cuisineZh",
+            "status", "formerStars", "changeDate", "statusNote"]
+    city_cols = ["cityPath", "cityName", "cityNameZh", "country", "cur"]
+    return write_data("home.json", dict(rows_with_cities(starred, cols, city_cols, value),
+                                        former=rows_with_cities(former, cols, city_cols, value)))
+
+
 def build_home():
     starred = [r for r in restaurants if not r.get("status")]
     world_url, world_total = build_world(starred)
@@ -955,23 +1033,16 @@ def build_home():
             "from": {"price": menus[0]["dinner"], "cur": menus[0]["cur"], "name": menus[0]["name"], "nameZh": menus[0].get("nameZh", "")} if menus else None,
             "cities": [dict(link(q), type=q["type"]) for q in cities],
             "guide": guide.get(c["id"]), "continent": CONTINENT_OF.get(c["id"], ""),
+            "own": [sum(1 for r in mine if r["stars"] == s) for s in (1, 2, 3)],  # our own [one-, two-, three-star] counts
         })
     no_continent = sorted(c["name"] for c in countries + soon if not c["continent"])
     if no_continent:
         print("  Countries with no continent (add them to CONTINENTS in build.py):", ", ".join(no_continent))
     groups = [link(g) for g in by_size(g for g in pages if g["type"] == "group")]
-    keep = ("id", "name", "nameZh", "nameJa", "stars", "cuisine", "cuisineZh", "lat", "lng", "dinner", "dinnerType", "cur", "rating",
-            "country", "cityName", "cityNameZh", "cityPath", "chef")
     data = {
-        # Restaurants listed under a region or country rather than a city also carry their town, e.g. Aughton.
-        "restaurants": [dict({k: r[k] for k in keep if r.get(k) is not None}, **({"town": r["area"].split(", ")[0]} if r["cityType"] != "city" and r.get("area") else {}))
-                        for r in starred],
-        "knownIds": [r["id"] for r in starred],
-        # Restaurants that lost their stars but are still open, for the map's grey pins (home.js picks the recent ones).
-        "former": [dict({k: r[k] for k in keep + ("status", "formerStars", "changeDate") if r.get(k) is not None},
-                        **{k: v for k, v in r.items() if k.startswith("statusNote")},
-                        **({"town": r["area"].split(", ")[0]} if r["cityType"] != "city" and r.get("area") else {}))
-                   for r in restaurants if r.get("status") in ("lost", "changed") and r.get("lat") is not None],
+        # The restaurants themselves (map pins, search, the wishlist) are in /data/home.json, loaded as the page opens.
+        "homeUrl": build_home_data(starred),
+        "starCounts": [len(starred)] + [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)],
         "countries": countries, "groups": groups, "soon": soon, "noStars": no_star_countries(),
         "places": [dict(link(p), type=p["type"]) for p in by_size(pages)],
         "currencies": CURRENCIES, "switchable": currency_data.get("switchable", []), "updated": site.get("updated", ""),
@@ -990,7 +1061,8 @@ def build_home():
         "eyebrow": "Michelin star restaurants, priced",
         "h1": "What a Michelin star <em>costs</em>, city by city.",
         "heroText": "Dinner, lunch and wine pairing prices per person at Michelin-starred restaurants, side by side and linked to where each price came from.",
-        "destinations": cards, "data": as_json(data),
+        # English only; Chinese names stay for searching.
+        "destinations": cards, "data": as_json(only_langs(data, {"Zh"}, PAGE_TEXTS)), "homeUrl": data["homeUrl"],
     }))
 
 
@@ -1148,10 +1220,22 @@ def build_pick(near_url):
     }))
 
 
+COMPARE_PARTS = 64
+
+
+def compare_part(rid):
+    """Which /data/compare/ file holds a restaurant. compare.js works it out the same way (partOf)."""
+    h = 0
+    for ch in rid:
+        h = (h * 31 + ord(ch)) % 1000003
+    return h % COMPARE_PARTS
+
+
 def build_compare(starred):
     """/compare/: up to three restaurants from the visitor's wishlist as till receipts side by side, in one currency.
-    The prices come from /data/compare.json, one compact row per starred restaurant (columns listed in the file).
-    The page is personal (it reads the wishlist in the browser), so it stays out of search engines and the sitemap."""
+    The prices come from /data/compare/<n>.json: the starred restaurants shared between COMPARE_PARTS small files by
+    compare_part() of their id, one compact row each (columns listed in each file), so the page loads only the files
+    holding the visitor's wishlist. The page is personal (it reads the wishlist in the browser), so it stays out of search engines and the sitemap."""
     cols = ["id", "name", "stars", "cuisine", "where", "path", "country", "cur", "dinner", "dinnerType", "dinnerNote", "lunch", "lunchType",
             "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice"]
     rows = [[r["id"], r["name"], r["stars"], r.get("cuisine", ""), near_where(r), r["cityPath"], r["country"], r["cur"],
@@ -1159,8 +1243,10 @@ def build_compare(starred):
              r.get("lunchNote", ""), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"),
              r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0]
             for r in starred]
-    body = as_json({"cols": cols, "r": rows}).encode("utf-8")
-    (OUT / "data" / "compare.json").write_bytes(body)
+    parts = [[] for _ in range(COMPARE_PARTS)]
+    for row in rows:
+        parts[compare_part(row[0])].append(row)
+    urls = [write_data(f"compare/{i}.json", {"cols": cols, "r": part}) for i, part in enumerate(parts)]
     lede = ("Tick two or three restaurants from your wishlist to see their bills side by side: dinner, lunch and the wine pairing, "
             "all in the currency you choose.")
     write("/compare/", render("compare.html", {
@@ -1171,7 +1257,7 @@ def build_compare(starred):
         "lede": e(lede),
         "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "switchable": currency_data.get("switchable", []),
                          "rateDate": currency_data.get("rateDate"),
-                         "compareUrl": f"/data/compare.json?v={hashlib.sha1(body).hexdigest()[:10]}"}),
+                         "compareParts": urls}),
     }))
 
 
@@ -1196,17 +1282,17 @@ def build_redirects():
 
 def build_account_pages():
     """The account page (/account/) and the privacy notice (/privacy/). Signing in and the lists run in the browser (account.js)."""
-    keep = ("id", "name", "nameZh", "nameJa", "stars", "formerStars", "status", "area", "areaZh", "areaJa", "areaEs", "areaIt", "areaKo", "nameKo", "areaDa", "areaSv", "areaIs", "areaCa", "areaTh", "nameTh",
-            "cityName", "cityNameZh", "cityNameJa", "cityNameEs", "cityNameIt", "cityNameKo", "cityPath", "country", "cur", "dinner", "dinnerType")
+    # The restaurants (for the lists and progress) are in /data/account.json, loaded only once someone is signed in.
+    # The page is English only, so the file carries English names; each restaurant's place is a number in its list of places.
+    cols = ["id", "name", "stars", "formerStars", "status", "area", "city", "dinner", "dinnerType"]
     data = {
-        "restaurants": [dict({k: r[k] for k in keep if r.get(k) not in (None, "")}, chain=r["_chain"]) for r in restaurants],
+        "accountUrl": write_data("account.json", rows_with_cities(restaurants, cols, ["cityPath", "cityName", "country", "cur"], lambda r, c: r.get(c))),
         "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] != "group" and starred_n[q["id"]])],
-        "knownIds": [r["id"] for r in restaurants],
         "currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES,
     }
     write("/account/", render("account.html", {
         "title": "Your account · The Starred Bill", "description": "Your wishlist and the Michelin-starred restaurants you've been to, on any device.",
-        "canonical": SITE_URL + "/account/", "data": as_json(data),
+        "canonical": SITE_URL + "/account/", "data": as_json(only_langs(data, set(), PAGE_TEXTS)),
     }))
     write("/privacy/", render("privacy.html", {
         "title": "Privacy notice · The Starred Bill", "description": "What The Starred Bill keeps about you and why: your wishlist and been-there list, visit statistics, cookie choices, and how to see or delete your data.",

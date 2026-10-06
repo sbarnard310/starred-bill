@@ -409,42 +409,75 @@ function stub(r) {
     : '<span class="stub-price">' + esc(v.text) + "</span>" + (v.extra ? '<span class="stub-sub">' + esc(v.extra) + "</span>" : "") +
       '<span class="stub-sub">' + (wine ? esc(t("rcptPlusWine", { p: money(wine, r) })) : esc(t("rcptNoPairing"))) + "</span>") + "</span>";
 }
+// Long lists (France has over 600 restaurants) are drawn in batches as they scroll into view, so a phone isn't asked
+// to build them all at once. The "No longer starred" rows follow the last batch.
+const LEDGER_STEP = 40;
+const ledger = { rows: [], shown: 0, key: "" };
+function ledgerRow(r) {
+  const on = onWishlist(r);
+  return '<div class="row rc-row' + (L() && r.noLunch ? " nolunch" : "") + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
+    '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cuisine) + '" title="' + esc(t("showOnly", { cat: cuisineOf(r) })) + '">' + esc(cuisineOf(r)) + "</button></span>" +
+    '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
+    '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + "</span>" : "") : '<span class="num muted">–</span>') + "</span>" +
+    '<span class="notes" role="cell">' + (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc(noteOf(r) || "–") +
+      (srcOf(r) && srcTypeOf(r) !== "none" ? ' <a class="src" href="' + esc(srcOf(r)) + '" target="_blank" rel="noopener" title="' + esc(t("srcTitle")) + '">' + (srcTypeOf(r) === "site" ? t("srcSite") : t("srcPress")) + "</a>" : "") + "</span>" +
+    '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + "</span>" + stub(r) + "</span>" + receipt(r) + actsCell(r) +
+    '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
+    "</div>";
+}
+function formerHtml(former) {
+  if (!former.length) return "";
+  const label = { lost: t("stLost"), closed: t("stClosed"), changed: t("stChanged") };
+  return '<div class="row divider" role="row"><span role="cell"><strong>' + t("formerTitle") + '</strong><span class="note">' + t("formerNote") + "</span></span></div>" +
+    former.sort((a, b) => nameOf(a).localeCompare(nameOf(b))).map((r) =>
+      '<div class="row former' + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
+      '<span class="cat" role="cell"><span class="tag">' + esc(cuisineOf(r)) + "</span></span>" +
+      '<span class="stars-cell" role="cell">' + starIcons(r.formerStars) + '<span class="note">' + t("formerly") + "</span></span>" +
+      '<span class="rating-cell" role="cell"><span class="num muted">–</span></span>' +
+      '<span class="notes" role="cell"><span class="status-pill status-' + esc(r.status) + '">' + (r.change === "down" ? "▼ " : "") + (label[r.status] || label.changed) + "</span>" + esc(pick(r, "statusNote")) + "</span>" +
+      '<span class="dinner" role="cell"><span class="stub"><span class="stub-price muted">–</span></span></span>' +
+      actsCell(r) + '<span class="wish-cell" role="cell">' + beenButton(r) + "</span></div>").join("");
+}
+// What follows the drawn rows: a button for the next batch (also pressed by scrolling near it), or the former ones.
+const ledgerTail = () => ledger.rows.length > ledger.shown
+  ? '<div class="empty ledger-more" role="row"><span role="cell"><button type="button" class="btn-line" id="ledgerMore">+ ' + esc(t("exploreMore", { n: ledger.rows.length - ledger.shown })) + "</button></span></div>"
+  : formerHtml(formerRows());
+function moreLedger() {
+  const more = document.querySelector("#ledger .ledger-more");
+  if (!more) return;
+  const from = ledger.shown;
+  ledger.shown += LEDGER_STEP * 2;
+  more.insertAdjacentHTML("beforebegin", ledger.rows.slice(from, ledger.shown).map(ledgerRow).join(""));
+  more.insertAdjacentHTML("afterend", ledgerTail());
+  more.remove();
+  observeThumbs();
+  watchLedgerEnd();
+}
+const ledgerEnd = "IntersectionObserver" in window ? new IntersectionObserver((entries) => { if (entries.some((e) => e.isIntersecting)) moreLedger(); }, { rootMargin: "800px 0px" }) : null;
+function watchLedgerEnd() {
+  if (!ledgerEnd) return;
+  ledgerEnd.disconnect();
+  const more = $("ledgerMore");
+  if (more) ledgerEnd.observe(more);
+}
+document.addEventListener("click", (e) => { if (e.target.closest("#ledgerMore")) moreLedger(); });
 function renderLedger() {
   const rows = filtered();
+  // The same filters keep as many rows drawn as before (e.g. after ticking a heart far down the list); new ones start again.
+  const key = [state.activeStars, state.activeCat, state.diet, state.wishOnly, state.changesOnly, state.beenOnly, state.query, state.sort].join("|");
+  if (key !== ledger.key) { ledger.key = key; ledger.shown = LEDGER_STEP; }
+  ledger.rows = rows;
   let html = '<div class="row head" role="row"><span role="columnheader">' + t("hRestaurant") + '</span><span role="columnheader">' + t("hCuisine") + '</span><span role="columnheader">' + t("hStars") + '</span><span role="columnheader">' + t("hGoogle") + '</span><span role="columnheader">' + t(L() ? "hNotesLunch" : "hNotes") + '</span><span role="columnheader" style="text-align:right">' + t("hPrice") + '</span><span role="columnheader" class="sr-only">' + t("hWish") + "</span></div>";
   if (!rows.length && !EMPTY) {
     html += '<div class="empty">' + (state.wishOnly && !RESTAURANTS.some(onWishlist) ? t("emptyWish")
       : t("noMatch") + ' <button type="button" class="linkish" id="clearFilters">' + t("clearFilters") + "</button>") + "</div>";
   }
-  rows.forEach((r) => {
-    const on = onWishlist(r);
-    html += '<div class="row rc-row' + (L() && r.noLunch ? " nolunch" : "") + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
-      '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cuisine) + '" title="' + esc(t("showOnly", { cat: cuisineOf(r) })) + '">' + esc(cuisineOf(r)) + "</button></span>" +
-      '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
-      '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + "</span>" : "") : '<span class="num muted">–</span>') + "</span>" +
-      '<span class="notes" role="cell">' + (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc(noteOf(r) || "–") +
-        (srcOf(r) && srcTypeOf(r) !== "none" ? ' <a class="src" href="' + esc(srcOf(r)) + '" target="_blank" rel="noopener" title="' + esc(t("srcTitle")) + '">' + (srcTypeOf(r) === "site" ? t("srcSite") : t("srcPress")) + "</a>" : "") + "</span>" +
-      '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + "</span>" + stub(r) + "</span>" + receipt(r) + actsCell(r) +
-      '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
-      "</div>";
-  });
+  html += rows.slice(0, ledger.shown).map(ledgerRow).join("") + ledgerTail();
   const former = formerRows();
-  if (former.length) {
-    const label = { lost: t("stLost"), closed: t("stClosed"), changed: t("stChanged") };
-    html += '<div class="row divider" role="row"><span role="cell"><strong>' + t("formerTitle") + '</strong><span class="note">' + t("formerNote") + "</span></span></div>";
-    former.sort((a, b) => nameOf(a).localeCompare(nameOf(b))).forEach((r) => {
-      html += '<div class="row former' + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
-        '<span class="cat" role="cell"><span class="tag">' + esc(cuisineOf(r)) + "</span></span>" +
-        '<span class="stars-cell" role="cell">' + starIcons(r.formerStars) + '<span class="note">' + t("formerly") + "</span></span>" +
-        '<span class="rating-cell" role="cell"><span class="num muted">–</span></span>' +
-        '<span class="notes" role="cell"><span class="status-pill status-' + esc(r.status) + '">' + (r.change === "down" ? "▼ " : "") + (label[r.status] || label.changed) + "</span>" + esc(pick(r, "statusNote")) + "</span>" +
-        '<span class="dinner" role="cell"><span class="stub"><span class="stub-price muted">–</span></span></span>' +
-        actsCell(r) + '<span class="wish-cell" role="cell">' + beenButton(r) + "</span></div>";
-    });
-  }
   $("ledger").innerHTML = html;
   renderFilterSummary(rows.length);
   observeThumbs();
+  watchLedgerEnd();
   updateMap(true);
   $("showing").textContent = t("showing", { a: rows.length, b: RESTAURANTS.length }) + (former.length ? t("showingFormer", { c: former.length }) : "") +
     (acctSignedIn() && RESTAURANTS.some(onBeen) ? " · " + t("beenProgress", { n: RESTAURANTS.filter(onBeen).length, total: RESTAURANTS.length }) : "");
@@ -528,7 +561,7 @@ const thumbObserver = "IntersectionObserver" in window ? new IntersectionObserve
 }, { rootMargin: "300px 0px" }) : null;
 function observeThumbs() {
   if (!GOOGLE_MAPS_API_KEY || !thumbObserver) return;
-  document.querySelectorAll(".thumb[data-pid]").forEach((el) => thumbObserver.observe(el));
+  document.querySelectorAll(".thumb[data-pid]:not([data-watched])").forEach((el) => { el.dataset.watched = "1"; thumbObserver.observe(el); });
 }
 
 const mapState = { map: null, info: null, markers: new Map(), lost: new Map(), near: null };

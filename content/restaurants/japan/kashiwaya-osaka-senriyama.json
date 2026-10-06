@@ -7,8 +7,8 @@
   "rating": 4.5,
   "reviews": 323,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Kaiseki course, from; including tax, service extra",
+  "sourceType": "site",
   "lunchNote": "Open for lunch · Mon–Sat",
   "lunchNoteJa": "ランチ営業あり・月〜土",
   "website": "https://jp-kashiwaya.com/",
@@ -17,5 +17,8 @@
   "placeId": "ChIJqfvZeunkAGAR_NKRUEtRPXE",
   "michelinId": "1193128",
   "chef": "Hideaki Matsuo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 22000,
+  "dinnerNoteJa": "懐石コース（最安値）・税込・サービス料別",
+  "source": "https://jp-kashiwaya.com/senriyama/"
 }

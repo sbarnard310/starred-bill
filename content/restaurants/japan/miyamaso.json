@@ -7,8 +7,8 @@
   "rating": 4.6,
   "reviews": 250,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Kaiseki course, from; including tax and service",
+  "sourceType": "site",
   "website": "https://miyamasou.jp/",
   "lat": 35.233154,
   "lng": 135.793011,
@@ -18,5 +18,14 @@
     "vegetarian"
   ],
   "chef": "Hisato Nakahigashi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 22770,
+  "dinnerNoteJa": "懐石コース（最安値）・税サ込",
+  "source": "https://miyamasou.jp/",
+  "lunch": 22770,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://miyamasou.jp/",
+  "lunchNote": "Lunch kaiseki, from; including tax and service",
+  "lunchNoteJa": "昼懐石（最安値）・税サ込"
 }

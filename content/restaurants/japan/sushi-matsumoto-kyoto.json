@@ -7,8 +7,8 @@
   "rating": 4.1,
   "reviews": 264,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Sushi omakase (others from ¥26,400); including tax and service",
+  "sourceType": "press",
   "lunchNote": "Open for lunch · Thu–Mon",
   "lunchNoteJa": "ランチ営業あり・木〜月",
   "lat": 35.003377,
@@ -16,5 +16,8 @@
   "placeId": "ChIJ6dIeosEIAWARXxd2aOzLKjQ",
   "michelinId": "1192982",
   "chef": "Daisuke Matsumoto",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 41800,
+  "dinnerNoteJa": "鮨おまかせ（他に26,400円のコースあり）・税サ込",
+  "source": "https://www.tablecheck.com/shops/sushigion-matsudaya/reserve"
 }

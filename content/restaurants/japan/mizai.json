@@ -7,13 +7,16 @@
   "rating": 4.3,
   "reviews": 234,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Kaiseki course; including tax",
+  "sourceType": "press",
   "website": "https://mizai.jp/",
   "lat": 35.002993,
   "lng": 135.782364,
   "placeId": "ChIJnds0DdsIAWARE0dXPUqNYkc",
   "michelinId": "1193053",
   "chef": "Hitoshi Ishihara",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 78000,
+  "dinnerNoteJa": "懐石コース・税込",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260301/26002279/"
 }

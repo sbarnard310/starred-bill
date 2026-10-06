@@ -7,11 +7,20 @@
   "rating": 4.4,
   "reviews": 141,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Omakase course, from; including tax and service",
+  "sourceType": "press",
   "website": "https://gionmaruyama.com/",
   "lat": 34.998809,
   "lng": 135.774574,
   "placeId": "ChIJxZU0isYIAWARTt94AyTfVco",
-  "michelinId": "1192955"
+  "michelinId": "1192955",
+  "dinner": 37950,
+  "dinnerNoteJa": "おまかせコース（最安値）・税サ込",
+  "source": "https://www.tablecheck.com/shops/gionmaruyama-kenninji/reserve",
+  "lunch": 18975,
+  "lunchType": "menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.tablecheck.com/shops/gionmaruyama-kenninji/reserve",
+  "lunchNote": "Lunch kaiseki, from; including tax and service",
+  "lunchNoteJa": "昼懐石（最安値）・税サ込"
 }

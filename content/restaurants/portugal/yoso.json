@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 155,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 160,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://yoso-omakase.com/s/MENU-E-RECOMENDACOES-YOSO-2026.pdf",
+  "lunchNote": "Open for lunch · Tue–Sat",
   "website": "https://yoso-omakase.com/",
   "lat": 38.7058434,
   "lng": -9.1706413,
@@ -16,8 +19,7 @@
   "michelinId": "1214668",
   "chef": "Habner Gomes",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
-  "lunchNote": "Open for lunch · Tue–Sat",
+  "dinnerNotePt": "Menu de degustação",
   "lunchNotePt": "Aberto ao almoço · ter.–sáb.",
   "cuisinePt": "Japonesa"
 }

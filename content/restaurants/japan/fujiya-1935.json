@@ -7,8 +7,8 @@
   "rating": 4.5,
   "reviews": 247,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu; including tax, service extra",
+  "sourceType": "site",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
@@ -18,5 +18,9 @@
   "placeId": "ChIJTZeAZyTnAGARyWYAvB_qJf4",
   "michelinId": "1193247",
   "chef": "Tetsuya Fujiwara",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 35000,
+  "dinnerNoteJa": "テイスティングメニュー・税込・サービス料別",
+  "source": "https://fujiya1935.com/en/",
+  "wine": 18500
 }

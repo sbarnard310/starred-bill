@@ -7,8 +7,8 @@
   "rating": 4.9,
   "reviews": 102,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tempura course; including tax, service extra",
+  "sourceType": "press",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
@@ -21,5 +21,8 @@
     "vegan"
   ],
   "chef": "Ryo Nishioka",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 16500,
+  "dinnerNoteJa": "天ぷらコース・税込・サービス料別",
+  "source": "https://www.tablecheck.com/shops/tenjaku/reserve"
 }

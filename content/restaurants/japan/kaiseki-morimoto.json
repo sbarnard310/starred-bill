@@ -6,13 +6,16 @@
   "cuisine": "Japanese",
   "rating": 4.4,
   "reviews": 77,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinnerNote": "Tabelog range ¥8,000–9,999",
+  "sourceType": "press",
   "lunchNote": "Open for lunch · Wed–Mon",
   "lunchNoteJa": "ランチ営業あり・水〜月",
   "lat": 34.509299,
   "lng": 135.793285,
   "placeId": "ChIJLQGaxiYzAWARPfqKfemGuUU",
-  "michelinId": "1197158"
+  "michelinId": "1197158",
+  "dinner": 8000,
+  "dinnerNoteJa": "食べログの価格帯 8,000～9,999円",
+  "source": "https://tabelog.com/en/nara/A2903/A290302/29009412/"
 }

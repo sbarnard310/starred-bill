@@ -7,12 +7,15 @@
   "rating": 4.7,
   "reviews": 50,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
   "lat": 34.697522,
   "lng": 135.499685,
   "placeId": "ChIJJ2c3rRHnAGARy4Y2SErhQZI",
   "michelinId": "1193133",
   "chef": "Yoshifumi Mori",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 44000,
+  "dinnerNoteJa": "テイスティングメニュー",
+  "source": "https://www.travelsforstars.com/blog/2026/06/15/kahala-osaka"
 }

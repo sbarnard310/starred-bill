@@ -12,8 +12,11 @@
   "rating": 4.8,
   "reviews": 231,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 99,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/st-josef-weststeiermark/restaurant-broadmoar/",
+  "lunchNote": "Open for lunch · Saturdays",
   "website": "https://www.broadmoar.com",
   "lat": 46.9091181,
   "lng": 15.3567653,
@@ -25,8 +28,7 @@
   ],
   "chef": "Patrick Faist",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "lunchNote": "Open for lunch · Saturdays",
+  "dinnerNoteDe": "Degustationsmenü",
   "lunchNoteDe": "Mittags geöffnet · Samstag",
   "cuisineDe": "Saisonal"
 }

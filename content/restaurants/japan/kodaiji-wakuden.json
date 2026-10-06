@@ -7,10 +7,8 @@
   "rating": 4.7,
   "reviews": 207,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch",
-  "lunchNoteJa": "ランチ営業あり",
+  "dinnerNote": "Kaiseki course, from; including tax and service",
+  "sourceType": "site",
   "website": "https://www.wakuden.jp/",
   "lat": 35.001635,
   "lng": 135.779734,
@@ -22,5 +20,14 @@
     "vegan"
   ],
   "chef": "Shinsuke Tsuruta",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 55000,
+  "dinnerNoteJa": "懐石コース（最安値）・税サ込",
+  "source": "https://www.wakuden.jp/ryotei/kodaiji/",
+  "lunch": 33000,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.wakuden.jp/ryotei/kodaiji/",
+  "lunchNote": "Lunch kaiseki, from; including tax and service",
+  "lunchNoteJa": "昼懐石（最安値）・税サ込"
 }

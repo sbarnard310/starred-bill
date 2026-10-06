@@ -9,11 +9,15 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
-  "lunchNote": "Open for lunch · Tue–Sun",
-  "lunchNoteJa": "ランチ営業あり・火〜日",
   "website": "https://www.kokyu-kyoto.com/",
   "lat": 35.031138,
   "lng": 135.769534,
   "placeId": "ChIJCw16RWgIAWARcbvfN3lQrpQ",
-  "michelinId": "1192958"
+  "michelinId": "1192958",
+  "lunch": 14000,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.kokyu-kyoto.com/menu_plan.html",
+  "lunchNote": "Lunch kaiseki",
+  "lunchNoteJa": "昼懐石"
 }

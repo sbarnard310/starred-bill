@@ -7,11 +7,8 @@
   "rating": 4.6,
   "reviews": 53,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "noLunch": true,
-  "lunchNote": "Dinner only",
-  "lunchNoteJa": "ディナーのみ",
+  "dinnerNote": "Omakase course",
+  "sourceType": "press",
   "website": "https://www.oryori-yamada.jp/",
   "lat": 34.696644,
   "lng": 135.503821,
@@ -25,5 +22,14 @@
     "kosher"
   ],
   "chef": "Akihiro Yamada",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 26400,
+  "dinnerNoteJa": "おまかせコース",
+  "source": "https://omakaseje.com/restaurants/mm528653",
+  "lunch": 26400,
+  "lunchType": "menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://omakaseje.com/restaurants/mm528653",
+  "lunchNote": "Lunch omakase",
+  "lunchNoteJa": "昼のおまかせコース"
 }

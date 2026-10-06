@@ -8,8 +8,11 @@
   "rating": 5,
   "reviews": 13,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 295,
+  "dinnerNote": "Tasting menu (other menus from €215)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/st-anton-am-arlberg/gourmetrestaurant-tannenhof/",
+  "lunchNote": "Open for lunch · Saturdays",
   "website": "https://gourmet.hoteltannenhof.net/",
   "lat": 47.1397632,
   "lng": 10.2770669,
@@ -21,8 +24,7 @@
   ],
   "chef": "Dennis Ilies",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "lunchNote": "Open for lunch · Saturdays",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 215 €)",
   "lunchNoteDe": "Mittags geöffnet · Samstag",
   "cuisineDe": "Alpin"
 }

@@ -7,11 +7,14 @@
   "rating": 5,
   "reviews": 397,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Set course; including tax, service extra",
+  "sourceType": "press",
   "website": "https://ido-kyoto.com/shiro/",
   "lat": 35.012542,
   "lng": 135.758148,
   "placeId": "ChIJaY8QbwHhAGARbgaIQp47wZI",
-  "michelinId": "1215790"
+  "michelinId": "1215790",
+  "dinner": 21000,
+  "dinnerNoteJa": "コース料理・税込・サービス料別",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260202/26041485/"
 }

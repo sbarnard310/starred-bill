@@ -7,8 +7,8 @@
   "rating": 4.3,
   "reviews": 127,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Kaiseki course, from; including tax and service",
+  "sourceType": "site",
   "lunchNote": "Open for lunch · Thu–Tue",
   "lunchNoteJa": "ランチ営業あり・木〜火",
   "website": "https://kyoto-kitcho.com/restaurant/hana/",
@@ -21,5 +21,8 @@
     "gluten-free"
   ],
   "chef": "Kunio Tokuoka",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinner": 18975,
+  "dinnerNoteJa": "懐石コース（最安値）・税サ込",
+  "source": "https://kyoto-kitcho.com/hana-dishes/"
 }

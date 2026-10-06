@@ -6,11 +6,9 @@
   "cuisine": "Japanese",
   "rating": 4.9,
   "reviews": 51,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Wed–Thu, Sat–Sun",
-  "lunchNoteJa": "ランチ営業あり・水〜木, 土〜日",
+  "dinnerType": "spend",
+  "dinnerNote": "Tabelog range ¥20,000–29,999",
+  "sourceType": "press",
   "website": "https://kyo-yokoi.com",
   "lat": 34.99764,
   "lng": 135.76235,
@@ -19,5 +17,14 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "dinner": 20000,
+  "dinnerNoteJa": "食べログの価格帯 20,000～29,999円",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260201/26040461/",
+  "lunch": 15000,
+  "lunchType": "spend",
+  "lunchSourceType": "press",
+  "lunchSource": "https://tabelog.com/en/kyoto/A2601/A260201/26040461/",
+  "lunchNote": "Tabelog range ¥15,000–19,999",
+  "lunchNoteJa": "食べログの価格帯 15,000～19,999円"
 }

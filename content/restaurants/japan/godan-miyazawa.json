@@ -7,10 +7,8 @@
   "rating": 4.6,
   "reviews": 255,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Wed–Mon",
-  "lunchNoteJa": "ランチ営業あり・水〜月",
+  "dinnerNote": "Kaiseki course; service extra",
+  "sourceType": "site",
   "website": "https://jiki-miyazawa.com/",
   "lat": 34.997973,
   "lng": 135.760946,
@@ -24,5 +22,14 @@
     "kosher"
   ],
   "chef": "Masato Miyazawa",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 22000,
+  "dinnerNoteJa": "懐石コース・サービス料別",
+  "source": "https://jiki-miyazawa.com/godan",
+  "lunch": 8800,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://jiki-miyazawa.com/godan",
+  "lunchNote": "Lunch kaiseki, from; service extra",
+  "lunchNoteJa": "昼懐石（最安値）・サービス料別"
 }

@@ -6,11 +6,9 @@
   "cuisine": "Sushi",
   "rating": 4.6,
   "reviews": 239,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Mon–Sat",
-  "lunchNoteJa": "ランチ営業あり・月〜土",
+  "dinnerType": "spend",
+  "dinnerNote": "Tabelog range ¥30,000–39,999",
+  "sourceType": "press",
   "lat": 34.678144,
   "lng": 135.518281,
   "placeId": "ChIJAQCJ1zbnAGARflJxiP7XttI",
@@ -19,5 +17,14 @@
     "gluten-free"
   ],
   "chef": "Yoshitaka Ishibuchi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 30000,
+  "dinnerNoteJa": "食べログの価格帯 30,000～39,999円",
+  "source": "https://tabelog.com/en/osaka/A2701/A270204/27095402/",
+  "lunch": 30000,
+  "lunchType": "spend",
+  "lunchSourceType": "press",
+  "lunchSource": "https://tabelog.com/en/osaka/A2701/A270204/27095402/",
+  "lunchNote": "Tabelog range ¥30,000–39,999",
+  "lunchNoteJa": "食べログの価格帯 30,000～39,999円"
 }

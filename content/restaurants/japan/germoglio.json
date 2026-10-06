@@ -7,11 +7,20 @@
   "rating": 4.7,
   "reviews": 55,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Set course; including tax",
+  "sourceType": "site",
   "website": "https://www.germogliokyoto.com/",
   "lat": 34.989348,
   "lng": 135.758377,
   "placeId": "ChIJP7gxbs8JAWARk9Yrfs2KEDA",
-  "michelinId": "1214112"
+  "michelinId": "1214112",
+  "dinner": 19800,
+  "dinnerNoteJa": "コース料理・税込",
+  "source": "https://www.germogliokyoto.com/menu",
+  "lunch": 19800,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.germogliokyoto.com/menu",
+  "lunchNote": "Lunch course; including tax",
+  "lunchNoteJa": "ランチコース・税込"
 }

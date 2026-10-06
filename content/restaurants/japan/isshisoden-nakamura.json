@@ -7,8 +7,8 @@
   "rating": 4.2,
   "reviews": 185,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Kaiseki course, from",
+  "sourceType": "press",
   "lunchNote": "Open for lunch · Mon–Sat",
   "lunchNoteJa": "ランチ営業あり・月〜土",
   "website": "https://www.kyoryori-nakamura.com/",
@@ -17,5 +17,8 @@
   "placeId": "ChIJzYVfPY4IAWAR9YmMkv5T9Rk",
   "michelinId": "1192881",
   "chef": "Motokazu Nakamura",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 44000,
+  "dinnerNoteJa": "懐石コース（最安値）",
+  "source": "https://www.travelsforstars.com/blog/2026/06/16/isshisoden-nakamura-kyoto"
 }

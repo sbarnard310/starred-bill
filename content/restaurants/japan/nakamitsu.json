@@ -7,8 +7,8 @@
   "rating": 5,
   "reviews": 41,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Set course; including tax",
+  "sourceType": "press",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
@@ -16,5 +16,8 @@
   "lat": 35.015149,
   "lng": 135.760926,
   "placeId": "ChIJhSTZHAAJAWARiC33aFVEck4",
-  "michelinId": "1216293"
+  "michelinId": "1216293",
+  "dinner": 25000,
+  "dinnerNoteJa": "コース料理・税込",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260202/26041739/"
 }

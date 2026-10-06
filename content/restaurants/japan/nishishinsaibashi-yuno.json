@@ -7,8 +7,8 @@
   "rating": 4.7,
   "reviews": 114,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Omakase course; including tax and service",
+  "sourceType": "site",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
@@ -18,5 +18,8 @@
   "placeId": "ChIJpwUlnRrnAGARzvys4gkX2t8",
   "michelinId": "1193268",
   "chef": "Katsuyuki Yuno",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 26620,
+  "dinnerNoteJa": "おまかせコース・税サ込",
+  "source": "https://yuuno-nisishinsaibashi.gorp.jp/"
 }

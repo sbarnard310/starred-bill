@@ -12,8 +12,11 @@
   "rating": 5,
   "reviews": 41,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 149,
+  "dinnerNote": "Tasting menu (other menus from €115)",
+  "sourceType": "press",
+  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/lienz/ansitz12/",
+  "lunchNote": "Open for lunch · Fri–Sat",
   "website": "https://www.ansitz12.at/",
   "lat": 46.8317467,
   "lng": 12.7607227,
@@ -24,8 +27,7 @@
   ],
   "chef": "David Senfter",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "lunchNote": "Open for lunch · Fri–Sat",
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 115 €)",
   "lunchNoteDe": "Mittags geöffnet · Fr–Sa",
   "cuisineDe": "Österreichisch"
 }

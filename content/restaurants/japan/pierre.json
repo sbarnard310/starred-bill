@@ -7,10 +7,8 @@
   "rating": 4.5,
   "reviews": 262,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch",
-  "lunchNoteJa": "ランチ営業あり",
+  "dinnerNote": "Set course, from; including tax, service extra",
+  "sourceType": "press",
   "website": "https://www.icosaka.com/",
   "lat": 34.70645,
   "lng": 135.494552,
@@ -21,5 +19,14 @@
     "vegan"
   ],
   "chef": "Yoshitaka Shibahara",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 15500,
+  "dinnerNoteJa": "コース料理（最安値）・税込・サービス料別",
+  "source": "https://www.tablecheck.com/shops/intercontinental-osaka-pierre/reserve",
+  "lunch": 12000,
+  "lunchType": "menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.tablecheck.com/shops/intercontinental-osaka-pierre/reserve",
+  "lunchNote": "Lunch course, from; including tax, service extra",
+  "lunchNoteJa": "ランチコース（最安値）・税込・サービス料別"
 }

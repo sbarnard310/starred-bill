@@ -6,14 +6,17 @@
   "cuisine": "Japanese",
   "rating": 5,
   "reviews": 14,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinnerNote": "Tabelog range ¥30,000–39,999",
+  "sourceType": "press",
   "website": "https://jiki-miyazawa.com/",
   "lat": 35.042915,
   "lng": 135.762222,
   "placeId": "ChIJVaoucBAJAWARpez4jN7s9mc",
   "michelinId": "1211986",
   "chef": "Masato Miyazawa",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 30000,
+  "dinnerNoteJa": "食べログの価格帯 30,000～39,999円",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260503/26040938/"
 }

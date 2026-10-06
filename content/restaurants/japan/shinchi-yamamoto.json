@@ -6,14 +6,17 @@
   "cuisine": "Japanese",
   "rating": 4.7,
   "reviews": 10,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinnerNote": "Tabelog range ¥20,000–29,999",
+  "sourceType": "press",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
   "lat": 34.696009,
   "lng": 135.499915,
   "placeId": "ChIJ49w6ku7mAGAR3HJXw1AcP-0",
-  "michelinId": "1193166"
+  "michelinId": "1193166",
+  "dinner": 20000,
+  "dinnerNoteJa": "食べログの価格帯 20,000～29,999円",
+  "source": "https://tabelog.com/en/osaka/A2701/A270101/27079462/"
 }

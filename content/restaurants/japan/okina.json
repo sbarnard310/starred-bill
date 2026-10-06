@@ -7,8 +7,8 @@
   "rating": 4.3,
   "reviews": 101,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Kaiseki course, from; including tax",
+  "sourceType": "site",
   "website": "https://saga-okina.com/",
   "lat": 35.022746,
   "lng": 135.6756,
@@ -16,5 +16,14 @@
   "michelinId": "1192894",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "dinner": 22000,
+  "dinnerNoteJa": "懐石コース（最安値）・税込",
+  "source": "https://saga-okina.com/",
+  "lunch": 5500,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://saga-okina.com/",
+  "lunchNote": "Lunch kaiseki, from; including tax",
+  "lunchNoteJa": "昼懐石（最安値）・税込"
 }

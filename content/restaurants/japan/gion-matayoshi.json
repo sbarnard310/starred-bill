@@ -7,10 +7,19 @@
   "rating": 4.7,
   "reviews": 201,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Omakase course, from; including tax and service",
+  "sourceType": "press",
   "lat": 35.003349,
   "lng": 135.774545,
   "placeId": "ChIJF2tmi8MIAWARjnuvxZjfwTk",
-  "michelinId": "1192928"
+  "michelinId": "1192928",
+  "dinner": 36000,
+  "dinnerNoteJa": "おまかせコース（最安値）・税サ込",
+  "source": "https://www.tablecheck.com/shops/gion-matayoshi/reserve",
+  "lunch": 20000,
+  "lunchType": "menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.tablecheck.com/shops/gion-matayoshi/reserve",
+  "lunchNote": "Lunch omakase, from; including tax and service",
+  "lunchNoteJa": "昼のおまかせコース（最安値）・税サ込"
 }

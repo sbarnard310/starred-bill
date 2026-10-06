@@ -8,7 +8,7 @@
   "reviews": 30,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "sourceType": "press",
   "website": "https://mube.co.jp",
   "lat": 35.052502,
   "lng": 135.738416,
@@ -22,5 +22,12 @@
     "kosher"
   ],
   "chef": "Takatomo Izumi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "lunch": 20000,
+  "lunchType": "spend",
+  "lunchSourceType": "press",
+  "lunchSource": "https://tabelog.com/en/kyoto/A2601/A260503/26043499/",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260503/26043499/",
+  "lunchNote": "Tabelog range ¥20,000–29,999",
+  "lunchNoteJa": "食べログの価格帯 20,000～29,999円"
 }

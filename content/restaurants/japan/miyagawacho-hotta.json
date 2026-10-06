@@ -7,8 +7,8 @@
   "rating": 4.4,
   "reviews": 298,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Omakase course, from; including tax and service",
+  "sourceType": "press",
   "lat": 34.998419,
   "lng": 135.770075,
   "placeId": "ChIJiQNFqcAIAWARo7tPQYiew9A",
@@ -16,5 +16,8 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "dinner": 26400,
+  "dinnerNoteJa": "おまかせコース（最安値）・税サ込",
+  "source": "https://www.tablecheck.com/shops/miyagawacho-hotta/reserve"
 }

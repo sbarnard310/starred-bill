@@ -7,13 +7,16 @@
   "rating": 4.6,
   "reviews": 76,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tempura course; including tax, service extra",
+  "sourceType": "site",
   "website": "https://www.tenpura-tenboshi.com/tenboshi/numata.html",
   "lat": 34.697954,
   "lng": 135.497901,
   "placeId": "ChIJwfy2vUvnAGAR73iGlL_yQkI",
   "michelinId": "1194657",
   "chef": "Kazuya Numata",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 30800,
+  "dinnerNoteJa": "天ぷらコース・税込・サービス料別",
+  "source": "https://www.tenpura-tenboshi.com/tenboshi/numata.html"
 }

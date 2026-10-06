@@ -7,10 +7,13 @@
   "rating": 4.6,
   "reviews": 25,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Omakase course; including tax",
+  "sourceType": "press",
   "lat": 34.695655,
   "lng": 135.50605,
   "placeId": "ChIJu1RNvEnnAGARFxbkEp9YBZY",
-  "michelinId": "1193224"
+  "michelinId": "1193224",
+  "dinner": 16500,
+  "dinnerNoteJa": "おまかせコース・税込",
+  "source": "https://tabelog.com/en/osaka/A2701/A270103/27117938/"
 }

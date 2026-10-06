@@ -7,11 +7,14 @@
   "rating": 4.5,
   "reviews": 238,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tempura course, from; including tax and service",
+  "sourceType": "site",
   "website": "https://www.shunsaiten-tsuchiya.com/",
   "lat": 34.760534,
   "lng": 135.490966,
   "placeId": "ChIJe3SCFADlAGARXGl65SrVqsA",
-  "michelinId": "1193161"
+  "michelinId": "1193161",
+  "dinner": 24000,
+  "dinnerNoteJa": "天ぷらコース（最安値）・税サ込",
+  "source": "https://www.shunsaiten-tsuchiya.com/"
 }

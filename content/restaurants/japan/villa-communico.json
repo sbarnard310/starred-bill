@@ -7,8 +7,8 @@
   "rating": 5,
   "reviews": 31,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu; including tax",
+  "sourceType": "site",
   "website": "https://villa-communico.com/",
   "lat": 34.686082,
   "lng": 135.845773,
@@ -17,5 +17,8 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "dinner": 28600,
+  "dinnerNoteJa": "テイスティングメニュー・税込",
+  "source": "https://villa-communico.com/cuisine"
 }

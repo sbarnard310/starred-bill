@@ -6,9 +6,9 @@
   "cuisine": "Japanese",
   "rating": 4.2,
   "reviews": 62,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinnerNote": "Tabelog range ¥30,000–39,999",
+  "sourceType": "press",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
@@ -17,5 +17,8 @@
   "placeId": "ChIJUSt8gkgJAWART-sAzp4tPUU",
   "michelinId": "1245582",
   "chef": "Toshiro Ogata",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 30000,
+  "dinnerNoteJa": "食べログの価格帯 30,000～39,999円",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260301/26036476/"
 }

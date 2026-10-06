@@ -6,14 +6,17 @@
   "cuisine": "Japanese",
   "rating": 4.8,
   "reviews": 12,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinnerNote": "Tabelog range ¥20,000–29,999",
+  "sourceType": "press",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
   "lat": 35.013142,
   "lng": 135.768119,
   "placeId": "ChIJWVzOOK0JAWARy3BQSNNihNI",
-  "michelinId": "1210350"
+  "michelinId": "1210350",
+  "dinner": 20000,
+  "dinnerNoteJa": "食べログの価格帯 20,000～29,999円",
+  "source": "https://tabelog.com/en/kyoto/A2601/A260201/26039192/"
 }

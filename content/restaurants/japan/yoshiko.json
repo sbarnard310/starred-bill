@@ -6,14 +6,17 @@
   "cuisine": "Fugu / Pufferfish",
   "rating": 4.5,
   "reviews": 26,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinnerNote": "Tabelog range ¥20,000–29,999",
+  "sourceType": "press",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
   "lat": 34.697385,
   "lng": 135.500176,
   "placeId": "ChIJb6TyI-zmAGARNBQuqjLYhDA",
-  "michelinId": "1193270"
+  "michelinId": "1193270",
+  "dinner": 20000,
+  "dinnerNoteJa": "食べログの価格帯 20,000～29,999円",
+  "source": "https://tabelog.com/en/osaka/A2701/A270101/27033692/"
 }

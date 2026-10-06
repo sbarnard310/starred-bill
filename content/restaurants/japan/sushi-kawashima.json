@@ -6,13 +6,16 @@
   "cuisine": "Sushi",
   "rating": 4.9,
   "reviews": 59,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinnerNote": "Tabelog range ¥20,000–29,999",
+  "sourceType": "press",
   "lat": 34.483144,
   "lng": 135.798021,
   "placeId": "ChIJC0YdGKvNBmAR7RBCFBz5-Yk",
   "michelinId": "1197124",
   "chef": "Hiroyuki Kawashima",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 20000,
+  "dinnerNoteJa": "食べログの価格帯 20,000～29,999円",
+  "source": "https://tabelog.com/en/nara/A2903/A290302/29011786/"
 }

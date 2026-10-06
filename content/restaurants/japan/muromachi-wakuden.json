@@ -7,10 +7,8 @@
   "rating": 4.6,
   "reviews": 320,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Fri–Mon",
-  "lunchNoteJa": "ランチ営業あり・金〜月",
+  "dinnerNote": "Kaiseki course, from; including tax and service",
+  "sourceType": "site",
   "website": "https://www.wakuden.jp/ryotei/muromachi/",
   "lat": 35.010146,
   "lng": 135.763257,
@@ -23,5 +21,16 @@
     "gluten-free"
   ],
   "chef": "Daisuke Ogawa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 25000,
+  "dinnerNoteJa": "懐石コース（最安値）・税サ込",
+  "source": "https://www.wakuden.jp/ryotei/muromachi/",
+  "wine": 12000,
+  "lunch": 13000,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.wakuden.jp/ryotei/muromachi/",
+  "lunchWine": 10000,
+  "lunchNote": "Lunch kaiseki, from; including tax and service",
+  "lunchNoteJa": "昼懐石（最安値）・税サ込"
 }

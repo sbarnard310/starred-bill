@@ -7,8 +7,8 @@
   "rating": 4.4,
   "reviews": 244,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu; including tax, service extra",
+  "sourceType": "press",
   "website": "https://lurrakyoto.com/",
   "lat": 35.010044,
   "lng": 135.780637,
@@ -18,5 +18,9 @@
     "vegetarian"
   ],
   "chef": "Jacob Kear",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinner": 35000,
+  "dinnerNoteJa": "テイスティングメニュー・税込・サービス料別",
+  "source": "https://www.tablecheck.com/shops/lurra/reserve",
+  "wine": 15000
 }

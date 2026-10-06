@@ -7,8 +7,8 @@
   "rating": 4.6,
   "reviews": 434,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu; including tax and service",
+  "sourceType": "site",
   "website": "https://cenci-kyoto.com/",
   "lat": 35.017056,
   "lng": 135.78024,
@@ -20,5 +20,14 @@
     "gluten-free"
   ],
   "chef": "Ken Sakamoto",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 21780,
+  "dinnerNoteJa": "テイスティングメニュー・税サ込",
+  "source": "https://cenci-kyoto.com/menu",
+  "lunch": 12100,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://cenci-kyoto.com/menu",
+  "lunchNote": "Lunch menu, from; including tax and service",
+  "lunchNoteJa": "ランチメニュー（最安値）・税サ込"
 }

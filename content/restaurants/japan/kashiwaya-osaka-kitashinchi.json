@@ -7,8 +7,8 @@
   "rating": 4.7,
   "reviews": 32,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Kaiseki course; including tax, service extra",
+  "sourceType": "site",
   "website": "https://jp-kashiwaya.com/",
   "lat": 34.69685,
   "lng": 135.50052,
@@ -20,5 +20,14 @@
     "gluten-free"
   ],
   "chef": "Hideaki Matsuo",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinner": 33000,
+  "dinnerNoteJa": "懐石コース・税込・サービス料別",
+  "source": "https://jp-kashiwaya.com/kitashinchi/",
+  "lunch": 22000,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://jp-kashiwaya.com/kitashinchi/",
+  "lunchNote": "Lunch kaiseki; including tax, service extra",
+  "lunchNoteJa": "昼懐石・税込・サービス料別"
 }

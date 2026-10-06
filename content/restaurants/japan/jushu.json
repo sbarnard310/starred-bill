@@ -24,5 +24,10 @@
   "placeId": "ChIJ11DE6mSLGGAR--iGdJ0IqSk",
   "michelinId": "1193974",
   "chef": "Masaki Senzaki",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 30250,
+  "dinnerNote": "Omakase course, from",
+  "dinnerNoteJa": "おまかせコース（最安値）",
+  "sourceType": "press",
+  "source": "https://omakaseje.com/restaurants/bd545579"
 }

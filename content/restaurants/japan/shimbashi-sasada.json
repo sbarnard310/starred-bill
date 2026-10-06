@@ -13,12 +13,17 @@
   "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 78,
-  "dinnerType": "menu",
+  "dinnerType": "spend",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
   "lat": 35.668147,
   "lng": 139.751571,
   "placeId": "ChIJtWLCpOyLGGARvwp1ZVmN3Kw",
-  "michelinId": "1193991"
+  "michelinId": "1193991",
+  "dinner": 30000,
+  "dinnerNote": "Tabelog range ¥30,000–39,999",
+  "dinnerNoteJa": "食べログの価格帯 30,000～39,999円",
+  "sourceType": "press",
+  "source": "https://tabelog.com/en/tokyo/A1301/A130103/13020781/"
 }

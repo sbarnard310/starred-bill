@@ -14,9 +14,14 @@
   "cuisineJa": "寿司",
   "rating": 5,
   "reviews": 53,
-  "dinnerType": "menu",
+  "dinnerType": "spend",
   "lat": 35.649081,
   "lng": 139.719531,
   "placeId": "ChIJbxNqhnKLGGARQ9iU7QiDSlE",
-  "michelinId": "1209552"
+  "michelinId": "1209552",
+  "dinner": 20000,
+  "dinnerNote": "Tabelog range ¥20,000–29,999",
+  "dinnerNoteJa": "食べログの価格帯 20,000～29,999円",
+  "sourceType": "press",
+  "source": "https://tabelog.com/en/tokyo/A1307/A130703/13275727/"
 }

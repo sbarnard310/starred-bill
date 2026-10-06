@@ -7,8 +7,8 @@
   "rating": 4.5,
   "reviews": 278,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Experience menu, 6 courses (4-course Emotion menu AED 950)",
+  "sourceType": "press",
   "website": "https://www.oneandonlyresorts.com/the-palm/dining/stay-by-yannick-alleno",
   "lat": 25.0992961,
   "lng": 55.1326916,
@@ -21,7 +21,10 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا",
+  "dinnerNoteAr": "قائمة Experience من 6 أطباق (قائمة Emotion من 4 أطباق بسعر AED 950)",
   "lunchNote": "Open for lunch · Saturdays",
-  "lunchNoteAr": "مفتوح وقت الغداء · السبت"
+  "lunchNoteAr": "مفتوح وقت الغداء · السبت",
+  "dinner": 1250,
+  "wine": 900,
+  "source": "https://whatson.ae/2024/09/review-stay-by-yannick-alleno/"
 }

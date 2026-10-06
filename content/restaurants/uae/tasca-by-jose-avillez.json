@@ -7,8 +7,8 @@
   "rating": 4.7,
   "reviews": 1168,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Taste of Tasca tasting menu (à la carte mains AED 180–340); service and VAT included",
+  "sourceType": "site",
   "website": "https://www.mandarinoriental.com/en/dubai/jumeira-beach/dine/tasca-by-jose-avillez",
   "lat": 25.2168806,
   "lng": 55.2510082,
@@ -20,9 +20,11 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا",
+  "dinnerNoteAr": "قائمة التذوق Taste of Tasca (أطباق رئيسية من القائمة بين AED 180 و340)؛ شاملة الخدمة وضريبة القيمة المضافة",
   "lunchNote": "Open for lunch",
   "lunchNoteAr": "مفتوح وقت الغداء",
   "chef": "José Avillez",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinner": 850,
+  "source": "https://www.mandarinoriental.com/en/dubai/jumeira-beach/dine/tasca-by-jose-avillez"
 }

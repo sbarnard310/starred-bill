@@ -7,9 +7,9 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.6,
   "reviews": 555,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains AED 95–155 (dishes to share AED 420–450); service and VAT included; no alcohol",
+  "sourceType": "site",
   "website": "https://erthrestaurant.ae/",
   "lat": 24.4829789,
   "lng": 54.3569321,
@@ -19,8 +19,10 @@
     "vegetarian",
     "halal"
   ],
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا",
+  "dinnerNoteAr": "حسب القائمة؛ أطباق رئيسية بين AED 95 و155 (أطباق للمشاركة بين AED 420 و450)؛ شاملة الخدمة وضريبة القيمة المضافة؛ لا يقدّم الكحول",
   "lunchNote": "Open for lunch",
   "lunchNoteAr": "مفتوح وقت الغداء",
-  "areaAr": "أبوظبي"
+  "areaAr": "أبوظبي",
+  "dinner": 125,
+  "source": "https://erthtable.com/uploads/26101fd8dacac3b9379de9dd4cbf9072.pdf"
 }

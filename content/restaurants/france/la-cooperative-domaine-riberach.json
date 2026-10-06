@@ -1,0 +1,21 @@
+{
+  "name": "La Coopérative - Domaine Riberach",
+  "city": "occitanie",
+  "area": "Bélesta, Pyrénées-Orientales",
+  "areaFr": "Bélesta, Pyrénées-Orientales",
+  "address": "2 route de Caladroy, 66720 Bélesta",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "website": "https://www.riberach.com",
+  "lat": 42.7181258,
+  "lng": 2.6073514,
+  "michelinId": "328019"
+}

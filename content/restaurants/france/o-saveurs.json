@@ -1,0 +1,21 @@
+{
+  "name": "Ô Saveurs",
+  "city": "occitanie",
+  "area": "Rouffiac-Tolosan, Haute-Garonne",
+  "areaFr": "Rouffiac-Tolosan, Haute-Garonne",
+  "address": "8 place des Ormeaux, 31180 Rouffiac-Tolosan",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "website": "https://www.o-saveurs.com/",
+  "lat": 43.6638821,
+  "lng": 1.5250854,
+  "michelinId": "8978"
+}

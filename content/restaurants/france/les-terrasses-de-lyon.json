@@ -1,0 +1,21 @@
+{
+  "name": "Les Terrasses de Lyon",
+  "city": "lyon",
+  "area": "5th arrondissement",
+  "areaFr": "5e arrondissement",
+  "address": "25 montée Saint-Barthélémy, 69005 Lyon",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "changed",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide; now called La Table de la Villa Florentine",
+  "statusNoteFr": "Étoile perdue dans le guide 2026 ; s'appelle désormais La Table de la Villa Florentine",
+  "website": "https://www.beauvallon.com/villa-florentine-lyon/restaurants-bar",
+  "lat": 45.7631278,
+  "lng": 4.8258091,
+  "michelinId": "4372"
+}

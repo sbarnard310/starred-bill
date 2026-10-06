@@ -1,0 +1,21 @@
+{
+  "name": "L'Auberge de l'Abbaye",
+  "city": "auvergne-rhone-alpes",
+  "area": "Ambronay, Ain",
+  "areaFr": "Ambronay, Ain",
+  "address": "47 place des Anciens-Combattants, 01500 Ambronay",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "website": "https://www.aubergedelabbaye-ambronay.com",
+  "lat": 46.0070045,
+  "lng": 5.3605085,
+  "michelinId": "65232"
+}

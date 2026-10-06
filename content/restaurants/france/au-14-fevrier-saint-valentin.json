@@ -1,0 +1,21 @@
+{
+  "name": "Au 14 Février",
+  "city": "centre-val-de-loire",
+  "area": "Saint-Valentin, Indre",
+  "areaFr": "Saint-Valentin, Indre",
+  "address": "2 rue du Portail, 36100 Saint-Valentin",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "website": "https://www.sv-au14fevrier.com/",
+  "lat": 46.9517193,
+  "lng": 1.8649898,
+  "michelinId": "279706"
+}

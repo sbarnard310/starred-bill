@@ -1,0 +1,20 @@
+{
+  "name": "Le Village Tomohiro",
+  "city": "ile-de-france",
+  "area": "Marly-le-Roi, Yvelines",
+  "areaFr": "Marly-le-Roi, Yvelines",
+  "address": "3 Grande-Rue, 78160 Marly-le-Roi",
+  "stars": 0,
+  "cuisine": "Creative",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "lat": 48.8672822,
+  "lng": 2.0941951,
+  "michelinId": "6672"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "La Table - Hôtel Clarance",
+  "city": "hauts-de-france",
+  "area": "Lille, Nord",
+  "areaFr": "Lille, Nord",
+  "address": "32 rue de la Barre, 59000 Lille",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "website": "https://www.clarancehotel.com",
+  "lat": 50.638729,
+  "lng": 3.0571817,
+  "michelinId": "471369"
+}

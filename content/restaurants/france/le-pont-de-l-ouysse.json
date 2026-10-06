@@ -1,0 +1,21 @@
+{
+  "name": "Le Pont de l'Ouysse",
+  "city": "occitanie",
+  "area": "Lacave, Lot",
+  "areaFr": "Lacave, Lot",
+  "address": "560 route du Vieux-Pont, 46200 Lacave",
+  "stars": 0,
+  "cuisine": "Contemporary",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "website": "https://www.lepontdelouysse.com/",
+  "lat": 44.8442292,
+  "lng": 1.5503689,
+  "michelinId": "3971"
+}

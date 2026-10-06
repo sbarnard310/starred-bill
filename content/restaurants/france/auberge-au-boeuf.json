@@ -1,0 +1,21 @@
+{
+  "name": "Auberge au Bœuf",
+  "city": "grand-est",
+  "area": "Sessenheim, Bas-Rhin",
+  "areaFr": "Sessenheim, Bas-Rhin",
+  "address": "1 rue de l'Église, 67770 Sessenheim",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "changed",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide; now called Maison Héritage",
+  "statusNoteFr": "Étoile perdue dans le guide 2026 ; s'appelle désormais Maison Héritage",
+  "website": "https://www.maisonheritage.com/",
+  "lat": 48.7992564,
+  "lng": 7.985711,
+  "michelinId": "8602"
+}

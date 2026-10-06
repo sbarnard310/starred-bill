@@ -1,0 +1,21 @@
+{
+  "name": "Le P'tit Polyte",
+  "city": "auvergne-rhone-alpes",
+  "area": "Les Deux-Alpes, Isère",
+  "areaFr": "Les Deux-Alpes, Isère",
+  "address": "Chalet Mounier, 2 rue de la Chapelle, 38860 Les Deux-Alpes",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "website": "https://www.chalet-mounier.com/",
+  "lat": 45.0036431,
+  "lng": 6.120844,
+  "michelinId": "2808"
+}

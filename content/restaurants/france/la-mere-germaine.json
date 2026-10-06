@@ -1,0 +1,21 @@
+{
+  "name": "La Mère Germaine",
+  "city": "provence-alpes-cote-d-azur",
+  "area": "Châteauneuf-du-Pape, Vaucluse",
+  "areaFr": "Châteauneuf-du-Pape, Vaucluse",
+  "address": "3 rue du Commandant-Lemaître, 84230 Châteauneuf-du-Pape",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "website": "https://www.lameregermaine.com",
+  "lat": 44.0557551,
+  "lng": 4.8315131,
+  "michelinId": "2058"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Le Lièvre Gourmand",
+  "city": "centre-val-de-loire",
+  "area": "Orléans, Loiret",
+  "areaFr": "Orléans, Loiret",
+  "address": "28 quai du Châtelet, 45000 Orléans",
+  "stars": 0,
+  "cuisine": "Creative",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "website": "https://lelievregourmand.fr/",
+  "lat": 47.8980213,
+  "lng": 1.9104472,
+  "michelinId": "263097"
+}

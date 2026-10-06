@@ -1,0 +1,21 @@
+{
+  "name": "L'Auberge de la Tour",
+  "city": "auvergne-rhone-alpes",
+  "area": "Marcolès, Cantal",
+  "areaFr": "Marcolès, Cantal",
+  "address": "2 place de la Fontaine, 15220 Marcolès",
+  "stars": 0,
+  "cuisine": "Modern Cuisine",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeNoteFr": "Étoile perdue",
+  "changeDate": "2026-03",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in the 2026 guide",
+  "statusNoteFr": "Étoile perdue dans le guide 2026",
+  "website": "https://www.aubergedela-tour.com/",
+  "lat": 44.7815619,
+  "lng": 2.351958,
+  "michelinId": "326032"
+}

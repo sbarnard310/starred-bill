@@ -27,5 +27,13 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione",
+  "lunch": 352,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch",
+  "lunchNoteDe": "Gleiches Menü am Mittag",
+  "lunchNoteFr": "Même menu le midi",
+  "lunchNoteIt": "Stesso menu a pranzo",
+  "lunchSourceType": "site",
+  "lunchSource": "https://storchen.ch/en/restaurants/la-rotisserie/",
   "cuisineIt": "Contemporanea"
 }

@@ -27,5 +27,13 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Menu degustazione",
+  "lunch": 195,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantbayview.com",
   "cuisineIt": "Creativa"
 }

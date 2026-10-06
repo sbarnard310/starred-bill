@@ -23,5 +23,11 @@
   "chef": "Rui Silvestre",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 175 €)",
+  "lunch": 495,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNotePt": "O mesmo menu ao almoço · sábado",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.fiftysecondsexperience.com/wp-content/uploads/2026/09/MENU-VERT-DERIVA-PT-16.9.26.pdf",
   "cuisinePt": "Criativa"
 }

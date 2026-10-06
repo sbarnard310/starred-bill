@@ -15,6 +15,8 @@
   "wine": 115,
   "sourceType": "site",
   "source": "https://www.roosterowl.com/menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.roosterowl.com/",
   "lat": 38.921467,
   "lng": -77.03216,

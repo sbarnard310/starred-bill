@@ -29,5 +29,14 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 145)",
   "cuisineFr": "Cuisine méditerranéenne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 145)",
+  "lunch": 190,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Mon",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Mo",
+  "lunchNoteFr": "Même menu le midi · ven.–lun.",
+  "lunchNoteIt": "Stesso menu a pranzo · ven–lun",
+  "lunchWine": 120,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.truube.ch/pdf/truube_menukarte.pdf",
   "cuisineIt": "Mediterranea"
 }

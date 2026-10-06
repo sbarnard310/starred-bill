@@ -23,5 +23,11 @@
   "chef": "Erik Arnecke",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 79 €)",
+  "lunch": 169,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://sonne-frankenberg.de/philipp-soldan/",
   "cuisineDe": "Kreativ"
 }

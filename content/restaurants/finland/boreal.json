@@ -26,5 +26,8 @@
   ],
   "chef": "Pasha Demin",
   "chefSource": "michelin",
-  "dinnerNoteFi": "Maistelumenu"
+  "dinnerNoteFi": "Maistelumenu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFi": "Vain illallinen"
 }

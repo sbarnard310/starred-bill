@@ -19,5 +19,11 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteFi": "Maistelumenu (muut menut alkaen 69 €)"
+  "dinnerNoteFi": "Maistelumenu (muut menut alkaen 69 €)",
+  "lunch": 175,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteFi": "Sama menu lounaalla · ti–pe",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantdemo.fi/"
 }

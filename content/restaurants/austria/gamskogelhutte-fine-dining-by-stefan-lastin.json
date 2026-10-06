@@ -28,5 +28,8 @@
   "chef": "Stefan Lastin",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Moderne Küche"
 }

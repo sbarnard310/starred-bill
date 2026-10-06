@@ -20,5 +20,8 @@
   "chef": "Cenk Debensason",
   "chefSource": "michelin",
   "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteTr": "Yalnızca akşam yemeği",
   "cuisineTr": "Füzyon"
 }

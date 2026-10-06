@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu, prepaid",
   "sourceType": "press",
   "source": "https://www.exploretock.com/beckon",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://beckon-denver.com/",
   "lat": 39.7609504,
   "lng": -104.9824196,

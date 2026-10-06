@@ -27,6 +27,9 @@
   "chef": "João Oliveira",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Moderna",
   "areaPt": "Portimão"
 }

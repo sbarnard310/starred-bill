@@ -21,6 +21,13 @@
     "vegan"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 60 €)",
+  "lunch": 153,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Fr",
+  "lunchWine": 67,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-wonka.de/MENUeS/ABENDKARTE/",
   "cuisineDe": "Kreativ",
   "chef": "Christian Wonka",
   "chefSource": "press"

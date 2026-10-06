@@ -18,6 +18,9 @@
   "placeId": "ChIJPTcO0a4wlkcRvNtKzpX7260",
   "michelinId": "1195298",
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "chef": "Benjamin Peifer",
   "chefSource": "press"
 }

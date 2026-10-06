@@ -22,5 +22,11 @@
     "gluten-free"
   ],
   "dinnerNoteNl": "Proeverijmenu",
+  "lunch": 154,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–za",
+  "lunchSourceType": "site",
+  "lunchSource": "https://deleuf.nl/",
   "cuisineNl": "Creatief"
 }

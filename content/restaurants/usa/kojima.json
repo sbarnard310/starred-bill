@@ -18,6 +18,8 @@
   "dinnerNoteZh": "廚師發辦",
   "sourceType": "press",
   "source": "https://www.exploretock.com/kojima",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://kojima-2130.square.site/",
   "lat": 34.039178,
   "lng": -118.441885,

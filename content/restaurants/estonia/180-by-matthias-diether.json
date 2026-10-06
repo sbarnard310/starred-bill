@@ -23,6 +23,9 @@
     "gluten-free"
   ],
   "dinnerNoteEt": "Degustatsioonimenüü (teised menüüd alates 185 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteEt": "Ainult õhtusöök",
   "chef": "Matthias Diether",
   "chefSource": "press"
 }

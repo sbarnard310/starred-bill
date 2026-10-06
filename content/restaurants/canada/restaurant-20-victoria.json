@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu, 7+ courses",
   "sourceType": "press",
   "source": "https://www.exploretock.com/restaurant20victoria",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.exploretock.com/restaurant20victoria",
   "lat": 43.6498653,
   "lng": -79.3769956,

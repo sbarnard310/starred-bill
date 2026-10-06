@@ -14,6 +14,8 @@
   "dinnerNote": "Prix fixe, 5 courses",
   "sourceType": "site",
   "source": "https://www.oijimi.com/faqs",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.oijimi.com/",
   "lat": 40.739637,
   "lng": -73.992412,

@@ -24,5 +24,8 @@
   "chef": "Hans Neuner",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 225 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Criativa"
 }

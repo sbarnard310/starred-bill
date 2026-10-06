@@ -25,5 +25,11 @@
   ],
   "chef": "István Akács",
   "chefSource": "michelin",
-  "dinnerNoteHu": "Kóstolómenü (további menük: HUF 42,000-tól)"
+  "dinnerNoteHu": "Kóstolómenü (további menük: HUF 42,000-tól)",
+  "lunch": 52000,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteHu": "Ugyanaz a menü ebédre · P–V",
+  "lunchSourceType": "site",
+  "lunchSource": "https://pajta.hu/kastu-ajandekkartya/"
 }

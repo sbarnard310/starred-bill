@@ -36,6 +36,14 @@
   "cuisineFr": "Cuisine moderne",
   "areaFr": "Bienne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 149)",
+  "lunch": 164,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
+  "lunchNoteFr": "Même menu le midi · samedi",
+  "lunchNoteIt": "Stesso menu a pranzo · sabato",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.du-bourg.ch",
   "cuisineIt": "Moderna",
   "areaIt": "Bienna"
 }

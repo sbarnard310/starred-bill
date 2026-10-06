@@ -22,6 +22,9 @@
     "gluten-free"
   ],
   "dinnerNoteMs": "Menu rasa",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteMs": "Makan malam sahaja",
   "chef": "Raymond Tham",
   "chefSource": "press"
 }

@@ -23,5 +23,8 @@
   ],
   "chef": "Nicolai Tram",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny"
+  "dinnerNoteSv": "Avsmakningsmeny",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteSv": "Endast middag"
 }

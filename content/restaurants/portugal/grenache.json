@@ -24,5 +24,8 @@
   "chef": "Philippe Gelfi",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 135 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Francesa contemporânea"
 }

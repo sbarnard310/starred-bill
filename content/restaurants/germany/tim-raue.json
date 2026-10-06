@@ -24,5 +24,8 @@
   "chef": "Tim Raue",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 212 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Asiatische Einflüsse"
 }

@@ -18,6 +18,8 @@
   "dinnerNote": "Tasting menu, 12 courses ($295 from November)",
   "sourceType": "site",
   "source": "https://www.joo-ok.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.joo-ok.com/",
   "lat": 40.747503,
   "lng": -73.986724,

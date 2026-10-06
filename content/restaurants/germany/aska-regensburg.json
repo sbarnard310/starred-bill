@@ -18,5 +18,8 @@
   "placeId": "ChIJj-yhhHbBn0cRcBfQ_9MlDcE",
   "michelinId": "1186893",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Japanisch"
 }

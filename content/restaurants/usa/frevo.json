@@ -15,6 +15,8 @@
   "wine": 135,
   "sourceType": "site",
   "source": "https://frevonyc.com/restaurant/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://frevonyc.com/",
   "lat": 40.733199,
   "lng": -73.998822,

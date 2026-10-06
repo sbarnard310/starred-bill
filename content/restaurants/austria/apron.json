@@ -20,6 +20,9 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 166 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ",
   "chef": "Jakob Karner",
   "chefSource": "press"

@@ -12,6 +12,8 @@
   "wine": 120,
   "sourceType": "press",
   "source": "https://www.opentable.ca/r/don-alfonso-1890-toronto",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.donalfonsotoronto.com/",
   "lat": 43.64071,
   "lng": -79.37647,

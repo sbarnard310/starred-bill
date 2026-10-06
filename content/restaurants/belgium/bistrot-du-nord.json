@@ -21,5 +21,12 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 57)",
   "cuisineNl": "Traditionele keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 57 €)",
+  "lunch": 59,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Tue, Thu–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · ma–di, do–vr",
+  "lunchNoteFr": "Même menu le midi · lun.–mar., jeu.–ven.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.bistrotdunord.be/menu/",
   "cuisineFr": "Cuisine traditionnelle"
 }

@@ -28,5 +28,12 @@
   "chef": "Bas van Kranen",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
+  "lunch": 250,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · vr–za",
+  "lunchWine": 90,
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurantflore.com/",
   "cuisineNl": "Eigentijds"
 }

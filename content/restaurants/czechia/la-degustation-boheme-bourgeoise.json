@@ -24,5 +24,12 @@
   ],
   "chef": "Oldřich Sahajdák",
   "chefSource": "site",
-  "dinnerNoteCs": "Degustační menu"
+  "dinnerNoteCs": "Degustační menu",
+  "lunch": 3500,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch",
+  "lunchNoteCs": "Stejné menu v poledne",
+  "lunchWine": 2000,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.ladegustation.cz/en/menu"
 }

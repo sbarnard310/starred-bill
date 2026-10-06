@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu, prepaid",
   "sourceType": "press",
   "source": "https://www.exploretock.com/mixtli",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://restaurantmixtli.com/",
   "lat": 29.4156664,
   "lng": -98.4888715,

@@ -11,6 +11,8 @@
   "dinnerNote": "Omakase, 14 courses",
   "sourceType": "press",
   "source": "https://www.andrewloves.com/blog/hayakawa",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.hayakawaatl.com",
   "lat": 33.7837861,
   "lng": -84.4110531,

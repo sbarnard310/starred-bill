@@ -28,5 +28,12 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 95,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–vr",
+  "lunchNoteFr": "Même menu le midi · mer.–ven.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://levieuxchateau.be/",
   "cuisineFr": "Cuisine moderne"
 }

@@ -21,6 +21,12 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 150,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Mon",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Mo",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.ruessels-landhaus.de/",
   "cuisineDe": "Kreativ",
   "chef": "Harald Rüssel",
   "chefSource": "press"

@@ -23,5 +23,8 @@
   "chef": "Franz Berlin",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 159 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Französisch-modern"
 }

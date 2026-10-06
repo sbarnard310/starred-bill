@@ -11,6 +11,8 @@
   "dinnerNote": "Kaiseki menu",
   "sourceType": "site",
   "source": "https://www.kaiseki.ca/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.kaiseki.ca/",
   "lat": 43.7263028,
   "lng": -79.3341896,

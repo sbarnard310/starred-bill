@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu, 22 courses, plus 20% gratuity",
   "sourceType": "press",
   "source": "https://www.exploretock.com/craft-omakase-austin",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://craftomakase.com/",
   "lat": 30.3125474,
   "lng": -97.7387038,

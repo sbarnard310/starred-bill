@@ -30,5 +30,14 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine italienne",
   "dinnerNoteIt": "Menu degustazione",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
+  "lunchNoteFr": "Même menu le midi · samedi",
+  "lunchNoteIt": "Stesso menu a pranzo · sabato",
+  "lunchWine": 75,
+  "lunchSourceType": "site",
+  "lunchSource": "https://staging2.metarestaurant.ch/menu-pdf/METARESTAURANT_MENU_0526.pdf",
   "cuisineIt": "Italiana"
 }

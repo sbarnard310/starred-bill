@@ -28,5 +28,12 @@
   "chef": "Tim Striegel",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
+  "lunch": 189,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–So",
+  "lunchWine": 75,
+  "lunchSourceType": "site",
+  "lunchSource": "https://das-philippin.de/wp-content/uploads/2026/09/202609_Herbstmenue_DAS_PHILIPPIN_pdf.pdf",
   "cuisineDe": "Kreativ"
 }

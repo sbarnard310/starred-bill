@@ -14,6 +14,8 @@
   "dinnerNote": "À la carte; mains about $28–$59",
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/new-york/reviews/tuome",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.tuomenyc.com/",
   "lat": 40.724194,
   "lng": -73.9828,

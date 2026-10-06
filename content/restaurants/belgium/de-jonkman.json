@@ -25,5 +25,12 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 125)",
   "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 125 €)",
+  "lunch": 265,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://dejonkman.be/nl/menu",
   "cuisineFr": "Cuisine créative"
 }

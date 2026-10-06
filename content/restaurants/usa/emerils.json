@@ -15,6 +15,8 @@
   "wine": 100,
   "sourceType": "press",
   "source": "https://feastio.com/emerils-new-orleans/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://emerilsrestaurant.com/",
   "lat": 29.9446451,
   "lng": -90.0673099,

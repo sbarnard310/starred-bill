@@ -14,6 +14,8 @@
   "dinnerNote": "Yakitori omakase, 13 courses",
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/new-york/reviews/torien",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://torien-nyc.com/",
   "lat": 40.724706,
   "lng": -73.993269,

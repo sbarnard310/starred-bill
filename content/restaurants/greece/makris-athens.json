@@ -28,5 +28,8 @@
   ],
   "chef": "Petros Dimas",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας (άλλα μενού από 88 €)"
+  "dinnerNoteEl": "Μενού γευσιγνωσίας (άλλα μενού από 88 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteEl": "Μόνο δείπνο"
 }

@@ -23,5 +23,8 @@
   "chef": "Robin Hofmann and Patrick Grieshaber",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

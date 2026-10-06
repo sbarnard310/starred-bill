@@ -14,6 +14,9 @@
   "placeId": "ChIJAQAk58MIAWARqfORBa_fkO4",
   "dinner": 42350,
   "source": "https://omakaseje.com/restaurants/zl479291",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ",
   "michelinId": "1192923",
   "chef": "Yasuo Kida",
   "chefSource": "press"

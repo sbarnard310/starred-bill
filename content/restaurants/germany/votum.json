@@ -20,6 +20,9 @@
   "chef": "Benjamin Gallein",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ",
   "areaDe": "Hannover"
 }

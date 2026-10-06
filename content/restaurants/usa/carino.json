@@ -18,6 +18,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.exploretock.com/carino",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.carinochicago.com/",
   "lat": 41.966958,
   "lng": -87.658514,

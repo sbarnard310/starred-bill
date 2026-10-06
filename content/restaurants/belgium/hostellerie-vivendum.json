@@ -27,5 +27,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 80)",
   "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 80 €)",
+  "lunch": 400,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri, Sun–Tue",
+  "lunchNoteNl": "Zelfde menu bij de lunch · vr, zo–di",
+  "lunchNoteFr": "Même menu le midi · ven., dim.–mar.",
+  "lunchWine": 120,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-vivendum.com/arrangementen",
   "cuisineFr": "Cuisine moderne"
 }

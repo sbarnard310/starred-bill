@@ -15,6 +15,8 @@
   "dinnerNote": "Tasting menu (longer menus to $495), plus 20% service",
   "sourceType": "press",
   "source": "https://www.exploretock.com/enclos",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://enclos-sonoma.com/",
   "lat": 38.2915888,
   "lng": -122.4558351,

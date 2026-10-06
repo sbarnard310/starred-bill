@@ -19,5 +19,8 @@
   "chef": "Thomas Troisgros",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde R$490)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Moderna"
 }

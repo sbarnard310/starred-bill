@@ -13,6 +13,8 @@
   "wine": 85,
   "sourceType": "site",
   "source": "https://www.aniarrestaurant.ie/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.aniarrestaurant.ie/",
   "lat": 53.271245,
   "lng": -9.056998,

@@ -31,5 +31,11 @@
   "chef": "Jarno Eggen",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu, 5 gangen (4 gangen € 135); ook à la carte",
+  "lunch": 155,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri, Sun–Mon",
+  "lunchNoteNl": "Zelfde menu bij de lunch · vr, zo–ma",
+  "lunchSourceType": "site",
+  "lunchSource": "https://leepifaan.com",
   "cuisineNl": "Creatief"
 }

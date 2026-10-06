@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.cheznoircarmel.com/menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.cheznoircarmel.com/",
   "lat": 36.5569588,
   "lng": -121.9221052,

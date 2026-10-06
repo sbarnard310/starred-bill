@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.starprovisions.com/bacchanalia",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.starprovisions.com/bacchanalia",
   "lat": 33.7948042,
   "lng": -84.4273895,

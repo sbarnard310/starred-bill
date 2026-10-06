@@ -22,5 +22,8 @@
   ],
   "chef": "Mikael Svensson",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny"
+  "dinnerNoteNb": "Smaksmeny",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNb": "Kun middag"
 }

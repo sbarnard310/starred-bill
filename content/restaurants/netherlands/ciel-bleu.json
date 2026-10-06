@@ -19,5 +19,8 @@
   "chef": "Arjan Speelman",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 235)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Creatief"
 }

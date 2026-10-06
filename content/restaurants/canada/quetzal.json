@@ -12,6 +12,8 @@
   "wine": 140,
   "sourceType": "site",
   "source": "https://quetzaltoronto.com/menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.quetzaltoronto.com/",
   "lat": 43.6565748,
   "lng": -79.4067462,

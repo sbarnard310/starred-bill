@@ -28,5 +28,11 @@
   "chef": "Jonathan Zandbergen",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu, 7 gangen (5 gangen € 149)",
+  "lunch": 179,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteNl": "Zelfde menu bij de lunch · zaterdag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://echoput.nl/wild-atelier/",
   "cuisineNl": "Moderne keuken"
 }

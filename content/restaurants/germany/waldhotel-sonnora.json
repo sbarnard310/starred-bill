@@ -24,5 +24,12 @@
   "chef": "Clemens Rambichler",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 360,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–So",
+  "lunchWine": 195,
+  "lunchSourceType": "site",
+  "lunchSource": "https://hotel-sonnora.de/wp-content/uploads/2026/10/Sonnora_speisekarte_Okt_001_WEB.pdf",
   "cuisineDe": "Französisch-klassisch"
 }

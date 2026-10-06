@@ -21,5 +21,11 @@
   ],
   "chef": "Petter Johansson",
   "chefSource": "site",
-  "dinnerNoteSv": "Avsmakningsmeny"
+  "dinnerNoteSv": "Avsmakningsmeny",
+  "lunch": 2650,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNoteSv": "Samma meny till lunch · tors–lör",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantergo.se/menu"
 }

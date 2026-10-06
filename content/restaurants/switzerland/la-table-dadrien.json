@@ -27,5 +27,10 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 155)",
   "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 155)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
+  "lunchNoteFr": "Uniquement le soir",
+  "lunchNoteIt": "Solo a cena",
   "cuisineIt": "Contemporanea"
 }

@@ -14,6 +14,8 @@
   "dinnerNoteZh": "定價套餐",
   "sourceType": "press",
   "source": "https://www.eatmycritique.com/foodreviews/galit",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.galitrestaurant.com/",
   "lat": 41.92607,
   "lng": -87.64959,

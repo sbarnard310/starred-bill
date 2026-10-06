@@ -20,6 +20,9 @@
     "vegetarian"
   ],
   "dinnerNoteFil": "Tasting menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFil": "Hapunan lang",
   "chef": "Nicco Santos",
   "chefSource": "site"
 }

@@ -35,6 +35,11 @@
   "cuisineFr": "Cuisine créative",
   "areaFr": "Saint-Gall",
   "dinnerNoteIt": "Menu degustazione",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
+  "lunchNoteFr": "Uniquement le soir",
+  "lunchNoteIt": "Solo a cena",
   "cuisineIt": "Creativa",
   "areaIt": "San Gallo"
 }

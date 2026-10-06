@@ -24,5 +24,12 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine bio",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 195,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteFr": "Même menu le midi · ven.–dim.",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–So",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.archibalddeprince.lu/la-table/",
   "cuisineDe": "Bio"
 }

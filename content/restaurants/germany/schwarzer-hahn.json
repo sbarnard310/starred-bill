@@ -21,6 +21,9 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Französisch-modern",
   "chef": "Felix Jarzina",
   "chefSource": "press"

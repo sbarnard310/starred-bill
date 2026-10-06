@@ -23,5 +23,8 @@
   ],
   "chef": "Darren Teoh",
   "chefSource": "michelin",
-  "dinnerNoteMs": "Menu rasa"
+  "dinnerNoteMs": "Menu rasa",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteMs": "Makan malam sahaja"
 }

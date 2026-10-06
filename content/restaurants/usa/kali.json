@@ -13,6 +13,8 @@
   "dinnerNote": "À la carte; mains about $36–$38, steaks $85–$95",
   "sourceType": "site",
   "source": "https://www.kalirestaurant.com/food-menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.kalirestaurant.com/",
   "lat": 34.083456,
   "lng": -118.32454,

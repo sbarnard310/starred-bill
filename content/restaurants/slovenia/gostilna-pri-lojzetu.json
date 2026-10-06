@@ -23,5 +23,11 @@
   ],
   "chef": "Tomaž Kavčič",
   "chefSource": "site",
-  "dinnerNoteSl": "Degustacijski meni (drugi meniji od 90 €)"
+  "dinnerNoteSl": "Degustacijski meni (drugi meniji od 90 €)",
+  "lunch": 130,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteSl": "Enak meni za kosilo · pet.–ned.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.zemono.si/en/tasting-menu.php"
 }

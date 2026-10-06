@@ -14,6 +14,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/atelier-crenn",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.ateliercrenn.com/",
   "lat": 37.79835,
   "lng": -122.43586,

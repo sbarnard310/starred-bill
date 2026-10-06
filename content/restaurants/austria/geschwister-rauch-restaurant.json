@@ -19,6 +19,13 @@
   "placeId": "ChIJNabo8qAGb0cRLZ3bQJIJBCs",
   "michelinId": "1213073",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 55 €)",
+  "lunch": 102,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchWine": 68,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.geschwister-rauch.at/fileadmin/user_upload/Speisekarten/Wirtshaus_Speisekarte.pdf",
   "cuisineDe": "Kreativ",
   "chef": "Richard Rauch",
   "chefSource": "press"

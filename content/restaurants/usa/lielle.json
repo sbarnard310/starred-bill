@@ -18,6 +18,8 @@
   "dinnerNoteZh": "定價套餐，四道菜",
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/los-angeles/reviews/lielle",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.lielle.la/",
   "lat": 34.055261,
   "lng": -118.397624,

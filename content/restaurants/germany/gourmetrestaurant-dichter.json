@@ -18,5 +18,8 @@
   "placeId": "ChIJG13_PuuOnUcRtEGKr6oREpE",
   "michelinId": "77069",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 218 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Moderne Küche"
 }

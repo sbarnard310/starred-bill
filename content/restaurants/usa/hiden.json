@@ -14,6 +14,8 @@
   "dinnerNoteZh": "廚師發辦",
   "sourceType": "press",
   "source": "https://www.exploretock.com/hiden",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://hidenmiami.com/",
   "lat": 25.800824,
   "lng": -80.201283,

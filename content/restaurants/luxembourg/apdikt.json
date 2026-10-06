@@ -23,5 +23,9 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine créative",
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

@@ -25,5 +25,11 @@
   "chef": "Diogo Rocha",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 50 €)",
+  "lunch": 170,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNotePt": "O mesmo menu ao almoço · sex.–dom.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://mesadelemos.com/",
   "cuisinePt": "Criativa"
 }

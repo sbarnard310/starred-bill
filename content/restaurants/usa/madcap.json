@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu (other menus from $145)",
   "sourceType": "site",
   "source": "https://www.madcapmarin.com/food",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.madcapmarin.com/",
   "lat": 37.974712,
   "lng": -122.56168,

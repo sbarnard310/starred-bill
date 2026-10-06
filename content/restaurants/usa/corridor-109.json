@@ -18,6 +18,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.exploretock.com/corridor109",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.corridor109.com/",
   "lat": 34.082927,
   "lng": -118.309286,

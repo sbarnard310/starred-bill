@@ -22,5 +22,13 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 120)",
   "cuisineFr": "Cuisine classique",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 120)",
+  "lunch": 165,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Fr",
+  "lunchNoteFr": "Même menu le midi · mar.–ven.",
+  "lunchNoteIt": "Stesso menu a pranzo · mar–ven",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.bad-balgach.com/s/17092026-A-la-Carte-ejc9.pdf",
   "cuisineIt": "Classica"
 }

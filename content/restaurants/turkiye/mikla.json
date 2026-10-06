@@ -25,6 +25,9 @@
     "halal"
   ],
   "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 8,500 itibarıyla)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteTr": "Yalnızca akşam yemeği",
   "cuisineTr": "Akdeniz Mutfağı",
   "chef": "Mehmet Gürs",
   "chefSource": "press"

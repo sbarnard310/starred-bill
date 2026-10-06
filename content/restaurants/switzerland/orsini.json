@@ -24,5 +24,14 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 160)",
   "cuisineFr": "Cuisine italienne contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 160)",
+  "lunch": 240,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Fr",
+  "lunchNoteFr": "Même menu le midi · mer.–ven.",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–ven",
+  "lunchWine": 175,
+  "lunchSourceType": "site",
+  "lunchSource": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/d/ipQpbuGfSPGC2J3h",
   "cuisineIt": "Italiana contemporanea"
 }

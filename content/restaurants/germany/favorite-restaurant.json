@@ -23,5 +23,11 @@
     "vegan"
   ],
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 275,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.favorite-mainz.de/en/genuss-kulinarik/sternerestaurant/",
   "cuisineDe": "Mediterran"
 }

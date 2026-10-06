@@ -24,5 +24,11 @@
   "chef": "Lars Scharp",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 115)",
+  "lunch": 222,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–za",
+  "lunchSourceType": "site",
+  "lunchSource": "https://larsamsterdam.nl/",
   "cuisineNl": "Moderne keuken"
 }

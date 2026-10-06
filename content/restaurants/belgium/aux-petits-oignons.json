@@ -27,5 +27,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 75)",
   "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 75 €)",
+  "lunch": 145,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Fri, Sun–Mon",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–vr, zo–ma",
+  "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.–lun.",
+  "lunchWine": 60,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.auxpetitsoignons.be/menu-nl",
   "cuisineFr": "Cuisine française moderne"
 }

@@ -23,5 +23,8 @@
   "chef": "Marlene Vieira",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 150 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Moderna"
 }

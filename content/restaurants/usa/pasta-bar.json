@@ -14,6 +14,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.timeout.com/los-angeles/restaurants/pasta-bar",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.pastabarencino.com/",
   "lat": 34.156721,
   "lng": -118.483862,

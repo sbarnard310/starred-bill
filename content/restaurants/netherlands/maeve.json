@@ -22,5 +22,12 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 115)",
+  "lunch": 250,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · vr–za",
+  "lunchWine": 160,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantmaeve.nl/arrangementen/",
   "cuisineNl": "Creatief Frans"
 }

@@ -18,6 +18,9 @@
   "placeId": "ChIJPy3OSzE1OkYRbZ2eFN3V3yA",
   "michelinId": "500482",
   "dinnerNoteNb": "Smaksmeny",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNb": "Kun middag",
   "chef": "Roger Asakil Joya",
   "chefSource": "press"
 }

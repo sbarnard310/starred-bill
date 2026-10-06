@@ -25,5 +25,8 @@
   "chef": "Manuel Ulrich",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Moderne Küche"
 }

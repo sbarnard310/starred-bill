@@ -14,6 +14,8 @@
   "dinnerNote": "Omakase",
   "sourceType": "site",
   "source": "https://www.masakisaito.ca/menu/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.masakisaito.ca/",
   "lat": 43.6723007,
   "lng": -79.395785,

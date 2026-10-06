@@ -18,6 +18,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "site",
   "source": "https://www.somnirestaurant.com/en/faqs",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.somnirestaurant.com/",
   "lat": 34.082256,
   "lng": -118.388587,

@@ -27,5 +27,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 99)",
   "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 99 €)",
+  "lunch": 158,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
+  "lunchNoteFr": "Même menu le midi · mar.–ven.",
+  "lunchWine": 42,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.vrijmoed.be/nl/menu",
   "cuisineFr": "Cuisine créative"
 }

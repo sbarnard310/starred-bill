@@ -29,5 +29,10 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
+  "lunchNoteFr": "Uniquement le soir",
+  "lunchNoteIt": "Solo a cena",
   "cuisineIt": "Contemporanea"
 }

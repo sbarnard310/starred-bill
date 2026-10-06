@@ -25,5 +25,8 @@
   "chef": "Octávio Freitas",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 195 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Atual"
 }

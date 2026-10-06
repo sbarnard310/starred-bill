@@ -15,6 +15,8 @@
   "wine": 105,
   "sourceType": "site",
   "source": "https://www.sorrelrestaurant.com/menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.sorrelrestaurant.com/",
   "lat": 37.788334,
   "lng": -122.44614,

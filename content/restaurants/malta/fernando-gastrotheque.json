@@ -23,5 +23,8 @@
   "chef": "Laszlo Sragli",
   "chefSource": "site",
   "dinnerNoteMt": "Menu tad-degustazzjoni (menus oħra minn €95)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteMt": "Ikla ta' filgħaxija biss",
   "areaMt": "Tas-Sliema"
 }

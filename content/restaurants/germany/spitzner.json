@@ -23,5 +23,11 @@
   "chef": "Karl-Nikolas Spitzner",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 132 €)",
+  "lunch": 171,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.spitzner-restaurant.de/speisekarte/",
   "cuisineDe": "Französisch-modern"
 }

@@ -12,6 +12,8 @@
   "dinnerNote": "À la carte; mains about $42–$54",
   "sourceType": "site",
   "source": "https://www.springmarietta.com/menus/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.springmarietta.com",
   "lat": 33.9535173,
   "lng": -84.5509835,

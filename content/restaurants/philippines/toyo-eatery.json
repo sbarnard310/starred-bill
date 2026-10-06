@@ -19,6 +19,9 @@
     "vegan"
   ],
   "dinnerNoteFil": "Tasting menu; idadagdag pa ang presyo",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFil": "Hapunan lang",
   "chef": "Jordy Navarra",
   "chefSource": "press"
 }

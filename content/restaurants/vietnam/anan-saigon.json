@@ -19,5 +19,8 @@
   ],
   "chef": "Peter Cuong Franklin",
   "chefSource": "michelin",
-  "dinnerNoteVi": "Thực đơn nếm thử; giá sẽ được bổ sung"
+  "dinnerNoteVi": "Thực đơn nếm thử; giá sẽ được bổ sung",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteVi": "Chỉ phục vụ bữa tối"
 }

@@ -14,6 +14,8 @@
   "dinnerNote": "Degustation menu",
   "sourceType": "press",
   "source": "https://www.travelsforstars.com/blog/2024/11/25/joel-robuchon-las-vegas",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://mgmgrand.mgmresorts.com/en/restaurants/joel-robuchon-french-restaurant.html",
   "lat": 36.1019984,
   "lng": -115.1688491,

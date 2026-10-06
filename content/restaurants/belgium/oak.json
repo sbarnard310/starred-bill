@@ -25,5 +25,12 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 75)",
   "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 75 €)",
+  "lunch": 159,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
+  "lunchNoteFr": "Même menu le midi · mar.–ven.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://oakgent.be/menu/",
   "cuisineFr": "Cuisine moderne"
 }

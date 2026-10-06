@@ -19,5 +19,8 @@
   "chef": "Tsukasa Hagimori",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 175)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Japans"
 }

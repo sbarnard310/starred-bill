@@ -24,5 +24,12 @@
   "chef": "Helena Rizzo",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde R$290)",
+  "lunch": 780,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sun",
+  "lunchNotePt": "O mesmo menu ao almoço · ter.–dom.",
+  "lunchWine": 290,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantemani.com.br/gastronomia/",
   "cuisinePt": "Criativa"
 }

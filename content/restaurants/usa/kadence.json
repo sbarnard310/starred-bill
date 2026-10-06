@@ -11,6 +11,8 @@
   "dinnerNote": "Omakase, prepaid",
   "sourceType": "press",
   "source": "https://www.exploretock.com/kadence",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://kadenceorlando.com/",
   "lat": 28.5687259,
   "lng": -81.3458703,

@@ -22,5 +22,8 @@
     "gluten-free"
   ],
   "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 590)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePl": "Tylko kolacje",
   "areaPl": "Warszawa"
 }

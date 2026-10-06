@@ -15,6 +15,8 @@
   "wine": 55,
   "sourceType": "site",
   "source": "https://www.dirtcandynyc.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.dirtcandynyc.com/",
   "lat": 40.71794,
   "lng": -73.99087,

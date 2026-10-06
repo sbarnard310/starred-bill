@@ -18,5 +18,8 @@
   "placeId": "ChIJ6XzF2T4pyEcRaa6_ZE0fvA8",
   "michelinId": "213283",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 95)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Modern Frans"
 }

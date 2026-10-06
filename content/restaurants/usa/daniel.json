@@ -19,6 +19,8 @@
   "wine": 225,
   "sourceType": "site",
   "source": "https://www.danielnyc.com/cuisine/tasting-menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.danielnyc.com/",
   "lat": 40.766752,
   "lng": -73.967504,

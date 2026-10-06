@@ -22,5 +22,8 @@
   ],
   "chef": "Dani García",
   "chefSource": "michelin",
-  "dinnerNoteAr": "قائمة تذوق"
+  "dinnerNoteAr": "قائمة تذوق",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteAr": "العشاء فقط"
 }

@@ -22,5 +22,13 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Eigentijds",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 90,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–vr",
+  "lunchNoteFr": "Même menu le midi · mer.–ven.",
+  "lunchWine": 50,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantnebo.be/menu",
   "cuisineFr": "Cuisine actuelle"
 }

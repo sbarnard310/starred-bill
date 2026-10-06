@@ -23,5 +23,11 @@
   "chef": "André Rickert and Janina Allgaier",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 52 €)",
+  "lunch": 120,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://bidlabu.de/",
   "cuisineDe": "Marktküche"
 }

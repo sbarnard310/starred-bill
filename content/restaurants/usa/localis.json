@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu, plus 23% service",
   "sourceType": "press",
   "source": "https://www.exploretock.com/localis",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://localissacramento.com/",
   "lat": 38.5665938,
   "lng": -121.4829661,

@@ -21,5 +21,8 @@
   ],
   "chef": "Sam Aisbett",
   "chefSource": "site",
-  "dinnerNoteVi": "Thực đơn nếm thử"
+  "dinnerNoteVi": "Thực đơn nếm thử",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteVi": "Chỉ phục vụ bữa tối"
 }

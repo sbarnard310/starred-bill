@@ -18,6 +18,8 @@
   "dinnerNote": "Kaiseki tasting menu",
   "sourceType": "press",
   "source": "https://www.opentable.com/blog/muku-nyc/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.restaurantmuku.nyc/",
   "lat": 40.72184,
   "lng": -74.009995,

@@ -22,5 +22,8 @@
   ],
   "chef": "Jeffrey Vella",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni"
+  "dinnerNoteHr": "Degustacijski meni",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteHr": "Samo večera"
 }

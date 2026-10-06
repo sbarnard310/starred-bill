@@ -26,5 +26,8 @@
   ],
   "chef": "Ola Klepp",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny (andre menyer fra 960 kr)"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra 960 kr)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNb": "Kun middag"
 }

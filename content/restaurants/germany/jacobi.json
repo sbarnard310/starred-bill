@@ -22,5 +22,11 @@
   "chef": "Christoph Kaiser",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 94 €)",
+  "lunch": 190,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://jacobi-freiburg.de/",
   "cuisineDe": "Innovativ"
 }

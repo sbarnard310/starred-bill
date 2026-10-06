@@ -15,6 +15,9 @@
   "placeId": "ChIJ02OKNUEJAWARxBf8MLVZQ9w",
   "dinner": 19800,
   "source": "https://omakaseje.com/restaurants/ok794616",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ",
   "michelinId": "1245287",
   "chef": "Meika Hoshino",
   "chefSource": "press"

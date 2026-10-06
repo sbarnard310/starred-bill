@@ -19,5 +19,11 @@
   "chef": "Valéry Mathis",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 159 €)",
+  "lunch": 198,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Fr",
+  "lunchSourceType": "site",
+  "lunchSource": "https://ernosbistro.de/kueche",
   "cuisineDe": "Französisch-klassisch"
 }

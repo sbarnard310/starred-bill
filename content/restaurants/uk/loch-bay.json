@@ -12,6 +12,8 @@
   "dinnerNote": "Set menu",
   "sourceType": "site",
   "source": "https://www.lochbay-restaurant.co.uk/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.lochbay-restaurant.co.uk/",
   "lat": 57.51557,
   "lng": -6.57252,

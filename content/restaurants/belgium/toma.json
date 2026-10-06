@@ -25,5 +25,13 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 130,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
+  "lunchNoteFr": "Même menu le midi · mar.–ven.",
+  "lunchWine": 65,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.toma-restaurant.be/menu-par-saison/",
   "cuisineFr": "Cuisine créative"
 }

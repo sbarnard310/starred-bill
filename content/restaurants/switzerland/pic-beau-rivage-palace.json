@@ -30,6 +30,14 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Menu degustazione",
+  "lunch": 450,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–So",
+  "lunchNoteFr": "Même menu le midi · mer.–dim.",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.brp.ch/media/vndilpti/programmation-automne-hiver-au-beau-rivage-palace.pdf",
   "cuisineIt": "Creativa",
   "areaIt": "Losanna"
 }

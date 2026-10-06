@@ -23,5 +23,8 @@
   "chef": "Eike Iken",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Modern"
 }

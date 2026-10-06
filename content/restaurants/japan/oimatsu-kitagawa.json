@@ -15,6 +15,9 @@
   "placeId": "ChIJoUJJOejmAGARrAMPH_hs3s0",
   "dinner": 34500,
   "source": "https://omakaseje.com/restaurants/kr246618",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ",
   "michelinId": "1193113",
   "chef": "Toru Kitagawa",
   "chefSource": "press"

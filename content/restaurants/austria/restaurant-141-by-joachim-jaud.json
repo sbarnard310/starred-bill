@@ -23,5 +23,8 @@
   "chef": "Joachim Jaud",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 194 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

@@ -28,5 +28,11 @@
   "chef": "André Gerrits",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
+  "lunch": 165,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–vr",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantamsterdammertje.nl/wp-content/uploads/2026/09/10.-Menukaart-Oktober-2026-NL.pdf",
   "cuisineNl": "Creatief"
 }

@@ -11,6 +11,8 @@
   "dinnerNote": "Chef's counter tasting menu (dining room $225), plus tax and service",
   "sourceType": "press",
   "source": "https://www.exploretock.com/camille",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://camilleorlando.com/",
   "lat": 28.5683554,
   "lng": -81.3259894,

@@ -29,5 +29,14 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 175)",
   "cuisineFr": "Cuisine française contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 175)",
+  "lunch": 250,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
+  "lunchWine": 98,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.leperolles.ch/menu-perolles",
   "cuisineIt": "Francese contemporanea"
 }

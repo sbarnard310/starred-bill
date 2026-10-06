@@ -14,6 +14,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "site",
   "source": "https://www.citrinandmelisse.com/citrin",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.citrinandmelisse.com/",
   "lat": 34.024447,
   "lng": -118.491439,

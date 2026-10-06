@@ -34,5 +34,13 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 199)",
   "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 199)",
+  "lunch": 259,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–So",
+  "lunchNoteFr": "Même menu le midi · ven.–dim.",
+  "lunchNoteIt": "Stesso menu a pranzo · ven–dom",
+  "lunchSourceType": "site",
+  "lunchSource": "https://gillesvarone.ch/",
   "cuisineIt": "Moderna"
 }

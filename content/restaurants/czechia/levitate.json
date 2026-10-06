@@ -26,6 +26,9 @@
     "gluten-free"
   ],
   "dinnerNoteCs": "Degustační menu (další menu od CZK 4,200)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteCs": "Pouze večeře",
   "chef": "Christian Chu",
   "chefSource": "press"
 }

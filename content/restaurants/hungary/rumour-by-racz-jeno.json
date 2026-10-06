@@ -22,5 +22,8 @@
   ],
   "chef": "Jenő Rácz",
   "chefSource": "site",
-  "dinnerNoteHu": "Kóstolómenü (további menük: HUF 47,900-tól)"
+  "dinnerNoteHu": "Kóstolómenü (további menük: HUF 47,900-tól)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteHu": "Csak vacsora"
 }

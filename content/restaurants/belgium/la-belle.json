@@ -27,5 +27,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 80)",
   "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 80 €)",
+  "lunch": 155,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri, Sun–Mon",
+  "lunchNoteNl": "Zelfde menu bij de lunch · vr, zo–ma",
+  "lunchNoteFr": "Même menu le midi · ven., dim.–lun.",
+  "lunchWine": 45,
+  "lunchSourceType": "site",
+  "lunchSource": "https://la-belle.be/nl/menu/",
   "cuisineFr": "Cuisine française créative"
 }

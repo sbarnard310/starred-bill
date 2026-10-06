@@ -21,5 +21,8 @@
   "chef": "Sebastian Obendorfer",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 248 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

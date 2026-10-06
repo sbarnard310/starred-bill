@@ -23,5 +23,11 @@
   "chef": "Bart Ausems",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 90)",
+  "lunch": 165,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Fri, Sun",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–vr, zo",
+  "lunchSourceType": "site",
+  "lunchSource": "https://toutafait.nl/menu/",
   "cuisineNl": "Modern Frans"
 }

@@ -14,6 +14,8 @@
   "dinnerNoteZh": "一般主菜",
   "sourceType": "site",
   "source": "https://www.osteriamozza.com/menus/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.osteriamozza.com/",
   "lat": 34.083425,
   "lng": -118.338686,

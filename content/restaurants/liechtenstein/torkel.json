@@ -25,5 +25,11 @@
   "chef": "Ivo Berger",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 48)",
+  "lunch": 163,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Fr",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.torkel.li",
   "cuisineDe": "Moderne Küche"
 }

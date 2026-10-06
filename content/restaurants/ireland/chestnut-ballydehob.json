@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.restaurantchestnutwestcork.ie/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.restaurantchestnutwestcork.ie/",
   "lat": 51.562655,
   "lng": -9.460819,

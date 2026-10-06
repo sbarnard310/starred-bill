@@ -29,6 +29,9 @@
   "chef": "Ozan Kumbasar",
   "chefSource": "michelin",
   "dinnerNoteTr": "Tadım menüsü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteTr": "Yalnızca akşam yemeği",
   "cuisineTr": "Türk Mutfağı",
   "areaTr": "İzmir"
 }

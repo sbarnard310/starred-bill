@@ -21,6 +21,9 @@
     "vegetarian"
   ],
   "dinnerNoteSv": "Avsmakningsmeny",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteSv": "Endast middag",
   "chef": "Mats Vollmer",
   "chefSource": "press"
 }

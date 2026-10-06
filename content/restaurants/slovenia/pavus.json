@@ -23,5 +23,11 @@
   "chef": "Marko Pavčnik",
   "chefSource": "michelin",
   "dinnerNoteSl": "Degustacijski meni (drugi meniji od 100 €)",
+  "lunch": 170,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteSl": "Enak meni za kosilo · sobota",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.pavus.si/kulinarika/Menu",
   "areaSl": "Laško"
 }

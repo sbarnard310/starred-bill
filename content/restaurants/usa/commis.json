@@ -13,6 +13,8 @@
   "wine": 139,
   "sourceType": "press",
   "source": "https://commisrestaurant.com/info/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.commisrestaurant.com/",
   "lat": 37.8246825,
   "lng": -122.254846,

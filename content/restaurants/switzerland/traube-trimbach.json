@@ -24,5 +24,13 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 180)",
   "cuisineFr": "Cuisine française contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 180)",
+  "lunch": 225,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
+  "lunchSourceType": "site",
+  "lunchSource": "https://traubetrimbach.ch/traube-menu/",
   "cuisineIt": "Francese contemporanea"
 }

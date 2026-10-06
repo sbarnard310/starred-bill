@@ -11,6 +11,8 @@
   "dinnerNote": "Discovery menu, prepaid (Prestige menu $340)",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/ebbe-tampa",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.chefebbe.com/",
   "lat": 27.9536143,
   "lng": -82.4602915,

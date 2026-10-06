@@ -21,5 +21,11 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu",
+  "lunch": 175,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteNl": "Zelfde menu bij de lunch · zaterdag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://noor.nl/menu/",
   "cuisineNl": "Creatief"
 }

@@ -15,6 +15,8 @@
   "dinnerNote": "Tasting menu at the chef's counter, prepaid",
   "sourceType": "press",
   "source": "https://www.exploretock.com/emelina-west-palm-beach",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://emelinawpb.com/",
   "lat": 26.6976528,
   "lng": -80.0551759,

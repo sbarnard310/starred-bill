@@ -12,6 +12,8 @@
   "dinnerNote": "À la carte; mains about $38–$105, steaks $125–$245",
   "sourceType": "site",
   "source": "https://www.surfclubrestaurant.com/menus",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.surfclubrestaurant.com/",
   "lat": 25.878331,
   "lng": -80.1216265,

@@ -25,5 +25,9 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 70)",
   "cuisineNl": "Thais",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 70 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
+  "lunchNoteFr": "Uniquement le soir",
   "cuisineFr": "Cuisine thaïlandaise"
 }

@@ -14,6 +14,8 @@
   "dinnerNote": "Omakase, 15 courses",
   "sourceType": "press",
   "source": "https://ericrosen.substack.com/p/noz-17-michelin-star-sushi-in-nyc",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.noz.global/experience/noz-17",
   "lat": 40.743587,
   "lng": -74.005878,

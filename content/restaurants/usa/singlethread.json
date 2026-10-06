@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu, Mon–Wed (Thu–Sun about $541)",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/singlethreadfarms",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.singlethreadfarms.com/",
   "lat": 38.6122599,
   "lng": -122.8697229,

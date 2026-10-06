@@ -16,5 +16,8 @@
   "lng": 18.0657669,
   "placeId": "ChIJPx3u7budX0YRB2JLoqpp-vQ",
   "michelinId": "1203721",
-  "dinnerNoteSv": "Avsmakningsmeny"
+  "dinnerNoteSv": "Avsmakningsmeny",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteSv": "Endast middag"
 }

@@ -24,5 +24,11 @@
   "chef": "Michael Corpel",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 65)",
+  "lunch": 79,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.demoerbeiwarmond.nl/menu/",
   "cuisineNl": "Modern Frans"
 }

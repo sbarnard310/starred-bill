@@ -14,6 +14,8 @@
   "dinnerNote": "Tasting menu, five courses",
   "sourceType": "site",
   "source": "https://www.wildcommoncharleston.com/faq/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.wildcommoncharleston.com/",
   "lat": 32.7907327,
   "lng": -79.9460589,

@@ -26,5 +26,12 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 195,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://hautrestaurant.be/menu/",
   "cuisineFr": "Cuisine française moderne"
 }

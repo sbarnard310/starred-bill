@@ -25,5 +25,12 @@
   "chef": "Constantin Kaiser",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
+  "lunch": 115,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
+  "lunchWine": 149,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.dersternhersfeld.de/kulinarik#letable",
   "cuisineDe": "Klassische Küche"
 }

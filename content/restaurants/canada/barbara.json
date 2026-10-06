@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://barbararestaurant.com/menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://barbararestaurant.com/",
   "lat": 49.2804672,
   "lng": -123.0969955,

@@ -14,6 +14,8 @@
   "dinnerNote": "Tasting menu (other menus from $85)",
   "sourceType": "site",
   "source": "https://www.herplacephilly.com/menu/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.herplacephilly.com/",
   "lat": 39.9508248,
   "lng": -75.1701166,

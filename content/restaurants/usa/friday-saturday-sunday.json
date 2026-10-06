@@ -14,6 +14,8 @@
   "dinnerNote": "Chef's tasting menu",
   "sourceType": "site",
   "source": "https://www.fridaysaturdaysunday.com/eat",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.fridaysaturdaysunday.com/",
   "lat": 39.9489785,
   "lng": -75.1760814,

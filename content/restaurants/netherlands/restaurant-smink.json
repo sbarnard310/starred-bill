@@ -27,5 +27,12 @@
   "chef": "Jan Smink",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
+  "lunch": 155,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · vr–za",
+  "lunchWine": 36,
+  "lunchSourceType": "site",
+  "lunchSource": "https://jansmink.com/",
   "cuisineNl": "Creatief"
 }

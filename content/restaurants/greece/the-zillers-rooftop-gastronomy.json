@@ -21,5 +21,8 @@
   ],
   "chef": "Vasilis Roussos",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας"
+  "dinnerNoteEl": "Μενού γευσιγνωσίας",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteEl": "Μόνο δείπνο"
 }

@@ -21,5 +21,12 @@
   "chef": "Marcel Kazda",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 49 €)",
+  "lunch": 179,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–Fr",
+  "lunchWine": 59,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.garbo-loewen.de/images/pdf/01--menus_september_-2026.pdf",
   "cuisineDe": "Marktküche"
 }

@@ -31,5 +31,14 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine méditerranéenne",
   "dinnerNoteIt": "Menu degustazione",
+  "lunch": 59,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
+  "lunchNoteFr": "Même menu le midi · mar.–sam.",
+  "lunchNoteIt": "Stesso menu a pranzo · mar–sab",
+  "lunchWine": 65,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.osteriaenoteca.ch/wp-content/uploads/2026/04/Osteria-dellEnoteca-Losone-Menu-2026.pdf",
   "cuisineIt": "Mediterranea"
 }

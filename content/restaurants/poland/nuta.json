@@ -23,5 +23,8 @@
   "chef": "Andrea Camastra",
   "chefSource": "michelin",
   "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 595)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePl": "Tylko kolacje",
   "areaPl": "Warszawa"
 }

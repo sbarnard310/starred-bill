@@ -14,6 +14,8 @@
   "dinnerNote": "À la carte; mains about $39–$62, pastas $30–$33",
   "sourceType": "site",
   "source": "https://www.vernschs.com/samplemenu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.vernschs.com/",
   "lat": 32.7923928,
   "lng": -79.9457326,

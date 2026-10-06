@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "press",
   "source": "https://www.exploretock.com/tfl",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.thomaskeller.com/tfl",
   "lat": 38.40443,
   "lng": -122.36474,

@@ -18,6 +18,8 @@
   "dinnerNoteZh": "廚師發辦",
   "sourceType": "press",
   "source": "https://resy.com/cities/washington-dc/venues/omakase-barracks-row",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.omakasedc.com/",
   "lat": 38.881845,
   "lng": -76.994928,

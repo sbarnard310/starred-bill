@@ -24,5 +24,12 @@
   "chef": "Philippe Giar",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 53 €)",
+  "lunch": 289,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Fr",
+  "lunchWine": 65,
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurant-villa-merton.de/",
   "cuisineDe": "Klassische Küche"
 }

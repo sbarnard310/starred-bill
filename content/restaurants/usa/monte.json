@@ -15,6 +15,8 @@
   "dinnerNote": "Chef's tasting menu",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/monte-south-salt-lake",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://monteslc.com/",
   "lat": 40.7224078,
   "lng": -111.8932934,

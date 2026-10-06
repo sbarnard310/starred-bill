@@ -14,6 +14,8 @@
   "dinnerNoteZh": "家庭式套餐",
   "sourceType": "site",
   "source": "https://www.narisf.com/food-menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.narisf.com/",
   "lat": 37.785542,
   "lng": -122.428832,

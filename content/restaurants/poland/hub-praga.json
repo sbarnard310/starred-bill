@@ -23,5 +23,8 @@
   "chef": "Witek Iwański",
   "chefSource": "michelin",
   "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 640)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePl": "Tylko kolacje",
   "areaPl": "Warszawa"
 }

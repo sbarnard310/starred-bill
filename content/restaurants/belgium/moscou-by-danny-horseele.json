@@ -27,5 +27,12 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
   "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 130 €)",
+  "lunch": 245,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
+  "lunchNoteFr": "Même menu le midi · mar.–ven.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantmoscou.be/menu",
   "cuisineFr": "Cuisine française moderne"
 }

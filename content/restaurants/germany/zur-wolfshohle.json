@@ -20,6 +20,12 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 63 €)",
+  "lunch": 89,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.wolfshoehle-freiburg.de",
   "cuisineDe": "Klassische Küche",
   "chef": "Sascha Weiss",
   "chefSource": "press"

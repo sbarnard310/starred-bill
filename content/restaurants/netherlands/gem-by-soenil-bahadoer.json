@@ -28,5 +28,8 @@
   "chef": "Soenil Bahadoer",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 245)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Creatief"
 }

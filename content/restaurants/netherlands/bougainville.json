@@ -27,5 +27,8 @@
   "chef": "Tim Golsteijn",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 179)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Moderne keuken"
 }

@@ -28,5 +28,10 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 260)",
   "cuisineFr": "Cuisine japonaise contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 260)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
+  "lunchNoteFr": "Uniquement le soir",
+  "lunchNoteIt": "Solo a cena",
   "cuisineIt": "Giapponese contemporanea"
 }

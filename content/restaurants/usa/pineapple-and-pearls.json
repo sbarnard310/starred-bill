@@ -18,6 +18,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "site",
   "source": "https://www.pineappleandpearls.com/team-member/how-much-is-dinner/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.pineappleandpearls.com/",
   "lat": 38.880707,
   "lng": -76.99514,

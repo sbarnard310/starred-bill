@@ -22,5 +22,12 @@
     "vegetarian"
   ],
   "dinnerNotePt": "Menu de degustação (outros menus desde 55 €)",
+  "lunch": 65,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNotePt": "O mesmo menu ao almoço · ter.–sáb.",
+  "lunchWine": 50,
+  "lunchSourceType": "site",
+  "lunchSource": "https://esporao.com/pt/turismo/restaurante-da-herdade-do-esporao",
   "cuisinePt": "Atual"
 }

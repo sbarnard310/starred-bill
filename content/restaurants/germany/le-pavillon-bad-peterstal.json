@@ -21,6 +21,9 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 182 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Französisch-klassisch",
   "chef": "Martin Herrmann",
   "chefSource": "press"

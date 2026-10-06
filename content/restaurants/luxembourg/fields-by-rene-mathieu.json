@@ -28,5 +28,12 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine de saison",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 85,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteFr": "Même menu le midi · ven.–dim.",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–So",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.airfield.lu/wp-content/uploads/2026/09/MENU-IMMERSION-VEGETALE-09.26.3docx.pdf",
   "cuisineDe": "Saisonal"
 }

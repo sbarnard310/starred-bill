@@ -14,6 +14,8 @@
   "dinnerNoteZh": "品嚐套餐起",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/saison-san-francisco-2",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.saisonsf.com/",
   "lat": 37.779688,
   "lng": -122.392222,

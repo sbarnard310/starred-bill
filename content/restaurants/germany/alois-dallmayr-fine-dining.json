@@ -22,5 +22,11 @@
   "chef": "Rosina Ostler",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 300,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.dallmayr.com/fileadmin/Redaktion/Restaurant/Restaurant_Alois_Menue.pdf",
   "cuisineDe": "Kreativ"
 }

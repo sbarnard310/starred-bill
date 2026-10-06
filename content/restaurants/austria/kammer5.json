@@ -27,6 +27,9 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Moderne Küche",
   "chef": "Adrian Schlager",
   "chefSource": "press"

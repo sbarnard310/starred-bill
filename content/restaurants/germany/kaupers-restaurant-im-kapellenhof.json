@@ -23,5 +23,11 @@
   "chef": "Sebastian Kauper and Nora Breyer",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 118 €)",
+  "lunch": 154,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.kaupers-kapellenhof.de/wp-content/uploads/2026/06/2026-Menuepreise-Kaupers-Kapellenhof.pdf",
   "cuisineDe": "Moderne Küche"
 }

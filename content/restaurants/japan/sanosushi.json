@@ -26,6 +26,8 @@
   "dinnerNoteJa": "鮨おまかせ",
   "sourceType": "press",
   "source": "https://www.tablecheck.com/en/sanosushi",
+  "lunchNote": "Open for lunch",
+  "lunchNoteJa": "ランチ営業あり",
   "lat": 35.65158,
   "lng": 139.75071,
   "placeId": "ChIJU-KOB-iLGGAR7QolPPFGq94",

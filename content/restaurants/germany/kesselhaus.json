@@ -24,5 +24,12 @@
   "chef": "Constantin Krauß",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 130 €)",
+  "lunch": 215,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
+  "lunchWine": 120,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.kesselhaus-os.de/menue/",
   "cuisineDe": "Kreativ"
 }

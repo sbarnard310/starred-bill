@@ -23,5 +23,11 @@
   "chef": "Stefan Meier",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
+  "lunch": 400,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Fr",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.meierszweisinn.de/wp-content/uploads/2026/09/Silvester-2026.pdf",
   "cuisineDe": "Kreativ"
 }

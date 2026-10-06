@@ -23,5 +23,8 @@
   "chef": "Florian Wagenbach",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 149 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Klassische Küche"
 }

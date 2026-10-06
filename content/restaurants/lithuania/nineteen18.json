@@ -24,5 +24,8 @@
   ],
   "chef": "Vita Bartininkaitė and Justinas Misus",
   "chefSource": "michelin",
-  "dinnerNoteLt": "Degustacinis meniu"
+  "dinnerNoteLt": "Degustacinis meniu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteLt": "Tik vakarienė"
 }

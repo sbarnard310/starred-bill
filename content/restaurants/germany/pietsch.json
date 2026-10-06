@@ -23,6 +23,9 @@
     "vegan"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 170 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ",
   "chef": "Robin Pietsch",
   "chefSource": "press"

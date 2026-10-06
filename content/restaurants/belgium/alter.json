@@ -25,5 +25,12 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 115,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Fri, Sun",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–vr, zo",
+  "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurant-alter.be/",
   "cuisineFr": "Cuisine créative"
 }

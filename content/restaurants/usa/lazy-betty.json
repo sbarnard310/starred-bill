@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu, 8 courses (bar menu $185)",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/lazy-betty-atlanta",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.lazybettyatl.com/",
   "lat": 33.7815172,
   "lng": -84.3837962,

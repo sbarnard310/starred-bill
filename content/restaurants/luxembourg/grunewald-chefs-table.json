@@ -27,6 +27,10 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès 140 €)",
   "cuisineFr": "Cuisine moderne",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Moderne Küche",
   "areaDe": "Luxemburg"
 }

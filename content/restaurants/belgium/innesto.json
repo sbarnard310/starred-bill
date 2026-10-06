@@ -26,5 +26,13 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 135,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
+  "lunchNoteFr": "Même menu le midi · mar.–ven.",
+  "lunchWine": 38,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.innesto.be/menu/",
   "cuisineFr": "Cuisine créative"
 }

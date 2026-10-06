@@ -15,6 +15,8 @@
   "wine": 85,
   "sourceType": "site",
   "source": "https://www.orsaandwinston.com/faq",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.orsaandwinston.com/",
   "lat": 34.04847,
   "lng": -118.247949,

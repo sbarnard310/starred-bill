@@ -20,5 +20,8 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 255 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

@@ -23,5 +23,8 @@
   "chef": "André Münch",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 189 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Moderne Küche"
 }

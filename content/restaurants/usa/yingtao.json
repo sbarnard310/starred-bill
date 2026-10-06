@@ -18,6 +18,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://yingtaonyc.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://yingtaonyc.com/",
   "lat": 40.765597,
   "lng": -73.98753,

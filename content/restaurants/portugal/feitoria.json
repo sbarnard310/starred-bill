@@ -24,5 +24,8 @@
   "chef": "André Cruz",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 115 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Moderna"
 }

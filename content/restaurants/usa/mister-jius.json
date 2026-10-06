@@ -14,6 +14,8 @@
   "dinnerNoteZh": "品嚐套餐，另加一道共享主菜",
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/san-francisco/reviews/mister-jius",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://misterjius.com/",
   "lat": 37.79371,
   "lng": -122.406654,

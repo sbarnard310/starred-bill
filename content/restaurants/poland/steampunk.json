@@ -25,5 +25,12 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 249)"
+  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 249)",
+  "lunch": 569,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sun",
+  "lunchNotePl": "To samo menu w porze lunchu · wt.–niedz.",
+  "lunchWine": 250,
+  "lunchSourceType": "site",
+  "lunchSource": "https://wodna-wieza.pl/wp-content/uploads/2026/09/MENU-STEAMPUNK_20.09.2026r.pdf"
 }

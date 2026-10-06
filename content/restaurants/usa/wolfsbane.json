@@ -18,6 +18,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/wolfsbane-san-francisco",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://wolfsbanesf.com/",
   "lat": 37.758023,
   "lng": -122.388137,

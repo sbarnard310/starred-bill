@@ -25,5 +25,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 115)",
   "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 115 €)",
+  "lunch": 275,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–vr",
+  "lunchNoteFr": "Même menu le midi · mer.–ven.",
+  "lunchWine": 125,
+  "lunchSourceType": "site",
+  "lunchSource": "https://bozarrestaurant.be/fr/menu",
   "cuisineFr": "Cuisine française moderne"
 }

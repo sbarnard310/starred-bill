@@ -20,5 +20,8 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteSv": "Avsmakningsmeny"
+  "dinnerNoteSv": "Avsmakningsmeny",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteSv": "Endast middag"
 }

@@ -24,5 +24,11 @@
   "chef": "Alexander Huber",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 95,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.huber-wirt.de/",
   "cuisineDe": "Moderne Küche"
 }

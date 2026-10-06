@@ -14,6 +14,8 @@
   "dinnerNoteZh": "家庭式套餐",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/roses-luxury-washington",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.rosesluxury.com/",
   "lat": 38.880648,
   "lng": -76.995059,

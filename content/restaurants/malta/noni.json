@@ -24,5 +24,8 @@
   "chef": "Jonathan Brincat",
   "chefSource": "michelin",
   "dinnerNoteMt": "Menu tad-degustazzjoni",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteMt": "Ikla ta' filgħaxija biss",
   "areaMt": "Il-Belt Valletta"
 }

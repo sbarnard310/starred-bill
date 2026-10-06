@@ -11,6 +11,8 @@
   "dinnerNote": "À la carte; pastas about $26–$55 (duck and steak to share $125–$155)",
   "sourceType": "site",
   "source": "https://roccatampa.com/menus",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://roccatampa.com/",
   "lat": 27.96251,
   "lng": -82.4646,

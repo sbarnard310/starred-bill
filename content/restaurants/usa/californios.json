@@ -18,6 +18,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/californios-san-francisco",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.californiossf.com/",
   "lat": 37.771241,
   "lng": -122.413141,

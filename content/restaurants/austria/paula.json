@@ -20,5 +20,11 @@
   "chef": "Sebastian Leutgeb",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
+  "lunch": 145,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–So",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.weisserbaer.at/de/restaurant-paula",
   "cuisineDe": "Kreativ"
 }

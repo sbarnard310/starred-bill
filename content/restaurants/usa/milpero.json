@@ -15,6 +15,8 @@
   "wine": 125,
   "sourceType": "site",
   "source": "https://milperodenver.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://milperodenver.com/",
   "lat": 39.7723508,
   "lng": -104.9818105,

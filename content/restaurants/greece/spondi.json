@@ -22,5 +22,8 @@
   ],
   "chef": "Arnaud Bignon",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας· η τιμή θα προστεθεί"
+  "dinnerNoteEl": "Μενού γευσιγνωσίας· η τιμή θα προστεθεί",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteEl": "Μόνο δείπνο"
 }

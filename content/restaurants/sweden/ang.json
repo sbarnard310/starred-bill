@@ -20,5 +20,12 @@
   "michelinId": "1192333",
   "chef": "Filip Gemzell",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny"
+  "dinnerNoteSv": "Avsmakningsmeny",
+  "lunch": 2900,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNoteSv": "Samma meny till lunch · tis–lör",
+  "lunchWine": 2000,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurangang.se/menu/"
 }

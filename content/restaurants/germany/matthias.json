@@ -24,5 +24,11 @@
   "chef": "Silvio Pfeufer",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 135 €)",
+  "lunch": 145,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.matthiasrestaurant.com/",
   "cuisineDe": "Moderne Küche"
 }

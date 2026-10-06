@@ -23,6 +23,13 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
+  "lunch": 159,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
+  "lunchWine": 85,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.hotel-villa-sorgenfrei.de/restaurant",
   "cuisineDe": "Moderne Küche",
   "chef": "Joe Andrich",
   "chefSource": "site"

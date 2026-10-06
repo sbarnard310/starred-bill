@@ -23,6 +23,13 @@
   "placeId": "ChIJDQRxOoahb0cR4LOkEWMpfQQ",
   "michelinId": "1213078",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 185 €)",
+  "lunch": 240,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–So",
+  "lunchWine": 140,
+  "lunchSourceType": "site",
+  "lunchSource": "https://dieweinbank.at/wp-content/uploads/2021/05/Aperitif_Preise_Restaurant_September_2026.pdf",
   "cuisineDe": "Kreativ",
   "chef": "Gerhard Fuchs",
   "chefSource": "press"

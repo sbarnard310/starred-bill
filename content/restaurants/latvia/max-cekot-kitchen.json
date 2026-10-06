@@ -25,5 +25,8 @@
   "chef": "Max Cekot",
   "chefSource": "site",
   "dinnerNoteLv": "Degustācijas ēdienkarte",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteLv": "Tikai vakariņas",
   "areaLv": "Rīga"
 }

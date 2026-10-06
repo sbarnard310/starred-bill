@@ -12,7 +12,7 @@
   "source": "https://you.ctrip.com/food/21/5160625.html",
   "lat": 24.4826004,
   "lng": 118.1152554,
-  "placeId": "ChIJwVD9fiqbFDQR647UdvrMx_Y",
+  "placeId": "ChIJWTqCNi6bFDQReXoP66i7ViY",
   "michelinId": "1213625",
   "diets": [
     "vegetarian",
@@ -23,5 +23,7 @@
   "nameZhs": "宴遇（嘉禾路）",
   "areaZhs": "厦门",
   "chef": "Wu Rong",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rating": 4.6,
+  "reviews": 19
 }

@@ -14,8 +14,8 @@
   "sourceType": "press",
   "source": "https://you.ctrip.com/food/shanghai2/5009076-hotels.html",
   "website": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
-  "lat": 31.208949,
-  "lng": 121.445604,
+  "lat": 31.223683,
+  "lng": 121.469649,
   "michelinId": "506725",
   "diets": [
     "vegetarian",
@@ -25,5 +25,8 @@
   "chefSource": "michelin",
   "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "粤菜",
-  "nameZhs": "唐阁"
+  "nameZhs": "唐阁",
+  "placeId": "ChIJL3z__21wsjURcN-9-TRIdqQ",
+  "rating": 4.3,
+  "reviews": 7
 }

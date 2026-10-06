@@ -23,5 +23,8 @@
   "chef": "Hendrik Friedrich",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 49 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

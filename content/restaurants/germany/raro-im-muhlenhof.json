@@ -25,5 +25,8 @@
     "kosher"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 155 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Regional"
 }

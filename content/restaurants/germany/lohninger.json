@@ -23,5 +23,11 @@
   "chef": "Mario Lohninger",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 85,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://lohninger.de/",
   "cuisineDe": "Österreichisch"
 }

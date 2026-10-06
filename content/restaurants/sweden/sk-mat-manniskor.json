@@ -22,6 +22,9 @@
     "vegan"
   ],
   "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 670 kr)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteSv": "Endast middag",
   "chef": "Stefan Karlsson",
   "chefSource": "press"
 }

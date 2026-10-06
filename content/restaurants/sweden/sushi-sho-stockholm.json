@@ -22,5 +22,11 @@
   ],
   "chef": "Carl Ishizaki",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny"
+  "dinnerNoteSv": "Avsmakningsmeny",
+  "lunch": 1295,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteSv": "Samma meny till lunch · fre–lör",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.sushisho.se/meny-sv"
 }

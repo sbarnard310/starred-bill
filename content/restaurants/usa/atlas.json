@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "press",
   "source": "https://www.yelp.com/biz/atlas-atlanta",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://atlasrestaurant.com/",
   "lat": 33.8404462,
   "lng": -84.3836692,

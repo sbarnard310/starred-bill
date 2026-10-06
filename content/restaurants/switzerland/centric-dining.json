@@ -32,5 +32,10 @@
   "cuisineFr": "Cuisine moderne",
   "areaFr": "Thoune",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 48)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
+  "lunchNoteFr": "Uniquement le soir",
+  "lunchNoteIt": "Solo a cena",
   "cuisineIt": "Moderna"
 }

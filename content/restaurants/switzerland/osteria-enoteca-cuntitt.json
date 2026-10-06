@@ -30,5 +30,14 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 118)",
   "cuisineFr": "Cuisine italienne contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 118)",
+  "lunch": 148,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Tue, Thu–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Di, Do–Sa",
+  "lunchNoteFr": "Même menu le midi · lun.–mar., jeu.–sam.",
+  "lunchNoteIt": "Stesso menu a pranzo · lun–mar, gio–sab",
+  "lunchWine": 80,
+  "lunchSourceType": "site",
+  "lunchSource": "https://cuntitt.ch/menu/",
   "cuisineIt": "Italiana contemporanea"
 }

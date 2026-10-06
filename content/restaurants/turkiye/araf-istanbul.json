@@ -26,5 +26,8 @@
     "gluten-free"
   ],
   "dinnerNoteTr": "Tipik ana yemek",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteTr": "Yalnızca akşam yemeği",
   "cuisineTr": "Modern"
 }

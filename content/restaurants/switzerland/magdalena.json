@@ -29,5 +29,13 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione",
+  "lunch": 220,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sa–So",
+  "lunchNoteFr": "Même menu le midi · sam.–dim.",
+  "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-magdalena.ch/",
   "cuisineIt": "Moderna"
 }

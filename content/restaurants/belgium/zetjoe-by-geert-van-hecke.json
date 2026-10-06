@@ -26,5 +26,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 53)",
   "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 53 €)",
+  "lunch": 107,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di–za",
+  "lunchNoteFr": "Même menu le midi · mar.–sam.",
+  "lunchWine": 39,
+  "lunchSourceType": "site",
+  "lunchSource": "https://zetjoe.be/",
   "cuisineFr": "Cuisine française créative"
 }

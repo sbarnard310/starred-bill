@@ -14,6 +14,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/miami/reviews/ariete",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://arietecoconutgrove.com/",
   "lat": 25.725091,
   "lng": -80.245256,

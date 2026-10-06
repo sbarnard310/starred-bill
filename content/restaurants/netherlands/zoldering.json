@@ -23,5 +23,8 @@
   "chef": "Tomas Bron",
   "chefSource": "michelin",
   "dinnerNoteNl": "Gemiddeld hoofdgerecht",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Modern Frans"
 }

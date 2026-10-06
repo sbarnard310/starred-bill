@@ -22,5 +22,11 @@
   "chef": "Eric Menchon",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 51 €)",
+  "lunch": 113,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lemoissonnier.de/",
   "cuisineDe": "Französisch"
 }

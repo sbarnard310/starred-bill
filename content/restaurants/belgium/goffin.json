@@ -26,5 +26,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 56)",
   "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 56 €)",
+  "lunch": 150,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Tue, Thu–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · ma–di, do–vr",
+  "lunchNoteFr": "Même menu le midi · lun.–mar., jeu.–ven.",
+  "lunchWine": 48,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.timothygoffin.be/menu",
   "cuisineFr": "Cuisine moderne"
 }

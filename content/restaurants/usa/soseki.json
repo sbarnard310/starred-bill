@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu, prepaid",
   "sourceType": "press",
   "source": "https://www.exploretock.com/soseki",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.sosekifl.com/",
   "lat": 28.5931796,
   "lng": -81.361526,

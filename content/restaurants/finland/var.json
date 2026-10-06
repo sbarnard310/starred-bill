@@ -24,5 +24,12 @@
   ],
   "chef": "Oskar Kotka",
   "chefSource": "michelin",
-  "dinnerNoteFi": "Maistelumenu (muut menut alkaen 129 €)"
+  "dinnerNoteFi": "Maistelumenu (muut menut alkaen 129 €)",
+  "lunch": 149,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteFi": "Sama menu lounaalla · lauantai",
+  "lunchWine": 129,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantvar.fi/menu/"
 }

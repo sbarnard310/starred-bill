@@ -24,5 +24,12 @@
   "chef": "Andreas Krolik",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 310 €)",
+  "lunch": 325,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Fr",
+  "lunchWine": 470,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-lafleur.de/lafleur/",
   "cuisineDe": "Französisch-modern"
 }

@@ -22,5 +22,8 @@
   ],
   "chef": "Przemysław Klima",
   "chefSource": "michelin",
-  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 940)"
+  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 940)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePl": "Tylko kolacje"
 }

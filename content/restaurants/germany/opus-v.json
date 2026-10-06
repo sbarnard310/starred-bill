@@ -23,5 +23,11 @@
   "chef": "Dominik Paul",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
+  "lunch": 249,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://info.engelhorn.com/gastronomie/opus-v/abendkarte/",
   "cuisineDe": "Moderne Küche"
 }

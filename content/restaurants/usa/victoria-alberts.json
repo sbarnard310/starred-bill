@@ -12,6 +12,8 @@
   "wine": 210,
   "sourceType": "site",
   "source": "https://disneyworld.disney.go.com/dining/grand-floridian-resort-and-spa/victoria-and-alberts/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://disneyworld.disney.go.com/dining/victoria-and-alberts-overview/",
   "lat": 28.411352,
   "lng": -81.5872943,

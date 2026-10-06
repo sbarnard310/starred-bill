@@ -14,6 +14,8 @@
   "dinnerNote": "Tasting menu, 20–25 dishes",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/provenance-philadelphia",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://provenancephl.com/",
   "lat": 39.942842,
   "lng": -75.1455115,

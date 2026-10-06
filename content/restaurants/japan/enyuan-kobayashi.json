@@ -15,6 +15,9 @@
   "placeId": "ChIJzRWjdiYJAWARxTS3HkqQy50",
   "dinner": 30250,
   "source": "https://omakaseje.com/restaurants/kl653943",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ",
   "michelinId": "1199532",
   "diets": [
     "gluten-free"

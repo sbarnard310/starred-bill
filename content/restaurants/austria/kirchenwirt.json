@@ -20,5 +20,11 @@
   "chef": "Stefan Birnbacher",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 145 €)",
+  "lunch": 160,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Mon",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Mo",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.hotelkirchenwirt.at/restaurant/",
   "cuisineDe": "Saisonal"
 }

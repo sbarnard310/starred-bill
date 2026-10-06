@@ -28,5 +28,12 @@
   "chef": "Walter Triebl",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 79,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Mon",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–Mo",
+  "lunchWine": 42,
+  "lunchSourceType": "site",
+  "lunchSource": "https://lilli-fehring.at/",
   "cuisineDe": "Modern"
 }

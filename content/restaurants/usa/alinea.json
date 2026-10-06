@@ -19,6 +19,8 @@
   "wine": 195,
   "sourceType": "press",
   "source": "https://www.exploretock.com/alinea",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.alinearestaurant.com/",
   "lat": 41.913274,
   "lng": -87.648174,

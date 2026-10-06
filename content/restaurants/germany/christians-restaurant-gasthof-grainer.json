@@ -22,6 +22,12 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
+  "lunch": 155,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://christians-restaurant.de/",
   "cuisineDe": "Klassische Küche",
   "chef": "Christian Grainer",
   "chefSource": "press"

@@ -12,6 +12,8 @@
   "dinnerNote": "Menu in 6 courses (4 courses £120)",
   "sourceType": "site",
   "source": "https://www.exclusive.co.uk/bybrook/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.exclusive.co.uk/bybrook/",
   "lat": 51.49381,
   "lng": -2.231999,

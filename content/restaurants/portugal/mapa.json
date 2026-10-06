@@ -29,5 +29,12 @@
   "chef": "Miguel Laffan",
   "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 145 €)",
+  "lunch": 175,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNotePt": "O mesmo menu ao almoço · sex.–dom.",
+  "lunchWine": 115,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.l-and.com/s/MAPA-EN-2026.pdf",
   "cuisinePt": "Atual"
 }

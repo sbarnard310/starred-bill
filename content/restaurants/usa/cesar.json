@@ -18,6 +18,8 @@
   "dinnerNote": "Tasting menu, about 13 courses",
   "sourceType": "press",
   "source": "https://resy.com/cities/new-york-ny/venues/cesar",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.cesar.restaurant/",
   "lat": 40.727178,
   "lng": -74.007609,

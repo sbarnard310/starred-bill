@@ -26,5 +26,13 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès 220 €)",
   "cuisineFr": "Cuisine française moderne",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 220 €)",
+  "lunch": 275,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteFr": "Même menu le midi · dimanche",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
+  "lunchWine": 120,
+  "lunchSourceType": "site",
+  "lunchSource": "https://louis-linster.lu/fr/menu.html",
   "cuisineDe": "Französisch-modern"
 }

@@ -12,6 +12,8 @@
   "wine": 155,
   "sourceType": "site",
   "source": "https://www.marchrestaurant.com/reservation/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.marchrestaurant.com/",
   "lat": 29.7432132,
   "lng": -95.4004288,

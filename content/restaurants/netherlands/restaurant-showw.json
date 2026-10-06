@@ -24,5 +24,11 @@
   "chef": "Dorus Floris",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
+  "lunch": 135,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sun–Mon",
+  "lunchNoteNl": "Zelfde menu bij de lunch · zo–ma",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantshoww.com/en/menu",
   "cuisineNl": "Moderne keuken"
 }

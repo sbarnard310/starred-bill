@@ -15,6 +15,8 @@
   "wine": 110,
   "sourceType": "site",
   "source": "https://www.makochicago.com/menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.makochicago.com/",
   "lat": 41.885775,
   "lng": -87.646897,

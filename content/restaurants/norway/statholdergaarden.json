@@ -21,6 +21,9 @@
     "vegetarian"
   ],
   "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 975 kr)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNb": "Kun middag",
   "chef": "Bent Stiansen",
   "chefSource": "press"
 }

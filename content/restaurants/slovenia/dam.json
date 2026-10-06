@@ -24,5 +24,8 @@
   ],
   "chef": "Uroš Fakuč",
   "chefSource": "michelin",
-  "dinnerNoteSl": "Degustacijski meni (drugi meniji od 95 €)"
+  "dinnerNoteSl": "Degustacijski meni (drugi meniji od 95 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteSl": "Samo večerja"
 }

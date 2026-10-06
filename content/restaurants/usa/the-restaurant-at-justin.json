@@ -13,6 +13,8 @@
   "wine": 110,
   "sourceType": "press",
   "source": "https://www.exploretock.com/therestaurantatjustinwinery",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.justinwine.com/",
   "lat": 35.6563869,
   "lng": -120.9113324,

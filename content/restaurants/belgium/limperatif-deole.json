@@ -27,5 +27,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 59)",
   "cuisineNl": "Eigentijds Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 59 €)",
+  "lunch": 139,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sun",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di–zo",
+  "lunchNoteFr": "Même menu le midi · mar.–dim.",
+  "lunchWine": 39,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.limperatifdeole.be/menu",
   "cuisineFr": "Cuisine française contemporaine"
 }

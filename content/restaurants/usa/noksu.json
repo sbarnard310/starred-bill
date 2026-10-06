@@ -18,6 +18,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://noksunyc.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://noksunyc.com/",
   "lat": 40.74835,
   "lng": -73.987997,

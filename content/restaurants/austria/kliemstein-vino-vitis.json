@@ -28,5 +28,8 @@
   "chef": "Andreas Zika",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Klassische Küche"
 }

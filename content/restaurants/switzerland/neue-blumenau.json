@@ -29,5 +29,14 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 82)",
   "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 82)",
+  "lunch": 175,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Fr",
+  "lunchNoteFr": "Même menu le midi · mar.–ven.",
+  "lunchNoteIt": "Stesso menu a pranzo · mar–ven",
+  "lunchWine": 168,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.neueblumenau.ch/menues",
   "cuisineIt": "Contemporanea"
 }

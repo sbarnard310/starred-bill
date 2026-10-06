@@ -18,6 +18,8 @@
   "dinnerNote": "Tasting menu, 10–13 courses",
   "sourceType": "site",
   "source": "https://www.corimanyc.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://corimanyc.com/",
   "lat": 40.714656,
   "lng": -73.992907,

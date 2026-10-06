@@ -18,5 +18,8 @@
   "michelinId": "1201927",
   "chef": "Solemann Haddad",
   "chefSource": "site",
-  "dinnerNoteAr": "قائمة تذوق"
+  "dinnerNoteAr": "قائمة تذوق",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteAr": "العشاء فقط"
 }

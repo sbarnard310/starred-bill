@@ -13,6 +13,8 @@
   "wine": 120,
   "sourceType": "site",
   "source": "https://www.acleaf.co.uk/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.acleaf.co.uk/",
   "lat": 50.401637,
   "lng": -4.056674,

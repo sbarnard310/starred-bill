@@ -21,6 +21,13 @@
     "vegetarian"
   ],
   "dinnerNoteHu": "Kóstolómenü (további menük: HUF 41,900-tól)",
+  "lunch": 52900,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNoteHu": "Ugyanaz a menü ebédre · Cs–Szo",
+  "lunchWine": 30000,
+  "lunchSourceType": "site",
+  "lunchSource": "https://essenciarestaurant.hu/degusztacios-menu/",
   "chef": "Tiago Sabarigo",
   "chefSource": "press"
 }

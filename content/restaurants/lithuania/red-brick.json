@@ -29,5 +29,8 @@
   ],
   "chef": "Arnór Ingi Bjarkason",
   "chefSource": "michelin",
-  "dinnerNoteLt": "Degustacinis meniu"
+  "dinnerNoteLt": "Degustacinis meniu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteLt": "Tik vakarienė"
 }

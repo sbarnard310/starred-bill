@@ -21,5 +21,8 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteEt": "Degustatsioonimenüü"
+  "dinnerNoteEt": "Degustatsioonimenüü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteEt": "Ainult õhtusöök"
 }

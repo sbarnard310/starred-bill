@@ -20,6 +20,12 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu",
+  "lunch": 268,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.212.amsterdam/_files/ugd/0d6402_64c36cbd1c5648f19fd0bafd5b395d9f.pdf",
   "cuisineNl": "Creatief",
   "chef": "Richard van Oostenbrugge and Thomas Groot",
   "chefSource": "press"

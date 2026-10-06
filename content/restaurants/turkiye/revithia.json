@@ -28,5 +28,8 @@
   "chef": "Duran Özdemir",
   "chefSource": "michelin",
   "dinnerNoteTr": "Tadım menüsü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteTr": "Yalnızca akşam yemeği",
   "cuisineTr": "Yöresel yemek"
 }

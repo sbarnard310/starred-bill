@@ -14,6 +14,8 @@
   "dinnerNote": "Omakase, plus service fee",
   "sourceType": "press",
   "source": "https://restaurantsforkings.com/city/denver/kizaki",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://kizakiden.com/",
   "lat": 39.6883588,
   "lng": -104.9804798,

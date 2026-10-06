@@ -24,6 +24,14 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine française moderne",
   "dinnerNoteIt": "Menu degustazione",
+  "lunch": 110,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/pdf/Restaurants/Cartes/MENU_MATCHA_PICCHU.pdf",
   "cuisineIt": "Francese moderna",
   "areaIt": "Losanna"
 }

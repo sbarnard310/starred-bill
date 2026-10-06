@@ -18,6 +18,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.exploretock.com/kiln",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.kilnsf.com/",
   "lat": 37.776196,
   "lng": -122.420292,

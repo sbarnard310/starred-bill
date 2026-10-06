@@ -9,6 +9,8 @@
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu; price still to be added",
   "sourceType": "none",
+  "lunchNote": "Open for lunch",
+  "lunchNoteJa": "ランチ営業あり",
   "lat": 35.012209,
   "lng": 135.753872,
   "placeId": "ChIJOccsQ4AIAWARvrgPsgAejJc",

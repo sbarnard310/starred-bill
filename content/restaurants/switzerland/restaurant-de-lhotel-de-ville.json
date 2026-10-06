@@ -29,5 +29,13 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine française contemporaine",
   "dinnerNoteIt": "Menu degustazione",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Mon",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–Mo",
+  "lunchNoteFr": "Même menu le midi · jeu.–lun.",
+  "lunchNoteIt": "Stesso menu a pranzo · gio–lun",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.hotel-restaurant-ollon.ch/sites/hotel-restaurant-ollon.ch/files/2026-09/Carte%20N21.pdf",
   "cuisineIt": "Francese contemporanea"
 }

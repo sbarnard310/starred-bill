@@ -24,5 +24,8 @@
   "chef": "Bernhard Zimmerl",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

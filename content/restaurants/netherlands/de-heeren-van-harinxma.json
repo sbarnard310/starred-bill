@@ -25,5 +25,12 @@
   "chef": "Seb Smit",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 89,50)",
+  "lunch": 112,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · ma–vr",
+  "lunchWine": 73.5,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lauswolt.nl/eten-drinken/de-heeren-van-harinxma",
   "cuisineNl": "Modern Frans"
 }

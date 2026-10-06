@@ -23,5 +23,8 @@
   ],
   "chef": "Paco Pérez",
   "chefSource": "site",
-  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 645)"
+  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 645)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePl": "Tylko kolacje"
 }

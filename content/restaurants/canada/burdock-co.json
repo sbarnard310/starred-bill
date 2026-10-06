@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu, 7 courses",
   "sourceType": "site",
   "source": "https://www.burdockandco.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.burdockandco.com/",
   "lat": 49.2609423,
   "lng": -123.1006287,

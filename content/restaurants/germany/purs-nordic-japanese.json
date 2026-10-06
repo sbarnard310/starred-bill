@@ -21,6 +21,9 @@
     "vegetarian-menu"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 190 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "chef": "Christian Eckhardt",
   "chefSource": "press"
 }

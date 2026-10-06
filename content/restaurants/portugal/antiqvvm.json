@@ -24,5 +24,12 @@
   "chef": "Vítor Matos",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 185 €)",
+  "lunch": 265,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue, Sat",
+  "lunchNotePt": "O mesmo menu ao almoço · ter., sáb.",
+  "lunchWine": 235,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.antiqvvm.pt/pt/o-menu",
   "cuisinePt": "Criativa"
 }

@@ -21,5 +21,8 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteMs": "Menu rasa; harga akan ditambah"
+  "dinnerNoteMs": "Menu rasa; harga akan ditambah",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteMs": "Makan malam sahaja"
 }

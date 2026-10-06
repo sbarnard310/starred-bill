@@ -13,6 +13,8 @@
   "wine": 195,
   "sourceType": "site",
   "source": "https://www.fourseasons.com/napavalley/dining/menus/auro-seasonal-tasting-menu/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.auronapavalley.com/",
   "lat": 38.5839271,
   "lng": -122.5671011,

@@ -14,6 +14,8 @@
   "dinnerNoteZh": "人均消費",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/state-bird-provisions-san-francisco",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.statebirdsf.com/",
   "lat": 37.783737,
   "lng": -122.43283,

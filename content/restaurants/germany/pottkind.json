@@ -22,5 +22,8 @@
   "chef": "Enrico Sablotny and Lukas Winkelmann",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

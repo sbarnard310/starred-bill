@@ -24,5 +24,8 @@
   "chef": "Martin Weghofer",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 55 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Moderne Küche"
 }

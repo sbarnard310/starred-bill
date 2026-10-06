@@ -28,5 +28,12 @@
   ],
   "chef": "Toni Kostian",
   "chefSource": "michelin",
-  "dinnerNoteFi": "Maistelumenu"
+  "dinnerNoteFi": "Maistelumenu",
+  "lunch": 198,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteFi": "Sama menu lounaalla · lauantai",
+  "lunchWine": 142,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantgron.com/menu"
 }

@@ -25,5 +25,8 @@
   "chef": "Markus Waibel and Dominik Holl",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 239 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Französisch-zeitgemäß"
 }

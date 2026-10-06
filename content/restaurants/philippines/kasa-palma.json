@@ -23,5 +23,8 @@
   ],
   "chef": "Aaron Isip",
   "chefSource": "site",
-  "dinnerNoteFil": "Tasting menu (ibang menu mula ₱6,500)"
+  "dinnerNoteFil": "Tasting menu (ibang menu mula ₱6,500)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFil": "Hapunan lang"
 }

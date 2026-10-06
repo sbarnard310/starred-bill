@@ -23,6 +23,9 @@
     "vegan"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 52,50)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Modern Frans",
   "chef": "Merijn van Berlo",
   "chefSource": "press"

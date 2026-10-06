@@ -23,5 +23,12 @@
   ],
   "chef": "Ana Roš Stojan",
   "chefSource": "michelin",
-  "dinnerNoteSl": "Degustacijski meni"
+  "dinnerNoteSl": "Degustacijski meni",
+  "lunch": 335,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNoteSl": "Enak meni za kosilo · sre.–ned.",
+  "lunchWine": 190,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.hisafranko.com/en/menu"
 }

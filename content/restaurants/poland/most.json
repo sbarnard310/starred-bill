@@ -27,5 +27,12 @@
     "vegan",
     "halal"
   ],
-  "dinnerNotePl": "Menu degustacyjne"
+  "dinnerNotePl": "Menu degustacyjne",
+  "lunch": 490,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Sun",
+  "lunchNotePl": "To samo menu w porze lunchu · sob.–niedz.",
+  "lunchWine": 250,
+  "lunchSourceType": "site",
+  "lunchSource": "https://miedzy-mostami.pl/most/degustacja/"
 }

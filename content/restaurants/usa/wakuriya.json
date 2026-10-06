@@ -10,6 +10,8 @@
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki menu, changing monthly; price not published (booked by phone)",
   "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.wakuriya.com/",
   "lat": 37.52114,
   "lng": -122.3366,

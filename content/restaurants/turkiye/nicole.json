@@ -23,5 +23,8 @@
     "gluten-free"
   ],
   "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 7,500 itibarıyla)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteTr": "Yalnızca akşam yemeği",
   "cuisineTr": "Modern Mutfak"
 }

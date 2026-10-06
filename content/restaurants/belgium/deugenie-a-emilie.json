@@ -25,5 +25,12 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 125)",
   "cuisineNl": "Klassiek Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 125 €)",
+  "lunch": 235,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Fri, Sun",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–vr, zo",
+  "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://eugenie-emilie.be/nos-menus",
   "cuisineFr": "Cuisine française classique"
 }

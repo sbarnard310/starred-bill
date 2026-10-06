@@ -28,5 +28,12 @@
   ],
   "chef": "Jan Knedla",
   "chefSource": "michelin",
-  "dinnerNoteCs": "Degustační menu (další menu od CZK 5,500)"
+  "dinnerNoteCs": "Degustační menu (další menu od CZK 5,500)",
+  "lunch": 6500,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNoteCs": "Stejné menu v poledne · čt–so",
+  "lunchWine": 3500,
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurant-papilio.cz/"
 }

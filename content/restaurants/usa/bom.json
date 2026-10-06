@@ -14,6 +14,8 @@
   "dinnerNote": "Chef's tasting menu",
   "sourceType": "site",
   "source": "https://www.bom-nyc.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.bom-nyc.com/",
   "lat": 40.739618,
   "lng": -73.99245,

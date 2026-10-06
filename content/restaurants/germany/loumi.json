@@ -18,5 +18,8 @@
   "michelinId": "1215781",
   "chef": "Karl-Louis Kömmler",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends"
 }

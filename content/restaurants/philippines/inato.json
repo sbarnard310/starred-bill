@@ -21,5 +21,8 @@
   ],
   "chef": "JP Cruz",
   "chefSource": "michelin",
-  "dinnerNoteFil": "Tasting menu"
+  "dinnerNoteFil": "Tasting menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFil": "Hapunan lang"
 }

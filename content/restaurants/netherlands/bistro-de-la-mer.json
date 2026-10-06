@@ -17,5 +17,11 @@
   "placeId": "ChIJFX-OmpQJxkcRcF18TZlXxsw",
   "michelinId": "1201223",
   "dinnerNoteNl": "Proeverijmenu",
+  "lunch": 98,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch",
+  "lunchNoteNl": "Zelfde menu bij de lunch",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.bistrodelamer.com/_files/ugd/8d2639_8a0259ad1d004580a1be807450c91009.pdf",
   "cuisineNl": "Klassieke keuken"
 }

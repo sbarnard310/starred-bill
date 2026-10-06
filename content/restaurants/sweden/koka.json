@@ -21,5 +21,8 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 995 kr)"
+  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 995 kr)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteSv": "Endast middag"
 }

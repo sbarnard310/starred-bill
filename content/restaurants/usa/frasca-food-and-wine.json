@@ -13,6 +13,8 @@
   "wine": 175,
   "sourceType": "site",
   "source": "https://www.frascafoodandwine.com/menu/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.frascafoodandwine.com/",
   "lat": 40.0193351,
   "lng": -105.2724941,

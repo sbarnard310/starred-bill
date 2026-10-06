@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu, 10 courses",
   "sourceType": "press",
   "source": "https://www.addisondelmar.com/the-experience/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.addisondelmar.com/",
   "lat": 32.9412972,
   "lng": -117.1988908,

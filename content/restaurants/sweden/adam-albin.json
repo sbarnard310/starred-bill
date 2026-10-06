@@ -21,5 +21,8 @@
   ],
   "chef": "Adam Dahlberg and Albin Wessman",
   "chefSource": "site",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteSv": "Endast middag"
 }

@@ -22,5 +22,11 @@
     "gluten-free"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 108)",
+  "lunch": 148,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteNl": "Zelfde menu bij de lunch · zondag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.pietersrestaurant.nl/",
   "cuisineNl": "Modern Frans"
 }

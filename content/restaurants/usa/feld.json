@@ -18,6 +18,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.exploretock.com/feldrestaurant",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.feldrestaurant.com/",
   "lat": 41.895985,
   "lng": -87.677571,

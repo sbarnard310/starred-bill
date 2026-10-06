@@ -27,5 +27,8 @@
   "chef": "Christian Le Squer",
   "chefSource": "site",
   "dinnerNoteVi": "Thực đơn nếm thử (thực đơn khác từ ₫5,999,000)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteVi": "Chỉ phục vụ bữa tối",
   "areaVi": "Đà Nẵng"
 }

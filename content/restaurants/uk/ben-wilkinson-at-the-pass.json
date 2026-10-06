@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu, 7 courses",
   "sourceType": "site",
   "source": "https://www.exclusive.co.uk/the-pass/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.exclusive.co.uk/the-pass/",
   "lat": 51.015953,
   "lng": -0.263726,

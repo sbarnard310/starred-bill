@@ -24,5 +24,8 @@
   "chef": "Serhat Doğramacı",
   "chefSource": "michelin",
   "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 7,000 itibarıyla)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteTr": "Yalnızca akşam yemeği",
   "cuisineTr": "Market Mutfağı"
 }

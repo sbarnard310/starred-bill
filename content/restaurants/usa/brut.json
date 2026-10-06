@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "press",
   "source": "https://5280.com/the-best-tasting-menu-in-denver-for-your-budget/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.brutodenver.com/",
   "lat": 39.7527561,
   "lng": -104.9969767,

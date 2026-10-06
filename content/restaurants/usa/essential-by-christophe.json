@@ -14,6 +14,8 @@
   "dinnerNote": "Essential menu, 7 courses (3 courses $175)",
   "sourceType": "press",
   "source": "https://shaneasavours.com/essential-by-christophe-new-york/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.essentialbychristophe.com/",
   "lat": 40.780833,
   "lng": -73.976657,

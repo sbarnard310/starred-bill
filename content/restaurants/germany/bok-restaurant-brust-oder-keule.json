@@ -24,5 +24,8 @@
   "chef": "Johannes Kemper",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 105 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

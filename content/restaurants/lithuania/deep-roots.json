@@ -25,5 +25,8 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteLt": "Degustacinis meniu (kiti meniu nuo 75 €)"
+  "dinnerNoteLt": "Degustacinis meniu (kiti meniu nuo 75 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteLt": "Tik vakarienė"
 }

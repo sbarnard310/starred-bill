@@ -22,5 +22,8 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 560)"
+  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 560)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePl": "Tylko kolacje"
 }

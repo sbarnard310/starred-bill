@@ -24,5 +24,12 @@
   "chef": "Martin Klein",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 205 €)",
+  "lunch": 245,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
+  "lunchWine": 225,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.hangar-7.com/de/kulinarik/restaurant-ikarus",
   "cuisineDe": "Kreativ"
 }

@@ -23,5 +23,12 @@
   ],
   "chef": "Anders Lauring",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny"
+  "dinnerNoteSv": "Avsmakningsmeny",
+  "lunch": 2195,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Tue",
+  "lunchNoteSv": "Samma meny till lunch · mån–tis",
+  "lunchWine": 1995,
+  "lunchSourceType": "site",
+  "lunchSource": "https://pmrestauranger.se/en/vara-menyer/"
 }

@@ -24,5 +24,11 @@
   "chef": "Klaus Erfort",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 125 €)",
+  "lunch": 244,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Fr",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.gaestehaus-erfort.de/",
   "cuisineDe": "Französisch-klassisch"
 }

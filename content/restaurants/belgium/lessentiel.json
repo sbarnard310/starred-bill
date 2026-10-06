@@ -25,5 +25,12 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
   "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 50 €)",
+  "lunch": 90,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lessentiel.be/carte-menus-2/",
   "cuisineFr": "Cuisine française créative"
 }

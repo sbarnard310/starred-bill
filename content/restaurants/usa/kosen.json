@@ -11,6 +11,8 @@
   "dinnerNote": "Chef's counter omakase",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/kosen-tampa",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.kosentampa.com/",
   "lat": 27.9623377,
   "lng": -82.4638787,

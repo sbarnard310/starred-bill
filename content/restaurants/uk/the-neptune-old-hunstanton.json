@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu, Wed–Sat",
   "sourceType": "site",
   "source": "https://theneptune.co.uk/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://theneptune.co.uk/",
   "lat": 52.951155,
   "lng": 0.509264,

@@ -26,5 +26,12 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 65,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteNl": "Zelfde menu bij de lunch · vr–zo",
+  "lunchNoteFr": "Même menu le midi · ven.–dim.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lecordechasse.be/media/images/upload/carte-restaurant-170726.pdf",
   "cuisineFr": "Cuisine créative"
 }

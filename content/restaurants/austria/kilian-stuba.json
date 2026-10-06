@@ -18,5 +18,8 @@
   "chef": "Sascha Kemmerer and Hans-Jörg Frick",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

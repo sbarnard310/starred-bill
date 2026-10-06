@@ -24,5 +24,8 @@
   "chef": "Alon Than",
   "chefSource": "michelin",
   "dinnerNotePl": "Menu degustacyjne",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePl": "Tylko kolacje",
   "areaPl": "Warszawa"
 }

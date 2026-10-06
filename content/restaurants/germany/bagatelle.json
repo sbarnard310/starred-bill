@@ -21,5 +21,12 @@
   "chef": "Gerald Schöberl",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 60 €)",
+  "lunch": 245,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri, Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr, So",
+  "lunchWine": 90,
+  "lunchSourceType": "site",
+  "lunchSource": "https://bagatelle.de/menue/",
   "cuisineDe": "Französisch-zeitgemäß"
 }

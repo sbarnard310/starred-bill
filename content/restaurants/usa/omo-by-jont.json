@@ -15,6 +15,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.omobyjont.com/menus/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.omobyjont.com/",
   "lat": 28.5951074,
   "lng": -81.350583,

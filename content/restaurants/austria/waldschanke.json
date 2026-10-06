@@ -24,5 +24,11 @@
   "chef": "Clemens Grabmer",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
+  "lunch": 120,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.waldschaenke.at/uploads/AkYLWWOn/Abendkarte_August2026.pdf",
   "cuisineDe": "Modern"
 }

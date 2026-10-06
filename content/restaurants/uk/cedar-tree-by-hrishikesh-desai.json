@@ -12,6 +12,8 @@
   "dinnerNote": "Three courses from the à la carte",
   "sourceType": "site",
   "source": "https://www.farlamhall.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.farlamhall.com/",
   "lat": 54.934134,
   "lng": -2.672856,

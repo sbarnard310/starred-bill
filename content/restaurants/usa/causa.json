@@ -14,6 +14,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/causa-washington",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.causadc.com/",
   "lat": 38.906905,
   "lng": -77.024685,

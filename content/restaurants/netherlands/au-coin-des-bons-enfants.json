@@ -23,5 +23,11 @@
   "chef": "Timo Reichelt",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
+  "lunch": 155,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thursdays",
+  "lunchNoteNl": "Zelfde menu bij de lunch · donderdag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.aucoin.nl",
   "cuisineNl": "Modern Frans"
 }

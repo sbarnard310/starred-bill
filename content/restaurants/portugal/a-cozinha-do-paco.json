@@ -28,5 +28,11 @@
   "chef": "Afonso Dantas",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 125 €)",
+  "lunch": 175,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNotePt": "O mesmo menu ao almoço · ter.–sáb.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.antoniomacanita.com/pt/adegas/fitapreta/enoturismo-alentejo/restaurante-a-cozinha-do-paco",
   "cuisinePt": "Criativa"
 }

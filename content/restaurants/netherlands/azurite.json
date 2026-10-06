@@ -28,5 +28,8 @@
   "chef": "Mario Ridder",
   "chefSource": "michelin",
   "dinnerNoteNl": "Weekendproeverijmenu, vrijdag en zaterdag (doordeweeks menu € 189); inclusief water en koffie",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Moderne keuken"
 }

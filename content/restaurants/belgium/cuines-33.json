@@ -28,5 +28,13 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 225,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Tue, Fri–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · ma–di, vr–za",
+  "lunchNoteFr": "Même menu le midi · lun.–mar., ven.–sam.",
+  "lunchWine": 115,
+  "lunchSourceType": "site",
+  "lunchSource": "https://cuines33.be/onsmenu/",
   "cuisineFr": "Cuisine créative"
 }

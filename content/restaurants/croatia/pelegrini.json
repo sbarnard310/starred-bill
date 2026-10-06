@@ -25,5 +25,8 @@
   "chef": "Rudolf Štefan",
   "chefSource": "michelin",
   "dinnerNoteHr": "Degustacijski meni (ostali meniji od 165 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteHr": "Samo večera",
   "areaHr": "Šibenik"
 }

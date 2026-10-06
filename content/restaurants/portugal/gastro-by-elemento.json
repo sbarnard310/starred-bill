@@ -27,5 +27,8 @@
   "chef": "Ricardo Dias Ferreira",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Atual"
 }

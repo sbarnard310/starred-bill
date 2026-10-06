@@ -24,5 +24,8 @@
   "chef": "Alberto Morisawa",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Com influências asiáticas"
 }

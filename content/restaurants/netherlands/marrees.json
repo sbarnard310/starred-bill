@@ -24,5 +24,11 @@
   "chef": "Jan Marrees",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–za",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantmarrees.nl/feed/",
   "cuisineNl": "Moderne keuken"
 }

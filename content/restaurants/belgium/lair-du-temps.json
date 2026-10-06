@@ -26,5 +26,12 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 195)",
   "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 195 €)",
+  "lunch": 405,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–vr",
+  "lunchNoteFr": "Même menu le midi · jeu.–ven.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://airdutemps.be/tableexclusive/",
   "cuisineFr": "Cuisine créative"
 }

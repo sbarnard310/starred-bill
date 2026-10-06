@@ -25,5 +25,12 @@
   "chef": "José Lopes",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 115 €)",
+  "lunch": 155,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNotePt": "O mesmo menu ao almoço · domingo",
+  "lunchWine": 105,
+  "lunchSourceType": "site",
+  "lunchSource": "https://bonbon.pt/pt-pt/menu/",
   "cuisinePt": "Moderna"
 }

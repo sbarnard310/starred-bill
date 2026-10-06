@@ -18,6 +18,8 @@
   "dinnerNote": "À la carte; mains about $44–$52",
   "sourceType": "press",
   "source": "https://mindtrip.ai/restaurant/new-york-city/bridges/re-RsRISavQ",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.bridges-nyc.com/",
   "lat": 40.713902,
   "lng": -73.998058,

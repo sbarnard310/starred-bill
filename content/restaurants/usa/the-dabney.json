@@ -14,6 +14,8 @@
   "dinnerNoteZh": "定價套餐，五道菜",
   "sourceType": "press",
   "source": "https://washingtonian.com/100-very-best-restaurants-2026/the-dabney-4/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://thedabney.com/",
   "lat": 38.906292,
   "lng": -77.024594,

@@ -18,6 +18,8 @@
   "dinnerNoteZh": "廚師發辦",
   "sourceType": "press",
   "source": "https://www.exploretock.com/mori-nozomi-los-angeles",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.morinozomi.com/",
   "lat": 34.033698,
   "lng": -118.441796,

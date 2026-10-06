@@ -11,6 +11,8 @@
   "dinnerNote": "Omakase (shorter menu $245)",
   "sourceType": "site",
   "source": "https://www.masayoshi.ca/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.masayoshi.ca/",
   "lat": 49.2457708,
   "lng": -123.0901179,

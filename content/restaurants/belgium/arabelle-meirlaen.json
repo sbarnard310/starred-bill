@@ -28,5 +28,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
   "cuisineNl": "Bio",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 130 €)",
+  "lunch": 160,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Fri, Sun",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–vr, zo",
+  "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.",
+  "lunchWine": 60,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.arabelle.be/cuisine-intuitive/",
   "cuisineFr": "Cuisine bio"
 }

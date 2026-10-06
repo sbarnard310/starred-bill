@@ -26,5 +26,8 @@
   ],
   "chef": "Filip Matjaž",
   "chefSource": "michelin",
-  "dinnerNoteSl": "Degustacijski meni"
+  "dinnerNoteSl": "Degustacijski meni",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteSl": "Samo večerja"
 }

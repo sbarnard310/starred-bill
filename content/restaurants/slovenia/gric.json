@@ -23,5 +23,11 @@
   ],
   "chef": "Luka Košir",
   "chefSource": "michelin",
-  "dinnerNoteSl": "Degustacijski meni (drugi meniji od 110 €)"
+  "dinnerNoteSl": "Degustacijski meni (drugi meniji od 110 €)",
+  "lunch": 150,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteSl": "Enak meni za kosilo · sobota",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.gric.si/en/faq"
 }

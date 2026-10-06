@@ -22,5 +22,8 @@
   "chef": "Victor Borg",
   "chefSource": "site",
   "dinnerNoteMt": "Menu tad-degustazzjoni; il-prezz għad irid jiżdied",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteMt": "Ikla ta' filgħaxija biss",
   "areaMt": "Il-Belt Valletta"
 }

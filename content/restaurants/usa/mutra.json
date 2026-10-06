@@ -17,6 +17,8 @@
   "dinnerNote": "À la carte; dishes about $47–$83",
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/miami/reviews/mutra",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://mutramiami.com/",
   "lat": 25.889159,
   "lng": -80.15407,

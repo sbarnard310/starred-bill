@@ -24,5 +24,12 @@
   ],
   "chef": "Radek Kašpárek",
   "chefSource": "site",
-  "dinnerNoteCs": "Degustační menu (další menu od CZK 1,450)"
+  "dinnerNoteCs": "Degustační menu (další menu od CZK 1,450)",
+  "lunch": 1950,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch",
+  "lunchNoteCs": "Stejné menu v poledne",
+  "lunchWine": 950,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.fieldrestaurant.cz/en/menu"
 }

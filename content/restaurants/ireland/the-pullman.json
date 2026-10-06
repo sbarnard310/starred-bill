@@ -17,6 +17,8 @@
   "wine": 90,
   "sourceType": "site",
   "source": "https://www.glenloabbeyhotel.ie/the-pullman.html",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.glenloabbeyhotel.ie/the-pullman.html",
   "lat": 53.30076,
   "lng": -9.098281,

@@ -24,5 +24,12 @@
   "chef": "Florian Wörgötter",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
+  "lunch": 120,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed, Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi, So",
+  "lunchWine": 80,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.xn--wrgtter-90ac.at/",
   "cuisineDe": "Kreativ"
 }

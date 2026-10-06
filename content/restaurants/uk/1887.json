@@ -17,6 +17,8 @@
   "wine": 70,
   "sourceType": "site",
   "source": "https://www.thetorridon.com/eat-drink/1887-restaurant/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.thetorridon.com/",
   "lat": 57.52892,
   "lng": -5.52819,

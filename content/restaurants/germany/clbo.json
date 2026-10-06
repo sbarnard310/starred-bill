@@ -28,5 +28,12 @@
   "chef": "Moritz Techet",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 159,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
+  "lunchWine": 85,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.colbo-restaurant.de/reservierung/",
   "cuisineDe": "Kreativ"
 }

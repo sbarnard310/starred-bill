@@ -26,5 +26,8 @@
   "chef": "Jurgen van der Zalm",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 185)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Creatief"
 }

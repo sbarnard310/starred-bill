@@ -22,5 +22,12 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 145 €)",
+  "lunch": 209,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
+  "lunchWine": 125,
+  "lunchSourceType": "site",
+  "lunchSource": "https://cdn.website-editor.net/s/e54942f9e33e41a8a722cd079c3166db/files/uploaded/Menu-+September+2026.pdf?Expires=1793573545&Signature=T6mKTCldBkURydOGHaHCMhY7SRhI2Kqyn9aSsz9xSzC~~C8qHvgditxy25s3R3nQGPCyU4602x1TW0JhniIxG4nVIdVDWASMmRUJo7fAGwI-71c1bB8hlH5rc-K4AOKkKWAJYtmI5O2rH2Jhhz5C6JVJ7sykVMvUCMxXxjVuG3-Xq~K~kvHN4Bj87Qxx9r-8FD83AQFAm7ascrpjJ1dPdG4HTDAatjNcwBviWuJFMiG~pf-U5pryZa3Bo0uhuPAM5H4AfVfdPI73ShPOTO9ltYz3oyc0ihbM1vwf7ZbTFw8sGeegFHYstXPMlfQYxZSa6pCdXrW9kR2OIX5CirSMng__&Key-Pair-Id=K2NXBXLF010TJW",
   "cuisineDe": "Moderne Küche"
 }

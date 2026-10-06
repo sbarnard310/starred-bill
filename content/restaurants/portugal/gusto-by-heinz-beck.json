@@ -26,5 +26,8 @@
   "chef": "Heinz Beck",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 190 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Mediterrânea"
 }

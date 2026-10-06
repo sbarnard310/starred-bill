@@ -12,6 +12,8 @@
   "dinnerNote": "Prix-fixe dinner, plus 6% county fee",
   "sourceType": "site",
   "source": "https://www.selbysrestaurant.com/s/Selbys_Dinner_91126.pdf",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.selbysrestaurant.com/",
   "lat": 37.4685638,
   "lng": -122.2104559,

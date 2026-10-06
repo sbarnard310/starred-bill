@@ -15,6 +15,9 @@
   "placeId": "ChIJgYkvWBYJAWARYhvfLZtlWAw",
   "dinner": 30000,
   "source": "https://omakaseje.com/restaurants/ti327047",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ",
   "michelinId": "1194689",
   "chef": "Kazuteru Maeda",
   "chefSource": "press"

@@ -12,6 +12,8 @@
   "dinnerNote": "Four-course prix fixe, plus 20% service",
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/san-diego/reviews/jeune-and-jolie",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.jeune-jolie.com",
   "lat": 33.1631027,
   "lng": -117.3516968,

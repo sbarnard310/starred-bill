@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu, 6 courses",
   "sourceType": "site",
   "source": "https://www.starkfood.co.uk/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.starkfood.co.uk/",
   "lat": 51.790781,
   "lng": 0.968653,

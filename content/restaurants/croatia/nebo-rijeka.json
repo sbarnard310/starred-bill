@@ -23,5 +23,8 @@
   ],
   "chef": "Gabriela Filca",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 70 €)"
+  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 70 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteHr": "Samo večera"
 }

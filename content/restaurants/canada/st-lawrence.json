@@ -12,6 +12,8 @@
   "wine": 75,
   "sourceType": "site",
   "source": "https://www.stlawrencerestaurant.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.stlawrencerestaurant.com/",
   "lat": 49.2832679,
   "lng": -123.0978836,

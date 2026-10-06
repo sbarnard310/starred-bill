@@ -15,5 +15,8 @@
   "placeId": "ChIJVVWJnO3mAGARmNC4-63TruI",
   "dinner": 33000,
   "source": "https://omakaseje.com/restaurants/xp616839",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ",
   "michelinId": "1193099"
 }

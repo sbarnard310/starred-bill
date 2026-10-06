@@ -14,6 +14,8 @@
   "dinnerNote": "Dessert tasting menu",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/nicosi-san-antonio",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://nicosisatx.com",
   "lat": 29.4409555,
   "lng": -98.4806909,

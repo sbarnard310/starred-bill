@@ -14,6 +14,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.timeout.com/chicago/restaurants/elske",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.elskerestaurant.com/",
   "lat": 41.884353,
   "lng": -87.66086,

@@ -18,6 +18,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.exploretock.com/restaurant-naides-san-francisco",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.restaurantnaides.com/",
   "lat": 37.790253,
   "lng": -122.409153,

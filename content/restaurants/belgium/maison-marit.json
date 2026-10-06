@@ -26,5 +26,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 55)",
   "cuisineNl": "Klassiek Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 55 €)",
+  "lunch": 130,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchWine": 40,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.maisonmarit.be/nl/menu",
   "cuisineFr": "Cuisine française classique"
 }

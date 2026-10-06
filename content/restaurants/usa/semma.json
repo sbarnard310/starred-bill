@@ -14,6 +14,8 @@
   "dinnerNote": "À la carte; mains about $36–$49",
   "sourceType": "site",
   "source": "https://www.semma.nyc/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.semma.nyc/",
   "lat": 40.73606,
   "lng": -74.000673,

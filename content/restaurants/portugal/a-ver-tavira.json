@@ -27,5 +27,12 @@
   "chef": "Luís Brito",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação",
+  "lunch": 225,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNotePt": "O mesmo menu ao almoço · qua.–sáb.",
+  "lunchWine": 85,
+  "lunchSourceType": "site",
+  "lunchSource": "https://avertavira.com/wp-content/uploads/2026/04/Menus-Jantar-PT-6-e-9-e-veg.-2026.pdf",
   "cuisinePt": "Moderna"
 }

@@ -21,5 +21,11 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 77)",
+  "lunch": 97,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–zo",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantspetters.nl/menu",
   "cuisineNl": "Marktkeuken"
 }

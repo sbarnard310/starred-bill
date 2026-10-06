@@ -28,5 +28,8 @@
   "chef": "Philipp Kroboth",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Saisonal"
 }

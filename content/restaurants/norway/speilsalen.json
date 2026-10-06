@@ -26,5 +26,8 @@
   ],
   "chef": "Håkon Solbakk",
   "chefSource": "site",
-  "dinnerNoteNb": "Smaksmeny (andre menyer fra NOK 1,750)"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra NOK 1,750)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNb": "Kun middag"
 }

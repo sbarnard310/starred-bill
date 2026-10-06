@@ -19,6 +19,8 @@
   "wine": 225,
   "sourceType": "site",
   "source": "https://www.selinerestaurant.com/menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.selinerestaurant.com/",
   "lat": 33.997649,
   "lng": -118.479348,

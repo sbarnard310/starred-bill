@@ -28,5 +28,11 @@
   "chef": "Sonja Baumann and Erik Scheffler",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
+  "lunch": 195,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-neobiota.de/_files/ugd/83ff3a_798c219cdea040bb857bdbad933d72f3.pdf",
   "cuisineDe": "Moderne Küche"
 }

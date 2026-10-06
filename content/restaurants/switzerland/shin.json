@@ -25,5 +25,10 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine asiatique contemporaine",
   "dinnerNoteIt": "Menu degustazione",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
+  "lunchNoteFr": "Uniquement le soir",
+  "lunchNoteIt": "Solo a cena",
   "cuisineIt": "Asiatica contemporanea"
 }

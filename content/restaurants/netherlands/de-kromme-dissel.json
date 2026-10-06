@@ -27,5 +27,12 @@
   "chef": "Tonny Berentsen",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 52)",
+  "lunch": 150,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteNl": "Zelfde menu bij de lunch · zaterdag",
+  "lunchWine": 91,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.krommedissel.nl/menu/",
   "cuisineNl": "Modern Frans"
 }

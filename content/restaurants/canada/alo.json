@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu, 10 courses (6 courses $185)",
   "sourceType": "press",
   "source": "https://travellingfoodie.net/alo-restaurant-toronto/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://alorestaurant.com/",
   "lat": 43.6485043,
   "lng": -79.3959736,

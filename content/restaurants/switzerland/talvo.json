@@ -32,6 +32,14 @@
   "cuisineFr": "Cuisine méditerranéenne",
   "areaFr": "Saint-Moritz",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 170)",
+  "lunch": 195,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–So",
+  "lunchNoteFr": "Même menu le midi · jeu.–dim.",
+  "lunchNoteIt": "Stesso menu a pranzo · gio–dom",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.talvo.ch/s/Talvo_Speisekarte_September-October-2026_E.pdf",
   "cuisineIt": "Mediterranea",
   "areaIt": "Sankt Moritz"
 }

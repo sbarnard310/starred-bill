@@ -20,5 +20,8 @@
   "michelinId": "1216680",
   "chef": "Karlo Kaleb",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni"
+  "dinnerNoteHr": "Degustacijski meni",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteHr": "Samo večera"
 }

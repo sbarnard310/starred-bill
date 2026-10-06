@@ -12,6 +12,8 @@
   "dinnerNote": "Taste of Home tasting menu",
   "sourceType": "press",
   "source": "https://grantleyhall.wearegifted.co.uk/tasting-menu-for-two-at-shaun-rankin-at-grantley-hall",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.grantleyhall.co.uk/bars-restaurants/shaun-rankin-at-grantley-hall/",
   "lat": 54.11882,
   "lng": -1.63174,

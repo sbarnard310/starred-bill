@@ -20,5 +20,8 @@
     "vegetarian"
   ],
   "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Atual"
 }

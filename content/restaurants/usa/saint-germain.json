@@ -14,6 +14,8 @@
   "dinnerNote": "Tasting menu, 10 courses ($250 prepaid including gratuity)",
   "sourceType": "press",
   "source": "https://www.exploretock.com/saint-germain-new-orleans",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://saintgermainnola.com/",
   "lat": 29.9676193,
   "lng": -90.0447341,

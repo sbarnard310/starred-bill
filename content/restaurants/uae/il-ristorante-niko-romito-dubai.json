@@ -18,5 +18,8 @@
   "michelinId": "1196980",
   "chef": "Giacomo Amicucci",
   "chefSource": "michelin",
-  "dinnerNoteAr": "قائمة تذوق"
+  "dinnerNoteAr": "قائمة تذوق",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteAr": "العشاء فقط"
 }

@@ -25,5 +25,8 @@
   "chef": "Davide Marcon",
   "chefSource": "site",
   "dinnerNoteMt": "Menu tad-degustazzjoni",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteMt": "Ikla ta' filgħaxija biss",
   "areaMt": "San Ġiljan"
 }

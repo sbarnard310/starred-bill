@@ -22,5 +22,8 @@
   ],
   "chef": "Eero Vottonen",
   "chefSource": "site",
-  "dinnerNoteFi": "Maistelumenu"
+  "dinnerNoteFi": "Maistelumenu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFi": "Vain illallinen"
 }

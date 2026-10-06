@@ -27,6 +27,13 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine japonaise",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 85,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNoteFr": "Même menu le midi · jeu.–sam.",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://ryodoes.com/menu/menu-du-jour/",
   "cuisineDe": "Japanisch",
   "areaDe": "Luxemburg"
 }

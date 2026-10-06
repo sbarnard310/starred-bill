@@ -16,6 +16,8 @@
   "sourceType": "site",
   "source": "https://www.sunmoonstudio.com/menu",
   "wine": 60,
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.sunmoonstudio.com/",
   "lat": 37.8143884,
   "lng": -122.2866969,

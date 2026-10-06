@@ -23,5 +23,12 @@
   "chef": "Fabian Heldmann",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 175 €)",
+  "lunch": 182,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Sa",
+  "lunchWine": 189,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.zauberlehrling.de/Restaurant/Restaurant/Themenabend_Samstag/",
   "cuisineDe": "Kreativ"
 }

@@ -14,6 +14,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.exploretock.com/hayato",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://hayatorestaurant.com/",
   "lat": 34.033807,
   "lng": -118.241879,

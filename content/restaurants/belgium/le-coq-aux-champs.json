@@ -27,5 +27,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
   "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 50 €)",
+  "lunch": 130,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue, Thu–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di, do–vr",
+  "lunchNoteFr": "Même menu le midi · mar., jeu.–ven.",
+  "lunchWine": 36,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lecoqauxchamps.be/menu",
   "cuisineFr": "Cuisine française créative"
 }

@@ -20,6 +20,9 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ",
   "chef": "Wolfgang Zankl",
   "chefSource": "press"

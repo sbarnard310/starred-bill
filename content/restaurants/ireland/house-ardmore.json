@@ -12,6 +12,8 @@
   "dinnerNote": "Four-course menu (3 courses €129)",
   "sourceType": "site",
   "source": "https://cliffhousehotel.ie/house-restaurant/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://cliffhousehotel.ie/house-restaurant/",
   "lat": 51.948608,
   "lng": -7.715085,

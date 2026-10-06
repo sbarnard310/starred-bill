@@ -23,5 +23,13 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Frans",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 155,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–zo",
+  "lunchNoteFr": "Même menu le midi · mer.–dim.",
+  "lunchWine": 80,
+  "lunchSourceType": "site",
+  "lunchSource": "https://maison-colette.be/signatuurmenu",
   "cuisineFr": "Cuisine française"
 }

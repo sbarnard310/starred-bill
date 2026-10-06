@@ -20,5 +20,12 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine française classique",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 195,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNoteFr": "Même menu le midi · mer.–dim.",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–So",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.guilloucampagne.lu/les-menus",
   "cuisineDe": "Französisch-klassisch"
 }

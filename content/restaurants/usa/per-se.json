@@ -14,6 +14,8 @@
   "dinnerNote": "Chef's tasting, 9 courses; service included (Salon menu $285)",
   "sourceType": "press",
   "source": "https://www.exploretock.com/perse/experience/288603/main-dining-room-tasting-menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.thomaskeller.com/perseny",
   "lat": 40.768054,
   "lng": -73.982588,

@@ -23,5 +23,12 @@
   "chef": "Leon Hofmockel",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 49 €)",
+  "lunch": 350,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Mon",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sa–Mo",
+  "lunchWine": 85,
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurant-lasociete.de/",
   "cuisineDe": "Moderne Küche"
 }

@@ -19,6 +19,8 @@
   "wine": 145,
   "sourceType": "site",
   "source": "https://www.katorestaurant.com/menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.katorestaurant.com/",
   "lat": 34.03193,
   "lng": -118.238326,

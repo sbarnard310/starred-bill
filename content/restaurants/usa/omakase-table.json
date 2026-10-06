@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu (other menus from $195)",
   "sourceType": "site",
   "source": "https://www.omakasetableatl.com/copy-of-home",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.omakasetableatl.com/",
   "lat": 33.846511,
   "lng": -84.3739683,

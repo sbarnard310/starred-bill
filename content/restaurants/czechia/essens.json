@@ -25,6 +25,9 @@
     "gluten-free"
   ],
   "dinnerNoteCs": "Degustační menu; cena bude doplněna",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteCs": "Pouze večeře",
   "chef": "Otto Vašák",
   "chefSource": "press"
 }

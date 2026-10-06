@@ -24,5 +24,8 @@
   "chef": "Johannes Nuding",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Europäisch-zeitgemäß"
 }

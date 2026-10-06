@@ -28,6 +28,14 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 85)",
   "cuisineFr": "Cuisine française moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 85)",
+  "lunch": 150,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Fr",
+  "lunchNoteFr": "Même menu le midi · lun.–ven.",
+  "lunchNoteIt": "Stesso menu a pranzo · lun–ven",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.berceau-des-sens.ch/menu",
   "cuisineIt": "Francese moderna",
   "areaIt": "Losanna"
 }

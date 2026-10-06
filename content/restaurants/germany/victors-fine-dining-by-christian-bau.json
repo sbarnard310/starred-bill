@@ -20,5 +20,11 @@
   "chef": "Christian Bau",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 425 €)",
+  "lunch": 525,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sa–So",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.victors-fine-dining.de/menues-arrangements",
   "cuisineDe": "Kreativ"
 }

@@ -24,5 +24,12 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Klassieke keuken",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 120,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.commechezsoi.be/copie-de-riwyne",
   "cuisineFr": "Cuisine classique"
 }

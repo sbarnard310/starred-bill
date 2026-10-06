@@ -18,5 +18,8 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteLt": "Degustacinis meniu; kaina bus pridėta"
+  "dinnerNoteLt": "Degustacinis meniu; kaina bus pridėta",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteLt": "Tik vakarienė"
 }

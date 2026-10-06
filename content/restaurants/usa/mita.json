@@ -18,6 +18,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/washington-dc/reviews/mita",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.mitadc.com/",
   "lat": 38.917703,
   "lng": -77.023063,

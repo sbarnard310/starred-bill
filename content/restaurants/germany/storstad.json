@@ -25,5 +25,11 @@
   "chef": "Simone Kubitzek and Hella Eggers",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 105,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://storstad.de/",
   "cuisineDe": "Kreativ"
 }

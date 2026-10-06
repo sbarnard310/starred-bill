@@ -27,5 +27,12 @@
   "chef": "Angélica Salvador",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 100 €)",
+  "lunch": 130,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNotePt": "O mesmo menu ao almoço · sábado",
+  "lunchWine": 75,
+  "lunchSourceType": "site",
+  "lunchSource": "https://indiferente.pt/carta/Tasting-Menu.pdf",
   "cuisinePt": "Atual"
 }

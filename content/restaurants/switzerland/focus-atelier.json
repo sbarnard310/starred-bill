@@ -29,5 +29,10 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 295)",
   "cuisineFr": "Cuisine française créative",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 295)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
+  "lunchNoteFr": "Uniquement le soir",
+  "lunchNoteIt": "Solo a cena",
   "cuisineIt": "Francese creativa"
 }

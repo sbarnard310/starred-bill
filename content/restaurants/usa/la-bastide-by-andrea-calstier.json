@@ -18,6 +18,8 @@
   "dinnerNote": "Tasting menu (4 courses $195)",
   "sourceType": "press",
   "source": "https://www.exploretock.com/la-bastide-north-salem/experience/465659/tasting-menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.labastidebyac.com/",
   "lat": 41.337692,
   "lng": -73.563022,

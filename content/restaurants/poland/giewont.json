@@ -25,5 +25,11 @@
   ],
   "chef": "Przemysław Sieradzki",
   "chefSource": "site",
-  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 449)"
+  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 449)",
+  "lunch": 739,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNotePl": "To samo menu w porze lunchu · śr.–niedz.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurantgiewont.com/menu-pl.html"
 }

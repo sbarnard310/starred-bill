@@ -18,5 +18,11 @@
   "placeId": "ChIJd1EkOjt4lkcRVqx_-9COvt8",
   "michelinId": "75369",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 86 €)",
+  "lunch": 145,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–So",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-borst.de/küche",
   "cuisineDe": "Französisch-klassisch"
 }

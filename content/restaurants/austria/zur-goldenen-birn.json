@@ -25,5 +25,8 @@
   "chef": "Jan Eggers",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 180 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Moderne Küche"
 }

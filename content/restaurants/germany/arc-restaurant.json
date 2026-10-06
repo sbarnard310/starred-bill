@@ -25,5 +25,12 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 99,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchWine": 59,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.arcrestaurant.de/menu",
   "cuisineDe": "Kreativ"
 }

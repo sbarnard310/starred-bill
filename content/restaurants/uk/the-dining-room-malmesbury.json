@@ -13,6 +13,8 @@
   "wine": 105,
   "sourceType": "site",
   "source": "https://www.whatleymanor.com/eat-drink/the-dining-room/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.whatleymanor.com/eat-drink/the-dining-room/",
   "lat": 51.58398,
   "lng": -2.153703,

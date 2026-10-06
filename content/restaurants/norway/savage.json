@@ -24,5 +24,8 @@
   ],
   "chef": "Andrea Selvaggini",
   "chefSource": "site",
-  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 550 kr)"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 550 kr)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNb": "Kun middag"
 }

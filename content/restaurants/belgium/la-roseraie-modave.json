@@ -25,5 +25,12 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
   "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 50 €)",
+  "lunch": 135,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteNl": "Zelfde menu bij de lunch · vr–zo",
+  "lunchNoteFr": "Même menu le midi · ven.–dim.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.laroseraiemodave.com/menus/",
   "cuisineFr": "Cuisine française moderne"
 }

@@ -24,5 +24,8 @@
   "chef": "Arnaldo Azevedo",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 50 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Atual"
 }

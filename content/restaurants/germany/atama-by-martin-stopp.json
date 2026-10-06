@@ -24,5 +24,11 @@
   "chef": "Martin Stopp",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
+  "lunch": 235,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Fr",
+  "lunchSourceType": "site",
+  "lunchSource": "https://atama.de/fine-dining/",
   "cuisineDe": "Kreativ"
 }

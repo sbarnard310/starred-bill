@@ -26,5 +26,13 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 62,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchWine": 80,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.centpourcent.be/nl/de-kaart/menus/",
   "cuisineFr": "Cuisine moderne"
 }

@@ -25,5 +25,8 @@
   "chef": "Alberto Landgraf",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Moderna"
 }

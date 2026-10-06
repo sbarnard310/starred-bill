@@ -24,5 +24,12 @@
   "chef": "Alina Meissner-Bebrout and Tim Ostertag",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 149 €)",
+  "lunch": 159,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
+  "lunchWine": 89,
+  "lunchSourceType": "site",
+  "lunchSource": "https://bebrout.com/assets/img/speisekarte/Menu.pdf",
   "cuisineDe": "Modern"
 }

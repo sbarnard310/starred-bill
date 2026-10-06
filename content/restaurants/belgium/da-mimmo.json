@@ -27,5 +27,13 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 140)",
   "cuisineNl": "Eigentijds Italiaans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 140 €)",
+  "lunch": 155,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–vr",
+  "lunchNoteFr": "Même menu le midi · mer.–ven.",
+  "lunchWine": 68,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.da-mimmo.be/layout/uploads/2026/09/FR-DEGUSTAZIONE.pdf",
   "cuisineFr": "Cuisine italienne contemporaine"
 }

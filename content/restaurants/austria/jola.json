@@ -27,5 +27,8 @@
   ],
   "chef": "Jonathan Wittenbink",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü"
+  "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends"
 }

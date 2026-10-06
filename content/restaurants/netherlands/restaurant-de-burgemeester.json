@@ -28,5 +28,11 @@
   "chef": "Sander Spruijt",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 70)",
+  "lunch": 165,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.deburgemeester.nl/menu/",
   "cuisineNl": "Moderne keuken"
 }

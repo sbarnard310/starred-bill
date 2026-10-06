@@ -18,6 +18,8 @@
   "wine": 190,
   "sourceType": "site",
   "source": "https://restaurants.kaneyoshi.us/ki.html",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://restaurantki.com/",
   "lat": 34.050172,
   "lng": -118.241166,

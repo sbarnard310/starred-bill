@@ -14,6 +14,8 @@
   "dinnerNote": "Tasting menu, 10 courses (6 courses $215)",
   "sourceType": "site",
   "source": "https://www.saga-nyc.com/menus",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.saga-nyc.com/",
   "lat": 40.706144,
   "lng": -74.007852,

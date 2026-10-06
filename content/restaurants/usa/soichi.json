@@ -11,6 +11,8 @@
   "dinnerNote": "Omakase (shorter menu $140)",
   "sourceType": "site",
   "source": "https://www.soichisushi.com",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.soichisushi.com",
   "lat": 32.7627776,
   "lng": -117.1418816,

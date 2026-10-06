@@ -14,6 +14,8 @@
   "dinnerNoteZh": "人均消費",
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/san-francisco/reviews/niku-steakhouse",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.nikusteakhouse.com/",
   "lat": 37.76975,
   "lng": -122.403621,

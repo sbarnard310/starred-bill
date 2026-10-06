@@ -14,6 +14,8 @@
   "dinnerNote": "À la carte; mains and pastas about $25–$35 (duck for two $152)",
   "sourceType": "site",
   "source": "https://www.franciebrooklyn.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.franciebrooklyn.com/",
   "lat": 40.71019,
   "lng": -73.964086,

@@ -11,6 +11,8 @@
   "dinnerNote": "Omakase, from",
   "sourceType": "press",
   "source": "https://tastingmenu.ca/restaurants/toronto/midtown/shoushin",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.shoushin.ca/",
   "lat": 43.731412,
   "lng": -79.4040597,

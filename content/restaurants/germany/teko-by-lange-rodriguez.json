@@ -28,5 +28,8 @@
   ],
   "chef": "Hans Robert Lange Rodriguez",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 98 €)"
+  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 98 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends"
 }

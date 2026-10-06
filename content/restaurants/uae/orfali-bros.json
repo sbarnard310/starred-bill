@@ -21,6 +21,12 @@
     "halal"
   ],
   "dinnerNoteAr": "قائمة تذوق (قوائم أخرى بدءًا من AED 295)",
+  "lunch": 350,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteAr": "القائمة نفسها على الغداء · الأحد",
+  "lunchSourceType": "site",
+  "lunchSource": "https://orfalibros.com/",
   "chef": "Mohammad Orfali",
   "chefSource": "press"
 }

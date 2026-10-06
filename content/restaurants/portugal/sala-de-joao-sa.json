@@ -24,5 +24,12 @@
   "chef": "João Sá",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 155 €)",
+  "lunch": 185,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNotePt": "O mesmo menu ao almoço · sábado",
+  "lunchWine": 125,
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurantesala.pt/en/menu/",
   "cuisinePt": "Moderna"
 }

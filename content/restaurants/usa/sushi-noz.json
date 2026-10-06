@@ -14,6 +14,8 @@
   "dinnerNote": "Omakase",
   "sourceType": "press",
   "source": "https://souraji.com/reviews/sushi-noz/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.sushinoz.com/",
   "lat": 40.77384,
   "lng": -73.958275,

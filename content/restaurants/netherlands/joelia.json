@@ -26,5 +26,12 @@
   "chef": "Sofiane Bons",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
+  "lunch": 169,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
+  "lunchWine": 75,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.joelia.eu/menu/",
   "cuisineNl": "Modern Frans"
 }

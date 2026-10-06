@@ -25,5 +25,12 @@
   "chef": "Thomas Dorfer",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 190 €)",
+  "lunch": 245,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–So",
+  "lunchWine": 101,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.landhaus-bacher.at/wp-content/uploads/2026/09/Menuekarte-25.September-II.pdf",
   "cuisineDe": "Klassische Küche"
 }

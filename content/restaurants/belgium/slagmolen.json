@@ -26,5 +26,13 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Frans",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 125,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Tue, Thu–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · ma–di, do–vr",
+  "lunchNoteFr": "Même menu le midi · lun.–mar., jeu.–ven.",
+  "lunchWine": 75,
+  "lunchSourceType": "site",
+  "lunchSource": "https://slagmolen.be/restaurant/",
   "cuisineFr": "Cuisine française"
 }

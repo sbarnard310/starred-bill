@@ -20,5 +20,12 @@
   "chef": "Thomas Lösche",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 141 €)",
+  "lunch": 169,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Mon",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Mo",
+  "lunchWine": 189,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.zurtant.de/speisekarten/A_la_carte_und_Degustationsmenue.pdf",
   "cuisineDe": "Klassische Küche"
 }

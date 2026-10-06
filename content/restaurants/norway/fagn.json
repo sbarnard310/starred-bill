@@ -23,5 +23,12 @@
   ],
   "chef": "Ådne Børseth Helgetun",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 275 kr)"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 275 kr)",
+  "lunch": 2675,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteNb": "Samme meny til lunsj · lørdag",
+  "lunchWine": 2900,
+  "lunchSourceType": "site",
+  "lunchSource": "https://fagn.no/dining/"
 }

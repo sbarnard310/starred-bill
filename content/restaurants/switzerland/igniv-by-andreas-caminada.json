@@ -31,5 +31,14 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "A partager",
   "dinnerNoteIt": "Menu degustazione",
+  "lunch": 174,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
+  "lunchNoteFr": "Même menu le midi · dimanche",
+  "lunchNoteIt": "Stesso menu a pranzo · domenica",
+  "lunchWine": 129,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.igniv-andermatt.ch/s/IGNIV-Andermatt-Menu-E-2.pdf",
   "cuisineIt": "Condivisione"
 }

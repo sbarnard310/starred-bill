@@ -14,6 +14,8 @@
   "dinnerNote": "À la carte; mains $160–$170 (Prelude tasting menu $650 with its wine pairing)",
   "sourceType": "site",
   "source": "https://www.caesars.com/caesars-palace/restaurants/restaurant-guy-savoy/main-menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.caesars.com/caesars-palace/restaurants/guy-savoy",
   "lat": 36.1152957,
   "lng": -115.1747136,

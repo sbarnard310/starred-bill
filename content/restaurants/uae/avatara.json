@@ -26,5 +26,12 @@
   ],
   "chef": "Omkar Walve",
   "chefSource": "site",
-  "dinnerNoteAr": "قائمة تذوق (قوائم أخرى من AED 540)"
+  "dinnerNoteAr": "قائمة تذوق (قوائم أخرى من AED 540)",
+  "lunch": 750,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Sun",
+  "lunchNoteAr": "القائمة نفسها على الغداء · سبت–أحد",
+  "lunchWine": 750,
+  "lunchSourceType": "site",
+  "lunchSource": "https://avatara.ae/wp-content/uploads/2025/11/Avatara.pdf"
 }

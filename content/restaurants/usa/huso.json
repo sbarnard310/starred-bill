@@ -19,6 +19,8 @@
   "wine": 225,
   "sourceType": "site",
   "source": "https://husony.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://husony.com/",
   "lat": 40.717397,
   "lng": -74.010584,

@@ -30,5 +30,8 @@
   "chef": "Goran Hrastovčak",
   "chefSource": "michelin",
   "dinnerNoteHr": "Degustacijski meni",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteHr": "Samo večera",
   "areaHr": "Poreč"
 }

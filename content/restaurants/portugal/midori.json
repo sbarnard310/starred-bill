@@ -24,5 +24,8 @@
   "chef": "Pedro Almeida and Tiago Santo",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 158 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Japonesa"
 }

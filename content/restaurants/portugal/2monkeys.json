@@ -20,5 +20,8 @@
   "chef": "Vítor Matos and Guilherme Spalk",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Criativa"
 }

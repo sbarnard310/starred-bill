@@ -27,5 +27,12 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 54)",
   "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 54 €)",
+  "lunch": 135,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Fri, Sun–Mon",
+  "lunchNoteNl": "Zelfde menu bij de lunch · do–vr, zo–ma",
+  "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.–lun.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.vol-ver.be/nl/menu/vol-ver-menu.html",
   "cuisineFr": "Cuisine moderne"
 }

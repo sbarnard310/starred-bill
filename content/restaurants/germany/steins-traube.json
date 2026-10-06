@@ -24,5 +24,11 @@
   "chef": "Philipp Stein",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 245,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–So",
+  "lunchSourceType": "site",
+  "lunchSource": "https://steins-traube.de/en/new-years-eve-menu/",
   "cuisineDe": "Marktküche"
 }

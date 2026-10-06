@@ -11,6 +11,8 @@
   "dinnerNote": "Omakase",
   "sourceType": "press",
   "source": "https://www.exploretock.com/tatsudallas",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.tatsu-dallas.com/",
   "lat": 32.7866332,
   "lng": -96.7773016,

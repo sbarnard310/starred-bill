@@ -27,5 +27,8 @@
   "chef": "Tiago Bonito",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 100 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Moderna"
 }

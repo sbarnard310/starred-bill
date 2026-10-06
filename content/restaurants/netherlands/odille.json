@@ -26,5 +26,12 @@
   "chef": "Casimir Evens",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
+  "lunch": 105,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteNl": "Zelfde menu bij de lunch · vr–zo",
+  "lunchWine": 55,
+  "lunchSourceType": "site",
+  "lunchSource": "https://odille.nl/",
   "cuisineNl": "Moderne keuken"
 }

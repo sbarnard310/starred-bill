@@ -31,5 +31,14 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 150)",
   "cuisineFr": "Cuisine régionale",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 150)",
+  "lunch": 190,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–So",
+  "lunchNoteFr": "Même menu le midi · jeu.–dim.",
+  "lunchNoteIt": "Stesso menu a pranzo · gio–dom",
+  "lunchWine": 60,
+  "lunchSourceType": "site",
+  "lunchSource": "https://fahr-sulz.ch/wp-content/uploads/Abend-Online-1.pdf",
   "cuisineIt": "Regionale"
 }

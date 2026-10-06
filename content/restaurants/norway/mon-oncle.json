@@ -22,5 +22,12 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 350 kr)"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 350 kr)",
+  "lunch": 2450,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteNb": "Samme meny til lunsj · lørdag",
+  "lunchWine": 2000,
+  "lunchSourceType": "site",
+  "lunchSource": "https://mononcle.no/menu"
 }

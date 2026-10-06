@@ -29,5 +29,14 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 115)",
   "cuisineFr": "Cuisine française contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 115)",
+  "lunch": 245,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sa–So",
+  "lunchNoteFr": "Même menu le midi · sam.–dim.",
+  "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
+  "lunchWine": 90,
+  "lunchSourceType": "site",
+  "lunchSource": "https://auclubalpin.ch/menu/",
   "cuisineIt": "Francese contemporanea"
 }

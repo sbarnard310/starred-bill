@@ -24,5 +24,8 @@
   ],
   "chef": "Panagiotis Giakalis",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας (άλλα μενού από 145 €)"
+  "dinnerNoteEl": "Μενού γευσιγνωσίας (άλλα μενού από 145 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteEl": "Μόνο δείπνο"
 }

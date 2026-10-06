@@ -28,6 +28,14 @@
   "cuisineFr": "Cuisine moderne",
   "areaFr": "Saint-Gall",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 69)",
+  "lunch": 210,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Fri",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Fr",
+  "lunchNoteFr": "Même menu le midi · lun.–ven.",
+  "lunchNoteIt": "Stesso menu a pranzo · lun–ven",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.jaegerhof.ch/wp-content/uploads/karten/abendkarte/jaegerhof_abendkarte.pdf",
   "cuisineIt": "Moderna",
   "areaIt": "San Gallo"
 }

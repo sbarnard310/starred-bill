@@ -18,6 +18,8 @@
   "dinnerNoteZh": "廚師發辦",
   "sourceType": "site",
   "source": "https://miura-beverlyhills.com/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://miura-beverlyhills.com/",
   "lat": 34.067431,
   "lng": -118.400566,

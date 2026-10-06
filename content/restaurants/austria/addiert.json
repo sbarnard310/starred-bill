@@ -22,6 +22,9 @@
   "placeId": "ChIJJ8DMBcIHbUcR9dqbZ_tUcWo",
   "michelinId": "1217741",
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Koreanisch-zeitgemäß",
   "chef": "Jaeho Jung",
   "chefSource": "press"

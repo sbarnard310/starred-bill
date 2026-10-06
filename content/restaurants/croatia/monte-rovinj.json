@@ -23,5 +23,8 @@
   ],
   "chef": "Danijel Đekić",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 129 €)"
+  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 129 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteHr": "Samo večera"
 }

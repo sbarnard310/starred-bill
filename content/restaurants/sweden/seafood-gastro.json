@@ -17,5 +17,12 @@
   "lng": 18.0756768,
   "placeId": "ChIJSXGfco2dX0YRi5M7Vjb_mjQ",
   "michelinId": "1210020",
-  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 2 200 kr)"
+  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 2 200 kr)",
+  "lunch": 3650,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fridays",
+  "lunchNoteSv": "Samma meny till lunch · fredag",
+  "lunchWine": 2200,
+  "lunchSourceType": "site",
+  "lunchSource": "https://mdghs.se/seafood-gastro/"
 }

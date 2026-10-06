@@ -29,5 +29,13 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 98)",
   "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 98)",
+  "lunch": 189,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–So",
+  "lunchNoteFr": "Même menu le midi · jeu.–dim.",
+  "lunchNoteIt": "Stesso menu a pranzo · gio–dom",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.mammertsberg.ch/restaurant",
   "cuisineIt": "Creativa"
 }

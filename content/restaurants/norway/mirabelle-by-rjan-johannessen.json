@@ -27,6 +27,9 @@
     "vegan"
   ],
   "dinnerNoteNb": "Smaksmeny",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNb": "Kun middag",
   "chef": "Ørjan Johannessen",
   "chefSource": "press"
 }

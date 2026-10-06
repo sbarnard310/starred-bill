@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu, plus 22% service",
   "sourceType": "press",
   "source": "https://www.exploretock.com/thekitchenrestaurant",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.thekitchenrestaurant.com",
   "lat": 38.564058,
   "lng": -121.501422,

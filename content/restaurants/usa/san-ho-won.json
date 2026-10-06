@@ -14,6 +14,8 @@
   "dinnerNoteZh": "定價套餐",
   "sourceType": "press",
   "source": "https://www.exploretock.com/sanhowon",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.sanhowon.com/",
   "lat": 37.759574,
   "lng": -122.410024,

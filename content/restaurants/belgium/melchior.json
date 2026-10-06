@@ -27,5 +27,13 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 50,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
+  "lunchNoteFr": "Même menu le midi · mar.–ven.",
+  "lunchWine": 36,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.melchi-or.be/nl/menu",
   "cuisineFr": "Cuisine française moderne"
 }

@@ -25,5 +25,12 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Eigentijds Frans",
   "dinnerNoteFr": "Menu dégustation",
+  "lunch": 54,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Wed, Fri–Sat",
+  "lunchNoteNl": "Zelfde menu bij de lunch · di–wo, vr–za",
+  "lunchNoteFr": "Même menu le midi · mar.–mer., ven.–sam.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://bistrotblaise.be/",
   "cuisineFr": "Cuisine française contemporaine"
 }

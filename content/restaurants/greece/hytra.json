@@ -22,5 +22,8 @@
     "vegan",
     "gluten-free"
   ],
-  "dinnerNoteEl": "Μενού γευσιγνωσίας (άλλα μενού από 90 €)"
+  "dinnerNoteEl": "Μενού γευσιγνωσίας (άλλα μενού από 90 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteEl": "Μόνο δείπνο"
 }

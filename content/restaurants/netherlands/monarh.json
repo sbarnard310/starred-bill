@@ -23,5 +23,11 @@
     "gluten-free"
   ],
   "dinnerNoteNl": "Proeverijmenu",
+  "lunch": 169,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–vr",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.monarh.nl/",
   "cuisineNl": "Creatief"
 }

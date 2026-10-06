@@ -14,6 +14,8 @@
   "dinnerNoteZh": "定價套餐",
   "sourceType": "site",
   "source": "https://www.littlepearldc.com/faq",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.littlepearldc.com/",
   "lat": 38.883356,
   "lng": -76.993637,

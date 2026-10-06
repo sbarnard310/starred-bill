@@ -15,6 +15,8 @@
   "wine": 95,
   "sourceType": "press",
   "source": "https://www.opentable.com/r/boka-chicago",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.bokachicago.com/",
   "lat": 41.913597,
   "lng": -87.648244,

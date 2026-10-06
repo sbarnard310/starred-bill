@@ -30,5 +30,8 @@
   "chef": "Christian de Vries",
   "chefSource": "michelin",
   "dinnerNoteNl": "Belevingsmenu, 6 gangen (vanaf € 65 voor 3 gangen, dinsdag tot en met donderdag)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Moderne keuken"
 }

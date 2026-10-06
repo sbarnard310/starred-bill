@@ -29,5 +29,14 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 195)",
   "cuisineFr": "Cuisine française",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 195)",
+  "lunch": 235,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
+  "lunchWine": 112,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.attisholz.ch/_files/ugd/d52da2_aeee97708fa24eb1803eb8adda94078b.pdf",
   "cuisineIt": "Francese"
 }

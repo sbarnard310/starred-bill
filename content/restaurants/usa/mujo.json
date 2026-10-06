@@ -11,6 +11,8 @@
   "dinnerNote": "Seasonal omakase (Koshitsu counter $285)",
   "sourceType": "press",
   "source": "https://www.mujoatl.com/sushi-bar",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.mujoatl.com/",
   "lat": 33.7858291,
   "lng": -84.4115398,

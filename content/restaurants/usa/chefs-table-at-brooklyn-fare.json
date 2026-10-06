@@ -19,6 +19,8 @@
   "wine": 320,
   "sourceType": "site",
   "source": "https://www.brooklynfare.com/chefs-table",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.brooklynfare.com/chefs-table/",
   "lat": 40.756082,
   "lng": -73.9965,

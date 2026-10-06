@@ -19,6 +19,8 @@
   "wine": 125,
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/new-york/reviews/bar-miller",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.barmiller.com/",
   "lat": 40.724018,
   "lng": -73.980636,

@@ -20,5 +20,11 @@
   "chef": "Alexander Hohlwein",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 62 €)",
+  "lunch": 195,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant360grad.de/downloads/Karte_Dinner_360Grad_20260904.pdf",
   "cuisineDe": "Moderne Küche"
 }

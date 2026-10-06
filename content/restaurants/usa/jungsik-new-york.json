@@ -18,6 +18,8 @@
   "dinnerNote": "Tasting menu, from",
   "sourceType": "press",
   "source": "https://restaurantsforkings.com/blog/how-to-book-jungsik",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.jungsik.com/",
   "lat": 40.718726,
   "lng": -74.009111,

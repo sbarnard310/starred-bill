@@ -10,16 +10,21 @@
   "sourceType": "press",
   "source": "https://you.ctrip.com/food/2/5010408.html",
   "website": "https://www.peninsula.com/en/shanghai/hotel-fine-dining/yi-long-court-chinese-restaurant",
-  "lat": 31.243758,
-  "lng": 121.507579,
+  "lat": 31.235715,
+  "lng": 121.487216,
   "michelinId": "506743",
   "diets": [
     "vegetarian-menu",
     "vegetarian"
   ],
   "dinnerNoteZhs": "人均消费",
+  "lunchNote": "Open for lunch",
+  "lunchNoteZhs": "供应午餐",
   "cuisineZhs": "粤菜",
   "nameZhs": "逸龙阁",
   "chef": "Jacky Zhang",
-  "chefSource": "press"
+  "chefSource": "press",
+  "placeId": "ChIJHereI_ZwsjUROFzl-1-s4YA",
+  "rating": 4.1,
+  "reviews": 23
 }

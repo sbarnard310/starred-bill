@@ -24,5 +24,12 @@
   "chef": "Lukas Nagl",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
+  "lunch": 219,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sa–So",
+  "lunchWine": 90,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.dastraunsee.at/restaurant-bootshaus",
   "cuisineDe": "Kreativ"
 }

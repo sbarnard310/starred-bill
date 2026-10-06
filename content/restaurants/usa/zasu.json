@@ -12,6 +12,8 @@
   "dinnerType": "main",
   "dinnerNote": "À la carte; prices not published",
   "sourceType": "none",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://zasunola.com/",
   "lat": 29.9752743,
   "lng": -90.1001612,

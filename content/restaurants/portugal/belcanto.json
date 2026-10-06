@@ -24,5 +24,12 @@
   "chef": "José Avillez",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 120 €)",
+  "lunch": 300,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNotePt": "O mesmo menu ao almoço · ter.–sáb.",
+  "lunchWine": 60,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.belcanto.pt/carta/Belcanto_Menu_QRCode.pdf?v=102026",
   "cuisinePt": "Criativa"
 }

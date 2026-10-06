@@ -24,6 +24,9 @@
   "chef": "Sven Holthaus",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Französisch",
   "areaDe": "Hannover"
 }

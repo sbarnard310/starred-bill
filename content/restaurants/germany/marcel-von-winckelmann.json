@@ -22,6 +22,9 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "chef": "Marcel von Winckelmann",
   "chefSource": "press"
 }

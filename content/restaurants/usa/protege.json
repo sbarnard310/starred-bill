@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu, prepaid, plus 8% staff health surcharge (à la carte in the lounge)",
   "sourceType": "press",
   "source": "https://www.protegepaloalto.com/wp-content/uploads/PROTEGE-DINING-ROOM-MENU.pdf",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.protegepaloalto.com/",
   "lat": 37.427853,
   "lng": -122.14362,

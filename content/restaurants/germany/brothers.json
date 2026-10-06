@@ -23,5 +23,12 @@
   "chef": "Daniel Bodamer",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 220,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Do–Sa",
+  "lunchWine": 115,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.brothers-munich.com/menue-weine/",
   "cuisineDe": "Moderne Küche"
 }

@@ -20,6 +20,10 @@
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
+  "lunchNoteFr": "Uniquement le soir",
   "cuisineFr": "Cuisine moderne",
   "chef": "Philippe Heylen",
   "chefSource": "press"

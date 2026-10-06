@@ -24,5 +24,11 @@
   "chef": "Stephan Mießner",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
+  "lunch": 125,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-elements.de/",
   "cuisineDe": "Moderne Küche"
 }

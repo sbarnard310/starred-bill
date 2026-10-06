@@ -23,5 +23,8 @@
   ],
   "chef": "Willy",
   "chefSource": "site",
-  "dinnerNoteMs": "Menu rasa"
+  "dinnerNoteMs": "Menu rasa",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteMs": "Makan malam sahaja"
 }

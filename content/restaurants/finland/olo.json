@@ -20,5 +20,8 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteFi": "Maistelumenu (muut menut alkaen 49 €)"
+  "dinnerNoteFi": "Maistelumenu (muut menut alkaen 49 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFi": "Vain illallinen"
 }

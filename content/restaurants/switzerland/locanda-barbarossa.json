@@ -25,5 +25,13 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 125)",
   "cuisineFr": "Cuisine méditerranéenne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 125)",
+  "lunch": 150,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sa–So",
+  "lunchNoteFr": "Même menu le midi · sam.–dim.",
+  "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.castellodelsole.com/media/ingkgyes/menu-sapori-del-nostro-orto-autunno_fr_en.pdf",
   "cuisineIt": "Mediterranea"
 }

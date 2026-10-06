@@ -13,6 +13,8 @@
   "dinnerNote": "À la carte, to share; larger plates about $46–$82",
   "sourceType": "site",
   "source": "https://theprogress-sf.com/s/10226-PRO-Dinner.pdf",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://theprogress-sf.com/",
   "lat": 37.78371,
   "lng": -122.43282,

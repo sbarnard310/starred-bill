@@ -28,5 +28,13 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 185)",
   "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 185)",
+  "lunch": 195,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–So",
+  "lunchNoteFr": "Même menu le midi · mer.–dim.",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.sonne-scheunenberg.ch/hubfs/Sonne%20Menu%20September%202026-1.pdf?hsLang=de",
   "cuisineIt": "Contemporanea"
 }

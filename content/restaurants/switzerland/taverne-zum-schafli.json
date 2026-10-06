@@ -28,5 +28,13 @@
   "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Menu degustazione",
+  "lunch": 100,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.schaefli-wigoltingen.ch/s/AGB-Taverne-zum-Schafli-AG.pdf",
   "cuisineIt": "Creativa"
 }

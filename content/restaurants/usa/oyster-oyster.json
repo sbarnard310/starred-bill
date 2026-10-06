@@ -14,6 +14,8 @@
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "site",
   "source": "https://www.oysteroysterdc.com/menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.oysteroysterdc.com/",
   "lat": 38.909302,
   "lng": -77.023015,

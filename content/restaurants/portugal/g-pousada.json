@@ -23,5 +23,8 @@
   "chef": "Óscar Geadas",
   "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 60 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Criativa"
 }

@@ -20,5 +20,8 @@
   "michelinId": "1215015",
   "chef": "Sergey Pak",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny"
+  "dinnerNoteNb": "Smaksmeny",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNb": "Kun middag"
 }

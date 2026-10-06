@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu (table d'hôte €140)",
   "sourceType": "press",
   "source": "https://theluxereviewer.ie/restaurant-review-the-bishops-buttery-ireland/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.cashelpalacehotel.ie/dining/the-bishops-buttery",
   "lat": 52.517231,
   "lng": -7.889144,

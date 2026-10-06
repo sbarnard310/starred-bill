@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://hestiaaustin.com/menus/tasting-menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://hestiaaustin.com/",
   "lat": 30.2669224,
   "lng": -97.7499682,

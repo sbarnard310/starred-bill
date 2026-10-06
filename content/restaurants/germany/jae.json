@@ -20,5 +20,8 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü"
+  "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends"
 }

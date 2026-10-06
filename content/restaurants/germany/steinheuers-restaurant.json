@@ -24,5 +24,11 @@
   "chef": "Christian Binder",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 215 €)",
+  "lunch": 290,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sundays",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.steinheuers.de/wp-content/uploads/Menue-Wurzeln-August-26.pdf",
   "cuisineDe": "Französisch-klassisch"
 }

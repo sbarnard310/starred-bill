@@ -13,6 +13,8 @@
   "wine": 110,
   "sourceType": "site",
   "source": "https://www.andrewfairlie.co.uk/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.andrewfairlie.co.uk/",
   "lat": 56.283232,
   "lng": -3.751734,

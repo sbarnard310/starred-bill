@@ -23,5 +23,11 @@
   ],
   "chef": "Uroš Štefelin",
   "chefSource": "michelin",
-  "dinnerNoteSl": "Degustacijski meni"
+  "dinnerNoteSl": "Degustacijski meni",
+  "lunch": 109,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNoteSl": "Enak meni za kosilo · tor.–sob.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.hisalinhart.si"
 }

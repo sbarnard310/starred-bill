@@ -15,6 +15,8 @@
   "wine": 85,
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/nashville/reviews/bastion",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.bastionnashville.com/",
   "lat": 36.1428944,
   "lng": -86.766474,

@@ -20,5 +20,12 @@
   "michelinId": "1212325",
   "chef": "Daniel Berlin",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny"
+  "dinnerNoteSv": "Avsmakningsmeny",
+  "lunch": 4000,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteSv": "Samma meny till lunch · lördag",
+  "lunchWine": 2500,
+  "lunchSourceType": "site",
+  "lunchSource": "https://vynrestaurant.se/restaurant/"
 }

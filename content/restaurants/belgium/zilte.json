@@ -25,5 +25,12 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 210)",
   "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 210 €)",
+  "lunch": 340,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Mon–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · ma–vr",
+  "lunchNoteFr": "Même menu le midi · lun.–ven.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.zilte.be/menu",
   "cuisineFr": "Cuisine créative"
 }

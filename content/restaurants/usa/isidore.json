@@ -15,6 +15,8 @@
   "wine": 75,
   "sourceType": "site",
   "source": "https://isidoresatx.com/tasting-menu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://isidoresatx.com/",
   "lat": 29.4407547,
   "lng": -98.4807852,

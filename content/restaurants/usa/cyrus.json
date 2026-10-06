@@ -12,6 +12,8 @@
   "dinnerNote": "Tasting menu, plus 20% service",
   "sourceType": "press",
   "source": "https://www.exploretock.com/cyrus",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.cyrusrestaurant.com/",
   "lat": 38.7063682,
   "lng": -122.9006188,

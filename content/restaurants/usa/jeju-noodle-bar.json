@@ -14,6 +14,8 @@
   "dinnerNote": "À la carte; ramyun about $16–$46",
   "sourceType": "press",
   "source": "https://www.biteofthebest.com/jeju-noodle-bar-west-village-nyc/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.jejunoodlebar.com/",
   "lat": 40.732952,
   "lng": -74.00744,

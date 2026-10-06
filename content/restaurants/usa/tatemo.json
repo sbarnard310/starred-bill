@@ -11,6 +11,8 @@
   "dinnerNote": "Tasting menu, 10 courses, plus 22% service",
   "sourceType": "press",
   "source": "https://www.exploretock.com/tatemo",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.tatemohtx.com/",
   "lat": 29.8068644,
   "lng": -95.4605072,

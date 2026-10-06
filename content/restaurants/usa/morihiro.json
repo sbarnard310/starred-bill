@@ -1,0 +1,19 @@
+{
+  "name": "Morihiro",
+  "city": "los-angeles",
+  "area": "Echo Park",
+  "address": "1115 Sunset Blvd., Ste. 100, Los Angeles, 90012",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-06",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in June 2026, after moving from Atwater Village in 2025",
+  "website": "https://www.morionodera.com/",
+  "lat": 34.0671021,
+  "lng": -118.2489228,
+  "placeId": "ChIJ4-k-iiDBwoARPT_AOvL9pIc"
+}

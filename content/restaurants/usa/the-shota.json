@@ -1,0 +1,15 @@
+{
+  "name": "The Shota",
+  "city": "san-francisco",
+  "area": "Financial District",
+  "address": "115 Sansome St., San Francisco, 94104",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-06",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in March 2025 and dropped from the 2026 guide"
+}

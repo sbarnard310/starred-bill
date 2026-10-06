@@ -1,0 +1,19 @@
+{
+  "name": "715",
+  "city": "los-angeles",
+  "area": "Arts District",
+  "address": "738 E. 3rd St., Los Angeles, 90013",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-06",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in June 2026",
+  "website": "https://715sushi.com/",
+  "lat": 34.0454637,
+  "lng": -118.2367476,
+  "placeId": "ChIJyweGFPLHwoAR2CIY63KgPqU"
+}

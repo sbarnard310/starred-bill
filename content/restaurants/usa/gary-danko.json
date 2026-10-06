@@ -1,0 +1,19 @@
+{
+  "name": "Gary Danko",
+  "city": "san-francisco",
+  "area": "Fisherman's Wharf",
+  "address": "800 North Point St., San Francisco, 94109",
+  "stars": 0,
+  "cuisine": "Contemporary",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2024-08",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in August 2024, after 17 years",
+  "website": "https://www.garydanko.com/",
+  "lat": 37.8058651,
+  "lng": -122.4206043,
+  "placeId": "ChIJq342JeGAhYARwdtH9tlX7gg"
+}

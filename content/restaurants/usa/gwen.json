@@ -1,0 +1,19 @@
+{
+  "name": "Gwen",
+  "city": "los-angeles",
+  "area": "Hollywood",
+  "address": "6600 Sunset Blvd., Los Angeles, 90028",
+  "stars": 0,
+  "cuisine": "American",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-06",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in June 2026",
+  "website": "https://gwenla.com/",
+  "lat": 34.097749,
+  "lng": -118.333428,
+  "placeId": "ChIJLz5MuTq_woARNr7ORKQW7-4"
+}

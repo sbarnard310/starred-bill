@@ -1,0 +1,19 @@
+{
+  "name": "Le Comptoir at Bar Crenn",
+  "city": "san-francisco",
+  "area": "Cow Hollow",
+  "address": "3131 Fillmore St., San Francisco, 94123",
+  "stars": 0,
+  "cuisine": "French",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-06",
+  "dinnerType": "menu",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in June 2026",
+  "website": "https://www.barcrenn.com/",
+  "lat": 37.7983812,
+  "lng": -122.4361462,
+  "placeId": "ChIJL66ohdCAhYARO3o0IhzIc8U"
+}

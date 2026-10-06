@@ -1,0 +1,15 @@
+{
+  "name": "Uka",
+  "city": "los-angeles",
+  "area": "Hollywood",
+  "address": "Japan House, 6801 Hollywood Blvd., Level 5, Los Angeles, 90028",
+  "stars": 0,
+  "cuisine": "Japanese",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-06",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Left Japan House at the end of 2025 to move to a new home, not yet announced; not in the 2026 guide"
+}

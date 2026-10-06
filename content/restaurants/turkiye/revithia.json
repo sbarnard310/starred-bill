@@ -12,8 +12,10 @@
   "rating": 4.9,
   "reviews": 300,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 4350,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.turkiyetoday.com/lifestyle/what-diners-pay-at-turkiyes-newest-michelin-starred-restaurants-3211122",
   "website": "https://www.kayakapi.com/revithia",
   "lat": 38.6361046,
   "lng": 34.9066582,
@@ -25,6 +27,6 @@
   ],
   "chef": "Duran Özdemir",
   "chefSource": "michelin",
-  "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "dinnerNoteTr": "Tadım menüsü",
   "cuisineTr": "Yöresel yemek"
 }

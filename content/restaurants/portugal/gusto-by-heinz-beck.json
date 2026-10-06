@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 143,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 220,
+  "dinnerNote": "Tasting menu (other menus from €190)",
+  "wine": 150,
+  "sourceType": "press",
+  "source": "https://www.hotspotsalgarve.com/restaurants/gusto-michelin/",
   "website": "https://www.hilton.com/en/hotels/faoapci-conrad-algarve/dining/gusto-by-heinz-beck/",
   "lat": 37.0633302,
   "lng": -8.0301921,
@@ -22,6 +25,6 @@
   ],
   "chef": "Heinz Beck",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 190 €)",
   "cuisinePt": "Mediterrânea"
 }

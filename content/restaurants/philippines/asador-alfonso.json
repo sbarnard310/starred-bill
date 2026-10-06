@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 196,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 6500,
+  "dinnerNote": "Tasting menu (other menus from ₱3,900)",
+  "sourceType": "press",
+  "source": "https://www.spot.ph/eatdrink/the-latest-eat-drink/asador-alfonso-2026-a3284-20260221-bsc",
   "website": "https://www.asadoralfonso.com",
   "lat": 14.1114544,
   "lng": 120.8833073,
@@ -20,5 +22,5 @@
   ],
   "chef": "Rodrigo Andres Osorio",
   "chefSource": "michelin",
-  "dinnerNoteFil": "Tasting menu; idadagdag pa ang presyo"
+  "dinnerNoteFil": "Tasting menu (ibang menu mula ₱3,900)"
 }

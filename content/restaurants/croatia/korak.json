@@ -8,8 +8,11 @@
   "rating": 4.6,
   "reviews": 283,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 141,
+  "dinnerNote": "Tasting menu (other menus from €118)",
+  "wine": 68,
+  "sourceType": "press",
+  "source": "https://jre.eu/en/restaurants/korakwinery",
   "website": "https://www.korakwinery.com/",
   "lat": 45.7260304,
   "lng": 15.6500062,
@@ -20,5 +23,5 @@
   ],
   "chef": "Bernard Korak",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana"
+  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 118 €)"
 }

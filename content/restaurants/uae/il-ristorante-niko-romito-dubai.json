@@ -7,8 +7,10 @@
   "rating": 3.9,
   "reviews": 309,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 800,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://dizzer.ae/deals/degustazione-menu-il-ristorante-niko-romito-bvlgari-hotels-resorts-dining-deal/",
   "website": "https://www.bulgarihotels.com/en_US/dubai/bars-and-restaurants/il-ristorante-niko-romito",
   "lat": 25.2104546,
   "lng": 55.2348847,
@@ -16,5 +18,5 @@
   "michelinId": "1196980",
   "chef": "Giacomo Amicucci",
   "chefSource": "michelin",
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا"
+  "dinnerNoteAr": "قائمة تذوق"
 }

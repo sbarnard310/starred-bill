@@ -8,8 +8,11 @@
   "rating": 4.5,
   "reviews": 41,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2500,
+  "dinnerNote": "Tasting menu",
+  "wine": 1900,
+  "sourceType": "site",
+  "source": "https://www.debergenske.no/en/norway-bergen/restaurants/omakase-by-sergey-pak/",
   "website": "https://www.debergenske.no/en/bergen/restaurants/omakase-by-sergey-pak/",
   "lat": 60.3939119,
   "lng": 5.329652,
@@ -17,5 +20,5 @@
   "michelinId": "1215015",
   "chef": "Sergey Pak",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny"
 }

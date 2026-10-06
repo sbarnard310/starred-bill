@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 1729,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 3500,
+  "dinnerNote": "Tasting menu",
+  "wine": 2000,
+  "sourceType": "site",
+  "source": "https://www.ladegustation.cz/en/menu",
   "website": "https://www.ladegustation.cz/",
   "lat": 50.0910775,
   "lng": 14.4250418,
@@ -21,5 +24,5 @@
   ],
   "chef": "Oldřich Sahajdák",
   "chefSource": "site",
-  "dinnerNoteCs": "Degustační menu; cena bude doplněna"
+  "dinnerNoteCs": "Degustační menu"
 }

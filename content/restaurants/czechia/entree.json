@@ -12,8 +12,10 @@
   "rating": 4.7,
   "reviews": 2888,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2100,
+  "dinnerNote": "Tasting menu (other menus from CZK 1,200)",
+  "sourceType": "press",
+  "source": "https://www.jidlonacestach.cz/en/entree-restaurant-olomouc/",
   "website": "https://entree-restaurant.cz/",
   "lat": 49.589751,
   "lng": 17.2870542,
@@ -23,7 +25,7 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteCs": "Degustační menu; cena bude doplněna",
+  "dinnerNoteCs": "Degustační menu (další menu od CZK 1,200)",
   "chef": "Přemek Forejt",
   "chefSource": "press"
 }

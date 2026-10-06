@@ -11,8 +11,11 @@
   "rating": 4.7,
   "reviews": 275,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2400,
+  "dinnerNote": "Tasting menu",
+  "wine": 2000,
+  "sourceType": "press",
+  "source": "https://www.vinpuls.no/blogg/nye-credo-i-oslo-skriker-p-michelin-stjerner",
   "website": "https://www.restaurantcredo.no",
   "lat": 59.9136752,
   "lng": 10.7179633,
@@ -24,5 +27,5 @@
   ],
   "chef": "Heidi Bjerkan",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny"
 }

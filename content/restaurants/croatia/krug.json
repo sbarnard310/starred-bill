@@ -8,8 +8,11 @@
   "rating": 4.9,
   "reviews": 366,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu",
+  "wine": 90,
+  "sourceType": "press",
+  "source": "https://restaurantsforkings.com/city/split/krug",
   "website": "https://krugrestaurantsplit.com/",
   "lat": 43.5067029,
   "lng": 16.4324645,
@@ -17,5 +20,5 @@
   "michelinId": "1216680",
   "chef": "Karlo Kaleb",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana"
+  "dinnerNoteHr": "Degustacijski meni"
 }

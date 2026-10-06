@@ -7,8 +7,11 @@
   "rating": 4.3,
   "reviews": 1345,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 8500,
+  "dinnerNote": "Tasting menu (other menus from TRY 8,000)",
+  "wine": 4500,
+  "sourceType": "press",
+  "source": "https://mesprestiges.com/en/istanbul/places/neolokal/menu",
   "website": "https://www.neolokal.com/",
   "lat": 41.0239621,
   "lng": 28.973378,
@@ -23,6 +26,6 @@
   ],
   "chef": "Maksut Aşkar",
   "chefSource": "michelin",
-  "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 8,000 itibarıyla)",
   "cuisineTr": "Türk Mutfağı"
 }

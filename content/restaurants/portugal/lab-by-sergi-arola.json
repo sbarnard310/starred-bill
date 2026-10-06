@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 92,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 192,
+  "dinnerNote": "Tasting menu (other menus from €158)",
+  "sourceType": "press",
+  "source": "https://www.thefork.com/restaurant/lab-by-sergi-arola-r71812/menu",
   "website": "https://www.labbysergiarola.com/en/",
   "lat": 38.7616714,
   "lng": -9.3986077,
@@ -23,6 +25,6 @@
   ],
   "chef": "Sergi Arola",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 158 €)",
   "cuisinePt": "Criativa"
 }

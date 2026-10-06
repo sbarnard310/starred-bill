@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 231,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 600,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.thestar.com.my/lifestyle/living/2025/04/29/terrific-michelin-starred-thai-fine-dining-fare-at-chim-by-chef-noom",
   "website": "https://chimdining.com",
   "lat": 3.1444067,
   "lng": 101.7195484,
@@ -21,5 +23,5 @@
   ],
   "chef": "Willy",
   "chefSource": "site",
-  "dinnerNoteMs": "Menu rasa; harga akan ditambah"
+  "dinnerNoteMs": "Menu rasa"
 }

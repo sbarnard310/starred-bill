@@ -11,9 +11,11 @@
   "changeNotePl": "Zdobył pierwszą gwiazdkę",
   "rating": 4.6,
   "reviews": 1063,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "main",
+  "dinner": 110,
+  "dinnerNote": "Typical main course",
+  "sourceType": "press",
+  "source": "https://tuwroclaw.com/artykul/ile-kosztuje-jedzenie-n2323293",
   "website": "https://baba.wroclaw.pl/",
   "lat": 51.1127484,
   "lng": 17.0318258,
@@ -24,5 +26,5 @@
   ],
   "chef": "Beata Śniechowska",
   "chefSource": "michelin",
-  "dinnerNotePl": "Menu degustacyjne; cena zostanie dodana"
+  "dinnerNotePl": "Typowe danie główne"
 }

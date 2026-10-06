@@ -8,8 +8,10 @@
   "rating": 4.1,
   "reviews": 286,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 7599000,
+  "dinnerNote": "Tasting menu (other menus from ₫5,999,000)",
+  "sourceType": "press",
+  "source": "https://www.theyumlist.net/2024/07/la-maison-1888-intercontinental-danang-sun-peninsula-resort.html",
   "website": "https://www.danang.intercontinental.com/dining/la-maison-1888",
   "lat": 16.1218937,
   "lng": 108.3066406,
@@ -24,6 +26,6 @@
   ],
   "chef": "Christian Le Squer",
   "chefSource": "site",
-  "dinnerNoteVi": "Thực đơn nếm thử; giá sẽ được bổ sung",
+  "dinnerNoteVi": "Thực đơn nếm thử (thực đơn khác từ ₫5,999,000)",
   "areaVi": "Đà Nẵng"
 }

@@ -6,9 +6,11 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.6,
   "reviews": 2627,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "main",
+  "dinner": 11450,
+  "dinnerNote": "Typical main course",
+  "sourceType": "press",
+  "source": "https://hungaryunlocked.com/borkonyha-winekitchen-budapest-review/",
   "website": "https://borkonyha.hu/",
   "lat": 47.4993951,
   "lng": 19.0524595,
@@ -18,7 +20,7 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteHu": "Kóstolómenü; az ár később kerül fel",
+  "dinnerNoteHu": "Jellemző főétel",
   "chef": "Ákos Sárközi",
   "chefSource": "press"
 }

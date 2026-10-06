@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 946,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1295,
+  "dinnerNote": "Tasting menu (other menus from SEK 995)",
+  "sourceType": "press",
+  "source": "https://www.thefork.se/restaurang/koka-r853495/meny",
   "website": "https://restaurangkoka.se/",
   "lat": 57.6986003,
   "lng": 11.9654719,
@@ -19,5 +21,5 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 995 kr)"
 }

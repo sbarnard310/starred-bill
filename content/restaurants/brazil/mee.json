@@ -7,8 +7,10 @@
   "rating": 4.4,
   "reviews": 529,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 560,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.terra.com.br/vida-e-estilo/degusta/quanto-custa-comer-nos-restaurantes-com-estrela-michelin-do-rio-de-janeiro,cea77951957fa36c08a04b82da4eba68jm4viop1.html",
   "website": "https://www.belmond.com/pt-br/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/",
   "lat": -22.9671007,
   "lng": -43.179147,
@@ -21,6 +23,6 @@
   ],
   "chef": "Alberto Morisawa",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Com influências asiáticas"
 }

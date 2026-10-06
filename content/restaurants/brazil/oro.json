@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 1590,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 790,
+  "dinnerNote": "Tasting menu (other menus from R$690)",
+  "wine": 470,
+  "sourceType": "press",
+  "source": "https://www.em.com.br/degusta/2024/08/6930789-como-e-e-quanto-custa-comer-no-restaurante-de-felipe-bronze.html",
   "website": "https://ororestaurante.com.br/",
   "lat": -22.98601,
   "lng": -43.22471,
@@ -21,6 +24,6 @@
   ],
   "chef": "Felipe Bronze",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde R$690)",
   "cuisinePt": "Criativa"
 }

@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 260,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1645,
+  "dinnerNote": "Tasting menu",
+  "wine": 1295,
+  "sourceType": "site",
+  "source": "https://www.restauranthotshop.no/en/menu/",
   "website": "https://www.restauranthotshop.no",
   "lat": 59.9281988,
   "lng": 10.7685963,
@@ -19,5 +22,5 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny"
 }

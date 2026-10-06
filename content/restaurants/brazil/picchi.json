@@ -7,8 +7,10 @@
   "rating": 4.3,
   "reviews": 696,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 932,
+  "dinnerNote": "Tasting menu (other menus from R$427)",
+  "sourceType": "press",
+  "source": "https://www.terra.com.br/vida-e-estilo/degusta/quanto-custa-comer-nos-restaurantes-com-estrela-michelin-de-sao-paulo,179639447fd3e07f86ce962d38e0d2c58s370x2f.html",
   "website": "https://restaurantepicchi.com.br/",
   "lat": -23.5653892,
   "lng": -46.6666262,
@@ -19,6 +21,6 @@
   ],
   "chef": "Pier Paolo Picchi",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde R$427)",
   "cuisinePt": "Italiana"
 }

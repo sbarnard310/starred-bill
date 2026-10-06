@@ -12,8 +12,10 @@
   "rating": 4.7,
   "reviews": 548,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 115,
+  "dinnerNote": "Tasting menu (other menus from €89)",
+  "sourceType": "press",
+  "source": "https://www.hotspotsalgarve.com/restaurants/alemeda/",
   "website": "https://www.restaurantealamedafaro.com",
   "lat": 37.015965,
   "lng": -7.9285331,
@@ -25,6 +27,6 @@
   ],
   "chef": "Rui Sequeira",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 89 €)",
   "cuisinePt": "Moderna"
 }

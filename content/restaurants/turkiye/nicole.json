@@ -7,8 +7,11 @@
   "rating": 4.5,
   "reviews": 752,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 8100,
+  "dinnerNote": "Tasting menu (other menus from TRY 7,500)",
+  "wine": 4850,
+  "sourceType": "press",
+  "source": "https://chooseistanbul.com/en/blog/nicole-istanbul-rehberi",
   "website": "https://nicole.com.tr/",
   "lat": 41.0302119,
   "lng": 28.9777509,
@@ -19,6 +22,6 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 7,500 itibarıyla)",
   "cuisineTr": "Modern Mutfak"
 }

@@ -7,8 +7,10 @@
   "rating": 4.5,
   "reviews": 98,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 538,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.restaurant-molina.com/faqs",
   "website": "https://www.restaurant-molina.com/",
   "lat": 3.1587347,
   "lng": 101.7041242,
@@ -18,5 +20,5 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteMs": "Menu rasa; harga akan ditambah"
+  "dinnerNoteMs": "Menu rasa"
 }

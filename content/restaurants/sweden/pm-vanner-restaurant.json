@@ -8,8 +8,11 @@
   "rating": 4.4,
   "reviews": 1383,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2195,
+  "dinnerNote": "Tasting menu",
+  "wine": 1995,
+  "sourceType": "site",
+  "source": "https://pmrestauranger.se/en/vara-menyer/",
   "website": "https://pmrestauranger.se",
   "lat": 56.8789279,
   "lng": 14.8043573,
@@ -20,5 +23,5 @@
   ],
   "chef": "Anders Lauring",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny"
 }

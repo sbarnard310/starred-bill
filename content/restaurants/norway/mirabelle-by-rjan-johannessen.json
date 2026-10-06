@@ -12,8 +12,11 @@
   "rating": 4.9,
   "reviews": 35,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2900,
+  "dinnerNote": "Tasting menu",
+  "wine": 2500,
+  "sourceType": "site",
+  "source": "https://www.restaurantmirabelle.no/",
   "website": "https://www.restaurantmirabelle.no/",
   "lat": 60.0069851,
   "lng": 5.200237,
@@ -23,7 +26,7 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere",
+  "dinnerNoteNb": "Smaksmeny",
   "chef": "Ørjan Johannessen",
   "chefSource": "press"
 }

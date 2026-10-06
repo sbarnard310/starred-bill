@@ -8,8 +8,15 @@
   "rating": 4.4,
   "reviews": 128,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu (other menus from €105)",
+  "sourceType": "site",
+  "source": "https://wshs.nl/en/eat-drink/lizz/",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://wshs.nl/en/eat-drink/lizz/",
   "website": "https://wshs.nl/eat-drink/lizz/",
   "lat": 52.0105398,
   "lng": 4.7136004,
@@ -24,6 +31,7 @@
   ],
   "chef": "Remco Kuijpers",
   "chefSource": "site",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Creatief Frans"
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
+  "cuisineNl": "Creatief Frans",
+  "lunchNoteNl": "Lunchmenu"
 }

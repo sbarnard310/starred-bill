@@ -8,8 +8,11 @@
   "rating": 4.4,
   "reviews": 649,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2199,
+  "dinnerNote": "Tasting menu",
+  "wine": 1850,
+  "sourceType": "site",
+  "source": "https://www.lysverket.no/meny",
   "website": "https://www.lysverket.no",
   "lat": 60.3893076,
   "lng": 5.3289615,
@@ -21,5 +24,5 @@
   ],
   "chef": "Christopher Haatuft",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny"
 }

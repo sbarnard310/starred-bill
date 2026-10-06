@@ -7,8 +7,10 @@
   "rating": 4.3,
   "reviews": 200,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 3900000,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://akunarestaurant.com/wp-content/uploads/2024/10/AKUNA-MENU-ENG-VIET-9.10.pdf",
   "website": "https://akunarestaurant.com",
   "lat": 10.7798895,
   "lng": 106.7074227,
@@ -19,5 +21,5 @@
   ],
   "chef": "Sam Aisbett",
   "chefSource": "site",
-  "dinnerNoteVi": "Thực đơn nếm thử; giá sẽ được bổ sung"
+  "dinnerNoteVi": "Thực đơn nếm thử"
 }

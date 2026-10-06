@@ -8,8 +8,11 @@
   "rating": 4.6,
   "reviews": 492,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 295,
+  "dinnerNote": "Tasting menu (other menus from €255)",
+  "wine": 175,
+  "sourceType": "press",
+  "source": "https://www.thefork.pt/restaurante/il-gallo-d-oro-r64648/menu",
   "website": "https://www.portobay.com/en/restaurants/restaurants-madeira/il-gallo-doro",
   "lat": 32.6382988,
   "lng": -16.9266478,
@@ -23,6 +26,6 @@
   ],
   "chef": "Benoît Sinthon",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 255 €)",
   "cuisinePt": "Atual"
 }

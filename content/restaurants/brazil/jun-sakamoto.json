@@ -7,8 +7,10 @@
   "rating": 4.5,
   "reviews": 611,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 600,
+  "dinnerNote": "Tasting menu (other menus from R$500)",
+  "sourceType": "press",
+  "source": "https://www.terra.com.br/vida-e-estilo/degusta/quanto-custa-comer-nos-restaurantes-com-estrela-michelin-de-sao-paulo,179639447fd3e07f86ce962d38e0d2c58s370x2f.html",
   "website": "https://www.junsakamoto.com.br",
   "lat": -23.563121,
   "lng": -46.6771879,
@@ -16,6 +18,6 @@
   "michelinId": "428549",
   "chef": "Jun Sakamoto",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde R$500)",
   "cuisinePt": "Japonesa"
 }

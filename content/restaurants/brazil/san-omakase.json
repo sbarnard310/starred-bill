@@ -7,8 +7,10 @@
   "rating": 5,
   "reviews": 2880,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 640,
+  "dinnerNote": "Tasting menu (other menus from R$420)",
+  "sourceType": "press",
+  "source": "https://www.terra.com.br/vida-e-estilo/degusta/quanto-custa-comer-nos-restaurantes-com-estrela-michelin-do-rio-de-janeiro,cea77951957fa36c08a04b82da4eba68jm4viop1.html",
   "website": "https://www.sanomakase.com.br/",
   "lat": -22.98085,
   "lng": -43.22252,
@@ -19,6 +21,6 @@
   ],
   "chef": "André Nobuyuki Kawai",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde R$420)",
   "cuisinePt": "Japonesa"
 }

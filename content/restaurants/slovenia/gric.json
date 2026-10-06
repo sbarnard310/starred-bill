@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 590,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "site",
+  "source": "https://www.gric.si/en/faq",
   "website": "https://www.gric.si",
   "lat": 46.0283624,
   "lng": 14.2216299,
@@ -21,5 +23,5 @@
   ],
   "chef": "Luka Košir",
   "chefSource": "michelin",
-  "dinnerNoteSl": "Degustacijski meni; cena bo dodana"
+  "dinnerNoteSl": "Degustacijski meni (drugi meniji od 110 €)"
 }

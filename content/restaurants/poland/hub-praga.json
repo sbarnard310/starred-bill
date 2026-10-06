@@ -8,8 +8,10 @@
   "rating": 4.9,
   "reviews": 403,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 780,
+  "dinnerNote": "Tasting menu (other menus from PLN 640)",
+  "sourceType": "press",
+  "source": "https://bezfarmazonu.pl/2026/04/14/hub-praga-warszawa/",
   "website": "https://hub-praga.pl/",
   "lat": 52.2512002,
   "lng": 21.035961,
@@ -20,6 +22,6 @@
   ],
   "chef": "Witek Iwański",
   "chefSource": "michelin",
-  "dinnerNotePl": "Menu degustacyjne; cena zostanie dodana",
+  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 640)",
   "areaPl": "Warszawa"
 }

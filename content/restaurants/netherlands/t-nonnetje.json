@@ -8,8 +8,15 @@
   "rating": 4.7,
   "reviews": 453,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 189.5,
+  "dinnerNote": "Tasting menu (other menus from €149.50)",
+  "sourceType": "site",
+  "source": "https://hetnonnetje.nl/eten/",
+  "lunch": 79.5,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.hetnonnetje.nl/verleiding",
   "website": "https://www.hetnonnetje.nl/",
   "lat": 52.3510204,
   "lng": 5.620182,
@@ -23,6 +30,7 @@
   ],
   "chef": "Michel van der Kroft",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Creatief"
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 149,50)",
+  "cuisineNl": "Creatief",
+  "lunchNoteNl": "Lunchmenu"
 }

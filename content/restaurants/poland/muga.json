@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 889,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 660,
+  "dinnerNote": "Tasting menu (other menus from PLN 560)",
+  "wine": 490,
+  "sourceType": "site",
+  "source": "https://restauracjamuga.pl/menu/reserva",
   "website": "https://www.restauracjamuga.pl/",
   "lat": 52.4038298,
   "lng": 16.9288155,
@@ -19,5 +22,5 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNotePl": "Menu degustacyjne; cena zostanie dodana"
+  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 560)"
 }

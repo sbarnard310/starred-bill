@@ -7,12 +7,15 @@
   "rating": 4.7,
   "reviews": 45,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 3650,
+  "dinnerNote": "Tasting menu (other menus from SEK 2,200)",
+  "wine": 2200,
+  "sourceType": "site",
+  "source": "https://mdghs.se/seafood-gastro/",
   "website": "https://mdghs.se/en/seafood-gastro/",
   "lat": 59.3294565,
   "lng": 18.0756768,
   "placeId": "ChIJSXGfco2dX0YRi5M7Vjb_mjQ",
   "michelinId": "1210020",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 2 200 kr)"
 }

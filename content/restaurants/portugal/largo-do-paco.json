@@ -10,8 +10,11 @@
   "changeDate": "2026-03",
   "changeNotePt": "Conquistou a primeira estrela",
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu (other menus from €160)",
+  "wine": 100,
+  "sourceType": "press",
+  "source": "https://www.thefork.pt/restaurante/largo-do-paco-r841507/menu",
   "website": "https://www.casadacalcada.com/largo-do-paco",
   "lat": 41.2683621,
   "lng": -8.0776486,
@@ -19,6 +22,6 @@
   "michelinId": "216595",
   "chef": "Francisco Quintas",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 160 €)",
   "cuisinePt": "Moderna"
 }

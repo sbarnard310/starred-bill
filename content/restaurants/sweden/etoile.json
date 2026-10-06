@@ -7,8 +7,11 @@
   "rating": 4.8,
   "reviews": 306,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2400,
+  "dinnerNote": "Tasting menu",
+  "wine": 1600,
+  "sourceType": "press",
+  "source": "https://thatsup.co.uk/stockholm/restaurant/restaurant-etoile/",
   "website": "https://www.restaurantetoile.se/",
   "lat": 59.3495123,
   "lng": 18.0437729,
@@ -19,5 +22,5 @@
   ],
   "chef": "Jonas Lagerström",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny"
 }

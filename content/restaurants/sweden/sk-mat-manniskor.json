@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 1242,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 940,
+  "dinnerNote": "Tasting menu (other menus from SEK 670)",
+  "wine": 895,
+  "sourceType": "press",
+  "source": "https://thatsup.co.uk/gothenburg/restaurant/sk-mat-manniskor/",
   "website": "https://skmat.se",
   "lat": 57.6972648,
   "lng": 11.9828127,
@@ -18,7 +21,7 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare",
+  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 670 kr)",
   "chef": "Stefan Karlsson",
   "chefSource": "press"
 }

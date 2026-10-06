@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 456,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 185,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://stefangourmet.com/2026/04/19/review-the-white-room-amsterdam/",
   "website": "https://www.restaurantthewhiteroom.com/",
   "lat": 52.372726,
   "lng": 4.894229,
@@ -20,6 +22,6 @@
   ],
   "chef": "Jacob Jan Boerma",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Moderne keuken"
 }

@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 119,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 5460,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.spot.ph/eatdrink/the-latest-eat-drink/111778/celera-discovery-menu-a3284-20250526-lfrm",
   "website": "https://restaurantcelera.com",
   "lat": 14.566919,
   "lng": 121.008008,
@@ -17,7 +19,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteFil": "Tasting menu; idadagdag pa ang presyo",
+  "dinnerNoteFil": "Tasting menu",
   "chef": "Nicco Santos",
   "chefSource": "site"
 }

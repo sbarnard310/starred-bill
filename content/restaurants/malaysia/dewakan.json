@@ -7,8 +7,11 @@
   "rating": 4.2,
   "reviews": 562,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 870,
+  "dinnerNote": "Tasting menu",
+  "wine": 636,
+  "sourceType": "site",
+  "source": "https://www.dewakan.my/",
   "website": "https://www.dewakan.my",
   "lat": 3.1546767,
   "lng": 101.71842,
@@ -20,5 +23,5 @@
   ],
   "chef": "Darren Teoh",
   "chefSource": "michelin",
-  "dinnerNoteMs": "Menu rasa; harga akan ditambah"
+  "dinnerNoteMs": "Menu rasa"
 }

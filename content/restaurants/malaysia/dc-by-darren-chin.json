@@ -7,8 +7,16 @@
   "rating": 4.8,
   "reviews": 2240,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1198,
+  "dinnerNote": "Tasting menu",
+  "wine": 848,
+  "sourceType": "site",
+  "source": "https://www.restaurant-dc.com/LE%20MENU%20EMPEREUR.pdf",
+  "lunch": 428,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-dc.com/DC%20LUNCH%20MENU.pdf",
   "website": "https://www.restaurant-dc.com/",
   "lat": 3.141698,
   "lng": 101.627274,
@@ -19,5 +27,6 @@
   ],
   "chef": "Darren Chin",
   "chefSource": "site",
-  "dinnerNoteMs": "Menu rasa; harga akan ditambah"
+  "dinnerNoteMs": "Menu rasa",
+  "lunchNoteMs": "Menu makan tengah hari"
 }

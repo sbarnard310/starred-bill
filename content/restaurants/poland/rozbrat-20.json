@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 1021,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 690,
+  "dinnerNote": "Tasting menu (other menus from PLN 590)",
+  "wine": 450,
+  "sourceType": "site",
+  "source": "https://rozbrat20.com.pl/wp-content/uploads/2023/09/menu_pelna_degustacja_PL.pdf",
   "website": "https://rozbrat20.com.pl/",
   "lat": 52.2242187,
   "lng": 21.0350918,
@@ -18,6 +21,6 @@
   "diets": [
     "gluten-free"
   ],
-  "dinnerNotePl": "Menu degustacyjne; cena zostanie dodana",
+  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 590)",
   "areaPl": "Warszawa"
 }

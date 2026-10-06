@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 957,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1380,
+  "dinnerNote": "Tasting menu",
+  "wine": 638,
+  "sourceType": "press",
+  "source": "http://degustatividade.com.br/2026/07/lasai/",
   "website": "https://lasai.com.br/",
   "lat": -22.9532398,
   "lng": -43.1964089,
@@ -19,6 +22,6 @@
   ],
   "chef": "Rafa Costa e Silva",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Moderna"
 }

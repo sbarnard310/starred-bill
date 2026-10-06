@@ -8,8 +8,15 @@
   "rating": 4.7,
   "reviews": 764,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 20500,
+  "dinnerNote": "Tasting menu (other menus from RSD 14,500)",
+  "sourceType": "press",
+  "source": "https://w.eventlin.com/Langouste",
+  "lunch": 9000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://w.eventlin.com/Langouste",
   "website": "https://www.langouste.rs/",
   "lat": 44.8176948,
   "lng": 20.450754,
@@ -23,6 +30,7 @@
   ],
   "chef": "Marko Derić",
   "chefSource": "michelin",
-  "dinnerNoteSr": "Дегустациони мени; цена ће бити додата",
-  "areaSr": "Београд"
+  "dinnerNoteSr": "Дегустациони мени (остали менији од RSD 14,500)",
+  "areaSr": "Београд",
+  "lunchNoteSr": "Мени за ручак"
 }

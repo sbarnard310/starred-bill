@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 690,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 69000,
+  "dinnerNote": "Tasting menu (other menus from HUF 55,000)",
+  "wine": 34500,
+  "sourceType": "press",
+  "source": "https://hungaryunlocked.com/babel-budapest-review/",
   "website": "https://www.babel-budapest.hu",
   "lat": 47.492668,
   "lng": 19.0522285,
@@ -18,5 +21,5 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteHu": "Kóstolómenü; az ár később kerül fel"
+  "dinnerNoteHu": "Kóstolómenü (további menük: HUF 55,000-tól)"
 }

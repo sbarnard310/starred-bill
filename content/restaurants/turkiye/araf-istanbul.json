@@ -10,9 +10,11 @@
   "changeNoteTr": "İlk yıldızını kazandı",
   "rating": 4.7,
   "reviews": 485,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "main",
+  "dinner": 1600,
+  "dinnerNote": "Typical main course",
+  "sourceType": "press",
+  "source": "https://www.turkiyetoday.com/lifestyle/what-diners-pay-at-turkiyes-newest-michelin-starred-restaurants-3211122",
   "website": "https://www.arafistanbul.com/",
   "lat": 40.9788119,
   "lng": 29.0932956,
@@ -23,6 +25,6 @@
     "vegan",
     "gluten-free"
   ],
-  "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "dinnerNoteTr": "Tipik ana yemek",
   "cuisineTr": "Modern"
 }

@@ -8,8 +8,10 @@
   "rating": 4.8,
   "reviews": 108,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 145,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "press",
+  "source": "https://www.thefork.pt/restaurante/palatial-restaurant-r820067/menu",
   "website": "https://palatial.pt/",
   "lat": 41.5238795,
   "lng": -8.4192035,
@@ -20,6 +22,6 @@
   ],
   "chef": "Rui Filipe",
   "chefSource": "site",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 110 €)",
   "cuisinePt": "Atual"
 }

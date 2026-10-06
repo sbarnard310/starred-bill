@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 25,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1400,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.bloomberglinea.com.br/estilo-de-vida/ecossistema-do-luxo-a-estrategia-do-kanoe-com-sushi-para-8-clientes-e-menu-de-r-1400/",
   "website": "https://kanoerestaurant.com/",
   "lat": -23.5578032,
   "lng": -46.6660508,
@@ -20,6 +22,6 @@
   ],
   "chef": "Tadashi Shiraishi",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Japonesa"
 }

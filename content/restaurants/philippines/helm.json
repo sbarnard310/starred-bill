@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 217,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 6800,
+  "dinnerNote": "Tasting menu",
+  "wine": 2400,
+  "sourceType": "press",
+  "source": "https://www.preview.ph/culture/food/helm-restaurant-menu-price-a5158-20251031-dyn",
   "website": "https://www.joshboutwood.com/restaurants/helm",
   "lat": 14.557905,
   "lng": 121.0252505,
@@ -18,7 +21,7 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteFil": "Tasting menu; idadagdag pa ang presyo",
+  "dinnerNoteFil": "Tasting menu",
   "chef": "Josh Boutwood",
   "chefSource": "press"
 }

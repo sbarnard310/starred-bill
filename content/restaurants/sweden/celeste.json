@@ -7,8 +7,11 @@
   "rating": 4.4,
   "reviews": 124,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2400,
+  "dinnerNote": "Tasting menu",
+  "wine": 900,
+  "sourceType": "press",
+  "source": "https://www.krogguiden.se/restauranger/view/celeste-restaurant",
   "website": "https://www.celesterestaurant.se/",
   "lat": 59.3164219,
   "lng": 18.0571676,
@@ -17,5 +20,5 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny"
 }

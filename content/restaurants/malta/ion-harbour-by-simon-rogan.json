@@ -8,8 +8,15 @@
   "rating": 4.5,
   "reviews": 505,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 205,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://ionharbour.com/",
+  "lunch": 95,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://ionharbour.com/",
   "website": "https://ionharbour.com/",
   "lat": 35.8962481,
   "lng": 14.5141768,
@@ -21,6 +28,7 @@
   ],
   "chef": "Christian Cali",
   "chefSource": "michelin",
-  "dinnerNoteMt": "Menu tad-degustazzjoni; il-prezz għad irid jiżdied",
-  "areaMt": "Il-Belt Valletta"
+  "dinnerNoteMt": "Menu tad-degustazzjoni",
+  "areaMt": "Il-Belt Valletta",
+  "lunchNoteMt": "Menu ta' nofsinhar"
 }

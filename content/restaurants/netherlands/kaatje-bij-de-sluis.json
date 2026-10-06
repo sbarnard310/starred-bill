@@ -8,8 +8,10 @@
   "rating": 4.3,
   "reviews": 727,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 110,
+  "dinnerNote": "Tasting menu (other menus from €82.50)",
+  "sourceType": "press",
+  "source": "https://diningwiththestars.nl/nl/restaurants/2714-kaatje-bij-de-sluis-blokzijl",
   "website": "https://www.kaatje.nl/",
   "lat": 52.7265596,
   "lng": 5.9610873,
@@ -22,6 +24,6 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 82,50)",
   "cuisineNl": "Bio"
 }

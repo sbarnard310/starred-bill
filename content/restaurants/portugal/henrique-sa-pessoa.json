@@ -7,8 +7,11 @@
   "rating": 4.8,
   "reviews": 42,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 220,
+  "dinnerNote": "Tasting menu (other menus from €140)",
+  "wine": 140,
+  "sourceType": "press",
+  "source": "https://magg.sapo.pt/comida/restaurantes/artigos/saiba-o-que-pode-comer-no-novo-restaurante-de-henrique-sa-pessoa-e-quanto-tem-de-gastar-que-mantem-as-estrelas-michelin",
   "website": "https://www.henriquesapessoa.com/",
   "lat": 38.7235618,
   "lng": -9.1559051,
@@ -19,6 +22,6 @@
   ],
   "chef": "Henrique Sá Pessoa",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 140 €)",
   "cuisinePt": "Criativa"
 }

@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 452,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 7500,
+  "dinnerNote": "Tasting menu",
+  "wine": 3000,
+  "sourceType": "site",
+  "source": "https://cdn.prod.website-files.com/64d1d06bd3219ccd61e8a327/685ba9ae2db9ee45a47f9fda_hapag-webmenu3.pdf",
   "website": "https://www.hapagmnl.com",
   "lat": 14.56457,
   "lng": 121.03695,
@@ -17,5 +20,5 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteFil": "Tasting menu; idadagdag pa ang presyo"
+  "dinnerNoteFil": "Tasting menu"
 }

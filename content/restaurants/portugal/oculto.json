@@ -8,8 +8,10 @@
   "rating": 4.5,
   "reviews": 20,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 180,
+  "dinnerNote": "Tasting menu (other menus from €110)",
+  "sourceType": "press",
+  "source": "https://www.thefork.com/restaurant/oculto-r829246/menu",
   "website": "https://thelincehotels.com/santaclara/restaurantes/",
   "lat": 41.3530831,
   "lng": -8.7395553,
@@ -23,6 +25,6 @@
   ],
   "chef": "Vítor Matos and Hugo Rocha",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 110 €)",
   "cuisinePt": "Moderna"
 }

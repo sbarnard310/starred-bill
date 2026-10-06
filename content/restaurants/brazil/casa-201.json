@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 123,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 690,
+  "dinnerNote": "Tasting menu",
+  "wine": 490,
+  "sourceType": "press",
+  "source": "https://informa-rio.com/2026/06/20/casa-201-novo-menu",
   "website": "https://www.casa201.com.br",
   "lat": -22.964603,
   "lng": -43.220451,
@@ -21,6 +24,6 @@
   ],
   "chef": "João Paulo Frankenfeld",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Francesa"
 }

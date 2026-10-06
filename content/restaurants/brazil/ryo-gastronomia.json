@@ -7,8 +7,10 @@
   "rating": 4.6,
   "reviews": 375,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1290,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://exame.com/casual/o-unico-restaurante-japones-a-ter-2-estrelas-michelin-em-sao-paulo-volta-com-tudo/",
   "website": "https://www.ryogastronomia.com.br/",
   "lat": -23.5814487,
   "lng": -46.6769049,
@@ -20,6 +22,6 @@
   ],
   "chef": "Edson Yamashita",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Japonesa"
 }

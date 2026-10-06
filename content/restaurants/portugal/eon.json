@@ -11,8 +11,11 @@
   "rating": 4.7,
   "reviews": 29,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 150,
+  "dinnerNote": "Tasting menu (other menus from €100)",
+  "wine": 80,
+  "sourceType": "press",
+  "source": "https://restaurantsforkings.com/city/porto/eon",
   "website": "https://palacetesevero.com/",
   "lat": 41.1561698,
   "lng": -8.6254234,
@@ -23,6 +26,6 @@
   ],
   "chef": "Tiago Bonito",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 100 €)",
   "cuisinePt": "Moderna"
 }

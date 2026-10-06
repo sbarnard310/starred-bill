@@ -7,8 +7,11 @@
   "rating": 4.8,
   "reviews": 773,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 4800,
+  "dinnerNote": "Tasting menu",
+  "wine": 2800,
+  "sourceType": "press",
+  "source": "https://joinpearl.co/blogs/visiting-frantzen-in-2026-what-to-know-before-you-go",
   "website": "https://www.restaurantfrantzen.com/",
   "lat": 59.3341673,
   "lng": 18.0597575,
@@ -19,5 +22,5 @@
   ],
   "chef": "Björn Frantzén",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny; priset läggs till senare"
+  "dinnerNoteSv": "Avsmakningsmeny"
 }

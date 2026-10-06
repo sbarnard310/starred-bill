@@ -7,8 +7,15 @@
   "rating": 4.8,
   "reviews": 146,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2500,
+  "dinnerNote": "Tasting menu (other menus from AED 2,000)",
+  "sourceType": "press",
+  "source": "https://www.exploringdubai.ae/restaurants/hoseki/menu",
+  "lunch": 1300,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.exploringdubai.ae/restaurants/hoseki/menu",
   "website": "https://www.bulgarihotels.com/en_US/dubai/bars-and-restaurants/japanese-restaurant-hoseki",
   "lat": 25.2106143,
   "lng": 55.2351396,
@@ -16,5 +23,6 @@
   "michelinId": "1196967",
   "chef": "Masahiro Sugiyama",
   "chefSource": "michelin",
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا"
+  "dinnerNoteAr": "قائمة تذوق (قوائم أخرى من AED 2,000)",
+  "lunchNoteAr": "قائمة الغداء"
 }

@@ -7,8 +7,15 @@
   "rating": 4.8,
   "reviews": 66,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 125,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://bolenius-rembrandtpark.nl/menu",
+  "lunch": 59,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://bolenius-rembrandtpark.nl/menu",
   "website": "https://bolenius-rembrandtpark.nl",
   "lat": 52.35945,
   "lng": 4.844129,
@@ -22,6 +29,7 @@
   ],
   "chef": "Luc Kusters",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Moderne keuken"
+  "dinnerNoteNl": "Proeverijmenu",
+  "cuisineNl": "Moderne keuken",
+  "lunchNoteNl": "Lunchmenu"
 }

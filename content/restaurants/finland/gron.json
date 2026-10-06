@@ -11,8 +11,11 @@
   "rating": 4.7,
   "reviews": 570,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 198,
+  "dinnerNote": "Tasting menu",
+  "wine": 142,
+  "sourceType": "site",
+  "source": "https://www.restaurantgron.com/menu",
   "website": "https://www.restaurantgron.com/",
   "lat": 60.1646073,
   "lng": 24.9326985,
@@ -25,5 +28,5 @@
   ],
   "chef": "Toni Kostian",
   "chefSource": "michelin",
-  "dinnerNoteFi": "Maistelumenu; hinta lisätään myöhemmin"
+  "dinnerNoteFi": "Maistelumenu"
 }

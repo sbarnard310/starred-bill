@@ -12,8 +12,16 @@
   "rating": 4.8,
   "reviews": 439,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1980,
+  "dinnerNote": "Tasting menu",
+  "wine": 890,
+  "sourceType": "site",
+  "source": "https://www.lavilla.cz/cs/menu",
+  "lunch": 550,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lavilla.cz/cs/menu",
   "website": "https://www.lavilla.cz/",
   "lat": 49.2375653,
   "lng": 17.6536869,
@@ -23,7 +31,8 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteCs": "Degustační menu; cena bude doplněna",
+  "dinnerNoteCs": "Degustační menu",
   "chef": "Július Löffler",
-  "chefSource": "press"
+  "chefSource": "press",
+  "lunchNoteCs": "Polední menu"
 }

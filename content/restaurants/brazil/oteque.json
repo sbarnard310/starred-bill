@@ -7,8 +7,11 @@
   "rating": 4.4,
   "reviews": 109,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 895,
+  "dinnerNote": "Tasting menu",
+  "wine": 675,
+  "sourceType": "press",
+  "source": "https://www.terra.com.br/vida-e-estilo/degusta/quanto-custa-comer-na-casa-do-porco-e-no-oteque-que-estao-na-lista-dos-melhores-do-mundo,1c6b3fd7651e10448a06ab186e098a50uz834j66.html",
   "website": "https://www.oteque.com/",
   "lat": -22.95747,
   "lng": -43.194424,
@@ -21,6 +24,6 @@
   ],
   "chef": "Alberto Landgraf",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Moderna"
 }

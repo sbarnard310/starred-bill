@@ -8,8 +8,15 @@
   "rating": 4.6,
   "reviews": 904,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €125)",
+  "sourceType": "press",
+  "source": "https://joinpearl.co/restaurants/zagreb/noel",
+  "lunch": 65,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://noel.hr/noel-lunch/",
   "website": "https://noel.hr/",
   "lat": 45.810998,
   "lng": 15.9880697,
@@ -21,5 +28,6 @@
   ],
   "chef": "Bruno Vokal",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana"
+  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 125 €)",
+  "lunchNoteHr": "Meni za ručak"
 }

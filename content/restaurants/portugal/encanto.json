@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 385,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 155,
+  "dinnerNote": "Tasting menu",
+  "wine": 95,
+  "sourceType": "site",
+  "source": "https://www.encantojoseavillez.pt/carta/Encanto_Carta.pdf",
   "website": "https://www.encantojoseavillez.pt",
   "lat": 38.7099833,
   "lng": -9.1414928,
@@ -21,6 +24,6 @@
   ],
   "chef": "José Avillez",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Vegetariana"
 }

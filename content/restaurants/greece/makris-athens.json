@@ -11,8 +11,10 @@
   "rating": 4.6,
   "reviews": 621,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 148,
+  "dinnerNote": "Tasting menu (other menus from €88)",
+  "sourceType": "site",
+  "source": "https://makrisathens.com/en/menu/",
   "website": "https://makrisathens.com/en/",
   "lat": 37.9767678,
   "lng": 23.7230301,
@@ -26,5 +28,5 @@
   ],
   "chef": "Petros Dimas",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας· η τιμή θα προστεθεί"
+  "dinnerNoteEl": "Μενού γευσιγνωσίας (άλλα μενού από 88 €)"
 }

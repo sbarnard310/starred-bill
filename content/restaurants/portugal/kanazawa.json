@@ -7,8 +7,10 @@
   "rating": 4.9,
   "reviews": 355,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 210,
+  "dinnerNote": "Tasting menu (other menus from €85)",
+  "sourceType": "site",
+  "source": "https://kanazawa.com.pt/jantar/",
   "website": "https://www.kanazawa.com.pt",
   "lat": 38.6979595,
   "lng": -9.2256498,
@@ -22,6 +24,6 @@
   ],
   "chef": "Paulo Morais",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 85 €)",
   "cuisinePt": "Japonesa"
 }

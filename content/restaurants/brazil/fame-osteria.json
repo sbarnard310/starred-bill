@@ -7,8 +7,11 @@
   "rating": 4.2,
   "reviews": 221,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 640,
+  "dinnerNote": "Tasting menu",
+  "wine": 590,
+  "sourceType": "press",
+  "source": "https://www.terra.com.br/vida-e-estilo/degusta/quanto-custa-comer-nos-restaurantes-com-estrela-michelin-de-sao-paulo,179639447fd3e07f86ce962d38e0d2c58s370x2f.html",
   "lat": -23.5673009,
   "lng": -46.6641133,
   "placeId": "ChIJYfLDPLZZzpQRB4RR0EJEbGU",
@@ -18,6 +21,6 @@
   ],
   "chef": "Marco Renzetti",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Italiana contemporânea"
 }

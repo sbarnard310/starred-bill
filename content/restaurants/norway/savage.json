@@ -7,8 +7,11 @@
   "rating": 4.6,
   "reviews": 143,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2500,
+  "dinnerNote": "Tasting menu (other menus from NOK 1,550)",
+  "wine": 2000,
+  "sourceType": "press",
+  "source": "https://eatweekguide.com/savage-oslo/",
   "website": "https://www.restaurantsavage.no/",
   "lat": 59.9093941,
   "lng": 10.7401093,
@@ -21,5 +24,5 @@
   ],
   "chef": "Andrea Selvaggini",
   "chefSource": "site",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 550 kr)"
 }

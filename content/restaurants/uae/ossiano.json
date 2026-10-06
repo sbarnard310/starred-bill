@@ -5,8 +5,11 @@
   "stars": 1,
   "cuisine": "Creative",
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1250,
+  "dinnerNote": "Tasting menu",
+  "wine": 1195,
+  "sourceType": "press",
+  "source": "https://connectingtravel.com/news/atlantis-dubais-ossiano-restaurant-debuts-new-nine-course-menu",
   "website": "https://www.atlantis.com/dubai/dining/ossiano",
   "lat": 25.1318677,
   "lng": 55.1180262,
@@ -16,5 +19,5 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteAr": "قائمة تذوق؛ سيُضاف السعر لاحقًا"
+  "dinnerNoteAr": "قائمة تذوق"
 }

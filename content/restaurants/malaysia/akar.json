@@ -11,8 +11,16 @@
   "rating": 4.8,
   "reviews": 1187,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 588,
+  "dinnerNote": "Tasting menu",
+  "wine": 300,
+  "sourceType": "press",
+  "source": "https://restaurantsforkings.com/city/kuala-lumpur/akar-dining",
+  "lunch": 288,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://restaurantsforkings.com/city/kuala-lumpur/akar-dining",
   "website": "https://www.akarkl.com",
   "lat": 3.1528453,
   "lng": 101.6208917,
@@ -22,5 +30,6 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteMs": "Menu rasa; harga akan ditambah"
+  "dinnerNoteMs": "Menu rasa",
+  "lunchNoteMs": "Menu makan tengah hari"
 }

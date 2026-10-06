@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 534,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2675,
+  "dinnerNote": "Tasting menu (other menus from NOK 1,275)",
+  "wine": 2900,
+  "sourceType": "site",
+  "source": "https://fagn.no/dining/",
   "website": "https://fagn.no/",
   "lat": 63.4339936,
   "lng": 10.3962931,
@@ -20,5 +23,5 @@
   ],
   "chef": "Ådne Børseth Helgetun",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny (andre menyer fra 1 275 kr)"
 }

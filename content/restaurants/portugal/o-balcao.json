@@ -8,8 +8,11 @@
   "rating": 4.5,
   "reviews": 1041,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 130,
+  "dinnerNote": "Tasting menu",
+  "wine": 55,
+  "sourceType": "press",
+  "source": "https://www.thefork.com/restaurant/o-balcao-r696907/menu",
   "website": "https://tabernaobalcao.com/",
   "lat": 39.2318717,
   "lng": -8.6858859,
@@ -22,6 +25,6 @@
   ],
   "chef": "Rodrigo Castelo",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação",
   "cuisinePt": "Moderna"
 }

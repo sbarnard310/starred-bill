@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 629,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 7200,
+  "dinnerNote": "Tasting menu (other menus from ₱5,800)",
+  "wine": 3500,
+  "sourceType": "press",
+  "source": "https://www.esquiremag.ph/culture/food-and-drink/gallery-by-chele-goes-extra-rice-on-its-new-tasting-menu-a8072-20260318-dyn",
   "website": "https://gallerybychele.com",
   "lat": 14.55901,
   "lng": 121.05613,
@@ -23,5 +26,5 @@
   ],
   "chef": "José Luis Gonzalez",
   "chefSource": "michelin",
-  "dinnerNoteFil": "Tasting menu; idadagdag pa ang presyo"
+  "dinnerNoteFil": "Tasting menu (ibang menu mula ₱5,800)"
 }

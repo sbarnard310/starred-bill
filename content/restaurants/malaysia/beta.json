@@ -7,8 +7,11 @@
   "rating": 4.7,
   "reviews": 1400,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 630,
+  "dinnerNote": "Tasting menu",
+  "wine": 330,
+  "sourceType": "press",
+  "source": "https://www.thestar.com.my/lifestyle/living/2026/08/24/michelin-starred-beta-kl-celebrates-malaysias-rich-diversity-in-new-menu",
   "website": "https://www.betakl.com",
   "lat": 3.1545381,
   "lng": 101.7090051,
@@ -18,7 +21,7 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteMs": "Menu rasa; harga akan ditambah",
+  "dinnerNoteMs": "Menu rasa",
   "chef": "Raymond Tham",
   "chefSource": "press"
 }

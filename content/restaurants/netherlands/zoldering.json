@@ -6,9 +6,11 @@
   "cuisine": "Modern French",
   "rating": 4.7,
   "reviews": 405,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "main",
+  "dinner": 35,
+  "dinnerNote": "Typical main course",
+  "sourceType": "press",
+  "source": "https://stefangourmet.com/2024/03/29/dining-in-amsterdam-zoldering/",
   "website": "https://www.zoldering.nl/",
   "lat": 52.361354,
   "lng": 4.8993625,
@@ -20,6 +22,6 @@
   ],
   "chef": "Tomas Bron",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Gemiddeld hoofdgerecht",
   "cuisineNl": "Modern Frans"
 }

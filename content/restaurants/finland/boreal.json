@@ -11,8 +11,10 @@
   "rating": 4.8,
   "reviews": 89,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 99,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.timeout.com/helsinki/restaurants/boreal",
   "website": "https://www.borealhki.fi/",
   "lat": 60.164988,
   "lng": 24.9420568,
@@ -24,5 +26,5 @@
   ],
   "chef": "Pasha Demin",
   "chefSource": "michelin",
-  "dinnerNoteFi": "Maistelumenu; hinta lisätään myöhemmin"
+  "dinnerNoteFi": "Maistelumenu"
 }

@@ -7,8 +7,11 @@
   "rating": 4.3,
   "reviews": 2716,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 10500,
+  "dinnerNote": "Tasting menu (other menus from TRY 8,500)",
+  "wine": 5500,
+  "sourceType": "site",
+  "source": "https://www.miklarestaurant.com/menu",
   "website": "https://www.miklarestaurant.com/",
   "lat": 41.0311672,
   "lng": 28.9741604,
@@ -21,7 +24,7 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 8,500 itibarıyla)",
   "cuisineTr": "Akdeniz Mutfağı",
   "chef": "Mehmet Gürs",
   "chefSource": "press"

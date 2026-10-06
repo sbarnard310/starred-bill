@@ -8,8 +8,15 @@
   "rating": 4.5,
   "reviews": 338,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 135,
+  "dinnerNote": "Tasting menu (other menus from €95)",
+  "sourceType": "site",
+  "source": "https://restaurantbasiliek.nl/",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurantbasiliek.nl/",
   "website": "https://restaurantbasiliek.nl/",
   "lat": 52.3512784,
   "lng": 5.6211715,
@@ -24,6 +31,7 @@
   ],
   "chef": "Yornie van Dijk",
   "chefSource": "site",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Moderne keuken"
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 95)",
+  "cuisineNl": "Moderne keuken",
+  "lunchNoteNl": "Lunchmenu"
 }

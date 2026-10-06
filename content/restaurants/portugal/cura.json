@@ -7,8 +7,10 @@
   "rating": 4.8,
   "reviews": 312,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 195,
+  "dinnerNote": "Tasting menu (other menus from €175)",
+  "sourceType": "site",
+  "source": "https://www.fourseasons.com/lisbon/dining/restaurants/cura/",
   "website": "https://m.fourseasons.com/pt/lisbon/dining/restaurants/cura/",
   "lat": 38.7257479,
   "lng": -9.155379,
@@ -20,6 +22,6 @@
   ],
   "chef": "Rodolfo Lavrador",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (outros menus desde 175 €)",
   "cuisinePt": "Moderna"
 }

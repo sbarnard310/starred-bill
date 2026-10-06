@@ -7,8 +7,10 @@
   "rating": 4.7,
   "reviews": 1714,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 170,
+  "dinnerNote": "Tasting menu (other menus from €135)",
+  "sourceType": "press",
+  "source": "https://www.het-menu.nl/maastricht/restaurant/chateau_neercanne/menukaart",
   "website": "https://www.oostwegelcollection.nl/chateau-neercanne/restaurants/chateau-neercanne",
   "lat": 50.8186702,
   "lng": 5.66746,
@@ -24,6 +26,6 @@
   ],
   "chef": "Robert Levels",
   "chefSource": "site",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
+  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
   "cuisineNl": "Eigentijds Frans"
 }

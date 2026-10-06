@@ -24,5 +24,6 @@
       "q": "Does London have the most three-star restaurants in the UK?",
       "a": "Yes. London has {{n3London}} of the UK’s {{n3UK}} three-star restaurants."
     }
-  ]
+  ],
+  "imageAlt": "Illustration of a fine-dining table by a window at dusk, with the London skyline and river outside and three gold stars above."
 }

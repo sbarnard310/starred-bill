@@ -1621,6 +1621,10 @@ content:
         label: One-line summary for the Guides page
         type: string
         required: true
+      - name: imageAlt
+        label: Picture description
+        description: What the guide's featured picture shows, for screen readers and link previews, e.g. "Illustration of a plated tasting course on a cream tablecloth, with a gold star beside it." The picture itself is src/img/guides/<web address>.jpg, made by scripts/guide_images.py (see docs/image-style.md).
+        type: string
       - name: published
         label: First published
         description: A date like 2026-10-05.

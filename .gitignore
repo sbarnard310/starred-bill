@@ -4,3 +4,6 @@ _site/
 scripts/*-export.json
 scripts/michelin-details.json
 scripts/chef-review.json
+
+# Full-size originals of featured images (sized copies are committed; originals live in Canva)
+src/img/**/*-src.*

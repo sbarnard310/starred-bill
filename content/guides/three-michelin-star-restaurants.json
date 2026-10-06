@@ -32,5 +32,6 @@
       "q": "How many 3 Michelin star restaurants are there?",
       "a": "{{n3}} worldwide, in the {{guideYear}} MICHELIN Guide editions."
     }
-  ]
+  ],
+  "imageAlt": "Illustration of a grand tasting menu of many small courses laid out across a table, with a long paper receipt and three gold stars above."
 }

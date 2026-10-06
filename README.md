@@ -92,6 +92,7 @@ Each file in `content/guides/` is one article at `/guides/<file name>/`, listed 
 | `h1` | the headline |
 | `title`, `description` | what search results show (up to 60 and 155 characters; the build stops if they're longer) |
 | `summary` | one line for the Guides page |
+| `imageAlt` | describes the featured picture, for screen readers and link previews. The picture isn't a field: it's `src/img/guides/<id>.jpg` (1600×900, top of the guide), `<id>-card.jpg` (800×450, the Guides page) and `<id>-og.jpg` (1200×630, link previews and the Article data), made from a full-size `<id>-src.jpg` by `python3 scripts/guide_images.py <id>`, in the house style in `docs/image-style.md`. A guide without a picture shows none and uses the site's default link preview |
 | `published`, `updated` | dates like `2026-10-05`; change `updated` whenever you edit |
 | `lang` | `en-US` or `en-GB` |
 | `body` | the article, in HTML |

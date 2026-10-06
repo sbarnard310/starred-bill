@@ -38,5 +38,6 @@
       "q": "How many Michelin star restaurants are there in the world?",
       "a": "{{total}}: {{n1}} with one star, {{n2}} with two and {{n3}} with three, across {{countries}} countries and territories."
     }
-  ]
+  ],
+  "imageAlt": "Illustration of a world-map tablecloth with small plates and a wine glass laid around it."
 }

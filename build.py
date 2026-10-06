@@ -1550,6 +1550,14 @@ GUIDE_ORDER = ("what-is-a-michelin-star", "how-restaurants-get-a-michelin-star",
                "three-michelin-star-restaurants-uk")
 
 
+GUIDE_IMAGES = SRC / "img" / "guides"
+
+
+def guide_image(g):
+    """A guide's featured picture (src/img/guides/<id>.jpg, made by scripts/guide_images.py), or None."""
+    return f"/img/guides/{g['id']}" if (GUIDE_IMAGES / f"{g['id']}.jpg").exists() else None
+
+
 def build_guides():
     """Each guide at /guides/<name>/, and a list of them at /guides/."""
     if not guides:
@@ -1570,9 +1578,12 @@ def build_guides():
         faqs = [{"q": guide_text(f["q"], stats), "a": guide_text(f["a"], stats)} for f in g["faq"]]
         faq_html = ('<section class="guide-faq" id="faq"><h2>Frequently asked questions</h2>' + "".join(
             f'<h3>{f["q"]}</h3><p>{f["a"]}</p>' for f in faqs) + "</section>") if faqs else ""
+        img = guide_image(g)
+        hero = (f'<figure class="guide-hero"><img src="{img}.jpg" alt="{e(g.get("imageAlt", ""))}" width="1600" height="900" '
+                f'fetchpriority="high" decoding="async"></figure>\n') if img else ""
         main = (f'<article lang="{e(g.get("lang", "en-US"))}">\n<h1>{e(g["h1"])}</h1>\n'
                 f'<p class="prose-date">Updated {(uk_date if g.get("lang") == "en-GB" else us_date)(g["updated"])} · Star counts and prices checked {stats["checked"]}</p>\n'
-                f'{body}\n{faq_html}\n</article>')
+                f'{hero}{body}\n{faq_html}\n</article>')
         strip = lambda t: re.sub(r"<[^>]+>", "", t)
         graph = [
             {"@type": "BreadcrumbList", "itemListElement": [
@@ -1582,7 +1593,7 @@ def build_guides():
             {"@type": "Article", "headline": g["h1"], "description": g["description"], "inLanguage": g.get("lang", "en-US"),
              "datePublished": g["published"], "dateModified": g["updated"], "mainEntityOfPage": SITE_URL + path,
              **({"keywords": ", ".join(g["keywords"])} if g["keywords"] else {}),
-             "image": SITE_URL + "/og/default.png",
+             "image": [SITE_URL + img + ".jpg", SITE_URL + img + "-og.jpg"] if img else SITE_URL + "/og/default.png",
              "author": {"@type": "Organization", "name": "The Starred Bill", "url": SITE_URL + "/"},
              "publisher": {"@type": "Organization", "name": "The Starred Bill", "url": SITE_URL + "/",
                            "logo": {"@type": "ImageObject", "url": SITE_URL + "/icons/icon-512.png"}}},
@@ -1592,13 +1603,18 @@ def build_guides():
                 {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in faqs]})
         write(path, render("guide.html", {
             "title": e(g["title"]), "description": e(g["description"]), "canonical": SITE_URL + path, "htmlLang": e(g.get("lang", "en-US")),
-            "ogType": "article", "ogAlt": e(g["h1"]),
+            "ogType": "article", "ogAlt": e(g.get("imageAlt") or g["h1"]),
+            **({"ogImage": SITE_URL + img + "-og.jpg"} if img else {}),
             "keywordsMeta": f'<meta name="keywords" content="{e(", ".join(g["keywords"]))}">\n' if g["keywords"] else "",
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": home_crumb + '<a href="/guides/">Guides</a>' + f'<span aria-current="page">{e(g["h1"])}</span>',
             "main": main, "data": data,
         }))
-    cards = "".join(f'<li><a href="/guides/{g["id"]}/"><strong>{e(g["h1"])}</strong></a><span>{e(g["summary"])}</span></li>'
+    def card(g):
+        img = guide_image(g)
+        pic = f'<img src="{img}-card.jpg" alt="" width="800" height="450" loading="lazy" decoding="async">' if img else ""
+        return f'<li>{pic}<div><a href="/guides/{g["id"]}/"><strong>{e(g["h1"])}</strong></a><span>{e(g["summary"])}</span></div></li>'
+    cards = "".join(card(g)
                     for g in sorted(guides.values(), key=lambda g: (g["published"], GUIDE_ORDER.index(g["id"]) if g["id"] in GUIDE_ORDER else len(GUIDE_ORDER), g["id"])))
     write("/guides/", render("guide.html", {
         "title": "Michelin Guides and Explainers · The Starred Bill",
@@ -1617,6 +1633,9 @@ def build_extras():
     shutil.copytree(SRC / "icons", OUT / "icons")
     if (SRC / "og").exists():
         shutil.copytree(SRC / "og", OUT / "og")
+    if (SRC / "img").exists():
+        # Featured pictures; the full-size originals (<id>-src.*) stay out of the site.
+        shutil.copytree(SRC / "img", OUT / "img", ignore=shutil.ignore_patterns("*-src.*"))
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
     urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) for lang in place_langs(p)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + ["/privacy/"]

@@ -101,7 +101,7 @@
     cName: "Nimi", cEmail: "E-post", cTopic: "Teema", cTopicPrice: "Hinnamuutus", cTopicSuggest: "Soovita restorani", cTopicCity: "Lisa teine linn", cTopicOther: "Midagi muud",
     cMsg: "Sõnum", cMsgPh: "Kirjuta restorani nimi, uus hind ja kust selle nägid.",
     cSend: "Saada sõnum", errName: "Sisesta oma nimi.", errEmail: "Sisesta e-posti aadress, nt nimi@example.com.", errMsg: "Kirjuta lühike sõnum.",
-    sent: "Aitäh, {name}! See on proovivorm, seega sõnumeid veel ei saadeta.",
+    sent: "Aitäh, {name}! Sinu e-posti rakendus peaks avanema koos sõnumiga: vajuta lihtsalt „Saada“. Kui see ei avane, kirjuta aadressile hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Hinnad ja hinnangud on kontrollitud 2026. aasta oktoobris. Enne broneerimist küsi restoranist üle.",
     rateLine: "Hinnad valuutas {sym} on ligikaudsed, kursiga {date}: {sym}1 = {home}{rate}.",

@@ -105,7 +105,7 @@
     cName: "Ad", cEmail: "E-posta", cTopic: "Konu", cTopicPrice: "Fiyat güncellemesi", cTopicSuggest: "Restoran önerin", cTopicCity: "Başka bir şehir ekleyin", cTopicOther: "Başka bir şey",
     cMsg: "Mesaj", cMsgPh: "Restoranı, yeni fiyatı ve nerede gördüğünüzü yazın.",
     cSend: "Mesaj gönder", errName: "Adınızı yazın.", errEmail: "ad@example.com gibi bir e-posta adresi yazın.", errMsg: "Kısa bir mesaj yazın.",
-    sent: "Teşekkürler, {name}. Bu bir deneme formu, bu yüzden mesajlar henüz gönderilmiyor.",
+    sent: "Teşekkürler, {name}. E-posta uygulamanız mesajınızla açılacak: yalnızca Gönder'e basın. Açılmazsa hello@starredbill.com adresine yazın.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Fiyatlar ve puanlar Ekim 2026'da kontrol edildi. Rezervasyondan önce restorana danışın.",
     rateLine: "{sym} cinsinden fiyatlar yaklaşıktır, {date} kuruyla: {sym}1 = {home}{rate}.",

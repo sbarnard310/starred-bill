@@ -101,7 +101,7 @@
     cName: "Vardas", cEmail: "El. paštas", cTopic: "Tema", cTopicPrice: "Kainos pakeitimas", cTopicSuggest: "Pasiūlyti restoraną", cTopicCity: "Įtraukti kitą miestą", cTopicOther: "Kita",
     cMsg: "Žinutė", cMsgPh: "Nurodykite restoraną, naują kainą ir kur ją matėte.",
     cSend: "Siųsti žinutę", errName: "Įveskite savo vardą.", errEmail: "Įveskite el. pašto adresą, pvz., vardas@example.com.", errMsg: "Parašykite trumpą žinutę.",
-    sent: "Ačiū, {name}. Tai bandomoji forma, todėl žinutės dar nesiunčiamos.",
+    sent: "Ačiū, {name}. Turėtų atsidaryti jūsų el. pašto programa su žinute: tiesiog paspauskite „Siųsti“. Jei neatsidaro, rašykite adresu hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Kainos ir įvertinimai patikrinti 2026 m. spalį. Prieš rezervuodami pasitikslinkite restorane.",
     rateLine: "Kainos {sym} yra apytikslės, pagal {date} kursą: {sym}1 = {home}{rate}.",

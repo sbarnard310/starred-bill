@@ -103,7 +103,7 @@
     cName: "Név", cEmail: "E-mail", cTopic: "Téma", cTopicPrice: "Árfrissítés", cTopicSuggest: "Étterem ajánlása", cTopicCity: "Új város felvétele", cTopicOther: "Egyéb",
     cMsg: "Üzenet", cMsgPh: "Írd meg az étterem nevét, az új árat és hogy hol láttad.",
     cSend: "Üzenet küldése", errName: "Add meg a neved.", errEmail: "Adj meg egy e-mail-címet, pl. nev@example.com.", errMsg: "Írj egy rövid üzenetet.",
-    sent: "Köszönjük, {name}! Ez egy próbaűrlap, így az üzenetek még nem mennek el.",
+    sent: "Köszönjük, {name}! Megnyílik a levelezőalkalmazásod az üzeneteddel: csak nyomd meg a Küldés gombot. Ha nem nyílik meg, írj a hello@starredbill.com címre.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Az árakat és értékeléseket 2026 októberében ellenőriztük. Foglalás előtt érdeklődj az étteremnél.",
     rateLine: "A(z) {sym} árak tájékoztató jellegűek, a(z) {date}-i árfolyamon: {sym}1 = {home}{rate}.",

@@ -101,7 +101,7 @@
     cName: "Vārds", cEmail: "E-pasts", cTopic: "Tēma", cTopicPrice: "Cenas izmaiņas", cTopicSuggest: "Ieteikt restorānu", cTopicCity: "Pievienot citu pilsētu", cTopicOther: "Kas cits",
     cMsg: "Ziņa", cMsgPh: "Norādiet restorānu, jauno cenu un kur to redzējāt.",
     cSend: "Sūtīt ziņu", errName: "Ievadiet savu vārdu.", errEmail: "Ievadiet e-pasta adresi, piem., vards@example.com.", errMsg: "Uzrakstiet īsu ziņu.",
-    sent: "Paldies, {name}. Šī ir izmēģinājuma veidlapa, tāpēc ziņas vēl netiek sūtītas.",
+    sent: "Paldies, {name}! Jāatveras jūsu e-pasta lietotnei ar ziņu: atliek nospiest “Sūtīt”. Ja tā neatveras, rakstiet uz hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Cenas un vērtējumi pārbaudīti 2026. gada oktobrī. Pirms rezervēšanas pārliecinieties restorānā.",
     rateLine: "Cenas {sym} ir aptuvenas, pēc {date} kursa: {sym}1 = {home}{rate}.",

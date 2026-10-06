@@ -104,7 +104,7 @@
     cName: "Tên", cEmail: "Email", cTopic: "Chủ đề", cTopicPrice: "Cập nhật giá", cTopicSuggest: "Gợi ý nhà hàng", cTopicCity: "Thêm thành phố khác", cTopicOther: "Việc khác",
     cMsg: "Tin nhắn", cMsgPh: "Cho chúng tôi biết nhà hàng, giá mới và nơi bạn thấy giá đó.",
     cSend: "Gửi tin nhắn", errName: "Nhập tên của bạn.", errEmail: "Nhập địa chỉ email như ten@example.com.", errMsg: "Viết một tin nhắn ngắn.",
-    sent: "Cảm ơn {name}. Đây là biểu mẫu xem trước nên tin nhắn chưa được gửi đi.",
+    sent: "Cảm ơn {name}. Ứng dụng email của bạn sẽ mở kèm tin nhắn, chỉ cần bấm Gửi. Nếu không mở được, hãy gửi email tới hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Giá và điểm đánh giá được kiểm tra vào tháng 10 năm 2026. Hãy xác nhận với nhà hàng trước khi đặt bàn.",
     rateLine: "Giá bằng {sym} chỉ là ước tính, theo tỷ giá ngày {date}: {sym}1 = {home}{rate}.",

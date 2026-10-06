@@ -785,13 +785,16 @@ $("sort").addEventListener("change", (e) => { state.sort = e.target.value; save(
 $("currencyPick").addEventListener("change", (e) => { state.currency = e.target.value; save(); renderAll(); track("currency", { currency: state.currency }); });
 $("contactForm").addEventListener("submit", (e) => {
   e.preventDefault();
-  const name = $("cName").value.trim(), email = $("cEmail").value.trim(), msg = $("cMsg").value.trim();
+  const name = $("cName").value.trim(), msg = $("cMsg").value.trim(), topic = $("cTopic");
   $("cNameErr").textContent = name ? "" : t("errName");
-  $("cEmailErr").textContent = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? "" : t("errEmail");
   $("cMsgErr").textContent = msg ? "" : t("errMsg");
-  if (!name || $("cEmailErr").textContent || !msg) { $("formStatus").textContent = ""; return; }
+  if (!name || !msg) { $("formStatus").textContent = ""; return; }
+  // No server to send it, so it opens the visitor's own email app with the message filled in.
+  const subject = topic.options[topic.selectedIndex].text + " · The Starred Bill";
+  const body = msg + "\n\n" + name + "\n" + location.origin + location.pathname;
+  location.href = "mailto:hello@starredbill.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   $("formStatus").textContent = t("sent", { name });
-  e.target.reset();
+  track("contact", { topic: topic.value });
 });
 // Keep the header count right when the wishlist changes in another tab.
 window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY || e.key === VISITED_KEY) { state.wishlist = loadWishlist(); state.visited = loadVisited(); render(); } });

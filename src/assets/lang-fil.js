@@ -104,7 +104,7 @@
     cName: "Pangalan", cEmail: "Email", cTopic: "Paksa", cTopicPrice: "Update sa presyo", cTopicSuggest: "Magmungkahi ng restawran", cTopicCity: "Isama ang ibang lungsod", cTopicOther: "Iba pa",
     cMsg: "Mensahe", cMsgPh: "Sabihin ang restawran, ang bagong presyo at kung saan mo ito nakita.",
     cSend: "Ipadala ang mensahe", errName: "Ilagay ang pangalan mo.", errEmail: "Maglagay ng email address gaya ng pangalan@example.com.", errMsg: "Sumulat ng maikling mensahe.",
-    sent: "Salamat, {name}. Preview form ito, kaya hindi pa naipapadala ang mga mensahe.",
+    sent: "Salamat, {name}. Dapat bumukas ang email app mo kasama ang mensahe mo: pindutin lang ang Send. Kung hindi bumukas, mag-email sa hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Sinuri ang mga presyo at rating noong Oktubre 2026. Kumpirmahin sa restawran bago mag-book.",
     rateLine: "Tantiya lamang ang mga presyo sa {sym}, gamit ang palitan noong {date}: {sym}1 = {home}{rate}.",

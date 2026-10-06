@@ -104,7 +104,7 @@
     cName: "Nimi", cEmail: "Sähköposti", cTopic: "Aihe", cTopicPrice: "Hintapäivitys", cTopicSuggest: "Ehdota ravintolaa", cTopicCity: "Lisää toinen kaupunki", cTopicOther: "Jotain muuta",
     cMsg: "Viesti", cMsgPh: "Kerro ravintola, uusi hinta ja missä näit sen.",
     cSend: "Lähetä viesti", errName: "Kirjoita nimesi.", errEmail: "Kirjoita sähköpostiosoite, kuten nimi@example.com.", errMsg: "Kirjoita lyhyt viesti.",
-    sent: "Kiitos, {name}. Tämä on esikatselulomake, joten viestejä ei vielä lähetetä.",
+    sent: "Kiitos, {name}. Sähköpostisovelluksesi pitäisi avautua viestisi kanssa: paina vain Lähetä. Jos se ei avaudu, kirjoita osoitteeseen hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Hinnat ja arviot tarkistettu lokakuussa 2026. Varmista ravintolasta ennen varaamista.",
     rateLine: "Hinnat valuutassa {sym} ovat likimääräisiä, kurssi {date}: {sym}1 = {home}{rate}.",

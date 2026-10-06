@@ -15,6 +15,7 @@ import re
 import unicodedata
 import shutil
 import sys
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -430,6 +431,9 @@ def copy_assets():
 
 
 ICONS = (SRC / "icons.svg").read_text("utf-8").strip()
+# The footer's © years: the year the site started, then to this year.
+FIRST_YEAR = 2026
+COPY_YEAR = str(FIRST_YEAR) if date.today().year <= FIRST_YEAR else "%d–%d" % (FIRST_YEAR, date.today().year)
 
 
 def render(template, values):
@@ -438,7 +442,7 @@ def render(template, values):
     # Link-preview picture: the page's own (src/og/<place id>.png, from scripts/og_images.py) or the homepage's.
     values = dict({"ogImage": SITE_URL + "/og/default.png", "ogAlt": "The Starred Bill: what a Michelin star costs, city by city",
                    "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@type": "WebSite", "name": "The Starred Bill", "url": SITE_URL + "/"}) + "</script>"},
-                  **values, icons=ICONS)
+                  **values, icons=ICONS, copyYear=COPY_YEAR)
     out = re.sub(r"\{\{(\w+)\}\}", lambda m: values[m.group(1)], out)
     return out
 

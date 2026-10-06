@@ -104,7 +104,7 @@
     cName: "Ime", cEmail: "E-pošta", cTopic: "Tema", cTopicPrice: "Posodobitev cene", cTopicSuggest: "Predlagaj restavracijo", cTopicCity: "Dodaj drugo mesto", cTopicOther: "Nekaj drugega",
     cMsg: "Sporočilo", cMsgPh: "Povejte nam restavracijo, novo ceno in kje ste jo videli.",
     cSend: "Pošlji sporočilo", errName: "Vpišite svoje ime.", errEmail: "Vpišite e-poštni naslov, npr. ime@example.com.", errMsg: "Napišite kratko sporočilo.",
-    sent: "Hvala, {name}. To je preizkusni obrazec, zato se sporočila še ne pošiljajo.",
+    sent: "Hvala, {name}. Odpreti bi se morala vaša e-poštna aplikacija s sporočilom: samo pritisnite Pošlji. Če se ne odpre, pišite na hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Cene in ocene preverjene oktobra 2026. Pred rezervacijo jih preverite pri restavraciji.",
     rateLine: "Cene v {sym} so približne, po tečaju z dne {date}: {sym}1 = {home}{rate}.",

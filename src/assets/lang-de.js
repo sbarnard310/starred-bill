@@ -110,7 +110,7 @@
     cName: "Name", cEmail: "E-Mail", cTopic: "Thema", cTopicPrice: "Preisänderung", cTopicSuggest: "Restaurant vorschlagen", cTopicCity: "Weitere Stadt aufnehmen", cTopicOther: "Etwas anderes",
     cMsg: "Nachricht", cMsgPh: "Nenne uns das Restaurant, den neuen Preis und wo du ihn gesehen hast.",
     cSend: "Nachricht senden", errName: "Gib deinen Namen ein.", errEmail: "Gib eine E-Mail-Adresse wie name@example.com ein.", errMsg: "Schreib eine kurze Nachricht.",
-    sent: "Danke, {name}. Dies ist ein Vorschauformular, Nachrichten werden noch nicht verschickt.",
+    sent: "Danke, {name}. Dein E-Mail-Programm sollte sich mit deiner Nachricht öffnen: einfach auf Senden tippen. Falls nicht, schreib an hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Preise und Bewertungen geprüft im Oktober 2026. Frag vor der Buchung beim Restaurant nach.",
     rateLine: "Preise in {sym} sind Näherungswerte zum Kurs vom {date}: {sym}1 = {home}{rate}.",

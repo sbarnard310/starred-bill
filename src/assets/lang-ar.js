@@ -113,7 +113,7 @@
     cName: "الاسم", cEmail: "البريد الإلكتروني", cTopic: "الموضوع", cTopicPrice: "تغيير في السعر", cTopicSuggest: "اقتراح مطعم", cTopicCity: "إضافة مدينة أخرى", cTopicOther: "أمر آخر",
     cMsg: "الرسالة", cMsgPh: "أخبرنا باسم المطعم والسعر الجديد وأين رأيته.",
     cSend: "إرسال الرسالة", errName: "أدخل اسمك.", errEmail: "أدخل بريدًا إلكترونيًا مثل name@example.com.", errMsg: "اكتب رسالة قصيرة.",
-    sent: "شكرًا يا {name}. هذا نموذج تجريبي، ولا تُرسل الرسائل بعد.",
+    sent: "شكرًا يا {name}. سيفتح تطبيق البريد لديك ومعه رسالتك، فما عليك إلا الضغط على إرسال. إن لم يُفتح، راسلنا على hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "رُوجعت الأسعار والتقييمات في أكتوبر 2026. تحقّق من المطعم قبل الحجز.",
     rateLine: "الأسعار بـ{sym} تقريبية بسعر صرف {date}: \u2066{sym}1 = {home}{rate}\u2069.",  // \u2066…\u2069 keep "£1 = QAR 4.82" left to right

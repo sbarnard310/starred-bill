@@ -104,7 +104,7 @@
     cName: "Navn", cEmail: "E-post", cTopic: "Emne", cTopicPrice: "Prisoppdatering", cTopicSuggest: "Foreslå en restaurant", cTopicCity: "Dekk en annen by", cTopicOther: "Noe annet",
     cMsg: "Melding", cMsgPh: "Fortell oss hvilken restaurant, den nye prisen og hvor du så den.",
     cSend: "Send melding", errName: "Skriv inn navnet ditt.", errEmail: "Skriv inn en e-postadresse som navn@example.com.", errMsg: "Skriv en kort melding.",
-    sent: "Takk, {name}. Dette er et testskjema, så meldinger sendes ikke ennå.",
+    sent: "Takk, {name}. E-postappen din skal åpnes med meldingen din: bare trykk Send. Hvis den ikke åpnes, skriv til hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Priser og vurderinger er sjekket i oktober 2026. Sjekk med restauranten før du bestiller.",
     rateLine: "Priser i {sym} er omtrentlige og bruker kursen {date}: {sym}1 = {home}{rate}.",

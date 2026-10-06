@@ -104,7 +104,7 @@
     cName: "Imię", cEmail: "E-mail", cTopic: "Temat", cTopicPrice: "Aktualizacja ceny", cTopicSuggest: "Zaproponuj restaurację", cTopicCity: "Dodaj inne miasto", cTopicOther: "Coś innego",
     cMsg: "Wiadomość", cMsgPh: "Podaj restaurację, nową cenę i gdzie ją widziałeś.",
     cSend: "Wyślij wiadomość", errName: "Wpisz swoje imię.", errEmail: "Wpisz adres e-mail, np. imie@example.com.", errMsg: "Napisz krótką wiadomość.",
-    sent: "Dziękujemy, {name}. To formularz testowy, więc wiadomości nie są jeszcze wysyłane.",
+    sent: "Dziękujemy, {name}. Powinna otworzyć się Twoja aplikacja pocztowa z wiadomością: wystarczy nacisnąć Wyślij. Jeśli się nie otworzy, napisz na hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Ceny i oceny sprawdzone w październiku 2026. Przed rezerwacją potwierdź je w restauracji.",
     rateLine: "Ceny w {sym} są przybliżone, po kursie z {date}: {sym}1 = {home}{rate}.",

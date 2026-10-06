@@ -105,7 +105,7 @@
     cName: "Nama", cEmail: "E-mel", cTopic: "Topik", cTopicPrice: "Kemas kini harga", cTopicSuggest: "Cadangkan restoran", cTopicCity: "Liputi bandar lain", cTopicOther: "Perkara lain",
     cMsg: "Mesej", cMsgPh: "Beritahu kami restoran itu, harga baharu dan di mana anda melihatnya.",
     cSend: "Hantar mesej", errName: "Masukkan nama anda.", errEmail: "Masukkan alamat e-mel seperti nama@example.com.", errMsg: "Tulis mesej ringkas.",
-    sent: "Terima kasih, {name}. Ini borang pratonton, jadi mesej belum dihantar lagi.",
+    sent: "Terima kasih, {name}. Aplikasi e-mel anda sepatutnya dibuka dengan mesej anda: tekan Hantar sahaja. Jika tidak dibuka, e-mel kami di hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Harga dan penilaian disemak pada Oktober 2026. Semak dengan restoran sebelum membuat tempahan.",
     rateLine: "Harga dalam {sym} adalah anggaran, menggunakan kadar pertukaran pada {date}: {sym}1 = {home}{rate}.",

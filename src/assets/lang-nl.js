@@ -109,7 +109,7 @@
     cName: "Naam", cEmail: "E-mail", cTopic: "Onderwerp", cTopicPrice: "Prijswijziging", cTopicSuggest: "Een restaurant voorstellen", cTopicCity: "Een andere stad toevoegen", cTopicOther: "Iets anders",
     cMsg: "Bericht", cMsgPh: "Vertel ons het restaurant, de nieuwe prijs en waar je die zag.",
     cSend: "Bericht versturen", errName: "Vul je naam in.", errEmail: "Vul een e-mailadres in zoals naam@example.com.", errMsg: "Schrijf een kort bericht.",
-    sent: "Bedankt, {name}. Dit is een voorbeeldformulier, dus berichten worden nog niet verstuurd.",
+    sent: "Bedankt, {name}. Je e-mailapp zou nu moeten openen met je bericht: druk gewoon op Verzenden. Gebeurt dat niet, mail dan naar hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Prijzen en scores gecontroleerd in oktober 2026. Vraag het na bij het restaurant voordat je reserveert.",
     rateLine: "Prijzen in {sym} zijn bij benadering, tegen de koers van {date}: {sym}1 = {home}{rate}.",

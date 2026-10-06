@@ -103,7 +103,7 @@
     cName: "Isem", cEmail: "Email", cTopic: "Suġġett", cTopicPrice: "Aġġornament tal-prezz", cTopicSuggest: "Issuġġerixxi ristorant", cTopicCity: "Kopri belt oħra", cTopicOther: "Xi ħaġa oħra",
     cMsg: "Messaġġ", cMsgPh: "Għidilna r-ristorant, il-prezz il-ġdid u fejn rajtu.",
     cSend: "Ibgħat il-messaġġ", errName: "Ikteb ismek.", errEmail: "Ikteb indirizz tal-email bħal isem@example.com.", errMsg: "Ikteb messaġġ qasir.",
-    sent: "Grazzi, {name}. Din hija formola ta' prova, allura l-messaġġi għadhom ma jintbagħtux.",
+    sent: "Grazzi, {name}. L-app tal-email tiegħek għandha tinfetaħ bil-messaġġ tiegħek: agħfas Ibgħat biss. Jekk ma tinfetaħx, ikteb lil hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Il-prezzijiet u l-klassifiki ġew iċċekkjati f'Ottubru 2026. Iċċekkja mar-ristorant qabel tibbukkja.",
     rateLine: "Il-prezzijiet f'{sym} huma approssimattivi, bir-rata tal-{date}: {sym}1 = {home}{rate}.",

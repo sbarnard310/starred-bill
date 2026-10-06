@@ -108,7 +108,7 @@
     cName: "姓名", cEmail: "电子邮件", cTopic: "主题", cTopicPrice: "价格更新", cTopicSuggest: "推荐餐厅", cTopicCity: "介绍其他城市", cTopicOther: "其他",
     cMsg: "留言", cMsgPh: "请告诉我们餐厅名称、最新价格与信息来源。",
     cSend: "发送留言", errName: "请输入姓名。", errEmail: "请输入有效的电子邮件，例如 name@example.com。", errMsg: "请输入简短留言。",
-    sent: "谢谢你，{name}。这是预览表单，留言目前不会发送。",
+    sent: "谢谢你，{name}。你的邮件应用会打开并带上你的留言，点“发送”即可。如果没有打开，请直接发邮件到 hello@starredbill.com。",
     footEdition: "The Starred Bill · {place}",
     footNote: "价格与评分于 2026 年 10 月核实，订位前请向餐厅确认。",
     rateLine: "{sym} 价格按 {date} 汇率换算，仅供参考：{sym}1 = {home}{rate}。",

@@ -104,7 +104,7 @@
     cName: "Jméno", cEmail: "E-mail", cTopic: "Téma", cTopicPrice: "Změna ceny", cTopicSuggest: "Navrhnout restauraci", cTopicCity: "Přidat další město", cTopicOther: "Něco jiného",
     cMsg: "Zpráva", cMsgPh: "Napište nám restauraci, novou cenu a kde jste ji viděli.",
     cSend: "Odeslat zprávu", errName: "Zadejte své jméno.", errEmail: "Zadejte e-mail ve tvaru jmeno@example.com.", errMsg: "Napište krátkou zprávu.",
-    sent: "Děkujeme, {name}. Toto je zkušební formulář, zprávy se zatím neodesílají.",
+    sent: "Děkujeme, {name}. Měla by se otevřít vaše e-mailová aplikace se zprávou: stačí stisknout Odeslat. Pokud se neotevře, napište na hello@starredbill.com.",
     footEdition: "The Starred Bill · {place}",
     footNote: "Ceny a hodnocení ověřeny v říjnu 2026. Před rezervací si je ověřte v restauraci.",
     rateLine: "Ceny v {sym} jsou přibližné, podle kurzu z {date}: {sym}1 = {home}{rate}.",

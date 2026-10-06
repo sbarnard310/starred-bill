@@ -7,9 +7,12 @@
   "cuisine": "Creative",
   "rating": 4.6,
   "reviews": 484,
+  "dinner": 180,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu",
+  "wine": 85,
+  "sourceType": "site",
+  "source": "https://restaurantemessina.com/wp-content/uploads/2026/06/ESP-·-MESINA-JUNIO26-.pdf",
   "website": "https://www.restaurantemessina.com",
   "lat": 36.5084597,
   "lng": -4.8806499,
@@ -21,5 +24,6 @@
     "kosher"
   ],
   "chef": "Mauricio Giovanini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteEs": "Menú degustación"
 }

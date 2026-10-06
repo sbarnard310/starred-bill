@@ -7,9 +7,12 @@
   "cuisine": "Italian Contemporary",
   "rating": 4.8,
   "reviews": 87,
+  "dinner": 195,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu",
+  "wine": 105,
+  "sourceType": "site",
+  "source": "https://www.tyrolhotel.it/assets/uploads/pdf/050626-ht-suinsom-ita.pdf",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteIt": "Solo a cena",
@@ -25,5 +28,6 @@
     "gluten-free"
   ],
   "chef": "Alessandro Martellini",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteIt": "Menu degustazione"
 }

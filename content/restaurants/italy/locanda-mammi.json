@@ -7,11 +7,12 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.5,
   "reviews": 473,
+  "dinner": 75,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Wed–Sun",
-  "lunchNoteIt": "Aperto a pranzo · mer–dom",
+  "dinnerNote": "Tasting menu",
+  "wine": 30,
+  "sourceType": "site",
+  "source": "https://www.locandamammi.it/menu/",
   "website": "https://www.locandamammi.it",
   "lat": 41.8299804,
   "lng": 14.3839118,
@@ -23,5 +24,13 @@
     "gluten-free"
   ],
   "chef": "Stefania Di Pasquo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteIt": "Menu degustazione",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
+  "lunchWine": 30,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.locandamammi.it/menu/"
 }

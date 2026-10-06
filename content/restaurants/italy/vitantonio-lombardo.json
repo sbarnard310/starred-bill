@@ -7,11 +7,12 @@
   "cuisine": "Creative",
   "rating": 4.7,
   "reviews": 612,
+  "dinner": 200,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Thu–Mon",
-  "lunchNoteIt": "Aperto a pranzo · gio–lun",
+  "dinnerNote": "Tasting menu",
+  "wine": 100,
+  "sourceType": "site",
+  "source": "https://www.vlristorante.it/en/menu-2/",
   "website": "https://www.vlristorante.it/",
   "lat": 40.6673722,
   "lng": 16.6129579,
@@ -23,5 +24,13 @@
     "gluten-free"
   ],
   "chef": "Vitantonio Lombardo",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteIt": "Menu degustazione",
+  "lunch": 200,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Thu–Mon",
+  "lunchNoteIt": "Stesso menu a pranzo · gio–lun",
+  "lunchWine": 100,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.vlristorante.it/en/menu-2/"
 }

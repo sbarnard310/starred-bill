@@ -7,11 +7,12 @@
   "cuisine": "Creative",
   "rating": 4.8,
   "reviews": 220,
+  "dinner": 110,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Fri–Sun",
-  "lunchNoteIt": "Aperto a pranzo · ven–dom",
+  "dinnerNote": "Tasting menu",
+  "wine": 60,
+  "sourceType": "site",
+  "source": "https://www.adagourmet.it/menu/Storytelling.pdf",
   "website": "https://adagourmet.it/",
   "lat": 43.1085426,
   "lng": 12.390168,
@@ -21,5 +22,13 @@
     "vegetarian"
   ],
   "chef": "Ada Stifani",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteIt": "Menu degustazione",
+  "lunch": 110,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sun",
+  "lunchNoteIt": "Stesso menu a pranzo · ven–dom",
+  "lunchWine": 60,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.adagourmet.it/menu/Storytelling.pdf"
 }

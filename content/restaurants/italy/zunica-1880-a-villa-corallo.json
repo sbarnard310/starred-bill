@@ -7,9 +7,12 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.5,
   "reviews": 35,
+  "dinner": 115,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu",
+  "wine": 45,
+  "sourceType": "site",
+  "source": "https://villacorallo.it/site/wp-content/uploads/2026/07/MENU.pdf",
   "website": "https://villacorallo.it/site/ristorante-zunica-1880-villa-corallo",
   "lat": 42.797304,
   "lng": 13.779888,
@@ -19,5 +22,6 @@
     "gluten-free"
   ],
   "chef": "Gianni Dezio",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteIt": "Menu degustazione"
 }

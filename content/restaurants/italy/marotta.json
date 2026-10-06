@@ -7,11 +7,12 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.9,
   "reviews": 128,
+  "dinner": 135,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Wed–Sun",
-  "lunchNoteIt": "Aperto a pranzo · mer–dom",
+  "dinnerNote": "Tasting menu",
+  "wine": 90,
+  "sourceType": "site",
+  "source": "https://marottaristorante.com/wp-content/uploads/2026/09/Menu-Marotta-Carta-Botanika-Summer-September-2026-ENG-P.pdf",
   "website": "https://www.marottaristorante.com",
   "lat": 41.146241,
   "lng": 14.4096379,
@@ -23,5 +24,13 @@
     "gluten-free"
   ],
   "chef": "Domenico Marotta",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteIt": "Menu degustazione",
+  "lunch": 135,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
+  "lunchWine": 90,
+  "lunchSourceType": "site",
+  "lunchSource": "https://marottaristorante.com/wp-content/uploads/2026/09/Menu-Marotta-Carta-Botanika-Summer-September-2026-ENG-P.pdf"
 }

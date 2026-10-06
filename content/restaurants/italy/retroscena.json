@@ -7,11 +7,12 @@
   "cuisine": "Creative",
   "rating": 4.8,
   "reviews": 451,
+  "dinner": 160,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteIt": "Aperto a pranzo · sab–dom",
+  "dinnerNote": "Tasting menu",
+  "wine": 80,
+  "sourceType": "site",
+  "source": "https://retroscena-ristorante.com/menu/",
   "website": "https://retroscena-ristorante.com/",
   "lat": 43.1799835,
   "lng": 13.7928865,
@@ -23,5 +24,13 @@
     "kosher"
   ],
   "chef": "Richard Abou Zaki",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNoteIt": "Menu degustazione",
+  "lunch": 160,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Sun",
+  "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
+  "lunchWine": 80,
+  "lunchSourceType": "site",
+  "lunchSource": "https://retroscena-ristorante.com/menu/"
 }

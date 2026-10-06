@@ -46,7 +46,7 @@
     all: "الكل", starsAria: "{n} نجمة ميشلان|{n} نجوم ميشلان",
     hRestaurant: "المطعم", hCuisine: "المطبخ", hStars: "النجوم", hGoogle: "Google", hNotes: "عن العشاء", hPrice: "السعر", hWine: "مرافقة النبيذ", hWish: "المفضلة",
     tableLabel: "أسعار المطاعم",
-    reviews: "{n} مراجعة", ratingAria: "تقييم Google {r} من 5",
+    reviews: "{n} مراجعة", ratingAria: "تقييم Google {r} من 5", noRating: "لا يوجد تقييم",
     srcSite: "موقع المطعم", srcPress: "المصدر", srcTitle: "مصدر هذا السعر",
     perMain: "للطبق الرئيسي", typicalSpend: "فاتورة نموذجية", notListed: "غير مُعلن",
     // The till receipt on destination pages.

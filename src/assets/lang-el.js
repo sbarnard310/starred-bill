@@ -37,7 +37,7 @@
     all: "Όλα", starsAria: "{n} αστέρι Michelin|{n} αστέρια Michelin",
     hRestaurant: "Εστιατόριο", hCuisine: "Κουζίνα", hStars: "Αστέρια", hGoogle: "Google", hNotes: "Για το δείπνο", hPrice: "Τιμή", hWine: "Συνοδεία κρασιών", hWish: "Λίστα επιθυμιών",
     tableLabel: "Τιμές εστιατορίων",
-    reviews: "{n} κριτικές", ratingAria: "Βαθμολογία Google {r} στα 5",
+    reviews: "{n} κριτικές", ratingAria: "Βαθμολογία Google {r} στα 5", noRating: "Χωρίς βαθμολογία",
     srcSite: "Ιστότοπος εστιατορίου", srcPress: "Πηγή", srcTitle: "Από πού προέρχεται η τιμή",
     perMain: "ανά κυρίως πιάτο", typicalSpend: "συνήθης λογαριασμός", notListed: "Δεν αναφέρεται",
     // The till receipt on destination pages.

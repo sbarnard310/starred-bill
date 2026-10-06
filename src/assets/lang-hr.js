@@ -37,7 +37,7 @@
     all: "Sve", starsAria: "Michelinove zvjezdice: {n}",
     hRestaurant: "Restoran", hCuisine: "Kuhinja", hStars: "Zvjezdice", hGoogle: "Google", hNotes: "O večeri", hPrice: "Cijena", hWine: "Vinska pratnja", hWish: "Popis želja",
     tableLabel: "Cijene restorana",
-    reviews: "Recenzije: {n}", ratingAria: "Ocjena na Googleu {r} od 5",
+    reviews: "Recenzije: {n}", ratingAria: "Ocjena na Googleu {r} od 5", noRating: "Bez ocjene",
     srcSite: "Mrežna stranica restorana", srcPress: "Izvor", srcTitle: "Odakle je ova cijena",
     perMain: "po glavnom jelu", typicalSpend: "uobičajeni račun", notListed: "Nije navedeno",
     // The till receipt on destination pages.

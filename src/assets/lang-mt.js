@@ -36,7 +36,7 @@
     all: "Kollha", starsAria: "{n} stilla Michelin|{n} stilel Michelin",
     hRestaurant: "Ristorant", hCuisine: "Kċina", hStars: "Stilel", hGoogle: "Google", hNotes: "Dwar il-pranzu", hPrice: "Prezz", hWine: "Inbid magħżul", hWish: "Lista tax-xewqat",
     tableLabel: "Prezzijiet tar-ristoranti",
-    reviews: "{n} reviżjonijiet", ratingAria: "Klassifika Google {r} minn 5",
+    reviews: "{n} reviżjonijiet", ratingAria: "Klassifika Google {r} minn 5", noRating: "Ebda klassifika",
     srcSite: "Is-sit tar-ristorant", srcPress: "Sors", srcTitle: "Minn fejn ġej dan il-prezz",
     perMain: "għal kull platt prinċipali", typicalSpend: "kont tipiku", notListed: "Mhux imniżżel",
     // The till receipt on destination pages.

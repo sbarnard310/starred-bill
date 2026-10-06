@@ -34,7 +34,7 @@
     all: "Visi", starsAria: "„Michelin“ žvaigždutės: {n}",
     hRestaurant: "Restoranas", hCuisine: "Virtuvė", hStars: "Žvaigždutės", hGoogle: "Google", hNotes: "Apie vakarienę", hPrice: "Kaina", hWine: "Vynų deriniai", hWish: "Norų sąrašas",
     tableLabel: "Restoranų kainos",
-    reviews: "Atsiliepimai: {n}", ratingAria: "„Google“ įvertinimas {r} iš 5",
+    reviews: "Atsiliepimai: {n}", ratingAria: "„Google“ įvertinimas {r} iš 5", noRating: "Nėra įvertinimo",
     srcSite: "Restorano svetainė", srcPress: "Šaltinis", srcTitle: "Iš kur ši kaina",
     perMain: "už pagrindinį patiekalą", typicalSpend: "įprasta sąskaita", notListed: "Nenurodyta",
     // The till receipt on destination pages.

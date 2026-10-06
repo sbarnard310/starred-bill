@@ -37,7 +37,7 @@
     all: "Kaikki", starsAria: "{n} Michelin-tähti|{n} Michelin-tähteä",
     hRestaurant: "Ravintola", hCuisine: "Keittiö", hStars: "Tähdet", hGoogle: "Google", hNotes: "Illallisesta", hPrice: "Hinta", hWine: "Viinipaketti", hWish: "Toivelista",
     tableLabel: "Ravintoloiden hinnat",
-    reviews: "{n} arvostelua", ratingAria: "Google-arvio {r}/5",
+    reviews: "{n} arvostelua", ratingAria: "Google-arvio {r}/5", noRating: "Ei arviota",
     srcSite: "Ravintolan verkkosivut", srcPress: "Lähde", srcTitle: "Mistä hinta on peräisin",
     perMain: "pääruoka", typicalSpend: "tyypillinen lasku", notListed: "Ei ilmoitettu",
     // The till receipt on destination pages.

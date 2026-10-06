@@ -37,7 +37,7 @@
     all: "Lahat", starsAria: "{n} Michelin star",
     hRestaurant: "Restawran", hCuisine: "Lutuin", hStars: "Bituin", hGoogle: "Google", hNotes: "Tungkol sa hapunan", hPrice: "Presyo", hWine: "Wine pairing", hWish: "Wishlist",
     tableLabel: "Mga presyo ng restawran",
-    reviews: "{n} review", ratingAria: "Rating sa Google na {r} sa 5",
+    reviews: "{n} review", ratingAria: "Rating sa Google na {r} sa 5", noRating: "Walang rating",
     srcSite: "Website ng restawran", srcPress: "Pinagmulan", srcTitle: "Saan galing ang presyong ito",
     perMain: "bawat main", typicalSpend: "karaniwang gastos", notListed: "Hindi nakalista",
     // The till receipt on destination pages.

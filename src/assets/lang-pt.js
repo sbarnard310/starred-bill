@@ -40,7 +40,7 @@
     all: "Todas", starsAria: "{n} estrela Michelin|{n} estrelas Michelin",
     hRestaurant: "Restaurante", hCuisine: "Cozinha", hStars: "Estrelas", hGoogle: "Google", hNotes: "Sobre o jantar", hPrice: "Preço", hWine: "Vinhos", hWish: "Favoritos",
     tableLabel: "Preços dos restaurantes",
-    reviews: "{n} avaliações", ratingAria: "Avaliação Google {r} em 5",
+    reviews: "{n} avaliações", ratingAria: "Avaliação Google {r} em 5", noRating: "Sem avaliação",
     srcSite: "Site do restaurante", srcPress: "Fonte", srcTitle: "De onde vem este preço",
     perMain: "por prato principal", typicalSpend: "gasto típico", notListed: "Não indicado",
     // The till receipt on destination pages.

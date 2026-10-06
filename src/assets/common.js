@@ -61,7 +61,7 @@ const I18N = {
     all: "All", starsAria: "{n} Michelin star|{n} Michelin stars",
     hRestaurant: "Restaurant", hCuisine: "Cuisine", hStars: "Stars", hGoogle: "Google", hNotes: "Dinner notes", hPrice: "Price", hWine: "Wine pairing", hWish: "Wishlist",
     tableLabel: "Restaurant prices",
-    reviews: "{n} reviews", ratingAria: "Google rating {r} out of 5",
+    reviews: "{n} reviews", ratingAria: "Google rating {r} out of 5", noRating: "No rating",
     srcSite: "Restaurant website", srcPress: "Review source", srcTitle: "Where this price came from",
     perMain: "per main", typicalSpend: "typical spend", notListed: "Not listed",
     // The till receipt on destination pages.
@@ -208,7 +208,7 @@ const I18N = {
     all: "全部", starsAria: "米其林 {n} 星",
     hRestaurant: "餐廳", hCuisine: "料理", hStars: "星級", hGoogle: "Google", hNotes: "晚餐說明", hPrice: "價格", hWine: "餐酒搭配", hWish: "願望清單",
     tableLabel: "餐廳價格",
-    reviews: "{n} 則評論", ratingAria: "Google 評分 {r}（滿分 5）",
+    reviews: "{n} 則評論", ratingAria: "Google 評分 {r}（滿分 5）", noRating: "尚無評分",
     srcSite: "餐廳官網", srcPress: "評論來源", srcTitle: "價格資料來源",
     perMain: "每道主菜", typicalSpend: "人均消費", notListed: "未公布",
     // The till receipt on destination pages.
@@ -353,7 +353,7 @@ const I18N = {
     all: "Tous", starsAria: "{n} étoile Michelin|{n} étoiles Michelin",
     hRestaurant: "Restaurant", hCuisine: "Cuisine", hStars: "Étoiles", hGoogle: "Google", hNotes: "Dîner", hPrice: "Prix", hWine: "Accord mets-vins", hWish: "Envies",
     tableLabel: "Prix des restaurants",
-    reviews: "{n} avis", ratingAria: "Note Google : {r} sur 5",
+    reviews: "{n} avis", ratingAria: "Note Google : {r} sur 5", noRating: "Pas de note",
     srcSite: "Site du restaurant", srcPress: "Source", srcTitle: "D'où vient ce prix",
     perMain: "par plat", typicalSpend: "dépense moyenne", notListed: "Non communiqué",
     // The till receipt on destination pages.
@@ -479,7 +479,7 @@ const I18N = {
     all: "全部", starsAria: "米芝蓮 {n} 星",
     hRestaurant: "餐廳", hCuisine: "菜式", hStars: "星級", hGoogle: "Google", hNotes: "晚市備註", hPrice: "價錢", hWine: "配酒", hWish: "心水清單",
     tableLabel: "餐廳價錢",
-    reviews: "{n} 個評論", ratingAria: "Google 評分 {r}（滿分 5）",
+    reviews: "{n} 個評論", ratingAria: "Google 評分 {r}（滿分 5）", noRating: "未有評分",
     srcSite: "餐廳官網", srcPress: "資料來源", srcTitle: "價錢嘅來源",
     perMain: "每道主菜", typicalSpend: "人均消費", notListed: "未有公布",
     // The till receipt on destination pages.
@@ -606,7 +606,7 @@ const I18N = {
     all: "すべて", starsAria: "ミシュラン{n}つ星",
     hRestaurant: "レストラン", hCuisine: "料理", hStars: "星", hGoogle: "Google", hNotes: "ディナーの備考", hPrice: "料金", hWine: "ペアリング", hWish: "お気に入り",
     tableLabel: "レストランの料金",
-    reviews: "{n}件", ratingAria: "Google評価 5点中{r}",
+    reviews: "{n}件", ratingAria: "Google評価 5点中{r}", noRating: "評価なし",
     srcSite: "公式サイト", srcPress: "情報源", srcTitle: "この料金の情報源",
     perMain: "1品あたり", typicalSpend: "予算の目安", notListed: "非公開",
     // The till receipt on destination pages.
@@ -752,7 +752,7 @@ const I18N = {
     all: "Todas", starsAria: "{n} estrella Michelin|{n} estrellas Michelin",
     hRestaurant: "Restaurante", hCuisine: "Cocina", hStars: "Estrellas", hGoogle: "Google", hNotes: "Notas de la cena", hPrice: "Precio", hWine: "Maridaje", hWish: "Favoritos",
     tableLabel: "Precios de los restaurantes",
-    reviews: "{n} reseña|{n} reseñas", ratingAria: "Nota de Google: {r} sobre 5",
+    reviews: "{n} reseña|{n} reseñas", ratingAria: "Nota de Google: {r} sobre 5", noRating: "Sin valoración",
     srcSite: "Web del restaurante", srcPress: "Fuente: reseña", srcTitle: "De dónde sale este precio",
     perMain: "por plato principal", typicalSpend: "gasto habitual", notListed: "No publicado",
     // The till receipt on destination pages.
@@ -874,7 +874,7 @@ const I18N = {
     all: "Alle", starsAria: "{n} Michelinstjerne|{n} Michelinstjerner",
     hRestaurant: "Restaurant", hCuisine: "Køkken", hStars: "Stjerner", hGoogle: "Google", hNotes: "Om middagen", hPrice: "Pris", hWine: "Vinmenu", hWish: "Ønskeliste",
     tableLabel: "Restaurantpriser",
-    reviews: "{n} anmeldelser", ratingAria: "Google-bedømmelse {r} ud af 5",
+    reviews: "{n} anmeldelser", ratingAria: "Google-bedømmelse {r} ud af 5", noRating: "Ingen bedømmelse",
     srcSite: "Restaurantens hjemmeside", srcPress: "Kilde", srcTitle: "Hvor prisen kommer fra",
     perMain: "pr. hovedret", typicalSpend: "typisk forbrug", notListed: "Ikke oplyst",
     // The till receipt on destination pages.
@@ -980,7 +980,7 @@ const I18N = {
     all: "Alla", starsAria: "{n} Michelinstjärna|{n} Michelinstjärnor",
     hRestaurant: "Restaurang", hCuisine: "Kök", hStars: "Stjärnor", hGoogle: "Google", hNotes: "Om middagen", hPrice: "Pris", hWine: "Vinpaket", hWish: "Önskelista",
     tableLabel: "Restaurangpriser",
-    reviews: "{n} recensioner", ratingAria: "Google-betyg {r} av 5",
+    reviews: "{n} recensioner", ratingAria: "Google-betyg {r} av 5", noRating: "Inget betyg",
     srcSite: "Restaurangens webbplats", srcPress: "Källa", srcTitle: "Var priset kommer ifrån",
     perMain: "per huvudrätt", typicalSpend: "typisk nota", notListed: "Inte angivet",
     // The till receipt on destination pages.
@@ -1086,7 +1086,7 @@ const I18N = {
     all: "Allt", starsAria: "{n} Michelin-stjarna|{n} Michelin-stjörnur",
     hRestaurant: "Staður", hCuisine: "Matargerð", hStars: "Stjörnur", hGoogle: "Google", hNotes: "Um kvöldverðinn", hPrice: "Verð", hWine: "Vínpörun", hWish: "Óskalisti",
     tableLabel: "Verð veitingastaða",
-    reviews: "{n} umsagnir", ratingAria: "Google-einkunn {r} af 5",
+    reviews: "{n} umsagnir", ratingAria: "Google-einkunn {r} af 5", noRating: "Engin einkunn",
     srcSite: "Vefsíða staðarins", srcPress: "Heimild", srcTitle: "Hvaðan verðið kemur",
     perMain: "á aðalrétt", typicalSpend: "venjuleg eyðsla", notListed: "Ekki gefið upp",
     // The till receipt on destination pages.
@@ -1192,7 +1192,7 @@ const I18N = {
     all: "Tots", starsAria: "{n} estrella Michelin|{n} estrelles Michelin",
     hRestaurant: "Restaurant", hCuisine: "Cuina", hStars: "Estrelles", hGoogle: "Google", hNotes: "Notes del sopar", hPrice: "Preu", hWine: "Maridatge", hWish: "Preferits",
     tableLabel: "Preus dels restaurants",
-    reviews: "{n} ressenyes", ratingAria: "Nota de Google {r} de 5",
+    reviews: "{n} ressenyes", ratingAria: "Nota de Google {r} de 5", noRating: "Sense valoració",
     srcSite: "Web del restaurant", srcPress: "Font", srcTitle: "D'on surt aquest preu",
     perMain: "per plat principal", typicalSpend: "despesa habitual", notListed: "No publicat",
     // The till receipt on destination pages.
@@ -1298,7 +1298,7 @@ const I18N = {
     all: "ทั้งหมด", starsAria: "มิชลิน {n} ดาว",
     hRestaurant: "ร้านอาหาร", hCuisine: "ประเภทอาหาร", hStars: "ดาว", hGoogle: "Google", hNotes: "หมายเหตุมื้อค่ำ", hPrice: "ราคา", hWine: "ไวน์จับคู่", hWish: "รายการโปรด",
     tableLabel: "ราคาร้านอาหาร",
-    reviews: "{n} รีวิว", ratingAria: "คะแนน Google {r} จาก 5",
+    reviews: "{n} รีวิว", ratingAria: "คะแนน Google {r} จาก 5", noRating: "ยังไม่มีคะแนน",
     srcSite: "เว็บไซต์ร้าน", srcPress: "แหล่งที่มา", srcTitle: "ราคานี้มาจากที่ใด",
     perMain: "ต่อจานหลัก", typicalSpend: "ค่าใช้จ่ายโดยทั่วไป", notListed: "ไม่ได้ระบุ",
     // The till receipt on destination pages.
@@ -1412,7 +1412,7 @@ const I18N = {
     all: "전체", starsAria: "미쉐린 {n}스타",
     hRestaurant: "레스토랑", hCuisine: "요리", hStars: "스타", hGoogle: "Google", hNotes: "디너 메모", hPrice: "가격", hWine: "와인 페어링", hWish: "위시리스트",
     tableLabel: "레스토랑 가격",
-    reviews: "리뷰 {n}개", ratingAria: "Google 평점 5점 만점에 {r}점",
+    reviews: "리뷰 {n}개", ratingAria: "Google 평점 5점 만점에 {r}점", noRating: "평점 없음",
     srcSite: "공식 사이트", srcPress: "출처", srcTitle: "이 가격의 출처",
     perMain: "요리당", typicalSpend: "평균 예산", notListed: "비공개",
     // The till receipt on destination pages.
@@ -1558,7 +1558,7 @@ const I18N = {
     all: "Tutte", starsAria: "{n} stella Michelin|{n} stelle Michelin",
     hRestaurant: "Ristorante", hCuisine: "Cucina", hStars: "Stelle", hGoogle: "Google", hNotes: "Note sulla cena", hPrice: "Prezzo", hWine: "Abbinamento vini", hWish: "Preferiti",
     tableLabel: "Prezzi dei ristoranti",
-    reviews: "{n} recensione|{n} recensioni", ratingAria: "Voto Google {r} su 5",
+    reviews: "{n} recensione|{n} recensioni", ratingAria: "Voto Google {r} su 5", noRating: "Nessun voto",
     srcSite: "Sito del ristorante", srcPress: "Fonte: recensione", srcTitle: "Da dove viene questo prezzo",
     perMain: "per piatto principale", typicalSpend: "spesa tipica", notListed: "Non pubblicato",
     // The till receipt on destination pages.

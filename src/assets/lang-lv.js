@@ -34,7 +34,7 @@
     all: "Visi", starsAria: "Michelin zvaigznes: {n}",
     hRestaurant: "Restorāns", hCuisine: "Virtuve", hStars: "Zvaigznes", hGoogle: "Google", hNotes: "Par vakariņām", hPrice: "Cena", hWine: "Vīnu pāri", hWish: "Vēlmju saraksts",
     tableLabel: "Restorānu cenas",
-    reviews: "Atsauksmes: {n}", ratingAria: "Google vērtējums {r} no 5",
+    reviews: "Atsauksmes: {n}", ratingAria: "Google vērtējums {r} no 5", noRating: "Nav vērtējuma",
     srcSite: "Restorāna vietne", srcPress: "Avots", srcTitle: "No kurienes ir šī cena",
     perMain: "par pamatēdienu", typicalSpend: "parastais rēķins", notListed: "Nav norādīts",
     // The till receipt on destination pages.

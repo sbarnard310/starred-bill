@@ -38,7 +38,7 @@
     all: "Tümü", starsAria: "{n} Michelin yıldızı",
     hRestaurant: "Restoran", hCuisine: "Mutfak", hStars: "Yıldız", hGoogle: "Google", hNotes: "Akşam yemeği notu", hPrice: "Fiyat", hWine: "Şarap eşleştirme", hWish: "İstek listesi",
     tableLabel: "Restoran fiyatları",
-    reviews: "{n} yorum", ratingAria: "Google puanı 5 üzerinden {r}",
+    reviews: "{n} yorum", ratingAria: "Google puanı 5 üzerinden {r}", noRating: "Puan yok",
     srcSite: "Restoranın web sitesi", srcPress: "Kaynak", srcTitle: "Bu fiyatın kaynağı",
     perMain: "ana yemek başı", typicalSpend: "ortalama hesap", notListed: "Belirtilmemiş",
     // The till receipt on destination pages.

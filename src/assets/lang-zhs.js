@@ -41,7 +41,7 @@
     all: "全部", starsAria: "米其林 {n} 星",
     hRestaurant: "餐厅", hCuisine: "菜系", hStars: "星级", hGoogle: "Google", hNotes: "晚餐说明", hPrice: "价格", hWine: "配酒", hWish: "心愿单",
     tableLabel: "餐厅价格",
-    reviews: "{n} 条评价", ratingAria: "Google 评分 {r}（满分 5）",
+    reviews: "{n} 条评价", ratingAria: "Google 评分 {r}（满分 5）", noRating: "暂无评分",
     srcSite: "餐厅官网", srcPress: "来源", srcTitle: "价格来源",
     perMain: "每道主菜", typicalSpend: "人均消费", notListed: "未公布",
     // The till receipt on destination pages.

@@ -108,7 +108,8 @@ shareText = () => t("shareTextPlace");
 // ---------- Static text, breadcrumbs and switches ----------
 function applyStatic() {
   applyI18n();
-  document.title = t("pageTitle");
+  // The build writes the title in each of the page's languages (page_titles() in build.py), with search words in it.
+  document.title = (PAGE.titles && PAGE.titles[LANG]) || t("pageTitle");
   if (L()) {
     document.querySelector('[data-i18n="figMin"]').innerHTML = t("figMinLunch");
     document.querySelector('[data-i18n="figMax"]').innerHTML = t("figMaxLunch");

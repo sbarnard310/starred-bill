@@ -271,6 +271,9 @@ def members(p):
 
 
 starred_n = {pid: sum(1 for r in members(p) if not r.get("status")) for pid, p in places.items()}
+same_name = {}  # how many places share each name (page_titles tells them apart)
+for _p in places.values():
+    same_name[_p["name"]] = same_name.get(_p["name"], 0) + 1
 # Every place gets a page; one without starred restaurants says so and waits for its first star.
 pages = list(places.values())
 
@@ -457,6 +460,7 @@ def build_place(p):
             page[field + suffix] = inherited(p, field + suffix) or ""
     data = {"page": page, "languages": inherited(p, "languages") or DEFAULT_LANGUAGES, "restaurants": [public(r) for r in rs], "currencies": CURRENCIES,
             "switchable": currency_data.get("switchable", []), "rateDate": currency_data.get("rateDate")}
+    titles = page["titles"] = page_titles(p, page, data["languages"], starred)
 
     stars = [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)]
     menus = sorted((r for r in starred if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
@@ -478,7 +482,7 @@ def build_place(p):
         lang_scripts += f'<link rel="stylesheet" href="/assets/rtl.css?v={assets["rtl.css"]}">\n'
     write(p["path"], render("place.html", {
         "langScripts": lang_scripts,
-        "title": e(f"The Starred Bill · {p['name']}"), "description": e(description), "canonical": SITE_URL + p["path"],
+        "title": e(titles["en"]), "description": e(description), "canonical": SITE_URL + p["path"],
         "eyebrow": e(f"{p['name']} · Michelin Guide restaurants"),
         "h1": f"What a Michelin star <em>costs</em> in {e(where)}.",
         "heroText": e((f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {where}, side by side." + (" " + intro if intro else ""))
@@ -513,6 +517,126 @@ def place_description(where, starred, stars, menus):
         f"Menu prices at {places}.",
     ]
     return next((o for o in options if len(o) <= 155), options[-1])
+
+
+# Destination page titles (the blue link in Google), per language: page_titles() tries the fullest wording first and
+# drops to shorter ones until it fits TITLE_MAX. {in} is the place as it reads mid-sentence ("à Paris", "Helsingissä"),
+# {name} its plain name, {n} the number of starred restaurants. Keys: head / headOne (one restaurant), short (a shorter head),
+# then what follows the colon: all (every one has a price; allOne when there's just one), some (some priced), none (none priced),
+# empty (no stars yet), prices (the short fallback). sep and year default to ": " and " ({y})".
+TITLE_MAX = 61
+TITLE_WORDS = {
+    "en": {"head": "Michelin Star Restaurants in {in}", "headOne": "Michelin Star Restaurant in {in}", "short": "{name} Michelin Star Restaurants",
+           "all": "Prices for All {n}", "allOne": "Menu Prices", "some": "All {n}, With Prices", "none": "All {n}", "empty": "None Yet", "prices": "Prices"},
+    "zh": {"head": "{name}米其林星級餐廳", "all": "全部{n}家價格", "allOne": "價格", "some": "全{n}家與價格", "none": "全{n}家", "empty": "尚無",
+           "prices": "價格", "sep": "：", "year": "（{y}）"},
+    "yue": {"head": "{name}米芝蓮星級餐廳", "all": "全部{n}間價錢", "allOne": "價錢", "some": "全{n}間連價錢", "none": "全{n}間", "empty": "暫時未有",
+            "prices": "價錢", "sep": "：", "year": "（{y}）"},
+    "zhs": {"head": "{name}米其林星级餐厅", "all": "全部{n}家价格", "allOne": "价格", "some": "全{n}家及价格", "none": "全{n}家", "empty": "暂无",
+            "prices": "价格", "sep": "：", "year": "（{y}）"},
+    "ja": {"head": "{name}のミシュラン星付きレストラン", "short": "{name}のミシュラン店", "all": "全{n}軒の料金", "allOne": "料金", "some": "全{n}軒と料金",
+           "none": "全{n}軒", "empty": "まだなし", "prices": "料金", "sep": "：", "year": "（{y}年）"},
+    "ko": {"head": "{name} 미쉐린 스타 레스토랑", "short": "{name} 미쉐린 레스토랑", "all": "{n}곳 전체 가격", "allOne": "가격", "some": "전체 {n}곳과 가격",
+           "none": "전체 {n}곳", "empty": "아직 없음", "prices": "가격"},
+    "fr": {"head": "Restaurants étoilés Michelin {in}", "headOne": "Restaurant étoilé Michelin {in}", "short": "Restaurants étoilés {in}",
+           "all": "les prix des {n}", "allOne": "prix des menus", "some": "les {n}, avec leurs prix", "none": "les {n}", "empty": "aucun pour l'instant",
+           "prices": "les prix", "sep": " : "},
+    "es": {"head": "Restaurantes con estrella Michelin {in}", "headOne": "Restaurante con estrella Michelin {in}", "short": "Restaurantes Michelin {in}",
+           "all": "precios de los {n}", "allOne": "precios", "some": "los {n}, con precios", "none": "los {n}", "empty": "aún ninguno", "prices": "precios"},
+    "it": {"head": "Ristoranti stellati Michelin {in}", "headOne": "Ristorante stellato Michelin {in}", "short": "Ristoranti stellati {in}",
+           "all": "prezzi di tutti i {n}", "allOne": "prezzi", "some": "tutti i {n}, con prezzi", "none": "tutti i {n}", "empty": "ancora nessuno", "prices": "prezzi"},
+    "ca": {"head": "Restaurants amb estrella Michelin {in}", "headOne": "Restaurant amb estrella Michelin {in}", "short": "Restaurants amb estrella {in}",
+           "all": "preus dels {n}", "allOne": "preus", "some": "els {n}, amb preus", "none": "els {n}", "empty": "encara cap", "prices": "preus"},
+    "da": {"head": "Michelinrestauranter {in}", "headOne": "Michelinrestaurant {in}", "all": "priser på alle {n}", "allOne": "priser",
+           "some": "alle {n} med priser", "none": "alle {n}", "empty": "ingen endnu", "prices": "priser"},
+    "sv": {"head": "Michelinrestauranger {in}", "headOne": "Michelinrestaurang {in}", "all": "priser för alla {n}", "allOne": "priser",
+           "some": "alla {n} med priser", "none": "alla {n}", "empty": "inga än", "prices": "priser"},
+    "is": {"head": "Michelin-veitingastaðir {in}", "headOne": "Michelin-veitingastaður {in}", "all": "verð á öllum {n}", "allOne": "verð",
+           "some": "allir {n} með verði", "none": "allir {n}", "empty": "enginn enn", "prices": "verð"},
+    "nb": {"head": "Michelin-restauranter {in}", "headOne": "Michelin-restaurant {in}", "all": "priser for alle {n}", "allOne": "priser",
+           "some": "alle {n} med priser", "none": "alle {n}", "empty": "ingen ennå", "prices": "priser"},
+    "th": {"head": "ร้านอาหารมิชลินสตาร์{in}", "all": "ราคาทั้ง {n} ร้าน", "allOne": "ราคา", "some": "ทั้ง {n} ร้าน พร้อมราคา", "none": "ทั้ง {n} ร้าน",
+           "empty": "ยังไม่มี", "prices": "ราคา"},
+    "de": {"head": "Michelin-Sternerestaurants {in}", "headOne": "Michelin-Sternerestaurant {in}", "short": "Sternerestaurants {in}",
+           "all": "Preise aller {n}", "allOne": "Preise", "some": "alle {n} mit Preisen", "none": "alle {n}", "empty": "noch keine", "prices": "Preise"},
+    "nl": {"head": "Michelin-sterrenrestaurants {in}", "headOne": "Michelin-sterrenrestaurant {in}", "short": "Sterrenrestaurants {in}",
+           "all": "prijzen van alle {n}", "allOne": "prijzen", "some": "alle {n} met prijzen", "none": "alle {n}", "empty": "nog geen", "prices": "prijzen"},
+    "pt": {"head": "Restaurantes com estrela Michelin {in}", "headOne": "Restaurante com estrela Michelin {in}", "short": "Restaurantes Michelin {in}",
+           "all": "preços dos {n}", "allOne": "preços", "some": "os {n}, com preços", "none": "os {n}", "empty": "ainda nenhum", "prices": "preços"},
+    "fi": {"head": "Michelin-tähtiravintolat {in}", "headOne": "Michelin-tähtiravintola {in}", "short": "Tähtiravintolat {in}",
+           "all": "kaikkien {n} hinnat", "allOne": "hinnat", "some": "kaikki {n} ja hinnat", "none": "kaikki {n}", "empty": "ei vielä yhtään", "prices": "hinnat"},
+    "pl": {"head": "Restauracje z gwiazdką Michelin {in}", "headOne": "Restauracja z gwiazdką Michelin {in}", "short": "Restauracje z gwiazdką {in}",
+           "all": "ceny wszystkich {n}", "allOne": "ceny", "some": "wszystkie {n} z cenami", "none": "wszystkie {n}", "empty": "jeszcze brak", "prices": "ceny"},
+    "cs": {"head": "Restaurace s michelinskou hvězdou {in}", "short": "Michelinské restaurace {in}",
+           "all": "ceny všech {n}", "allOne": "ceny", "some": "všech {n} a ceny", "none": "všech {n}", "empty": "zatím žádné", "prices": "ceny"},
+    "hu": {"head": "Michelin-csillagos éttermek {in}", "headOne": "Michelin-csillagos étterem {in}", "short": "Csillagos éttermek {in}",
+           "all": "mind a {n} árai", "allOne": "árak", "some": "mind a {n}, árakkal", "none": "mind a {n}", "empty": "még nincs", "prices": "árak"},
+    "sl": {"head": "Restavracije z Michelinovo zvezdico {in}", "headOne": "Restavracija z Michelinovo zvezdico {in}", "short": "Michelinove restavracije {in}",
+           "all": "cene vseh {n}", "allOne": "cene", "some": "vseh {n} s cenami", "none": "vseh {n}", "empty": "še nobene", "prices": "cene"},
+    "hr": {"head": "Restorani s Michelinovom zvjezdicom {in}", "headOne": "Restoran s Michelinovom zvjezdicom {in}", "short": "Michelinovi restorani {in}",
+           "all": "cijene svih {n}", "allOne": "cijene", "some": "svih {n} s cijenama", "none": "svih {n}", "empty": "još nijedan", "prices": "cijene"},
+    "sr": {"head": "Ресторани са Мишелиновом звездицом {in}", "headOne": "Ресторан са Мишелиновом звездицом {in}", "short": "Мишелинови ресторани {in}",
+           "all": "цене свих {n}", "allOne": "цене", "some": "свих {n} са ценама", "none": "свих {n}", "empty": "још ниједан", "prices": "цене"},
+    "el": {"head": "Εστιατόρια με αστέρι Michelin {in}", "headOne": "Εστιατόριο με αστέρι Michelin {in}", "short": "Εστιατόρια Michelin {in}",
+           "all": "τιμές και των {n}", "allOne": "τιμές", "some": "και τα {n}, με τιμές", "none": "και τα {n}", "empty": "κανένα ακόμη", "prices": "τιμές"},
+    "tr": {"head": "{name} Michelin yıldızlı restoranları", "headOne": "{name} Michelin yıldızlı restoranı", "short": "{name} Michelin restoranları",
+           "all": "tüm {n} restoranın fiyatları", "allOne": "fiyatlar", "some": "tüm {n} restoran ve fiyatlar", "none": "tüm {n} restoran", "empty": "henüz yok",
+           "prices": "fiyatlar"},
+    "lt": {"head": "Michelin žvaigždutės restoranai {in}", "headOne": "Michelin žvaigždutės restoranas {in}", "short": "Michelin restoranai {in}",
+           "all": "visų {n} kainos", "allOne": "kainos", "some": "visi {n} su kainomis", "none": "visi {n}", "empty": "dar nėra", "prices": "kainos"},
+    "lv": {"head": "Michelin zvaigžņu restorāni {in}", "headOne": "Michelin zvaigznes restorāns {in}", "short": "Michelin restorāni {in}",
+           "all": "visu {n} cenas", "allOne": "cenas", "some": "visi {n} ar cenām", "none": "visi {n}", "empty": "vēl nav", "prices": "cenas"},
+    "et": {"head": "Michelini tärniga restoranid {in}", "headOne": "Michelini tärniga restoran {in}", "short": "Michelini restoranid {in}",
+           "all": "kõigi {n} hinnad", "allOne": "hinnad", "some": "kõik {n} koos hindadega", "none": "kõik {n}", "empty": "veel pole", "prices": "hinnad"},
+    "mt": {"head": "Ristoranti bi stilla Michelin {in}", "headOne": "Ristorant bi stilla Michelin {in}", "short": "Ristoranti Michelin {in}",
+           "all": "il-prezzijiet tal-{n} kollha", "allOne": "prezzijiet", "some": "il-{n} kollha bil-prezzijiet", "none": "il-{n} kollha", "empty": "għad m'hemmx",
+           "prices": "prezzijiet"},
+    "ms": {"head": "Restoran berbintang Michelin {in}", "short": "Restoran Michelin {in}",
+           "all": "harga kesemua {n}", "allOne": "harga", "some": "kesemua {n} dengan harga", "none": "kesemua {n}", "empty": "belum ada", "prices": "harga"},
+    "fil": {"head": "Mga Michelin-star na restawran {in}", "headOne": "Michelin-star na restawran {in}", "short": "Mga Michelin restawran {in}",
+            "all": "presyo ng lahat ng {n}", "allOne": "presyo", "some": "lahat ng {n}, may presyo", "none": "lahat ng {n}", "empty": "wala pa", "prices": "presyo"},
+    "vi": {"head": "Nhà hàng sao Michelin {in}", "short": "Nhà hàng Michelin {in}",
+           "all": "giá của cả {n} nhà hàng", "allOne": "giá", "some": "cả {n} nhà hàng kèm giá", "none": "cả {n} nhà hàng", "empty": "chưa có", "prices": "giá"},
+    "ar": {"head": "مطاعم ميشلان الحاصلة على نجوم {in}", "headOne": "مطعم حاصل على نجمة ميشلان {in}", "short": "مطاعم ميشلان {in}",
+           "all": "أسعار المطاعم الـ{n} كلها", "allOne": "الأسعار", "some": "المطاعم الـ{n} كلها مع الأسعار", "none": "المطاعم الـ{n} كلها", "empty": "لا يوجد بعد",
+           "prices": "الأسعار"},
+}
+
+
+def title_width(text):
+    """Roughly how wide a title shows in Google: Chinese, Japanese and Korean characters count double."""
+    return sum(2 if unicodedata.east_asian_width(c) in "WF" else 1 for c in text)
+
+
+def page_titles(p, page, languages, starred):
+    """The page's title in each of its languages, e.g. "Michelin Star Restaurants in London: Prices for All 84 (2026)"."""
+    n = len(starred)
+    priced = sum(1 for r in starred if r.get("dinner") is not None or r.get("lunch") is not None)
+    year = site.get("updated", "")[:4]
+    # Two places with the same name (Limburg in Belgium and the Netherlands, Luxembourg the country and the Belgian
+    # province) get their country's name after it, so their titles differ.
+    country = places[chain(p["id"])[-1]] if p["type"] != "country" and same_name.get(p["name"], 0) > 1 else None
+    titles = {}
+    for lang in languages:
+        w = TITLE_WORDS.get(lang) or TITLE_WORDS["en"]
+        sfx = "" if lang == "en" or lang not in TITLE_WORDS else LANG_SUFFIXES[LANGUAGES.index(lang) - 1]
+        sfxs = [sfx, "Zh"] if sfx in ("Yue", "Zhs") else [sfx]
+        name_of = lambda o: next((o["name" + s] for s in sfxs if s and o.get("name" + s)), o["name"])
+        name, where = name_of(p), page.get("inSentence" + sfx) or page["inSentence"]
+        if country and name == p["name"] and (where == name or where.endswith(" " + name)):  # not "in Belgisch-Limburg"
+            where, name = f"{where} ({name_of(country)})", f"{name} ({name_of(country)})"
+        tail = (w["empty"] if not n else (w.get("allOne") if n == 1 else w["all"]) if priced == n else w["some"] if priced else
+                (w["none"] if n > 1 else ""))
+        heads = [w.get("headOne", w["head"]) if n == 1 else w["head"]] + ([w["short"]] if w.get("short") else [])
+        tails = [tail, w["prices"] if priced else "", ""]
+        options = []
+        for t in dict.fromkeys(tails):
+            for h in heads:
+                for dated in (True, False):
+                    text = h + (w.get("sep", ": ") + t if t else "") + (w.get("year", " ({y})").replace("{y}", year) if dated and year else "")
+                    options.append(text.replace("{in}", where).replace("{name}", name).replace("{n}", str(n)))
+        titles[lang] = next((o for o in options if title_width(o) <= TITLE_MAX), options[-1])
+    return titles
 
 
 def json_ld(p, crumbs, starred, description):

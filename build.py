@@ -1380,14 +1380,15 @@ def same_restaurant(w, r):
     return bool(ta and tb and len(ta & tb) / min(len(ta), len(tb)) >= 0.5) or d < 15
 
 
-def build_world(starred):
-    """The homepage's pins for starred restaurants we don't have prices for yet, written to /data/world.json."""
+def build_world(ours):
+    """The homepage's pins for starred restaurants we don't have prices for yet, written to /data/world.json.
+    Ours includes closed and destarred ones, so a restaurant the guide hasn't dropped yet doesn't come back as a pin."""
     path = CONTENT / "world-starred.json"
     if not path.exists():
         return None, 0
     rows = read_json(path).get("restaurants", [])
     near = {}
-    for r in starred:
+    for r in ours:
         if r.get("lat") is not None:
             near.setdefault((round(r["lat"]), round(r["lng"])), []).append(r)
     others = []
@@ -1627,7 +1628,7 @@ def home_guides_html():
 
 def build_home():
     starred = [r for r in restaurants if not r.get("status")]
-    world_url, world_total = build_world(starred)
+    world_url, world_total = build_world(restaurants)
     soon, guide = world_countries()
     countries = []
     for c in by_size(p for p in pages if p["type"] == "country"):

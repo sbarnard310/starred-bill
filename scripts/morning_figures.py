@@ -15,8 +15,10 @@ report can say what changed. A source that isn't set up yet is reported as "not 
 Settings live in ~/starred-bill-research/figures/config.json (nothing secret in it):
   {"gsc_site": "sc-domain:starredbill.com", "ga4_property": "123456789",
    "umami_website": "0717d470-...", "google_key": "~/starred-bill-research/keys/google-service-account.json"}
-The Google key is a service account's JSON key (its email is added as a user in Search Console and
-Analytics); its JWT is signed with the Mac's own openssl, so no extra libraries are needed. Umami is read
+Google is read as the owner, through a one-time sign-in (scripts/google_signin.py: a "Desktop app" OAuth
+client at "google_oauth", its refresh token in the Keychain as "starredbill-google"), because Google blocks
+service account keys on this project. A service account key at "google_key" still works if one exists; its
+JWT is signed with the Mac's own openssl, so no extra libraries are needed. Umami is read
 through the website's share link ("umami_share": the code after /share/, sharing Overview and Events), as
 Umami's free plan has no API keys; with a paid plan, an API key in the Keychain ("starredbill-umami") works too.
 Standard library only, Python 3.9.
@@ -47,9 +49,34 @@ def b64(raw):
     return base64.urlsafe_b64encode(raw).rstrip(b"=").decode()
 
 
-def google_token(key_path, scope):
-    """An access token for a service account, from a JWT signed with openssl (no third-party libraries)."""
-    key = json.loads(Path(os.path.expanduser(key_path)).read_text())
+def keychain(service):
+    return subprocess.run(["security", "find-generic-password", "-s", service, "-w"],
+                          capture_output=True, text=True).stdout.strip()
+
+
+def google_ready(cfg):
+    """True if either Google sign-in is set up: a service account key, or the owner's own sign-in."""
+    if cfg.get("google_key") and Path(os.path.expanduser(cfg["google_key"])).exists():
+        return True
+    oauth = cfg.get("google_oauth")
+    return bool(oauth and Path(os.path.expanduser(oauth)).exists() and keychain("starredbill-google"))
+
+
+def google_token(cfg, scope):
+    """An access token: from the owner's own sign-in (scripts/google_signin.py, refresh token in the Keychain)
+    when set up, else from a service account key, its JWT signed with openssl (no third-party libraries)."""
+    oauth = cfg.get("google_oauth")
+    refresh = keychain("starredbill-google") if oauth else ""
+    if refresh and Path(os.path.expanduser(oauth)).exists():
+        client = json.loads(Path(os.path.expanduser(oauth)).read_text())
+        client = client.get("installed") or client.get("web") or client
+        form = urllib.parse.urlencode({"grant_type": "refresh_token", "refresh_token": refresh,
+                                       "client_id": client["client_id"], "client_secret": client["client_secret"]}).encode()
+        req = urllib.request.Request("https://oauth2.googleapis.com/token", data=form,
+                                     headers={"Content-Type": "application/x-www-form-urlencoded"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read())["access_token"]
+    key = json.loads(Path(os.path.expanduser(cfg["google_key"])).read_text())
     now = int(time.time())
     head = b64(json.dumps({"alg": "RS256", "typ": "JWT"}).encode())
     claims = b64(json.dumps({"iss": key["client_email"], "scope": scope, "aud": "https://oauth2.googleapis.com/token",
@@ -71,7 +98,7 @@ def google_token(key_path, scope):
 
 
 def search_console(cfg):
-    token = google_token(cfg["google_key"], "https://www.googleapis.com/auth/webmasters.readonly")
+    token = google_token(cfg, "https://www.googleapis.com/auth/webmasters.readonly")
     site = urllib.parse.quote(cfg.get("gsc_site", "sc-domain:starredbill.com"), safe="")
     url = f"https://www.googleapis.com/webmasters/v3/sites/{site}/searchAnalytics/query"
     auth = {"Authorization": f"Bearer {token}"}
@@ -95,7 +122,7 @@ def search_console(cfg):
 
 
 def analytics(cfg):
-    token = google_token(cfg["google_key"], "https://www.googleapis.com/auth/analytics.readonly")
+    token = google_token(cfg, "https://www.googleapis.com/auth/analytics.readonly")
     url = f"https://analyticsdata.googleapis.com/v1beta/properties/{cfg['ga4_property']}:runReport"
     auth = {"Authorization": f"Bearer {token}"}
     metrics = [{"name": m} for m in ("activeUsers", "newUsers", "sessions", "screenPageViews")]
@@ -164,10 +191,10 @@ def umami(cfg):
 def main(out, prev=None):
     cfg = json.loads(CONFIG.read_text()) if CONFIG.exists() else {}
     result = {"date": str(dt.date.today()), "sources": {}}
-    for name, fn, needs in (("search_console", search_console, ["google_key"]),
-                            ("analytics", analytics, ["google_key", "ga4_property"]),
+    for name, fn, needs in (("search_console", search_console, ["google sign-in"]),
+                            ("analytics", analytics, ["google sign-in", "ga4_property"]),
                             ("umami", umami, [])):
-        missing = [k for k in needs if not cfg.get(k) or (k == "google_key" and not Path(os.path.expanduser(cfg[k])).exists())]
+        missing = [k for k in needs if not (google_ready(cfg) if k == "google sign-in" else cfg.get(k))]
         if missing:
             result["sources"][name] = {"status": "not set up", "missing": missing}
             continue

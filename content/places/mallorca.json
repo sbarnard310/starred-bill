@@ -1,0 +1,10 @@
+{
+  "id": "mallorca",
+  "type": "region",
+  "parent": "balearic-islands",
+  "name": "Mallorca",
+  "intro": "Every starred restaurant on the island, from Palma to Port d'Alcúdia. Prices are in euros, with a switch to see them in pounds or US dollars. Prices checked October 2026; Spanish menu prices include 10% VAT (IVA), and service isn't added to the bill.",
+  "nameEs": "Mallorca",
+  "inSentenceEs": "en Mallorca",
+  "introEs": "Todos los restaurantes con estrella de la isla, de Palma a Port d'Alcúdia. Los precios están en euros, con un selector para verlos en libras o dólares estadounidenses. Precios consultados en octubre de 2026; en España los menús incluyen el 10 % de IVA y no se añade servicio a la cuenta."
+}

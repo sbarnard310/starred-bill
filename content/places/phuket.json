@@ -1,0 +1,10 @@
+{
+  "id": "phuket",
+  "type": "city",
+  "parent": "thailand",
+  "name": "Phuket",
+  "intro": "Includes Aulis in Khok Kloi, Phang-Nga, just across the Sarasin Bridge from the island, as the MICHELIN Guide counts Phuket and Phang-Nga together. Prices are in Thai baht (฿), with a switch to see them in pounds, euros or US dollars; “++” in a note means 10% service and 7% VAT are added. Prices checked October 2026.",
+  "nameTh": "ภูเก็ต",
+  "inSentenceTh": "ในภูเก็ต",
+  "introTh": "รวมร้าน Aulis ที่โคกกลอย จังหวัดพังงา ซึ่งอยู่อีกฝั่งของสะพานสารสินจากเกาะภูเก็ต เพราะมิชลิน ไกด์นับภูเก็ตและพังงารวมกัน ราคาเป็นเงินบาท (฿) และกดดูเป็นปอนด์ ยูโร หรือดอลลาร์สหรัฐได้ “++” ในหมายเหตุหมายถึงบวกค่าบริการ 10% และภาษีมูลค่าเพิ่ม 7% ตรวจสอบราคาเมื่อเดือนตุลาคม 2026"
+}

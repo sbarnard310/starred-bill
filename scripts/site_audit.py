@@ -72,6 +72,9 @@ def page_checks(site):
                 json.loads(j)
             except ValueError:
                 out["bad_structured_data"].append(url)
+        # Destination pages with starred restaurants carry a FAQ (destination_faq() in build.py), in the page and as FAQPage data.
+        if '<ol class="prerender"><li>' in s and not ('<section id="faq">' in s and '"FAQPage"' in s):
+            out["destination_without_faq"].append(url)
         m = re.search(r'og:image" content="https://starredbill.com(/[^"]+)"', s)
         if m and m.group(1).lstrip("/") not in files:
             out["missing_preview_picture"].append(url)

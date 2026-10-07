@@ -555,13 +555,14 @@ def build_place(p):
             + (f" · {'dinner ' if lang == 'en' else ''}{money(r['dinner'], r['cur'])}" if r.get("dinner") is not None else "") + "</li>"
             for r in sorted(starred, key=lambda r: (-r["stars"], r["name"]))) + "</ol>"
         version = dict(data, lang=lang, langPaths=lang_paths) if len(langs) > 1 else data
+        faq = destination_faq(p, page, starred, lang)
         write(lang_paths[lang], render("place.html", {
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
             "title": e(titles[lang]), "description": e(texts["description"]), "canonical": SITE_URL + lang_paths[lang],
             "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
             "crumbs": crumb_html, "explore": explore_html, "ledger": ledger, "data": as_json(version),
             "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
-            "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts),
+            "faq": faq_html(faq, lang), "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
         }))
 
 
@@ -679,6 +680,138 @@ def translated_texts(page, lang, starred):
         description = (cut[:cut.rfind(" ")] if cut.rfind(" ") > 100 else cut).rstrip(",.;:、，") + "…"
     return {"description": description, "h1": h1, "eyebrow": word(lang, "heroEyebrow", values),
             "heroText": text, "crumbHome": word(lang, "crumbHome", values)}
+
+FAQ_WORDS = read_json(SRC / "faq-words.json")
+
+
+def read_months():
+    """Each language's short month names, from MONTHS in common.js and `months` in each lang-<code>.js (as receipts show them)."""
+    js = (SRC / "assets" / "common.js").read_text("utf-8")
+    block = js[js.index("const MONTHS = {"):]
+    out = {m.group(1): json.loads(m.group(2)) for m in re.finditer(r"(\w+): (\[[^\]]*\])", block[:block.index("};")])}
+    for code in LANG_FILES:
+        m = re.search(r"months: (\[[^\]]*\])", (SRC / "assets" / f"lang-{code}.js").read_text("utf-8"))
+        if m:
+            out[code] = json.loads(m.group(1))
+    return out
+
+
+MONTHS = read_months()
+
+
+def month_year(ym, lang):
+    """"Oct 2026" in a language, like monthYear() in common.js."""
+    y, _, m = (ym or "").partition("-")
+    if not m:
+        return y
+    if lang in ("zh", "yue", "zhs", "ja"):
+        return f"{y}年{int(m)}月"
+    if lang == "ko":
+        return f"{y}년 {int(m)}월"
+    return f"{(MONTHS.get(lang) or MONTHS['en'])[int(m) - 1]} {y}"
+
+
+def destination_faq(p, page, starred, lang):
+    """The questions and answers at the foot of a destination page, worked out from its restaurants in one of its
+    languages (wording in src/faq-words.json): how many are starred, any three-star, what dinner costs, the cheapest
+    meal, what's newly starred and how far ahead to book. Questions the data can't answer are left out."""
+    if not starred:
+        return []
+    own = FAQ_WORDS.get(lang) or FAQ_WORDS["en"]
+    w = dict(FAQ_WORDS["en"], **own)
+    rtl = lang in RTL_LANGUAGES
+    sfx = lang[0].upper() + lang[1:]
+    name = lambda r: (lambda s: f"⁨{s}⁩" if rtl else s)(pick_lang(r, "name", lang))
+    usd = lambda r, f: r[f] / CURRENCIES[r["cur"]]["perUSD"]
+
+    def price(r, f):
+        text = money(r[f], r["cur"]) + ("" if r["cur"] == "USD" else f" (≈\u00a0US${int(round(usd(r, f) / 5) * 5):,})")
+        return f"⁦{text}⁩" if rtl else text
+
+    def listed(rs, limit=6):
+        names = [name(r) for r in rs[:limit]]
+        text = names[0] if len(names) == 1 else w["sep"].join(names[:-1]) + w["and3" if len(names) > 2 and "and3" in own else "and"] + names[-1]
+        if len(rs) > limit:
+            text = w["more"].replace("{list}", w["sep"].join(names)).replace("{m}", str(len(rs) - limit))
+        return text
+
+    where = (pick_lang(page, "name", lang) if lang in CJK_NAMES else
+             "in " + page["inSentence"] if lang == "en" else page.get("inSentence" + sfx) or page["inSentence"])
+    gap = "" if lang in ("zh", "yue", "zhs", "ja") else " "  # between sentences
+
+    def say(key, **values):
+        values.setdefault("in", where)
+        text = re.sub(r"\{(\w+)\}", lambda m: str(values.get(m.group(1), m.group(0))), w[key])
+        return text[:1].upper() + text[1:]
+
+    n = len(starred)
+    by_stars = {s: sorted((r for r in starred if r["stars"] == s), key=lambda r: name(r).lower()) for s in (3, 2, 1)}
+    faq = []
+
+    tiers = [s for s in (3, 2, 1) if by_stars[s]]
+    split = w[f"all{tiers[0]}"] if len(tiers) == 1 else \
+        w["sep"].join(w[f"tier{s}"].replace("{n}", str(len(by_stars[s]))) for s in tiers[:-1]) + w["and3" if len(tiers) > 2 and "and3" in own else "and"] + \
+        w[f"tier{tiers[-1]}"].replace("{n}", str(len(by_stars[tiers[-1]])))
+    checked = month_year(site.get("updated", ""), lang)
+    count = say("aCountOne", r=name(starred[0]), stars=w[f"star{starred[0]['stars']}"], checked=checked) if n == 1 else \
+        say("aCount", n=n, split=split, checked=checked)
+    faq.append((say("qCount"), count))
+
+    three, two = by_stars[3], by_stars[2]
+    answer = say("aThreeOne", names=listed(three)) if len(three) == 1 else say("aThreeMany", k=len(three), names=listed(three)) if three else \
+        say("aThreeNoTwo", names=listed(two)) if two else say("aThreeNoOne")
+    faq.append((say("qThree"), answer))
+
+    menu = lambda r, f: r.get(f) is not None and r.get(f + "Type", "menu") == "menu"
+    dinners = sorted((r for r in starred if menu(r, "dinner")), key=lambda r: usd(r, "dinner"))
+    if len(dinners) >= 3:
+        mid = dinners[len(dinners) // 2]
+        faq.append((say("qPrice"), say("aPrice", lo=price(dinners[0], "dinner"), hi=price(dinners[-1], "dinner"), mid=price(mid, "dinner"))))
+
+    lunches = sorted((r for r in starred if menu(r, "lunch")), key=lambda r: usd(r, "lunch"))
+    # Some restaurants list a typical spend instead of a menu (mainland China): the lowest is added when it's lower still.
+    spends = sorted((r for r in starred if r.get("dinner") is not None and r.get("dinnerType") == "spend"), key=lambda r: usd(r, "dinner"))
+    cheapest = min([usd(r, "lunch") for r in lunches[:1]] + [usd(r, "dinner") for r in dinners[:1]] or [float("inf")])
+    answer = ""
+    if lunches and (not dinners or usd(lunches[0], "lunch") < usd(dinners[0], "dinner")):
+        answer = say("aCheapLunch", r=name(lunches[0]), price=price(lunches[0], "lunch"))
+        if dinners:
+            answer += gap + say("aAlsoDinner", r=name(dinners[0]), price=price(dinners[0], "dinner"))
+    elif dinners:
+        answer = say("aCheapDinner", r=name(dinners[0]), price=price(dinners[0], "dinner"))
+    if spends and usd(spends[0], "dinner") < cheapest:
+        answer += (gap if answer else "") + say("aCheapSpend", r=name(spends[0]), price=price(spends[0], "dinner"))
+    if answer:
+        faq.append((say("qCheap"), answer))
+
+    # Stars won in the last twelve months (first editions of a guide aren't marked, so with none the question is left out).
+    month = site.get("updated", "")
+    since = f"{int(month[:4]) - 1}-{month[5:7]}" if re.fullmatch(r"\d{4}-\d{2}", month) else ""
+    recent = [r for r in starred if r.get("change") in ("new", "up") and r.get("changeDate", "") > since]
+    if recent:
+        new = sorted((r for r in recent if r["change"] == "new"), key=lambda r: (-r["stars"], name(r).lower()))
+        up = sorted((r for r in recent if r["change"] == "up"), key=lambda r: (-r["stars"], name(r).lower()))
+        when = month_year(max(r["changeDate"] for r in recent), lang)
+        parts = []
+        if new:
+            parts.append(say("aNewOne" if len(new) == 1 and "aNewOne" in own else "aNew", names=listed(new), when=when))
+        if up:
+            parts.append(say("aUpOne" if len(up) == 1 and "aUpOne" in own else "aUp", names=listed(up)))
+        faq.append((say("qNew"), gap.join(parts)))
+
+    k = sum(1 for r in starred if r.get("lunch") is not None)
+    faq.append((say("qBook"), say("aBook") + (gap + say("aLunch", k=k, n=n) if k and n > 1 else "")))
+    return faq
+
+
+def faq_html(faq, lang):
+    if not faq:
+        return ""
+    w = dict(FAQ_WORDS["en"], **FAQ_WORDS.get(lang, {}))
+    return ('<section id="faq">\n    <div class="wrap">\n      <div class="section-head"><div>'
+            f'<span class="eyebrow">{e(w["eyebrow"])}</span><h2 style="margin-top: 6px">{e(w["title"])}</h2></div></div>\n'
+            '      <div class="faq">' + "".join(f'<div><h3>{e(q)}</h3><p>{e(a)}</p></div>' for q, a in faq) + "</div>\n    </div>\n  </section>\n")
+
 
 def place_description(where, starred, stars, menus):
     """The page's search-result snippet: the fullest wording that fits in 155 characters, as Google cuts off longer ones."""
@@ -830,8 +963,8 @@ def page_titles(p, page, languages, starred):
     return titles
 
 
-def json_ld(p, crumbs, starred, description, lang="en", texts=None):
-    """Structured data for search engines: the breadcrumb trail, and the starred restaurants as a list.
+def json_ld(p, crumbs, starred, description, lang="en", texts=None, faq=()):
+    """Structured data for search engines: the breadcrumb trail, the starred restaurants as a list and the FAQ.
     Google ratings are deliberately left out (Google doesn't allow ratings copied from elsewhere).
     A translated page names its trail in its language and links to the same language where the page above offers it."""
     at = lambda c: lang_path(c["path"], lang) if lang in place_langs(c) else c["path"]
@@ -855,6 +988,9 @@ def json_ld(p, crumbs, starred, description, lang="en", texts=None):
             items.append({"@type": "ListItem", "position": i + 1, "item": {k: v for k, v in item.items() if v}})
         graph.append({"@type": "ItemList", "name": f"Michelin-starred restaurants in {in_sentence(p)}" if lang == "en" else plain(texts["h1"]), "description": description,
                       "numberOfItems": len(items), "itemListElement": items})
+    if faq:
+        graph.append({"@type": "FAQPage", "inLanguage": HREFLANG.get(lang, lang), "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
     return '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>"
 
 

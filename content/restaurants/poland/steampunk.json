@@ -32,5 +32,7 @@
   "lunchNotePl": "To samo menu w porze lunchu · wt.–niedz.",
   "lunchWine": 250,
   "lunchSourceType": "site",
-  "lunchSource": "https://wodna-wieza.pl/wp-content/uploads/2026/09/MENU-STEAMPUNK_20.09.2026r.pdf"
+  "lunchSource": "https://wodna-wieza.pl/wp-content/uploads/2026/09/MENU-STEAMPUNK_20.09.2026r.pdf",
+  "chef": "Ziemowit Owczarz",
+  "chefSource": "press"
 }

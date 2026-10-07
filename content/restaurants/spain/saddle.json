@@ -31,5 +31,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Adolfo Santos",
+  "chefSource": "press"
 }

@@ -20,5 +20,7 @@
   "dinnerNoteSv": "Avsmakningsmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteSv": "Endast middag"
+  "lunchNoteSv": "Endast middag",
+  "chef": "Harry Jordås and Nathan Turley",
+  "chefSource": "press"
 }

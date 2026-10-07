@@ -19,5 +19,7 @@
   "dinnerNoteSv": "Avsmakningsmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteSv": "Endast middag"
+  "lunchNoteSv": "Endast middag",
+  "chef": "José Cerdá",
+  "chefSource": "press"
 }

@@ -23,5 +23,7 @@
   "dinnerNoteFi": "Maistelumenu (muut menut alkaen 49 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteFi": "Vain illallinen"
+  "lunchNoteFi": "Vain illallinen",
+  "chef": "Mikko Pakola",
+  "chefSource": "press"
 }

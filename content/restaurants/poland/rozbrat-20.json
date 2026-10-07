@@ -25,5 +25,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePl": "Tylko kolacje",
-  "areaPl": "Warszawa"
+  "areaPl": "Warszawa",
+  "chef": "Bartosz Szymczak",
+  "chefSource": "press"
 }

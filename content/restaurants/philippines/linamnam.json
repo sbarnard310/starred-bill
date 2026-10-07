@@ -24,5 +24,7 @@
   "dinnerNoteFil": "Tasting menu (ibang menu mula ₱5,000)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteFil": "Hapunan lang"
+  "lunchNoteFil": "Hapunan lang",
+  "chef": "Don Patrick Baldosano",
+  "chefSource": "press"
 }

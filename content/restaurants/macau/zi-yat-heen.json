@@ -28,5 +28,7 @@
   "lat": 22.15029,
   "lng": 113.556615,
   "placeId": "ChIJzfigMwRwATQRmXHOAYwJXh0",
-  "michelinId": "256630"
+  "michelinId": "256630",
+  "chef": "Anthony Ho",
+  "chefSource": "press"
 }

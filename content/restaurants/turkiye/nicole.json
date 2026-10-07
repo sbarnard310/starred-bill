@@ -26,5 +26,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTr": "Yalnızca akşam yemeği",
-  "cuisineTr": "Modern Mutfak"
+  "cuisineTr": "Modern Mutfak",
+  "chef": "Serkan Aksoy",
+  "chefSource": "press"
 }

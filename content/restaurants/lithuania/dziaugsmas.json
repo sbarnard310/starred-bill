@@ -21,5 +21,7 @@
   "dinnerNoteLt": "Degustacinis meniu; kaina bus pridėta",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteLt": "Tik vakarienė"
+  "lunchNoteLt": "Tik vakarienė",
+  "chef": "Martynas Praškevičius",
+  "chefSource": "press"
 }

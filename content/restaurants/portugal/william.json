@@ -23,5 +23,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePt": "Só jantar",
-  "cuisinePt": "Atual"
+  "cuisinePt": "Atual",
+  "chef": "José Diogo Costa",
+  "chefSource": "press"
 }

@@ -25,5 +25,7 @@
   "lat": 22.2800634,
   "lng": 114.1576634,
   "placeId": "ChIJU1tqH2UABDQRyMAnpk05EQ8",
-  "michelinId": "511280"
+  "michelinId": "511280",
+  "chef": "Ivan Chan",
+  "chefSource": "press"
 }

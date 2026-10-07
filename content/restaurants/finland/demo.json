@@ -27,5 +27,7 @@
   "lunchWine": 155,
   "lunchNoteFi": "Sama menu lounaalla · ti–pe",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurantdemo.fi/"
+  "lunchSource": "https://www.restaurantdemo.fi/",
+  "chef": "Tommi Tuominen",
+  "chefSource": "press"
 }

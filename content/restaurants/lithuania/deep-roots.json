@@ -28,5 +28,7 @@
   "dinnerNoteLt": "Degustacinis meniu (kiti meniu nuo 75 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteLt": "Tik vakarienė"
+  "lunchNoteLt": "Tik vakarienė",
+  "chef": "Andrius Kubilius",
+  "chefSource": "press"
 }

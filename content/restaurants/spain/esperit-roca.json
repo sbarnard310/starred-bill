@@ -31,5 +31,7 @@
   "lat": 42.032312,
   "lng": 2.845389,
   "placeId": "ChIJu7HphPPnuhIRkXu7fXuC_kI",
-  "michelinId": "1214142"
+  "michelinId": "1214142",
+  "chef": "Joan Roca",
+  "chefSource": "press"
 }

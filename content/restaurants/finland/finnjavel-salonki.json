@@ -23,5 +23,7 @@
   "dinnerNoteFi": "Maistelumenu (muut menut alkaen 97 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteFi": "Vain illallinen"
+  "lunchNoteFi": "Vain illallinen",
+  "chef": "Tommi Tuominen",
+  "chefSource": "press"
 }

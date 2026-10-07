@@ -34,5 +34,7 @@
   "lunchNotePl": "To samo menu w porze lunchu · sob.–niedz.",
   "lunchWine": 250,
   "lunchSourceType": "site",
-  "lunchSource": "https://miedzy-mostami.pl/most/degustacja/"
+  "lunchSource": "https://miedzy-mostami.pl/most/degustacja/",
+  "chef": "Łukasz Budzik",
+  "chefSource": "press"
 }

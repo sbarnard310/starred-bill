@@ -27,5 +27,7 @@
   "dinnerNoteNb": "Smaksmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNb": "Kun middag"
+  "lunchNoteNb": "Kun middag",
+  "chef": "Kristian Bretten Vangen",
+  "chefSource": "press"
 }

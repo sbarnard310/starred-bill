@@ -24,5 +24,7 @@
   "dinnerNoteMs": "Menu rasa; harga akan ditambah",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteMs": "Makan malam sahaja"
+  "lunchNoteMs": "Makan malam sahaja",
+  "chef": "Chong Yu Cheng",
+  "chefSource": "press"
 }

@@ -27,5 +27,7 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Mi–So",
   "lunchSourceType": "site",
   "lunchSource": "https://www.guilloucampagne.lu/les-menus",
-  "cuisineDe": "Französisch-klassisch"
+  "cuisineDe": "Französisch-klassisch",
+  "chef": "Katell Guillou",
+  "chefSource": "press"
 }

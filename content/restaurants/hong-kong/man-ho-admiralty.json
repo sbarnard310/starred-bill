@@ -29,5 +29,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Jayson Tang",
+  "chefSource": "press"
 }

@@ -19,5 +19,7 @@
   "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 3 300 kr)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteSv": "Endast middag"
+  "lunchNoteSv": "Endast middag",
+  "chef": "Viktor Westerlind",
+  "chefSource": "press"
 }

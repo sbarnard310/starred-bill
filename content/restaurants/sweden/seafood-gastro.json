@@ -24,5 +24,7 @@
   "lunchNoteSv": "Samma meny till lunch · fredag",
   "lunchWine": 2200,
   "lunchSourceType": "site",
-  "lunchSource": "https://mdghs.se/seafood-gastro/"
+  "lunchSource": "https://mdghs.se/seafood-gastro/",
+  "chef": "Mathias Dahlgren and Jonas Hedenqvist",
+  "chefSource": "press"
 }

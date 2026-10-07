@@ -25,5 +25,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Gerard Villaret Horcajo",
+  "chefSource": "press"
 }

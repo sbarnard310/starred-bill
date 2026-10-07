@@ -24,5 +24,7 @@
   "dinnerNoteEt": "Degustatsioonimenüü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteEt": "Ainult õhtusöök"
+  "lunchNoteEt": "Ainult õhtusöök",
+  "chef": "Tõnis Siigur and Roman Sidorov",
+  "chefSource": "press"
 }

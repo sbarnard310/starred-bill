@@ -32,5 +32,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Javier Gartzia",
+  "chefSource": "press"
 }

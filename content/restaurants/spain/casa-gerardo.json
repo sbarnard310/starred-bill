@@ -19,6 +19,7 @@
   "website": "https://www.restaurantecasagerardo.es/",
   "lat": 43.53658,
   "lng": -5.7872,
+  "placeId": "ChIJGSqkZySHNg0Rac-wAi3FxdM",
   "michelinId": "222449",
   "diets": [
     "vegetarian",
@@ -26,5 +27,7 @@
     "gluten-free"
   ],
   "chef": "Marcos Morán and Pedro Morán",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rating": 4.6,
+  "reviews": 1478
 }

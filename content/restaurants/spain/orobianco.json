@@ -14,10 +14,13 @@
   "website": "https://www.orobianco.es/",
   "lat": 38.6665147,
   "lng": 0.0451019,
+  "placeId": "ChIJ1YDHVo4AnhIRZE0Xg2LV3Oo",
   "michelinId": "524981",
   "diets": [
     "vegetarian"
   ],
   "chef": "Paolo Casagrande",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rating": 4.6,
+  "reviews": 462
 }

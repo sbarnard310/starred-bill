@@ -23,7 +23,10 @@
   "website": "https://choko-ona.fr/",
   "lat": 43.3416,
   "lng": -1.4447745,
+  "placeId": "ChIJM4xmDLs8UQ0RJCAZDHpL88Y",
   "michelinId": "1184980",
   "chef": "Clément Guillemot",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rating": 4.9,
+  "reviews": 656
 }

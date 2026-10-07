@@ -15,6 +15,7 @@
   "website": "https://domaine-colombier.com/",
   "lat": 44.4688517,
   "lng": 4.7429648,
+  "placeId": "ChIJt-D6fslttRIRbu0uVYIZlbI",
   "michelinId": "11927",
   "diets": [
     "vegetarian",
@@ -22,5 +23,7 @@
     "gluten-free"
   ],
   "chef": "Johan Thyriot",
-  "chefSource": "site"
+  "chefSource": "site",
+  "rating": 4.9,
+  "reviews": 19
 }

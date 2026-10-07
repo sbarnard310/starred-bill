@@ -13,6 +13,7 @@
   "website": "https://www.kenya-sakai.com/",
   "lat": 35.056686,
   "lng": 135.791449,
+  "placeId": "ChIJcwEYeAAJAWAR6bOn7eRhq8M",
   "michelinId": "1196392",
   "chef": "Kenya Sakai",
   "chefSource": "press",
@@ -24,5 +25,7 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.kenya-sakai.com/",
   "lunchNote": "Lunch kaiseki",
-  "lunchNoteJa": "昼懐石"
+  "lunchNoteJa": "昼懐石",
+  "rating": 4.4,
+  "reviews": 15
 }

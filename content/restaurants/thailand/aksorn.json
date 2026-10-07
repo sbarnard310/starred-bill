@@ -19,6 +19,7 @@
   "website": "https://www.aksornbkk.com",
   "lat": 13.7244904,
   "lng": 100.516235,
+  "placeId": "ChIJERWr0WuZ4jARXtohpCb5n1E",
   "michelinId": "1194928",
   "diets": [
     "vegetarian",
@@ -26,5 +27,7 @@
     "gluten-free"
   ],
   "chef": "David Thompson",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rating": 4,
+  "reviews": 270
 }

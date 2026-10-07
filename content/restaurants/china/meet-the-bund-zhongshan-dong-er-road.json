@@ -4,8 +4,6 @@
   "address": "S301, 3F, South Mall, The Bund Finance Center, 600 Zhongshan Dong Er Road, Huangpu, 200001, Shanghai",
   "stars": 1,
   "cuisine": "Fujian",
-  "rating": 4.6,
-  "reviews": 108,
   "dinnerType": "spend",
   "dinner": 828,
   "dinnerNote": "Typical spend",
@@ -13,7 +11,6 @@
   "source": "https://you.ctrip.com/food/2/23043277.html",
   "lat": 31.228818,
   "lng": 121.493593,
-  "placeId": "ChIJXb1uXPNwsjURH7Es8Zaq9vw",
   "michelinId": "1192044",
   "diets": [
     "vegetarian"

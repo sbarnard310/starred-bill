@@ -21,7 +21,10 @@
   "website": "https://www.instagram.com/labarradehuniik",
   "lat": 20.9760249,
   "lng": -89.6215943,
+  "placeId": "ChIJPxK3FwBxVo8R4Gz3ArUwQHE",
   "michelinId": "1249375",
   "chef": "Roberto Solís",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rating": 4.7,
+  "reviews": 59
 }

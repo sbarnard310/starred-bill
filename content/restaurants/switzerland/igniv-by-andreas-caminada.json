@@ -20,6 +20,7 @@
   "website": "https://www.igniv.com",
   "lat": 46.6388224,
   "lng": 8.5900427,
+  "placeId": "ChIJRX_MI1FxhUcRupuaeLeUTjE",
   "michelinId": "1207200",
   "diets": [
     "vegetarian",
@@ -40,5 +41,7 @@
   "lunchWine": 129,
   "lunchSourceType": "site",
   "lunchSource": "https://www.igniv-andermatt.ch/s/IGNIV-Andermatt-Menu-E-2.pdf",
-  "cuisineIt": "Condivisione"
+  "cuisineIt": "Condivisione",
+  "rating": 5,
+  "reviews": 61
 }

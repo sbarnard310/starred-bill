@@ -23,6 +23,7 @@
   "website": "https://www.juksunchae.com",
   "lat": 13.7328167,
   "lng": 100.5766771,
+  "placeId": "ChIJ_xRKVDuf4jAR3CyXriUaZGA",
   "michelinId": "1209812",
   "diets": [
     "vegetarian",
@@ -30,5 +31,7 @@
     "halal"
   ],
   "chef": "Henry Lee",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rating": 4.9,
+  "reviews": 143
 }

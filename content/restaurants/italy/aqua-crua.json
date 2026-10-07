@@ -22,11 +22,14 @@
   "website": "https://www.aquacrua.it",
   "lat": 45.42242,
   "lng": 11.55369,
+  "placeId": "ChIJYzXB9ks7f0cRIMZlIWSNbSo",
   "michelinId": "440535",
   "diets": [
     "vegetarian",
     "vegan"
   ],
   "chef": "Giuliano Baldessari",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "rating": 4.7,
+  "reviews": 478
 }

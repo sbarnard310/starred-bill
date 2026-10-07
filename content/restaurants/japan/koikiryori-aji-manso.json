@@ -12,7 +12,7 @@
   "sourceType": "press",
   "lat": 34.708834,
   "lng": 135.752588,
-  "placeId": "ChIJ8W7VMLU8AWARhXUIc-uxSio",
+  "placeId": "ChIJMzbv1EojAWARABSNzIq4JYk",
   "michelinId": "1196883",
   "chef": "Koji Nagata",
   "chefSource": "press",
@@ -24,5 +24,7 @@
   "lunchSourceType": "press",
   "lunchSource": "https://tabelog.com/en/nara/A2901/A290102/29001057/",
   "lunchNote": "Tabelog range ¥6,000–7,999",
-  "lunchNoteJa": "食べログの価格帯 6,000～7,999円"
+  "lunchNoteJa": "食べログの価格帯 6,000～7,999円",
+  "rating": 4.3,
+  "reviews": 40
 }

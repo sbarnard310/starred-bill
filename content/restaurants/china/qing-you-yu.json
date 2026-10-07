@@ -9,9 +9,11 @@
   "changeNote": "Gained its first star",
   "changeDate": "2025-11",
   "changeNoteZhs": "首度摘星",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 547,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/243/127696259.html",
   "lat": 24.890274,
   "lng": 118.599983,
   "michelinId": "1214394",
@@ -20,7 +22,7 @@
     "vegan",
     "halal"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "海鲜",
   "nameZhs": "庆有余",
   "areaZhs": "泉州"

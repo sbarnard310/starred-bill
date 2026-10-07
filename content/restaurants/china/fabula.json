@@ -9,12 +9,14 @@
   "changeDate": "2026-04",
   "changeNoteZhs": "首度摘星",
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1280,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://rachelgouk.com/shanghai-scoop-food-drink-news-september-2025/",
   "website": "https://www.fabula.restaurant",
   "lat": 31.228126,
   "lng": 121.4532062,
   "michelinId": "1245581",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "品鉴套餐",
   "cuisineZhs": "创新菜"
 }

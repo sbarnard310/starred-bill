@@ -7,8 +7,10 @@
   "rating": 4.3,
   "reviews": 30,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2888,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://www.smartshanghai.com/articles/dining/shanghai-s-best-chef-s-tables-and-how-much-they-cost",
   "website": "https://sh.taian-table.cn",
   "lat": 31.2238977,
   "lng": 121.4281783,
@@ -20,7 +22,7 @@
   ],
   "chef": "Stefan Stiller",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "品鉴套餐",
   "cuisineZhs": "创新菜",
   "nameZhs": "泰安门"
 }

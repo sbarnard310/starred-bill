@@ -4,9 +4,11 @@
   "address": "No. 326, 3F, North Tower, Chinese Financial Center, 33 Jiaozi Avenue, Wuhou, Chengdu",
   "stars": 1,
   "cuisine": "Fujian",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 380,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/104/134085617.html",
   "lat": 30.5838976,
   "lng": 104.0606652,
   "michelinId": "1204153",
@@ -16,7 +18,7 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "闽菜",
   "nameZhs": "福满楼"
 }

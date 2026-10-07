@@ -7,9 +7,11 @@
   "cuisine": "Chinese Contemporary",
   "rating": 5,
   "reviews": 1,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 502,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/12/136215788.html",
   "lat": 32.4030991,
   "lng": 119.4339269,
   "placeId": "ChIJVVVVqN2HtjUR2w5aITWQias",
@@ -18,7 +20,7 @@
     "vegetarian",
     "halal"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "时尚中国菜",
   "nameZhs": "橙园",
   "areaZhs": "扬州"

@@ -8,9 +8,11 @@
   "changeNote": "Gained its first star",
   "changeDate": "2026-04",
   "changeNoteZhs": "首度摘星",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 2630,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/150572849.html",
   "website": "https://www.vivantshanghai.com",
   "lat": 31.2320088,
   "lng": 121.4733067,
@@ -19,7 +21,7 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "时尚法国菜",
   "chef": "Johnny Pham",
   "chefSource": "press"

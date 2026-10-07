@@ -8,9 +8,11 @@
   "changeNote": "Gained its first star",
   "changeDate": "2026-04",
   "changeNoteZhs": "首度摘星",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 318,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/2/144974533.html",
   "lat": 31.2249544,
   "lng": 121.4428282,
   "michelinId": "1245176",
@@ -21,7 +23,7 @@
   ],
   "chef": "Zhou Xiaoyan",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "淮扬菜",
   "nameZhs": "三月醉淮扬（静安）"
 }

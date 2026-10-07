@@ -4,9 +4,11 @@
   "address": "8F, Four Seasons Hotel at Hangzhou Center, 493 Zhongshan North Road, Gongshu, Hangzhou",
   "stars": 1,
   "cuisine": "Ningbo",
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinner": 626,
+  "dinnerNote": "Typical spend",
+  "sourceType": "press",
+  "source": "https://you.ctrip.com/food/14/148899449.html",
   "website": "https://www.fourseasons.com/hangzhoucentre/dining/restaurants/song",
   "lat": 30.278739,
   "lng": 120.172647,
@@ -14,7 +16,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "品鉴套餐；价格待补充",
+  "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "宁波菜",
   "nameZhs": "颂",
   "chef": "Neal Zeng",

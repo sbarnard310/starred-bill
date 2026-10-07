@@ -16,8 +16,9 @@ Settings live in ~/starred-bill-research/figures/config.json (nothing secret in 
   {"gsc_site": "sc-domain:starredbill.com", "ga4_property": "123456789",
    "umami_website": "0717d470-...", "google_key": "~/starred-bill-research/keys/google-service-account.json"}
 The Google key is a service account's JSON key (its email is added as a user in Search Console and
-Analytics); its JWT is signed with the Mac's own openssl, so no extra libraries are needed. The Umami
-API key is kept in the Mac's Keychain under the service name "starredbill-umami".
+Analytics); its JWT is signed with the Mac's own openssl, so no extra libraries are needed. Umami is read
+through the website's share link ("umami_share": the code after /share/, sharing Overview and Events), as
+Umami's free plan has no API keys; with a paid plan, an API key in the Keychain ("starredbill-umami") works too.
 Standard library only, Python 3.9.
 """
 import base64
@@ -119,13 +120,23 @@ def analytics(cfg):
 
 
 def umami(cfg):
-    key = subprocess.run(["security", "find-generic-password", "-s", "starredbill-umami", "-w"],
-                         capture_output=True, text=True).stdout.strip()
-    if not key:
-        raise RuntimeError("not set up: no Umami API key in the Keychain (service starredbill-umami)")
+    """Reads through the website's share link ("umami_share" in config.json: the code after /share/), which
+    works on Umami's free plan, else through an API key in the Keychain (Umami's paid plans only)."""
     site = cfg.get("umami_website", "0717d470-551a-4b38-8632-c2e273c3cc5d")
-    auth = {"x-umami-api-key": key, "Accept": "application/json"}
-    base = f"https://api.umami.is/v1/websites/{site}"
+    browser = {"User-Agent": "Mozilla/5.0 (Macintosh) starredbill-morning-figures", "Accept": "application/json"}
+    if cfg.get("umami_share"):
+        gateway = "https://gateway-eu.umami.is/api"
+        share = http(f"{gateway}/share/{cfg['umami_share']}", headers=browser, method="GET")
+        site = share.get("websiteId", site)
+        auth = dict(browser, **{"x-umami-share-token": share["token"], "x-umami-share-context": "1"})
+        base, page_type = f"{gateway}/websites/{site}", "path"
+    else:
+        key = subprocess.run(["security", "find-generic-password", "-s", "starredbill-umami", "-w"],
+                             capture_output=True, text=True).stdout.strip()
+        if not key:
+            raise RuntimeError("not set up: no Umami share link in config.json and no API key in the Keychain")
+        auth = dict(browser, **{"x-umami-api-key": key})
+        base, page_type = f"https://api.umami.is/v1/websites/{site}", "url"
     today = dt.datetime.combine(dt.date.today(), dt.time())
     start = int((today - dt.timedelta(days=1)).timestamp() * 1000)
     end = int(today.timestamp() * 1000) - 1
@@ -135,13 +146,18 @@ def umami(cfg):
         return http(f"{base}/{path}?{urllib.parse.urlencode(q)}", headers=auth, method="GET")
 
     stats = get("stats")
-    flat = {k: (v.get("value") if isinstance(v, dict) else v) for k, v in stats.items()}
-    before = {k: (v.get("prev") if isinstance(v, dict) else None) for k, v in stats.items()}
+    # Newer Umami gives plain numbers plus a "comparison" block; older gives {"value", "prev"} pairs.
+    if "comparison" in stats:
+        before = stats.pop("comparison")
+        flat = stats
+    else:
+        flat = {k: (v.get("value") if isinstance(v, dict) else v) for k, v in stats.items()}
+        before = {k: (v.get("prev") if isinstance(v, dict) else None) for k, v in stats.items()}
 
     def metric(kind, limit=8):
         return [{"item": r.get("x"), "count": r.get("y")} for r in get("metrics", type=kind, limit=limit)]
 
-    return {"yesterday": flat, "day_before": before, "top_pages": metric("url"), "referrers": metric("referrer"),
+    return {"yesterday": flat, "day_before": before, "top_pages": metric(page_type), "referrers": metric("referrer"),
             "countries": metric("country"), "events": metric("event", 25)}
 
 

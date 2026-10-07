@@ -1,0 +1,47 @@
+{
+  "id": "kosher-michelin-star-restaurants",
+  "title": "Kosher Michelin Star Restaurants: Certified and On Request",
+  "description": "Mutra in Miami is the only kosher-certified restaurant with a Michelin star. Almost 300 others list kosher options on request: what that means, and where.",
+  "h1": "Kosher Michelin Star Restaurants",
+  "summary": "The one kosher restaurant with a Michelin star, and what the guide’s “Kosher options” tag really means.",
+  "section": "where",
+  "places": [
+    "miami",
+    "paris",
+    "new-york",
+    "london"
+  ],
+  "figure": "1 kosher restaurant with a star; {{kosherTotal}} with kosher options",
+  "keywords": [
+    "kosher michelin star restaurants",
+    "michelin star kosher restaurants",
+    "kosher michelin star",
+    "kosher michelin star restaurant"
+  ],
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "lang": "en-US",
+  "body": "<p class=\"lede\">Only one kosher restaurant holds a Michelin star: Mutra in North Miami, which won it in May 2026 and is supervised by Kosher Miami. The MICHELIN Guide lists {{kosherTotal}} starred restaurants with “Kosher options”, Mutra included, but at the others that means dishes on request, not a kosher kitchen.</p>\n<p>Until this year, anyone looking for Michelin star kosher restaurants found none at all. A <a data-guide=\"what-is-a-michelin-star\">Michelin star</a> and a kashrut certificate had simply never hung on the same wall. Here is the one restaurant that has both, what the guide’s “Kosher options” tag does and doesn’t promise, and the cities where you have the most restaurants to ask: Paris ({{kosher_paris}}) and New York ({{kosher_new_york}}).</p>\n\n<h2 id=\"mutra\">Mutra: the first kosher restaurant with a Michelin star</h2>\n<p>Chef Raz Shabtai opened Mutra in North Miami in February 2025 and named it after his Jerusalem-born grandmother. On May 28, 2026, the MICHELIN Guide gave it one star and called it <a href=\"https://guide.michelin.com/en/article/dining-out/he-michelin-guide-s-first-ever-starred-kosher-restaurant-is-raising-the-bar-in-miami\">the world’s first kosher restaurant to earn one</a>. Shabtai calls his cooking Jerusalem cuisine; the inspectors singled out beets with ajo blanco and beetroot sorbet, and a lamb kebab with smoked eggplant cream.</p>\n<p>Mutra is a meat restaurant, so there is no dairy in the kitchen. It is on the register of <a href=\"https://koshermiami.org/establishments/Mutra\">Kosher Miami</a>, the Vaad Hakashrus of Miami-Dade, which lists it as a meat establishment with pas Yisroel bread throughout. Dinner is à la carte, with dishes from about $47 to $83; its row on our <a href=\"/usa/florida/miami/#r=mutra\">Miami restaurant prices page</a> has the latest figures. Supervision can change, so check the register before you go.</p>\n<p>The nearest thing before Mutra was <a href=\"https://guide.michelin.com/en/catalunya/barcelona/restaurant/xerta\">Xerta</a> in Barcelona. In 2022 the one-star restaurant began cooking kosher meals in a separate kitchen, on request and under a Chabad rabbi’s supervision, <a href=\"https://www.jta.org/2022/07/15/global/barcelona-gets-worlds-first-michelin-starred-kosher-restaurant-amid-push-to-draw-jewish-tourists\">JTA reported</a>. Its everyday kitchen was not kosher, and it lost its star in November 2024.</p>\n\n<h2 id=\"options\">What “Kosher options” means in the MICHELIN Guide</h2>\n<p>The guide’s restaurant pages and search filters list special diets: vegetarian, vegan, gluten-free, halal and kosher. Michelin’s own label is “Kosher options”, and it records what each restaurant tells the guide it can offer. {{kosherTotal}} of the world’s {{total}} starred restaurants carry it, about {{kosherPct}}, including Le Bernardin and Per Se in New York, both of which serve shellfish.</p>\n<p>So the tag is a promise to try, not a kosher kitchen. Depending on the restaurant, it can mean a meal brought in sealed from a certified kosher caterer, or dishes cooked without pork, shellfish or mixing meat and dairy. Neither is the same as supervision.</p>\n<p>Certification is different. A kashrut agency (in the US the OU, OK, Star-K or a city’s own Vaad; in Paris the Beth Din de Paris; in London KLBD or the Sephardi Kashrut Authority) checks where every ingredient comes from, keeps meat and dairy apart and puts a supervisor, a mashgiach, in the kitchen. Each agency publishes a list of the places it certifies, and that list is the proof to trust.</p>\n\n<h2 id=\"cities\">Where to find starred restaurants with kosher options</h2>\n<p>Restaurants with the tag are spread across {{kosherCities}} towns and cities in {{kosherCountries}} countries. Paris has the most, {{kosher_paris}}, among them the three-star Le Gabriel and Plénitude. In the United States {{kosher_usa}} starred restaurants carry it, led by New York with {{kosher_new_york}} and Washington DC with {{kosher_washington_dc}}.</p>\n{{table:diet-kosher-cities}}\n\n<h2 id=\"paris\">Paris: {{kosher_paris}} starred restaurants with kosher options</h2>\n{{table:diet-kosher-paris}}\n\n<h2 id=\"new-york\">New York: {{kosher_new_york}} starred restaurants with kosher options</h2>\n{{table:diet-kosher-new-york}}\n\n<h2 id=\"london\">London: {{kosher_london}} starred restaurants with kosher options</h2>\n{{table:diet-kosher-london}}\n\n<h2 id=\"booking\">How to ask for a kosher meal at a starred restaurant</h2>\n<ol>\n<li><strong>Ask before you book, not at the table.</strong> Find out what “kosher options” means there: a sealed meal from a certified caterer, or dishes from the regular kitchen.</li>\n<li><strong>Ask who supervises it.</strong> If a caterer is involved, ask which agency certifies it, and check that agency’s list.</li>\n<li><strong>Give plenty of notice.</strong> Ordering in a certified meal takes time, so a week ahead is safest, and more for Friday night.</li>\n<li><strong>Ask about the bill.</strong> A caterer’s meal may be charged on top of the tasting menu, or instead of it.</li>\n</ol>\n<p>Muslim diners face the same gap between a guide’s tag and a certificate, which our guide to <a data-guide=\"halal-michelin-star-restaurants\">halal Michelin star restaurants</a> covers city by city.</p>\n",
+  "faq": [
+    {
+      "q": "Is there a kosher Michelin star restaurant?",
+      "a": "Yes, one: Mutra in North Miami, Florida, which won a star in May 2026 and is supervised by Kosher Miami. It is the first kosher restaurant to hold a Michelin star."
+    },
+    {
+      "q": "Are there Michelin star restaurants in Israel?",
+      "a": "No. The MICHELIN Guide doesn’t cover Israel, so no restaurant there, kosher or not, can hold a star. Israel’s Tourism Ministry approved a plan in 2023 to bring the guide to Tel Aviv, but no edition has been published."
+    },
+    {
+      "q": "Are there kosher Michelin star restaurants in New York?",
+      "a": "None is kosher-certified. {{kosher_new_york}} of New York’s starred restaurants, including Le Bernardin, Per Se and Masa, tell the MICHELIN Guide they can offer kosher options on request. The nearest certified kosher restaurant with a star is Mutra in Miami."
+    },
+    {
+      "q": "What does “Kosher options” mean in the MICHELIN Guide?",
+      "a": "That the restaurant says it can prepare kosher dishes or meals, usually with notice. It is information the restaurant gives the guide, not kosher certification, so ask what it involves and which agency, if any, supervises it."
+    },
+    {
+      "q": "How many Michelin star restaurants offer kosher options?",
+      "a": "{{kosherTotal}} in {{kosherCountries}} countries, as of {{checked}}: {{kosherSplit}} restaurants. Only Mutra in Miami is a kosher restaurant."
+    }
+  ]
+}

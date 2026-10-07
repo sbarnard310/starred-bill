@@ -1946,6 +1946,7 @@ def guide_stats():
     stats.update(list_stats(live, stats["guideYear"]))
     stats.update(popular_stats())
     stats.update(chef_stats(live))
+    stats.update(diet_stats(live))
     return stats
 
 
@@ -2024,6 +2025,89 @@ def list_stats(live, year):
     gained, lost = three_star_changes(year)
     out["new3"], out["lost3"] = str(len(gained)), str(len(lost))
     return out
+
+
+# The kosher and halal guides: starred restaurants the MICHELIN Guide lists with "Kosher options" or "Halal options"
+# (`diets`). These are what restaurants tell the guide they can offer, often on request, not certification.
+DIET_TAGS = ("kosher", "halal")
+DIET_WORDS = {"kosher": "Kosher options", "halal": "Halal options"}
+# The cities whose tagged restaurants the guides list in full, as {{table:diet-kosher-paris}} and so on.
+DIET_LISTS = {"kosher": ("paris", "new-york", "london"), "halal": ("london", "dubai", "paris", "new-york")}
+DIET_CITIES_MAX = 15  # rows in {{table:diet-kosher-cities}} / {{table:diet-halal-cities}}
+
+
+DIET_CITY_STATES = ("singapore", "hong-kong", "macau", "monaco")
+
+
+def diet_city(r):
+    """The city a tagged restaurant counts under in the diet guides: city-states by their own name, else its town."""
+    return r["cityName"] if r["cityType"] == "country" and r["country"] in DIET_CITY_STATES else place_name(r)
+
+
+def diet_stats(live):
+    """Figures for the kosher and halal guides, e.g. {{kosherTotal}}, {{halalSplit}}, {{kosherCities}},
+    and {{halal_london}} / {{kosher_france}} (tagged restaurants in any place, by its id)."""
+    out = {}
+    for tag in DIET_TAGS:
+        rows = [r for r in live if tag in (r.get("diets") or [])]
+        c = [sum(1 for r in rows if r["stars"] == n) for n in (1, 2, 3)]
+        out.update({f"{tag}Total": f"{len(rows):,}", f"{tag}Split": star_split(c), f"{tag}3": str(c[2]),
+                    f"{tag}Countries": str(len({r["country"] for r in rows})), f"{tag}Cities": str(len({diet_city(r) for r in rows})),
+                    f"{tag}Pct": f"{round(100 * len(rows) / max(1, len(live)))}%"})
+        for r in rows:
+            for p in set(r["_chain"]):
+                key = f"{tag}_{p.replace('-', '_')}"
+                out[key] = str(int(out.get(key, "0")) + 1)
+    return out
+
+
+def diet_blocks(live, name_html, stars_cell, price_cell, note):
+    """{{table:diet-kosher-cities}} and -halal-cities (the cities with the most tagged starred restaurants), and
+    {{table:diet-kosher-paris}} etc. (every tagged restaurant in a city, from DIET_LISTS)."""
+    blocks = {}
+    usd = lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"]
+    def lunch_cell(r):
+        if r.get("lunch") is None:
+            return '<span class="muted">–</span>'
+        return money(r["lunch"], r["cur"]) + ("" if r["cur"] == "USD" else f'<br><span class="muted">about {usd_text(r["lunch"] / CURRENCIES[r["cur"]]["perUSD"])}</span>')
+    for tag in DIET_TAGS:
+        rows = [r for r in live if tag in (r.get("diets") or [])]
+        word = DIET_WORDS[tag]
+        caveat = (f"Restaurants the MICHELIN Guide lists with “{word}”, as each restaurant reports them: dishes it can prepare, "
+                  f"usually on request, not {tag} certification. Ask when you book, and give as much notice as you can.")
+        cities = {}
+        for r in rows:
+            cities.setdefault(diet_city(r), []).append(r)
+        top = sorted(cities.items(), key=lambda kv: (-len(kv[1]), -sum(r["stars"] for r in kv[1]), kv[0]))[:DIET_CITIES_MAX]
+        body = ""
+        for city, rs in top:
+            first = rs[0]
+            # The page named after the city, wherever it sits in the restaurants' chain (a city, a region like Shanghai, a city-state).
+            pages = [{p for p in r["_chain"] if places[p]["name"] == city} for r in rs]
+            shared = set.intersection(*pages)
+            path = places[sorted(shared)[0]]["path"] if shared else None
+            split = " · ".join(f'{stars_cell(n)}&nbsp;{sum(1 for r in rs if r["stars"] == n)}' for n in (3, 2, 1) if any(r["stars"] == n for r in rs))
+            priced = sorted((r for r in rs if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=usd)
+            cheapest = (f'{price_cell(priced[0])}<br><span class="muted">{e(priced[0]["name"])}</span>') if priced else '<span class="muted">–</span>'
+            name = f'<a href="{e(path)}">{e(city)}</a>' if path else e(city)
+            body += (f'<tr><td data-label="City">{name}</td><td data-label="Country">{e(places[first["country"]]["name"])}</td>'
+                     f'<td class="num" data-label="Restaurants"><strong>{len(rs)}</strong></td>'
+                     f'<td data-label="Stars">{split}</td><td class="num" data-label="Lowest tasting menu">{cheapest}</td></tr>')
+        heads = "".join(f'<th scope="col">{h}</th>' for h in ("City", "Country", "Restaurants", "Stars", "Lowest tasting menu"))
+        blocks[f"diet-{tag}-cities"] = (f'<div class="table-wrap"><table class="guide-table data"><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>'
+                                        + note(caveat + " Prices are the main dinner tasting menu per person in local currency, before service and drinks."))
+        for pid in DIET_LISTS[tag]:
+            here = sorted((r for r in rows if pid in r["_chain"]), key=lambda r: (-r["stars"], r["name"].lower()))
+            body = "".join(
+                f'<tr><td data-label="Restaurant">{name_html(r)}</td><td data-label="Stars">{stars_cell(r["stars"])}</td>'
+                f'<td data-label="Cuisine">{e(r.get("cuisine") or "–")}</td><td data-label="Area">{e((r.get("area") or "–").split(", ")[0])}</td>'
+                f'<td class="num" data-label="Tasting menu, per person">{price_cell(r)}</td><td class="num" data-label="Lunch, per person">{lunch_cell(r)}</td></tr>'
+                for r in here)
+            heads = "".join(f'<th scope="col">{h}</th>' for h in ("Restaurant", "Stars", "Cuisine", "Area", "Tasting menu, per person", "Lunch, per person"))
+            blocks[f"diet-{tag}-{pid}"] = (f'<div class="table-wrap"><table class="guide-table data"><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>'
+                                           + note(caveat + " Names open each restaurant’s prices on The Starred Bill and arrows its MICHELIN Guide page. "
+                                                  "Prices per person before service and drinks; lunch is the cheapest set lunch, where there is one."))
+    return blocks
 
 
 def us_state(r):
@@ -2324,6 +2408,7 @@ def guide_blocks(stats):
         "Prices per person before service (usually 12.5–15% in London) and drinks, with US dollars at recent exchange rates. "
         "Set lunch is the cheapest set menu at lunch, where there is one.")
     blocks.update(chef_blocks(live, links, stars_cell, note))
+    blocks.update(diet_blocks(live, name_html, stars_cell, price_cell, note))
     blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
     return blocks
 

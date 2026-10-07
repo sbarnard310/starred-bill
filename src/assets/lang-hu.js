@@ -13,7 +13,7 @@
     navCompare: "Összehasonlítás", navMap: "Térkép", navStars: "Csillagok szerint", navMethod: "Módszer", navContact: "Kapcsolat", navDestinations: "Úti célok", navGuides: "Útmutatók", navNear: "A közelemben", navPick: "Segíts választani", wishlist: "Kívánságlista", wishTitle: "A kívánságlistád",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · A Michelin-kalauz éttermei",
-    heroTitle: "Mennyibe <em>kerül</em> egy Michelin-csillag {placeIn}?",
+    heroTitle: "Michelin-csillagos éttermek {placeIn}: mennyibe <em>kerülnek</em>?",
     heroText: "Vacsora, ebéd és borpárosítás árai fejenként a csillagos éttermekben {placeIn}, egymás mellett. Keress név vagy konyha szerint, szűrj csillagra vagy konyhára, és mentsd a kívánságlistádra, amit ki szeretnél próbálni.",
     crumbHome: "Minden úti cél", explore: "Felfedezés", exploreCities: "Városok – {country}", exploreDistricts: "Környék – {country}", alsoIn: "Itt is", nearby: "A közelben",
     figCount: "Éttermek", figMin: "Legolcsóbb vacsoramenü", figMax: "Legdrágább vacsoramenü", figMinLunch: "Legolcsóbb ebédmenü", figMaxLunch: "Legdrágább ebédmenü",

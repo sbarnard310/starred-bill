@@ -14,7 +14,7 @@
     navCompare: "Σύγκριση", navMap: "Χάρτης", navStars: "Ανά αστέρια", navMethod: "Μέθοδος", navContact: "Επικοινωνία", navDestinations: "Προορισμοί", navGuides: "Οδηγοί", navNear: "Κοντά μου", navPick: "Βοήθεια επιλογής", wishlist: "Λίστα επιθυμιών", wishTitle: "Η λίστα επιθυμιών σας",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Εστιατόρια του Οδηγού Michelin",
-    heroTitle: "Πόσο <em>κοστίζει</em> ένα αστέρι Michelin {placeIn};",
+    heroTitle: "Εστιατόρια με αστέρι Michelin {placeIn}: πόσο <em>κοστίζουν</em>;",
     heroText: "Τιμές ανά άτομο για δείπνο, γεύμα και συνοδεία κρασιών στα βραβευμένα εστιατόρια {placeIn}, δίπλα δίπλα. Αναζητήστε με όνομα ή κουζίνα, φιλτράρετε με αστέρια ή κουζίνα και αποθηκεύστε στη λίστα επιθυμιών όσα θέλετε να δοκιμάσετε.",
     crumbHome: "Όλοι οι προορισμοί", explore: "Εξερευνήστε", exploreCities: "Πόλεις – {country}", exploreDistricts: "Περιοχές – {country}", alsoIn: "Επίσης σε", nearby: "Κοντά",
     figCount: "Εστιατόρια", figMin: "Φθηνότερο μενού δείπνου", figMax: "Ακριβότερο μενού δείπνου", figMinLunch: "Φθηνότερο μενού γεύματος", figMaxLunch: "Ακριβότερο μενού γεύματος",

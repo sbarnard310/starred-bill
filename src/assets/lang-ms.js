@@ -15,7 +15,7 @@
     navCompare: "Banding", navMap: "Peta", navStars: "Ikut bintang", navMethod: "Kaedah", navContact: "Hubungi", navDestinations: "Destinasi", navGuides: "Panduan", navNear: "Berhampiran", navPick: "Bantu saya memilih", wishlist: "Senarai hajat", wishTitle: "Senarai hajat anda",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restoran Panduan Michelin",
-    heroTitle: "Berapakah <em>harga</em> sebutir bintang Michelin {placeIn}?",
+    heroTitle: "Restoran berbintang Michelin {placeIn}: berapa <em>harganya</em>?",
     heroText: "Harga seorang untuk makan malam, makan tengah hari dan padanan wain di restoran berbintang {placeIn}, bersebelahan. Cari ikut nama atau masakan, tapis ikut bintang atau masakan, dan simpan yang ingin anda cuba dalam senarai hajat.",
     crumbHome: "Semua destinasi", explore: "Teroka", exploreCities: "Bandar di {country}", exploreDistricts: "Sekitar {country}", alsoIn: "Juga di", nearby: "Berdekatan",
     figCount: "Restoran", figMin: "Menu makan malam termurah", figMax: "Menu makan malam termahal", figMinLunch: "Menu makan tengah hari termurah", figMaxLunch: "Menu makan tengah hari termahal",

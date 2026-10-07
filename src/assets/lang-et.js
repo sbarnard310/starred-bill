@@ -11,7 +11,7 @@
     navCompare: "Võrdle", navMap: "Kaart", navStars: "Tähtede järgi", navMethod: "Metoodika", navContact: "Kontakt", navDestinations: "Sihtkohad", navGuides: "Juhendid", navNear: "Minu lähedal", navPick: "Aita valida", wishlist: "Soovinimekiri", wishTitle: "Sinu soovinimekiri",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Michelini teejuhi restoranid",
-    heroTitle: "Mis <em>maksab</em> Michelini täht {placeIn}?",
+    heroTitle: "Michelini tärniga restoranid {placeIn}: mis need <em>maksavad</em>?",
     heroText: "Õhtusöögi, lõunasöögi ja veinipaketi hinnad inimese kohta tähistatud restoranides {placeIn}, kõrvuti. Otsi nime või köögi järgi, filtreeri tähtede või köögi järgi ja salvesta soovinimekirja need, mida tahad proovida.",
     crumbHome: "Kõik sihtkohad", explore: "Avasta", exploreCities: "Linnad – {country}", exploreDistricts: "Piirkonnad – {country}", alsoIn: "Ka", nearby: "Läheduses",
     figCount: "Restoranid", figMin: "Odavaim õhtusöögimenüü", figMax: "Kalleim õhtusöögimenüü", figMinLunch: "Odavaim lõunamenüü", figMaxLunch: "Kalleim lõunamenüü",

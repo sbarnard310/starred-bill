@@ -14,7 +14,7 @@
     navCompare: "Ihambing", navMap: "Mapa", navStars: "Ayon sa bituin", navMethod: "Paraan", navContact: "Makipag-ugnayan", navDestinations: "Mga destinasyon", navGuides: "Mga gabay", navNear: "Malapit sa akin", navPick: "Tulungan akong pumili", wishlist: "Wishlist", wishTitle: "Ang iyong wishlist",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Mga restawran sa MICHELIN Guide",
-    heroTitle: "Magkano ang <em>halaga</em> ng isang Michelin star {placeIn}?",
+    heroTitle: "Mga Michelin star na restawran {placeIn}: magkano ang <em>halaga</em>?",
     heroText: "Mga presyo bawat tao ng hapunan, tanghalian at wine pairing sa mga restawrang may bituin {placeIn}, magkakatabi. Maghanap ayon sa pangalan o lutuin, salain ayon sa bituin o lutuin, at i-save sa wishlist ang mga gusto mong subukan.",
     crumbHome: "Lahat ng destinasyon", explore: "Tuklasin", exploreCities: "Mga lungsod sa {country}", exploreDistricts: "Sa paligid ng {country}", alsoIn: "Kasama rin sa", nearby: "Malapit",
     figCount: "Mga restawran", figMin: "Pinakamurang menu sa hapunan", figMax: "Pinakamahal na menu sa hapunan", figMinLunch: "Pinakamurang menu sa tanghalian", figMaxLunch: "Pinakamahal na menu sa tanghalian",

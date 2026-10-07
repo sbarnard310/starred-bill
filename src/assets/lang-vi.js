@@ -14,7 +14,7 @@
     navCompare: "So sánh", navMap: "Bản đồ", navStars: "Theo sao", navMethod: "Phương pháp", navContact: "Liên hệ", navDestinations: "Điểm đến", navGuides: "Cẩm nang", navNear: "Gần tôi", navPick: "Giúp tôi chọn", wishlist: "Danh sách muốn đến", wishTitle: "Danh sách muốn đến của bạn",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Nhà hàng trong Cẩm nang MICHELIN",
-    heroTitle: "Một sao Michelin {placeIn} <em>giá</em> bao nhiêu?",
+    heroTitle: "Nhà hàng sao Michelin {placeIn}: <em>giá</em> bao nhiêu?",
     heroText: "Giá mỗi người cho bữa tối, bữa trưa và rượu vang kết hợp tại các nhà hàng gắn sao {placeIn}, đặt cạnh nhau. Tìm theo tên hoặc phong cách ẩm thực, lọc theo số sao hoặc ẩm thực, và lưu những nơi bạn muốn thử vào danh sách muốn đến.",
     crumbHome: "Tất cả điểm đến", explore: "Khám phá", exploreCities: "Các thành phố của {country}", exploreDistricts: "Quanh {country}", alsoIn: "Cũng thuộc", nearby: "Lân cận",
     figCount: "Nhà hàng", figMin: "Thực đơn tối rẻ nhất", figMax: "Thực đơn tối đắt nhất", figMinLunch: "Thực đơn trưa rẻ nhất", figMaxLunch: "Thực đơn trưa đắt nhất",

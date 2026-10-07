@@ -15,7 +15,7 @@
     navCompare: "Karşılaştır", navMap: "Harita", navStars: "Yıldıza göre", navMethod: "Yöntem", navContact: "İletişim", navDestinations: "Destinasyonlar", navGuides: "Rehberler", navNear: "Yakınımda", navPick: "Seçmeme yardım et", wishlist: "İstek listesi", wishTitle: "İstek listeniz",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Michelin Rehberi restoranları",
-    heroTitle: "{placeIn} bir Michelin yıldızı ne <em>kadar</em>?",
+    heroTitle: "{placeIn} Michelin yıldızlı restoranlar ve <em>fiyatları</em>",
     heroText: "{placeIn} yıldızlı restoranlarda kişi başı akşam yemeği, öğle yemeği ve şarap eşleştirme fiyatları yan yana. Ada veya mutfağa göre arayın, yıldıza veya mutfağa göre filtreleyin ve denemek istediklerinizi istek listenize kaydedin.",
     crumbHome: "Tüm destinasyonlar", explore: "Keşfet", exploreCities: "Şehirler – {country}", exploreDistricts: "Bölgeler – {country}", alsoIn: "Ayrıca", nearby: "Yakındakiler",
     figCount: "Restoranlar", figMin: "En ucuz akşam menüsü", figMax: "En pahalı akşam menüsü", figMinLunch: "En ucuz öğle menüsü", figMaxLunch: "En pahalı öğle menüsü",

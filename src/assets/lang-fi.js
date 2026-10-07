@@ -14,7 +14,7 @@
     navCompare: "Vertaa", navMap: "Kartta", navStars: "Tähtien mukaan", navMethod: "Menetelmä", navContact: "Yhteystiedot", navDestinations: "Kohteet", navGuides: "Oppaat", navNear: "Lähelläni", navPick: "Auta valitsemaan", wishlist: "Toivelista", wishTitle: "Toivelistasi",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Michelin-oppaan ravintolat",
-    heroTitle: "Mitä Michelin-tähti <em>maksaa</em> {placeIn}?",
+    heroTitle: "Michelin-tähtiravintolat {placeIn}: mitä ne <em>maksavat</em>?",
     heroText: "Illallisen, lounaan ja viinipaketin hinnat henkeä kohden tähtiravintoloissa {placeIn}, rinnakkain. Hae nimellä tai keittiön mukaan, suodata tähtien tai keittiön mukaan ja tallenna kokeiltavat ravintolat toivelistallesi.",
     crumbHome: "Kaikki kohteet", explore: "Tutki", exploreCities: "Kaupungit – {country}", exploreDistricts: "Alueet – {country}", alsoIn: "Myös", nearby: "Lähellä",
     figCount: "Ravintolat", figMin: "Edullisin illallismenu", figMax: "Kallein illallismenu", figMinLunch: "Edullisin lounasmenu", figMaxLunch: "Kallein lounasmenu",

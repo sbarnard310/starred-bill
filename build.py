@@ -14,8 +14,9 @@ import math
 import re
 import unicodedata
 import shutil
+import subprocess
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -84,11 +85,13 @@ for code in currency_data.get("switchable", []):
 site = read_json(CONTENT / "site.json") or {}
 
 places = {}
+source_files = {}  # each place's and restaurant's file, for the sitemap's last-changed dates
 for f in sorted((CONTENT / "places").glob("*.json")):
     p = tidy(read_json(f))
     if not isinstance(p, dict):
         continue
     pid = p.get("id", "")
+    source_files["place:" + pid] = f.relative_to(ROOT).as_posix()
     where = f"{f.relative_to(ROOT)} ({pid or p.get('name', '?')})"
     if not ID_PATTERN.fullmatch(pid):
         problem(where, "id must be lower-case letters, numbers and hyphens, e.g. new-york")
@@ -205,6 +208,7 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
     if r.get("noLunch") is False:
         del r["noLunch"]
     rid = f.stem
+    source_files[rid] = f.relative_to(ROOT).as_posix()
     if not ID_PATTERN.fullmatch(rid):
         problem(where, "file name must be lower-case letters, numbers and hyphens, e.g. the-ledbury.json")
     if rid in seen:
@@ -619,7 +623,7 @@ def build_place(p):
     for lang in langs:
         if lang == "en":
             texts = {
-                "description": description, "h1": f"What a Michelin star <em>costs</em> in {e(where)}.",
+                "description": description, "h1": f"Michelin star restaurants in {e(where)}: what they <em>cost</em>.",
                 "eyebrow": f"{p['name']} · Michelin Guide restaurants", "crumbHome": "All destinations",
                 "heroText": ((p.get("lead") or f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {where}, side by side.") + (" " + intro if intro else ""))
                 if starred else f"There are currently no restaurants with a Michelin star in {where}, but we'll update this page as soon as one appears.",
@@ -1366,11 +1370,11 @@ def build_home():
         + "".join(f'<a class="city-link" href="{q["path"]}">{e(q["name"])}</a> ' for q in c["cities"]) + "</article>"
         for c in countries)
     write("/", render("home.html", {
-        "title": "The Starred Bill · Michelin-starred restaurant prices",
+        "title": "Michelin Star Restaurants, With Prices · The Starred Bill",
         "description": e(f"Compare dinner, lunch and wine pairing prices at {len(starred):,} Michelin-starred restaurants in {len(countries)} countries, from London and Paris to Tokyo."),
         "canonical": SITE_URL + "/",
         "eyebrow": "Michelin star restaurants, priced",
-        "h1": "What a Michelin star <em>costs</em>, city by city.",
+        "h1": "Michelin star restaurants: what they <em>cost</em>, city by city.",
         "heroText": "Dinner, lunch and wine pairing prices per person at Michelin-starred restaurants, side by side and linked to where each price came from.",
         # English only; Chinese names stay for searching.
         "destinations": cards, "data": as_json(only_langs(data, {"Zh"}, PAGE_TEXTS)), "homeUrl": data["homeUrl"],
@@ -2185,6 +2189,46 @@ def build_guides():
         "mainClass": "wrap prose guide guide-index", "data": data,
     }))
 
+def last_changed():
+    """The day each file in content/ (and the privacy page) last changed, from the git history, for the sitemap's
+    <lastmod>. Empty when there's no history to read (no git, or a shallow copy where every file looks new)."""
+    try:
+        run = lambda *a: subprocess.run(["git", "-c", "core.quotepath=off", *a], cwd=ROOT, capture_output=True, text=True, check=True).stdout
+        if run("rev-parse", "--is-shallow-repository").strip() == "true":
+            print("Note: the sitemap has no last-changed dates, as this copy of the repository has no history.")
+            return {}
+        log = run("log", "--format=@%ct", "--name-only", "--", "content", "src/privacy.html")
+    except (OSError, subprocess.CalledProcessError):
+        return {}
+    days, day = {}, None
+    for line in log.splitlines():
+        if line.startswith("@"):
+            day = datetime.fromtimestamp(int(line[1:]), timezone.utc).date().isoformat()
+        elif line and line not in days:  # newest first, so the first sighting is the latest change
+            days[line] = day
+    return days
+
+
+def sitemap_dates():
+    """Each sitemap address's last-changed day: a destination page (in every language) changes when its place file or any of
+    its restaurants does; a guide on its `updated` date; the homepage, Near me and Help me pick with the latest restaurant."""
+    days = last_changed()
+    if not days:
+        return {}
+    latest = lambda files: max((days[f] for f in files if f in days), default=None)
+    out = {}
+    for p in pages:
+        day = latest([source_files.get("place:" + p["id"])] + [source_files[r["id"]] for r in members(p)])
+        for lang in place_langs(p):
+            out[lang_path(p["path"], lang)] = day
+    out["/"] = out["/near-me/"] = out["/pick/"] = latest(source_files.values())
+    for gid, g in guides.items():
+        out[f"/guides/{gid}/"] = g["updated"]
+    out["/guides/"] = max((g["updated"] for g in guides.values()), default=None)
+    out["/privacy/"] = days.get("src/privacy.html")
+    return out
+
+
 def build_extras():
     shutil.copy2(SRC / "favicon.svg", OUT / "favicon.svg")
     shutil.copy2(SRC / "404.html", OUT / "404.html")
@@ -2198,9 +2242,11 @@ def build_extras():
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
     urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) for lang in place_langs(p)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + ["/privacy/"]
+    dates = sitemap_dates()
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "".join(f"  <url><loc>{SITE_URL}{u}</loc></url>\n" for u in urls) + "</urlset>\n", "utf-8")
+        + "".join(f"  <url><loc>{SITE_URL}{u}</loc>" + (f"<lastmod>{dates[u]}</lastmod>" if dates.get(u) else "") + "</url>\n" for u in urls)
+        + "</urlset>\n", "utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n", "utf-8")
 
 

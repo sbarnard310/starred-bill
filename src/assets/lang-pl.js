@@ -14,7 +14,7 @@
     navCompare: "Porównanie", navMap: "Mapa", navStars: "Według gwiazdek", navMethod: "Metoda", navContact: "Kontakt", navDestinations: "Kierunki", navGuides: "Poradniki", navNear: "W pobliżu", navPick: "Pomóż mi wybrać", wishlist: "Ulubione", wishTitle: "Twoje ulubione",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restauracje z Przewodnika Michelin",
-    heroTitle: "Ile <em>kosztuje</em> gwiazdka Michelin {placeIn}?",
+    heroTitle: "Restauracje z gwiazdką Michelin {placeIn}: ile <em>kosztują</em>?",
     heroText: "Ceny kolacji, lunchu i dobranych win za osobę w restauracjach z gwiazdkami {placeIn}, obok siebie. Szukaj po nazwie lub kuchni, filtruj według gwiazdek lub kuchni i zapisuj w ulubionych miejsca, które chcesz odwiedzić.",
     crumbHome: "Wszystkie kierunki", explore: "Odkrywaj", exploreCities: "Miasta – {country}", exploreDistricts: "Okolice – {country}", alsoIn: "Także w", nearby: "W pobliżu",
     figCount: "Restauracje", figMin: "Najtańsze menu kolacyjne", figMax: "Najdroższe menu kolacyjne", figMinLunch: "Najtańsze menu lunchowe", figMaxLunch: "Najdroższe menu lunchowe",

@@ -13,7 +13,7 @@
     navCompare: "Поређење", navMap: "Мапа", navStars: "По звездицама", navMethod: "Метод", navContact: "Контакт", navDestinations: "Дестинације", navGuides: "Водичи", navNear: "У близини", navPick: "Помози ми да изаберем", wishlist: "Листа жеља", wishTitle: "Ваша листа жеља",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Ресторани из Мишленовог водича",
-    heroTitle: "Колико <em>кошта</em> Мишленова звездица {placeIn}?",
+    heroTitle: "Ресторани са Мишленовом звездицом {placeIn}: колико <em>коштају</em>?",
     heroText: "Цене вечере, ручка и винске пратње по особи у ресторанима са звездицом {placeIn}, једна поред друге. Претражујте по називу или кухињи, филтрирајте по звездицама или кухињи и сачувајте на листу жеља оне које желите да пробате.",
     crumbHome: "Све дестинације", explore: "Истражите", exploreCities: "Градови – {country}", exploreDistricts: "Области – {country}", alsoIn: "Такође у", nearby: "У близини",
     figCount: "Ресторани", figMin: "Најјефтинији вечерњи мени", figMax: "Најскупљи вечерњи мени", figMinLunch: "Најјефтинији мени за ручак", figMaxLunch: "Најскупљи мени за ручак",

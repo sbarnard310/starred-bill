@@ -18,7 +18,7 @@
     navCompare: "比较", navMap: "地图", navStars: "星级", navMethod: "说明", navContact: "联系我们", navDestinations: "目的地", navGuides: "指南", navNear: "我附近", navPick: "帮我挑选", wishlist: "心愿单", wishTitle: "你的心愿单",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · 米其林指南餐厅",
-    heroTitle: "在{place}，一颗米其林星<em>要价</em>多少？",
+    heroTitle: "{place}米其林星级餐厅：<em>价格</em>一览",
     heroText: "并列比较{place}米其林星级餐厅的人均晚餐、午餐与配酒价格。可按名称或菜系搜索、按星级或菜系筛选，也能把想去的餐厅加入心愿单。",
     crumbHome: "所有目的地", explore: "探索", exploreCities: "{country}的城市", exploreDistricts: "{country}各区", alsoIn: "也属于", nearby: "邻近地区",
     figCount: "星级餐厅", figMin: "最便宜晚餐套餐", figMax: "最贵晚餐套餐", figMinLunch: "最便宜午餐套餐", figMaxLunch: "最贵午餐套餐",

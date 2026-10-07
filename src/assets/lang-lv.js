@@ -11,7 +11,7 @@
     navCompare: "Salīdzināt", navMap: "Karte", navStars: "Pēc zvaigznēm", navMethod: "Metode", navContact: "Kontakti", navDestinations: "Galamērķi", navGuides: "Ceļveži", navNear: "Tuvumā", navPick: "Palīdzi izvēlēties", wishlist: "Vēlmju saraksts", wishTitle: "Jūsu vēlmju saraksts",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Michelin ceļveža restorāni",
-    heroTitle: "Cik <em>maksā</em> Michelin zvaigzne {placeIn}?",
+    heroTitle: "Michelin zvaigžņu restorāni {placeIn}: cik tie <em>maksā</em>?",
     heroText: "Vakariņu, pusdienu un vīnu pāru cenas vienai personai restorānos ar zvaigznēm {placeIn}, blakus. Meklējiet pēc nosaukuma vai virtuves, filtrējiet pēc zvaigznēm vai virtuves un saglabājiet vēlmju sarakstā tos, kurus gribat izmēģināt.",
     crumbHome: "Visi galamērķi", explore: "Izpētīt", exploreCities: "Pilsētas – {country}", exploreDistricts: "Apkaime – {country}", alsoIn: "Arī", nearby: "Tuvumā",
     figCount: "Restorāni", figMin: "Lētākā vakariņu ēdienkarte", figMax: "Dārgākā vakariņu ēdienkarte", figMinLunch: "Lētākā pusdienu ēdienkarte", figMaxLunch: "Dārgākā pusdienu ēdienkarte",

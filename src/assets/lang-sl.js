@@ -14,7 +14,7 @@
     navCompare: "Primerjava", navMap: "Zemljevid", navStars: "Po zvezdicah", navMethod: "Metoda", navContact: "Stik", navDestinations: "Destinacije", navGuides: "Vodniki", navNear: "V bližini", navPick: "Pomagaj mi izbrati", wishlist: "Seznam želja", wishTitle: "Vaš seznam želja",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restavracije iz vodnika Michelin",
-    heroTitle: "Koliko <em>stane</em> Michelinova zvezdica {placeIn}?",
+    heroTitle: "Restavracije z Michelinovo zvezdico {placeIn}: koliko <em>stanejo</em>?",
     heroText: "Cene večerje, kosila in vinske spremljave na osebo v restavracijah z zvezdico {placeIn}, druga ob drugi. Iščite po imenu ali kuhinji, filtrirajte po zvezdicah ali kuhinji in shranite na seznam želja tiste, ki jih želite preizkusiti.",
     crumbHome: "Vse destinacije", explore: "Raziskujte", exploreCities: "Mesta – {country}", exploreDistricts: "Območja – {country}", alsoIn: "Tudi v", nearby: "V bližini",
     figCount: "Restavracije", figMin: "Najcenejši večerni meni", figMax: "Najdražji večerni meni", figMinLunch: "Najcenejši meni za kosilo", figMaxLunch: "Najdražji meni za kosilo",

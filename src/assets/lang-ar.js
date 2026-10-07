@@ -23,7 +23,7 @@
     navCompare: "مقارنة", navMap: "الخريطة", navStars: "حسب النجوم", navMethod: "المنهجية", navContact: "تواصل معنا", navDestinations: "الوجهات", navGuides: "أدلة", navNear: "بالقرب مني", navPick: "ساعدني في الاختيار", wishlist: "المفضلة", wishTitle: "قائمتك المفضلة",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · مطاعم دليل ميشلان",
-    heroTitle: "كم <em>تكلّف</em> نجمة ميشلان {placeIn}؟",
+    heroTitle: "مطاعم حائزة على نجمة ميشلان {placeIn}: كم <em>تكلّف</em>؟",
     heroText: "أسعار العشاء والغداء ومرافقة النبيذ للشخص الواحد في المطاعم الحائزة على نجوم ميشلان {placeIn}، جنبًا إلى جنب. ابحث بالاسم أو المطبخ، وصفِّ النتائج حسب النجوم أو المطبخ، واحفظ المطاعم التي تودّ تجربتها في قائمتك المفضلة.",
     crumbHome: "كل الوجهات", explore: "استكشف", exploreCities: "مدن {country}", exploreDistricts: "في أنحاء {country}", alsoIn: "أيضًا في", nearby: "بالقرب",
     figCount: "مطاعم", figMin: "أرخص قائمة عشاء", figMax: "أغلى قائمة عشاء", figMinLunch: "أرخص قائمة غداء", figMaxLunch: "أغلى قائمة غداء",

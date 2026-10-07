@@ -13,7 +13,7 @@
     navCompare: "Qabbel", navMap: "Mappa", navStars: "Skont l-istilel", navMethod: "Metodu", navContact: "Ikkuntattjana", navDestinations: "Destinazzjonijiet", navGuides: "Gwidi", navNear: "Qribi", navPick: "Għinni nagħżel", wishlist: "Lista tax-xewqat", wishTitle: "Il-lista tax-xewqat tiegħek",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Ristoranti fil-Gwida Michelin",
-    heroTitle: "Kemm <em>tiswa</em> stilla Michelin {placeIn}?",
+    heroTitle: "Ristoranti bi stilla Michelin {placeIn}: kemm <em>jiswew</em>?",
     heroText: "Prezzijiet għal kull persuna tal-pranzu, l-ikla ta' nofsinhar u l-inbid magħżul fir-ristoranti bl-istilla {placeIn}, ħdejn xulxin. Fittex skont l-isem jew il-kċina, iffiltra skont l-istilel jew il-kċina, u żomm fil-lista tax-xewqat dawk li tixtieq tipprova.",
     crumbHome: "Id-destinazzjonijiet kollha", explore: "Esplora", exploreCities: "Bliet – {country}", exploreDistricts: "Inħawi – {country}", alsoIn: "Ukoll f'", nearby: "Fil-qrib",
     figCount: "Ristoranti", figMin: "L-irħas menu tal-pranzu", figMax: "L-ogħla menu tal-pranzu", figMinLunch: "L-irħas menu ta' nofsinhar", figMaxLunch: "L-ogħla menu ta' nofsinhar",

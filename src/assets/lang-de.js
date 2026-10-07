@@ -20,7 +20,7 @@
     navCompare: "Vergleich", navMap: "Karte", navStars: "Nach Sternen", navMethod: "Methode", navContact: "Kontakt", navDestinations: "Reiseziele", navGuides: "Ratgeber", navNear: "In meiner Nähe", navPick: "Entscheidungshilfe", wishlist: "Merkliste", wishTitle: "Deine Merkliste",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restaurants im Guide Michelin",
-    heroTitle: "Was ein Michelin-Stern {placeIn} <em>kostet</em>.",
+    heroTitle: "Michelin-Sternerestaurants {placeIn}: was sie <em>kosten</em>",
     heroText: "Preise pro Person für Abendessen, Mittagessen und Weinbegleitung in den Sternerestaurants {placeIn}, direkt nebeneinander. Suche nach Name oder Küche, filtere nach Sternen oder Küche und speichere die Restaurants, die du ausprobieren möchtest, auf deiner Merkliste.",
     crumbHome: "Alle Reiseziele", explore: "Entdecken", exploreCities: "Städte: {country}", exploreDistricts: "Rund um {country}", alsoIn: "Auch in", nearby: "In der Nähe",
     figCount: "Restaurants", figMin: "Günstigstes Abendmenü", figMax: "Teuerstes Abendmenü", figMinLunch: "Günstigstes Mittagsmenü", figMaxLunch: "Teuerstes Mittagsmenü",

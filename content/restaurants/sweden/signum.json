@@ -8,8 +8,8 @@
   "rating": 4.9,
   "reviews": 78,
   "dinnerType": "menu",
-  "dinner": 4000,
-  "dinnerNote": "Tasting menu (other menus from SEK 1,600)",
+  "dinner": 3500,
+  "dinnerNote": "Tasting menu, about 18 servings",
   "sourceType": "site",
   "source": "https://restaurantsignum.com/meny",
   "website": "https://restaurantsignum.com/",
@@ -24,5 +24,6 @@
   ],
   "chef": "Thomas Sjögren",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 1 600 kr)"
+  "dinnerNoteSv": "Avsmakningsmeny, cirka 18 serveringar",
+  "wine": 2000
 }

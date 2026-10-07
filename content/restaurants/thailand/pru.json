@@ -8,14 +8,14 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.4,
   "reviews": 346,
-  "dinner": 10900,
+  "dinner": 7500,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from THB 4,000)",
-  "dinnerNoteTh": "เมนูชิมที่ยาวที่สุด (เมนูอื่นเริ่มต้น 4,000 บาท)",
+  "dinnerNote": "Tasting menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
   "sourceType": "site",
   "source": "https://www.prurestaurant.com",
-  "lunchNote": "Open for lunch · Fri–Sat",
-  "lunchNoteTh": "เปิดมื้อกลางวัน · ศ.–ส.",
+  "lunchNote": "Lunch menu, plus service and VAT (++) · Fri–Sat",
+  "lunchNoteTh": "เมนูกลางวัน ยังไม่รวมค่าบริการและภาษี (++) · ศ.–ส.",
   "website": "https://www.prurestaurant.com",
   "lat": 8.0384939,
   "lng": 98.2765202,
@@ -25,5 +25,9 @@
     "vegetarian"
   ],
   "chef": "Jimmy Ophorst",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "lunch": 4000,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.prurestaurant.com"
 }

@@ -8,10 +8,10 @@
   "rating": 5,
   "reviews": 195,
   "dinnerType": "menu",
-  "dinner": 49,
-  "dinnerNote": "Tasting menu",
+  "dinner": 179,
+  "dinnerNote": "Tasting menu “Aufstieg” (shorter “Einstieg” €149)",
   "sourceType": "site",
-  "source": "https://www.marcel-von-winckelmann.de/_files/ugd/92966b_0b3de4bc7d1d457098136812cb187bdd.pdf",
+  "source": "https://www.marcel-von-winckelmann.de/_files/ugd/92966b_23d0788219ad40968335da53266cd7ef.pdf",
   "website": "https://www.marcel-von-winckelmann.de/restaurant",
   "lat": 48.5802555,
   "lng": 13.3986555,
@@ -21,10 +21,11 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü",
+  "dinnerNoteDe": "Menü „Aufstieg“ (kürzeres Menü „Einstieg“ 149 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "chef": "Marcel von Winckelmann",
-  "chefSource": "press"
+  "chefSource": "press",
+  "wine": 120
 }

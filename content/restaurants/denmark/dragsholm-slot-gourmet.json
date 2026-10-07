@@ -8,10 +8,10 @@
   "rating": 4.6,
   "reviews": 51,
   "dinnerType": "menu",
-  "dinner": 499,
-  "dinnerNote": "Tasting menu",
-  "sourceType": "site",
-  "source": "https://www.dragsholm-slot.dk/gastronomy/dragsholm-slot-gourmet",
+  "dinner": 1800,
+  "dinnerNote": "Tasting menu “Time & Place”, about 12 courses",
+  "sourceType": "press",
+  "source": "https://whiteguide.com/dk/da/restaurants/9439-restaurang-slotskokkenet-dragsholm-slot",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDa": "Kun middag",
@@ -26,5 +26,7 @@
     "vegan"
   ],
   "chef": "Rasmus Storm",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 1850,
+  "dinnerNoteDa": "Menuen “Tid & Sted”, cirka 12 retter"
 }

@@ -2193,7 +2193,7 @@ function track(name, data) {
   } catch (e) {}
 }
 // Google Analytics: only on the live site, and only after the visitor clicks Accept on the cookie banner.
-const GA_ID = "G-GE1KG403N4", CONSENT_KEY = "starredbill-consent", GA_HOSTS = ["starredbill.com", "www.starredbill.com"];
+const GA_ID = "G-J9CCRZ5Q62", CONSENT_KEY = "starredbill-consent", GA_HOSTS = ["starredbill.com", "www.starredbill.com"];
 const consentChoice = () => store.get(CONSENT_KEY, "");
 function loadAnalytics() {
   if (NOTRACK) return;

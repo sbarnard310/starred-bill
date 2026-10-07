@@ -8,11 +8,18 @@
   "rating": 4.8,
   "reviews": 237,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "noLunch": true,
-  "lunchNote": "Dinner only",
-  "lunchNoteDa": "Kun middag",
+  "dinner": 2000,
+  "dinnerNote": "Tasting menu (other menus from DKK 1,200)",
+  "wine": 1500,
+  "sourceType": "site",
+  "source": "https://titrinned.dk/menuen/",
+  "lunch": 850,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchWine": 750,
+  "lunchSourceType": "site",
+  "lunchSource": "https://titrinned.dk/frokost/",
+  "lunchNoteDa": "Frokostmenu",
   "website": "https://www.titrinned.dk",
   "lat": 55.5598623,
   "lng": 9.7546031,
@@ -25,5 +32,6 @@
     "kosher"
   ],
   "chef": "Michael Nørtoft",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDa": "Smagsmenu (andre menuer fra 1.200 kr.)"
 }

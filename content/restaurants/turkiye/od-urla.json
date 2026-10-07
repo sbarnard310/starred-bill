@@ -8,9 +8,11 @@
   "rating": 4.5,
   "reviews": 3529,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
+  "dinner": 6250,
+  "dinnerNote": "Tasting menu (other menus from TRY 5,350)",
   "wine": 5250,
-  "sourceType": "none",
+  "sourceType": "site",
+  "source": "https://cms.odurla.com/uploads/WEB_Sefin_Yolculugu_Tadim_Menuesue_Temmuz_2026_27592aea4e.pdf",
   "website": "https://odurla.com",
   "lat": 38.3446199,
   "lng": 26.7616803,
@@ -23,7 +25,7 @@
   ],
   "chef": "Osman Sezener",
   "chefSource": "michelin",
-  "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 5,350 itibarıyla)",
   "cuisineTr": "Modern Mutfak",
   "areaTr": "İzmir"
 }

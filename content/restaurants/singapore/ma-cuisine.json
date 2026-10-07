@@ -9,10 +9,6 @@
   "cuisineZh": "法國菜",
   "rating": 4.5,
   "reviews": 372,
-  "dinnerType": "spend",
-  "dinnerNote": "À la carte French bistro",
-  "dinnerNoteZh": "單點法式小館",
-  "sourceType": "none",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZh": "只供應晚餐",
@@ -20,5 +16,11 @@
   "lat": 1.278265,
   "lng": 103.841893,
   "placeId": "ChIJQwanoG0Z2jERsK-8U0ks7xw",
-  "michelinId": "561746"
+  "michelinId": "561746",
+  "dinnerType": "main",
+  "dinner": 138,
+  "dinnerNote": "À la carte French bistro; typical main course",
+  "dinnerNoteZh": "單點法式小館；主菜參考價",
+  "sourceType": "site",
+  "source": "https://macuisinesg.com/french-fine-dining-singapore/"
 }

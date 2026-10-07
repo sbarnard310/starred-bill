@@ -6,9 +6,6 @@
   "cuisine": "Vietnamese Contemporary",
   "rating": 4.1,
   "reviews": 2442,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
   "website": "https://anansaigon.com",
   "lat": 10.7719227,
   "lng": 106.7028706,
@@ -19,8 +16,14 @@
   ],
   "chef": "Peter Cuong Franklin",
   "chefSource": "michelin",
-  "dinnerNoteVi": "Thực đơn nếm thử; giá sẽ được bổ sung",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteVi": "Chỉ phục vụ bữa tối"
+  "lunchNoteVi": "Chỉ phục vụ bữa tối",
+  "dinnerType": "menu",
+  "dinner": 2984000,
+  "dinnerNote": "Saigon tasting menu, priced at US$115 (Chef Peter’s menu US$145)",
+  "dinnerNoteVi": "Thực đơn nếm thử Saigon, giá 115 USD (thực đơn của Chef Peter 145 USD)",
+  "wine": 1790000,
+  "sourceType": "site",
+  "source": "https://anansaigon.com/booking/"
 }

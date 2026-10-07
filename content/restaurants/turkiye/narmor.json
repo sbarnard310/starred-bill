@@ -8,8 +8,10 @@
   "rating": 4.6,
   "reviews": 142,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 7400,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://narimorurla.com/fine-dining",
   "website": "https://narimorurla.com/fine-dining",
   "lat": 38.3193131,
   "lng": 26.7672542,
@@ -19,7 +21,7 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "dinnerNoteTr": "Tadım menüsü",
   "cuisineTr": "Türk Mutfağı",
   "areaTr": "İzmir"
 }

@@ -10,10 +10,6 @@
   "cuisineZh": "川菜",
   "rating": 4.8,
   "reviews": 2864,
-  "dinnerType": "spend",
-  "dinnerNote": "À la carte Sichuan",
-  "dinnerNoteZh": "單點川菜",
-  "sourceType": "none",
   "lunchNote": "Open for lunch",
   "lunchNoteZh": "有供應午餐",
   "lunchType": "spend",
@@ -27,5 +23,11 @@
     "vegetarian-menu"
   ],
   "chef": "Chen Kentaro",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerType": "menu",
+  "dinner": 188,
+  "dinnerNote": "Set menu (minimum 2 guests); à la carte also available",
+  "dinnerNoteZh": "套餐（最少2位），另設單點",
+  "sourceType": "site",
+  "source": "https://shisenhanten.com.sg/assets/img/site_images/Shisen-Hanten_Refresh_Set-Menus_2026-1.pdf"
 }

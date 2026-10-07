@@ -8,8 +8,16 @@
   "rating": 4.9,
   "reviews": 194,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 1800,
+  "dinnerNote": "Tasting menu",
+  "wine": 1000,
+  "sourceType": "site",
+  "source": "https://www.alimentum.dk/menucard",
+  "lunch": 800,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.alimentum.dk/menucard",
   "website": "https://www.alimentum.dk",
   "lat": 57.0457734,
   "lng": 9.9292863,
@@ -21,5 +29,7 @@
     "halal"
   ],
   "chef": "Søren Birch",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDa": "Smagsmenu",
+  "lunchNoteDa": "Frokostmenu"
 }

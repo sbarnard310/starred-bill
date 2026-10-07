@@ -10,10 +10,6 @@
   "cuisineZh": "粵菜",
   "rating": 4.6,
   "reviews": 889,
-  "dinnerType": "spend",
-  "dinnerNote": "À la carte Cantonese, with set menus",
-  "dinnerNoteZh": "單點粵菜，另有套餐",
-  "sourceType": "none",
   "lunchNote": "Open for lunch",
   "lunchNoteZh": "有供應午餐",
   "lunchType": "spend",
@@ -29,5 +25,12 @@
     "vegan"
   ],
   "chef": "Cheung Siu Kong",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerType": "menu",
+  "dinner": 138,
+  "dinnerNote": "Set menu (minimum 2 guests); à la carte also available",
+  "dinnerNoteZh": "套餐（最少2位），另設單點",
+  "wine": 78,
+  "sourceType": "site",
+  "source": "https://mds-assets.marriott.com/cms-platform-for-marriott/sinrz-summer-pavilion/pdfs/summer-pavilion-set-menu.pdf"
 }

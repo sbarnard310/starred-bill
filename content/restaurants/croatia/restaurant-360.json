@@ -8,8 +8,11 @@
   "rating": 4.7,
   "reviews": 1245,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 186,
+  "dinnerNote": "Tasting menu (other menus from €108)",
+  "sourceType": "site",
+  "source": "https://360dubrovnik.com/our-food/",
+  "lunchNote": "Dinner only",
   "website": "https://www.360dubrovnik.com/",
   "lat": 42.6415506,
   "lng": 18.1115484,
@@ -20,8 +23,7 @@
   ],
   "chef": "Marijo Curić",
   "chefSource": "michelin",
-  "dinnerNoteHr": "Degustacijski meni; cijena će biti dodana",
+  "dinnerNoteHr": "Degustacijski meni (ostali meniji od 108 €)",
   "noLunch": true,
-  "lunchNote": "Dinner only",
   "lunchNoteHr": "Samo večera"
 }

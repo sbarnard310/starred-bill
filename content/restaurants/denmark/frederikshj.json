@@ -8,10 +8,13 @@
   "rating": 4.8,
   "reviews": 346,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "noLunch": true,
+  "dinner": 2800,
+  "dinnerNote": "Tasting menu",
+  "wine": 2000,
+  "sourceType": "site",
+  "source": "https://frederikshoj.com/restaurant-frederikshoj/prices/",
   "lunchNote": "Dinner only",
+  "noLunch": true,
   "lunchNoteDa": "Kun middag",
   "website": "https://frederikshoj.com/",
   "lat": 56.124947,
@@ -25,5 +28,6 @@
     "kosher"
   ],
   "chef": "Wassim Hallal",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNoteDa": "Smagsmenu"
 }

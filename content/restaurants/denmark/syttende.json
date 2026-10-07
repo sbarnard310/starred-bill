@@ -8,10 +8,13 @@
   "rating": 4.9,
   "reviews": 68,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "noLunch": true,
+  "dinner": 2495,
+  "dinnerNote": "Tasting menu",
+  "wine": 1995,
+  "sourceType": "site",
+  "source": "https://syttende.dk/maden",
   "lunchNote": "Dinner only",
+  "noLunch": true,
   "lunchNoteDa": "Kun middag",
   "website": "https://www.syttende.dk",
   "lat": 54.9139503,
@@ -23,5 +26,6 @@
     "gluten-free"
   ],
   "chef": "Peter Rødsgaard",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNoteDa": "Smagsmenu"
 }

@@ -8,8 +8,17 @@
   "rating": 4.7,
   "reviews": 363,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 2495,
+  "dinnerNote": "Tasting menu (other menus from DKK 1,795)",
+  "wine": 2200,
+  "sourceType": "site",
+  "source": "https://www.hennekirkebykro.dk/da/Mad",
+  "lunch": 795,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu",
+  "lunchWine": 750,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.hennekirkebykro.dk/da/Mad",
   "website": "https://www.hennekirkebykro.dk/",
   "lat": 55.7270112,
   "lng": 8.2423144,
@@ -19,5 +28,7 @@
     "vegetarian"
   ],
   "chef": "Paul Cunningham",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDa": "Smagsmenu (andre menuer fra 1.795 kr.)",
+  "lunchNoteDa": "Frokostmenu"
 }

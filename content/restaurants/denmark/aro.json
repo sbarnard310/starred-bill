@@ -8,10 +8,13 @@
   "rating": 4.8,
   "reviews": 247,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "noLunch": true,
+  "dinner": 1300,
+  "dinnerNote": "Tasting menu (other menus from DKK 700)",
+  "wine": 900,
+  "sourceType": "site",
+  "source": "https://www.restaurant-aro.dk/restaurant-aro/",
   "lunchNote": "Dinner only",
+  "noLunch": true,
   "lunchNoteDa": "Kun middag",
   "website": "https://restaurant-aro.dk",
   "lat": 55.4022012,
@@ -23,5 +26,6 @@
     "vegan"
   ],
   "chef": "Bjørn Jacobsen and Christoffer Schärfe",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNoteDa": "Smagsmenu (andre menuer fra 700 kr.)"
 }

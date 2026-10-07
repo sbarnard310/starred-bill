@@ -7,8 +7,10 @@
   "rating": 4.3,
   "reviews": 1190,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 6000,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "press",
+  "source": "https://mesprestiges.com/en/istanbul/places/casa-lavanda/menu",
   "website": "https://www.casalavanda.com.tr/",
   "lat": 41.0871196,
   "lng": 29.5117319,
@@ -22,6 +24,6 @@
   ],
   "chef": "Emre Şen",
   "chefSource": "michelin",
-  "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
+  "dinnerNoteTr": "Tadım menüsü",
   "cuisineTr": "Geleneksel Mutfak"
 }

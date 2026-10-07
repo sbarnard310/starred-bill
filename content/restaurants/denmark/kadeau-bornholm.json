@@ -8,10 +8,13 @@
   "rating": 4.5,
   "reviews": 290,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "noLunch": true,
+  "dinner": 2750,
+  "dinnerNote": "Tasting menu",
+  "wine": 1550,
+  "sourceType": "site",
+  "source": "https://www.kadeau.dk/bornholm/menu",
   "lunchNote": "Dinner only",
+  "noLunch": true,
   "lunchNoteDa": "Kun middag",
   "notice": "Temporarily closed (Google)",
   "website": "https://kadeau.dk/",
@@ -23,5 +26,6 @@
     "vegetarian"
   ],
   "chef": "Nicolai Nørregaard",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteDa": "Smagsmenu"
 }

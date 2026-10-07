@@ -10,9 +10,9 @@
   "rating": 4.6,
   "reviews": 2038,
   "dinnerType": "spend",
-  "dinnerNote": "À la carte steakhouse",
-  "dinnerNoteZh": "單點牛排館",
-  "sourceType": "none",
+  "dinnerNote": "À la carte steakhouse; typical spend about S$250 per person (early and late 3-course set S$125)",
+  "dinnerNoteZh": "單點牛排館；人均消費約新幣250元（早場及深夜三道菜套餐新幣125元）",
+  "sourceType": "press",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZh": "只供應晚餐",
@@ -25,5 +25,7 @@
     "vegetarian"
   ],
   "chef": "Wolfgang Puck",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 250,
+  "source": "https://www.burpple.com/cut-by-wolfgang-puck"
 }

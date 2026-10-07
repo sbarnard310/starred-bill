@@ -7,8 +7,8 @@
   "rating": 4.5,
   "reviews": 259,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Dinner course",
+  "sourceType": "press",
   "lat": 37.53528,
   "lng": 127.00914,
   "placeId": "ChIJ8R_CLEWjfDUR3HHfL-sNAiA",
@@ -17,5 +17,15 @@
     "vegetarian"
   ],
   "chef": "Eom Tae-cheol",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 270000,
+  "dinnerNoteKo": "디너 코스",
+  "source": "https://app.catchtable.co.kr/ct/shop/soseoul_hannam",
+  "lunch": 170000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch course",
+  "lunchNoteKo": "런치 코스",
+  "lunchWine": 150000,
+  "lunchSourceType": "press",
+  "lunchSource": "https://app.catchtable.co.kr/ct/shop/soseoul_hannam"
 }

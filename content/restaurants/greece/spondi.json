@@ -7,8 +7,8 @@
   "rating": 4.5,
   "reviews": 1442,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Discovery menu (€120 without two of its courses)",
+  "sourceType": "site",
   "website": "https://www.spondi.gr",
   "lat": 37.965176,
   "lng": 23.7431892,
@@ -22,8 +22,10 @@
   ],
   "chef": "Arnaud Bignon",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας· η τιμή θα προστεθεί",
+  "dinnerNoteEl": "Μενού Discovery (120 € χωρίς δύο από τα πιάτα του)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteEl": "Μόνο δείπνο"
+  "lunchNoteEl": "Μόνο δείπνο",
+  "dinner": 150,
+  "source": "https://www.spondi.gr/en/#menus"
 }

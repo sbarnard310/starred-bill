@@ -14,12 +14,12 @@
   "changeDate": "2026-08",
   "rating": 4.4,
   "reviews": 67,
-  "dinnerType": "spend",
-  "dinnerNote": "À la carte Ningbo cuisine",
-  "dinnerNoteZh": "單點寧波菜",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch",
-  "lunchNoteZh": "有供應午餐",
+  "dinnerType": "menu",
+  "dinnerNote": "Dinner set menu for two, S$499 (about S$250 each)",
+  "dinnerNoteZh": "雙人晚市套餐新幣499元（每位約250元）",
+  "sourceType": "site",
+  "lunchNote": "Lunch set menu for two, S$299 (about S$150 each) · Mon–Fri",
+  "lunchNoteZh": "雙人午市套餐新幣299元（每位約150元）・週一至週五",
   "website": "https://yongfusg.com/",
   "lat": 1.295146,
   "lng": 103.857647,
@@ -27,5 +27,11 @@
   "michelinId": "1218314",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "dinner": 250,
+  "source": "https://www.yongfusg.com/menu",
+  "lunch": 150,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.yongfusg.com/menu"
 }

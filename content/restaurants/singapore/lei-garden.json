@@ -10,14 +10,14 @@
   "cuisineZh": "粵菜",
   "rating": 4.2,
   "reviews": 1174,
-  "dinnerType": "spend",
-  "dinnerNote": "À la carte Cantonese",
-  "dinnerNoteZh": "單點粵菜",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch",
-  "lunchNoteZh": "有供應午餐",
-  "lunchType": "spend",
-  "lunchSourceType": "none",
+  "dinnerType": "menu",
+  "dinnerNote": "Set menu for four, S$358 (about S$90 each)",
+  "dinnerNoteZh": "四人套餐新幣358元（每位約90元）",
+  "sourceType": "press",
+  "lunchNote": "Lunch set menu",
+  "lunchNoteZh": "午市套餐",
+  "lunchType": "menu",
+  "lunchSourceType": "press",
   "website": "https://leigarden.hk/",
   "lat": 1.295336,
   "lng": 103.852362,
@@ -25,5 +25,9 @@
   "michelinId": "501509",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "dinner": 90,
+  "source": "https://inline.app/booking/-OWUBKPvpKJbl0E_Pk4Y:inline-live-3/-OWUBKXV5TZiZkIsKHEc?language=en",
+  "lunch": 58,
+  "lunchSource": "https://inline.app/booking/-OWUBKPvpKJbl0E_Pk4Y:inline-live-3/-OWUBKXV5TZiZkIsKHEc?language=en"
 }

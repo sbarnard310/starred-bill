@@ -8,8 +8,8 @@
   "rating": 4.8,
   "reviews": 222,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Full menu (four courses CHF 135)",
+  "sourceType": "site",
   "website": "https://www.croixblanche.ch/",
   "lat": 46.8831298,
   "lng": 7.0690391,
@@ -19,16 +19,18 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Ganzes Menü (vier Gänge CHF 135)",
   "cuisineDe": "Klassische Küche",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteFr": "Menu complet (quatre plats CHF 135)",
   "cuisineFr": "Cuisine classique",
-  "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
+  "dinnerNoteIt": "Menu completo (quattro portate CHF 135)",
   "lunchNote": "Open for lunch · Thu–Mon",
   "lunchNoteDe": "Mittags geöffnet · Do–Mo",
   "lunchNoteFr": "Ouvert le midi · jeu.–lun.",
   "lunchNoteIt": "Aperto a pranzo · gio–lun",
   "cuisineIt": "Classica",
   "chef": "Arno Abächerli",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 155,
+  "source": "https://www.croixblanche.ch/wp-content/uploads/2026/08/speisekart-franzosisch-o9-26.pdf"
 }

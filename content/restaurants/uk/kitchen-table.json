@@ -8,10 +8,10 @@
   "rating": 4.8,
   "reviews": 596,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu (price not published online)",
+  "dinnerNote": "Kitchen Table Experience tasting menu, prepaid",
   "wine": 175,
-  "sourceType": "site",
-  "source": "https://kitchentablelondon.co.uk/",
+  "sourceType": "press",
+  "source": "https://www.opentable.co.uk/r/kitchen-table-london",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://kitchentablelondon.co.uk/",
@@ -24,5 +24,6 @@
     "vegetarian"
   ],
   "chef": "James Knappett",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 195
 }

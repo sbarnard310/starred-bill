@@ -7,8 +7,8 @@
   "rating": 4.7,
   "reviews": 280,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Experience teppanyaki menu (Signature menu ₫8,500,000)",
+  "sourceType": "site",
   "website": "https://capellahotels.com/en/capella-hanoi/dining/koki",
   "lat": 21.0258394,
   "lng": 105.8565699,
@@ -16,7 +16,14 @@
   "michelinId": "1202288",
   "chef": "Hiroshi Yamaguchi",
   "chefSource": "michelin",
-  "dinnerNoteVi": "Thực đơn nếm thử; giá sẽ được bổ sung",
-  "lunchNote": "Open for lunch · Tue–Sat",
-  "lunchNoteVi": "Mở cửa buổi trưa · Th 3–Th 7"
+  "dinnerNoteVi": "Thực đơn teppanyaki Experience (thực đơn Signature 8.500.000 ₫)",
+  "lunchNote": "Lunch menu · Tue–Sat",
+  "lunchNoteVi": "Thực đơn trưa · Th 3–Th 7",
+  "dinner": 6000000,
+  "wine": 2800000,
+  "source": "https://capellahotels.com/en/hanoi-menu",
+  "lunch": 3500000,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://capellahotels.com/en/hanoi-menu"
 }

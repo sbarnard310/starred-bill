@@ -8,8 +8,8 @@
   "rating": 4.4,
   "reviews": 32,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting course",
+  "sourceType": "press",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteKo": "디너만 운영",
@@ -18,5 +18,8 @@
   "placeId": "ChIJVds1KMWNaDUR0eBDjoc3IfM",
   "michelinId": "1209157",
   "chef": "Lee Dong-ho",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 250000,
+  "dinnerNoteKo": "테이스팅 코스",
+  "source": "https://app.catchtable.co.kr/ct/shop/fiotto"
 }

@@ -7,9 +7,9 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.5,
   "reviews": 1368,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; main courses €42–53",
+  "sourceType": "site",
   "website": "https://www.dziaugsmas.com/",
   "lat": 54.6829747,
   "lng": 25.2805396,
@@ -18,10 +18,12 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteLt": "Degustacinis meniu; kaina bus pridėta",
+  "dinnerNoteLt": "Valgiaraštis; pagrindiniai patiekalai 42–53 €",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteLt": "Tik vakarienė",
   "chef": "Martynas Praškevičius",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 42,
+  "source": "https://www.dziaugsmas.com/valgiarastis"
 }

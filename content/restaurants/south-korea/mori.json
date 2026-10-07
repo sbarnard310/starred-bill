@@ -8,8 +8,8 @@
   "rating": 4.8,
   "reviews": 31,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Kaiseki course",
+  "sourceType": "press",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteKo": "디너만 운영",
@@ -19,5 +19,8 @@
   "placeId": "ChIJxYhym0KNaDURznUJelakfU0",
   "michelinId": "1208705",
   "chef": "Kim Wan-gyu",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 250000,
+  "dinnerNoteKo": "가이세키 코스",
+  "source": "https://app.catchtable.co.kr/ct/shop/mori"
 }

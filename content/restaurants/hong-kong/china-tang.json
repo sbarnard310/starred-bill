@@ -16,9 +16,9 @@
   "rating": 4.3,
   "reviews": 316,
   "dinnerType": "spend",
-  "dinnerNote": "À la carte Cantonese, Sichuan and Beijing dishes",
-  "dinnerNoteZh": "單點粵菜、川菜及京菜",
-  "sourceType": "none",
+  "dinnerNote": "À la carte; typical spend HK$600–800 per person",
+  "dinnerNoteZh": "單點；人均消費約港幣600至800元",
+  "sourceType": "press",
   "lunchNote": "Open for lunch",
   "lunchNoteZh": "有供應午餐",
   "lunchNoteYue": "有午市",
@@ -32,5 +32,7 @@
     "vegetarian-menu"
   ],
   "chef": "Menex Cheung",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 700,
+  "source": "https://100toptables.scmp.com/restaurants-profile-2026/china-tang"
 }

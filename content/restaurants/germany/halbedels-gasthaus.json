@@ -8,8 +8,8 @@
   "rating": 4.7,
   "reviews": 171,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Set menu (menus €146–165)",
+  "sourceType": "press",
   "website": "https://www.halbedels-gasthaus.de/",
   "lat": 50.6889689,
   "lng": 7.1662272,
@@ -21,9 +21,11 @@
   ],
   "chef": "Rainer-Maria Halbedel",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Menü (Menüs 146–165 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern"
+  "cuisineDe": "Französisch-modern",
+  "dinner": 146,
+  "source": "https://www.schlemmer-atlas.de/restaurants/deutschland/bonn/halbedels-gasthaus/"
 }

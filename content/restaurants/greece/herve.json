@@ -7,8 +7,8 @@
   "rating": 4.8,
   "reviews": 1041,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting Journey menu",
+  "sourceType": "site",
   "website": "https://www.herve-restaurant.com",
   "lat": 37.9666571,
   "lng": 23.7093681,
@@ -21,8 +21,11 @@
   ],
   "chef": "Hervé Pronzato",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας· η τιμή θα προστεθεί",
+  "dinnerNoteEl": "Μενού γευσιγνωσίας Tasting Journey",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteEl": "Μόνο δείπνο"
+  "lunchNoteEl": "Μόνο δείπνο",
+  "dinner": 120,
+  "wine": 95,
+  "source": "https://herve-restaurant.com/wp-content/uploads/2026/09/Tasting-menu-September-26.pdf"
 }

@@ -8,10 +8,10 @@
   "rating": 4.5,
   "reviews": 63,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunchNote": "Open for lunch · Thu–Sun",
-  "lunchNoteKo": "런치 영업 · 목~일",
+  "dinnerNote": "Dinner course",
+  "sourceType": "press",
+  "lunchNote": "Lunch course · Thu–Sun",
+  "lunchNoteKo": "런치 코스 · 목~일",
   "website": "https://www.palatebusan.com",
   "lat": 35.15659,
   "lng": 129.17844,
@@ -23,5 +23,12 @@
     "halal"
   ],
   "chef": "Kim Jae-hoon",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 250000,
+  "dinnerNoteKo": "디너 코스",
+  "source": "https://app.catchtable.co.kr/ct/shop/palate",
+  "lunch": 125000,
+  "lunchType": "menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://app.catchtable.co.kr/ct/shop/palate"
 }

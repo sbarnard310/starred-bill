@@ -7,8 +7,8 @@
   "rating": 4.6,
   "reviews": 795,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu, 8 courses (plus 10% service)",
+  "sourceType": "press",
   "website": "https://toyoeatery.com",
   "lat": 14.5311282,
   "lng": 121.0226506,
@@ -18,10 +18,12 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteFil": "Tasting menu; idadagdag pa ang presyo",
+  "dinnerNoteFil": "Tasting menu, 8 kurso (may dagdag na 10% service charge)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteFil": "Hapunan lang",
   "chef": "Jordy Navarra",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 6500,
+  "source": "https://www.tablecheck.com/en/toyoeatery/reserve/landing"
 }

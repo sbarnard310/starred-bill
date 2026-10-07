@@ -8,8 +8,8 @@
   "rating": 4.8,
   "reviews": 177,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Menu, 6 courses (5 courses €110, Tue–Thu; 7 courses €150)",
+  "sourceType": "site",
   "website": "https://restaurant1857.com",
   "lat": 51.5343696,
   "lng": 4.4598749,
@@ -20,10 +20,16 @@
     "vegetarian",
     "gluten-free"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "lunchNote": "Open for lunch · Thu–Fri",
-  "lunchNoteNl": "Open voor lunch · do–vr",
+  "dinnerNoteNl": "Menu, 6 gangen (5 gangen € 110, di–do; 7 gangen € 150)",
+  "lunchNote": "Lunch menu, 4 courses · Thu–Fri",
+  "lunchNoteNl": "Lunchmenu, 4 gangen · do–vr",
   "cuisineNl": "Creatief Frans",
   "chef": "Joey van Heesbeen",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 125,
+  "source": "https://restaurant1857.com/menu/",
+  "lunch": 95,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurant1857.com/menu/"
 }

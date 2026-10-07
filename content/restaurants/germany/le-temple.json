@@ -8,8 +8,8 @@
   "rating": 4.8,
   "reviews": 155,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Set menu (menus €175–195)",
+  "sourceType": "press",
   "website": "https://www.le-temple.de/",
   "lat": 49.6425213,
   "lng": 7.0114426,
@@ -17,8 +17,10 @@
   "michelinId": "73822",
   "chef": "Oliver Schäfer and Christiane Detemple-Schäfer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
+  "dinnerNoteDe": "Menü (Menüs 175–195 €)",
   "lunchNote": "Open for lunch · Sundays",
   "lunchNoteDe": "Mittags geöffnet · Sonntag",
-  "cuisineDe": "Französisch-klassisch"
+  "cuisineDe": "Französisch-klassisch",
+  "dinner": 175,
+  "source": "https://www.schlemmer-atlas.de/restaurants/deutschland/neuhuetten-hochwald/le-temple/"
 }

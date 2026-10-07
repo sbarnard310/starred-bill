@@ -7,8 +7,8 @@
   "rating": 4.6,
   "reviews": 534,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Lưu Tích tasting menu",
+  "sourceType": "site",
   "website": "https://cocosgn.com",
   "lat": 10.7808709,
   "lng": 106.6932479,
@@ -20,8 +20,11 @@
   ],
   "chef": "Thanh Vuong Vo",
   "chefSource": "michelin",
-  "dinnerNoteVi": "Thực đơn nếm thử; giá sẽ được bổ sung",
+  "dinnerNoteVi": "Thực đơn nếm thử Lưu Tích",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteVi": "Chỉ phục vụ bữa tối"
+  "lunchNoteVi": "Chỉ phục vụ bữa tối",
+  "dinner": 4250000,
+  "wine": 2500000,
+  "source": "https://cocosgn.com/coco-dining"
 }

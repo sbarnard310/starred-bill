@@ -8,8 +8,8 @@
   "rating": 4.6,
   "reviews": 162,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu (shorter menu €160, vegetarian €120); service included",
+  "sourceType": "site",
   "website": "https://www.belmond.com/hotels/europe/portugal/madeira/belmond-reids-palace/william-restaurant",
   "lat": 32.64069,
   "lng": -16.92367,
@@ -19,11 +19,14 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNotePt": "Menu de degustação; preço ainda por adicionar",
+  "dinnerNotePt": "Menu de degustação (menu mais curto 160 €, vegetariano 120 €); serviço incluído",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePt": "Só jantar",
   "cuisinePt": "Atual",
   "chef": "José Diogo Costa",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 190,
+  "wine": 70,
+  "source": "https://pdfs.belmond.com/rds/rds_william_menu.pdf"
 }

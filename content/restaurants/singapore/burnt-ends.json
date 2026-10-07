@@ -10,9 +10,9 @@
   "rating": 4.5,
   "reviews": 2606,
   "dinnerType": "spend",
-  "dinnerNote": "À la carte barbecue",
-  "dinnerNoteZh": "單點燒烤",
-  "sourceType": "none",
+  "dinnerNote": "À la carte barbecue; typical spend about S$200 per person",
+  "dinnerNoteZh": "單點燒烤；人均消費約新幣200元",
+  "sourceType": "press",
   "lunchNote": "Open for lunch · Thu–Sat",
   "lunchNoteZh": "有供應午餐・週四至週六",
   "website": "https://burntends.com.sg/",
@@ -24,5 +24,7 @@
     "vegetarian"
   ],
   "chef": "Dave Pynt",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 200,
+  "source": "https://www.burpple.com/burnt-ends"
 }

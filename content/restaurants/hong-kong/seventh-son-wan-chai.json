@@ -12,9 +12,9 @@
   "rating": 4.2,
   "reviews": 452,
   "dinnerType": "spend",
-  "dinnerNote": "À la carte Cantonese",
-  "dinnerNoteZh": "單點粵菜",
-  "sourceType": "none",
+  "dinnerNote": "À la carte Cantonese; typical spend HK$1,000–1,200 per person",
+  "dinnerNoteZh": "單點粵菜；人均消費約港幣1,000至1,200元",
+  "sourceType": "press",
   "lunchNote": "Open for lunch",
   "lunchNoteZh": "有供應午餐",
   "lunchNoteYue": "有午市",
@@ -28,5 +28,7 @@
     "vegetarian"
   ],
   "chef": "Chui Wai-kwan",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 1100,
+  "source": "https://100toptables.scmp.com/restaurants-profile-2026/seventh-son-restaurant"
 }

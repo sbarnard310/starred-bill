@@ -11,8 +11,8 @@
   "rating": 4.6,
   "reviews": 121,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Tasting menu, 11 courses",
+  "sourceType": "press",
   "website": "https://www.terra-dining.com",
   "lat": 3.1525692,
   "lng": 101.6200964,
@@ -21,10 +21,13 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteMs": "Menu rasa; harga akan ditambah",
+  "dinnerNoteMs": "Menu rasa, 11 hidangan",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteMs": "Makan malam sahaja",
   "chef": "Chong Yu Cheng",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 398,
+  "wine": 238,
+  "source": "https://www.grazia.my/?p=18077"
 }

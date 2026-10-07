@@ -12,9 +12,9 @@
   "rating": 4.4,
   "reviews": 564,
   "dinnerType": "spend",
-  "dinnerNote": "À la carte Cantonese and set menus",
-  "dinnerNoteZh": "單點粵菜及套餐",
-  "sourceType": "none",
+  "dinnerNote": "À la carte Cantonese; typical spend HK$500–800 per person",
+  "dinnerNoteZh": "單點粵菜；人均消費約港幣500至800元",
+  "sourceType": "press",
   "lunchNote": "Open for lunch",
   "lunchNoteZh": "有供應午餐",
   "lunchNoteYue": "有午市",
@@ -28,5 +28,7 @@
     "vegetarian"
   ],
   "chef": "Raymond Wong",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 650,
+  "source": "https://100toptables.scmp.com/restaurants-profile-2026/shang-palace"
 }

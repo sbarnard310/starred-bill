@@ -45,5 +45,6 @@
       "q": "How many Michelin star restaurants offer halal options?",
       "a": "{{halalTotal}} in {{halalCountries}} countries, as of {{checked}}: {{halalSplit}} restaurants. London has {{halal_london}} and Dubai {{halal_dubai}}."
     }
-  ]
+  ],
+  "imageAlt": "Illustration of grilled lamb chops with saffron rice, a bowl of dates and a pot of mint tea on a table by a window looking out over a skyline of domes at dusk, with three gold stars."
 }

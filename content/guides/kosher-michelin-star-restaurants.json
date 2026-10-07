@@ -43,5 +43,6 @@
       "q": "How many Michelin star restaurants offer kosher options?",
       "a": "{{kosherTotal}} in {{kosherCountries}} countries, as of {{checked}}: {{kosherSplit}} restaurants. Only Mutra in Miami is a kosher restaurant."
     }
-  ]
+  ],
+  "imageAlt": "Illustration of a fine-dining table with a braided challah, two lit brass candlesticks, roast lamb with pomegranate seeds, tahini and a glass of red wine, beside a paper bill and three gold stars."
 }

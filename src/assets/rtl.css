@@ -43,7 +43,7 @@
 [dir="rtl"] .status-pill { margin-right: 0; margin-left: 6px; }
 [dir="rtl"] .diet-badge { padding: 1px 5px 1px 7px; }
 [dir="rtl"] .map { margin-left: 0; margin-right: 4px; }
-[dir="rtl"] .tag, [dir="rtl"] button.dest-open, [dir="rtl"] .near-list button, [dir="rtl"] .near-card { text-align: right; }
+[dir="rtl"] .tag, [dir="rtl"] .near-list button, [dir="rtl"] .near-card { text-align: right; }
 [dir="rtl"] .price, [dir="rtl"] .tier dd { text-align: left; }
 [dir="rtl"] .notice { margin: 0 0 4px 6px; }
 @media (max-width: 720px) {
@@ -86,3 +86,5 @@
 /* Guides page card figures (site.css .guide-fig): the receipt's dotted edge on the right. */
 [dir="rtl"] .guide-fig { padding: 4px 16px 4px 10px; }
 [dir="rtl"] .guide-fig::before { left: auto; right: 6px; }
+[dir="rtl"] .crow-from { text-align: left; }
+[dir="rtl"] #wishlist.is-empty .empty-note { text-align: right; }

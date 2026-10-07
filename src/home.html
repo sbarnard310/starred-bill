@@ -100,6 +100,10 @@ window.homeData = fetch("{{homeUrl}}").then((res) => { if (!res.ok) throw new Er
 </div>
 
 <main>
+  <section id="ways" class="home-ways">
+    <div class="wrap">{{ways}}</div>
+  </section>
+
   <section id="map">
     <div class="wrap">
       <div class="section-head">
@@ -138,11 +142,35 @@ window.homeData = fetch("{{homeUrl}}").then((res) => { if (!res.ok) throw new Er
         </div>
       </div>
       <div class="dest-sort"><span id="destSortLabel" data-i18n="destSortLabel"></span><div class="seg" id="destSort" role="group" aria-labelledby="destSortLabel"></div></div>
-      <div class="dest-sort"><span id="destContLabel" data-i18n="destContLabel"></span><div class="seg" id="destCont" role="group" aria-labelledby="destContLabel"></div></div>
-      <nav class="dest-jump" id="destJump"></nav>
-      <div class="dest-grid" id="destGrid">{{destinations}}</div>
+      <div class="conts" id="destGroups">{{destinations}}</div>
       <div id="collections"></div>
       <div id="noStars"></div>
+    </div>
+  </section>
+
+  <section id="less">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Starred for less</span>
+          <h2 style="margin-top: 6px">The cheapest way in</h2>
+          <p>The lowest set menu, lunch or dinner, at each star level. Lunch is often the same kitchen for a fraction of the price of dinner.</p>
+        </div>
+      </div>
+      {{less}}
+    </div>
+  </section>
+
+  <section id="guides">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Guides</span>
+          <h2 style="margin-top: 6px">Michelin stars, explained</h2>
+          <p>What the stars mean, how restaurants earn them, and where to find the best of them.</p>
+        </div>
+      </div>
+      {{guides}}
     </div>
   </section>
 

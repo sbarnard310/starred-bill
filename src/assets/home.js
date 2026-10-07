@@ -47,26 +47,9 @@ function renderFigures() {
 }
 
 // ---------- Destinations ----------
-function destCard(c) {
-  return '<article class="dest" id="dest-' + esc(c.id) + '">' +
-    '<div class="dest-top"><h3><a href="' + withLang(c.path) + '">' + esc(pick(c, "name")) + "</a></h3></div>" +
-    '<p class="dest-meta">' + esc(t("destRestaurants", { n: c.n })) + " · " + esc(starCountText([c.n].concat(c.own))) +
-    (c.guide && c.guide[0] + c.guide[1] + c.guide[2] > c.n ? '<br><span class="dest-guide">' + esc(t("destGuide", { n: c.guide[0] + c.guide[1] + c.guide[2] }) + " · " +
-      t("starCounts").replace("{3}", c.guide[2]).replace("{2}", c.guide[1]).replace("{1}", c.guide[0])) + "</span>" : "") + "</p>" +
-    (c.from ? '<p class="dest-from">' + esc(t("destFrom", { p: localMoney(c.from.price, c.from.cur) })) + ' <span class="dest-from-name">' + esc(pick(c.from, "name")) + "</span></p>" : "") +
-    (c.cities.length > 1 || (c.cities[0] && c.cities[0].path !== c.path) ? destAreas(c) : "") +
-    '<a class="dest-open" href="' + withLang(c.path) + '">' + esc(t("destOpen", { place: pick(c, "name") })) + " →</a></article>";
-}
-// A country in the Michelin guide that has no page here yet: its star counts and a button that shows its restaurants on the map.
-function soonCard(c) {
-  const [one, two, three] = c.stars;
-  return '<article class="dest dest-soon" id="dest-' + esc(c.id) + '">' +
-    '<div class="dest-top"><h3>' + esc(pick(c, "name")) + '</h3><span class="dest-tag">' + esc(t("destSoon")) + "</span></div>" +
-    '<p class="dest-meta">' + esc(t("destRestaurants", { n: one + two + three })) + " · " +
-    esc(t("starCounts").replace("{3}", three).replace("{2}", two).replace("{1}", one)) + "</p>" +
-    '<button type="button" class="dest-open" data-map-box="' + c.box.join(",") + '">' + esc(t("destSoonMap")) + " →</button></article>";
-}
-// Countries with no starred restaurant, by region; a few carry a note on why.
+// Every country is one short row, folded by continent, written into the page by home_countries_html() in build.py
+// (A to Z, with its counts in data-n and data-s1…3). Sorting reorders those rows inside each continent.
+// Countries with no starred restaurant, by region, folded under one heading; a few carry a note on why.
 function renderNoStars() {
   const regions = DATA.noStars || [];
   const n = regions.reduce((a, g) => a + g.countries.length, 0);
@@ -75,57 +58,16 @@ function renderNoStars() {
   const noted = regions.flatMap((g) => g.countries.filter((c) => c.note)).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
   // A country with its own explainer (content/guides) links to it.
   const named = (c) => c.guide ? '<a href="/guides/' + esc(c.guide) + '/">' + esc(pick(c, "name")) + "</a>" : esc(pick(c, "name"));
-  $("noStars").innerHTML = '<h3 class="sub-head">' + esc(t("noStarsTitle")) + '</h3><p class="nostar-intro">' + esc(t("noStarsText", { n })) + "</p>" +
+  $("noStars").innerHTML = '<details class="dest-more nostar-all"><summary>' + esc(t("noStarsTitle")) + ' <span class="count">' + n + "</span></summary>" +
+    '<p class="nostar-intro">' + esc(t("noStarsText", { n })) + "</p>" +
     '<div class="nostar-notes">' + noted.map((c) => '<p><strong>' + named(c) + "</strong> " + esc(pick(c, "note")) + "</p>").join("") + "</div>" +
     regions.map((g) => '<details class="dest-more nostar-region"><summary>' + esc(pick(g, "name")) + ' <span class="count">' + g.countries.length + "</span></summary>" +
       '<ul class="nostar-list">' + g.countries.slice().sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")))
-        .map((c) => "<li>" + named(c) + (c.note ? " *" : "") + "</li>").join("") + "</ul></details>").join("");
+        .map((c) => "<li>" + named(c) + (c.note ? " *" : "") + "</li>").join("") + "</ul></details>").join("") + "</details>";
 }
-// Quick jump to a country: A–Z letters (letters with no country are greyed out), or the country names
-// themselves in Chinese and Japanese, where names don't start with a letter.
-function renderDestJump(sorted) {
-  const nav = $("destJump");
-  nav.setAttribute("aria-label", t("destJump"));
-  const letterOf = (c) => pick(c, "name").normalize("NFD").charAt(0).toUpperCase();
-  if (cjk()) {
-    nav.className = "dest-jump names";
-    nav.innerHTML = sorted.map((c) => '<a href="#dest-' + esc(c.id) + '" data-jump="' + esc(c.id) + '">' + esc(pick(c, "name")) + "</a>").join("");
-    return;
-  }
-  nav.className = "dest-jump";
-  const first = {};
-  sorted.forEach((c) => { const l = letterOf(c); if (!first[l]) first[l] = c.id; });
-  nav.innerHTML = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((l) => first[l]
-    ? '<a href="#dest-' + esc(first[l]) + '" data-jump="' + esc(first[l]) + '">' + l + "</a>"
-    : '<span aria-hidden="true">' + l + "</span>").join("");
-}
-document.addEventListener("click", (e) => {
-  const a = e.target.closest("[data-jump]");
-  if (!a) return;
-  e.preventDefault();
-  const card = $("dest-" + a.dataset.jump);
-  if (!card) return;
-  card.scrollIntoView({ behavior: "smooth", block: "start" });
-  card.classList.remove("flash"); void card.offsetWidth; card.classList.add("flash");
-  track("dest-jump", { to: a.dataset.jump });
-});
-
-// A country's regions and cities fold away under one button, so cards stay short as destinations grow.
-const destOpen = new Set();
-function destAreas(c) {
-  const chip = (p) => '<a class="city-link" href="' + withLang(p.path) + '">' + esc(pick(p, "name")) + '<span class="count">' + p.n + "</span></a>";
-  const regions = c.cities.filter((p) => p.type === "region"), cities = c.cities.filter((p) => p.type !== "region");
-  const group = (label, list) => !list.length ? "" : (regions.length && cities.length ? '<p class="dest-sub">' + esc(label) + "</p>" : "") +
-    '<div class="dest-cities">' + list.map(chip).join("") + "</div>";
-  return '<details class="dest-more" data-country="' + esc(c.id) + '"' + (destOpen.has(c.id) ? " open" : "") + '><summary>' + esc(t(regions.length && cities.length ? "destAreas" : regions.length ? "destRegions" : "destCityList")) +
-    ' <span class="count">' + c.cities.length + "</span></summary>" + group(t("destRegions"), regions) + group(t("destCityList"), cities) + "</details>";
-}
-// How the country cards are ordered: "az", "most" (starred restaurants), or 3 / 2 / 1 (most restaurants with that many stars).
-let destCont = "";  // the continent shown ("" for all)
+// How the rows are ordered: "az", "most" (starred restaurants), or 3 / 2 / 1 (most restaurants with that many stars),
+// all from the whole MICHELIN Guide, since our pages may cover only some cities.
 let destSort = "az", destDesc = true;  // destDesc: high to low (or A to Z); clicking the chosen button again flips it
-// A country's [one-star, two-star, three-star] counts in the whole MICHELIN Guide (our pages may cover only some cities),
-// falling back to our own restaurants.
-const starsByCountry = (c) => c.box ? c.stars : c.guide || c.own;
 function renderDestSort() {
   const opts = [{ v: "az", label: t("destSortAZ") }, { v: "most", label: t("destSortMost") }]
     .concat([3, 2, 1].map((s) => ({ v: String(s), label: starIcons(s), aria: t("destSortStars", { n: s }) })));
@@ -141,30 +83,51 @@ function renderDestSort() {
       (on ? ' title="' + esc(t("destFlip")) + '"' : "") + ">" + label + arrow + "</button>";
   }).join("");
 }
-const CONTINENT_ORDER = ["europe", "asia", "middle-east", "americas", "oceania"];
-function renderDestCont(all) {
-  const conts = CONTINENT_ORDER.filter((k) => all.some((c) => c.continent === k));
-  $("destCont").innerHTML = [""].concat(conts).map((k) => '<button type="button" data-destcont="' + k + '" aria-pressed="' + (destCont === k) + '">' +
-    esc(k ? t("continents")[k] : t("all")) + '<span class="count">' + (k ? all.filter((c) => c.continent === k).length : all.length) + "</span></button>").join("");
+function sortDestRows() {
+  const coll = new Intl.Collator(locale());
+  const num = (li, k) => Number(li.dataset[k]) || 0;
+  const key = destSort === "most" ? (li) => num(li, "n") : destSort === "az" ? null : (li) => num(li, "s" + destSort);
+  const dir = destDesc ? 1 : -1;
+  document.querySelectorAll("#destGroups .crows").forEach((ul) => {
+    const az = [...ul.children].sort((a, b) => coll.compare(a.dataset.name, b.dataset.name));
+    // Highest first; ties go to the country with more starred restaurants, then A–Z (the sort keeps the A–Z order).
+    const rows = key ? az.sort((a, b) => dir * (key(b) - key(a) || num(b, "n") - num(a, "n"))) : destDesc ? az : az.reverse();
+    rows.forEach((li) => ul.appendChild(li));
+  });
 }
 function renderDestinations() {
-  const coll = new Intl.Collator(locale());
-  const all = DATA.countries.concat(DATA.soon || []);
-  renderDestCont(all);
-  const az = all.filter((c) => !destCont || c.continent === destCont).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
-  const total = (c) => starsByCountry(c).reduce((a, b) => a + b, 0);
-  const key = destSort === "most" ? total : destSort === "az" ? null : (c) => starsByCountry(c)[Number(destSort) - 1];
-  // Highest first; ties go to the country with more starred restaurants, then A–Z (the sort keeps the A–Z order).
-  const dir = destDesc ? 1 : -1;
-  const sorted = key ? az.slice().sort((a, b) => dir * (key(b) - key(a) || total(b) - total(a))) : destDesc ? az : az.slice().reverse();
   renderDestSort();
-  $("destGrid").innerHTML = sorted.map((c) => c.box ? soonCard(c) : destCard(c)).join("");
-  renderDestJump(az);
+  sortDestRows();
   renderNoStars();
   $("collections").innerHTML = !DATA.groups.length ? "" :
     '<h3 class="sub-head">' + t("collectionsTitle") + '</h3><div class="dest-cities">' + DATA.groups.map((g) =>
       '<a class="city-link" href="' + withLang(g.path) + '">' + esc(pick(g, "name")) + '<span class="count">' + g.n + "</span></a>").join("") + "</div>";
 }
+// A country's regions and cities fold away under its row.
+document.addEventListener("click", (e) => {
+  const b = e.target.closest(".crow-toggle");
+  if (!b) return;
+  const open = b.getAttribute("aria-expanded") !== "true";
+  b.setAttribute("aria-expanded", open);
+  $(b.getAttribute("aria-controls")).hidden = !open;
+});
+// On computers and tablets every continent starts open; on phones they start folded, so the page stays short.
+if (matchMedia("(min-width: 721px)").matches) document.querySelectorAll("#destGroups .cont").forEach((d) => { d.open = true; });
+// An address ending #dest-<country> (or #cont-<continent>) opens that country's continent and goes to it.
+function openDestHash() {
+  const el = location.hash.length > 1 && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  const cont = el && el.closest(".cont");
+  if (!cont) return;
+  cont.open = true;
+  el.scrollIntoView({ block: "start" });
+}
+openDestHash();
+window.addEventListener("hashchange", openDestHash);
+// The ways in, popular destinations, cheapest menus and guides, counted by which was clicked.
+document.addEventListener("click", (e) => {
+  const a = e.target.closest("a[data-home]");
+  if (a) track("home-link", { to: a.dataset.home });
+});
 
 // ---------- Wishlist ----------
 function renderWishlist() {
@@ -175,6 +138,8 @@ function renderWishlist() {
   const where = acctSignedIn()
     ? '<p class="wish-synced">' + esc(t("wishSynced")) + ' <a href="' + withLang("/account/") + '">' + esc(t("acctSee")) + " →</a></p>"
     : '<div class="wish-cta"><p>' + esc(t("wishCtaHome")) + '</p><button type="button" class="cta-btn" data-signin="">' + esc(t("wishCtaBtn")) + "</button></div>";
+  // Empty, the section shrinks to a line or two (.is-empty in site.css), as the header's heart already leads here.
+  $("wishlist").classList.toggle("is-empty", !list.length);
   if (!list.length) { $("wishList").innerHTML = '<p class="empty-note">' + t("wishEmptyHome") + "</p>" + where; return; }
   const compare = list.length >= 2 ? '<p class="wish-compare"><a class="btn-line" href="/compare/">' + esc(t("wishCompare")) + " →</a></p>" : "";
   $("wishList").innerHTML = where + compare + '<ul class="wish-list">' + list.map((r) =>
@@ -383,13 +348,6 @@ function showBox(box) {
 }
 document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-destsort]");
-  const cont = e.target.closest("[data-destcont]");
-  if (cont) {
-    destCont = cont.dataset.destcont;
-    renderDestinations();
-    track("dest-continent", { to: destCont || "all" });
-    return;
-  }
   if (!b) return;
   if (b.dataset.destsort === destSort) destDesc = !destDesc;
   else { destSort = b.dataset.destsort; destDesc = true; }
@@ -521,8 +479,3 @@ homeReady.then(() => {
   if (document.activeElement === $("homeQ")) renderResults();
 }).catch(() => {});
 if (GOOGLE_MAPS_API_KEY) initWorldMap(); else $("map").hidden = true;
-// Keep a country's list open when the page redraws (e.g. after a language change).
-document.addEventListener("toggle", (e) => {
-  const d = e.target;
-  if (d.classList && d.classList.contains("dest-more")) d.open ? destOpen.add(d.dataset.country) : destOpen.delete(d.dataset.country);
-}, true);

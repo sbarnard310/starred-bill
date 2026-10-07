@@ -349,6 +349,21 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .faq div { display: grid; gap: 8px; align-content: start; }
 .faq h3 { font-size: 1.1rem; }
 .faq p { color: var(--muted); font-size: .95rem; }
+/* Related guides on English destination pages (related_guides() in build.py): small picture beside the title, the whole card a link. */
+.more-guides { font-weight: 600; color: var(--green); }
+.related-guides { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 16px; }
+.related-guides li { position: relative; display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; align-items: start; padding: 12px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); transition: border-color .15s, box-shadow .15s; }
+.related-guides li:hover { border-color: var(--green); box-shadow: 0 6px 18px rgba(0, 0, 0, .08); }
+.related-guides li:focus-within { outline: 2px solid var(--green); outline-offset: 2px; }
+.related-guides img, .related-guides .guide-ph { display: flex; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: calc(var(--radius) / 2); background: var(--line); }
+.related-guides .guide-ph { background: #F3ECDD; }
+.related-guides div { display: grid; gap: 4px; }
+.related-guides h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.1rem; line-height: 1.2; }
+.related-guides h3 a { color: var(--ink); text-decoration: none; }
+.related-guides h3 a:focus-visible { outline: none; }
+.related-guides h3 a::after { content: ""; position: absolute; inset: 0; }
+.related-guides p { color: var(--muted); font-size: .88rem; line-height: 1.45; }
+@media (max-width: 720px) { .related-guides li { grid-template-columns: 92px minmax(0, 1fr); gap: 12px; } }
 
 /* Contact */
 .contact { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; align-items: start; }

@@ -1637,6 +1637,11 @@ content:
         label: Key figure for the Guides page
         description: One short line shown on the guide's card, e.g. "{{n3UK}} in the UK, dinner from {{cheapest3UKPrice}}". Figures in double curly brackets work as in the article.
         type: string
+      - name: places
+        label: Destination pages it belongs to
+        description: Optional. Places (their file names, e.g. london or uk) where this guide leads the "Related guides" box, on that place and every place inside it. Pages the article links to show it anyway.
+        type: string
+        list: true
       - name: imageAlt
         label: Picture description
         description: What the guide's featured picture shows, for screen readers and link previews, e.g. "Illustration of a plated tasting course on a cream tablecloth, with a gold star beside it." The picture itself is src/img/guides/<web address>.jpg, made by scripts/guide_images.py (see docs/image-style.md).

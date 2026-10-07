@@ -5,6 +5,9 @@
   "h1": "3 Michelin Star Restaurants in the UK",
   "summary": "Every three-star restaurant in the UK, from London to Bray and the Lake District.",
   "section": "where",
+  "places": [
+    "uk"
+  ],
   "figure": "{{n3UK}} in the UK, dinner from {{cheapest3UKPrice}}",
   "published": "2026-10-05",
   "updated": "2026-10-05",

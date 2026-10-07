@@ -272,6 +272,8 @@ for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").
     if not isinstance(g.get("keywords", []), list) or not all(isinstance(k, str) and k.strip() for k in g.get("keywords", [])):
         problem(where, "keywords must be a list of search phrases, the main one first")
     g["keywords"] = [k.strip() for k in g.get("keywords", []) if isinstance(k, str) and k.strip()]
+    if not isinstance(g.get("places", []), list) or any(i not in places for i in g.get("places", [])):
+        problem(where, "places must be a list of place ids (file names in content/places), e.g. [\"london\"]")
     g["id"] = gid
     guides[gid] = g
 
@@ -562,7 +564,7 @@ def build_place(p):
             "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
             "crumbs": crumb_html, "explore": explore_html, "ledger": ledger, "data": as_json(version),
             "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
-            "faq": faq_html(faq, lang), "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
+            "faq": faq_html(faq, lang), "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
         }))
 
 
@@ -811,6 +813,53 @@ def faq_html(faq, lang):
     return ('<section id="faq">\n    <div class="wrap">\n      <div class="section-head"><div>'
             f'<span class="eyebrow">{e(w["eyebrow"])}</span><h2 style="margin-top: 6px">{e(w["title"])}</h2></div></div>\n'
             '      <div class="faq">' + "".join(f'<div><h3>{e(q)}</h3><p>{e(a)}</p></div>' for q, a in faq) + "</div>\n    </div>\n  </section>\n")
+
+
+# Related guides on destination pages: at most this many, most specific first.
+RELATED_MAX = 6
+
+
+def related_guides(p, starred):
+    """The guides that fit a destination page, best first: ones whose `places` include it or a place above it (the
+    closer the place, the higher), then ones whose article links to this page (most links first), the world three-star
+    list where the page has a three-star restaurant, and the by-country guide (higher on country pages). Topped up with the
+    pillar and the inspection guide so every page has at least three."""
+    above = chain(p["id"]) if p["type"] != "group" else [p["id"]] + countries_of(p)
+    scores = {}
+    for g in guides.values():
+        hits = [above.index(i) for i in g.get("places", []) if i in above]
+        links = len(re.findall(r'href="' + re.escape(p["path"]) + r'(?:#[^"]*)?"', g["body"]))
+        if hits:
+            score = (4, -min(hits), links)
+        elif links:
+            score = (3, 0, links)
+        elif g["id"] == "three-michelin-star-restaurants" and any(r["stars"] == 3 for r in starred):
+            score = (2, 0, 0)
+        elif g["id"] == "michelin-stars-by-country":
+            score = (2 if p["type"] == "country" else 1, 0, 0)
+        else:
+            continue
+        scores[g["id"]] = score
+    picked = sorted(scores, key=lambda i: (tuple(-x for x in scores[i]), i))[:RELATED_MAX]
+    for i in (GUIDE_PILLAR, "how-restaurants-get-a-michelin-star"):
+        if len(picked) < 3 and i in guides and i not in picked:
+            picked.append(i)
+    return [guides[i] for i in picked]
+
+
+def related_guides_html(p, starred):
+    items = related_guides(p, starred)
+    if not items:
+        return ""
+    def card(g):
+        img = guide_image(g)
+        pic = (f'<img src="{img}-card.jpg" alt="" width="800" height="450" loading="lazy" decoding="async">' if img else
+               '<span class="guide-ph" aria-hidden="true">' + '<svg><use href="#star"/></svg>' * 3 + "</span>")
+        return f'<li>{pic}<div><h3><a href="/guides/{g["id"]}/">{e(g["h1"])}</a></h3><p>{e(g["summary"])}</p></div></li>'
+    return ('<section id="guides">\n    <div class="wrap">\n      <div class="section-head"><div>'
+            '<span class="eyebrow">Guides</span><h2 style="margin-top: 6px">Related guides</h2></div>'
+            '<a class="more-guides" href="/guides/">All guides</a></div>\n'
+            '      <ul class="related-guides">' + "".join(card(g) for g in items) + "</ul>\n    </div>\n  </section>\n")
 
 
 def place_description(where, starred, stars, menus):

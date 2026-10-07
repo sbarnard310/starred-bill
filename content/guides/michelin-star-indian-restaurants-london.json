@@ -5,6 +5,9 @@
   "h1": "Michelin-Star Indian Restaurants in London",
   "summary": "All 8 of London’s Michelin-starred Indian restaurants, with dinner and set lunch prices.",
   "section": "where",
+  "places": [
+    "london"
+  ],
   "figure": "8 starred Indian restaurants, the most of any city",
   "keywords": [
     "michelin star indian restaurants london",

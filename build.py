@@ -1051,17 +1051,6 @@ def faq_html(faq, lang):
             '      <div class="faq">' + "".join(f'<div><h3>{e(q)}</h3><p>{e(a)}</p></div>' for q, a in faq) + "</div>\n    </div>\n  </section>\n")
 
 
-def place_anchor(q, lang):
-    """The words of a link to a destination page, as its title begins: "Michelin star restaurants in Cumbria",
-    "Restaurants étoilés Michelin à Lyon", "東京のミシュラン星付きレストラン"."""
-    w = TITLE_WORDS.get(lang) or TITLE_WORDS["en"]
-    sfx = "" if lang == "en" or lang not in TITLE_WORDS else LANG_SUFFIXES[LANGUAGES.index(lang) - 1]
-    head = w.get("headOne", w["head"]) if starred_n[q["id"]] == 1 else w["head"]
-    if lang == "en":
-        head = head.replace("Star Restaurant", "star restaurant")
-    return head.replace("{in}", in_sentences(q).get("inSentence" + sfx) or in_sentence(q)).replace("{name}", name_in(q, lang))
-
-
 def name_in(q, lang):
     """A place's name in a language, falling back from Cantonese or Simplified Chinese to Chinese, then to English."""
     sfx = lang[0].upper() + lang[1:]
@@ -1069,9 +1058,9 @@ def name_in(q, lang):
 
 
 def areas_html(p, lang):
-    """A destination page's starred areas as plain links with their counts and cheapest dinner menu, e.g. "Michelin star
-    restaurants in Cumbria 13 · Dinner from £95": the regions directly inside and every city further down (a city's
-    districts), so search engines see what each page is about and visitors can go straight there."""
+    """A destination page's starred areas as plain links with their counts and cheapest dinner menu, e.g. "Cumbria 13 ·
+    Dinner from £95": the regions directly inside and every city further down (a city's districts), so search engines
+    reach them and visitors can go straight there. Plain names, as it's a list: keyword wording is for links in sentences."""
     if p["type"] == "district":
         return ""
     if p["type"] == "city":
@@ -1092,7 +1081,7 @@ def areas_html(p, lang):
         cheapest = min(menus, key=lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"]) if menus else None
         price = money(cheapest["dinner"], cheapest["cur"]) if cheapest else ""
         price = f"⁦{price}⁩" if price and rtl else price
-        return (f'<li><a href="{href}">{e(place_anchor(q, lang))}</a> <span class="count">{starred_n[q["id"]]}</span>'
+        return (f'<li><a href="{href}">{e(name_in(q, lang))}</a> <span class="count">{starred_n[q["id"]]}</span>'
                 + (f'<span class="area-from">{e(w["areaFrom"].replace("{p}", price))}</span>' if price else "") + "</li>")
     return ('<section id="areas">\n    <div class="wrap">\n      <div class="section-head"><div>'
             f'<span class="eyebrow">{e(word(lang, "explore", {}))}</span><h2 style="margin-top: 6px">{e(w["areasTitle"])}</h2></div></div>\n'

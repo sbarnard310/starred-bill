@@ -353,7 +353,7 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .faq h3 { font-size: 1.1rem; }
 .faq p { color: var(--muted); font-size: .95rem; }
 /* "Area by area" on country and region pages (areas_html() in build.py): each starred area as a plain link with its count and cheapest dinner. */
-.area-links { list-style: none; margin: 0; padding: 0; columns: 3 260px; column-gap: 40px; }
+.area-links { list-style: none; margin: 0; padding: 0; columns: 4 180px; column-gap: 32px; }
 .area-links li { break-inside: avoid; padding: 7px 0; border-bottom: 1px solid var(--line); }
 .area-links a { color: var(--ink); font-weight: 600; text-decoration-color: var(--line); text-underline-offset: 3px; }
 .area-links a:hover { color: var(--green); text-decoration-color: currentColor; }

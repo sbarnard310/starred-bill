@@ -28,5 +28,7 @@
     "vegetarian",
     "vegan",
     "halal"
-  ]
+  ],
+  "chef": "Sajeev Nair",
+  "chefSource": "press"
 }

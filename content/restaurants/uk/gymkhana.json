@@ -27,5 +27,7 @@
     "vegetarian",
     "vegan",
     "halal"
-  ]
+  ],
+  "chef": "Chet Sharma",
+  "chefSource": "press"
 }

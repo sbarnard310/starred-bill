@@ -1625,10 +1625,35 @@ def three_star_changes(year, keep=lambda r: True):
     return sorted(gained, key=lambda r: r["name"].lower()), sorted(lost, key=lambda r: r["name"].lower())
 
 
+# The MICHELIN Guide's own round-up of its starred Indian restaurants (February 2026) also counts these, though their cuisine label isn't Indian.
+INDIAN_ALSO = {"thevar"}
+
+
+def is_indian(r):
+    return "indian" in (r.get("cuisine") or "").lower() or r["id"] in INDIAN_ALSO
+
+
+def indian_city(r):
+    """The city a starred Indian restaurant is in; city-states (Singapore, Hong Kong) by their own name, not the neighbourhood."""
+    return r["cityName"] if r["cityType"] == "country" else place_name(r)
+
+
+def star_split(c):
+    """[one, two, three] star counts -> "1 three-star, 5 two-star and 17 one-star" (highest first)."""
+    parts = [f"{n:,} {w}-star" for n, w in zip(c[::-1], ("three", "two", "one")) if n]
+    return parts[0] if len(parts) == 1 else ", ".join(parts[:-1]) + " and " + parts[-1]
+
+
 def list_stats(live, year):
-    """Figures for the data guides: the US by state, the UK and London, and the cheapest three-star menus."""
+    """Figures for the data guides: the US by state, the UK and London, the cheapest three-star menus and the starred Indian restaurants."""
     usd = lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"]
     out = {}
+    indian = [r for r in live if is_indian(r)]
+    c = [sum(1 for r in indian if r["stars"] == n) for n in (1, 2, 3)]
+    cities = sorted({indian_city(r) for r in indian}, key=lambda p: (-sum(1 for r in indian if indian_city(r) == p), p))
+    out.update({"indianTotal": str(len(indian)), "indian1": str(c[0]), "indian2": str(c[1]), "indian3": str(c[2]), "indianSplit": star_split(c),
+                "indianCountries": str(len({r["country"] for r in indian})), "indianCities": str(len(cities)),
+                "indianTopCity": cities[0] if cities else "–", "indianTopCityN": str(sum(1 for r in indian if indian_city(r) == cities[0])) if cities else "0"})
     three = [r for r in live if r["stars"] == 3]
     for key, rows in (("", three), ("UK", [r for r in three if r["country"] == "uk"]), ("London", [r for r in three if in_london(r)])):
         out[f"n3{key}"] = str(len(rows))
@@ -1776,6 +1801,33 @@ def guide_blocks(stats):
     blocks["three-star-changes"] = change_lists(lambda r: True)
     blocks["three-star-changes-uk"] = change_lists(lambda r: r["country"] == "uk")
     blocks["three-star-changes-london"] = change_lists(in_london)
+
+    def indian_table(rows, first, where, lunch=False):
+        body = ""
+        for r in rows:
+            name = e(r["name"])
+            if r["id"] in links:
+                name = f'<a href="{e(links[r["id"]])}">{name}</a>'
+            lunch_cell = ""
+            if lunch:
+                lunch_text = '<span class="muted">Not published</span>' if r.get("lunch") is None else money(r["lunch"], r["cur"]) + (
+                    "" if r["cur"] == "USD" else f'<br><span class="muted">about {usd_text(r["lunch"] / CURRENCIES[r["cur"]]["perUSD"])}</span>')
+                lunch_cell = f'<td class="num" data-label="Set lunch, per person">{lunch_text}</td>'
+            body += (f'<tr><td data-label="Restaurant">{name}</td><td data-label="{first}">{where(r)}</td>'
+                     f'<td data-label="Stars">{stars_cell(r["stars"])}</td><td data-label="Head chef">{e(r.get("chef") or "–")}</td>'
+                     f'<td class="num" data-label="Tasting menu, per person">{price_cell(r)}</td>{lunch_cell}</tr>')
+        heads = "".join(f'<th scope="col">{h}</th>' for h in (["Restaurant", first, "Stars", "Head chef", "Tasting menu, per person"] + (["Set lunch, per person"] if lunch else [])))
+        return f'<div class="table-wrap"><table class="guide-table data"><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>'
+
+    indian = sorted((r for r in live if is_indian(r)), key=lambda r: (-r["stars"], indian_city(r).lower(), r["name"].lower()))
+    blocks["indian"] = indian_table(indian, "City", lambda r: f'<a href="{e(r["cityPath"])}">{e(indian_city(r))}</a>') + note(
+        f"Every Michelin-starred restaurant serving Indian cuisine, from the current MICHELIN Guide editions ({e(year)} or the latest before it). "
+        "Names link to each restaurant’s MICHELIN Guide page and cities to our full price lists. Head chefs are as the MICHELIN Guide or the restaurant names them, "
+        "else recent press. Prices are the main dinner tasting menu per person in local currency, before service and drinks, with US dollars at recent exchange rates.")
+    blocks["indian-london"] = indian_table([r for r in indian if in_london(r)], "Area", lambda r: e(r.get("area") or "–"), lunch=True) + note(
+        f"Stars from the MICHELIN Guide Great Britain &amp; Ireland {e(year)}; names link to each restaurant’s MICHELIN Guide page. "
+        "Prices per person before service (usually 12.5–15% in London) and drinks, with US dollars at recent exchange rates. "
+        "Set lunch is the cheapest set menu at lunch, where there is one.")
     blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
     return blocks
 
@@ -1937,10 +1989,19 @@ def us_date(d):
     return f"{MONTH_NAMES[int(d[5:7]) - 1]} {int(d[8:10])}, {d[:4]}"
 
 
+def dinner_text(rid):
+    """A restaurant's dinner price for a sentence, e.g. "AED 1,350 (about $370)", or None when it has none."""
+    r = next((r for r in restaurants if r["id"] == rid), None)
+    if not r or r.get("dinner") is None:
+        return None
+    return money(r["dinner"], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(r['dinner'] / CURRENCIES[r['cur']]['perUSD'])})")
+
+
 def guide_text(text, stats, blocks=None):
     """Fill in {{figures}} and {{table:name}} blocks, and turn <a data-guide="name"> into a link once that guide exists (plain text until then)."""
     # A table on a line of its own may arrive wrapped in <p> from the editor; a table can't sit inside a paragraph.
     text = re.sub(r"(?:<p>\s*)?\{\{table:([\w-]+)\}\}(?:\s*</p>)?", lambda m: (blocks or {}).get(m.group(1), m.group(0)), text)
+    text = re.sub(r"\{\{dinner:([\w-]+)\}\}", lambda m: dinner_text(m.group(1)) or m.group(0), text)
     text = re.sub(r"\{\{(\w+)\}\}", lambda m: e(stats[m.group(1)]) if m.group(1) in stats else m.group(0), text)
     return re.sub(r'<a data-guide="([\w-]+)">(.*?)</a>',
                   lambda m: f'<a href="/guides/{m.group(1)}/">{m.group(2)}</a>' if m.group(1) in guides else m.group(2), text)

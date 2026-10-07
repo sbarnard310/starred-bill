@@ -537,12 +537,24 @@ FIRST_YEAR = 2026
 COPY_YEAR = str(FIRST_YEAR) if date.today().year <= FIRST_YEAR else "%d–%d" % (FIRST_YEAR, date.today().year)
 
 
+# Who runs the site, for search engines (Google's site name and logo beside results). The homepage carries both in
+# full; other pages point to them by @id. Add the site's social profiles to SAME_AS when it has some.
+SAME_AS = []
+ORGANIZATION = {"@type": "Organization", "@id": SITE_URL + "/#organization", "name": "The Starred Bill", "alternateName": "Starred Bill",
+                "url": SITE_URL + "/", "logo": {"@type": "ImageObject", "@id": SITE_URL + "/#logo", "url": SITE_URL + "/icons/icon-512.png",
+                                                "contentUrl": SITE_URL + "/icons/icon-512.png", "width": 512, "height": 512, "caption": "The Starred Bill"},
+                **({"sameAs": SAME_AS} if SAME_AS else {})}
+WEBSITE = {"@type": "WebSite", "@id": SITE_URL + "/#website", "name": "The Starred Bill", "alternateName": ["Starred Bill", "starredbill.com"],
+           "url": SITE_URL + "/", "inLanguage": "en", "publisher": {"@id": ORGANIZATION["@id"]}}
+SITE_JSONLD = '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": [WEBSITE, ORGANIZATION]}) + "</script>"
+
+
 def render(template, values):
     out = (SRC / template).read_text("utf-8")
     out = re.sub(r"\{\{asset:([\w.-]+)\}\}", lambda m: f"/assets/{m.group(1)}?v={assets[m.group(1)]}", out)
     # Link-preview picture: the page's own (src/og/<place id>.png, from scripts/og_images.py) or the homepage's.
     values = dict({"ogImage": SITE_URL + "/og/default.png", "ogAlt": "The Starred Bill: what a Michelin star costs, city by city",
-                   "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@type": "WebSite", "name": "The Starred Bill", "url": SITE_URL + "/"}) + "</script>"},
+                   "jsonld": SITE_JSONLD},
                   **values, icons=ICONS, copyYear=COPY_YEAR)
     values.setdefault("footPlaces", FOOT_PLACES_EN)
     out = re.sub(r"\{\{(\w+)\}\}", lambda m: values[m.group(1)], out)
@@ -664,7 +676,7 @@ def build_place(p):
             for r in sorted(starred, key=lambda r: (-r["stars"], r["name"]))) + "</ol>"
         version = dict(data, lang=lang, langPaths=lang_paths) if len(langs) > 1 else data
         faq = destination_faq(p, page, starred, lang)
-        write(lang_paths[lang], render("place.html", {
+        write(lang_paths[lang], section_words(render("place.html", {
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
             "title": e(titles[lang]), "description": e(texts["description"]), "canonical": SITE_URL + lang_paths[lang],
             "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
@@ -676,7 +688,8 @@ def build_place(p):
             "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
             "areas": areas_html(p, lang) if starred else "", "footPlaces": foot_places_html(lang, p["id"]),
             "faq": faq_html(faq, lang), "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
-        }))
+            "tiers": tiers_html(starred, currency, lang),
+        }), lang, page, starred))
 
 
 # A destination page's restaurants bigger than this (in characters) go in /data/places/<id>.js rather than the page.
@@ -724,14 +737,25 @@ def pick_lang(o, field, lang):
             return o[field + sfx]
     return o.get(field) or ""
 
+# The fixed wording of a destination page's sections (headings, the map and "How the prices are counted" text, the
+# star tiers), written into each language's page so search engines read it before the scripts run; common.js and
+# place.js redraw the same words.
+SECTION_KEYS = ("navCompare", "compareTitle", "compareText", "formerTitle", "formerNote", "navMap", "mapTitle", "mapText", "mapWait",
+                "navStars", "starsTitle", "starsText", "navMethod", "methodTitle", "m1Title", "m1Text", "m2Title", "m2Text", "m3Title",
+                "m3Text", "navContact", "contactTitle", "contactText")
+TIER_KEYS = ("tierNames", "avgDinner", "tRestaurants", "tRange", "tRating", "tVs", "tNoPrices", "tNone", "starsAria")
+# A place's own text replaces the general wording, as in place.js: its service, sources and stars notes.
+OWN_SECTION_TEXTS = {"m1Text": "serviceText", "m2Text": "sourcesText", "m3Text": "starsText"}
+
 
 def read_words():
-    """The words the build writes into translated pages (title, heading, intro, breadcrumb), and each language's lang
+    """The words the build writes into translated pages (title, heading, intro, breadcrumb, section headings and text), and each language's lang
     attribute and cuisine names, read from the same dictionaries the pages use: common.js and each lang-<code>.js."""
     keys = "heroEyebrow|heroTitle|heroText|emptyPlace|crumbHome|exploreAll|explore"
     def found(text):
         out = {}
-        for m in re.finditer(r"\b(" + keys + r'): ("(?:[^"\\]|\\.)*")', text):
+        string = r'"(?:[^"\\]|\\.)*"'
+        for m in re.finditer(r"\b(" + "|".join((keys,) + SECTION_KEYS + TIER_KEYS) + r"): (" + string + r"|\[(?:\s*" + string + r",?)+\s*\])", text):
             out.setdefault(m.group(1), json.loads(m.group(2).replace("\\'", "'")))
         return out
     words, attrs, cuisines = {}, {}, {}
@@ -948,6 +972,74 @@ def destination_faq(p, page, starred, lang):
     k = sum(1 for r in starred if r.get("lunch") is not None)
     faq.append((say("qBook"), say("aBook") + (gap + say("aLunch", k=k, n=n) if k and n > 1 else "")))
     return faq
+
+
+def word_n(lang, key, n, values=None):
+    """word() for a phrase with a count, choosing "one|many" like t() in common.js."""
+    text = word(lang, key, dict(values or {}, n=str(n)))
+    if "|" in text:
+        one, many = text.split("|", 1)
+        text = one if n == 1 else many
+    return text
+
+
+def section_words(html_text, lang, page, starred):
+    """Fills a destination page's empty data-i18n headings and paragraphs in its language. Places with no starred
+    restaurant left head the list "No longer starred", as place.js does."""
+    own = {k: pick_lang(page, f, lang) for k, f in OWN_SECTION_TEXTS.items()}
+    if not starred:
+        own.update(compareTitle=None, compareText=None)
+        swap = {"compareTitle": "formerTitle", "compareText": "formerNote"}
+    else:
+        swap = {}
+
+    def fill(m):
+        key = m.group(3)
+        if key not in SECTION_KEYS:
+            return m.group(0)
+        text = e(own[key]) if own.get(key) else word(lang, swap.get(key, key), {})
+        return m.group(1) + text + m.group(4)
+    return re.sub(r'(<(\w+)\b[^>]*\bdata-i18n="(\w+)"[^>]*>)(</\2>)', fill, html_text)
+
+
+def tiers_html(starred, currency, lang):
+    """The "How much each extra star adds" cards at dinner in the page's own currency, drawn as renderTiers() in
+    place.js draws them (which redraws them for the visitor's meal and currency)."""
+    approx = any(r["cur"] != currency for r in starred)
+    shown = lambda r, n: n if r["cur"] == currency else n * CURRENCIES[currency]["perUSD"] / CURRENCIES[r["cur"]]["perUSD"]
+    js_round = lambda n: int(math.floor(n + 0.5))  # halves round up, like Math.round (Python's round() goes to even)
+
+    def fmt(n):
+        text = ("≈" + money(js_round(n), currency)) if approx else money(n, currency)
+        return "⁦" + text + "⁩" if lang in RTL_LANGUAGES else text
+    tiers = []
+    for s in (1, 2, 3):
+        group = [r for r in starred if r["stars"] == s]
+        prices = [shown(r, r["dinner"]) for r in group if r.get("dinnerType") == "menu" and r.get("dinner") is not None]
+        rated = [r["rating"] for r in group if r.get("rating")]
+        tiers.append({"s": s, "n": len(group), "prices": prices, "avg": js_round(sum(prices) / len(prices)) if prices else 0,
+                      "rating": sum(rated) / len(rated) if rated else None})
+    top = max([x["avg"] for x in tiers] + [1])
+    names = WORDS.get(lang, {}).get("tierNames") or (WORDS["zh"].get("tierNames") if lang == "yue" else None) or WORDS["en"]["tierNames"]
+    out = ""
+    for i, x in enumerate(tiers):
+        stars = f'<span class="stars" aria-label="{e(word_n(lang, "starsAria", x["s"]))}">' + '<svg><use href="#star"/></svg>' * x["s"] + "</span>"
+        out += f'<div class="tier"><div class="top"><h3>{names[x["s"] - 1]}</h3>{stars}</div>'
+        if x["prices"]:
+            prev = tiers[i - 1]
+            vs, rating = "", f'{x["rating"]:.1f}' if x["rating"] else "–"
+            if i and prev["prices"]:
+                diff = x["avg"] - prev["avg"]
+                vs = f'<dt>{word_n(lang, "tVs", x["s"] - 1)}</dt><dd>{"+" if diff >= 0 else "−"}{fmt(abs(diff)).replace("≈", "")}</dd>'
+            out += (f'<div class="avg">{fmt(x["avg"])}<small>{word(lang, "avgDinner", {})}</small></div>'
+                    f'<div class="bar"><span style="width:{x["avg"] / top * 100:.1f}%"></span></div>'
+                    f'<dl><dt>{word(lang, "tRestaurants", {})}</dt><dd>{x["n"]}</dd>'
+                    f'<dt>{word(lang, "tRange", {})}</dt><dd>{fmt(min(x["prices"]))}–{fmt(max(x["prices"]))}</dd>'
+                    f'<dt>{word(lang, "tRating", {})}</dt><dd>{rating}</dd>{vs}</dl>')
+        else:
+            out += '<p style="color: var(--muted)">' + (word(lang, "tNoPrices", {}) if x["n"] else word(lang, "tNone", {"tier": names[x["s"] - 1]})) + "</p>"
+        out += "</div>"
+    return out
 
 
 def faq_html(faq, lang):
@@ -2230,9 +2322,8 @@ def build_guides():
              "datePublished": g["published"], "dateModified": g["updated"], "mainEntityOfPage": SITE_URL + path,
              **({"keywords": ", ".join(g["keywords"])} if g["keywords"] else {}),
              "image": [SITE_URL + img + ".jpg", SITE_URL + img + "-og.jpg"] if img else SITE_URL + "/og/default.png",
-             "author": {"@type": "Organization", "name": "The Starred Bill", "url": SITE_URL + "/"},
-             "publisher": {"@type": "Organization", "name": "The Starred Bill", "url": SITE_URL + "/",
-                           "logo": {"@type": "ImageObject", "url": SITE_URL + "/icons/icon-512.png"}}},
+             "author": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
+             "publisher": ORGANIZATION, "isPartOf": {"@id": WEBSITE["@id"]}},
         ]
         if faqs:
             graph.append({"@type": "FAQPage", "mainEntity": [
@@ -2292,7 +2383,7 @@ def build_guides():
             {"@type": "ListItem", "position": 1, "name": "All destinations", "item": SITE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "Guides", "item": SITE_URL + "/guides/"}]},
         {"@type": "CollectionPage", "name": "Michelin Star Guides", "description": description, "url": SITE_URL + "/guides/", "inLanguage": "en",
-         "isPartOf": {"@type": "WebSite", "name": "The Starred Bill", "url": SITE_URL + "/"},
+         "isPartOf": {"@type": "WebSite", "@id": WEBSITE["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
          "mainEntity": {"@type": "ItemList", "itemListElement": [
              {"@type": "ListItem", "position": i + 1, "url": SITE_URL + f"/guides/{g['id']}/", "name": g["h1"]}
              for i, g in enumerate(([pillar] if pillar else []) + [g for grp in groups for g in grp[3]])]}},

@@ -1,5 +1,5 @@
 {
- "_about": "Wording for the FAQ on destination pages, one set per language, read by build.py (destination_faq()). Placeholders: {in} the place mid-sentence, {n} count, {split} the tier list, {checked} month checked, {r}/{names} restaurants, {k} a count, {lo}/{hi}/{mid}/{price} prices, {when} the guide's month, {list}/{m} in 'more'. aNewOne/aUpOne fall back to aNew/aUp. Optional: and3 (the 'and' before the last of three or more, e.g. English's serial comma).",
+ "_about": "Wording for the FAQ on destination pages (plus areasTitle and areaFrom for the 'area by area' links on country and region pages, and footPopular for the footer's popular destinations), one set per language, read by build.py (destination_faq()). Placeholders: {in} the place mid-sentence, {n} count, {split} the tier list, {checked} month checked, {r}/{names} restaurants, {k} a count, {lo}/{hi}/{mid}/{price} prices, {when} the guide's month, {list}/{m} in 'more'. aNewOne/aUpOne fall back to aNew/aUp. {p} in areaFrom is a price. Optional: and3 (the 'and' before the last of three or more, e.g. English's serial comma).",
  "en": {
   "eyebrow": "FAQ",
   "title": "Frequently asked questions",
@@ -38,7 +38,10 @@
   "and": " and ",
   "sep": ", ",
   "more": "{list} and {m} more",
-  "and3": ", and "
+  "and3": ", and ",
+  "areasTitle": "Starred restaurants, area by area",
+  "areaFrom": "Dinner from {p}",
+  "footPopular": "Popular destinations"
  },
  "zh": {
   "eyebrow": "問與答",
@@ -76,7 +79,10 @@
   "aLunch": "午餐常是較便宜的選擇：這裡{n}家餐廳中，我們列出了{k}家的午餐價格。",
   "and": "和",
   "sep": "、",
-  "more": "{list}及另外{m}家"
+  "more": "{list}及另外{m}家",
+  "areasTitle": "各地區星級餐廳",
+  "areaFrom": "晚餐 {p} 起",
+  "footPopular": "熱門目的地"
  },
  "yue": {
   "eyebrow": "問與答",
@@ -114,7 +120,10 @@
   "aLunch": "午市通常係較平嘅選擇：呢度{n}間餐廳之中，我哋列出咗{k}間嘅午餐價錢。",
   "and": "同",
   "sep": "、",
-  "more": "{list}同另外{m}間"
+  "more": "{list}同另外{m}間",
+  "areasTitle": "各地區星級餐廳",
+  "areaFrom": "晚餐 {p} 起",
+  "footPopular": "熱門目的地"
  },
  "zhs": {
   "eyebrow": "问与答",
@@ -152,7 +161,10 @@
   "aLunch": "午餐通常是更实惠的选择：这里{n}家餐厅中，我们列出了{k}家的午餐价格。",
   "and": "和",
   "sep": "、",
-  "more": "{list}及另外{m}家"
+  "more": "{list}及另外{m}家",
+  "areasTitle": "各地区星级餐厅",
+  "areaFrom": "晚餐 {p} 起",
+  "footPopular": "热门目的地"
  },
  "ja": {
   "eyebrow": "Q&A",
@@ -189,7 +201,10 @@
   "aLunch": "ランチは手頃に楽しめる方法です。当サイトでは{n}軒のうち{k}軒のランチ料金を掲載しています。",
   "and": "、",
   "sep": "、",
-  "more": "{list}ほか{m}軒"
+  "more": "{list}ほか{m}軒",
+  "areasTitle": "エリア別の星付きレストラン",
+  "areaFrom": "ディナー {p}〜",
+  "footPopular": "人気の目的地"
  },
  "ko": {
   "eyebrow": "Q&A",
@@ -226,7 +241,10 @@
   "aLunch": "점심은 더 저렴하게 즐기는 방법입니다. 이곳 {n}곳 중 {k}곳의 런치 가격을 소개합니다.",
   "and": ", ",
   "sep": ", ",
-  "more": "{list} 외 {m}곳"
+  "more": "{list} 외 {m}곳",
+  "areasTitle": "지역별 스타 레스토랑",
+  "areaFrom": "디너 {p}부터",
+  "footPopular": "인기 여행지"
  },
  "fr": {
   "eyebrow": "FAQ",
@@ -265,7 +283,10 @@
   "aLunch": "Le déjeuner est souvent la façon la moins chère d'y goûter : nous indiquons le prix du déjeuner pour {k} des {n} restaurants.",
   "and": " et ",
   "sep": ", ",
-  "more": "{list} et {m} autres"
+  "more": "{list} et {m} autres",
+  "areasTitle": "Les restaurants étoilés, zone par zone",
+  "areaFrom": "Dîner dès {p}",
+  "footPopular": "Destinations populaires"
  },
  "es": {
   "eyebrow": "Preguntas",
@@ -304,7 +325,10 @@
   "aLunch": "El almuerzo suele ser la forma más barata de probarlos: indicamos el precio del almuerzo de {k} de los {n} restaurantes.",
   "and": " y ",
   "sep": ", ",
-  "more": "{list} y {m} más"
+  "more": "{list} y {m} más",
+  "areasTitle": "Restaurantes con estrella, zona por zona",
+  "areaFrom": "Cena desde {p}",
+  "footPopular": "Destinos populares"
  },
  "it": {
   "eyebrow": "Domande",
@@ -343,7 +367,10 @@
   "aLunch": "Il pranzo è spesso il modo più economico per provarli: indichiamo il prezzo del pranzo per {k} dei {n} ristoranti.",
   "and": " e ",
   "sep": ", ",
-  "more": "{list} e altri {m}"
+  "more": "{list} e altri {m}",
+  "areasTitle": "Ristoranti stellati, zona per zona",
+  "areaFrom": "Cena da {p}",
+  "footPopular": "Destinazioni popolari"
  },
  "da": {
   "eyebrow": "Spørgsmål",
@@ -382,7 +409,10 @@
   "aLunch": "Frokost er ofte den billigste vej ind: vi viser frokostpriser for {k} af de {n} restauranter.",
   "and": " og ",
   "sep": ", ",
-  "more": "{list} og {m} andre"
+  "more": "{list} og {m} andre",
+  "areasTitle": "Stjernerestauranter, område for område",
+  "areaFrom": "Middag fra {p}",
+  "footPopular": "Populære destinationer"
  },
  "sv": {
   "eyebrow": "Frågor",
@@ -420,7 +450,10 @@
   "aLunch": "Lunch är ofta det billigaste sättet att prova: vi visar lunchpriser för {k} av de {n} restaurangerna.",
   "and": " och ",
   "sep": ", ",
-  "more": "{list} och {m} till"
+  "more": "{list} och {m} till",
+  "areasTitle": "Stjärnkrogar, område för område",
+  "areaFrom": "Middag från {p}",
+  "footPopular": "Populära resmål"
  },
  "is": {
   "eyebrow": "Spurningar",
@@ -459,7 +492,10 @@
   "aLunch": "Hádegisverður er oft ódýrasta leiðin: við birtum hádegisverð á {k} af {n} stöðum.",
   "and": " og ",
   "sep": ", ",
-  "more": "{list} og {m} til viðbótar"
+  "more": "{list} og {m} til viðbótar",
+  "areasTitle": "Stjörnuveitingastaðir eftir svæðum",
+  "areaFrom": "Kvöldverður frá {p}",
+  "footPopular": "Vinsælir áfangastaðir"
  },
  "ca": {
   "eyebrow": "Preguntes",
@@ -498,7 +534,10 @@
   "aLunch": "El dinar sol ser la manera més barata de tastar-los: indiquem el preu del migdia de {k} dels {n} restaurants.",
   "and": " i ",
   "sep": ", ",
-  "more": "{list} i {m} més"
+  "more": "{list} i {m} més",
+  "areasTitle": "Restaurants amb estrella, zona per zona",
+  "areaFrom": "Sopar des de {p}",
+  "footPopular": "Destinacions populars"
  },
  "th": {
   "eyebrow": "ถาม-ตอบ",
@@ -535,7 +574,10 @@
   "aLunch": "มื้อกลางวันมักเป็นทางเลือกที่ถูกกว่า เราแสดงราคามื้อกลางวันของ {k} จาก {n} ร้าน",
   "and": " และ ",
   "sep": ", ",
-  "more": "{list} และอีก {m} ร้าน"
+  "more": "{list} และอีก {m} ร้าน",
+  "areasTitle": "ร้านอาหารติดดาวแยกตามพื้นที่",
+  "areaFrom": "มื้อค่ำเริ่มต้น {p}",
+  "footPopular": "จุดหมายยอดนิยม"
  },
  "de": {
   "eyebrow": "Fragen",
@@ -574,7 +616,10 @@
   "aLunch": "Mittags ist es oft günstiger: Für {k} der {n} Restaurants zeigen wir Mittagspreise.",
   "and": " und ",
   "sep": ", ",
-  "more": "{list} und {m} weitere"
+  "more": "{list} und {m} weitere",
+  "areasTitle": "Sternerestaurants nach Gebiet",
+  "areaFrom": "Abendessen ab {p}",
+  "footPopular": "Beliebte Reiseziele"
  },
  "nl": {
   "eyebrow": "Vragen",
@@ -613,7 +658,10 @@
   "aLunch": "Lunch is vaak de goedkoopste manier: we tonen lunchprijzen voor {k} van de {n} restaurants.",
   "and": " en ",
   "sep": ", ",
-  "more": "{list} en {m} andere"
+  "more": "{list} en {m} andere",
+  "areasTitle": "Sterrenrestaurants per gebied",
+  "areaFrom": "Diner vanaf {p}",
+  "footPopular": "Populaire bestemmingen"
  },
  "pt": {
   "eyebrow": "Perguntas",
@@ -652,7 +700,10 @@
   "aLunch": "O almoço é muitas vezes a forma mais barata de os conhecer: indicamos o preço do almoço de {k} dos {n} restaurantes.",
   "and": " e ",
   "sep": ", ",
-  "more": "{list} e mais {m}"
+  "more": "{list} e mais {m}",
+  "areasTitle": "Restaurantes com estrela por zona",
+  "areaFrom": "Jantar a partir de {p}",
+  "footPopular": "Destinos populares"
  },
  "nb": {
   "eyebrow": "Spørsmål",
@@ -690,7 +741,10 @@
   "aLunch": "Lunsj er ofte den billigste veien inn: vi viser lunsjpriser for {k} av de {n} restaurantene.",
   "and": " og ",
   "sep": ", ",
-  "more": "{list} og {m} til"
+  "more": "{list} og {m} til",
+  "areasTitle": "Stjernerestauranter etter område",
+  "areaFrom": "Middag fra {p}",
+  "footPopular": "Populære reisemål"
  },
  "fi": {
   "eyebrow": "Kysymykset",
@@ -729,7 +783,10 @@
   "aLunch": "Lounas on usein edullisin tapa kokeilla: lounashinta on listattu {k} ravintolalle (kaikkiaan {n}).",
   "and": " ja ",
   "sep": ", ",
-  "more": "{list} ja {m} muuta"
+  "more": "{list} ja {m} muuta",
+  "areasTitle": "Tähtiravintolat alueittain",
+  "areaFrom": "Illallinen alkaen {p}",
+  "footPopular": "Suositut kohteet"
  },
  "pl": {
   "eyebrow": "Pytania",
@@ -768,7 +825,10 @@
   "aLunch": "Lunch to często najtańszy sposób, by ich spróbować: ceny lunchu podajemy dla {k} z {n} restauracji.",
   "and": " i ",
   "sep": ", ",
-  "more": "{list} i jeszcze {m}"
+  "more": "{list} i jeszcze {m}",
+  "areasTitle": "Restauracje z gwiazdkami według regionu",
+  "areaFrom": "Kolacja od {p}",
+  "footPopular": "Popularne miejsca"
  },
  "cs": {
   "eyebrow": "Dotazy",
@@ -807,7 +867,10 @@
   "aLunch": "Oběd bývá nejlevnější cestou: ceny oběda uvádíme u {k} z {n} restaurací.",
   "and": " a ",
   "sep": ", ",
-  "more": "{list} a další ({m})"
+  "more": "{list} a další ({m})",
+  "areasTitle": "Restaurace s hvězdou podle oblastí",
+  "areaFrom": "Večeře od {p}",
+  "footPopular": "Oblíbené destinace"
  },
  "hu": {
   "eyebrow": "Kérdések",
@@ -844,7 +907,10 @@
   "aLunch": "Az ebéd gyakran a legolcsóbb lehetőség: {n} étteremből {k} ebédárát mutatjuk.",
   "and": " és ",
   "sep": ", ",
-  "more": "{list} és még {m}"
+  "more": "{list} és még {m}",
+  "areasTitle": "Csillagos éttermek területenként",
+  "areaFrom": "Vacsora legalább {p}",
+  "footPopular": "Népszerű úti célok"
  },
  "sl": {
   "eyebrow": "Vprašanja",
@@ -883,7 +949,10 @@
   "aLunch": "Kosilo je pogosto najcenejša pot: cene kosila navajamo za {k} od {n} restavracij.",
   "and": " in ",
   "sep": ", ",
-  "more": "{list} in še {m}"
+  "more": "{list} in še {m}",
+  "areasTitle": "Restavracije z zvezdico po območjih",
+  "areaFrom": "Večerja od {p}",
+  "footPopular": "Priljubljene destinacije"
  },
  "hr": {
   "eyebrow": "Pitanja",
@@ -922,7 +991,10 @@
   "aLunch": "Ručak je često najjeftiniji način: cijene ručka navodimo za {k} od {n} restorana.",
   "and": " i ",
   "sep": ", ",
-  "more": "{list} i još {m}"
+  "more": "{list} i još {m}",
+  "areasTitle": "Restorani sa zvjezdicom po područjima",
+  "areaFrom": "Večera od {p}",
+  "footPopular": "Popularna odredišta"
  },
  "sr": {
   "eyebrow": "Питања",
@@ -961,7 +1033,10 @@
   "aLunch": "Ручак је често најјефтинији начин: цене ручка наводимо за {k} од {n} ресторана.",
   "and": " и ",
   "sep": ", ",
-  "more": "{list} и још {m}"
+  "more": "{list} и још {m}",
+  "areasTitle": "Ресторани са звездицом по областима",
+  "areaFrom": "Вечера од {p}",
+  "footPopular": "Популарне дестинације"
  },
  "el": {
   "eyebrow": "Ερωτήσεις",
@@ -1000,7 +1075,10 @@
   "aLunch": "Το μεσημεριανό είναι συχνά ο φθηνότερος τρόπος: δείχνουμε τιμές μεσημεριανού για {k} από τα {n} εστιατόρια.",
   "and": " και ",
   "sep": ", ",
-  "more": "{list} και άλλα {m}"
+  "more": "{list} και άλλα {m}",
+  "areasTitle": "Βραβευμένα εστιατόρια ανά περιοχή",
+  "areaFrom": "Δείπνο από {p}",
+  "footPopular": "Δημοφιλείς προορισμοί"
  },
  "tr": {
   "eyebrow": "Sorular",
@@ -1037,7 +1115,10 @@
   "aLunch": "Öğle yemeği çoğu zaman daha uygun bir yoldur: {n} restoranın {k} tanesi için öğle fiyatlarını gösteriyoruz.",
   "and": " ve ",
   "sep": ", ",
-  "more": "{list} ve {m} restoran daha"
+  "more": "{list} ve {m} restoran daha",
+  "areasTitle": "Bölge bölge yıldızlı restoranlar",
+  "areaFrom": "Akşam yemeği {p} ve üzeri",
+  "footPopular": "Popüler yerler"
  },
  "lt": {
   "eyebrow": "Klausimai",
@@ -1074,7 +1155,10 @@
   "aLunch": "Pietūs dažnai yra pigiausias būdas: pietų kainas nurodome {k} iš {n} restoranų.",
   "and": " ir ",
   "sep": ", ",
-  "more": "{list} ir dar {m}"
+  "more": "{list} ir dar {m}",
+  "areasTitle": "Žvaigždutėmis įvertinti restoranai pagal vietovę",
+  "areaFrom": "Vakarienė nuo {p}",
+  "footPopular": "Populiarios kryptys"
  },
  "lv": {
   "eyebrow": "Jautājumi",
@@ -1111,7 +1195,10 @@
   "aLunch": "Pusdienas bieži ir lētākais veids: pusdienu cenas norādām {k} no {n} restorāniem.",
   "and": " un ",
   "sep": ", ",
-  "more": "{list} un vēl {m}"
+  "more": "{list} un vēl {m}",
+  "areasTitle": "Zvaigžņu restorāni pa reģioniem",
+  "areaFrom": "Vakariņas no {p}",
+  "footPopular": "Populāri galamērķi"
  },
  "et": {
   "eyebrow": "Küsimused",
@@ -1150,7 +1237,10 @@
   "aLunch": "Lõuna on sageli kõige odavam viis: lõunahinnad on meil olemas {k} restorani kohta (kokku {n}).",
   "and": " ja ",
   "sep": ", ",
-  "more": "{list} ja veel {m}"
+  "more": "{list} ja veel {m}",
+  "areasTitle": "Tärniga restoranid piirkonniti",
+  "areaFrom": "Õhtusöök alates {p}",
+  "footPopular": "Populaarsed sihtkohad"
  },
  "mt": {
   "eyebrow": "Mistoqsijiet",
@@ -1189,7 +1279,10 @@
   "aLunch": "L-ikla ta' nofsinhar spiss hija l-orħos mod: nuru l-prezzijiet ta' nofsinhar għal {k} minn {n} ristoranti.",
   "and": " u ",
   "sep": ", ",
-  "more": "{list} u {m} oħra"
+  "more": "{list} u {m} oħra",
+  "areasTitle": "Ristoranti bi stilla skont iż-żona",
+  "areaFrom": "Ikla ta' filgħaxija minn {p}",
+  "footPopular": "Destinazzjonijiet popolari"
  },
  "ms": {
   "eyebrow": "Soalan",
@@ -1226,7 +1319,10 @@
   "aLunch": "Makan tengah hari selalunya cara paling murah: kami menyenaraikan harga makan tengah hari bagi {k} daripada {n} restoran.",
   "and": " dan ",
   "sep": ", ",
-  "more": "{list} dan {m} lagi"
+  "more": "{list} dan {m} lagi",
+  "areasTitle": "Restoran berbintang mengikut kawasan",
+  "areaFrom": "Makan malam dari {p}",
+  "footPopular": "Destinasi popular"
  },
  "fil": {
   "eyebrow": "Mga tanong",
@@ -1264,7 +1360,10 @@
   "aLunch": "Kadalasang mas mura ang tanghalian: may presyo ng tanghalian kami para sa {k} sa {n} restawran.",
   "and": " at ",
   "sep": ", ",
-  "more": "{list} at {m} pa"
+  "more": "{list} at {m} pa",
+  "areasTitle": "Mga restawrang may bituin ayon sa lugar",
+  "areaFrom": "Hapunan mula {p}",
+  "footPopular": "Mga sikat na destinasyon"
  },
  "vi": {
   "eyebrow": "Hỏi đáp",
@@ -1301,7 +1400,10 @@
   "aLunch": "Bữa trưa thường là cách rẻ hơn để thưởng thức: chúng tôi liệt kê giá bữa trưa của {k} trên {n} nhà hàng.",
   "and": " và ",
   "sep": ", ",
-  "more": "{list} và {m} nhà hàng khác"
+  "more": "{list} và {m} nhà hàng khác",
+  "areasTitle": "Nhà hàng gắn sao theo khu vực",
+  "areaFrom": "Bữa tối từ {p}",
+  "footPopular": "Điểm đến nổi bật"
  },
  "ar": {
   "eyebrow": "أسئلة",
@@ -1338,6 +1440,9 @@
   "aLunch": "غالباً ما يكون الغداء الطريقة الأرخص: نعرض أسعار الغداء لـ{k} من أصل {n}.",
   "and": " و",
   "sep": "، ",
-  "more": "{list} و{m} غيرها"
+  "more": "{list} و{m} غيرها",
+  "areasTitle": "المطاعم الحاصلة على نجوم حسب المنطقة",
+  "areaFrom": "العشاء من {p}",
+  "footPopular": "وجهات شائعة"
  }
 }

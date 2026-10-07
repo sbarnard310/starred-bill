@@ -508,6 +508,15 @@ def in_sentence(p):
     return p.get("inSentence") or p["name"]
 
 
+def in_sentences(p):
+    """How the place reads mid-sentence in each language, as inSentence<Suffix> fields: "London", "à Paris", "en Madrid",
+    "a Roma", Danish "i København", Icelandic "í Reykjavík" (a place can set its own, e.g. "á Íslandi"), Catalan
+    "a Andorra", German "in München", and the declined forms each place sets (Finnish "Helsingissä")."""
+    return {"inSentence": in_sentence(p), "inSentenceFr": inherited_name_fr(p), "inSentenceEs": inherited_name_es(p), "inSentenceIt": inherited_name_it(p),
+            **{"inSentence" + sfx: p.get("inSentence" + sfx) or f"{prep}{'' if sfx == 'Th' else ' '}{p.get('name' + sfx) or p['name']}" for sfx, prep in IN_PREPOSITIONS},
+            **{"inSentence" + sfx: p["inSentence" + sfx] for sfx in DECLINED if p.get("inSentence" + sfx)}}
+
+
 def as_json(data):
     return json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
@@ -535,6 +544,7 @@ def render(template, values):
     values = dict({"ogImage": SITE_URL + "/og/default.png", "ogAlt": "The Starred Bill: what a Michelin star costs, city by city",
                    "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@type": "WebSite", "name": "The Starred Bill", "url": SITE_URL + "/"}) + "</script>"},
                   **values, icons=ICONS, copyYear=COPY_YEAR)
+    values.setdefault("footPlaces", FOOT_PLACES_EN)
     out = re.sub(r"\{\{(\w+)\}\}", lambda m: values[m.group(1)], out)
     return out
 
@@ -556,9 +566,17 @@ def link_targets(html_text):
     return EXTERNAL_LINK.sub(fix, html_text)
 
 
+def no_self_links(path, html_text):
+    """The site's rule: a page never links to itself. Its own menu item, logo or footer link stays as a marked label."""
+    return re.sub(r'<a\b([^>]*?)\shref="' + re.escape(path) + r'"([^>]*)>',
+                  lambda m: "<a" + m.group(1) + m.group(2) + ("" if "aria-current" in m.group(0) else ' aria-current="page"') + ">", html_text)
+
+
 def write(path, text):
     if path.endswith("/") or path.endswith(".html"):
         text = link_targets(text)
+    if path.endswith("/"):
+        text = no_self_links(path, text)
     target = OUT / path.strip("/") / "index.html" if path.endswith("/") else OUT / path
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(text, "utf-8")
@@ -573,11 +591,7 @@ def build_place(p):
     crumbs = [places[c] for c in reversed(chain(p["id"])[1:])] if p["type"] != "group" else \
         ([places[countries_of(p)[0]]] if len(countries_of(p)) == 1 else [])
     page = dict(names(p), **{
-        "id": p["id"], "type": p["type"], "inSentence": in_sentence(p), "inSentenceFr": inherited_name_fr(p),
-        "inSentenceEs": inherited_name_es(p), "inSentenceIt": inherited_name_it(p),
-        # Danish "i København", Icelandic "í Reykjavík" (a place can set its own, e.g. "á Íslandi"), Catalan "a Andorra", German "in München".
-        **{"inSentence" + sfx: p.get("inSentence" + sfx) or f"{prep}{'' if sfx == 'Th' else ' '}{p.get('name' + sfx) or p['name']}" for sfx, prep in IN_PREPOSITIONS},
-        **{"inSentence" + sfx: p["inSentence" + sfx] for sfx in DECLINED if p.get("inSentence" + sfx)},
+        "id": p["id"], "type": p["type"], **in_sentences(p),
         "lead": p.get("lead") or "", "path": p["path"], "currency": currency, "showCity": len({r["city"] for r in starred}) > 1,
         "crumbs": [dict(names(c), path=c["path"], n=starred_n[c["id"]]) for c in crumbs],
         "links": explore_links(p),
@@ -634,10 +648,14 @@ def build_place(p):
         href = lambda c: lang_path(c["path"], lang) if lang in c.get("langs", ()) else c["path"]
         crumb_html = f'<a href="/">{e(texts["crumbHome"])}</a>' + "".join(f'<a href="{href(c)}">{e(name(c))}</a>' for c in page["crumbs"]) + \
             f'<span aria-current="page">{e(name(page))}</span>'
+        place_links = lambda row: "".join(
+            f'<span class="place-link" aria-current="page">{e(name(i))}</span>' if i["current"] else f'<a class="place-link" href="{href(i)}">{e(name(i))}</a>'
+            for i in row["items"])
+        # The fold of every area (including those still waiting for a star) is written in too, so search engines reach them.
         explore_html = "".join(
-            '<div class="explore-row">' + "".join(
-                f'<span class="place-link" aria-current="page">{e(name(i))}</span>' if i["current"] else f'<a class="place-link" href="{href(i)}">{e(name(i))}</a>'
-                for i in row["items"]) + "</div>" for row in page["links"] if not row.get("more"))
+            f'<details class="explore-more"><summary>{e(word(lang, row["label"], {}))} <span class="count">{len(row["items"])}</span></summary>'
+            f'<div class="explore-row">{place_links(row)}</div></details>' if row.get("more") else f'<div class="explore-row">{place_links(row)}</div>'
+            for row in page["links"])
         ledger = '<ol class="prerender">' + "".join(
             f"<li><strong>{e(name(r))}</strong> · "
             + (f"{r['stars']} Michelin star{'s' if r['stars'] > 1 else ''}" if lang == "en" else "★" * r["stars"])
@@ -650,8 +668,13 @@ def build_place(p):
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
             "title": e(titles[lang]), "description": e(texts["description"]), "canonical": SITE_URL + lang_paths[lang],
             "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
-            "crumbs": crumb_html, "explore": explore_html, "ledger": ledger, "data": as_json(version), "rowsScript": rows_script,
+            "crumbs": crumb_html, "explore": explore_html,
+            # The language buttons, written in as links to each version so search engines reach them (common.js redraws them).
+            "langLinks": "".join(f'<span aria-current="page">{e(LANG_LABELS.get(c, c.upper()))}</span>' if c == lang else
+                                 f'<a href="{lang_paths[c]}" hreflang="{HREFLANG.get(c, c)}" lang="{HTML_LANG.get(c, ("en-GB",))[0]}">{e(LANG_LABELS.get(c, c.upper()))}</a>'
+                                 for c in langs) if len(langs) > 1 else "", "ledger": ledger, "data": as_json(version), "rowsScript": rows_script,
             "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
+            "areas": areas_html(p, lang) if starred else "", "footPlaces": foot_places_html(lang, p["id"]),
             "faq": faq_html(faq, lang), "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
         }))
 
@@ -705,7 +728,7 @@ def pick_lang(o, field, lang):
 def read_words():
     """The words the build writes into translated pages (title, heading, intro, breadcrumb), and each language's lang
     attribute and cuisine names, read from the same dictionaries the pages use: common.js and each lang-<code>.js."""
-    keys = "heroEyebrow|heroTitle|heroText|emptyPlace|crumbHome"
+    keys = "heroEyebrow|heroTitle|heroText|emptyPlace|crumbHome|exploreAll|explore"
     def found(text):
         out = {}
         for m in re.finditer(r"\b(" + keys + r'): ("(?:[^"\\]|\\.)*")', text):
@@ -742,6 +765,14 @@ def read_words():
 
 
 WORDS, HTML_LANG, CUISINE_NAMES = read_words()
+
+
+# Each language's button label ("EN", "FR"), from LANGS in common.js and the lang files.
+LANG_LABELS = dict(re.findall(r'^  (\w+): \{ label: "([^"]+)"', (SRC / "assets" / "common.js").read_text("utf-8"), re.M))
+for _code in LANG_FILES:
+    _m = re.search(r'lang: \{ label: "([^"]+)"', (SRC / "assets" / f"lang-{_code}.js").read_text("utf-8"))
+    if _m:
+        LANG_LABELS[_code] = _m.group(1)
 
 
 def html_attrs(lang):
@@ -928,6 +959,75 @@ def faq_html(faq, lang):
             '      <div class="faq">' + "".join(f'<div><h3>{e(q)}</h3><p>{e(a)}</p></div>' for q, a in faq) + "</div>\n    </div>\n  </section>\n")
 
 
+def place_anchor(q, lang):
+    """The words of a link to a destination page, as its title begins: "Michelin star restaurants in Cumbria",
+    "Restaurants étoilés Michelin à Lyon", "東京のミシュラン星付きレストラン"."""
+    w = TITLE_WORDS.get(lang) or TITLE_WORDS["en"]
+    sfx = "" if lang == "en" or lang not in TITLE_WORDS else LANG_SUFFIXES[LANGUAGES.index(lang) - 1]
+    head = w.get("headOne", w["head"]) if starred_n[q["id"]] == 1 else w["head"]
+    if lang == "en":
+        head = head.replace("Star Restaurant", "star restaurant")
+    return head.replace("{in}", in_sentences(q).get("inSentence" + sfx) or in_sentence(q)).replace("{name}", name_in(q, lang))
+
+
+def name_in(q, lang):
+    """A place's name in a language, falling back from Cantonese or Simplified Chinese to Chinese, then to English."""
+    sfx = lang[0].upper() + lang[1:]
+    return next((q["name" + s] for s in ([sfx, "Zh"] if sfx in ("Yue", "Zhs") else [sfx]) if lang != "en" and q.get("name" + s)), q["name"])
+
+
+def areas_html(p, lang):
+    """A destination page's starred areas as plain links with their counts and cheapest dinner menu, e.g. "Michelin star
+    restaurants in Cumbria 13 · Dinner from £95": the regions directly inside and every city further down (a city's
+    districts), so search engines see what each page is about and visitors can go straight there."""
+    if p["type"] == "district":
+        return ""
+    if p["type"] == "city":
+        inside = [q for q in pages if q["type"] == "district" and q.get("parent") == p["id"]]
+    elif p["type"] == "group":
+        inside = [places[i] for i in p["includes"] if i in places]
+    else:
+        inside = [q for q in pages if (q["type"] == "region" and q.get("parent") == p["id"]) or (q["type"] == "city" and p["id"] in chain(q["id"])[1:])]
+    inside = by_size(q for q in inside if starred_n[q["id"]])
+    if len(inside) < 2:
+        return ""
+    w = dict(FAQ_WORDS["en"], **FAQ_WORDS.get(lang, {}))
+    rtl = lang in RTL_LANGUAGES
+
+    def item(q):
+        href = lang_path(q["path"], lang) if lang in place_langs(q) else q["path"]
+        menus = [r for r in members(q) if not r.get("status") and r.get("dinnerType", "menu") == "menu" and r.get("dinner") is not None]
+        cheapest = min(menus, key=lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"]) if menus else None
+        price = money(cheapest["dinner"], cheapest["cur"]) if cheapest else ""
+        price = f"⁦{price}⁩" if price and rtl else price
+        return (f'<li><a href="{href}">{e(place_anchor(q, lang))}</a> <span class="count">{starred_n[q["id"]]}</span>'
+                + (f'<span class="area-from">{e(w["areaFrom"].replace("{p}", price))}</span>' if price else "") + "</li>")
+    return ('<section id="areas">\n    <div class="wrap">\n      <div class="section-head"><div>'
+            f'<span class="eyebrow">{e(word(lang, "explore", {}))}</span><h2 style="margin-top: 6px">{e(w["areasTitle"])}</h2></div></div>\n'
+            '      <ul class="area-links">' + "".join(item(q) for q in inside) + "</ul>\n    </div>\n  </section>\n")
+
+
+# The footer's popular destinations, on every page: the biggest and most searched-for places, one click from anywhere.
+FOOT_PLACES = ("london", "paris", "tokyo", "new-york", "hong-kong", "singapore", "kyoto", "seoul", "bangkok", "shanghai", "taipei",
+               "copenhagen", "barcelona", "madrid", "rome", "milan", "chicago", "san-francisco", "los-angeles", "dubai")
+
+
+def foot_places_html(lang="en", current=None):
+    w = dict(FAQ_WORDS["en"], **FAQ_WORDS.get(lang, {}))
+    links = []
+    for i in FOOT_PLACES:
+        q = places.get(i)
+        if not q or not starred_n.get(i):
+            continue
+        name = e(name_in(q, lang))
+        links.append(f'<span aria-current="page">{name}</span>' if i == current else
+                     f'<a href="{lang_path(q["path"], lang) if lang in place_langs(q) else q["path"]}">{name}</a>')
+    return f'<nav class="foot-places" aria-label="{e(w["footPopular"])}"><span>{e(w["footPopular"])}</span> {" ".join(links)}</nav>'
+
+
+FOOT_PLACES_EN = foot_places_html()
+
+
 # Related guides on destination pages: at most this many, most specific first.
 RELATED_MAX = 6
 
@@ -941,7 +1041,7 @@ def related_guides(p, starred):
     scores = {}
     for g in guides.values():
         hits = [above.index(i) for i in g.get("places", []) if i in above]
-        links = len(re.findall(r'href="' + re.escape(p["path"]) + r'(?:#[^"]*)?"', g["body"]))
+        links = len(re.findall(r'href="' + re.escape(p["path"]) + r'(?:#[^"]*)?"', guide_bodies()[g["id"]]))
         if hits:
             score = (4, -min(hits), links)
         elif links:
@@ -1509,10 +1609,11 @@ def build_pick(near_url):
         "These are the things that make the most difference to the meal and the bill:</p>\n<ul>"
         "<li><strong>Lunch or dinner.</strong> Many starred kitchens serve a shorter lunch menu for much less than dinner.</li>"
         "<li><strong>Stars.</strong> One star is high-quality cooking worth a stop, two is excellent cooking worth a detour, three is "
-        "exceptional cuisine worth a special journey.</li>"
+        "exceptional cuisine worth a special journey (see <a href=\"/guides/three-michelin-star-restaurants/\">every three-Michelin-star restaurant</a>).</li>"
         "<li><strong>Budget.</strong> Prices here are per person before service. Add a wine pairing and the bill can rise by half again.</li>"
         "<li><strong>Food and diet.</strong> The MICHELIN Guide lists which restaurants offer vegetarian menus, vegan options and more.</li></ul>\n"
-        '<p>Want to read more first? Start with <a href="/guides/what-is-a-michelin-star/">What is a Michelin star?</a>, or see every '
+        '<p>Want to read more first? Start with <a href="/guides/what-is-a-michelin-star/">What is a Michelin star?</a>, browse the '
+        '<a href="/guides/top-michelin-star-restaurants-in-the-world/">most popular Michelin star restaurants in the world</a>, or see every '
         'starred restaurant around you with <a href="/near-me/">Near me</a>.</p>\n' + faq_html)
     lede = ("Answer six quick questions and we'll suggest three Michelin-starred restaurants that fit: the best match, the best value "
             "and a wildcard, with what each one costs.")
@@ -1748,6 +1849,16 @@ def place_name(r):
     return (r.get("area") or r["cityName"]).split(", ")[0]
 
 
+def restaurant_link(r, links):
+    """A restaurant's name in a guide's table: it opens the restaurant's row on our page for its town (place.js reads
+    #r=<id>), with a small arrow beside it to its page on the MICHELIN Guide."""
+    out = f'<a href="{e(r["cityPath"])}#r={e(r["id"])}">{e(r["name"])}</a>'
+    if r["id"] in links:
+        out += (f' <a class="mg-link" href="{e(links[r["id"]])}" title="{e(r["name"])} on the MICHELIN Guide" '
+                f'aria-label="{e(r["name"])} on the MICHELIN Guide">↗</a>')
+    return out
+
+
 def michelin_links():
     """Our restaurants' pages on the MICHELIN Guide, matched against content/world-starred.json by name and position."""
     path = CONTENT / "world-starred.json"
@@ -1774,6 +1885,7 @@ def guide_blocks(stats):
     year, checked = stats["guideYear"], stats["checked"]
     stars_cell = lambda n: f'<span class="g-stars" aria-label="{n} star{"s" if n > 1 else ""}">{"★" * n}</span>'
     note = lambda text: f'<p class="table-note">{text} Last checked {e(checked)}.</p>'
+    name_html = lambda r: restaurant_link(r, links)
 
     def counts_table(groups, first):
         rows = "".join(
@@ -1804,10 +1916,7 @@ def guide_blocks(stats):
     def restaurant_table(rows):
         body = ""
         for r in sorted(rows, key=lambda r: (place_name(r).lower(), r["name"].lower())):
-            name = e(r["name"])
-            if r["id"] in links:
-                name = f'<a href="{e(links[r["id"]])}">{name}</a>'
-            body += (f'<tr><td data-label="Restaurant">{name}</td>'
+            body += (f'<tr><td data-label="Restaurant">{name_html(r)}</td>'
                      f'<td data-label="City"><a href="{e(r["cityPath"])}">{e(place_name(r))}</a></td>'
                      f'<td data-label="Chef">{e(r.get("chef") or "–")}</td>'
                      f'<td data-label="Cuisine">{e(r.get("cuisine") or "–")}</td>'
@@ -1815,12 +1924,13 @@ def guide_blocks(stats):
         heads = "".join(f'<th scope="col">{h}</th>' for h in ("Restaurant", "City", "Chef", "Cuisine", "Tasting menu, per person"))
         return f'<div class="table-wrap"><table class="guide-table data three-list"><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>'
 
-    list_note = note(f"Stars from the {e(year)} MICHELIN Guide editions; each restaurant’s name links to its MICHELIN Guide page and its city to our prices there. "
+    list_note = note(f"Stars from the {e(year)} MICHELIN Guide editions; each restaurant’s name opens its prices on The Starred Bill, its city every starred restaurant there, "
+                     "and the arrow its MICHELIN Guide page. "
                      "Prices are the main dinner tasting menu per person in local currency, before service and drinks, with US dollars at recent exchange rates.")
 
     def change_lists(keep):
         gained, lost = three_star_changes(year, keep)
-        item = lambda r, text: (f'<li><strong>{e(r["name"])}</strong>, {e(place_name(r))}, {e(places[r["country"]]["name"])}'
+        item = lambda r, text: (f'<li><strong><a href="{e(r["cityPath"])}#r={e(r["id"])}">{e(r["name"])}</a></strong>, {e(place_name(r))}, {e(places[r["country"]]["name"])}'
                                 + (f" · {e(text)}" if text else "") + "</li>")
         new_html = "".join(item(r, r.get("changeNote", "")) for r in gained) or "<li>None in the guides published so far this year.</li>"
         lost_html = "".join(item(r, r.get("statusNote") or r.get("changeNote", "")) for r in lost) or "<li>None in the guides published so far this year.</li>"
@@ -1853,9 +1963,7 @@ def guide_blocks(stats):
     def indian_table(rows, first, where, lunch=False):
         body = ""
         for r in rows:
-            name = e(r["name"])
-            if r["id"] in links:
-                name = f'<a href="{e(links[r["id"]])}">{name}</a>'
+            name = name_html(r)
             lunch_cell = ""
             if lunch:
                 lunch_text = '<span class="muted">Not published</span>' if r.get("lunch") is None else money(r["lunch"], r["cur"]) + (
@@ -1870,10 +1978,10 @@ def guide_blocks(stats):
     indian = sorted((r for r in live if is_indian(r)), key=lambda r: (-r["stars"], indian_city(r).lower(), r["name"].lower()))
     blocks["indian"] = indian_table(indian, "City", lambda r: f'<a href="{e(r["cityPath"])}">{e(indian_city(r))}</a>') + note(
         f"Every Michelin-starred restaurant serving Indian cuisine, from the current MICHELIN Guide editions ({e(year)} or the latest before it). "
-        "Names link to each restaurant’s MICHELIN Guide page and cities to our full price lists. Head chefs are as the MICHELIN Guide or the restaurant names them, "
+        "Names open each restaurant’s prices on The Starred Bill, cities our full price lists and arrows the MICHELIN Guide. Head chefs are as the MICHELIN Guide or the restaurant names them, "
         "else recent press. Prices are the main dinner tasting menu per person in local currency, before service and drinks, with US dollars at recent exchange rates.")
     blocks["indian-london"] = indian_table([r for r in indian if in_london(r)], "Area", lambda r: e(r.get("area") or "–"), lunch=True) + note(
-        f"Stars from the MICHELIN Guide Great Britain &amp; Ireland {e(year)}; names link to each restaurant’s MICHELIN Guide page. "
+        f"Stars from the MICHELIN Guide Great Britain &amp; Ireland {e(year)}; names open each restaurant’s prices on The Starred Bill and arrows its MICHELIN Guide page. "
         "Prices per person before service (usually 12.5–15% in London) and drinks, with US dollars at recent exchange rates. "
         "Set lunch is the cheapest set menu at lunch, where there is one.")
     blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
@@ -1946,10 +2054,7 @@ def popular_blocks(stars_cell, price_cell, links, checked):
             f'with US dollars at recent exchange rates. Star counts and prices last checked {e(checked)}.</p>')
 
     def name_cell(r, rank):
-        name = e(r["name"])
-        if r["id"] in links:
-            name = f'<a href="{e(links[r["id"]])}">{name}</a>'
-        return f'<td data-label="Restaurant"><span class="rank">{rank}</span> {name}</td>'
+        return f'<td data-label="Restaurant"><span class="rank">{rank}</span> {restaurant_link(r, links)}</td>'
 
     def where_cell(r):
         return (f'<td data-label="Where"><a href="{e(r["cityPath"])}">{e(place_name(r))}</a>'
@@ -2009,8 +2114,9 @@ def popular_blocks(stars_cell, price_cell, links, checked):
         usd, field = cheapest_usd(r)
         if usd is not None:
             facts.append("From " + money(r[field], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(usd)})"))
-        name = f'<a href="{e(links[r["id"]])}">{e(r["name"])}</a>' if r["id"] in links else e(r["name"])
-        items += (f'<li><h3><span class="rank">{i + 1}</span> {name}, <a href="{e(r["cityPath"])}">{e(place_name(r))}</a>, {e(places[r["country"]]["name"])}</h3>'
+        if r["id"] in links:
+            facts.append(f'<a href="{e(links[r["id"]])}">MICHELIN Guide page</a>')
+        items += (f'<li><h3><span class="rank">{i + 1}</span> <a href="{e(r["cityPath"])}#r={e(r["id"])}">{e(r["name"])}</a>, {e(place_name(r))}, {e(places[r["country"]]["name"])}</h3>'
                   f'<p class="rank-facts">{" · ".join(f for f in facts if f)}</p>' + (f'<p>{picks[r["id"]]}</p>' if r["id"] in picks else "") + "</li>")
     blocks["popular-top10"] = f'<ol class="rank-cards">{items}</ol>'
     return blocks
@@ -2075,17 +2181,30 @@ def guide_image(g):
     return f"/img/guides/{g['id']}" if (GUIDE_IMAGES / f"{g['id']}.jpg").exists() else None
 
 
+_guide_bodies = {}
+
+
+def guide_bodies():
+    """Each guide's article as published, with its figures and tables filled in (worked out once, as related_guides()
+    counts the links in them, tables included)."""
+    if not _guide_bodies and guides:
+        stats = guide_stats()
+        blocks = guide_blocks(stats)
+        _guide_bodies.update({g["id"]: guide_text(g["body"], stats, blocks) for g in guides.values()})
+        _guide_bodies["_stats"] = stats
+    return _guide_bodies
+
+
 def build_guides():
     """Each guide at /guides/<name>/, and a list of them at /guides/."""
     if not guides:
         return
-    stats = guide_stats()
-    blocks = guide_blocks(stats)
+    stats = guide_bodies()["_stats"]
     data = as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES})
     home_crumb = '<a href="/">All destinations</a>'
     for g in guides.values():
         path = f"/guides/{g['id']}/"
-        body = guide_text(g["body"], stats, blocks)
+        body = guide_bodies()[g["id"]]
         for leftover in sorted(set(re.findall(r"\{\{[\w:-]+\}\}", body))):
             print(f"  Guide {g['id']}: {leftover} isn't a figure or table the build knows, so it shows as written")
         text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", " ".join([g["title"], g["h1"], body] + [f["q"] + " " + f["a"] for f in g["faq"]]))).lower()

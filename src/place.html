@@ -64,7 +64,7 @@
       <div class="hseg-right">
         <button type="button" class="install-btn" id="installBtn" hidden></button>
         <div class="hseg" role="group" aria-label="Currency" id="currencySwitch"></div>
-        <div class="hseg" role="group" aria-label="Language / 語言" id="langSwitch"></div>
+        <div class="hseg" role="group" aria-label="Language / 語言" id="langSwitch">{{langLinks}}</div>
       </div>
     </div>
   </div>
@@ -209,7 +209,7 @@
     </div>
   </section>
 
-  {{faq}}{{guides}}<section id="contact">
+  {{areas}}{{faq}}{{guides}}<section id="contact">
     <div class="wrap contact">
       <div class="intro">
         <span class="eyebrow" data-i18n="navContact"></span>
@@ -250,6 +250,7 @@
     <span data-i18n="footEdition"></span>
     <a href="/guides/what-is-a-michelin-star/" class="foot-guide" lang="en">What is a Michelin star?</a>
     <span data-i18n="footNote"></span>
+    {{footPlaces}}
     <p class="foot-legal" lang="en">© {{copyYear}} The Starred Bill. The site is independent and is not affiliated with or endorsed by Michelin. MICHELIN and MICHELIN Guide are trademarks of Michelin.</p>
   </div>
 </footer>

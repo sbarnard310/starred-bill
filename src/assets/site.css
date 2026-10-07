@@ -211,6 +211,9 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 /* Ledger */
 .ledger { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.1fr) 72px 84px minmax(0, 1.5fr) minmax(150px, 1fr) 76px; gap: 14px; align-items: center; padding: 14px 18px; border-top: 1px solid var(--line); }
+/* A restaurant opened from a link (#r=<id>, e.g. from a guide's table): highlighted for a moment. */
+.row { transition: background-color 1s; }
+.row.linked { background: var(--green-soft); }
 .row:first-child { border-top: 0; }
 .row.head { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding-block: 10px; background: color-mix(in srgb, var(--green-soft) 50%, var(--surface)); }
 .row .name { font-weight: 600; min-width: 0; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 12px; align-items: center; }
@@ -349,6 +352,13 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .faq div { display: grid; gap: 8px; align-content: start; }
 .faq h3 { font-size: 1.1rem; }
 .faq p { color: var(--muted); font-size: .95rem; }
+/* "Area by area" on country and region pages (areas_html() in build.py): each starred area as a plain link with its count and cheapest dinner. */
+.area-links { list-style: none; margin: 0; padding: 0; columns: 3 260px; column-gap: 40px; }
+.area-links li { break-inside: avoid; padding: 7px 0; border-bottom: 1px solid var(--line); }
+.area-links a { color: var(--ink); font-weight: 600; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.area-links a:hover { color: var(--green); text-decoration-color: currentColor; }
+.area-links .count { font-family: var(--font-num); font-size: .85rem; color: var(--green); white-space: nowrap; }
+.area-links .area-from { display: block; margin-top: 2px; color: var(--muted); font-size: .85rem; }
 /* Related guides on English destination pages (related_guides() in build.py): small picture beside the title, the whole card a link. */
 .more-guides { font-weight: 600; color: var(--green); }
 .related-guides { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 16px; }
@@ -878,6 +888,11 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
   .guide-next { padding: 22px 18px; }
 }
 footer a.foot-guide { color: inherit; }
+/* Popular destinations (foot_places_html() in build.py): a full-width line of links on every page. */
+footer .foot-places { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .82rem; }
+footer .foot-places > span:first-child { font-weight: 600; color: var(--band-ink, inherit); }
+footer .foot-places a { color: inherit; }
+footer .foot-places [aria-current] { opacity: .6; }
 /* Trademark notice: its own full-width line under the footer's other items. */
 footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 /* Data tables on the list guides (by country, three-star list): numbers in their own columns, sortable headings. */
@@ -904,6 +919,9 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 .rank-cards h3 { margin: 14px 0 4px; font-size: 1.08rem; }
 .rank-cards h3 a:first-of-type { color: var(--ink); }
 .rank-facts { color: var(--muted); font-size: .88rem; }
+/* Beside a restaurant's name in the guides' tables: the small arrow to its MICHELIN Guide page (the name opens our prices). */
+.mg-link { font-size: .8rem; color: var(--muted); text-decoration: none; padding: 2px 3px; }
+.mg-link:hover { color: var(--green); }
 @media (max-width: 720px) {
   /* Long ranked tables: on phones each card puts its figures two to a row, about half the height. */
   .guide-table.rank-list tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }

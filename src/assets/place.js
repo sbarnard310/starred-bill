@@ -816,6 +816,26 @@ $("sort").value = state.sort;
 $("q").value = state.query;
 renderAll();
 if (state.query) $("compare").scrollIntoView();
+// A link to one restaurant (e.g. /uk/england/london/#r=core-by-clare-smyth, from a guide's table) opens its row in the list.
+function openFromHash() {
+  const m = location.hash.match(/^#r=(.+)$/);
+  const id = m && decodeURIComponent(m[1]);
+  if (!id || !ALL_RESTAURANTS.some((r) => r.id === id)) return;
+  state.openRow = id;
+  const at = ledger.rows.findIndex((r) => r.id === id);
+  ledger.shown = Math.max(ledger.shown, at < 0 ? ledger.rows.length : at + 1);  // former restaurants follow the last row
+  renderLedger();
+  // The list is redrawn when exchange rates arrive, so the row is looked up afresh each time.
+  const row = () => { const b = [...document.querySelectorAll("#ledger .sum")].find((x) => x.dataset.row === id); return b && b.closest(".row"); };
+  const go = () => { const r = row(); if (r) { r.classList.add("linked"); r.scrollIntoView({ block: "center", behavior: "instant" }); } };  // not smooth: a long smooth scroll gets cut short as the page loads
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  go();
+  // Again once the page has finished loading, as fonts and pictures above it move it down; then the highlight fades.
+  if (document.readyState !== "complete") window.addEventListener("load", () => setTimeout(go, 50), { once: true });
+  setTimeout(() => { const r = row(); if (r) r.classList.remove("linked"); }, 3000);
+}
+openFromHash();
+window.addEventListener("hashchange", openFromHash);
 if (EMPTY) {
   document.body.classList.add("empty-page");
   $("stars").hidden = true;

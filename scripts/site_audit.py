@@ -4,7 +4,8 @@
     python3 scripts/site_audit.py SITE_DIR OUT.json [PREVIOUS.json]
 
 SITE_DIR is a folder holding a fresh copy of the site with _site/ already built (python3 build.py). The audit
-checks every page (titles, descriptions, headings, structured data, broken links, sitemap, page weight) and the
+checks every page (titles, descriptions, headings, structured data, broken links, sitemap, page weight), the internal
+links (orphan pages, pages with few links in or out, self-links, vague anchor text, and the guides' own links) and the
 restaurant data (missing prices, ratings, chefs, positions, duplicates, odd prices), then the live site's
 basics (HTTPS, redirects, 404 page, robots.txt, sitemap). It writes the figures to OUT.json and prints a
 plain report; with PREVIOUS.json it also says what changed since then. It only reads; nothing is changed.
@@ -105,6 +106,104 @@ def page_checks(site):
                        "median_page_kb": sizes[len(sizes) // 2][0] // 1024 if sizes else 0}
 
 
+# Internal links, against the "Internal links" rules in the Handbook's content style guide: keyword anchor text, links
+# inside relevant sentences, no self-links, one link per page per article, enough links in and out of every page.
+LANG_PREFIX = re.compile(r"^/(?:zh|yue|zhs|fr|ja|es|it|ko|da|sv|is|ca|th|de|nl|pt|nb|fi|pl|cs|hu|sl|hr|sr|el|tr|lt|lv|et|mt|ms|fil|vi|ar)/")
+VAGUE = re.compile(r"^(?:here|click here|this|this page|this guide|this link|page|link|more|read more|see more|learn more|find out more|see|go|our page)$", re.I)
+FEW_LINKS_IN = 3       # an indexed English page with fewer links to it than this is hard for Google to find
+FEW_CONTENT_LINKS = 2  # a page with fewer links of its own (beyond the menu and footer every page has) is a dead end
+LISTS = re.compile(r'<table.*?</table>|<(ol|nav) class="(?:rank-cards|jump-links)[^"]*".*?</\1>|<div class="change-lists">(?:.*?</ul></div>){2}</div>|<h3 id="three-[^"]*">.*?</h3>', re.S)  # built from the data
+
+
+def link_checks(site):
+    S = site / "_site"
+    files = {str(p.relative_to(S)) for p in S.rglob("*") if p.is_file()}
+    pages, noindex, names = {}, set(), {}
+    for p in S.rglob("index.html"):
+        s = p.read_text("utf-8", errors="replace")
+        if 'http-equiv="refresh"' in s:
+            continue
+        url = ("/" + str(p.parent.relative_to(S)).strip(".") + "/").replace("//", "/")
+        pages[url] = s
+        if "noindex" in s:
+            noindex.add(url)
+        m = re.search(r'"page":\{"name":"([^"]+)".*?"path":"([^"]+)"', s)
+        if m and not LANG_PREFIX.match(url):
+            names.setdefault(json.loads('"' + m.group(1) + '"'), m.group(2))
+
+    def target(href):
+        h = href.split("#")[0].split("?")[0]
+        if not h.startswith("/") or h.startswith("//"):
+            return None
+        return h if h.endswith("/") or (h.lstrip("/") in files and "." in h.rsplit("/", 1)[-1]) else h + "/"
+
+    anchors = re.compile(r'<a\b([^>]*)\bhref="([^"]*)"([^>]*)>(.*?)</a>', re.S)
+    links_in, links_out = collections.defaultdict(set), {}
+    out = collections.defaultdict(list)
+    for url, s in pages.items():
+        found = set()
+        for before, href, after, inner in anchors.findall(s):
+            t = target(href)
+            if t is None:
+                continue
+            text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", inner))).strip()
+            if t == url and not href.startswith("#") and "#" not in href:
+                out["self_links"].append(f"{url} ({text or 'no text'})")
+            if text and VAGUE.match(text):
+                out["vague_anchor_text"].append(f'"{text}" to {t} (on {url})')
+            if t != url:
+                found.add(t)
+                links_in[t].add(url)
+        links_out[url] = found
+    # Links found on nearly every page are the menu and footer; what's left is each page's own.
+    common = {t for t in set().union(*links_out.values()) if sum(t in v for v in links_out.values()) > 0.9 * len(links_out)}
+    for url in sorted(pages):
+        if url in noindex:
+            continue
+        if not links_in[url]:
+            out["orphan_pages"].append(url)
+        elif len(links_in[url]) < FEW_LINKS_IN and not LANG_PREFIX.match(url) and ('class="prerender"><li>' in pages[url] or url.startswith("/guides/")):
+            out["few_links_in"].append(f"{url} ({len(links_in[url])})")  # destination pages with starred restaurants, and guides
+        if len(links_out[url] - common) < FEW_CONTENT_LINKS and not LANG_PREFIX.match(url):
+            out["few_links_out"].append(f"{url} ({len(links_out[url] - common)})")
+    # Guides: the article's own text (the data-built tables and lists aside) follows the writing rules.
+    by_length = sorted(names, key=len, reverse=True)
+    for url, s in sorted(pages.items()):
+        if not re.match(r"^/guides/[^/]+/$", url):
+            continue
+        main = s[s.find("<main"):s.find("</main>")]
+        main = main[:main.find('<section id="guides"')] if '<section id="guides"' in main else main
+        linked = {target(h) for h in re.findall(r'href="(/[^"]*)"', main)}
+        prose = LISTS.sub(" ", main)
+        seen = collections.Counter()
+        for m in anchors.finditer(prose):
+            t, text = target(m.group(2)), re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", m.group(4)))).strip()
+            if t is None or t.startswith("/guides/") and t == url:
+                continue
+            seen[t] += 1
+            lead = prose[max(0, m.start() - 12):m.start()]
+            if re.search(r"(?:<p[^>]*>|<li>|<h\d[^>]*>)\s*$", lead) or re.search(r"[.!?]\s+$", lead):
+                out["guide_link_starts_sentence"].append(f"{url}: {text}")
+            if text[-1:] in ".,;:" or "  " in m.group(4):
+                out["guide_link_untidy"].append(f"{url}: {text!r}")
+            if text in names and names[text] != t:
+                out["anchor_names_other_page"].append(f'{url}: "{text}" goes to {t}, not {names[text]}')
+        out["guide_repeat_links"] += [f"{url}: {t} ({n} times)" for t, n in seen.items() if n > 1]
+        # Places with a page of their own that the article names but doesn't link anywhere (longest names first, so
+        # "New York" isn't also counted as York). For a writer to judge: not every mention deserves a link.
+        text = " " + html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"<a\b.*?</a>", " ", prose, flags=re.S))) + " "
+        missed = []
+        for n in by_length:
+            if len(n) > 3 and re.search(r"(?<![\w-])" + re.escape(n) + r"(?![\w-])", text):
+                text = re.sub(r"(?<![\w-])" + re.escape(n) + r"(?![\w-])", " ", text)
+                if names[n] not in linked:
+                    missed.append(n)
+        if missed:
+            out["guide_unlinked_places"].append(f"{url}: {', '.join(sorted(missed))}")
+    counts = sorted(len(links_in[u]) for u in pages if u not in noindex and not LANG_PREFIX.match(u))
+    return dict(out), {"median_links_in": counts[len(counts) // 2] if counts else 0}
+
+
 def data_checks(site):
     C = site / "content"
     places = {p.stem: json.loads(p.read_text("utf-8")) for p in (C / "places").glob("*.json")}
@@ -185,6 +284,9 @@ def live_checks():
 def main(site, out_path, prev_path=None):
     site = Path(site)
     pages, weight = page_checks(site)
+    links, link_figures = link_checks(site)
+    pages.update(links)
+    weight.update(link_figures)
     data = data_checks(site)
     live = live_checks()
     result = {"pages": {k: len(v) for k, v in pages.items()}, "page_examples": {k: v[:6] for k, v in pages.items() if v},

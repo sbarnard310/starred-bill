@@ -34,7 +34,7 @@
     },
     {
       "q": "Can you get a Michelin star in any country?",
-      "a": "Only where Michelin publishes a guide. There are starred restaurants in {{countries}} countries and territories today; countries without a guide, such as Australia and India, have no stars yet. See <a data-guide=\"michelin-stars-by-country\">Michelin stars by country</a>."
+      "a": "Only where Michelin publishes a guide. There are starred restaurants in {{countries}} countries and territories today; countries without a guide, such as <a data-guide=\"michelin-star-restaurants-australia\">Australia</a> and <a data-guide=\"michelin-star-restaurants-india\">India</a>, have no stars yet. See <a data-guide=\"michelin-stars-by-country\">Michelin stars by country</a>."
     }
   ],
   "imageAlt": "Illustration of an inspector's table for one: a plated course, a wine glass and a dark green notebook with a fountain pen."

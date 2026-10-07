@@ -15,7 +15,7 @@
     heroEyebrow: "{place} · Ресторани из Мишленовог водича",
     heroTitle: "Колико <em>кошта</em> Мишленова звездица {placeIn}?",
     heroText: "Цене вечере, ручка и винске пратње по особи у ресторанима са звездицом {placeIn}, једна поред друге. Претражујте по називу или кухињи, филтрирајте по звездицама или кухињи и сачувајте на листу жеља оне које желите да пробате.",
-    crumbHome: "Све дестинације", explore: "Истражите", exploreCities: "Градови – {country}", exploreDistricts: "Области – {country}", alsoIn: "Такође у",
+    crumbHome: "Све дестинације", explore: "Истражите", exploreCities: "Градови – {country}", exploreDistricts: "Области – {country}", alsoIn: "Такође у", nearby: "У близини",
     figCount: "Ресторани", figMin: "Најјефтинији вечерњи мени", figMax: "Најскупљи вечерњи мени", figMinLunch: "Најјефтинији мени за ручак", figMaxLunch: "Најскупљи мени за ручак",
     fMeal: "Оброк", mealDinner: "Вечера", mealLunch: "Ручак", hNotesLunch: "О ручку", noLunch: "Без ручка", avgLunch: "прос. ручак", infoLunch: "ручак",
     sortPriceAscLunch: "Ручак: од најјефтинијег", sortPriceDescLunch: "Ручак: од најскупљег",

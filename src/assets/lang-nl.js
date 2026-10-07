@@ -21,7 +21,7 @@
     heroEyebrow: "{place} · Restaurants in de Michelingids",
     heroTitle: "Wat een Michelinster <em>kost</em> {placeIn}.",
     heroText: "Prijzen per persoon voor diner, lunch en wijnarrangement bij de sterrenrestaurants {placeIn}, naast elkaar. Zoek op naam of keuken, filter op sterren of keuken en bewaar de restaurants die je wilt proberen op je verlanglijst.",
-    crumbHome: "Alle bestemmingen", explore: "Ontdekken", exploreCities: "Steden in {country}", exploreDistricts: "Rond {country}", alsoIn: "Ook in",
+    crumbHome: "Alle bestemmingen", explore: "Ontdekken", exploreCities: "Steden in {country}", exploreDistricts: "Rond {country}", alsoIn: "Ook in", nearby: "In de buurt",
     figCount: "Restaurants", figMin: "Goedkoopste dinermenu", figMax: "Duurste dinermenu", figMinLunch: "Goedkoopste lunchmenu", figMaxLunch: "Duurste lunchmenu",
     fMeal: "Maaltijd", mealDinner: "Diner", mealLunch: "Lunch", hNotesLunch: "Over de lunch", noLunch: "Geen lunch", avgLunch: "gem. lunch", infoLunch: "lunch",
     sortPriceAscLunch: "Lunch: goedkoopste eerst", sortPriceDescLunch: "Lunch: duurste eerst",

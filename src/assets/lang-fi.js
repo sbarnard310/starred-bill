@@ -16,7 +16,7 @@
     heroEyebrow: "{place} · Michelin-oppaan ravintolat",
     heroTitle: "Mitä Michelin-tähti <em>maksaa</em> {placeIn}?",
     heroText: "Illallisen, lounaan ja viinipaketin hinnat henkeä kohden tähtiravintoloissa {placeIn}, rinnakkain. Hae nimellä tai keittiön mukaan, suodata tähtien tai keittiön mukaan ja tallenna kokeiltavat ravintolat toivelistallesi.",
-    crumbHome: "Kaikki kohteet", explore: "Tutki", exploreCities: "Kaupungit – {country}", exploreDistricts: "Alueet – {country}", alsoIn: "Myös",
+    crumbHome: "Kaikki kohteet", explore: "Tutki", exploreCities: "Kaupungit – {country}", exploreDistricts: "Alueet – {country}", alsoIn: "Myös", nearby: "Lähellä",
     figCount: "Ravintolat", figMin: "Edullisin illallismenu", figMax: "Kallein illallismenu", figMinLunch: "Edullisin lounasmenu", figMaxLunch: "Kallein lounasmenu",
     fMeal: "Ateria", mealDinner: "Illallinen", mealLunch: "Lounas", hNotesLunch: "Lounaasta", noLunch: "Ei lounasta", avgLunch: "lounas keskim.", infoLunch: "lounas",
     sortPriceAscLunch: "Lounas: halvin ensin", sortPriceDescLunch: "Lounas: kallein ensin",

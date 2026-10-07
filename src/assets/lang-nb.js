@@ -16,7 +16,7 @@
     heroEyebrow: "{place} · Restauranter i Michelinguiden",
     heroTitle: "Hva en Michelinstjerne <em>koster</em> {placeIn}.",
     heroText: "Priser per person for middag, lunsj og vinmeny på stjernerestaurantene {placeIn}, side om side. Søk etter navn eller kjøkken, filtrer på stjerner eller kjøkken, og lagre dem du vil prøve på ønskelisten.",
-    crumbHome: "Alle reisemål", explore: "Utforsk", exploreCities: "Byer i {country}", exploreDistricts: "Rundt om i {country}", alsoIn: "Også i",
+    crumbHome: "Alle reisemål", explore: "Utforsk", exploreCities: "Byer i {country}", exploreDistricts: "Rundt om i {country}", alsoIn: "Også i", nearby: "I nærheten",
     figCount: "Restauranter", figMin: "Billigste middagsmeny", figMax: "Dyreste middagsmeny", figMinLunch: "Billigste lunsjmeny", figMaxLunch: "Dyreste lunsjmeny",
     fMeal: "Måltid", mealDinner: "Middag", mealLunch: "Lunsj", hNotesLunch: "Om lunsjen", noLunch: "Ingen lunsj", avgLunch: "snitt lunsj", infoLunch: "lunsj",
     sortPriceAscLunch: "Lunsj: lavest først", sortPriceDescLunch: "Lunsj: høyest først",

@@ -16,7 +16,7 @@
     heroEyebrow: "{place} · Restavracije iz vodnika Michelin",
     heroTitle: "Koliko <em>stane</em> Michelinova zvezdica {placeIn}?",
     heroText: "Cene večerje, kosila in vinske spremljave na osebo v restavracijah z zvezdico {placeIn}, druga ob drugi. Iščite po imenu ali kuhinji, filtrirajte po zvezdicah ali kuhinji in shranite na seznam želja tiste, ki jih želite preizkusiti.",
-    crumbHome: "Vse destinacije", explore: "Raziskujte", exploreCities: "Mesta – {country}", exploreDistricts: "Območja – {country}", alsoIn: "Tudi v",
+    crumbHome: "Vse destinacije", explore: "Raziskujte", exploreCities: "Mesta – {country}", exploreDistricts: "Območja – {country}", alsoIn: "Tudi v", nearby: "V bližini",
     figCount: "Restavracije", figMin: "Najcenejši večerni meni", figMax: "Najdražji večerni meni", figMinLunch: "Najcenejši meni za kosilo", figMaxLunch: "Najdražji meni za kosilo",
     fMeal: "Obrok", mealDinner: "Večerja", mealLunch: "Kosilo", hNotesLunch: "O kosilu", noLunch: "Brez kosila", avgLunch: "povpr. kosilo", infoLunch: "kosilo",
     sortPriceAscLunch: "Kosilo: od najcenejšega", sortPriceDescLunch: "Kosilo: od najdražjega",

@@ -16,7 +16,7 @@
     heroEyebrow: "{place} · Restaurace z Průvodce Michelin",
     heroTitle: "Kolik <em>stojí</em> michelinská hvězda {placeIn}?",
     heroText: "Ceny večeře, oběda a vinného párování na osobu v restauracích s hvězdou {placeIn}, vedle sebe. Hledejte podle názvu nebo kuchyně, filtrujte podle hvězd nebo kuchyně a ukládejte si do oblíbených podniky, které chcete vyzkoušet.",
-    crumbHome: "Všechny destinace", explore: "Prozkoumat", exploreCities: "Města – {country}", exploreDistricts: "Oblasti – {country}", alsoIn: "Také v",
+    crumbHome: "Všechny destinace", explore: "Prozkoumat", exploreCities: "Města – {country}", exploreDistricts: "Oblasti – {country}", alsoIn: "Také v", nearby: "V okolí",
     figCount: "Restaurace", figMin: "Nejlevnější večerní menu", figMax: "Nejdražší večerní menu", figMinLunch: "Nejlevnější polední menu", figMaxLunch: "Nejdražší polední menu",
     fMeal: "Jídlo", mealDinner: "Večeře", mealLunch: "Oběd", hNotesLunch: "K obědu", noLunch: "Bez oběda", avgLunch: "prům. oběd", infoLunch: "oběd",
     sortPriceAscLunch: "Oběd: od nejlevnějšího", sortPriceDescLunch: "Oběd: od nejdražšího",

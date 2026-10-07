@@ -13,7 +13,7 @@
     heroEyebrow: "{place} · Michelin ceļveža restorāni",
     heroTitle: "Cik <em>maksā</em> Michelin zvaigzne {placeIn}?",
     heroText: "Vakariņu, pusdienu un vīnu pāru cenas vienai personai restorānos ar zvaigznēm {placeIn}, blakus. Meklējiet pēc nosaukuma vai virtuves, filtrējiet pēc zvaigznēm vai virtuves un saglabājiet vēlmju sarakstā tos, kurus gribat izmēģināt.",
-    crumbHome: "Visi galamērķi", explore: "Izpētīt", exploreCities: "Pilsētas – {country}", exploreDistricts: "Apkaime – {country}", alsoIn: "Arī",
+    crumbHome: "Visi galamērķi", explore: "Izpētīt", exploreCities: "Pilsētas – {country}", exploreDistricts: "Apkaime – {country}", alsoIn: "Arī", nearby: "Tuvumā",
     figCount: "Restorāni", figMin: "Lētākā vakariņu ēdienkarte", figMax: "Dārgākā vakariņu ēdienkarte", figMinLunch: "Lētākā pusdienu ēdienkarte", figMaxLunch: "Dārgākā pusdienu ēdienkarte",
     fMeal: "Maltīte", mealDinner: "Vakariņas", mealLunch: "Pusdienas", hNotesLunch: "Par pusdienām", noLunch: "Pusdienu nav", avgLunch: "vid. pusdienas", infoLunch: "pusdienas",
     sortPriceAscLunch: "Pusdienas: lētākās vispirms", sortPriceDescLunch: "Pusdienas: dārgākās vispirms",

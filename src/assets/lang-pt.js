@@ -19,7 +19,7 @@
     heroEyebrow: "{place} · Restaurantes do Guia Michelin",
     heroTitle: "Quanto <em>custa</em> uma estrela Michelin {placeIn}?",
     heroText: "Preços por pessoa de jantar, almoço e harmonização de vinhos nos restaurantes com estrela {placeIn}, lado a lado. Pesquise por nome ou cozinha, filtre por estrelas ou cozinha e guarde nos favoritos os que quer experimentar.",
-    crumbHome: "Todos os destinos", explore: "Explorar", exploreCities: "Cidades – {country}", exploreDistricts: "Zonas – {country}", alsoIn: "Também em",
+    crumbHome: "Todos os destinos", explore: "Explorar", exploreCities: "Cidades – {country}", exploreDistricts: "Zonas – {country}", alsoIn: "Também em", nearby: "Nas proximidades",
     figCount: "Restaurantes", figMin: "Menu de jantar mais barato", figMax: "Menu de jantar mais caro", figMinLunch: "Menu de almoço mais barato", figMaxLunch: "Menu de almoço mais caro",
     fMeal: "Refeição", mealDinner: "Jantar", mealLunch: "Almoço", hNotesLunch: "Sobre o almoço", noLunch: "Sem almoço", avgLunch: "média almoço", infoLunch: "almoço",
     sortPriceAscLunch: "Almoço: mais barato primeiro", sortPriceDescLunch: "Almoço: mais caro primeiro",

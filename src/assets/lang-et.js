@@ -13,7 +13,7 @@
     heroEyebrow: "{place} · Michelini teejuhi restoranid",
     heroTitle: "Mis <em>maksab</em> Michelini täht {placeIn}?",
     heroText: "Õhtusöögi, lõunasöögi ja veinipaketi hinnad inimese kohta tähistatud restoranides {placeIn}, kõrvuti. Otsi nime või köögi järgi, filtreeri tähtede või köögi järgi ja salvesta soovinimekirja need, mida tahad proovida.",
-    crumbHome: "Kõik sihtkohad", explore: "Avasta", exploreCities: "Linnad – {country}", exploreDistricts: "Piirkonnad – {country}", alsoIn: "Ka",
+    crumbHome: "Kõik sihtkohad", explore: "Avasta", exploreCities: "Linnad – {country}", exploreDistricts: "Piirkonnad – {country}", alsoIn: "Ka", nearby: "Läheduses",
     figCount: "Restoranid", figMin: "Odavaim õhtusöögimenüü", figMax: "Kalleim õhtusöögimenüü", figMinLunch: "Odavaim lõunamenüü", figMaxLunch: "Kalleim lõunamenüü",
     fMeal: "Söögikord", mealDinner: "Õhtusöök", mealLunch: "Lõuna", hNotesLunch: "Lõunast", noLunch: "Lõunat ei pakuta", avgLunch: "kesk. lõuna", infoLunch: "lõuna",
     sortPriceAscLunch: "Lõuna: odavaimad ees", sortPriceDescLunch: "Lõuna: kalleimad ees",

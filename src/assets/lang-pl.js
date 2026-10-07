@@ -16,7 +16,7 @@
     heroEyebrow: "{place} · Restauracje z Przewodnika Michelin",
     heroTitle: "Ile <em>kosztuje</em> gwiazdka Michelin {placeIn}?",
     heroText: "Ceny kolacji, lunchu i dobranych win za osobę w restauracjach z gwiazdkami {placeIn}, obok siebie. Szukaj po nazwie lub kuchni, filtruj według gwiazdek lub kuchni i zapisuj w ulubionych miejsca, które chcesz odwiedzić.",
-    crumbHome: "Wszystkie kierunki", explore: "Odkrywaj", exploreCities: "Miasta – {country}", exploreDistricts: "Okolice – {country}", alsoIn: "Także w",
+    crumbHome: "Wszystkie kierunki", explore: "Odkrywaj", exploreCities: "Miasta – {country}", exploreDistricts: "Okolice – {country}", alsoIn: "Także w", nearby: "W pobliżu",
     figCount: "Restauracje", figMin: "Najtańsze menu kolacyjne", figMax: "Najdroższe menu kolacyjne", figMinLunch: "Najtańsze menu lunchowe", figMaxLunch: "Najdroższe menu lunchowe",
     fMeal: "Posiłek", mealDinner: "Kolacja", mealLunch: "Lunch", hNotesLunch: "O lunchu", noLunch: "Bez lunchu", avgLunch: "śr. lunch", infoLunch: "lunch",
     sortPriceAscLunch: "Lunch: od najtańszych", sortPriceDescLunch: "Lunch: od najdroższych",

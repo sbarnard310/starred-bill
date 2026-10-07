@@ -17,7 +17,7 @@
     heroEyebrow: "{place} · Restoran Panduan Michelin",
     heroTitle: "Berapakah <em>harga</em> sebutir bintang Michelin {placeIn}?",
     heroText: "Harga seorang untuk makan malam, makan tengah hari dan padanan wain di restoran berbintang {placeIn}, bersebelahan. Cari ikut nama atau masakan, tapis ikut bintang atau masakan, dan simpan yang ingin anda cuba dalam senarai hajat.",
-    crumbHome: "Semua destinasi", explore: "Teroka", exploreCities: "Bandar di {country}", exploreDistricts: "Sekitar {country}", alsoIn: "Juga di",
+    crumbHome: "Semua destinasi", explore: "Teroka", exploreCities: "Bandar di {country}", exploreDistricts: "Sekitar {country}", alsoIn: "Juga di", nearby: "Berdekatan",
     figCount: "Restoran", figMin: "Menu makan malam termurah", figMax: "Menu makan malam termahal", figMinLunch: "Menu makan tengah hari termurah", figMaxLunch: "Menu makan tengah hari termahal",
     fMeal: "Hidangan", mealDinner: "Makan malam", mealLunch: "Makan tengah hari", hNotesLunch: "Nota makan tengah hari", noLunch: "Tiada makan tengah hari", avgLunch: "purata tengah hari", infoLunch: "tengah hari",
     sortPriceAscLunch: "Tengah hari: termurah dahulu", sortPriceDescLunch: "Tengah hari: termahal dahulu",

@@ -13,7 +13,7 @@
     heroEyebrow: "{place} · „Michelin“ gido restoranai",
     heroTitle: "Kiek <em>kainuoja</em> „Michelin“ žvaigždutė {placeIn}?",
     heroText: "Vakarienės, pietų ir vynų derinių kainos asmeniui žvaigždutėmis pažymėtuose restoranuose {placeIn}, viena šalia kitos. Ieškokite pagal pavadinimą ar virtuvę, filtruokite pagal žvaigždutes ar virtuvę ir išsisaugokite norų sąraše tuos, kuriuos norite išbandyti.",
-    crumbHome: "Visos kryptys", explore: "Naršyti", exploreCities: "Miestai – {country}", exploreDistricts: "Vietovės – {country}", alsoIn: "Taip pat",
+    crumbHome: "Visos kryptys", explore: "Naršyti", exploreCities: "Miestai – {country}", exploreDistricts: "Vietovės – {country}", alsoIn: "Taip pat", nearby: "Netoliese",
     figCount: "Restoranai", figMin: "Pigiausias vakarienės meniu", figMax: "Brangiausias vakarienės meniu", figMinLunch: "Pigiausias pietų meniu", figMaxLunch: "Brangiausias pietų meniu",
     fMeal: "Valgis", mealDinner: "Vakarienė", mealLunch: "Pietūs", hNotesLunch: "Apie pietus", noLunch: "Pietų nėra", avgLunch: "vid. pietūs", infoLunch: "pietūs",
     sortPriceAscLunch: "Pietūs: nuo pigiausių", sortPriceDescLunch: "Pietūs: nuo brangiausių",

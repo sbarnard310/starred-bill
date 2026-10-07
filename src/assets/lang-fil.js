@@ -16,7 +16,7 @@
     heroEyebrow: "{place} · Mga restawran sa MICHELIN Guide",
     heroTitle: "Magkano ang <em>halaga</em> ng isang Michelin star {placeIn}?",
     heroText: "Mga presyo bawat tao ng hapunan, tanghalian at wine pairing sa mga restawrang may bituin {placeIn}, magkakatabi. Maghanap ayon sa pangalan o lutuin, salain ayon sa bituin o lutuin, at i-save sa wishlist ang mga gusto mong subukan.",
-    crumbHome: "Lahat ng destinasyon", explore: "Tuklasin", exploreCities: "Mga lungsod sa {country}", exploreDistricts: "Sa paligid ng {country}", alsoIn: "Kasama rin sa",
+    crumbHome: "Lahat ng destinasyon", explore: "Tuklasin", exploreCities: "Mga lungsod sa {country}", exploreDistricts: "Sa paligid ng {country}", alsoIn: "Kasama rin sa", nearby: "Malapit",
     figCount: "Mga restawran", figMin: "Pinakamurang menu sa hapunan", figMax: "Pinakamahal na menu sa hapunan", figMinLunch: "Pinakamurang menu sa tanghalian", figMaxLunch: "Pinakamahal na menu sa tanghalian",
     fMeal: "Kainan", mealDinner: "Hapunan", mealLunch: "Tanghalian", hNotesLunch: "Tungkol sa tanghalian", noLunch: "Walang tanghalian", avgLunch: "avg na tanghalian", infoLunch: "tanghalian",
     sortPriceAscLunch: "Tanghalian: mura muna", sortPriceDescLunch: "Tanghalian: mahal muna",

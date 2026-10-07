@@ -17,7 +17,7 @@
     heroEyebrow: "{place} · Michelin Rehberi restoranları",
     heroTitle: "{placeIn} bir Michelin yıldızı ne <em>kadar</em>?",
     heroText: "{placeIn} yıldızlı restoranlarda kişi başı akşam yemeği, öğle yemeği ve şarap eşleştirme fiyatları yan yana. Ada veya mutfağa göre arayın, yıldıza veya mutfağa göre filtreleyin ve denemek istediklerinizi istek listenize kaydedin.",
-    crumbHome: "Tüm destinasyonlar", explore: "Keşfet", exploreCities: "Şehirler – {country}", exploreDistricts: "Bölgeler – {country}", alsoIn: "Ayrıca",
+    crumbHome: "Tüm destinasyonlar", explore: "Keşfet", exploreCities: "Şehirler – {country}", exploreDistricts: "Bölgeler – {country}", alsoIn: "Ayrıca", nearby: "Yakındakiler",
     figCount: "Restoranlar", figMin: "En ucuz akşam menüsü", figMax: "En pahalı akşam menüsü", figMinLunch: "En ucuz öğle menüsü", figMaxLunch: "En pahalı öğle menüsü",
     fMeal: "Öğün", mealDinner: "Akşam", mealLunch: "Öğle", hNotesLunch: "Öğle yemeği notu", noLunch: "Öğle servisi yok", avgLunch: "ort. öğle", infoLunch: "öğle",
     sortPriceAscLunch: "Öğle: ucuzdan pahalıya", sortPriceDescLunch: "Öğle: pahalıdan ucuza",

@@ -16,7 +16,7 @@
     heroEyebrow: "{place} · Restorani iz vodiča Michelin",
     heroTitle: "Koliko <em>stoji</em> Michelinova zvjezdica {placeIn}?",
     heroText: "Cijene večere, ručka i vinske pratnje po osobi u restoranima sa zvjezdicom {placeIn}, jedna uz drugu. Tražite po nazivu ili kuhinji, filtrirajte po zvjezdicama ili kuhinji i spremite na popis želja one koje želite isprobati.",
-    crumbHome: "Sva odredišta", explore: "Istražite", exploreCities: "Gradovi – {country}", exploreDistricts: "Područja – {country}", alsoIn: "Također u",
+    crumbHome: "Sva odredišta", explore: "Istražite", exploreCities: "Gradovi – {country}", exploreDistricts: "Područja – {country}", alsoIn: "Također u", nearby: "U blizini",
     figCount: "Restorani", figMin: "Najjeftiniji večernji meni", figMax: "Najskuplji večernji meni", figMinLunch: "Najjeftiniji meni za ručak", figMaxLunch: "Najskuplji meni za ručak",
     fMeal: "Obrok", mealDinner: "Večera", mealLunch: "Ručak", hNotesLunch: "O ručku", noLunch: "Bez ručka", avgLunch: "prosj. ručak", infoLunch: "ručak",
     sortPriceAscLunch: "Ručak: od najjeftinijeg", sortPriceDescLunch: "Ručak: od najskupljeg",

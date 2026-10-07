@@ -20,7 +20,7 @@
     heroEyebrow: "{place} · 米其林指南餐厅",
     heroTitle: "在{place}，一颗米其林星<em>要价</em>多少？",
     heroText: "并列比较{place}米其林星级餐厅的人均晚餐、午餐与配酒价格。可按名称或菜系搜索、按星级或菜系筛选，也能把想去的餐厅加入心愿单。",
-    crumbHome: "所有目的地", explore: "探索", exploreCities: "{country}的城市", exploreDistricts: "{country}各区", alsoIn: "也属于",
+    crumbHome: "所有目的地", explore: "探索", exploreCities: "{country}的城市", exploreDistricts: "{country}各区", alsoIn: "也属于", nearby: "邻近地区",
     figCount: "星级餐厅", figMin: "最便宜晚餐套餐", figMax: "最贵晚餐套餐", figMinLunch: "最便宜午餐套餐", figMaxLunch: "最贵午餐套餐",
     fMeal: "餐别", mealDinner: "晚餐", mealLunch: "午餐", hNotesLunch: "午餐说明", noLunch: "不供应午餐", avgLunch: "平均午餐", infoLunch: "午餐",
     sortPriceAscLunch: "午餐：从低到高", sortPriceDescLunch: "午餐：从高到低",

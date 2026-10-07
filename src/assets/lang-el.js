@@ -16,7 +16,7 @@
     heroEyebrow: "{place} · Εστιατόρια του Οδηγού Michelin",
     heroTitle: "Πόσο <em>κοστίζει</em> ένα αστέρι Michelin {placeIn};",
     heroText: "Τιμές ανά άτομο για δείπνο, γεύμα και συνοδεία κρασιών στα βραβευμένα εστιατόρια {placeIn}, δίπλα δίπλα. Αναζητήστε με όνομα ή κουζίνα, φιλτράρετε με αστέρια ή κουζίνα και αποθηκεύστε στη λίστα επιθυμιών όσα θέλετε να δοκιμάσετε.",
-    crumbHome: "Όλοι οι προορισμοί", explore: "Εξερευνήστε", exploreCities: "Πόλεις – {country}", exploreDistricts: "Περιοχές – {country}", alsoIn: "Επίσης σε",
+    crumbHome: "Όλοι οι προορισμοί", explore: "Εξερευνήστε", exploreCities: "Πόλεις – {country}", exploreDistricts: "Περιοχές – {country}", alsoIn: "Επίσης σε", nearby: "Κοντά",
     figCount: "Εστιατόρια", figMin: "Φθηνότερο μενού δείπνου", figMax: "Ακριβότερο μενού δείπνου", figMinLunch: "Φθηνότερο μενού γεύματος", figMaxLunch: "Ακριβότερο μενού γεύματος",
     fMeal: "Γεύμα", mealDinner: "Δείπνο", mealLunch: "Μεσημεριανό", hNotesLunch: "Για το μεσημεριανό", noLunch: "Χωρίς μεσημεριανό", avgLunch: "μ.ό. μεσημεριανού", infoLunch: "μεσημεριανό",
     sortPriceAscLunch: "Μεσημεριανό: φθηνότερα πρώτα", sortPriceDescLunch: "Μεσημεριανό: ακριβότερα πρώτα",

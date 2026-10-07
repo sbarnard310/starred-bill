@@ -22,7 +22,7 @@
     heroEyebrow: "{place} · Restaurants im Guide Michelin",
     heroTitle: "Was ein Michelin-Stern {placeIn} <em>kostet</em>.",
     heroText: "Preise pro Person für Abendessen, Mittagessen und Weinbegleitung in den Sternerestaurants {placeIn}, direkt nebeneinander. Suche nach Name oder Küche, filtere nach Sternen oder Küche und speichere die Restaurants, die du ausprobieren möchtest, auf deiner Merkliste.",
-    crumbHome: "Alle Reiseziele", explore: "Entdecken", exploreCities: "Städte: {country}", exploreDistricts: "Rund um {country}", alsoIn: "Auch in",
+    crumbHome: "Alle Reiseziele", explore: "Entdecken", exploreCities: "Städte: {country}", exploreDistricts: "Rund um {country}", alsoIn: "Auch in", nearby: "In der Nähe",
     figCount: "Restaurants", figMin: "Günstigstes Abendmenü", figMax: "Teuerstes Abendmenü", figMinLunch: "Günstigstes Mittagsmenü", figMaxLunch: "Teuerstes Mittagsmenü",
     fMeal: "Mahlzeit", mealDinner: "Abendessen", mealLunch: "Mittagessen", hNotesLunch: "Zum Mittagessen", noLunch: "Kein Mittagstisch", avgLunch: "Ø Mittag", infoLunch: "Mittag",
     sortPriceAscLunch: "Mittag: günstigste zuerst", sortPriceDescLunch: "Mittag: teuerste zuerst",

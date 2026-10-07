@@ -342,6 +342,70 @@ def by_size(ps):
     return sorted(ps, key=lambda p: (-starred_n[p["id"]], p["name"]))
 
 
+# "Nearby" links between neighbouring pages (Cumbria -> Lancashire, Northumberland, Yorkshire), worked out from where
+# their restaurants are: two places are as far apart as their closest pair of restaurants.
+NEARBY_KM = 150   # list every neighbour this close...
+NEARBY_MIN = 3    # ...topping up to this many from further away (up to NEARBY_FAR_KM) for remote places
+NEARBY_FAR_KM = 500
+NEARBY_MAX = 8
+_spots = {}
+
+
+def spots(pid):
+    """A place's restaurant positions, rounded to about 5 km so big regions stay quick to compare."""
+    if pid not in _spots:
+        _spots[pid] = sorted({(round(r["lat"] * 20) / 20, round(r["lng"] * 20) / 20) for r in members(places[pid])
+                              if r.get("lat") is not None and r.get("lng") is not None})
+    return _spots[pid]
+
+
+def apart_km(a, b):
+    """The distance between two places' closest restaurants, or None when it's clearly over NEARBY_FAR_KM."""
+    sa, sb = spots(a), spots(b)
+    if not sa or not sb:
+        return None
+    # A quick check on the boxes around them first (a degree of latitude is 111 km).
+    gap = max(min(y for y, x in sb) - max(y for y, x in sa), min(y for y, x in sa) - max(y for y, x in sb), 0) * 111
+    if gap > NEARBY_FAR_KM:
+        return None
+    return min(metres(y1, x1, y2, x2) for y1, x1 in sa for y2, x2 in sb) / 1000
+
+
+def nearby(p, linked):
+    """Starred places near this one, nearest first: at about the same level (a county's fellow counties and the
+    nations next door, a region's neighbouring regions, a country's neighbours), leaving out those above or
+    inside it and any the page already links to."""
+    if p["type"] not in ("country", "region", "city") or not spots(p["id"]):
+        return []
+    depth = len(chain(p["id"]))
+    found = []
+    for q in pages:
+        qid = q["id"]
+        if q["type"] not in ("country", "region", "city") or qid == p["id"] or not starred_n[qid] or q["path"] in linked:
+            continue
+        if qid in chain(p["id"]) or p["id"] in chain(qid) or abs(len(chain(qid)) - depth) > 1:
+            continue
+        km = apart_km(p["id"], qid)
+        if km is not None and km <= NEARBY_FAR_KM:
+            found.append((km, q))
+    found.sort(key=lambda f: (f[0], -starred_n[f[1]["id"]]))
+
+    def better(q, other):
+        return (q["type"] == p["type"]) > (other["type"] == p["type"]) or \
+            ((q["type"] == p["type"]) == (other["type"] == p["type"]) and len(chain(q["id"])) < len(chain(other["id"])))
+    # Nearest first, so a place above another comes no later than it. One just as near takes its place if it's
+    # of a better kind (Geneva rather than Switzerland for Lyon); a further one is left out, as the nearer one
+    # already leads there (York for Lancashire; Gothenburg for Copenhagen, where Sweden is Malmö, next door).
+    keep = []
+    for km, q in found:
+        rival = next((k for k in keep if k[1]["id"] in chain(q["id"]) or q["id"] in chain(k[1]["id"])), None)
+        if rival is None:
+            keep.append((km, q))
+        elif km <= rival[0] + 1 and better(q, rival[1]):
+            keep[keep.index(rival)] = (km, q)
+    return [q for i, (km, q) in enumerate(keep) if km <= NEARBY_KM or i < NEARBY_MIN][:NEARBY_MAX]
+
+
 def explore_links(p):
     """The rows of place links under the page title."""
     rows = []
@@ -374,6 +438,9 @@ def explore_links(p):
         if cities:
             rows.append(dict({k.replace("name", "country"): v for k, v in names(p).items()}, label="exploreCities" if regions else "explore",
                              items=[link(q) for q in cities]))
+    near = nearby(p, {i["path"] for row in rows for i in row["items"]})
+    if near:
+        rows.append({"label": "nearby", "items": [link(q) for q in near]})
     groups = [g for g in pages if g["type"] == "group" and g["id"] != p["id"] and set(g["includes"]) & set(chain(p["id"]) if p["type"] != "group" else [])]
     if groups:
         rows.append({"label": "alsoIn", "items": [link(g) for g in groups]})

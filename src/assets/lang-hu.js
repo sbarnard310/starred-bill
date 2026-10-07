@@ -15,7 +15,7 @@
     heroEyebrow: "{place} · A Michelin-kalauz éttermei",
     heroTitle: "Mennyibe <em>kerül</em> egy Michelin-csillag {placeIn}?",
     heroText: "Vacsora, ebéd és borpárosítás árai fejenként a csillagos éttermekben {placeIn}, egymás mellett. Keress név vagy konyha szerint, szűrj csillagra vagy konyhára, és mentsd a kívánságlistádra, amit ki szeretnél próbálni.",
-    crumbHome: "Minden úti cél", explore: "Felfedezés", exploreCities: "Városok – {country}", exploreDistricts: "Környék – {country}", alsoIn: "Itt is",
+    crumbHome: "Minden úti cél", explore: "Felfedezés", exploreCities: "Városok – {country}", exploreDistricts: "Környék – {country}", alsoIn: "Itt is", nearby: "A közelben",
     figCount: "Éttermek", figMin: "Legolcsóbb vacsoramenü", figMax: "Legdrágább vacsoramenü", figMinLunch: "Legolcsóbb ebédmenü", figMaxLunch: "Legdrágább ebédmenü",
     fMeal: "Étkezés", mealDinner: "Vacsora", mealLunch: "Ebéd", hNotesLunch: "Az ebédről", noLunch: "Nincs ebéd", avgLunch: "átl. ebéd", infoLunch: "ebéd",
     sortPriceAscLunch: "Ebéd: legolcsóbb elöl", sortPriceDescLunch: "Ebéd: legdrágább elöl",

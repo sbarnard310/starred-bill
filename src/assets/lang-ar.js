@@ -25,7 +25,7 @@
     heroEyebrow: "{place} · مطاعم دليل ميشلان",
     heroTitle: "كم <em>تكلّف</em> نجمة ميشلان {placeIn}؟",
     heroText: "أسعار العشاء والغداء ومرافقة النبيذ للشخص الواحد في المطاعم الحائزة على نجوم ميشلان {placeIn}، جنبًا إلى جنب. ابحث بالاسم أو المطبخ، وصفِّ النتائج حسب النجوم أو المطبخ، واحفظ المطاعم التي تودّ تجربتها في قائمتك المفضلة.",
-    crumbHome: "كل الوجهات", explore: "استكشف", exploreCities: "مدن {country}", exploreDistricts: "في أنحاء {country}", alsoIn: "أيضًا في",
+    crumbHome: "كل الوجهات", explore: "استكشف", exploreCities: "مدن {country}", exploreDistricts: "في أنحاء {country}", alsoIn: "أيضًا في", nearby: "بالقرب",
     figCount: "مطاعم", figMin: "أرخص قائمة عشاء", figMax: "أغلى قائمة عشاء", figMinLunch: "أرخص قائمة غداء", figMaxLunch: "أغلى قائمة غداء",
     fMeal: "الوجبة", mealDinner: "العشاء", mealLunch: "الغداء", hNotesLunch: "عن الغداء", noLunch: "لا يقدّم الغداء", avgLunch: "متوسط الغداء", infoLunch: "غداء",
     sortPriceAscLunch: "الغداء: الأرخص أولًا", sortPriceDescLunch: "الغداء: الأغلى أولًا",

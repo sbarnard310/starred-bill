@@ -16,7 +16,7 @@
     heroEyebrow: "{place} · Nhà hàng trong Cẩm nang MICHELIN",
     heroTitle: "Một sao Michelin {placeIn} <em>giá</em> bao nhiêu?",
     heroText: "Giá mỗi người cho bữa tối, bữa trưa và rượu vang kết hợp tại các nhà hàng gắn sao {placeIn}, đặt cạnh nhau. Tìm theo tên hoặc phong cách ẩm thực, lọc theo số sao hoặc ẩm thực, và lưu những nơi bạn muốn thử vào danh sách muốn đến.",
-    crumbHome: "Tất cả điểm đến", explore: "Khám phá", exploreCities: "Các thành phố của {country}", exploreDistricts: "Quanh {country}", alsoIn: "Cũng thuộc",
+    crumbHome: "Tất cả điểm đến", explore: "Khám phá", exploreCities: "Các thành phố của {country}", exploreDistricts: "Quanh {country}", alsoIn: "Cũng thuộc", nearby: "Lân cận",
     figCount: "Nhà hàng", figMin: "Thực đơn tối rẻ nhất", figMax: "Thực đơn tối đắt nhất", figMinLunch: "Thực đơn trưa rẻ nhất", figMaxLunch: "Thực đơn trưa đắt nhất",
     fMeal: "Bữa", mealDinner: "Bữa tối", mealLunch: "Bữa trưa", hNotesLunch: "Ghi chú bữa trưa", noLunch: "Không phục vụ trưa", avgLunch: "trưa trung bình", infoLunch: "trưa",
     sortPriceAscLunch: "Bữa trưa: thấp đến cao", sortPriceDescLunch: "Bữa trưa: cao đến thấp",

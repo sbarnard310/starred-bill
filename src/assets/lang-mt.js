@@ -15,7 +15,7 @@
     heroEyebrow: "{place} · Ristoranti fil-Gwida Michelin",
     heroTitle: "Kemm <em>tiswa</em> stilla Michelin {placeIn}?",
     heroText: "Prezzijiet għal kull persuna tal-pranzu, l-ikla ta' nofsinhar u l-inbid magħżul fir-ristoranti bl-istilla {placeIn}, ħdejn xulxin. Fittex skont l-isem jew il-kċina, iffiltra skont l-istilel jew il-kċina, u żomm fil-lista tax-xewqat dawk li tixtieq tipprova.",
-    crumbHome: "Id-destinazzjonijiet kollha", explore: "Esplora", exploreCities: "Bliet – {country}", exploreDistricts: "Inħawi – {country}", alsoIn: "Ukoll f'",
+    crumbHome: "Id-destinazzjonijiet kollha", explore: "Esplora", exploreCities: "Bliet – {country}", exploreDistricts: "Inħawi – {country}", alsoIn: "Ukoll f'", nearby: "Fil-qrib",
     figCount: "Ristoranti", figMin: "L-irħas menu tal-pranzu", figMax: "L-ogħla menu tal-pranzu", figMinLunch: "L-irħas menu ta' nofsinhar", figMaxLunch: "L-ogħla menu ta' nofsinhar",
     fMeal: "Ikla", mealDinner: "Pranzu", mealLunch: "Nofsinhar", hNotesLunch: "Dwar l-ikla ta' nofsinhar", noLunch: "Ma jservux nofsinhar", avgLunch: "medja nofsinhar", infoLunch: "nofsinhar",
     sortPriceAscLunch: "Nofsinhar: l-irħas l-ewwel", sortPriceDescLunch: "Nofsinhar: l-ogħla l-ewwel",

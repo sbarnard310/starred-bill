@@ -8,6 +8,8 @@ report can say what changed. A source that isn't set up yet is reported as "not 
 
   - Google Search Console (clicks, impressions, average position, top searches and pages). Its figures
     run two to three days behind, so it reports the last 7 days it has, against the 7 before.
+  - Google's index: which of the key pages in index-pages.txt (beside config.json) Google has indexed, from
+    Search Console's URL Inspection, and which became indexed since the previous day.
   - Google Analytics 4 (visitors, sessions, page views, top pages and countries, sign-ups). It only counts
     visitors who accepted the cookie banner.
   - Umami (every visit, no cookies: visitors, page views, top pages, referrers, countries, click events).
@@ -33,6 +35,7 @@ import tempfile
 import time
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 CONFIG = Path.home() / "starred-bill-research" / "figures" / "config.json"
@@ -121,6 +124,41 @@ def search_console(cfg):
             "top_searches": top("query"), "top_pages": top("page")}
 
 
+def index_status(cfg, prev=None):
+    """Whether Google has indexed each page in index-pages.txt (beside config.json, "name|/path/" per line),
+    from Search Console's URL Inspection (2,000 a day allowed; about 120 pages take under a minute here).
+    With the previous day's file, lists the pages that became indexed since."""
+    pages_file = CONFIG.parent / "index-pages.txt"
+    pages = [l.strip().split("|", 1) for l in pages_file.read_text().splitlines() if "|" in l and not l.startswith("#")]
+    token = google_token(cfg, "https://www.googleapis.com/auth/webmasters.readonly")
+    site = cfg.get("gsc_site", "sc-domain:starredbill.com")
+    auth = {"Authorization": f"Bearer {token}"}
+
+    def inspect(page):
+        name, path = page
+        try:
+            r = http("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
+                     {"inspectionUrl": "https://starredbill.com" + path, "siteUrl": site}, auth)
+            ix = r.get("inspectionResult", {}).get("indexStatusResult", {})
+            return path, {"name": name, "coverage": ix.get("coverageState", ""), "indexed": ix.get("verdict") == "PASS",
+                          "last_crawled": ix.get("lastCrawlTime")}
+        except Exception as e:
+            return path, {"name": name, "coverage": "check failed", "indexed": None, "error": str(e)[:120]}
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        result = dict(pool.map(inspect, pages))
+    before = {}
+    if prev and Path(prev).exists():
+        before = json.loads(Path(prev).read_text()).get("sources", {}).get("index", {}).get("pages", {})
+    newly = [v["name"] for p, v in result.items() if v["indexed"] and before and not before.get(p, {}).get("indexed")]
+    dropped = [v["name"] for p, v in result.items() if v["indexed"] is False and before.get(p, {}).get("indexed")]
+    counts = {}
+    for v in result.values():
+        counts[v["coverage"]] = counts.get(v["coverage"], 0) + 1
+    return {"checked": len(result), "indexed": sum(1 for v in result.values() if v["indexed"]),
+            "by_status": counts, "newly_indexed": newly, "dropped_out": dropped, "pages": result}
+
+
 def analytics(cfg):
     token = google_token(cfg, "https://www.googleapis.com/auth/analytics.readonly")
     url = f"https://analyticsdata.googleapis.com/v1beta/properties/{cfg['ga4_property']}:runReport"
@@ -193,8 +231,10 @@ def main(out, prev=None):
     result = {"date": str(dt.date.today()), "sources": {}}
     for name, fn, needs in (("search_console", search_console, ["google sign-in"]),
                             ("analytics", analytics, ["google sign-in", "ga4_property"]),
+                            ("index", lambda c: index_status(c, prev), ["google sign-in", "index-pages.txt"]),
                             ("umami", umami, [])):
-        missing = [k for k in needs if not (google_ready(cfg) if k == "google sign-in" else cfg.get(k))]
+        missing = [k for k in needs if not (google_ready(cfg) if k == "google sign-in" else
+                                            (CONFIG.parent / k).exists() if k.endswith(".txt") else cfg.get(k))]
         if missing:
             result["sources"][name] = {"status": "not set up", "missing": missing}
             continue

@@ -274,6 +274,10 @@ for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").
     g["keywords"] = [k.strip() for k in g.get("keywords", []) if isinstance(k, str) and k.strip()]
     if not isinstance(g.get("places", []), list) or any(i not in places for i in g.get("places", [])):
         problem(where, "places must be a list of place ids (file names in content/places), e.g. [\"london\"]")
+    g["picks"] = [tidy(p) for p in g.get("picks", []) if isinstance(p, dict) and tidy(p).get("restaurant") and tidy(p).get("text")]
+    for p in g["picks"]:
+        if p["restaurant"] not in {r["id"] for r in restaurants}:
+            problem(where, f"picks names \"{p['restaurant']}\", which isn't a restaurant file name")
     g["id"] = gid
     guides[gid] = g
 
@@ -1600,6 +1604,7 @@ def guide_stats():
     stats["checked"] = (MONTH_NAMES[int(month[5:7]) - 1] + " " + month[:4]) if re.fullmatch(r"\d{4}-\d{2}", month) else ""
     stats["guideYear"] = month[:4]
     stats.update(list_stats(live, stats["guideYear"]))
+    stats.update(popular_stats())
     return stats
 
 
@@ -1771,6 +1776,143 @@ def guide_blocks(stats):
     blocks["three-star-changes"] = change_lists(lambda r: True)
     blocks["three-star-changes-uk"] = change_lists(lambda r: r["country"] == "uk")
     blocks["three-star-changes-london"] = change_lists(in_london)
+    blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
+    return blocks
+
+
+# The popularity rankings (Top Michelin star restaurants in the world): starred restaurants by their number of Google reviews.
+RATED_MIN = 1000   # reviews a restaurant needs for the "highest rated" lists, so a handful of 5.0s can't top them
+VALUE_USD = 100    # the "under $100" list: the cheapest meal (dinner or lunch) at or below this, in US dollars
+VALUE_RATING = 4.5
+RATINGS_CHECKED = "October 2026"  # when the Google ratings and review counts were last fetched
+
+
+def reviewed():
+    """Starred restaurants with a Google review count, most reviewed first."""
+    return sorted((r for r in restaurants if r.get("stars") in (1, 2, 3) and not r.get("status") and r.get("reviews") and r.get("rating")),
+                  key=lambda r: (-r["reviews"], r["name"].lower()))
+
+
+def cheapest_usd(r):
+    """The lowest listed meal price (dinner or lunch, menu or à la carte) in US dollars, and which field it came from."""
+    got = [(r[f] / CURRENCIES[r["cur"]]["perUSD"], f) for f in ("dinner", "lunch") if r.get(f) is not None]
+    return min(got) if got else (None, None)
+
+
+def rated_rank(rows):
+    return sorted((r for r in rows if r.get("rating") and r["reviews"] >= RATED_MIN), key=lambda r: (-r["rating"], -r["reviews"], r["name"].lower()))
+
+
+def popular_stats():
+    """Figures for the popularity guide, e.g. {{popTop}} (the most reviewed starred restaurant) and {{ratedN}}."""
+    rows = reviewed()
+    if not rows:
+        return {}
+    top50 = rows[:50]
+    total = sum(r["reviews"] for r in rows)
+    out = {"popN": f"{len(rows):,}", "popReviews": f"{total / 1e6:.1f} million", "popMedian": f"{rows[len(rows) // 2]['reviews']:,}",
+           "popTop": rows[0]["name"], "popTopPlace": place_name(rows[0]), "popTopReviews": f"{rows[0]['reviews']:,}",
+           "pop50Min": f"{top50[-1]['reviews']:,}", "pop50One": str(sum(1 for r in top50 if r["stars"] == 1)),
+           "pop50Three": str(sum(1 for r in top50 if r["stars"] == 3)),
+           "pop50Countries": str(len({r["country"] for r in top50})),
+           "ratedMin": f"{RATED_MIN:,}", "ratedN": str(sum(1 for r in rated_rank(rows) if r["rating"] >= 4.9)),
+           "valueUSD": f"${VALUE_USD}", "valueRating": str(VALUE_RATING), "ratingsChecked": RATINGS_CHECKED}
+    for s in (1, 2, 3):
+        at = [r for r in rows if r["stars"] == s]
+        out[f"pop{s}Top"], out[f"pop{s}TopReviews"] = at[0]["name"], f"{at[0]['reviews']:,}"
+    rated = rated_rank(rows)
+    if rated:
+        out["ratedTop"], out["ratedTopPlace"] = rated[0]["name"], f'{place_name(rated[0])}, {places[rated[0]["country"]]["name"]}'
+        out["ratedTopRating"], out["ratedTopReviews"] = f"{rated[0]['rating']:.1f}", f"{rated[0]['reviews']:,}"
+    best3 = rated_rank([r for r in rows if r["stars"] == 3])
+    if best3:
+        out["best3Top"], out["best3TopRating"] = best3[0]["name"], f"{best3[0]['rating']:.1f}"
+    top_countries = {}
+    for r in top50:
+        top_countries[r["country"]] = top_countries.get(r["country"], 0) + 1
+    lead = max(sorted(top_countries), key=top_countries.get)
+    out["pop50Lead"], out["pop50LeadN"] = places[lead]["name"], str(top_countries[lead])
+    return out
+
+
+def popular_blocks(stars_cell, price_cell, links, checked):
+    """The ranked tables: {{table:popular-50}}, popular-rated, popular-3/-2/-1, popular-best-3, popular-value and popular-countries,
+    plus {{table:popular-top10}}, the top ten written up from the guides' `picks`."""
+    rows = reviewed()
+    if not rows:
+        return {}
+    note = (f'<p class="table-note">Stars from the current MICHELIN Guide editions. Google review counts and ratings checked {RATINGS_CHECKED}; '
+            f'they grow every day, so the order shifts a little between updates. Prices are per person in local currency, before service and drinks, '
+            f'with US dollars at recent exchange rates. Star counts and prices last checked {e(checked)}.</p>')
+
+    def name_cell(r, rank):
+        name = e(r["name"])
+        if r["id"] in links:
+            name = f'<a href="{e(links[r["id"]])}">{name}</a>'
+        return f'<td data-label="Restaurant"><span class="rank">{rank}</span> {name}</td>'
+
+    def where_cell(r):
+        return (f'<td data-label="Where"><a href="{e(r["cityPath"])}">{e(place_name(r))}</a>'
+                f'<br><span class="muted">{e(places[r["country"]]["name"])}</span></td>')
+
+    def cheap_cell(r):
+        usd, field = cheapest_usd(r)
+        if usd is None:
+            return '<span class="muted">Not published</span>'
+        kind = r.get(field + "Type", "menu")
+        text = money(r[field], r["cur"]) + ("" if r["cur"] == "USD" else f'<br><span class="muted">about {usd_text(usd)}</span>')
+        label = {"main": "à la carte main course", "spend": "typical spend"}.get(kind, "lunch menu" if field == "lunch" else "dinner menu")
+        return text + f'<br><span class="muted">{label}</span>'
+
+    def table(picked, price=None, price_head="Dinner, per person"):
+        price = price or price_cell
+        body = "".join(
+            f'<tr>{name_cell(r, i + 1)}<td data-label="Stars">{stars_cell(r["stars"])}</td>{where_cell(r)}'
+            f'<td class="num" data-label="Google reviews">{r["reviews"]:,}</td>'
+            f'<td class="num" data-label="Google rating">{r["rating"]:.1f}</td>'
+            f'<td class="num" data-label="{e(price_head)}">{price(r)}</td></tr>' for i, r in enumerate(picked))
+        heads = "".join(f'<th scope="col">{h}</th>' for h in ("Restaurant", "Stars", "Where", "Google reviews", "Rating", price_head))
+        return f'<div class="table-wrap"><table class="guide-table data rank-list"><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>' + note
+
+    blocks = {
+        "popular-50": table(rows[:50]),
+        "popular-rated": table(rated_rank(rows)[:10]),
+        "popular-best-3": table(rated_rank([r for r in rows if r["stars"] == 3])[:10]),
+        "popular-value": table([r for r in rows if (r.get("rating") or 0) >= VALUE_RATING and cheapest_usd(r)[0] is not None
+                                and cheapest_usd(r)[0] <= VALUE_USD][:10], cheap_cell, "Cheapest meal"),
+    }
+    for s in (1, 2, 3):
+        blocks[f"popular-{s}"] = table([r for r in rows if r["stars"] == s][:10])
+    # The most reviewed starred restaurant in each country.
+    firsts = {}
+    for r in rows:
+        firsts.setdefault(r["country"], r)
+    body = "".join(
+        f'<tr><td data-label="Country"><a href="{e(places[c]["path"])}">{e(places[c]["name"])}</a></td>'
+        + name_cell(r, "").replace('<span class="rank"></span> ', "")
+        + f'<td data-label="Stars">{stars_cell(r["stars"])}</td>'
+        f'<td class="num" data-label="Google reviews">{r["reviews"]:,}</td><td class="num" data-label="Google rating">{r["rating"]:.1f}</td></tr>'
+        for c, r in sorted(firsts.items(), key=lambda kv: places[kv[0]]["name"]))
+    heads = "".join(f'<th scope="col">{h}</th>' for h in ("Country", "Restaurant", "Stars", "Google reviews", "Rating"))
+    blocks["popular-countries"] = (f'<div class="table-wrap"><table class="guide-table data rank-list" data-sortable><thead><tr>{heads}</tr></thead>'
+                                   f'<tbody>{body}</tbody></table></div>' + note)
+    # The top ten written up: each restaurant's line of facts, then its `picks` text from the guide.
+    picks = {p["restaurant"]: p["text"] for g in guides.values() for p in g.get("picks", [])}
+    items = ""
+    for i, r in enumerate(rows[:10]):
+        if r["id"] not in picks:
+            print(f"  Guides: {r['name']} ({r['id']}) is now in the top ten most reviewed but has no write-up in a guide's picks")
+        facts = [f'{"★" * r["stars"]} {r["stars"]} star{"s" if r["stars"] > 1 else ""}', e(r.get("cuisine") or "")]
+        if r.get("chef"):
+            facts.append("Chef " + e(r["chef"]))
+        facts.append(f'{r["reviews"]:,} Google reviews, rated {r["rating"]:.1f}')
+        usd, field = cheapest_usd(r)
+        if usd is not None:
+            facts.append("From " + money(r[field], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(usd)})"))
+        name = f'<a href="{e(links[r["id"]])}">{e(r["name"])}</a>' if r["id"] in links else e(r["name"])
+        items += (f'<li><h3><span class="rank">{i + 1}</span> {name}, <a href="{e(r["cityPath"])}">{e(place_name(r))}</a>, {e(places[r["country"]]["name"])}</h3>'
+                  f'<p class="rank-facts">{" · ".join(f for f in facts if f)}</p>' + (f'<p>{picks[r["id"]]}</p>' if r["id"] in picks else "") + "</li>")
+    blocks["popular-top10"] = f'<ol class="rank-cards">{items}</ol>'
     return blocks
 
 

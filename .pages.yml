@@ -1682,6 +1682,18 @@ content:
           - name: a
             label: Answer
             type: text
+      - name: picks
+        label: Restaurant write-ups
+        description: For ranked lists such as the top ten most reviewed. The restaurant is its file name, e.g. don-julio.
+        type: object
+        list: true
+        fields:
+          - name: restaurant
+            label: Restaurant (file name)
+            type: string
+          - name: text
+            label: Write-up
+            type: text
   - name: currencies
     label: Currencies
     description: Symbols and fallback exchange rates. Live rates are used when available; these only apply if they can't be fetched.

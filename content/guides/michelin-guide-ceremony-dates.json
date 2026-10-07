@@ -1,0 +1,48 @@
+{
+  "id": "michelin-guide-ceremony-dates",
+  "title": "Michelin Guide Ceremony 2026 Dates: When Stars Are Announced",
+  "description": "When each MICHELIN Guide reveals its stars, destination by destination: the latest ceremony, the next date where it’s announced, and the year at a glance.",
+  "h1": "When Are Michelin Stars Announced? Every Guide’s Ceremony Date",
+  "summary": "Every MICHELIN Guide’s ceremony date, destination by destination, and which comes next.",
+  "section": "stars",
+  "figure": "Next: {{cerNextDate}}",
+  "published": "2026-10-07",
+  "updated": "2026-10-07",
+  "lang": "en-US",
+  "keywords": [
+    "michelin guide ceremony",
+    "michelin guide ceremony 2026",
+    "when are michelin stars announced",
+    "when is michelin star season",
+    "michelin guide northeast cities ceremony",
+    "michelin guide american south ceremony",
+    "michelin guide southwest ceremony"
+  ],
+  "body": "<p class=\"lede\">Michelin stars aren’t announced all at once. Each of the {{cerGuides}} MICHELIN Guides below reveals its new stars once a year, on its own date, usually at a ceremony in the country or city it covers. The next is the {{cerNext}}, on {{cerNextDate}}. Here is every guide’s latest and next date, destination by destination.</p>\n<p>The new stars count from the moment they are announced. Most ceremonies are streamed live on the MICHELIN Guide’s YouTube channel, and the full selection goes up on its website and app the same day. We then check each guide’s results against our restaurant list and update the stars on every page that shows them; where a guide has just announced and our pages haven’t caught up yet, the tables below say so. For how the inspectors reach their decisions, see <a data-guide=\"how-restaurants-get-a-michelin-star\">how restaurants get a Michelin star</a>.</p>\n\n<h2 id=\"coming-up\">Upcoming Michelin Guide ceremonies</h2>\n<p>Announced dates come first. After them are the guides whose turn comes round in the next few months but whose date isn’t out yet, with last year’s date as a guide.</p>\n{{table:ceremonies-next}}\n\n<h2 id=\"just-announced\">Stars announced in the last two months</h2>\n{{table:ceremonies-recent}}\n\n<h2 id=\"by-destination\">Michelin Guide ceremony dates by destination</h2>\n<p>One row per guide, grouped by continent. Some guides cover several countries: the Nordic Countries guide covers five, and Great Britain and Ireland share one. Some countries have several guides with their own dates, as in Japan, China, Canada and the United States, where Michelin publishes a guide per city or region. Each destination’s name opens its starred restaurants with their prices.</p>\n{{table:ceremonies}}\n\n<h2 id=\"calendar\">When is Michelin star season?</h2>\n<p>There isn’t one season: new stars arrive in every part of the year. The busiest months are {{cerBusy}}. The calendar shows the month each guide is next due, or revealed its latest stars where the next date isn’t announced; guides do move, so check the table above for the exact day.</p>\n{{table:ceremonies-calendar}}\n\n<h2 id=\"how-it-works\">How a Michelin Guide ceremony works</h2>\n<p>A ceremony is an invitation-only event for the chefs, the press and the guide’s partners, often a tourism board or city government that helps pay for the guide. Michelin usually names the date and host city a few months ahead, and the host moves from city to city: the Great Britain &amp; Ireland ceremony went from Glasgow in 2025 to Dublin in 2026, and France’s from Metz to Monaco. Several guides, among them Hong Kong &amp; Macau, Singapore and Italy, publish their Bib Gourmand list a week or so before the stars.</p>\n<p>A few guides now skip the ceremony. Florida, Québec and Buenos Aires &amp; Mendoza published their 2026 stars online, and Texas chose to do the same for its October 2026 selection. Either way, a star holds until that guide’s next selection, unless the restaurant closes or changes hands in between. For what the stars mean, start with <a data-guide=\"what-is-a-michelin-star\">What is a Michelin star?</a></p>\n",
+  "faq": [
+    {
+      "q": "When are Michelin stars announced?",
+      "a": "Each MICHELIN Guide announces its stars once a year on its own date, so new stars arrive all year round rather than on one day. The next to announce is the {{cerNext}}, on {{cerNextDate}}."
+    },
+    {
+      "q": "When is the MICHELIN Guide Northeast Cities ceremony?",
+      "a": "{{cerSay_northeast_cities}} One ceremony covers New York, Chicago, Washington DC, Boston and Philadelphia."
+    },
+    {
+      "q": "When is the MICHELIN Guide American South ceremony?",
+      "a": "{{cerSay_american_south}} The guide covers Atlanta, Tennessee, the Carolinas, Alabama, Louisiana and Mississippi, and its ceremony moves to a different city each year."
+    },
+    {
+      "q": "When is the MICHELIN Guide Southwest ceremony?",
+      "a": "{{cerSay_southwest}} It was the first Southwest guide, covering Arizona, Nevada, New Mexico and Utah, and the first Michelin selection to include Las Vegas since 2009."
+    },
+    {
+      "q": "When is the MICHELIN Guide Great Britain & Ireland ceremony?",
+      "a": "{{cerSay_great_britain_ireland}} It is usually held in February."
+    },
+    {
+      "q": "Can you watch a Michelin Guide ceremony?",
+      "a": "The ceremonies are invitation-only, but most are streamed live on the MICHELIN Guide’s YouTube channel, and the new stars go up on its website and app the same day."
+    }
+  ]
+}

@@ -113,6 +113,25 @@ Whole tables built from the restaurant data go on a line of their own: `{{table:
 
 A link written `<a data-guide="green-michelin-star">…</a>` becomes a link once that guide exists, and plain text until then.
 
+The ceremony dates guide (`/guides/michelin-guide-ceremony-dates/`) reads `content/ceremonies.json`, one entry per MICHELIN Guide (editable in Pages CMS as "Ceremony dates"):
+
+| Field | What it is |
+|---|---|
+| `id` | a short name, e.g. `great-britain-ireland`; the guide's row is `#cer-<id>` |
+| `name` | e.g. "MICHELIN Guide Great Britain & Ireland" |
+| `places` | the place ids it covers (and everything inside them). The build lists any country with starred restaurants that no guide covers |
+| `show` | optional: the places to name and link instead, e.g. the cities rather than the states |
+| `guide`, `showName`, `continent` | for a guide with no place page yet (South Australia): one of our guides to link, the name to show, and its continent |
+| `usual` | the month(s) it's usually held, read after "usually in" |
+| `ceremonies` | past ceremonies, newest first: `date` (`2026-02-09`), `where` (left out when unknown), `online` (true when the stars were published online with no ceremony) and `source` (a link) |
+| `next` | the next ceremony once Michelin announces it (same fields). When its day comes the page treats it as the latest, and the build asks for it to be moved into `ceremonies` |
+| `expected` | optional year-month the next is due, when that isn't a year after the last (Greece) |
+| `starsUpdated` | the day our restaurant files caught up with this guide. While its latest ceremony is newer, the page shows "We're updating our pages" and every build prints a reminder |
+| `checked` | the month we last looked for a newer date |
+| `note` | an optional sentence shown under the guide's name |
+
+Its tables are `{{table:ceremonies}}` (every guide by continent), `{{table:ceremonies-next}}` (announced dates in order, then guides whose turn comes within `CEREMONY_AHEAD_DAYS` with last year's date), `{{table:ceremonies-recent}}` (the last `CEREMONY_RECENT_DAYS`, with whether our pages have caught up) and `{{table:ceremonies-calendar}}` (the year at a glance). Its figures are `{{cerGuides}}`, `{{cerNext}}`, `{{cerNextDate}}`, `{{cerNextWhere}}`, `{{cerBusy}}` (the busiest months) and `{{cerSay_<id>}}`, a sentence on a guide's next (or last) ceremony with hyphens as underscores, e.g. `{{cerSay_northeast_cities}}`.
+
 ## Editing
 
 The easiest way is Pages CMS: go to https://app.pagescms.org, sign in with GitHub and open **starred-bill**. Restaurants, Places, Guides, Currencies and Site settings each have a form; click **Save** and the site updates within a couple of minutes.

@@ -1755,3 +1755,70 @@ content:
         description: Year and month, shown on the homepage, e.g. 2026-10.
         type: string
         pattern: { regex: '^\d{4}-\d{2}$', message: "Use year-month, e.g. 2026-10" }
+
+  - name: ceremonies
+    label: Ceremony dates
+    description: When each MICHELIN Guide reveals its stars. Shown on the guide "When Are Michelin Stars Announced?" (/guides/michelin-guide-ceremony-dates/). After a ceremony, move its date from "Next ceremony" to the top of "Past ceremonies"; once the restaurants' stars are updated, set "Our stars updated".
+    type: file
+    path: content/ceremonies.json
+    format: json
+    fields:
+      - name: guides
+        label: Guides
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: ID
+            description: Lower case with hyphens, e.g. great-britain-ireland. Never change it once published (the page links to it as #cer-<id>).
+            type: string
+            required: true
+          - name: name
+            label: Guide name
+            description: e.g. MICHELIN Guide Great Britain & Ireland
+            type: string
+            required: true
+          - name: places
+            label: Places it covers
+            description: Place file names, e.g. uk, ireland. Everything inside them counts too.
+            type: string
+            list: true
+          - name: show
+            label: Places to name on the page
+            description: Only if different from the places it covers, e.g. the cities rather than the states.
+            type: string
+            list: true
+          - name: usual
+            label: Usual month
+            description: e.g. February, or "October or November". Reads after "usually in".
+            type: string
+          - name: note
+            label: Note
+            description: An extra sentence shown under the guide's name, e.g. where next year's ceremony will be.
+            type: text
+          - name: starsUpdated
+            label: Our stars updated
+            description: The day our restaurant files caught up with this guide's latest stars (year-month-day). Until then the page says "We're updating our pages".
+            type: string
+            pattern: { regex: '^\d{4}-\d{2}-\d{2}$', message: "Use year-month-day, e.g. 2026-10-07" }
+          - name: checked
+            label: Last checked for a new date
+            type: string
+            pattern: { regex: '^\d{4}-\d{2}$', message: "Use year-month, e.g. 2026-10" }
+          - name: next
+            label: Next ceremony (once Michelin announces it)
+            type: object
+            fields:
+              - { name: date, label: Date, type: string, pattern: { regex: '^\d{4}-\d{2}-\d{2}$', message: "Use year-month-day, e.g. 2026-11-24" } }
+              - { name: where, label: Where, description: 'e.g. "the Palacio de Congresos, Huesca"', type: string }
+              - { name: online, label: Online only (no ceremony), type: boolean }
+              - { name: source, label: Source link, type: string }
+          - name: ceremonies
+            label: Past ceremonies (newest first)
+            type: object
+            list: true
+            fields:
+              - { name: date, label: Date, type: string, pattern: { regex: '^\d{4}-\d{2}-\d{2}$', message: "Use year-month-day, e.g. 2026-02-09" } }
+              - { name: where, label: Where, type: string }
+              - { name: online, label: Online only (no ceremony), type: boolean }
+              - { name: source, label: Source link, type: string }

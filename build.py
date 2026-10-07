@@ -2301,6 +2301,192 @@ def chef_blocks(live, links, stars_cell, note):
 
 
 
+# ---------- Michelin Guide ceremony dates (7 Oct 2026) ----------
+# When each MICHELIN Guide reveals its stars, from content/ceremonies.json: the tables on the ceremony dates guide
+# ({{table:ceremonies}} and friends), and, for us, a reminder at every build of which guides have announced stars our
+# restaurant files haven't caught up with (`starsUpdated`) and which ceremonies are coming up.
+CEREMONY_SOON_DAYS = 30      # "coming up" in the build's reminder
+CEREMONY_AHEAD_DAYS = 120    # dates not yet announced join "Coming up" when last year's fell within this many days
+CEREMONY_RECENT_DAYS = 60    # "Just announced"
+CONTINENT_NAMES = {"europe": "Europe", "asia": "Asia", "middle-east": "The Middle East", "americas": "The Americas", "oceania": "Oceania"}
+TODAY = date.today().isoformat()
+_ceremony_guides = []
+
+
+def short_date(d):
+    """2026-10-05 -> Oct 5, 2026."""
+    return f"{MONTH_NAMES[int(d[5:7]) - 1][:3]} {int(d[8:10])}, {d[:4]}"
+
+
+def ceremony_guides():
+    """The guides in content/ceremonies.json, each with `last` (its latest ceremony, counting an announced one whose day
+    has come), `coming` (the next announced ceremony, if any), `due` (a year after the last, when nothing is announced),
+    `status` ("updating" when the last is newer than our files) and `continent`. Checked once: bad place ids stop the
+    build, and the reminders print."""
+    if _ceremony_guides:
+        return _ceremony_guides
+    data = read_json(CONTENT / "ceremonies.json") or {"guides": []}
+    covered = set()
+    for g in data["guides"]:
+        g = dict(g)
+        for pid in g.get("places", []) + g.get("show", []):
+            if pid not in places:
+                problem("ceremonies.json", f"{g['id']} lists {pid}, which isn't a place id")
+        if g.get("guide") and g["guide"] not in guides:
+            problem("ceremonies.json", f"{g['id']} links to the guide {g['guide']}, which doesn't exist")
+        for c in g.get("ceremonies", []) + ([g["next"]] if g.get("next") else []):
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", c.get("date", "")):
+                problem("ceremonies.json", f"{g['id']} has a ceremony date that isn't YYYY-MM-DD: {c.get('date')!r}")
+        past = list(g.get("ceremonies", []))
+        nxt = g.get("next")
+        if nxt and nxt.get("date", "") <= TODAY:
+            print(f"  Ceremonies: {g['id']}'s announced ceremony ({nxt['date']}) has come; move it from `next` into `ceremonies`")
+            past.insert(0, nxt)
+            nxt = None
+        g["last"] = past[0] if past else None
+        g["coming"] = nxt
+        g["due"] = None if nxt or not g["last"] else f"{int(g['last']['date'][:4]) + 1}{g['last']['date'][4:]}"
+        if g.get("expected") and not nxt:
+            g["due"] = g["expected"] + "-01"
+        g["status"] = "updating" if g["last"] and g["last"]["date"] > g.get("starsUpdated", "") else ""
+        first = (g.get("places") or [""])[0]
+        g["continent"] = g.get("continent") or CONTINENT_OF.get(country_of(first) if first in places else "", "")
+        covered.update(g.get("places", []))
+        _ceremony_guides.append(g)
+    # Every starred restaurant should sit under some guide, so no destination is left without a date.
+    loose = sorted({places[r["country"]]["name"] for r in restaurants if r.get("stars") in (1, 2, 3) and not r.get("status")
+                    and not covered & set(r["_chain"])})
+    if loose:
+        print("  Ceremonies: no guide in content/ceremonies.json covers the starred restaurants in " + ", ".join(loose))
+    for g in _ceremony_guides:
+        if g["status"]:
+            print(f"  Ceremonies: {g['name']} revealed its stars on {g['last']['date']}, after our files were last updated "
+                  f"({g.get('starsUpdated') or 'never'}). Update its restaurants, then set starsUpdated.")
+    soon = (datetime.strptime(TODAY, "%Y-%m-%d").date().toordinal() + CEREMONY_SOON_DAYS)
+    for g in sorted((g for g in _ceremony_guides if g["coming"]), key=lambda g: g["coming"]["date"]):
+        if datetime.strptime(g["coming"]["date"], "%Y-%m-%d").date().toordinal() <= soon:
+            print(f"  Ceremonies: {g['name']} is coming up on {g['coming']['date']}")
+    return _ceremony_guides
+
+
+def days_from_today(d):
+    return datetime.strptime(d, "%Y-%m-%d").date().toordinal() - datetime.strptime(TODAY, "%Y-%m-%d").date().toordinal()
+
+
+def ceremony_places_html(g):
+    if g.get("guide"):
+        return f'<a href="/guides/{e(g["guide"])}/">{e(g.get("showName") or g["name"])}</a>' if g["guide"] in guides else e(g.get("showName") or g["name"])
+    return ", ".join(f'<a href="{e(places[p]["path"])}">{e(places[p]["name"])}</a>' for p in g.get("show") or g.get("places", []) if p in places)
+
+
+def ceremony_text(c, with_where=True):
+    """"Feb 9, 2026 · the Convention Centre Dublin", or "… · online, no ceremony"."""
+    where = "online, no ceremony" if c.get("online") else re.sub(r"^the ", "", c.get("where", ""))
+    return (f'<a href="{e(c["source"])}">{short_date(c["date"])}</a>' if c.get("source") else short_date(c["date"])) + (
+        f'<br><span class="muted">{e(where)}</span>' if with_where and where else "")
+
+
+def ceremony_stats():
+    """Figures for the ceremony dates guide: {{cerGuides}}, the next ceremony ({{cerNext}}, {{cerNextDate}}, {{cerNextWhere}})
+    and the busiest months."""
+    gs = ceremony_guides()
+    coming = sorted((g for g in gs if g["coming"]), key=lambda g: g["coming"]["date"])
+    out = {"cerGuides": str(len(gs)), "cerChecked": month_year(max(g.get("checked", "") for g in gs), "en") if gs else ""}
+    if coming:
+        c = coming[0]["coming"]
+        out.update({"cerNext": coming[0]["name"], "cerNextDate": us_date(c["date"]),
+                    "cerNextWhere": "online" if c.get("online") else c.get("where") or "a venue still to be named"})
+    # {{cerSay_northeast_cities}} and so on: a sentence on when that guide's stars come next, or last came.
+    for g in gs:
+        if g["coming"]:
+            c = g["coming"]
+            text = f"The {g['name']} reveals its next stars on {us_date(c['date'])}" + (
+                ", online, with no ceremony." if c.get("online") else f" at {c['where']}." if c.get("where") else ".")
+        elif g["last"]:
+            c = g["last"]
+            text = (f"The {g['name']} last revealed its stars on {us_date(c['date'])}" + (" online" if c.get("online") else f" at {c['where']}" if c.get("where") else "")
+                    + f". Michelin hasn’t announced the next date yet; it’s usually in {g['usual']}.")
+        else:
+            text = f"The {g['name']} hasn’t announced a date yet."
+        out["cerSay_" + g["id"].replace("-", "_")] = text
+    # {{cerBusy}}: the months with the most ceremonies.
+    counts = {}
+    for g in gs:
+        m = ceremony_month(g)
+        if m:
+            counts[m] = counts.get(m, 0) + 1
+    top = sorted(counts, key=lambda m: (-counts[m], m))[:3]
+    out["cerBusy"] = and_list([f"{MONTH_NAMES[m - 1]} ({counts[m]} guides)" for m in top])
+    return out
+
+
+def ceremony_month(g):
+    """The month a guide's stars are next due (or were last revealed), for the year-at-a-glance calendar."""
+    c = g["coming"] or g["last"]
+    return int(c["date"][5:7]) if c else None
+
+
+def ceremony_blocks():
+    """{{table:ceremonies}} (every guide, continent by continent), {{table:ceremonies-next}} (what's coming up),
+    {{table:ceremonies-recent}} (just announced) and {{table:ceremonies-calendar}} (the year at a glance)."""
+    gs = ceremony_guides()
+    if not gs:
+        return {}
+    blocks = {}
+    updating = '<span class="cer-flag">We’re updating our pages</span>'
+
+    def row(g):
+        last = (ceremony_text(g["last"]) + (f"<br>{updating}" if g["status"] else "")) if g["last"] else '<span class="muted">–</span>'
+        nxt = ceremony_text(g["coming"]) if g["coming"] else '<span class="muted">Not announced yet</span>'
+        return (f'<tr id="cer-{e(g["id"])}"><td data-label="Destination">{ceremony_places_html(g)}</td>'
+                f'<td data-label="Guide">{e(g["name"])}' + (f'<br><span class="muted">{e(g["note"])}</span>' if g.get("note") else "") + f'</td><td data-label="Usually">{e(g["usual"][:1].upper() + g["usual"][1:])}</td>'
+                f'<td data-label="Latest">{last}</td><td data-label="Next">{nxt}</td></tr>')
+    heads = "".join(f'<th scope="col">{h}</th>' for h in ("Destination", "Guide", "Usually", "Latest stars revealed", "Next ceremony"))
+    out = ""
+    for key, title in CONTINENT_NAMES.items():
+        rows = sorted((g for g in gs if g["continent"] == key), key=lambda g: re.sub(r"<[^>]+>", "", ceremony_places_html(g)).lower())
+        if rows:
+            out += (f'<h3 id="cer-{key}">{e(title)}</h3><div class="table-wrap"><table class="guide-table data cer-table"><thead><tr>{heads}</tr></thead>'
+                    f'<tbody>{"".join(row(g) for g in rows)}</tbody></table></div>')
+    blocks["ceremonies"] = out + (
+        '<p class="table-note">Dates are when each guide revealed or will reveal its stars, from the MICHELIN Guide’s announcements and the host '
+        'cities’ (each date links to its source). “Usually” is the guide’s habit in recent years, not a promise. '
+        f'Last checked {e(month_year(max(g.get("checked", "") for g in gs), "en"))}.</p>')
+
+    # Coming up: announced dates first, in order, then guides whose date isn't out yet but whose turn comes round soon.
+    items = [(g["coming"]["date"], g, True) for g in gs if g["coming"]]
+    items += [(g["due"], g, False) for g in gs if g["due"] and not g["coming"] and -31 <= days_from_today(g["due"]) <= CEREMONY_AHEAD_DAYS]
+    lis = ""
+    for d, g, announced in sorted(items, key=lambda x: x[0]):
+        when = f'<strong class="cer-when">{us_date(d)}</strong>' if announced else f'<span class="cer-when">{MONTH_NAMES[int(d[5:7]) - 1]}, date to come</span>'
+        where = ("online, with no ceremony" if g["coming"].get("online") else g["coming"].get("where", "")) if announced else \
+            f'last time on {us_date(g["last"]["date"])}'
+        lis += (f'<li>{when} <span class="cer-name"><a href="#cer-{e(g["id"])}">{e(g["name"])}</a></span>'
+                + (f'<span class="muted">{e(where)}</span>' if where else "") + "</li>")
+    blocks["ceremonies-next"] = f'<ol class="cer-list">{lis}</ol>' if lis else "<p>No dates are announced for the coming months yet.</p>"
+
+    # Just announced, with whether our pages have caught up.
+    recent = sorted((g for g in gs if g["last"] and 0 <= -days_from_today(g["last"]["date"]) <= CEREMONY_RECENT_DAYS),
+                    key=lambda g: g["last"]["date"], reverse=True)
+    lis = "".join(f'<li><strong class="cer-when">{us_date(g["last"]["date"])}</strong> <span class="cer-name"><a href="#cer-{e(g["id"])}">{e(g["name"])}</a></span>'
+                  f'<span class="muted">{ceremony_places_html(g)}</span>' + (updating if g["status"] else '<span class="cer-done">On our pages</span>') + "</li>"
+                  for g in recent)
+    blocks["ceremonies-recent"] = f'<ol class="cer-list">{lis}</ol>' if lis else "<p>No guide has revealed its stars in the last two months.</p>"
+
+    # The year at a glance: each month and the guides that reveal their stars in it.
+    months = {}
+    for g in gs:
+        m = ceremony_month(g)
+        if m:
+            months.setdefault(m, []).append(g)
+    cells = "".join(
+        f'<div><h4>{MONTH_NAMES[m - 1]}</h4>' + ("<ul>" + "".join(f'<li><a href="#cer-{e(g["id"])}">{e(re.sub(r"^MICHELIN Guide ", "", g["name"]))}</a></li>'
+                                                                    for g in sorted(months[m], key=lambda g: g["name"])) + "</ul>" if m in months else '<p class="muted">None</p>') + "</div>"
+        for m in range(1, 13))
+    blocks["ceremonies-calendar"] = f'<div class="cer-calendar">{cells}</div>'
+    return blocks
+
+
 def guide_blocks(stats):
     """Tables the data guides drop in with {{table:name}}, built from the restaurant data at every build."""
     live = [r for r in restaurants if r.get("stars") in (1, 2, 3) and not r.get("status")]
@@ -2410,6 +2596,7 @@ def guide_blocks(stats):
     blocks.update(chef_blocks(live, links, stars_cell, note))
     blocks.update(diet_blocks(live, name_html, stars_cell, price_cell, note))
     blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
+    blocks.update(ceremony_blocks())
     return blocks
 
 
@@ -2624,7 +2811,7 @@ def guide_bodies():
     """Each guide's article as published, with its figures and tables filled in (worked out once, as related_guides()
     counts the links in them, tables included)."""
     if not _guide_bodies and guides:
-        stats = guide_stats()
+        stats = dict(guide_stats(), **ceremony_stats())
         blocks = guide_blocks(stats)
         _guide_bodies.update({g["id"]: guide_text(g["body"], stats, blocks) for g in guides.values()})
         _guide_bodies["_stats"] = stats

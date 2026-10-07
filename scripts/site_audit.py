@@ -6,7 +6,8 @@
 SITE_DIR is a folder holding a fresh copy of the site with _site/ already built (python3 build.py). The audit
 checks every page (titles, descriptions, headings, structured data, broken links, sitemap, page weight), the internal
 links (orphan pages, pages with few links in or out, self-links, vague anchor text, and the guides' own links) and the
-restaurant data (missing prices, ratings, chefs, positions, duplicates, odd prices), then the live site's
+restaurant data (missing prices, ratings, chefs, positions, duplicates, odd prices), the MICHELIN Guide ceremonies
+(stars announced since our files caught up, ceremonies in the next two weeks), then the live site's
 basics (HTTPS, redirects, 404 page, robots.txt, sitemap). It writes the figures to OUT.json and prints a
 plain report; with PREVIOUS.json it also says what changed since then. It only reads; nothing is changed.
 """
@@ -260,6 +261,31 @@ def data_checks(site):
             "site_updated": json.loads((C / "site.json").read_text("utf-8")).get("updated")}
 
 
+def ceremony_checks(site):
+    """From content/ceremonies.json: guides whose stars came out after our files last caught up (`starsUpdated`), the
+    ceremonies in the next 14 days, announced dates that have passed but are still under `next`, and guides not
+    checked for a new date for over a month."""
+    from datetime import date, timedelta
+    path = site / "content" / "ceremonies.json"
+    if not path.exists():
+        return {}
+    today = date.today()
+    out = {"stars_to_update": [], "coming_14_days": [], "next_date_passed": [], "not_checked_lately": []}
+    for g in json.loads(path.read_text("utf-8")).get("guides", []):
+        past = g.get("ceremonies") or []
+        nxt = g.get("next") or {}
+        last = nxt.get("date") if nxt.get("date", "9999") <= today.isoformat() else (past[0]["date"] if past else "")
+        if nxt.get("date", "9999") <= today.isoformat():
+            out["next_date_passed"].append(f"{g['name']} ({nxt['date']})")
+        if last and last > g.get("starsUpdated", ""):
+            out["stars_to_update"].append(f"{g['name']}: stars revealed {last}, our files updated {g.get('starsUpdated') or 'never'}")
+        if nxt.get("date") and today.isoformat() < nxt["date"] <= (today + timedelta(days=14)).isoformat():
+            out["coming_14_days"].append(f"{g['name']}: {nxt['date']}")
+        if g.get("checked", "") < (today.replace(day=1) - timedelta(days=1)).strftime("%Y-%m"):
+            out["not_checked_lately"].append(g["name"])
+    return out
+
+
 def live_checks():
     class NoRedirect(urllib.request.HTTPRedirectHandler):
         def redirect_request(self, *a, **k):
@@ -288,6 +314,7 @@ def main(site, out_path, prev_path=None):
     pages.update(links)
     weight.update(link_figures)
     data = data_checks(site)
+    data["ceremonies"] = ceremony_checks(site)
     live = live_checks()
     result = {"pages": {k: len(v) for k, v in pages.items()}, "page_examples": {k: v[:6] for k, v in pages.items() if v},
               "weight": weight, "data": data, "live_problems": live}

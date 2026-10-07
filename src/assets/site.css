@@ -989,6 +989,27 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 /* Beside a restaurant's name in the guides' tables: the small arrow to its MICHELIN Guide page (the name opens our prices). */
 .mg-link { font-size: .8rem; color: var(--muted); text-decoration: none; padding: 2px 3px; }
 .mg-link:hover { color: var(--green); }
+/* Michelin Guide ceremony dates (ceremony_blocks() in build.py): what's coming up, the year at a glance, and a flag on guides
+   whose new stars our pages haven't caught up with yet. Logical sides only, so rtl.css needs nothing. */
+.cer-list { list-style: none; padding: 0; margin: 14px 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.cer-list li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; padding: 10px 16px; border-bottom: 1px solid var(--line); margin: 0; }
+.cer-list li:last-child { border-bottom: 0; }
+.cer-list .cer-when { min-width: 17ch; }
+.cer-list strong.cer-when { font-variant-numeric: tabular-nums; }
+.cer-list .cer-name { font-weight: 600; flex: 1 1 16ch; }
+.cer-list .muted { color: var(--muted); font-size: .88rem; }
+.cer-flag, .cer-done { display: inline-block; font-size: .74rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.cer-flag { background: var(--gold); color: #1d1a14; }
+.cer-done { border: 1px solid var(--line); color: var(--muted); }
+.guide-table.cer-table td:first-child { min-width: 14ch; }
+.guide-table.cer-table tr:target td { background: color-mix(in srgb, var(--gold) 14%, transparent); }
+.guide [id^="cer-"] { scroll-margin-top: 140px; }
+.cer-calendar { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 170px), 1fr)); gap: 12px; margin: 16px 0; }
+.cer-calendar > div { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 10px 14px; }
+.cer-calendar h4 { margin: 0 0 6px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.cer-calendar ul { list-style: none; padding: 0; margin: 0; font-size: .9rem; line-height: 1.5; }
+.cer-calendar li { margin: 0; }
+.cer-calendar p { margin: 0; font-size: .9rem; }
 @media (max-width: 720px) {
   /* Long ranked tables: on phones each card puts its figures two to a row, about half the height. */
   .guide-table.rank-list tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }

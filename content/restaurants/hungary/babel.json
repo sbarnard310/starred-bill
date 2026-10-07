@@ -24,5 +24,7 @@
   "dinnerNoteHu": "Kóstolómenü (további menük: HUF 55,000-tól)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteHu": "Csak vacsora"
+  "lunchNoteHu": "Csak vacsora",
+  "chef": "Kornél Kaszás",
+  "chefSource": "press"
 }

@@ -29,5 +29,7 @@
   "lunchNoteNb": "Samme meny til lunsj · lørdag",
   "lunchWine": 2000,
   "lunchSourceType": "site",
-  "lunchSource": "https://mononcle.no/menu"
+  "lunchSource": "https://mononcle.no/menu",
+  "chef": "Dimitri Veith",
+  "chefSource": "press"
 }

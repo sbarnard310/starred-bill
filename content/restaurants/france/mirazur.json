@@ -28,7 +28,8 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Mauro Colagreco",
   "chefSource": "michelin"

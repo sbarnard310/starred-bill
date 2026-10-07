@@ -28,5 +28,7 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · zondag",
   "lunchSourceType": "site",
   "lunchSource": "https://www.pietersrestaurant.nl/",
-  "cuisineNl": "Modern Frans"
+  "cuisineNl": "Modern Frans",
+  "chef": "Pieter de Ronde",
+  "chefSource": "press"
 }

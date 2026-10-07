@@ -28,7 +28,8 @@
   "placeId": "ChIJIbzNhGrLvJURCgFPGbjz4uU",
   "michelinId": "1217199",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Pablo Park",
   "chefSource": "michelin"

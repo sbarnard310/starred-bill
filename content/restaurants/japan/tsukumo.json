@@ -25,5 +25,7 @@
   "lunchSourceType": "press",
   "lunchSource": "https://tabelog.com/en/nara/A2901/A290101/29012612/",
   "lunchNote": "Tabelog range ¥20,000–29,999",
-  "lunchNoteJa": "食べログの価格帯 20,000～29,999円"
+  "lunchNoteJa": "食べログの価格帯 20,000～29,999円",
+  "chef": "Masato Nishihara",
+  "chefSource": "press"
 }

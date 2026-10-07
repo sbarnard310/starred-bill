@@ -23,5 +23,7 @@
   "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 2 150 kr)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteSv": "Endast middag"
+  "lunchNoteSv": "Endast middag",
+  "chef": "Ida Bauhn",
+  "chefSource": "press"
 }

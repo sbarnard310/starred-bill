@@ -32,8 +32,7 @@
   "diets": [
     "vegetarian",
     "vegan",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Ilane Tinchant",
   "chefSource": "michelin"

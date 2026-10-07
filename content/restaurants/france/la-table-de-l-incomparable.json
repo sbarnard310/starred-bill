@@ -26,6 +26,9 @@
   "placeId": "ChIJlQmQ9vSni0cRdg_UQ0O1_ww",
   "michelinId": "1192210",
   "diets": [
-    "vegetarian"
-  ]
+    "vegetarian",
+    "gluten-free"
+  ],
+  "chef": "Antoine Cevoz-Mamy",
+  "chefSource": "press"
 }

@@ -655,7 +655,7 @@ def build_place(p):
 # A destination page's restaurants bigger than this (in characters) go in /data/places/<id>.js rather than the page.
 ROWS_INLINE_MAX = 60000
 # Restaurant fields every restaurant in one town shares, kept once per town by pack_restaurants().
-TOWN_FIELDS = ("cityType", "country", "cur") + tuple("cityName" + s for s in [""] + LANG_SUFFIXES)
+TOWN_FIELDS = ("cityType", "country", "cur") + tuple("cityName" + s for s in ("",) + LANG_SUFFIXES)
 
 
 def pack_restaurants(rs):
@@ -1121,6 +1121,9 @@ def page_titles(p, page, languages, starred):
     return titles
 
 
+LD_LIST_MAX = 60  # the most restaurants a page's structured data lists (France's 646 in full came to 230 KB)
+
+
 def json_ld(p, crumbs, starred, description, lang="en", texts=None, faq=()):
     """Structured data for search engines: the breadcrumb trail, the starred restaurants as a list and the FAQ.
     Google ratings are deliberately left out (Google doesn't allow ratings copied from elsewhere).
@@ -1132,7 +1135,8 @@ def json_ld(p, crumbs, starred, description, lang="en", texts=None, faq=()):
         {"@type": "ListItem", "position": i + 1, "name": c["name"], "item": SITE_URL + c["path"]} for i, c in enumerate(trail)]}]
     if starred:
         items = []
-        for i, r in enumerate(sorted(starred, key=lambda r: (-r["stars"], r["name"]))):
+        # Big places list their top LD_LIST_MAX (most stars first), with numberOfItems giving the full count.
+        for i, r in enumerate(sorted(starred, key=lambda r: (-r["stars"], r["name"]))[:LD_LIST_MAX]):
             item = {"@type": "Restaurant", "name": r["name"], "servesCuisine": r.get("cuisine"),
                     "award": f"{r['stars']} MICHELIN Star{'s' if r['stars'] > 1 else ''}"}
             if r.get("address"):
@@ -1145,7 +1149,7 @@ def json_ld(p, crumbs, starred, description, lang="en", texts=None, faq=()):
                 item["priceRange"] = f"Tasting menu {money(r['dinner'], r['cur'])}"
             items.append({"@type": "ListItem", "position": i + 1, "item": {k: v for k, v in item.items() if v}})
         graph.append({"@type": "ItemList", "name": f"Michelin-starred restaurants in {in_sentence(p)}" if lang == "en" else plain(texts["h1"]), "description": description,
-                      "numberOfItems": len(items), "itemListElement": items})
+                      "numberOfItems": len(starred), "itemListElement": items})
     if faq:
         graph.append({"@type": "FAQPage", "inLanguage": HREFLANG.get(lang, lang), "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})

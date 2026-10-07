@@ -1,8 +1,15 @@
 // A destination page (country, region, city or collection): the price comparison, map and star tiers.
-// The build step puts this page's place details and restaurants into #page-data.
+// The build step puts this page's place details and restaurants into #page-data; the biggest places' restaurants
+// come in /data/places/<id>.js instead, loaded just before this script. Both are compact rows (pack_restaurants() in build.py).
 
+const unpackRows = (d) => d.r.map((row) => {
+  const r = {};
+  d.townCols.forEach((c, i) => { const v = d.towns[row[0]][i]; if (v != null) r[c] = v; });
+  d.cols.forEach((c, i) => { if (i && row[i] != null) r[c] = row[i]; });
+  return r;
+});
 const PAGE = DATA.page;
-const ALL_RESTAURANTS = DATA.restaurants;
+const ALL_RESTAURANTS = unpackRows(DATA.rows);
 const RESTAURANTS = ALL_RESTAURANTS.filter((r) => !r.status);
 const FORMER = ALL_RESTAURANTS.filter((r) => r.status);
 // A place with no starred restaurants yet: the page explains, links up to the nearest place that has some,

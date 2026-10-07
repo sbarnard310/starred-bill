@@ -29,5 +29,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Fabien Lefebvre",
+  "chefSource": "press"
 }

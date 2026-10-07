@@ -28,5 +28,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Modern Frans"
+  "cuisineNl": "Modern Frans",
+  "chef": "Tom Beckers",
+  "chefSource": "press"
 }

@@ -24,5 +24,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Charlie Mitchell",
+  "chefSource": "press"
 }

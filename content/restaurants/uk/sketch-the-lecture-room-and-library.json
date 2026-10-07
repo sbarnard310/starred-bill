@@ -25,5 +25,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian"
-  ]
+  ],
+  "chef": "Pierre Gagnaire",
+  "chefSource": "press"
 }

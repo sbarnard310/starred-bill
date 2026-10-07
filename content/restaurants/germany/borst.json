@@ -24,5 +24,7 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Do–So",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurant-borst.de/küche",
-  "cuisineDe": "Französisch-klassisch"
+  "cuisineDe": "Französisch-klassisch",
+  "chef": "Maximilian Borst",
+  "chefSource": "press"
 }

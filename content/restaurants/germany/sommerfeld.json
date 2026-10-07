@@ -22,5 +22,7 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "chef": "Matthias Scheiber",
+  "chefSource": "press"
 }

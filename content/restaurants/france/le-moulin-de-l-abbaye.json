@@ -27,5 +27,7 @@
   "michelinId": "10400",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "chef": "Frédéric Murati",
+  "chefSource": "press"
 }

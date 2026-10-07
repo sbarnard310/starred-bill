@@ -25,5 +25,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Orson Vergnaud",
+  "chefSource": "press"
 }

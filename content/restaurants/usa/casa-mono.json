@@ -23,5 +23,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Andy Nusser",
+  "chefSource": "press"
 }

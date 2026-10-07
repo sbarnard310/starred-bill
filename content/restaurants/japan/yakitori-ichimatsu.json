@@ -20,5 +20,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteJa": "ディナーのみ",
-  "michelinId": "1193262"
+  "michelinId": "1193262",
+  "chef": "Hideto Takeda",
+  "chefSource": "press"
 }

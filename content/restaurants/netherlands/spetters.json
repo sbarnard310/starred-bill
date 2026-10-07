@@ -27,5 +27,7 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · wo–zo",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantspetters.nl/menu",
-  "cuisineNl": "Marktkeuken"
+  "cuisineNl": "Marktkeuken",
+  "chef": "Laurent Smallegange",
+  "chefSource": "press"
 }

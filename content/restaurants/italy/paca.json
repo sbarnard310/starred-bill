@@ -28,5 +28,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Niccolò Palumbo",
+  "chefSource": "press"
 }

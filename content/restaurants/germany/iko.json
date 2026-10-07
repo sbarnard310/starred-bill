@@ -25,5 +25,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Kreativ"
+  "cuisineDe": "Kreativ",
+  "chef": "Tom Elstermeyer",
+  "chefSource": "press"
 }

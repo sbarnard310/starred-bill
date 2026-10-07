@@ -28,5 +28,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "cuisineDe": "Moderne Küche",
+  "chef": "Marcel Kokot and Alexander Wulf",
+  "chefSource": "press"
 }

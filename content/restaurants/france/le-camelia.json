@@ -33,5 +33,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Guillaume Stile",
+  "chefSource": "press"
 }

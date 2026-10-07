@@ -28,5 +28,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Marc-Antoine Lepage",
+  "chefSource": "press"
 }

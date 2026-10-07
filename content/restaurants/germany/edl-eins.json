@@ -25,5 +25,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "cuisineDe": "Moderne Küche",
+  "chef": "Nicolas La Rocca",
+  "chefSource": "press"
 }

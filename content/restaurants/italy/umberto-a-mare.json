@@ -27,5 +27,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Vincenzo Pietroluongo",
+  "chefSource": "press"
 }

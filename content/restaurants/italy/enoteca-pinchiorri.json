@@ -27,5 +27,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Riccardo Monco",
+  "chefSource": "press"
 }

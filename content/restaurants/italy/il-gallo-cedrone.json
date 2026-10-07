@@ -19,5 +19,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Sabino Fortunato",
+  "chefSource": "press"
 }

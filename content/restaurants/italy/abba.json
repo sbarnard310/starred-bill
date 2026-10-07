@@ -28,5 +28,7 @@
   "lat": 45.50356,
   "lng": 9.13834,
   "placeId": "ChIJAXJkUwDBhkcRBamGk8d6wcQ",
-  "michelinId": "1215606"
+  "michelinId": "1215606",
+  "chef": "Fabio Abbattista",
+  "chefSource": "press"
 }

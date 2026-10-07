@@ -27,5 +27,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Jack Bond",
+  "chefSource": "press"
 }

@@ -29,5 +29,7 @@
   "lunchWine": 160,
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantmaeve.nl/arrangementen/",
-  "cuisineNl": "Creatief Frans"
+  "cuisineNl": "Creatief Frans",
+  "chef": "Tommy Janssen",
+  "chefSource": "press"
 }

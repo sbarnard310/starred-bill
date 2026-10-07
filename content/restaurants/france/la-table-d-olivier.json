@@ -27,5 +27,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian"
-  ]
+  ],
+  "chef": "Pierre Neveu",
+  "chefSource": "press"
 }

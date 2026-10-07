@@ -28,5 +28,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Regional"
+  "cuisineDe": "Regional",
+  "chef": "Jan Hildenhagen",
+  "chefSource": "press"
 }

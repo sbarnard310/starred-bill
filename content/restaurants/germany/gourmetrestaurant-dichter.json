@@ -22,5 +22,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "cuisineDe": "Moderne Küche",
+  "chef": "Thomas Kellermann",
+  "chefSource": "press"
 }

@@ -23,5 +23,7 @@
   ],
   "dinner": 28600,
   "dinnerNoteJa": "テイスティングメニュー・税込",
-  "source": "https://villa-communico.com/cuisine"
+  "source": "https://villa-communico.com/cuisine",
+  "chef": "Taiki Hotta",
+  "chefSource": "press"
 }

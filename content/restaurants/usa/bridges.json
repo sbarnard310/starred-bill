@@ -28,5 +28,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Sam Lawrence",
+  "chefSource": "press"
 }

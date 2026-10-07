@@ -23,5 +23,7 @@
   "michelinId": "555901",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "chef": "Richard Craven",
+  "chefSource": "press"
 }

@@ -33,5 +33,7 @@
   "diets": [
     "halal",
     "kosher"
-  ]
+  ],
+  "chef": "Tomoyuki Yoshinaga",
+  "chefSource": "press"
 }

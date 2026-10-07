@@ -26,5 +26,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Sam Carter",
+  "chefSource": "press"
 }

@@ -28,5 +28,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Gaëtan Perulli",
+  "chefSource": "press"
 }

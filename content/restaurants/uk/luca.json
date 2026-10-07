@@ -25,5 +25,7 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "chef": "Robert Chambers",
+  "chefSource": "press"
 }

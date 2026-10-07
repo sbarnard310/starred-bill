@@ -27,5 +27,7 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "chef": "Gonzalo Baquedano",
+  "chefSource": "press"
 }

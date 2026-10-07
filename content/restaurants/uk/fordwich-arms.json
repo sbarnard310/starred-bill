@@ -29,5 +29,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "chef": "Dan Smith",
+  "chefSource": "press"
 }

@@ -29,5 +29,7 @@
   "diets": [
     "gluten-free",
     "kosher"
-  ]
+  ],
+  "chef": "James Dumapit",
+  "chefSource": "press"
 }

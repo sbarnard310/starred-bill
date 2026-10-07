@@ -1979,6 +1979,21 @@ CHEF_NAMES = (
     ("blumenthal", "Heston Blumenthal", r"heston|fat duck", ()),
 )
 CHEFS_DECEASED = {"robuchon"}  # left out of {{nameLiving}}, the living chef whose name is on the most stars
+# The celebrity chefs guide's {{table:celebrity-chefs}}: TV chefs and the starred restaurants that carry their name or that they run.
+CELEBRITY_CHEFS = (
+    ("Gordon Ramsay", ("restaurant-gordon-ramsay", "le-pressoir-d-argent-gordon-ramsay", "gordon-ramsay-au-trianon", "petrus-by-gordon-ramsay",
+                       "restaurant-gordon-ramsay-high", "1890-by-gordon-ramsay")),
+    ("Heston Blumenthal", ("the-fat-duck", "dinner-by-heston-blumenthal", "dinner-by-heston-blumenthal-dubai")),
+    ("José Andrés", ("minibar-by-jose-andres", "e-by-jose-andres")),
+    ("Tom Kerridge", ("hand-and-flowers",)),
+    ("Jason Atherton", ("row-on-45",)),
+    ("Michael Caines", ("lympstone-manor", "michael-caines-at-the-stafford")),
+    ("Angela Hartnett", ("murano",)),
+    ("Paul Ainsworth", ("paul-ainsworth-at-no-6",)),
+    ("Tommy Banks", ("black-swan-oldstead",)),
+    ("Jan Hendrik van der Westhuizen", ("jan",)),
+    ("Wolfgang Puck", ("cut",)),
+)
 
 
 def chef_names(text):
@@ -2071,7 +2086,17 @@ def chef_blocks(live, links, stars_cell, note):
              "with US dollars at recent exchange rates.")
     ranked = [(c, rows) for c, rows in head_chefs(live) if len(rows) > 1 and stars_of(rows) >= CHEF_TABLE_MIN]
     named = [(chef, rows) for key, chef, rows in named_restaurants(live)]
+    by_id = {r["id"]: r for r in live}
+    celebs = [(chef, sorted((by_id[i] for i in ids if i in by_id), key=lambda r: (-r["stars"], r["name"].lower())))
+              for chef, ids in CELEBRITY_CHEFS]
+    celebs = sorted((t for t in celebs if t[1]), key=lambda t: (-stars_of(t[1]), -len(t[1]), t[0]))
+    known = {r["id"] for r in restaurants}
+    for i in [i for chef, ids in CELEBRITY_CHEFS for i in ids if i not in known]:
+        print(f"  CELEBRITY_CHEFS in build.py names \"{i}\", which isn't a restaurant file name")
     return {
+        "celebrity-chefs": table(celebs, "Chef", True) + note(
+            "TV chefs’ starred restaurants, those that carry the chef’s name or that the chef runs, from the current MICHELIN Guide editions; "
+            "where someone else leads the kitchen day to day, their name follows the restaurant’s. " + about),
         "chefs": table(ranked, "Head chef", False) + note(
             f"Every chef named as head chef of two or more Michelin-starred restaurants with {CHEF_TABLE_MIN} or more stars between them, from the current "
             "MICHELIN Guide editions. Head chefs are as the MICHELIN Guide or the restaurant names them, else recent press. " + about),
@@ -2348,19 +2373,30 @@ def us_date(d):
     return f"{MONTH_NAMES[int(d[5:7]) - 1]} {int(d[8:10])}, {d[:4]}"
 
 
-def dinner_text(rid):
-    """A restaurant's dinner price for a sentence, e.g. "AED 1,350 (about $370)", or None when it has none."""
+def dinner_text(rid, meal="dinner"):
+    """A restaurant's dinner (or lunch) price for a sentence, e.g. "AED 1,350 (about $370)", or None when it has none."""
     r = next((r for r in restaurants if r["id"] == rid), None)
-    if not r or r.get("dinner") is None:
+    if not r or r.get(meal) is None:
         return None
-    return money(r["dinner"], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(r['dinner'] / CURRENCIES[r['cur']]['perUSD'])})")
+    return money(r[meal], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(r[meal] / CURRENCIES[r['cur']]['perUSD'])})")
+
+
+def stars_text(ids, count=False):
+    """{{stars:a,b,c}}: the stars those restaurants hold between them today; {{starred:a,b,c}}: how many of them still hold
+    any. Lost or closed ones count nothing. None when an id isn't a restaurant file name, so the token shows as written."""
+    rows = [next((r for r in restaurants if r["id"] == i), None) for i in ids.split(",")]
+    if None in rows:
+        return None
+    live = [r for r in rows if r.get("stars") in (1, 2, 3) and not r.get("status")]
+    return str(len(live) if count else stars_of(live))
 
 
 def guide_text(text, stats, blocks=None):
     """Fill in {{figures}} and {{table:name}} blocks, and turn <a data-guide="name"> into a link once that guide exists (plain text until then)."""
     # A table on a line of its own may arrive wrapped in <p> from the editor; a table can't sit inside a paragraph.
     text = re.sub(r"(?:<p>\s*)?\{\{table:([\w-]+)\}\}(?:\s*</p>)?", lambda m: (blocks or {}).get(m.group(1), m.group(0)), text)
-    text = re.sub(r"\{\{dinner:([\w-]+)\}\}", lambda m: dinner_text(m.group(1)) or m.group(0), text)
+    text = re.sub(r"\{\{(dinner|lunch):([\w-]+)\}\}", lambda m: dinner_text(m.group(2), m.group(1)) or m.group(0), text)
+    text = re.sub(r"\{\{(stars|starred):([\w,-]+)\}\}", lambda m: stars_text(m.group(2), m.group(1) == "starred") or m.group(0), text)
     text = re.sub(r"\{\{(\w+)\}\}", lambda m: e(stats[m.group(1)]) if m.group(1) in stats else m.group(0), text)
     return re.sub(r'<a data-guide="([\w-]+)">(.*?)</a>',
                   lambda m: f'<a href="/guides/{m.group(1)}/">{m.group(2)}</a>' if m.group(1) in guides else m.group(2), text)
@@ -2410,7 +2446,7 @@ def build_guides():
     for g in guides.values():
         path = f"/guides/{g['id']}/"
         body = guide_bodies()[g["id"]]
-        for leftover in sorted(set(re.findall(r"\{\{[\w:-]+\}\}", body))):
+        for leftover in sorted(set(re.findall(r"\{\{[\w:,-]+\}\}", body))):
             print(f"  Guide {g['id']}: {leftover} isn't a figure or table the build knows, so it shows as written")
         text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", " ".join([g["title"], g["h1"], body] + [f["q"] + " " + f["a"] for f in g["faq"]]))).lower()
         missing = [k for k in g["keywords"] if keyword_words(k) not in keyword_words(text)]

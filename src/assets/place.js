@@ -330,6 +330,8 @@ function nameCell(r) {
     (alt ? '<span class="alt-name" lang="' + altLangOf(r) + '">' + esc(alt) + "</span>" : "") +
     (areaOf(r) ? '<span class="area">' + esc(areaOf(r)) + "</span>" : "") +
     (r.chef ? '<span class="chef-line">' + esc(t("chefLabel", { name: r.chef })) + "</span>" : "") +
+    // A restaurant with its own page (build_restaurant_pages() in build.py) links to it.
+    (r.page && !r.status ? '<a class="page-link" href="' + esc(r.page) + '">' + esc(t("rpLink")) + " " + fwdArrow() + "</a>" : "") +
     (r.status ? "" : (r.diets || []).some((d) => BADGES.some(([b]) => b === d)) ? '<span class="diet-badges">' + dietBadges(r) + "</span>" : "") +
     '<span class="credit"></span></span></span>';
 }

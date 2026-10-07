@@ -82,6 +82,8 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 
 Leave out any field you don't have.
 
+Restaurants listed in `RESTAURANT_PAGES` (build.py) also get a page of their own at `/restaurants/<file name>/`, built from the same fields: the prices as a till receipt and a bill with service, the stars, chef, cuisine, dietary options, Google rating, how the dinner price compares with the same stars nearby, the starred restaurants within 5 km and a FAQ. Destination pages and guide tables link to it.
+
 Chefs and dietary options are refreshed from the MICHELIN Guide with `python3 scripts/michelin_details.py fetch` then `apply` (see the script for `review` and `chefs FILE`). `scripts/chef_from_sites.py` gathers chef mentions from restaurants' own websites for checking by hand.
 
 ## Guides

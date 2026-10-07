@@ -13,6 +13,7 @@ import json
 import math
 import re
 import unicodedata
+import urllib.parse
 import shutil
 import subprocess
 import sys
@@ -669,7 +670,7 @@ def build_place(p):
             f'<div class="explore-row">{place_links(row)}</div></details>' if row.get("more") else f'<div class="explore-row">{place_links(row)}</div>'
             for row in page["links"])
         ledger = '<ol class="prerender">' + "".join(
-            f"<li><strong>{e(name(r))}</strong> · "
+            (f'<li><strong><a href="{r["page"]}">{e(name(r))}</a></strong> · ' if r.get("page") else f"<li><strong>{e(name(r))}</strong> · ")
             + (f"{r['stars']} Michelin star{'s' if r['stars'] > 1 else ''}" if lang == "en" else "★" * r["stars"])
             + f" · {e(cuisine_in(r, lang))} · {e(name(r, 'area') or name(r, 'cityName'))}"
             + (f" · {'dinner ' if lang == 'en' else ''}{money(r['dinner'], r['cur'])}" if r.get("dinner") is not None else "") + "</li>"
@@ -1141,8 +1142,8 @@ def related_guides(p, starred):
     return [guides[i] for i in picked]
 
 
-def related_guides_html(p, starred):
-    items = related_guides(p, starred)
+def related_guides_html(p, starred, items=None):
+    items = related_guides(p, starred) if items is None else items
     if not items:
         return ""
     def card(g):
@@ -2036,9 +2037,9 @@ def place_name(r):
 
 
 def restaurant_link(r, links):
-    """A restaurant's name in a guide's table: it opens the restaurant's row on our page for its town (place.js reads
-    #r=<id>), with a small arrow beside it to its page on the MICHELIN Guide."""
-    out = f'<a href="{e(r["cityPath"])}#r={e(r["id"])}">{e(r["name"])}</a>'
+    """A restaurant's name in a guide's table: it opens the restaurant's own page, else its row on our page for its town
+    (place.js reads #r=<id>), with a small arrow beside it to its page on the MICHELIN Guide."""
+    out = f'<a href="{e(restaurant_href(r))}">{e(r["name"])}</a>'
     if r["id"] in links:
         out += (f' <a class="mg-link" href="{e(links[r["id"]])}" title="{e(r["name"])} on the MICHELIN Guide" '
                 f'aria-label="{e(r["name"])} on the MICHELIN Guide">↗</a>')
@@ -2652,6 +2653,445 @@ def build_guides():
         "mainClass": "wrap prose guide guide-index", "data": data,
     }))
 
+# ---------- Restaurant pages (7 Oct 2026) ----------
+# A page per restaurant at /restaurants/<file name>/, for searches like "Le Bernardin price": a short answer and the till
+# receipt, what a meal comes to with service, the facts (stars, chef, cuisine, dietary options), how its prices compare with
+# its peers, a map of the starred restaurants nearby and a FAQ. The address is the file name, which never changes (wishlists
+# store it), so a restaurant keeps its page if it moves to another place page. English only. RESTAURANT_PAGES lists the
+# ones built so far: the most-searched first, for the owner to check before the rest follow.
+RESTAURANT_PAGES = ("le-bernardin",)
+NEAR_KM = 5          # nearby starred restaurants within this distance...
+NEAR_MAX = 6         # ...up to this many, nearest first (topped up from further away, up to NEAR_FAR_KM, for remote places)
+NEAR_FAR_KM = 60
+PEERS_SHOWN = 9      # rows in the "how it compares" table, centred on the restaurant
+MILES = ("usa", "uk")  # countries whose distances read in miles first
+STAR_WORDS = {1: "one", 2: "two", 3: "three"}
+DIET_WORDS = {"vegetarian-only": "a vegetarian restaurant", "vegetarian-menu": "a vegetarian tasting menu", "vegetarian": "vegetarian",
+              "vegan": "vegan", "gluten-free": "gluten-free", "halal": "halal", "kosher": "kosher"}
+
+
+def read_service():
+    """Each country's service rule, from SERVICE in common.js: (kind, the percentage usually added on top)."""
+    js = (SRC / "assets" / "common.js").read_text("utf-8")
+    block = js[js.index("const SERVICE = {"):]
+    out = {m.group(1): (m.group(2), float(m.group(3))) for m in re.finditer(r'"?([\w-]+)"?: \["(\w+)", ([\d.]+)\]', block[:block.index("};")])}
+    m = re.search(r'\[([^\]]+)\]\.forEach\(\(c\) => \{ SERVICE\[c\] = \["(\w+)", ([\d.]+)\]', block)
+    for c in re.findall(r'"([\w-]+)"', m.group(1)) if m else []:
+        out[c] = (m.group(2), float(m.group(3)))
+    return out
+
+
+SERVICE = read_service()
+# The receipt's footer line for each kind, as SERVICE_LABEL and the English words in common.js; and how the same reads mid-sentence.
+SERVICE_FOOT = {"before": "Per person, before service", "included": "Per person, service included", "plusplus": "Per person, ++ (service and tax added)",
+                "taxtip": "Per person, before tax and tip", "tip": "Per person, before tip", "tax": "Per person, tax included"}
+SERVICE_SAYS = {"before": "before service", "included": "including service", "plusplus": "before service and tax (“++”)",
+                "taxtip": "before tax and tip", "tip": "before tip", "tax": "including tax"}
+SERVICE_ADDS = {"before": "service", "plusplus": "service and tax", "taxtip": "tax and tip", "tip": "a tip"}
+
+for _r in restaurants:
+    if _r["id"] in RESTAURANT_PAGES and not _r.get("status"):
+        _r["page"] = f"/restaurants/{_r['id']}/"
+for _p in places.values():
+    if _p["path"].startswith("/restaurants/"):
+        print(f"Place {_p['id']}: its address {_p['path']} is where the restaurant pages go; give it another id")
+        sys.exit(1)
+
+
+def restaurant_href(r):
+    """Where a mention of a restaurant leads: its own page, else its row on the page for its town."""
+    return r.get("page") or f'{r["cityPath"]}#r={r["id"]}'
+
+
+def dist_text(km, country):
+    miles = km / 1.609344
+    metric = f"{round(km * 1000, -1):,.0f} m" if km < 1 else f"{km:.1f} km"
+    imperial = f"{miles:.1f} mi"
+    return f"{imperial} ({metric})" if country in MILES else f"{metric} ({imperial})"
+
+
+def usd_after(n, cur):
+    """ " (about US$185)" after a price in another currency, nothing after US dollars."""
+    return "" if cur == "USD" or n is None else f" (about US${n / CURRENCIES[cur]['perUSD']:,.0f})"
+
+
+def area_line(r):
+    """Where it is, e.g. "Midtown, Manhattan, New York" (the area, then the places above it down to the city)."""
+    bits = [r.get("area") or ""]
+    for pid in r["_chain"]:
+        q = places[pid]
+        if q["type"] in ("country", "region") and len(bits) > 1:
+            break
+        if q["name"] not in ", ".join(bits):
+            bits.append(q["name"])
+        if q["type"] in ("city", "country", "region"):
+            break
+    return ", ".join(b for b in bits if b)
+
+
+def restaurant_answer(r, stay):
+    """The short answer at the top (and the FAQ's first answer): what dinner, lunch and the wine pairing cost, and roughly
+    what dinner for two comes to once the country's usual service, tax or tip is added."""
+    name, cur, kind, pct = r["name"], r["cur"], *stay
+    m = lambda n: money(n, cur)
+    out = []
+    d, w, lunch = r.get("dinner"), r.get("wine"), r.get("lunch")
+    dtype = r.get("dinnerType", "menu")
+    if d is not None:
+        if dtype == "menu":
+            out.append(f"The dinner tasting menu at {name} costs {m(d)}{usd_after(d, cur)} per person"
+                       + (f", or {m(d + w)} with the wine pairing." if w else "."))
+        elif dtype == "main":
+            out.append(f"Main courses at {name} cost about {m(d)}{usd_after(d, cur)} at dinner.")
+        else:
+            out.append(f"A typical dinner at {name} costs about {m(d)}{usd_after(d, cur)} per person.")
+    else:
+        out.append(f"{name} doesn't publish a dinner price.")
+    if r.get("noLunch"):
+        out.append("It’s open for dinner only.")
+    elif lunch is not None:
+        out.append(f"{'Lunch' if d is not None else 'Lunch there'} is {m(lunch)}" + (f" ({m(lunch + r['lunchWine'])} with wine)" if r.get("lunchWine") else "")
+                   + (", the cheaper way in." if d is not None and lunch < d else "."))
+    if d is not None and dtype in ("menu", "spend"):
+        out.append(f"Prices are {SERVICE_SAYS.get(kind, 'before service')}" + (
+            f"; with about {pct:g}% for {SERVICE_ADDS[kind]}, dinner for two{' with wine' if w else ''} comes to roughly {m(round((d + (w or 0)) * 2 * (1 + pct / 100), -1))}."
+            if pct and kind in SERVICE_ADDS else f", so dinner for two{' with wine' if w else ''} comes to {m((d + (w or 0)) * 2)}."))
+    return " ".join(out)
+
+
+def receipt_html(r, kind, src_links):
+    """The till receipt, drawn as receipt() in place.js draws it (dinner, lunch, wine pairing, dinner + wine)."""
+    cur = r["cur"]
+    def line(label, value, note="", on=False, muted=False):
+        return (f'<span class="rc-line{" on" if on else ""}"><span class="rc-k">{e(label)}</span><span class="rc-dots" aria-hidden="true"></span>'
+                f'<span class="sr-only">, </span><span class="rc-v{" muted" if muted else ""}">{e(value)}</span>'
+                + (f'<span class="sr-only">, </span><span class="rc-note">{e(note)}</span>' if note else "") + "</span>")
+    def meal(field, note_field, type_field):
+        n = r.get(field)
+        if field == "lunch" and r.get("noLunch"):
+            return line("Lunch", "Dinner only", muted=True)
+        if n is None:
+            return line("Dinner" if field == "dinner" else "Lunch", "not listed", muted=True)
+        t = r.get(type_field, "menu")
+        extra = "per main" if t == "main" else "typical spend" if t == "spend" else ""
+        return line("Dinner" if field == "dinner" else "Lunch", money(n, cur), " · ".join(x for x in (extra, r.get(note_field)) if x), on=field == "dinner")
+    w = r.get("wine")
+    total = r["dinner"] + w if w and r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu" else None
+    month = site.get("updated", "")
+    checked = (MONTH_NAMES[int(month[5:7]) - 1][:3] + " " + month[:4]) if re.fullmatch(r"\d{4}-\d{2}", month) else ""
+    return ('<div class="receipt rp-receipt"><span class="rc-paper">'
+            '<span class="rc-head" aria-hidden="true">The Starred Bill · Table for 1</span>'
+            + (f'<span class="notice">Temporarily closed</span>' if r.get("notice") else "")
+            + meal("dinner", "dinnerNote", "dinnerType") + meal("lunch", "lunchNote", "lunchType")
+            + (line("Wine pairing", money(w, cur)) if w else line("Wine pairing", "–", "no pairing listed", muted=True))
+            + (f'<span class="rc-line rc-total"><span class="rc-k">Dinner + wine</span><span class="rc-dots" aria-hidden="true"></span>'
+               f'<span class="sr-only">, </span><span class="rc-v">{money(total, cur)}</span></span>' if total is not None else "")
+            + f'<span class="rc-foot">{e(SERVICE_FOOT.get(kind, SERVICE_FOOT["before"]))}<br>Checked {checked}'
+            + (" · " + src_links if src_links else "") + "</span></span></div>")
+
+
+def ordinal(n):
+    return f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
+
+
+def peers_of(r, live):
+    """The restaurants it's compared with: the same stars and a dinner menu price, in its city (the city above a district),
+    or the place above that when the city has fewer than three; with that place."""
+    same = lambda q: q["stars"] == r["stars"] and q.get("dinner") is not None and q.get("dinnerType", "menu") == "menu" and q["cur"] == r["cur"]
+    start = 1 if r["cityType"] == "district" else 0
+    for pid in r["_chain"][start:]:
+        group = [q for q in live if pid in q["_chain"] and same(q)]
+        if len(group) >= 3:
+            return places[pid], sorted(group, key=lambda q: (q["dinner"], q["name"]))
+    return None, []
+
+
+def near_restaurants(r, live):
+    if r.get("lat") is None:
+        return []
+    found = sorted((metres(r["lat"], r["lng"], q["lat"], q["lng"]) / 1000, q) for q in live
+                   if q is not r and q.get("lat") is not None and abs(q["lat"] - r["lat"]) < 1 and abs(q["lng"] - r["lng"]) < 1.5)
+    found = [(km, q) for km, q in found if km <= NEAR_FAR_KM]
+    close = [f for f in found if f[0] <= NEAR_KM]
+    return (close if len(close) >= 3 else found)[:NEAR_MAX]
+
+
+def restaurant_title(r, year):
+    """The page's title (the blue link in Google): the fullest wording that fits TITLE_MAX."""
+    name, has_menu = r["name"], r.get("dinnerType", "menu") == "menu" and r.get("dinner") is not None
+    what = [x for x in ("Tasting Menu" if has_menu else "Menu" if r.get("dinner") is not None else "", "Lunch" if r.get("lunch") is not None else "",
+                        "Wine" if r.get("wine") else "") if x]
+    listed = ", ".join(what[:-1]) + " and " + what[-1] if len(what) > 1 else (what[0] if what else "")
+    options = [f"{name} Prices: {listed} ({year})", f"{name} Prices: {listed}", f"{name} Prices ({year})", f"{name} Prices"]
+    return next((o for o in options if title_width(o) <= TITLE_MAX and not o.startswith(f"{name} Prices: (")), options[-1])
+
+
+def restaurant_description(r, where):
+    """The search snippet: prices first, then stars, area and chef, as much as fits in 155 characters."""
+    cur, d, w, lunch = r["cur"], r.get("dinner"), r.get("wine"), r.get("lunch")
+    bits = []
+    if d is not None:
+        bits.append((f"the tasting menu is {money(d, cur)} per person" if r.get("dinnerType", "menu") == "menu" else f"dinner is about {money(d, cur)}")
+                    + (f", {money(d + w, cur)} with wine" if w and r.get("dinnerType", "menu") == "menu" else ""))
+    if lunch is not None:
+        bits.append(f"lunch is {money(lunch, cur)}")
+    head = f"What {r['name']} costs: " + "; ".join(bits) + ". " if bits else f"{r['name']}: prices, menus and what to expect. "
+    tails = [f"{STAR_WORDS[r['stars']].capitalize()} MICHELIN star{'s' if r['stars'] > 1 else ''}, {where}" + (f", chef {r['chef']}." if r.get("chef") else "."),
+             f"{STAR_WORDS[r['stars']].capitalize()} MICHELIN star{'s' if r['stars'] > 1 else ''}, {where}.",
+             f"{STAR_WORDS[r['stars']].capitalize()} MICHELIN star{'s' if r['stars'] > 1 else ''}.", ""]
+    return next(head + t for t in tails if len(head + t) <= 155).strip()
+
+
+def restaurant_faq(r, answer, kind, peers_place, peers, live):
+    name, cur, s = r["name"], r["cur"], r["stars"]
+    faq = [(f"How much does {name} cost?", answer)]
+    if r.get("noLunch"):
+        faq.append((f"Is {name} open for lunch?", f"No. {name} serves dinner only."))
+    elif r.get("lunch") is not None:
+        faq.append((f"How much is lunch at {name}?", f"Lunch at {name} is {money(r['lunch'], cur)}{usd_after(r['lunch'], cur)} per person"
+                    + (f", or {money(r['lunch'] + r['lunchWine'], cur)} with wine" if r.get("lunchWine") else "")
+                    + (f", {money(r['dinner'] - r['lunch'], cur)} less than the dinner menu." if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu" and r["lunch"] < r["dinner"] else ".")))
+    if r.get("wine"):
+        faq.append((f"How much is the wine pairing at {name}?", f"The wine pairing is {money(r['wine'], cur)}{usd_after(r['wine'], cur)} per person on top of the menu"
+                    + (f", which brings dinner to {money(r['dinner'] + r['wine'], cur)} {SERVICE_SAYS.get(kind, 'before service')}." if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu" else ".")))
+    country = places.get(r["country"])
+    same = sum(1 for q in live if q["country"] == r["country"] and q["stars"] == s)
+    change = {"new": f" It won {'them' if s > 1 else 'it'} in the guide of {month_year(r.get('changeDate'), 'en')}." if r.get("changeDate") else "",
+              "up": f" It gained its {ordinal(s)} star in {month_year(r.get('changeDate'), 'en')}." if r.get("changeDate") else "",
+              "down": f" It dropped from {s + 1} stars in {month_year(r.get('changeDate'), 'en')}." if r.get("changeDate") else ""}.get(r.get("change"), "")
+    faq.append((f"How many Michelin stars does {name} have?",
+                f"{STAR_WORDS[s].capitalize()}. {name} holds {STAR_WORDS[s]} MICHELIN star{'s' if s > 1 else ''}" + (", the guide’s highest award" if s == 3 else "")
+                + f", one of {same} {STAR_WORDS[s]}-star restaurants in {in_sentence(country) if country else 'its country'}.{change}"))
+    if r.get("chef"):
+        faq.append((f"Who is the chef at {name}?", f"The head chef is {r['chef']}."))
+    diets = [d for d in r.get("diets", []) if d in DIET_WORDS]
+    if "vegetarian-only" in diets:
+        faq.append((f"Is {name} vegetarian?", f"Yes. The MICHELIN Guide lists {name} as a vegetarian restaurant."))
+    elif diets:
+        menu = "vegetarian-menu" in diets
+        kinds = [DIET_WORDS[d] for d in diets if d not in ("vegetarian-menu", "vegetarian-only")]
+        faq.append((f"Can {name} cater for vegetarian or other diets?",
+                    (f"Yes: it has a vegetarian tasting menu" + (", and " if kinds else ".") if menu else "")
+                    + (f"{'Yes: ' if not menu else ''}the MICHELIN Guide says it can cater for {and_list(kinds)} diets." if kinds else "")
+                    + " Tell the restaurant when you book."))
+    if peers_place and len(peers) > 1 and r in peers:
+        i = peers.index(r) + 1
+        where = in_sentence(peers_place)
+        rank = "the cheapest" if i == 1 else "the most expensive" if i == len(peers) else f"the {ordinal(i)} cheapest"
+        faq.append((f"Is {name} expensive for a {STAR_WORDS[s]}-star restaurant?",
+                    f"Its {money(r['dinner'], cur)} dinner menu is {rank} of the {len(peers)} {STAR_WORDS[s]}-star dinner menus in {where} we list; "
+                    f"the middle price is {money(peers[len(peers) // 2]['dinner'], cur)}."))
+    return faq
+
+
+def build_restaurant_pages():
+    live = [r for r in restaurants if not r.get("status")]
+    mg = michelin_links()
+    site_dates = last_changed()
+    for r in (x for x in live if x.get("page")):
+        city = places[r["city"]]
+        stay = SERVICE.get(r["country"], ("before", 0))
+        kind = stay[0]
+        cur = r["cur"]
+        where = area_line(r)
+        crumbs = [places[c] for c in reversed(r["_chain"])]
+        src = lambda url, typ: f'<a class="src" href="{e(url)}">{"restaurant’s website" if typ == "site" else "source"}</a>' if url and typ != "none" else ""
+        src_links = " · ".join(x for x in (
+            src(r.get("source"), r.get("sourceType")).replace(">source<", ">dinner source<") if r.get("lunchSource") and r.get("lunchSource") != r.get("source") else src(r.get("source"), r.get("sourceType")),
+            src(r.get("lunchSource"), r.get("lunchSourceType")).replace(">source<", ">lunch source<") if r.get("lunchSource") != r.get("source") else "") if x)
+        answer = restaurant_answer(r, stay)
+        peers_place, peers = peers_of(r, live)
+        near = near_restaurants(r, live)
+        faq = restaurant_faq(r, answer, kind, peers_place, peers, live)
+        year = site.get("updated", "")[:4]
+        title = restaurant_title(r, year)
+        description = restaurant_description(r, where)
+        stars_html = '<span class="stars" aria-hidden="true">' + '<svg><use href="#star"/></svg>' * r["stars"] + "</span>"
+        stars_label = f"{STAR_WORDS[r['stars']].capitalize()} MICHELIN star{'s' if r['stars'] > 1 else ''}"
+        maps = ("https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(", ".join([r["name"], r.get("address") or where]))
+                + (f"&query_place_id={urllib.parse.quote(r['placeId'])}" if r.get("placeId") else ""))
+
+        hero = (f'<div class="hero rp-hero" id="top">\n  <div class="wrap">\n    <div>\n'
+                f'      <span class="eyebrow" style="color: var(--band-muted)">{stars_html} {e(stars_label)} · {e(r.get("cuisine", ""))}</span>\n'
+                f'      <h1 style="margin-top: 12px">{e(r["name"])}: what it <em>costs</em></h1>\n'
+                f'      <p class="rp-where">{e(where)}' + (f' · Chef {e(r["chef"])}' if r.get("chef") else "") + '</p>\n'
+                f'      <p class="rp-answer">{e(answer)}</p>\n'
+                f'      <div class="rp-actions"><button type="button" class="rp-wish" id="rpWish" data-wish="{e(r["id"])}" aria-pressed="false">'
+                f'<svg aria-hidden="true"><use href="#heart"/></svg><span>Save to wishlist</span></button>'
+                + (f'<a class="rp-btn" href="{e(r["website"])}">Restaurant’s website</a>' if r.get("website") else "")
+                + f'<a class="rp-btn" href="{e(maps)}">Google Maps</a></div>\n'
+                f'    </div>\n    <div class="rp-side">{receipt_html(r, kind, src_links)}</div>\n  </div>\n</div>\n')
+
+        # The facts.
+        change = r.get("change")
+        change_text = {"new": "New in", "up": "Gained a star in", "down": "Lost a star in"}.get(change, "")
+        facts = [("MICHELIN stars", f'{stars_html} {e(stars_label)}' + (f'<small>{e(change_text)} {e(month_year(r.get("changeDate"), "en"))}'
+                  + (f': {e(r["changeNote"])}' if r.get("changeNote") else "") + "</small>" if change and r.get("changeDate") else ""))]
+        if r.get("cuisine"):
+            facts.append(("Cuisine", e(r["cuisine"])))
+        if r.get("chef"):
+            facts.append(("Head chef", e(r["chef"])))
+        up = [c for c in r["_chain"] if places[c]["type"] in ("district", "city")] or r["_chain"][:1]
+        up += [c for c in r["_chain"][-1:] if c not in up]
+        facts.append(("Where", (e(r["area"]) + " · " if r.get("area") and r["area"] != city["name"] else "") + " · ".join(
+            f'<a href="{places[c]["path"]}">{e(places[c]["name"])}</a>' for c in up)))
+        if r.get("address"):
+            facts.append(("Address", f'{e(r["address"])}<small><a href="{e(maps)}">Open in Google Maps</a></small>'))
+        diets = [d for d in r.get("diets", []) if d in DIET_WORDS]
+        if diets:
+            plain_diets = [DIET_WORDS[d] for d in diets if d not in ("vegetarian-only", "vegetarian-menu")]
+            facts.append(("Dietary needs", e("; ".join(x for x in (
+                "A vegetarian restaurant" if "vegetarian-only" in diets else "", "Has a vegetarian tasting menu" if "vegetarian-menu" in diets else "",
+                ("Can cater for " + and_list(plain_diets) + " diets") if plain_diets else "") if x)) + "<small>From the MICHELIN Guide; say when you book</small>"))
+        if r.get("rating"):
+            facts.append(("Google rating", f'{r["rating"]:.1f} out of 5' + (f'<small>{r["reviews"]:,} reviews, checked {RATINGS_CHECKED}</small>' if r.get("reviews") else "")))
+        links = [f'<a href="{e(r["website"])}">Restaurant’s website</a>'] if r.get("website") else []
+        if r["id"] in mg:
+            links.append(f'<a href="{e(mg[r["id"]])}">MICHELIN Guide page</a>')
+        if links:
+            facts.append(("Links", " · ".join(links)))
+        facts_html = ('<section id="facts">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">At a glance</span>'
+                      f'<h2 style="margin-top: 6px">{e(r["name"])} in brief</h2></div></div>\n    <dl class="rp-facts">'
+                      + "".join(f"<div><dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in facts) + "</dl>\n  </div>\n</section>\n")
+
+        # What you'll pay, with the country's service note and the sources.
+        service_text = inherited(city, "serviceText") or ""
+        pay_rows = []
+        d, w, lunch = r.get("dinner"), r.get("wine"), r.get("lunch")
+        pct = stay[1] if kind in SERVICE_ADDS else 0
+        def bill_row(label, n, note=""):
+            if n is None:
+                return ""
+            plus = f'<td class="num">{money(round(n * (1 + pct / 100)), cur)}</td>' if pct else ""
+            return f'<tr><th scope="row">{e(label)}' + (f"<small>{e(note)}</small>" if note else "") + f'</th><td class="num">{money(n, cur)}</td>{plus}<td class="num">{money(n * 2, cur)}</td>' + \
+                (f'<td class="num">{money(round(n * 2 * (1 + pct / 100)), cur)}</td>' if pct else "") + "</tr>"
+        if d is not None:
+            dlabel = "Dinner menu" if r.get("dinnerType", "menu") == "menu" else "Dinner, a main course" if r["dinnerType"] == "main" else "Dinner, typical spend"
+            pay_rows.append(bill_row(dlabel, d, r.get("dinnerNote", "")))
+            if w and r.get("dinnerType", "menu") == "menu":
+                pay_rows.append(bill_row("Dinner menu with wine pairing", d + w))
+        if lunch is not None and not r.get("noLunch"):
+            pay_rows.append(bill_row("Lunch", lunch, r.get("lunchNote", "")))
+            if r.get("lunchWine"):
+                pay_rows.append(bill_row("Lunch with wine", lunch + r["lunchWine"]))
+        heads = "<th>Per person</th>" + (f"<th>With {pct:g}% {e(SERVICE_ADDS[kind])}</th>" if pct else "") + "<th>For two</th>" + (f"<th>For two, with {e(SERVICE_ADDS[kind])}</th>" if pct else "")
+        sources = []
+        for label, url, typ in (("Dinner", r.get("source"), r.get("sourceType")), ("Lunch", r.get("lunchSource"), r.get("lunchSourceType"))):
+            if url and typ != "none" and url not in [s[1] for s in sources]:
+                sources.append((label, url, typ))
+        pay_html = ('<section id="prices">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">The bill</span>'
+                    f'<h2 style="margin-top: 6px">What a meal at {e(r["name"])} comes to</h2>'
+                    f'<p>Per person in {cur}, {e(SERVICE_SAYS.get(kind, "before service"))}'
+                    + (f", and with the {pct:g}% usually added for {e(SERVICE_ADDS[kind])}. That figure is an estimate; the restaurant’s bill is what counts." if pct else ".") + "</p></div></div>\n"
+                    + (f'    <div class="table-scroll"><table class="rp-table rp-bill"><thead><tr><th></th>{heads}</tr></thead><tbody>{"".join(pay_rows)}</tbody></table></div>\n' if pay_rows else "<p>No prices are published yet.</p>\n")
+                    + (f'    <p class="rp-note">{e(service_text)}</p>\n' if service_text else "")
+                    + ('    <p class="rp-note">Sources: ' + " · ".join(
+                        f'<a href="{e(u)}">{"the restaurant’s website" if t == "site" else urllib.parse.urlsplit(u).netloc.replace("www.", "")}</a> ({label.lower()}' + (" and wine" if label == "Dinner" and w else "") + ")"
+                        for label, u, t in sources) + f'. Prices checked {e(guide_stats_checked())}; menus change, so check with {e(r["name"])} before you book.</p>\n' if sources else "")
+                    + "  </div>\n</section>\n")
+
+        # How it compares with the same stars nearby.
+        compare_html = ""
+        if peers_place and r in peers and len(peers) > 1:
+            i = peers.index(r)
+            lo = max(0, min(i - PEERS_SHOWN // 2, len(peers) - PEERS_SHOWN))
+            shown = peers[lo:lo + PEERS_SHOWN]
+            mid = peers[len(peers) // 2]["dinner"]
+            rank = "the cheapest" if i == 0 else "the most expensive" if i == len(peers) - 1 else f"the {ordinal(i + 1)} cheapest"
+            row = lambda q: (f'<tr{" class=on" if q is r else ""}><td>' + (f'<strong>{e(q["name"])}</strong>' if q is r else f'<a href="{e(restaurant_href(q))}">{e(q["name"])}</a>')
+                             + f'<small>{e(q.get("area") or q["cityName"])}</small></td><td>{e(q.get("cuisine", ""))}</td><td class="num">{money(q["dinner"], cur)}</td>'
+                             f'<td class="num">{money(q["lunch"], cur) if q.get("lunch") is not None and q.get("lunchType", "menu") == "menu" else "–"}</td>'
+                             f'<td class="num">{money(q["wine"], cur) if q.get("wine") else "–"}</td></tr>')
+            compare_html = ('<section id="compare">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">How it compares</span>'
+                            f'<h2 style="margin-top: 6px">{e(r["name"])} against {e(peers_place["name"])}’s other {STAR_WORDS[r["stars"]]}-star restaurants</h2>'
+                            f'<p>Its {money(r["dinner"], cur)} dinner menu is {rank} of the {len(peers)} {STAR_WORDS[r["stars"]]}-star dinner menus in {e(in_sentence(peers_place))} with a published price. '
+                            f'The middle price is {money(mid, cur)}' + (f", so it costs {money(abs(r['dinner'] - mid), cur)} {'more' if r['dinner'] > mid else 'less'} than a typical one." if r["dinner"] != mid else ", which it matches.") + "</p></div></div>\n"
+                            '    <div class="table-scroll"><table class="rp-table rp-peers"><thead><tr><th>Restaurant</th><th>Cuisine</th><th class="num">Dinner</th><th class="num">Lunch</th><th class="num">Wine pairing</th></tr></thead><tbody>'
+                            + "".join(row(q) for q in shown) + "</tbody></table></div>\n"
+                            f'    <p class="rp-more"><a href="{peers_place["path"]}">All {starred_n[peers_place["id"]]} starred restaurants in {e(in_sentence(peers_place))}, with prices</a></p>\n'
+                            "  </div>\n</section>\n")
+
+        # The map and the starred restaurants nearby.
+        near_items = "".join(
+            f'<li><a href="{e(restaurant_href(q))}">{e(q["name"])}</a> <span class="stars" aria-label="{q["stars"]} MICHELIN star{"s" if q["stars"] > 1 else ""}">'
+            + '<svg><use href="#star"/></svg>' * q["stars"] + f'</span><span>{e(" · ".join(x for x in (q.get("cuisine"), dist_text(km, r["country"]) + " away", (("dinner " + money(q["dinner"], q["cur"])) if q.get("dinner") is not None else "")) if x))}</span></li>'
+            for km, q in near)
+        home = places[r["_chain"][1]] if r["cityType"] == "district" else city
+        near_html = ('<section id="nearby">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Map</span>'
+                     f'<h2 style="margin-top: 6px">Starred restaurants near {e(r["name"])}</h2>'
+                     + (f'<p>The {len(near)} nearest, all within {dist_text(near[-1][0], r["country"]).split(" (")[0]}.</p>' if near else "") + "</div></div>\n"
+                     '    <div class="rp-near"><div class="rp-map" id="rpMap" hidden></div>'
+                     + (f'<ul class="rp-near-list">{near_items}</ul>' if near else "") + "</div>\n"
+                     f'    <p class="rp-more"><a href="{home["path"]}">All {starred_n[home["id"]]} starred restaurants in {e(in_sentence(home))}, with prices</a> · '
+                     '<a href="/near-me/">Starred restaurants near you</a></p>\n  </div>\n</section>\n')
+
+        faq_block = ('<section id="faq">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Questions</span>'
+                     f'<h2 style="margin-top: 6px">{e(r["name"])}: questions and answers</h2></div></div>\n'
+                     '    <div class="faq">' + "".join(f"<div><h3>{e(q)}</h3><p>{e(a)}</p></div>" for q, a in faq) + "</div>\n  </div>\n</section>\n")
+        guides_block = related_guides_html(city, [r], restaurant_guides(r)) if guides else ""
+
+        path = r["page"]
+        trail = [("All destinations", "/")] + [(c["name"], c["path"]) for c in crumbs] + [(r["name"], path)]
+        item = {"@type": "Restaurant", "@id": SITE_URL + path + "#restaurant", "name": r["name"], "servesCuisine": r.get("cuisine"),
+                "address": r.get("address"), "url": r.get("website"),
+                "sameAs": [u for u in (r.get("website"), mg.get(r["id"])) if u] or None,
+                "award": f"{r['stars']} MICHELIN Star{'s' if r['stars'] > 1 else ''}",
+                "starRating": {"@type": "Rating", "ratingValue": r["stars"], "bestRating": 3, "author": {"@type": "Organization", "name": "MICHELIN Guide"}},
+                "priceRange": f"{money(d, cur)} tasting menu" if d is not None and r.get("dinnerType", "menu") == "menu" else None,
+                "geo": {"@type": "GeoCoordinates", "latitude": r["lat"], "longitude": r["lng"]} if r.get("lat") is not None else None,
+                "hasMenu": [{"@type": "Menu", "name": n, "offers": {"@type": "Offer", "price": p, "priceCurrency": cur}}
+                            for n, p in (("Dinner tasting menu" if r.get("dinnerType", "menu") == "menu" else None, d), ("Wine pairing", w),
+                                         ("Lunch menu" if r.get("lunchType", "menu") == "menu" and not r.get("noLunch") else None, lunch)) if n and p is not None] or None}
+        graph = [{"@type": "BreadcrumbList", "itemListElement": [
+                     {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE_URL + u} for i, (n, u) in enumerate(trail)]},
+                 {"@type": "WebPage", "@id": SITE_URL + path, "url": SITE_URL + path, "name": title, "description": description, "inLanguage": "en",
+                  "about": {"@id": item["@id"]}, "isPartOf": {"@id": WEBSITE["@id"]}, "dateModified": site_dates.get(source_files[r["id"]])},
+                 {k: v for k, v in item.items() if v is not None},
+                 {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}]
+        graph[1] = {k: v for k, v in graph[1].items() if v}
+        data = {"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "knownIds": None,
+                "restaurant": {"id": r["id"], "name": r["name"], "stars": r["stars"], "lat": r.get("lat"), "lng": r.get("lng"), "placeId": r.get("placeId")},
+                "nearby": [{"name": q["name"], "stars": q["stars"], "lat": q["lat"], "lng": q["lng"], "href": restaurant_href(q),
+                            "dinner": money(q["dinner"], q["cur"]) if q.get("dinner") is not None else ""} for km, q in near]}
+        del data["knownIds"]
+        page_html = render("restaurant.html", {
+            "title": e(title), "description": e(description), "canonical": SITE_URL + path, "ogImage": og_image(city),
+            "ogAlt": e(f"What a meal at {r['name']} costs"),
+            "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
+            "crumbs": '<a href="/">All destinations</a>' + "".join(f'<a href="{c["path"]}">{e(c["name"])}</a>' for c in crumbs) + f'<span aria-current="page">{e(r["name"])}</span>',
+            "hero": hero, "main": pay_html + facts_html + compare_html + near_html + faq_block + guides_block, "data": as_json(data),
+        })
+        # Dollar prices on a US restaurant's page read "$350", as the guides write them.
+        write(path, page_html.replace("US$", "$") if cur == "USD" else page_html)
+
+
+def restaurant_guides(r):
+    """The guides that fit a restaurant's page, best first: those that link to or name it, the world three-star list for a
+    three-star restaurant, then those about the places it's in; topped up with the pillar. Up to four."""
+    above = r["_chain"]
+    name = re.compile(r"(?<![\w-])" + re.escape(r["name"]) + r"(?![\w-])")
+    scores = {}
+    for g in guides.values():
+        body = guide_bodies()[g["id"]]
+        hits = [above.index(i) for i in g.get("places", []) if i in above]
+        if f"#r={r['id']}\"" in body or f'href="{r.get("page")}"' in body or name.search(re.sub(r"<[^>]+>", " ", body)):
+            scores[g["id"]] = (3, 0)
+        elif g["id"] == "three-michelin-star-restaurants" and r["stars"] == 3:
+            scores[g["id"]] = (2, 0)
+        elif hits:
+            scores[g["id"]] = (1, -min(hits))
+    picked = sorted(scores, key=lambda i: (tuple(-x for x in scores[i]), i))[:4]
+    for i in (GUIDE_PILLAR, "michelin-stars-by-country"):
+        if len(picked) < 3 and i in guides and i not in picked:
+            picked.append(i)
+    return [guides[i] for i in picked]
+
+
+def guide_stats_checked():
+    month = site.get("updated", "")
+    return (MONTH_NAMES[int(month[5:7]) - 1] + " " + month[:4]) if re.fullmatch(r"\d{4}-\d{2}", month) else ""
+
+
 def last_changed():
     """The day each file in content/ (and the privacy page) last changed, from the git history, for the sitemap's
     <lastmod>. Empty when there's no history to read (no git, or a shallow copy where every file looks new)."""
@@ -2689,6 +3129,9 @@ def sitemap_dates():
         out[f"/guides/{gid}/"] = g["updated"]
     out["/guides/"] = max((g["updated"] for g in guides.values()), default=None)
     out["/privacy/"] = days.get("src/privacy.html")
+    for r in restaurants:
+        if r.get("page"):
+            out[r["page"]] = days.get(source_files[r["id"]])
     return out
 
 
@@ -2704,7 +3147,7 @@ def build_extras():
         shutil.copytree(SRC / "img", OUT / "img", ignore=shutil.ignore_patterns("*-src.*"))
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
-    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) for lang in place_langs(p)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + ["/privacy/"]
+    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) for lang in place_langs(p)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + ["/privacy/"]
     dates = sitemap_dates()
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -2737,6 +3180,7 @@ build_bill_data([r for r in restaurants if not r.get("status")])
 build_compare([r for r in restaurants if not r.get("status")])
 build_account_pages()
 build_guides()
+build_restaurant_pages()
 build_redirects()
 build_extras()
 build_service_worker()
@@ -2744,6 +3188,9 @@ print(f"Built {len(pages) + 1} pages from {len(restaurants)} restaurants into {O
 print("  /  (homepage)")
 for g in guides:
     print(f"  /guides/{g}/  {guides[g]['h1']}")
+for r in restaurants:
+    if r.get("page"):
+        print(f"  {r['page']}  {r['name']}")
 for p in sorted(pages, key=lambda p: p["path"]):
     print(f"  {p['path']}  {p['name']}, {starred_n[p['id']]} starred")
 for old, pid in sorted(redirects.items()):

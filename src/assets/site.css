@@ -1349,3 +1349,64 @@ button.near-card:hover { border-color: var(--green); }
   .cmp-rc .rc-k { white-space: normal; color: var(--rc-muted); font-size: .7rem; }
   .cmp-rc .rc-total .rc-k { color: var(--rc-ink); }
 }
+/* A restaurant's own page (/restaurants/<id>/, build_restaurant_pages() in build.py): the answer and the till receipt in the
+   green band, then the bill, the facts, how it compares, the map with its neighbours and the FAQ. Logical sides only. */
+.rp-hero .wrap { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: start; }
+.rp-hero .eyebrow { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.rp-hero .stars, .rp-facts .stars, .rp-near-list .stars { display: inline-flex; gap: 2px; color: var(--gold); }
+.rp-hero .stars svg, .rp-facts .stars svg, .rp-near-list .stars svg { width: 13px; height: 13px; }
+.rp-hero .rp-where { margin-top: 10px; color: var(--band-ink); font-weight: 500; }
+.rp-hero .rp-answer { margin-top: 18px; max-width: 58ch; padding: 12px 16px; border-inline-start: 3px solid var(--gold); background: rgba(255, 255, 255, .06); border-radius: 0 6px 6px 0; color: var(--band-ink); font-size: 1rem; }
+.rp-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.rp-wish, .rp-btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; font: inherit; font-size: .9rem; font-weight: 600; text-decoration: none; cursor: pointer;
+  border: 1px solid color-mix(in srgb, var(--band-ink) 30%, transparent); background: none; color: var(--band-ink); }
+.rp-wish:hover, .rp-btn:hover { background: color-mix(in srgb, var(--band-ink) 10%, transparent); }
+.rp-wish { background: var(--band-ink); color: var(--band); border-color: var(--band-ink); }
+.rp-wish:hover { background: color-mix(in srgb, var(--band-ink) 85%, transparent); }
+.rp-wish svg { width: 16px; height: 16px; fill: none; stroke: currentColor; }
+.rp-wish[aria-pressed="true"] svg { color: var(--heart); fill: currentColor; }
+.rp-side { display: grid; gap: 14px; justify-items: stretch; max-width: 420px; width: 100%; justify-self: end; }
+.rp-receipt { display: block; font-size: .9rem; filter: drop-shadow(0 4px 10px rgba(0, 0, 0, .25)); }
+.rp-receipt .rc-paper { padding: 16px 18px 10px; gap: 6px; }
+.rp-receipt .rc-note { font-size: .74rem; }
+.rp-receipt .rc-foot { font-size: .72rem; }
+.rp-photo { margin: 0; display: grid; gap: 4px; }
+.rp-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); background: color-mix(in srgb, var(--band-ink) 10%, transparent); opacity: 0; transition: opacity .3s; }
+.rp-photo.loaded img { opacity: 1; }
+.rp-photo figcaption { font-size: .72rem; color: var(--band-muted); }
+.rp-photo figcaption a { color: inherit; }
+.rp-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 0 40px; margin: 0; }
+.rp-facts div { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.rp-facts dt { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.rp-facts dd { margin: 4px 0 0; }
+.rp-facts small, .rp-table small { display: block; color: var(--muted); font-size: .82rem; margin-top: 2px; }
+.rp-facts a, .rp-table a, .rp-near-list a, .rp-more a, .rp-note a { color: var(--ink); font-weight: 600; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.rp-facts a:hover, .rp-table a:hover, .rp-near-list a:hover, .rp-more a:hover, .rp-note a:hover { color: var(--green); text-decoration-color: currentColor; }
+.table-scroll { overflow-x: auto; }
+.rp-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.rp-table th { text-align: start; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: bottom; }
+.rp-table tbody th { text-transform: none; letter-spacing: 0; font-size: .95rem; color: var(--ink); vertical-align: top; }
+.rp-table td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.rp-table .num, .rp-table th:not(:first-child) { text-align: end; font-family: var(--font-num); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rp-table thead th:not(:first-child) { font-family: inherit; white-space: normal; }
+.rp-table tr.on td { background: color-mix(in srgb, var(--gold) 14%, transparent); }
+.rp-table tr.on td:first-child { box-shadow: inset 3px 0 0 var(--gold); padding-inline-start: 10px; }
+.rp-peers th:nth-child(2), .rp-peers td:nth-child(2) { text-align: start; font-family: inherit; }
+.rp-note { color: var(--muted); font-size: .9rem; max-width: 80ch; margin-top: 16px; }
+.rp-more { margin-top: 20px; }
+.rp-near { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+.rp-map { width: 100%; aspect-ratio: 4 / 3; border-radius: var(--radius); border: 1px solid var(--line); }
+.rp-map[hidden] + .rp-near-list { grid-column: 1 / -1; }
+.rp-near-list { list-style: none; margin: 0; padding: 0; }
+.rp-near-list li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.rp-near-list li > span:last-child { display: block; color: var(--muted); font-size: .85rem; margin-top: 2px; }
+@media (max-width: 860px) {
+  .rp-hero .wrap, .rp-near { grid-template-columns: minmax(0, 1fr); }
+  .rp-side { justify-self: stretch; max-width: none; }
+}
+@media (max-width: 720px) {
+  .rp-bill th:nth-child(4), .rp-bill td:nth-child(4), .rp-peers th:nth-child(2), .rp-peers td:nth-child(2) { display: none; }
+  .rp-table { font-size: .88rem; }
+}
+/* Destination pages: the link from a restaurant's row to its own page. */
+.page-link { display: block; width: fit-content; margin-top: 3px; font-size: .8rem; font-weight: 600; color: var(--green); text-underline-offset: 3px; }

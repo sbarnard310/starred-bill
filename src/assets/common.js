@@ -65,7 +65,7 @@ const I18N = {
     srcSite: "Restaurant website", srcPress: "Review source", srcTitle: "Where this price came from",
     perMain: "per main", typicalSpend: "typical spend", notListed: "Not listed",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Table for 1", rcptDinnerOnly: "Dinner only", rcptNoPairing: "no pairing listed", rcptPlusWine: "+ wine {p}", rcptDinnerWine: "Dinner + wine", rcptLunchWine: "Lunch + wine", rcptChecked: "Checked {d}", rcptIncl: "Per person, service included", rcptPlus: "Per person, ++ (service and tax added)", rcptTaxTip: "Per person, before tax and tip", rcptTip: "Per person, before tip", rcptTax: "Per person, tax included",
+    rpLink: "Prices and details", rcptHead: "The Starred Bill · Table for 1", rcptDinnerOnly: "Dinner only", rcptNoPairing: "no pairing listed", rcptPlusWine: "+ wine {p}", rcptDinnerWine: "Dinner + wine", rcptLunchWine: "Lunch + wine", rcptChecked: "Checked {d}", rcptIncl: "Per person, service included", rcptPlus: "Per person, ++ (service and tax added)", rcptTaxTip: "Per person, before tax and tip", rcptTip: "Per person, before tip", rcptTax: "Per person, tax included",
     // The wishlist as one bill (homepage).
     billTitle: "Your wishlist as one bill", billIntro: "What everything you've saved would cost one person, with each country's usual service, tax and tips estimated on top.", billHead: "The Starred Bill · {meal} for 1", billWine: "Add wine pairings", billSubtotal: "Subtotal", billExtras: "Service, tax & tips (est.)", billTotal: "Total", billIncluded: "service included", billTax: "tax included", billBefore: "+{p}% service", billPlus: "++ adds about {p}%", billTaxTip: "tax and tip add about {p}%", billTip: "tip about {p}%", billNoLunch: "no lunch service, left out", billNoPrice: "no price yet, left out", billPerMain: "à la carte, left out", billCount: "Adds up {a} of {b} saved restaurant|Adds up {a} of {b} saved restaurants", billFoot: "Per person, before drinks unless wine is added. Service, tax and tips are estimates; check with each restaurant.", billConverted: "Converted at today's exchange rates.",
     findOnMaps: "Find {name} on Google Maps", findOnMapsTitle: "Find on Google Maps",
@@ -212,7 +212,7 @@ const I18N = {
     srcSite: "餐廳官網", srcPress: "評論來源", srcTitle: "價格資料來源",
     perMain: "每道主菜", typicalSpend: "人均消費", notListed: "未公布",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "僅供應晚餐", rcptNoPairing: "未列出餐酒搭配", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚餐 + 配酒", rcptLunchWine: "午餐 + 配酒", rcptChecked: "{d} 查核", rcptIncl: "每人價格，已含服務費", rcptPlus: "每人價格，另加 ++（服務費及稅）", rcptTaxTip: "每人價格，未含稅及小費", rcptTip: "每人價格，未含小費", rcptTax: "每人價格，已含稅",
+    rpLink: "價格與詳情", rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "僅供應晚餐", rcptNoPairing: "未列出餐酒搭配", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚餐 + 配酒", rcptLunchWine: "午餐 + 配酒", rcptChecked: "{d} 查核", rcptIncl: "每人價格，已含服務費", rcptPlus: "每人價格，另加 ++（服務費及稅）", rcptTaxTip: "每人價格，未含稅及小費", rcptTip: "每人價格，未含小費", rcptTax: "每人價格，已含稅",
     // The wishlist as one bill (homepage).
     billTitle: "把願望清單算成一張帳單", billIntro: "你收藏的所有餐廳一人吃一遍要花多少，並按各國習慣估算服務費、稅金和小費。", billHead: "The Starred Bill · {meal} 1 位", billWine: "加上餐酒搭配", billSubtotal: "小計", billExtras: "服務費、稅及小費（估）", billTotal: "總計", billIncluded: "已含服務費", billTax: "已含稅", billBefore: "+{p}% 服務費", billPlus: "++ 約加 {p}%", billTaxTip: "稅及小費約加 {p}%", billTip: "小費約 {p}%", billNoLunch: "不供應午餐，未計入", billNoPrice: "尚無價格，未計入", billPerMain: "單點，未計入", billCount: "已計入 {b} 家收藏餐廳中的 {a} 家", billFoot: "每人價格，未選配酒時不含飲品。服務費、稅金和小費皆為估算，請向各餐廳確認。", billConverted: "依今日匯率換算。",
     findOnMaps: "在 Google 地圖查看{name}", findOnMapsTitle: "在 Google 地圖查看",
@@ -357,7 +357,7 @@ const I18N = {
     srcSite: "Site du restaurant", srcPress: "Source", srcTitle: "D'où vient ce prix",
     perMain: "par plat", typicalSpend: "dépense moyenne", notListed: "Non communiqué",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Table pour 1", rcptDinnerOnly: "Dîner uniquement", rcptNoPairing: "pas d'accord mets-vins", rcptPlusWine: "+ vins {p}", rcptDinnerWine: "Dîner + vins", rcptLunchWine: "Déjeuner + vins", rcptChecked: "Vérifié : {d}", rcptIncl: "Par personne, service compris", rcptPlus: "Par personne, ++ (service et taxes en sus)", rcptTaxTip: "Par personne, hors taxes et pourboire", rcptTip: "Par personne, hors pourboire", rcptTax: "Par personne, taxes comprises",
+    rpLink: "Prix et détails", rcptHead: "The Starred Bill · Table pour 1", rcptDinnerOnly: "Dîner uniquement", rcptNoPairing: "pas d'accord mets-vins", rcptPlusWine: "+ vins {p}", rcptDinnerWine: "Dîner + vins", rcptLunchWine: "Déjeuner + vins", rcptChecked: "Vérifié : {d}", rcptIncl: "Par personne, service compris", rcptPlus: "Par personne, ++ (service et taxes en sus)", rcptTaxTip: "Par personne, hors taxes et pourboire", rcptTip: "Par personne, hors pourboire", rcptTax: "Par personne, taxes comprises",
     // The wishlist as one bill (homepage).
     billTitle: "Votre liste d'envies en une addition", billIntro: "Ce que coûteraient pour une personne tous les restaurants enregistrés, avec une estimation du service, des taxes et du pourboire habituels de chaque pays.", billHead: "The Starred Bill · {meal} pour 1", billWine: "Ajouter les accords mets-vins", billSubtotal: "Sous-total", billExtras: "Service, taxes et pourboire (est.)", billTotal: "Total", billIncluded: "service compris", billTax: "taxes comprises", billBefore: "+{p} % de service", billPlus: "++ : environ +{p} %", billTaxTip: "taxes et pourboire : environ +{p} %", billTip: "pourboire d'environ {p} %", billNoLunch: "pas de service le midi, non compté", billNoPrice: "pas encore de prix, non compté", billPerMain: "à la carte, non compté", billCount: "{a} restaurant compté sur {b}|{a} restaurants comptés sur {b}", billFoot: "Par personne, hors boissons sauf si les vins sont ajoutés. Service, taxes et pourboires sont estimés : vérifiez auprès de chaque restaurant.", billConverted: "Converti au taux de change du jour.",
     findOnMaps: "Trouver {name} sur Google Maps", findOnMapsTitle: "Voir sur Google Maps",
@@ -483,7 +483,7 @@ const I18N = {
     srcSite: "餐廳官網", srcPress: "資料來源", srcTitle: "價錢嘅來源",
     perMain: "每道主菜", typicalSpend: "人均消費", notListed: "未有公布",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "只做晚市", rcptNoPairing: "未有列出配酒", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚市 + 配酒", rcptLunchWine: "午市 + 配酒", rcptChecked: "{d} 核實", rcptIncl: "每位價錢，已包服務費", rcptPlus: "每位價錢，另加 ++（服務費同稅）", rcptTaxTip: "每位價錢，未計稅同貼士", rcptTip: "每位價錢，未計貼士", rcptTax: "每位價錢，已含稅",
+    rpLink: "價錢同詳情", rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "只做晚市", rcptNoPairing: "未有列出配酒", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚市 + 配酒", rcptLunchWine: "午市 + 配酒", rcptChecked: "{d} 核實", rcptIncl: "每位價錢，已包服務費", rcptPlus: "每位價錢，另加 ++（服務費同稅）", rcptTaxTip: "每位價錢，未計稅同貼士", rcptTip: "每位價錢，未計貼士", rcptTax: "每位價錢，已含稅",
     // The wishlist as one bill (homepage).
     billTitle: "將心水清單計成一張單", billIntro: "你收藏嘅餐廳一個人食晒要幾多錢，再按各地習慣估埋服務費、稅同貼士。", billHead: "The Starred Bill · {meal} 1 位", billWine: "加埋配酒", billSubtotal: "小計", billExtras: "服務費、稅同貼士（估）", billTotal: "總數", billIncluded: "已包服務費", billTax: "已含稅", billBefore: "+{p}% 服務費", billPlus: "++ 大約加 {p}%", billTaxTip: "稅同貼士大約加 {p}%", billTip: "貼士大約 {p}%", billNoLunch: "冇午市，冇計入", billNoPrice: "未有價錢，冇計入", billPerMain: "散點，冇計入", billCount: "計咗 {b} 間收藏餐廳入面嘅 {a} 間", billFoot: "每位價錢，冇揀配酒就唔包飲品。服務費、稅同貼士都係估計，請向餐廳確認。", billConverted: "按今日匯率換算。",
     findOnMaps: "喺 Google 地圖搵{name}", findOnMapsTitle: "喺 Google 地圖睇",
@@ -610,7 +610,7 @@ const I18N = {
     srcSite: "公式サイト", srcPress: "情報源", srcTitle: "この料金の情報源",
     perMain: "1品あたり", typicalSpend: "予算の目安", notListed: "非公開",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · 1名様", rcptDinnerOnly: "ディナーのみ", rcptNoPairing: "ペアリング記載なし", rcptPlusWine: "+ ペアリング {p}", rcptDinnerWine: "ディナー + ペアリング", rcptLunchWine: "ランチ + ペアリング", rcptChecked: "{d} 確認", rcptIncl: "1人あたり・サービス料込み", rcptPlus: "1人あたり・++（サービス料・税別）", rcptTaxTip: "1人あたり・税・チップ別", rcptTip: "1人あたり・チップ別", rcptTax: "1人あたり・税込",
+    rpLink: "料金と詳細", rcptHead: "The Starred Bill · 1名様", rcptDinnerOnly: "ディナーのみ", rcptNoPairing: "ペアリング記載なし", rcptPlusWine: "+ ペアリング {p}", rcptDinnerWine: "ディナー + ペアリング", rcptLunchWine: "ランチ + ペアリング", rcptChecked: "{d} 確認", rcptIncl: "1人あたり・サービス料込み", rcptPlus: "1人あたり・++（サービス料・税別）", rcptTaxTip: "1人あたり・税・チップ別", rcptTip: "1人あたり・チップ別", rcptTax: "1人あたり・税込",
     // The wishlist as one bill (homepage).
     billTitle: "お気に入りを1枚の伝票に", billIntro: "保存したすべての店で1人が食事した場合の合計に、各国で一般的なサービス料・税・チップの目安を加えた金額です。", billHead: "The Starred Bill · {meal} 1名様", billWine: "ペアリングを追加", billSubtotal: "小計", billExtras: "サービス料・税・チップ（目安）", billTotal: "合計", billIncluded: "サービス料込み", billTax: "税込", billBefore: "サービス料 +{p}%", billPlus: "++ で約 {p}% 加算", billTaxTip: "税とチップで約 {p}% 加算", billTip: "チップ約 {p}%", billNoLunch: "ランチ営業なし（含まず）", billNoPrice: "料金未掲載（含まず）", billPerMain: "アラカルト（含まず）", billCount: "保存した {b} 軒のうち {a} 軒を合計", billFoot: "1人あたり、ペアリングを追加しない限り飲み物別。サービス料・税・チップは目安です。各店にご確認ください。", billConverted: "本日の為替レートで換算。",
     findOnMaps: "Googleマップで{name}を見る", findOnMapsTitle: "Googleマップで見る",
@@ -756,7 +756,7 @@ const I18N = {
     srcSite: "Web del restaurante", srcPress: "Fuente: reseña", srcTitle: "De dónde sale este precio",
     perMain: "por plato principal", typicalSpend: "gasto habitual", notListed: "No publicado",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Mesa para 1", rcptDinnerOnly: "Solo cenas", rcptNoPairing: "sin maridaje publicado", rcptPlusWine: "+ maridaje {p}", rcptDinnerWine: "Cena + maridaje", rcptLunchWine: "Almuerzo + maridaje", rcptChecked: "Revisado: {d}", rcptIncl: "Por persona, servicio incluido", rcptPlus: "Por persona, ++ (servicio e impuestos aparte)", rcptTaxTip: "Por persona, sin impuestos ni propina", rcptTip: "Por persona, sin propina", rcptTax: "Por persona, impuestos incluidos",
+    rpLink: "Precios y detalles", rcptHead: "The Starred Bill · Mesa para 1", rcptDinnerOnly: "Solo cenas", rcptNoPairing: "sin maridaje publicado", rcptPlusWine: "+ maridaje {p}", rcptDinnerWine: "Cena + maridaje", rcptLunchWine: "Almuerzo + maridaje", rcptChecked: "Revisado: {d}", rcptIncl: "Por persona, servicio incluido", rcptPlus: "Por persona, ++ (servicio e impuestos aparte)", rcptTaxTip: "Por persona, sin impuestos ni propina", rcptTip: "Por persona, sin propina", rcptTax: "Por persona, impuestos incluidos",
     // The wishlist as one bill (homepage).
     billTitle: "Tu lista de favoritos en una sola cuenta", billIntro: "Lo que costarían para una persona todos los restaurantes guardados, con una estimación del servicio, los impuestos y la propina habituales de cada país.", billHead: "The Starred Bill · {meal} para 1", billWine: "Añadir maridajes", billSubtotal: "Subtotal", billExtras: "Servicio, impuestos y propinas (est.)", billTotal: "Total", billIncluded: "servicio incluido", billTax: "impuestos incluidos", billBefore: "+{p} % de servicio", billPlus: "++ suma un {p} % aprox.", billTaxTip: "impuestos y propina suman un {p} % aprox.", billTip: "propina de un {p} % aprox.", billNoLunch: "no abre a mediodía, no se suma", billNoPrice: "aún sin precio, no se suma", billPerMain: "a la carta, no se suma", billCount: "Suma {a} de {b} restaurante guardado|Suma {a} de {b} restaurantes guardados", billFoot: "Por persona, sin bebidas salvo que añadas los maridajes. Servicio, impuestos y propinas son estimaciones: confírmalos con cada restaurante.", billConverted: "Convertido al tipo de cambio de hoy.",
     findOnMaps: "Buscar {name} en Google Maps", findOnMapsTitle: "Buscar en Google Maps",
@@ -878,7 +878,7 @@ const I18N = {
     srcSite: "Restaurantens hjemmeside", srcPress: "Kilde", srcTitle: "Hvor prisen kommer fra",
     perMain: "pr. hovedret", typicalSpend: "typisk forbrug", notListed: "Ikke oplyst",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Bord til 1", rcptDinnerOnly: "Kun middag", rcptNoPairing: "ingen vinmenu oplyst", rcptPlusWine: "+ vin {p}", rcptDinnerWine: "Middag + vin", rcptLunchWine: "Frokost + vin", rcptChecked: "Tjekket {d}", rcptIncl: "Pr. person, inkl. service", rcptPlus: "Pr. person, ++ (service og moms oveni)", rcptTaxTip: "Pr. person, før moms og drikkepenge", rcptTip: "Pr. person, før drikkepenge", rcptTax: "Pr. person, inkl. moms",
+    rpLink: "Priser og detaljer", rcptHead: "The Starred Bill · Bord til 1", rcptDinnerOnly: "Kun middag", rcptNoPairing: "ingen vinmenu oplyst", rcptPlusWine: "+ vin {p}", rcptDinnerWine: "Middag + vin", rcptLunchWine: "Frokost + vin", rcptChecked: "Tjekket {d}", rcptIncl: "Pr. person, inkl. service", rcptPlus: "Pr. person, ++ (service og moms oveni)", rcptTaxTip: "Pr. person, før moms og drikkepenge", rcptTip: "Pr. person, før drikkepenge", rcptTax: "Pr. person, inkl. moms",
     findOnMaps: "Find {name} på Google Maps", findOnMapsTitle: "Find på Google Maps",
     showOnly: "Vis kun {cat}",
     chgNew: "Ny", chgTitle: "{note} i Michelinguiden fra {date}",
@@ -984,7 +984,7 @@ const I18N = {
     srcSite: "Restaurangens webbplats", srcPress: "Källa", srcTitle: "Var priset kommer ifrån",
     perMain: "per huvudrätt", typicalSpend: "typisk nota", notListed: "Inte angivet",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Bord för 1", rcptDinnerOnly: "Endast middag", rcptNoPairing: "inget vinpaket angivet", rcptPlusWine: "+ vin {p}", rcptDinnerWine: "Middag + vin", rcptLunchWine: "Lunch + vin", rcptChecked: "Kontrollerat {d}", rcptIncl: "Per person, service ingår", rcptPlus: "Per person, ++ (service och moms tillkommer)", rcptTaxTip: "Per person, före skatt och dricks", rcptTip: "Per person, före dricks", rcptTax: "Per person, moms ingår",
+    rpLink: "Priser och detaljer", rcptHead: "The Starred Bill · Bord för 1", rcptDinnerOnly: "Endast middag", rcptNoPairing: "inget vinpaket angivet", rcptPlusWine: "+ vin {p}", rcptDinnerWine: "Middag + vin", rcptLunchWine: "Lunch + vin", rcptChecked: "Kontrollerat {d}", rcptIncl: "Per person, service ingår", rcptPlus: "Per person, ++ (service och moms tillkommer)", rcptTaxTip: "Per person, före skatt och dricks", rcptTip: "Per person, före dricks", rcptTax: "Per person, moms ingår",
     findOnMaps: "Hitta {name} på Google Maps", findOnMapsTitle: "Hitta på Google Maps",
     showOnly: "Visa bara {cat}",
     chgNew: "Ny", chgTitle: "{note} i Michelinguiden från {date}",
@@ -1090,7 +1090,7 @@ const I18N = {
     srcSite: "Vefsíða staðarins", srcPress: "Heimild", srcTitle: "Hvaðan verðið kemur",
     perMain: "á aðalrétt", typicalSpend: "venjuleg eyðsla", notListed: "Ekki gefið upp",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Borð fyrir 1", rcptDinnerOnly: "Aðeins kvöldverður", rcptNoPairing: "engin vínpörun skráð", rcptPlusWine: "+ vín {p}", rcptDinnerWine: "Kvöldverður + vín", rcptLunchWine: "Hádegisverður + vín", rcptChecked: "Athugað {d}", rcptIncl: "Á mann, þjónusta innifalin", rcptPlus: "Á mann, ++ (þjónusta og skattur bætast við)", rcptTaxTip: "Á mann, fyrir skatt og þjórfé", rcptTip: "Á mann, fyrir þjórfé", rcptTax: "Á mann, skattur innifalinn",
+    rpLink: "Verð og upplýsingar", rcptHead: "The Starred Bill · Borð fyrir 1", rcptDinnerOnly: "Aðeins kvöldverður", rcptNoPairing: "engin vínpörun skráð", rcptPlusWine: "+ vín {p}", rcptDinnerWine: "Kvöldverður + vín", rcptLunchWine: "Hádegisverður + vín", rcptChecked: "Athugað {d}", rcptIncl: "Á mann, þjónusta innifalin", rcptPlus: "Á mann, ++ (þjónusta og skattur bætast við)", rcptTaxTip: "Á mann, fyrir skatt og þjórfé", rcptTip: "Á mann, fyrir þjórfé", rcptTax: "Á mann, skattur innifalinn",
     findOnMaps: "Finna {name} á Google Maps", findOnMapsTitle: "Finna á Google Maps",
     showOnly: "Sýna aðeins {cat}",
     chgNew: "Nýtt", chgTitle: "{note} í Michelin-handbókinni {date}",
@@ -1196,7 +1196,7 @@ const I18N = {
     srcSite: "Web del restaurant", srcPress: "Font", srcTitle: "D'on surt aquest preu",
     perMain: "per plat principal", typicalSpend: "despesa habitual", notListed: "No publicat",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Taula per a 1", rcptDinnerOnly: "Només sopars", rcptNoPairing: "sense maridatge publicat", rcptPlusWine: "+ maridatge {p}", rcptDinnerWine: "Sopar + maridatge", rcptLunchWine: "Dinar + maridatge", rcptChecked: "Revisat: {d}", rcptIncl: "Per persona, servei inclòs", rcptPlus: "Per persona, ++ (servei i impostos a part)", rcptTaxTip: "Per persona, sense impostos ni propina", rcptTip: "Per persona, sense propina", rcptTax: "Per persona, impostos inclosos",
+    rpLink: "Preus i detalls", rcptHead: "The Starred Bill · Taula per a 1", rcptDinnerOnly: "Només sopars", rcptNoPairing: "sense maridatge publicat", rcptPlusWine: "+ maridatge {p}", rcptDinnerWine: "Sopar + maridatge", rcptLunchWine: "Dinar + maridatge", rcptChecked: "Revisat: {d}", rcptIncl: "Per persona, servei inclòs", rcptPlus: "Per persona, ++ (servei i impostos a part)", rcptTaxTip: "Per persona, sense impostos ni propina", rcptTip: "Per persona, sense propina", rcptTax: "Per persona, impostos inclosos",
     findOnMaps: "Troba {name} a Google Maps", findOnMapsTitle: "Troba-ho a Google Maps",
     showOnly: "Mostra només {cat}",
     chgNew: "Nou", chgTitle: "{note} a la Guia Michelin de {date}",
@@ -1302,7 +1302,7 @@ const I18N = {
     srcSite: "เว็บไซต์ร้าน", srcPress: "แหล่งที่มา", srcTitle: "ราคานี้มาจากที่ใด",
     perMain: "ต่อจานหลัก", typicalSpend: "ค่าใช้จ่ายโดยทั่วไป", notListed: "ไม่ได้ระบุ",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · โต๊ะสำหรับ 1 ท่าน", rcptDinnerOnly: "เฉพาะมื้อค่ำ", rcptNoPairing: "ไม่มีไวน์จับคู่", rcptPlusWine: "+ ไวน์ {p}", rcptDinnerWine: "มื้อค่ำ + ไวน์", rcptLunchWine: "มื้อกลางวัน + ไวน์", rcptChecked: "ตรวจสอบ {d}", rcptIncl: "ต่อคน รวมค่าบริการ", rcptPlus: "ต่อคน ++ (บวกค่าบริการและภาษี)", rcptTaxTip: "ต่อคน ไม่รวมภาษีและทิป", rcptTip: "ต่อคน ไม่รวมทิป", rcptTax: "ต่อคน รวมภาษี",
+    rpLink: "ราคาและรายละเอียด", rcptHead: "The Starred Bill · โต๊ะสำหรับ 1 ท่าน", rcptDinnerOnly: "เฉพาะมื้อค่ำ", rcptNoPairing: "ไม่มีไวน์จับคู่", rcptPlusWine: "+ ไวน์ {p}", rcptDinnerWine: "มื้อค่ำ + ไวน์", rcptLunchWine: "มื้อกลางวัน + ไวน์", rcptChecked: "ตรวจสอบ {d}", rcptIncl: "ต่อคน รวมค่าบริการ", rcptPlus: "ต่อคน ++ (บวกค่าบริการและภาษี)", rcptTaxTip: "ต่อคน ไม่รวมภาษีและทิป", rcptTip: "ต่อคน ไม่รวมทิป", rcptTax: "ต่อคน รวมภาษี",
     findOnMaps: "ค้นหา {name} บน Google Maps", findOnMapsTitle: "ค้นหาบน Google Maps",
     showOnly: "แสดงเฉพาะ{cat}",
     chgNew: "ใหม่", chgTitle: "{note} ในมิชลิน ไกด์ {date}",
@@ -1416,7 +1416,7 @@ const I18N = {
     srcSite: "공식 사이트", srcPress: "출처", srcTitle: "이 가격의 출처",
     perMain: "요리당", typicalSpend: "평균 예산", notListed: "비공개",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · 1인 테이블", rcptDinnerOnly: "디너만 운영", rcptNoPairing: "페어링 정보 없음", rcptPlusWine: "+ 와인 {p}", rcptDinnerWine: "디너 + 와인", rcptLunchWine: "런치 + 와인", rcptChecked: "{d} 확인", rcptIncl: "1인 기준, 서비스 요금 포함", rcptPlus: "1인 기준, ++ (서비스 요금·세금 별도)", rcptTaxTip: "1인 기준, 세금·팁 별도", rcptTip: "1인 기준, 팁 별도", rcptTax: "1인 기준, 세금 포함",
+    rpLink: "가격 및 상세 정보", rcptHead: "The Starred Bill · 1인 테이블", rcptDinnerOnly: "디너만 운영", rcptNoPairing: "페어링 정보 없음", rcptPlusWine: "+ 와인 {p}", rcptDinnerWine: "디너 + 와인", rcptLunchWine: "런치 + 와인", rcptChecked: "{d} 확인", rcptIncl: "1인 기준, 서비스 요금 포함", rcptPlus: "1인 기준, ++ (서비스 요금·세금 별도)", rcptTaxTip: "1인 기준, 세금·팁 별도", rcptTip: "1인 기준, 팁 별도", rcptTax: "1인 기준, 세금 포함",
     // The wishlist as one bill (homepage).
     billTitle: "위시리스트를 한 장의 계산서로", billIntro: "저장한 모든 레스토랑을 한 사람이 방문할 때의 합계에, 나라별로 일반적인 서비스 요금·세금·팁을 추정해 더했습니다.", billHead: "The Starred Bill · {meal} 1인", billWine: "와인 페어링 추가", billSubtotal: "소계", billExtras: "서비스 요금·세금·팁 (추정)", billTotal: "합계", billIncluded: "서비스 요금 포함", billTax: "세금 포함", billBefore: "서비스 요금 +{p}%", billPlus: "++ 약 {p}% 추가", billTaxTip: "세금과 팁 약 {p}% 추가", billTip: "팁 약 {p}%", billNoLunch: "런치 없음, 제외", billNoPrice: "가격 미확인, 제외", billPerMain: "단품 메뉴, 제외", billCount: "저장한 {b}곳 중 {a}곳 합산", billFoot: "1인 기준, 와인 페어링을 추가하지 않으면 음료 별도. 서비스 요금·세금·팁은 추정치이니 각 레스토랑에 확인하세요.", billConverted: "오늘 환율로 환산.",
     findOnMaps: "Google 지도에서 {name} 보기", findOnMapsTitle: "Google 지도에서 보기",
@@ -1562,7 +1562,7 @@ const I18N = {
     srcSite: "Sito del ristorante", srcPress: "Fonte: recensione", srcTitle: "Da dove viene questo prezzo",
     perMain: "per piatto principale", typicalSpend: "spesa tipica", notListed: "Non pubblicato",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Tavolo per 1", rcptDinnerOnly: "Solo cena", rcptNoPairing: "nessun abbinamento indicato", rcptPlusWine: "+ vini {p}", rcptDinnerWine: "Cena + vini", rcptLunchWine: "Pranzo + vini", rcptChecked: "Verificato: {d}", rcptIncl: "A persona, servizio incluso", rcptPlus: "A persona, ++ (servizio e tasse a parte)", rcptTaxTip: "A persona, tasse e mancia escluse", rcptTip: "A persona, mancia esclusa", rcptTax: "A persona, tasse incluse",
+    rpLink: "Prezzi e dettagli", rcptHead: "The Starred Bill · Tavolo per 1", rcptDinnerOnly: "Solo cena", rcptNoPairing: "nessun abbinamento indicato", rcptPlusWine: "+ vini {p}", rcptDinnerWine: "Cena + vini", rcptLunchWine: "Pranzo + vini", rcptChecked: "Verificato: {d}", rcptIncl: "A persona, servizio incluso", rcptPlus: "A persona, ++ (servizio e tasse a parte)", rcptTaxTip: "A persona, tasse e mancia escluse", rcptTip: "A persona, mancia esclusa", rcptTax: "A persona, tasse incluse",
     // The wishlist as one bill (homepage).
     billTitle: "La tua lista dei preferiti in un unico conto", billIntro: "Quanto costerebbero per una persona tutti i ristoranti salvati, con una stima di servizio, tasse e mance abituali in ogni paese.", billHead: "The Starred Bill · {meal} per 1", billWine: "Aggiungi gli abbinamenti vini", billSubtotal: "Subtotale", billExtras: "Servizio, tasse e mance (stima)", billTotal: "Totale", billIncluded: "servizio incluso", billTax: "tasse incluse", billBefore: "+{p}% di servizio", billPlus: "++ aggiunge circa il {p}%", billTaxTip: "tasse e mancia aggiungono circa il {p}%", billTip: "mancia di circa il {p}%", billNoLunch: "chiuso a pranzo, escluso", billNoPrice: "prezzo non ancora disponibile, escluso", billPerMain: "alla carta, escluso", billCount: "Somma {a} di {b} ristorante salvato|Somma {a} di {b} ristoranti salvati", billFoot: "A persona, bevande escluse salvo aggiunta dei vini. Servizio, tasse e mance sono stime: verifica con ogni ristorante.", billConverted: "Convertito al cambio di oggi.",
     findOnMaps: "Trova {name} su Google Maps", findOnMapsTitle: "Trova su Google Maps",

@@ -1,9 +1,12 @@
 {
   "name": "Kyo Seika",
+  "nameJa": "京、静華",
   "city": "kyoto",
+  "areaJa": "左京区岡崎円勝寺町",
   "address": "2F, 36-3 Okazaki Enshojicho, Sakyo-ku, 606-8344, Kyoto",
   "stars": 1,
   "cuisine": "Chinese",
+  "cuisineJa": "中国料理",
   "rating": 4.6,
   "reviews": 217,
   "dinnerType": "menu",

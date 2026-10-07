@@ -1,9 +1,12 @@
 {
   "name": "Kenya",
+  "nameJa": "研野",
   "city": "kyoto",
+  "areaJa": "左京区上高野下荒蒔町",
   "address": "12-3 Kamitakano Shimoaramakicho, Sakyo-ku, 606-0093, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "dinnerType": "menu",
   "dinnerNote": "Kaiseki course",
   "sourceType": "site",

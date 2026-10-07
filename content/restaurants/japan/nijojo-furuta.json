@@ -1,9 +1,12 @@
 {
   "name": "Nijojo Furuta",
+  "nameJa": "二条城 ふる田",
   "city": "kyoto",
+  "areaJa": "中京区古城町",
   "address": "371 Furushirocho, Nakagyo-ku, 604-0045, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.2,
   "reviews": 44,
   "dinnerType": "menu",

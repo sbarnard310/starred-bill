@@ -1,9 +1,12 @@
 {
   "name": "Kanamean Nishitomiya",
+  "nameJa": "要庵 西富家",
   "city": "kyoto",
+  "areaJa": "中京区骨屋之町",
   "address": "562 Honeyanocho, Nakagyo-ku, 604-6084, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 97,
   "dinnerType": "menu",

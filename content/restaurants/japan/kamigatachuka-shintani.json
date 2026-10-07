@@ -1,9 +1,12 @@
 {
   "name": "Kamigatachuka SHINTANI",
+  "nameJa": "上方中華 新瓊",
   "city": "osaka",
+  "areaJa": "北区中崎",
   "address": "1-4-21 Nakazaki, Kita-ku, 530-0016, Osaka",
   "stars": 1,
   "cuisine": "Chinese",
+  "cuisineJa": "中国料理",
   "rating": 4.9,
   "reviews": 21,
   "dinnerType": "menu",

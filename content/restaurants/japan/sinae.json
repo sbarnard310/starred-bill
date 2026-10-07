@@ -1,9 +1,12 @@
 {
   "name": "SINAE",
+  "nameJa": "シナエ",
   "city": "osaka",
+  "areaJa": "中央区伏見町",
   "address": "2F, 2-4-12 Fushimimachi, Chuo-ku, 541-0044, Osaka",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.6,
   "reviews": 41,
   "dinnerType": "menu",

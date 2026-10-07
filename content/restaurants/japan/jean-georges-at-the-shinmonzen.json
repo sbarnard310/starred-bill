@@ -1,9 +1,12 @@
 {
   "name": "Jean-Georges at The Shinmonzen",
+  "nameJa": "ジャン-ジョルジュ アット ザ シンモンゼン",
   "city": "kyoto",
+  "areaJa": "東山区西之町",
   "address": "1F, The Shinmonzen, 235 Nishinocho, Higashiyama-ku, 605-0088, Kyoto",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.7,
   "reviews": 145,
   "dinnerType": "menu",

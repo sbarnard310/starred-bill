@@ -1,9 +1,12 @@
 {
   "name": "Nijo Minami",
+  "nameJa": "二條 みなみ",
   "city": "kyoto",
+  "areaJa": "中京区榎木町",
   "address": "92-12 Enokicho, Nakagyo-ku, 604-0931, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.8,
   "reviews": 12,
   "dinnerType": "spend",

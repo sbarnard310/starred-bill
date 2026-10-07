@@ -1,9 +1,12 @@
 {
   "name": "Tozentei",
+  "nameJa": "陶然亭",
   "city": "kyoto",
+  "areaJa": "北区小松原南町",
   "address": "31-1 Komatsubara Minamimachi, Kita-ku, 603-8342, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.9,
   "reviews": 131,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "Kodaiji Jugyuan",
+  "nameJa": "高台寺 十牛庵",
   "city": "kyoto",
+  "areaJa": "東山区桝屋町",
   "address": "353 Masuyacho, Higashiyama-ku, 605-0826, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.5,
   "reviews": 382,
   "dinnerType": "menu",

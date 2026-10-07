@@ -1,9 +1,12 @@
 {
   "name": "Oryori Mashita",
+  "nameJa": "御料理 味舌",
   "city": "kyoto",
+  "areaJa": "東山区祇園町北側",
   "address": "246 Giommachi Kitagawa, Higashiyama-ku, 605-0073, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.3,
   "reviews": 194,
   "dinnerType": "menu",

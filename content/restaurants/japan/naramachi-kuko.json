@@ -1,9 +1,12 @@
 {
   "name": "Naramachi Kuko",
+  "nameJa": "奈良町 枸杞",
   "city": "nara",
+  "areaJa": "奈良市鳴川町",
   "address": "42 Narukawacho, Nara, 630-8335, Nara",
   "stars": 1,
   "cuisine": "Chinese",
+  "cuisineJa": "中国料理",
   "rating": 4.5,
   "reviews": 32,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "HAJIME",
+  "nameJa": "ハジメ",
   "city": "osaka",
+  "areaJa": "西区江戸堀",
   "address": "1-9-11 Edobori, Nishi-ku, 550-0002, Osaka",
   "stars": 3,
   "cuisine": "Innovative",
+  "cuisineJa": "イノベーティブ",
   "rating": 4.5,
   "reviews": 316,
   "dinnerType": "menu",

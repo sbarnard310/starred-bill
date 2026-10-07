@@ -1,9 +1,12 @@
 {
   "name": "ad hoc",
+  "nameJa": "アドック",
   "city": "osaka",
+  "areaJa": "福島区福島",
   "address": "Hotarumachi, 1-1-48 Fukushima, Fukushima-ku, 553-0003, Osaka",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.7,
   "reviews": 243,
   "dinnerType": "spend",

@@ -1,9 +1,12 @@
 {
   "name": "Sushi Murakami Jiro",
+  "nameJa": "鮨 村上二郎",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "1-5-7 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 1,
   "cuisine": "Sushi",
+  "cuisineJa": "寿司",
   "rating": 4.3,
   "reviews": 76,
   "dinnerType": "menu",

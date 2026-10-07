@@ -1,9 +1,12 @@
 {
   "name": "Rooots Nakanoshima",
+  "nameJa": "ルーツ ナカノシマ",
   "city": "osaka",
+  "areaJa": "北区中之島",
   "address": "6-1-45 Nakanoshima, Kita-ku, 530-0005, Osaka",
   "stars": 1,
   "cuisine": "Contemporary",
+  "cuisineJa": "現代風料理",
   "rating": 4.7,
   "reviews": 38,
   "dinnerType": "menu",

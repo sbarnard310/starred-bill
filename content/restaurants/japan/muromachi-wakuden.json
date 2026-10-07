@@ -1,9 +1,12 @@
 {
   "name": "Muromachi Wakuden",
+  "nameJa": "室町 和久傳",
   "city": "kyoto",
+  "areaJa": "中京区丸木材木町",
   "address": "679 Marukizaimokucho, Nakagyo-ku, 604-8106, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.6,
   "reviews": 320,
   "dinnerType": "menu",

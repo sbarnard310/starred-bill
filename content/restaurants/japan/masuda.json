@@ -1,9 +1,12 @@
 {
   "name": "Masuda",
+  "nameJa": "桝田",
   "city": "osaka",
+  "areaJa": "中央区心斎橋筋",
   "address": "2F, 1-3-12 Shinsaibashisuji, Chuo-ku, 542-0085, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.5,
   "reviews": 116,
   "dinnerType": "menu",

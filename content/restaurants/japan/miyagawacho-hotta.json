@@ -1,9 +1,12 @@
 {
   "name": "Miyagawacho Hotta",
+  "nameJa": "宮川町 ほった",
   "city": "kyoto",
+  "areaJa": "東山区宮川筋",
   "address": "6-359-4 Miyagawasuji, Higashiyama-ku, 605-0801, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.4,
   "reviews": 298,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "Nishino",
+  "nameJa": "にしの",
   "city": "osaka",
+  "areaJa": "西区京町堀",
   "address": "1-9-21 Kyomachibori, Nishi-ku, 550-0003, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 40,
   "dinnerType": "menu",

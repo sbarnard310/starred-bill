@@ -1,9 +1,12 @@
 {
   "name": "Miyawaki",
+  "nameJa": "宮脇",
   "city": "kyoto",
+  "areaJa": "中京区式阿弥町",
   "address": "122-1 Shikiamicho, Nakagyo-ku, 604-8261, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 45,
   "dinnerType": "menu",

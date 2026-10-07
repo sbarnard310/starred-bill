@@ -1,9 +1,12 @@
 {
   "name": "Mizuno",
+  "nameJa": "水の",
   "city": "kyoto",
+  "areaJa": "東山区中之町",
   "address": "245-2 Nakanocho, Higashiyama-ku, 605-0082, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.9,
   "reviews": 47,
   "dinnerType": "menu",

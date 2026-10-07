@@ -1,9 +1,12 @@
 {
   "name": "Teruya",
+  "nameJa": "照屋",
   "city": "osaka",
+  "areaJa": "中央区上汐",
   "address": "2-1-24 Ueshio, Chuo-ku, 542-0064, Osaka",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 45,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "SÉN",
+  "nameJa": "セン",
   "city": "nara",
+  "areaJa": "吉野郡天川村川合",
   "address": "267 Kawai, Tenkawamura, Yoshino-gun, 638-0301, Nara",
   "stars": 1,
   "cuisine": "Innovative",
+  "cuisineJa": "イノベーティブ",
   "rating": 5,
   "reviews": 13,
   "dinnerType": "menu",

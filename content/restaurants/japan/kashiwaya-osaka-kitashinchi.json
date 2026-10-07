@@ -1,9 +1,12 @@
 {
   "name": "Kashiwaya Osaka Kitashinchi",
+  "nameJa": "柏屋 大阪北新地",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "5F, 1-7-4 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 32,
   "dinnerType": "menu",

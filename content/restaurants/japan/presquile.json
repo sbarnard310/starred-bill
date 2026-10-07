@@ -1,9 +1,12 @@
 {
   "name": "PRESQU'ÎLE",
+  "nameJa": "プレスキル",
   "city": "osaka",
+  "areaJa": "中央区今橋",
   "address": "2F, Yodoyabashi odona, 4-1-1 Imabashi, Chuo-ku, 541-0042, Osaka",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 3.7,
   "reviews": 1981,
   "dinnerType": "menu",

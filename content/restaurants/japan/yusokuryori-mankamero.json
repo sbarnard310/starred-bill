@@ -1,9 +1,12 @@
 {
   "name": "Yusokuryori Mankamero",
+  "nameJa": "有職料理 萬亀楼",
   "city": "kyoto",
+  "areaJa": "上京区蛭子町",
   "address": "387 Ebisucho, Kamigyo-ku, 602-8118, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 177,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "Koikiryori Aji Manso",
+  "nameJa": "小粋料理 味 万惣",
   "city": "nara",
+  "areaJa": "奈良市鶴舞東町",
   "address": "2F, 2-26 Tsurumai Higashimachi, Nara, 631-0021, Nara",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "dinnerType": "spend",
   "dinnerNote": "Tabelog range ¥15,000–19,999",
   "sourceType": "press",

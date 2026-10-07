@@ -1,9 +1,12 @@
 {
   "name": "a canto",
+  "nameJa": "ア・カント",
   "city": "osaka",
+  "areaJa": "中央区内久宝寺町",
   "address": "3-1-10 Uchikyuhojimachi, Chuo-ku, 540-0013, Osaka",
   "stars": 1,
   "cuisine": "Italian",
+  "cuisineJa": "イタリア料理",
   "rating": 4.8,
   "reviews": 58,
   "dinnerType": "menu",

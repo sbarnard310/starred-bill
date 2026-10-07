@@ -1,9 +1,12 @@
 {
   "name": "Gion Kida",
+  "nameJa": "祇園 きだ",
   "city": "kyoto",
+  "areaJa": "東山区祇園町南側",
   "address": "570-192 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.8,
   "reviews": 56,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "Sushi Matsumoto",
+  "nameJa": "鮨 まつもと",
   "city": "kyoto",
+  "areaJa": "東山区祇園町南側",
   "address": "570-123 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
   "stars": 1,
   "cuisine": "Sushi",
+  "cuisineJa": "寿司",
   "rating": 4.1,
   "reviews": 264,
   "dinnerType": "menu",

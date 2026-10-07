@@ -1,9 +1,12 @@
 {
   "name": "agnel d'or",
+  "nameJa": "アニエルドール",
   "city": "osaka",
+  "areaJa": "西区西本町",
   "address": "2-4-4 Nishihommachi, Nishi-ku, 550-0005, Osaka",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.5,
   "reviews": 273,
   "dinnerType": "menu",

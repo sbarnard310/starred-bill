@@ -1,9 +1,12 @@
 {
   "name": "Torisaki",
+  "nameJa": "鳥さき",
   "city": "kyoto",
+  "areaJa": "中京区蛸薬師町",
   "address": "292-1 Takoyakushicho, Nakagyo-ku, 604-0021, Kyoto",
   "stars": 1,
   "cuisine": "Yakitori",
+  "cuisineJa": "焼鳥",
   "rating": 4.5,
   "reviews": 181,
   "dinnerType": "spend",

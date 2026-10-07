@@ -1,9 +1,12 @@
 {
   "name": "Higashiyama Ogata",
+  "nameJa": "東山 緒方",
   "city": "kyoto",
+  "areaJa": "左京区岡崎円勝寺町",
   "address": "91-5 Okazaki Enshojicho, Sakyo-ku, 606-8344, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.2,
   "reviews": 62,
   "dinnerType": "spend",

@@ -1,9 +1,12 @@
 {
   "name": "Kashiwaya Osaka Senriyama",
+  "nameJa": "柏屋 大阪千里山",
   "city": "osaka",
+  "areaJa": "吹田市千里山西",
   "address": "2-5-18 Senriyamanishi, Suita, 565-0851, Osaka",
   "stars": 3,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.5,
   "reviews": 323,
   "dinnerType": "menu",

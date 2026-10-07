@@ -1,9 +1,12 @@
 {
   "name": "Manjuji Hakuran",
+  "nameJa": "萬寿寺はくらん",
   "city": "kyoto",
+  "areaJa": "下京区御供石町",
   "address": "360 Gokuishicho, Shimogyo-ku, 600-8429, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.8,
   "reviews": 17,
   "dinnerType": "menu",

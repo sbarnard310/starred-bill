@@ -1,9 +1,12 @@
 {
   "name": "Hachi",
+  "nameJa": "八盂",
   "city": "osaka",
+  "areaJa": "天王寺区上本町",
   "address": "8-1-8 Uehommachi, Tennoji-ku, 543-0001, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.9,
   "reviews": 10,
   "dinnerType": "menu",

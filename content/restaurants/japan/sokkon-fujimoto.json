@@ -1,9 +1,12 @@
 {
   "name": "Sokkon Fujimoto",
+  "nameJa": "即今 藤本",
   "city": "kyoto",
+  "areaJa": "中京区松本町",
   "address": "580-1 Matsumotocho, Nakagyo-ku, 604-0982, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 42,
   "dinnerType": "menu",

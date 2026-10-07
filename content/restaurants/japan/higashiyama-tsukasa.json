@@ -1,9 +1,12 @@
 {
   "name": "Higashiyama Tsukasa",
+  "nameJa": "ひがしやま 司",
   "city": "kyoto",
+  "areaJa": "東山区西町",
   "address": "2F, 127 Nishimachi, Higashiyama-ku, 605-0037, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.5,
   "reviews": 40,
   "dinnerType": "menu",

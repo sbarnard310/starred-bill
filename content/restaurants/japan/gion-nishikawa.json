@@ -1,9 +1,12 @@
 {
   "name": "Gion Nishikawa",
+  "nameJa": "祇園 にしかわ",
   "city": "kyoto",
+  "areaJa": "東山区下河原町",
   "address": "473 Shimokawaracho, Higashiyama-ku, 605-0825, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.1,
   "reviews": 320,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "Ajinokaze Nishimura",
+  "nameJa": "味の風 にしむら",
   "city": "nara",
+  "areaJa": "桜井市粟殿",
   "address": "1023-3 Odono, Sakurai, 633-0062, Nara",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.6,
   "reviews": 105,
   "dinnerType": "menu",

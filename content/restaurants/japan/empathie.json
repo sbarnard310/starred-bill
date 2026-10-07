@@ -1,9 +1,12 @@
 {
   "name": "Empathie",
+  "nameJa": "エンパティ",
   "city": "osaka",
+  "areaJa": "北区西天満",
   "address": "4-12-10 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.8,
   "reviews": 29,
   "dinnerType": "menu",

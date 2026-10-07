@@ -1,9 +1,12 @@
 {
   "name": "IDÉAL bistro",
+  "nameJa": "イデアル ビストロ",
   "city": "osaka",
+  "areaJa": "中央区谷町",
   "address": "2F, 1-6-5 Tanimachi, Chuo-ku, 540-0012, Osaka",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.3,
   "reviews": 117,
   "dinnerType": "menu",

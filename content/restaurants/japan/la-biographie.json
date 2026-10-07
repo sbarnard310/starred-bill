@@ -1,9 +1,12 @@
 {
   "name": "La Biographie···",
+  "nameJa": "ラ・ビオグラフィ",
   "city": "kyoto",
+  "areaJa": "上京区田中町",
   "address": "422-1 Tanakacho, Kamigyo-ku, 602-8163, Kyoto",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.6,
   "reviews": 56,
   "dinnerType": "menu",

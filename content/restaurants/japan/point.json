@@ -1,9 +1,12 @@
 {
   "name": "Point",
+  "nameJa": "ポワン",
   "city": "osaka",
+  "areaJa": "福島区福島",
   "address": "3-12-20 Fukushima, Fukushima-ku, 553-0003, Osaka",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.7,
   "reviews": 26,
   "dinnerType": "menu",

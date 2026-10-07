@@ -1,9 +1,12 @@
 {
   "name": "Kaishoku Shimizu",
+  "nameJa": "懐食 清水",
   "city": "osaka",
+  "areaJa": "北区堂島浜",
   "address": "1F, Shin Daibiru, 1-2-1 Dojimahama, Kita-ku, 530-0004, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.4,
   "reviews": 67,
   "dinnerType": "spend",

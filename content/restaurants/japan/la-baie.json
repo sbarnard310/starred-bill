@@ -1,9 +1,12 @@
 {
   "name": "La Baie",
+  "nameJa": "ラ・ベ",
   "city": "osaka",
+  "areaJa": "北区梅田",
   "address": "5F, The Ritz-Carlton, Osaka, 2-5-25 Umeda, Kita-ku, 530-0001, Osaka",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.6,
   "reviews": 380,
   "dinnerType": "menu",

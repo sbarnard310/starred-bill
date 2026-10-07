@@ -1,9 +1,12 @@
 {
   "name": "Oryori Hanagaki",
+  "nameJa": "御料理 花墻",
   "city": "nara",
+  "areaJa": "奈良市学園南",
   "address": "2-13-2 Gakuen Minami, Nara, 631-0034, Nara",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.2,
   "reviews": 26,
   "dinnerType": "menu",

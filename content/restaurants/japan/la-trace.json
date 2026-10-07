@@ -1,9 +1,12 @@
 {
   "name": "LA TRACE",
+  "nameJa": "ラ・トラース",
   "city": "nara",
+  "areaJa": "奈良市大宮町",
   "address": "2-1-5 Omiyacho, Nara, 630-8115, Nara",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.7,
   "reviews": 69,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "KOGA",
+  "nameJa": "コガ",
   "city": "kyoto",
+  "areaJa": "上京区中小川町",
   "address": "230 Nakaogawacho, Kamigyo-ku, 602-0053, Kyoto",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.8,
   "reviews": 53,
   "dinnerType": "menu",

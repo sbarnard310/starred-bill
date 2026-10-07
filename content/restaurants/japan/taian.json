@@ -1,9 +1,12 @@
 {
   "name": "Taian",
+  "nameJa": "太庵",
   "city": "osaka",
+  "areaJa": "中央区島之内",
   "address": "1-21-2 Shimanochi, Chuo-ku, 542-0082, Osaka",
   "stars": 3,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 3.8,
   "reviews": 267,
   "dinnerType": "menu",

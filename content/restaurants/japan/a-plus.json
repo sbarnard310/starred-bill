@@ -1,9 +1,12 @@
 {
   "name": "à plus",
+  "nameJa": "アプリュス",
   "city": "nara",
+  "areaJa": "御所市西久保本町",
   "address": "1137 Nishikubohommachi, Gose, 639-2228, Nara",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.8,
   "reviews": 36,
   "dinnerType": "menu",

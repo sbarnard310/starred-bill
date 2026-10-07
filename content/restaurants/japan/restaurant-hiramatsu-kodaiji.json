@@ -1,9 +1,12 @@
 {
   "name": "Restaurant Hiramatsu Kodaiji",
+  "nameJa": "レストランひらまつ 高台寺",
   "city": "kyoto",
+  "areaJa": "東山区桝屋町",
   "address": "353 Masuyacho, Higashiyama-ku, 605-0826, Kyoto",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.5,
   "reviews": 382,
   "dinnerType": "menu",

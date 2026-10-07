@@ -1,9 +1,12 @@
 {
   "name": "MASHIRO",
+  "nameJa": "真白",
   "city": "kyoto",
+  "areaJa": "中京区堂之前町",
   "address": "2F, 234 Donomaecho, Nakagyo-ku, 604-8134, Kyoto",
   "stars": 1,
   "cuisine": "Contemporary",
+  "cuisineJa": "現代風料理",
   "rating": 4.8,
   "reviews": 109,
   "dinnerType": "menu",

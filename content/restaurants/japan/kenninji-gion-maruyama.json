@@ -1,9 +1,12 @@
 {
   "name": "Kenninji Gion Maruyama",
+  "nameJa": "建仁寺 祇園 丸山",
   "city": "kyoto",
+  "areaJa": "東山区小松町",
   "address": "566-16 Komatsucho, Higashiyama-ku, 605-0811, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.4,
   "reviews": 141,
   "dinnerType": "menu",

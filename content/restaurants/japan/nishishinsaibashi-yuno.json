@@ -1,9 +1,12 @@
 {
   "name": "Nishishinsaibashi Yuno",
+  "nameJa": "西心斎橋 ゆうの",
   "city": "osaka",
+  "areaJa": "中央区西心斎橋",
   "address": "1-10-35 Nishishinsaibashi, Chuo-ku, 542-0086, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 114,
   "dinnerType": "menu",

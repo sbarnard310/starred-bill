@@ -1,9 +1,12 @@
 {
   "name": "Otagi",
+  "nameJa": "おたぎ",
   "city": "kyoto",
+  "areaJa": "北区鷹峯土天井町",
   "address": "18 Takagamine Tsuchitenjocho, Kita-ku, 603-8465, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.9,
   "reviews": 55,
   "dinnerType": "menu",

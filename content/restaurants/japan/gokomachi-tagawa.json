@@ -1,9 +1,12 @@
 {
   "name": "Gokomachi Tagawa",
+  "nameJa": "御幸町 田がわ",
   "city": "kyoto",
+  "areaJa": "中京区松本町",
   "address": "575 Matsumotocho, Nakagyo-ku, 604-0982, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.8,
   "reviews": 147,
   "dinnerType": "menu",

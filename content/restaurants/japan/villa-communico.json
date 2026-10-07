@@ -1,9 +1,12 @@
 {
   "name": "VILLA COMMUNICO",
+  "nameJa": "ヴィラ コムニコ",
   "city": "nara",
+  "areaJa": "奈良市雑司町",
   "address": "486-5 Zoshicho, Nara, 630-8211, Nara",
   "stars": 1,
   "cuisine": "Innovative",
+  "cuisineJa": "イノベーティブ",
   "rating": 5,
   "reviews": 31,
   "dinnerType": "menu",

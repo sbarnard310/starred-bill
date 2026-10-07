@@ -1,9 +1,12 @@
 {
   "name": "Miyamoto",
+  "nameJa": "宮本",
   "city": "osaka",
+  "areaJa": "北区東天満",
   "address": "2-10-28 Higashitemma, Kita-ku, 530-0044, Osaka",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4,
   "reviews": 70,
   "dinnerType": "menu",

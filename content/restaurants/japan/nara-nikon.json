@@ -1,9 +1,12 @@
 {
   "name": "NARA NIKON",
+  "nameJa": "奈良 而今",
   "city": "nara",
+  "areaJa": "奈良市鍋屋町",
   "address": "3 Nabeyacho, Nara, 630-8264, Nara",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.6,
   "reviews": 166,
   "dinnerType": "spend",

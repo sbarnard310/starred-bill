@@ -1,9 +1,12 @@
 {
   "name": "Gion Sasaki",
+  "nameJa": "祇園 さゝ木",
   "city": "kyoto",
+  "areaJa": "東山区小松町",
   "address": "566-27 Komatsucho, Higashiyama-ku, 605-0811, Kyoto",
   "stars": 3,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.4,
   "reviews": 277,
   "dinnerType": "menu",

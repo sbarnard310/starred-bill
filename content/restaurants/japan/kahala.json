@@ -1,9 +1,12 @@
 {
   "name": "KAHALA",
+  "nameJa": "カハラ",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "2F, 1-9-2 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 2,
   "cuisine": "Innovative",
+  "cuisineJa": "イノベーティブ",
   "rating": 4.7,
   "reviews": 50,
   "dinnerType": "menu",

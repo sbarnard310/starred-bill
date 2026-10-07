@@ -1,9 +1,12 @@
 {
   "name": "Sojiki Nakahigashi",
+  "nameJa": "草喰 なかひがし",
   "city": "kyoto",
+  "areaJa": "左京区浄土寺石橋町",
   "address": "32-3 Jodoji Ishibashicho, Sakyo-ku, 606-8406, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.5,
   "reviews": 334,
   "dinnerType": "menu",

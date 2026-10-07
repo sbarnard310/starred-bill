@@ -1,9 +1,12 @@
 {
   "name": "Gion Owatari",
+  "nameJa": "祇園 大渡",
   "city": "kyoto",
+  "areaJa": "東山区祇園町南側",
   "address": "570-265 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.5,
   "reviews": 111,
   "dinnerType": "menu",

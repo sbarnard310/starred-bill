@@ -1,9 +1,12 @@
 {
   "name": "MUBE",
+  "nameJa": "ムベ",
   "city": "kyoto",
+  "areaJa": "北区大宮玄琢北町",
   "address": "11-1 Omiya Gentakukitamachi, Kita-ku, 603-8462, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.8,
   "reviews": 30,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "DODICI",
+  "nameJa": "ドーディチ",
   "city": "kyoto",
+  "areaJa": "中京区上白山町",
   "address": "239 Kamihakusancho, Nakagyo-ku, 604-0943, Kyoto",
   "stars": 1,
   "cuisine": "Italian",
+  "cuisineJa": "イタリア料理",
   "rating": 4.6,
   "reviews": 98,
   "dinnerType": "menu",

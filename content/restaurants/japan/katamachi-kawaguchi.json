@@ -1,9 +1,12 @@
 {
   "name": "Katamachi Kawaguchi",
+  "nameJa": "片町 川口",
   "city": "osaka",
+  "areaJa": "都島区片町",
   "address": "1-3-11 Katamachi, Miyakojima-ku, 534-0025, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 5,
   "reviews": 4,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "Chi-Fu",
+  "nameJa": "シーフ",
   "city": "osaka",
+  "areaJa": "北区西天満",
   "address": "4-4-8 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 1,
   "cuisine": "Chinese",
+  "cuisineJa": "中国料理",
   "rating": 4.3,
   "reviews": 107,
   "dinnerType": "menu",

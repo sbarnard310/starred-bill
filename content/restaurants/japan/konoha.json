@@ -1,9 +1,12 @@
 {
   "name": "Konoha",
+  "nameJa": "このは",
   "city": "osaka",
+  "areaJa": "中央区南本町",
   "address": "2-6-22 Minamihommachi, Chuo-ku, 541-0054, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 98,
   "dinnerType": "menu",

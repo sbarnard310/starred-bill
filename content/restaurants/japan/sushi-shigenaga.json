@@ -1,9 +1,12 @@
 {
   "name": "Sushi Shigenaga",
+  "nameJa": "鮨 重永",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "3F, 1-6-13 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 1,
   "cuisine": "Sushi",
+  "cuisineJa": "寿司",
   "rating": 4.6,
   "reviews": 60,
   "dinnerType": "menu",

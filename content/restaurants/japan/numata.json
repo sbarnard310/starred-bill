@@ -1,9 +1,12 @@
 {
   "name": "Numata",
+  "nameJa": "ぬま田",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "7F, 1-10-2 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 2,
   "cuisine": "Tempura",
+  "cuisineJa": "天ぷら",
   "rating": 4.6,
   "reviews": 76,
   "dinnerType": "menu",

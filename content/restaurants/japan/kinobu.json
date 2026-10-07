@@ -1,9 +1,12 @@
 {
   "name": "Kinobu",
+  "nameJa": "木乃婦",
   "city": "kyoto",
+  "areaJa": "下京区岩戸山町",
   "address": "416 Iwatoyamacho, Shimogyo-ku, 600-8445, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.5,
   "reviews": 514,
   "dinnerType": "menu",

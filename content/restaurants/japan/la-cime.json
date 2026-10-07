@@ -1,9 +1,12 @@
 {
   "name": "La Cime",
+  "nameJa": "ラ・シーム",
   "city": "osaka",
+  "areaJa": "中央区瓦町",
   "address": "3-2-15 Kawaramachi, Chuo-ku, 541-0048, Osaka",
   "stars": 2,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.3,
   "reviews": 341,
   "dinnerType": "menu",

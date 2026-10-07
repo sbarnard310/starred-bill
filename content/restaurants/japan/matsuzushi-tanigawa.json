@@ -1,9 +1,12 @@
 {
   "name": "Matsuzushi Tanigawa",
+  "nameJa": "松寿司 たにがわ",
   "city": "osaka",
+  "areaJa": "阿倍野区王子町",
   "address": "3-13-6 Ojicho, Abeno-ku, 545-0023, Osaka",
   "stars": 1,
   "cuisine": "Sushi",
+  "cuisineJa": "寿司",
   "rating": 4.6,
   "reviews": 152,
   "dinnerType": "menu",

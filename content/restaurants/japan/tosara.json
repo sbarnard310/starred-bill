@@ -1,9 +1,12 @@
 {
   "name": "Tosara",
+  "nameJa": "十皿",
   "city": "osaka",
+  "areaJa": "北区西天満",
   "address": "2-7-26 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 1,
   "cuisine": "Contemporary",
+  "cuisineJa": "現代風料理",
   "rating": 4.6,
   "reviews": 135,
   "dinnerType": "menu",

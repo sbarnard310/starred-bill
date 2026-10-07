@@ -1,9 +1,12 @@
 {
   "name": "Sushi Rakumi",
+  "nameJa": "鮨 楽味",
   "city": "kyoto",
+  "areaJa": "東山区三吉町",
   "address": "332-6 Miyoshicho, Higashiyama-ku, 605-0081, Kyoto",
   "stars": 1,
   "cuisine": "Sushi",
+  "cuisineJa": "寿司",
   "rating": 4.6,
   "reviews": 133,
   "dinnerType": "menu",

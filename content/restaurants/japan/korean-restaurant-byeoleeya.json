@@ -1,9 +1,12 @@
 {
   "name": "Korean Restaurant Byeoleeya",
+  "nameJa": "韓式料理ピョリヤ",
   "city": "kyoto",
+  "areaJa": "中京区壬生辻町",
   "address": "38 Mibu Tsujimachi, Nakagyo-ku, 604-8822, Kyoto",
   "stars": 1,
   "cuisine": "Korean",
+  "cuisineJa": "韓国料理",
   "rating": 4.6,
   "reviews": 12,
   "dinnerType": "menu",

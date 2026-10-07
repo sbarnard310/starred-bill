@@ -1,9 +1,12 @@
 {
   "name": "Oimatsu Kitagawa",
+  "nameJa": "老松 喜多川",
   "city": "osaka",
+  "areaJa": "北区西天満",
   "address": "4-12-27 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.2,
   "reviews": 73,
   "dinnerType": "menu",

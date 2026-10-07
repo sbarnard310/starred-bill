@@ -1,9 +1,12 @@
 {
   "name": "Oimatsu Hisano",
+  "nameJa": "老松 ひさ乃",
   "city": "osaka",
+  "areaJa": "北区西天満",
   "address": "4-8-3 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.8,
   "reviews": 40,
   "dinnerType": "menu",

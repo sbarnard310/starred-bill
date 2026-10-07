@@ -1,9 +1,12 @@
 {
   "name": "P greco",
+  "nameJa": "ピ・グレコ",
   "city": "osaka",
+  "areaJa": "北区西天満",
   "address": "4-1-20 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 1,
   "cuisine": "Italian",
+  "cuisineJa": "イタリア料理",
   "rating": 4.4,
   "reviews": 37,
   "dinnerType": "menu",

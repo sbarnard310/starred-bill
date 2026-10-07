@@ -1,9 +1,12 @@
 {
   "name": "Kyokaiseki Kichisen",
+  "nameJa": "京懐石 吉泉",
   "city": "kyoto",
+  "areaJa": "左京区下鴨森本町",
   "address": "5 Shimogamo Morimotocho, Sakyo-ku, 606-0805, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 3.8,
   "reviews": 190,
   "dinnerType": "menu",

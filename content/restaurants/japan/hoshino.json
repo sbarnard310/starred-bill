@@ -1,9 +1,12 @@
 {
   "name": "Hoshino",
+  "nameJa": "ほしの",
   "city": "nara",
+  "areaJa": "奈良市福智院町",
   "address": "3-1 Fukuchiincho, Nara, 630-8381, Nara",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.9,
   "reviews": 19,
   "dinnerType": "spend",

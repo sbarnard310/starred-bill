@@ -1,9 +1,12 @@
 {
   "name": "Ajinotabibito Roman",
+  "nameJa": "味の旅人 浪漫",
   "city": "nara",
+  "areaJa": "奈良市鶴舞東町",
   "address": "2F, VIV Bldg, 2-13 Tsurumai Higashimachi, Nara, 631-0021, Nara",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.3,
   "reviews": 27,
   "dinnerType": "menu",

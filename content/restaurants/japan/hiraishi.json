@@ -1,9 +1,12 @@
 {
   "name": "Hiraishi",
+  "nameJa": "ひらいし",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "3F, 1-9-6 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 1,
   "cuisine": "Tempura",
+  "cuisineJa": "天ぷら",
   "rating": 4.8,
   "reviews": 79,
   "dinnerType": "spend",

@@ -1,9 +1,12 @@
 {
   "name": "Ajikitcho Horieten",
+  "nameJa": "味吉兆 堀江店",
   "city": "osaka",
+  "areaJa": "西区北堀江",
   "address": "1-22-6 Kitahorie, Nishi-ku, 550-0014, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.1,
   "reviews": 23,
   "dinnerType": "menu",

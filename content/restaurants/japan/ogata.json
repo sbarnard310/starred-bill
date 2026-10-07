@@ -1,9 +1,12 @@
 {
   "name": "Ogata",
+  "nameJa": "緒方",
   "city": "kyoto",
+  "areaJa": "下京区新釜座町",
   "address": "726 Shinkamanzacho, Shimogyo-ku, 600-8471, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.3,
   "reviews": 187,
   "dinnerType": "spend",

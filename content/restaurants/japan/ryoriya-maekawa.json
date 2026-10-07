@@ -1,9 +1,12 @@
 {
   "name": "Ryoriya Maekawa",
+  "nameJa": "料理屋 まえかわ",
   "city": "kyoto",
+  "areaJa": "下京区難波町",
   "address": "405 Nambacho, Shimogyo-ku, 600-8027, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 50,
   "dinnerType": "menu",

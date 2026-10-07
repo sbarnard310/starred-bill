@@ -1,9 +1,12 @@
 {
   "name": "cenci",
+  "nameJa": "チェンチ",
   "city": "kyoto",
+  "areaJa": "左京区聖護院円頓美町",
   "address": "44-7 Shogoin Entomicho, Sakyo-ku, 606-8323, Kyoto",
   "stars": 1,
   "cuisine": "Italian",
+  "cuisineJa": "イタリア料理",
   "rating": 4.6,
   "reviews": 434,
   "dinnerType": "menu",

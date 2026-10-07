@@ -1,9 +1,12 @@
 {
   "name": "Uozuya",
+  "nameJa": "魚津屋",
   "city": "kyoto",
+  "areaJa": "中京区壬生東桧町",
   "address": "8 Mibu Higashihinokicho, Nakagyo-ku, 604-8843, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.6,
   "reviews": 15,
   "dinnerType": "spend",

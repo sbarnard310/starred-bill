@@ -1,9 +1,12 @@
 {
   "name": "Higashichaya Nakamura",
+  "nameJa": "東茶屋 なかむら",
   "city": "osaka",
+  "areaJa": "北区本庄東",
   "address": "1-25-8 Honjohigashi, Kita-ku, 531-0074, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.3,
   "reviews": 67,
   "dinnerType": "menu",

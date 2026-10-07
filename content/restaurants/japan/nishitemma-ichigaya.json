@@ -1,9 +1,12 @@
 {
   "name": "Nishitemma Ichigaya",
+  "nameJa": "西天満 市がや",
   "city": "osaka",
+  "areaJa": "北区西天満",
   "address": "2-10-9 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.6,
   "reviews": 34,
   "dinnerType": "menu",

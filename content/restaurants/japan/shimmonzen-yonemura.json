@@ -1,9 +1,12 @@
 {
   "name": "Shimmonzen Yonemura",
+  "nameJa": "新門前 米村",
   "city": "kyoto",
+  "areaJa": "東山区梅本町",
   "address": "255 Umemotocho, Higashiyama-ku, 605-0064, Kyoto",
   "stars": 1,
   "cuisine": "Innovative",
+  "cuisineJa": "イノベーティブ",
   "rating": 4.6,
   "reviews": 257,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "Ichiju Nisai Ueno Minoten",
+  "nameJa": "一汁二菜 うえの 箕面店",
   "city": "osaka",
+  "areaJa": "箕面市箕面公園",
   "address": "2-5 Minokoen, Mino, 562-0002, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.6,
   "reviews": 157,
   "dinnerType": "spend",

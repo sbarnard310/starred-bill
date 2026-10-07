@@ -1,9 +1,12 @@
 {
   "name": "Rakushin",
+  "nameJa": "楽心",
   "city": "osaka",
+  "areaJa": "福島区福島",
   "address": "1-6-27 Fukushima, Fukushima-ku, 553-0003, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.6,
   "reviews": 135,
   "dinnerType": "spend",

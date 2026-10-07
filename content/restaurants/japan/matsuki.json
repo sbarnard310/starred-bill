@@ -1,9 +1,12 @@
 {
   "name": "Matsuki",
+  "nameJa": "まつ㐂",
   "city": "nara",
+  "areaJa": "奈良市不審ヶ辻子町",
   "address": "1 Fushigazushicho, Nara, 630-8394, Nara",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 129,
   "dinnerType": "menu",

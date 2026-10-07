@@ -1,9 +1,12 @@
 {
   "name": "Zeshin",
+  "nameJa": "是しん",
   "city": "osaka",
+  "areaJa": "北区西天満",
   "address": "B1F, 2-9-3 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.5,
   "reviews": 146,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "Kyoryori Fujimoto",
+  "nameJa": "京料理 藤本",
   "city": "kyoto",
+  "areaJa": "中京区神明町",
   "address": "72 Shimmeicho, Nakagyo-ku, 604-8207, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.5,
   "reviews": 109,
   "dinnerType": "spend",

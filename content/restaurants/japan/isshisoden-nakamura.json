@@ -1,9 +1,12 @@
 {
   "name": "Isshisoden Nakamura",
+  "nameJa": "一子相伝 なかむら",
   "city": "kyoto",
+  "areaJa": "中京区松下町",
   "address": "136 Matsushitacho, Nakagyo-ku, 604-8093, Kyoto",
   "stars": 3,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.2,
   "reviews": 185,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "Fushimimachi Kakoiyama",
+  "nameJa": "伏見町 栫山",
   "city": "osaka",
+  "areaJa": "中央区伏見町",
   "address": "2-4-12 Fushimimachi, Chuo-ku, 541-0044, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 26,
   "dinnerType": "menu",

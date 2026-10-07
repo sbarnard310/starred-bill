@@ -1,9 +1,12 @@
 {
   "name": "anpeiji",
+  "nameJa": "アンペイジ",
   "city": "kyoto",
+  "areaJa": "伏見区中島樋ノ上町",
   "address": "56 Nakajima Hinokamicho, Fushimi-ku, 612-8465, Kyoto",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.7,
   "reviews": 102,
   "dinnerType": "menu",

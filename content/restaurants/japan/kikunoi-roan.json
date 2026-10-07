@@ -1,9 +1,12 @@
 {
   "name": "Kikunoi Roan",
+  "nameJa": "菊乃井 露庵",
   "city": "kyoto",
+  "areaJa": "下京区斎藤町",
   "address": "118 Saitocho, Shimogyo-ku, 600-8012, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.3,
   "reviews": 491,
   "dinnerType": "menu",

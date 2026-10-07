@@ -1,9 +1,12 @@
 {
   "name": "Tsujifusa",
+  "nameJa": "辻布紗",
   "city": "kyoto",
+  "areaJa": "中京区百足屋町",
   "address": "155 Mukadeyacho, Nakagyo-ku, 604-0805, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.8,
   "reviews": 43,
   "dinnerType": "menu",

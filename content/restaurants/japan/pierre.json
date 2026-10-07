@@ -1,9 +1,12 @@
 {
   "name": "Pierre",
+  "nameJa": "ピエール",
   "city": "osaka",
+  "areaJa": "北区大深町",
   "address": "20F, InterContinental Osaka, 3-60 Ofukacho, Kita-ku, 530-0011, Osaka",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.5,
   "reviews": 262,
   "dinnerType": "menu",

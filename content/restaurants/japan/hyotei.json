@@ -1,9 +1,12 @@
 {
   "name": "Hyotei",
+  "nameJa": "瓢亭",
   "city": "kyoto",
+  "areaJa": "左京区南禅寺草川町",
   "address": "35 Nanzenji Kusagawacho, Sakyo-ku, 606-8437, Kyoto",
   "stars": 3,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.3,
   "reviews": 858,
   "dinnerType": "menu",

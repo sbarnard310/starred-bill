@@ -1,9 +1,12 @@
 {
   "name": "Ukitacho Ima",
+  "nameJa": "浮田町 いま",
   "city": "osaka",
+  "areaJa": "北区浮田",
   "address": "2-5-27 Ukida, Kita-ku, 530-0021, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.4,
   "reviews": 9,
   "dinnerType": "menu",

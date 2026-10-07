@@ -1,9 +1,12 @@
 {
   "name": "Sushi Harasho",
+  "nameJa": "鮨 原正",
   "city": "osaka",
+  "areaJa": "天王寺区上之宮町",
   "address": "3-30 Uenomiyacho, Tennoji-ku, 543-0037, Osaka",
   "stars": 2,
   "cuisine": "Sushi",
+  "cuisineJa": "寿司",
   "rating": 4.4,
   "reviews": 158,
   "dinnerType": "menu",

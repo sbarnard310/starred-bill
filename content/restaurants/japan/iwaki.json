@@ -1,9 +1,12 @@
 {
   "name": "Iwaki",
+  "nameJa": "いわき",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "2F, 1-6-29 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 55,
   "dinnerType": "menu",

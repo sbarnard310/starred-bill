@@ -1,9 +1,12 @@
 {
   "name": "Numata Sou",
+  "nameJa": "ぬまた 双",
   "city": "osaka",
+  "areaJa": "北区西天満",
   "address": "3F, 4-7-7 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 1,
   "cuisine": "Tempura",
+  "cuisineJa": "天ぷら",
   "rating": 4.8,
   "reviews": 79,
   "dinnerType": "spend",

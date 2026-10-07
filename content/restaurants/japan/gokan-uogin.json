@@ -1,9 +1,12 @@
 {
   "name": "GOKAN UOGIN",
+  "nameJa": "五感 魚銀",
   "city": "nara",
+  "areaJa": "奈良市大宮町",
   "address": "6-4-13 Omiyacho, Nara, 630-8115, Nara",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 66,
   "dinnerType": "menu",

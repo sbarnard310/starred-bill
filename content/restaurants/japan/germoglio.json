@@ -1,9 +1,12 @@
 {
   "name": "Germoglio",
+  "nameJa": "ジェルモーリオ",
   "city": "kyoto",
+  "areaJa": "下京区東境町",
   "address": "2F, 172 Higashisakaicho, Shimogyo-ku, 600-8217, Kyoto",
   "stars": 1,
   "cuisine": "Italian",
+  "cuisineJa": "イタリア料理",
   "rating": 4.7,
   "reviews": 55,
   "dinnerType": "menu",

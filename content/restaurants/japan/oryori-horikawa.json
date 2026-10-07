@@ -1,9 +1,12 @@
 {
   "name": "Oryori Horikawa",
+  "nameJa": "御料理 堀川",
   "city": "osaka",
+  "areaJa": "北区天満",
   "address": "4-8-17 Temma, Kita-ku, 530-0043, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 78,
   "dinnerType": "spend",

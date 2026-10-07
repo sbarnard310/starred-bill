@@ -1,9 +1,12 @@
 {
   "name": "Kikunoi Honten",
+  "nameJa": "菊乃井 本店",
   "city": "kyoto",
+  "areaJa": "東山区下河原町",
   "address": "459 Shimokawaracho, Higashiyama-ku, 605-0825, Kyoto",
   "stars": 3,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.4,
   "reviews": 974,
   "dinnerType": "menu",

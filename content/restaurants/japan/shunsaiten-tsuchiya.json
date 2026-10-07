@@ -1,9 +1,12 @@
 {
   "name": "Shunsaiten Tsuchiya",
+  "nameJa": "旬彩天 つちや",
   "city": "osaka",
+  "areaJa": "吹田市豊津町",
   "address": "41-4 Toyotsucho, Suita, 564-0051, Osaka",
   "stars": 2,
   "cuisine": "Tempura",
+  "cuisineJa": "天ぷら",
   "rating": 4.5,
   "reviews": 238,
   "dinnerType": "menu",

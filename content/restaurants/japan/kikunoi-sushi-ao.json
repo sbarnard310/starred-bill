@@ -1,9 +1,12 @@
 {
   "name": "Kikunoi Sushi Ao",
+  "nameJa": "菊乃井 鮨 青",
   "city": "kyoto",
+  "areaJa": "東山区下河原町",
   "address": "463-30 Shimokawaracho, Higashiyama-ku, 605-0825, Kyoto",
   "stars": 1,
   "cuisine": "Sushi",
+  "cuisineJa": "寿司",
   "rating": 5,
   "reviews": 9,
   "dinnerType": "menu",

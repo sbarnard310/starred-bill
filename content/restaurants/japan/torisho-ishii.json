@@ -1,9 +1,12 @@
 {
   "name": "Torisho Ishii",
+  "nameJa": "鳥匠 いし井",
   "city": "osaka",
+  "areaJa": "北区西天満",
   "address": "3-11-4 Nishitemma, Kita-ku, 530-0047, Osaka",
   "stars": 1,
   "cuisine": "Yakitori",
+  "cuisineJa": "焼鳥",
   "rating": 4.6,
   "reviews": 25,
   "dinnerType": "menu",

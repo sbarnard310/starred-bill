@@ -1,9 +1,12 @@
 {
   "name": "Kaiseki Morimoto",
+  "nameJa": "懐石 森本",
   "city": "nara",
+  "areaJa": "橿原市八木町",
   "address": "1-4-8 Yagicho, Kashihara, 634-0078, Nara",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.4,
   "reviews": 77,
   "dinnerType": "spend",

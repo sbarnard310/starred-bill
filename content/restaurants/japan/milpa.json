@@ -1,9 +1,12 @@
 {
   "name": "milpa",
+  "nameJa": "ミルパ",
   "city": "osaka",
+  "areaJa": "西区北堀江",
   "address": "1-16-25 Kitahorie, Nishi-ku, 550-0014, Osaka",
   "stars": 1,
   "cuisine": "Mexican",
+  "cuisineJa": "メキシコ料理",
   "rating": 4.7,
   "reviews": 65,
   "dinnerType": "menu",

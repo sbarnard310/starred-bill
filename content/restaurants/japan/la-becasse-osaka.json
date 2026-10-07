@@ -1,9 +1,12 @@
 {
   "name": "La Bécasse",
+  "nameJa": "ラ・ベカス",
   "city": "osaka",
+  "areaJa": "中央区平野町",
   "address": "3-3-9 Hiranomachi, Chuo-ku, 541-0046, Osaka",
   "stars": 1,
   "cuisine": "French",
+  "cuisineJa": "フランス料理",
   "rating": 4.6,
   "reviews": 101,
   "dinnerType": "menu",

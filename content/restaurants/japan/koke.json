@@ -1,9 +1,12 @@
 {
   "name": "KOKE",
+  "nameJa": "コケ",
   "city": "kyoto",
+  "areaJa": "中京区蛸薬師町",
   "address": "287 Takoyakushicho, Nakagyo-ku, 604-0021, Kyoto",
   "stars": 1,
   "cuisine": "Innovative",
+  "cuisineJa": "イノベーティブ",
   "rating": 4.6,
   "reviews": 175,
   "dinnerType": "menu",

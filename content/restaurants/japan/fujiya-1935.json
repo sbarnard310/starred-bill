@@ -1,9 +1,12 @@
 {
   "name": "Fujiya 1935",
+  "nameJa": "フジヤ 1935",
   "city": "osaka",
+  "areaJa": "中央区鎗屋町",
   "address": "2-4-14 Yariyamachi, Chuo-ku, 540-0027, Osaka",
   "stars": 2,
   "cuisine": "Innovative",
+  "cuisineJa": "イノベーティブ",
   "rating": 4.5,
   "reviews": 247,
   "dinnerType": "menu",

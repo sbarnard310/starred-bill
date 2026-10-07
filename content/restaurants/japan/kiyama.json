@@ -1,9 +1,12 @@
 {
   "name": "Kiyama",
+  "nameJa": "木山",
   "city": "kyoto",
+  "areaJa": "中京区絹屋町",
   "address": "136 Kinuyacho, Nakagyo-ku, 604-0804, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.6,
   "reviews": 382,
   "dinnerType": "menu",

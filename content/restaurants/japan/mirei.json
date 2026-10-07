@@ -1,9 +1,12 @@
 {
   "name": "Mirei",
+  "nameJa": "実伶",
   "city": "kyoto",
+  "areaJa": "中京区竹屋町通室町東入亀屋町",
   "address": "143-2 Kameyacho, Takeyamachidori Muromachihigashiiru, Nakagyo-ku, 604-0865, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.4,
   "reviews": 93,
   "dinnerType": "spend",

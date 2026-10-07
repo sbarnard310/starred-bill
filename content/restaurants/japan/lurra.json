@@ -1,9 +1,12 @@
 {
   "name": "LURRA˚",
+  "nameJa": "ルーラ",
   "city": "kyoto",
+  "areaJa": "東山区石泉院町",
   "address": "396 Sekisenincho, Higashiyama-ku, 605-0021, Kyoto",
   "stars": 1,
   "cuisine": "Innovative",
+  "cuisineJa": "イノベーティブ",
   "rating": 4.4,
   "reviews": 244,
   "dinnerType": "menu",

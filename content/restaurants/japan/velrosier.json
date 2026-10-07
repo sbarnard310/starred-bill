@@ -1,9 +1,12 @@
 {
   "name": "VELROSIER",
+  "nameJa": "ベルロオジエ",
   "city": "kyoto",
+  "areaJa": "下京区稲荷町",
   "address": "2F, Good Nature Station, 318-6 Inaricho, Shimogyo-ku, 600-8022, Kyoto",
   "stars": 1,
   "cuisine": "Chinese",
+  "cuisineJa": "中国料理",
   "rating": 4.6,
   "reviews": 261,
   "dinnerType": "menu",

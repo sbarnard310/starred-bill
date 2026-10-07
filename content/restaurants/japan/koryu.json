@@ -1,9 +1,12 @@
 {
   "name": "Koryu",
+  "nameJa": "弧柳",
   "city": "osaka",
+  "areaJa": "中央区内淡路町",
   "address": "3-3-3 Uchiawajimachi, Chuo-ku, 540-0038, Osaka",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.4,
   "reviews": 103,
   "dinnerType": "menu",

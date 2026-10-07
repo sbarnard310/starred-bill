@@ -1,9 +1,12 @@
 {
   "name": "Shinchi Yamamoto",
+  "nameJa": "新地 やま本",
   "city": "osaka",
+  "areaJa": "北区堂島",
   "address": "1-1-13 Dojima, Kita-ku, 530-0003, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 10,
   "dinnerType": "spend",

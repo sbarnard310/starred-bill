@@ -1,9 +1,12 @@
 {
   "name": "YUNiCO",
+  "nameJa": "ユニコ",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "6F, 1-11-19 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 1,
   "cuisine": "Italian",
+  "cuisineJa": "イタリア料理",
   "rating": 4.4,
   "reviews": 57,
   "dinnerType": "menu",

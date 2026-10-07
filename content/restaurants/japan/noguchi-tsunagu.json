@@ -1,9 +1,12 @@
 {
   "name": "Noguchi Tsunagu",
+  "nameJa": "のぐち継",
   "city": "kyoto",
+  "areaJa": "東山区清本町",
   "address": "371-4 Kiyomotocho, Higashiyama-ku, 605-0084, Kyoto",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4,
   "reviews": 96,
   "dinnerType": "menu",

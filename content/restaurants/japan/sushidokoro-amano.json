@@ -1,9 +1,12 @@
 {
   "name": "Sushidokoro Amano",
+  "nameJa": "寿し處 あま野",
   "city": "osaka",
+  "areaJa": "天王寺区四天王寺",
   "address": "1-13-2 Shitennoji, Tennoji-ku, 543-0051, Osaka",
   "stars": 1,
   "cuisine": "Sushi",
+  "cuisineJa": "寿司",
   "rating": 4.8,
   "reviews": 22,
   "dinnerType": "menu",

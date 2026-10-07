@@ -1,9 +1,12 @@
 {
   "name": "capi",
+  "nameJa": "カピ",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "6F, 1-10-2 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 1,
   "cuisine": "Innovative",
+  "cuisineJa": "イノベーティブ",
   "rating": 4.4,
   "reviews": 46,
   "dinnerType": "menu",

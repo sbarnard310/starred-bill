@@ -1,9 +1,12 @@
 {
   "name": "Vena",
+  "nameJa": "ヴェーナ",
   "city": "kyoto",
+  "areaJa": "中京区鏡屋町",
   "address": "46-3 Kagamiyacho, Nakagyo-ku, 604-0002, Kyoto",
   "stars": 1,
   "cuisine": "Italian",
+  "cuisineJa": "イタリア料理",
   "rating": 4.6,
   "reviews": 144,
   "dinnerType": "menu",

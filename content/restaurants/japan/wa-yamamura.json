@@ -1,9 +1,12 @@
 {
   "name": "Wa Yamamura",
+  "nameJa": "和 やまむら",
   "city": "nara",
+  "areaJa": "奈良市芝辻町",
   "address": "2-11-15 Shibatsujicho, Nara, 630-8114, Nara",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.5,
   "reviews": 302,
   "dinnerType": "menu",

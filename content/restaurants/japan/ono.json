@@ -1,9 +1,12 @@
 {
   "name": "Ono",
+  "nameJa": "緒乃",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "6F, 1-2-22 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4,
   "reviews": 131,
   "dinnerType": "spend",

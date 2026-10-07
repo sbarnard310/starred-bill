@@ -1,9 +1,12 @@
 {
   "name": "Yoshiko",
+  "nameJa": "よし光",
   "city": "osaka",
+  "areaJa": "北区曽根崎新地",
   "address": "1-8-5 Sonezakishinchi, Kita-ku, 530-0002, Osaka",
   "stars": 1,
   "cuisine": "Fugu / Pufferfish",
+  "cuisineJa": "ふぐ",
   "rating": 4.5,
   "reviews": 26,
   "dinnerType": "spend",

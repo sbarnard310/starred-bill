@@ -1,9 +1,12 @@
 {
   "name": "Ryō-shō",
+  "nameJa": "凌霄",
   "city": "kyoto",
+  "areaJa": "東山区祇園町南側",
   "address": "570-166 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.8,
   "reviews": 84,
   "dinnerType": "menu",

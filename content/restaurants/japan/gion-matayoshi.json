@@ -1,9 +1,12 @@
 {
   "name": "Gion Matayoshi",
+  "nameJa": "祇園 又吉",
   "city": "kyoto",
+  "areaJa": "東山区祇園町南側",
   "address": "570-123 Giommachi Minamigawa, Higashiyama-ku, 605-0074, Kyoto",
   "stars": 2,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 201,
   "dinnerType": "menu",

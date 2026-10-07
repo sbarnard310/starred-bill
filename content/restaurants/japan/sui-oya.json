@@ -1,9 +1,12 @@
 {
   "name": "Sui Oya",
+  "nameJa": "翠 大屋",
   "city": "osaka",
+  "areaJa": "北区天満",
   "address": "2F, 3-1-2 Temma, Kita-ku, 530-0043, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.7,
   "reviews": 123,
   "dinnerType": "menu",

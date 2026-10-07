@@ -1,9 +1,12 @@
 {
   "name": "Naniwaryori Yu",
+  "nameJa": "なにわ料理 有",
   "city": "osaka",
+  "areaJa": "北区東天満",
   "address": "1-9-17 Higashitemma, Kita-ku, 530-0044, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.3,
   "reviews": 116,
   "dinnerType": "menu",

@@ -1,9 +1,12 @@
 {
   "name": "Terada",
+  "nameJa": "寺田",
   "city": "osaka",
+  "areaJa": "天王寺区玉造元町",
   "address": "2F, 2-35 Tamatsukurimotomachi, Tennoji-ku, 543-0014, Osaka",
   "stars": 1,
   "cuisine": "Japanese",
+  "cuisineJa": "日本料理",
   "rating": 4.6,
   "reviews": 74,
   "dinnerType": "menu",

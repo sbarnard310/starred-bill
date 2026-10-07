@@ -1,7 +1,6 @@
 {
   "name": "Gia",
-  "city": "vietnam",
-  "area": "Hanoi",
+  "city": "hanoi",
   "address": "61 Van Mieu Street, Quoc Tu Giam Ward, 100000, Hanoi",
   "stars": 1,
   "cuisine": "Vietnamese Contemporary",
@@ -26,6 +25,5 @@
   "chef": "Sam Tran",
   "chefSource": "michelin",
   "dinnerNoteVi": "Thực đơn nếm thử",
-  "lunchNoteVi": "Thực đơn trưa",
-  "areaVi": "Hà Nội"
+  "lunchNoteVi": "Thực đơn trưa"
 }

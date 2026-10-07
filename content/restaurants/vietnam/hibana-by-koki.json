@@ -1,7 +1,6 @@
 {
   "name": "Hibana by Koki",
-  "city": "vietnam",
-  "area": "Hanoi",
+  "city": "hanoi",
   "address": "B1F, Capella Hanoi, 11 Le Phung Hieu Street, Hoan Kiem Ward, 100000, Hanoi",
   "stars": 1,
   "cuisine": "Teppanyaki",
@@ -19,6 +18,5 @@
   "chefSource": "michelin",
   "dinnerNoteVi": "Thực đơn nếm thử; giá sẽ được bổ sung",
   "lunchNote": "Open for lunch · Tue–Sat",
-  "lunchNoteVi": "Mở cửa buổi trưa · Th 3–Th 7",
-  "areaVi": "Hà Nội"
+  "lunchNoteVi": "Mở cửa buổi trưa · Th 3–Th 7"
 }

@@ -120,8 +120,9 @@ function applyStatic() {
     document.querySelector('[data-i18n="sortPriceDesc"]').innerHTML = t("sortPriceDescLunch");
   }
   // Text written for this place in content/places replaces the general wording.
-  const intro = pick(PAGE, "intro");
-  if (intro) $("heroText").innerHTML = t("heroText") + " " + esc(intro);
+  // A place's own English opening (PAGE.lead, e.g. Boston's "Yes, one…") takes the general sentence's place.
+  const intro = pick(PAGE, "intro"), lead = LANG === "en" && PAGE.lead;
+  if (intro || lead) $("heroText").innerHTML = (lead ? esc(lead) : t("heroText")) + (intro ? " " + esc(intro) : "");
   if (EMPTY) {
     const up = PAGE.crumbs.slice().reverse().find((c) => c.n);
     $("heroText").innerHTML = esc(t("emptyPlace")) + (up ? '<br><a class="empty-up" href="' + placeHref(up) + '">' + esc(t("emptySee", { n: up.n, name: pick(up, "name") })) + " " + fwdArrow() + "</a>" : "");

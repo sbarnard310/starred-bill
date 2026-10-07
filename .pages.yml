@@ -1161,6 +1161,18 @@ content:
         label: Name mid-sentence in Arabic
         description: With its preposition, e.g. "في الدوحة". Leave empty for "في" + the Arabic name.
         type: string
+      - name: title
+        label: Page title (English, optional)
+        description: Replaces the automatic title in search results, e.g. "Michelin Star Restaurants in Boston: Are There Any? (2026)". Up to 61 characters. Only this page, not the places inside it.
+        type: string
+      - name: description
+        label: Search snippet (English, optional)
+        description: Replaces the automatic description under the title in search results. Up to 155 characters.
+        type: text
+      - name: lead
+        label: Opening sentence (English, optional)
+        description: Replaces the general "Dinner, lunch and wine pairing prices…" sentence at the top of the page, e.g. to answer "are there any?" first. The introduction follows it.
+        type: text
       - name: intro
         label: Introduction
         description: Extra sentence under the page title, e.g. which currency prices are in. Regions and cities use their country's unless they have their own.

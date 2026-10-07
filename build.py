@@ -187,6 +187,13 @@ for pid, p in places.items():
         sfx = lang[0].upper() + lang[1:]
         if sfx in DECLINED and not p.get("inSentence" + sfx):
             problem(f"places ({pid})", f"is offered in {lang}, so it needs inSentence{sfx}: its name as it reads after \"in\" in that language")
+# A place's own English title, search snippet and opening sentence (e.g. Boston's "Are There Any?") replace the
+# generated ones, so they must fit where Google shows them.
+for pid, p in places.items():
+    if len(p.get("title") or "") > 61:  # TITLE_MAX, set further down
+        problem(f"places ({pid})", f"its title is {len(p['title'])} characters; keep it to 61")
+    if len(p.get("description") or "") > 155:
+        problem(f"places ({pid})", f"its description is {len(p['description'])} characters; keep it to 155")
 
 restaurants = []
 seen = {}
@@ -567,7 +574,7 @@ def build_place(p):
         # Danish "i København", Icelandic "í Reykjavík" (a place can set its own, e.g. "á Íslandi"), Catalan "a Andorra", German "in München".
         **{"inSentence" + sfx: p.get("inSentence" + sfx) or f"{prep}{'' if sfx == 'Th' else ' '}{p.get('name' + sfx) or p['name']}" for sfx, prep in IN_PREPOSITIONS},
         **{"inSentence" + sfx: p["inSentence" + sfx] for sfx in DECLINED if p.get("inSentence" + sfx)},
-        "path": p["path"], "currency": currency, "showCity": len({r["city"] for r in starred}) > 1,
+        "lead": p.get("lead") or "", "path": p["path"], "currency": currency, "showCity": len({r["city"] for r in starred}) > 1,
         "crumbs": [dict(names(c), path=c["path"], n=starred_n[c["id"]]) for c in crumbs],
         "links": explore_links(p),
         "searchEx": search_example(starred, False), "searchExZh": search_example(starred, True),
@@ -586,7 +593,7 @@ def build_place(p):
     stars = [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)]
     menus = sorted((r for r in starred if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
     where = in_sentence(p)
-    description = place_description(where, starred, stars, menus)
+    description = p.get("description") or place_description(where, starred, stars, menus)
     intro = page["intro"]
     lang_paths = {lang: lang_path(p["path"], lang) for lang in langs}
     for item in page["crumbs"] + [i for row in page["links"] for i in row["items"]]:
@@ -594,9 +601,15 @@ def build_place(p):
         if len(item_langs) > 1:
             item["langs"] = item_langs
     # The website and city ids are only used by the build (structured data, page membership).
+    rows = pack_restaurants([only_langs({k: v for k, v in public(r).items() if k not in ("website", "city", "cityPath")}, suffixes, RESTAURANT_TEXTS) for r in rs])
     data = {"page": only_langs(page, suffixes, PAGE_TEXTS), "languages": langs,
-            "restaurants": [only_langs({k: v for k, v in public(r).items() if k not in ("website", "city", "cityPath")}, suffixes, RESTAURANT_TEXTS) for r in rs],
             "currencies": CURRENCIES, "switchable": currency_data.get("switchable", []), "rateDate": currency_data.get("rateDate")}
+    # The biggest places (France, Italy, Japan…) keep their restaurants in a file of their own, which every language
+    # version shares and browsers keep until it changes, so the page itself stays light.
+    if len(as_json(rows)) > ROWS_INLINE_MAX:
+        rows_script = f'<script src="{write_data("places/" + p["id"] + ".js", rows, "DATA.rows=")}"></script>\n'
+    else:
+        data["rows"], rows_script = rows, ""
     lang_scripts = "".join(f'<script src="/assets/lang-{c}.js?v={assets[f"lang-{c}.js"]}"></script>\n' for c in langs if c in LANG_FILES)
     if set(langs) & set(RTL_LANGUAGES):
         lang_scripts += f'<link rel="stylesheet" href="/assets/rtl.css?v={assets["rtl.css"]}">\n'
@@ -608,7 +621,7 @@ def build_place(p):
             texts = {
                 "description": description, "h1": f"What a Michelin star <em>costs</em> in {e(where)}.",
                 "eyebrow": f"{p['name']} · Michelin Guide restaurants", "crumbHome": "All destinations",
-                "heroText": (f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {where}, side by side." + (" " + intro if intro else ""))
+                "heroText": ((p.get("lead") or f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {where}, side by side.") + (" " + intro if intro else ""))
                 if starred else f"There are currently no restaurants with a Michelin star in {where}, but we'll update this page as soon as one appears.",
             }
         else:
@@ -633,10 +646,35 @@ def build_place(p):
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
             "title": e(titles[lang]), "description": e(texts["description"]), "canonical": SITE_URL + lang_paths[lang],
             "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
-            "crumbs": crumb_html, "explore": explore_html, "ledger": ledger, "data": as_json(version),
+            "crumbs": crumb_html, "explore": explore_html, "ledger": ledger, "data": as_json(version), "rowsScript": rows_script,
             "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
             "faq": faq_html(faq, lang), "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
         }))
+
+
+# A destination page's restaurants bigger than this (in characters) go in /data/places/<id>.js rather than the page.
+ROWS_INLINE_MAX = 60000
+# Restaurant fields every restaurant in one town shares, kept once per town by pack_restaurants().
+TOWN_FIELDS = ("cityType", "country", "cur") + tuple("cityName" + s for s in [""] + LANG_SUFFIXES)
+
+
+def pack_restaurants(rs):
+    """A page's restaurants as compact rows, read by unpackRows() in place.js: one list of values per restaurant in
+    `cols` order (first the number of its town in `towns`, whose fields are in `townCols`), so field names and town
+    names aren't repeated for every restaurant. Missing values are null, and trailing ones are left off."""
+    town_cols = [c for c in TOWN_FIELDS if any(c in r for r in rs)]
+    cols = ["town"] + list(dict.fromkeys(k for r in rs for k in r if k not in town_cols))
+    towns, index, rows = [], {}, []
+    for r in rs:
+        town = tuple(r.get(c) for c in town_cols)
+        if town not in index:
+            index[town] = len(towns)
+            towns.append(list(town))
+        row = [index[town]] + [round(r[c], 6) if c in ("lat", "lng") and r.get(c) is not None else r.get(c) for c in cols[1:]]
+        while row and row[-1] is None:
+            row.pop()
+        rows.append(row)
+    return {"cols": cols, "townCols": town_cols, "towns": towns, "r": rows}
 
 
 def lang_path(path, lang):
@@ -1079,7 +1117,7 @@ def page_titles(p, page, languages, starred):
                 for dated in (True, False):
                     text = h + (w.get("sep", ": ") + t if t else "") + (w.get("year", " ({y})").replace("{y}", year) if dated and year else "")
                     options.append(text.replace("{in}", where).replace("{name}", name).replace("{n}", str(n)))
-        titles[lang] = next((o for o in options if title_width(o) <= TITLE_MAX), options[-1])
+        titles[lang] = p["title"] if lang == "en" and p.get("title") else next((o for o in options if title_width(o) <= TITLE_MAX), options[-1])
     return titles
 
 
@@ -1239,9 +1277,10 @@ def no_star_countries():
     return [dict(g, countries=[c for c in g["countries"] if c["name"] not in starred]) for g in data["regions"]]
 
 
-def write_data(name, obj):
-    """A file under /data/ that pages load; its address carries a version, so browsers and the app keep it until it changes."""
-    body = as_json(obj).encode("utf-8")
+def write_data(name, obj, assign=""):
+    """A file under /data/ that pages load; its address carries a version, so browsers and the app keep it until it changes.
+    With `assign` (e.g. "DATA.rows=") it's a script that hands the data to the page's own scripts as it loads."""
+    body = (assign + as_json(obj) + (";" if assign else "")).encode("utf-8")
     path = OUT / "data" / name
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(body)
@@ -1530,9 +1569,10 @@ def build_compare(starred):
 
 
 def build_redirects():
-    """Pages at old addresses that send visitors on to where the page lives now, keeping any ?q= search."""
-    for old, pid in sorted(redirects.items()):
-        new = places[pid]["path"]
+    """Pages at old addresses that send visitors on to where the page lives now, keeping any ?q= search.
+    A page offered in other languages also forwards its old translated addresses (/fil/philippines/…)."""
+    for (old, pid), lang in ((r, lang) for r in sorted(redirects.items()) for lang in place_langs(places[r[1]])):
+        old, new = lang_path(old, lang), lang_path(places[pid]["path"], lang)
         write(old, f'''<!doctype html>
 <html lang="en-GB">
 <head>

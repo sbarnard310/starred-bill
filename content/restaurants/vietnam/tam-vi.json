@@ -1,7 +1,6 @@
 {
   "name": "Tầm Vị",
-  "city": "vietnam",
-  "area": "Hanoi",
+  "city": "hanoi",
   "address": "4B Yen The Street, Ba Dinh Ward, 100000, Hanoi",
   "stars": 1,
   "cuisine": "Vietnamese",
@@ -16,6 +15,5 @@
   "michelinId": "1205986",
   "dinnerNoteVi": "Thực đơn nếm thử; giá sẽ được bổ sung",
   "lunchNote": "Open for lunch",
-  "lunchNoteVi": "Mở cửa buổi trưa",
-  "areaVi": "Hà Nội"
+  "lunchNoteVi": "Mở cửa buổi trưa"
 }

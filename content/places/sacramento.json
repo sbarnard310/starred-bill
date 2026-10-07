@@ -1,0 +1,6 @@
+{
+  "id": "sacramento",
+  "type": "city",
+  "parent": "california",
+  "name": "Sacramento"
+}

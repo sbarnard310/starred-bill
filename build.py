@@ -647,6 +647,8 @@ def build_place(p):
     # Every version names the others, so search engines show each visitor the one in their language (English for everyone else).
     alternates = "".join(f'<link rel="alternate" hreflang="{HREFLANG.get(lang, lang)}" href="{SITE_URL}{lang_paths[lang]}">\n' for lang in langs) + \
         f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{p["path"]}">\n' if len(langs) > 1 else ""
+    # A line under the intro pointing to Near me (English only, like the page it opens), for "michelin star restaurants near me".
+    near_line = f'<p class="hero-near">In {e(where)} or nearby? See the <a href="/near-me/">Michelin star restaurants near you</a>, nearest first.</p>'
     for lang in langs:
         if lang == "en":
             texts = {
@@ -681,7 +683,7 @@ def build_place(p):
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
             "title": e(titles[lang]), "description": e(texts["description"]), "canonical": SITE_URL + lang_paths[lang],
             "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
-            "crumbs": crumb_html, "explore": explore_html,
+            "crumbs": crumb_html, "explore": explore_html, "nearLine": near_line if lang == "en" else "",
             # The language buttons, written in as links to each version so search engines reach them (common.js redraws them).
             "langLinks": "".join(f'<span aria-current="page">{e(LANG_LABELS.get(c, c.upper()))}</span>' if c == lang else
                                  f'<a href="{lang_paths[c]}" hreflang="{HREFLANG.get(c, c)}" lang="{HTML_LANG.get(c, ("en-GB",))[0]}">{e(LANG_LABELS.get(c, c.upper()))}</a>'
@@ -1735,8 +1737,10 @@ def build_near_me(starred):
     static = (f'<h2>Popular cities for Michelin star restaurants</h2>\n<p>Not where you are? Browse the cities with the most starred restaurants, '
               f'each with its dinner, lunch and wine pairing prices side by side.</p>\n<div class="dest-cities near-popular">{popular}</div>\n'
               f'<p><a href="/#destinations">All {len([p for p in pages if p["type"] == "country"])} countries →</a></p>\n{faq_html}')
-    lede = (f"Find the Michelin-starred restaurants closest to you, with what dinner and lunch cost at each. Use your location or type a town, "
-            f"and see every starred restaurant nearby on a map, nearest first, from {stats['total']} in {stats['countries']} countries.")
+    # Answers the search in plain words, answer first.
+    lede = (f"Use your location, or type a town, city or postcode, to see every Michelin star restaurant near you on a map, nearest first, "
+            f"with what dinner and lunch cost at each. It covers all {stats['total']} restaurants with Michelin stars in {stats['countries']} countries, "
+            f"so wherever you are, the closest one is a tap away.")
     graph = [
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "All destinations", "item": SITE_URL + "/"},

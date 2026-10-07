@@ -1835,6 +1835,7 @@ def guide_stats():
     stats["guideYear"] = month[:4]
     stats.update(list_stats(live, stats["guideYear"]))
     stats.update(popular_stats())
+    stats.update(chef_stats(live))
     return stats
 
 
@@ -1959,6 +1960,128 @@ def michelin_links():
     return out
 
 
+# The Michelin star chefs guide: head chefs ranked by the stars of the restaurants they run ({{table:chefs}}), and the
+# chefs whose names are on starred restaurants that others run day to day ({{table:chef-names}}).
+CHEF_TABLE_MIN = 4  # stars a head chef needs, across two or more restaurants, to make {{table:chefs}}
+# Names over the door: (key for {{names_<key>}} and {{names_<key>N}}, the chef, a pattern matching the restaurants' names, extra
+# restaurant ids). A restaurant whose head chef is that chef counts too.
+CHEF_NAMES = (
+    ("robuchon", "Joël Robuchon", r"robuchon", ()),
+    ("alleno", "Yannick Alléno", r"all[ée]no|pavyllon|l'abysse", ("la-table-de-pavie",)),
+    ("ducasse", "Alain Ducasse", r"ducasse", ()),
+    ("bombana", "Umberto Bombana", r"bombana", ()),
+    ("ramsay", "Gordon Ramsay", r"ramsay", ()),
+    ("pic", "Anne-Sophie Pic", r"\bpic\b", ()),
+    ("gagnaire", "Pierre Gagnaire", r"gagnaire", ()),
+    ("colagreco", "Mauro Colagreco", r"colagreco|mirazur", ()),
+    ("romito", "Niko Romito", r"romito", ()),
+    ("keller", "Thomas Keller", "", ()),
+    ("blumenthal", "Heston Blumenthal", r"heston|fat duck", ()),
+)
+CHEFS_DECEASED = {"robuchon"}  # left out of {{nameLiving}}, the living chef whose name is on the most stars
+
+
+def chef_names(text):
+    """A restaurant's chef field as a list of chefs: "Juan Mari Arzak and Elena Arzak" gives both, "Ludovic and Tabata Mey"
+    gives Ludovic Mey and Tabata Mey."""
+    parts = [p.strip() for p in re.split(r"\s+(?:and|&)\s+|\s*/\s*", text or "") if p.strip()]
+    return [p if " " in p else f"{p} {parts[-1].split()[-1]}" for p in parts]
+
+
+def stars_of(rows):
+    return sum(r["stars"] for r in rows)
+
+
+def head_chefs(live):
+    """Each head chef with the starred restaurants they run, most stars first, then most restaurants."""
+    by = {}
+    for r in live:
+        for c in chef_names(r.get("chef")):
+            by.setdefault(c, []).append(r)
+    return sorted(((c, sorted(rows, key=lambda r: (-r["stars"], r["name"].lower()))) for c, rows in by.items()),
+                  key=lambda t: (-stars_of(t[1]), -len(t[1]), t[0]))
+
+
+def named_restaurants(live):
+    """CHEF_NAMES with each chef's starred restaurants (their name on the door, or they run the kitchen), most stars first."""
+    out = []
+    for key, chef, pattern, extra in CHEF_NAMES:
+        rows = [r for r in live if (pattern and re.search(pattern, r["name"], re.I)) or chef in chef_names(r.get("chef")) or r["id"] in extra]
+        out.append((key, chef, sorted(rows, key=lambda r: (-r["stars"], r["name"].lower()))))
+    return sorted(out, key=lambda t: (-stars_of(t[2]), -len(t[2]), t[1]))
+
+
+def and_list(items):
+    return items[0] if len(items) == 1 else ", ".join(items[:-1]) + " and " + items[-1]
+
+
+def chef_stats(live):
+    """Figures for the chefs guide, e.g. {{chefTop}} (the head chef with the most stars), {{names_ducasse}} (stars on
+    restaurants carrying Alain Ducasse's name) and {{chefTwoThree}} (chefs running two three-star restaurants)."""
+    ranked = head_chefs(live)
+    multi = [(c, rows) for c, rows in ranked if len(rows) > 1]
+    two_three = [c for c, rows in ranked if sum(1 for r in rows if r["stars"] == 3) > 1]
+    out = {"chefNamed": f"{sum(1 for r in live if r.get('chef')):,}", "chefMulti": str(len(multi)),
+           "chefListed": str(sum(1 for c, rows in multi if stars_of(rows) >= CHEF_TABLE_MIN)), "chefMin": str(CHEF_TABLE_MIN),
+           "chefTwoThree": str(len(two_three)), "chefTwoThreeNames": and_list(sorted(two_three, key=lambda c: c.split()[-1]))}
+    if multi:
+        out.update({"chefTop": multi[0][0], "chefTopStars": str(stars_of(multi[0][1])), "chefTopN": str(len(multi[0][1])),
+                    "chefSecond": multi[1][0], "chefSecondStars": str(stars_of(multi[1][1])), "chefSecondN": str(len(multi[1][1]))})
+    named = named_restaurants(live)
+    for key, chef, rows in named:
+        out[f"names_{key}"], out[f"names_{key}N"] = str(stars_of(rows)), str(len(rows))
+        out[f"names_{key}3"] = str(sum(1 for r in rows if r["stars"] == 3))
+    living = [t for t in named if t[0] not in CHEFS_DECEASED]
+    out.update({"nameTop": named[0][1], "nameTopStars": str(stars_of(named[0][2])), "nameTopN": str(len(named[0][2])),
+                "nameLiving": living[0][1], "nameLivingStars": str(stars_of(living[0][2])), "nameLivingN": str(len(living[0][2]))})
+    return out
+
+
+def chef_blocks(live, links, stars_cell, note):
+    """{{table:chefs}} and {{table:chef-names}}."""
+    def where(r):
+        city = r["cityName"] if r["cityType"] == "country" else place_name(r)
+        return city if city == places[r["country"]]["name"] else f'{city}, {places[r["country"]]["name"]}'
+
+    def line(r, chef=None):
+        led = chef and r.get("chef") and chef not in chef_names(r["chef"])
+        return (f'{stars_cell(r["stars"])} {restaurant_link(r, links)} <span class="muted">{e(where(r))}'
+                + (f' · chef {e(r["chef"])}' if led else "") + "</span>")
+
+    def cheapest(rows):
+        menus = [r for r in rows if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"]
+        if not menus:
+            return '<span class="muted">Not published</span>'
+        r = min(menus, key=lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"])
+        return (money(r["dinner"], r["cur"]) + ("" if r["cur"] == "USD" else f'<br><span class="muted">about {usd_text(r["dinner"] / CURRENCIES[r["cur"]]["perUSD"])}</span>')
+                + f'<br><span class="muted">{e(r["name"])}</span>')
+
+    def table(groups, first, chef_lines):
+        body = "".join(
+            f'<tr><td data-label="{first}"><span class="rank">{i + 1}</span> {e(chef)}</td>'
+            f'<td class="num" data-label="Stars"><strong>{stars_of(rows)}</strong><br><span class="muted">{len(rows)} restaurant{"s" if len(rows) > 1 else ""}</span></td>'
+            f'<td data-label="Starred restaurants">' + "<br>".join(line(r, chef if chef_lines else None) for r in rows) + "</td>"
+            f'<td class="num" data-label="Cheapest dinner menu">{cheapest(rows)}</td></tr>'
+            for i, (chef, rows) in enumerate(groups))
+        heads = "".join(f'<th scope="col">{h}</th>' for h in (first, "Stars", "Starred restaurants", "Cheapest dinner menu"))
+        return f'<div class="table-wrap"><table class="guide-table data chef-list"><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>'
+
+    about = ("Each restaurant’s name opens its prices on The Starred Bill and the arrow its MICHELIN Guide page. "
+             "Cheapest dinner menu is the lowest-priced main dinner tasting menu among them, per person in local currency before service and drinks, "
+             "with US dollars at recent exchange rates.")
+    ranked = [(c, rows) for c, rows in head_chefs(live) if len(rows) > 1 and stars_of(rows) >= CHEF_TABLE_MIN]
+    named = [(chef, rows) for key, chef, rows in named_restaurants(live)]
+    return {
+        "chefs": table(ranked, "Head chef", False) + note(
+            f"Every chef named as head chef of two or more Michelin-starred restaurants with {CHEF_TABLE_MIN} or more stars between them, from the current "
+            "MICHELIN Guide editions. Head chefs are as the MICHELIN Guide or the restaurant names them, else recent press. " + about),
+        "chef-names": table(named, "Chef", True) + note(
+            "Starred restaurants that carry each chef’s name or that the chef runs, from the current MICHELIN Guide editions; "
+            "where someone else leads the kitchen day to day, their name follows the restaurant’s. " + about),
+    }
+
+
+
 def guide_blocks(stats):
     """Tables the data guides drop in with {{table:name}}, built from the restaurant data at every build."""
     live = [r for r in restaurants if r.get("stars") in (1, 2, 3) and not r.get("status")]
@@ -2065,6 +2188,7 @@ def guide_blocks(stats):
         f"Stars from the MICHELIN Guide Great Britain &amp; Ireland {e(year)}; names open each restaurant’s prices on The Starred Bill and arrows its MICHELIN Guide page. "
         "Prices per person before service (usually 12.5–15% in London) and drinks, with US dollars at recent exchange rates. "
         "Set lunch is the cheapest set menu at lunch, where there is one.")
+    blocks.update(chef_blocks(live, links, stars_cell, note))
     blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
     return blocks
 

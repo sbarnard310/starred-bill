@@ -223,6 +223,8 @@ def data_checks(site):
         r["_id"], r["_country"] = f.stem, f.parent.name
         rows.append(r)
     live = [r for r in rows if r.get("stars") in (1, 2, 3) and not r.get("status")]
+    hours_file = C / "opening-hours.json"
+    hours = json.loads(hours_file.read_text("utf-8")).get("hours", {}) if hours_file.exists() else {}
     gaps = collections.defaultdict(collections.Counter)
     for r in live:
         g = gaps[r["_country"]]
@@ -236,6 +238,7 @@ def data_checks(site):
         g["no_position"] += r.get("lat") is None
         g["no_photo"] += not r.get("placeId")
         g["no_website"] += not r.get("website")
+        g["no_hours"] += r["_id"] not in hours  # opening days for Near me's "Open on" filter (scripts/michelin_details.py hours)
         g["price_without_source"] += r.get("dinner") is not None and not r.get("source")
     total = collections.Counter()
     for g in gaps.values():
@@ -253,7 +256,7 @@ def data_checks(site):
                     odd.append(f"{r['name']} ({r['_country']}, {r['stars']} star, about ${round(usd)})")
     stale = [r["name"] for r in live if r.get("dinner") is not None and "still to be added" in (r.get("dinnerNote") or "")]
     by_gap = {k: sorted(((g[k], c, g["starred"]) for c, g in gaps.items() if g[k]), reverse=True)[:8]
-              for k in ("no_price", "no_chef", "no_rating")}
+              for k in ("no_price", "no_chef", "no_rating", "no_hours")}
     return {"restaurants": len(rows), "starred": len(live), "totals": dict(total),
             "worst_countries": {k: [f"{c}: {n} of {s}" for n, c, s in v] for k, v in by_gap.items()},
             "duplicates": [v for v in seen.values() if len(v) > 1], "odd_prices": odd, "stale_notes": stale,

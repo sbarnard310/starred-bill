@@ -82,18 +82,26 @@
           <button type="submit" class="near-go">Search</button>
         </form>
       </div>
+      <button type="button" class="near-trip-toggle" id="tripToggle" aria-expanded="false" aria-controls="tripForm"><svg aria-hidden="true"><use href="#pin"/></svg>Planning a trip? Find starred restaurants along a route</button>
+      <form class="near-trip" id="tripForm" hidden>
+        <label class="search"><span class="nt-label">From</span><input id="tripFrom" type="search" autocomplete="off" placeholder="Where you are, or a town" aria-label="Starting from: town, city or postcode, or leave blank for your location"></label>
+        <label class="search"><span class="nt-label">To</span><input id="tripTo" type="search" autocomplete="off" enterkeyhint="go" placeholder="Town or postcode" aria-label="Going to: town, city or postcode"></label>
+        <button type="submit" class="near-go">Find</button>
+      </form>
       <p class="near-status" id="nearStatus" aria-live="polite"></p>
-      <p class="near-privacy">Your location stays in your browser: we never see it or store it. <a href="/privacy/">Privacy</a></p>
+      <p class="near-privacy">Your location stays in your browser: we never see it or store it. Places you type, travel times and routes are looked up with Google. <a href="/privacy/">Privacy</a></p>
     </div>
   </section>
 
   <section class="near-results" id="results" hidden>
     <div class="wrap">
       <div class="near-cards" id="nearCards"></div>
+      <div class="near-news" id="nearNew" hidden></div>
       <div class="near-filters" id="nearFilters">
         <label class="near-sel"><span>Within</span><select id="fRadius"></select></label>
         <div class="seg" id="fMeal" role="group" aria-label="Meal"></div>
         <div class="seg" id="fStars" role="group" aria-label="Michelin stars"></div>
+        <label class="near-sel"><span>Open on</span><select id="fDay"></select></label>
         <label class="near-sel"><span>Dietary</span><select id="fDiet"></select></label>
         <label class="near-sel"><span>Sort</span><select id="fSort"></select></label>
       </div>
@@ -101,6 +109,7 @@
         <div class="map-canvas near-map" id="nearMap" role="region" aria-label="Map of Michelin-starred restaurants near you"><p class="map-wait">Loading the map…</p></div>
         <div class="near-side">
           <p class="near-count" id="nearCount" aria-live="polite"></p>
+          <div class="near-times" id="nearTimes" role="group" aria-label="Travel times" hidden></div>
           <ol class="near-rows" id="nearRows"></ol>
           <button type="button" class="linkish near-more" id="nearMore" hidden></button>
         </div>

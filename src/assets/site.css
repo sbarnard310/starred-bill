@@ -543,8 +543,8 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
 .home-search { position: relative; margin-top: 24px; max-width: 520px; }
 /* On the dark banner the box needs a lighter fill and a brighter outline to stand out, most of all in dark mode. */
 .hero .home-search .search input, .near-search .search input { border-color: color-mix(in srgb, var(--green) 75%, transparent); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .home-search .search input, :root:not([data-theme="light"]) .near-search .search input { background: #1B3226; border-color: color-mix(in srgb, var(--green) 75%, transparent); } }
-:root[data-theme="dark"] .home-search .search input, :root[data-theme="dark"] .near-search .search input { background: #1B3226; border-color: color-mix(in srgb, var(--green) 75%, transparent); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .home-search .search input, :root:not([data-theme="light"]) .near-search .search input, :root:not([data-theme="light"]) .near-trip .search input { background: #1B3226; border-color: color-mix(in srgb, var(--green) 75%, transparent); } }
+:root[data-theme="dark"] .home-search .search input, :root[data-theme="dark"] .near-search .search input, :root[data-theme="dark"] .near-trip .search input { background: #1B3226; border-color: color-mix(in srgb, var(--green) 75%, transparent); }
 .results { list-style: none; margin: 8px 0 0; padding: 6px; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 32px rgba(0, 0, 0, .22); position: absolute; left: 0; right: 0; z-index: 5; max-height: 420px; overflow: auto; }
 .results a { display: grid; gap: 2px; padding: 8px 10px; border-radius: 8px; color: inherit; text-decoration: none; font-weight: 600; }
 .results a:hover, .results a:focus-visible { background: var(--green-soft); }
@@ -1154,6 +1154,34 @@ button.near-card:hover { border-color: var(--green); }
 .nr-pin { border: 1px solid transparent; background: none; border-radius: 8px; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
 .nr-pin:hover { color: var(--green); background: var(--green-soft); }
 .nr-pin svg { width: 18px; height: 18px; }
+.nr-hours { font-size: .84rem; color: var(--green); }
+.nr-hours.shut { color: var(--muted); }
+.nr-go { font-size: .84rem; color: var(--muted); }
+.nr-go a { color: var(--green); font-weight: 600; text-decoration: none; }
+.nr-go a:hover { text-decoration: underline; }
+.nr-time { color: var(--ink); font-weight: 600; }
+.nc-hours-note { display: block; margin-top: 4px; font-size: .82rem; }
+.near-times { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 10px; font-size: .86rem; color: var(--muted); }
+.near-times > span:first-child { margin-right: 2px; }
+.nt-note { font-size: .82rem; }
+.near-news { display: grid; gap: 10px; margin-top: 14px; }
+.near-new { min-width: 0; padding: 12px 16px; border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: var(--radius); background: var(--surface); }
+.near-new.fresh { border-left-color: var(--green); background: var(--green-soft); }
+.near-new p { margin: 0 0 8px; font-size: .92rem; }
+.nn-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.nn-chip { display: inline-grid; gap: 1px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; font-weight: 600; font-size: .9rem; text-align: left; cursor: pointer; }
+.nn-chip:hover { border-color: var(--green); }
+.nn-chip .stars svg { width: 11px; height: 11px; }
+.nn-chip small { font-weight: 400; font-size: .78rem; color: var(--muted); }
+.nn-more { align-self: center; font-size: .86rem; color: var(--muted); }
+.near-trip-toggle { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 0; border: 0; background: none; color: var(--band-ink); font: inherit; font-size: .95rem; font-weight: 600; text-align: left; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.near-trip-toggle svg { width: 18px; height: 18px; color: var(--gold); }
+.near-trip { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; max-width: 860px; padding: 0; background: none; border: 0; }
+.near-trip .search { flex: 1 1 260px; position: relative; }
+.near-trip .search input { padding-left: 74px; color: var(--ink); border-color: color-mix(in srgb, var(--green) 75%, transparent); }
+.nt-label { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); pointer-events: none; }
+.rp-hours { display: block; }
+.rp-hours b { display: inline-block; min-width: 5.2em; font-weight: 600; }
 .near-more { margin-top: 10px; }
 .near-remember { font-size: .88rem; color: var(--muted); margin: 14px 0 0; }
 .near-remember label { display: inline-flex; gap: 8px; align-items: center; color: var(--ink); cursor: pointer; }
@@ -1167,6 +1195,9 @@ button.near-card:hover { border-color: var(--green); }
 @media (max-width: 720px) {
   .near-cards { grid-template-columns: 1fr 1fr; }
   .near-total { grid-column: 1 / -1; }
+  .nn-chips { flex-wrap: nowrap; overflow-x: auto; margin-inline: -16px; padding: 0 16px 4px; scrollbar-width: none; }
+  .nn-chip { flex: none; max-width: 78vw; }
+  .nn-more { flex: none; }
   .near-search { flex-basis: 100%; }
   .near-locate { width: 100%; justify-content: center; }
   .near-or { width: 100%; text-align: center; }

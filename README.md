@@ -84,7 +84,9 @@ Leave out any field you don't have.
 
 Restaurants listed in `RESTAURANT_PAGES` (build.py) also get a page of their own at `/restaurants/<file name>/`, built from the same fields: the prices as a till receipt and a bill with service, the stars, chef, cuisine, dietary options, Google rating, how the dinner price compares with the same stars nearby, the starred restaurants within 5 km and a FAQ. Destination pages and guide tables link to it.
 
-Chefs and dietary options are refreshed from the MICHELIN Guide with `python3 scripts/michelin_details.py fetch` then `apply` (see the script for `review` and `chefs FILE`). `scripts/chef_from_sites.py` gathers chef mentions from restaurants' own websites for checking by hand.
+Chefs and dietary options are refreshed from the MICHELIN Guide with `python3 scripts/michelin_details.py fetch` then `apply` (see the script for `review` and `chefs FILE`).
+
+Opening hours live in `content/opening-hours.json`, written by `python3 scripts/michelin_details.py hours` (after `fetch`) from the MICHELIN Guide, not edited by hand: `checked` (the day they were fetched) and `hours`, one string per restaurant file name, Monday first, days split by `;`, each day's sittings by `,`, e.g. `";1200-1430,1800-2230;…"` (closed on Monday). Restaurants the guide gives no hours for are left out (all of Japan and most of mainland China). The guide often records only a day's first sitting, so the site trusts which days a restaurant opens, but shows times only for days with two sittings or a dinner one. Near me's "Open on" filter reads them (`/data/hours.json`), and restaurant pages show them under "Opening hours" (or "Open", days only). `scripts/chef_from_sites.py` gathers chef mentions from restaurants' own websites for checking by hand.
 
 ## Guides
 

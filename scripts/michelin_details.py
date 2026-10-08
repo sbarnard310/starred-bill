@@ -5,8 +5,9 @@
     python3 scripts/michelin_details.py apply            match them to content/restaurants and write michelinId, diets and chef
     python3 scripts/michelin_details.py review           list restaurants still without a chef, with Michelin's description
     python3 scripts/michelin_details.py chefs FILE       add chefs from FILE: {"restaurant-id": {"chef": "…", "source": "michelin|site|press|manual"}}
+    python3 scripts/michelin_details.py hours            write every matched restaurant's opening hours to content/opening-hours.json
 
-Run fetch then apply after each guide release. A chef with "chefSource": "manual" is never overwritten.
+Run fetch then apply and hours after each guide release. A chef with "chefSource": "manual" is never overwritten.
 The download is kept in scripts/michelin-details.json (not committed).
 """
 import json
@@ -24,7 +25,8 @@ ALGOLIA = "https://8nvhrd7onv-dsn.algolia.net/1/indexes/prod-restaurants-en/quer
 HEADERS = {"X-Algolia-Application-Id": "8NVHRD7ONV", "X-Algolia-API-Key": "3222e669cf890dc73fa5f38241117ba5",
            "Referer": "https://guide.michelin.com/", "Content-Type": "application/json"}
 STARRED = "(michelin_award:ONE_STAR OR michelin_award:TWO_STARS OR michelin_award:THREE_STARS)"
-FIELDS = ["objectID", "name", "_geoloc", "chef", "main_desc", "special_diets", "cuisines", "url", "city", "country", "michelin_award"]
+FIELDS = ["objectID", "name", "_geoloc", "chef", "main_desc", "special_diets", "cuisines", "url", "city", "country", "michelin_award",
+          "hours_of_operation", "meal_times"]
 # Michelin's special_diets slugs -> ours
 DIETS = {"vegetarian_menu": "vegetarian-menu", "vegetarian-options": "vegetarian", "vegan": "vegan",
          "gluten-free": "gluten-free", "halal": "halal", "koshel": "kosher", "kosher": "kosher"}
@@ -179,6 +181,32 @@ def chefs(file):
     print(f"Added or updated {n} chefs")
 
 
+DAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+
+
+def hours_of(h):
+    """Michelin's opening hours as one string, Monday first: days split by ";", each day's sittings by ",",
+    e.g. ";1200-1430,1800-2230;…" (closed Monday). None when Michelin gives none, or shows every day closed."""
+    week = h.get("hours_of_operation") or {}
+    out = []
+    for day in DAYS:
+        slots = [s for s in week.get(day) or [] if not s.get("closed") and s.get("opens") and s.get("closes")]
+        out.append(",".join(s["opens"][1:6].replace(":", "") + "-" + s["closes"][1:6].replace(":", "") for s in slots))
+    return ";".join(out) if any(out) else None
+
+
+def hours():
+    import datetime
+    _, pairs, _, _ = matches()
+    found = {rid: hours_of(h) for rid, h in sorted(pairs.items())}
+    found = {rid: x for rid, x in found.items() if x}
+    path = os.path.join(ROOT, "content", "opening-hours.json")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(json.dumps({"checked": datetime.date.today().isoformat(), "source": "MICHELIN Guide", "hours": found},
+                           ensure_ascii=False, indent=0) + "\n")
+    print(f"Wrote opening hours for {len(found)} of {len(pairs)} matched restaurants to content/opening-hours.json")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "fetch":
@@ -187,6 +215,8 @@ if __name__ == "__main__":
         apply()
     elif cmd == "review":
         review()
+    elif cmd == "hours":
+        hours()
     elif cmd == "chefs" and len(sys.argv) > 2:
         chefs(sys.argv[2])
     else:

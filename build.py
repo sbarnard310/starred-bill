@@ -648,7 +648,9 @@ def build_place(p):
     alternates = "".join(f'<link rel="alternate" hreflang="{HREFLANG.get(lang, lang)}" href="{SITE_URL}{lang_paths[lang]}">\n' for lang in langs) + \
         f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{p["path"]}">\n' if len(langs) > 1 else ""
     # A line under the intro pointing to Near me (English only, like the page it opens), for "michelin star restaurants near me".
-    near_line = f'<p class="hero-near">In {e(where)} or nearby? See the <a href="/near-me/">Michelin star restaurants near you</a>, nearest first.</p>'
+    # Then one to Help me pick with this place as the first answer (/pick/?w=<address>), on pages with starred restaurants.
+    near_line = (f'<p class="hero-near">In {e(where)} or nearby? See the <a href="/near-me/">Michelin star restaurants near you</a>, nearest first.'
+                 + (f' Can\'t choose? <a href="/pick/?w={p["path"]}" class="hero-pick">Help me pick in {e(where)}</a>.' if starred_n[p["id"]] and p["type"] != "group" else "") + "</p>")
     for lang in langs:
         if lang == "en":
             texts = {
@@ -1789,6 +1791,9 @@ def build_pick(near_url):
         ("How much should I budget for wine?",
          f"A wine pairing typically adds about half to two-thirds of the menu price: a median {stats['wine1']} at one-star restaurants. "
          "Switch on “Include wine pairing” and we'll count it in. Where a restaurant's pairing price isn't listed, we leave room for one."),
+        ("Can it plan a lunch and a dinner for a weekend away?",
+         "Yes. Choose “A lunch and a dinner” and set one budget for both meals. We'll pair a starred lunch with a starred dinner at "
+         "another restaurant no more than 40 km (25 miles) away, and show the best match, the best value and a wildcard, with the total per person."),
         ("Where do the stars and prices come from?",
          "Stars come only from the MICHELIN Guide. Prices are per person before service, taken from each restaurant's own website where "
          "possible, or recent reviews and booking sites, and each one links to its source on the destination pages."),
@@ -1819,6 +1824,7 @@ def build_pick(near_url):
         "title": "Help Me Pick a Michelin Star Restaurant",
         "description": e(f"Six quick questions, three Michelin-starred restaurants that fit your budget, taste and diet. From {stats['total']} restaurants in {stats['countries']} countries."),
         "canonical": SITE_URL + "/pick/", "htmlLang": "en", "ogType": "website", "ogAlt": "Help me pick a Michelin star restaurant",
+        "ogImage": SITE_URL + "/og/pick.png",
         "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
         "crumbs": '<a href="/">All destinations</a><span aria-current="page">Help me pick</span>',
         "lede": e(lede), "static": static,

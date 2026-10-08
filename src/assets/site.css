@@ -1195,6 +1195,7 @@ button.near-card:hover { border-color: var(--green); }
 }
 .pick-opts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .pick-opts-wide { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pick-opts-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .pick-opt { position: relative; display: grid; gap: 4px; align-content: start; text-align: left; padding: 18px 54px 18px 18px; border: 1.5px solid var(--line); border-radius: 12px;
   background: var(--surface); color: var(--ink); font: inherit; cursor: pointer; transition: border-color .15s, background .15s, transform .15s; }
 .pick-opt:hover:not(:disabled) { border-color: var(--green); background: var(--green-soft); transform: translateY(-1px); }
@@ -1279,6 +1280,35 @@ button.near-card:hover { border-color: var(--green); }
 .pick-more h3 { font-size: 1.3rem; margin-bottom: 10px; }
 .pick-more .wish { width: 34px; height: 34px; }
 .pick-empty { margin-top: 18px; }
+/* Weekend mode: each plan card holds a lunch and a dinner (planCard() in pick.js). */
+.pick-plan { gap: 8px; }
+.pick-plan .pc-why { margin: 2px 0 0; }
+.pw-meal { display: grid; gap: 3px; padding-top: 10px; border-top: 1px solid var(--line); }
+.pw-when { font-family: var(--font-num); font-size: .78rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--green); }
+.pw-meal h3 { font-size: 1.2rem; line-height: 1.2; }
+.pw-meal h3 a { color: var(--ink); text-decoration: none; }
+.pw-meal h3 a:hover { color: var(--green); text-decoration: underline; }
+.pw-meal .stars { color: var(--gold); }
+.pw-meal .stars svg { width: 13px; height: 13px; }
+.pw-meal .wish { width: 34px; height: 34px; }
+.pw-meal .pc-price { margin: 2px 0 0; font-size: .9rem; }
+/* The picks side by side (compareTable() in pick.js). On phones each row's label sits above its values. */
+.pick-compare { margin-top: 16px; }
+.pick-compare > .linkish { font-weight: 600; }
+.pick-cmp-wrap { margin-top: 12px; overflow-x: auto; }
+.pick-cmp { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: .92rem; }
+.pick-cmp th, .pick-cmp td { padding: 9px 12px 9px 0; border-bottom: 1px solid var(--line); text-align: start; vertical-align: top; overflow-wrap: break-word; hyphens: auto; }
+.pick-cmp thead th { border-bottom-width: 2px; }
+.pick-cmp thead .pc-label { display: block; margin-bottom: 2px; }
+.pick-cmp thead a { color: var(--ink); font-family: var(--font-display); font-size: 1.1rem; font-weight: 400; line-height: 1.2; text-decoration: none; }
+.pick-cmp thead a:hover { color: var(--green); text-decoration: underline; }
+.pick-cmp th[scope="row"] { width: 20%; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
+.pick-cmp .num td { font-family: var(--font-num); font-size: .88rem; }
+.pick-cmp small { color: var(--muted); }
+.pick-cmp .stars svg { width: 12px; height: 12px; color: var(--gold); }
+.pick-cmp .diet-badges, .pick-cmp .diet-badge { font-family: var(--font-body); }
+.cmp-tick { color: var(--green); font-weight: 700; }
+.pick-compare .pick-note a { color: var(--green); font-weight: 600; }
 .pick-result .pick-note { margin-top: 16px; }
 @media (max-width: 900px) {
   .pick-cards { grid-template-columns: 1fr; }
@@ -1297,6 +1327,14 @@ button.near-card:hover { border-color: var(--green); }
   .pick-find { flex-basis: 100%; }
   .pick-actions { width: 100%; }
   .pick-actions > * { flex: 1; justify-content: center; }
+  .pick-cmp, .pick-cmp thead, .pick-cmp tbody { display: block; }
+  .pick-cmp tr { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); column-gap: 10px; border-bottom: 1px solid var(--line); }
+  .pick-cmp th, .pick-cmp td { border: 0; padding: 4px 0 8px; }
+  .pick-cmp thead td { display: none; }
+  .pick-cmp th[scope="row"] { grid-column: 1 / -1; width: auto; padding: 8px 0 0; }
+  .pick-cmp thead a { font-size: 1rem; }
+  .pick-cmp { font-size: .86rem; }
+  .pick-cmp .num td { font-size: .82rem; }
 }
 
 /* /compare/: ticked wishlist restaurants as till receipts side by side. Each receipt's lines share rows with its

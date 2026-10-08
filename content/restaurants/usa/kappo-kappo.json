@@ -1,0 +1,29 @@
+{
+  "name": "Kappo Kappo",
+  "city": "austin",
+  "address": "Austin Proper Hotel, 600 W. 2nd St., Austin, 78701",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeDate": "2026-10",
+  "rating": 4.8,
+  "reviews": 231,
+  "dinner": 195,
+  "dinnerType": "menu",
+  "dinnerNote": "French-Japanese omakase, plus 20% service charge",
+  "sourceType": "site",
+  "source": "https://www.kappokappo.com/faq",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.kappokappo.com/",
+  "lat": 30.2661822,
+  "lng": -97.750031,
+  "placeId": "ChIJ__-PqA-1RIYRhgaIU5RY_58",
+  "michelinId": "1245234",
+  "diets": [
+    "gluten-free"
+  ],
+  "chef": "Haru Kishi and Gohei Kishi",
+  "chefSource": "site"
+}

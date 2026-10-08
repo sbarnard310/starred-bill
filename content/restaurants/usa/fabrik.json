@@ -1,0 +1,33 @@
+{
+  "name": "Fabrik",
+  "city": "austin",
+  "address": "3108 Windsor Rd., Austin, 78703",
+  "stars": 1,
+  "cuisine": "Vegan",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeDate": "2026-10",
+  "rating": 4.9,
+  "reviews": 273,
+  "dinner": 105,
+  "dinnerType": "menu",
+  "dinnerNote": "Plant-based seasonal tasting menu",
+  "sourceType": "site",
+  "source": "https://www.fabrikatx.com/7-course-menu",
+  "wine": 65,
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.fabrikatx.com/",
+  "lat": 30.2965875,
+  "lng": -97.7676557,
+  "placeId": "ChIJv-uDeMq1RIYRvxi1IOQLRj4",
+  "michelinId": "1209780",
+  "diets": [
+    "vegetarian-only",
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Je Wallerstein",
+  "chefSource": "michelin"
+}

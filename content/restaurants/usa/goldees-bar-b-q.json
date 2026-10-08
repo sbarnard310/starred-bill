@@ -1,0 +1,27 @@
+{
+  "name": "Goldee’s Bar-B-Q",
+  "city": "texas",
+  "area": "Fort Worth",
+  "address": "4645 Dick Price Rd., Fort Worth, 76140",
+  "stars": 1,
+  "cuisine": "Barbecue",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeDate": "2026-10",
+  "rating": 4.7,
+  "reviews": 1766,
+  "dinner": 42,
+  "dinnerType": "main",
+  "dinnerNote": "Barbecue by weight; brisket $42 a pound",
+  "sourceType": "site",
+  "source": "https://preorder.goldeesbbq.com/",
+  "lunchNote": "Open for lunch · Thu–Sun",
+  "website": "https://goldeesbbq.com/",
+  "lat": 32.621385,
+  "lng": -97.2339324,
+  "placeId": "ChIJ24EDAYllToYR34yWOv_et-A",
+  "michelinId": "1209473",
+  "diets": [
+    "halal"
+  ]
+}

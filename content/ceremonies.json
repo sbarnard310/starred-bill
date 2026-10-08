@@ -535,9 +535,9 @@
       "places": ["texas"],
       "usual": "October or November",
       "checked": "2026-10",
-      "starsUpdated": "2026-10-05",
-      "next": {"date": "2026-10-08", "online": true, "source": "https://diningout.com/dallas/michelin-guide-returns-this-fall-to-crown-texas-culinary-stars/"},
+      "starsUpdated": "2026-10-08",
       "ceremonies": [
+        {"date": "2026-10-08", "online": true, "source": "https://guide.michelin.com/en/us/texas/restaurants/all-starred"},
         {"date": "2025-10-28", "where": "the Wortham Theater Center, Houston", "source": "https://guide.michelin.com/ca/en/article/news-and-views/the-michelin-guide-texas-returns-to-houston-for-2025-reveal"}
       ]
     },

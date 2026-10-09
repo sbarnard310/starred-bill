@@ -18,7 +18,7 @@ const parts = new Map();
 function loadIds(ids) {
   const wanted = [...new Set(ids.map(partOf))];
   wanted.forEach((n) => {
-    if (!parts.has(n)) parts.set(n, fetch(DATA.compareParts[n]).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); }).then((d) => {
+    if (!parts.has(n)) parts.set(n, getData(DATA.compareParts[n]).then((d) => {
       d.r.forEach((a) => {
         const r = {};
         d.cols.forEach((c, i) => { r[c] = a[i]; });

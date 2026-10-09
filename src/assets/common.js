@@ -1836,6 +1836,14 @@ function setVisited(map, from) {
 // ---------- Helpers ----------
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+// A /data/ file as JSON. Pages link them by a name carrying their version (/data/v/near.1a2b3c4d5e.json, versioned() in
+// build.py); one the server no longer has (the page was opened before an update) or doesn't have yet (for a few seconds
+// while one goes out) is asked for again under its plain name (/data/near.json), which always holds the latest copy.
+const plainData = (url) => url.replace(/^\/data\/v\//, "/data/").replace(/\.[0-9a-f]{10}(\.\w+)$/, "$1");
+function getData(url) {
+  const json = (res) => { if (!res.ok) throw new Error(res.status); return res.json(); };
+  return fetch(url).then((res) => res.ok || plainData(url) === url ? res : fetch(plainData(url))).then(json);
+}
 // Chinese script (Mandarin, Cantonese or Simplified): changes date formats, sorting and which name is shown first.
 // /data/near.json (Near me, Help me pick) as one object per restaurant; the file is packed small by pack_near() in build.py.
 function nearRows(d) {

@@ -11,7 +11,7 @@ const homeRows = (d) => d.r.map((a) => {
   delete r.city;
   return r;
 });
-const homeReady = (window.homeData || fetch(DATA.homeUrl).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); })).then((d) => {
+const homeReady = (window.homeData || Promise.reject()).catch(() => getData(DATA.homeUrl)).then((d) => {
   ALL = homeRows(d);
   LOST = homeRows(d.former).filter(lostPin);
   DATA.knownIds = ALL.map((r) => r.id);
@@ -308,7 +308,7 @@ async function initWorldMap() {
       world.near.locate();
     }
     if (DATA.worldUrl) {
-      world.loading = fetch(DATA.worldUrl).then((res) => res.json());
+      world.loading = getData(DATA.worldUrl);
       const data = await world.loading;
       const icons = { 1: pinIcon(1, true), 2: pinIcon(2, true), 3: pinIcon(3, true) };
       world.markers = world.markers.concat(data.r.map(([name, stars, lat, lng, cuisine, where, path]) => {

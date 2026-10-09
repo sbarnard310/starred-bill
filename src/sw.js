@@ -4,16 +4,17 @@ const VERSION = "{{version}}";
 const PRECACHE = {{precache}};
 const CACHE = "starredbill-" + VERSION;
 
-// A file whose address carries "?v=" is only saved if its contents match that version (the first 10 characters of
-// their SHA-1, from build.py). For a few minutes after an update, GitHub's servers can still hand out the previous
-// file under the new address; saving that copy would leave the app broken until the next update.
+// A file whose name carries its version (/assets/v/site.912be7deb5.css: the first 10 characters of its contents' SHA-1,
+// versioned() in build.py) is only saved if its contents match. For a few seconds after an update, a server still on the
+// previous copy of the site could hand out the wrong file; saving it would leave the app broken until the next update.
+const versionOf = (url) => { const m = url.pathname.match(/^\/(assets|data)\/v\/.*\.([0-9a-f]{10})\.\w+$/); return m ? m[2] : url.searchParams.get("v"); };
 const hex = (buf) => [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
 async function matches(res, v) {
   try { return hex(await crypto.subtle.digest("SHA-1", await res.clone().arrayBuffer())).startsWith(v); } catch (err) { return false; }
 }
 // Fetches a file and saves it if it's the right one; a wrong one is asked for again past the browser's own cache, and kept only if that's right.
 async function fetchAndSave(req) {
-  const url = new URL(req.url || req, location.href), v = url.searchParams.get("v");
+  const url = new URL(req.url || req, location.href), v = versionOf(url);
   let res = await fetch(req);
   if (v && res.ok && !(await matches(res, v))) {
     const again = await fetch(url.href, { cache: "reload" }).catch(() => null);

@@ -643,11 +643,33 @@ def as_json(data):
 assets = {}
 
 
+def versioned(path, body):
+    """The address of a file whose name carries the first 10 characters of its contents' SHA-1, e.g. /assets/site.css ->
+    /assets/v/site.912be7deb5.css, /data/places/france.js -> /data/v/places/france.<hash>.js, so a changed file gets a new name. Browsers and Cloudflare keep these for a year
+    (_headers). The hash went in the name rather than a ?v= query on 9 Oct 2026: Cloudflare Pages ignores the query, so for
+    the few seconds an update spreads, an edge still on the old copy of the site answered the new address with the old
+    file, and that was then kept for a year. Now it answers "not found", which isn't kept (no-store), and the page's next
+    load is right. sw.js reads the hash back out of the name to check what it saves."""
+    _, top, rest = path.split("/", 2)
+    folder, _, name = rest.rpartition("/")
+    stem, dot, ext = name.partition(".")
+    return f"/{top}/v/" + (folder + "/" if folder else "") + f"{stem}.{hashlib.sha1(body).hexdigest()[:10]}{dot}{ext}"
+
+
+def write_versioned(path, body):
+    """Writes a file twice: under its plain name (the latest copy, for pages opened before an update and for anything
+    that asks without a version; checked each time) and under its versioned name, which is returned."""
+    url = versioned(path, body)
+    for p in (path, url):
+        (OUT / p.lstrip("/")).parent.mkdir(parents=True, exist_ok=True)
+        (OUT / p.lstrip("/")).write_bytes(body)
+    return url
+
+
 def copy_assets():
     (OUT / "assets").mkdir(parents=True)
     for f in sorted((SRC / "assets").iterdir()):
-        shutil.copy2(f, OUT / "assets" / f.name)
-        assets[f.name] = hashlib.sha1(f.read_bytes()).hexdigest()[:10]
+        assets[f.name] = write_versioned("/assets/" + f.name, f.read_bytes())
 
 
 ICONS = (SRC / "icons.svg").read_text("utf-8").strip()
@@ -670,7 +692,7 @@ SITE_JSONLD = '<script type="application/ld+json">' + as_json({"@context": "http
 
 def render(template, values):
     out = (SRC / template).read_text("utf-8")
-    out = re.sub(r"\{\{asset:([\w.-]+)\}\}", lambda m: f"/assets/{m.group(1)}?v={assets[m.group(1)]}", out)
+    out = re.sub(r"\{\{asset:([\w.-]+)\}\}", lambda m: assets[m.group(1)], out)
     # Link-preview picture: the page's own (src/og/<place id>.png, from scripts/og_images.py) or the homepage's.
     values = dict({"ogImage": SITE_URL + "/og/default.png", "ogAlt": "The Starred Bill: what a Michelin star costs, city by city",
                    "jsonld": SITE_JSONLD},
@@ -761,9 +783,9 @@ def build_place(p):
         rows_script = f'<script src="{write_data("places/" + p["id"] + ".js", rows, "DATA.rows=")}"></script>\n'
     else:
         data["rows"], rows_script = rows, ""
-    lang_scripts = "".join(f'<script src="/assets/lang-{c}.js?v={assets[f"lang-{c}.js"]}"></script>\n' for c in langs if c in LANG_FILES)
+    lang_scripts = "".join(f'<script src="{assets[f"lang-{c}.js"]}"></script>\n' for c in langs if c in LANG_FILES)
     if set(langs) & set(RTL_LANGUAGES):
-        lang_scripts += f'<link rel="stylesheet" href="/assets/rtl.css?v={assets["rtl.css"]}">\n'
+        lang_scripts += f'<link rel="stylesheet" href="{assets["rtl.css"]}">\n'
     # Every version names the others, so search engines show each visitor the one in their language (English for everyone else).
     alternates = "".join(f'<link rel="alternate" hreflang="{HREFLANG.get(lang, lang)}" href="{SITE_URL}{lang_paths[lang]}">\n' for lang in langs) + \
         f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{p["path"]}">\n' if len(langs) > 1 else ""
@@ -2328,9 +2350,7 @@ def build_world(ours):
         if not any(same_restaurant(w, r) for r in cands):
             others.append(w)
     body = as_json({"updated": read_json(path).get("updated", ""), "r": others}).encode("utf-8")
-    (OUT / "data").mkdir(exist_ok=True)
-    (OUT / "data" / "world.json").write_bytes(body)
-    return f"/data/world.json?v={hashlib.sha1(body).hexdigest()[:10]}", len(rows)
+    return write_versioned("/data/world.json", body), len(rows)
 
 
 # Countries in the world list without a page of ours yet: the Michelin guide's name -> id, English and Chinese names.
@@ -2405,13 +2425,10 @@ def no_star_countries():
 
 
 def write_data(name, obj, assign=""):
-    """A file under /data/ that pages load; its address carries a version, so browsers and the app keep it until it changes.
-    With `assign` (e.g. "DATA.rows=") it's a script that hands the data to the page's own scripts as it loads."""
+    """A file under /data/ that pages load; its address carries a version (versioned()), so browsers and the app keep it
+    until it changes. With `assign` (e.g. "DATA.rows=") it's a script that hands the data to the page's own scripts as it loads."""
     body = (assign + as_json(obj) + (";" if assign else "")).encode("utf-8")
-    path = OUT / "data" / name
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_bytes(body)
-    return f"/data/{name}?v={hashlib.sha1(body).hexdigest()[:10]}"
+    return write_versioned("/data/" + name, body)
 
 
 def rows_with_cities(rs, cols, city_cols, value):
@@ -5965,8 +5982,8 @@ def sitemap_dates():
 
 def build_extras():
     shutil.copy2(SRC / "favicon.svg", OUT / "favicon.svg")
-    # The stylesheet carries its version, like every other page's, since /assets/ is cached for a year (_headers).
-    (OUT / "404.html").write_text((SRC / "404.html").read_text("utf-8").replace('"/assets/site.css"', f'"/assets/site.css?v={assets["site.css"]}"'), "utf-8")
+    # The stylesheet carries its version, like every other page's (versioned()).
+    (OUT / "404.html").write_text((SRC / "404.html").read_text("utf-8").replace('"/assets/site.css"', f'"{assets["site.css"]}"'), "utf-8")
     shutil.copy2(SRC / "manifest.webmanifest", OUT / "manifest.webmanifest")
     shutil.copytree(SRC / "icons", OUT / "icons")
     if (SRC / "og").exists():
@@ -6004,7 +6021,7 @@ CSP_REPORT = "; ".join([
 
 def build_cloudflare():
     """Files Cloudflare Pages reads: _redirects (real 301s from each place's old addresses, in every language it offers)
-    and _headers (security headers; long caching for files whose address carries a ?v= version)."""
+    and _headers (security headers; long caching for files whose name carries their version, under /assets/v/ and /data/v/)."""
     lines = []
     for (old, pid) in sorted(redirects.items()):
         for lang in place_langs(places[pid]):
@@ -6020,16 +6037,13 @@ def build_cloudflare():
   Content-Security-Policy: {CSP}
   Content-Security-Policy-Report-Only: {CSP_REPORT}
 
-# Scripts, styles and these data files are always linked with ?v=<their contents>, so a changed file gets a new address.
-# Other /data/ files are sometimes fetched without a version (bill.json, hours.json), so they keep Cloudflare's default
-# (checked each time, cheap when unchanged). Rules must not overlap: Cloudflare joins a header two rules both set.
-/assets/*
+# Scripts, styles and data files are linked by names carrying their contents' hash (versioned()), so a changed file gets
+# a new name and these can be kept for a year. Their plain-named copies (/assets/site.css, /data/near.json, bill.json…)
+# change with each update, so they keep Cloudflare's default (checked each time, cheap when unchanged).
+# Rules must not overlap: Cloudflare joins a header two rules both set.
+/assets/v/*
   Cache-Control: public, max-age=31536000, immutable
-/data/places/*
-  Cache-Control: public, max-age=31536000, immutable
-/data/compare/*
-  Cache-Control: public, max-age=31536000, immutable
-/data/near.json
+/data/v/*
   Cache-Control: public, max-age=31536000, immutable
 /icons/*
   Cache-Control: public, max-age=604800
@@ -6055,7 +6069,7 @@ def build_service_worker():
         if f.is_file():
             digest.update(str(f.relative_to(OUT)).encode() + f.read_bytes())
     # Language files are left out: each is saved the first time a page that offers it is opened.
-    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [f"/assets/{name}?v={v}" for name, v in sorted(assets.items()) if not name.startswith("lang-") and name != "rtl.css"]
+    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [url for name, url in sorted(assets.items()) if not name.startswith("lang-") and name != "rtl.css"]
     sw = (SRC / "sw.js").read_text("utf-8").replace("{{version}}", digest.hexdigest()[:12]).replace("{{precache}}", json.dumps(precache))
     (OUT / "sw.js").write_text(sw, "utf-8")
 

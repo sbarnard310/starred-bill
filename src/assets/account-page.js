@@ -5,7 +5,7 @@
 // one row of values each, with the place it sits in given as a number in the file's list of places.
 let byId = null, loading = null, loadFailed = false;
 function loadRestaurants() {
-  if (!loading) loading = fetch(DATA.accountUrl).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); }).then((d) => {
+  if (!loading) loading = getData(DATA.accountUrl).then((d) => {
     byId = new Map(d.r.map((a) => {
       const r = {};
       d.cols.forEach((c, i) => { if (a[i] != null && a[i] !== "") r[c] = a[i]; });

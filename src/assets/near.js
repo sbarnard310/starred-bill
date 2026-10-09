@@ -32,12 +32,12 @@ shareText = () => near.trip ? "Michelin star restaurants along the way from " + 
 shareUrl = () => location.origin + location.pathname + (near.trip ? "?from=" + encodeURIComponent(near.trip.fromQ) + "&to=" + encodeURIComponent(near.trip.toQ) : "");
 
 // ---------- Data ----------
-const dataReady = fetch(DATA.nearUrl).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); }).then((d) => {
+const dataReady = getData(DATA.nearUrl).then((d) => {
   near.rows = nearRows(d);
   return near.rows;
 });
 // Opening hours load alongside; until they arrive (or if they can't) the list simply shows none.
-fetch(DATA.hoursUrl).then((res) => res.ok ? res.json() : null).then((d) => {
+getData(DATA.hoursUrl).catch(() => null).then((d) => {
   if (!d) return;
   near.hours = {};
   Object.entries(d.h).forEach(([id, week]) => { near.hours[id] = week.split(";").map((day) => day ? day.split(",").map((s) => s.split("-")) : []); });

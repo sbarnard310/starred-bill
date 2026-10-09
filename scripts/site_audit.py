@@ -102,7 +102,7 @@ def page_checks(site):
     out["sitemap_missing_page"] = [u for u in sitemap if not exists(u)]
     sizes.sort(reverse=True)
     heavy = [f"{u} ({b // 1024} KB)" for b, u in sizes if b > 500 * 1024]
-    data = [f"{p.relative_to(S)} ({p.stat().st_size // 1024} KB)" for p in sorted(p for p in (S / "data").rglob("*") if p.suffix in (".json", ".js")) if p.stat().st_size > 500 * 1024]
+    data = [f"{p.relative_to(S)} ({p.stat().st_size // 1024} KB)" for p in sorted(p for p in (S / "data").rglob("*") if p.suffix in (".json", ".js") and "v" not in p.relative_to(S / "data").parts[:1]) if p.stat().st_size > 500 * 1024]
     return dict(out), {"pages": len(sizes), "translated_pages": translated, "heavy_pages": heavy, "heavy_data": data,
                        "median_page_kb": sizes[len(sizes) // 2][0] // 1024 if sizes else 0}
 

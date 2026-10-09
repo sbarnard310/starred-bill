@@ -40,7 +40,7 @@ const ask = {
 shareText = () => "Help me pick a Michelin star restaurant: six questions, three picks, or a lunch and a dinner for a weekend away";
 
 // ---------- Data ----------
-const dataReady = fetch(DATA.nearUrl).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); }).then((d) => {
+const dataReady = getData(DATA.nearUrl).then((d) => {
   ask.rows = nearRows(d).filter((r) => r.id);  // only restaurants with a page here
   return ask.rows;
 });

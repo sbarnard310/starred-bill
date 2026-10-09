@@ -88,3 +88,4 @@
 [dir="rtl"] .guide-fig::before { left: auto; right: 6px; }
 [dir="rtl"] .crow-from { text-align: left; }
 [dir="rtl"] #wishlist.is-empty .empty-note { text-align: right; }
+[dir="rtl"] .method-sources strong { margin-right: 0; margin-left: 6px; }

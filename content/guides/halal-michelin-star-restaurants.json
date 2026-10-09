@@ -46,5 +46,50 @@
       "a": "{{halalTotal}} in {{halalCountries}} countries, as of {{checked}}: {{halalSplit}} restaurants. London has {{halal_london}} and Dubai {{halal_dubai}}."
     }
   ],
-  "imageAlt": "Illustration of grilled lamb chops with saffron rice, a bowl of dates and a pot of mint tea on a table by a window looking out over a skyline of domes at dusk, with three gold stars."
+  "imageAlt": "Illustration of grilled lamb chops with saffron rice, a bowl of dates and a pot of mint tea on a table by a window looking out over a skyline of domes at dusk, with three gold stars.",
+  "sources": [
+    {
+      "title": "A halal guide to the UK’s Michelin-starred restaurants",
+      "publisher": "Hyphen",
+      "url": "https://hyphenonline.com/2024/11/26/halal-guide-to-uk-michelin-starred-restaurants/",
+      "date": "2024-11-26"
+    },
+    {
+      "title": "FAQs",
+      "publisher": "Ambassadors Clubhouse",
+      "url": "https://ambassadorsclubhouse.com/faq",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Benares Restaurant",
+      "publisher": "Benares",
+      "url": "https://benaresrestaurant.com/",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Trishna FAQ",
+      "publisher": "Trishna",
+      "url": "https://www.trishnalondon.com/wp-content/uploads/2026/06/Trishna-FAQ-June-2026.pdf",
+      "date": "2026-06"
+    },
+    {
+      "title": "FAQs",
+      "publisher": "Veeraswamy",
+      "url": "https://www.veeraswamy.com/faqs",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Certified outlets",
+      "publisher": "Halal Monitoring Committee",
+      "url": "https://halalhmc.org/outlets/",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Halal Establishments register",
+      "publisher": "Majlis Ugama Islam Singapura (MUIS)",
+      "url": "https://halal.muis.gov.sg/halal/establishments",
+      "date": "2026-10-07",
+      "note": "Checked against every starred restaurant in Singapore."
+    }
+  ]
 }

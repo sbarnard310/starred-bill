@@ -40,5 +40,85 @@
       "a": "Only until the next guide. A restaurant that closes between editions is taken off the MICHELIN Guide’s website and left out of the next one. If it reopens, after a refurbishment like Le Manoir’s for example, it has to be inspected again before it can win stars back."
     }
   ],
-  "imageAlt": "Illustration of an empty dining table by a window at dusk, chairs pushed in and a just-snuffed candle on the cloth, with one gold star above."
+  "imageAlt": "Illustration of an empty dining table by a window at dusk, chairs pushed in and a just-snuffed candle on the cloth, with one gold star above.",
+  "sources": [
+    {
+      "title": "The MICHELIN Guide Great Britain & Ireland 2026",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-great-britain-ireland-2026",
+      "date": "2026-02-10"
+    },
+    {
+      "title": "Bridge Arms and Humo among restaurants to lose stars in 2026 Michelin Guide",
+      "publisher": "The Caterer",
+      "url": "https://www.thecaterer.com/news/bridge-arms-and-humo-among-restaurants-to-lose-stars-in-michelin-2026-guide",
+      "date": "2026-02-09"
+    },
+    {
+      "title": "Clerkenwell stalwart Club Gascon to close next month after nearly 30 years",
+      "publisher": "Restaurant Online",
+      "url": "https://www.restaurantonline.co.uk/Article/2026/02/05/chef-pascal-aussignac-is-to-close-his-clerkenwell-restaurant-club-gascon",
+      "date": "2026-02-05"
+    },
+    {
+      "title": "Taku relaunches as Sushi Amamoto London",
+      "publisher": "The Staff Canteen",
+      "url": "https://www.thestaffcanteen.com/News/taku-relaunches-as-sushi-amamoto-london",
+      "date": "2026-02-20"
+    },
+    {
+      "title": "Dinner by Heston Blumenthal to close in 2027",
+      "publisher": "The Staff Canteen",
+      "url": "https://www.thestaffcanteen.com/News/dinner-by-heston-blumenthal-closing-2027",
+      "date": "2026-03-09"
+    },
+    {
+      "title": "Somssi closes just five weeks after winning Michelin star",
+      "publisher": "Restaurant Online",
+      "url": "https://www.restaurantonline.co.uk/Article/2026/03/18/somssi-closes-just-five-weeks-after-winning-michelin-star",
+      "date": "2026-03-18"
+    },
+    {
+      "title": "Andreas Antona to close Michelin-starred Simpsons restaurant",
+      "publisher": "The Caterer",
+      "url": "https://www.thecaterer.com/news/andreas-antona-to-close-michelin-starred-simpsons-restaurant",
+      "date": "2026-05-28"
+    },
+    {
+      "title": "Hjem founders shelve plans for their restaurant with rooms",
+      "publisher": "Restaurant Online",
+      "url": "https://www.restaurantonline.co.uk/Article/2026/07/06/hjem-founders-shelve-plans-for-their-restaurant-with-rooms/",
+      "date": "2026-07-06"
+    },
+    {
+      "title": "Michelin-starred Hjem to close in December",
+      "publisher": "Restaurant Online",
+      "url": "https://www.restaurantonline.co.uk/Article/2025/02/21/michelin-starred-hjem-to-close-in-december-ahead-of-owners-plans-to-launch-new-restaurant-venture",
+      "date": "2025-02-21"
+    },
+    {
+      "title": "Steve Drake closes Michelin-starred Sorrel",
+      "publisher": "The Staff Canteen",
+      "url": "https://www.thestaffcanteen.com/News/steve-drake-closes-michelin-starred-sorrel",
+      "date": "2026-07-28"
+    },
+    {
+      "title": "Mark Poynton leaves Caistor Hall following its sale",
+      "publisher": "Restaurant Online",
+      "url": "https://www.restaurantonline.co.uk/Article/2026/08/04/mark-poynton-leaves-caistor-hall-following-its-sale/",
+      "date": "2026-08-04"
+    },
+    {
+      "title": "Le Manoir aux Quat’Saisons to close for 18-month redevelopment",
+      "publisher": "The Staff Canteen",
+      "url": "https://www.thestaffcanteen.com/News/le-manoir-redevelopment-closure-raymond-blanc",
+      "date": "2025-09-09"
+    },
+    {
+      "title": "Dan Cox closes Crocadon restaurant in Cornwall",
+      "publisher": "The Caterer",
+      "url": "https://www.thecaterer.com/news/dan-cox-to-close-crocadon-restaurant-cornwall",
+      "date": "2025-10-30"
+    }
+  ]
 }

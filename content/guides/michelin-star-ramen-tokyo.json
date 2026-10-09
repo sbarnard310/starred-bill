@@ -35,5 +35,25 @@
       "a": "A bowl of ramen at a Bib Gourmand shop usually costs less than ¥2,000. The cheapest starred meal in Tokyo, {{cheapWhat_tokyo}} at {{cheapName_tokyo}}, costs {{cheapPrice_tokyo}}."
     }
   ],
-  "imageAlt": "Illustration of a bowl of ramen on a wooden counter, chopsticks across it and the faint dotted outline of an empty star above."
+  "imageAlt": "Illustration of a bowl of ramen on a wooden counter, chopsticks across it and the faint dotted outline of an empty star above.",
+  "sources": [
+    {
+      "title": "Tokyo Bib Gourmand restaurants",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/jp/tokyo-region/tokyo/restaurants/bib-gourmand",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Tokyo’s three Michelin-starred ramen restaurants all lost their stars in the 2024 guide",
+      "publisher": "Time Out Tokyo",
+      "url": "https://www.timeout.com/tokyo/news/tokyos-three-michelin-starred-ramen-restaurants-all-lost-their-stars-in-the-2024-guide-022624",
+      "date": "2024-02-25"
+    },
+    {
+      "title": "Four Tokyo Ramen Eateries with Michelin Stars",
+      "publisher": "Nippon.com",
+      "url": "https://www.nippon.com/en/japan-topics/c13804/four-tokyo-ramen-eateries-with-michelin-stars.html",
+      "date": "2024-12-11"
+    }
+  ]
 }

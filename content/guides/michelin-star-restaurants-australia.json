@@ -32,5 +32,44 @@
       "a": "New Zealand, whose first MICHELIN Guide in June 2026 gave stars to 15 restaurants in Auckland, Wellington, Christchurch, Queenstown and elsewhere. From 14 October 2026, South Australia will have its own."
     }
   ],
-  "imageAlt": "Illustration of a seaside table in Australia: a seafood dish with native herbs, a glass of white wine and a harbour with sailing boats."
+  "imageAlt": "Illustration of a seaside table in Australia: a seafood dish with native herbs, a glass of white wine and a harbour with sailing boats.",
+  "sources": [
+    {
+      "title": "Where diversity shapes culinary identity: The Michelin Guide arrives in South Australia",
+      "publisher": "AAP (Michelin press release)",
+      "url": "https://www.aap.com.au/aapreleases/cision20260511ae51196/",
+      "date": "2026-05-11"
+    },
+    {
+      "title": "Peter Gilmore’s Quay to Close in February 2026",
+      "publisher": "The Staff Canteen",
+      "url": "https://www.thestaffcanteen.com/News/peter-gilmores-quay-to-close",
+      "date": "2025-12-14"
+    },
+    {
+      "title": "Clare Smyth’s Sydney restaurant Oncore to close its doors next year",
+      "publisher": "Restaurant Online",
+      "url": "https://www.restaurantonline.co.uk/Article/2025/11/12/chef-clare-smyths-sydney-restaurant-oncore-to-close-its-doors-next-year",
+      "date": "2025-11-12"
+    },
+    {
+      "title": "Good Food Guide",
+      "publisher": "The Sydney Morning Herald and The Age",
+      "url": "https://www.goodfood.com.au/",
+      "checked": "2026-10",
+      "note": "The 2026 chef’s hats."
+    },
+    {
+      "title": "New Zealand: first MICHELIN Guide selection unveiled",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/new-zealand-first-michelin-guide-selection",
+      "date": "2026-07-01"
+    },
+    {
+      "title": "Michelin Reveals Its 2026 Key Hotels, With 470 New Additions Worldwide",
+      "publisher": "Outlook Traveller",
+      "url": "https://www.outlooktraveller.com/News/michelin-reveals-its-2026-key-hotels-with-470-new-additions-worldwide",
+      "date": "2026-09-19"
+    }
+  ]
 }

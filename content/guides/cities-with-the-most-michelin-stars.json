@@ -33,5 +33,33 @@
       "a": "Paris, with {{inCity_paris}} starred restaurants to London’s {{inCity_london}}, and Paris has more three-star restaurants too. Both are well behind Tokyo, and Kyoto, a city of under 1.5 million people, has {{inCity_kyoto}}."
     }
   ],
-  "imageAlt": "Illustration of a world map spread across a cream table, with clusters of small gold stars over East Asia and Western Europe, a plated course and a paper till receipt."
+  "imageAlt": "Illustration of a world map spread across a cream table, with clusters of small gold stars over East Asia and Western Europe, a plated course and a paper till receipt.",
+  "sources": [
+    {
+      "title": "All starred restaurants in the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/restaurants/all-starred",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Tokyo is most Michelin-starred city",
+      "publisher": "The Caterer",
+      "url": "https://thecaterer.com/news/tokyo-is-most-michelin-starred-city",
+      "date": "2007-11-19"
+    },
+    {
+      "title": "World Population Prospects 2024",
+      "publisher": "United Nations, Population Division",
+      "url": "https://www.un.org/development/desa/pd/world-population-prospects-2024",
+      "date": "2024-07",
+      "note": "Approximate 2024 populations, for stars per million people."
+    },
+    {
+      "title": "VAT",
+      "publisher": "Danish Tax Agency (Skattestyrelsen)",
+      "url": "https://skat.dk/en-us/businesses/vat",
+      "checked": "2026-10",
+      "note": "Danish VAT of 25%."
+    }
+  ]
 }

@@ -24,5 +24,19 @@
       "a": "Among the three-star restaurants that publish a dinner tasting menu price, the cheapest we track is {{cheapest3}} in {{cheapest3Place}}, at {{cheapest3Price}} per person. Lunch menus can be cheaper still."
     }
   ],
-  "imageAlt": "Illustration of a grand tasting menu of many small courses laid out across a table, with a long paper receipt and three gold stars above."
+  "imageAlt": "Illustration of a grand tasting menu of many small courses laid out across a table, with a long paper receipt and three gold stars above.",
+  "sources": [
+    {
+      "title": "All three-star restaurants in the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/restaurants/3-stars-michelin",
+      "checked": "2026-10"
+    },
+    {
+      "title": "What is a MICHELIN Star?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/article/features/what-is-a-michelin-star",
+      "date": "2025-11-12"
+    }
+  ]
 }

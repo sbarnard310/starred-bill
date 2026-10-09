@@ -34,5 +34,43 @@
       "a": "Jan Hendrik van der Westhuizen, whose restaurant JAN in Nice, France, won a Michelin star in 2016 and still holds it. He was the first South African-born chef to earn one."
     }
   ],
-  "imageAlt": "Illustration of a winelands table in South Africa: a plated dish, red wine, grapes and proteas, with vineyards and Table Mountain beyond."
+  "imageAlt": "Illustration of a winelands table in South Africa: a plated dish, red wine, grapes and proteas, with vineyards and Table Mountain beyond.",
+  "sources": [
+    {
+      "title": "The 2026 Eat Out Woolworths Restaurant Awards winners",
+      "publisher": "Eat Out",
+      "url": "https://eatout.co.za/article/breaking-the-2026-eat-out-woolworths-restaurant-awards-winners/",
+      "date": "2026-03-23"
+    },
+    {
+      "title": "These are the coolest new Michelin Key hotels for 2026",
+      "publisher": "Time Out",
+      "url": "https://www.timeout.com/news/these-are-the-coolest-new-michelin-key-hotels-for-2026-092226",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "JAN",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/provence-alpes-cote-dazur/nice/restaurant/jan",
+      "checked": "2026-10"
+    },
+    {
+      "title": "A star is born: All the way to the top",
+      "publisher": "TimesLIVE",
+      "url": "https://www.timeslive.co.za/news/south-africa/2016-02-03-a-star-is-born-all-the-way-to-the-top/",
+      "date": "2016-02-03"
+    },
+    {
+      "title": "New Zealand: first MICHELIN Guide selection unveiled",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/new-zealand-first-michelin-guide-selection",
+      "date": "2026-07-01"
+    },
+    {
+      "title": "Where diversity shapes culinary identity: The Michelin Guide arrives in South Australia",
+      "publisher": "AAP (Michelin press release)",
+      "url": "https://www.aap.com.au/aapreleases/cision20260511ae51196/",
+      "date": "2026-05-11"
+    }
+  ]
 }

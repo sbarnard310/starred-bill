@@ -39,5 +39,37 @@
       "a": "No. Hawker Chan won a star in the first Singapore guide in 2016 and lost it in the 2021 edition. The only hawker stall in Singapore with a star today is Hill Street Tai Hwa Pork Noodle."
     }
   ],
-  "imageAlt": "Illustration of a steaming bowl of noodles on a small cream table beside a long paper till receipt, with one gold star above."
+  "imageAlt": "Illustration of a steaming bowl of noodles on a small cream table beside a long paper till receipt, with one gold star above.",
+  "sources": [
+    {
+      "title": "All starred restaurants in the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/restaurants/all-starred",
+      "checked": "2026-10"
+    },
+    {
+      "title": "What is a MICHELIN Star?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/article/features/what-is-a-michelin-star",
+      "date": "2025-11-12"
+    },
+    {
+      "title": "Hill Street Tai Hwa Pork Noodle",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/sg/en/singapore-region/singapore/restaurant/hill-street-tai-hwa-pork-noodle",
+      "checked": "2026-10"
+    },
+    {
+      "title": "S’pore’s Hawker Chan says it will not give up after losing Michelin star",
+      "publisher": "Vulcan Post",
+      "url": "https://vulcanpost.com/759335/hawker-chan-loses-michelin-star-singapore/",
+      "date": "2021-09-08"
+    },
+    {
+      "title": "Jay Fai",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/jay-fai",
+      "checked": "2026-10"
+    }
+  ]
 }

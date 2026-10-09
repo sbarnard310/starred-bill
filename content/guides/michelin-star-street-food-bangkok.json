@@ -38,5 +38,37 @@
       "a": "Jay Fai is the only street-food stall in Bangkok with a star. The MICHELIN Guide gives a Bib Gourmand to dozens of others, from noodle carts to dessert shops."
     }
   ],
-  "imageAlt": "Illustration of a golden crab omelet on a plate beside a charcoal wok, with a single gold star above."
+  "imageAlt": "Illustration of a golden crab omelet on a plate beside a charcoal wok, with a single gold star above.",
+  "sources": [
+    {
+      "title": "The Full List of MICHELIN Star Restaurants in The MICHELIN Guide Thailand 2026",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/jp/en/article/michelin-guide-ceremony/full-list-michelin-stars-michelin-guide-thailand-2026",
+      "date": "2025-11-27"
+    },
+    {
+      "title": "Jay Fai",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/jay-fai",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Bangkok Bib Gourmand restaurants",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/th/bangkok-region/bangkok/restaurants/bib-gourmand",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Michelin star boosts chef at outdoor Thai kitchen to stardom",
+      "publisher": "Taipei Times (AP)",
+      "url": "https://www.taipeitimes.com/News/feat/archives/2018/01/13/2003685675",
+      "date": "2018-01-13"
+    },
+    {
+      "title": "Jay Fai restaurant faces pricing probe after YouTuber complaint",
+      "publisher": "Khaosod English",
+      "url": "https://www.khaosodenglish.com/life/socialmedia/2025/08/18/jai-fai-restaurant-faces-pricing-probe-after-youtuber-complaint/",
+      "date": "2025-08-18"
+    }
+  ]
 }

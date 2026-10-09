@@ -40,5 +40,25 @@
       "a": "A taco lunch at El Califa de León or a Bib Gourmand taquería costs a small fraction of a starred tasting menu. For La Once Mil, allow about {{dinner:la-once-mil}} a person. Several of the smaller places are cash only."
     }
   ],
-  "imageAlt": "Illustration of three soft corn tacos on a small plate beside a hot griddle, with a single gold star above."
+  "imageAlt": "Illustration of three soft corn tacos on a small plate beside a hot griddle, with a single gold star above.",
+  "sources": [
+    {
+      "title": "Every MICHELIN-Starred Restaurant in Mexico for 2026, Plus the Year’s Key Trends",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/every-michelin-starred-restaurant-in-mexico-for-2026-and-the-year-s-key-trends",
+      "date": "2026-05-20"
+    },
+    {
+      "title": "A tiny taco stand in Mexico City is the first to win a Michelin star",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/2024/05/17/a-tiny-taco-stand-in-mexico-city-is-the-first-of-its-kind-to-win-a-michelin-star",
+      "date": "2024-05-17"
+    },
+    {
+      "title": "Mexico City Bib Gourmand restaurants",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/mx/ciudad-de-mexico/restaurants/bib-gourmand",
+      "checked": "2026-10"
+    }
+  ]
 }

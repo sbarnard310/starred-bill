@@ -42,5 +42,49 @@
       "a": "No restaurant can buy a star. Restaurants already in the Guide are reassessed continuously, and while any restaurant can ask to be considered, inspectors decide for themselves where to eat and pay no attention to who asked."
     }
   ],
-  "imageAlt": "Illustration of a fine-dining table from above: a plated tasting course, a glass of white wine, cutlery and a single gold star beside the plate."
+  "imageAlt": "Illustration of a fine-dining table from above: a plated tasting course, a glass of white wine, cutlery and a single gold star beside the plate.",
+  "sources": [
+    {
+      "title": "What is a MICHELIN Star?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/article/features/what-is-a-michelin-star",
+      "date": "2025-11-12"
+    },
+    {
+      "title": "About the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/about-us",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Everything You Want to Know About the MICHELIN Guide Inspectors",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/us/en/article/features/everything-you-want-to-know-about-the-michelin-guide-inspectors",
+      "date": "2025-06-25"
+    },
+    {
+      "title": "What Is The MICHELIN Bib Gourmand Award?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/us/en/article/features/the-bib-gourmand",
+      "date": "2025-11-18"
+    },
+    {
+      "title": "What is a MICHELIN Green Star?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/qa/en/article/features/what-is-a-michelin-green-star-dubai",
+      "date": "2022-08-02"
+    },
+    {
+      "title": "The MICHELIN Guide introduces Mindful Voices",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-introduces-mindful-voices",
+      "date": "2026-05-18"
+    },
+    {
+      "title": "All three-star restaurants in the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/restaurants/3-stars-michelin",
+      "checked": "2026-10"
+    }
+  ]
 }

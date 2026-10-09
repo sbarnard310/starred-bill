@@ -30,5 +30,19 @@
       "a": "Not in the {{guideYear}} guide. Every UK three-star restaurant is in England, though Scotland, Wales and Northern Ireland all have one- and two-star restaurants."
     }
   ],
-  "imageAlt": "Illustration of a countryside dining room in Britain, a tasting course on the table and rolling green hills through the window, with three gold stars above."
+  "imageAlt": "Illustration of a countryside dining room in Britain, a tasting course on the table and rolling green hills through the window, with three gold stars above.",
+  "sources": [
+    {
+      "title": "United Kingdom: every three-star restaurant",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/gb/restaurants/3-stars-michelin",
+      "checked": "2026-10"
+    },
+    {
+      "title": "The MICHELIN Guide Great Britain & Ireland 2026",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-great-britain-ireland-2026",
+      "date": "2026-02-10"
+    }
+  ]
 }

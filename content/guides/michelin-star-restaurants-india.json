@@ -39,5 +39,43 @@
       "a": "The closest guides to India are in the Gulf (Dubai, Abu Dhabi and Doha) and South-East Asia (Bangkok, Singapore and Kuala Lumpur). Dubai and Bangkok both have starred Indian restaurants."
     }
   ],
-  "imageAlt": "Illustration of a refined Indian thali in brass bowls with a dosa, spices and chai, and a gold star waiting to the side."
+  "imageAlt": "Illustration of a refined Indian thali in brass bowls with a dosa, spices and chai, and a gold star waiting to the side.",
+  "sources": [
+    {
+      "title": "Big News! Michelin Guide Is Coming To India; Nation Moves Closer To Getting Its First Guide",
+      "publisher": "Curly Tales",
+      "url": "https://curlytales.com/big-news-michelin-guide-is-coming-to-india-nation-moves-closer-to-getting-its-first-guide/",
+      "date": "2026-09-18"
+    },
+    {
+      "title": "The Michelin Key Guide To India: 47 Hotels Worth Travelling For In 2026",
+      "publisher": "Esquire India",
+      "url": "https://www.esquireindia.co.in/lifestyle/travel/michelin-key-guide-india-2026-full-list-of-47-awarded-hotels-and-palace-stays",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "Indian Michelin Star Chefs",
+      "publisher": "Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/features/indian-michelin-star-chefs",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Where to Eat MICHELIN-Starred Indian Cuisine in London, Dubai and Beyond",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/ca/en/article/travel/michelin-starred-indian-restaurants",
+      "date": "2026-02-25"
+    },
+    {
+      "title": "Where diversity shapes culinary identity: The Michelin Guide arrives in South Australia",
+      "publisher": "AAP (Michelin press release)",
+      "url": "https://www.aap.com.au/aapreleases/cision20260511ae51196/",
+      "date": "2026-05-11"
+    },
+    {
+      "title": "New Zealand: first MICHELIN Guide selection unveiled",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/new-zealand-first-michelin-guide-selection",
+      "date": "2026-07-01"
+    }
+  ]
 }

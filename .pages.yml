@@ -1780,6 +1780,22 @@ content:
           - name: a
             label: Answer
             type: text
+      - name: sources
+        label: Sources
+        description: "The outside sources this guide's facts come from, shown under the article as \"Sources\": only the ones actually used, usually 3 to 8 (the MICHELIN Guide, official bodies, reputable press). No competitors, booking sites or affiliate links. Give each a date it was published, or the month you checked a live page."
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: publisher, label: Publisher, description: 'e.g. "MICHELIN Guide", "The Caterer"', type: string, required: true }
+          - { name: url, label: Link, description: "The full https:// address.", type: string, required: true }
+          - { name: date, label: Published, description: "e.g. 2026-05-18, or 2026-05 if you only know the month.", type: string, pattern: { regex: '^\d{4}(-\d{2}(-\d{2})?)?$', message: "Use 2026, 2026-05 or 2026-05-18" } }
+          - { name: checked, label: Checked (for live pages), description: "The month we read a page that keeps changing, such as a MICHELIN Guide listing, e.g. 2026-10.", type: string, pattern: { regex: '^\d{4}(-\d{2}(-\d{2})?)?$', message: "Use 2026-10" } }
+          - { name: note, label: Note, description: "Optional: what it's the source for.", type: string }
+      - name: sourcesNote
+        label: Note under the sources
+        description: Optional sentence shown under the Sources list.
+        type: string
       - name: picks
         label: Restaurant write-ups
         description: For ranked lists such as the top ten most reviewed. The restaurant is its file name, e.g. don-julio.

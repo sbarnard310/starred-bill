@@ -29,5 +29,31 @@
       "a": "Often. Many starred restaurants take card details or a prepaid ticket when you book, through systems like Tock, Resy or OpenTable, and charge part or all of the menu price if you cancel late or don’t turn up. At the most sought-after restaurants the whole meal is paid in advance, so check the cancellation terms before you book."
     }
   ],
-  "imageAlt": "Illustration of a cream till receipt curling beside a plated tasting course and a glass of red wine, with three gold stars at the top of the receipt."
+  "imageAlt": "Illustration of a cream till receipt curling beside a plated tasting course and a glass of red wine, with three gold stars at the top of the receipt.",
+  "sources": [
+    {
+      "title": "All starred restaurants in the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/restaurants/all-starred",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Publication 718: New York State Sales and Use Tax Rates by Jurisdiction",
+      "publisher": "New York State Department of Taxation and Finance",
+      "url": "https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Current GST rates",
+      "publisher": "Inland Revenue Authority of Singapore",
+      "url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/basics-of-gst/current-gst-rates",
+      "checked": "2026-10"
+    },
+    {
+      "title": "VAT",
+      "publisher": "Danish Tax Agency (Skattestyrelsen)",
+      "url": "https://skat.dk/en-us/businesses/vat",
+      "checked": "2026-10"
+    }
+  ]
 }

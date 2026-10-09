@@ -42,5 +42,38 @@
       "a": "Four: Dirt Candy in New York, MITA and Oyster Oyster in Washington, DC (Oyster Oyster’s only non-vegetarian dish is an optional oyster), and Fabrik in Austin, which is vegan."
     }
   ],
-  "imageAlt": "Illustration of a fine-dining table seen from above, with a plated course of roasted beetroot and heirloom carrot, garden peas, radishes, a glass of white wine and a paper bill beneath three gold stars."
+  "imageAlt": "Illustration of a fine-dining table seen from above, with a plated course of roasted beetroot and heirloom carrot, garden peas, radishes, a glass of white wine and a paper bill beneath three gold stars.",
+  "sources": [
+    {
+      "title": "Arpège",
+      "publisher": "Alain Passard",
+      "url": "https://www.alain-passard.com/",
+      "checked": "2026-10",
+      "note": "Menus and prices."
+    },
+    {
+      "title": "Iconic French chef stakes reputation on vegan menu",
+      "publisher": "The Local France",
+      "url": "https://www.thelocal.fr/20250728/iconic-french-chef-stakes-reputation-on-vegan-menu",
+      "date": "2025-07-28"
+    },
+    {
+      "title": "Humm, actually... Eleven Madison Park puts meat and fish back on the menu",
+      "publisher": "Restaurant Online",
+      "url": "https://www.restaurantonline.co.uk/Article/2025/08/13/chef-daniel-humm-puts-meat-and-fish-back-on-the-menu-at-eleven-madison-park",
+      "date": "2025-08-13"
+    },
+    {
+      "title": "Plates London Becomes UK’s First Michelin-Starred Vegan Restaurant",
+      "publisher": "Country & Town House",
+      "url": "https://www.countryandtownhouse.com/food-and-drink/plates-london/",
+      "date": "2025-02-12"
+    },
+    {
+      "title": "All starred restaurants in the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/restaurants/all-starred",
+      "checked": "2026-10"
+    }
+  ]
 }

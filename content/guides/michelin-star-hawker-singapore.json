@@ -51,5 +51,31 @@
       "a": "At lunch in the starred Cantonese restaurants. Lei Garden’s lunch set costs {{lunch:lei-garden}} before service and GST, and Summer Pavilion at the Ritz-Carlton is also known for its dim sum."
     }
   ],
-  "imageAlt": "Illustration of a bowl of minced pork noodles on a hawker-centre table, with a plastic stool and a single gold star above."
+  "imageAlt": "Illustration of a bowl of minced pork noodles on a hawker-centre table, with a plastic stool and a single gold star above.",
+  "sources": [
+    {
+      "title": "The MICHELIN Guide Singapore: every starred restaurant",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/sg/restaurants/all-starred",
+      "checked": "2026-10"
+    },
+    {
+      "title": "The MICHELIN Guide Singapore: Bib Gourmand",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/sg/restaurants/bib-gourmand",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Hill Street Tai Hwa Pork Noodle",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/sg/en/singapore-region/singapore/restaurant/hill-street-tai-hwa-pork-noodle",
+      "checked": "2026-10"
+    },
+    {
+      "title": "S’pore’s Hawker Chan says it will not give up after losing Michelin star",
+      "publisher": "Vulcan Post",
+      "url": "https://vulcanpost.com/759335/hawker-chan-loses-michelin-star-singapore/",
+      "date": "2021-09-08"
+    }
+  ]
 }

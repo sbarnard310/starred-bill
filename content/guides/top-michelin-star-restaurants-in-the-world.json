@@ -103,5 +103,20 @@
       "q": "Are the most popular Michelin star restaurants the best?",
       "a": "Not necessarily. Review counts reward restaurants that seat many people, take walk-ins or sit in busy tourist areas. A small three-star restaurant may serve fewer guests in a year than a busy one-star canteen does in a month. Use the highest rated list, and the stars themselves, as the better guide to quality."
     }
+  ],
+  "sources": [
+    {
+      "title": "All starred restaurants in the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/restaurants/all-starred",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Google Maps ratings and reviews",
+      "publisher": "Google",
+      "url": "https://www.google.com/maps",
+      "checked": "2026-10",
+      "note": "Each restaurant’s rating and number of reviews."
+    }
   ]
 }

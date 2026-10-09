@@ -1,5 +1,5 @@
 {
- "_about": "Wording for the FAQ on destination pages (plus areasTitle and areaFrom for the 'area by area' links on country and region pages, and footPopular for the footer's popular destinations), one set per language, read by build.py (destination_faq()). Placeholders: {in} the place mid-sentence, {n} count, {split} the tier list, {checked} month checked, {r}/{names} restaurants, {k} a count, {lo}/{hi}/{mid}/{price} prices, {when} the guide's month, {list}/{m} in 'more'. aNewOne/aUpOne fall back to aNew/aUp. {p} in areaFrom is a price. Optional: and3 (the 'and' before the last of three or more, e.g. English's serial comma). qa…: the \"In short\" answer beside the title (short_answer(); {name} the place's plain name; languages without qaFirst…/qaAll… split the count with tier…/all…, and use star… for qaStars…). qk…: the Quick answers section (quick_answers(); …H are its headings, {year} the latest stars' year), whose new-stars answer reuses aNew…/aUp…. updated: the \"Last updated\" line under the figures at the top of each destination page ({date} the day its place file or one of its restaurants last changed, place_day()).",
+ "_about": "Wording for the FAQ on destination pages (plus areasTitle and areaFrom for the 'area by area' links on country and region pages, and footPopular for the footer's popular destinations), one set per language, read by build.py (destination_faq()). Placeholders: {in} the place mid-sentence, {n} count, {split} the tier list, {checked} month checked, {r}/{names} restaurants, {k} a count, {lo}/{hi}/{mid}/{price} prices, {when} the guide's month, {list}/{m} in 'more'. aNewOne/aUpOne fall back to aNew/aUp. {p} in areaFrom is a price. Optional: and3 (the 'and' before the last of three or more, e.g. English's serial comma). qa…: the \"In short\" answer beside the title (short_answer(); {name} the place's plain name; languages without qaFirst…/qaAll… split the count with tier…/all…, and use star… for qaStars…). qk…: the Quick answers section (quick_answers(); …H are its headings, {year} the latest stars' year), whose new-stars answer reuses aNew…/aUp…. updated: the \"Last updated\" line under the figures at the top of each destination page ({date} the day its place file or one of its restaurants last changed, place_day()). srcTitle, srcGuide and srcLine: the 'Sources' line under 'How the prices are counted' ({guide} the MICHELIN Guide link, whose words are srcGuide; {checked} the month prices were checked; {google} and {rates} the ratings and exchange-rate links).",
  "en": {
   "eyebrow": "FAQ",
   "_pilot": "From here to dtCertNote: the SEO pilot's answer, headings and sections (quick_answer() and pilot_sections() in build.py), the answer on every English destination page, the rest London and New York only for now. {name} is the place's plain name, {in} as in the FAQ, {tier} a tierWord, {stars} a star word, {meal} mealLunch or mealDinner.",
@@ -212,7 +212,10 @@
   "cerDue": "Michelin hasn't named the next date yet; going by past years, expect it around {month}.",
   "cerOnline": "online, no ceremony",
   "cerAll": "Every guide's dates are in our {link}.",
-  "cerAllLink": "list of Michelin Guide ceremony dates"
+  "cerAllLink": "list of Michelin Guide ceremony dates",
+  "srcTitle": "Sources",
+  "srcGuide": "the MICHELIN Guide",
+  "srcLine": "Stars: {guide}. Prices: each restaurant’s own website, or the review linked on its receipt, checked {checked}. Ratings: {google}. Exchange rates: {rates}."
  },
  "zh": {
   "eyebrow": "問與答",
@@ -276,7 +279,10 @@
   "qkThreeOne": "{names}是{in}唯一的米其林三星餐廳，也是指南的最高評級。",
   "qkThreeMany": "{in}共有{k}家米其林三星餐廳：{names}。",
   "qkThreeNoTwo": "{in}目前沒有三星餐廳，最高評級是二星：{names}。",
-  "qkThreeNoOne": "{in}目前沒有三星餐廳，所有星級餐廳皆為一星。"
+  "qkThreeNoOne": "{in}目前沒有三星餐廳，所有星級餐廳皆為一星。",
+  "srcTitle": "資料來源",
+  "srcGuide": "米其林指南",
+  "srcLine": "星級：{guide}。價格：各餐廳官網，或收據上連結的評論，查核於 {checked}。評分：{google}。匯率：{rates}。"
  },
  "yue": {
   "eyebrow": "問與答",
@@ -340,7 +346,10 @@
   "qkThreeOne": "{names}係{in}唯一一間米芝蓮三星餐廳，亦係指南最高評級。",
   "qkThreeMany": "{in}一共有{k}間米芝蓮三星餐廳：{names}。",
   "qkThreeNoTwo": "{in}暫時未有三星餐廳，最高評級係二星：{names}。",
-  "qkThreeNoOne": "{in}暫時未有三星餐廳，所有星級餐廳都係一星。"
+  "qkThreeNoOne": "{in}暫時未有三星餐廳，所有星級餐廳都係一星。",
+  "srcTitle": "資料來源",
+  "srcGuide": "米芝蓮指南",
+  "srcLine": "星級：{guide}。價錢：每間餐廳嘅官網，或者收據上連結嘅評論，{checked} 查核。評分：{google}。匯率：{rates}。"
  },
  "zhs": {
   "eyebrow": "问与答",
@@ -404,7 +413,10 @@
   "qkThreeOne": "{names}是{in}唯一的米其林三星餐厅，也是指南的最高评级。",
   "qkThreeMany": "{in}共有{k}家米其林三星餐厅：{names}。",
   "qkThreeNoTwo": "{in}目前没有三星餐厅，最高评级为二星：{names}。",
-  "qkThreeNoOne": "{in}目前没有三星餐厅，所有星级餐厅均为一星。"
+  "qkThreeNoOne": "{in}目前没有三星餐厅，所有星级餐厅均为一星。",
+  "srcTitle": "资料来源",
+  "srcGuide": "米其林指南",
+  "srcLine": "星级：{guide}。价格：各餐厅官网，或收据上链接的评论，核实于 {checked}。评分：{google}。汇率：{rates}。"
  },
  "ja": {
   "eyebrow": "Q&A",
@@ -467,7 +479,10 @@
   "qkThreeOne": "{in}で唯一の三つ星レストランは{names}で、ガイドの最高評価です。",
   "qkThreeMany": "{in}の三つ星レストランは{k}軒です：{names}。",
   "qkThreeNoTwo": "{in}にはまだ三つ星はなく、最高評価は二つ星の{names}です。",
-  "qkThreeNoOne": "{in}にはまだ三つ星はなく、星付きレストランはすべて一つ星です。"
+  "qkThreeNoOne": "{in}にはまだ三つ星はなく、星付きレストランはすべて一つ星です。",
+  "srcTitle": "出典",
+  "srcGuide": "ミシュランガイド",
+  "srcLine": "星：{guide}。料金：各レストランの公式サイト、またはレシートにリンクしたレビュー（{checked}確認）。評価：{google}。為替レート：{rates}。"
  },
  "ko": {
   "eyebrow": "Q&A",
@@ -530,7 +545,10 @@
   "qkThreeOne": "{in}의 유일한 3스타 레스토랑은 {names}입니다.",
   "qkThreeMany": "{in}의 3스타 레스토랑은 {k}곳입니다: {names}.",
   "qkThreeNoTwo": "{in}에는 아직 3스타 레스토랑이 없으며, 최고 등급은 2스타입니다: {names}.",
-  "qkThreeNoOne": "{in}에는 아직 3스타 레스토랑이 없으며, 모든 스타 레스토랑이 1스타입니다."
+  "qkThreeNoOne": "{in}에는 아직 3스타 레스토랑이 없으며, 모든 스타 레스토랑이 1스타입니다.",
+  "srcTitle": "출처",
+  "srcGuide": "미쉐린 가이드",
+  "srcLine": "별: {guide}. 가격: 각 레스토랑 공식 웹사이트 또는 영수증에 연결된 리뷰, {checked} 확인. 평점: {google}. 환율: {rates}."
  },
  "fr": {
   "eyebrow": "FAQ",
@@ -595,7 +613,10 @@
   "qkThreeOne": "{names} est le seul restaurant trois étoiles {in}, la plus haute distinction du Guide.",
   "qkThreeMany": "On compte {k} restaurants trois étoiles {in} : {names}.",
   "qkThreeNoTwo": "Aucun pour l'instant : la plus haute distinction {in} est de deux étoiles, détenues par {names}.",
-  "qkThreeNoOne": "Aucun pour l'instant : tous les restaurants étoilés {in} ont une étoile."
+  "qkThreeNoOne": "Aucun pour l'instant : tous les restaurants étoilés {in} ont une étoile.",
+  "srcTitle": "Sources",
+  "srcGuide": "le Guide MICHELIN",
+  "srcLine": "Étoiles : {guide}. Prix : le site de chaque restaurant, ou l’avis indiqué sur son ticket, vérifiés en {checked}. Notes : {google}. Taux de change : {rates}."
  },
  "es": {
   "eyebrow": "Preguntas",
@@ -660,7 +681,10 @@
   "qkThreeOne": "{names} es el único restaurante con tres estrellas {in}, la máxima distinción de la Guía.",
   "qkThreeMany": "Hay {k} restaurantes con tres estrellas {in}: {names}.",
   "qkThreeNoTwo": "Ninguno por ahora: la máxima distinción {in} son dos estrellas, de {names}.",
-  "qkThreeNoOne": "Ninguno por ahora: todos los restaurantes con estrella {in} tienen una."
+  "qkThreeNoOne": "Ninguno por ahora: todos los restaurantes con estrella {in} tienen una.",
+  "srcTitle": "Fuentes",
+  "srcGuide": "la Guía MICHELIN",
+  "srcLine": "Estrellas: {guide}. Precios: la web de cada restaurante o la reseña enlazada en su ticket, comprobados en {checked}. Valoraciones: {google}. Tipos de cambio: {rates}."
  },
  "it": {
   "eyebrow": "Domande",
@@ -725,7 +749,10 @@
   "qkThreeOne": "{names} è l'unico ristorante tre stelle {in}, il massimo riconoscimento della Guida.",
   "qkThreeMany": "Ci sono {k} ristoranti tre stelle {in}: {names}.",
   "qkThreeNoTwo": "Nessuno per ora: il massimo riconoscimento {in} sono due stelle, di {names}.",
-  "qkThreeNoOne": "Nessuno per ora: tutti i ristoranti stellati {in} hanno una stella."
+  "qkThreeNoOne": "Nessuno per ora: tutti i ristoranti stellati {in} hanno una stella.",
+  "srcTitle": "Fonti",
+  "srcGuide": "la Guida MICHELIN",
+  "srcLine": "Stelle: {guide}. Prezzi: il sito di ogni ristorante o la recensione indicata sul suo scontrino, verificati a {checked}. Valutazioni: {google}. Tassi di cambio: {rates}."
  },
  "da": {
   "eyebrow": "Spørgsmål",
@@ -790,7 +817,10 @@
   "qkThreeOne": "{names} er den eneste restaurant med tre stjerner {in}, guidens højeste vurdering.",
   "qkThreeMany": "Der er {k} restauranter med tre stjerner {in}: {names}.",
   "qkThreeNoTwo": "Ingen endnu: den højeste vurdering {in} er to stjerner, som {names} har.",
-  "qkThreeNoOne": "Ingen endnu: alle stjernerestauranter {in} har én stjerne."
+  "qkThreeNoOne": "Ingen endnu: alle stjernerestauranter {in} har én stjerne.",
+  "srcTitle": "Kilder",
+  "srcGuide": "Guide MICHELIN",
+  "srcLine": "Stjerner: {guide}. Priser: hver restaurants egen hjemmeside eller anmeldelsen, der er linket til på bonen, tjekket {checked}. Bedømmelser: {google}. Valutakurser: {rates}."
  },
  "sv": {
   "eyebrow": "Frågor",
@@ -854,7 +884,10 @@
   "qkThreeOne": "{names} är den enda restaurangen med tre stjärnor {in}, guidens högsta betyg.",
   "qkThreeMany": "Det finns {k} restauranger med tre stjärnor {in}: {names}.",
   "qkThreeNoTwo": "Inga än: det högsta betyget {in} är två stjärnor, som {names} har.",
-  "qkThreeNoOne": "Inga än: alla stjärnrestauranger {in} har en stjärna."
+  "qkThreeNoOne": "Inga än: alla stjärnrestauranger {in} har en stjärna.",
+  "srcTitle": "Källor",
+  "srcGuide": "Guide MICHELIN",
+  "srcLine": "Stjärnor: {guide}. Priser: varje restaurangs egen webbplats eller recensionen som länkas på kvittot, kontrollerade {checked}. Betyg: {google}. Växelkurser: {rates}."
  },
  "is": {
   "eyebrow": "Spurningar",
@@ -919,7 +952,10 @@
   "qkThreeOne": "{names} er eini veitingastaðurinn með þrjár stjörnur {in}, hæsta einkunn handbókarinnar.",
   "qkThreeMany": "Það eru {k} veitingastaðir með þrjár stjörnur {in}: {names}.",
   "qkThreeNoTwo": "Enginn enn: hæsta einkunnin {in} er tvær stjörnur: {names}.",
-  "qkThreeNoOne": "Enginn enn: allir stjörnustaðir {in} hafa eina stjörnu."
+  "qkThreeNoOne": "Enginn enn: allir stjörnustaðir {in} hafa eina stjörnu.",
+  "srcTitle": "Heimildir",
+  "srcGuide": "MICHELIN Guide",
+  "srcLine": "Stjörnur: {guide}. Verð: vefsíða hvers veitingastaðar eða umsögnin sem vísað er í á kvittuninni, athugað: {checked}. Einkunnir: {google}. Gengi: {rates}."
  },
  "ca": {
   "eyebrow": "Preguntes",
@@ -984,7 +1020,10 @@
   "qkThreeOne": "{names} és l'únic restaurant amb tres estrelles {in}, la màxima distinció de la Guia.",
   "qkThreeMany": "Hi ha {k} restaurants amb tres estrelles {in}: {names}.",
   "qkThreeNoTwo": "Cap de moment: la màxima distinció {in} són dues estrelles: {names}.",
-  "qkThreeNoOne": "Cap de moment: tots els restaurants amb estrella {in} en tenen una."
+  "qkThreeNoOne": "Cap de moment: tots els restaurants amb estrella {in} en tenen una.",
+  "srcTitle": "Fonts",
+  "srcGuide": "la Guia MICHELIN",
+  "srcLine": "Estrelles: {guide}. Preus: el web de cada restaurant o la ressenya enllaçada al seu tiquet, comprovats: {checked}. Valoracions: {google}. Tipus de canvi: {rates}."
  },
  "th": {
   "eyebrow": "ถาม-ตอบ",
@@ -1047,7 +1086,10 @@
   "qkThreeOne": "{names} เป็นร้านสามดาวเพียงร้านเดียว{in} ซึ่งเป็นระดับสูงสุดของคู่มือ",
   "qkThreeMany": "{in}มีร้านสามดาว {k} ร้าน ได้แก่ {names}",
   "qkThreeNoTwo": "ยังไม่มี: ระดับสูงสุด{in}คือสองดาว ได้แก่ {names}",
-  "qkThreeNoOne": "ยังไม่มี: ร้านที่ได้ดาว{in}ทุกร้านได้หนึ่งดาว"
+  "qkThreeNoOne": "ยังไม่มี: ร้านที่ได้ดาว{in}ทุกร้านได้หนึ่งดาว",
+  "srcTitle": "แหล่งที่มา",
+  "srcGuide": "มิชลิน ไกด์",
+  "srcLine": "ดาว: {guide} · ราคา: เว็บไซต์ของแต่ละร้าน หรือรีวิวที่ลิงก์ไว้ในใบเสร็จ ตรวจสอบเมื่อ {checked} · คะแนน: {google} · อัตราแลกเปลี่ยน: {rates}"
  },
  "de": {
   "eyebrow": "Fragen",
@@ -1112,7 +1154,10 @@
   "qkThreeOne": "{names} ist das einzige Drei-Sterne-Restaurant {in}, die höchste Auszeichnung des Guide.",
   "qkThreeMany": "{in} gibt es {k} Drei-Sterne-Restaurants: {names}.",
   "qkThreeNoTwo": "Noch keines: Die höchste Auszeichnung {in} sind zwei Sterne, für {names}.",
-  "qkThreeNoOne": "Noch keines: Alle Sternerestaurants {in} haben einen Stern."
+  "qkThreeNoOne": "Noch keines: Alle Sternerestaurants {in} haben einen Stern.",
+  "srcTitle": "Quellen",
+  "srcGuide": "der Guide MICHELIN",
+  "srcLine": "Sterne: {guide}. Preise: die Website des jeweiligen Restaurants oder die auf seinem Kassenbon verlinkte Kritik, geprüft im {checked}. Bewertungen: {google}. Wechselkurse: {rates}."
  },
  "nl": {
   "eyebrow": "Vragen",
@@ -1177,7 +1222,10 @@
   "qkThreeOne": "{names} is het enige driesterrenrestaurant {in}, de hoogste onderscheiding van de gids.",
   "qkThreeMany": "Er zijn {k} driesterrenrestaurants {in}: {names}.",
   "qkThreeNoTwo": "Nog geen: de hoogste onderscheiding {in} is twee sterren, voor {names}.",
-  "qkThreeNoOne": "Nog geen: alle sterrenrestaurants {in} hebben één ster."
+  "qkThreeNoOne": "Nog geen: alle sterrenrestaurants {in} hebben één ster.",
+  "srcTitle": "Bronnen",
+  "srcGuide": "de MICHELIN Gids",
+  "srcLine": "Sterren: {guide}. Prijzen: de eigen website van elk restaurant of de recensie die op de bon staat, gecontroleerd in {checked}. Beoordelingen: {google}. Wisselkoersen: {rates}."
  },
  "pt": {
   "eyebrow": "Perguntas",
@@ -1242,7 +1290,10 @@
   "qkThreeOne": "{names} é o único restaurante com três estrelas {in}, a distinção máxima do Guia.",
   "qkThreeMany": "Há {k} restaurantes com três estrelas {in}: {names}.",
   "qkThreeNoTwo": "Nenhum por agora: a distinção máxima {in} são duas estrelas, de {names}.",
-  "qkThreeNoOne": "Nenhum por agora: todos os restaurantes com estrela {in} têm uma."
+  "qkThreeNoOne": "Nenhum por agora: todos os restaurantes com estrela {in} têm uma.",
+  "srcTitle": "Fontes",
+  "srcGuide": "o Guia MICHELIN",
+  "srcLine": "Estrelas: {guide}. Preços: o site de cada restaurante ou a crítica indicada no talão, verificados em {checked}. Avaliações: {google}. Taxas de câmbio: {rates}."
  },
  "nb": {
   "eyebrow": "Spørsmål",
@@ -1306,7 +1357,10 @@
   "qkThreeOne": "{names} er den eneste restauranten med tre stjerner {in}, guidens høyeste utmerkelse.",
   "qkThreeMany": "Det er {k} restauranter med tre stjerner {in}: {names}.",
   "qkThreeNoTwo": "Ingen ennå: den høyeste utmerkelsen {in} er to stjerner, som {names} har.",
-  "qkThreeNoOne": "Ingen ennå: alle stjernerestaurantene {in} har én stjerne."
+  "qkThreeNoOne": "Ingen ennå: alle stjernerestaurantene {in} har én stjerne.",
+  "srcTitle": "Kilder",
+  "srcGuide": "Guide MICHELIN",
+  "srcLine": "Stjerner: {guide}. Priser: hver restaurants egen nettside eller anmeldelsen som er lenket på kvitteringen, sjekket {checked}. Vurderinger: {google}. Valutakurser: {rates}."
  },
  "fi": {
   "eyebrow": "Kysymykset",
@@ -1371,7 +1425,10 @@
   "qkThreeOne": "{names} on ainoa kolmen tähden ravintola {in}, oppaan korkein arvio.",
   "qkThreeMany": "{in} on {k} kolmen tähden ravintolaa: {names}.",
   "qkThreeNoTwo": "Ei vielä: korkein arvio {in} on kaksi tähteä: {names}.",
-  "qkThreeNoOne": "Ei vielä: kaikilla tähtiravintoloilla {in} on yksi tähti."
+  "qkThreeNoOne": "Ei vielä: kaikilla tähtiravintoloilla {in} on yksi tähti.",
+  "srcTitle": "Lähteet",
+  "srcGuide": "MICHELIN-opas",
+  "srcLine": "Tähdet: {guide}. Hinnat: kunkin ravintolan oma verkkosivusto tai kuitissa linkitetty arvio, tarkistettu: {checked}. Arviot: {google}. Valuuttakurssit: {rates}."
  },
  "pl": {
   "eyebrow": "Pytania",
@@ -1436,7 +1493,10 @@
   "qkThreeOne": "{names} to jedyna restauracja z trzema gwiazdkami {in} – najwyższe wyróżnienie przewodnika.",
   "qkThreeMany": "Restauracje z trzema gwiazdkami {in}: {k} – {names}.",
   "qkThreeNoTwo": "Na razie żadna: najwyższe wyróżnienie {in} to dwie gwiazdki: {names}.",
-  "qkThreeNoOne": "Na razie żadna: wszystkie restauracje z gwiazdką {in} mają jedną gwiazdkę."
+  "qkThreeNoOne": "Na razie żadna: wszystkie restauracje z gwiazdką {in} mają jedną gwiazdkę.",
+  "srcTitle": "Źródła",
+  "srcGuide": "Przewodnik MICHELIN",
+  "srcLine": "Gwiazdki: {guide}. Ceny: strona każdej restauracji lub recenzja podlinkowana na paragonie, sprawdzone: {checked}. Oceny: {google}. Kursy walut: {rates}."
  },
  "cs": {
   "eyebrow": "Dotazy",
@@ -1501,7 +1561,10 @@
   "qkThreeOne": "{names} je jediná restaurace se třemi hvězdami {in} – nejvyšší ocenění průvodce.",
   "qkThreeMany": "Restaurace se třemi hvězdami {in}: {k} – {names}.",
   "qkThreeNoTwo": "Zatím žádná: nejvyšší ocenění {in} jsou dvě hvězdy: {names}.",
-  "qkThreeNoOne": "Zatím žádná: všechny restaurace s hvězdou {in} mají jednu hvězdu."
+  "qkThreeNoOne": "Zatím žádná: všechny restaurace s hvězdou {in} mají jednu hvězdu.",
+  "srcTitle": "Zdroje",
+  "srcGuide": "Průvodce MICHELIN",
+  "srcLine": "Hvězdy: {guide}. Ceny: web každé restaurace nebo recenze odkázaná na účtence, ověřeno: {checked}. Hodnocení: {google}. Směnné kurzy: {rates}."
  },
  "hu": {
   "eyebrow": "Kérdések",
@@ -1564,7 +1627,10 @@
   "qkThreeOne": "{names} az egyetlen háromcsillagos étterem {in}, ez a kalauz legmagasabb minősítése.",
   "qkThreeMany": "{in} {k} háromcsillagos étterem van: {names}.",
   "qkThreeNoTwo": "Még nincs: {in} a legmagasabb minősítés két csillag: {names}.",
-  "qkThreeNoOne": "Még nincs: {in} minden csillagos étterem egycsillagos."
+  "qkThreeNoOne": "Még nincs: {in} minden csillagos étterem egycsillagos.",
+  "srcTitle": "Források",
+  "srcGuide": "MICHELIN Kalauz",
+  "srcLine": "Csillagok: {guide}. Árak: az egyes éttermek saját weboldala vagy a blokkon hivatkozott értékelés, ellenőrizve: {checked}. Értékelések: {google}. Árfolyamok: {rates}."
  },
  "sl": {
   "eyebrow": "Vprašanja",
@@ -1629,7 +1695,10 @@
   "qkThreeOne": "{names} je edina restavracija s tremi zvezdicami {in}, najvišja ocena vodnika.",
   "qkThreeMany": "Restavracije s tremi zvezdicami {in}: {k} – {names}.",
   "qkThreeNoTwo": "Še nobene: najvišja ocena {in} sta dve zvezdici: {names}.",
-  "qkThreeNoOne": "Še nobene: vse restavracije z zvezdico {in} imajo eno zvezdico."
+  "qkThreeNoOne": "Še nobene: vse restavracije z zvezdico {in} imajo eno zvezdico.",
+  "srcTitle": "Viri",
+  "srcGuide": "Vodnik MICHELIN",
+  "srcLine": "Zvezdice: {guide}. Cene: spletna stran vsake restavracije ali ocena, povezana na računu, preverjeno: {checked}. Ocene: {google}. Menjalni tečaji: {rates}."
  },
  "hr": {
   "eyebrow": "Pitanja",
@@ -1694,7 +1763,10 @@
   "qkThreeOne": "{names} jedini je restoran s tri zvjezdice {in}, najviša ocjena vodiča.",
   "qkThreeMany": "Restorani s tri zvjezdice {in}: {k} – {names}.",
   "qkThreeNoTwo": "Još nijedan: najviša ocjena {in} su dvije zvjezdice: {names}.",
-  "qkThreeNoOne": "Još nijedan: svi restorani sa zvjezdicom {in} imaju jednu zvjezdicu."
+  "qkThreeNoOne": "Još nijedan: svi restorani sa zvjezdicom {in} imaju jednu zvjezdicu.",
+  "srcTitle": "Izvori",
+  "srcGuide": "Vodič MICHELIN",
+  "srcLine": "Zvjezdice: {guide}. Cijene: web-stranica svakog restorana ili recenzija povezana na računu, provjereno: {checked}. Ocjene: {google}. Tečajevi: {rates}."
  },
  "sr": {
   "eyebrow": "Питања",
@@ -1759,7 +1831,10 @@
   "qkThreeOne": "{names} је једини ресторан са три звездице {in}, највиша оцена водича.",
   "qkThreeMany": "Ресторани са три звездице {in}: {k} – {names}.",
   "qkThreeNoTwo": "Још ниједан: највиша оцена {in} су две звездице: {names}.",
-  "qkThreeNoOne": "Још ниједан: сви ресторани са звездицом {in} имају једну звездицу."
+  "qkThreeNoOne": "Још ниједан: сви ресторани са звездицом {in} имају једну звездицу.",
+  "srcTitle": "Извори",
+  "srcGuide": "Водич MICHELIN",
+  "srcLine": "Звездице: {guide}. Цене: веб-сајт сваког ресторана или рецензија повезана на рачуну, проверено: {checked}. Оцене: {google}. Курсеви: {rates}."
  },
  "el": {
   "eyebrow": "Ερωτήσεις",
@@ -1824,7 +1899,10 @@
   "qkThreeOne": "Το {names} είναι το μόνο εστιατόριο με τρία αστέρια {in}, η υψηλότερη διάκριση του Οδηγού.",
   "qkThreeMany": "{in} υπάρχουν {k} εστιατόρια με τρία αστέρια: {names}.",
   "qkThreeNoTwo": "Κανένα ακόμη: η υψηλότερη διάκριση {in} είναι τα δύο αστέρια: {names}.",
-  "qkThreeNoOne": "Κανένα ακόμη: όλα τα εστιατόρια με αστέρι {in} έχουν ένα αστέρι."
+  "qkThreeNoOne": "Κανένα ακόμη: όλα τα εστιατόρια με αστέρι {in} έχουν ένα αστέρι.",
+  "srcTitle": "Πηγές",
+  "srcGuide": "Οδηγός MICHELIN",
+  "srcLine": "Αστέρια: {guide}. Τιμές: ο ιστότοπος κάθε εστιατορίου ή η κριτική που συνδέεται στην απόδειξη, έλεγχος: {checked}. Βαθμολογίες: {google}. Συναλλαγματικές ισοτιμίες: {rates}."
  },
  "tr": {
   "eyebrow": "Sorular",
@@ -1887,7 +1965,10 @@
   "qkThreeOne": "{names}, {in} üç yıldızlı tek restoran; rehberin en yüksek derecesi.",
   "qkThreeMany": "{in} {k} üç yıldızlı restoran var: {names}.",
   "qkThreeNoTwo": "Henüz yok: {in} en yüksek derece iki yıldız: {names}.",
-  "qkThreeNoOne": "Henüz yok: {in} tüm yıldızlı restoranlar tek yıldızlı."
+  "qkThreeNoOne": "Henüz yok: {in} tüm yıldızlı restoranlar tek yıldızlı.",
+  "srcTitle": "Kaynaklar",
+  "srcGuide": "MICHELIN Rehberi",
+  "srcLine": "Yıldızlar: {guide}. Fiyatlar: her restoranın kendi web sitesi veya fişinde bağlantısı verilen inceleme, kontrol: {checked}. Puanlar: {google}. Döviz kurları: {rates}."
  },
  "lt": {
   "eyebrow": "Klausimai",
@@ -1950,7 +2031,10 @@
   "qkThreeOne": "{names} – vienintelis restoranas su trimis žvaigždutėmis {in}, aukščiausias gido įvertinimas.",
   "qkThreeMany": "Restoranai su trimis žvaigždutėmis {in}: {k} – {names}.",
   "qkThreeNoTwo": "Kol kas nėra: aukščiausias įvertinimas {in} – dvi žvaigždutės: {names}.",
-  "qkThreeNoOne": "Kol kas nėra: visi restoranai su žvaigždute {in} turi po vieną žvaigždutę."
+  "qkThreeNoOne": "Kol kas nėra: visi restoranai su žvaigždute {in} turi po vieną žvaigždutę.",
+  "srcTitle": "Šaltiniai",
+  "srcGuide": "MICHELIN gidas",
+  "srcLine": "Žvaigždutės: {guide}. Kainos: kiekvieno restorano svetainė arba ant kvito nurodyta apžvalga, patikrinta: {checked}. Įvertinimai: {google}. Valiutų kursai: {rates}."
  },
  "lv": {
   "eyebrow": "Jautājumi",
@@ -2013,7 +2097,10 @@
   "qkThreeOne": "{names} ir vienīgais restorāns ar trim zvaigznēm {in} – ceļveža augstākais novērtējums.",
   "qkThreeMany": "Restorāni ar trim zvaigznēm {in}: {k} – {names}.",
   "qkThreeNoTwo": "Pagaidām nav: augstākais novērtējums {in} ir divas zvaigznes: {names}.",
-  "qkThreeNoOne": "Pagaidām nav: visiem restorāniem ar zvaigzni {in} ir viena zvaigzne."
+  "qkThreeNoOne": "Pagaidām nav: visiem restorāniem ar zvaigzni {in} ir viena zvaigzne.",
+  "srcTitle": "Avoti",
+  "srcGuide": "MICHELIN ceļvedis",
+  "srcLine": "Zvaigznes: {guide}. Cenas: katra restorāna tīmekļvietne vai čekā norādītā atsauksme, pārbaudīts: {checked}. Vērtējumi: {google}. Valūtu kursi: {rates}."
  },
  "et": {
   "eyebrow": "Küsimused",
@@ -2078,7 +2165,10 @@
   "qkThreeOne": "{names} on ainus kolme tärniga restoran {in}, juhi kõrgeim hinnang.",
   "qkThreeMany": "{in} on {k} kolme tärniga restorani: {names}.",
   "qkThreeNoTwo": "Veel mitte: kõrgeim hinnang {in} on kaks tärni: {names}.",
-  "qkThreeNoOne": "Veel mitte: kõigil tärniga restoranidel {in} on üks tärn."
+  "qkThreeNoOne": "Veel mitte: kõigil tärniga restoranidel {in} on üks tärn.",
+  "srcTitle": "Allikad",
+  "srcGuide": "MICHELIN Guide",
+  "srcLine": "Tärnid: {guide}. Hinnad: iga restorani oma veebisait või tšekil viidatud arvustus, kontrollitud: {checked}. Hinnangud: {google}. Vahetuskursid: {rates}."
  },
  "mt": {
   "eyebrow": "Mistoqsijiet",
@@ -2143,7 +2233,10 @@
   "qkThreeOne": "{names} hu l-uniku ristorant bi tliet stilel {in}, l-ogħla grad tal-Gwida.",
   "qkThreeMany": "Ristoranti bi tliet stilel {in}: {k} – {names}.",
   "qkThreeNoTwo": "L-ebda wieħed għalissa: l-ogħla grad {in} huwa ta' żewġ stilel: {names}.",
-  "qkThreeNoOne": "L-ebda wieħed għalissa: ir-ristoranti kollha bi stilla {in} għandhom stilla waħda."
+  "qkThreeNoOne": "L-ebda wieħed għalissa: ir-ristoranti kollha bi stilla {in} għandhom stilla waħda.",
+  "srcTitle": "Sorsi",
+  "srcGuide": "il-Gwida MICHELIN",
+  "srcLine": "Stilel: {guide}. Prezzijiet: is-sit ta’ kull restorant jew ir-reviżjoni marbuta mal-irċevuta, iċċekkjati: {checked}. Klassifikazzjonijiet: {google}. Rati tal-kambju: {rates}."
  },
  "ms": {
   "eyebrow": "Soalan",
@@ -2206,7 +2299,10 @@
   "qkThreeOne": "{names} ialah satu-satunya restoran tiga bintang {in}, penarafan tertinggi Panduan.",
   "qkThreeMany": "Terdapat {k} restoran tiga bintang {in}: {names}.",
   "qkThreeNoTwo": "Belum ada: penarafan tertinggi {in} ialah dua bintang, dimiliki oleh {names}.",
-  "qkThreeNoOne": "Belum ada: semua restoran berbintang {in} mempunyai satu bintang."
+  "qkThreeNoOne": "Belum ada: semua restoran berbintang {in} mempunyai satu bintang.",
+  "srcTitle": "Sumber",
+  "srcGuide": "Panduan MICHELIN",
+  "srcLine": "Bintang: {guide}. Harga: laman web setiap restoran atau ulasan yang dipautkan pada resitnya, disemak: {checked}. Penilaian: {google}. Kadar pertukaran: {rates}."
  },
  "fil": {
   "eyebrow": "Mga tanong",
@@ -2270,7 +2366,10 @@
   "qkThreeOne": "Ang {names} ang nag-iisang three-star na restawran {in}, ang pinakamataas na rating ng Guide.",
   "qkThreeMany": "May {k} three-star na restawran {in}: {names}.",
   "qkThreeNoTwo": "Wala pa: ang pinakamataas na rating {in} ay two stars, hawak ng {names}.",
-  "qkThreeNoOne": "Wala pa: lahat ng restawran na may bituin {in} ay may isang bituin."
+  "qkThreeNoOne": "Wala pa: lahat ng restawran na may bituin {in} ay may isang bituin.",
+  "srcTitle": "Mga pinagkunan",
+  "srcGuide": "MICHELIN Guide",
+  "srcLine": "Bituin: {guide}. Presyo: sariling website ng bawat restawran o ang review na naka-link sa resibo nito, sinuri: {checked}. Rating: {google}. Palitan ng pera: {rates}."
  },
  "vi": {
   "eyebrow": "Hỏi đáp",
@@ -2333,7 +2432,10 @@
   "qkThreeOne": "{names} là nhà hàng ba sao duy nhất {in}, hạng cao nhất của Cẩm nang.",
   "qkThreeMany": "Có {k} nhà hàng ba sao {in}: {names}.",
   "qkThreeNoTwo": "Chưa có: hạng cao nhất {in} là hai sao, thuộc về {names}.",
-  "qkThreeNoOne": "Chưa có: mọi nhà hàng có sao {in} đều được một sao."
+  "qkThreeNoOne": "Chưa có: mọi nhà hàng có sao {in} đều được một sao.",
+  "srcTitle": "Nguồn",
+  "srcGuide": "Sách hướng dẫn MICHELIN",
+  "srcLine": "Sao: {guide}. Giá: trang web của từng nhà hàng hoặc bài đánh giá được liên kết trên hóa đơn, kiểm tra: {checked}. Đánh giá: {google}. Tỷ giá: {rates}."
  },
  "ar": {
   "eyebrow": "أسئلة",
@@ -2396,6 +2498,9 @@
   "qkThreeOne": "{names} هو المطعم الوحيد بثلاث نجوم {in}، وهي أعلى تصنيف في الدليل.",
   "qkThreeMany": "عدد المطاعم بثلاث نجوم {in}: {k}، وهي: {names}.",
   "qkThreeNoTwo": "لا يوجد بعد: أعلى تصنيف {in} هو نجمتان: {names}.",
-  "qkThreeNoOne": "لا يوجد بعد: جميع المطاعم الحاصلة على نجوم {in} لديها نجمة واحدة."
+  "qkThreeNoOne": "لا يوجد بعد: جميع المطاعم الحاصلة على نجوم {in} لديها نجمة واحدة.",
+  "srcTitle": "المصادر",
+  "srcGuide": "دليل ميشلان",
+  "srcLine": "النجوم: {guide}. الأسعار: الموقع الإلكتروني لكل مطعم أو المراجعة المرتبطة بإيصاله، تاريخ التحقق: {checked}. التقييمات: {google}. أسعار الصرف: {rates}."
  }
 }

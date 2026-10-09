@@ -5,8 +5,8 @@
 
 SITE_DIR is a folder holding a fresh copy of the site with _site/ already built (python3 build.py). The audit
 checks every page (titles, descriptions, headings, structured data, broken links, sitemap, page weight), the internal
-links (orphan pages, pages with few links in or out, self-links, vague anchor text, and the guides' own links) and the
-restaurant data (missing prices, ratings, chefs, positions, duplicates, odd prices), the MICHELIN Guide ceremonies
+links (orphan pages, pages with few links in or out, self-links, vague anchor text, and the guides' own links), guides
+and pages without their Sources, the restaurant data (missing prices, ratings, chefs, positions, duplicates, odd prices), the MICHELIN Guide ceremonies
 (stars announced since our files caught up, ceremonies in the next two weeks), then the live site's
 basics (HTTPS, redirects, 404 page, robots.txt, sitemap). It writes the figures to OUT.json and prints a
 plain report; with PREVIOUS.json it also says what changed since then. It only reads; nothing is changed.
@@ -77,6 +77,12 @@ def page_checks(site):
         # Destination pages with starred restaurants carry a FAQ (destination_faq() in build.py), in the page and as FAQPage data.
         if '<ol class="prerender"><li>' in s and not ('<section id="faq">' in s and '"FAQPage"' in s):
             out["destination_without_faq"].append(url)
+        # Every guide ends with a dated "Sources" list (its `sources`), and every starred destination and restaurant page
+        # has a "Sources" line (place_sources_html(), restaurant_sources_html() in build.py).
+        if re.match(r"^/guides/[^/]+/$", url) and not re.search(r'<section class="guide-sources" id="sources"><h2>Sources</h2><ul><li>', s):
+            out["guide_without_sources"].append(url)
+        if ('<ol class="prerender"><li>' in s or url.startswith("/restaurants/")) and 'class="method-sources"' not in s:
+            out["page_without_sources"].append(url)
         m = re.search(r'og:image" content="https://starredbill.com(/[^"]+)"', s)
         if m and m.group(1).lstrip("/") not in files:
             out["missing_preview_picture"].append(url)

@@ -293,6 +293,34 @@ GUIDE_SECTIONS = {
     "no-stars": ("No stars yet", "Big food countries the MICHELIN Guide hasn’t starred, and when that might change."),
 }
 GUIDE_FIELDS = ("title", "description", "h1", "summary", "published", "updated", "body")
+# A guide's `sources` (9 Oct 2026): the outside sources its facts come from, listed under the article as "Sources". Each has
+# a title, publisher and url, and a date (when it was published) or checked (when we read a live page, such as the
+# MICHELIN Guide's own listings), as 2026, 2026-05 or 2026-05-18; an optional note says what it's the source for. A guide's
+# optional `sourcesNote` adds a sentence under the list (e.g. that each date in its tables links to its own source). Only
+# sources actually used: no competitors, booking sites or affiliate links (SOURCE_NOT_HOSTS).
+SOURCE_DATE = re.compile(r"\d{4}(-\d{2}(-\d{2})?)?")
+SOURCE_NOT_HOSTS = ("tripadvisor.", "thefork.", "opentable.", "resy.com", "exploretock.com", "sevenrooms.com", "tablecheck.com",
+                    "booking.com", "awin1.com", "skimresources.com", "redirectingat.com", "amzn.", "amazon.")
+
+
+def source_problem(s):
+    """What's wrong with a sources entry, in plain English, or None."""
+    for field in ("title", "publisher"):
+        if not isinstance(s.get(field), str) or not s[field].strip():
+            return f"needs a {field}"
+    if not re.fullmatch(r"https://[^\s\"<>]+", s["url"]):
+        return "url must be a full https:// link"
+    host = urllib.parse.urlsplit(s["url"]).netloc.lower()
+    if any(h in host for h in SOURCE_NOT_HOSTS) or re.search(r"[?&](ref|aff|affiliate|tag|utm_\w+)=", s["url"]):
+        return "no booking sites, competitors or affiliate links in sources"
+    for field in ("date", "checked"):
+        if s.get(field) and not SOURCE_DATE.fullmatch(str(s[field])):
+            return f"{field} must be like 2026, 2026-05 or 2026-05-18"
+    if not s.get("date") and not s.get("checked"):
+        return "needs a date (when it was published) or checked (when we read it)"
+    return None
+
+
 for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").exists() else []:
     where = f"guides/{path.name}"
     g = tidy(read_json(path) or {})
@@ -323,6 +351,11 @@ for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").
     g["keywords"] = [k.strip() for k in g.get("keywords", []) if isinstance(k, str) and k.strip()]
     if not isinstance(g.get("places", []), list) or any(i not in places for i in g.get("places", [])):
         problem(where, "places must be a list of place ids (file names in content/places), e.g. [\"london\"]")
+    g["sources"] = [tidy(s) for s in g.get("sources", []) if isinstance(s, dict) and tidy(s).get("url")]
+    for s in g["sources"]:
+        bad = source_problem(s)
+        if bad:
+            problem(where, f"sources entry {s.get('title') or s['url']}: {bad}")
     g["picks"] = [tidy(p) for p in g.get("picks", []) if isinstance(p, dict) and tidy(p).get("restaurant") and tidy(p).get("text")]
     for p in g["picks"]:
         if p["restaurant"] not in {r["id"] for r in restaurants}:
@@ -856,7 +889,7 @@ def build_place(p):
             "answer": answer, "quick": quick_html(quick, page, lang), "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
             "newStars": new_stars_html(p, page, lang), "localNote": local_note_html(p, note),
             "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq_ld, SITE_URL + lang_paths[lang], titles[lang], day),
-            "updated": updated,
+            "updated": updated, "sources": place_sources_html(p, lang) if starred else "",
             "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang),
             "browse": browse_html(p, page, starred, lang) if starred else "",
         }), lang, page, starred, inherited(p, "michelinGuideUrl")), page, lang))
@@ -1022,6 +1055,7 @@ def translated_texts(page, lang, starred):
             "heroText": text, "crumbHome": word(lang, "crumbHome", values)}
 
 FAQ_WORDS = read_json(SRC / "faq-words.json")
+EXCHANGE_RATES = ("ExchangeRate-API", "https://www.exchangerate-api.com/")  # where place.js's open.er-api.com rates come from
 
 
 def read_months():
@@ -1341,6 +1375,21 @@ def section_words(html_text, lang, page, starred, michelin_url=None):
         text = e(own[key]) if own.get(key) else word(lang, swap.get(key, key), {})
         return m.group(1) + text + m.group(4)
     return re.sub(r'(<(\w+)\b[^>]*\bdata-i18n="(\w+)"[^>]*>)(</\2>)', fill, html_text)
+
+
+def place_sources_html(p, lang):
+    """The "Sources" line under "How the prices are counted" on a destination page, in its language (srcTitle, srcGuide,
+    srcLine in src/faq-words.json): the MICHELIN Guide's selection (the place's michelinGuideUrl), where the prices come
+    from and the month they were checked, Google ratings and the exchange rates."""
+    words = {**FAQ_WORDS["en"], **(FAQ_WORDS.get(lang) or {})}
+    iso = (lambda h: f"<bdi>{h}</bdi>") if lang in RTL_LANGUAGES else (lambda h: h)
+    url = inherited(p, "michelinGuideUrl")
+    guide = f'<a href="{e(url)}" target="_blank" rel="noopener">{e(words["srcGuide"])}</a>' if url else e(words["srcGuide"])
+    links = {"guide": guide, "checked": e(month_year(site.get("updated", "")[:7], lang)),
+             "google": iso('<a href="https://www.google.com/maps" target="_blank" rel="noopener">Google Maps</a>'),
+             "rates": iso(f'<a href="{EXCHANGE_RATES[1]}" target="_blank" rel="noopener">{EXCHANGE_RATES[0]}</a>')}
+    line = re.sub(r"\{(\w+)\}", lambda m: links.get(m.group(1), m.group(0)), e(words["srcLine"]))
+    return f'<p class="method-sources" id="sources"><strong>{e(words["srcTitle"])}</strong> {line}</p>'
 
 
 def tiers_html(starred, currency, lang):
@@ -4343,11 +4392,38 @@ def results_guide(g):
         "figure": f"Next: {short_date(nxt['date'])}" if nxt else f"Revealed {short_date(latest['date'])}",
         "published": cfg.get("published") or updated, "updated": updated,
         "keywords": [f"michelin guide {short.lower()} {year}"] + [k for k in cfg.get("keywords", []) if isinstance(k, str)],
-        "body": body, "faq": [], "picks": [],
+        "body": body, "faq": [], "picks": [], "sources": results_sources(g, eds), "_ownData": True,
         # For the FAQPage data: the two question headings and the answer under each.
         "ldFaq": [{"q": q_count, "a": strip(answer)}, {"q": q_next, "a": strip(when)}],
         "_linkText": f"{name} {year} results", "_rank": head["date"],
     }
+
+
+# Publishers' names for the hosts of ceremony sources (content/ceremonies.json), for a results page's Sources list.
+SOURCE_HOSTS = {"guide.michelin.com": "MICHELIN Guide", "michelinmedia.com": "Michelin", "michelin.com": "Michelin",
+                "gulfnews.com": "Gulf News", "sethlui.com": "Seth Lui", "whatsnewindonesia.com": "What’s New Indonesia",
+                "grimaldiforum.com": "Grimaldi Forum Monaco", "destinationvancouver.com": "Destination Vancouver"}
+
+
+def source_publisher(url):
+    host = urllib.parse.urlsplit(url).netloc.lower().replace("www.", "")
+    return next((n for h, n in SOURCE_HOSTS.items() if host == h or host.endswith("." + h)), host)
+
+
+def results_sources(g, eds):
+    """A results page's sources: the guide's starred restaurants on guide.michelin.com, then the announcement of each
+    edition the page covers (each ceremony's `source` in ceremonies.json)."""
+    out = []
+    url = next((inherited(places[p], "michelinGuideUrl") for p in g.get("places", []) if p in places and inherited(places[p], "michelinGuideUrl")), None)
+    if url:
+        out.append({"title": f"{g['name']}: every starred restaurant", "publisher": "MICHELIN Guide", "url": url,
+                    "checked": (g.get("starsUpdated") or site.get("updated", ""))[:7]})
+    for ed in eds:
+        c = next((c for c in g.get("ceremonies", []) if c.get("date") == ed["date"]), None)
+        if c and c.get("source", "").startswith("https://") and c["source"] not in [s["url"] for s in out]:
+            out.append({"title": f"The {g['name']} {ed['edition']}" + (" stars, published online" if c.get("online") else " ceremony"),
+                        "publisher": source_publisher(c["source"]), "url": c["source"], "date": ed["date"]})
+    return out
 
 
 def add_results_guides():
@@ -5112,6 +5188,54 @@ def guide_bodies():
     return _guide_bodies
 
 
+def rates_day(lang="en-GB"):
+    """ " (2 October 2026)": the day of the exchange rates in currencies.json, which the build converts with."""
+    d = currency_data.get("rateDate") or ""
+    return f" ({source_date(d, lang)})" if SOURCE_DATE.fullmatch(d) else ""
+
+
+def source_date(d, lang):
+    """A source's date as the guide writes dates: 2026-05-18 -> 18 May 2026 (or May 18, 2026), 2026-05 -> May 2026."""
+    d = str(d)
+    if len(d) == 10:
+        return (uk_date if lang == "en-GB" else us_date)(d)
+    return f"{MONTH_NAMES[int(d[5:7]) - 1]} {d[:4]}" if len(d) == 7 else d
+
+
+def guide_sources_html(g, stats):
+    """The "Sources" list at the end of a guide: each outside source, dated, then where the figures drawn from our own
+    data come from (guides whose figures and tables are filled in by the build)."""
+    lang = g.get("lang", "en-US")
+    items = []
+    for s in g.get("sources", []):
+        when = (", " + source_date(s["date"], lang)) if s.get("date") else ""
+        when += f" (checked {source_date(str(s['checked'])[:7], lang)})" if s.get("checked") else ""
+        items.append(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["title"])}</a>, {e(s["publisher"])}{e(when)}.'
+                     + (f' {e(s["note"])}' if s.get("note") else "") + "</li>")
+    own = f'<p class="guide-sources-own">{e(g["sourcesNote"])}</p>' if g.get("sourcesNote") else ""
+    if g.get("_ownData") or "{{" in g.get("body", "") or g.get("picks"):
+        name, url = EXCHANGE_RATES
+        own += (f'<p class="guide-sources-own">Prices and counts are The Starred Bill’s own data on {stats["total"]} starred restaurants: '
+               f'stars from each country’s latest MICHELIN Guide, menu prices from each restaurant’s own website or, where it publishes none, '
+               f'a recent review, checked {e(stats["checked"])}. US dollar figures use exchange rates from '
+               f'<a href="{url}" target="_blank" rel="noopener">{name}</a>' + rates_day(lang) + '.</p>')
+    if not items and not own:
+        return ""
+    return ('<section class="guide-sources" id="sources"><h2>Sources</h2>'
+            + (f'<ul>{"".join(items)}</ul>' if items else "") + own + "</section>")
+
+
+def guide_citations(g):
+    """The guide's sources for its Article structured data (schema.org citation)."""
+    out = []
+    for s in g.get("sources", []):
+        c = {"@type": "CreativeWork", "name": s["title"], "url": s["url"], "publisher": {"@type": "Organization", "name": s["publisher"]}}
+        if s.get("date"):
+            c["datePublished"] = str(s["date"])
+        out.append(c)
+    return out
+
+
 def build_guides():
     """Each guide at /guides/<name>/, and a list of them at /guides/."""
     if not guides:
@@ -5136,7 +5260,9 @@ def build_guides():
                 f'fetchpriority="high" decoding="async"></figure>\n') if img else ""
         main = (f'<article lang="{e(g.get("lang", "en-US"))}">\n<h1>{e(g["h1"])}</h1>\n'
                 f'<p class="prose-date">Updated {(uk_date if g.get("lang") == "en-GB" else us_date)(g["updated"])} · Star counts and prices checked {stats["checked"]}</p>\n'
-                f'{hero}{body}\n{faq_html}\n</article>')
+                f'{hero}{body}\n{faq_html}\n{guide_sources_html(g, stats)}\n</article>')
+        if not g.get("sources"):
+            print(f"  Guide {g['id']}: lists no sources; add the outside sources its facts come from (see README)")
         strip = lambda t: re.sub(r"<[^>]+>", "", t)
         graph = [
             {"@type": "BreadcrumbList", "itemListElement": [
@@ -5148,7 +5274,8 @@ def build_guides():
              **({"keywords": ", ".join(g["keywords"])} if g["keywords"] else {}),
              "image": [SITE_URL + img + ".jpg", SITE_URL + img + "-og.jpg"] if img else SITE_URL + "/og/default.png",
              "author": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
-             "publisher": ORGANIZATION, "isPartOf": {"@id": WEBSITE["@id"]}},
+             "publisher": ORGANIZATION, "isPartOf": {"@id": WEBSITE["@id"]},
+             **({"citation": guide_citations(g)} if g.get("sources") else {})},
         ]
         # Results pages put their questions in as headings (no separate FAQ), so the FAQPage data comes from those.
         questions = faqs or g.get("ldFaq") or []
@@ -5985,10 +6112,48 @@ def build_restaurant_pages():
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": '<a href="/">All destinations</a>' + "".join(f'<a href="{c["path"]}">{e(c["name"])}</a>' for c in crumbs) + f'<span aria-current="page">{e(r["name"])}</span>',
             "hero": hero, "main": pay_html + history_html(r) + cheaper + book + visit + facts_html + compare_html
-            + may_like_html(r, live, {q["id"] for km, q in near} | {q["id"] for q in compare_shown}) + near_html + guides_block, "data": as_json(data),
+            + may_like_html(r, live, {q["id"] for km, q in near} | {q["id"] for q in compare_shown}) + near_html + guides_block + restaurant_sources_html(r, mg.get(r["id"])), "data": as_json(data),
         })
         # Dollar prices on a US restaurant's page read "$350", as the guides write them.
         write(path, page_html.replace("US$", "$") if cur == "USD" else page_html)
+
+
+def restaurant_sources_html(r, michelin_url):
+    """One "Sources" line at the foot of a restaurant page: its own website, its page in the MICHELIN Guide (stars, and the
+    opening hours and dietary options taken from it), where each price comes from and when it was checked, the booking
+    details, the Internet Archive copies behind the past prices, the Google rating and the exchange rates."""
+    a = lambda u, text: f'<a href="{e(u)}" target="_blank" rel="noopener">{e(text)}</a>'
+    host = lambda u: urllib.parse.urlsplit(u).netloc.replace("www.", "")
+    parts = []
+    if r.get("website"):
+        parts.append("Restaurant: " + a(r["website"], host(r["website"])))
+    if michelin_url:
+        parts.append("Stars" + (", opening hours" if hours_lines(r) else "") + (" and dietary options" if r.get("diets") else "")
+                     + ": " + a(michelin_url, f"{r['name']} in the MICHELIN Guide"))
+    prices = []
+    if r.get("menusSource"):
+        prices.append(a(r["menusSource"], "the restaurant’s menus"))
+    else:
+        for label, url, typ in (("dinner" + (" and wine" if r.get("wine") else ""), r.get("source"), r.get("sourceType")),
+                                ("lunch", r.get("lunchSource"), r.get("lunchSourceType"))):
+            if url and typ != "none":
+                if prices and url in prices[-1]:
+                    prices[-1] = prices[-1].replace(")", f" and {label})")
+                else:
+                    prices.append(a(url, "the restaurant’s website" if typ == "site" else host(url)) + f" ({label})")
+    if prices:
+        checked = nice_date(r["menusChecked"]) if r.get("menusChecked") else guide_stats_checked()
+        parts.append("Prices: " + ", ".join(prices) + f", checked {e(checked)}")
+    if r.get("infoSource"):
+        parts.append("Booking and visiting: " + a(r["infoSource"], "the restaurant’s website")
+                     + (f", checked {e(nice_date(r['infoChecked']))}" if r.get("infoChecked") else ""))
+    if any("web.archive.org" in (h.get("source") or "") for h in r.get("priceHistory", [])):
+        parts.append("Past prices: " + a("https://web.archive.org/", "Internet Archive") + " copies of its menu page")
+    if r.get("rating"):
+        parts.append("Rating: " + a("https://www.google.com/maps", "Google Maps") + f", checked {RATINGS_CHECKED}")
+    parts.append("Exchange rates: " + a(EXCHANGE_RATES[1], EXCHANGE_RATES[0]) + rates_day())
+    return ('<section id="sources" class="rp-sources">\n  <div class="wrap">\n    <p class="method-sources"><strong>Sources</strong> '
+            + ". ".join(parts) + ".</p>\n  </div>\n</section>\n")
 
 
 def restaurant_guides(r):

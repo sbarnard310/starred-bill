@@ -44,5 +44,25 @@
       "a": "{{kosherTotal}} in {{kosherCountries}} countries, as of {{checked}}: {{kosherSplit}} restaurants. Only Mutra in Miami is a kosher restaurant."
     }
   ],
-  "imageAlt": "Illustration of a fine-dining table with a braided challah, two lit brass candlesticks, roast lamb with pomegranate seeds, tahini and a glass of red wine, beside a paper bill and three gold stars."
+  "imageAlt": "Illustration of a fine-dining table with a braided challah, two lit brass candlesticks, roast lamb with pomegranate seeds, tahini and a glass of red wine, beside a paper bill and three gold stars.",
+  "sources": [
+    {
+      "title": "The MICHELIN Guide’s First-Ever Starred Kosher Restaurant Is Raising the Bar in Miami",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/article/dining-out/he-michelin-guide-s-first-ever-starred-kosher-restaurant-is-raising-the-bar-in-miami",
+      "date": "2026-06-26"
+    },
+    {
+      "title": "Mutra",
+      "publisher": "Kosher Miami (Vaad Hakashrus of Miami-Dade)",
+      "url": "https://koshermiami.org/establishments/Mutra",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Barcelona gets world’s first Michelin-starred kosher dining experience amid push to draw Jewish tourists",
+      "publisher": "Jewish Telegraphic Agency",
+      "url": "https://www.jta.org/2022/07/15/global/barcelona-gets-worlds-first-michelin-starred-kosher-restaurant-amid-push-to-draw-jewish-tourists",
+      "date": "2022-07-15"
+    }
+  ]
 }

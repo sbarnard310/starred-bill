@@ -45,5 +45,39 @@
       "a": "The ceremonies are invitation-only, but most are streamed live on the MICHELIN Guide’s YouTube channel, and the new stars go up on its website and app the same day."
     }
   ],
-  "imageAlt": "Illustration of a green tablecloth set for an awards evening: a cream envelope with a gold star seal, a glass of champagne, a small plated course, a curled paper bill and scattered gold stars."
+  "imageAlt": "Illustration of a green tablecloth set for an awards evening: a cream envelope with a gold star seal, a glass of champagne, a small plated course, a curled paper bill and scattered gold stars.",
+  "sources": [
+    {
+      "title": "Glasgow to Host The MICHELIN Guide Ceremony Great Britain & Ireland 2025",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/gb/en/article/news-and-views/glasgow-to-host-the-michelin-guide-ceremony-great-britain-ireland-2025",
+      "date": "2024-10-24"
+    },
+    {
+      "title": "Dublin to Host The MICHELIN Guide Ceremony 2026",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/gb/en/article/news-and-views/dublin-host-michelin-guide-ceremony-2026",
+      "date": "2025-10-22"
+    },
+    {
+      "title": "Moselle Territory Will Host The MICHELIN Guide Ceremony France 2025!",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/article/michelin-guide-ceremony/metz-host-michelin-guide-france-2025",
+      "date": "2024-10-15"
+    },
+    {
+      "title": "MICHELIN Guide Ceremony",
+      "publisher": "Grimaldi Forum Monaco",
+      "url": "https://www.grimaldiforum.com/en/events-schedule-monaco/michelin-guide-ceremony",
+      "checked": "2026-10",
+      "note": "France’s 2026 ceremony."
+    },
+    {
+      "title": "The MICHELIN Guide Debuts in the American Southwest",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-arizona-colorado-nevada-new-mexico-utah",
+      "date": "2025-12-08"
+    }
+  ],
+  "sourcesNote": "Each date in the tables links to the announcement it comes from, most of them on the MICHELIN Guide’s own website."
 }

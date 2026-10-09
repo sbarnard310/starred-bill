@@ -32,5 +32,25 @@
       "a": "A MICHELIN Guide editorial platform, launched in June 2026, that profiles chefs, hoteliers and wine producers pioneering new approaches. It tells the stories of people rather than giving restaurants an award or symbol."
     }
   ],
-  "imageAlt": "Illustration of a kitchen-garden table: fresh vegetables, herbs and edible flowers beside a plated vegetable dish and a small green star."
+  "imageAlt": "Illustration of a kitchen-garden table: fresh vegetables, herbs and edible flowers beside a plated vegetable dish and a small green star.",
+  "sources": [
+    {
+      "title": "What is a MICHELIN Green Star?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/qa/en/article/features/what-is-a-michelin-green-star-dubai",
+      "date": "2022-08-02"
+    },
+    {
+      "title": "The MICHELIN Guide introduces Mindful Voices",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-introduces-mindful-voices",
+      "date": "2026-05-18"
+    },
+    {
+      "title": "7 New Green Stars Announced for Great Britain & Ireland 2026",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/gb/en/article/michelin-guide-ceremony/green-stars-sustainable-gastronomy-great-britain-uk-ireland-full-list-new",
+      "date": "2026-02-09"
+    }
+  ]
 }

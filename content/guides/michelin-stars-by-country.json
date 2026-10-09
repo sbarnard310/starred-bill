@@ -41,5 +41,37 @@
       "a": "{{total}}: {{n1}} with one star, {{n2}} with two and {{n3}} with three, across {{countries}} countries and territories."
     }
   ],
-  "imageAlt": "Illustration of a world-map tablecloth with small plates and a wine glass laid around it."
+  "imageAlt": "Illustration of a world-map tablecloth with small plates and a wine glass laid around it.",
+  "sources": [
+    {
+      "title": "All starred restaurants in the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/restaurants/all-starred",
+      "checked": "2026-10"
+    },
+    {
+      "title": "About the MICHELIN Guide",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/about-us",
+      "checked": "2026-10"
+    },
+    {
+      "title": "New Zealand: first MICHELIN Guide selection unveiled",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/new-zealand-first-michelin-guide-selection",
+      "date": "2026-07-01"
+    },
+    {
+      "title": "Just Unveiled: Saudi Arabia’s First-Ever MICHELIN Guide Selection",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/gb/en/article/michelin-guide-ceremony/saudi-arabia-inaugural-michelin-guide-restaurant-selection",
+      "date": "2025-12-15"
+    },
+    {
+      "title": "The MICHELIN Guide Debuts in the American Southwest",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-arizona-colorado-nevada-new-mexico-utah",
+      "date": "2025-12-08"
+    }
+  ]
 }

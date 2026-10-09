@@ -37,5 +37,25 @@
       "a": "Only where Michelin publishes a guide. There are starred restaurants in {{countries}} countries and territories today; countries without a guide, such as <a data-guide=\"michelin-star-restaurants-australia\">Australia</a> and <a data-guide=\"michelin-star-restaurants-india\">India</a>, have no stars yet. See <a data-guide=\"michelin-stars-by-country\">Michelin stars by country</a>."
     }
   ],
-  "imageAlt": "Illustration of an inspector's table for one: a plated course, a wine glass and a dark green notebook with a fountain pen."
+  "imageAlt": "Illustration of an inspector's table for one: a plated course, a wine glass and a dark green notebook with a fountain pen.",
+  "sources": [
+    {
+      "title": "Everything You Want to Know About the MICHELIN Guide Inspectors",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/us/en/article/features/everything-you-want-to-know-about-the-michelin-guide-inspectors",
+      "date": "2025-06-25"
+    },
+    {
+      "title": "What is a MICHELIN Star?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/article/features/what-is-a-michelin-star",
+      "date": "2025-11-12"
+    },
+    {
+      "title": "Michelin guide allows pressured French chef to hand back his three stars",
+      "publisher": "The Local France",
+      "url": "https://www.thelocal.fr/20180130/michelin-guide-allows-french-chef-to-hand-back-his-stars",
+      "date": "2018-01-30"
+    }
+  ]
 }

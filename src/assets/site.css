@@ -357,6 +357,10 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .method h3 { font-size: 1.15rem; }
 .method p { color: var(--muted); font-size: .95rem; }
 .method p a { color: var(--green); font-weight: 600; text-underline-offset: 3px; }
+/* The "Sources" line under the three method cards (place_sources_html() in build.py). */
+.method-sources { margin: 26px 0 0; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; line-height: 1.6; max-width: 90ch; }
+.method-sources strong { color: var(--ink); margin-right: 6px; }
+.method-sources a { color: var(--green); text-underline-offset: 3px; }
 /* Destination FAQ (destination_faq() in build.py): two columns of questions on computers, one on phones. */
 .faq { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; }
 .faq div { display: grid; gap: 8px; align-content: start; }
@@ -964,6 +968,12 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 .timeline li { padding-left: 16px; position: relative; }
 .timeline li::before { content: ""; position: absolute; left: -6px; top: .55em; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); }
 .guide-faq { margin-top: 36px; border-top: 1px solid var(--line); padding-top: 6px; }
+/* "Sources" at the end of a guide (`sources` in its JSON): small print, each source on its own line, dated. */
+.guide-sources { margin-top: 36px; border-top: 1px solid var(--line); padding-top: 6px; font-size: .9rem; color: var(--muted); }
+.guide-sources h2 { font-size: 1.1rem; color: var(--ink); }
+.guide-sources ul { padding-left: 18px; margin: 0 0 12px; }
+.guide-sources li { margin-bottom: 6px; line-height: 1.5; overflow-wrap: anywhere; }
+.guide-sources-own { margin: 0; }
 /* Featured picture under a guide's date line (src/img/guides/, see docs/image-style.md). */
 .guide-hero { margin: 20px 0 22px; }
 .guide-hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); background: var(--line); }

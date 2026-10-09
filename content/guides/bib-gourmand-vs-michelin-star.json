@@ -33,5 +33,31 @@
       "a": "Yes. It means anonymous Michelin inspectors judged the food to be high quality and great value. Many diners use the Bib list as their everyday guide and save starred restaurants for special occasions."
     }
   ],
-  "imageAlt": "Illustration of two tables side by side: a hearty bistro bowl with bread and red wine, and a refined tasting course with a gold star."
+  "imageAlt": "Illustration of two tables side by side: a hearty bistro bowl with bread and red wine, and a refined tasting course with a gold star.",
+  "sources": [
+    {
+      "title": "What Is The MICHELIN Bib Gourmand Award?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/us/en/article/features/the-bib-gourmand",
+      "date": "2025-11-18"
+    },
+    {
+      "title": "What is a MICHELIN Star?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/article/features/what-is-a-michelin-star",
+      "date": "2025-11-12"
+    },
+    {
+      "title": "Beyond Stars: What Does It Mean To Be A Michelin-Recommended Restaurant?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/article/features/what-it-means-listed-Michelin-guide",
+      "date": "2017-06-15"
+    },
+    {
+      "title": "What is a MICHELIN Green Star?",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/qa/en/article/features/what-is-a-michelin-green-star-dubai",
+      "date": "2022-08-02"
+    }
+  ]
 }

@@ -35,5 +35,25 @@
       "a": "Tamarind and Zaika both won a star in 2001, under chefs Atul Kochhar and Vineet Bhatia. They were the first Indian restaurants anywhere to be awarded one."
     }
   ],
-  "imageAlt": "Illustration of a modern Indian tasting menu in small brass bowls, with naan and spices, and the London skyline through the window."
+  "imageAlt": "Illustration of a modern Indian tasting menu in small brass bowls, with naan and spices, and the London skyline through the window.",
+  "sources": [
+    {
+      "title": "London: every starred restaurant",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/gb/greater-london/london/restaurants/all-starred",
+      "checked": "2026-10"
+    },
+    {
+      "title": "Where to Eat MICHELIN-Starred Indian Cuisine in London, Dubai and Beyond",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/ca/en/article/travel/michelin-starred-indian-restaurants",
+      "date": "2026-02-25"
+    },
+    {
+      "title": "The MICHELIN Guide Great Britain & Ireland 2026",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-great-britain-ireland-2026",
+      "date": "2026-02-10"
+    }
+  ]
 }

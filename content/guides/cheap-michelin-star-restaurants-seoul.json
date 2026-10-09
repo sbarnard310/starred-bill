@@ -45,5 +45,25 @@
       "a": "A few weeks for most, and as early as you can for Mingles and the other best-known restaurants. Most take bookings through the CatchTable app, often with a deposit."
     }
   ],
-  "imageAlt": "Illustration of a Korean lunch table with small side dishes, rice and a stoneware pot, with one gold star above."
+  "imageAlt": "Illustration of a Korean lunch table with small side dishes, rice and a stoneware pot, with one gold star above.",
+  "sources": [
+    {
+      "title": "All the Stars in The MICHELIN Guide Seoul & Busan 2026",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/sg/en/article/michelin-guide-ceremony/all-the-stars-michelin-guide-seoul-busan-2026",
+      "date": "2026-03-05"
+    },
+    {
+      "title": "Seoul Bib Gourmand restaurants",
+      "publisher": "MICHELIN Guide",
+      "url": "https://guide.michelin.com/en/kr/seoul-capital-area/kr-seoul/restaurants/bib-gourmand",
+      "checked": "2026-10"
+    },
+    {
+      "title": "10 years of the MICHELIN Guide in Korea",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/10-years-michelin-guide-korea",
+      "date": "2026-03-06"
+    }
+  ]
 }

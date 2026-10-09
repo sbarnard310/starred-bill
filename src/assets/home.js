@@ -112,8 +112,7 @@ document.addEventListener("click", (e) => {
   b.setAttribute("aria-expanded", open);
   $(b.getAttribute("aria-controls")).hidden = !open;
 });
-// On computers and tablets every continent starts open; on phones they start folded, so the page stays short.
-if (matchMedia("(min-width: 721px)").matches) document.querySelectorAll("#destGroups .cont").forEach((d) => { d.open = true; });
+// Every continent starts folded (owner's choice, 9 Oct 2026), so the page stays short; a click opens one.
 // An address ending #dest-<country> (or #cont-<continent>) opens that country's continent and goes to it.
 function openDestHash() {
   const el = location.hash.length > 1 && document.getElementById(decodeURIComponent(location.hash.slice(1)));

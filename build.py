@@ -2904,7 +2904,7 @@ def home_ways_html():
 
 
 def home_countries_html(countries, soon):
-    """Every country, one short row each, folded by continent (the rows sort in home.js; on computers the folds open)."""
+    """Every country, one short row each, folded by continent (the rows sort in home.js; every fold starts closed)."""
     def stars_of(c):
         return c["stars"] if "box" in c else c["guide"] or c["own"]
 

@@ -962,7 +962,7 @@ const I18N = {
     navCompare: "Jämför", navMap: "Karta", navStars: "Efter stjärnor", navMethod: "Metod", navContact: "Kontakt", navDestinations: "Destinationer", navGuides: "Guider", navNear: "Nära mig", navPick: "Hjälp mig välja", wishlist: "Önskelista",
     pageTitle: "The Starred Bill · {place}",
     heroEyebrow: "{place} · Restauranger i Michelinguiden",
-    heroTitle: "Michelinrestauranger {placeIn}: vad de <em>kostar</em>",
+    heroTitle: "Michelin-restauranger {placeIn}: vad de <em>kostar</em>",
     heroText: "Priser per person för middag, lunch och vinpaket på stjärnkrogarna {placeIn}, sida vid sida. Sök på namn eller kök, filtrera på stjärnor eller kök och spara dem du vill prova på din önskelista.",
     crumbHome: "Alla destinationer", explore: "Utforska", exploreCities: "Städer i {country}", exploreDistricts: "Runt om i {country}", alsoIn: "Även i", nearby: "I närheten",
     figCount: "Restauranger", figMin: "Billigaste middagsmeny", figMax: "Dyraste middagsmeny", figMinLunch: "Billigaste lunchmeny", figMaxLunch: "Dyraste lunchmeny",

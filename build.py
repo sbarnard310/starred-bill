@@ -2124,7 +2124,11 @@ def place_description(where, starred, stars, menus):
 # drops to shorter ones until it fits TITLE_MAX. {in} is the place as it reads mid-sentence ("à Paris", "Helsingissä"),
 # {name} its plain name, {n} the number of starred restaurants. Keys: head / headOne (one restaurant), short (a shorter head),
 # then what follows the colon: all (every one has a price; allOne when there's just one), some (some priced), none (none priced),
-# empty (no stars yet), prices (the short fallback). sep and year default to ": " and " ({y})".
+# empty (no stars yet), prices (the short fallback). sep and year default to ": " and " ({y})". short may also be a list,
+# tried in turn, and an entry may be a dict of its own words (its head and tails) over the language's.
+# The wording follows what people type in each country (to-do item lang-local-title-wording, from the Ahrefs snapshot of
+# 7 Oct 2026): "michelin restaurang stockholm", "türkiye'de michelin yıldızlı restoranlar", 미슐랭 over 미쉐린,
+# "restaurantes estrella michelin madrid", "estrela michelin", "michelin sterne" beside "sterne restaurant köln".
 TITLE_MAX = 61
 TITLE_WORDS = {
     "en": {"head": "Michelin Star Restaurants in {in}", "headOne": "Michelin Star Restaurant in {in}", "short": "{name} Michelin Star Restaurants",
@@ -2137,20 +2141,21 @@ TITLE_WORDS = {
             "prices": "价格", "sep": "：", "year": "（{y}）"},
     "ja": {"head": "{name}のミシュラン星付きレストラン", "short": "{name}のミシュラン店", "all": "全{n}軒の料金", "allOne": "料金", "some": "全{n}軒と料金",
            "none": "全{n}軒", "empty": "まだなし", "prices": "料金", "sep": "：", "year": "（{y}年）"},
-    "ko": {"head": "{name} 미쉐린 스타 레스토랑", "short": "{name} 미쉐린 레스토랑", "all": "{n}곳 전체 가격", "allOne": "가격", "some": "전체 {n}곳과 가격",
+    "ko": {"head": "{name} 미슐랭 스타 레스토랑", "short": "{name} 미슐랭 레스토랑", "all": "{n}곳 전체 가격", "allOne": "가격", "some": "전체 {n}곳과 가격",
            "none": "전체 {n}곳", "empty": "아직 없음", "prices": "가격"},
     "fr": {"head": "Restaurants étoilés Michelin {in}", "headOne": "Restaurant étoilé Michelin {in}", "short": "Restaurants étoilés {in}",
            "all": "les prix des {n}", "allOne": "prix des menus", "some": "les {n}, avec leurs prix", "none": "les {n}", "empty": "aucun pour l'instant",
            "prices": "les prix", "sep": " : "},
-    "es": {"head": "Restaurantes con estrella Michelin {in}", "headOne": "Restaurante con estrella Michelin {in}", "short": "Restaurantes Michelin {in}",
+    "es": {"head": "Restaurantes con estrella Michelin {in}", "headOne": "Restaurante con estrella Michelin {in}",
+           "short": ["Restaurantes estrella Michelin {in}", "Estrellas Michelin {in}"],
            "all": "precios de los {n}", "allOne": "precios", "some": "los {n}, con precios", "none": "los {n}", "empty": "aún ninguno", "prices": "precios"},
     "it": {"head": "Ristoranti stellati Michelin {in}", "headOne": "Ristorante stellato Michelin {in}", "short": "Ristoranti stellati {in}",
            "all": "prezzi di tutti i {n}", "allOne": "prezzi", "some": "tutti i {n}, con prezzi", "none": "tutti i {n}", "empty": "ancora nessuno", "prices": "prezzi"},
     "ca": {"head": "Restaurants amb estrella Michelin {in}", "headOne": "Restaurant amb estrella Michelin {in}", "short": "Restaurants amb estrella {in}",
            "all": "preus dels {n}", "allOne": "preus", "some": "els {n}, amb preus", "none": "els {n}", "empty": "encara cap", "prices": "preus"},
-    "da": {"head": "Michelinrestauranter {in}", "headOne": "Michelinrestaurant {in}", "all": "priser på alle {n}", "allOne": "priser",
+    "da": {"head": "Michelin-restauranter {in}", "headOne": "Michelin-restaurant {in}", "all": "priser på alle {n}", "allOne": "priser",
            "some": "alle {n} med priser", "none": "alle {n}", "empty": "ingen endnu", "prices": "priser"},
-    "sv": {"head": "Michelinrestauranger {in}", "headOne": "Michelinrestaurang {in}", "all": "priser för alla {n}", "allOne": "priser",
+    "sv": {"head": "Michelin-restauranger {in}", "headOne": "Michelin-restaurang {in}", "all": "priser för alla {n}", "allOne": "priser",
            "some": "alla {n} med priser", "none": "alla {n}", "empty": "inga än", "prices": "priser"},
     "is": {"head": "Michelin-veitingastaðir {in}", "headOne": "Michelin-veitingastaður {in}", "all": "verð á öllum {n}", "allOne": "verð",
            "some": "allir {n} með verði", "none": "allir {n}", "empty": "enginn enn", "prices": "verð"},
@@ -2158,11 +2163,17 @@ TITLE_WORDS = {
            "some": "alle {n} med priser", "none": "alle {n}", "empty": "ingen ennå", "prices": "priser"},
     "th": {"head": "ร้านอาหารมิชลินสตาร์{in}", "all": "ราคาทั้ง {n} ร้าน", "allOne": "ราคา", "some": "ทั้ง {n} ร้าน พร้อมราคา", "none": "ทั้ง {n} ร้าน",
            "empty": "ยังไม่มี", "prices": "ราคา"},
-    "de": {"head": "Michelin-Sternerestaurants {in}", "headOne": "Michelin-Sternerestaurant {in}", "short": "Sternerestaurants {in}",
-           "all": "Preise aller {n}", "allOne": "Preise", "some": "alle {n} mit Preisen", "none": "alle {n}", "empty": "noch keine", "prices": "Preise"},
+    "de": {"head": "Michelin-Sterne {in}", "all": "Preise aller {n} Sternerestaurants", "allOne": "Preise des Sternerestaurants",
+           "some": "alle {n} Sternerestaurants mit Preisen", "none": "alle {n} Sternerestaurants", "empty": "noch keine", "prices": "Preise",
+           # Where both words don't fit: the single word, then the shortest.
+           "short": [{"head": "Michelin-Sternerestaurants {in}", "headOne": "Michelin-Sternerestaurant {in}", "all": "Preise aller {n}",
+                      "allOne": "Preise", "some": "alle {n} mit Preisen", "none": "alle {n}"},
+                     {"head": "Sternerestaurants {in}", "headOne": "Sternerestaurant {in}", "all": "Preise aller {n}", "allOne": "Preise",
+                      "some": "alle {n} mit Preisen", "none": "alle {n}"}]},
     "nl": {"head": "Michelin-sterrenrestaurants {in}", "headOne": "Michelin-sterrenrestaurant {in}", "short": "Sterrenrestaurants {in}",
            "all": "prijzen van alle {n}", "allOne": "prijzen", "some": "alle {n} met prijzen", "none": "alle {n}", "empty": "nog geen", "prices": "prijzen"},
-    "pt": {"head": "Restaurantes com estrela Michelin {in}", "headOne": "Restaurante com estrela Michelin {in}", "short": "Restaurantes Michelin {in}",
+    "pt": {"head": "Restaurantes com estrela Michelin {in}", "headOne": "Restaurante com estrela Michelin {in}",
+           "short": ["Restaurantes estrela Michelin {in}", "Estrelas Michelin {in}"],
            "all": "preços dos {n}", "allOne": "preços", "some": "os {n}, com preços", "none": "os {n}", "empty": "ainda nenhum", "prices": "preços"},
     "fi": {"head": "Michelin-tähtiravintolat {in}", "headOne": "Michelin-tähtiravintola {in}", "short": "Tähtiravintolat {in}",
            "all": "kaikkien {n} hinnat", "allOne": "hinnat", "some": "kaikki {n} ja hinnat", "none": "kaikki {n}", "empty": "ei vielä yhtään", "prices": "hinnat"},
@@ -2180,9 +2191,9 @@ TITLE_WORDS = {
            "all": "цене свих {n}", "allOne": "цене", "some": "свих {n} са ценама", "none": "свих {n}", "empty": "још ниједан", "prices": "цене"},
     "el": {"head": "Εστιατόρια με αστέρι Michelin {in}", "headOne": "Εστιατόριο με αστέρι Michelin {in}", "short": "Εστιατόρια Michelin {in}",
            "all": "τιμές και των {n}", "allOne": "τιμές", "some": "και τα {n}, με τιμές", "none": "και τα {n}", "empty": "κανένα ακόμη", "prices": "τιμές"},
-    "tr": {"head": "{name} Michelin yıldızlı restoranları", "headOne": "{name} Michelin yıldızlı restoranı", "short": "{name} Michelin restoranları",
-           "all": "tüm {n} restoranın fiyatları", "allOne": "fiyatlar", "some": "tüm {n} restoran ve fiyatlar", "none": "tüm {n} restoran", "empty": "henüz yok",
-           "prices": "fiyatlar"},
+    # Turkish reads as its heading, "Türkiye'de Michelin yıldızlı restoranlar ve fiyatları", so each tail carries its own joint.
+    "tr": {"head": "{in} Michelin yıldızlı restoranlar", "headOne": "{in} Michelin yıldızlı restoran", "short": "{name} Michelin yıldızlı restoranları",
+           "sep": "", "all": " ve fiyatları", "allOne": " ve fiyatı", "some": " ve fiyatları", "none": "", "empty": ": henüz yok", "prices": " ve fiyatları"},
     "lt": {"head": "Michelin žvaigždutės restoranai {in}", "headOne": "Michelin žvaigždutės restoranas {in}", "short": "Michelin restoranai {in}",
            "all": "visų {n} kainos", "allOne": "kainos", "some": "visi {n} su kainomis", "none": "visi {n}", "empty": "dar nėra", "prices": "kainos"},
     "lv": {"head": "Michelin zvaigžņu restorāni {in}", "headOne": "Michelin zvaigznes restorāns {in}", "short": "Michelin restorāni {in}",
@@ -2255,15 +2266,19 @@ def page_titles(p, page, languages, starred):
             if before == "" or (before and lang != "en" and " " not in before):
                 where = f"{where} ({name_of(country)})"
             name = f"{name} ({name_of(country)})"
-        tail = (w["empty"] if not n else (w.get("allOne") if n == 1 else w["all"]) if priced == n else w["some"] if priced else
-                (w["none"] if n > 1 else ""))
-        heads = [w.get("headOne", w["head"]) if n == 1 else w["head"]] + ([w["short"]] if w.get("short") else [])
-        tails = [tail, w["prices"] if priced else "", ""]
+        shorts = w.get("short") or []
+        # Each wording: the full one, then the shorter ones (a plain string is just a shorter head with the same tails).
+        sets = [w] + [dict(w, **s) if isinstance(s, dict) else dict(w, head=s, headOne=s)
+                      for s in ([shorts] if isinstance(shorts, (str, dict)) else shorts)]
+        tail_of = lambda w: (w["empty"] if not n else (w.get("allOne") if n == 1 else w["all"]) if priced == n else w["some"] if priced else
+                             (w["none"] if n > 1 else ""))
         options = []
-        for t in dict.fromkeys(tails):
-            for h in heads:
+        for level in range(3):
+            for ws in sets:
+                h = ws.get("headOne", ws["head"]) if n == 1 else ws["head"]
+                t = [tail_of(ws), ws["prices"] if priced else "", ""][level]
                 for dated in (True, False):
-                    text = h + (w.get("sep", ": ") + t if t else "") + (w.get("year", " ({y})").replace("{y}", year) if dated and year else "")
+                    text = h + (ws.get("sep", ": ") + t if t else "") + (ws.get("year", " ({y})").replace("{y}", year) if dated and year else "")
                     options.append(text.replace("{in}", where).replace("{name}", name).replace("{n}", str(n)))
         titles[lang] = p["title"].replace("{year}", year) if lang == "en" and p.get("title") else next((o for o in options if title_width(o) <= TITLE_MAX), options[-1])
     return titles

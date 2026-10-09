@@ -5,8 +5,8 @@
 
 const NEAR_KEY = "starredbill-near";  // { lat, lng, label, seen: { id: stars }, seenAt }, only when the visitor ticks "Remember this location"
 // Travel times and road routes use Google's Routes API, which has to be allowed for the site's key in Google Cloud.
-// Until it is, travel times stay hidden and a route follows the straight line between the two places.
-const ROUTES_API = false;
+// It was allowed on 9 Oct 2026. Set ROUTES_API to false to hide travel times and draw routes as straight lines again.
+const ROUTES_API = true;
 const near = {
   rows: null, hours: null, here: null, radius: 2, meal: "dinner", stars: 0, diet: "", day: "", sort: "near", shown: 30,
   trip: null, times: { drive: {}, transit: {} }, timeMode: "", timesBusy: false, fresh: [],

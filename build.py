@@ -3514,7 +3514,8 @@ def sitemap_dates():
 
 def build_extras():
     shutil.copy2(SRC / "favicon.svg", OUT / "favicon.svg")
-    shutil.copy2(SRC / "404.html", OUT / "404.html")
+    # The stylesheet carries its version, like every other page's, since /assets/ is cached for a year (_headers).
+    (OUT / "404.html").write_text((SRC / "404.html").read_text("utf-8").replace('"/assets/site.css"', f'"/assets/site.css?v={assets["site.css"]}"'), "utf-8")
     shutil.copy2(SRC / "manifest.webmanifest", OUT / "manifest.webmanifest")
     shutil.copytree(SRC / "icons", OUT / "icons")
     if (SRC / "og").exists():
@@ -3531,6 +3532,67 @@ def build_extras():
         + "".join(f"  <url><loc>{SITE_URL}{u}</loc>" + (f"<lastmod>{dates[u]}</lastmod>" if dates.get(u) else "") + "</url>\n" for u in urls)
         + "</urlset>\n", "utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n", "utf-8")
+
+
+# Security headers on every page (Cloudflare Pages reads _headers). CSP_REPORT is the full policy, only reported in the
+# browser's console for now; once a few weeks pass with nothing it would block, move it into Content-Security-Policy.
+CSP = "frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+CSP_REPORT = "; ".join([
+    "default-src 'self'",
+    "script-src 'self' 'unsafe-inline' https://cloud.umami.is https://www.googletagmanager.com https://maps.googleapis.com https://maps.gstatic.com https://cdn.jsdelivr.net https://unpkg.com",
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "font-src 'self' data: https://fonts.gstatic.com",
+    "img-src 'self' data: blob: https:",
+    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://cloud.umami.is https://api-gateway.umami.dev https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.googleapis.com https://maps.gstatic.com https://open.er-api.com https://cdn.jsdelivr.net",
+    "frame-src 'self' https://*.google.com",
+    "worker-src 'self' blob:",
+    "form-action 'self'",
+    "frame-ancestors 'self'", "base-uri 'self'", "object-src 'none'",
+])
+
+
+def build_cloudflare():
+    """Files Cloudflare Pages reads: _redirects (real 301s from each place's old addresses, in every language it offers)
+    and _headers (security headers; long caching for files whose address carries a ?v= version)."""
+    lines = []
+    for (old, pid) in sorted(redirects.items()):
+        for lang in place_langs(places[pid]):
+            src, dest = lang_path(old, lang), lang_path(places[pid]["path"], lang)
+            lines += [f"{src} {dest} 301", f"{src.rstrip('/')} {dest} 301"]
+    (OUT / "_redirects").write_text("".join(l + "\n" for l in lines), "utf-8")
+    (OUT / "_headers").write_text(f"""/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), payment=(), usb=(), geolocation=(self)
+  Content-Security-Policy: {CSP}
+  Content-Security-Policy-Report-Only: {CSP_REPORT}
+
+# Scripts, styles and these data files are always linked with ?v=<their contents>, so a changed file gets a new address.
+# Other /data/ files are sometimes fetched without a version (bill.json, hours.json), so they keep Cloudflare's default
+# (checked each time, cheap when unchanged). Rules must not overlap: Cloudflare joins a header two rules both set.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/data/places/*
+  Cache-Control: public, max-age=31536000, immutable
+/data/compare/*
+  Cache-Control: public, max-age=31536000, immutable
+/icons/*
+  Cache-Control: public, max-age=604800
+/og/*
+  Cache-Control: public, max-age=604800
+/img/*
+  Cache-Control: public, max-age=604800
+/sw.js
+  Cache-Control: no-cache
+
+# The Cloudflare copies (starred-bill.pages.dev and each change's preview link) stay out of search results.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
+""", "utf-8")
 
 
 def build_service_worker():
@@ -3560,6 +3622,7 @@ build_guides()
 build_restaurant_pages()
 build_redirects()
 build_extras()
+build_cloudflare()
 build_service_worker()
 print(f"Built {len(pages) + 1} pages from {len(restaurants)} restaurants into {OUT.relative_to(ROOT)}/:")
 print("  /  (homepage)")

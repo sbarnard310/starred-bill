@@ -45,5 +45,6 @@
       "q": "Can I eat at a Michelin star restaurant in London for under £50?",
       "a": "Yes. Of London’s starred restaurants, {{cheapUnder40_london}} serve a meal for £40 or less, mostly set lunches or à la carte mains, and {{cheapUnder60_london}} for £60 or less. Service is added on top."
     }
-  ]
+  ],
+  "imageAlt": "Illustration of a plated pork lunch on a pub table by a window with London rooftops, a short paper receipt beside it and one gold star above."
 }

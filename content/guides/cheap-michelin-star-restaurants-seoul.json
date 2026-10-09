@@ -1,0 +1,49 @@
+{
+  "id": "cheap-michelin-star-restaurants-seoul",
+  "title": "Cheapest Michelin Star Restaurants in Seoul (2026 Prices)",
+  "description": "The cheapest Michelin star restaurants in Seoul, ranked: starred lunches from about ₩75,000, Mingles for less at lunch, and Bib Gourmand bowls.",
+  "h1": "The Cheapest Michelin Star Restaurants in Seoul",
+  "summary": "Seoul’s starred restaurants ranked by their cheapest meal, with the best lunch deals and Bib Gourmand bowls.",
+  "section": "less",
+  "places": [
+    "seoul"
+  ],
+  "figure": "Starred lunches from {{cheapPrice_seoul}}",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "lang": "en-US",
+  "keywords": [
+    "cheapest michelin star restaurant seoul",
+    "cheap michelin star restaurants seoul",
+    "affordable michelin star restaurants seoul",
+    "michelin star lunch seoul"
+  ],
+  "body": "<p class=\"lede\">The cheapest Michelin star restaurant in Seoul is Exquisine in Cheongdam, where the lunch course is listed from {{lunch:exquisine}}. Of Seoul’s {{cheapN_seoul}} starred restaurants, {{cheapUnder150000_seoul}} serve a meal for ₩150,000 or less and {{cheapUnder200000_seoul}} for ₩200,000 or less, almost all at lunch. Prices include VAT and were checked {{checked}}.</p>\n<p>Cheap Michelin star restaurants in Seoul are easier to find than in most big cities. Prices include 10% VAT, most restaurants add no service charge and nobody expects a tip, so the price on the menu is close to what you pay before drinks. And a Michelin star lunch in Seoul is the best deal of all: of the {{lunchBoth_seoul}} starred restaurants that list a set lunch and a set dinner, {{lunchCheaper_seoul}} charge less at lunch, typically {{lunchSave_seoul}} less. Below are Seoul’s cheapest starred meals, the best value at each star level, the Korean kitchens worth crossing town for, and the Bib Gourmand noodle and dumpling houses for a fraction of the price.</p>\n\n<h2 id=\"cheapest\">The 15 cheapest Michelin star meals in Seoul</h2>\n<p>Ranked by the cheapest meal each restaurant serves, in the MICHELIN Guide Seoul &amp; Busan 2026. Restaurants that are temporarily closed are left out. Opening days come from the MICHELIN Guide; many starred restaurants in Seoul close on Sundays and Mondays.</p>\n{{table:cheapest-seoul}}\n<p>Exquisine’s lunch price needs a caveat: booking sites list it at anything from ₩75,000 to ₩130,000, and the restaurant doesn’t publish one, so check when you book. Even at the top of that range it is among the cheapest starred lunches in the city.</p>\n\n<h2 id=\"by-stars\">The best value at each star level</h2>\n<ul>\n<li><strong>One star:</strong> after Exquisine, the cheapest are Korean. Bicena, on the 81st floor of Lotte World Tower in Jamsil, serves a weekday lunch course for {{lunch:bicena}} with one of the best views in the city, and JUEUN, new to the guide in 2026, a Korean lunch course for {{lunch:jueun}} beside the Gyeonghuigung palace.</li>\n<li><strong>Two stars:</strong> {{cheap2Name_seoul}}, where Australian chef Joseph Lidgerwood cooks with Korean ingredients, serves an eight-course lunch on Fridays and Saturdays for {{lunch:evett}}. Kwonsooksoo, for refined Korean cooking, has a lunch course for {{lunch:kwonsooksoo}}.</li>\n<li><strong>Three stars:</strong> Mingles, Seoul’s only three-star restaurant, serves its lunch tasting menu from {{lunch:mingles}}, against {{dinner:mingles}} at dinner. Chef Mingoo Kang’s modern Korean cooking is built on jang, the fermented sauces of the Korean kitchen. See <a data-guide=\"three-michelin-star-restaurants\">every three-Michelin-star restaurant in the world</a> for how its price compares.</li>\n</ul>\n\n<h2 id=\"korean\">Starred Korean cooking for less</h2>\n<p>Many of Seoul’s starred restaurants cook French, Japanese or modern international food. If you want Korean cooking, these serve a starred Korean lunch:</p>\n<ul>\n<li><strong>Onjium</strong>, Jongno: a research institute for Korean heritage that cooks dishes from historic court and family recipes, a short walk from Gyeongbokgung Palace. Lunch {{lunch:onjium}}, Tuesday to Friday only.</li>\n<li><strong>7th Door</strong>, Gangnam: modern Korean cooking built on fermentation and aging. Weekday lunch {{lunch:7th-door}}.</li>\n<li><strong>GiwaKang</strong>, Gangnam: new to the guide in 2026, with a lunch course for {{lunch:giwakang}}.</li>\n<li><strong>La Yeon</strong>, on the 23rd floor of The Shilla hotel: two stars, classic Korean dishes and views over Namsan. Lunch {{lunch:la-yeon}}; as a hotel restaurant it may add a service charge.</li>\n</ul>\n\n<h2 id=\"bib-gourmand\">Five Bib Gourmand bowls for a fraction of the price</h2>\n<p>The Bib Gourmand is the MICHELIN Guide’s award for good food at a moderate price. It isn’t a star (see <a data-guide=\"bib-gourmand-vs-michelin-star\">Bib Gourmand vs Michelin star</a>), but in Seoul it goes to the cold-noodle houses, dumpling shops and broth kitchens that locals queue for. Five in the current guide:</p>\n<ul>\n<li><strong><a href=\"https://guide.michelin.com/kr/en/seoul-capital-area/kr-seoul/restaurant/woo-lae-oak\" target=\"_blank\" rel=\"noopener\">Woo Lae Oak</a></strong>, Jung-gu: Pyongyang-style cold buckwheat noodles, served since 1946.</li>\n<li><strong><a href=\"https://guide.michelin.com/kr/en/seoul-capital-area/kr-seoul/restaurant/hwangsaengga-kalguksu\" target=\"_blank\" rel=\"noopener\">Hwangsaengga Kalguksu</a></strong>, Jongno: hand-cut noodle soup and big handmade dumplings, with a queue all day.</li>\n<li><strong><a href=\"https://guide.michelin.com/kr/en/seoul-capital-area/kr-seoul/restaurant/gaeseong-mandu-koong\" target=\"_blank\" rel=\"noopener\">Gaeseong Mandu Koong</a></strong>, Jongno: Gaeseong-style dumplings from a family recipe, in a converted hanok.</li>\n<li><strong><a href=\"https://guide.michelin.com/kr/en/seoul-capital-area/kr-seoul/restaurant/neungdong-minari\" target=\"_blank\" rel=\"noopener\">Neungdong Minari</a></strong>, Yongsan: clear beef gomtang under a heap of fresh minari, Korean water parsley.</li>\n<li><strong><a href=\"https://guide.michelin.com/kr/en/seoul-capital-area/kr-seoul/restaurant/gosari-express\" target=\"_blank\" rel=\"noopener\">Gosari Express</a></strong>, Sindang-dong: a vegetarian stall in Jungang Market.</li>\n</ul>\n\n<h2 id=\"booking\">How to book, and what to expect on the bill</h2>\n<ul>\n<li><strong>Book ahead.</strong> Most of Seoul’s starred restaurants take bookings through CatchTable, Korea’s main booking app, which has an English version; many ask for a deposit or a card to hold the table. The best-known restaurants fill weeks ahead, so book as soon as your dates are fixed.</li>\n<li><strong>Lunch is often shorter.</strong> Some lunches run only on certain days (Evett on Fridays and Saturdays, Onjium from Tuesday to Friday), and a few restaurants are dinner only. The table above shows each restaurant’s days.</li>\n<li><strong>No tip.</strong> Prices include 10% VAT, and tipping isn’t expected. Some hotel restaurants add a 10% service charge.</li>\n<li><strong>Check what’s open.</strong> YUN, one of the cheaper Korean one-stars, has been temporarily closed since March 2026.</li>\n</ul>\n<p>Our <a href=\"/south-korea/seoul/\">Seoul page</a> lists all of the city’s starred restaurants with their lunch and dinner prices, wine pairings and Google ratings. For the rest of the world, see <a data-guide=\"cheapest-michelin-star-restaurants\">the cheapest Michelin star meals in the world</a>.</p>",
+  "faq": [
+    {
+      "q": "What is the cheapest Michelin star restaurant in Seoul?",
+      "a": "Exquisine in Cheongdam, where booking sites list the lunch course from {{lunch:exquisine}}, though some list it at up to ₩130,000. After it come Bicena ({{lunch:bicena}} for a weekday lunch) and JUEUN ({{lunch:jueun}})."
+    },
+    {
+      "q": "Which are the most affordable Michelin star restaurants in Seoul?",
+      "a": "At lunch: Exquisine (from {{lunch:exquisine}}), Bicena ({{lunch:bicena}}), JUEUN ({{lunch:jueun}}), Légume, an all-vegan kitchen ({{lunch:legume}}), and Muoki ({{lunch:muoki}}). At two stars, Evett’s Friday and Saturday lunch costs {{lunch:evett}}."
+    },
+    {
+      "q": "What is the cheapest three Michelin star restaurant in Seoul?",
+      "a": "Mingles is Seoul’s only three-star restaurant. Its lunch tasting menu costs from {{lunch:mingles}}, against {{dinner:mingles}} at dinner."
+    },
+    {
+      "q": "Is lunch cheaper than dinner at Michelin star restaurants in Seoul?",
+      "a": "Almost always. Of the {{lunchBoth_seoul}} starred restaurants in Seoul that list both a set lunch and a set dinner, {{lunchCheaper_seoul}} charge less at lunch, typically {{lunchSave_seoul}} less."
+    },
+    {
+      "q": "Do you tip at Michelin star restaurants in Seoul?",
+      "a": "No. Tipping isn’t expected in South Korea, menu prices include 10% VAT and most restaurants add no service charge. Some hotel restaurants add 10% service."
+    },
+    {
+      "q": "How far ahead should I book?",
+      "a": "A few weeks for most, and as early as you can for Mingles and the other best-known restaurants. Most take bookings through the CatchTable app, often with a deposit."
+    }
+  ],
+  "imageAlt": "Illustration of a Korean lunch table with small side dishes, rice and a stoneware pot, with one gold star above."
+}

@@ -3460,7 +3460,8 @@ def guide_blocks(stats):
 # stay out, as they aren't prices anyone is quoted.
 CHEAP_ROWS = {1: 20, 2: 10, 3: 10}   # rows in {{table:cheapest-1}}, -2 and -3
 # {{table:cheapest-<place>}}: its rows, and local prices to count meals at or under ({{cheapUnder40_london}}: London's starred restaurants with a meal for £40 or less)
-CHEAP_PLACES = {"london": (20, (40, 60, 100)), "singapore": (8, ()), "mexico-city": (8, ()), "bangkok": (8, ()), "tokyo": (8, ())}
+CHEAP_PLACES = {"london": (20, (40, 60, 100)), "singapore": (8, ()), "mexico-city": (8, ()), "bangkok": (8, ()), "tokyo": (8, ()),
+                "seoul": (15, (100000, 150000, 200000))}
 CHEAP_UNDER = (25, 50, 100)          # {{cheapUnder50}}: starred restaurants with a meal at or under $50
 CHEAP_KIND = {"main": "À la carte", "spend": "Typical spend"}
 
@@ -3473,8 +3474,10 @@ def cheap_meal(r):
 
 
 def cheap_ranked(rows):
-    """Restaurants with a rankable meal, cheapest first: [(usd, field, restaurant)]."""
-    out = [(u, f, r) for u, f, r in ((*cheap_meal(r), r) for r in rows) if u is not None]
+    """Restaurants with a rankable meal, cheapest first: [(usd, field, restaurant)]. Ones with a "closed" notice
+    (temporarily closed, out of season, refurbishing) are left out, as you can't eat there now."""
+    out = [(u, f, r) for u, f, r in ((*cheap_meal(r), r) for r in rows)
+           if u is not None and "closed" not in (r.get("notice") or "").lower()]
     return sorted(out, key=lambda x: (x[0], -x[2]["stars"], x[2]["name"].lower()))
 
 
@@ -3539,6 +3542,10 @@ def cheap_stats(live):
                 put("cheapLunch", lunches[0], sfx)
             for n in CHEAP_PLACES[pid][1]:
                 out[f"cheapUnder{n}{sfx}"] = str(sum(1 for u, f, r in here if r[f] <= n))
+        deals, both = lunch_deals([r for r in live if pid in r["_chain"]])
+        cuts = sorted(cut for r, cut in deals)
+        out.update({"lunchBoth" + sfx: str(len(both)), "lunchCheaper" + sfx: str(len(deals)),
+                    "lunchSave" + sfx: f"{round(100 * cuts[len(cuts) // 2])}%" if cuts else "–"})
     return out
 
 

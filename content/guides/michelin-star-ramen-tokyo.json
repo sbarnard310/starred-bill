@@ -34,5 +34,6 @@
       "q": "How much should I bring?",
       "a": "A bowl of ramen at a Bib Gourmand shop usually costs less than ¥2,000. The cheapest starred meal in Tokyo, {{cheapWhat_tokyo}} at {{cheapName_tokyo}}, costs {{cheapPrice_tokyo}}."
     }
-  ]
+  ],
+  "imageAlt": "Illustration of a bowl of ramen on a wooden counter, chopsticks across it and the faint dotted outline of an empty star above."
 }

@@ -1,6 +1,8 @@
 {
   "name": "Soseoul Hannam",
   "city": "seoul",
+  "area": "Yongsan-gu",
+  "areaKo": "용산구",
   "address": "B1F, 21-18 Hannam-daero 20-gil, Yongsan-gu, 04419, Seoul",
   "stars": 1,
   "cuisine": "Korean",

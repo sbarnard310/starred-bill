@@ -714,7 +714,7 @@ def build_place(p):
             "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
             "answer": answer, "heroClass": "" if answer else " hero-wide", "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
             "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
-            "tiers": tiers_html(starred, currency, lang),
+            "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang),
         }), lang, page, starred), page, lang))
 
 
@@ -1266,6 +1266,62 @@ def quick_answer(p, page, starred, lang):
         key = ("qaOnly" if len(starred) == 1 else "qaCheap") + ("Lunch" if f == "lunch" else "Dinner")
         out.append(say_in(w, key, page, r=e(r["name"]), price=priced(r, f, False)))
     return f'<p class="answer"><span class="answer-label">{e(w["qaLabel"])}</span> ' + " ".join(out) + "</p>"
+
+
+# Languages whose destination pages get the "Michelin star lunch deals" section (lunch_deals_html()); its wording is
+# the ld… keys in src/faq-words.json, so a language joins once those are translated.
+LUNCH_LANGS = ("en",)
+LUNCH_DEALS_MIN = 2      # deals a page needs before it gets the section
+LUNCH_DEALS_ROWS = 10    # restaurants in its table, the biggest saving first
+LUNCH_DEALS_CUT = 0.2    # a lunch must cost at least this much less than dinner (20%) to make the table
+
+
+def lunch_deals(starred):
+    """The restaurants whose set lunch costs less than their dinner menu, as (restaurant, saving as a share of dinner),
+    the biggest share first; and the restaurants that list both menus."""
+    both = [r for r in starred if is_menu(r, "lunch") and is_menu(r, "dinner")]
+    deals = [(r, 1 - r["lunch"] / r["dinner"]) for r in both if r["lunch"] < r["dinner"]]
+    deals.sort(key=lambda d: (-d[1], -to_usd(d[0], "dinner"), d[0]["name"].lower()))
+    return deals, both
+
+
+def lunch_deals_html(p, page, starred, lang):
+    """"Michelin star lunch deals in London" (9 Oct 2026, for "michelin star lunch deals" searches): how many starred
+    restaurants serve a set lunch for less than dinner and the average saving, then a table of the biggest savings,
+    each with its lunch, dinner and the saving per person. Local prices, as written into the page (not redrawn by currency)."""
+    if lang not in LUNCH_LANGS:
+        return ""
+    deals, both = lunch_deals(starred)
+    top = [(r, cut) for r, cut in deals if cut >= LUNCH_DEALS_CUT][:LUNCH_DEALS_ROWS]
+    if len(top) < LUNCH_DEALS_MIN:
+        return ""
+    w = pilot_words(lang)
+    say = lambda key, **v: say_in(w, key, page, **{k: (n_word(x, lang) if isinstance(x, int) else x) for k, x in v.items()})
+    text = [say("ldAll" if len(deals) == len(both) else "ldSome", k=len(deals), n=len(both))]
+    curs = {r["cur"] for r, _ in deals}
+    if len(curs) == 1:
+        cur = curs.pop()
+        save = sum(r["dinner"] - r["lunch"] for r, _ in deals) / len(deals)
+        step = 5 if save < 1000 else 10 ** (len(str(int(save))) - 2)  # £85, ¥13,000
+        text.append(say("ldSave", save=money(int(round(save / step) * step), cur) + (
+            "" if cur == "USD" else f" (≈\u00a0US${int(round(save / CURRENCIES[cur]['perUSD'] / 5) * 5):,})")))
+    best, cut = top[0]
+    text.append(say("ldBest", r=best["name"], pc=int(round(cut * 100)), lunch=money(best["lunch"], best["cur"]), dinner=money(best["dinner"], best["cur"])))
+    text.append(say("ldTable"))
+    stars = lambda r: f'<span class="stars" aria-label="{e(word_n(lang, "starsAria", r["stars"]))}">' + '<svg><use href="#star"/></svg>' * r["stars"] + "</span>"
+    # Its own page where it has one, else its row in this page's list (place.js opens #r=<id>).
+    href = lambda r: f'#r={r["id"]}' if not r.get("page") and r["cityPath"] == p["path"] else restaurant_href(r)
+    link = lambda r: f'<a class="vt-name" href="{href(r)}">{e(r["name"])}</a>'
+    rows = "".join(
+        f'<tr><td>{link(r)} {stars(r)}<small class="ld-dinner">{e(w["ldDinner"])} {e(money(r["dinner"], r["cur"]))}</small></td>'
+        f'<td class="num">{e(money(r["lunch"], r["cur"]))}</td><td class="num">{e(money(r["dinner"], r["cur"]))}</td>'
+        f'<td class="num">{e(money(r["dinner"] - r["lunch"], r["cur"]))} <small>{int(round(cut * 100))}%</small></td></tr>'
+        for r, cut in top)
+    table = (f'<table class="value-table lunch-table"><thead><tr><th>{e(w["chRestaurant"])}</th><th class="num">{e(w["ldLunch"])}</th>'
+             f'<th class="num">{e(w["ldDinner"])}</th><th class="num">{e(w["ldSaving"])}</th></tr></thead><tbody>{rows}</tbody></table>')
+    return (f'<section id="lunch-deals">\n    <div class="wrap">\n      <div class="section-head"><div>'
+            f'<span class="eyebrow">{e(w["ldEyebrow"])}</span><h2 style="margin-top: 6px">{e(say("ldTitle"))}</h2>'
+            f'<p>{e(" ".join(text))}</p></div></div>\n      {table}\n      <p class="ld-note">{e(w["ldNote"])}</p>\n    </div>\n  </section>\n')
 
 
 def pilot_sections(p, page, starred, lang):

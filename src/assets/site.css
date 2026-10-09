@@ -400,6 +400,21 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 @media (max-width: 720px) {
     .value-table td:nth-child(2), .value-table th:nth-child(2) { display: none; }
 }
+/* "Michelin star lunch deals" on English destination pages (lunch_deals_html() in build.py): lunch, dinner and the saving;
+   on phones the dinner column folds into a line under the name. */
+.lunch-table th.num, .lunch-table td.num { padding-inline-start: 16px; }
+.lunch-table td.num small { display: inline; margin: 0; }
+.lunch-table .ld-dinner { display: none; }
+.lunch-table a.vt-name { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.lunch-table a.vt-name:hover { color: var(--green); text-decoration-color: currentColor; }
+.lunch-table td.num small { color: var(--muted); }
+#lunch-deals .ld-note { margin-top: 14px; color: var(--muted); font-size: .85rem; max-width: 760px; }
+@media (max-width: 720px) {
+    .lunch-table td:nth-child(2), .lunch-table th:nth-child(2) { display: table-cell; }
+    .lunch-table td:nth-child(3), .lunch-table th:nth-child(3) { display: none; }
+    .lunch-table .ld-dinner { display: block; }
+    .lunch-table th.num, .lunch-table td.num { padding-inline-start: 10px; }
+}
 /* Related guides on English destination pages (related_guides() in build.py): small picture beside the title, the whole card a link. */
 .more-guides { font-weight: 600; color: var(--green); }
 .related-guides { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 16px; }

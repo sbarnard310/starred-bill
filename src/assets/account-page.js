@@ -41,9 +41,46 @@ function statTiles(been) {
 function milestones(been) {
   const stars = been.reduce((a, r) => a + starsOf(r), 0);
   const countries = new Set(been.map((r) => r.country)).size;
-  const list = [["ms1", been.length >= 1], ["ms2", been.some((r) => starsOf(r) === 3)], ["ms3", been.length >= 10], ["ms4", been.length >= 25], ["ms5", countries >= 3], ["ms6", stars >= 50]];
+  const list = [["ms1", been.length >= 1], ["ms2", been.some((r) => starsOf(r) === 3)], ["ms3", been.length >= 10], ["ms4", been.length >= 25], ["ms5", countries >= 3], ["ms6", stars >= 50],
+    ["ms7", (reports || []).some((x) => x.status === "used" || x.status === "confirmed")]];
   return '<section class="acct-section"><h2>' + esc(t("accMilestones")) + '</h2><ul class="milestones">' + list.map(([k, got]) =>
     '<li class="' + (got ? "got" : "") + '"><svg aria-hidden="true"><use href="#star"/></svg><span>' + esc(t(k)) + "</span>" + (got ? '<span class="sr-only">' + esc(t("msGot")) + "</span>" : "") + "</li>").join("") + "</ul></section>";
+}
+
+// ---------- Reports ----------
+// The member's reports of a price, closure or new chef ("Report a price or change", report.js) and how we got on
+// checking each (scripts/reports.py sets the status and note). One we used, or that confirmed our page was right,
+// earns the Price checker milestone (ms7). The account page is English only.
+let reports = null, reportsLoading = false;
+function loadReports() {
+  if (reports || reportsLoading || !account.client || !account.user) return;
+  reportsLoading = true;
+  account.client.from("reports").select("id,restaurant_id,restaurant_name,kind,meal,menu_name,price,currency,seen_on,chef,details,status,review_note,created_at")
+    .order("created_at", { ascending: false }).limit(200)
+    .then(({ data, error }) => { reports = error ? [] : data || []; }, () => { reports = []; })
+    .then(() => { reportsLoading = false; render(); });
+}
+const REPORT_STATUS = { new: "Waiting to be checked", used: "Used on the site: thank you", confirmed: "Checked: our page already had it right", "not-used": "We couldn't confirm it" };
+const REPORT_MEAL = { dinner: "Dinner", lunch: "Lunch", wine: "Wine pairing", other: "Menu" };
+function reportWhat(x) {
+  if (x.kind === "closed") return "Has closed";
+  if (x.kind === "chef") return "New head chef: " + (x.chef || "");
+  if (x.kind === "other") return "Something else";
+  const price = x.price == null ? "" : DATA.currencies && DATA.currencies[x.currency] ? localMoney(Number(x.price), x.currency) : (x.currency || "") + " " + x.price;
+  return (x.menu_name || REPORT_MEAL[x.meal] || "Price") + " " + price + (x.seen_on ? ", seen " + new Date(x.seen_on + "T12:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : "");
+}
+function reportsSection() {
+  if (!reports || !reports.length) return "";
+  return '<section class="acct-section" id="reports"><h2>Your reports <span class="count">' + reports.length + "</span></h2>" +
+    "<p>Thank you for keeping prices fresh. We check each report against the restaurant's own website before changing anything.</p>" +
+    '<ul class="acct-list">' + reports.map((x) => {
+      const r = byId.get(x.restaurant_id);
+      const name = r ? '<a class="al-name" href="' + pageLink(r) + '">' + esc(nameOf(r)) + "</a>" : '<span class="al-name">' + esc(x.restaurant_name || x.restaurant_id) + "</span>";
+      return '<li><div class="al-main">' + name + '<span class="al-meta">' + esc(reportWhat(x)) + " · sent " +
+        esc(new Date(x.created_at).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })) + "</span></div>" +
+        '<span class="rep-status ' + esc(x.status) + '">' + esc(REPORT_STATUS[x.status] || x.status) + "</span>" +
+        (x.review_note ? '<p class="rep-note">' + esc(x.review_note) + "</p>" : "") + "</li>";
+    }).join("") + "</ul></section>";
 }
 
 // Progress for each country, region, city or district you've been to at least once.
@@ -200,10 +237,12 @@ function render() {
     if (!loadFailed) loadRestaurants();
     return;
   }
+  loadReports();
   const visited = loadVisited();
   const been = Object.keys(visited).map((id) => byId.get(id)).filter(Boolean);
-  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + progress(been) + diaryList(been) + wishList() + otherNotes() + prefsSection() + emailsSection() + dataSection();
+  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + progress(been) + diaryList(been) + wishList() + otherNotes() + reportsSection() + prefsSection() + emailsSection() + dataSection();
   if (/^#(preferences|emails)$/.test(location.hash) && !ui.jumped && $(location.hash.slice(1))) { ui.jumped = true; $(location.hash.slice(1)).scrollIntoView(); }
+  if (location.hash === "#reports" && reports && !ui.jumpedReports) { ui.jumpedReports = true; if ($("reports")) $("reports").scrollIntoView(); }
 }
 
 function downloadData() {
@@ -216,6 +255,7 @@ function downloadData() {
     beenThere: Object.keys(visited).map((id) => ({ id, name: nameFor(id), date: visited[id] || null,
       paidPerPerson: d(id).paid != null ? d(id).paid : null, currency: d(id).paid != null ? d(id).cur || null : null, menu: d(id).menu || null, note: d(id).note || null })),
     otherNotes: Object.keys(diary).filter((id) => !(id in visited) && !wish.includes(id)).map((id) => Object.assign({ id, name: nameFor(id) }, diary[id])),
+    reports: (reports || []).map((x) => ({ restaurant: x.restaurant_name || x.restaurant_id, what: reportWhat(x), details: x.details, sent: x.created_at, status: REPORT_STATUS[x.status] || x.status, ourNote: x.review_note || null })),
     preferences: { homeCity: loadProfile().homeName || null, currency: loadProfile().currency || null, dietaryNeeds: loadProfile().diet || null },
     starEmails: alerts.row ? { newStarsNearYou: alerts.row.near_home, ceremonySummaries: alerts.row.countries.map((c) => (alertCountry(c) || [c, c])[1]) } : null,
   };
@@ -280,6 +320,7 @@ document.addEventListener("keydown", (e) => {
   if (e.target.id === "prefHome" && e.key === "Enter") { e.preventDefault(); const b = document.querySelector("#prefHomeList button"); if (b) b.click(); }
   if (e.target.id === "prefHome" && e.key === "Escape") $("prefHomeList").hidden = true;
 });
+window.addEventListener("sb:account", () => { if (!acctSignedIn()) reports = null; });
 // The diary window saves without a "sync" mark, so its own changes redraw the page too.
 ["sb:account", "sb:wishlist", "sb:visited", "sb:profile", "sb:diary"].forEach((ev) => window.addEventListener(ev, (e) => { if (e.type === "sb:account" || e.type === "sb:diary" || e.detail.from === "sync") render(); }));
 window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY || e.key === VISITED_KEY || e.key === DIARY_KEY) render(); });

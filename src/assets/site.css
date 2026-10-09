@@ -902,6 +902,37 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 .dy-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .dy-actions .si-send { flex: 1 1 auto; }
 .dy-actions .btn-line { padding: 11px 16px; }
+/* "Report a price or change" (report.js): the sign-in box's look, with room for a longer form. */
+dialog.report-box { width: min(480px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); overflow-y: auto; }
+.rf fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.rf legend { font-size: .85rem; font-weight: 600; padding: 0; margin-bottom: 8px; }
+.rf .rf-kind { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: .9rem; font-weight: 500; cursor: pointer; margin: 0; }
+.rf .rf-kind:has(input:checked) { border-color: var(--green); background: var(--green-soft); }
+.rf .rf-kind input { margin: 0; padding: 0; border: 0; background: none; accent-color: var(--green); }
+.rf-group { display: grid; gap: 12px; }
+.rf-group[hidden], .rf-field[hidden] { display: none; }
+.rf-field { display: grid; gap: 6px; min-width: 0; }
+.rf-field label { margin: 0; }
+.rf select, .rf textarea { padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); font: inherit; min-width: 0; }
+.rf textarea { resize: vertical; }
+.rf input[type="file"] { padding: 8px; font-size: .88rem; }
+.rf-price { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 9em); gap: 10px; }
+.rf-hint { margin: -4px 0 0; font-size: .8rem; color: var(--muted); }
+.rf-done .rf-link { text-align: center; text-decoration: none; }
+.report-btn { background: none; border: 0; padding: 0; font: inherit; font-size: .75rem; color: var(--muted); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.report-btn:hover { color: var(--green); }
+.notes .report-btn { display: block; margin-top: 4px; }
+.acts-cell .report-btn { flex-basis: 100%; text-align: start; padding: 4px 0; font-size: .8rem; }
+/* On computers the notes column's link shows when the row is pointed at or tabbed into, so 84 rows don't all repeat it. */
+@media (hover: hover) and (min-width: 721px) {
+  .rc-row .notes .report-btn { opacity: 0; transition: opacity .15s; }
+  .rc-row:hover .notes .report-btn, .rc-row:focus-within .notes .report-btn { opacity: 1; }
+}
+.rp-report.linkish { font: inherit; font-weight: 600; }
+/* The account page's reports and their status. */
+.rep-status { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: .78rem; font-weight: 600; background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+.rep-status.used, .rep-status.confirmed { color: var(--green); border-color: color-mix(in srgb, var(--green) 40%, var(--line)); background: var(--green-soft); }
+.rep-note { flex-basis: 100%; margin: 0; font-size: .88rem; color: var(--muted); }
 .acct-notice { position: fixed; left: 50%; top: calc(14px + env(safe-area-inset-top, 0px)); transform: translateX(-50%); z-index: 40; max-width: calc(100% - 32px); padding: 10px 16px;
   border-radius: 10px; background: var(--ink); color: var(--bg); font-size: .9rem; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
 /* "Show prices in £ on every page?" for a member who hasn't set a currency (acctOffer() in account.js) */

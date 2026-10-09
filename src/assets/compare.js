@@ -105,7 +105,7 @@ function line(label, v, note, cls) {
 function receipt(r, f, best, i) {
   const mark = (k, on) => [on ? "on" : "", best[k] && best[k][i] ? "best" : ""].filter(Boolean).join(" ");
   const saved = loadWishlist().includes(r.id);
-  const src = (url, type, label) => url && type && type !== "none" ? '<a class="src" href="' + esc(url) + '" target="_blank" rel="noopener" title="Where this price came from">' + label + "</a>" : "";
+  const src = (url, type, label) => type === "member" && !url ? '<span class="src">Member’s report</span>' : url && type && type !== "none" ? '<a class="src" href="' + esc(url) + '" target="_blank" rel="noopener" title="Where this price came from">' + label + "</a>" : "";
   const sources = [src(r.source, r.sourceType, r.lunchSource && r.lunchSource !== r.source ? "Dinner source" : "Price source"),
     r.lunchSource !== r.source ? src(r.lunchSource, r.lunchSourceType, "Lunch source") : ""].filter(Boolean).join(" · ");
   const checked = PRICES_CHECKED.toLocaleDateString("en-GB", { month: "short", year: "numeric" });

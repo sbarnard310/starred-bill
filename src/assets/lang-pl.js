@@ -39,6 +39,7 @@
     tableLabel: "Ceny w restauracjach",
     reviews: "Opinie: {n}", ratingAria: "Ocena Google {r} na 5", noRating: "Brak oceny", fewReviews: "Mało opinii", fewTitle: "Mniej niż 20 opinii w Google, więc ocena jest mało wiarygodna",
     srcSite: "Strona restauracji", srcPress: "Źródło", srcTitle: "Skąd pochodzi ta cena",
+    reportBtn: "Zgłoś cenę lub zmianę", acctWhyReport: "Załóż darmowe konto lub zaloguj się, aby zgłosić cenę lub zmianę. Sprawdzamy każde zgłoszenie, zanim cokolwiek zmienimy.", srcMember: "Zgłoszenie członka: {d}",
     perMain: "za danie główne", typicalSpend: "typowy rachunek", notListed: "Nie podano",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Stolik dla 1", rcptDinnerOnly: "Tylko kolacja", rcptNoPairing: "nie podano doboru win", rcptNoPairingOffered: "brak doboru win", rcptPlusWine: "+ wino {p}", rcptDinnerWine: "Kolacja + wino", rcptLunchWine: "Lunch + wino", rcptChecked: "Sprawdzono {d}", rcptIncl: "Za osobę, z serwisem", rcptPlus: "Za osobę, ++ (doliczany serwis i podatek)", rcptTaxTip: "Za osobę, bez podatku i napiwku", rcptTip: "Za osobę, bez napiwku", rcptTax: "Za osobę, z podatkiem",

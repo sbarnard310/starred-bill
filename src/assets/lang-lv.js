@@ -36,6 +36,7 @@
     tableLabel: "Restorānu cenas",
     reviews: "Atsauksmes: {n}", ratingAria: "Google vērtējums {r} no 5", noRating: "Nav vērtējuma", fewReviews: "Maz atsauksmju", fewTitle: "Mazāk nekā 20 Google atsauksmju, tāpēc vērtējums nav drošs",
     srcSite: "Restorāna vietne", srcPress: "Avots", srcTitle: "No kurienes ir šī cena",
+    reportBtn: "Ziņot par cenu vai izmaiņām", acctWhyReport: "Izveidojiet bezmaksas kontu vai pierakstieties, lai ziņotu par cenu vai izmaiņām. Katru ziņojumu pārbaudām, pirms kaut ko mainām.", srcMember: "Biedra ziņojums: {d}",
     perMain: "par pamatēdienu", typicalSpend: "parastais rēķins", notListed: "Nav norādīts",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Galds 1", rcptDinnerOnly: "Tikai vakariņas", rcptNoPairing: "vīnu pāri nav norādīti", rcptNoPairingOffered: "vīnu pāri netiek piedāvāti", rcptPlusWine: "+ vīns {p}", rcptDinnerWine: "Vakariņas + vīns", rcptLunchWine: "Pusdienas + vīns", rcptChecked: "Pārbaudīts {d}", rcptIncl: "Vienai personai, ar apkalpošanu", rcptPlus: "Vienai personai, ++ (plus apkalpošana un nodoklis)", rcptTaxTip: "Vienai personai, bez nodokļa un dzeramnaudas", rcptTip: "Vienai personai, bez dzeramnaudas", rcptTax: "Vienai personai, ar nodokli",

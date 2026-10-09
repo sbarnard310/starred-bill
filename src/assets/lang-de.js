@@ -45,6 +45,7 @@
     tableLabel: "Restaurantpreise",
     reviews: "{n} Bewertung|{n} Bewertungen", ratingAria: "Google-Bewertung {r} von 5", noRating: "Keine Bewertung", fewReviews: "Wenige Bewertungen", fewTitle: "Weniger als 20 Google-Bewertungen, daher nur bedingt aussagekräftig",
     srcSite: "Website des Restaurants", srcPress: "Quelle", srcTitle: "Woher dieser Preis stammt",
+    reportBtn: "Preis oder Änderung melden", acctWhyReport: "Erstelle ein kostenloses Konto oder melde dich an, um einen Preis oder eine Änderung zu melden. Wir prüfen jede Meldung, bevor wir etwas ändern.", srcMember: "Meldung eines Mitglieds, {d}",
     perMain: "pro Hauptgang", typicalSpend: "typische Rechnung", notListed: "Nicht angegeben",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Tisch für 1", rcptDinnerOnly: "Nur abends", rcptNoPairing: "keine Weinbegleitung angegeben", rcptNoPairingOffered: "keine Weinbegleitung", rcptPlusWine: "+ Wein {p}", rcptDinnerWine: "Abendessen + Wein", rcptLunchWine: "Mittagessen + Wein", rcptChecked: "Geprüft {d}", rcptIncl: "Pro Person, inkl. Service", rcptPlus: "Pro Person, ++ (zzgl. Service und Steuer)", rcptTaxTip: "Pro Person, ohne Steuer und Trinkgeld", rcptTip: "Pro Person, ohne Trinkgeld", rcptTax: "Pro Person, inkl. Steuer",

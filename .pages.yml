@@ -541,7 +541,12 @@ content:
           values:
             - { value: site, label: "Restaurant's own website" }
             - { value: press, label: "Review or booking site" }
+            - { value: member, label: "A member's report (checked)" }
             - { value: none, label: "No link" }
+      - name: sourceDate
+        label: Month the member saw the dinner price
+        description: Only for a member's report, e.g. 2026-10.
+        type: string
       - name: source
         label: Dinner price link
         description: Where the dinner price came from.
@@ -677,7 +682,12 @@ content:
           values:
             - { value: site, label: "Restaurant's own website" }
             - { value: press, label: "Review or booking site" }
+            - { value: member, label: "A member's report (checked)" }
             - { value: none, label: "No link" }
+      - name: lunchSourceDate
+        label: Month the member saw the lunch price
+        description: Only for a member's report, e.g. 2026-10.
+        type: string
       - name: lunchSource
         label: Lunch price link
         type: string

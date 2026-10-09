@@ -204,5 +204,4 @@ function showCurrency(c) {
   window.addEventListener("sb:profile", () => showCurrency(start()));
 })();
 
-// "Seen a different price?" opens an email; counted as a contact like the destination pages' form.
-document.querySelectorAll("[data-report]").forEach((a) => a.addEventListener("click", () => track("contact", { topic: "price" })));
+// "Report a price or change" and "Seen a different price?" ([data-report-id]) open the members' form: account.js.

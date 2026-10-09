@@ -400,7 +400,7 @@ function acctOffer(text, yes, no) {
 function renderSignIn() {
   const box = $("signInBox");
   if (!box) return;
-  const why = account.reason === "been" ? t("acctWhyBeen") : t("acctWhy");
+  const why = account.reason === "been" ? t("acctWhyBeen") : account.reason === "report" ? t("acctWhyReport") : t("acctWhy");
   box.querySelector(".si-title").textContent = t("acctTitle");
   box.querySelector(".si-why").textContent = why;
   box.querySelector(".si-close").setAttribute("aria-label", t("acctClose"));
@@ -504,6 +504,38 @@ document.addEventListener("click", (e) => {
   e.preventDefault();
   if (btn.id === "accountBtn" && (account.ready ? account.user : hasStoredSession())) location.href = withLang("/account/");
   else openSignIn(btn.dataset.signin || "");
+});
+
+// ---------- Reporting a price or change ----------
+// "Report a price or change" ([data-report-id] on restaurant pages and destination rows) opens the form in report.js,
+// loaded only now, for signed-in members. Anyone else is asked to sign in first, and the form opens once they have
+// (kept for half an hour, so it survives the email's sign-in link opening a new tab).
+const REPORT_JS = "{{asset:report.js}}", REPORT_KEY = "starredbill-report-pending";
+const accountSettled = () => account.ready ? Promise.resolve() : new Promise((done) => window.addEventListener("sb:account", done, { once: true }));
+async function openReport(r) {
+  track("report-opened", { restaurant: r.id });
+  const askSignIn = () => { store.set(REPORT_KEY, Object.assign({ at: Date.now() }, r)); openSignIn("report"); };
+  if (!(account.ready ? account.user : hasStoredSession())) { askSignIn(); return; }
+  try {
+    await bootAccount();
+    await accountSettled();
+    if (!account.user) { askSignIn(); return; }
+    if (!window.showReport) await loadScript(REPORT_JS);
+    window.showReport(r);
+  } catch (e) { acctNotice(t("acctFailed")); }
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-report-id]");
+  if (!b) return;
+  e.preventDefault();
+  const d = b.dataset;
+  openReport({ id: d.reportId, name: d.reportName || "", cur: d.reportCur || "", meal: d.reportMeal || "" });
+});
+window.addEventListener("sb:account", () => {
+  const r = store.get(REPORT_KEY, null);
+  if (!r || !account.user) return;
+  store.set(REPORT_KEY, null);
+  if (Date.now() - r.at < 30 * 60 * 1000) openReport(r);
 });
 
 // Start straight away only if someone is (or is becoming) signed in; everyone else loads nothing extra.

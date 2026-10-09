@@ -38,6 +38,7 @@
     tableLabel: "Éttermi árak",
     reviews: "{n} értékelés", ratingAria: "Google-értékelés: {r} az 5-ből", noRating: "Nincs értékelés", fewReviews: "Kevés értékelés", fewTitle: "20-nál kevesebb Google-értékelés, ezért a pontszám bizonytalan",
     srcSite: "Az étterem honlapja", srcPress: "Forrás", srcTitle: "Honnan származik ez az ár",
+    reportBtn: "Ár vagy változás bejelentése", acctWhyReport: "Hozz létre ingyenes fiókot, vagy jelentkezz be, hogy bejelents egy árat vagy változást. Minden bejelentést ellenőrzünk, mielőtt bármit módosítanánk.", srcMember: "Tagi bejelentés, {d}",
     perMain: "főételenként", typicalSpend: "szokásos számla", notListed: "Nincs megadva",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Asztal 1 főre", rcptDinnerOnly: "Csak vacsora", rcptNoPairing: "borpárosítás nincs megadva", rcptNoPairingOffered: "nincs borpárosítás", rcptPlusWine: "+ bor {p}", rcptDinnerWine: "Vacsora + bor", rcptLunchWine: "Ebéd + bor", rcptChecked: "Ellenőrizve: {d}", rcptIncl: "Fejenként, szervizdíjjal", rcptPlus: "Fejenként, ++ (plusz szervizdíj és adó)", rcptTaxTip: "Fejenként, adó és borravaló nélkül", rcptTip: "Fejenként, borravaló nélkül", rcptTax: "Fejenként, adóval",

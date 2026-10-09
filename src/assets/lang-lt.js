@@ -36,6 +36,7 @@
     tableLabel: "Restoranų kainos",
     reviews: "Atsiliepimai: {n}", ratingAria: "„Google“ įvertinimas {r} iš 5", noRating: "Nėra įvertinimo", fewReviews: "Mažai atsiliepimų", fewTitle: "Mažiau nei 20 „Google“ atsiliepimų, todėl įvertinimas nepatikimas",
     srcSite: "Restorano svetainė", srcPress: "Šaltinis", srcTitle: "Iš kur ši kaina",
+    reportBtn: "Pranešti apie kainą ar pakeitimą", acctWhyReport: "Susikurkite nemokamą paskyrą arba prisijunkite, kad praneštumėte apie kainą ar pakeitimą. Kiekvieną pranešimą patikriname prieš ką nors keisdami.", srcMember: "Nario pranešimas: {d}",
     perMain: "už pagrindinį patiekalą", typicalSpend: "įprasta sąskaita", notListed: "Nenurodyta",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Staliukas 1", rcptDinnerOnly: "Tik vakarienė", rcptNoPairing: "vynų derinių nenurodyta", rcptNoPairingOffered: "vynų derinių nesiūlo", rcptPlusWine: "+ vynas {p}", rcptDinnerWine: "Vakarienė + vynas", rcptLunchWine: "Pietūs + vynas", rcptChecked: "Patikrinta {d}", rcptIncl: "Asmeniui, su aptarnavimu", rcptPlus: "Asmeniui, ++ (pridedamas aptarnavimas ir mokestis)", rcptTaxTip: "Asmeniui, be mokesčių ir arbatpinigių", rcptTip: "Asmeniui, be arbatpinigių", rcptTax: "Asmeniui, su mokesčiais",

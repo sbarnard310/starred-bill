@@ -68,6 +68,7 @@ const I18N = {
     tableLabel: "Restaurant prices",
     reviews: "{n} review|{n} reviews", ratingAria: "Google rating {r} out of 5", noRating: "No rating", fewReviews: "Few reviews", fewTitle: "Fewer than 20 Google reviews, so this rating may not be reliable yet",
     srcSite: "Restaurant website", srcPress: "Review source", srcTitle: "Where this price came from",
+    reportBtn: "Report a price or change", acctWhyReport: "Create a free account, or sign in, to report a price or change. We check every report before changing anything.", srcMember: "Member's report, {d}", ms7: "Price checker",
     perMain: "per main", typicalSpend: "typical spend", notListed: "Not listed",
     // The till receipt on destination pages.
     rpLink: "Prices and details", rcptHead: "The Starred Bill · Table for 1", rcptDinnerOnly: "Dinner only", rcptNoPairing: "no pairing listed", rcptNoPairingOffered: "no pairing offered", rcptPlusWine: "+ wine {p}", rcptDinnerWine: "Dinner + wine", rcptLunchWine: "Lunch + wine", rcptChecked: "Checked {d}", rcptIncl: "Per person, service included", rcptPlus: "Per person, ++ (service and tax added)", rcptTaxTip: "Per person, before tax and tip", rcptTip: "Per person, before tip", rcptTax: "Per person, tax included",
@@ -221,6 +222,7 @@ const I18N = {
     tableLabel: "餐廳價格",
     reviews: "{n} 則評論", ratingAria: "Google 評分 {r}（滿分 5）", noRating: "尚無評分", fewReviews: "評論較少", fewTitle: "Google 評論少於 20 則，評分僅供參考",
     srcSite: "餐廳官網", srcPress: "評論來源", srcTitle: "價格資料來源",
+    reportBtn: "回報價格或變動", acctWhyReport: "建立免費帳戶或登入，即可回報價格或變動。每則回報我們都會先查證再修改。", srcMember: "會員回報，{d}", ms7: "價格查核員",
     perMain: "每道主菜", typicalSpend: "人均消費", notListed: "未公布",
     // The till receipt on destination pages.
     rpLink: "價格與詳情", rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "僅供應晚餐", rcptNoPairing: "未列出餐酒搭配", rcptNoPairingOffered: "不提供餐酒搭配", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚餐 + 配酒", rcptLunchWine: "午餐 + 配酒", rcptChecked: "{d} 查核", rcptIncl: "每人價格，已含服務費", rcptPlus: "每人價格，另加 ++（服務費及稅）", rcptTaxTip: "每人價格，未含稅及小費", rcptTip: "每人價格，未含小費", rcptTax: "每人價格，已含稅",
@@ -367,6 +369,7 @@ const I18N = {
     tableLabel: "Prix des restaurants",
     reviews: "{n} avis", ratingAria: "Note Google : {r} sur 5", noRating: "Pas de note", fewReviews: "Peu d'avis", fewTitle: "Moins de 20 avis Google : note à prendre avec prudence",
     srcSite: "Site du restaurant", srcPress: "Source", srcTitle: "D'où vient ce prix",
+    reportBtn: "Signaler un prix ou un changement", acctWhyReport: "Créez un compte gratuit ou connectez-vous pour signaler un prix ou un changement. Nous vérifions chaque signalement avant de modifier quoi que ce soit.", srcMember: "Signalement d'un membre, {d}", ms7: "Vérificateur de prix",
     perMain: "par plat", typicalSpend: "dépense moyenne", notListed: "Non communiqué",
     // The till receipt on destination pages.
     rpLink: "Prix et détails", rcptHead: "The Starred Bill · Table pour 1", rcptDinnerOnly: "Dîner uniquement", rcptNoPairing: "accord mets-vins non indiqué", rcptNoPairingOffered: "pas d'accord mets-vins", rcptPlusWine: "+ vins {p}", rcptDinnerWine: "Dîner + vins", rcptLunchWine: "Déjeuner + vins", rcptChecked: "Vérifié : {d}", rcptIncl: "Par personne, service compris", rcptPlus: "Par personne, ++ (service et taxes en sus)", rcptTaxTip: "Par personne, hors taxes et pourboire", rcptTip: "Par personne, hors pourboire", rcptTax: "Par personne, taxes comprises",
@@ -494,6 +497,7 @@ const I18N = {
     tableLabel: "餐廳價錢",
     reviews: "{n} 個評論", ratingAria: "Google 評分 {r}（滿分 5）", noRating: "未有評分", fewReviews: "評論唔多", fewTitle: "Google 評論少過 20 個，評分只供參考",
     srcSite: "餐廳官網", srcPress: "資料來源", srcTitle: "價錢嘅來源",
+    reportBtn: "報料：價錢或變動", acctWhyReport: "開個免費帳戶或者登入，就可以報料價錢或變動。每個報料我哋都會先核實先至改。", srcMember: "會員報料，{d}", ms7: "價錢核實員",
     perMain: "每道主菜", typicalSpend: "人均消費", notListed: "未有公布",
     // The till receipt on destination pages.
     rpLink: "價錢同詳情", rcptHead: "The Starred Bill · 1 位", rcptDinnerOnly: "只做晚市", rcptNoPairing: "未有列出配酒", rcptNoPairingOffered: "唔提供配酒", rcptPlusWine: "+ 配酒 {p}", rcptDinnerWine: "晚市 + 配酒", rcptLunchWine: "午市 + 配酒", rcptChecked: "{d} 核實", rcptIncl: "每位價錢，已包服務費", rcptPlus: "每位價錢，另加 ++（服務費同稅）", rcptTaxTip: "每位價錢，未計稅同貼士", rcptTip: "每位價錢，未計貼士", rcptTax: "每位價錢，已含稅",
@@ -622,6 +626,7 @@ const I18N = {
     tableLabel: "レストランの料金",
     reviews: "{n}件", ratingAria: "Google評価 5点中{r}", noRating: "評価なし", fewReviews: "口コミ少数", fewTitle: "Googleの口コミが20件未満のため、評価は参考程度に",
     srcSite: "公式サイト", srcPress: "情報源", srcTitle: "この料金の情報源",
+    reportBtn: "料金や変更を報告", acctWhyReport: "無料アカウントを作成またはログインすると、料金や変更を報告できます。すべての報告は確認してから反映します。", srcMember: "会員からの報告（{d}）", ms7: "料金チェッカー",
     perMain: "1品あたり", typicalSpend: "予算の目安", notListed: "非公開",
     // The till receipt on destination pages.
     rpLink: "料金と詳細", rcptHead: "The Starred Bill · 1名様", rcptDinnerOnly: "ディナーのみ", rcptNoPairing: "ペアリング記載なし", rcptNoPairingOffered: "ペアリングなし", rcptPlusWine: "+ ペアリング {p}", rcptDinnerWine: "ディナー + ペアリング", rcptLunchWine: "ランチ + ペアリング", rcptChecked: "{d} 確認", rcptIncl: "1人あたり・サービス料込み", rcptPlus: "1人あたり・++（サービス料・税別）", rcptTaxTip: "1人あたり・税・チップ別", rcptTip: "1人あたり・チップ別", rcptTax: "1人あたり・税込",
@@ -769,6 +774,7 @@ const I18N = {
     tableLabel: "Precios de los restaurantes",
     reviews: "{n} reseña|{n} reseñas", ratingAria: "Nota de Google: {r} sobre 5", noRating: "Sin valoración", fewReviews: "Pocas reseñas", fewTitle: "Menos de 20 reseñas en Google: tome la nota con cautela",
     srcSite: "Web del restaurante", srcPress: "Fuente: reseña", srcTitle: "De dónde sale este precio",
+    reportBtn: "Avisar de un precio o cambio", acctWhyReport: "Crea una cuenta gratis o inicia sesión para avisar de un precio o un cambio. Comprobamos cada aviso antes de cambiar nada.", srcMember: "Aviso de un miembro, {d}", ms7: "Verificador de precios",
     perMain: "por plato principal", typicalSpend: "gasto habitual", notListed: "No publicado",
     // The till receipt on destination pages.
     rpLink: "Precios y detalles", rcptHead: "The Starred Bill · Mesa para 1", rcptDinnerOnly: "Solo cenas", rcptNoPairing: "sin maridaje publicado", rcptNoPairingOffered: "no ofrece maridaje", rcptPlusWine: "+ maridaje {p}", rcptDinnerWine: "Cena + maridaje", rcptLunchWine: "Almuerzo + maridaje", rcptChecked: "Revisado: {d}", rcptIncl: "Por persona, servicio incluido", rcptPlus: "Por persona, ++ (servicio e impuestos aparte)", rcptTaxTip: "Por persona, sin impuestos ni propina", rcptTip: "Por persona, sin propina", rcptTax: "Por persona, impuestos incluidos",
@@ -892,6 +898,7 @@ const I18N = {
     tableLabel: "Restaurantpriser",
     reviews: "{n} anmeldelse|{n} anmeldelser", ratingAria: "Google-bedømmelse {r} ud af 5", noRating: "Ingen bedømmelse", fewReviews: "Få anmeldelser", fewTitle: "Under 20 Google-anmeldelser, så bedømmelsen er usikker",
     srcSite: "Restaurantens hjemmeside", srcPress: "Kilde", srcTitle: "Hvor prisen kommer fra",
+    reportBtn: "Meld en pris eller ændring", acctWhyReport: "Opret en gratis konto, eller log ind, for at melde en pris eller ændring. Vi tjekker hver melding, før vi ændrer noget.", srcMember: "Medlemsmelding, {d}", ms7: "Pristjekker",
     perMain: "pr. hovedret", typicalSpend: "typisk forbrug", notListed: "Ikke oplyst",
     // The till receipt on destination pages.
     rpLink: "Priser og detaljer", rcptHead: "The Starred Bill · Bord til 1", rcptDinnerOnly: "Kun middag", rcptNoPairing: "ingen vinmenu oplyst", rcptNoPairingOffered: "ingen vinmenu", rcptPlusWine: "+ vin {p}", rcptDinnerWine: "Middag + vin", rcptLunchWine: "Frokost + vin", rcptChecked: "Tjekket {d}", rcptIncl: "Pr. person, inkl. service", rcptPlus: "Pr. person, ++ (service og moms oveni)", rcptTaxTip: "Pr. person, før moms og drikkepenge", rcptTip: "Pr. person, før drikkepenge", rcptTax: "Pr. person, inkl. moms",
@@ -998,6 +1005,7 @@ const I18N = {
     tableLabel: "Restaurangpriser",
     reviews: "{n} recension|{n} recensioner", ratingAria: "Google-betyg {r} av 5", noRating: "Inget betyg", fewReviews: "Få recensioner", fewTitle: "Färre än 20 Google-recensioner, så betyget är osäkert",
     srcSite: "Restaurangens webbplats", srcPress: "Källa", srcTitle: "Var priset kommer ifrån",
+    reportBtn: "Rapportera ett pris eller en ändring", acctWhyReport: "Skapa ett gratis konto, eller logga in, för att rapportera ett pris eller en ändring. Vi kontrollerar varje rapport innan vi ändrar något.", srcMember: "Medlemsrapport, {d}", ms7: "Priskontrollant",
     perMain: "per huvudrätt", typicalSpend: "typisk nota", notListed: "Inte angivet",
     // The till receipt on destination pages.
     rpLink: "Priser och detaljer", rcptHead: "The Starred Bill · Bord för 1", rcptDinnerOnly: "Endast middag", rcptNoPairing: "inget vinpaket angivet", rcptNoPairingOffered: "inget vinpaket", rcptPlusWine: "+ vin {p}", rcptDinnerWine: "Middag + vin", rcptLunchWine: "Lunch + vin", rcptChecked: "Kontrollerat {d}", rcptIncl: "Per person, service ingår", rcptPlus: "Per person, ++ (service och moms tillkommer)", rcptTaxTip: "Per person, före skatt och dricks", rcptTip: "Per person, före dricks", rcptTax: "Per person, moms ingår",
@@ -1104,6 +1112,7 @@ const I18N = {
     tableLabel: "Verð veitingastaða",
     reviews: "{n} umsögn|{n} umsagnir", ratingAria: "Google-einkunn {r} af 5", noRating: "Engin einkunn", fewReviews: "Fáar umsagnir", fewTitle: "Færri en 20 umsagnir á Google, svo einkunnin er óviss",
     srcSite: "Vefsíða staðarins", srcPress: "Heimild", srcTitle: "Hvaðan verðið kemur",
+    reportBtn: "Tilkynna verð eða breytingu", acctWhyReport: "Stofnaðu ókeypis aðgang, eða skráðu þig inn, til að tilkynna verð eða breytingu. Við athugum hverja tilkynningu áður en við breytum nokkru.", srcMember: "Tilkynning frá meðlim, {d}", ms7: "Verðeftirlit",
     perMain: "á aðalrétt", typicalSpend: "venjuleg eyðsla", notListed: "Ekki gefið upp",
     // The till receipt on destination pages.
     rpLink: "Verð og upplýsingar", rcptHead: "The Starred Bill · Borð fyrir 1", rcptDinnerOnly: "Aðeins kvöldverður", rcptNoPairing: "engin vínpörun skráð", rcptNoPairingOffered: "engin vínpörun í boði", rcptPlusWine: "+ vín {p}", rcptDinnerWine: "Kvöldverður + vín", rcptLunchWine: "Hádegisverður + vín", rcptChecked: "Athugað {d}", rcptIncl: "Á mann, þjónusta innifalin", rcptPlus: "Á mann, ++ (þjónusta og skattur bætast við)", rcptTaxTip: "Á mann, fyrir skatt og þjórfé", rcptTip: "Á mann, fyrir þjórfé", rcptTax: "Á mann, skattur innifalinn",
@@ -1210,6 +1219,7 @@ const I18N = {
     tableLabel: "Preus dels restaurants",
     reviews: "{n} ressenya|{n} ressenyes", ratingAria: "Nota de Google {r} de 5", noRating: "Sense valoració", fewReviews: "Poques ressenyes", fewTitle: "Menys de 20 ressenyes a Google: preneu-vos la nota amb cautela",
     srcSite: "Web del restaurant", srcPress: "Font", srcTitle: "D'on surt aquest preu",
+    reportBtn: "Avisa d'un preu o un canvi", acctWhyReport: "Crea un compte gratuït o inicia la sessió per avisar d'un preu o un canvi. Comprovem cada avís abans de canviar res.", srcMember: "Avís d'un membre, {d}", ms7: "Verificador de preus",
     perMain: "per plat principal", typicalSpend: "despesa habitual", notListed: "No publicat",
     // The till receipt on destination pages.
     rpLink: "Preus i detalls", rcptHead: "The Starred Bill · Taula per a 1", rcptDinnerOnly: "Només sopars", rcptNoPairing: "sense maridatge publicat", rcptNoPairingOffered: "no ofereix maridatge", rcptPlusWine: "+ maridatge {p}", rcptDinnerWine: "Sopar + maridatge", rcptLunchWine: "Dinar + maridatge", rcptChecked: "Revisat: {d}", rcptIncl: "Per persona, servei inclòs", rcptPlus: "Per persona, ++ (servei i impostos a part)", rcptTaxTip: "Per persona, sense impostos ni propina", rcptTip: "Per persona, sense propina", rcptTax: "Per persona, impostos inclosos",
@@ -1316,6 +1326,7 @@ const I18N = {
     tableLabel: "ราคาร้านอาหาร",
     reviews: "{n} รีวิว", ratingAria: "คะแนน Google {r} จาก 5", noRating: "ยังไม่มีคะแนน", fewReviews: "รีวิวน้อย", fewTitle: "มีรีวิวใน Google ไม่ถึง 20 รายการ คะแนนจึงอาจยังไม่แม่นยำ",
     srcSite: "เว็บไซต์ร้าน", srcPress: "แหล่งที่มา", srcTitle: "ราคานี้มาจากที่ใด",
+    reportBtn: "แจ้งราคาหรือการเปลี่ยนแปลง", acctWhyReport: "สร้างบัญชีฟรีหรือเข้าสู่ระบบเพื่อแจ้งราคาหรือการเปลี่ยนแปลง เราตรวจสอบทุกรายการก่อนแก้ไข", srcMember: "แจ้งโดยสมาชิก {d}", ms7: "ผู้ตรวจราคา",
     perMain: "ต่อจานหลัก", typicalSpend: "ค่าใช้จ่ายโดยทั่วไป", notListed: "ไม่ได้ระบุ",
     // The till receipt on destination pages.
     rpLink: "ราคาและรายละเอียด", rcptHead: "The Starred Bill · โต๊ะสำหรับ 1 ท่าน", rcptDinnerOnly: "เฉพาะมื้อค่ำ", rcptNoPairing: "ไม่ระบุไวน์จับคู่", rcptNoPairingOffered: "ไม่มีไวน์จับคู่", rcptPlusWine: "+ ไวน์ {p}", rcptDinnerWine: "มื้อค่ำ + ไวน์", rcptLunchWine: "มื้อกลางวัน + ไวน์", rcptChecked: "ตรวจสอบ {d}", rcptIncl: "ต่อคน รวมค่าบริการ", rcptPlus: "ต่อคน ++ (บวกค่าบริการและภาษี)", rcptTaxTip: "ต่อคน ไม่รวมภาษีและทิป", rcptTip: "ต่อคน ไม่รวมทิป", rcptTax: "ต่อคน รวมภาษี",
@@ -1430,6 +1441,7 @@ const I18N = {
     tableLabel: "레스토랑 가격",
     reviews: "리뷰 {n}개", ratingAria: "Google 평점 5점 만점에 {r}점", noRating: "평점 없음", fewReviews: "리뷰 적음", fewTitle: "Google 리뷰가 20개 미만이라 평점은 참고만 하세요",
     srcSite: "공식 사이트", srcPress: "출처", srcTitle: "이 가격의 출처",
+    reportBtn: "가격 또는 변경 사항 제보", acctWhyReport: "무료 계정을 만들거나 로그인하면 가격이나 변경 사항을 제보할 수 있습니다. 모든 제보는 확인한 뒤에 반영합니다.", srcMember: "회원 제보, {d}", ms7: "가격 확인왕",
     perMain: "요리당", typicalSpend: "평균 예산", notListed: "비공개",
     // The till receipt on destination pages.
     rpLink: "가격 및 상세 정보", rcptHead: "The Starred Bill · 1인 테이블", rcptDinnerOnly: "디너만 운영", rcptNoPairing: "페어링 정보 없음", rcptNoPairingOffered: "와인 페어링 미제공", rcptPlusWine: "+ 와인 {p}", rcptDinnerWine: "디너 + 와인", rcptLunchWine: "런치 + 와인", rcptChecked: "{d} 확인", rcptIncl: "1인 기준, 서비스 요금 포함", rcptPlus: "1인 기준, ++ (서비스 요금·세금 별도)", rcptTaxTip: "1인 기준, 세금·팁 별도", rcptTip: "1인 기준, 팁 별도", rcptTax: "1인 기준, 세금 포함",
@@ -1577,6 +1589,7 @@ const I18N = {
     tableLabel: "Prezzi dei ristoranti",
     reviews: "{n} recensione|{n} recensioni", ratingAria: "Voto Google {r} su 5", noRating: "Nessun voto", fewReviews: "Poche recensioni", fewTitle: "Meno di 20 recensioni su Google: voto da prendere con cautela",
     srcSite: "Sito del ristorante", srcPress: "Fonte: recensione", srcTitle: "Da dove viene questo prezzo",
+    reportBtn: "Segnala un prezzo o un cambiamento", acctWhyReport: "Crea un account gratuito, o accedi, per segnalare un prezzo o un cambiamento. Verifichiamo ogni segnalazione prima di cambiare qualsiasi cosa.", srcMember: "Segnalazione di un membro, {d}", ms7: "Verificatore di prezzi",
     perMain: "per piatto principale", typicalSpend: "spesa tipica", notListed: "Non pubblicato",
     // The till receipt on destination pages.
     rpLink: "Prezzi e dettagli", rcptHead: "The Starred Bill · Tavolo per 1", rcptDinnerOnly: "Solo cena", rcptNoPairing: "nessun abbinamento indicato", rcptNoPairingOffered: "nessun abbinamento offerto", rcptPlusWine: "+ vini {p}", rcptDinnerWine: "Cena + vini", rcptLunchWine: "Pranzo + vini", rcptChecked: "Verificato: {d}", rcptIncl: "A persona, servizio incluso", rcptPlus: "A persona, ++ (servizio e tasse a parte)", rcptTaxTip: "A persona, tasse e mancia escluse", rcptTip: "A persona, mancia esclusa", rcptTax: "A persona, tasse incluse",

@@ -39,6 +39,7 @@
     tableLabel: "Ravintoloiden hinnat",
     reviews: "{n} arvostelu|{n} arvostelua", ratingAria: "Google-arvio {r}/5", noRating: "Ei arviota", fewReviews: "Vähän arvosteluja", fewTitle: "Alle 20 Google-arvostelua, joten arvio on epävarma",
     srcSite: "Ravintolan verkkosivut", srcPress: "Lähde", srcTitle: "Mistä hinta on peräisin",
+    reportBtn: "Ilmoita hinta tai muutos", acctWhyReport: "Luo ilmainen tili tai kirjaudu sisään ilmoittaaksesi hinnan tai muutoksen. Tarkistamme jokaisen ilmoituksen ennen kuin muutamme mitään.", srcMember: "Jäsenen ilmoitus, {d}",
     perMain: "pääruoka", typicalSpend: "tyypillinen lasku", notListed: "Ei ilmoitettu",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Pöytä 1:lle", rcptDinnerOnly: "Vain illallinen", rcptNoPairing: "viinipakettia ei ilmoitettu", rcptNoPairingOffered: "ei viinipakettia", rcptPlusWine: "+ viini {p}", rcptDinnerWine: "Illallinen + viini", rcptLunchWine: "Lounas + viini", rcptChecked: "Tarkistettu {d}", rcptIncl: "Henkeä kohden, palvelu sisältyy", rcptPlus: "Henkeä kohden, ++ (palvelu ja vero lisätään)", rcptTaxTip: "Henkeä kohden, ilman veroa ja tippiä", rcptTip: "Henkeä kohden, ilman tippiä", rcptTax: "Henkeä kohden, vero sisältyy",

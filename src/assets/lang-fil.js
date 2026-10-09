@@ -39,6 +39,7 @@
     tableLabel: "Mga presyo ng restawran",
     reviews: "{n} review", ratingAria: "Rating sa Google na {r} sa 5", noRating: "Walang rating", fewReviews: "Kaunti ang review", fewTitle: "Wala pang 20 review sa Google, kaya hindi pa maaasahan ang rating",
     srcSite: "Website ng restawran", srcPress: "Pinagmulan", srcTitle: "Saan galing ang presyong ito",
+    reportBtn: "Mag-ulat ng presyo o pagbabago", acctWhyReport: "Gumawa ng libreng account, o mag-sign in, para mag-ulat ng presyo o pagbabago. Sinusuri namin ang bawat ulat bago kami magbago ng anuman.", srcMember: "Ulat ng miyembro, {d}",
     perMain: "bawat main", typicalSpend: "karaniwang gastos", notListed: "Hindi nakalista",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Mesa para sa 1", rcptDinnerOnly: "Hapunan lang", rcptNoPairing: "walang nakalistang wine pairing", rcptNoPairingOffered: "walang wine pairing", rcptPlusWine: "+ alak {p}", rcptDinnerWine: "Hapunan + alak", rcptLunchWine: "Tanghalian + alak", rcptChecked: "Sinuri {d}", rcptIncl: "Bawat tao, kasama ang serbisyo", rcptPlus: "Bawat tao, ++ (dagdag ang service at buwis)", rcptTaxTip: "Bawat tao, bago ang buwis at tip", rcptTip: "Bawat tao, bago ang tip", rcptTax: "Bawat tao, kasama ang buwis",

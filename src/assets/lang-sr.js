@@ -38,6 +38,7 @@
     tableLabel: "Цене ресторана",
     reviews: "Рецензије: {n}", ratingAria: "Оцена на Google-у {r} од 5", noRating: "Без оцене", fewReviews: "Мало рецензија", fewTitle: "Мање од 20 рецензија на Google-у, па оцена није поуздана",
     srcSite: "Сајт ресторана", srcPress: "Извор", srcTitle: "Одакле је ова цена",
+    reportBtn: "Пријави цену или промену", acctWhyReport: "Направите бесплатан налог или се пријавите да бисте пријавили цену или промену. Сваку пријаву проверимо пре него што било шта променимо.", srcMember: "Пријава члана: {d}",
     perMain: "по главном јелу", typicalSpend: "уобичајени рачун", notListed: "Није наведено",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Сто за 1", rcptDinnerOnly: "Само вечера", rcptNoPairing: "винска пратња није наведена", rcptNoPairingOffered: "без винске пратње", rcptPlusWine: "+ вино {p}", rcptDinnerWine: "Вечера + вино", rcptLunchWine: "Ручак + вино", rcptChecked: "Проверено {d}", rcptIncl: "По особи, услуга урачуната", rcptPlus: "По особи, ++ (услуга и порез се додају)", rcptTaxTip: "По особи, без пореза и напојнице", rcptTip: "По особи, без напојнице", rcptTax: "По особи, порез урачунат",

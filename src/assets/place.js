@@ -380,11 +380,11 @@ function summaryCell(r) {
   return '<span class="sum-cell" role="cell"><button type="button" class="sum" data-row="' + esc(r.id) + '" aria-expanded="' + (state.openRow === r.id) + '">' +
     '<span class="sum-name" dir="auto">' + esc(nameOf(r)) + '</span><span class="sum-sub">' + sub + "</span>" + right + "</button></span>";
 }
-// Inside an opened row on phones: the cuisine (tap to show only that cuisine), Google Maps and "been there".
+// Inside an opened row on phones: the cuisine (tap to show only that cuisine), Google Maps, "been there" and the report link.
 const actsCell = (r) => '<span class="acts-cell" role="cell">' +
   (r.status ? '<span class="tag">' + esc(cuisineOf(r)) + "</span>" : '<button type="button" class="tag" data-cat="' + esc(r.cuisine) + '">' + esc(cuisineOf(r)) + "</button>") +
   (r.status === "closed" ? "" : '<a class="maps-pill" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("findOnMaps", { name: nameOf(r) })) + '"><svg aria-hidden="true"><use href="#pin"/></svg>Google Maps</a>') +
-  beenButton(r) + "</span>";
+  beenButton(r) + reportButton(r) + "</span>";
 function toggleRow(btn) {
   const row = btn.closest(".row"), id = btn.dataset.row, before = row.getBoundingClientRect().top;
   const open = state.openRow !== id;
@@ -417,6 +417,22 @@ function mealValue(r, meal) {
   const type = lunch ? (r.lunchType || "menu") : r.dinnerType;
   return { n, text: money(n, r), type, extra: type === "main" ? t("perMain") : type === "spend" ? t("typicalSpend") : "" };
 }
+// Where the price came from: the restaurant's website or a review (linked), or a member's report, checked against the
+// restaurant's site before we used it, with the month they saw the price (sourceDate, e.g. "2026-10").
+function srcHtml(r) {
+  const type = srcTypeOf(r), url = srcOf(r);
+  let label = type === "site" ? t("srcSite") : t("srcPress");
+  if (type === "member") {
+    const m = /^(\d{4})-(\d{2})/.exec((L() ? r.lunchSourceDate : r.sourceDate) || "");
+    label = m ? t("srcMember", { d: new Date(+m[1], +m[2] - 1, 1).toLocaleDateString(locale(), { month: cjk() ? "numeric" : "short", year: "numeric" }) })
+      : t("srcMember", { d: "" }).replace(/[\s,，:：（）()]+$/, "");
+    if (!url) return ' <span class="src">' + esc(label) + "</span>";
+  }
+  return url && type !== "none" ? ' <a class="src" href="' + esc(url) + '" target="_blank" rel="noopener" title="' + esc(t("srcTitle")) + '">' + esc(label) + "</a>" : "";
+}
+// "Report a price or change": members tell us what they paid, or that it has closed or has a new chef (account.js, report.js).
+const reportButton = (r) => r.status ? "" : '<button type="button" class="report-btn" data-report-id="' + esc(r.id) + '" data-report-name="' + esc(r.name) +
+  '" data-report-cur="' + esc(r.cur) + '" data-report-meal="' + (L() ? "lunch" : "dinner") + '">' + esc(t("reportBtn")) + "</button>";
 function receiptLine(label, v, note, on) {
   const notes = [v.extra, note].filter(Boolean).join(" · ");
   return '<span class="rc-line' + (on ? " on" : "") + '"><span class="rc-k">' + esc(label) + '</span><span class="rc-dots" aria-hidden="true"></span>' +
@@ -428,7 +444,7 @@ function receipt(r) {
   const dinner = mealValue(r, "dinner"), lunch = mealValue(r, "lunch"), chosen = L() ? lunch : dinner;
   const wine = wineOf(r);
   const total = chosen.n != null && chosen.type === "menu" && wine ? chosen.n + wine : null;
-  const src = srcOf(r) && srcTypeOf(r) !== "none" ? ' <a class="src" href="' + esc(srcOf(r)) + '" target="_blank" rel="noopener" title="' + esc(t("srcTitle")) + '">' + (srcTypeOf(r) === "site" ? t("srcSite") : t("srcPress")) + "</a>" : "";
+  const src = srcHtml(r);
   const checked = PRICES_CHECKED.toLocaleDateString(locale(), { month: cjk() ? "numeric" : "short", year: "numeric" });
   return '<span class="receipt" role="cell"><span class="rc-paper">' +
     '<span class="rc-head" aria-hidden="true">' + esc(t("rcptHead")) + "</span>" +
@@ -465,7 +481,7 @@ function ledgerRow(r) {
     '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
     '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num' + (fewReviews(r) ? " few" : "") + '" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + fewNote(r) + "</span>" : "") : '<span class="num muted" aria-hidden="true">–</span><span class="note">' + t("noRating") + "</span>") + "</span>" +
     '<span class="notes" role="cell">' + (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc(noteOf(r) || "–") +
-      (srcOf(r) && srcTypeOf(r) !== "none" ? ' <a class="src" href="' + esc(srcOf(r)) + '" target="_blank" rel="noopener" title="' + esc(t("srcTitle")) + '">' + (srcTypeOf(r) === "site" ? t("srcSite") : t("srcPress")) + "</a>" : "") + "</span>" +
+      srcHtml(r) + reportButton(r) + "</span>" +
     '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + "</span>" + stub(r) + "</span>" + receipt(r) + actsCell(r) +
     '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
     "</div>";

@@ -39,6 +39,7 @@
     tableLabel: "Τιμές εστιατορίων",
     reviews: "{n} κριτική|{n} κριτικές", ratingAria: "Βαθμολογία Google {r} στα 5", noRating: "Χωρίς βαθμολογία", fewReviews: "Λίγες κριτικές", fewTitle: "Λιγότερες από 20 κριτικές στο Google, οπότε η βαθμολογία είναι ενδεικτική",
     srcSite: "Ιστότοπος εστιατορίου", srcPress: "Πηγή", srcTitle: "Από πού προέρχεται η τιμή",
+    reportBtn: "Αναφορά τιμής ή αλλαγής", acctWhyReport: "Δημιουργήστε δωρεάν λογαριασμό ή συνδεθείτε για να αναφέρετε μια τιμή ή αλλαγή. Ελέγχουμε κάθε αναφορά πριν αλλάξουμε οτιδήποτε.", srcMember: "Αναφορά μέλους, {d}",
     perMain: "ανά κυρίως πιάτο", typicalSpend: "συνήθης λογαριασμός", notListed: "Δεν αναφέρεται",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Τραπέζι για 1", rcptDinnerOnly: "Μόνο δείπνο", rcptNoPairing: "δεν αναφέρεται συνοδεία κρασιών", rcptNoPairingOffered: "δεν προσφέρει συνοδεία κρασιών", rcptPlusWine: "+ κρασί {p}", rcptDinnerWine: "Δείπνο + κρασί", rcptLunchWine: "Μεσημεριανό + κρασί", rcptChecked: "Έλεγχος {d}", rcptIncl: "Ανά άτομο, με σέρβις", rcptPlus: "Ανά άτομο, ++ (συν σέρβις και φόρος)", rcptTaxTip: "Ανά άτομο, χωρίς φόρο και φιλοδώρημα", rcptTip: "Ανά άτομο, χωρίς φιλοδώρημα", rcptTax: "Ανά άτομο, με φόρο",

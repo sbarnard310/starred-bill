@@ -848,9 +848,14 @@ def write_versioned(path, body):
 
 
 def copy_assets():
+    """Copies src/assets/ under versioned names. A script that loads another itself (account.js loads report.js only when
+    it's needed) names it {{asset:report.js}}, filled in here, so those that load others are copied last."""
     (OUT / "assets").mkdir(parents=True)
-    for f in sorted((SRC / "assets").iterdir()):
-        assets[f.name] = write_versioned("/assets/" + f.name, f.read_bytes())
+    files = sorted((SRC / "assets").iterdir())
+    loaders = [f for f in files if b"{{asset:" in f.read_bytes()]
+    for f in [f for f in files if f not in loaders] + loaders:
+        body = re.sub(rb"\{\{asset:([\w.-]+)\}\}", lambda m: assets[m.group(1).decode()].encode(), f.read_bytes())
+        assets[f.name] = write_versioned("/assets/" + f.name, body)
 
 
 ICONS = (SRC / "icons.svg").read_text("utf-8").strip()
@@ -6335,11 +6340,22 @@ def restaurant_og(r):
     return f"{SITE_URL}/og/restaurants/{r['id']}.png" if (SRC / "og" / "restaurants" / f"{r['id']}.png").exists() else None
 
 
+def report_attrs(r):
+    """What the "Report a price or change" form (account.js, report.js) needs to know about the restaurant."""
+    return f'data-report-id="{e(r["id"])}" data-report-name="{e(r["name"])}" data-report-cur="{e(r["cur"])}"'
+
+
 def report_link(r):
-    """"Seen a different price?": an email to the site with the restaurant filled in (counted as a contact event)."""
-    body = f"Restaurant: {r['name']} ({SITE_URL}{r['page']})\nThe price I've seen: \nWhere I saw it (a link helps): \n"
-    return (f'<a class="rp-report" data-report href="mailto:hello@starredbill.com?subject={urllib.parse.quote("Price check: " + r["name"])}'
-            f'&amp;body={urllib.parse.quote(body)}">Seen a different price? Tell us</a>')
+    """"Seen a different price?": opens the members' report form (signing in first if need be)."""
+    return f'<button type="button" class="rp-report linkish" {report_attrs(r)}>Seen a different price? Tell us</button>'
+
+
+def member_source(r, meal):
+    """A price whose source is a member's report (sourceType "member", checked against the restaurant's site before we
+    used it), with the month they saw it (sourceDate / lunchSourceDate, e.g. "2026-10"). Never the member's name."""
+    when = r.get("lunchSourceDate" if meal == "lunch" else "sourceDate", "")
+    m = re.match(r"(\d{4})-(\d{2})", when or "")
+    return "a member’s report" + (f" from {date(int(m.group(1)), int(m.group(2)), 1).strftime('%B %Y')}" if m else "")
 
 
 def restaurant_answer(r, stay):
@@ -6533,7 +6549,8 @@ def build_restaurant_pages():
         cur = r["cur"]
         where = area_line(r)
         crumbs = [places[c] for c in reversed(r["_chain"])]
-        src = lambda url, typ, label: f'<a class="src" href="{e(url)}">{label}</a>' if url and typ != "none" else ""
+        src = lambda url, typ, label: (f'<a class="src" href="{e(url)}">{label}</a>' if url and typ != "none"
+                                       else '<span class="src">member’s report</span>' if typ == "member" else "")
         two = bool(r.get("lunchSource")) and r.get("lunchSource") != r.get("source")
         src_links = " · ".join(x for x in (
             src(r.get("source"), r.get("sourceType"), "dinner source" if two else "restaurant’s website" if r.get("sourceType") == "site" else "source"),
@@ -6557,7 +6574,8 @@ def build_restaurant_pages():
                 f'<svg aria-hidden="true"><use href="#heart"/></svg><span>Save to wishlist</span></button>'
                 + (f'<a class="rp-btn" href="{e(r["bookingUrl"])}">Book on {e(booking_site(r["bookingUrl"]) or "their website")}</a>' if r.get("bookingUrl") else "")
                 + (f'<a class="rp-btn" href="{e(r["website"])}">Restaurant’s website</a>' if r.get("website") else "")
-                + f'<a class="rp-btn" href="{e(maps)}">Google Maps</a></div>\n'
+                + f'<a class="rp-btn" href="{e(maps)}">Google Maps</a>'
+                + f'<button type="button" class="rp-btn" {report_attrs(r)}>Report a price or change</button></div>\n'
                 '      <div class="rp-cur" id="rpCur" role="group" aria-label="Show prices in" hidden></div>\n'
                 f'    </div>\n    <div class="rp-side">{receipt_html(r, kind, src_links)}</div>\n  </div>\n</div>\n')
 
@@ -6638,7 +6656,7 @@ def build_restaurant_pages():
         heads = "<th>Per person</th>" + (f"<th>With {pct:g}% {e(SERVICE_ADDS[kind])}</th>" if pct else "") + "<th>For two</th>" + (f"<th>For two, with {e(SERVICE_ADDS[kind])}</th>" if pct else "")
         sources = []
         for label, url, typ in (("Dinner", r.get("source"), r.get("sourceType")), ("Lunch", r.get("lunchSource"), r.get("lunchSourceType"))):
-            if url and typ != "none" and url not in [s[1] for s in sources]:
+            if (url and typ != "none" and url not in [s[1] for s in sources]) or (typ == "member" and not url):
                 sources.append((label, url, typ))
         if r.get("menusSource"):
             sources = [("Menus", r["menusSource"], "site")]
@@ -6653,7 +6671,8 @@ def build_restaurant_pages():
                     + (f'    <div class="table-scroll"><table class="rp-table rp-bill"><thead><tr><th></th>{heads}</tr></thead><tbody>{"".join(pay_rows)}</tbody></table></div>\n' if pay_rows else "<p>No prices are published yet.</p>\n")
                     + (f'    <p class="rp-note">{e(service_text)}</p>\n' if service_text else "")
                     + ('    <p class="rp-note">Sources: ' + " · ".join(
-                        f'<a href="{e(u)}">{"the restaurant’s website" if t == "site" else urllib.parse.urlsplit(u).netloc.replace("www.", "")}</a> ({label.lower()}' + (" and wine" if label == "Dinner" and w else "") + ")"
+                        (e(member_source(r, label.lower())) if not u else f'<a href="{e(u)}">{"the restaurant’s website" if t == "site" else urllib.parse.urlsplit(u).netloc.replace("www.", "")}</a>')
+                        + f' ({label.lower()}' + (" and wine" if label == "Dinner" and w else "") + ")"
                         for label, u, t in sources) + f'. Prices checked {e(nice_date(r["menusChecked"]) if r.get("menusChecked") else guide_stats_checked())}; menus change, so check with {e(r["name"])} before you book. {report_link(r)}</p>\n' if sources else "")
                     + "  </div>\n</section>\n")
 
@@ -6757,7 +6776,9 @@ def restaurant_sources_html(r, michelin_url):
     else:
         for label, url, typ in (("dinner" + (" and wine" if r.get("wine") else ""), r.get("source"), r.get("sourceType")),
                                 ("lunch", r.get("lunchSource"), r.get("lunchSourceType"))):
-            if url and typ != "none":
+            if typ == "member" and not url:
+                prices.append(e(member_source(r, label.split()[0])) + f" ({label})")
+            elif url and typ != "none":
                 if prices and url in prices[-1]:
                     prices[-1] = prices[-1].replace(")", f" and {label})")
                 else:
@@ -6965,7 +6986,7 @@ def build_service_worker():
         if f.is_file():
             digest.update(str(f.relative_to(OUT)).encode() + f.read_bytes())
     # Language files are left out: each is saved the first time a page that offers it is opened.
-    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [url for name, url in sorted(assets.items()) if not name.startswith("lang-") and name != "rtl.css"]
+    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [url for name, url in sorted(assets.items()) if not name.startswith("lang-") and name not in ("rtl.css", "report.js")]
     sw = (SRC / "sw.js").read_text("utf-8").replace("{{version}}", digest.hexdigest()[:12]).replace("{{precache}}", json.dumps(precache))
     (OUT / "sw.js").write_text(sw, "utf-8")
 

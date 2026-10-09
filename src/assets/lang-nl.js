@@ -44,6 +44,7 @@
     tableLabel: "Restaurantprijzen",
     reviews: "{n} recensie|{n} recensies", ratingAria: "Google-score {r} van 5", noRating: "Geen score", fewReviews: "Weinig recensies", fewTitle: "Minder dan 20 Google-recensies, dus de score zegt nog weinig",
     srcSite: "Website van het restaurant", srcPress: "Bron", srcTitle: "Waar deze prijs vandaan komt",
+    reportBtn: "Prijs of wijziging melden", acctWhyReport: "Maak een gratis account aan of log in om een prijs of wijziging te melden. We controleren elke melding voordat we iets aanpassen.", srcMember: "Melding van een lid, {d}",
     perMain: "per hoofdgerecht", typicalSpend: "gemiddelde rekening", notListed: "Niet vermeld",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Tafel voor 1", rcptDinnerOnly: "Alleen diner", rcptNoPairing: "geen wijnarrangement vermeld", rcptNoPairingOffered: "geen wijnarrangement", rcptPlusWine: "+ wijn {p}", rcptDinnerWine: "Diner + wijn", rcptLunchWine: "Lunch + wijn", rcptChecked: "Gecontroleerd {d}", rcptIncl: "Per persoon, inclusief service", rcptPlus: "Per persoon, ++ (service en btw komen erbij)", rcptTaxTip: "Per persoon, zonder belasting en fooi", rcptTip: "Per persoon, zonder fooi", rcptTax: "Per persoon, inclusief btw",

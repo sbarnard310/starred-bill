@@ -748,6 +748,8 @@ def build_place(p):
     # Then one to Help me pick with this place as the first answer (/pick/?w=<address>), on pages with starred restaurants.
     near_line = (f'<p class="hero-near">In {e(search_short(p))} or nearby? See the <a href="/near-me/">Michelin star restaurants near you</a>, nearest first.'
                  + (f' Can\'t choose? <a href="/pick/?w={p["path"]}" class="hero-pick">Help me pick in {e(search_short(p))}</a>.' if starred_n[p["id"]] and p["type"] != "group" else "") + "</p>")
+    # "Last updated" under the figures and the structured data's dateModified: the day this page's data last changed.
+    day = place_day(p)
     for lang in langs:
         if lang == "en":
             texts = {
@@ -782,6 +784,8 @@ def build_place(p):
         faq = destination_faq(p, page, starred, lang, quick=bool(quick))
         pilot = p["id"] in SEO_PILOT
         answer = short_answer(p, page, starred, lang) if lang in QA_LANGS else ""
+        updated = (f'<p class="updated"><time datetime="{day}">{e(pilot_words(lang)["updated"].replace("{date}", long_date(day, lang)))}</time></p>'
+                   if day else "")
         write(lang_paths[lang], (pilot_headings if pilot else lambda h, *a: h)(section_words(render("place.html", {
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
             "title": e(titles[lang]), "description": e(texts["description"]), "canonical": SITE_URL + lang_paths[lang],
@@ -796,7 +800,8 @@ def build_place(p):
             "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
             "answer": answer, "quick": quick_html(quick, page, lang), "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
             "newStars": new_stars_html(p, page, lang),
-            "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
+            "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq, SITE_URL + lang_paths[lang], titles[lang], day),
+            "updated": updated,
             "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang),
             "browse": browse_html(p, page, starred, lang) if starred else "",
         }), lang, page, starred), page, lang))
@@ -2111,15 +2116,21 @@ def page_titles(p, page, languages, starred):
 LD_LIST_MAX = 60  # the most restaurants a page's structured data lists (France's 646 in full came to 230 KB)
 
 
-def json_ld(p, crumbs, starred, description, lang="en", texts=None, faq=()):
-    """Structured data for search engines: the breadcrumb trail, the starred restaurants as a list and the FAQ.
+def json_ld(p, crumbs, starred, description, lang="en", texts=None, faq=(), url=None, title=None, modified=None):
+    """Structured data for search engines: the page itself (WebPage, with dateModified: the day its data last changed),
+    the breadcrumb trail, the starred restaurants as a list and the FAQ.
     Google ratings are deliberately left out (Google doesn't allow ratings copied from elsewhere).
     A translated page names its trail in its language and links to the same language where the page above offers it."""
     at = lambda c: lang_path(c["path"], lang) if lang in place_langs(c) else c["path"]
     trail = [{"name": texts["crumbHome"] if texts else "All destinations", "path": "/"}] + \
         [{"name": pick_lang(c, "name", lang), "path": at(c)} for c in crumbs + [p]]
-    graph = [{"@type": "BreadcrumbList", "itemListElement": [
-        {"@type": "ListItem", "position": i + 1, "name": c["name"], "item": SITE_URL + c["path"]} for i, c in enumerate(trail)]}]
+    url = url or SITE_URL + at(p)
+    webpage = {"@type": "WebPage", "@id": url, "url": url, "name": title, "description": description,
+               "inLanguage": HREFLANG.get(lang, lang), "isPartOf": {"@id": WEBSITE["@id"]}, "breadcrumb": {"@id": url + "#breadcrumb"},
+               "mainEntity": {"@id": url + "#restaurants"} if starred else None, "dateModified": modified}
+    graph = [{k: v for k, v in webpage.items() if v},
+             {"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
+                 {"@type": "ListItem", "position": i + 1, "name": c["name"], "item": SITE_URL + c["path"]} for i, c in enumerate(trail)]}]
     if starred:
         items = []
         # Big places list their top LD_LIST_MAX (most stars first), with numberOfItems giving the full count.
@@ -2135,7 +2146,7 @@ def json_ld(p, crumbs, starred, description, lang="en", texts=None, faq=()):
             if r.get("dinner") is not None and r.get("dinnerType") == "menu":
                 item["priceRange"] = f"Tasting menu {money(r['dinner'], r['cur'])}"
             items.append({"@type": "ListItem", "position": i + 1, "item": {k: v for k, v in item.items() if v}})
-        graph.append({"@type": "ItemList", "name": f"Michelin-starred restaurants in {in_sentence(p)}" if lang == "en" else plain(texts["h1"]), "description": description,
+        graph.append({"@type": "ItemList", "@id": url + "#restaurants", "name": f"Michelin-starred restaurants in {in_sentence(p)}" if lang == "en" else plain(texts["h1"]), "description": description,
                       "numberOfItems": len(starred), "itemListElement": items})
     if faq:
         graph.append({"@type": "FAQPage", "inLanguage": HREFLANG.get(lang, lang), "mainEntity": [
@@ -4786,9 +4797,28 @@ def guide_stats_checked():
     return (MONTH_NAMES[int(month[5:7]) - 1] + " " + month[:4]) if re.fullmatch(r"\d{4}-\d{2}", month) else ""
 
 
+_last_changed = None
+
+
 def last_changed():
     """The day each file in content/ (and the privacy page) last changed, from the git history, for the sitemap's
-    <lastmod>. Empty when there's no history to read (no git, or a shallow copy where every file looks new)."""
+    <lastmod>, the pages' dateModified and destination pages' "Last updated" line. Empty when there's no history to read
+    (no git, or a shallow copy where every file looks new). Read once per build."""
+    global _last_changed
+    if _last_changed is None:
+        _last_changed = read_last_changed()
+    return _last_changed
+
+
+def place_day(p):
+    """The day a destination page's data last changed: its place file or any of its restaurants' files ("2026-10-09"),
+    else None. The sitemap, the page's dateModified and its "Last updated" line all use it."""
+    days = last_changed()
+    files = [source_files.get("place:" + p["id"])] + [source_files[r["id"]] for r in members(p)]
+    return max((days[f] for f in files if f in days), default=None)
+
+
+def read_last_changed():
     try:
         run = lambda *a: subprocess.run(["git", "-c", "core.quotepath=off", *a], cwd=ROOT, capture_output=True, text=True, check=True).stdout
         if run("rev-parse", "--is-shallow-repository").strip() == "true":
@@ -4815,7 +4845,7 @@ def sitemap_dates():
     latest = lambda files: max((days[f] for f in files if f in days), default=None)
     out = {}
     for p in pages:
-        day = latest([source_files.get("place:" + p["id"])] + [source_files[r["id"]] for r in members(p)])
+        day = place_day(p)
         for lang in place_langs(p):
             out[lang_path(p["path"], lang)] = day
     out["/"] = out["/near-me/"] = out["/pick/"] = latest(source_files.values())

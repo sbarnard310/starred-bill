@@ -373,6 +373,8 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .hero-side { display: flex; flex-direction: column; justify-content: flex-end; gap: 24px; align-self: stretch; min-width: 0; }
 .hero-side .answer { margin: 0 0 auto; max-width: none; padding: 16px 18px; border-inline-start: 3px solid var(--gold); background: rgba(255, 255, 255, .06); border-radius: var(--radius); border-start-start-radius: 0; border-end-start-radius: 0; color: var(--band-ink); font-size: 1rem; line-height: 1.55; }
 .answer-label { font-weight: 700; color: var(--gold); }
+/* "Last updated 9 October 2026" under the figures: the day the page's data last changed (place_day() in build.py). */
+.hero-side .updated { margin: -6px 0 0; font-size: .82rem; color: var(--band-muted); }
 /* Destination pages (place.html): the heading runs the full width, then the intro on the left with the answer and figures
    beside it, top-aligned, so the right-hand column is never left empty however long the intro. */
 .hero-wide .wrap { row-gap: 0; align-items: start; }

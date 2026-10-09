@@ -2887,6 +2887,7 @@ def guide_stats():
     stats.update(cheap_stats(live))
     stats.update(cost_stats(live))
     stats.update(gone_stats())
+    stats.update(most_stats(live))
     return stats
 
 
@@ -2968,6 +2969,188 @@ def list_stats(live, year):
     gained, lost = three_star_changes(year)
     out["new3"], out["lost3"] = str(len(gained)), str(len(lost))
     return out
+
+
+# The most-stars guide (9 Oct 2026, to-do item guide-most-stars-cities): the cities, US cities and countries with the most
+# starred restaurants and stars, and what a star costs in each, as {{table:most-cities}}, -us-cities, -countries and
+# -per-person, with figures like {{mostCity1}}. A city is its page (a borough counts under New York), a city-state, or a
+# region page that is itself a city (Kyoto, Shanghai, Berlin: its restaurants have no `area`), else the town in `area`.
+MOST_CITY_STATES = ("hong-kong", "singapore", "macau", "monaco")
+MOST_CITY_NAMES = {"valencian-community": "Valencia", "aosta-valley": "Aosta", "basel-city": "Basel", "berne": "Bern"}  # regions named for more than their city
+MOST_ROWS = {"cities": 30, "us-cities": 15, "countries": 25, "per-person": 15}
+MOST_PRICED_MIN = 5    # priced dinner menus a city or country needs before its typical menu and price per star are shown
+PER_PERSON_MIN = 1     # millions of people a country needs for the per-person table (Monaco's 38,000 would top any list)
+# Approximate 2024 populations in millions (UN World Population Prospects 2024 and national statistics offices, rounded),
+# for starred restaurants per million people. A country gaining its first stars needs adding; the build says so.
+POPULATION_M = {
+    "france": 68.4, "italy": 59.0, "japan": 124.0, "germany": 84.6, "spain": 48.8, "usa": 340.0, "uk": 69.1, "china": 1410.0,
+    "switzerland": 8.9, "belgium": 11.8, "netherlands": 18.0, "austria": 9.2, "hong-kong": 7.5, "taiwan": 23.4, "portugal": 10.6,
+    "south-korea": 51.7, "singapore": 6.0, "thailand": 71.7, "denmark": 6.0, "canada": 41.3, "mexico": 130.0, "brazil": 212.0,
+    "ireland": 5.4, "sweden": 10.6, "uae": 11.0, "macau": 0.69, "norway": 5.6, "turkiye": 85.7, "new-zealand": 5.3,
+    "argentina": 45.7, "croatia": 3.9, "greece": 10.4, "luxembourg": 0.67, "poland": 37.5, "vietnam": 101.0, "slovenia": 2.1,
+    "czechia": 10.9, "hungary": 9.6, "malaysia": 34.1, "monaco": 0.038, "philippines": 115.0, "finland": 5.6, "malta": 0.56,
+    "lithuania": 2.9, "iceland": 0.39, "qatar": 3.0, "estonia": 1.4, "latvia": 1.9, "serbia": 6.6, "andorra": 0.08,
+    "liechtenstein": 0.04,
+}
+
+
+def most_city(r):
+    """The city a starred restaurant counts under in the most-stars guide: (key, name, its page or None)."""
+    t, chain = r["cityType"], r["_chain"]
+    if t == "district":
+        pid = chain[1]
+    elif t == "city" or (t == "country" and r["country"] in MOST_CITY_STATES) or (t == "region" and not r.get("area")):
+        pid = chain[0]
+    else:
+        town = (r.get("area") or r["cityName"]).split(", ")[0]
+        return r["country"] + ":" + town, town, None
+    return pid, MOST_CITY_NAMES.get(pid, places[pid]["name"]), places[pid]["path"]
+
+
+def middle(values):
+    """The median of some numbers, or None."""
+    v = sorted(values)
+    if not v:
+        return None
+    return v[len(v) // 2] if len(v) % 2 else (v[len(v) // 2 - 1] + v[len(v) // 2]) / 2
+
+
+def most_groups(rows, key):
+    """Starred restaurants grouped by key(r) -> (id, name, path), most restaurants first (then most stars): each with its
+    star counts, total stars, and median dinner tasting menu and price per star in US dollars (None below MOST_PRICED_MIN)."""
+    groups = {}
+    for r in rows:
+        k, name, path = key(r)
+        groups.setdefault(k, {"id": k, "name": name, "path": path, "country": r["country"], "rs": []})["rs"].append(r)
+    for g in groups.values():
+        rs = g["rs"]
+        g["c"] = [sum(1 for r in rs if r["stars"] == n) for n in (1, 2, 3)]
+        g["n"], g["stars"] = len(rs), sum(r["stars"] for r in rs)
+        menus = [r for r in rs if is_menu(r, "dinner")]
+        g["priced"] = len(menus)
+        enough = len(menus) >= MOST_PRICED_MIN
+        g["menu"] = middle(to_usd(r, "dinner") for r in menus) if enough else None
+        g["perStar"] = middle(to_usd(r, "dinner") / r["stars"] for r in menus) if enough else None
+    return sorted(groups.values(), key=lambda g: (-g["n"], -g["stars"], g["name"]))
+
+
+def most_country(r):
+    return r["country"], places[r["country"]]["name"], places[r["country"]]["path"]
+
+
+def per_million(g):
+    return g["n"] / POPULATION_M[g["id"]] if g["id"] in POPULATION_M else None
+
+
+def most_stats(live):
+    """Figures for the most-stars guide: {{mostCity1}} (the city with the most starred restaurants), {{mostCity1N}},
+    {{mostCity1Stars}}, {{mostCity1Country}}, {{mostCity1Split}}, likewise 2 to 5; {{mostStarsCity}} / {{mostStarsCityN}}
+    (most stars in all), {{most3City}} / {{most3CityN}} (most three-star restaurants); {{mostCityBeats}} (countries with
+    fewer starred restaurants than the top city); {{mostCities}} (towns and cities with a star), {{mostCities10}} (with 10 or
+    more); {{mostCountryStars}} / {{mostSecondCountryStars}} (the top two countries' stars); {{mostUS1}} etc. for US cities;
+    {{mostPer1}} / {{mostPer1N}} (most starred restaurants per million people, countries of a million or more);
+    {{mostPerStar}} (median price per star, worldwide), {{mostCheapStar}} / {{mostCheapStarUSD}} and {{mostDearStar}} /
+    {{mostDearStarUSD}} (cheapest and dearest stars among the cities in the table)."""
+    out = {}
+    cities = most_groups(live, most_city)
+    countries = most_groups(live, most_country)
+    split = lambda g: star_split(g["c"])
+    for i, g in enumerate(cities[:5], 1):
+        out.update({f"mostCity{i}": g["name"], f"mostCity{i}N": f"{g['n']:,}", f"mostCity{i}Stars": f"{g['stars']:,}",
+                    f"mostCity{i}Country": places[g["country"]]["name"], f"mostCity{i}Split": split(g), f"mostCity{i}3": str(g["c"][2])})
+    by_stars = sorted(cities, key=lambda g: (-g["stars"], -g["n"], g["name"]))
+    by_three = sorted(cities, key=lambda g: (-g["c"][2], -g["stars"], g["name"]))
+    out.update({"mostStarsCity": by_stars[0]["name"], "mostStarsCityN": f"{by_stars[0]['stars']:,}",
+                "most3City": by_three[0]["name"], "most3CityN": str(by_three[0]["c"][2]),
+                "most3City2": by_three[1]["name"], "most3City2N": str(by_three[1]["c"][2]),
+                "mostCityBeats": str(sum(1 for g in countries if g["n"] < cities[0]["n"])),
+                "mostCities": f"{len(cities):,}", "mostCities10": str(sum(1 for g in cities if g["n"] >= 10))})
+    out["mostCountryStars"], out["mostSecondCountryStars"] = f"{countries[0]['stars']:,}", f"{countries[1]['stars']:,}"
+    by_stars_c = sorted(countries, key=lambda g: (-g["stars"], -g["n"], g["name"]))
+    for i, g in enumerate(by_stars_c[:3], 1):
+        out[f"mostStarsCountry{i}"], out[f"mostStarsCountry{i}N"] = g["name"], f"{g['stars']:,}"
+    # Any city with a page or any country, by its id: {{perStar_kyoto}}, {{menu_new_york}} (US dollars), {{inCity_nara}},
+    # {{perM_switzerland}}, and {{mostStarsCountry2}} / {{mostStarsCountry2N}} (countries by total stars).
+    for g in cities + countries:
+        if g["path"] and g["perStar"] is not None:
+            key = g["id"].replace("-", "_")
+            out[f"perStar_{key}"], out[f"menu_{key}"] = usd_text(g["perStar"]), usd_text(g["menu"])
+    for g in cities:
+        if g["path"]:
+            out[f"inCity_{g['id'].replace('-', '_')}"] = f"{g['n']:,}"  # {{inCity_nara}}: starred restaurants in a city
+    for g in countries:
+        if per_million(g) is not None:
+            out[f"perM_{g['id'].replace('-', '_')}"] = f"{per_million(g):.1f}"
+    us = most_groups([r for r in live if r["country"] == "usa"], most_city)
+    for i, g in enumerate(us[:4], 1):
+        out.update({f"mostUS{i}": g["name"], f"mostUS{i}N": str(g["n"]), f"mostUS{i}Stars": str(g["stars"]), f"mostUS{i}3": str(g["c"][2])})
+    missing = sorted(g["id"] for g in countries if g["id"] not in POPULATION_M)
+    if missing:
+        print("The most-stars guide has no population for " + ", ".join(missing) + ": add them to POPULATION_M in build.py.")
+    per = sorted((g for g in countries if POPULATION_M.get(g["id"], 0) >= PER_PERSON_MIN), key=lambda g: -per_million(g))
+    for i, g in enumerate(per[:3], 1):
+        out[f"mostPer{i}"], out[f"mostPer{i}N"] = g["name"], f"{per_million(g):.1f}"
+    menus = [r for r in live if is_menu(r, "dinner")]
+    out["mostPerStar"] = usd_text(middle(to_usd(r, "dinner") / r["stars"] for r in menus))
+    shown = [g for g in cities[:MOST_ROWS["cities"]] if g["perStar"] is not None]
+    cheap, dear = min(shown, key=lambda g: g["perStar"]), max(shown, key=lambda g: g["perStar"])
+    out.update({"mostCheapStar": cheap["name"], "mostCheapStarUSD": usd_text(cheap["perStar"]),
+                "mostDearStar": dear["name"], "mostDearStarUSD": usd_text(dear["perStar"])})
+    return out
+
+
+def most_blocks(live, note):
+    """{{table:most-cities}}, {{table:most-us-cities}}, {{table:most-countries}} and {{table:most-per-person}}."""
+    blocks = {}
+    dollars = lambda n: usd_text(n) if n is not None else '<span class="muted">–</span>'
+    sort_num = lambda n: "" if n is None else f"{n:.2f}"
+
+    def table(groups, first, with_country):
+        rows = ""
+        for i, g in enumerate(groups, 1):
+            name = f'<a href="{e(g["path"])}">{e(g["name"])}</a>' if g["path"] else e(g["name"])
+            if with_country and places[g["country"]]["name"] != g["name"]:  # not under Hong Kong, Singapore or Macau
+                name += f'<br><span class="muted">{e(places[g["country"]]["name"])}</span>'
+            rows += (f'<tr><td data-label="{first}" data-sort="{i}"><span class="rank">{i}</span> {name}</td>'
+                     f'<td class="num" data-label="Restaurants" data-sort="{g["n"]}"><strong>{g["n"]:,}</strong></td>'
+                     f'<td class="num" data-label="Total stars" data-sort="{g["stars"]}">{g["stars"]:,}</td>'
+                     f'<td class="num" data-label="Three, two and one star" data-sort="{g["c"][2] * 10000 + g["c"][1] * 100 + g["c"][0]}">'
+                     f'{g["c"][2]} · {g["c"][1]} · {g["c"][0]}</td>')
+            rows += (f'<td class="num" data-label="Typical tasting menu" data-sort="{sort_num(g["menu"])}">{dollars(g["menu"])}</td>'
+                     f'<td class="num" data-label="Price per star" data-sort="{sort_num(g["perStar"])}">{dollars(g["perStar"])}</td></tr>')
+        heads = [first, "Restaurants", "Total stars", "★★★ · ★★ · ★", "Typical tasting menu", "Price per star"]
+        head = "".join(f'<th scope="col" aria-sort="{"ascending" if h == first else "none"}">{h}</th>' for h in heads)
+        return f'<div class="table-wrap"><table class="guide-table data rank-list most-table" data-sortable><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>'
+
+    prices = ("“Typical tasting menu” is the median price of the main dinner tasting menu, per person before service and drinks, "
+              "in US dollars at recent exchange rates; “price per star” divides each menu by its restaurant’s stars and takes the median. "
+              f"Both need at least {MOST_PRICED_MIN} published menu prices, so they are blank where fewer restaurants publish one")
+    china = ", as in mainland China, where restaurants publish typical spends rather than menus."
+    cities = most_groups(live, most_city)
+    blocks["most-cities"] = table(cities[:MOST_ROWS["cities"]], "City", True) + note(
+        "Every Michelin-starred restaurant on The Starred Bill, from the current MICHELIN Guide editions. Each city counts the restaurants "
+        "on our page for it: New York includes all five boroughs, Los Angeles Santa Monica and Beverly Hills, Copenhagen Hellerup and Gentofte, "
+        f"and Hong Kong, Singapore and Macau each count as one city. {prices}{china} Tap a column heading to sort.")
+    us = most_groups([r for r in live if r["country"] == "usa"], most_city)
+    blocks["most-us-cities"] = table(us[:MOST_ROWS["us-cities"]], "City", False) + note(
+        f"US cities and towns with Michelin-starred restaurants, from the current MICHELIN Guide editions for each state. {prices}. Tap a column heading to sort.")
+    countries = most_groups(live, most_country)
+    by_stars = sorted(countries, key=lambda g: (-g["stars"], -g["n"], g["name"]))
+    blocks["most-countries"] = table(by_stars[:MOST_ROWS["countries"]], "Country", False) + note(
+        "Countries and territories ranked by their total stars (a three-star restaurant counts three), from the current MICHELIN Guide editions; "
+        "Hong Kong and Macau are counted on their own, as the MICHELIN Guide does. "
+        f"{prices}. Tap a column heading to sort.")
+    per = sorted((g for g in countries if POPULATION_M.get(g["id"], 0) >= PER_PERSON_MIN), key=lambda g: -per_million(g))[:MOST_ROWS["per-person"]]
+    rows = "".join(
+        f'<tr><td data-label="Country"><span class="rank">{i}</span> <a href="{e(g["path"])}">{e(g["name"])}</a></td>'
+        f'<td class="num" data-label="Starred restaurants">{g["n"]:,}</td>'
+        f'<td class="num" data-label="Population">{POPULATION_M[g["id"]]:,.1f} million</td>'
+        f'<td class="num" data-label="Per million people"><strong>{per_million(g):.1f}</strong></td></tr>' for i, g in enumerate(per, 1))
+    head = "".join(f'<th scope="col">{h}</th>' for h in ("Country", "Starred restaurants", "Population", "Per million people"))
+    blocks["most-per-person"] = f'<div class="table-wrap"><table class="guide-table data rank-list"><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>' + note(
+        f"Countries and territories of {PER_PERSON_MIN} million people or more, by starred restaurants per million people. "
+        "Populations are approximate 2024 figures from the UN’s World Population Prospects and national statistics offices, rounded.")
+    return blocks
 
 
 # The closures guide (9 Oct 2026, Brief 13): restaurants that closed, changed or lost their stars, by country and year.
@@ -3770,6 +3953,7 @@ def guide_blocks(stats):
     blocks.update(cost_blocks(live, name_html, stars_cell, checked, year))
     blocks.update(ceremony_blocks())
     blocks.update(gone_blocks(name_html, stars_cell, checked))
+    blocks.update(most_blocks(live, note))
     return blocks
 
 

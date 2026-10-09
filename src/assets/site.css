@@ -1032,6 +1032,7 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
 .guide-table.data td.num { font-family: var(--font-num); white-space: nowrap; }
 .guide-table.data td.num .muted { font-family: var(--font-body); }
 .guide-table.three-list td:first-child { min-width: 12ch; }
+.guide-table.most-table td:first-child { min-width: 15ch; }
 .guide-table th button { all: inherit; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
 .guide-table th button:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 2px; }
 .guide-table th[aria-sort="descending"] button::after { content: "↓"; }

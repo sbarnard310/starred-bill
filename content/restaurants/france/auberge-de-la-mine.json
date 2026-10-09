@@ -8,16 +8,16 @@
   "cuisine": "Classic Cuisine",
   "rating": 4.7,
   "reviews": 275,
-  "dinner": 53,
+  "dinner": 101,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €52)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 52 €)",
+  "dinnerNote": "Menu dégustation, for the whole table (Étape du Fer menus €52–€76)",
+  "dinnerNoteFr": "Menu dégustation, pour toute la table (menus Étape du Fer de 52 à 76 €)",
   "sourceType": "site",
   "source": "https://www.aubergedelamine.com/la-carte/",
-  "lunch": 53,
+  "lunch": 52,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sun",
-  "lunchNoteFr": "Même menu le midi · mer.–dim.",
+  "lunchNote": "Étape du Fer menu, 2 courses (3 courses €58) · Wed–Sun",
+  "lunchNoteFr": "Menu Étape du Fer, 2 plats (3 plats 58 €) · mer.–dim.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.aubergedelamine.com/la-carte/",
   "website": "https://www.aubergedelamine.com",
@@ -29,5 +29,6 @@
     "vegetarian"
   ],
   "chef": "Hubert Nobis",
-  "chefSource": "press"
+  "chefSource": "press",
+  "wine": 33
 }

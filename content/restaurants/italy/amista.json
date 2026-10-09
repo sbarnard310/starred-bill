@@ -8,16 +8,16 @@
   "rating": 4.6,
   "reviews": 182,
   "dinnerType": "menu",
-  "dinner": 50,
-  "dinnerNote": "Tasting menu",
+  "dinner": 180,
+  "dinnerNote": "Tra Pietra e Vite tasting menu (Oltre il confine €200, pairing €120; vegan Terrae €140, pairing €70); dishes à la carte €50 each",
   "sourceType": "site",
   "source": "https://www.ristoranteamista.com/menu",
-  "wine": 70,
-  "lunch": 50,
+  "wine": 90,
+  "lunch": 180,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sundays",
   "lunchNoteIt": "Stesso menu a pranzo · domenica",
-  "lunchWine": 70,
+  "lunchWine": 90,
   "lunchSourceType": "site",
   "lunchSource": "https://www.ristoranteamista.com/menu",
   "website": "https://www.ristoranteamista.com/",
@@ -32,5 +32,6 @@
     "halal"
   ],
   "chef": "Donato De Leonardis",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteIt": "Menu degustazione Tra Pietra e Vite (Oltre il confine €200, abbinamento €120; vegano Terrae €140, abbinamento €70); piatti à la carte €50 ciascuno"
 }

@@ -7,8 +7,8 @@
   "rating": 4.5,
   "reviews": 50,
   "dinnerType": "menu",
-  "dinner": 788,
-  "dinnerNote": "Tasting menu",
+  "dinner": 1688,
+  "dinnerNote": "Seasonal menu (Premium Signature menu RMB 2,288)",
   "sourceType": "site",
   "source": "https://www.trbhutong.com/menu",
   "wine": 688,
@@ -23,8 +23,13 @@
   ],
   "chef": "Lucas Garigliano",
   "chefSource": "site",
-  "dinnerNoteZhs": "品鉴套餐",
-  "lunchNote": "Open for lunch",
-  "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "时尚法国菜"
+  "dinnerNoteZhs": "季节菜单（招牌菜单 2288 元）",
+  "lunchNote": "Weekday business lunch",
+  "lunchNoteZhs": "工作日商务午餐",
+  "cuisineZhs": "时尚法国菜",
+  "lunch": 788,
+  "lunchType": "menu",
+  "lunchWine": 788,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.trbhutong.com/menu"
 }

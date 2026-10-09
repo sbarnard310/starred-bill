@@ -7,10 +7,8 @@
   "rating": 4.7,
   "reviews": 112,
   "dinnerType": "menu",
-  "dinner": 65,
-  "dinnerNote": "Tasting menu",
-  "sourceType": "site",
-  "source": "https://mountainhub.de/social-dining",
+  "dinnerNote": "Tasting menu; price to be added when it reopens",
+  "sourceType": "none",
   "website": "https://mountainhub.de/gourmet-restaurant/",
   "lat": 48.3552847,
   "lng": 11.7880342,
@@ -20,14 +18,7 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü",
-  "lunch": 65,
-  "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Fri",
-  "lunchNoteDe": "Gleiches Menü am Mittag · Do–Fr",
-  "lunchSourceType": "site",
-  "lunchSource": "https://mountainhub.de/social-dining",
+  "dinnerNoteDe": "Degustationsmenü; Preis folgt nach der Wiedereröffnung",
   "cuisineDe": "Moderne Küche",
-  "chef": "Marcel Tauschek",
-  "chefSource": "press"
+  "notice": "Temporarily closed (restaurant's website, October 2026)"
 }

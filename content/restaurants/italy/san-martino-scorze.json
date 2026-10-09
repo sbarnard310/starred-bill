@@ -8,11 +8,11 @@
   "rating": 4.7,
   "reviews": 325,
   "dinnerType": "menu",
-  "dinner": 50,
-  "dinnerNote": "Tasting menu",
+  "dinner": 95,
+  "dinnerNote": "Ricordi e Origini tasting menu (F.A.O. €100, Idee in movimento €150)",
   "sourceType": "site",
   "source": "https://www.ristorantesanmartino.info/wp-content/uploads/2026/10/MENU-GOURMET-2026.pdf",
-  "lunch": 50,
+  "lunch": 95,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sun",
   "lunchNoteIt": "Stesso menu a pranzo · ven–dom",
@@ -28,5 +28,8 @@
     "gluten-free"
   ],
   "chef": "Raffaele Ros",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNoteIt": "Percorso Ricordi e Origini (F.A.O. 100 €, Idee in movimento 150 €)",
+  "wine": 35,
+  "lunchWine": 35
 }

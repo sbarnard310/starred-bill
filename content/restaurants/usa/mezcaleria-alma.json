@@ -12,6 +12,7 @@
   "dinner": 24,
   "dinnerType": "main",
   "dinnerNote": "Small plates about $16–$32",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://www.mezcaleriaalma.com/s/MEZCALERIA-MENUS-WEB-VERSION-july-2026-nwfb.pdf",
   "noLunch": true,

@@ -53,6 +53,8 @@ const L = () => state.meal === "lunch";
 const priceOf = (r) => shown(r, L() ? (r.noLunch ? null : r.lunch) : r.dinner);
 const typeOf = (r) => L() ? (r.lunchType || "menu") : r.dinnerType;
 const wineOf = (r) => shown(r, L() ? r.lunchWine : r.wine);
+// Where there's no pairing price: "no pairing offered" when the restaurant doesn't do one (noPairing), else "no pairing listed".
+const noWineNote = (r) => t(r.noPairing ? "rcptNoPairingOffered" : "rcptNoPairing");
 const srcOf = (r) => L() ? r.lunchSource : r.source;
 const srcTypeOf = (r) => L() ? r.lunchSourceType : r.sourceType;
 const isMenu = (r) => typeOf(r) === "menu" && priceOf(r) != null;
@@ -411,7 +413,7 @@ function receipt(r) {
     (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") +
     receiptLine(t("mealDinner"), dinner, pick(r, "dinnerNote"), meal === "dinner") +
     receiptLine(t("mealLunch"), lunch, r.noLunch ? "" : pick(r, "lunchNote"), meal === "lunch") +
-    receiptLine(t("hWine"), wine ? { text: money(wine, r) } : { dash: true }, wine ? "" : t("rcptNoPairing"), false) +
+    receiptLine(t("hWine"), wine ? { text: money(wine, r) } : { dash: true }, wine ? "" : noWineNote(r), false) +
     (total != null ? '<span class="rc-line rc-total"><span class="rc-k">' + esc(t(L() ? "rcptLunchWine" : "rcptDinnerWine")) + '</span><span class="rc-dots" aria-hidden="true"></span>' + sep + '<span class="rc-v">' + money(total, r) + "</span></span>" : "") +
     '<span class="rc-foot">' + esc(t(serviceLabel(r.country))) + "<br>" + esc(t("rcptChecked", { d: checked })) + (src ? " ·" + src : "") + "</span>" +
     "</span></span>";
@@ -421,7 +423,7 @@ function stub(r) {
   const v = mealValue(r, L() ? "lunch" : "dinner"), wine = wineOf(r);
   return '<span class="stub">' + (v.muted ? '<span class="stub-price muted">–</span><span class="stub-sub">' + esc(v.muted) + "</span>"
     : '<span class="stub-price">' + esc(v.text) + "</span>" + (v.extra ? '<span class="stub-sub">' + esc(v.extra) + "</span>" : "") +
-      '<span class="stub-sub">' + (wine ? esc(t("rcptPlusWine", { p: money(wine, r) })) : esc(t("rcptNoPairing"))) + "</span>") + "</span>";
+      '<span class="stub-sub">' + (wine ? esc(t("rcptPlusWine", { p: money(wine, r) })) : esc(noWineNote(r))) + "</span>") + "</span>";
 }
 // Long lists (France has over 600 restaurants) are drawn in batches as they scroll into view, so a phone isn't asked
 // to build them all at once. The "No longer starred" rows follow the last batch.

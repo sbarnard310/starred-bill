@@ -41,7 +41,7 @@
     srcSite: "Strona restauracji", srcPress: "Źródło", srcTitle: "Skąd pochodzi ta cena",
     perMain: "za danie główne", typicalSpend: "typowy rachunek", notListed: "Nie podano",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Stolik dla 1", rcptDinnerOnly: "Tylko kolacja", rcptNoPairing: "brak doboru win", rcptPlusWine: "+ wino {p}", rcptDinnerWine: "Kolacja + wino", rcptLunchWine: "Lunch + wino", rcptChecked: "Sprawdzono {d}", rcptIncl: "Za osobę, z serwisem", rcptPlus: "Za osobę, ++ (doliczany serwis i podatek)", rcptTaxTip: "Za osobę, bez podatku i napiwku", rcptTip: "Za osobę, bez napiwku", rcptTax: "Za osobę, z podatkiem",
+    rcptHead: "The Starred Bill · Stolik dla 1", rcptDinnerOnly: "Tylko kolacja", rcptNoPairing: "nie podano doboru win", rcptNoPairingOffered: "brak doboru win", rcptPlusWine: "+ wino {p}", rcptDinnerWine: "Kolacja + wino", rcptLunchWine: "Lunch + wino", rcptChecked: "Sprawdzono {d}", rcptIncl: "Za osobę, z serwisem", rcptPlus: "Za osobę, ++ (doliczany serwis i podatek)", rcptTaxTip: "Za osobę, bez podatku i napiwku", rcptTip: "Za osobę, bez napiwku", rcptTax: "Za osobę, z podatkiem",
     findOnMaps: "Znajdź {name} w Mapach Google", findOnMapsTitle: "Znajdź w Mapach Google",
     showOnly: "Pokaż tylko: {cat}",
     chgNew: "Nowość", chgTitle: "{note} – Przewodnik Michelin, {date}",

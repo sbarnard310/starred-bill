@@ -13,6 +13,7 @@
   "dinner": 27,
   "dinnerType": "main",
   "dinnerNote": "À la carte pub menu",
+  "noPairing": true,
   "sourceType": "press",
   "source": "https://www.squaremeal.co.uk/restaurants/the-kerfield-arms_27065",
   "lunch": 12,

@@ -13,6 +13,7 @@
   "dinner": 42,
   "dinnerType": "main",
   "dinnerNote": "Barbecue by weight; brisket $42 a pound",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://preorder.goldeesbbq.com/",
   "lunchNote": "Open for lunch · Thu–Sun",

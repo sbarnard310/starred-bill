@@ -11,6 +11,7 @@
   "dinner": 36,
   "dinnerType": "main",
   "dinnerNote": "Typical main course",
+  "noPairing": true,
   "dinnerNoteZh": "一般主菜",
   "sourceType": "press",
   "source": "https://www.theinfatuation.com/miami/reviews/los-felix-taqueria",

@@ -161,7 +161,7 @@ const billRate = (from) => DATA.currencies[bill.cur].perUSD / DATA.currencies[fr
 const billMoney = (n, approx) => (approx ? "≈" : "") + localMoney(approx ? Math.round(n) : Math.round(n * 100) / 100, bill.cur);
 const billSep = '<span class="sr-only">, </span>';
 function billItem(r) {
-  const b = (billData && billData.r[r.id]) || [null, "menu", 0, null, null];
+  const b = (billData && billData.r[r.id]) || [null, "menu", 0, null, null, 0];
   const lunch = bill.meal === "lunch";
   const price = lunch ? (b[2] ? null : b[0]) : r.dinner, type = lunch ? (b[1] || "menu") : (r.dinnerType || "menu");
   const why = lunch && b[2] ? "billNoLunch" : price == null ? "billNoPrice" : type === "main" ? "billPerMain" : "";
@@ -169,7 +169,7 @@ function billItem(r) {
   const own = why ? 0 : price + (wine || 0), rate = billRate(r.cur);
   // A typical spend (mainland China) is what diners report paying, service and all, so nothing is added to it.
   const [kind, pct] = type === "spend" ? ["spend", 0] : SERVICE[r.country] || ["before", 0];
-  return { r, why, amount: own * rate, extra: kind === "spend" ? 0 : own * rate * serviceAdd(r.country), approx: r.cur !== bill.cur, noWine: bill.wine && !why && wine == null, kind, pct };
+  return { r, why, amount: own * rate, extra: kind === "spend" ? 0 : own * rate * serviceAdd(r.country), approx: r.cur !== bill.cur, noWine: bill.wine && !why && wine == null && (b[5] ? "rcptNoPairingOffered" : "rcptNoPairing"), kind, pct };
 }
 function renderBill(list) {
   const box = $("bill");
@@ -190,7 +190,7 @@ function renderBill(list) {
     t({ before: "billBefore", plusplus: "billPlus", taxtip: "billTaxTip", tip: "billTip" }[x.kind], { p: x.pct.toLocaleString("en-GB") });
   const line = (x) => '<span class="rc-line bill-line' + (x.why ? " out" : "") + '"><span class="rc-k">' + esc(nameOf(x.r)) + '</span><span class="rc-dots" aria-hidden="true"></span>' + billSep +
     '<span class="rc-v' + (x.why ? " muted" : "") + '">' + (x.why ? "–" : billMoney(x.amount, x.approx)) + "</span>" + billSep +
-    '<span class="rc-note">' + esc([whereOf(x.r), x.why ? t(x.why) : kindNote(x), x.noWine ? t("rcptNoPairing") : ""].filter(Boolean).join(" · ")) + "</span></span>";
+    '<span class="rc-note">' + esc([whereOf(x.r), x.why ? t(x.why) : kindNote(x), x.noWine ? t(x.noWine) : ""].filter(Boolean).join(" · ")) + "</span></span>";
   const seg = (attr, opts, on) => '<div class="seg" role="group">' + opts.map(([v, label]) => '<button type="button" data-' + attr + '="' + esc(v) + '" aria-pressed="' + (v === on) + '">' + esc(label) + "</button>").join("") + "</div>";
   box.innerHTML = '<h3 class="sub-head">' + esc(t("billTitle")) + '</h3><p class="bill-intro">' + esc(t("billIntro")) + "</p>" +
     '<div class="bill-controls">' + seg("billmeal", [["dinner", t("mealDinner")], ["lunch", t("mealLunch")]], bill.meal) +

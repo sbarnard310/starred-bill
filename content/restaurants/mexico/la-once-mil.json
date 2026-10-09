@@ -16,6 +16,7 @@
   "dinner": 600,
   "dinnerType": "spend",
   "dinnerNote": "Taquería, no bookings; tacos MX$70–335, typical spend MX$400–800",
+  "noPairing": true,
   "dinnerNoteEs": "Taquería sin reservas; tacos de 70–335 MX$, gasto habitual de 400–800 MX$",
   "sourceType": "press",
   "source": "https://www.directoalpaladar.com.mx/directo-al-paladar-mexico/cuanto-cuesta-comer-once-mil-nueva-taqueria-cdmx-que-gano-estrella-michelin-2026",

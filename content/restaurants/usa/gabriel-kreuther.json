@@ -12,6 +12,7 @@
   "dinner": 200,
   "dinnerType": "menu",
   "dinnerNote": "Dinner, 3 courses (4 courses $235; pre-theater $155)",
+  "wine": 255,
   "sourceType": "site",
   "source": "https://www.gknyc.com/",
   "noLunch": true,

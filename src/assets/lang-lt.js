@@ -38,7 +38,7 @@
     srcSite: "Restorano svetainė", srcPress: "Šaltinis", srcTitle: "Iš kur ši kaina",
     perMain: "už pagrindinį patiekalą", typicalSpend: "įprasta sąskaita", notListed: "Nenurodyta",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Staliukas 1", rcptDinnerOnly: "Tik vakarienė", rcptNoPairing: "vynų derinių nenurodyta", rcptPlusWine: "+ vynas {p}", rcptDinnerWine: "Vakarienė + vynas", rcptLunchWine: "Pietūs + vynas", rcptChecked: "Patikrinta {d}", rcptIncl: "Asmeniui, su aptarnavimu", rcptPlus: "Asmeniui, ++ (pridedamas aptarnavimas ir mokestis)", rcptTaxTip: "Asmeniui, be mokesčių ir arbatpinigių", rcptTip: "Asmeniui, be arbatpinigių", rcptTax: "Asmeniui, su mokesčiais",
+    rcptHead: "The Starred Bill · Staliukas 1", rcptDinnerOnly: "Tik vakarienė", rcptNoPairing: "vynų derinių nenurodyta", rcptNoPairingOffered: "vynų derinių nesiūlo", rcptPlusWine: "+ vynas {p}", rcptDinnerWine: "Vakarienė + vynas", rcptLunchWine: "Pietūs + vynas", rcptChecked: "Patikrinta {d}", rcptIncl: "Asmeniui, su aptarnavimu", rcptPlus: "Asmeniui, ++ (pridedamas aptarnavimas ir mokestis)", rcptTaxTip: "Asmeniui, be mokesčių ir arbatpinigių", rcptTip: "Asmeniui, be arbatpinigių", rcptTax: "Asmeniui, su mokesčiais",
     findOnMaps: "Rasti {name} „Google“ žemėlapiuose", findOnMapsTitle: "Rasti „Google“ žemėlapiuose",
     showOnly: "Rodyti tik: {cat}",
     chgNew: "Nauja", chgTitle: "{note} – „Michelin“ gidas, {date}",

@@ -9,6 +9,7 @@
   "dinner": 45,
   "dinnerType": "main",
   "dinnerNote": "À la carte; larger plates about $41–$48 (22oz strip $95)",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://www.almalohidenver.com/dinner",
   "lunchNote": "Open for lunch · Mon–Fri",

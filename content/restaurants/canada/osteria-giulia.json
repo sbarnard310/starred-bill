@@ -9,6 +9,7 @@
   "dinnerType": "main",
   "dinner": 65,
   "dinnerNote": "À la carte; fish mains $65–$68, pasta $29–$55",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://osteriagiulia.ca/dinner/",
   "noLunch": true,

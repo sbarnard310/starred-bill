@@ -11,6 +11,7 @@
   "dinner": 130,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu",
+  "noPairing": true,
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "site",
   "source": "https://www.holboxla.com/tasting-menu",

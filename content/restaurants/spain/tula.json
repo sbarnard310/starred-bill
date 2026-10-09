@@ -10,6 +10,7 @@
   "dinnerType": "main",
   "dinner": 34,
   "dinnerNote": "À la carte; mains €26–€34",
+  "noPairing": true,
   "dinnerNoteEs": "A la carta; principales de 26 € a 34 €",
   "sourceType": "site",
   "source": "https://www.tularestaurante.com/carta/",

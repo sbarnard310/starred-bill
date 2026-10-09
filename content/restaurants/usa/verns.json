@@ -12,6 +12,7 @@
   "dinner": 45,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains about $39–$62, pastas $30–$33",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://www.vernschs.com/samplemenu",
   "noLunch": true,

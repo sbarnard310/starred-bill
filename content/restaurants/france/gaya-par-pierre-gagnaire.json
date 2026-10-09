@@ -13,6 +13,7 @@
   "dinner": 55,
   "dinnerType": "main",
   "dinnerNote": "À la carte seafood; mains about €45–55",
+  "noPairing": true,
   "dinnerNoteFr": "Carte de la mer ; plats autour de 45–55 €",
   "sourceType": "press",
   "source": "https://www.thefork.fr/restaurant/gaya-r658811",

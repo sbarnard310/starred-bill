@@ -11,6 +11,7 @@
   "dinner": 25,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains €23–€25 (simpler menu since January 2026, when it stopped chasing the star)",
+  "noPairing": true,
   "dinnerNoteIt": "Alla carta; secondi €23–€25 (menu più semplice da gennaio 2026, quando ha smesso di inseguire la stella)",
   "sourceType": "press",
   "source": "https://ristorantelacoldana.it/menu-ristorante/",

@@ -9,6 +9,7 @@
   "dinner": 25,
   "dinnerType": "main",
   "dinnerNote": "Barbecue plate of two meats and two sides (+$3 a portion for brisket)",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://leroyandlewisbbq.com/menu/",
   "lunchNote": "Open for lunch · Wed–Mon",

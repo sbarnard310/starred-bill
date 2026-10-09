@@ -10,6 +10,7 @@
   "dinner": 40,
   "dinnerType": "main",
   "dinnerNote": "À la carte, wood-grilled mains",
+  "noPairing": true,
   "sourceType": "press",
   "source": "https://mesprestiges.com/en/london/places/mountain-beak-street-soho",
   "lunch": 40,

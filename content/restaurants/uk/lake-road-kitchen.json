@@ -10,6 +10,7 @@
   "dinner": 135,
   "dinnerType": "menu",
   "dinnerNote": "Menu of 8 servings (5 servings £105)",
+  "wine": 100,
   "sourceType": "site",
   "source": "https://www.lakeroadkitchen.co.uk/",
   "noLunch": true,

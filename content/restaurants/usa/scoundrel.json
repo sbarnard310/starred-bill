@@ -13,6 +13,7 @@
   "dinner": 45,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains about $37–$52 (steak frites $41–$64)",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://www.scoundrelgvl.com/menu",
   "noLunch": true,

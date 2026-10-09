@@ -234,6 +234,10 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
     for field in ("dinner", "wine", "lunch", "lunchWine", "rating", "reviews", "lat", "lng"):
         if r.get(field) is not None and not isinstance(r[field], (int, float)):
             problem(where, f"{field} must be a number (no currency sign or quotes)")
+    if r.get("noPairing") not in (None, True, False):
+        problem(where, "noPairing must be true or false")
+    elif r.get("noPairing") and (r.get("wine") is not None or r.get("lunchWine") is not None):
+        problem(where, "noPairing says there's no wine pairing, but wine or lunchWine has a price: remove one")
     if r.get("diets") is not None and (not isinstance(r["diets"], list) or set(r["diets"]) - set(DIETS)):
         problem(where, f"diets must be a list made from {', '.join(DIETS)}")
     if r.get("chef") is not None and not isinstance(r["chef"], str):
@@ -2405,12 +2409,12 @@ NEAR_DIETS = {d: i for i, d in enumerate(DIETS)}
 
 def build_bill_data(starred):
     """/data/bill.json: the lunch and wine prices the homepage's wishlist bill adds up (the homepage itself carries only dinner).
-    One row per restaurant with any of them, keyed by id; noLunch is 1 when there's no lunch service. Loaded only when the wishlist has something in it."""
-    cols = ["lunch", "lunchType", "noLunch", "wine", "lunchWine"]
+    One row per restaurant with any of them, keyed by id; noLunch is 1 when there's no lunch service, noPairing 1 when there's no wine pairing. Loaded only when the wishlist has something in it."""
+    cols = ["lunch", "lunchType", "noLunch", "wine", "lunchWine", "noPairing"]
     rows = {}
     for r in starred:
-        row = [r.get("lunch"), r.get("lunchType", "menu"), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine")]
-        if row[0] is not None or row[2] or row[3] is not None or row[4] is not None:
+        row = [r.get("lunch"), r.get("lunchType", "menu"), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"), 1 if r.get("noPairing") else 0]
+        if row[0] is not None or row[2] or row[3] is not None or row[4] is not None or row[5]:
             rows[r["id"]] = row
     (OUT / "data" / "bill.json").write_bytes(as_json({"cols": cols, "r": rows}).encode("utf-8"))
 
@@ -2619,11 +2623,12 @@ def build_compare(starred):
     compare_part() of their id, one compact row each (columns listed in each file), so the page loads only the files
     holding the visitor's wishlist. The page is personal (it reads the wishlist in the browser), so it stays out of search engines and the sitemap."""
     cols = ["id", "name", "stars", "cuisine", "where", "path", "country", "cur", "dinner", "dinnerType", "dinnerNote", "lunch", "lunchType",
-            "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice"]
+            "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice", "noPairing"]
     rows = [[r["id"], r["name"], r["stars"], r.get("cuisine", ""), near_where(r), r["cityPath"], r["country"], r["cur"],
              r.get("dinner"), r.get("dinnerType", "menu"), r.get("dinnerNote", ""), r.get("lunch"), r.get("lunchType", "menu"),
              r.get("lunchNote", ""), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"),
-             r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0]
+             r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0,
+             1 if r.get("noPairing") else 0]
             for r in starred]
     parts = [[] for _ in range(COMPARE_PARTS)]
     for row in rows:
@@ -3792,7 +3797,7 @@ def restaurant_answer(r, stay):
     if d is not None:
         if dtype == "menu":
             out.append(f"The dinner tasting menu at {name} costs {m(d)}{usd_after(d, cur)} per person"
-                       + (f", or {m(d + w)} with the wine pairing." if w else "."))
+                       + (f", or {m(d + w)} with the wine pairing." if w else "; there’s no wine pairing." if r.get("noPairing") else "."))
         elif dtype == "main":
             out.append(f"Main courses at {name} cost about {m(d)}{usd_after(d, cur)} at dinner.")
         else:
@@ -3835,7 +3840,7 @@ def receipt_html(r, kind, src_links):
             '<span class="rc-head" aria-hidden="true">The Starred Bill · Table for 1</span>'
             + (f'<span class="notice">Temporarily closed</span>' if r.get("notice") else "")
             + meal("dinner", "dinnerNote", "dinnerType") + meal("lunch", "lunchNote", "lunchType")
-            + (line("Wine pairing", money(w, cur)) if w else line("Wine pairing", "–", "no pairing listed", muted=True))
+            + (line("Wine pairing", money(w, cur)) if w else line("Wine pairing", "–", "no pairing offered" if r.get("noPairing") else "no pairing listed", muted=True))
             + (f'<span class="rc-line rc-total"><span class="rc-k">Dinner + wine</span><span class="rc-dots" aria-hidden="true"></span>'
                f'<span class="sr-only">, </span><span class="rc-v">{money(total, cur)}</span></span>' if total is not None else "")
             + f'<span class="rc-foot">{e(SERVICE_FOOT.get(kind, SERVICE_FOOT["before"]))}<br>Checked {checked}'
@@ -3967,6 +3972,8 @@ def restaurant_faq(r, answer, kind, peers_place, peers, live):
     if r.get("wine"):
         faq.append((f"How much is the wine pairing at {name}?", f"The wine pairing is {money(r['wine'], cur)}{usd_after(r['wine'], cur)} per person on top of the menu"
                     + (f", which brings dinner to {money(r['dinner'] + r['wine'], cur)} {SERVICE_SAYS.get(kind, 'before service')}." if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu" else ".")))
+    elif r.get("noPairing"):
+        faq.append((f"Does {name} offer a wine pairing?", f"No. {name} doesn’t offer a wine pairing with its menu, so the prices here are for the food only."))
     country = places.get(r["country"])
     same = sum(1 for q in live if q["country"] == r["country"] and q["stars"] == s)
     change = {"new": f" It won {'them' if s > 1 else 'it'} in the guide of {month_year(r.get('changeDate'), 'en')}." if r.get("changeDate") else "",

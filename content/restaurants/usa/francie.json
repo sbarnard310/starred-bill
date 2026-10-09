@@ -12,6 +12,7 @@
   "dinner": 35,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains and pastas about $25–$35 (duck for two $152)",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://www.franciebrooklyn.com/",
   "noLunch": true,

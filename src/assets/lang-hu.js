@@ -40,7 +40,7 @@
     srcSite: "Az étterem honlapja", srcPress: "Forrás", srcTitle: "Honnan származik ez az ár",
     perMain: "főételenként", typicalSpend: "szokásos számla", notListed: "Nincs megadva",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Asztal 1 főre", rcptDinnerOnly: "Csak vacsora", rcptNoPairing: "borpárosítás nincs megadva", rcptPlusWine: "+ bor {p}", rcptDinnerWine: "Vacsora + bor", rcptLunchWine: "Ebéd + bor", rcptChecked: "Ellenőrizve: {d}", rcptIncl: "Fejenként, szervizdíjjal", rcptPlus: "Fejenként, ++ (plusz szervizdíj és adó)", rcptTaxTip: "Fejenként, adó és borravaló nélkül", rcptTip: "Fejenként, borravaló nélkül", rcptTax: "Fejenként, adóval",
+    rcptHead: "The Starred Bill · Asztal 1 főre", rcptDinnerOnly: "Csak vacsora", rcptNoPairing: "borpárosítás nincs megadva", rcptNoPairingOffered: "nincs borpárosítás", rcptPlusWine: "+ bor {p}", rcptDinnerWine: "Vacsora + bor", rcptLunchWine: "Ebéd + bor", rcptChecked: "Ellenőrizve: {d}", rcptIncl: "Fejenként, szervizdíjjal", rcptPlus: "Fejenként, ++ (plusz szervizdíj és adó)", rcptTaxTip: "Fejenként, adó és borravaló nélkül", rcptTip: "Fejenként, borravaló nélkül", rcptTax: "Fejenként, adóval",
     findOnMaps: "{name} a Google Térképen", findOnMapsTitle: "Megnyitás a Google Térképen",
     showOnly: "Csak ez: {cat}",
     chgNew: "Új", chgTitle: "{note} – Michelin-kalauz, {date}",

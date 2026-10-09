@@ -17,6 +17,7 @@
   "dinner": 5060,
   "dinnerType": "main",
   "dinnerNote": "Unaju (grilled eel on rice)",
+  "noPairing": true,
   "dinnerNoteZh": "鰻重",
   "dinnerNoteJa": "うな重",
   "sourceType": "press",

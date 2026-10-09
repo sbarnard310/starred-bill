@@ -10,6 +10,7 @@
   "dinner": 30,
   "dinnerType": "main",
   "dinnerNote": "À la carte, mains about £28–£70",
+  "noPairing": true,
   "sourceType": "press",
   "source": "https://mesprestiges.com/en/london/places/brat-shoreditch",
   "lunch": 30,

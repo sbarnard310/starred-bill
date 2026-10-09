@@ -12,6 +12,7 @@
   "dinner": 48,
   "dinnerType": "main",
   "dinnerNote": "À la carte, to share; larger plates about $45–$50 (rib of beef $170), plus 20% service",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://www.locustnashville.com/locustdinner",
   "lunchNote": "Open for lunch · Fri–Sun",

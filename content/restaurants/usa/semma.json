@@ -12,6 +12,7 @@
   "dinner": 39,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains about $36–$49",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://www.semma.nyc/",
   "noLunch": true,

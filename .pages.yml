@@ -530,6 +530,10 @@ content:
         description: Cheapest pairing, numbers only. Leave empty if there isn't one or it's not confirmed.
         type: number
         options: { min: 0, step: any }
+      - name: noPairing
+        label: No wine pairing offered
+        description: Tick if the restaurant doesn't offer a wine pairing (checked on its website). Receipts then say "no pairing offered" instead of "no pairing listed". Leave the wine prices empty.
+        type: boolean
       - name: sourceType
         label: Dinner price source
         type: select

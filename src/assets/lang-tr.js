@@ -42,7 +42,7 @@
     srcSite: "Restoranın web sitesi", srcPress: "Kaynak", srcTitle: "Bu fiyatın kaynağı",
     perMain: "ana yemek başı", typicalSpend: "ortalama hesap", notListed: "Belirtilmemiş",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · 1 kişilik masa", rcptDinnerOnly: "Yalnızca akşam", rcptNoPairing: "şarap eşleştirme belirtilmemiş", rcptPlusWine: "+ şarap {p}", rcptDinnerWine: "Akşam + şarap", rcptLunchWine: "Öğle + şarap", rcptChecked: "Kontrol: {d}", rcptIncl: "Kişi başı, servis dahil", rcptPlus: "Kişi başı, ++ (servis ve vergi eklenir)", rcptTaxTip: "Kişi başı, vergi ve bahşiş hariç", rcptTip: "Kişi başı, bahşiş hariç", rcptTax: "Kişi başı, vergi dahil",
+    rcptHead: "The Starred Bill · 1 kişilik masa", rcptDinnerOnly: "Yalnızca akşam", rcptNoPairing: "şarap eşleştirme belirtilmemiş", rcptNoPairingOffered: "şarap eşleştirme sunmuyor", rcptPlusWine: "+ şarap {p}", rcptDinnerWine: "Akşam + şarap", rcptLunchWine: "Öğle + şarap", rcptChecked: "Kontrol: {d}", rcptIncl: "Kişi başı, servis dahil", rcptPlus: "Kişi başı, ++ (servis ve vergi eklenir)", rcptTaxTip: "Kişi başı, vergi ve bahşiş hariç", rcptTip: "Kişi başı, bahşiş hariç", rcptTax: "Kişi başı, vergi dahil",
     findOnMaps: "{name} restoranını Google Haritalar'da bulun", findOnMapsTitle: "Google Haritalar'da bul",
     showOnly: "Yalnızca: {cat}",
     chgNew: "Yeni", chgTitle: "{note} – Michelin Rehberi, {date}",

@@ -7,6 +7,7 @@
   "dinnerType": "spend",
   "dinner": 153,
   "dinnerNote": "Typical spend",
+  "noPairing": true,
   "sourceType": "press",
   "source": "https://you.ctrip.com/food/2/4927210.html",
   "lat": 31.2350449,

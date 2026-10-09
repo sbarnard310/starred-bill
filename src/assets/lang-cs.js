@@ -41,7 +41,7 @@
     srcSite: "Web restaurace", srcPress: "Zdroj", srcTitle: "Odkud tato cena pochází",
     perMain: "za hlavní chod", typicalSpend: "běžná útrata", notListed: "Neuvedeno",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Stůl pro 1", rcptDinnerOnly: "Jen večeře", rcptNoPairing: "párování neuvedeno", rcptPlusWine: "+ víno {p}", rcptDinnerWine: "Večeře + víno", rcptLunchWine: "Oběd + víno", rcptChecked: "Ověřeno {d}", rcptIncl: "Na osobu, včetně obsluhy", rcptPlus: "Na osobu, ++ (obsluha a daň navíc)", rcptTaxTip: "Na osobu, bez daně a spropitného", rcptTip: "Na osobu, bez spropitného", rcptTax: "Na osobu, včetně daně",
+    rcptHead: "The Starred Bill · Stůl pro 1", rcptDinnerOnly: "Jen večeře", rcptNoPairing: "párování neuvedeno", rcptNoPairingOffered: "párování nenabízí", rcptPlusWine: "+ víno {p}", rcptDinnerWine: "Večeře + víno", rcptLunchWine: "Oběd + víno", rcptChecked: "Ověřeno {d}", rcptIncl: "Na osobu, včetně obsluhy", rcptPlus: "Na osobu, ++ (obsluha a daň navíc)", rcptTaxTip: "Na osobu, bez daně a spropitného", rcptTip: "Na osobu, bez spropitného", rcptTax: "Na osobu, včetně daně",
     findOnMaps: "Najít {name} v Mapách Google", findOnMapsTitle: "Najít v Mapách Google",
     showOnly: "Zobrazit jen: {cat}",
     chgNew: "Nově", chgTitle: "{note} – Průvodce Michelin, {date}",

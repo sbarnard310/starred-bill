@@ -10,6 +10,7 @@
   "dinner": 36,
   "dinnerType": "main",
   "dinnerNote": "Barbecue by weight; brisket $36 a pound (plates from $14.50)",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://img1.wsimg.com/blobby/go/e7cb21fd-9eeb-4114-872b-35403affbb15/Menu%20APRIL%202026%20(1).pdf",
   "lunchNote": "Open for lunch · Wed–Sat",

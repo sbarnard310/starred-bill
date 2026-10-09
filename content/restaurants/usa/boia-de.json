@@ -11,6 +11,7 @@
   "dinner": 33,
   "dinnerType": "main",
   "dinnerNote": "Typical main course",
+  "noPairing": true,
   "dinnerNoteZh": "一般主菜",
   "sourceType": "site",
   "source": "https://www.boiaderestaurant.com/menus",

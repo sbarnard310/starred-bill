@@ -9,6 +9,7 @@
   "dinner": 42,
   "dinnerType": "main",
   "dinnerNote": "Barbecue by weight; brisket $42 a pound",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://www.toasttab.com/local/order/interstellarbbq",
   "lunchNote": "Open for lunch · Wed–Sun",

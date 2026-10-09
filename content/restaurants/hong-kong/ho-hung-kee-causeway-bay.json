@@ -14,6 +14,7 @@
   "dinner": 50,
   "dinnerType": "main",
   "dinnerNote": "House wonton noodles (small)",
+  "noPairing": true,
   "dinnerNoteZh": "招牌雲吞麵（細）",
   "sourceType": "press",
   "source": "https://www.openrice.com/en/hongkong/r-ho-hung-kee-causeway-bay-guangdong-congee-r114105",

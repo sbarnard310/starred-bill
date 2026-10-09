@@ -10,6 +10,7 @@
   "dinnerType": "menu",
   "dinner": 109,
   "dinnerNote": "Tasting menu",
+  "wine": 56,
   "sourceType": "site",
   "source": "https://www.hisalinhart.si",
   "website": "https://www.hisalinhart.si",
@@ -27,6 +28,7 @@
   "lunch": 109,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchWine": 56,
   "lunchNoteSl": "Enak meni za kosilo · tor.–sob.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.hisalinhart.si"

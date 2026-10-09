@@ -10,6 +10,7 @@
   "dinner": 45,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains up to about £45",
+  "noPairing": true,
   "sourceType": "press",
   "source": "https://www.squaremeal.co.uk/restaurants/the-barn-at-moor-hall_12230",
   "lunchNote": "Open for lunch · Thu–Sun",

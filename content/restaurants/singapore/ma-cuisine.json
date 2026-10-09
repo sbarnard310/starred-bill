@@ -20,6 +20,7 @@
   "dinnerType": "main",
   "dinner": 138,
   "dinnerNote": "À la carte French bistro; typical main course",
+  "noPairing": true,
   "dinnerNoteZh": "單點法式小館；主菜參考價",
   "sourceType": "site",
   "source": "https://macuisinesg.com/french-fine-dining-singapore/",

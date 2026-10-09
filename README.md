@@ -69,6 +69,7 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 | `dinnerType` | `menu` (tasting or set menu), `main` (typical main course) or `spend` (typical spend) |
 | `dinnerNote`, `dinnerNoteZh` | what the price covers |
 | `wine` | cheapest wine pairing, as a number |
+| `noPairing` | `true` when the restaurant doesn't offer a wine pairing (checked on its own website); receipts, the wishlist bill and Compare then say "no pairing offered" rather than "no pairing listed". Leave `wine` and `lunchWine` out |
 | `source`, `sourceType` | link to where the price came from; `site`, `press` or `none` |
 | `lunch`, `lunchType`, `lunchNote`, `lunchNoteZh`, `lunchWine`, `lunchSource`, `lunchSourceType` | the same for lunch |
 | `noLunch` | `true` when there's no lunch service |

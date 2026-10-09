@@ -75,7 +75,7 @@ function mealValue(r, meal) {
 function figures(r) {
   const dinner = mealValue(r, "dinner"), lunch = mealValue(r, "lunch"), chosen = L() ? lunch : dinner;
   const w = conv(r, L() ? r.lunchWine : r.wine);
-  const wine = w != null ? { n: w, text: money(w, r.cur !== cmp.cur), menu: true } : { muted: t("rcptNoPairing") };
+  const wine = w != null ? { n: w, text: money(w, r.cur !== cmp.cur), menu: true } : { muted: t(r.noPairing ? "rcptNoPairingOffered" : "rcptNoPairing") };
   const total = chosen.menu && w != null ? { n: chosen.n + w, text: money(chosen.n + w, r.cur !== cmp.cur), menu: true } : { dash: true };
   return { dinner, lunch, wine, total };
 }

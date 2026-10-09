@@ -9,6 +9,7 @@
   "dinner": 48,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains about $38–$64",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://bcnhouston.com/",
   "lunchNote": "Open for lunch · Saturdays",

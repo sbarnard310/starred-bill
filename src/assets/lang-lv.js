@@ -38,7 +38,7 @@
     srcSite: "Restorāna vietne", srcPress: "Avots", srcTitle: "No kurienes ir šī cena",
     perMain: "par pamatēdienu", typicalSpend: "parastais rēķins", notListed: "Nav norādīts",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Galds 1", rcptDinnerOnly: "Tikai vakariņas", rcptNoPairing: "vīnu pāri nav norādīti", rcptPlusWine: "+ vīns {p}", rcptDinnerWine: "Vakariņas + vīns", rcptLunchWine: "Pusdienas + vīns", rcptChecked: "Pārbaudīts {d}", rcptIncl: "Vienai personai, ar apkalpošanu", rcptPlus: "Vienai personai, ++ (plus apkalpošana un nodoklis)", rcptTaxTip: "Vienai personai, bez nodokļa un dzeramnaudas", rcptTip: "Vienai personai, bez dzeramnaudas", rcptTax: "Vienai personai, ar nodokli",
+    rcptHead: "The Starred Bill · Galds 1", rcptDinnerOnly: "Tikai vakariņas", rcptNoPairing: "vīnu pāri nav norādīti", rcptNoPairingOffered: "vīnu pāri netiek piedāvāti", rcptPlusWine: "+ vīns {p}", rcptDinnerWine: "Vakariņas + vīns", rcptLunchWine: "Pusdienas + vīns", rcptChecked: "Pārbaudīts {d}", rcptIncl: "Vienai personai, ar apkalpošanu", rcptPlus: "Vienai personai, ++ (plus apkalpošana un nodoklis)", rcptTaxTip: "Vienai personai, bez nodokļa un dzeramnaudas", rcptTip: "Vienai personai, bez dzeramnaudas", rcptTax: "Vienai personai, ar nodokli",
     findOnMaps: "Atrast {name} Google kartēs", findOnMapsTitle: "Atrast Google kartēs",
     showOnly: "Rādīt tikai: {cat}",
     chgNew: "Jauns", chgTitle: "{note} – Michelin ceļvedis, {date}",

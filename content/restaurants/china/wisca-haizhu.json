@@ -7,6 +7,7 @@
   "dinnerType": "spend",
   "dinner": 185,
   "dinnerNote": "Typical spend",
+  "noPairing": true,
   "sourceType": "press",
   "source": "https://you.ctrip.com/food/152/22098251.html",
   "website": "https://www.wisca.cn/",

@@ -41,7 +41,7 @@
     srcSite: "Restaurantens nettside", srcPress: "Kilde", srcTitle: "Hvor prisen kommer fra",
     perMain: "per hovedrett", typicalSpend: "typisk regning", notListed: "Ikke oppgitt",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Bord for 1", rcptDinnerOnly: "Kun middag", rcptNoPairing: "ingen vinmeny oppgitt", rcptPlusWine: "+ vin {p}", rcptDinnerWine: "Middag + vin", rcptLunchWine: "Lunsj + vin", rcptChecked: "Sjekket {d}", rcptIncl: "Per person, inkl. service", rcptPlus: "Per person, ++ (service og mva. kommer i tillegg)", rcptTaxTip: "Per person, før skatt og tips", rcptTip: "Per person, før tips", rcptTax: "Per person, inkl. mva.",
+    rcptHead: "The Starred Bill · Bord for 1", rcptDinnerOnly: "Kun middag", rcptNoPairing: "ingen vinmeny oppgitt", rcptNoPairingOffered: "ingen vinmeny", rcptPlusWine: "+ vin {p}", rcptDinnerWine: "Middag + vin", rcptLunchWine: "Lunsj + vin", rcptChecked: "Sjekket {d}", rcptIncl: "Per person, inkl. service", rcptPlus: "Per person, ++ (service og mva. kommer i tillegg)", rcptTaxTip: "Per person, før skatt og tips", rcptTip: "Per person, før tips", rcptTax: "Per person, inkl. mva.",
     findOnMaps: "Finn {name} på Google Maps", findOnMapsTitle: "Finn på Google Maps",
     showOnly: "Vis bare {cat}",
     chgNew: "Ny", chgTitle: "{note} i Michelinguiden fra {date}",

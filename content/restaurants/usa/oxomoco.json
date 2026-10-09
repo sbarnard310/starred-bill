@@ -12,6 +12,7 @@
   "dinner": 40,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains about $26–$59",
+  "noPairing": true,
   "sourceType": "site",
   "source": "https://www.oxomoconyc.com/",
   "lunchNote": "Open for lunch",

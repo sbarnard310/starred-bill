@@ -8,6 +8,7 @@
   "reviews": 2355,
   "dinnerType": "main",
   "dinnerNote": "À la carte; mains AED 125–370 (steaks to share AED 550–850); VAT included",
+  "noPairing": true,
   "sourceType": "site",
   "lunch": 135,
   "lunchType": "menu",

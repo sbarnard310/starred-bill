@@ -12,6 +12,7 @@
   "dinner": 335,
   "dinnerType": "main",
   "dinnerNote": "À la carte; dishes about MX$190–360",
+  "noPairing": true,
   "dinnerNoteEs": "A la carta; platos de unos 190–360 MX$",
   "sourceType": "site",
   "source": "https://levaduradeolla.mx/menu/",

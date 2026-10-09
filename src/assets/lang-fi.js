@@ -41,7 +41,7 @@
     srcSite: "Ravintolan verkkosivut", srcPress: "Lähde", srcTitle: "Mistä hinta on peräisin",
     perMain: "pääruoka", typicalSpend: "tyypillinen lasku", notListed: "Ei ilmoitettu",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Pöytä 1:lle", rcptDinnerOnly: "Vain illallinen", rcptNoPairing: "viinipakettia ei ilmoitettu", rcptPlusWine: "+ viini {p}", rcptDinnerWine: "Illallinen + viini", rcptLunchWine: "Lounas + viini", rcptChecked: "Tarkistettu {d}", rcptIncl: "Henkeä kohden, palvelu sisältyy", rcptPlus: "Henkeä kohden, ++ (palvelu ja vero lisätään)", rcptTaxTip: "Henkeä kohden, ilman veroa ja tippiä", rcptTip: "Henkeä kohden, ilman tippiä", rcptTax: "Henkeä kohden, vero sisältyy",
+    rcptHead: "The Starred Bill · Pöytä 1:lle", rcptDinnerOnly: "Vain illallinen", rcptNoPairing: "viinipakettia ei ilmoitettu", rcptNoPairingOffered: "ei viinipakettia", rcptPlusWine: "+ viini {p}", rcptDinnerWine: "Illallinen + viini", rcptLunchWine: "Lounas + viini", rcptChecked: "Tarkistettu {d}", rcptIncl: "Henkeä kohden, palvelu sisältyy", rcptPlus: "Henkeä kohden, ++ (palvelu ja vero lisätään)", rcptTaxTip: "Henkeä kohden, ilman veroa ja tippiä", rcptTip: "Henkeä kohden, ilman tippiä", rcptTax: "Henkeä kohden, vero sisältyy",
     findOnMaps: "Näytä {name} Google Mapsissa", findOnMapsTitle: "Näytä Google Mapsissa",
     showOnly: "Näytä vain: {cat}",
     chgNew: "Uusi", chgTitle: "{note} – Michelin-opas {date}",

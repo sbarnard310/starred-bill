@@ -50,7 +50,7 @@
     srcSite: "موقع المطعم", srcPress: "المصدر", srcTitle: "مصدر هذا السعر",
     perMain: "للطبق الرئيسي", typicalSpend: "فاتورة نموذجية", notListed: "غير مُعلن",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · طاولة لشخص واحد", rcptDinnerOnly: "عشاء فقط", rcptNoPairing: "لا توجد مرافقة نبيذ مُعلنة", rcptPlusWine: "+ نبيذ {p}", rcptDinnerWine: "العشاء + النبيذ", rcptLunchWine: "الغداء + النبيذ", rcptChecked: "رُوجع في {d}", rcptIncl: "للشخص، شاملًا الخدمة", rcptPlus: "للشخص، ++ (تُضاف الخدمة والضريبة)", rcptTaxTip: "للشخص، قبل الضريبة والإكرامية", rcptTip: "للشخص، قبل الإكرامية", rcptTax: "للشخص، شاملًا الضريبة",
+    rcptHead: "The Starred Bill · طاولة لشخص واحد", rcptDinnerOnly: "عشاء فقط", rcptNoPairing: "لا توجد مرافقة نبيذ مُعلنة", rcptNoPairingOffered: "لا تقدّم مرافقة نبيذ", rcptPlusWine: "+ نبيذ {p}", rcptDinnerWine: "العشاء + النبيذ", rcptLunchWine: "الغداء + النبيذ", rcptChecked: "رُوجع في {d}", rcptIncl: "للشخص، شاملًا الخدمة", rcptPlus: "للشخص، ++ (تُضاف الخدمة والضريبة)", rcptTaxTip: "للشخص، قبل الضريبة والإكرامية", rcptTip: "للشخص، قبل الإكرامية", rcptTax: "للشخص، شاملًا الضريبة",
     findOnMaps: "ابحث عن {name} في خرائط Google", findOnMapsTitle: "ابحث في خرائط Google",
     showOnly: "اعرض {cat} فقط",
     chgNew: "جديد", chgTitle: "{note} في دليل ميشلان {date}",

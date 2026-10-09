@@ -233,7 +233,8 @@ def data_checks(site):
         g["no_rating"] += r.get("rating") is None
         g["few_reviews"] += r.get("rating") is not None and (r.get("reviews") or 0) < 20
         g["no_chef"] += not r.get("chef")
-        g["no_wine"] += r.get("wine") is None
+        g["no_wine"] += r.get("wine") is None and not r.get("noPairing")  # restaurants that don't offer one aren't a gap
+        g["no_pairing_offered"] += bool(r.get("noPairing"))
         g["lunch_unknown"] += r.get("lunch") is None and not r.get("noLunch") and not r.get("lunchNote")  # a note like "Open for lunch · Wed–Sun" answers it
         g["no_position"] += r.get("lat") is None
         g["no_photo"] += not r.get("placeId")

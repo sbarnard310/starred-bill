@@ -44,7 +44,7 @@
     srcSite: "Site do restaurante", srcPress: "Fonte", srcTitle: "De onde vem este preço",
     perMain: "por prato principal", typicalSpend: "gasto típico", notListed: "Não indicado",
     // The till receipt on destination pages.
-    rcptHead: "The Starred Bill · Mesa para 1", rcptDinnerOnly: "Só jantar", rcptNoPairing: "sem harmonização indicada", rcptPlusWine: "+ vinho {p}", rcptDinnerWine: "Jantar + vinho", rcptLunchWine: "Almoço + vinho", rcptChecked: "Verificado: {d}", rcptIncl: "Por pessoa, serviço incluído", rcptPlus: "Por pessoa, ++ (serviço e impostos à parte)", rcptTaxTip: "Por pessoa, sem impostos nem gorjeta", rcptTip: "Por pessoa, sem gorjeta", rcptTax: "Por pessoa, impostos incluídos",
+    rcptHead: "The Starred Bill · Mesa para 1", rcptDinnerOnly: "Só jantar", rcptNoPairing: "sem harmonização indicada", rcptNoPairingOffered: "sem harmonização", rcptPlusWine: "+ vinho {p}", rcptDinnerWine: "Jantar + vinho", rcptLunchWine: "Almoço + vinho", rcptChecked: "Verificado: {d}", rcptIncl: "Por pessoa, serviço incluído", rcptPlus: "Por pessoa, ++ (serviço e impostos à parte)", rcptTaxTip: "Por pessoa, sem impostos nem gorjeta", rcptTip: "Por pessoa, sem gorjeta", rcptTax: "Por pessoa, impostos incluídos",
     findOnMaps: "Ver {name} no Google Maps", findOnMapsTitle: "Ver no Google Maps",
     showOnly: "Mostrar só {cat}",
     chgNew: "Novo", chgTitle: "{note} no Guia Michelin de {date}",

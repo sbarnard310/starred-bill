@@ -11,6 +11,7 @@
   "dinner": 28,
   "dinnerType": "main",
   "dinnerNote": "Main courses €20–28, à la carte",
+  "noPairing": true,
   "dinnerNoteFr": "Plats de 20 à 28 €, à la carte",
   "sourceType": "site",
   "source": "https://www.cotejardin45.fr/wp-content/uploads/2026/09/menu-histoire-de-saison-3-propositions-1.pdf",

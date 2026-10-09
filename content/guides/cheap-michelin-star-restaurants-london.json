@@ -1,0 +1,49 @@
+{
+  "id": "cheap-michelin-star-restaurants-london",
+  "title": "Cheapest Michelin Star Restaurants in London (2026 Prices)",
+  "description": "The cheapest Michelin star restaurants in London, ranked: a £12 starred pub lunch, set lunch deals at every star level, and how to keep the bill down.",
+  "h1": "The Cheapest Michelin Star Restaurants in London",
+  "summary": "London’s starred restaurants ranked by their cheapest meal, with the best set lunch deals.",
+  "section": "less",
+  "places": [
+    "london"
+  ],
+  "figure": "Starred meals from {{cheapPrice_london}}",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "lang": "en-GB",
+  "keywords": [
+    "cheapest michelin star restaurant london",
+    "cheap michelin star restaurants london",
+    "affordable michelin star restaurants london",
+    "michelin star lunch london",
+    "michelin star lunch deals london"
+  ],
+  "body": "<p class=\"lede\">The cheapest Michelin star restaurant in London is the Kerfield Arms, a pub in Camberwell, where the midweek lunch plate costs {{lunch:kerfield-arms}}. Of London’s {{cheapN_london}} starred restaurants, {{cheapUnder40_london}} serve a meal for £40 or less and {{cheapUnder60_london}} for £60 or less, most of them at lunch. Prices checked {{checked}}.</p>\n<p>London has more starred restaurants than any other city in the UK, and a starred dinner here often means a tasting menu of £150 or more. It doesn’t have to: cheap Michelin star restaurants in London exist, if you know where and when to go. Below, every starred restaurant in London is ranked by the cheapest meal it serves, then the cheapest at each star level, the best set lunch deals and how to keep the bill down. Each name opens the restaurant’s prices on The Starred Bill, and each arrow its page on the MICHELIN Guide.</p>\n\n<h2 id=\"cheapest\">The 20 cheapest Michelin star meals in London</h2>\n<p>Ranked by the cheapest meal each restaurant serves, lunch or dinner. Where that is an à la carte main course rather than a set menu, the table says so: at a pub or a grill, two courses and a drink will cost more than the price shown.</p>\n{{table:cheapest-london}}\n\n<h2 id=\"by-stars\">The cheapest at each star level</h2>\n<ul>\n<li><strong>One star:</strong> the Kerfield Arms, {{lunch:kerfield-arms}} for its midweek lunch plate, one dish that changes every week; for £15 it comes with a glass of beer or wine. For a set lunch of more than one course, Labombe by Trivet in Mayfair serves a snack and a main for {{lunch:labombe-by-trivet}}.</li>\n<li><strong>Two stars:</strong> Trivet near London Bridge, where you order à la carte, with mains from {{dinner:trivet}}. For a two-star set menu, Brooklands by Claude Bosi serves a three-course Concorde lunch for {{lunch:brooklands-by-claude-bosi}}, and Gymkhana a four-course lunch for {{lunch:gymkhana}}.</li>\n<li><strong>Three stars:</strong> Alain Ducasse at The Dorchester, with a set lunch from {{lunch:alain-ducasse-at-the-dorchester}}. Hélène Darroze at The Connaught and Restaurant Gordon Ramsay also serve a weekday lunch at the same price, against {{dinner:restaurant-gordon-ramsay}} for dinner at Restaurant Gordon Ramsay. See <a data-guide=\"three-michelin-star-restaurants-london\">London’s three-star restaurants</a> for their dinner prices.</li>\n</ul>\n\n<h2 id=\"lunch-deals\">Michelin star lunch deals in London</h2>\n<p>A Michelin star lunch in London is the cheapest way into most of the city’s starred dining rooms. Many serve a short set menu at lunch, three courses rather than eight, for half the dinner price or less. A few to know, all checked {{checked}}:</p>\n<ul>\n<li><strong>Amaya</strong>, Belgravia: a lunch platter from its Indian grills for {{lunch:amaya}}, against {{dinner:amaya}} for the tasting menu.</li>\n<li><strong>Luca</strong>, Clerkenwell: a two-course bar lunch for {{lunch:luca}}.</li>\n<li><strong>Benares</strong>, Mayfair: two courses at lunch for {{lunch:benares}}.</li>\n<li><strong>Chez Bruce</strong>, Wandsworth: three courses at weekday lunch for {{lunch:chez-bruce}}.</li>\n<li><strong>The Ninth</strong>, Fitzrovia: three courses at lunch for {{lunch:the-ninth}}.</li>\n<li><strong>La Trompette</strong>, Chiswick: a three-course set lunch for {{lunch:la-trompette}}.</li>\n</ul>\n<p>Our <a href=\"/uk/england/london/#lunch-deals\">London page</a> lists the biggest lunch savings and every starred restaurant’s lunch and dinner price. For London’s Indian restaurants, several of the best lunch deals in the city, see <a data-guide=\"michelin-star-indian-restaurants-london\">Michelin star Indian restaurants in London</a>.</p>\n\n<h2 id=\"pubs\">Starred without a tasting menu</h2>\n<p>Some of London’s starred restaurants have no tasting menu at all, and you order à la carte as in any restaurant. The Kerfield Arms in Camberwell won its star in February 2026 as a neighbourhood pub. St John in Smithfield, Brat in Shoreditch and Mountain in Soho serve à la carte, with mains from about {{dinner:st-john}} at St John. At two-star Trivet, a meal can be two courses from the à la carte.</p>\n\n<h2 id=\"tips\">How to keep the bill down</h2>\n<ul>\n<li><strong>Go midweek at lunch.</strong> Many set lunches run on weekdays only.</li>\n<li><strong>Add the service charge.</strong> London menu prices include VAT, but most restaurants add 12.5% to 15% service on top. Our London page adds it for you.</li>\n<li><strong>Skip the pairing.</strong> A wine pairing often costs as much as the food. A glass or two of wine, or a soft pairing, costs far less.</li>\n<li><strong>Sit at the bar.</strong> A few restaurants run cheaper bar or counter menus.</li>\n</ul>\n<p>For the world’s cheapest starred meals, from Singapore’s hawker stall to three-star lunches in Macau, see <a data-guide=\"cheapest-michelin-star-restaurants\">the cheapest Michelin star meals in the world</a>.</p>",
+  "faq": [
+    {
+      "q": "What is the cheapest Michelin star restaurant in London?",
+      "a": "The Kerfield Arms in Camberwell, a pub with one star, where the midweek lunch plate costs {{lunch:kerfield-arms}}. For a set lunch of more than one course, Labombe by Trivet in Mayfair serves a snack and a main for {{lunch:labombe-by-trivet}}."
+    },
+    {
+      "q": "What is the cheapest three Michelin star restaurant in London?",
+      "a": "At lunch, Alain Ducasse at The Dorchester, with a set lunch from {{lunch:alain-ducasse-at-the-dorchester}}; Hélène Darroze at The Connaught and Restaurant Gordon Ramsay charge the same for their weekday lunches. At dinner, the cheapest three-star tasting menu in London is at {{cheapest3London}}, for {{cheapest3LondonPrice}}."
+    },
+    {
+      "q": "Which are the most affordable Michelin star restaurants in London?",
+      "a": "For a full meal rather than a single plate, the set lunches. At one star: Labombe by Trivet, {{lunch:labombe-by-trivet}}; Amaya, {{lunch:amaya}}; Luca, {{lunch:luca}}; and Benares, {{lunch:benares}}. At two stars: Brooklands by Claude Bosi, {{lunch:brooklands-by-claude-bosi}}."
+    },
+    {
+      "q": "Are Michelin star lunches cheaper than dinner in London?",
+      "a": "Usually, yes. Most of London’s starred restaurants that serve a set lunch charge far less for it than for the dinner tasting menu, often half or less, though the menu is shorter."
+    },
+    {
+      "q": "Does the price include service?",
+      "a": "No. London menu prices include VAT, but most restaurants add a discretionary service charge of 12.5% to 15% on top."
+    },
+    {
+      "q": "Can I eat at a Michelin star restaurant in London for under £50?",
+      "a": "Yes. Of London’s starred restaurants, {{cheapUnder40_london}} serve a meal for £40 or less, mostly set lunches or à la carte mains, and {{cheapUnder60_london}} for £60 or less. Service is added on top."
+    }
+  ]
+}

@@ -1686,6 +1686,8 @@ content:
               label: Understanding the stars
             - value: where
               label: Where to find them
+            - value: less
+              label: Starred for less
             - value: no-stars
               label: No stars yet
       - name: figure

@@ -31,7 +31,7 @@
     },
     {
       "q": "How much does a Michelin-star meal cost?",
-      "a": "Across the restaurants we track, a dinner tasting menu typically costs about {{price1}} per person at one star, {{price2}} at two stars and {{price3}} at three stars, before service and drinks. The cheapest starred menus cost well under $100, and lunch menus are often cheaper still. Prices vary widely by city, so check each destination page for local prices."
+      "a": "Across the restaurants we track, a dinner tasting menu typically costs about {{price1}} per person at one star, {{price2}} at two stars and {{price3}} at three stars, before service and drinks. The cheapest starred meals cost far less, from about {{cheapUSD}} for a bowl of noodles at a hawker stall, and set lunches often cost half the dinner price: see <a data-guide=\"cheapest-michelin-star-restaurants\">the cheapest Michelin star meals in the world</a>. Prices vary widely by city, so check each destination page for local prices."
     },
     {
       "q": "How many Michelin stars can a restaurant have?",

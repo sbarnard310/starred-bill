@@ -1,0 +1,44 @@
+{
+  "id": "michelin-star-tacos-mexico-city",
+  "title": "Michelin Star Tacos in Mexico City (2026): What Changed",
+  "description": "El Califa de León lost its Michelin star in May 2026. The taquería that holds one now, the cheapest starred meals in Mexico City and five Bib taquerías.",
+  "h1": "Is There Still a Michelin Star Taco Stand in Mexico City?",
+  "summary": "El Califa de León lost its star in 2026. Where to find a starred taco now, and the cheapest starred meals.",
+  "section": "less",
+  "places": [
+    "mexico-city"
+  ],
+  "figure": "Starred meals from {{cheapPrice_mexico_city}}",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "lang": "en-US",
+  "keywords": [
+    "michelin star taco mexico city",
+    "michelin star tacos mexico city",
+    "michelin star taco stand"
+  ],
+  "body": "<p class=\"lede\">Not the famous one. El Califa de León, the San Rafael taco stand that won a Michelin star in May 2024, lost it in the MICHELIN Guide Mexico 2026, announced on May 20, 2026. Mexico City still has a starred taquería: La Once Mil, new to the guide this year, where tacos cost MX$70 to MX$335.</p>\n<p>The cheapest Michelin star meal in Mexico City is now {{cheapPrice_mexico_city}} at {{cheapName_mexico_city}}. Below: what changed, where to find a Michelin star taco in Mexico City today, the cheapest starred meals in the city, and five Bib Gourmand taquerías that cost far less.</p>\n\n<h2 id=\"what-changed\">What changed in 2026</h2>\n<p>El Califa de León was the first taquería to win a Michelin star, in the first MICHELIN Guide Mexico in May 2024, for its taco de gaonera, thin-cut beef fillet seared on the griddle and served on a corn tortilla. It kept the star in 2025. In the 2026 guide it was the only restaurant in Mexico to lose a star, and the guide gave no reason; Michelin’s inspectors judge consistency from visit to visit, and it has never said more than that. The stand is still open on Ribera de San Cosme and still in the guide as a recommended restaurant, so you can still order the gaonera.</p>\n<p>The same ceremony gave a star to La Once Mil, a taquería in Lomas de Chapultepec, so Mexico City still has a starred taco. It is a very different place: a polished room with no bookings, where tacos run from MX$70 to MX$335 each and a meal typically comes to about {{dinner:la-once-mil}}.</p>\n\n<h2 id=\"cheapest\">The cheapest Michelin star meals in Mexico City</h2>\n<p>Mexico City has {{cheapN_mexico_city}} starred restaurants. Ranked by the cheapest meal each serves, the cheapest have no tasting menu: you order à la carte, or there is no menu at all.</p>\n{{table:cheapest-mexico-city}}\n<p><strong>Expendio de Maíz</strong>, Roma Norte: there’s no menu. Dishes built on fresh masa keep coming until you say stop, and the bill comes to about {{dinner:expendio-de-maiz}} a head. It opens in the daytime only, takes no bookings and is cash only, so expect a wait at weekends.</p>\n<p><strong>La Once Mil</strong>, Lomas de Chapultepec: order tacos one or two at a time. It takes no bookings, so arrive early.</p>\n\n<h2 id=\"bib-gourmand\">Five Bib Gourmand taquerías</h2>\n<p>The Bib Gourmand is the MICHELIN Guide’s award for good food at a moderate price. It isn’t a star (see <a data-guide=\"bib-gourmand-vs-michelin-star\">Bib Gourmand vs Michelin star</a>), but in Mexico City it goes to many of the taquerías locals queue for. Five in the current guide:</p>\n<ul>\n<li><strong><a href=\"https://guide.michelin.com/en/ciudad-de-mexico/cuauhtemoc_1995126/restaurant/taqueria-los-cocuyos\" target=\"_blank\" rel=\"noopener\">Taquería Los Cocuyos</a></strong>, Centro Histórico: open since 1980, with meats simmering in one big pot and chopped to order.</li>\n<li><strong><a href=\"https://guide.michelin.com/en/ciudad-de-mexico/cuauhtemoc_1995126/restaurant/taqueria-el-jarocho\" target=\"_blank\" rel=\"noopener\">Taquería El Jarocho</a></strong>, Roma Norte: run by the same family for three generations, for breakfast, lunch or an early dinner.</li>\n<li><strong><a href=\"https://guide.michelin.com/en/ciudad-de-mexico/cuauhtemoc_1995126/restaurant/la-89\" target=\"_blank\" rel=\"noopener\">La 89</a></strong>, Roma Norte: carne asada tacos, birria and tortas, grilled to order.</li>\n<li><strong><a href=\"https://guide.michelin.com/en/ciudad-de-mexico/cuauhtemoc_1995126/restaurant/tacos-del-valle\" target=\"_blank\" rel=\"noopener\">Tacos del Valle</a></strong>: pork and beef from the spinning trompo, in a little retro diner.</li>\n<li><strong><a href=\"https://guide.michelin.com/en/ciudad-de-mexico/tlalpan_2003036/restaurant/tacos-charly\" target=\"_blank\" rel=\"noopener\">Tacos Charly</a></strong>, Tlalpan: suadero cooked slowly until tender. Arrive early and bring cash.</li>\n</ul>\n\n<h2 id=\"lunch\">The cheapest starred meal at a table</h2>\n<p>For a starred meal with a tablecloth and a booking, Rosetta in Roma Norte serves its à la carte menu at lunch and dinner, with main courses from about MX$315 to {{dinner:rosetta}}. Pujol in Polanco, the city’s best-known two-star restaurant, serves its tasting menu at lunch as well as dinner, for {{dinner:pujol}}. Our <a href=\"/mexico/mexico-city/\">Mexico City page</a> lists every starred restaurant with its price, and <a data-guide=\"cheapest-michelin-star-restaurants\">the cheapest Michelin star meals in the world</a> ranks them against the rest.</p>",
+  "faq": [
+    {
+      "q": "Does El Califa de León still have a Michelin star?",
+      "a": "No. It won one star in May 2024 and lost it in the MICHELIN Guide Mexico 2026, announced on May 20, 2026. It is still open and still in the guide as a recommended restaurant."
+    },
+    {
+      "q": "Why did El Califa de León lose its Michelin star?",
+      "a": "The MICHELIN Guide didn’t say. It doesn’t explain individual decisions, beyond saying that stars depend on cooking being consistent across inspectors’ visits."
+    },
+    {
+      "q": "Is there still a Michelin star taco in Mexico City?",
+      "a": "Yes. La Once Mil, a taquería in Lomas de Chapultepec, won a star in 2026. Tacos cost MX$70 to MX$335 each, and a meal typically comes to about {{dinner:la-once-mil}}."
+    },
+    {
+      "q": "Do you need to book?",
+      "a": "Not at the taquerías: El Califa de León, La Once Mil and the Bib Gourmand stands don’t take bookings. Expendio de Maíz doesn’t either. The tasting-menu restaurants do, often weeks ahead."
+    },
+    {
+      "q": "How much should I bring?",
+      "a": "A taco lunch at El Califa de León or a Bib Gourmand taquería costs a small fraction of a starred tasting menu. For La Once Mil, allow about {{dinner:la-once-mil}} a person. Several of the smaller places are cash only."
+    }
+  ],
+  "imageAlt": "Illustration of three soft corn tacos on a small plate beside a hot griddle, with a single gold star above."
+}

@@ -276,6 +276,7 @@ guides = {}
 GUIDE_SECTIONS = {
     "stars": ("Understanding the stars", "What the stars mean, how restaurants win and lose them, and the MICHELIN Guide’s other awards."),
     "where": ("Where to find them", "Every starred restaurant by country, the world’s three-star tables and the best of London."),
+    "less": ("Starred for less", "The cheapest Michelin-starred meals, from hawker stalls and taquerías to set lunches."),
     "no-stars": ("No stars yet", "Big food countries the MICHELIN Guide hasn’t starred, and when that might change."),
 }
 GUIDE_FIELDS = ("title", "description", "h1", "summary", "published", "updated", "body")
@@ -2797,10 +2798,13 @@ def guide_stats():
     stats.update(popular_stats())
     stats.update(chef_stats(live))
     stats.update(diet_stats(live))
+    stats.update(cheap_stats(live))
     return stats
 
 
 def usd_text(n, step=5):
+    if n is not None and n < 20 and step == 5:
+        step = 1  # "about $6", not "about $5", for a S$8 bowl of noodles
     return f"${int(round(n / step) * step):,}" if n is not None else "–"
 
 
@@ -3446,7 +3450,165 @@ def guide_blocks(stats):
     blocks.update(chef_blocks(live, links, stars_cell, note))
     blocks.update(diet_blocks(live, name_html, stars_cell, price_cell, note))
     blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
+    blocks.update(cheap_blocks(live, name_html, stars_cell, checked, year))
     blocks.update(ceremony_blocks())
+    return blocks
+
+
+# The cheapest-meals guides (9 Oct 2026, Briefs 8 and 9): every starred restaurant ranked by the lowest meal we list for it,
+# lunch or dinner, set menu, à la carte or typical spend, in US dollars. Mainland China's typical spends (Ctrip averages)
+# stay out, as they aren't prices anyone is quoted.
+CHEAP_ROWS = {1: 20, 2: 10, 3: 10}   # rows in {{table:cheapest-1}}, -2 and -3
+# {{table:cheapest-<place>}}: its rows, and local prices to count meals at or under ({{cheapUnder40_london}}: London's starred restaurants with a meal for £40 or less)
+CHEAP_PLACES = {"london": (20, (40, 60, 100)), "singapore": (8, ()), "mexico-city": (8, ()), "bangkok": (8, ()), "tokyo": (8, ())}
+CHEAP_UNDER = (25, 50, 100)          # {{cheapUnder50}}: starred restaurants with a meal at or under $50
+CHEAP_KIND = {"main": "À la carte", "spend": "Typical spend"}
+
+
+def cheap_meal(r):
+    """A restaurant's cheapest listed meal: (US dollars, "lunch" or "dinner"), or (None, None) when it has none we can rank."""
+    got = [(r[f] / CURRENCIES[r["cur"]]["perUSD"], f) for f in ("dinner", "lunch")
+           if r.get(f) is not None and not (r["country"] == "china" and r.get(f + "Type") == "spend")]
+    return min(got) if got else (None, None)
+
+
+def cheap_ranked(rows):
+    """Restaurants with a rankable meal, cheapest first: [(usd, field, restaurant)]."""
+    out = [(u, f, r) for u, f, r in ((*cheap_meal(r), r) for r in rows) if u is not None]
+    return sorted(out, key=lambda x: (x[0], -x[2]["stars"], x[2]["name"].lower()))
+
+
+def cheap_what(r, f):
+    """What the price buys, e.g. "Set lunch", "À la carte", with the restaurant's own note on it."""
+    kind = r.get(f + "Type", "menu")
+    label = CHEAP_KIND.get(kind) or ("Set lunch" if f == "lunch" else "Set menu")
+    note = (r.get(f + "Note") or "").strip()
+    return label, note
+
+
+def cheap_price(r, f, usd):
+    return money(r[f], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(usd)})")
+
+
+def cheap_stats(live):
+    """Figures for the cheapest-meals guides: {{cheapName}}, {{cheapPrice}}, {{cheapWhat}}, {{cheapPlace}} (the cheapest starred
+    meal anywhere), the same per star level ({{cheap3Name}}…), counts at or under $25/$50/$100 ({{cheapUnder50}}), lunch
+    figures ({{lunchCheaper}}, {{lunchBoth}}, {{lunchSave3}}…), and per place in CHEAP_PLACES ({{cheapName_london}}…)."""
+    out = {}
+    ranked = cheap_ranked(live)
+
+    def put(key, x, sfx=""):
+        u, f, r = x
+        label, note = cheap_what(r, f)
+        what = note or label
+        out.update({f"{key}Name{sfx}": r["name"], f"{key}Price{sfx}": cheap_price(r, f, u), f"{key}USD{sfx}": usd_text(u),
+                    f"{key}Place{sfx}": f'{place_name(r)}, {places[r["country"]]["name"]}' if place_name(r) != places[r["country"]]["name"] else place_name(r),
+                    f"{key}What{sfx}": what[:1].lower() + what[1:], f"{key}Meal{sfx}": f})
+    if ranked:
+        put("cheap", ranked[0])
+        put("cheapNext", ranked[1])
+    for s in (1, 2, 3):
+        at = [x for x in ranked if x[2]["stars"] == s]
+        if at:
+            put(f"cheap{s}", at[0])
+        menus = [x for x in at if is_menu(x[2], x[1])]
+        if menus:
+            put(f"cheapMenu{s}", menus[0])
+    for n in CHEAP_UNDER:
+        out[f"cheapUnder{n}"] = f"{sum(1 for u, f, r in ranked if u <= n):,}"
+    out["cheapRanked"] = f"{len(ranked):,}"
+    # Lunch against dinner, for restaurants that list a set menu at both.
+    deals, both = lunch_deals(live)
+    out.update({"lunchBoth": f"{len(both):,}", "lunchCheaper": f"{len(deals):,}",
+                "lunchShare": f"{round(100 * len(deals) / max(1, len(both)))}%"})
+    for s in (1, 2, 3):
+        cuts = sorted(1 - r["lunch"] / r["dinner"] for r in both if r["stars"] == s and r["lunch"] < r["dinner"])
+        out[f"lunchSave{s}"] = f"{round(100 * cuts[len(cuts) // 2])}%" if cuts else "–"
+    for pid in CHEAP_PLACES:
+        here = [x for x in ranked if pid in x[2]["_chain"]]
+        sfx = "_" + pid.replace("-", "_")  # {{cheapPrice_mexico_city}}
+        out["cheapN" + sfx] = str(sum(1 for r in live if pid in r["_chain"]))
+        if here:
+            put("cheap", here[0], sfx)
+            for s in (1, 2, 3):
+                at = [x for x in here if x[2]["stars"] == s]
+                if at:
+                    put(f"cheap{s}", at[0], sfx)
+            lunches = [x for x in here if x[1] == "lunch" and is_menu(x[2], "lunch")]
+            if lunches:
+                put("cheapLunch", lunches[0], sfx)
+            for n in CHEAP_PLACES[pid][1]:
+                out[f"cheapUnder{n}{sfx}"] = str(sum(1 for u, f, r in here if r[f] <= n))
+    return out
+
+
+def open_text(r):
+    """A restaurant's open days (and times where the guide's are complete), e.g. "Wed–Sat 09:00–19:30", or "–"."""
+    runs = [(days, hours) for days, hours in hours_lines(r) if hours != "closed"]
+    return "; ".join(days + ("" if hours == "open" else " " + hours) for days, hours in runs) or "–"
+
+
+def cheap_blocks(live, name_html, stars_cell, checked, year):
+    """{{table:cheapest-1}}, -2, -3 (the world's cheapest starred meals at each level), {{table:cheapest-lunch}} (set lunch
+    against dinner by star level) and {{table:cheapest-<place>}} for CHEAP_PLACES."""
+    ranked = cheap_ranked(live)
+    note = (f'<p class="table-note">Stars from the current MICHELIN Guide editions ({e(year)} or the latest before it). Each price is the cheapest meal we list '
+            f'for the restaurant, lunch or dinner, per person in local currency before service and drinks, ranked by its value in US dollars at recent '
+            f'exchange rates. “À la carte” is the price of a main course or a typical dish, “typical spend” what a meal usually comes to. '
+            f'Mainland China’s typical spends are left out. Last checked {e(checked)}.</p>')
+
+    def what_cell(r, f):
+        label, text = cheap_what(r, f)
+        if text.lower().startswith(label.lower()):  # "À la carte; dishes about MX$190–360" under "À la carte"
+            text = text[len(label):].lstrip(" ;,:·–-")
+            text = text[:1].upper() + text[1:]
+        return f'<strong>{e(label)}</strong>' + (f'<br><span class="muted">{e(text)}</span>' if text else "")
+
+    def price_cell(r, f, u):
+        return money(r[f], r["cur"]) + ("" if r["cur"] == "USD" else f'<br><span class="muted">about {usd_text(u)}</span>')
+
+    def where_cell(r):
+        country = places[r["country"]]["name"]
+        town = place_name(r)
+        return (f'<td data-label="Where"><a href="{e(r["cityPath"])}">{e(town)}</a>'
+                + (f'<br><span class="muted">{e(country)}</span>' if town != country else "") + "</td>")
+
+    def table(rows, local=False, hours=False):
+        body = "".join(
+            f'<tr><td data-label="Restaurant"><span class="rank">{i + 1}</span> {name_html(r)}</td>'
+            f'<td data-label="Stars">{stars_cell(r["stars"])}</td>'
+            + (f'<td data-label="Area">{e((r.get("area") or "–").split(",")[0])}</td>' if local else where_cell(r))
+            + f'<td data-label="What you get">{what_cell(r, f)}</td>'
+            f'<td class="num" data-label="From, per person">{price_cell(r, f, u)}</td>'
+            + (f'<td data-label="Open">{e(open_text(r))}</td>' if hours else "") + "</tr>"
+            for i, (u, f, r) in enumerate(rows))
+        heads = ["Restaurant", "Stars", "Area" if local else "Where", "What you get", "From, per person"] + (["Open"] if hours else [])
+        head = "".join(f'<th scope="col">{h}</th>' for h in heads)
+        return f'<div class="table-wrap"><table class="guide-table data rank-list cheap-list"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
+
+    blocks = {f"cheapest-{s}": table([x for x in ranked if x[2]["stars"] == s][:CHEAP_ROWS[s]]) + note for s in (1, 2, 3)}
+    for pid, (n, _) in CHEAP_PLACES.items():
+        here = [x for x in ranked if pid in x[2]["_chain"]][:n]
+        hours = pid != "london" and any(open_text(r) != "–" for u, f, r in here)  # the guide lists no hours in Japan
+        blocks[f"cheapest-{pid}"] = table(here, local=True, hours=hours) + note.replace(
+            "Last checked", ("Opening days and times from the MICHELIN Guide, which sometimes lists only a day’s first sitting. " if hours else "") + "Last checked")
+    # Set lunch against dinner, by star level, in US dollars.
+    deals, both = lunch_deals(live)
+    med = lambda v: sorted(v)[len(v) // 2] if v else None
+    rows = ""
+    for s in (3, 2, 1):
+        at = [r for r in both if r["stars"] == s]
+        cheaper = [r for r in at if r["lunch"] < r["dinner"]]
+        lunch, dinner = med([to_usd(r, "lunch") for r in at]), med([to_usd(r, "dinner") for r in at])
+        cut = med([1 - r["lunch"] / r["dinner"] for r in cheaper])
+        rows += (f'<tr><td data-label="Stars">{stars_cell(s)}</td><td class="num" data-label="List both">{len(at):,}</td>'
+                 f'<td class="num" data-label="Lunch cheaper">{len(cheaper):,}</td>'
+                 f'<td class="num" data-label="Typical set lunch">{usd_text(lunch)}</td><td class="num" data-label="Typical dinner menu">{usd_text(dinner)}</td>'
+                 f'<td class="num" data-label="Typical saving at lunch">{round(100 * cut) if cut is not None else "–"}%</td></tr>')
+    heads = "".join(f'<th scope="col">{h}</th>' for h in ("Stars", "List both", "Lunch cheaper", "Typical set lunch", "Typical dinner menu", "Typical saving at lunch"))
+    blocks["cheapest-lunch"] = (f'<div class="table-wrap"><table class="guide-table data"><thead><tr>{heads}</tr></thead><tbody>{rows}</tbody></table></div>'
+                                f'<p class="table-note">Starred restaurants that list both a set lunch and a set dinner menu on The Starred Bill. Typical means the '
+                                f'median; the saving is the median among those where lunch costs less. Prices in US dollars at recent exchange rates, per person before service and drinks. Last checked {e(checked)}.</p>')
     return blocks
 
 

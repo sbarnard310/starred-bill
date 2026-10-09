@@ -1,0 +1,42 @@
+{
+  "id": "michelin-star-street-food-bangkok",
+  "title": "Michelin Star Street Food in Bangkok: Jay Fai & More (2026)",
+  "description": "Bangkok’s only Michelin star street food stall, Jay Fai, and what it costs, plus the cheapest starred Thai meals and five Bib Gourmand street-food stops.",
+  "h1": "Michelin Star Street Food in Bangkok: Where to Eat for Under $50",
+  "summary": "Jay Fai, the cheapest starred Thai kitchens and five Bib Gourmand street-food stops.",
+  "section": "less",
+  "places": [
+    "bangkok"
+  ],
+  "figure": "Starred street food from {{dinner:jay-fai}}",
+  "published": "2026-10-09",
+  "updated": "2026-10-09",
+  "lang": "en-US",
+  "keywords": [
+    "michelin star street food bangkok"
+  ],
+  "body": "<p class=\"lede\">One street-food stall in Bangkok holds a Michelin star: Jay Fai, in the MICHELIN Guide Thailand 2026, where a meal typically comes to about {{dinner:jay-fai}} and the famous crab omelet costs more. Suan Thip and Saneh Jaan are the next-cheapest starred Thai kitchens. Prices checked {{checked}}.</p>\n<p>Bangkok’s first MICHELIN Guide, published in December 2017, gave a star to a street-food cook working over charcoal in the old town, and she still has it. Below are the city’s cheapest Michelin star meals, what to expect at Jay Fai, five Bib Gourmand street-food stalls and noodle shops, and the cheapest starred lunch in an air-conditioned dining room.</p>\n\n<h2 id=\"cheapest\">The cheapest Michelin star meals in Bangkok</h2>\n<p>Bangkok has {{cheapN_bangkok}} starred restaurants. Ranked by the cheapest meal each serves, Jay Fai and Suan Thip lead, both cooking à la carte, followed by set lunches at the Thai restaurants. Many Bangkok menus are quoted “++”, before 10% service and 7% VAT; the notes in the table say where.</p>\n{{table:cheapest-bangkok}}\n\n<h2 id=\"jay-fai\">Jay Fai</h2>\n<p><strong>What to order:</strong> the crab omelet, a thick, crisp roll packed with crab meat, is the dish people queue for; drunken noodles with seafood, dry tom yum and crab curry are the others. Jay Fai herself, Supinya Junsuta, cooks every plate over charcoal in ski goggles, which is why the food is slow and the queue long. The omelet was listed at ฿1,500 in August 2025, when Thailand’s commerce ministry looked into a diner’s complaint about being charged ฿4,000 for a larger one, so check the menu prices before you order.</p>\n<p><strong>The queue:</strong> two to four hours at peak times is common. Put your name on the list with the staff as early as you can, then come back; weekdays and early afternoons are quieter. Bookings are taken at times, by message, but not reliably.</p>\n<p><strong>Where and when:</strong> a shophouse on Maha Chai Road in the old town (Phra Nakhon). The MICHELIN Guide lists it as open Wednesday to Saturday; <a href=\"https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/jay-fai\" target=\"_blank\" rel=\"noopener\">its MICHELIN Guide page</a> has the latest. Bring cash.</p>\n\n<h2 id=\"bib-gourmand\">Five Bib Gourmand street-food stops</h2>\n<p>The Bib Gourmand is the MICHELIN Guide’s award for good food at a moderate price, and in Bangkok it goes to noodle carts, shophouses and dessert stalls that cost a fraction of Jay Fai. It isn’t a star (see <a data-guide=\"bib-gourmand-vs-michelin-star\">Bib Gourmand vs Michelin star</a>), but it is the guide’s own shortlist. Five in the current guide:</p>\n<ul>\n<li><strong><a href=\"https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/guay-tiew-mu-rung-rueang\" target=\"_blank\" rel=\"noopener\">Rung Rueang Tung Pork Noodle</a></strong>, Sukhumvit Soi 26: pork noodle soup with minced pork, at an open-air shop (not the one with the same name opposite).</li>\n<li><strong><a href=\"https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/bunloet\" target=\"_blank\" rel=\"noopener\">Bunloet</a></strong>, Pom Prap Sattru Phai: egg noodles with grilled marinated pork, made the same way for more than 40 years.</li>\n<li><strong><a href=\"https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/somsak-pu-ob-charoen-rat\" target=\"_blank\" rel=\"noopener\">Somsak Pu Ob</a></strong>, Khlong San: a cart serving crab and prawns steamed on glass noodles.</li>\n<li><strong><a href=\"https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/ten-suns\" target=\"_blank\" rel=\"noopener\">Ten Suns</a></strong>, old town: braised beef noodle soup with your choice of cuts.</li>\n<li><strong><a href=\"https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/k-panich\" target=\"_blank\" rel=\"noopener\">K. Panich</a></strong>, old town: mango sticky rice from a family recipe of 80 years.</li>\n</ul>\n\n<h2 id=\"lunch\">The cheapest starred lunch in a dining room</h2>\n<p>For a starred Thai meal with a table, service and air conditioning, the cheapest set lunch is at {{cheapLunchName_bangkok}}, for {{cheapLunchPrice_bangkok}} plus service and VAT, in Pathum Wan. Suan Thip, a garden restaurant in Nonthaburi, just north of the city, serves à la carte Thai for about {{dinner:suan-thip}} a head. Our <a href=\"/thailand/bangkok/\">Bangkok page</a> lists every starred restaurant with its price, and <a data-guide=\"cheapest-michelin-star-restaurants\">the cheapest Michelin star meals in the world</a> ranks Jay Fai against the rest. The MICHELIN Guide Thailand is usually published in November, and we update this page when it is.</p>",
+  "faq": [
+    {
+      "q": "Is Jay Fai still Michelin-starred?",
+      "a": "Yes. Jay Fai has held one star since Bangkok’s first MICHELIN Guide in December 2017, and kept it in the MICHELIN Guide Thailand 2026."
+    },
+    {
+      "q": "Do you need to book Jay Fai?",
+      "a": "Not usually possible. Most diners put their name on the waiting list in person and come back; the restaurant sometimes takes bookings by message, but not reliably."
+    },
+    {
+      "q": "Is it worth the queue?",
+      "a": "For the crab omelet cooked by the woman who made it famous, many people think so. If you have less time, Bangkok’s Bib Gourmand noodle shops serve excellent street food with shorter waits."
+    },
+    {
+      "q": "How much should I bring to Jay Fai?",
+      "a": "A meal typically comes to about {{dinner:jay-fai}} a person, and the crab omelet alone was ฿1,500 in 2025. Bring cash, and check prices on the menu before you order."
+    },
+    {
+      "q": "Are there other Michelin star street food stalls in Bangkok?",
+      "a": "Jay Fai is the only street-food stall in Bangkok with a star. The MICHELIN Guide gives a Bib Gourmand to dozens of others, from noodle carts to dessert shops."
+    }
+  ],
+  "imageAlt": "Illustration of a golden crab omelet on a plate beside a charcoal wok, with a single gold star above."
+}

@@ -58,7 +58,7 @@
     wishNote: "İstek listeniz yalnızca bu tarayıcıda saklanır.",
     wishAdd: "{name} restoranını istek listenize ekleyin", wishRemove: "{name} restoranını istek listenizden çıkarın", wishAddT: "İstek listesine ekle", wishRemoveT: "İstek listesinden çıkar",
     toastAdded: "İstek listenize eklendi: {name}", toastRemoved: "İstek listenizden çıkarıldı: {name}", undo: "Geri al",
-    photo: "Fotoğraf", tempClosed: "Geçici olarak kapalı (Google)",
+    photo: "Fotoğraf", tempClosed: "Geçici olarak kapalı",
     mapTitle: "Tüm yıldızlı restoranlar tek haritada",
     mapText: "İğneler yukarıdaki listenin filtrelerini izler: bir yıldız sayısı, mutfak ya da istek listenizi seçin, harita da ona uyar. Fiyat ve yol tarifi için bir iğneye dokunun.",
     mapWait: "Harita buraya kaydırdığınızda yüklenir.", mapLabel: "Michelin yıldızlı restoranlar haritası",

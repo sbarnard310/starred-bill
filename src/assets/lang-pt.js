@@ -60,7 +60,7 @@
     wishNote: "Os seus favoritos ficam guardados só neste navegador.",
     wishAdd: "Adicionar {name} aos favoritos", wishRemove: "Remover {name} dos favoritos", wishAddT: "Adicionar aos favoritos", wishRemoveT: "Remover dos favoritos",
     toastAdded: "{name} foi adicionado aos favoritos", toastRemoved: "{name} foi removido dos favoritos", undo: "Anular",
-    photo: "Foto", tempClosed: "Temporariamente fechado (Google)",
+    photo: "Foto", tempClosed: "Temporariamente fechado",
     mapTitle: "Todos os restaurantes com estrela num só mapa",
     mapText: "Os marcadores seguem os filtros da lista acima: escolha um número de estrelas, uma cozinha ou os seus favoritos e o mapa acompanha. Toque num marcador para ver o preço e um link para o percurso.",
     mapWait: "O mapa carrega quando chegar aqui.", mapLabel: "Mapa dos restaurantes com estrela Michelin",

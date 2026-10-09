@@ -56,7 +56,7 @@
     wishNote: "A kívánságlistád csak ebben a böngészőben van mentve.",
     wishAdd: "{name} hozzáadása a kívánságlistához", wishRemove: "{name} törlése a kívánságlistáról", wishAddT: "Kívánságlistára", wishRemoveT: "Törlés a kívánságlistáról",
     toastAdded: "{name} felkerült a kívánságlistádra", toastRemoved: "{name} lekerült a kívánságlistádról", undo: "Visszavonás",
-    photo: "Fotó", tempClosed: "Ideiglenesen zárva (Google)",
+    photo: "Fotó", tempClosed: "Ideiglenesen zárva",
     mapTitle: "Minden csillagos asztal egy térképen",
     mapText: "A gombostűk a fenti lista szűrőit követik: válassz csillagszámot, konyhát vagy a kívánságlistádat, és a térkép igazodik. Koppints egy gombostűre az árért és az útvonalért.",
     mapWait: "A térkép betöltődik, amikor idáig görgetsz.", mapLabel: "A Michelin-csillagos éttermek térképe",

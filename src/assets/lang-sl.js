@@ -57,7 +57,7 @@
     wishNote: "Seznam želja je shranjen samo v tem brskalniku.",
     wishAdd: "Dodaj {name} na seznam želja", wishRemove: "Odstrani {name} s seznama želja", wishAddT: "Dodaj na seznam želja", wishRemoveT: "Odstrani s seznama želja",
     toastAdded: "Dodano na seznam želja: {name}", toastRemoved: "Odstranjeno s seznama želja: {name}", undo: "Razveljavi",
-    photo: "Fotografija", tempClosed: "Začasno zaprto (Google)",
+    photo: "Fotografija", tempClosed: "Začasno zaprto",
     mapTitle: "Vse restavracije z zvezdico na enem zemljevidu",
     mapText: "Žebljički sledijo filtrom na seznamu zgoraj: izberite število zvezdic, kuhinjo ali seznam želja in zemljevid se prilagodi. Tapnite žebljiček za ceno in navodila za pot.",
     mapWait: "Zemljevid se naloži, ko se pomaknete sem.", mapLabel: "Zemljevid restavracij z Michelinovo zvezdico",

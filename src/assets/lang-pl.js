@@ -57,7 +57,7 @@
     wishNote: "Ulubione są zapisane tylko w tej przeglądarce.",
     wishAdd: "Dodaj {name} do ulubionych", wishRemove: "Usuń {name} z ulubionych", wishAddT: "Dodaj do ulubionych", wishRemoveT: "Usuń z ulubionych",
     toastAdded: "Dodano do ulubionych: {name}", toastRemoved: "Usunięto z ulubionych: {name}", undo: "Cofnij",
-    photo: "Zdjęcie", tempClosed: "Tymczasowo zamknięta (Google)",
+    photo: "Zdjęcie", tempClosed: "Tymczasowo zamknięta",
     mapTitle: "Wszystkie restauracje z gwiazdkami na jednej mapie",
     mapText: "Pinezki podążają za filtrami listy powyżej: wybierz liczbę gwiazdek, kuchnię lub ulubione, a mapa się dopasuje. Dotknij pinezki, aby zobaczyć cenę i wskazówki dojazdu.",
     mapWait: "Mapa wczyta się, gdy tu przewiniesz.", mapLabel: "Mapa restauracji z gwiazdkami Michelin",

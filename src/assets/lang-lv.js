@@ -54,7 +54,7 @@
     wishNote: "Jūsu vēlmju saraksts tiek saglabāts tikai šajā pārlūkā.",
     wishAdd: "Pievienot {name} vēlmju sarakstam", wishRemove: "Noņemt {name} no vēlmju saraksta", wishAddT: "Pievienot vēlmju sarakstam", wishRemoveT: "Noņemt no vēlmju saraksta",
     toastAdded: "Pievienots vēlmju sarakstam: {name}", toastRemoved: "Noņemts no vēlmju saraksta: {name}", undo: "Atsaukt",
-    photo: "Foto", tempClosed: "Īslaicīgi slēgts (Google)",
+    photo: "Foto", tempClosed: "Īslaicīgi slēgts",
     mapTitle: "Visi restorāni ar zvaigznēm vienā kartē",
     mapText: "Kartes spraudītes seko augstāk esošā saraksta filtriem: izvēlieties zvaigžņu skaitu, virtuvi vai vēlmju sarakstu, un karte pielāgosies. Pieskarieties spraudītei, lai redzētu cenu un maršrutu.",
     mapWait: "Karte ielādēsies, kad ritināsiet līdz šejienei.", mapLabel: "Restorānu ar Michelin zvaigznēm karte",

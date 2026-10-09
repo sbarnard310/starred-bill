@@ -54,7 +54,7 @@
     wishNote: "Jūsų norų sąrašas saugomas tik šioje naršyklėje.",
     wishAdd: "Pridėti {name} į norų sąrašą", wishRemove: "Pašalinti {name} iš norų sąrašo", wishAddT: "Pridėti į norų sąrašą", wishRemoveT: "Pašalinti iš norų sąrašo",
     toastAdded: "Pridėta į norų sąrašą: {name}", toastRemoved: "Pašalinta iš norų sąrašo: {name}", undo: "Atšaukti",
-    photo: "Nuotrauka", tempClosed: "Laikinai uždaryta („Google“)",
+    photo: "Nuotrauka", tempClosed: "Laikinai uždaryta",
     mapTitle: "Visi restoranai su žvaigždutėmis viename žemėlapyje",
     mapText: "Žymekliai seka aukščiau esančio sąrašo filtrus: pasirinkite žvaigždučių skaičių, virtuvę ar norų sąrašą, ir žemėlapis prisitaikys. Bakstelėkite žymeklį, kad pamatytumėte kainą ir maršrutą.",
     mapWait: "Žemėlapis įsikels, kai nuslinksite iki čia.", mapLabel: "Restoranų su „Michelin“ žvaigždutėmis žemėlapis",

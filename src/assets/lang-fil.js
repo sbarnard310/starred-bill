@@ -57,7 +57,7 @@
     wishNote: "Sa browser na ito lang naka-save ang wishlist mo.",
     wishAdd: "Idagdag ang {name} sa wishlist mo", wishRemove: "Alisin ang {name} sa wishlist mo", wishAddT: "Idagdag sa wishlist", wishRemoveT: "Alisin sa wishlist",
     toastAdded: "Naidagdag ang {name} sa wishlist mo", toastRemoved: "Naalis ang {name} sa wishlist mo", undo: "I-undo",
-    photo: "Larawan", tempClosed: "Pansamantalang sarado (Google)",
+    photo: "Larawan", tempClosed: "Pansamantalang sarado",
     mapTitle: "Lahat ng restawrang may bituin sa iisang mapa",
     mapText: "Sinusundan ng mga pin ang mga filter sa listahan sa itaas: pumili ng bilang ng bituin, lutuin o ang wishlist mo at susunod ang mapa. I-tap ang pin para sa presyo at direksiyon.",
     mapWait: "Maglo-load ang mapa kapag nag-scroll ka rito.", mapLabel: "Mapa ng mga restawrang may Michelin star",

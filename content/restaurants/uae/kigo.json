@@ -1,0 +1,33 @@
+{
+  "name": "KIGO",
+  "city": "dubai",
+  "address": "Four Seasons Hotel Dubai International Financial Centre, Gate Village 09, DIFC, Dubai",
+  "stars": 1,
+  "cuisine": "Japanese",
+  "change": "new",
+  "changeNote": "Gained its first star",
+  "changeDate": "2026-10",
+  "rating": 4.7,
+  "reviews": 53,
+  "dinnerType": "menu",
+  "dinner": 1500,
+  "dinnerNote": "Seasonal kaiseki and sushi tasting menu, 8 courses",
+  "sourceType": "site",
+  "source": "https://www.kigodubai.ae/",
+  "wine": 750,
+  "noLunch": true,
+  "lunchNote": "Dinner only · Wed–Sun",
+  "website": "https://www.kigodubai.ae/",
+  "lat": 25.2128843,
+  "lng": 55.2826262,
+  "placeId": "ChIJIYvq6ktDXz4RpccEgruhtoA",
+  "michelinId": "1243748",
+  "diets": [
+    "vegetarian-menu"
+  ],
+  "chef": "Akinori Tanigawa",
+  "chefSource": "site",
+  "changeNoteAr": "حصل على نجمته الأولى",
+  "dinnerNoteAr": "قائمة تذوق موسمية من الكايسيكي والسوشي من 8 أطباق",
+  "lunchNoteAr": "العشاء فقط · من الأربعاء إلى الأحد"
+}

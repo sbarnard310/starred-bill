@@ -56,7 +56,7 @@
     wishNote: "Il-lista tax-xewqat tiegħek tinżamm biss f'dan il-browser.",
     wishAdd: "Żid lil {name} mal-lista tax-xewqat", wishRemove: "Neħħi lil {name} mil-lista tax-xewqat", wishAddT: "Żid mal-lista tax-xewqat", wishRemoveT: "Neħħi mil-lista tax-xewqat",
     toastAdded: "Żidt lil {name} mal-lista tax-xewqat", toastRemoved: "Neħħejt lil {name} mil-lista tax-xewqat", undo: "Erġa' lura",
-    photo: "Ritratt", tempClosed: "Magħluq temporanjament (Google)",
+    photo: "Ritratt", tempClosed: "Magħluq temporanjament",
     mapTitle: "Kull ristorant bl-istilla fuq mappa waħda",
     mapText: "Il-labar isegwu l-filtri tal-lista ta' fuq: agħżel numru ta' stilel, kċina jew il-lista tax-xewqat u l-mappa taqbel magħhom. Agħfas labra għall-prezz u għad-direzzjonijiet.",
     mapWait: "Il-mappa titgħabba meta tasal hawn.", mapLabel: "Mappa tar-ristoranti bi stilla Michelin",

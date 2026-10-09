@@ -2,25 +2,17 @@
   "name": "Barbara",
   "city": "vancouver",
   "address": "305 E. Pender St., Vancouver, V6A 0J3",
-  "stars": 1,
+  "stars": 0,
   "cuisine": "Contemporary",
-  "rating": 4.7,
-  "reviews": 325,
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-10",
   "dinnerType": "menu",
-  "dinner": 120,
-  "dinnerNote": "Tasting menu",
-  "sourceType": "site",
-  "source": "https://barbararestaurant.com/menu",
-  "noLunch": true,
-  "lunchNote": "Dinner only",
+  "status": "lost",
+  "formerStars": 1,
+  "statusNote": "Lost its star in October 2026",
   "website": "https://barbararestaurant.com/",
   "lat": 49.2804672,
   "lng": -123.0969955,
-  "placeId": "ChIJnTHDDsVxhlQRhCLfo0jYjkA",
-  "michelinId": "1200273",
-  "diets": [
-    "vegetarian"
-  ],
-  "chef": "Patrick Hennessy",
-  "chefSource": "michelin"
+  "placeId": "ChIJnTHDDsVxhlQRhCLfo0jYjkA"
 }

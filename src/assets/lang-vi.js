@@ -57,7 +57,7 @@
     wishNote: "Danh sách của bạn chỉ được lưu trong trình duyệt này.",
     wishAdd: "Thêm {name} vào danh sách muốn đến", wishRemove: "Bỏ {name} khỏi danh sách muốn đến", wishAddT: "Thêm vào danh sách", wishRemoveT: "Bỏ khỏi danh sách",
     toastAdded: "Đã thêm {name} vào danh sách muốn đến", toastRemoved: "Đã bỏ {name} khỏi danh sách muốn đến", undo: "Hoàn tác",
-    photo: "Ảnh", tempClosed: "Tạm đóng cửa (Google)",
+    photo: "Ảnh", tempClosed: "Tạm đóng cửa",
     mapTitle: "Mọi nhà hàng gắn sao trên một bản đồ",
     mapText: "Các ghim đi theo bộ lọc của danh sách phía trên: chọn số sao, phong cách ẩm thực hoặc danh sách muốn đến và bản đồ sẽ cập nhật theo. Chạm vào ghim để xem giá và chỉ đường.",
     mapWait: "Bản đồ sẽ tải khi bạn cuộn tới đây.", mapLabel: "Bản đồ nhà hàng gắn sao Michelin",

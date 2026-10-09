@@ -61,7 +61,7 @@
     wishNote: "心愿单只保存在这个浏览器中。",
     wishAdd: "将{name}加入心愿单", wishRemove: "将{name}从心愿单移除", wishAddT: "加入心愿单", wishRemoveT: "从心愿单移除",
     toastAdded: "已将{name}加入心愿单", toastRemoved: "已将{name}从心愿单移除", undo: "撤销",
-    photo: "照片", tempClosed: "暂停营业（Google）",
+    photo: "照片", tempClosed: "暂停营业",
     mapTitle: "所有星级餐厅一图看尽",
     mapText: "地图上的标记会跟随上方列表的筛选条件变化：选择星级、菜系或心愿单，地图就会同步更新。点击标记可查看价格与导航链接。",
     mapWait: "滚动到这里时会加载地图。", mapLabel: "米其林星级餐厅地图",

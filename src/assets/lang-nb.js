@@ -57,7 +57,7 @@
     wishNote: "Ønskelisten din lagres bare i denne nettleseren.",
     wishAdd: "Legg {name} til på ønskelisten", wishRemove: "Fjern {name} fra ønskelisten", wishAddT: "Legg til på ønskelisten", wishRemoveT: "Fjern fra ønskelisten",
     toastAdded: "{name} er lagt til på ønskelisten", toastRemoved: "{name} er fjernet fra ønskelisten", undo: "Angre",
-    photo: "Foto", tempClosed: "Midlertidig stengt (Google)",
+    photo: "Foto", tempClosed: "Midlertidig stengt",
     mapTitle: "Alle stjernerestaurantene på ett kart",
     mapText: "Nålene følger filtrene i listen over, så velg antall stjerner, et kjøkken eller ønskelisten, så følger kartet etter. Trykk på en nål for å se prisen og få veibeskrivelse.",
     mapWait: "Kartet lastes når du ruller hit.", mapLabel: "Kart over restauranter med Michelinstjerner",

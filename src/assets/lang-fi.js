@@ -57,7 +57,7 @@
     wishNote: "Toivelistasi tallennetaan vain tähän selaimeen.",
     wishAdd: "Lisää {name} toivelistalle", wishRemove: "Poista {name} toivelistalta", wishAddT: "Lisää toivelistalle", wishRemoveT: "Poista toivelistalta",
     toastAdded: "{name} lisättiin toivelistalle", toastRemoved: "{name} poistettiin toivelistalta", undo: "Kumoa",
-    photo: "Kuva", tempClosed: "Tilapäisesti suljettu (Google)",
+    photo: "Kuva", tempClosed: "Tilapäisesti suljettu",
     mapTitle: "Kaikki tähtiravintolat yhdellä kartalla",
     mapText: "Kartan nastat seuraavat yllä olevan listan suodattimia: valitse tähtimäärä, keittiö tai toivelistasi, niin kartta päivittyy. Napauta nastaa nähdäksesi hinnan ja reittiohjeet.",
     mapWait: "Kartta latautuu, kun vierität tänne.", mapLabel: "Michelin-tähtiravintoloiden kartta",

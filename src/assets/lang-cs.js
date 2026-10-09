@@ -57,7 +57,7 @@
     wishNote: "Oblíbené se ukládají jen v tomto prohlížeči.",
     wishAdd: "Přidat {name} do oblíbených", wishRemove: "Odebrat {name} z oblíbených", wishAddT: "Přidat do oblíbených", wishRemoveT: "Odebrat z oblíbených",
     toastAdded: "Přidáno do oblíbených: {name}", toastRemoved: "Odebráno z oblíbených: {name}", undo: "Zpět",
-    photo: "Foto", tempClosed: "Dočasně zavřeno (Google)",
+    photo: "Foto", tempClosed: "Dočasně zavřeno",
     mapTitle: "Všechny restaurace s hvězdou na jedné mapě",
     mapText: "Špendlíky se řídí filtry seznamu výše: zvolte počet hvězd, kuchyni nebo oblíbené a mapa se přizpůsobí. Klepnutím na špendlík zobrazíte cenu a navigaci.",
     mapWait: "Mapa se načte, až sem doscrollujete.", mapLabel: "Mapa restaurací s michelinskou hvězdou",

@@ -58,7 +58,7 @@
     wishNote: "Senarai hajat anda hanya disimpan dalam pelayar ini.",
     wishAdd: "Tambah {name} ke senarai hajat", wishRemove: "Buang {name} daripada senarai hajat", wishAddT: "Tambah ke senarai hajat", wishRemoveT: "Buang daripada senarai hajat",
     toastAdded: "{name} ditambah ke senarai hajat anda", toastRemoved: "{name} dibuang daripada senarai hajat anda", undo: "Buat asal",
-    photo: "Foto", tempClosed: "Ditutup sementara (Google)",
+    photo: "Foto", tempClosed: "Ditutup sementara",
     mapTitle: "Setiap restoran berbintang pada satu peta",
     mapText: "Pin mengikut penapis senarai di atas: pilih bilangan bintang, masakan atau senarai hajat anda dan peta akan menyesuaikan diri. Ketik pin untuk melihat harga dan arah.",
     mapWait: "Peta dimuatkan apabila anda menatal ke sini.", mapLabel: "Peta restoran berbintang Michelin",

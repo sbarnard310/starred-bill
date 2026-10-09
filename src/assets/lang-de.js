@@ -63,7 +63,7 @@
     wishNote: "Deine Merkliste wird nur in diesem Browser gespeichert.",
     wishAdd: "{name} auf die Merkliste setzen", wishRemove: "{name} von der Merkliste entfernen", wishAddT: "Auf die Merkliste", wishRemoveT: "Von der Merkliste entfernen",
     toastAdded: "{name} steht jetzt auf deiner Merkliste", toastRemoved: "{name} wurde von deiner Merkliste entfernt", undo: "Rückgängig",
-    photo: "Foto", tempClosed: "Vorübergehend geschlossen (Google)",
+    photo: "Foto", tempClosed: "Vorübergehend geschlossen",
     mapTitle: "Alle Sternerestaurants auf einer Karte",
     mapText: "Die Stecknadeln folgen den Filtern der Liste oben: Wähle eine Sternezahl, eine Küche oder deine Merkliste, und die Karte passt sich an. Tippe auf eine Stecknadel für den Preis und eine Wegbeschreibung.",
     mapWait: "Die Karte lädt, sobald du hierher scrollst.", mapLabel: "Karte der Restaurants mit Michelin-Stern",

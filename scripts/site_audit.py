@@ -296,11 +296,16 @@ def live_checks():
     opener = urllib.request.build_opener(NoRedirect)
     want = {"https://starredbill.com/": 200, "https://www.starredbill.com/": 301, "http://starredbill.com/": 301,
             "https://starredbill.com/this-page-does-not-exist/": 404, "https://starredbill.com/robots.txt": 200,
-            "https://starredbill.com/sitemap.xml": 200, "https://starredbill.com/uk/england/london/": 200}
+            "https://starredbill.com/sitemap.xml": 200, "https://starredbill.com/uk/england/london/": 200,
+            "https://starredbill.com/uk/london/": 301}  # an old address (redirectFrom), forwarded by Cloudflare's _redirects
     problems = []
     for url, code in want.items():
         try:
-            got = opener.open(urllib.request.Request(url, headers={"User-Agent": "starredbill-audit"}), timeout=20).status
+            res = opener.open(urllib.request.Request(url, headers={"User-Agent": "starredbill-audit"}), timeout=20)
+            got = res.status
+            # Cloudflare Pages adds the security headers from _headers (build_cloudflare() in build.py).
+            if url == "https://starredbill.com/" and not res.headers.get("Strict-Transport-Security"):
+                problems.append(f"{url} has no security headers (is _headers being published?)")
         except urllib.error.HTTPError as e:
             got = e.code
         except Exception as e:

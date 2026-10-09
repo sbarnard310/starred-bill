@@ -1,0 +1,15 @@
+{
+  "name": "Simpsons",
+  "city": "birmingham",
+  "area": "Edgbaston",
+  "address": "20 Highfield Road, Edgbaston, Birmingham, B15 3DU",
+  "stars": 0,
+  "cuisine": "Modern British",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed in May 2026 after 32 years; held a star from 1999",
+  "statusDate": "2026-05",
+  "chef": "Luke Tipping",
+  "chefSource": "press"
+}

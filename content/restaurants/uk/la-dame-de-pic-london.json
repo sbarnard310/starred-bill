@@ -4,8 +4,12 @@
   "area": "Tower Hill",
   "stars": 0,
   "cuisine": "Modern French",
+  "change": "down",
+  "changeNote": "Lost its stars",
+  "changeDate": "2026-02",
   "dinnerType": "menu",
   "status": "closed",
   "formerStars": 2,
-  "statusNote": "Closed in February 2025"
+  "statusNote": "Closed in February 2025; removed from the 2026 guide",
+  "statusDate": "2025-02"
 }

@@ -4,8 +4,12 @@
   "area": "Mayfair",
   "stars": 0,
   "cuisine": "Korean",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-02",
   "dinnerType": "menu",
   "status": "closed",
   "formerStars": 1,
-  "statusNote": "Gained a star in February 2025; closed before the 2026 guide"
+  "statusNote": "Gained a star in February 2025; closed in July 2025 and reopened as Somssi by Jihun Kim; removed from the 2026 guide",
+  "statusDate": "2025-07"
 }

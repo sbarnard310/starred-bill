@@ -747,6 +747,10 @@ content:
         label: Status note
         description: What happened, e.g. Lost its star in the 2026 guide.
         type: string
+      - name: statusDate
+        label: When it closed, changed or lost its stars (2026-05)
+        description: The month it happened, which can differ from the guide that dropped it. The closures guide's tables sort and group by it.
+        type: string
       - name: statusNoteZh
         label: Status note in Chinese
         type: string

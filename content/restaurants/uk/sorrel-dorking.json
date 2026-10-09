@@ -1,0 +1,15 @@
+{
+  "name": "Sorrel",
+  "city": "surrey",
+  "area": "Dorking, Surrey",
+  "address": "77 South Street, Dorking, RH4 2JU",
+  "stars": 0,
+  "cuisine": "Modern British",
+  "dinnerType": "menu",
+  "status": "closed",
+  "formerStars": 1,
+  "statusNote": "Closed on 28 July 2026, saying rising costs had made it unsustainable; held a star from 2019",
+  "statusDate": "2026-07",
+  "chef": "Alex Payne",
+  "chefSource": "press"
+}

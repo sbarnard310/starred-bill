@@ -4,8 +4,12 @@
   "area": "Smithfield",
   "stars": 0,
   "cuisine": "French",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-02",
   "dinnerType": "menu",
   "status": "closed",
   "formerStars": 1,
-  "statusNote": "Closed in March 2026"
+  "statusNote": "Removed from the 2026 guide; closed on 28 March 2026 after 28 years",
+  "statusDate": "2026-03"
 }

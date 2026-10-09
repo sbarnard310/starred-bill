@@ -232,6 +232,9 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
             problem(where, f"{field} must be one of {', '.join(PRICE_TYPES)}")
     if r.get("change") and r["change"] not in CHANGES:
         problem(where, f"change must be one of {', '.join(CHANGES)}")
+    for field in ("changeDate", "statusDate"):
+        if r.get(field) and not re.fullmatch(r"\d{4}-\d{2}", r[field]):
+            problem(where, f"{field} must be a year and month, like 2026-05")
     for field in ("dinner", "wine", "lunch", "lunchWine", "rating", "reviews", "lat", "lng"):
         if r.get(field) is not None and not isinstance(r[field], (int, float)):
             problem(where, f"{field} must be a number (no currency sign or quotes)")
@@ -2799,6 +2802,7 @@ def guide_stats():
     stats.update(chef_stats(live))
     stats.update(diet_stats(live))
     stats.update(cheap_stats(live))
+    stats.update(gone_stats())
     return stats
 
 
@@ -2878,6 +2882,88 @@ def list_stats(live, year):
             out[key], out[key + "N"] = places[ranked[i][0]]["name"], str(ranked[i][1])
     gained, lost = three_star_changes(year)
     out["new3"], out["lost3"] = str(len(gained)), str(len(lost))
+    return out
+
+
+# The closures guide (9 Oct 2026, Brief 13): restaurants that closed, changed or lost their stars, by country and year.
+# Two views of the same files: "gone" goes by when it happened (statusDate), "left" by the guide edition that dropped the
+# star (changeDate), since a restaurant can close months before or after the guide catches up.
+def gone_rows(country, year):
+    """No longer starred restaurants in a country that closed, changed or lost their stars in a year, newest first."""
+    rows = [r for r in restaurants if r.get("status") and r["country"] == country and (r.get("statusDate") or "").startswith(year)]
+    return sorted(rows, key=lambda r: (r["statusDate"], r["name"].lower()), reverse=True)
+
+
+def left_rows(country, year):
+    """Restaurants in a country that the year's guide dropped, or that lost a star in it, most stars lost first."""
+    rows = [r for r in restaurants if r["country"] == country and (r.get("changeDate") or "").startswith(year)
+            and (r.get("status") or r.get("change") == "down")]
+    return sorted(rows, key=lambda r: (-r.get("formerStars", r["stars"] + 1), r["name"].lower()))
+
+
+def gone_keys():
+    """(country, year) pairs with any closures or dropped stars on record."""
+    keys = set()
+    for r in restaurants:
+        if r.get("status") and r.get("statusDate"):
+            keys.add((r["country"], r["statusDate"][:4]))
+        if r.get("changeDate") and (r.get("status") or r.get("change") == "down"):
+            keys.add((r["country"], r["changeDate"][:4]))
+    return sorted(keys)
+
+
+def gone_stats():
+    """{{goneN_uk_2026}} (closed, changed or lost their stars that year) and {{goneClosed_uk_2026}}; {{leftN_uk_2026}}
+    (dropped by that year's guide, or lost a star in it), {{leftClosed_uk_2026}} and {{leftOpen_uk_2026}}; and
+    {{sinceN_uk_2026}} / {{sinceClosed_uk_2026}}: gone that year but after the guide, so not yet out of it."""
+    out = {}
+    for country, year in gone_keys():
+        key = f"{country.replace('-', '_')}_{year}"
+        gone, left = gone_rows(country, year), left_rows(country, year)
+        since = [r for r in gone if not (r.get("changeDate") or "").startswith(year)]
+        out.update({f"goneN_{key}": str(len(gone)), f"goneClosed_{key}": str(sum(1 for r in gone if r["status"] == "closed")),
+                    f"leftN_{key}": str(len(left)), f"leftClosed_{key}": str(sum(1 for r in left if r.get("status") == "closed")),
+                    f"leftOpen_{key}": str(sum(1 for r in left if r.get("status") != "closed")),
+                    f"sinceN_{key}": str(len(since)), f"sinceClosed_{key}": str(sum(1 for r in since if r["status"] == "closed"))})
+    return out
+
+
+GONE_NOW = {"closed": "Closed", "lost": "Open, no star", "changed": "Open, changed"}
+
+
+def gone_blocks(name_html, stars_cell, checked):
+    """{{table:gone-uk-2026}} (closed, changed or lost their stars in 2026, newest first) and {{table:left-uk-2026}}
+    (what the 2026 guide dropped), for every country and year on record."""
+    def where(r):
+        return f'<a href="{e(r["cityPath"])}">{e(place_name(r))}</a>'
+
+    def held(r):
+        return stars_cell(r.get("formerStars", r["stars"] + 1))
+
+    def now(r):
+        return e(GONE_NOW[r["status"]]) if r.get("status") else stars_cell(r["stars"])
+
+    def table(heads, rows):
+        head = "".join(f'<th scope="col">{h}</th>' for h in heads)
+        return f'<div class="table-wrap"><table class="guide-table data gone-list"><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>'
+
+    out = {}
+    for country, year in gone_keys():
+        cname = in_sentence(places[country])  # "the UK"
+        gone = "".join(f'<tr><td data-label="Restaurant">{name_html(r)}</td><td data-label="Where">{where(r)}</td>'
+                       f'<td data-label="Stars it held">{held(r)}</td><td data-label="What happened">{e(r.get("statusNote") or "–")}</td>'
+                       f'<td class="num" data-label="When">{e(month_year(r["statusDate"], "en"))}</td></tr>' for r in gone_rows(country, year))
+        if gone:
+            out[f"gone-{country}-{year}"] = table(("Restaurant", "Where", "Stars it held", "What happened", "When"), gone) + (
+                f'<p class="table-note">Starred restaurants in {e(cname)} that closed, changed hands or lost their MICHELIN stars in {e(year)}, newest first, '
+                f'from our restaurant files. Each name opens its entry in the “No longer starred” list on our page for its town. Last checked {e(checked)}.</p>')
+        left = "".join(f'<tr><td data-label="Restaurant">{name_html(r)}</td><td data-label="Where">{where(r)}</td>'
+                       f'<td data-label="Stars before">{held(r)}</td><td data-label="Now">{now(r)}</td>'
+                       f'<td data-label="What happened">{e(r.get("statusNote") or r.get("changeNote") or "–")}</td></tr>' for r in left_rows(country, year))
+        if left:
+            out[f"left-{country}-{year}"] = table(("Restaurant", "Where", "Stars before", "Now", "What happened"), left) + (
+                f'<p class="table-note">Restaurants in {e(cname)} that the {e(year)} MICHELIN Guide left out or gave fewer stars, most stars first. '
+                f'“Now” says whether each is still open. Last checked {e(checked)}.</p>')
     return out
 
 
@@ -3452,6 +3538,7 @@ def guide_blocks(stats):
     blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
     blocks.update(cheap_blocks(live, name_html, stars_cell, checked, year))
     blocks.update(ceremony_blocks())
+    blocks.update(gone_blocks(name_html, stars_cell, checked))
     return blocks
 
 

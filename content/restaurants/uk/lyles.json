@@ -4,8 +4,12 @@
   "area": "Shoreditch",
   "stars": 0,
   "cuisine": "Modern British",
+  "change": "down",
+  "changeNote": "Lost its star",
+  "changeDate": "2026-02",
   "dinnerType": "menu",
   "status": "closed",
   "formerStars": 1,
-  "statusNote": "Closed in May 2025"
+  "statusNote": "Closed in May 2025; removed from the 2026 guide",
+  "statusDate": "2025-05"
 }

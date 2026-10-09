@@ -10,6 +10,13 @@ report can say what changed. A source that isn't set up yet is reported as "not 
     run two to three days behind, so it reports the last 7 days it has, against the 7 before.
   - Google's index: which of the key pages in index-pages.txt (beside config.json) Google has indexed, from
     Search Console's URL Inspection, and which became indexed since the previous day.
+  - The site's whole sitemap: how many of its pages Google has indexed (URL Inspection, a few hundred a day,
+    oldest-checked first, results kept in index-cache.json beside config.json).
+  - The SEO plan's 20 target searches (seo-targets.txt beside config.json): each one's Google position over the
+    latest week, in its main market, and which of our pages ranks for it.
+  - Sites linking to us, from Bing Webmaster Tools (Search Console's Links report has no API). Needs the Bing
+    Webmaster API key in the Keychain as "starredbill-bing".
+  - The SEO plan's four measures against their aims for 31 Jan 2027 (SEO_AIMS), put together from the above.
   - Google Analytics 4 (visitors, sessions, page views, top pages and countries, sign-ups). It only counts
     visitors who accepted the cookie banner.
   - Umami (every visit, no cookies: visitors, page views, top pages, referrers, countries, click events).
@@ -27,6 +34,8 @@ Standard library only, Python 3.9.
 """
 import base64
 import datetime as dt
+import threading
+import xml.etree.ElementTree as ET
 import json
 import os
 import subprocess
@@ -39,6 +48,11 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 CONFIG = Path.home() / "starred-bill-research" / "figures" / "config.json"
+SITE = "https://starredbill.com"
+# The SEO plan's aims for 31 Jan 2027 (https://claude.ai/code/artifact/8ee24d0c-b566-4b4b-bead-f87d25a46122).
+SEO_AIMS = {"by": "2027-01-31", "pages_indexed": 400, "weekly_impressions": 10000, "linking_sites": 20,
+            "targets_on_page_one": 10}
+INDEX_BUDGET = 300   # sitemap pages re-inspected a day, besides the key pages (Google allows 2,000 a day)
 
 
 def http(url, data=None, headers=None, method=None):
@@ -100,15 +114,20 @@ def google_token(cfg, scope):
         return json.loads(r.read())["access_token"]
 
 
-def search_console(cfg):
+def gsc_query(cfg):
+    """Search Console's search figures: the query address, its sign-in header, the latest 7 days it has (it runs
+    a few days behind) and the 7 before."""
     token = google_token(cfg, "https://www.googleapis.com/auth/webmasters.readonly")
     site = urllib.parse.quote(cfg.get("gsc_site", "sc-domain:starredbill.com"), safe="")
     url = f"https://www.googleapis.com/webmasters/v3/sites/{site}/searchAnalytics/query"
-    auth = {"Authorization": f"Bearer {token}"}
-    # Search Console runs a few days behind: report the latest 7 days it has, and the 7 before.
     end = dt.date.today() - dt.timedelta(days=3)
     week = (str(end - dt.timedelta(days=6)), str(end))
     prev = (str(end - dt.timedelta(days=13)), str(end - dt.timedelta(days=7)))
+    return url, {"Authorization": f"Bearer {token}"}, week, prev
+
+
+def search_console(cfg):
+    url, auth, week, prev = gsc_query(cfg)
 
     def totals(rng):
         rows = http(url, {"startDate": rng[0], "endDate": rng[1]}, auth).get("rows", [])
@@ -124,26 +143,58 @@ def search_console(cfg):
             "top_searches": top("query"), "top_pages": top("page")}
 
 
+class Throttle:
+    """Spaces out requests shared between threads: URL Inspection allows 600 a minute."""
+    def __init__(self, per_second):
+        self.gap, self.next, self.lock = 1 / per_second, 0.0, threading.Lock()
+
+    def wait(self):
+        with self.lock:
+            now = time.monotonic()
+            start = max(self.next, now)
+            self.next = start + self.gap
+            delay = start - now
+        if delay > 0:
+            time.sleep(delay)
+
+
+def inspector(cfg):
+    """A function that asks Search Console's URL Inspection whether Google has indexed one of our addresses."""
+    token = google_token(cfg, "https://www.googleapis.com/auth/webmasters.readonly")
+    site = cfg.get("gsc_site", "sc-domain:starredbill.com")
+    auth = {"Authorization": f"Bearer {token}"}
+    throttle = Throttle(8)
+
+    def inspect(path):
+        for attempt in range(3):
+            throttle.wait()
+            try:
+                r = http("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
+                         {"inspectionUrl": SITE + path, "siteUrl": site}, auth)
+                ix = r.get("inspectionResult", {}).get("indexStatusResult", {})
+                return {"coverage": ix.get("coverageState", ""), "indexed": ix.get("verdict") == "PASS",
+                        "last_crawled": ix.get("lastCrawlTime")}
+            except urllib.error.HTTPError as e:
+                if e.code == 429 and attempt < 2:
+                    time.sleep(30)
+                    continue
+                return {"coverage": "check failed", "indexed": None, "error": f"HTTP {e.code}"}
+            except Exception as e:
+                return {"coverage": "check failed", "indexed": None, "error": str(e)[:120]}
+    return inspect
+
+
 def index_status(cfg, prev=None):
     """Whether Google has indexed each page in index-pages.txt (beside config.json, "name|/path/" per line),
     from Search Console's URL Inspection (2,000 a day allowed; about 120 pages take under a minute here).
     With the previous day's file, lists the pages that became indexed since."""
     pages_file = CONFIG.parent / "index-pages.txt"
     pages = [l.strip().split("|", 1) for l in pages_file.read_text().splitlines() if "|" in l and not l.startswith("#")]
-    token = google_token(cfg, "https://www.googleapis.com/auth/webmasters.readonly")
-    site = cfg.get("gsc_site", "sc-domain:starredbill.com")
-    auth = {"Authorization": f"Bearer {token}"}
+    check = inspector(cfg)
 
     def inspect(page):
         name, path = page
-        try:
-            r = http("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
-                     {"inspectionUrl": "https://starredbill.com" + path, "siteUrl": site}, auth)
-            ix = r.get("inspectionResult", {}).get("indexStatusResult", {})
-            return path, {"name": name, "coverage": ix.get("coverageState", ""), "indexed": ix.get("verdict") == "PASS",
-                          "last_crawled": ix.get("lastCrawlTime")}
-        except Exception as e:
-            return path, {"name": name, "coverage": "check failed", "indexed": None, "error": str(e)[:120]}
+        return path, dict(name=name, **check(path))
 
     with ThreadPoolExecutor(max_workers=8) as pool:
         result = dict(pool.map(inspect, pages))
@@ -157,6 +208,138 @@ def index_status(cfg, prev=None):
         counts[v["coverage"]] = counts.get(v["coverage"], 0) + 1
     return {"checked": len(result), "indexed": sum(1 for v in result.values() if v["indexed"]),
             "by_status": counts, "newly_indexed": newly, "dropped_out": dropped, "pages": result}
+
+
+def site_index(cfg, key_pages=None):
+    """How many of the pages in the live sitemap Google has indexed. Checks the pages never checked or checked
+    longest ago, INDEX_BUDGET a day (all of them the first time), and keeps every page's latest answer in
+    index-cache.json beside config.json, so the count covers the whole sitemap within two or three days.
+    Today's key-page results (from index_status) go into the cache without being asked for again."""
+    # Cloudflare turns away Python's own User-Agent (error 1010).
+    req = urllib.request.Request(SITE + "/sitemap.xml", headers={"User-Agent": "Mozilla/5.0 (Macintosh) starredbill-morning-figures"})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        root = ET.fromstring(r.read())
+    ns = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+    paths = [loc.text.strip()[len(SITE):] for loc in root.iter(ns + "loc") if loc.text.strip().startswith(SITE)]
+    cache_file = CONFIG.parent / "index-cache.json"
+    cache = json.loads(cache_file.read_text()) if cache_file.exists() else {}
+    today = str(dt.date.today())
+    for path, v in (key_pages or {}).items():
+        if v.get("indexed") is not None:
+            cache[path] = {"coverage": v["coverage"], "indexed": v["indexed"], "checked": today}
+    due = sorted((p for p in paths if cache.get(p, {}).get("checked") != today),
+                 key=lambda p: cache.get(p, {}).get("checked", ""))
+    if any(p in cache for p in paths):
+        due = due[:int(cfg.get("index_budget", INDEX_BUDGET))]
+    check, failed = inspector(cfg), []
+    # Each answer takes Google a few seconds, so ask 16 at a time (the throttle keeps it under 600 a minute).
+    with ThreadPoolExecutor(max_workers=16) as pool:
+        for path, v in zip(due, pool.map(check, due)):
+            if v["indexed"] is None:
+                failed.append(v.get("error"))
+            else:
+                cache[path] = {"coverage": v["coverage"], "indexed": v["indexed"], "checked": today}
+    cache = {p: cache[p] for p in paths if p in cache}   # forget pages no longer in the sitemap
+    cache_file.write_text(json.dumps(cache, indent=0, sort_keys=True))
+    counts = {}
+    for v in cache.values():
+        counts[v["coverage"]] = counts.get(v["coverage"], 0) + 1
+    return {"sitemap_pages": len(paths), "known": len(cache), "indexed": sum(1 for v in cache.values() if v["indexed"]),
+            "checked_today": sum(1 for v in cache.values() if v["checked"] == today),
+            "oldest_check": min((v["checked"] for v in cache.values()), default=None), "by_status": counts,
+            "checks_failed": len(failed), "failure_reasons": sorted(set(e for e in failed if e))[:5]}
+
+
+def seo_targets(cfg):
+    """The SEO plan's target searches (seo-targets.txt beside config.json: "search|market|/page/" per line,
+    market a 3-letter country code or "all"): each one's average Google position over the latest week in its
+    main market (worldwide if it had no impressions there), and which of our pages Google showed most."""
+    lines = (CONFIG.parent / "seo-targets.txt").read_text().splitlines()
+    targets = [l.strip().split("|") for l in lines if l.strip() and not l.startswith("#")]
+    url, auth, week, _ = gsc_query(cfg)
+    words = [t[0].lower() for t in targets]
+    only = [{"filters": [{"dimension": "query", "operator": "includingRegex",
+                          "expression": "^(" + "|".join(w.replace(" ", "\\s") for w in words) + ")$"}]}]
+
+    def rows(dims):
+        body = {"startDate": week[0], "endDate": week[1], "dimensions": dims, "rowLimit": 25000,
+                "dimensionFilterGroups": only}
+        return http(url, body, auth).get("rows", [])
+
+    world = {r["keys"][0]: r for r in rows(["query"])}
+    by_country = {(r["keys"][0], r["keys"][1]): r for r in rows(["query", "country"])}
+    pages = {}
+    for r in rows(["query", "page"]):
+        q, page = r["keys"]
+        if r["impressions"] > pages.get(q, {}).get("impressions", 0):
+            pages[q] = {"impressions": r["impressions"], "page": page.replace(SITE, "") or "/"}
+    out = []
+    for search, market, page in targets:
+        q = search.lower()
+        r, where = (by_country.get((q, market)), market) if market != "all" else (None, "all")
+        if not r:
+            r, where = world.get(q), "all"
+        pos = round(r["position"], 1) if r else None
+        out.append({"search": search, "market": market, "page": page, "position": pos, "measured_in": where if r else None,
+                    "impressions": r["impressions"] if r else 0, "clicks": r["clicks"] if r else 0,
+                    "page_one": bool(pos and pos <= 10), "ranking_page": pages.get(q, {}).get("page")})
+    return {"period": f"{week[0]} to {week[1]}", "targets": len(out), "showing": sum(1 for t in out if t["position"]),
+            "on_page_one": sum(1 for t in out if t["page_one"]), "searches": out}
+
+
+def bing_links(cfg, prev=None):
+    """Sites linking to us, from Bing Webmaster Tools: every page of ours Bing knows links to, then the
+    addresses linking to each, counted by site. Search Console's Links report has no API, so Bing stands in;
+    its counts are usually close. Needs the API key (Bing Webmaster › Settings › API access) in the Keychain
+    as "starredbill-bing"."""
+    key = keychain("starredbill-bing")
+    site = cfg.get("bing_site", SITE + "/")
+    base = "https://ssl.bing.com/webmaster/api.svc/pox/"
+    ns = "{http://schemas.datacontract.org/2004/07/Microsoft.Bing.Webmaster.Api}"
+
+    def call(method, **q):
+        q.update(siteUrl=site, apikey=key)
+        req = urllib.request.Request(f"{base}{method}?{urllib.parse.urlencode(q)}", headers={"Accept": "application/xml"})
+        with urllib.request.urlopen(req, timeout=40) as r:
+            return ET.fromstring(r.read())
+
+    def paged(method, item, field, **q):
+        found, page, total = [], 0, 1
+        while page < min(total, 20):
+            root = call(method, page=page, **q)
+            found += [(e.findtext(ns + field) or "") for e in root.iter(ns + item)]
+            total = int(root.findtext(ns + "TotalPages") or 0)
+            page += 1
+        return found
+
+    ours = paged("GetLinkCounts", "LinkCount", "Url")
+    sites = {}
+    for target in ours:
+        for source in paged("GetUrlLinks", "LinkDetail", "Url", link=target):
+            host = urllib.parse.urlparse(source).hostname or ""
+            host = host[4:] if host.startswith("www.") else host
+            if host and not host.endswith(("starredbill.com", "starred-bill.pages.dev", "sbarnard310.github.io")):
+                sites.setdefault(host, set()).add(target.replace(SITE, "") or "/")
+    before = []
+    if prev and Path(prev).exists():
+        before = json.loads(Path(prev).read_text()).get("sources", {}).get("links", {}).get("sites", [])
+    return {"linking_sites": len(sites), "pages_linked_to": len(ours),
+            "sites": sorted(sites), "new_sites": sorted(set(sites) - set(before)) if before else [],
+            "by_site": {h: sorted(p) for h, p in sorted(sites.items())}}
+
+
+def seo_measures(sources):
+    """The SEO plan's four measures, today's figure against the aim for SEO_AIMS["by"] (None where its source
+    isn't working yet)."""
+    def ok(name):
+        src = sources.get(name, {})
+        return src if src.get("status") == "ok" else {}
+
+    now = {"pages_indexed": ok("site_index").get("indexed"),
+           "weekly_impressions": ok("search_console").get("this_week", {}).get("impressions"),
+           "linking_sites": ok("links").get("linking_sites"),
+           "targets_on_page_one": ok("targets").get("on_page_one")}
+    return {k: {"now": v, "aim": SEO_AIMS[k]} for k, v in now.items()} | {"aim_date": SEO_AIMS["by"]}
 
 
 def analytics(cfg):
@@ -232,8 +415,13 @@ def main(out, prev=None):
     for name, fn, needs in (("search_console", search_console, ["google sign-in"]),
                             ("analytics", analytics, ["google sign-in", "ga4_property"]),
                             ("index", lambda c: index_status(c, prev), ["google sign-in", "index-pages.txt"]),
+                            ("site_index", lambda c: site_index(c, result["sources"].get("index", {}).get("pages")),
+                             ["google sign-in"]),
+                            ("targets", seo_targets, ["google sign-in", "seo-targets.txt"]),
+                            ("links", lambda c: bing_links(c, prev), ["Bing API key"]),
                             ("umami", umami, [])):
         missing = [k for k in needs if not (google_ready(cfg) if k == "google sign-in" else
+                                            keychain("starredbill-bing") if k == "Bing API key" else
                                             (CONFIG.parent / k).exists() if k.endswith(".txt") else cfg.get(k))]
         if missing:
             result["sources"][name] = {"status": "not set up", "missing": missing}
@@ -244,6 +432,7 @@ def main(out, prev=None):
             result["sources"][name] = {"status": "error", "error": f"HTTP {e.code}: {e.read().decode()[:300]}"}
         except Exception as e:
             result["sources"][name] = {"status": "error", "error": str(e)[:300]}
+    result["seo_measures"] = seo_measures(result["sources"])
     if prev and Path(prev).exists():
         result["previous_file"] = prev
     Path(out).parent.mkdir(parents=True, exist_ok=True)

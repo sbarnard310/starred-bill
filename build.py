@@ -2885,6 +2885,7 @@ def guide_stats():
     stats.update(diet_stats(live))
     stats.update(veg_stats(live))
     stats.update(cheap_stats(live))
+    stats.update(cost_stats(live))
     stats.update(gone_stats())
     return stats
 
@@ -3766,6 +3767,7 @@ def guide_blocks(stats):
     blocks.update(veg_blocks(live, name_html, stars_cell, price_cell, note))
     blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
     blocks.update(cheap_blocks(live, name_html, stars_cell, checked, year))
+    blocks.update(cost_blocks(live, name_html, stars_cell, checked, year))
     blocks.update(ceremony_blocks())
     blocks.update(gone_blocks(name_html, stars_cell, checked))
     return blocks
@@ -3932,6 +3934,236 @@ def cheap_blocks(live, name_html, stars_cell, checked, year):
     blocks["cheapest-lunch"] = (f'<div class="table-wrap"><table class="guide-table data"><thead><tr>{heads}</tr></thead><tbody>{rows}</tbody></table></div>'
                                 f'<p class="table-note">Starred restaurants that list both a set lunch and a set dinner menu on The Starred Bill. Typical means the '
                                 f'median; the saving is the median among those where lunch costs less. Prices in US dollars at recent exchange rates, per person before service and drinks. Last checked {e(checked)}.</p>')
+    return blocks
+
+
+# What a starred meal costs (9 Oct 2026, the guide "How Much Does a Michelin Star Restaurant Cost?", to-do item
+# guide-how-much-cost): typical (median) dinner, lunch and wine pairing by star level and by country, the whole bill with
+# each country's usual service, tax or tip (SERVICE, from common.js), the world's dearest dinner menus and worked examples.
+# Only set menus count (no à la carte prices or mainland China's typical spends), as in guide_stats().
+COST_EXAMPLES = ("le-bernardin", "core-by-clare-smyth", "alleno-paris-au-pavillon-ledoyen", "geranium", "ryugin", "caprice", "sorn")
+COST_TOP = 10           # rows in {{table:cost-top}}, the dearest dinner menus
+COST_COUNTRY_MIN = 20   # dinner menus a country needs to be called the dearest or cheapest in the text ({{costDearCountry}})
+COST_FEW = 3            # a median from fewer menus than this shows how many it's from
+COST_CITIES = ("paris", "london", "new-york", "tokyo", "hong-kong", "singapore", "copenhagen")  # {{costDinner_paris}}…
+# What's added to the menu price under each of SERVICE's rules: a short label for {{table:cost-countries}}, then a heading and a
+# sentence for {{table:cost-service}}. A rule without words here is listed by the build.
+COST_SERVICE = {
+    ("included", 0): ("Service included", "Nothing: service is in the price", "Service is included in the menu price. A tip isn’t expected, though rounding up for good service is welcome."),
+    ("tax", 0): ("Tax included", "Nothing: tax is in the price", "Menu prices include the 10% consumption tax. A few restaurants add a 10–15% service charge, and tipping isn’t done."),
+    ("before", 10): ("10% service", "A 10% service charge", "A 10% service charge is added to the bill."),
+    ("before", 12.5): ("12.5% service", "A 12.5% service charge", "A discretionary 12.5% service charge is added to the bill. It is the tip, so nothing more is expected."),
+    ("before", 15): ("10–15% service", "A 10–15% service charge", "Upscale restaurants add a service charge of 10–15%."),
+    ("plusplus", 19.9): ("++: 19.9%", "“++”: 10% service, then 9% GST", "Prices are quoted “++”: a 10% service charge, then 9% GST on the total."),
+    ("plusplus", 17.7): ("++: 17.7%", "“++”: 10% service, then 7% VAT", "Prices are quoted “++”: a 10% service charge, then 7% VAT on the total."),
+    ("plusplus", 16.6): ("++: 16.6%", "“++”: 10% service, then 6% tax", "Prices are quoted “++”: a 10% service charge, then 6% service tax."),
+    ("plusplus", 13.4): ("++: 13.4%", "“++”: service, then 8% VAT", "Prices are often quoted “++”: a service charge (often 5%), then 8% VAT."),
+    ("taxtip", 29): ("Tax and tip", "Sales tax and a tip", "Sales tax (about 9%, depending on the city) is added, and a tip of about 20% is expected unless service is included."),
+    ("taxtip", 30): ("Tax and tip", "Sales tax and a tip", "Sales tax (5–15%, depending on the province) is added, and a tip of 18–20% is expected."),
+    ("tip", 10): ("Tip, about 10%", "A tip of about 10%", "Service isn’t added to the bill; a tip of about 10% is customary."),
+    ("tip", 12.5): ("Tip, 10–15%", "A tip of 10–15%", "Service isn’t added to the bill; a tip of 10–15% is customary."),
+}
+
+
+def typical(values):
+    """The median, as the guides use it (for an even count, the higher of the middle two)."""
+    v = sorted(values)
+    return v[len(v) // 2] if v else None
+
+
+def service_share(country):
+    """The share usually added on top of a menu price in a country (0.125 for 12.5%), from SERVICE in common.js."""
+    return SERVICE.get(country, ("before", 0))[1] / 100
+
+
+def full_bill(r):
+    """A restaurant's dinner menu and wine pairing with its country's usual service, tax or tip, in its own currency, or None."""
+    if not is_menu(r, "dinner") or r.get("wine") is None:
+        return None
+    return (r["dinner"] + r["wine"]) * (1 + service_share(r["country"]))
+
+
+def cost_stats(live):
+    """Figures for the cost guide: {{costMenus}} (starred restaurants with a dinner menu price) in {{costCountries}} countries,
+    {{costTotal1}} (the typical dinner with wine, service and tax) and {{costTwo1}} (for two) per star level, {{costOver300}},
+    {{costUnder100_1}}, the cheapest and dearest dinner menu at three stars ({{costCheap3Name}}, {{costDear3Price}}…) and
+    anywhere ({{costTopName}}…), the dearest and cheapest countries ({{costDearCountry}}, {{costCheapCountry}}), each
+    country's and COST_CITIES' typical dinner ({{costDinner_france}}, {{costDinner1_usa}}) and the US tip on it ({{costTip1_usa}})."""
+    out = {}
+    menus = [r for r in live if is_menu(r, "dinner")]
+    out["costMenus"] = f"{len(menus):,}"
+    out["costCountries"] = str(len({r["country"] for r in menus}))
+    out["costOver300"] = f"{sum(1 for r in menus if to_usd(r, 'dinner') > 300):,}"
+    out["costShareOver300"] = f"{round(100 * sum(1 for r in menus if to_usd(r, 'dinner') > 300) / max(1, len(menus)))}%"
+    for s in (1, 2, 3):
+        at = [r for r in live if r["stars"] == s]
+        bills = [full_bill(r) / CURRENCIES[r["cur"]]["perUSD"] for r in at if full_bill(r) is not None]
+        out[f"costTotal{s}"] = usd_text(typical(bills))
+        out[f"costTwo{s}"] = usd_text(2 * typical(bills), 10) if bills else "–"
+        out[f"costUnder100_{s}"] = f"{sum(1 for r in at if is_menu(r, 'dinner') and to_usd(r, 'dinner') <= 100):,}"
+        ratios = [r["wine"] / r["dinner"] for r in at if is_menu(r, "dinner") and r.get("wine") is not None]
+        out[f"costWineShare{s}"] = f"{round(100 * typical(ratios))}%" if ratios else "–"
+
+    def put(key, r):
+        out.update({f"{key}Name": r["name"], f"{key}Price": priced_text(r, "dinner"),
+                    f"{key}Place": f'{place_name(r)}, {places[r["country"]]["name"]}' if place_name(r) != places[r["country"]]["name"] else place_name(r)})
+    by_price = sorted(menus, key=lambda r: (to_usd(r, "dinner"), r["name"].lower()))
+    three = [r for r in by_price if r["stars"] == 3]
+    put("costCheap3", three[0])
+    put("costDear3", three[-1])
+    top = sorted(menus, key=lambda r: (-to_usd(r, "dinner"), r["name"].lower()))[:COST_TOP]
+    put("costTop", top[0])
+    out["costTopStars"] = STAR_WORDS[top[0]["stars"]]
+    out["costTop3Count"] = n_word(sum(1 for r in top if r["stars"] == 3), "en")
+    countries = {}
+    for r in menus:
+        countries.setdefault(r["country"], []).append(to_usd(r, "dinner"))
+    for c, v in countries.items():
+        out[f"costDinner_{c.replace('-', '_')}"] = usd_text(typical(v))
+        for s in (1, 2, 3):
+            at = [to_usd(r, "dinner") for r in menus if r["country"] == c and r["stars"] == s]
+            if at:
+                out[f"costDinner{s}_{c.replace('-', '_')}"] = usd_text(typical(at))
+                if SERVICE.get(c, ("",))[0] == "taxtip":
+                    out[f"costTip{s}_{c.replace('-', '_')}"] = usd_text(0.2 * typical(at))
+    big = sorted((typical(v), c) for c, v in countries.items() if len(v) >= COST_COUNTRY_MIN)
+    out["costDearCountry"], out["costDearCountryPrice"] = places[big[-1][1]]["name"], usd_text(big[-1][0])
+    out["costCheapCountry"], out["costCheapCountryPrice"] = places[big[0][1]]["name"], usd_text(big[0][0])
+    out["costCheapCountries"] = and_plain([places[c]["name"] for _, c in big[:3]], {"and": " and "})
+    out["costBigCountries"] = str(len(big))
+    for pid in COST_CITIES:
+        v = [to_usd(r, "dinner") for r in menus if pid in r["_chain"]]
+        if v:
+            out[f"costDinner_{pid.replace('-', '_')}"] = usd_text(typical(v))
+    return out
+
+
+def cost_town(r):
+    """Where a restaurant is, for the cost guide's tables: its town, or the city-state itself (Hong Kong, not Central)."""
+    return places[r["country"]]["name"] if r["cityType"] == "country" else place_name(r)
+
+
+def priced_text(r, f):
+    """"€620 (about $700)": a price in its own currency, with US dollars after it unless it's in dollars already."""
+    return money(r[f], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(to_usd(r, f))})")
+
+
+def cost_blocks(live, name_html, stars_cell, checked, year):
+    """{{table:cost-stars}} (typical prices by star level), {{table:cost-countries}} (by country, sortable),
+    {{table:cost-service}} (what each country adds to the bill), {{table:cost-examples}} (a three-star dinner with wine,
+    whole bill, in COST_EXAMPLES' cities) and {{table:cost-top}} (the dearest dinner menus)."""
+    blocks = {}
+    menus = [r for r in live if is_menu(r, "dinner")]
+    usd_cell = lambda v: usd_text(v) if v is not None else "–"
+    wrap = lambda heads, body, cls="guide-table data", extra="": (
+        f'<div class="table-wrap"><table class="{cls}"{extra}><thead><tr>'
+        + "".join(f'<th scope="col">{h}</th>' for h in heads) + f"</tr></thead><tbody>{body}</tbody></table></div>")
+    note = lambda text: f'<p class="table-note">{text} Last checked {e(checked)}.</p>'
+
+    rows = ""
+    for s in (1, 2, 3):
+        at = [r for r in live if r["stars"] == s]
+        dinners = sorted(to_usd(r, "dinner") for r in at if is_menu(r, "dinner"))
+        lunches = [to_usd(r, "lunch") for r in at if is_menu(r, "lunch")]
+        wines = [to_usd(r, "wine") for r in at if r.get("wine") is not None]
+        bills = [full_bill(r) / CURRENCIES[r["cur"]]["perUSD"] for r in at if full_bill(r) is not None]
+        middle = f'{usd_text(dinners[len(dinners) // 4])}–{usd_text(dinners[3 * len(dinners) // 4])}' if dinners else ""
+        rows += (f'<tr><td data-label="Stars">{stars_cell(s)}</td><td class="num" data-label="Restaurants">{len(at):,}</td>'
+                 f'<td class="num" data-label="Dinner menu"><strong>{usd_cell(typical(dinners))}</strong>'
+                 + (f'<br><span class="muted">most {middle}</span>' if middle else "") + "</td>"
+                 f'<td class="num" data-label="Set lunch">{usd_cell(typical(lunches))}</td>'
+                 f'<td class="num" data-label="Wine pairing">{usd_cell(typical(wines))}</td>'
+                 f'<td class="num" data-label="Dinner, wine, service and tax"><strong>{usd_cell(typical(bills))}</strong></td></tr>')
+    blocks["cost-stars"] = wrap(("Stars", "Restaurants", "Dinner menu", "Set lunch", "Wine pairing", "Dinner, wine, service and tax"), rows) + note(
+        f"Typical means the median, per person in US dollars at recent exchange rates, from the published prices of {len(menus):,} starred "
+        "restaurants on The Starred Bill; “most” covers the middle half. Dinner and lunch are set menus, before drinks and service. "
+        "The last column adds each restaurant’s dinner menu and wine pairing, then the service, tax or tip usually added in its country, "
+        f"for the restaurants that list both. Stars from the current MICHELIN Guide editions ({e(year)} or the latest before it).")
+
+    countries = sorted({r["country"] for r in menus}, key=lambda c: places[c]["name"])
+    rows = ""
+    most_first = lambda c: -sum(1 for r in menus if r["country"] == c)
+    for c in sorted(countries, key=most_first):
+        at = [r for r in menus if r["country"] == c]
+        allv = [to_usd(r, "dinner") for r in at]
+        cells = ""
+        for s in (1, 2, 3):
+            v = [to_usd(r, "dinner") for r in at if r["stars"] == s]
+            few = f'<br><span class="muted">{len(v)} menu{"s" if len(v) > 1 else ""}</span>' if 0 < len(v) < COST_FEW else ""
+            cells += (f'<td class="num" data-label="{("One", "Two", "Three")[s - 1]} star{"s" if s > 1 else ""}" data-sort="{round(typical(v)) if v else -1}">'
+                      f'{usd_cell(typical(v))}{few}</td>')
+        kind, pct = SERVICE.get(c, ("before", 0))
+        added = COST_SERVICE.get((kind, pct), ("–",))[0]  # its short label
+        rows += (f'<tr><td data-label="Country" data-sort="{e(places[c]["name"])}"><a href="{e(places[c]["path"])}">{e(places[c]["name"])}</a></td>'
+                 f'<td class="num" data-label="Menus priced" data-sort="{len(at)}">{len(at):,}</td>'
+                 f'<td class="num" data-label="Typical dinner menu" data-sort="{round(typical(allv))}"><strong>{usd_cell(typical(allv))}</strong></td>'
+                 f'{cells}<td data-label="On top" data-sort="{pct}">{e(added)}</td></tr>')
+    sorted_on = ' aria-sort="descending"'
+    heads = "".join(f'<th scope="col"{sorted_on if h == "Menus priced" else ""}>{h}</th>'
+                    for h in ("Country", "Menus priced", "Typical dinner menu", "One star", "Two stars", "Three stars", "On top"))
+    blocks["cost-countries"] = (f'<div class="table-wrap"><table class="guide-table data" data-sortable><thead><tr>{heads}</tr></thead>'
+                                f'<tbody>{rows}</tbody></table></div>') + note(
+        "The median dinner menu per person in US dollars at recent exchange rates, before drinks, from the starred restaurants on The Starred Bill "
+        f"that publish one; where a median comes from fewer than {COST_FEW} menus, the number is shown. Mainland China’s figures leave out the "
+        "typical spends that most of its restaurants are listed with. “On top” is what is usually added to the menu price there. "
+        "Tap a column heading to sort.")
+
+    groups = {}
+    for c in countries:
+        groups.setdefault(SERVICE.get(c, ("before", 0)), []).append(c)
+    rows = ""
+    for rule, cs in sorted(groups.items(), key=lambda x: (x[0][1], -len(x[1]))):
+        if rule not in COST_SERVICE:
+            print(f"  Cost guide: no words for the service rule {rule} ({', '.join(cs)}); add it to COST_SERVICE in build.py")
+            continue
+        _, label, text = COST_SERVICE[rule]
+        names = ", ".join(f'<a href="{e(places[c]["path"])}">{e(places[c]["name"])}</a>' for c in cs)
+        adds = "Nothing" if rule[1] == 0 else f"About {rule[1]:g}%"
+        rows += (f'<tr><td data-label="On top of the menu price"><strong>{e(label)}</strong><br><span class="muted">{e(text)}</span></td>'
+                 f'<td class="num" data-label="Typically adds">{adds}</td><td data-label="Where">{names}</td></tr>')
+    blocks["cost-service"] = wrap(("On top of the menu price", "Typically adds", "Where"), rows) + note(
+        "What is usually added to a starred restaurant’s menu price in each country we cover, as our till receipts add it; "
+        "“typically adds” is the share of the menu price. Tax rates and service charges vary from one restaurant and city to the next, "
+        "so check the bill.")
+
+    by_id = {r["id"]: r for r in live}
+    rows = ""
+    for rid in COST_EXAMPLES:
+        r = by_id.get(rid)
+        if not r or full_bill(r) is None:
+            print(f"  Cost guide: {rid} in COST_EXAMPLES has no dinner menu and wine pairing price (or no stars); choose another")
+            continue
+        kind, pct = SERVICE.get(r["country"], ("before", 0))
+        extra = (r["dinner"] + r["wine"]) * pct / 100
+        total = full_bill(r)
+        step = 1 if total < 1000 else 10 if total < 100000 else 100
+        rnd = lambda n: int(round(n / step) * step)
+        rows += (f'<tr><td data-label="Restaurant">{name_html(r)}<br><span class="muted">{e(cost_town(r))}</span></td>'
+                 f'<td data-label="Stars">{stars_cell(r["stars"])}</td>'
+                 f'<td class="num" data-label="Dinner menu">{money(r["dinner"], r["cur"])}</td>'
+                 f'<td class="num" data-label="Wine pairing">{money(r["wine"], r["cur"])}</td>'
+                 f'<td class="num" data-label="Service, tax or tip">{money(rnd(extra), r["cur"]) if extra else "Included"}</td>'
+                 f'<td class="num" data-label="Per person"><strong>{money(rnd(total), r["cur"])}</strong>'
+                 + ("" if r["cur"] == "USD" else f'<br><span class="muted">about {usd_text(total / CURRENCIES[r["cur"]]["perUSD"])}</span>') + "</td>"
+                 f'<td class="num" data-label="For two">{money(rnd(2 * total), r["cur"])}'
+                 + ("" if r["cur"] == "USD" else f'<br><span class="muted">about {usd_text(2 * total / CURRENCIES[r["cur"]]["perUSD"], 10)}</span>') + "</td></tr>")
+    blocks["cost-examples"] = wrap(("Restaurant", "Stars", "Dinner menu", "Wine pairing", "Service, tax or tip", "Per person", "For two"), rows) + note(
+        "Each restaurant’s main dinner menu and wine pairing per person, in local currency, plus the service, tax or tip usually added in its "
+        "country (the table above), rounded. Water, coffee and supplements are extra. Names open each restaurant’s prices on The Starred Bill, "
+        "and arrows its MICHELIN Guide page.")
+
+    top = sorted(menus, key=lambda r: (-to_usd(r, "dinner"), r["name"].lower()))[:COST_TOP]
+    rows = "".join(
+        f'<tr><td data-label="Restaurant"><span class="rank">{i + 1}</span> {name_html(r)}</td><td data-label="Stars">{stars_cell(r["stars"])}</td>'
+        f'<td data-label="Where"><a href="{e(r["cityPath"])}">{e(cost_town(r))}</a>'
+        + (f'<br><span class="muted">{e(places[r["country"]]["name"])}</span>' if cost_town(r) != places[r["country"]]["name"] else "") + "</td>"
+        f'<td data-label="Menu">{e((r.get("dinnerNote") or "Tasting menu").split(" (")[0])}</td>'
+        f'<td class="num" data-label="Per person">{money(r["dinner"], r["cur"])}'
+        + ("" if r["cur"] == "USD" else f'<br><span class="muted">about {usd_text(to_usd(r, "dinner"))}</span>') + "</td></tr>"
+        for i, r in enumerate(top))
+    blocks["cost-top"] = wrap(("Restaurant", "Stars", "Where", "Menu", "Per person"), rows, "guide-table data rank-list") + note(
+        "The most expensive dinner menus we list, per person in local currency before drinks and service, ranked by their value in US dollars "
+        "at recent exchange rates. Where a restaurant has several menus, this is its main or longest one.")
     return blocks
 
 
@@ -4122,7 +4354,7 @@ def guide_text(text, stats, blocks=None):
 # The order of the Guides page for guides published the same day: the pillar first, then as the content briefs number them.
 GUIDE_ORDER = ("what-is-a-michelin-star", "how-restaurants-get-a-michelin-star", "michelin-stars-by-country", "green-michelin-star",
                "bib-gourmand-vs-michelin-star", "three-michelin-star-restaurants", "three-michelin-star-restaurants-london",
-               "three-michelin-star-restaurants-uk")
+               "three-michelin-star-restaurants-uk", "how-much-does-a-michelin-star-restaurant-cost")
 
 
 # The Guides page leads with this one (also linked from every footer), then the rest under their sections.

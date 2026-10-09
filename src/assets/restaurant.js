@@ -19,8 +19,58 @@ $("rpWish").addEventListener("click", () => {
 window.addEventListener("sb:wishlist", renderWish);
 renderWish();
 
-// ---------- Photo ----------
-// The first Google Maps photo of the restaurant, with its credit, beside the receipt on computers and above it on phones.
+// ---------- Photos ----------
+// The first Google Maps photo of the restaurant sits beside the receipt. Google has up to 10; "More photos" shows up to
+// GALLERY_MAX more as thumbnails, only once tapped (each photo shown is a paid request to Google, and Google's terms
+// don't allow keeping copies, so they load live). Any photo opens full size, with arrows to the others and its credit.
+const GALLERY_MAX = 6;
+let photos = [];
+const credit = (p) => {
+  const a = (p.authorAttributions || [])[0];
+  return (a ? (a.uri ? '<a href="' + esc(a.uri) + '" target="_blank" rel="noopener">' + esc(a.displayName) + "</a>" : esc(a.displayName)) + " · " : "") + "Google Maps";
+};
+let shown = 0;
+function openPhoto(i) {
+  const last = Math.min(photos.length, GALLERY_MAX + 1) - 1;
+  shown = (i + last + 1) % (last + 1);
+  const p = photos[shown];
+  $("photoImg").src = p.getURI({ maxWidth: 1600, maxHeight: 1200 });
+  $("photoImg").alt = "Photo " + (shown + 1) + " of " + R.name;
+  $("photoCaption").innerHTML = "<strong>" + esc(R.name) + "</strong> · Photo " + (shown + 1) + " of " + (last + 1) + " · " + credit(p);
+  $("photoPrev").hidden = $("photoNext").hidden = last < 1;
+  if (!$("photoBox").open) $("photoBox").showModal();
+}
+$("photoBox").addEventListener("click", (e) => {
+  if (e.target === $("photoBox") || e.target.closest("#photoClose")) $("photoBox").close();
+  else if (e.target.closest("#photoPrev")) openPhoto(shown - 1);
+  else if (e.target.closest("#photoNext")) openPhoto(shown + 1);
+});
+$("photoBox").addEventListener("keydown", (e) => {
+  if (e.key === "ArrowLeft") openPhoto(shown - 1);
+  if (e.key === "ArrowRight") openPhoto(shown + 1);
+});
+$("photoBox").addEventListener("close", () => { $("photoImg").removeAttribute("src"); });
+
+function showGallery(fig, btn) {
+  const strip = document.createElement("div");
+  strip.className = "rp-gallery";
+  photos.slice(1, GALLERY_MAX + 1).forEach((p, k) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.setAttribute("aria-label", "Open photo " + (k + 2) + " of " + R.name);
+    const img = new Image();
+    img.alt = "";
+    img.decoding = "async";
+    img.src = p.getURI({ maxWidth: 400, maxHeight: 400 });
+    img.onload = () => b.classList.add("loaded");
+    b.appendChild(img);
+    b.addEventListener("click", () => openPhoto(k + 1));
+    strip.appendChild(b);
+  });
+  btn.replaceWith(strip);
+  track("photos", { restaurant: R.id });
+}
+
 async function showPhoto() {
   if (!GOOGLE_MAPS_API_KEY || !R.placeId) return;
   try {
@@ -28,19 +78,32 @@ async function showPhoto() {
     const { Place } = await google.maps.importLibrary("places");
     const place = new Place({ id: R.placeId });
     await place.fetchFields({ fields: ["photos"] });
-    const photo = place.photos && place.photos[0];
-    if (!photo) return;
-    const author = (photo.authorAttributions || [])[0];
+    photos = place.photos || [];
+    if (!photos.length) return;
     const fig = document.createElement("figure");
     fig.className = "rp-photo";
+    const open = document.createElement("button");
+    open.type = "button";
+    open.className = "rp-photo-open";
+    open.setAttribute("aria-label", "Open the photo of " + R.name + " full size");
     const img = new Image();
     img.alt = "Inside or outside " + R.name;
     img.decoding = "async";
-    img.src = photo.getURI({ maxWidth: 900, maxHeight: 700 });
+    img.src = photos[0].getURI({ maxWidth: 900, maxHeight: 700 });
     img.onload = () => fig.classList.add("loaded");
-    fig.appendChild(img);
+    open.appendChild(img);
+    open.addEventListener("click", () => openPhoto(0));
+    fig.appendChild(open);
     const cap = document.createElement("figcaption");
-    cap.innerHTML = "Photo: " + (author ? (author.uri ? '<a href="' + esc(author.uri) + '" target="_blank" rel="noopener">' + esc(author.displayName) + "</a>" : esc(author.displayName)) + " · " : "") + "Google Maps";
+    cap.innerHTML = "<span>Photo: " + credit(photos[0]) + "</span>";
+    if (photos.length > 1) {
+      const more = document.createElement("button");
+      more.type = "button";
+      more.className = "rp-more-photos";
+      more.textContent = "More photos (" + Math.min(photos.length - 1, GALLERY_MAX) + ")";
+      more.addEventListener("click", () => showGallery(fig, more));
+      cap.appendChild(more);
+    }
     fig.appendChild(cap);
     document.querySelector(".rp-side").prepend(fig);
   } catch (e) { /* no photo: the receipt stands alone */ }

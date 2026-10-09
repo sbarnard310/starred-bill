@@ -1620,3 +1620,18 @@ button.near-card:hover { border-color: var(--green); }
 .rp-steps a { color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
 .rp-steps .rp-cta { display: inline-block; margin: 4px 8px 4px 0; padding: 7px 14px; border-radius: 999px; background: var(--green); color: var(--surface); text-decoration: none; }
 .rp-steps .rp-cta:hover { filter: brightness(1.1); }
+/* Restaurant pages: the photo opens full size; "More photos" swaps in a strip of thumbnails (loaded only when tapped),
+   and the viewer has arrows between them. */
+.rp-photo-open { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: var(--radius); }
+.rp-photo figcaption { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.rp-more-photos { padding: 4px 12px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--band-ink) 30%, transparent); background: none; color: var(--band-ink); font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer; }
+.rp-more-photos:hover { background: color-mix(in srgb, var(--band-ink) 10%, transparent); }
+.rp-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; width: 100%; margin-top: 4px; }
+.rp-gallery button { padding: 0; border: 0; border-radius: 6px; overflow: hidden; aspect-ratio: 4 / 3; background: color-mix(in srgb, var(--band-ink) 10%, transparent); cursor: zoom-in; }
+.rp-gallery img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s; }
+.rp-gallery button.loaded img { opacity: 1; }
+.lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, .9); color: #12261C; font-size: 1.8rem; line-height: 1; cursor: pointer; box-shadow: 0 4px 14px rgba(0, 0, 0, .3); }
+.lightbox-nav.prev { left: 8px; }
+.lightbox-nav.next { right: 8px; }
+.lightbox-nav[hidden] { display: none; }
+.rp-gallery { flex-basis: 100%; }

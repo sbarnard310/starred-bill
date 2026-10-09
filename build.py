@@ -746,9 +746,10 @@ def build_place(p):
             + (f" · {'dinner ' if lang == 'en' else ''}{money(r['dinner'], r['cur'])}" if r.get("dinner") is not None else "") + "</li>"
             for r in sorted(starred, key=lambda r: (-r["stars"], r["name"]))) + "</ol>"
         version = dict(data, lang=lang, langPaths=lang_paths) if len(langs) > 1 else data
-        faq = destination_faq(p, page, starred, lang)
+        quick = quick_answers(p, page, starred, lang)
+        faq = destination_faq(p, page, starred, lang, quick=bool(quick))
         pilot = p["id"] in SEO_PILOT
-        answer = quick_answer(p, page, starred, lang) if lang in QA_LANGS else ""
+        answer = short_answer(p, page, starred, lang) if lang in QA_LANGS else ""
         write(lang_paths[lang], (pilot_headings if pilot else lambda h, *a: h)(section_words(render("place.html", {
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
             "title": e(titles[lang]), "description": e(texts["description"]), "canonical": SITE_URL + lang_paths[lang],
@@ -761,7 +762,7 @@ def build_place(p):
             "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
             "areas": areas_html(p, lang) if starred else "", "footPlaces": foot_places_html(lang, p["id"]),
             "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
-            "answer": answer, "heroClass": "" if answer else " hero-wide", "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
+            "answer": answer, "heroClass": "" if answer else " hero-wide", "quick": quick_html(quick, page, lang), "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
             "newStars": new_stars_html(p, page, lang),
             "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
             "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang),
@@ -957,97 +958,218 @@ def month_year(ym, lang):
     return f"{(MONTHS.get(lang) or MONTHS['en'])[int(m) - 1]} {y}"
 
 
-def destination_faq(p, page, starred, lang):
-    """The questions and answers at the foot of a destination page, worked out from its restaurants in one of its
-    languages (wording in src/faq-words.json): how many are starred, any three-star, what dinner costs, the cheapest
-    meal, what's newly starred and how far ahead to book. Questions the data can't answer are left out."""
-    if not starred:
-        return []
-    own = FAQ_WORDS.get(lang) or FAQ_WORDS["en"]
-    w = dict(FAQ_WORDS["en"], **own)
-    rtl = lang in RTL_LANGUAGES
-    sfx = lang[0].upper() + lang[1:]
-    name = lambda r: (lambda s: f"⁨{s}⁩" if rtl else s)(pick_lang(r, "name", lang))
-    usd = lambda r, f: r[f] / CURRENCIES[r["cur"]]["perUSD"]
+class FaqWords:
+    """What a destination page's FAQ, quick answers and "In short" answer share in one of its languages: the wording
+    (src/faq-words.json, English filling any gaps), and restaurant names, prices and lists written the way that language
+    needs them (Arabic wraps names and prices in bidi isolates). say() gives plain text; say_html() escapes the wording
+    and takes values already escaped (names may be links)."""
 
-    def price(r, f):
-        text = money(r[f], r["cur"]) + ("" if r["cur"] == "USD" else f" (≈\u00a0US${int(round(usd(r, f) / 5) * 5):,})")
-        return f"⁦{text}⁩" if rtl else text
+    def __init__(self, page, lang):
+        self.lang = lang
+        self.own = FAQ_WORDS.get(lang) or FAQ_WORDS["en"]
+        self.w = dict(FAQ_WORDS["en"], **self.own)
+        self.rtl = lang in RTL_LANGUAGES
+        sfx = lang[0].upper() + lang[1:]
+        self.where = (pick_lang(page, "name", lang) if lang in CJK_NAMES else
+                      "in " + page["inSentence"] if lang == "en" else page.get("inSentence" + sfx) or page["inSentence"])
+        self.gap = "" if lang in ("zh", "yue", "zhs", "ja") else " "  # between sentences
 
-    def listed(rs, limit=6):
-        names = [name(r) for r in rs[:limit]]
-        text = names[0] if len(names) == 1 else w["sep"].join(names[:-1]) + w["and3" if len(names) > 2 and "and3" in own else "and"] + names[-1]
+    def name(self, r):
+        s = pick_lang(r, "name", self.lang)
+        return f"⁨{s}⁩" if self.rtl else s
+
+    def name_html(self, r):
+        """A restaurant's name, linked to its own page where it has one (English pages: the restaurant pages are English only)."""
+        if self.lang == "en" and r.get("page"):
+            return f'<a href="{r["page"]}">{e(self.name(r))}</a>'
+        return e(self.name(r))
+
+    @staticmethod
+    def usd(r, f):
+        return r[f] / CURRENCIES[r["cur"]]["perUSD"]
+
+    def price(self, r, f, usd=True):
+        text = money(r[f], r["cur"]) + ("" if r["cur"] == "USD" or not usd else f" (≈ US${int(round(self.usd(r, f) / 5) * 5):,})")
+        return f"⁦{text}⁩" if self.rtl else text
+
+    def join(self, items, html_mode=False):
+        """"A, B and C", with the language's own separator and "and" (and3 before the last of three or more)."""
+        items = list(items)
+        esc = e if html_mode else (lambda s: s)
+        if len(items) < 2:
+            return "".join(items)
+        last = self.w["and3" if len(items) > 2 and "and3" in self.own else "and"]
+        return esc(self.w["sep"]).join(items[:-1]) + esc(last) + items[-1]
+
+    def listed(self, rs, limit=6, html_mode=False):
+        """Up to six names, then "and 3 more"."""
+        names = [self.name_html(r) if html_mode else self.name(r) for r in rs[:limit]]
         if len(rs) > limit:
-            text = w["more"].replace("{list}", w["sep"].join(names)).replace("{m}", str(len(rs) - limit))
-        return text
+            sep = e(self.w["sep"]) if html_mode else self.w["sep"]
+            more = e(self.w["more"]) if html_mode else self.w["more"]
+            return more.replace("{list}", sep.join(names)).replace("{m}", str(len(rs) - limit))
+        return self.join(names, html_mode)
 
-    where = (pick_lang(page, "name", lang) if lang in CJK_NAMES else
-             "in " + page["inSentence"] if lang == "en" else page.get("inSentence" + sfx) or page["inSentence"])
-    gap = "" if lang in ("zh", "yue", "zhs", "ja") else " "  # between sentences
+    def tier_split(self, by_stars):
+        """"3 three-star, 5 two-star and 12 one-star", or "all one-star" when there's only one level."""
+        tiers = [s for s in (3, 2, 1) if by_stars[s]]
+        if len(tiers) == 1:
+            return self.w[f"all{tiers[0]}"]
+        return self.join(self.w[f"tier{s}"].replace("{n}", str(len(by_stars[s]))) for s in tiers)
 
-    def say(key, **values):
-        values.setdefault("in", where)
-        text = re.sub(r"\{(\w+)\}", lambda m: str(values.get(m.group(1), m.group(0))), w[key])
+    def _fill(self, template, values):
+        values.setdefault("in", e(self.where) if values.pop("_html", False) else self.where)
+        text = re.sub(r"\{(\w+)\}", lambda m: str(values.get(m.group(1), m.group(0))), template)
         return text[:1].upper() + text[1:]
 
+    def say(self, key, **values):
+        return self._fill(self.w[key], values)
+
+    def say_html(self, key, **values):
+        return self._fill(e(self.w[key]), dict(values, _html=True))
+
+
+def by_star_level(k, starred):
+    return {s: sorted((r for r in starred if r["stars"] == s), key=lambda r: k.name(r).lower()) for s in (3, 2, 1)}
+
+
+def dinner_menus(k, starred):
+    """Dinner tasting menus, cheapest first; and the typical spends some restaurants list instead (mainland China)."""
+    menus = sorted((r for r in starred if is_menu(r, "dinner")), key=lambda r: k.usd(r, "dinner"))
+    spends = sorted((r for r in starred if r.get("dinner") is not None and r.get("dinnerType") == "spend"), key=lambda r: k.usd(r, "dinner"))
+    return menus, spends
+
+
+def recent_stars(k, starred):
+    """Restaurants that won or gained a star in the twelve months to the month we checked (first editions of a guide
+    aren't marked, so a new guide's places have none): (new, up, latest changeDate)."""
+    month = site.get("updated", "")
+    since = f"{int(month[:4]) - 1}-{month[5:7]}" if re.fullmatch(r"\d{4}-\d{2}", month) else ""
+    recent = [r for r in starred if r.get("change") in ("new", "up") and r.get("changeDate", "") > since]
+    new = sorted((r for r in recent if r["change"] == "new"), key=lambda r: (-r["stars"], k.name(r).lower()))
+    up = sorted((r for r in recent if r["change"] == "up"), key=lambda r: (-r["stars"], k.name(r).lower()))
+    return new, up, max((r["changeDate"] for r in recent), default="")
+
+
+def three_star_answer(k, by_stars, quick=False):
+    """The FAQ's "Are there any three-star restaurants?" (aThree…), or the same as a quick answer under a heading (qkThree…,
+    HTML, naming up to 12 three-stars as that's what the heading promises)."""
+    say = k.say_html if quick else k.say
+    key = "qkThree" if quick else "aThree"
+    three, two = by_stars[3], by_stars[2]
+    if len(three) == 1:
+        return say(key + "One", names=k.listed(three, html_mode=quick))
+    if three:
+        return say(key + "Many", k=len(three), names=k.listed(three, 12 if quick else 6, html_mode=quick))
+    return say(key + "NoTwo", names=k.listed(two, html_mode=quick)) if two else say(key + "NoOne")
+
+
+def new_stars_answer(k, new, up, latest, html_mode=False):
+    say = k.say_html if html_mode else k.say
+    parts = []
+    if new:
+        parts.append(say("aNewOne" if len(new) == 1 and "aNewOne" in k.own else "aNew", names=k.listed(new, html_mode=html_mode),
+                         when=month_year(latest, k.lang)))
+    if up:
+        parts.append(say("aUpOne" if len(up) == 1 and "aUpOne" in k.own else "aUp", names=k.listed(up, html_mode=html_mode)))
+    return k.gap.join(parts)
+
+
+def destination_faq(p, page, starred, lang, quick=False):
+    """The questions and answers at the foot of a destination page, worked out from its restaurants in one of its
+    languages (wording in src/faq-words.json): how many are starred, any three-star, what dinner costs, the cheapest
+    meal, what's newly starred and how far ahead to book. Questions the data can't answer are left out, and so are
+    those the page's quick answers already give (quick=True: three-star, cheapest, new stars; see quick_answers())."""
+    if not starred:
+        return []
+    k = FaqWords(page, lang)
+    w, say, name, price, usd = k.w, k.say, k.name, k.price, k.usd
     n = len(starred)
-    by_stars = {s: sorted((r for r in starred if r["stars"] == s), key=lambda r: name(r).lower()) for s in (3, 2, 1)}
+    by_stars = by_star_level(k, starred)
     faq = []
 
-    tiers = [s for s in (3, 2, 1) if by_stars[s]]
-    split = w[f"all{tiers[0]}"] if len(tiers) == 1 else \
-        w["sep"].join(w[f"tier{s}"].replace("{n}", str(len(by_stars[s]))) for s in tiers[:-1]) + w["and3" if len(tiers) > 2 and "and3" in own else "and"] + \
-        w[f"tier{tiers[-1]}"].replace("{n}", str(len(by_stars[tiers[-1]])))
     checked = month_year(site.get("updated", ""), lang)
     count = say("aCountOne", r=name(starred[0]), stars=w[f"star{starred[0]['stars']}"], checked=checked) if n == 1 else \
-        say("aCount", n=n, split=split, checked=checked)
+        say("aCount", n=n, split=k.tier_split(by_stars), checked=checked)
     faq.append((say("qCount", **({"in": "in " + search_in(p)} if lang == "en" and p["id"] in SEARCH_NAMES else {})), count))
 
-    three, two = by_stars[3], by_stars[2]
-    answer = say("aThreeOne", names=listed(three)) if len(three) == 1 else say("aThreeMany", k=len(three), names=listed(three)) if three else \
-        say("aThreeNoTwo", names=listed(two)) if two else say("aThreeNoOne")
-    faq.append((say("qThree"), answer))
+    if not quick:
+        faq.append((say("qThree"), three_star_answer(k, by_stars)))
 
-    menu = lambda r, f: r.get(f) is not None and r.get(f + "Type", "menu") == "menu"
-    dinners = sorted((r for r in starred if menu(r, "dinner")), key=lambda r: usd(r, "dinner"))
+    dinners, spends = dinner_menus(k, starred)
     if len(dinners) >= 3:
         mid = dinners[len(dinners) // 2]
         faq.append((say("qPrice"), say("aPrice", lo=price(dinners[0], "dinner"), hi=price(dinners[-1], "dinner"), mid=price(mid, "dinner"))))
 
-    lunches = sorted((r for r in starred if menu(r, "lunch")), key=lambda r: usd(r, "lunch"))
+    lunches = sorted((r for r in starred if is_menu(r, "lunch")), key=lambda r: usd(r, "lunch"))
     # Some restaurants list a typical spend instead of a menu (mainland China): the lowest is added when it's lower still.
-    spends = sorted((r for r in starred if r.get("dinner") is not None and r.get("dinnerType") == "spend"), key=lambda r: usd(r, "dinner"))
     cheapest = min([usd(r, "lunch") for r in lunches[:1]] + [usd(r, "dinner") for r in dinners[:1]] or [float("inf")])
     answer = ""
     if lunches and (not dinners or usd(lunches[0], "lunch") < usd(dinners[0], "dinner")):
         answer = say("aCheapLunch", r=name(lunches[0]), price=price(lunches[0], "lunch"))
         if dinners:
-            answer += gap + say("aAlsoDinner", r=name(dinners[0]), price=price(dinners[0], "dinner"))
+            answer += k.gap + say("aAlsoDinner", r=name(dinners[0]), price=price(dinners[0], "dinner"))
     elif dinners:
         answer = say("aCheapDinner", r=name(dinners[0]), price=price(dinners[0], "dinner"))
     if spends and usd(spends[0], "dinner") < cheapest:
-        answer += (gap if answer else "") + say("aCheapSpend", r=name(spends[0]), price=price(spends[0], "dinner"))
-    if answer:
+        answer += (k.gap if answer else "") + say("aCheapSpend", r=name(spends[0]), price=price(spends[0], "dinner"))
+    if answer and not quick:
         faq.append((say("qCheap"), answer))
 
-    # Stars won in the last twelve months (first editions of a guide aren't marked, so with none the question is left out).
-    month = site.get("updated", "")
-    since = f"{int(month[:4]) - 1}-{month[5:7]}" if re.fullmatch(r"\d{4}-\d{2}", month) else ""
-    recent = [r for r in starred if r.get("change") in ("new", "up") and r.get("changeDate", "") > since]
-    if recent:
-        new = sorted((r for r in recent if r["change"] == "new"), key=lambda r: (-r["stars"], name(r).lower()))
-        up = sorted((r for r in recent if r["change"] == "up"), key=lambda r: (-r["stars"], name(r).lower()))
-        when = month_year(max(r["changeDate"] for r in recent), lang)
-        parts = []
-        if new:
-            parts.append(say("aNewOne" if len(new) == 1 and "aNewOne" in own else "aNew", names=listed(new), when=when))
-        if up:
-            parts.append(say("aUpOne" if len(up) == 1 and "aUpOne" in own else "aUp", names=listed(up)))
-        faq.append((say("qNew"), gap.join(parts)))
+    new, up, latest = recent_stars(k, starred)
+    if (new or up) and not quick:
+        faq.append((say("qNew"), new_stars_answer(k, new, up, latest)))
 
-    k = sum(1 for r in starred if r.get("lunch") is not None)
-    faq.append((say("qBook"), say("aBook") + (gap + say("aLunch", k=k, n=n) if k and n > 1 else "")))
+    lunch_n = sum(1 for r in starred if r.get("lunch") is not None)
+    faq.append((say("qBook"), say("aBook") + (k.gap + say("aLunch", k=lunch_n, n=n) if lunch_n and n > 1 else "")))
     return faq
+
+
+def quick_answers(p, page, starred, lang):
+    """Short answers to what people search for about a place's starred restaurants ("cheapest michelin star restaurant
+    in london", "three michelin star restaurants in london"), each a heading naming the place and one sentence from the
+    data: the cheapest dinner, the cheapest lunch, the most expensive dinner, the three-star restaurants and the newest
+    stars (where the page has no "New Michelin stars" section). [(heading, answer HTML)], or [] for a place with fewer than two starred restaurants (its "In short" answer
+    says it all). The FAQ leaves out the questions these answer (destination_faq(quick=True))."""
+    if len(starred) < 2:
+        return []
+    k = FaqWords(page, lang)
+    say, usd = k.say_html, k.usd
+    price = lambda r, f: e(k.price(r, f))
+    out = []
+
+    dinners, spends = dinner_menus(k, starred)
+    parts = []
+    if dinners:
+        parts.append(say("qkDinner", r=k.name_html(dinners[0]), price=price(dinners[0], "dinner")))
+    if spends and (not dinners or usd(spends[0], "dinner") < usd(dinners[0], "dinner")):
+        parts.append(say("aCheapSpend", r=k.name_html(spends[0]), price=price(spends[0], "dinner")))
+    if parts:
+        out.append((k.say("qkDinnerH"), k.gap.join(parts)))
+
+    lunches = sorted((r for r in starred if is_menu(r, "lunch")), key=lambda r: usd(r, "lunch"))
+    if lunches:
+        out.append((k.say("qkLunchH"), say("qkLunch", r=k.name_html(lunches[0]), price=price(lunches[0], "lunch"))))
+
+    if len(dinners) >= 2:
+        out.append((k.say("qkDearH"), say("qkDear", r=k.name_html(dinners[-1]), price=price(dinners[-1], "dinner"))))
+
+    out.append((k.say("qkThreeH"), three_star_answer(k, by_star_level(k, starred), quick=True)))
+
+    # The newest stars, unless the page has its own section on the latest guide (new_stars_html(), NEW_STARS_LANGS).
+    new, up, latest = recent_stars(k, starred)
+    if (new or up) and lang not in NEW_STARS_LANGS:
+        out.append((k.say("qkNewH", year=latest[:4]), new_stars_answer(k, new, up, latest, html_mode=True)))
+    return out
+
+
+def quick_html(items, page, lang):
+    if not items:
+        return ""
+    k = FaqWords(page, lang)
+    return ('<section id="quick">\n    <div class="wrap">\n      <div class="section-head"><div>'
+            f'<span class="eyebrow">{e(k.w["qkEyebrow"])}</span><h2 style="margin-top: 6px">{e(k.say("qkTitle"))}</h2></div></div>\n'
+            '      <div class="faq">' + "".join(f'<div><h3>{e(h)}</h3><p>{a}</p></div>' for h, a in items) + "</div>\n    </div>\n  </section>\n")
 
 
 def word_n(lang, key, n, values=None):
@@ -1170,9 +1292,10 @@ def areas_html(p, lang):
 # the restaurants (by star level, the cheapest meals, the latest guide's changes, by cuisine, dietary needs).
 # English only for now; the wording is in src/faq-words.json ("en"), ready for other languages.
 SEO_PILOT = ()  # in preview: ("london", "new-york"), waiting for the owner's look before it goes live
-# Languages whose pages show the "In short" answer at the top of the hero's right-hand column (every destination page,
-# 9 Oct 2026). Pages in other languages have no answer yet, so their hero runs the heading full width (.hero-wide).
-QA_LANGS = ("en",)
+# Languages whose pages show the "In short" answer at the top of the hero's right-hand column (every destination page:
+# English from 9 Oct 2026, the rest from 9 Oct too): those with their own qaLabel in src/faq-words.json. A page in a
+# language without it has no answer, so its hero runs the heading full width (.hero-wide).
+QA_LANGS = tuple(lang for lang, words in FAQ_WORDS.items() if "qaLabel" in words)
 # The short names people search for a place by ("michelin star restaurants nyc"), worked into its answer and description.
 # Where people search for a place by a shorter name than ours ("michelin star restaurants nyc", 10,000 searches a month in
 # the US against 1,000 for "… new york"; Ahrefs, 7 Oct 2026), its English page says both (9 Oct 2026): "name" in the intro,
@@ -1287,35 +1410,39 @@ def ceremony_guide(p):
     return next((g for g in ceremony_guides() if set(g.get("places", [])) & set(chain(p["id"]))), None)
 
 
-def quick_answer(p, page, starred, lang):
-    """The 40–50 word answer beside the page title: how many, split by stars, what dinner costs and the cheapest way in."""
+def short_answer(p, page, starred, lang):
+    """The 40–50 word "In short:" answer beside the page title, in the page's language: how many, split by stars, what
+    dinner costs and the cheapest way in. Wording qa… in src/faq-words.json; a language without its own qaFirst/qaAll
+    words splits the count by stars the way its FAQ does (tier…, all…)."""
     if not starred:
         return ""
-    w = pilot_words(lang)
-    name = SEARCH_NAMES[p["id"]]["name"] if p["id"] in SEARCH_NAMES and lang == "en" else page["name"]
-    tiers = [(s, sum(1 for r in starred if r["stars"] == s)) for s in (3, 2, 1)]
-    tiers = [(s, k) for s, k in tiers if k]
-    checked = long_month(site.get("updated", ""), lang)
+    k = FaqWords(page, lang)
+    w, own = k.w, k.own
+    name = SEARCH_NAMES[p["id"]]["name"] if p["id"] in SEARCH_NAMES and lang == "en" else pick_lang(page, "name", lang)
+    say = lambda key, **v: k.say_html(key, name=e(name), checked=e(long_month(site.get("updated", ""), lang)), **v)
+    price = lambda r, f: e(k.price(r, f, usd=False))
+    by_stars = by_star_level(k, starred)
+    tiers = [(s, len(by_stars[s])) for s in (3, 2, 1) if by_stars[s]]
     if len(starred) == 1:
         r = starred[0]
-        out = [say_in(w, "qaCountOne", page, name=e(name), r=e(r["name"]), stars=w["qaStars" + str(r["stars"])], checked=checked)]
+        stars = w["qaStars" + str(r["stars"])] if "qaStars1" in own else w["star" + str(r["stars"])]
+        out = [say("qaCountOne", r=e(k.name(r)), stars=e(stars))]
+    elif "qaFirst3" not in own:
+        out = [say("qaCount", n=len(starred), split=e(k.tier_split(by_stars)))]
+    elif len(tiers) == 1:
+        out = [say("qaCountAll", n=len(starred), split=e(w[("qaBoth" if len(starred) == 2 else "qaAll") + str(tiers[0][0])]))]
     else:
-        if len(tiers) == 1:
-            out = [say_in(w, "qaCountAll", page, name=e(name), n=len(starred), checked=checked,
-                          split=w[("qaBoth" if len(starred) == 2 else "qaAll") + str(tiers[0][0])])]
-        else:
-            split = e(and_plain((w[("qaFirst" if i == 0 else "qaThen") + str(s)].replace("{n}", str(k)) for i, (s, k) in enumerate(tiers)), w))
-            out = [say_in(w, "qaCount", page, name=e(name), n=len(starred), split=split, checked=checked)]
+        split = and_plain((w[("qaFirst" if i == 0 else "qaThen") + str(s)].replace("{n}", str(n)) for i, (s, n) in enumerate(tiers)), w)
+        out = [say("qaCount", n=len(starred), split=e(split))]
     dinners = sorted((r for r in starred if is_menu(r, "dinner")), key=lambda r: to_usd(r, "dinner"))
     if len(dinners) >= 3:
-        out.append(say_in(w, "qaPrice", page, lo=priced(dinners[0], "dinner", False), hi=priced(dinners[-1], "dinner", False),
-                          mid=priced(dinners[len(dinners) // 2], "dinner", False)))
+        out.append(say("qaPrice", lo=price(dinners[0], "dinner"), hi=price(dinners[-1], "dinner"), mid=price(dinners[len(dinners) // 2], "dinner")))
     best = cheapest_meal(starred)
     if best:
         r, f = best
         key = ("qaOnly" if len(starred) == 1 else "qaCheap") + ("Lunch" if f == "lunch" else "Dinner")
-        out.append(say_in(w, key, page, r=e(r["name"]), price=priced(r, f, False)))
-    return f'<p class="answer"><span class="answer-label">{e(w["qaLabel"])}</span> ' + " ".join(out) + "</p>"
+        out.append(say(key, r=e(k.name(r)), price=price(r, f)))
+    return f'<p class="answer"><span class="answer-label">{e(w["qaLabel"])}</span> ' + k.gap.join(out) + "</p>"
 
 
 # Languages whose destination pages get the "Michelin star lunch deals" section (lunch_deals_html()); its wording is

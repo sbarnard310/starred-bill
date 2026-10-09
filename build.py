@@ -770,6 +770,7 @@ def build_place(p):
             "newStars": new_stars_html(p, page, lang),
             "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
             "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang),
+            "browse": browse_html(p, page, starred, lang) if starred else "",
         }), lang, page, starred), page, lang))
 
 
@@ -1293,7 +1294,7 @@ def areas_html(p, lang):
 # ---------- SEO pilot (7 Oct 2026) ----------
 # New parts of a destination page, tried on these places first so the owner can see them before every page gets
 # them: a short answer under the title, section headings that say what the page is about, and lists worked out from
-# the restaurants (by star level, the cheapest meals, the latest guide's changes, by cuisine, dietary needs).
+# the restaurants (by star level, the cheapest meals, dietary needs; "by cuisine" went live for big cities in browse_html()).
 # English only for now; the wording is in src/faq-words.json ("en"), ready for other languages.
 SEO_PILOT = ()  # in preview: ("london", "new-york"), waiting for the owner's look before it goes live
 # Languages whose pages show the "In short" answer in the hero's right-hand column, above the figures (every destination
@@ -1520,6 +1521,80 @@ def lunch_deals_html(p, page, starred, lang):
             f'<p>{e(" ".join(text))}</p></div></div>\n      {table}\n      <p class="ld-note">{e(w["ldNote"])}</p>\n    </div>\n  </section>\n')
 
 
+# Big cities' "By cuisine" and "By neighbourhood" sections (browse_html(), 9 Oct 2026, to-do item seo-cuisine-area-sections,
+# for searches like "japanese michelin star restaurants london"): pages holding at least BROWSE_MIN starred restaurants
+# themselves (or in their districts), cities and the city-states filed as regions or countries. English only for now;
+# wording cu…/nb… in src/faq-words.json.
+BROWSE_LANGS = ("en",)
+BROWSE_MIN = 25
+BROWSE_CITY_STATES = ("hong-kong", "singapore", "macau", "kyoto", "osaka", "shanghai", "beijing")
+
+
+def area_key(r):
+    """A restaurant's neighbourhood: the first part of its area ("Ginza" of "Ginza, Chuo"), as areaKey() in place.js."""
+    return (r.get("area") or "").split(",")[0].strip()
+
+
+def browse_html(p, page, starred, lang):
+    """Two sections listing a big city's starred restaurants by cuisine (as the MICHELIN Guide names them) and by
+    neighbourhood: a sentence on the biggest groups, then each group with its count and cheapest dinner menu. Each link
+    shows just those restaurants in the list above (data-browse, read by place.js); without scripts it goes to the list."""
+    if lang not in BROWSE_LANGS or not (p["type"] == "city" or p["id"] in BROWSE_CITY_STATES):
+        return ""
+    own = [r for r in starred if r["cityPath"] == p["path"] or places.get(r["city"], {}).get("parent") == p["id"]
+           and places[r["city"]]["type"] == "district"]
+    if len(own) < BROWSE_MIN:
+        return ""
+    w = pilot_words(lang)
+    say = lambda key, **v: say_in(w, key, page, **{k: (n_word(x, lang) if isinstance(x, int) else x) for k, x in v.items()})
+
+    def groups(key):
+        found = {}
+        for r in own:
+            if key(r):
+                found.setdefault(key(r), []).append(r)
+        return sorted(found.items(), key=lambda g: (-len(g[1]), g[0].lower()))
+
+    def item(kind, name, rs):
+        menus = sorted((r for r in rs if is_menu(r, "dinner")), key=lambda r: to_usd(r, "dinner"))
+        price = e(w["areaFrom"].replace("{p}", money(menus[0]["dinner"], menus[0]["cur"]))) if menus else ""
+        top = max(r["stars"] for r in rs)
+        stars = sum(1 for r in rs if r["stars"] == top)
+        note = e(w["brStars"].replace("{k}", str(stars)).replace("{stars}", w["star" + str(top)])) if top > 1 else ""
+        return (f'<li><a href="#compare" data-browse="{kind}" data-value="{e(name)}">{e(name)}</a> <span class="count">{len(rs)}</span>'
+                + "".join(f'<span class="area-from">{x}</span>' for x in (note, price) if x) + "</li>")
+
+    def section(sid, pre, kind, found, intro):
+        many = [(n, rs) for n, rs in found if len(rs) > 1]
+        single = sorted((n for n, rs in found if len(rs) == 1), key=str.lower)
+        links = lambda names: and_names((f'<a href="#compare" data-browse="{kind}" data-value="{e(n)}">{e(n)}</a>' for n in names), w)
+        also = f'<p class="also">{e(w["cuAlso"]).replace("{list}", links(single))}</p>' if single else ""
+        return page_section(sid, w[pre + "Eyebrow"], say(pre + "Title"), intro + " " + e(say("brPick")),
+                            '<ul class="area-links browse-links">' + "".join(item(kind, n, rs) for n, rs in many) + "</ul>" + also)
+
+    out = []
+    cuisines = groups(lambda r: r.get("cuisine"))
+    if len(cuisines) >= 3:
+        top = and_names((f"{e(c)} ({len(rs)})" for c, rs in cuisines[:3]), w)
+        intro = e(say("cuIntro", k=len(cuisines), n=len(own))) + " " + say("cuMost", top=top)
+        # A cuisine with its own guide here (Indian in London) links to it.
+        for c, _ in cuisines:
+            guide = "michelin-star-" + c.lower().replace(" ", "-") + "-restaurants-" + p["id"]
+            if guide in guides:
+                intro += " " + e(w["cuGuide"]).replace("{link}", f'<a href="/guides/{guide}/">{e(guides[guide]["h1"])}</a>')
+        out.append(section("cuisines", "cu", "cuisine", cuisines, intro))
+    areas = groups(area_key)
+    # Neighbourhoods only where most restaurants name one and there are a few (Kyoto's have none, Macau's three are islands).
+    if len(areas) >= 4 and sum(len(rs) for _, rs in areas) >= 0.8 * len(own):
+        (a1, r1), rest = areas[0], [(a, rs) for a, rs in areas[1:3] if len(rs) > 1]
+        intro = e(say("nbMost", area=a1, k=str(len(r1)), n=str(len(own))))
+        if rest:
+            intro += e(say("nbNext", next=and_plain([f"{a} ({len(rs)})" for a, rs in rest], w)))
+        intro += "."
+        out.append(section("neighbourhoods", "nb", "area", areas, intro))
+    return "".join(out)
+
+
 def page_section(sid, eyebrow, title, text, body):
     """A section of a destination page: eyebrow, heading, an optional line of text (already escaped), then the body."""
     return (f'<section id="{sid}">\n    <div class="wrap">\n      <div class="section-head"><div>'
@@ -1744,31 +1819,6 @@ def pilot_sections(p, page, starred, lang):
                  f'<th class="num">{e(w["chPrice"])}</th></tr></thead><tbody>{rows}</tbody></table>')
         out.append(section("cheapest", w["chEyebrow"], say("chTitle"), e(" ".join(text)), table))
 
-
-    # By cuisine, as the MICHELIN Guide names them: a line on each with two or more, then the rest by name.
-    cuisines = {}
-    for r in starred:
-        cuisines.setdefault(cuisine_in(r, lang), []).append(r)
-    many = sorted(((c, rs) for c, rs in cuisines.items() if len(rs) > 1), key=lambda c: (-len(c[1]), c[0]))
-    if many:
-        def cuisine_card(c, rs):
-            top = most_stars(rs)
-            text = [say("cuTop", names=plain_names(top[:3], w) + (e(w["pMore"].replace("{m}", str(len(top) - 3))) if len(top) > 3 else ""),
-                        stars=w["star" + str(top[0]["stars"])]) if top[0]["stars"] > 1 else say("cuAllTwo" if len(rs) == 2 else "cuAllOne", k=len(rs))]
-            meal = cheapest_meal(rs)
-            if meal and len(rs) > 1:
-                r, f = meal
-                text.append(say("cuCheap", meal=w["mealLunch" if f == "lunch" else "mealDinner"], r=e(r["name"]), price=e(money(r[f], r["cur"]))))
-            # A cuisine with its own guide here (Indian in London) links to it, the one link in this section.
-            guide = "michelin-star-" + c.lower().replace(" ", "-") + "-restaurants-" + p["id"]
-            if guide in guides:
-                text.append(e(w["cuGuide"]).replace("{link}", '<a href="/guides/' + guide + '/">' + e(guides[guide]["h1"]) + "</a>"))
-            return card(c, len(rs), [" ".join(text)])
-        single = sorted(c for c, rs in cuisines.items() if len(rs) == 1)
-        top3 = and_names((f"{e(c)} ({len(rs)})" for c, rs in many[:3]), w)
-        intro = e(say("cuIntro", k=len(cuisines))) + " " + say("cuMost", top=top3)
-        also = f'<p class="also">{e(say("cuAlso", list=", ".join(single)))}</p>' if single else ""
-        out.append(section("cuisines", w["cuEyebrow"], say("cuTitle"), intro, '<div class="facts">' + "".join(cuisine_card(c, rs) for c, rs in many[:6]) + "</div>" + also))
 
     # Dietary needs, from the MICHELIN Guide's listings: vegetarian, vegan, then halal and kosher (which mean "on request").
     has = lambda d: sorted((r for r in starred if d in r.get("diets", [])), key=lambda r: (-r["stars"], r["name"].lower()))

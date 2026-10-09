@@ -21,7 +21,7 @@ const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !
 pageVars = () => ({ place: pick(PAGE, "name"), placeIn: cjk() || ko() ? pick(PAGE, "name") : PAGE["inSentence" + (LANGS[LANG].suffixes[0] || "")] || PAGE.inSentence || PAGE.name });
 
 const EXPLORE_SHOWN = 6;
-const state = { openRow: null, exploreOpen: new Set(), meal: "dinner", activeCat: "All", activeStars: 0, diet: "", wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null,
+const state = { openRow: null, exploreOpen: new Set(), meal: "dinner", activeCat: "All", activeStars: 0, diet: "", wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null, area: "",
   currency: PAGE.currency, rates: Object.fromEntries(Object.entries(DATA.currencies).map(([k, v]) => [k, v.perUSD])), rateDate: new Date(DATA.rateDate + "T12:00:00Z") };
 
 // ---------- Helpers ----------
@@ -68,6 +68,9 @@ const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOn
 const DIET_KEYS = [["vegetarian-only", "dietVegOnly"], ["vegetarian-menu", "dietVegMenu"], ["vegetarian", "dietVeg"], ["vegan", "dietVegan"], ["gluten-free", "dietGf"], ["halal", "dietHalal"], ["kosher", "dietKosher"]];
 const hasDiet = (r, d) => { const ds = r.diets || []; return ds.includes(d) || (d === "vegetarian" && (ds.includes("vegetarian-menu") || ds.includes("vegetarian-only"))); };
 const dietMatch = (r) => !state.diet || hasDiet(r, state.diet);
+// A neighbourhood, from the "By neighbourhood" links (build.py browse_html()): the first part of the area ("Ginza" of "Ginza, Chuo").
+const areaKey = (r) => String(r.area || "").split(",")[0].trim();
+const areaMatch = (r) => !state.area || areaKey(r) === state.area;
 const dietLabel = (d) => t((DIET_KEYS.find(([k]) => k === d) || [])[1] || "all");
 // Leaf badges for the three that matter most when choosing; the rest are in the filter only.
 const BADGES = [["vegetarian-only", "badgeVegOnly", "dietVegOnly"], ["vegetarian-menu", "badgeVegMenu", "dietVegMenu"], ["vegan", "badgeVegan", "dietVegan"]];
@@ -98,9 +101,9 @@ function save() {
 }
 
 // The "No longer starred" rows, shown only when no star or wishlist filter is on; the recent ones also get grey map pins.
-const formerRows = () => state.activeStars || state.wishOnly ? [] : FORMER.filter((r) => (!state.changesOnly || r.change) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
+const formerRows = () => state.activeStars || state.wishOnly ? [] : FORMER.filter((r) => (!state.changesOnly || r.change) && areaMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
 function filtered() {
-  const rows = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && dietMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
+  const rows = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && dietMatch(r) && areaMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
   const coll = new Intl.Collator(locale());
   const sorters = {
     "price-asc": (a, b) => priceRank(a) - priceRank(b) || byPrice(a, b),
@@ -224,14 +227,14 @@ function cuisineLabeller() {
 }
 function renderChips() {
   const counts = {};
-  RESTAURANTS.forEach((r) => { counts[r.cuisine] = (counts[r.cuisine] || 0) + (starMatch(r) && wishMatch(r) && dietMatch(r) ? 1 : 0); });
+  RESTAURANTS.forEach((r) => { counts[r.cuisine] = (counts[r.cuisine] || 0) + (starMatch(r) && wishMatch(r) && dietMatch(r) && areaMatch(r) ? 1 : 0); });
   const coll = new Intl.Collator(locale());
   const label = cuisineLabeller();
   const cats = Object.keys(counts).sort((a, b) => coll.compare(label(a), label(b)));
   // A search box helps once the list is long; it narrows the chips, not the restaurants.
   $("cuisineQ").hidden = cats.length < 12;
   const q = $("cuisineQ").hidden ? "" : fold($("cuisineQ").value.trim());
-  const total = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && dietMatch(r)).length;
+  const total = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && dietMatch(r) && areaMatch(r)).length;
   let html = q ? "" : '<span class="chip all' + (state.activeCat === "All" ? " active" : "") + '"><button type="button" data-cat="All" aria-pressed="' + (state.activeCat === "All") + '">' + t("all") + '<span class="count">' + total + "</span></button></span>";
   cats.forEach((c) => {
     if (q && !fold(label(c)).includes(q) && !fold(c).includes(q)) return;
@@ -241,7 +244,7 @@ function renderChips() {
   $("chips").innerHTML = html;
 }
 function renderDietFilter() {
-  const base = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat));
+  const base = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && areaMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat));
   // Options no restaurant on this page offers are left out, so a small page isn't padded with zeros.
   const opts = DIET_KEYS.map(([d, key]) => ({ d, label: t(key), n: base.filter((r) => hasDiet(r, d)).length, any: RESTAURANTS.some((r) => hasDiet(r, d)) })).filter((o) => o.any || state.diet === o.d);
   $("dietGroup").hidden = !opts.length;
@@ -264,9 +267,10 @@ function renderFilterSummary(n) {
   if (stars) tags.push(["stars", '<span aria-label="' + esc(t("starsAria", { n: state.activeStars })) + '">' + stars + "</span>"]);
   if (cat) tags.push(["cat", cat]);
   if (diet) tags.push(["diet", diet]);
+  if (state.area) tags.push(["area", esc(state.area)]);
   $("filtersCount").textContent = tags.length || "";
   $("activeTags").innerHTML = tags.map(([k, html]) =>
-    '<button type="button" class="ftag" data-unfilter="' + k + '" aria-label="' + esc(t("removeFilter", { f: k === "stars" ? t("starsAria", { n: state.activeStars }) : k === "diet" ? dietLabel(state.diet) : (show && k === "show" ? show[1] : cuisineLabeller()(state.activeCat)) })) + '">' + html + '<span aria-hidden="true">×</span></button>').join("") +
+    '<button type="button" class="ftag' + (k === "area" ? " ftag-own" : "") + '" data-unfilter="' + k + '" aria-label="' + esc(t("removeFilter", { f: k === "stars" ? t("starsAria", { n: state.activeStars }) : k === "diet" ? dietLabel(state.diet) : k === "area" ? state.area : (show && k === "show" ? show[1] : cuisineLabeller()(state.activeCat)) })) + '">' + html + '<span aria-hidden="true">×</span></button>').join("") +
     (tags.length ? '<button type="button" class="linkish fclear" data-unfilter="all">' + t("filtersClear") + "</button>" : "");
   $("activeTags").hidden = !tags.length;
   $("sheetDone").textContent = t("filtersShowN", { n });
@@ -480,7 +484,7 @@ document.addEventListener("click", (e) => { if (e.target.closest("#ledgerMore"))
 function renderLedger() {
   const rows = filtered();
   // The same filters keep as many rows drawn as before (e.g. after ticking a heart far down the list); new ones start again.
-  const key = [state.activeStars, state.activeCat, state.diet, state.wishOnly, state.changesOnly, state.beenOnly, state.query, state.sort].join("|");
+  const key = [state.activeStars, state.activeCat, state.diet, state.wishOnly, state.changesOnly, state.beenOnly, state.area, state.query, state.sort].join("|");
   if (key !== ledger.key) { ledger.key = key; ledger.shown = LEDGER_STEP; }
   ledger.rows = rows;
   let html = '<div class="row head" role="row"><span role="columnheader">' + t("hRestaurant") + '</span><span role="columnheader">' + t("hCuisine") + '</span><span role="columnheader">' + t("hStars") + '</span><span role="columnheader">' + t("hGoogle") + '</span><span role="columnheader">' + t(L() ? "hNotesLunch" : "hNotes") + '</span><span role="columnheader" style="text-align:right">' + t("hPrice") + '</span><span role="columnheader" class="sr-only">' + t("hWish") + "</span></div>";
@@ -784,9 +788,10 @@ document.addEventListener("click", (e) => {
     if (k === "stars" || k === "all") state.activeStars = 0;
     if (k === "cat" || k === "all") state.activeCat = "All";
     if (k === "diet" || k === "all") state.diet = "";
+    if (k === "area" || k === "all") state.area = "";
     render();
   } else if (el.id === "clearFilters") {
-    state.activeStars = 0; state.activeCat = "All"; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.query = ""; $("q").value = ""; render();
+    state.activeStars = 0; state.activeCat = "All"; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.area = ""; state.query = ""; $("q").value = ""; render();
   } else if (el.dataset.cat) {
     state.activeCat = el.dataset.cat; $("cuisineQ").value = ""; render(); choseFilter();
     if (el.classList.contains("tag")) $("compare").scrollIntoView();
@@ -794,6 +799,19 @@ document.addEventListener("click", (e) => {
     if (state.lastUndo) { state.lastUndo(); state.lastUndo = null; save(); render(); }
     $("toast").hidden = true;
   }
+});
+// "By cuisine" and "By neighbourhood" (build.py browse_html()): each link shows just those restaurants in the list, every
+// other filter cleared so it matches the count beside the link, then scrolls up to the list (#compare, the link's address without scripts).
+document.addEventListener("click", (e) => {
+  const a = e.target.closest("a[data-browse]");
+  if (!a) return;
+  e.preventDefault();
+  state.activeStars = 0; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.query = ""; $("q").value = "";
+  state.activeCat = a.dataset.browse === "cuisine" ? a.dataset.value : "All";
+  state.area = a.dataset.browse === "area" ? a.dataset.value : "";
+  render();
+  $("compare").scrollIntoView();
+  track("browse", { by: a.dataset.browse });
 });
 $("q").addEventListener("input", (e) => { state.query = e.target.value; renderLedger(); });
 wireSearchClear($("q"), () => { state.query = ""; renderLedger(); });

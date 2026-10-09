@@ -149,8 +149,9 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .sheet-backdrop { position: fixed; inset: 0; z-index: 44; background: rgba(0, 0, 0, .45); }
 .sheet-backdrop[hidden] { display: none; }
 @media (min-width: 721px) {
-  /* The drop-down buttons already say what's chosen, so the tags row only adds "Clear all". */
-  .active-tags .ftag { display: none; }
+  /* The drop-down buttons already say what's chosen, so the tags row only adds "Clear all", and the neighbourhood,
+     which has no drop-down (chosen from "By neighbourhood"). */
+  .active-tags .ftag:not(.ftag-own) { display: none; }
   .filters { grid-template-columns: auto 1fr; align-items: center; }
   .active-tags { justify-content: flex-start; }
 }
@@ -364,6 +365,8 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .area-links a:hover { color: var(--green); text-decoration-color: currentColor; }
 .area-links .count { font-family: var(--font-num); font-size: .85rem; color: var(--green); white-space: nowrap; }
 .area-links .area-from { display: block; margin-top: 2px; color: var(--muted); font-size: .85rem; }
+/* "By cuisine" and "By neighbourhood" on big city pages (build.py browse_html()): two to a row on phones. */
+.browse-links { columns: 4 150px; column-gap: 24px; }
 /* SEO pilot (pilot_sections() and quick_answer() in build.py): the short answer under the title, then the lists by star
    level, the cheapest meals, the latest guide, cuisines and dietary needs. Logical sides only, so rtl.css needs nothing. */
 /* The answer sits at the top of the hero's right-hand column, the figures at its foot. */
@@ -393,8 +396,9 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .facts .past li { padding: 5px 0; border-bottom: 1px solid var(--line); }
 .facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 24px 40px; }
 .facts p { color: var(--ink); font-size: .98rem; line-height: 1.6; }
-#cuisines .also { color: var(--muted); font-size: .95rem; }
-#cuisines .also { margin-top: 24px; max-width: 90ch; }
+.browse-links + .also { color: var(--muted); font-size: .95rem; margin-top: 24px; max-width: 90ch; }
+.browse-links + .also a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
+.browse-links + .also a:hover { color: var(--green); text-decoration-color: currentColor; }
 .value-table { width: 100%; max-width: 760px; border-collapse: collapse; font-size: .95rem; }
 .value-table th { text-align: start; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); }
 .value-table td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }

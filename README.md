@@ -114,7 +114,7 @@ Opening hours live in `content/opening-hours.json`, written by `python3 scripts/
 
 ## Guides
 
-Each file in `content/guides/` is one article at `/guides/<file name>/`, listed on `/guides/`. They're English only, in US or UK spelling as the content brief says.
+Each file in `content/guides/` is one article at `/guides/<file name>/`, listed on `/guides/`. They're in English, in US or UK spelling as the content brief says; some also have translations (see "Translated guides" below).
 
 | Field | What it is |
 |---|---|
@@ -144,6 +144,19 @@ For the most-stars guide (the cities and countries with the most Michelin stars)
 For the closures guide (UK Michelin star restaurants that closed or lost their stars), every country and year with no-longer-starred restaurants on record gets two tables: `{{table:gone-uk-2026}}` lists those that closed, changed or lost their stars that year, by when it happened (`statusDate`), newest first, with the stars each held and its `statusNote`; `{{table:left-uk-2026}}` lists what that year's guide dropped or demoted (`changeDate`, with `status` or `change: down`), most stars first, saying whether each is still open. Their figures, with the country id and year on the end (hyphens as underscores): `{{goneN_uk_2026}}` and `{{goneClosed_uk_2026}}`, `{{leftN_uk_2026}}`, `{{leftClosed_uk_2026}}` and `{{leftOpen_uk_2026}}`, and `{{sinceN_uk_2026}}`/`{{sinceClosed_uk_2026}}` (gone that year but after its guide, so still to be dropped). A restaurant that closes between guides keeps its `changeDate` empty until the next guide leaves it out.
 
 A link written `<a data-guide="green-michelin-star">…</a>` becomes a link once that guide exists, and plain text until then.
+
+### Translated guides
+
+A guide's translation is `content/guide-translations/<language>/<id>.json` (editable in Pages CMS as "Guide translations"), published at `/<language>/guides/<id>/`, e.g. `/de/guides/what-is-a-michelin-star/`. It keeps the English guide's file name and picture. The English guide and its translations name each other with hreflang links and language buttons, a visitor who reads one of those languages is sent to it (as on destination pages), and the Guides page shows "Also in: Deutsch · Español…" under that guide. Destination pages in a language whose "What is a Michelin star?" translation exists link to it from their footer. Languages so far: German (`de`), Spanish (`es`), Italian (`it`), Portuguese (`pt`, written for Brazil, `locale` pt-BR) and Polish (`pl`); a new one needs its wording in `GUIDE_WORDS` in build.py first (date lines, FAQ and Sources headings, how it writes numbers, US dollars and month names, and country names for the figures).
+
+| Field | What it is |
+|---|---|
+| `id` | the English guide's file name |
+| `h1`, `title`, `description`, `summary`, `imageAlt`, `published`, `updated`, `keywords`, `body`, `faq` | as in the English guide, in the language (description up to 160 characters) |
+| `locale` | optional regional language for the article, e.g. `pt-BR` |
+| `sources` | optional extra sources for facts only the translation has; the English guide's sources are listed too |
+
+Figures work as in the English guide but come out the language's way: `{{n3}}` as "161", `{{total}}` as "3.885" in German, `{{price1}}` as "175 US$" (German, Spanish), "175 USD" (Italian, Polish) or "US$ 175" (Portuguese), `{{range1}}` as "140–215 US$", `{{checked}}` as "Oktober 2026", and country names (`{{topCountry}}`…) in the language, without an article, so write them into lists like "Frankreich (646)". Tables (`{{table:…}}`) aren't available. A translation can also quote a destination's own figures with `{{in:<place id>:<field>}}`: `n` (starred restaurants), `n1`, `n2`, `n3`, `stars` (stars between them), `median` (the typical dinner tasting menu, local currency), `from` and `fromName` (the cheapest and where) and `three` (its three-star restaurants, named). Polish can't put a noun after a number without changing its ending, so Polish text puts figures after a label ("Restauracji z gwiazdką Michelin jest w Polsce 11"). A link to a guide (`data-guide`) opens its translation in that language, or the English guide with a small EN tag; a link to a destination page (`href="/germany/"`) opens its version in that language where it has one.
 
 The ceremony dates guide (`/guides/michelin-guide-ceremony-dates/`) reads `content/ceremonies.json`, one entry per MICHELIN Guide (editable in Pages CMS as "Ceremony dates"):
 

@@ -1014,6 +1014,9 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 /* Card footer: the guide's key figure on a scrap of till-receipt paper, and the reading time. */
 .guide .guide-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; margin-top: auto; padding-top: 6px; font-size: .82rem; color: var(--muted); line-height: 1.4; }
 .guide-feature .guide-meta { margin-top: 4px; padding-top: 0; }
+.guide-langs { position: relative; z-index: 1; font-size: .9rem; color: var(--muted); }
+/* Translated guides: a link to a guide that's only in English carries a small EN tag */
+.lang-tag { display: inline-block; margin-inline-start: .3em; padding: 0 .3em; border: 1px solid currentColor; border-radius: 3px; font-size: .62em; font-weight: 600; line-height: 1.4; vertical-align: .15em; opacity: .75; }
 .guide-fig { position: relative; padding: 4px 10px 4px 16px; border-radius: 3px; background: var(--rc-paper); color: var(--rc-ink); font-family: var(--font-num); font-size: .76rem; }
 .guide-fig::before { content: ""; position: absolute; left: 6px; top: 5px; bottom: 5px; border-left: 2px dotted var(--rc-dots); }
 .guide-next { margin-top: 56px; padding: 28px; border-radius: var(--radius); background: var(--band); color: var(--band-ink); }

@@ -377,6 +377,89 @@ for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").
     g["id"] = gid
     guides[gid] = g
 
+# Translated guides (9 Oct 2026, for local searches like "michelin stern" and "estrela michelin"): a guide's translation is
+# content/guide-translations/<language>/<id>.json, with the English guide's file name and its article fields (plus an optional
+# `locale`, e.g. pt-BR, for the article's own language tag), published at /<language>/guides/<id>/
+# beside it (hreflang, language buttons, sitemap). GUIDE_WORDS holds each language's fixed wording around the article:
+# `name` (the language in itself), the date lines, the FAQ heading, "(in English)" after links to guides not yet translated,
+# how US dollars and numbers are written, month names (`monthsOf` where a date takes another case, as in Polish) and the
+# the Sources section (`sources`, `sourceChecked`, `ownData`), the
+# names of the countries the figures can name ({{topCountry}}…, without an article, so write them into lists like "Frankreich (30)"), and any currency written its own way ("zł").
+# A new language needs an entry here first.
+GUIDE_WORDS = {
+    "de": {"name": "Deutsch", "sources": "Quellen", "sourceChecked": "(abgerufen {month})",
+           "ownData": "Preise und Zahlen sind eigene Daten von The Starred Bill zu {total} Sternerestaurants: Sterne aus der jeweils aktuellen Ausgabe des Guide MICHELIN, Menüpreise von den Websites der Restaurants oder, wo keine veröffentlicht sind, aus einer aktuellen Kritik, Stand {checked}. Die Dollarbeträge beruhen auf Wechselkursen von {rates} ({day}).",
+           "updated": "Aktualisiert am {date}", "checked": "Sterne und Preise: Stand {month}",
+           "faq": "Häufige Fragen", "inEnglish": "auf Englisch", "usd": "{n} US$", "thousands": ".", "date": "{d}. {m} {y}", "monthYear": "{m} {y}",
+           "months": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+           "countries": {"France": "Frankreich", "Japan": "Japan", "Italy": "Italien", "Germany": "Deutschland", "Spain": "Spanien",
+                         "United States": "USA", "China": "China", "United Kingdom": "Großbritannien", "Hong Kong": "Hongkong",
+                         "Switzerland": "Schweiz", "Belgium": "Belgien", "South Korea": "Südkorea", "Netherlands": "Niederlande"}},
+    "es": {"name": "Español", "sources": "Fuentes", "sourceChecked": "(consultado en {month})",
+           "ownData": "Los precios y recuentos son datos propios de The Starred Bill sobre {total} restaurantes con estrella: estrellas de la última edición de la Guía MICHELIN de cada país, precios de los menús de la web de cada restaurante o, si no los publica, de una reseña reciente, revisados en {checked}. Las cifras en dólares usan tipos de cambio de {rates} ({day}).",
+           "updated": "Actualizado el {date}", "checked": "Estrellas y precios revisados en {month}",
+           "faq": "Preguntas frecuentes", "inEnglish": "en inglés", "usd": "{n} US$", "thousands": "", "date": "{d} de {m} de {y}", "monthYear": "{m} de {y}",
+           "months": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
+           "countries": {"France": "Francia", "Japan": "Japón", "Italy": "Italia", "Germany": "Alemania", "Spain": "España",
+                         "United States": "Estados Unidos", "China": "China", "United Kingdom": "Reino Unido", "Hong Kong": "Hong Kong",
+                         "Switzerland": "Suiza", "Belgium": "Bélgica", "South Korea": "Corea del Sur", "Netherlands": "Países Bajos"}},
+    "it": {"name": "Italiano", "sources": "Fonti", "sourceChecked": "(consultato a {month})",
+           "ownData": "Prezzi e conteggi sono dati di The Starred Bill su {total} ristoranti stellati: stelle dall’ultima edizione della Guida MICHELIN di ogni paese, prezzi dei menù dal sito di ogni ristorante o, se non li pubblica, da una recensione recente, verificati a {checked}. Gli importi in dollari usano i tassi di cambio di {rates} ({day}).",
+           "updated": "Aggiornato il {date}", "checked": "Stelle e prezzi verificati a {month}",
+           "faq": "Domande frequenti", "inEnglish": "in inglese", "usd": "{n} USD", "thousands": ".", "date": "{d} {m} {y}", "monthYear": "{m} {y}",
+           "months": ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"],
+           "countries": {"France": "Francia", "Japan": "Giappone", "Italy": "Italia", "Germany": "Germania", "Spain": "Spagna",
+                         "United States": "Stati Uniti", "China": "Cina", "United Kingdom": "Regno Unito", "Hong Kong": "Hong Kong",
+                         "Switzerland": "Svizzera", "Belgium": "Belgio", "South Korea": "Corea del Sud", "Netherlands": "Paesi Bassi"}},
+    "pt": {"name": "Português", "sources": "Fontes", "sourceChecked": "(consultado em {month})",
+           "ownData": "Preços e contagens são dados próprios do The Starred Bill sobre {total} restaurantes estrelados: estrelas da edição mais recente do Guia MICHELIN de cada país, preços dos menus no site de cada restaurante ou, quando ele não publica, numa crítica recente, conferidos em {checked}. Os valores em dólar usam taxas de câmbio da {rates} ({day}).",
+           "updated": "Atualizado em {date}", "checked": "Estrelas e preços conferidos em {month}",
+           "faq": "Perguntas frequentes", "inEnglish": "em inglês", "usd": "US$ {n}", "thousands": ".", "date": "{d} de {m} de {y}", "monthYear": "{m} de {y}",
+           "months": ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"],
+           "countries": {"France": "França", "Japan": "Japão", "Italy": "Itália", "Germany": "Alemanha", "Spain": "Espanha",
+                         "United States": "Estados Unidos", "China": "China", "United Kingdom": "Reino Unido", "Hong Kong": "Hong Kong",
+                         "Switzerland": "Suíça", "Belgium": "Bélgica", "South Korea": "Coreia do Sul", "Netherlands": "Holanda"}},
+    "pl": {"name": "Polski", "sources": "Źródła", "sourceChecked": "(stan na {month})",
+           "ownData": "Ceny i liczby to własne dane The Starred Bill o restauracjach z gwiazdką (łącznie: {total}): gwiazdki z najnowszego wydania Przewodnika MICHELIN w każdym kraju, ceny menu ze stron restauracji, a gdy ich nie publikują, z aktualnej recenzji; stan na {checked}. Kwoty w dolarach przeliczono po kursach z {rates} ({day}).",
+           "updated": "Aktualizacja: {date}", "checked": "Gwiazdki i ceny: stan na {month}",
+           "faq": "Najczęstsze pytania", "inEnglish": "po angielsku", "usd": "{n} USD", "thousands": " ", "date": "{d} {m} {y}", "monthYear": "{m} {y}", "symbols": {"PLN": "zł"},
+           "months": ["styczeń", "luty", "marzec", "kwiecień", "maj", "czerwiec", "lipiec", "sierpień", "wrzesień", "październik", "listopad", "grudzień"],
+           "monthsOf": ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"],
+           "countries": {"France": "Francja", "Japan": "Japonia", "Italy": "Włochy", "Germany": "Niemcy", "Spain": "Hiszpania",
+                         "United States": "Stany Zjednoczone", "China": "Chiny", "United Kingdom": "Wielka Brytania", "Hong Kong": "Hongkong",
+                         "Switzerland": "Szwajcaria", "Belgium": "Belgia", "South Korea": "Korea Południowa", "Netherlands": "Holandia"}},
+}
+guide_translations = {}  # guide id -> {language: translated guide}
+for path in sorted((CONTENT / "guide-translations").glob("*/*.json")) if (CONTENT / "guide-translations").exists() else []:
+    lang, gid = path.parent.name, path.stem
+    where = f"guide-translations/{lang}/{path.name}"
+    g = tidy(read_json(path) or {})
+    if lang not in GUIDE_WORDS:
+        problem(where, f"\"{lang}\" isn't a language guides can be translated into yet ({', '.join(GUIDE_WORDS)}); add it to GUIDE_WORDS in build.py")
+        continue
+    if gid not in guides:
+        problem(where, f"translates guides/{gid}.json, which doesn't exist; a translation keeps the English guide's file name")
+        continue
+    if g.get("id") and g["id"] != gid:
+        problem(where, f"id is \"{g['id']}\" but the file is named {gid}.json; they must match")
+    for field in GUIDE_FIELDS:
+        if not g.get(field):
+            problem(where, f"needs a {field}")
+    title_len = len(re.sub(r"\{\{\w+\}\}", "0000", g.get("title", "")))
+    if title_len > 60:
+        problem(where, f"title is {title_len} characters; search results cut it off after 60")
+    if len(g.get("description", "")) > 160:
+        problem(where, f"description is {len(g['description'])} characters; keep it to 160")
+    for field in ("published", "updated"):
+        if g.get(field) and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", g[field]):
+            problem(where, f"{field} must be a date like 2026-10-05")
+    g["faq"] = [tidy(f) for f in g.get("faq", []) if tidy(f).get("q") and tidy(f).get("a")]
+    if len(g["faq"]) > FAQ_MAX:
+        problem(where, f"has {len(g['faq'])} questions; keep it to {FAQ_MAX}, and leave out any the article already answers")
+    g["keywords"] = [k.strip() for k in g.get("keywords", []) if isinstance(k, str) and k.strip()]
+    g["id"], g["lang"] = gid, lang
+    guide_translations.setdefault(gid, {})[lang] = g
+
 # Opening hours from the MICHELIN Guide (scripts/michelin_details.py hours): per restaurant, Monday first, days split by ";",
 # each day's sittings by "," as "1200-1430", a closed day empty. Near me's "Open on" filter and the restaurant pages read them.
 opening = read_json(CONTENT / "opening-hours.json") or {} if (CONTENT / "opening-hours.json").exists() else {}
@@ -796,6 +879,9 @@ def render(template, values):
                    "jsonld": SITE_JSONLD},
                   **values, icons=ICONS, copyYear=COPY_YEAR)
     values.setdefault("footPlaces", FOOT_PLACES_EN)
+    values.setdefault("footGuide", foot_guide())
+    for key in ("alternates", "langScripts", "langLinks"):
+        values.setdefault(key, "")
     out = re.sub(r"\{\{(\w+)\}\}", lambda m: values[m.group(1)], out)
     return out
 
@@ -950,7 +1036,7 @@ def build_place(p):
                                  f'<a href="{lang_paths[c]}" hreflang="{HREFLANG.get(c, c)}" lang="{HTML_LANG.get(c, ("en-GB",))[0]}">{e(LANG_LABELS.get(c, c.upper()))}</a>'
                                  for c in langs) if len(langs) > 1 else "", "ledger": ledger, "data": as_json(version), "rowsScript": rows_script,
             "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
-            "areas": areas_html(p, lang) if starred and not cuisine else "", "footPlaces": foot_places_html(lang, p["id"]),
+            "areas": areas_html(p, lang) if starred and not cuisine else "", "footPlaces": foot_places_html(lang, p["id"]), "footGuide": foot_guide(lang),
             "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
             "answer": answer, "quick": quick_html(quick, page, lang), "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
             "newStars": new_stars_html(p, page, lang) if not cuisine else "", "localNote": local_note_html(p, note),
@@ -5323,7 +5409,7 @@ KEYWORD_FILLER = {"a", "an", "the", "in", "is", "are", "there", "of"}
 
 def keyword_words(text):
     """A phrase reduced to its words, so a keyword check ignores case, punctuation and small words ("what is michelin star" is found in "What is a Michelin star?")."""
-    return " " + " ".join(w for w in re.findall(r"[a-z0-9]+", text.lower().replace("’", "'").replace("'", "")) if w not in KEYWORD_FILLER) + " "
+    return " " + " ".join(w for w in re.findall(r"[^\W_]+", text.lower().replace("’", "'").replace("'", "")) if w not in KEYWORD_FILLER) + " "
 
 
 def uk_date(d):
@@ -5363,6 +5449,246 @@ def guide_text(text, stats, blocks=None):
     text = re.sub(r"\{\{(\w+)\}\}", lambda m: e(stats[m.group(1)]) if m.group(1) in stats else m.group(0), text)
     return re.sub(r'<a data-guide="([\w-]+)">(.*?)</a>',
                   lambda m: f'<a href="/guides/{m.group(1)}/">{m.group(2)}</a>' if m.group(1) in guides else m.group(2), text)
+
+
+# ---------- Translated guides ----------
+GUIDE_AND = {"de": " und ", "es": " y ", "it": " e ", "pt": " e ", "pl": " i "}
+
+
+def guide_path(gid, lang="en"):
+    """A guide's address in a language: /guides/<id>/, or /de/guides/<id>/ for its German translation."""
+    return f"/guides/{gid}/" if lang == "en" else f"/{lang}/guides/{gid}/"
+
+
+def guide_langs(gid):
+    """The languages a guide is published in, English first."""
+    return ["en"] + sorted(guide_translations.get(gid, {}))
+
+
+def guide_num(n, lang):
+    """3478 -> "3.478" in German; Spanish and Polish group only from five digits ("3478", "12 345")."""
+    s = f"{int(n):,}"
+    if lang in ("es", "pl") and n < 10000:
+        return str(int(n))
+    return s.replace(",", GUIDE_WORDS[lang]["thousands"] or " ")
+
+
+def guide_usd(n, lang):
+    return GUIDE_WORDS[lang]["usd"].replace("{n}", guide_num(n, lang))
+
+
+def guide_money(n, cur, lang):
+    """A local price: "95 €", "450 zł", "R$ 450" (dollar-type symbols go first)."""
+    symbol = GUIDE_WORDS[lang].get("symbols", {}).get(cur) or CURRENCIES[cur]["symbol"]
+    amount = guide_num(round(n), lang)
+    return f"{symbol} {amount}" if symbol.endswith("$") else f"{amount} {symbol}"
+
+
+def guide_month(ym, lang):
+    """"2026-10" -> "Oktober 2026", "octubre de 2026"."""
+    w = GUIDE_WORDS[lang]
+    return w["monthYear"].replace("{m}", w["months"][int(ym[5:7]) - 1]).replace("{y}", ym[:4])
+
+
+def guide_date(d, lang):
+    """"2026-10-09" -> "9. Oktober 2026", "9 de octubre de 2026", "9 października 2026"."""
+    w = GUIDE_WORDS[lang]
+    month = (w.get("monthsOf") or w["months"])[int(d[5:7]) - 1]
+    return w["date"].replace("{d}", str(int(d[8:10]))).replace("{m}", month).replace("{y}", d[:4])
+
+
+def guide_stats_in(stats, lang):
+    """The guides' figures written the language's way: numbers and US dollars as it writes them, the price ranges as
+    "140–215 US$", country names in the language and the month checked. Anything else stays as in English."""
+    w = GUIDE_WORDS[lang]
+    num = lambda s: guide_num(int(s.replace(",", "")), lang)
+    out = dict(stats)
+    for k, v in stats.items():
+        if not isinstance(v, str):
+            continue
+        m = re.fullmatch(r"\$([\d,]+) and \$([\d,]+)", v)
+        if re.fullmatch(r"\d{1,3}(?:,\d{3})*", v):
+            out[k] = num(v)
+        elif re.fullmatch(r"\$\d{1,3}(?:,\d{3})*", v):
+            out[k] = w["usd"].replace("{n}", num(v[1:]))
+        elif m:
+            out[k] = w["usd"].replace("{n}", num(m.group(1)) + "–" + num(m.group(2)))
+        elif k.endswith("Country"):
+            out[k] = w["countries"].get(v, v)
+    month = site.get("updated", "")
+    if re.fullmatch(r"\d{4}-\d{2}", month):
+        out["checked"] = guide_month(month, lang)
+    return out
+
+
+def place_figure(pid, field, lang):
+    """{{in:<place>:<field>}} in a translated guide: a destination's figures, as its own page counts them.
+    n (starred restaurants), n1, n2, n3 (by stars), stars (stars between them), median (the typical dinner tasting menu,
+    in the local currency), from (the cheapest), fromName (the restaurant serving it) and three (its three-star
+    restaurants, named)."""
+    p = places.get(pid)
+    if not p:
+        return None
+    live = [r for r in members(p) if r.get("stars") in (1, 2, 3) and not r.get("status")]
+    menus = sorted((r for r in live if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=lambda r: r["dinner"])
+    if field == "n":
+        return guide_num(len(live), lang)
+    if field in ("n1", "n2", "n3"):
+        return guide_num(sum(1 for r in live if r["stars"] == int(field[1])), lang)
+    if field == "stars":
+        return guide_num(stars_of(live), lang)
+    if field == "median" and menus:
+        return guide_money(menus[len(menus) // 2]["dinner"], menus[0]["cur"], lang)
+    if field == "from" and menus:
+        return guide_money(menus[0]["dinner"], menus[0]["cur"], lang)
+    if field == "fromName" and menus:
+        return pick_lang(menus[0], "name", lang)
+    if field == "three":
+        names = sorted((pick_lang(r, "name", lang) for r in live if r["stars"] == 3), key=str.lower)
+        return ", ".join(names[:-1]) + GUIDE_AND[lang] + names[-1] if len(names) > 1 else "".join(names)
+    return None
+
+
+def guide_text_in(text, stats, lang):
+    """guide_text() for a translation: figures in the language's own way, {{in:<place>:<field>}} figures, links to
+    guides in that language where translated (else to the English one, saying so), and links to destination pages
+    to their version in that language where they have one."""
+    text = re.sub(r"\{\{in:([\w-]+):(\w+)\}\}", lambda m: e(place_figure(m.group(1), m.group(2), lang) or m.group(0)), text)
+    text = re.sub(r"\{\{(\w+)\}\}", lambda m: e(stats[m.group(1)]) if m.group(1) in stats else m.group(0), text)
+
+    def guide_link(m):
+        gid, inner = m.group(1), m.group(2)
+        if gid not in guides:
+            return inner
+        if lang in guide_translations.get(gid, {}):
+            return f'<a href="{guide_path(gid, lang)}">{inner}</a>'
+        return (f'<a href="{guide_path(gid)}" hreflang="en">{inner}<span class="lang-tag" aria-hidden="true">EN</span>'
+                f'<span class="sr-only"> ({GUIDE_WORDS[lang]["inEnglish"]})</span></a>')
+    text = re.sub(r'<a data-guide="([\w-]+)">(.*?)</a>', guide_link, text)
+    text = re.sub(r"(?<!\.)\.\.(?!\.)", ".", text)  # a name ending in a full stop ("schanz. restaurant.") at the end of a sentence
+
+    def place_link(m):
+        p = places.get(paths.get(m.group(2)))
+        return m.group(1) + (lang_path(m.group(2), lang) if p and lang in place_langs(p) else m.group(2)) + m.group(3)
+    return re.sub(r'(<a href=")(/[\w/-]*/)(")', place_link, text)
+
+
+def foot_guide(lang="en"):
+    """The footer's link to "What is a Michelin star?", in the page's language where the guide has that translation."""
+    g = guide_translations.get(GUIDE_PILLAR, {}).get(lang)
+    if g:
+        return f'<a href="{guide_path(GUIDE_PILLAR, lang)}" class="foot-guide">{e(g["h1"])}</a>'
+    return f'<a href="{guide_path(GUIDE_PILLAR)}" class="foot-guide" lang="en">What is a Michelin star?</a>'
+
+
+GUIDE_CRUMB = {"de": "Ratgeber", "es": "Guías", "it": "Guide", "pt": "Guias", "pl": "Poradniki"}  # navGuides in each language
+
+
+def guide_lang_values(gid, lang):
+    """What a guide page in one of its languages names about the others: hreflang links, the language buttons (written in
+    as links, which common.js redraws), the scripts of languages that live in lang-<code>.js, and the footer's pillar link."""
+    langs = guide_langs(gid)
+    out = {"footGuide": foot_guide(lang), "alternates": "", "langScripts": "", "langLinks": ""}
+    if len(langs) < 2:
+        return out
+    out["alternates"] = "".join(f'<link rel="alternate" hreflang="{HREFLANG.get(c, c)}" href="{SITE_URL}{guide_path(gid, c)}">\n' for c in langs) + \
+        f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{guide_path(gid)}">\n'
+    out["langScripts"] = "".join(f'<script src="{assets[f"lang-{c}.js"]}"></script>\n' for c in langs if c in LANG_FILES)
+    out["langLinks"] = "".join(f'<span aria-current="page">{e(LANG_LABELS.get(c, c.upper()))}</span>' if c == lang else
+                               f'<a href="{guide_path(gid, c)}" hreflang="{HREFLANG.get(c, c)}" lang="{HTML_LANG.get(c, ("en-GB",))[0]}">{e(LANG_LABELS.get(c, c.upper()))}</a>'
+                               for c in langs)
+    return out
+
+
+def guide_lang_data(gid, lang):
+    """The page data for a guide: its languages, and their addresses when it has more than one (so common.js switches
+    between them, and sends a visitor who reads one of them to it, as on destination pages)."""
+    langs = guide_langs(gid)
+    data = {"currencies": CURRENCIES, "languages": langs}
+    if len(langs) > 1:
+        data.update(lang=lang, langPaths={c: guide_path(gid, c) for c in langs})
+    return as_json(data)
+
+
+def guide_sources_in(sources, stats, lang):
+    """guide_sources_html() for a translation: the English guide's sources and the translation's own (`sources`, same
+    fields), dated the language's way, then where our own figures come from."""
+    w = GUIDE_WORDS[lang]
+    when = lambda d: guide_date(d, lang) if len(d) == 10 else guide_month(d, lang) if len(d) == 7 else d
+    items = []
+    for s in sources:
+        extra = (", " + when(str(s["date"]))) if s.get("date") else ""
+        extra += " " + w["sourceChecked"].replace("{month}", when(str(s["checked"])[:7])) if s.get("checked") else ""
+        items.append(f'<li><a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["title"])}</a>, {e(s["publisher"])}{e(extra)}.</li>')
+    name, url = EXCHANGE_RATES
+    d = currency_data.get("rateDate") or ""
+    own = e(w["ownData"]).replace("{total}", e(stats["total"])).replace("{checked}", e(stats["checked"])).replace(
+        "{rates}", f'<a href="{url}" target="_blank" rel="noopener">{name}</a>').replace(
+        " ({day})", f" ({guide_date(d, lang)})" if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) else "")
+    return (f'<section class="guide-sources" id="sources"><h2>{e(w["sources"])}</h2>'
+            + (f'<ul>{"".join(items)}</ul>' if items else "") + f'<p class="guide-sources-own">{own}</p></section>')
+
+
+def build_guide_translations(g, langs, stats):
+    """A guide's translations at /<language>/guides/<id>/: the article, its FAQ and structured data in that language,
+    with the English guide's picture."""
+    for lang in langs[1:]:
+        t = guide_translations[g["id"]][lang]
+        w = GUIDE_WORDS[lang]
+        st = guide_stats_in(stats, lang)
+        path = guide_path(g["id"], lang)
+        fill = lambda s: re.sub(r"\{\{(\w+)\}\}", lambda m: str(st.get(m.group(1), m.group(0))), s)
+        title, h1, description = fill(t["title"]), fill(t["h1"]), fill(t["description"])
+        body = guide_text_in(t["body"], st, lang)
+        for key in sorted(set(re.findall(r"\{\{(\w+Country)\}\}", json.dumps(t, ensure_ascii=False)))):
+            if key in stats and stats[key] not in w["countries"]:
+                print(f"  Guide {g['id']} ({lang}): no {lang} name for {stats[key]} in GUIDE_WORDS' countries, so it shows in English")
+        faqs = [{"q": guide_text_in(f["q"], st, lang), "a": guide_text_in(f["a"], st, lang)} for f in t["faq"]]
+        for leftover in sorted(set(re.findall(r"\{\{[\w:,-]+\}\}", body + "".join(f["q"] + f["a"] for f in faqs)))):
+            print(f"  Guide {g['id']} ({lang}): {leftover} isn't a figure the build knows in translations, so it shows as written")
+        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", " ".join([title, h1, body] + [f["q"] + " " + f["a"] for f in faqs]))).lower()
+        missing = [k for k in t["keywords"] if keyword_words(k) not in keyword_words(text)]
+        if missing:
+            print(f"  Guide {g['id']} ({lang}): these keywords don't appear word for word: " + "; ".join(missing))
+        locale = t.get("locale") or HTML_LANG.get(lang, (lang,))[0]
+        faq_html = (f'<section class="guide-faq" id="faq"><h2>{e(w["faq"])}</h2>' + "".join(
+            f'<h3>{f["q"]}</h3><p>{f["a"]}</p>' for f in faqs) + "</section>") if faqs else ""
+        img = guide_image(g)
+        alt = t.get("imageAlt") or g.get("imageAlt", "")
+        hero = (f'<figure class="guide-hero"><img src="{img}.jpg" alt="{e(alt)}" width="1600" height="900" '
+                f'fetchpriority="high" decoding="async"></figure>\n') if img else ""
+        sources = g.get("sources", []) + t.get("sources", [])
+        main = (f'<article lang="{e(locale)}">\n<h1>{e(h1)}</h1>\n'
+                f'<p class="prose-date">{e(w["updated"].replace("{date}", guide_date(t["updated"], lang)))} · {e(w["checked"].replace("{month}", st["checked"]))}</p>\n'
+                f'{hero}{body}\n{faq_html}\n{guide_sources_in(sources, st, lang)}\n</article>')
+        strip = lambda s: html.unescape(re.sub(r"<[^>]+>", "", s))
+        home = word(lang, "crumbHome", {})
+        graph = [
+            {"@type": "BreadcrumbList", "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": home, "item": SITE_URL + "/"},
+                {"@type": "ListItem", "position": 2, "name": GUIDE_CRUMB[lang], "item": SITE_URL + "/guides/"},
+                {"@type": "ListItem", "position": 3, "name": h1, "item": SITE_URL + path}]},
+            {"@type": "Article", "headline": h1, "description": description, "inLanguage": locale,
+             "datePublished": t.get("published") or g["published"], "dateModified": t["updated"], "mainEntityOfPage": SITE_URL + path,
+             **({"keywords": ", ".join(t["keywords"])} if t["keywords"] else {}),
+             "image": [SITE_URL + img + ".jpg", SITE_URL + img + "-og.jpg"] if img else SITE_URL + "/og/default.png",
+             "translationOfWork": {"@type": "Article", "url": SITE_URL + guide_path(g["id"]), "inLanguage": g.get("lang", "en-US")},
+             **({"citation": guide_citations({"sources": sources})} if sources else {}),
+             "author": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
+             "publisher": ORGANIZATION, "isPartOf": {"@id": WEBSITE["@id"]}},
+        ]
+        if faqs:
+            graph.append({"@type": "FAQPage", "mainEntity": [
+                {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in faqs]})
+        write(path, render("guide.html", {
+            **guide_lang_values(g["id"], lang), "data": guide_lang_data(g["id"], lang),
+            "title": e(title), "description": e(description), "canonical": SITE_URL + path, "htmlLang": e(HTML_LANG.get(lang, (lang,))[0]),
+            "ogType": "article", "ogAlt": e(alt or h1), **({"ogImage": SITE_URL + img + "-og.jpg"} if img else {}),
+            "keywordsMeta": f'<meta name="keywords" content="{e(", ".join(t["keywords"]))}">\n' if t["keywords"] else "",
+            "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
+            "crumbs": f'<a href="/">{e(home)}</a><a href="/guides/">{e(GUIDE_CRUMB[lang])}</a><span aria-current="page">{e(h1)}</span>',
+            "main": main, "mainClass": "wrap prose guide", "footPlaces": foot_places_html(lang),
+        }))
 
 
 # The order of the Guides page for guides published the same day: the pillar first, then as the content briefs number them.
@@ -5462,6 +5788,9 @@ def build_guides():
     for g in guides.values():
         path = f"/guides/{g['id']}/"
         body = guide_bodies()[g["id"]]
+        langs = guide_langs(g["id"])
+        if len(langs) > 1:
+            build_guide_translations(g, langs, stats)
         for leftover in sorted(set(re.findall(r"\{\{[\w:,-]+\}\}", body))):
             print(f"  Guide {g['id']}: {leftover} isn't a figure or table the build knows, so it shows as written")
         text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", " ".join([g["title"], g["h1"], body] + [f["q"] + " " + f["a"] for f in g["faq"]]))).lower()
@@ -5491,7 +5820,9 @@ def build_guides():
              "image": [SITE_URL + img + ".jpg", SITE_URL + img + "-og.jpg"] if img else SITE_URL + "/og/default.png",
              "author": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
              "publisher": ORGANIZATION, "isPartOf": {"@id": WEBSITE["@id"]},
-             **({"citation": guide_citations(g)} if g.get("sources") else {})},
+             **({"citation": guide_citations(g)} if g.get("sources") else {}),
+             **({"workTranslation": [{"@type": "Article", "url": SITE_URL + guide_path(g["id"], c), "inLanguage": HTML_LANG.get(c, (c,))[0]}
+                                     for c in langs[1:]]} if len(langs) > 1 else {})},
         ]
         # Results pages put their questions in as headings (no separate FAQ), so the FAQPage data comes from those.
         questions = faqs or g.get("ldFaq") or []
@@ -5499,13 +5830,14 @@ def build_guides():
             graph.append({"@type": "FAQPage", "mainEntity": [
                 {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in questions]})
         write(path, render("guide.html", {
+            **guide_lang_values(g["id"], "en"), "data": guide_lang_data(g["id"], "en"),
             "title": e(g["title"]), "description": e(g["description"]), "canonical": SITE_URL + path, "htmlLang": e(g.get("lang", "en-US")),
             "ogType": "article", "ogAlt": e(g.get("imageAlt") or g["h1"]),
             **({"ogImage": SITE_URL + img + "-og.jpg"} if img else {}),
             "keywordsMeta": f'<meta name="keywords" content="{e(", ".join(g["keywords"]))}">\n' if g["keywords"] else "",
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": home_crumb + '<a href="/guides/">Guides</a>' + f'<span aria-current="page">{e(g["h1"])}</span>',
-            "main": main, "mainClass": "wrap prose guide", "data": data,
+            "main": main, "mainClass": "wrap prose guide",
         }))
     order = lambda g: (g["published"], GUIDE_ORDER.index(g["id"]) if g["id"] in GUIDE_ORDER else len(GUIDE_ORDER), g["id"])
     def read_time(g):
@@ -5522,13 +5854,19 @@ def build_guides():
         return (f'<p class="guide-meta">' + (f'<span class="guide-fig">{fig}</span>' if fig else "")
                 + f'<span class="guide-time">{read_time(g)}</span></p>')
     LAZY, EAGER = 'loading="lazy"', 'fetchpriority="high"'
+    def also_in(g):
+        """"Also in: Deutsch · Español…", linking a guide's translations."""
+        langs = guide_langs(g["id"])[1:]
+        return ('<p class="guide-langs">Also in: ' + " · ".join(
+            f'<a href="{guide_path(g["id"], c)}" hreflang="{HREFLANG.get(c, c)}" lang="{HTML_LANG.get(c, (c,))[0]}">{e(GUIDE_WORDS[c]["name"])}</a>'
+            for c in langs) + "</p>") if langs else ""
     def card(g):
         return (f'<li>{picture(g, LAZY)}<div><h3><a href="/guides/{g["id"]}/">{e(g["h1"])}</a></h3>'
                 f'<p>{e(g["summary"])}</p>{meta(g)}</div></li>')
     pillar = guides.get(GUIDE_PILLAR)
     feature = (f'<article class="guide-feature">{picture(pillar, EAGER)}<div>'
                f'<p class="guide-kicker">Start here</p><h2><a href="/guides/{pillar["id"]}/">{e(pillar["h1"])}</a></h2>'
-               f'<p>{e(pillar["description"])}</p>{meta(pillar)}<span class="guide-go" aria-hidden="true">Read the guide →</span></div></article>') if pillar else ""
+               f'<p>{e(pillar["description"])}</p>{meta(pillar)}{also_in(pillar)}<span class="guide-go" aria-hidden="true">Read the guide →</span></div></article>') if pillar else ""
     rest = sorted((g for g in guides.values() if g is not pillar), key=order)
     groups = [(key, *GUIDE_SECTIONS[key], [g for g in rest if g.get("section") == key]) for key in GUIDE_SECTIONS]
     # Results pages: the latest ceremony first.
@@ -6453,6 +6791,8 @@ def sitemap_dates():
     out["/"] = out["/near-me/"] = out["/pick/"] = latest(source_files.values())
     for gid, g in guides.items():
         out[f"/guides/{gid}/"] = g["updated"]
+        for lang, t in guide_translations.get(gid, {}).items():
+            out[guide_path(gid, lang)] = t["updated"]
     out["/guides/"] = max((g["updated"] for g in guides.values()), default=None)
     out["/privacy/"] = days.get("src/privacy.html")
     for r in restaurants:
@@ -6474,7 +6814,7 @@ def build_extras():
         shutil.copytree(SRC / "img", OUT / "img", ignore=shutil.ignore_patterns("*-src.*"))
     if (ROOT / "CNAME").exists():
         shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
-    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) for lang in place_langs(p)] + (["/guides/"] + [f"/guides/{g}/" for g in guides] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + ["/privacy/"]
+    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) for lang in place_langs(p)] + (["/guides/"] + [guide_path(g, lang) for g in guides for lang in guide_langs(g)] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + ["/privacy/"]
     dates = sitemap_dates()
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

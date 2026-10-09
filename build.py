@@ -5366,7 +5366,7 @@ def history_sentence(r):
     years = int(last["date"][:4]) - int(first["date"][:4])
     out = (f"The {menu} cost {money(first['price'], cur)} in {full_month(first['date'])} and costs {money(last['price'], cur)} today, "
            + (f"{rise}% more in {years} years" if rise > 0 else f"{-rise}% less" if rise < 0 else "the same") + ".")
-    peak = max(points, key=lambda p: (p["price"], p["date"]))
+    peak = min(points, key=lambda p: (-p["price"], p["date"]))  # the first time it reached its highest price
     if peak["price"] > last["price"]:
         out += f" It was highest at {money(peak['price'], cur)} in {full_month(peak['date'])}."
     if first.get("wine") and last.get("wine"):

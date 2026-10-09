@@ -11,7 +11,7 @@
   "reviews": 4744,
   "dinner": 320,
   "dinnerType": "menu",
-  "dinnerNote": "Festival menu",
+  "dinnerNote": "Festival menu: appetisers, 12 dishes and 4 desserts, for the whole table",
   "dinnerNoteZh": "「Festival」套餐",
   "dinnerNoteEs": "Menú Festival",
   "wine": 160,
@@ -19,7 +19,7 @@
   "source": "https://www.7canibales.com/restaurantes/celler-can-roca-2026/",
   "lunch": 320,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
+  "lunchNote": "The same menu at lunch",
   "lunchNoteZh": "午餐供應相同套餐",
   "lunchNoteEs": "El mismo menú al mediodía",
   "lunchWine": 160,
@@ -31,5 +31,26 @@
   "placeId": "ChIJk14z3xHnuhIR-sQ5JACOBic",
   "michelinId": "220312",
   "chef": "Joan Roca i Fontané",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Festival Menu",
+      "meal": "dinner",
+      "price": 320,
+      "wine": 160,
+      "note": "Appetisers, 12 dishes and 4 desserts; the whole table orders it; drinks extra, with an optional wine pairing"
+    }
+  ],
+  "menusSource": "https://www.7canibales.com/restaurantes/celler-can-roca-2026/",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2009,
+  "dressCode": "No dress code, but the restaurant recommends dressing smartly, with long trousers and closed shoes for men.",
+  "duration": "About three and a half hours.",
+  "bookingOpens": "Online only, up to 11 months ahead. The next month's tables are released at midnight Central European Time on the 1st of each month. Tables are for 2 to 12 people.",
+  "bookingUrl": "https://cellercanroca.com/reservas/reservation-information/pre-reserves-en.html",
+  "bookingPhone": "+34 972 222 157 (questions only, Tuesday to Saturday 10am–6pm)",
+  "waitlist": "If your date is full, join the waiting list for that day on the booking page; each day has its own list, so you can sign up for several.",
+  "cancellation": "No prepayment, but a credit card guarantees the booking. Cancel at least 10 days ahead for free; after that it's €100 per person. Please reconfirm by email 10 days before.",
+  "infoSource": "https://cellercanroca.com/en/faqs/",
+  "infoChecked": "2026-10-09"
 }

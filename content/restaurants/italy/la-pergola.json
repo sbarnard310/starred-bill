@@ -10,10 +10,10 @@
   "reviews": 1461,
   "dinner": 350,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 10 courses (7 courses €295); dinner only",
+  "dinnerNote": "Gourmet menu, 10 courses (7 courses €295; à la carte from €230); dinner only",
   "dinnerNoteIt": "Menu degustazione, 10 portate (7 portate €295); solo a cena",
-  "sourceType": "press",
-  "source": "https://www.cookist.it/quanto-costa-il-menu-degustazione-nei-grandi-stellati-italiani-20-indirizzi-da-provare/",
+  "sourceType": "site",
+  "source": "https://romecavalieri.com/la-pergola/",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteIt": "Solo a cena",
@@ -27,5 +27,60 @@
     "vegan"
   ],
   "chef": "Heinz Beck",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "hotel": "the Rome Cavalieri, a Waldorf Astoria hotel",
+  "menus": [
+    {
+      "name": "10-course Gourmet menu",
+      "meal": "dinner",
+      "price": 350,
+      "courses": 10
+    },
+    {
+      "name": "7-course Gourmet menu",
+      "meal": "dinner",
+      "price": 295,
+      "courses": 7,
+      "note": "The 10-course menu without three of its dishes"
+    },
+    {
+      "name": "Four-course à la carte with dessert",
+      "meal": "dinner",
+      "price": 300
+    },
+    {
+      "name": "Three-course à la carte with dessert",
+      "meal": "dinner",
+      "price": 270
+    },
+    {
+      "name": "Two-course à la carte with dessert",
+      "meal": "dinner",
+      "price": 230
+    }
+  ],
+  "menusSource": "https://romecavalieri.com/la-pergola/",
+  "menusChecked": "2026-10-09",
+  "priceHistory": [
+    {
+      "date": "2018-04",
+      "price": 245,
+      "source": "https://romecavalieri.com/wp-content/uploads/2018/04/FAQ-La-Pergola-EN.pdf"
+    },
+    {
+      "date": "2020-09",
+      "price": 290,
+      "source": "https://romecavalieri.com/wp-content/uploads/2020/09/La-Pergola-FAQ-EN-2020.pdf"
+    }
+  ],
+  "starsSince": 2005,
+  "dressCode": "Jacket required for men; a tie isn't needed. There's no set rule for women, but the restaurant is quite formal.",
+  "children": "Children are welcome as long as they're supervised at all times. There's no children's menu, but the kitchen will make simple dishes on request.",
+  "bookingOpens": "Online about 4–5 months ahead, with further dates opened at the start of each month. The restaurant suggests booking a few weeks ahead; window tables go first.",
+  "bookingPhone": "+39 06 3509 2152 (reservations office, Monday to Friday 10:30am–6:30pm Rome time)",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/lapergola",
+  "cancellation": "A credit card guarantees the booking. Changes or cancellations less than 72 hours ahead are charged.",
+  "groups": "Tables of 4 or more choose one of the tasting menus. Groups of 6 to 16 book by email (ROMHI.LaPergolaReservations@waldorfastoria.com); 10 to 16 have the restaurant's private area.",
+  "infoSource": "https://romecavalieri.com/wp-content/uploads/2020/09/La-Pergola-FAQ-EN-2020.pdf",
+  "infoChecked": "2026-10-09"
 }

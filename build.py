@@ -258,6 +258,9 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
             problem(where, f"menu {i + 1} needs a name, a price (a number) and meal set to {', '.join(MENU_MEALS)}")
         elif any(m.get(k) is not None and not isinstance(m[k], (int, float)) for k in ("wine", "courses")):
             problem(where, f"menu {i + 1}: wine and courses must be numbers")
+    for i, v in enumerate(r.get("alsoTry") or []):
+        if not isinstance(v, dict) or not v.get("name") or (v.get("price") is not None and not isinstance(v["price"], (int, float))):
+            problem(where, f"alsoTry {i + 1} needs a name, and its price must be a number")
     for i, h in enumerate(r.get("priceHistory") or []):
         if not isinstance(h, dict) or not re.fullmatch(r"\d{4}-\d{2}", str(h.get("date", ""))) or not isinstance(h.get("price"), (int, float)):
             problem(where, f"priceHistory {i + 1} needs a date like 2019-10 and a price (a number)")
@@ -380,7 +383,7 @@ pages = list(places.values())
 
 
 # Fields only a restaurant's own page shows (build_restaurant_pages()), kept out of destination pages' data.
-PAGE_ONLY = ("menus", "menusSource", "menusChecked", "priceHistory", "starsSince", "dressCode", "bookingOpens", "bookingPhone", "bookingUrl",
+PAGE_ONLY = ("servicePct", "hotel", "alsoTry", "waitlist", "duration", "menus", "menusSource", "menusChecked", "priceHistory", "starsSince", "dressCode", "bookingOpens", "bookingPhone", "bookingUrl",
              "walkIns", "groups", "groupsUrl", "cancellation",
              "children", "infoSource", "infoChecked")
 
@@ -5231,7 +5234,8 @@ def build_guides():
 # its peers, a map of the starred restaurants nearby and a FAQ. The address is the file name, which never changes (wishlists
 # store it), so a restaurant keeps its page if it moves to another place page. English only. RESTAURANT_PAGES lists the
 # ones built so far: the most-searched first, for the owner to check before the rest follow.
-RESTAURANT_PAGES = ("le-bernardin",)
+RESTAURANT_PAGES = ("le-bernardin", "la-pergola", "restaurant-gordon-ramsay", "osteria-francescana", "core-by-clare-smyth", "le-cinq", "jade-dragon",
+                    "the-fat-duck", "el-celler-de-can-roca", "the-ledbury", "atelier-crenn")
 # The owner's rule (9 Oct 2026): at most 10 questions per page, and none that repeats what the page already says. On a
 # restaurant page the questions are its own section headings, each with its answer straight under it; the structured data
 # (FAQPage) lists them, most-asked first.
@@ -5357,7 +5361,7 @@ def history_sentence(r):
     if len(points) < 2:
         return ""
     first, last = points[0], points[-1]
-    cur, menu = r["cur"], (main_menu(r) or {}).get("name", "dinner menu")
+    cur, menu = r["cur"], menu_label(main_menu(r)) if main_menu(r) else "dinner menu"
     rise = round((last["price"] / first["price"] - 1) * 100)
     years = int(last["date"][:4]) - int(first["date"][:4])
     out = (f"The {menu} cost {money(first['price'], cur)} in {full_month(first['date'])} and costs {money(last['price'], cur)} today, "
@@ -5395,7 +5399,7 @@ def history_html(r):
     svg = (f'<svg class="rp-history-chart" viewBox="0 0 {w} {h}" role="img" aria-label="{e(history_sentence(r))}">' + "".join(bars) + "</svg>")
     rows = "".join(f'<tr><td>{"Now" if p.get("now") else e(full_month(p["date"]))}</td><td class="num">{money(p["price"], cur)}</td>'
                    f'<td class="num">{money(p["price"] + p["wine"], cur) if p.get("wine") else "–"}</td>'
-                   f'<td>' + (f'<a href="{e(p["source"])}">{"Internet Archive copy" if "web.archive.org" in p["source"] else urllib.parse.urlsplit(p["source"]).netloc.replace("www.", "")}</a>' if p.get("source") else "Our latest check") + "</td></tr>"
+                   f'<td>' + (f'<a href="{e(p["source"])}">{"Internet Archive copy" if "web.archive.org" in p["source"] else "the restaurant’s own document"}</a>' if p.get("source") else "Our latest check") + "</td></tr>"
                    for p in points)
     return ('<section id="history" data-nocx>\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Price history</span>'
             f'<h2 style="margin-top: 6px">Has {e(r["name"])} got more expensive?</h2><p>{e(history_sentence(r))}</p></div></div>\n'
@@ -5404,7 +5408,7 @@ def history_html(r):
             '    <details class="rp-fold"><summary>The figures and where they come from</summary><div class="table-scroll"><table class="rp-table">'
             '<thead><tr><th>When</th><th class="num">Menu</th><th class="num">With wine</th><th>Source</th></tr></thead>'
             f"<tbody>{rows}</tbody></table></div>"
-            '<p class="rp-note">Past prices come from copies of the restaurant’s own menu page saved by the Internet Archive’s Wayback Machine, on the date shown.</p></details>\n'
+            '<p class="rp-note">Past prices come from the restaurant’s own website on the date shown: its menu page as saved by the Internet Archive’s Wayback Machine, or its own documents.</p></details>\n'
             "  </div>\n</section>\n")
 
 
@@ -5417,30 +5421,37 @@ def cheaper_html(r, peers_place, peers, live):
     menus = [m for m in r.get("menus", []) if d is not None and m["price"] < d]
     if not menus and r.get("lunch") is not None and d is not None and r["lunch"] < d and not r.get("noLunch"):
         menus = [{"name": "Lunch", "meal": "lunch", "price": r["lunch"], "note": r.get("lunchNote", "")}]
-    main = (main_menu(r) or {}).get("name", "dinner menu")
+    main = menu_label(main_menu(r)) if main_menu(r) else "dinner menu"
     for m in sorted(menus, key=lambda m: m["price"]):
-        bits = [str(m["courses"]) + " courses" if m.get("courses") else "", m.get("note", ""), money(d - m["price"], cur) + " less than the " + main]
+        bits = [str(m["courses"]) + " courses" if m.get("courses") and "course" not in m["name"].lower() else "", m.get("note", ""), money(d - m["price"], cur) + " less than the " + main]
         items.append(f'<li><strong>{e(m["name"])}</strong> <span class="num">{money(m["price"], cur)}</span>'
                      f'<span>{e(" · ".join(x for x in bits if x))}</span></li>')
+    # Sister venues: the same kitchen's cheaper offshoots (Francescana at Maria Luigia), from `alsoTry`.
+    for v in r.get("alsoTry", []):
+        name_html = f'<a href="{e(v["url"])}">{e(v["name"])}</a>' if v.get("url") else f"<strong>{e(v['name'])}</strong>"
+        items.append(f'<li>{name_html} <span class="num">{money(v["price"], cur) if v.get("price") is not None else ""}</span>'
+                     f'<span>{e(v.get("note", ""))}</span></li>')
     if peers_place and peers and peers[0] is not r and d is not None and peers[0]["dinner"] < d:
         q = peers[0]
         items.append(f'<li><a href="{e(restaurant_href(q))}">{e(q["name"])}</a> <span class="num">{money(q["dinner"], cur)}</span>'
                      f'<span>The cheapest {STAR_WORDS[r["stars"]]}-star dinner menu in {e(in_sentence(peers_place))}{", " + e(q["cuisine"]) if q.get("cuisine") else ""}</span></li>')
-    chefs = set(chef_names(r.get("chef")))
-    for q in sorted((q for q in live if q is not r and chefs & set(chef_names(q.get("chef")))), key=lambda q: (q.get("dinner") or 1e9)):
-        items.append(f'<li><a href="{e(restaurant_href(q))}">{e(q["name"])}</a> <span class="num">{money(q["dinner"], q["cur"]) if q.get("dinner") is not None else ""}</span>'
-                     f'<span>Also run by {e(r["chef"])} · {q["stars"]} MICHELIN star{"s" if q["stars"] > 1 else ""} · {e(place_name(q))}</span></li>')
     if not items:
         return "", []
     q = f"What is the cheapest way to eat at {name}?"
     first = sorted(menus, key=lambda m: m["price"])[0] if menus else None
-    a = (f"The {menu_label(first)}, at {money(first['price'], cur)} per person" + (f" for {first['courses']} courses" if first.get("courses") else "")
+    sister = min((v for v in r.get("alsoTry", []) if v.get("price") is not None and d is not None and v["price"] < d), key=lambda v: v["price"], default=None)
+    a = (f"The {menu_label(first)}, at {money(first['price'], cur)} per person" + (f" for {first['courses']} courses" if first.get("courses") and "course" not in first["name"].lower() else "")
          + (f": {first['note'][:1].lower() + first['note'][1:].rstrip('.')}." if first.get("note") and first.get("meal") == "lounge" else ".")
          + (f" That’s {money(d - first['price'], cur)} less than the {main}." if d is not None else "")) if first else \
-        f"{name} has no cheaper menu; the nearest saving is another {STAR_WORDS[r['stars']]}-star restaurant, listed below."
+        (f"{name} has no cheaper menu, but {sister['name']} serves its cooking for {money(sister['price'], cur)}." if sister else
+         f"{name} has no cheaper menu; the nearest saving is another {STAR_WORDS[r['stars']]}-star restaurant, listed below.")
     return ('<section id="cheaper">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Spend less</span>'
             f'<h2 style="margin-top: 6px">{e(q)}</h2><p>{e(a)}</p></div></div>\n'
             f'    <ul class="rp-list">{"".join(items)}</ul>\n  </div>\n</section>\n'), [(q, a)]
+
+
+def sentence_case(text):
+    return text[:1].upper() + text[1:]
 
 
 def qa_block(q, a_html):
@@ -5471,6 +5482,8 @@ def book_html(r):
         steps.append(("Where to book", " ".join(x for x in (
             f'<a class="rp-cta" href="{e(r["bookingUrl"])}">Book on {e(via or "their website")}</a>' if r.get("bookingUrl") else "",
             f"Or call {e(r['bookingPhone'])}." if r.get("bookingPhone") else "") if x)))
+    if r.get("waitlist"):
+        steps.append(("If it’s full", e(r["waitlist"])))
     if r.get("cancellation"):
         steps.append(("Cancellations", e(r["cancellation"])))
     if r.get("walkIns"):
@@ -5494,6 +5507,8 @@ def before_html(r):
         add(f"What is the dress code at {r['name']}?", r["dressCode"])
     if r.get("children"):
         add(f"Can you take children to {r['name']}?", r["children"])
+    if r.get("duration"):
+        add(f"How long does a meal at {r['name']} take?", r["duration"])
     if not blocks:
         return "", []
     if hours_lines(r):
@@ -5502,7 +5517,7 @@ def before_html(r):
             '<p class="rp-hours-list">' + "".join(f'<span class="rp-hours"><b>{e(d)}</b> {e(h)}</span>' for d, h in hours_lines(r)) + "</p>"
             + f'<p class="rp-note">{"Hours" if timed else "Days"} from the MICHELIN Guide, {e(month_year(HOURS_CHECKED[:7], "en"))}; check before you go, as they change on holidays.</p>')
     return ('<section id="visit">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Before you go</span>'
-            f'<h2 style="margin-top: 6px">Dress code, children and opening hours at {e(r["name"])}</h2></div></div>\n'
+            f'<h2 style="margin-top: 6px">{e(sentence_case(and_list([x for x, k in (("dress code", "dressCode"), ("children", "children"), ("how long it takes", "duration")) if r.get(k)] + (["opening hours"] if hours_lines(r) else []))))} at {e(r["name"])}</h2></div></div>\n'
             '    <div class="faq rp-qa">' + "".join(blocks) + f"</div>\n    {info_note(r)}\n  </div>\n</section>\n"), qa
 
 
@@ -5510,33 +5525,58 @@ def before_html(r):
 CUISINE_SAME = {"fish and seafood": "seafood"}
 
 
-def similar_elsewhere(r, live, peers):
-    """Restaurants like it in other cities: the same cuisine with the same stars (topped up with one star fewer), the most
-    reviewed first."""
-    if not r.get("cuisine"):
-        return []
-    here = {q["id"] for q in peers} | {r["id"]}
-    city = r["_chain"][1] if r["cityType"] == "district" else r["_chain"][0]
-    kind = CUISINE_SAME.get(r["cuisine"].lower(), r["cuisine"].lower())
-    same = [q for q in live if q["id"] not in here and q["stars"] >= max(1, r["stars"] - 1) and city not in q["_chain"]
-            and CUISINE_SAME.get((q.get("cuisine") or "").lower(), (q.get("cuisine") or "").lower()) == kind]
-    return sorted(same, key=lambda q: (q["stars"] != r["stars"], -(q.get("reviews") or 0)))[:6]
+MAY_LIKE_MAX = 6
+MAY_LIKE_NEAR_KM = 3  # "nearby" suggestions beyond the nearest list, within this distance
 
 
-def similar_html(r, live, peers):
-    found = similar_elsewhere(r, live, peers)
-    if len(found) < 2:
+def may_like(r, live, skip):
+    """Other restaurants you may like, each with its reason: the same chef, the same cuisine (same stars or one fewer), the
+    same stars in the same city, our other restaurant pages with the same stars, then the next nearest. Restaurants with their own page come
+    first, so these pages link to each other; ones already listed on the page (`skip`: the nearby list and the comparison
+    table) are left out. At most three for any one reason, so the list stays varied."""
+    chefs = set(chef_names(r.get("chef")))
+    kind = CUISINE_SAME.get((r.get("cuisine") or "").lower(), (r.get("cuisine") or "").lower())
+    home = r["_chain"][1] if r["cityType"] == "district" else r["_chain"][0]
+    s_ = r["stars"]
+    found = []
+    for q in live:
+        if q["id"] in skip or q["id"] == r["id"]:
+            continue
+        qkind = CUISINE_SAME.get((q.get("cuisine") or "").lower(), (q.get("cuisine") or "").lower())
+        page = 30 if q.get("page") else 0
+        if chefs & set(chef_names(q.get("chef"))):
+            found.append((100 + page, "chef", f"Also {r['chef']}", q))
+        elif kind and qkind == kind and q["stars"] >= max(1, s_ - 1):
+            found.append((40 + (10 if q["stars"] == s_ else 0) + page, "cuisine", f"{q['cuisine']}, {STAR_WORDS[q['stars']]} star{'s' if q['stars'] > 1 else ''}", q))
+        elif home in q["_chain"] and q["stars"] == s_:
+            found.append((30 + page, "city", f"Also {STAR_WORDS[s_]} star{'s' if s_ > 1 else ''} in {places[home]['name']}", q))
+        elif page and q["stars"] == s_:
+            found.append((15 + page, "page", f"Also {STAR_WORDS[s_]} star{'s' if s_ > 1 else ''}", q))
+        elif r.get("lat") is not None and q.get("lat") is not None and abs(q["lat"] - r["lat"]) < 0.1 and abs(q["lng"] - r["lng"]) < 0.15:
+            km = metres(r["lat"], r["lng"], q["lat"], q["lng"]) / 1000
+            if km <= MAY_LIKE_NEAR_KM:
+                found.append((20 + page - km, "near", dist_text(km, r["country"]).split(" (")[0] + " away", q))
+    found.sort(key=lambda f: (-f[0], -(f[3].get("reviews") or 0)))
+    picked, per = [], {}
+    for score, why, label, q in found:
+        if per.get(why, 0) < (2 if why == "page" else 3) and len(picked) < MAY_LIKE_MAX:
+            per[why] = per.get(why, 0) + 1
+            picked.append((label, q))
+    return picked
+
+
+def may_like_html(r, live, skip):
+    picked = may_like(r, live, skip)
+    if len(picked) < 2:
         return ""
-    items = "".join(
-        f'<li><a href="{e(restaurant_href(q))}">{e(q["name"])}</a> <span class="stars" aria-label="{q["stars"]} MICHELIN star{"s" if q["stars"] > 1 else ""}">'
-        + '<svg><use href="#star"/></svg>' * q["stars"] + f'</span> <span class="num">{(money(q["dinner"], q["cur"]) + usd_after(q["dinner"], q["cur"])) if q.get("dinner") is not None else ""}</span>'
-        f'<span>{e(place_name(q))}, {e(places[q["country"]]["name"])}' + (f' · Chef {e(q["chef"])}' if q.get("chef") else "") + "</span></li>" for q in found)
-    levels = sorted({q["stars"] for q in found}, reverse=True)
-    stars = "- and ".join(STAR_WORDS[x] for x in levels) + "-star"  # "three- and two-star"
-    return ('<section id="similar">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Elsewhere</span>'
-            f'<h2 style="margin-top: 6px">Other {stars} {e(r["cuisine"].lower())} restaurants</h2>'
-            f'<p>If you like {e(r["name"])}: the most reviewed {stars} {e(r["cuisine"].lower())} restaurants in other cities, with their dinner menus.</p></div></div>\n'
-            f'    <ul class="rp-list">{items}</ul>\n  </div>\n</section>\n')
+    def card(label, q):
+        price = (money(q["dinner"], q["cur"]) + usd_after(q["dinner"], q["cur"])) if q.get("dinner") is not None else ""
+        return (f'<li><span class="rp-why">{e(label)}</span><a href="{e(restaurant_href(q))}">{e(q["name"])}</a> '
+                f'<span class="stars" aria-label="{q["stars"]} MICHELIN star{"s" if q["stars"] > 1 else ""}">' + '<svg><use href="#star"/></svg>' * q["stars"] + "</span>"
+                f'<span>{e(", ".join(x for x in (place_name(q), places[q["country"]]["name"]) if x))}' + (f" · dinner {e(price)}" if price else "") + "</span></li>")
+    return ('<section id="may-like">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">If you like ' + e(r["name"]) + '</span>'
+            '<h2 style="margin-top: 6px">Other restaurants you may like</h2></div></div>\n'
+            f'    <ul class="rp-list rp-like">{"".join(card(l, q) for l, q in picked)}</ul>\n  </div>\n</section>\n')
 
 
 def restaurant_og(r):
@@ -5562,7 +5602,7 @@ def restaurant_answer(r, stay):
     main, cheapest = main_menu(r), cheapest_menu(r)
     if d is not None:
         if dtype == "menu":
-            out.append(f"The {main['name'] if main else 'dinner tasting menu'} at {name} costs {m(d)}{usd_after(d, cur)} per person"
+            out.append(f"The {menu_label(main) if main else 'dinner tasting menu'} at {name} costs {m(d)}{usd_after(d, cur)} per person"
                        + (f", or {m(d + w)} with the wine pairing." if w else "; there’s no wine pairing." if r.get("noPairing") else "."))
         elif dtype == "main":
             out.append(f"Main courses at {name} cost about {m(d)}{usd_after(d, cur)} at dinner.")
@@ -5578,7 +5618,7 @@ def restaurant_answer(r, stay):
     if cheapest:
         out.append(f"The cheapest way in is the {m(cheapest['price'])} {menu_label(cheapest)}.")
     if d is not None and dtype in ("menu", "spend"):
-        out.append(f"Prices are {SERVICE_SAYS.get(kind, 'before service')}" + (
+        out.append((f"Prices are {SERVICE_SAYS.get(kind, 'before service')}" if kind not in ("included", "tax") else f"Prices {SERVICE_SAYS[kind].replace('including', 'include')}") + (
             f"; with about {pct:g}% for {SERVICE_ADDS[kind]}, dinner for two{' with wine' if w else ''} comes to roughly {m(round((d + (w or 0)) * 2 * (1 + pct / 100), -1))}."
             if pct and kind in SERVICE_ADDS else f", so dinner for two{' with wine' if w else ''} comes to {m((d + (w or 0)) * 2)}."))
     return " ".join(out)
@@ -5634,8 +5674,9 @@ def peers_of(r, live):
 def near_restaurants(r, live):
     if r.get("lat") is None:
         return []
-    found = sorted((metres(r["lat"], r["lng"], q["lat"], q["lng"]) / 1000, q) for q in live
-                   if q is not r and q.get("lat") is not None and abs(q["lat"] - r["lat"]) < 1 and abs(q["lng"] - r["lng"]) < 1.5)
+    found = sorted(((metres(r["lat"], r["lng"], q["lat"], q["lng"]) / 1000, q) for q in live
+                    if q is not r and q.get("lat") is not None and abs(q["lat"] - r["lat"]) < 1 and abs(q["lng"] - r["lng"]) < 1.5),
+                   key=lambda f: (f[0], f[1]["name"]))
     found = [(km, q) for km, q in found if km <= NEAR_FAR_KM]
     close = [f for f in found if f[0] <= NEAR_KM]
     return (close if len(close) >= 3 else found)[:NEAR_MAX]
@@ -5735,6 +5776,8 @@ def build_restaurant_pages():
     for r in (x for x in live if x.get("page")):
         city = places[r["city"]]
         stay = SERVICE.get(r["country"], ("before", 0))
+        if r.get("servicePct") is not None:  # the restaurant's own service charge, where it differs from the country's usual one
+            stay = (stay[0] if stay[0] in SERVICE_ADDS else "before", r["servicePct"])
         kind = stay[0]
         cur = r["cur"]
         where = area_line(r)
@@ -5757,7 +5800,7 @@ def build_restaurant_pages():
         hero = (f'<div class="hero rp-hero" id="top">\n  <div class="wrap">\n    <div>\n'
                 f'      <span class="eyebrow" style="color: var(--band-muted)">{stars_html} {e(stars_label)} · {e(r.get("cuisine", ""))}</span>\n'
                 f'      <h1 style="margin-top: 12px">{e(r["name"])}: what it <em>costs</em></h1>\n'
-                f'      <p class="rp-where">{e(where)}' + (f' · Chef {e(r["chef"])}' if r.get("chef") else "") + '</p>\n'
+                f'      <p class="rp-where">{e(where)}' + (f' · In {e(r["hotel"])}' if r.get("hotel") else "") + (f' · Chef {e(r["chef"])}' if r.get("chef") else "") + '</p>\n'
                 f'      <p class="rp-answer">{e(answer)}</p>\n'
                 f'      <div class="rp-actions"><button type="button" class="rp-wish" id="rpWish" data-wish="{e(r["id"])}" aria-pressed="false">'
                 f'<svg aria-hidden="true"><use href="#heart"/></svg><span>Save to wishlist</span></button>'
@@ -5793,6 +5836,8 @@ def build_restaurant_pages():
             facts.append(("Opening hours" if any(h not in ("open", "closed") for d, h in hours_lines(r)) else "Open",
                           "".join(f'<span class="rp-hours"><b>{e(d)}</b> {e(h)}</span>' for d, h in hours_lines(r))
                           + f"<small>From the MICHELIN Guide, {e(month_year(HOURS_CHECKED[:7], 'en'))}; check before you go</small>"))
+        if r.get("hotel"):
+            facts.append(("Hotel", e(r["hotel"][:1].upper() + r["hotel"][1:])))
         if r.get("address"):
             facts.append(("Address", f'{e(r["address"])}<small><a href="{e(maps)}">Open in Google Maps</a></small>'))
         diets = [d for d in r.get("diets", []) if d in DIET_WORDS]
@@ -5862,11 +5907,11 @@ def build_restaurant_pages():
                     + "  </div>\n</section>\n")
 
         # How it compares with the same stars nearby.
-        compare_html, compare_qa = "", []
+        compare_html, compare_qa, compare_shown = "", [], []
         if peers_place and r in peers and len(peers) > 1:
             i = peers.index(r)
             lo = max(0, min(i - PEERS_SHOWN // 2, len(peers) - PEERS_SHOWN))
-            shown = peers[lo:lo + PEERS_SHOWN]
+            shown = compare_shown = peers[lo:lo + PEERS_SHOWN]
             mid = peers[len(peers) // 2]["dinner"]
             rank = "the cheapest" if i == 0 else "the most expensive" if i == len(peers) - 1 else f"the {ordinal(i + 1)} cheapest"
             compare_q = f"Is {r['name']} expensive for a {STAR_WORDS[r['stars']]}-star restaurant?"
@@ -5937,7 +5982,7 @@ def build_restaurant_pages():
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": '<a href="/">All destinations</a>' + "".join(f'<a href="{c["path"]}">{e(c["name"])}</a>' for c in crumbs) + f'<span aria-current="page">{e(r["name"])}</span>',
             "hero": hero, "main": pay_html + history_html(r) + cheaper + book + visit + facts_html + compare_html
-            + similar_html(r, live, peers) + near_html + guides_block, "data": as_json(data),
+            + may_like_html(r, live, {q["id"] for km, q in near} | {q["id"] for q in compare_shown}) + near_html + guides_block, "data": as_json(data),
         })
         # Dollar prices on a US restaurant's page read "$350", as the guides write them.
         write(path, page_html.replace("US$", "$") if cur == "USD" else page_html)

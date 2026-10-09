@@ -10,7 +10,7 @@
   "reviews": 788,
   "dinner": 405,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Tasting menu; a 20% service charge and a 3% San Francisco health-care surcharge are added",
   "dinnerNoteZh": "品嚐套餐",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/atelier-crenn",
@@ -26,5 +26,15 @@
     "vegan"
   ],
   "chef": "Dominique Crenn",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "servicePct": 32,
+  "starsSince": 2018,
+  "dressCode": "Casual-elegant; a jacket isn't required, but dressing up is encouraged.",
+  "duration": "Two to three hours.",
+  "bookingOpens": "Online through OpenTable, as prepaid tickets. Dinner only.",
+  "bookingUrl": "https://www.opentable.com/r/atelier-crenn",
+  "bookingPhone": "(415) 440-0460",
+  "cancellation": "Bookings are final and can't be refunded, like concert tickets. To change or cancel, call or email info@ateliercrenn.com and the restaurant will try to resell your seats; if it can't, you still pay.",
+  "infoSource": "https://www.ateliercrenn.com/faq/",
+  "infoChecked": "2026-10-09"
 }

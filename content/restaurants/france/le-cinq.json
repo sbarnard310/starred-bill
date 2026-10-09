@@ -10,12 +10,12 @@
   "cuisineZh": "現代菜",
   "rating": 4.7,
   "reviews": 1616,
-  "dinner": 620,
+  "dinner": 640,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 10 courses (Gault&Millau indicative price)",
+  "dinnerNote": "The Epicurean Escape tasting menu, drinks extra (à la carte mains €160–280)",
   "dinnerNoteFr": "Menu dégustation, 10 services (prix indicatif Gault&Millau)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/le-cinq-restaurant-paris-8",
+  "sourceType": "site",
+  "source": "https://www.fourseasons.com/paris/dining/menus/le-cinq-christian-le-squer/",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteFr": "Uniquement le soir",
@@ -28,5 +28,29 @@
     "vegetarian-menu"
   ],
   "chef": "Christian Le Squer",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "hotel": "the Four Seasons Hotel George V",
+  "menus": [
+    {
+      "name": "Epicurean Escape tasting menu",
+      "meal": "dinner",
+      "price": 640,
+      "note": "Christian Le Squer's tasting menu; drinks extra"
+    },
+    {
+      "name": "Three-course à la carte",
+      "meal": "dinner",
+      "price": 330,
+      "courses": 3,
+      "note": "From about €330: starters €120–185, mains €160–280, desserts €52"
+    }
+  ],
+  "menusSource": "https://www.fourseasons.com/paris/dining/menus/le-cinq-christian-le-squer/",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2016,
+  "dressCode": "Jacket required.",
+  "bookingOpens": "Online through OpenTable. It's open for dinner only, Tuesday to Saturday, with tables from 7pm to 9:30pm.",
+  "bookingUrl": "https://www.opentable.com/r/le-cinq-four-seasons-hotel-george-v-paris",
+  "infoSource": "https://www.opentable.com/r/le-cinq-four-seasons-hotel-george-v-paris",
+  "infoChecked": "2026-10-09"
 }

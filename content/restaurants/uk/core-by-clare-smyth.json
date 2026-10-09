@@ -9,15 +9,15 @@
   "reviews": 1654,
   "dinner": 275,
   "dinnerType": "menu",
-  "dinnerNote": "Core Seasons tasting menu (Core Classics £265)",
+  "dinnerNote": "Core Seasons tasting menu, 7 courses (Core Classics £265)",
   "wine": 175,
   "sourceType": "site",
   "source": "https://corebyclaresmyth.com/menus/",
   "lunch": 205,
   "lunchType": "menu",
-  "lunchNote": "À la carte lunch · Thu–Sat",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.enprimeurclub.com/guide/dining-at-core-by-clare-smyth-restaurant-in-london",
+  "lunchNote": "À la carte, 3 courses · Thu–Sat",
+  "lunchSourceType": "site",
+  "lunchSource": "https://corebyclaresmyth.com/menus/",
   "website": "https://www.corebyclaresmyth.com/",
   "lat": 51.5126689,
   "lng": -0.2030649,
@@ -28,5 +28,68 @@
     "vegan"
   ],
   "chef": "Clare Smyth",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Core Seasons tasting menu",
+      "meal": "dinner",
+      "price": 275,
+      "wine": 175,
+      "courses": 7,
+      "note": "For the whole table"
+    },
+    {
+      "name": "Core Classics tasting menu",
+      "meal": "dinner",
+      "price": 265,
+      "wine": 175,
+      "courses": 7,
+      "note": "Clare Smyth's best-known dishes, including the 'Potato and roe' and the 'Core apple'"
+    },
+    {
+      "name": "Three-course à la carte",
+      "meal": "dinner",
+      "price": 235,
+      "courses": 3
+    },
+    {
+      "name": "Three-course à la carte lunch",
+      "meal": "lunch",
+      "price": 205,
+      "courses": 3,
+      "note": "Thursday to Saturday"
+    }
+  ],
+  "menusSource": "https://corebyclaresmyth.com/menus/",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2021,
+  "dressCode": "Strictly no sportswear, such as tracksuit bottoms or hoodies; smart trainers are fine. Guests turned away for the dress code are charged the cancellation fee.",
+  "children": "Young guests are welcome if they eat from the regular menu, but small children and babies can't be accommodated.",
+  "bookingOpens": "Online through OpenTable, or by phone. The whole table eats from the same tasting menu or the à la carte.",
+  "bookingPhone": "020 3937 5086",
+  "bookingUrl": "https://www.opentable.co.uk/r/core-by-clare-smyth-london",
+  "cancellation": "Cancelling with less than 72 hours' notice, reducing numbers or not turning up costs £175 per person.",
+  "groups": "The Chef's Table, beside the kitchen, needs a £2,500 non-refundable deposit and can be moved up to 14 days before. For private events, email info@claresmyth.com.",
+  "infoSource": "https://corebyclaresmyth.com/reservations/",
+  "infoChecked": "2026-10-09",
+  "priceHistory": [
+    {
+      "date": "2023-12",
+      "price": 235,
+      "wine": 145,
+      "source": "https://web.archive.org/web/20231202121816/https://corebyclaresmyth.com/menus/"
+    },
+    {
+      "date": "2025-01",
+      "price": 265,
+      "wine": 165,
+      "source": "https://web.archive.org/web/20250118200053/https://corebyclaresmyth.com/menus/"
+    },
+    {
+      "date": "2026-01",
+      "price": 265,
+      "wine": 175,
+      "source": "https://web.archive.org/web/20260107051021/https://corebyclaresmyth.com/menus/"
+    }
+  ]
 }

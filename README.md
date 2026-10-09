@@ -97,6 +97,11 @@ Restaurant pages have no separate FAQ: the questions people search are the page'
 | `priceHistory` | past prices of the main dinner menu: `date` (`2019-10`), `price`, optional `wine` and `source` (e.g. an Internet Archive copy of the restaurant's menu page). Drawn as a bar chart with today's price added |
 | `starsSince` | the year it first held its current number of stars, e.g. `2005` |
 | `bookingOpens`, `bookingPhone`, `bookingUrl`, `cancellation`, `walkIns`, `groups`, `groupsUrl` | "How to book at …": when tables are released, the phone number with its hours, the booking page (Resy, Tock, OpenTable… are named on the button), the cancellation rule, eating without a booking, and groups or private events with their inquiries page. Plain sentences from the restaurant's own website |
+| `hotel` | the hotel it's in, mid-sentence ("the Rome Cavalieri, a Waldorf Astoria hotel"), shown under the heading and in the facts |
+| `alsoTry` | sister venues that serve its cooking for less, each with `name`, optional `price`, `note` and `url` (Francescana at Maria Luigia), listed under the cheaper ways in |
+| `waitlist` | how its waiting list works, an extra step in "How to book" |
+| `duration` | how long a meal takes, shown as "How long does a meal at … take?" |
+| `servicePct` | its own service charge where it differs from the country's usual one (The Fat Duck 15%; Atelier Crenn 32% with its surcharge and sales tax) |
 | `dressCode`, `children` | "Before you go": each shown as the question people search ("What is the dress code at …?") with the answer under it, beside the opening hours |
 | `infoSource`, `infoChecked` | where those came from and the day they were checked |
 

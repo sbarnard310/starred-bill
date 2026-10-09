@@ -33,5 +33,43 @@
     "vegetarian"
   ],
   "chef": "Au Yeung",
-  "chefSource": "site"
+  "chefSource": "site",
+  "hotel": "City of Dreams",
+  "menus": [
+    {
+      "name": "Jade Dragon Experience menu",
+      "meal": "dinner",
+      "price": 2380,
+      "wine": 980,
+      "note": "For at least 2 people"
+    },
+    {
+      "name": "Nourish & Thrive autumn menu",
+      "meal": "dinner",
+      "price": 2380,
+      "note": "A seasonal menu made with Chinese medicinal herbs; order 24 hours ahead, for at least 2 people"
+    },
+    {
+      "name": "Tasting lunch set menu",
+      "meal": "lunch",
+      "price": 728,
+      "note": "For at least 2 people"
+    }
+  ],
+  "menusSource": "https://www.cityofdreamsmacau.com/en/dining/jade-dragon",
+  "menusChecked": "2026-10-09",
+  "alsoTry": [
+    {
+      "name": "À la carte and dim sum",
+      "note": "Jade Dragon also has an à la carte menu and a dim sum menu, so you can order a few dishes rather than a set menu",
+      "url": "https://www.cityofdreamsmacau.com/en/dining/jade-dragon"
+    }
+  ],
+  "starsSince": 2018,
+  "dressCode": "Smart casual. Men need ankle-length trousers and closed shoes.",
+  "children": "Children aged 10 and over are welcome.",
+  "bookingOpens": "Online on City of Dreams' booking page. Lunch is served 12pm–3pm and dinner 6pm–10:30pm.",
+  "bookingUrl": "https://fnb-booking.melcoresorts.com/web/index.html?restaurantId=JadeDragon&language=en",
+  "infoSource": "https://www.cityofdreamsmacau.com/en/dining/jade-dragon",
+  "infoChecked": "2026-10-09"
 }

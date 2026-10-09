@@ -9,14 +9,14 @@
   "reviews": 3009,
   "dinnerType": "menu",
   "dinner": 350,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Tasting menu, 11 courses (à la carte mains €100–150)",
   "dinnerNoteIt": "Menu degustazione",
   "wine": 240,
   "sourceType": "site",
   "source": "https://osteriafrancescana.it/menu/",
   "lunch": 350,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
+  "lunchNote": "The same menus at lunch",
   "lunchNoteIt": "Stesso menu a pranzo",
   "lunchWine": 240,
   "lunchSourceType": "site",
@@ -34,5 +34,68 @@
     "kosher"
   ],
   "chef": "Massimo Bottura",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 350,
+      "wine": 240,
+      "courses": 11,
+      "note": "Lunch or dinner, for the whole table; required for 5 or more"
+    }
+  ],
+  "menusSource": "https://osteriafrancescana.it/menu/",
+  "menusChecked": "2026-10-09",
+  "alsoTry": [
+    {
+      "name": "Francescana at Maria Luigia",
+      "price": 330,
+      "note": "Nine of Osteria Francescana's best-known dishes at communal tables in Casa Maria Luigia, the Bottura family's country house outside Modena; pairing €170; solo diners welcome",
+      "url": "https://casamarialuigia.com/francescana-at-maria-luigia/"
+    }
+  ],
+  "starsSince": 2011,
+  "dressCode": "No dress code; smart casual fits.",
+  "children": "Guests must be 12 or older.",
+  "duration": "About three hours, depending on the menu.",
+  "bookingOpens": "Online only, about six months ahead: each month's tables are released at 10am Italian time, usually on the first working day of a month (May 2027 opens on Monday 2 November 2026; June 2027 on Tuesday 1 December).",
+  "bookingUrl": "https://reservations.osteriafrancescana.it/",
+  "waitlist": "When it's fully booked you can join the waiting list on the booking page.",
+  "cancellation": "A credit card is needed, and four days before your visit €300 per person is held on it (not charged). Cancelling or changing the number of guests later than a week before, or not turning up, costs €300 per person.",
+  "groups": "Tables of 2 to 10 guests; larger groups can't book as several tables. Solo diners are welcome at Francescana at Maria Luigia instead.",
+  "infoSource": "https://osteriafrancescana.it/faq/",
+  "infoChecked": "2026-10-09",
+  "priceHistory": [
+    {
+      "date": "2017-04",
+      "price": 250,
+      "wine": 170,
+      "source": "https://web.archive.org/web/20170407181739/https://osteriafrancescana.it/menu/"
+    },
+    {
+      "date": "2018-09",
+      "price": 270,
+      "wine": 180,
+      "source": "https://web.archive.org/web/20180910161346/https://osteriafrancescana.it/menu/"
+    },
+    {
+      "date": "2019-08",
+      "price": 290,
+      "wine": 190,
+      "source": "https://web.archive.org/web/20190824085408/https://osteriafrancescana.it/menu/"
+    },
+    {
+      "date": "2022-01",
+      "price": 290,
+      "wine": 190,
+      "source": "https://web.archive.org/web/20220103014224/https://osteriafrancescana.it/menu/"
+    },
+    {
+      "date": "2023-02",
+      "price": 320,
+      "wine": 210,
+      "source": "https://web.archive.org/web/20230201150630/https://osteriafrancescana.it/menu/"
+    }
+  ]
 }

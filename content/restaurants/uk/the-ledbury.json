@@ -7,16 +7,16 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.7,
   "reviews": 1711,
-  "dinner": 285,
+  "dinner": 295,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 8 courses",
-  "sourceType": "press",
-  "source": "https://joinpearl.co/blogs/planning-a-visit-to-the-ledbury-in-2026",
-  "lunch": 180,
+  "dinnerNote": "Tasting menu",
+  "sourceType": "site",
+  "source": "https://www.theledbury.com/food-wine",
+  "lunch": 220,
   "lunchType": "menu",
-  "lunchNote": "Lunch tasting menu, 6 courses · Fri–Sat (8 courses £200)",
-  "lunchSourceType": "press",
-  "lunchSource": "https://joinpearl.co/blogs/planning-a-visit-to-the-ledbury-in-2026",
+  "lunchNote": "Lunch tasting menu, 6 courses · Fri–Sat (8 courses £270)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.theledbury.com/food-wine",
   "website": "https://www.theledbury.com/",
   "lat": 51.5166662,
   "lng": -0.2000272,
@@ -26,5 +26,43 @@
     "vegetarian"
   ],
   "chef": "Brett Graham",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 160,
+  "lunchWine": 125,
+  "menus": [
+    {
+      "name": "Dinner tasting menu",
+      "meal": "dinner",
+      "price": 295,
+      "wine": 160,
+      "note": "Discovery wine pairing £160"
+    },
+    {
+      "name": "Eight-course lunch tasting menu",
+      "meal": "lunch",
+      "price": 270,
+      "wine": 145,
+      "courses": 8,
+      "note": "Friday and Saturday; Discovery pairing £145, Classic £295"
+    },
+    {
+      "name": "Six-course lunch tasting menu",
+      "meal": "lunch",
+      "price": 220,
+      "wine": 125,
+      "courses": 6,
+      "note": "Friday and Saturday; Discovery pairing £125, Classic £265"
+    }
+  ],
+  "menusSource": "https://www.theledbury.com/food-wine",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2025,
+  "dressCode": "There's no dress code.",
+  "children": "Children over 12 are welcome in the dining room.",
+  "bookingOpens": "Online through OpenTable. Dinner is Tuesday to Saturday and lunch Friday and Saturday (also Thursdays in November and December). Closed from 20 December to 4 January.",
+  "bookingUrl": "https://www.opentable.co.uk/the-ledbury",
+  "groups": "For private events, see the events brochure or email info@theledbury.com.",
+  "groupsUrl": "https://www.theledbury.com/pdf/The-Ledbury-Events-Brochure.pdf",
+  "infoSource": "https://www.theledbury.com/",
+  "infoChecked": "2026-10-09"
 }

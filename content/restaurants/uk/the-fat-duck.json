@@ -9,13 +9,13 @@
   "reviews": 1732,
   "dinner": 285,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, from (£285–£365 by menu and day)",
+  "dinnerNote": "Tasting menu from (£285–£365 by menu and day), paid in full when booking",
   "wine": 155,
   "sourceType": "site",
   "source": "https://thefatduck.co.uk/faqs",
   "lunch": 285,
   "lunchType": "menu",
-  "lunchNote": "Same menus at lunch",
+  "lunchNote": "The same menus at lunch, Fri–Sun",
   "lunchSourceType": "site",
   "lunchSource": "https://thefatduck.co.uk/faqs",
   "website": "https://thefatduck.co.uk/",
@@ -29,5 +29,34 @@
     "gluten-free"
   ],
   "chef": "Heston Blumenthal",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 285,
+      "wine": 155,
+      "note": "£285–£365 depending on the menu and the day; paid in full when you book; wine pairings from £155 to £1,050"
+    }
+  ],
+  "menusSource": "https://thefatduck.co.uk/faqs",
+  "menusChecked": "2026-10-09",
+  "alsoTry": [
+    {
+      "name": "The Hinds Head",
+      "note": "Heston Blumenthal's pub next door in Bray, also suggested for a drink before dinner, as The Fat Duck has no bar",
+      "url": "https://thefatduck.co.uk/faqs"
+    }
+  ],
+  "dressCode": "No dress code; smart casual is suggested.",
+  "children": "Children are welcome, but the menu isn't recommended for under-10s and there's no children's menu. Children count in the party size and pay the full menu price; ask the reservations team first.",
+  "duration": "Allow about three to four hours.",
+  "bookingOpens": "Online only, as tickets paid in full when you book. Dates are released in booking windows announced in the newsletter and on social media. Tables seat 1 to 6.",
+  "bookingUrl": "https://thefatduck.co.uk/book-your-ticket",
+  "waitlist": "If your date is full, add yourself to the waiting list on the booking page's availability calendar.",
+  "cancellation": "Cancelling within 7 days of the date, or not turning up, means no refund. Reservations can be passed to someone else. Drinks and a 15% service charge are paid on the day.",
+  "groups": "Private hire for up to 40 guests: email reservations@thefatduck.co.uk.",
+  "infoSource": "https://thefatduck.co.uk/faqs",
+  "infoChecked": "2026-10-09",
+  "servicePct": 15
 }

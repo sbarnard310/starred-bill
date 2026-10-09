@@ -7,16 +7,16 @@
   "cuisine": "French",
   "rating": 4.4,
   "reviews": 1874,
-  "dinner": 210,
+  "dinner": 225,
   "dinnerType": "menu",
-  "dinnerNote": "Menu Prestige (Carte Blanche £260)",
-  "sourceType": "press",
-  "source": "https://www.andyhayler.com/restaurant/gordon-ramsay",
+  "dinnerNote": "Menu Prestige, 6 courses (three-course à la carte £190)",
+  "sourceType": "site",
+  "source": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/menus/",
   "lunch": 125,
   "lunchType": "menu",
-  "lunchNote": "Weekday lunch menu · Tue–Fri",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.opentable.com/restaurant-gordon-ramsay",
+  "lunchNote": "Lunch menu, 3 courses · Tue–Fri",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/menus/",
   "website": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/",
   "lat": 51.4854381,
   "lng": -0.1621766,
@@ -27,5 +27,45 @@
     "vegetarian"
   ],
   "chef": "Kim Ratcharoen",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Menu Prestige",
+      "meal": "dinner",
+      "price": 225,
+      "courses": 6,
+      "note": "Lunch and dinner, Tuesday to Saturday; cheese £40 extra"
+    },
+    {
+      "name": "Inspiration Table menu",
+      "meal": "dinner",
+      "price": 300,
+      "note": "A separate table and menu; the restaurant publishes a sample"
+    },
+    {
+      "name": "Three-course à la carte",
+      "meal": "dinner",
+      "price": 190,
+      "courses": 3,
+      "note": "Tuesday to Friday; also as a vegetarian menu"
+    },
+    {
+      "name": "Lunch menu",
+      "meal": "lunch",
+      "price": 125,
+      "courses": 3,
+      "note": "Tuesday to Friday"
+    }
+  ],
+  "menusSource": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/menus/",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2001,
+  "dressCode": "No formal dress code, but please avoid shorts, tracksuits, hoodies and hats. Smart trainers are fine.",
+  "children": "Young guests are welcome if they order from the regular menu. There are no facilities for babies or very young children.",
+  "bookingOpens": "Online up to four months ahead, for 1 to 6 guests. Groups of 9 or more can ask up to three months ahead. On Saturdays only the Prestige and Carte Blanche menus are served.",
+  "bookingPhone": "020 7352 4441 (call for 7 or 8 guests)",
+  "bookingUrl": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/book-a-table/",
+  "groups": "Groups of 7 or 8 book by phone and choose the Prestige or Carte Blanche menu; 9 or more use the enquiry form on the booking page.",
+  "infoSource": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/information",
+  "infoChecked": "2026-10-09"
 }

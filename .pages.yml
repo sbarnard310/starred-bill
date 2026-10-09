@@ -724,6 +724,19 @@ content:
           - { name: source, label: Link, type: string }
       - { name: starsSince, label: Current stars held since (year), type: number }
       - { name: dressCode, label: Dress code, type: text }
+      - { name: hotel, label: Hotel it's in (mid-sentence, e.g. the Rome Cavalieri), type: string }
+      - name: alsoTry
+        label: Sister venues serving its cooking for less
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: price, label: Price per person, type: number }
+          - { name: note, label: Note, type: text }
+          - { name: url, label: Link, type: string }
+      - { name: waitlist, label: How the waiting list works, type: text }
+      - { name: duration, label: How long a meal takes, type: string }
+      - { name: servicePct, label: Its own service charge in % (if not the country's usual), type: number }
       - { name: bookingOpens, label: When tables are released, type: text }
       - { name: bookingPhone, label: Booking phone number and its hours, type: string }
       - { name: bookingUrl, label: Booking page link, type: string }

@@ -1637,3 +1637,7 @@ button.near-card:hover { border-color: var(--green); }
 .lightbox-nav.prev { left: 8px; }
 .lightbox-nav.next { right: 8px; }
 .lightbox-nav[hidden] { display: none; }
+/* Restaurant pages: "Other restaurants you may like", each with its reason above the name. */
+.rp-like .rp-why { display: block; margin-bottom: 3px; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--green); }
+/* Long email addresses and links in restaurant page text may break, so a phone never has to zoom out. */
+.rp-steps span, .rp-qa p, .rp-facts dd, .rp-note, .rp-list li > span:last-child { overflow-wrap: anywhere; }

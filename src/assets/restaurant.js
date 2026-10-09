@@ -176,8 +176,10 @@ function collectPrices() {
 function showCurrency(c) {
   const rate = DATA.currencies[c].perUSD / DATA.currencies[pageCur].perUSD;
   priced.forEach((p) => {
-    p.node.nodeValue = c === pageCur ? p.text : p.text.replace(priceRe, (m, pre, sym, num, at, all) =>
+    const shownText = c === pageCur ? p.text : p.text.replace(priceRe, (m, pre, sym, num, at, all) =>
       pre + (/(roughly|about) $/.test(all.slice(0, at + pre.length)) ? "" : "≈") + symbolFor(c) + Math.round(Number(num.replace(/,/g, "")) * rate).toLocaleString("en-GB"));
+    // In dollars, the page's own "(about US$…)" after each price would say the same thing twice.
+    p.node.nodeValue = c === "USD" && pageCur !== "USD" ? shownText.replace(/ \(about US\$[\d,]+\)/g, "") : shownText;
   });
   $("rpCur").querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.cur === c)));
 }

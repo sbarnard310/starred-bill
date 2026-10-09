@@ -3,5 +3,6 @@
   "type": "city",
   "parent": "california",
   "name": "San Francisco",
-  "nameZh": "舊金山"
+  "nameZh": "舊金山",
+  "intro": "This page covers the city itself; the rest of the Bay Area's starred restaurants, from Oakland and Silicon Valley to Napa and Sonoma, are on the California page."
 }

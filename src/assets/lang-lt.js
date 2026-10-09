@@ -75,7 +75,7 @@
     acctSent: "Patikrinkite el. paštą. Išsiuntėme prisijungimo nuorodą adresu {email}. Atidarykite ją šiame įrenginyje, kad prisijungtumėte.",
     acctTooMany: "Ką tik išsiųsta per daug prisijungimo laiškų. Palaukite minutę ir bandykite dar kartą.", acctFailed: "Nepavyko. Patikrinkite el. pašto adresą ir bandykite dar kartą.",
     acctBadEmail: "Įveskite visą el. pašto adresą, pvz., vardas@example.com.", acctSmall: "Nemokama ir be slaptažodžio. Jūsų el. paštą naudojame tik prisijungimui.",
-    acctPrivacy: "Privatumo pranešimas", acctClose: "Uždaryti", acctWelcome: "Prisijungėte. Jūsų norų sąrašas dabar keliauja su jumis į bet kurį įrenginį.",
+    acctPrivacy: "Privatumo pranešimas", acctClose: "Uždaryti", prefOfferCur: "Rodyti kainas visuose puslapiuose valiuta {cur}?", prefYes: "Taip", prefNo: "Ne, ačiū", prefSaved: "Išsaugota. Tai galite pakeisti savo paskyroje.", acctWelcome: "Prisijungėte. Jūsų norų sąrašas dabar keliauja su jumis į bet kurį įrenginį.",
     acctLinkExpired: "Ši prisijungimo nuoroda nebegalioja arba jau panaudota. Bakstelėkite „Prisijungti“, kad gautumėte naują.",
     been: "Lankiausi", beenAdd: "Pažymėti {name} kaip aplankytą", beenRemove: "Pašalinti {name} iš aplankytų", beenAddT: "Pažymėti kaip aplankytą", beenRemoveT: "Pašalinti iš aplankytų",
     toastBeen: "Pažymėta kaip aplankyta: {name}", toastNotBeen: "Pašalinta iš aplankytų: {name}", showBeen: "Aplankyti",

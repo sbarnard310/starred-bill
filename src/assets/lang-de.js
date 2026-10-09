@@ -84,7 +84,7 @@
     acctSent: "Schau in dein Postfach. Wir haben einen Anmeldelink an {email} geschickt. Öffne ihn auf diesem Gerät, um dich anzumelden.",
     acctTooMany: "Gerade wurden zu viele Anmelde-E-Mails verschickt. Warte eine Minute und versuche es dann noch einmal.", acctFailed: "Das hat nicht geklappt. Prüfe die E-Mail-Adresse und versuche es noch einmal.",
     acctBadEmail: "Gib eine vollständige E-Mail-Adresse ein, z. B. name@example.com.", acctSmall: "Kostenlos und ohne Passwort. Wir nutzen deine E-Mail-Adresse nur zum Anmelden.",
-    acctPrivacy: "Datenschutzhinweis", acctClose: "Schließen", acctWelcome: "Du bist angemeldet. Deine Merkliste begleitet dich jetzt auf jedes Gerät.",
+    acctPrivacy: "Datenschutzhinweis", acctClose: "Schließen", prefOfferCur: "Preise auf allen Seiten in {cur} anzeigen?", prefYes: "Ja", prefNo: "Nein danke", prefSaved: "Gespeichert. Du kannst es unter Dein Konto ändern.", acctWelcome: "Du bist angemeldet. Deine Merkliste begleitet dich jetzt auf jedes Gerät.",
     acctLinkExpired: "Dieser Anmeldelink ist abgelaufen oder wurde schon benutzt. Tippe auf Anmelden, um einen neuen zu bekommen.",
     been: "Schon dort gewesen", beenAdd: "{name} als besucht markieren", beenRemove: "{name} nicht mehr als besucht markieren", beenAddT: "Als besucht markieren", beenRemoveT: "Nicht mehr als besucht markieren",
     toastBeen: "{name} ist als besucht markiert", toastNotBeen: "{name} ist nicht mehr als besucht markiert", showBeen: "Schon dort gewesen",

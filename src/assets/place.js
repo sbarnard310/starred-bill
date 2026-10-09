@@ -84,12 +84,21 @@ const searchText = (r) => [r.name, r.chef, ...((r.diets || []).map(dietLabel)), 
 const queryMatch = (r) => { const q = state.query.trim().toLowerCase(); return !q || searchText(r).includes(q); };
 const changeBadge = (r) => !r.change ? "" : '<span class="chg chg-' + (r.change === "down" ? "down" : "up") + '" title="' + esc(t("chgTitle", { note: pick(r, "changeNote"), date: monthYear(r.changeDate) })) + '">' + (r.change === "down" ? "▼ " : "▲ ") + (r.change === "new" ? t("chgNew") + " " : "") + monthYear(r.changeDate) + "</span>";
 
+// The currency chosen for this country's pages on this device, else a member's own currency (loadProfile()), else the local one.
+function startCurrency() {
+  const saved = (store.get(PREFS_KEY, {}).currency || {})[PAGE.currency], home = homeCurrency();
+  return saved && currencyOptions.includes(saved) ? saved : home && currencyOptions.includes(home) ? home : PAGE.currency;
+}
+// Preferences arriving from the account (signing in, or a change on another device).
+window.addEventListener("sb:profile", (e) => {
+  if (e.detail.from !== "sync" || startCurrency() === state.currency) return;
+  state.currency = startCurrency(); renderAll();
+});
 function load() {
   const prefs = store.get(PREFS_KEY, {});
   if (prefs.sort) state.sort = prefs.sort;
   if (prefs.meal === "lunch") state.meal = "lunch";
-  const saved = (prefs.currency || {})[PAGE.currency];
-  if (saved && currencyOptions.includes(saved)) state.currency = saved;
+  state.currency = startCurrency();
   state.wishlist = loadWishlist();
   state.visited = loadVisited();
 }
@@ -824,7 +833,7 @@ document.addEventListener("click", (e) => {
   } else if (el.dataset.meal) {
     state.meal = el.dataset.meal; save(); renderAll();
   } else if (el.dataset.currency) {
-    state.currency = el.dataset.currency; save(); renderAll();
+    state.currency = el.dataset.currency; save(); renderAll(); prefChosen("currency", state.currency);
   } else if (el.dataset.wish) {
     toggleWish(el.dataset.wish);
   } else if (el.dataset.been) {
@@ -869,7 +878,7 @@ document.addEventListener("click", (e) => {
 $("q").addEventListener("input", (e) => { state.query = e.target.value; renderLedger(); });
 wireSearchClear($("q"), () => { state.query = ""; renderLedger(); });
 $("sort").addEventListener("change", (e) => { state.sort = e.target.value; save(); renderLedger(); });
-$("currencyPick").addEventListener("change", (e) => { state.currency = e.target.value; save(); renderAll(); track("currency", { currency: state.currency }); });
+$("currencyPick").addEventListener("change", (e) => { state.currency = e.target.value; save(); renderAll(); track("currency", { currency: state.currency }); prefChosen("currency", state.currency); });
 $("contactForm").addEventListener("submit", (e) => {
   e.preventDefault();
   const name = $("cName").value.trim(), msg = $("cMsg").value.trim(), topic = $("cTopic");

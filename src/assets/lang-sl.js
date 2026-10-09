@@ -78,7 +78,7 @@
     acctSent: "Preverite e-pošto. Na {email} smo poslali povezavo za prijavo. Odprite jo na tej napravi, da se prijavite.",
     acctTooMany: "Pravkar je bilo poslanih preveč e-poštnih sporočil za prijavo. Počakajte minuto in poskusite znova.", acctFailed: "Ni uspelo. Preverite e-poštni naslov in poskusite znova.",
     acctBadEmail: "Vpišite celoten e-poštni naslov, npr. ime@example.com.", acctSmall: "Brezplačno in brez gesla. Vaš e-poštni naslov uporabljamo samo za prijavo.",
-    acctPrivacy: "Obvestilo o zasebnosti", acctClose: "Zapri", acctWelcome: "Prijavljeni ste. Seznam želja vas zdaj spremlja na vseh napravah.",
+    acctPrivacy: "Obvestilo o zasebnosti", acctClose: "Zapri", prefOfferCur: "Želite cene na vseh straneh prikazati v {cur}?", prefYes: "Da", prefNo: "Ne, hvala", prefSaved: "Shranjeno. Spremenite lahko v svojem računu.", acctWelcome: "Prijavljeni ste. Seznam želja vas zdaj spremlja na vseh napravah.",
     acctLinkExpired: "Povezava za prijavo je potekla ali je bila že uporabljena. Tapnite Prijava za novo.",
     been: "Obiskano", beenAdd: "Označi {name} kot obiskano", beenRemove: "Odstrani {name} z obiskanih", beenAddT: "Označi kot obiskano", beenRemoveT: "Odstrani z obiskanih",
     toastBeen: "Označeno kot obiskano: {name}", toastNotBeen: "Odstranjeno z obiskanih: {name}", showBeen: "Obiskano",

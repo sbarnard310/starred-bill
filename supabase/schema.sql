@@ -39,7 +39,36 @@ $$;
 drop trigger if exists saved_touch on public.saved;
 create trigger saved_touch before update on public.saved for each row execute function public.touch_saved();
 
--- Lets a signed-in person delete their own account (their saved rows go with it).
+-- One row per person: their home city and the currency and dietary needs every page starts from
+-- (added 9 Oct 2026). home_place is a destination's id on the site, e.g. 'london'; home_name its English name.
+-- Blank means "not chosen": local prices, no dietary filter, no home city.
+create table if not exists public.profile (
+  user_id uuid primary key default auth.uid() references auth.users (id) on delete cascade,
+  home_place text check (home_place is null or (home_place ~ '^[a-z0-9]+(-[a-z0-9]+)*$' and length(home_place) <= 80)),
+  home_name text check (home_name is null or length(home_name) <= 120),
+  currency text check (currency is null or currency ~ '^[A-Z]{3}$'),
+  diet text check (diet is null or (diet ~ '^[a-z]+(-[a-z]+)*$' and length(diet) <= 30)),
+  updated_at timestamptz not null default now()
+);
+
+alter table public.profile enable row level security;
+
+drop policy if exists "Read own profile" on public.profile;
+drop policy if exists "Add own profile" on public.profile;
+drop policy if exists "Change own profile" on public.profile;
+drop policy if exists "Remove own profile" on public.profile;
+create policy "Read own profile" on public.profile for select to authenticated using ((select auth.uid()) = user_id);
+create policy "Add own profile" on public.profile for insert to authenticated with check ((select auth.uid()) = user_id);
+create policy "Change own profile" on public.profile for update to authenticated using ((select auth.uid()) = user_id) with check ((select auth.uid()) = user_id);
+create policy "Remove own profile" on public.profile for delete to authenticated using ((select auth.uid()) = user_id);
+
+revoke all on public.profile from anon;
+grant select, insert, update, delete on public.profile to authenticated;
+
+drop trigger if exists profile_touch on public.profile;
+create trigger profile_touch before update on public.profile for each row execute function public.touch_saved();
+
+-- Lets a signed-in person delete their own account (their saved rows and profile go with it).
 create or replace function public.delete_my_account() returns void language sql security definer set search_path = '' as $$
   delete from auth.users where id = auth.uid();
 $$;

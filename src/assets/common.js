@@ -117,7 +117,7 @@ const I18N = {
     acctSent: "Check your email. We've sent a sign-in link to {email}. Open it on this device to finish signing in.",
     acctTooMany: "Too many sign-in emails just now. Wait a minute, then try again.", acctFailed: "That didn't work. Check the email address and try again.",
     acctBadEmail: "Enter a full email address, e.g. name@example.com.", acctSmall: "Free, and no password to remember. We only use your email to sign you in.",
-    acctPrivacy: "Privacy notice", acctClose: "Close", acctWelcome: "You're signed in. Your wishlist now follows you to any device.",
+    acctPrivacy: "Privacy notice", acctClose: "Close", prefOfferCur: "Show prices in {cur} on every page?", prefYes: "Yes", prefNo: "No thanks", prefSaved: "Saved. You can change it on Your account.", acctWelcome: "You're signed in. Your wishlist now follows you to any device.",
     acctLinkExpired: "That sign-in link has expired or was already used. Tap Sign in to get a new one.",
     been: "Been there", beenAdd: "Mark {name} as been there", beenRemove: "Remove {name} from been there", beenAddT: "Mark as been there", beenRemoveT: "Remove from been there",
     toastBeen: "Marked {name} as been there", toastNotBeen: "Removed {name} from been there", showBeen: "Been there",
@@ -264,7 +264,7 @@ const I18N = {
     acctSent: "請查看電子郵件。我們已將登入連結寄到 {email}，請在這部裝置上開啟以完成登入。",
     acctTooMany: "登入郵件寄送次數過多，請稍候一分鐘再試。", acctFailed: "未能完成，請檢查電子郵件地址後再試一次。",
     acctBadEmail: "請輸入完整的電子郵件地址，例如 name@example.com。", acctSmall: "免費，而且不必記密碼。我們只用你的電子郵件讓你登入。",
-    acctPrivacy: "隱私權聲明", acctClose: "關閉", acctWelcome: "你已登入。你的願望清單現在會在每部裝置上同步。",
+    acctPrivacy: "隱私權聲明", acctClose: "關閉", prefOfferCur: "在每個頁面都以 {cur} 顯示價格？", prefYes: "好", prefNo: "不用了", prefSaved: "已儲存。可在「我的帳戶」中更改。", acctWelcome: "你已登入。你的願望清單現在會在每部裝置上同步。",
     acctLinkExpired: "這個登入連結已過期或已使用過，請點選「登入」取得新連結。",
     been: "去過了", beenAdd: "將{name}標示為去過", beenRemove: "取消{name}的去過標示", beenAddT: "標示為去過", beenRemoveT: "取消去過標示",
     toastBeen: "已將{name}標示為去過", toastNotBeen: "已取消{name}的去過標示", showBeen: "去過了",
@@ -409,7 +409,7 @@ const I18N = {
     acctSent: "Consultez vos e-mails. Nous avons envoyé un lien de connexion à {email}. Ouvrez-le sur cet appareil pour terminer.",
     acctTooMany: "Trop d'e-mails de connexion pour le moment. Attendez une minute, puis réessayez.", acctFailed: "Cela n'a pas fonctionné. Vérifiez l'adresse e-mail et réessayez.",
     acctBadEmail: "Saisissez une adresse e-mail complète, par exemple nom@exemple.fr.", acctSmall: "Gratuit, sans mot de passe à retenir. Votre e-mail ne sert qu'à vous connecter.",
-    acctPrivacy: "Confidentialité", acctClose: "Fermer", acctWelcome: "Vous êtes connecté. Vos envies vous suivent désormais sur tous vos appareils.",
+    acctPrivacy: "Confidentialité", acctClose: "Fermer", prefOfferCur: "Afficher les prix en {cur} sur toutes les pages ?", prefYes: "Oui", prefNo: "Non merci", prefSaved: "C’est noté. Vous pouvez le changer dans Votre compte.", acctWelcome: "Vous êtes connecté. Vos envies vous suivent désormais sur tous vos appareils.",
     acctLinkExpired: "Ce lien de connexion a expiré ou a déjà servi. Touchez Connexion pour en recevoir un nouveau.",
     been: "J'y suis allé", beenAdd: "Marquer {name} comme visité", beenRemove: "Retirer {name} des restaurants visités", beenAddT: "Marquer comme visité", beenRemoveT: "Retirer des restaurants visités",
     toastBeen: "{name} marqué comme visité", toastNotBeen: "{name} retiré des restaurants visités", showBeen: "Visités",
@@ -535,7 +535,7 @@ const I18N = {
     acctSent: "請睇下你嘅電郵。我哋已經將登入連結寄咗去 {email}，喺呢部裝置打開就可以完成登入。",
     acctTooMany: "登入電郵寄得太密，請等一分鐘再試。", acctFailed: "做唔到，請檢查電郵地址再試多次。",
     acctBadEmail: "請輸入完整嘅電郵地址，例如 name@example.com。", acctSmall: "免費，唔使記密碼。我哋只會用你嘅電郵嚟登入。",
-    acctPrivacy: "私隱聲明", acctClose: "關閉", acctWelcome: "你已經登入。你嘅心水清單而家會喺每部裝置同步。",
+    acctPrivacy: "私隱聲明", acctClose: "關閉", prefOfferCur: "喺每一頁都用 {cur} 顯示價錢？", prefYes: "好", prefNo: "唔使喇", prefSaved: "已儲存。可以喺「我的帳戶」更改。", acctWelcome: "你已經登入。你嘅心水清單而家會喺每部裝置同步。",
     acctLinkExpired: "呢條登入連結已經過期或者用過，請撳「登入」攞條新嘅。",
     been: "去過", beenAdd: "將{name}標示為去過", beenRemove: "取消{name}嘅去過標示", beenAddT: "標示為去過", beenRemoveT: "取消去過標示",
     toastBeen: "已經將{name}標示為去過", toastNotBeen: "已經取消{name}嘅去過標示", showBeen: "去過",
@@ -662,7 +662,7 @@ const I18N = {
     acctSent: "メールを確認してください。{email} にログイン用リンクを送りました。この端末で開くとログインが完了します。",
     acctTooMany: "ログイン用メールの送信が多すぎます。1分ほど待ってからもう一度お試しください。", acctFailed: "うまくいきませんでした。メールアドレスを確認して、もう一度お試しください。",
     acctBadEmail: "メールアドレスを正しく入力してください（例：name@example.com）。", acctSmall: "無料で、パスワードは不要です。メールアドレスはログインにのみ使います。",
-    acctPrivacy: "プライバシーについて", acctClose: "閉じる", acctWelcome: "ログインしました。お気に入りがどの端末でも使えるようになりました。",
+    acctPrivacy: "プライバシーについて", acctClose: "閉じる", prefOfferCur: "すべてのページで {cur} 表示にしますか？", prefYes: "はい", prefNo: "いいえ", prefSaved: "保存しました。アカウントページで変更できます。", acctWelcome: "ログインしました。お気に入りがどの端末でも使えるようになりました。",
     acctLinkExpired: "このログイン用リンクは期限切れか、すでに使われています。「ログイン」から新しいリンクを受け取ってください。",
     been: "行った", beenAdd: "{name}を「行った」にする", beenRemove: "{name}の「行った」を外す", beenAddT: "「行った」にする", beenRemoveT: "「行った」を外す",
     toastBeen: "{name}を「行った」にしました", toastNotBeen: "{name}の「行った」を外しました", showBeen: "行った店",
@@ -808,7 +808,7 @@ const I18N = {
     acctSent: "Revisa tu correo. Hemos enviado un enlace de acceso a {email}. Ábrelo en este dispositivo para terminar de iniciar sesión.",
     acctTooMany: "Demasiados correos de acceso seguidos. Espera un minuto y vuelve a intentarlo.", acctFailed: "No ha funcionado. Revisa el correo electrónico y vuelve a intentarlo.",
     acctBadEmail: "Escribe un correo completo, p. ej. nombre@ejemplo.com.", acctSmall: "Gratis y sin contraseña que recordar. Solo usamos tu correo para que inicies sesión.",
-    acctPrivacy: "Aviso de privacidad", acctClose: "Cerrar", acctWelcome: "Has iniciado sesión. Tus favoritos ya te siguen a cualquier dispositivo.",
+    acctPrivacy: "Aviso de privacidad", acctClose: "Cerrar", prefOfferCur: "¿Mostrar los precios en {cur} en todas las páginas?", prefYes: "Sí", prefNo: "No, gracias", prefSaved: "Guardado. Puedes cambiarlo en Tu cuenta.", acctWelcome: "Has iniciado sesión. Tus favoritos ya te siguen a cualquier dispositivo.",
     acctLinkExpired: "Ese enlace de acceso ha caducado o ya se ha usado. Toca Iniciar sesión para recibir uno nuevo.",
     been: "He estado", beenAdd: "Marcar que he estado en {name}", beenRemove: "Quitar {name} de los visitados", beenAddT: "Marcar como visitado", beenRemoveT: "Quitar de visitados",
     toastBeen: "{name} marcado como visitado", toastNotBeen: "{name} quitado de visitados", showBeen: "He estado",
@@ -920,7 +920,7 @@ const I18N = {
     acctSent: "Tjek din mail. Vi har sendt et loginlink til {email}. Åbn det på denne enhed for at logge ind.",
     acctTooMany: "For mange loginmails lige nu. Vent et minut, og prøv igen.", acctFailed: "Det lykkedes ikke. Tjek mailadressen, og prøv igen.",
     acctBadEmail: "Skriv en hel mailadresse, fx navn@example.com.", acctSmall: "Gratis og uden adgangskode. Vi bruger kun din mail til at logge dig ind.",
-    acctPrivacy: "Privatlivspolitik", acctClose: "Luk", acctWelcome: "Du er logget ind. Din ønskeliste følger nu med på alle enheder.",
+    acctPrivacy: "Privatlivspolitik", acctClose: "Luk", prefOfferCur: "Vis priser i {cur} på alle sider?", prefYes: "Ja", prefNo: "Nej tak", prefSaved: "Gemt. Du kan ændre det under Din konto.", acctWelcome: "Du er logget ind. Din ønskeliste følger nu med på alle enheder.",
     acctLinkExpired: "Loginlinket er udløbet eller allerede brugt. Tryk på Log ind for at få et nyt.",
     been: "Har været der", beenAdd: "Markér {name} som besøgt", beenRemove: "Fjern {name} fra besøgte", beenAddT: "Markér som besøgt", beenRemoveT: "Fjern fra besøgte",
     toastBeen: "{name} er markeret som besøgt", toastNotBeen: "{name} er fjernet fra besøgte", showBeen: "Har været der",
@@ -1026,7 +1026,7 @@ const I18N = {
     acctSent: "Kolla din mejl. Vi har skickat en inloggningslänk till {email}. Öppna den på den här enheten för att logga in.",
     acctTooMany: "För många inloggningsmejl just nu. Vänta en minut och försök igen.", acctFailed: "Det gick inte. Kontrollera mejladressen och försök igen.",
     acctBadEmail: "Skriv en hel mejladress, t.ex. namn@example.com.", acctSmall: "Gratis och utan lösenord. Vi använder bara din mejl för att logga in dig.",
-    acctPrivacy: "Integritetspolicy", acctClose: "Stäng", acctWelcome: "Du är inloggad. Din önskelista följer nu med på alla enheter.",
+    acctPrivacy: "Integritetspolicy", acctClose: "Stäng", prefOfferCur: "Visa priser i {cur} på alla sidor?", prefYes: "Ja", prefNo: "Nej tack", prefSaved: "Sparat. Du kan ändra det under Ditt konto.", acctWelcome: "Du är inloggad. Din önskelista följer nu med på alla enheter.",
     acctLinkExpired: "Inloggningslänken har gått ut eller redan använts. Tryck på Logga in för att få en ny.",
     been: "Har varit där", beenAdd: "Markera {name} som besökt", beenRemove: "Ta bort {name} från besökta", beenAddT: "Markera som besökt", beenRemoveT: "Ta bort från besökta",
     toastBeen: "{name} är markerad som besökt", toastNotBeen: "{name} har tagits bort från besökta", showBeen: "Har varit där",
@@ -1132,7 +1132,7 @@ const I18N = {
     acctSent: "Athugaðu póstinn. Við sendum innskráningarhlekk á {email}. Opnaðu hann í þessu tæki til að ljúka innskráningu.",
     acctTooMany: "Of margir innskráningarpóstar í bili. Bíddu í mínútu og reyndu aftur.", acctFailed: "Þetta tókst ekki. Athugaðu netfangið og reyndu aftur.",
     acctBadEmail: "Sláðu inn fullt netfang, t.d. nafn@example.com.", acctSmall: "Ókeypis og ekkert lykilorð. Við notum netfangið aðeins til að skrá þig inn.",
-    acctPrivacy: "Persónuvernd", acctClose: "Loka", acctWelcome: "Þú ert skráð(ur) inn. Óskalistinn fylgir þér nú í öll tæki.",
+    acctPrivacy: "Persónuvernd", acctClose: "Loka", prefOfferCur: "Sýna verð í {cur} á öllum síðum?", prefYes: "Já", prefNo: "Nei takk", prefSaved: "Vistað. Þú getur breytt því á aðgangnum þínum.", acctWelcome: "Þú ert skráð(ur) inn. Óskalistinn fylgir þér nú í öll tæki.",
     acctLinkExpired: "Innskráningarhlekkurinn er útrunninn eða hefur þegar verið notaður. Ýttu á Skrá inn til að fá nýjan.",
     been: "Hef komið", beenAdd: "Merkja {name} sem heimsóttan", beenRemove: "Taka {name} af heimsóttum", beenAddT: "Merkja sem heimsóttan", beenRemoveT: "Taka af heimsóttum",
     toastBeen: "{name} merktur sem heimsóttur", toastNotBeen: "{name} tekinn af heimsóttum", showBeen: "Hef komið",
@@ -1238,7 +1238,7 @@ const I18N = {
     acctSent: "Mira el correu. Hem enviat un enllaç d'accés a {email}. Obre'l en aquest dispositiu per acabar d'iniciar la sessió.",
     acctTooMany: "Massa correus d'accés ara mateix. Espera un minut i torna-ho a provar.", acctFailed: "No ha funcionat. Revisa l'adreça i torna-ho a provar.",
     acctBadEmail: "Escriu una adreça completa, p. ex. nom@example.com.", acctSmall: "Gratuït i sense contrasenya. Només fem servir el correu per iniciar la sessió.",
-    acctPrivacy: "Avís de privadesa", acctClose: "Tanca", acctWelcome: "Has iniciat la sessió. Ara els preferits et segueixen a qualsevol dispositiu.",
+    acctPrivacy: "Avís de privadesa", acctClose: "Tanca", prefOfferCur: "Vols veure els preus en {cur} a totes les pàgines?", prefYes: "Sí", prefNo: "No, gràcies", prefSaved: "Desat. Ho pots canviar al teu compte.", acctWelcome: "Has iniciat la sessió. Ara els preferits et segueixen a qualsevol dispositiu.",
     acctLinkExpired: "Aquest enllaç d'accés ha caducat o ja s'ha fet servir. Toca Inicia la sessió per obtenir-ne un de nou.",
     been: "Hi he estat", beenAdd: "Marca {name} com a visitat", beenRemove: "Treu {name} dels visitats", beenAddT: "Marca com a visitat", beenRemoveT: "Treu dels visitats",
     toastBeen: "{name} marcat com a visitat", toastNotBeen: "{name} tret dels visitats", showBeen: "Hi he estat",
@@ -1344,7 +1344,7 @@ const I18N = {
     acctSent: "ตรวจสอบอีเมลของคุณ เราส่งลิงก์เข้าสู่ระบบไปที่ {email} แล้ว เปิดลิงก์บนอุปกรณ์นี้เพื่อเข้าสู่ระบบ",
     acctTooMany: "ขออีเมลเข้าสู่ระบบบ่อยเกินไป รอสักครู่แล้วลองอีกครั้ง", acctFailed: "ไม่สำเร็จ ตรวจสอบอีเมลแล้วลองอีกครั้ง",
     acctBadEmail: "พิมพ์อีเมลให้ครบ เช่น name@example.com", acctSmall: "ฟรีและไม่ต้องจำรหัสผ่าน เราใช้อีเมลของคุณเพื่อเข้าสู่ระบบเท่านั้น",
-    acctPrivacy: "นโยบายความเป็นส่วนตัว", acctClose: "ปิด", acctWelcome: "เข้าสู่ระบบแล้ว รายการโปรดของคุณใช้ได้ทุกอุปกรณ์แล้ว",
+    acctPrivacy: "นโยบายความเป็นส่วนตัว", acctClose: "ปิด", prefOfferCur: "แสดงราคาเป็น {cur} ในทุกหน้าไหม", prefYes: "ใช่", prefNo: "ไม่ ขอบคุณ", prefSaved: "บันทึกแล้ว เปลี่ยนได้ที่หน้าบัญชีของคุณ", acctWelcome: "เข้าสู่ระบบแล้ว รายการโปรดของคุณใช้ได้ทุกอุปกรณ์แล้ว",
     acctLinkExpired: "ลิงก์เข้าสู่ระบบหมดอายุหรือถูกใช้ไปแล้ว แตะเข้าสู่ระบบเพื่อรับลิงก์ใหม่",
     been: "เคยไปแล้ว", beenAdd: "ทำเครื่องหมายว่าเคยไป {name}", beenRemove: "ลบ {name} ออกจากร้านที่เคยไป", beenAddT: "ทำเครื่องหมายว่าเคยไป", beenRemoveT: "ลบออกจากร้านที่เคยไป",
     toastBeen: "ทำเครื่องหมายว่าเคยไป {name} แล้ว", toastNotBeen: "ลบ {name} ออกจากร้านที่เคยไปแล้ว", showBeen: "เคยไปแล้ว",
@@ -1468,7 +1468,7 @@ const I18N = {
     acctSent: "이메일을 확인하세요. {email}(으)로 로그인 링크를 보냈습니다. 이 기기에서 열면 로그인됩니다.",
     acctTooMany: "로그인 이메일 요청이 너무 많습니다. 1분쯤 기다린 뒤 다시 시도하세요.", acctFailed: "문제가 생겼습니다. 이메일 주소를 확인하고 다시 시도하세요.",
     acctBadEmail: "name@example.com 같은 이메일 주소를 입력하세요.", acctSmall: "무료이며 비밀번호가 필요 없습니다. 이메일은 로그인에만 사용합니다.",
-    acctPrivacy: "개인정보 처리", acctClose: "닫기", acctWelcome: "로그인되었습니다. 이제 위시리스트를 어느 기기에서나 쓸 수 있습니다.",
+    acctPrivacy: "개인정보 처리", acctClose: "닫기", prefOfferCur: "모든 페이지에서 가격을 {cur}(으)로 표시할까요?", prefYes: "예", prefNo: "괜찮아요", prefSaved: "저장했습니다. 내 계정에서 바꿀 수 있어요.", acctWelcome: "로그인되었습니다. 이제 위시리스트를 어느 기기에서나 쓸 수 있습니다.",
     acctLinkExpired: "이 로그인 링크는 만료되었거나 이미 사용되었습니다. ‘로그인’을 눌러 새 링크를 받으세요.",
     been: "가 봤어요", beenAdd: "{name}에 가 봤다고 표시", beenRemove: "{name}의 ‘가 봤어요’ 해제", beenAddT: "가 봤다고 표시", beenRemoveT: "‘가 봤어요’ 해제",
     toastBeen: "{name}에 가 봤다고 표시했습니다", toastNotBeen: "{name}의 ‘가 봤어요’를 해제했습니다", showBeen: "가 본 곳",
@@ -1614,7 +1614,7 @@ const I18N = {
     acctSent: "Controlla la posta. Abbiamo inviato un link di accesso a {email}. Aprilo su questo dispositivo per completare l'accesso.",
     acctTooMany: "Troppe email di accesso in poco tempo. Aspetta un minuto e riprova.", acctFailed: "Non ha funzionato. Controlla l'indirizzo email e riprova.",
     acctBadEmail: "Inserisci un indirizzo email completo, ad es. nome@esempio.it.", acctSmall: "Gratis, e senza password da ricordare. Usiamo la tua email solo per farti accedere.",
-    acctPrivacy: "Informativa sulla privacy", acctClose: "Chiudi", acctWelcome: "Hai effettuato l'accesso. Ora i tuoi preferiti ti seguono su ogni dispositivo.",
+    acctPrivacy: "Informativa sulla privacy", acctClose: "Chiudi", prefOfferCur: "Mostrare i prezzi in {cur} su tutte le pagine?", prefYes: "Sì", prefNo: "No, grazie", prefSaved: "Salvato. Puoi cambiarlo in Il tuo account.", acctWelcome: "Hai effettuato l'accesso. Ora i tuoi preferiti ti seguono su ogni dispositivo.",
     acctLinkExpired: "Questo link di accesso è scaduto o è già stato usato. Tocca Accedi per riceverne uno nuovo.",
     been: "Ci sono stato", beenAdd: "Segna che sei stato da {name}", beenRemove: "Togli {name} dai visitati", beenAddT: "Segna come visitato", beenRemoveT: "Togli dai visitati",
     toastBeen: "{name} segnato come visitato", toastNotBeen: "{name} tolto dai visitati", showBeen: "Visitati",
@@ -1832,6 +1832,29 @@ function setVisited(map, from) {
   const ids = Object.keys(before).filter((id) => !(id in map) || before[id] !== map[id]).concat(Object.keys(map).filter((id) => !(id in before)));
   window.dispatchEvent(new CustomEvent("sb:visited", { detail: { ids, from: from || "" } }));
 }
+// A member's preferences: { home, homeName, currency, diet }, each "" when not chosen. Kept with the account (the `profile`
+// table, account.js) and copied here for signed-in people only, so signed-out visitors see the site as before.
+// home is a destination's id ("london"), currency one of HOME_CURRENCIES, diet one of Help me pick's dietary choices.
+const PROFILE_KEY = "starredbill-profile", HOME_CURRENCIES = ["GBP", "EUR", "USD"];
+const loadProfile = () => { const p = store.get(PROFILE_KEY, null); return p && typeof p === "object" && !Array.isArray(p) ? p : {}; };
+const homeCurrency = () => HOME_CURRENCIES.includes(loadProfile().currency) ? loadProfile().currency : "";
+function setProfile(p, from) {
+  const before = loadProfile();
+  const next = { home: p.home || "", homeName: p.home ? p.homeName || "" : "", currency: HOME_CURRENCIES.includes(p.currency) ? p.currency : "", diet: p.diet || "" };
+  store.set(PROFILE_KEY, next);
+  // A new home currency replaces the choices made page by page on this device, so every page opens in it.
+  if (next.currency !== (before.currency || "")) {
+    const prefs = store.get(PREFS_KEY, {});
+    delete prefs.currency; delete prefs.pickCur; delete prefs.compareCurrency;
+    store.set(PREFS_KEY, prefs);
+    const bill = store.get("starredbill-bill", null);
+    if (bill && bill.cur) { bill.cur = ""; store.set("starredbill-bill", bill); }
+    try { localStorage.removeItem("starredbill-rp-currency"); } catch (e) {}
+  }
+  window.dispatchEvent(new CustomEvent("sb:profile", { detail: { before, from: from || "" } }));
+}
+// Pages call this when someone picks a currency or dietary need; account.js offers to remember it for a member who hasn't set one.
+const prefChosen = (kind, value) => window.dispatchEvent(new CustomEvent("sb:prefchosen", { detail: { kind, value } }));
 
 // ---------- Helpers ----------
 const $ = (id) => document.getElementById(id);

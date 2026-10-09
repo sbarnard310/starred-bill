@@ -78,7 +78,7 @@
     acctSent: "Hãy kiểm tra email. Chúng tôi đã gửi liên kết đăng nhập đến {email}. Mở liên kết trên thiết bị này để đăng nhập.",
     acctTooMany: "Vừa có quá nhiều email đăng nhập. Hãy đợi một phút rồi thử lại.", acctFailed: "Không thành công. Hãy kiểm tra địa chỉ email và thử lại.",
     acctBadEmail: "Nhập địa chỉ email đầy đủ, ví dụ ten@example.com.", acctSmall: "Miễn phí và không cần mật khẩu. Chúng tôi chỉ dùng email của bạn để đăng nhập.",
-    acctPrivacy: "Thông báo quyền riêng tư", acctClose: "Đóng", acctWelcome: "Bạn đã đăng nhập. Danh sách muốn đến giờ theo bạn trên mọi thiết bị.",
+    acctPrivacy: "Thông báo quyền riêng tư", acctClose: "Đóng", prefOfferCur: "Hiển thị giá bằng {cur} trên mọi trang?", prefYes: "Có", prefNo: "Không, cảm ơn", prefSaved: "Đã lưu. Bạn có thể đổi trong tài khoản của mình.", acctWelcome: "Bạn đã đăng nhập. Danh sách muốn đến giờ theo bạn trên mọi thiết bị.",
     acctLinkExpired: "Liên kết đăng nhập đã hết hạn hoặc đã được dùng. Chạm Đăng nhập để nhận liên kết mới.",
     been: "Đã đến", beenAdd: "Đánh dấu đã đến {name}", beenRemove: "Bỏ đánh dấu đã đến {name}", beenAddT: "Đánh dấu đã đến", beenRemoveT: "Bỏ đánh dấu đã đến",
     toastBeen: "Đã đánh dấu đã đến {name}", toastNotBeen: "Đã bỏ đánh dấu đã đến {name}", showBeen: "Đã đến",

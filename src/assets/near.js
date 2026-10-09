@@ -156,21 +156,36 @@ async function searchPlace(q) {
     status("The place search isn't working just now. Try “Use my location” instead.", true);
   }
 }
-async function setHere(here, remembered) {
+// A member's home city (loadProfile() in common.js) as a place to start from: the middle of its starred restaurants.
+async function homePlace() {
+  const pr = loadProfile();
+  if (!pr.home) return null;
+  try { await dataReady; } catch (e) { return null; }
+  const inside = near.rows.filter((r) => r.path && r.path.includes("/" + pr.home + "/"));
+  if (!inside.length) return null;
+  const mid = (xs) => { xs = xs.slice().sort((a, b) => a - b); return xs[Math.floor(xs.length / 2)]; };
+  return { lat: mid(inside.map((r) => r.lat)), lng: mid(inside.map((r) => r.lng)), label: pr.homeName || inside[0].where };
+}
+async function startFromHome() {
+  const here = await homePlace();
+  if (here && !near.here && !near.trip) setHere(here, false, true);
+}
+async function setHere(here, remembered, home) {
   if (near.trip) leaveTrip();
   near.here = here;
   near.shown = 30;
   near.times = { drive: {}, transit: {} };
   try { await dataReady; } catch (e) { status("The restaurant list couldn't load just now. Please refresh the page.", true); return; }
   near.rows.forEach((r) => { r.d = metresBetween(here, r); r.along = null; });
-  status("Showing starred restaurants near <strong>" + esc(here.label) + "</strong>.");
+  status("Showing starred restaurants near <strong>" + esc(here.label) + "</strong>" +
+    (home ? ', your home city (<a href="/account/#preferences">change it</a>).' : "."));
   $("results").hidden = false;
   near.fresh = remembered ? sinceLastLook(store.get(NEAR_KEY, null)) : [];
   renderRemember(!!remembered || !!store.get(NEAR_KEY, null));
   widenIfEmpty();
   renderFilters();
   render(true);
-  if (!remembered) $("results").scrollIntoView({ behavior: "smooth", block: "start" });
+  if (!remembered && !home) $("results").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 // Nothing within the chosen distance: widen it to the first distance that has something.
 function widenIfEmpty() {
@@ -626,3 +641,6 @@ if (params0.get("to")) {
 } else if (params0.get("q")) { $("placeQ").value = params0.get("q"); searchPlace(params0.get("q")); }
 else if (params0.get("locate") === "1") locate();
 else if (saved && typeof saved.lat === "number") setHere(saved, true);
+// With nothing else to go on, a member starts from their home city, including when it arrives from the account after the page opened.
+else startFromHome();
+window.addEventListener("sb:profile", () => { if (!params0.get("to") && !params0.get("q") && params0.get("locate") !== "1" && !store.get(NEAR_KEY, null)) startFromHome(); });

@@ -78,7 +78,7 @@
     acctSent: "Tingnan ang email mo. Nagpadala kami ng sign-in link sa {email}. Buksan ito sa device na ito para matapos ang pag-sign in.",
     acctTooMany: "Napakaraming sign-in email ngayon. Maghintay ng isang minuto, saka subukan muli.", acctFailed: "Hindi gumana iyon. Suriin ang email address at subukan muli.",
     acctBadEmail: "Maglagay ng buong email address, hal. pangalan@example.com.", acctSmall: "Libre, at walang password na kailangang tandaan. Ginagamit lang namin ang email mo para ma-sign in ka.",
-    acctPrivacy: "Abiso sa privacy", acctClose: "Isara", acctWelcome: "Naka-sign in ka na. Kasama mo na ang wishlist mo sa anumang device.",
+    acctPrivacy: "Abiso sa privacy", acctClose: "Isara", prefOfferCur: "Ipakita ang mga presyo sa {cur} sa bawat pahina?", prefYes: "Oo", prefNo: "Huwag na", prefSaved: "Na-save. Mababago mo ito sa iyong account.", acctWelcome: "Naka-sign in ka na. Kasama mo na ang wishlist mo sa anumang device.",
     acctLinkExpired: "Nag-expire na o nagamit na ang sign-in link na iyon. I-tap ang Mag-sign in para makakuha ng bago.",
     been: "Napuntahan na", beenAdd: "Markahan ang {name} bilang napuntahan na", beenRemove: "Alisin ang {name} sa napuntahan na", beenAddT: "Markahan bilang napuntahan na", beenRemoveT: "Alisin sa napuntahan na",
     toastBeen: "Minarkahan ang {name} bilang napuntahan na", toastNotBeen: "Inalis ang {name} sa napuntahan na", showBeen: "Napuntahan na",

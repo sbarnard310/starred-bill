@@ -75,7 +75,7 @@
     acctSent: "Vaata oma postkasti. Saatsime sisselogimislingi aadressile {email}. Ava see selles seadmes, et sisse logida.",
     acctTooMany: "Just saadeti liiga palju sisselogimiskirju. Oota minut ja proovi uuesti.", acctFailed: "See ei õnnestunud. Kontrolli e-posti aadressi ja proovi uuesti.",
     acctBadEmail: "Sisesta täielik e-posti aadress, nt nimi@example.com.", acctSmall: "Tasuta ja ilma paroolita. Kasutame sinu e-posti ainult sisselogimiseks.",
-    acctPrivacy: "Privaatsusteade", acctClose: "Sulge", acctWelcome: "Oled sisse logitud. Sinu soovinimekiri on nüüd kõigis seadmetes.",
+    acctPrivacy: "Privaatsusteade", acctClose: "Sulge", prefOfferCur: "Kas näidata hindu kõigil lehtedel valuutas {cur}?", prefYes: "Jah", prefNo: "Ei, aitäh", prefSaved: "Salvestatud. Saad seda muuta oma kontol.", acctWelcome: "Oled sisse logitud. Sinu soovinimekiri on nüüd kõigis seadmetes.",
     acctLinkExpired: "See sisselogimislink on aegunud või juba kasutatud. Uue saamiseks puuduta „Logi sisse”.",
     been: "Olen käinud", beenAdd: "Märgi {name} külastatuks", beenRemove: "Eemalda {name} külastatute hulgast", beenAddT: "Märgi külastatuks", beenRemoveT: "Eemalda külastatute hulgast",
     toastBeen: "Märgitud külastatuks: {name}", toastNotBeen: "Eemaldatud külastatute hulgast: {name}", showBeen: "Külastatud",

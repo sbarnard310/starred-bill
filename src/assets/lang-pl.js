@@ -78,7 +78,7 @@
     acctSent: "Sprawdź pocztę. Wysłaliśmy link do logowania na adres {email}. Otwórz go na tym urządzeniu, aby się zalogować.",
     acctTooMany: "Wysłano właśnie zbyt wiele e-maili logowania. Odczekaj minutę i spróbuj ponownie.", acctFailed: "Nie udało się. Sprawdź adres e-mail i spróbuj ponownie.",
     acctBadEmail: "Wpisz pełny adres e-mail, np. imie@example.com.", acctSmall: "Za darmo i bez hasła. Twojego adresu e-mail używamy tylko do logowania.",
-    acctPrivacy: "Informacja o prywatności", acctClose: "Zamknij", acctWelcome: "Jesteś zalogowany. Twoje ulubione są teraz na każdym urządzeniu.",
+    acctPrivacy: "Informacja o prywatności", acctClose: "Zamknij", prefOfferCur: "Pokazywać ceny w {cur} na każdej stronie?", prefYes: "Tak", prefNo: "Nie, dziękuję", prefSaved: "Zapisano. Możesz to zmienić na swoim koncie.", acctWelcome: "Jesteś zalogowany. Twoje ulubione są teraz na każdym urządzeniu.",
     acctLinkExpired: "Ten link do logowania wygasł lub został już użyty. Dotknij „Zaloguj się”, aby dostać nowy.",
     been: "Byłem tam", beenAdd: "Oznacz {name} jako odwiedzoną", beenRemove: "Usuń {name} z odwiedzonych", beenAddT: "Oznacz jako odwiedzoną", beenRemoveT: "Usuń z odwiedzonych",
     toastBeen: "Oznaczono jako odwiedzoną: {name}", toastNotBeen: "Usunięto z odwiedzonych: {name}", showBeen: "Odwiedzone",

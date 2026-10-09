@@ -78,7 +78,7 @@
     acctSent: "Sjekk e-posten din. Vi har sendt en innloggingslenke til {email}. Åpne den på denne enheten for å logge inn.",
     acctTooMany: "For mange innloggings-e-poster akkurat nå. Vent et minutt og prøv igjen.", acctFailed: "Det gikk ikke. Sjekk e-postadressen og prøv igjen.",
     acctBadEmail: "Skriv inn en hel e-postadresse, f.eks. navn@example.com.", acctSmall: "Gratis og uten passord. Vi bruker bare e-posten din til å logge deg inn.",
-    acctPrivacy: "Personvernerklæring", acctClose: "Lukk", acctWelcome: "Du er logget inn. Ønskelisten din følger deg nå på alle enheter.",
+    acctPrivacy: "Personvernerklæring", acctClose: "Lukk", prefOfferCur: "Vise priser i {cur} på alle sider?", prefYes: "Ja", prefNo: "Nei takk", prefSaved: "Lagret. Du kan endre det under Kontoen din.", acctWelcome: "Du er logget inn. Ønskelisten din følger deg nå på alle enheter.",
     acctLinkExpired: "Innloggingslenken har utløpt eller er allerede brukt. Trykk på Logg inn for å få en ny.",
     been: "Har vært der", beenAdd: "Merk {name} som besøkt", beenRemove: "Fjern {name} fra besøkte", beenAddT: "Merk som besøkt", beenRemoveT: "Fjern fra besøkte",
     toastBeen: "{name} er merket som besøkt", toastNotBeen: "{name} er fjernet fra besøkte", showBeen: "Har vært der",

@@ -79,7 +79,7 @@
     acctSent: "E-postanızı kontrol edin. {email} adresine bir giriş bağlantısı gönderdik. Giriş yapmak için bu cihazda açın.",
     acctTooMany: "Az önce çok fazla giriş e-postası gönderildi. Bir dakika bekleyip yeniden deneyin.", acctFailed: "Olmadı. E-posta adresini kontrol edip yeniden deneyin.",
     acctBadEmail: "Tam bir e-posta adresi yazın, ör. ad@example.com.", acctSmall: "Ücretsiz ve şifre gerekmez. E-postanızı yalnızca giriş için kullanırız.",
-    acctPrivacy: "Gizlilik bildirimi", acctClose: "Kapat", acctWelcome: "Giriş yaptınız. İstek listeniz artık her cihazda sizinle.",
+    acctPrivacy: "Gizlilik bildirimi", acctClose: "Kapat", prefOfferCur: "Fiyatlar her sayfada {cur} olarak gösterilsin mi?", prefYes: "Evet", prefNo: "Hayır, teşekkürler", prefSaved: "Kaydedildi. Hesabınızdan değiştirebilirsiniz.", acctWelcome: "Giriş yaptınız. İstek listeniz artık her cihazda sizinle.",
     acctLinkExpired: "Bu giriş bağlantısının süresi dolmuş ya da zaten kullanılmış. Yenisi için Giriş yap'a dokunun.",
     been: "Gittim", beenAdd: "{name} restoranını gidildi olarak işaretle", beenRemove: "{name} restoranını gidilenlerden çıkar", beenAddT: "Gidildi olarak işaretle", beenRemoveT: "Gidilenlerden çıkar",
     toastBeen: "Gidildi olarak işaretlendi: {name}", toastNotBeen: "Gidilenlerden çıkarıldı: {name}", showBeen: "Gittiklerim",

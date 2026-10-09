@@ -81,7 +81,7 @@
     acctSent: "Veja o seu e-mail. Enviámos um link de acesso para {email}. Abra-o neste dispositivo para entrar.",
     acctTooMany: "Foram enviados demasiados e-mails de acesso. Espere um minuto e tente de novo.", acctFailed: "Não funcionou. Verifique o endereço de e-mail e tente de novo.",
     acctBadEmail: "Escreva um endereço de e-mail completo, p. ex. nome@example.com.", acctSmall: "Gratuito e sem palavra-passe. Só usamos o seu e-mail para o deixar entrar.",
-    acctPrivacy: "Aviso de privacidade", acctClose: "Fechar", acctWelcome: "Já entrou. Os seus favoritos acompanham-no agora em qualquer dispositivo.",
+    acctPrivacy: "Aviso de privacidade", acctClose: "Fechar", prefOfferCur: "Mostrar os preços em {cur} em todas as páginas?", prefYes: "Sim", prefNo: "Não, obrigado", prefSaved: "Guardado. Pode alterar isto na sua conta.", acctWelcome: "Já entrou. Os seus favoritos acompanham-no agora em qualquer dispositivo.",
     acctLinkExpired: "Esse link de acesso expirou ou já foi usado. Toque em Entrar para receber outro.",
     been: "Já fui", beenAdd: "Marcar {name} como visitado", beenRemove: "Desmarcar {name} como visitado", beenAddT: "Marcar como visitado", beenRemoveT: "Desmarcar como visitado",
     toastBeen: "{name} marcado como visitado", toastNotBeen: "{name} já não está marcado como visitado", showBeen: "Já fui",

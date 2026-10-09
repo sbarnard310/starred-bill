@@ -156,6 +156,8 @@ function renderWishlist() {
 const BILL_KEY = "starredbill-bill";
 const bill = Object.assign({ meal: "dinner", wine: false, cur: "" }, (() => { try { return JSON.parse(localStorage.getItem(BILL_KEY)) || {}; } catch (e) { return {}; } })());
 let billData = null, billLoading = null;
+// A new currency in the member's preferences clears the bill's own choice (setProfile() in common.js).
+window.addEventListener("sb:profile", () => { bill.cur = store.get(BILL_KEY, {}).cur || ""; if (loadWishlist().length) renderWishlist(); });
 const saveBill = () => { try { localStorage.setItem(BILL_KEY, JSON.stringify(bill)); } catch (e) { /* private window: the choice lasts for this visit */ } };
 const billRate = (from) => DATA.currencies[bill.cur].perUSD / DATA.currencies[from].perUSD;
 const billMoney = (n, approx) => (approx ? "≈" : "") + localMoney(approx ? Math.round(n) : Math.round(n * 100) / 100, bill.cur);
@@ -182,7 +184,8 @@ function renderBill(list) {
   const curs = [...new Set(list.map((r) => r.cur))];
   const choices = DATA.switchable.slice();
   if (curs.length === 1 && !choices.includes(curs[0])) choices.unshift(curs[0]);
-  if (!choices.includes(bill.cur)) bill.cur = curs.length === 1 && choices.includes(curs[0]) ? curs[0] : choices.includes("GBP") ? "GBP" : choices[0];
+  // A member's own currency first (loadProfile() in common.js), else the one the restaurants share, else pounds.
+  if (!choices.includes(bill.cur)) bill.cur = choices.includes(homeCurrency()) ? homeCurrency() : curs.length === 1 && choices.includes(curs[0]) ? curs[0] : choices.includes("GBP") ? "GBP" : choices[0];
   const items = list.map(billItem), counted = items.filter((x) => !x.why);
   const approx = counted.some((x) => x.approx);
   const sub = counted.reduce((a, x) => a + x.amount, 0), extra = counted.reduce((a, x) => a + x.extra, 0);
@@ -452,7 +455,7 @@ document.addEventListener("click", (e) => {
   } else if (el.dataset.mapstars) {
     homeState.stars = Number(el.dataset.mapstars); renderMapStars(); updateWorldMap(true);
   } else if (el.dataset.billmeal || el.dataset.billcur) {
-    if (el.dataset.billmeal) bill.meal = el.dataset.billmeal; else bill.cur = el.dataset.billcur;
+    if (el.dataset.billmeal) bill.meal = el.dataset.billmeal; else { bill.cur = el.dataset.billcur; prefChosen("currency", bill.cur); }
     saveBill(); renderWishlist();
   } else if (el.dataset.unwish) {
     setWishlist(loadWishlist().filter((x) => x !== el.dataset.unwish)); renderWishlist();

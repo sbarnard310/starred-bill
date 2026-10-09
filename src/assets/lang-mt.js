@@ -77,7 +77,7 @@
     acctSent: "Iċċekkja l-email tiegħek. Bgħatna link biex tidħol fuq {email}. Iftħu fuq dan l-apparat biex tidħol.",
     acctTooMany: "Intbagħtu wisq emails biex tidħol bħalissa. Stenna minuta u erġa' pprova.", acctFailed: "Ma ħadimx. Iċċekkja l-indirizz tal-email u erġa' pprova.",
     acctBadEmail: "Ikteb indirizz tal-email sħiħ, eż. isem@example.com.", acctSmall: "B'xejn, u mingħajr password. Nużaw l-email tiegħek biss biex iddaħħlek.",
-    acctPrivacy: "Avviż ta' privatezza", acctClose: "Agħlaq", acctWelcome: "Dħalt. Il-lista tax-xewqat tiegħek issa ssegwik fuq kull apparat.",
+    acctPrivacy: "Avviż ta' privatezza", acctClose: "Agħlaq", prefOfferCur: "Turi l-prezzijiet f’{cur} f’kull paġna?", prefYes: "Iva", prefNo: "Le, grazzi", prefSaved: "Issejvjat. Tista’ tibdlu mill-kont tiegħek.", acctWelcome: "Dħalt. Il-lista tax-xewqat tiegħek issa ssegwik fuq kull apparat.",
     acctLinkExpired: "Dak il-link skada jew diġà ntuża. Agħfas Idħol biex tieħu wieħed ġdid.",
     been: "Mort", beenAdd: "Immarka lil {name} bħala mżur", beenRemove: "Neħħi lil {name} minn dawk imżura", beenAddT: "Immarka bħala mżur", beenRemoveT: "Neħħi minn dawk imżura",
     toastBeen: "{name} immarkat bħala mżur", toastNotBeen: "{name} tneħħa minn dawk imżura", showBeen: "Dawk imżura",

@@ -78,7 +78,7 @@
     acctSent: "Tarkista sähköpostisi. Lähetimme kirjautumislinkin osoitteeseen {email}. Avaa se tällä laitteella kirjautuaksesi.",
     acctTooMany: "Kirjautumisviestejä on lähetetty liian monta. Odota hetki ja yritä uudelleen.", acctFailed: "Se ei onnistunut. Tarkista sähköpostiosoite ja yritä uudelleen.",
     acctBadEmail: "Kirjoita koko sähköpostiosoite, esim. nimi@example.com.", acctSmall: "Ilmainen, eikä salasanaa tarvitse muistaa. Käytämme sähköpostiasi vain kirjautumiseen.",
-    acctPrivacy: "Tietosuojaseloste", acctClose: "Sulje", acctWelcome: "Olet kirjautunut. Toivelistasi seuraa nyt sinua kaikille laitteille.",
+    acctPrivacy: "Tietosuojaseloste", acctClose: "Sulje", prefOfferCur: "Näytetäänkö hinnat kaikilla sivuilla valuutassa {cur}?", prefYes: "Kyllä", prefNo: "Ei kiitos", prefSaved: "Tallennettu. Voit muuttaa sitä tililläsi.", acctWelcome: "Olet kirjautunut. Toivelistasi seuraa nyt sinua kaikille laitteille.",
     acctLinkExpired: "Kirjautumislinkki on vanhentunut tai jo käytetty. Saat uuden napauttamalla Kirjaudu.",
     been: "Olen käynyt", beenAdd: "Merkitse {name} käydyksi", beenRemove: "Poista {name} käydyistä", beenAddT: "Merkitse käydyksi", beenRemoveT: "Poista käydyistä",
     toastBeen: "{name} merkittiin käydyksi", toastNotBeen: "{name} poistettiin käydyistä", showBeen: "Olen käynyt",

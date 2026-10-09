@@ -888,6 +888,12 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 .si-small a { color: var(--green); }
 .acct-notice { position: fixed; left: 50%; top: calc(14px + env(safe-area-inset-top, 0px)); transform: translateX(-50%); z-index: 40; max-width: calc(100% - 32px); padding: 10px 16px;
   border-radius: 10px; background: var(--ink); color: var(--bg); font-size: .9rem; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+/* "Show prices in £ on every page?" for a member who hasn't set a currency (acctOffer() in account.js) */
+.acct-offer { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 14px; width: max-content; z-index: 41; }
+.acct-offer[hidden] { display: none; }
+.ao-btns { display: flex; gap: 8px; }
+.acct-offer button { padding: 5px 14px; border: 1px solid currentColor; border-radius: 999px; background: transparent; color: inherit; font: inherit; font-weight: 600; cursor: pointer; }
+.acct-offer .ao-yes { background: var(--gold); border-color: var(--gold); color: var(--band); }
 .wish-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; padding: 16px 18px; margin-bottom: 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .wish-cta p { margin: 0; flex: 1 1 280px; color: var(--muted); }
 .cta-btn { padding: 10px 18px; border: 0; border-radius: 999px; background: var(--green); color: var(--surface); font: inherit; font-weight: 700; cursor: pointer; }
@@ -939,6 +945,21 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 .btn-line.danger { color: var(--danger); }
 .btn-line.danger:hover { border-color: var(--danger); color: var(--danger); }
 .btn-line.danger.solid { background: var(--danger); border-color: var(--danger); color: var(--surface); }
+/* Your preferences (account-page.js prefsSection()) */
+.prefs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 18px; padding: 16px 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.prefs label, .prefs .pref-k { display: block; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 6px; }
+.prefs select, .prefs input { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: inherit; }
+.pref-home { position: relative; }
+.pref-list { position: absolute; z-index: 5; inset-inline: 0; top: 100%; margin: 4px 0 0; padding: 4px 0; list-style: none; max-height: 260px; overflow: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+.pref-list button { display: block; width: 100%; padding: 8px 12px; border: 0; background: none; color: inherit; font: inherit; text-align: start; cursor: pointer; }
+.pref-list button:hover, .pref-list button:focus { background: var(--green-soft); }
+.pref-list small { color: var(--muted); }
+.pref-note { grid-column: 1 / -1; margin: 0; font-size: .88rem; color: var(--muted); }
+.pref-note.ok { color: var(--green); }
+.pref-note:empty { display: none; }
+.acct-section > .pref-small { margin: 10px 0 0; font-size: .82rem; }
+.pref-small a { color: var(--green); }
+@media (max-width: 720px) { .prefs { grid-template-columns: 1fr; } }
 .acct-confirm { margin-top: 14px; padding: 14px 16px; border-radius: var(--radius); background: var(--danger-soft); }
 .acct-confirm p { margin: 0 0 10px; }
 .acct-privacy { margin: 18px 0 0; font-size: .88rem; }

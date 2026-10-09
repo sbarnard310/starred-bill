@@ -196,9 +196,12 @@ function showCurrency(c) {
     showCurrency(b.dataset.cur);
     store.set(CUR_KEY, b.dataset.cur);
     track("currency", { currency: b.dataset.cur, page: "restaurant" });
+    prefChosen("currency", b.dataset.cur);
   });
-  const saved = store.get(CUR_KEY, pageCur);
-  showCurrency(list.includes(saved) ? saved : pageCur);
+  // This page's last choice, else a member's own currency (loadProfile() in common.js), else the restaurant's.
+  const start = () => { const saved = store.get(CUR_KEY, homeCurrency() || pageCur); return list.includes(saved) ? saved : pageCur; };
+  showCurrency(start());
+  window.addEventListener("sb:profile", () => showCurrency(start()));
 })();
 
 // "Seen a different price?" opens an email; counted as a contact like the destination pages' form.

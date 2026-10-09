@@ -75,7 +75,7 @@
     acctSent: "Pārbaudiet e-pastu. Mēs nosūtījām pieteikšanās saiti uz {email}. Atveriet to šajā ierīcē, lai pieteiktos.",
     acctTooMany: "Tikko nosūtīts pārāk daudz pieteikšanās e-pastu. Pagaidiet minūti un mēģiniet vēlreiz.", acctFailed: "Neizdevās. Pārbaudiet e-pasta adresi un mēģiniet vēlreiz.",
     acctBadEmail: "Ievadiet pilnu e-pasta adresi, piem., vards@example.com.", acctSmall: "Bez maksas un bez paroles. Jūsu e-pastu izmantojam tikai pieteikšanās vajadzībām.",
-    acctPrivacy: "Paziņojums par privātumu", acctClose: "Aizvērt", acctWelcome: "Jūs esat pieteicies. Jūsu vēlmju saraksts tagad ir pieejams jebkurā ierīcē.",
+    acctPrivacy: "Paziņojums par privātumu", acctClose: "Aizvērt", prefOfferCur: "Rādīt cenas visās lapās valūtā {cur}?", prefYes: "Jā", prefNo: "Nē, paldies", prefSaved: "Saglabāts. To var mainīt savā kontā.", acctWelcome: "Jūs esat pieteicies. Jūsu vēlmju saraksts tagad ir pieejams jebkurā ierīcē.",
     acctLinkExpired: "Šī pieteikšanās saite ir beigusies vai jau izmantota. Pieskarieties “Pieteikties”, lai saņemtu jaunu.",
     been: "Esmu bijis", beenAdd: "Atzīmēt {name} kā apmeklētu", beenRemove: "Noņemt {name} no apmeklētajiem", beenAddT: "Atzīmēt kā apmeklētu", beenRemoveT: "Noņemt no apmeklētajiem",
     toastBeen: "Atzīmēts kā apmeklēts: {name}", toastNotBeen: "Noņemts no apmeklētajiem: {name}", showBeen: "Apmeklētie",

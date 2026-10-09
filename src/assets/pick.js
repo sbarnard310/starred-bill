@@ -232,7 +232,8 @@ const STEP_HTML = {
   diet() {
     const base = pool(5);
     return '<h2 tabindex="-1">Any dietary needs?</h2>' +
-      '<p class="pick-hint">From the options each restaurant lists in the MICHELIN Guide. Always check when you book.</p><div class="pick-opts pick-opts-wide">' +
+      '<p class="pick-hint">From the options each restaurant lists in the MICHELIN Guide. Always check when you book.' +
+      (ask.diet && ask.diet === homeDiet() ? ' Your saved choice is selected (<a href="/account/#preferences">change it</a>).' : "") + '</p><div class="pick-opts pick-opts-wide">' +
       DIET_CHOICES.map(([k, label]) => option('data-diet="' + k + '"', label, "", base.filter((r) => hasDiet(r, k)).length, ask.diet === k)).join("") + "</div>";
   }
 };
@@ -319,9 +320,18 @@ function setMeal(meal) {
   ask.meal = meal;
   if (change) ask.budget = was ? nearestBudget(two(meal) ? was * 2 : was / 2) : budgets().length - 1;
 }
+// A member's saved dietary need (loadProfile() in common.js), when it's one of the choices here; null when none.
+const homeDiet = () => DIET_CHOICES.some(([k]) => k && k === loadProfile().diet) ? loadProfile().diet : null;
+// Preferences arriving from the account after the page opened count only until the first answer.
+window.addEventListener("sb:profile", () => {
+  if (ask.started || !$("result").hidden) return;
+  if (!new URLSearchParams(location.search).get("c")) ask.cur = defaultCurrency();
+  if (!ask.pendingGo) ask.diet = homeDiet();
+});
 function defaultCurrency() {
   const saved = store.get(PREFS_KEY, {}).pickCur;
   if (saved && DATA.switchable.includes(saved)) return saved;
+  if (DATA.switchable.includes(homeCurrency())) return homeCurrency();
   const l = (navigator.language || "en-US").toLowerCase();
   if (/-gb$/.test(l) || l === "en-gb") return "GBP";
   if (/^(de|fr|it|es|nl|pt|fi|el|sk|sl|et|lv|lt|mt|ga|ca)\b/.test(l) || /-(ie|at|be|lu)$/.test(l)) return "EUR";
@@ -349,6 +359,7 @@ document.addEventListener("click", (e) => {
     ask.cur = b.dataset.cur;
     if (was) ask.budget = nearestBudget(was / DATA.currencies[from].perUSD * DATA.currencies[ask.cur].perUSD);
     const prefs = store.get(PREFS_KEY, {}); prefs.pickCur = ask.cur; store.set(PREFS_KEY, prefs);
+    prefChosen("currency", ask.cur);
     if ($("budgetRange")) { renderStep(); } else showResult();
   }
   else if (b.dataset.next === "budget") { track("pick-step", { step: "budget", answer: budgetValue() ? budgetValue() + " " + ask.cur : "no-limit", wine: ask.wine ? "yes" : "no" }); advance(); }
@@ -361,7 +372,7 @@ document.addEventListener("click", (e) => {
     $("leftCount").innerHTML = "<strong>" + plural(pool(5).length, "restaurant") + "</strong> still in the running";
   }
   else if (b.dataset.next === "food") { track("pick-step", { step: "food", answer: (ask.food || []).join(",") || "anything" }); ask.food = ask.food || []; advance(); }
-  else if (b.dataset.diet != null && b.closest("#quiz")) { ask.diet = b.dataset.diet; track("pick-step", { step: "diet", answer: ask.diet || "none" }); advance(); }
+  else if (b.dataset.diet != null && b.closest("#quiz")) { ask.diet = b.dataset.diet; track("pick-step", { step: "diet", answer: ask.diet || "none" }); prefChosen("diet", ask.diet); advance(); }
   else if (b.id === "backBtn") { ask.step = Math.max(0, ask.step - 1); renderStep(); }
   else if (b.dataset.goto != null) { ask.step = Number(b.dataset.goto); ask.started = true; renderStep(); $("quiz").scrollIntoView({ behavior: "smooth", block: "nearest" }); }
   else if (b.dataset.edit != null) { ask.step = Number(b.dataset.edit); ask.started = true; renderStep(); $("quiz").scrollIntoView({ behavior: "smooth", block: "start" }); }
@@ -391,7 +402,7 @@ document.addEventListener("change", (e) => {
 window.addEventListener("sb:wishlist", () => { renderWishCount(); document.querySelectorAll("[data-wish]").forEach((b) => { const on = loadWishlist().includes(b.dataset.wish); b.classList.toggle("on", on); b.setAttribute("aria-pressed", String(on)); }); });
 window.addEventListener("sb:visited", () => { if (!$("result").hidden) showResult(); });
 function restart() {
-  Object.assign(ask, { step: 0, where: null, meal: null, budget: BUDGETS_ONE.indexOf(200), wine: false, stars: null, food: null, diet: null, withVisited: false, started: true });
+  Object.assign(ask, { step: 0, where: null, meal: null, budget: BUDGETS_ONE.indexOf(200), wine: false, stars: null, food: null, diet: homeDiet(), withVisited: false, started: true });
   history.replaceState(null, "", location.pathname);
   track("pick-restart");
   renderStep();
@@ -709,7 +720,12 @@ document.addEventListener("click", (e) => { const el = e.target.closest("button[
 ask.cur = defaultCurrency();
 ask.budget = BUDGETS_ONE.indexOf(200);
 dataReady.then(() => {
-  if (fromQuery() === "result") showResult(); else renderStep();
+  if (fromQuery() === "result") showResult();
+  else {
+    // A member's dietary needs start selected, unless a shared link already answered the question.
+    if (ask.diet == null && !ask.pendingGo) ask.diet = homeDiet();
+    renderStep();
+  }
 }).catch(() => {
   $("stepBody").innerHTML = '<p class="pick-wait">The restaurant list couldn\'t load just now. Please refresh the page.</p>';
 });

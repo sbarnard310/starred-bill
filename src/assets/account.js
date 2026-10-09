@@ -1,6 +1,6 @@
-// Free accounts. People sign in with an emailed code or link, or Google, and their wishlist and "been there" list
-// follow them to any device. Supabase (supabase.com) holds the accounts and one table, `saved`
-// (see supabase/schema.sql), whose rules let each person read and change only their own rows.
+// Free accounts. People sign in with an emailed code or link, or Google, and their wishlist, "been there" list and
+// preferences (home city, currency, dietary needs) follow them to any device. Supabase (supabase.com) holds the accounts
+// and two tables, `saved` and `profile` (see supabase/schema.sql), whose rules let each person read and change only their own rows.
 // Signed out, the wishlist still works and stays in this browser; "been there" needs an account.
 // The pages keep reading the browser copy (loadWishlist / loadVisited in common.js); this file keeps
 // that copy in step with the account and sends every change up.
@@ -12,8 +12,10 @@ const SUPABASE_JS = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/
 const SESSION_KEY = "sb-uvdaclbhskkukyngikhq-auth-token";
 // Which account this browser's lists were last merged with, and changes still waiting to be sent.
 const SYNCED_KEY = "starredbill-synced-user", PENDING_KEY = "starredbill-pending";
+// A preferences change still waiting to be sent, and which offers to remember a choice have been answered on this device.
+const PROFILE_PENDING_KEY = "starredbill-profile-pending", ASKED_KEY = "starredbill-pref-asked";
 
-const account = { client: null, user: null, google: false, boot: null, ready: false, known: null, reason: "", syncing: null };
+const account = { client: null, user: null, google: false, boot: null, ready: false, known: null, reason: "", syncing: null, profileReady: false };
 const acctSignedIn = () => !!account.user;
 // Before the sign-in code has loaded, a saved session is a good guess that someone is signed in.
 const hasStoredSession = () => { try { return !!localStorage.getItem(SESSION_KEY); } catch (e) { return false; } };
@@ -72,10 +74,13 @@ async function afterAuthChange(event, before) {
     }
   } else if (event === "SIGNED_OUT") {
     // A shared computer shouldn't keep someone's lists once they sign out.
-    try { localStorage.removeItem(SYNCED_KEY); localStorage.removeItem(PENDING_KEY); } catch (e) {}
+    try { [SYNCED_KEY, PENDING_KEY, PROFILE_PENDING_KEY, ASKED_KEY].forEach((k) => localStorage.removeItem(k)); } catch (e) {}
     account.known = null;
+    account.profileReady = false;
     setWishlist([], "sync");
     setVisited({}, "sync");
+    try { localStorage.removeItem(PROFILE_KEY); } catch (e) {}
+    window.dispatchEvent(new CustomEvent("sb:profile", { detail: { before: {}, from: "sync" } }));
   }
   account.ready = true;
   renderAccountButton();
@@ -168,7 +173,49 @@ async function doSyncDown() {
   setWishlist(wish, "sync");
   setVisited(visited, "sync");
   if (first) { const ids = changedIds(snapshotLocal()); if (ids.length) await pushIds(ids); }
+  await syncProfile();
 }
+
+// ---------- Preferences: home city, currency, dietary needs ----------
+// One row per person in `profile`; the browser keeps a copy (loadProfile() in common.js) that pages read as they open.
+const profileRow = (p) => ({ user_id: account.user.id, home_place: p.home || null, home_name: p.home ? (p.homeName || "").slice(0, 120) || null : null, currency: p.currency || null, diet: p.diet || null });
+async function pushProfile() {
+  if (!account.client || !account.user) return false;
+  const { error } = await account.client.from("profile").upsert(profileRow(loadProfile()), { onConflict: "user_id" });
+  store.set(PROFILE_PENDING_KEY, error ? 1 : null);
+  return !error;
+}
+async function syncProfile() {
+  if (store.get(PROFILE_PENDING_KEY, null)) await pushProfile();
+  const { data, error } = await account.client.from("profile").select("home_place,home_name,currency,diet").maybeSingle();
+  if (error) return;
+  const r = data || {};
+  const next = { home: r.home_place || "", homeName: r.home_name || "", currency: r.currency || "", diet: r.diet || "" };
+  const now = loadProfile();
+  account.profileReady = true;
+  if (["home", "homeName", "currency", "diet"].some((k) => (now[k] || "") !== next[k]) || !store.get(PROFILE_KEY, null)) setProfile(next, "sync");
+}
+window.addEventListener("sb:profile", (e) => {
+  if (e.detail.from === "sync" || !(account.user || hasStoredSession())) return;
+  store.set(PROFILE_PENDING_KEY, 1);
+  if (account.user) pushProfile();
+});
+
+// The first time a member picks £, € or US$ (or a dietary need on Help me pick) without having set one, offer to keep it.
+const PREF_LABEL = { currency: (v) => DATA.currencies[v] ? DATA.currencies[v].symbol.trim() : v };
+window.addEventListener("sb:prefchosen", (e) => {
+  const { kind, value } = e.detail;
+  if (!account.user || !account.profileReady || !value || loadProfile()[kind]) return;
+  if (kind === "currency" && !HOME_CURRENCIES.includes(value)) return;
+  const asked = store.get(ASKED_KEY, {});
+  if (asked[kind]) return;
+  const question = kind === "currency" ? t("prefOfferCur", { cur: PREF_LABEL.currency(value) }) : "Remember " + value.replace(/-/g, " ") + " as your dietary need on Help me pick?";
+  acctOffer(question, () => {
+    setProfile(Object.assign({}, loadProfile(), { [kind]: value }));
+    acctNotice(t("prefSaved"));
+    track("preferences", { set: kind, via: "offer" });
+  }, () => { asked[kind] = 1; store.set(ASKED_KEY, asked); });
+});
 
 // ---------- Been there ----------
 // Returns false (and offers sign-in) when nobody is signed in.
@@ -222,6 +269,27 @@ function acctNotice(text) {
   n.hidden = false;
   clearTimeout(acctNotice.timer);
   acctNotice.timer = setTimeout(() => { n.hidden = true; }, 5000);
+}
+
+// A question with Yes / No thanks at the foot of the screen. Saying yes, no or closing it counts as an answer.
+function acctOffer(text, yes, no) {
+  let n = $("acctOffer");
+  if (!n) {
+    n = document.createElement("div");
+    n.id = "acctOffer"; n.className = "acct-notice acct-offer"; n.setAttribute("role", "dialog"); n.setAttribute("aria-live", "polite");
+    document.body.appendChild(n);
+  }
+  n.innerHTML = '<span class="ao-q"></span><span class="ao-btns"><button type="button" class="ao-yes"></button><button type="button" class="ao-no"></button></span>';
+  n.querySelector(".ao-q").textContent = text;
+  n.querySelector(".ao-yes").textContent = t("prefYes");
+  n.querySelector(".ao-no").textContent = t("prefNo");
+  n.setAttribute("aria-label", text);
+  n.hidden = false;
+  const done = (fn) => { n.hidden = true; clearTimeout(acctOffer.timer); fn(); };
+  n.querySelector(".ao-yes").onclick = () => done(yes);
+  n.querySelector(".ao-no").onclick = () => done(no);
+  clearTimeout(acctOffer.timer);
+  acctOffer.timer = setTimeout(() => { n.hidden = true; }, 15000);
 }
 
 function renderSignIn() {

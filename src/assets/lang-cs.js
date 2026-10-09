@@ -78,7 +78,7 @@
     acctSent: "Zkontrolujte e-mail. Poslali jsme přihlašovací odkaz na {email}. Otevřete ho na tomto zařízení a přihlásíte se.",
     acctTooMany: "Právě bylo odesláno příliš mnoho přihlašovacích e-mailů. Počkejte minutu a zkuste to znovu.", acctFailed: "Nepodařilo se. Zkontrolujte e-mailovou adresu a zkuste to znovu.",
     acctBadEmail: "Zadejte celou e-mailovou adresu, např. jmeno@example.com.", acctSmall: "Zdarma a bez hesla. Váš e-mail používáme jen k přihlášení.",
-    acctPrivacy: "Zásady ochrany soukromí", acctClose: "Zavřít", acctWelcome: "Jste přihlášeni. Oblíbené vás teď budou provázet na každém zařízení.",
+    acctPrivacy: "Zásady ochrany soukromí", acctClose: "Zavřít", prefOfferCur: "Zobrazovat ceny v {cur} na všech stránkách?", prefYes: "Ano", prefNo: "Ne, děkuji", prefSaved: "Uloženo. Změnit to můžete ve svém účtu.", acctWelcome: "Jste přihlášeni. Oblíbené vás teď budou provázet na každém zařízení.",
     acctLinkExpired: "Tento přihlašovací odkaz vypršel nebo už byl použit. Klepněte na Přihlásit se a získáte nový.",
     been: "Navštíveno", beenAdd: "Označit {name} jako navštívenou", beenRemove: "Odebrat {name} z navštívených", beenAddT: "Označit jako navštívenou", beenRemoveT: "Odebrat z navštívených",
     toastBeen: "Označeno jako navštívené: {name}", toastNotBeen: "Odebráno z navštívených: {name}", showBeen: "Navštíveno",

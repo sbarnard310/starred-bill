@@ -83,7 +83,7 @@
     acctSent: "Kijk in je mailbox. We hebben een aanmeldlink naar {email} gestuurd. Open hem op dit apparaat om je aan te melden.",
     acctTooMany: "Er zijn net te veel aanmeldmails verstuurd. Wacht een minuut en probeer het opnieuw.", acctFailed: "Dat lukte niet. Controleer het e-mailadres en probeer het opnieuw.",
     acctBadEmail: "Vul een volledig e-mailadres in, bijv. naam@example.com.", acctSmall: "Gratis en zonder wachtwoord. We gebruiken je e-mailadres alleen om je aan te melden.",
-    acctPrivacy: "Privacyverklaring", acctClose: "Sluiten", acctWelcome: "Je bent aangemeld. Je verlanglijst gaat nu mee naar elk apparaat.",
+    acctPrivacy: "Privacyverklaring", acctClose: "Sluiten", prefOfferCur: "Prijzen op elke pagina in {cur} tonen?", prefYes: "Ja", prefNo: "Nee, bedankt", prefSaved: "Opgeslagen. Je kunt het wijzigen bij Je account.", acctWelcome: "Je bent aangemeld. Je verlanglijst gaat nu mee naar elk apparaat.",
     acctLinkExpired: "Deze aanmeldlink is verlopen of al gebruikt. Tik op Aanmelden voor een nieuwe.",
     been: "Geweest", beenAdd: "{name} markeren als bezocht", beenRemove: "{name} niet meer als bezocht markeren", beenAddT: "Markeren als bezocht", beenRemoveT: "Niet meer als bezocht markeren",
     toastBeen: "{name} is gemarkeerd als bezocht", toastNotBeen: "{name} staat niet meer bij bezocht", showBeen: "Geweest",

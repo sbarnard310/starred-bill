@@ -77,7 +77,7 @@
     acctSent: "Nézd meg a leveleidet. Bejelentkezési linket küldtünk a(z) {email} címre. Nyisd meg ezen az eszközön a bejelentkezéshez.",
     acctTooMany: "Túl sok bejelentkezési e-mail ment ki az imént. Várj egy percet, és próbáld újra.", acctFailed: "Ez nem sikerült. Ellenőrizd az e-mail-címet, és próbáld újra.",
     acctBadEmail: "Adj meg teljes e-mail-címet, pl. nev@example.com.", acctSmall: "Ingyenes, és nem kell jelszót megjegyezni. Az e-mail-címedet csak a bejelentkezéshez használjuk.",
-    acctPrivacy: "Adatvédelmi tájékoztató", acctClose: "Bezárás", acctWelcome: "Bejelentkeztél. A kívánságlistád mostantól minden eszközön veled van.",
+    acctPrivacy: "Adatvédelmi tájékoztató", acctClose: "Bezárás", prefOfferCur: "Minden oldalon {cur} pénznemben mutassuk az árakat?", prefYes: "Igen", prefNo: "Nem, köszönöm", prefSaved: "Elmentve. A fiókodban módosíthatod.", acctWelcome: "Bejelentkeztél. A kívánságlistád mostantól minden eszközön veled van.",
     acctLinkExpired: "Ez a bejelentkezési link lejárt vagy már felhasználták. Koppints a Bejelentkezésre egy újért.",
     been: "Jártam itt", beenAdd: "{name} megjelölése meglátogatottként", beenRemove: "{name} törlése a meglátogatottak közül", beenAddT: "Megjelölés meglátogatottként", beenRemoveT: "Törlés a meglátogatottak közül",
     toastBeen: "{name} megjelölve meglátogatottként", toastNotBeen: "{name} törölve a meglátogatottak közül", showBeen: "Jártam itt",

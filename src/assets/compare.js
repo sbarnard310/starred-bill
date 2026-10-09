@@ -49,6 +49,7 @@ function guessCurrency() {
 function chooseCurrency() {
   const saved = store.get(PREFS_KEY, {}).compareCurrency;
   if (saved && DATA.currencies[saved]) return saved;
+  if (homeCurrency()) return homeCurrency();
   const curs = [...new Set(selRows().map((r) => r.cur))];
   return curs.length === 1 ? curs[0] : guessCurrency();
 }
@@ -242,7 +243,10 @@ $("cmpCur").addEventListener("change", (e) => {
   store.set(PREFS_KEY, Object.assign(store.get(PREFS_KEY, {}), { compareCurrency: cmp.cur }));
   renderReceipts();
   track("currency", { currency: cmp.cur });
+  prefChosen("currency", cmp.cur);
 });
+// A new currency in the member's preferences (setProfile() in common.js clears the choice made here).
+window.addEventListener("sb:profile", () => { if (cmp.rows && cmp.sel.length) { cmp.cur = chooseCurrency(); render(); } });
 // Changes from the account (another device) or another tab.
 const refresh = () => { if (cmp.rows) loadIds(loadWishlist()).then(render).catch(() => {}); };
 window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY) refresh(); });

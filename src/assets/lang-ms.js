@@ -79,7 +79,7 @@
     acctSent: "Semak e-mel anda. Kami telah menghantar pautan log masuk ke {email}. Bukanya pada peranti ini untuk log masuk.",
     acctTooMany: "Terlalu banyak e-mel log masuk sebentar tadi. Tunggu seminit, kemudian cuba lagi.", acctFailed: "Tidak berjaya. Semak alamat e-mel dan cuba lagi.",
     acctBadEmail: "Masukkan alamat e-mel penuh, cth. nama@example.com.", acctSmall: "Percuma dan tanpa kata laluan. Kami hanya menggunakan e-mel anda untuk log masuk.",
-    acctPrivacy: "Notis privasi", acctClose: "Tutup", acctWelcome: "Anda telah log masuk. Senarai hajat anda kini mengikut anda ke mana-mana peranti.",
+    acctPrivacy: "Notis privasi", acctClose: "Tutup", prefOfferCur: "Tunjukkan harga dalam {cur} di setiap halaman?", prefYes: "Ya", prefNo: "Tidak, terima kasih", prefSaved: "Disimpan. Anda boleh mengubahnya di akaun anda.", acctWelcome: "Anda telah log masuk. Senarai hajat anda kini mengikut anda ke mana-mana peranti.",
     acctLinkExpired: "Pautan log masuk itu telah tamat tempoh atau sudah digunakan. Ketik Log masuk untuk mendapatkan yang baharu.",
     been: "Pernah pergi", beenAdd: "Tandakan {name} sebagai pernah dikunjungi", beenRemove: "Buang {name} daripada senarai pernah dikunjungi", beenAddT: "Tandakan sebagai pernah dikunjungi", beenRemoveT: "Buang daripada senarai pernah dikunjungi",
     toastBeen: "{name} ditandakan sebagai pernah dikunjungi", toastNotBeen: "{name} dibuang daripada senarai pernah dikunjungi", showBeen: "Pernah pergi",

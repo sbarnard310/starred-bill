@@ -1,6 +1,6 @@
 # Plan: free user accounts
 
-Built 3 October 2026: accounts, wishlist syncing, "been there" with stats and milestones, the account page and the privacy notice. Decisions: Supabase; email link + Google; signed-out wishlist stays on the device; "been there" is a tick plus an optional date. Still to do: alerts and the other extras below.
+Built 3 October 2026: accounts, wishlist syncing, "been there" with stats and milestones, the account page and the privacy notice. Decisions: Supabase; email link + Google; signed-out wishlist stays on the device; "been there" is a tick plus an optional date. Added 9 October 2026: members' preferences (home city, currency, dietary needs) in a `profile` table, used by every page. Still to do: alerts and the other extras below.
 
 ## The idea
 

@@ -1,5 +1,6 @@
 // The account page: what you've ticked off (stats, milestones, progress by destination), your been-there
-// list with dates, your wishlist, and your data (download, sign out, delete). account.js does the signing in.
+// list with dates, your wishlist, your preferences (home city, currency, dietary needs) and your data
+// (download, sign out, delete). account.js does the signing in and keeps the preferences with the account.
 
 // The restaurants come from /data/account.json (build_account_pages() in build.py), fetched only once someone is signed in:
 // one row of values each, with the place it sits in given as a number in the file's list of places.
@@ -18,7 +19,7 @@ function loadRestaurants() {
   }).catch(() => { loadFailed = true; }).then(render);
   return loading;
 }
-const ui = { confirmDelete: false, message: "" };
+const ui = { confirmDelete: false, message: "", prefNote: "", jumped: false };
 const starsOf = (r) => r.stars || r.formerStars || 0;
 const pageLink = (r) => withLang(r.cityPath) + "&q=" + encodeURIComponent(r.name);
 const whereOf = (r) => [pick(r, "area"), pick(r, "cityName")].filter((x, i, a) => x && a.indexOf(x) === i && !(i && a[0].includes(x))).join(", ");
@@ -80,6 +81,52 @@ function wishList() {
       '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '">' + esc(t("accRemove")) + "</button></li>").join("") + "</ul>") + "</section>";
 }
 
+// ---------- Your preferences ----------
+// Saved as they change (setProfile() in common.js; account.js sends them to the account). The home city is any destination
+// with starred restaurants, found by typing; currency and dietary needs are the choices Help me pick offers.
+const PREF_DIETS = [["", "No dietary needs"], ["vegetarian", "Vegetarian"], ["vegan", "Vegan"], ["gluten-free", "Gluten-free"], ["halal", "Halal"], ["kosher", "Kosher"]];
+// "London, United Kingdom": a place with its country, from the country's address (the path's first part).
+const placeLabel = (p) => {
+  const top = "/" + p.path.split("/")[1] + "/";
+  const country = top !== p.path && DATA.places.find((q) => q.path === top);
+  return p.name + (country ? ", " + country.name : "");
+};
+function prefsSection() {
+  const pr = loadProfile(), home = pr.home && DATA.places.find((p) => p.id === pr.home);
+  const sel = (id, opts, val) => '<select id="' + id + '">' + opts.map(([k, label]) => '<option value="' + esc(k) + '"' + (k === (val || "") ? " selected" : "") + ">" + esc(label) + "</option>").join("") + "</select>";
+  const curs = [["", "Each restaurant's own currency"]].concat(HOME_CURRENCIES.map((c) => [c, DATA.currencies[c].symbol.trim() + " " + c]));
+  return '<section class="acct-section" id="preferences"><h2>Your preferences</h2>' +
+    "<p>Set these once and every page starts from them, on any device you sign in on: Near me opens on your home city, " +
+    "prices show in your currency, and Help me pick fills in your currency and dietary needs. Leave any of them blank to choose each time.</p>" +
+    '<div class="prefs"><div class="pref-home"><label for="prefHome">Home city</label>' +
+    '<input id="prefHome" type="search" autocomplete="off" placeholder="Type a city, region or country" value="' + esc(home ? placeLabel(home) : pr.homeName || "") + '">' +
+    '<ul class="pref-list" id="prefHomeList" hidden></ul></div>' +
+    '<div><label for="prefCur">Currency</label>' + sel("prefCur", curs, pr.currency) + "</div>" +
+    '<div><label for="prefDiet">Dietary needs</label>' + sel("prefDiet", PREF_DIETS, pr.diet) + "</div>" +
+    '<p class="pref-note' + (ui.prefNote ? " ok" : "") + '" id="prefNote" aria-live="polite">' + (ui.prefNote ? esc(ui.prefNote) : "") + "</p></div>" +
+    // Halal, kosher and gluten-free can reveal religion or health, so saving one is the member's explicit choice (privacy notice).
+    '<p class="pref-small">Dietary needs such as halal, kosher or gluten-free can say something about your religion or health. We keep yours only because you choose it, ' +
+    'and use it only to start Help me pick. See our <a href="/privacy/">privacy notice</a>.</p></section>';
+}
+function savePrefs(change, note) {
+  setProfile(Object.assign({}, loadProfile(), change));
+  ui.prefNote = note;
+  const n = $("prefNote");
+  if (n) { n.textContent = note; n.classList.add("ok"); }
+  track("preferences", { set: Object.keys(change)[0], via: "account" });
+}
+function homeMatches(q) {
+  q = q.trim().toLowerCase();
+  if (q.length < 2) return [];
+  const starts = (p) => p.name.toLowerCase().startsWith(q) ? 0 : 1;
+  return DATA.places.filter((p) => p.name.toLowerCase().includes(q)).sort((a, b) => starts(a) - starts(b) || b.n - a.n).slice(0, 8);
+}
+function showHomeList() {
+  const list = $("prefHomeList"), found = homeMatches($("prefHome").value);
+  list.hidden = !found.length;
+  list.innerHTML = found.map((p) => '<li><button type="button" data-home="' + esc(p.id) + '">' + esc(placeLabel(p)) + " <small>" + p.n + " starred</small></button></li>").join("");
+}
+
 function dataSection() {
   return '<section class="acct-section"><h2>' + esc(t("accData")) + "</h2><p>" + esc(t("accDataText")) + '</p><div class="acct-actions">' +
     '<button type="button" class="btn-line" id="dlData">' + esc(t("accDownload")) + "</button>" +
@@ -111,7 +158,8 @@ function render() {
   }
   const visited = loadVisited();
   const been = Object.keys(visited).map((id) => byId.get(id)).filter(Boolean);
-  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + progress(been) + beenList(been) + wishList() + dataSection();
+  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + progress(been) + beenList(been) + wishList() + prefsSection() + dataSection();
+  if (location.hash === "#preferences" && !ui.jumped) { ui.jumped = true; $("preferences").scrollIntoView(); }
 }
 
 function downloadData() {
@@ -120,6 +168,7 @@ function downloadData() {
     account: account.user.email, exported: new Date().toISOString(), site: "https://starredbill.com",
     wishlist: loadWishlist().map((id) => ({ id, name: (byId.get(id) || {}).name || id })),
     beenThere: Object.keys(visited).map((id) => ({ id, name: (byId.get(id) || {}).name || id, date: visited[id] || null })),
+    preferences: { homeCity: loadProfile().homeName || null, currency: loadProfile().currency || null, dietaryNeeds: loadProfile().diet || null },
   };
   const url = URL.createObjectURL(new Blob([JSON.stringify(out, null, 2)], { type: "application/json" }));
   const a = document.createElement("a");
@@ -132,6 +181,13 @@ document.addEventListener("click", async (e) => {
   const el = e.target.closest("button");
   if (!el) return;
   if (el.dataset.lang) { setLang(el.dataset.lang); render(); return; }
+  if (el.dataset.home) {
+    const p = DATA.places.find((x) => x.id === el.dataset.home);
+    $("prefHome").value = placeLabel(p);
+    $("prefHomeList").hidden = true;
+    savePrefs({ home: p.id, homeName: p.name }, "Saved. Near me will open on " + p.name + ".");
+    return;
+  }
   if (el.dataset.unbeen) { const v = loadVisited(); delete v[el.dataset.unbeen]; setVisited(v); render(); return; }
   if (el.dataset.markbeen) { toggleVisited(el.dataset.markbeen); render(); return; }
   if (el.dataset.unwish) { setWishlist(loadWishlist().filter((x) => x !== el.dataset.unwish)); render(); return; }
@@ -150,8 +206,21 @@ document.addEventListener("click", async (e) => {
 document.addEventListener("change", (e) => {
   const input = e.target.closest("[data-date]");
   if (input) setVisitedDate(input.dataset.date, input.value);
+  if (e.target.id === "prefCur") savePrefs({ currency: e.target.value }, e.target.value ? "Saved. Prices will show in " + DATA.currencies[e.target.value].symbol.trim() + " wherever we can." : "Saved. Prices will show in each restaurant's own currency.");
+  if (e.target.id === "prefDiet") savePrefs({ diet: e.target.value }, e.target.value ? "Saved. Help me pick will start with " + PREF_DIETS.find(([k]) => k === e.target.value)[1].toLowerCase() + " selected." : "Saved. Help me pick will start with no dietary filter.");
 });
-["sb:account", "sb:wishlist", "sb:visited"].forEach((ev) => window.addEventListener(ev, (e) => { if (e.type === "sb:account" || e.detail.from === "sync") render(); }));
+document.addEventListener("input", (e) => {
+  if (e.target.id !== "prefHome") return;
+  // Clearing the box clears the home city.
+  if (!e.target.value.trim()) { $("prefHomeList").hidden = true; if (loadProfile().home) savePrefs({ home: "", homeName: "" }, "Saved. No home city: Near me will ask where you are."); return; }
+  showHomeList();
+});
+document.addEventListener("click", (e) => { if ($("prefHomeList") && !e.target.closest(".pref-home")) $("prefHomeList").hidden = true; });
+document.addEventListener("keydown", (e) => {
+  if (e.target.id === "prefHome" && e.key === "Enter") { e.preventDefault(); const b = document.querySelector("#prefHomeList button"); if (b) b.click(); }
+  if (e.target.id === "prefHome" && e.key === "Escape") $("prefHomeList").hidden = true;
+});
+["sb:account", "sb:wishlist", "sb:visited", "sb:profile"].forEach((ev) => window.addEventListener(ev, (e) => { if (e.type === "sb:account" || e.detail.from === "sync") render(); }));
 window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY || e.key === VISITED_KEY) render(); });
 
 render();

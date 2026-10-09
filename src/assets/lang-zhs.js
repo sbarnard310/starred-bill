@@ -82,7 +82,7 @@
     acctSent: "请查看邮箱。我们已将登录链接发送到 {email}，请在这台设备上打开以完成登录。",
     acctTooMany: "登录邮件发送次数过多，请稍等一分钟再试。", acctFailed: "未能完成，请检查电子邮件地址后再试一次。",
     acctBadEmail: "请输入完整的电子邮件地址，例如 name@example.com。", acctSmall: "免费，而且不用记密码。我们只用你的电子邮件让你登录。",
-    acctPrivacy: "隐私声明", acctClose: "关闭", acctWelcome: "你已登录。你的心愿单现在会在每台设备上同步。",
+    acctPrivacy: "隐私声明", acctClose: "关闭", prefOfferCur: "在每个页面都以 {cur} 显示价格？", prefYes: "好", prefNo: "不用了", prefSaved: "已保存。可在“我的账户”中更改。", acctWelcome: "你已登录。你的心愿单现在会在每台设备上同步。",
     acctLinkExpired: "这个登录链接已过期或已使用过，请点击“登录”获取新链接。",
     been: "去过了", beenAdd: "将{name}标记为去过", beenRemove: "取消{name}的去过标记", beenAddT: "标记为去过", beenRemoveT: "取消去过标记",
     toastBeen: "已将{name}标记为去过", toastNotBeen: "已取消{name}的去过标记", showBeen: "去过了",

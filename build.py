@@ -2901,6 +2901,7 @@ HOME_LISTS = (("three-michelin-star-restaurants", "Every three-star restaurant")
 HOME_SAMPLES = 6       # till receipts in the hero, one shown at a time (home.js picks one and steps through them)
 HOME_RESULTS = 4       # the latest results pages in "What's new"
 HOME_COMING = 4        # the next ceremonies in "What's new"
+HOME_RESTAURANTS = 12  # restaurant pages in "Browse", most-searched first (RESTAURANT_PAGES' order)
 
 
 def star_icons(n):
@@ -3083,7 +3084,7 @@ def home_browse_html():
     cuisine = sorted((p for p in pages if p["type"] == "cuisine" and starred_n.get(p["id"])), key=lambda p: -starred_n[p["id"]])
     cuisines = "".join(f'<li><a href="{p["path"]}" data-home="cuisine">{e(p["name"])} in {e(places[p["parent"]]["name"])}</a>'
                        f'<span class="count">{starred_n[p["id"]]}</span></li>' for p in cuisine)
-    own = sorted((r for r in restaurants if r.get("page")), key=lambda r: RESTAURANT_PAGES.index(r["id"]))
+    own = sorted((r for r in restaurants if r.get("page")), key=lambda r: RESTAURANT_PAGES.index(r["id"]))[:HOME_RESTAURANTS]
     rests = "".join(f'<li><a href="{e(r["page"])}" data-home="restaurant">{e(r["name"])}</a> {star_icons(r["stars"])}'
                     f'<span class="sr-only">{STAR_WORDS[r["stars"]]} stars</span><span class="count">{e(home_where(r))}</span></li>' for r in own)
     lists = "".join(f'<li><a href="/guides/{gid}/" data-home="list">{e(label)}</a></li>' for gid, label in HOME_LISTS if gid in guides)

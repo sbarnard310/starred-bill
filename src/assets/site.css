@@ -72,7 +72,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .site-header { padding-top: env(safe-area-inset-top, 0px); background: var(--band); color: var(--band-ink); border-bottom: 1px solid color-mix(in srgb, var(--band-ink) 12%, transparent); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; font-family: var(--font-display); font-size: 1.35rem; }
-.brand svg { width: 22px; height: 22px; color: var(--gold); }
+/* The logo: a till receipt with a gold star (brand/README.md), cream on the header's green band. */
+.brand svg { width: 18px; height: 26px; flex: none; --logo-paper: #F5F0E4; --logo-star: #B3862B; --logo-line: #10362A; }
 .nav { display: flex; gap: 4px; flex-wrap: wrap; }
 .nav a { color: var(--band-muted); text-decoration: none; font-size: .9rem; font-weight: 500; padding: 6px 10px; border-radius: 6px; }
 .nav a:hover { color: var(--band-ink); background: color-mix(in srgb, var(--band-ink) 10%, transparent); }
@@ -1240,7 +1241,7 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
   .site-header { position: sticky; top: 0; z-index: 10; }
   .site-header .wrap { flex-wrap: nowrap; padding-block: 10px; gap: 8px; }
   .brand { font-size: 1.15rem; gap: 8px; white-space: nowrap; }
-  .brand svg { width: 19px; height: 19px; }
+  .brand svg { width: 16px; height: 23px; }
   .site-header .header-actions { flex-wrap: nowrap; flex-shrink: 0; }
   .search-link, .menu-btn { display: inline-grid; place-items: center; width: 36px; height: 34px; padding: 0; border-radius: 999px; background: none; color: var(--band-ink); cursor: pointer;
     border: 1px solid color-mix(in srgb, var(--band-ink) 25%, transparent); }
@@ -1268,7 +1269,7 @@ footer .foot-legal { flex-basis: 100%; font-size: .78rem; }
   .switchbar #currencySwitch { display: none; }
 }
 @media (max-width: 360px) {
-  /* The smallest phones: the logo's star goes, so the header still fits one row. */
+  /* The smallest phones: the receipt logo goes, so the header still fits one row. */
   .brand svg { display: none; }
   .brand { font-size: 1.08rem; }
   /* The Filters button keeps its icon and count; its word stays for screen readers. */

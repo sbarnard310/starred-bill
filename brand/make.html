@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starred Bill logo files</title>
+<!-- Draws every logo file from one source. Run python3 scripts/brand_images.py, open http://localhost:8797/make.html,
+     press "Save all files". Text is turned into outlines with opentype.js, so the files need no fonts installed. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.4/opentype.min.js"></script>
+<style>
+  body { margin: 0; padding: 24px; background: #E9EEE8; font: 14px/1.4 system-ui, sans-serif; color: #12261C; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  #status { margin: 8px 0 20px; color: #5A6E62; }
+  .grid { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; }
+  figure { margin: 0; }
+  figure svg { display: block; max-width: 100%; height: auto; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+  figure.check svg { background: repeating-conic-gradient(#ddd 0 25%, #fff 0 50%) 0 0 / 16px 16px; }
+  figcaption { font-size: 12px; color: #5A6E62; margin-top: 6px; }
+  .round svg { border-radius: 50%; }
+</style>
+</head>
+<body>
+<h1>The Starred Bill: logo files</h1>
+<button id="save">Save all files</button>
+<div id="status">Loading fonts…</div>
+<div class="grid" id="grid"></div>
+<script>
+const COL = { green: "#10362A", cream: "#F5F0E4", gold: "#B3862B", goldLight: "#E0B85C", sage: "#A9C8B4", water: "#17432F" };
+// The receipt as drawn on the site: rounded top corners, a torn zigzag foot.
+const RW = 440, RB = 600, RD = 50, RN = 5, RR = 18, RH = RB + RD;
+const PALETTES = {
+  onGreen: { paper: COL.cream, star: COL.gold, rule: "#A39A86", bar: "#C9C0AC", total: COL.green },
+  onCream: { paper: COL.green, star: COL.goldLight, rule: "#6F9884", bar: "#6F9884", total: COL.cream },
+};
+let uid = 0;
+const f1 = (n) => Math.round(n * 10) / 10;
+
+function paperPath() {
+  let d = `M0,${RR} Q0,0 ${RR},0 H${RW - RR} Q${RW},0 ${RW},${RR} V${RB}`;
+  const t = RW / RN;
+  for (let i = 0; i < RN; i++) { const x = RW - t * i; d += ` L${x - t / 2},${RB + RD} L${x - t},${RB}`; }
+  return d + " Z";
+}
+function star(cx, cy, R, fill) {
+  const pts = [];
+  for (let i = 0; i < 10; i++) {
+    const a = (-90 + i * 36) * Math.PI / 180, r = i % 2 ? R * 0.43 : R;
+    pts.push(f1(cx + r * Math.cos(a)) + "," + f1(cy + r * Math.sin(a)));
+  }
+  return `<path d="M${pts.join(" L")} Z" fill="${fill}" stroke="${fill}" stroke-width="${f1(R * 0.14)}" stroke-linejoin="round"/>`;
+}
+const bar = (x, y, w, h, fill) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${h / 2}" fill="${fill}"/>`;
+
+// What's printed on the receipt. "full" for anything 64px and up; "small" (star and total only) for favicons.
+function contents(detail, p) {
+  if (detail === "small") return star(220, 220, 140, p.star) + bar(60, 440, 320, 70, p.total);
+  return star(220, 138, 84, p.star)
+    + `<line x1="50" y1="262" x2="390" y2="262" stroke="${p.rule}" stroke-width="8" stroke-dasharray="20 14"/>`
+    + bar(50, 318, 150, 24, p.bar) + bar(330, 318, 60, 24, p.bar)
+    + bar(50, 378, 110, 24, p.bar) + bar(330, 378, 60, 24, p.bar)
+    + bar(50, 460, 130, 40, p.total) + bar(280, 460, 110, 40, p.total);
+}
+// The receipt in its own 440 × 650 box. mono: one colour, with the star and lines cut out.
+function receipt(pal, detail, mono) {
+  if (mono) {
+    const id = "m" + (++uid), k = "#000";
+    return `<mask id="${id}" maskUnits="userSpaceOnUse" x="-20" y="-20" width="480" height="690"><rect x="-20" y="-20" width="480" height="690" fill="#fff"/>${contents(detail, { star: k, rule: k, bar: k, total: k })}</mask>`
+      + `<path d="${paperPath()}" fill="${mono}" mask="url(#${id})"/>`;
+  }
+  return `<path d="${paperPath()}" fill="${pal.paper}"/>` + contents(detail, pal);
+}
+const place = (inner, x, y, s, rot) => `<g transform="translate(${f1(x)},${f1(y)})${rot ? ` rotate(${rot} ${f1(RW * s / 2)} ${f1(RH * s / 2)})` : ""} scale(${s})">${inner}</g>`;
+const svg = (w, h, body, bg) => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${bg ? `<rect width="${w}" height="${h}" fill="${bg}"/>` : ""}${body}</svg>`;
+
+let GLOOCK, FIGTREE;
+function text(font, str, size, x, y, fill) { return `<path d="${font.getPath(str, x, y, size).toPathData(1)}" fill="${fill}"/>`; }
+const textW = (font, str, size) => font.getAdvanceWidth(str, size);
+const capH = (font) => font.tables.os2.sCapHeight / font.unitsPerEm;
+const NAME = "The Starred Bill", TAGLINE = "What the stars really cost", URL = "starredbill.com";
+
+// Lockups, drawn with the receipt 650 units tall. Returns { w, h, body }.
+function lockup(kind, dark) {
+  const pal = dark ? PALETTES.onGreen : PALETTES.onCream, ink = dark ? COL.cream : COL.green;
+  const mark = receipt(pal, "full");
+  if (kind === "horizontal") {
+    const F = (0.38 * RH) / capH(GLOOCK), gap = 0.3 * RH, w = RW + gap + textW(GLOOCK, NAME, F);
+    return { w, h: RH, body: mark + text(GLOOCK, NAME, F, RW + gap, 300 + 0.38 * RH / 2, ink) };
+  }
+  const F = (0.24 * RH) / capH(GLOOCK), tw = textW(GLOOCK, NAME, F), w = Math.max(tw, RW), base = RH + 0.22 * RH + 0.24 * RH;
+  return { w, h: base + 0.06 * RH, body: place(mark, (w - RW) / 2, 0, 1) + text(GLOOCK, NAME, F, (w - tw) / 2, base, ink) };
+}
+const fit = (l, x, y, height) => place(l.body, x, y, height / l.h);
+
+// Square icons. pad: share of the square left around the receipt.
+function icon(size, bg, pal, detail, scale, radius) {
+  const s = (size * scale) / RH, x = (size - RW * s) / 2, y = (size - RH * s) / 2;
+  const back = radius ? `<rect width="${size}" height="${size}" rx="${size * radius}" fill="${bg}"/>` : "";
+  return svg(size, size, back + place(receipt(pal, detail), x, y, s), radius ? null : bg);
+}
+
+// Banners: the horizontal lockup in the middle, the tagline and address under it, faint receipts at the edges.
+function banner(W, H, o) {
+  const l = lockup("horizontal", true), s = o.markH / l.h, lw = l.w * s;
+  let body = "";
+  (o.water || []).forEach(([x, y, h, rot]) => { body += place(receipt(null, "full", COL.water), x, y, h / RH, rot); });
+  body += place(l.body, o.cx - lw / 2, o.cy - o.markH / 2, s);
+  if (o.tag) {
+    const tw = textW(FIGTREE, TAGLINE, o.tag);
+    body += text(FIGTREE, TAGLINE, o.tag, o.cx - tw / 2, o.cy + o.markH / 2 + o.tag * 1.6, COL.sage);
+  }
+  if (o.url) {
+    const uw = textW(FIGTREE, URL, o.url);
+    body += text(FIGTREE, URL, o.url, o.cx - uw / 2, o.cy + o.markH / 2 + o.tag * 1.6 + o.url * 1.7, COL.goldLight);
+  }
+  return svg(W, H, body, COL.green);
+}
+
+const FILES = [];
+const add = (name, svgText, png, note, cls) => FILES.push({ name, svgText, png, note, cls });
+
+function build() {
+  // The mark on its own (no background), in full colour and one colour.
+  add("svg/mark-on-dark.svg", svg(RW, RH, receipt(PALETTES.onGreen, "full")), [["png/mark-on-dark-1000.png", 1000 * RW / RH, 1000]], "Mark for dark backgrounds", "check");
+  add("svg/mark-on-light.svg", svg(RW, RH, receipt(PALETTES.onCream, "full")), [["png/mark-on-light-1000.png", 1000 * RW / RH, 1000]], "Mark for light backgrounds", "check");
+  add("svg/mark-mono-green.svg", svg(RW, RH, receipt(null, "full", COL.green)), [["png/mark-mono-green-1000.png", 1000 * RW / RH, 1000]], "One colour, green", "check");
+  add("svg/mark-mono-white.svg", svg(RW, RH, receipt(null, "full", "#FFFFFF")), [["png/mark-mono-white-1000.png", 1000 * RW / RH, 1000]], "One colour, white", "check");
+
+  // Profile pictures: Instagram, X, TikTok, Threads, LinkedIn, YouTube, Facebook all take a 1080 square.
+  add("svg/profile-green.svg", icon(1080, COL.green, PALETTES.onGreen, "full", 0.66), [["png/profile-green-1080.png", 1080, 1080], ["png/profile-green-400.png", 400, 400]], "Profile picture (main)", "round");
+  add("svg/profile-cream.svg", icon(1080, COL.cream, PALETTES.onCream, "full", 0.66), [["png/profile-cream-1080.png", 1080, 1080], ["png/profile-cream-400.png", 400, 400]], "Profile picture (light)", "round");
+
+  // Lockups.
+  [["horizontal", true], ["horizontal", false], ["stacked", true], ["stacked", false]].forEach(([k, dark]) => {
+    const l = lockup(k, dark), name = `lockup-${k}-${dark ? "on-dark" : "on-light"}`;
+    const pad = l.h * 0.25, W = l.w + pad * 2, H = l.h + pad * 2;
+    const flat = svg(f1(l.w), f1(l.h), l.body);
+    add(`svg/${name}.svg`, flat, [[`png/${name}-2400.png`, 2400, Math.round(2400 * l.h / l.w)]], `Logo, ${k}, ${dark ? "for dark backgrounds" : "for light backgrounds"}`, "check");
+    add(`svg/${name}-boxed.svg`, svg(f1(W), f1(H), place(l.body, pad, pad, 1), dark ? COL.green : COL.cream), [[`png/${name}-boxed-2400.png`, 2400, Math.round(2400 * H / W)]], `Same, on its own background`);
+  });
+
+  // Banners, each with its platform's safe area in the middle.
+  add("svg/banner-x.svg", banner(1500, 500, { markH: 118, cx: 790, cy: 200, tag: 38, url: 28, water: [[1300, 90, 520, 10], [-120, -260, 520, -12]] }), [["png/banner-x-1500x500.png", 1500, 500]], "X (Twitter) header, 1500 × 500");
+  add("svg/banner-linkedin.svg", banner(1128, 191, { markH: 70, cx: 640, cy: 70, tag: 21, water: [[990, 30, 260, 10]] }), [["png/banner-linkedin-1128x191.png", 1128, 191]], "LinkedIn page cover, 1128 × 191");
+  add("svg/banner-facebook.svg", banner(1640, 624, { markH: 140, cx: 820, cy: 240, tag: 44, url: 32, water: [[1420, 140, 620, 10], [-60, -320, 620, -12]] }), [["png/banner-facebook-1640x624.png", 1640, 624]], "Facebook cover, 1640 × 624");
+  add("svg/banner-youtube.svg", banner(2560, 1440, { markH: 170, cx: 1280, cy: 640, tag: 52, url: 38, water: [[2180, 500, 1000, 10], [-40, -380, 1000, -12]] }), [["png/banner-youtube-2560x1440.png", 2560, 1440]], "YouTube banner, 2560 × 1440 (words inside the middle safe area)");
+  add("svg/youtube-watermark.svg", svg(RW, RH, receipt(null, "full", "#FFFFFF")), [["png/youtube-watermark-150.png", 102, 150]], "YouTube video watermark (white, see-through)", "check");
+
+  // Site icons (for later: the favicon and the home-screen app icon).
+  add("site-icons/favicon.svg", icon(64, COL.green, PALETTES.onGreen, "small", 0.76, 0.2), [["site-icons/favicon-32.png", 32, 32], ["site-icons/favicon-16.png", 16, 16]], "Favicon (simpler drawing)", "check");
+  add("site-icons/icon.svg", icon(512, COL.green, PALETTES.onGreen, "full", 0.66), [["site-icons/icon-512.png", 512, 512], ["site-icons/icon-192.png", 192, 192], ["site-icons/apple-touch-icon.png", 180, 180]], "App icon");
+  add("site-icons/maskable.svg", icon(512, COL.green, PALETTES.onGreen, "full", 0.56), [["site-icons/maskable-512.png", 512, 512]], "Android app icon (extra margin)");
+}
+
+function show() {
+  const grid = document.getElementById("grid");
+  FILES.forEach((f) => {
+    const fig = document.createElement("figure");
+    if (f.cls) fig.className = f.cls;
+    const w = +f.svgText.match(/width="([\d.]+)"/)[1], h = +f.svgText.match(/height="([\d.]+)"/)[1];
+    fig.innerHTML = f.svgText.replace("<svg ", `<svg style="width:${w > h * 2 ? 720 : (w >= h ? 220 : 150 * w / h)}px" `) + `<figcaption>${f.note}<br>${f.name}</figcaption>`;
+    grid.appendChild(fig);
+  });
+}
+
+async function toPng(svgText, w, h) {
+  const img = new Image();
+  img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svgText);
+  await img.decode();
+  const c = document.createElement("canvas");
+  c.width = Math.round(w); c.height = Math.round(h);
+  const g = c.getContext("2d");
+  g.imageSmoothingQuality = "high";
+  g.drawImage(img, 0, 0, c.width, c.height);
+  return new Promise((r) => c.toBlob(r, "image/png"));
+}
+async function saveAll() {
+  const st = document.getElementById("status");
+  let n = 0;
+  for (const f of FILES) {
+    await fetch("/save?name=" + encodeURIComponent(f.name), { method: "POST", body: f.svgText }); n++;
+    for (const [name, w, h] of f.png) {
+      await fetch("/save?name=" + encodeURIComponent(name), { method: "POST", body: await toPng(f.svgText, w, h) }); n++;
+    }
+    st.textContent = `Saved ${n} files…`;
+  }
+  st.textContent = `Saved ${n} files.`;
+  return n;
+}
+
+(async () => {
+  const load = (u) => fetch(u).then((r) => r.arrayBuffer()).then((b) => opentype.parse(b));
+  [GLOOCK, FIGTREE] = await Promise.all([
+    load("https://cdn.jsdelivr.net/npm/@fontsource/gloock/files/gloock-latin-400-normal.woff"),
+    load("https://cdn.jsdelivr.net/npm/@fontsource/figtree/files/figtree-latin-500-normal.woff"),
+  ]);
+  build(); show();
+  document.getElementById("status").textContent = FILES.length + " designs ready.";
+  document.getElementById("save").onclick = saveAll;
+  window.saveAll = saveAll;
+})();
+</script>
+</body>
+</html>

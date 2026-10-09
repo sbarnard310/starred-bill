@@ -1203,6 +1203,9 @@ def destination_faq(p, page, starred, lang, quick=False, booking=True):
         answer = say("aCheapDinner", r=name(dinners[0]), price=price(dinners[0], "dinner"))
     if spends and usd(spends[0], "dinner") < cheapest:
         answer += (k.gap if answer else "") + say("aCheapSpend", r=name(spends[0]), price=price(spends[0], "dinner"))
+    main = cheapest_main(starred, min([cheapest] + [usd(r, "dinner") for r in spends[:1]]))
+    if main and "aCheapMain" in k.own:
+        answer += (k.gap if answer else "") + say("aCheapMain" if answer else "aCheapMainOnly", r=name(main), price=price(main, "dinner"))
     if answer and not quick:
         faq.append((say("qCheap"), answer))
 
@@ -1211,8 +1214,10 @@ def destination_faq(p, page, starred, lang, quick=False, booking=True):
         faq.append((say("qNew"), new_stars_answer(k, new, up, latest)))
 
     lunch_n = sum(1 for r in starred if r.get("lunch") is not None)
+    # "Lunch is often the cheaper way in" only where a set lunch here does cost less than its restaurant's dinner menu.
+    cheaper_lunch = any(is_menu(r, "lunch") and (not is_menu(r, "dinner") or r["lunch"] < r["dinner"]) for r in starred)
     if booking:  # left out where the page's local note answers it (booking=False)
-        faq.append((say("qBook"), say("aBook") + (k.gap + say("aLunch", k=lunch_n, n=n) if lunch_n and n > 1 else "")))
+        faq.append((say("qBook"), say("aBook") + (k.gap + say("aLunch", k=lunch_n, n=n) if lunch_n and n > 1 and cheaper_lunch else "")))
     return faq
 
 
@@ -1235,6 +1240,10 @@ def quick_answers(p, page, starred, lang):
         parts.append(say("qkDinner", r=k.name_html(dinners[0]), price=price(dinners[0], "dinner")))
     if spends and (not dinners or usd(spends[0], "dinner") < usd(dinners[0], "dinner")):
         parts.append(say("aCheapSpend", r=k.name_html(spends[0]), price=price(spends[0], "dinner")))
+    # An à la carte restaurant whose typical main costs less again (a language joins once it has aCheapMain words).
+    main = cheapest_main(starred, min([usd(r, "dinner") for r in (dinners[:1] + spends[:1])] or [float("inf")]))
+    if main and "aCheapMain" in k.own:
+        parts.append(say("aCheapMain" if parts else "aCheapMainOnly", r=k.name_html(main), price=price(main, "dinner")))
     if parts:
         out.append((k.say("qkDinnerH"), k.gap.join(parts)))
 
@@ -1551,6 +1560,15 @@ def cheapest_meal(rs):
     return min(meals)[2:] if meals else None
 
 
+def cheapest_main(rs, below=float("inf")):
+    """The à la carte restaurant with the cheapest typical main course (dinnerType "main"), if it costs less than half of
+    `below` (US$, the cheapest set menu), as a main is only part of a meal: the cheapest way into a starred kitchen where
+    there's a bistro, barbecue or noodle counter (Austin, Denver), but not Guy Savoy's $165 mains beside a $255 menu."""
+    mains = [(to_usd(r, "dinner"), r["name"], r) for r in rs if r.get("dinner") is not None and r.get("dinnerType") == "main"]
+    best = min(mains) if mains else None
+    return best[2] if best and best[0] < below / 2 else None
+
+
 def ceremony_guide(p):
     """The MICHELIN Guide whose ceremony gives a place its stars (ceremony_guides(), from content/ceremonies.json)."""
     return next((g for g in ceremony_guides() if set(g.get("places", [])) & set(chain(p["id"]))), None)
@@ -1584,10 +1602,13 @@ def short_answer(p, page, starred, lang):
     if len(dinners) >= 3:
         out.append(say("qaPrice", lo=price(dinners[0], "dinner"), hi=price(dinners[-1], "dinner"), mid=price(dinners[len(dinners) // 2], "dinner")))
     best = cheapest_meal(starred)
+    main = cheapest_main(starred, to_usd(*best) if best else float("inf")) if len(starred) > 1 and "qaCheapMain" in own else None
     if best:
         r, f = best
-        key = ("qaOnly" if len(starred) == 1 else "qaCheap") + ("Lunch" if f == "lunch" else "Dinner")
+        key = ("qaOnly" if len(starred) == 1 else "qaSet" if main else "qaCheap") + ("Lunch" if f == "lunch" else "Dinner")
         out.append(say(key, r=e(k.name(r)), price=price(r, f)))
+    if main:  # an à la carte restaurant cheaper than any set menu (Austin's barbecue)
+        out.append(say("qaCheapMain" if best else "qaCheapMainOnly", r=e(k.name(main)), price=price(main, "dinner")))
     return f'<p class="answer"><span class="answer-label">{e(w["qaLabel"])}</span> ' + k.gap.join(out) + "</p>"
 
 

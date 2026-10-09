@@ -762,7 +762,7 @@ def build_place(p):
             "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
             "areas": areas_html(p, lang) if starred else "", "footPlaces": foot_places_html(lang, p["id"]),
             "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
-            "answer": answer, "heroClass": "" if answer else " hero-wide", "quick": quick_html(quick, page, lang), "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
+            "answer": answer, "quick": quick_html(quick, page, lang), "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
             "newStars": new_stars_html(p, page, lang),
             "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
             "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang),
@@ -1292,9 +1292,9 @@ def areas_html(p, lang):
 # the restaurants (by star level, the cheapest meals, the latest guide's changes, by cuisine, dietary needs).
 # English only for now; the wording is in src/faq-words.json ("en"), ready for other languages.
 SEO_PILOT = ()  # in preview: ("london", "new-york"), waiting for the owner's look before it goes live
-# Languages whose pages show the "In short" answer at the top of the hero's right-hand column (every destination page:
-# English from 9 Oct 2026, the rest from 9 Oct too): those with their own qaLabel in src/faq-words.json. A page in a
-# language without it has no answer, so its hero runs the heading full width (.hero-wide).
+# Languages whose pages show the "In short" answer in the hero's right-hand column, above the figures (every destination
+# page, 9 Oct 2026): those with their own qaLabel in src/faq-words.json. A page in a language without it shows the
+# figures alone there.
 QA_LANGS = tuple(lang for lang, words in FAQ_WORDS.items() if "qaLabel" in words)
 # The short names people search for a place by ("michelin star restaurants nyc"), worked into its answer and description.
 # Where people search for a place by a shorter name than ours ("michelin star restaurants nyc", 10,000 searches a month in

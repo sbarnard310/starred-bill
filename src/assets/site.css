@@ -368,15 +368,17 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
    level, the cheapest meals, the latest guide, cuisines and dietary needs. Logical sides only, so rtl.css needs nothing. */
 /* The answer sits at the top of the hero's right-hand column, the figures at its foot. */
 .hero-side { display: flex; flex-direction: column; justify-content: flex-end; gap: 24px; align-self: stretch; min-width: 0; }
-.hero-side .answer { margin: 0 0 auto; max-width: none; padding: 16px 18px; border-inline-start: 3px solid var(--gold); background: rgba(255, 255, 255, .06); border-radius: 0 var(--radius) var(--radius) 0; color: var(--band-ink); font-size: 1rem; line-height: 1.55; }
+.hero-side .answer { margin: 0 0 auto; max-width: none; padding: 16px 18px; border-inline-start: 3px solid var(--gold); background: rgba(255, 255, 255, .06); border-radius: var(--radius); border-start-start-radius: 0; border-end-start-radius: 0; color: var(--band-ink); font-size: 1rem; line-height: 1.55; }
 .answer-label { font-weight: 700; color: var(--gold); }
-/* Pages without that answer yet (languages not in QA_LANGS in build.py): the heading runs the full width, then the intro
-   on the left with the figures beside it, so the right-hand column isn't left empty above them. */
+/* Destination pages (place.html): the heading runs the full width, then the intro on the left with the answer and figures
+   beside it, top-aligned, so the right-hand column is never left empty however long the intro. */
 .hero-wide .wrap { row-gap: 0; align-items: start; }
 .hero-wide .hero-text { display: contents; }
 .hero-wide .hero-text > * { grid-column: 1; }
 .hero-wide .hero-text > .eyebrow, .hero-wide .hero-text > h1 { grid-column: 1 / -1; }
 .hero-wide .hero-side { grid-column: 2; grid-row: 3 / span 3; align-self: start; justify-content: flex-start; margin-top: 22px; }
+.hero-wide .hero-side .answer { margin: 0; }
+.hero-wide .hero-side { gap: 16px; }
 @media (max-width: 900px) {
   .hero-wide .wrap { row-gap: 28px; }
   .hero-wide .hero-text { display: block; }

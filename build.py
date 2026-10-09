@@ -11,6 +11,7 @@ import hashlib
 import html
 import json
 import math
+import os
 import re
 import unicodedata
 import urllib.parse
@@ -24,6 +25,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 CONTENT, SRC, OUT = ROOT / "content", ROOT / "src", ROOT / "_site"
 SITE_URL = "https://starredbill.com"
+# IndexNow (Bing, Yandex, Naver, Seznam…): the key is public by design; IndexNow checks it at /<key>.txt before taking a
+# list of changed pages from scripts/indexnow.py (run by .github/workflows/indexnow.yml after each publish).
+INDEXNOW_KEY = "4ebae6380d9923e3de73396f0df11e0f"
 PLACE_TYPES = ("country", "region", "city", "district", "group")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
 # Languages added from 5 Oct 2026 keep their words in src/assets/lang-<code>.js, loaded only by pages that offer them.
@@ -6000,6 +6004,7 @@ def build_extras():
         + "".join(f"  <url><loc>{SITE_URL}{u}</loc>" + (f"<lastmod>{dates[u]}</lastmod>" if dates.get(u) else "") + "</url>\n" for u in urls)
         + "</urlset>\n", "utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n", "utf-8")
+    (OUT / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY + "\n", "utf-8")
 
 
 # Security headers on every page (Cloudflare Pages reads _headers). CSP_REPORT is the full policy, only reported in the
@@ -6062,6 +6067,13 @@ https://:version.:project.pages.dev/*
 """, "utf-8")
 
 
+def build_version():
+    """/version.txt: the commit this build came from, so the IndexNow workflow can tell when Cloudflare has published it.
+    Written after the service worker, so a commit that changes nothing else doesn't make phones fetch everything again."""
+    sha = os.environ.get("CF_PAGES_COMMIT_SHA") or subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
+    (OUT / "version.txt").write_text(sha + "\n", "utf-8")
+
+
 def build_service_worker():
     """The offline helper. Its version changes whenever any file in the site does, so phones pick up updates."""
     digest = hashlib.sha1()
@@ -6096,6 +6108,7 @@ build_redirects()
 build_extras()
 build_cloudflare()
 build_service_worker()
+build_version()
 print(f"Built {len(pages) + 1} pages from {len(restaurants)} restaurants into {OUT.relative_to(ROOT)}/:")
 print("  /  (homepage)")
 for g in guides:

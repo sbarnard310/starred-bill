@@ -29,7 +29,7 @@
     fShow: "Uri", fStars: "Stilel Michelin", fCuisine: "Kċina",
     fDiet: "Dieta", dietVegOnly: "Ristorant veġetarjan", dietVegMenu: "Menu tad-degustazzjoni veġetarjan", dietVeg: "Għażliet veġetarjani", dietVegan: "Għażliet vegan", dietGf: "Għażliet mingħajr glutina", dietHalal: "Halal", dietKosher: "Kosher",
     badgeVegOnly: "Veġetarjan", badgeVegMenu: "Menu veġ", badgeVegan: "Vegan", chefLabel: "Kap kok: {name}",
-    exploreMore: "{n} oħra", exploreFewer: "Uri inqas",
+    exploreMore: "{n} oħra", exploreFewer: "Uri inqas", listAll: "Uri kollha ({n})",
     filtersBtn: "Filtri", filtersShowN: "Uri {n} ristorant|Uri {n} ristoranti", filtersClear: "Neħħi kollox", cuisineSearchPh: "Sib kċina", removeFilter: "Neħħi l-filtru: {f}", sheetClose: "Agħlaq",
     showAll: "Ir-ristoranti kollha", showChanges: "Bidliet riċenti fl-istilel", showWish: "Il-lista tax-xewqat tiegħi",
     showChangesTitle: "Rebaħ jew tilef stilla f'waħda miż-żewġ edizzjonijiet l-aktar riċenti tal-Gwida Michelin",

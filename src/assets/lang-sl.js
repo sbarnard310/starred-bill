@@ -30,7 +30,7 @@
     fShow: "Prikaži", fStars: "Michelinove zvezdice", fCuisine: "Kuhinja",
     fDiet: "Prehrana", dietVegOnly: "Vegetarijanska restavracija", dietVegMenu: "Vegetarijanski degustacijski meni", dietVeg: "Vegetarijanske jedi", dietVegan: "Veganske jedi", dietGf: "Brezglutenske jedi", dietHalal: "Halal", dietKosher: "Košer",
     badgeVegOnly: "Vegetarijanska", badgeVegMenu: "Vege meni", badgeVegan: "Veganska", chefLabel: "Šef kuhinje: {name}",
-    exploreMore: "Še {n}", exploreFewer: "Prikaži manj",
+    exploreMore: "Še {n}", exploreFewer: "Prikaži manj", listAll: "Prikaži vse ({n})",
     filtersBtn: "Filtri", filtersShowN: "Prikaži zadetke: {n}", filtersClear: "Počisti vse", cuisineSearchPh: "Poiščite kuhinjo", removeFilter: "Odstrani filter: {f}", sheetClose: "Zapri",
     showAll: "Vse restavracije", showChanges: "Nedavne spremembe zvezdic", showWish: "Moj seznam želja",
     showChangesTitle: "Pridobila ali izgubila zvezdico v eni od zadnjih dveh izdaj vodnika Michelin",

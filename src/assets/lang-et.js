@@ -27,7 +27,7 @@
     fShow: "Näita", fStars: "Michelini tähed", fCuisine: "Köök",
     fDiet: "Toitumine", dietVegOnly: "Taimetoidurestoran", dietVegMenu: "Taimetoidu degustatsioonimenüü", dietVeg: "Taimetoiduvalikud", dietVegan: "Veganvalikud", dietGf: "Gluteenivabad valikud", dietHalal: "Halal", dietKosher: "Koššer",
     badgeVegOnly: "Taimetoit", badgeVegMenu: "Taimetoidumenüü", badgeVegan: "Vegan", chefLabel: "Peakokk {name}",
-    exploreMore: "Veel {n}", exploreFewer: "Näita vähem",
+    exploreMore: "Veel {n}", exploreFewer: "Näita vähem", listAll: "Näita kõiki ({n})",
     filtersBtn: "Filtrid", filtersShowN: "Näita {n} restorani|Näita {n} restorani", filtersClear: "Tühjenda kõik", cuisineSearchPh: "Leia köök", removeFilter: "Eemalda filter: {f}", sheetClose: "Sulge",
     showAll: "Kõik restoranid", showChanges: "Hiljutised tähemuutused", showWish: "Minu soovinimekiri",
     showChangesTitle: "Sai või kaotas tähe ühes kahest viimasest Michelini teejuhist",

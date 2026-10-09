@@ -30,7 +30,7 @@
     fShow: "Näytä", fStars: "Michelin-tähdet", fCuisine: "Keittiö",
     fDiet: "Ruokavalio", dietVegOnly: "Kasvisravintola", dietVegMenu: "Kasvismaistelumenu", dietVeg: "Kasvisvaihtoehtoja", dietVegan: "Vegaanisia vaihtoehtoja", dietGf: "Gluteenittomia vaihtoehtoja", dietHalal: "Halal", dietKosher: "Kosher",
     badgeVegOnly: "Kasvis", badgeVegMenu: "Kasvismenu", badgeVegan: "Vegaani", chefLabel: "Keittiömestari {name}",
-    exploreMore: "{n} lisää", exploreFewer: "Näytä vähemmän",
+    exploreMore: "{n} lisää", exploreFewer: "Näytä vähemmän", listAll: "Näytä kaikki {n} ravintolaa",
     filtersBtn: "Suodattimet", filtersShowN: "Näytä {n} ravintola|Näytä {n} ravintolaa", filtersClear: "Tyhjennä kaikki", cuisineSearchPh: "Etsi keittiö", removeFilter: "Poista suodatin: {f}", sheetClose: "Sulje",
     showAll: "Kaikki ravintolat", showChanges: "Tuoreet tähtimuutokset", showWish: "Toivelistani",
     showChangesTitle: "Sai tai menetti tähden jommassakummassa kahdesta viimeisimmästä Michelin-oppaasta",

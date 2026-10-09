@@ -27,7 +27,7 @@
     fShow: "Rodyti", fStars: "„Michelin“ žvaigždutės", fCuisine: "Virtuvė",
     fDiet: "Mityba", dietVegOnly: "Vegetariškas restoranas", dietVegMenu: "Vegetariškas degustacinis meniu", dietVeg: "Vegetariški patiekalai", dietVegan: "Veganiški patiekalai", dietGf: "Patiekalai be glitimo", dietHalal: "Halal", dietKosher: "Košer",
     badgeVegOnly: "Vegetariškas", badgeVegMenu: "Vegetariškas meniu", badgeVegan: "Veganiškas", chefLabel: "Šefas: {name}",
-    exploreMore: "Dar {n}", exploreFewer: "Rodyti mažiau",
+    exploreMore: "Dar {n}", exploreFewer: "Rodyti mažiau", listAll: "Rodyti visus ({n})",
     filtersBtn: "Filtrai", filtersShowN: "Rodyti rezultatus: {n}", filtersClear: "Išvalyti viską", cuisineSearchPh: "Rasti virtuvę", removeFilter: "Pašalinti filtrą: {f}", sheetClose: "Uždaryti",
     showAll: "Visi restoranai", showChanges: "Naujausi žvaigždučių pokyčiai", showWish: "Mano norų sąrašas",
     showChangesTitle: "Gavo arba prarado žvaigždutę viename iš dviejų naujausių „Michelin“ gidų",

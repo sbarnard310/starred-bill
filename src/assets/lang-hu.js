@@ -29,7 +29,7 @@
     fShow: "Mutat", fStars: "Michelin-csillagok", fCuisine: "Konyha",
     fDiet: "Étrend", dietVegOnly: "Vegetáriánus étterem", dietVegMenu: "Vegetáriánus kóstolómenü", dietVeg: "Vegetáriánus ételek", dietVegan: "Vegán ételek", dietGf: "Gluténmentes ételek", dietHalal: "Halal", dietKosher: "Kóser",
     badgeVegOnly: "Vegetáriánus", badgeVegMenu: "Vega menü", badgeVegan: "Vegán", chefLabel: "Séf: {name}",
-    exploreMore: "Még {n}", exploreFewer: "Kevesebb",
+    exploreMore: "Még {n}", exploreFewer: "Kevesebb", listAll: "Az összes megjelenítése ({n})",
     filtersBtn: "Szűrők", filtersShowN: "{n} étterem mutatása", filtersClear: "Összes törlése", cuisineSearchPh: "Konyha keresése", removeFilter: "Szűrő törlése: {f}", sheetClose: "Bezárás",
     showAll: "Minden étterem", showChanges: "Friss csillagváltozások", showWish: "A kívánságlistám",
     showChangesTitle: "Az utolsó két Michelin-kalauz egyikében csillagot kapott vagy vesztett",

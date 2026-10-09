@@ -36,7 +36,7 @@
     fShow: "Anzeigen", fStars: "Michelin-Sterne", fCuisine: "Küche",
     fDiet: "Ernährung", dietVegOnly: "Vegetarisches Restaurant", dietVegMenu: "Vegetarisches Degustationsmenü", dietVeg: "Vegetarische Gerichte", dietVegan: "Vegane Gerichte", dietGf: "Glutenfreie Gerichte", dietHalal: "Halal", dietKosher: "Koscher",
     badgeVegOnly: "Vegetarisch", badgeVegMenu: "Veggie-Menü", badgeVegan: "Vegan", chefLabel: "Küchenchef {name}",
-    exploreMore: "{n} weitere", exploreFewer: "Weniger anzeigen",
+    exploreMore: "{n} weitere", exploreFewer: "Weniger anzeigen", listAll: "Alle {n} Restaurants anzeigen",
     filtersBtn: "Filter", filtersShowN: "{n} Restaurant anzeigen|{n} Restaurants anzeigen", filtersClear: "Alle löschen", cuisineSearchPh: "Küche finden", removeFilter: "Filter entfernen: {f}", sheetClose: "Schließen",
     showAll: "Alle Restaurants", showChanges: "Neue Sterne-Änderungen", showWish: "Meine Merkliste",
     showChangesTitle: "Hat in einer der letzten beiden Ausgaben des Guide Michelin einen Stern gewonnen oder verloren",

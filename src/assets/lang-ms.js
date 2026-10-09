@@ -31,7 +31,7 @@
     fShow: "Tunjuk", fStars: "Bintang Michelin", fCuisine: "Masakan",
     fDiet: "Pemakanan", dietVegOnly: "Restoran vegetarian", dietVegMenu: "Menu rasa vegetarian", dietVeg: "Pilihan vegetarian", dietVegan: "Pilihan vegan", dietGf: "Pilihan bebas gluten", dietHalal: "Halal", dietKosher: "Kosher",
     badgeVegOnly: "Vegetarian", badgeVegMenu: "Menu sayur", badgeVegan: "Vegan", chefLabel: "Cef {name}",
-    exploreMore: "{n} lagi", exploreFewer: "Tunjuk kurang",
+    exploreMore: "{n} lagi", exploreFewer: "Tunjuk kurang", listAll: "Tunjuk semua {n} restoran",
     filtersBtn: "Penapis", filtersShowN: "Tunjuk {n} restoran", filtersClear: "Kosongkan semua", cuisineSearchPh: "Cari masakan", removeFilter: "Buang penapis: {f}", sheetClose: "Tutup",
     showAll: "Semua restoran", showChanges: "Perubahan bintang terkini", showWish: "Senarai hajat saya",
     showChangesTitle: "Mendapat atau kehilangan bintang dalam salah satu daripada dua Panduan Michelin terkini",

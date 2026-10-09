@@ -30,7 +30,7 @@
     fShow: "Vis", fStars: "Michelinstjerner", fCuisine: "Kjøkken",
     fDiet: "Kosthold", dietVegOnly: "Vegetarrestaurant", dietVegMenu: "Vegetarisk smaksmeny", dietVeg: "Vegetariske retter", dietVegan: "Veganske retter", dietGf: "Glutenfrie retter", dietHalal: "Halal", dietKosher: "Kosher",
     badgeVegOnly: "Vegetar", badgeVegMenu: "Vegetarmeny", badgeVegan: "Vegansk", chefLabel: "Kjøkkensjef {name}",
-    exploreMore: "{n} til", exploreFewer: "Vis færre",
+    exploreMore: "{n} til", exploreFewer: "Vis færre", listAll: "Vis alle {n} restauranter",
     filtersBtn: "Filtre", filtersShowN: "Vis {n} restaurant|Vis {n} restauranter", filtersClear: "Fjern alle", cuisineSearchPh: "Finn et kjøkken", removeFilter: "Fjern filter: {f}", sheetClose: "Lukk",
     showAll: "Alle restauranter", showChanges: "Nye stjerneendringer", showWish: "Min ønskeliste",
     showChangesTitle: "Fikk eller mistet en stjerne i en av de to siste Michelinguidene",

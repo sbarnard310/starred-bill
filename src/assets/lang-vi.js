@@ -30,7 +30,7 @@
     fShow: "Hiển thị", fStars: "Sao Michelin", fCuisine: "Ẩm thực",
     fDiet: "Chế độ ăn", dietVegOnly: "Nhà hàng chay", dietVegMenu: "Thực đơn nếm thử chay", dietVeg: "Có món chay", dietVegan: "Có món thuần chay", dietGf: "Có món không gluten", dietHalal: "Halal", dietKosher: "Kosher",
     badgeVegOnly: "Chay", badgeVegMenu: "Thực đơn chay", badgeVegan: "Thuần chay", chefLabel: "Bếp trưởng {name}",
-    exploreMore: "Thêm {n}", exploreFewer: "Thu gọn",
+    exploreMore: "Thêm {n}", exploreFewer: "Thu gọn", listAll: "Xem tất cả {n} nhà hàng",
     filtersBtn: "Bộ lọc", filtersShowN: "Xem {n} nhà hàng", filtersClear: "Xóa tất cả", cuisineSearchPh: "Tìm phong cách ẩm thực", removeFilter: "Bỏ bộ lọc: {f}", sheetClose: "Đóng",
     showAll: "Tất cả nhà hàng", showChanges: "Thay đổi sao gần đây", showWish: "Danh sách của tôi",
     showChangesTitle: "Được hoặc mất sao trong một trong hai ấn bản Cẩm nang MICHELIN gần nhất",

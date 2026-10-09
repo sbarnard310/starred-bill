@@ -39,7 +39,7 @@
     fShow: "عرض", fStars: "نجوم ميشلان", fCuisine: "المطبخ",
     fDiet: "النظام الغذائي", dietVegOnly: "مطعم نباتي", dietVegMenu: "قائمة تذوق نباتية", dietVeg: "أطباق نباتية", dietVegan: "أطباق نباتية صرفة", dietGf: "أطباق خالية من الغلوتين", dietHalal: "حلال", dietKosher: "كوشر",
     badgeVegOnly: "نباتي", badgeVegMenu: "قائمة نباتية", badgeVegan: "نباتي صرف", chefLabel: "الشيف {name}",
-    exploreMore: "{n} أخرى", exploreFewer: "عرض أقل",
+    exploreMore: "{n} أخرى", exploreFewer: "عرض أقل", listAll: "عرض الكل ({n})",
     filtersBtn: "التصفية", filtersShowN: "عرض {n} مطعم|عرض {n} مطاعم", filtersClear: "مسح الكل", cuisineSearchPh: "ابحث عن مطبخ", removeFilter: "إزالة عامل التصفية: {f}", sheetClose: "إغلاق",
     showAll: "كل المطاعم", showChanges: "تغييرات النجوم الجديدة", showWish: "قائمتي المفضلة",
     showChangesTitle: "نال نجمة أو فقدها في إحدى آخر إصدارين من دليل ميشلان",

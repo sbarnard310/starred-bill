@@ -35,7 +35,7 @@
     fShow: "Toon", fStars: "Michelinsterren", fCuisine: "Keuken",
     fDiet: "Dieet", dietVegOnly: "Vegetarisch restaurant", dietVegMenu: "Vegetarisch proeverijmenu", dietVeg: "Vegetarische gerechten", dietVegan: "Veganistische gerechten", dietGf: "Glutenvrije gerechten", dietHalal: "Halal", dietKosher: "Koosjer",
     badgeVegOnly: "Vegetarisch", badgeVegMenu: "Veggiemenu", badgeVegan: "Veganistisch", chefLabel: "Chef {name}",
-    exploreMore: "Nog {n}", exploreFewer: "Minder tonen",
+    exploreMore: "Nog {n}", exploreFewer: "Minder tonen", listAll: "Alle {n} restaurants tonen",
     filtersBtn: "Filters", filtersShowN: "Toon {n} restaurant|Toon {n} restaurants", filtersClear: "Alles wissen", cuisineSearchPh: "Zoek een keuken", removeFilter: "Filter verwijderen: {f}", sheetClose: "Sluiten",
     showAll: "Alle restaurants", showChanges: "Recente sterwijzigingen", showWish: "Mijn verlanglijst",
     showChangesTitle: "Kreeg of verloor een ster in een van de laatste twee Michelingidsen",

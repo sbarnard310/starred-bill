@@ -30,7 +30,7 @@
     fShow: "Zobrazit", fStars: "Michelinské hvězdy", fCuisine: "Kuchyně",
     fDiet: "Strava", dietVegOnly: "Vegetariánská restaurace", dietVegMenu: "Vegetariánské degustační menu", dietVeg: "Vegetariánská jídla", dietVegan: "Veganská jídla", dietGf: "Bezlepková jídla", dietHalal: "Halal", dietKosher: "Košer",
     badgeVegOnly: "Vegetariánská", badgeVegMenu: "Vege menu", badgeVegan: "Veganská", chefLabel: "Šéfkuchař: {name}",
-    exploreMore: "Dalších {n}", exploreFewer: "Zobrazit méně",
+    exploreMore: "Dalších {n}", exploreFewer: "Zobrazit méně", listAll: "Zobrazit všechny ({n})",
     filtersBtn: "Filtry", filtersShowN: "Zobrazit výsledky: {n}", filtersClear: "Vymazat vše", cuisineSearchPh: "Najít kuchyni", removeFilter: "Odebrat filtr: {f}", sheetClose: "Zavřít",
     showAll: "Všechny restaurace", showChanges: "Nedávné změny hvězd", showWish: "Moje oblíbené",
     showChangesTitle: "Získala nebo ztratila hvězdu v jednom ze dvou posledních vydání Průvodce Michelin",

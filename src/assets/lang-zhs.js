@@ -34,7 +34,7 @@
     fShow: "显示", fStars: "米其林星级", fCuisine: "菜系",
     fDiet: "饮食需求", dietVegOnly: "素食餐厅", dietVegMenu: "素食品鉴套餐", dietVeg: "提供素食", dietVegan: "提供纯素", dietGf: "提供无麸质", dietHalal: "清真", dietKosher: "犹太洁食",
     badgeVegOnly: "素食", badgeVegMenu: "素食套餐", badgeVegan: "纯素", chefLabel: "主厨 {name}",
-    exploreMore: "另外 {n} 个", exploreFewer: "收起",
+    exploreMore: "另外 {n} 个", exploreFewer: "收起", listAll: "显示全部 {n} 家餐厅",
     filtersBtn: "筛选", filtersShowN: "显示 {n} 家餐厅", filtersClear: "全部清除", cuisineSearchPh: "搜索菜系", removeFilter: "移除筛选：{f}", sheetClose: "关闭",
     showAll: "全部餐厅", showChanges: "近期星级变动", showWish: "我的心愿单",
     showChangesTitle: "在最近两版米其林指南中获得或失去星级",

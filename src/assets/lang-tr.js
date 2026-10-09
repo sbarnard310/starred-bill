@@ -31,7 +31,7 @@
     fShow: "Göster", fStars: "Michelin yıldızları", fCuisine: "Mutfak",
     fDiet: "Beslenme", dietVegOnly: "Vejetaryen restoran", dietVegMenu: "Vejetaryen tadım menüsü", dietVeg: "Vejetaryen seçenekler", dietVegan: "Vegan seçenekler", dietGf: "Glütensiz seçenekler", dietHalal: "Helal", dietKosher: "Koşer",
     badgeVegOnly: "Vejetaryen", badgeVegMenu: "Vejetaryen menü", badgeVegan: "Vegan", chefLabel: "Şef {name}",
-    exploreMore: "{n} tane daha", exploreFewer: "Daha az göster",
+    exploreMore: "{n} tane daha", exploreFewer: "Daha az göster", listAll: "Tümünü göster ({n})",
     filtersBtn: "Filtreler", filtersShowN: "{n} restoranı göster", filtersClear: "Tümünü temizle", cuisineSearchPh: "Mutfak bulun", removeFilter: "Filtreyi kaldır: {f}", sheetClose: "Kapat",
     showAll: "Tüm restoranlar", showChanges: "Son yıldız değişiklikleri", showWish: "İstek listem",
     showChangesTitle: "Son iki Michelin Rehberi'nden birinde yıldız kazandı ya da kaybetti",

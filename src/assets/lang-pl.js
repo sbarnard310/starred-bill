@@ -30,7 +30,7 @@
     fShow: "Pokaż", fStars: "Gwiazdki Michelin", fCuisine: "Kuchnia",
     fDiet: "Dieta", dietVegOnly: "Restauracja wegetariańska", dietVegMenu: "Wegetariańskie menu degustacyjne", dietVeg: "Dania wegetariańskie", dietVegan: "Dania wegańskie", dietGf: "Dania bezglutenowe", dietHalal: "Halal", dietKosher: "Koszerne",
     badgeVegOnly: "Wegetariańska", badgeVegMenu: "Menu wege", badgeVegan: "Wegańska", chefLabel: "Szef kuchni: {name}",
-    exploreMore: "Jeszcze {n}", exploreFewer: "Pokaż mniej",
+    exploreMore: "Jeszcze {n}", exploreFewer: "Pokaż mniej", listAll: "Pokaż wszystkie ({n})",
     filtersBtn: "Filtry", filtersShowN: "Pokaż wyniki: {n}", filtersClear: "Wyczyść wszystko", cuisineSearchPh: "Znajdź kuchnię", removeFilter: "Usuń filtr: {f}", sheetClose: "Zamknij",
     showAll: "Wszystkie restauracje", showChanges: "Ostatnie zmiany gwiazdek", showWish: "Moje ulubione",
     showChangesTitle: "Zdobyła lub straciła gwiazdkę w jednym z dwóch ostatnich wydań Przewodnika Michelin",

@@ -30,7 +30,7 @@
     fShow: "Εμφάνιση", fStars: "Αστέρια Michelin", fCuisine: "Κουζίνα",
     fDiet: "Διατροφή", dietVegOnly: "Χορτοφαγικό εστιατόριο", dietVegMenu: "Χορτοφαγικό μενού γευσιγνωσίας", dietVeg: "Χορτοφαγικές επιλογές", dietVegan: "Vegan επιλογές", dietGf: "Επιλογές χωρίς γλουτένη", dietHalal: "Χαλάλ", dietKosher: "Κόσερ",
     badgeVegOnly: "Χορτοφαγικό", badgeVegMenu: "Χορτοφαγικό μενού", badgeVegan: "Vegan", chefLabel: "Σεφ: {name}",
-    exploreMore: "{n} ακόμη", exploreFewer: "Λιγότερα",
+    exploreMore: "{n} ακόμη", exploreFewer: "Λιγότερα", listAll: "Δείτε και τα {n} εστιατόρια",
     filtersBtn: "Φίλτρα", filtersShowN: "Εμφάνιση {n} εστιατορίου|Εμφάνιση {n} εστιατορίων", filtersClear: "Καθαρισμός όλων", cuisineSearchPh: "Βρείτε κουζίνα", removeFilter: "Αφαίρεση φίλτρου: {f}", sheetClose: "Κλείσιμο",
     showAll: "Όλα τα εστιατόρια", showChanges: "Πρόσφατες αλλαγές αστεριών", showWish: "Η λίστα επιθυμιών μου",
     showChangesTitle: "Κέρδισε ή έχασε αστέρι σε μία από τις δύο τελευταίες εκδόσεις του Οδηγού Michelin",

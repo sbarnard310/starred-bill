@@ -30,7 +30,7 @@
     fShow: "Ipakita", fStars: "Mga Michelin star", fCuisine: "Lutuin",
     fDiet: "Diyeta", dietVegOnly: "Vegetarian na restawran", dietVegMenu: "Vegetarian na tasting menu", dietVeg: "May vegetarian", dietVegan: "May vegan", dietGf: "May gluten-free", dietHalal: "Halal", dietKosher: "Kosher",
     badgeVegOnly: "Vegetarian", badgeVegMenu: "Veg menu", badgeVegan: "Vegan", chefLabel: "Chef {name}",
-    exploreMore: "{n} pa", exploreFewer: "Ipakita nang mas kaunti",
+    exploreMore: "{n} pa", exploreFewer: "Ipakita nang mas kaunti", listAll: "Ipakita ang lahat ng {n} restawran",
     filtersBtn: "Mga filter", filtersShowN: "Ipakita ang {n} restawran", filtersClear: "I-clear lahat", cuisineSearchPh: "Maghanap ng lutuin", removeFilter: "Alisin ang filter: {f}", sheetClose: "Isara",
     showAll: "Lahat ng restawran", showChanges: "Mga bagong pagbabago sa bituin", showWish: "Aking wishlist",
     showChangesTitle: "Nagkamit o nawalan ng bituin sa isa sa huling dalawang MICHELIN Guide",

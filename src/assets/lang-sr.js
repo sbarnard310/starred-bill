@@ -29,7 +29,7 @@
     fShow: "Прикажи", fStars: "Мишленове звездице", fCuisine: "Кухиња",
     fDiet: "Исхрана", dietVegOnly: "Вегетаријански ресторан", dietVegMenu: "Вегетаријански дегустациони мени", dietVeg: "Вегетаријанска јела", dietVegan: "Веганска јела", dietGf: "Безглутенска јела", dietHalal: "Халал", dietKosher: "Кошер",
     badgeVegOnly: "Вегетаријански", badgeVegMenu: "Веге мени", badgeVegan: "Вегански", chefLabel: "Шеф кухиње: {name}",
-    exploreMore: "Још {n}", exploreFewer: "Прикажи мање",
+    exploreMore: "Још {n}", exploreFewer: "Прикажи мање", listAll: "Прикажи све ({n})",
     filtersBtn: "Филтери", filtersShowN: "Прикажи резултате: {n}", filtersClear: "Обриши све", cuisineSearchPh: "Пронађите кухињу", removeFilter: "Уклони филтер: {f}", sheetClose: "Затвори",
     showAll: "Сви ресторани", showChanges: "Недавне промене звездица", showWish: "Моја листа жеља",
     showChangesTitle: "Добио или изгубио звездицу у једном од последња два издања Мишленовог водича",

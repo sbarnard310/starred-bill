@@ -27,7 +27,7 @@
     fShow: "Rādīt", fStars: "Michelin zvaigznes", fCuisine: "Virtuve",
     fDiet: "Uzturs", dietVegOnly: "Veģetāriešu restorāns", dietVegMenu: "Veģetāriešu degustācijas ēdienkarte", dietVeg: "Veģetārie ēdieni", dietVegan: "Vegāniskie ēdieni", dietGf: "Ēdieni bez glutēna", dietHalal: "Halāls", dietKosher: "Košera",
     badgeVegOnly: "Veģetārs", badgeVegMenu: "Veģ. ēdienkarte", badgeVegan: "Vegānisks", chefLabel: "Šefpavārs: {name}",
-    exploreMore: "Vēl {n}", exploreFewer: "Rādīt mazāk",
+    exploreMore: "Vēl {n}", exploreFewer: "Rādīt mazāk", listAll: "Rādīt visus ({n})",
     filtersBtn: "Filtri", filtersShowN: "Rādīt rezultātus: {n}", filtersClear: "Notīrīt visu", cuisineSearchPh: "Atrast virtuvi", removeFilter: "Noņemt filtru: {f}", sheetClose: "Aizvērt",
     showAll: "Visi restorāni", showChanges: "Jaunākās zvaigžņu izmaiņas", showWish: "Mans vēlmju saraksts",
     showChangesTitle: "Ieguva vai zaudēja zvaigzni vienā no diviem jaunākajiem Michelin ceļvežiem",

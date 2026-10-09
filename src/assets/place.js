@@ -430,10 +430,17 @@ function stub(r) {
     : '<span class="stub-price">' + esc(v.text) + "</span>" + (v.extra ? '<span class="stub-sub">' + esc(v.extra) + "</span>" : "") +
       '<span class="stub-sub">' + (wine ? esc(t("rcptPlusWine", { p: money(wine, r) })) : esc(noWineNote(r))) + "</span>") + "</span>";
 }
-// Long lists (France has over 600 restaurants) are drawn in batches as they scroll into view, so a phone isn't asked
-// to build them all at once. The "No longer starred" rows follow the last batch.
-const LEDGER_STEP = 40;
-const ledger = { rows: [], shown: 0, key: "" };
+// Destination lists show their first 10 restaurants, then a button for the rest ("Show all 84 restaurants"), so the map,
+// prices by stars and FAQ below stay in reach. Searching or any filter shows every match, as do lists of 12 or fewer.
+// A long list is drawn in batches, one per frame, so a phone isn't asked to build France's 600 rows at once; the
+// "No longer starred" rows and the "Show fewer" button follow the last batch.
+const LIST_FOLD = 10, LIST_FOLD_MAX = 12, LEDGER_STEP = 40;
+const nextFrame = (fn) => document.hidden ? setTimeout(fn, 0) : requestAnimationFrame(fn);  // frames pause in a hidden tab
+const ledger = { rows: [], drawn: 0, key: "", expanded: false, job: 0 };
+const narrowed = () => !!(state.query.trim() || state.activeStars || state.activeCat !== "All" || state.diet || state.wishOnly || state.changesOnly || state.beenOnly || state.area);
+const foldable = () => !narrowed() && ledger.rows.length > LIST_FOLD_MAX;
+const folded = () => foldable() && !ledger.expanded;
+const ledgerTarget = () => folded() ? LIST_FOLD : ledger.rows.length;
 function ledgerRow(r) {
   const on = onWishlist(r);
   return '<div class="row rc-row' + (L() && r.noLunch ? " nolunch" : "") + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
@@ -459,48 +466,71 @@ function formerHtml(former) {
       '<span class="dinner" role="cell"><span class="stub"><span class="stub-price muted">–</span></span></span>' +
       actsCell(r) + '<span class="wish-cell" role="cell">' + beenButton(r) + "</span></div>").join("");
 }
-// What follows the drawn rows: a button for the next batch (also pressed by scrolling near it), or the former ones.
-const ledgerTail = () => ledger.rows.length > ledger.shown
-  ? '<div class="empty ledger-more" role="row"><span role="cell"><button type="button" class="btn-line" id="ledgerMore">+ ' + esc(t("exploreMore", { n: ledger.rows.length - ledger.shown })) + "</button></span></div>"
-  : formerHtml(formerRows());
-function moreLedger() {
-  const more = document.querySelector("#ledger .ledger-more");
-  if (!more) return;
-  const from = ledger.shown;
-  ledger.shown += LEDGER_STEP * 2;
-  more.insertAdjacentHTML("beforebegin", ledger.rows.slice(from, ledger.shown).map(ledgerRow).join(""));
-  more.insertAdjacentHTML("afterend", ledgerTail());
-  more.remove();
+// What follows the last row: the "Show all" button while folded, else the former restaurants and the "Show fewer" button.
+function ledgerTail() {
+  const btn = foldable() ? '<div class="ledger-more" role="row"><span role="cell"><button type="button" class="btn-line" id="ledgerMore" aria-controls="ledger" aria-expanded="' + !folded() + '">' +
+    esc(folded() ? t("listAll", { n: ledger.rows.length }) : t("exploreFewer")) + "</button></span></div>" : "";
+  return '<div class="ledger-tail" role="rowgroup">' + (folded() ? "" : formerHtml(formerRows())) + btn + "</div>";
+}
+// Adds the next batch of rows (and, after the last one, the tail), then asks for another frame until the list is complete.
+function fillLedger(job) {
+  if (job !== ledger.job) return;
+  const end = Math.min(ledgerTarget(), ledger.drawn + LEDGER_STEP);
+  $("ledger").insertAdjacentHTML("beforeend", ledger.rows.slice(ledger.drawn, end).map(ledgerRow).join("") + (end >= ledgerTarget() ? ledgerTail() : ""));
+  ledger.drawn = end;
   observeThumbs();
-  watchLedgerEnd();
+  if (end < ledgerTarget()) nextFrame(() => fillLedger(job));
 }
-const ledgerEnd = "IntersectionObserver" in window ? new IntersectionObserver((entries) => { if (entries.some((e) => e.isIntersecting)) moreLedger(); }, { rootMargin: "800px 0px" }) : null;
-function watchLedgerEnd() {
-  if (!ledgerEnd) return;
-  ledgerEnd.disconnect();
-  const more = $("ledgerMore");
-  if (more) ledgerEnd.observe(more);
+function toggleLedger() {
+  ledger.expanded = folded();
+  track("list-more", { open: ledger.expanded ? "all" : "fewer" });
+  if (ledger.expanded) {
+    // The new rows go on under the first ten, and keyboard focus moves to the first of them.
+    const first = ledger.drawn;
+    $("ledger").querySelector(".ledger-tail").remove();
+    fillLedger(++ledger.job);
+    const row = $("ledger").querySelectorAll(".rc-row")[first];
+    const to = row && [...row.querySelectorAll("a[href], button")].find((el) => el.offsetParent);  // phones show .sum, computers the name's links
+    if (to) to.focus({ preventScroll: true });
+    return;
+  }
+  renderLedger();
+  // Back to the top of the list, so the visitor isn't left where the long list ended: a jump to just below it (a long
+  // glide past the footer is dizzying), then a short smooth scroll the rest of the way.
+  const sec = $("compare"), top = sec.getBoundingClientRect().top + scrollY - (parseFloat(getComputedStyle(sec).scrollMarginTop) || 0);
+  if (scrollY > top + innerHeight) window.scrollTo({ top: top + innerHeight, behavior: "instant" });
+  window.scrollTo({ top, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+  const btn = $("ledgerMore");
+  if (btn) btn.focus({ preventScroll: true });
 }
-document.addEventListener("click", (e) => { if (e.target.closest("#ledgerMore")) moreLedger(); });
+document.addEventListener("click", (e) => { if (e.target.closest("#ledgerMore")) toggleLedger(); });
 function renderLedger() {
   const rows = filtered();
-  // The same filters keep as many rows drawn as before (e.g. after ticking a heart far down the list); new ones start again.
-  const key = [state.activeStars, state.activeCat, state.diet, state.wishOnly, state.changesOnly, state.beenOnly, state.area, state.query, state.sort].join("|");
-  if (key !== ledger.key) { ledger.key = key; ledger.shown = LEDGER_STEP; }
   ledger.rows = rows;
+  // The same filters redraw as many rows at once as before (e.g. after ticking a heart far down the list), so the page
+  // doesn't jump; new ones draw the first batch now and the rest a frame at a time.
+  const key = [state.activeStars, state.activeCat, state.diet, state.wishOnly, state.changesOnly, state.beenOnly, state.area, state.query, state.sort].join("|");
+  const keep = key === ledger.key ? ledger.drawn : 0;
+  ledger.key = key;
+  ledger.drawn = Math.min(ledgerTarget(), Math.max(keep, LEDGER_STEP));
+  ledger.job++;
   let html = '<div class="row head" role="row"><span role="columnheader">' + t("hRestaurant") + '</span><span role="columnheader">' + t("hCuisine") + '</span><span role="columnheader">' + t("hStars") + '</span><span role="columnheader">' + t("hGoogle") + '</span><span role="columnheader">' + t(L() ? "hNotesLunch" : "hNotes") + '</span><span role="columnheader" style="text-align:right">' + t("hPrice") + '</span><span role="columnheader" class="sr-only">' + t("hWish") + "</span></div>";
   if (!rows.length && !EMPTY) {
     html += '<div class="empty">' + (state.wishOnly && !RESTAURANTS.some(onWishlist) ? t("emptyWish")
       : t("noMatch") + ' <button type="button" class="linkish" id="clearFilters">' + t("clearFilters") + "</button>") + "</div>";
   }
-  html += rows.slice(0, ledger.shown).map(ledgerRow).join("") + ledgerTail();
-  const former = formerRows();
+  html += rows.slice(0, ledger.drawn).map(ledgerRow).join("") + (ledger.drawn >= ledgerTarget() ? ledgerTail() : "");
   $("ledger").innerHTML = html;
   renderFilterSummary(rows.length);
   observeThumbs();
-  watchLedgerEnd();
+  if (ledger.drawn < ledgerTarget()) { const job = ledger.job; nextFrame(() => fillLedger(job)); }
   updateMap(true);
-  $("showing").textContent = t("showing", { a: rows.length, b: RESTAURANTS.length }) + (former.length ? t("showingFormer", { c: former.length }) : "") +
+  renderLedgerFoot();
+}
+// The line under the list: how many are showing, "been there" progress and the wishlist note.
+function renderLedgerFoot() {
+  const former = formerRows();
+  $("showing").textContent = t("showing", { a: ledger.rows.length, b: RESTAURANTS.length }) + (former.length ? t("showingFormer", { c: former.length }) : "") +
     (acctSignedIn() && RESTAURANTS.some(onBeen) ? " · " + t("beenProgress", { n: RESTAURANTS.filter(onBeen).length, total: RESTAURANTS.length }) : "");
   $("wishNote").innerHTML = acctSignedIn() ? esc(t("wishNoteIn"))
     : esc(t("wishNoteOut")) + ' <button type="button" class="linkish" data-signin="">' + esc(t("wishNoteSignIn")) + "</button>";
@@ -713,13 +743,27 @@ function beenButton(r) {
   return '<button type="button" class="been" data-been="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "beenRemove" : "beenAdd", { name: nameOf(r) })) +
     '" title="' + esc(t(on ? "beenRemoveT" : "beenAddT")) + '"><svg aria-hidden="true"><use href="#check"/></svg><span class="been-lbl" aria-hidden="true">' + esc(t("been")) + "</span></button>";
 }
+// Ticking a heart or "been there" redraws just that row where the list itself doesn't change (France's full list takes a
+// phone over a second to redraw), and keeps keyboard focus on the button.
+function renderRow(id, sel) {
+  const sum = [...document.querySelectorAll("#ledger .rc-row .sum")].find((b) => b.dataset.row === id);
+  const r = RESTAURANTS.find((x) => x.id === id);
+  if (!sum || !r || state.wishOnly || state.beenOnly) return render();
+  const row = sum.closest(".row"), had = row.contains(document.activeElement);
+  row.insertAdjacentHTML("afterend", ledgerRow(r));
+  const fresh = row.nextElementSibling;
+  row.remove();
+  renderShowFilter(); renderLedgerFoot(); observeThumbs();
+  const btn = had && [...fresh.querySelectorAll(sel)].find((b) => b.offsetParent);
+  if (btn) btn.focus();
+}
 function toggleBeen(id) {
   const r = ALL_RESTAURANTS.find((x) => x.id === id);
   const was = onBeen(r);
   if (!toggleVisited(id)) return;
   state.visited = loadVisited();
   toast(t(was ? "toastNotBeen" : "toastBeen", { name: nameOf(r) }), () => { toggleVisited(id); state.visited = loadVisited(); });
-  render();
+  renderRow(id, ".been");
 }
 function toggleWish(id) {
   const r = RESTAURANTS.find((x) => x.id === id);
@@ -731,7 +775,7 @@ function toggleWish(id) {
     state.wishlist.push(id);
     toast(t("toastAdded", { name: nameOf(r) }), null);
   }
-  save(); render();
+  save(); renderRow(id, ".wish");
 }
 
 // ---------- Larger photos ----------
@@ -838,6 +882,15 @@ const refreshLists = (e) => { if (e.type === "sb:account" || e.detail.from === "
 ["sb:wishlist", "sb:visited", "sb:account"].forEach((ev) => window.addEventListener(ev, refreshLists));
 
 // ---------- Start ----------
+// The full list build.py wrote into the page for search engines stays in it, out of sight, when the folded list is drawn.
+(() => {
+  const pre = document.querySelector("#ledger .prerender");
+  if (!pre) return;
+  const keep = document.createElement("div");
+  keep.hidden = true;
+  keep.appendChild(pre);
+  $("ledger").after(keep);
+})();
 load();
 $("sort").value = state.sort;
 $("q").value = state.query;
@@ -849,8 +902,9 @@ function openFromHash() {
   const id = m && decodeURIComponent(m[1]);
   if (!id || !ALL_RESTAURANTS.some((r) => r.id === id)) return;
   state.openRow = id;
-  const at = ledger.rows.findIndex((r) => r.id === id);
-  ledger.shown = Math.max(ledger.shown, at < 0 ? ledger.rows.length : at + 1);  // former restaurants follow the last row
+  // The whole list is drawn at once, so the row (or a former restaurant after the last one) is there to scroll to.
+  ledger.expanded = true;
+  ledger.drawn = ledger.rows.length;
   renderLedger();
   // The list is redrawn when exchange rates arrive, so the row is looked up afresh each time.
   const row = () => { const b = [...document.querySelectorAll("#ledger .sum")].find((x) => x.dataset.row === id); return b && b.closest(".row"); };

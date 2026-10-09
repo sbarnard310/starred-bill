@@ -369,28 +369,26 @@ def bing_links(cfg, prev=None):
     as "starredbill-bing"."""
     key = keychain("starredbill-bing")
     site = cfg.get("bing_site", SITE + "/")
-    base = "https://ssl.bing.com/webmaster/api.svc/pox/"
-    ns = "{http://schemas.datacontract.org/2004/07/Microsoft.Bing.Webmaster.Api}"
+    base = "https://ssl.bing.com/webmaster/api.svc/json/"  # the pox/ (XML) address answers 404 since Oct 2026
 
     def call(method, **q):
         q.update(siteUrl=site, apikey=key)
-        req = urllib.request.Request(f"{base}{method}?{urllib.parse.urlencode(q)}", headers={"Accept": "application/xml"})
-        with urllib.request.urlopen(req, timeout=40) as r:
-            return ET.fromstring(r.read())
+        with urllib.request.urlopen(f"{base}{method}?{urllib.parse.urlencode(q)}", timeout=40) as r:
+            return json.loads(r.read().decode()).get("d") or {}
 
-    def paged(method, item, field, **q):
+    def paged(method, items, field, **q):
         found, page, total = [], 0, 1
         while page < min(total, 20):
-            root = call(method, page=page, **q)
-            found += [(e.findtext(ns + field) or "") for e in root.iter(ns + item)]
-            total = int(root.findtext(ns + "TotalPages") or 0)
+            res = call(method, page=page, **q)
+            found += [(e.get(field) or "") for e in res.get(items) or []]
+            total = int(res.get("TotalPages") or 0)
             page += 1
         return found
 
-    ours = paged("GetLinkCounts", "LinkCount", "Url")
+    ours = paged("GetLinkCounts", "Links", "Url")
     sites = {}
     for target in ours:
-        for source in paged("GetUrlLinks", "LinkDetail", "Url", link=target):
+        for source in paged("GetUrlLinks", "Details", "Url", link=target):
             host = urllib.parse.urlparse(source).hostname or ""
             host = host[4:] if host.startswith("www.") else host
             if host and not host.endswith(("starredbill.com", "starred-bill.pages.dev", "sbarnard310.github.io")):

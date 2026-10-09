@@ -14,6 +14,8 @@ report can say what changed. A source that isn't set up yet is reported as "not 
     oldest-checked first, results kept in index-cache.json beside config.json).
   - The SEO plan's 20 target searches (seo-targets.txt beside config.json): each one's Google position over the
     latest week, in its main market, and which of our pages ranks for it.
+  - Searches on page two of Google: where a page of ours averages position 8–20 over the last 28 days, with the
+    page's live title, description and heading and the search words they lack, so they can be tuned.
   - Sites linking to us, from Bing Webmaster Tools (Search Console's Links report has no API). Needs the Bing
     Webmaster API key in the Keychain as "starredbill-bing".
   - The SEO plan's four measures against their aims for 31 Jan 2027 (SEO_AIMS), put together from the above.
@@ -38,6 +40,7 @@ import threading
 import xml.etree.ElementTree as ET
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -287,6 +290,78 @@ def seo_targets(cfg):
             "on_page_one": sum(1 for t in out if t["page_one"]), "searches": out}
 
 
+PAGE_TWO = (8, 20)   # average positions counted as "page two": just off page one, the quickest wins
+PAGE_TWO_DAYS = 28
+PAGE_TWO_MAX = 25
+FILLER = {"a", "an", "and", "the", "in", "of", "for", "to", "with", "near", "me", "best", "top", "at", "on", "by"}
+
+
+def page_words(path):
+    """The live page's title, search description and main heading, as Google reads them."""
+    req = urllib.request.Request(SITE + path, headers={"User-Agent": "StarredBillFigures/1.0"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        html = r.read().decode("utf-8", "replace")
+
+    def first(pattern):
+        m = re.search(pattern, html, re.S | re.I)
+        if not m:
+            return ""
+        text = re.sub(r"<[^>]+>", " ", m.group(1))
+        text = " ".join(text.replace("&amp;", "&").replace("&#39;", "'").replace("&quot;", '"').split())
+        return re.sub(r"\s+([,.:;!?])", r"\1", text)
+
+    return {"title": first(r"<title>(.*?)</title>"),
+            "description": first(r'<meta name="description" content="([^"]*)"'),
+            "heading": first(r"<h1[^>]*>(.*?)</h1>")}
+
+
+def missing_words(search, text):
+    """The search's words (filler words aside) that the text doesn't contain, allowing plurals."""
+    have = text.lower()
+    return [w for w in search.lower().split() if w not in FILLER and w.rstrip("s") not in have]
+
+
+def page_two(cfg, prev=None):
+    """Searches where one of our pages sits at average position 8–20 over the last 28 days (PAGE_TWO), most
+    impressions first, with the page's live title, description and heading and the search words each lacks,
+    so the title can be tuned to the search. Addresses with ?lang= are counted under the page itself (their
+    canonical)."""
+    url, auth, week, _ = gsc_query(cfg)
+    end = dt.date.fromisoformat(week[1])
+    start = end - dt.timedelta(days=PAGE_TWO_DAYS - 1)
+    rows = http(url, {"startDate": str(start), "endDate": str(end), "dimensions": ["query", "page"],
+                      "rowLimit": 25000}, auth).get("rows", [])
+    found = []
+    for r in rows:
+        if PAGE_TWO[0] <= r["position"] <= PAGE_TWO[1]:
+            q, page = r["keys"]
+            path = urllib.parse.urlparse(page).path or "/"
+            found.append({"search": q, "page": path, "position": round(r["position"], 1),
+                          "impressions": r["impressions"], "clicks": r["clicks"]})
+    found.sort(key=lambda f: (-f["impressions"], f["position"]))
+    found = found[:PAGE_TWO_MAX]
+    words = {}
+    for f in found:
+        if f["page"] not in words:
+            try:
+                words[f["page"]] = page_words(f["page"])
+            except Exception as e:
+                words[f["page"]] = {"error": str(e)[:100]}
+        w = words[f["page"]]
+        f.update(w)
+        if "title" in w:
+            f["missing_from_title"] = missing_words(f["search"], w["title"])
+            f["missing_from_heading"] = missing_words(f["search"], w["heading"])
+    before = []
+    if prev and Path(prev).exists():
+        before = json.loads(Path(prev).read_text()).get("sources", {}).get("page_two", {}).get("searches", [])
+    seen = {(b["search"], b["page"]) for b in before}
+    for f in found:
+        f["new"] = bool(prev) and (f["search"], f["page"]) not in seen
+    return {"period": f"{start} to {end}", "searches_with_impressions": len(rows), "on_page_two": len(found),
+            "searches": found}
+
+
 def bing_links(cfg, prev=None):
     """Sites linking to us, from Bing Webmaster Tools: every page of ours Bing knows links to, then the
     addresses linking to each, counted by site. Search Console's Links report has no API, so Bing stands in;
@@ -418,6 +493,7 @@ def main(out, prev=None):
                             ("site_index", lambda c: site_index(c, result["sources"].get("index", {}).get("pages")),
                              ["google sign-in"]),
                             ("targets", seo_targets, ["google sign-in", "seo-targets.txt"]),
+                            ("page_two", lambda c: page_two(c, prev), ["google sign-in"]),
                             ("links", lambda c: bing_links(c, prev), ["Bing API key"]),
                             ("umami", umami, [])):
         missing = [k for k in needs if not (google_ready(cfg) if k == "google sign-in" else

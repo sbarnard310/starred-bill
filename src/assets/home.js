@@ -37,7 +37,7 @@ function applyStatic() {
   if (DATA.worldTotal) document.querySelector('[data-i18n="mapHomeText"]').textContent = t("mapHomeWorldText", { n: DATA.worldTotal.toLocaleString("en-GB") });
 }
 function renderFigures() {
-  $("fRestaurants").textContent = DATA.starCounts[0];
+  $("fRestaurants").textContent = DATA.starCounts[0].toLocaleString("en-GB");
   $("fRestaurantsSub").textContent = starCountText(DATA.starCounts);
   // A destination with no separate city pages (e.g. Hong Kong) counts as one city.
   const cities = DATA.places.filter((p) => p.type === "city").length + DATA.countries.filter((c) => !c.cities.length).length;

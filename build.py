@@ -2913,6 +2913,15 @@ def cheapest_dinner(p):
     return min(menus, key=lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"]) if menus else None
 
 
+def home_where(r):
+    """A restaurant's town, short: "Modena" (the area of one listed under its region), "London" (not "Mayfair")."""
+    if r["cityType"] == "district":
+        return places[r["_chain"][1]]["name"]
+    if r["cityType"] != "city" and r.get("area"):
+        return r["area"].split(", ")[0]
+    return r["cityName"]
+
+
 def home_sample_html(starred):
     """The hero's till receipts: restaurants with their own page and dinner, lunch and wine prices, three-stars first, so a
     visitor sees what the site does before reading a word. home.js shows one at random and steps through the rest."""
@@ -2920,7 +2929,7 @@ def home_sample_html(starred):
             and r.get("wine") and r.get("lunch") is not None]
     full.sort(key=lambda r: (-r["stars"], RESTAURANT_PAGES.index(r["id"])))
     def one(i, r):
-        where = area_line(r).split(", ")[-1]
+        where = home_where(r)
         kind = SERVICE.get(r["country"], ("before", 0))[0]
         return (f'<figure class="sample"{" hidden" if i else ""} data-sample="{i}">'
                 + receipt_html(r, kind, "")
@@ -3070,7 +3079,7 @@ def home_browse_html():
                        f'<span class="count">{starred_n[p["id"]]}</span></li>' for p in cuisine)
     own = sorted((r for r in restaurants if r.get("page")), key=lambda r: RESTAURANT_PAGES.index(r["id"]))
     rests = "".join(f'<li><a href="{e(r["page"])}" data-home="restaurant">{e(r["name"])}</a> {star_icons(r["stars"])}'
-                    f'<span class="sr-only">{STAR_WORDS[r["stars"]]} stars</span><span class="count">{e(area_line(r).split(", ")[-1])}</span></li>' for r in own)
+                    f'<span class="sr-only">{STAR_WORDS[r["stars"]]} stars</span><span class="count">{e(home_where(r))}</span></li>' for r in own)
     lists = "".join(f'<li><a href="/guides/{gid}/" data-home="list">{e(label)}</a></li>' for gid, label in HOME_LISTS if gid in guides)
     col = lambda title, items: f'<div class="br-col"><h3 class="nw-head">{title}</h3><ul class="br-list">{items}</ul></div>' if items else ""
     return (f'<div class="br-grid">{col("By cuisine", cuisines)}{col("Restaurants people search for", rests)}'

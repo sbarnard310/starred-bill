@@ -97,7 +97,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .figure { background: var(--band); padding: 16px 14px; min-width: 0; }
 .figure .label { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--band-muted); }
 .figure .value { font-family: var(--font-num); font-size: clamp(1rem, 1vw + .5rem, 1.4rem); margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.figure .sub { font-size: .8rem; color: var(--band-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.figure .sub { font-size: .8rem; line-height: 1.35; color: var(--band-muted); margin-top: 2px; text-wrap: balance; }  /* wraps rather than cutting off ("161 three-star · 548 two-star · …") */
 
 section { padding-block: 56px; }
 section + section { border-top: 1px solid var(--line); }

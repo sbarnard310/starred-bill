@@ -52,5 +52,12 @@
   "bookingOpens": "Online through OpenTable. It's open for dinner only, Tuesday to Saturday, with tables from 7pm to 9:30pm.",
   "bookingUrl": "https://www.opentable.com/r/le-cinq-four-seasons-hotel-george-v-paris",
   "infoSource": "https://www.opentable.com/r/le-cinq-four-seasons-hotel-george-v-paris",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "priceHistory": [
+    {
+      "date": "2024-07",
+      "price": 595,
+      "source": "https://web.archive.org/web/20240718163824/https://fourseasons.com/paris/dining/menus/le-cinq-christian-le-squer/"
+    }
+  ]
 }

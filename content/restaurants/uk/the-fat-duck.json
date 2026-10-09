@@ -58,5 +58,37 @@
   "groups": "Private hire for up to 40 guests: email reservations@thefatduck.co.uk.",
   "infoSource": "https://thefatduck.co.uk/faqs",
   "infoChecked": "2026-10-09",
-  "servicePct": 15
+  "servicePct": 15,
+  "priceHistory": [
+    {
+      "date": "2011-11",
+      "price": 180,
+      "source": "https://web.archive.org/web/20111103052021/https://thefatduck.co.uk/faqs"
+    },
+    {
+      "date": "2013-01",
+      "price": 195,
+      "source": "https://web.archive.org/web/20130117214804/https://thefatduck.co.uk/faqs"
+    },
+    {
+      "date": "2015-01",
+      "price": 220,
+      "source": "https://web.archive.org/web/20150106184322/https://thefatduck.co.uk/faqs"
+    },
+    {
+      "date": "2016-01",
+      "price": 255,
+      "source": "https://web.archive.org/web/20160131010618/https://thefatduck.co.uk/faqs"
+    },
+    {
+      "date": "2018-01",
+      "price": 325,
+      "source": "https://web.archive.org/web/20180119112757/https://thefatduck.co.uk/faqs"
+    },
+    {
+      "date": "2020-05",
+      "price": 325,
+      "source": "https://web.archive.org/web/20200528025051/https://thefatduck.co.uk/faqs"
+    }
+  ]
 }

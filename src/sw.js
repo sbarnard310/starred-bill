@@ -43,8 +43,14 @@ self.addEventListener("fetch", (e) => {
   if (req.mode === "navigate") {
     // Pages: the latest version when online, the last saved copy when offline.
     // "no-cache" asks the server every time (instead of the browser's 10-minute copy), so updates show on the next open.
-    e.respondWith(fetch(req, { cache: "no-cache" }).then((res) => save(req, res))
-      .catch(() => caches.match(req, { ignoreSearch: true }).then((hit) => hit || caches.match("/"))));
+    // A failed fetch is tried once more as the browser asked for it (a blip, or a browser that refuses the "no-cache"
+    // copy of a page request), then falls back to this page's saved copy. The homepage stands in only when the browser
+    // is offline: online, the browser's own error shows (and a reload fixes it), never the homepage under another
+    // page's address, as happened to some visitors on 9 Oct 2026 while the site moved to Cloudflare.
+    e.respondWith(fetch(req, { cache: "no-cache" }).catch(() => fetch(req)).then((res) => save(req, res))
+      .catch(() => caches.match(req, { ignoreSearch: true })
+        .then((hit) => hit || (self.navigator && self.navigator.onLine === false ? caches.match("/") : null))
+        .then((hit) => hit || Response.error())));
     return;
   }
   // Styles, scripts and icons: their addresses change whenever their contents do, so a saved (checked) copy is always current.

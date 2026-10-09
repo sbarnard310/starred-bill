@@ -11,10 +11,10 @@
   "reviews": 1966,
   "dinner": 45,
   "dinnerType": "main",
-  "dinnerNote": "À la carte; mains about $32–$52",
+  "dinnerNote": "À la carte; mains about $32–$52, starters $17–$26",
   "sourceType": "site",
-  "source": "https://www.crownshy.nyc/menu/dinner/",
-  "lunchNote": "Open for lunch · Mon–Fri",
+  "source": "https://www.crownshy.nyc/menus/",
+  "lunchNote": "À la carte; mains about $27–$49 · Mon–Fri",
   "website": "https://www.crownshy.nyc/",
   "lat": 40.706707,
   "lng": -74.008721,
@@ -25,5 +25,16 @@
     "vegan"
   ],
   "chef": "Jassimran Singh",
-  "chefSource": "site"
+  "chefSource": "site",
+  "lunch": 34,
+  "lunchType": "main",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.crownshy.nyc/menus/",
+  "starsSince": 2019,
+  "bookingOpens": "Online on Resy, through the restaurant's website. Lunch Monday to Friday 11:30am–2pm; dinner every night from 5pm.",
+  "bookingUrl": "https://www.crownshy.nyc/reservations/",
+  "groups": "For private dining, see the restaurant's private dining page.",
+  "groupsUrl": "https://www.crownshy.nyc/private-dining/",
+  "infoSource": "https://www.crownshy.nyc/location/crown-shy/",
+  "infoChecked": "2026-10-09"
 }

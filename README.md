@@ -103,6 +103,8 @@ Restaurant pages have no separate FAQ: the questions people search are the page'
 | `bookingOpens`, `bookingPhone`, `bookingUrl`, `cancellation`, `walkIns`, `groups`, `groupsUrl` | "How to book at …": when tables are released, the phone number with its hours, the booking page (Resy, Tock, OpenTable… are named on the button), the cancellation rule, eating without a booking, and groups or private events with their inquiries page. Plain sentences from the restaurant's own website |
 | `hotel` | the hotel it's in, mid-sentence ("the Rome Cavalieri, a Waldorf Astoria hotel"), shown under the heading and in the facts |
 | `alsoTry` | sister venues that serve its cooking for less, each with `name`, optional `price`, `note` and `url` (Francescana at Maria Luigia), listed under the cheaper ways in |
+| `noBookings`, `queue` | for places that take no reservations (InterStellar BBQ): "How to book" becomes "Can you book a table at …? No.", with `queue` (when to arrive) and `walkIns` (ordering ahead) as its steps |
+| `byob` | whether you can bring your own wine, and on what terms, shown as "Can you bring your own wine to …?" |
 | `waitlist` | how its waiting list works, an extra step in "How to book" |
 | `duration` | how long a meal takes, shown as "How long does a meal at … take?" |
 | `servicePct` | its own service charge where it differs from the country's usual one (The Fat Duck 15%; Atelier Crenn 32% with its surcharge and sales tax) |

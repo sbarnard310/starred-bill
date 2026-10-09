@@ -9,16 +9,14 @@
   "cuisineZh": "美國菜",
   "rating": 4.7,
   "reviews": 1465,
-  "dinner": 278,
+  "dinner": 458,
   "dinnerType": "menu",
-  "dinnerNote": "Multi-course farm menu",
-  "wine": 168,
+  "dinnerNote": "Multi-taste feast from the farm, no set menu; prepaid, plus tax and a 22% administrative fee",
   "sourceType": "site",
   "source": "https://www.bluehillfarm.com/faq",
-  "lunch": 278,
+  "lunch": 458,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Sundays",
-  "lunchWine": 168,
+  "lunchNote": "The same feast at lunch",
   "lunchSourceType": "site",
   "lunchSource": "https://www.bluehillfarm.com/faq",
   "website": "https://www.bluehillfarm.com/",
@@ -31,5 +29,33 @@
     "vegan"
   ],
   "chef": "Dan Barber",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "servicePct": 30,
+  "menus": [
+    {
+      "name": "Multi-taste feast",
+      "meal": "dinner",
+      "price": 458,
+      "note": "No menu: the best of the field and market; most bookings start with a walking tour of the farm; prepaid when you book, drinks paid on the day"
+    }
+  ],
+  "menusSource": "https://www.bluehillfarm.com/faq",
+  "menusChecked": "2026-10-09",
+  "alsoTry": [
+    {
+      "name": "Blue Hill Cafeteria at Stone Barns",
+      "note": "The farm's cafeteria, also booked on Tock and suggested for families with children",
+      "url": "https://www.bluehillfarm.com/faq"
+    }
+  ],
+  "dressCode": "Elegant: jackets are recommended but not required, and shorts are strongly discouraged. Closed-toe shoes are suggested for walking round the farm.",
+  "children": "The length of the meal makes it hard for young children to enjoy, and there's no children's menu; families are encouraged to try Blue Hill Cafeteria instead.",
+  "bookingOpens": "On Tock only. Tables are released one month at a time on the 15th of the month before.",
+  "bookingUrl": "https://www.exploretock.com/bluehillatstonebarns",
+  "waitlist": "If your day or time is full, join the waiting list on Tock.",
+  "cancellation": "All sales are final: bookings are prepaid and can't be cancelled. Gratuities aren't accepted; the 22% administrative fee replaces them.",
+  "groups": "The private dining room seats up to 12 and is booked on Tock; for 20 or more, call 914-366-9606 ext. 226.",
+  "byob": "You can bring wines that aren't on the wine list: one 750ml bottle per two guests, at $150 a bottle.",
+  "infoSource": "https://www.bluehillfarm.com/faq",
+  "infoChecked": "2026-10-09"
 }

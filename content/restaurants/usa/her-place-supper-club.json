@@ -11,7 +11,7 @@
   "reviews": 263,
   "dinnerType": "menu",
   "dinner": 110,
-  "dinnerNote": "Tasting menu (other menus from $85)",
+  "dinnerNote": "Multi-course set menu, the only option; changes every three weeks",
   "sourceType": "site",
   "source": "https://www.herplacephilly.com/menu/",
   "noLunch": true,
@@ -22,5 +22,26 @@
   "placeId": "ChIJMW-WlpXHxokRw9Sf2FaFXjE",
   "michelinId": "1213705",
   "chef": "Amanda Shulman",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 85,
+  "menus": [
+    {
+      "name": "Set menu",
+      "meal": "dinner",
+      "price": 110,
+      "wine": 85,
+      "note": "The only option, about seven courses leaning French and Italian, changing every three weeks; no substitutions or dietary changes"
+    }
+  ],
+  "menusSource": "https://www.herplacephilly.com/menu/",
+  "menusChecked": "2026-10-09",
+  "bookingOpens": "Tables are released on OpenTable at 6pm Eastern time on the third Sunday of each month, for the following month (the next release, on Sunday 18 October 2026, covers November). It's reservation only, Monday to Friday, with two seatings, at 6pm and 8:30pm. Use the OpenTable app, sign in and save your card beforehand: you get 5 minutes to finish booking.",
+  "bookingUrl": "https://www.opentable.com/booking/restref/availability?restRef=1209262&lang=en-US",
+  "waitlist": "If tables go quickly, join OpenTable's Notify Me list for your time.",
+  "cancellation": "A card holds the table but isn't charged in advance. Cancel through OpenTable at least 48 hours ahead for free; later, or if you don't turn up, it's the full $110 a head plus 20% gratuity and tax. You pay for the number booked, even if fewer come.",
+  "groups": "Tables are for up to 6, with 20% gratuity added for 5 or 6. Larger groups can buy out a seating or the whole restaurant.",
+  "groupsUrl": "https://www.herplacephilly.com/private-dining/",
+  "byob": "Outside bottles aren't allowed; there's a wine list, cocktails, beer and alcohol-free drinks.",
+  "infoSource": "https://www.herplacephilly.com/about/",
+  "infoChecked": "2026-10-09"
 }

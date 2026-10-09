@@ -11,7 +11,7 @@
   "reviews": 991,
   "dinner": 225,
   "dinnerType": "menu",
-  "dinnerNote": "Seasonal tasting menu",
+  "dinnerNote": "Fall tasting menu, built around Colorado corn and wood-fired cooking",
   "sourceType": "press",
   "source": "https://www.opentable.com/r/the-wolfs-tailor-denver",
   "noLunch": true,
@@ -22,5 +22,20 @@
   "placeId": "ChIJgZlxHYt4bIcRbUoKhywj5CE",
   "michelinId": "1205487",
   "chef": "Taylor Stark",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Fall tasting menu",
+      "meal": "dinner",
+      "price": 225,
+      "note": "No changes for dietary restrictions or dislikes, only severe allergies, and this menu can't avoid corn, sunflower, sesame, ginger, allium, nightshade, soy or mushroom"
+    }
+  ],
+  "menusSource": "https://www.opentable.com/r/the-wolfs-tailor-denver",
+  "menusChecked": "2026-10-09",
+  "bookingOpens": "Online on OpenTable, or by phone. Open Tuesday to Sunday, 5pm to 8:30pm; closed Mondays. There's seating in the dining room, the garden or a private heated tent.",
+  "bookingUrl": "https://www.opentable.com/r/the-wolfs-tailor-denver",
+  "bookingPhone": "720-456-6705",
+  "infoSource": "https://www.thewolfstailor.com/",
+  "infoChecked": "2026-10-09"
 }

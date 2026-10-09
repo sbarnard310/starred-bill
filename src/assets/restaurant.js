@@ -162,7 +162,7 @@ startMapWhenNear();
 const CUR_KEY = "starredbill-rp-currency";
 const pageCur = DATA.cur;
 const symbolFor = (c) => c === "USD" ? "$" : symbolOf(c);
-const priceRe = new RegExp("(^|[^A-Za-z])(" + symbolFor(pageCur).replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "[\\u00a0 ]") + ")([0-9][0-9,]*(?:\\.[0-9]+)?)", "g");
+const priceRe = new RegExp("(^|[^A-Za-z])(" + symbolFor(pageCur).replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "[\\u00a0 ]") + ")([0-9]+(?:,[0-9]{3})*(?:\\.[0-9]+)?)", "g");
 const priced = [];
 function collectPrices() {
   const roots = [document.querySelector(".rp-hero"), $("restaurantMain")];

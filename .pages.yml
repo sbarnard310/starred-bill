@@ -746,6 +746,9 @@ content:
           - { name: note, label: Note, type: text }
           - { name: url, label: Link, type: string }
       - { name: waitlist, label: How the waiting list works, type: text }
+      - { name: noBookings, label: Takes no reservations, type: boolean }
+      - { name: queue, label: When to arrive (for places that take no bookings), type: text }
+      - { name: byob, label: Bringing your own wine, type: text }
       - { name: duration, label: How long a meal takes, type: string }
       - { name: servicePct, label: Its own service charge in % (if not the country's usual), type: number }
       - { name: bookingOpens, label: When tables are released, type: text }

@@ -525,7 +525,7 @@ for _p in pages:
 
 
 # Fields only a restaurant's own page shows (build_restaurant_pages()), kept out of destination pages' data.
-PAGE_ONLY = ("servicePct", "hotel", "alsoTry", "waitlist", "duration", "menus", "menusSource", "menusChecked", "priceHistory", "starsSince", "dressCode", "bookingOpens", "bookingPhone", "bookingUrl",
+PAGE_ONLY = ("noBookings", "queue", "byob", "servicePct", "hotel", "alsoTry", "waitlist", "duration", "menus", "menusSource", "menusChecked", "priceHistory", "starsSince", "dressCode", "bookingOpens", "bookingPhone", "bookingUrl",
              "walkIns", "groups", "groupsUrl", "cancellation",
              "children", "infoSource", "infoChecked")
 
@@ -6110,7 +6110,10 @@ RESTAURANT_PAGES = ("le-bernardin", "la-pergola", "restaurant-gordon-ramsay", "o
                     "the-fat-duck", "el-celler-de-can-roca", "the-ledbury", "atelier-crenn",
                     # Batch 2, 9 Oct 2026
                     "piazza-duomo", "martin-berasategui", "les-amis", "villa-crespi", "alain-ducasse-at-the-dorchester", "de-librije",
-                    "quique-dacosta", "sushi-sho", "enoteca-pinchiorri", "kadeau-copenhagen")
+                    "quique-dacosta", "sushi-sho", "enoteca-pinchiorri", "kadeau-copenhagen",
+                    # Batch 3, 9 Oct 2026: the most-searched in the US, and Le Jules Verne
+                    "interstellar-bbq", "cote-miami", "crown-shy", "her-place-supper-club", "blue-hill-at-stone-barns", "the-wolfs-tailor",
+                    "the-inn-at-little-washington", "the-modern", "lazy-bear", "le-jules-verne")
 # The owner's rule (9 Oct 2026): at most 10 questions per page, and none that repeats what the page already says. On a
 # restaurant page the questions are its own section headings, each with its answer straight under it; the structured data
 # (FAQPage) lists them, most-asked first.
@@ -6207,7 +6210,8 @@ def cheapest_menu(r):
 
 # First words that are ordinary words, lower-cased mid-sentence ("the tasting menu"); a name ("Harmonie tasting menu",
 # "Alba white truffle menu") keeps its capital.
-MENU_WORDS = {"tasting", "lunch", "dinner", "prix", "menu", "vegetarian", "festive", "seasonal", "gourmet", "à"}
+MENU_WORDS = {"tasting", "lunch", "dinner", "prix", "menu", "set", "multi-taste", "vegetarian", "festive", "seasonal", "gourmet", "à",
+              "spring", "summer", "fall", "autumn", "winter"}
 
 
 def menu_label(m):
@@ -6313,7 +6317,8 @@ def cheaper_html(r, peers_place, peers, live):
     d = r.get("dinner")
     items = []
     menus = [m for m in r.get("menus", []) if d is not None and m["price"] < d and not m.get("plus")]
-    if not menus and r.get("lunch") is not None and d is not None and r["lunch"] < d and not r.get("noLunch"):
+    if not menus and r.get("lunch") is not None and d is not None and r["lunch"] < d and not r.get("noLunch") \
+            and r.get("dinnerType", "menu") == "menu" and r.get("lunchType", "menu") == "menu":
         menus = [{"name": "Lunch", "meal": "lunch", "price": r["lunch"], "note": r.get("lunchNote", "")}]
     main = the_menu(main_menu(r)) if main_menu(r) else "the dinner menu"
     for m in sorted(menus, key=lambda m: m["price"]):
@@ -6365,6 +6370,16 @@ def book_html(r):
     if not (r.get("bookingOpens") or r.get("bookingUrl") or r.get("bookingPhone")):
         return "", []
     name = r["name"]
+    if r.get("noBookings"):
+        q = f"Can you book a table at {name}?"
+        a = "No. " + (r.get("bookingOpens") or "")
+        steps = [(k, e(r[f])) for k, f in (("When to arrive", "queue"), ("Order ahead", "walkIns")) if r.get(f)]
+        if r.get("groups"):
+            steps.append(("Groups and private events", e(r["groups"]) + (f' <a href="{e(r["groupsUrl"])}">More about groups</a>' if r.get("groupsUrl") else "")))
+        return ('<section id="book">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Booking</span>'
+                f'<h2 style="margin-top: 6px">{e(q)}</h2><p>{e(a)}</p></div></div>\n'
+                '    <ol class="rp-steps">' + "".join(f"<li><strong>{e(k)}</strong><span>{v}</span></li>" for k, v in steps) + "</ol>\n"
+                f"    {info_note(r)}\n  </div>\n</section>\n"), [(q, a)]
     via = booking_site(r["bookingUrl"]) if r.get("bookingUrl") else None
     phone = (r.get("bookingPhone") or "").split(" (")[0]
     how = [x for x in (f"online on {via}" if via else "online" if r.get("bookingUrl") else "", f"by phone on {phone}" if phone else "") if x]
@@ -6404,6 +6419,8 @@ def before_html(r):
         add(f"Can you take children to {r['name']}?", r["children"])
     if r.get("duration"):
         add(f"How long does a meal at {r['name']} take?", r["duration"])
+    if r.get("byob"):
+        add(f"Can you bring your own wine to {r['name']}?", r["byob"])
     if not blocks:
         return "", []
     if hours_lines(r):
@@ -6412,7 +6429,7 @@ def before_html(r):
             '<p class="rp-hours-list">' + "".join(f'<span class="rp-hours"><b>{e(d)}</b> {e(h)}</span>' for d, h in hours_lines(r)) + "</p>"
             + f'<p class="rp-note">{"Hours" if timed else "Days"} from the MICHELIN Guide, {e(month_year(HOURS_CHECKED[:7], "en"))}; check before you go, as they change on holidays.</p>')
     return ('<section id="visit">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Before you go</span>'
-            f'<h2 style="margin-top: 6px">{e(sentence_case(and_list([x for x, k in (("dress code", "dressCode"), ("children", "children"), ("how long it takes", "duration")) if r.get(k)] + (["opening hours"] if hours_lines(r) else []))))} at {e(r["name"])}</h2></div></div>\n'
+            f'<h2 style="margin-top: 6px">{e(sentence_case(and_list([x for x, k in (("dress code", "dressCode"), ("children", "children"), ("how long it takes", "duration"), ("drinks", "byob")) if r.get(k)] + (["opening hours"] if hours_lines(r) else []))))} at {e(r["name"])}</h2></div></div>\n'
             '    <div class="faq rp-qa">' + "".join(blocks) + f"</div>\n    {info_note(r)}\n  </div>\n</section>\n"), qa
 
 
@@ -6511,7 +6528,7 @@ def restaurant_answer(r, stay):
             out.append(f"{sentence_case(the_menu(main)) if main else 'The dinner tasting menu'} at {name} costs {m(d)}{usd_after(d, cur)} per person"
                        + (f", or {m(d + w)} with the wine pairing." if w else "; there’s no wine pairing." if r.get("noPairing") else "."))
         elif dtype == "main":
-            out.append(f"Main courses at {name} cost about {m(d)}{usd_after(d, cur)} at dinner.")
+            out.append(f"Main courses at {name} cost about {m(d)}{usd_after(d, cur)}" + (f" ({r['dinnerNote'][:1].lower() + r['dinnerNote'][1:]})." if r.get("dinnerNote") else "."))
         else:
             out.append(f"A typical dinner at {name} costs about {m(d)}{usd_after(d, cur)} per person.")
     else:
@@ -6519,8 +6536,13 @@ def restaurant_answer(r, stay):
     if r.get("noLunch"):
         out.append("It’s open for dinner only.")
     elif lunch is not None:
-        out.append(f"{'Lunch' if d is not None else 'Lunch there'} is {m(lunch)}" + (f" ({m(lunch + r['lunchWine'])} with wine)" if r.get("lunchWine") else "")
-                   + (", the cheaper way in." if d is not None and lunch < d and not cheapest else "."))
+        if r.get("lunchType") == "main":
+            out.append(f"At lunch, main courses are about {m(lunch)}.")
+        elif lunch == d and not r.get("lunchWine"):
+            out.append("Lunch costs the same.")
+        else:
+            out.append(f"{'Lunch' if d is not None else 'Lunch there'} is {m(lunch)}" + (f" ({m(lunch + r['lunchWine'])} with wine)" if r.get("lunchWine") else "")
+                       + (", the cheaper way in." if d is not None and lunch < d and not cheapest else "."))
     if cheapest:
         out.append(f"The cheapest way in is {the_menu(cheapest)}, at {m(cheapest['price'])}.")
     if d is not None and dtype in ("menu", "spend"):
@@ -6787,7 +6809,7 @@ def build_restaurant_pages():
             if m.get("wine"):
                 pay_rows.append(bill_row(m["name"] + " with wine pairing", m["price"] + m["wine"]))
         if d is not None and not r.get("menus"):
-            dlabel = "Dinner menu" if r.get("dinnerType", "menu") == "menu" else "Dinner, a main course" if r["dinnerType"] == "main" else "Dinner, typical spend"
+            dlabel = "Dinner menu" if r.get("dinnerType", "menu") == "menu" else "A main course" if r["dinnerType"] == "main" else "Dinner, typical spend"
             pay_rows.append(bill_row(dlabel, d, r.get("dinnerNote", "")))
             if w and r.get("dinnerType", "menu") == "menu":
                 pay_rows.append(bill_row("Dinner menu with wine pairing", d + w))
@@ -6803,8 +6825,10 @@ def build_restaurant_pages():
         if r.get("menusSource"):
             sources = [("Menus", r["menusSource"], "site")]
         cost_q = f"How much does {r['name']} cost?"
-        priced = sorted(r.get("menus") or [m for m in ({"name": "lunch", "price": lunch} if lunch is not None and not r.get("noLunch") else None,
-                                                       {"name": (main_menu(r) or {}).get("name", "dinner menu"), "price": d} if d is not None else None) if m], key=lambda m: m["price"])
+        main_m = main_menu(r)
+        priced = sorted(r.get("menus") or [m for m in ({"name": "lunch", "price": lunch} if lunch is not None and not r.get("noLunch") and r.get("lunchType", "menu") == "menu" else None,
+                                                       {"name": "dinner menu", "price": d} if d is not None and r.get("dinnerType", "menu") == "menu" else None) if m],
+                        key=lambda m: (m["price"], m is main_m))
         priced = [m for m in priced if not m.get("plus")] or priced
         cost_lead = ((f"From {money(priced[0]['price'], cur)} for {the_menu(priced[0])} to {money(priced[-1]['price'], cur)} for {the_menu(priced[-1])}, per person "
                       if priced[0]["price"] != priced[-1]["price"] else f"{money(priced[0]['price'], cur)} for any of its menus, per person ")

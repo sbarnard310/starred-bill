@@ -11,13 +11,13 @@
   "reviews": 2814,
   "dinner": 285,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu (3-course prix fixe $115)",
+  "dinnerNote": "Abstractions tasting menu (shorter Impressions menu $185)",
   "wine": 195,
   "sourceType": "site",
   "source": "https://www.themodernnyc.com/the-modern/",
   "lunch": 115,
   "lunchType": "menu",
-  "lunchNote": "Three-course prix fixe at lunch (tasting menu $285)",
+  "lunchNote": "Three-course prix fixe (8-course tasting menu $285)",
   "lunchSourceType": "site",
   "lunchSource": "https://www.themodernnyc.com/the-modern/",
   "website": "https://www.themodernnyc.com/the-modern/",
@@ -31,5 +31,48 @@
     "gluten-free"
   ],
   "chef": "Thomas Allan",
-  "chefSource": "site"
+  "chefSource": "site",
+  "lunchWine": 85,
+  "menus": [
+    {
+      "name": "Abstractions tasting menu",
+      "meal": "dinner",
+      "price": 285,
+      "wine": 195,
+      "note": "The longer signature menu; Discovery pairing $195, Reserve pairing $350"
+    },
+    {
+      "name": "Impressions tasting menu",
+      "meal": "dinner",
+      "price": 185,
+      "note": "A shorter, more adventurous menu"
+    },
+    {
+      "name": "Eight-course lunch tasting menu",
+      "meal": "lunch",
+      "price": 285,
+      "wine": 195,
+      "courses": 8
+    },
+    {
+      "name": "Three-course lunch prix fixe",
+      "meal": "lunch",
+      "price": 115,
+      "wine": 85,
+      "courses": 3
+    }
+  ],
+  "menusSource": "https://www.themodernnyc.com/the-modern/",
+  "menusChecked": "2026-10-09",
+  "alsoTry": [
+    {
+      "name": "The Bar Room at The Modern",
+      "note": "The restaurant's more casual bar room, with its own menu",
+      "url": "https://www.themodernnyc.com/the-modern/"
+    }
+  ],
+  "bookingOpens": "Online on Resy, through the restaurant's website. The Kitchen Table, inside the kitchen, seats up to four with an enhanced tasting menu at lunch or dinner.",
+  "bookingUrl": "https://www.themodernnyc.com/reservations-11",
+  "infoSource": "https://www.themodernnyc.com/the-modern/",
+  "infoChecked": "2026-10-09"
 }

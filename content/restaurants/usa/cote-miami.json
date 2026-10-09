@@ -10,10 +10,10 @@
   "reviews": 3090,
   "dinner": 82,
   "dinnerType": "menu",
-  "dinnerNote": "Butcher's Feast set menu",
+  "dinnerNote": "Butcher's Feast: four cuts of Prime and Wagyu beef with Korean sides (Steak Omakase $225)",
   "dinnerNoteZh": "肉舖饗宴套餐",
-  "sourceType": "press",
-  "source": "https://resident.com/food-and-drink/2025/05/16/a-cut-above-inside-the-sizzling-spectacle-of-cote-miamis-butchers-feast",
+  "sourceType": "site",
+  "source": "https://www.cotekoreansteakhouse.com/miamidinnermenu",
   "lunchNote": "Open for lunch",
   "website": "https://cotemiami.com/",
   "lat": 25.812906,
@@ -21,5 +21,29 @@
   "placeId": "ChIJT8zbHlex2YgRbmlvb54NTIY",
   "michelinId": "1197315",
   "chef": "David Shim",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Steak Omakase",
+      "meal": "dinner",
+      "price": 225,
+      "wine": 110,
+      "note": "'The Grand Tour' of the steakhouse's cuts"
+    },
+    {
+      "name": "Butcher's Feast",
+      "meal": "dinner",
+      "price": 82,
+      "note": "Four cuts of USDA Prime and American Wagyu, egg soufflé, two stews with rice and soft serve; add 1oz of Japanese A5 Wagyu for $32"
+    }
+  ],
+  "menusSource": "https://www.cotekoreansteakhouse.com/miamidinnermenu",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2022,
+  "bookingOpens": "Online on Resy, by phone (reservationists 12pm–10pm daily) or by email to reservation@cotemiami.com. Lunch is served daily, 12pm–2:45pm.",
+  "bookingUrl": "https://resy.com/cities/miami-fl/venues/cote-mia",
+  "groups": "For events and private dining, use the events page.",
+  "groupsUrl": "https://www.cotekoreansteakhouse.com/events",
+  "infoSource": "https://www.cotekoreansteakhouse.com/",
+  "infoChecked": "2026-10-09"
 }

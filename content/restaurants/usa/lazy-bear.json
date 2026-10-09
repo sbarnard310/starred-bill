@@ -10,11 +10,11 @@
   "reviews": 1211,
   "dinner": 320,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Tasting menu, sold as tickets; drinks, service charge and tax extra",
   "wine": 175,
   "dinnerNoteZh": "品嚐套餐",
-  "sourceType": "press",
-  "source": "https://www.exploretock.com/lazybear",
+  "sourceType": "site",
+  "source": "https://www.lazybearsf.com/tickets/",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.lazybearsf.com/",
@@ -26,5 +26,22 @@
     "vegetarian"
   ],
   "chef": "David Barzelay",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 320,
+      "wine": 175,
+      "note": "Many courses, changing with the seasons; most dietary restrictions can be met, but butter can't be left out"
+    }
+  ],
+  "menusSource": "https://www.lazybearsf.com/tickets/",
+  "menusChecked": "2026-10-09",
+  "duration": "About two and a half hours.",
+  "bookingOpens": "Dinners are sold as tickets on Tock, released at 10am Pacific time on the 15th of each month for the whole of the following month (November's go on sale on 15 October). Dinner is Tuesday to Saturday, 5pm to 9pm, for 1 to 6 people.",
+  "bookingUrl": "https://www.exploretock.com/lazybearsf/",
+  "cancellation": "Tickets can't be refunded, but you can pass them to someone else. Arrive on time, as latecomers may miss courses; if you'll be more than 10 minutes late, call (415) 874-9921.",
+  "infoSource": "https://www.lazybearsf.com/tickets/",
+  "infoChecked": "2026-10-09"
 }

@@ -8,7 +8,7 @@
   "reviews": 2231,
   "dinner": 42,
   "dinnerType": "main",
-  "dinnerNote": "Barbecue by weight; brisket $42 a pound",
+  "dinnerNote": "Barbecue by the pound: brisket and short rib $42, pulled lamb $36, sausages $30; sides from $10",
   "noPairing": true,
   "sourceType": "site",
   "source": "https://www.toasttab.com/local/order/interstellarbbq",
@@ -19,5 +19,14 @@
   "placeId": "ChIJneGxbHszW4YRTjsORksF0Xw",
   "michelinId": "1209381",
   "chef": "John Bates",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "noBookings": true,
+  "bookingOpens": "InterStellar BBQ takes no reservations: there's one queue for eating in and same-day takeaway. It's open Wednesday to Sunday from 11am to 4pm, or until it sells out.",
+  "queue": "People start queuing around 10am on weekdays and 9:30am at weekends (from 8am on holiday weekends). To get the full menu, arrive at about 10–10:15am on a weekday or 9:15–9:45am at the weekend, and no later than 10:30am. Popular meats start selling out between 1:30pm and 2pm.",
+  "walkIns": "You can pre-order online for pickup instead of queuing; the link is on the restaurant's home page.",
+  "groups": "Order and pay before taking a table; please don't hold places in the queue for a big group. For 50 or more, there's catering and private hire.",
+  "groupsUrl": "https://www.theinterstellarbbq.com/catering",
+  "byob": "No alcohol is sold, but if you're 21 or over, with ID, you can bring your own.",
+  "infoSource": "https://www.theinterstellarbbq.com/faq",
+  "infoChecked": "2026-10-09"
 }

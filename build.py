@@ -2883,6 +2883,7 @@ def guide_stats():
     stats.update(popular_stats())
     stats.update(chef_stats(live))
     stats.update(diet_stats(live))
+    stats.update(veg_stats(live))
     stats.update(cheap_stats(live))
     stats.update(gone_stats())
     return stats
@@ -3130,6 +3131,148 @@ def diet_blocks(live, name_html, stars_cell, price_cell, note):
             blocks[f"diet-{tag}-{pid}"] = (f'<div class="table-wrap"><table class="guide-table data"><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>'
                                            + note(caveat + " Names open each restaurant’s prices on The Starred Bill and arrows its MICHELIN Guide page. "
                                                   "Prices per person before service and drinks; lunch is the cheapest set lunch, where there is one."))
+    return blocks
+
+
+# The vegan and vegetarian guide (9 Oct 2026). Meat-free restaurants are those the MICHELIN Guide files under a vegetarian
+# or vegan cuisine (`vegetarian-only`, or a cuisine naming it), plus VEG_ALSO, less VEG_NOT; then the guide's diet tags:
+# "Vegetarian menu" (`vegetarian-menu`), "Vegan options" (`vegan`) and "Vegetarian options" (`vegetarian`).
+VEG_CUISINE = re.compile(r"vegetarian|vegan|shojin", re.I)
+# What a meat-free restaurant serves, where the cuisine alone would mislead (checked 9 Oct 2026 on their sites and in the press).
+VEG_ALSO = {"arpege": "Plant-based since July 2025 (honey its only animal product)",
+            "de-nieuwe-winkel": "Plant-based"}
+VEG_NOT = {"choux": "mostly vegetables, with some game and shellfish",
+           "bolenius-rembrandtpark": "a Pure Plant menu beside a Dutch menu with lamb and fish"}
+VEG_SERVES = {"oyster-oyster": "Vegetarian or vegan, oysters optional", "fields-by-rene-mathieu": "Plant-based",
+              "mita": "Plant-based", "daigo": "Shōjin ryōri (Buddhist vegetarian)", "avatara": "Vegetarian (Indian)"}
+VEG_LISTS = ("london",)        # {{table:veg-london}}: every starred restaurant there with a vegetarian menu or vegan options
+VEG_CITIES_MAX = 15            # rows in {{table:veg-cities}}
+
+
+def meat_free(r):
+    if r["id"] in VEG_NOT:
+        return False
+    return r["id"] in VEG_ALSO or "vegetarian-only" in (r.get("diets") or []) or bool(VEG_CUISINE.search(r.get("cuisine") or ""))
+
+
+def veg_serves(r):
+    """"Vegan", "Vegetarian" or a hand-written note for the meat-free table."""
+    if r["id"] in VEG_ALSO or r["id"] in VEG_SERVES:
+        return VEG_ALSO.get(r["id"]) or VEG_SERVES[r["id"]]
+    return "Vegan" if re.search(r"vegan", r.get("cuisine") or "", re.I) else "Vegetarian"
+
+
+def veg_stats(live):
+    """Figures for the vegan and vegetarian guide: {{vegFree}} (meat-free starred restaurants), {{vegFreeSplit}},
+    {{vegFreeCountries}}, {{vegFreeVegan}} (of them vegan or plant-based), {{vegMenu}}/{{vegMenuPct}}/{{vegMenu1}}–{{vegMenu3}}
+    (a vegetarian tasting menu), {{vegan}}/{{veganPct}}/{{vegan3}} (vegan options), {{vegOpt}}/{{vegOptPct}} (vegetarian options),
+    {{vegAny}} (any of these), {{vegCheapName}}/{{vegCheapPrice}}/{{vegCheapPlace}} (the cheapest meat-free tasting menu), and per
+    place {{vegMenu_<id>}}, {{vegan_<id>}}, {{vegAny_<id>}}, {{vegBoth_<id>}} (menu and vegan options) and {{vegFree_<id>}}."""
+    has = lambda r, d: d in (r.get("diets") or [])
+    free = [r for r in live if meat_free(r)]
+    menu = [r for r in live if has(r, "vegetarian-menu") or (meat_free(r) and r.get("dinnerType", "menu") == "menu")]
+    vegan = [r for r in live if has(r, "vegan")]
+    opt = [r for r in live if has(r, "vegetarian")]
+    anyv = [r for r in live if meat_free(r) or has(r, "vegetarian-menu") or has(r, "vegan") or has(r, "vegetarian")]
+    pct = lambda rows, of: f"{round(100 * len(rows) / max(1, len(of)))}%"
+    c = [sum(1 for r in free if r["stars"] == n) for n in (1, 2, 3)]
+    out = {"vegFree": str(len(free)), "vegFreeSplit": star_split(c), "vegFreeCountries": str(len({r["country"] for r in free})),
+           "vegFreeVegan": str(sum(1 for r in free if veg_serves(r).startswith(("Vegan", "Plant-based")))),
+           "vegMenu": f"{len(menu):,}", "vegMenuPct": pct(menu, live), "vegan": f"{len(vegan):,}", "veganPct": pct(vegan, live),
+           "vegOpt": f"{len(opt):,}", "vegOptPct": pct(opt, live), "vegAny": f"{len(anyv):,}", "vegAnyPct": pct(anyv, live)}
+    for n in (1, 2, 3):
+        at = [r for r in live if r["stars"] == n]
+        out[f"vegMenu{n}"] = str(sum(1 for r in menu if r["stars"] == n))
+        out[f"vegMenuPct{n}"] = pct([r for r in menu if r["stars"] == n], at)
+        out[f"vegan{n}"] = str(sum(1 for r in vegan if r["stars"] == n))
+    usd = lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"]
+    priced = sorted((r for r in free if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=usd)
+    if priced:
+        r = priced[0]
+        out.update({"vegCheapName": r["name"], "vegCheapPlace": place_name(r),
+                    "vegCheapPrice": money(r["dinner"], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(usd(r))})")})
+    for key, rows in (("vegMenu", menu), ("vegan", vegan), ("vegAny", [r for r in live if has(r, "vegetarian-menu") or has(r, "vegan") or meat_free(r)]),
+                      ("vegBoth", [r for r in menu if has(r, "vegan")]), ("vegFree", free)):
+        for r in rows:
+            for p in set(r["_chain"]):
+                k = f"{key}_{p.replace('-', '_')}"
+                out[k] = str(int(out.get(k, "0")) + 1)
+    return out
+
+
+def veg_blocks(live, name_html, stars_cell, price_cell, note):
+    """{{table:veg-free}} (every meat-free starred restaurant), {{table:veg-cities}} (the cities with the most vegetarian tasting
+    menus), {{table:veg-3}} (three-star restaurants with one) and {{table:veg-london}} (every starred restaurant in a VEG_LISTS
+    place with a vegetarian menu or vegan options)."""
+    has = lambda r, d: d in (r.get("diets") or [])
+    tick = lambda ok: '<span aria-label="Yes">✓</span>' if ok else '<span class="muted" aria-label="Not listed">–</span>'
+    table = lambda heads, body: ('<div class="table-wrap"><table class="guide-table data"><thead><tr>'
+                                 + "".join(f'<th scope="col">{h}</th>' for h in heads) + f'</tr></thead><tbody>{body}</tbody></table></div>')
+    where = lambda r: (f'<a href="{e(r["cityPath"])}">{e(diet_city(r))}</a>, {e(places[r["country"]]["name"])}')
+    blocks = {}
+    free = sorted((r for r in live if meat_free(r)), key=lambda r: (-r["stars"], places[r["country"]]["name"], r["name"].lower()))
+    body = "".join(f'<tr><td data-label="Restaurant">{name_html(r)}</td><td data-label="Stars">{stars_cell(r["stars"])}</td>'
+                   f'<td data-label="Where">{where(r)}</td><td data-label="Serves">{e(veg_serves(r))}</td>'
+                   f'<td data-label="Head chef">{e(r.get("chef") or "–")}</td>'
+                   f'<td class="num" data-label="Tasting menu, per person">{price_cell(r)}</td></tr>' for r in free)
+    blocks["veg-free"] = table(("Restaurant", "Stars", "Where", "Serves", "Head chef", "Tasting menu, per person"), body) + note(
+        "Starred restaurants that serve no meat or fish: those the MICHELIN Guide lists under a vegetarian or vegan cuisine, plus Arpège and "
+        "De Nieuwe Winkel, which went plant-based without the guide changing their label. We leave out Choux and Bolenius in Amsterdam, which the guide "
+        "files as vegetarian but which serve some meat or fish. Most stars first, then by country. Names open each restaurant’s prices on The Starred Bill "
+        "and arrows its MICHELIN Guide page. Prices are the main dinner tasting menu per person in local currency, before service and drinks, "
+        "with US dollars at recent exchange rates; mainland China’s are typical spends.")
+
+    menu = lambda r: has(r, "vegetarian-menu") or (meat_free(r) and r.get("dinnerType", "menu") == "menu")
+    cities = {}
+    for r in live:
+        if menu(r):
+            cities.setdefault(diet_city(r), []).append(r)
+    usd = lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"]
+    top = sorted(cities.items(), key=lambda kv: (-len(kv[1]), -sum(r["stars"] for r in kv[1]), kv[0]))[:VEG_CITIES_MAX]
+    body = ""
+    for city, rs in top:
+        pages = [{p for p in r["_chain"] if places[p]["name"] == city} for r in rs]
+        shared = set.intersection(*pages)
+        name = f'<a href="{e(places[sorted(shared)[0]]["path"])}">{e(city)}</a>' if shared else e(city)
+        all_here = [r for r in live if diet_city(r) == city and r["country"] == rs[0]["country"]]
+        priced = sorted((r for r in rs if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=usd)
+        cheapest = f'{price_cell(priced[0])}<br><span class="muted">{e(priced[0]["name"])}</span>' if priced else '<span class="muted">–</span>'
+        body += (f'<tr><td data-label="City">{name}</td><td data-label="Country">{e(places[rs[0]["country"]]["name"])}</td>'
+                 f'<td class="num" data-label="Vegetarian menus"><strong>{len(rs)}</strong> <span class="muted">of {len(all_here)}</span></td>'
+                 f'<td class="num" data-label="Vegan options">{sum(1 for r in all_here if has(r, "vegan"))}</td>'
+                 f'<td class="num" data-label="Meat-free">{sum(1 for r in all_here if meat_free(r))}</td>'
+                 f'<td class="num" data-label="Lowest tasting menu">{cheapest}</td></tr>')
+    blocks["veg-cities"] = table(("City", "Country", "Vegetarian menus", "Vegan options", "Meat-free", "Lowest tasting menu"), body) + note(
+        "The towns and cities with the most starred restaurants offering a vegetarian tasting menu (the MICHELIN Guide’s “Vegetarian menu”, "
+        "or a meat-free restaurant), out of all their starred restaurants; then how many list “Vegan options” and how many serve no meat at all. "
+        "The lowest tasting menu is the cheapest main dinner menu among those with a vegetarian one, per person before service and drinks.")
+
+    three = sorted((r for r in live if r["stars"] == 3 and menu(r)), key=lambda r: (places[r["country"]]["name"], r["name"].lower()))
+    body = "".join(f'<tr><td data-label="Restaurant">{name_html(r)}</td><td data-label="Where">{where(r)}</td>'
+                   f'<td data-label="Head chef">{e(r.get("chef") or "–")}</td><td data-label="Vegan options">{tick(has(r, "vegan"))}</td>'
+                   f'<td class="num" data-label="Tasting menu, per person">{price_cell(r)}</td></tr>' for r in three)
+    blocks["veg-3"] = table(("Restaurant", "Where", "Head chef", "Vegan options", "Tasting menu, per person"), body) + note(
+        "Three-star restaurants the MICHELIN Guide lists with a vegetarian menu, by country. The price is the main dinner tasting menu "
+        "per person in local currency, before service and drinks; a vegetarian menu usually costs the same or a little less.")
+
+    for pid in VEG_LISTS:
+        here = sorted((r for r in live if pid in r["_chain"] and (menu(r) or has(r, "vegan"))), key=lambda r: (not meat_free(r), -r["stars"], r["name"].lower()))
+        def lunch_cell(r):
+            if r.get("lunch") is None:
+                return '<span class="muted">–</span>'
+            return money(r["lunch"], r["cur"])
+        body = "".join(
+            f'<tr><td data-label="Restaurant">{name_html(r)}</td><td data-label="Stars">{stars_cell(r["stars"])}</td>'
+            f'<td data-label="Area">{e((r.get("area") or "–").split(", ")[0])}</td>'
+            f'<td data-label="Vegetarian menu">{"Vegan restaurant" if meat_free(r) and veg_serves(r) == "Vegan" else tick(menu(r))}</td>'
+            f'<td data-label="Vegan options">{tick(has(r, "vegan"))}</td>'
+            f'<td class="num" data-label="Tasting menu">{price_cell(r)}</td><td class="num" data-label="Set lunch">{lunch_cell(r)}</td></tr>'
+            for r in here)
+        blocks[f"veg-{pid}"] = table(("Restaurant", "Stars", "Area", "Vegetarian menu", "Vegan options", "Tasting menu", "Set lunch"), body) + note(
+            f"Every starred restaurant in {e(places[pid]['name'])} the MICHELIN Guide lists with a vegetarian menu or vegan options, "
+            "meat-free ones first, then most stars. Names open each restaurant’s prices on The Starred Bill and arrows its MICHELIN Guide page. "
+            "Prices per person before service and drinks; the set lunch is the cheapest set menu at lunch, where there is one. "
+            "Tell the restaurant when you book.")
     return blocks
 
 
@@ -3620,6 +3763,7 @@ def guide_blocks(stats):
         "Set lunch is the cheapest set menu at lunch, where there is one.")
     blocks.update(chef_blocks(live, links, stars_cell, note))
     blocks.update(diet_blocks(live, name_html, stars_cell, price_cell, note))
+    blocks.update(veg_blocks(live, name_html, stars_cell, price_cell, note))
     blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
     blocks.update(cheap_blocks(live, name_html, stars_cell, checked, year))
     blocks.update(ceremony_blocks())

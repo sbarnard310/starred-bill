@@ -28,7 +28,7 @@ SITE_URL = "https://starredbill.com"
 # IndexNow (Bing, Yandex, Naver, Seznam…): the key is public by design; IndexNow checks it at /<key>.txt before taking a
 # list of changed pages from scripts/indexnow.py (run by .github/workflows/indexnow.yml after each publish).
 INDEXNOW_KEY = "4ebae6380d9923e3de73396f0df11e0f"
-PLACE_TYPES = ("country", "region", "city", "district", "group")
+PLACE_TYPES = ("country", "region", "city", "district", "group", "cuisine")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
 # Languages added from 5 Oct 2026 keep their words in src/assets/lang-<code>.js, loaded only by pages that offer them.
 LANG_FILES = ("zhs", "de", "nl", "pt", "nb", "fi", "pl", "cs", "hu", "sl", "hr", "sr", "el", "tr", "lt", "lv", "et", "mt", "ms", "fil", "vi", "ar")
@@ -122,6 +122,16 @@ for pid, p in places.items():
         parent = places.get(p.get("parent"))
         if not parent or parent["type"] != "city":
             problem(where, "a district's parent must be the id of a city, e.g. manhattan inside new-york")
+    if p["type"] == "cuisine":
+        parent = places.get(p.get("parent"))
+        if not parent or parent["type"] in ("group", "district", "cuisine"):
+            problem(where, "a cuisine page's parent must be the id of a city, region or country, e.g. tokyo")
+        elif not pid.startswith(parent["id"] + "-"):
+            problem(where, f"a cuisine page's id must be its parent's and the cuisine, e.g. {parent['id']}-french")
+        if not isinstance(p.get("cuisines"), list) or not p["cuisines"] or not all(isinstance(c, str) and c for c in p["cuisines"]):
+            problem(where, 'cuisines must list the MICHELIN Guide cuisine labels the page covers, e.g. ["French", "French Contemporary"]')
+        if not p.get("topic"):
+            problem(where, 'needs a topic: what the page lists, as it reads mid-sentence, e.g. "French Michelin star restaurants"')
     if p["type"] == "group":
         bad = [i for i in p.get("includes", []) if i not in places or places[i]["type"] == "group"]
         if not p.get("includes") or bad:
@@ -156,7 +166,11 @@ def countries_of(p):
 
 def path_of(p):
     """The page's web address: each place sits inside the ones above it, e.g. /uk/england/london/.
-    A collection sits inside its country when it has only one, otherwise at the top level."""
+    A collection sits inside its country when it has only one, otherwise at the top level. A cuisine page sits inside
+    its city, named for the cuisine: tokyo-french is /japan/tokyo/french/."""
+    if p["type"] == "cuisine":
+        parent = places.get(p.get("parent"))
+        return path_of(parent) + p["id"][len(parent["id"]) + 1:] + "/" if parent and p["id"].startswith(parent["id"] + "-") else f"/{p['id']}/"
     if p["type"] != "group":
         return "/" + "/".join(reversed(chain(p["id"]))) + "/"
     cs = countries_of(p)
@@ -225,7 +239,7 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
     if not r.get("name"):
         problem(where, "needs a name")
     city = places.get(r.get("city"))
-    if not city or city["type"] == "group":
+    if not city or city["type"] in ("group", "cuisine"):
         problem(where, f"city \"{r.get('city')}\" isn't a city, region or country in content/places")
         continue
     if r.get("status"):
@@ -403,6 +417,8 @@ if problems:
 
 def members(p):
     """Restaurants that belong on a place's page: those in it or anywhere below it."""
+    if p["type"] == "cuisine":  # its city's restaurants with one of its cuisine labels
+        return [r for r in members(places[p["parent"]]) if r.get("cuisine") in p["cuisines"]]
     wanted = set(p["includes"]) if p["type"] == "group" else {p["id"]}
     return [r for r in restaurants if wanted & set(r["_chain"])]
 
@@ -413,6 +429,16 @@ for _p in places.values():
     same_name[_p["name"]] = same_name.get(_p["name"], 0) + 1
 # Every place gets a page; one without starred restaurants says so and waits for its first star.
 pages = list(places.values())
+# Cuisine pages (tokyo-french, hong-kong-chinese…) only where a city has CUISINE_MIN or more starred restaurants of that
+# cuisine, so none is thin; the build says when one falls below it, or names a label its city doesn't have.
+CUISINE_MIN = 5
+for _p in pages:
+    if _p["type"] == "cuisine":
+        _labels = {r.get("cuisine") for r in members(places[_p["parent"]]) if not r.get("status")}
+        if starred_n[_p["id"]] < CUISINE_MIN:
+            print(f"Note: the cuisine page {_p['id']} has {starred_n[_p['id']]} starred restaurants, fewer than {CUISINE_MIN}: consider removing it.")
+        for _c in sorted(set(_p["cuisines"]) - _labels):
+            print(f"Note: no starred restaurant in {_p['parent']} has the cuisine \"{_c}\" that {_p['id']} lists (check the spelling).")
 
 
 # Fields only a restaurant's own page shows (build_restaurant_pages()), kept out of destination pages' data.
@@ -580,8 +606,36 @@ def remote_nearby():
     return _remote
 
 
+def cuisine_pages(parent_id):
+    """A place's cuisine pages with starred restaurants, biggest first."""
+    return by_size(q for q in pages if q["type"] == "cuisine" and q.get("parent") == parent_id and starred_n[q["id"]])
+
+
+def cuisine_slug(p):
+    """The cuisine in a cuisine page's address ("french" for tokyo-french), shared by the same cuisine in other cities."""
+    return p["id"][len(p["parent"]) + 1:]
+
+
+def cuisine_rows(p):
+    """A cuisine page's rows of links under its title: its city's other cuisine pages, then the same cuisine in other
+    cities (each named by its city). Its breadcrumb leads back to the city."""
+    rows = []
+    city = places[p["parent"]]
+    siblings = cuisine_pages(city["id"])
+    if len(siblings) > 1:
+        rows.append(dict({k.replace("name", "country"): v for k, v in names(city).items()}, label="exploreCuisines",
+                         items=[link(q, p["id"]) for q in siblings]))
+    elsewhere = by_size(q for q in pages if q["type"] == "cuisine" and q["id"] != p["id"] and cuisine_slug(q) == cuisine_slug(p) and starred_n[q["id"]])
+    if elsewhere:
+        rows.append(dict({k.replace("name", "country"): v for k, v in names(p).items()}, label="exploreCuisineCities",
+                         items=[dict(names(places[q["parent"]]), path=q["path"], n=starred_n[q["id"]], current=False) for q in elsewhere]))
+    return rows
+
+
 def explore_links(p):
     """The rows of place links under the page title."""
+    if p["type"] == "cuisine":
+        return cuisine_rows(p)
     rows = []
     # A city's districts (e.g. New York's boroughs), or a district's neighbours in the same city.
     districts = by_size(q for q in pages if q["type"] == "district" and q.get("parent") == (p.get("parent") if p["type"] == "district" else p["id"]))
@@ -612,6 +666,10 @@ def explore_links(p):
         if cities:
             rows.append(dict({k.replace("name", "country"): v for k, v in names(p).items()}, label="exploreCities" if regions else "explore",
                              items=[link(q) for q in cities]))
+    # The place's cuisine pages (Tokyo: French, Japanese, Sushi), in every language it offers, so they're a click away.
+    cuisines = cuisine_pages(p["id"])
+    if cuisines:
+        rows.append(dict({k.replace("name", "country"): v for k, v in names(p).items()}, label="exploreCuisines", items=[link(q) for q in cuisines]))
     near = nearby(p, {i["path"] for row in rows for i in row["items"]})
     if near:
         rows.append({"label": "nearby", "items": [link(q) for q in near]})
@@ -777,6 +835,9 @@ def write(path, text):
 
 # ---------- Pages ----------
 def build_place(p):
+    # A cuisine page (French in Tokyo) is its city's page for just those restaurants: names, Near me and Help me pick are the city's.
+    cuisine = p["type"] == "cuisine"
+    base = places[p["parent"]] if cuisine else p
     rs = members(p)
     starred = [r for r in rs if not r.get("status")]
     curs = sorted({r["cur"] for r in starred})
@@ -784,7 +845,7 @@ def build_place(p):
     crumbs = [places[c] for c in reversed(chain(p["id"])[1:])] if p["type"] != "group" else \
         ([places[countries_of(p)[0]]] if len(countries_of(p)) == 1 else [])
     page = dict(names(p), **{
-        "id": p["id"], "type": p["type"], **in_sentences(p),
+        "id": p["id"], "type": p["type"], **in_sentences(base), **({"city": names(base)} if cuisine else {}),
         "lead": p.get("lead") or "", "path": p["path"], "currency": currency, "showCity": len({r["city"] for r in starred}) > 1,
         "crumbs": [dict(names(c), path=c["path"], n=starred_n[c["id"]]) for c in crumbs],
         "links": explore_links(p),
@@ -797,16 +858,17 @@ def build_place(p):
     for field in PLACE_TEXTS:
         for suffix in ("",) + LANG_SUFFIXES:
             page[field + suffix] = inherited(p, field + suffix) or ""
-    langs = inherited(p, "languages") or DEFAULT_LANGUAGES
+    langs = place_langs(p)
     suffixes = lang_suffixes(langs)
-    titles = page["titles"] = page_titles(p, page, langs, starred)
+    own = {lang: cuisine_texts(p, lang, starred) for lang in langs} if cuisine else {}
+    titles = page["titles"] = {lang: t["title"] for lang, t in own.items()} if cuisine else page_titles(p, page, langs, starred)
     if p["id"] in SEARCH_NAMES:
         page["searchHeading"], page["searchIn"] = search_heading(p), search_intro(p)
 
     stars = [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)]
     menus = sorted((r for r in starred if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
-    where = in_sentence(p)
-    description = p.get("description") or place_description(search_both(p), starred, stars, menus)
+    where = in_sentence(base)
+    description = p.get("description") or (own["en"]["description"] if cuisine else place_description(search_both(p), starred, stars, menus))
     intro = page["intro"]
     lang_paths = {lang: lang_path(p["path"], lang) for lang in langs}
     for item in page["crumbs"] + [i for row in page["links"] for i in row["items"]]:
@@ -831,12 +893,14 @@ def build_place(p):
         f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{p["path"]}">\n' if len(langs) > 1 else ""
     # A line under the intro pointing to Near me (English only, like the page it opens), for "michelin star restaurants near me".
     # Then one to Help me pick with this place as the first answer (/pick/?w=<address>), on pages with starred restaurants.
-    near_line = (f'<p class="hero-near">In {e(search_short(p))} or nearby? See the <a href="/near-me/">Michelin star restaurants near you</a>, nearest first.'
-                 + (f' Can\'t choose? <a href="/pick/?w={p["path"]}" class="hero-pick">Help me pick in {e(search_short(p))}</a>.' if starred_n[p["id"]] and p["type"] != "group" else "") + "</p>")
+    near_line = (f'<p class="hero-near">In {e(search_short(base))} or nearby? See the <a href="/near-me/">Michelin star restaurants near you</a>, nearest first.'
+                 + (f' Can\'t choose? <a href="/pick/?w={base["path"]}" class="hero-pick">Help me pick in {e(search_short(base))}</a>.' if starred_n[p["id"]] and p["type"] != "group" else "") + "</p>")
     # "Last updated" under the figures and the structured data's dateModified: the day this page's data last changed.
     day = place_day(p)
     for lang in langs:
-        if lang == "en":
+        if cuisine:
+            texts = own[lang]
+        elif lang == "en":
             texts = {
                 "description": description,
                 "h1": f"Michelin star restaurants in {e(search_heading(p))}: what they <em>cost</em>.",
@@ -865,13 +929,15 @@ def build_place(p):
             + (f" · {'dinner ' if lang == 'en' else ''}{money(r['dinner'], r['cur'])}" if r.get("dinner") is not None else "") + "</li>"
             for r in sorted(starred, key=lambda r: (-r["stars"], r["name"]))) + "</ol>"
         version = dict(data, lang=lang, langPaths=lang_paths) if len(langs) > 1 else data
-        quick = quick_answers(p, page, starred, lang)
+        if cuisine:  # place.js keeps the cuisine heading and intro when it redraws the hero
+            version = dict(version, own={k: texts[k] for k in ("h1", "eyebrow", "heroText")})
+        quick = quick_answers(p, page, starred, lang) if not cuisine else []
         note = local_note(p) if lang == "en" else []
-        faq = destination_faq(p, page, starred, lang, quick=bool(quick), booking=not note)
+        faq = cuisine_faq(p, lang, starred) if cuisine else destination_faq(p, page, starred, lang, quick=bool(quick), booking=not note)
         # The local note's questions are headings on the page, so the structured data lists them after the FAQ's (up to 10).
         faq_ld = (faq + [(q, plain(a)) for q, a in note])[:FAQ_MAX]
         pilot = p["id"] in SEO_PILOT
-        answer = short_answer(p, page, starred, lang) if lang in QA_LANGS else ""
+        answer = cuisine_answer(p, lang, starred) if cuisine else short_answer(p, page, starred, lang) if lang in QA_LANGS else ""
         updated = (f'<p class="updated"><time datetime="{day}">{e(pilot_words(lang)["updated"].replace("{date}", long_date(day, lang)))}</time></p>'
                    if day else "")
         write(lang_paths[lang], (pilot_headings if pilot else lambda h, *a: h)(section_words(render("place.html", {
@@ -884,13 +950,13 @@ def build_place(p):
                                  f'<a href="{lang_paths[c]}" hreflang="{HREFLANG.get(c, c)}" lang="{HTML_LANG.get(c, ("en-GB",))[0]}">{e(LANG_LABELS.get(c, c.upper()))}</a>'
                                  for c in langs) if len(langs) > 1 else "", "ledger": ledger, "data": as_json(version), "rowsScript": rows_script,
             "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
-            "areas": areas_html(p, lang) if starred else "", "footPlaces": foot_places_html(lang, p["id"]),
+            "areas": areas_html(p, lang) if starred and not cuisine else "", "footPlaces": foot_places_html(lang, p["id"]),
             "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
             "answer": answer, "quick": quick_html(quick, page, lang), "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
-            "newStars": new_stars_html(p, page, lang), "localNote": local_note_html(p, note),
+            "newStars": new_stars_html(p, page, lang) if not cuisine else "", "localNote": local_note_html(p, note),
             "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq_ld, SITE_URL + lang_paths[lang], titles[lang], day),
             "updated": updated, "sources": place_sources_html(p, lang) if starred else "",
-            "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang),
+            "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang) if not cuisine else "",
             "browse": browse_html(p, page, starred, lang) if starred else "",
         }), lang, page, starred, inherited(p, "michelinGuideUrl")), page, lang))
 
@@ -926,7 +992,8 @@ def lang_path(path, lang):
 
 
 def place_langs(p):
-    return inherited(p, "languages") or DEFAULT_LANGUAGES
+    langs = inherited(p, "languages") or DEFAULT_LANGUAGES
+    return [lang for lang in langs if lang in CUISINE_LANGS] if p["type"] == "cuisine" else langs
 
 
 def plain(text):
@@ -1664,6 +1731,149 @@ def short_answer(p, page, starred, lang):
     return f'<p class="answer"><span class="answer-label">{e(w["qaLabel"])}</span> ' + k.gap.join(out) + "</p>"
 
 
+# ---------- Cuisine pages (9 Oct 2026, to-do item seo-cuisine-city-pages) ----------
+# A page per cuisine in a city where it has CUISINE_MIN or more starred restaurants (French in Tokyo, sushi in Osaka,
+# Chinese in Hong Kong), for searches like "michelin star french restaurant tokyo" and "大阪 フレンチ ミシュラン". Each is a
+# place file of type "cuisine" (parent: its city; cuisines: the MICHELIN Guide labels it covers; topic: what it lists as it
+# reads mid-sentence, with topicJa, topicZh… per language) and an ordinary destination page of just those restaurants,
+# with its own title, heading, "In short" answer and FAQ. Wording cp… in src/faq-words.json: a language needs them all
+# before its cuisine pages are offered in it (CUISINE_LANGS).
+CUISINE_WORDS = ("cpTitle", "cpH1", "cpEyebrow", "cpHero", "cpDesc", "cpDescShort", "cpCount", "cpCountAll", "cpQCount", "cpACount",
+                 "cpThreeMany", "cpThreeOne", "cpTwoOnly", "cpQPrice", "cpAPrice", "cpACity", "cpQCheap", "cpQDear", "cpADear")
+CUISINE_LANGS = tuple(lang for lang, words in FAQ_WORDS.items() if all(k in words for k in CUISINE_WORDS))
+TITLE_SMALL = {"a", "an", "and", "at", "by", "for", "in", "of", "on", "the", "to", "with"}
+
+
+def title_case(text):
+    """English title case: "French Michelin star restaurants in Tokyo" -> "French Michelin Star Restaurants in Tokyo"."""
+    return " ".join(w if i and w in TITLE_SMALL else w[:1].upper() + w[1:] for i, w in enumerate(text.split(" ")))
+
+
+def city_page(city):
+    """What FaqWords needs to name a cuisine page's city in each language: its names and how it reads mid-sentence."""
+    return dict(names(city), **in_sentences(city))
+
+
+def cuisine_words(p, lang):
+    """FaqWords for a cuisine page's city, plus the page's own topic and label in the language."""
+    city = places[p["parent"]]
+    k = FaqWords(city_page(city), lang)
+    k.topic, k.label, k.city = pick_lang(p, "topic", lang), pick_lang(p, "name", lang), name_in(city, lang)
+    return k
+
+
+def cuisine_say(k, key, html_mode=False, **values):
+    """A cp… phrase with the page's topic, label and city filled in. With html_mode the values are escaped, and the
+    wording keeps its own markup (cpH1's <em>)."""
+    esc = e if html_mode else (lambda v: v)
+    values = dict({"topic": k.topic, "label": k.label, "name": k.city, "in": k.where}, **values)
+    text = re.sub(r"\{(\w+)\}", lambda m: esc(str(values[m.group(1)])) if m.group(1) in values else m.group(0), k.w[key])
+    return text[:1].upper() + text[1:]
+
+
+def cuisine_split(k, by_stars):
+    """"1 with three stars, 5 with two and 41 with one" (qaFirst…/qaThen…), or the FAQ's tier split where a language
+    has no such words. (Text, whether every restaurant has the same stars.)"""
+    w, own = k.w, k.own
+    tiers = [(s, len(by_stars[s])) for s in (3, 2, 1) if by_stars[s]]
+    if "qaFirst3" not in own:
+        return k.tier_split(by_stars), False
+    if len(tiers) == 1:
+        return w["qaAll" + str(tiers[0][0])], True
+    return and_plain((w[("qaFirst" if i == 0 else "qaThen") + str(s)].replace("{n}", str(n)) for i, (s, n) in enumerate(tiers)), w), False
+
+
+def cuisine_texts(p, lang, starred):
+    """A cuisine page's title, heading, eyebrow, intro and search description in one language."""
+    k = cuisine_words(p, lang)
+    n = len(starred)
+    priced = sum(1 for r in starred if r.get("dinner") is not None or r.get("lunch") is not None)
+    year = title_year(p, starred)
+    w = TITLE_WORDS.get(lang) or TITLE_WORDS["en"]
+    head = cuisine_say(k, "cpTitle")
+    head = title_case(head) if lang == "en" else head
+    tails = dict.fromkeys([w["all"] if priced == n else w["some"] if priced else w["none"], w["prices"] if priced else "", ""])
+    options = [head + (w.get("sep", ": ") + t.replace("{n}", str(n)) if t else "") + (w.get("year", " ({y})").replace("{y}", year) if dated and year else "")
+               for t in tails for dated in (True, False)]
+    title = next((o for o in options if title_width(o) <= TITLE_MAX), options[-1])
+    dinners = sorted((r for r in starred if is_menu(r, "dinner")), key=lambda r: to_usd(r, "dinner"))
+    split = k.tier_split(by_star_level(k, starred))
+    description = cuisine_say(k, "cpDescShort", n=n)
+    if len(dinners) >= 2:
+        # The fullest that fits Google's 155 characters: with the star split, then (cpDescMid, where a language has it) without.
+        lo, hi = money(dinners[0]["dinner"], dinners[0]["cur"]), money(dinners[-1]["dinner"], dinners[-1]["cur"])
+        fits = [d for d in (cuisine_say(k, key, n=n, split=split, lo=lo, hi=hi) for key in ("cpDesc", "cpDescMid") if key in k.own) if len(d) <= 155]
+        description = fits[0] if fits else description
+    # Its own intro, else its city's (the currency and service note).
+    intro = pick_lang({f: inherited(p, f) for f in ["intro"] + ["intro" + sfx for sfx in LANG_SUFFIXES]}, "intro", lang)
+    return {"title": title, "description": description, "h1": cuisine_say(k, "cpH1", True),
+            "eyebrow": cuisine_say(k, "cpEyebrow"), "crumbHome": word(lang, "crumbHome", {}),
+            "heroText": cuisine_say(k, "cpHero", n=n) + (k.gap + intro if intro else ""), "listName": plain(cuisine_say(k, "cpTitle"))}
+
+
+def cuisine_answer(p, lang, starred):
+    """The "In short:" answer on a cuisine page: how many, split by stars, what dinner costs and the cheapest way in."""
+    k = cuisine_words(p, lang)
+    split, same = cuisine_split(k, by_star_level(k, starred))
+    checked = long_month(site.get("updated", ""), lang)
+    out = [cuisine_say(k, "cpCountAll" if same else "cpCount", True, n=len(starred), split=split, checked=checked)]
+    say = lambda key, **v: k.say_html(key, name=e(k.city), **v)
+    price = lambda r, f: e(k.price(r, f, usd=False))
+    dinners = sorted((r for r in starred if is_menu(r, "dinner")), key=lambda r: to_usd(r, "dinner"))
+    if len(dinners) >= 3:
+        out.append(say("qaPrice", lo=price(dinners[0], "dinner"), hi=price(dinners[-1], "dinner"), mid=price(dinners[len(dinners) // 2], "dinner")))
+    best = cheapest_meal(starred)
+    if best:
+        r, f = best
+        out.append(say("qaCheap" + ("Lunch" if f == "lunch" else "Dinner"), r=e(k.name(r)), price=price(r, f)))
+    return f'<p class="answer"><span class="answer-label">{e(k.w["qaLabel"])}</span> ' + k.gap.join(out) + "</p>"
+
+
+def cuisine_faq(p, lang, starred):
+    """A cuisine page's questions: how many (and how that compares with the whole city), its three- or two-star
+    restaurants, what dinner costs against the city's typical menu, the cheapest and dearest, and booking ahead."""
+    k = cuisine_words(p, lang)
+    say, name, price, usd = (lambda key, **v: cuisine_say(k, key, **v)), k.name, k.price, k.usd
+    city_starred = [r for r in members(places[p["parent"]]) if not r.get("status")]
+    by_stars = by_star_level(k, starred)
+    faq = []
+    checked = month_year(site.get("updated", ""), lang)
+    answer = say("cpACount", n=len(starred), all=len(city_starred), split=k.tier_split(by_stars), checked=checked)
+    if len(by_stars[3]) == 1:
+        answer += k.gap + say("cpThreeOne", names=k.listed(by_stars[3]))
+    elif by_stars[3]:
+        answer += k.gap + say("cpThreeMany", names=k.listed(by_stars[3], 12))
+    elif by_stars[2]:
+        answer += k.gap + say("cpTwoOnly", names=k.listed(by_stars[2]))
+    faq.append((say("cpQCount"), answer))
+
+    dinners, spends = dinner_menus(k, starred)
+    if len(dinners) >= 3:
+        answer = say("cpAPrice", lo=price(dinners[0], "dinner"), hi=price(dinners[-1], "dinner"), mid=price(dinners[len(dinners) // 2], "dinner"))
+        city_menus = sorted((r for r in city_starred if is_menu(r, "dinner")), key=lambda r: usd(r, "dinner"))
+        if len(city_menus) >= 3 and len(city_menus) > len(dinners):
+            answer += k.gap + say("cpACity", all=len(city_starred), cityMid=price(city_menus[len(city_menus) // 2], "dinner"))
+        faq.append((say("cpQPrice"), answer))
+
+    lunches = sorted((r for r in starred if is_menu(r, "lunch")), key=lambda r: usd(r, "lunch"))
+    cheapest = min([usd(r, "lunch") for r in lunches[:1]] + [usd(r, "dinner") for r in dinners[:1]] or [float("inf")])
+    answer = ""
+    if lunches and (not dinners or usd(lunches[0], "lunch") < usd(dinners[0], "dinner")):
+        answer = k.say("aCheapLunch", r=name(lunches[0]), price=price(lunches[0], "lunch"))
+        if dinners:
+            answer += k.gap + k.say("aAlsoDinner", r=name(dinners[0]), price=price(dinners[0], "dinner"))
+    elif dinners:
+        answer = k.say("aCheapDinner", r=name(dinners[0]), price=price(dinners[0], "dinner"))
+    if spends and usd(spends[0], "dinner") < cheapest:
+        answer += (k.gap if answer else "") + k.say("aCheapSpend", r=name(spends[0]), price=price(spends[0], "dinner"))
+    if answer:
+        faq.append((say("cpQCheap"), answer))
+    if len(dinners) >= 2:
+        faq.append((say("cpQDear"), say("cpADear", r=name(dinners[-1]), price=price(dinners[-1], "dinner"))))
+    faq.append((k.say("qBook"), k.say("aBook")))
+    return faq
+
+
 # Languages whose destination pages get the "Michelin star lunch deals" section (lunch_deals_html()); its wording is
 # the ld… keys in src/faq-words.json, so a language joins once those are translated.
 LUNCH_LANGS = ("en",)
@@ -1817,6 +2027,11 @@ def browse_html(p, page, starred, lang):
             guide = "michelin-star-" + c.lower().replace(" ", "-") + "-restaurants-" + p["id"]
             if guide in guides:
                 intro += " " + e(w["cuGuide"]).replace("{link}", f'<a href="/guides/{guide}/">{e(guides[guide]["h1"])}</a>')
+        # Its cuisine pages (Japanese, French and sushi in Tokyo), each linked by what it lists.
+        cuisine_links = cuisine_pages(p["id"])
+        if cuisine_links:
+            links = and_names((f'<a href="{q["path"]}">{e(q["topic"])} in {e(page["inSentence"])}</a>' for q in cuisine_links), w)
+            intro += " " + e(w["cuPages" if len(cuisine_links) > 1 else "cuPage"]).replace("{links}", links)
         out.append(section("cuisines", "cu", "cuisine", cuisines, intro))
     areas = groups(lambda r: places[r["city"]]["name"] if places[r["city"]].get("path") in own_pages.values() else area_key(r))
     # Neighbourhoods only where most restaurants name one and there are a few (Kyoto's have none, Macau's three are islands).
@@ -2390,7 +2605,8 @@ def json_ld(p, crumbs, starred, description, lang="en", texts=None, faq=(), url=
             if r.get("dinner") is not None and r.get("dinnerType") == "menu":
                 item["priceRange"] = f"Tasting menu {money(r['dinner'], r['cur'])}"
             items.append({"@type": "ListItem", "position": i + 1, "item": {k: v for k, v in item.items() if v}})
-        graph.append({"@type": "ItemList", "@id": url + "#restaurants", "name": f"Michelin-starred restaurants in {in_sentence(p)}" if lang == "en" else plain(texts["h1"]), "description": description,
+        list_name = (texts or {}).get("listName") or (f"Michelin-starred restaurants in {in_sentence(p)}" if lang == "en" else plain(texts["h1"]))
+        graph.append({"@type": "ItemList", "@id": url + "#restaurants", "name": list_name, "description": description,
                       "numberOfItems": len(starred), "itemListElement": items})
     if faq:
         graph.append({"@type": "FAQPage", "inLanguage": HREFLANG.get(lang, lang), "mainEntity": [
@@ -2711,7 +2927,7 @@ def build_home():
         "homeUrl": build_home_data(starred),
         "starCounts": [len(starred)] + [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)],
         "countries": countries, "groups": groups, "soon": soon, "noStars": no_star_countries(),
-        "places": [dict(link(p), type=p["type"]) for p in by_size(pages)],
+        "places": [dict(link(p), type=p["type"]) for p in by_size(q for q in pages if q["type"] != "cuisine")],
         "currencies": CURRENCIES, "switchable": currency_data.get("switchable", []), "updated": site.get("updated", ""),
         "worldUrl": world_url, "worldTotal": world_total, "languages": DEFAULT_LANGUAGES,
     }
@@ -2879,7 +3095,7 @@ def build_pick(near_url):
     stats = guide_stats()
     # Every country, region, city and district with starred restaurants, biggest first: [name, path, count, where it is].
     spots, popular = [], []
-    for p in by_size(q for q in pages if q["type"] != "group" and starred_n[q["id"]]):
+    for p in by_size(q for q in pages if q["type"] not in ("group", "cuisine") and starred_n[q["id"]]):
         above = [places[c]["name"] for c in chain(p["id"])[1:]]
         spots.append([p["name"], p["path"], starred_n[p["id"]], ", ".join(above[:1] + above[-1:]) if len(above) > 1 else "".join(above)])
         if p["type"] == "city" or p["id"] in ("hong-kong", "macau", "singapore"):
@@ -3010,7 +3226,7 @@ def build_account_pages():
     cols = ["id", "name", "stars", "formerStars", "status", "area", "city", "dinner", "dinnerType"]
     data = {
         "accountUrl": write_data("account.json", rows_with_cities(restaurants, cols, ["cityPath", "cityName", "country", "cur"], lambda r, c: r.get(c))),
-        "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] != "group" and starred_n[q["id"]])],
+        "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] not in ("group", "cuisine") and starred_n[q["id"]])],
         "currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES,
     }
     write("/account/", render("account.html", {

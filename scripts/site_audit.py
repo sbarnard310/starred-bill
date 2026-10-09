@@ -135,7 +135,8 @@ def link_checks(site):
         if "noindex" in s:
             noindex.add(url)
         m = re.search(r'"page":\{"name":"([^"]+)".*?"path":"([^"]+)"', s)
-        if m and not LANG_PREFIX.match(url):
+        # Cuisine pages ("French" in Tokyo) are named for a cuisine, not a place, so they aren't looked for in the guides.
+        if m and not LANG_PREFIX.match(url) and not re.search(r'"page":\{[^{}]*?"type":"cuisine"', s):
             names.setdefault(json.loads('"' + m.group(1) + '"'), m.group(2))
 
     def target(href):

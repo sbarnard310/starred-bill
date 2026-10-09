@@ -18,7 +18,8 @@ const EMPTY = !RESTAURANTS.length;
 const PAGE_CURRENCIES = [...new Set(RESTAURANTS.map((r) => r.cur))];
 const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !== PAGE.currency));
 // French, Spanish and Italian names carry their preposition ("à Paris", "en España", "a Roma").
-pageVars = () => ({ place: pick(PAGE, "name"), placeIn: cjk() || ko() ? pick(PAGE, "name") : PAGE["inSentence" + (LANGS[LANG].suffixes[0] || "")] || PAGE.inSentence || PAGE.name });
+// A cuisine page (French in Tokyo) names its city, PAGE.city.
+pageVars = () => ({ place: pick(PAGE.city || PAGE, "name"), placeIn: cjk() || ko() ? pick(PAGE, "name") : PAGE["inSentence" + (LANGS[LANG].suffixes[0] || "")] || PAGE.inSentence || PAGE.name });
 
 const EXPLORE_SHOWN = 6;
 const state = { openRow: null, exploreOpen: new Set(), meal: "dinner", activeCat: "All", activeStars: 0, diet: "", wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null, area: "",
@@ -140,6 +141,12 @@ function applyStatic() {
   const searchIn = LANG === "en" && PAGE.searchIn ? { placeIn: PAGE.searchIn } : null;
   if (searchIn) document.querySelector('[data-i18n="heroTitle"]').innerHTML = t("heroTitle", { placeIn: PAGE.searchHeading });
   if (intro || lead || searchIn) $("heroText").innerHTML = (lead ? esc(lead) : t("heroText", searchIn)) + (intro ? " " + esc(intro) : "");
+  // A cuisine page keeps the eyebrow, heading and intro the build wrote for it (cuisine_texts() in build.py).
+  if (DATA.own) {
+    document.querySelector('[data-i18n="heroEyebrow"]').textContent = DATA.own.eyebrow;
+    document.querySelector('[data-i18n="heroTitle"]').innerHTML = DATA.own.h1;
+    $("heroText").textContent = DATA.own.heroText;
+  }
   if (EMPTY) {
     const up = PAGE.crumbs.slice().reverse().find((c) => c.n);
     $("heroText").innerHTML = esc(t("emptyPlace")) + (up ? '<br><a class="empty-up" href="' + placeHref(up) + '">' + esc(t("emptySee", { n: up.n, name: pick(up, "name") })) + " " + fwdArrow() + "</a>" : "");

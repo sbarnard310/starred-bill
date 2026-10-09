@@ -40,10 +40,13 @@ Every file in `content/places/` has an `id` (lower-case, hyphens, used in the we
 | `city` | `parent`: a country or region id | `/uk/england/london/` |
 | `district` | `parent`: a city id (New York's boroughs, London's neighbourhoods) | `/usa/new-york-state/new-york/manhattan/`, `/uk/england/london/mayfair/` |
 | `group` | `includes`: a list of country, region or city ids | `/taiwan/southern-taiwan/` if all in one country, otherwise `/riviera/` |
+| `cuisine` | `parent`: a city (or a city-state region or country), `cuisines`, `topic`; its `id` is the parent's and the cuisine | `/japan/tokyo/french/` for `tokyo-french` |
 
 A region or city's address follows everything above it, so a Yorkshire region inside England would be `/uk/england/yorkshire/`, and York inside it `/uk/england/yorkshire/york/`. If a page moves, list its old address in `redirectFrom` (e.g. London has `["/uk/london/"]`) and old links keep working.
 
 Restaurants don't need a city page of their own: one outside the cities we cover can sit in its region or country (`city` set to e.g. `england` or `ireland`), with the town and county in `area`, e.g. "Aughton, Lancashire".
+
+Cuisine pages (9 Oct 2026) list one cuisine's starred restaurants in a city, for searches like "michelin star french restaurant tokyo" or "大阪 フレンチ ミシュラン". Make one only where the city has 5 or more starred restaurants of that cuisine; the build says when one falls below. `cuisines` lists the MICHELIN Guide labels it covers, spelled as on the restaurants (`["Cantonese", "Shanghainese", …]` for Chinese in Hong Kong; the build names any label its city doesn't have). `name` is its short label in breadcrumbs and links ("French", `nameJa` "フレンチ"), and `topic` what it lists as it reads mid-sentence ("French Michelin star restaurants", "Michelin star sushi restaurants"), with `topicJa`, `topicZh`, `topicYue`, `topicTh` and so on for its city's other languages. It offers its city's languages that have the cuisine-page wording (`cp…` in src/faq-words.json). Its title, heading, "In short" answer and questions are written from its restaurants; an optional `intro` replaces its city's. Its city's page links to it under its title and in "By cuisine", and the same cuisine's pages in other cities link to each other.
 
 Groups are for areas that overlap the main structure, such as "the Riviera" (France and Italy) or "Northern England". Every place gets a page. One with no starred restaurants yet says so and links up to the nearest place that has some (e.g. Dorset links to England), so it's ready for its first star.
 

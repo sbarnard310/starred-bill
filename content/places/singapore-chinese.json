@@ -1,0 +1,15 @@
+{
+  "id": "singapore-chinese",
+  "type": "cuisine",
+  "parent": "singapore",
+  "name": "Chinese",
+  "nameZh": "中餐",
+  "topic": "Chinese Michelin star restaurants",
+  "topicZh": "米其林星級中餐廳",
+  "cuisines": [
+    "Cantonese",
+    "Sichuan",
+    "Ningbo",
+    "Teochew"
+  ]
+}

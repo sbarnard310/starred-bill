@@ -1,0 +1,12 @@
+{
+  "id": "kyoto-french",
+  "type": "cuisine",
+  "parent": "kyoto",
+  "name": "French",
+  "nameJa": "フレンチ",
+  "topic": "French Michelin star restaurants",
+  "topicJa": "ミシュラン星付きフレンチ",
+  "cuisines": [
+    "French"
+  ]
+}

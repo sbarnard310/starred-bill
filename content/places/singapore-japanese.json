@@ -1,0 +1,14 @@
+{
+  "id": "singapore-japanese",
+  "type": "cuisine",
+  "parent": "singapore",
+  "name": "Japanese",
+  "nameZh": "日本料理",
+  "topic": "Japanese Michelin star restaurants",
+  "topicZh": "米其林星級日本料理餐廳",
+  "cuisines": [
+    "Japanese Contemporary",
+    "Sushi",
+    "Tempura"
+  ]
+}

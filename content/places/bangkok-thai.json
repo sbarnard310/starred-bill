@@ -1,0 +1,17 @@
+{
+  "id": "bangkok-thai",
+  "type": "cuisine",
+  "parent": "bangkok",
+  "name": "Thai",
+  "nameTh": "อาหารไทย",
+  "topic": "Thai Michelin star restaurants",
+  "topicTh": "ร้านอาหารไทยมิชลินสตาร์",
+  "cuisines": [
+    "Thai",
+    "Thai contemporary",
+    "Southern Thai",
+    "Street Food"
+  ],
+  "intro": "Prices are in Thai baht (฿), with a switch to see them in pounds, euros or US dollars; “++” in a note means 10% service and 7% VAT are added. Prices checked October 2026.",
+  "introTh": "ราคาเป็นเงินบาท (฿) และกดดูเป็นปอนด์ ยูโร หรือดอลลาร์สหรัฐได้ “++” ในหมายเหตุหมายถึงบวกค่าบริการ 10% และภาษีมูลค่าเพิ่ม 7% ตรวจสอบราคาเมื่อเดือนตุลาคม 2026"
+}

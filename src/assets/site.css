@@ -24,10 +24,11 @@
 /* Japanese text (pages in Japanese, and Japanese names on other pages) uses Japanese letterforms. */
 :lang(ja) { --font-display: "Gloock", "Noto Serif JP", "Hiragino Mincho ProN", serif; --font-body: "Figtree", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif; }
 .alt-name:lang(ja) { font-family: var(--font-body); }
-:lang(ja) h1, :lang(ja) h2 { word-break: auto-phrase; }
+/* Headings break between phrases, and within one only when a phrase is wider than the screen ("ミシュラン星付きレストラン" on a phone). */
+:lang(ja) h1, :lang(ja) h2 { word-break: auto-phrase; overflow-wrap: anywhere; }
 :lang(ko) { --font-display: "Gloock", "Noto Serif KR", "AppleMyungjo", serif; --font-body: "Figtree", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif; }
 .alt-name:lang(ko) { font-family: var(--font-body); }
-:lang(ko) h1, :lang(ko) h2 { word-break: keep-all; }
+:lang(ko) h1, :lang(ko) h2 { word-break: keep-all; overflow-wrap: anywhere; }
 :lang(th) { --font-display: "Gloock", "Noto Serif Thai", serif; --font-body: "Figtree", "Noto Sans Thai", "Thonburi", system-ui, sans-serif; }
 .alt-name:lang(th) { font-family: var(--font-body); }
 /* Simplified Chinese (mainland China pages) uses Simplified letterforms. */

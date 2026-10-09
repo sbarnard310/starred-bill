@@ -920,6 +920,7 @@ content:
             - { value: city, label: "City" }
             - { value: district, label: "District inside a city (e.g. Manhattan, Brooklyn)" }
             - { value: group, label: "Collection (overlapping area, e.g. Basque Country)" }
+            - { value: cuisine, label: "Cuisine page inside a city (e.g. French in Tokyo)" }
       - name: name
         label: Name
         type: string
@@ -1071,7 +1072,7 @@ content:
             - { value: ar, label: "العربية (Arabic, right to left)" }
       - name: parent
         label: Inside (regions, cities and districts)
-        description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom. A district sits inside a city, e.g. Manhattan inside New York.
+        description: The country or region this region or city sits in, e.g. London is inside England, and England inside the United Kingdom. A district sits inside a city, e.g. Manhattan inside New York. A cuisine page sits inside its city (its ID is the city's and the cuisine, e.g. tokyo-french, which gives /japan/tokyo/french/).
         type: reference
         options:
           collection: places
@@ -1088,6 +1089,31 @@ content:
           label: "{fields.name} ({fields.type})"
           search: "name,nameZh"
           multiple: true
+      - name: cuisines
+        label: Cuisines (cuisine pages only)
+        description: The MICHELIN Guide cuisine labels the page lists, exactly as on the restaurants, e.g. French, French Contemporary. Only make a cuisine page where its city has 5 or more starred restaurants of them.
+        type: string
+        list: true
+      - name: topic
+        label: What it lists (cuisine pages only)
+        description: As it reads mid-sentence, e.g. "French Michelin star restaurants" or "Michelin star sushi restaurants". Used in the title, heading and questions.
+        type: string
+      - name: topicJa
+        label: What it lists, in Japanese
+        description: e.g. ミシュラン星付きフレンチ
+        type: string
+      - name: topicZh
+        label: What it lists, in Chinese
+        description: e.g. 米其林星級中餐廳
+        type: string
+      - name: topicYue
+        label: What it lists, in Cantonese
+        description: e.g. 米芝蓮星級中菜館
+        type: string
+      - name: topicTh
+        label: What it lists, in Thai
+        description: e.g. ร้านอาหารไทยมิชลินสตาร์
+        type: string
       - name: currency
         label: Currency (countries only)
         description: Three-letter code, e.g. GBP, EUR, JPY. It must also be listed under Currencies.

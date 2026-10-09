@@ -1,0 +1,18 @@
+{
+  "id": "tokyo-japanese",
+  "type": "cuisine",
+  "parent": "tokyo",
+  "name": "Japanese",
+  "nameJa": "和食・日本料理",
+  "topic": "Japanese Michelin star restaurants",
+  "topicJa": "ミシュラン星付きの和食・日本料理店",
+  "cuisines": [
+    "Japanese",
+    "Sushi",
+    "Tempura",
+    "Yakitori",
+    "Shojin",
+    "Unagi / Freshwater Eel",
+    "Crab Specialities"
+  ]
+}

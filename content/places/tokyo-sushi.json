@@ -1,0 +1,12 @@
+{
+  "id": "tokyo-sushi",
+  "type": "cuisine",
+  "parent": "tokyo",
+  "name": "Sushi",
+  "nameJa": "寿司",
+  "topic": "Michelin star sushi restaurants",
+  "topicJa": "ミシュラン星付きの寿司店",
+  "cuisines": [
+    "Sushi"
+  ]
+}

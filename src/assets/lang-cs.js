@@ -37,7 +37,7 @@
     all: "Vše", starsAria: "Michelinské hvězdy: {n}",
     hRestaurant: "Restaurace", hCuisine: "Kuchyně", hStars: "Hvězdy", hGoogle: "Google", hNotes: "K večeři", hPrice: "Cena", hWine: "Vinné párování", hWish: "Oblíbené",
     tableLabel: "Ceny restaurací",
-    reviews: "Recenze: {n}", ratingAria: "Hodnocení Google {r} z 5", noRating: "Bez hodnocení",
+    reviews: "Recenze: {n}", ratingAria: "Hodnocení Google {r} z 5", noRating: "Bez hodnocení", fewReviews: "Málo recenzí", fewTitle: "Méně než 20 recenzí na Googlu, hodnocení proto berte s rezervou",
     srcSite: "Web restaurace", srcPress: "Zdroj", srcTitle: "Odkud tato cena pochází",
     perMain: "za hlavní chod", typicalSpend: "běžná útrata", notListed: "Neuvedeno",
     // The till receipt on destination pages.

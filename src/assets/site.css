@@ -259,6 +259,8 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .notes { min-width: 0; font-size: .88rem; color: var(--muted); line-height: 1.4; }
 .rating { display: inline-flex; align-items: center; gap: 5px; }
 .rating svg { width: 13px; height: 13px; color: var(--green); }
+.rating.few { color: var(--muted); }
+.few-tag { display: inline-block; font-family: var(--font-body); font-size: .7rem; font-weight: 500; line-height: 1.3; padding: 0 6px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); white-space: nowrap; cursor: help; vertical-align: 1px; }
 .tag { display: inline-block; font-size: .8rem; padding: 3px 10px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-weight: 500; cursor: pointer; border: 0; text-align: left; max-width: 100%; }
 .row .cat { min-width: 0; }
 .stars { display: inline-flex; gap: 2px; color: var(--gold); }

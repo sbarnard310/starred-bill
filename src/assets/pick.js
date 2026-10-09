@@ -403,7 +403,7 @@ const bayes = (r) => r.rating ? (r.rating * (r.reviews || 0) + 4.4 * 30) / ((r.r
 const scoreOf = (r) => r.stars + (bayes(r) - 4.4) * 2.5 + (loadWishlist().includes(r.id) ? 0.6 : 0) + (r.change === "new" || r.change === "up" ? 0.15 : 0);
 const STAR_WEIGHT = { 1: 1, 2: 1.8, 3: 2.6 };
 const perStar = (r) => bill(r).total / STAR_WEIGHT[r.stars];
-const ratingText = (r) => r.rating ? r.rating.toFixed(1) + " on Google" + (r.reviews ? " from " + plural(r.reviews, "review") : "") : "";
+const ratingText = (r) => r.rating ? r.rating.toFixed(1) + " on Google" + (r.reviews ? " from " + (fewReviews(r) ? "only " : "") + plural(r.reviews, "review") : "") : "";
 const mealWord = (b) => b.meal === "lunch" ? "lunch" : "dinner";
 
 function choose(list) {
@@ -501,7 +501,7 @@ function compareTable(picks) {
   const price = (n, r) => localMoney(n, r.cur) + conv(n, r);
   const bills = cols.map(([, r]) => bill(r));
   const totals = bills.map((b) => b ? b.total : null).filter((x) => x != null), low = Math.min(...totals);
-  const rated = cols.map(([, r]) => r.rating || 0), top = Math.max(...rated);
+  const rated = cols.map(([, r]) => fewReviews(r) ? 0 : r.rating || 0), top = Math.max(...rated);  // few-review ratings never take the tick
   const tick = ' <span class="cmp-tick" title="Best of these">✓</span>';
   const row = (label, cells, num) => "<tr" + (num ? ' class="num"' : "") + '><th scope="row">' + label + "</th>" + cells.map((c) => "<td>" + c + "</td>").join("") + "</tr>";
   const meal = ask.meal === "lunch" ? "lunch" : ask.meal === "dinner" ? "dinner" : "meal";
@@ -514,7 +514,7 @@ function compareTable(picks) {
     row("Lunch", cols.map(([, r]) => r.lunch > 0 ? price(r.lunch, r) : r.lunch === -1 ? "No lunch" : "Not listed"), true),
     row("Wine pairing", cols.map(([, r], i) => { const b = bills[i], w = b ? b.wine : r.wine; return w != null ? price(w, r) + (b && b.meal === "lunch" ? " <small>with lunch</small>" : "") : "Not listed"; }), true),
     row("Your " + meal + (ask.wine ? " with wine" : ""), cols.map(([, r], i) => { const b = bills[i]; return b ? "<strong>" + (b.est ? "≈ " : "") + money(b.total, ask.cur) + "</strong>" + (ask.meal === "value" ? " <small>" + b.meal + "</small>" : "") + (Math.round(b.total) === Math.round(low) && totals.length > 1 ? tick : "") : "Not listed"; }), true),
-    row("Google rating", cols.map(([, r]) => r.rating ? r.rating.toFixed(1) + (r.reviews ? " <small>(" + r.reviews.toLocaleString("en-GB") + ")</small>" : "") + (r.rating === top && rated.filter((x) => x === top).length < cols.length ? tick : "") : "–"), true),
+    row("Google rating", cols.map(([, r]) => r.rating ? r.rating.toFixed(1) + (r.reviews ? " <small>(" + r.reviews.toLocaleString("en-GB") + ")</small>" : "") + fewNote(r) + (top && !fewReviews(r) && r.rating === top && rated.filter((x) => x === top).length < cols.length ? tick : "") : "–"), true),
     row("Dietary", cols.map(([, r]) => badges(r) || "–"))
   ];
   const ids = cols.map(([, r]) => r.id).join(",");
@@ -641,7 +641,7 @@ function renderMore() {
     return '<li class="near-row"><div class="nr-main"><a class="nr-name" href="' + esc(linkOf(r)) + '">' + esc(r.name) + "</a> " + starIcons(r.stars) +
       '<span class="nr-where">' + esc(r.cuisine) + " · " + esc(r.where) + "</span>" +
       '<span class="nr-price">' + (b ? esc(localMoney(b.price, r.cur)) + " " + mealWord(b) + (r.cur !== ask.cur ? " ≈ " + esc(money(toCur(b.price, r.cur), ask.cur)) : "") : "Price not listed yet") +
-      (r.rating ? " · " + r.rating.toFixed(1) + " Google" : "") + "</span></div>" +
+      (r.rating ? " · " + r.rating.toFixed(1) + " Google" + (fewReviews(r) ? " (" + plural(r.reviews, "review") + ")" : "") : "") + "</span></div>" +
       '<div class="nr-side">' + wishBtn(r) + "</div></li>";
   }).join("");
   const more = ask.list.length - rows.length;

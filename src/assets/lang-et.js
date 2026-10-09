@@ -34,7 +34,7 @@
     all: "Kõik", starsAria: "{n} Michelini täht|{n} Michelini tähte",
     hRestaurant: "Restoran", hCuisine: "Köök", hStars: "Tähed", hGoogle: "Google", hNotes: "Õhtusöögist", hPrice: "Hind", hWine: "Veinipakett", hWish: "Soovinimekiri",
     tableLabel: "Restoranide hinnad",
-    reviews: "{n} arvustust", ratingAria: "Google'i hinnang {r}/5", noRating: "Hinnang puudub",
+    reviews: "{n} arvustus|{n} arvustust", ratingAria: "Google'i hinnang {r}/5", noRating: "Hinnang puudub", fewReviews: "Vähe arvustusi", fewTitle: "Alla 20 Google'i arvustuse, seega hinnang pole veel usaldusväärne",
     srcSite: "Restorani koduleht", srcPress: "Allikas", srcTitle: "Kust see hind pärineb",
     perMain: "põhiroa eest", typicalSpend: "tavaline arve", notListed: "Pole märgitud",
     // The till receipt on destination pages.

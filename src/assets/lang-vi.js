@@ -37,7 +37,7 @@
     all: "Tất cả", starsAria: "{n} sao Michelin",
     hRestaurant: "Nhà hàng", hCuisine: "Ẩm thực", hStars: "Sao", hGoogle: "Google", hNotes: "Ghi chú bữa tối", hPrice: "Giá", hWine: "Rượu vang kết hợp", hWish: "Danh sách",
     tableLabel: "Giá nhà hàng",
-    reviews: "{n} đánh giá", ratingAria: "Điểm Google {r} trên 5", noRating: "Chưa có đánh giá",
+    reviews: "{n} đánh giá", ratingAria: "Điểm Google {r} trên 5", noRating: "Chưa có đánh giá", fewReviews: "Ít đánh giá", fewTitle: "Dưới 20 đánh giá trên Google nên điểm số chỉ để tham khảo",
     srcSite: "Trang web nhà hàng", srcPress: "Nguồn", srcTitle: "Giá này lấy từ đâu",
     perMain: "mỗi món chính", typicalSpend: "chi tiêu thông thường", notListed: "Chưa công bố",
     // The till receipt on destination pages.

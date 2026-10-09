@@ -36,7 +36,7 @@
     all: "Mind", starsAria: "{n} Michelin-csillag",
     hRestaurant: "Étterem", hCuisine: "Konyha", hStars: "Csillag", hGoogle: "Google", hNotes: "A vacsoráról", hPrice: "Ár", hWine: "Borpárosítás", hWish: "Kívánságlista",
     tableLabel: "Éttermi árak",
-    reviews: "{n} értékelés", ratingAria: "Google-értékelés: {r} az 5-ből", noRating: "Nincs értékelés",
+    reviews: "{n} értékelés", ratingAria: "Google-értékelés: {r} az 5-ből", noRating: "Nincs értékelés", fewReviews: "Kevés értékelés", fewTitle: "20-nál kevesebb Google-értékelés, ezért a pontszám bizonytalan",
     srcSite: "Az étterem honlapja", srcPress: "Forrás", srcTitle: "Honnan származik ez az ár",
     perMain: "főételenként", typicalSpend: "szokásos számla", notListed: "Nincs megadva",
     // The till receipt on destination pages.

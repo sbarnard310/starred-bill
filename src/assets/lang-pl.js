@@ -37,7 +37,7 @@
     all: "Wszystkie", starsAria: "Gwiazdki Michelin: {n}",
     hRestaurant: "Restauracja", hCuisine: "Kuchnia", hStars: "Gwiazdki", hGoogle: "Google", hNotes: "O kolacji", hPrice: "Cena", hWine: "Dobór win", hWish: "Ulubione",
     tableLabel: "Ceny w restauracjach",
-    reviews: "Opinie: {n}", ratingAria: "Ocena Google {r} na 5", noRating: "Brak oceny",
+    reviews: "Opinie: {n}", ratingAria: "Ocena Google {r} na 5", noRating: "Brak oceny", fewReviews: "Mało opinii", fewTitle: "Mniej niż 20 opinii w Google, więc ocena jest mało wiarygodna",
     srcSite: "Strona restauracji", srcPress: "Źródło", srcTitle: "Skąd pochodzi ta cena",
     perMain: "za danie główne", typicalSpend: "typowy rachunek", notListed: "Nie podano",
     // The till receipt on destination pages.

@@ -66,6 +66,7 @@ Compares dinner, lunch and wine pairing prices at Michelin-starred restaurants, 
 - Sources used so far:
   - Stars, addresses and map positions: guide.michelin.com, extracted in the browser.
   - Google ratings: Places API (New) Text Search, sending `Referer: https://starredbill.com/` because the key only accepts set websites.
+    Ratings from fewer than 20 reviews show a small "Few reviews" tag (`FEW_REVIEWS`, `fewReviews()` and `fewNote()` in common.js; build.py's `FEW_REVIEWS` gives home.json its `few` column): in destination lists and map pop-ups, the homepage map and Help me pick, where they also sort after the rest and never take the best-rating tick.
   - Prices: restaurant websites first, then recent reviews and booking sites.
   - Prices in the US: Tock pages (exploretock.com/<slug>) carry each menu's price in the page; OpenTable experience pages show prices including the service charge, so take the base amount (`minUnitAmount`) instead. OpenTable starts refusing after a few dozen quick fetches.
   - Prices in Japan: many top restaurants publish none. OMAKASE JapanEatinerary (omakaseje.com) restaurant pages list each course in yen, mostly including tax and service; read them with fetch() from inside an omakaseje.com browser tab, as it rate-limits heavy use. Pocket Concierge pages render in the browser after a moment. omakase.in and Tabelog show a Cloudflare check, so they can't be read, but search results quote their prices.

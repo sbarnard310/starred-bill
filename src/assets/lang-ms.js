@@ -38,7 +38,7 @@
     all: "Semua", starsAria: "{n} bintang Michelin",
     hRestaurant: "Restoran", hCuisine: "Masakan", hStars: "Bintang", hGoogle: "Google", hNotes: "Nota makan malam", hPrice: "Harga", hWine: "Padanan wain", hWish: "Senarai hajat",
     tableLabel: "Harga restoran",
-    reviews: "{n} ulasan", ratingAria: "Penilaian Google {r} daripada 5", noRating: "Tiada penilaian",
+    reviews: "{n} ulasan", ratingAria: "Penilaian Google {r} daripada 5", noRating: "Tiada penilaian", fewReviews: "Sedikit ulasan", fewTitle: "Kurang daripada 20 ulasan Google, jadi penilaian ini belum boleh diharap",
     srcSite: "Laman web restoran", srcPress: "Sumber", srcTitle: "Dari mana harga ini datang",
     perMain: "setiap hidangan utama", typicalSpend: "belanja biasa", notListed: "Tidak dinyatakan",
     // The till receipt on destination pages.

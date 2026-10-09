@@ -42,7 +42,7 @@
     all: "Alle", starsAria: "{n} Michelinster|{n} Michelinsterren",
     hRestaurant: "Restaurant", hCuisine: "Keuken", hStars: "Sterren", hGoogle: "Google", hNotes: "Over het diner", hPrice: "Prijs", hWine: "Wijnarrangement", hWish: "Verlanglijst",
     tableLabel: "Restaurantprijzen",
-    reviews: "{n} recensies", ratingAria: "Google-score {r} van 5", noRating: "Geen score",
+    reviews: "{n} recensie|{n} recensies", ratingAria: "Google-score {r} van 5", noRating: "Geen score", fewReviews: "Weinig recensies", fewTitle: "Minder dan 20 Google-recensies, dus de score zegt nog weinig",
     srcSite: "Website van het restaurant", srcPress: "Bron", srcTitle: "Waar deze prijs vandaan komt",
     perMain: "per hoofdgerecht", typicalSpend: "gemiddelde rekening", notListed: "Niet vermeld",
     // The till receipt on destination pages.

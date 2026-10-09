@@ -36,7 +36,7 @@
     all: "Све", starsAria: "Мишленове звездице: {n}",
     hRestaurant: "Ресторан", hCuisine: "Кухиња", hStars: "Звездице", hGoogle: "Google", hNotes: "О вечери", hPrice: "Цена", hWine: "Винска пратња", hWish: "Листа жеља",
     tableLabel: "Цене ресторана",
-    reviews: "Рецензије: {n}", ratingAria: "Оцена на Google-у {r} од 5", noRating: "Без оцене",
+    reviews: "Рецензије: {n}", ratingAria: "Оцена на Google-у {r} од 5", noRating: "Без оцене", fewReviews: "Мало рецензија", fewTitle: "Мање од 20 рецензија на Google-у, па оцена није поуздана",
     srcSite: "Сајт ресторана", srcPress: "Извор", srcTitle: "Одакле је ова цена",
     perMain: "по главном јелу", typicalSpend: "уобичајени рачун", notListed: "Није наведено",
     // The till receipt on destination pages.

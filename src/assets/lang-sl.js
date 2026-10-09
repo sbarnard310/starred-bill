@@ -37,7 +37,7 @@
     all: "Vse", starsAria: "Michelinove zvezdice: {n}",
     hRestaurant: "Restavracija", hCuisine: "Kuhinja", hStars: "Zvezdice", hGoogle: "Google", hNotes: "O večerji", hPrice: "Cena", hWine: "Vinska spremljava", hWish: "Seznam želja",
     tableLabel: "Cene restavracij",
-    reviews: "Mnenja: {n}", ratingAria: "Ocena Google {r} od 5", noRating: "Brez ocene",
+    reviews: "Mnenja: {n}", ratingAria: "Ocena Google {r} od 5", noRating: "Brez ocene", fewReviews: "Malo mnenj", fewTitle: "Manj kot 20 mnenj na Googlu, zato je ocena negotova",
     srcSite: "Spletna stran restavracije", srcPress: "Vir", srcTitle: "Od kod je ta cena",
     perMain: "na glavno jed", typicalSpend: "običajni račun", notListed: "Ni navedeno",
     // The till receipt on destination pages.

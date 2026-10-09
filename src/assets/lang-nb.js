@@ -37,7 +37,7 @@
     all: "Alle", starsAria: "{n} Michelinstjerne|{n} Michelinstjerner",
     hRestaurant: "Restaurant", hCuisine: "Kjøkken", hStars: "Stjerner", hGoogle: "Google", hNotes: "Om middagen", hPrice: "Pris", hWine: "Vinmeny", hWish: "Ønskeliste",
     tableLabel: "Restaurantpriser",
-    reviews: "{n} anmeldelser", ratingAria: "Google-vurdering {r} av 5", noRating: "Ingen vurdering",
+    reviews: "{n} anmeldelse|{n} anmeldelser", ratingAria: "Google-vurdering {r} av 5", noRating: "Ingen vurdering", fewReviews: "Få anmeldelser", fewTitle: "Færre enn 20 Google-anmeldelser, så vurderingen er usikker",
     srcSite: "Restaurantens nettside", srcPress: "Kilde", srcTitle: "Hvor prisen kommer fra",
     perMain: "per hovedrett", typicalSpend: "typisk regning", notListed: "Ikke oppgitt",
     // The till receipt on destination pages.

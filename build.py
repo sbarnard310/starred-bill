@@ -1992,6 +1992,9 @@ def rows_with_cities(rs, cols, city_cols, value):
     return {"cols": cols, "cityCols": city_cols, "cities": cities, "r": rows}
 
 
+FEW_REVIEWS = 20  # Google ratings from fewer reviews than this get a "Few reviews" note; keep in step with common.js
+
+
 def build_home_data(starred):
     """/data/home.json: the homepage's restaurants for the map, search and wishlist, plus those that lost their stars
     but are still open (the map's grey pins; home.js picks the recent ones). Read by homeRows() in home.js."""
@@ -2004,10 +2007,12 @@ def build_home_data(starred):
             return None if r.get(c, "menu") == "menu" else r[c]
         if c == "changeDate":  # only needed to tell how recently a restaurant lost its stars
             return r.get(c) if r.get("status") else None
+        if c == "few":  # the Google review count, only when it's too low to trust the rating (FEW_REVIEWS in common.js)
+            return r["reviews"] if r.get("rating") and r.get("reviews") is not None and r["reviews"] < FEW_REVIEWS else None
         return r.get(c)
     former = [r for r in restaurants if r.get("status") in ("lost", "changed") and r.get("lat") is not None]
     cols = ["id", "name", "stars", "cuisine", "lat", "lng", "dinner", "dinnerType", "rating", "city", "chef", "town", "nameZh", "nameJa", "cuisineZh",
-            "status", "formerStars", "changeDate", "statusNote"]
+            "status", "formerStars", "changeDate", "statusNote", "few"]
     city_cols = ["cityPath", "cityName", "cityNameZh", "country", "cur"]
     return write_data("home.json", dict(rows_with_cities(starred, cols, city_cols, value),
                                         former=rows_with_cities(former, cols, city_cols, value)))

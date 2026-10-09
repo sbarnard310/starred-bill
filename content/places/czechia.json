@@ -16,5 +16,6 @@
   "introCs": "Ceny jsou v českých korunách (CZK), s přepínačem pro zobrazení v librách, eurech nebo amerických dolarech. Ceny ověřeny v říjnu 2026; kde cena restaurace zatím chybí, bude doplněna.",
   "serviceTextCs": "Všechny částky platí pro jednoho hosta. Ceny menu zahrnují DPH. Obsluha bývá v ceně, některé restaurace ale účtují servisní poplatek; spropitné je dobrovolné. Příplatky, například za kaviár, nejsou započteny. Ceny v jiných měnách používají denní kurz a jsou přibližné.",
   "sourcesTextCs": "Večeře je hlavní degustační menu restaurace a víno k němu vinné párování, pokud ho nabízí. Ceny pocházejí z webu a jídelních lístků jednotlivých restaurací; ty, které je nezveřejňují, doplníme později.",
-  "starsTextCs": "Hodnocení Google (z 5) a počet recenzí jsme ověřili v říjnu 2026. Hvězdy pocházejí z nejnovějšího Průvodce MICHELIN pro Česko."
+  "starsTextCs": "Hodnocení Google (z 5) a počet recenzí jsme ověřili v říjnu 2026. Hvězdy pocházejí z nejnovějšího Průvodce MICHELIN pro Česko.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/cz/restaurants/all-starred"
 }

@@ -1648,6 +1648,10 @@ content:
       - name: starsTextAr
         label: "Method: stars and Google rating (Arabic)"
         type: text
+      - name: michelinGuideUrl
+        label: "Method: MICHELIN Guide link"
+        description: "The guide's starred restaurants on guide.michelin.com, e.g. https://guide.michelin.com/en/gb/restaurants/all-starred. The guide's name in the line above links to it. Set on a country (or a region or city with its own guide); places inside use it too."
+        type: string
   - name: guides
     label: Guides
     description: Explainer articles at starredbill.com/guides/<file name>/. The file name is the page's address, so don't rename a published guide.

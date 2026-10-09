@@ -15,5 +15,6 @@
   "introTr": "Fiyatlar Türk lirası (TRY) cinsindendir; sterlin, euro veya ABD doları olarak görmek için bir düğme var. Fiyatlar Ekim 2026'da kontrol edildi; fiyatı henüz görünmeyen restoranların fiyatı eklenecek.",
   "serviceTextTr": "Tüm tutarlar bir kişi içindir. Menü fiyatlarına KDV dahildir; yaklaşık %10 bahşiş bırakmak adettir. Havyar gibi ek ücretli tabaklar dahil değildir. Başka para birimlerindeki fiyatlar günün kuruyla hesaplanır ve yaklaşıktır.",
   "sourcesTextTr": "Akşam yemeği, restoranın ana tadım menüsüdür; şarap ise varsa ona eşlik eden şarap eşleştirmesidir. Fiyatlar her restoranın kendi web sitesinden ve menülerinden alınır; fiyatlarını yayımlamayan restoranlar daha sonra eklenecek.",
-  "starsTextTr": "Google puanı (5 üzerinden) ve yorum sayısı Ekim 2026'da kontrol edildi. Yıldızlar Türkiye'yi kapsayan en yeni MICHELIN Rehberi'nden gelir."
+  "starsTextTr": "Google puanı (5 üzerinden) ve yorum sayısı Ekim 2026'da kontrol edildi. Yıldızlar Türkiye'yi kapsayan en yeni MICHELIN Rehberi'nden gelir.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/tr/restaurants/all-starred"
 }

@@ -16,5 +16,6 @@
   "introSv": "Priserna anges i svenska kronor (SEK), med en knapp för att visa dem i pund, euro eller amerikanska dollar. Priserna är kontrollerade i oktober 2026; där en restaurangs pris inte visas än ska det läggas till.",
   "serviceTextSv": "Alla belopp gäller en gäst. Menypriserna är inklusive moms. Service ingår oftast, men vissa restauranger lägger till en serviceavgift; dricks är frivillig. Tillägg som kaviar räknas inte med. Priser i andra valutor använder dagens kurs och är ungefärliga.",
   "sourcesTextSv": "Middag är restaurangens huvudsakliga avsmakningsmeny, och vin är dess vinpaket där ett sådant erbjuds. Priserna kommer från varje restaurangs egen webbplats och menyer; restauranger som inte publicerar dem ska prissättas senare.",
-  "starsTextSv": "Google-betyget av 5 och antalet recensioner är kontrollerade i oktober 2026. Stjärnorna kommer från den senaste Michelinguiden för Sverige."
+  "starsTextSv": "Google-betyget av 5 och antalet recensioner är kontrollerade i oktober 2026. Stjärnorna kommer från den senaste Michelinguiden för Sverige.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/se/restaurants/all-starred"
 }

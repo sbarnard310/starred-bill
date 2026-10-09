@@ -16,5 +16,6 @@
   "introFi": "Hinnat ovat euroissa, ja ne voi vaihtaa puntiin, euroihin tai Yhdysvaltain dollareihin. Hinnat tarkistettu lokakuussa 2026; jos ravintolan hintaa ei vielä näy, se lisätään myöhemmin.",
   "serviceTextFi": "Kaikki summat ovat yhdelle ruokailijalle. Menujen hinnat sisältävät arvonlisäveron. Palvelu sisältyy yleensä hintaan, vaikka jotkin ravintolat lisäävät palvelumaksun; tippi on vapaaehtoinen. Lisämaksulliset annokset, kuten kaviaari, eivät ole mukana. Muissa valuutoissa näytetyt hinnat käyttävät päivän vaihtokurssia ja ovat likimääräisiä.",
   "sourcesTextFi": "Illallinen on ravintolan tärkein maistelumenu, ja viini sen viinipaketti, jos sellainen on. Hinnat ovat ravintoloiden omilta verkkosivuilta ja menuista; ravintolat, jotka eivät julkaise hintoja, lisätään myöhemmin.",
-  "starsTextFi": "Google-arvio (asteikolla 1–5) ja arvostelujen määrä on tarkistettu lokakuussa 2026. Tähdet ovat uusimmasta Suomea koskevasta Michelin-oppaasta."
+  "starsTextFi": "Google-arvio (asteikolla 1–5) ja arvostelujen määrä on tarkistettu lokakuussa 2026. Tähdet ovat uusimmasta Suomea koskevasta Michelin-oppaasta.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/fi/restaurants/all-starred"
 }

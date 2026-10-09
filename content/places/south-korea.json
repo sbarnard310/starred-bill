@@ -16,5 +16,6 @@
   "sourcesText": "Dinner is the restaurant's main tasting course, and wine is the cheapest pairing for it where one is offered. Prices come from each restaurant's own website where they're published, otherwise from recent reviews and booking sites such as CatchTable. Lunch is the restaurant's lunch course, and the note says which days it's served.",
   "sourcesTextKo": "디너는 레스토랑의 대표 테이스팅 코스이고, 와인은 페어링이 있는 경우 가장 저렴한 페어링입니다. 레스토랑 공식 사이트에 가격이 있으면 그것을, 없으면 최근 리뷰와 캐치테이블 같은 예약 사이트를 참고했습니다. 런치는 런치 코스이며, 제공 요일은 메모에 적었습니다.",
   "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Seoul & Busan 2026, announced in March 2026; green ▲ and red ▼ marks show the stars gained and lost in that guide.",
-  "starsTextKo": "Google 평점(5점 만점)과 리뷰 수는 2026년 10월에 확인했습니다. 별은 2026년 3월에 발표된 미쉐린 가이드 서울 & 부산 2026 기준이며, 초록색 ▲와 빨간색 ▼는 그 가이드에서 별을 얻거나 잃은 곳을 나타냅니다."
+  "starsTextKo": "Google 평점(5점 만점)과 리뷰 수는 2026년 10월에 확인했습니다. 별은 2026년 3월에 발표된 미쉐린 가이드 서울 & 부산 2026 기준이며, 초록색 ▲와 빨간색 ▼는 그 가이드에서 별을 얻거나 잃은 곳을 나타냅니다.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/kr/restaurants/all-starred"
 }

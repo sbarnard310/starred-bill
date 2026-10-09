@@ -22,5 +22,6 @@
   "introFr": "Les prix sont en euros, avec un bouton pour les afficher en livres sterling, en euros ou en dollars américains. Prix vérifiés en octobre 2026 ; lorsque le prix d'un restaurant n'apparaît pas encore, il reste à ajouter.",
   "serviceTextFr": "Chaque montant s'entend pour une personne. Les prix des menus comprennent la TVA. Le service est généralement compris, même si certains restaurants ajoutent des frais de service ; le pourboire est libre. Les suppléments comme le caviar ne sont pas inclus. Les prix affichés dans une autre devise utilisent le taux de change du jour et sont approximatifs.",
   "sourcesTextFr": "Le dîner correspond au menu dégustation principal du restaurant, et le vin à son accord mets-vins lorsqu'il en propose un. Les prix proviennent du site et des menus de chaque restaurant ; ceux qui ne les publient pas restent à ajouter.",
-  "starsTextFr": "La note Google sur 5 et le nombre d'avis ont été vérifiés en octobre 2026. Les étoiles proviennent de la dernière édition du Guide MICHELIN Belgique & Luxembourg."
+  "starsTextFr": "La note Google sur 5 et le nombre d'avis ont été vérifiés en octobre 2026. Les étoiles proviennent de la dernière édition du Guide MICHELIN Belgique & Luxembourg.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/be/restaurants/all-starred"
 }

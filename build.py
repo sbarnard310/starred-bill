@@ -806,7 +806,7 @@ def build_place(p):
             "updated": updated,
             "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang),
             "browse": browse_html(p, page, starred, lang) if starred else "",
-        }), lang, page, starred), page, lang))
+        }), lang, page, starred, inherited(p, "michelinGuideUrl")), page, lang))
 
 
 # A destination page's restaurants bigger than this (in characters) go in /data/places/<id>.js rather than the page.
@@ -1221,9 +1221,45 @@ def word_n(lang, key, n, values=None):
     return text
 
 
-def section_words(html_text, lang, page, starred):
+# The MICHELIN Guide's name in a star source line ("Stars come from the MICHELIN Guide Great Britain & Ireland 2026"), in
+# every language a page offers: a guide word before the brand (Guía, Průvodce, دليل…), the brand with its endings
+# (Michelinguiden, Мишленовог), a guide word after it (Gids, ガイド, 指南…), then the guide's own name up to its year, or
+# else its capitalised words. A title in 《》 or 『』 is linked whole.
+MICHELIN_BRAND = r"(?:MICHELIN|Michelin|ミシュラン|미쉐린|米其林|米芝蓮|มิชลิน|ميشلان|Мишлен)"
+MICHELIN_GUIDE_RE = re.compile(
+    r"(?:(?:Guide|Guía|Guia|Guida|Průvodce|Przewodnika|Οδηγού|vodiča|vodnika|Panduan|Gwida|Cẩm nang|دليل)\s+|„)?"
+    + MICHELIN_BRAND + r"[\w'’-]*"
+    + r"(?:“?\s?(?:Guides?|Gids|Rehberi[\w'’]*|gido|teejuhist|ceļveža|водича|ガイド|가이드|指南|ไกด์)(?!\w))?")
+GUIDE_NAME_STOP = r"\s,.;:()（）、。،؛《》『』「」\"“”"
+GUIDE_YEAR_RE = re.compile(r"(?:\s*[^" + GUIDE_NAME_STOP + r"]+?){0,5}?\s*(?:19|20)\d\d(?!\d)")
+GUIDE_CAPS_RE = re.compile(r"(?:\s+(?:[A-ZÀ-ÖØ-Þ][^" + GUIDE_NAME_STOP + r"]*|&(?=\s+[A-ZÀ-ÖØ-Þ])))+")
+
+
+def link_michelin_guide(text, url):
+    """Escapes a star source line and links its first mention of the MICHELIN Guide to that guide's starred
+    restaurants on guide.michelin.com (the place's michelinGuideUrl)."""
+    if not url:
+        return e(text)
+    span = None
+    title = re.search(r"[《『]([^《》『』]*" + MICHELIN_BRAND + r"[^《》『』]*)[》』]", text)
+    if title:
+        span = title.span(1)
+    else:
+        m = MICHELIN_GUIDE_RE.search(text)
+        if m:
+            rest = text[m.end():]
+            more = GUIDE_YEAR_RE.match(rest) or GUIDE_CAPS_RE.match(rest)
+            span = (m.start(), m.end() + (more.end() if more else 0))
+    if not span:
+        return e(text)
+    a, b = span
+    return (e(text[:a]) + f'<a href="{e(url)}" target="_blank" rel="noopener">{e(text[a:b])}</a>' + e(text[b:]))
+
+
+def section_words(html_text, lang, page, starred, michelin_url=None):
     """Fills a destination page's empty data-i18n headings and paragraphs in its language. Places with no starred
-    restaurant left head the list "No longer starred", as place.js does."""
+    restaurant left head the list "No longer starred", as place.js does. The star source line (m3Text) links to the
+    place's MICHELIN Guide selection."""
     own = {k: pick_lang(page, f, lang) for k, f in OWN_SECTION_TEXTS.items()}
     if not starred:
         own.update(compareTitle=None, compareText=None)
@@ -1235,6 +1271,10 @@ def section_words(html_text, lang, page, starred):
         key = m.group(3)
         if key not in SECTION_KEYS:
             return m.group(0)
+        if key == "m3Text" and michelin_url:
+            # Marked data-own rather than data-i18n, so common.js's applyI18n() leaves the link in place.
+            return (m.group(1).replace('data-i18n="m3Text"', 'data-own="m3Text"')
+                    + link_michelin_guide(own.get(key) or word(lang, key, {}), michelin_url) + m.group(4))
         text = e(own[key]) if own.get(key) else word(lang, swap.get(key, key), {})
         return m.group(1) + text + m.group(4)
     return re.sub(r'(<(\w+)\b[^>]*\bdata-i18n="(\w+)"[^>]*>)(</\2>)', fill, html_text)

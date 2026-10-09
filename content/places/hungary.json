@@ -16,5 +16,6 @@
   "introHu": "Az árak forintban (HUF) értendők, egy gombbal fontban, euróban vagy amerikai dollárban is megnézhetők. Az árakat 2026 októberében ellenőriztük; ahol egy étterem ára még nem látható, később kerül fel.",
   "serviceTextHu": "Minden összeg egy vendégre vonatkozik. A menüárak tartalmazzák az áfát. A legtöbb budapesti felsőkategóriás étterem 10–15% szervizdíjat számol fel a számlán, így további borravaló nem szükséges; máshol nagyjából 10% borravaló szokás. A felárak, például a kaviár, nincsenek benne. A más pénznemben mutatott árak a napi árfolyammal számolnak, és tájékoztató jellegűek.",
   "sourcesTextHu": "A vacsora az étterem fő kóstolómenüje, a bor pedig a hozzá tartozó borpárosítás, ha van. Az árak az éttermek saját honlapjáról és étlapjairól származnak; amelyek nem teszik közzé őket, később kerülnek fel.",
-  "starsTextHu": "A Google-értékelést (5-ös skálán) és az értékelések számát 2026 októberében ellenőriztük. A csillagok a legfrissebb magyarországi MICHELIN-kalauzból származnak."
+  "starsTextHu": "A Google-értékelést (5-ös skálán) és az értékelések számát 2026 októberében ellenőriztük. A csillagok a legfrissebb magyarországi MICHELIN-kalauzból származnak.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/hu/restaurants/all-starred"
 }

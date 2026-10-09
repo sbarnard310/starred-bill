@@ -16,5 +16,6 @@
   "introPt": "Os preços estão em reais (R$), com um botão para os ver em libras, euros ou dólares americanos. Preços verificados em outubro de 2026; quando o preço de um restaurante ainda não aparece, falta adicioná-lo.",
   "serviceTextPt": "Todos os valores são para um cliente. Normalmente é acrescentada à conta uma taxa de serviço de 10%. Suplementos como caviar ficam de fora. Os preços noutras moedas usam a taxa de câmbio do dia e são aproximados.",
   "sourcesTextPt": "O jantar é o principal menu de degustação do restaurante, e o vinho é a sua harmonização, quando existe. Os preços vêm do site e dos menus de cada restaurante; os que não os publicam ainda estão por adicionar.",
-  "starsTextPt": "A avaliação Google (em 5) e o número de avaliações foram verificados em outubro de 2026. As estrelas vêm do Guia MICHELIN mais recente para o Brasil."
+  "starsTextPt": "A avaliação Google (em 5) e o número de avaliações foram verificados em outubro de 2026. As estrelas vêm do Guia MICHELIN mais recente para o Brasil.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/br/restaurants/all-starred"
 }

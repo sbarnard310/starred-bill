@@ -51,7 +51,7 @@ Optional `languages`, set on a country: the language buttons its pages offer (En
 
 Optional `title`, `description` and `lead`, English only and never passed down: a place's own page title (up to 61 characters), search-result snippet (up to 155) and opening sentence, replacing the generated ones. Use them for pages that answer a question first, e.g. Boston's "Michelin Star Restaurants in Boston: Are There Any? (2026)" (Brief 15), and refresh them after each guide.
 
-Optional text, set on a country and used by everything inside it unless a region or city sets its own: `inSentence` (the name mid-sentence, e.g. "the UK"), `intro`, `serviceText`, `sourcesText`, `starsText`, each with a `...Zh` version for Chinese.
+Optional text, set on a country and used by everything inside it unless a region or city sets its own: `inSentence` (the name mid-sentence, e.g. "the UK"), `intro`, `serviceText`, `sourcesText`, `starsText`, each with a `...Zh` version for Chinese. `michelinGuideUrl` is that guide's starred restaurants on guide.michelin.com (`https://guide.michelin.com/en/<country code>/restaurants/all-starred`, or `/us/en/<state>/restaurants/all-starred` for a US state's guide); the first mention of the MICHELIN Guide in `starsText` (in each language) links to it.
 
 ## Restaurants
 

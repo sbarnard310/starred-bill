@@ -12,5 +12,6 @@
   "sourcesText": "Dinner is the main tasting or omakase menu where there is one, and wine is the cheapest pairing for it. We take prices from each restaurant's own website where they're published, otherwise from its booking page (Tock, Resy or OpenTable), recent reviews and guides. À la carte restaurants show a typical main course (“per main”). Lunch is the set or tasting lunch menu where there is one.",
   "sourcesTextZh": "晚餐以主要品嚐套餐或廚師發辦為準，餐酒搭配則取該套餐最便宜的選項。有公布價格的，以餐廳官網為準；否則參考其訂位頁面（Tock、Resy 或 OpenTable）、近期評論與指南。單點餐廳則顯示一般主菜價格（每道主菜）。午餐以午間套餐或品嚐套餐為準。",
   "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide for each area. A green ▲ marks a restaurant that gained a star in one of the last two guides; a red ▼ marks one that lost a star.",
-  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自各地區最新一版米其林指南。綠色 ▲ 代表在最近兩版指南中獲得星級；紅色 ▼ 代表失去星級。"
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自各地區最新一版米其林指南。綠色 ▲ 代表在最近兩版指南中獲得星級；紅色 ▼ 代表失去星級。",
+  "michelinGuideUrl": "https://guide.michelin.com/en/us/restaurants/all-starred"
 }

@@ -6,5 +6,6 @@
   "nameZh": "加州",
   "intro": "Covers the whole state, including every starred restaurant in the Bay Area, from San Francisco and Oakland to Silicon Valley, Napa and Sonoma.",
   "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide California 2026, announced in June 2026. A green ▲ marks a restaurant that gained a star in the June 2025 or June 2026 guide; a red ▼ marks one that lost a star.",
-  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 6 月公布的《加州米其林指南 2026》。綠色 ▲ 代表在 2025 年 6 月或 2026 年 6 月的指南中獲得星級；紅色 ▼ 代表失去星級。"
+  "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2026 年 6 月公布的《加州米其林指南 2026》。綠色 ▲ 代表在 2025 年 6 月或 2026 年 6 月的指南中獲得星級；紅色 ▼ 代表失去星級。",
+  "michelinGuideUrl": "https://guide.michelin.com/us/en/california/restaurants/all-starred"
 }

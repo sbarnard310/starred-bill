@@ -14,5 +14,6 @@
   "introMs": "Harga dalam ringgit Malaysia (RM), dengan suis untuk melihatnya dalam paun, euro atau dolar AS. Harga disemak pada Oktober 2026; jika harga restoran belum dipaparkan, ia akan ditambah kemudian.",
   "serviceTextMs": "Setiap angka adalah untuk seorang tetamu. Banyak restoran menyebut harga “++”, iaitu ditambah caj perkhidmatan 10% dan cukai perkhidmatan pada bil. Tambahan seperti kaviar tidak dikira. Harga dalam mata wang lain menggunakan kadar pertukaran hari itu dan merupakan anggaran.",
   "sourcesTextMs": "Makan malam ialah menu rasa utama restoran, dan wain ialah padanan wainnya jika ada. Harga diambil daripada laman web dan menu setiap restoran; restoran yang tidak menyiarkannya akan ditambah kemudian.",
-  "starsTextMs": "Skor ulasan Google daripada 5 dan bilangan ulasan, disemak pada Oktober 2026. Bintang diambil daripada Panduan MICHELIN terkini bagi Malaysia."
+  "starsTextMs": "Skor ulasan Google daripada 5 dan bilangan ulasan, disemak pada Oktober 2026. Bintang diambil daripada Panduan MICHELIN terkini bagi Malaysia.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/my/restaurants/all-starred"
 }

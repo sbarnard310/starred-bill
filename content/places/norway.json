@@ -15,5 +15,6 @@
   "introNb": "Prisene er i norske kroner (NOK), med en knapp for å vise dem i pund, euro eller amerikanske dollar. Prisene er sjekket i oktober 2026; der en restaurants pris ikke vises ennå, skal den legges til.",
   "serviceTextNb": "Alle beløp gjelder én gjest. Menyprisene er inkludert mva. Service er som regel inkludert, men noen restauranter legger til en serviceavgift; tips er frivillig. Tillegg som kaviar er ikke med. Priser i andre valutaer bruker dagens kurs og er omtrentlige.",
   "sourcesTextNb": "Middag er restaurantens viktigste smaksmeny, og vin er vinmenyen til den der det finnes en. Prisene kommer fra hver restaurants egen nettside og menyer; restauranter som ikke publiserer dem, skal prises senere.",
-  "starsTextNb": "Google-vurderingen (av 5) og antall anmeldelser er sjekket i oktober 2026. Stjernene kommer fra den nyeste Michelinguiden for Norge."
+  "starsTextNb": "Google-vurderingen (av 5) og antall anmeldelser er sjekket i oktober 2026. Stjernene kommer fra den nyeste Michelinguiden for Norge.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/no/restaurants/all-starred"
 }

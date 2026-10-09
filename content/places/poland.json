@@ -16,5 +16,6 @@
   "introPl": "Ceny podano w złotych (PLN), z przełącznikiem na funty, euro lub dolary amerykańskie. Ceny sprawdzone w październiku 2026; jeśli cena restauracji jeszcze się nie wyświetla, zostanie dodana.",
   "serviceTextPl": "Wszystkie kwoty dotyczą jednego gościa. Ceny menu zawierają VAT. Serwis jest zwykle wliczony, choć niektóre restauracje doliczają opłatę serwisową; napiwek jest dobrowolny. Dopłaty, np. za kawior, są pominięte. Ceny w innych walutach liczone są po kursie z danego dnia i są przybliżone.",
   "sourcesTextPl": "Kolacja to główne menu degustacyjne restauracji, a wino to dobór win do niego, jeśli jest oferowany. Ceny pochodzą ze strony i kart każdej restauracji; te, które ich nie publikują, zostaną dodane później.",
-  "starsTextPl": "Ocenę Google (na 5) i liczbę opinii sprawdziliśmy w październiku 2026. Gwiazdki pochodzą z najnowszego Przewodnika MICHELIN obejmującego Polskę."
+  "starsTextPl": "Ocenę Google (na 5) i liczbę opinii sprawdziliśmy w październiku 2026. Gwiazdki pochodzą z najnowszego Przewodnika MICHELIN obejmującego Polskę.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/pl/restaurants/all-starred"
 }

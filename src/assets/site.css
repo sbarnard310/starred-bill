@@ -353,6 +353,7 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .method div { display: grid; gap: 8px; align-content: start; }
 .method h3 { font-size: 1.15rem; }
 .method p { color: var(--muted); font-size: .95rem; }
+.method p a { color: var(--green); font-weight: 600; text-underline-offset: 3px; }
 /* Destination FAQ (destination_faq() in build.py): two columns of questions on computers, one on phones. */
 .faq { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; }
 .faq div { display: grid; gap: 8px; align-content: start; }

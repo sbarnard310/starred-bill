@@ -16,5 +16,6 @@
   "introIs": "Verð eru í íslenskum krónum (ISK), með hnappi til að sjá þau í pundum, evrum eða Bandaríkjadölum. Verð á seðlum eru með virðisaukaskatti og þjónustu; ekki er gert ráð fyrir þjórfé. Verð athuguð í október 2026.",
   "serviceTextIs": "Allar tölur eru fyrir einn gest. Íslensk verð á seðlum eru með virðisaukaskatti og þjónustu, svo engu þarf að bæta við fyrir matinn; ekki er gert ráð fyrir þjórfé. Verð í öðrum gjaldmiðlum miðast við gengi dagsins og eru áætluð.",
   "sourcesTextIs": "Kvöldverður er smakkseðill staðarins og vín er vínpörunin með honum. Verðin koma af vefsíðu hvers staðar ef þau eru birt þar, annars úr nýlegum umsögnum.",
-  "starsTextIs": "Google-einkunnin af 5 og fjöldi umsagna voru athuguð í október 2026. Stjörnurnar eru úr MICHELIN-handbókinni fyrir Norðurlöndin 2026."
+  "starsTextIs": "Google-einkunnin af 5 og fjöldi umsagna voru athuguð í október 2026. Stjörnurnar eru úr MICHELIN-handbókinni fyrir Norðurlöndin 2026.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/is/restaurants/all-starred"
 }

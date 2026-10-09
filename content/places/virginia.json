@@ -3,5 +3,6 @@
   "type": "region",
   "parent": "usa",
   "name": "Virginia",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Virginia."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guide covering Virginia.",
+  "michelinGuideUrl": "https://guide.michelin.com/us/en/virginia/restaurants/all-starred"
 }

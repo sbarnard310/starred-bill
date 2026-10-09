@@ -145,9 +145,10 @@ function applyStatic() {
     document.querySelector('[data-i18n="compareTitle"]').textContent = t("formerTitle");
     document.querySelector('[data-i18n="compareText"]').textContent = t("formerNote");
   }
+  // A star source line written in with its link to the MICHELIN Guide (data-own, link_michelin_guide() in build.py) stays.
   [["m1Text", "serviceText"], ["m2Text", "sourcesText"], ["m3Text", "starsText"]].forEach(([key, field]) => {
-    const own = pick(PAGE, field);
-    if (own) document.querySelector('[data-i18n="' + key + '"]').textContent = own;
+    const own = pick(PAGE, field), el = document.querySelector('[data-i18n="' + key + '"]');
+    if (own && el) el.textContent = own;
   });
   const ex = pick(PAGE, "searchEx");
   fitPlaceholder($("q"), [ex ? t("searchPhEx", { ex }) : null, t("searchPh"), tHas("searchPhShort")]);

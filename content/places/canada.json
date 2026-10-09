@@ -8,5 +8,6 @@
   "intro": "Toronto and Ontario, Vancouver, and Québec (Montréal, Québec City and beyond). Prices are in Canadian dollars (CA$), with a switch to see them in pounds, euros or US dollars, before sales tax and the tip (or the service charge some restaurants add). Prices checked October 2026.",
   "serviceText": "Every figure is for one guest, before sales tax (5–15% depending on the province) and the tip, usually 18–20%; some restaurants add a fixed service charge instead. Prices shown in other currencies use the day's exchange rate and are approximate.",
   "sourcesText": "Dinner is the restaurant's main tasting menu, and wine is its wine pairing where one is offered. Prices come from each restaurant's own website or booking page where they're published, otherwise from recent reviews.",
-  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guides for Toronto & Region (September 2026), Québec (2026) and Vancouver (October 2026). A green ▲ marks a restaurant that gained a star in one of the last two guides; a red ▼ marks one that lost a star."
+  "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the latest MICHELIN Guides for Toronto & Region (September 2026), Québec (2026) and Vancouver (October 2026). A green ▲ marks a restaurant that gained a star in one of the last two guides; a red ▼ marks one that lost a star.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/ca/restaurants/all-starred"
 }

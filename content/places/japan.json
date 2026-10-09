@@ -20,5 +20,6 @@
   "sourcesTextJa": "ディナーはメインのテイスティングコースまたはおまかせコース、ペアリングは店が提示する最も安いもの（日本料理店では日本酒の場合が多い）を掲載しています。東京のトップレストランの多くは料金を公開していないため、多くの金額は各店が利用する予約サービス（OMAKASE、Pocket Concierge、TableCheck など）から、それ以外は店舗の公式サイトや最近のレビューから引用しています。複数のコースがある店は最も安いものを表示し、備考に「最安値」と記載しています。ランチはランチコースまたはテイスティングコースで、提供日を備考に記載しています。料金をどこにも公開していない店は「非公開」と表示しています。",
   "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Tokyo 2026, announced on 25 September 2025; the 2027 guide is due on 16 February 2027. A green ▲ marks a restaurant that gained a star in the October 2024 or September 2025 guide; a red ▼ marks one that lost its stars.",
   "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2025 年 9 月 25 日公布的《米其林指南東京 2026》，2027 年版預計於 2027 年 2 月 16 日公布。綠色 ▲ 代表在 2024 年 10 月或 2025 年 9 月的指南中獲得星級；紅色 ▼ 代表失去星級。",
-  "starsTextJa": "Googleの評価（5点満点）とレビュー数は2026年10月に確認しました。星は2025年9月25日に発表された『ミシュランガイド東京2026』によるものです。2027年版は2027年2月16日に発表予定です。緑の ▲ は2024年10月または2025年9月のガイドで星を獲得した店、赤の ▼ は星を失った店を示します。"
+  "starsTextJa": "Googleの評価（5点満点）とレビュー数は2026年10月に確認しました。星は2025年9月25日に発表された『ミシュランガイド東京2026』によるものです。2027年版は2027年2月16日に発表予定です。緑の ▲ は2024年10月または2025年9月のガイドで星を獲得した店、赤の ▼ は星を失った店を示します。",
+  "michelinGuideUrl": "https://guide.michelin.com/en/jp/restaurants/all-starred"
 }

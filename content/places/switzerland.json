@@ -30,5 +30,6 @@
   "introIt": "I prezzi sono in franchi svizzeri (CHF), con un selettore per vederli in sterline, euro o dollari americani. Prezzi verificati a ottobre 2026; dove il prezzo di un ristorante non compare ancora, è da aggiungere.",
   "serviceTextIt": "Ogni importo è per un ospite. I prezzi dei menu includono l'IVA. Il servizio è di solito compreso, anche se alcuni ristoranti aggiungono un supplemento; la mancia è facoltativa. I supplementi come il caviale non sono inclusi. I prezzi in altre valute usano il cambio del giorno e sono indicativi.",
   "sourcesTextIt": "La cena è il menu degustazione principale del ristorante e il vino è il suo abbinamento, quando c'è. I prezzi provengono dal sito e dai menu di ciascun ristorante; quelli che non li pubblicano sono ancora da aggiungere.",
-  "starsTextIt": "Il punteggio Google su 5 e il numero di recensioni sono stati verificati a ottobre 2026. Le stelle sono quelle dell'ultima Guida MICHELIN Svizzera."
+  "starsTextIt": "Il punteggio Google su 5 e il numero di recensioni sono stati verificati a ottobre 2026. Le stelle sono quelle dell'ultima Guida MICHELIN Svizzera.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/ch/restaurants/all-starred"
 }

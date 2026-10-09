@@ -16,5 +16,6 @@
   "introHr": "Cijene su u eurima, uz gumb za prikaz u funtama, eurima ili američkim dolarima. Cijene provjerene u listopadu 2026.; gdje cijena restorana još nije prikazana, tek će biti dodana.",
   "serviceTextHr": "Svi iznosi vrijede za jednog gosta. Cijene menija uključuju PDV. Usluga je obično uključena, iako neki restorani dodaju naknadu za uslugu; napojnica je dobrovoljna. Nadoplate poput kavijara nisu uključene. Cijene u drugim valutama preračunate su po dnevnom tečaju i približne su.",
   "sourcesTextHr": "Večera je glavni degustacijski meni restorana, a vino njegova vinska pratnja ako je nudi. Cijene su preuzete s mrežnih stranica i menija restorana; restorani koji ih ne objavljuju tek će biti dodani.",
-  "starsTextHr": "Ocjena na Googleu (od 5) i broj recenzija provjereni su u listopadu 2026. Zvjezdice su iz najnovijeg vodiča MICHELIN za Hrvatsku."
+  "starsTextHr": "Ocjena na Googleu (od 5) i broj recenzija provjereni su u listopadu 2026. Zvjezdice su iz najnovijeg vodiča MICHELIN za Hrvatsku.",
+  "michelinGuideUrl": "https://guide.michelin.com/en/hr/restaurants/all-starred"
 }

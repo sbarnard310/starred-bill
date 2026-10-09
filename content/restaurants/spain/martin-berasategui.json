@@ -10,18 +10,18 @@
   "reviews": 1708,
   "dinner": 395,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, two to choose from · dinner Fri–Sat only",
+  "dinnerNote": "Tasting menu (à la carte menu also €395)",
   "dinnerNoteZh": "品嚐套餐，兩款可選・晚餐僅週五至週六",
   "dinnerNoteEs": "Menú degustación, dos a elegir · cenas solo vie–sáb",
   "sourceType": "site",
-  "source": "https://www.martinberasategui.com/es/inicio",
+  "source": "https://www.martinberasategui.com/en/menus",
   "lunch": 395,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNote": "The same menus at lunch",
   "lunchNoteZh": "午餐供應相同套餐・週三至週日",
   "lunchNoteEs": "El mismo menú al mediodía · mié–dom",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.martinberasategui.com/es/inicio",
+  "lunchSource": "https://www.martinberasategui.com/en/menus",
   "website": "https://www.martinberasategui.com/es/inicio",
   "lat": 43.266935,
   "lng": -2.015721,
@@ -32,5 +32,34 @@
     "gluten-free"
   ],
   "chef": "Martín Berasategui",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 210,
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 395,
+      "wine": 210,
+      "note": "Lunch or dinner; adapted to dietary needs; the 'Excellence' wine selection is €750"
+    },
+    {
+      "name": "À la carte menu",
+      "meal": "dinner",
+      "price": 395,
+      "wine": 210,
+      "note": "Six appetisers, then a starter, main course and dessert of your choice, with half portions possible"
+    }
+  ],
+  "menusSource": "https://www.martinberasategui.com/en/menus",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2001,
+  "dressCode": "Smart casual. Men don't need a jacket, but trousers and closed shoes are required.",
+  "children": "Babies and children under 7 aren't allowed.",
+  "bookingOpens": "Online through the restaurant's website or by phone. From March to June and October to December it opens Wednesday, Thursday and Sunday for lunch and Friday and Saturday for lunch and dinner; July to September, dinner on Thursday too. Closed for the winter from 13 December 2026 to 9 March 2027.",
+  "bookingUrl": "https://www.martinberasategui.com/en/reservar",
+  "bookingPhone": "+34 943 366 471",
+  "cancellation": "A credit card guarantees bookings of 1 to 5. Cancel in writing (info@martinberasategui.com) more than 48 hours ahead (96 hours for 6–10 guests, 10 days for 11–20), or pay €220 per person; the same applies to anyone who doesn't turn up.",
+  "groups": "Groups of 6 or more prepay €220 per person, taken off the bill on the day.",
+  "infoSource": "https://www.martinberasategui.com/en/reservar",
+  "infoChecked": "2026-10-09"
 }

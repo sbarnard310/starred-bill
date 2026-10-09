@@ -13,10 +13,10 @@
   "changeDate": "2025-11",
   "rating": 4.6,
   "reviews": 109,
-  "dinner": 450,
+  "dinner": 495,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase",
-  "sourceType": "press",
+  "dinnerNote": "Shorter Omakase at the Hinoki counter, prepaid",
+  "sourceType": "site",
   "source": "https://www.exploretock.com/sushi-sho-nyc",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -26,5 +26,20 @@
   "placeId": "ChIJT_JHTgFZwokRXleXHadsVaE",
   "michelinId": "1213976",
   "chef": "Keiji Nakazawa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Shorter Omakase at the Hinoki counter",
+      "meal": "dinner",
+      "price": 495,
+      "note": "Prepaid on Tock, for parties of 1 to 4; seats at the counter guaranteed"
+    }
+  ],
+  "menusSource": "https://www.exploretock.com/sushi-sho-nyc",
+  "menusChecked": "2026-10-09",
+  "bookingOpens": "Online through Tock only, as prepaid reservations. New dates are released on the 1st of the month at 4pm New York time, about three months ahead (tables up to 31 January 2027 are open now; the next release is on 1 November 2026).",
+  "bookingUrl": "https://www.exploretock.com/sushi-sho-nyc",
+  "cancellation": "The restaurant texts or calls to confirm the day before; if you don't reply by the end of that day, it may cancel the booking, and refunds may not be given.",
+  "infoSource": "https://www.exploretock.com/sushi-sho-nyc",
+  "infoChecked": "2026-10-09"
 }

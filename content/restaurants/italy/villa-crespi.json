@@ -9,11 +9,11 @@
   "reviews": 6592,
   "dinnerType": "menu",
   "dinner": 330,
-  "dinnerNote": "Tasting menu (other menus from €290)",
+  "dinnerNote": "Inner Spirit tasting menu, for the whole table (Italian Journey menu €290)",
   "dinnerNoteIt": "Menu degustazione (altri menu da 290 €)",
   "sourceType": "site",
-  "source": "https://villacrespi.it/menu/",
-  "lunchNote": "Open for lunch · Wed–Sun",
+  "source": "https://villacrespi.it/en/menu/",
+  "lunchNote": "The same menus at lunch",
   "lunchNoteIt": "Aperto a pranzo · mer–dom",
   "website": "https://www.villacrespi.it",
   "lat": 45.7964778,
@@ -25,5 +25,43 @@
     "gluten-free"
   ],
   "chef": "Antonino Cannavacciuolo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "hotel": "the Villa Crespi hotel by Lake Orta",
+  "menus": [
+    {
+      "name": "Inner Spirit tasting menu",
+      "meal": "dinner",
+      "price": 330,
+      "note": "For the whole table; lunch or dinner; wine pairing from the wine list"
+    },
+    {
+      "name": "Italian Journey menu",
+      "meal": "dinner",
+      "price": 290,
+      "note": "Can be ordered by some of the table, alongside the à la carte"
+    },
+    {
+      "name": "Three-course à la carte",
+      "meal": "dinner",
+      "price": 290,
+      "courses": 3
+    },
+    {
+      "name": "Two-course à la carte",
+      "meal": "dinner",
+      "price": 230,
+      "courses": 2
+    }
+  ],
+  "menusSource": "https://villacrespi.it/en/menu/",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2022,
+  "dressCode": "Smart casual. Men need trousers, a long-sleeved shirt or jumper, and closed shoes.",
+  "bookingOpens": "Online on the restaurant's website or by phone; book well ahead. Closed on Mondays and Tuesdays, and for a winter break in January and a summer break in August.",
+  "bookingUrl": "https://villacrespi.it/en/book-a-table/",
+  "bookingPhone": "+39 0322 911902",
+  "waitlist": "If your date is full, join the waiting list; the reservations team phones or emails if a table comes free.",
+  "cancellation": "Your card is authorised for the cost of the table when you book, and released in full if you cancel within the terms of the booking conditions.",
+  "infoSource": "https://villacrespi.it/en/faqs/",
+  "infoChecked": "2026-10-09"
 }

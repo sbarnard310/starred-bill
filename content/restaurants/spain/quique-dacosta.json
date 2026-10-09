@@ -9,18 +9,18 @@
   "reviews": 1496,
   "dinnerType": "menu",
   "dinner": 315,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Menu 'Octavo', the season's tasting menu",
   "dinnerNoteEs": "Menú degustación",
   "wine": 165,
   "sourceType": "site",
-  "source": "https://quiquedacosta.es/",
+  "source": "https://quiquedacosta.es/en/home/",
   "lunch": 315,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNote": "The same menu at lunch",
   "lunchNoteEs": "El mismo menú al mediodía · mié–dom",
   "lunchWine": 165,
   "lunchSourceType": "site",
-  "lunchSource": "https://quiquedacosta.es/",
+  "lunchSource": "https://quiquedacosta.es/en/home/",
   "website": "https://www.quiquedacosta.es/",
   "lat": 38.8537884,
   "lng": 0.0852209,
@@ -31,5 +31,27 @@
     "gluten-free"
   ],
   "chef": "Quique Dacosta",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Menu 'Octavo'",
+      "meal": "dinner",
+      "price": 315,
+      "wine": 165,
+      "note": "Lunch or dinner; snacks in the garden, then the dining room; premium wine pairing €215; drinks with the snacks are extra; adapted for vegetarians on request"
+    }
+  ],
+  "menusSource": "https://quiquedacosta.es/en/home/",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2012,
+  "dressCode": "Smart casual: cool and comfortable, with some elegance.",
+  "children": "The meal isn't intended for children under 10. There are no high chairs or children's menus, but the kitchen can make something for a child, from €98.",
+  "duration": "Two and a half to three hours.",
+  "bookingOpens": "Online through CoverManager, or by phone. Guests arrive 1:30pm–2pm for lunch and 8:30pm–9pm for dinner; punctuality matters. For a same-day table, phone.",
+  "bookingUrl": "https://www.covermanager.com/reservation/module_restaurant/restaurante-quique-dacosta/english",
+  "bookingPhone": "+34 965 784 179",
+  "cancellation": "Your card is authorised for €150 per guest (not charged). Cancelling or changing less than five days before, or not turning up, means the €150 is charged. Bookings can be passed to someone else.",
+  "groups": "For more than 8 guests or events, email quiquedacosta@quiquedacosta.es. Separate bookings can't be joined into one table.",
+  "infoSource": "https://quiquedacosta.es/en/frequently-asked-questions/",
+  "infoChecked": "2026-10-09"
 }

@@ -96,7 +96,7 @@ Restaurant pages have no separate FAQ: the questions people search are the page'
 
 | field | meaning |
 |---|---|
-| `menus` | every menu, each with `name`, `meal` (`dinner`, `lunch` or `lounge`, i.e. the bar or lounge), `price`, optional `wine` (its pairing), `courses` and `note`. Drives "Menus and prices", "Cheaper ways in" and the answer's "cheapest way in" |
+| `menus` | every menu, each with `name`, `meal` (`dinner`, `lunch` or `lounge`, i.e. the bar or lounge), `price`, optional `wine` (its pairing), `courses`, `note` and `plus` (something big charged on top, e.g. "plus the truffle", which keeps it out of the cheapest-way answer). Drives "Menus and prices", "Cheaper ways in" and the answer's "cheapest way in" |
 | `menusSource`, `menusChecked` | where the menus came from and the day they were checked (`2026-10-09`) |
 | `priceHistory` | past prices of the main dinner menu: `date` (`2019-10`), `price`, optional `wine` and `source` (e.g. an Internet Archive copy of the restaurant's menu page). Drawn as a bar chart with today's price added |
 | `starsSince` | the year it first held its current number of stars, e.g. `2005` |

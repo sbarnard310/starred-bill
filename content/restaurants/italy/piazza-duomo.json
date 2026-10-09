@@ -9,11 +9,11 @@
   "reviews": 1191,
   "dinnerType": "menu",
   "dinner": 350,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Seasonal Things tasting menu (white truffle menu €290 plus truffle)",
   "dinnerNoteIt": "Menu degustazione",
   "wine": 240,
   "sourceType": "site",
-  "source": "https://www.piazzaduomoalba.it/wp-content/uploads/2025/03/Seasonal-Things-degustazione-IT-06-10.pdf",
+  "source": "https://www.piazzaduomoalba.it/en/page-menu/",
   "lunchNote": "Open for lunch · Wed–Sat",
   "lunchNoteIt": "Aperto a pranzo · mer–sab",
   "website": "https://www.piazzaduomoalba.it",
@@ -25,5 +25,38 @@
     "vegetarian-menu"
   ],
   "chef": "Enrico Crippa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Seasonal Things tasting menu",
+      "meal": "dinner",
+      "price": 350,
+      "wine": 240,
+      "note": "Courses chosen day by day from the garden and the market; lunch or dinner; wine pairing €240, or €580 with the finest Barolos"
+    },
+    {
+      "name": "Alba white truffle menu",
+      "meal": "dinner",
+      "price": 290,
+      "wine": 240,
+      "note": "In truffle season; the truffle is charged by the gram at the day's market price",
+      "plus": "plus the truffle"
+    }
+  ],
+  "menusSource": "https://www.piazzaduomoalba.it/en/page-menu/",
+  "menusChecked": "2026-10-09",
+  "alsoTry": [
+    {
+      "name": "À la carte at Piazza Duomo",
+      "note": "Single dishes from the truffle menu at €40–50 each, before the truffle",
+      "url": "https://www.piazzaduomoalba.it/en/page-menu/"
+    }
+  ],
+  "starsSince": 2012,
+  "bookingOpens": "Online, using the form on the restaurant's booking page, for up to 6 guests. In October and November it's open Tuesday to Sunday lunch; the rest of the year mostly Wednesday to Saturday, with dinner from Tuesday in some months.",
+  "bookingUrl": "https://www.piazzaduomoalba.it/en/prenota/",
+  "bookingPhone": "+39 0173 366167",
+  "groups": "Groups of more than 6 send a request from the booking page. There's also a kitchen table and private events.",
+  "infoSource": "https://www.piazzaduomoalba.it/en/page-menu/",
+  "infoChecked": "2026-10-09"
 }

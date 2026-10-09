@@ -25,7 +25,7 @@
   "source": "https://www.kadeau.dk/copenhagen/menu",
   "lunch": 4150,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNote": "The same menu at lunch · Saturdays",
   "lunchNoteDa": "Samme menu til frokost · lørdag",
   "lunchWine": 2500,
   "lunchSourceType": "site",
@@ -39,5 +39,23 @@
     "vegetarian"
   ],
   "chef": "Nicolai Nørregaard",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 4150,
+      "wine": 2500,
+      "note": "About 15 servings from Bornholm's seasons; wine pairings DKK 2,500, 5,800 or 18,000, non-alcoholic DKK 2,100"
+    }
+  ],
+  "menusSource": "https://www.kadeau.dk/copenhagen/menu",
+  "menusChecked": "2026-10-09",
+  "bookingOpens": "Online through Tock: the dining room for 1 to 8, the Greenhouse (a semi-private room for 3 or 4) or the Shared Table for solo diners and couples. Dinner Tuesday to Saturday, lunch on Saturdays.",
+  "bookingUrl": "https://www.exploretock.com/kadeau-copenhagen/",
+  "bookingPhone": "+45 33 25 22 23",
+  "cancellation": "A deposit of about DKK 2,000 per person, with fees, is paid on Tock when you book.",
+  "groups": "For private events, use the request form on the Tock page.",
+  "infoSource": "https://www.exploretock.com/kadeau-copenhagen/",
+  "infoChecked": "2026-10-09"
 }

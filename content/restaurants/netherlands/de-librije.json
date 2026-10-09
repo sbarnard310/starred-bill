@@ -8,10 +8,10 @@
   "rating": 4.8,
   "reviews": 1193,
   "dinnerType": "menu",
-  "dinner": 315,
-  "dinnerNote": "Tasting menu (other menus from €295)",
-  "sourceType": "press",
-  "source": "https://www.gault-millau.nl/en/restaurants/de-librije-zwolle",
+  "dinner": 319,
+  "dinnerNote": "Librije's menu, 8 courses (vegetable menu €299)",
+  "sourceType": "site",
+  "source": "https://www.librije.com/en/restaurant/librijes-menu/",
   "website": "https://www.librije.com/",
   "lat": 52.5153997,
   "lng": 6.0979029,
@@ -24,7 +24,41 @@
   "chef": "Nelson Tanate",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 295)",
-  "lunchNote": "Open for lunch · Fri–Sat",
+  "lunchNote": "The same menus at lunch · Fri–Sat",
   "lunchNoteNl": "Open voor lunch · vr–za",
-  "cuisineNl": "Moderne keuken"
+  "cuisineNl": "Moderne keuken",
+  "wine": 155.5,
+  "lunch": 319,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.librije.com/en/restaurant/librijes-menu/",
+  "menus": [
+    {
+      "name": "Librije's menu",
+      "meal": "dinner",
+      "price": 319,
+      "wine": 155.5,
+      "courses": 8,
+      "note": "Lunch or dinner; signature dishes can be added (caviar €75, others €50); high-end pairing €335"
+    },
+    {
+      "name": "Librije's vegetable menu",
+      "meal": "dinner",
+      "price": 299,
+      "wine": 155.5,
+      "courses": 8,
+      "note": "Lunch or dinner"
+    }
+  ],
+  "menusSource": "https://www.librije.com/en/restaurant/librijes-menu/",
+  "menusChecked": "2026-10-09",
+  "hotel": "Librije's Hotel, in a former prison in Zwolle",
+  "starsSince": 2004,
+  "bookingOpens": "Online on the restaurant's reservations page, or by phone. Dinner is Wednesday to Saturday (arrive 7pm–7:45pm) and lunch Friday and Saturday (12pm–12:45pm). Closed 11–20 October 2026, 27 December 2026 to 12 January 2027 and 18–27 April 2027.",
+  "bookingUrl": "https://www.librije.com/en/reservations/",
+  "bookingPhone": "+31 38 853 00 00",
+  "cancellation": "Free up to 2 days before. After that it's €50 per person from 2 days before, and €100 per person from the day before or if you don't turn up. You can move a booking once for free.",
+  "groups": "There's a chef's table and private dining.",
+  "groupsUrl": "https://www.librije.com/en/restaurant/private-dining/",
+  "infoSource": "https://www.librije.com/en/booking-conditions/",
+  "infoChecked": "2026-10-09"
 }

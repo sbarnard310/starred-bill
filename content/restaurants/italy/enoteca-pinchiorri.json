@@ -10,10 +10,10 @@
   "reviews": 989,
   "dinner": 390,
   "dinnerType": "menu",
-  "dinnerNote": "Espressione tasting menu (vegetarian Madre Terra also €390)",
+  "dinnerNote": "Espressione tasting menu, for the whole table, wines extra (vegetarian Madre Terra also €390)",
   "dinnerNoteIt": "Menu degustazione Espressione (anche il vegetariano Madre Terra €390)",
   "sourceType": "site",
-  "source": "https://www.enotecapinchiorri.it/",
+  "source": "https://www.enotecapinchiorri.it/menu.php",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteIt": "Solo a cena",
@@ -29,5 +29,33 @@
     "gluten-free"
   ],
   "chef": "Riccardo Monco",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Espressione tasting menu",
+      "meal": "dinner",
+      "price": 390,
+      "note": "For the whole table; wines extra"
+    },
+    {
+      "name": "Madre Terra vegetarian menu",
+      "meal": "dinner",
+      "price": 390,
+      "note": "For the whole table; wines extra"
+    },
+    {
+      "name": "Three-course à la carte",
+      "meal": "dinner",
+      "price": 245,
+      "courses": 3,
+      "note": "From about €245: starters €85–135, pasta €85–110, mains €110–240, desserts €50"
+    }
+  ],
+  "menusSource": "https://www.enotecapinchiorri.it/menu.php",
+  "menusChecked": "2026-10-09",
+  "bookingOpens": "Online with the booking form on the restaurant's website, or by phone. Dinner only.",
+  "bookingUrl": "https://www.enotecapinchiorri.it/prenota-una-cena.php",
+  "bookingPhone": "+39 055 26311",
+  "infoSource": "https://www.enotecapinchiorri.it/",
+  "infoChecked": "2026-10-09"
 }

@@ -5988,7 +5988,10 @@ def build_guides():
 # store it), so a restaurant keeps its page if it moves to another place page. English only. RESTAURANT_PAGES lists the
 # ones built so far: the most-searched first, for the owner to check before the rest follow.
 RESTAURANT_PAGES = ("le-bernardin", "la-pergola", "restaurant-gordon-ramsay", "osteria-francescana", "core-by-clare-smyth", "le-cinq", "jade-dragon",
-                    "the-fat-duck", "el-celler-de-can-roca", "the-ledbury", "atelier-crenn")
+                    "the-fat-duck", "el-celler-de-can-roca", "the-ledbury", "atelier-crenn",
+                    # Batch 2, 9 Oct 2026
+                    "piazza-duomo", "martin-berasategui", "les-amis", "villa-crespi", "alain-ducasse-at-the-dorchester", "de-librije",
+                    "quique-dacosta", "sushi-sho", "enoteca-pinchiorri", "kadeau-copenhagen")
 # The owner's rule (9 Oct 2026): at most 10 questions per page, and none that repeats what the page already says. On a
 # restaurant page the questions are its own section headings, each with its answer straight under it; the structured data
 # (FAQPage) lists them, most-asked first.
@@ -6067,7 +6070,7 @@ def area_line(r):
 # (what the main dinner menu cost on past dates, e.g. from copies of the restaurant's own menu page on the Internet Archive),
 # `starsSince`, and the practical details `dressCode`, `booking`, `bookingUrl`, `cancellation` and `children`, with
 # `infoSource`/`infoChecked`. Each part of the page is left out when its fields aren't there.
-BOOKING_SITES = (("resy.com", "Resy"), ("exploretock.com", "Tock"), ("opentable.", "OpenTable"), ("sevenrooms.com", "SevenRooms"),
+BOOKING_SITES = (("covermanager.com", "CoverManager"), ("resy.com", "Resy"), ("exploretock.com", "Tock"), ("opentable.", "OpenTable"), ("sevenrooms.com", "SevenRooms"),
                  ("thefork.", "TheFork"), ("tablecheck.com", "TableCheck"), ("omakase.in", "OMAKASE"))
 
 
@@ -6079,14 +6082,30 @@ def main_menu(r):
 def cheapest_menu(r):
     """A menu cheaper than both the dinner and lunch prices on the receipt, if `menus` lists one (Le Bernardin's lounge lunch)."""
     floor = min(x for x in (r.get("dinner"), r.get("lunch"), float("inf")) if x is not None)
-    cheaper = sorted((m for m in r.get("menus", []) if m["price"] < floor), key=lambda m: m["price"])
+    cheaper = sorted((m for m in r.get("menus", []) if m["price"] < floor and not m.get("plus")), key=lambda m: m["price"])
     return cheaper[0] if cheaper else None
 
 
+# First words that are ordinary words, lower-cased mid-sentence ("the tasting menu"); a name ("Harmonie tasting menu",
+# "Alba white truffle menu") keeps its capital.
+MENU_WORDS = {"tasting", "lunch", "dinner", "prix", "menu", "vegetarian", "festive", "seasonal", "gourmet", "à"}
+
+
 def menu_label(m):
-    """How a menu reads mid-sentence: "Chef's Tasting Menu" stays, "Prix fixe" becomes "prix fixe"."""
+    """How a menu reads mid-sentence: "Tasting menu" becomes "tasting menu", "Three-course à la carte" "three-course à la
+    carte"; names keep their capitals ("Chef's Tasting Menu", "Harmonie tasting menu")."""
     name = m["name"]
-    return name if any(w[:1].isupper() for w in name.split()[1:]) else name[:1].lower() + name[1:]
+    first = name.split()[0].lower()
+    generic = first in MENU_WORDS or re.fullmatch(r"[\w]+-course", first)
+    return name[:1].lower() + name[1:] if generic and not any(w[:1].isupper() for w in name.split()[1:] if w.lower() not in ("à",)) else name
+
+
+ARTICLES = ("Le ", "La ", "Les ", "L'", "Il ", "El ", "The ")
+
+
+def the_menu(m):
+    """A menu with "the" in front, unless its own name starts with an article: "the tasting menu", "Le Menu Automne Classique"."""
+    return m["name"] if m["name"].startswith(ARTICLES) else "the " + menu_label(m)
 
 
 def nice_date(iso):
@@ -6174,12 +6193,12 @@ def cheaper_html(r, peers_place, peers, live):
     cur, name = r["cur"], r["name"]
     d = r.get("dinner")
     items = []
-    menus = [m for m in r.get("menus", []) if d is not None and m["price"] < d]
+    menus = [m for m in r.get("menus", []) if d is not None and m["price"] < d and not m.get("plus")]
     if not menus and r.get("lunch") is not None and d is not None and r["lunch"] < d and not r.get("noLunch"):
         menus = [{"name": "Lunch", "meal": "lunch", "price": r["lunch"], "note": r.get("lunchNote", "")}]
-    main = menu_label(main_menu(r)) if main_menu(r) else "dinner menu"
+    main = the_menu(main_menu(r)) if main_menu(r) else "the dinner menu"
     for m in sorted(menus, key=lambda m: m["price"]):
-        bits = [str(m["courses"]) + " courses" if m.get("courses") and "course" not in m["name"].lower() else "", m.get("note", ""), money(d - m["price"], cur) + " less than the " + main]
+        bits = [str(m["courses"]) + " courses" if m.get("courses") and "course" not in m["name"].lower() else "", m.get("note", ""), money(d - m["price"], cur) + " less than " + main]
         items.append(f'<li><strong>{e(m["name"])}</strong> <span class="num">{money(m["price"], cur)}</span>'
                      f'<span>{e(" · ".join(x for x in bits if x))}</span></li>')
     # Sister venues: the same kitchen's cheaper offshoots (Francescana at Maria Luigia), from `alsoTry`.
@@ -6196,10 +6215,11 @@ def cheaper_html(r, peers_place, peers, live):
     q = f"What is the cheapest way to eat at {name}?"
     first = sorted(menus, key=lambda m: m["price"])[0] if menus else None
     sister = min((v for v in r.get("alsoTry", []) if v.get("price") is not None and d is not None and v["price"] < d), key=lambda v: v["price"], default=None)
-    a = (f"The {menu_label(first)}, at {money(first['price'], cur)} per person" + (f" for {first['courses']} courses" if first.get("courses") and "course" not in first["name"].lower() else "")
+    a = (f"{sentence_case(the_menu(first))}, at {money(first['price'], cur)} per person" + (f" for {first['courses']} courses" if first.get("courses") and "course" not in first["name"].lower() else "")
          + (f": {first['note'][:1].lower() + first['note'][1:].rstrip('.')}." if first.get("note") and first.get("meal") == "lounge" else ".")
-         + (f" That’s {money(d - first['price'], cur)} less than the {main}." if d is not None else "")) if first else \
-        (f"{name} has no cheaper menu, but {sister['name']} serves its cooking for {money(sister['price'], cur)}." if sister else
+         + (f" That’s {money(d - first['price'], cur)} less than {main}." if d is not None else "")) if first else \
+        (f"{name} has no cheaper menu, but {sister['name']} serves its cooking for {money(sister['price'], cur)}." if sister and not sister["name"].startswith("À la carte") else
+         f"{name} has no cheaper tasting menu, but its à la carte starts at about {money(sister['price'], cur)}." if sister else
          f"{name} has no cheaper menu; the nearest saving is another {STAR_WORDS[r['stars']]}-star restaurant, listed below.")
     return ('<section id="cheaper">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Spend less</span>'
             f'<h2 style="margin-top: 6px">{e(q)}</h2><p>{e(a)}</p></div></div>\n'
@@ -6369,7 +6389,7 @@ def restaurant_answer(r, stay):
     main, cheapest = main_menu(r), cheapest_menu(r)
     if d is not None:
         if dtype == "menu":
-            out.append(f"The {menu_label(main) if main else 'dinner tasting menu'} at {name} costs {m(d)}{usd_after(d, cur)} per person"
+            out.append(f"{sentence_case(the_menu(main)) if main else 'The dinner tasting menu'} at {name} costs {m(d)}{usd_after(d, cur)} per person"
                        + (f", or {m(d + w)} with the wine pairing." if w else "; there’s no wine pairing." if r.get("noPairing") else "."))
         elif dtype == "main":
             out.append(f"Main courses at {name} cost about {m(d)}{usd_after(d, cur)} at dinner.")
@@ -6383,7 +6403,7 @@ def restaurant_answer(r, stay):
         out.append(f"{'Lunch' if d is not None else 'Lunch there'} is {m(lunch)}" + (f" ({m(lunch + r['lunchWine'])} with wine)" if r.get("lunchWine") else "")
                    + (", the cheaper way in." if d is not None and lunch < d and not cheapest else "."))
     if cheapest:
-        out.append(f"The cheapest way in is the {m(cheapest['price'])} {menu_label(cheapest)}.")
+        out.append(f"The cheapest way in is {the_menu(cheapest)}, at {m(cheapest['price'])}.")
     if d is not None and dtype in ("menu", "spend"):
         out.append((f"Prices are {SERVICE_SAYS.get(kind, 'before service')}" if kind not in ("included", "tax") else f"Prices {SERVICE_SAYS[kind].replace('including', 'include')}") + (
             f"; with about {pct:g}% for {SERVICE_ADDS[kind]}, dinner for two{' with wine' if w else ''} comes to roughly {m(round((d + (w or 0)) * 2 * (1 + pct / 100), -1))}."
@@ -6641,7 +6661,7 @@ def build_restaurant_pages():
         for m in r.get("menus", []):
             room = {"lunch": "Lunch", "lounge": "In the lounge"}.get(m.get("meal"), "")
             note = " · ".join(x for x in ((f"{m['courses']} courses" if m.get("courses") else ""), "" if room.lower().split()[-1:] and room.lower().split()[-1] in m["name"].lower() else room) if x)
-            pay_rows.append(bill_row(m["name"], m["price"], note))
+            pay_rows.append(bill_row(m["name"] + (f" ({m['plus']})" if m.get("plus") else ""), m["price"], note))
             if m.get("wine"):
                 pay_rows.append(bill_row(m["name"] + " with wine pairing", m["price"] + m["wine"]))
         if d is not None and not r.get("menus"):
@@ -6663,7 +6683,9 @@ def build_restaurant_pages():
         cost_q = f"How much does {r['name']} cost?"
         priced = sorted(r.get("menus") or [m for m in ({"name": "lunch", "price": lunch} if lunch is not None and not r.get("noLunch") else None,
                                                        {"name": (main_menu(r) or {}).get("name", "dinner menu"), "price": d} if d is not None else None) if m], key=lambda m: m["price"])
-        cost_lead = (f"From {money(priced[0]['price'], cur)} for the {menu_label(priced[0])} to {money(priced[-1]['price'], cur)} for the {menu_label(priced[-1])}, per person "
+        priced = [m for m in priced if not m.get("plus")] or priced
+        cost_lead = ((f"From {money(priced[0]['price'], cur)} for {the_menu(priced[0])} to {money(priced[-1]['price'], cur)} for {the_menu(priced[-1])}, per person "
+                      if priced[0]["price"] != priced[-1]["price"] else f"{money(priced[0]['price'], cur)} for any of its menus, per person ")
                      if len(priced) > 1 else "") + f"in {cur}, {SERVICE_SAYS.get(kind, 'before service')}" + (
                      f". The table adds the {pct:g}% usually added for {SERVICE_ADDS[kind]}, an estimate (the restaurant’s bill is what counts), and the cost for two." if pct else ", with the cost for two.")
         pay_html = ('<section id="prices">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Menus and prices</span>'

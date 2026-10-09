@@ -9,12 +9,12 @@
   "cuisineZh": "法國菜",
   "rating": 4.6,
   "reviews": 965,
-  "dinner": 305,
+  "dinner": 420,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, from",
+  "dinnerNote": "Le Menu Automne Classique (other tasting menus $550), plus service and GST",
   "dinnerNoteZh": "品嚐套餐起",
-  "sourceType": "press",
-  "source": "https://wheretoeat.com.sg/best-degustation-and-tasting-menus-in-singapore/",
+  "sourceType": "site",
+  "source": "https://www.lesamis.com.sg/menu/dinner",
   "lunchNote": "Open for lunch",
   "lunchNoteZh": "有供應午餐",
   "website": "https://www.lesamis.com.sg/",
@@ -26,5 +26,41 @@
     "vegetarian-menu"
   ],
   "chef": "Sébastien Lepinoy",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Le Menu Dégustation Automne",
+      "meal": "dinner",
+      "price": 550,
+      "note": "For the whole table"
+    },
+    {
+      "name": "Le Menu Automne Tradition Française",
+      "meal": "dinner",
+      "price": 550,
+      "note": "For the whole table"
+    },
+    {
+      "name": "Le Menu Automne Classique",
+      "meal": "dinner",
+      "price": 420,
+      "note": "For the whole table"
+    },
+    {
+      "name": "Three-course prix fixe",
+      "meal": "dinner",
+      "price": 205,
+      "courses": 3,
+      "note": "Monday to Thursday, not on public holidays"
+    }
+  ],
+  "menusSource": "https://www.lesamis.com.sg/menu/dinner",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2019,
+  "dressCode": "Smart casual, with long trousers.",
+  "children": "Children aged 10 and over are welcome.",
+  "bookingOpens": "Online through the reservation form on the restaurant's website, which confirms by email. Lunch from 12pm and dinner from 7pm, every day except some holidays. If your date isn't shown, email the restaurant.",
+  "bookingUrl": "https://www.lesamis.com.sg/reservation",
+  "infoSource": "https://www.lesamis.com.sg/contact/restaurant-info",
+  "infoChecked": "2026-10-09"
 }

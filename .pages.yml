@@ -720,6 +720,7 @@ content:
           - { name: wine, label: Wine pairing, type: number }
           - { name: courses, label: Courses, type: number }
           - { name: note, label: Note, type: string }
+          - { name: plus, label: Charged on top (e.g. plus the truffle), type: string }
       - { name: menusSource, label: Menus link, type: string }
       - { name: menusChecked, label: Menus checked on (2026-10-09), type: string }
       - name: priceHistory

@@ -9,15 +9,15 @@
   "reviews": 652,
   "dinner": 285,
   "dinnerType": "menu",
-  "dinnerNote": "Signature tasting menu",
+  "dinnerNote": "Harmonie tasting menu, 7 courses (three-course à la carte £215)",
   "wine": 160,
-  "sourceType": "press",
-  "source": "https://www.opentable.co.uk/alain-ducasse-at-the-dorchester",
+  "sourceType": "site",
+  "source": "https://www.alainducasse-dorchester.com/menus/",
   "lunch": 125,
   "lunchType": "menu",
-  "lunchNote": "Set lunch, from",
+  "lunchNote": "Festive set lunch, 3 courses · Thu–Sat, 19 Nov–19 Dec only",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.alainducasse-dorchester.com/",
+  "lunchSource": "https://www.alainducasse-dorchester.com/menus/",
   "website": "https://www.alainducasse-dorchester.com/",
   "lat": 51.5073381,
   "lng": -0.152575,
@@ -30,5 +30,57 @@
     "halal"
   ],
   "chef": "Jean-Philippe Blondet",
-  "chefSource": "press"
+  "chefSource": "press",
+  "servicePct": 15,
+  "hotel": "The Dorchester",
+  "menus": [
+    {
+      "name": "Harmonie tasting menu",
+      "meal": "dinner",
+      "price": 285,
+      "wine": 160,
+      "courses": 7
+    },
+    {
+      "name": "Jardin vegetable menu",
+      "meal": "dinner",
+      "price": 250,
+      "note": "Vegetables and fruit"
+    },
+    {
+      "name": "Five-course à la carte",
+      "meal": "dinner",
+      "price": 250,
+      "courses": 5
+    },
+    {
+      "name": "Three-course à la carte",
+      "meal": "dinner",
+      "price": 215,
+      "courses": 3
+    },
+    {
+      "name": "Five-course festive lunch",
+      "meal": "lunch",
+      "price": 150,
+      "courses": 5,
+      "note": "Thursday to Saturday, 19 November to 19 December only"
+    },
+    {
+      "name": "Three-course festive lunch",
+      "meal": "lunch",
+      "price": 125,
+      "courses": 3,
+      "note": "Thursday to Saturday, 19 November to 19 December only"
+    }
+  ],
+  "menusSource": "https://www.alainducasse-dorchester.com/menus/",
+  "menusChecked": "2026-10-09",
+  "starsSince": 2010,
+  "dressCode": "Smart casual. Jackets and collared shirts are preferred; men must wear long trousers, and suitable shoes are required.",
+  "bookingOpens": "Online through SevenRooms, or by email to alainducassereservations@alainducasse-dorchester.com (the reservations team works Monday to Friday 10am–6pm and Saturday 12pm–6pm). Dinner is served Tuesday to Saturday, 6pm to 9:30pm.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/alainducasseatthedorchester/",
+  "groups": "The Table Lumière, the restaurant's most exclusive table, is booked separately through the reservations team.",
+  "infoSource": "https://www.alainducasse-dorchester.com/contact/",
+  "infoChecked": "2026-10-09"
 }

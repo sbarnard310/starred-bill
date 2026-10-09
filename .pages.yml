@@ -724,9 +724,13 @@ content:
           - { name: source, label: Link, type: string }
       - { name: starsSince, label: Current stars held since (year), type: number }
       - { name: dressCode, label: Dress code, type: text }
-      - { name: booking, label: How to book, type: text }
+      - { name: bookingOpens, label: When tables are released, type: text }
+      - { name: bookingPhone, label: Booking phone number and its hours, type: string }
       - { name: bookingUrl, label: Booking page link, type: string }
       - { name: cancellation, label: Cancellation rules, type: text }
+      - { name: walkIns, label: Eating without a booking, type: text }
+      - { name: groups, label: Groups and private events, type: text }
+      - { name: groupsUrl, label: Private dining inquiries link, type: string }
       - { name: children, label: Children, type: text }
       - { name: infoSource, label: Link for these details, type: string }
       - { name: infoChecked, label: Details checked on (2026-10-09), type: string }

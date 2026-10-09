@@ -2084,28 +2084,66 @@ def build_bill_data(starred):
     (OUT / "data" / "bill.json").write_bytes(as_json({"cols": cols, "r": rows}).encode("utf-8"))
 
 
+def near_slug(name):
+    """A restaurant's name as an id, worked out the way nearRows() in common.js does: accents dropped, lower case, hyphens."""
+    name = re.sub("[\u0300-\u036f]", "", unicodedata.normalize("NFD", name)).lower()
+    return re.sub("[^a-z0-9]+", "-", name).strip("-")
+
+
+def pack_near(rows):
+    """Packs the near-me rows small (8 Oct 2026 audit: the file was 700 KB, the heaviest on the site); nearRows() in common.js unpacks them.
+    - `place` points into `places` ([path, currency, name]), so a town's address, currency and name are written once.
+    - `where` is 0 when it's just the town's name, a string when it's "<that>, <town's name>", else [the whole text].
+    - `id` is 0 when it's the name as an id (near_slug()).
+    - Columns in `lists` hold a number pointing into that list, or null for "".
+    - Trailing nulls are dropped from each row."""
+    cols = ["id", "name", "stars", "lat", "lng", "place", "where", "cuisine", "dinnerType", "dinner", "lunch", "diets", "rating", "reviews",
+            "chef", "wine", "lunchWine", "changed", "change"]
+    listed = ("cuisine", "dinnerType", "diets", "changed", "change")
+    lists = {c: sorted({r[c] for r in rows if r[c]}, key=lambda v: (-sum(1 for r in rows if r[c] == v), v)) for c in listed}
+    index = {c: {v: i for i, v in enumerate(lists[c])} for c in listed}
+    places, place_ix, out = [], {}, []
+    for r in rows:
+        key = (r["path"], r["cur"], r["town"])
+        if key not in place_ix:
+            place_ix[key] = len(places)
+            places.append(list(key))
+        town, where = r["town"], r["where"]
+        row = dict(r, id=0 if r["id"] and r["id"] == near_slug(r["name"]) else r["id"], place=place_ix[key],
+                   where=0 if town and where == town else where[:-len(town) - 2] if town and where.endswith(", " + town) else [where],
+                   lat=round(r["lat"], 5), lng=round(r["lng"], 5))
+        for c in listed:
+            row[c] = index[c][r[c]] if r[c] else None
+        cells = [row[c] for c in cols]
+        while cells and cells[-1] is None:
+            cells.pop()
+        out.append(cells)
+    return {"cols": cols, "lists": lists, "places": places, "diets": list(DIETS), "r": out}
+
+
 def build_near_me(starred):
     """/near-me/: finds the visitor (or a place they type) and lists the starred restaurants around them on a map.
-    The restaurants come from /data/near.json, one compact row each (columns listed in the file)."""
-    cols = ["id", "name", "stars", "lat", "lng", "cuisine", "where", "path", "dinner", "dinnerType", "lunch", "cur", "diets", "chef", "rating",
-            "reviews", "wine", "lunchWine", "change", "changed"]
+    The restaurants come from /data/near.json, packed small by pack_near()."""
     rows = []
     for r in starred:
         if r.get("lat") is None:
             continue
         lunch = -1 if r.get("noLunch") else (r["lunch"] if r.get("lunch") is not None and r.get("lunchType", "menu") == "menu" else None)
-        rows.append([r["id"], r["name"], r["stars"], round(r["lat"], 6), round(r["lng"], 6), r.get("cuisine", ""), near_where(r), r["cityPath"],
-                     r.get("dinner"), r.get("dinnerType", "menu"), lunch, r["cur"], "".join(str(NEAR_DIETS[d]) for d in r.get("diets", [])),
-                     r.get("chef", ""), r.get("rating"), r.get("reviews"),
-                     r.get("wine") if r.get("dinnerType", "menu") == "menu" else None, r.get("lunchWine") if lunch and lunch > 0 else None, r.get("change", ""),
-                     r.get("changeDate", "")[:7]])
+        rows.append({"id": r["id"], "name": r["name"], "stars": r["stars"], "lat": r["lat"], "lng": r["lng"], "cuisine": r.get("cuisine", ""),
+                     "where": near_where(r), "town": r["cityName"], "path": r["cityPath"], "cur": r["cur"],
+                     "dinner": r.get("dinner"), "dinnerType": r.get("dinnerType", "menu"), "lunch": lunch,
+                     "diets": "".join(str(NEAR_DIETS[d]) for d in r.get("diets", [])), "chef": r.get("chef") or None,
+                     "rating": r.get("rating"), "reviews": r.get("reviews"),
+                     "wine": r.get("wine") if r.get("dinnerType", "menu") == "menu" else None,
+                     "lunchWine": r.get("lunchWine") if lunch and lunch > 0 else None,
+                     "change": r.get("change", ""), "changed": r.get("changeDate", "")[:7]})
     # Starred restaurants in the MICHELIN Guide we don't have a file for yet (none since 5 Oct 2026, but the list can run ahead).
     world = json.loads((OUT / "data" / "world.json").read_text("utf-8"))["r"] if (OUT / "data" / "world.json").exists() else []
     for name, stars, lat, lng, cuisine, where, mpath in world:
-        rows.append(["", name, stars, lat, lng, cuisine, where, "https://guide.michelin.com/en" + mpath, None, "menu", None, "", "", "", None, None, None, None, "", ""])
-    body = as_json({"cols": cols, "diets": list(DIETS), "r": rows}).encode("utf-8")
-    (OUT / "data" / "near.json").write_bytes(body)
-    near_url = f"/data/near.json?v={hashlib.sha1(body).hexdigest()[:10]}"
+        rows.append({"id": "", "name": name, "stars": stars, "lat": lat, "lng": lng, "cuisine": cuisine, "where": where, "town": "",
+                     "path": "https://guide.michelin.com/en" + mpath, "cur": "", "dinner": None, "dinnerType": "menu", "lunch": None,
+                     "diets": "", "chef": None, "rating": None, "reviews": None, "wine": None, "lunchWine": None, "change": "", "changed": ""})
+    near_url = write_data("near.json", pack_near(rows))
     # Opening hours for the "Open on" filter, in their own file so Help me pick (which shares near.json) doesn't load them.
     hours_url = write_data("hours.json", {"checked": HOURS_CHECKED, "h": {r["id"]: HOURS[r["id"]] for r in starred if r["id"] in HOURS}})
     stats = guide_stats()
@@ -3952,6 +3990,8 @@ def build_cloudflare():
 /data/places/*
   Cache-Control: public, max-age=31536000, immutable
 /data/compare/*
+  Cache-Control: public, max-age=31536000, immutable
+/data/near.json
   Cache-Control: public, max-age=31536000, immutable
 /icons/*
   Cache-Control: public, max-age=604800

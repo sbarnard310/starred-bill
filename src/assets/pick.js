@@ -41,12 +41,7 @@ shareText = () => "Help me pick a Michelin star restaurant: six questions, three
 
 // ---------- Data ----------
 const dataReady = fetch(DATA.nearUrl).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); }).then((d) => {
-  ask.rows = d.r.map((a) => {
-    const r = {};
-    d.cols.forEach((c, i) => { r[c] = a[i]; });
-    r.diets = String(r.diets || "").split("").map((i) => d.diets[Number(i)]);
-    return r;
-  }).filter((r) => r.id);  // only restaurants with a page here
+  ask.rows = nearRows(d).filter((r) => r.id);  // only restaurants with a page here
   return ask.rows;
 });
 const hasDiet = (r, d) => !d || r.diets.includes(d) || (d === "vegetarian" && (r.diets.includes("vegetarian-menu") || r.diets.includes("vegetarian-only")));

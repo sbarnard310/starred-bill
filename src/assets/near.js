@@ -33,12 +33,7 @@ shareUrl = () => location.origin + location.pathname + (near.trip ? "?from=" + e
 
 // ---------- Data ----------
 const dataReady = fetch(DATA.nearUrl).then((res) => { if (!res.ok) throw new Error(res.status); return res.json(); }).then((d) => {
-  near.rows = d.r.map((a) => {
-    const r = {};
-    d.cols.forEach((c, i) => { r[c] = a[i]; });
-    r.diets = String(r.diets || "").split("").map((i) => d.diets[Number(i)]);
-    return r;
-  });
+  near.rows = nearRows(d);
   return near.rows;
 });
 // Opening hours load alongside; until they arrive (or if they can't) the list simply shows none.

@@ -1832,6 +1832,21 @@ function setVisited(map, from) {
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 // Chinese script (Mandarin, Cantonese or Simplified): changes date formats, sorting and which name is shown first.
+// /data/near.json (Near me, Help me pick) as one object per restaurant; the file is packed small by pack_near() in build.py.
+function nearRows(d) {
+  const slug = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  return d.r.map((a) => {
+    const r = {};
+    d.cols.forEach((c, i) => { const v = a[i] == null ? null : a[i]; r[c] = d.lists[c] ? (v === null ? "" : d.lists[c][v]) : v; });
+    const p = d.places[r.place];
+    r.path = p[0]; r.cur = p[1];
+    r.where = r.where === 0 ? p[2] : Array.isArray(r.where) ? r.where[0] : r.where + ", " + p[2];
+    if (r.id === 0) r.id = slug(r.name);
+    if (r.chef === null) r.chef = "";
+    r.diets = r.diets.split("").map((i) => d.diets[Number(i)]);
+    return r;
+  });
+}
 const zh = () => LANG === "zh" || LANG === "yue" || LANG === "zhs";
 const fr = () => LANG === "fr";
 const ja = () => LANG === "ja";

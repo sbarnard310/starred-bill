@@ -762,6 +762,7 @@ def build_place(p):
             "areas": areas_html(p, lang) if starred else "", "footPlaces": foot_places_html(lang, p["id"]),
             "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
             "answer": answer, "heroClass": "" if answer else " hero-wide", "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
+            "newStars": new_stars_html(p, page, lang),
             "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
             "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang),
         }), lang, page, starred), page, lang))
@@ -1373,6 +1374,140 @@ def lunch_deals_html(p, page, starred, lang):
             f'<p>{e(" ".join(text))}</p></div></div>\n      {table}\n      <p class="ld-note">{e(w["ldNote"])}</p>\n    </div>\n  </section>\n')
 
 
+def page_section(sid, eyebrow, title, text, body):
+    """A section of a destination page: eyebrow, heading, an optional line of text (already escaped), then the body."""
+    return (f'<section id="{sid}">\n    <div class="wrap">\n      <div class="section-head"><div>'
+            f'<span class="eyebrow">{e(eyebrow)}</span><h2 style="margin-top: 6px">{e(title)}</h2>'
+            + (f"<p>{text}</p>" if text else "") + "</div></div>\n      " + body + "\n    </div>\n  </section>\n")
+
+
+def fact_card(title, count, paragraphs, extra=""):
+    """One card of a .facts grid: a heading (with an optional count) and paragraphs, already escaped."""
+    head = f'<h3>{e(title)}' + (f' <span class="count">{count}</span>' if count is not None else "") + "</h3>"
+    return "<div>" + head + "".join(f"<p>{t}</p>" for t in paragraphs if t) + extra + "</div>"
+
+
+# ---------- New and lost stars (9 Oct 2026) ----------
+# Every destination page with starred restaurants says what its MICHELIN Guide's latest edition changed there, dated:
+# new stars, promotions, stars dropped, restaurants no longer starred, then when the stars are announced. It shows
+# search engines the page is kept up to date and answers "new Michelin stars in London". A page several guides cover
+# (the United States, Japan) gives each guide's changes, newest first. Worked out from change, changeDate and status
+# on the restaurants and the ceremonies in content/ceremonies.json. Wording: nw… and cer… in src/faq-words.json.
+NEW_STARS_LANGS = ("en",)  # add a language once its nw… and cer… words are translated
+NEW_STARS_NAMES = 10       # restaurants named in a sentence before "and 4 more"
+
+
+def guide_changes(g, rs):
+    """The restaurants among rs whose stars changed in a guide's latest edition (changeDate from its month on), or
+    None when our files don't hold that edition's changes: it revealed its stars after we last caught up, or not one of
+    its restaurants carries a change from it (first editions aren't marked)."""
+    month = g["last"]["date"][:7]
+    changed = lambda r: (r.get("changeDate") or "") >= month and (r.get("change") in ("new", "up", "down") or r.get("status") in ("lost", "closed"))
+    if g["status"] or not any(changed(r) for r in restaurants if set(g.get("places", [])) & set(r["_chain"])):
+        return None
+    return [r for r in rs if changed(r)]
+
+
+def changes_text(now, w, say, when):
+    """What a guide changed, as sentences: new, promoted, dropped a star, lost their stars, closed. Names link to
+    restaurants' own pages where they have one."""
+    alpha = lambda r: unicodedata.normalize("NFKD", r["name"]).encode("ascii", "ignore").decode().lower()  # Èter among the Es
+    group = lambda test: sorted((r for r in now if test(r)), key=lambda r: (-r["stars"], -r.get("formerStars", 0), alpha(r)))
+    new = group(lambda r: r.get("change") == "new" and not r.get("status"))
+    up = group(lambda r: r.get("change") == "up" and not r.get("status"))
+    down = group(lambda r: r.get("change") == "down" and not r.get("status"))
+    lost = group(lambda r: r.get("status") in ("lost", "changed"))
+    closed = group(lambda r: r.get("status") == "closed")
+    names = lambda rs: and_names((f'<a href="{e(r["page"])}">{e(r["name"])}</a>' if r.get("page") else e(r["name"]) for r in rs), w)
+    text = []
+    if new:
+        shown = new if len(new) <= NEW_STARS_NAMES + 1 else new[:NEW_STARS_NAMES]
+        # A newcomer with two or three stars says so, which also explains why it comes first.
+        listed = and_names([names([r]) + (e(w["nwNewStars"].replace("{stars}", w["star" + str(r["stars"])])) if r["stars"] > 1 else "") for r in shown]
+                           + ([e(w["nwMore"].replace("{m}", str(len(new) - len(shown))))] if len(shown) < len(new) else []), w)
+        text.append(say("nwNewOne" if len(new) == 1 else "nwNewText", when=when, k=len(new), names=listed))
+    if up:
+        text.append(say("nwUpText" if new else "nwUpFirst", when=when, names=and_plain([e(w["nwTo"].replace("{stars}", w["star" + str(st)])).replace("{r}", names([r for r in up if r["stars"] == st]))
+                                                     for st in (3, 2) if any(r["stars"] == st for r in up)], w)))
+    for rs, key in ((down, "nwDown"), (lost, "nwLost"), (closed, "nwClosed")):
+        if rs:
+            text.append(say(key + ("One" if len(rs) == 1 else "Text"), names=names(rs)))
+    return text, bool(new or up)
+
+
+def ceremony_card(g, w, say, lang):
+    """When a guide's stars are announced: the latest ceremony, the next (or when it's due) and the past few."""
+    last = g["last"]
+    text = [say("cerText", guide=e(g["name"]), usual=e(g["usual"]))]
+    key = "cerLastOnline" if last.get("online") else "cerLast" if last.get("where") else "cerLastNoPlace"
+    text.append(say(key, date=long_date(last["date"], lang), where=e(last.get("where", ""))))
+    nxt = g.get("coming")
+    if nxt:
+        text.append(say("cerNext" if nxt.get("where") else "cerNextNoPlace", date=long_date(nxt["date"], lang), where=e(nxt.get("where", ""))))
+    elif g.get("due"):
+        text.append(say("cerDue", month=long_month(g["due"][:7], lang)))
+    if g.get("note"):
+        text.append(e(g["note"]))
+    # Every guide's dates are on the ceremony dates guide, its row for this one marked #cer-<id>.
+    if "michelin-guide-ceremony-dates" in guides:
+        text.append(e(w["cerAll"]).replace("{link}", f'<a href="/guides/michelin-guide-ceremony-dates/#cer-{e(g["id"])}">{e(w["cerAllLink"])}</a>'))
+    past = [last] + [c for c in g.get("ceremonies", []) if c is not last and c.get("date") != last["date"]]
+    rows = "".join(f'<li>{long_date(c["date"], lang)}'
+                   + (" · " + e(w["cerOnline"]) if c.get("online") else " · " + e(re.sub(r"^the ", "", c["where"])) if c.get("where") else "") + "</li>"
+                   for c in past[:4])
+    return fact_card(say("cerTitle"), None, [" ".join(text)], f'<p class="past-label">{e(w["cerPast"])}</p><ul class="past">{rows}</ul>')
+
+
+def new_stars_html(p, page, lang):
+    """The "New Michelin stars in London: the February 2026 guide" section of a destination page (see above)."""
+    rs_all = members(p)
+    if lang not in NEW_STARS_LANGS or not any(not r.get("status") for r in rs_all):
+        return ""
+    w = pilot_words(lang)
+    say = lambda key, **v: say_in(w, key, page, **{k: (n_word(x, lang) if isinstance(x, int) else x) for k, x in v.items()})
+    found = []
+    for g in ceremony_guides():
+        rs = [r for r in rs_all if set(g.get("places", [])) & set(r["_chain"])]
+        if g.get("last") and any(not r.get("status") for r in rs):
+            found.append((g, rs))
+    found.sort(key=lambda x: x[0]["last"]["date"], reverse=True)
+    if not found:
+        return ""
+    if len(found) == 1:
+        g, rs = found[0]
+        when = long_month(g["last"]["date"][:7], lang)
+        now = guide_changes(g, rs)
+        cards = []
+        if g["status"]:
+            title = say("nwTitleNone", when=when)
+            cards.append(fact_card(say("nwWhat", when=when), None, [say("nwUpdating", when=when, date=long_date(g["last"]["date"], lang))]))
+        elif now is None:
+            title = say("cerTitle")
+        else:
+            text, gained = changes_text(now, w, say, when) if now else ([say("nwNone", when=when)], False)
+            title = say("nwTitle" if gained else "nwTitleChanges" if now else "nwTitleNone", when=when)
+            cards.append(fact_card(say("nwWhat", when=when), None, [" ".join(text)]))
+        cards.append(ceremony_card(g, w, say, lang))
+        return page_section("latest", w["nwEyebrow"], title, "", '<div class="facts">' + "".join(cards) + "</div>")
+    cards = []
+    for g, rs in found:
+        when = long_month(g["last"]["date"][:7], lang)
+        now = guide_changes(g, rs)
+        if g["status"]:
+            text = [say("nwUpdating", when=when, date=long_date(g["last"]["date"], lang))]
+        elif now is None:
+            continue
+        else:
+            text = changes_text(now, w, say, when)[0] if now else [say("nwGuideNone")]
+        cards.append(fact_card(say("nwGuide", guide=re.sub(r"^MICHELIN Guide ", "", g["name"]), when=when), None, [" ".join(text)]))
+    if not cards:
+        return ""
+    intro = e(say("nwMany", k=len(found)))
+    if "michelin-guide-ceremony-dates" in guides:
+        intro += " " + e(w["cerAll"]).replace("{link}", f'<a href="/guides/michelin-guide-ceremony-dates/">{e(w["cerAllLink"])}</a>')
+    return page_section("latest", w["nwEyebrow"], say("nwTitleMany"), intro, '<div class="facts">' + "".join(cards) + "</div>")
+
+
 def pilot_sections(p, page, starred, lang):
     """The new sections, written into the page after "What each extra Michelin star costs": short paragraphs worked out
     from the restaurants, naming a few rather than listing them all (the list above has every one)."""
@@ -1382,14 +1517,7 @@ def pilot_sections(p, page, starred, lang):
     say = lambda key, **v: say_in(w, key, page, **{k: (n_word(x, lang) if isinstance(x, int) else x) for k, x in v.items()})
     tier_word = lambda s: w["tierWord" + str(s)]
 
-    def section(sid, eyebrow, title, text, body):
-        return (f'<section id="{sid}">\n    <div class="wrap">\n      <div class="section-head"><div>'
-                f'<span class="eyebrow">{e(eyebrow)}</span><h2 style="margin-top: 6px">{e(title)}</h2>'
-                + (f"<p>{text}</p>" if text else "") + "</div></div>\n      " + body + "\n    </div>\n  </section>\n")
-
-    def card(title, count, paragraphs, extra=""):
-        head = f'<h3>{e(title)}' + (f' <span class="count">{count}</span>' if count is not None else "") + "</h3>"
-        return "<div>" + head + "".join(f"<p>{t}</p>" for t in paragraphs if t) + extra + "</div>"
+    section, card = page_section, fact_card
 
     # The latest guide's changes, used by the star levels and the latest-guide section.
     dated = [r for r in members(p) if r.get("changeDate") and (r.get("change") or r.get("status") in ("lost", "closed"))]
@@ -1470,55 +1598,6 @@ def pilot_sections(p, page, starred, lang):
                  f'<th class="num">{e(w["chPrice"])}</th></tr></thead><tbody>{rows}</tbody></table>')
         out.append(section("cheapest", w["chEyebrow"], say("chTitle"), e(" ".join(text)), table))
 
-    # The latest guide: what changed, then when the stars are announced (content/ceremonies.json).
-    cards = []
-    if now:
-        group = lambda test: sorted((r for r in now if test(r)), key=lambda r: (-r["stars"], r["name"].lower()))
-        new = group(lambda r: r.get("change") == "new" and not r.get("status"))
-        up = group(lambda r: r.get("change") == "up" and not r.get("status"))
-        down = group(lambda r: r.get("change") == "down" and not r.get("status"))
-        lost = group(lambda r: r.get("status") in ("lost", "closed"))
-        text = []
-        if new:
-            names = plain_names(new, w) if len(new) <= 10 else plain_names(new[:10], w) + e(w["pMore"].replace("{m}", str(len(new) - 10)))
-            text.append(say("nwNewOne" if len(new) == 1 else "nwNewText", when=when, k=len(new), names=names))
-        if up:
-            levels = [(st, [r for r in up if r["stars"] == st]) for st in (3, 2)]
-            text.append(say("nwUpText", names=and_plain([e(w["nwTo"].replace("{stars}", w["star" + str(st)])).replace("{r}", plain_names(rs, w))
-                                                         for st, rs in levels if rs], w)))
-        if down:
-            text.append(say("nwDownOne" if len(down) == 1 else "nwDownText", names=plain_names(down, w)))
-        if lost:
-            text.append(say("nwLostOne" if len(lost) == 1 else "nwLostText", names=plain_names(lost, w)))
-        if not (new or up or down or lost):
-            text.append(say("nwNone", when=when))
-        cards.append(card(say("nwWhat", when=when), None, [" ".join(text)]))
-    g = ceremony_guide(p)
-    if g and g.get("last"):
-        last = g["last"]
-        text = [say("cerText", guide=e(g["name"]), usual=e(g["usual"]))]
-        key = "cerLastOnline" if last.get("online") else "cerLast" if last.get("where") else "cerLastNoPlace"
-        text.append(say(key, date=long_date(last["date"], lang), where=e(last.get("where", ""))))
-        if g["status"]:
-            text.append(say("cerUpdating"))
-        nxt = g.get("coming")
-        if nxt:
-            text.append(say("cerNext" if nxt.get("where") else "cerNextNoPlace", date=long_date(nxt["date"], lang), where=e(nxt.get("where", ""))))
-        elif g.get("due"):
-            text.append(say("cerDue", month=long_month(g["due"][:7], lang)))
-        if g.get("note"):
-            text.append(e(g["note"]))
-        # Every guide's dates are on the ceremony dates guide, its row for this one marked #cer-<id>.
-        if "michelin-guide-ceremony-dates" in guides:
-            text.append(e(w["cerAll"]).replace("{link}", f'<a href="/guides/michelin-guide-ceremony-dates/#cer-{e(g["id"])}">{e(w["cerAllLink"])}</a>'))
-        past = [last] + [c for c in g.get("ceremonies", []) if c is not last and c.get("date") != last["date"]]
-        rows = "".join(f'<li>{long_date(c["date"], lang)}'
-                       + (" · " + e(w["cerOnline"]) if c.get("online") else " · " + e(re.sub(r"^the ", "", c["where"])) if c.get("where") else "") + "</li>"
-                       for c in past[:4])
-        cards.append(card(say("cerTitle"), None, [" ".join(text)], f'<p class="past-label">{e(w["cerPast"])}</p><ul class="past">{rows}</ul>'))
-    if cards:
-        title = say("nwTitle", when=when) if now else say("cerTitle")
-        out.append(section("latest", w["nwEyebrow"], title, "", '<div class="facts">' + "".join(cards) + "</div>"))
 
     # By cuisine, as the MICHELIN Guide names them: a line on each with two or more, then the rest by name.
     cuisines = {}

@@ -384,7 +384,7 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 }
 .facts h3 { font-size: 1.1rem; margin-bottom: 8px; }
 .facts h3 .count { font-family: var(--font-num); font-size: .85rem; color: var(--green); font-weight: 400; }
-.facts a { color: var(--green); font-weight: 600; text-underline-offset: 3px; }
+.facts a, #latest .section-head a { color: var(--green); font-weight: 600; text-underline-offset: 3px; }
 .vt-name { font-weight: 600; }
 .facts .past-label { margin-top: 14px; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
 .facts .past { list-style: none; margin: 6px 0 0; padding: 0; color: var(--muted); font-size: .9rem; }

@@ -691,6 +691,45 @@ content:
       - name: noticeJa
         label: Notice in Japanese
         type: string
+      - name: menus
+        label: Menus (restaurant page only)
+        description: Every menu, for the restaurant's own page. Meal is dinner, lunch or lounge (the bar or lounge).
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Menu name, type: string }
+          - name: meal
+            label: Meal
+            type: select
+            options:
+              values:
+                - { value: dinner, label: "Dinner" }
+                - { value: lunch, label: "Lunch" }
+                - { value: lounge, label: "Bar or lounge" }
+          - { name: price, label: Price per person, type: number }
+          - { name: wine, label: Wine pairing, type: number }
+          - { name: courses, label: Courses, type: number }
+          - { name: note, label: Note, type: string }
+      - { name: menusSource, label: Menus link, type: string }
+      - { name: menusChecked, label: Menus checked on (2026-10-09), type: string }
+      - name: priceHistory
+        label: Past dinner menu prices (restaurant page only)
+        description: The main dinner menu's price on past dates, e.g. from Internet Archive copies of the restaurant's menu page.
+        type: object
+        list: true
+        fields:
+          - { name: date, label: Month (2019-10), type: string }
+          - { name: price, label: Price, type: number }
+          - { name: wine, label: Wine pairing, type: number }
+          - { name: source, label: Link, type: string }
+      - { name: starsSince, label: Current stars held since (year), type: number }
+      - { name: dressCode, label: Dress code, type: text }
+      - { name: booking, label: How to book, type: text }
+      - { name: bookingUrl, label: Booking page link, type: string }
+      - { name: cancellation, label: Cancellation rules, type: text }
+      - { name: children, label: Children, type: text }
+      - { name: infoSource, label: Link for these details, type: string }
+      - { name: infoChecked, label: Details checked on (2026-10-09), type: string }
       - name: status
         label: Status (only if no longer starred)
         description: Leave empty for starred restaurants. Set this to move it to the greyed-out "No longer starred" list.

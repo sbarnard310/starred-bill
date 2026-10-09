@@ -11,15 +11,15 @@
   "reviews": 4657,
   "dinner": 350,
   "dinnerType": "menu",
-  "dinnerNote": "Chef's tasting, 8 courses (4-course prix fixe $218)",
+  "dinnerNote": "Chef's Tasting Menu, 8 courses (4-course prix fixe $225)",
   "wine": 180,
-  "sourceType": "press",
-  "source": "https://www.tastingtable.com/2205516/three-star-michelin-us-restaurant-costs-explained/",
-  "lunch": 135,
+  "sourceType": "site",
+  "source": "https://www.le-bernardin.com/menus/dining-room/chef-s-tasting",
+  "lunch": 142,
   "lunchType": "menu",
-  "lunchNote": "Lunch prix fixe, 3 courses, about",
-  "lunchSourceType": "press",
-  "lunchSource": "https://restaurantsforkings.com/blog/le-bernardin-menu-what-to-order",
+  "lunchNote": "Lunch prix fixe, 3 courses",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.le-bernardin.com/menus/dining-room/lunch",
   "website": "https://www.le-bernardin.com/",
   "lat": 40.761432,
   "lng": -73.981684,
@@ -33,5 +33,104 @@
     "kosher"
   ],
   "chef": "Eric Ripert",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Chef's Tasting Menu",
+      "meal": "dinner",
+      "price": 350,
+      "wine": 180,
+      "courses": 8,
+      "note": "For the whole table"
+    },
+    {
+      "name": "Vegetarian Tasting Menu",
+      "meal": "dinner",
+      "price": 270,
+      "wine": 180,
+      "courses": 8,
+      "note": "For the whole table"
+    },
+    {
+      "name": "Prix fixe",
+      "meal": "dinner",
+      "price": 225,
+      "courses": 4,
+      "note": "Choose a dish for each course"
+    },
+    {
+      "name": "Lunch prix fixe",
+      "meal": "lunch",
+      "price": 142,
+      "courses": 3,
+      "note": "Monday to Friday"
+    },
+    {
+      "name": "City Harvest lunch in the lounge",
+      "meal": "lounge",
+      "price": 98,
+      "courses": 3,
+      "note": "Weekday lunch in the lounge, which takes no bookings; $5 goes to the charity City Harvest"
+    }
+  ],
+  "menusSource": "https://www.le-bernardin.com/menus/dining-room/chef-s-tasting",
+  "menusChecked": "2026-10-09",
+  "priceHistory": [
+    {
+      "date": "2017-10",
+      "price": 225,
+      "wine": 145,
+      "source": "https://web.archive.org/web/20171021050126/https://www.le-bernardin.com/menus/dining-room/chef-s-tasting"
+    },
+    {
+      "date": "2019-10",
+      "price": 228,
+      "wine": 145,
+      "source": "https://web.archive.org/web/20191007035938/https://www.le-bernardin.com/menus/dining-room/chef-s-tasting"
+    },
+    {
+      "date": "2020-11",
+      "price": 245,
+      "wine": 150,
+      "source": "https://web.archive.org/web/20201112023157/https://www.le-bernardin.com/menus/dining-room/chef-s-tasting"
+    },
+    {
+      "date": "2021-10",
+      "price": 280,
+      "wine": 150,
+      "source": "https://web.archive.org/web/20211014183731/https://www.le-bernardin.com/menus/dining-room/chef-s-tasting"
+    },
+    {
+      "date": "2022-11",
+      "price": 298,
+      "wine": 170,
+      "source": "https://web.archive.org/web/20221129144835/https://www.le-bernardin.com/menus/dining-room/chef-s-tasting"
+    },
+    {
+      "date": "2023-12",
+      "price": 310,
+      "wine": 170,
+      "source": "https://web.archive.org/web/20231202204630/https://www.le-bernardin.com/menus/dining-room/chef-s-tasting"
+    },
+    {
+      "date": "2024-09",
+      "price": 325,
+      "wine": 180,
+      "source": "https://web.archive.org/web/20240915152915/https://www.le-bernardin.com/menus/dining-room/chef-s-tasting"
+    },
+    {
+      "date": "2025-11",
+      "price": 350,
+      "wine": 180,
+      "source": "https://web.archive.org/web/20251110093901/https://www.le-bernardin.com/menus/dining-room/chef-s-tasting"
+    }
+  ],
+  "starsSince": 2005,
+  "dressCode": "Business casual. Jackets are recommended but not required. No athletic wear, loungewear, shorts, T-shirts, short sleeves, sneakers or flip-flops.",
+  "booking": "Bookings open on the first of each month for the month after, online around the clock or by phone (212 554 1515) on weekdays. The lounge takes no bookings.",
+  "bookingUrl": "https://resy.com/cities/new-york-ny/venues/le-bernardin",
+  "cancellation": "A credit card secures every booking. Cancel at least 48 hours ahead to avoid a $150 per person fee.",
+  "children": "Children under 10 aren't allowed, and there are no high chairs, strollers or children's menu.",
+  "infoSource": "https://www.le-bernardin.com/reservations/hours-and-information",
+  "infoChecked": "2026-10-09"
 }

@@ -1561,6 +1561,41 @@ button.near-card:hover { border-color: var(--green); }
 @media (max-width: 720px) {
   .rp-bill th:nth-child(4), .rp-bill td:nth-child(4), .rp-peers th:nth-child(2), .rp-peers td:nth-child(2) { display: none; }
   .rp-table { font-size: .88rem; }
+  .rp-history-chart text { font-size: 19px; }
+  .rp-history-chart .h-year, .rp-history-chart .h-tot { font-size: 17px; }
 }
 /* Destination pages: the link from a restaurant's row to its own page. */
 .page-link { display: block; width: fit-content; margin-top: 3px; font-size: .8rem; font-weight: 600; color: var(--green); text-underline-offset: 3px; }
+/* Restaurant pages, 9 Oct 2026: the currency buttons under the answer, the price history chart, the lists of cheaper
+   ways in and similar restaurants, "Before you go" and the price report link. Logical sides only. */
+.rp-cur { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 14px; font-size: .85rem; color: var(--band-muted); }
+.rp-cur[hidden] { display: none; }
+.rp-cur-label { margin-inline-end: 4px; }
+.rp-cur button { min-width: 38px; padding: 5px 10px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--band-ink) 30%, transparent); background: none; color: var(--band-ink); font: inherit; font-weight: 600; cursor: pointer; }
+.rp-cur button[aria-pressed="true"] { background: var(--band-ink); color: var(--band); border-color: var(--band-ink); }
+.rp-history { max-width: 760px; }
+.rp-history-chart { display: block; width: 100%; height: auto; }
+.rp-history-chart .h-menu { fill: color-mix(in srgb, var(--gold) 70%, var(--surface)); }
+.rp-history-chart .h-menu.now { fill: var(--gold); }
+.rp-history-chart .h-wine { fill: color-mix(in srgb, var(--green) 35%, var(--surface)); }
+.rp-history-chart text { font-family: var(--font-num); font-size: 15px; text-anchor: middle; fill: var(--ink); }
+.rp-history-chart .h-year { fill: var(--muted); font-size: 14px; }
+.rp-key { display: flex; gap: 6px 18px; flex-wrap: wrap; margin-top: 8px; font-size: .85rem; color: var(--muted); }
+.rp-key span { display: inline-flex; align-items: center; gap: 6px; }
+.rp-key i { flex: none; width: 12px; height: 12px; border-radius: 2px; }
+.rp-key .k-menu { background: var(--gold); }
+.rp-key .k-wine { background: color-mix(in srgb, var(--green) 35%, var(--surface)); }
+.rp-fold { margin-top: 18px; max-width: 760px; }
+.rp-fold summary { cursor: pointer; font-weight: 600; color: var(--green); }
+.rp-fold .table-scroll { margin-top: 10px; }
+.rp-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 0 40px; }
+.rp-list li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.rp-list li > .num { margin-inline-start: 6px; font-weight: 500; }
+.rp-list li > span:last-child { display: block; margin-top: 3px; color: var(--muted); font-size: .88rem; }
+.rp-list a { color: var(--ink); font-weight: 600; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.rp-list a:hover { color: var(--green); text-decoration-color: currentColor; }
+.rp-list .stars { display: inline-flex; gap: 2px; color: var(--gold); }
+.rp-list .stars svg { width: 12px; height: 12px; }
+.rp-report { white-space: nowrap; font-weight: 600; }
+.rp-history-chart .h-val { fill: #1F2A22; font-weight: 600; }
+.rp-history-chart .h-tot { fill: var(--muted); font-size: 14px; }

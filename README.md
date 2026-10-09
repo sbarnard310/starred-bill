@@ -83,7 +83,18 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 
 Leave out any field you don't have.
 
-Restaurants listed in `RESTAURANT_PAGES` (build.py) also get a page of their own at `/restaurants/<file name>/`, built from the same fields: the prices as a till receipt and a bill with service, the stars, chef, cuisine, dietary options, Google rating, how the dinner price compares with the same stars nearby, the starred restaurants within 5 km and a FAQ. Destination pages and guide tables link to it.
+Restaurants listed in `RESTAURANT_PAGES` (build.py) also get a page of their own at `/restaurants/<file name>/`, built from the same fields: the prices as a till receipt and a bill with service, the stars, chef, cuisine, dietary options, Google rating, how the dinner price compares with the same stars nearby, the starred restaurants within 5 km and a FAQ. Destination pages and guide tables link to it. Its link-preview picture is its till receipt, drawn by `python3 scripts/restaurant_images.py` on the Mac into `src/og/restaurants/<id>.png` (run it again after changing a restaurant page's prices).
+
+These optional fields appear only on a restaurant's own page; each part of the page is left out until they're filled in (Le Bernardin has them all):
+
+| field | meaning |
+|---|---|
+| `menus` | every menu, each with `name`, `meal` (`dinner`, `lunch` or `lounge`, i.e. the bar or lounge), `price`, optional `wine` (its pairing), `courses` and `note`. Drives "Menus and prices", "Cheaper ways in" and the answer's "cheapest way in" |
+| `menusSource`, `menusChecked` | where the menus came from and the day they were checked (`2026-10-09`) |
+| `priceHistory` | past prices of the main dinner menu: `date` (`2019-10`), `price`, optional `wine` and `source` (e.g. an Internet Archive copy of the restaurant's menu page). Drawn as a bar chart with today's price added |
+| `starsSince` | the year it first held its current number of stars, e.g. `2005` |
+| `dressCode`, `booking`, `bookingUrl`, `cancellation`, `children` | "Before you go": plain sentences from the restaurant's own website; `bookingUrl` is its booking page (Resy, Tock, OpenTable… are named on the button) |
+| `infoSource`, `infoChecked` | where those came from and the day they were checked |
 
 Chefs and dietary options are refreshed from the MICHELIN Guide with `python3 scripts/michelin_details.py fetch` then `apply` (see the script for `review` and `chefs FILE`).
 

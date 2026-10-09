@@ -91,3 +91,50 @@ function startMapWhenNear() {
 }
 showPhoto();
 startMapWhenNear();
+
+// ---------- Prices in another currency ----------
+// The page is written in the restaurant's own currency; the buttons under the answer show every price on it in pounds,
+// euros or dollars too (marked ≈, at the rates in currencies.json). The price history keeps the original figures
+// (data-nocx), as today's rate would misstate past prices. The choice is kept for the next restaurant page.
+const CUR_KEY = "starredbill-rp-currency";
+const pageCur = DATA.cur;
+const symbolFor = (c) => c === "USD" ? "$" : symbolOf(c);
+const priceRe = new RegExp("(^|[^A-Za-z])(" + symbolFor(pageCur).replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/ /g, "[\\u00a0 ]") + ")([0-9][0-9,]*(?:\\.[0-9]+)?)", "g");
+const priced = [];
+function collectPrices() {
+  const roots = [document.querySelector(".rp-hero"), $("restaurantMain")];
+  roots.forEach((root) => {
+    const walk = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: (n) =>
+      n.parentElement.closest("[data-nocx], script, style, svg, .rp-cur") || !priceRe.test(n.nodeValue) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+    let n;
+    while ((n = walk.nextNode())) { priceRe.lastIndex = 0; priced.push({ node: n, text: n.nodeValue }); }
+  });
+}
+function showCurrency(c) {
+  const rate = DATA.currencies[c].perUSD / DATA.currencies[pageCur].perUSD;
+  priced.forEach((p) => {
+    p.node.nodeValue = c === pageCur ? p.text : p.text.replace(priceRe, (m, pre, sym, num, at, all) =>
+      pre + (/(roughly|about) $/.test(all.slice(0, at + pre.length)) ? "" : "≈") + symbolFor(c) + Math.round(Number(num.replace(/,/g, "")) * rate).toLocaleString("en-GB"));
+  });
+  $("rpCur").querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.cur === c)));
+}
+(function wireCurrency() {
+  const list = [pageCur].concat((DATA.switchable || []).filter((c) => c !== pageCur && DATA.currencies[c]));
+  if (list.length < 2) return;
+  collectPrices();
+  const box = $("rpCur");
+  box.innerHTML = '<span class="rp-cur-label">Prices in</span>' + list.map((c) => '<button type="button" data-cur="' + c + '" aria-pressed="false">' + esc(symbolFor(c).trim()) + "</button>").join("");
+  box.hidden = false;
+  box.addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-cur]");
+    if (!b) return;
+    showCurrency(b.dataset.cur);
+    store.set(CUR_KEY, b.dataset.cur);
+    track("currency", { currency: b.dataset.cur, page: "restaurant" });
+  });
+  const saved = store.get(CUR_KEY, pageCur);
+  showCurrency(list.includes(saved) ? saved : pageCur);
+})();
+
+// "Seen a different price?" opens an email; counted as a contact like the destination pages' form.
+document.querySelectorAll("[data-report]").forEach((a) => a.addEventListener("click", () => track("contact", { topic: "price" })));

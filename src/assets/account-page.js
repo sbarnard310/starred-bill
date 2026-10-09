@@ -1,6 +1,7 @@
-// The account page: what you've ticked off (stats, milestones, progress by destination), your been-there
-// list with dates, your wishlist, your preferences (home city, currency, dietary needs) and your data
-// (download, sign out, delete). account.js does the signing in and keeps the preferences with the account.
+// The account page: what you've ticked off (stats, milestones, progress by destination), your dining diary (the
+// restaurants you've been to, newest first, with the date, what you paid, the menu and your private notes), your wishlist
+// (with notes), your preferences (home city, currency, dietary needs) and your data (download, sign out, delete).
+// account.js does the signing in, keeps the preferences with the account and runs the diary window.
 
 // The restaurants come from /data/account.json (build_account_pages() in build.py), fetched only once someone is signed in:
 // one row of values each, with the place it sits in given as a number in the file's list of places.
@@ -57,28 +58,71 @@ function progress(been) {
     esc(t("accOf", { n, total: p.n })) + "</span></li>").join("") + "</ul></section>";
 }
 
-function beenList(been) {
-  const items = been.slice().sort((a, b) => String(loadVisited()[b.id] || "").localeCompare(String(loadVisited()[a.id] || "")) || nameOf(a).localeCompare(nameOf(b)));
-  const visited = loadVisited();
-  return '<section class="acct-section"><h2>' + esc(t("accBeenTitle")) + ' <span class="count">' + been.length + "</span></h2>" +
-    (!items.length ? '<p class="empty-note">' + esc(t("accBeenEmpty")) + "</p>" : '<ul class="acct-list">' + items.map((r) =>
-      '<li><div class="al-main"><a class="al-name" href="' + pageLink(r) + '">' + esc(nameOf(r)) + "</a>" +
-      '<span class="al-meta">' + starIcons(starsOf(r)) + (r.status ? " " + esc(t("formerly")) : "") + " · " + esc(whereOf(r)) + "</span></div>" +
-      '<label class="al-date"><span class="sr-only">' + esc(t("accDateAria", { name: nameOf(r) })) + '</span><input type="date" data-date="' + esc(r.id) + '" value="' + esc(visited[r.id] || "") + '" max="' + new Date().toISOString().slice(0, 10) + '"></label>' +
-      '<button type="button" class="linkish" data-unbeen="' + esc(r.id) + '">' + esc(t("accRemove")) + "</button></li>").join("") + "</ul>") + "</section>";
+// "12 Sep 2026" from "2026-09-12" (read as a calendar day, so no time zone moves it).
+const dayLabel = (d) => new Date(d + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+const infoOf = (r) => ({ name: nameOf(r), cur: r.cur });
+// What was paid, in the currency it was paid in ("£195 per person").
+function paidLabel(d) {
+  if (d.paid == null) return "";
+  const price = d.cur && DATA.currencies[d.cur] ? localMoney(d.paid, d.cur) : (d.cur ? d.cur + " " : "") + d.paid.toLocaleString("en-GB");
+  return t("accPerPerson", { price });
+}
+// The diary's details line and note, under the name.
+function diaryDetails(d) {
+  const line = [d.menu, paidLabel(d)].filter(Boolean).join(" · ");
+  return (line ? '<span class="de-line">' + esc(line) + "</span>" : "") + (d.note ? '<span class="de-note">' + esc(d.note) + "</span>" : "");
+}
+// What they've paid in all, in the currency they've paid in most often (others converted at today's rates).
+function spentLine(been, diary) {
+  const paid = been.map((r) => diary[r.id]).filter((d) => d && d.paid != null && DATA.currencies[d.cur]);
+  if (!paid.length) return "";
+  const count = {};
+  paid.forEach((d) => { count[d.cur] = (count[d.cur] || 0) + 1; });
+  const cur = Object.keys(count).sort((a, b) => count[b] - count[a])[0];
+  const total = paid.reduce((a, d) => a + d.paid / DATA.currencies[d.cur].perUSD * DATA.currencies[cur].perUSD, 0);
+  const mixed = paid.some((d) => d.cur !== cur);
+  return '<p class="de-spent">' + esc(t("accSpent", { n: paid.length, total: localMoney(Math.round(total), cur) })) + (mixed ? ' <span class="de-mixed">' + esc(t("accSpentMixed")) + "</span>" : "") + "</p>";
+}
+
+function diaryList(been) {
+  const visited = loadVisited(), diary = loadDiary();
+  const items = been.slice().sort((a, b) => String(visited[b.id] || "").localeCompare(String(visited[a.id] || "")) || nameOf(a).localeCompare(nameOf(b)));
+  return '<section class="acct-section" id="diary"><h2>' + esc(t("accDiaryTitle")) + ' <span class="count">' + been.length + "</span></h2>" +
+    (items.length ? "<p>" + esc(t("accDiaryText")) + "</p>" + spentLine(been, diary) : "") +
+    (!items.length ? '<p class="empty-note">' + esc(t("accBeenEmpty")) + "</p>" : '<ul class="acct-list diary-list">' + items.map((r) => {
+      const d = diary[r.id] || {}, day = visited[r.id];
+      return '<li><span class="de-date' + (day ? "" : " none") + '">' + esc(day ? dayLabel(day) : t("accNoDate")) + "</span>" +
+        '<div class="al-main"><a class="al-name" href="' + pageLink(r) + '">' + esc(nameOf(r)) + "</a>" +
+        '<span class="al-meta">' + starIcons(starsOf(r)) + (r.status ? " " + esc(t("formerly")) : "") + " · " + esc(whereOf(r)) + "</span>" + diaryDetails(d) + "</div>" +
+        '<span class="al-acts"><button type="button" class="linkish" data-diary="' + esc(r.id) + '">' + esc(t(day || d.paid != null || d.menu || d.note ? "accEdit" : "accAddDetails")) + "</button>" +
+        '<button type="button" class="linkish" data-unbeen="' + esc(r.id) + '">' + esc(t("accRemove")) + "</button></span></li>";
+    }).join("") + "</ul>") + "</section>";
+}
+
+// Notes on restaurants that are no longer on either list (a "been there" unticked on a destination page keeps its details).
+function otherNotes() {
+  const visited = loadVisited(), wish = new Set(loadWishlist()), diary = loadDiary();
+  const list = Object.keys(diary).filter((id) => !(id in visited) && !wish.has(id)).map((id) => byId.get(id)).filter(Boolean);
+  if (!list.length) return "";
+  return '<section class="acct-section"><h2>' + esc(t("accOtherNotes")) + "</h2><p>" + esc(t("accOtherNotesText")) + '</p><ul class="acct-list">' + list.map((r) =>
+    '<li><div class="al-main"><a class="al-name" href="' + pageLink(r) + '">' + esc(nameOf(r)) + '</a><span class="al-meta">' + starIcons(starsOf(r)) + " · " + esc(whereOf(r)) + "</span>" + diaryDetails(diary[r.id]) + "</div>" +
+    '<span class="al-acts"><button type="button" class="linkish" data-diary="' + esc(r.id) + '">' + esc(t("accEditNote")) + "</button>" +
+    '<button type="button" class="linkish" data-undiary="' + esc(r.id) + '">' + esc(t("accRemove")) + "</button></span></li>").join("") + "</ul></section>";
 }
 
 function wishList() {
   const list = loadWishlist().map((id) => byId.get(id)).filter(Boolean);
-  const visited = loadVisited();
+  const visited = loadVisited(), diary = loadDiary();
   return '<section class="acct-section"><h2>' + esc(t("accWishTitle")) + ' <span class="count">' + list.length + "</span></h2>" +
     (list.length >= 2 ? '<p class="wish-compare"><a class="btn-line" href="/compare/">' + esc(t("wishCompare")) + " →</a></p>" : "") +
     (!list.length ? '<p class="empty-note">' + esc(t("accWishEmpty")) + "</p>" : '<ul class="acct-list">' + list.map((r) =>
       '<li><div class="al-main"><a class="al-name" href="' + pageLink(r) + '">' + esc(nameOf(r)) + "</a>" +
-      '<span class="al-meta">' + starIcons(starsOf(r)) + " · " + esc(whereOf(r)) + (r.dinner != null ? " · " + esc(localMoney(r.dinner, r.cur)) : "") + "</span></div>" +
+      '<span class="al-meta">' + starIcons(starsOf(r)) + " · " + esc(whereOf(r)) + (r.dinner != null ? " · " + esc(localMoney(r.dinner, r.cur)) : "") + "</span>" +
+      (diary[r.id] && diary[r.id].note && !(r.id in visited) ? '<span class="de-note">' + esc(diary[r.id].note) + "</span>" : "") + "</div>" +
+      '<span class="al-acts">' + (r.id in visited ? "" : '<button type="button" class="linkish" data-diary="' + esc(r.id) + '">' + esc(t(diary[r.id] && diary[r.id].note ? "accEditNote" : "accAddNote")) + "</button>") +
       (r.id in visited ? '<span class="al-been"><svg aria-hidden="true"><use href="#check"/></svg>' + esc(t("been")) + "</span>"
         : '<button type="button" class="linkish" data-markbeen="' + esc(r.id) + '">' + esc(t("accMarkBeen")) + "</button>") +
-      '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '">' + esc(t("accRemove")) + "</button></li>").join("") + "</ul>") + "</section>";
+      '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '">' + esc(t("accRemove")) + "</button></span></li>").join("") + "</ul>") + "</section>";
 }
 
 // ---------- Your preferences ----------
@@ -158,16 +202,20 @@ function render() {
   }
   const visited = loadVisited();
   const been = Object.keys(visited).map((id) => byId.get(id)).filter(Boolean);
-  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + progress(been) + beenList(been) + wishList() + prefsSection() + dataSection();
+  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + progress(been) + diaryList(been) + wishList() + otherNotes() + prefsSection() + dataSection();
   if (location.hash === "#preferences" && !ui.jumped) { ui.jumped = true; $("preferences").scrollIntoView(); }
 }
 
 function downloadData() {
-  const visited = loadVisited();
+  const visited = loadVisited(), wish = loadWishlist(), diary = loadDiary();
+  const nameFor = (id) => (byId.get(id) || {}).name || id;
+  const d = (id) => diary[id] || {};
   const out = {
     account: account.user.email, exported: new Date().toISOString(), site: "https://starredbill.com",
-    wishlist: loadWishlist().map((id) => ({ id, name: (byId.get(id) || {}).name || id })),
-    beenThere: Object.keys(visited).map((id) => ({ id, name: (byId.get(id) || {}).name || id, date: visited[id] || null })),
+    wishlist: wish.map((id) => ({ id, name: nameFor(id), note: d(id).note || null })),
+    beenThere: Object.keys(visited).map((id) => ({ id, name: nameFor(id), date: visited[id] || null,
+      paidPerPerson: d(id).paid != null ? d(id).paid : null, currency: d(id).paid != null ? d(id).cur || null : null, menu: d(id).menu || null, note: d(id).note || null })),
+    otherNotes: Object.keys(diary).filter((id) => !(id in visited) && !wish.includes(id)).map((id) => Object.assign({ id, name: nameFor(id) }, diary[id])),
     preferences: { homeCity: loadProfile().homeName || null, currency: loadProfile().currency || null, dietaryNeeds: loadProfile().diet || null },
   };
   const url = URL.createObjectURL(new Blob([JSON.stringify(out, null, 2)], { type: "application/json" }));
@@ -188,8 +236,21 @@ document.addEventListener("click", async (e) => {
     savePrefs({ home: p.id, homeName: p.name }, "Saved. Near me will open on " + p.name + ".");
     return;
   }
-  if (el.dataset.unbeen) { const v = loadVisited(); delete v[el.dataset.unbeen]; setVisited(v); render(); return; }
-  if (el.dataset.markbeen) { toggleVisited(el.dataset.markbeen); render(); return; }
+  if (el.dataset.diary) { const r = byId.get(el.dataset.diary); openDiary(el.dataset.diary, r ? infoOf(r) : {}); return; }
+  if (el.dataset.unbeen || el.dataset.undiary) {
+    // Removing it from the diary deletes its details too, so ask first when it has any.
+    const id = el.dataset.unbeen || el.dataset.undiary, diary = loadDiary(), r = byId.get(id);
+    if (diary[id] && !confirm(t(el.dataset.unbeen ? "accRemoveDiary" : "accRemoveNote", { name: r ? nameOf(r) : id }))) return;
+    if (diary[id]) { delete diary[id]; setDiary(diary); }
+    if (el.dataset.unbeen) { const v = loadVisited(); delete v[id]; setVisited(v); }
+    render(); return;
+  }
+  if (el.dataset.markbeen) {
+    // Ticked off from the wishlist: straight on to the diary, for the date and what they paid.
+    const id = el.dataset.markbeen, r = byId.get(id);
+    if (toggleVisited(id)) { render(); openDiary(id, r ? infoOf(r) : {}); }
+    return;
+  }
   if (el.dataset.unwish) { setWishlist(loadWishlist().filter((x) => x !== el.dataset.unwish)); render(); return; }
   if (el.id === "dlData") { downloadData(); return; }
   if (el.id === "signOutBtn") { ui.message = ""; await signOut(); return; }
@@ -204,8 +265,6 @@ document.addEventListener("click", async (e) => {
   }
 });
 document.addEventListener("change", (e) => {
-  const input = e.target.closest("[data-date]");
-  if (input) setVisitedDate(input.dataset.date, input.value);
   if (e.target.id === "prefCur") savePrefs({ currency: e.target.value }, e.target.value ? "Saved. Prices will show in " + DATA.currencies[e.target.value].symbol.trim() + " wherever we can." : "Saved. Prices will show in each restaurant's own currency.");
   if (e.target.id === "prefDiet") savePrefs({ diet: e.target.value }, e.target.value ? "Saved. Help me pick will start with " + PREF_DIETS.find(([k]) => k === e.target.value)[1].toLowerCase() + " selected." : "Saved. Help me pick will start with no dietary filter.");
 });
@@ -220,7 +279,8 @@ document.addEventListener("keydown", (e) => {
   if (e.target.id === "prefHome" && e.key === "Enter") { e.preventDefault(); const b = document.querySelector("#prefHomeList button"); if (b) b.click(); }
   if (e.target.id === "prefHome" && e.key === "Escape") $("prefHomeList").hidden = true;
 });
-["sb:account", "sb:wishlist", "sb:visited", "sb:profile"].forEach((ev) => window.addEventListener(ev, (e) => { if (e.type === "sb:account" || e.detail.from === "sync") render(); }));
-window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY || e.key === VISITED_KEY) render(); });
+// The diary window saves without a "sync" mark, so its own changes redraw the page too.
+["sb:account", "sb:wishlist", "sb:visited", "sb:profile", "sb:diary"].forEach((ev) => window.addEventListener(ev, (e) => { if (e.type === "sb:account" || e.type === "sb:diary" || e.detail.from === "sync") render(); }));
+window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY || e.key === VISITED_KEY || e.key === DIARY_KEY) render(); });
 
 render();

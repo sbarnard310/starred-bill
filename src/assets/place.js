@@ -746,13 +746,17 @@ function render() { renderMealFilter(); renderShowFilter(); renderStarFilter(); 
 function renderAll() { applyStatic(); render(); renderFigures(); renderTiers(); renderLegend(RESTAURANTS); if (FORMER.some(lostPin)) $("mapLegend").insertAdjacentHTML("beforeend", legendLost()); }
 
 let toastTimer;
-function toast(msg, undo) {
+// `act` adds a second button, { label, run }, e.g. "Add to diary" after ticking "been there"; the toast then stays a little longer.
+function toast(msg, undo, act) {
   state.lastUndo = undo;
+  state.toastAct = act ? act.run : null;
   $("toastMsg").textContent = msg;
   $("undo").hidden = !undo;
+  $("toastAct").hidden = !act;
+  if (act) $("toastAct").textContent = act.label;
   $("toast").hidden = false;
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => { $("toast").hidden = true; state.lastUndo = null; }, 5000);
+  toastTimer = setTimeout(() => { $("toast").hidden = true; state.lastUndo = null; state.toastAct = null; }, act ? 8000 : 5000);
 }
 // The ✓ next to the heart. Signed out, it offers a free account instead (account.js).
 function beenButton(r) {
@@ -779,7 +783,8 @@ function toggleBeen(id) {
   const was = onBeen(r);
   if (!toggleVisited(id)) return;
   state.visited = loadVisited();
-  toast(t(was ? "toastNotBeen" : "toastBeen", { name: nameOf(r) }), () => { toggleVisited(id); state.visited = loadVisited(); });
+  toast(t(was ? "toastNotBeen" : "toastBeen", { name: nameOf(r) }), () => { toggleVisited(id); state.visited = loadVisited(); },
+    was ? null : { label: t("diaryAdd"), run: () => openDiary(id, { name: nameOf(r), cur: r.cur }) });
   renderRow(id, ".been");
 }
 function toggleWish(id) {
@@ -857,6 +862,10 @@ document.addEventListener("click", (e) => {
   } else if (el.dataset.cat) {
     state.activeCat = el.dataset.cat; $("cuisineQ").value = ""; render(); choseFilter();
     if (el.classList.contains("tag")) $("compare").scrollIntoView();
+  } else if (el.id === "toastAct") {
+    const run = state.toastAct;
+    $("toast").hidden = true; state.toastAct = null; state.lastUndo = null;
+    if (run) run();
   } else if (el.id === "undo") {
     if (state.lastUndo) { state.lastUndo(); state.lastUndo = null; save(); render(); }
     $("toast").hidden = true;

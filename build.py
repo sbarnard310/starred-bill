@@ -3316,11 +3316,11 @@ def build_account_pages():
         "currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES,
     }
     write("/account/", render("account.html", {
-        "title": "Your account · The Starred Bill", "description": "Your wishlist and the Michelin-starred restaurants you've been to, on any device.",
+        "title": "Your account · The Starred Bill", "description": "Your wishlist, the Michelin-starred restaurants you've been to and your dining diary, on any device.",
         "canonical": SITE_URL + "/account/", "data": as_json(only_langs(data, set(), PAGE_TEXTS)),
     }))
     write("/privacy/", render("privacy.html", {
-        "title": "Privacy notice · The Starred Bill", "description": "What The Starred Bill keeps about you and why: your wishlist and been-there list, visit statistics, cookie choices, and how to see or delete your data.",
+        "title": "Privacy notice · The Starred Bill", "description": "What The Starred Bill keeps about you and why: your wishlist, been-there list and dining diary, visit statistics, cookie choices, and how to see or delete your data.",
         "canonical": SITE_URL + "/privacy/", "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES}),
     }))
 

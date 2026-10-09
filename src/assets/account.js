@@ -1,6 +1,7 @@
 // Free accounts. People sign in with an emailed code or link, or Google, and their wishlist, "been there" list and
-// preferences (home city, currency, dietary needs) follow them to any device. Supabase (supabase.com) holds the accounts
-// and two tables, `saved` and `profile` (see supabase/schema.sql), whose rules let each person read and change only their own rows.
+// dining diary (what they paid, the menu and private notes) and preferences (home city, currency, dietary needs) follow
+// them to any device. Supabase (supabase.com) holds the accounts and two tables, `saved` and `profile` (see supabase/schema.sql),
+// whose rules let each person read and change only their own rows.
 // Signed out, the wishlist still works and stays in this browser; "been there" needs an account.
 // The pages keep reading the browser copy (loadWishlist / loadVisited in common.js); this file keeps
 // that copy in step with the account and sends every change up.
@@ -79,6 +80,7 @@ async function afterAuthChange(event, before) {
     account.profileReady = false;
     setWishlist([], "sync");
     setVisited({}, "sync");
+    setDiary({}, "sync");
     try { localStorage.removeItem(PROFILE_KEY); } catch (e) {}
     window.dispatchEvent(new CustomEvent("sb:profile", { detail: { before: {}, from: "sync" } }));
   }
@@ -89,18 +91,30 @@ async function afterAuthChange(event, before) {
 
 // ---------- Keeping the browser copy and the account in step ----------
 function snapshotLocal() {
-  return { wish: new Set(loadWishlist()), visited: Object.assign({}, loadVisited()) };
+  return { wish: new Set(loadWishlist()), visited: Object.assign({}, loadVisited()), diary: Object.assign({}, loadDiary()) };
 }
 // What the account should hold for one restaurant, given the browser copy.
 function rowFor(id, local) {
-  const visited = Object.prototype.hasOwnProperty.call(local.visited, id);
-  return { user_id: account.user.id, restaurant_id: id, wishlist: local.wish.has(id), visited, visited_on: visited && local.visited[id] ? local.visited[id] : null };
+  const visited = Object.prototype.hasOwnProperty.call(local.visited, id), d = local.diary[id] || {};
+  return { user_id: account.user.id, restaurant_id: id, wishlist: local.wish.has(id), visited, visited_on: visited && local.visited[id] ? local.visited[id] : null,
+    paid: d.paid != null ? d.paid : null, paid_currency: d.paid != null ? d.cur || null : null, menu: d.menu || null, note: d.note || null };
+}
+const hasDiary = (r) => r.paid != null || !!r.menu || !!r.note;
+// A diary entry from the account's row, leaving out what's blank.
+function diaryOf(r) {
+  const d = {};
+  if (r.paid != null && r.paid !== "") { d.paid = Number(r.paid); if (r.paid_currency) d.cur = r.paid_currency; }
+  if (r.menu) d.menu = r.menu;
+  if (r.note) d.note = r.note;
+  return d;
 }
 async function pushIds(ids) {
   if (!account.client || !account.user || !ids.length) return;
   const local = snapshotLocal();
   const rows = ids.map((id) => rowFor(id, local));
-  const keep = rows.filter((r) => r.wishlist || r.visited), drop = rows.filter((r) => !r.wishlist && !r.visited).map((r) => r.restaurant_id);
+  // A row with diary details stays even when it's off both lists, so unticking "been there" by mistake doesn't lose them;
+  // the account page's Remove clears the details first.
+  const keep = rows.filter((r) => r.wishlist || r.visited || hasDiary(r)), drop = rows.filter((r) => !r.wishlist && !r.visited && !hasDiary(r)).map((r) => r.restaurant_id);
   let ok = true;
   if (keep.length) {
     const { error } = await account.client.from("saved").upsert(keep, { onConflict: "user_id,restaurant_id" });
@@ -117,12 +131,13 @@ async function pushIds(ids) {
 }
 // Restaurants whose wishlist or been-there state changed since the account last matched.
 function changedIds(local) {
-  const before = account.known || { wish: new Set(), visited: {} };
+  const before = account.known || { wish: new Set(), visited: {}, diary: {} };
   const ids = new Set();
   local.wish.forEach((id) => { if (!before.wish.has(id)) ids.add(id); });
   before.wish.forEach((id) => { if (!local.wish.has(id)) ids.add(id); });
   Object.keys(local.visited).forEach((id) => { if (before.visited[id] !== local.visited[id]) ids.add(id); });
   Object.keys(before.visited).forEach((id) => { if (!(id in local.visited)) ids.add(id); });
+  Object.keys(local.diary).concat(Object.keys(before.diary || {})).forEach((id) => { if (JSON.stringify(local.diary[id]) !== JSON.stringify((before.diary || {})[id])) ids.add(id); });
   return [...ids];
 }
 // Each change is queued at once, so it still reaches the account if the page closes before it's sent
@@ -139,6 +154,7 @@ function queueChange(e) {
 }
 window.addEventListener("sb:wishlist", queueChange);
 window.addEventListener("sb:visited", queueChange);
+window.addEventListener("sb:diary", queueChange);
 
 // Brings the account's lists down. The first time this browser meets an account, anything saved here
 // while signed out is added to it; after that the account is the record.
@@ -150,28 +166,31 @@ async function doSyncDown() {
   if (!account.client || !account.user) return;
   const pending = store.get(PENDING_KEY, []);
   if (pending.length) await pushIds(pending);
-  const { data, error } = await account.client.from("saved").select("restaurant_id,wishlist,visited,visited_on").order("created_at");
+  const { data, error } = await account.client.from("saved").select("restaurant_id,wishlist,visited,visited_on,paid,paid_currency,menu,note").order("created_at");
   if (error) return;
-  const remote = { wish: [], visited: {} };
+  const remote = { wish: [], visited: {}, diary: {} };
   data.forEach((r) => {
     if (r.wishlist) remote.wish.push(r.restaurant_id);
     if (r.visited) remote.visited[r.restaurant_id] = r.visited_on || "";
+    if (hasDiary(r)) remote.diary[r.restaurant_id] = diaryOf(r);
   });
   const first = store.get(SYNCED_KEY, null) !== account.user.id;
   const local = snapshotLocal();
-  let wish = remote.wish, visited = remote.visited;
+  let wish = remote.wish, visited = remote.visited, diary = remote.diary;
   if (first) {
     const extra = [...local.wish].filter((id) => !remote.wish.includes(id));
     wish = remote.wish.concat(extra);
     visited = Object.assign({}, local.visited, remote.visited);
+    diary = Object.assign({}, local.diary, remote.diary);
     store.set(SYNCED_KEY, account.user.id);
   }
   // Keep this browser's order for restaurants it already had, then add the rest.
   const order = loadWishlist();
   wish = order.filter((id) => wish.includes(id)).concat(wish.filter((id) => !order.includes(id)));
-  account.known = { wish: new Set(remote.wish), visited: Object.assign({}, remote.visited) };
+  account.known = { wish: new Set(remote.wish), visited: Object.assign({}, remote.visited), diary: Object.assign({}, remote.diary) };
   setWishlist(wish, "sync");
   setVisited(visited, "sync");
+  setDiary(diary, "sync");
   if (first) { const ids = changedIds(snapshotLocal()); if (ids.length) await pushIds(ids); }
   await syncProfile();
 }
@@ -219,10 +238,12 @@ window.addEventListener("sb:prefchosen", (e) => {
 
 // ---------- Been there ----------
 // Returns false (and offers sign-in) when nobody is signed in.
+// Unticking and ticking again (the toast's Undo) brings back the date it had.
+const untickedDates = {};
 function toggleVisited(id) {
   if (!account.user) { openSignIn("been"); return false; }
   const v = loadVisited();
-  if (id in v) delete v[id]; else v[id] = "";
+  if (id in v) { untickedDates[id] = v[id]; delete v[id]; } else v[id] = untickedDates[id] || "";
   setVisited(v);
   return true;
 }
@@ -231,6 +252,90 @@ function setVisitedDate(id, date) {
   if (!(id in v)) return;
   v[id] = /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : "";
   setVisited(v);
+}
+
+// ---------- The dining diary ----------
+// One window for a restaurant's diary entry: for one they've been to, the date, what they paid per person (and in which
+// currency), the menu and a private note; for one only on the wishlist, just the note ("ask for the counter seat").
+// `info` gives the restaurant's name and the currency its prices are in. Saving updates the browser copy, which syncs.
+function openDiary(id, info) {
+  if (!account.user && !hasStoredSession()) { openSignIn("been"); return; }
+  const box = $("diaryBox") || buildDiary();
+  const been = id in loadVisited(), d = loadDiary()[id] || {};
+  box.dataset.id = id;
+  box.dataset.been = been ? "1" : "";
+  box.querySelector(".si-title").textContent = t(been ? "diaryTitle" : "diaryNoteTitle", { name: info.name || id });
+  box.querySelector(".si-close").setAttribute("aria-label", t("acctClose"));
+  box.querySelector(".dy-been").hidden = !been;
+  box.querySelector("label[for=dyDate]").textContent = t("diaryDate");
+  box.querySelector("label[for=dyPaid]").textContent = t("diaryPaid");
+  box.querySelector("label[for=dyMenu]").textContent = t("diaryMenu");
+  box.querySelector("label[for=dyNote]").textContent = t("diaryNote");
+  $("dyCur").setAttribute("aria-label", t("diaryCur"));
+  $("dyMenu").placeholder = t("diaryMenuPh");
+  $("dyNote").placeholder = t(been ? "diaryNotePh" : "diaryWishPh");
+  box.querySelector(".dy-private").textContent = t("diaryPrivate");
+  box.querySelector(".si-send").textContent = t("diarySave");
+  box.querySelector(".dy-cancel").textContent = t("diaryCancel");
+  $("dyDate").value = been ? loadVisited()[id] || "" : "";
+  $("dyDate").max = new Date().toISOString().slice(0, 10);
+  $("dyPaid").value = d.paid != null ? d.paid : "";
+  const cur = d.cur || info.cur || "GBP", codes = Object.keys(DATA.currencies || {}).sort();
+  if (!codes.includes(cur)) codes.unshift(cur);
+  $("dyCur").innerHTML = codes.map((c) => '<option value="' + esc(c) + '"' + (c === cur ? " selected" : "") + ">" + esc(c) + (DATA.currencies && DATA.currencies[c] && DATA.currencies[c].symbol !== c ? " " + esc(DATA.currencies[c].symbol) : "") + "</option>").join("");
+  $("dyMenu").value = d.menu || "";
+  $("dyNote").value = d.note || "";
+  if (!box.open) box.showModal();
+  (been ? $("dyDate") : $("dyNote")).focus();
+}
+// "1,410.50", "1.410,50", "1410" or "€395": a separator with one or two digits after it is the decimal point, any other is thousands.
+function parseAmount(text) {
+  let s = String(text).replace(/[^\d.,]/g, "");
+  const last = Math.max(s.lastIndexOf("."), s.lastIndexOf(","));
+  s = last >= 0 && s.length - last - 1 <= 2 ? s.slice(0, last).replace(/[.,]/g, "") + "." + s.slice(last + 1) : s.replace(/[.,]/g, "");
+  return s && s !== "." ? parseFloat(s) : NaN;
+}
+function saveDiary(box) {
+  const id = box.dataset.id, been = !!box.dataset.been, all = loadDiary();
+  // A note added to a wishlist restaurant keeps anything recorded before it was unticked.
+  const entry = been ? {} : Object.assign({}, all[id] || {});
+  if (been) {
+    const paid = parseAmount($("dyPaid").value);
+    if (isFinite(paid) && paid >= 0 && paid < 1e7) { entry.paid = Math.round(paid * 100) / 100; entry.cur = $("dyCur").value; }
+    const menu = $("dyMenu").value.trim().slice(0, 200);
+    if (menu) entry.menu = menu;
+  }
+  const note = $("dyNote").value.trim().slice(0, 2000);
+  if (note) entry.note = note; else delete entry.note;
+  if (Object.keys(entry).length) all[id] = entry; else delete all[id];
+  if (been) setVisitedDate(id, $("dyDate").value);
+  setDiary(all);
+  box.close();
+  acctNotice(t(been ? "diarySaved" : "diaryNoteSaved"));
+  // Only which kind of entry was saved; never what's in it.
+  track("diary", { kind: been ? "visit" : "note" });
+}
+function buildDiary() {
+  const box = document.createElement("dialog");
+  box.id = "diaryBox";
+  box.className = "signin diary";
+  box.innerHTML =
+    '<form method="dialog" class="si-inner" novalidate>' +
+      '<button type="button" class="si-close">×</button>' +
+      '<h2 class="si-title"></h2>' +
+      '<div class="dy-been">' +
+        '<label for="dyDate"></label><input id="dyDate" type="date">' +
+        '<label for="dyPaid"></label><div class="dy-paid"><input id="dyPaid" type="text" inputmode="decimal" autocomplete="off" maxlength="12" placeholder="0"><select id="dyCur"></select></div>' +
+        '<label for="dyMenu"></label><input id="dyMenu" type="text" maxlength="200" autocomplete="off">' +
+      "</div>" +
+      '<label for="dyNote"></label><textarea id="dyNote" rows="4" maxlength="2000"></textarea>' +
+      '<p class="si-small dy-private"></p>' +
+      '<div class="dy-actions"><button type="submit" class="si-send"></button><button type="button" class="btn-line dy-cancel"></button></div>' +
+    "</form>";
+  document.body.appendChild(box);
+  box.addEventListener("click", (e) => { if (e.target === box || e.target.closest(".si-close, .dy-cancel")) box.close(); });
+  box.querySelector("form").addEventListener("submit", (e) => { e.preventDefault(); saveDiary(box); });
+  return box;
 }
 
 async function signOut() {

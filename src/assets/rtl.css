@@ -73,12 +73,14 @@
 
 /* Floating buttons, toasts and dialogs */
 [dir="rtl"] .toast { padding: 10px 16px 10px 12px; }
+[dir="rtl"] .toast #toastAct:not([hidden]) { margin-left: 0; margin-right: auto; }
 [dir="rtl"] .jump-map { right: auto; left: 16px; padding: 0 14px 0 18px; }
 [dir="rtl"] .near-btn { padding: 0 11px 0 14px; }
 [dir="rtl"] .lightbox-close { right: auto; left: -14px; }
 @media (max-width: 720px) { [dir="rtl"] .lightbox-close { left: 6px; } }
 [dir="rtl"] .si-close { right: auto; left: 10px; }
 [dir="rtl"] .si-title { padding-right: 0; padding-left: 30px; }
+[dir="rtl"] .de-note { padding-left: 0; border-left: 0; padding-right: 10px; border-right: 2px solid var(--gold); }
 
 /* Phone rows: a Latin name (dir="auto" in place.js) is cut short at its own end, but still sits on the right. */
 [dir="rtl"] .sum-name { text-align: right; }

@@ -14,6 +14,14 @@ create table if not exists public.saved (
   primary key (user_id, restaurant_id)
 );
 
+-- The dining diary (added 9 Oct 2026): what they paid per person and in which currency, the menu they had, and a
+-- private note (on any saved restaurant, e.g. 'ask for the counter seat'). Only the person themselves can read them.
+alter table public.saved
+  add column if not exists paid numeric(12,2) check (paid is null or (paid >= 0 and paid < 10000000)),
+  add column if not exists paid_currency text check (paid_currency is null or paid_currency ~ '^[A-Z]{3}$'),
+  add column if not exists menu text check (menu is null or length(menu) <= 200),
+  add column if not exists note text check (note is null or length(note) <= 2000);
+
 -- Each person can only see and change their own rows.
 alter table public.saved enable row level security;
 

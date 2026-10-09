@@ -473,6 +473,11 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 
 .toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 10px 12px 10px 16px; border-radius: 10px; display: flex; gap: 14px; align-items: center; font-size: .9rem; z-index: 20; max-width: calc(100% - 32px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
 .toast button { background: none; border: 0; color: var(--gold); font-weight: 700; cursor: pointer; padding: 4px 6px; }
+/* With two buttons (Undo and "Add to diary"), the message takes the first line on phones and the buttons the second.
+   (left: 50% would otherwise cap its width at half the screen.) */
+.toast { width: max-content; flex-wrap: wrap; row-gap: 2px; }
+.toast #toastMsg { flex: 1 1 14em; }
+.toast #toastAct:not([hidden]) { margin-left: auto; }
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -886,6 +891,17 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 .si-status:empty { display: none; }
 .si-small { margin: 0; font-size: .8rem; color: var(--muted); }
 .si-small a { color: var(--green); }
+/* The dining diary window (account.js openDiary()): it borrows the sign-in window's look. */
+.diary .dy-been { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+.diary .dy-been[hidden] { display: none; }
+.dy-paid { display: flex; gap: 8px; }
+.dy-paid input { flex: 1 1 auto; font-family: var(--font-num); font-variant-numeric: tabular-nums; }
+.diary select, .diary textarea { padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); font: inherit; min-width: 0; }
+.diary select { flex: 0 0 auto; max-width: 9.5em; }
+.diary textarea { resize: vertical; min-height: 96px; line-height: 1.45; }
+.dy-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.dy-actions .si-send { flex: 1 1 auto; }
+.dy-actions .btn-line { padding: 11px 16px; }
 .acct-notice { position: fixed; left: 50%; top: calc(14px + env(safe-area-inset-top, 0px)); transform: translateX(-50%); z-index: 40; max-width: calc(100% - 32px); padding: 10px 16px;
   border-radius: 10px; background: var(--ink); color: var(--bg); font-size: .9rem; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
 /* "Show prices in £ on every page?" for a member who hasn't set a currency (acctOffer() in account.js) */
@@ -936,9 +952,16 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 .al-name:hover { color: var(--green); }
 .al-meta { font-size: .85rem; color: var(--muted); }
 .al-meta .stars svg { width: 12px; height: 12px; }
-.al-date input { padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: inherit; font-size: .88rem; }
+/* The dining diary: the date first, then the restaurant with what was paid, the menu and the note under it. */
+.diary-list .de-date { flex: 0 0 7.5em; font-family: var(--font-num); font-size: .88rem; font-variant-numeric: tabular-nums; color: var(--ink); }
+.diary-list .de-date.none { color: var(--muted); font-family: inherit; font-style: italic; }
+.de-line { font-size: .9rem; margin-top: 2px; }
+.de-note { font-size: .9rem; color: var(--muted); margin-top: 4px; padding-left: 10px; border-left: 2px solid var(--gold); white-space: pre-line; overflow-wrap: anywhere; }
+.acct-section > p.de-spent { color: var(--ink); font-weight: 600; }
+.de-spent .de-mixed { color: var(--muted); font-weight: 400; }
 .al-been { display: inline-flex; align-items: center; gap: 4px; color: var(--green); font-size: .88rem; font-weight: 600; }
 .al-been svg { width: 16px; height: 16px; }
+.al-acts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
 .acct-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn-line { padding: 9px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; }
 .btn-line:hover { border-color: var(--green); color: var(--green); }

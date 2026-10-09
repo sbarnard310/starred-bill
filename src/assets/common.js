@@ -102,12 +102,18 @@ const I18N = {
     nearFailed: "Couldn't find your location just now. Please try again.", nearUnsupported: "This browser can't share your location.",
     jumpMap: "Map", jumpMapAria: "Jump to the map",
     share: "Share", shareAria: "Share this page", shareTitle: "Share this page", shareCopy: "Copy link", shareCopied: "Link copied", shareEmail: "Email",
+    diaryAdd: "Add to diary", diaryTitle: "Your diary: {name}", diaryNoteTitle: "Your note: {name}", diaryDate: "Date you went", diaryPaid: "What you paid per person", diaryCur: "Currency", diaryMenu: "Menu you had", diaryMenuPh: "e.g. Tasting menu", diaryNote: "Private note", diaryNotePh: "What stood out, who you went with…", diaryWishPh: "e.g. Ask for the counter seat", diaryPrivate: "Only you can see these.", diarySave: "Save", diaryCancel: "Cancel", diarySaved: "Saved to your diary", diaryNoteSaved: "Note saved",
+    // The dining diary on the account page, which is English only (so these are in English alone).
+    accDiaryTitle: "Your dining diary", accDiaryText: "The starred restaurants you've been to, newest first. What you paid, the menu and your notes are private: only you can see them.",
+    accNoDate: "No date yet", accEdit: "Edit", accAddDetails: "Add details", accAddNote: "Add a note", accEditNote: "Edit note", accPerPerson: "{price} per person",
+    accSpent: "You've spent {total} per person at the one restaurant you've added a price to.|You've spent {total} per person in all at the {n} restaurants you've added a price to.", accSpentMixed: "Prices in other currencies are converted at today's rates.",
+    accRemoveDiary: "Remove {name} from your diary? What you paid and your note will be deleted too.", accRemoveNote: "Delete your note on {name}?", accOtherNotes: "Notes on other restaurants", accOtherNotesText: "Restaurants no longer on your lists that still have a note.",
     accTitle: "Your account", accLoading: "Loading your account…", accOutText: "Sign in to see your wishlist and the restaurants you've been to, on any device. It's free.",
     accSignedInAs: "Signed in as {email}", accStatBeen: "Been there", accStatStars: "Stars collected", accStatThree: "Three-star restaurants", accStatCountries: "Countries",
     accMilestones: "Milestones", ms1: "First star", ms2: "First three-star", ms3: "10 restaurants", ms4: "25 restaurants", ms5: "3 countries", ms6: "50 stars collected", msGot: "(reached)",
     accWhere: "Where you've been", accOf: "{n} of {total}", accBeenTitle: "Been there", accBeenEmpty: "Nothing ticked off yet. Tap the ✓ next to any restaurant you've been to.",
     accDateAria: "Date you went to {name}", accRemove: "Remove", accWishTitle: "Your wishlist", accWishEmpty: "Your wishlist is empty. Tap the heart next to any restaurant to save it.",
-    accMarkBeen: "Been there", accData: "Your data", accDataText: "Download everything we hold for your account, sign out on this device, or delete your account and both lists for good.",
+    accMarkBeen: "Been there", accData: "Your data", accDataText: "Download everything we hold for your account, sign out on this device, or delete your account, both lists and your diary for good.",
     accDownload: "Download my data", accSignOut: "Sign out", accDelete: "Delete my account", accDeleteConfirm: "This deletes your account and both lists for good. It can't be undone.",
     accDeleteYes: "Delete for good", accDeleteNo: "Keep my account", accDeleted: "Your account has been deleted.", accDeleteFail: "Your account couldn't be deleted just now. Try again, or use the contact form.",
     acctSignIn: "Sign in", acctAccount: "Account", acctTitle: "Sign in or create a free account",
@@ -249,6 +255,7 @@ const I18N = {
     nearFailed: "暫時無法取得你的位置，請再試一次。", nearUnsupported: "此瀏覽器無法分享你的位置。",
     jumpMap: "地圖", jumpMapAria: "跳到地圖",
     share: "分享", shareAria: "分享此頁", shareTitle: "分享此頁", shareCopy: "複製連結", shareCopied: "已複製連結", shareEmail: "電子郵件",
+    diaryAdd: "寫進日記", diaryTitle: "你的日記：{name}", diaryNoteTitle: "你的筆記：{name}", diaryDate: "用餐日期", diaryPaid: "每人花費", diaryCur: "貨幣", diaryMenu: "吃了哪套菜單", diaryMenuPh: "例如：品嚐菜單", diaryNote: "私人筆記", diaryNotePh: "印象最深的菜、和誰同行…", diaryWishPh: "例如：要求坐吧檯位", diaryPrivate: "只有你看得到這些內容。", diarySave: "儲存", diaryCancel: "取消", diarySaved: "已存入你的日記", diaryNoteSaved: "筆記已儲存",
     accTitle: "你的帳戶", accLoading: "正在載入你的帳戶…", accOutText: "登入即可在任何裝置上查看你的願望清單和去過的餐廳。完全免費。",
     accSignedInAs: "已用 {email} 登入", accStatBeen: "去過", accStatStars: "累積星數", accStatThree: "三星餐廳", accStatCountries: "國家",
     accMilestones: "里程碑", ms1: "第一顆星", ms2: "第一家三星", ms3: "10 家餐廳", ms4: "25 家餐廳", ms5: "3 個國家", ms6: "累積 50 顆星", msGot: "（已達成）",
@@ -394,6 +401,7 @@ const I18N = {
     nearFailed: "Impossible de vous localiser pour le moment. Réessayez.", nearUnsupported: "Ce navigateur ne peut pas partager votre position.",
     jumpMap: "Carte", jumpMapAria: "Aller à la carte",
     share: "Partager", shareAria: "Partager cette page", shareTitle: "Partager cette page", shareCopy: "Copier le lien", shareCopied: "Lien copié", shareEmail: "E-mail",
+    diaryAdd: "Ajouter au carnet", diaryTitle: "Votre carnet : {name}", diaryNoteTitle: "Votre note : {name}", diaryDate: "Date de votre visite", diaryPaid: "Prix payé par personne", diaryCur: "Devise", diaryMenu: "Menu choisi", diaryMenuPh: "ex. Menu dégustation", diaryNote: "Note privée", diaryNotePh: "Ce qui vous a marqué, avec qui vous y êtes allé…", diaryWishPh: "ex. Demander une place au comptoir", diaryPrivate: "Vous seul pouvez voir ces informations.", diarySave: "Enregistrer", diaryCancel: "Annuler", diarySaved: "Ajouté à votre carnet", diaryNoteSaved: "Note enregistrée",
     accTitle: "Votre compte", accLoading: "Chargement de votre compte…", accOutText: "Connectez-vous pour retrouver vos envies et les restaurants où vous êtes allé, sur tous vos appareils. C'est gratuit.",
     accSignedInAs: "Connecté avec {email}", accStatBeen: "Restaurants visités", accStatStars: "Étoiles cumulées", accStatThree: "Trois étoiles", accStatCountries: "Pays",
     accMilestones: "Étapes", ms1: "Première étoile", ms2: "Premier trois étoiles", ms3: "10 restaurants", ms4: "25 restaurants", ms5: "3 pays", ms6: "50 étoiles cumulées", msGot: "(atteint)",
@@ -520,6 +528,7 @@ const I18N = {
     nearFailed: "暫時搵唔到你嘅位置，請再試多次。", nearUnsupported: "呢個瀏覽器分享唔到你嘅位置。",
     jumpMap: "地圖", jumpMapAria: "跳去地圖",
     share: "分享", shareAria: "分享呢版", shareTitle: "分享呢版", shareCopy: "複製連結", shareCopied: "已經複製咗連結", shareEmail: "電郵",
+    diaryAdd: "寫入日記", diaryTitle: "你嘅日記：{name}", diaryNoteTitle: "你嘅筆記：{name}", diaryDate: "幾時去", diaryPaid: "每位使咗幾多", diaryCur: "貨幣", diaryMenu: "食咗邊個餐單", diaryMenuPh: "例如：品嚐餐單", diaryNote: "私人筆記", diaryNotePh: "最深刻嘅菜式、同邊個去…", diaryWishPh: "例如：要求坐吧枱", diaryPrivate: "淨係你自己睇到。", diarySave: "儲存", diaryCancel: "取消", diarySaved: "已經寫入你嘅日記", diaryNoteSaved: "筆記已儲存",
     accTitle: "你嘅帳戶", accLoading: "載入緊你嘅帳戶…", accOutText: "登入就可以喺任何裝置睇到你嘅心水清單同去過嘅餐廳。完全免費。",
     accSignedInAs: "已經用 {email} 登入", accStatBeen: "去過", accStatStars: "累積星數", accStatThree: "三星餐廳", accStatCountries: "國家",
     accMilestones: "里程碑", ms1: "第一粒星", ms2: "第一間三星", ms3: "10 間餐廳", ms4: "25 間餐廳", ms5: "3 個國家", ms6: "累積 50 粒星", msGot: "（已經達到）",
@@ -647,6 +656,7 @@ const I18N = {
     nearFailed: "現在地を取得できませんでした。もう一度お試しください。", nearUnsupported: "このブラウザは位置情報を共有できません。",
     jumpMap: "地図", jumpMapAria: "地図へ移動",
     share: "共有", shareAria: "このページを共有", shareTitle: "このページを共有", shareCopy: "リンクをコピー", shareCopied: "コピーしました", shareEmail: "メール",
+    diaryAdd: "日記に記録", diaryTitle: "食事日記：{name}", diaryNoteTitle: "メモ：{name}", diaryDate: "訪れた日", diaryPaid: "1人あたりの支払額", diaryCur: "通貨", diaryMenu: "選んだコース", diaryMenuPh: "例：おまかせコース", diaryNote: "自分用メモ", diaryNotePh: "印象に残った料理、一緒に行った人…", diaryWishPh: "例：カウンター席をお願いする", diaryPrivate: "この内容はあなただけが見られます。", diarySave: "保存", diaryCancel: "キャンセル", diarySaved: "日記に保存しました", diaryNoteSaved: "メモを保存しました",
     accTitle: "アカウント", accLoading: "アカウントを読み込んでいます…", accOutText: "ログインすると、お気に入りと行ったレストランをどの端末でも見られます。無料です。",
     accSignedInAs: "{email} でログイン中", accStatBeen: "行った店", accStatStars: "獲得した星", accStatThree: "三つ星", accStatCountries: "国",
     accMilestones: "マイルストーン", ms1: "初めての星", ms2: "初めての三つ星", ms3: "10軒", ms4: "25軒", ms5: "3か国", ms6: "星50個", msGot: "（達成）",
@@ -793,6 +803,7 @@ const I18N = {
     nearFailed: "No hemos podido encontrar tu ubicación. Vuelve a intentarlo.", nearUnsupported: "Este navegador no puede compartir tu ubicación.",
     jumpMap: "Mapa", jumpMapAria: "Ir al mapa",
     share: "Compartir", shareAria: "Compartir esta página", shareTitle: "Compartir esta página", shareCopy: "Copiar enlace", shareCopied: "Enlace copiado", shareEmail: "Correo",
+    diaryAdd: "Añadir al diario", diaryTitle: "Tu diario: {name}", diaryNoteTitle: "Tu nota: {name}", diaryDate: "Fecha de la visita", diaryPaid: "Lo que pagaste por persona", diaryCur: "Moneda", diaryMenu: "Menú que tomaste", diaryMenuPh: "p. ej. Menú degustación", diaryNote: "Nota privada", diaryNotePh: "Lo que más te gustó, con quién fuiste…", diaryWishPh: "p. ej. Pedir sitio en la barra", diaryPrivate: "Solo tú puedes verlo.", diarySave: "Guardar", diaryCancel: "Cancelar", diarySaved: "Guardado en tu diario", diaryNoteSaved: "Nota guardada",
     accTitle: "Tu cuenta", accLoading: "Cargando tu cuenta…", accOutText: "Inicia sesión para ver tus favoritos y los restaurantes en los que has estado, en cualquier dispositivo. Es gratis.",
     accSignedInAs: "Sesión iniciada como {email}", accStatBeen: "Visitados", accStatStars: "Estrellas acumuladas", accStatThree: "Restaurantes de tres estrellas", accStatCountries: "Países",
     accMilestones: "Logros", ms1: "Primera estrella", ms2: "Primer tres estrellas", ms3: "10 restaurantes", ms4: "25 restaurantes", ms5: "3 países", ms6: "50 estrellas acumuladas", msGot: "(conseguido)",
@@ -1453,6 +1464,7 @@ const I18N = {
     nearFailed: "위치를 찾지 못했습니다. 다시 시도하세요.", nearUnsupported: "이 브라우저는 위치를 공유할 수 없습니다.",
     jumpMap: "지도", jumpMapAria: "지도로 이동",
     share: "공유", shareAria: "이 페이지 공유", shareTitle: "이 페이지 공유", shareCopy: "링크 복사", shareCopied: "복사했습니다", shareEmail: "이메일",
+    diaryAdd: "다이어리에 기록", diaryTitle: "다이닝 다이어리: {name}", diaryNoteTitle: "메모: {name}", diaryDate: "방문한 날짜", diaryPaid: "1인당 지불한 금액", diaryCur: "통화", diaryMenu: "주문한 코스", diaryMenuPh: "예: 테이스팅 코스", diaryNote: "나만 보는 메모", diaryNotePh: "기억에 남는 요리, 함께 간 사람…", diaryWishPh: "예: 카운터석 요청하기", diaryPrivate: "이 내용은 나만 볼 수 있습니다.", diarySave: "저장", diaryCancel: "취소", diarySaved: "다이어리에 저장했습니다", diaryNoteSaved: "메모를 저장했습니다",
     accTitle: "내 계정", accLoading: "계정을 불러오는 중…", accOutText: "로그인하면 위시리스트와 가 본 레스토랑을 어느 기기에서나 볼 수 있습니다. 무료입니다.",
     accSignedInAs: "{email}(으)로 로그인됨", accStatBeen: "가 본 곳", accStatStars: "모은 별", accStatThree: "3스타 레스토랑", accStatCountries: "국가",
     accMilestones: "달성 기록", ms1: "첫 번째 별", ms2: "첫 3스타", ms3: "레스토랑 10곳", ms4: "레스토랑 25곳", ms5: "3개국", ms6: "별 50개", msGot: "(달성)",
@@ -1599,6 +1611,7 @@ const I18N = {
     nearFailed: "Non è stato possibile trovare la tua posizione. Riprova.", nearUnsupported: "Questo browser non può condividere la tua posizione.",
     jumpMap: "Mappa", jumpMapAria: "Vai alla mappa",
     share: "Condividi", shareAria: "Condividi questa pagina", shareTitle: "Condividi questa pagina", shareCopy: "Copia link", shareCopied: "Link copiato", shareEmail: "Email",
+    diaryAdd: "Aggiungi al diario", diaryTitle: "Il tuo diario: {name}", diaryNoteTitle: "La tua nota: {name}", diaryDate: "Data della visita", diaryPaid: "Quanto hai pagato a persona", diaryCur: "Valuta", diaryMenu: "Menu scelto", diaryMenuPh: "es. Menu degustazione", diaryNote: "Nota privata", diaryNotePh: "Cosa ti ha colpito, con chi ci sei andato…", diaryWishPh: "es. Chiedere un posto al bancone", diaryPrivate: "Solo tu puoi vederle.", diarySave: "Salva", diaryCancel: "Annulla", diarySaved: "Salvato nel tuo diario", diaryNoteSaved: "Nota salvata",
     accTitle: "Il tuo account", accLoading: "Caricamento del tuo account…", accOutText: "Accedi per vedere i tuoi preferiti e i ristoranti in cui sei stato, su qualsiasi dispositivo. È gratis.",
     accSignedInAs: "Accesso effettuato come {email}", accStatBeen: "Visitati", accStatStars: "Stelle collezionate", accStatThree: "Ristoranti tre stelle", accStatCountries: "Paesi",
     accMilestones: "Traguardi", ms1: "Prima stella", ms2: "Primo tre stelle", ms3: "10 ristoranti", ms4: "25 ristoranti", ms5: "3 paesi", ms6: "50 stelle collezionate", msGot: "(raggiunto)",
@@ -1818,6 +1831,10 @@ const loadWishlist = () => { const wl = store.get(WISHLIST_KEY, []); return Arra
 // "Been there": restaurant id -> the date visited ("" when not given). Kept for signed-in people only (account.js).
 const VISITED_KEY = "starredbill-visited";
 const loadVisited = () => { const v = store.get(VISITED_KEY, {}); return v && typeof v === "object" && !Array.isArray(v) ? v : {}; };
+// The dining diary: restaurant id -> { paid, cur, menu, note }, what someone paid per person (and in which currency),
+// the menu they had and a private note. Notes can go on any saved restaurant ("ask for the counter seat"). Signed-in only (account.js).
+const DIARY_KEY = "starredbill-diary";
+const loadDiary = () => { const v = store.get(DIARY_KEY, {}); return v && typeof v === "object" && !Array.isArray(v) ? v : {}; };
 // Saving either list tells the page and the account code which restaurants changed.
 // `from` is "sync" when the change came down from the account, so it isn't sent back up.
 function setWishlist(list, from) {
@@ -1831,6 +1848,12 @@ function setVisited(map, from) {
   store.set(VISITED_KEY, map);
   const ids = Object.keys(before).filter((id) => !(id in map) || before[id] !== map[id]).concat(Object.keys(map).filter((id) => !(id in before)));
   window.dispatchEvent(new CustomEvent("sb:visited", { detail: { ids, from: from || "" } }));
+}
+function setDiary(map, from) {
+  const before = loadDiary(), same = (id) => JSON.stringify(before[id]) === JSON.stringify(map[id]);
+  store.set(DIARY_KEY, map);
+  const ids = [...new Set(Object.keys(before).concat(Object.keys(map)))].filter((id) => !same(id));
+  window.dispatchEvent(new CustomEvent("sb:diary", { detail: { ids, from: from || "" } }));
 }
 // A member's preferences: { home, homeName, currency, diet }, each "" when not chosen. Kept with the account (the `profile`
 // table, account.js) and copied here for signed-in people only, so signed-out visitors see the site as before.

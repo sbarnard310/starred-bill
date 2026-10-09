@@ -38,7 +38,7 @@ Every file in `content/places/` has an `id` (lower-case, hyphens, used in the we
 | `country` | `currency` (e.g. `"GBP"`) | `/uk/` |
 | `region` | `parent`: a country or region id | `/uk/england/` |
 | `city` | `parent`: a country or region id | `/uk/england/london/` |
-| `district` | `parent`: a city id | `/usa/new-york-state/new-york/manhattan/` |
+| `district` | `parent`: a city id (New York's boroughs, London's neighbourhoods) | `/usa/new-york-state/new-york/manhattan/`, `/uk/england/london/mayfair/` |
 | `group` | `includes`: a list of country, region or city ids | `/taiwan/southern-taiwan/` if all in one country, otherwise `/riviera/` |
 
 A region or city's address follows everything above it, so a Yorkshire region inside England would be `/uk/england/yorkshire/`, and York inside it `/uk/england/yorkshire/york/`. If a page moves, list its old address in `redirectFrom` (e.g. London has `["/uk/london/"]`) and old links keep working.

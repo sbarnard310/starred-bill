@@ -29,7 +29,8 @@ const cityNameOf = (r) => pick(r, "cityName");
 const areaOf = (r) => {
   const a = pick(r, "area");
   // Restaurants listed under a region or country (e.g. England) already name their town in the area.
-  if (!PAGE.showCity || (r.cityType && r.cityType !== "city" && r.cityType !== "district" && a)) return a;
+  // Nor do those filed under the page's own city, beside its neighbourhoods' pages (London's Dalston beside Mayfair).
+  if (!PAGE.showCity || r.cityName === PAGE.name || (r.cityType && r.cityType !== "city" && r.cityType !== "district" && a)) return a;
   const c = cityNameOf(r);
   return !a ? c : (a.includes(c) || a.includes(r.cityName)) ? a : a + ", " + c;
 };

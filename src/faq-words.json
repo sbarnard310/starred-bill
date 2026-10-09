@@ -133,6 +133,7 @@
   "nbNext": ", followed by {next}",
   "brStars": "{k} with {stars}",
   "brPick": "Pick one to see just those restaurants in the list above, with their prices.",
+  "brPickPages": "The busiest have pages of their own; pick any other to see just its restaurants in the list above, with their prices.",
   "cuMost": "The most common are {top}.",
   "cuGuide": "More in our guide to {link}.",
   "cuAlso": "One restaurant each: {list}.",

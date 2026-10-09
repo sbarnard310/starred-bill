@@ -1681,6 +1681,10 @@ def local_note_html(p, note):
 BROWSE_LANGS = ("en",)
 BROWSE_MIN = 25
 BROWSE_CITY_STATES = ("hong-kong", "singapore", "macau", "kyoto", "osaka", "shanghai", "beijing")
+# Cities whose districts are neighbourhoods (London's Mayfair, Soho…, 9 Oct 2026, to-do item london-boroughs) rather than
+# boroughs like New York's: "By neighbourhood" groups their restaurants by district and links to its page, and Near me
+# names the city after them ("Mayfair, London").
+NEIGHBOURHOOD_CITIES = ("london",)
 
 
 def area_key(r):
@@ -1700,6 +1704,11 @@ def browse_html(p, page, starred, lang):
         return ""
     w = pilot_words(lang)
     say = lambda key, **v: say_in(w, key, page, **{k: (n_word(x, lang) if isinstance(x, int) else x) for k, x in v.items()})
+    # A neighbourhood with a page of its own (NEIGHBOURHOOD_CITIES) links there rather than filtering the list.
+    own_pages = ({q["name"]: q["path"] for q in pages if q["type"] == "district" and q.get("parent") == p["id"]}
+                 if p["id"] in NEIGHBOURHOOD_CITIES else {})
+    anchor = lambda kind, n: (f'<a href="{own_pages[n]}">{e(n)}</a>' if kind == "area" and n in own_pages
+                              else f'<a href="#compare" data-browse="{kind}" data-value="{e(n)}">{e(n)}</a>')
 
     def groups(key):
         found = {}
@@ -1714,15 +1723,15 @@ def browse_html(p, page, starred, lang):
         top = max(r["stars"] for r in rs)
         stars = sum(1 for r in rs if r["stars"] == top)
         note = e(w["brStars"].replace("{k}", str(stars)).replace("{stars}", w["star" + str(top)])) if top > 1 else ""
-        return (f'<li><a href="#compare" data-browse="{kind}" data-value="{e(name)}">{e(name)}</a> <span class="count">{len(rs)}</span>'
+        return (f'<li>{anchor(kind, name)} <span class="count">{len(rs)}</span>'
                 + "".join(f'<span class="area-from">{x}</span>' for x in (note, price) if x) + "</li>")
 
     def section(sid, pre, kind, found, intro):
         many = [(n, rs) for n, rs in found if len(rs) > 1]
         single = sorted((n for n, rs in found if len(rs) == 1), key=str.lower)
-        links = lambda names: and_names((f'<a href="#compare" data-browse="{kind}" data-value="{e(n)}">{e(n)}</a>' for n in names), w)
+        links = lambda names: and_names((anchor(kind, n) for n in names), w)
         also = f'<p class="also">{e(w["cuAlso"]).replace("{list}", links(single))}</p>' if single else ""
-        return page_section(sid, w[pre + "Eyebrow"], say(pre + "Title"), intro + " " + e(say("brPick")),
+        return page_section(sid, w[pre + "Eyebrow"], say(pre + "Title"), intro + " " + e(say("brPickPages" if kind == "area" and own_pages else "brPick")),
                             '<ul class="area-links browse-links">' + "".join(item(kind, n, rs) for n, rs in many) + "</ul>" + also)
 
     out = []
@@ -1736,7 +1745,7 @@ def browse_html(p, page, starred, lang):
             if guide in guides:
                 intro += " " + e(w["cuGuide"]).replace("{link}", f'<a href="/guides/{guide}/">{e(guides[guide]["h1"])}</a>')
         out.append(section("cuisines", "cu", "cuisine", cuisines, intro))
-    areas = groups(area_key)
+    areas = groups(lambda r: places[r["city"]]["name"] if places[r["city"]].get("path") in own_pages.values() else area_key(r))
     # Neighbourhoods only where most restaurants name one and there are a few (Kyoto's have none, Macau's three are islands).
     if len(areas) >= 4 and sum(len(rs) for _, rs in areas) >= 0.8 * len(own):
         (a1, r1), rest = areas[0], [(a, rs) for a, rs in areas[1:3] if len(rs) > 1]
@@ -2634,6 +2643,9 @@ def build_home():
 def near_where(r):
     """Where a restaurant is for the near-me list, e.g. "Notting Hill, London" or "Aughton, Lancashire, England"."""
     city = r["cityName"]
+    if r["cityType"] == "district" and r["_chain"][1] in NEIGHBOURHOOD_CITIES:  # "Mayfair, London", "Strand, Covent Garden, London"
+        area = r.get("area") or ""
+        return ", ".join(x for x in (area, city if city not in area else "", places[r["_chain"][1]]["name"]) if x)
     if r["cityType"] in ("city", "district"):
         return f"{r['area']}, {city}" if r.get("area") and city not in r["area"] else city
     return r.get("area") or city if not r.get("area") or city in r["area"] else f"{r['area']}, {city}"

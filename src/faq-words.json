@@ -116,6 +116,7 @@
   "nwClosedText": "{names} closed and left the guide.",
   "nwClosedOne": "{names} closed and left the guide.",
   "nwUpdating": "The {when} guide was revealed on {date}. We're adding its changes to this page now.",
+  "nwResults": "Every change, with prices: the {link}.",
   "cerTitle": "When the stars are announced",
   "cerText": "The stars {in} come from the {guide}, revealed once a year, usually in {usual}.",
   "cerLast": "The latest selection was revealed on {date} at {where}.",

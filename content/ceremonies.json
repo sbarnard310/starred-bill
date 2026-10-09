@@ -1,11 +1,12 @@
 {
-  "_about": "When each MICHELIN Guide reveals its stars: the Michelin Guide ceremony dates page (/guides/michelin-guide-ceremony-dates/) and, on destination pages, 'When the stars are announced'. One entry per guide. places: the place ids it covers (and everything inside them); show: the places to name and link on the ceremonies page, if not the same; guide: one of our guides to link instead, for a guide with no place page yet. usual: the month(s) it's usually held. ceremonies: newest first, each with date (YYYY-MM-DD), where (left out when Michelin didn't say), online (true when the stars were published online with no ceremony) and source. next: the next ceremony once Michelin names it (same fields), else leave it out. edition: the year the guide is named for, only where it isn't the ceremony's own (Italy's November 2026 ceremony launches the 2027 guide); destination and restaurant page titles carry that year from the ceremony day on. starsUpdated: the day our restaurant files last caught up with this guide; when a ceremony is newer, the page says 'Updating' and the build lists it. checked: the month we last looked for a newer date. note: an optional extra sentence.",
+  "_about": "When each MICHELIN Guide reveals its stars: the Michelin Guide ceremony dates page (/guides/michelin-guide-ceremony-dates/) and, on destination pages, 'When the stars are announced'. One entry per guide. places: the place ids it covers (and everything inside them); show: the places to name and link on the ceremonies page, if not the same; guide: one of our guides to link instead, for a guide with no place page yet. usual: the month(s) it's usually held. ceremonies: newest first, each with date (YYYY-MM-DD), where (left out when Michelin didn't say), online (true when the stars were published online with no ceremony) and source. next: the next ceremony once Michelin names it (same fields), else leave it out. edition: the year the guide is named for, only where it isn't the ceremony's own (Italy's November 2026 ceremony launches the 2027 guide); destination and restaurant page titles carry that year from the ceremony day on. starsUpdated: the day our restaurant files last caught up with this guide; when a ceremony is newer, the page says 'Updating' and the build lists it. checked: the month we last looked for a newer date. note: an optional extra sentence. results: the guide's results page at /guides/<page>/ (page, short name for the title, area as a sentence names it, lang en-GB or en-US, plural when the area takes 'have', published, extra keywords); see README.",
   "guides": [
     {
       "id": "great-britain-ireland",
       "name": "MICHELIN Guide Great Britain & Ireland",
       "places": ["uk", "ireland"],
       "usual": "February",
+      "results": {"page": "michelin-guide-uk-ireland", "short": "UK & Ireland", "area": "the UK and Ireland", "lang": "en-GB", "plural": true, "published": "2026-10-09", "keywords": ["michelin guide uk", "michelin guide great britain & ireland"]},
       "note": "The ceremony is streamed live on the MICHELIN Guide's YouTube channel, and the new selection goes up on its website and app the same evening.",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
@@ -19,6 +20,7 @@
       "name": "MICHELIN Guide France & Monaco",
       "places": ["france", "monaco"],
       "usual": "March",
+      "results": {"page": "michelin-guide-france", "short": "France", "area": "France and Monaco", "lang": "en-US", "plural": true, "published": "2026-10-09", "keywords": ["michelin guide france"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -31,11 +33,12 @@
       "name": "MICHELIN Guide Spain & Andorra",
       "places": ["spain", "andorra"],
       "usual": "November",
+      "results": {"page": "michelin-guide-spain", "short": "Spain", "area": "Spain and Andorra", "lang": "en-US", "plural": true, "published": "2026-10-09", "keywords": ["michelin guide spain"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "next": {"date": "2026-11-24", "edition": 2027, "where": "the Palacio de Congresos, Huesca", "source": "https://www.thegourmetjournal.com/noticias/la-gala-michelin-2027-sera-en-huesca/"},
       "ceremonies": [
-        {"date": "2025-11-25", "where": "SOHRLIN Andalucía, Málaga", "source": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todo-sobre-la-guia-michelin-espana-andorra-2026"}
+        {"date": "2025-11-25", "edition": 2026, "where": "SOHRLIN Andalucía, Málaga", "source": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todo-sobre-la-guia-michelin-espana-andorra-2026"}
       ]
     },
     {
@@ -56,11 +59,12 @@
       "name": "MICHELIN Guide Italy",
       "places": ["italy"],
       "usual": "November",
+      "results": {"page": "michelin-guide-italy", "short": "Italy", "area": "Italy", "lang": "en-US", "published": "2026-10-09", "keywords": ["michelin guide italy"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "next": {"date": "2026-11-12", "edition": 2027, "where": "the Teatro Municipale, Piacenza", "source": "https://www.scattidigusto.it/guida-michelin-2027-le-nuove-stelle-a-piacenza-il-12-novembre"},
       "ceremonies": [
-        {"date": "2025-11-19", "where": "the Teatro Regio, Parma", "source": "https://guide.michelin.com/it/it/notizia/michelin-guide-ceremony/tutte-le-stelle-della-guida-michelin-italia-2026"}
+        {"date": "2025-11-19", "edition": 2026, "where": "the Teatro Regio, Parma", "source": "https://guide.michelin.com/it/it/notizia/michelin-guide-ceremony/tutte-le-stelle-della-guida-michelin-italia-2026"}
       ]
     },
     {
@@ -81,6 +85,7 @@
       "name": "MICHELIN Guide Switzerland",
       "places": ["switzerland", "liechtenstein"],
       "usual": "October or November",
+      "results": {"page": "michelin-guide-switzerland", "short": "Switzerland", "area": "Switzerland and Liechtenstein", "lang": "en-US", "plural": true, "published": "2026-10-09", "keywords": ["michelin guide switzerland"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "next": {"date": "2026-11-02", "where": "the Andermatt Concert Hall", "source": "https://guide.michelin.com/ch/de/article/michelin-guide-ceremony/michelin-guide-ceremony-kommt-nach-andermatt"},
@@ -116,6 +121,7 @@
       "name": "MICHELIN Guide Netherlands",
       "places": ["netherlands"],
       "usual": "early October",
+      "results": {"page": "michelin-guide-netherlands", "short": "Netherlands", "area": "the Netherlands", "lang": "en-US", "published": "2026-10-09", "keywords": ["michelin guide netherlands"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -405,6 +411,7 @@
       "name": "MICHELIN Guide Singapore",
       "places": ["singapore"],
       "usual": "July or August",
+      "results": {"page": "michelin-guide-singapore", "short": "Singapore", "area": "Singapore", "lang": "en-GB", "published": "2026-10-09", "keywords": ["michelin guide singapore"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -463,6 +470,7 @@
       "name": "MICHELIN Guide Dubai",
       "places": ["dubai"],
       "usual": "October (May until 2025)",
+      "results": {"page": "michelin-guide-dubai", "short": "Dubai", "area": "Dubai", "lang": "en-GB", "published": "2026-10-09", "keywords": ["michelin guide dubai"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-09",
       "ceremonies": [
@@ -498,6 +506,7 @@
       "places": ["new-york-state", "illinois", "washington-dc", "virginia", "massachusetts", "pennsylvania"],
       "show": ["new-york", "chicago", "washington-dc", "boston", "philadelphia"],
       "usual": "November or December",
+      "results": {"page": "michelin-guide-northeast-cities", "short": "Northeast Cities", "area": "the Northeast Cities", "lang": "en-US", "plural": true, "published": "2026-10-09", "keywords": ["michelin guide northeast cities"]},
       "note": "Since 2025 one ceremony covers New York, Chicago, Washington DC, Boston and Philadelphia.",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
@@ -511,6 +520,7 @@
       "name": "MICHELIN Guide California",
       "places": ["california"],
       "usual": "June",
+      "results": {"page": "michelin-guide-california", "short": "California", "area": "California", "lang": "en-US", "published": "2026-10-09", "keywords": ["michelin guide california"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -534,6 +544,7 @@
       "name": "MICHELIN Guide Texas",
       "places": ["texas"],
       "usual": "October or November",
+      "results": {"page": "michelin-guide-texas", "short": "Texas", "area": "Texas", "lang": "en-US", "published": "2026-10-09", "keywords": ["michelin guide texas"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-08",
       "ceremonies": [
@@ -547,6 +558,7 @@
       "places": ["georgia", "tennessee", "north-carolina", "south-carolina", "louisiana"],
       "show": ["atlanta", "tennessee", "north-carolina", "south-carolina", "louisiana"],
       "usual": "October or November",
+      "results": {"page": "michelin-guide-american-south", "short": "American South", "area": "the American South", "lang": "en-US", "published": "2026-10-09", "keywords": ["michelin guide american south"]},
       "note": "It covers Atlanta, Alabama, Louisiana, Mississippi, Tennessee and the Carolinas, and moves to a different city each year.",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
@@ -598,6 +610,7 @@
       "places": ["british-columbia"],
       "show": ["vancouver"],
       "usual": "early October",
+      "results": {"page": "michelin-guide-vancouver", "short": "Vancouver", "area": "Vancouver", "lang": "en-US", "published": "2026-10-09", "keywords": ["michelin guide vancouver"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-09",
       "ceremonies": [

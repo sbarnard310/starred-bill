@@ -281,6 +281,7 @@ guides = {}
 GUIDE_SECTIONS = {
     "stars": ("Understanding the stars", "What the stars mean, how restaurants win and lose them, and the MICHELIN Guide’s other awards."),
     "where": ("Where to find them", "Every starred restaurant by country, the world’s three-star tables and the best of London."),
+    "results": ("Latest results", "What each MICHELIN Guide’s latest edition changed: every new, promoted and lost star, with prices."),
     "less": ("Starred for less", "The cheapest Michelin-starred meals, from hawker stalls and taquerías to set lunches."),
     "no-stars": ("No stars yet", "Big food countries the MICHELIN Guide hasn’t starred, and when that might change."),
 }
@@ -1782,6 +1783,8 @@ def new_stars_html(p, page, lang):
             title = say("cerTitle")
         else:
             text, gained = changes_text(now, w, say, when) if now else ([say("nwNone", when=when)], False)
+            if results_page(g):
+                text.append(e(w["nwResults"]).replace("{link}", results_link(g)))
             title = say("nwTitle" if gained else "nwTitleChanges" if now else "nwTitleNone", when=when)
             cards.append(fact_card(say("nwWhat", when=when), None, [" ".join(text)]))
         cards.append(ceremony_card(g, w, say, lang))
@@ -1796,6 +1799,8 @@ def new_stars_html(p, page, lang):
             continue
         else:
             text = changes_text(now, w, say, when)[0] if now else [say("nwGuideNone")]
+            if results_page(g):
+                text.append(e(w["nwResults"]).replace("{link}", results_link(g)))
         cards.append(fact_card(say("nwGuide", guide=re.sub(r"^MICHELIN Guide ", "", g["name"]), when=when), None, [" ".join(text)]))
     if not cards:
         return ""
@@ -3791,7 +3796,7 @@ def ceremony_blocks():
         last = (ceremony_text(g["last"]) + (f"<br>{updating}" if g["status"] else "")) if g["last"] else '<span class="muted">–</span>'
         nxt = ceremony_text(g["coming"]) if g["coming"] else '<span class="muted">Not announced yet</span>'
         return (f'<tr id="cer-{e(g["id"])}"><td data-label="Destination">{ceremony_places_html(g)}</td>'
-                f'<td data-label="Guide">{e(g["name"])}' + (f'<br><span class="muted">{e(g["note"])}</span>' if g.get("note") else "") + f'</td><td data-label="Usually">{e(g["usual"][:1].upper() + g["usual"][1:])}</td>'
+                f'<td data-label="Guide">{results_link(g, g["name"]) or e(g["name"])}' + (f'<br><span class="muted">{e(g["note"])}</span>' if g.get("note") else "") + f'</td><td data-label="Usually">{e(g["usual"][:1].upper() + g["usual"][1:])}</td>'
                 f'<td data-label="Latest">{last}</td><td data-label="Next">{nxt}</td></tr>')
     heads = "".join(f'<th scope="col">{h}</th>' for h in ("Destination", "Guide", "Usually", "Latest stars revealed", "Next ceremony"))
     out = ""
@@ -3837,6 +3842,398 @@ def ceremony_blocks():
         for m in range(1, 13))
     blocks["ceremonies-calendar"] = f'<div class="cer-calendar">{cells}</div>'
     return blocks
+
+
+# ---------- MICHELIN Guide results pages (9 Oct 2026, Brief 14) ----------
+# A page per MICHELIN Guide at a fixed address (/guides/michelin-guide-singapore/), ready for the searches on each
+# ceremony day: what its latest edition changed (new stars, promotions, stars dropped, restaurants gone, as tables and
+# paragraphs), how many starred restaurants it holds before and after, and when the next ceremony is. A guide gets one
+# when its entry in content/ceremonies.json has `results` (page, short, area, lang, published, keywords). They're ordinary
+# guides from then on (the Guides page's "Latest results", sitemap, related guides on destination pages).
+# The latest edition is worked out from the restaurant files (change, changeDate, status). Earlier years come from
+# content/results.json, where `python3 build.py --freeze <guide id>` saves an edition before the next one's changes go in,
+# so each year's results stay on the page even once restaurants change again. Our files' older changes are incomplete
+# (they were marked from each guide's latest edition), so nothing earlier is worked out from them.
+RESULTS_FILE = CONTENT / "results.json"
+RESULT_STARS = {1: "one star", 2: "two stars", 3: "three stars"}
+RESULT_NUMBERS = ("no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten")
+
+
+def results_config(g):
+    return g.get("results") if isinstance(g.get("results"), dict) and g["results"].get("page") else None
+
+
+def edition_of(c):
+    """edition() as text, for headings and titles: "2027" for Italy's November 2026 ceremony."""
+    return str(edition(c))
+
+
+def ceremonies_of(g):
+    """A guide's ceremonies, newest first, counting an announced one whose day has come (ceremony_guides())."""
+    past = [g["last"]] if g.get("last") else []
+    return past + [c for c in g.get("ceremonies", []) if not past or c["date"] != past[0]["date"]]
+
+
+def in_scope(g, r):
+    return bool(set(g.get("places", [])) & set(r["_chain"]))
+
+
+def star_counts(rows):
+    """[one, two, three] from (restaurant, stars) pairs."""
+    c = [0, 0, 0]
+    for _, s in rows:
+        if s in (1, 2, 3):
+            c[s - 1] += 1
+    return c
+
+
+def live_edition(g):
+    """The latest edition our restaurant files hold (the newest ceremony on or before starsUpdated), worked out from them."""
+    data = next((c for c in ceremonies_of(g) if c["date"] <= g.get("starsUpdated", "")), None)
+    if not data:
+        return None
+    month = data["date"][:7]
+    scope = [r for r in restaurants if in_scope(g, r)]
+    this = [r for r in scope if (r.get("changeDate") or "") >= month]
+    before = lambda r, n: r.get("formerStars") or n
+    ed = {"date": data["date"], "edition": edition_of(data), "ceremony": data, "live": True,
+          "new": [(r, r["stars"]) for r in this if r.get("change") == "new" and not r.get("status") and r.get("stars")],
+          "up": [(r, r["stars"], before(r, r["stars"] - 1)) for r in this if r.get("change") == "up" and not r.get("status")],
+          "down": [(r, r["stars"], before(r, r["stars"] + 1)) for r in this if r.get("change") == "down" and not r.get("status")],
+          "gone": [(r, before(r, 1)) for r in this if r.get("status")],
+          # Still in that edition but closed or changed since, so due to leave the next one (README: changeDate stays
+          # empty until a guide leaves a restaurant out).
+          "since": [(r, before(r, 1)) for r in scope if r.get("status") and not r.get("changeDate")]}
+    live = [(r, r["stars"]) for r in scope if r.get("stars") in (1, 2, 3) and not r.get("status")]
+    after = [a + b for a, b in zip(star_counts(live), star_counts(ed["since"]))]
+    # Before: take each change back out.
+    moved_from = star_counts([(r, 0) for r, s in ed["new"]] + [(r, b) for r, s, b in ed["up"] + ed["down"]] + ed["gone"])
+    moved_to = star_counts(ed["new"] + [(r, s) for r, s, b in ed["up"] + ed["down"]])
+    ed["after"], ed["before"] = after, [a - t + f for a, t, f in zip(after, moved_to, moved_from)]
+    return ed
+
+
+def frozen_editions(g):
+    """Earlier editions saved in content/results.json, as live_edition() gives them (restaurants looked up by file name)."""
+    by_id = {r["id"]: r for r in restaurants}
+    out = []
+    for f in (read_json(RESULTS_FILE) or {}).get(g["id"], []) if RESULTS_FILE.exists() else []:
+        missing = [i for k in ("new", "up", "down", "gone") for i, *_ in f.get(k, []) if i not in by_id]
+        if missing:
+            problem("results.json", f"{g['id']} {f.get('date')} names {', '.join(missing)}, which aren't restaurant file names")
+            continue
+        c = next((c for c in ceremonies_of(g) if c["date"] == f["date"]), {"date": f["date"], "edition": f.get("edition")})
+        out.append({"date": f["date"], "edition": str(f.get("edition") or edition_of(c)), "ceremony": c, "live": False, "since": [],
+                    **{k: [(by_id[x[0]], *x[1:]) for x in f.get(k, [])] for k in ("new", "up", "down", "gone")},
+                    "before": f["before"], "after": f["after"]})
+    return out
+
+
+def results_editions(g):
+    """Every edition the page shows, newest first: the live one, then saved ones older than it."""
+    live = live_edition(g)
+    older = [f for f in frozen_editions(g) if not live or f["date"] < live["date"]]
+    return ([live] if live else []) + sorted(older, key=lambda f: f["date"], reverse=True)
+
+
+def freeze_results(ids):
+    """`python3 build.py --freeze [guide id …]`: save each guide's live edition into content/results.json (replacing one
+    from the same ceremony), so it stays on its page once the next ceremony's changes go into the restaurant files."""
+    data = (read_json(RESULTS_FILE) if RESULTS_FILE.exists() else None) or {
+        "_about": "Earlier editions on the MICHELIN Guide results pages (/guides/michelin-guide-…/), saved by `python3 build.py --freeze <guide id>` "
+                  "before a new ceremony's changes go into the restaurant files. Per guide id (as in ceremonies.json), newest first: the ceremony's "
+                  "date and edition, restaurant file names with their stars (new, up and down also give the stars before; gone the stars it held), "
+                  "and the star counts [one, two, three] before and after. Written by the build; edit only to fix a mistake."}
+    for g in ceremony_guides():
+        if not results_config(g) or (ids and g["id"] not in ids):
+            continue
+        ed = live_edition(g)
+        if not ed:
+            print(f"  {g['id']}: no edition in our files to save")
+            continue
+        row = {"date": ed["date"], "edition": ed["edition"],
+               **{k: [[r["id"], *rest] for r, *rest in ed[k]] for k in ("new", "up", "down", "gone")},
+               "before": ed["before"], "after": ed["after"]}
+        data[g["id"]] = sorted([f for f in data.get(g["id"], []) if f["date"] != ed["date"]] + [row], key=lambda f: f["date"], reverse=True)
+        print(f"  Saved the {g['name']} {ed['edition']} ({ed['date']}): {len(ed['new'])} new, {len(ed['up'])} promoted, "
+              f"{len(ed['down'])} down, {len(ed['gone'])} gone")
+    RESULTS_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", "utf-8")
+
+
+def results_page(g):
+    """The id of a ceremony guide's results page, once it's among the guides, else None."""
+    cfg = results_config(g)
+    return cfg["page"] if cfg and cfg["page"] in guides else None
+
+
+def results_link(g, text=None):
+    """A link to a guide's results page, named for its edition: "MICHELIN Guide Singapore 2026 results"."""
+    gid = results_page(g)
+    if not gid:
+        return ""
+    return f'<a href="/guides/{gid}/">{e(text or guides[gid]["_linkText"])}</a>'
+
+
+def stars_html(n):
+    return f'<span class="g-stars" aria-label="{n} star{"s" if n > 1 else ""}">{"★" * n}</span>' if n else '<span class="muted">None</span>'
+
+
+def about_usd(r, f):
+    """S$368 (about US$285): a price with US dollars beside it, for the results pages' sentences and tables."""
+    text = money(r[f], r["cur"])
+    return text.replace("US$", "$") if r["cur"] == "USD" else f"{text} (about US{usd_text(to_usd(r, f))})"
+
+
+def count_phrase(n, one, many):
+    return f"{RESULT_NUMBERS[n] if n < len(RESULT_NUMBERS) else f'{n:,}'} {one if n == 1 else many}"
+
+
+def tier_phrase(c):
+    """[17, 5, 1] -> "1 three-star, 5 two-star and 17 one-star restaurants"."""
+    parts = [f"{n:,} {w}-star" for n, w in zip(c[::-1], ("three", "two", "one")) if n]
+    return (and_list(parts) if parts else "no") + (" restaurant" if sum(c) == 1 else " restaurants")
+
+
+def edition_summary(g, ed, area, latest):
+    """What an edition changed, in a sentence or three, and where that left the guide's area."""
+    name = f"{g['name']} {ed['edition']}"
+    alpha = lambda r: unicodedata.normalize("NFKD", r["name"]).encode("ascii", "ignore").decode().lower()
+    names = lambda rows: and_list([e(r["name"]) for r in sorted(rows, key=alpha)])
+    parts = []
+    if ed["new"]:
+        n = len(ed["new"])
+        top = sorted(((r, s) for r, s in ed["new"] if s > 1), key=lambda x: (-x[1], alpha(x[0])))
+        parts.append(f"gave {count_phrase(n, 'restaurant', 'restaurants')} {'its' if n == 1 else 'their'} first star{'' if n == 1 and not top else 's'}"
+                     + (" (" + and_list([names([r for r, x in top if x == s]) + f" straight in with {RESULT_STARS[s].split()[0]}"
+                                         for s in (3, 2) if any(x == s for r, x in top)]) + ")" if top and n > 1 else
+                        f", entering with {RESULT_STARS[top[0][1]]}" if top else ""))
+    for s in (3, 2):
+        up = [r for r, n, b in ed["up"] if n == s]
+        if up:
+            parts.append(f"promoted {names(up)} to {RESULT_STARS[s]}" if len(up) <= 4 else f"promoted {count_phrase(len(up), 'restaurant', 'restaurants')} to {RESULT_STARS[s]}")
+    if ed["down"]:
+        parts.append(f"took a star from {names([r for r, s, b in ed['down']]) if len(ed['down']) <= 3 else count_phrase(len(ed['down']), 'restaurant', 'restaurants')}")
+    if ed["gone"]:
+        parts.append(f"dropped {count_phrase(len(ed['gone']), 'restaurant', 'restaurants')} that closed, changed or lost {'its' if len(ed['gone']) == 1 else 'their'} stars")
+    c = ed["ceremony"]
+    when = (uk_date if results_config(g)["lang"] == "en-GB" else us_date)(ed["date"])
+    how = f" online on {when}" if c.get("online") else f" on {when}" + (f" at {e(c['where'])}" if c.get("where") else "")
+    text = f"The {e(name)} was revealed{how}."
+    if parts:
+        text += " It " + and_list(parts) + "."
+    text += (f" {e(area[:1].upper() + area[1:])} now {'have' if results_config(g).get('plural') else 'has'}" if latest else " That left " + e(area) + " with") + f" {tier_phrase(ed['after'])}" + (
+        " in the guide." if latest else ".")
+    return text
+
+
+def results_sections(g, ed, cfg, latest):
+    """One edition's changes: the new two- and three-star restaurants as paragraphs, then tables of the new one-stars and
+    of the stars lost, and (latest only) the restaurants that have closed since."""
+    date_text = uk_date if cfg["lang"] == "en-GB" else us_date
+    links = michelin_links()
+    year = ed["edition"]
+    # The country too, where it isn't the guide's main one: "Dublin, Ireland" on the UK & Ireland page, but plain "London".
+    home = country_of(g["places"][0]) if g.get("places") else None
+    where = lambda r: e(place_name(r)) + (f", {e(places[r['country']]['name'])}" if r["country"] != home and r["cityType"] != "country" else "")
+    table = lambda heads, rows: (f'<div class="table-wrap"><table class="guide-table data results-table"><thead><tr>'
+                                 + "".join(f'<th scope="col">{h}</th>' for h in heads) + f"</tr></thead><tbody>{rows}</tbody></table></div>")
+    order = lambda rows: sorted(rows, key=lambda x: (-x[1], place_name(x[0]).lower(), x[0]["name"].lower()))
+    out = []
+
+    def price_sentence(r):
+        if is_menu(r, "dinner"):
+            text = f" Its dinner tasting menu costs {e(about_usd(r, 'dinner'))}"
+            if is_menu(r, "lunch") and r["lunch"] < r["dinner"]:
+                text += f", or {e(about_usd(r, 'lunch'))} at lunch"
+            return text + "."
+        if r.get("dinner") is not None:
+            return f" Dinner costs about {e(about_usd(r, 'dinner'))} a head."
+        if is_menu(r, "lunch"):
+            return f" Its lunch menu costs {e(about_usd(r, 'lunch'))}."
+        return " It doesn’t publish its menu prices."
+
+    # Two and three stars: a paragraph each, top first.
+    for s in (3, 2):
+        rows = [(r, n, b) for r, n, b in ed["up"] if n == s] + [(r, n, 0) for r, n in ed["new"] if n == s]
+        if not rows:
+            continue
+        paras = ""
+        for r, n, b in sorted(rows, key=lambda x: (x[2] == 0, x[0]["name"].lower())):
+            what = f"entered the guide with {RESULT_STARS[n]}" if not b else f"moved up from {RESULT_STARS[b]} to {RESULT_STARS[n].split()[0]}"
+            cuisine = f" ({e(r['cuisine'])})" if r.get("cuisine") else ""
+            chef = (f" Its head chef{'s are' if ' and ' in r['chef'] else ' is'} {e(r['chef'])}.") if r.get("chef") else ""
+            paras += f"<p>In {where(r)}, {restaurant_link(r, links)}{cuisine} {what}.{chef}{price_sentence(r)}</p>"
+        # Built from the data, like the tables (scripts/site_audit.py leaves .results-top out of its prose link checks).
+        out.append(f'<h3>New {RESULT_STARS[s].replace(" stars", "-star")} restaurants in {year}</h3><div class="results-top">{paras}</div>')
+
+    ones = order([(r, n) for r, n in ed["new"] if n == 1])
+    if ones:
+        def price_cell(r):
+            if r.get("dinner") is None:
+                return '<span class="muted">Not published</span>'
+            usd = "" if r["cur"] == "USD" else f'<br><span class="muted">about US{usd_text(to_usd(r, "dinner"))}</span>'
+            kind = "" if is_menu(r, "dinner") else '<br><span class="muted">typical spend</span>'
+            return e(money(r["dinner"], r["cur"]).replace("US$", "$")) + usd + kind
+        rows = "".join(f'<tr><td data-label="Restaurant">{restaurant_link(r, links)}</td><td data-label="Where">{where(r)}</td>'
+                       f'<td data-label="Cuisine">{e(r.get("cuisine") or "–")}</td><td class="num" data-label="Dinner">{price_cell(r)}</td></tr>' for r, n in ones)
+        out.append(f'<h3>New one-star restaurants in {year}</h3>'
+                   f'<p>{count_phrase(len(ones), "restaurant", "restaurants").capitalize()} won {"its" if len(ones) == 1 else "their"} first MICHELIN star in the {e(g["name"])} {year}.</p>'
+                   + table(("Restaurant", "Where", "Cuisine", "Dinner menu"), rows)
+                   + f'<p class="table-note">Dinner is the tasting menu per person before service, in local currency with US dollars beside it. '
+                     f'Prices checked {e(guide_stats_checked())}.</p>')
+
+    lost = sorted([(r, b, s) for r, s, b in ed["down"]] + [(r, b, 0) for r, b in ed["gone"]], key=lambda x: (-x[1], x[0]["name"].lower()))
+    if lost:
+        # "Now" is today for the latest edition; for an earlier one, what that edition left it with.
+        now = lambda r, s: stars_html(s) if s else e(GONE_NOW[r["status"]]) if latest and r.get("status") else "Left the guide"
+        happened = lambda r, s: e(r.get("statusNote") or r.get("changeNote") or "–") if latest or not s else "Lost a star"
+        rows = "".join(f'<tr><td data-label="Restaurant">{restaurant_link(r, links)}</td><td data-label="Where">{where(r)}</td>'
+                       f'<td data-label="Before">{stars_html(b)}</td><td data-label="Now">{now(r, s)}</td>'
+                       f'<td data-label="What happened">{happened(r, s)}</td></tr>' for r, b, s in lost)
+        closures = ' Restaurants that closed often leave the guide months later, at its next edition.' + (
+            ' Our guide to <a data-guide="michelin-star-restaurants-closed-uk">UK Michelin star restaurants that closed</a> follows them year by year.'
+            if "uk" in g.get("places", []) else "")
+        out.append(f'<h3>Stars lost in {year}</h3>'
+                   f'<p>{count_phrase(len(lost), "restaurant", "restaurants").capitalize()} lost stars in the {e(g["name"])} {year}, '
+                   f'whether the inspectors marked {"it" if len(lost) == 1 else "them"} down or {"it" if len(lost) == 1 else "they"} had closed or changed.{closures}</p>'
+                   + table(("Restaurant", "Where", "Before", "Now", "What happened"), rows))
+    elif ed["new"] or ed["up"]:
+        out.append(f"<p>Our records show no restaurant losing a star in the {year} guide.</p>")
+
+    if latest and ed["since"]:
+        rows = "".join(f'<tr><td data-label="Restaurant">{restaurant_link(r, links)}</td><td data-label="Where">{where(r)}</td>'
+                       f'<td data-label="Stars it held">{stars_html(b)}</td><td data-label="What happened">{e(r.get("statusNote") or "–")}</td></tr>'
+                       for r, b in sorted(ed["since"], key=lambda x: (-x[1], x[0]["name"].lower())))
+        nxt = g.get("coming")
+        due = f" on {date_text(nxt['date'])}" if nxt else ""
+        out.append(f'<h3>Closed since the {year} guide</h3>'
+                   f'<p>{"This restaurant was" if len(ed["since"]) == 1 else "These restaurants were"} still starred in the {year} selection but '
+                   f'{"has" if len(ed["since"]) == 1 else "have"} closed or changed since, so {"it" if len(ed["since"]) == 1 else "they"} should leave the guide '
+                   f'when its next edition comes out{due}.</p>'
+                   + table(("Restaurant", "Where", "Stars it held", "What happened"), rows))
+    return "".join(out)
+
+
+def results_guide(g):
+    """A ceremony guide's results page as a guide (title, body and the rest), or None when our files hold no edition of it."""
+    cfg = results_config(g)
+    eds = results_editions(g)
+    if not eds:
+        print(f"  Results: {g['id']} has no edition in our files yet, so /guides/{cfg['page']}/ isn't built")
+        return None
+    date_text = uk_date if cfg["lang"] == "en-GB" else us_date
+    latest = eds[0]
+    head = g["last"] if g.get("last") else latest["ceremony"]
+    year = edition_of(head)  # the year people search for: the newest edition, even before our files catch up with it
+    short, area, name = cfg["short"], cfg["area"], g["name"]
+    Area = area[:1].upper() + area[1:]
+    lede = edition_summary(g, latest, area, True)
+    after = []
+    if g["status"]:
+        after.append(f"<strong>The {e(name)} {year} was revealed on {date_text(head['date'])}.</strong> We’re adding its new and lost stars to this page now; "
+                     f"until then, these are the {latest['edition']} results.")
+    nxt = g.get("coming")
+    if nxt:
+        after.append(f"The {e(name)} {edition_of(nxt)} is revealed on {date_text(nxt['date'])}"
+                     + (" online" if nxt.get("online") else f" at {e(nxt['where'])}" if nxt.get("where") else "")
+                     + ", and this page will have its new stars that day.")
+    body = f'<p class="lede">{lede}</p>' + "".join(f"<p>{t}</p>" for t in after)
+    for i, ed in enumerate(eds):
+        c = ed["ceremony"]
+        body += (f'<h2 id="y{ed["edition"]}">The {e(name)} {ed["edition"]}, revealed {date_text(ed["date"])}</h2>'
+                 + ("" if i == 0 else f"<p>{edition_summary(g, ed, area, False)}</p>")
+                 + results_sections(g, ed, cfg, i == 0))
+
+    # How many now: before and after the latest edition.
+    b, a = latest["before"], latest["after"]
+    q_count = f"How many Michelin star restaurants are there in {area} now?"
+    rows = "".join(f'<tr><td data-label="Stars">{label}</td><td class="num" data-label="Before">{b[k]:,}</td><td class="num" data-label="After">{a[k]:,}</td>'
+                   f'<td class="num" data-label="Change">{a[k] - b[k]:+,}</td></tr>'.replace("+0<", "0<")
+                   for label, k in (("Three stars", 2), ("Two stars", 1), ("One star", 0)))
+    rows += (f'<tr class="total"><td data-label="Stars"><strong>Total</strong></td><td class="num" data-label="Before"><strong>{sum(b):,}</strong></td>'
+             f'<td class="num" data-label="After"><strong>{sum(a):,}</strong></td><td class="num" data-label="Change"><strong>{sum(a) - sum(b):+,}</strong></td></tr>').replace("+0<", "0<")
+    since = len(latest["since"])
+    answer = (f"{e(Area)} {'have' if cfg.get('plural') else 'has'} {tier_phrase(a)} in the {e(name)} {latest['edition']}, against {sum(b):,} before it"
+              + (f". Since then {count_phrase(since, 'of them has', 'of them have')} closed or changed, so {sum(a) - since:,} are starred and open today" if since else "") + ".")
+    body += (f'<h2 id="now">{e(q_count)}</h2><p>{answer}</p>'
+             f'<div class="table-wrap"><table class="guide-table data results-table"><thead><tr><th scope="col">Stars</th>'
+             f'<th scope="col">Before the {latest["edition"]} guide</th><th scope="col">After it</th><th scope="col">Change</th></tr></thead>'
+             f'<tbody>{rows}</tbody></table></div>'
+             f'<p>See how that compares with other countries in our guide to <a data-guide="michelin-stars-by-country">Michelin stars by country</a>.</p>')
+
+    # When is the next one.
+    q_next = f"When is the next {name} ceremony?"
+    if nxt:
+        when = (f"The {e(name)} {edition_of(nxt)} is revealed on {date_text(nxt['date'])}"
+                + (", online, with no ceremony." if nxt.get("online") else f" at {e(nxt['where'])}." if nxt.get("where") else ".")
+                + " We’ll add every new and lost star to this page that day.")
+    else:
+        when = (f"Michelin hasn’t announced the date yet. The {year} guide was revealed on {date_text(head['date'])}, "
+                f"and the ceremony is usually in {e(g['usual'])}.")
+    body += (f'<h2 id="next">{e(q_next)}</h2><p>{when}'
+             + (f' Every guide’s dates are on our page of <a href="/guides/michelin-guide-ceremony-dates/#cer-{e(g["id"])}">Michelin Guide ceremony dates</a>.'
+                if "michelin-guide-ceremony-dates" in guides else "") + "</p>")
+
+    # Where to see every starred restaurant, with prices.
+    shown = [places[p] for p in g.get("show") or g.get("places", []) if p in places]
+    if len(shown) == 1:
+        dest = f'Our page on <a href="{e(shown[0]["path"])}">Michelin star restaurants in {e(in_sentence(shown[0]))}</a> lists every one'
+    else:
+        dest = "Our destination pages list every one, " + and_list([f'<a href="{e(p["path"])}">{e(p["name"])}</a>' for p in shown]) + ","
+    body += (f'<h2 id="prices">Prices at every starred restaurant in {e(area)}</h2>'
+             f'<p>{dest} with its dinner, lunch and wine pairing prices and a map. Stars come from the MICHELIN Guide; '
+             f'prices are what the restaurants charge, checked {e(guide_stats_checked())}.</p>')
+
+    strip = lambda t: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", t)).strip()
+    n_new = len(latest["new"])
+    description = (f"Every new and lost Michelin star in the {name} {latest['edition']}: {n_new} new, {len(latest['up'])} promoted, "
+                   f"{len(latest['down']) + len(latest['gone'])} lost, with prices and the next ceremony date.")
+    if len(description) > 155:
+        description = f"Every new and lost Michelin star in the {name} {latest['edition']}, with prices and the next ceremony date."
+    updated = max([cfg.get("published", ""), g.get("starsUpdated", "")] + [ed["date"] for ed in eds if ed["date"] <= g.get("starsUpdated", "")])
+    return {
+        "id": cfg["page"], "lang": cfg["lang"], "section": "results", "places": list(g.get("places", [])),
+        "title": f"Michelin Guide {short} {year}: Every New Star",
+        "h1": f"{name} {year}: Every New and Lost Star",
+        "description": description,
+        "summary": f"What the {latest['edition']} guide changed in {area}: " + and_list(
+            [f"{k} {w}" for k, w in ((n_new, "newly starred"), (len(latest["up"]), "promoted"), (len(latest["down"]) + len(latest["gone"]), "lost or dropped")) if k]
+            or ["no stars"]) + ", with prices.",
+        "figure": f"Next: {short_date(nxt['date'])}" if nxt else f"Revealed {short_date(latest['date'])}",
+        "published": cfg.get("published") or updated, "updated": updated,
+        "keywords": [f"michelin guide {short.lower()} {year}"] + [k for k in cfg.get("keywords", []) if isinstance(k, str)],
+        "body": body, "faq": [], "picks": [],
+        # For the FAQPage data: the two question headings and the answer under each.
+        "ldFaq": [{"q": q_count, "a": strip(answer)}, {"q": q_next, "a": strip(when)}],
+        "_linkText": f"{name} {year} results", "_rank": head["date"],
+    }
+
+
+def add_results_guides():
+    """Put each ceremony guide's results page among the guides (see above)."""
+    pages_seen = {}
+    for g in ceremony_guides():
+        cfg = results_config(g)
+        if not cfg:
+            continue
+        where = f"ceremonies.json ({g['id']})"
+        for field in ("short", "area", "lang"):
+            if not cfg.get(field):
+                problem(where, f"results needs a {field}")
+        if not ID_PATTERN.fullmatch(cfg["page"]) or not cfg["page"].startswith("michelin-guide-"):
+            problem(where, "results.page must be lowercase words joined by hyphens, starting michelin-guide-")
+        if cfg["page"] in guides or cfg["page"] in pages_seen:
+            problem(where, f"results.page {cfg['page']} is already a guide's address")
+        if cfg.get("lang") not in ("en-GB", "en-US"):
+            problem(where, "results.lang must be en-GB or en-US")
+        pages_seen[cfg["page"]] = g["id"]
+        if any(not cfg.get(f) for f in ("short", "area", "lang")) or cfg.get("lang") not in ("en-GB", "en-US"):
+            continue
+        page = results_guide(g)
+        if page:
+            if len(page["title"]) > 60:
+                problem(where, f"its results page's title is {len(page['title'])} characters (keep it to 60): {page['title']}")
+            guides[page["id"]] = page
 
 
 def guide_blocks(stats):
@@ -4612,9 +5009,11 @@ def build_guides():
              "author": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
              "publisher": ORGANIZATION, "isPartOf": {"@id": WEBSITE["@id"]}},
         ]
-        if faqs:
+        # Results pages put their questions in as headings (no separate FAQ), so the FAQPage data comes from those.
+        questions = faqs or g.get("ldFaq") or []
+        if questions:
             graph.append({"@type": "FAQPage", "mainEntity": [
-                {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in faqs]})
+                {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in questions]})
         write(path, render("guide.html", {
             "title": e(g["title"]), "description": e(g["description"]), "canonical": SITE_URL + path, "htmlLang": e(g.get("lang", "en-US")),
             "ogType": "article", "ogAlt": e(g.get("imageAlt") or g["h1"]),
@@ -4648,6 +5047,8 @@ def build_guides():
                f'<p>{e(pillar["description"])}</p>{meta(pillar)}<span class="guide-go" aria-hidden="true">Read the guide →</span></div></article>') if pillar else ""
     rest = sorted((g for g in guides.values() if g is not pillar), key=order)
     groups = [(key, *GUIDE_SECTIONS[key], [g for g in rest if g.get("section") == key]) for key in GUIDE_SECTIONS]
+    # Results pages: the latest ceremony first.
+    groups = [(k, t, n, sorted(gs, key=lambda g: g.get("_rank", ""), reverse=True) if k == "results" else gs) for k, t, n, gs in groups]
     groups.append(("more", "More guides", "", [g for g in rest if g.get("section") not in GUIDE_SECTIONS]))
     groups = [grp for grp in groups if grp[3]]
     jump = '<nav class="guide-jump" aria-label="Guide topics">' + "".join(f'<a href="#{k}">{e(t)}</a>' for k, t, _, _ in groups) + "</nav>"
@@ -5590,6 +5991,11 @@ def build_service_worker():
     (OUT / "sw.js").write_text(sw, "utf-8")
 
 
+if "--freeze" in sys.argv:
+    # python3 build.py --freeze [guide id …]: save results pages' editions before a ceremony's changes go in (see above).
+    freeze_results([a for a in sys.argv[1:] if not a.startswith("--")])
+    sys.exit(0)
+add_results_guides()
 if OUT.exists():
     shutil.rmtree(OUT)
 OUT.mkdir()

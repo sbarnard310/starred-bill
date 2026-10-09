@@ -113,7 +113,7 @@ LANG_PREFIX = re.compile(r"^/(?:zh|yue|zhs|fr|ja|es|it|ko|da|sv|is|ca|th|de|nl|p
 VAGUE = re.compile(r"^(?:here|click here|this|this page|this guide|this link|page|link|more|read more|see more|learn more|find out more|see|go|our page)$", re.I)
 FEW_LINKS_IN = 3       # an indexed English page with fewer links to it than this is hard for Google to find
 FEW_CONTENT_LINKS = 2  # a page with fewer links of its own (beyond the menu and footer every page has) is a dead end
-LISTS = re.compile(r'<table.*?</table>|<(ol|nav) class="(?:rank-cards|jump-links)[^"]*".*?</\1>|<div class="change-lists">(?:.*?</ul></div>){2}</div>|<h3 id="three-[^"]*">.*?</h3>', re.S)  # built from the data
+LISTS = re.compile(r'<table.*?</table>|<(ol|nav) class="(?:rank-cards|jump-links)[^"]*".*?</\1>|<div class="change-lists">(?:.*?</ul></div>){2}</div>|<h3 id="three-[^"]*">.*?</h3>|<div class="results-top">.*?</div>', re.S)  # built from the data
 
 
 def link_checks(site):

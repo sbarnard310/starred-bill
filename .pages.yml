@@ -1862,6 +1862,18 @@ content:
             label: Last checked for a new date
             type: string
             pattern: { regex: '^\d{4}-\d{2}$', message: "Use year-month, e.g. 2026-10" }
+          - name: results
+            label: Results page
+            description: Gives this guide a page of its new and lost stars at /guides/<page>/. Leave empty for none.
+            type: object
+            fields:
+              - { name: page, label: Page address, description: 'e.g. michelin-guide-singapore. Never change it once published.', type: string }
+              - { name: short, label: Short name for the title, description: 'e.g. UK & Ireland', type: string }
+              - { name: area, label: Area as a sentence names it, description: 'e.g. the UK and Ireland', type: string }
+              - { name: lang, label: Spelling, type: select, options: { values: [en-GB, en-US] } }
+              - { name: plural, label: 'Area takes "have"', type: boolean }
+              - { name: published, label: First published, type: string, pattern: { regex: '^\d{4}-\d{2}-\d{2}$', message: "Use year-month-day" } }
+              - { name: keywords, label: Extra search phrases, type: string, list: true }
           - name: next
             label: Next ceremony (once Michelin announces it)
             type: object

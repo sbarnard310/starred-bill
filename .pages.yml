@@ -1214,7 +1214,7 @@ content:
         type: string
       - name: title
         label: Page title (English, optional)
-        description: Replaces the automatic title in search results, e.g. "Michelin Star Restaurants in Boston: Are There Any? (2026)". Up to 61 characters. Only this page, not the places inside it.
+        description: Replaces the automatic title in search results, e.g. "Michelin Star Restaurants in Boston: Are There Any? ({year})". {year} becomes the year of the latest MICHELIN Guide. Up to 61 characters. Only this page, not the places inside it.
         type: string
       - name: description
         label: Search snippet (English, optional)
@@ -1867,6 +1867,7 @@ content:
             type: object
             fields:
               - { name: date, label: Date, type: string, pattern: { regex: '^\d{4}-\d{2}-\d{2}$', message: "Use year-month-day, e.g. 2026-11-24" } }
+              - { name: edition, label: Guide year (only if not the ceremony's year), description: "The year the guide is named for, only when Michelin names it for the next year, e.g. 2027 for Italy's November 2026 ceremony. Page titles show this year from the ceremony day.", type: number }
               - { name: where, label: Where, description: 'e.g. "the Palacio de Congresos, Huesca"', type: string }
               - { name: online, label: Online only (no ceremony), type: boolean }
               - { name: source, label: Source link, type: string }
@@ -1876,6 +1877,7 @@ content:
             list: true
             fields:
               - { name: date, label: Date, type: string, pattern: { regex: '^\d{4}-\d{2}-\d{2}$', message: "Use year-month-day, e.g. 2026-02-09" } }
+              - { name: edition, label: Guide year (only if not the ceremony's year), description: "The year the guide is named for, only when Michelin names it for the next year, e.g. 2027 for Italy's November 2026 ceremony. Page titles show this year from the ceremony day.", type: number }
               - { name: where, label: Where, type: string }
               - { name: online, label: Online only (no ceremony), type: boolean }
               - { name: source, label: Source link, type: string }

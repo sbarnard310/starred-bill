@@ -17,6 +17,7 @@ import urllib.parse
 import shutil
 import subprocess
 import sys
+from collections import Counter
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -196,8 +197,8 @@ for pid, p in places.items():
 # A place's own English title, search snippet and opening sentence (e.g. Boston's "Are There Any?") replace the
 # generated ones, so they must fit where Google shows them.
 for pid, p in places.items():
-    if len(p.get("title") or "") > 61:  # TITLE_MAX, set further down
-        problem(f"places ({pid})", f"its title is {len(p['title'])} characters; keep it to 61")
+    if len((p.get("title") or "").replace("{year}", "2026")) > 61:  # TITLE_MAX, set further down; {year} becomes the guide's year
+        problem(f"places ({pid})", f"its title is {len(p['title'].replace('{year}', '2026'))} characters; keep it to 61")
     if len(p.get("description") or "") > 155:
         problem(f"places ({pid})", f"its description is {len(p['description'])} characters; keep it to 155")
 
@@ -2118,11 +2119,34 @@ def title_width(text):
     return sum(2 if unicodedata.east_asian_width(c) in "WF" else 1 for c in text)
 
 
+def edition(c):
+    """The year a ceremony's guide is named for: its `edition` where Michelin names it for the next year (Italy's
+    November 2026 ceremony launches the 2027 guide), else the ceremony's own year."""
+    return int(c.get("edition") or c["date"][:4])
+
+
+def title_year(p, starred=()):
+    """The year in a page's title: the edition of the MICHELIN Guide its starred restaurants come from, from that
+    guide's ceremony day on (searches carry the year: "stelle michelin 2026"), and never older than the year our prices
+    were checked (site.json's updated). A page several guides cover (China, the United States) follows the edition most
+    of its restaurants are in, so one small guide named for next year doesn't move the whole country; a page with no
+    stars follows the newest guide covering it. A page moves to 2027 with the first build on or after its ceremony."""
+    year = site.get("updated", "")[:4]
+    if not year:
+        return ""
+    gs = [g for g in ceremony_guides() if g["last"]]
+    of = lambda ids: [edition(g["last"]) for g in gs if set(ids) & set(g.get("places", []))]
+    counts = Counter(max(of(r["_chain"]) or [0]) for r in starred)
+    ids = chain(p["id"]) if p["type"] != "group" else [p["id"]]
+    found = max(counts, key=lambda y: (counts[y], y)) if counts else max(of(ids) or [0])
+    return str(max(int(year), found))
+
+
 def page_titles(p, page, languages, starred):
     """The page's title in each of its languages, e.g. "Michelin Star Restaurants in London: Prices for All 84 (2026)"."""
     n = len(starred)
     priced = sum(1 for r in starred if r.get("dinner") is not None or r.get("lunch") is not None)
-    year = site.get("updated", "")[:4]
+    year = title_year(p, starred)
     # Two places with the same name (Limburg in Belgium and the Netherlands, Luxembourg the country and the Belgian
     # province) get their country's name after it, so their titles differ.
     country = places[chain(p["id"])[-1]] if p["type"] != "country" and same_name.get(p["name"], 0) > 1 else None
@@ -2151,7 +2175,7 @@ def page_titles(p, page, languages, starred):
                 for dated in (True, False):
                     text = h + (w.get("sep", ": ") + t if t else "") + (w.get("year", " ({y})").replace("{y}", year) if dated and year else "")
                     options.append(text.replace("{in}", where).replace("{name}", name).replace("{n}", str(n)))
-        titles[lang] = p["title"] if lang == "en" and p.get("title") else next((o for o in options if title_width(o) <= TITLE_MAX), options[-1])
+        titles[lang] = p["title"].replace("{year}", year) if lang == "en" and p.get("title") else next((o for o in options if title_width(o) <= TITLE_MAX), options[-1])
     return titles
 
 
@@ -3336,6 +3360,8 @@ def ceremony_guides():
         for c in g.get("ceremonies", []) + ([g["next"]] if g.get("next") else []):
             if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", c.get("date", "")):
                 problem("ceremonies.json", f"{g['id']} has a ceremony date that isn't YYYY-MM-DD: {c.get('date')!r}")
+            elif c.get("edition") and str(c["edition"]) not in (c["date"][:4], str(int(c["date"][:4]) + 1)):
+                problem("ceremonies.json", f"{g['id']}'s {c['date']} ceremony has edition {c['edition']!r}: use its year or the next")
         past = list(g.get("ceremonies", []))
         nxt = g.get("next")
         if nxt and nxt.get("date", "") <= TODAY:
@@ -4622,8 +4648,7 @@ def build_restaurant_pages():
         answer = restaurant_answer(r, stay)
         peers_place, peers = peers_of(r, live)
         near = near_restaurants(r, live)
-        year = site.get("updated", "")[:4]
-        title = restaurant_title(r, year)
+        title = restaurant_title(r, title_year(places[r["city"]], [r]))
         description = restaurant_description(r, where)
         stars_html = '<span class="stars" aria-hidden="true">' + '<svg><use href="#star"/></svg>' * r["stars"] + "</span>"
         stars_label = f"{STAR_WORDS[r['stars']].capitalize()} MICHELIN star{'s' if r['stars'] > 1 else ''}"

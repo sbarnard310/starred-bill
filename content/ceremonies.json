@@ -1,5 +1,5 @@
 {
-  "_about": "When each MICHELIN Guide reveals its stars: the Michelin Guide ceremony dates page (/guides/michelin-guide-ceremony-dates/) and, on destination pages, 'When the stars are announced'. One entry per guide. places: the place ids it covers (and everything inside them); show: the places to name and link on the ceremonies page, if not the same; guide: one of our guides to link instead, for a guide with no place page yet. usual: the month(s) it's usually held. ceremonies: newest first, each with date (YYYY-MM-DD), where (left out when Michelin didn't say), online (true when the stars were published online with no ceremony) and source. next: the next ceremony once Michelin names it (same fields), else leave it out. starsUpdated: the day our restaurant files last caught up with this guide; when a ceremony is newer, the page says 'Updating' and the build lists it. checked: the month we last looked for a newer date. note: an optional extra sentence.",
+  "_about": "When each MICHELIN Guide reveals its stars: the Michelin Guide ceremony dates page (/guides/michelin-guide-ceremony-dates/) and, on destination pages, 'When the stars are announced'. One entry per guide. places: the place ids it covers (and everything inside them); show: the places to name and link on the ceremonies page, if not the same; guide: one of our guides to link instead, for a guide with no place page yet. usual: the month(s) it's usually held. ceremonies: newest first, each with date (YYYY-MM-DD), where (left out when Michelin didn't say), online (true when the stars were published online with no ceremony) and source. next: the next ceremony once Michelin names it (same fields), else leave it out. edition: the year the guide is named for, only where it isn't the ceremony's own (Italy's November 2026 ceremony launches the 2027 guide); destination and restaurant page titles carry that year from the ceremony day on. starsUpdated: the day our restaurant files last caught up with this guide; when a ceremony is newer, the page says 'Updating' and the build lists it. checked: the month we last looked for a newer date. note: an optional extra sentence.",
   "guides": [
     {
       "id": "great-britain-ireland",
@@ -33,7 +33,7 @@
       "usual": "November",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
-      "next": {"date": "2026-11-24", "where": "the Palacio de Congresos, Huesca", "source": "https://www.thegourmetjournal.com/noticias/la-gala-michelin-2027-sera-en-huesca/"},
+      "next": {"date": "2026-11-24", "edition": 2027, "where": "the Palacio de Congresos, Huesca", "source": "https://www.thegourmetjournal.com/noticias/la-gala-michelin-2027-sera-en-huesca/"},
       "ceremonies": [
         {"date": "2025-11-25", "where": "SOHRLIN Andalucía, Málaga", "source": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todo-sobre-la-guia-michelin-espana-andorra-2026"}
       ]
@@ -58,7 +58,7 @@
       "usual": "November",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
-      "next": {"date": "2026-11-12", "where": "the Teatro Municipale, Piacenza", "source": "https://www.scattidigusto.it/guida-michelin-2027-le-nuove-stelle-a-piacenza-il-12-novembre"},
+      "next": {"date": "2026-11-12", "edition": 2027, "where": "the Teatro Municipale, Piacenza", "source": "https://www.scattidigusto.it/guida-michelin-2027-le-nuove-stelle-a-piacenza-il-12-novembre"},
       "ceremonies": [
         {"date": "2025-11-19", "where": "the Teatro Regio, Parma", "source": "https://guide.michelin.com/it/it/notizia/michelin-guide-ceremony/tutte-le-stelle-della-guida-michelin-italia-2026"}
       ]
@@ -385,7 +385,7 @@
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2026-09-11", "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-selection-2027-chengdu"},
+        {"date": "2026-09-11", "edition": 2027, "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-selection-2027-chengdu"},
         {"date": "2025-09-02", "online": true, "source": "https://guide.michelin.com/mo/en/article/news-and-views/michelin-guide-chengdu-2026"}
       ]
     },

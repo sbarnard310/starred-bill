@@ -684,12 +684,12 @@ def build_place(p):
     suffixes = lang_suffixes(langs)
     titles = page["titles"] = page_titles(p, page, langs, starred)
     if p["id"] in SEARCH_NAMES:
-        page["searchIn"], page["searchHeading"] = SEARCH_NAMES[p["id"]]["name"], bool(SEARCH_NAMES[p["id"]].get("heading"))
+        page["searchHeading"], page["searchIn"] = search_heading(p), search_intro(p)
 
     stars = [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)]
     menus = sorted((r for r in starred if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
     where = in_sentence(p)
-    description = p.get("description") or place_description(search_in(p), starred, stars, menus)
+    description = p.get("description") or place_description(search_both(p), starred, stars, menus)
     intro = page["intro"]
     lang_paths = {lang: lang_path(p["path"], lang) for lang in langs}
     for item in page["crumbs"] + [i for row in page["links"] for i in row["items"]]:
@@ -714,15 +714,15 @@ def build_place(p):
         f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{p["path"]}">\n' if len(langs) > 1 else ""
     # A line under the intro pointing to Near me (English only, like the page it opens), for "michelin star restaurants near me".
     # Then one to Help me pick with this place as the first answer (/pick/?w=<address>), on pages with starred restaurants.
-    near_line = (f'<p class="hero-near">In {e(where)} or nearby? See the <a href="/near-me/">Michelin star restaurants near you</a>, nearest first.'
-                 + (f' Can\'t choose? <a href="/pick/?w={p["path"]}" class="hero-pick">Help me pick in {e(where)}</a>.' if starred_n[p["id"]] and p["type"] != "group" else "") + "</p>")
+    near_line = (f'<p class="hero-near">In {e(search_short(p))} or nearby? See the <a href="/near-me/">Michelin star restaurants near you</a>, nearest first.'
+                 + (f' Can\'t choose? <a href="/pick/?w={p["path"]}" class="hero-pick">Help me pick in {e(search_short(p))}</a>.' if starred_n[p["id"]] and p["type"] != "group" else "") + "</p>")
     for lang in langs:
         if lang == "en":
             texts = {
                 "description": description,
-                "h1": f"Michelin star restaurants in {e(search_in(p) if SEARCH_NAMES.get(p['id'], {}).get('heading') else where)}: what they <em>cost</em>.",
+                "h1": f"Michelin star restaurants in {e(search_heading(p))}: what they <em>cost</em>.",
                 "eyebrow": f"{p['name']} · Michelin Guide restaurants", "crumbHome": "All destinations",
-                "heroText": ((p.get("lead") or f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {search_in(p)}, side by side.") + (" " + intro if intro else ""))
+                "heroText": ((p.get("lead") or f"Dinner, lunch and wine pairing prices per person at the starred restaurants in {search_intro(p)}, side by side.") + (" " + intro if intro else ""))
                 if starred else f"There are currently no restaurants with a Michelin star in {where}, but we'll update this page as soon as one appears.",
             }
         else:
@@ -1091,7 +1091,7 @@ def destination_faq(p, page, starred, lang, quick=False):
     checked = month_year(site.get("updated", ""), lang)
     count = say("aCountOne", r=name(starred[0]), stars=w[f"star{starred[0]['stars']}"], checked=checked) if n == 1 else \
         say("aCount", n=n, split=k.tier_split(by_stars), checked=checked)
-    faq.append((say("qCount", **({"in": "in " + search_in(p)} if lang == "en" and p["id"] in SEARCH_NAMES else {})), count))
+    faq.append((say("qCount", **({"in": "in " + search_short(p)} if lang == "en" and p["id"] in SEARCH_NAMES else {})), count))
 
     if not quick:
         faq.append((say("qThree"), three_star_answer(k, by_stars)))
@@ -1296,21 +1296,36 @@ SEO_PILOT = ()  # in preview: ("london", "new-york"), waiting for the owner's lo
 # page, 9 Oct 2026): those with their own qaLabel in src/faq-words.json. A page in a language without it shows the
 # figures alone there.
 QA_LANGS = tuple(lang for lang, words in FAQ_WORDS.items() if "qaLabel" in words)
-# The short names people search for a place by ("michelin star restaurants nyc"), worked into its answer and description.
 # Where people search for a place by a shorter name than ours ("michelin star restaurants nyc", 10,000 searches a month in
-# the US against 1,000 for "… new york"; Ahrefs, 7 Oct 2026), its English page says both (9 Oct 2026): "name" in the intro,
-# the "In short" answer, the search description and the first question, and in the heading too with "heading"; "title"
-# takes the place of its name in the page title. Washington DC needs none, as "DC" is already in its name.
+# the US against 1,000 for "… new york"; Ahrefs, 7 Oct 2026), its English page uses it (9 Oct 2026). The first mention gives
+# both, "New York (NYC)": in the heading with "heading", else in the intro. Later ones (the intro after such a heading, the
+# "In short" answer, the Near me line, the first question) say just the short name. The search description stands alone in
+# Google, so it gives both too. "title" puts the short name in place of the place's in the page title.
+# Washington DC needs none, as "DC" is already in its name.
 SEARCH_NAMES = {
-    "new-york": {"name": "New York (NYC)", "title": "NYC", "heading": True},
-    "san-francisco": {"name": "San Francisco (SF)"},
-    "los-angeles": {"name": "Los Angeles (LA)"},
+    "new-york": {"short": "NYC", "title": True, "heading": True},
+    "san-francisco": {"short": "SF"},
+    "los-angeles": {"short": "LA"},
 }
 
 
-def search_in(p):
-    """The place as an English sentence names it, with the shorter name people search for it by ("New York (NYC)")."""
-    return SEARCH_NAMES[p["id"]]["name"] if p["id"] in SEARCH_NAMES else in_sentence(p)
+def search_both(p):
+    """The place's first mention: our name with the short one people search ("New York (NYC)"), else just our name."""
+    return f"{in_sentence(p)} ({SEARCH_NAMES[p['id']]['short']})" if p["id"] in SEARCH_NAMES else in_sentence(p)
+
+
+def search_short(p):
+    """The place in later mentions: the short name people search ("NYC"), else our name."""
+    return SEARCH_NAMES[p["id"]]["short"] if p["id"] in SEARCH_NAMES else in_sentence(p)
+
+
+def search_intro(p):
+    """The place in the intro: the short name once the heading has introduced it, else both."""
+    return search_short(p) if SEARCH_NAMES.get(p["id"], {}).get("heading") else search_both(p)
+
+
+def search_heading(p):
+    return search_both(p) if SEARCH_NAMES.get(p["id"], {}).get("heading") else in_sentence(p)
 # The page's own section headings (common.js keys) swapped for ones naming the place, and the faq-words.json key for each.
 PILOT_HEADINGS = {"compareTitle": "hCompare", "mapTitle": "hMap", "starsTitle": "hStars", "methodTitle": "hMethod"}
 PILOT_NAMES = 6  # restaurants named in a sentence before it gives just the count
@@ -1418,7 +1433,7 @@ def short_answer(p, page, starred, lang):
         return ""
     k = FaqWords(page, lang)
     w, own = k.w, k.own
-    name = SEARCH_NAMES[p["id"]]["name"] if p["id"] in SEARCH_NAMES and lang == "en" else pick_lang(page, "name", lang)
+    name = SEARCH_NAMES[p["id"]]["short"] if p["id"] in SEARCH_NAMES and lang == "en" else pick_lang(page, "name", lang)
     say = lambda key, **v: k.say_html(key, name=e(name), checked=e(long_month(site.get("updated", ""), lang)), **v)
     price = lambda r, f: e(k.price(r, f, usd=False))
     by_stars = by_star_level(k, starred)
@@ -1990,7 +2005,7 @@ def page_titles(p, page, languages, starred):
         name_of = lambda o: next((o["name" + s] for s in sfxs if s and o.get("name" + s)), o["name"])
         name, where = name_of(p), page.get("inSentence" + sfx) or page["inSentence"]
         if lang == "en" and SEARCH_NAMES.get(p["id"], {}).get("title"):
-            name = where = SEARCH_NAMES[p["id"]]["title"]
+            name = where = SEARCH_NAMES[p["id"]]["short"]
         if country and name == p["name"]:
             # Only where the place reads as its bare name ("Limburg", "in Limburg"), not "Belgian Limburg" or "in Belgisch-Limburg".
             before = where[:-len(name)].strip() if where.endswith(name) else None

@@ -129,9 +129,10 @@ function applyStatic() {
   // Text written for this place in content/places replaces the general wording.
   // A place's own English opening (PAGE.lead, e.g. Boston's "Yes, one…") takes the general sentence's place.
   const intro = pick(PAGE, "intro"), lead = LANG === "en" && PAGE.lead;
-  // Places people search for by a shorter name (NYC, SF, LA: SEARCH_NAMES in build.py) give it in the English intro, NYC in the heading too.
+  // Places people search for by a shorter name (NYC, SF, LA: SEARCH_NAMES in build.py) introduce it in the English heading
+  // or intro, "New York (NYC)", and say just "NYC" after that.
   const searchIn = LANG === "en" && PAGE.searchIn ? { placeIn: PAGE.searchIn } : null;
-  if (searchIn && PAGE.searchHeading) document.querySelector('[data-i18n="heroTitle"]').innerHTML = t("heroTitle", searchIn);
+  if (searchIn) document.querySelector('[data-i18n="heroTitle"]').innerHTML = t("heroTitle", { placeIn: PAGE.searchHeading });
   if (intro || lead || searchIn) $("heroText").innerHTML = (lead ? esc(lead) : t("heroText", searchIn)) + (intro ? " " + esc(intro) : "");
   if (EMPTY) {
     const up = PAGE.crumbs.slice().reverse().find((c) => c.n);

@@ -638,7 +638,8 @@ def build_place(p):
     stars = [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)]
     menus = sorted((r for r in starred if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
     where = in_sentence(p)
-    description = p.get("description") or place_description(where, starred, stars, menus)
+    description = p.get("description") or place_description(where, starred, stars, menus) if p["id"] not in SEARCH_NAMES else \
+        p.get("description") or place_description(f"{where} ({SEARCH_NAMES[p['id']]})", starred, stars, menus)
     intro = page["intro"]
     lang_paths = {lang: lang_path(p["path"], lang) for lang in langs}
     for item in page["crumbs"] + [i for row in page["links"] for i in row["items"]]:
@@ -695,7 +696,9 @@ def build_place(p):
             for r in sorted(starred, key=lambda r: (-r["stars"], r["name"]))) + "</ol>"
         version = dict(data, lang=lang, langPaths=lang_paths) if len(langs) > 1 else data
         faq = destination_faq(p, page, starred, lang)
-        write(lang_paths[lang], section_words(render("place.html", {
+        pilot = p["id"] in SEO_PILOT
+        answer = quick_answer(p, page, starred, lang) if lang in QA_LANGS else ""
+        write(lang_paths[lang], (pilot_headings if pilot else lambda h, *a: h)(section_words(render("place.html", {
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
             "title": e(titles[lang]), "description": e(texts["description"]), "canonical": SITE_URL + lang_paths[lang],
             "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
@@ -706,9 +709,11 @@ def build_place(p):
                                  for c in langs) if len(langs) > 1 else "", "ledger": ledger, "data": as_json(version), "rowsScript": rows_script,
             "ogImage": og_image(p), "ogAlt": e(f"What a Michelin star costs in {where}" if lang == "en" else plain(texts["h1"])),
             "areas": areas_html(p, lang) if starred else "", "footPlaces": foot_places_html(lang, p["id"]),
-            "faq": faq_html(faq, lang), "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
+            "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
+            "answer": answer, "heroClass": "" if answer else " hero-wide", "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
+            "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq),
             "tiers": tiers_html(starred, currency, lang),
-        }), lang, page, starred))
+        }), lang, page, starred), page, lang))
 
 
 # A destination page's restaurants bigger than this (in characters) go in /data/places/<id>.js rather than the page.
@@ -1061,12 +1066,12 @@ def tiers_html(starred, currency, lang):
     return out
 
 
-def faq_html(faq, lang):
+def faq_html(faq, lang, title=None):
     if not faq:
         return ""
     w = dict(FAQ_WORDS["en"], **FAQ_WORDS.get(lang, {}))
     return ('<section id="faq">\n    <div class="wrap">\n      <div class="section-head"><div>'
-            f'<span class="eyebrow">{e(w["eyebrow"])}</span><h2 style="margin-top: 6px">{e(w["title"])}</h2></div></div>\n'
+            f'<span class="eyebrow">{e(w["eyebrow"])}</span><h2 style="margin-top: 6px">{e(title or w["title"])}</h2></div></div>\n'
             '      <div class="faq">' + "".join(f'<div><h3>{e(q)}</h3><p>{e(a)}</p></div>' for q, a in faq) + "</div>\n    </div>\n  </section>\n")
 
 
@@ -1105,6 +1110,359 @@ def areas_html(p, lang):
     return ('<section id="areas">\n    <div class="wrap">\n      <div class="section-head"><div>'
             f'<span class="eyebrow">{e(word(lang, "explore", {}))}</span><h2 style="margin-top: 6px">{e(w["areasTitle"])}</h2></div></div>\n'
             '      <ul class="area-links">' + "".join(item(q) for q in inside) + "</ul>\n    </div>\n  </section>\n")
+
+
+# ---------- SEO pilot (7 Oct 2026) ----------
+# New parts of a destination page, tried on these places first so the owner can see them before every page gets
+# them: a short answer under the title, section headings that say what the page is about, and lists worked out from
+# the restaurants (by star level, the cheapest meals, the latest guide's changes, by cuisine, dietary needs).
+# English only for now; the wording is in src/faq-words.json ("en"), ready for other languages.
+SEO_PILOT = ()  # in preview: ("london", "new-york"), waiting for the owner's look before it goes live
+# Languages whose pages show the "In short" answer at the top of the hero's right-hand column (every destination page,
+# 9 Oct 2026). Pages in other languages have no answer yet, so their hero runs the heading full width (.hero-wide).
+QA_LANGS = ("en",)
+# The short names people search for a place by ("michelin star restaurants nyc"), worked into its answer and description.
+SEARCH_NAMES = {}  # in preview: {"new-york": "NYC"}, with the pilot
+# The page's own section headings (common.js keys) swapped for ones naming the place, and the faq-words.json key for each.
+PILOT_HEADINGS = {"compareTitle": "hCompare", "mapTitle": "hMap", "starsTitle": "hStars", "methodTitle": "hMethod"}
+PILOT_NAMES = 6  # restaurants named in a sentence before it gives just the count
+
+
+def pilot_words(lang):
+    return dict(FAQ_WORDS["en"], **FAQ_WORDS.get(lang, {}))
+
+
+def long_month(ym, lang):
+    """"February 2026" in English (headings read better with the whole month); other languages as month_year()."""
+    if lang == "en" and re.fullmatch(r"\d{4}-\d{2}", ym or ""):
+        return f"{MONTH_NAMES[int(ym[5:]) - 1]} {ym[:4]}"
+    return month_year(ym, lang)
+
+
+def long_date(d, lang):
+    """"9 February 2026" in English; other languages as month_year()."""
+    if lang == "en" and re.fullmatch(r"\d{4}-\d{2}-\d{2}", d or ""):
+        return f"{int(d[8:])} {MONTH_NAMES[int(d[5:7]) - 1]} {d[:4]}"
+    return month_year((d or "")[:7], lang)
+
+
+def say_in(w, key, page, **values):
+    values.setdefault("in", "in " + page["inSentence"])
+    values.setdefault("name", page["name"])
+    text = re.sub(r"\{(\w+)\}", lambda m: str(values.get(m.group(1), m.group(0))), w[key])
+    return text[:1].upper() + text[1:]
+
+
+def priced(r, f, usd=True):
+    """A price in its own currency, with US dollars beside it when it's another currency."""
+    text = money(r[f], r["cur"])
+    if usd and r["cur"] != "USD":
+        text += f" (≈ US${int(round(r[f] / CURRENCIES[r['cur']]['perUSD'] / 5) * 5):,})"
+    return text
+
+
+def is_menu(r, f):
+    return r.get(f) is not None and r.get(f + "Type", "menu") == "menu"
+
+
+def to_usd(r, f):
+    return r[f] / CURRENCIES[r["cur"]]["perUSD"]
+
+
+def and_names(items, w):
+    """"A, B and C" (with the language's own "and"), already escaped."""
+    items = list(items)
+    if len(items) < 2:
+        return "".join(items)
+    return w["sep"].join(items[:-1]) + e(w["and3" if len(items) > 2 else "and"]) + items[-1]
+
+
+NUMBER_WORDS = ("one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
+
+
+def n_word(k, lang):
+    """Small counts as words in English running text ("six three-star restaurants"), digits otherwise."""
+    return NUMBER_WORDS[k - 1] if lang == "en" and 1 <= k <= 9 else str(k)
+
+
+def and_plain(items, w):
+    """"A, B and C" without the serial comma, for short words (star levels, diets)."""
+    items = list(items)
+    return items[0] if len(items) == 1 else ", ".join(items[:-1]) + w["and"] + items[-1]
+
+
+def plain_names(rs, w):
+    return and_names((e(r["name"]) for r in rs), w)
+
+
+def most_stars(rs):
+    """The restaurants with the most stars, by name."""
+    top = max(r["stars"] for r in rs)
+    return sorted((r for r in rs if r["stars"] == top), key=lambda r: r["name"].lower())
+
+
+def busiest_areas(rs, w):
+    """The areas with two or more, up to three, most first: [(count, area)]."""
+    counts = {}
+    for r in rs:
+        area = (r.get("area") or "").split(",")[0].strip()
+        if area:
+            counts[area] = counts.get(area, 0) + 1
+    return sorted(((k, a) for a, k in counts.items() if k > 1), key=lambda x: (-x[0], x[1]))[:3]
+
+
+def cheapest_meal(rs):
+    """The cheapest set menu among some restaurants, lunch or dinner: (restaurant, "lunch" or "dinner"), or None."""
+    meals = [(to_usd(r, f), r["name"], r, f) for f in ("lunch", "dinner") for r in rs if is_menu(r, f)]
+    return min(meals)[2:] if meals else None
+
+
+def ceremony_guide(p):
+    """The MICHELIN Guide whose ceremony gives a place its stars (ceremony_guides(), from content/ceremonies.json)."""
+    return next((g for g in ceremony_guides() if set(g.get("places", [])) & set(chain(p["id"]))), None)
+
+
+def quick_answer(p, page, starred, lang):
+    """The 40–50 word answer beside the page title: how many, split by stars, what dinner costs and the cheapest way in."""
+    if not starred:
+        return ""
+    w = pilot_words(lang)
+    name = page["name"] + (f" ({SEARCH_NAMES[p['id']]})" if p["id"] in SEARCH_NAMES else "")
+    tiers = [(s, sum(1 for r in starred if r["stars"] == s)) for s in (3, 2, 1)]
+    tiers = [(s, k) for s, k in tiers if k]
+    checked = long_month(site.get("updated", ""), lang)
+    if len(starred) == 1:
+        r = starred[0]
+        out = [say_in(w, "qaCountOne", page, name=e(name), r=e(r["name"]), stars=w["qaStars" + str(r["stars"])], checked=checked)]
+    else:
+        if len(tiers) == 1:
+            out = [say_in(w, "qaCountAll", page, name=e(name), n=len(starred), checked=checked,
+                          split=w[("qaBoth" if len(starred) == 2 else "qaAll") + str(tiers[0][0])])]
+        else:
+            split = e(and_plain((w[("qaFirst" if i == 0 else "qaThen") + str(s)].replace("{n}", str(k)) for i, (s, k) in enumerate(tiers)), w))
+            out = [say_in(w, "qaCount", page, name=e(name), n=len(starred), split=split, checked=checked)]
+    dinners = sorted((r for r in starred if is_menu(r, "dinner")), key=lambda r: to_usd(r, "dinner"))
+    if len(dinners) >= 3:
+        out.append(say_in(w, "qaPrice", page, lo=priced(dinners[0], "dinner", False), hi=priced(dinners[-1], "dinner", False),
+                          mid=priced(dinners[len(dinners) // 2], "dinner", False)))
+    best = cheapest_meal(starred)
+    if best:
+        r, f = best
+        key = ("qaOnly" if len(starred) == 1 else "qaCheap") + ("Lunch" if f == "lunch" else "Dinner")
+        out.append(say_in(w, key, page, r=e(r["name"]), price=priced(r, f, False)))
+    return f'<p class="answer"><span class="answer-label">{e(w["qaLabel"])}</span> ' + " ".join(out) + "</p>"
+
+
+def pilot_sections(p, page, starred, lang):
+    """The new sections, written into the page after "What each extra Michelin star costs": short paragraphs worked out
+    from the restaurants, naming a few rather than listing them all (the list above has every one)."""
+    if not starred:
+        return ""
+    w = pilot_words(lang)
+    say = lambda key, **v: say_in(w, key, page, **{k: (n_word(x, lang) if isinstance(x, int) else x) for k, x in v.items()})
+    tier_word = lambda s: w["tierWord" + str(s)]
+
+    def section(sid, eyebrow, title, text, body):
+        return (f'<section id="{sid}">\n    <div class="wrap">\n      <div class="section-head"><div>'
+                f'<span class="eyebrow">{e(eyebrow)}</span><h2 style="margin-top: 6px">{e(title)}</h2>'
+                + (f"<p>{text}</p>" if text else "") + "</div></div>\n      " + body + "\n    </div>\n  </section>\n")
+
+    def card(title, count, paragraphs, extra=""):
+        head = f'<h3>{e(title)}' + (f' <span class="count">{count}</span>' if count is not None else "") + "</h3>"
+        return "<div>" + head + "".join(f"<p>{t}</p>" for t in paragraphs if t) + extra + "</div>"
+
+    # The latest guide's changes, used by the star levels and the latest-guide section.
+    dated = [r for r in members(p) if r.get("changeDate") and (r.get("change") or r.get("status") in ("lost", "closed"))]
+    latest = max((r["changeDate"] for r in dated), default="")
+    when = long_month(latest, lang) if latest else ""
+    now = [r for r in dated if r["changeDate"] == latest]
+    out = []
+
+    # Star by star: for each level, how many, what dinner and lunch cost, the wine pairings, where they are and what's new.
+    cards = []
+    for s in (3, 2, 1):
+        rs = sorted((r for r in starred if r["stars"] == s), key=lambda r: r["name"].lower())
+        if not rs:
+            continue
+        k = len(rs)
+        count = e(say("lvCountOne" if k == 1 else "lvCount", k=k, tier=tier_word(s)))
+        # The three-star count links to the place's three-star guide, where there is one: the one link in this section.
+        guide = f"three-michelin-star-restaurants-{p['id']}"
+        if s == 3 and guide in guides:
+            phrase = e(w["lvTierPhrase"].replace("{k}", n_word(k, lang)).replace("{tier}", tier_word(s)))
+            count = count.replace(phrase, f'<a href="/guides/{guide}/">{phrase}</a>', 1)
+        text = [count + (": " + plain_names(rs, w) if 1 < k <= PILOT_NAMES else (", " + e(rs[0]["name"]) if k == 1 else "")) + "."]
+        menus = sorted((r for r in rs if is_menu(r, "dinner")), key=lambda r: to_usd(r, "dinner"))
+        if len(menus) >= 2:
+            sentence = say("lvRange", lo=e(money(menus[0]["dinner"], menus[0]["cur"])), rlo=e(menus[0]["name"]),
+                           hi=e(money(menus[-1]["dinner"], menus[-1]["cur"])), rhi=e(menus[-1]["name"]))
+            if len(menus) >= 5:
+                sentence += e(w["lvMid"].replace("{mid}", money(menus[len(menus) // 2]["dinner"], menus[0]["cur"])))
+            text.append(sentence + ".")
+        elif menus:
+            text.append(say("lvOnePrice", lo=e(money(menus[0]["dinner"], menus[0]["cur"]))))
+        lunches = sorted((r for r in rs if is_menu(r, "lunch")), key=lambda r: to_usd(r, "lunch"))
+        if lunches:
+            text.append(say("lvLunchSolo" if k == 1 else "lvLunchAll" if len(lunches) == k else "lvLunchOne" if len(lunches) == 1 else "lvLunch",
+                            k=len(lunches), lo=e(money(lunches[0]["lunch"], lunches[0]["cur"])), r=e(lunches[0]["name"])))
+        elif k > 1:
+            text.append(say("lvNoLunch"))
+        wines = sorted(r["wine"] for r in rs if r.get("wine") is not None and r["cur"] == rs[0]["cur"])
+        if len(wines) >= 2:
+            text.append(say("lvWine", lo=e(money(wines[0], rs[0]["cur"])), hi=e(money(wines[-1], rs[0]["cur"]))))
+        if k >= 4:
+            areas = busiest_areas(rs, w)
+            if len(areas) == 1:
+                text.append(say("lvAreaOne", k=areas[0][0], area=e(areas[0][1])))
+            elif areas:
+                text.append(say("lvAreas", areas=and_names((f"{e(a)} ({k})" for k, a in areas), w)))
+        moved = [r for r in now if r in rs and r.get("change") in ("new", "up")]
+        if moved:
+            text.append(say("lvNew", when=when, names=plain_names(moved, w)))
+        cards.append(card(say("lv" + str(s)), k, [" ".join(text)]))
+    out.append(section("levels", w["lvEyebrow"], say("lvTitle"), "", '<div class="facts">' + "".join(cards) + "</div>"))
+
+    # The cheapest meals: a sentence on lunch and the cheapest way into each level, then each restaurant's cheapest set menu.
+    best = {}
+    for f in ("lunch", "dinner"):
+        for r in starred:
+            if is_menu(r, f) and (r["id"] not in best or to_usd(r, f) < to_usd(*best[r["id"]])):
+                best[r["id"]] = (r, f)
+    cheap = sorted(best.values(), key=lambda b: to_usd(*b))[:8]
+    if len(cheap) >= 3:
+        text = [say("chText")]
+        both = [r for r in starred if is_menu(r, "lunch") and is_menu(r, "dinner")]
+        lower = [r for r in both if r["lunch"] < r["dinner"]] if len({r["cur"] for r in both}) == 1 else []
+        if len(lower) >= 3:
+            save = sum(r["dinner"] - r["lunch"] for r in lower) / len(lower)
+            text.append(say("chLunch", k=len(lower), n=len(both), save=money(int(round(save / 5) * 5), lower[0]["cur"])))
+        for s in (3, 2):
+            top = cheapest_meal([r for r in starred if r["stars"] == s])
+            if top:
+                r, f = top
+                text.append(say("chTop", tier=tier_word(s), meal=w["mealLunch" if f == "lunch" else "mealDinner"], r=r["name"], price=priced(r, f)))
+        stars = lambda r: f'<span class="stars" aria-label="{e(word_n(lang, "starsAria", r["stars"]))}">' + '<svg><use href="#star"/></svg>' * r["stars"] + "</span>"
+        note = lambda r, f: pick_lang(r, f + "Note", lang)
+        rows = "".join(f'<tr><td><span class="vt-name">{e(r["name"])}</span> {stars(r)}' + (f'<small>{e(note(r, f))}</small>' if note(r, f) else "") + "</td>"
+                       f'<td>{e(w["chLunchWord" if f == "lunch" else "chDinnerWord"])}</td><td class="num">{e(priced(r, f))}</td></tr>'
+                       for r, f in cheap)
+        table = (f'<table class="value-table"><thead><tr><th>{e(w["chRestaurant"])}</th><th>{e(w["chMeal"])}</th>'
+                 f'<th class="num">{e(w["chPrice"])}</th></tr></thead><tbody>{rows}</tbody></table>')
+        out.append(section("cheapest", w["chEyebrow"], say("chTitle"), e(" ".join(text)), table))
+
+    # The latest guide: what changed, then when the stars are announced (content/ceremonies.json).
+    cards = []
+    if now:
+        group = lambda test: sorted((r for r in now if test(r)), key=lambda r: (-r["stars"], r["name"].lower()))
+        new = group(lambda r: r.get("change") == "new" and not r.get("status"))
+        up = group(lambda r: r.get("change") == "up" and not r.get("status"))
+        down = group(lambda r: r.get("change") == "down" and not r.get("status"))
+        lost = group(lambda r: r.get("status") in ("lost", "closed"))
+        text = []
+        if new:
+            names = plain_names(new, w) if len(new) <= 10 else plain_names(new[:10], w) + e(w["pMore"].replace("{m}", str(len(new) - 10)))
+            text.append(say("nwNewOne" if len(new) == 1 else "nwNewText", when=when, k=len(new), names=names))
+        if up:
+            levels = [(st, [r for r in up if r["stars"] == st]) for st in (3, 2)]
+            text.append(say("nwUpText", names=and_plain([e(w["nwTo"].replace("{stars}", w["star" + str(st)])).replace("{r}", plain_names(rs, w))
+                                                         for st, rs in levels if rs], w)))
+        if down:
+            text.append(say("nwDownOne" if len(down) == 1 else "nwDownText", names=plain_names(down, w)))
+        if lost:
+            text.append(say("nwLostOne" if len(lost) == 1 else "nwLostText", names=plain_names(lost, w)))
+        if not (new or up or down or lost):
+            text.append(say("nwNone", when=when))
+        cards.append(card(say("nwWhat", when=when), None, [" ".join(text)]))
+    g = ceremony_guide(p)
+    if g and g.get("last"):
+        last = g["last"]
+        text = [say("cerText", guide=e(g["name"]), usual=e(g["usual"]))]
+        key = "cerLastOnline" if last.get("online") else "cerLast" if last.get("where") else "cerLastNoPlace"
+        text.append(say(key, date=long_date(last["date"], lang), where=e(last.get("where", ""))))
+        if g["status"]:
+            text.append(say("cerUpdating"))
+        nxt = g.get("coming")
+        if nxt:
+            text.append(say("cerNext" if nxt.get("where") else "cerNextNoPlace", date=long_date(nxt["date"], lang), where=e(nxt.get("where", ""))))
+        elif g.get("due"):
+            text.append(say("cerDue", month=long_month(g["due"][:7], lang)))
+        if g.get("note"):
+            text.append(e(g["note"]))
+        # Every guide's dates are on the ceremony dates guide, its row for this one marked #cer-<id>.
+        if "michelin-guide-ceremony-dates" in guides:
+            text.append(e(w["cerAll"]).replace("{link}", f'<a href="/guides/michelin-guide-ceremony-dates/#cer-{e(g["id"])}">{e(w["cerAllLink"])}</a>'))
+        past = [last] + [c for c in g.get("ceremonies", []) if c is not last and c.get("date") != last["date"]]
+        rows = "".join(f'<li>{long_date(c["date"], lang)}'
+                       + (" · " + e(w["cerOnline"]) if c.get("online") else " · " + e(re.sub(r"^the ", "", c["where"])) if c.get("where") else "") + "</li>"
+                       for c in past[:4])
+        cards.append(card(say("cerTitle"), None, [" ".join(text)], f'<p class="past-label">{e(w["cerPast"])}</p><ul class="past">{rows}</ul>'))
+    if cards:
+        title = say("nwTitle", when=when) if now else say("cerTitle")
+        out.append(section("latest", w["nwEyebrow"], title, "", '<div class="facts">' + "".join(cards) + "</div>"))
+
+    # By cuisine, as the MICHELIN Guide names them: a line on each with two or more, then the rest by name.
+    cuisines = {}
+    for r in starred:
+        cuisines.setdefault(cuisine_in(r, lang), []).append(r)
+    many = sorted(((c, rs) for c, rs in cuisines.items() if len(rs) > 1), key=lambda c: (-len(c[1]), c[0]))
+    if many:
+        def cuisine_card(c, rs):
+            top = most_stars(rs)
+            text = [say("cuTop", names=plain_names(top[:3], w) + (e(w["pMore"].replace("{m}", str(len(top) - 3))) if len(top) > 3 else ""),
+                        stars=w["star" + str(top[0]["stars"])]) if top[0]["stars"] > 1 else say("cuAllTwo" if len(rs) == 2 else "cuAllOne", k=len(rs))]
+            meal = cheapest_meal(rs)
+            if meal and len(rs) > 1:
+                r, f = meal
+                text.append(say("cuCheap", meal=w["mealLunch" if f == "lunch" else "mealDinner"], r=e(r["name"]), price=e(money(r[f], r["cur"]))))
+            # A cuisine with its own guide here (Indian in London) links to it, the one link in this section.
+            guide = "michelin-star-" + c.lower().replace(" ", "-") + "-restaurants-" + p["id"]
+            if guide in guides:
+                text.append(e(w["cuGuide"]).replace("{link}", '<a href="/guides/' + guide + '/">' + e(guides[guide]["h1"]) + "</a>"))
+            return card(c, len(rs), [" ".join(text)])
+        single = sorted(c for c, rs in cuisines.items() if len(rs) == 1)
+        top3 = and_names((f"{e(c)} ({len(rs)})" for c, rs in many[:3]), w)
+        intro = e(say("cuIntro", k=len(cuisines))) + " " + say("cuMost", top=top3)
+        also = f'<p class="also">{e(say("cuAlso", list=", ".join(single)))}</p>' if single else ""
+        out.append(section("cuisines", w["cuEyebrow"], say("cuTitle"), intro, '<div class="facts">' + "".join(cuisine_card(c, rs) for c, rs in many[:6]) + "</div>" + also))
+
+    # Dietary needs, from the MICHELIN Guide's listings: vegetarian, vegan, then halal and kosher (which mean "on request").
+    has = lambda d: sorted((r for r in starred if d in r.get("diets", [])), key=lambda r: (-r["stars"], r["name"].lower()))
+    first = lambda rs: plain_names(rs[:3], w)
+    cards, kinds = [], []
+    only, menu, vegan, halal, kosher = has("vegetarian-only"), has("vegetarian-menu"), has("vegan"), has("halal"), has("kosher")
+    text = []
+    if only:
+        text.append(say("dtOnlyOne" if len(only) == 1 else "dtOnlyMany", k=len(only), names=plain_names(only, w)))
+    if menu:
+        text.append(say("dtMenuOne" if len(menu) == 1 else "dtMenuText", k=len(menu), n=len(starred), names=first(menu)))
+    if text:
+        kinds.append(w["dtWordVeg"])
+        cards.append(card(w["dtVegTitle"], None, [" ".join(text)]))
+    if vegan:
+        kinds.append(w["dtWordVegan"])
+        cards.append(card(w["dtVeganTitle"], None, [say("dtVeganOne" if len(vegan) == 1 else "dtVeganText", k=len(vegan), n=len(starred), names=first(vegan))]))
+    text = []
+    if halal:
+        kinds.append(w["dtWordHalal"])
+        text.append(say("dtHalalOne" if len(halal) == 1 else "dtHalalText", k=len(halal), names=first(halal)))
+    if kosher:
+        kinds.append(w["dtWordKosher"])
+        text.append(say("dtKosherOne" if len(kosher) == 1 else "dtKosherText", k=len(kosher), names=first(kosher)))
+    if text:
+        cards.append(card(w["dtFaithTitle"] if halal and kosher else w["dtHalalTitle"] if halal else w["dtKosherTitle"], None, [" ".join(text + [say("dtCertNote")])]))
+    if cards:
+        out.append(section("diets", w["dtEyebrow"], say("dtTitle", diets=and_plain(kinds, w)),
+                           e(say("dtText")), '<div class="facts">' + "".join(cards) + "</div>"))
+    return "".join(out)
+
+
+def pilot_headings(html_text, page, lang):
+    """The pilot pages' section headings, naming the place. Written in without data-i18n, so common.js leaves them be."""
+    w = pilot_words(lang)
+    for key, own in PILOT_HEADINGS.items():
+        html_text = re.sub(r'(<h2\b[^>]*?)\sdata-i18n="' + key + r'"([^>]*>)[^<]*(</h2>)',
+                           lambda m: m.group(1) + m.group(2) + e(say_in(w, own, page)) + m.group(3), html_text)
+    return html_text
 
 
 # The footer's popular destinations, on every page: the biggest and most searched-for places, one click from anywhere.

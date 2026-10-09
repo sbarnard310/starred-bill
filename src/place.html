@@ -70,19 +70,22 @@
   </div>
 </div>
 
-<div class="hero" id="top">
+<div class="hero{{heroClass}}" id="top">
   <div class="wrap">
-    <div>
+    <div class="hero-text">
       <span class="eyebrow" style="color: var(--band-muted)" data-i18n="heroEyebrow">{{eyebrow}}</span>
       <h1 style="margin-top: 12px" data-i18n="heroTitle">{{h1}}</h1>
       <p data-i18n="heroText" id="heroText">{{heroText}}</p>
       {{nearLine}}
       <div class="explore" id="explore">{{explore}}</div>
     </div>
-    <div class="figures" aria-live="polite">
-      <div class="figure"><div class="label" data-i18n="figCount"></div><div class="value" id="fCount">0</div><div class="sub" id="fCountSub"></div></div>
-      <div class="figure"><div class="label" data-i18n="figMin"></div><div class="value" id="fMin">–</div><div class="sub" id="fMinSub"></div></div>
-      <div class="figure"><div class="label" data-i18n="figMax"></div><div class="value" id="fMax">–</div><div class="sub" id="fMaxSub"></div></div>
+    <div class="hero-side">
+      {{answer}}
+      <div class="figures" aria-live="polite">
+        <div class="figure"><div class="label" data-i18n="figCount"></div><div class="value" id="fCount">0</div><div class="sub" id="fCountSub"></div></div>
+        <div class="figure"><div class="label" data-i18n="figMin"></div><div class="value" id="fMin">–</div><div class="sub" id="fMinSub"></div></div>
+        <div class="figure"><div class="label" data-i18n="figMax"></div><div class="value" id="fMax">–</div><div class="sub" id="fMaxSub"></div></div>
+      </div>
     </div>
   </div>
 </div>
@@ -194,6 +197,7 @@
     </div>
   </section>
 
+  {{pilot}}
   <section id="method">
     <div class="wrap">
       <div class="section-head">

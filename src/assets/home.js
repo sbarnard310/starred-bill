@@ -56,8 +56,9 @@ function renderNoStars() {
   if (!n) { $("noStars").innerHTML = ""; return; }
   const coll = new Intl.Collator(locale());
   const noted = regions.flatMap((g) => g.countries.filter((c) => c.note)).sort((a, b) => coll.compare(pick(a, "name"), pick(b, "name")));
-  // A country with its own explainer (content/guides) links to it.
-  const named = (c) => c.guide ? '<a href="/guides/' + esc(c.guide) + '/">' + esc(pick(c, "name")) + "</a>" : esc(pick(c, "name"));
+  // A country with its own explainer (content/guides) links to it, or to its section of a round-up ("id#section").
+  const guideHref = (g) => "/guides/" + esc(g.split("#")[0]) + "/" + (g.includes("#") ? "#" + esc(g.split("#")[1]) : "");
+  const named = (c) => c.guide ? '<a href="' + guideHref(c.guide) + '">' + esc(pick(c, "name")) + "</a>" : esc(pick(c, "name"));
   $("noStars").innerHTML = '<details class="dest-more nostar-all"><summary>' + esc(t("noStarsTitle")) + ' <span class="count">' + n + "</span></summary>" +
     '<p class="nostar-intro">' + esc(t("noStarsText", { n })) + "</p>" +
     '<div class="nostar-notes">' + noted.map((c) => '<p><strong>' + named(c) + "</strong> " + esc(pick(c, "note")) + "</p>").join("") + "</div>" +

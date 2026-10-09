@@ -2348,6 +2348,9 @@ def no_star_countries():
     clash = sorted(c["name"] for g in data["regions"] for c in g["countries"] if c["name"] in starred)
     if clash:
         print("  These countries now have Michelin stars, so delete them from content/no-stars.json:", ", ".join(clash))
+    lost = sorted(c["name"] for g in data["regions"] for c in g["countries"] if c.get("guide") and c["guide"].split("#")[0] not in guides)
+    if lost:
+        print("  These countries in content/no-stars.json link to a guide that doesn't exist (check its `guide`):", ", ".join(lost))
     return [dict(g, countries=[c for c in g["countries"] if c["name"] not in starred]) for g in data["regions"]]
 
 
@@ -2960,6 +2963,22 @@ def list_stats(live, year):
         out[f"in_{key}"], out[f"n3_{key}"] = f"{sum(c):,}", str(c[2])
         parts = [f"{n:,} {w}-star" for n, w in zip(c, ("one", "two", "three")) if n]
         out[f"split_{key}"] = parts[0] if len(parts) == 1 else ", ".join(parts[:-1]) + " and " + parts[-1]
+    # The same for every place (city, region, state), e.g. {{in_vancouver}}, {{split_las_vegas}}, plus {{from_<id>}}: its
+    # cheapest dinner tasting menu with the restaurant's name, "St. Lawrence, C$135 (about $100)" (the "nearest stars" lines).
+    inside = {}
+    for r in live:
+        for pid in chain(r["city"]):
+            inside.setdefault(pid, []).append(r)
+    for pid, rows in inside.items():
+        c = [sum(1 for r in rows if r["stars"] == n) for n in (1, 2, 3)]
+        key = pid.replace("-", "_")
+        out[f"in_{key}"], out[f"n3_{key}"] = f"{sum(c):,}", str(c[2])
+        parts = [f"{n:,} {w}-star" for n, w in zip(c, ("one", "two", "three")) if n]
+        out[f"split_{key}"] = parts[0] if len(parts) == 1 else ", ".join(parts[:-1]) + " and " + parts[-1]
+        menus = sorted((r for r in rows if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=usd)
+        if menus:
+            r = menus[0]
+            out[f"from_{key}"] = f'{r["name"]}, {money(r["dinner"], r["cur"])}' + ("" if r["cur"] == "USD" else f" (about {usd_text(usd(r))})")
     out["ukTotal"] = f"{sum(1 for r in live if r['country'] == 'uk'):,}"
     out["londonTotal"] = str(sum(1 for r in live if in_london(r)))
     us = [r for r in live if r["country"] == "usa"]

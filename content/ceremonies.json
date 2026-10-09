@@ -501,6 +501,21 @@
       ]
     },
     {
+      "id": "saudi-arabia",
+      "name": "MICHELIN Guide Saudi Arabia",
+      "places": [],
+      "guide": "michelin-star-restaurants-saudi-arabia",
+      "showName": "Saudi Arabia",
+      "continent": "middle-east",
+      "usual": "October to December (first edition)",
+      "note": "The first selection, for Riyadh, Jeddah and AlUla, gave Bib Gourmands but no stars.",
+      "checked": "2026-10",
+      "starsUpdated": "2025-12-15",
+      "ceremonies": [
+        {"date": "2025-12-15", "online": true, "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/saudi-arabia-inaugural-michelin-guide-restaurant-selection"}
+      ]
+    },
+    {
       "id": "northeast-cities",
       "name": "MICHELIN Guide Northeast Cities",
       "places": ["new-york-state", "illinois", "washington-dc", "virginia", "massachusetts", "pennsylvania"],
@@ -591,6 +606,18 @@
       "ceremonies": [
         {"date": "2026-08-26", "where": "Fontainebleau Las Vegas", "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-reveals-first-ever-southwest-restaurant-selection-in-the-u-s"}
       ]
+    },
+    {
+      "id": "great-lakes",
+      "name": "MICHELIN Guide American Great Lakes",
+      "places": [],
+      "guide": "michelin-star-restaurants-indianapolis",
+      "showName": "American Great Lakes (Cleveland, Detroit, Indianapolis, Milwaukee, Minneapolis, Pittsburgh)",
+      "continent": "americas",
+      "usual": "April (first edition)",
+      "checked": "2026-10",
+      "next": {"date": "2027-04-21", "where": "Michigan Central, Detroit", "source": "https://guide.michelin.com/us/en/event/american-great-lakes-to-join-the-global-culinary-map-with-new-michelin-guide-edition"},
+      "ceremonies": []
     },
     {
       "id": "toronto",

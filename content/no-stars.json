@@ -1,5 +1,5 @@
 {
-  "about": "Countries (UN members) with no Michelin-starred restaurant, shown on the homepage under the country cards. Unless a note says otherwise, the reason is that the MICHELIN Guide doesn't cover the country. When a country gains a star, delete it here (the build warns if a country is in both lists). A country can also name a `guide` (the id of a page in content/guides) to link its name to it.",
+  "about": "Countries (UN members) with no Michelin-starred restaurant, shown on the homepage under the country cards. Unless a note says otherwise, the reason is that the MICHELIN Guide doesn't cover the country. When a country gains a star, delete it here (the build warns if a country is in both lists). A country can also name a `guide` (the id of a page in content/guides) to link its name to it, or `id#section` for its section of a round-up (e.g. countries-without-michelin-stars#pakistan).",
   "regions": [
     {
       "name": "Africa",
@@ -67,7 +67,8 @@
         },
         {
           "name": "Egypt",
-          "nameZh": "埃及"
+          "nameZh": "埃及",
+          "guide": "countries-without-michelin-stars#egypt"
         },
         {
           "name": "Equatorial Guinea",
@@ -107,7 +108,8 @@
         },
         {
           "name": "Kenya",
-          "nameZh": "肯亞"
+          "nameZh": "肯亞",
+          "guide": "countries-without-michelin-stars#kenya"
         },
         {
           "name": "Lesotho",
@@ -159,7 +161,8 @@
         },
         {
           "name": "Nigeria",
-          "nameZh": "奈及利亞"
+          "nameZh": "奈及利亞",
+          "guide": "countries-without-michelin-stars#nigeria"
         },
         {
           "name": "Rwanda",
@@ -376,7 +379,8 @@
         },
         {
           "name": "Bangladesh",
-          "nameZh": "孟加拉"
+          "nameZh": "孟加拉",
+          "guide": "countries-without-michelin-stars#bangladesh"
         },
         {
           "name": "Bhutan",
@@ -399,7 +403,10 @@
         },
         {
           "name": "Indonesia",
-          "nameZh": "印尼"
+          "nameZh": "印尼",
+          "guide": "michelin-star-restaurants-indonesia",
+          "note": "No restaurant guide, though Michelin rates Indonesian hotels: 47 hold MICHELIN Keys in 2026, most of them in Bali.",
+          "noteZh": "尚無餐廳指南，但米其林為印尼酒店評級：2026 年有 47 家獲米其林鑰匙，多數位於峇里島。"
         },
         {
           "name": "Iran",
@@ -451,7 +458,8 @@
         },
         {
           "name": "Nepal",
-          "nameZh": "尼泊爾"
+          "nameZh": "尼泊爾",
+          "guide": "countries-without-michelin-stars#nepal"
         },
         {
           "name": "North Korea",
@@ -463,13 +471,15 @@
         },
         {
           "name": "Pakistan",
-          "nameZh": "巴基斯坦"
+          "nameZh": "巴基斯坦",
+          "guide": "countries-without-michelin-stars#pakistan"
         },
         {
           "name": "Saudi Arabia",
           "nameZh": "沙烏地阿拉伯",
           "note": "The MICHELIN Guide arrived in 2025, covering Riyadh, Jeddah and AlUla, with Bib Gourmands and recommended restaurants but no stars yet.",
-          "noteZh": "米其林指南於 2025 年進駐，涵蓋利雅德、吉達與歐拉，目前有必比登推介與入選餐廳，但尚未頒發星級。"
+          "noteZh": "米其林指南於 2025 年進駐，涵蓋利雅德、吉達與歐拉，目前有必比登推介與入選餐廳，但尚未頒發星級。",
+          "guide": "michelin-star-restaurants-saudi-arabia"
         },
         {
           "name": "Sri Lanka",
@@ -543,7 +553,8 @@
         },
         {
           "name": "Romania",
-          "nameZh": "羅馬尼亞"
+          "nameZh": "羅馬尼亞",
+          "guide": "countries-without-michelin-stars#romania"
         },
         {
           "name": "Russia",

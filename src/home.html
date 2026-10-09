@@ -90,6 +90,8 @@ window.homeData = fetch("{{homeUrl}}").then((res) => { if (!res.ok) throw new Er
         </label>
         <ul class="results" id="results" hidden></ul>
       </div>
+      <div class="home-cur"><span id="homeCurLabel">Prices in</span><div class="hseg" role="group" aria-labelledby="homeCurLabel" id="homeCur"></div>
+        <span class="cur-note">Converted prices (≈) use exchange rates of {{rateDate}}.</span></div>
       <div class="figures" aria-live="polite">
         <div class="figure"><div class="label" data-i18n="figRestaurants"></div><div class="value" id="fRestaurants">0</div><div class="sub" id="fRestaurantsSub"></div></div>
         <div class="figure"><div class="label" data-i18n="figDestinations"></div><div class="value" id="fDest">0</div><div class="sub" id="fDestSub"></div></div>

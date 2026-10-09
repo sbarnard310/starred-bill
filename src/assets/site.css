@@ -696,6 +696,10 @@ button.crow-from { background: none; border: 0; padding: 0; font: inherit; font-
    in build.py; home.js shows one at random and steps through the rest). */
 .home-hero .wrap { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: center; }
 .home-hero .figures { margin-top: 28px; max-width: 560px; }
+/* "Prices in": the currency every price on the homepage shows in (renderCurrency() in home.js). */
+.home-cur { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-top: 16px; font-size: .85rem; color: var(--band-muted); }
+.home-cur > span:first-child { font-weight: 600; }
+.home-cur .cur-note { flex-basis: 100%; font-size: .76rem; }
 .home-sample { justify-self: end; width: 100%; max-width: 360px; display: grid; gap: 10px; }
 .sample-label { margin: 0; font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--band-muted); }
 .sample { margin: 0; display: grid; gap: 10px; }
@@ -763,10 +767,13 @@ button.crow-from { background: none; border: 0; padding: 0; font: inherit; font-
   .home .home-hero .wrap { gap: 0; }
   .home-sample { order: 1; max-width: 340px; margin-top: 28px; }
   .home-hero .figures { order: 2; margin-top: 24px; }
+  .home-cur { order: 0; }
   .pop-cards { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 46%; overflow-x: auto; scroll-snap-type: x mandatory; margin-inline: -16px; padding: 0 16px 6px; scrollbar-width: none; }
   .pop-cards::-webkit-scrollbar { display: none; }
   .pop-cards li { scroll-snap-align: start; scroll-margin-inline: 16px; }
   /* The results cards and the browse lists swipe sideways, so the page stays short. */
+  /* position: relative keeps their screen-reader labels (.sr-only) inside the row, else they widen the page. */
+  .nw-results, .br-list, .pop-cards, .home .home-guides { position: relative; }
   .nw-results { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 78%; overflow-x: auto; scroll-snap-type: x mandatory; margin-inline: -16px; padding: 0 16px 6px; scrollbar-width: none; }
   .nw-results::-webkit-scrollbar, .br-list::-webkit-scrollbar { display: none; }
   .nw-results li { scroll-snap-align: start; scroll-margin-inline: 16px; }

@@ -22,7 +22,7 @@ const cityLink = (r) => withLang(r.cityPath) + "&q=" + encodeURIComponent(r.name
 // Where a restaurant is, e.g. "London", or "Aughton, England" for one listed under a region.
 const whereOf = (r) => r.town ? r.town + ", " + pick(r, "cityName") : pick(r, "cityName");
 const priceLabel = (r) => r.dinner == null ? t("infoNoPrice")
-  : localMoney(r.dinner, r.cur) + " " + (r.dinnerType === "main" ? t("perMain") : r.dinnerType === "spend" ? t("typicalSpend") : t("infoDinner"));
+  : homeMoney(r.dinner, r.cur) + " " + (r.dinnerType === "main" ? t("perMain") : r.dinnerType === "spend" ? t("typicalSpend") : t("infoDinner"));
 // "12 three-star, 30 two-star…" from counts [total, one-star, two-star, three-star].
 const starCountText = (n) => t("starCounts").replace("{3}", n[3]).replace("{2}", n[2]).replace("{1}", n[1]);
 
@@ -129,6 +129,67 @@ document.addEventListener("click", (e) => {
   if (a) track("home-link", { to: a.dataset.home });
 });
 
+// ---------- Currency ----------
+// Every price on the page shows in one currency, picked with "Prices in" in the hero: the visitor's own choice (prefs
+// homeCur), else a member's currency (homeCurrency() in common.js), else a guess from where the browser is (its time
+// zone, then its language's region), else US dollars. Prices the build wrote carry data-amt and data-cur (amt() in build.py).
+const EURO = ["AD", "AT", "BE", "CY", "DE", "EE", "ES", "FI", "FR", "GR", "HR", "IE", "IT", "LT", "LU", "LV", "MC", "ME", "MT", "NL", "PT", "SI", "SK", "SM", "VA", "XK"];
+const REGION_CURRENCY = { GB: "GBP", IM: "GBP", JE: "GBP", GG: "GBP", US: "USD", JP: "JPY", KR: "KRW", HK: "HKD", MO: "MOP", TW: "TWD", SG: "SGD", CN: "CNY",
+  TH: "THB", MY: "MYR", PH: "PHP", VN: "VND", AE: "AED", QA: "QAR", NZ: "NZD", CA: "CAD", MX: "MXN", BR: "BRL", AR: "ARS", CH: "CHF", LI: "CHF",
+  SE: "SEK", NO: "NOK", DK: "DKK", IS: "ISK", PL: "PLN", CZ: "CZK", HU: "HUF", RS: "RSD", TR: "TRY" };
+const ZONE_REGION = { "Europe/London": "GB", "Europe/Dublin": "IE", "Europe/Paris": "FR", "Europe/Berlin": "DE", "Europe/Madrid": "ES", "Atlantic/Canary": "ES",
+  "Europe/Rome": "IT", "Europe/Amsterdam": "NL", "Europe/Brussels": "BE", "Europe/Lisbon": "PT", "Europe/Vienna": "AT", "Europe/Luxembourg": "LU",
+  "Europe/Monaco": "MC", "Europe/Athens": "GR", "Europe/Helsinki": "FI", "Europe/Tallinn": "EE", "Europe/Riga": "LV", "Europe/Vilnius": "LT",
+  "Europe/Ljubljana": "SI", "Europe/Zagreb": "HR", "Europe/Malta": "MT", "Europe/Bratislava": "SK", "Europe/Andorra": "AD", "Europe/Zurich": "CH",
+  "Europe/Vaduz": "LI", "Europe/Stockholm": "SE", "Europe/Oslo": "NO", "Europe/Copenhagen": "DK", "Atlantic/Reykjavik": "IS", "Europe/Warsaw": "PL",
+  "Europe/Prague": "CZ", "Europe/Budapest": "HU", "Europe/Belgrade": "RS", "Europe/Istanbul": "TR", "Europe/Isle_of_Man": "IM", "Europe/Jersey": "JE",
+  "Europe/Guernsey": "GG", "Asia/Tokyo": "JP", "Asia/Seoul": "KR", "Asia/Hong_Kong": "HK", "Asia/Macau": "MO", "Asia/Taipei": "TW", "Asia/Singapore": "SG",
+  "Asia/Shanghai": "CN", "Asia/Bangkok": "TH", "Asia/Kuala_Lumpur": "MY", "Asia/Manila": "PH", "Asia/Ho_Chi_Minh": "VN", "Asia/Saigon": "VN",
+  "Asia/Dubai": "AE", "Asia/Qatar": "QA", "Pacific/Auckland": "NZ", "America/Toronto": "CA", "America/Vancouver": "CA", "America/Montreal": "CA",
+  "America/Edmonton": "CA", "America/Winnipeg": "CA", "America/Halifax": "CA", "America/Mexico_City": "MX", "America/Sao_Paulo": "BR",
+  "America/Argentina/Buenos_Aires": "AR", "America/Buenos_Aires": "AR", "America/New_York": "US", "America/Chicago": "US", "America/Denver": "US",
+  "America/Los_Angeles": "US", "America/Phoenix": "US", "America/Anchorage": "US", "Pacific/Honolulu": "US" };
+const regionCurrency = (region) => EURO.includes(region) ? "EUR" : REGION_CURRENCY[region] || "";
+function guessHomeCurrency() {
+  let zone = "";
+  try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) { /* older browsers: go by language */ }
+  const langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+  const guesses = [regionCurrency(ZONE_REGION[zone])].concat(langs.map((l) => regionCurrency((l.split("-")[1] || "").toUpperCase())));
+  return guesses.find((c) => c && DATA.currencies[c]) || "USD";
+}
+const HOME_CUR_MAIN = ["GBP", "EUR", "USD"];
+const savedHomeCur = () => { const c = store.get(PREFS_KEY, {}).homeCur; return c && DATA.currencies[c] ? c : ""; };
+const localGuess = guessHomeCurrency();
+let pageCur = savedHomeCur() || homeCurrency() || localGuess;
+// A price in the page's currency: as written when it's already in it, else converted at currencies.json's rates and marked ≈.
+function homeMoney(n, from) {
+  if (n == null) return "";
+  if (from === pageCur || !DATA.currencies[from]) return localMoney(n, from);
+  return "≈" + symbolOf(pageCur) + Math.round(n * DATA.currencies[pageCur].perUSD / DATA.currencies[from].perUSD).toLocaleString("en-GB");
+}
+function renderCurrency() {
+  const choices = HOME_CUR_MAIN.concat([localGuess, pageCur].filter((c, i, a) => !HOME_CUR_MAIN.includes(c) && a.indexOf(c) === i));
+  $("homeCur").innerHTML = choices.map((c) => '<button type="button" data-homecur="' + c + '" aria-pressed="' + (c === pageCur) + '" aria-label="' + c + '">' +
+    esc(DATA.currencies[c].symbol.trim()) + "</button>").join("");
+  document.querySelectorAll("[data-amt]").forEach((el) => { el.textContent = homeMoney(Number(el.dataset.amt), el.dataset.cur); });
+  // "Starred for less" shows the menu's own price under a converted one.
+  document.querySelectorAll(".less-usd").forEach((el) => { el.hidden = el.dataset.cur === pageCur; });
+}
+function setHomeCur(c) {
+  if (!DATA.currencies[c] || c === pageCur) return;
+  pageCur = c;
+  const prefs = store.get(PREFS_KEY, {});
+  prefs.homeCur = c;
+  store.set(PREFS_KEY, prefs);
+  renderCurrency(); renderWishlist(); renderResults();
+  if (world.info) world.info.close();
+  track("currency", { currency: c, page: "home" });
+  prefChosen("currency", c);
+}
+document.addEventListener("click", (e) => { const b = e.target.closest("[data-homecur]"); if (b) setHomeCur(b.dataset.homecur); });
+// A member's new currency (setProfile() in common.js clears prefs.homeCur) applies straight away.
+window.addEventListener("sb:profile", () => { pageCur = savedHomeCur() || homeCurrency() || localGuess; renderCurrency(); renderWishlist(); });
+
 // ---------- The hero's sample bill ----------
 // home_sample_html() in build.py writes a few restaurants' till receipts, the first one showing; one is picked at random on
 // each visit, and "Show another restaurant" steps through the rest.
@@ -180,7 +241,7 @@ function renderWishlist() {
   const compare = list.length >= 2 ? '<p class="wish-compare"><a class="btn-line" href="/compare/">' + esc(t("wishCompare")) + " →</a></p>" : "";
   $("wishList").innerHTML = where + compare + '<ul class="wish-list">' + list.map((r) =>
     '<li><a class="wl-name" href="' + cityLink(r) + '">' + esc(nameOf(r)) + '</a><span class="wl-meta">' + starIcons(r.stars) + " " + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + "</span>" +
-    '<span class="wl-price num">' + esc(r.dinner == null ? "–" : localMoney(r.dinner, r.cur)) + "</span>" +
+    '<span class="wl-price num">' + esc(r.dinner == null ? "–" : homeMoney(r.dinner, r.cur)) + "</span>" +
     '<button type="button" class="linkish" data-unwish="' + esc(r.id) + '" aria-label="' + esc(t("wishRemove", { name: nameOf(r) })) + '">' + t("wishRemoveShort") + "</button></li>").join("") + "</ul>" +
     '<div class="bill-wrap" id="bill"></div>';
   renderBill(list);
@@ -192,8 +253,6 @@ function renderWishlist() {
 const BILL_KEY = "starredbill-bill";
 const bill = Object.assign({ meal: "dinner", wine: false, cur: "" }, (() => { try { return JSON.parse(localStorage.getItem(BILL_KEY)) || {}; } catch (e) { return {}; } })());
 let billData = null, billLoading = null;
-// A new currency in the member's preferences clears the bill's own choice (setProfile() in common.js).
-window.addEventListener("sb:profile", () => { bill.cur = store.get(BILL_KEY, {}).cur || ""; if (loadWishlist().length) renderWishlist(); });
 const saveBill = () => { try { localStorage.setItem(BILL_KEY, JSON.stringify(bill)); } catch (e) { /* private window: the choice lasts for this visit */ } };
 const billRate = (from) => DATA.currencies[bill.cur].perUSD / DATA.currencies[from].perUSD;
 const billMoney = (n, approx) => (approx ? "≈" : "") + localMoney(approx ? Math.round(n) : Math.round(n * 100) / 100, bill.cur);
@@ -217,11 +276,7 @@ function renderBill(list) {
     box.innerHTML = "";
     return;
   }
-  const curs = [...new Set(list.map((r) => r.cur))];
-  const choices = DATA.switchable.slice();
-  if (curs.length === 1 && !choices.includes(curs[0])) choices.unshift(curs[0]);
-  // A member's own currency first (loadProfile() in common.js), else the one the restaurants share, else pounds.
-  if (!choices.includes(bill.cur)) bill.cur = choices.includes(homeCurrency()) ? homeCurrency() : curs.length === 1 && choices.includes(curs[0]) ? curs[0] : choices.includes("GBP") ? "GBP" : choices[0];
+  bill.cur = pageCur;  // the page's currency ("Prices in" in the hero)
   const items = list.map(billItem), counted = items.filter((x) => !x.why);
   const approx = counted.some((x) => x.approx);
   const sub = counted.reduce((a, x) => a + x.amount, 0), extra = counted.reduce((a, x) => a + x.extra, 0);
@@ -233,8 +288,7 @@ function renderBill(list) {
   const seg = (attr, opts, on) => '<div class="seg" role="group">' + opts.map(([v, label]) => '<button type="button" data-' + attr + '="' + esc(v) + '" aria-pressed="' + (v === on) + '">' + esc(label) + "</button>").join("") + "</div>";
   box.innerHTML = '<h3 class="sub-head">' + esc(t("billTitle")) + '</h3><p class="bill-intro">' + esc(t("billIntro")) + "</p>" +
     '<div class="bill-controls">' + seg("billmeal", [["dinner", t("mealDinner")], ["lunch", t("mealLunch")]], bill.meal) +
-    '<label class="bill-wine"><input type="checkbox" id="billWine"' + (bill.wine ? " checked" : "") + "> " + esc(t("billWine")) + "</label>" +
-    seg("billcur", choices.map((c) => [c, DATA.currencies[c].symbol.trim()]), bill.cur) + "</div>" +
+    '<label class="bill-wine"><input type="checkbox" id="billWine"' + (bill.wine ? " checked" : "") + "> " + esc(t("billWine")) + "</label></div>" +
     '<div class="receipt bill"><span class="rc-paper">' +
     '<span class="rc-head" aria-hidden="true">' + esc(t("billHead", { meal: t(bill.meal === "lunch" ? "mealLunch" : "mealDinner") })) + "</span>" +
     items.map(line).join("") +
@@ -475,7 +529,7 @@ function renderMapLegend() {
 }
 
 // ---------- Render and events ----------
-function renderAll() { applyStatic(); renderFigures(); renderDestinations(); renderWishlist(); renderMapStars(); renderMapLegend(); renderResults(); }
+function renderAll() { applyStatic(); renderFigures(); renderDestinations(); renderCurrency(); renderWishlist(); renderMapStars(); renderMapLegend(); renderResults(); }
 
 document.addEventListener("click", (e) => {
   const el = e.target.closest("button");
@@ -490,9 +544,8 @@ document.addEventListener("click", (e) => {
     if (world.near) world.near.relabel();
   } else if (el.dataset.mapstars) {
     homeState.stars = Number(el.dataset.mapstars); renderMapStars(); updateWorldMap(true);
-  } else if (el.dataset.billmeal || el.dataset.billcur) {
-    if (el.dataset.billmeal) bill.meal = el.dataset.billmeal; else { bill.cur = el.dataset.billcur; prefChosen("currency", bill.cur); }
-    saveBill(); renderWishlist();
+  } else if (el.dataset.billmeal) {
+    bill.meal = el.dataset.billmeal; saveBill(); renderWishlist();
   } else if (el.dataset.unwish) {
     setWishlist(loadWishlist().filter((x) => x !== el.dataset.unwish)); renderWishlist();
   }

@@ -2907,6 +2907,11 @@ def star_icons(n):
     return '<span class="stars" aria-hidden="true">' + '<svg><use href="#star"/></svg>' * n + "</span>"
 
 
+def amt(n, cur):
+    """A price on the homepage, in its own currency until home.js shows it in the visitor's (data-amt, data-cur)."""
+    return f'<span class="amt" data-amt="{n}" data-cur="{cur}">{e(money(n, cur))}</span>'
+
+
 def cheapest_dinner(p):
     """A place's cheapest dinner tasting menu among its starred restaurants, or None."""
     menus = [r for r in members(p) if not r.get("status") and r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"]
@@ -2932,7 +2937,7 @@ def home_sample_html(starred):
         where = home_where(r)
         kind = SERVICE.get(r["country"], ("before", 0))[0]
         return (f'<figure class="sample"{" hidden" if i else ""} data-sample="{i}">'
-                + receipt_html(r, kind, "")
+                + receipt_html(r, kind, "", convert=True)
                 + f'<figcaption><a href="{e(r["page"])}" data-home="sample"><strong>{e(r["name"])}</strong></a> {star_icons(r["stars"])}'
                 f'<span class="sr-only">{STAR_WORDS[r["stars"]]} stars</span>, {e(where)}'
                 f'<a class="sample-more" href="{e(r["page"])}" data-home="sample">The whole bill, for two →</a></figcaption></figure>')
@@ -2954,7 +2959,7 @@ def home_ways_html(n_countries):
                    f'<strong>{e(title)}</strong><span>{e(text)}</span></a>' for href, icon, title, text, key in tiles)
     def card(p):
         low = cheapest_dinner(p)
-        price = f'<span class="pc-from">dinner from {e(money(low["dinner"], low["cur"]))}</span>' if low else ""
+        price = f'<span class="pc-from">dinner from {amt(low["dinner"], low["cur"])}</span>' if low else ""
         return (f'<li><a class="pop-card" href="{p["path"]}" data-home="popular" data-place="{e(p["id"])}"><span class="pc-name">{e(p["name"])}</span>'
                 f'<span class="pc-n">{starred_n[p["id"]]} starred</span>{price}</a></li>')
     cards = "".join(card(places[i]) for i in HOME_POPULAR if i in places and starred_n.get(i))
@@ -2977,7 +2982,7 @@ def home_countries_html(countries, soon):
         if "box" in c:  # in the MICHELIN Guide but no page here yet
             return (f'<li class="crow crow-soon" {attrs}><span class="crow-name">{e(c["name"])}</span>'
                     f'<button type="button" class="crow-from" data-map-box="{",".join(str(x) for x in c["box"])}">Show on map</button>{meta}</li>')
-        price = f'<span class="crow-from">from {e(money(c["from"]["price"], c["from"]["cur"]))}</span>' if c["from"] else '<span class="crow-from"></span>'
+        price = f'<span class="crow-from">from {amt(c["from"]["price"], c["from"]["cur"])}</span>' if c["from"] else '<span class="crow-from"></span>'
         areas = [q for q in c["cities"] if q["path"] != c["path"]]
         toggle = fold = ""
         if areas:
@@ -3011,7 +3016,8 @@ def home_less_html(starred):
     lunch saves the most on dinner, each linked to its row on our page for its town."""
     usd = lambda r, f: r[f] / CURRENCIES[r["cur"]]["perUSD"]
     menu = lambda r, f: r.get(f) is not None and r.get(f + "Type", "menu") == "menu"
-    about = lambda r, n: "" if r["cur"] == "USD" else f'<span class="less-usd">about {usd_text(n)}</span>'
+    # Under the big price: what the menu says, shown by home.js when the page is in another currency.
+    about = lambda r, f: f'<span class="less-usd" data-cur="{r["cur"]}" hidden>{e(money(r[f], r["cur"]))} on the menu</span>'
     named = lambda r: (f'<a href="{e(r["cityPath"])}#r={e(r["id"])}" data-home="less">{e(r["name"])}</a> '
                        f'{star_icons(r["stars"])}, {e(place_name(r))}')
     note = lambda r, f: (f'<p class="less-note">{e(r[f + "Note"])}</p>'
@@ -3021,14 +3027,14 @@ def home_less_html(starred):
         rows = sorted((usd(r, f), r["name"], f, r) for r in starred if r["stars"] == s for f in ("dinner", "lunch") if menu(r, f))
         if rows:
             n, _, f, r = rows[0]
-            cards.append(f'<li><p class="less-label">{label}</p><p class="less-price">{e(money(r[f], r["cur"]))}{about(r, n)}</p>'
+            cards.append(f'<li><p class="less-label">{label}</p><p class="less-price">{amt(r[f], r["cur"])}{about(r, f)}</p>'
                          f'<p class="less-what">{"Lunch" if f == "lunch" else "Dinner"} menu at {named(r)}</p>{note(r, f)}</li>')
     saves = sorted((usd(r, "dinner") - usd(r, "lunch"), r["name"], r) for r in starred
                    if r["stars"] == 3 and menu(r, "dinner") and menu(r, "lunch") and r["lunch"] < r["dinner"])
     if saves:
         n, _, r = saves[-1]
-        cards.append(f'<li><p class="less-label">Lunch saves up to</p><p class="less-price">{e(money(r["dinner"] - r["lunch"], r["cur"]))}{about(r, n)}</p>'
-                     f'<p class="less-what">Lunch {e(money(r["lunch"], r["cur"]))} instead of dinner {e(money(r["dinner"], r["cur"]))} at {named(r)}</p></li>')
+        cards.append(f'<li><p class="less-label">Lunch saves up to</p><p class="less-price">{amt(r["dinner"] - r["lunch"], r["cur"])}</p>'
+                     f'<p class="less-what">Lunch {amt(r["lunch"], r["cur"])} instead of dinner {amt(r["dinner"], r["cur"])} at {named(r)}</p></li>')
     more = "".join(f'<a class="city-link" href="/guides/{gid}/" data-home="less-guide">{e(label)}</a>' for gid, label in HOME_LESS_GUIDES if gid in guides)
     return f'<ul class="less">{"".join(cards)}</ul>' + (f'<p class="pop-title">More ways to eat for less</p><div class="dest-cities">{more}</div>' if more else "")
 
@@ -3142,7 +3148,8 @@ def build_home():
         # English only; Chinese names stay for searching.
         "destinations": home_countries_html(countries, soon), "ways": home_ways_html(len(countries)), "less": home_less_html(starred),
         "guides": home_guides_html(), "sample": home_sample_html(starred), "whatsNew": home_new_html(starred),
-        "browse": home_browse_html(), "trust": home_trust_html(), "data": as_json(only_langs(data, {"Zh"}, PAGE_TEXTS)), "homeUrl": data["homeUrl"],
+        "browse": home_browse_html(), "trust": home_trust_html(),
+        "rateDate": e(long_date(currency_data["rateDate"], "en")) if currency_data.get("rateDate") else "the latest update", "data": as_json(only_langs(data, {"Zh"}, PAGE_TEXTS)), "homeUrl": data["homeUrl"],
     }))
 
 
@@ -6522,12 +6529,14 @@ def restaurant_answer(r, stay):
     return " ".join(out)
 
 
-def receipt_html(r, kind, src_links):
-    """The till receipt, drawn as receipt() in place.js draws it (dinner, lunch, wine pairing, dinner + wine)."""
+def receipt_html(r, kind, src_links, convert=False):
+    """The till receipt, drawn as receipt() in place.js draws it (dinner, lunch, wine pairing, dinner + wine). With convert,
+    each price carries data-amt and data-cur, so the homepage can show it in the visitor's currency (amt() in home.js)."""
     cur = r["cur"]
-    def line(label, value, note="", on=False, muted=False):
+    def line(label, value, note="", on=False, muted=False, n=None):
+        mark = f' data-amt="{n}" data-cur="{cur}"' if convert and n is not None else ""
         return (f'<span class="rc-line{" on" if on else ""}"><span class="rc-k">{e(label)}</span><span class="rc-dots" aria-hidden="true"></span>'
-                f'<span class="sr-only">, </span><span class="rc-v{" muted" if muted else ""}">{e(value)}</span>'
+                f'<span class="sr-only">, </span><span class="rc-v{" muted" if muted else ""}"{mark}>{e(value)}</span>'
                 + (f'<span class="sr-only">, </span><span class="rc-note">{e(note)}</span>' if note else "") + "</span>")
     def meal(field, note_field, type_field):
         n = r.get(field)
@@ -6537,18 +6546,19 @@ def receipt_html(r, kind, src_links):
             return line("Dinner" if field == "dinner" else "Lunch", "not listed", muted=True)
         t = r.get(type_field, "menu")
         extra = "per main" if t == "main" else "typical spend" if t == "spend" else ""
-        return line("Dinner" if field == "dinner" else "Lunch", money(n, cur), " · ".join(x for x in (extra, r.get(note_field)) if x), on=field == "dinner")
+        return line("Dinner" if field == "dinner" else "Lunch", money(n, cur), " · ".join(x for x in (extra, r.get(note_field)) if x), on=field == "dinner", n=n)
     w = r.get("wine")
     total = r["dinner"] + w if w and r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu" else None
+    total_mark = f' data-amt="{total}" data-cur="{cur}"' if convert and total is not None else ""
     month = site.get("updated", "")
     checked = (MONTH_NAMES[int(month[5:7]) - 1][:3] + " " + month[:4]) if re.fullmatch(r"\d{4}-\d{2}", month) else ""
     return ('<div class="receipt rp-receipt"><span class="rc-paper">'
             '<span class="rc-head" aria-hidden="true">The Starred Bill · Table for 1</span>'
             + (f'<span class="notice">Temporarily closed</span>' if r.get("notice") else "")
             + meal("dinner", "dinnerNote", "dinnerType") + meal("lunch", "lunchNote", "lunchType")
-            + (line("Wine pairing", money(w, cur)) if w else line("Wine pairing", "–", "no pairing offered" if r.get("noPairing") else "no pairing listed", muted=True))
+            + (line("Wine pairing", money(w, cur), n=w) if w else line("Wine pairing", "–", "no pairing offered" if r.get("noPairing") else "no pairing listed", muted=True))
             + (f'<span class="rc-line rc-total"><span class="rc-k">Dinner + wine</span><span class="rc-dots" aria-hidden="true"></span>'
-               f'<span class="sr-only">, </span><span class="rc-v">{money(total, cur)}</span></span>' if total is not None else "")
+               f'<span class="sr-only">, </span><span class="rc-v"{total_mark}>{money(total, cur)}</span></span>' if total is not None else "")
             + f'<span class="rc-foot">{e(SERVICE_FOOT.get(kind, SERVICE_FOOT["before"]))}<br>Checked {checked}'
             + (" · " + src_links if src_links else "") + "</span></span></div>")
 

@@ -1881,7 +1881,7 @@ function setProfile(p, from) {
   // A new home currency replaces the choices made page by page on this device, so every page opens in it.
   if (next.currency !== (before.currency || "")) {
     const prefs = store.get(PREFS_KEY, {});
-    delete prefs.currency; delete prefs.pickCur; delete prefs.compareCurrency;
+    delete prefs.currency; delete prefs.pickCur; delete prefs.compareCurrency; delete prefs.homeCur;
     store.set(PREFS_KEY, prefs);
     const bill = store.get("starredbill-bill", null);
     if (bill && bill.cur) { bill.cur = ""; store.set("starredbill-bill", bill); }

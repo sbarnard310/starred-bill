@@ -337,6 +337,25 @@ for rid, week in (opening.get("hours") or {}).items():
         HOURS[rid] = week
 HOURS_CHECKED = opening.get("checked", "")
 
+# A place's hand-written local note (localNote, 9 Oct 2026): questions and answers on booking, dress code and tipping there,
+# drawn by local_note_html(). {r:<file name>} in an answer names a restaurant and links to it.
+for pid, p in places.items():
+    if "localNote" not in p:
+        continue
+    where = f"places ({pid})"
+    note = p["localNote"] = [tidy(x) for x in p["localNote"] if isinstance(x, dict)] if isinstance(p["localNote"], list) else []
+    if not note or not all(x.get("q") and x.get("a") for x in note):
+        problem(where, "localNote must be a list of questions, each with a q (the heading) and an a (the answer)")
+    for x in note:
+        for rid in re.findall(r"\{r:([^}]*)\}", x.get("a", "")):
+            if rid not in ids:
+                problem(where, f"its localNote names {{r:{rid}}}, which isn't a restaurant file name")
+    words = sum(len(re.sub(r"\{r:[^}]*\}", " X ", re.sub(r"<[^>]+>", " ", x.get("q", "") + " " + x.get("a", ""))).split()) for x in note)
+    if note and not 120 <= words <= 300:
+        problem(where, f"its localNote is {words} words; keep it to about 150–250")
+    if p.get("localNoteChecked") and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", p["localNoteChecked"]):
+        problem(where, "localNoteChecked must be a date like 2026-10-09")
+
 if problems:
     print("The site wasn't built because of these problems in the data:\n  - " + "\n  - ".join(problems))
     sys.exit(1)
@@ -785,7 +804,10 @@ def build_place(p):
             for r in sorted(starred, key=lambda r: (-r["stars"], r["name"]))) + "</ol>"
         version = dict(data, lang=lang, langPaths=lang_paths) if len(langs) > 1 else data
         quick = quick_answers(p, page, starred, lang)
-        faq = destination_faq(p, page, starred, lang, quick=bool(quick))
+        note = local_note(p) if lang == "en" else []
+        faq = destination_faq(p, page, starred, lang, quick=bool(quick), booking=not note)
+        # The local note's questions are headings on the page, so the structured data lists them after the FAQ's (up to 10).
+        faq_ld = (faq + [(q, plain(a)) for q, a in note])[:FAQ_MAX]
         pilot = p["id"] in SEO_PILOT
         answer = short_answer(p, page, starred, lang) if lang in QA_LANGS else ""
         updated = (f'<p class="updated"><time datetime="{day}">{e(pilot_words(lang)["updated"].replace("{date}", long_date(day, lang)))}</time></p>'
@@ -803,8 +825,8 @@ def build_place(p):
             "areas": areas_html(p, lang) if starred else "", "footPlaces": foot_places_html(lang, p["id"]),
             "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
             "answer": answer, "quick": quick_html(quick, page, lang), "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
-            "newStars": new_stars_html(p, page, lang),
-            "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq, SITE_URL + lang_paths[lang], titles[lang], day),
+            "newStars": new_stars_html(p, page, lang), "localNote": local_note_html(p, note),
+            "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq_ld, SITE_URL + lang_paths[lang], titles[lang], day),
             "updated": updated,
             "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang),
             "browse": browse_html(p, page, starred, lang) if starred else "",
@@ -1117,7 +1139,7 @@ def new_stars_answer(k, new, up, latest, html_mode=False):
     return k.gap.join(parts)
 
 
-def destination_faq(p, page, starred, lang, quick=False):
+def destination_faq(p, page, starred, lang, quick=False, booking=True):
     """The questions and answers at the foot of a destination page, worked out from its restaurants in one of its
     languages (wording in src/faq-words.json): how many are starred, any three-star, what dinner costs, the cheapest
     meal, what's newly starred and how far ahead to book. Questions the data can't answer are left out, and so are
@@ -1163,7 +1185,8 @@ def destination_faq(p, page, starred, lang, quick=False):
         faq.append((say("qNew"), new_stars_answer(k, new, up, latest)))
 
     lunch_n = sum(1 for r in starred if r.get("lunch") is not None)
-    faq.append((say("qBook"), say("aBook") + (k.gap + say("aLunch", k=lunch_n, n=n) if lunch_n and n > 1 else "")))
+    if booking:  # left out where the page's local note answers it (booking=False)
+        faq.append((say("qBook"), say("aBook") + (k.gap + say("aLunch", k=lunch_n, n=n) if lunch_n and n > 1 else "")))
     return faq
 
 
@@ -1596,6 +1619,33 @@ def lunch_deals_html(p, page, starred, lang):
     return (f'<section id="lunch-deals">\n    <div class="wrap">\n      <div class="section-head"><div>'
             f'<span class="eyebrow">{e(w["ldEyebrow"])}</span><h2 style="margin-top: 6px">{e(say("ldTitle"))}</h2>'
             f'<p>{e(" ".join(text))}</p></div></div>\n      {table}\n      <p class="ld-note">{e(w["ldNote"])}</p>\n    </div>\n  </section>\n')
+
+
+def local_note(p):
+    """A place's hand-written local note (localNote, English only): [(question, answer as HTML)], each {r:<id>} in an
+    answer turned into the restaurant's name linking to its own page, else its row (on this page when it's listed here)."""
+    by_id = {r["id"]: r for r in restaurants}
+
+    def link(m):
+        r = by_id[m.group(1)]
+        href = f'#r={r["id"]}' if not r.get("page") and r["cityPath"].startswith(p["path"]) else restaurant_href(r)
+        return f'<a href="{href}">{e(r["name"])}</a>'
+    return [(x["q"], re.sub(r"\{r:([^}]*)\}", link, x["a"])) for x in p.get("localNote") or []]
+
+
+def local_note_html(p, note):
+    """"How do you book a Michelin star restaurant in NYC?" (9 Oct 2026, to-do item seo-local-notes): the local note's first
+    question as the section's heading with its answer under it, then the others (when tables open, what to wear, tipping)
+    as question headings side by side, and the day it was checked."""
+    if not note:
+        return ""
+    (q0, a0), rest = note[0], note[1:]
+    checked = (f'Checked {nice_date(p["localNoteChecked"])} on the restaurants’ own websites. ' if p.get("localNoteChecked") else "") + \
+        "Rules change, so check with the restaurant when you book."
+    return ('<section id="book">\n    <div class="wrap">\n      <div class="section-head"><div>'
+            f'<span class="eyebrow">Before you book</span><h2 style="margin-top: 6px">{e(q0)}</h2><p>{a0}</p></div></div>\n'
+            + (f'      <div class="method local-note">' + "".join(f"<div><h3>{e(q)}</h3><p>{a}</p></div>" for q, a in rest) + "</div>\n" if rest else "")
+            + f'      <p class="ld-note">{e(checked)}</p>\n    </div>\n  </section>\n')
 
 
 # Big cities' "By cuisine" and "By neighbourhood" sections (browse_html(), 9 Oct 2026, to-do item seo-cuisine-area-sections,

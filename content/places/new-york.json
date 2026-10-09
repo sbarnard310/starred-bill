@@ -3,5 +3,24 @@
   "type": "city",
   "parent": "new-york-state",
   "name": "New York",
-  "nameZh": "紐約"
+  "nameZh": "紐約",
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in NYC?",
+      "a": "Online, almost always. Resy is the city’s main booking app: about half of NYC’s starred restaurants take tables through it, {r:le-bernardin} and {r:eleven-madison-park} among them. Most of the rest use OpenTable, SevenRooms or Tock, which takes a deposit or the whole price when you book ($200 a head at {r:per-se}). A credit card holds nearly every table, and cancelling late costs money: $150 a person at Le Bernardin inside 48 hours."
+    },
+    {
+      "q": "When do tables open at NYC’s starred restaurants?",
+      "a": "Usually about a month ahead, at a set hour. {r:the-modern} and {r:gramercy-tavern} open each date 28 days out at noon, while Per Se and Le Bernardin release a whole month at once on the 1st of the month before. The best known fill fast, so set a reminder, or try lunch or a weekday."
+    },
+    {
+      "q": "What should you wear to a Michelin star restaurant in NYC?",
+      "a": "Business casual. Per Se, Le Bernardin and {r:jean-georges} recommend a jacket but don’t require one, and Eleven Madison Park has no dress code at all. Most ask you to leave shorts, sportswear and flip-flops at home."
+    },
+    {
+      "q": "How much should you tip in NYC?",
+      "a": "Prices here are before 8.875% sales tax and tip. Tip 18–22% of the bill before tax; New Yorkers often just double the tax. A few add a set charge instead, such as {r:bar-miller}’s 20%, so read the bill before you add more."
+    }
+  ],
+  "localNoteChecked": "2026-10-09"
 }

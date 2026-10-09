@@ -3,5 +3,20 @@
   "type": "city",
   "parent": "texas",
   "name": "Dallas",
-  "intro": "Prices are in US dollars, with a switch to see them in pounds or euros, before tax and tip (or the service charge some restaurants add). Prices checked October 2026."
+  "intro": "Prices are in US dollars, with a switch to see them in pounds or euros, before tax and tip (or the service charge some restaurants add). Prices checked October 2026.",
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in Dallas?",
+      "a": "Dallas has two starred restaurants, booked in different ways. {r:mamani}, Christophe De Lellis’s French-inspired restaurant, takes tables on OpenTable. {r:tatsu-dallas}, Tatsuya Sekiguchi’s Edomae sushi counter in the Continental Gin Building, sells its omakase on Tock as a prepaid ticket, refunded only if you cancel at least five days ahead."
+    },
+    {
+      "q": "When do tables open at Tatsu Dallas?",
+      "a": "Twice a month, on the 1st and the 15th at 8am Central time, for the dates starting two weeks later: on 15 September, the first half of October. It serves two seatings a night, Tuesday to Saturday, so seats go quickly."
+    },
+    {
+      "q": "How much should you tip in Dallas?",
+      "a": "At Tatsu, nothing: in keeping with Japanese custom it adds an 18% service charge instead of taking tips, and it asks guests to go light on perfume. At Mamani, tip 18–22% of the bill before tax, as usual in the US. Sales tax in Dallas is 8.25% on top of both."
+    }
+  ],
+  "localNoteChecked": "2026-10-09"
 }

@@ -5,5 +5,24 @@
   "name": "Los Angeles",
   "nameZh": "洛杉磯",
   "intro": "Includes the starred restaurants in neighbouring Santa Monica, Beverly Hills, West Hollywood, Culver City and Long Beach.",
-  "introZh": "也包括鄰近的聖塔莫尼卡、比佛利山莊、西好萊塢、卡爾弗城與長灘的星級餐廳。"
+  "introZh": "也包括鄰近的聖塔莫尼卡、比佛利山莊、西好萊塢、卡爾弗城與長灘的星級餐廳。",
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in LA?",
+      "a": "OpenTable is the most used, by {r:melisse} and {r:citrin} (only there since 2024), {r:kato}, {r:orsa-winston} and others. The sushi and omakase counters mostly sell their seats on Tock, among them {r:n-naka} and {r:mori-nozomi}, while {r:providence} still takes bookings by phone as well."
+    },
+    {
+      "q": "When do tables open at LA’s starred restaurants?",
+      "a": "It varies more than elsewhere. Mélisse releases each month in the first week of the month before, {r:somni} a month ahead, {r:lielle} 60 days ahead at 10am every day, and Orsa & Winston up to three months ahead. n/naka opens one week at a time, every Sunday at 10am, a month ahead."
+    },
+    {
+      "q": "What should you wear to a Michelin star restaurant in LA?",
+      "a": "LA is relaxed: Somni suggests business casual, and {r:seline} asks only that you come comfortably dressed. Smart casual fits everywhere."
+    },
+    {
+      "q": "How much should you tip in LA?",
+      "a": "Most of LA’s starred restaurants leave the tip to you. Somni and Orsa & Winston add no service charge, so tip 18–22% of the bill before tax. Sales tax is close to 10% across most of the city."
+    }
+  ],
+  "localNoteChecked": "2026-10-09"
 }

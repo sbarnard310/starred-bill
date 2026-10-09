@@ -4,5 +4,24 @@
   "parent": "california",
   "name": "San Francisco",
   "nameZh": "舊金山",
-  "intro": "This page covers the city itself; the rest of the Bay Area's starred restaurants, from Oakland and Silicon Valley to Napa and Sonoma, are on the California page."
+  "intro": "This page covers the city itself; the rest of the Bay Area's starred restaurants, from Oakland and Silicon Valley to Napa and Sonoma, are on the California page.",
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in SF?",
+      "a": "Online, on whichever app the restaurant uses. OpenTable is the most common, used by {r:saison}, {r:sons-daughters} and others; {r:benu} is on Tock, {r:7-adams} on Resy and {r:quince} on SevenRooms. Most hold a credit card against a late cancellation."
+    },
+    {
+      "q": "When do tables open at SF’s starred restaurants?",
+      "a": "Mostly on the 1st of the month before. Quince and Saison release the following month’s tables then, {r:kiln} at noon Pacific time and Sons & Daughters at midnight. Others roll day by day: 7 Adams 28 days ahead at midnight, {r:mister-jius} 30 days ahead at 10am."
+    },
+    {
+      "q": "What should you wear to a Michelin star restaurant in SF?",
+      "a": "Mostly what you like. Quince asks for cocktail attire and {r:acquerello} suggests jackets for men, but neither requires one, and Sons & Daughters says jeans are welcome."
+    },
+    {
+      "q": "How much should you tip in SF?",
+      "a": "Usually nothing extra. Most of SF’s starred restaurants add a service charge of about 20% in place of a tip (22% at Quince), and some add a few per cent more for staff health care, which the city requires employers to fund. Sons & Daughters, for one, says no further gratuity is expected."
+    }
+  ],
+  "localNoteChecked": "2026-10-09"
 }

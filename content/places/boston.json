@@ -6,5 +6,20 @@
   "title": "Michelin Star Restaurants in Boston: Are There Any? ({year})",
   "description": "Yes, one: 311 Omakase holds Boston's only Michelin star, from the first MICHELIN Guide Northeast Cities in 2025. Its 18-course omakase costs $280 a head.",
   "lead": "Yes, one. 311 Omakase, an 18-course Japanese omakase in the South End, holds Boston's only Michelin star, won in November 2025 in the first MICHELIN Guide to cover the city. That Northeast Cities guide also gave Boston six Bib Gourmands and 19 recommended restaurants.",
-  "intro": "The 2026 selection for Boston, Chicago, New York, Philadelphia and Washington DC is revealed in New York on December 14, 2026, and this page is updated that night. Prices are in US dollars, per person before tax and tip, checked October 2026."
+  "intro": "The 2026 selection for Boston, Chicago, New York, Philadelphia and Washington DC is revealed in New York on December 14, 2026, and this page is updated that night. Prices are in US dollars, per person before tax and tip, checked October 2026.",
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in Boston?",
+      "a": "There’s only one to book, and it isn’t easy. {r:311-omakase} has about ten seats at its counter and two sittings a night, at 5:30 and 8:30pm, and it takes bookings only on its own website, not on Resy, OpenTable or Tock. New dates open at noon Eastern time on the 15th of each month, 75 days ahead, and they go fast, so be online at noon."
+    },
+    {
+      "q": "What does 311 Omakase cost on top of the menu?",
+      "a": "The 18-course omakase is $280 a head, plus a 7% kitchen fee, Massachusetts meals tax (7% in Boston) and a tip, usually 18–22% of the bill before tax."
+    },
+    {
+      "q": "Can 311 Omakase cater for dietary needs?",
+      "a": "Only in part. It needs to hear about allergies at least 72 hours ahead, and it can’t make the menu vegetarian or gluten-free, or cater for a soy allergy or a meal without rice."
+    }
+  ],
+  "localNoteChecked": "2026-10-09"
 }

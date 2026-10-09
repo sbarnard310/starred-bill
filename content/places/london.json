@@ -6,5 +6,24 @@
   "nameZh": "倫敦",
   "redirectFrom": [
     "/uk/london/"
-  ]
+  ],
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in London?",
+      "a": "Online, mostly through SevenRooms or OpenTable, which share the city’s starred restaurants about equally; a few use Resy. A card holds nearly every table and a no-show is charged, and some take the whole meal up front, such as {r:kitchen-table}."
+    },
+    {
+      "q": "When do tables open at London’s starred restaurants?",
+      "a": "Earlier than you might think at the top. {r:restaurant-gordon-ramsay} takes online bookings four months ahead and {r:dinner-by-heston-blumenthal} three months to the day, and Kitchen Table releases a whole month at once, three months out. {r:ikoyi} opens on the 1st of each month at noon for the next two months, and {r:kol} on the last Friday of the month."
+    },
+    {
+      "q": "What should you wear to a Michelin star restaurant in London?",
+      "a": "Smart casual almost everywhere. The exceptions are the grand hotel dining rooms: {r:the-ritz-restaurant} requires a jacket and tie for men, and {r:alain-ducasse-at-the-dorchester} prefers jackets and requires long trousers. Sportswear is refused at {r:core-by-clare-smyth}, which treats a table lost over it as a cancellation."
+    },
+    {
+      "q": "Should you tip at a Michelin star restaurant in London?",
+      "a": "Not usually on top. Menu prices include 20% VAT, and most restaurants add a discretionary service charge of 12.5% (15% at a few), which by law must now go to the staff in full. You can ask for it to be taken off if the service let you down."
+    }
+  ],
+  "localNoteChecked": "2026-10-09"
 }

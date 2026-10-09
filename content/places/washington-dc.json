@@ -6,5 +6,24 @@
   "nameZh": "華盛頓特區",
   "starsText": "The Google reviews score out of 5 and the number of reviews, checked in October 2026. Stars come from the MICHELIN Guide Washington DC 2025, announced on 18 November 2025; the next guide is due in December 2026. A green ▲ marks a restaurant that gained a star in the December 2024 or November 2025 guide; a red ▼ marks one that lost a star.",
   "starsTextZh": "Google 評分（滿分 5）與評論數於 2026 年 10 月查核；星級來自 2025 年 11 月 18 日公布的《華盛頓特區米其林指南 2025》，下一版預計於 2026 年 12 月公布。綠色 ▲ 代表在 2024 年 12 月或 2025 年 11 月的指南中獲得星級；紅色 ▼ 代表失去星級。",
-  "michelinGuideUrl": "https://guide.michelin.com/us/en/district-of-columbia/restaurants/all-starred"
+  "michelinGuideUrl": "https://guide.michelin.com/us/en/district-of-columbia/restaurants/all-starred",
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in Washington DC?",
+      "a": "Mostly on Resy, which about two in three of the city’s starred restaurants use, from {r:pineapple-and-pearls} to {r:roses-luxury}. Most of the others are on OpenTable, {r:minibar-by-jose-andres} and {r:jont} take tables on both, and {r:masseria} sells its tasting menu on Tock. A credit card holds the table almost everywhere."
+    },
+    {
+      "q": "When do tables open at DC’s starred restaurants?",
+      "a": "Generally about a month ahead. Masseria releases tables on the 1st of each month, up to a month ahead, minibar opens bookings a month in advance, and {r:albi} opens each month’s tables at midnight on the 1st of the month before."
+    },
+    {
+      "q": "What should you wear to a Michelin star restaurant in DC?",
+      "a": "Smart or business casual. Few of DC’s starred restaurants have a strict dress code: {r:oyster-oyster} says come as you are, and minibar describes its guests’ dress as upscale casual. {r:fiola} asks for upscale dress, though jackets aren’t required."
+    },
+    {
+      "q": "How much should you tip in DC?",
+      "a": "Read the bill first. Many DC restaurants now add a service charge or fee: {r:bresca} adds 20%, while Albi’s fee, it says, isn’t a tip. Where nothing replaces the tip, add 18–22% of the bill before tax."
+    }
+  ],
+  "localNoteChecked": "2026-10-09"
 }

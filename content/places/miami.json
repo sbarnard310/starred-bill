@@ -5,5 +5,20 @@
   "name": "Miami",
   "nameZh": "邁阿密",
   "intro": "Includes the starred restaurants in Miami Beach, Coral Gables and North Miami.",
-  "introZh": "也包括邁阿密海灘、科勒爾蓋布爾斯與北邁阿密的星級餐廳。"
+  "introZh": "也包括邁阿密海灘、科勒爾蓋布爾斯與北邁阿密的星級餐廳。",
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in Miami?",
+      "a": "Online, on a mix of apps: Resy for places like {r:boia-de} and {r:mutra}, SevenRooms for {r:ariete} and {r:latelier-de-joel-robuchon-miami}, and Tock for the omakase counters, which take the full price when you book ($300 a head at {r:hiden}). Hiden, a hidden counter in Wynwood, gives you its entry code with the booking, and it no longer takes bookings through hotel concierges, so book it yourself. Cancel at least 48 hours ahead there, or the meal isn’t refunded."
+    },
+    {
+      "q": "What should you wear to a Michelin star restaurant in Miami?",
+      "a": "Smart casual, even in the heat. Mutra asks for it; Hiden says “casual and discreet” but turns away flip-flops, team jerseys and hats, and tank tops and sandals on men; Boia De has no dress code at all. Leave the beachwear for the beach."
+    },
+    {
+      "q": "How much should you tip in Miami?",
+      "a": "Look at the bill before you tip, as Miami restaurants often add a charge of their own: 20% on every check at Ariete, and 2% for staff health care at Boia De. Where no service charge has been added, tip 18–22% of the bill before tax. Sales tax is 7% in Miami-Dade, with more on top in Miami Beach."
+    }
+  ],
+  "localNoteChecked": "2026-10-09"
 }

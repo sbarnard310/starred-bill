@@ -3,5 +3,24 @@
   "type": "city",
   "parent": "florida",
   "name": "Tampa",
-  "intro": "Prices are in US dollars, with a switch to see them in pounds or euros, before tax and tip (or the service charge some restaurants add). Prices checked October 2026."
+  "intro": "Prices are in US dollars, with a switch to see them in pounds or euros, before tax and tip (or the service charge some restaurants add). Prices checked October 2026.",
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in Tampa?",
+      "a": "Online, and often paid in advance. {r:kosen} and {r:rocca} take tables on OpenTable, as does {r:ebbe}, where the tasting menu is prepaid when you book. {r:koya}, an eight-seat tasting counter, sells its seats on Tock as prepaid tickets, so plan for the whole bill up front."
+    },
+    {
+      "q": "When do tables open at Tampa’s starred restaurants?",
+      "a": "Koya opens the next month’s seats on the 15th at 10am, and with only eight of them they go first. Rocca’s book opens 45 days ahead."
+    },
+    {
+      "q": "What should you wear to a Michelin star restaurant in Tampa?",
+      "a": "Business casual at Koya, which asks for no shorts or flip-flops and as little perfume as possible, and welcomes children only over 12. Smart casual suits the others."
+    },
+    {
+      "q": "How much should you tip in Tampa?",
+      "a": "Prices are before Florida sales tax and tip. Unless a service charge is already on the bill, tip 18–22% of it before tax, as anywhere in the US."
+    }
+  ],
+  "localNoteChecked": "2026-10-09"
 }

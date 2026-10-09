@@ -3,5 +3,24 @@
   "type": "city",
   "parent": "illinois",
   "name": "Chicago",
-  "nameZh": "芝加哥"
+  "nameZh": "芝加哥",
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in Chicago?",
+      "a": "Mostly on Tock, which was started in Chicago by {r:alinea}’s co-owner Nick Kokonas. Alinea, {r:oriole}, {r:next} and many of the city’s other tasting menus sell their tables there as prepaid tickets: you pay for the meal when you book, refunds are rare, and you can usually pass the booking to a friend instead. Most of the rest are on OpenTable, among them {r:boka}, {r:topolobampo} and {r:sepia}, and a few on Resy."
+    },
+    {
+      "q": "When do tables open at Chicago’s starred restaurants?",
+      "a": "Further ahead than in most US cities. Alinea releases each month’s tables on the 15th, two months before, at 11am Central time. Oriole books 90 days ahead, {r:esme} and Sepia about two months, and {r:kasama} six weeks ahead at noon."
+    },
+    {
+      "q": "What should you wear to a Michelin star restaurant in Chicago?",
+      "a": "Chicago is relaxed. {r:ever}, Oriole, Esmé and {r:elske} say they have no dress code at all, and Alinea asks only for “elevated casual”. Smart casual fits everywhere."
+    },
+    {
+      "q": "How much should you tip in Chicago?",
+      "a": "Check the bill first. Many of the city’s starred restaurants add a service charge to pay their whole team: 20% at Alinea, Ever and {r:indienne}, 22% at Esmé. Where there’s one, anything more is up to you; where there isn’t, tip 18–22% of the bill before tax."
+    }
+  ],
+  "localNoteChecked": "2026-10-09"
 }

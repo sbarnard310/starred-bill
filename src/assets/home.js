@@ -24,7 +24,7 @@ const whereOf = (r) => r.town ? r.town + ", " + pick(r, "cityName") : pick(r, "c
 const priceLabel = (r) => r.dinner == null ? t("infoNoPrice")
   : homeMoney(r.dinner, r.cur) + " " + (r.dinnerType === "main" ? t("perMain") : r.dinnerType === "spend" ? t("typicalSpend") : t("infoDinner"));
 // "12 three-star, 30 two-star…" from counts [total, one-star, two-star, three-star].
-const starCountText = (n) => t("starCounts").replace("{3}", n[3]).replace("{2}", n[2]).replace("{1}", n[1]);
+const starCountText = (n) => t("starCounts").replace("{3}", n[3].toLocaleString("en-GB")).replace("{2}", n[2].toLocaleString("en-GB")).replace("{1}", n[1].toLocaleString("en-GB"));
 
 function applyStatic() {
   applyI18n();

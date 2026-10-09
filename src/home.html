@@ -77,11 +77,11 @@ window.homeData = fetch("{{homeUrl}}").then((res) => { if (!res.ok) throw new Er
   </div>
 </div>
 
-<div class="hero" id="top">
+<div class="hero home-hero" id="top">
   <div class="wrap">
-    <div>
-      <h1 data-i18n="homeH1">{{h1}}</h1>
-      <p data-i18n="homeText">{{heroText}}</p>
+    <div class="hero-main">
+      <h1>{{h1}}</h1>
+      <p>{{heroText}}</p>
       <div class="home-search" id="search">
         <label class="search" for="homeQ">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -90,18 +90,75 @@ window.homeData = fetch("{{homeUrl}}").then((res) => { if (!res.ok) throw new Er
         </label>
         <ul class="results" id="results" hidden></ul>
       </div>
+      <div class="figures" aria-live="polite">
+        <div class="figure"><div class="label" data-i18n="figRestaurants"></div><div class="value" id="fRestaurants">0</div><div class="sub" id="fRestaurantsSub"></div></div>
+        <div class="figure"><div class="label" data-i18n="figDestinations"></div><div class="value" id="fDest">0</div><div class="sub" id="fDestSub"></div></div>
+        <div class="figure"><div class="label" data-i18n="figUpdated"></div><div class="value" id="fUpdated">–</div><div class="sub" data-i18n="figUpdatedSub"></div></div>
+      </div>
     </div>
-    <div class="figures" aria-live="polite">
-      <div class="figure"><div class="label" data-i18n="figRestaurants"></div><div class="value" id="fRestaurants">0</div><div class="sub" id="fRestaurantsSub"></div></div>
-      <div class="figure"><div class="label" data-i18n="figDestinations"></div><div class="value" id="fDest">0</div><div class="sub" id="fDestSub"></div></div>
-      <div class="figure"><div class="label" data-i18n="figUpdated"></div><div class="value" id="fUpdated">–</div><div class="sub" data-i18n="figUpdatedSub"></div></div>
-    </div>
+    {{sample}}
   </div>
 </div>
 
 <main>
   <section id="ways" class="home-ways">
     <div class="wrap">{{ways}}</div>
+  </section>
+
+  <section id="less">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Starred for less</span>
+          <h2 style="margin-top: 6px">The cheapest way in</h2>
+          <p>The lowest set menu, lunch or dinner, at each star level. Lunch is often the same kitchen for a fraction of the price of dinner.</p>
+        </div>
+      </div>
+      {{less}}
+    </div>
+  </section>
+
+  <section id="new">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">What’s new</span>
+          <h2 style="margin-top: 6px">New stars, and when the next ones land</h2>
+          <p>Every MICHELIN Guide edition changes the list. We update our pages after each ceremony, with every new, promoted and lost star.</p>
+        </div>
+      </div>
+      {{whatsNew}}
+    </div>
+  </section>
+
+  <section id="destinations">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-i18n="navDestinations"></span>
+          <h2 style="margin-top: 6px">Browse by country, cuisine or restaurant</h2>
+          <p>Every country with Michelin stars, its cheapest dinner menu and its star counts. Open a continent, or sort the countries.</p>
+        </div>
+      </div>
+      <div class="dest-sort"><span id="destSortLabel" data-i18n="destSortLabel"></span><div class="seg" id="destSort" role="group" aria-labelledby="destSortLabel"></div></div>
+      <div class="conts" id="destGroups">{{destinations}}</div>
+      <div id="collections"></div>
+      {{browse}}
+      <div id="noStars"></div>
+    </div>
+  </section>
+
+  <section id="guides">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Guides</span>
+          <h2 style="margin-top: 6px">Michelin stars, explained</h2>
+          <p>What the stars mean, what a starred meal costs, and how a restaurant earns one.</p>
+        </div>
+      </div>
+      {{guides}}
+    </div>
   </section>
 
   <section id="map">
@@ -132,48 +189,6 @@ window.homeData = fetch("{{homeUrl}}").then((res) => { if (!res.ok) throw new Er
     </div>
   </section>
 
-  <section id="destinations">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow" data-i18n="navDestinations"></span>
-          <h2 style="margin-top: 6px" data-i18n="destTitle"></h2>
-          <p data-i18n="destText"></p>
-        </div>
-      </div>
-      <div class="dest-sort"><span id="destSortLabel" data-i18n="destSortLabel"></span><div class="seg" id="destSort" role="group" aria-labelledby="destSortLabel"></div></div>
-      <div class="conts" id="destGroups">{{destinations}}</div>
-      <div id="collections"></div>
-      <div id="noStars"></div>
-    </div>
-  </section>
-
-  <section id="less">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">Starred for less</span>
-          <h2 style="margin-top: 6px">The cheapest way in</h2>
-          <p>The lowest set menu, lunch or dinner, at each star level. Lunch is often the same kitchen for a fraction of the price of dinner.</p>
-        </div>
-      </div>
-      {{less}}
-    </div>
-  </section>
-
-  <section id="guides">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">Guides</span>
-          <h2 style="margin-top: 6px">Michelin stars, explained</h2>
-          <p>What the stars mean, how restaurants earn them, and where to find the best of them.</p>
-        </div>
-      </div>
-      {{guides}}
-    </div>
-  </section>
-
   <section id="wishlist">
     <div class="wrap">
       <div class="section-head">
@@ -185,6 +200,10 @@ window.homeData = fetch("{{homeUrl}}").then((res) => { if (!res.ok) throw new Er
       </div>
       <div id="wishList"></div>
     </div>
+  </section>
+
+  <section id="how" class="home-trust" aria-label="How the prices are counted">
+    <div class="wrap">{{trust}}</div>
   </section>
 </main>
 

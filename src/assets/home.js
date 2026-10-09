@@ -129,6 +129,42 @@ document.addEventListener("click", (e) => {
   if (a) track("home-link", { to: a.dataset.home });
 });
 
+// ---------- The hero's sample bill ----------
+// home_sample_html() in build.py writes a few restaurants' till receipts, the first one showing; one is picked at random on
+// each visit, and "Show another restaurant" steps through the rest.
+const samples = [...document.querySelectorAll(".sample")];
+let sampleAt = 0;
+function showSample(i) {
+  if (!samples.length) return;
+  sampleAt = (i + samples.length) % samples.length;
+  samples.forEach((f, j) => { f.hidden = j !== sampleAt; });
+}
+showSample(Math.floor(Math.random() * samples.length));
+if ($("sampleNext")) $("sampleNext").addEventListener("click", () => { showSample(sampleAt + 1); track("home-link", { to: "sample-next" }); });
+
+// ---------- A member's home city first ----------
+// A signed-in member who has chosen a home city (loadProfile() in common.js) sees it first among the popular destinations.
+function renderHomeCity() {
+  const box = $("popCards"), home = loadProfile().home;
+  if (!box) return;
+  box.querySelectorAll(".pop-card.is-home").forEach((a) => { a.classList.remove("is-home"); const tag = a.querySelector(".pc-tag"); if (tag) tag.remove(); });
+  box.querySelectorAll("li.pop-added").forEach((li) => li.remove());
+  if (!home) return;
+  let card = box.querySelector('.pop-card[data-place="' + CSS.escape(home) + '"]');
+  if (!card) {
+    const p = DATA.places.find((q) => q.id === home);
+    if (!p) return;
+    box.insertAdjacentHTML("afterbegin", '<li class="pop-added"><a class="pop-card" href="' + esc(p.path) + '" data-home="home-city" data-place="' + esc(home) + '">' +
+      '<span class="pc-name">' + esc(p.name) + '</span><span class="pc-n">' + esc(t("destRestaurants", { n: p.n })) + "</span></a></li>");
+    card = box.querySelector(".pop-added .pop-card");
+  }
+  card.classList.add("is-home");
+  card.insertAdjacentHTML("afterbegin", '<span class="pc-tag">Your city</span>');
+  box.prepend(card.closest("li"));
+}
+renderHomeCity();
+["sb:profile", "sb:account"].forEach((ev) => window.addEventListener(ev, renderHomeCity));
+
 // ---------- Wishlist ----------
 function renderWishlist() {
   if (!homeLoaded) { renderWishCount(); return; }  // drawn once the restaurants arrive
@@ -481,4 +517,14 @@ homeReady.then(() => {
   renderWishlist(); renderMapLegend();
   if (document.activeElement === $("homeQ")) renderResults();
 }).catch(() => {});
-if (GOOGLE_MAPS_API_KEY) initWorldMap(); else $("map").hidden = true;
+// The map sits near the foot of the page, so it loads only as it comes near the screen (or straight away when asked for:
+// #map in the address, a destination page's "see what's near you" link, or a country's "Show on map").
+let mapStarted = false;
+const startMap = () => { if (!mapStarted) { mapStarted = true; initWorldMap(); } };
+if (!GOOGLE_MAPS_API_KEY) $("map").hidden = true;
+else if (location.hash === "#map" || params.get("near") === "1" || !("IntersectionObserver" in window)) startMap();
+else {
+  const mapWatch = new IntersectionObserver((entries) => { if (entries.some((x) => x.isIntersecting)) { mapWatch.disconnect(); startMap(); } }, { rootMargin: "800px 0px" });
+  mapWatch.observe($("map"));
+  document.addEventListener("click", (e) => { if (e.target.closest('[data-map-box], a[href="#map"], a[href="/#map"]')) startMap(); });
+}

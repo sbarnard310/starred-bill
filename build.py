@@ -2882,30 +2882,75 @@ def build_home_data(starred):
 
 
 CONTINENT_NAMES = {"europe": "Europe", "asia": "Asia", "middle-east": "Middle East", "americas": "Americas", "oceania": "Oceania"}
-# The homepage's "Popular destinations" links, near the top: the places people search for most (Ahrefs, 7 Oct 2026).
+# The homepage's "Popular destinations" cards, near the top: the places people search for most (Ahrefs, 7 Oct 2026).
 HOME_POPULAR = ("london", "paris", "tokyo", "new-york", "chicago", "hong-kong", "singapore", "copenhagen", "kyoto", "san-francisco",
                 "barcelona", "dubai")
-# The guides shown on the homepage, in order (the rest are a click away at /guides/).
-HOME_GUIDES = ("what-is-a-michelin-star", "three-michelin-star-restaurants", "michelin-stars-by-country",
-               "top-michelin-star-restaurants-in-the-world", "celebrity-chefs-michelin-stars", "bib-gourmand-vs-michelin-star")
+# The three guides that explain the stars, at the foot of the homepage (the rest are a click away at /guides/).
+HOME_GUIDES = ("what-is-a-michelin-star", "how-much-does-a-michelin-star-restaurant-cost", "how-restaurants-get-a-michelin-star")
+# "Starred for less": the guides about eating at starred restaurants for less, with the short names their links use.
+HOME_LESS_GUIDES = (("cheapest-michelin-star-restaurants", "The cheapest in the world"), ("cheap-michelin-star-restaurants-london", "London for less"),
+                    ("cheap-michelin-star-restaurants-seoul", "Seoul for less"), ("michelin-star-hawker-singapore", "Singapore’s hawker stalls"),
+                    ("michelin-star-street-food-bangkok", "Bangkok street food"), ("michelin-star-tacos-mexico-city", "Mexico City tacos"),
+                    ("how-much-does-a-michelin-star-restaurant-cost", "What a starred meal costs"))
+# "Browse": the list guides, with the short names their links use.
+HOME_LISTS = (("three-michelin-star-restaurants", "Every three-star restaurant"), ("top-michelin-star-restaurants-in-the-world", "The world’s top restaurants"),
+              ("cities-with-the-most-michelin-stars", "Cities with the most stars"), ("michelin-stars-by-country", "Stars by country"),
+              ("vegan-vegetarian-michelin-star-restaurants", "Vegan and vegetarian"), ("halal-michelin-star-restaurants", "Halal"),
+              ("kosher-michelin-star-restaurants", "Kosher"), ("celebrity-chefs-michelin-stars", "Celebrity chefs"),
+              ("michelin-star-restaurants-closed-uk", "Closed and lost stars in the UK"))
+HOME_SAMPLES = 6       # till receipts in the hero, one shown at a time (home.js picks one and steps through them)
+HOME_RESULTS = 4       # the latest results pages in "What's new"
+HOME_COMING = 4        # the next ceremonies in "What's new"
 
 
 def star_icons(n):
     return '<span class="stars" aria-hidden="true">' + '<svg><use href="#star"/></svg>' * n + "</span>"
 
 
-def home_ways_html():
-    """The homepage's ways in, under the search box: Near me, Help me pick, Compare and Guides, then popular destinations."""
-    tiles = (("/near-me/", "locate", "Near me", "Every starred restaurant around you, nearest first", "near-me"),
+def cheapest_dinner(p):
+    """A place's cheapest dinner tasting menu among its starred restaurants, or None."""
+    menus = [r for r in members(p) if not r.get("status") and r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"]
+    return min(menus, key=lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"]) if menus else None
+
+
+def home_sample_html(starred):
+    """The hero's till receipts: restaurants with their own page and dinner, lunch and wine prices, three-stars first, so a
+    visitor sees what the site does before reading a word. home.js shows one at random and steps through the rest."""
+    full = [r for r in starred if r.get("page") and r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"
+            and r.get("wine") and r.get("lunch") is not None]
+    full.sort(key=lambda r: (-r["stars"], RESTAURANT_PAGES.index(r["id"])))
+    def one(i, r):
+        where = area_line(r).split(", ")[-1]
+        kind = SERVICE.get(r["country"], ("before", 0))[0]
+        return (f'<figure class="sample"{" hidden" if i else ""} data-sample="{i}">'
+                + receipt_html(r, kind, "")
+                + f'<figcaption><a href="{e(r["page"])}" data-home="sample"><strong>{e(r["name"])}</strong></a> {star_icons(r["stars"])}'
+                f'<span class="sr-only">{STAR_WORDS[r["stars"]]} stars</span>, {e(where)}'
+                f'<a class="sample-more" href="{e(r["page"])}" data-home="sample">The whole bill, for two →</a></figcaption></figure>')
+    shown = full[:HOME_SAMPLES]
+    if not shown:
+        return ""
+    step = '<button type="button" class="sample-next" id="sampleNext">Show another restaurant</button>' if len(shown) > 1 else ""
+    return (f'<div class="home-sample"><p class="sample-label">A real bill from our pages</p>'
+            + "".join(one(i, r) for i, r in enumerate(shown)) + step + "</div>")
+
+
+def home_ways_html(n_countries):
+    """The homepage's three ways in, under the hero (Find, Decide, Nearby), then the popular destinations as cards, each
+    with its count and its cheapest dinner menu."""
+    tiles = (("#destinations", "star", "Browse destinations", f"Every starred restaurant in {n_countries} countries, with prices", "destinations"),
              ("/pick/", "spark", "Help me pick", "Six quick questions, three picks to fit your budget", "pick"),
-             ("/compare/", "heart", "Compare", "Put two or three saved restaurants side by side", "compare"),
-             ("/guides/", "star", "Guides", "What the stars mean, and what a starred meal costs", "guides"))
+             ("/near-me/", "locate", "Near me", "Every starred restaurant around you, nearest first", "near-me"))
     ways = "".join(f'<a class="way" href="{href}" data-home="{key}"><svg aria-hidden="true"><use href="#{icon}"/></svg>'
                    f'<strong>{e(title)}</strong><span>{e(text)}</span></a>' for href, icon, title, text, key in tiles)
-    chips = "".join(f'<a class="city-link" href="{places[i]["path"]}" data-home="popular">{e(places[i]["name"])}<span class="count">{starred_n[i]}</span></a>'
-                    for i in HOME_POPULAR if i in places and starred_n.get(i))
+    def card(p):
+        low = cheapest_dinner(p)
+        price = f'<span class="pc-from">dinner from {e(money(low["dinner"], low["cur"]))}</span>' if low else ""
+        return (f'<li><a class="pop-card" href="{p["path"]}" data-home="popular" data-place="{e(p["id"])}"><span class="pc-name">{e(p["name"])}</span>'
+                f'<span class="pc-n">{starred_n[p["id"]]} starred</span>{price}</a></li>')
+    cards = "".join(card(places[i]) for i in HOME_POPULAR if i in places and starred_n.get(i))
     return (f'<h2 class="sr-only">Ways to find a table</h2><div class="ways">{ways}</div>'
-            f'<h2 class="pop-title">Popular destinations</h2><div class="dest-cities pop">{chips}</div>')
+            f'<h2 class="pop-title">Popular destinations</h2><ul class="pop-cards" id="popCards">{cards}</ul>')
 
 
 def home_countries_html(countries, soon):
@@ -2975,11 +3020,12 @@ def home_less_html(starred):
         n, _, r = saves[-1]
         cards.append(f'<li><p class="less-label">Lunch saves up to</p><p class="less-price">{e(money(r["dinner"] - r["lunch"], r["cur"]))}{about(r, n)}</p>'
                      f'<p class="less-what">Lunch {e(money(r["lunch"], r["cur"]))} instead of dinner {e(money(r["dinner"], r["cur"]))} at {named(r)}</p></li>')
-    return f'<ul class="less">{"".join(cards)}</ul>'
+    more = "".join(f'<a class="city-link" href="/guides/{gid}/" data-home="less-guide">{e(label)}</a>' for gid, label in HOME_LESS_GUIDES if gid in guides)
+    return f'<ul class="less">{"".join(cards)}</ul>' + (f'<p class="pop-title">More ways to eat for less</p><div class="dest-cities">{more}</div>' if more else "")
 
 
 def home_guides_html():
-    """A row of guide cards (one to swipe through on phones), then a link to them all."""
+    """The three guides that explain the stars, as cards, then a link to them all."""
     guide_bodies()  # fills in the figures in the guides' headings
     def card(g):
         img = guide_image(g)
@@ -2989,6 +3035,60 @@ def home_guides_html():
     shown = [guides[i] for i in HOME_GUIDES if i in guides]
     return (f'<ul class="guide-list home-guides">{"".join(card(g) for g in shown)}</ul>'
             f'<p class="home-more"><a href="/guides/" data-home="guides">All {len(guides)} guides →</a></p>')
+
+
+def home_new_html(starred):
+    """"What's new": the latest results pages (every new and lost star in a guide), the next ceremonies and how many
+    restaurants won or gained a star in the last year (by changeDate)."""
+    gs = ceremony_guides()
+    done = sorted((g for g in gs if g["last"] and results_config(g) and results_config(g)["page"] in guides),
+                  key=lambda g: g["last"]["date"], reverse=True)[:HOME_RESULTS]
+    def result(g):
+        page = guides[results_config(g)["page"]]
+        return (f'<li><a href="/guides/{page["id"]}/" data-home="results"><span class="nw-date">{e(short_date(g["last"]["date"]))}</span>'
+                f'<strong>{e(page["h1"])}</strong><span class="nw-sum">{e(page["summary"])}</span></a></li>')
+    coming = sorted((g for g in gs if g["coming"]), key=lambda g: g["coming"]["date"])[:HOME_COMING]
+    def soon(g):
+        cfg = results_config(g)
+        href = f'/guides/{cfg["page"]}/' if cfg and cfg["page"] in guides else f'/guides/michelin-guide-ceremony-dates/#cer-{e(g["id"])}'
+        return (f'<li><span class="nw-date">{e(short_date(g["coming"]["date"]))}</span>'
+                f'<a href="{href}" data-home="ceremony">{e(g["name"].replace("MICHELIN Guide ", ""))}</a></li>')
+    year_ago = f"{int(TODAY[:4]) - 1}{TODAY[4:7]}"
+    won = sum(1 for r in starred if r.get("change") in ("new", "up") and (r.get("changeDate") or "") >= year_ago)
+    stat = (f'<p class="nw-stat"><span class="num">{won:,}</span> restaurants won or gained a star in the last 12 months. '
+            f'Every destination page lists its own.</p>') if won else ""
+    dates = '<p class="home-more"><a href="/guides/michelin-guide-ceremony-dates/" data-home="ceremony">Every ceremony date →</a></p>' \
+        if "michelin-guide-ceremony-dates" in guides else ""
+    return (f'<div class="nw-grid"><div><h3 class="nw-head">Latest results</h3><ul class="nw-results">{"".join(result(g) for g in done)}</ul></div>'
+            f'<div><h3 class="nw-head">Coming up</h3><ul class="nw-coming">{"".join(soon(g) for g in coming)}</ul>{stat}{dates}</div></div>')
+
+
+def home_browse_html():
+    """Under the countries: cuisine pages, the restaurants with their own page, and the list guides, three short columns."""
+    cuisine = sorted((p for p in pages if p["type"] == "cuisine" and starred_n.get(p["id"])), key=lambda p: -starred_n[p["id"]])
+    cuisines = "".join(f'<li><a href="{p["path"]}" data-home="cuisine">{e(p["name"])} in {e(places[p["parent"]]["name"])}</a>'
+                       f'<span class="count">{starred_n[p["id"]]}</span></li>' for p in cuisine)
+    own = sorted((r for r in restaurants if r.get("page")), key=lambda r: RESTAURANT_PAGES.index(r["id"]))
+    rests = "".join(f'<li><a href="{e(r["page"])}" data-home="restaurant">{e(r["name"])}</a> {star_icons(r["stars"])}'
+                    f'<span class="sr-only">{STAR_WORDS[r["stars"]]} stars</span><span class="count">{e(area_line(r).split(", ")[-1])}</span></li>' for r in own)
+    lists = "".join(f'<li><a href="/guides/{gid}/" data-home="list">{e(label)}</a></li>' for gid, label in HOME_LISTS if gid in guides)
+    col = lambda title, items: f'<div class="br-col"><h3 class="nw-head">{title}</h3><ul class="br-list">{items}</ul></div>' if items else ""
+    return (f'<div class="br-grid">{col("By cuisine", cuisines)}{col("Restaurants people search for", rests)}'
+            f'{col("Lists and rankings", lists)}</div>')
+
+
+def home_trust_html():
+    """The line above the footer: where the figures come from, and an invitation to quote them."""
+    month = site.get("updated", "")
+    checked = f"{MONTH_NAMES[int(month[5:7]) - 1]} {month[:4]}" if re.fullmatch(r"\d{4}-\d{2}", month) else ""
+    quote = ('<li><strong>Writing about Michelin stars?</strong> Quote our figures with a link. '
+             '<a href="/guides/how-much-does-a-michelin-star-restaurant-cost/" data-home="trust">What a starred meal costs →</a></li>'
+             if "how-much-does-a-michelin-star-restaurant-cost" in guides else "")
+    return (f'<ul class="trust">'
+            f'<li><strong>Prices from the restaurants themselves.</strong> Their own websites first, then reviews and booking sites; each one links to where it came from.</li>'
+            f'<li><strong>Checked {e(checked)}.</strong> Per person, before service, with each country’s usual service, tax or tip shown on the bill.</li>'
+            f'<li><strong>Stars from the MICHELIN Guide.</strong> The Starred Bill is independent: not affiliated with Michelin, and no restaurant pays to appear.</li>'
+            f'{quote}</ul>')
 
 
 def build_home():
@@ -3018,7 +3118,7 @@ def build_home():
         "homeUrl": build_home_data(starred),
         "starCounts": [len(starred)] + [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)],
         "countries": countries, "groups": groups, "soon": soon, "noStars": no_star_countries(),
-        "places": [dict(link(p), type=p["type"]) for p in by_size(q for q in pages if q["type"] != "cuisine")],
+        "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] != "cuisine")],
         "currencies": CURRENCIES, "switchable": currency_data.get("switchable", []), "updated": site.get("updated", ""),
         "worldUrl": world_url, "worldTotal": world_total, "languages": DEFAULT_LANGUAGES,
     }
@@ -3027,11 +3127,13 @@ def build_home():
         "description": e(f"Compare dinner, lunch and wine pairing prices at {len(starred):,} Michelin-starred restaurants in {len(countries)} countries, from London and Paris to Tokyo."),
         "canonical": SITE_URL + "/",
         "eyebrow": "Michelin star restaurants, priced",
-        "h1": "Michelin star restaurants: what they <em>cost</em>, city by city.",
-        "heroText": "Dinner, lunch and wine pairing prices per person at Michelin-starred restaurants, side by side and linked to where each price came from.",
+        "h1": "Michelin star restaurants: what they really <em>cost</em>.",
+        "heroText": e(f"Dinner, lunch and wine pairing prices at {len(starred):,} Michelin-starred restaurants in {len(countries)} countries, "
+                      "each linked to where it came from. Search a city, a restaurant, a chef or a cuisine."),
         # English only; Chinese names stay for searching.
-        "destinations": home_countries_html(countries, soon), "ways": home_ways_html(), "less": home_less_html(starred),
-        "guides": home_guides_html(), "data": as_json(only_langs(data, {"Zh"}, PAGE_TEXTS)), "homeUrl": data["homeUrl"],
+        "destinations": home_countries_html(countries, soon), "ways": home_ways_html(len(countries)), "less": home_less_html(starred),
+        "guides": home_guides_html(), "sample": home_sample_html(starred), "whatsNew": home_new_html(starred),
+        "browse": home_browse_html(), "trust": home_trust_html(), "data": as_json(only_langs(data, {"Zh"}, PAGE_TEXTS)), "homeUrl": data["homeUrl"],
     }))
 
 

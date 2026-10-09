@@ -692,6 +692,79 @@ button.crow-from { background: none; border: 0; padding: 0; font: inherit; font-
 .home-more { margin-top: 18px; }
 .home-more a { color: var(--green); font-weight: 600; text-decoration: none; }
 .home-more a:hover { text-decoration: underline; text-underline-offset: 3px; }
+/* The homepage's hero: the promise, search and figures on the left, a real till receipt on the right (home_sample_html()
+   in build.py; home.js shows one at random and steps through the rest). */
+.home-hero .wrap { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: center; }
+.home-hero .figures { margin-top: 28px; max-width: 560px; }
+.home-sample { justify-self: end; width: 100%; max-width: 360px; display: grid; gap: 10px; }
+.sample-label { margin: 0; font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--band-muted); }
+.sample { margin: 0; display: grid; gap: 10px; }
+.sample[hidden] { display: none; }
+.sample .rp-receipt { transform: rotate(-1deg); }
+.sample figcaption { color: var(--band-muted); font-size: .9rem; line-height: 1.45; }
+.sample figcaption a { color: var(--band-ink); text-decoration: none; }
+.sample figcaption a:hover strong { text-decoration: underline; text-underline-offset: 3px; }
+.sample figcaption .stars { color: var(--gold); }
+.sample figcaption .stars svg { width: 12px; height: 12px; }
+.sample-more { display: block; margin-top: 2px; color: var(--gold) !important; font-weight: 600; }
+.sample-next { justify-self: start; background: none; border: 0; padding: 0; color: var(--band-muted); font: inherit; font-size: .85rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.sample-next:hover { color: var(--band-ink); }
+/* Popular destinations as cards: name, count and cheapest dinner menu (home_ways_html()); a member's home city first (home.js). */
+.pop-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 168px), 1fr)); gap: 10px; }
+.pop-card { position: relative; display: grid; gap: 2px; height: 100%; box-sizing: border-box; padding: 12px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); text-decoration: none; transition: border-color .15s, box-shadow .15s; }
+.pop-card:hover { border-color: var(--green); box-shadow: 0 6px 18px rgba(0, 0, 0, .08); }
+.pc-name { font-family: var(--font-display); font-size: 1.15rem; line-height: 1.2; }
+.pc-n { color: var(--muted); font-size: .84rem; }
+.pc-from { font-family: var(--font-num); font-size: .8rem; color: var(--green); }
+.pop-card.is-home { border-color: var(--gold); }
+.pc-tag { justify-self: start; font-size: .66rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); }
+/* "What's new" (home_new_html()): the latest results pages, the next ceremonies and the year's new stars. */
+.nw-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.nw-head { font-family: var(--font-body); font-size: .75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+.nw-results { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 10px; }
+.nw-results a { display: grid; gap: 4px; height: 100%; box-sizing: border-box; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); text-decoration: none; transition: border-color .15s, box-shadow .15s; }
+.nw-results a:hover { border-color: var(--green); box-shadow: 0 6px 18px rgba(0, 0, 0, .08); }
+.nw-results strong { font-family: var(--font-display); font-weight: 400; font-size: 1.08rem; line-height: 1.25; }
+.nw-sum { color: var(--muted); font-size: .86rem; line-height: 1.4; }
+.nw-date { font-family: var(--font-num); font-size: .76rem; color: var(--green); }
+.nw-coming { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.nw-coming li { display: grid; grid-template-columns: 7.5em minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 11px 16px; border-top: 1px solid var(--line); }
+.nw-coming li:first-child { border-top: 0; }
+.nw-coming a { color: var(--ink); font-weight: 600; text-decoration: none; }
+.nw-coming a:hover { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+.nw-stat { margin-top: 16px; color: var(--muted); font-size: .92rem; }
+.nw-stat .num { font-family: var(--font-num); color: var(--ink); font-size: 1.1rem; }
+/* Under the countries: cuisine pages, restaurant pages and list guides (home_browse_html()). */
+.br-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 36px; }
+.br-list { list-style: none; margin: 0; padding: 0; }
+.br-list li { display: flex; align-items: baseline; gap: 6px; padding: 8px 0; border-top: 1px solid var(--line); font-size: .95rem; }
+.br-list li:first-child { border-top: 0; padding-top: 0; }
+.br-list a { color: var(--ink); font-weight: 500; text-decoration: none; }
+.br-list a:hover { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+.br-list .stars { color: var(--gold); }
+.br-list .stars svg { width: 11px; height: 11px; }
+.br-list .count { margin-inline-start: auto; color: var(--muted); font-size: .82rem; white-space: nowrap; }
+/* The line above the footer: where the figures come from (home_trust_html()). */
+.home-trust { padding-block: 32px; background: var(--surface); }
+.trust { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; font-size: .88rem; color: var(--muted); line-height: 1.5; }
+.trust strong { display: block; color: var(--ink); font-weight: 600; margin-bottom: 2px; }
+.trust a { color: var(--green); font-weight: 600; }
+@media (max-width: 960px) {
+  .home-hero .wrap { grid-template-columns: minmax(0, 1fr); }
+  .home-sample { justify-self: start; }
+  .nw-grid { grid-template-columns: minmax(0, 1fr); }
+  .br-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .trust { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+@media (max-width: 720px) {
+  .home-sample { max-width: none; }
+  .home-hero .figures { margin-top: 20px; }
+  .pop-cards { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 46%; overflow-x: auto; scroll-snap-type: x mandatory; margin-inline: -16px; padding: 0 16px 6px; scrollbar-width: none; }
+  .pop-cards::-webkit-scrollbar { display: none; }
+  .pop-cards li { scroll-snap-align: start; scroll-margin-inline: 16px; }
+  .br-grid, .trust { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .trust { gap: 16px; }
+}
 /* An empty wishlist shrinks to a line or two (home.js sets .is-empty). */
 #wishlist.is-empty { padding-block: 36px; }
 #wishlist.is-empty .section-head { margin-bottom: 12px; }

@@ -372,6 +372,20 @@ def by_size(ps):
     return sorted(ps, key=lambda p: (-starred_n[p["id"]], p["name"]))
 
 
+# A region inside a region (Mallorca in the Balearic Islands, Perthshire in Scotland) is listed beside the regions
+# directly inside a page when its parent holds only a few, so it isn't two clicks away; England's counties stay on England.
+FEW_SUBREGIONS = 3
+
+
+def regions_in(pid):
+    inside = [q for q in pages if q["type"] == "region" and q.get("parent") == pid]
+    for q in list(inside):
+        subs = [s for s in pages if s["type"] == "region" and s.get("parent") == q["id"]]
+        if len(subs) <= FEW_SUBREGIONS:
+            inside += subs
+    return inside
+
+
 # "Nearby" links between neighbouring pages (Cumbria -> Lancashire, Northumberland, Yorkshire), worked out from where
 # their restaurants are: two places are as far apart as their closest pair of restaurants.
 NEARBY_KM = 150   # list every neighbour this close...
@@ -389,8 +403,18 @@ def spots(pid):
     return _spots[pid]
 
 
+_apart = {}
+
+
 def apart_km(a, b):
     """The distance between two places' closest restaurants, or None when it's clearly over NEARBY_FAR_KM."""
+    key = (a, b) if a < b else (b, a)
+    if key not in _apart:
+        _apart[key] = measure_apart(a, b)
+    return _apart[key]
+
+
+def measure_apart(a, b):
     sa, sb = spots(a), spots(b)
     if not sa or not sb:
         return None
@@ -404,14 +428,15 @@ def apart_km(a, b):
 def nearby(p, linked):
     """Starred places near this one, nearest first: at about the same level (a county's fellow counties and the
     nations next door, a region's neighbouring regions, a country's neighbours), leaving out those above or
-    inside it and any the page already links to."""
+    inside it and any the page already links to. With linked None: every candidate kept, with its distance, and the list
+    shown (remote_nearby() uses these)."""
     if p["type"] not in ("country", "region", "city") or not spots(p["id"]):
-        return []
+        return [] if linked is not None else ([], [])
     depth = len(chain(p["id"]))
     found = []
     for q in pages:
         qid = q["id"]
-        if q["type"] not in ("country", "region", "city") or qid == p["id"] or not starred_n[qid] or q["path"] in linked:
+        if q["type"] not in ("country", "region", "city") or qid == p["id"] or not starred_n[qid] or q["path"] in (linked or ()):
             continue
         if qid in chain(p["id"]) or p["id"] in chain(qid) or abs(len(chain(qid)) - depth) > 1:
             continue
@@ -433,7 +458,31 @@ def nearby(p, linked):
             keep.append((km, q))
         elif km <= rival[0] + 1 and better(q, rival[1]):
             keep[keep.index(rival)] = (km, q)
-    return [q for i, (km, q) in enumerate(keep) if km <= NEARBY_KM or i < NEARBY_MIN][:NEARBY_MAX]
+    near = [q for i, (km, q) in enumerate(keep) if km <= NEARBY_KM or i < NEARBY_MIN][:NEARBY_MAX]
+    if linked is None:
+        return keep, near
+    # Remote places that list this one link back from it, so an island isn't left with almost no way in (Mallorca
+    # from Catalonia and the Valencian Community).
+    back = [places[r] for r in remote_nearby().get(p["id"], ()) if places[r]["path"] not in linked and places[r] not in near]
+    return near + by_size(back)
+
+
+_remote = None
+
+
+def remote_nearby():
+    """For each place, the remote places (none of their own neighbours within NEARBY_KM) whose "Nearby" lists it."""
+    global _remote
+    if _remote is None:
+        _remote = {}
+        for r in pages:
+            if r["type"] not in ("country", "region", "city") or not starred_n[r["id"]]:
+                continue
+            keep, near = nearby(r, None)
+            if keep and keep[0][0] > NEARBY_KM:
+                for q in near:
+                    _remote.setdefault(q["id"], []).append(r["id"])
+    return _remote
 
 
 def explore_links(p):
@@ -1085,7 +1134,7 @@ def name_in(q, lang):
 
 def areas_html(p, lang):
     """A destination page's starred areas as plain links with their counts and cheapest dinner menu, e.g. "Cumbria 13 ·
-    Dinner from £95": the regions directly inside and every city further down (a city's districts), so search engines
+    Dinner from £95": the regions inside (see regions_in()) and every city further down (a city's districts), so search engines
     reach them and visitors can go straight there. Plain names, as it's a list: keyword wording is for links in sentences."""
     if p["type"] == "district":
         return ""
@@ -1094,7 +1143,7 @@ def areas_html(p, lang):
     elif p["type"] == "group":
         inside = [places[i] for i in p["includes"] if i in places]
     else:
-        inside = [q for q in pages if (q["type"] == "region" and q.get("parent") == p["id"]) or (q["type"] == "city" and p["id"] in chain(q["id"])[1:])]
+        inside = regions_in(p["id"]) + [q for q in pages if q["type"] == "city" and p["id"] in chain(q["id"])[1:]]
     inside = by_size(q for q in inside if starred_n[q["id"]])
     if len(inside) < 2:
         return ""
@@ -2081,8 +2130,8 @@ def build_home():
     for c in by_size(p for p in pages if p["type"] == "country"):
         mine = [r for r in starred if r["country"] == c["id"]]
         menus = sorted((r for r in mine if r.get("dinnerType") == "menu" and r.get("dinner") is not None), key=lambda r: r["dinner"])
-        # The regions directly inside the country (e.g. England, Scotland), then its cities.
-        cities = by_size(q for q in pages if q["type"] == "region" and q.get("parent") == c["id"]) + \
+        # The regions inside the country (e.g. England, Scotland, and Perthshire within Scotland), then its cities.
+        cities = by_size(regions_in(c["id"])) + \
             by_size(q for q in pages if q["type"] == "city" and country_of(q["id"]) == c["id"])
         countries.append({
             **names(c), "id": c["id"], "path": c["path"], "n": starred_n[c["id"]],

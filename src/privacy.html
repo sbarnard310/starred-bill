@@ -81,7 +81,7 @@
   <p>If you click Accept on our cookie banner, we also use Google Analytics, which sets cookies to recognise returning visitors and shows us how the site is used: pages viewed, time spent, where visitors come from, and the same anonymous clicks Umami counts. Google processes this data under its own privacy policy. If you click Reject, or make no choice, Google Analytics doesn't run and sets no cookies.</p>
   <p><button type="button" class="cookie-settings-btn" data-cookie-settings>Change cookie choice</button></p>
   <h2>Visit statistics</h2>
-  <p>We count visits with Umami, which uses no cookies and doesn't identify you. It records the page, the site you came from, your country and type of device, and anonymous counts of clicks such as saving a restaurant, saving a diary entry (never what's in it), sharing a page, searching, showing a page's full list of restaurants or opening a restaurant's website. On Help me pick it counts the answers chosen, such as the city, meal or budget, but never your location. When someone creates an account or signs in, it records only that this happened and whether by email or Google, never your email address. When a member saves a preference, it records only which kind (home city, currency or dietary needs), never what was chosen.</p>
+  <p>We count visits with Umami, which uses no cookies and doesn't identify you. It records the page, the site you came from, your country and type of device, and anonymous counts of clicks such as saving a restaurant, saving a diary entry (never what's in it), sharing a page, searching, showing a page's full list of restaurants or opening a restaurant's website. On Help me pick it counts the answers chosen, such as the city, meal or budget, but never your location. When someone creates an account or signs in, it records only that this happened and whether by email or Google, never your email address. When a member saves a preference, it records only which kind (home city, currency or dietary needs), never what was chosen. When a member turns star emails on or off, or unsubscribes, it records only that and which kind of email. Links in our star emails carry a tag saying they came from one, so we can count the visits they bring, never who opened them.</p>
   <h2>With a free account</h2>
   <p>When you create an account we keep:</p>
   <ul>
@@ -89,23 +89,25 @@
     <li>the restaurants on your wishlist and the ones you've marked as been there, with any dates you add</li>
     <li>your preferences, only if you set them on Your account or say yes when we offer to remember a choice: your home city (one of the destinations on our site, such as London, never your address or location), the currency you want prices in, and your dietary needs</li>
     <li>anything you write in your dining diary: what you paid per person and in which currency, the menu you had, and your notes on any saved restaurant</li>
+    <li>if you ask for star emails on Your account: which ones you chose (New stars near you, and the countries you want ceremony-night summaries for), a random code that makes the unsubscribe link in each email work, and a record of which of these emails we've sent you, so you never get one twice</li>
   </ul>
   <p>Dietary needs such as halal, kosher or gluten-free can say something about your religion or health. We keep them only because you chose to save them, use them only to start Help me pick with that choice selected, and you can clear them at any time on Your account.</p>
   <p>Your diary is private. No one else can see it, and we won't use it for anything, not even to check our prices, without asking you first.</p>
-  <p>We use these only to sign you in, to show your lists on any device and to start each page from your preferences. We never sell them or share them for marketing, and we don't send newsletters unless you ask for them.</p>
+  <p>We use these only to sign you in, to show your lists on any device, to start each page from your preferences and to send the star emails you asked for. We never sell them or share them for marketing, and we don't send newsletters unless you ask for them.</p>
   <h2>If you email us</h2>
   <p>We keep your email address and message so we can reply, and delete them once they're no longer needed (normally within a year).</p>
   <h2>Why we're allowed to use it</h2>
   <ul>
     <li><strong>Your account:</strong> to provide the account you asked for (a contract with you).</li>
     <li><strong>Your dietary needs:</strong> your explicit consent, given when you choose to save them, which you can withdraw at any time by clearing them.</li>
+    <li><strong>Star emails:</strong> your consent, given when you turn them on, which you can withdraw at any time with the unsubscribe link in any of them or on Your account.</li>
     <li><strong>Google Analytics:</strong> your consent, which you can withdraw at any time with the Change cookie choice button above.</li>
     <li><strong>Umami visit counts and replying to emails:</strong> our legitimate interest in running and improving the site, in ways that don't identify you or that you started.</li>
   </ul>
   <h2>Who handles it</h2>
   <ul>
     <li><strong>Supabase</strong> stores accounts, lists and preferences, on servers in London.</li>
-    <li><strong>Resend</strong> sends the sign-in emails.</li>
+    <li><strong>Resend</strong> sends the sign-in emails and the star emails you ask for.</li>
     <li><strong>Google</strong>, only if you choose Continue with Google.</li>
     <li><strong>Umami</strong> counts visits, without cookies (see Visit statistics).</li>
     <li><strong>Google Analytics</strong>, only if you accept cookies.</li>
@@ -134,7 +136,7 @@
   <p>如果你在 Cookie 橫幅上點選「接受」，我們也會使用 Google Analytics。它會設定 Cookie 以辨識回訪的訪客，讓我們了解網站的使用情形：瀏覽的頁面、停留時間、訪客來源，以及與 Umami 相同的匿名點擊次數。Google 依其自身的隱私權政策處理這些資料。如果你點選「拒絕」或未作選擇，Google Analytics 不會執行，也不會設定任何 Cookie。</p>
   <p><button type="button" class="cookie-settings-btn" data-cookie-settings>更改 Cookie 選擇</button></p>
   <h2>瀏覽統計</h2>
-  <p>我們使用 Umami 計算瀏覽量。Umami 不使用 Cookie，也不會識別你的身分。它記錄瀏覽的頁面、你從哪個網站而來、所在國家與裝置類型，以及匿名的點擊次數，例如收藏餐廳、儲存日記（絕不記錄內容）、分享頁面、搜尋或開啟餐廳網站。在「幫我挑選」頁面上，它會計算所選的答案，例如城市、餐點或預算，但絕不記錄你的位置。有人建立帳戶或登入時，只記錄這件事發生過，以及是使用電子郵件還是 Google，絕不記錄你的電子郵件地址。會員儲存偏好設定時，只記錄是哪一類（家鄉城市、幣別或飲食需求），絕不記錄所選的內容。</p>
+  <p>我們使用 Umami 計算瀏覽量。Umami 不使用 Cookie，也不會識別你的身分。它記錄瀏覽的頁面、你從哪個網站而來、所在國家與裝置類型，以及匿名的點擊次數，例如收藏餐廳、儲存日記（絕不記錄內容）、分享頁面、搜尋或開啟餐廳網站。在「幫我挑選」頁面上，它會計算所選的答案，例如城市、餐點或預算，但絕不記錄你的位置。有人建立帳戶或登入時，只記錄這件事發生過，以及是使用電子郵件還是 Google，絕不記錄你的電子郵件地址。會員儲存偏好設定時，只記錄是哪一類（家鄉城市、幣別或飲食需求），絕不記錄所選的內容。會員開啟或關閉星級郵件、或取消訂閱時，只記錄這件事與郵件類型。星級郵件中的連結帶有標記，表示來自這類郵件，讓我們能計算它們帶來的瀏覽量，但絕不記錄是誰開啟的。</p>
   <h2>建立免費帳戶後</h2>
   <p>建立帳戶後，我們會保存：</p>
   <ul>
@@ -142,23 +144,25 @@
     <li>你願望清單上的餐廳、你標示為去過的餐廳，以及你填寫的日期</li>
     <li>你的偏好設定，僅在你於「你的帳戶」中設定，或在我們詢問是否記住某個選擇時同意才會保存：你的家鄉城市（本網站上的某個目的地，例如倫敦，絕不是你的地址或位置）、你想用來顯示價格的幣別，以及你的飲食需求</li>
     <li>你在用餐日記裡寫下的內容：每人花費與貨幣、你吃的菜單，以及你為任何收藏餐廳寫的筆記</li>
+    <li>若你在「你的帳戶」中訂閱星級郵件：你選擇了哪些（「你附近的新星」，以及你想收到頒獎之夜摘要的國家）、讓每封郵件中的取消訂閱連結生效的隨機代碼，以及我們已寄給你哪些這類郵件的紀錄，確保你不會重複收到</li>
   </ul>
   <p>清真、猶太潔食或無麩質等飲食需求可能透露你的宗教或健康資訊。我們只因你選擇儲存才會保存，只用來在「幫我挑選」中預先選好該選項，你也可以隨時在「你的帳戶」中清除。</p>
   <p>你的日記是私人的。其他人都看不到；未經你同意，我們不會把它用於任何用途，包括核對我們的價格。</p>
-  <p>這些資料只用來讓你登入、在各裝置上顯示你的清單，並讓每個頁面依你的偏好設定開啟。我們絕不出售這些資料，也不會為行銷目的分享；除非你要求，我們不會寄送電子報。</p>
+  <p>這些資料只用來讓你登入、在各裝置上顯示你的清單，讓每個頁面依你的偏好設定開啟，以及寄送你所訂閱的星級郵件。我們絕不出售這些資料，也不會為行銷目的分享；除非你要求，我們不會寄送電子報。</p>
   <h2>如果你寄信給我們</h2>
   <p>我們會保存你的電子郵件地址與來信內容以便回覆，不再需要時即會刪除（通常在一年內）。</p>
   <h2>我們使用資料的法律依據</h2>
   <ul>
     <li><strong>你的帳戶：</strong>為提供你所要求的帳戶（與你之間的契約）。</li>
     <li><strong>你的飲食需求：</strong>你在選擇儲存時給予的明確同意；你可隨時清除以撤回同意。</li>
+    <li><strong>星級郵件：</strong>你在開啟時給予的同意；你可隨時使用任一封郵件中的取消訂閱連結或在「你的帳戶」中撤回。</li>
     <li><strong>Google Analytics：</strong>你的同意；你可隨時使用上方的「更改 Cookie 選擇」按鈕撤回。</li>
     <li><strong>Umami 瀏覽統計與回覆來信：</strong>我們經營與改善網站的正當利益，且方式不會識別你的身分，或由你主動發起。</li>
   </ul>
   <h2>由誰處理</h2>
   <ul>
     <li><strong>Supabase</strong>：保存帳戶、清單與偏好設定，伺服器位於倫敦。</li>
-    <li><strong>Resend</strong>：寄送登入郵件。</li>
+    <li><strong>Resend</strong>：寄送登入郵件，以及你所訂閱的星級郵件。</li>
     <li><strong>Google</strong>：僅在你選擇使用 Google 繼續時。</li>
     <li><strong>Umami</strong>：計算瀏覽量，不使用 Cookie（見「瀏覽統計」）。</li>
     <li><strong>Google Analytics</strong>：僅在你接受 Cookie 時。</li>

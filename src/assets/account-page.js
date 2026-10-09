@@ -202,8 +202,8 @@ function render() {
   }
   const visited = loadVisited();
   const been = Object.keys(visited).map((id) => byId.get(id)).filter(Boolean);
-  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + progress(been) + diaryList(been) + wishList() + otherNotes() + prefsSection() + dataSection();
-  if (location.hash === "#preferences" && !ui.jumped) { ui.jumped = true; $("preferences").scrollIntoView(); }
+  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + progress(been) + diaryList(been) + wishList() + otherNotes() + prefsSection() + emailsSection() + dataSection();
+  if (/^#(preferences|emails)$/.test(location.hash) && !ui.jumped && $(location.hash.slice(1))) { ui.jumped = true; $(location.hash.slice(1)).scrollIntoView(); }
 }
 
 function downloadData() {
@@ -217,6 +217,7 @@ function downloadData() {
       paidPerPerson: d(id).paid != null ? d(id).paid : null, currency: d(id).paid != null ? d(id).cur || null : null, menu: d(id).menu || null, note: d(id).note || null })),
     otherNotes: Object.keys(diary).filter((id) => !(id in visited) && !wish.includes(id)).map((id) => Object.assign({ id, name: nameFor(id) }, diary[id])),
     preferences: { homeCity: loadProfile().homeName || null, currency: loadProfile().currency || null, dietaryNeeds: loadProfile().diet || null },
+    starEmails: alerts.row ? { newStarsNearYou: alerts.row.near_home, ceremonySummaries: alerts.row.countries.map((c) => (alertCountry(c) || [c, c])[1]) } : null,
   };
   const url = URL.createObjectURL(new Blob([JSON.stringify(out, null, 2)], { type: "application/json" }));
   const a = document.createElement("a");

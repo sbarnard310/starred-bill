@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{{title}}</title>
 <meta name="description" content="{{description}}">
+<meta name="robots" content="noindex">
 <link rel="canonical" href="{{canonical}}">
 <meta property="og:title" content="{{title}}">
 <meta property="og:description" content="{{description}}">
@@ -17,7 +18,6 @@
 <meta property="og:image:alt" content="{{ogAlt}}">
 <meta name="twitter:card" content="summary_large_image">
 {{jsonld}}
-<meta name="robots" content="noindex">
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#10362A">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
@@ -31,7 +31,7 @@
 <!-- Visit statistics: Umami, no cookies (see the privacy page) -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="0717d470-551a-4b38-8632-c2e273c3cc5d" data-domains="starredbill.com,www.starredbill.com"></script>
 </head>
-<body class="account-page">
+<body class="info-page">
 {{icons}}
 <div class="masthead">
 <header class="site-header">
@@ -66,10 +66,13 @@
   </div>
 </div>
 
-<main class="wrap acct-main" id="acctMain">
-  <h1 class="acct-h1" data-i18n="accTitle">Your account</h1>
-  <p class="acct-lede" id="acctLede"></p>
-  <div id="acctBody"><p class="acct-loading" data-i18n="accLoading"></p></div>
+<main class="wrap prose" id="unsubMain">
+<article lang="en">
+  <h1 id="unsubTitle">Unsubscribe</h1>
+  <p id="unsubText" aria-live="polite">One moment…</p>
+  <noscript><p>This page needs JavaScript to unsubscribe you. You can also turn the emails off on <a href="/account/#emails">Your account</a>, or reply to any of our emails with “unsubscribe”.</p></noscript>
+  <p id="unsubMore" hidden>Changed your mind, or want just some of them? Choose which emails you get on <a href="/account/#emails">Your account</a>.</p>
+</article>
 </main>
 
 <footer>
@@ -85,7 +88,6 @@
 <script id="page-data" type="application/json">{{data}}</script>
 <script src="{{asset:common.js}}"></script>
 <script src="{{asset:account.js}}"></script>
-<script src="{{asset:account-alerts.js}}"></script>
-<script src="{{asset:account-page.js}}"></script>
+<script src="{{asset:unsubscribe.js}}"></script>
 </body>
 </html>

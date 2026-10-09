@@ -82,3 +82,77 @@ create or replace function public.delete_my_account() returns void language sql 
 $$;
 revoke execute on function public.delete_my_account() from public, anon;
 grant execute on function public.delete_my_account() to authenticated;
+
+-- ---------- Star emails (added 9 Oct 2026) ----------
+-- Two emails members can ask for on Your account, sent the night a MICHELIN Guide's new stars reach our pages
+-- (scripts/star_alerts.py, run by .github/workflows/star-alerts.yml): "New stars near you" (restaurants that won or
+-- gained a star within 100 km of the home city in `profile`) and a summary of what changed in the countries they choose.
+-- One row per person; nothing is sent without a row saying yes. `token` is the secret in each email's unsubscribe link.
+create table if not exists public.email_alerts (
+  user_id uuid primary key default auth.uid() references auth.users (id) on delete cascade,
+  near_home boolean not null default false,
+  countries text[] not null default '{}' check (cardinality(countries) <= 80 and array_to_string(countries, ' ') ~ '^[a-z0-9 -]*$'),
+  token uuid not null default gen_random_uuid() unique,
+  updated_at timestamptz not null default now()
+);
+
+alter table public.email_alerts enable row level security;
+
+drop policy if exists "Read own email choices" on public.email_alerts;
+drop policy if exists "Add own email choices" on public.email_alerts;
+drop policy if exists "Change own email choices" on public.email_alerts;
+drop policy if exists "Remove own email choices" on public.email_alerts;
+create policy "Read own email choices" on public.email_alerts for select to authenticated using ((select auth.uid()) = user_id);
+create policy "Add own email choices" on public.email_alerts for insert to authenticated with check ((select auth.uid()) = user_id);
+create policy "Change own email choices" on public.email_alerts for update to authenticated using ((select auth.uid()) = user_id) with check ((select auth.uid()) = user_id);
+create policy "Remove own email choices" on public.email_alerts for delete to authenticated using ((select auth.uid()) = user_id);
+
+-- Members choose what they get; the token is made here and never changed from the page. (user_id is in the update
+-- list because an upsert names it; the policies keep it the member's own.)
+revoke all on public.email_alerts from anon, authenticated;
+grant select, delete on public.email_alerts to authenticated;
+grant insert (user_id, near_home, countries), update (user_id, near_home, countries) on public.email_alerts to authenticated;
+
+drop trigger if exists email_alerts_touch on public.email_alerts;
+create trigger email_alerts_touch before update on public.email_alerts for each row execute function public.touch_saved();
+
+-- Which emails have gone out (topic: '<ceremony guide id>@<starsUpdated>'), so a rerun never sends one twice.
+-- Only the sending job reads or writes it: no policies, so signed-in visitors can't see it.
+create table if not exists public.email_sent (
+  user_id uuid not null references auth.users (id) on delete cascade,
+  topic text not null check (length(topic) <= 120),
+  sent_at timestamptz not null default now(),
+  primary key (user_id, topic)
+);
+alter table public.email_sent enable row level security;
+revoke all on public.email_sent from anon, authenticated;
+
+-- The people to email and what they asked for, for the sending job only (it signs in with the secret key).
+create or replace function public.alert_recipients()
+returns table (user_id uuid, email text, near_home boolean, countries text[], home_place text, home_name text, token uuid)
+language sql stable security definer set search_path = '' as $$
+  select a.user_id, u.email::text, a.near_home, a.countries, p.home_place, p.home_name, a.token
+  from public.email_alerts a
+  join auth.users u on u.id = a.user_id
+  left join public.profile p on p.user_id = a.user_id
+  where (a.near_home or cardinality(a.countries) > 0) and u.email is not null and u.email <> '';
+$$;
+revoke execute on function public.alert_recipients() from public, anon, authenticated;
+grant execute on function public.alert_recipients() to service_role;
+
+-- The unsubscribe link in every email: works without signing in, by the row's token.
+-- what: 'near' (New stars near you), 'countries' (ceremony summaries) or 'all'. Answers 'ok' or 'unknown'.
+create or replace function public.email_unsubscribe(t uuid, what text default 'all') returns text
+language plpgsql security definer set search_path = '' as $$
+declare n int;
+begin
+  update public.email_alerts set
+    near_home = case when what in ('near', 'all') then false else near_home end,
+    countries = case when what in ('countries', 'all') then '{}'::text[] else countries end
+  where token = t;
+  get diagnostics n = row_count;
+  return case when n = 0 then 'unknown' else 'ok' end;
+end;
+$$;
+revoke execute on function public.email_unsubscribe(uuid, text) from public;
+grant execute on function public.email_unsubscribe(uuid, text) to anon, authenticated;

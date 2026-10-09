@@ -3305,6 +3305,67 @@ def build_redirects():
 ''')
 
 
+# ---------- Star emails (9 Oct 2026) ----------
+# /data/alerts.json: what each MICHELIN Guide's latest ceremony changed, for the two emails members can ask for on Your
+# account ("New stars near you" and the ceremony-night summary for chosen countries). scripts/star_alerts.py reads it
+# from the build when a guide's starsUpdated is set; no page loads it (the account page gets just the countries, with
+# each one's next ceremony). Everything in it is already public on the destination pages.
+def alerts_data():
+    def kind(r):
+        if r.get("status") == "closed":
+            return "closed"
+        if r.get("status") in ("lost", "changed"):
+            return "lost"
+        return r.get("change")
+    def where(r):
+        town = places[r["city"]]
+        up = places[town["parent"]]["name"] if town["type"] == "district" else ""  # "Mayfair, London"
+        parts = [x for x in (r.get("area"), r.get("cityName"), up) if x]
+        return ", ".join(x for i, x in enumerate(parts) if parts.index(x) == i and not (i and x in parts[0]))
+    out_guides, countries = [], {}
+    for g in ceremony_guides():
+        covered = [r for r in restaurants if set(g.get("places", [])) & set(r["_chain"])]
+        now = guide_changes(g, covered) if g.get("last") else None
+        gc = sorted({r["country"] for r in covered if r.get("stars") in (1, 2, 3) and not r.get("status")})
+        nxt = [(g.get("coming") or {}).get("date") or g.get("due") or "", bool(g.get("coming"))]
+        for c in gc:  # each country's next ceremony (the soonest of its guides') and whether its date is announced
+            if nxt[0] and (not countries.get(c, [""])[0] or nxt[0] < countries[c][0]):
+                countries[c] = nxt
+            countries.setdefault(c, ["", False])
+        out_guides.append({
+            "id": g["id"], "name": g["name"], "last": (g.get("last") or {}).get("date"), "edition": (g.get("last") or {}).get("edition"),
+            "starsUpdated": g.get("starsUpdated", ""), "updating": bool(g["status"]), "marked": now is not None, "countries": gc,
+            "results": f"/guides/{results_page(g)}/" if results_page(g) else None,
+            "changes": [{"id": r["id"], "name": r["name"], "stars": r.get("stars", 0), "formerStars": r.get("formerStars"),
+                         "kind": kind(r), "country": r["country"], "where": where(r), "path": r["cityPath"], "url": restaurant_href(r),
+                         "lat": r.get("lat"), "lng": r.get("lng"),
+                         "dinner": money(r["dinner"], r["cur"]) if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu" else ""}
+                        for r in (now or [])],
+        })
+    def centre(rs):
+        pts = sorted((r["lat"], r["lng"]) for r in rs if r.get("lat") is not None and r.get("lng") is not None)
+        if not pts:
+            return None, None
+        return round(pts[len(pts) // 2][0], 4), round(sorted(p[1] for p in pts)[len(pts) // 2], 4)
+    out_places = {}
+    for p in pages:
+        if p["type"] in ("group", "cuisine"):
+            continue
+        rs = members(p)
+        lat, lng = centre(rs)
+        out_places[p["id"]] = [p["name"], p["path"], country_of(p["id"]) or "", p["type"], lat, lng]
+    return {"guides": out_guides, "places": out_places,
+            "countries": [[c, places[c]["name"]] + countries[c] for c in sorted(countries, key=lambda c: places[c]["name"])]}
+
+
+def write_alerts_data():
+    """Writes /data/alerts.json and returns its countries for the account page's email choices."""
+    data = alerts_data()
+    (OUT / "data").mkdir(exist_ok=True)
+    (OUT / "data" / "alerts.json").write_text(as_json(data), "utf-8")
+    return data["countries"]
+
+
 def build_account_pages():
     """The account page (/account/) and the privacy notice (/privacy/). Signing in and the lists run in the browser (account.js)."""
     # The restaurants (for the lists and progress) are in /data/account.json, loaded only once someone is signed in.
@@ -3312,6 +3373,7 @@ def build_account_pages():
     cols = ["id", "name", "stars", "formerStars", "status", "area", "city", "dinner", "dinnerType"]
     data = {
         "accountUrl": write_data("account.json", rows_with_cities(restaurants, cols, ["cityPath", "cityName", "country", "cur"], lambda r, c: r.get(c))),
+        "alertCountries": write_alerts_data(),
         "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] not in ("group", "cuisine") and starred_n[q["id"]])],
         "currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES,
     }
@@ -3322,6 +3384,11 @@ def build_account_pages():
     write("/privacy/", render("privacy.html", {
         "title": "Privacy notice · The Starred Bill", "description": "What The Starred Bill keeps about you and why: your wishlist, been-there list and dining diary, visit statistics, cookie choices, and how to see or delete your data.",
         "canonical": SITE_URL + "/privacy/", "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES}),
+    }))
+    # The unsubscribe link in every star email (unsubscribe.js); noindex and not in the sitemap.
+    write("/unsubscribe/", render("unsubscribe.html", {
+        "title": "Unsubscribe · The Starred Bill", "description": "Stop the star emails from The Starred Bill.",
+        "canonical": SITE_URL + "/unsubscribe/", "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES}),
     }))
 
 

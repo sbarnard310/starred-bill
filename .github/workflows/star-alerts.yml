@@ -1,0 +1,59 @@
+# Star emails: when a push to main sets a MICHELIN Guide's starsUpdated in content/ceremonies.json (step 4 of ceremony
+# day), this waits until Cloudflare has published the updated pages, then emails the members who asked for
+# "New stars near you" or that guide's ceremony-night summary (scripts/star_alerts.py). Each email is recorded in
+# Supabase, so running it again never sends one twice. It needs two repository secrets (Settings › Secrets and variables ›
+# Actions): SUPABASE_SERVICE_KEY and RESEND_API_KEY; without them it sends nothing and says so.
+# By hand (Actions › Star emails › Run workflow): give guide ids to send for them, e.g. after Resend's daily allowance ran out.
+name: Star emails
+
+on:
+  push:
+    branches: [main]
+    paths: [content/ceremonies.json]
+  workflow_dispatch:
+    inputs:
+      guides:
+        description: "Guide ids from content/ceremonies.json, comma-separated (e.g. great-britain-ireland)"
+        required: true
+      send:
+        description: "Send them (untick to only count who would get one)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: star-emails
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # the commit before the push (to compare starsUpdated) and the sitemap dates
+      - name: Wait until Cloudflare has published this commit
+        run: |
+          for i in $(seq 1 80); do
+            live=$(curl -sfA 'StarredBill-Alerts/1.0' "https://starredbill.com/version.txt?t=$(date +%s)" || true)
+            if [ "$live" = "$GITHUB_SHA" ]; then echo "Live."; exit 0; fi
+            if [ -n "$live" ] && git merge-base --is-ancestor "$GITHUB_SHA" "$live" 2>/dev/null; then echo "Live (in $live)."; exit 0; fi
+            sleep 15
+          done
+          echo "Cloudflare hasn't published $GITHUB_SHA after 20 minutes, so no emails were sent (they'd link to old pages). Run this again once it's live."
+          exit 1
+      - name: Build the site
+        run: python3 build.py > /dev/null
+      - name: Send the star emails
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python3 scripts/star_alerts.py --guide "${{ inputs.guides }}" ${{ inputs.send && '--send' || '' }}
+          else
+            python3 scripts/star_alerts.py --before "${{ github.event.before }}" --send
+          fi

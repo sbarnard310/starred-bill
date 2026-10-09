@@ -983,6 +983,19 @@ dialog.signin::backdrop { background: rgba(6, 20, 14, .55); }
 .acct-section > .pref-small { margin: 10px 0 0; font-size: .82rem; }
 .pref-small a { color: var(--green); }
 @media (max-width: 720px) { .prefs { grid-template-columns: 1fr; } }
+/* Star emails (account-alerts.js emailsSection()) */
+.alerts { display: grid; gap: 14px; padding: 16px 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.al-opt { display: flex; gap: 12px; align-items: flex-start; }
+.al-opt input[type=checkbox] { flex: none; width: 18px; height: 18px; margin: 3px 0 0; accent-color: var(--green); }
+.al-opt strong { display: block; margin-bottom: 2px; }
+.al-opt span, .al-opt small { color: var(--muted); }
+.al-opt a { color: var(--green); }
+.al-countries { padding: 14px 0 0 30px; border-top: 1px solid var(--line); }
+.al-countries > div { flex: 1; min-width: 0; }
+.al-chosen { list-style: none; margin: 10px 0 0; padding: 0; }
+.al-chosen li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--line); }
+.al-chosen li > span { color: var(--ink); }
+.al-countries select { margin-top: 10px; max-width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: inherit; }
 .acct-confirm { margin-top: 14px; padding: 14px 16px; border-radius: var(--radius); background: var(--danger-soft); }
 .acct-confirm p { margin: 0 0 10px; }
 .acct-privacy { margin: 18px 0 0; font-size: .88rem; }

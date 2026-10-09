@@ -295,8 +295,10 @@ for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").
     for field in GUIDE_FIELDS:
         if not g.get(field):
             problem(where, f"needs a {field}")
-    if len(g.get("title", "")) > 60:
-        problem(where, f"title is {len(g['title'])} characters; search results cut it off after 60")
+    # A figure in the title ({{n3}}) counts as four characters, about as long as it is once filled in.
+    title_len = len(re.sub(r"\{\{\w+\}\}", "0000", g.get("title", "")))
+    if title_len > 60:
+        problem(where, f"title is {title_len} characters; search results cut it off after 60")
     if len(g.get("description", "")) > 155:
         problem(where, f"description is {len(g['description'])} characters; keep it to 155")
     if g.get("section") and g["section"] not in GUIDE_SECTIONS:
@@ -2431,6 +2433,7 @@ def home_less_html(starred):
 
 def home_guides_html():
     """A row of guide cards (one to swipe through on phones), then a link to them all."""
+    guide_bodies()  # fills in the figures in the guides' headings
     def card(g):
         img = guide_image(g)
         pic = (f'<img src="{img}-card.jpg" alt="" width="800" height="450" loading="lazy" decoding="async">' if img else
@@ -2870,6 +2873,7 @@ def list_stats(live, year):
                 "indianCountries": str(len({r["country"] for r in indian})), "indianCities": str(len(cities)),
                 "indianTopCity": cities[0] if cities else "–", "indianTopCityN": str(sum(1 for r in indian if indian_city(r) == cities[0])) if cities else "0"})
     three = [r for r in live if r["stars"] == 3]
+    out["n3Countries"] = str(len({r["country"] for r in three}))
     for key, rows in (("", three), ("UK", [r for r in three if r["country"] == "uk"]), ("London", [r for r in three if in_london(r)])):
         out[f"n3{key}"] = str(len(rows))
         menus = sorted((r for r in rows if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=usd)
@@ -3935,6 +3939,11 @@ def guide_bodies():
         stats = dict(guide_stats(), **ceremony_stats())
         blocks = guide_blocks(stats)
         _guide_bodies.update({g["id"]: guide_text(g["body"], stats, blocks) for g in guides.values()})
+        # Titles, headings, descriptions and summaries can quote figures too ("All {{n3}} Three-Michelin-Star Restaurants"),
+        # as plain text: every page that shows them escapes them itself.
+        for g in guides.values():
+            for field in ("title", "h1", "description", "summary"):
+                g[field] = re.sub(r"\{\{(\w+)\}\}", lambda m: str(stats.get(m.group(1), m.group(0))), g[field])
         _guide_bodies["_stats"] = stats
     return _guide_bodies
 

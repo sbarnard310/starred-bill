@@ -36,7 +36,7 @@
     },
     {
       "q": "Where is the nearest Michelin-starred restaurant to India?",
-      "a": "The closest guides to India are in the Gulf (Dubai, Abu Dhabi and Doha) and South-East Asia (Bangkok, Singapore and Kuala Lumpur). Dubai and Bangkok both have starred Indian restaurants."
+      "a": "The closest guides to India are in the Gulf (Dubai, Abu Dhabi and Doha) and South-East Asia (Bangkok, Singapore and <a href=\"/malaysia/kuala-lumpur/\">Kuala Lumpur</a>). Dubai and Bangkok both have starred Indian restaurants."
     }
   ],
   "imageAlt": "Illustration of a refined Indian thali in brass bowls with a dosa, spices and chai, and a gold star waiting to the side.",

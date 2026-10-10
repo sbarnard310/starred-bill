@@ -117,9 +117,12 @@ def page_checks(site):
 # inside relevant sentences, no self-links, one link per page per article, enough links in and out of every page.
 LANG_PREFIX = re.compile(r"^/(?:zh|yue|zhs|fr|ja|es|it|ko|da|sv|is|ca|th|de|nl|pt|nb|fi|pl|cs|hu|sl|hr|sr|el|tr|lt|lv|et|mt|ms|fil|vi|ar)/")
 VAGUE = re.compile(r"^(?:here|click here|this|this page|this guide|this link|page|link|more|read more|see more|learn more|find out more|see|go|our page)$", re.I)
+# Names that contain a place's name without being about it: a guide's own title ("MICHELIN Guide Thailand 2026"), and
+# places we have no page for whose names hold one we do ("New Mexico", "New South Wales").
+NOT_PLACES = re.compile(r"MICHELIN Guide [A-Z][\w’]*(?:(?: | & | and )[A-Z][\w’]*)*|Great Britain (?:&|and) Ireland|New Mexico|New South Wales")
 FEW_LINKS_IN = 3       # an indexed English page with fewer links to it than this is hard for Google to find
 FEW_CONTENT_LINKS = 2  # a page with fewer links of its own (beyond the menu and footer every page has) is a dead end
-LISTS = re.compile(r'<table.*?</table>|<(ol|nav) class="(?:rank-cards|jump-links)[^"]*".*?</\1>|<div class="change-lists">(?:.*?</ul></div>){2}</div>|<h3 id="three-[^"]*">.*?</h3>|<div class="results-top">.*?</div>', re.S)  # built from the data
+LISTS = re.compile(r'<p class="table-note">.*?</p>|<section class="guide-sources".*?</section>|<table.*?</table>|<(ol|nav) class="(?:rank-cards|jump-links)[^"]*".*?</\1>|<div class="change-lists">(?:.*?</ul></div>){2}</div>|<h3 id="three-[^"]*">.*?</h3>|<div class="results-top">.*?</div>', re.S)  # built from the data
 
 
 def link_checks(site):
@@ -200,6 +203,7 @@ def link_checks(site):
         # Places with a page of their own that the article names but doesn't link anywhere (longest names first, so
         # "New York" isn't also counted as York). For a writer to judge: not every mention deserves a link.
         text = " " + html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"<a\b.*?</a>", " ", prose, flags=re.S))) + " "
+        text = NOT_PLACES.sub(" ", re.sub(r"\s+", " ", text))
         missed = []
         for n in by_length:
             if len(n) > 3 and re.search(r"(?<![\w-])" + re.escape(n) + r"(?![\w-])", text):

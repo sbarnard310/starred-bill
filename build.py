@@ -3628,8 +3628,10 @@ def guide_stats():
     by_three = sorted(((sum(1 for r in live if r["country"] == c and r["stars"] == 3), c) for c in {r["country"] for r in live}), reverse=True)
     for i, key in enumerate(("top", "second", "third")):
         stats[f"{key}Country"], stats[f"{key}CountryN"] = places[by_country[i][1]]["name"], f"{by_country[i][0]:,}"
+        stats[f"{key}CountryPath"] = places[by_country[i][1]]["path"]  # so a guide can link the name: <a href="{{topCountryPath}}">
     for i, key in enumerate(("top3", "second3")):
         stats[f"{key}Country"], stats[f"{key}N"] = places[by_three[i][1]]["name"], str(by_three[i][0])
+        stats[f"{key}CountryPath"] = places[by_three[i][1]]["path"]
     stats["total"] = f"{stats['total']:,}"
     stats["countries"] = str(stats["countries"])
     month = site.get("updated", "")
@@ -3737,7 +3739,7 @@ def list_stats(live, year):
     out.update({"usTotal": f"{len(us):,}", "usStates": str(len(states)), "n3us": str(sum(1 for r in us if r["stars"] == 3))})
     for i, key in enumerate(("topState", "secondState", "thirdState")):
         if len(ranked) > i:
-            out[key], out[key + "N"] = places[ranked[i][0]]["name"], str(ranked[i][1])
+            out[key], out[key + "N"], out[key + "Path"] = places[ranked[i][0]]["name"], str(ranked[i][1]), places[ranked[i][0]]["path"]
     gained, lost = three_star_changes(year)
     out["new3"], out["lost3"] = str(len(gained)), str(len(lost))
     return out

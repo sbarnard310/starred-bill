@@ -182,6 +182,40 @@ def group_html(title, rows, more_url, campaign):
     return h, t
 
 
+def email_page(h1, intro, body_html, footer_h):
+    """The email around its content: the green header with the logo, the heading and intro, then the footer."""
+    return f"""<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F2F6F1;padding:32px 16px;font-family:Arial,Helvetica,sans-serif;">
+  <tr>
+    <td align="center">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#FFFFFF;border:1px solid #D5E0D6;border-radius:12px;overflow:hidden;">
+        <tr>
+          <td style="background:#10362A;padding:18px 28px;">
+            <table role="presentation" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="vertical-align:middle;padding-right:14px;"><img src="https://starredbill.com/img/email/receipt-mark.png" width="27" height="40" alt="" style="display:block;border:0;"></td>
+                <td style="vertical-align:middle;font-family:Georgia,'Times New Roman',serif;font-size:22px;color:#F5F0E4;">The Starred Bill</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:28px 28px 26px;color:#12261C;">
+            <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-weight:normal;font-size:26px;line-height:1.2;color:#12261C;">{html.escape(h1)}</h1>
+            <p style="margin:0;font-size:16px;line-height:1.5;color:#3E5247;">{html.escape(intro)}</p>
+            {body_html}
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:18px 28px 24px;border-top:1px solid #D5E0D6;font-size:12px;line-height:1.5;color:#5A6E62;">
+            {footer_h}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>"""
+
+
 def compose(member, data, chosen):
     """The email for one member, or None when there's nothing for them in this run."""
     home, near = near_changes(member, data, chosen)
@@ -231,36 +265,7 @@ def compose(member, data, chosen):
     footer_h = (f'You\'re getting this because you asked for {html.escape(what)} on your Starred Bill account. '
                 f'<a href="{html.escape(manage)}" style="color:#5A6E62;">Change which emails you get</a> · '
                 f'<a href="{html.escape(unsub)}" style="color:#5A6E62;">Unsubscribe</a>')
-    page = f"""<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F2F6F1;padding:32px 16px;font-family:Arial,Helvetica,sans-serif;">
-  <tr>
-    <td align="center">
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#FFFFFF;border:1px solid #D5E0D6;border-radius:12px;overflow:hidden;">
-        <tr>
-          <td style="background:#10362A;padding:18px 28px;">
-            <table role="presentation" cellpadding="0" cellspacing="0">
-              <tr>
-                <td style="vertical-align:middle;padding-right:14px;"><img src="https://starredbill.com/img/email/receipt-mark.png" width="27" height="40" alt="" style="display:block;border:0;"></td>
-                <td style="vertical-align:middle;font-family:Georgia,'Times New Roman',serif;font-size:22px;color:#F5F0E4;">The Starred Bill</td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:28px 28px 26px;color:#12261C;">
-            <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-weight:normal;font-size:26px;line-height:1.2;color:#12261C;">{html.escape(h1)}</h1>
-            <p style="margin:0;font-size:16px;line-height:1.5;color:#3E5247;">{html.escape(intro)}</p>
-            {"".join(body_h)}
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:18px 28px 24px;border-top:1px solid #D5E0D6;font-size:12px;line-height:1.5;color:#5A6E62;">
-            {footer_h}
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>"""
+    page = email_page(h1, intro, "".join(body_h), footer_h)
     text = (f"{h1}\n\n{intro}\n" + "\n".join(body_t)
             + f"\n\n--\nYou're getting this because you asked for {what} on your Starred Bill account.\n"
               f"Change which emails you get: {manage}\nUnsubscribe: {unsub}\n")

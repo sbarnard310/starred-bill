@@ -34,6 +34,9 @@ function nextCeremony(c) {
 }
 
 function emailsSection() {
+  return starEmailsSection() + searchesSection();
+}
+function starEmailsSection() {
   const head = '<section class="acct-section" id="emails"><h2>Star emails</h2>' +
     "<p>An email on the night a MICHELIN Guide reveals its new stars, once our pages are up to date. Nothing else, and you can stop them at any time.</p>";
   if (alerts.failed) return head + '<p class="empty-note">Your email choices couldn\'t load just now. Please reload the page to try again.</p></section>';
@@ -61,8 +64,60 @@ function emailsSection() {
     'See our <a href="/privacy/">privacy notice</a>.</p></section>';
 }
 
+// ---------- Saved searches (10 Oct 2026) ----------
+// Searches saved from a destination page's filters or Help me pick (saved-search.js), each a row in `saved_searches`
+// (supabase/saved-searches.sql); scripts/saved_searches.py emails the member when a restaurant newly matches one.
+// Here members open them again, turn each one's emails on or off, and delete them.
+const searches = { rows: null, loading: null, failed: false, note: "", noteOk: true, jumped: false };
+function loadSearches() {
+  if (!searches.loading) searches.loading = account.client.from("saved_searches").select("id,label,query,page,emails,created_at").order("created_at").then(({ data, error }) => {
+    if (error) searches.failed = true;
+    else searches.rows = data || [];
+  }, () => { searches.failed = true; }).then(() => {
+    render();
+    if (location.hash === "#searches" && !searches.jumped && $("searches")) { searches.jumped = true; $("searches").scrollIntoView(); }
+  });
+  return searches.loading;
+}
+function searchesSection() {
+  const head = '<section class="acct-section" id="searches"><h2>Saved searches</h2>' +
+    "<p>Save the filters on any destination page (tap <strong>Save this search</strong>), or your answers on Help me pick, and we'll email you when a restaurant newly matches: " +
+    "a new star, a lower price or a new menu. At most one email a day.</p>";
+  if (searches.failed) return head + '<p class="empty-note">Your saved searches couldn\'t load just now. Please reload the page to try again.</p></section>';
+  if (!searches.rows) { loadSearches(); return head + '<p class="acct-loading">' + esc(t("accLoading")) + "</p></section>"; }
+  const list = searches.rows.length ? '<ul class="ss-list">' + searches.rows.map((r) =>
+    '<li><a href="' + esc(r.page) + '">' + esc(r.label) + "</a>" +
+    '<span class="ss-acts"><label class="ss-mail"><input type="checkbox" data-ssmail="' + esc(r.id) + '"' + (r.emails ? " checked" : "") + "> Email me</label>" +
+    '<button type="button" class="linkish" data-ssdel="' + esc(r.id) + '" aria-label="Delete the saved search ' + esc(r.label) + '">Delete</button></span></li>').join("") + "</ul>"
+    : '<p class="empty-note">No saved searches yet. Try one: <a href="/japan/tokyo/?stars=2">two-star restaurants in Tokyo</a>, <a href="/uk/england/london/?diet=vegan">vegan options in London</a>, or <a href="/pick/">Help me pick</a>.</p>';
+  return head + '<div class="alerts">' + list + '<p class="pref-note' + (searches.noteOk ? " ok" : "") + '" aria-live="polite">' + esc(searches.note) + "</p></div>" +
+    '<p class="pref-small">You can keep up to 20. Every email has an unsubscribe link. See our <a href="/privacy/#searches">privacy notice</a>.</p></section>';
+}
+async function changeSearch(id, change) {
+  const row = searches.rows.find((r) => r.id === id);
+  if (!row) return;
+  const q = change === "delete" ? account.client.from("saved_searches").delete().eq("id", id) : account.client.from("saved_searches").update({ emails: change === "on" }).eq("id", id);
+  const { error } = await q;
+  if (!error) {
+    if (change === "delete") searches.rows = searches.rows.filter((r) => r !== row);
+    else row.emails = change === "on";
+    track("saved-search", { change });
+  }
+  searches.note = error ? "That didn't save just now. Please try again." : change === "delete" ? "Deleted “" + row.label + "”." : change === "on" ? "We'll email you about “" + row.label + "”." : "No more emails about “" + row.label + "”. It stays saved here.";
+  searches.noteOk = !error;
+  render();
+}
+document.addEventListener("change", (e) => { if (e.target.dataset.ssmail) changeSearch(e.target.dataset.ssmail, e.target.checked ? "on" : "off"); });
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-ssdel]");
+  if (b) changeSearch(b.dataset.ssdel, "delete");
+});
+
 // Signing out (or in as someone else) forgets the last person's choices.
-window.addEventListener("sb:account", () => { alerts.row = null; alerts.loading = null; alerts.failed = false; alerts.note = ""; });
+window.addEventListener("sb:account", () => {
+  alerts.row = null; alerts.loading = null; alerts.failed = false; alerts.note = "";
+  searches.rows = null; searches.loading = null; searches.failed = false; searches.note = "";
+});
 // A home city cleared on this page turns "near you" off with it, since there's nowhere to measure from.
 window.addEventListener("sb:profile", () => {
   if (alerts.row && alerts.row.near_home && !loadProfile().home && account.user) saveAlerts({ near_home: false }, "No home city, so New stars near you is off.", { near: "off" });

@@ -148,6 +148,8 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .ftag > span[aria-hidden] { font-size: 1.05rem; line-height: 1; color: var(--muted); }
 .ftag .stars svg { width: 12px; height: 12px; }
 .fclear { font-size: .84rem; }
+.fsave { display: inline-flex; align-items: center; gap: 5px; font-size: .84rem; font-weight: 600; }
+.fsave svg { width: 15px; height: 15px; }
 .sheet-backdrop { position: fixed; inset: 0; z-index: 44; background: rgba(0, 0, 0, .45); }
 .sheet-backdrop[hidden] { display: none; }
 @media (min-width: 721px) {
@@ -1154,6 +1156,20 @@ dialog.report-box { width: min(480px, calc(100vw - 32px)); max-height: calc(100d
 .al-chosen { list-style: none; margin: 10px 0 0; padding: 0; }
 .al-chosen li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--line); }
 .al-chosen li > span { color: var(--ink); }
+.ss-list { list-style: none; margin: 0; padding: 0; }
+.ss-list li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 14px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.ss-list li:first-child { padding-top: 0; }
+.ss-list a { color: var(--ink); font-weight: 600; }
+.ss-acts { display: inline-flex; align-items: center; gap: 14px; font-size: .9rem; }
+.ss-mail { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); }
+.ss-mail input { width: 16px; height: 16px; margin: 0; accent-color: var(--green); }
+.ss-summary { display: grid; gap: 2px; margin: 0 0 14px; padding: 10px 12px; border-radius: var(--radius); background: color-mix(in srgb, var(--green) 8%, var(--surface)); }
+.ss-summary span { font-size: .82rem; color: var(--muted); }
+.ss-price { margin: 0 0 12px; padding: 0; border: 0; }
+.ss-price legend { font-weight: 600; margin-bottom: 6px; }
+.ss-wine { display: flex; align-items: center; gap: 8px; margin: 8px 0 0; }
+.ss-wine input { width: 16px; height: 16px; accent-color: var(--green); }
+.pick-ghost svg { width: 16px; height: 16px; vertical-align: -3px; }
 .al-countries select { margin-top: 10px; max-width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: inherit; }
 .acct-confirm { margin-top: 14px; padding: 14px 16px; border-radius: var(--radius); background: var(--danger-soft); }
 .acct-confirm p { margin: 0 0 10px; }

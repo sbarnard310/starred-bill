@@ -185,6 +185,22 @@ The ceremony dates guide (`/guides/michelin-guide-ceremony-dates/`) reads `conte
 
 Its tables are `{{table:ceremonies}}` (every guide by continent), `{{table:ceremonies-next}}` (announced dates in order, then guides whose turn comes within `CEREMONY_AHEAD_DAYS` with last year's date), `{{table:ceremonies-recent}}` (the last `CEREMONY_RECENT_DAYS`, with whether our pages have caught up) and `{{table:ceremonies-calendar}}` (the year at a glance). Its figures are `{{cerGuides}}`, `{{cerNext}}`, `{{cerNextDate}}`, `{{cerNextWhere}}`, `{{cerBusy}}` (the busiest months) and `{{cerSay_<id>}}`, a sentence on a guide's next (or last) ceremony with hyphens as underscores, e.g. `{{cerSay_northeast_cities}}`.
 
+## Saved searches
+
+Members' saved searches live in Supabase (`saved_searches`, set up by `supabase/saved-searches.sql`), not in `content/`. Each row's `query` holds only the keys it uses:
+
+| Key | Meaning |
+|---|---|
+| `p` | the page it was saved on: a place id (`tokyo`, `tokyo-french`, `mayfair`) or, from Help me pick, its address; blank for anywhere |
+| `s` | star levels, e.g. `[2]` or `[2, 3]` |
+| `k` | a cuisine label as the MICHELIN Guide names it (`Japanese`), from a destination page's Cuisine filter |
+| `f` | Help me pick's food moods (`japanese`, `veg`…; `MOODS` in pick.js and scripts/saved_searches.py, kept in step) |
+| `d` | a dietary need: `vegetarian`, `vegan`, `gluten-free`, `halal` or `kosher` |
+| `a` | a neighbourhood, the first part of a restaurant's `area` (`Ginza`) |
+| `b`, `c`, `m`, `w` | a price limit: at most `b` per person in currency `c`, for meal `m` (`dinner`, `lunch`, or `value`: whichever is cheaper), with a wine pairing when `w` is true (else about 60% of the menu is allowed for one) |
+
+`label` is its plain-English name and `page` the address that shows it again (destination pages read `?stars=&cuisine=&diet=&area=&meal=&max=&cur=&wine=`). After pushes that change restaurants, and every morning, `.github/workflows/saved-searches.yml` builds the site and runs `scripts/saved_searches.py`, which emails a member when a restaurant newly matches one of their searches because its own file changed (a new star, a lower or newly listed price or pairing, a new dietary option or cuisine, or a restaurant new to the site), at most once a day. Preview one with `python3 scripts/saved_searches.py --preview out/ --query '{"p": "london", "d": "vegan"}' --since HEAD~50`.
+
 ## Editing
 
 The easiest way is Pages CMS: go to https://app.pagescms.org, sign in with GitHub and open **starred-bill**. Restaurants, Places, Guides, Currencies and Site settings each have a form; click **Save** and the site updates within a couple of minutes.

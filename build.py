@@ -3494,6 +3494,32 @@ def build_compare(starred):
     return urls
 
 
+# ---------- Saved searches (10 Oct 2026) ----------
+# _site/data/searches.json: every starred restaurant as scripts/saved_searches.py needs it to check members' saved
+# searches (supabase/saved-searches.sql) after each build: its stars, cuisine, dietary options and prices, and every page
+# it's listed on (`in`: its places, the groups holding them and its cuisine page), so a search saved on any destination
+# page matches what that page lists. No page loads it; everything in it is already public on the destination pages.
+def write_search_data(starred):
+    groups = [p for p in pages if p["type"] == "group"]
+    cuisine_pages = [p for p in pages if p["type"] == "cuisine"]
+
+    def listed_on(r):
+        chain_ids = set(r["_chain"])
+        out = set(chain_ids) | {g["id"] for g in groups if set(g["includes"]) & chain_ids}
+        return sorted(out | {c["id"] for c in cuisine_pages if c["parent"] in out and r.get("cuisine") in c["cuisines"]})
+    cols = ["id", "name", "stars", "cuisine", "diets", "cur", "dinner", "lunch", "wine", "lunchWine", "area", "in", "url", "where", "file"]
+    rows = [[r["id"], r["name"], r["stars"], r.get("cuisine", ""), r.get("diets") or [], r["cur"],
+             r.get("dinner") if r.get("dinnerType", "menu") == "menu" else None,
+             r.get("lunch") if not r.get("noLunch") and (r.get("lunch") or 0) > 0 else None,
+             r.get("wine"), r.get("lunchWine"), area_key(r), listed_on(r), restaurant_href(r), near_where(r), source_files[r["id"]]]
+            for r in starred]
+    (OUT / "data").mkdir(exist_ok=True)
+    (OUT / "data" / "searches.json").write_text(as_json({
+        "currencies": {k: [v["perUSD"], v["symbol"]] for k, v in CURRENCIES.items()},
+        "pages": {p["id"]: [p["name"], p["path"]] for p in pages},
+        "cols": cols, "rows": rows}), "utf-8")
+
+
 def build_redirects():
     """Pages at old addresses that send visitors on to where the page lives now, keeping any ?q= search.
     A page offered in other languages also forwards its old translated addresses (/fil/philippines/…)."""
@@ -7384,7 +7410,7 @@ def build_service_worker():
         if f.is_file():
             digest.update(str(f.relative_to(OUT)).encode() + f.read_bytes())
     # Language files are left out: each is saved the first time a page that offers it is opened.
-    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [url for name, url in sorted(assets.items()) if not name.startswith("lang-") and name not in ("rtl.css", "report.js", "trips-add.js")]
+    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [url for name, url in sorted(assets.items()) if not name.startswith("lang-") and name not in ("rtl.css", "report.js", "trips-add.js", "saved-search.js")]
     sw = (SRC / "sw.js").read_text("utf-8").replace("{{version}}", digest.hexdigest()[:12]).replace("{{precache}}", json.dumps(precache))
     (OUT / "sw.js").write_text(sw, "utf-8")
 
@@ -7404,6 +7430,7 @@ build_home()
 build_pick(build_near_me([r for r in restaurants if not r.get("status")]))
 build_bill_data([r for r in restaurants if not r.get("status")])
 compare_urls = build_compare([r for r in restaurants if not r.get("status")])
+write_search_data([r for r in restaurants if not r.get("status")])
 build_trips(compare_urls, build_account_pages())
 build_guides()
 build_restaurant_pages()

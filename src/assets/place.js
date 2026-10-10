@@ -73,6 +73,17 @@ const dietMatch = (r) => !state.diet || hasDiet(r, state.diet);
 // A neighbourhood, from the "By neighbourhood" links (build.py browse_html()): the first part of the area ("Ginza" of "Ginza, Chuo").
 const areaKey = (r) => String(r.area || "").split(",")[0].trim();
 const areaMatch = (r) => !state.area || areaKey(r) === state.area;
+// A price limit, from a saved search's link (?max=40000&cur=JPY[&meal=lunch|value][&wine=1]): the menu (plus a wine
+// pairing, else about 60% more for one, as Help me pick reckons) at most this much per person. scripts/saved_searches.py
+// matches the same way. Only set menus count, as there.
+function maxBill(r) {
+  const m = state.max, opts = [];
+  if (m.meal !== "lunch" && (r.dinnerType || "menu") === "menu" && r.dinner != null) opts.push([r.dinner, r.wine]);
+  if (m.meal !== "dinner" && !r.noLunch && r.lunch > 0) opts.push([r.lunch, r.lunchWine]);
+  const totals = opts.map(([p, w]) => (p + (m.wine ? (w != null ? w : p * 0.6) : 0)) * state.rates[m.cur] / state.rates[r.cur]);
+  return totals.length ? Math.min(...totals) : null;
+}
+const maxMatch = (r) => { if (!state.max) return true; const b = maxBill(r); return b != null && b <= state.max.b + 0.5; };
 const dietLabel = (d) => t((DIET_KEYS.find(([k]) => k === d) || [])[1] || "all");
 // Leaf badges for the three that matter most when choosing; the rest are in the filter only.
 const BADGES = [["vegetarian-only", "badgeVegOnly", "dietVegOnly"], ["vegetarian-menu", "badgeVegMenu", "dietVegMenu"], ["vegan", "badgeVegan", "dietVegan"]];
@@ -101,7 +112,40 @@ function load() {
   state.currency = startCurrency();
   state.wishlist = loadWishlist();
   state.visited = loadVisited();
+  fromSearchLink();
 }
+// A saved search's link (saved-search.js, the emails' "See every match"): ?stars=2&cuisine=Japanese&diet=vegan&area=Ginza
+// &meal=lunch&max=40000&cur=JPY&wine=1 opens the list with those filters on. Anything this page doesn't have is ignored.
+function fromSearchLink() {
+  const s = Number(params.get("stars")), cat = params.get("cuisine"), diet = params.get("diet"), area = params.get("area");
+  if ([1, 2, 3].includes(s)) state.activeStars = s;
+  if (cat && RESTAURANTS.some((r) => r.cuisine === cat)) state.activeCat = cat;
+  if (diet && DIET_KEYS.some(([k]) => k === diet)) state.diet = diet;
+  if (area && RESTAURANTS.some((r) => areaKey(r) === area)) state.area = area;
+  const meal = params.get("meal"), max = Number(params.get("max")), cur = params.get("cur");
+  if (meal === "lunch") state.meal = "lunch";
+  if (max > 0 && state.rates[cur]) state.max = { b: max, cur, meal: ["lunch", "value"].includes(meal) ? meal : "dinner", wine: params.get("wine") === "1" };
+}
+// "Save this search": the filters chosen (not the wishlist, been-there or new-stars views, nor the search box, which are
+// about the visitor's own lists or a name) go to saved-search.js through account.js, with the price limit asked there.
+const savable = () => !EMPTY && !!(state.activeStars || state.activeCat !== "All" || state.diet || state.area || state.max);
+window.searchToSave = () => {
+  const q = { p: PAGE.id, s: state.activeStars ? [state.activeStars] : [], k: state.activeCat !== "All" ? state.activeCat : "", d: state.diet, a: state.area };
+  const link = new URLSearchParams();
+  if (state.activeStars) link.set("stars", state.activeStars);
+  if (q.k) link.set("cuisine", q.k);
+  if (q.d) link.set("diet", q.d);
+  if (q.a) link.set("area", q.a);
+  const summary = [state.area, pick(PAGE.city || PAGE, "name"), state.activeStars ? t("starsAria", { n: state.activeStars }) : "", q.k ? cuisineLabeller()(q.k) : "",
+    PAGE.type === "cuisine" ? pick(PAGE, "name") : "", q.d ? dietLabel(q.d) : ""].filter(Boolean);
+  // A price limit already on (it came from a saved search's link) is offered again as the window's starting point.
+  const m = state.max;
+  return {
+    from: "destination", query: q, summary, page: location.pathname + (link.toString() ? "?" + link.toString() : ""),
+    en: { place: PAGE.city ? PAGE.city.name : PAGE.name, food: PAGE.type === "cuisine" && !q.k ? PAGE.name : q.k },
+    budget: { currencies: currencyOptions.filter((c) => DATA.currencies[c]), cur: m ? m.cur : state.currency, meal: m ? m.meal : state.meal, max: m ? m.b : 0, wine: m ? m.wine : false }
+  };
+};
 function save() {
   const prefs = store.get(PREFS_KEY, {});
   prefs.sort = state.sort;
@@ -112,9 +156,9 @@ function save() {
 }
 
 // The "No longer starred" rows, shown only when no star or wishlist filter is on; the recent ones also get grey map pins.
-const formerRows = () => state.activeStars || state.wishOnly ? [] : FORMER.filter((r) => (!state.changesOnly || r.change) && areaMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
+const formerRows = () => state.activeStars || state.wishOnly || state.max ? [] : FORMER.filter((r) => (!state.changesOnly || r.change) && areaMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
 function filtered() {
-  const rows = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && dietMatch(r) && areaMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
+  const rows = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && dietMatch(r) && areaMatch(r) && maxMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
   const coll = new Intl.Collator(locale());
   const sorters = {
     "price-asc": (a, b) => priceRank(a) - priceRank(b) || byPrice(a, b),
@@ -286,10 +330,13 @@ function renderFilterSummary(n) {
   if (cat) tags.push(["cat", cat]);
   if (diet) tags.push(["diet", diet]);
   if (state.area) tags.push(["area", esc(state.area)]);
+  const maxText = state.max ? "≤ " + symbolOf(state.max.cur) + Math.round(state.max.b).toLocaleString("en-GB") + (state.max.wine ? " + 🍷" : "") : "";
+  if (state.max) tags.push(["max", esc(maxText)]);
   $("filtersCount").textContent = tags.length || "";
   $("activeTags").innerHTML = tags.map(([k, html]) =>
-    '<button type="button" class="ftag' + (k === "area" ? " ftag-own" : "") + '" data-unfilter="' + k + '" aria-label="' + esc(t("removeFilter", { f: k === "stars" ? t("starsAria", { n: state.activeStars }) : k === "diet" ? dietLabel(state.diet) : k === "area" ? state.area : (show && k === "show" ? show[1] : cuisineLabeller()(state.activeCat)) })) + '">' + html + '<span aria-hidden="true">×</span></button>').join("") +
-    (tags.length ? '<button type="button" class="linkish fclear" data-unfilter="all">' + t("filtersClear") + "</button>" : "");
+    '<button type="button" class="ftag' + (k === "area" || k === "max" ? " ftag-own" : "") + '" data-unfilter="' + k + '" aria-label="' + esc(t("removeFilter", { f: k === "stars" ? t("starsAria", { n: state.activeStars }) : k === "diet" ? dietLabel(state.diet) : k === "area" ? state.area : k === "max" ? maxText : (show && k === "show" ? show[1] : cuisineLabeller()(state.activeCat)) })) + '">' + html + '<span aria-hidden="true">×</span></button>').join("") +
+    (tags.length ? '<button type="button" class="linkish fclear" data-unfilter="all">' + t("filtersClear") + "</button>" : "") +
+    (savable() ? '<button type="button" class="linkish fsave" data-save-search=""><svg aria-hidden="true"><use href="#bell"/></svg>' + esc(t("saveSearch")) + "</button>" : "");
   $("activeTags").hidden = !tags.length;
   $("sheetDone").textContent = t("filtersShowN", { n });
 }
@@ -882,9 +929,10 @@ document.addEventListener("click", (e) => {
     if (k === "cat" || k === "all") state.activeCat = "All";
     if (k === "diet" || k === "all") state.diet = "";
     if (k === "area" || k === "all") state.area = "";
+    if (k === "max" || k === "all") state.max = null;
     render();
   } else if (el.id === "clearFilters") {
-    state.activeStars = 0; state.activeCat = "All"; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.area = ""; state.query = ""; $("q").value = ""; render();
+    state.activeStars = 0; state.activeCat = "All"; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.area = ""; state.max = null; state.query = ""; $("q").value = ""; render();
   } else if (el.dataset.cat) {
     state.activeCat = el.dataset.cat; $("cuisineQ").value = ""; render(); choseFilter();
     if (el.classList.contains("tag")) $("compare").scrollIntoView();
@@ -906,6 +954,7 @@ document.addEventListener("click", (e) => {
   state.activeStars = 0; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.query = ""; $("q").value = "";
   state.activeCat = a.dataset.browse === "cuisine" ? a.dataset.value : "All";
   state.area = a.dataset.browse === "area" ? a.dataset.value : "";
+  state.max = null;
   render();
   $("compare").scrollIntoView();
   track("browse", { by: a.dataset.browse });

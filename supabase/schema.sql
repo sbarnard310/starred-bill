@@ -140,7 +140,8 @@ $$;
 revoke execute on function public.alert_recipients() from public, anon, authenticated;
 grant execute on function public.alert_recipients() to service_role;
 
--- The unsubscribe link in every email: works without signing in, by the row's token.
+-- The unsubscribe link in every email: works without signing in, by the row's token. (supabase/saved-searches.sql
+-- replaces this with a version that also turns off saved-search emails; run that file after this one.)
 -- what: 'near' (New stars near you), 'countries' (ceremony summaries) or 'all'. Answers 'ok' or 'unknown'.
 create or replace function public.email_unsubscribe(t uuid, what text default 'all') returns text
 language plpgsql security definer set search_path = '' as $$

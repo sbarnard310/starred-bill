@@ -1,0 +1,52 @@
+# Saved-search emails: after a push to main that changes restaurants (and once a day, for anything held back by the
+# one-email-a-day rule or Resend's daily allowance), this waits until Cloudflare has published the commit, builds the
+# site and emails members whose saved searches have a new match (scripts/saved_searches.py). Each check is recorded in
+# Supabase, so nothing is sent twice. Needs the same repository secrets as the star emails: SUPABASE_SERVICE_KEY and
+# RESEND_API_KEY; without them it sends nothing and says so.
+name: Saved-search emails
+
+on:
+  push:
+    branches: [main]
+    paths: [content/restaurants/**, content/currencies.json]
+  schedule:
+    - cron: "40 7 * * *"   # 07:40 UTC, after the morning's first pushes have usually gone live
+  workflow_dispatch:
+    inputs:
+      send:
+        description: "Send them (untick to only count who would get one)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: saved-search-emails
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # each search's last-checked commit, to say why a restaurant is news, and the sitemap dates
+      - name: Wait until Cloudflare has published this commit
+        run: |
+          for i in $(seq 1 80); do
+            live=$(curl -sfA 'StarredBill-Alerts/1.0' "https://starredbill.com/version.txt?t=$(date +%s)" || true)
+            if [ "$live" = "$GITHUB_SHA" ]; then echo "Live."; exit 0; fi
+            if [ -n "$live" ] && git merge-base --is-ancestor "$GITHUB_SHA" "$live" 2>/dev/null; then echo "Live (in $live)."; exit 0; fi
+            sleep 15
+          done
+          echo "Cloudflare hasn't published $GITHUB_SHA after 20 minutes, so no emails were sent (they'd link to old pages). The next run will catch up."
+          exit 1
+      - name: Build the site
+        run: python3 build.py > /dev/null
+      - name: Send the saved-search emails
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: python3 scripts/saved_searches.py ${{ (github.event_name != 'workflow_dispatch' || inputs.send) && '--send' || '' }}

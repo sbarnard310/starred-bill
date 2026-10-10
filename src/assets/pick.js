@@ -618,6 +618,7 @@ function showResult() {
     (!list.length ? "Nothing fits all your answers" : (two ? (plans === 1 ? "One lunch and dinner" : (plans === 2 ? "Two" : "Three") + " lunch and dinner plans from " + plural(list.length, "restaurant"))
       : list.length === 1 ? "One restaurant fits" : list.length === 2 ? "Two restaurants fit" : "Three picks from " + plural(list.length, "match", "matches")) + " " + esc(ask.where.label)) + "</h2></div>" +
     '<div class="pick-actions">' + (list.length ? '<button type="button" class="cta-btn" id="shareBtnPick"><svg aria-hidden="true"><use href="#share"/></svg> Share picks</button>' : "") +
+    (canSave() ? '<button type="button" class="pick-ghost" data-save-search=""><svg aria-hidden="true"><use href="#bell"/></svg> Save search</button>' : "") +
     '<button type="button" class="pick-ghost" id="restartBtn">Start again</button></div></div>' + summary();
   let bodyHtml;
   if (!list.length) {
@@ -659,6 +660,22 @@ function renderMore() {
   $("moreBtn").hidden = more <= 0;
   $("moreBtn").textContent = "Show " + Math.min(10, more) + " more";
 }
+
+// ---------- Saving the answers as a search (saved-search.js, through account.js) ----------
+// Not for "Near me" (the location never leaves the browser) or weekend plans (a pair of restaurants, not one).
+const canSave = () => ask.where && !ask.where.near && ask.meal !== "weekend";
+window.searchToSave = () => {
+  const b = budgetValue() || 0;
+  const q = { p: ask.where.any ? "" : ask.where.path, s: ask.stars ? [3, 2].filter((n) => n >= ask.stars) : [], f: ask.food || [], d: ask.diet || "",
+    m: ask.meal || "dinner", b, c: ask.cur, w: b ? ask.wine : false };
+  const food = (ask.food || []).map(moodName);
+  return {
+    from: "pick", query: q, page: location.pathname + "?" + toQuery(), budget: null,
+    summary: [ask.where.any ? "Anywhere" : ask.where.name, ask.stars ? (ask.stars === 3 ? "Three stars" : "Two stars or more") : "", food.join(", "),
+      ask.diet ? DIET_CHOICES.find(([k]) => k === ask.diet)[1] : "", b ? "Up to " + money(b, ask.cur) + (ask.wine ? " with wine" : "") : ""].filter(Boolean),
+    en: { place: ask.where.any ? "" : ask.where.name, food: food.length > 2 ? "" : food.join(" or ") }
+  };
+};
 
 // ---------- Sharing: the answers live in the address ----------
 function toQuery() {

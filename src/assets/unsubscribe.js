@@ -1,9 +1,10 @@
-// The unsubscribe link in every star email (scripts/star_alerts.py): /unsubscribe/?t=<token>[&what=near|countries|all].
+// The unsubscribe link in every star email (scripts/star_alerts.py) and saved-search email (scripts/saved_searches.py):
+// /unsubscribe/?t=<token>[&what=near|countries|searches|all].
 // It works without signing in: email_unsubscribe() in Supabase (supabase/schema.sql) turns those emails off for whoever
 // the token belongs to. It runs in the page rather than on opening the link, so mail scanners that open links can't
 // unsubscribe anyone. English only, like the emails; kept out of search engines and the sitemap.
 const unsubParams = new URLSearchParams(location.search);
-const UNSUB_WHAT = { near: "New stars near you emails", countries: "ceremony-night summaries", all: "star emails" };
+const UNSUB_WHAT = { near: "New stars near you emails", countries: "ceremony-night summaries", searches: "saved-search emails (your searches stay on Your account)", all: "star or saved-search emails" };
 
 function renderHeader() {
   applyI18n();

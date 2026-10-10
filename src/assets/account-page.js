@@ -420,6 +420,7 @@ function downloadData() {
         i.booked ? { booked: true } : {}, i.note ? { note: i.note } : {})) })),
     reports: (reports || []).map((x) => ({ restaurant: x.restaurant_name || x.restaurant_id, what: reportWhat(x), details: x.details, sent: x.created_at, status: REPORT_STATUS[x.status] || x.status, ourNote: x.review_note || null })),
     preferences: { homeCity: loadProfile().homeName || null, currency: loadProfile().currency || null, dietaryNeeds: loadProfile().diet || null },
+    savedSearches: (searches.rows || []).map((x) => ({ search: x.label, link: "https://starredbill.com" + x.page, emails: x.emails, saved: x.created_at })),
     starEmails: alerts.row ? { newStarsNearYou: alerts.row.near_home, ceremonySummaries: alerts.row.countries.map((c) => (alertCountry(c) || [c, c])[1]) } : null,
   };
   const url = URL.createObjectURL(new Blob([JSON.stringify(out, null, 2)], { type: "application/json" }));

@@ -401,7 +401,7 @@ function acctOffer(text, yes, no) {
 function renderSignIn() {
   const box = $("signInBox");
   if (!box) return;
-  const why = account.reason === "been" ? t("acctWhyBeen") : account.reason === "report" ? t("acctWhyReport") : account.reason === "trip" ? t("acctWhyTrip") : t("acctWhy");
+  const why = account.reason === "been" ? t("acctWhyBeen") : account.reason === "report" ? t("acctWhyReport") : account.reason === "trip" ? t("acctWhyTrip") : account.reason === "search" ? t("acctWhySearch") : t("acctWhy");
   box.querySelector(".si-title").textContent = t("acctTitle");
   box.querySelector(".si-why").textContent = why;
   box.querySelector(".si-close").setAttribute("aria-label", t("acctClose"));
@@ -565,6 +565,36 @@ window.addEventListener("sb:account", () => {
   if (!r || !account.user) return;
   store.set(TRIP_KEY, null);
   if (Date.now() - r.at < 30 * 60 * 1000) openTripAdd(r);
+});
+
+// ---------- Saving a search ----------
+// "Save this search" ([data-save-search] on destination pages and Help me pick) opens the window in saved-search.js,
+// loaded only now, with what the page says it's showing (window.searchToSave()). Anyone signed out is asked to sign in
+// first, and the window opens once they have (kept for half an hour, for this same page).
+const SEARCH_JS = "{{asset:saved-search.js}}", SEARCH_KEY = "starredbill-search-pending";
+async function openSaveSearch(spec) {
+  track("saved-search-opened", { from: spec.from });
+  const askSignIn = () => { store.set(SEARCH_KEY, { at: Date.now(), path: location.pathname, spec }); openSignIn("search"); };
+  if (!(account.ready ? account.user : hasStoredSession())) { askSignIn(); return; }
+  try {
+    await bootAccount();
+    await accountSettled();
+    if (!account.user) { askSignIn(); return; }
+    if (!window.showSaveSearch) await loadScript(SEARCH_JS);
+    window.showSaveSearch(spec);
+  } catch (e) { acctNotice(t("acctFailed")); }
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-save-search]");
+  if (!b || !window.searchToSave) return;
+  e.preventDefault();
+  openSaveSearch(window.searchToSave());
+});
+window.addEventListener("sb:account", () => {
+  const p = store.get(SEARCH_KEY, null);
+  if (!p || !account.user) return;
+  store.set(SEARCH_KEY, null);
+  if (Date.now() - p.at < 30 * 60 * 1000 && p.path === location.pathname) openSaveSearch(p.spec);
 });
 
 // Start straight away only if someone is (or is becoming) signed in; everyone else loads nothing extra.

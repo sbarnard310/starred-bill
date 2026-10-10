@@ -8,8 +8,11 @@
   "rating": 4.8,
   "reviews": 346,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinner": 115,
+  "dinnerNote": "Tasting menu (longer menu €145)",
+  "wine": 80,
+  "sourceType": "site",
+  "source": "https://demondion.xaracollection.com/our-menus/dinner-menu-2",
   "lunch": 75,
   "lunchType": "menu",
   "lunchNote": "Lunch menu",
@@ -28,7 +31,7 @@
   ],
   "chef": "Clint Grech",
   "chefSource": "michelin",
-  "dinnerNoteMt": "Menu tad-degustazzjoni; il-prezz għad irid jiżdied",
+  "dinnerNoteMt": "Menu tad-degustazzjoni (menu itwal €145)",
   "areaMt": "L-Imdina",
   "lunchNoteMt": "Menu ta' nofsinhar"
 }

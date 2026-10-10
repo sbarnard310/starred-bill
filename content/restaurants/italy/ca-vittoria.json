@@ -10,6 +10,7 @@
   "dinnerType": "spend",
   "dinner": 110,
   "dinnerNote": "Typical spend without drinks (Gambero Rosso average)",
+  "wine": 45,
   "dinnerNoteIt": "Spesa media bevande escluse (media Gambero Rosso)",
   "sourceType": "press",
   "source": "https://www.gamberorosso.it/luoghi/locali/ristorante/ca-vittoria/",

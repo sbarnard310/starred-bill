@@ -10,6 +10,7 @@
   "dinnerType": "menu",
   "dinner": 739,
   "dinnerNote": "Tasting menu (other menus from PLN 449)",
+  "wine": 399,
   "sourceType": "site",
   "source": "https://restaurantgiewont.com/menu-pl.html",
   "website": "https://restaurantgiewont.com/",
@@ -29,6 +30,7 @@
   "lunch": 739,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchWine": 399,
   "lunchNotePl": "To samo menu w porze lunchu · śr.–niedz.",
   "lunchSourceType": "site",
   "lunchSource": "https://restaurantgiewont.com/menu-pl.html"

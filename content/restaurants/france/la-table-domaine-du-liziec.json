@@ -19,6 +19,7 @@
   "lunch": 95,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch",
+  "lunchWine": 69,
   "lunchNoteFr": "Même menu le midi",
   "lunchSourceType": "site",
   "lunchSource": "https://ledomaineduliziec.com/media/original/68372438baaad/menu-la-table.pdf",
@@ -34,5 +35,6 @@
   "chef": "Olivier Samson",
   "chefSource": "michelin",
   "dinnerNote": "Giroflée des Dunes menu, 4 courses (5 courses €125, 7 courses €155)",
+  "wine": 69,
   "dinnerNoteFr": "Menu Giroflée des Dunes en 4 actes (5 actes 125 €, 7 actes 155 €)"
 }

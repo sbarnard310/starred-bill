@@ -3574,15 +3574,43 @@ def write_alerts_data():
     return data["countries"]
 
 
+# The account page's star passport counts real continents ("A star on every continent"), so it splits CONTINENTS'
+# Americas and folds the Middle East into Asia. Only continents with starred restaurants count.
+PASSPORT_CONTINENT_NAMES = {"europe": "Europe", "asia": "Asia", "north-america": "North America", "south-america": "South America",
+                            "africa": "Africa", "oceania": "Oceania"}
+SOUTH_AMERICA = {"brazil", "argentina", "chile", "peru", "colombia", "uruguay"}
+
+
+def passport_continent(cid):
+    c = CONTINENT_OF.get(cid, "")
+    if c == "americas":
+        return "south-america" if cid in SOUTH_AMERICA else "north-america"
+    return "asia" if c == "middle-east" else c
+
+
 def build_account_pages():
     """The account page (/account/) and the privacy notice (/privacy/). Signing in and the lists run in the browser (account.js)."""
     # The restaurants (for the lists and progress) are in /data/account.json, loaded only once someone is signed in.
     # The page is English only, so the file carries English names; each restaurant's place is a number in its list of places.
-    cols = ["id", "name", "stars", "formerStars", "status", "area", "city", "dinner", "dinnerType"]
+    # The star passport also needs each restaurant's position (its map) and the city it counts under (most_city(), as in
+    # the most-stars guide; left out where that's the name of its own place), and each place's three-star count.
+    cols = ["id", "name", "stars", "formerStars", "status", "area", "city", "dinner", "dinnerType", "lat", "lng", "town"]
+
+    def value(r, c):
+        if c in ("lat", "lng"):
+            return round(r[c], 3) if r.get(c) is not None else None
+        if c == "town":
+            town = most_city(r)[1]
+            return None if town == r["cityName"] else town
+        return r.get(c)
+    three_n = Counter(pid for r in restaurants if r.get("stars") == 3 and not r.get("status") for pid in r["_chain"])
+    starred_countries = {r["country"] for r in restaurants if r.get("stars") and not r.get("status")}
     data = {
-        "accountUrl": write_data("account.json", rows_with_cities(restaurants, cols, ["cityPath", "cityName", "country", "cur"], lambda r, c: r.get(c))),
+        "accountUrl": write_data("account.json", rows_with_cities(restaurants, cols, ["cityPath", "cityName", "country", "cur"], value)),
         "alertCountries": write_alerts_data(),
-        "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] not in ("group", "cuisine") and starred_n[q["id"]])],
+        "places": [dict(link(p), id=p["id"], type=p["type"], n3=three_n[p["id"]]) for p in by_size(q for q in pages if q["type"] not in ("group", "cuisine") and starred_n[q["id"]])],
+        "continentOf": {c: passport_continent(c) for c in sorted(starred_countries)},
+        "continents": [[k, PASSPORT_CONTINENT_NAMES[k]] for k in PASSPORT_CONTINENT_NAMES if k in {passport_continent(c) for c in starred_countries}],
         "currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES,
     }
     write("/account/", render("account.html", {

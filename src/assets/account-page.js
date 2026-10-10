@@ -30,21 +30,157 @@ function renderCrumbs() {
   $("destLink").href = withLang("/") + "#destinations";
 }
 
-function statTiles(been) {
-  const stars = been.reduce((a, r) => a + starsOf(r), 0);
-  const three = been.filter((r) => starsOf(r) === 3).length;
-  const countries = new Set(been.map((r) => r.country)).size;
-  return '<div class="acct-stats">' + [[been.length, "accStatBeen"], [stars, "accStatStars"], [three, "accStatThree"], [countries, "accStatCountries"]].map(([n, k]) =>
-    '<div class="acct-stat"><div class="n">' + n + '</div><div class="l">' + esc(t(k)) + "</div></div>").join("") + "</div>";
+// ---------- Star passport ----------
+// Everything here is worked out in the browser from the "been there" list, so nothing new is stored: the totals, a world
+// map with a pin for each restaurant, and badges, each ladder showing the ones earned and the next to aim for. Restaurants
+// that have since lost their stars or closed still count, with the stars they had. A city is the one the most-stars guide
+// counts it under (`town` in account.json, else its place); continents come from DATA.continentOf (build.py).
+const cityOf = (r) => r.country + ":" + (r.town || r.cityName);
+function passportFigures(been) {
+  if (!pass.threes) pass.threes = [...byId.values()].filter((r) => r.stars === 3 && !r.status);
+  const live = (p) => pass.threes.filter((r) => r.chain.includes(p.id));
+  const f = {
+    n: been.length, stars: been.reduce((a, r) => a + starsOf(r), 0), three: been.filter((r) => starsOf(r) === 3).length,
+    cities: new Set(been.map(cityOf)).size, countries: new Set(been.map((r) => r.country)).size,
+    continents: new Set(been.map((r) => DATA.continentOf[r.country]).filter(Boolean)).size, allContinents: DATA.continents.length,
+    levels: new Set(been.map(starsOf).filter(Boolean)).size,
+    checker: (reports || []).some((x) => x.status === "used" || x.status === "confirmed"),
+  };
+  // "Every three-star in London": places with two or more three-star restaurants open today, and how many of them you've been to.
+  const beenIds = new Set(been.map((r) => r.id));
+  f.sets = DATA.places.filter((p) => p.n3 >= 2 && p.type !== "group").map((p) => {
+    const all = live(p);
+    return { p, have: all.filter((r) => beenIds.has(r.id)).length, need: all.length };
+  }).filter((s) => s.need >= 2 && s.have);
+  return f;
+}
+// Each ladder: [what it counts, stamp's small word, [[how many, badge name]…]]. Names reuse the old milestones' words (ms1–ms6).
+const BADGE_LADDERS = [
+  ["n", "restaurants", [[1, () => t("ms1")], [10, () => t("ms3")], [25, () => t("ms4")], [50, "50 restaurants"], [100, "100 restaurants"]]],
+  ["three", "three-stars", [[1, () => t("ms2")], [5, "5 three-stars"], [10, "10 three-stars"], [25, "25 three-stars"]]],
+  ["stars", "stars", [[25, "25 stars collected"], [50, () => t("ms6")], [100, "100 stars collected"], [250, "250 stars collected"]]],
+  ["cities", "cities", [[5, "5 cities"], [10, "10 cities"], [25, "25 cities"], [50, "50 cities"]]],
+  ["countries", "countries", [[3, () => t("ms5")], [5, "5 countries"], [10, "10 countries"], [20, "20 countries"]]],
+  ["continents", "continents", [[2, "2 continents"], [3, "3 continents"], ["all", "A star on every continent"]]],
+  ["levels", "levels", [[3, "The full set: a one-, two- and three-star"]]],
+];
+function badges(f) {
+  const got = [], next = [];
+  BADGE_LADDERS.forEach(([key, word, steps]) => {
+    let nextDone = false;
+    steps.forEach(([need, name]) => {
+      need = need === "all" ? f.allContinents : need;
+      if (key === "continents" && need > f.allContinents) return;
+      const b = { stamp: key === "levels" ? "1·2·3" : String(need), word, name: typeof name === "function" ? name() : name, have: Math.min(f[key], need), need };
+      if (f[key] >= need) got.push(b);
+      else if (!nextDone) { nextDone = true; next.push(b); }
+    });
+  });
+  f.sets.filter((s) => s.have >= s.need).forEach((s) => got.push({ stamp: "3", word: "three-stars", name: "Every three-star in " + s.p.name, have: s.need, need: s.need, star: true }));
+  // The closest set still to finish (most of it done, then the fewest left).
+  const open = f.sets.filter((s) => s.have < s.need).sort((a, b) => b.have / b.need - a.have / a.need || (a.need - a.have) - (b.need - b.have) || b.p.n - a.p.n)[0];
+  if (open) next.push({ stamp: "3", word: "three-stars", name: "Every three-star in " + open.p.name, have: open.have, need: open.need, star: true, href: withLang(open.p.path) });
+  (f.checker ? got : next).push({ stamp: "✓", word: "reports", name: t("ms7"), have: f.checker ? 1 : 0, need: 1, check: true });
+  return { got, next };
+}
+function badgeHtml(b, earned) {
+  const name = b.href ? '<a href="' + esc(b.href) + '">' + esc(b.name) + "</a>" : esc(b.name);
+  return '<li class="badge' + (earned ? " got" : "") + '"><span class="stamp" aria-hidden="true"><b' + (b.stamp.length > 3 ? ' class="long"' : "") + ">" + esc(b.stamp) + (b.star ? '<svg><use href="#star"/></svg>' : "") + "</b><small>" + esc(b.word) + "</small></span>" +
+    '<span class="badge-text"><span class="badge-name">' + name + "</span>" +
+    (earned ? '<span class="sr-only">' + esc(t("msGot")) + "</span>"
+      : '<span class="badge-prog"><span class="bar" aria-hidden="true"><span style="width:' + (b.have / b.need * 100).toFixed(1) + '%"></span></span>' + esc(t("accOf", { n: b.have, total: b.need })) + "</span>") +
+    "</span></li>";
+}
+function passportShareText(f) {
+  const plural = (n, word) => n + " " + word + (n === 1 ? "" : "s");
+  const where = f.cities > 1 ? " in " + f.cities + " cities" + (f.countries > 1 ? " and " + f.countries + " countries" : "") : "";
+  return "My Michelin star passport: " + plural(f.stars, "star") + " from " + plural(f.n, "restaurant") + (f.three ? " (" + f.three + " three-star)" : "") + where +
+    ". I keep mine on The Starred Bill:";
+}
+function passportSection(been) {
+  const f = passportFigures(been), { got, next } = badges(f);
+  ui.passport = f;
+  const tiles = [[f.n, t("accStatBeen")], [f.stars, t("accStatStars")], [f.three, t("accStatThree")], [f.cities, "Cities"], [f.countries, t("accStatCountries")],
+    [f.continents + '<small> of ' + f.allContinents + "</small>", "Continents"]];
+  return '<section class="acct-section passport" id="passport"><h2>Your star passport</h2>' +
+    (been.length ? "<p>Every restaurant you tick as been there goes in: a pin on your map, its stars in your total, and badges as your collection grows.</p>"
+      : "<p>Tick ✓ Been there next to any restaurant you've eaten at and it goes in here: a pin on your map, its stars in your total, and badges as your collection grows.</p>") +
+    '<div class="acct-stats six">' + tiles.map(([n, l]) => '<div class="acct-stat"><div class="n">' + n + '</div><div class="l">' + esc(l) + "</div></div>").join("") + "</div>" +
+    (been.some((r) => r.lat != null) ? '<div id="passportMapSlot"></div>' : "") +
+    (got.length ? '<h3 class="badges-h">Badges earned <span class="count">' + got.length + '</span></h3><ul class="badges">' + got.map((b) => badgeHtml(b, true)).join("") + "</ul>" : "") +
+    (next.length ? '<h3 class="badges-h">Next to aim for</h3><ul class="badges">' + next.map((b) => badgeHtml(b, false)).join("") + "</ul>" : "") +
+    (been.length ? '<p class="passport-share"><button type="button" class="btn-line" id="passportShare"><svg aria-hidden="true"><use href="#share"/></svg><span>Share my passport</span></button></p>' : "") +
+    "</section>";
 }
 
-function milestones(been) {
-  const stars = been.reduce((a, r) => a + starsOf(r), 0);
-  const countries = new Set(been.map((r) => r.country)).size;
-  const list = [["ms1", been.length >= 1], ["ms2", been.some((r) => starsOf(r) === 3)], ["ms3", been.length >= 10], ["ms4", been.length >= 25], ["ms5", countries >= 3], ["ms6", stars >= 50],
-    ["ms7", (reports || []).some((x) => x.status === "used" || x.status === "confirmed")]];
-  return '<section class="acct-section"><h2>' + esc(t("accMilestones")) + '</h2><ul class="milestones">' + list.map(([k, got]) =>
-    '<li class="' + (got ? "got" : "") + '"><svg aria-hidden="true"><use href="#star"/></svg><span>' + esc(t(k)) + "</span>" + (got ? '<span class="sr-only">' + esc(t("msGot")) + "</span>" : "") + "</li>").join("") + "</ul></section>";
+// The map is made once and moved into each redraw of the page (render() rewrites the page), loaded only as it nears the screen.
+const pass = { el: null, map: null, info: null, markers: new Map(), observer: null, framed: "" };
+function placePassportMap(been) {
+  const slot = $("passportMapSlot");
+  if (!slot) return;
+  if (!pass.el) {
+    pass.el = document.createElement("div");
+    pass.el.className = "map-canvas passport-map";
+    pass.el.innerHTML = '<p class="map-wait">' + "Loading your map…" + "</p>";
+    pass.observer = new IntersectionObserver((seen) => { if (seen.some((x) => x.isIntersecting)) { pass.observer.disconnect(); initPassportMap(); } }, { rootMargin: "300px" });
+    pass.observer.observe(pass.el);
+  }
+  slot.replaceWith(pass.el);
+  pass.been = been;
+  if (pass.map) drawPassportPins();
+}
+async function initPassportMap() {
+  try {
+    await loadGoogle();
+    const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+    await google.maps.importLibrary("marker");
+    pass.el.innerHTML = "";
+    pass.map = new Map(pass.el, { center: { lat: 35, lng: 10 }, zoom: 2, minZoom: 2, mapTypeControl: false, streetViewControl: false, clickableIcons: false, gestureHandling: "cooperative" });
+    pass.info = new InfoWindow();
+    pass.map.addListener("click", () => pass.info.close());
+    drawPassportPins();
+  } catch (e) {
+    if (!pass.map) pass.el.innerHTML = '<p class="map-wait">Your map couldn\'t load just now. Please reload the page to try again.</p>';
+  }
+}
+function passportCard(r) {
+  const day = loadVisited()[r.id];
+  return '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' +
+    '<a href="' + esc(pageLink(r)) + '" style="font-weight:700;font-size:15px;color:#12261C">' + esc(nameOf(r)) + "</a>" +
+    '<div style="color:#B3862B;font-size:13px">' + "✱".repeat(starsOf(r)) + ' <span style="color:#5A6E62">' + esc(whereOf(r)) + (r.status ? " · " + esc(t("formerly")) : "") + "</span></div>" +
+    (day ? '<div style="font-size:13px;color:#5A6E62;margin-top:4px">Been ' + esc(dayLabel(day)) + "</div>" : "") + "</div>";
+}
+// Adds and removes pins to match the list, and frames them all whenever the list changes.
+function drawPassportPins() {
+  const been = (pass.been || []).filter((r) => r.lat != null && r.lng != null), ids = new Set(been.map((r) => r.id));
+  pass.markers.forEach((m, id) => { if (!ids.has(id)) { m.setMap(null); pass.markers.delete(id); } });
+  been.forEach((r) => {
+    if (pass.markers.has(r.id)) return;
+    const m = new google.maps.Marker({ map: pass.map, position: { lat: r.lat, lng: r.lng }, title: nameOf(r),
+      icon: r.status ? pinIcon(starsOf(r), false, true) : pinIcon(r.stars), zIndex: r.status ? 1 : 100 + r.stars * 10 });
+    m.addListener("click", () => { pass.info.setContent(passportCard(r)); pass.info.open({ map: pass.map, anchor: m }); });
+    pass.markers.set(r.id, m);
+  });
+  const key = [...ids].sort().join(",");
+  if (key === pass.framed || !been.length) return;
+  pass.framed = key;
+  if (been.length === 1) { pass.map.setCenter({ lat: been[0].lat, lng: been[0].lng }); pass.map.setZoom(12); return; }
+  const box = new google.maps.LatLngBounds();
+  been.forEach((r) => box.extend({ lat: r.lat, lng: r.lng }));
+  pass.map.fitBounds(box, 40);
+  google.maps.event.addListenerOnce(pass.map, "idle", () => { if (pass.map.getZoom() > 13) pass.map.setZoom(13); });
+}
+// On phones the share sheet (the text carries the link), elsewhere the text and link are copied.
+async function sharePassport(btn) {
+  const text = passportShareText(ui.passport), url = "https://starredbill.com/";
+  if (navigator.share) {
+    try { await navigator.share({ text: text + " " + url }); track("share", { what: "passport", via: "sheet" }); } catch (e) {}
+    return;
+  }
+  try { await navigator.clipboard.writeText(text + " " + url); } catch (e) { return; }
+  track("share", { what: "passport", via: "copy" });
+  btn.querySelector("span").textContent = "Copied: paste it anywhere";
+  setTimeout(() => { if (btn.isConnected) btn.querySelector("span").textContent = "Share my passport"; }, 2500);
 }
 
 // ---------- Reports ----------
@@ -240,7 +376,8 @@ function render() {
   loadReports();
   const visited = loadVisited();
   const been = Object.keys(visited).map((id) => byId.get(id)).filter(Boolean);
-  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + yearSection(been) + progress(been) + diaryList(been) + wishList() + otherNotes() + reportsSection() + prefsSection() + emailsSection() + dataSection();
+  $("acctBody").innerHTML = msg + passportSection(been) + yearSection(been) + progress(been) + diaryList(been) + wishList() + otherNotes() + reportsSection() + prefsSection() + emailsSection() + dataSection();
+  placePassportMap(been);
   drawYearCard(been);
   if (/^#(preferences|emails)$/.test(location.hash) && !ui.jumped && $(location.hash.slice(1))) { ui.jumped = true; $(location.hash.slice(1)).scrollIntoView(); }
   if (location.hash === "#reports" && reports && !ui.jumpedReports) { ui.jumpedReports = true; if ($("reports")) $("reports").scrollIntoView(); }
@@ -294,6 +431,7 @@ document.addEventListener("click", async (e) => {
     return;
   }
   if (el.dataset.unwish) { setWishlist(loadWishlist().filter((x) => x !== el.dataset.unwish)); render(); return; }
+  if (el.id === "passportShare") { sharePassport(el); return; }
   if (el.id === "dlData") { downloadData(); return; }
   if (el.id === "signOutBtn") { ui.message = ""; await signOut(); return; }
   if (el.id === "deleteBtn") { ui.confirmDelete = true; render(); $("deleteYes").focus(); return; }

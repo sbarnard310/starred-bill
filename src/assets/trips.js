@@ -312,7 +312,7 @@ function itemHtml(t, x, i, ro) {
     const when = trip ? [x.time || "", mealWord(meal)].filter(Boolean).join(" · ") : "";  // the day is the heading above
     return '<li class="ti">' + num + '<div class="ti-body"><div class="ti-head"><div class="ti-who">' + nameLine(r, x) + "</div></div>" +
       (when || x.booked ? '<p class="ti-when">' + esc(when) + (x.booked ? ' <span class="ti-booked-tag">Booked</span>' : "") + "</p>" : "") +
-      (x.note ? '<p class="ti-note-ro">' + esc(x.note) + "</p>" : "") +
+      (x.note ? '<p class="ti-note-ro">' + esc(x.note) + "</p>" : "") + bwHtml(t, x, ro) +
       '<div class="ti-foot">' + priceLine(r, meal) + (trip ? calLinks(t, x, i) : "") + "</div></div></li>";
   }
   const lim = (t.starts_on ? ' min="' + t.starts_on + '"' : "") + (t.ends_on ? ' max="' + t.ends_on + '"' : "");
@@ -327,11 +327,29 @@ function itemHtml(t, x, i, ro) {
       '<div class="seg" role="group" aria-label="Meal">' + ["lunch", "dinner"].map((m) => '<button type="button" data-meal="' + m + '" aria-pressed="' + (meal === m) + '">' + mealWord(m) + "</button>").join("") + "</div>" +
       '<label class="ti-booked"><input type="checkbox" data-f="booked"' + (x.booked ? " checked" : "") + "> Booked</label></div>" : "") +
     '<label class="sr-only" for="tiNote' + i + '">Note on ' + esc(name) + '</label><input class="ti-note" id="tiNote' + i + '" data-f="note" type="text" maxlength="300" autocomplete="off" value="' + esc(x.note || "") + '" placeholder="' +
-      (trip ? "A note, e.g. ask for the counter seats" : "Why it's on the list") + '">' +
+      (trip ? "A note, e.g. ask for the counter seats" : "Why it's on the list") + '">' + bwHtml(t, x, ro) +
     '<div class="ti-foot">' + priceLine(r, meal) + (trip ? calLinks(t, x, i) : "") + "</div></div></li>";
+}
+// When bookings open for each restaurant on its day, or the trip's first day (booking windows, 10 Oct 2026): from
+// /data/booking.json (write_booking_data() in build.py), loaded with the trip, and bwOpens() in common.js. Members can ask
+// for an email the day before under Star emails on Your account (scripts/booking_reminders.py sends them).
+let bwData = null, bwLoading = null;
+function loadWindows() {
+  if (!bwLoading && DATA.bookingUrl) bwLoading = getData(DATA.bookingUrl).then((d) => { bwData = d || {}; renderItems(); }).catch(() => { bwLoading = null; });
+}
+function bwHtml(t, x, ro) {
+  const w = bwData && bwData[x.r], day = x.day || t.starts_on, today = new Date().toLocaleDateString("en-CA");
+  if (!w || !isTrip(t) || x.booked || !day || day < today || !["rolling", "monthly"].includes(w.bw.type)) return "";
+  const on = bwOpens(w.bw, day);
+  if (!on) return "";
+  const first = x.day ? "" : " for the trip's first day";
+  const text = on <= today ? "Bookings are open" + first + ": book now." :
+    "Bookings open" + first + " on " + bwLong(on) + (w.bw.time ? " at " + bwClock(w.bw.time) + " " + bwZone(w.bw.tz) + bwYourTime(on, w.bw) : "") + ".";
+  return '<p class="ti-bw">' + esc(text) + (!ro && on > today ? ' <a href="/account/#emails">Email me the day before</a>' : "") + "</p>";
 }
 // Day headings between a trip's restaurants ("Friday 14 May 2027", then "Not on a day yet").
 function itemsHtml(t, ro) {
+  loadWindows();
   if (!t.items.length) return '<p class="trip-empty">' + (ro ? "Nothing on it yet." : "No restaurants yet. Add some from your wishlist or search for them below.") + "</p>";
   let last = null;
   return '<ol class="trip-items">' + t.items.map((x, i) => {

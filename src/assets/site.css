@@ -1893,6 +1893,8 @@ button.near-card:hover { border-color: var(--green); }
 .bw-line { display: block; margin-top: 4px; font-size: .75rem; color: var(--muted); }
 .bw-line a { color: inherit; text-underline-offset: 2px; }
 .acts-cell .bw-line { flex-basis: 100%; margin: 0; font-size: .8rem; }
+.ti-bw { margin: 6px 0 0; font-size: .85rem; color: var(--muted); }
+.ti-bw a { color: var(--green); font-weight: 600; text-underline-offset: 2px; }
 /* Restaurant pages: the photo opens full size; "More photos" swaps in a strip of thumbnails (loaded only when tapped),
    and the viewer has arrows between them. */
 .rp-photo-open { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: var(--radius); }

@@ -3760,7 +3760,8 @@ def build_trips(compare_urls, account_url):
         "ogAlt": "Plan a trip around Michelin-starred restaurants on The Starred Bill",
         "crumbs": '<a href="/">All destinations</a><span aria-current="page">Trips</span>',
         "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "switchable": currency_data.get("switchable", []),
-                         "rateDate": currency_data.get("rateDate"), "compareParts": compare_urls, "accountUrl": account_url}),
+                         "rateDate": currency_data.get("rateDate"), "compareParts": compare_urls, "accountUrl": account_url,
+                         "bookingUrl": write_booking_data()}),
     }))
 
 

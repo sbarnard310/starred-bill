@@ -28,5 +28,16 @@
   "placeId": "ChIJqTnaAiNu5kcRQsRFgf8qeoA",
   "michelinId": "325113",
   "chef": "Kei Kobayashi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "weekday": "tue",
+    "nth": 1,
+    "ahead": 2,
+    "time": "09:30",
+    "tz": "Europe/Paris",
+    "via": "website",
+    "source": "https://restaurant-kei.fr/",
+    "checked": "2026-10-10"
+  }
 }

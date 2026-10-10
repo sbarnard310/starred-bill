@@ -47,6 +47,16 @@
   "dressCode": "No dress code, but the restaurant recommends dressing smartly, with long trousers and closed shoes for men.",
   "duration": "About three and a half hours.",
   "bookingOpens": "Online only, up to 11 months ahead. The next month's tables are released at midnight Central European Time on the 1st of each month. Tables are for 2 to 12 people.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 11,
+    "time": "00:00",
+    "tz": "Europe/Madrid",
+    "via": "website",
+    "source": "https://cellercanroca.com/informacion-sobre-las-reservas/",
+    "checked": "2026-10-10"
+  },
   "bookingUrl": "https://cellercanroca.com/reservas/reservation-information/pre-reserves-en.html",
   "bookingPhone": "+34 972 222 157 (questions only, Tuesday to Saturday 10am–6pm)",
   "waitlist": "If your date is full, join the waiting list for that day on the booking page; each day has its own list, so you can sign up for several.",

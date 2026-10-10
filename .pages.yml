@@ -752,6 +752,33 @@ content:
       - { name: duration, label: How long a meal takes, type: string }
       - { name: servicePct, label: Its own service charge in % (if not the country's usual), type: number }
       - { name: bookingOpens, label: When tables are released, type: text }
+      - name: bookingWindow
+        label: Booking window (when bookings open)
+        description: "The rule the pages and booking reminders work dates out from. Rolling: bookings open a number of days (or months) before the date. Monthly: a whole month opens at once, on a day of an earlier month (ahead 1 = the month before). Announced: dates given out in a newsletter. None: no bookings."
+        type: object
+        fields:
+          - name: type
+            label: Kind
+            type: select
+            options:
+              values:
+                - { value: rolling, label: "Rolling (days or months ahead)" }
+                - { value: monthly, label: "Monthly (a month at a time)" }
+                - { value: announced, label: "Announced in a newsletter" }
+                - { value: none, label: "No bookings" }
+          - { name: days, label: "Rolling: days ahead (e.g. 30)", type: number }
+          - { name: months, label: "Rolling: months ahead, to the day", type: number }
+          - { name: day, label: "Monthly: day of the month it opens (e.g. 1 or 15)", type: number }
+          - { name: weekday, label: "Monthly: or the weekday it opens (mon, tue, wed, thu, fri, sat, sun)", type: string }
+          - { name: nth, label: "Monthly: which one of that weekday (1 = first, 3 = third, -1 = last)", type: number }
+          - { name: workday, label: "Monthly: moves to Monday when it falls on a weekend", type: boolean }
+          - { name: ahead, label: "Monthly: months before the dining month (1 = the month before)", type: number }
+          - { name: time, label: "Time it opens, 24-hour (e.g. 10:00)", type: string }
+          - { name: tz, label: "Time zone (e.g. Europe/Paris, America/New_York)", type: string }
+          - { name: via, label: "Where (Tock, Resy, OpenTable, website, phone…)", type: string }
+          - { name: note, label: Note, type: text }
+          - { name: source, label: Link where the rule was found, type: string }
+          - { name: checked, label: Checked on (2026-10-10), type: string }
       - { name: bookingPhone, label: Booking phone number and its hours, type: string }
       - { name: bookingUrl, label: Booking page link, type: string }
       - { name: cancellation, label: Cancellation rules, type: text }

@@ -51,6 +51,15 @@
   "dressCode": "Elegant: jackets are recommended but not required, and shorts are strongly discouraged. Closed-toe shoes are suggested for walking round the farm.",
   "children": "The length of the meal makes it hard for young children to enjoy, and there's no children's menu; families are encouraged to try Blue Hill Cafeteria instead.",
   "bookingOpens": "On Tock only. Tables are released one month at a time on the 15th of the month before.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 15,
+    "ahead": 1,
+    "tz": "America/New_York",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/bluehillatstonebarns",
+    "checked": "2026-10-10"
+  },
   "bookingUrl": "https://www.exploretock.com/bluehillatstonebarns",
   "waitlist": "If your day or time is full, join the waiting list on Tock.",
   "cancellation": "All sales are final: bookings are prepaid and can't be cancelled. Gratuities aren't accepted; the 22% administrative fee replaces them.",

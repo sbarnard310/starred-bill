@@ -32,5 +32,13 @@
   "lunchNoteFr": "Même menu le midi · lun.–ven.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.zilte.be/menu",
-  "cuisineFr": "Cuisine créative"
+  "cuisineFr": "Cuisine créative",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 90,
+    "tz": "Europe/Brussels",
+    "via": "website",
+    "source": "https://www.zilte.be/reserveren/",
+    "checked": "2026-10-10"
+  }
 }

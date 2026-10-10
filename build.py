@@ -55,6 +55,68 @@ FAQ_MAX = 10  # the owner's rule (9 Oct 2026): no page has more than 10 question
 MENU_MEALS = ("dinner", "lunch", "lounge")  # where a menu in `menus` is served: the dining room at dinner or lunch, or the bar/lounge
 ID_PATTERN = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
 
+# Booking windows (10 Oct 2026): when a restaurant's tables go on sale, as `bookingWindow` in its file (README lists the
+# fields). bwOpens() in common.js and scripts/booking_reminders.py work out the dates; the pages say it with bwText().
+BW_TYPES = ("rolling", "monthly", "announced", "none")
+BW_WEEKDAYS = ("sun", "mon", "tue", "wed", "thu", "fri", "sat")
+BW_PUBLIC = ("type", "days", "months", "day", "weekday", "nth", "ahead", "workday", "time", "tz", "via")  # what the pages need
+
+
+def bw_problems(w):
+    """What's wrong with a bookingWindow, in plain English."""
+    if not isinstance(w, dict):
+        return ["must be a set of fields, e.g. {\"type\": \"rolling\", \"days\": 30, ...}"]
+    out = []
+    num = lambda k, lo, hi: isinstance(w.get(k), int) and not isinstance(w.get(k), bool) and lo <= w[k] <= hi
+    if w.get("type") not in BW_TYPES:
+        out.append(f"type must be one of {', '.join(BW_TYPES)}")
+    elif w["type"] == "rolling" and not (num("days", 1, 400) or num("months", 1, 13)):
+        out.append("a rolling window needs days (1 to 400) or months (1 to 13)")
+    elif w["type"] == "monthly":
+        if not (num("day", 1, 31) or (w.get("weekday") in BW_WEEKDAYS and w.get("nth", 1) in (1, 2, 3, 4, -1))):
+            out.append("a monthly window needs day (1 to 31), or weekday (mon, tue…) with nth (1 to 4, or -1 for the last)")
+        if not num("ahead", 1, 12):
+            out.append("a monthly window needs ahead: how many months before the dining month it opens (1 = the month before)")
+    if w.get("time") is not None and not re.fullmatch(r"([01]\d|2[0-3]):[0-5]\d", str(w["time"])):
+        out.append("time must be 24-hour, like 10:00")
+    if w.get("type") != "none" and not re.fullmatch(r"[A-Za-z]+(/[A-Za-z_+-]+)+", str(w.get("tz") or "")):
+        out.append("tz must be the restaurant's time zone, like Europe/Paris")
+    if not re.fullmatch(r"https://\S+", str(w.get("source") or "")):
+        out.append("source must be the https:// link where the rule was found")
+    if w.get("checked") is not None and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(w["checked"])):
+        out.append("checked must be a date like 2026-10-10")
+    return out
+
+
+def bw_public(w):
+    return {k: w[k] for k in BW_PUBLIC if w.get(k) not in (None, "", False)}
+
+
+def bw_text(w):
+    """The rule in a sentence, as bwText() in common.js writes it: "Bookings open 90 days ahead, at 12pm Chicago time, on Tock." """
+    if w["type"] == "none":
+        return "No bookings: walk in."
+    if w["type"] == "announced":
+        return w.get("note") or "Dates are announced in the restaurant's newsletter."
+    if w["type"] == "rolling":
+        when = (f"{w['days']} days ahead" if w.get("days") else "a month ahead, to the day" if w["months"] == 1 else f"{w['months']} months ahead, to the day")
+    else:
+        nth = {1: "first", 2: "second", 3: "third", 4: "fourth", -1: "last"}
+        day = w.get("day", 1)
+        on = (f"the {nth[w.get('nth', 1)]} {dict(zip(BW_WEEKDAYS, ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')))[w['weekday']]}" if w.get("weekday")
+              else "the first working day" if w.get("workday") and day == 1 else f"the {day}{'th' if 10 < day % 100 < 14 else {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')}")
+        a = w["ahead"]
+        when = f"a month at a time, on {on} of " + ("the month before" if a == 1 else f"each month, {a} months ahead")
+    at = ""
+    if w.get("time"):
+        h, m = map(int, w["time"].split(":"))
+        clock = "midnight" if not h and not m else f"{h % 12 or 12}{'.%02d' % m if m else ''}{'am' if h < 12 else 'pm'}"
+        at = f", at {clock} {w['tz'].split('/')[-1].replace('_', ' ')} time"
+    via = w.get("via") or ""
+    via = ("on its website" if via == "website" else "by phone" if via == "phone" else via if re.match(r"(by|on|through) ", via)
+           else "by " + via if re.search(r"( or |WhatsApp|email)", via, re.I) else "on " + via if via else "")
+    return f"Bookings open {when}{at}" + (f", {via}" if via else "") + "."
+
 problems = []
 
 
@@ -285,6 +347,13 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
             problem(where, f"{field} must be a date like 2026-10-09")
     if r.get("chefSource") and r["chefSource"] not in CHEF_SOURCES:
         problem(where, f"chefSource must be one of {', '.join(CHEF_SOURCES)}")
+    if isinstance(r.get("bookingWindow"), dict):  # Pages CMS saves the blank parts as "" (and false for an unticked box)
+        r["bookingWindow"] = {k: v for k, v in tidy(r["bookingWindow"]).items() if v is not False}
+        if not r["bookingWindow"].get("type"):
+            del r["bookingWindow"]
+    if r.get("bookingWindow") is not None:
+        for msg in bw_problems(r["bookingWindow"]):
+            problem(where, "bookingWindow: " + msg)
     country = places.get(country_of(city["id"]))
     r.update({
         "id": rid,
@@ -536,13 +605,17 @@ for _p in pages:
 
 
 # Fields only a restaurant's own page shows (build_restaurant_pages()), kept out of destination pages' data.
-PAGE_ONLY = ("noBookings", "queue", "byob", "servicePct", "hotel", "alsoTry", "waitlist", "duration", "menus", "menusSource", "menusChecked", "priceHistory", "starsSince", "dressCode", "bookingOpens", "bookingPhone", "bookingUrl",
+# (`bookingWindow` reaches destination pages as `bw`, without its source, checked date and note.)
+PAGE_ONLY = ("bookingWindow", "noBookings", "queue", "byob", "servicePct", "hotel", "alsoTry", "waitlist", "duration", "menus", "menusSource", "menusChecked", "priceHistory", "starsSince", "dressCode", "bookingOpens", "bookingPhone", "bookingUrl",
              "walkIns", "groups", "groupsUrl", "cancellation",
              "children", "infoSource", "infoChecked")
 
 
 def public(r):
-    return {k: v for k, v in r.items() if not k.startswith("_") and k not in ("chefSource", "michelinId") + PAGE_ONLY}
+    out = {k: v for k, v in r.items() if not k.startswith("_") and k not in ("chefSource", "michelinId") + PAGE_ONLY}
+    if r.get("bookingWindow") and not r.get("status"):
+        out["bw"] = bw_public(r["bookingWindow"])
+    return out
 
 
 # Pages carry only the translations they can show, which keeps the biggest (France, Italy, Japan) light enough for phones.
@@ -3601,6 +3674,20 @@ def write_alerts_data():
     return data["countries"]
 
 
+# /data/booking.json: every open restaurant whose booking window we know, for the booking reminders: the account page's
+# list of them (loaded only when a member has one) and scripts/booking_reminders.py, which emails members the day
+# before tables for their date go on sale. All of it is public on the restaurant and destination pages.
+def write_booking_data():
+    out = {}
+    for r in restaurants:
+        w = r.get("bookingWindow")
+        if not w or r.get("status") or not r.get("stars"):
+            continue
+        out[r["id"]] = {"name": r["name"], "where": r["cityName"], "href": restaurant_href(r), "book": r.get("bookingUrl") or r.get("website") or "",
+                        "text": bw_text(w), "bw": bw_public(w)}
+    return write_data("booking.json", out)
+
+
 # The account page's star passport counts real continents ("A star on every continent"), so it splits CONTINENTS'
 # Americas and folds the Middle East into Asia. Only continents with starred restaurants count.
 PASSPORT_CONTINENT_NAMES = {"europe": "Europe", "asia": "Asia", "north-america": "North America", "south-america": "South America",
@@ -3635,6 +3722,7 @@ def build_account_pages():
     data = {
         "accountUrl": write_data("account.json", rows_with_cities(restaurants, cols, ["cityPath", "cityName", "country", "cur"], value)),
         "alertCountries": write_alerts_data(),
+        "bookingUrl": write_booking_data(),
         "places": [dict(link(p), id=p["id"], type=p["type"], n3=three_n[p["id"]]) for p in by_size(q for q in pages if q["type"] not in ("group", "cuisine") and starred_n[q["id"]])],
         "continentOf": {c: passport_continent(c) for c in sorted(starred_countries)},
         "continents": [[k, PASSPORT_CONTINENT_NAMES[k]] for k in PASSPORT_CONTINENT_NAMES if k in {passport_continent(c) for c in starred_countries}],
@@ -6615,9 +6703,10 @@ def info_note(r):
 def book_html(r):
     """How to book at …: when tables are released, where to book (a button to the booking site), what a booking needs,
     walking in, and groups. Left out when the restaurant's file has no booking details."""
-    if not (r.get("bookingOpens") or r.get("bookingUrl") or r.get("bookingPhone")):
+    if not (r.get("bookingOpens") or r.get("bookingUrl") or r.get("bookingPhone") or r.get("bookingWindow")):
         return "", []
     name = r["name"]
+    bw = r.get("bookingWindow")
     if r.get("noBookings"):
         q = f"Can you book a table at {name}?"
         a = "No. " + (r.get("bookingOpens") or "")
@@ -6632,10 +6721,16 @@ def book_html(r):
     phone = (r.get("bookingPhone") or "").split(" (")[0]
     how = [x for x in (f"online on {via}" if via else "online" if r.get("bookingUrl") else "", f"by phone on {phone}" if phone else "") if x]
     lead = f"Book {' or '.join(how)}." if how else ""
-    a = " ".join(x for x in (lead, r.get("bookingOpens") or "") if x)  # the structured data's answer; the page shows the timing as the first step
+    timing = r.get("bookingOpens") or (bw_text(bw) if bw else "")
+    a = " ".join(x for x in (lead, timing) if x)  # the structured data's answer; the page shows the timing as the first step
     steps = []
-    if r.get("bookingOpens"):
-        steps.append(("When tables are released", e(r["bookingOpens"])))
+    if timing:
+        # Where the window is a rule we can work dates out from, a date box answers "when can I book for my day?"
+        # (restaurant.js), and members can ask for an email the day before (account.js, scripts/booking_reminders.py).
+        check = ('<span class="bw-check"><span class="bw-next" id="bwNext" hidden></span>'
+                 '<label for="bwDate">Going on a particular day? Pick it to see when bookings open for it.</label>'
+                 '<input type="date" id="bwDate"><span class="bw-answer" id="bwAnswer" aria-live="polite"></span></span>') if bw and bw["type"] in ("rolling", "monthly") else ""
+        steps.append(("When tables are released", e(timing) + (f" {e(bw['note'])}" if bw and bw.get("note") and r.get("bookingOpens") is None and bw["type"] != "announced" else "") + check))
     if r.get("bookingUrl") or r.get("bookingPhone"):
         steps.append(("Where to book", " ".join(x for x in (
             f'<a class="rp-cta" href="{e(r["bookingUrl"])}">Book on {e(via or "their website")}</a>' if r.get("bookingUrl") else "",
@@ -7164,7 +7259,8 @@ def build_restaurant_pages():
                  {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}]
         graph[1] = {k: v for k, v in graph[1].items() if v}
         data = {"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "knownIds": None, "cur": cur, "switchable": currency_data.get("switchable", []),
-                "restaurant": {"id": r["id"], "name": r["name"], "stars": r["stars"], "lat": r.get("lat"), "lng": r.get("lng"), "placeId": r.get("placeId")},
+                "restaurant": {"id": r["id"], "name": r["name"], "stars": r["stars"], "lat": r.get("lat"), "lng": r.get("lng"), "placeId": r.get("placeId"),
+                               **({"bw": bw_public(r["bookingWindow"])} if r.get("bookingWindow") else {})},
                 "nearby": [{"name": q["name"], "stars": q["stars"], "lat": q["lat"], "lng": q["lng"], "href": restaurant_href(q),
                             "dinner": money(q["dinner"], q["cur"]) if q.get("dinner") is not None else ""} for km, q in near]}
         del data["knownIds"]
@@ -7208,6 +7304,9 @@ def restaurant_sources_html(r, michelin_url):
     if prices:
         checked = nice_date(r["menusChecked"]) if r.get("menusChecked") else guide_stats_checked()
         parts.append("Prices: " + ", ".join(prices) + f", checked {e(checked)}")
+    if r.get("bookingWindow"):
+        w = r["bookingWindow"]
+        parts.append("When tables go on sale: " + a(w["source"], host(w["source"])) + (f", checked {e(nice_date(w['checked']))}" if w.get("checked") else ""))
     if r.get("infoSource"):
         parts.append("Booking and visiting: " + a(r["infoSource"], "the restaurant’s website")
                      + (f", checked {e(nice_date(r['infoChecked']))}" if r.get("infoChecked") else ""))

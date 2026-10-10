@@ -27,5 +27,13 @@
   "placeId": "ChIJB-qdUXsABDQRlotSKcO6_3Q",
   "michelinId": "475135",
   "chef": "Hideaki Sato",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Asia/Hong_Kong",
+    "via": "WhatsApp or email",
+    "source": "https://www.tavie.com.hk/reservation-1",
+    "checked": "2026-10-10"
+  }
 }

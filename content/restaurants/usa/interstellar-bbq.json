@@ -22,6 +22,12 @@
   "chefSource": "michelin",
   "noBookings": true,
   "bookingOpens": "InterStellar BBQ takes no reservations: there's one queue for eating in and same-day takeaway. It's open Wednesday to Sunday from 11am to 4pm, or until it sells out.",
+  "bookingWindow": {
+    "type": "none",
+    "tz": "America/Chicago",
+    "source": "https://www.interstellarbbq.com/",
+    "checked": "2026-10-10"
+  },
   "queue": "People start queuing around 10am on weekdays and 9:30am at weekends (from 8am on holiday weekends). To get the full menu, arrive at about 10–10:15am on a weekday or 9:15–9:45am at the weekend, and no later than 10:30am. Popular meats start selling out between 1:30pm and 2pm.",
   "walkIns": "You can pre-order online for pickup instead of queuing; the link is on the restaurant's home page.",
   "groups": "Order and pay before taking a table; please don't hold places in the queue for a big group. For 50 or more, there's catering and private hire.",

@@ -205,3 +205,34 @@ function showCurrency(c) {
 })();
 
 // "Report a price or change" and "Seen a different price?" ([data-report-id]) open the members' form: account.js.
+
+// ---------- When bookings open ----------
+// The date box under "When tables are released" (book_html() in build.py): pick a day and it says when bookings open
+// for it, worked out from the restaurant's booking window (bwOpens() in common.js), with the next monthly release
+// above it. Members can ask for an email the day before ("Email me the day before", account.js keeps the reminder and
+// scripts/booking_reminders.py sends it).
+(function bookingCheck() {
+  const bw = R.bw, input = $("bwDate"), out = $("bwAnswer"), next = $("bwNext");
+  if (!bw || !input) return;
+  const today = new Date().toLocaleDateString("en-CA");
+  input.min = today;
+  const nx = bwNext(bw);
+  if (nx && next) {
+    next.textContent = "Next release: " + bwLong(nx.on) + (bw.time ? " at " + bwClock(bw.time) + " " + bwZone(bw.tz) + bwYourTime(nx.on, bw) : "") + ", for " + nx.month + ".";
+    next.hidden = false;
+  }
+  input.addEventListener("change", () => {
+    const day = input.value, on = bwOpens(bw, day);
+    if (!day || !on) { out.textContent = ""; return; }
+    if (day < today) { out.textContent = "That day has passed: pick one ahead."; return; }
+    if (on <= today) {
+      out.textContent = "Bookings for " + bwLong(day) + " are already open" + (on === today && bw.time ? " (from " + bwClock(bw.time) + " " + bwZone(bw.tz) + " today)" : "") + ": book now.";
+    } else {
+      const [oy, om, od] = on.split("-").map(Number), eve = bwIso(bwUtc(oy, om, od - 1));
+      out.innerHTML = esc("Bookings for " + bwLong(day) + " open on " + bwLong(on) + (bw.time ? " at " + bwClock(bw.time) + " " + bwZone(bw.tz) + bwYourTime(on, bw) : "") + ".") +
+        ' <button type="button" class="bw-remind" data-remind-id="' + esc(R.id) + '" data-remind-name="' + esc(R.name) + '" data-remind-day="' + day +
+        '" data-remind-on="' + esc(bwLong(eve)) + '">Email me the day before</button>';
+    }
+    track("booking-check", { restaurant: R.id, open: on <= today ? "now" : "later" });
+  });
+})();

@@ -31,5 +31,14 @@
     "vegan"
   ],
   "chef": "Michael Tusk",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "tz": "America/Los_Angeles",
+    "via": "SevenRooms",
+    "source": "https://www.quincerestaurant.com/before-your-visit",
+    "checked": "2026-10-10"
+  }
 }

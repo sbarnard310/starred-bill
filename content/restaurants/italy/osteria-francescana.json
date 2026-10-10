@@ -60,6 +60,17 @@
   "children": "Guests must be 12 or older.",
   "duration": "About three hours, depending on the menu.",
   "bookingOpens": "Online only, about six months ahead: each month's tables are released at 10am Italian time, usually on the first working day of a month (May 2027 opens on Monday 2 November 2026; June 2027 on Tuesday 1 December).",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "workday": true,
+    "ahead": 6,
+    "time": "10:00",
+    "tz": "Europe/Rome",
+    "via": "website",
+    "source": "https://reservations.osteriafrancescana.it/",
+    "checked": "2026-10-10"
+  },
   "bookingUrl": "https://reservations.osteriafrancescana.it/",
   "waitlist": "When it's fully booked you can join the waiting list on the booking page.",
   "cancellation": "A credit card is needed, and four days before your visit €300 per person is held on it (not charged). Cancelling or changing the number of guests later than a week before, or not turning up, costs €300 per person.",

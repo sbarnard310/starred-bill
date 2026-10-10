@@ -128,6 +128,16 @@
   "starsSince": 2005,
   "dressCode": "Business casual. Jackets are recommended but not required. No athletic wear, loungewear, shorts, T-shirts, short sleeves, sneakers or flip-flops.",
   "bookingOpens": "Each month's tables are released on the 1st of the month before: online from 7am New York time, and by phone once the reservation line next opens (December's tables open online on 1 November).",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "07:00",
+    "tz": "America/New_York",
+    "via": "Resy",
+    "source": "https://www.le-bernardin.com/reservations",
+    "checked": "2026-10-10"
+  },
   "bookingPhone": "212 554 1515 (Monday to Friday 9:30am–5:30pm, Saturday 11am–5pm)",
   "bookingUrl": "https://resy.com/cities/new-york-ny/venues/le-bernardin",
   "cancellation": "A credit card secures every booking. Cancel at least 48 hours ahead to avoid a $150 per person fee.",

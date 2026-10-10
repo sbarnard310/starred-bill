@@ -397,10 +397,10 @@ function render() {
   loadTrips();
   const visited = loadVisited();
   const been = Object.keys(visited).map((id) => byId.get(id)).filter(Boolean);
-  $("acctBody").innerHTML = msg + passportSection(been) + yearSection(been) + progress(been) + diaryList(been) + wishList() + tripsSection() + otherNotes() + reportsSection() + prefsSection() + emailsSection() + dataSection();
+  $("acctBody").innerHTML = msg + passportSection(been) + yearSection(been) + progress(been) + diaryList(been) + wishList() + tripsSection() + otherNotes() + reportsSection() + prefsSection() + remindersSection() + emailsSection() + dataSection();
   placePassportMap(been);
   drawYearCard(been);
-  if (/^#(preferences|emails)$/.test(location.hash) && !ui.jumped && $(location.hash.slice(1))) { ui.jumped = true; $(location.hash.slice(1)).scrollIntoView(); }
+  if (/^#(preferences|emails|reminders)$/.test(location.hash) && !ui.jumped && $(location.hash.slice(1))) { ui.jumped = true; $(location.hash.slice(1)).scrollIntoView(); }
   if (location.hash === "#reports" && reports && !ui.jumpedReports) { ui.jumpedReports = true; if ($("reports")) $("reports").scrollIntoView(); }
 }
 
@@ -421,7 +421,8 @@ function downloadData() {
     reports: (reports || []).map((x) => ({ restaurant: x.restaurant_name || x.restaurant_id, what: reportWhat(x), details: x.details, sent: x.created_at, status: REPORT_STATUS[x.status] || x.status, ourNote: x.review_note || null })),
     preferences: { homeCity: loadProfile().homeName || null, currency: loadProfile().currency || null, dietaryNeeds: loadProfile().diet || null },
     savedSearches: (searches.rows || []).map((x) => ({ search: x.label, link: "https://starredbill.com" + x.page, emails: x.emails, saved: x.created_at })),
-    starEmails: alerts.row ? { newStarsNearYou: alerts.row.near_home, ceremonySummaries: alerts.row.countries.map((c) => (alertCountry(c) || [c, c])[1]) } : null,
+    starEmails: alerts.row ? { newStarsNearYou: alerts.row.near_home, ceremonySummaries: alerts.row.countries.map((c) => (alertCountry(c) || [c, c])[1]), bookingRemindersForTrips: alerts.row.booking } : null,
+    bookingReminders: (reminders.rows || []).map((x) => ({ restaurant: ((reminders.windows || {})[x.restaurant] || {}).name || x.restaurant, date: x.visit_on, sent: x.sent_at || null })),
   };
   const url = URL.createObjectURL(new Blob([JSON.stringify(out, null, 2)], { type: "application/json" }));
   const a = document.createElement("a");

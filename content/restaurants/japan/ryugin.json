@@ -29,5 +29,14 @@
   "placeId": "ChIJaZF5wHmLGGARycW1JhshDjY",
   "michelinId": "1194232",
   "chef": "Seiji Yamamoto",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "tz": "Asia/Tokyo",
+    "via": "Ikyu",
+    "source": "https://restaurant.ikyu.com/108103/",
+    "checked": "2026-10-10"
+  }
 }

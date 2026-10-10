@@ -31,5 +31,14 @@
   "placeId": "ChIJqZDavAuLGGARV-fj_CVDFnI",
   "michelinId": "1193950",
   "chef": "Tomoya Kawada",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "tz": "Asia/Tokyo",
+    "via": "Ikyu",
+    "source": "https://restaurant.ikyu.com/109091/",
+    "checked": "2026-10-10"
+  }
 }

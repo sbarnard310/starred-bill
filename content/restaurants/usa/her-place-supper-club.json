@@ -36,6 +36,17 @@
   "menusSource": "https://www.herplacephilly.com/menu/",
   "menusChecked": "2026-10-09",
   "bookingOpens": "Tables are released on OpenTable at 6pm Eastern time on the third Sunday of each month, for the following month (the next release, on Sunday 18 October 2026, covers November). It's reservation only, Monday to Friday, with two seatings, at 6pm and 8:30pm. Use the OpenTable app, sign in and save your card beforehand: you get 5 minutes to finish booking.",
+  "bookingWindow": {
+    "type": "monthly",
+    "weekday": "sun",
+    "nth": 3,
+    "ahead": 1,
+    "time": "18:00",
+    "tz": "America/New_York",
+    "via": "OpenTable",
+    "source": "https://www.opentable.com/booking/restref/availability?restRef=1209262&lang=en-US",
+    "checked": "2026-10-10"
+  },
   "bookingUrl": "https://www.opentable.com/booking/restref/availability?restRef=1209262&lang=en-US",
   "waitlist": "If tables go quickly, join OpenTable's Notify Me list for your time.",
   "cancellation": "A card holds the table but isn't charged in advance. Cancel through OpenTable at least 48 hours ahead for free; later, or if you don't turn up, it's the full $110 a head plus 20% gratuity and tax. You pay for the number booked, even if fewer come.",

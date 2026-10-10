@@ -1,0 +1,39 @@
+# Booking reminders: every morning, email the members whose bookings open next (the day before, in the restaurant's
+# time zone) for a date they asked about on a restaurant's page or for a restaurant on their trips
+# (scripts/booking_reminders.py). Each email is recorded in Supabase, so running it again never sends one twice. It needs
+# the same two repository secrets as the star emails (Settings › Secrets and variables › Actions): SUPABASE_SERVICE_KEY
+# and RESEND_API_KEY; without them it sends nothing and says so. By hand: Actions › Booking reminders › Run workflow.
+name: Booking reminders
+
+on:
+  schedule:
+    - cron: "15 7 * * *"  # 07:15 UTC: evening in Asia, early morning in the Americas, the day before most releases
+  workflow_dispatch:
+    inputs:
+      send:
+        description: "Send them (untick to only count who would get one)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: booking-reminders
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # the sitemap dates the build works out from the history
+      - name: Build the site
+        run: python3 build.py > /dev/null
+      - name: Send the booking reminders
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: python3 scripts/booking_reminders.py ${{ (github.event_name == 'schedule' || inputs.send) && '--send' || '' }}

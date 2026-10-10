@@ -27,5 +27,16 @@
     "vegetarian"
   ],
   "chef": "Brian Limoges",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "weekday": "fri",
+    "nth": -1,
+    "ahead": 2,
+    "time": "12:00",
+    "tz": "America/Los_Angeles",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/enclos/faq",
+    "checked": "2026-10-10"
+  }
 }

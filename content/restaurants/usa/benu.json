@@ -27,5 +27,14 @@
     "gluten-free"
   ],
   "chef": "Corey Lee",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "time": "10:00",
+    "tz": "America/Los_Angeles",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/benu/faq",
+    "checked": "2026-10-10"
+  }
 }

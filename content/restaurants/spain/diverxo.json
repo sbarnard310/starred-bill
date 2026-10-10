@@ -31,5 +31,14 @@
   "placeId": "ChIJfUIagAMpQg0RRYLx9K82nJc",
   "michelinId": "443589",
   "chef": "Dabiz Muñoz",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 90,
+    "time": "00:00",
+    "tz": "Europe/Madrid",
+    "via": "website",
+    "source": "https://diverxo.com/es/reservar",
+    "checked": "2026-10-10"
+  }
 }

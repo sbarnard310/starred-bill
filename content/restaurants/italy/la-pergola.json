@@ -77,6 +77,16 @@
   "dressCode": "Jacket required for men; a tie isn't needed. There's no set rule for women, but the restaurant is quite formal.",
   "children": "Children are welcome as long as they're supervised at all times. There's no children's menu, but the kitchen will make simple dishes on request.",
   "bookingOpens": "Online about 4–5 months ahead, with further dates opened at the start of each month. The restaurant suggests booking a few weeks ahead; window tables go first.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 4,
+    "tz": "Europe/Rome",
+    "via": "SevenRooms",
+    "note": "About four to five months ahead.",
+    "source": "https://www.sevenrooms.com/reservations/lapergola",
+    "checked": "2026-10-10"
+  },
   "bookingPhone": "+39 06 3509 2152 (reservations office, Monday to Friday 10:30am–6:30pm Rome time)",
   "bookingUrl": "https://www.sevenrooms.com/reservations/lapergola",
   "cancellation": "A credit card guarantees the booking. Changes or cancellations less than 72 hours ahead are charged.",

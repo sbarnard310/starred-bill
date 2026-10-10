@@ -30,5 +30,15 @@
     "vegetarian"
   ],
   "chef": "Björn Frantzén",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "10:00",
+    "tz": "Asia/Singapore",
+    "via": "website",
+    "source": "https://www.restaurantzen.com/reservation/",
+    "checked": "2026-10-10"
+  }
 }

@@ -68,7 +68,7 @@ const I18N = {
     tableLabel: "Restaurant prices",
     reviews: "{n} review|{n} reviews", ratingAria: "Google rating {r} out of 5", noRating: "No rating", fewReviews: "Few reviews", fewTitle: "Fewer than 20 Google reviews, so this rating may not be reliable yet",
     srcSite: "Restaurant website", srcPress: "Review source", srcTitle: "Where this price came from",
-    tripAddBtn: "Add to a trip", acctWhyTrip: "Create a free account, or sign in, to plan trips: put restaurants on a day, see the whole bill and share it.", reportBtn: "Report a price or change", acctWhyReport: "Create a free account, or sign in, to report a price or change. We check every report before changing anything.", saveSearch: "Save this search", acctWhySearch: "Create a free account, or sign in, to save this search. We'll email you when a restaurant newly matches it.", srcMember: "Member's report, {d}", ms7: "Price checker",
+    tripAddBtn: "Add to a trip", acctWhyTrip: "Create a free account, or sign in, to plan trips: put restaurants on a day, see the whole bill and share it.", reportBtn: "Report a price or change", acctWhyReport: "Create a free account, or sign in, to report a price or change. We check every report before changing anything.", acctWhyRemind: "Create a free account, or sign in, and we'll email you the day before bookings open for your date.", saveSearch: "Save this search", acctWhySearch: "Create a free account, or sign in, to save this search. We'll email you when a restaurant newly matches it.", srcMember: "Member's report, {d}", ms7: "Price checker",
     perMain: "per main", typicalSpend: "typical spend", notListed: "Not listed",
     // The till receipt on destination pages.
     rpLink: "Prices and details", rcptHead: "The Starred Bill · Table for 1", rcptDinnerOnly: "Dinner only", rcptNoPairing: "no pairing listed", rcptNoPairingOffered: "no pairing offered", rcptPlusWine: "+ wine {p}", rcptDinnerWine: "Dinner + wine", rcptLunchWine: "Lunch + wine", rcptChecked: "Checked {d}", rcptIncl: "Per person, service included", rcptPlus: "Per person, ++ (service and tax added)", rcptTaxTip: "Per person, before tax and tip", rcptTip: "Per person, before tip", rcptTax: "Per person, tax included",
@@ -1991,6 +1991,106 @@ const serviceLabel = (country) => SERVICE_LABEL[(SERVICE[country] || ["before"])
 const serviceAdd = (country) => (SERVICE[country] || [0, 0])[1] / 100;
 // When the prices were last checked, for the receipts' footer (destination pages and /compare/).
 const PRICES_CHECKED = new Date("2026-10-15T12:00:00Z");
+
+// ---------- Booking windows (10 Oct 2026) ----------
+// When a restaurant's tables go on sale, from `bookingWindow` in its file (README lists the fields): "rolling" (days or
+// months ahead of the date), "monthly" (a whole month at a time, on a day of an earlier month: `day`, or `weekday` with
+// `nth`, -1 for the last; `ahead` months before; `workday` moves a weekend to the Monday), "announced" (dates given out
+// in a newsletter) or "none" (no bookings). scripts/booking_reminders.py works the dates out the same way: change both.
+// English only, like the restaurant pages.
+const BW_DAYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+const bwUtc = (y, m, d) => new Date(Date.UTC(y, m - 1, d));
+const bwIso = (dt) => dt.toISOString().slice(0, 10);
+const bwMonthDays = (y, m) => bwUtc(y, m + 1, 0).getUTCDate();
+// The day tables for `day` ("2027-05-14") go on sale, as "2027-04-01", or "" when it can't be worked out.
+function bwOpens(bw, day) {
+  if (!bw || !/^\d{4}-\d{2}-\d{2}$/.test(day || "")) return "";
+  const [y, m, d] = day.split("-").map(Number);
+  if (bw.type === "rolling" && bw.days) return bwIso(bwUtc(y, m, d - bw.days));
+  if (bw.type === "rolling" && bw.months) {
+    const t = bwUtc(y, m - bw.months, 1), ty = t.getUTCFullYear(), tm = t.getUTCMonth() + 1;
+    return bwIso(bwUtc(ty, tm, Math.min(d, bwMonthDays(ty, tm))));
+  }
+  if (bw.type !== "monthly") return "";
+  const t = bwUtc(y, m - (bw.ahead || 1), 1), ty = t.getUTCFullYear(), tm = t.getUTCMonth() + 1;
+  let on;
+  if (bw.weekday) {
+    const wd = BW_DAYS.indexOf(bw.weekday);
+    if ((bw.nth || 1) > 0) on = 1 + (wd - t.getUTCDay() + 7) % 7 + 7 * ((bw.nth || 1) - 1);
+    else { const last = bwMonthDays(ty, tm); on = last - (bwUtc(ty, tm, last).getUTCDay() - wd + 7) % 7; }
+  } else on = Math.min(bw.day || 1, bwMonthDays(ty, tm));
+  let o = bwUtc(ty, tm, on);
+  if (bw.workday) while (o.getUTCDay() === 0 || o.getUTCDay() === 6) o = bwUtc(ty, tm, o.getUTCDate() + 1);
+  return bwIso(o);
+}
+const BW_ORD = (n) => n + (n % 100 > 10 && n % 100 < 14 ? "th" : ["th", "st", "nd", "rd"][n % 10] || "th");
+const BW_NTH = { 1: "first", 2: "second", 3: "third", 4: "fourth", "-1": "last" };
+const BW_DAY_NAMES = { sun: "Sunday", mon: "Monday", tue: "Tuesday", wed: "Wednesday", thu: "Thursday", fri: "Friday", sat: "Saturday" };
+// "10am", "12pm", "9.30am"; "midnight" for 00:00.
+function bwClock(hm) {
+  if (!hm) return "";
+  const [h, mi] = hm.split(":").map(Number);
+  if (!h && !mi) return "midnight";
+  return (h % 12 || 12) + (mi ? "." + String(mi).padStart(2, "0") : "") + (h < 12 ? "am" : "pm");
+}
+// "New York time" from "America/New_York".
+const bwZone = (tz) => (tz || "").split("/").pop().replace(/_/g, " ") + " time";
+// Where to book: "on Resy", "on its website", "by phone".
+const bwVia = (via) => !via ? "" : via === "website" ? "on its website" : via === "phone" ? "by phone" : /^(by|on|through) /.test(via) ? via : /( or |WhatsApp|email)/i.test(via) ? "by " + via : "on " + via;
+// The rule in a sentence: "Bookings open 90 days ahead, at 12pm Chicago time, on Tock." `short` leaves out the
+// time and where (for destination lists).
+function bwText(bw, short) {
+  if (!bw) return "";
+  if (bw.type === "none") return "No bookings: walk in.";
+  if (bw.type === "announced") return bw.note || "Dates are announced in the restaurant's newsletter.";
+  let when;
+  if (bw.type === "rolling") when = bw.days ? bw.days + " days ahead" : bw.months === 1 ? "a month ahead, to the day" : bw.months + " months ahead, to the day";
+  else if (bw.type === "monthly") {
+    const on = bw.weekday ? "the " + BW_NTH[bw.nth || 1] + " " + BW_DAY_NAMES[bw.weekday] : bw.workday && (bw.day || 1) === 1 ? "the first working day" : "the " + BW_ORD(bw.day || 1);
+    const a = bw.ahead || 1;
+    when = "a month at a time, on " + on + " of " + (a === 1 ? "the month before" : "each month, " + a + " months ahead");
+  } else return "";
+  const at = !short && bw.time ? ", at " + bwClock(bw.time) + " " + bwZone(bw.tz) : "";
+  const via = short ? "" : bwVia(bw.via);
+  return "Bookings open " + when + at + (via ? ", " + via : "") + ".";
+}
+// The moment it's `hm` o'clock on `day` in time zone `tz`, as a Date (null if the browser doesn't know the zone).
+function bwInstant(day, hm, tz) {
+  const [y, m, d] = day.split("-").map(Number), [h, mi] = (hm || "00:00").split(":").map(Number), guess = Date.UTC(y, m - 1, d, h, mi);
+  try {
+    const p = {};
+    new Intl.DateTimeFormat("en-GB", { timeZone: tz, hourCycle: "h23", year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric" })
+      .formatToParts(new Date(guess)).forEach((x) => { p[x.type] = x.value; });
+    return new Date(guess - (Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour % 24, +p.minute) - guess));
+  } catch (e) { return null; }
+}
+// " (9pm on Wednesday 31 March your time)" when the visitor's clock differs from the restaurant's, else "".
+function bwYourTime(day, bw) {
+  if (!bw.time) return "";
+  const at = bwInstant(day, bw.time, bw.tz);
+  let mine = "";
+  try { mine = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) { /* unknown: say nothing */ }
+  if (!at || !mine || mine === bw.tz) return "";
+  const hm = at.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+  if (hm === bw.time && at.toLocaleDateString("en-CA") === day) return "";
+  const local = at.toLocaleDateString("en-CA");
+  return " (" + bwClock(hm) + (local !== day ? " on " + bwLong(local) : "") + " your time)";
+}
+// A date as "Thursday 1 April 2027".
+function bwLong(day) {
+  const dt = bwUtc(...day.split("-").map(Number)), o = { timeZone: "UTC" };
+  return dt.toLocaleDateString("en-GB", Object.assign({ weekday: "long" }, o)) + " " + dt.toLocaleDateString("en-GB", Object.assign({ day: "numeric", month: "long", year: "numeric" }, o));
+}
+// The next monthly release from today, e.g. { on: "2026-11-01", month: "December 2026" }, for "Next release" lines.
+function bwNext(bw) {
+  if (!bw || bw.type !== "monthly") return null;
+  const now = new Date(), base = bwUtc(now.getUTCFullYear(), now.getUTCMonth() + 1, 1);
+  for (let i = 0; i < 3; i++) {
+    const tm = bwUtc(base.getUTCFullYear(), base.getUTCMonth() + 1 + (bw.ahead || 1) + i, 1), day = bwIso(tm), on = bwOpens(bw, day);
+    if (on >= bwIso(now)) return { on, month: tm.toLocaleDateString("en-GB", { month: "long", year: "numeric", timeZone: "UTC" }) };
+  }
+  return null;
+}
 const symbolOf = (cur) => { const s = DATA.currencies[cur].symbol; return /[A-Za-z]$/.test(s) ? s + "\u00a0" : s; };
 // Prices in a restaurant's own currency, e.g. "£195" or "NT$4,980".
 function localMoney(n, cur) {

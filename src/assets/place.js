@@ -427,8 +427,11 @@ function summaryCell(r) {
   return '<span class="sum-cell" role="cell"><button type="button" class="sum" data-row="' + esc(r.id) + '" aria-expanded="' + (state.openRow === r.id) + '">' +
     '<span class="sum-name" dir="auto">' + esc(nameOf(r)) + '</span><span class="sum-sub">' + sub + "</span>" + right + "</button></span>";
 }
+// When its bookings open (bookingWindow in its file, "bw" here; bwText() in common.js), English only for now, linking to
+// its own page's date box where it has a page.
+const bwLine = (r) => !r.bw || LANG !== "en" ? "" : '<span class="bw-line">' + (r.page && !r.status ? '<a href="' + esc(r.page) + '#book">' + esc(bwText(r.bw, true)) + "</a>" : esc(bwText(r.bw, true))) + "</span>";
 // Inside an opened row on phones: the cuisine (tap to show only that cuisine), Google Maps, "been there" and the report link.
-const actsCell = (r) => '<span class="acts-cell" role="cell">' +
+const actsCell = (r) => '<span class="acts-cell" role="cell">' + bwLine(r) +
   (r.status ? '<span class="tag">' + esc(cuisineOf(r)) + "</span>" : '<button type="button" class="tag" data-cat="' + esc(r.cuisine) + '">' + esc(cuisineOf(r)) + "</button>") +
   (r.status === "closed" ? "" : '<a class="maps-pill" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("findOnMaps", { name: nameOf(r) })) + '"><svg aria-hidden="true"><use href="#pin"/></svg>Google Maps</a>') +
   beenButton(r) + tripButton(r) + reportButton(r) + "</span>";
@@ -530,7 +533,7 @@ function ledgerRow(r) {
     '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
     '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num' + (fewReviews(r) ? " few" : "") + '" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + fewNote(r) + "</span>" : "") : '<span class="num muted" aria-hidden="true">–</span><span class="note">' + t("noRating") + "</span>") + "</span>" +
     '<span class="notes" role="cell">' + (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc(noteOf(r) || "–") +
-      srcHtml(r) + tripButton(r) + reportButton(r) + "</span>" +
+      srcHtml(r) + bwLine(r) + tripButton(r) + reportButton(r) + "</span>" +
     '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + "</span>" + stub(r) + "</span>" + receipt(r) + actsCell(r) +
     '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
     "</div>";

@@ -26,5 +26,16 @@
     "kosher"
   ],
   "chef": "Kyle Connaughton",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "09:00",
+    "tz": "America/Los_Angeles",
+    "via": "Tock",
+    "note": "Inn guests can book dinner with their stay up to three months ahead.",
+    "source": "https://singlethreadfarms.com/bookings",
+    "checked": "2026-10-10"
+  }
 }

@@ -30,5 +30,15 @@
     "gluten-free"
   ],
   "chef": "Jacques Marcon",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "weekday": "tue",
+    "nth": 1,
+    "ahead": 5,
+    "tz": "Europe/Paris",
+    "via": "website",
+    "source": "https://www.lesmaisonsmarcon.fr/faq-reservation/",
+    "checked": "2026-10-10"
+  }
 }

@@ -1,10 +1,10 @@
-// The unsubscribe link in every star email (scripts/star_alerts.py) and saved-search email (scripts/saved_searches.py):
-// /unsubscribe/?t=<token>[&what=near|countries|searches|all].
+// The unsubscribe link in every star email (scripts/star_alerts.py), saved-search email (scripts/saved_searches.py) and
+// booking reminder (scripts/booking_reminders.py): /unsubscribe/?t=<token>[&what=near|countries|searches|booking|all].
 // It works without signing in: email_unsubscribe() in Supabase (supabase/schema.sql) turns those emails off for whoever
 // the token belongs to. It runs in the page rather than on opening the link, so mail scanners that open links can't
 // unsubscribe anyone. English only, like the emails; kept out of search engines and the sitemap.
 const unsubParams = new URLSearchParams(location.search);
-const UNSUB_WHAT = { near: "New stars near you emails", countries: "ceremony-night summaries", searches: "saved-search emails (your searches stay on Your account)", all: "star or saved-search emails" };
+const UNSUB_WHAT = { near: "New stars near you emails", countries: "ceremony-night summaries", searches: "saved-search emails (your searches stay on Your account)", booking: "booking reminders", all: "star emails, saved-search emails or booking reminders" };
 
 function renderHeader() {
   applyI18n();
@@ -30,7 +30,7 @@ async function unsubscribe() {
     if (!r.ok) throw new Error(r.status);
     if ((await r.json()) === "ok") {
       say("You're unsubscribed", "We won't send you any more " + UNSUB_WHAT[what] + ".");
-      track("star-emails", { unsubscribe: what });
+      track(what === "booking" ? "booking-reminder" : "star-emails", { unsubscribe: what });
     } else {
       say("We couldn't find those emails", "The link may be from an account that has since been deleted. If you're still getting emails, reply to one with “unsubscribe” and we'll stop them.");
     }

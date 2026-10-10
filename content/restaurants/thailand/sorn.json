@@ -24,5 +24,15 @@
   "placeId": "ChIJWfYJ3QWf4jAR9erXv7kK7sA",
   "michelinId": "566269",
   "chef": "Supaksorn Jongsiri",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 15,
+    "ahead": 1,
+    "time": "00:00",
+    "tz": "Asia/Bangkok",
+    "via": "TableCheck",
+    "source": "https://sornfinesouthern.com/reservations/",
+    "checked": "2026-10-10"
+  }
 }

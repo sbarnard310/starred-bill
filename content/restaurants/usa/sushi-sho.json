@@ -38,6 +38,16 @@
   "menusSource": "https://www.exploretock.com/sushi-sho-nyc",
   "menusChecked": "2026-10-09",
   "bookingOpens": "Online through Tock only, as prepaid reservations. New dates are released on the 1st of the month at 4pm New York time, about three months ahead (tables up to 31 January 2027 are open now; the next release is on 1 November 2026).",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 3,
+    "time": "16:00",
+    "tz": "America/New_York",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/sushi-sho-nyc",
+    "checked": "2026-10-10"
+  },
   "bookingUrl": "https://www.exploretock.com/sushi-sho-nyc",
   "cancellation": "The restaurant texts or calls to confirm the day before; if you don't reply by the end of that day, it may cancel the booking, and refunds may not be given.",
   "infoSource": "https://www.exploretock.com/sushi-sho-nyc",

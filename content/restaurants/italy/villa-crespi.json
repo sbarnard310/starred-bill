@@ -58,6 +58,16 @@
   "starsSince": 2022,
   "dressCode": "Smart casual. Men need trousers, a long-sleeved shirt or jumper, and closed shoes.",
   "bookingOpens": "Online on the restaurant's website or by phone; book well ahead. Closed on Mondays and Tuesdays, and for a winter break in January and a summer break in August.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "tz": "Europe/Rome",
+    "via": "website",
+    "note": "The calendar shows the current month and the two after it; hotel guests can book further ahead.",
+    "source": "https://villacrespi.it/prenota-tavolo/",
+    "checked": "2026-10-10"
+  },
   "bookingUrl": "https://villacrespi.it/en/book-a-table/",
   "bookingPhone": "+39 0322 911902",
   "waitlist": "If your date is full, join the waiting list; the reservations team phones or emails if a table comes free.",

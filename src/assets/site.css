@@ -1879,6 +1879,20 @@ button.near-card:hover { border-color: var(--green); }
 .rp-steps a { color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
 .rp-steps .rp-cta { display: inline-block; margin: 4px 8px 4px 0; padding: 7px 14px; border-radius: 999px; background: var(--green); color: var(--surface); text-decoration: none; }
 .rp-steps .rp-cta:hover { filter: brightness(1.1); }
+/* When bookings open (10 Oct 2026): the date box under "When tables are released" on restaurant pages, and the short
+   line on destination rows (notes column on computers, the opened row on phones). */
+.rp-steps .bw-check { display: block; margin-top: 12px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); }
+.rp-steps .bw-next { display: block; margin: 0 0 10px; color: var(--ink); font-weight: 600; }
+.bw-check label { display: block; margin-bottom: 6px; color: var(--muted); }
+.bw-check input[type=date] { font: inherit; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); max-width: 100%; }
+.rp-steps .bw-answer { display: block; margin-top: 10px; color: var(--ink); }
+.rp-steps .bw-answer:empty { display: none; }
+.bw-remind { display: inline-block; margin: 8px 0 0; padding: 7px 14px; border: 1px solid var(--green); border-radius: 999px; background: none; color: var(--green); font: inherit; font-weight: 600; cursor: pointer; }
+.bw-remind:hover { background: var(--green-soft); }
+.bw-remind:disabled { opacity: .7; cursor: default; background: none; }
+.bw-line { display: block; margin-top: 4px; font-size: .75rem; color: var(--muted); }
+.bw-line a { color: inherit; text-underline-offset: 2px; }
+.acts-cell .bw-line { flex-basis: 100%; margin: 0; font-size: .8rem; }
 /* Restaurant pages: the photo opens full size; "More photos" swaps in a strip of thumbnails (loaded only when tapped),
    and the viewer has arrows between them. */
 .rp-photo-open { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: var(--radius); }

@@ -27,5 +27,14 @@
     "kosher"
   ],
   "chef": "Thomas Keller",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "tz": "America/Los_Angeles",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/tfl/faq",
+    "checked": "2026-10-10"
+  }
 }

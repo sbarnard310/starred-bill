@@ -27,5 +27,15 @@
   "lunchSourceType": "site",
   "lunchSource": "https://gionsasaki.com/",
   "lunchNote": "Lunch kaiseki; including tax and service",
-  "lunchNoteJa": "昼懐石・税サ込"
+  "lunchNoteJa": "昼懐石・税サ込",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "workday": true,
+    "ahead": 2,
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://gionsasaki.com/",
+    "checked": "2026-10-10"
+  }
 }

@@ -23,5 +23,14 @@
   "placeId": "ChIJxRcpzSctDogRBKHyFUKauHc",
   "michelinId": "513128",
   "chef": "John Shields and Karen Urie-Shields",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 90,
+    "time": "12:00",
+    "tz": "America/Chicago",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/smyth/faq",
+    "checked": "2026-10-10"
+  }
 }

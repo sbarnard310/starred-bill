@@ -63,6 +63,14 @@
   "dressCode": "No formal dress code, but please avoid shorts, tracksuits, hoodies and hats. Smart trainers are fine.",
   "children": "Young guests are welcome if they order from the regular menu. There are no facilities for babies or very young children.",
   "bookingOpens": "Online up to four months ahead, for 1 to 6 guests. Groups of 9 or more can ask up to three months ahead. On Saturdays only the Prestige and Carte Blanche menus are served.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 4,
+    "tz": "Europe/London",
+    "via": "OpenTable",
+    "source": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/book-a-table/",
+    "checked": "2026-10-10"
+  },
   "bookingPhone": "020 7352 4441 (call for 7 or 8 guests)",
   "bookingUrl": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/book-a-table/",
   "groups": "Groups of 7 or 8 book by phone and choose the Prestige or Carte Blanche menu; 9 or more use the enquiry form on the booking page.",

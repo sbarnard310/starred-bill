@@ -23,5 +23,13 @@
   "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ",
   "chef": "Kevin Fehling",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Berlin",
+    "via": "website",
+    "source": "https://the-table-hamburg.de/reservierungen/",
+    "checked": "2026-10-10"
+  }
 }

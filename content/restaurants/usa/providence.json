@@ -26,5 +26,13 @@
   "placeId": "ChIJaUBtetO-woARqyrV4ASPECg",
   "michelinId": "559844",
   "chef": "Michael Cimarusti",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "America/Los_Angeles",
+    "via": "website",
+    "source": "https://providencela.com/reservations/",
+    "checked": "2026-10-10"
+  }
 }

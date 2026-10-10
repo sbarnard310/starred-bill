@@ -29,5 +29,14 @@
     "kosher"
   ],
   "chef": "Thomas Keller",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "tz": "America/New_York",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/perse/faq",
+    "checked": "2026-10-10"
+  }
 }

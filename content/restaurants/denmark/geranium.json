@@ -38,5 +38,13 @@
     "halal"
   ],
   "chef": "Rasmus Kofoed",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Copenhagen",
+    "via": "SevenRooms",
+    "source": "https://www.geranium.dk/",
+    "checked": "2026-10-10"
+  }
 }

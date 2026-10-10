@@ -401,7 +401,8 @@ function acctOffer(text, yes, no) {
 function renderSignIn() {
   const box = $("signInBox");
   if (!box) return;
-  const why = account.reason === "been" ? t("acctWhyBeen") : account.reason === "report" ? t("acctWhyReport") : account.reason === "trip" ? t("acctWhyTrip") : account.reason === "search" ? t("acctWhySearch") : t("acctWhy");
+  const why = account.reason === "been" ? t("acctWhyBeen") : account.reason === "report" ? t("acctWhyReport") : account.reason === "trip" ? t("acctWhyTrip") : account.reason === "search" ? t("acctWhySearch")
+    : account.reason === "remind" ? t("acctWhyRemind") : t("acctWhy");
   box.querySelector(".si-title").textContent = t("acctTitle");
   box.querySelector(".si-why").textContent = why;
   box.querySelector(".si-close").setAttribute("aria-label", t("acctClose"));
@@ -595,6 +596,39 @@ window.addEventListener("sb:account", () => {
   if (!p || !account.user) return;
   store.set(SEARCH_KEY, null);
   if (Date.now() - p.at < 30 * 60 * 1000 && p.path === location.pathname) openSaveSearch(p.spec);
+});
+
+// ---------- Booking reminders (10 Oct 2026) ----------
+// "Email me the day before" ([data-remind-id], beside a restaurant page's booking date box) keeps a reminder in
+// `booking_reminders` (supabase/booking.sql): scripts/booking_reminders.py emails it the day before bookings for that
+// date open. Anyone signed out is asked to sign in first, and the reminder is saved once they have (kept for half an hour).
+const REMIND_KEY = "starredbill-remind-pending";
+async function saveReminder(r) {
+  const askSignIn = () => { store.set(REMIND_KEY, Object.assign({ at: Date.now() }, r)); openSignIn("remind"); };
+  if (!(account.ready ? account.user : hasStoredSession())) { askSignIn(); return; }
+  try {
+    await bootAccount();
+    await accountSettled();
+    if (!account.user) { askSignIn(); return; }
+    const { error } = await account.client.from("booking_reminders")
+      .upsert({ user_id: account.user.id, restaurant: r.id, visit_on: r.day }, { onConflict: "user_id,restaurant,visit_on", ignoreDuplicates: true });
+    if (error) throw error;
+    track("booking-reminder", { restaurant: r.id });
+    acctNotice("Saved. We'll email you on " + r.on + ", the day before bookings open. Your reminders are on Your account.");
+    document.querySelectorAll('[data-remind-id="' + r.id + '"][data-remind-day="' + r.day + '"]').forEach((b) => { b.disabled = true; b.textContent = "Reminder saved"; });
+  } catch (e) { acctNotice(e && e.message && /up to/.test(e.message) ? e.message : t("acctFailed")); }
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-remind-id]");
+  if (!b) return;
+  e.preventDefault();
+  saveReminder({ id: b.dataset.remindId, name: b.dataset.remindName || "", day: b.dataset.remindDay, on: b.dataset.remindOn || "" });
+});
+window.addEventListener("sb:account", () => {
+  const r = store.get(REMIND_KEY, null);
+  if (!r || !account.user) return;
+  store.set(REMIND_KEY, null);
+  if (Date.now() - r.at < 30 * 60 * 1000) saveReminder(r);
 });
 
 // Start straight away only if someone is (or is becoming) signed in; everyone else loads nothing extra.

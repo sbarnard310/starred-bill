@@ -41,7 +41,7 @@ function emailsSection() {
 }
 function starEmailsSection() {
   const head = '<section class="acct-section" id="emails"><h2>Star emails</h2>' +
-    "<p>An email on the night a MICHELIN Guide reveals its new stars, once our pages are up to date. Nothing else, and you can stop them at any time.</p>";
+    "<p>An email on the night a MICHELIN Guide reveals its new stars, once our pages are up to date, and reminders before bookings open for your trips. Only the ones you choose, and you can stop them at any time.</p>";
   if (alerts.failed) return head + '<p class="empty-note">Your email choices couldn\'t load just now. Please reload the page to try again.</p></section>';
   if (!alerts.row) { loadAlerts(); return head + '<p class="acct-loading">' + esc(t("accLoading")) + "</p></section>"; }
   const pr = loadProfile(), r = alerts.row;

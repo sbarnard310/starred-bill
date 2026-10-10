@@ -3632,6 +3632,12 @@ def guide_stats():
     for i, key in enumerate(("top3", "second3")):
         stats[f"{key}Country"], stats[f"{key}N"] = places[by_three[i][1]]["name"], str(by_three[i][0])
         stats[f"{key}CountryPath"] = places[by_three[i][1]]["path"]
+    by_two = sorted(((sum(1 for r in live if r["country"] == c and r["stars"] == 2), c) for c in {r["country"] for r in live}), reverse=True)
+    # Mid-sentence, a few names take "the" ("followed by Japan, Germany and the United States"); the top one starts a sentence.
+    for i, key in enumerate(("top2", "second2", "third2", "fourth2")):
+        stats[f"{key}Country"], stats[f"{key}N"] = ("the " if i and by_two[i][1] in THE_COUNTRIES else "") + places[by_two[i][1]]["name"], str(by_two[i][0])
+        stats[f"{key}CountryPath"] = places[by_two[i][1]]["path"]
+    stats["oneIn2"] = str(round(len(live) / max(1, sum(1 for r in live if r["stars"] == 2))))
     stats["total"] = f"{stats['total']:,}"
     stats["countries"] = str(stats["countries"])
     month = site.get("updated", "")
@@ -3668,6 +3674,63 @@ def three_star_changes(year, keep=lambda r: True):
     return sorted(gained, key=lambda r: r["name"].lower()), sorted(lost, key=lambda r: r["name"].lower())
 
 
+# Countries whose names take "the" in a sentence.
+THE_COUNTRIES = {"usa", "uk", "netherlands", "uae", "philippines"}
+
+# Places whose restaurants at one star level get their own guide table, {{table:two-star-tuscany}} (STAR_LIST_PLACES[2]).
+STAR_LIST_PLACES = {2: ("tuscany",)}
+
+
+def latest_edition_month(r):
+    """The month ("2025-11") of the latest ceremony among the MICHELIN Guides that cover a restaurant (content/ceremonies.json),
+    or None when none does or its newest stars aren't in our files yet."""
+    months = [g["last"]["date"][:7] for g in ceremony_guides() if g.get("last") and not g["status"] and set(g.get("places", [])) & set(r["_chain"])]
+    return max(months) if months else None
+
+
+def two_star_changes():
+    """What each guide's latest edition changed at two stars: {"new": newly starred straight in at two, "up": promoted from
+    one, "down": dropped from three, "lost": closed or lost their stars, or dropped to one}, each sorted by name."""
+    out = {"new": [], "up": [], "down": [], "lost": []}
+    for r in restaurants:
+        month = r.get("changeDate") and latest_edition_month(r)
+        if not month or r["changeDate"] < month:
+            continue
+        if r.get("stars") == 2 and not r.get("status") and r.get("change") in ("new", "up", "down"):
+            out[r["change"]].append(r)
+        elif (r.get("status") and r.get("formerStars") == 2) or (r.get("stars") == 1 and r.get("change") == "down" and not r.get("status")):
+            out["lost"].append(r)
+    for k in out:
+        out[k].sort(key=lambda r: r["name"].lower())
+    return out
+
+
+def two_star_change_lists(name_html):
+    """{{table:two-star-changes}}: the two-star restaurants each guide's latest edition added (new or promoted), the ones it
+    dropped from three, and the ones that lost two stars, as tables with the month of the guide."""
+    ch = two_star_changes()
+    where = lambda r: f'<a href="{e(r["cityPath"])}">{e(place_name(r))}</a>, {e(places[r["country"]]["name"])}'
+    when = lambda r: MONTH_NAMES[int(r["changeDate"][5:7]) - 1] + " " + r["changeDate"][:4]
+
+    def table(rows, what):
+        rows = sorted(rows, key=lambda r: (places[r["country"]]["name"], r["name"].lower()))
+        body = "".join(f'<tr><td data-label="Restaurant">{name_html(r)}</td><td data-label="Where">{where(r)}</td>'
+                       f'<td data-label="What changed">{e(what(r))}</td><td data-label="Guide">{e(when(r))}</td></tr>' for r in rows)
+        heads = "".join(f'<th scope="col">{h}</th>' for h in ("Restaurant", "Where", "What changed", "Guide"))
+        return f'<div class="table-wrap"><table class="guide-table data"><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>'
+
+    gained = ch["new"] + ch["up"]
+    out = f'<h3 id="new-two">New two-star restaurants: {len(gained)}</h3>' + (
+        table(gained, lambda r: "New, straight in at two stars" if r["change"] == "new" else "Promoted from one star") if gained
+        else "<p>None in the latest editions.</p>")
+    if ch["down"]:
+        out += f'<h3 id="down-two">Down from three stars to two: {len(ch["down"])}</h3>' + table(ch["down"], lambda r: r.get("changeNote") or "Lost its third star")
+    out += f'<h3 id="lost-two">Lost two stars: {len(ch["lost"])}</h3>' + (
+        table(ch["lost"], lambda r: r.get("statusNote") or r.get("changeNote") or "Dropped to one star") if ch["lost"] else "<p>None in the latest editions.</p>")
+    return out + ('<p class="table-note">From each MICHELIN Guide’s latest edition (the month its stars were announced); '
+                  "a guide whose newest stars we are still adding is left out until they are in.</p>")
+
+
 # The MICHELIN Guide's own round-up of its starred Indian restaurants (February 2026) also counts these, though their cuisine label isn't Indian.
 INDIAN_ALSO = {"thevar"}
 
@@ -3697,20 +3760,28 @@ def list_stats(live, year):
     out.update({"indianTotal": str(len(indian)), "indian1": str(c[0]), "indian2": str(c[1]), "indian3": str(c[2]), "indianSplit": star_split(c),
                 "indianCountries": str(len({r["country"] for r in indian})), "indianCities": str(len(cities)),
                 "indianTopCity": cities[0] if cities else "–", "indianTopCityN": str(sum(1 for r in indian if indian_city(r) == cities[0])) if cities else "0"})
-    three = [r for r in live if r["stars"] == 3]
-    out["n3Countries"] = str(len({r["country"] for r in three}))
-    for key, rows in (("", three), ("UK", [r for r in three if r["country"] == "uk"]), ("London", [r for r in three if in_london(r)])):
-        out[f"n3{key}"] = str(len(rows))
-        menus = sorted((r for r in rows if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=usd)
-        if menus:
-            r = menus[0]
-            out[f"cheapest3{key}"], out[f"cheapest3{key}Place"] = r["name"], place_name(r)
-            out[f"cheapest3{key}Price"] = money(r["dinner"], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(usd(r))})")
+    # {{n3Countries}}, {{n3UK}}, {{cheapest3London}}… and the same for two stars ({{n2Countries}}, {{cheapest2Price}}…).
+    for level in (3, 2):
+        at = [r for r in live if r["stars"] == level]
+        out[f"n{level}Countries"] = str(len({r["country"] for r in at}))
+        for key, rows in (("", at), ("UK", [r for r in at if r["country"] == "uk"]), ("London", [r for r in at if in_london(r)])):
+            out[f"n{level}{key}"] = f"{len(rows):,}"
+            menus = sorted((r for r in rows if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=usd)
+            if menus:
+                r = menus[0]
+                out[f"cheapest{level}{key}"], out[f"cheapest{level}{key}Place"] = r["name"], place_name(r)
+                out[f"cheapest{level}{key}Price"] = money(r["dinner"], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(usd(r))})")
+        for pid in STAR_LIST_PLACES.get(level, ()):  # {{cheapest2_tuscany}}, {{cheapest2Price_tuscany}}
+            menus = sorted((r for r in at if pid in r["_chain"] and r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=usd)
+            if menus:
+                key, r = pid.replace("-", "_"), menus[0]
+                out[f"cheapest{level}_{key}"] = r["name"]
+                out[f"cheapest{level}Price_{key}"] = money(r["dinner"], r["cur"]) + ("" if r["cur"] == "USD" else f" (about {usd_text(usd(r))})")
     # Per country, e.g. {{in_canada}} (starred restaurants), {{n3_sweden}} (three-star), {{split_ireland}} ("14 one-star and 2 two-star").
     for cid in {r["country"] for r in live}:
         c = [sum(1 for r in live if r["country"] == cid and r["stars"] == n) for n in (1, 2, 3)]
         key = cid.replace("-", "_")
-        out[f"in_{key}"], out[f"n3_{key}"] = f"{sum(c):,}", str(c[2])
+        out[f"in_{key}"], out[f"n3_{key}"], out[f"n2_{key}"] = f"{sum(c):,}", str(c[2]), str(c[1])
         parts = [f"{n:,} {w}-star" for n, w in zip(c, ("one", "two", "three")) if n]
         out[f"split_{key}"] = parts[0] if len(parts) == 1 else ", ".join(parts[:-1]) + " and " + parts[-1]
     # The same for every place (city, region, state), e.g. {{in_vancouver}}, {{split_las_vegas}}, plus {{from_<id>}}: its
@@ -3722,7 +3793,7 @@ def list_stats(live, year):
     for pid, rows in inside.items():
         c = [sum(1 for r in rows if r["stars"] == n) for n in (1, 2, 3)]
         key = pid.replace("-", "_")
-        out[f"in_{key}"], out[f"n3_{key}"] = f"{sum(c):,}", str(c[2])
+        out[f"in_{key}"], out[f"n3_{key}"], out[f"n2_{key}"] = f"{sum(c):,}", str(c[2]), str(c[1])
         parts = [f"{n:,} {w}-star" for n, w in zip(c, ("one", "two", "three")) if n]
         out[f"split_{key}"] = parts[0] if len(parts) == 1 else ", ".join(parts[:-1]) + " and " + parts[-1]
         menus = sorted((r for r in rows if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"), key=usd)
@@ -3742,6 +3813,9 @@ def list_stats(live, year):
             out[key], out[key + "N"], out[key + "Path"] = places[ranked[i][0]]["name"], str(ranked[i][1]), places[ranked[i][0]]["path"]
     gained, lost = three_star_changes(year)
     out["new3"], out["lost3"] = str(len(gained)), str(len(lost))
+    two = two_star_changes()
+    out.update({"new2": str(len(two["new"])), "up2": str(len(two["up"])), "gained2": str(len(two["new"]) + len(two["up"])),
+                "down2": str(len(two["down"])), "lost2": str(len(two["lost"]))})
     return out
 
 
@@ -5099,20 +5173,24 @@ def guide_blocks(stats):
     by_state = tally([r for r in live if r["country"] == "usa"], us_state)
     blocks["us-states"] = counts_table([(places[s]["name"], places[s]["path"], n) for s, n in by_state.items()], "State") + note(
         "States and districts covered by a current MICHELIN Guide edition. Tap a column heading to sort.")
-    three = [r for r in live if r["stars"] == 3]
-    countries3 = sorted({r["country"] for r in three}, key=lambda c: (-sum(1 for r in three if r["country"] == c), places[c]["name"]))
-    jump = '<nav class="jump-links" aria-label="Jump to a country">' + "".join(
-        f'<a href="#three-{c}">{e(places[c]["name"])} <span>{sum(1 for r in three if r["country"] == c)}</span></a>' for c in countries3) + "</nav>"
-    sections = "".join(f'<h3 id="three-{c}">{e(places[c]["name"])}: {sum(1 for r in three if r["country"] == c)} three-star restaurant'
-                       f'{"s" if sum(1 for r in three if r["country"] == c) > 1 else ""}</h3>'
-                       + restaurant_table([r for r in three if r["country"] == c]) for c in countries3)
-    blocks["three-star-jump"] = jump
-    blocks["three-star"] = sections + list_note
-    blocks["three-star-uk"] = restaurant_table([r for r in three if r["country"] == "uk"]) + list_note
-    blocks["three-star-london"] = restaurant_table([r for r in three if in_london(r)]) + list_note
+    # The star-level lists: {{table:three-star}} and {{table:two-star}} (every restaurant at that level, a table per
+    # country), their -jump links, -uk and -london tables, and STAR_LIST_PLACES' (e.g. {{table:two-star-tuscany}}).
+    for level, word in ((3, "three"), (2, "two")):
+        at = [r for r in live if r["stars"] == level]
+        count = lambda c: sum(1 for r in at if r["country"] == c)
+        countries = sorted({r["country"] for r in at}, key=lambda c: (-count(c), places[c]["name"]))
+        blocks[f"{word}-star-jump"] = '<nav class="jump-links" aria-label="Jump to a country">' + "".join(
+            f'<a href="#{word}-{c}">{e(places[c]["name"])} <span>{count(c)}</span></a>' for c in countries) + "</nav>"
+        blocks[f"{word}-star"] = "".join(f'<h3 id="{word}-{c}">{e(places[c]["name"])}: {count(c)} {word}-star restaurant{"s" if count(c) > 1 else ""}</h3>'
+                                         + restaurant_table([r for r in at if r["country"] == c]) for c in countries) + list_note
+        blocks[f"{word}-star-uk"] = restaurant_table([r for r in at if r["country"] == "uk"]) + list_note
+        blocks[f"{word}-star-london"] = restaurant_table([r for r in at if in_london(r)]) + list_note
+        for pid in STAR_LIST_PLACES.get(level, ()):
+            blocks[f"{word}-star-{pid}"] = restaurant_table([r for r in at if pid in r["_chain"]]) + list_note
     blocks["three-star-changes"] = change_lists(lambda r: True)
     blocks["three-star-changes-uk"] = change_lists(lambda r: r["country"] == "uk")
     blocks["three-star-changes-london"] = change_lists(in_london)
+    blocks["two-star-changes"] = two_star_change_lists(name_html)
 
     def indian_table(rows, first, where, lunch=False):
         body = ""
@@ -5700,7 +5778,7 @@ def us_date(d):
 
 
 def dinner_text(rid, meal="dinner"):
-    """A restaurant's dinner (or lunch) price for a sentence, e.g. "AED 1,350 (about $370)", or None when it has none."""
+    """A restaurant's dinner (or lunch, or wine pairing) price for a sentence, e.g. "AED 1,350 (about $370)", or None when it has none."""
     r = next((r for r in restaurants if r["id"] == rid), None)
     if not r or r.get(meal) is None:
         return None
@@ -5721,7 +5799,7 @@ def guide_text(text, stats, blocks=None):
     """Fill in {{figures}} and {{table:name}} blocks, and turn <a data-guide="name"> into a link once that guide exists (plain text until then)."""
     # A table on a line of its own may arrive wrapped in <p> from the editor; a table can't sit inside a paragraph.
     text = re.sub(r"(?:<p>\s*)?\{\{table:([\w-]+)\}\}(?:\s*</p>)?", lambda m: (blocks or {}).get(m.group(1), m.group(0)), text)
-    text = re.sub(r"\{\{(dinner|lunch):([\w-]+)\}\}", lambda m: dinner_text(m.group(2), m.group(1)) or m.group(0), text)
+    text = re.sub(r"\{\{(dinner|lunch|wine):([\w-]+)\}\}", lambda m: dinner_text(m.group(2), m.group(1)) or m.group(0), text)
     text = re.sub(r"\{\{(stars|starred):([\w,-]+)\}\}", lambda m: stars_text(m.group(2), m.group(1) == "starred") or m.group(0), text)
     text = re.sub(r"\{\{(\w+)\}\}", lambda m: e(stats[m.group(1)]) if m.group(1) in stats else m.group(0), text)
     return re.sub(r'<a data-guide="([\w-]+)">(.*?)</a>',
@@ -6055,6 +6133,13 @@ def guide_citations(g):
     return out
 
 
+def heading_questions(body):
+    """A guide's question headings (h2 or h3 ending in "?") with the paragraph straight under each, for its FAQPage data,
+    up to FAQ_MAX."""
+    found = re.findall(r"<h[23][^>]*>([^<]*\?)\s*</h[23]>\s*<p[^>]*>(.*?)</p>", body, re.S)
+    return [{"q": q, "a": a} for q, a in found][:FAQ_MAX]
+
+
 def build_guides():
     """Each guide at /guides/<name>/, and a list of them at /guides/."""
     if not guides:
@@ -6101,8 +6186,9 @@ def build_guides():
              **({"workTranslation": [{"@type": "Article", "url": SITE_URL + guide_path(g["id"], c), "inLanguage": HTML_LANG.get(c, (c,))[0]}
                                      for c in langs[1:]]} if len(langs) > 1 else {})},
         ]
-        # Results pages put their questions in as headings (no separate FAQ), so the FAQPage data comes from those.
-        questions = faqs or g.get("ldFaq") or []
+        # Results pages put their questions in as headings (no separate FAQ), so the FAQPage data comes from those; so can
+        # any guide with `faqFromHeadings` (owner's rule: a search question is a heading with its answer under it).
+        questions = faqs or g.get("ldFaq") or (heading_questions(body) if g.get("faqFromHeadings") else [])
         if questions:
             graph.append({"@type": "FAQPage", "mainEntity": [
                 {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in questions]})

@@ -1820,6 +1820,10 @@ content:
           - name: a
             label: Answer
             type: text
+      - name: faqFromHeadings
+        label: Questions from headings
+        description: "Tick to give Google the article's question headings (ending in ?) and the paragraph under each as its FAQ, instead of a separate FAQ section."
+        type: boolean
       - name: sources
         label: Sources
         description: "The outside sources this guide's facts come from, shown under the article as \"Sources\": only the ones actually used, usually 3 to 8 (the MICHELIN Guide, official bodies, reputable press). No competitors, booking sites or affiliate links. Give each a date it was published, or the month you checked a live page."

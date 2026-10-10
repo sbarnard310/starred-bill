@@ -20,5 +20,13 @@
   "placeId": "ChIJ3_3QZQeEb0gRV1TASSuMz8w",
   "michelinId": "194857",
   "chef": "Gareth Ward",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Europe/London",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/ynyshir/faq",
+    "checked": "2026-10-10"
+  }
 }

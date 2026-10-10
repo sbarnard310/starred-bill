@@ -25,5 +25,13 @@
   "dinnerNoteVi": "Thực đơn nếm thử",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteVi": "Chỉ phục vụ bữa tối"
+  "lunchNoteVi": "Chỉ phục vụ bữa tối",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 90,
+    "tz": "Asia/Ho_Chi_Minh",
+    "via": "website",
+    "source": "https://akunarestaurant.com/reservations-terms/",
+    "checked": "2026-10-10"
+  }
 }

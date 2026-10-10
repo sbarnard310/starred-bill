@@ -22,5 +22,13 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Japanisch"
+  "cuisineDe": "Japanisch",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Europe/Berlin",
+    "via": "website",
+    "source": "https://yoshibynagaya.wixsite.com/nagayaduesseldorf/yoshi-reservierung-form",
+    "checked": "2026-10-10"
+  }
 }

@@ -22,5 +22,15 @@
   "lunchNote": "Dinner only",
   "lunchNoteSv": "Endast middag",
   "chef": "Harry Jordås and Nathan Turley",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "12:00",
+    "tz": "Europe/Stockholm",
+    "via": "website",
+    "source": "https://dashisthlm.se",
+    "checked": "2026-10-10"
+  }
 }

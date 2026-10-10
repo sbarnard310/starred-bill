@@ -27,5 +27,13 @@
     "gluten-free"
   ],
   "chef": "Luis Alberto Lera Collantes",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Madrid",
+    "via": "website",
+    "source": "https://restaurantelera.es/",
+    "checked": "2026-10-10"
+  }
 }

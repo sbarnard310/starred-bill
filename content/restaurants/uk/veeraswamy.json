@@ -29,5 +29,13 @@
     "halal"
   ],
   "chef": "Uday Salunkhe",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://www.veeraswamy.com/",
+    "checked": "2026-10-10"
+  }
 }

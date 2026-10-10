@@ -34,5 +34,15 @@
     "vegetarian"
   ],
   "chef": "Santiago Fernández",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "time": "12:00",
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://maztokyo.jp/reservation",
+    "checked": "2026-10-10"
+  }
 }

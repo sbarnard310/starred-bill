@@ -35,5 +35,13 @@
   "placeId": "ChIJ2Y7e7-WLGGARn2nDEZzmbb0",
   "michelinId": "1193869",
   "chef": "Lionel Beccat",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://www.esquissetokyo.com/en/reserve",
+    "checked": "2026-10-10"
+  }
 }

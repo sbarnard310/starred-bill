@@ -26,5 +26,13 @@
   "chefSource": "site",
   "dinnerNoteMs": "Menu rasa (menu lain dari RM 520)",
   "lunchNote": "Open for lunch · Thu–Sun",
-  "lunchNoteMs": "Dibuka untuk makan tengah hari · Kha–Ahd"
+  "lunchNoteMs": "Dibuka untuk makan tengah hari · Kha–Ahd",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Asia/Kuala_Lumpur",
+    "via": "website",
+    "source": "https://www.restaurant-aujardin.com",
+    "checked": "2026-10-10"
+  }
 }

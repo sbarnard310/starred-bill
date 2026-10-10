@@ -25,5 +25,13 @@
   "lunchSource": "https://omakaseje.com/restaurants/do446707",
   "michelinId": "1205317",
   "chef": "Masashi Anpeiji",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 4,
+    "tz": "Asia/Tokyo",
+    "via": "phone",
+    "source": "https://www.anpeiji.com/",
+    "checked": "2026-10-10"
+  }
 }

@@ -24,5 +24,13 @@
     "gluten-free"
   ],
   "chef": "Kevin Mangeolles",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://theneptune.co.uk/restaurant-booking/",
+    "checked": "2026-10-10"
+  }
 }

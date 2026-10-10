@@ -39,5 +39,15 @@
     "gluten-free"
   ],
   "chef": "Rubén Hernández Mosquero",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "09:00",
+    "tz": "Europe/Madrid",
+    "via": "website",
+    "source": "https://emimadrid.com/",
+    "checked": "2026-10-10"
+  }
 }

@@ -18,5 +18,13 @@
   "placeId": "ChIJw5XHiMifj4ARPKqzyYwc8kw",
   "michelinId": "283968",
   "chef": "Katsuhiro Yamasaki",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 1,
+    "tz": "America/Los_Angeles",
+    "via": "phone",
+    "source": "https://www.wakuriya.com/",
+    "checked": "2026-10-10"
+  }
 }

@@ -22,5 +22,16 @@
     "gluten-free"
   ],
   "chef": "Patrick Kriss",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "weekday": "tue",
+    "nth": 1,
+    "ahead": 2,
+    "time": "10:00",
+    "tz": "America/Toronto",
+    "via": "website",
+    "source": "https://alorestaurant.com/reservations/",
+    "checked": "2026-10-10"
+  }
 }

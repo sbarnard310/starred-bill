@@ -26,5 +26,14 @@
   "placeId": "ChIJSfeOCf5ZwokRWuoMT5Kc6KY",
   "michelinId": "1210165",
   "chef": "Aaron Chang",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "time": "12:00",
+    "tz": "America/New_York",
+    "via": "website",
+    "source": "https://noksunyc.com/",
+    "checked": "2026-10-10"
+  }
 }

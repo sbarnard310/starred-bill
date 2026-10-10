@@ -27,5 +27,13 @@
     "gluten-free"
   ],
   "chef": "Josh Cutress",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 90,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://harwoodarms.com/",
+    "checked": "2026-10-10"
+  }
 }

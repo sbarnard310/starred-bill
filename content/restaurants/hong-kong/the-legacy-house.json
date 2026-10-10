@@ -33,5 +33,15 @@
     "vegan"
   ],
   "chef": "Li Chi Wai",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "time": "10:00",
+    "tz": "Asia/Hong_Kong",
+    "via": "phone or online",
+    "source": "https://www.rosewoodhotels.com/en/hong-kong/dining/the-legacy-house",
+    "checked": "2026-10-10"
+  }
 }

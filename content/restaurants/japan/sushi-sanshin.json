@@ -30,5 +30,15 @@
   "lunchSourceType": "press",
   "lunchSource": "https://tabelog.com/en/osaka/A2701/A270204/27095402/",
   "lunchNote": "Tabelog range ¥30,000–39,999",
-  "lunchNoteJa": "食べログの価格帯 30,000～39,999円"
+  "lunchNoteJa": "食べログの価格帯 30,000～39,999円",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "08:00",
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://sushisanshin.com/",
+    "checked": "2026-10-10"
+  }
 }

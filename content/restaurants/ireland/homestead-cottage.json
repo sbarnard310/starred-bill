@@ -22,5 +22,13 @@
     "vegetarian"
   ],
   "chef": "Robbie McCauley",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Dublin",
+    "via": "website",
+    "source": "https://homesteadcottage.com/book-a-table/",
+    "checked": "2026-10-10"
+  }
 }

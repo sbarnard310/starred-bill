@@ -32,5 +32,13 @@
   "lunchSourceType": "press",
   "lunchSource": "https://tabelog.com/en/tokyo/A1306/A130603/13046855/",
   "lunchNote": "Tabelog range ¥20,000–29,999",
-  "lunchNoteJa": "食べログの価格帯 20,000～29,999円"
+  "lunchNoteJa": "食べログの価格帯 20,000～29,999円",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Asia/Tokyo",
+    "via": "phone",
+    "source": "https://www.jimbochoden.com/",
+    "checked": "2026-10-10"
+  }
 }

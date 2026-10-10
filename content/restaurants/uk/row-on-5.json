@@ -31,5 +31,13 @@
     "vegetarian"
   ],
   "chef": "Spencer Metzger",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://www.rowon5london.com/",
+    "checked": "2026-10-10"
+  }
 }

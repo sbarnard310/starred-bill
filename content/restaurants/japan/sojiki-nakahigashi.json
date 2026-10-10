@@ -27,5 +27,16 @@
   "lunchSourceType": "site",
   "lunchSource": "https://soujiki-nakahigashi.jp/",
   "lunchNote": "Lunch kaiseki, from; including tax and service",
-  "lunchNoteJa": "昼懐石（最安値）・税サ込"
+  "lunchNoteJa": "昼懐石（最安値）・税サ込",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "08:00",
+    "tz": "Asia/Tokyo",
+    "via": "phone",
+    "note": "When the 1st is a closing day, bookings open the next day.",
+    "source": "https://soujiki-nakahigashi.jp/",
+    "checked": "2026-10-10"
+  }
 }

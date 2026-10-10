@@ -27,5 +27,15 @@
   "lunchSourceType": "site",
   "lunchSource": "https://kuko-nara.jp/",
   "lunchNote": "Lunch course; including tax",
-  "lunchNoteJa": "ランチコース・税込"
+  "lunchNoteJa": "ランチコース・税込",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "21:00",
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://kuko-nara.jp/",
+    "checked": "2026-10-10"
+  }
 }

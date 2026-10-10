@@ -28,5 +28,13 @@
   "placeId": "ChIJqRCMk20Z2jERhRJiBDgvYiw",
   "michelinId": "1246701",
   "chef": "Shusuke Kubota",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 60,
+    "tz": "Asia/Singapore",
+    "via": "website",
+    "source": "https://locaniru.sg/",
+    "checked": "2026-10-10"
+  }
 }

@@ -30,5 +30,13 @@
   ],
   "chef": "Ollie Liedags",
   "chefSource": "site",
-  "dinnerNote": "Chef's Adventure Menu, 5 courses"
+  "dinnerNote": "Chef's Adventure Menu, 5 courses",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 42,
+    "tz": "America/Los_Angeles",
+    "via": "website",
+    "source": "https://www.hildaandjessesf.com/reservations",
+    "checked": "2026-10-10"
+  }
 }

@@ -25,5 +25,13 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Kreativ"
+  "cuisineDe": "Kreativ",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 60,
+    "tz": "Europe/Berlin",
+    "via": "website",
+    "source": "https://nobelhartundschmutzig.com/en/reservation",
+    "checked": "2026-10-10"
+  }
 }

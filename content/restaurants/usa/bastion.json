@@ -27,5 +27,14 @@
     "gluten-free"
   ],
   "chef": "Josh Habiger",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "tz": "America/Chicago",
+    "via": "website",
+    "source": "https://www.bastionnashville.com/",
+    "checked": "2026-10-10"
+  }
 }

@@ -23,5 +23,13 @@
   "placeId": "ChIJ8So7Q5Cda0gR93mdhDnEOC4",
   "michelinId": "412850",
   "chef": "Tim Barnes",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 180,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://outlaws.co.uk/restaurants/fish-kitchen/",
+    "checked": "2026-10-10"
+  }
 }

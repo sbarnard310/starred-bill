@@ -24,5 +24,13 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "chef": "Matthias Scheiber",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Berlin",
+    "via": "website",
+    "source": "https://www.sommerfeld-frankfurt.de/",
+    "checked": "2026-10-10"
+  }
 }

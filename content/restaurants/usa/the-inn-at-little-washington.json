@@ -53,6 +53,14 @@
   ],
   "dressCode": "No formal dress code (as chef Patrick O'Connell says, \"anything but a wet bikini\"); most guests wear cocktail attire.",
   "bookingOpens": "Online on Tock, for 1 to 8, with a $100 per person deposit. The dining room is closed on Mondays and Tuesdays. Thanksgiving, Christmas and New Year's Eve have their own prepaid menus ($474 to $976).",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 6,
+    "tz": "America/New_York",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/theinnatlittlewashington/faq",
+    "checked": "2026-10-10"
+  },
   "bookingUrl": "https://www.exploretock.com/theinnatlittlewashington",
   "groups": "For 5 or more, book through the reservations department (reservations@theinnatlittlewashington.com), as only a few tables seat larger groups.",
   "infoSource": "https://www.theinnatlittlewashington.com/frequently-asked-questions",

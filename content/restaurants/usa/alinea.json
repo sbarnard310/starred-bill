@@ -34,5 +34,15 @@
     "kosher"
   ],
   "chef": "Grant Achatz",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 15,
+    "ahead": 2,
+    "time": "11:00",
+    "tz": "America/Chicago",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/alinea/faq",
+    "checked": "2026-10-10"
+  }
 }

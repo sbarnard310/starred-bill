@@ -32,5 +32,13 @@
     "halal"
   ],
   "chef": "George Livesey",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 90,
+    "tz": "Europe/London",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/bulrush/faq",
+    "checked": "2026-10-10"
+  }
 }

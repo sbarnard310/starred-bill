@@ -28,5 +28,13 @@
   "placeId": "ChIJ9Z6nGDtu5kcRgc34rnb__eA",
   "michelinId": "514232",
   "chef": "Isao Horai",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Europe/Paris",
+    "via": "website",
+    "source": "https://sushi-b-fr.com/",
+    "checked": "2026-10-10"
+  }
 }

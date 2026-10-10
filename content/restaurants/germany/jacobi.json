@@ -28,5 +28,13 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
   "lunchSourceType": "site",
   "lunchSource": "https://jacobi-freiburg.de/",
-  "cuisineDe": "Innovativ"
+  "cuisineDe": "Innovativ",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Berlin",
+    "via": "website",
+    "source": "https://jacobi-freiburg.de/",
+    "checked": "2026-10-10"
+  }
 }

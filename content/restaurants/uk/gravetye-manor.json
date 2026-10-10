@@ -28,5 +28,13 @@
     "vegan"
   ],
   "chef": "Martin Carabott",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 6,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://www.gravetyemanor.co.uk/dining/the-dining-room/",
+    "checked": "2026-10-10"
+  }
 }

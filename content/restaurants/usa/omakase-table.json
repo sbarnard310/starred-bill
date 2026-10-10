@@ -19,5 +19,16 @@
   "placeId": "ChIJFUGvhbcP9YgRWUdLXI3bhxA",
   "michelinId": "1210849",
   "chef": "Leonard Yu",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 2,
+    "ahead": 1,
+    "time": "09:00",
+    "tz": "America/New_York",
+    "via": "website",
+    "note": "Members of its waiting list get early access on the 1st.",
+    "source": "https://www.omakasetableatl.com/reservation",
+    "checked": "2026-10-10"
+  }
 }

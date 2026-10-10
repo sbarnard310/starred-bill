@@ -31,5 +31,15 @@
     "vegetarian"
   ],
   "chef": "Lau Yiu Fai",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 3,
+    "time": "10:00",
+    "tz": "Asia/Hong_Kong",
+    "via": "website",
+    "source": "https://hongkong.regenthotels.com/dining-destination/lai-ching-heen/",
+    "checked": "2026-10-10"
+  }
 }

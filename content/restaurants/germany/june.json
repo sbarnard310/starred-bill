@@ -26,5 +26,13 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Regional"
+  "cuisineDe": "Regional",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Europe/Berlin",
+    "via": "website",
+    "source": "https://www.june.restaurant",
+    "checked": "2026-10-10"
+  }
 }

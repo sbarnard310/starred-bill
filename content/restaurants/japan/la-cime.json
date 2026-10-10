@@ -25,5 +25,13 @@
     "vegetarian"
   ],
   "chef": "Yusuke Takada",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 1,
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://www.la-cime.com/",
+    "checked": "2026-10-10"
+  }
 }

@@ -23,5 +23,14 @@
     "vegetarian"
   ],
   "chef": "Anthony Secviar",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "time": "00:00",
+    "tz": "America/Los_Angeles",
+    "via": "Tock",
+    "source": "https://www.protegepaloalto.com/reservations",
+    "checked": "2026-10-10"
+  }
 }

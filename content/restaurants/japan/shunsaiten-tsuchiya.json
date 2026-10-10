@@ -19,5 +19,14 @@
   "michelinId": "1193161",
   "dinner": 24000,
   "dinnerNoteJa": "天ぷらコース（最安値）・税サ込",
-  "source": "https://www.shunsaiten-tsuchiya.com/"
+  "source": "https://www.shunsaiten-tsuchiya.com/",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 3,
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://www.shunsaiten-tsuchiya.com/",
+    "checked": "2026-10-10"
+  }
 }

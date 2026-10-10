@@ -22,5 +22,13 @@
   "placeId": "ChIJJYQ6w5VS04kRT_2C9D_qyno",
   "michelinId": "565364",
   "chef": "Eric Robertson, Daniel Hadida",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "announced",
+    "tz": "America/Toronto",
+    "via": "Tock",
+    "note": "Tables are released every month or two, announced in the restaurant's newsletter.",
+    "source": "https://www.exploretock.com/pearlmorissette/faq",
+    "checked": "2026-10-10"
+  }
 }

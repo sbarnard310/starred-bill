@@ -35,5 +35,13 @@
   "placeId": "ChIJ84HCEdGJGGARt4OCbIlmfjg",
   "michelinId": "1193828",
   "chef": "Satoru Asahina",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 60,
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://asahinagastronome.com/",
+    "checked": "2026-10-10"
+  }
 }

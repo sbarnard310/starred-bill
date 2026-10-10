@@ -27,5 +27,13 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern"
+  "cuisineDe": "Französisch-modern",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Europe/Berlin",
+    "via": "website",
+    "source": "https://hotel.lago-ulm.de/gourmet-restaurant-seestern/",
+    "checked": "2026-10-10"
+  }
 }

@@ -25,5 +25,14 @@
   "dinner": 35000,
   "dinnerNoteJa": "テイスティングメニュー・税込・サービス料別",
   "source": "https://fujiya1935.com/en/",
-  "wine": 18500
+  "wine": 18500,
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "time": "10:00",
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://fujiya1935.com/",
+    "checked": "2026-10-10"
+  }
 }

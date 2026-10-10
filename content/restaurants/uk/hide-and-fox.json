@@ -33,5 +33,13 @@
     "vegetarian"
   ],
   "chef": "Allister Barsby",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 90,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://hideandfox.co.uk/reservations-restaurants-in-saltwood/",
+    "checked": "2026-10-10"
+  }
 }

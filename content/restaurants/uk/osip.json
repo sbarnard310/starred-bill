@@ -27,5 +27,13 @@
   "chef": "Merlin Labron-Johnson",
   "chefSource": "michelin",
   "dinnerNote": "Table d'hôte, 3 courses (tasting menu £175)",
-  "lunchNote": "Lunch menu, 5 courses (tasting menu £175)"
+  "lunchNote": "Lunch menu, 5 courses (tasting menu £175)",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 120,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://osiprestaurant.com/",
+    "checked": "2026-10-10"
+  }
 }

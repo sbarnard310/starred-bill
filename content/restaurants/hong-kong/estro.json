@@ -31,5 +31,14 @@
     "vegetarian"
   ],
   "chef": "Antimo Maria Merone",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "time": "10:00",
+    "tz": "Asia/Hong_Kong",
+    "via": "website",
+    "source": "https://www.estro.hk/",
+    "checked": "2026-10-10"
+  }
 }

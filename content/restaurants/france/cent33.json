@@ -33,5 +33,13 @@
     "kosher"
   ],
   "chef": "Fabien Beaufour",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Europe/Paris",
+    "via": "website",
+    "source": "https://cent33.com/",
+    "checked": "2026-10-10"
+  }
 }

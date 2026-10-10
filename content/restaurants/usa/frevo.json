@@ -27,5 +27,15 @@
     "gluten-free"
   ],
   "chef": "Franco Sampogna",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "14:00",
+    "tz": "America/New_York",
+    "via": "Tock",
+    "source": "https://www.exploretock.com/frevo/faq",
+    "checked": "2026-10-10"
+  }
 }

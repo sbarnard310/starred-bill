@@ -32,5 +32,14 @@
   "lunchSourceType": "site",
   "lunchSource": "https://cenci-kyoto.com/menu",
   "lunchNote": "Lunch menu, from; including tax and service",
-  "lunchNoteJa": "ランチメニュー（最安値）・税サ込"
+  "lunchNoteJa": "ランチメニュー（最安値）・税サ込",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "note": "When that day is a closing day, bookings open on the next day the restaurant is open.",
+    "source": "https://cenci-kyoto.com/reservation",
+    "checked": "2026-10-10"
+  }
 }

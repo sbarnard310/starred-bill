@@ -24,5 +24,13 @@
   "chefSource": "press",
   "dinner": 33000,
   "dinnerNoteJa": "おまかせコース（最安値）・サービス料別",
-  "source": "https://gion-ifuki.com/"
+  "source": "https://gion-ifuki.com/",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://gion-ifuki.com/",
+    "checked": "2026-10-10"
+  }
 }

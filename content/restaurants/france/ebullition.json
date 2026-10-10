@@ -29,5 +29,13 @@
     "vegetarian"
   ],
   "chef": "Boris Caillol",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Europe/Paris",
+    "via": "website",
+    "source": "https://restaurant-ebullition.eu/",
+    "checked": "2026-10-10"
+  }
 }

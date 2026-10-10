@@ -29,5 +29,13 @@
     "halal"
   ],
   "chef": "Sanchit Kapoor",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://www.amaya.biz/",
+    "checked": "2026-10-10"
+  }
 }

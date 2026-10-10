@@ -33,5 +33,14 @@
   "placeId": "ChIJn7oKV3iLGGARNXPGOjv-zJg",
   "michelinId": "1194239",
   "chef": "Yujiro Takahashi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "note": "When that day is a closing day, bookings open on the next day the restaurant is open.",
+    "source": "https://le-sputnik.jp/",
+    "checked": "2026-10-10"
+  }
 }

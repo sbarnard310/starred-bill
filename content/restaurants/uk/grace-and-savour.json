@@ -23,5 +23,14 @@
     "vegetarian"
   ],
   "chef": "David Taylor",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/London",
+    "via": "website",
+    "note": "Hotel guests can book dinner with their stay up to 12 months ahead.",
+    "source": "https://hamptonmanor.com/grace-savour/",
+    "checked": "2026-10-10"
+  }
 }

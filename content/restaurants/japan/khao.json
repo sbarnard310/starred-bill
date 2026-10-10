@@ -35,5 +35,15 @@
   "placeId": "ChIJNQnCOb-NGGARiB0LJimpocc",
   "michelinId": "1217131",
   "chef": "Eri Hozumi and Koichi Ishiyama",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "time": "10:00",
+    "tz": "Asia/Tokyo",
+    "via": "OMAKASE",
+    "source": "https://khao.tokyo/booking/",
+    "checked": "2026-10-10"
+  }
 }

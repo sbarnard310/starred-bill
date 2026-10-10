@@ -23,5 +23,15 @@
   "placeId": "ChIJt4KCNOl5bIcRseIyRUaU8Fo",
   "michelinId": "1251385",
   "chef": "Johnny Curiel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "08:00",
+    "tz": "America/Denver",
+    "via": "website",
+    "source": "https://milperodenver.com/",
+    "checked": "2026-10-10"
+  }
 }

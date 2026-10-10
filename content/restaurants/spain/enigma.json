@@ -40,5 +40,13 @@
     "halal"
   ],
   "chef": "Albert Adrià",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 60,
+    "tz": "Europe/Madrid",
+    "via": "website",
+    "source": "https://enigmaconcept.es/reserva",
+    "checked": "2026-10-10"
+  }
 }

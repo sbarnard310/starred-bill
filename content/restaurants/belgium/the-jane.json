@@ -33,5 +33,14 @@
   "lunchNoteFr": "Menu déjeuner",
   "cuisineFr": "Cuisine créative",
   "chef": "Nick Bril",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 3,
+    "tz": "Europe/Brussels",
+    "via": "website",
+    "source": "https://www.thejaneantwerp.com/reservations/",
+    "checked": "2026-10-10"
+  }
 }

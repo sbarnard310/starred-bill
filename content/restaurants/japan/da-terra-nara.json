@@ -29,5 +29,14 @@
   "lunchSource": "https://da-terra.jp/menu/",
   "lunchWine": 8800,
   "lunchNote": "Lunch menu; including tax and service",
-  "lunchNoteJa": "ランチメニュー・税サ込"
+  "lunchNoteJa": "ランチメニュー・税サ込",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "time": "09:00",
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://da-terra.jp/reserve/",
+    "checked": "2026-10-10"
+  }
 }

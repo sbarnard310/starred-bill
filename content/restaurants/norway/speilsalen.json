@@ -29,5 +29,13 @@
   "dinnerNoteNb": "Smaksmeny (andre menyer fra NOK 1,750)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNb": "Kun middag"
+  "lunchNoteNb": "Kun middag",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Oslo",
+    "via": "website",
+    "source": "https://britannia.no/en/dine-with-us/speilsalen",
+    "checked": "2026-10-10"
+  }
 }

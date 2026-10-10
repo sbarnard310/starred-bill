@@ -28,5 +28,13 @@
     "vegetarian"
   ],
   "chef": "Aaron Patterson",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 6,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://www.hambletonhall.com/book-a-table/",
+    "checked": "2026-10-10"
+  }
 }

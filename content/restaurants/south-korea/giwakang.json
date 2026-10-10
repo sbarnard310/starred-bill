@@ -36,5 +36,15 @@
     "vegan"
   ],
   "chef": "Min-chul Kang",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "00:00",
+    "tz": "Asia/Seoul",
+    "via": "website",
+    "source": "https://www.giwakang.com/",
+    "checked": "2026-10-10"
+  }
 }

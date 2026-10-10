@@ -29,5 +29,15 @@
     "vegan"
   ],
   "chef": "Daniel Clifford",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 3,
+    "time": "09:00",
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://midsummerhouse.co.uk/",
+    "checked": "2026-10-10"
+  }
 }

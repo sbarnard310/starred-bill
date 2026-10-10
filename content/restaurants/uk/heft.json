@@ -29,5 +29,14 @@
     "gluten-free"
   ],
   "chef": "Kevin Tickle",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://hefthighnewton.co.uk/bookings/",
+    "checked": "2026-10-10"
+  }
 }

@@ -25,5 +25,14 @@
     "kosher"
   ],
   "chef": "Joël Watanabe",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "time": "00:00",
+    "tz": "America/Vancouver",
+    "via": "Tock",
+    "source": "https://www.kissatanto.com/",
+    "checked": "2026-10-10"
+  }
 }

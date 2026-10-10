@@ -27,5 +27,14 @@
     "vegetarian"
   ],
   "chef": "Woongchul Park",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://www.sollip.co.uk/make-a-reservation",
+    "checked": "2026-10-10"
+  }
 }

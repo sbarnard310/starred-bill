@@ -28,5 +28,14 @@
     "gluten-free"
   ],
   "chef": "Daniel Heinze",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "time": "12:00",
+    "tz": "America/New_York",
+    "via": "Resy",
+    "source": "https://www.vernschs.com/",
+    "checked": "2026-10-10"
+  }
 }

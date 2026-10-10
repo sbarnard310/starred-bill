@@ -28,5 +28,13 @@
     "gluten-free"
   ],
   "chef": "Brad Cacela",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://www.thecoachmarlow.co.uk/",
+    "checked": "2026-10-10"
+  }
 }

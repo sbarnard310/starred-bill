@@ -33,5 +33,13 @@
     "vegetarian-menu"
   ],
   "chef": "Bruno Verjus",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Paris",
+    "via": "website",
+    "source": "https://table.paris/",
+    "checked": "2026-10-10"
+  }
 }

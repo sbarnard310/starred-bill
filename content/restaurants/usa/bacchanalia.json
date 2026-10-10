@@ -19,5 +19,13 @@
   "placeId": "ChIJX7jCB-wE9YgRNyeBypQUGaE",
   "michelinId": "1196004",
   "chef": "Clifford Harrison",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "America/New_York",
+    "via": "website",
+    "source": "https://www.starprovisions.com/bacchanalia",
+    "checked": "2026-10-10"
+  }
 }

@@ -26,5 +26,16 @@
     "kosher"
   ],
   "chef": "Kelly McCown",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "workday": true,
+    "ahead": 2,
+    "time": "10:00",
+    "tz": "America/Los_Angeles",
+    "via": "Tock",
+    "source": "https://thekitchenrestaurant.com/reservation/",
+    "checked": "2026-10-10"
+  }
 }

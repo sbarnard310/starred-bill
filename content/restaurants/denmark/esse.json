@@ -39,5 +39,13 @@
     "vegan"
   ],
   "chef": "Matt Orlando",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Europe/Copenhagen",
+    "via": "website",
+    "source": "https://esserestaurant.dk/",
+    "checked": "2026-10-10"
+  }
 }

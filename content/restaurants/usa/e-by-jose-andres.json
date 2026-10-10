@@ -26,5 +26,13 @@
     "gluten-free"
   ],
   "chef": "José Andrés",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "announced",
+    "tz": "America/Los_Angeles",
+    "via": "Tock",
+    "note": "Tickets go on sale about three months ahead, in a monthly release announced by email.",
+    "source": "https://www.ebyjoseandres.com/",
+    "checked": "2026-10-10"
+  }
 }

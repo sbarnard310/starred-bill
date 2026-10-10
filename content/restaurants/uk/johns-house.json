@@ -28,5 +28,15 @@
     "vegetarian"
   ],
   "chef": "John Duffin",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 3,
+    "time": "10:00",
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://www.johnshouse.co.uk/reservations",
+    "checked": "2026-10-10"
+  }
 }

@@ -36,5 +36,14 @@
     "kosher"
   ],
   "chef": "Ryoma Shida",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://lelan.jp/",
+    "checked": "2026-10-10"
+  }
 }

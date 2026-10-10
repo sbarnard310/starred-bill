@@ -30,5 +30,13 @@
     "vegetarian"
   ],
   "chef": "Dave Beran",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "America/Los_Angeles",
+    "via": "website",
+    "source": "https://www.selinerestaurant.com/",
+    "checked": "2026-10-10"
+  }
 }

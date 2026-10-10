@@ -23,5 +23,14 @@
   "lunchNote": "Cheapest lunch course (others up to ¥45,000)",
   "lunchSourceType": "press",
   "lunchSource": "https://omakaseje.com/restaurants/cg674524",
-  "michelinId": "1192983"
+  "michelinId": "1192983",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "tz": "Asia/Tokyo",
+    "via": "phone",
+    "source": "https://gionsasaki.com/sushirakumi.html",
+    "checked": "2026-10-10"
+  }
 }

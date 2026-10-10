@@ -19,5 +19,15 @@
   "placeId": "ChIJo54KyArFwogRAbOa5we8_BQ",
   "michelinId": "1200038",
   "chef": "Eric Fralick",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 15,
+    "ahead": 1,
+    "time": "10:00",
+    "tz": "America/New_York",
+    "via": "Tock",
+    "source": "https://www.koyatampa.com",
+    "checked": "2026-10-10"
+  }
 }

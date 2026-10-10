@@ -32,5 +32,13 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès 235 €)",
   "cuisineFr": "Cuisine créative",
   "lunchNoteNl": "Lunchmenu",
-  "lunchNoteFr": "Menu déjeuner"
+  "lunchNoteFr": "Menu déjeuner",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Brussels",
+    "via": "website",
+    "source": "https://www.lavillainthesky.be/reservation",
+    "checked": "2026-10-10"
+  }
 }

@@ -33,5 +33,14 @@
   "chefSource": "michelin",
   "changeNoteAr": "حصل على نجمته الأولى",
   "dinnerNoteAr": "قائمة التذوق Birch Grand (قوائم أخرى من AED 590)",
-  "lunchNoteAr": "العشاء فقط · من الثلاثاء إلى الأحد"
+  "lunchNoteAr": "العشاء فقط · من الثلاثاء إلى الأحد",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "time": "14:00",
+    "tz": "Asia/Dubai",
+    "via": "website",
+    "source": "https://birchrestaurants.com/dubai",
+    "checked": "2026-10-10"
+  }
 }

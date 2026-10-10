@@ -23,5 +23,13 @@
     "gluten-free"
   ],
   "chef": "Emmanuel Chavez",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "announced",
+    "tz": "America/Chicago",
+    "via": "Tock",
+    "note": "Tables are released in the first week of each month, for the month after.",
+    "source": "https://www.exploretock.com/tatemo/faq",
+    "checked": "2026-10-10"
+  }
 }

@@ -25,5 +25,13 @@
   "lunchNote": "Dinner only",
   "lunchNoteSv": "Endast middag",
   "chef": "Ida Bauhn",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Stockholm",
+    "via": "website",
+    "source": "https://www.restaurantnour.se",
+    "checked": "2026-10-10"
+  }
 }

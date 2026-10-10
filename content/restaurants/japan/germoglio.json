@@ -25,5 +25,13 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.germogliokyoto.com/menu",
   "lunchNote": "Lunch course; including tax",
-  "lunchNoteJa": "ランチコース・税込"
+  "lunchNoteJa": "ランチコース・税込",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Asia/Tokyo",
+    "via": "website",
+    "source": "https://www.germogliokyoto.com/reservation",
+    "checked": "2026-10-10"
+  }
 }

@@ -28,5 +28,13 @@
     "vegetarian"
   ],
   "chef": "Andy Beynon",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://www.behindrestaurant.co.uk/book",
+    "checked": "2026-10-10"
+  }
 }

@@ -33,5 +33,13 @@
     "gluten-free"
   ],
   "chef": "Stéphanie Le Quellec",
-  "chefSource": "site"
+  "chefSource": "site",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Paris",
+    "via": "website",
+    "source": "https://www.la-scene.paris/",
+    "checked": "2026-10-10"
+  }
 }

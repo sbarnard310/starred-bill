@@ -36,5 +36,14 @@
   "placeId": "ChIJh12gFQApQg0R97bQnRmGqpU",
   "michelinId": "1214049",
   "chef": "Steven Wu",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "tz": "Europe/Madrid",
+    "via": "website",
+    "source": "https://senomakase.com/reservation/",
+    "checked": "2026-10-10"
+  }
 }

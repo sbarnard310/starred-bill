@@ -23,5 +23,15 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Kreativ"
+  "cuisineDe": "Kreativ",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 3,
+    "time": "12:00",
+    "tz": "Europe/Vienna",
+    "via": "website",
+    "source": "https://restaurantdoubek.at/buchen/",
+    "checked": "2026-10-10"
+  }
 }

@@ -25,5 +25,15 @@
   "placeId": "ChIJkw2CZtEEdkgRgiNBxbdniHE",
   "michelinId": "542588",
   "chef": "Jeremy Chan",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 2,
+    "time": "12:00",
+    "tz": "Europe/London",
+    "via": "website",
+    "source": "https://ikoyilondon.com/",
+    "checked": "2026-10-10"
+  }
 }

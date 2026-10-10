@@ -9,7 +9,6 @@
   "reviews": 701,
   "dinnerType": "menu",
   "dinner": 115,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://largineavenco.it/menu/",
   "lunch": 115,
@@ -28,5 +27,7 @@
     "gluten-free"
   ],
   "chef": "Antonia Klugmann",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Il Nostro Menù, 7 courses (10 courses €150)",
+  "dinnerNoteIt": "Il Nostro Menù, 7 portate (10 portate €150)"
 }

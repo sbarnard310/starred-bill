@@ -8,13 +8,11 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.7,
   "reviews": 477,
-  "dinner": 139,
+  "dinner": 79,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://www.restaurant-lamadeleine.fr/les-menus/",
-  "lunch": 139,
+  "lunch": 79,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch",
   "lunchNoteFr": "Même menu le midi",
@@ -26,5 +24,7 @@
   "placeId": "ChIJh53Y3qka70cR9pp-n7LcjO0",
   "michelinId": "8572",
   "chef": "Patrick Gauthier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Menu de Saison (Lucullus €99, Dégustation €140, Expérience €178)",
+  "dinnerNoteFr": "Menu de Saison (Lucullus 99 €, Dégustation 140 €, Expérience 178 €)"
 }

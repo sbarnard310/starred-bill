@@ -8,13 +8,11 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.7,
   "reviews": 1033,
-  "dinner": 65,
+  "dinner": 68,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://www.auberge-saintlaurent.fr/fr/la-table-gastronomique-de-lauberge.html",
-  "lunch": 65,
+  "lunch": 68,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch",
   "lunchNoteFr": "Même menu le midi",
@@ -29,5 +27,7 @@
     "vegetarian"
   ],
   "chef": "Laurent Arbeit",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Gourmet menu, 3 courses (Tout à votre choix €105, Découvertes €125)",
+  "dinnerNoteFr": "Menu du Gourmet, 3 plats (Tout à votre choix 105 €, Découvertes 125 €)"
 }

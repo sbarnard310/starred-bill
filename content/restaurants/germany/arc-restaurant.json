@@ -12,7 +12,6 @@
   "reviews": 90,
   "dinnerType": "menu",
   "dinner": 99,
-  "dinnerNote": "Tasting menu",
   "wine": 59,
   "sourceType": "site",
   "source": "https://www.arcrestaurant.de/menu",
@@ -24,7 +23,6 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü",
   "lunch": 99,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sat",
@@ -32,5 +30,7 @@
   "lunchWine": 59,
   "lunchSourceType": "site",
   "lunchSource": "https://www.arcrestaurant.de/menu",
-  "cuisineDe": "Kreativ"
+  "cuisineDe": "Kreativ",
+  "dinnerNote": "Pescetarian menu, 10 courses",
+  "dinnerNoteDe": "Pescetarisches Menü, 10 Gänge"
 }

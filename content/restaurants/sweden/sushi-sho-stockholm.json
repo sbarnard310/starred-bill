@@ -8,7 +8,6 @@
   "reviews": 1202,
   "dinnerType": "menu",
   "dinner": 1295,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.sushisho.se/meny-sv",
   "website": "https://www.sushisho.se/",
@@ -22,11 +21,12 @@
   ],
   "chef": "Carl Ishizaki",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny",
   "lunch": 1295,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sat",
   "lunchNoteSv": "Samma meny till lunch · fre–lör",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.sushisho.se/meny-sv"
+  "lunchSource": "https://www.sushisho.se/meny-sv",
+  "dinnerNote": "Omakase and otsumami",
+  "dinnerNoteSv": "Omakase och otsumami"
 }

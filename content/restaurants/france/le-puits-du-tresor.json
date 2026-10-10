@@ -8,18 +8,16 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.4,
   "reviews": 384,
-  "dinner": 95,
+  "dinner": 75,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
-  "wine": 105,
+  "wine": 30,
   "sourceType": "site",
   "source": "https://lepuitsdutresor.com/les-menus/",
-  "lunch": 95,
+  "lunch": 75,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch",
   "lunchNoteFr": "Même menu le midi",
-  "lunchWine": 105,
+  "lunchWine": 30,
   "lunchSourceType": "site",
   "lunchSource": "https://lepuitsdutresor.com/les-menus/",
   "website": "https://lepuitsdutresor.com",
@@ -34,5 +32,7 @@
     "gluten-free"
   ],
   "chef": "Jean-Marc Boyer",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Découverte menu: starter, fish or meat, dessert (Pleine Mer Pleine Terre €95, Tentation €129)",
+  "dinnerNoteFr": "Menu Découverte : entrée, poisson ou viande, dessert (Pleine Mer Pleine Terre 95 €, Tentation 129 €)"
 }

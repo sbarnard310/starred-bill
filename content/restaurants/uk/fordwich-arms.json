@@ -9,7 +9,6 @@
   "reviews": 901,
   "dinner": 110,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "wine": 100,
   "sourceType": "site",
   "source": "https://www.fordwicharms.co.uk/",
@@ -31,5 +30,6 @@
     "gluten-free"
   ],
   "chef": "Dan Smith",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Tasting menu (3 courses à la carte £85)"
 }

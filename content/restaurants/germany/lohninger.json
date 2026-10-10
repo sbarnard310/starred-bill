@@ -11,8 +11,7 @@
   "rating": 4.3,
   "reviews": 1121,
   "dinnerType": "menu",
-  "dinner": 85,
-  "dinnerNote": "Tasting menu",
+  "dinner": 165,
   "sourceType": "site",
   "source": "https://lohninger.de/",
   "website": "https://lohninger.de/",
@@ -22,12 +21,13 @@
   "michelinId": "266202",
   "chef": "Mario Lohninger",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
-  "lunch": 85,
+  "lunch": 69,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Sat",
-  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
   "lunchSourceType": "site",
   "lunchSource": "https://lohninger.de/",
-  "cuisineDe": "Österreichisch"
+  "cuisineDe": "Österreichisch",
+  "dinnerNote": "Lohninger menu, 6 courses (also à la carte)",
+  "dinnerNoteDe": "Lohninger Menü, 6 Gänge (auch à la carte)",
+  "lunchNote": "Lunch menu, 3 courses · Tue–Sat",
+  "lunchNoteDe": "Mittagsmenü, 3 Gänge · Di–Sa"
 }

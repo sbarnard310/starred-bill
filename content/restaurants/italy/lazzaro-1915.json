@@ -8,17 +8,11 @@
   "rating": 4.7,
   "reviews": 193,
   "dinnerType": "menu",
-  "dinner": 150,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteIt": "Menu degustazione",
-  "wine": 60,
+  "dinner": 70,
   "sourceType": "site",
   "source": "https://www.lazzaro1915.it",
-  "lunch": 150,
+  "lunch": 30,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Sat",
-  "lunchNoteIt": "Stesso menu a pranzo · mar–sab",
-  "lunchWine": 60,
   "lunchSourceType": "site",
   "lunchSource": "https://www.lazzaro1915.it",
   "website": "https://www.lazzaro1915.it",
@@ -32,5 +26,9 @@
     "gluten-free"
   ],
   "chef": "Piergiorgio Siviero",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Il Porto di Chioggia menu (other menu €150)",
+  "dinnerNoteIt": "Menu Il Porto di Chioggia (altro menu €150)",
+  "lunchNote": "Light lunch: three dishes and a dessert · Tue–Fri",
+  "lunchNoteIt": "Light lunch: tre piatti e un dolce · mar–ven"
 }

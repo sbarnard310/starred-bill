@@ -10,9 +10,7 @@
   "reviews": 720,
   "dinner": 92,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "wine": 55,
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://www.ithurria.com/restaurant",
   "lunch": 92,
@@ -28,5 +26,7 @@
   "placeId": "ChIJYSbE2cYiUQ0RoKe9Nn9MPdU",
   "michelinId": "9818",
   "chef": "Martin Isabal",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu, 5 courses (Notre histoire €135)",
+  "dinnerNoteFr": "La dégustation, 5 temps (Notre histoire 135 €)"
 }

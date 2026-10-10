@@ -14,16 +14,14 @@
   "reviews": 358,
   "dinner": 125,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
-  "wine": 46,
+  "wine": 75,
   "sourceType": "site",
   "source": "https://etapedoree.fr/menu-diner/",
   "lunch": 125,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sat",
   "lunchNoteFr": "Même menu le midi · ven.–sam.",
-  "lunchWine": 46,
+  "lunchWine": 75,
   "lunchSourceType": "site",
   "lunchSource": "https://etapedoree.fr/menu-diner/",
   "website": "https://etapedoree.fr",
@@ -36,5 +34,7 @@
     "gluten-free"
   ],
   "chef": "Yo Miyazaki",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "L'Étape Dorée menu",
+  "dinnerNoteFr": "Menu « l'Étape Dorée »"
 }

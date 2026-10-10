@@ -10,8 +10,6 @@
   "reviews": 2249,
   "dinner": 98,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://labutte.fr/restaurant-gastronomique/",
   "lunch": 98,
@@ -31,5 +29,7 @@
     "vegan"
   ],
   "chef": "Nicolas Conraux",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "En sept escales menu, 7 courses, not Saturday evenings (9 courses €148)",
+  "dinnerNoteFr": "Menu En sept escales, non proposé le samedi soir (En neuf escales 148 €)"
 }

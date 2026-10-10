@@ -9,7 +9,6 @@
   "reviews": 253,
   "dinnerType": "menu",
   "dinner": 89,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://vandelvirarestaurante.es/en/menu",
   "wine": 43,
@@ -31,5 +30,7 @@
     "gluten-free"
   ],
   "chef": "Juan Carlos García",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu (Vandelvira menu €107)",
+  "dinnerNoteEs": "Menú degustación (menú Vandelvira 107 €)"
 }

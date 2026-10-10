@@ -4,18 +4,14 @@
   "address": "22 quai des Bateliers, 67000 Strasbourg",
   "stars": 1,
   "cuisine": "Modern Cuisine",
-  "dinner": 110,
+  "dinner": 143,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "wine": 42,
-  "dinnerNoteFr": "Menu dégustation",
+  "wine": 62,
   "sourceType": "site",
   "source": "https://www.1741.fr/fr/Les-Menus-Et-Les-Accords/",
-  "lunch": 110,
+  "lunch": 55,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sat",
   "lunchWine": 42,
-  "lunchNoteFr": "Même menu le midi · mer.–sam.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.1741.fr/fr/Les-Menus-Et-Les-Accords/",
   "website": "https://www.1741.fr",
@@ -29,5 +25,9 @@
     "vegan"
   ],
   "chef": "Jérémy Page",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Menu, 7 courses (9 courses €160, 11 courses €178)",
+  "dinnerNoteFr": "Menu en 7 temps (9 temps 160 €, 11 temps 178 €)",
+  "lunchNote": "Menu, 3 courses, Wed–Fri lunch (5 courses €100)",
+  "lunchNoteFr": "Menu en 3 temps, déjeuner du mercredi au vendredi (5 temps 100 €)"
 }

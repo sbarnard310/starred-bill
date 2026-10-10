@@ -10,8 +10,6 @@
   "reviews": 691,
   "dinner": 110,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
   "wine": 55,
   "sourceType": "site",
   "source": "https://laubergedelaforge.com",
@@ -32,5 +30,7 @@
     "gluten-free"
   ],
   "chef": "Théo Fernandez",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Expressions de nos terroirs menu",
+  "dinnerNoteFr": "Menu Expressions de nos terroirs"
 }

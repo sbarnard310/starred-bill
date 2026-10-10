@@ -9,7 +9,6 @@
   "reviews": 430,
   "dinnerType": "menu",
   "dinner": 120,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.lafavellina.it/wp-content/uploads/2026/01/la-favellina-MENU-GENNAIO-2026.pdf",
   "lunch": 120,
@@ -27,5 +26,7 @@
     "vegetarian"
   ],
   "chef": "Federico Pettenuzzo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Chef's surprise menu, 6 courses (also à la carte)",
+  "dinnerNoteIt": "Menu a sorpresa dello chef, sei portate (anche alla carta)"
 }

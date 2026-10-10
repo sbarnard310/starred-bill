@@ -8,16 +8,12 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.6,
   "reviews": 915,
-  "dinner": 70,
+  "dinner": 135,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
-  "source": "https://www.laxel-restaurant.com/media/original/dejeuner-septembre-prix.pdf",
+  "source": "https://www.laxel-restaurant.com/media/original/diner-septembre-prix.pdf",
   "lunch": 70,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sun",
-  "lunchNoteFr": "Même menu le midi · jeu.–dim.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.laxel-restaurant.com/media/original/dejeuner-septembre-prix.pdf",
   "website": "https://www.laxel-restaurant.com/",
@@ -33,5 +29,10 @@
     "kosher"
   ],
   "chef": "Kunihisa Goto",
-  "chefSource": "site"
+  "chefSource": "site",
+  "wine": 85,
+  "dinnerNote": "Promenade menu, 5 courses (Inspiration au Voyage, 8 courses, €185)",
+  "dinnerNoteFr": "Menu Promenade, 5 haltes (Inspiration au Voyage, 8 haltes, 185 €)",
+  "lunchNote": "Balade lunch menu, 3 courses, weekdays (4 courses €95)",
+  "lunchNoteFr": "Menu Balade, 3 haltes, déjeuner en semaine (4 haltes 95 €)"
 }

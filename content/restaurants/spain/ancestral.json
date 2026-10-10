@@ -15,18 +15,15 @@
   "reviews": 741,
   "dinner": 100,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteZh": "品嚐套餐",
-  "dinnerNoteEs": "Menú degustación",
   "sourceType": "site",
-  "source": "https://ancestralrestaurante.com/",
+  "source": "https://ancestralrestaurante.com/menu-pardo/",
   "lunch": 100,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Sun",
   "lunchNoteZh": "午餐供應相同套餐・週二至週日",
   "lunchNoteEs": "El mismo menú al mediodía · mar–dom",
   "lunchSourceType": "site",
-  "lunchSource": "https://ancestralrestaurante.com/",
+  "lunchSource": "https://ancestralrestaurante.com/menu-pardo/",
   "website": "https://ancestralrestaurante.com/",
   "lat": 40.421858,
   "lng": -3.841251,
@@ -36,5 +33,7 @@
     "vegetarian"
   ],
   "chef": "Víctor Infantes and Saúl González",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Pardo tasting menu",
+  "dinnerNoteEs": "Menú degustación Pardo"
 }

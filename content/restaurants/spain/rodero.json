@@ -9,8 +9,6 @@
   "reviews": 678,
   "dinnerType": "menu",
   "dinner": 130,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteEs": "Menú degustación",
   "sourceType": "site",
   "source": "https://restauranterodero.com/wp-content/uploads/2026/06/Degustar.pdf",
   "lunch": 130,
@@ -30,5 +28,7 @@
     "gluten-free"
   ],
   "chef": "Koldo Rodero",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Degustar tasting menu (Gustar, with wine, €99.50; others €145 and €175)",
+  "dinnerNoteEs": "Menú Degustar (Gustar, con vino, 99,50 €; otros 145 € y 175 €)"
 }

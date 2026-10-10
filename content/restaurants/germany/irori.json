@@ -9,7 +9,6 @@
   "reviews": 87,
   "dinnerType": "menu",
   "dinner": 140,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://irori.restaurant/irori-im-isenhof/",
   "website": "https://irori.restaurant/irori-im-isenhof/",
@@ -22,12 +21,13 @@
   ],
   "chef": "Max Goldberg",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
   "lunch": 140,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sundays",
   "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
   "lunchSourceType": "site",
   "lunchSource": "https://irori.restaurant/irori-im-isenhof/",
-  "cuisineDe": "Kreativ"
+  "cuisineDe": "Kreativ",
+  "dinnerNote": "Menu, 9 courses",
+  "dinnerNoteDe": "Menü, 9 Gänge"
 }

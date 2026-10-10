@@ -6,16 +6,12 @@
   "cuisine": "Creative",
   "rating": 4.8,
   "reviews": 587,
-  "dinner": 150,
+  "dinner": 200,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://www.racine.re/",
   "lunch": 150,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sun",
-  "lunchNoteFr": "Même menu le midi · ven.–dim.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.racine.re/",
   "website": "https://www.racine.re/",
@@ -27,5 +23,9 @@
     "vegetarian"
   ],
   "chef": "Kazuyuki Tanaka",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Daisuki menu, 6 courses (Marine €265, Kazuyuki €310)",
+  "dinnerNoteFr": "Menu Daisuki en 6 pousses (Marine 265 €, Kazuyuki 310 €)",
+  "lunchNote": "Suki menu, 4 courses, lunch only",
+  "lunchNoteFr": "Menu Suki en 4 pousses, uniquement le midi"
 }

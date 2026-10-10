@@ -10,18 +10,16 @@
   "reviews": 52,
   "dinner": 85,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteIt": "Menu degustazione",
   "wine": 65,
   "sourceType": "site",
-  "source": "https://www.asinelloristorante.it/",
+  "source": "https://www.asinelloristorante.it/menudisala/",
   "lunch": 85,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sundays",
   "lunchNoteIt": "Stesso menu a pranzo · la domenica",
   "lunchWine": 65,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.asinelloristorante.it/",
+  "lunchSource": "https://www.asinelloristorante.it/menudisala/",
   "website": "https://www.asinelloristorante.it/",
   "lat": 43.385119,
   "lng": 11.480819,
@@ -33,5 +31,7 @@
     "gluten-free"
   ],
   "chef": "Senio Venturi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu (vegetarian €80, 8 courses €135)",
+  "dinnerNoteIt": "Menu degustazione (vegetariano €80, 8 piatti €135)"
 }

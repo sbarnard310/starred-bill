@@ -10,9 +10,7 @@
   "reviews": 2979,
   "dinner": 130,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "noPairing": true,
-  "dinnerNoteZh": "品嚐套餐",
   "sourceType": "site",
   "source": "https://www.holboxla.com/tasting-menu",
   "lunch": 130,
@@ -26,5 +24,6 @@
   "placeId": "ChIJMc9-jgrIwoARvFaE32ZlJzA",
   "michelinId": "569592",
   "chef": "Gilbert Cetina",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu at the counter"
 }

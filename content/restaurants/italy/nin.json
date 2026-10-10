@@ -8,17 +8,15 @@
   "rating": 4.8,
   "reviews": 84,
   "dinnerType": "menu",
-  "dinner": 150,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteIt": "Menu degustazione",
-  "wine": 100,
+  "dinner": 110,
+  "wine": 80,
   "sourceType": "site",
   "source": "https://ristorantenin.it/en/menu-menu-eng",
-  "lunch": 150,
+  "lunch": 110,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sundays",
   "lunchNoteIt": "Stesso menu a pranzo · domenica",
-  "lunchWine": 100,
+  "lunchWine": 80,
   "lunchSourceType": "site",
   "lunchSource": "https://ristorantenin.it/en/menu-menu-eng",
   "website": "https://www.ristorantenin.it",
@@ -32,5 +30,7 @@
     "gluten-free"
   ],
   "chef": "Andrea De Lillo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu (others €150 and €160)",
+  "dinnerNoteIt": "Menu degustazione (altri €150 e €160)"
 }

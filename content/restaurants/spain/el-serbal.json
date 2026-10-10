@@ -8,16 +8,15 @@
   "rating": 4.5,
   "reviews": 2313,
   "dinnerType": "menu",
-  "dinner": 110,
-  "dinnerNote": "Tasting menu",
+  "dinner": 86,
   "sourceType": "site",
   "source": "https://elserbal.com/menu-degustacion-2026/",
-  "wine": 42,
-  "lunch": 110,
+  "wine": 28,
+  "lunch": 86,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Sun",
   "lunchNoteEs": "El mismo menú al mediodía · mar–dom",
-  "lunchWine": 42,
+  "lunchWine": 28,
   "lunchSourceType": "site",
   "lunchSource": "https://elserbal.com/menu-degustacion-2026/",
   "website": "https://elserbal.com/",
@@ -29,5 +28,7 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "dinnerNote": "Gastronomic menu (tasting menu €110)",
+  "dinnerNoteEs": "Menú gastronómico (menú degustación 110 €)"
 }

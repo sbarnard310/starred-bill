@@ -8,13 +8,10 @@
   "reviews": 577,
   "dinnerType": "menu",
   "dinner": 120,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.vintage1997.com/i-nostri-menu",
-  "lunch": 120,
+  "lunch": 30,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Mon–Fri",
-  "lunchNoteIt": "Stesso menu a pranzo · lun–ven",
   "lunchSourceType": "site",
   "lunchSource": "https://www.vintage1997.com/i-nostri-menu",
   "website": "https://www.vintage1997.com/",
@@ -29,5 +26,9 @@
     "gluten-free"
   ],
   "chef": "Pierluigi Consonni",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Tasting menu, meat or Luna Park (also à la carte)",
+  "dinnerNoteIt": "Menu degustazione, carne o Luna Park (anche alla carta)",
+  "lunchNote": "Piccoli menu vintage, weekday lunch (tasting menus €120)",
+  "lunchNoteIt": "Piccoli menu vintage, a pranzo dal lunedì al venerdì (menu degustazione €120)"
 }

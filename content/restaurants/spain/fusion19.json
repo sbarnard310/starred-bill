@@ -9,7 +9,6 @@
   "reviews": 877,
   "dinnerType": "menu",
   "dinner": 150,
-  "dinnerNote": "Tasting menu",
   "wine": 90,
   "sourceType": "site",
   "source": "https://fusion19.com/menu-degustacion/",
@@ -30,5 +29,7 @@
     "gluten-free"
   ],
   "chef": "Aleix Serra and Marc Marsol",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Esencia tasting menu (Plenitud €180)",
+  "dinnerNoteEs": "Menú Esencia (Plenitud 180 €)"
 }

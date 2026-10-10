@@ -8,18 +8,14 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.7,
   "reviews": 613,
-  "dinner": 80,
+  "dinner": 140,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "wine": 45,
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://www.latabledu11.com/offrir",
   "lunch": 80,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sat",
   "lunchWine": 45,
-  "lunchNoteFr": "Même menu le midi · ven.–sam.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.latabledu11.com/offrir",
   "website": "https://www.latabledu11.com",
@@ -33,5 +29,9 @@
     "gluten-free"
   ],
   "chef": "Jean-Baptiste Lavergne-Morazzani",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu, 7 courses",
+  "dinnerNoteFr": "Menu dégustation, 7 séquences",
+  "lunchNote": "Tasting menu, 4 courses, Friday lunch only",
+  "lunchNoteFr": "Menu dégustation, 4 séquences, uniquement le vendredi midi"
 }

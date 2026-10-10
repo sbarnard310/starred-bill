@@ -13,7 +13,6 @@
   "reviews": 74,
   "dinnerType": "menu",
   "dinner": 159,
-  "dinnerNote": "Tasting menu",
   "wine": 85,
   "sourceType": "site",
   "source": "https://www.colbo-restaurant.de/reservierung/",
@@ -27,7 +26,6 @@
   ],
   "chef": "Moritz Techet",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
   "lunch": 159,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Saturdays",
@@ -35,5 +33,7 @@
   "lunchWine": 85,
   "lunchSourceType": "site",
   "lunchSource": "https://www.colbo-restaurant.de/reservierung/",
-  "cuisineDe": "Kreativ"
+  "cuisineDe": "Kreativ",
+  "dinnerNote": "Surprise menu, about 10 courses",
+  "dinnerNoteDe": "Überraschungsmenü, etwa zehn Gänge"
 }

@@ -10,16 +10,14 @@
   "reviews": 527,
   "dinner": 130,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteIt": "Menu degustazione",
-  "sourceType": "press",
-  "source": "https://www.gamberorosso.it/ristoranti/menu-degustazione-ristoranti-stellati-forchette/",
+  "sourceType": "site",
+  "source": "https://www.osteriadipassignano.com/wp-content/uploads/2026/10/2026-10ott-01-Menu-Osteria-di-Passignano_engtesto.pdf",
   "lunch": 130,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch",
   "lunchNoteIt": "Stesso menu a pranzo",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.gamberorosso.it/ristoranti/menu-degustazione-ristoranti-stellati-forchette/",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.osteriadipassignano.com/wp-content/uploads/2026/10/2026-10ott-01-Menu-Osteria-di-Passignano_engtesto.pdf",
   "website": "https://www.osteriadipassignano.com/",
   "lat": 43.576867,
   "lng": 11.245811,
@@ -31,5 +29,7 @@
     "gluten-free"
   ],
   "chef": "Matteo Lorenzini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Traditional tasting menu (also à la carte)",
+  "dinnerNoteIt": "Menu degustazione della tradizione (anche alla carta)"
 }

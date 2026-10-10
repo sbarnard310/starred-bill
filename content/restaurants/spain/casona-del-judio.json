@@ -8,13 +8,11 @@
   "rating": 4.5,
   "reviews": 961,
   "dinnerType": "menu",
-  "dinner": 150,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteEs": "Menú degustación",
+  "dinner": 120,
   "wine": 57,
   "sourceType": "site",
   "source": "https://www.casonadeljudio.com/menu/",
-  "lunch": 150,
+  "lunch": 120,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sun",
   "lunchNoteEs": "El mismo menú al mediodía · mié–dom",
@@ -31,5 +29,7 @@
     "vegan"
   ],
   "chef": "Sergio Bastard",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu (chef's table €150)",
+  "dinnerNoteEs": "Menú degustación (mesa del chef 150 €)"
 }

@@ -7,9 +7,8 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.5,
   "reviews": 473,
-  "dinner": 75,
+  "dinner": 60,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "wine": 30,
   "sourceType": "site",
   "source": "https://www.locandamammi.it/menu/",
@@ -25,12 +24,13 @@
   ],
   "chef": "Stefania Di Pasquo",
   "chefSource": "michelin",
-  "dinnerNoteIt": "Menu degustazione",
-  "lunch": 75,
+  "lunch": 60,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sun",
   "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
   "lunchWine": 30,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.locandamammi.it/menu/"
+  "lunchSource": "https://www.locandamammi.it/menu/",
+  "dinnerNote": "Terra menu, 4 courses (5 courses €65; Espressioni, 8 courses, €75)",
+  "dinnerNoteIt": "Menu Terra, 4 portate (cinque portate €65; Espressioni, 8 portate, €75)"
 }

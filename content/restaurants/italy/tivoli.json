@@ -8,16 +8,15 @@
   "rating": 4.7,
   "reviews": 472,
   "dinnerType": "menu",
-  "dinner": 70,
-  "dinnerNote": "Tasting menu",
+  "dinner": 180,
   "sourceType": "site",
-  "source": "https://www.ristorantetivolicortina.it/wp-content/uploads/2026/08/CARTA_VINI_TIVOLI_2026_IT_CARTA_VINI.pdf",
-  "lunch": 70,
+  "source": "https://www.ristorantetivolicortina.it/wp-content/uploads/2026/08/menu-estate-2026.pdf",
+  "lunch": 180,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Thu–Sun",
   "lunchNoteIt": "Stesso menu a pranzo · gio–dom",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.ristorantetivolicortina.it/wp-content/uploads/2026/08/CARTA_VINI_TIVOLI_2026_IT_CARTA_VINI.pdf",
+  "lunchSource": "https://www.ristorantetivolicortina.it/wp-content/uploads/2026/08/menu-estate-2026.pdf",
   "website": "https://www.ristorantetivolicortina.it/",
   "lat": 46.5338851,
   "lng": 12.1222949,
@@ -30,5 +29,7 @@
     "gluten-free"
   ],
   "chef": "Graziano Prest",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNote": "Altogusto local tasting menu (7 courses €200, vegetarian €150)",
+  "dinnerNoteIt": "Menu degustazione del territorio Altogusto (7 portate €200, vegetariano €150)"
 }

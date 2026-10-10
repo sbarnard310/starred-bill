@@ -10,8 +10,6 @@
   "reviews": 568,
   "dinner": 99,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteZh": "品嚐套餐",
   "wine": 42,
   "sourceType": "site",
   "source": "https://www.hildaandjessesf.com/menu",
@@ -31,5 +29,6 @@
     "vegan"
   ],
   "chef": "Ollie Liedags",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNote": "Chef's Adventure Menu, 5 courses"
 }

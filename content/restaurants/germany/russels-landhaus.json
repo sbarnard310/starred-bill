@@ -8,10 +8,9 @@
   "rating": 4.8,
   "reviews": 334,
   "dinnerType": "menu",
-  "dinner": 150,
-  "dinnerNote": "Tasting menu",
+  "dinner": 160,
   "sourceType": "site",
-  "source": "https://www.ruessels-landhaus.de/",
+  "source": "https://www.ruessels-landhaus.de/wp-content/uploads/2026/09/Gourmet-Karte-ab-10.09.2026.pdf",
   "website": "https://www.ruessels-landhaus.de/",
   "lat": 49.7682481,
   "lng": 6.8921194,
@@ -20,14 +19,15 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü",
   "lunch": 150,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Mon",
-  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Mo",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.ruessels-landhaus.de/",
+  "lunchSource": "https://www.ruessels-landhaus.de/wp-content/uploads/2026/09/000_MIttagskarte-ab-17.09.202611.pdf",
   "cuisineDe": "Kreativ",
   "chef": "Harald Rüssel",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Gourmet menu, 4 courses (5 courses €175, 7 courses €195)",
+  "dinnerNoteDe": "Gourmet-Menü, 4 Gänge (5 Gänge 175 €, 7 Gänge 195 €)",
+  "lunchNote": "Lunch menu, 4 courses",
+  "lunchNoteDe": "Mittagsmenü, 4 Gänge"
 }

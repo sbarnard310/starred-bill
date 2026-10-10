@@ -9,8 +9,6 @@
   "reviews": 559,
   "dinnerType": "menu",
   "dinner": 128,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteEs": "Menú degustación",
   "wine": 60,
   "sourceType": "site",
   "source": "https://ferpelgastronomico.com/menus-gastronomicos/",
@@ -30,5 +28,7 @@
     "gluten-free"
   ],
   "chef": "Elio Fernández",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Figueira menu",
+  "dinnerNoteEs": "Menú Figueira"
 }

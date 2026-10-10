@@ -9,8 +9,6 @@
   "reviews": 1130,
   "dinnerType": "menu",
   "dinner": 125,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteEs": "Menú degustación",
   "sourceType": "site",
   "source": "https://www.grupsantitaura.com/es/experiencias/",
   "lunch": 125,
@@ -29,5 +27,7 @@
     "gluten-free"
   ],
   "chef": "Santi Taura",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Origens tasting menu, 11 courses",
+  "dinnerNoteEs": "Menú degustación Origens, 11 pasos"
 }

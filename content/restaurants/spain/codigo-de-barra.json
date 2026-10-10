@@ -9,7 +9,6 @@
   "reviews": 905,
   "dinnerType": "menu",
   "dinner": 60,
-  "dinnerNote": "Tasting menu",
   "wine": 35,
   "sourceType": "site",
   "source": "https://restaurantecodigodebarracadiz.com/feed/",
@@ -26,5 +25,7 @@
   "placeId": "ChIJqQKeGGLRDQ0RXZS0uekmjao",
   "michelinId": "1192783",
   "chef": "Léon Griffioen",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Cotinusa tasting menu, 10 courses (Gadir, 12 courses, €70)",
+  "dinnerNoteEs": "Menú degustación Cotinusa, 10 platos (Gadir, 12 platos, 70 €)"
 }

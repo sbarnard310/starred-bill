@@ -8,7 +8,6 @@
   "reviews": 412,
   "dinnerType": "menu",
   "dinner": 130,
-  "dinnerNote": "Tasting menu",
   "wine": 65,
   "sourceType": "site",
   "source": "https://www.toma-restaurant.be/menu-par-saison/",
@@ -22,9 +21,7 @@
   ],
   "chef": "Thomas Troupin",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Creatief",
-  "dinnerNoteFr": "Menu dégustation",
   "lunch": 130,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Fri",
@@ -33,5 +30,8 @@
   "lunchWine": 65,
   "lunchSourceType": "site",
   "lunchSource": "https://www.toma-restaurant.be/menu-par-saison/",
-  "cuisineFr": "Cuisine créative"
+  "cuisineFr": "Cuisine créative",
+  "dinnerNote": "Immersion menu",
+  "dinnerNoteNl": "Immersion-menu",
+  "dinnerNoteFr": "Menu Immersion"
 }

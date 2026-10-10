@@ -3107,15 +3107,15 @@ def home_less_html(starred):
                          if r.get(f + "Note") and r[f + "Note"].lower() not in ("lunch menu", "dinner menu", "set lunch", "tasting menu") else "")
     cards = []
     for s, label in ((3, "Three stars from"), (2, "Two stars from"), (1, "One star from")):
-        rows = sorted((usd(r, f), r["name"], f, r) for r in starred if r["stars"] == s for f in ("dinner", "lunch") if menu(r, f))
+        rows = sorted((usd(r, f), r["name"], f, r["id"], r) for r in starred if r["stars"] == s for f in ("dinner", "lunch") if menu(r, f))
         if rows:
-            n, _, f, r = rows[0]
+            n, _, f, _, r = rows[0]
             cards.append(f'<li><p class="less-label">{label}</p><p class="less-price">{amt(r[f], r["cur"])}{about(r, f)}</p>'
                          f'<p class="less-what">{"Lunch" if f == "lunch" else "Dinner"} menu at {named(r)}</p>{note(r, f)}</li>')
-    saves = sorted((usd(r, "dinner") - usd(r, "lunch"), r["name"], r) for r in starred
+    saves = sorted((usd(r, "dinner") - usd(r, "lunch"), r["name"], r["id"], r) for r in starred
                    if r["stars"] == 3 and menu(r, "dinner") and menu(r, "lunch") and r["lunch"] < r["dinner"])
     if saves:
-        n, _, r = saves[-1]
+        n, _, _, r = saves[-1]
         cards.append(f'<li><p class="less-label">Lunch saves up to</p><p class="less-price">{amt(r["dinner"] - r["lunch"], r["cur"])}</p>'
                      f'<p class="less-what">Lunch {amt(r["lunch"], r["cur"])} instead of dinner {amt(r["dinner"], r["cur"])} at {named(r)}</p></li>')
     more = "".join(f'<a class="city-link" href="/guides/{gid}/" data-home="less-guide">{e(label)}</a>' for gid, label in HOME_LESS_GUIDES if gid in guides)

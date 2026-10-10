@@ -9,7 +9,6 @@
   "reviews": 2718,
   "dinnerType": "menu",
   "dinner": 135,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.casamarcelo.net/en/menu",
   "lunch": 135,
@@ -24,5 +23,7 @@
   "placeId": "ChIJT360x0P-Lg0RnQ_j3JPH3pI",
   "michelinId": "223252",
   "chef": "Marcelo Tejedor",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Autumn tasting menu",
+  "dinnerNoteEs": "Menú de otoño"
 }

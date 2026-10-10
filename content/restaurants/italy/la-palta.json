@@ -8,16 +8,13 @@
   "rating": 4.7,
   "reviews": 662,
   "dinnerType": "menu",
-  "dinner": 150,
-  "dinnerNote": "Tasting menu",
+  "dinner": 100,
   "sourceType": "site",
   "source": "https://www.lapalta.it/menu/",
-  "wine": 40,
-  "lunch": 150,
+  "lunch": 100,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Sun",
   "lunchNoteIt": "Stesso menu a pranzo · mar–dom",
-  "lunchWine": 40,
   "lunchSourceType": "site",
   "lunchSource": "https://www.lapalta.it/menu/",
   "website": "https://www.lapalta.it/",
@@ -29,5 +26,7 @@
     "vegetarian"
   ],
   "chef": "Isa Mazzocchi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Tasting menu (another €130; La Pasta menu €150)",
+  "dinnerNoteIt": "Menu degustazione (altro €130; menu La Pasta €150)"
 }

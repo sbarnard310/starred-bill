@@ -8,18 +8,14 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.8,
   "reviews": 767,
-  "dinner": 85,
+  "dinner": 125,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "wine": 25,
-  "dinnerNoteFr": "Menu dégustation",
+  "wine": 75,
   "sourceType": "site",
   "source": "https://www.lamecaniquedesfreresbonano.fr/",
   "lunch": 85,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Sat–Sun",
   "lunchWine": 25,
-  "lunchNoteFr": "Même menu le midi · sam.–dim.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.lamecaniquedesfreresbonano.fr/",
   "website": "https://www.lamecaniquedesfreresbonano.fr/",
@@ -31,5 +27,9 @@
     "vegetarian"
   ],
   "chef": "Clément Bonano",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Minéral menu",
+  "dinnerNoteFr": "Menu Minéral",
+  "lunchNote": "Saltimbanques 3.0 lunch menu: snacks, starter, main, dessert · Thu–Fri",
+  "lunchNoteFr": "Menu Saltimbanques 3.0 : snacks, entrée, plat, dessert · jeu.–ven. midi"
 }

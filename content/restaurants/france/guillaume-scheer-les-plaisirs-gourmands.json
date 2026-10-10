@@ -6,18 +6,14 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.8,
   "reviews": 977,
-  "dinner": 155,
+  "dinner": 134,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "wine": 62,
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://les-plaisirs-gourmands.com/carte-et-menus/",
-  "lunch": 155,
+  "lunch": 62,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchWine": 62,
-  "lunchNoteFr": "Même menu le midi",
+  "lunchWine": 22,
   "lunchSourceType": "site",
   "lunchSource": "https://les-plaisirs-gourmands.com/carte-et-menus/",
   "website": "https://les-plaisirs-gourmands.com/",
@@ -31,5 +27,9 @@
     "kosher"
   ],
   "chef": "Guillaume Scheer",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Plaisirs menu (Gourmands €155)",
+  "dinnerNoteFr": "Menu Plaisirs (Gourmands 155 €)",
+  "lunchNote": "Business menu, Wed–Fri lunch",
+  "lunchNoteFr": "Menu affaire, déjeuner du mercredi au vendredi"
 }

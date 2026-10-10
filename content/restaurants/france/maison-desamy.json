@@ -10,16 +10,12 @@
   "reviews": 1123,
   "dinner": 78,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "wine": 45,
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://www.restaurant-maisondesamy.fr/les-menus-du-restaurant-maison-desamy",
-  "lunch": 78,
+  "lunch": 44,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Sat",
-  "lunchWine": 45,
-  "lunchNoteFr": "Même menu le midi · mar.–sam.",
+  "lunchWine": 36,
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurant-maisondesamy.fr/les-menus-du-restaurant-maison-desamy",
   "website": "https://www.restaurant-maisondesamy.fr",
@@ -33,5 +29,9 @@
     "gluten-free"
   ],
   "chef": "Simon Bessonnet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu, 4 courses (6 courses €98)",
+  "dinnerNoteFr": "Menu dégustation, 4 épisodes (6 épisodes 98 €)",
+  "lunchNote": "Lunch menu, 3 courses, Tue–Fri (2 courses €34)",
+  "lunchNoteFr": "Menu déjeuner, 3 épisodes, du mardi au vendredi (2 épisodes 34 €)"
 }

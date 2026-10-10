@@ -8,8 +8,6 @@
   "reviews": 288,
   "dinnerType": "menu",
   "dinner": 120,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteIt": "Menu degustazione",
   "sourceType": "site",
   "source": "https://www.unforgettabletorino.it/menu/",
   "lunch": 120,
@@ -24,5 +22,7 @@
   "placeId": "ChIJV0oQMvBtiEcROPjNdQQCOmc",
   "michelinId": "1186040",
   "chef": "Christian Mandura",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Single tasting menu",
+  "dinnerNoteIt": "Unico menu degustazione"
 }

@@ -10,16 +10,14 @@
   "reviews": 544,
   "dinner": 115,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
-  "wine": 145,
+  "wine": 75,
   "sourceType": "site",
   "source": "https://www.restaurantlepetitleon.fr/menu",
   "lunch": 115,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Thu–Sat",
   "lunchNoteFr": "Même menu le midi · jeu.–sam.",
-  "lunchWine": 145,
+  "lunchWine": 75,
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantlepetitleon.fr/menu",
   "website": "https://www.restaurantlepetitleon.fr/",
@@ -32,5 +30,7 @@
     "vegan"
   ],
   "chef": "Nick Honeyman",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Chef's menu, 5 courses (7 courses €145)",
+  "dinnerNoteFr": "Menu du chef, 5 services (7 services 145 €)"
 }

@@ -9,15 +9,14 @@
   "reviews": 383,
   "dinnerType": "menu",
   "dinner": 120,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
-  "source": "https://www.ristoranteune.com/",
+  "source": "https://www.ristoranteune.com/ristorante",
   "lunch": 120,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sat–Mon",
   "lunchNoteIt": "Stesso menu a pranzo · sab–lun",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.ristoranteune.com/",
+  "lunchSource": "https://www.ristoranteune.com/ristorante",
   "website": "https://ristoranteune.com/",
   "lat": 43.0177785,
   "lng": 12.7839323,
@@ -29,5 +28,9 @@
     "gluten-free"
   ],
   "chef": "Giulio Gigli",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 35,
+  "dinnerNote": "Tasting menu, 8 courses (Orto e Conserve or Relazioni)",
+  "dinnerNoteIt": "Menu degustazione, 8 portate (Orto e Conserve o Relazioni)",
+  "lunchWine": 35
 }

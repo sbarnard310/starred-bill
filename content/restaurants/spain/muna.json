@@ -9,7 +9,6 @@
   "reviews": 965,
   "dinnerType": "menu",
   "dinner": 121,
-  "dinnerNote": "Tasting menu",
   "wine": 89,
   "sourceType": "site",
   "source": "https://restaurantemuna.com/menu/",
@@ -30,5 +29,7 @@
     "gluten-free"
   ],
   "chef": "Samuel Naveira",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "IKIGAI tasting menu",
+  "dinnerNoteEs": "Menú degustación IKIGAI"
 }

@@ -10,8 +10,6 @@
   "reviews": 1110,
   "dinner": 125,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
   "wine": 75,
   "sourceType": "site",
   "source": "https://maison.saintcrescent.com/la-table/",
@@ -32,5 +30,7 @@
     "gluten-free"
   ],
   "chef": "Lionel Giraud",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Petite Balade en Occitanie menu (Grande Balade €165)",
+  "dinnerNoteFr": "Menu Petite Balade en Occitanie (Grande Balade 165 €)"
 }

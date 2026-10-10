@@ -8,18 +8,16 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.7,
   "reviews": 652,
-  "dinner": 120,
+  "dinner": 69.5,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
-  "wine": 90,
+  "wine": 19,
   "sourceType": "site",
   "source": "https://www.nauberge.com/menus/",
-  "lunch": 120,
+  "lunch": 69.5,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sun",
   "lunchNoteFr": "Même menu le midi · mer.–dim.",
-  "lunchWine": 90,
+  "lunchWine": 19,
   "lunchSourceType": "site",
   "lunchSource": "https://www.nauberge.com/menus/",
   "website": "https://www.nauberge.com/",
@@ -31,5 +29,7 @@
     "vegetarian"
   ],
   "chef": "Bernard Leray",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Plaisir menu (Découverte €90, Gourmand €120)",
+  "dinnerNoteFr": "Menu Plaisir (Découverte 90 €, Gourmand 120 €)"
 }

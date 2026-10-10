@@ -8,17 +8,15 @@
   "cuisineZh": "印度菜",
   "rating": 4.4,
   "reviews": 526,
-  "dinner": 175,
+  "dinner": 90,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteZh": "品嚐套餐",
-  "wine": 125,
+  "wine": 65,
   "sourceType": "site",
   "source": "https://www.raniadc.com/menu",
-  "lunch": 175,
+  "lunch": 90,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sundays",
-  "lunchWine": 125,
+  "lunchWine": 65,
   "lunchSourceType": "site",
   "lunchSource": "https://www.raniadc.com/menu",
   "website": "https://www.raniadc.com/",
@@ -34,5 +32,6 @@
     "halal"
   ],
   "chef": "Peter Boboris",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Prix-fixe menu, 4 courses (Chef's Tasting Menu, 7 courses, $175)"
 }

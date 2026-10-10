@@ -10,16 +10,12 @@
   "reviews": 1289,
   "dinner": 140,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteIt": "Menu degustazione",
-  "sourceType": "press",
-  "source": "https://www.cookist.it/quanto-costa-il-menu-degustazione-nei-grandi-stellati-italiani-20-indirizzi-da-provare/",
-  "lunch": 140,
+  "sourceType": "site",
+  "source": "https://www.joia.it/it/menu",
+  "lunch": 65,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchNoteIt": "Stesso menu a pranzo",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.cookist.it/quanto-costa-il-menu-degustazione-nei-grandi-stellati-italiani-20-indirizzi-da-provare/",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.joia.it/it/lunch",
   "website": "https://joia.it/",
   "lat": 45.477254,
   "lng": 9.201698,
@@ -35,5 +31,9 @@
     "kosher"
   ],
   "chef": "Sauro Ricci - Raffaele Minghini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu (L'enfasi della natura or La scoperta della tradizione)",
+  "dinnerNoteIt": "Menu degustazione (L'enfasi della natura o La scoperta della tradizione)",
+  "lunchNote": "Tre Piatti a Mezzogiorno, 3 courses · Tue–Fri (Piatto quadro from €30)",
+  "lunchNoteIt": "Tre Piatti a Mezzogiorno · mar–ven (Piatto quadro da €30)"
 }

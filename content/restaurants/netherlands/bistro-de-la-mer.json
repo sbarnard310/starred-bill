@@ -8,7 +8,6 @@
   "reviews": 404,
   "dinnerType": "menu",
   "dinner": 98,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.bistrodelamer.com/_files/ugd/8d2639_8a0259ad1d004580a1be807450c91009.pdf",
   "website": "https://www.bistrodelamer.com",
@@ -16,7 +15,6 @@
   "lng": 4.8982876,
   "placeId": "ChIJFX-OmpQJxkcRcF18TZlXxsw",
   "michelinId": "1201223",
-  "dinnerNoteNl": "Proeverijmenu",
   "lunch": 98,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch",
@@ -25,5 +23,7 @@
   "lunchSource": "https://www.bistrodelamer.com/_files/ugd/8d2639_8a0259ad1d004580a1be807450c91009.pdf",
   "cuisineNl": "Klassieke keuken",
   "chef": "Richard van Oostenbrugge and Thomas Groot",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Chef's menu, 4 courses (also à la carte)",
+  "dinnerNoteNl": "Chefsmenu, 4 gangen (ook à la carte)"
 }

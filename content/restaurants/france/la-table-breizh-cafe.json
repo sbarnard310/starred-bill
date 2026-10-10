@@ -10,8 +10,6 @@
   "reviews": 664,
   "dinner": 145,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://medias.breizhcafe.com/Menus_FR/Menu_La_Table_Septembre_2026_FR.pdf",
   "lunch": 145,
@@ -26,5 +24,9 @@
   "placeId": "ChIJhfZBP9idDkgRZzLjdqvr0XU",
   "michelinId": "282070",
   "chef": "Raphaël-Fumio Kudaka",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 39,
+  "dinnerNote": "Seasonal menu",
+  "dinnerNoteFr": "Menu de saison",
+  "lunchWine": 39
 }

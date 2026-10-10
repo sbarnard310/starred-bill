@@ -8,18 +8,17 @@
   "rating": 4.9,
   "reviews": 138,
   "dinnerType": "menu",
-  "dinner": 100,
-  "dinnerNote": "Tasting menu",
+  "dinner": 190,
   "sourceType": "site",
-  "source": "https://harryspiccolo.it/wp-content/uploads/2025/08/menu_A21_4-ENG.pdf",
-  "wine": 50,
-  "lunch": 100,
+  "source": "https://harryspiccolo.it/wp-content/uploads/2026/06/20260512_ESTATE_A4_ITA_web.pdf",
+  "wine": 100,
+  "lunch": 190,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Saturdays",
   "lunchNoteIt": "Stesso menu a pranzo · sabato",
-  "lunchWine": 50,
+  "lunchWine": 100,
   "lunchSourceType": "site",
-  "lunchSource": "https://harryspiccolo.it/wp-content/uploads/2025/08/menu_A21_4-ENG.pdf",
+  "lunchSource": "https://harryspiccolo.it/wp-content/uploads/2026/06/20260512_ESTATE_A4_ITA_web.pdf",
   "website": "https://www.harryspiccolo.it",
   "lat": 45.6511471,
   "lng": 13.7700495,
@@ -30,5 +29,7 @@
     "gluten-free"
   ],
   "chef": "Matteo Metullio and Davide De Pra",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu (others €210 and €250)",
+  "dinnerNoteIt": "Menu degustazione (altri €210 e €250)"
 }

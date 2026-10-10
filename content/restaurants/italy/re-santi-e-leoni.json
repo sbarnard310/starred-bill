@@ -9,7 +9,6 @@
   "reviews": 281,
   "dinnerType": "menu",
   "dinner": 90,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://resantieleoni.com/menu/",
   "lunch": 90,
@@ -29,5 +28,7 @@
     "gluten-free"
   ],
   "chef": "Francesco Nunziata",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNote": "Re tasting menu, 7 courses (Santi €110, Leoni €135)",
+  "dinnerNoteIt": "Menu degustazione Re, 7 portate (Santi €110, Leoni €135)"
 }

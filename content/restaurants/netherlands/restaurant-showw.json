@@ -8,7 +8,6 @@
   "reviews": 212,
   "dinnerType": "menu",
   "dinner": 135,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.restaurantshoww.com/en/menu",
   "website": "https://www.restaurantshoww.com",
@@ -23,12 +22,13 @@
   ],
   "chef": "Dorus Floris",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu",
   "lunch": 135,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sun–Mon",
   "lunchNoteNl": "Zelfde menu bij de lunch · zo–ma",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantshoww.com/en/menu",
-  "cuisineNl": "Moderne keuken"
+  "cuisineNl": "Moderne keuken",
+  "dinnerNote": "Tasting menu, 5 courses (also à la carte)",
+  "dinnerNoteNl": "Proeverijmenu, 5 gangen (ook à la carte)"
 }

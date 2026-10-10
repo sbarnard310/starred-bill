@@ -9,17 +9,16 @@
   "reviews": 679,
   "dinnerType": "menu",
   "dinner": 65,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
-  "source": "https://atalayarestaurante.com/",
-  "wine": 65,
+  "source": "https://atalayarestaurante.com/nuestra-carta/",
+  "wine": 35,
   "lunch": 65,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sat",
   "lunchNoteEs": "El mismo menú al mediodía · mié–sáb",
-  "lunchWine": 65,
+  "lunchWine": 35,
   "lunchSourceType": "site",
-  "lunchSource": "https://atalayarestaurante.com/",
+  "lunchSource": "https://atalayarestaurante.com/nuestra-carta/",
   "website": "https://www.atalayarestaurante.com",
   "lat": 40.2492377,
   "lng": 0.284626,
@@ -29,5 +28,7 @@
     "vegetarian"
   ],
   "chef": "Alejandra Herrador and Emanuel Carlucci",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Llaüt menu: snacks, 3 starters, fish or meat, dessert (Bergantín €89, Falutx €120)",
+  "dinnerNoteEs": "Menú Llaüt: snacks, 3 entrantes, pescado o carne, postre (Bergantín 89 €, Falutx 120 €)"
 }

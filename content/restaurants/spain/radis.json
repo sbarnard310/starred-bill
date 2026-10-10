@@ -9,8 +9,6 @@
   "reviews": 390,
   "dinnerType": "menu",
   "dinner": 90,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteEs": "Menú degustación",
   "sourceType": "site",
   "source": "https://restauranteradis.es/reservas/",
   "lunch": 90,
@@ -28,5 +26,7 @@
     "gluten-free"
   ],
   "chef": "Juanjo Mesa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu, 15 courses",
+  "dinnerNoteEs": "Menú degustación, 15 pases"
 }

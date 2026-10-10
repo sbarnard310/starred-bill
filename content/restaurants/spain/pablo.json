@@ -9,8 +9,6 @@
   "reviews": 751,
   "dinnerType": "menu",
   "dinner": 110,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteEs": "Menú degustación",
   "wine": 56,
   "sourceType": "site",
   "source": "https://restaurantepablo.es/",
@@ -27,5 +25,7 @@
   "placeId": "ChIJFR7rHseaNw0R0QL7VEAgZxY",
   "michelinId": "461366",
   "chef": "Juanjo Losada",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu, 11 courses",
+  "dinnerNoteEs": "Menú degustación, 11 pases"
 }

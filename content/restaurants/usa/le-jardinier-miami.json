@@ -10,15 +10,13 @@
   "reviews": 758,
   "dinner": 140,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteZh": "品嚐套餐",
   "sourceType": "site",
-  "source": "https://lejardinier-miami.com/menus",
+  "source": "https://www.lejardinier-miami.com/menus",
   "lunch": 140,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Sun",
   "lunchSourceType": "site",
-  "lunchSource": "https://lejardinier-miami.com/menus",
+  "lunchSource": "https://www.lejardinier-miami.com/menus",
   "website": "https://lejardinier-miami.com/",
   "lat": 25.814363,
   "lng": -80.19222,
@@ -28,5 +26,8 @@
     "vegetarian"
   ],
   "chef": "Alain Verzeroli",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 150,
+  "dinnerNote": "Seasonal Expression menu, 5 courses (also à la carte)",
+  "lunchWine": 150
 }

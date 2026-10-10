@@ -36,7 +36,7 @@
     tableLabel: "Restoranide hinnad",
     reviews: "{n} arvustus|{n} arvustust", ratingAria: "Google'i hinnang {r}/5", noRating: "Hinnang puudub", fewReviews: "Vähe arvustusi", fewTitle: "Alla 20 Google'i arvustuse, seega hinnang pole veel usaldusväärne",
     srcSite: "Restorani koduleht", srcPress: "Allikas", srcTitle: "Kust see hind pärineb",
-    reportBtn: "Teata hinnast või muudatusest", acctWhyReport: "Hinnast või muudatusest teatamiseks loo tasuta konto või logi sisse. Kontrollime iga teate enne, kui midagi muudame.", srcMember: "Liikme teade: {d}",
+    tripAddBtn: "Lisa reisile", acctWhyTrip: "Reiside planeerimiseks loo tasuta konto või logi sisse: pane restoranid päevadele, vaata kogu arvet ja jaga seda.", reportBtn: "Teata hinnast või muudatusest", acctWhyReport: "Hinnast või muudatusest teatamiseks loo tasuta konto või logi sisse. Kontrollime iga teate enne, kui midagi muudame.", srcMember: "Liikme teade: {d}",
     perMain: "põhiroa eest", typicalSpend: "tavaline arve", notListed: "Pole märgitud",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Laud 1-le", rcptDinnerOnly: "Ainult õhtusöök", rcptNoPairing: "veinipaketti pole märgitud", rcptNoPairingOffered: "veinipaketti ei pakuta", rcptPlusWine: "+ vein {p}", rcptDinnerWine: "Õhtusöök + vein", rcptLunchWine: "Lõuna + vein", rcptChecked: "Kontrollitud {d}", rcptIncl: "Inimese kohta, teenustasuga", rcptPlus: "Inimese kohta, ++ (lisandub teenustasu ja maks)", rcptTaxTip: "Inimese kohta, ilma maksu ja jootrahata", rcptTip: "Inimese kohta, ilma jootrahata", rcptTax: "Inimese kohta, maksuga",

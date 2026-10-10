@@ -1684,7 +1684,7 @@ button.near-card:hover { border-color: var(--green); }
    neighbours (subgrid), so Dinner, Lunch, Wine and the total line up across all of them. */
 .cmp-body { padding-block: 28px 40px; }
 /* The link to it from the homepage and account wishlists. */
-.wish-compare { margin: 10px 0 14px; }
+.wish-compare { margin: 10px 0 14px; display: flex; flex-wrap: wrap; gap: 8px; }
 .wish-compare .btn-line { display: inline-block; text-decoration: none; }
 .cmp-pick-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
 .cmp-pick-head h2 { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; margin: 0; }
@@ -1881,3 +1881,100 @@ button.near-card:hover { border-color: var(--green); }
 .rp-like .rp-why { display: block; margin-bottom: 3px; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--green); }
 /* Long email addresses and links in restaurant page text may break, so a phone never has to zoom out. */
 .rp-steps span, .rp-qa p, .rp-facts dd, .rp-note, .rp-list li > span:last-child { overflow-wrap: anywhere; }
+/* Trips and lists (/trips/, trips.js): a member's trips, the trip editor, its bill, and the read-only shared page. */
+.trips-body { padding-block: 26px 44px; }
+.trip-sec { margin-top: 30px; }
+.trips-body section.trip-sec { margin-top: 26px; padding: 24px 0 0; }
+.trips-body section.trip-details { padding: 16px; margin-top: 0; }
+.trip-sec:first-child { margin-top: 0; }
+.trip-sec h2 { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; margin: 0 0 12px; display: flex; align-items: baseline; gap: 10px; }
+.trip-sec h2 .count { font-family: var(--font-num); font-size: .85rem; color: var(--muted); }
+.trip-sec > p { color: var(--muted); max-width: 65ch; margin: 0 0 12px; }
+.trip-empty { color: var(--muted); max-width: 65ch; }
+.trip-points { margin: 0 0 16px; padding-inline-start: 20px; max-width: 65ch; display: grid; gap: 8px; }
+.trip-back { margin: 0 0 18px; }
+.trip-back a { color: var(--green); font-weight: 600; }
+.trip-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 12px; }
+.trip-card { display: grid; gap: 4px; padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); text-decoration: none; height: 100%; box-sizing: border-box; }
+.trip-card:hover { border-color: color-mix(in srgb, var(--green) 45%, var(--line)); }
+.tc-title { font-weight: 700; font-size: 1.05rem; overflow-wrap: anywhere; }
+.tc-meta { font-size: .86rem; color: var(--muted); }
+.tc-names { font-size: .86rem; color: var(--muted); overflow-wrap: anywhere; }
+.tc-shared { display: inline-block; padding: 0 8px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-size: .76rem; font-weight: 600; }
+.trip-new, .trip-details { display: block; padding: 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: none; }
+.trip-new h2 { font-size: 1.3rem; }
+.tn-kind { border: 0; margin: 0 0 12px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.trip-new .rf-kind { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: .9rem; cursor: pointer; }
+.trip-new .rf-kind:has(input:checked) { border-color: var(--green); background: var(--green-soft); }
+.trip-new .rf-kind input { margin: 0; accent-color: var(--green); }
+.tn-fields, .td-fields { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: end; }
+.tn-fields label, .td-fields label, .td-note, .ti-fields label { display: grid; gap: 4px; font-size: .82rem; font-weight: 600; min-width: 0; }
+.tn-fields label[hidden] { display: none; }
+.tn-name, .td-name { flex: 1 1 260px; }
+.trip-sec input[type="text"], .trip-sec input[type="date"], .trip-sec input[type="time"], .trip-sec select, .trip-sec textarea {
+  padding: 9px 11px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); font: inherit; font-weight: 400; min-width: 0; max-width: 100%; box-sizing: border-box; }
+.trip-sec textarea { resize: vertical; width: 100%; line-height: 1.45; }
+.td-note { margin-top: 12px; }
+.td-note small { font-weight: 400; color: var(--muted); }
+.td-meal { display: grid; gap: 4px; font-size: .82rem; font-weight: 600; }
+.trip-new .cta-btn { margin-top: 12px; }
+.tn-error, .trip-status { margin: 8px 0 0; font-size: .86rem; color: var(--muted); }
+.tn-error:empty, .trip-status:empty { display: none; }
+.trip-items { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.ti-day h3 { font-size: 1rem; margin: 10px 0 0; }
+.ti { display: flex; gap: 12px; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.ti-n { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--green-soft); color: var(--green); font-family: var(--font-num); font-size: .82rem; display: grid; place-items: center; }
+.ti-body { flex: 1 1 auto; min-width: 0; display: grid; gap: 8px; }
+.ti-head { display: flex; align-items: flex-start; gap: 10px; }
+.ti-who { flex: 1 1 auto; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.ti-name { font-weight: 700; color: var(--ink); overflow-wrap: anywhere; }
+a.ti-name:hover { color: var(--green); }
+.ti-meta { font-size: .85rem; color: var(--muted); }
+.ti-acts { margin-inline-start: auto; display: flex; gap: 4px; flex: none; margin-top: -4px; }
+.ti-move, .ti-rm { width: 32px; height: 32px; border: 1px solid transparent; border-radius: 8px; background: none; color: var(--muted); font: inherit; font-size: 1.05rem; cursor: pointer; }
+.ti-move:hover:not(:disabled), .ti-rm:hover { background: var(--bg); color: var(--ink); border-color: var(--line); }
+.ti-move:disabled { opacity: .35; cursor: default; }
+.ti-fields { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: end; }
+.ti-booked { display: inline-flex !important; grid-auto-flow: column; align-items: center; gap: 6px; font-weight: 500 !important; font-size: .9rem !important; padding-bottom: 8px; cursor: pointer; }
+.ti-booked input { width: 17px; height: 17px; accent-color: var(--green); margin: 0; }
+.ti-note { width: 100%; }
+.ti-when { margin: 0; font-size: .9rem; }
+.ti-booked-tag { display: inline-block; padding: 0 8px; border-radius: 999px; background: var(--green-soft); color: var(--green); font-size: .76rem; font-weight: 600; }
+.ti-note-ro { margin: 0; color: var(--muted); font-size: .92rem; overflow-wrap: anywhere; }
+.ti-foot { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; font-size: .86rem; }
+.ti-price { font-family: var(--font-num); font-variant-numeric: tabular-nums; }
+.ti-price.muted { color: var(--muted); font-family: inherit; }
+.ti-cal { display: inline-flex; flex-wrap: wrap; gap: 4px 12px; }
+.ti-cal a { color: var(--green); font-weight: 600; }
+.trip-allcal { margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; }
+.trip-allcal span { color: var(--muted); font-size: .86rem; }
+.trip-chip { font: inherit; color: var(--ink); text-align: start; }
+.tc-plus { margin-inline-start: 4px; font-size: 1.2rem; color: var(--green); font-weight: 700; }
+.trip-add .sub-head { margin-top: 14px; font-size: 1rem; }
+.trip-bill .bill-intro { margin: 0 0 12px; }
+.trip-bill .receipt.bill { max-width: 540px; }
+.trip-link { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.trip-link input { flex: 1 1 260px; font-family: var(--font-num); font-size: .86rem; }
+.trip-share p a { color: var(--green); font-weight: 600; }
+.trip-about { font-size: 1.05rem; max-width: 65ch; margin: 0 0 8px; overflow-wrap: anywhere; white-space: pre-line; }
+.trip-keep .acct-actions { margin-bottom: 10px; }
+.trip-small { margin-top: 30px; font-size: .85rem; color: var(--muted); max-width: 70ch; }
+.trip-small a { color: var(--green); }
+.trip-rules { border-top: 1px solid var(--line); padding-top: 22px; }
+.trip-rules h2 { font-size: 1.2rem; }
+.trip-rules ul { margin: 0 0 10px; padding-inline-start: 20px; display: grid; gap: 6px; max-width: 70ch; color: var(--muted); font-size: .92rem; }
+.trip-rules p { font-size: .92rem; }
+.trip-rules a { color: var(--green); }
+/* "Add to a trip" (trips-add.js): the sign-in box's look, with the member's trips as buttons. */
+.trip-add-box .ta-pick { margin: 0; font-size: .85rem; font-weight: 600; }
+.ta-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; max-height: 40vh; overflow-y: auto; }
+.ta-list button { width: 100%; display: grid; gap: 2px; text-align: start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); font: inherit; cursor: pointer; }
+.ta-list button:hover:not(:disabled) { border-color: var(--green); }
+.ta-list button:disabled { cursor: default; opacity: .7; }
+.ta-title { font-weight: 600; overflow-wrap: anywhere; }
+.ta-meta { font-size: .82rem; color: var(--muted); }
+/* Not the site-wide form card (form { … } above). */
+.ta-new { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
+.ta-new label { font-size: .85rem; font-weight: 600; margin-bottom: -4px; }
+.ta-open { text-align: center; text-decoration: none; }
+.trip-btn { margin-inline-end: 10px; }

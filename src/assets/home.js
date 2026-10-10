@@ -238,7 +238,9 @@ function renderWishlist() {
   // Empty, the section shrinks to a line or two (.is-empty in site.css), as the header's heart already leads here.
   $("wishlist").classList.toggle("is-empty", !list.length);
   if (!list.length) { $("wishList").innerHTML = '<p class="empty-note">' + t("wishEmptyHome") + "</p>" + where; return; }
-  const compare = list.length >= 2 ? '<p class="wish-compare"><a class="btn-line" href="/compare/">' + esc(t("wishCompare")) + " →</a></p>" : "";
+  // Lead on to Compare (two or more saved) and, for members, to planning a trip with them.
+  const compare = list.length >= 2 || acctSignedIn() ? '<p class="wish-compare">' + (list.length >= 2 ? '<a class="btn-line" href="/compare/">' + esc(t("wishCompare")) + " →</a>" : "") +
+    (acctSignedIn() ? '<a class="btn-line" href="/trips/">Plan a trip with these →</a>' : "") + "</p>" : "";
   $("wishList").innerHTML = where + compare + '<ul class="wish-list">' + list.map((r) =>
     '<li><a class="wl-name" href="' + cityLink(r) + '">' + esc(nameOf(r)) + '</a><span class="wl-meta">' + starIcons(r.stars) + " " + esc(cuisineOf(r)) + " · " + esc(whereOf(r)) + "</span>" +
     '<span class="wl-price num">' + esc(r.dinner == null ? "–" : homeMoney(r.dinner, r.cur)) + "</span>" +

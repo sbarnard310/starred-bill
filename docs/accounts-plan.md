@@ -1,6 +1,6 @@
 # Plan: free user accounts
 
-Built 3 October 2026: accounts, wishlist syncing, "been there" with stats and milestones, the account page and the privacy notice. Decisions: Supabase; email link + Google; signed-out wishlist stays on the device; "been there" is a tick plus an optional date. Added 9 October 2026: members' preferences (home city, currency, dietary needs) in a `profile` table, used by every page. Still to do: alerts and the other extras below.
+Built 3 October 2026: accounts, wishlist syncing, "been there" with stats and milestones, the account page and the privacy notice. Decisions: Supabase; email link + Google; signed-out wishlist stays on the device; "been there" is a tick plus an optional date. Added 9 October 2026: members' preferences (home city, currency, dietary needs) in a `profile` table, used by every page. Added 10 October 2026: trips and lists with share links (/trips/). Still to do: alerts and the other extras below.
 
 ## The idea
 
@@ -39,7 +39,7 @@ Visitors can create a free account to keep their **wishlist** on every device an
 
 1. **Make "Been there" rewarding**: stars collected total, milestones (first three-star, every three-star in London), a personal map of places you've been, estimated spend, and shareable Instagram-sized cards, including a "My year in stars" summary.
 2. **Alerts** (the star emails were built 9 Oct 2026: "New stars near you" and ceremony-night summaries by country, sent by scripts/star_alerts.py through Resend; wishlist alerts should reuse that setup): email or phone notification when a wishlisted restaurant gains or loses a star, changes price or closes; reminders before hard-to-book restaurants release their tables; "new city added".
-3. **Several named lists** (e.g. "Paris trip"), shareable by link.
+3. **Several named lists** (e.g. "Paris trip"), shareable by link. Built 10 October 2026 as trips and lists on /trips/ (`trips` table, supabase/trips.sql): dates, bookings, a trip bill, calendar files and read-only share links.
 4. **"Report a price"** from signed-in users, approved by you in Pages CMS before it goes live.
 5. Personal score and notes per visit; your default currency and language follow you to any device.
 6. Later: newsletter (opt-in only), "most wished-for" lists, following friends, booking links that earn a fee.

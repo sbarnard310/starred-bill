@@ -3468,12 +3468,12 @@ def build_compare(starred):
     compare_part() of their id, one compact row each (columns listed in each file), so the page loads only the files
     holding the visitor's wishlist. The page is personal (it reads the wishlist in the browser), so it stays out of search engines and the sitemap."""
     cols = ["id", "name", "stars", "cuisine", "where", "path", "country", "cur", "dinner", "dinnerType", "dinnerNote", "lunch", "lunchType",
-            "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice", "noPairing"]
+            "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice", "noPairing", "href"]
     rows = [[r["id"], r["name"], r["stars"], r.get("cuisine", ""), near_where(r), r["cityPath"], r["country"], r["cur"],
              r.get("dinner"), r.get("dinnerType", "menu"), r.get("dinnerNote", ""), r.get("lunch"), r.get("lunchType", "menu"),
              r.get("lunchNote", ""), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"),
              r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0,
-             1 if r.get("noPairing") else 0]
+             1 if r.get("noPairing") else 0, restaurant_href(r)]
             for r in starred]
     parts = [[] for _ in range(COMPARE_PARTS)]
     for row in rows:
@@ -3491,6 +3491,7 @@ def build_compare(starred):
                          "rateDate": currency_data.get("rateDate"),
                          "compareParts": urls}),
     }))
+    return urls
 
 
 def build_redirects():
@@ -3613,6 +3614,7 @@ def build_account_pages():
         "continents": [[k, PASSPORT_CONTINENT_NAMES[k]] for k in PASSPORT_CONTINENT_NAMES if k in {passport_continent(c) for c in starred_countries}],
         "currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES,
     }
+    account_url = data["accountUrl"]
     write("/account/", render("account.html", {
         "title": "Your account · The Starred Bill", "description": "Your wishlist, the Michelin-starred restaurants you've been to and your dining diary, on any device.",
         "canonical": SITE_URL + "/account/", "data": as_json(only_langs(data, set(), PAGE_TEXTS)),
@@ -3625,6 +3627,26 @@ def build_account_pages():
     write("/unsubscribe/", render("unsubscribe.html", {
         "title": "Unsubscribe · The Starred Bill", "description": "Stop the star emails from The Starred Bill.",
         "canonical": SITE_URL + "/unsubscribe/", "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES}),
+    }))
+    return account_url
+
+
+def build_trips(compare_urls, account_url):
+    """/trips/ (10 Oct 2026): members' trips ("Paris, May 2027": restaurants with a day, time and meal each, and the trip's
+    bill with each country's usual service) and lists ("My top 10 London lunches"), kept in the `trips` table
+    (supabase/trips.sql), plus the read-only page anyone with a share link sees (/trips/?s=<code>). It all runs in the
+    browser (trips.js): the prices come from Compare's files (/data/compare/<n>.json), the names to search and the
+    wishlist from /data/account.json, loaded only once someone is signed in. Personal, so noindex and not in the sitemap."""
+    lede = ("Group the restaurants you're saving into trips, like “Paris, May 2027”: give each a day and a time, see the whole "
+            "trip's bill with service, add your bookings to your calendar, and share it with the people you're going with.")
+    write("/trips/", render("trips.html", {
+        "title": "Your trips · The Starred Bill",
+        "description": e("Plan a trip around Michelin-starred restaurants: dates, bookings, the whole bill with service, and a link to share it."),
+        "canonical": SITE_URL + "/trips/", "lede": e(lede), "htmlLang": "en", "ogType": "website",
+        "ogAlt": "Plan a trip around Michelin-starred restaurants on The Starred Bill",
+        "crumbs": '<a href="/">All destinations</a><span aria-current="page">Trips</span>',
+        "data": as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "switchable": currency_data.get("switchable", []),
+                         "rateDate": currency_data.get("rateDate"), "compareParts": compare_urls, "accountUrl": account_url}),
     }))
 
 
@@ -6701,6 +6723,11 @@ def report_attrs(r):
     return f'data-report-id="{e(r["id"])}" data-report-name="{e(r["name"])}" data-report-cur="{e(r["cur"])}"'
 
 
+def trip_attrs(r):
+    """What "Add to a trip" (account.js, trips-add.js) needs to know about the restaurant."""
+    return f'data-trip-add="{e(r["id"])}" data-trip-name="{e(r["name"])}"'
+
+
 def report_link(r):
     """"Seen a different price?": opens the members' report form (signing in first if need be)."""
     return f'<button type="button" class="rp-report linkish" {report_attrs(r)}>Seen a different price? Tell us</button>'
@@ -6939,6 +6966,7 @@ def build_restaurant_pages():
                 + (f'<a class="rp-btn" href="{e(r["bookingUrl"])}">Book on {e(booking_site(r["bookingUrl"]) or "their website")}</a>' if r.get("bookingUrl") else "")
                 + (f'<a class="rp-btn" href="{e(r["website"])}">Restaurant’s website</a>' if r.get("website") else "")
                 + f'<a class="rp-btn" href="{e(maps)}">Google Maps</a>'
+                + f'<button type="button" class="rp-btn" {trip_attrs(r)}>Add to a trip</button>'
                 + f'<button type="button" class="rp-btn" {report_attrs(r)}>Report a price or change</button></div>\n'
                 '      <div class="rp-cur" id="rpCur" role="group" aria-label="Show prices in" hidden></div>\n'
                 f'    </div>\n    <div class="rp-side">{receipt_html(r, kind, src_links)}</div>\n  </div>\n</div>\n')
@@ -7356,7 +7384,7 @@ def build_service_worker():
         if f.is_file():
             digest.update(str(f.relative_to(OUT)).encode() + f.read_bytes())
     # Language files are left out: each is saved the first time a page that offers it is opened.
-    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [url for name, url in sorted(assets.items()) if not name.startswith("lang-") and name not in ("rtl.css", "report.js")]
+    precache = ["/", "/manifest.webmanifest", "/favicon.svg", "/icons/icon-192.png"] + [url for name, url in sorted(assets.items()) if not name.startswith("lang-") and name not in ("rtl.css", "report.js", "trips-add.js")]
     sw = (SRC / "sw.js").read_text("utf-8").replace("{{version}}", digest.hexdigest()[:12]).replace("{{precache}}", json.dumps(precache))
     (OUT / "sw.js").write_text(sw, "utf-8")
 
@@ -7375,8 +7403,8 @@ for p in pages:
 build_home()
 build_pick(build_near_me([r for r in restaurants if not r.get("status")]))
 build_bill_data([r for r in restaurants if not r.get("status")])
-build_compare([r for r in restaurants if not r.get("status")])
-build_account_pages()
+compare_urls = build_compare([r for r in restaurants if not r.get("status")])
+build_trips(compare_urls, build_account_pages())
 build_guides()
 build_restaurant_pages()
 build_redirects()

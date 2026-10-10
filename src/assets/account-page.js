@@ -1,6 +1,6 @@
 // The account page: what you've ticked off (stats, milestones, progress by destination), your dining diary (the
 // restaurants you've been to, newest first, with the date, what you paid, the menu and your private notes), your wishlist
-// (with notes), your preferences (home city, currency, dietary needs) and your data (download, sign out, delete).
+// (with notes), your trips and lists (/trips/), your preferences (home city, currency, dietary needs) and your data (download, sign out, delete).
 // account.js does the signing in, keeps the preferences with the account and runs the diary window.
 
 // The restaurants come from /data/account.json (build_account_pages() in build.py), fetched only once someone is signed in:
@@ -219,6 +219,26 @@ function reportsSection() {
     }).join("") + "</ul></section>";
 }
 
+// ---------- Trips ----------
+// The member's trips and lists (/trips/, trips.js; the `trips` table), newest change first, each linking to its page.
+let trips = null, tripsLoading = false;
+function loadTrips() {
+  if (trips || tripsLoading || !account.client || !account.user) return;
+  tripsLoading = true;
+  account.client.from("trips").select("id,kind,title,starts_on,ends_on,people,meal,wine,currency,note,items,share_code,updated_at").order("updated_at", { ascending: false })
+    .then(({ data, error }) => { trips = error ? [] : data || []; }, () => { trips = []; })
+    .then(() => { tripsLoading = false; render(); });
+}
+function tripsSection() {
+  if (!trips) return "";
+  const when = (x) => x.kind === "list" ? "List" : x.starts_on ? dayLabel(x.starts_on) + (x.ends_on && x.ends_on !== x.starts_on ? " – " + dayLabel(x.ends_on) : "") : "No dates yet";
+  return '<section class="acct-section" id="trips"><h2>Your trips <span class="count">' + trips.length + "</span></h2>" +
+    "<p>Group saved restaurants into trips with dates and a bill for the whole trip, or lists to share, like your top 10 London lunches.</p>" +
+    (trips.length ? '<ul class="acct-list">' + trips.slice(0, 8).map((x) => '<li><div class="al-main"><a class="al-name" href="/trips/?t=' + esc(x.id) + '">' + esc(x.title) + "</a>" +
+      '<span class="al-meta">' + esc(when(x) + " · " + (x.items || []).length + ((x.items || []).length === 1 ? " restaurant" : " restaurants")) + (x.share_code ? " · Shared" : "") + "</span></div></li>").join("") + "</ul>" : "") +
+    '<p class="wish-compare"><a class="btn-line" href="/trips/">' + (trips.length ? (trips.length > 8 ? "All " + trips.length + " trips and lists" : "Plan a new trip") : "Plan a trip") + " →</a></p></section>";
+}
+
 // Progress for each country, region, city or district you've been to at least once.
 function progress(been) {
   const rows = DATA.places.map((p) => {
@@ -287,7 +307,7 @@ function wishList() {
   const list = loadWishlist().map((id) => byId.get(id)).filter(Boolean);
   const visited = loadVisited(), diary = loadDiary();
   return '<section class="acct-section"><h2>' + esc(t("accWishTitle")) + ' <span class="count">' + list.length + "</span></h2>" +
-    (list.length >= 2 ? '<p class="wish-compare"><a class="btn-line" href="/compare/">' + esc(t("wishCompare")) + " →</a></p>" : "") +
+    (list.length ? '<p class="wish-compare">' + (list.length >= 2 ? '<a class="btn-line" href="/compare/">' + esc(t("wishCompare")) + " →</a>" : "") + '<a class="btn-line" href="/trips/">Plan a trip with these →</a></p>' : "") +
     (!list.length ? '<p class="empty-note">' + esc(t("accWishEmpty")) + "</p>" : '<ul class="acct-list">' + list.map((r) =>
       '<li><div class="al-main"><a class="al-name" href="' + pageLink(r) + '">' + esc(nameOf(r)) + "</a>" +
       '<span class="al-meta">' + starIcons(starsOf(r)) + " · " + esc(whereOf(r)) + (r.dinner != null ? " · " + esc(localMoney(r.dinner, r.cur)) : "") + "</span>" +
@@ -374,9 +394,10 @@ function render() {
     return;
   }
   loadReports();
+  loadTrips();
   const visited = loadVisited();
   const been = Object.keys(visited).map((id) => byId.get(id)).filter(Boolean);
-  $("acctBody").innerHTML = msg + passportSection(been) + yearSection(been) + progress(been) + diaryList(been) + wishList() + otherNotes() + reportsSection() + prefsSection() + emailsSection() + dataSection();
+  $("acctBody").innerHTML = msg + passportSection(been) + yearSection(been) + progress(been) + diaryList(been) + wishList() + tripsSection() + otherNotes() + reportsSection() + prefsSection() + emailsSection() + dataSection();
   placePassportMap(been);
   drawYearCard(been);
   if (/^#(preferences|emails)$/.test(location.hash) && !ui.jumped && $(location.hash.slice(1))) { ui.jumped = true; $(location.hash.slice(1)).scrollIntoView(); }
@@ -393,6 +414,10 @@ function downloadData() {
     beenThere: Object.keys(visited).map((id) => ({ id, name: nameFor(id), date: visited[id] || null,
       paidPerPerson: d(id).paid != null ? d(id).paid : null, currency: d(id).paid != null ? d(id).cur || null : null, menu: d(id).menu || null, note: d(id).note || null })),
     otherNotes: Object.keys(diary).filter((id) => !(id in visited) && !wish.includes(id)).map((id) => Object.assign({ id, name: nameFor(id) }, diary[id])),
+    trips: (trips || []).map((x) => ({ kind: x.kind, title: x.title, from: x.starts_on, to: x.ends_on, people: x.people, note: x.note,
+      shareLink: x.share_code ? location.origin + "/trips/?s=" + x.share_code : null, updated: x.updated_at,
+      restaurants: (x.items || []).map((i) => Object.assign({ id: i.r, name: nameFor(i.r) }, i.day ? { day: i.day } : {}, i.time ? { time: i.time } : {}, i.meal ? { meal: i.meal } : {},
+        i.booked ? { booked: true } : {}, i.note ? { note: i.note } : {})) })),
     reports: (reports || []).map((x) => ({ restaurant: x.restaurant_name || x.restaurant_id, what: reportWhat(x), details: x.details, sent: x.created_at, status: REPORT_STATUS[x.status] || x.status, ourNote: x.review_note || null })),
     preferences: { homeCity: loadProfile().homeName || null, currency: loadProfile().currency || null, dietaryNeeds: loadProfile().diet || null },
     starEmails: alerts.row ? { newStarsNearYou: alerts.row.near_home, ceremonySummaries: alerts.row.countries.map((c) => (alertCountry(c) || [c, c])[1]) } : null,
@@ -459,7 +484,7 @@ document.addEventListener("keydown", (e) => {
   if (e.target.id === "prefHome" && e.key === "Enter") { e.preventDefault(); const b = document.querySelector("#prefHomeList button"); if (b) b.click(); }
   if (e.target.id === "prefHome" && e.key === "Escape") $("prefHomeList").hidden = true;
 });
-window.addEventListener("sb:account", () => { if (!acctSignedIn()) reports = null; });
+window.addEventListener("sb:account", () => { if (!acctSignedIn()) { reports = null; trips = null; } });
 // The diary window saves without a "sync" mark, so its own changes redraw the page too.
 ["sb:account", "sb:wishlist", "sb:visited", "sb:profile", "sb:diary"].forEach((ev) => window.addEventListener(ev, (e) => { if (e.type === "sb:account" || e.type === "sb:diary" || e.detail.from === "sync") render(); }));
 window.addEventListener("storage", (e) => { if (e.key === WISHLIST_KEY || e.key === VISITED_KEY || e.key === DIARY_KEY) render(); });

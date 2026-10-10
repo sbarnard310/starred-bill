@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="{{htmlLang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:type" content="{{ogType}}">
+<meta property="og:site_name" content="The Starred Bill">
+<meta property="og:image" content="{{ogImage}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ogAlt}}">
+<meta name="twitter:card" content="summary_large_image">
+{{jsonld}}
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#10362A">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Starred Bill">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500&family=Noto+Sans+Thai:wght@400;500;700&family=Noto+Serif+Thai:wght@500&display=swap">
+<link rel="stylesheet" href="{{asset:site.css}}">
+<!-- Visit statistics: Umami, no cookies (see the privacy page) -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="0717d470-551a-4b38-8632-c2e273c3cc5d" data-domains="starredbill.com,www.starredbill.com"></script>
+</head>
+<body class="info-page trips-page" data-static-crumbs>
+{{icons}}
+<div class="masthead">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" id="brandLink"><svg aria-hidden="true"><use href="#logo"/></svg>The Starred Bill</a>
+    <div class="header-actions">
+      <div class="header-menu" id="headerMenu">
+        <nav class="nav" aria-label="Sections">
+          <a href="/#destinations" id="destLink" data-i18n="navDestinations">Destinations</a>
+          <a href="/near-me/" class="nav-near"><svg aria-hidden="true"><use href="#locate"/></svg><span data-i18n="navNear">Near me</span></a>
+          <a href="/pick/" class="nav-pick"><svg aria-hidden="true"><use href="#spark"/></svg><span data-i18n="navPick">Help me pick</span></a>
+          <a href="/guides/" class="nav-guides" data-i18n="navGuides">Guides</a>
+        </nav>
+        <button type="button" class="account-btn" id="accountBtn"></button>
+        <button type="button" class="share-btn" id="shareBtn" aria-haspopup="true" aria-expanded="false" aria-controls="sharePanel"></button>
+      </div>
+      <a href="/#search" class="search-link" id="searchLink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+      <a href="/#wishlist" class="wish-link" id="wishLink"><svg aria-hidden="true"><use href="#heart"/></svg><span data-i18n="wishlist">Wishlist</span> <span id="wishCount">0</span></a>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="headerMenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <div class="share-panel" id="sharePanel" hidden></div>
+    </div>
+  </div>
+</header>
+  <div class="switchbar">
+    <div class="wrap">
+      <nav class="crumbs" id="crumbs" aria-label="Where you are">{{crumbs}}</nav>
+      <div class="hseg-right">
+        <button type="button" class="install-btn" id="installBtn" hidden></button>
+        <div class="hseg" role="group" aria-label="Language / 語言" id="langSwitch"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="tripsMain">
+  <section class="near-hero trips-hero">
+    <div class="wrap">
+      <span class="eyebrow" id="tripsEyebrow">Trips</span>
+      <h1 id="tripsH1">Plan a trip</h1>
+      <p class="lede" id="tripsLede">{{lede}}</p>
+    </div>
+  </section>
+
+  <section class="trips-body">
+    <div class="wrap" id="tripsBody"><p class="acct-loading">Loading…</p></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>The Starred Bill</span>
+    <a href="/guides/what-is-a-michelin-star/" class="foot-guide">What is a Michelin star?</a>
+    <span data-i18n="footNote"></span>
+    {{footPlaces}}
+    <p class="foot-legal" lang="en">© {{copyYear}} The Starred Bill. The site is independent and is not affiliated with or endorsed by Michelin. MICHELIN and MICHELIN Guide are trademarks of Michelin.</p>
+  </div>
+</footer>
+
+<script id="page-data" type="application/json">{{data}}</script>
+<script src="{{asset:common.js}}"></script>
+<script src="{{asset:account.js}}"></script>
+<script src="{{asset:trips.js}}"></script>
+</body>
+</html>

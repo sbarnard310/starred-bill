@@ -42,7 +42,7 @@
     tableLabel: "Preços dos restaurantes",
     reviews: "{n} avaliação|{n} avaliações", ratingAria: "Avaliação Google {r} em 5", noRating: "Sem avaliação", fewReviews: "Poucas avaliações", fewTitle: "Menos de 20 avaliações no Google: tome a nota com cautela",
     srcSite: "Site do restaurante", srcPress: "Fonte", srcTitle: "De onde vem este preço",
-    reportBtn: "Informar um preço ou alteração", acctWhyReport: "Crie uma conta gratuita ou inicie sessão para informar um preço ou uma alteração. Verificamos cada informação antes de mudar alguma coisa.", srcMember: "Informação de um membro, {d}",
+    tripAddBtn: "Adicionar a uma viagem", acctWhyTrip: "Crie uma conta gratuita ou inicie sessão para planejar viagens: coloque cada restaurante em um dia, veja a conta completa e compartilhe-a.", reportBtn: "Informar um preço ou alteração", acctWhyReport: "Crie uma conta gratuita ou inicie sessão para informar um preço ou uma alteração. Verificamos cada informação antes de mudar alguma coisa.", srcMember: "Informação de um membro, {d}",
     perMain: "por prato principal", typicalSpend: "gasto típico", notListed: "Não indicado",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Mesa para 1", rcptDinnerOnly: "Só jantar", rcptNoPairing: "sem harmonização indicada", rcptNoPairingOffered: "sem harmonização", rcptPlusWine: "+ vinho {p}", rcptDinnerWine: "Jantar + vinho", rcptLunchWine: "Almoço + vinho", rcptChecked: "Verificado: {d}", rcptIncl: "Por pessoa, serviço incluído", rcptPlus: "Por pessoa, ++ (serviço e impostos à parte)", rcptTaxTip: "Por pessoa, sem impostos nem gorjeta", rcptTip: "Por pessoa, sem gorjeta", rcptTax: "Por pessoa, impostos incluídos",

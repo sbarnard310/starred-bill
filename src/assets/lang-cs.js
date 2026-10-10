@@ -39,7 +39,7 @@
     tableLabel: "Ceny restaurací",
     reviews: "Recenze: {n}", ratingAria: "Hodnocení Google {r} z 5", noRating: "Bez hodnocení", fewReviews: "Málo recenzí", fewTitle: "Méně než 20 recenzí na Googlu, hodnocení proto berte s rezervou",
     srcSite: "Web restaurace", srcPress: "Zdroj", srcTitle: "Odkud tato cena pochází",
-    reportBtn: "Nahlásit cenu nebo změnu", acctWhyReport: "Vytvořte si bezplatný účet nebo se přihlaste a nahlaste cenu či změnu. Každé hlášení ověříme, než cokoli změníme.", srcMember: "Hlášení člena: {d}",
+    tripAddBtn: "Přidat do cesty", acctWhyTrip: "Vytvořte si bezplatný účet nebo se přihlaste a plánujte cesty: rozvrhněte restaurace do dnů, podívejte se na celý účet a sdílejte ho.", reportBtn: "Nahlásit cenu nebo změnu", acctWhyReport: "Vytvořte si bezplatný účet nebo se přihlaste a nahlaste cenu či změnu. Každé hlášení ověříme, než cokoli změníme.", srcMember: "Hlášení člena: {d}",
     perMain: "za hlavní chod", typicalSpend: "běžná útrata", notListed: "Neuvedeno",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Stůl pro 1", rcptDinnerOnly: "Jen večeře", rcptNoPairing: "párování neuvedeno", rcptNoPairingOffered: "párování nenabízí", rcptPlusWine: "+ víno {p}", rcptDinnerWine: "Večeře + víno", rcptLunchWine: "Oběd + víno", rcptChecked: "Ověřeno {d}", rcptIncl: "Na osobu, včetně obsluhy", rcptPlus: "Na osobu, ++ (obsluha a daň navíc)", rcptTaxTip: "Na osobu, bez daně a spropitného", rcptTip: "Na osobu, bez spropitného", rcptTax: "Na osobu, včetně daně",

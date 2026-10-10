@@ -1,6 +1,7 @@
 // Free accounts. People sign in with an emailed code or link, or Google, and their wishlist, "been there" list and
 // dining diary (what they paid, the menu and private notes) and preferences (home city, currency, dietary needs) follow
 // them to any device. Supabase (supabase.com) holds the accounts and two tables, `saved` and `profile` (see supabase/schema.sql),
+// plus members' trips (`trips`, supabase/trips.sql, planned on /trips/ and filled from "Add to a trip" below),
 // whose rules let each person read and change only their own rows.
 // Signed out, the wishlist still works and stays in this browser; "been there" needs an account.
 // The pages keep reading the browser copy (loadWishlist / loadVisited in common.js); this file keeps
@@ -400,7 +401,7 @@ function acctOffer(text, yes, no) {
 function renderSignIn() {
   const box = $("signInBox");
   if (!box) return;
-  const why = account.reason === "been" ? t("acctWhyBeen") : account.reason === "report" ? t("acctWhyReport") : t("acctWhy");
+  const why = account.reason === "been" ? t("acctWhyBeen") : account.reason === "report" ? t("acctWhyReport") : account.reason === "trip" ? t("acctWhyTrip") : t("acctWhy");
   box.querySelector(".si-title").textContent = t("acctTitle");
   box.querySelector(".si-why").textContent = why;
   box.querySelector(".si-close").setAttribute("aria-label", t("acctClose"));
@@ -536,6 +537,34 @@ window.addEventListener("sb:account", () => {
   if (!r || !account.user) return;
   store.set(REPORT_KEY, null);
   if (Date.now() - r.at < 30 * 60 * 1000) openReport(r);
+});
+
+// ---------- Adding a restaurant to a trip ----------
+// "Add to a trip" ([data-trip-add] on restaurant pages and destination rows) opens the window in trips-add.js, loaded only
+// now, for signed-in members; anyone else is asked to sign in first, and the window opens once they have (as for reports).
+const TRIPS_ADD_JS = "{{asset:trips-add.js}}", TRIP_KEY = "starredbill-trip-pending";
+async function openTripAdd(r) {
+  const askSignIn = () => { store.set(TRIP_KEY, Object.assign({ at: Date.now() }, r)); openSignIn("trip"); };
+  if (!(account.ready ? account.user : hasStoredSession())) { askSignIn(); return; }
+  try {
+    await bootAccount();
+    await accountSettled();
+    if (!account.user) { askSignIn(); return; }
+    if (!window.showTripAdd) await loadScript(TRIPS_ADD_JS);
+    window.showTripAdd(r);
+  } catch (e) { acctNotice(t("acctFailed")); }
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-trip-add]");
+  if (!b) return;
+  e.preventDefault();
+  openTripAdd({ id: b.dataset.tripAdd, name: b.dataset.tripName || "", from: document.body.classList.contains("restaurant-page") ? "restaurant-page" : "destination" });
+});
+window.addEventListener("sb:account", () => {
+  const r = store.get(TRIP_KEY, null);
+  if (!r || !account.user) return;
+  store.set(TRIP_KEY, null);
+  if (Date.now() - r.at < 30 * 60 * 1000) openTripAdd(r);
 });
 
 // Start straight away only if someone is (or is becoming) signed in; everyone else loads nothing extra.

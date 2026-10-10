@@ -39,7 +39,7 @@
     tableLabel: "Cijene restorana",
     reviews: "Recenzije: {n}", ratingAria: "Ocjena na Googleu {r} od 5", noRating: "Bez ocjene", fewReviews: "Malo recenzija", fewTitle: "Manje od 20 recenzija na Googleu pa ocjena nije pouzdana",
     srcSite: "Mrežna stranica restorana", srcPress: "Izvor", srcTitle: "Odakle je ova cijena",
-    reportBtn: "Prijavi cijenu ili promjenu", acctWhyReport: "Napravite besplatan račun ili se prijavite kako biste prijavili cijenu ili promjenu. Svaku prijavu provjerimo prije nego što išta promijenimo.", srcMember: "Prijava člana: {d}",
+    tripAddBtn: "Dodaj u putovanje", acctWhyTrip: "Napravite besplatan račun ili se prijavite kako biste planirali putovanja: rasporedite restorane po danima, pogledajte cijeli račun i podijelite ga.", reportBtn: "Prijavi cijenu ili promjenu", acctWhyReport: "Napravite besplatan račun ili se prijavite kako biste prijavili cijenu ili promjenu. Svaku prijavu provjerimo prije nego što išta promijenimo.", srcMember: "Prijava člana: {d}",
     perMain: "po glavnom jelu", typicalSpend: "uobičajeni račun", notListed: "Nije navedeno",
     // The till receipt on destination pages.
     rcptHead: "The Starred Bill · Stol za 1", rcptDinnerOnly: "Samo večera", rcptNoPairing: "vinska pratnja nije navedena", rcptNoPairingOffered: "bez vinske pratnje", rcptPlusWine: "+ vino {p}", rcptDinnerWine: "Večera + vino", rcptLunchWine: "Ručak + vino", rcptChecked: "Provjereno {d}", rcptIncl: "Po osobi, usluga uključena", rcptPlus: "Po osobi, ++ (usluga i porez se dodaju)", rcptTaxTip: "Po osobi, bez poreza i napojnice", rcptTip: "Po osobi, bez napojnice", rcptTax: "Po osobi, porez uključen",

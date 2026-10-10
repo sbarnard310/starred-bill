@@ -230,8 +230,10 @@ def data_checks(site):
         r["_id"], r["_country"] = f.stem, f.parent.name
         rows.append(r)
     live = [r for r in rows if r.get("stars") in (1, 2, 3) and not r.get("status")]
-    hours_file = C / "opening-hours.json"
-    hours = json.loads(hours_file.read_text("utf-8")).get("hours", {}) if hours_file.exists() else {}
+    hours = {}
+    for name in ("opening-hours.json", "opening-hours-google.json"):  # the MICHELIN Guide's, then Google's where it has none
+        hours_file = C / name
+        hours.update(json.loads(hours_file.read_text("utf-8")).get("hours", {}) if hours_file.exists() else {})
     gaps = collections.defaultdict(collections.Counter)
     for r in live:
         g = gaps[r["_country"]]
@@ -246,7 +248,7 @@ def data_checks(site):
         g["no_position"] += r.get("lat") is None
         g["no_photo"] += not r.get("placeId")
         g["no_website"] += not r.get("website")
-        g["no_hours"] += r["_id"] not in hours  # opening days for Near me's "Open on" filter (scripts/michelin_details.py hours)
+        g["no_hours"] += r["_id"] not in hours  # opening days for Near me's "Open on" filter (scripts/michelin_details.py hours, scripts/google_hours.py)
         g["price_without_source"] += r.get("dinner") is not None and not r.get("source")
     total = collections.Counter()
     for g in gaps.values():

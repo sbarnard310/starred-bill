@@ -462,17 +462,28 @@ for path in sorted((CONTENT / "guide-translations").glob("*/*.json")) if (CONTEN
 
 # Opening hours from the MICHELIN Guide (scripts/michelin_details.py hours): per restaurant, Monday first, days split by ";",
 # each day's sittings by "," as "1200-1430", a closed day empty. Near me's "Open on" filter and the restaurant pages read them.
-opening = read_json(CONTENT / "opening-hours.json") or {} if (CONTENT / "opening-hours.json").exists() else {}
-HOURS = {}
+# Where the guide gives none (all of Japan, most of mainland China), Google's are used (scripts/google_hours.py, 10 Oct 2026),
+# marked in HOURS_GOOGLE; Google records every sitting, so their times are always shown.
+HOURS, HOURS_GOOGLE, HOURS_CHECKED = {}, set(), {}
 ids = {r["id"] for r in restaurants}
-for rid, week in (opening.get("hours") or {}).items():
-    if rid not in ids:
-        continue  # a restaurant file renamed or removed since the hours were written; the next "hours" run drops it
-    if not isinstance(week, str) or not re.fullmatch(r"(?:\d{4}-\d{4}(?:,\d{4}-\d{4})*)?(?:;(?:\d{4}-\d{4}(?:,\d{4}-\d{4})*)?){6}", week):
-        problem("opening-hours.json", f"{rid} has hours that aren't seven days like \"1200-1430,1900-2200;…\": {week!r}")
-    else:
-        HOURS[rid] = week
-HOURS_CHECKED = opening.get("checked", "")
+for fname, src in (("opening-hours.json", "michelin"), ("opening-hours-google.json", "google")):
+    opening = read_json(CONTENT / fname) or {} if (CONTENT / fname).exists() else {}
+    HOURS_CHECKED[src] = opening.get("checked", "")
+    for rid, week in (opening.get("hours") or {}).items():
+        if rid not in ids or rid in HOURS:
+            continue  # a restaurant file renamed or removed since the hours were written (the next run drops it), or the guide has its own
+        if not isinstance(week, str) or not re.fullmatch(r"(?:\d{4}-\d{4}(?:,\d{4}-\d{4})*)?(?:;(?:\d{4}-\d{4}(?:,\d{4}-\d{4})*)?){6}", week):
+            problem(fname, f"{rid} has hours that aren't seven days like \"1200-1430,1900-2200;…\": {week!r}")
+        else:
+            HOURS[rid] = week
+            if src == "google":
+                HOURS_GOOGLE.add(rid)
+
+
+def hours_from(r):
+    """Where a restaurant's hours come from, with the month: "the MICHELIN Guide, October 2026" or "Google, October 2026"."""
+    src = "google" if r["id"] in HOURS_GOOGLE else "michelin"
+    return ("Google" if src == "google" else "the MICHELIN Guide") + ", " + month_year(HOURS_CHECKED[src][:7], "en")
 
 # A place's hand-written local note (localNote, 9 Oct 2026): questions and answers on booking, dress code and tipping there,
 # drawn by local_note_html(). {r:<file name>} in an answer names a restaurant and links to it.
@@ -3241,7 +3252,9 @@ def build_near_me(starred):
                      "diets": "", "chef": None, "rating": None, "reviews": None, "wine": None, "lunchWine": None, "change": "", "changed": ""})
     near_url = write_data("near.json", pack_near(rows))
     # Opening hours for the "Open on" filter, in their own file so Help me pick (which shares near.json) doesn't load them.
-    hours_url = write_data("hours.json", {"checked": HOURS_CHECKED, "h": {r["id"]: HOURS[r["id"]] for r in starred if r["id"] in HOURS}})
+    # "g" lists those from Google, whose times near.js always trusts.
+    hours_url = write_data("hours.json", {"checked": HOURS_CHECKED["michelin"], "h": {r["id"]: HOURS[r["id"]] for r in starred if r["id"] in HOURS},
+                                          "g": sorted(r["id"] for r in starred if r["id"] in HOURS_GOOGLE)})
     stats = guide_stats()
     cities = [p for p in by_size(pages) if (p["type"] == "city" or p["id"] in ("hong-kong", "macau", "singapore")) and starred_n[p["id"]] >= 5][:36]
     popular = "".join(f'<a class="city-link" href="{p["path"]}">{e(p["name"])}<span class="count">{starred_n[p["id"]]}</span></a>' for p in cities)
@@ -3257,7 +3270,7 @@ def build_near_me(starred):
          f"lunch menus, which cost a median {stats['lunch1']} at one-star restaurants, against {stats['price1']} for a one-star dinner tasting menu."),
         ("Which Michelin star restaurants near me are open today?",
          "Set “Open on” to Today once you've found your location: the list then shows only the starred restaurants open that day, with "
-         f"their hours where the guide gives them. Opening days come from the MICHELIN Guide and are listed for {len(HOURS):,} of the "
+         f"their hours where we have them. Opening hours come from the MICHELIN Guide, or Google where the guide gives none, and are listed for {len(HOURS):,} of the "
          "restaurants; they change with holidays and private events, so check with the restaurant before you go."),
         ("Can I find Michelin star restaurants along a road trip?",
          "Yes. Choose “Along a route”, type where you're starting and where you're going, and the map shows every starred restaurant within "
@@ -6427,7 +6440,7 @@ def before_html(r):
         timed = any(h not in ("open", "closed") for d, h in hours_lines(r))
         add(f"When is {r['name']} open?", hours_sentence(r),
             '<p class="rp-hours-list">' + "".join(f'<span class="rp-hours"><b>{e(d)}</b> {e(h)}</span>' for d, h in hours_lines(r)) + "</p>"
-            + f'<p class="rp-note">{"Hours" if timed else "Days"} from the MICHELIN Guide, {e(month_year(HOURS_CHECKED[:7], "en"))}; check before you go, as they change on holidays.</p>')
+            + f'<p class="rp-note">{"Hours" if timed else "Days"} from {e(hours_from(r))}; check before you go, as they change on holidays.</p>')
     return ('<section id="visit">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Before you go</span>'
             f'<h2 style="margin-top: 6px">{e(sentence_case(and_list([x for x, k in (("dress code", "dressCode"), ("children", "children"), ("how long it takes", "duration"), ("drinks", "byob")) if r.get(k)] + (["opening hours"] if hours_lines(r) else []))))} at {e(r["name"])}</h2></div></div>\n'
             '    <div class="faq rp-qa">' + "".join(blocks) + f"</div>\n    {info_note(r)}\n  </div>\n</section>\n"), qa
@@ -6666,12 +6679,12 @@ def dinner_sitting(a, b):
 def hours_lines(r):
     """A restaurant's week as [(days, hours)], runs of days with the same hours together:
     [("Mon", "closed"), ("Tue–Sat", "12:00–14:00, 19:00–22:00")]. The MICHELIN Guide often records only a day's first
-    sitting, so times are given only when every open day has two sittings or a dinner one; otherwise just which days
-    it opens ("open"). Empty when the guide lists no hours."""
+    sitting, so times are given only when every open day has two sittings or a dinner one (or the hours are Google's);
+    otherwise just which days it opens ("open"). Empty when we have no hours."""
     week = week_of(r)
     if not week:
         return []
-    timed = all(len(d) > 1 or dinner_sitting(*d[0]) for d in week if d)
+    timed = r["id"] in HOURS_GOOGLE or all(len(d) > 1 or dinner_sitting(*d[0]) for d in week if d)
     text = [(", ".join(clock(a, r["country"]) + "–" + clock(b, r["country"]) for a, b in d) if timed else "open") if d else "closed" for d in week]
     out, i = [], 0
     while i < 7:
@@ -6768,7 +6781,7 @@ def build_restaurant_pages():
         if hours_lines(r) and not visit:
             facts.append(("Opening hours" if any(h not in ("open", "closed") for d, h in hours_lines(r)) else "Open",
                           "".join(f'<span class="rp-hours"><b>{e(d)}</b> {e(h)}</span>' for d, h in hours_lines(r))
-                          + f"<small>From the MICHELIN Guide, {e(month_year(HOURS_CHECKED[:7], 'en'))}; check before you go</small>"))
+                          + f"<small>From {e(hours_from(r))}; check before you go</small>"))
         if r.get("hotel"):
             facts.append(("Hotel", e(r["hotel"][:1].upper() + r["hotel"][1:])))
         if r.get("address"):
@@ -6936,7 +6949,7 @@ def restaurant_sources_html(r, michelin_url):
     if r.get("website"):
         parts.append("Restaurant: " + a(r["website"], host(r["website"])))
     if michelin_url:
-        parts.append("Stars" + (", opening hours" if hours_lines(r) else "") + (" and dietary options" if r.get("diets") else "")
+        parts.append("Stars" + (", opening hours" if hours_lines(r) and r["id"] not in HOURS_GOOGLE else "") + (" and dietary options" if r.get("diets") else "")
                      + ": " + a(michelin_url, f"{r['name']} in the MICHELIN Guide"))
     prices = []
     if r.get("menusSource"):
@@ -6961,6 +6974,8 @@ def restaurant_sources_html(r, michelin_url):
         parts.append("Past prices: " + a("https://web.archive.org/", "Internet Archive") + " copies of its menu page")
     if r.get("rating"):
         parts.append("Rating: " + a("https://www.google.com/maps", "Google Maps") + f", checked {RATINGS_CHECKED}")
+    if r["id"] in HOURS_GOOGLE and hours_lines(r):
+        parts.append("Opening hours: " + a("https://www.google.com/maps", "Google Maps") + f", checked {e(nice_date(HOURS_CHECKED['google']))}")
     parts.append("Exchange rates: " + a(EXCHANGE_RATES[1], EXCHANGE_RATES[0]) + rates_day())
     return ('<section id="sources" class="rp-sources">\n  <div class="wrap">\n    <p class="method-sources"><strong>Sources</strong> '
             + ". ".join(parts) + ".</p>\n  </div>\n</section>\n")

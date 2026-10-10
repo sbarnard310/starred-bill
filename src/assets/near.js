@@ -42,6 +42,7 @@ getData(DATA.hoursUrl).catch(() => null).then((d) => {
   near.hours = {};
   Object.entries(d.h).forEach(([id, week]) => { near.hours[id] = week.split(";").map((day) => day ? day.split(",").map((s) => s.split("-")) : []); });
   near.hoursChecked = d.checked;
+  near.googleHours = new Set(d.g || []);
   if (near.here) { renderFilters(); render(false); }
 }).catch(() => {});
 
@@ -56,22 +57,23 @@ const sittings = (r, day) => near.hours && r.id && near.hours[r.id] ? near.hours
 // A sitting starting before 3pm counts as lunch; one running past 6pm (or past midnight) as dinner.
 const servesMeal = ([a, b], meal) => meal === "lunch" ? Number(a) < 1500 : Number(a) >= 1500 || Number(b) > 1800 || Number(b) <= Number(a);
 // The MICHELIN Guide often records only a day's first sitting, so a day showing lunch alone may well serve dinner too.
-// Which days a restaurant opens is reliable; its times are trusted only for a day with two sittings, or a dinner one.
-const trusted = (s) => s.length > 1 || (s.length === 1 && servesMeal(s[0], "dinner"));
+// Which days a restaurant opens is reliable; the MICHELIN Guide's times are trusted only for a day with two sittings, or a
+// dinner one. Google's (where the guide has none, listed in hours.json's "g") record every sitting, so they're always trusted.
+const trusted = (s, r) => (r && near.googleHours && near.googleHours.has(r.id)) || s.length > 1 || (s.length === 1 && servesMeal(s[0], "dinner"));
 function openFor(r, day, meal) {
   const s = sittings(r, day);
   if (s == null) return null;
   if (!s.length) return false;
-  return trusted(s) ? s.some((x) => servesMeal(x, meal)) : true;
+  return trusted(s, r) ? s.some((x) => servesMeal(x, meal)) : true;
 }
 const clock = (hhmm) => hhmm === "0000" || hhmm === "2400" ? "midnight" : hhmm.slice(0, 2) + ":" + hhmm.slice(2);
-const timesOn = (s) => s && trusted(s) ? s.map(([a, b]) => clock(a) + "–" + clock(b)).join(", ") : "";
+const timesOn = (s, r) => s && trusted(s, r) ? s.map(([a, b]) => clock(a) + "–" + clock(b)).join(", ") : "";
 function hoursText(r) {
   const day = near.day === "" ? today() : near.day, s = sittings(r, day);
   if (s == null) return "";
   const when = dayName(day);
   if (!s.length) return "Closed " + when;
-  return "Open " + when + (timesOn(s) ? " " + timesOn(s) : "");
+  return "Open " + when + (timesOn(s, r) ? " " + timesOn(s, r) : "");
 }
 
 function matches(r) {
@@ -451,7 +453,7 @@ function renderCards(list) {
     '<span class="nc-meta">' + (list.length === 1 ? "starred restaurant" : "starred restaurants") + "</span></div>";
   $("nearCards").innerHTML = count + card(near.trip ? "Closest to the route" : "Nearest", byNear[0]) +
     card(L() ? "Cheapest lunch" : "Cheapest dinner", cheapest, cheapest ? priceText(cheapest) + " · " + distanceText(cheapest.d) + (near.trip ? " off the route" : "") : "") +
-    (openToday && openToday !== byNear[0] ? card("Nearest open today", openToday, (timesOn(sittings(openToday, today())) ? timesOn(sittings(openToday, today())) + " · " : "") + distanceText(openToday.d)) : "") +
+    (openToday && openToday !== byNear[0] ? card("Nearest open today", openToday, (timesOn(sittings(openToday, today()), openToday) ? timesOn(sittings(openToday, today()), openToday) + " · " : "") + distanceText(openToday.d)) : "") +
     (near.stars && near.stars !== 2 ? "" : card(near.trip ? "Two-star nearest the route" : "Nearest two-star", nearest(2))) +
     (near.stars && near.stars !== 3 ? "" : card(near.trip ? "Three-star nearest the route" : "Nearest three-star", nearest(3)));
 }
@@ -504,7 +506,7 @@ function renderList() {
   }
   if (near.day !== "") {
     const unknown = near.rows.filter((r) => r.d <= radiusMetres() && r.id && sittings(r, 0) == null).length;
-    if (unknown) $("nearCount").insertAdjacentHTML("beforeend",  ' <span class="nc-hours-note">Opening days from the MICHELIN Guide; check with the restaurant before you go. ' + unknown +
+    if (unknown) $("nearCount").insertAdjacentHTML("beforeend",  ' <span class="nc-hours-note">Opening hours from the MICHELIN Guide, or Google where it has none; check with the restaurant before you go. ' + unknown +
       (unknown === 1 ? " restaurant here lists none, so it's" : " restaurants here list none, so they're") + " left out.</span>");
   }
   $("nearRows").innerHTML = shown.map((r) => {

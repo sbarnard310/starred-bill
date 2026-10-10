@@ -1,0 +1,12 @@
+{
+  "id": "tokyo-chinese",
+  "type": "cuisine",
+  "parent": "tokyo",
+  "name": "Chinese",
+  "nameJa": "中国料理",
+  "topic": "Chinese Michelin star restaurants",
+  "topicJa": "ミシュラン星付きの中国料理店",
+  "cuisines": [
+    "Chinese"
+  ]
+}

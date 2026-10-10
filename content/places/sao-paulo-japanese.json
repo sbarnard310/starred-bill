@@ -1,0 +1,13 @@
+{
+  "id": "sao-paulo-japanese",
+  "type": "cuisine",
+  "parent": "sao-paulo",
+  "name": "Japanese",
+  "topic": "Japanese Michelin star restaurants",
+  "namePt": "Japonês",
+  "topicPt": "restaurantes japoneses com estrela Michelin",
+  "cuisines": [
+    "Japanese",
+    "Japanese Contemporary"
+  ]
+}

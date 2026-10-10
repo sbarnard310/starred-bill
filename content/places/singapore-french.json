@@ -1,0 +1,13 @@
+{
+  "id": "singapore-french",
+  "type": "cuisine",
+  "parent": "singapore",
+  "name": "French",
+  "nameZh": "法國菜",
+  "topic": "French Michelin star restaurants",
+  "topicZh": "米其林星級法國餐廳",
+  "cuisines": [
+    "French Contemporary",
+    "French"
+  ]
+}

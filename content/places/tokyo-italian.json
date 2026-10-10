@@ -1,0 +1,12 @@
+{
+  "id": "tokyo-italian",
+  "type": "cuisine",
+  "parent": "tokyo",
+  "name": "Italian",
+  "nameJa": "イタリアン",
+  "topic": "Italian Michelin star restaurants",
+  "topicJa": "ミシュラン星付きイタリアン",
+  "cuisines": [
+    "Italian"
+  ]
+}

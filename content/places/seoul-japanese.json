@@ -1,0 +1,13 @@
+{
+  "id": "seoul-japanese",
+  "type": "cuisine",
+  "parent": "seoul",
+  "name": "Japanese",
+  "topic": "Japanese Michelin star restaurants",
+  "nameKo": "일식",
+  "topicKo": "미쉐린 스타 일식 레스토랑",
+  "cuisines": [
+    "Japanese",
+    "Sushi"
+  ]
+}

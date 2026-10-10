@@ -1,0 +1,13 @@
+{
+  "id": "seoul-korean",
+  "type": "cuisine",
+  "parent": "seoul",
+  "name": "Korean",
+  "nameKo": "한식",
+  "topic": "Korean Michelin star restaurants",
+  "topicKo": "미쉐린 스타 한식 레스토랑",
+  "cuisines": [
+    "Korean",
+    "Korean Contemporary"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "tokyo-tempura",
+  "type": "cuisine",
+  "parent": "tokyo",
+  "name": "Tempura",
+  "nameJa": "天ぷら",
+  "topic": "Michelin star tempura restaurants",
+  "topicJa": "ミシュラン星付きの天ぷら店",
+  "cuisines": [
+    "Tempura"
+  ]
+}

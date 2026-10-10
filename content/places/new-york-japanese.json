@@ -1,0 +1,10 @@
+{
+  "id": "new-york-japanese",
+  "type": "cuisine",
+  "parent": "new-york",
+  "name": "Japanese",
+  "topic": "Japanese Michelin star restaurants",
+  "cuisines": [
+    "Japanese"
+  ]
+}

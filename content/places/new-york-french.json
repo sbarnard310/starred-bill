@@ -1,0 +1,11 @@
+{
+  "id": "new-york-french",
+  "type": "cuisine",
+  "parent": "new-york",
+  "name": "French",
+  "topic": "French Michelin star restaurants",
+  "cuisines": [
+    "French",
+    "French Contemporary"
+  ]
+}

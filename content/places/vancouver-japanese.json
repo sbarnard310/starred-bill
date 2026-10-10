@@ -1,0 +1,10 @@
+{
+  "id": "vancouver-japanese",
+  "type": "cuisine",
+  "parent": "vancouver",
+  "name": "Japanese",
+  "topic": "Japanese Michelin star restaurants",
+  "cuisines": [
+    "Japanese"
+  ]
+}

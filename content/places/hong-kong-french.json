@@ -1,0 +1,15 @@
+{
+  "id": "hong-kong-french",
+  "type": "cuisine",
+  "parent": "hong-kong",
+  "name": "French",
+  "nameZh": "法國菜",
+  "nameYue": "法國菜",
+  "topic": "French Michelin star restaurants",
+  "topicZh": "米其林星級法國餐廳",
+  "topicYue": "米芝蓮星級法國餐廳",
+  "cuisines": [
+    "French Contemporary",
+    "French"
+  ]
+}

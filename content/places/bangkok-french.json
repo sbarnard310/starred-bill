@@ -1,0 +1,13 @@
+{
+  "id": "bangkok-french",
+  "type": "cuisine",
+  "parent": "bangkok",
+  "name": "French",
+  "nameTh": "อาหารฝรั่งเศส",
+  "topic": "French Michelin star restaurants",
+  "topicTh": "ร้านอาหารฝรั่งเศสมิชลินสตาร์",
+  "cuisines": [
+    "French Contemporary",
+    "French"
+  ]
+}

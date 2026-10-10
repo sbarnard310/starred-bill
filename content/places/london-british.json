@@ -1,0 +1,12 @@
+{
+  "id": "london-british",
+  "type": "cuisine",
+  "parent": "london",
+  "name": "British",
+  "topic": "British Michelin star restaurants",
+  "cuisines": [
+    "Modern British",
+    "Traditional British",
+    "Creative British"
+  ]
+}

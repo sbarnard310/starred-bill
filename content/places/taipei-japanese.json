@@ -1,0 +1,15 @@
+{
+  "id": "taipei-japanese",
+  "type": "cuisine",
+  "parent": "taipei",
+  "name": "Japanese",
+  "topic": "Japanese Michelin star restaurants",
+  "nameZh": "日本料理",
+  "topicZh": "米其林星級日本料理餐廳",
+  "cuisines": [
+    "Japanese",
+    "Sushi",
+    "Japanese Tempura",
+    "Japanese Contemporary"
+  ]
+}

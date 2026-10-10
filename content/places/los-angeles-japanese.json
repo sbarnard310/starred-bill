@@ -1,0 +1,11 @@
+{
+  "id": "los-angeles-japanese",
+  "type": "cuisine",
+  "parent": "los-angeles",
+  "name": "Japanese",
+  "topic": "Japanese Michelin star restaurants",
+  "cuisines": [
+    "Japanese",
+    "Sushi"
+  ]
+}

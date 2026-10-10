@@ -1,0 +1,10 @@
+{
+  "id": "new-york-korean",
+  "type": "cuisine",
+  "parent": "new-york",
+  "name": "Korean",
+  "topic": "Korean Michelin star restaurants",
+  "cuisines": [
+    "Korean"
+  ]
+}

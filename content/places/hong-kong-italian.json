@@ -1,0 +1,15 @@
+{
+  "id": "hong-kong-italian",
+  "type": "cuisine",
+  "parent": "hong-kong",
+  "name": "Italian",
+  "nameZh": "意大利菜",
+  "nameYue": "意大利菜",
+  "topic": "Italian Michelin star restaurants",
+  "topicZh": "米其林星級意大利餐廳",
+  "topicYue": "米芝蓮星級意大利餐廳",
+  "cuisines": [
+    "Italian",
+    "Italian Contemporary"
+  ]
+}

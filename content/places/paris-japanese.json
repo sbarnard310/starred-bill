@@ -1,0 +1,12 @@
+{
+  "id": "paris-japanese",
+  "type": "cuisine",
+  "parent": "paris",
+  "name": "Japanese",
+  "topic": "Japanese Michelin star restaurants",
+  "nameFr": "Japonais",
+  "topicFr": "restaurants japonais étoilés Michelin",
+  "cuisines": [
+    "Japanese"
+  ]
+}

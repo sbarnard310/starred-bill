@@ -1,0 +1,13 @@
+{
+  "id": "taipei-taiwanese",
+  "type": "cuisine",
+  "parent": "taipei",
+  "name": "Taiwanese",
+  "nameZh": "台菜",
+  "topic": "Taiwanese Michelin star restaurants",
+  "topicZh": "米其林星級台菜餐廳",
+  "cuisines": [
+    "Taiwanese",
+    "Taiwanese contemporary"
+  ]
+}

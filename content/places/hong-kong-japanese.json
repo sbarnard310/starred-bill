@@ -1,0 +1,17 @@
+{
+  "id": "hong-kong-japanese",
+  "type": "cuisine",
+  "parent": "hong-kong",
+  "name": "Japanese",
+  "topic": "Japanese Michelin star restaurants",
+  "nameZh": "日本菜",
+  "nameYue": "日本菜",
+  "topicZh": "米其林星級日本餐廳",
+  "topicYue": "米芝蓮星級日本餐廳",
+  "cuisines": [
+    "Japanese",
+    "Sushi",
+    "Teppanyaki",
+    "Yakitori"
+  ]
+}

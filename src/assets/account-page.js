@@ -240,7 +240,8 @@ function render() {
   loadReports();
   const visited = loadVisited();
   const been = Object.keys(visited).map((id) => byId.get(id)).filter(Boolean);
-  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + progress(been) + diaryList(been) + wishList() + otherNotes() + reportsSection() + prefsSection() + emailsSection() + dataSection();
+  $("acctBody").innerHTML = msg + statTiles(been) + milestones(been) + yearSection(been) + progress(been) + diaryList(been) + wishList() + otherNotes() + reportsSection() + prefsSection() + emailsSection() + dataSection();
+  drawYearCard(been);
   if (/^#(preferences|emails)$/.test(location.hash) && !ui.jumped && $(location.hash.slice(1))) { ui.jumped = true; $(location.hash.slice(1)).scrollIntoView(); }
   if (location.hash === "#reports" && reports && !ui.jumpedReports) { ui.jumpedReports = true; if ($("reports")) $("reports").scrollIntoView(); }
 }

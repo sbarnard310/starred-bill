@@ -794,12 +794,20 @@ function renderRow(id, sel) {
   const btn = had && [...fresh.querySelectorAll(sel)].find((b) => b.offsetParent);
   if (btn) btn.focus();
 }
+// Ticking off the 1st, 5th, 10th, 25th, 50th or 100th starred restaurant says so, in languages that have the words
+// (others keep the plain message); the account page has the full stats and badges.
+const BEEN_MILESTONES = [1, 5, 10, 25, 50, 100];
+function beenMilestone() {
+  const n = Object.keys(state.visited).length, key = n === 1 ? "toastBeenFirst" : "toastBeenN";
+  const has = (I18N[LANG] && I18N[LANG][key]) || (LANG === "yue" && I18N.zh[key]);
+  return BEEN_MILESTONES.includes(n) && has ? key : "toastBeen";
+}
 function toggleBeen(id) {
   const r = ALL_RESTAURANTS.find((x) => x.id === id);
   const was = onBeen(r);
   if (!toggleVisited(id)) return;
   state.visited = loadVisited();
-  toast(t(was ? "toastNotBeen" : "toastBeen", { name: nameOf(r) }), () => { toggleVisited(id); state.visited = loadVisited(); },
+  toast(t(was ? "toastNotBeen" : beenMilestone(), { name: nameOf(r), n: Object.keys(state.visited).length }), () => { toggleVisited(id); state.visited = loadVisited(); },
     was ? null : { label: t("diaryAdd"), run: () => openDiary(id, { name: nameOf(r), cur: r.cur }) });
   renderRow(id, ".been");
 }

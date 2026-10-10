@@ -1073,6 +1073,20 @@ dialog.report-box { width: min(480px, calc(100vw - 32px)); max-height: calc(100d
 .acct-list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .acct-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 16px; }
 .acct-list li + li { border-top: 1px solid var(--line); }
+/* "My year in stars" (account-year.js): the card, drawn on a canvas, beside its year, names and Share / Save buttons. */
+.yc { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 24px; align-items: start; }
+.yc canvas { width: 100%; height: auto; aspect-ratio: 1080 / 1350; border-radius: var(--radius); box-shadow: 0 6px 24px rgba(0, 0, 0, .18); background: #10362A; }
+.yc-side { display: grid; gap: 10px; justify-items: start; max-width: 32rem; }
+.yc-side label { font-weight: 600; }
+.yc-side select { font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); min-width: 10rem; }
+.yc-side .yc-check { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; }
+.yc-note { margin: 0; color: var(--muted); font-size: .88rem; }
+.yc-note a { color: var(--green); }
+.yc-acts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+.yc-acts .cta-btn { display: inline-flex; align-items: center; gap: 8px; }
+.yc-acts svg { width: 16px; height: 16px; }
+.yc-done { margin: 0; min-height: 1.2em; font-size: .88rem; color: var(--green); }
+@media (max-width: 720px) { .yc { grid-template-columns: minmax(0, 1fr); } .yc canvas { max-width: 360px; justify-self: center; } }
 .al-main { flex: 1 1 220px; min-width: 0; display: grid; }
 .al-name { color: var(--ink); font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
 .al-name:hover { color: var(--green); }

@@ -11,7 +11,7 @@ def in_sentence(p):
 items = [{"id": "default", "title": "What a Michelin star costs, city by city", "sub": "Dinner, lunch and wine pairing prices, side by side"},
          {"id": "pick", "title": "Help me pick a Michelin star restaurant", "sub": "Six quick questions, three picks to fit your budget"}]
 for pid, p in sorted(places.items()):
-    if p["type"] == "group":
+    if p["type"] in ("group", "cuisine"):  # cuisine pages use their city's picture
         continue
     items.append({"id": pid, "title": f"What a Michelin star costs in {in_sentence(p)}", "sub": "Dinner, lunch and wine pairing prices, side by side"})
 if sys.argv[1:]:
@@ -19,4 +19,4 @@ if sys.argv[1:]:
 out = ROOT / "src/og"; out.mkdir(exist_ok=True)
 with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
     json.dump(items, f)
-print(subprocess.run(["osascript", "-l", "JavaScript", str(ROOT / "scripts/og_images.js"), f.name, str(out)], capture_output=True, text=True, check=True).stdout.strip())
+print(subprocess.run(["osascript", "-l", "JavaScript", str(ROOT / "scripts/og_images.js"), f.name, str(out), str(ROOT / "brand/png/lockup-horizontal-on-dark-2400.png")], capture_output=True, text=True, check=True).stdout.strip())

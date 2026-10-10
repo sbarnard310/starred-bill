@@ -59,4 +59,4 @@ out = ROOT / "src/og/restaurants"
 out.mkdir(parents=True, exist_ok=True)
 with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
     json.dump(items, f)
-print(subprocess.run(["osascript", "-l", "JavaScript", str(ROOT / "scripts/restaurant_images.js"), f.name, str(out)], capture_output=True, text=True, check=True).stdout.strip())
+print(subprocess.run(["osascript", "-l", "JavaScript", str(ROOT / "scripts/restaurant_images.js"), f.name, str(out), str(ROOT / "brand/png/lockup-horizontal-on-dark-2400.png")], capture_output=True, text=True, check=True).stdout.strip())

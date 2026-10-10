@@ -1,9 +1,11 @@
 // Draws restaurant pages' link-preview pictures (1200 × 630 PNG): name, stars and place on the left, the till receipt on
 // the right. Run through scripts/restaurant_images.py, which works out each restaurant's lines. Uses macOS's AppKit.
+// The logo at the top is brand/png/lockup-horizontal-on-dark-2400.png (the receipt and the name), drawn from brand/make.html.
 ObjC.import("AppKit");
 function run(argv) {
   const items = JSON.parse(ObjC.unwrap($.NSString.stringWithContentsOfFileEncodingError($(argv[0]), $.NSUTF8StringEncoding, $())));
   const outDir = argv[1];
+  const logo = $.NSImage.alloc.initWithContentsOfFile($(argv[2]));
   const W = 1200, H = 630;
   const rgb = (h, a) => $.NSColor.colorWithSRGBRedGreenBlueAlpha(parseInt(h.slice(0, 2), 16) / 255, parseInt(h.slice(2, 4), 16) / 255, parseInt(h.slice(4, 6), 16) / 255, a == null ? 1 : a);
   const font = (names, size) => { for (const n of names) { const f = $.NSFont.fontWithNameSize(n, size); if (f && !f.isNil()) return f; } return $.NSFont.boldSystemFontOfSize(size); };
@@ -40,8 +42,8 @@ function run(argv) {
     $.NSGraphicsContext.setCurrentContext($.NSGraphicsContext.graphicsContextWithBitmapImageRep(rep));
     rgb("10362A").setFill; $.NSRectFill($.NSMakeRect(0, 0, W, H));
     // Left: the site, the restaurant, its stars and place.
-    star(86, 84, 22, rgb("E0B85C"));
-    draw("THE STARRED BILL", font(["Helvetica-Bold"], 24), rgb("E0B85C"), 122, 68, 500, 36, 3);
+    $.NSGraphicsContext.currentContext.imageInterpolation = $.NSImageInterpolationHigh;
+    logo.drawInRectFromRectOperationFraction($.NSMakeRect(64, H - 56 - 64, 64 * 2400 / 520, 64), $.NSZeroRect, $.NSCompositingOperationSourceOver, 1);
     const nameSize = it.name.length > 22 ? 58 : it.name.length > 14 ? 70 : 82;
     draw(it.name, font(["Georgia-Bold", "Times-Bold"], nameSize), rgb("EAF4EC"), 64, 170, 560, 200);
     for (let i = 0; i < it.stars; i++) star(86 + i * 50, 420, 18, rgb("E0B85C"));

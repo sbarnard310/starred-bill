@@ -20,6 +20,8 @@ Every file here is drawn from one source, `make.html`. To change the logo, edit 
 | One colour (stamps, embossing, print) | `svg/mark-mono-green.svg`, `svg/mark-mono-white.svg` |
 | Designers and printers | the matching file in `svg/` |
 | The website's favicon and app icon (not used yet) | `site-icons/` |
+| Emails' header (sign-in and star emails) | `src/img/email/receipt-mark.png`, a 81 × 120 copy of `png/mark-on-dark-1000.png` beside the name in live text |
+| Link-preview pictures (`src/og/`) | `png/lockup-horizontal-on-dark-2400.png`, drawn in by `scripts/og_images.py` and `scripts/restaurant_images.py` |
 
 Files ending `-boxed` have their own background colour; the others are see-through.
 

@@ -9,8 +9,6 @@
   "reviews": 144,
   "dinnerType": "menu",
   "dinner": 165,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteEs": "Menú degustación",
   "wine": 89,
   "sourceType": "site",
   "source": "https://coboestratos.com/menus/Cobo-Estratos-Humanidad-ES.pdf",
@@ -27,5 +25,7 @@
   "placeId": "ChIJi35sDAn9RQ0RyX7FzcuFNCg",
   "michelinId": "1200255",
   "chef": "Miguel Cobo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Humanidad tasting menu",
+  "dinnerNoteEs": "Menú Humanidad"
 }

@@ -9,7 +9,6 @@
   "reviews": 245,
   "dinnerType": "menu",
   "dinner": 280,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://danimaison.it/en/menus/",
   "lunch": 280,
@@ -30,5 +29,7 @@
     "gluten-free"
   ],
   "chef": "Nino Di Costanzo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Ci pensa lo Chef surprise tasting menu (also à la carte)",
+  "dinnerNoteIt": "Ci pensa lo Chef, menu degustazione a sorpresa (anche alla carta)"
 }

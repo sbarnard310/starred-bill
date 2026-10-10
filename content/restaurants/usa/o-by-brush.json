@@ -8,7 +8,6 @@
   "reviews": 17,
   "dinnerType": "menu",
   "dinner": 285,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.obybrush.com/",
   "wine": 155,
@@ -29,5 +28,6 @@
     "kosher"
   ],
   "chef": "Jason Liang",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Omakase tasting menu"
 }

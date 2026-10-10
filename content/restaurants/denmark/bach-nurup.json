@@ -9,7 +9,6 @@
   "reviews": 82,
   "dinner": 1600,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "wine": 1250,
   "sourceType": "site",
   "source": "https://bachognurup.dk/en/menu-en/evening/",
@@ -24,12 +23,12 @@
   ],
   "chef": "Christian Nurup",
   "chefSource": "michelin",
-  "dinnerNoteDa": "Smagsmenu",
-  "lunch": 1600,
+  "lunch": 500,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Mon, Wed–Sat",
-  "lunchNoteDa": "Samme menu til frokost · man., ons.–lør.",
-  "lunchWine": 1250,
   "lunchSourceType": "site",
-  "lunchSource": "https://bachognurup.dk/en/menu-en/evening/"
+  "lunchSource": "https://bachognurup.dk/en/menu-en/lunch/",
+  "dinnerNote": "Evening menu",
+  "dinnerNoteDa": "Aftenmenu",
+  "lunchNote": "Lunch menu: snacks, main and dessert",
+  "lunchNoteDa": "Frokostmenu: snacks, hovedret og dessert"
 }

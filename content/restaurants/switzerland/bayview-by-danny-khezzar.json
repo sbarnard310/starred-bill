@@ -8,7 +8,6 @@
   "reviews": 470,
   "dinnerType": "menu",
   "dinner": 195,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.restaurantbayview.com",
   "website": "https://www.restaurantbayview.com",
@@ -22,11 +21,8 @@
   ],
   "chef": "Danny Khezzar",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ",
-  "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine créative",
-  "dinnerNoteIt": "Menu degustazione",
   "lunch": 195,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sat",
@@ -35,5 +31,9 @@
   "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantbayview.com",
-  "cuisineIt": "Creativa"
+  "cuisineIt": "Creativa",
+  "dinnerNote": "Tasting menu",
+  "dinnerNoteDe": "Degustationsmenü",
+  "dinnerNoteFr": "Menu dégustation",
+  "dinnerNoteIt": "Menu degustazione"
 }

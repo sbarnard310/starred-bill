@@ -9,7 +9,6 @@
   "reviews": 403,
   "dinnerType": "menu",
   "dinner": 360,
-  "dinnerNote": "Tasting menu",
   "wine": 195,
   "sourceType": "site",
   "source": "https://hotel-sonnora.de/wp-content/uploads/2026/10/Sonnora_speisekarte_Okt_001_WEB.pdf",
@@ -23,7 +22,6 @@
   ],
   "chef": "Clemens Rambichler",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
   "lunch": 360,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sun",
@@ -31,5 +29,7 @@
   "lunchWine": 195,
   "lunchSourceType": "site",
   "lunchSource": "https://hotel-sonnora.de/wp-content/uploads/2026/10/Sonnora_speisekarte_Okt_001_WEB.pdf",
-  "cuisineDe": "Französisch-klassisch"
+  "cuisineDe": "Französisch-klassisch",
+  "dinnerNote": "Sonnora menu, 7 courses (also à la carte)",
+  "dinnerNoteDe": "Menü Sonnora, 7 Gänge (auch à la carte)"
 }

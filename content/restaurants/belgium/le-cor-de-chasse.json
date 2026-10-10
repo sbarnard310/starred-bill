@@ -32,8 +32,8 @@
   "lunchSource": "https://www.lecordechasse.be/media/images/upload/menu-decouverte-091026.pdf",
   "cuisineFr": "Cuisine créative",
   "wine": 51,
+  "lunchWine": 51,
   "dinnerNote": "Découverte menu, 5 courses (Prestige, 6 courses, €110)",
   "dinnerNoteNl": "Menu Découverte, 5 gangen (Prestige, 6 gangen, € 110)",
-  "dinnerNoteFr": "Menu Découverte, 5 services (Prestige, 6 services, 110 €)",
-  "lunchWine": 51
+  "dinnerNoteFr": "Menu Découverte, 5 services (Prestige, 6 services, 110 €)"
 }

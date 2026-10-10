@@ -8,16 +8,15 @@
   "rating": 4.7,
   "reviews": 1013,
   "dinnerType": "menu",
-  "dinner": 395,
-  "dinnerNote": "Tasting menu",
+  "dinner": 240,
   "sourceType": "site",
-  "source": "https://www.casaperbellini.com/chefs-table/",
-  "lunch": 395,
+  "source": "https://www.casaperbellini.com/percorsi/",
+  "lunch": 240,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Sat",
   "lunchNoteIt": "Stesso menu a pranzo · mar–sab",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.casaperbellini.com/chefs-table/",
+  "lunchSource": "https://www.casaperbellini.com/percorsi/",
   "website": "https://www.casaperbellini.com",
   "lat": 45.4426941,
   "lng": 10.9961161,
@@ -28,5 +27,9 @@
     "vegetarian"
   ],
   "chef": "Giancarlo Perbellini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 120,
+  "dinnerNote": "Tasting menu (others €260 and €280; chef's table with wine €395)",
+  "dinnerNoteIt": "Percorso degustazione (altri €260 e €280; chef's table con vini €395)",
+  "lunchWine": 120
 }

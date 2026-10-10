@@ -9,7 +9,6 @@
   "reviews": 978,
   "dinnerType": "menu",
   "dinner": 335,
-  "dinnerNote": "Tasting menu",
   "wine": 190,
   "sourceType": "site",
   "source": "https://www.hisafranko.com/en/menu",
@@ -23,12 +22,13 @@
   ],
   "chef": "Ana Roš Stojan",
   "chefSource": "michelin",
-  "dinnerNoteSl": "Degustacijski meni",
   "lunch": 335,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sun",
   "lunchNoteSl": "Enak meni za kosilo · sre.–ned.",
   "lunchWine": 190,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.hisafranko.com/en/menu"
+  "lunchSource": "https://www.hisafranko.com/en/menu",
+  "dinnerNote": "Euphorest menu, lunch and dinner",
+  "dinnerNoteSl": "Meni Euphorest, kosilo in večerja"
 }

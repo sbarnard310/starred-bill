@@ -11,9 +11,6 @@
   "reviews": 859,
   "dinner": 185,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteZh": "品嚐套餐",
-  "dinnerNoteEs": "Menú degustación",
   "wine": 90,
   "sourceType": "press",
   "source": "https://yummybarcelona.com/restaurante-atempo/",
@@ -35,5 +32,7 @@
     "vegan"
   ],
   "chef": "Iñaki Aldrey",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu, 15 courses",
+  "dinnerNoteEs": "Menú degustación, 15 pases"
 }

@@ -9,8 +9,7 @@
   "reviews": 128,
   "dinner": 1995,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "wine": 1400,
+  "wine": 1000,
   "sourceType": "site",
   "source": "https://www.restaurant-mota.com/?lang=en",
   "website": "https://www.restaurant-mota.com/",
@@ -23,12 +22,13 @@
   ],
   "chef": "Claus Henriksen",
   "chefSource": "michelin",
-  "dinnerNoteDa": "Smagsmenu",
   "lunch": 1995,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sat",
   "lunchNoteDa": "Samme menu til frokost · fre.–lør.",
-  "lunchWine": 1400,
+  "lunchWine": 1000,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurant-mota.com/?lang=en"
+  "lunchSource": "https://www.restaurant-mota.com/?lang=en",
+  "dinnerNote": "Menu, 13 courses",
+  "dinnerNoteDa": "Menu, 13 serveringer"
 }

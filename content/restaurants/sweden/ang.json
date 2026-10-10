@@ -9,7 +9,6 @@
   "reviews": 143,
   "dinnerType": "menu",
   "dinner": 2900,
-  "dinnerNote": "Tasting menu",
   "wine": 2000,
   "sourceType": "site",
   "source": "https://www.restaurangang.se/menu/",
@@ -20,12 +19,13 @@
   "michelinId": "1192333",
   "chef": "Filip Gemzell",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny",
   "lunch": 2900,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Sat",
   "lunchNoteSv": "Samma meny till lunch · tis–lör",
   "lunchWine": 2000,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurangang.se/menu/"
+  "lunchSource": "https://www.restaurangang.se/menu/",
+  "dinnerNote": "Tasting menu (SEK 3,000 from January 2027)",
+  "dinnerNoteSv": "Avsmakningsmeny (3 000 kr från januari 2027)"
 }

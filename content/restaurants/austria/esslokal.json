@@ -9,10 +9,8 @@
   "reviews": 310,
   "dinnerType": "menu",
   "dinner": 178,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://esslokal.com/",
-  "wine": 178,
   "website": "https://www.esslokal.com/",
   "lat": 48.4591171,
   "lng": 15.7208653,
@@ -23,13 +21,13 @@
   ],
   "chef": "Roland Huber",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
   "lunch": 178,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sat",
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
-  "lunchWine": 178,
   "lunchSourceType": "site",
   "lunchSource": "https://esslokal.com/",
-  "cuisineDe": "Modern"
+  "cuisineDe": "Modern",
+  "dinnerNote": "Menu, 5 courses, with aperitif, wine pairing, water and coffee included",
+  "dinnerNoteDe": "5-Gang-Menü inkl. Aperitif, Weinbegleitung, Wasser und Kaffee"
 }

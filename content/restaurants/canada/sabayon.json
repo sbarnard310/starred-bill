@@ -18,9 +18,9 @@
   "michelinId": "1217435",
   "chef": "Patrice Demers",
   "chefSource": "press",
+  "noLunch": true,
   "dinnerNote": "Tasting menu, service included, prepaid",
   "dinnerNoteFr": "Menu dégustation, service compris, payé à la réservation",
-  "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteFr": "Uniquement le soir"
 }

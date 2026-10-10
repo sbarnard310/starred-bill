@@ -10,8 +10,6 @@
   "reviews": 273,
   "dinner": 195,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://lafourchettedesducs.com/carte-menus/",
   "lunch": 195,
@@ -29,5 +27,7 @@
     "vegetarian"
   ],
   "chef": "Nicolas Stamm-Corby",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Terroir Végétal menu (Libre Émotion €255; also à la carte)",
+  "dinnerNoteFr": "Menu Terroir Végétal (Libre Émotion 255 € ; aussi à la carte)"
 }

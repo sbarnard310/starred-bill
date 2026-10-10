@@ -12,7 +12,6 @@
   "reviews": 570,
   "dinnerType": "menu",
   "dinner": 198,
-  "dinnerNote": "Tasting menu",
   "wine": 142,
   "sourceType": "site",
   "source": "https://www.restaurantgron.com/menu",
@@ -28,12 +27,13 @@
   ],
   "chef": "Toni Kostian",
   "chefSource": "michelin",
-  "dinnerNoteFi": "Maistelumenu",
   "lunch": 198,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Saturdays",
   "lunchNoteFi": "Sama menu lounaalla · lauantai",
   "lunchWine": 142,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurantgron.com/menu"
+  "lunchSource": "https://www.restaurantgron.com/menu",
+  "dinnerNote": "Grön menu (vegan menu the same price, pre-order)",
+  "dinnerNoteFi": "Grön-menu (vegaaninen menu samaan hintaan, ennakkotilauksesta)"
 }

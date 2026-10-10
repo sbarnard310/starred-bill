@@ -8,7 +8,6 @@
   "reviews": 416,
   "dinnerType": "menu",
   "dinner": 220,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.restaurant-magdalena.ch/",
   "website": "https://www.restaurant-magdalena.ch/",
@@ -24,11 +23,8 @@
   ],
   "chef": "Dominik Hartmann",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Moderne Küche",
-  "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine moderne",
-  "dinnerNoteIt": "Menu degustazione",
   "lunch": 220,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sat–Sun",
@@ -37,5 +33,9 @@
   "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurant-magdalena.ch/",
-  "cuisineIt": "Moderna"
+  "cuisineIt": "Moderna",
+  "dinnerNote": "Surprise menu (wine pairing CHF 17 a glass)",
+  "dinnerNoteDe": "Überraschungsmenü (Weinbegleitung CHF 17 pro Glas)",
+  "dinnerNoteFr": "Menu surprise (accord vins 17 CHF le verre)",
+  "dinnerNoteIt": "Menu a sorpresa (abbinamento vini CHF 17 al calice)"
 }

@@ -9,8 +9,6 @@
   "reviews": 990,
   "dinnerType": "menu",
   "dinner": 270,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteEs": "Menú degustación",
   "wine": 130,
   "sourceType": "site",
   "source": "https://casamarcial.es/menu-el-cachuchu/",
@@ -31,5 +29,7 @@
     "vegan"
   ],
   "chef": "Nacho Manzano Sánchez/ Esther Manzano",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "El Cachuchu tasting menu",
+  "dinnerNoteEs": "Menú El Cachuchu"
 }

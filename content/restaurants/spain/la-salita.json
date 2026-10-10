@@ -7,12 +7,11 @@
   "rating": 4.6,
   "reviews": 2208,
   "dinnerType": "menu",
-  "dinner": 190,
-  "dinnerNote": "Tasting menu",
+  "dinner": 190.7,
   "wine": 160,
   "sourceType": "site",
   "source": "https://www.anarkiagroup.com/menus-la-salita-4",
-  "lunch": 190,
+  "lunch": 190.7,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Mon–Sat",
   "lunchWine": 160,
@@ -30,5 +29,7 @@
     "gluten-free"
   ],
   "chef": "Begoña Rodrigo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "La Salita tasting menu",
+  "dinnerNoteEs": "Menú La Salita"
 }

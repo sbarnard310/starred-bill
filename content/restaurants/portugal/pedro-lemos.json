@@ -8,7 +8,6 @@
   "reviews": 499,
   "dinnerType": "menu",
   "dinner": 180,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://pedrolemos.pt/wp-content/uploads/2026/03/Menu-PT.pdf",
   "website": "https://www.pedrolemos.net/",
@@ -22,12 +21,15 @@
   ],
   "chef": "Pedro Lemos",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação",
   "lunch": 180,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Thu–Sat",
   "lunchNotePt": "O mesmo menu ao almoço · qui.–sáb.",
   "lunchSourceType": "site",
   "lunchSource": "https://pedrolemos.pt/wp-content/uploads/2026/03/Menu-PT.pdf",
-  "cuisinePt": "Atual"
+  "cuisinePt": "Atual",
+  "wine": 120,
+  "dinnerNote": "Tasting menu (à la carte, 3 courses, €150)",
+  "dinnerNotePt": "Menu de degustação (à la carte, 3 pratos, 150 €)",
+  "lunchWine": 120
 }

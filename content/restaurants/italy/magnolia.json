@@ -9,15 +9,14 @@
   "reviews": 619,
   "dinnerType": "menu",
   "dinner": 170,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.magnoliaristorante.it/menu/",
-  "wine": 60,
+  "wine": 90,
   "lunch": 170,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sat–Sun",
   "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
-  "lunchWine": 60,
+  "lunchWine": 90,
   "lunchSourceType": "site",
   "lunchSource": "https://www.magnoliaristorante.it/menu/",
   "website": "https://www.magnoliaristorante.it/",
@@ -31,5 +30,7 @@
     "gluten-free"
   ],
   "chef": "Alberto Faccani",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu, I Classici or Magnolia (also à la carte)",
+  "dinnerNoteIt": "Menu degustazione I Classici o Magnolia (anche alla carta)"
 }

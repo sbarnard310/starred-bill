@@ -7,14 +7,12 @@
   "cuisine": "Modern British",
   "rating": 4.8,
   "reviews": 368,
-  "dinner": 175,
+  "dinner": 75,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://osiprestaurant.com/",
-  "lunch": 175,
+  "lunch": 105,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sun",
   "lunchSourceType": "site",
   "lunchSource": "https://osiprestaurant.com/",
   "website": "https://osiprestaurant.com/",
@@ -27,5 +25,7 @@
     "vegetarian"
   ],
   "chef": "Merlin Labron-Johnson",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Table d'hôte, 3 courses (tasting menu £175)",
+  "lunchNote": "Lunch menu, 5 courses (tasting menu £175)"
 }

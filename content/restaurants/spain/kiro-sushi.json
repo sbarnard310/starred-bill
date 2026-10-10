@@ -9,8 +9,6 @@
   "reviews": 534,
   "dinnerType": "menu",
   "dinner": 160,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteEs": "Menú degustación",
   "sourceType": "site",
   "source": "https://kirosushi.es/",
   "lunch": 160,
@@ -25,5 +23,7 @@
   "placeId": "ChIJQzWKFUarWg0RT_fH6n_Ao8o",
   "michelinId": "489642",
   "chef": "Félix Jiménez",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Sushi tasting menu",
+  "dinnerNoteEs": "Menú degustación de sushi"
 }

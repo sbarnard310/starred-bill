@@ -9,18 +9,16 @@
   "reviews": 421,
   "dinnerType": "menu",
   "dinner": 250,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteIt": "Menu degustazione",
   "wine": 120,
   "sourceType": "site",
-  "source": "http://www.nikoromito.com/menu-reale-casadonna/",
+  "source": "https://www.nikoromito.com/menu-reale-casadonna/",
   "lunch": 250,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch",
   "lunchNoteIt": "Stesso menu a pranzo",
   "lunchWine": 120,
   "lunchSourceType": "site",
-  "lunchSource": "http://www.nikoromito.com/menu-reale-casadonna/",
+  "lunchSource": "https://www.nikoromito.com/menu-reale-casadonna/",
   "website": "https://www.nikoromito.com/reale",
   "lat": 41.7800349,
   "lng": 14.094554,
@@ -33,5 +31,7 @@
     "gluten-free"
   ],
   "chef": "Niko Romito",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinnerNote": "Tasting menu (also à la carte, 3 dishes minimum)",
+  "dinnerNoteIt": "Menu degustazione (anche alla carta, minimo 3 portate)"
 }

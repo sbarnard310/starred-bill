@@ -9,7 +9,6 @@
   "reviews": 263,
   "dinnerType": "menu",
   "dinner": 169,
-  "dinnerNote": "Tasting menu",
   "wine": 82,
   "sourceType": "site",
   "source": "https://sattlerhof.at/michelin-restaurant-suedsteiermark/",
@@ -23,7 +22,6 @@
   ],
   "chef": "Markus Sattler",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
   "lunch": 169,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Sun",
@@ -31,5 +29,7 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Di–So",
   "lunchSourceType": "site",
   "lunchSource": "https://sattlerhof.at/michelin-restaurant-suedsteiermark/",
-  "cuisineDe": "Kreativ"
+  "cuisineDe": "Kreativ",
+  "dinnerNote": "Gourmet menu",
+  "dinnerNoteDe": "Gourmet-Menü"
 }

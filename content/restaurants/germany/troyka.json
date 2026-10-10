@@ -9,7 +9,6 @@
   "reviews": 668,
   "dinnerType": "menu",
   "dinner": 179,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.troyka.de/vegetarisches-menue",
   "website": "https://www.troyka.de/start",
@@ -22,12 +21,13 @@
   ],
   "chef": "Alexander Wulf and Marcel Kokot",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
   "lunch": 179,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Sundays",
   "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
   "lunchSourceType": "site",
   "lunchSource": "https://www.troyka.de/vegetarisches-menue",
-  "cuisineDe": "Moderne Küche"
+  "cuisineDe": "Moderne Küche",
+  "dinnerNote": "Menu",
+  "dinnerNoteDe": "Menü"
 }

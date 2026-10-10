@@ -9,7 +9,6 @@
   "reviews": 207,
   "dinnerType": "menu",
   "dinner": 195,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.archibalddeprince.lu/la-table/",
   "website": "https://www.archibalddeprince.lu",
@@ -21,9 +20,7 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine bio",
-  "dinnerNoteDe": "Degustationsmenü",
   "lunch": 195,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sun",
@@ -33,5 +30,8 @@
   "lunchSource": "https://www.archibalddeprince.lu/la-table/",
   "cuisineDe": "Bio",
   "chef": "Archibald De Prince",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Single menu",
+  "dinnerNoteFr": "Menu unique",
+  "dinnerNoteDe": "Einziges Menü"
 }

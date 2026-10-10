@@ -8,8 +8,7 @@
   "rating": 4.4,
   "reviews": 108,
   "dinnerType": "menu",
-  "dinner": 275,
-  "dinnerNote": "Tasting menu",
+  "dinner": 165,
   "sourceType": "site",
   "source": "https://www.favorite-mainz.de/en/genuss-kulinarik/sternerestaurant/",
   "website": "https://favorite-mainz.de/",
@@ -22,8 +21,7 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteDe": "Degustationsmenü",
-  "lunch": 275,
+  "lunch": 165,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sat",
   "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
@@ -31,5 +29,7 @@
   "lunchSource": "https://www.favorite-mainz.de/en/genuss-kulinarik/sternerestaurant/",
   "cuisineDe": "Mediterran",
   "chef": "Aniello Casalino",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Menu, 4 courses, with a glass of champagne (6 courses €195)",
+  "dinnerNoteDe": "4-Gang-Menü mit einem Glas Champagner (6 Gänge 195 €)"
 }

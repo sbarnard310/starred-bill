@@ -30,7 +30,7 @@
   "chef": "Giulio Gigli",
   "chefSource": "michelin",
   "wine": 35,
+  "lunchWine": 35,
   "dinnerNote": "Tasting menu, 8 courses (Orto e Conserve or Relazioni)",
-  "dinnerNoteIt": "Menu degustazione, 8 portate (Orto e Conserve o Relazioni)",
-  "lunchWine": 35
+  "dinnerNoteIt": "Menu degustazione, 8 portate (Orto e Conserve o Relazioni)"
 }

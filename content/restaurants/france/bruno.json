@@ -8,13 +8,11 @@
   "cuisine": "Classic Cuisine",
   "rating": 4.7,
   "reviews": 3124,
-  "dinner": 218,
+  "dinner": 98,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
   "sourceType": "site",
   "source": "https://www.restaurantbruno.com/menus",
-  "lunch": 218,
+  "lunch": 98,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch",
   "lunchNoteFr": "Même menu le midi",
@@ -34,5 +32,7 @@
     "kosher"
   ],
   "chef": "Benjamin Bruno",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Truffle menu (€137 or €187 with black winter truffle; full truffle menu €218)",
+  "dinnerNoteFr": "Menu truffe (137 € ou 187 € avec la truffe melanosporum ; grand menu 218 €)"
 }

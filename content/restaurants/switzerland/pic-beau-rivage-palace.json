@@ -9,7 +9,6 @@
   "reviews": 390,
   "dinnerType": "menu",
   "dinner": 450,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://www.brp.ch/media/vndilpti/programmation-automne-hiver-au-beau-rivage-palace.pdf",
   "website": "https://www.brp.ch/",
@@ -25,11 +24,8 @@
   ],
   "chef": "Jordan Theurillat",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
   "cuisineDe": "Kreativ",
-  "dinnerNoteFr": "Menu dégustation",
   "cuisineFr": "Cuisine créative",
-  "dinnerNoteIt": "Menu degustazione",
   "lunch": 450,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sun",
@@ -39,5 +35,9 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.brp.ch/media/vndilpti/programmation-automne-hiver-au-beau-rivage-palace.pdf",
   "cuisineIt": "Creativa",
-  "areaIt": "Losanna"
+  "areaIt": "Losanna",
+  "dinnerNote": "Menu, 8 courses",
+  "dinnerNoteDe": "Menü, 8 Gänge",
+  "dinnerNoteFr": "Menu en 8 séquences",
+  "dinnerNoteIt": "Menu, 8 portate"
 }

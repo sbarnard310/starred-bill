@@ -9,10 +9,9 @@
   "reviews": 224,
   "dinner": 2200,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "wine": 1600,
   "sourceType": "site",
-  "source": "https://gastrome.dk/menukort-aften/",
+  "source": "https://gastrome.dk/en/menu/",
   "website": "https://gastrome.dk/",
   "lat": 56.1870316,
   "lng": 10.2177829,
@@ -23,12 +22,13 @@
   ],
   "chef": "William Jørgensen",
   "chefSource": "press",
-  "dinnerNoteDa": "Smagsmenu",
   "lunch": 2200,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sat",
   "lunchNoteDa": "Samme menu til frokost · fre.–lør.",
   "lunchWine": 1600,
   "lunchSourceType": "site",
-  "lunchSource": "https://gastrome.dk/menukort-aften/"
+  "lunchSource": "https://gastrome.dk/en/menu/",
+  "dinnerNote": "Menu (Thursday menu DKK 1,100)",
+  "dinnerNoteDa": "Menu (torsdagsmenu 1.100 kr.)"
 }

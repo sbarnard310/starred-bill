@@ -8,7 +8,6 @@
   "reviews": 360,
   "dinnerType": "menu",
   "dinner": 175,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://noor.nl/menu/",
   "website": "https://www.noor.nl/",
@@ -20,7 +19,6 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu",
   "lunch": 175,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Saturdays",
@@ -29,5 +27,7 @@
   "lunchSource": "https://noor.nl/menu/",
   "cuisineNl": "Creatief",
   "chef": "Jeroen and Marleen Brouwer",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNote": "Menu Noor 'The Final Chapter'",
+  "dinnerNoteNl": "Menu Noor 'The Final Chapter'"
 }

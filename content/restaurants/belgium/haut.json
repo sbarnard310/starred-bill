@@ -9,7 +9,6 @@
   "reviews": 357,
   "dinnerType": "menu",
   "dinner": 195,
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://hautrestaurant.be/menu/",
   "website": "https://hautrestaurant.be/",
@@ -23,9 +22,7 @@
   ],
   "chef": "Dimitri Proost",
   "chefSource": "site",
-  "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Modern Frans",
-  "dinnerNoteFr": "Menu dégustation",
   "lunch": 195,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sat",
@@ -33,5 +30,8 @@
   "lunchNoteFr": "Même menu le midi · mer.–sam.",
   "lunchSourceType": "site",
   "lunchSource": "https://hautrestaurant.be/menu/",
-  "cuisineFr": "Cuisine française moderne"
+  "cuisineFr": "Cuisine française moderne",
+  "dinnerNote": "Menu, 6 courses (also à la carte)",
+  "dinnerNoteNl": "Zesgangenmenu (ook à la carte)",
+  "dinnerNoteFr": "Menu en 6 services (aussi à la carte)"
 }

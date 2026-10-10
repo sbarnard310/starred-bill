@@ -9,7 +9,6 @@
   "reviews": 407,
   "dinnerType": "menu",
   "dinner": 4000,
-  "dinnerNote": "Tasting menu",
   "wine": 2500,
   "sourceType": "site",
   "source": "https://vynrestaurant.se/restaurant/",
@@ -20,12 +19,13 @@
   "michelinId": "1212325",
   "chef": "Daniel Berlin",
   "chefSource": "michelin",
-  "dinnerNoteSv": "Avsmakningsmeny",
   "lunch": 4000,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Saturdays",
   "lunchNoteSv": "Samma meny till lunch · lördag",
   "lunchWine": 2500,
   "lunchSourceType": "site",
-  "lunchSource": "https://vynrestaurant.se/restaurant/"
+  "lunchSource": "https://vynrestaurant.se/restaurant/",
+  "dinnerNote": "Tasting menu (SEK 4,500 from 1 January)",
+  "dinnerNoteSv": "Avsmakningsmeny (4 500 kr från 1 januari)"
 }

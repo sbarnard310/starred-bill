@@ -7,16 +7,13 @@
   "rating": 4.7,
   "reviews": 1170,
   "dinnerType": "menu",
-  "dinner": 250,
-  "dinnerNote": "Tasting menu",
+  "dinner": 195,
   "sourceType": "site",
   "source": "https://ricardcamarena.com/",
-  "wine": 115,
-  "lunch": 250,
+  "lunch": 195,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sat",
   "lunchNoteEs": "El mismo menú al mediodía · vie–sáb",
-  "lunchWine": 115,
   "lunchSourceType": "site",
   "lunchSource": "https://ricardcamarena.com/",
   "website": "https://www.ricardcamarena.com/",
@@ -30,5 +27,7 @@
     "vegan"
   ],
   "chef": "Ricard Camarena Ivards",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Menú Carta: 3 set starters, then a main and dessert of your choice (Recorrido €220, Experience €250)",
+  "dinnerNoteEs": "Menú Carta: tres entrantes fijos, principal y postre a elegir (Recorrido 220 €, Experience 250 €)"
 }

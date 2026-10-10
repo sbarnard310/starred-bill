@@ -9,16 +9,14 @@
   "reviews": 327,
   "dinner": 155,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "wine": 100,
   "sourceType": "site",
-  "source": "https://www.unalomebygc.com/",
-  "lunch": 155,
+  "source": "https://www.unalomebygc.com/s/Tasting-Menu-130826.pdf",
+  "lunch": 60,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sun",
-  "lunchWine": 100,
+  "lunchWine": 60,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.unalomebygc.com/",
+  "lunchSource": "https://www.unalomebygc.com/s/Lunch-170926.pdf",
   "website": "https://www.unalomebygc.com/",
   "lat": 55.865632,
   "lng": -4.283787,
@@ -33,5 +31,7 @@
     "kosher"
   ],
   "chef": "Graeme Cheevers",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Tasting menu (à la carte, 3 courses, £120)",
+  "lunchNote": "Lunch menu"
 }

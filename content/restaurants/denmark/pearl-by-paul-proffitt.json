@@ -9,7 +9,6 @@
   "reviews": 43,
   "dinner": 1395,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://pearlbypaulproffitt.dk/menu-dk/",
   "website": "https://pearlbypaulproffitt.dk",
@@ -22,11 +21,12 @@
   ],
   "chef": "Paul Proffitt",
   "chefSource": "site",
-  "dinnerNoteDa": "Smagsmenu",
-  "lunch": 1395,
+  "lunch": 995,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sat",
-  "lunchNoteDa": "Samme menu til frokost · fre.–lør.",
   "lunchSourceType": "site",
-  "lunchSource": "https://pearlbypaulproffitt.dk/menu-dk/"
+  "lunchSource": "https://pearlbypaulproffitt.dk/menu-dk/",
+  "dinnerNote": "Pearl menu (Oyster menu DKK 995, Wed–Thu evenings and Fri–Sat lunch)",
+  "dinnerNoteDa": "Pearl-menu (Oyster-menu 995 kr., onsdag og torsdag aften samt fredag og lørdag frokost)",
+  "lunchNote": "Oyster menu, Fri–Sat lunch",
+  "lunchNoteDa": "Oyster-menu, fredag og lørdag frokost"
 }

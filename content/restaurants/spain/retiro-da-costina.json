@@ -9,8 +9,6 @@
   "reviews": 831,
   "dinnerType": "menu",
   "dinner": 185,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteEs": "Menú degustación",
   "sourceType": "site",
   "source": "https://retirodacostina.com/menu-degustacion/",
   "lunch": 185,
@@ -30,5 +28,7 @@
     "gluten-free"
   ],
   "chef": "Manuel García",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNote": "Costiña tasting menu",
+  "dinnerNoteEs": "Menú Costiña"
 }

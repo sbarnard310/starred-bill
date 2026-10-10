@@ -8,7 +8,6 @@
   "reviews": 72,
   "dinnerType": "menu",
   "dinner": 2650,
-  "dinnerNote": "Tasting menu",
   "wine": 1900,
   "sourceType": "site",
   "source": "https://www.restaurantergo.se/menu",
@@ -22,12 +21,8 @@
   ],
   "chef": "Petter Johansson",
   "chefSource": "site",
-  "dinnerNoteSv": "Avsmakningsmeny",
-  "lunch": 2650,
-  "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sat",
-  "lunchWine": 1900,
-  "lunchNoteSv": "Samma meny till lunch · tors–lör",
-  "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurantergo.se/menu"
+  "dinnerNote": "Seasonal tasting menu, 5 courses",
+  "dinnerNoteSv": "Säsongens avsmakningsmeny, 5 rätter",
+  "lunchNote": "Lunch menu, 3 courses · Thu–Sat; price not published",
+  "lunchNoteSv": "Lunchmeny, 3 rätter · tors–lör; pris ej publicerat"
 }

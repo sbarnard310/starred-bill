@@ -34,8 +34,8 @@
   "lunchSource": "https://levieuxchateau.be/menus/",
   "cuisineFr": "Cuisine moderne",
   "wine": 42,
+  "lunchWine": 42,
   "dinnerNote": "Côté Jardin menu, 3 courses (5 courses €135; Fri–Sat evenings 5 courses only)",
   "dinnerNoteNl": "Menu Côté Jardin, 3 gangen (5 gangen € 135; vrijdag- en zaterdagavond enkel 5 gangen)",
-  "dinnerNoteFr": "Menu Côté Jardin, 3 services (5 services 135 € ; vendredi et samedi soir, 5 services uniquement)",
-  "lunchWine": 42
+  "dinnerNoteFr": "Menu Côté Jardin, 3 services (5 services 135 € ; vendredi et samedi soir, 5 services uniquement)"
 }

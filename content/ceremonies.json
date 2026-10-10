@@ -18,8 +18,10 @@
     {
       "id": "france-monaco",
       "name": "MICHELIN Guide France & Monaco",
+      "nameFr": "Guide MICHELIN France",
       "places": ["france", "monaco"],
       "usual": "March",
+      "usualFr": "en mars",
       "results": {"page": "michelin-guide-france", "short": "France", "area": "France and Monaco", "lang": "en-US", "plural": true, "published": "2026-10-09", "keywords": ["michelin guide france"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
@@ -31,12 +33,14 @@
     {
       "id": "spain-andorra",
       "name": "MICHELIN Guide Spain & Andorra",
+      "nameEs": "Guía MICHELIN España & Andorra",
       "places": ["spain", "andorra"],
       "usual": "November",
+      "usualEs": "en noviembre",
       "results": {"page": "michelin-guide-spain", "short": "Spain", "area": "Spain and Andorra", "lang": "en-US", "plural": true, "published": "2026-10-09", "keywords": ["michelin guide spain"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
-      "next": {"date": "2026-11-24", "edition": 2027, "where": "the Palacio de Congresos, Huesca", "source": "https://www.thegourmetjournal.com/noticias/la-gala-michelin-2027-sera-en-huesca/"},
+      "next": {"date": "2026-11-24", "edition": 2027, "where": "the Palacio de Congresos, Huesca", "whereEs": "Palacio de Congresos de Huesca", "source": "https://www.thegourmetjournal.com/noticias/la-gala-michelin-2027-sera-en-huesca/"},
       "ceremonies": [
         {"date": "2025-11-25", "edition": 2026, "where": "SOHRLIN Andalucía, Málaga", "source": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todo-sobre-la-guia-michelin-espana-andorra-2026"}
       ]
@@ -57,24 +61,29 @@
     {
       "id": "italy",
       "name": "MICHELIN Guide Italy",
+      "nameIt": "Guida MICHELIN Italia",
       "places": ["italy"],
       "usual": "November",
+      "usualIt": "a novembre",
       "results": {"page": "michelin-guide-italy", "short": "Italy", "area": "Italy", "lang": "en-US", "published": "2026-10-09", "keywords": ["michelin guide italy"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
-      "next": {"date": "2026-11-12", "edition": 2027, "where": "the Teatro Municipale, Piacenza", "source": "https://www.scattidigusto.it/guida-michelin-2027-le-nuove-stelle-a-piacenza-il-12-novembre"},
+      "next": {"date": "2026-11-12", "edition": 2027, "where": "the Teatro Municipale, Piacenza", "whereIt": "Teatro Municipale di Piacenza", "source": "https://www.scattidigusto.it/guida-michelin-2027-le-nuove-stelle-a-piacenza-il-12-novembre"},
       "ceremonies": [
-        {"date": "2025-11-19", "edition": 2026, "where": "the Teatro Regio, Parma", "source": "https://guide.michelin.com/it/it/notizia/michelin-guide-ceremony/tutte-le-stelle-della-guida-michelin-italia-2026"}
+        {"date": "2025-11-19", "edition": 2026, "where": "the Teatro Regio, Parma", "whereIt": "Teatro Regio di Parma", "source": "https://guide.michelin.com/it/it/notizia/michelin-guide-ceremony/tutte-le-stelle-della-guida-michelin-italia-2026"}
       ]
     },
     {
       "id": "germany",
       "name": "MICHELIN Guide Germany",
+      "nameDe": "Guide MICHELIN Deutschland",
       "places": ["germany"],
       "usual": "June",
+      "usualDe": "im Juni",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "note": "Frankfurt is due to host again in 2027.",
+      "noteDe": "Frankfurt richtet die Gala 2027 erneut aus.",
       "ceremonies": [
         {"date": "2026-06-23", "where": "the Palmengarten, Frankfurt", "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/the-michelin-guide-germany-2026-is-out"},
         {"date": "2025-06-17", "where": "the Palmengarten, Frankfurt", "source": "https://guide.michelin.com/de/de/article/michelin-guide-ceremony/alle-sternerestaurants---guide-michelin-deutschland-2025"}
@@ -83,8 +92,14 @@
     {
       "id": "switzerland",
       "name": "MICHELIN Guide Switzerland",
+      "nameFr": "Guide MICHELIN Suisse",
+      "nameDe": "Guide MICHELIN Schweiz",
+      "nameIt": "Guida MICHELIN Svizzera",
       "places": ["switzerland", "liechtenstein"],
       "usual": "October or November",
+      "usualFr": "en octobre ou en novembre",
+      "usualDe": "im Oktober oder November",
+      "usualIt": "tra ottobre e novembre",
       "results": {"page": "michelin-guide-switzerland", "short": "Switzerland", "area": "Switzerland and Liechtenstein", "lang": "en-US", "plural": true, "published": "2026-10-09", "keywords": ["michelin guide switzerland"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
@@ -96,8 +111,10 @@
     {
       "id": "austria",
       "name": "MICHELIN Guide Austria",
+      "nameDe": "Guide MICHELIN Österreich",
       "places": ["austria"],
       "usual": "January to March",
+      "usualDe": "zwischen Januar und März",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -108,12 +125,16 @@
     {
       "id": "belgium-luxembourg",
       "name": "MICHELIN Guide Belgium & Luxembourg",
+      "nameFr": "Guide MICHELIN Belgique & Luxembourg",
+      "nameDe": "Guide MICHELIN Belgien & Luxemburg",
       "places": ["belgium", "luxembourg"],
       "usual": "April or May",
+      "usualFr": "en avril ou en mai",
+      "usualDe": "im April oder Mai",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2026-05-04", "where": "the Handelsbeurs, Antwerp", "source": "https://guide.michelin.com/be/fr/article/news-and-views/anvers-ville-hote-de-la-ceremonie-du-guide-michelin"}
+        {"date": "2026-05-04", "where": "the Handelsbeurs, Antwerp", "whereFr": "Handelsbeurs, Anvers", "whereDe": "Handelsbeurs, Antwerpen", "source": "https://guide.michelin.com/be/fr/article/news-and-views/anvers-ville-hote-de-la-ceremonie-du-guide-michelin"}
       ]
     },
     {
@@ -281,12 +302,15 @@
     {
       "id": "tokyo",
       "name": "MICHELIN Guide Tokyo",
+      "nameJa": "ミシュランガイド東京",
       "places": ["tokyo"],
       "usual": "September or October, moving to February from 2027",
+      "usualJa": "9月か10月（2027年からは2月）",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "note": "For the guide's 20 years in Japan, Tokyo, Kyoto & Osaka and Nara share one ceremony in Tokyo in February 2027.",
-      "next": {"date": "2027-02-16", "where": "Tokyo", "source": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-ceremony-tokyo-kyoto-osaka-nara-2027-selection-save-the-date"},
+      "noteJa": "日本上陸20周年を記念し、2027年2月には東京、京都・大阪、奈良のガイドが東京で合同のセレモニーを開きます。",
+      "next": {"date": "2027-02-16", "where": "Tokyo", "whereJa": "東京", "source": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-ceremony-tokyo-kyoto-osaka-nara-2027-selection-save-the-date"},
       "ceremonies": [
         {"date": "2025-09-25", "source": "https://guide.michelin.com/jp/en/article/michelin-guide-ceremony/michelin-guide-tokyo-2026-stars-reveal"}
       ]
@@ -294,25 +318,31 @@
     {
       "id": "kyoto-osaka",
       "name": "MICHELIN Guide Kyoto & Osaka",
+      "nameJa": "ミシュランガイド京都・大阪",
       "places": ["kyoto", "osaka"],
       "usual": "April, moving to February from 2027",
+      "usualJa": "4月（2027年からは2月）",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "note": "For the guide's 20 years in Japan, Tokyo, Kyoto & Osaka and Nara share one ceremony in Tokyo in February 2027.",
-      "next": {"date": "2027-02-16", "where": "Tokyo", "source": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-ceremony-tokyo-kyoto-osaka-nara-2027-selection-save-the-date"},
+      "noteJa": "日本上陸20周年を記念し、2027年2月には東京、京都・大阪、奈良のガイドが東京で合同のセレモニーを開きます。",
+      "next": {"date": "2027-02-16", "where": "Tokyo", "whereJa": "東京", "source": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-ceremony-tokyo-kyoto-osaka-nara-2027-selection-save-the-date"},
       "ceremonies": [
-        {"date": "2026-04-23", "where": "The Ritz-Carlton, Osaka", "source": "https://guide.michelin.com/qa/en/article/michelin-guide-ceremony/michelin-guide-kyoto-osaka-2026-stars-reveal"}
+        {"date": "2026-04-23", "where": "The Ritz-Carlton, Osaka", "whereJa": "ザ・リッツ・カールトン大阪", "source": "https://guide.michelin.com/qa/en/article/michelin-guide-ceremony/michelin-guide-kyoto-osaka-2026-stars-reveal"}
       ]
     },
     {
       "id": "nara",
       "name": "MICHELIN Guide Nara",
+      "nameJa": "ミシュランガイド奈良",
       "places": ["nara"],
       "usual": "February from 2027",
+      "usualJa": "2月（2027年から）",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "note": "Nara's stars are next revealed alongside Tokyo's and Kyoto & Osaka's.",
-      "next": {"date": "2027-02-16", "where": "Tokyo", "source": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-ceremony-tokyo-kyoto-osaka-nara-2027-selection-save-the-date"},
+      "noteJa": "奈良の星は次回、東京、京都・大阪の星と同時に発表されます。",
+      "next": {"date": "2027-02-16", "where": "Tokyo", "whereJa": "東京", "source": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-ceremony-tokyo-kyoto-osaka-nara-2027-selection-save-the-date"},
       "ceremonies": []
     },
     {
@@ -648,8 +678,10 @@
     {
       "id": "quebec",
       "name": "MICHELIN Guide Québec",
+      "nameFr": "Guide MICHELIN Québec",
       "places": ["quebec"],
       "usual": "May",
+      "usualFr": "en mai",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -660,8 +692,10 @@
     {
       "id": "mexico",
       "name": "MICHELIN Guide Mexico",
+      "nameEs": "Guía MICHELIN México",
       "places": ["mexico"],
       "usual": "May",
+      "usualEs": "en mayo",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -683,8 +717,10 @@
     {
       "id": "buenos-aires-mendoza",
       "name": "MICHELIN Guide Buenos Aires & Mendoza",
+      "nameEs": "Guía MICHELIN Buenos Aires & Mendoza",
       "places": ["argentina"],
       "usual": "April to July",
+      "usualEs": "entre abril y julio",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [

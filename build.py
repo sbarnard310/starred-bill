@@ -2166,7 +2166,7 @@ def fact_card(title, count, paragraphs, extra=""):
 # search engines the page is kept up to date and answers "new Michelin stars in London". A page several guides cover
 # (the United States, Japan) gives each guide's changes, newest first. Worked out from change, changeDate and status
 # on the restaurants and the ceremonies in content/ceremonies.json. Wording: nw… and cer… in src/faq-words.json.
-NEW_STARS_LANGS = ("en",)  # add a language once its nw… and cer… words are translated
+NEW_STARS_LANGS = ("en", "fr", "es", "it", "de", "ja")  # add a language once its nw… and cer… words are translated
 NEW_STARS_NAMES = 10       # restaurants named in a sentence before "and 4 more"
 
 
@@ -2181,9 +2181,9 @@ def guide_changes(g, rs):
     return [r for r in rs if changed(r)]
 
 
-def changes_text(now, w, say, when):
+def changes_text(now, k, say, when):
     """What a guide changed, as sentences: new, promoted, dropped a star, lost their stars, closed. Names link to
-    restaurants' own pages where they have one."""
+    restaurants' own pages where they have one (English pages; the restaurant pages are English only)."""
     alpha = lambda r: unicodedata.normalize("NFKD", r["name"]).encode("ascii", "ignore").decode().lower()  # Èter among the Es
     group = lambda test: sorted((r for r in now if test(r)), key=lambda r: (-r["stars"], -r.get("formerStars", 0), alpha(r)))
     new = group(lambda r: r.get("change") == "new" and not r.get("status"))
@@ -2191,44 +2191,113 @@ def changes_text(now, w, say, when):
     down = group(lambda r: r.get("change") == "down" and not r.get("status"))
     lost = group(lambda r: r.get("status") in ("lost", "changed"))
     closed = group(lambda r: r.get("status") == "closed")
-    names = lambda rs: and_names((f'<a href="{e(r["page"])}">{e(r["name"])}</a>' if r.get("page") else e(r["name"]) for r in rs), w)
+    names = lambda rs: k.join((k.name_html(r) for r in rs), html_mode=True)
+    # Star levels as a newcomer's or a promotion's (German "zwei Sterne", where the FAQ's star2 is "zwei Sternen").
+    stars = lambda n: k.own.get(f"nwStar{n}") or k.w[f"star{n}"]
+    one = lambda key, rs: key + "One" if len(rs) == 1 and key + "One" in k.own else key  # nwUpOne, nwUpFirstOne
     text = []
     if new:
         shown = new if len(new) <= NEW_STARS_NAMES + 1 else new[:NEW_STARS_NAMES]
         # A newcomer with two or three stars says so, which also explains why it comes first.
-        listed = and_names([names([r]) + (e(w["nwNewStars"].replace("{stars}", w["star" + str(r["stars"])])) if r["stars"] > 1 else "") for r in shown]
-                           + ([e(w["nwMore"].replace("{m}", str(len(new) - len(shown))))] if len(shown) < len(new) else []), w)
+        listed = k.join([names([r]) + (e(k.w["nwNewStars"].replace("{stars}", stars(r["stars"]))) if r["stars"] > 1 else "") for r in shown]
+                        + ([e(k.w["nwMore"].replace("{m}", str(len(new) - len(shown))))] if len(shown) < len(new) else []), html_mode=True)
         text.append(say("nwNewOne" if len(new) == 1 else "nwNewText", when=when, k=len(new), names=listed))
     if up:
-        text.append(say("nwUpText" if new else "nwUpFirst", when=when, names=and_plain([e(w["nwTo"].replace("{stars}", w["star" + str(st)])).replace("{r}", names([r for r in up if r["stars"] == st]))
-                                                     for st in (3, 2) if any(r["stars"] == st for r in up)], w)))
+        text.append(say(one("nwUpText" if new else "nwUpFirst", up), when=when, names=and_plain(
+            [e(k.w["nwTo"].replace("{stars}", stars(st))).replace("{r}", names([r for r in up if r["stars"] == st]))
+             for st in (3, 2) if any(r["stars"] == st for r in up)], {"and": e(k.w["and"])})))
     for rs, key in ((down, "nwDown"), (lost, "nwLost"), (closed, "nwClosed")):
         if rs:
             text.append(say(key + ("One" if len(rs) == 1 else "Text"), names=names(rs)))
     return text, bool(new or up)
 
 
-def ceremony_card(g, w, say, lang):
+def month_words(ym, lang):
+    """"March 2026", "mars 2026", "marzo de 2026", "2026年3月": a month written out, from fullMonths/fullMonth in
+    src/faq-words.json (long_month() for a language without them)."""
+    w = FAQ_WORDS.get(lang, {})
+    if lang == "en" or "fullMonth" not in w or not re.fullmatch(r"\d{4}-\d{2}", ym or ""):
+        return long_month(ym, lang)
+    m = int(ym[5:])
+    return w["fullMonth"].replace("{month}", w["fullMonths"][m - 1] if "fullMonths" in w else "").replace("{mn}", str(m)).replace("{y}", ym[:4])
+
+
+def date_words(d, lang):
+    """"16 March 2026", "1er mars 2026", "16. März 2026", "2026年3月16日" (fullDate, fullDayOne in src/faq-words.json)."""
+    w = FAQ_WORDS.get(lang, {})
+    if lang == "en" or "fullDate" not in w or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", d or ""):
+        return long_date(d, lang)
+    m, day = int(d[5:7]), int(d[8:])
+    return (w["fullDate"].replace("{month}", w["fullMonths"][m - 1] if "fullMonths" in w else "").replace("{mn}", str(m))
+            .replace("{d}", w.get("fullDayOne", "1") if day == 1 else str(day)).replace("{y}", d[:4]))
+
+
+def on_date(d, lang):
+    """A date as "on <date>" reads in a sentence: onDate in src/faq-words.json ("am 16. März 2026", Italian "il 16 marzo
+    2026" but "l'8 marzo" and "l'11 marzo", onDateVowel)."""
+    w = FAQ_WORDS.get(lang, {})
+    text = date_words(d, lang)
+    vowel = w.get("onDateVowel") and int(d[8:]) in (8, 11)
+    return w.get("onDateVowel" if vowel else "onDate", "{date}").replace("{date}", text)
+
+
+def english_link(href, text, k):
+    """A link from a page in another language to one in English only, with the EN tag (as translated guides do)."""
+    if k.lang == "en":
+        return f'<a href="{href}">{e(text)}</a>'
+    return (f'<a href="{href}" hreflang="en">{e(text)}<span class="lang-tag" aria-hidden="true">EN</span>'
+            f'<span class="sr-only"> ({e(k.w["inEnglish"])})</span></a>')
+
+
+def ceremony_words(g, lang):
+    """A ceremony guide's name, usual month and note in a language: nameFr, usualDe, noteJa… in content/ceremonies.json.
+    Other languages leave out what isn't translated (the English name stands in for the guide's)."""
+    if lang == "en":
+        return g["name"], g.get("usual"), g.get("note")
+    sfx = lang[0].upper() + lang[1:]
+    return pick_lang(g, "name", lang), g.get("usual" + sfx), g.get("note" + sfx)
+
+
+def ceremony_where(c, lang):
+    """Where a ceremony was held, in a language (whereDe…), without English's leading "the" in other languages."""
+    where = pick_lang(c, "where", lang)
+    return where if lang == "en" else re.sub(r"^the ", "", where)
+
+
+def ceremony_card(g, k, say, lang):
     """When a guide's stars are announced: the latest ceremony, the next (or when it's due) and the past few."""
     last = g["last"]
-    text = [say("cerText", guide=e(g["name"]), usual=e(g["usual"]))]
+    name, usual, note = ceremony_words(g, lang)
+    text = [say("cerText", guide=e(name), usual=e(usual)) if usual else say("cerTextNoUsual", guide=e(name))]
     key = "cerLastOnline" if last.get("online") else "cerLast" if last.get("where") else "cerLastNoPlace"
-    text.append(say(key, date=long_date(last["date"], lang), where=e(last.get("where", ""))))
+    text.append(say(key, date=date_words(last["date"], lang), onDate=on_date(last["date"], lang), where=e(ceremony_where(last, lang))))
     nxt = g.get("coming")
     if nxt:
-        text.append(say("cerNext" if nxt.get("where") else "cerNextNoPlace", date=long_date(nxt["date"], lang), where=e(nxt.get("where", ""))))
+        text.append(say("cerNext" if nxt.get("where") else "cerNextNoPlace", date=date_words(nxt["date"], lang),
+                        onDate=on_date(nxt["date"], lang), where=e(ceremony_where(nxt, lang))))
     elif g.get("due"):
-        text.append(say("cerDue", month=long_month(g["due"][:7], lang)))
-    if g.get("note"):
-        text.append(e(g["note"]))
+        text.append(say("cerDue", month=month_words(g["due"][:7], lang)))
+    if note:
+        text.append(e(note))
     # Every guide's dates are on the ceremony dates guide, its row for this one marked #cer-<id>.
     if "michelin-guide-ceremony-dates" in guides:
-        text.append(e(w["cerAll"]).replace("{link}", f'<a href="/guides/michelin-guide-ceremony-dates/#cer-{e(g["id"])}">{e(w["cerAllLink"])}</a>'))
+        text.append(e(k.w["cerAll"]).replace("{link}", english_link(f'/guides/michelin-guide-ceremony-dates/#cer-{e(g["id"])}', k.w["cerAllLink"], k)))
     past = [last] + [c for c in g.get("ceremonies", []) if c is not last and c.get("date") != last["date"]]
-    rows = "".join(f'<li>{long_date(c["date"], lang)}'
-                   + (" · " + e(w["cerOnline"]) if c.get("online") else " · " + e(re.sub(r"^the ", "", c["where"])) if c.get("where") else "") + "</li>"
+    rows = "".join(f'<li>{date_words(c["date"], lang)}'
+                   + (" · " + e(k.w["cerOnline"]) if c.get("online") else " · " + e(re.sub(r"^the ", "", ceremony_where(c, lang))) if c.get("where") else "") + "</li>"
                    for c in past[:4])
-    return fact_card(say("cerTitle"), None, [" ".join(text)], f'<p class="past-label">{e(w["cerPast"])}</p><ul class="past">{rows}</ul>')
+    return fact_card(say("cerTitle"), None, [k.gap.join(text)], f'<p class="past-label">{e(k.w["cerPast"])}</p><ul class="past">{rows}</ul>')
+
+
+def results_text(g, k):
+    """"Every change, with prices: the MICHELIN Guide Singapore 2026 results." Other languages link to the English
+    results page by the guide's name in their own words (nwResultsLink), with the EN tag."""
+    gid = results_page(g)
+    if k.lang == "en":
+        link = results_link(g)
+    else:
+        link = english_link(f"/guides/{gid}/", k.w["nwResultsLink"].replace("{guide}", ceremony_words(g, k.lang)[0]), k)
+    return e(k.w["nwResults"]).replace("{link}", link)
 
 
 def new_stars_html(p, page, lang):
@@ -2236,8 +2305,8 @@ def new_stars_html(p, page, lang):
     rs_all = members(p)
     if lang not in NEW_STARS_LANGS or not any(not r.get("status") for r in rs_all):
         return ""
-    w = pilot_words(lang)
-    say = lambda key, **v: say_in(w, key, page, **{k: (n_word(x, lang) if isinstance(x, int) else x) for k, x in v.items()})
+    k = FaqWords(page, lang)
+    say = lambda key, **v: k.say_html(key, **{n: (n_word(x, lang) if isinstance(x, int) else x) for n, x in v.items()})
     found = []
     for g in ceremony_guides():
         rs = [r for r in rs_all if set(g.get("places", [])) & set(r["_chain"])]
@@ -2248,41 +2317,43 @@ def new_stars_html(p, page, lang):
         return ""
     if len(found) == 1:
         g, rs = found[0]
-        when = long_month(g["last"]["date"][:7], lang)
+        when = month_words(g["last"]["date"][:7], lang)
         now = guide_changes(g, rs)
         cards = []
         if g["status"]:
             title = say("nwTitleNone", when=when)
-            cards.append(fact_card(say("nwWhat", when=when), None, [say("nwUpdating", when=when, date=long_date(g["last"]["date"], lang))]))
+            cards.append(fact_card(say("nwWhat", when=when), None, [say("nwUpdating", when=when, date=date_words(g["last"]["date"], lang),
+                                                                         onDate=on_date(g["last"]["date"], lang))]))
         elif now is None:
             title = say("cerTitle")
         else:
-            text, gained = changes_text(now, w, say, when) if now else ([say("nwNone", when=when)], False)
+            text, gained = changes_text(now, k, say, when) if now else ([say("nwNone", when=when)], False)
             if results_page(g):
-                text.append(e(w["nwResults"]).replace("{link}", results_link(g)))
+                text.append(results_text(g, k))
             title = say("nwTitle" if gained else "nwTitleChanges" if now else "nwTitleNone", when=when)
-            cards.append(fact_card(say("nwWhat", when=when), None, [" ".join(text)]))
-        cards.append(ceremony_card(g, w, say, lang))
-        return page_section("latest", w["nwEyebrow"], title, "", '<div class="facts">' + "".join(cards) + "</div>")
+            cards.append(fact_card(say("nwWhat", when=when), None, [k.gap.join(text)]))
+        cards.append(ceremony_card(g, k, say, lang))
+        return page_section("latest", k.w["nwEyebrow"], title, "", '<div class="facts">' + "".join(cards) + "</div>")
     cards = []
     for g, rs in found:
-        when = long_month(g["last"]["date"][:7], lang)
+        when = month_words(g["last"]["date"][:7], lang)
         now = guide_changes(g, rs)
         if g["status"]:
-            text = [say("nwUpdating", when=when, date=long_date(g["last"]["date"], lang))]
+            text = [say("nwUpdating", when=when, date=date_words(g["last"]["date"], lang), onDate=on_date(g["last"]["date"], lang))]
         elif now is None:
             continue
         else:
-            text = changes_text(now, w, say, when)[0] if now else [say("nwGuideNone")]
+            text = changes_text(now, k, say, when)[0] if now else [say("nwGuideNone")]
             if results_page(g):
-                text.append(e(w["nwResults"]).replace("{link}", results_link(g)))
-        cards.append(fact_card(say("nwGuide", guide=re.sub(r"^MICHELIN Guide ", "", g["name"]), when=when), None, [" ".join(text)]))
+                text.append(results_text(g, k))
+        name = ceremony_words(g, lang)[0]
+        cards.append(fact_card(say("nwGuide", guide=e(re.sub(r"^MICHELIN Guide ", "", g["name"])), guideFull=e(name), when=when), None, [k.gap.join(text)]))
     if not cards:
         return ""
-    intro = e(say("nwMany", k=len(found)))
+    intro = say("nwMany", k=len(found))
     if "michelin-guide-ceremony-dates" in guides:
-        intro += " " + e(w["cerAll"]).replace("{link}", f'<a href="/guides/michelin-guide-ceremony-dates/">{e(w["cerAllLink"])}</a>')
-    return page_section("latest", w["nwEyebrow"], say("nwTitleMany"), intro, '<div class="facts">' + "".join(cards) + "</div>")
+        intro += k.gap + e(k.w["cerAll"]).replace("{link}", english_link("/guides/michelin-guide-ceremony-dates/", k.w["cerAllLink"], k))
+    return page_section("latest", k.w["nwEyebrow"], say("nwTitleMany"), intro, '<div class="facts">' + "".join(cards) + "</div>")
 
 
 def pilot_sections(p, page, starred, lang):

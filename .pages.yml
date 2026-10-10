@@ -2014,6 +2014,61 @@ content:
             label: Note
             description: An extra sentence shown under the guide's name, e.g. where next year's ceremony will be.
             type: text
+          - name: nameFr
+            label: Guide name in French
+            description: For destination pages in French, e.g. "Guide MICHELIN Suisse". Leave empty to show the English name.
+            type: string
+          - name: usualFr
+            label: Usual month in French
+            description: With its preposition, e.g. "en mars" or "en octobre ou en novembre".
+            type: string
+          - name: noteFr
+            label: Note in French
+            type: text
+          - name: nameEs
+            label: Guide name in Spanish
+            description: For destination pages in Spanish, e.g. "Guía MICHELIN México". Leave empty to show the English name.
+            type: string
+          - name: usualEs
+            label: Usual month in Spanish
+            description: With its preposition, e.g. "en mayo" or "entre abril y julio".
+            type: string
+          - name: noteEs
+            label: Note in Spanish
+            type: text
+          - name: nameIt
+            label: Guide name in Italian
+            description: For destination pages in Italian, e.g. "Guida MICHELIN Italia". Leave empty to show the English name.
+            type: string
+          - name: usualIt
+            label: Usual month in Italian
+            description: With its preposition, e.g. "a novembre" or "tra ottobre e novembre".
+            type: string
+          - name: noteIt
+            label: Note in Italian
+            type: text
+          - name: nameDe
+            label: Guide name in German
+            description: For destination pages in German, e.g. "Guide MICHELIN Deutschland". Leave empty to show the English name.
+            type: string
+          - name: usualDe
+            label: Usual month in German
+            description: With its preposition, e.g. "im Juni" or "zwischen Januar und März".
+            type: string
+          - name: noteDe
+            label: Note in German
+            type: text
+          - name: nameJa
+            label: Guide name in Japanese
+            description: For destination pages in Japanese, e.g. "ミシュランガイド東京". Leave empty to show the English name.
+            type: string
+          - name: usualJa
+            label: Usual month in Japanese
+            description: e.g. "9月か10月" (no particle).
+            type: string
+          - name: noteJa
+            label: Note in Japanese
+            type: text
           - name: starsUpdated
             label: Our stars updated
             description: The day our restaurant files caught up with this guide's latest stars (year-month-day). Until then the page says "We're updating our pages".
@@ -2042,6 +2097,11 @@ content:
               - { name: date, label: Date, type: string, pattern: { regex: '^\d{4}-\d{2}-\d{2}$', message: "Use year-month-day, e.g. 2026-11-24" } }
               - { name: edition, label: Guide year (only if not the ceremony's year), description: "The year the guide is named for, only when Michelin names it for the next year, e.g. 2027 for Italy's November 2026 ceremony. Page titles show this year from the ceremony day.", type: number }
               - { name: where, label: Where, description: 'e.g. "the Palacio de Congresos, Huesca"', type: string }
+              - { name: whereFr, label: Where in French (if the English name won't do), type: string }
+              - { name: whereEs, label: Where in Spanish (if the English name won't do), type: string }
+              - { name: whereIt, label: Where in Italian (if the English name won't do), type: string }
+              - { name: whereDe, label: Where in German (if the English name won't do), type: string }
+              - { name: whereJa, label: Where in Japanese (if the English name won't do), type: string }
               - { name: online, label: Online only (no ceremony), type: boolean }
               - { name: source, label: Source link, type: string }
           - name: ceremonies
@@ -2052,5 +2112,10 @@ content:
               - { name: date, label: Date, type: string, pattern: { regex: '^\d{4}-\d{2}-\d{2}$', message: "Use year-month-day, e.g. 2026-02-09" } }
               - { name: edition, label: Guide year (only if not the ceremony's year), description: "The year the guide is named for, only when Michelin names it for the next year, e.g. 2027 for Italy's November 2026 ceremony. Page titles show this year from the ceremony day.", type: number }
               - { name: where, label: Where, type: string }
+              - { name: whereFr, label: Where in French (if the English name won't do), type: string }
+              - { name: whereEs, label: Where in Spanish (if the English name won't do), type: string }
+              - { name: whereIt, label: Where in Italian (if the English name won't do), type: string }
+              - { name: whereDe, label: Where in German (if the English name won't do), type: string }
+              - { name: whereJa, label: Where in Japanese (if the English name won't do), type: string }
               - { name: online, label: Online only (no ceremony), type: boolean }
               - { name: source, label: Source link, type: string }

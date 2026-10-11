@@ -1,0 +1,282 @@
+<title>Starred Bill Email Signature</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: a forest-green masthead like the site's, then the form and a white "email" preview side by side, steps below. */
+:root {
+  --bg: #F3F5F0;
+  --fg: #12261C;
+  --muted: #4A5E52;
+  --line: #D5E0D6;
+  --panel: #FFFFFF;
+  --green: #10362A;
+  --green-btn: #1E6142;
+  --cream: #F5F0E4;
+  --gold: #B3862B;
+  --gold-soft: #E0B85C;
+  --field: #FFFFFF;
+  --display: "Gloock", Georgia, "Times New Roman", serif;
+  --body: "Figtree", -apple-system, "Segoe UI", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0B1F18; --fg: #EAF0EA; --muted: #A9C8B4; --line: #24443A; --panel: #12302A;
+  --green: #081A14; --green-btn: #2E7D57; --field: #0F2821; --gold: #E0B85C; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0B1F18; --fg: #EAF0EA; --muted: #A9C8B4; --line: #24443A; --panel: #12302A;
+  --green: #081A14; --green-btn: #2E7D57; --field: #0F2821; --gold: #E0B85C; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.55; }
+.mast { background: var(--green); color: var(--cream); padding: 28px 16px 26px; }
+.mast-in, main { max-width: 1040px; margin: 0 auto; }
+.mast .eyebrow { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-soft); font-weight: 600; margin: 0 0 6px; }
+.mast h1 { font-family: var(--display); font-weight: 400; font-size: clamp(28px, 5vw, 40px); line-height: 1.1; margin: 0 0 8px; text-wrap: balance; }
+.mast p { margin: 0; max-width: 62ch; color: #D9E5DC; }
+main { padding: 28px 16px 56px; display: grid; gap: 36px; }
+
+.work { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 28px; align-items: start; }
+@media (max-width: 760px) { .work { grid-template-columns: minmax(0, 1fr); } .preview-col { order: -1; } }
+
+form { display: grid; gap: 14px; }
+label { display: grid; gap: 4px; font-size: 14px; font-weight: 600; }
+label small { font-weight: 400; color: var(--muted); }
+input[type=text], input[type=email], input[type=tel] {
+  font: inherit; font-size: 15px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--field); color: var(--fg); width: 100%;
+}
+input:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.check { display: flex; gap: 8px; align-items: center; font-weight: 500; }
+
+.tabs { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+.tab { font: inherit; font-size: 14px; font-weight: 600; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--fg); cursor: pointer; }
+.tab[aria-selected="true"] { background: var(--green-btn); border-color: var(--green-btn); color: #fff; }
+
+/* The preview is always a white email, whatever the page theme, because that's where the signature lives. */
+.email { background: #FFFFFF; color: #12261C; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.email-head { padding: 10px 16px; border-bottom: 1px solid #E6ECE6; font-size: 13px; color: #5A6E62; display: flex; gap: 6px; flex-wrap: wrap; }
+.email-body { padding: 18px 16px 24px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; overflow-x: auto; }
+.email-body p { margin: 0 0 14px; }
+
+.actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+.btn { font: inherit; font-weight: 700; font-size: 15px; padding: 11px 22px; border-radius: 999px; border: 0; background: var(--green-btn); color: #fff; cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); font-weight: 600; }
+.status { font-size: 14px; color: var(--muted); min-height: 1.4em; }
+
+h2 { font-family: var(--display); font-weight: 400; font-size: 26px; margin: 0 0 4px; }
+.lede { margin: 0 0 16px; color: var(--muted); max-width: 65ch; }
+details { border-top: 1px solid var(--line); }
+details:last-of-type { border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; padding: 14px 0; font-weight: 700; font-size: 17px; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--gold); font-size: 22px; line-height: 1; }
+details[open] summary::after { content: "–"; }
+ol { margin: 0 0 18px; padding-left: 1.4em; max-width: 68ch; display: grid; gap: 6px; }
+kbd { font-family: var(--body); font-size: 13px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; padding: 0 5px; background: var(--panel); }
+b.ui { font-weight: 700; }
+.note { font-size: 14px; color: var(--muted); max-width: 68ch; }
+</style>
+
+<header class="mast">
+  <div class="mast-in">
+    <p class="eyebrow">The Starred Bill</p>
+    <h1>Your email signature</h1>
+    <p>Check your details, press <b>Copy signature</b>, then paste it into your email settings. The steps for Gmail, Apple Mail and Outlook are below.</p>
+  </div>
+</header>
+
+<main>
+  <section class="work">
+    <form id="f" autocomplete="off">
+      <label for="name">Your name
+        <input type="text" id="name" value="Sam Barnard">
+      </label>
+      <label for="role">Job title
+        <input type="text" id="role" value="Founder">
+      </label>
+      <label for="mail">Email address
+        <input type="email" id="mail" value="sam@starredbill.com">
+      </label>
+      <label for="phone">Phone <small>(optional, leave blank to hide)</small>
+        <input type="tel" id="phone" value="" placeholder="+44 7700 900000">
+      </label>
+      <label class="check" for="tag"><input type="checkbox" id="tag" checked> Show the tagline</label>
+      <button type="button" class="btn ghost" id="reset">Put the details back</button>
+    </form>
+
+    <div class="preview-col">
+      <div class="tabs" role="tablist" aria-label="Which signature">
+        <button type="button" class="tab" role="tab" id="t-full" aria-selected="true">New emails</button>
+        <button type="button" class="tab" role="tab" id="t-short" aria-selected="false">Replies (shorter)</button>
+      </div>
+      <div class="email">
+        <div class="email-head"><span>To: a restaurant</span><span>·</span><span>Subject: Your tasting menu prices</span></div>
+        <div class="email-body">
+          <p>Many thanks,</p>
+          <div id="sig"></div>
+        </div>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn" id="copy">Copy signature</button>
+        <span class="status" id="status" role="status"></span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Add it to your email</h2>
+    <p class="lede">Do these on a computer. Copy first, then follow the steps for the email program you use. The little receipt logo is loaded from starredbill.com, so it shows for everyone you write to.</p>
+
+    <details open>
+      <summary>Gmail (in a web browser)</summary>
+      <ol>
+        <li>On this page, press <b class="ui">Copy signature</b>.</li>
+        <li>In Gmail, click the gear icon at the top right, then <b class="ui">See all settings</b>.</li>
+        <li>Stay on the <b class="ui">General</b> tab and scroll down to <b class="ui">Signature</b>. Click <b class="ui">Create new</b> and call it <i>Starred Bill</i>.</li>
+        <li>Click inside the big box on the right and press <kbd>⌘</kbd> <kbd>V</kbd> (<kbd>Ctrl</kbd> <kbd>V</kbd> on Windows).</li>
+        <li>Under <b class="ui">Signature defaults</b>, pick <i>Starred Bill</i> for <b class="ui">For new emails use</b>. For replies, either pick the same one, or copy the shorter version here as a second signature called <i>Starred Bill reply</i> and pick that for <b class="ui">On reply/forward use</b>.</li>
+        <li>Scroll to the very bottom and click <b class="ui">Save Changes</b>.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>Apple Mail (on a Mac)</summary>
+      <ol>
+        <li>On this page, press <b class="ui">Copy signature</b>.</li>
+        <li>In Mail, open the <b class="ui">Mail</b> menu, then <b class="ui">Settings</b>, then the <b class="ui">Signatures</b> tab.</li>
+        <li>Click your starredbill.com account on the left, then the <b class="ui">+</b> button under the middle list. Name it <i>Starred Bill</i>.</li>
+        <li>Untick <b class="ui">Always match my default message font</b>.</li>
+        <li>Click in the box on the right, select the text Mail put there and press <kbd>⌘</kbd> <kbd>V</kbd>.</li>
+        <li>At the bottom, set <b class="ui">Choose Signature</b> to <i>Starred Bill</i>, then close the window. It saves by itself.</li>
+      </ol>
+      <p class="note">If the logo shows as a small blue question mark, that's Mail waiting to load it. It appears in emails you send.</p>
+    </details>
+
+    <details>
+      <summary>Outlook</summary>
+      <ol>
+        <li>On this page, press <b class="ui">Copy signature</b>.</li>
+        <li>In Outlook, open <b class="ui">Settings</b> (the gear), then <b class="ui">Accounts</b>, then <b class="ui">Signatures</b>.</li>
+        <li>Click <b class="ui">New signature</b>, name it <i>Starred Bill</i>, click in the box and press <kbd>⌘</kbd> <kbd>V</kbd> (<kbd>Ctrl</kbd> <kbd>V</kbd> on Windows).</li>
+        <li>Choose it for <b class="ui">new messages</b> and <b class="ui">replies/forwards</b>, then click <b class="ui">Save</b>.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>On your phone</summary>
+      <ol>
+        <li>The Gmail app only takes plain text. In the app, tap your picture, then <b class="ui">Gmail settings</b>, your account, <b class="ui">Signature settings</b> (or <b class="ui">Mobile signature</b>), and type the short version, for example: <i id="plain-eg">Sam Barnard · The Starred Bill · starredbill.com</i></li>
+        <li>On an iPhone's own Mail app: <b class="ui">Settings</b>, <b class="ui">Apps</b>, <b class="ui">Mail</b>, <b class="ui">Signature</b>, and type the same line.</li>
+      </ol>
+    </details>
+  </section>
+</main>
+
+<script>
+(function () {
+  var LOGO_URL = "https://starredbill.com/img/email/signature-mark.png";
+  // The page itself can't load pictures from other websites, so the preview shows a copy of the same logo.
+  var LOGO_PREVIEW = "data:image/png;base64,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";
+  var SITE = "https://starredbill.com/";
+  var SITE_LINK = "https://starredbill.com/?utm_source=email-signature";
+  var DEFAULTS = { name: "Sam Barnard", role: "Founder", mail: "sam@starredbill.com", phone: "", tag: true };
+  var KEY = "starredbill-signature";
+  var mode = "full";
+  var $ = function (id) { return document.getElementById(id); };
+
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+  function vals() { return { name: $("name").value.trim(), role: $("role").value.trim(), mail: $("mail").value.trim(), phone: $("phone").value.trim(), tag: $("tag").checked }; }
+
+  var A = 'style="color:#1E6142;text-decoration:none;"';
+  var DOT = '<span style="color:#B3862B;">&nbsp;&middot;&nbsp;</span>';
+
+  function full(v, logo) {
+    var title = v.role ? esc(v.role) + ", The Starred Bill" : "The Starred Bill";
+    var contact = ['<a href="' + SITE_LINK + '" ' + A.replace(';"', ';font-weight:bold;"') + '>starredbill.com</a>'];
+    if (v.mail) contact.push('<a href="mailto:' + esc(v.mail) + '" ' + A + '>' + esc(v.mail) + '</a>');
+    var phone = v.phone ? '<tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#3E5247;"><a href="tel:' + esc(v.phone.replace(/[^+\d]/g, "")) + '" ' + A + '>' + esc(v.phone) + '</a></td></tr>' : "";
+    var tag = v.tag ? '<tr><td style="font-family:Georgia,\'Times New Roman\',serif;font-style:italic;font-size:13px;line-height:20px;color:#B3862B;padding-top:2px;">What the stars really cost</td></tr>' : "";
+    return '<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;">' +
+      '<tr>' +
+        '<td style="vertical-align:top;padding:2px 14px 0 0;"><a href="' + SITE_LINK + '"><img src="' + logo + '" width="32" height="47" alt="The Starred Bill" style="display:block;border:0;width:32px;height:47px;"></a></td>' +
+        '<td style="vertical-align:top;border-left:2px solid #B3862B;padding-left:14px;">' +
+          '<table cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-collapse:collapse;">' +
+            '<tr><td style="font-family:Georgia,\'Times New Roman\',serif;font-size:18px;line-height:24px;color:#10362A;">' + esc(v.name || "Your name") + '</td></tr>' +
+            '<tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#3E5247;">' + title + '</td></tr>' +
+            '<tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;padding-top:4px;">' + contact.join(DOT) + '</td></tr>' +
+            phone + tag +
+          '</table>' +
+        '</td>' +
+      '</tr>' +
+    '</table>';
+  }
+
+  function short(v) {
+    return '<div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;color:#3E5247;">' +
+      '<span style="font-family:Georgia,\'Times New Roman\',serif;font-size:15px;color:#10362A;">' + esc(v.name || "Your name") + '</span>' + DOT +
+      'The Starred Bill' + DOT + '<a href="' + SITE_LINK + '" ' + A + '>starredbill.com</a></div>';
+  }
+
+  function plain(v) {
+    if (mode === "short") return (v.name || "Your name") + " · The Starred Bill · starredbill.com";
+    var lines = [v.name || "Your name", (v.role ? v.role + ", " : "") + "The Starred Bill", "starredbill.com" + (v.mail ? " · " + v.mail : "")];
+    if (v.phone) lines.push(v.phone);
+    if (v.tag) lines.push("What the stars really cost");
+    return lines.join("\n");
+  }
+
+  function html(v, forEmail) { return mode === "short" ? short(v) : full(v, forEmail ? LOGO_URL : LOGO_PREVIEW); }
+
+  function render() {
+    var v = vals();
+    $("sig").innerHTML = html(v, false);
+    $("plain-eg").textContent = (v.name || "Your name") + " · The Starred Bill · starredbill.com";
+    $("status").textContent = "";
+    try { localStorage.setItem(KEY, JSON.stringify(v)); } catch (e) {}
+  }
+
+  function load() {
+    var v = DEFAULTS;
+    try { var s = JSON.parse(localStorage.getItem(KEY) || "null"); if (s) v = s; } catch (e) {}
+    $("name").value = v.name || ""; $("role").value = v.role || ""; $("mail").value = v.mail || ""; $("phone").value = v.phone || ""; $("tag").checked = v.tag !== false;
+  }
+
+  // Copies the signature as formatted text, with the logo pointing at starredbill.com.
+  function copy() {
+    var v = vals(), h = html(v, true), t = plain(v), done = false;
+    function onCopy(e) { e.clipboardData.setData("text/html", h); e.clipboardData.setData("text/plain", t); e.preventDefault(); done = true; }
+    document.addEventListener("copy", onCopy);
+    try { document.execCommand("copy"); } catch (e) {}
+    document.removeEventListener("copy", onCopy);
+    if (done) { ok(); return; }
+    if (navigator.clipboard && window.ClipboardItem) {
+      navigator.clipboard.write([new ClipboardItem({
+        "text/html": new Blob([h], { type: "text/html" }),
+        "text/plain": new Blob([t], { type: "text/plain" })
+      })]).then(ok, fail);
+    } else { fail(); }
+  }
+  function ok() { $("status").textContent = "Copied. Now paste it into your email settings."; }
+  function fail() {
+    var r = document.createRange(); r.selectNodeContents($("sig"));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    $("status").textContent = "Press ⌘C now to copy the selected signature.";
+  }
+
+  function setMode(m) {
+    mode = m;
+    $("t-full").setAttribute("aria-selected", m === "full");
+    $("t-short").setAttribute("aria-selected", m === "short");
+    render();
+  }
+
+  load(); render();
+  $("f").addEventListener("input", render);
+  $("f").addEventListener("submit", function (e) { e.preventDefault(); });
+  $("t-full").addEventListener("click", function () { setMode("full"); });
+  $("t-short").addEventListener("click", function () { setMode("short"); });
+  $("copy").addEventListener("click", copy);
+  $("reset").addEventListener("click", function () {
+    $("name").value = DEFAULTS.name; $("role").value = DEFAULTS.role; $("mail").value = DEFAULTS.mail; $("phone").value = ""; $("tag").checked = true; render();
+  });
+})();
+</script>

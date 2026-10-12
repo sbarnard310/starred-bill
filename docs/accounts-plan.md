@@ -8,7 +8,7 @@ Visitors can create a free account to keep their **wishlist** on every device an
 
 ## Recommended approach
 
-- **Supabase** (free up to 50,000 active users a month) stores accounts and lists. The site itself stays on GitHub Pages.
+- **Supabase** (free up to 50,000 active users a month) stores accounts and lists. The site itself is hosted on Cloudflare Pages.
 - Sign in by **email link** (no passwords) and **Continue with Google**. Add **Sign in with Apple** later, when making a phone app (Apple's developer account costs $99 a year).
 - Each person can only see and change their own lists.
 - A short **privacy page** is needed once emails are stored (UK data law). No cookie banner needed.

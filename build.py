@@ -4,7 +4,7 @@
     python3 build.py                          build the site, checking the data as it goes
     python3 -m http.server 8799 -d _site      preview it at http://localhost:8799
 
-GitHub runs the same build on every push and publishes _site/ (see .github/workflows/deploy.yml).
+Cloudflare Pages runs the same build on every push to main and publishes _site/.
 It uses only the Python standard library, so there is nothing to install.
 """
 import hashlib
@@ -7424,8 +7424,6 @@ def build_extras():
     if (SRC / "img").exists():
         # Featured pictures; the full-size originals (<id>-src.*) stay out of the site.
         shutil.copytree(SRC / "img", OUT / "img", ignore=shutil.ignore_patterns("*-src.*"))
-    if (ROOT / "CNAME").exists():
-        shutil.copy2(ROOT / "CNAME", OUT / "CNAME")
     urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) for lang in place_langs(p)] + (["/guides/"] + [guide_path(g, lang) for g in guides for lang in guide_langs(g)] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + ["/privacy/"]
     dates = sitemap_dates()
     (OUT / "sitemap.xml").write_text(

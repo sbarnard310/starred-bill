@@ -8,10 +8,10 @@
   "rating": 4.5,
   "reviews": 380,
   "dinnerType": "menu",
-  "dinner": 400,
-  "dinnerNote": "Tasting menu (other menus from €210)",
+  "dinner": 135,
+  "dinnerNote": "Menu Jubileum, 6 courses (vegetarian Greenhouse menu from €77.50)",
   "sourceType": "site",
-  "source": "https://www.bloemenbeek.nl/",
+  "source": "https://www.bloemenbeek.nl/wp-content/uploads/2026/07/Kaart-juni-2026.pdf",
   "website": "https://www.bloemenbeek.nl/",
   "lat": 52.319597,
   "lng": 6.9978667,
@@ -26,6 +26,6 @@
   ],
   "chef": "Michel van Riswijk and Vincent Goris",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 210)",
+  "dinnerNoteNl": "Menu Jubileum, 6 gangen (vegetarisch menu Greenhouse vanaf € 77,50)",
   "cuisineNl": "Modern Frans"
 }

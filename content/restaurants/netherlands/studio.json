@@ -7,8 +7,8 @@
   "rating": 5,
   "reviews": 829,
   "dinnerType": "menu",
-  "dinner": 110,
-  "dinnerNote": "Tasting menu (other menus from €100)",
+  "dinner": 155,
+  "dinnerNote": "8-course menu (dinner menus from €125)",
   "sourceType": "site",
   "source": "https://www.studio.restaurant/menu",
   "website": "https://studio.restaurant/",
@@ -19,7 +19,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 100)",
+  "dinnerNoteNl": "8-gangenmenu (dinermenu's vanaf € 125)",
   "lunch": 110,
   "lunchType": "menu",
   "lunchNote": "Lunch menu · Tue–Fri",

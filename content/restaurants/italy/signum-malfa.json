@@ -8,8 +8,8 @@
   "rating": 4.2,
   "reviews": 394,
   "dinnerType": "menu",
-  "dinner": 95,
-  "dinnerNote": "Tasting menu",
+  "dinner": 250,
+  "dinnerNote": "Sigillo tasting menu, 12 dishes (other menus from €170)",
   "sourceType": "site",
   "source": "https://www.hotelsignum.it/ristorante-gourmet-eolie/menu/percorsi-gourmet.html",
   "website": "https://www.hotelsignum.it",
@@ -26,5 +26,6 @@
     "kosher"
   ],
   "chef": "Martina Caruso",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteIt": "Degustazione Sigillo, 12 piatti (altri menu da 170 €)"
 }

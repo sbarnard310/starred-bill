@@ -10,15 +10,15 @@
   "rating": 4.4,
   "reviews": 57,
   "dinnerType": "menu",
-  "dinnerNote": "Dinner course; usually including tax and service",
+  "dinnerNote": "Dinner course, tax included, plus 10% service",
   "wine": 6800,
-  "sourceType": "press",
+  "sourceType": "site",
   "website": "https://y-unico.jp/",
   "lat": 34.69794,
   "lng": 135.499109,
   "placeId": "ChIJV1i3CmXzAGARa9IlJ_agcIA",
-  "dinner": 22990,
-  "source": "https://omakaseje.com/restaurants/sy198489",
+  "dinner": 18700,
+  "source": "https://www.y-unico.jp/menu.html",
   "lunch": 8800,
   "lunchType": "menu",
   "lunchNote": "Lunch menu · Saturdays",
@@ -32,5 +32,6 @@
     "gluten-free"
   ],
   "chef": "Jun Yamamoto",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinnerNoteJa": "ディナーコース（税込、サービス料10%別）"
 }

@@ -6,7 +6,7 @@
   "cuisine": "Dim Sum",
   "dinnerType": "spend",
   "dinner": 248,
-  "dinnerNote": "Typical spend",
+  "dinnerNote": "Daytime only: typical spend on dim sum",
   "sourceType": "press",
   "source": "https://you.ctrip.com/food/152/15281406.html",
   "website": "https://www.whiteswanhotel.com/",
@@ -16,12 +16,16 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteZhs": "人均消费",
-  "lunchNote": "Open for lunch",
-  "lunchNoteZhs": "供应午餐",
+  "dinnerNoteZhs": "仅白天营业：早茶人均消费",
+  "lunchNote": "Typical spend · dim sum, daytime only",
+  "lunchNoteZhs": "人均消费 · 早茶，仅白天营业",
   "cuisineZhs": "点心",
   "nameZhs": "宏图府",
   "placeId": "ChIJw5TaqYH4AjQR_fV3G6vSLdw",
   "rating": 3.9,
-  "reviews": 27
+  "reviews": 27,
+  "lunch": 248,
+  "lunchType": "spend",
+  "lunchSource": "https://you.ctrip.com/food/152/15281406.html",
+  "lunchSourceType": "press"
 }

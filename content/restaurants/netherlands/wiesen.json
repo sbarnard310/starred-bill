@@ -8,10 +8,10 @@
   "rating": 4.6,
   "reviews": 332,
   "dinnerType": "menu",
-  "dinner": 135,
-  "dinnerNote": "Tasting menu (other menus from €95)",
-  "sourceType": "press",
-  "source": "https://www.gault-millau.nl/en/restaurants/wiesen-eindhoven",
+  "dinner": 119,
+  "dinnerNote": "6-course menu (other menus from €89)",
+  "sourceType": "site",
+  "source": "https://www.wiesen-restaurant.nl/menu-wiesen",
   "website": "https://www.wiesen-restaurant.nl/",
   "lat": 51.4378387,
   "lng": 5.4753117,
@@ -20,7 +20,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 95)",
+  "dinnerNoteNl": "6-gangenmenu (andere menu's vanaf € 89)",
   "lunch": 69,
   "lunchType": "menu",
   "lunchNote": "Lunch menu · Wed–Sat",

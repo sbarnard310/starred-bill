@@ -10,8 +10,8 @@
   "dinner": 120,
   "dinnerType": "menu",
   "dinnerNote": "Four-course prix fixe, plus 20% service",
-  "sourceType": "press",
-  "source": "https://www.theinfatuation.com/san-diego/reviews/jeune-and-jolie",
+  "sourceType": "site",
+  "source": "https://www.jeune-jolie.com/m-e-n-u",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.jeune-jolie.com",
@@ -25,5 +25,34 @@
     "gluten-free"
   ],
   "chef": "Eric Bost",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 120,
+  "menus": [
+    {
+      "name": "Four-course prix fixe",
+      "meal": "dinner",
+      "price": 120,
+      "wine": 120,
+      "courses": 4,
+      "note": "A choice of dishes at each course; also served at the bar and lounge; beverage pairing $100, alcohol-free Sans Esprit pairing $80; wagyu main $55 extra"
+    }
+  ],
+  "menusSource": "https://www.jeune-jolie.com/m-e-n-u",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Le Menu du Bar",
+      "note": "An à la carte menu for walk-in guests at the bar and lounge.",
+      "url": "https://www.jeune-jolie.com/m-e-n-u"
+    }
+  ],
+  "bookingOpens": "Online on OpenTable.",
+  "bookingUrl": "https://www.opentable.com/r/jeune-et-jolie-san-diego",
+  "bookingPhone": "+1 760-637-5266",
+  "walkIns": "Walk-ins are welcome at the bar and lounge tables every evening, where both the four-course menu and the à la carte bar menu are served.",
+  "groups": "Tables seat up to eight. For a buyout of the restaurant, email bonjour@jeune-jolie.com.",
+  "dressCode": "No dress code.",
+  "byob": "Corkage is $50 a bottle for the first two bottles and $75 for each one after.",
+  "infoSource": "https://www.jeune-jolie.com/jeune-jolie",
+  "infoChecked": "2026-10-12"
 }

@@ -7,21 +7,84 @@
   "cuisine": "Californian",
   "rating": 4.7,
   "reviews": 1836,
-  "dinner": 345,
+  "dinner": 275,
   "dinnerType": "menu",
-  "dinnerNote": "Tête de Cuvée menu, five courses",
+  "dinnerNote": "Chef's Signature Tasting Menu, six courses (Tête de Cuvée menu $345)",
   "sourceType": "site",
-  "source": "https://auberge.com/auberge-du-soleil/the-restaurant-at-auberge-du-soleil/tete-de-cuvee-experience/",
-  "lunch": 345,
+  "source": "https://auberge.com/auberge-du-soleil/the-restaurant-at-auberge-du-soleil/tasting-menu/",
+  "lunch": 95,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNote": "Lunch, 2 courses (3 courses $135) · Mon–Fri",
   "lunchSourceType": "site",
-  "lunchSource": "https://auberge.com/auberge-du-soleil/the-restaurant-at-auberge-du-soleil/tete-de-cuvee-experience/",
+  "lunchSource": "https://auberge.com/auberge-du-soleil/the-restaurant-at-auberge-du-soleil/lunch/",
   "website": "https://aubergeresorts.com/aubergedusoleil/dine/the-restaurant-at-auberge-du-soleil/",
   "lat": 38.49199,
   "lng": -122.40534,
   "placeId": "ChIJH5O5lv5WhIARCuyN4aS9lYg",
   "michelinId": "122233",
   "chef": "Robert Curry",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 133,
+  "menus": [
+    {
+      "name": "Chef's Signature Tasting Menu",
+      "meal": "dinner",
+      "price": 275,
+      "wine": 133,
+      "courses": 6,
+      "note": "Some pairing wines can be swapped for dearer ones ($40 or $50 extra)"
+    },
+    {
+      "name": "Classic Dinner",
+      "meal": "dinner",
+      "price": 190,
+      "courses": 3,
+      "note": "Four courses $225; caviar and wagyu carry supplements"
+    },
+    {
+      "name": "Tête de Cuvée menu",
+      "meal": "dinner",
+      "price": 345,
+      "courses": 5,
+      "note": "With luxury dishes such as lobster and A5 wagyu; wine pairings priced separately"
+    },
+    {
+      "name": "Grand Cru Célébration",
+      "meal": "dinner",
+      "price": 675,
+      "courses": 7,
+      "note": "Includes premium wine pairings"
+    },
+    {
+      "name": "Lunch",
+      "meal": "lunch",
+      "price": 95,
+      "courses": 2,
+      "note": "Monday to Friday, 11.30am to 2.15pm; three courses $135"
+    },
+    {
+      "name": "Brunch",
+      "meal": "lunch",
+      "price": 145,
+      "courses": 3,
+      "note": "Includes a welcome drink and pastry basket"
+    }
+  ],
+  "menusSource": "https://auberge.com/auberge-du-soleil/the-restaurant-at-auberge-du-soleil/tasting-menu/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "The Bar at Auberge du Soleil",
+      "note": "Casual food in the hotel's bar.",
+      "url": "https://aubergeresorts.com/aubergedusoleil/dine/"
+    }
+  ],
+  "hotel": "Auberge du Soleil, an Auberge Resorts Collection hotel",
+  "bookingOpens": "By phone on +1 707-967-3111; online booking is temporarily unavailable. Bookings are required in advance.",
+  "bookingUrl": "https://aubergeresorts.com/aubergedusoleil/dine/the-restaurant-at-auberge-du-soleil/",
+  "bookingPhone": "+1 707-967-3111",
+  "groups": "The restaurant has a private dining room; ask the hotel.",
+  "children": "The hotel is an adults' retreat and does not recommend visits by anyone under 21.",
+  "infoSource": "https://aubergeresorts.com/aubergedusoleil/dine/the-restaurant-at-auberge-du-soleil/",
+  "infoChecked": "2026-10-12"
 }

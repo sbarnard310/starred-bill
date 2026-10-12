@@ -18,13 +18,13 @@
   "changeDate": "2024-10",
   "rating": 4.6,
   "reviews": 69,
-  "dinner": 18150,
+  "dinner": 19800,
   "dinnerType": "menu",
-  "dinnerNote": "Chef's tasting course",
-  "dinnerNoteZh": "主廚品嚐套餐",
-  "dinnerNoteJa": "シェフおまかせコース",
-  "sourceType": "press",
-  "source": "https://omakaseje.com/restaurants/vt282097",
+  "dinnerNote": "Omakase course built around five pasta dishes, from",
+  "dinnerNoteZh": "以五道義大利麵為主軸的主廚精選套餐起",
+  "dinnerNoteJa": "パスタ5品を軸にしたおまかせコース（～）",
+  "sourceType": "site",
+  "source": "https://ppasso.jp/",
   "noLunch": true,
   "website": "https://ppasso.jp/",
   "lat": 35.670168,
@@ -32,5 +32,21 @@
   "placeId": "ChIJ2SbS7YuLGGAR5cWQy8HeHk4",
   "michelinId": "1209245",
   "chef": "Tomoyuki Fujioka",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Omakase course",
+      "meal": "dinner",
+      "price": 19800,
+      "note": "Built around five pasta dishes; priced 'from' ¥19,800; drink pairings of six or nine glasses (prices not published)"
+    }
+  ],
+  "menusSource": "https://ppasso.jp/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through OMAKASE (linked from the restaurant's website), for the 5pm or 8.30pm seating; or by phone or email (contact@ppasso.jp).",
+  "bookingUrl": "https://omakase.in/ja/r/up320761",
+  "bookingPhone": "+81 3-6826-9672",
+  "groups": "A private room for two to six guests, besides the eight-seat counter.",
+  "infoSource": "https://ppasso.jp/",
+  "infoChecked": "2026-10-12"
 }

@@ -13,11 +13,11 @@
   "wine": 65,
   "sourceType": "site",
   "source": "https://www.hambletonhall.com/sample-tasting-menu/",
-  "lunch": 95,
+  "lunch": 58,
   "lunchType": "menu",
-  "lunchNote": "Tasting menu, Mon–Fri",
+  "lunchNote": "Lunch for Less, 2 courses (3 courses £73) · Mon–Fri, March to November",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.hambletonhall.com/sample-tasting-menu/",
+  "lunchSource": "https://www.hambletonhall.com/sample-lunch-for-less-menu/",
   "website": "https://www.hambletonhall.com/",
   "lat": 52.657432,
   "lng": -0.668098,
@@ -29,6 +29,40 @@
   ],
   "chef": "Aaron Patterson",
   "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 180,
+      "wine": 65,
+      "note": "Every evening; taken by the whole table; vegetarian tasting menu also offered; pairing of five glasses"
+    },
+    {
+      "name": "Menu of the Day",
+      "meal": "dinner",
+      "price": 135,
+      "courses": 3,
+      "note": "Every evening, and at lunch Monday to Saturday; four courses £160; beef fillet main £8 extra"
+    },
+    {
+      "name": "Lunch for Less",
+      "meal": "lunch",
+      "price": 58,
+      "courses": 2,
+      "note": "Monday to Friday, March to November (not bank holidays); third course £15; a special three-course menu replaces it in December"
+    },
+    {
+      "name": "Sunday lunch",
+      "meal": "lunch",
+      "price": 98.5,
+      "courses": 3,
+      "note": "Every Sunday"
+    }
+  ],
+  "menusSource": "https://www.hambletonhall.com/sample-tasting-menu/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 1982,
+  "bookingOpens": "Online for up to four guests, up to six months ahead. Tables of five or more are booked by phone or email. When demand is high, dinner runs in two sittings, from 6pm or after 8pm.",
   "bookingWindow": {
     "type": "rolling",
     "months": 6,
@@ -36,5 +70,14 @@
     "via": "website",
     "source": "https://www.hambletonhall.com/book-a-table/",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://www.hambletonhall.com/book-a-table/",
+  "bookingPhone": "+44 1572 756991",
+  "waitlist": "The hotel keeps a daily waiting list: phone or email with the date and party size.",
+  "groups": "Tables of five or more are arranged by phone or email, including menu choices. Private parties and celebrations can be held in the house's private dining rooms.",
+  "groupsUrl": "https://www.hambletonhall.com/inclusive-private-dining/",
+  "dressCode": "Smart dress. There is no strict dress code, but no shorts or sportswear.",
+  "children": "Children aged five and over are welcome in the dining room at lunch and dinner.",
+  "infoSource": "https://www.hambletonhall.com/book-a-table/",
+  "infoChecked": "2026-10-12"
 }

@@ -8,9 +8,9 @@
   "reviews": 1096,
   "dinnerType": "menu",
   "dinner": 285,
-  "dinnerNote": "Tasting menu, 8 courses (bar menu $185)",
-  "sourceType": "press",
-  "source": "https://www.opentable.com/r/lazy-betty-atlanta",
+  "dinnerNote": "Tasting menu, 8 courses, service included (bar menu $185)",
+  "sourceType": "site",
+  "source": "https://www.lazybettyatl.com/menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.lazybettyatl.com/",
@@ -23,5 +23,52 @@
     "vegan"
   ],
   "chef": "Ron Hsu",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 205,
+  "menus": [
+    {
+      "name": "Lazy Betty Tasting Menu",
+      "meal": "dinner",
+      "price": 285,
+      "wine": 205,
+      "courses": 8,
+      "note": "Prices include a 20% service fee; Elevated wine pairing $265, non-alcoholic pairing $125; A5 wagyu course $95 extra"
+    },
+    {
+      "name": "Vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 285,
+      "wine": 205,
+      "note": "On request; prices include a 20% service fee; non-alcoholic pairing $125"
+    },
+    {
+      "name": "4 Course Tasting Menu",
+      "meal": "lounge",
+      "price": 185,
+      "wine": 125,
+      "courses": 4,
+      "note": "Bar and lounge only, no reservations; also offered as a pre-theatre menu; prices include a 20% service fee"
+    },
+    {
+      "name": "Dessert Tasting Menu",
+      "meal": "lounge",
+      "price": 105,
+      "wine": 85,
+      "courses": 4,
+      "note": "Bar and lounge only, no reservations; prices include a 20% service fee"
+    }
+  ],
+  "menusSource": "https://www.lazybettyatl.com/menu",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on OpenTable. Reservations are for the tasting menus in the dining room only.",
+  "bookingUrl": "https://www.opentable.com/r/lazy-betty-atlanta",
+  "bookingPhone": "+1 470-851-1199",
+  "walkIns": "The four-course bar menu and the dessert tasting menu are served only in the bar and lounge, first come, first served, for parties of up to four.",
+  "groups": "Three private spaces: the Chef's Room for up to 20, the Private Dining Room for up to 30 (the two can be joined), or the whole restaurant for up to 100.",
+  "groupsUrl": "https://www.lazybettyatl.com/events",
+  "children": "Children are expected to eat a tasting menu; the kitchen can make a modified one if asked ahead.",
+  "duration": "About three and a half hours.",
+  "byob": "Corkage is $75 per 750ml bottle, two bottles at most, and not for wines on the list.",
+  "infoSource": "https://www.lazybettyatl.com/menu",
+  "infoChecked": "2026-10-12"
 }

@@ -37,5 +37,65 @@
     "vegetarian"
   ],
   "chef": "Kenichiro Sekiya",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Menu Dégustation",
+      "meal": "dinner",
+      "price": 58000,
+      "note": "For the whole table; including tax, plus 12% service; limited numbers"
+    },
+    {
+      "name": "Menu Spécialité",
+      "meal": "dinner",
+      "price": 68000,
+      "courses": 8,
+      "note": "Joël Robuchon's best-known dishes; until 5 November, then ¥78,000 from 6 November to 17 December; book at least three days ahead; lunch or dinner; wine pairing on request"
+    },
+    {
+      "name": "Menu Prix Fixe A",
+      "meal": "dinner",
+      "price": 38000,
+      "note": "Choice of two main courses; includes the Imperial caviar dish"
+    },
+    {
+      "name": "Menu Prix Fixe B",
+      "meal": "dinner",
+      "price": 33000,
+      "note": "Choice of one main course"
+    },
+    {
+      "name": "Menu Prix Fixe C",
+      "meal": "lunch",
+      "price": 28000,
+      "note": "Lunch only (weekends and public holidays); choice of one main course"
+    },
+    {
+      "name": "Menu Végétarien",
+      "meal": "dinner",
+      "price": 38000,
+      "note": "Vegetable tasting menu, booked in advance; not vegan"
+    }
+  ],
+  "menusSource": "https://www.robuchon.jp/shop-list/joelrobuchon",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2007,
+  "bookingOpens": "Online on TableCheck, up to two months ahead, or by phone (11am–8pm). Parties of five or more book by phone and are served a chef's choice menu. The restaurant asks guests to reconfirm three to seven days before.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Asia/Tokyo",
+    "via": "TableCheck",
+    "source": "https://www.tablecheck.com/en/shops/joelrobuchon/reserve",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.tablecheck.com/ja/shops/joelrobuchon/reserve",
+  "bookingPhone": "+81 3-5424-1338, 11am–8pm",
+  "cancellation": "60% of the meal price from seven to four days before, 80% from three days to the day before, and 100% on the day. Over Christmas (18–25 December) 100% applies from the day before.",
+  "groups": "Five or more by phone, with a chef's choice menu. The Joël Robuchon Salon upstairs has private rooms.",
+  "dressCode": "Men are asked to wear a jacket or a collared shirt (a jacket from 18 to 25 December). No T-shirts, shorts or sandals; guests dressed too casually may be turned away.",
+  "children": "No children under 10 in the main dining room. The private Salon takes children of any age; ask the restaurant.",
+  "servicePct": 12,
+  "infoSource": "https://www.robuchon.jp/shop-list/joelrobuchon",
+  "infoChecked": "2026-10-12"
 }

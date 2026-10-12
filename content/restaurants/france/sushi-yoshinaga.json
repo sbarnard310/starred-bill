@@ -17,11 +17,11 @@
   "reviews": 195,
   "dinner": 330,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase, about 20 pieces",
-  "dinnerNoteFr": "Omakase, une vingtaine de pièces",
+  "dinnerNote": "Omakase, about 20 pieces (€360 from January 2027)",
+  "dinnerNoteFr": "Omakase, une vingtaine de pièces (360 € à partir de janvier 2027)",
   "wine": 75,
-  "sourceType": "press",
-  "source": "https://lefooding.com/en/restaurants/yoshinaga",
+  "sourceType": "site",
+  "source": "https://www.27quatre.com/sushi-yoshinaga",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteFr": "Uniquement le soir",
@@ -35,5 +35,29 @@
     "kosher"
   ],
   "chef": "Tomoyuki Yoshinaga",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "omakase of chef Yoshinaga",
+      "meal": "dinner",
+      "price": 330,
+      "note": "The only menu; €360 from January 2027. Dinner only, Tuesday to Saturday, sittings at 7pm and 9.30pm"
+    }
+  ],
+  "menusSource": "https://www.27quatre.com/sushi-yoshinaga",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Omasake",
+      "note": "The sake izakaya in the same building, with small plates to share by Tomoyuki Yoshinaga; Tuesday to Saturday evenings",
+      "url": "https://www.27quatre.com/omasake"
+    }
+  ],
+  "bookingOpens": "Online through Zenchef from the restaurant's website (preferred), or by phone or email (contact@sushiyoshinaga.com).",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=360895",
+  "bookingPhone": "+33 7 57 81 46 46",
+  "cancellation": "A card guarantee is taken for every booking. Bookings can be changed or cancelled up to 72 hours ahead; after that the charge is €360 per person.",
+  "duration": "About two hours. Guests more than 15 minutes late may not be served the whole menu, and the 7pm sitting must leave by 9.15pm.",
+  "infoSource": "https://www.27quatre.com/sushi-yoshinaga",
+  "infoChecked": "2026-10-12"
 }

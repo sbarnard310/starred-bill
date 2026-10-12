@@ -31,5 +31,49 @@
   "placeId": "ChIJq1UftCkpQg0RWN7BXvf4TVs",
   "michelinId": "1197125",
   "chef": "Massimiliano Delle Vedove",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Matsuri tasting menu",
+      "meal": "dinner",
+      "price": 280,
+      "wine": 180,
+      "note": "Lunch or dinner; pairings Hachi €180, Jū ni €220 or Hoshi €500"
+    },
+    {
+      "name": "Kōsei no Hi tasting menu",
+      "meal": "dinner",
+      "price": 210,
+      "note": "Lunch or dinner"
+    }
+  ],
+  "menusSource": "https://smokedroomrestaurants.com/en/madrid/menus/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Leña Madrid",
+      "note": "Dani García's grill restaurant in the same hotel.",
+      "url": "https://lenarestaurants.com/es/madrid/"
+    }
+  ],
+  "priceHistory": [
+    {
+      "date": "2025-09",
+      "price": 250,
+      "wine": 150,
+      "source": "https://web.archive.org/web/20250910140302/https://smokedroomrestaurants.com/en/madrid/menus/"
+    }
+  ],
+  "starsSince": 2022,
+  "hotel": "the Hyatt Regency Hesperia Madrid",
+  "bookingOpens": "Online through the restaurant's website (CoverManager), by phone or by WhatsApp. Reservations open on the 15th of each month. The room seats only 14, so booking ahead is recommended.",
+  "bookingUrl": "https://smokedroomrestaurants.com/en/madrid/reservar/",
+  "bookingPhone": "+34 911 086 277",
+  "cancellation": "The menu is prepaid when the booking is confirmed. Cancelling in the last seven days before the booking forfeits the prepayment, and a smaller party must be notified a week ahead. Tables are held for 15 minutes.",
+  "groups": "The whole restaurant can be booked for private dinners, company events and celebrations, with tailored menus; catering away from the restaurant is also offered.",
+  "groupsUrl": "https://smokedroomrestaurants.com/en/madrid/group-dining/",
+  "dressCode": "Smart casual is recommended.",
+  "byob": "Guests may not bring their own wine.",
+  "infoSource": "https://smokedroomrestaurants.com/en/madrid/faqs/",
+  "infoChecked": "2026-10-12"
 }

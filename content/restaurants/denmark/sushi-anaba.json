@@ -21,8 +21,8 @@
   "wine": 1500,
   "dinnerNoteDa": "Omakase",
   "dinnerNoteZh": "廚師發辦",
-  "sourceType": "press",
-  "source": "https://agourmetjourney.com/2025/12/18/sushi-anaba/",
+  "sourceType": "site",
+  "source": "https://www.sushianaba.com/menu",
   "lunchNote": "Open for lunch · Fri–Sat",
   "lunchNoteDa": "Åbent til frokost · fre.–lør.",
   "website": "https://www.sushianaba.com/",
@@ -31,5 +31,23 @@
   "placeId": "ChIJc7_JfGlTUkYRbVK5FOovyOs",
   "michelinId": "1186068",
   "chef": "Mads Battefeld",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Nigiri and otsumami menu of the day",
+      "meal": "dinner",
+      "price": 1900,
+      "wine": 1500,
+      "note": "Edomae-style sushi served at the counter, mostly Nordic seafood; wine pairing 5 glasses DKK 1,500 or DKK 2,100, sake pairing 6 glasses DKK 1,300, tea and juice pairing DKK 1,050"
+    }
+  ],
+  "menusSource": "https://www.sushianaba.com/menu",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through Superb, for one to five guests at the counter. When a date is full, a waiting list can be joined on the same page.",
+  "bookingUrl": "https://sushianaba.superbexperience.com/reserve/experience",
+  "bookingPhone": "+45 61 61 51 86",
+  "waitlist": "Full dates offer a waiting list through Superb; on 12 October 2026 every remaining date in October showed only the waiting list.",
+  "groups": "Parties larger than five are asked to contact the restaurant (Anaba@sushianaba.com).",
+  "infoSource": "https://www.sushianaba.com/menu",
+  "infoChecked": "2026-10-12"
 }

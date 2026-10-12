@@ -27,5 +27,21 @@
   "dinnerNoteNb": "Smaksmeny; prisen legges til senere",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNb": "Kun middag"
+  "lunchNoteNb": "Kun middag",
+  "bookingOpens": "Online through BookVisit on the restaurant's website, either a table only or a package with a room, farm tour and breakfast. Tables for each month open on the 1st of the month before (for July, from 1 June).",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "tz": "Europe/Oslo",
+    "via": "BookVisit",
+    "source": "https://www.kvitnes.com/en/faq",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.kvitnes.com/booking",
+  "bookingPhone": "+47 46 90 80 05, Tuesday to Saturday 10am–1pm",
+  "cancellation": "Free cancellation up to 72 hours before arrival; after that the full booking is charged.",
+  "duration": "About four hours: dinner starts at 7pm (be in the White House by 6:45pm) and ends around 11pm.",
+  "infoSource": "https://www.kvitnes.com/en/faq",
+  "infoChecked": "2026-10-12"
 }

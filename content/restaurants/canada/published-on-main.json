@@ -24,5 +24,26 @@
     "vegan"
   ],
   "chef": "Gus Stieffenhofer-Brandson",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Harvest tasting menu",
+      "meal": "dinner",
+      "price": 170,
+      "wine": 155,
+      "courses": 12,
+      "note": "Autumn menu, 7 October 2026 to 5 January 2027, served nightly; snacks then a run of composed plates. Price and pairing from the OpenTable booking page."
+    }
+  ],
+  "menusSource": "https://publishedonmain.com/harvest-fall-tasting-menu/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on OpenTable, from the restaurant's reservations page (separate links for à la carte and the Harvest tasting menu). Phone bookings 2pm to 5pm, or in person 5pm to 10pm.",
+  "bookingUrl": "https://publishedonmain.com/reservations/",
+  "bookingPhone": "+1 604-423-4840, 2pm to 5pm",
+  "cancellation": "Tasting menus are paid when booking. Changes or cancellations up to 48 hours before are refunded automatically; later changes, cancellations and no-shows lose the payment. Tables are held for 15 minutes, and late arrivals for the tasting menu may miss courses or move to à la carte.",
+  "groups": "Parties of more than six must book ahead. A family-style chef's dinner in the lounge (snacks, three courses and desserts) is for groups of 7 to 12. Group enquiries to info@publishedyvr.com; full buyouts for 60 or more (lunch buyouts from 30) through bookings@publishedyvr.com.",
+  "groupsUrl": "https://publishedonmain.com/group-bookings/",
+  "duration": "Two and a half to three hours for the Harvest tasting menu; tables are reserved for 2¾ hours for two and 3 hours for three or four.",
+  "infoSource": "https://publishedonmain.com/harvest-fall-tasting-menu/",
+  "infoChecked": "2026-10-12"
 }

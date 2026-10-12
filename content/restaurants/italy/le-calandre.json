@@ -8,12 +8,12 @@
   "rating": 4.7,
   "reviews": 937,
   "dinnerType": "menu",
-  "dinner": 280,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteIt": "Menu degustazione",
+  "dinner": 325,
+  "dinnerNote": "Classico tasting menu, autumn with white truffle (Max and Raf menus €310; all three €280 in summer)",
+  "dinnerNoteIt": "Menu Classico, autunno con tartufo bianco (menu Max e Raf €310; tutti e tre €280 d'estate)",
   "wine": 150,
-  "sourceType": "press",
-  "source": "https://stefangourmet.com/2025/05/14/le-calandre-2025/",
+  "sourceType": "site",
+  "source": "https://cdn.shopify.com/s/files/1/0508/7356/5353/files/Calandre_46X25_AUTUNNO26-ITA.pdf",
   "lunchNote": "Open for lunch · Wed–Sat",
   "lunchNoteIt": "Aperto a pranzo · mer–sab",
   "website": "https://alajmo.it/pages/homepage-le-calandre",
@@ -27,5 +27,50 @@
     "gluten-free"
   ],
   "chef": "Massimiliano Alajmo",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Classico tasting menu",
+      "meal": "dinner",
+      "price": 325,
+      "note": "The restaurant's signature dishes; autumn 2026 menu with white truffle (€280 in summer 2026); for the whole table; lunch or dinner"
+    },
+    {
+      "name": "Max tasting menu",
+      "meal": "dinner",
+      "price": 310,
+      "note": "Seasonal menu; autumn 2026 (€280 in summer 2026); for the whole table; lunch or dinner"
+    },
+    {
+      "name": "Raf tasting menu",
+      "meal": "dinner",
+      "price": 310,
+      "note": "Seasonal menu; autumn 2026 (€280 in summer 2026); for the whole table; lunch or dinner"
+    },
+    {
+      "name": "Choice of three dishes from the menus",
+      "meal": "dinner",
+      "price": 210,
+      "courses": 3,
+      "note": "Or four dishes for €250, five for €280; some dishes carry a €20 supplement"
+    }
+  ],
+  "menusSource": "https://cdn.shopify.com/s/files/1/0508/7356/5353/files/Calandre_46X25_AUTUNNO26-ITA.pdf",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Il Calandrino",
+      "note": "The Alajmo family's informal bistro, pastry shop and café next door, open from breakfast to dinner",
+      "url": "https://alajmo.it/pages/homepage-il-calandrino"
+    }
+  ],
+  "starsSince": 2002,
+  "bookingOpens": "Online on SevenRooms through the restaurant's website, or by phone or email (booking@alajmo.it).",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/lecalandre?lang=it",
+  "bookingPhone": "+39 049 630303",
+  "cancellation": "Cancel or change the number of guests at least 24 hours ahead. After that, and for no-shows or fewer guests than booked, €150 a person is charged. A card is taken when booking. A table may not be held after 30 minutes' delay without notice.",
+  "dressCode": "No dress code, but no shorts or flip-flops.",
+  "children": "Children are welcome. Guests with children under 8 are seated in the private room when it is free. There are no high chairs.",
+  "infoSource": "https://alajmo.it/pages/booking-le-calandre",
+  "infoChecked": "2026-10-12"
 }

@@ -9,9 +9,9 @@
   "reviews": 141,
   "dinnerType": "menu",
   "dinner": 215,
-  "dinnerNote": "Tasting menu",
-  "sourceType": "press",
-  "source": "https://www.schlemmer-atlas.de/restaurants/oesterreich/hall-in-tirol/restaurant-schwarzer-adler/",
+  "dinnerNote": "Set menu, the only one offered",
+  "sourceType": "site",
+  "source": "https://www.schwarzeradler-hall.tirol/restaurant/",
   "website": "https://www.schwarzeradler-hall.tirol/restaurant/",
   "lat": 47.2811239,
   "lng": 11.5082487,
@@ -23,9 +23,29 @@
   ],
   "chef": "Johannes Nuding",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
+  "dinnerNoteDe": "Menü, das einzige Angebot",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Europäisch-zeitgemäß"
+  "cuisineDe": "Europäisch-zeitgemäß",
+  "menus": [
+    {
+      "name": "set menu",
+      "meal": "dinner",
+      "price": 215,
+      "courses": 6,
+      "note": "The only menu; six courses or more, changing with the seasons. Reduced version for children on request."
+    }
+  ],
+  "menusSource": "https://www.schwarzeradler-hall.tirol/restaurant/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "By request form on the restaurant's website. The team replies within 48 hours with availability, then asks for card details to confirm. For same-day requests, phone.",
+  "bookingUrl": "https://www.schwarzeradler-hall.tirol/restaurant/",
+  "bookingPhone": "+43 5223 25122, Wednesday to Saturday 11am to 5pm",
+  "cancellation": "A credit card guarantees the booking. Cancellations or fewer guests need at least 48 hours' notice; later cancellations and no-shows are charged €215 a person.",
+  "groups": "The restaurant can be booked for private events such as birthdays, weddings and company dinners, with menus and wines arranged in advance.",
+  "dressCode": "No formal dress code. Most guests come smart casual or more dressed up.",
+  "children": "Children are welcome and can have a reduced version of the set menu if asked for when booking. Babies and toddlers are not admitted in the evening.",
+  "infoSource": "https://www.schwarzeradler-hall.tirol/restaurant/",
+  "infoChecked": "2026-10-12"
 }

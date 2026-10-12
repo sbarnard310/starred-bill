@@ -8,10 +8,10 @@
   "rating": 4.6,
   "reviews": 196,
   "dinnerType": "menu",
-  "dinner": 6500,
-  "dinnerNote": "Tasting menu (other menus from ₱3,900)",
-  "sourceType": "press",
-  "source": "https://www.spot.ph/eatdrink/the-latest-eat-drink/asador-alfonso-2026-a3284-20260221-bsc",
+  "dinner": 6900,
+  "dinnerNote": "Journey tasting menu (Heritage menu from ₱3,900)",
+  "sourceType": "site",
+  "source": "https://drive.google.com/file/d/1f1kjcEbM-FKLa2O2ZfgufSTqe5MgFc93/view",
   "website": "https://www.asadoralfonso.com",
   "lat": 14.1114544,
   "lng": 120.8833073,
@@ -22,7 +22,44 @@
   ],
   "chef": "Rodrigo Andres Osorio",
   "chefSource": "michelin",
-  "dinnerNoteFil": "Tasting menu (ibang menu mula ₱3,900)",
+  "dinnerNoteFil": "Journey tasting menu (Heritage menu mula ₱3,900)",
   "lunchNote": "Open for lunch · Thu–Sun",
-  "lunchNoteFil": "Bukas para sa tanghalian · Huw–Lin"
+  "lunchNoteFil": "Bukas para sa tanghalian · Huw–Lin",
+  "wine": 3200,
+  "menus": [
+    {
+      "name": "Journey tasting menu",
+      "meal": "dinner",
+      "price": 6900,
+      "wine": 3200,
+      "courses": 10,
+      "note": "The whole table orders the same menu. Grilled Spanish red prawn (carabinero) ₱2,990 extra per piece."
+    },
+    {
+      "name": "Heritage tasting menu",
+      "meal": "dinner",
+      "price": 3900,
+      "wine": 2500,
+      "courses": 6,
+      "note": "Priced by the main course: ₱3,900 with roast grouper, ₱5,200 with Segovia suckling pig, ₱5,500 with A5 wagyu tenderloin. The whole table orders the same menu."
+    }
+  ],
+  "menusSource": "https://drive.google.com/file/d/1f1kjcEbM-FKLa2O2ZfgufSTqe5MgFc93/view",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Alfonso Roasting Room",
+      "note": "The relaxed à la carte room downstairs in the same building, serving Spanish dishes to share.",
+      "url": "https://www.asadoralfonso.com"
+    }
+  ],
+  "starsSince": 2025,
+  "bookingOpens": "By email to reservations@asadoralfonso.com, by phone, or online through the booking page the restaurant's website links to.",
+  "bookingUrl": "https://www.dishcult.com/restaurant/asadoralfonso",
+  "bookingPhone": "+63 917 150 7621",
+  "groups": "Events and private bookings are handled separately: call +63 917 144 5078 or email events.asadoralfonso@gmail.com.",
+  "groupsUrl": "https://www.asadoralfonso.com/events",
+  "servicePct": 10,
+  "infoSource": "https://www.asadoralfonso.com",
+  "infoChecked": "2026-10-12"
 }

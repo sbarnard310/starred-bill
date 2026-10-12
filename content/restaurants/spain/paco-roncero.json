@@ -9,22 +9,22 @@
   "cuisineZh": "創新菜",
   "rating": 4.6,
   "reviews": 592,
-  "dinner": 210,
+  "dinner": 310,
   "dinnerType": "menu",
-  "dinnerNote": "Afirmación menu, 24 servings (Esencia menu €120)",
+  "dinnerNote": "Gran Madrid menu, 25 servings (Madrid, Madrid, Madrid menu €240)",
   "dinnerNoteZh": "「Afirmación」套餐，24 道（「Esencia」套餐 €120）",
-  "dinnerNoteEs": "Menú Afirmación, 24 pases (menú Esencia 120 €)",
-  "wine": 120,
-  "sourceType": "press",
-  "source": "https://www.casacochecurro.com/cuanto-cuesta-comer-en-el-restaurante-de-paco-roncero-precio-del-menu-degustacion.html",
-  "lunch": 210,
+  "dinnerNoteEs": "Menú Gran Madrid, 25 elaboraciones (menú Madrid, Madrid, Madrid 240 €)",
+  "wine": 125,
+  "sourceType": "site",
+  "source": "https://pacoroncerorestaurante.com/es/menus/",
+  "lunch": 190,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNote": "Esencia menu, Thursday and Friday lunch (€280 with wine)",
   "lunchNoteZh": "午餐供應相同套餐・週四至週六",
-  "lunchNoteEs": "El mismo menú al mediodía · jue–sáb",
-  "lunchWine": 120,
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.casacochecurro.com/cuanto-cuesta-comer-en-el-restaurante-de-paco-roncero-precio-del-menu-degustacion.html",
+  "lunchNoteEs": "Menú Esencia, mediodías de jueves y viernes (280 € con maridaje)",
+  "lunchWine": 90,
+  "lunchSourceType": "site",
+  "lunchSource": "https://pacoroncerorestaurante.com/es/menus/",
   "website": "https://www.pacoroncerorestaurante.com/",
   "lat": 40.417848,
   "lng": -3.700269,
@@ -35,5 +35,63 @@
     "vegan"
   ],
   "chef": "Paco Roncero",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Gran Madrid tasting menu",
+      "meal": "dinner",
+      "price": 310,
+      "wine": 125,
+      "courses": 25,
+      "note": "Lunch or dinner; pairings €125 (Spanish wines), €185 (Old and New World) or €295 (great wines)"
+    },
+    {
+      "name": "Madrid, Madrid, Madrid tasting menu",
+      "meal": "dinner",
+      "price": 240,
+      "wine": 125,
+      "courses": 23,
+      "note": "Lunch or dinner; same three pairings"
+    },
+    {
+      "name": "Esencia menu",
+      "meal": "lunch",
+      "price": 190,
+      "courses": 15,
+      "note": "Thursday and Friday lunch; also served in the evenings and on Saturdays, but then only with its wine pairing, €280 in all",
+      "wine": 90
+    }
+  ],
+  "menusSource": "https://pacoroncerorestaurante.com/es/menus/",
+  "menusChecked": "2026-10-12",
+  "priceHistory": [
+    {
+      "date": "2024-07",
+      "price": 210,
+      "wine": 125,
+      "source": "https://web.archive.org/web/20240811075449/https://www.pacoroncerorestaurante.com/wp-content/uploads/Menu-Paco-Roncero-Restaurante-1.pdf"
+    },
+    {
+      "date": "2025-06",
+      "price": 290,
+      "wine": 125,
+      "source": "https://web.archive.org/web/20250620081310/https://www.pacoroncerorestaurante.com/wp-content/uploads/Menu-Paco-Roncero-Restaurante-2.pdf"
+    }
+  ],
+  "bookingOpens": "Online through the restaurant's website (CoverManager), by phone or by email to reservas@pacoroncerorestaurante.com. Tables can be booked up to 30 days ahead.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "via": "CoverManager",
+    "tz": "Europe/Madrid",
+    "source": "https://pacoroncerorestaurante.com/es/reserva/",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://pacoroncerorestaurante.com/es/reserva/",
+  "bookingPhone": "+34 915 32 12 75",
+  "groups": "Paco Roncero's Taller, his separate creative kitchen and test space, is also used for exclusive private events.",
+  "groupsUrl": "https://pacoroncerorestaurante.com/es/taller-paco-roncero/",
+  "duration": "About three hours for the longer tasting menus.",
+  "infoSource": "https://pacoroncerorestaurante.com/es/reserva/",
+  "infoChecked": "2026-10-12"
 }

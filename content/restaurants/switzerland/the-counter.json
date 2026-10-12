@@ -37,5 +37,30 @@
   "lunchNoteFr": "Menu déjeuner",
   "lunchNoteIt": "Menu pranzo",
   "chef": "Mitja Birlo",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "tasting menu",
+      "meal": "dinner",
+      "price": 320,
+      "wine": 195,
+      "note": "Dinner Wednesday to Saturday; alcohol-free pairing CHF 170"
+    },
+    {
+      "name": "Saturday lunch tasting menu",
+      "meal": "lunch",
+      "price": 220,
+      "wine": 115,
+      "note": "Saturday lunch (also Sunday lunch from 15 November to 20 December 2026); alcohol-free pairing CHF 95"
+    }
+  ],
+  "menusSource": "https://www.the-counter.ch/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through SevenRooms on the restaurant's website. A credit card is needed to book. For special bookings, email guest@the-counter.ch.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/thecounterzurich/reservations/create/search/",
+  "bookingPhone": "+41 44 244 32 16",
+  "cancellation": "Free cancellation up to 48 hours before; after that the full menu price is charged if the seats can't be filled again.",
+  "groups": "For groups of four to six there is a Private Table, which can be booked online.",
+  "infoSource": "https://www.the-counter.ch/",
+  "infoChecked": "2026-10-12"
 }

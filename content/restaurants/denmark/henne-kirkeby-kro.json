@@ -30,5 +30,51 @@
   "chef": "Paul Cunningham",
   "chefSource": "michelin",
   "dinnerNoteDa": "Smagsmenu (andre menuer fra 1.795 kr.)",
-  "lunchNoteDa": "Frokostmenu"
+  "lunchNoteDa": "Frokostmenu",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 2495,
+      "wine": 2200,
+      "note": "Wednesday to Saturday, for the whole table; wine pairings DKK 2,200 (Explore), DKK 4,400 (Essence) or DKK 8,800 (Experience); caviar crumpet DKK 450 and wagyu DKK 900 for two extra"
+    },
+    {
+      "name": "Four-course dinner menu",
+      "meal": "dinner",
+      "price": 1995,
+      "courses": 4,
+      "note": "Wednesday to Friday; dishes chosen from the evening menu; extra courses DKK 450"
+    },
+    {
+      "name": "Three-course dinner menu",
+      "meal": "dinner",
+      "price": 1795,
+      "courses": 3,
+      "note": "Wednesday to Friday"
+    },
+    {
+      "name": "Three-course lunch menu",
+      "meal": "lunch",
+      "price": 795,
+      "wine": 750,
+      "courses": 3,
+      "note": "Thursday to Saturday, with snacks; pairing DKK 750 for three half glasses or DKK 1,500 for full glasses"
+    },
+    {
+      "name": "Four-course lunch menu",
+      "meal": "lunch",
+      "price": 1095,
+      "wine": 1000,
+      "courses": 4,
+      "note": "Thursday to Saturday, with snacks; pairing DKK 1,000 for half glasses or DKK 2,000 for full glasses"
+    }
+  ],
+  "menusSource": "https://www.hennekirkebykro.dk/da/Mad",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "By phone or email only (info@hennekirkebykro.dk); there is no online booking. Tables and rooms for the coming season can be booked at any time of year. The 2026 season ends on 19 December; the 2027 season runs from the evening of 5 March to 30 October.",
+  "bookingPhone": "+45 75 25 54 00, Monday, Wednesday, Thursday and Friday 9am to 3pm, Tuesday 9am to 1pm",
+  "waitlist": "When a date is full, the booking manager can put guests on a waiting list with their preferred dates and alternatives.",
+  "infoSource": "https://www.hennekirkebykro.dk/en/Reservation",
+  "infoChecked": "2026-10-12"
 }

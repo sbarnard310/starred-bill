@@ -9,16 +9,16 @@
   "reviews": 3120,
   "dinner": 155,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 8 courses",
+  "dinnerNote": "Tasting menu, 8 courses (Sommelier pairing £130)",
   "wine": 80,
-  "sourceType": "press",
-  "source": "https://www.thefork.com/restaurant/galvin-la-chapelle-r632801/menu",
+  "sourceType": "site",
+  "source": "https://galvinrestaurants.com/galvin-la-chapelle/menus/",
   "lunch": 49,
   "lunchType": "menu",
   "lunchNote": "Set lunch, 2 courses (3 courses £55) · Mon–Sat",
   "lunchWine": 41,
-  "lunchSourceType": "press",
-  "lunchSource": "https://allsetlondon.com/r/galvin-la-chapelle",
+  "lunchSourceType": "site",
+  "lunchSource": "https://galvinrestaurants.com/galvin-la-chapelle/menus/",
   "website": "https://galvinrestaurants.com/",
   "lat": 51.520295,
   "lng": -0.0783716,
@@ -29,5 +29,51 @@
     "vegetarian"
   ],
   "chef": "Chris Galvin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 155,
+      "wine": 80,
+      "courses": 8,
+      "note": "Lunch or dinner, not Sunday lunch; Classic pairing £80, or Sommelier pairing £130; vegetarian and vegan tasting menus offered"
+    },
+    {
+      "name": "Set lunch",
+      "meal": "lunch",
+      "price": 49,
+      "courses": 2,
+      "note": "Monday to Saturday; three courses £55; some dishes carry a supplement"
+    },
+    {
+      "name": "Sunday lunch",
+      "meal": "lunch",
+      "price": 49,
+      "courses": 2,
+      "note": "Sundays; three courses £55"
+    }
+  ],
+  "menusSource": "https://galvinrestaurants.com/galvin-la-chapelle/menus/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Galvin Bistrot & Bar",
+      "note": "Its more casual sister restaurant in the same building, with an à la carte bistro menu.",
+      "url": "https://galvinrestaurants.com/galvin-bistrot-bar/menus/"
+    }
+  ],
+  "bookingOpens": "Online through OpenTable, or by phone or email.",
+  "bookingUrl": "https://galvinrestaurants.com/galvin-la-chapelle/book-a-table/",
+  "bookingPhone": "+44 20 7299 0400",
+  "cancellation": "Cancelling or changing a booking with less than 48 hours' notice, or not turning up, costs £50 a person. Large or special-date bookings may have a different rule, set out in the confirmation email.",
+  "walkIns": "The bar is kept for dining guests; there are no drinks-only bookings.",
+  "groups": "Private dining in The Gallery mezzanine and The Arch room, or the whole restaurant for up to 150 guests. Email privatedining.city@galvinrestaurants.com or call and choose option 2.",
+  "groupsUrl": "https://galvinrestaurants.com/private-dining/galvin-la-chapelle/",
+  "dressCode": "Smart casual. No flip-flops, sliders, tracksuits, gym trainers, ripped jeans, beachwear, hoodies or leggings.",
+  "children": "Children of all ages are welcome. Highchairs on request, and a children's menu for under-12s.",
+  "byob": "Up to two bottles of wine or Champagne per booking, with corkage from £65 a bottle; ask the restaurant first. Not for private dining.",
+  "servicePct": 15,
+  "infoSource": "https://galvinrestaurants.com/galvin-la-chapelle/faqs/",
+  "infoChecked": "2026-10-12"
 }

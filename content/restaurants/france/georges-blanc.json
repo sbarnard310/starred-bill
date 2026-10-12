@@ -8,20 +8,19 @@
   "cuisine": "Classic Cuisine",
   "rating": 4.5,
   "reviews": 2515,
-  "dinner": 140,
+  "dinner": 350,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €130)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 130 €)",
-  "wine": 110,
+  "dinnerNote": "Saveurs au Village menu, 6 courses (5 courses €290)",
+  "dinnerNoteFr": "Menu « Saveurs au Village » en 6 séquences (5 séquences 290 €)",
+  "wine": 250,
   "sourceType": "site",
   "source": "https://www.georgesblanc.com/media/original/651bee94c8c85/carte-restaurant-georges-blanc.pdf",
-  "lunch": 140,
+  "lunch": 195,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sun",
-  "lunchNoteFr": "Même menu le midi · ven.–dim.",
-  "lunchWine": 110,
+  "lunchNote": "L'Escale Bressane lunch menu · Fri–Sun",
+  "lunchNoteFr": "Menu du déjeuner « L'Escale Bressane » · ven.–dim.",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.georgesblanc.com/media/original/651bee94c8c85/carte-restaurant-georges-blanc.pdf",
+  "lunchSource": "https://www.georgesblanc.com/media/original/08-gb-formule-dejeuner-ete-internet-3.pdf",
   "website": "https://www.georgesblanc.com",
   "lat": 46.2201083,
   "lng": 4.9894987,
@@ -32,5 +31,47 @@
     "vegan"
   ],
   "chef": "Georges Blanc",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Saveurs au Village menu, six courses",
+      "meal": "dinner",
+      "price": 350,
+      "wine": 250,
+      "courses": 6,
+      "note": "Lunch or dinner; the whole table takes the same menu; wine pairing €250 or alcohol-free pairing €130, both with water and coffee"
+    },
+    {
+      "name": "Saveurs au Village menu, five courses",
+      "meal": "dinner",
+      "price": 290,
+      "wine": 210,
+      "courses": 5,
+      "note": "Lunch or dinner; wine pairing €210 or alcohol-free pairing €110"
+    },
+    {
+      "name": "L'Escale Bressane lunch menu",
+      "meal": "lunch",
+      "price": 195,
+      "note": "Lunch only, to be chosen when booking, not on public holidays, their eves or event days; three glasses chosen by the head sommelier for €140"
+    }
+  ],
+  "menusSource": "https://www.georgesblanc.com/fr/gastronomie/restaurant-gastronomique-georges-blanc.html",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "L'Ancienne Auberge",
+      "price": 49,
+      "note": "The family's Bresse bistro in the same village, open every day: set menus at €49 and €78, Bresse chicken from €33",
+      "url": "https://www.georgesblanc.com/fr/gastronomie/ancienne-auberge.html"
+    }
+  ],
+  "hotel": "the Hôtel Georges Blanc Parc & Spa, a Relais & Châteaux hotel",
+  "bookingOpens": "Online through Guestonline, or by phone or email (reservation@georgesblanc.com).",
+  "bookingUrl": "https://ib.guestonline.fr/instabook/bookings/b6sadeK/selection",
+  "bookingPhone": "+33 4 74 50 90 90",
+  "groups": "Tables of six or more are booked by phone or email, with a deposit of €100 a person. From seven guests the menu must be chosen in advance.",
+  "dressCode": "Smart dress is appreciated: long trousers and closed shoes for men.",
+  "infoSource": "https://www.georgesblanc.com/fr/gastronomie/restaurant-gastronomique-georges-blanc.html",
+  "infoChecked": "2026-10-12"
 }

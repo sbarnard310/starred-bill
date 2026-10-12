@@ -9,10 +9,10 @@
   "reviews": 349,
   "dinnerType": "menu",
   "dinner": 945,
-  "dinnerNote": "Tasting menu (other menus from PLN 645)",
+  "dinnerNote": "Utopia tasting menu (other menus from PLN 645)",
   "sourceType": "site",
-  "source": "https://www.oliviastar.pl/restauracje/arco-by-paco-perez/",
-  "wine": 415,
+  "source": "https://www.oliviastar.pl/en/restaurants/arco-by-paco-perez/",
+  "wine": 490,
   "website": "https://www.oliviastar.pl/restauracje/arco-by-paco-perez/",
   "lat": 54.4035847,
   "lng": 18.5710527,
@@ -23,8 +23,50 @@
   ],
   "chef": "Paco Pérez",
   "chefSource": "site",
-  "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 645)",
+  "dinnerNotePl": "Menu degustacyjne Utopia (inne menu od PLN 645)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePl": "Tylko kolacje"
+  "lunchNotePl": "Tylko kolacje",
+  "menus": [
+    {
+      "name": "Utopia tasting menu",
+      "meal": "dinner",
+      "price": 945,
+      "wine": 490,
+      "courses": 17,
+      "note": "Served only if the whole table chooses it; no dairy-free, meat-free, fish-free or seafood-free version. Essentia Iberica pairing PLN 490, or Essentia Europea PLN 790."
+    },
+    {
+      "name": "Hall of Fame tasting menu",
+      "meal": "dinner",
+      "price": 695,
+      "wine": 415,
+      "courses": 10,
+      "note": "Essentia Iberica pairing PLN 415, or Essentia Europea PLN 690."
+    },
+    {
+      "name": "Green Green Grass vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 645,
+      "wine": 415,
+      "courses": 10,
+      "note": "Essentia Iberica pairing PLN 415, or Essentia Europea PLN 690."
+    }
+  ],
+  "menusSource": "https://www.oliviastar.pl/en/restaurants/arco-by-paco-perez/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Treinta y Tres",
+      "note": "Spanish tapas, seafood and desserts from the same kitchen team, in a more casual room on the same 33rd floor.",
+      "url": "https://www.oliviastar.pl/en/restaurants/treinta-y-tres/"
+    }
+  ],
+  "bookingOpens": "Online through OpenTable, linked from the restaurant's website, or by phone or email (info@arcorestaurant.com). The last tables are booked for 8:30pm.",
+  "bookingUrl": "https://www.opentable.com/restaurant/profile/337866",
+  "bookingPhone": "+48 731 334 332",
+  "cancellation": "A deposit must be paid within three days of booking, by a payment link the restaurant sends; it is not refunded if the booking isn't used.",
+  "dressCode": "Smart casual or more elegant.",
+  "infoSource": "https://www.oliviastar.pl/wp-content/uploads/2026/10/Przewodnik-ARCO-PL-ENG-1.pdf",
+  "infoChecked": "2026-10-12"
 }

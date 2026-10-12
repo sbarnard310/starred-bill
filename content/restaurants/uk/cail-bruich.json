@@ -9,13 +9,13 @@
   "reviews": 602,
   "dinner": 140,
   "dinnerType": "menu",
-  "dinnerNote": "Dinner menu",
+  "dinnerNote": "Dinner tasting menu (Chef's Table £210)",
   "wine": 100,
   "sourceType": "site",
   "source": "https://www.cailbruich.co.uk/",
   "lunch": 100,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu, Fri–Sat",
+  "lunchNote": "Lunch tasting menu · Fri–Sat",
   "lunchWine": 85,
   "lunchSourceType": "site",
   "lunchSource": "https://www.cailbruich.co.uk/",
@@ -29,5 +29,52 @@
     "vegetarian"
   ],
   "chef": "Lorna McNee",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Dinner tasting menu",
+      "meal": "dinner",
+      "price": 140,
+      "wine": 100,
+      "courses": 6,
+      "note": "Tuesday to Saturday; Hedonistic wine pairing £295; optional cheese course £15"
+    },
+    {
+      "name": "Lunch tasting menu",
+      "meal": "lunch",
+      "price": 100,
+      "wine": 85,
+      "courses": 5,
+      "note": "Friday and Saturday only; Hedonistic wine pairing £265; optional cheese course £15"
+    },
+    {
+      "name": "Chef's Table experience",
+      "meal": "dinner",
+      "price": 210,
+      "note": "Up to two guests, at lunch or dinner; the tasting menu with extra courses beside the kitchen"
+    }
+  ],
+  "menusSource": "https://www.cailbruich.co.uk/menus",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2021,
+  "bookingOpens": "Online through SevenRooms. Tables are released in seasonal blocks at 6pm on a Wednesday: January to March 2027 opens on 2 December 2026.",
+  "bookingWindow": {
+    "type": "announced",
+    "note": "Tables are released in seasonal blocks at 6pm on a Wednesday; January to March 2027 opens on 2 December 2026.",
+    "time": "18:00",
+    "tz": "Europe/London",
+    "via": "SevenRooms",
+    "source": "https://www.cailbruich.co.uk/faqs",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.sevenrooms.com/explore/cailbruich/reservations/create/search/",
+  "bookingPhone": "+44 141 334 6265, 11.30am to 2.30pm Tuesday to Thursday and 9.30am to 11am Friday and Saturday",
+  "cancellation": "A deposit of half the menu price per guest is taken when booking and taken off the bill. Cancel by email or phone more than 72 hours ahead for a full refund; later cancellations and no-shows lose the deposit.",
+  "groups": "The largest table is for six, and larger parties can't be split across tables. The whole restaurant can be hired for up to 30 guests five days a week, with a minimum spend and at least three months' notice.",
+  "groupsUrl": "https://www.cailbruich.co.uk/exclusive-hire",
+  "dressCode": "No formal dress code; smart casual is suggested.",
+  "children": "Children aged 8 and over are welcome. There is no children's menu: everyone has the tasting menu.",
+  "duration": "About 2½ to 3 hours for lunch and 3 to 3½ hours for dinner.",
+  "infoSource": "https://www.cailbruich.co.uk/faqs",
+  "infoChecked": "2026-10-12"
 }

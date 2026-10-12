@@ -12,12 +12,12 @@
   "reviews": 578,
   "dinner": 250,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase tasting menu",
+  "dinnerNote": "Omakase tasting menu, 16 courses",
   "sourceType": "site",
   "source": "https://www.humblechickenuk.com/",
   "lunch": 250,
   "lunchType": "menu",
-  "lunchNote": "Same omakase menu",
+  "lunchNote": "Same omakase menu · Saturdays only",
   "lunchSourceType": "site",
   "lunchSource": "https://www.humblechickenuk.com/",
   "website": "https://www.humblechickenuk.com/",
@@ -26,5 +26,26 @@
   "placeId": "ChIJj2LUnbgFdkgRs__gtpjkPRg",
   "michelinId": "1196274",
   "chef": "Angelo Sato",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Omakase tasting menu",
+      "meal": "dinner",
+      "price": 250,
+      "courses": 16,
+      "note": "Lunch or dinner: dinner Wednesday to Saturday at 5.45pm and 9pm, lunch Saturday at 1pm; drinks pairings from alcohol-free to sake offered, prices not published"
+    }
+  ],
+  "menusSource": "https://humblechickenuk.com/information",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2025,
+  "bookingOpens": "Online through OpenTable. The full menu price is paid in advance to secure the booking; service is charged on the night.",
+  "bookingUrl": "https://humblechickenuk.com/reservations",
+  "cancellation": "Bookings are final and the prepayment is not refunded. One change of date is allowed with at least a week's notice; after that, the booking can be passed to a friend or relative.",
+  "groups": "Bookings for more than four guests and private hire of the 13-seat counter are arranged by email at hello@humblechickenuk.com.",
+  "groupsUrl": "https://humblechickenuk.com/information",
+  "dressCode": "Smart casual. No tracksuit bottoms, hats or flip-flops.",
+  "byob": "Corkage is £100 per 75cl bottle, one bottle per guest at most.",
+  "infoSource": "https://humblechickenuk.com/information",
+  "infoChecked": "2026-10-12"
 }

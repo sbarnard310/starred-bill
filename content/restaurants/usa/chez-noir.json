@@ -9,7 +9,7 @@
   "reviews": 307,
   "dinnerType": "menu",
   "dinner": 165,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Prix fixe menu, plus 20% service charge",
   "sourceType": "site",
   "source": "https://www.cheznoircarmel.com/menu",
   "noLunch": true,
@@ -23,5 +23,36 @@
     "vegetarian"
   ],
   "chef": "Jonny Black",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Prix fixe menu",
+      "meal": "dinner",
+      "price": 165,
+      "note": "Changes daily; vegetarian options, but no vegan menu; special-event nights may be priced differently (see OpenTable); a 20% service charge and tax are added"
+    }
+  ],
+  "menusSource": "https://www.cheznoircarmel.com/menu",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on OpenTable, for parties of up to six. Each month's tables are released on the 1st of the month before (all of November on 1 October). No deposit is taken.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "tz": "America/Los_Angeles",
+    "via": "OpenTable",
+    "source": "https://www.cheznoircarmel.com/faqs",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.opentable.com/r/chez-noir-carmel-by-the-sea",
+  "cancellation": "Cancelling, or cutting the party size, less than 48 hours before costs $165 a person. Cancel through the link in the confirmation email. Tables are held for 15 minutes.",
+  "walkIns": "Walk-ins are accepted.",
+  "waitlist": "A waiting list runs on OpenTable, which emails you if a table comes free for your date and party size.",
+  "groups": "No bookings for more than six, and a group can't be split across tables. Larger parties can ask about patio or whole-restaurant buyouts by email (info@cheznoircarmel.com).",
+  "groupsUrl": "https://www.cheznoircarmel.com/private-events",
+  "children": "Designed for adults and not well suited to young children: no children's menu, high chairs or room for prams. Children and babies who come must be counted in the booking.",
+  "duration": "About two hours.",
+  "byob": "Corkage is $65 per 750ml bottle, two bottles or one magnum per table at most; not at the bar or for à la carte dining.",
+  "infoSource": "https://www.cheznoircarmel.com/faqs",
+  "infoChecked": "2026-10-12"
 }

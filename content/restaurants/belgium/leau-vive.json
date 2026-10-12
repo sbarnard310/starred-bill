@@ -9,15 +9,15 @@
   "reviews": 665,
   "dinnerType": "menu",
   "dinner": 200,
-  "dinnerNote": "Tasting menu (other menus from €150)",
+  "dinnerNote": "Six-course menu (four courses €150)",
   "wine": 85,
   "sourceType": "site",
-  "source": "https://www.eau-vive.be/llms-full.txt",
+  "source": "https://www.eau-vive.be/chambres-hotes-restaurant-gastronomique-2-etoiles-michelin-namur",
   "lunch": 100,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
+  "lunchNote": "Lunch menu, 3 courses, weekdays",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.eau-vive.be/llms-full.txt",
+  "lunchSource": "https://www.eau-vive.be/chambres-hotes-restaurant-gastronomique-2-etoiles-michelin-namur",
   "website": "https://www.eau-vive.be/",
   "lat": 50.3636851,
   "lng": 4.8469885,
@@ -26,12 +26,52 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 150)",
+  "dinnerNoteNl": "Menu zes gangen (vier gangen € 150)",
   "cuisineNl": "Modern Frans",
-  "dinnerNoteFr": "Menu dégustation (autres menus dès 150 €)",
+  "dinnerNoteFr": "Menu six services (quatre services 150 €)",
   "cuisineFr": "Cuisine française moderne",
-  "lunchNoteNl": "Lunchmenu",
-  "lunchNoteFr": "Menu déjeuner",
+  "lunchNoteNl": "Lunchmenu, 3 gangen, op weekdagen",
+  "lunchNoteFr": "Menu lunch, 3 services, en semaine",
   "chef": "Pierre Résimont",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "six-course menu",
+      "meal": "dinner",
+      "price": 200,
+      "wine": 85,
+      "courses": 6,
+      "note": "Lunch or dinner, for the whole table. Prestige wine selection €120."
+    },
+    {
+      "name": "four-course menu",
+      "meal": "dinner",
+      "price": 150,
+      "wine": 65,
+      "courses": 4,
+      "note": "Lunch or dinner, for the whole table."
+    },
+    {
+      "name": "lunch menu",
+      "meal": "lunch",
+      "price": 100,
+      "courses": 3,
+      "note": "Weekday lunch only, for the whole table."
+    }
+  ],
+  "menusSource": "https://www.eau-vive.be/chambres-hotes-restaurant-gastronomique-2-etoiles-michelin-namur",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Le Comptoir de l'Eau Vive",
+      "note": "The Résimonts' bistro in Erpent, above Namur, with a counter facing an open kitchen and a menu that changes daily. Lunch Tuesday to Saturday, dinner Thursday to Saturday.",
+      "url": "https://www.eau-vive.be/chambres-hotes-restaurant-bistro-namur"
+    }
+  ],
+  "bookingOpens": "Online through the booking widget on the restaurant's website, by phone or by email.",
+  "bookingUrl": "https://www.eau-vive.be/contacts",
+  "bookingPhone": "+32 81 41 11 51",
+  "groups": "A private salon seats up to 12 for birthdays and group dinners. A table d'hôte inside the kitchen, facing the pass and the river, seats up to eight.",
+  "infoSource": "https://www.eau-vive.be/chambres-hotes-restaurant-gastronomique-2-etoiles-michelin-namur",
+  "infoChecked": "2026-10-12"
 }

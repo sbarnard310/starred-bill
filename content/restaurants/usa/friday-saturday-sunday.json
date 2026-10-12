@@ -25,5 +25,34 @@
     "vegetarian"
   ],
   "chef": "Chad Williams",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Chef's tasting menu",
+      "meal": "dinner",
+      "price": 205,
+      "note": "Paid in advance when booking; served in the upstairs dining room."
+    }
+  ],
+  "menusSource": "https://www.fridaysaturdaysunday.com/eat",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2025,
+  "bookingOpens": "Online on OpenTable. Each month's tables open on the 1st of the month before at 10am Philadelphia time, and the tasting menu is paid in advance.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "10:00",
+    "tz": "America/New_York",
+    "via": "OpenTable",
+    "source": "https://www.fridaysaturdaysunday.com/visit",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.opentable.com/r/friday-saturday-sunday-reservations-philadelphia?restref=984535",
+  "walkIns": "The ground-floor Lovers Bar serves cocktails without a booking. Guests who can't manage the stairs (there is no lift) can eat the full dinner menu at the bar, first come, first served.",
+  "groups": "The largest table seats four. Private events are rarely possible because the restaurant is so small; ask by email at info@fridaysaturdaysunday.com.",
+  "dressCode": "Smart casual.",
+  "children": "Children under five are asked not to come, given the length of the meal.",
+  "infoSource": "https://www.fridaysaturdaysunday.com/visit",
+  "infoChecked": "2026-10-12"
 }

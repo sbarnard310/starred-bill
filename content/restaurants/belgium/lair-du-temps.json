@@ -35,5 +35,41 @@
   "lunchNoteFr": "Même menu le midi · jeu.–ven.",
   "lunchSourceType": "site",
   "lunchSource": "https://airdutemps.be/restaurant/",
-  "cuisineFr": "Cuisine créative"
+  "cuisineFr": "Cuisine créative",
+  "menus": [
+    {
+      "name": "Suprématie menu",
+      "meal": "dinner",
+      "price": 245,
+      "wine": 115,
+      "courses": 5,
+      "note": "Lunch or dinner. Five sequences of three preparations each: the Signature dishes with extra preparations. Prestige wines €250, alcohol-free pairing €65."
+    },
+    {
+      "name": "Signature menu",
+      "meal": "dinner",
+      "price": 195,
+      "wine": 115,
+      "courses": 5,
+      "note": "Lunch or dinner. Five sequences of two preparations each."
+    },
+    {
+      "name": "Produits d'exception menu",
+      "meal": "dinner",
+      "price": 395,
+      "courses": 4,
+      "note": "Four luxury dishes (carabinero prawns, king crab, wagyu with black truffle). Only when ordered ahead."
+    }
+  ],
+  "menusSource": "https://airdutemps.be/restaurant/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through Resengo on the restaurant's website, or by phone. Choose the menu when booking: one menu for the whole table.",
+  "bookingUrl": "https://airdutemps.be/reservation/",
+  "bookingPhone": "+32 81 81 30 48",
+  "cancellation": "A credit card number is taken as a guarantee only; nothing is charged when booking.",
+  "groups": "Online bookings are for up to six people. A private room with its own open kitchen, terrace and garden seats 8 to 18 (all-inclusive Suprématie formula €405 a person, with wines, water and coffee); the whole restaurant can be booked from 20 guests.",
+  "groupsUrl": "https://airdutemps.be/tableexclusive/",
+  "dressCode": "Smart dress is requested (tenue de ville).",
+  "infoSource": "https://airdutemps.be/contact/",
+  "infoChecked": "2026-10-12"
 }

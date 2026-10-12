@@ -13,15 +13,15 @@
   "dinnerType": "menu",
   "dinnerNote": "Dinner course",
   "dinnerNoteKo": "디너 코스",
-  "wine": 230000,
-  "sourceType": "press",
-  "source": "https://www.catchtable.net/shop/eatanicgarden",
+  "wine": 300000,
+  "sourceType": "site",
+  "source": "https://jpg.josunhotel.com/dining/EatanicGarden.do",
   "lunch": 250000,
   "lunchType": "menu",
   "lunchNote": "Lunch course",
   "lunchNoteKo": "런치 코스",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.catchtable.net/shop/eatanicgarden",
+  "lunchSourceType": "site",
+  "lunchSource": "https://jpg.josunhotel.com/dining/EatanicGarden.do",
   "website": "https://jpg.josunhotel.com/dining/EatanicGarden.do",
   "lat": 37.50304,
   "lng": 127.04158,
@@ -32,5 +32,37 @@
     "vegan"
   ],
   "chef": "Son Jong-won",
-  "chefSource": "press"
+  "chefSource": "press",
+  "lunchWine": 200000,
+  "menus": [
+    {
+      "name": "Dinner course",
+      "meal": "dinner",
+      "price": 370000,
+      "wine": 300000,
+      "courses": 11,
+      "note": "Wine and sool (Korean drinks) pairing ₩300,000. Wednesday to Sunday."
+    },
+    {
+      "name": "Lunch course",
+      "meal": "lunch",
+      "price": 250000,
+      "wine": 200000,
+      "courses": 10,
+      "note": "Wine and sool pairing ₩200,000. One course can be upgraded for ₩75,000. Wednesday to Sunday."
+    }
+  ],
+  "menusSource": "https://jpg.josunhotel.com/dining/EatanicGarden.do",
+  "menusChecked": "2026-10-12",
+  "hotel": "the Josun Palace, a Luxury Collection Hotel, Seoul Gangnam",
+  "bookingOpens": "Online through Catchtable only; the restaurant no longer takes bookings by phone. Phone enquiries are answered 3pm to 5:30pm, Wednesday to Sunday. Seats (chef's table, dining room or sofa tables) are given in order of booking and can't be chosen.",
+  "bookingUrl": "https://app.catchtable.co.kr/ct/shop/eatanicgarden",
+  "bookingPhone": "+82 2 727 7610, enquiries 3pm to 5:30pm Wednesday to Sunday",
+  "cancellation": "Deposits are refunded in full for cancellations or changes two days ahead, half one day ahead, and not at all on the day. Arriving more than 15 minutes late without warning counts as a no-show. Changes to numbers on the day are difficult.",
+  "groups": "Private rooms for 3 to 4 or 5 to 8 guests, ₩100,000 room charge. For exclusive hire, email eatanicgarden@josunpalace.com.",
+  "dressCode": "Business casual. No tracksuit trousers, slippers or sandals, and no shorts for men.",
+  "children": "Children under 8 are not admitted.",
+  "byob": "No outside drinks, except a corkage-free bottle of wine a day for Club Josun members.",
+  "infoSource": "https://jpg.josunhotel.com/dining/EatanicGarden.do",
+  "infoChecked": "2026-10-12"
 }

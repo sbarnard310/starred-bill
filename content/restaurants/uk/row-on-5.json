@@ -12,10 +12,10 @@
   "reviews": 233,
   "dinner": 250,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "wine": 150,
+  "dinnerNote": "15-course tasting menu",
+  "wine": 155,
   "sourceType": "site",
-  "source": "https://www.rowon5london.com/",
+  "source": "https://www.rowon5london.com/wp-content/uploads/2026/09/WL_03_09.pdf",
   "lunch": 150,
   "lunchType": "menu",
   "lunchNote": "Lunch menu · Fri–Sat",
@@ -32,6 +32,28 @@
   ],
   "chef": "Spencer Metzger",
   "chefSource": "michelin",
+  "lunchWine": 95,
+  "menus": [
+    {
+      "name": "15-course tasting menu",
+      "meal": "dinner",
+      "price": 250,
+      "wine": 155,
+      "courses": 15,
+      "note": "Dinner Tuesday to Saturday; Heritage pairing £265, Refinement of Wine pairing £1,150, Clearheaded alcohol-free pairing £95"
+    },
+    {
+      "name": "Lunch menu",
+      "meal": "lunch",
+      "price": 150,
+      "wine": 95,
+      "note": "Friday and Saturday; Heritage pairing £205, Refinement of Wine £815, alcohol-free £75"
+    }
+  ],
+  "menusSource": "https://www.rowon5london.com/menus",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2026,
+  "bookingOpens": "Online through SevenRooms, up to three months ahead, for up to six people.",
   "bookingWindow": {
     "type": "rolling",
     "months": 3,
@@ -39,5 +61,11 @@
     "via": "website",
     "source": "https://www.rowon5london.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://www.sevenrooms.com/reservations/rowon5/",
+  "cancellation": "A deposit per person is taken for lunch and dinner. It is refunded in full only with at least a month's notice; after that it is non-refundable, though the booking can be moved if the restaurant is told in advance.",
+  "groups": "Private dining by email to reservations@rowon5london.com.",
+  "children": "Children aged 8 and over who can eat the tasting menu are welcome; not suitable for under-8s, and there are no child facilities.",
+  "infoSource": "https://www.rowon5london.com/",
+  "infoChecked": "2026-10-12"
 }

@@ -29,7 +29,44 @@
   "lunchSource": "https://pedrolemos.pt/wp-content/uploads/2026/03/Menu-PT.pdf",
   "cuisinePt": "Atual",
   "wine": 120,
-  "dinnerNote": "Tasting menu (à la carte, 3 courses, €150)",
-  "dinnerNotePt": "Menu de degustação (à la carte, 3 pratos, 150 €)",
-  "lunchWine": 120
+  "dinnerNote": "Tasting menu (à la carte, 4 courses, €150)",
+  "dinnerNotePt": "Menu de degustação (à la carte, 4 pratos, 150 €)",
+  "lunchWine": 120,
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 180,
+      "wine": 120,
+      "courses": 7,
+      "note": "Lunch or dinner. Imperial caviar €25 and cheeses €20 extra. At tables of more than four, everyone orders the same."
+    },
+    {
+      "name": "Four-course à la carte menu",
+      "meal": "dinner",
+      "price": 150,
+      "courses": 4,
+      "note": "Lunch or dinner. Two starters, a main course and a dessert chosen from the à la carte list."
+    }
+  ],
+  "menusSource": "https://pedrolemos.pt/wp-content/uploads/2026/03/Menu-EN.pdf",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Único",
+      "note": "An eight-seat private table inside the kitchen with its own set menu and pairing, prepaid when booking.",
+      "url": "https://pedrolemos.pt/en/unico/"
+    }
+  ],
+  "bookingOpens": "Online through the TheFork booking form on the restaurant's website. A confirmation email follows; if it doesn't arrive within 10 minutes, check spam or contact the restaurant.",
+  "bookingUrl": "https://pedrolemos.pt/en/reservar-restaurante/",
+  "bookingPhone": "+351 22 011 5986",
+  "cancellation": "Card details secure the booking; nothing is charged at the time. Free to cancel or change up to 24 hours before. Later cancellations, no-shows and missing guests can be charged €140 per person.",
+  "waitlist": "When a date is full there's an optional waiting list, which can be joined for more than one date. The restaurant calls if a table comes free through a cancellation.",
+  "groups": "Groups of seven or more can book online or by email. Groups of more than eight pay €150 per person in advance to confirm. The whole restaurant can be booked for events by email.",
+  "groupsUrl": "https://pedrolemos.pt/en/reservar-sala-privada/",
+  "dressCode": "Smart casual. No hats, flip-flops or sportswear.",
+  "children": "Children aged 8 and over only.",
+  "infoSource": "https://pedrolemos.pt/en/faq/",
+  "infoChecked": "2026-10-12"
 }

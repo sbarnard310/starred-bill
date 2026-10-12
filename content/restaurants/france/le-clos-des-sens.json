@@ -8,10 +8,10 @@
   "cuisine": "Creative",
   "rating": 4.7,
   "reviews": 1142,
-  "dinner": 258,
+  "dinner": 288,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
+  "dinnerNote": "Grande Fête menu, 9 courses (7-course menu €258, not Friday or Saturday dinner)",
+  "dinnerNoteFr": "Menu « Grande Fête », 9 saveurs (menu en 7 saveurs à 258 €, sauf vendredi et samedi soir)",
   "sourceType": "site",
   "source": "https://clos-des-sens.cdn.prismic.io/clos-des-sens/aBn2lPIqRLdaB5x0_20250506_MenusCDSdocx.pdf",
   "lunch": 168,
@@ -32,5 +32,49 @@
     "gluten-free"
   ],
   "chef": "Franck Derouet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "lunch": 168,
+  "lunchType": "menu",
+  "lunchNote": "Prémices menu, 4 courses · weekday lunch, not July–August",
+  "lunchNoteFr": "Menu « Prémices », 4 saveurs · déjeuner en semaine, hors juillet-août",
+  "lunchSourceType": "site",
+  "lunchSource": "https://clos-des-sens.cdn.prismic.io/clos-des-sens/aBn2lPIqRLdaB5x0_20250506_MenusCDSdocx.pdf",
+  "menus": [
+    {
+      "name": "Grande Fête menu",
+      "meal": "dinner",
+      "price": 288,
+      "courses": 9,
+      "note": "Lunch or dinner, except on special evenings; the whole table has the same menu"
+    },
+    {
+      "name": "Plein d'Envies menu",
+      "meal": "dinner",
+      "price": 258,
+      "courses": 7,
+      "note": "Lunch or dinner, but not Friday or Saturday dinner or special evenings"
+    },
+    {
+      "name": "Prémices menu",
+      "meal": "lunch",
+      "price": 168,
+      "courses": 4,
+      "note": "Weekday lunch only (Wednesday and Friday), not in July and August or on public holidays"
+    }
+  ],
+  "menusSource": "https://closdessens.com/la-table",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Le Cortil",
+      "note": "Summer restaurant in the hotel's garden from May, with sharing plates cooked over embers; starters €24–34, mains €62–66 on the 2026 menu; bookings on +33 6 36 09 36 37",
+      "url": "https://closdessens.com/le-cortil"
+    }
+  ],
+  "hotel": "Le Clos des Sens, a five-star Relais & Châteaux hotel",
+  "bookingOpens": "Online through Zenchef, or by phone. A booking is final only once the restaurant confirms it.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=357602",
+  "bookingPhone": "+33 4 50 23 07 90",
+  "infoSource": "https://closdessens.com/contact",
+  "infoChecked": "2026-10-12"
 }

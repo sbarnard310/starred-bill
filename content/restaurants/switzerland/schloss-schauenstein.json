@@ -39,5 +39,60 @@
   "lunchWine": 186,
   "lunchSourceType": "site",
   "lunchSource": "https://www.schauenstein.ch/restaurant",
-  "cuisineIt": "Creativa"
+  "cuisineIt": "Creativa",
+  "menus": [
+    {
+      "name": "five-course menu",
+      "meal": "dinner",
+      "price": 318,
+      "wine": 186,
+      "courses": 5,
+      "note": "Lunch or dinner; alcohol-free drinks pairing CHF 110"
+    },
+    {
+      "name": "four-course menu",
+      "meal": "dinner",
+      "price": 298,
+      "courses": 4,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "three-course menu",
+      "meal": "dinner",
+      "price": 266,
+      "courses": 3,
+      "note": "Lunch or dinner"
+    }
+  ],
+  "menusSource": "https://www.schauenstein.ch/restaurant",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Casa Caminada",
+      "note": "Andreas Caminada's inn in Fürstenau, serving Graubünden dishes.",
+      "url": "https://www.casacaminada.com/"
+    },
+    {
+      "name": "Oz",
+      "note": "The group's vegetarian farm-to-table restaurant in Fürstenau, with a nine-course menu.",
+      "url": "https://www.oz-restaurant.com/"
+    }
+  ],
+  "starsSince": 2010,
+  "bookingOpens": "By request through the form on the restaurant's website, by phone or by email to kontakt@schauenstein.ch. Tables and rooms can be booked up to eight months ahead; the reservations page lists short-notice tables and rooms that have come free.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 8,
+    "via": "request form",
+    "tz": "Europe/Zurich",
+    "source": "https://www.schauenstein.ch/reservierung",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.schauenstein.ch/reservierung",
+  "bookingPhone": "+41 81 632 10 80",
+  "cancellation": "A table booked without a room costs CHF 350 per person if cancelled less than 14 days ahead or not used. With a room the deadline is 21 days (the full room price plus CHF 350 per person), and for groups of more than six, 30 days.",
+  "groups": "The Chef's Table seats up to 12 at one long table beside the kitchen, for CHF 650 per person including its own menu and drinks pairing; it can be booked for six or more.",
+  "groupsUrl": "https://www.schauenstein.ch/chefs-table-de",
+  "infoSource": "https://www.schauenstein.ch/reservierung",
+  "infoChecked": "2026-10-12"
 }

@@ -34,5 +34,28 @@
     "vegetarian"
   ],
   "chef": "Michaël Arnoult",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Expérience menu",
+      "meal": "dinner",
+      "price": 280,
+      "note": "Lunch or dinner, Thursday to Sunday"
+    },
+    {
+      "name": "Découverte menu",
+      "meal": "dinner",
+      "price": 220,
+      "note": "Lunch or dinner, Thursday to Sunday"
+    }
+  ],
+  "menusSource": "https://www.les-morainieres.com/fr/restaurant-gastronomique-jongieux.html",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2026,
+  "bookingOpens": "Online through Guestonline, or by phone or email (contact@les-morainieres.com). Guests arrive between 12.15pm and 12.30pm for lunch and between 7.30pm and 8pm for dinner, Thursday to Sunday.",
+  "bookingUrl": "https://ib.guestonline.fr/instabook/bookings/JcPMLmp/selection",
+  "bookingPhone": "+33 4 79 44 09 39",
+  "dressCode": "Classic or smart dress is requested: no shorts or flip-flops.",
+  "infoSource": "https://ib.guestonline.fr/instabook/bookings/JcPMLmp/selection",
+  "infoChecked": "2026-10-12"
 }

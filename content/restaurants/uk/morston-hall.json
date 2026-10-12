@@ -9,13 +9,13 @@
   "reviews": 456,
   "dinner": 145,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 7 courses",
+  "dinnerNote": "Journey tasting menu (Discovery menu £110, Sun–Fri)",
   "wine": 95,
   "sourceType": "site",
-  "source": "https://www.morstonhall.com/dinner",
+  "source": "https://morstonhall.com/dining/",
   "lunch": 70,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu · Fri–Sun",
+  "lunchNote": "Lunch tasting menu · weekends",
   "lunchWine": 50,
   "lunchSourceType": "site",
   "lunchSource": "https://morstonhall.com/wp-content/uploads/2025/12/Lunch-Sample-Menu-May-2026.pdf",
@@ -28,5 +28,38 @@
     "vegetarian-menu"
   ],
   "chef": "Farrel Hirsch",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Journey tasting menu",
+      "meal": "dinner",
+      "price": 145,
+      "wine": 95,
+      "note": "Every evening; 6-glass wine flight, or alcohol-free flight £50; cheese course £17.50 extra"
+    },
+    {
+      "name": "Discovery menu",
+      "meal": "dinner",
+      "price": 110,
+      "wine": 65,
+      "note": "Sunday to Friday evenings; 4-glass wine flight, or alcohol-free £35"
+    },
+    {
+      "name": "Lunch tasting menu",
+      "meal": "lunch",
+      "price": 70,
+      "wine": 50,
+      "note": "Weekend lunch; 4-glass wine flight"
+    }
+  ],
+  "menusSource": "https://morstonhall.com/dining/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through OpenTable from the hotel's website, or by phone. Hotel guests book their table with the room.",
+  "bookingPhone": "+44 1263 741041",
+  "cancellation": "Dining-only bookings pay the deposit shown on OpenTable, refunded in full up to five days ahead and kept with less notice. Hotel guests pay a £100 deposit per night to hold their table.",
+  "dressCode": "Smart casual. Jeans, shirts and relaxed tailoring are fine; no sportswear.",
+  "children": "Not suitable for children under 12; the private dining rooms can be used for family celebrations.",
+  "duration": "Two to three hours for the tasting menu.",
+  "infoSource": "https://morstonhall.com/booking-terms-and-conditions/",
+  "infoChecked": "2026-10-12"
 }

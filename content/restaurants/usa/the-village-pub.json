@@ -14,7 +14,7 @@
   "source": "https://www.thevillagepub.net/s/VP_Dinner_92326.pdf",
   "lunch": 65,
   "lunchType": "menu",
-  "lunchNote": "Prix-fixe lunch",
+  "lunchNote": "Prix-fixe lunch, 2 courses · Fridays only",
   "lunchSourceType": "site",
   "lunchSource": "https://www.thevillagepub.net/s/VP_Lunch_92326.pdf",
   "website": "https://www.thevillagepub.net/",
@@ -26,5 +26,47 @@
     "vegetarian"
   ],
   "chef": "Mark Sullivan",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Prix-fixe dinner",
+      "meal": "dinner",
+      "price": 130,
+      "courses": 3,
+      "note": "Every evening, 5pm to 9pm; starter, main and dessert with canapés and mignardises; some dishes carry supplements; a 6% San Mateo County fee is added"
+    },
+    {
+      "name": "Prix-fixe lunch",
+      "meal": "lunch",
+      "price": 65,
+      "courses": 2,
+      "note": "Fridays only, 11.30am to 2.30pm; starter and main; a 6% county fee is added"
+    },
+    {
+      "name": "Prix-fixe brunch",
+      "meal": "lunch",
+      "price": 85,
+      "courses": 3,
+      "note": "Weekends, 11am to 2pm; a 6% county fee is added"
+    }
+  ],
+  "menusSource": "https://www.thevillagepub.net/menus",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "The Pub menu",
+      "note": "A separate pub menu, also on the restaurant's menus page.",
+      "url": "https://www.thevillagepub.net/menus"
+    }
+  ],
+  "starsSince": 2009,
+  "bookingOpens": "Online on OpenTable or by phone. Bookings are recommended.",
+  "bookingUrl": "https://www.thevillagepub.net/reservations",
+  "bookingPhone": "+1 650-851-9888",
+  "walkIns": "Walk-ins are always welcome.",
+  "groups": "For more than six, contact the private dining coordinator: three private dining rooms and an outdoor veranda are available (+1 650-851-6844, events@thevillagepub.net).",
+  "groupsUrl": "https://www.thevillagepub.net/private-dining",
+  "byob": "Corkage is $75 per 750ml bottle.",
+  "infoSource": "https://www.thevillagepub.net/reservations",
+  "infoChecked": "2026-10-12"
 }

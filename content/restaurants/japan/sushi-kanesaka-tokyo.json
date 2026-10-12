@@ -33,5 +33,23 @@
   "placeId": "ChIJ4bf41-eLGGAR-8MK9GqIm7c",
   "michelinId": "1193997",
   "chef": "Shinji Kanesaka",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "alsoTry": [
+    {
+      "name": "Sushi Kanesaka Palace Hotel Tokyo",
+      "price": 25300,
+      "note": "The group's branch in the Palace Hotel Tokyo: Hagi dinner course (crab, 15 nigiri and soup), lunch from ¥9,487, omakase from ¥44,275; prices include tax and service; books online or through a concierge",
+      "url": "https://www.sushi-kanesaka.com/en"
+    },
+    {
+      "name": "Aoyama Sushi Kanesaka",
+      "price": 18150,
+      "note": "In The Aoyama Grand Hotel: Fuji course at lunch or dinner, Kiwami omakase ¥30,250, lunch from ¥7,865; prices include tax and service",
+      "url": "https://www.sushi-kanesaka.com/en"
+    }
+  ],
+  "bookingOpens": "The restaurant doesn't take bookings from guests directly: book through your hotel's concierge, who calls the restaurant.",
+  "bookingPhone": "+81 3-5568-4411",
+  "infoSource": "https://www.sushi-kanesaka.com/en",
+  "infoChecked": "2026-10-12"
 }

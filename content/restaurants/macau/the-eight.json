@@ -30,5 +30,41 @@
   "michelinId": "231088",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "chef": "Joseph Tse",
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "The Eight Tasting Menu",
+      "meal": "dinner",
+      "price": 1880,
+      "courses": 6,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "The Eight Precious Menu",
+      "meal": "dinner",
+      "price": 3280,
+      "wine": 800,
+      "courses": 8,
+      "note": "Lunch or dinner; MOP$4,080 with the wine pairing"
+    },
+    {
+      "name": "The Eight Selected Luncheon",
+      "meal": "lunch",
+      "price": 498,
+      "note": "Tuesday to Friday lunch only, for at least two people; booked at least a day ahead"
+    }
+  ],
+  "menusSource": "https://www.grandlisboahotels.com/en/dining/the-8",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2024,
+  "hotel": "the Grand Lisboa",
+  "bookingOpens": "Online through the Grand Lisboa's reservation form on the restaurant's page, or by phone.",
+  "bookingUrl": "https://www.grandlisboahotels.com/en/dining/the-8",
+  "bookingPhone": "+853 8803 7788",
+  "dressCode": "Smart casual. Men need full-length trousers; no slippers, open shoes, sandals or sleeveless tops. Women: no slippers or caps.",
+  "children": "All ages are welcome.",
+  "infoSource": "https://www.grandlisboahotels.com/en/dining/the-8",
+  "infoChecked": "2026-10-12"
 }

@@ -13,16 +13,59 @@
   "changeDate": "2026-03",
   "rating": 5,
   "reviews": 1,
-  "dinner": 230000,
+  "dinner": 380000,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase, from",
-  "dinnerNoteKo": "오마카세, 최저가",
+  "dinnerNote": "Chef Tamaru's omakase, Tue–Sat (Chef Jo Bongsu's ₩330,000, Sun–Mon)",
+  "dinnerNoteKo": "타마루 셰프 오마카세, 화~토 (조봉수 셰프 오마카세 ₩330,000, 일~월)",
   "sourceType": "site",
-  "source": "https://seoul.intercontinental.com/grandicparnas",
-  "noLunch": true,
+  "source": "https://seoul.intercontinental.com/en/dining/restaurants/sushi-kanesaka",
+  "noLunch": false,
   "website": "https://seoul.intercontinental.com/grandicparnas",
   "lat": 37.50904,
   "lng": 127.06089,
   "placeId": "ChIJm9HFAgClfDURqp0_Hrb6jpQ",
-  "michelinId": "1244365"
+  "michelinId": "1244365",
+  "lunch": 230000,
+  "lunchType": "menu",
+  "lunchNote": "Chef Jo Bongsu's omakase, Sun–Mon (Chef Tamaru's ₩280,000, Tue–Sat)",
+  "lunchNoteKo": "조봉수 셰프 오마카세, 일~월 (타마루 셰프 오마카세 ₩280,000, 화~토)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://seoul.intercontinental.com/en/dining/restaurants/sushi-kanesaka",
+  "menus": [
+    {
+      "name": "Chef Tamaru's omakase",
+      "meal": "dinner",
+      "price": 380000,
+      "note": "Tuesday to Saturday. Lunch version ₩280,000."
+    },
+    {
+      "name": "Chef Jo Bongsu's omakase",
+      "meal": "dinner",
+      "price": 330000,
+      "note": "Sunday and Monday. Lunch version ₩230,000."
+    },
+    {
+      "name": "Chef Tamaru's omakase lunch",
+      "meal": "lunch",
+      "price": 280000,
+      "note": "Tuesday to Saturday."
+    },
+    {
+      "name": "Chef Jo Bongsu's omakase lunch",
+      "meal": "lunch",
+      "price": 230000,
+      "note": "Sunday and Monday."
+    }
+  ],
+  "menusSource": "https://seoul.intercontinental.com/en/dining/restaurants/sushi-kanesaka",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2026,
+  "hotel": "the Grand InterContinental Seoul Parnas",
+  "bookingOpens": "Reservations only, through the hotel's website or by phone. The sushi counter seats nine. Lunch is 12pm to 2pm (last order 12:30pm) and dinner 6pm to 10pm (last order 8pm); on Saturdays and some holidays dinner has two seatings, at 5:30pm and 8pm, where everyone starts together.",
+  "bookingUrl": "https://seoul.intercontinental.com/en/dining/restaurants/sushi-kanesaka",
+  "bookingPhone": "+82 2 559 7627",
+  "children": "Not for children under school age.",
+  "byob": "Outside drinks are allowed for a fee.",
+  "infoSource": "https://seoul.intercontinental.com/en/dining/restaurants/sushi-kanesaka",
+  "infoChecked": "2026-10-12"
 }

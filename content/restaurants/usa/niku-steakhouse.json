@@ -26,5 +26,26 @@
     "vegan"
   ],
   "chef": "Dustin Falcon",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingOpens": "Online on OpenTable. Tables open 30 days ahead; for dates inside that, call or check OpenTable.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "tz": "America/Los_Angeles",
+    "via": "OpenTable",
+    "source": "https://www.nikusteakhouse.com/faq",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.opentable.com/r/niku-steakhouse-san-francisco",
+  "bookingPhone": "+1 415 829 7817",
+  "cancellation": "Cancel at least 24 hours ahead; later cancellations, no-shows and guests dropped after the 24-hour confirmation are charged $50 a person. Tables are held for 15 minutes.",
+  "walkIns": "Walk-ins are taken when there's room; the bar counter serves the full dinner menu, first come, first served.",
+  "groups": "Main dining room tables seat up to six. The private dining room takes 7 to 14 guests with a four- or five-course tasting menu, and the whole restaurant can be booked for 65 seated or 85 standing.",
+  "groupsUrl": "https://www.nikusteakhouse.com/events",
+  "dressCode": "No dress code ('come as you are'), though many guests dress smartly.",
+  "children": "Children are welcome if they can stay seated through the meal and must be counted in the party. No children under seven at the bar or high-top tables; high chairs available, no space for prams or car seats.",
+  "duration": "At least two hours for two people, and about 30 minutes more for each extra guest.",
+  "byob": "Corkage is $80 a 750ml bottle (up to two) or $160 a magnum (one), for wines not on the list. Outside celebration cakes cost $6 a person.",
+  "infoSource": "https://www.nikusteakhouse.com/faq",
+  "infoChecked": "2026-10-12"
 }

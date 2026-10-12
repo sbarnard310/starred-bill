@@ -23,5 +23,12 @@
   "placeId": "ChIJaxq89xaZ4jARQtKhE1uqq9c",
   "michelinId": "547603",
   "chef": "Jay Fai",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "starsSince": 2017,
+  "noBookings": true,
+  "queue": "Tables go to a walk-in list: arrive well before opening to put a name down, then come back and wait, often for an hour or more. Orders are taken while you queue, and everyone in the party has to be there. It's cash only.",
+  "bookingPhone": "+66 2 223 9384",
+  "duration": "Open Wednesday to Saturday, about 9am to 7:30pm; closed Sunday to Tuesday. Check the restaurant's Instagram (@jayfaibangkok) for closures before going.",
+  "infoSource": "https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurant/jay-fai",
+  "infoChecked": "2026-10-12"
 }

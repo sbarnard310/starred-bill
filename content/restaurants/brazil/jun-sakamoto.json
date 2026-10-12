@@ -7,10 +7,10 @@
   "rating": 4.5,
   "reviews": 611,
   "dinnerType": "menu",
-  "dinner": 600,
-  "dinnerNote": "Tasting menu (other menus from R$500)",
-  "sourceType": "press",
-  "source": "https://www.terra.com.br/vida-e-estilo/degusta/quanto-custa-comer-nos-restaurantes-com-estrela-michelin-de-sao-paulo,179639447fd3e07f86ce962d38e0d2c58s370x2f.html",
+  "dinner": 850,
+  "dinnerNote": "Omakase with Jun Sakamoto (omakase at a table R$650)",
+  "sourceType": "site",
+  "source": "https://www.junsakamoto.com.br/",
   "website": "https://www.junsakamoto.com.br",
   "lat": -23.563121,
   "lng": -46.6771879,
@@ -18,9 +18,30 @@
   "michelinId": "428549",
   "chef": "Jun Sakamoto",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação (outros menus desde R$500)",
+  "dinnerNotePt": "Omakase com Jun Sakamoto (omakase nas mesas R$650)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePt": "Só jantar",
-  "cuisinePt": "Japonesa"
+  "cuisinePt": "Japonesa",
+  "menus": [
+    {
+      "name": "omakase with Jun Sakamoto",
+      "meal": "dinner",
+      "price": 850,
+      "note": "Tasting menu at the counter, served by the chef himself."
+    },
+    {
+      "name": "omakase at a table",
+      "meal": "dinner",
+      "price": 650,
+      "note": "The omakase tasting menu served at a table (Mesas)."
+    }
+  ],
+  "menusSource": "https://www.junsakamoto.com.br/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on the restaurant's own booking site: choose the counter omakase with Jun Sakamoto or a table, then the number of guests, date and time. An account is needed.",
+  "bookingUrl": "https://www.junsakamoto.com.br/",
+  "bookingPhone": "+55 11 3088-6019",
+  "infoSource": "https://www.junsakamoto.com.br/",
+  "infoChecked": "2026-10-12"
 }

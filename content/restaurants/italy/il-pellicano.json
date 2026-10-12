@@ -25,5 +25,11 @@
     "vegan"
   ],
   "chef": "Michelino Gioia",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "hotel": "Hotel Il Pellicano",
+  "bookingOpens": "By phone or email only. Booking is strongly recommended. The hotel, and the restaurant with it, is open for the season only: 2 April to 26 October in 2026, and 8 April to 2 November in 2027.",
+  "bookingPhone": "+39 0564 858275",
+  "dressCode": "Casual-elegant for dinner.",
+  "infoSource": "https://www.hotelilpellicano.com/it/esperienze-culinarie/ristorante-il-pellicano.html",
+  "infoChecked": "2026-10-12"
 }

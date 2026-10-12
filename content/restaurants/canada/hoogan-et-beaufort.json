@@ -34,5 +34,39 @@
     "gluten-free"
   ],
   "chef": "Marc-André Jetté",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "tasting menu",
+      "meal": "dinner",
+      "price": 135,
+      "wine": 85,
+      "courses": 5,
+      "note": "For the whole table. Premium wine pairing $150. À la carte also served."
+    },
+    {
+      "name": "lunch tasting menu",
+      "meal": "lunch",
+      "price": 105,
+      "wine": 65,
+      "courses": 4,
+      "note": "Premium wine pairing $125. À la carte also served at lunch."
+    }
+  ],
+  "menusSource": "https://www.hooganetbeaufort.com/menu",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Annette bar à vin",
+      "note": "The same group's wine bar in Montréal.",
+      "url": "http://annettebaravin.com/"
+    }
+  ],
+  "bookingOpens": "Online on OpenTable, linked from the restaurant's website. For a table the same evening, phone.",
+  "bookingUrl": "https://www.opentable.ca/restref/client/?restref=192259&lang=en-CA",
+  "bookingPhone": "+1 514-903-1233",
+  "groups": "The team's catering arm, Hoogan et Beaufort Événement, handles private events, banquets and weddings.",
+  "groupsUrl": "https://www.hooganetbeaufortevenement.com/fr/",
+  "infoSource": "https://www.hooganetbeaufort.com/menu",
+  "infoChecked": "2026-10-12"
 }

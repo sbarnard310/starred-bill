@@ -13,13 +13,13 @@
   "dinnerNote": "Typical main course",
   "dinnerNoteZh": "一般主菜",
   "sourceType": "site",
-  "source": "https://anglerrestaurants.com/menu/dinner/",
-  "lunch": 45,
+  "source": "https://anglerrestaurants.com/menu/cook-for-you/",
+  "lunch": 60,
   "lunchType": "menu",
   "lunchNote": "Quick Catch lunch, 3 courses",
   "lunchNoteZh": "午間三道式套餐",
   "lunchSourceType": "site",
-  "lunchSource": "https://anglerrestaurants.com/menu/dinner/",
+  "lunchSource": "https://anglerrestaurants.com/menu/",
   "website": "https://anglersf.com/",
   "lat": 37.793167,
   "lng": -122.39213,
@@ -28,6 +28,39 @@
   "diets": [
     "vegetarian"
   ],
-  "chef": "Lucho Martinez",
-  "chefSource": "site"
+  "chef": "Joe Hou",
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Cook For You tasting menu",
+      "meal": "dinner",
+      "price": 185,
+      "note": "Shared courses chosen daily, always with the uni toast; for two or more, booked in advance with a $50 deposit, and required for parties of 8 to 11. No changes for dietary needs."
+    },
+    {
+      "name": "Quick Catch lunch",
+      "meal": "lunch",
+      "price": 60,
+      "courses": 3,
+      "note": "Oysters, half sea bream or half chicken with salad, then a sundae or sorbet; Tuesday to Saturday."
+    }
+  ],
+  "menusSource": "https://anglerrestaurants.com/menu/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Happy hour at the bar",
+      "note": "Tuesday to Saturday, 5pm–6:30pm.",
+      "url": "https://anglerrestaurants.com/menu/happy-hour"
+    }
+  ],
+  "bookingOpens": "Online on OpenTable. The Cook For You menu must be booked in advance, with a $50 a person deposit.",
+  "bookingUrl": "https://www.opentable.com/r/angler-san-francisco",
+  "bookingPhone": "+1 415 872 9442",
+  "groups": "Parties of 8 to 11 take the Cook For You menu; groups of 12 to 14 choose their menu ahead with a food and drink minimum. The Game Room takes up to 50, the Lounge up to 16, and the whole restaurant up to 74 seated or 200 standing.",
+  "groupsUrl": "https://anglerrestaurants.com/events-private-dining/",
+  "dressCode": "Smart casual.",
+  "byob": "Corkage is $75 a bottle for the first two bottles and $150 for each one after that.",
+  "infoSource": "https://anglerrestaurants.com/dine-with-us/faq/",
+  "infoChecked": "2026-10-12"
 }

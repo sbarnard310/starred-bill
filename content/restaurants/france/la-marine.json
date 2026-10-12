@@ -8,16 +8,16 @@
   "cuisine": "Creative",
   "rating": 4.8,
   "reviews": 584,
-  "dinner": 350,
+  "dinner": 370,
   "dinnerType": "menu",
-  "dinnerNote": "Marine & Végétal menu, 9 episodes (6 episodes €240)",
-  "dinnerNoteFr": "Menu Marine & Végétal, 9 épisodes (6 épisodes 240 €)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/restaurant-la-marine",
-  "lunch": 350,
+  "dinnerNote": "Marine & Végétal menu, 9 episodes (6 episodes €250); wine pairing €110 or €150",
+  "dinnerNoteFr": "Menu Marine & Végétal, 9 épisodes (6 épisodes 250 €) ; accord mets et vins 110 € ou 150 €",
+  "sourceType": "site",
+  "source": "https://www.alexandrecouillon.com/fr/savourer.html",
+  "lunch": 370,
   "lunchType": "menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/restaurant-la-marine",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.alexandrecouillon.com/fr/savourer.html",
   "lunchNote": "Same menu at lunch · Saturdays",
   "lunchNoteFr": "Même menu le midi · le samedi",
   "website": "https://www.alexandrecouillon.com",
@@ -30,5 +30,78 @@
     "gluten-free"
   ],
   "chef": "Alexandre Couillon",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 110,
+  "lunchWine": 110,
+  "menus": [
+    {
+      "name": "Marine & Végétal menu, 9 episodes",
+      "meal": "dinner",
+      "price": 370,
+      "wine": 110,
+      "courses": 9,
+      "note": "Lunch or dinner, changing with each service; wine pairing €110, or €150 for the higher pairing"
+    },
+    {
+      "name": "Marine & Végétal menu, 6 episodes",
+      "meal": "dinner",
+      "price": 250,
+      "wine": 110,
+      "courses": 6,
+      "note": "Lunch or dinner; wine pairing €110, or €150 for the higher pairing"
+    }
+  ],
+  "menusSource": "https://www.alexandrecouillon.com/fr/savourer.html",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Elise, poisson et braise",
+      "note": "Alexandre Couillon's fish and grill restaurant next door on the port, à la carte, about €50 to €60 for a starter, main and dessert",
+      "url": "https://www.alexandrecouillon.com/fr/savourer.html"
+    }
+  ],
+  "priceHistory": [
+    {
+      "date": "2019-07",
+      "price": 178,
+      "wine": 60,
+      "source": "https://web.archive.org/web/20190718195229/https://www.alexandrecouillon.com/fr/savourer.html"
+    },
+    {
+      "date": "2021-06",
+      "price": 210,
+      "wine": 60,
+      "source": "https://web.archive.org/web/20210613084258/https://www.alexandrecouillon.com/fr/savourer.html"
+    },
+    {
+      "date": "2022-06",
+      "price": 230,
+      "wine": 60,
+      "source": "https://web.archive.org/web/20220625183745/https://www.alexandrecouillon.com/fr/savourer.html"
+    },
+    {
+      "date": "2023-03",
+      "price": 250,
+      "wine": 60,
+      "source": "https://web.archive.org/web/20230306142223/https://www.alexandrecouillon.com/fr/savourer.html"
+    },
+    {
+      "date": "2024-06",
+      "price": 320,
+      "wine": 80,
+      "source": "https://web.archive.org/web/20240615130318/https://www.alexandrecouillon.com/fr/savourer.html"
+    },
+    {
+      "date": "2025-09",
+      "price": 350,
+      "wine": 90,
+      "source": "https://web.archive.org/web/20250923180509/https://www.alexandrecouillon.com/fr/savourer.html"
+    }
+  ],
+  "starsSince": 2023,
+  "bookingOpens": "By phone or online through Zenchef. Bookings for the 2027 season open on 4 November 2026. The restaurant closes for the 2026 season after dinner on 21 November and is shut in December and January.",
+  "bookingUrl": "https://ib.guestonline.fr/instabook/bookings/M5GYxdI",
+  "bookingPhone": "+33 2 51 39 23 09",
+  "infoSource": "https://www.alexandrecouillon.com/fr/savourer.html",
+  "infoChecked": "2026-10-12"
 }

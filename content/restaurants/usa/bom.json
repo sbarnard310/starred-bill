@@ -11,10 +11,10 @@
   "reviews": 175,
   "dinner": 295,
   "dinnerType": "menu",
-  "dinnerNote": "Chef's tasting menu",
+  "dinnerNote": "Chef's tasting menu, 10 courses",
   "wine": 245,
   "sourceType": "site",
-  "source": "https://www.bom-nyc.com/",
+  "source": "https://www.bom-nyc.com/menu-1",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.bom-nyc.com/",
@@ -23,5 +23,29 @@
   "placeId": "ChIJRY8CqGJZwokR285BA7eLv5g",
   "michelinId": "1206453",
   "chef": "Brian Kim",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Chef's tasting menu",
+      "meal": "dinner",
+      "price": 295,
+      "courses": 10,
+      "note": "Served at the marble chef's counter: small seafood and vegetable courses, then meats grilled at the counter, a traditional Korean rice, banchan and soup course, and desserts."
+    }
+  ],
+  "menusSource": "https://www.bom-nyc.com/menu-1",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Oiji Mi",
+      "price": 155,
+      "note": "Its sister restaurant at the front of the same building, also one Michelin star and led by Brian Kim: a five-course prix fixe, with à la carte in the bar and lounge.",
+      "url": "https://www.oijimi.com/"
+    }
+  ],
+  "bookingOpens": "Online on OpenTable, for parties of one to six. There are two sittings: 5:30pm and 8:30pm Tuesday to Saturday, 5pm and 8pm on Sunday. The full menu price is paid when booking.",
+  "bookingUrl": "https://www.opentable.com/r/bom-new-york",
+  "bookingPhone": "+1 212-256-1368",
+  "infoSource": "https://www.bom-nyc.com/",
+  "infoChecked": "2026-10-12"
 }

@@ -19,9 +19,9 @@
   "source": "https://reportergourmet.com/en/news/9289-le-grill-at-the-hotel-de-paris-monte-carlo-s-most-fashionable-grill-restaurant-eight-stories-high",
   "lunch": 88,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu (3 courses €98 on weekdays outside July–August)",
-  "lunchNoteZh": "午間套餐（7、8 月以外的平日 3 道菜 €98）",
-  "lunchNoteFr": "Menu déjeuner (3 plats à 98 € en semaine, hors juillet et août)",
+  "lunchNote": "Lunch menu (3 courses €105 on weekdays outside July–August)",
+  "lunchNoteZh": "午間套餐（7、8 月以外的平日 3 道菜 €105）",
+  "lunchNoteFr": "Menu déjeuner (3 plats à 105 € en semaine, hors juillet et août)",
   "lunchSourceType": "press",
   "lunchSource": "https://reportergourmet.com/en/news/9289-le-grill-at-the-hotel-de-paris-monte-carlo-s-most-fashionable-grill-restaurant-eight-stories-high",
   "website": "https://www.montecarlosbm.com/fr/restaurant-monaco/le-grill",
@@ -34,5 +34,30 @@
     "vegetarian"
   ],
   "chef": "Dominique Lory",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Constellation menu",
+      "meal": "dinner",
+      "price": 195,
+      "note": "Price from press reports; the hotel's site doesn't list it"
+    },
+    {
+      "name": "Three-course lunch menu",
+      "meal": "lunch",
+      "price": 105,
+      "courses": 3,
+      "note": "Weekday lunch, not on public holidays or in July and August; €45 more for two glasses of wine, mineral water and coffee"
+    }
+  ],
+  "menusSource": "https://www.montecarlosbm.com/en/wellness/hotel-de-paris-monte-carlo/exceptional-lunch-le-grill",
+  "menusChecked": "2026-10-12",
+  "hotel": "the Hôtel de Paris Monte-Carlo",
+  "bookingOpens": "Online through the Société des Bains de Mer's booking system (SevenRooms) on the restaurant's page, or by phone.",
+  "bookingUrl": "https://www.montecarlosbm.com/en/restaurant-monaco/le-grill",
+  "bookingPhone": "+377 98 06 88 88",
+  "dressCode": "Jacket required at dinner. Men need trousers and closed shoes, no tank tops; no shorts, torn jeans, sportswear, caps, flip-flops or revealing clothing.",
+  "children": "Children are welcome (the hotel lists it as child-friendly).",
+  "infoSource": "https://www.montecarlosbm.com/en/restaurant-monaco/le-grill",
+  "infoChecked": "2026-10-12"
 }

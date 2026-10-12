@@ -14,8 +14,8 @@
   "reviews": 560,
   "dinner": 360,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteZh": "品嚐套餐",
+  "dinnerNote": "Four-course menu with choices, a few cocktails included",
+  "dinnerNoteZh": "四道菜套餐（每道可選），含數杯雞尾酒",
   "sourceType": "site",
   "source": "https://www.pineappleandpearls.com/team-member/how-much-is-dinner/",
   "noLunch": true,
@@ -33,5 +33,27 @@
     "kosher"
   ],
   "chef": "Aaron Silverman",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 195,
+  "menus": [
+    {
+      "name": "Four-course menu",
+      "meal": "dinner",
+      "price": 360,
+      "wine": 195,
+      "courses": 4,
+      "note": "A choice at each course plus a few surprises, with a few cocktails or mocktails included; same price in the dining room, at the chef's counter and at the bar. Fancy wine pairing $195, Extra Fancy $500, zero-proof pairing $95."
+    }
+  ],
+  "menusSource": "https://www.pineappleandpearls.com/team-member/how-much-is-dinner/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on Resy, one month ahead. Pairings can be added when booking or ordered on the night. Solo diners are seated nightly at the chef's counter.",
+  "bookingUrl": "https://resy.com/cities/dc/pineapple-and-pearls",
+  "bookingPhone": "+1 202 595 7375",
+  "cancellation": "Cancelling or changing the date within 30 days of the booking forfeits the full amount for the party, bar seats included; earlier cancellations are refunded in full. Bookings can be transferred to someone else.",
+  "groups": "One dining-room table seats up to six and the private dining room up to 12, both bookable online. For a fully private dinner for seven or more, or a full or partial buyout, email events@rosesrestaurantgroup.com.",
+  "groupsUrl": "https://www.pineappleandpearls.com/private-events/",
+  "dressCode": "No dress code, but guests are encouraged to dress up ('your best New Year's Eve outfit').",
+  "infoSource": "https://www.pineappleandpearls.com/faqs/",
+  "infoChecked": "2026-10-12"
 }

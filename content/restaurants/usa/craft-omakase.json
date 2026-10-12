@@ -8,8 +8,8 @@
   "reviews": 543,
   "dinnerType": "menu",
   "dinner": 185,
-  "dinnerNote": "Tasting menu, 22 courses, plus 20% gratuity",
-  "sourceType": "press",
+  "dinnerNote": "Omakase, 22 courses, plus 20% service charge",
+  "sourceType": "site",
   "source": "https://www.exploretock.com/craft-omakase-austin",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -22,5 +22,28 @@
     "gluten-free"
   ],
   "chef": "Charlie Wang and Nguyen Nguyen",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "22 Course Omakase Experience",
+      "meal": "dinner",
+      "price": 185,
+      "courses": 22,
+      "note": "The only menu; prepaid on Tock with a 20% service charge and tax ($222 a person before tax); 12 seats at a communal sushi counter"
+    }
+  ],
+  "menusSource": "https://www.exploretock.com/craft-omakase-austin",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on Tock, paid in full when booking. A new week of tables is released every Sunday at noon Austin time, keeping about 35 days open.",
+  "bookingUrl": "https://www.exploretock.com/craft-omakase-austin",
+  "bookingPhone": "+1 512-887-8889",
+  "cancellation": "The $185 price, 20% service charge and tax are not refunded. Bookings can be moved by emailing info@craftomakase.com, but not within 48 hours of the reservation. A booking can be transferred to someone else.",
+  "walkIns": "No walk-ins: only guests with a paid omakase seat can dine. Parties arriving more than 30 minutes late cannot be seated.",
+  "groups": "Up to six guests per booking at the communal counter. Larger groups can book all 12 seats as a private seating through the request form on Tock.",
+  "groupsUrl": "https://www.exploretock.com/craft-omakase-austin",
+  "dressCode": "No dress code.",
+  "children": "Children are welcome only with their own paid seat for the full omakase; no high chairs, carriers or babies on laps.",
+  "byob": "Corkage is $60 a bottle for wine or sake.",
+  "infoSource": "https://www.exploretock.com/craft-omakase-austin/faq",
+  "infoChecked": "2026-10-12"
 }

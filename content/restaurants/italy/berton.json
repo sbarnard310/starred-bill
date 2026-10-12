@@ -10,16 +10,16 @@
   "reviews": 707,
   "dinner": 180,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu (others €145 and €160)",
-  "dinnerNoteIt": "Menu degustazione (altri €145 e €160)",
-  "sourceType": "press",
-  "source": "https://www.gamberorosso.it/ristoranti/menu-degustazione-ristoranti-stellati-forchette/",
+  "dinnerNote": "Non solo Brodo tasting menu (Porta Nuova menu €175)",
+  "dinnerNoteIt": "Menu degustazione Non solo Brodo (menu Porta Nuova €175)",
+  "sourceType": "site",
+  "source": "https://ristoranteberton.com/en/the-menu/",
   "lunch": 180,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sat",
   "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.gamberorosso.it/ristoranti/menu-degustazione-ristoranti-stellati-forchette/",
+  "lunchSourceType": "site",
+  "lunchSource": "https://ristoranteberton.com/en/the-menu/",
   "website": "https://www.ristoranteberton.com/",
   "lat": 45.48218,
   "lng": 9.194416,
@@ -30,5 +30,35 @@
     "gluten-free"
   ],
   "chef": "Andrea Berton",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 110,
+  "lunchWine": 110,
+  "menus": [
+    {
+      "name": "Non solo Brodo tasting menu",
+      "meal": "dinner",
+      "price": 180,
+      "wine": 110,
+      "courses": 8,
+      "note": "Lunch or dinner; a menu built around broths. Served to the whole table. Six-glass wine pairing €110, non-alcoholic pairing €75."
+    },
+    {
+      "name": "Porta Nuova tasting menu",
+      "meal": "dinner",
+      "price": 175,
+      "wine": 110,
+      "note": "Lunch or dinner. Served to the whole table. Six-glass wine pairing €110, non-alcoholic pairing €75."
+    }
+  ],
+  "menusSource": "https://ristoranteberton.com/en/the-menu/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2014,
+  "bookingOpens": "Online through the restaurant's own booking form, or by phone. When a day is full, the form offers a waiting list.",
+  "bookingUrl": "https://berton.netfood.cloud/",
+  "bookingPhone": "+39 02 6707 5801",
+  "cancellation": "A credit card is needed to hold the booking. A no-show, or cancelling less than 24 hours ahead, costs €150 a person.",
+  "groups": "A private room with a wall screen seats up to eight. The chef's table, for two, looks into the kitchen and serves a menu of the chef's choice. Events, also on closing days, by email to info@ristoranteberton.com.",
+  "groupsUrl": "https://ristoranteberton.com/esperienze/",
+  "infoSource": "https://ristoranteberton.com/contatti/",
+  "infoChecked": "2026-10-12"
 }

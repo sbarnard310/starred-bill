@@ -26,5 +26,31 @@
   "dinnerNoteAr": "قائمة تذوق",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteAr": "العشاء فقط"
+  "lunchNoteAr": "العشاء فقط",
+  "alsoTry": [
+    {
+      "name": "Leña Dubai",
+      "note": "Dani García's grill restaurant, bar and terrace, in the same building.",
+      "url": "https://lenarestaurants.com/en/dubai/"
+    }
+  ],
+  "starsSince": 2024,
+  "hotel": "St. Regis Gardens on Palm Jumeirah, inside Dani García's Leña Dubai",
+  "bookingOpens": "Online on the restaurant's website up to 90 days ahead, or by phone (reservation lines 9am to 11pm daily). Same-day bookings close at 3pm.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 90,
+    "tz": "Asia/Dubai",
+    "via": "the restaurant's website",
+    "source": "https://smokedroomrestaurants.com/en/dubai/faqs/",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://smokedroomrestaurants.com/en/dubai/book-a-table/",
+  "bookingPhone": "+971 4 595 3888, 9am to 11pm daily",
+  "cancellation": "Cancel at least a week ahead; late cancellations and no-shows aren't refunded.",
+  "walkIns": "No walk-ins.",
+  "groups": "The 14-seat room can be booked for private events through the events team.",
+  "children": "Guests aged 14 and over only.",
+  "infoSource": "https://smokedroomrestaurants.com/en/dubai/faqs/",
+  "infoChecked": "2026-10-12"
 }

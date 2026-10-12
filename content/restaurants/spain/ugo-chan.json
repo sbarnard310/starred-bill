@@ -31,5 +31,19 @@
   "placeId": "ChIJh67g7DApQg0RNGfPlGDvLg4",
   "michelinId": "1198803",
   "chef": "Hugo Muñoz",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "alsoTry": [
+    {
+      "name": "Ugo Chan Bar",
+      "note": "The restaurant's cocktail bar, open 1:30pm to 1:30am without a break.",
+      "url": "https://ugochan.com/"
+    }
+  ],
+  "bookingOpens": "Online through the restaurant's website (CoverManager), by phone or by email to reservas@ugochan.com. Bookings are confirmed only once the cancellation policy is accepted.",
+  "bookingUrl": "https://ugochan.com/#reservas",
+  "bookingPhone": "+34 913 50 65 78",
+  "cancellation": "A booking requires accepting the restaurant's cancellation policy; changes to the number of guests should be made in advance by email or phone.",
+  "children": "There is no children's menu, and the small dining room has no high chairs and no space for prams.",
+  "infoSource": "https://ugochan.com/en/ugo-chan/",
+  "infoChecked": "2026-10-12"
 }

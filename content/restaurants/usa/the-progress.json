@@ -12,7 +12,7 @@
   "dinnerType": "main",
   "dinnerNote": "À la carte, to share; larger plates about $46–$82",
   "sourceType": "site",
-  "source": "https://theprogress-sf.com/s/10226-PRO-Dinner.pdf",
+  "source": "https://theprogress-sf.com/s/101026-PRO-Dinner.pdf",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://theprogress-sf.com/",
@@ -21,5 +21,32 @@
   "placeId": "ChIJ8zXoo7mAhYARtoa-WE3d5NE",
   "michelinId": "471882",
   "chef": "Stuart Brioza and Nicole Krasinski",
-  "chefSource": "press"
+  "chefSource": "press",
+  "alsoTry": [
+    {
+      "name": "State Bird Provisions",
+      "note": "The same chefs' first restaurant, next door, also with one MICHELIN star; small plates from carts and trays.",
+      "url": "https://statebirdsf.com/"
+    },
+    {
+      "name": "The Anchovy Bar",
+      "note": "The same chefs' seafood bar nearby on O'Farrell Street.",
+      "url": "https://www.theanchovybar.com/"
+    }
+  ],
+  "bookingOpens": "Online on OpenTable. Dining-room tables open 30 days ahead; the private and semi-private rooms can be booked 90 days ahead.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "tz": "America/Los_Angeles",
+    "via": "OpenTable",
+    "source": "https://theprogress-sf.com/reservations-progress",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.opentable.com/r/the-progress-san-francisco-1",
+  "bookingPhone": "+1 415 673 1294",
+  "groups": "Online bookings are for one to six guests. The Balcony seats up to 10 and the Mezzanine up to 18, both with a $130 family-style menu and a food and drink minimum; the Workshop room takes up to 40 seated or 50 standing, and the whole restaurant can be booked. Cancelling a group booking within five days costs half the minimum, on the day the full minimum.",
+  "groupsUrl": "https://theprogress-sf.com/group-dining-all",
+  "infoSource": "https://theprogress-sf.com/group-dining-all",
+  "infoChecked": "2026-10-12"
 }

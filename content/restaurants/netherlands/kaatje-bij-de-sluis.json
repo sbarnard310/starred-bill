@@ -8,10 +8,10 @@
   "rating": 4.3,
   "reviews": 727,
   "dinnerType": "menu",
-  "dinner": 110,
-  "dinnerNote": "Tasting menu (other menus from €82.50)",
-  "sourceType": "press",
-  "source": "https://diningwiththestars.nl/nl/restaurants/2714-kaatje-bij-de-sluis-blokzijl",
+  "dinner": 115,
+  "dinnerNote": "Spektakel menu, 6 courses (Evergreen menu €107.50)",
+  "sourceType": "site",
+  "source": "https://www.kaatje.nl/#menu",
   "website": "https://www.kaatje.nl/",
   "lat": 52.7265596,
   "lng": 5.9610873,
@@ -24,10 +24,40 @@
     "halal",
     "kosher"
   ],
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 82,50)",
+  "dinnerNoteNl": "Menu Spektakel, 6 gangen (menu Evergreen € 107,50)",
   "lunchNote": "Open for lunch · Sat–Sun",
   "lunchNoteNl": "Open voor lunch · za–zo",
   "cuisineNl": "Bio",
   "chef": "Peter Postma",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Spektakel menu",
+      "meal": "dinner",
+      "price": 115,
+      "courses": 6
+    },
+    {
+      "name": "Evergreen menu",
+      "meal": "dinner",
+      "price": 107.5,
+      "courses": 5
+    }
+  ],
+  "menusSource": "https://www.kaatje.nl/#menu",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Kaatje Arrangement Royaal",
+      "price": 225,
+      "note": "A night in Kaatjes Résidence across the lock, breakfast and the six-course surprise dinner, per person",
+      "url": "https://www.kaatje.nl/"
+    }
+  ],
+  "bookingOpens": "Online through GoTable on the restaurant's website, or by phone or WhatsApp (+31 6 8720 8264).",
+  "bookingUrl": "https://www.kaatje.nl/#reserve",
+  "bookingPhone": "+31 527 291 833",
+  "groups": "Groups of 9 or more book through the group reservation option in the online booking form.",
+  "infoSource": "https://www.kaatje.nl/",
+  "infoChecked": "2026-10-12"
 }

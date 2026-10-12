@@ -33,5 +33,56 @@
   "dinnerNoteFr": "Menu 5 services (6 services 240 €, 7 services 280 €) ; service compris",
   "lunchNote": "Lunch menu, 3 courses",
   "lunchNoteNl": "Lunchmenu, 3 gangen",
-  "lunchNoteFr": "Menu du déjeuner, 3 services"
+  "lunchNoteFr": "Menu du déjeuner, 3 services",
+  "menus": [
+    {
+      "name": "five-course menu",
+      "meal": "dinner",
+      "price": 195,
+      "wine": 80,
+      "courses": 5,
+      "note": "Lunch or dinner; last orders 8.30pm. Wine pairing is one glass per course (€275 with wine). Service and taxes included."
+    },
+    {
+      "name": "six-course menu",
+      "meal": "dinner",
+      "price": 240,
+      "wine": 90,
+      "courses": 6,
+      "note": "Lunch or dinner; last orders 8.15pm. €330 with wine. Service and taxes included."
+    },
+    {
+      "name": "seven-course menu",
+      "meal": "dinner",
+      "price": 280,
+      "wine": 110,
+      "courses": 7,
+      "note": "Last orders 8pm. €390 with wine. Service and taxes included."
+    },
+    {
+      "name": "centenary menu (Menu Anniversaire)",
+      "meal": "dinner",
+      "price": 295,
+      "courses": 5,
+      "note": "Until the end of 2026, to mark the restaurant's 100 years; six courses with the caviar dish €375. Book by email at least a week ahead."
+    },
+    {
+      "name": "lunch menu",
+      "meal": "lunch",
+      "price": 95,
+      "wine": 42,
+      "courses": 3,
+      "note": "Wednesday to Saturday, for the whole table. Optional extra courses (Ardennes ham mousse +€28, cheese +€19); wine €55 for four courses, €68 for five. Only three courses after 1pm."
+    }
+  ],
+  "menusSource": "https://www.commechezsoi.be/copie-de-a-la-carte-menus",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through the booking link on the restaurant's reservation page. For last-minute tables, phone.",
+  "bookingUrl": "https://www.commechezsoi.be/copie-de-r%C3%A9server",
+  "bookingPhone": "+32 2 512 29 21",
+  "groups": "Four private rooms, including a table d'hôte in the kitchen, for private dinners and events. Groups of six or more choose the same menu for everyone. Private meetings followed by lunch can be arranged.",
+  "groupsUrl": "https://www.commechezsoi.be/copie-de-diners-priv%C3%A9s-ev%C3%A9nements",
+  "duration": "Guests arrive between 12pm and 1pm or 7pm and 8.30pm; the restaurant closes at 4.30pm after lunch and around midnight after dinner.",
+  "infoSource": "https://www.commechezsoi.be/copie-de-contact",
+  "infoChecked": "2026-10-12"
 }

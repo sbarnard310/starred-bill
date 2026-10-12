@@ -12,21 +12,74 @@
   "reviews": 1765,
   "dinner": 220,
   "dinnerType": "menu",
-  "dinnerNote": "Signature menu (tasting menu €170)",
-  "dinnerNoteFr": "Menu Signature (dégustation 170 €)",
+  "dinnerNote": "Signature menu, 7 courses (tasting menu €170)",
+  "dinnerNoteFr": "Menu Signature, 7 services (menu dégustation 170 €)",
   "sourceType": "site",
-  "source": "https://leviolondingres.paris/",
-  "lunch": 90,
+  "source": "https://leviolondingres.paris/wp-content/uploads/2026/10/MENU-A4-OTC26-ANG.pdf",
+  "lunch": 58,
   "lunchType": "menu",
-  "lunchNote": "Violoncelle lunch menu",
-  "lunchNoteFr": "Menu déjeuner Violoncelle",
+  "lunchNote": "Weekday lunch menu, 2 courses (3 courses €65; Cello menu €90 at weekends)",
+  "lunchNoteFr": "Menu déjeuner en semaine, 2 plats (3 plats 65 € ; menu Violoncelle 90 € le week-end)",
   "lunchSourceType": "site",
-  "lunchSource": "https://leviolondingres.paris/",
+  "lunchSource": "https://leviolondingres.paris/wp-content/uploads/2026/10/MENU-A4-OTC26-ANG.pdf",
   "website": "https://leviolondingres.paris/",
   "lat": 48.8582135,
   "lng": 2.3017796,
   "placeId": "ChIJ3Z17mN9v5kcR6cy6VWhMWl8",
   "michelinId": "5989",
   "chef": "Alain Solivérès",
-  "chefSource": "press"
+  "chefSource": "press",
+  "wine": 120,
+  "menus": [
+    {
+      "name": "Signature menu",
+      "meal": "dinner",
+      "price": 220,
+      "wine": 120,
+      "courses": 7,
+      "note": "Six-glass wine pairing €120 on request"
+    },
+    {
+      "name": "tasting menu",
+      "meal": "dinner",
+      "price": 170,
+      "wine": 80,
+      "courses": 6,
+      "note": "Five-glass wine pairing €80 on request"
+    },
+    {
+      "name": "Cello menu",
+      "meal": "dinner",
+      "price": 90,
+      "courses": 3,
+      "note": "Weekday dinner (not public holidays), and lunch on Saturdays, Sundays and public holidays; some dishes carry supplements of €25–30"
+    },
+    {
+      "name": "weekday lunch menu",
+      "meal": "lunch",
+      "price": 58,
+      "courses": 2,
+      "note": "Monday to Friday, not public holidays; €65 for three courses; some dishes carry supplements of €25–30"
+    }
+  ],
+  "menusSource": "https://leviolondingres.paris/wp-content/uploads/2026/10/MENU-A4-OTC26-ANG.pdf",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Les Cocottes",
+      "note": "The group's casual restaurant in the 7th arrondissement, open all day, with dishes served in cast-iron pots",
+      "url": "https://lescocottes.paris/"
+    },
+    {
+      "name": "Les Papilles",
+      "note": "Its sister restaurant in the 5th arrondissement, with a single 'retour du marché' menu",
+      "url": "https://www.lespapillesparis.fr/"
+    }
+  ],
+  "bookingOpens": "Online through TheFork from the restaurant's website, or by phone.",
+  "bookingUrl": "https://leviolondingres.paris/reservation-2/",
+  "bookingPhone": "+33 1 45 55 15 05",
+  "cancellation": "Cancellation and change terms are given when booking; late cancellations and no-shows may be charged.",
+  "infoSource": "https://leviolondingres.paris/reservation-2/",
+  "infoChecked": "2026-10-12"
 }

@@ -22,5 +22,26 @@
   "placeId": "ChIJ-1ow0r41K4gRWy6_o_lMCyk",
   "michelinId": "1198946",
   "chef": "Masaki Saito",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "omakase",
+      "meal": "dinner",
+      "price": 780,
+      "note": "The only menu, chosen by the chef from seasonal fish flown in from Japan. Price since 8 August."
+    }
+  ],
+  "menusSource": "https://www.masakisaito.ca/menu/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on Tock only. No walk-ins, and no bookings by phone. Private dinners by email to infoto@masakisaito.ca.",
+  "bookingUrl": "https://www.exploretock.com/sushimasakisaito",
+  "cancellation": "A deposit is taken when booking and refunded on arrival; the full bill is charged on the day. Bookings can be cancelled, moved or transferred with 48 hours' notice for two to four people, or seven days for five or more. Cancelling or cutting numbers within 48 hours costs $400 a person. Seats are held for 15 minutes. The restaurant may ask for ID matching the card.",
+  "walkIns": "No walk-ins.",
+  "groups": "The whole restaurant can be booked for a private omakase; ask by email about minimum spends and dates.",
+  "groupsUrl": "https://www.masakisaito.ca/private-event/",
+  "dressCode": "No dress code is given, but guests are asked not to wear perfume, cologne or other scents, and to keep phones on silent (calls can be taken in the tea room).",
+  "children": "Set up for adults but all ages are welcome. Children aged 12 and under need a full seat booked.",
+  "byob": "Corkage is $200 a bottle of sake (720ml) or wine (750ml), up to two bottles.",
+  "infoSource": "https://www.masakisaito.ca/book/",
+  "infoChecked": "2026-10-12"
 }

@@ -12,8 +12,8 @@
   "dinnerType": "menu",
   "dinnerNote": "Prix fixe menu",
   "dinnerNoteZh": "定價套餐",
-  "sourceType": "press",
-  "source": "https://www.exploretock.com/sanhowon",
+  "sourceType": "site",
+  "source": "https://www.sanhowon.com/visit",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.sanhowon.com/",
@@ -25,5 +25,36 @@
     "vegetarian"
   ],
   "chef": "Corey Lee and Jeong-In Hwang",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Prix fixe House Menu",
+      "meal": "dinner",
+      "price": 118,
+      "note": "For the whole table, at least two guests; no changes or dietary swaps. Grilled meats and other dishes can be added."
+    }
+  ],
+  "menusSource": "https://www.sanhowon.com/s/SAN-HO-WON-House.pdf",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2022,
+  "bookingOpens": "Online through SevenRooms. Tables open at 10am each day, 29 days ahead. Book a 'Prix Fixe House Menu' reservation for the set menu, or a general or counter reservation to choose between à la carte and the set menu on arrival.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 29,
+    "time": "10:00",
+    "tz": "America/Los_Angeles",
+    "via": "SevenRooms",
+    "source": "https://www.sanhowon.com/visit",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.sevenrooms.com/explore/sanhowon/reservations/create/search/",
+  "bookingPhone": "+1 415 868 4479",
+  "cancellation": "Deposits are refunded in full up to 24 hours before the booking; after that there are no refunds or credits, including for guests who don't come. Tables are held for 15 minutes.",
+  "walkIns": "Walk-ins are welcome at the communal counter from 5pm, best for one or two people. Some bookings for one or two are also seated at the counter.",
+  "groups": "Parties of 9 to 16 use the private room, bookable one to three months ahead; parties of 17 or more can ask about a buyout.",
+  "groupsUrl": "https://sanhowon.tripleseat.com/party_request/22886",
+  "children": "Count children in the party size. If a child won't eat the full House Menu, book a general reservation and order à la carte.",
+  "duration": "Tables are held for two hours (two and a half for parties of five or more).",
+  "infoSource": "https://www.sanhowon.com/visit",
+  "infoChecked": "2026-10-12"
 }

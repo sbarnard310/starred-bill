@@ -8,13 +8,13 @@
   "rating": 4.7,
   "reviews": 1013,
   "dinnerType": "menu",
-  "dinner": 240,
+  "dinner": 260,
   "sourceType": "site",
   "source": "https://www.casaperbellini.com/percorsi/",
   "lunch": 240,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Sat",
-  "lunchNoteIt": "Stesso menu a pranzo · mar–sab",
+  "lunchNote": "L'Essenza vegetarian menu; every menu is served at lunch · Tue–Sat",
+  "lunchNoteIt": "Percorso vegetariano L'Essenza; tutti i percorsi anche a pranzo · mar–sab",
   "lunchSourceType": "site",
   "lunchSource": "https://www.casaperbellini.com/percorsi/",
   "website": "https://www.casaperbellini.com",
@@ -29,7 +29,48 @@
   "chef": "Giancarlo Perbellini",
   "chefSource": "michelin",
   "wine": 120,
-  "dinnerNote": "Tasting menu (others €260 and €280; chef's table with wine €395)",
-  "dinnerNoteIt": "Percorso degustazione (altri €260 e €280; chef's table con vini €395)",
-  "lunchWine": 120
+  "dinnerNote": "Io e Silvia tasting menu (Storie di Casa €280, vegetarian L'Essenza €240; chef's table with wine €395)",
+  "dinnerNoteIt": "Percorso Io e Silvia (Storie di Casa €280, vegetariano L'Essenza €240; chef's table con vini €395)",
+  "lunchWine": 120,
+  "menus": [
+    {
+      "name": "Io e Silvia tasting menu",
+      "meal": "dinner",
+      "price": 260,
+      "wine": 120,
+      "note": "Lunch or dinner, for the whole table; wine pairing €120 for three glasses or €180 for five"
+    },
+    {
+      "name": "Storie di Casa tasting menu",
+      "meal": "dinner",
+      "price": 280,
+      "wine": 120,
+      "note": "The chef's best-known dishes; lunch or dinner, for the whole table; pairing €120 (three glasses) or €180 (five)"
+    },
+    {
+      "name": "L'Essenza vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 240,
+      "wine": 120,
+      "note": "Vegetarian, without gluten, dairy or eggs; lunch or dinner; pairing €120 (three glasses) or €180 (five)"
+    },
+    {
+      "name": "SOLO X12 chef's table menu",
+      "meal": "dinner",
+      "price": 395,
+      "courses": 8,
+      "note": "Eight surprise courses with wines included, at one table for 12; lunch Tuesday to Saturday at 12.45pm, dinner Tuesday to Friday at 7.45pm; no changes to the menu"
+    }
+  ],
+  "menusSource": "https://www.casaperbellini.com/percorsi/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2024,
+  "bookingOpens": "Online through Plateform from the restaurant's website (one booking page for the tasting menus, another for the chef's table), or by phone or email.",
+  "bookingUrl": "https://casaperbelliniverona.plateform.app/welcome",
+  "bookingPhone": "+39 045 878 0860",
+  "groups": "For more than six guests, email info@casaperbellini.com or call. At tables of more than four everyone must choose the same tasting menu, and à la carte is not available.",
+  "dressCode": "No strict dress code, but elegant or smart casual is suggested. No shorts or flip-flops.",
+  "children": "The chef's table is for adults only. No animals, however small.",
+  "infoSource": "https://www.casaperbellini.com/percorsi/",
+  "infoChecked": "2026-10-12"
 }

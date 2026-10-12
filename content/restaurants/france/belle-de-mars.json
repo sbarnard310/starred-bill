@@ -10,14 +10,14 @@
   "reviews": 337,
   "dinner": 89,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €55)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 55 €)",
+  "dinnerNote": "Menu Dégustation, 6 courses (other menus from €55)",
+  "dinnerNoteFr": "Menu Dégustation, 6 services (autres menus dès 55 €)",
   "sourceType": "site",
   "source": "https://belledemars.fr/pages/la-carte",
-  "lunch": 55,
+  "lunch": 39,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchNoteFr": "Menu déjeuner",
+  "lunchNote": "Menu Déjeuner, 3 courses, Mon–Fri",
+  "lunchNoteFr": "Menu Déjeuner, 3 services, lun.–ven.",
   "lunchSourceType": "site",
   "lunchSource": "https://belledemars.fr/pages/la-carte",
   "website": "https://belledemars.fr",
@@ -26,5 +26,42 @@
   "placeId": "ChIJV0Prw_nByRIR3Uw-2vnGRjk",
   "michelinId": "1211272",
   "chef": "Michel Marini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Menu Dégustation",
+      "meal": "dinner",
+      "price": 89,
+      "courses": 6,
+      "note": "Dinner only"
+    },
+    {
+      "name": "Menu Découverte",
+      "meal": "dinner",
+      "price": 69,
+      "courses": 5,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Menu Initiation",
+      "meal": "dinner",
+      "price": 55,
+      "courses": 4,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Menu Déjeuner",
+      "meal": "lunch",
+      "price": 39,
+      "courses": 3,
+      "note": "Weekday lunch"
+    }
+  ],
+  "menusSource": "https://belledemars.fr/pages/la-carte",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through Zenchef on the restaurant's website, by phone or by email (reservation@belledemars.fr).",
+  "bookingUrl": "https://belledemars.fr/pages/reservation",
+  "bookingPhone": "+33 4 86 68 13 42",
+  "infoSource": "https://belledemars.fr/pages/la-carte",
+  "infoChecked": "2026-10-12"
 }

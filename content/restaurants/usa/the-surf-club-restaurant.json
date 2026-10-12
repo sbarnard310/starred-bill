@@ -25,5 +25,17 @@
     "gluten-free"
   ],
   "chef": "Thomas Keller",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "starsSince": 2022,
+  "hotel": "the Four Seasons Hotel at The Surf Club",
+  "bookingOpens": "Online on Resy, or by phone. Dinner only, six nights a week (closed Mondays).",
+  "bookingUrl": "https://resy.com/cities/surfside-fl/venues/the-surf-club-restaurant",
+  "bookingPhone": "+1 305 768 9440",
+  "walkIns": "Walk-ins are welcome at the bar, where the full menu is served, and at part of the dining room.",
+  "groups": "Private dining indoors, outdoors or off site is arranged with the private dining and events manager (+1 305 768 9442).",
+  "groupsUrl": "https://www.surfclubrestaurant.com/private-dining-events",
+  "dressCode": "Smart casual. No shorts or flip-flops; jackets and ties are not required.",
+  "byob": "Up to three 750ml bottles not on the wine list, at $125 corkage a bottle.",
+  "infoSource": "https://www.surfclubrestaurant.com/make-a-reservation",
+  "infoChecked": "2026-10-12"
 }

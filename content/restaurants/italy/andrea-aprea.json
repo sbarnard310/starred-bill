@@ -10,23 +10,63 @@
   "reviews": 104,
   "dinner": 255,
   "dinnerType": "menu",
-  "dinnerNote": "Signature menu (Contemporaneità €205; Roccocò 2.0 €235); service included",
-  "dinnerNoteIt": "Menu Signature (Contemporaneità €205; Roccocò 2.0 €235); servizio incluso",
+  "dinnerNote": "Signature menu (Contemporaneity €205; Neapolitan €235); service included",
+  "dinnerNoteIt": "Menu Signature (Contemporaneità €205; Partenope €235); servizio incluso",
   "wine": 170,
   "sourceType": "site",
-  "source": "https://www.andreaaprea.com/",
-  "lunch": 255,
+  "source": "https://www.andreaaprea.com/site/wp-content/uploads/2026/06/ENG-restaurant-menu.pdf",
+  "lunch": 205,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Sun",
-  "lunchNoteIt": "Stesso menu a pranzo · mar–dom",
-  "lunchWine": 170,
+  "lunchNote": "Contemporaneity menu, Saturday lunch only (Signature €255 also served); service included",
+  "lunchNoteIt": "Menu Contemporaneità, a pranzo solo il sabato (anche Signature €255); servizio incluso",
+  "lunchWine": 120,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.andreaaprea.com/",
+  "lunchSource": "https://www.andreaaprea.com/site/wp-content/uploads/2026/06/ENG-restaurant-menu.pdf",
   "website": "https://www.andreaaprea.com/",
   "lat": 45.47346,
   "lng": 9.20427,
   "placeId": "ChIJmQdzfe_HhkcRnJXOgR5YmtA",
   "michelinId": "1203068",
   "chef": "Andrea Aprea",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Signature tasting menu",
+      "meal": "dinner",
+      "price": 255,
+      "wine": 170,
+      "courses": 8,
+      "note": "Dishes from 2011 to 2022; lunch (Saturday only) or dinner; non-alcoholic pairing €95; service included"
+    },
+    {
+      "name": "Neapolitan tasting menu",
+      "meal": "dinner",
+      "price": 235,
+      "wine": 140,
+      "courses": 6,
+      "note": "Called Partenope in Italian; lunch (Saturday only) or dinner; non-alcoholic pairing €80; service included"
+    },
+    {
+      "name": "Contemporaneity tasting menu",
+      "meal": "dinner",
+      "price": 205,
+      "wine": 120,
+      "courses": 4,
+      "note": "Lunch (Saturday only) or dinner; non-alcoholic pairing €75; service included"
+    }
+  ],
+  "menusSource": "https://www.andreaaprea.com/en/the-restaurant/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Andrea Aprea Caffè Bistrot",
+      "note": "The chef's all-day café and bistro on the ground floor of the same building, open Tuesday to Sunday",
+      "url": "https://www.andreaaprea.com/en/caffe-bistrot/"
+    }
+  ],
+  "bookingOpens": "Online through TheFork, linked from the restaurant's website, or by phone or email (info@andreaaprea.com). Dinner Tuesday to Saturday from 7pm, lunch on Saturdays only from 12.30pm; the last booking is at 9.45pm. Closed in August (9 to 31 August in 2026).",
+  "bookingUrl": "https://module.lafourchette.com/it_IT/module/725803-9615d#/4683489/pdh",
+  "bookingPhone": "+39 02 3827 3030",
+  "infoSource": "https://www.andreaaprea.com/en/contacts/",
+  "infoChecked": "2026-10-12"
 }

@@ -8,9 +8,9 @@
   "reviews": 484,
   "dinnerType": "menu",
   "dinner": 285,
-  "dinnerNote": "Tasting menu (other menus from €235)",
-  "sourceType": "press",
-  "source": "https://www.gault-millau.nl/en/restaurants/ciel-bleu-amsterdam",
+  "dinnerNote": "Ciel Bleu Menu, 8 courses (6 courses €235)",
+  "sourceType": "site",
+  "source": "https://irp.cdn-website.com/0191fca8/files/uploaded/CB+Menu+ENG+New-3b1a4988.pdf",
   "website": "https://www.cielbleu.nl/",
   "lat": 52.3486359,
   "lng": 4.8928264,
@@ -18,9 +18,56 @@
   "michelinId": "115430",
   "chef": "Arjan Speelman",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 235)",
+  "dinnerNoteNl": "Ciel Bleu-menu, 8 gangen (6 gangen € 235)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Creatief"
+  "cuisineNl": "Creatief",
+  "menus": [
+    {
+      "name": "Ciel Bleu Menu, eight courses",
+      "meal": "dinner",
+      "price": 285,
+      "courses": 8,
+      "note": "Wagyu instead of pigeon €70 extra"
+    },
+    {
+      "name": "Ciel Bleu Menu, six courses",
+      "meal": "dinner",
+      "price": 235,
+      "courses": 6
+    },
+    {
+      "name": "Prestige Menu",
+      "meal": "dinner",
+      "price": 385,
+      "courses": 8
+    },
+    {
+      "name": "Caviar Menu",
+      "meal": "dinner",
+      "price": 525,
+      "courses": 6,
+      "note": "A different caviar with each savoury course"
+    },
+    {
+      "name": "Ciel Bleu Signature Experience",
+      "meal": "dinner",
+      "price": 550,
+      "courses": 8,
+      "note": "The eight-course menu with an aperitif, wine pairing, water, coffee or tea and a gift"
+    }
+  ],
+  "menusSource": "https://www.cielbleu.nl/menu",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2007,
+  "hotel": "Hotel Okura Amsterdam",
+  "bookingOpens": "Online through TableCheck, with the menu paid in advance, or by phone or email (restaurants@okura.nl).",
+  "bookingUrl": "https://www.tablecheck.com/en/okura-nl-cielbleu/reserve/landing",
+  "bookingPhone": "+31 20 678 8300",
+  "cancellation": "Free cancellation, with the prepayment refunded, until 3pm the day before. After that the deposit is not refunded, and cancelling or cutting the number of guests costs €100 a person. Groups of 9 or more must confirm their numbers by 3pm seven days before.",
+  "groups": "The Chef's Table in the kitchen seats 4 to 9 guests (Ciel Bleu Menu, Caviar Experience or the Signature Experience; not the Prestige Menu). The Starlight private room on the 23rd floor takes 11 to 18 guests; contact the restaurant.",
+  "dressCode": "Smart casual. No shorts, sportswear, flip-flops, ripped jeans, caps, hats or hoodies.",
+  "infoSource": "https://www.cielbleu.nl/",
+  "infoChecked": "2026-10-12"
 }

@@ -10,23 +10,57 @@
   "reviews": 1266,
   "dinner": 340,
   "dinnerType": "menu",
-  "dinnerNote": "Sea voyage menu, 9 dishes (7 dishes €275)",
-  "dinnerNoteFr": "Menu Voyage en mer, 9 mets (7 mets 275 €)",
-  "wine": 160,
+  "dinnerNote": "Sea voyage menu, 9 dishes (7 dishes €275, not Fri–Sat evenings)",
+  "dinnerNoteFr": "Menu Sortie en mer, 9 prises (7 prises 275 €, hors vendredi et samedi soir)",
+  "wine": 180,
   "sourceType": "site",
   "source": "https://christophercoutanceau.com/en/restaurant-coutanceau.html",
-  "lunch": 340,
+  "lunch": 275,
   "lunchType": "menu",
   "lunchSourceType": "site",
   "lunchSource": "https://christophercoutanceau.com/en/restaurant-coutanceau.html",
-  "lunchNote": "Same menu at lunch · Thu–Sat",
-  "lunchNoteFr": "Même menu le midi · jeu.–sam.",
-  "lunchWine": 160,
+  "lunchNote": "Sea voyage menu, 7 dishes (9 dishes €340)",
+  "lunchNoteFr": "Menu Sortie en mer, 7 prises (9 prises 340 €)",
+  "lunchWine": 140,
   "website": "https://christophercoutanceau.com",
   "lat": 46.1553146,
   "lng": -1.1599316,
   "placeId": "ChIJ87_sn6VTAUgRsNVFS7MOq3w",
   "michelinId": "7447",
   "chef": "Christopher Coutanceau",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Sea voyage menu of nine dishes",
+      "meal": "dinner",
+      "price": 340,
+      "wine": 180,
+      "courses": 9,
+      "note": "Lunch or dinner, for the whole table; food and drink pairing of seven glasses €180"
+    },
+    {
+      "name": "Sea voyage menu of seven dishes",
+      "meal": "dinner",
+      "price": 275,
+      "wine": 140,
+      "courses": 7,
+      "note": "Lunch or dinner, but not on Friday or Saturday evenings or public holidays; pairing of five glasses €140"
+    }
+  ],
+  "menusSource": "https://christophercoutanceau.com/en/restaurant-coutanceau.html",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "La Yole de Chris",
+      "note": "Christopher Coutanceau and Nicolas Brossard's bistro on the same beach, open every day, à la carte or seafood menus",
+      "url": "https://christophercoutanceau.com/en/la-yole-de-chris.html"
+    }
+  ],
+  "bookingOpens": "Online through Zenchef from the restaurant's website, by phone or by email (contact@coutanceaularochelle.com).",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=354840",
+  "bookingPhone": "+33 5 46 41 48 19",
+  "cancellation": "Online bookings ask for a card guarantee of €150 per person.",
+  "groups": "The Chef's Table, a room beside the kitchen behind a glass wall, seats up to 8 for a menu and wine pairing made for the table, served by Christopher Coutanceau and Nicolas Brossard.",
+  "infoSource": "https://christophercoutanceau.com/en/restaurant-coutanceau.html",
+  "infoChecked": "2026-10-12"
 }

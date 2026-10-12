@@ -13,8 +13,8 @@
   "dinnerNote": "Prix fixe menu, 5 courses",
   "wine": 95,
   "dinnerNoteZh": "定價套餐，五道菜",
-  "sourceType": "press",
-  "source": "https://washingtonian.com/100-very-best-restaurants-2026/the-dabney-4/",
+  "sourceType": "site",
+  "source": "https://thedabney.com/wp-content/uploads/2026/08/5-Course-Dinner-Menu-8.1.26.pdf",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://thedabney.com/",
@@ -23,5 +23,36 @@
   "placeId": "ChIJrTuAH-23t4kRUu2vghXPScI",
   "michelinId": "502397",
   "chef": "Jeremiah Langhorne",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Five-course prix fixe menu",
+      "meal": "dinner",
+      "price": 145,
+      "wine": 95,
+      "courses": 5,
+      "note": "Snacks, a starter, a mid course, a family-style main and dessert; classic wine pairing $95, reserve pairing $165. Supplements include crab (+$15) and lobster (+$6)."
+    }
+  ],
+  "menusSource": "https://thedabney.com/#menus",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "The Dabney's à la carte menu",
+      "note": "Served in the dining room, at the bar and on the patio: small plates $16–52, family-style mains for sharing $89–116.",
+      "url": "https://thedabney.com/wp-content/uploads/2026/08/A-la-Carte-Menu-8.1.26.pdf"
+    },
+    {
+      "name": "The Cellar",
+      "note": "The Dabney's casual cocktail and wine bar beneath the dining room, with oysters and seafood small plates.",
+      "url": "https://www.thedabneycellar.com/"
+    }
+  ],
+  "bookingOpens": "Online on Resy.",
+  "bookingUrl": "https://resy.com/cities/washington-dc/venues/the-dabney",
+  "bookingPhone": "+1 202 240 2660",
+  "walkIns": "The bar is first come, first served and serves the à la carte menu, as do the bar-area tables and the garden patio.",
+  "groups": "Private events by email (info@thedabney.com). The Cellar, the wine and cocktail bar downstairs, takes private parties of up to 45.",
+  "infoSource": "https://thedabney.com/",
+  "infoChecked": "2026-10-12"
 }

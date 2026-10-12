@@ -7,14 +7,14 @@
   "cuisine": "Modern Cuisine",
   "dinner": 120,
   "dinnerType": "menu",
-  "dinnerNote": "Dinner menu",
+  "dinnerNote": "Autumn tasting menu",
   "sourceType": "site",
-  "source": "https://www.oldstamphouse.com/",
-  "lunch": 120,
+  "source": "https://www.oldstamphouse.com/wp-content/uploads/2026/10/Dinner-Autumn26.pdf",
+  "lunch": 75,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sat",
+  "lunchNote": "Shorter lunch tasting menu · Wed–Sat",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.oldstamphouse.com/",
+  "lunchSource": "https://www.oldstamphouse.com/wp-content/uploads/2026/10/Lunch-Autumn26.pdf",
   "website": "https://www.oldstamphouse.com/",
   "lat": 54.430987,
   "lng": -2.962429,
@@ -26,5 +26,50 @@
     "gluten-free"
   ],
   "chef": "Ryan Blackburn",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Autumn tasting menu",
+      "meal": "dinner",
+      "price": 120,
+      "note": "British cheeses £15 extra; madeleines and coffee £7.50 extra."
+    },
+    {
+      "name": "Autumn lunch tasting menu",
+      "meal": "lunch",
+      "price": 75,
+      "note": "A shorter version of the dinner menu. British cheeses £15 extra; madeleines and coffee £7.50 extra."
+    }
+  ],
+  "menusSource": "https://www.oldstamphouse.com/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "The Schelly",
+      "price": 35,
+      "note": "Ryan Blackburn's casual small-plates restaurant upstairs; set lunch £35, plus an à la carte menu.",
+      "url": "https://theschelly.co.uk"
+    }
+  ],
+  "starsSince": 2019,
+  "bookingOpens": "Online only, through the booking form on the restaurant's website (no bookings by phone or email). Tables open at 12:01am on the 29th of each month for the month three months ahead: December's tables open on 29 August. Card details secure every booking, and the team phones to confirm it.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 29,
+    "ahead": 3,
+    "time": "00:01",
+    "tz": "Europe/London",
+    "via": "ResDiary",
+    "source": "https://www.oldstamphouse.com/faqs/",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.oldstamphouse.com/reservations/",
+  "bookingPhone": "+44 15394 32775",
+  "cancellation": "Cancel or change numbers at least 24 hours ahead (48 hours for five or more). Later changes may be charged £15 a person, and no-shows are charged £15 a person. Tables are held for 15 minutes.",
+  "waitlist": "Join the online waitlist for a date: cancellations go straight back on the booking form, and everyone on that date's waitlist is emailed.",
+  "groups": "The Workshop, a private dining room and development kitchen in the courtyard, seats up to eight at one table, for one party or separate bookings.",
+  "groupsUrl": "https://www.oldstamphouse.com/the-workshop/",
+  "duration": "About three hours for the tasting menu.",
+  "infoSource": "https://www.oldstamphouse.com/faqs/",
+  "infoChecked": "2026-10-12"
 }

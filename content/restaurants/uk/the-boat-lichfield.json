@@ -13,15 +13,15 @@
   "reviews": 640,
   "dinner": 125,
   "dinnerType": "menu",
-  "dinnerNote": "Dinner menu",
+  "dinnerNote": "Evening tasting menu (also served at lunch)",
   "wine": 120,
-  "sourceType": "press",
-  "source": "https://www.opentable.com/r/the-boat-inn-lichfield",
+  "sourceType": "site",
+  "source": "https://theboat.restaurant/menus/",
   "lunch": 85,
   "lunchType": "menu",
-  "lunchNote": "Lunch tasting menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.opentable.com/r/the-boat-inn-lichfield",
+  "lunchNote": "Lunch choice menu, 3 courses (tasting menu £125)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://theboat.restaurant/menus/",
   "website": "https://theboat.restaurant/",
   "lat": 52.651783,
   "lng": -1.889214,
@@ -32,5 +32,37 @@
     "vegan"
   ],
   "chef": "Liam Dillon",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Evening tasting menu",
+      "meal": "dinner",
+      "price": 125,
+      "wine": 120,
+      "note": "Lunch or dinner; alcohol-free pairing £55; optional scallop course £15"
+    },
+    {
+      "name": "Lunch choice menu",
+      "meal": "lunch",
+      "price": 85,
+      "courses": 3,
+      "note": "Starter, main and dessert with snacks and treats; Thursday to Saturday lunch"
+    }
+  ],
+  "menusSource": "https://theboat.restaurant/menus/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2026,
+  "bookingOpens": "Online through OpenTable on the restaurant's website, by email (dine@theboat.restaurant) or by phone.",
+  "bookingUrl": "https://www.opentable.co.uk/r/the-boat-inn-reservations-lichfield?restref=129237&lang=en-GB",
+  "bookingPhone": "+44 1543 361692",
+  "cancellation": "Card details secure the booking. Cancellations 24 hours or more ahead are free; within 24 hours a £40 per person fee may apply, and no-shows may be charged the minimum menu price for that service.",
+  "walkIns": "Walk-ins are taken when possible, but not guaranteed. Tables are held for up to an hour after the booking time.",
+  "groups": "Groups of six or more pay a £40 per person deposit to book, non-refundable but transferable to a future visit.",
+  "dressCode": "Smart casual.",
+  "children": "Not recommended for children under 8. There is no children's menu, and no highchairs or prams.",
+  "duration": "About 2½ hours for the evening menus and 1 to 1½ hours at lunch.",
+  "byob": "Corkage £70 a bottle.",
+  "servicePct": 8,
+  "infoSource": "https://theboat.restaurant/policies",
+  "infoChecked": "2026-10-12"
 }

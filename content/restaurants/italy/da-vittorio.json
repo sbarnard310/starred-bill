@@ -32,5 +32,44 @@
     "kosher"
   ],
   "chef": "Enrico and Roberto Cerea",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Senza Confini tasting menu",
+      "meal": "dinner",
+      "price": 440,
+      "courses": 12,
+      "note": "The chefs' free choice; lunch or dinner (no lunch on Wednesdays); shared by the whole table; includes the Paccheri alla Vittorio; wine not included"
+    },
+    {
+      "name": "Il Mare di 'Da Vittorio' tasting menu",
+      "meal": "dinner",
+      "price": 320,
+      "courses": 8,
+      "note": "Fish and shellfish from the day's market; lunch or dinner; for the whole table"
+    },
+    {
+      "name": "Gli Esordi di Papà Vittorio tasting menu",
+      "meal": "dinner",
+      "price": 320,
+      "courses": 8,
+      "note": "Dishes from the family's early days; lunch or dinner; for the whole table"
+    },
+    {
+      "name": "Dalla 'Campagna' tasting menu",
+      "meal": "dinner",
+      "price": 280,
+      "courses": 8,
+      "note": "Vegetables from the estate garden; lunch or dinner; for the whole table"
+    }
+  ],
+  "menusSource": "https://www.davittorio.com/images/davittorio/ristorante/brusaporto/menu/Menu%20Ristorante%20-%20Inglese.pdf",
+  "menusChecked": "2026-10-12",
+  "hotel": "the Cerea family's own La Dimora, part of the Da Vittorio Relais & Châteaux estate",
+  "bookingOpens": "By phone, or with the request form on the restaurant's website, which the restaurant answers by email or phone. It is closed on Wednesday lunchtime and for about 20 days in August.",
+  "bookingUrl": "https://www.davittorio.com/en/restaurants/da-vittorio.html",
+  "bookingPhone": "+39 035 681024",
+  "groups": "Parties of eight or more are asked to choose their menu in advance. The signature 'Orecchia d'elefante' (veal cutlet) is made only to order, for at least four people.",
+  "infoSource": "https://www.davittorio.com/en/contacts.html",
+  "infoChecked": "2026-10-12"
 }

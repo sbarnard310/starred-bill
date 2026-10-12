@@ -14,10 +14,10 @@
   "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 200 €)",
   "sourceType": "site",
   "source": "https://www.auberge-de-l-ill.com/fr/restaurant.html",
-  "lunch": 290,
+  "lunch": 200,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchNoteFr": "Même menu le midi",
+  "lunchNote": "Menu Tradition, served at lunch and dinner (Menu Haeberlin €290)",
+  "lunchNoteFr": "Menu Tradition, servi midi et soir (Menu Haeberlin 290 €)",
   "lunchSourceType": "site",
   "lunchSource": "https://www.auberge-de-l-ill.com/fr/restaurant.html",
   "website": "https://www.auberge-de-l-ill.com",
@@ -30,5 +30,89 @@
     "vegetarian"
   ],
   "chef": "Marc Haeberlin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Menu Haeberlin",
+      "meal": "dinner",
+      "price": 290,
+      "courses": 7,
+      "note": "Lunch or dinner; ordered by the whole table, by 1.15pm at lunch and 8.15pm at dinner"
+    },
+    {
+      "name": "Menu dégustation Végétal",
+      "meal": "dinner",
+      "price": 250,
+      "courses": 7,
+      "note": "Vegetable tasting menu, lunch or dinner; ordered by the whole table"
+    },
+    {
+      "name": "Menu Tradition",
+      "meal": "dinner",
+      "price": 200,
+      "courses": 5,
+      "note": "Lunch or dinner, every day it is open; a choice at each course"
+    },
+    {
+      "name": "Formule Automnale",
+      "meal": "lunch",
+      "price": 223,
+      "courses": 4,
+      "note": "Includes two glasses of wine, water and coffee; weekday lunches (not Saturday or Sunday) and dinners except Friday and Saturday, for a limited time; mention it when booking"
+    }
+  ],
+  "menusSource": "https://www.auberge-de-l-ill.com/fr/restaurant.html",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Les Haras Brasserie",
+      "note": "The Haeberlin family's brasserie in Strasbourg",
+      "url": "http://www.les-haras-brasserie.com/"
+    }
+  ],
+  "priceHistory": [
+    {
+      "date": "2017-07",
+      "price": 188,
+      "source": "https://web.archive.org/web/20170730224922/http://www.auberge-de-l-ill.com:80/fr/restaurant.html"
+    },
+    {
+      "date": "2019-07",
+      "price": 195,
+      "source": "https://web.archive.org/web/20190716160257/https://www.auberge-de-l-ill.com/fr/restaurant.html"
+    },
+    {
+      "date": "2021-01",
+      "price": 195,
+      "source": "https://web.archive.org/web/20210125185638/https://www.auberge-de-l-ill.com/fr/restaurant.html"
+    },
+    {
+      "date": "2022-05",
+      "price": 210,
+      "source": "https://web.archive.org/web/20220522190631/https://www.auberge-de-l-ill.com/fr/restaurant.html"
+    },
+    {
+      "date": "2023-01",
+      "price": 225,
+      "source": "https://web.archive.org/web/20230127232102/https://www.auberge-de-l-ill.com/fr/restaurant.html"
+    },
+    {
+      "date": "2024-04",
+      "price": 250,
+      "source": "https://web.archive.org/web/20240415000409/https://www.auberge-de-l-ill.com/fr/restaurant.html"
+    },
+    {
+      "date": "2025-06",
+      "price": 275,
+      "source": "https://web.archive.org/web/20250622025354/https://www.auberge-de-l-ill.com/fr/restaurant.html"
+    }
+  ],
+  "bookingOpens": "Online through Zenchef from the restaurant's website, or by phone.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=365162",
+  "bookingPhone": "+33 3 89 71 89 03",
+  "cancellation": "Online bookings ask for a card guarantee of €250 per person.",
+  "groups": "Le Pigeonnier, a wood-panelled room with a large fireplace, can be booked for private events.",
+  "dressCode": "Guests are asked to dress elegantly, in keeping with the setting.",
+  "infoSource": "https://www.auberge-de-l-ill.com/fr/restaurant.html",
+  "infoChecked": "2026-10-12"
 }

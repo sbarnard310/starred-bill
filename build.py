@@ -6486,7 +6486,33 @@ RESTAURANT_PAGES = ("le-bernardin", "la-pergola", "restaurant-gordon-ramsay", "o
                     "quique-dacosta", "sushi-sho", "enoteca-pinchiorri", "kadeau-copenhagen",
                     # Batch 3, 9 Oct 2026: the most-searched in the US, and Le Jules Verne
                     "interstellar-bbq", "cote-miami", "crown-shy", "her-place-supper-club", "blue-hill-at-stone-barns", "the-wolfs-tailor",
-                    "the-inn-at-little-washington", "the-modern", "lazy-bear", "le-jules-verne")
+                    "the-inn-at-little-washington", "the-modern", "lazy-bear", "le-jules-verne",
+                    # Batch 4, 12 Oct 2026: the rest of the 281 most-searched in Ahrefs, less names mostly searched for something else
+                    "oiji-mi", "berton", "timberyard", "bom", "joel-robuchon", "jl-studio", "christopher-coutanceau", "la-marine",
+                    "da-vittorio", "les-morainieres", "casa-perbellini-12-apostoli", "le-clos-des-sens", "schloss-schauenstein",
+                    "le-calandre", "georges-blanc", "il-piccolo-principe", "anne-de-bretagne", "ciel-bleu", "chefs-table", "lair-du-temps",
+                    "leau-vive", "san-domenico", "bottiglieria-1881", "loiseau-blanc", "the-restaurant", "auberge-de-l-ill", "the-eight",
+                    "le-pavillon-bad-peterstal", "alla-prima", "the-counter", "da-terra", "kong-hans-kaelder", "flores-raras",
+                    "smoked-room", "paco-roncero", "sushi-kanesaka-tokyo", "schwarzer-adler-hall-in-tirol", "wing-lei", "tempura-kondo",
+                    "da-vittorio-shanghai", "humble-chicken", "latelier-de-joel-robuchon-hong-kong", "la-grenouillere", "bozar-restaurant",
+                    "andrea-aprea", "inter-scaldes", "villa-feltrinelli", "le-cerf-zweiflingen", "henne-kirkeby-kro", "sushi-yoshinaga",
+                    "baan-tepa", "de-nieuwe-winkel", "il-pagliaccio", "maison-nouvelle", "row-on-5", "louis-linster",
+                    "seventh-son-beijing", "seventh-son", "the-boat-lichfield", "jeune-et-jolie", "gravetye-manor", "michel-sarran",
+                    "le-clan", "friday-saturday-sunday", "published-on-main", "od-urla", "san-ho-won", "casa-lavanda", "sollerod-kro",
+                    "the-progress", "311-omakase", "jay-fai", "auberge-du-soleil", "don-alfonso-1890", "lympstone-manor",
+                    "don-alfonso-1890-santagata-sui-due-golfi", "don-alfonso-1890-toronto", "restaurant-gordon-ramsay-high", "angler-sf",
+                    "boia-de", "niku-steakhouse", "pavyllon-london", "hilda-and-jesse", "tulus-lotrek", "le-violon-dingres",
+                    "asador-alfonso", "eatanic-garden", "toyo-eatery", "mallory-gabsi", "kin-khao", "lazy-betty", "osteria-giulia",
+                    "smoked-room-dubai", "l-or-bleu", "stubborn-seed", "state-bird-provisions", "teruar-urla", "sushi-kanesaka-seoul",
+                    "st-john", "sushi-kanesaka", "sushi-anaba", "la-maison-dans-le-parc", "le-grill-monaco", "the-dabney", "p-greco",
+                    "latelier-de-joel-robuchon-tokyo", "gallery-by-chele", "galvin-la-chapelle", "waku-ghin", "alejandro-serrano",
+                    "hambleton-hall", "formel-b", "chez-noir", "pedro-lemos", "pineapple-and-pearls", "villa-retiro", "levadura-de-olla",
+                    "the-surf-club-restaurant", "ugo-chan", "hakkasan-dubai", "li-galli", "hoogan-et-beaufort", "la-mare-aux-oiseaux",
+                    "cail-bruich", "morston-hall", "hill-street-tai-hwa-pork-noodle", "il-pellicano", "primo-passo", "old-stamp-house",
+                    "the-chairman", "kissa-tanto", "sun-moon-studio", "kvitnes-gard", "kaatje-bij-de-sluis", "l-amant-secret",
+                    "craft-omakase", "belle-de-mars", "comme-chez-soi", "sushi-masashi", "fordwich-arms", "11-woodfire",
+                    "contrada-bricconi", "the-village-pub", "arco-by-paco-perez", "variety-jones", "kerfield-arms", "jun-sakamoto",
+                    "chez-bruce", "hansik-goo", "new-punjab-club", "sushi-masaki-saito")
 # The owner's rule (9 Oct 2026): at most 10 questions per page, and none that repeats what the page already says. On a
 # restaurant page the questions are its own section headings, each with its answer straight under it; the structured data
 # (FAQPage) lists them, most-asked first.

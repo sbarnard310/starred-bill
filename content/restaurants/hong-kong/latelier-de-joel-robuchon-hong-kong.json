@@ -14,15 +14,15 @@
   "changeDate": "2026-03",
   "rating": 4.4,
   "reviews": 818,
-  "dinner": 2480,
+  "dinner": 3180,
   "dinnerType": "menu",
-  "dinnerNote": "Menu Signature, 6 courses",
-  "dinnerNoteZh": "Menu Signature，6道菜",
-  "sourceType": "press",
-  "source": "https://www.top25restaurants.com/asia/hongkong/restaurant/latelier-de-joel-robuchon/",
-  "lunchNote": "Open for lunch",
-  "lunchNoteZh": "有供應午餐",
-  "lunchNoteYue": "有午市",
+  "dinnerNote": "Menu Dégustation, 8 courses (6 courses HK$2,680)",
+  "dinnerNoteZh": "Menu Dégustation，8道菜（6道菜港幣2,680）",
+  "sourceType": "site",
+  "source": "https://lisboa.com.hk/menu/read/L'Atelier%20menu%20(12-10)%20marketing.pdf",
+  "lunchNote": "Menu Découverte, 3 courses (4 courses HK$1,180, 5 courses HK$1,580)",
+  "lunchNoteZh": "Menu Découverte，3道菜（4道菜港幣1,180，5道菜港幣1,580）",
+  "lunchNoteYue": "Menu Découverte，3道菜（4道菜港幣1,180，5道菜港幣1,580）",
   "lunchType": "menu",
   "website": "https://www.robuchon.hk/",
   "lat": 22.281199,
@@ -33,5 +33,86 @@
     "vegetarian-menu"
   ],
   "chef": "Julien Tongourian",
-  "chefSource": "site"
+  "chefSource": "site",
+  "lunch": 880,
+  "lunchSourceType": "site",
+  "lunchSource": "https://lisboa.com.hk/menu/read/L'Atelier%20menu%20(12-10)%20marketing.pdf",
+  "menus": [
+    {
+      "name": "Menu Dégustation",
+      "meal": "dinner",
+      "price": 3180,
+      "courses": 8,
+      "note": "At the L'Atelier counter, dinner only; the whole table has the same menu; A4 Wagyu instead of the quail HK$400 extra; Louis XIII cognac pairing HK$1,888"
+    },
+    {
+      "name": "six-course Menu Dégustation",
+      "meal": "dinner",
+      "price": 2680,
+      "courses": 6,
+      "note": "At the L'Atelier counter, dinner only"
+    },
+    {
+      "name": "Le Jardin Menu Dégustation",
+      "meal": "dinner",
+      "price": 3280,
+      "courses": 8,
+      "note": "In the Le Jardin dining room, at tables rather than the counter"
+    },
+    {
+      "name": "Le Jardin Menu Signature",
+      "meal": "dinner",
+      "price": 3080,
+      "courses": 5,
+      "note": "Robuchon's best-known dishes, in the Le Jardin dining room"
+    },
+    {
+      "name": "Menu Découverte",
+      "meal": "lunch",
+      "price": 880,
+      "courses": 3,
+      "note": "Amuse-bouche, a starter, a main and dessert or cheese, chosen from a short list; some dishes carry a supplement"
+    },
+    {
+      "name": "Menu Plaisir",
+      "meal": "lunch",
+      "price": 1180,
+      "courses": 4,
+      "note": "Two starters, a main and dessert or cheese"
+    },
+    {
+      "name": "Menu Gourmet",
+      "meal": "lunch",
+      "price": 1580,
+      "courses": 5,
+      "note": "Two starters, two mains and dessert or cheese"
+    },
+    {
+      "name": "Le Jardin lunch menus",
+      "meal": "lunch",
+      "price": 980,
+      "courses": 3,
+      "note": "The same three lunch menus in the Le Jardin dining room: HK$980, HK$1,280 and HK$1,680"
+    }
+  ],
+  "menusSource": "https://www.robuchon.hk/en/jr-latelier",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Le Salon de Thé de Joël Robuchon",
+      "note": "The group's café and pâtisserie, with branches in the ifc mall and ELEMENTS",
+      "url": "https://www.robuchon.hk/en/jr-lesalonifc"
+    }
+  ],
+  "starsSince": 2026,
+  "bookingOpens": "Online through SevenRooms or by phone. When booking, choose a counter seat at L'Atelier, facing the open kitchen, or a table in the Le Jardin dining room. Every booking needs a credit card guarantee, completed by midnight on the day the booking is made.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/latelierdejoelrobuchonhongkong",
+  "bookingPhone": "+852 2166 9000",
+  "cancellation": "Changes and cancellations must be made at least 48 hours ahead; later ones cost HK$500 per guest.",
+  "groups": "There is a private dining room with a minimum spend. Half the minimum spend is taken as a deposit, which is not refundable; changes made 7 or more days ahead can be moved to another booking within 3 months.",
+  "dressCode": "Smart casual. Men must wear long trousers, closed shoes and a shirt or top with sleeves; vests, sleeveless tops, shorts, sandals and flip-flops are not accepted.",
+  "children": "Children aged 8 and over are welcome.",
+  "byob": "Outside food and drink, including wine and birthday cakes, is not accepted.",
+  "infoSource": "https://www.sevenrooms.com/reservations/latelierdejoelrobuchonhongkong",
+  "infoChecked": "2026-10-12"
 }

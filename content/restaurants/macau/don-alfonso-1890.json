@@ -21,14 +21,14 @@
   "dinnerNoteZh": "尊尚品嚐菜單（體驗菜單澳門幣1,580）",
   "wine": 1180,
   "sourceType": "site",
-  "source": "https://assets.sjmresorts.com/2026-09/glp-don-alfonso-dinner-set-menu-260929-en-333645c9.pdf",
+  "source": "https://assets.sjmresorts.com/2026-10/glp-don-alfonso-dinner-set-menu-261005-en-82114750.pdf",
   "lunch": 1080,
   "lunchType": "menu",
   "lunchNote": "Menu Essenza (2 courses MOP$680)",
   "lunchNoteZh": "Essenza 套餐（兩道菜澳門幣680）",
   "lunchWine": 580,
   "lunchSourceType": "site",
-  "lunchSource": "https://assets.sjmresorts.com/2026-09/glp-don-alfonso-lunch-set-menu-260929-en-102f4793.pdf",
+  "lunchSource": "https://assets.sjmresorts.com/2026-10/glp-don-alfonso-lunch-set-menu-261005-en-994f2cd8.pdf",
   "website": "https://www.grandlisboapalace.com/en/restaurants-n-bars/don-alfonso-1890",
   "lat": 22.143574,
   "lng": 113.573284,
@@ -37,5 +37,56 @@
   "diets": [
     "vegetarian",
     "vegan"
-  ]
+  ],
+  "menus": [
+    {
+      "name": "Premium Degustation menu",
+      "meal": "dinner",
+      "price": 2280,
+      "wine": 1180,
+      "courses": 10,
+      "note": "For the whole table; 8-glass pairing MOP$1,180, or MOP$5,880 for the 7-glass premium pairing"
+    },
+    {
+      "name": "Experience menu",
+      "meal": "dinner",
+      "price": 1580,
+      "wine": 680,
+      "courses": 7,
+      "note": "For the whole table; 5-glass pairing; supplements of MOP$180 for the sea urchin spaghetti and the wagyu"
+    },
+    {
+      "name": "Menu Essenza",
+      "meal": "lunch",
+      "price": 1080,
+      "wine": 580,
+      "courses": 7,
+      "note": "Lunch Friday to Sunday, for the whole table; 3-glass pairing"
+    },
+    {
+      "name": "Business lunch, two courses",
+      "meal": "lunch",
+      "price": 680,
+      "courses": 2,
+      "note": "A starter or pasta, then a main; desserts MOP$280 extra"
+    },
+    {
+      "name": "Business lunch, three courses",
+      "meal": "lunch",
+      "price": 880,
+      "courses": 3,
+      "note": "Starter, pasta and main"
+    }
+  ],
+  "menusSource": "https://www.grandlisboapalace.com/en/restaurants-n-bars/don-alfonso-1890",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2026,
+  "hotel": "Palazzo Versace Macau at Grand Lisboa Palace",
+  "bookingOpens": "Online through the Grand Lisboa Palace's booking form on the restaurant's page, or by phone.",
+  "bookingUrl": "https://www.grandlisboapalace.com/en/restaurants-n-bars/don-alfonso-1890",
+  "bookingPhone": "+853 8881 1390",
+  "dressCode": "Smart casual. No slippers; men also no open shoes, sandals or sleeveless tops.",
+  "children": "Children aged 6 and over are welcome.",
+  "infoSource": "https://www.grandlisboapalace.com/en/restaurants-n-bars/don-alfonso-1890",
+  "infoChecked": "2026-10-12"
 }

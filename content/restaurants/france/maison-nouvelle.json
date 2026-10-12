@@ -8,14 +8,14 @@
   "reviews": 850,
   "dinner": 235,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €155)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 155 €)",
+  "dinnerNote": "Surprise tasting menu, the only menu (4-course Friday lunch €155)",
+  "dinnerNoteFr": "Menu dégustation surprise, menu unique (déjeuner du vendredi en 4 plats 155 €)",
   "sourceType": "site",
   "source": "https://maison-nouvelle.fr/",
-  "lunch": 235,
+  "lunch": 155,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sat",
-  "lunchNoteFr": "Même menu le midi · ven.–sam.",
+  "lunchNote": "Variation in 4 courses, Friday lunch only (full menu €235 Fri–Sat)",
+  "lunchNoteFr": "Variation en 4 plats, uniquement le vendredi midi (menu complet 235 € ven.–sam.)",
   "lunchSourceType": "site",
   "lunchSource": "https://maison-nouvelle.fr/",
   "website": "https://maison-nouvelle.fr/",
@@ -24,5 +24,40 @@
   "placeId": "ChIJQetHmUApVQ0RR5Xn7CFNcbQ",
   "michelinId": "1199611",
   "chef": "Philippe Etchebest",
-  "chefSource": "site"
+  "chefSource": "site",
+  "wine": 130,
+  "menus": [
+    {
+      "name": "single surprise tasting menu",
+      "meal": "dinner",
+      "price": 235,
+      "wine": 130,
+      "note": "Lunch or dinner (lunch Friday and Saturday only); wine pairing of seven glasses €130"
+    },
+    {
+      "name": "four-course Variation",
+      "meal": "lunch",
+      "price": 155,
+      "courses": 4,
+      "note": "Friday lunch only, not on public holidays"
+    }
+  ],
+  "menusSource": "https://maison-nouvelle.fr/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through Zenchef or by phone. Tables can be booked up to six months ahead.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 6,
+    "via": "Zenchef",
+    "tz": "Europe/Paris",
+    "source": "https://maison-nouvelle.fr/faq/",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=356612",
+  "bookingPhone": "+33 5 18 05 06 22, Monday 10am–5pm, Tuesday to Saturday 9am–8pm",
+  "cancellation": "A card guarantee of €150 per person is taken online within 24 hours of booking; it is charged for cancellations less than 24 hours ahead and for no-shows. On 31 December and 14 February the guarantee is 70% of the meal price and the notice is 72 hours.",
+  "groups": "Company bookings on invoice pay a 30% deposit; changes to numbers must be sent in writing at least three working days ahead.",
+  "children": "Children up to 11 can have a four-course menu for €120.",
+  "infoSource": "https://maison-nouvelle.fr/faq/",
+  "infoChecked": "2026-10-12"
 }

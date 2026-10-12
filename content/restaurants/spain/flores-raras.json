@@ -12,10 +12,10 @@
   "dinnerNoteEs": "Menú degustación (otros menús desde 115 €)",
   "sourceType": "site",
   "source": "https://floresraras.com/",
-  "lunch": 195,
+  "lunch": 115,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Saturdays",
-  "lunchNoteEs": "El mismo menú al mediodía · sábado",
+  "lunchNote": "1988 menu, Friday lunch (Flores Raras menu €195 Fri–Sat)",
+  "lunchNoteEs": "Menú 1988, mediodía del viernes (menú Flores Raras 195 € vie–sáb)",
   "lunchSourceType": "site",
   "lunchSource": "https://floresraras.com/",
   "website": "https://floresraras.com/",
@@ -29,5 +29,42 @@
     "gluten-free"
   ],
   "chef": "Carolina Álvarez",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Flores Raras tasting menu",
+      "meal": "dinner",
+      "price": 195,
+      "courses": 6,
+      "note": "Dinner Tuesday to Saturday, lunch Friday and Saturday"
+    },
+    {
+      "name": "Vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 195,
+      "courses": 6,
+      "note": "Must be requested when booking"
+    },
+    {
+      "name": "Esencia menu",
+      "meal": "dinner",
+      "price": 165,
+      "courses": 4
+    },
+    {
+      "name": "1988 menu",
+      "meal": "dinner",
+      "price": 115,
+      "courses": 3,
+      "note": "Tuesday to Thursday dinner and Friday lunch only"
+    }
+  ],
+  "menusSource": "https://floresraras.com/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through the restaurant's website (CoverManager). A credit card is needed to hold the table, but nothing is charged when booking. If nothing shows as free for the same day, call the restaurant.",
+  "bookingUrl": "https://floresraras.com/#reserva",
+  "bookingPhone": "+34 961 111 106",
+  "cancellation": "Free cancellation up to 24 hours before the meal; after that the restaurant charges €100 per guest.",
+  "infoSource": "https://floresraras.com/",
+  "infoChecked": "2026-10-12"
 }

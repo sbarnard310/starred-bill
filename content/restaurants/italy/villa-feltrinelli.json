@@ -10,8 +10,8 @@
   "reviews": 335,
   "dinner": 280,
   "dinnerType": "menu",
-  "dinnerNote": "Surprise tasting menu, 8 courses; plus 10% service",
-  "dinnerNoteIt": "Menu degustazione a sorpresa, 8 portate; più 10% di servizio",
+  "dinnerNote": "100% Baiocco surprise tasting menu, 8 courses; plus 10% service",
+  "dinnerNoteIt": "Menu degustazione a sorpresa 100% Baiocco, 8 portate; più 10% di servizio",
   "sourceType": "site",
   "source": "https://www.ristorantevillafeltrinelli.com/it/",
   "noLunch": true,
@@ -27,5 +27,27 @@
     "vegan"
   ],
   "chef": "Stefano Baiocco",
-  "chefSource": "site"
+  "chefSource": "site",
+  "noLunch": true,
+  "lunchNote": "Dinner only (the hotel's à la carte menu at lunch)",
+  "lunchNoteIt": "Solo a cena (a pranzo il menu à la carte dell'hotel)",
+  "menus": [
+    {
+      "name": "100% Baiocco surprise tasting menu",
+      "meal": "dinner",
+      "price": 280,
+      "courses": 8,
+      "note": "The only menu at dinner; drinks extra; plus a 10% discretionary service charge"
+    }
+  ],
+  "menusSource": "https://www.ristorantevillafeltrinelli.com/en/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2013,
+  "hotel": "the Grand Hotel a Villa Feltrinelli",
+  "bookingOpens": "Online only, on the restaurant's website. Dinner only: the gourmet restaurant does not open at lunch, when the hotel serves its own à la carte menu.",
+  "bookingUrl": "https://www.ristorantevillafeltrinelli.com/en/booking",
+  "bookingPhone": "+39 0365 798000",
+  "servicePct": 10,
+  "infoSource": "https://www.ristorantevillafeltrinelli.com/en/booking",
+  "infoChecked": "2026-10-12"
 }

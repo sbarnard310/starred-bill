@@ -9,9 +9,9 @@
   "reviews": 618,
   "dinner": 110,
   "dinnerType": "menu",
-  "dinnerNote": "Chef's menu, served family-style",
-  "sourceType": "press",
-  "source": "https://www.sevenrooms.com/explore/varietyjones/reservations/create/search/",
+  "dinnerNote": "Chef's choice six-course set menu, served family-style",
+  "sourceType": "site",
+  "source": "https://www.varietyjones.ie/sample-menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.varietyjones.ie/",
@@ -20,5 +20,34 @@
   "placeId": "ChIJF-JWLLwNZ0gRyLN1NTAEKT8",
   "michelinId": "1183630",
   "chef": "Keelan Higgs",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "chef's choice set menu",
+      "meal": "dinner",
+      "price": 110,
+      "courses": 6,
+      "note": "The only menu, shared family-style; pescatarian version with notice, no vegetarian or vegan menu, not suitable for dairy- or egg-free diets"
+    }
+  ],
+  "menusSource": "https://www.varietyjones.ie/sample-menu",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through SevenRooms. Bookings open in three-month blocks on a rolling basis and fill fast, Friday and Saturday nights first; at the moment they run to the end of January 2027. Dinner is Wednesday to Saturday, with sittings at 5pm to 5.30pm and 8pm to 8.30pm. Wednesdays and Thursdays usually have tables; for last-minute tables, check its social media or phone.",
+  "bookingWindow": {
+    "type": "announced",
+    "note": "Bookings open in three-month blocks on a rolling basis; at present they are open to the end of January 2027.",
+    "via": "SevenRooms",
+    "tz": "Europe/Dublin",
+    "source": "https://www.varietyjones.ie/info",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.sevenrooms.com/explore/varietyjones/reservations/create/search/",
+  "bookingPhone": "+353 1 567 1164",
+  "cancellation": "For 1 to 4 people, cancelling or not turning up within 48 hours costs €110 per person, charged if the table can't be resold (passing the booking to a friend is allowed if the restaurant is told). If fewer people arrive than booked without notice, €50 per missing person is added to the bill. Parties of 5 or 6 pay a €220 deposit, kept if they cancel with less than a week's notice.",
+  "walkIns": "There is no waiting area, so guests are asked not to arrive before their booking time.",
+  "waitlist": "Join the waitlist on SevenRooms; if a table comes free, the booking system emails you automatically.",
+  "groups": "The largest party is 6, with a €220 deposit.",
+  "children": "The restaurant says it is not suitable for children.",
+  "infoSource": "https://www.varietyjones.ie/info",
+  "infoChecked": "2026-10-12"
 }

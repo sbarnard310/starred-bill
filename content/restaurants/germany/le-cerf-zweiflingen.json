@@ -9,7 +9,7 @@
   "reviews": 33,
   "dinnerType": "menu",
   "dinner": 298,
-  "dinnerNote": "Tasting menu (other menus from €198)",
+  "dinnerNote": "Menu \"Chef\", 6 courses (other menus from €178)",
   "sourceType": "site",
   "source": "https://schlosshotel-friedrichsruhe.de/wp-content/uploads/2026/09/Le-Cerf-ab-10.-September.pdf",
   "website": "https://schlosshotel-friedrichsruhe.de/gourmet-restaurant-le-cerf/",
@@ -23,9 +23,43 @@
   ],
   "chef": "Boris Rommel",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 198 €)",
+  "dinnerNoteDe": "Menü „Chef“, 6 Gänge (andere Menüs ab 178 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-klassisch"
+  "cuisineDe": "Französisch-klassisch",
+  "menus": [
+    {
+      "name": "Menu \"Chef\"",
+      "meal": "dinner",
+      "price": 298,
+      "courses": 6,
+      "note": "Five courses without the Breton lobster €268; dishes can also be ordered à la carte"
+    },
+    {
+      "name": "Menu \"Légumes\" (vegetarian)",
+      "meal": "dinner",
+      "price": 198,
+      "courses": 6,
+      "note": "Five courses €178; a vegan menu costs €40 more than the vegetarian one and needs 24 hours' notice"
+    }
+  ],
+  "menusSource": "https://schlosshotel-friedrichsruhe.de/wp-content/uploads/2026/09/Le-Cerf-ab-10.-September.pdf",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Jägerstube",
+      "note": "The hotel's regional restaurant, also run by Boris Rommel's kitchen, open daily for lunch and dinner",
+      "url": "https://schlosshotel-friedrichsruhe.de/jaegerstube/"
+    }
+  ],
+  "starsSince": 2017,
+  "hotel": "the Wald & Schlosshotel Friedrichsruhe",
+  "bookingOpens": "By phone, by email (hotel@schlosshotel-friedrichsruhe.de) or through the hotel's enquiry form. Open for dinner Thursday to Saturday, 6.30pm to 10.30pm, with last orders at 8.30pm.",
+  "bookingPhone": "+49 7941 60870",
+  "cancellation": "Free cancellation up to 24 hours before the booking; later cancellations and no-shows are charged €150 per person.",
+  "groups": "The Chef's Table room, looking into the kitchen through a glass wall, takes up to 8 guests; booked by phone, price on request.",
+  "groupsUrl": "https://schlosshotel-friedrichsruhe.de/chefs-table-room/",
+  "infoSource": "https://schlosshotel-friedrichsruhe.de/gourmet-restaurant-le-cerf/",
+  "infoChecked": "2026-10-12"
 }

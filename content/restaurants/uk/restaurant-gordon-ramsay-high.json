@@ -12,10 +12,10 @@
   "reviews": 112,
   "dinner": 250,
   "dinnerType": "menu",
-  "dinnerNote": "Surprise tasting menu",
+  "dinnerNote": "Carte Blanche surprise tasting menu",
   "wine": 160,
-  "sourceType": "press",
-  "source": "https://www.hot-dinners.com/Gastroblog/Test-drive/restaurant-gordon-ramsay-high-review-22-bishopsgate-london",
+  "sourceType": "site",
+  "source": "https://res.cloudinary.com/gordonramsay/image/upload/v1726519194/RGR%20High/Bishopsgate/sample-menu_dqylc9.pdf",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.gordonramsayrestaurants.com/high/bishopsgate/",
@@ -29,5 +29,26 @@
     "vegan"
   ],
   "chef": "James Goodyear",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Carte Blanche tasting menu",
+      "meal": "dinner",
+      "price": 250,
+      "courses": 8,
+      "note": "Tuesday to Saturday; every sitting starts at 7pm"
+    }
+  ],
+  "menusSource": "https://res.cloudinary.com/gordonramsay/image/upload/v1726519194/RGR%20High/Bishopsgate/sample-menu_dqylc9.pdf",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2026,
+  "bookingOpens": "Online through OpenTable, for up to six guests.",
+  "bookingUrl": "https://www.opentable.co.uk/r/restaurant-gordon-ramsay-high-reservations-london?restref=364593&lang=en-GB",
+  "bookingPhone": "+44 20 7592 1618",
+  "groups": "Bookings for more than six count as exclusive hire of the 12-seat Chef's Table, available for lunch or dinner any day: chefstablergrhigh@gordonramsay.com or +44 20 7592 1373.",
+  "groupsUrl": "https://www.gordonramsayrestaurants.com/high/bishopsgate/exclusivehire",
+  "dressCode": "Business casual.",
+  "servicePct": 15,
+  "infoSource": "https://www.gordonramsayrestaurants.com/high/bishopsgate/contact",
+  "infoChecked": "2026-10-12"
 }

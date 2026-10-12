@@ -31,6 +31,20 @@
   "chef": "Ollie Liedags",
   "chefSource": "site",
   "dinnerNote": "Chef's Adventure Menu, 5 courses",
+  "menus": [
+    {
+      "name": "Chef's Adventure Menu",
+      "meal": "dinner",
+      "price": 99,
+      "wine": 42,
+      "courses": 5,
+      "note": "A five-course surprise menu at dinner (Monday, Thursday and Friday) or weekend brunch; drinks pairing $42, or $78 for the premium one. Dishes can be added; at brunch there is also an à la carte menu."
+    }
+  ],
+  "menusSource": "https://www.hildaandjessesf.com/menu",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2024,
+  "bookingOpens": "Online on OpenTable, from the restaurant's website. Tables open six weeks ahead.",
   "bookingWindow": {
     "type": "rolling",
     "days": 42,
@@ -38,5 +52,13 @@
     "via": "website",
     "source": "https://www.hildaandjessesf.com/reservations",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://www.opentable.com/r/hilda-and-jesse-san-francisco",
+  "bookingPhone": "+1 415 872 7023",
+  "walkIns": "Part of the dining room is kept for walk-ins.",
+  "groups": "Private dining and full buyouts are arranged through the events enquiry form.",
+  "groupsUrl": "https://www.hildaandjessesf.com/events",
+  "dressCode": "Smart casual.",
+  "infoSource": "https://www.hildaandjessesf.com/reservations",
+  "infoChecked": "2026-10-12"
 }

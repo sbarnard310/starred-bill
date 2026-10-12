@@ -7,11 +7,11 @@
   "rating": 4.8,
   "reviews": 651,
   "dinnerType": "menu",
-  "dinner": 245,
-  "dinnerNote": "Tasting menu (other menus from €225)",
+  "dinner": 239,
+  "dinnerNote": "Tasting menu, omnivore or vegetarian",
   "wine": 137,
-  "sourceType": "press",
-  "source": "https://www.feinschmecker.de/restaurant/de/berlin/tulus-lotrek-41",
+  "sourceType": "site",
+  "source": "https://www.tuluslotrek.de/",
   "website": "https://www.tuluslotrek.de/",
   "lat": 52.4893627,
   "lng": 13.4137112,
@@ -23,9 +23,26 @@
   ],
   "chef": "Maximilian Strohe",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 225 €)",
+  "dinnerNoteDe": "Degustationsmenü, omnivor oder vegetarisch",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "cuisineDe": "Moderne Küche",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 239,
+      "wine": 137,
+      "note": "Omnivore or vegetarian, same price; filtered water included; alcohol-free drinks pairing €99"
+    }
+  ],
+  "menusSource": "https://www.tuluslotrek.de/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through Formitable on the restaurant's website, or by phone. The phone is not answered on Tuesdays and Wednesdays, when the restaurant is closed. Open Monday and Thursday to Sunday from 6.30pm.",
+  "bookingUrl": "https://www.tuluslotrek.de/",
+  "bookingPhone": "+49 30 41956687",
+  "groups": "Private hire, events and catering by enquiry to mail@tuluslotrek.de.",
+  "infoSource": "https://www.tuluslotrek.de/",
+  "infoChecked": "2026-10-12"
 }

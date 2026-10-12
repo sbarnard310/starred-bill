@@ -29,5 +29,57 @@
     "gluten-free"
   ],
   "chef": "Rafael Cagali",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 275,
+      "wine": 160,
+      "note": "Dinner Wednesday to Saturday"
+    },
+    {
+      "name": "Short tasting menu",
+      "meal": "dinner",
+      "price": 190,
+      "note": "Wednesday to Friday evenings"
+    },
+    {
+      "name": "Three-course set lunch",
+      "meal": "lunch",
+      "price": 110,
+      "courses": 3,
+      "note": "Thursday to Saturday; extra courses £35 (trout) and £20 (cheese)"
+    }
+  ],
+  "menusSource": "https://www.daterra.co.uk/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Elis",
+      "note": "Brazilian restaurant on the Town Hall Hotel's first floor, linked from Da Terra's website",
+      "url": "https://www.restaurantelis.co.uk/"
+    }
+  ],
+  "starsSince": 2021,
+  "hotel": "the Town Hall Hotel in Bethnal Green",
+  "bookingOpens": "Online only, through the booking page on Da Terra's website (OpenTable); no phone bookings. Tables open 60 days ahead.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 60,
+    "tz": "Europe/London",
+    "via": "OpenTable",
+    "source": "https://www.daterra.co.uk/faq/",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.daterra.co.uk/reservations/",
+  "cancellation": "Card details are needed to book. Tables of up to six can cancel free up to 48 hours ahead by emailing booking@daterra.co.uk; later cancellations, no-shows and smaller numbers on the night may be charged a cancellation fee per guest.",
+  "groups": "The largest table seats six. Na Mesa, the private dining room, seats up to 10 (namesa@daterra.co.uk).",
+  "groupsUrl": "https://www.daterra.co.uk/private-dining/",
+  "dressCode": "No dress code: the restaurant asks only that guests dress comfortably.",
+  "children": "Not recommended for children under 8. No children's menu, prams or highchairs.",
+  "duration": "About three hours for the tasting menu and two hours for the set lunch.",
+  "byob": "Corkage £70 a 75cl bottle and £40 a 37.5cl bottle.",
+  "infoSource": "https://www.daterra.co.uk/faq/",
+  "infoChecked": "2026-10-12"
 }

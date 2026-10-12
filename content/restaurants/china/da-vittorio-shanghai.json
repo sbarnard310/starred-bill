@@ -32,5 +32,30 @@
   "lunchWine": 2188,
   "lunchSourceType": "site",
   "lunchSource": "https://www.davittorio.com/images/davittorio/ristorante/shanghai/menu/Menu Ristorante - Inglese.pdf",
-  "cuisineZhs": "意大利菜"
+  "cuisineZhs": "意大利菜",
+  "menus": [
+    {
+      "name": "Senza Confini tasting menu",
+      "meal": "dinner",
+      "price": 3388,
+      "wine": 2188,
+      "courses": 12,
+      "note": "For the whole table; the chef's free-ranging menu, with the Paccheri alla Vittorio; a grander wine pairing costs CN¥4,988"
+    },
+    {
+      "name": "Il Mare di 'Da Vittorio' tasting menu",
+      "meal": "dinner",
+      "price": 2388,
+      "wine": 1688,
+      "courses": 7,
+      "note": "For the whole table; fish and shellfish from the day's market"
+    }
+  ],
+  "menusSource": "https://www.davittorio.com/images/davittorio/ristorante/shanghai/menu/Menu Ristorante - Inglese.pdf",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "By phone or email (Reservation@davittoriosh.cn); the restaurant takes its own bookings.",
+  "bookingPhone": "+86 21 6330 2198",
+  "groups": "Besides the 40-seat dining room there are four private rooms that can be joined together and a banquet room for 16.",
+  "infoSource": "https://www.davittorio.com/en/restaurants/da-vittorio-shanghai.html",
+  "infoChecked": "2026-10-12"
 }

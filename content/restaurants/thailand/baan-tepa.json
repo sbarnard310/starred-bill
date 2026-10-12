@@ -10,10 +10,10 @@
   "reviews": 446,
   "dinner": 6200,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, plus service and VAT (++)",
-  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
-  "sourceType": "press",
-  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "dinnerNote": "Tasting menu, 7 courses, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิม 7 คอร์ส ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "site",
+  "source": "https://www.baantepabkk.com/menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTh": "เฉพาะมื้อค่ำ",
@@ -23,5 +23,38 @@
   "placeId": "ChIJg1tidYdhHTER4NNOidyhVvc",
   "michelinId": "1200629",
   "chef": "Chudaree Debhakam",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 4500,
+  "menus": [
+    {
+      "name": "Seven-course tasting menu",
+      "meal": "dinner",
+      "price": 6200,
+      "wine": 4500,
+      "courses": 7,
+      "note": "The only menu, dinner Wednesday to Sunday. Seven-glass wine pairing THB 4,500; five-glass Thai drinks pairing or four-glass wine pairing THB 2,900; non-alcoholic pairings THB 1,800–2,600. Prices plus 10% service and 7% VAT."
+    }
+  ],
+  "menusSource": "https://www.baantepabkk.com/menu",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2023,
+  "bookingOpens": "Online through TableCheck, up to 60 days ahead. A deposit of half the menu price confirms the booking (the full amount when a wine pairing is booked); a payment link follows the booking. Single diners can book online and sit at the kitchen counter.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 60,
+    "tz": "Asia/Bangkok",
+    "via": "TableCheck",
+    "source": "https://www.tablecheck.com/en/shops/baan-tepa-culinary-space/reserve",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.tablecheck.com/en/shops/baan-tepa-culinary-space/reserve",
+  "bookingPhone": "+66 98 696 9074",
+  "cancellation": "Cancellations more than seven days ahead are refunded in full; after that the deposit is kept. The date can be changed once, at least seven days ahead, and changes to the date or numbers made less than 48 hours ahead may lose the deposit.",
+  "groups": "The Garden Wing private room seats 8 to 14 at one table, with a minimum spend of THB 7,500 plus service and VAT per person; book it by email (reservation@baantepabkk.com).",
+  "dressCode": "Smart casual. No shorts, sleeveless tops or flip-flops.",
+  "children": "Children aged 12 and over are welcome if they eat the full tasting menu; there are no children's dishes.",
+  "duration": "About two and a half hours. Dinner has three seatings, at 6pm, 7pm and 8pm, Wednesday to Sunday.",
+  "byob": "Corkage is THB 2,000 plus service and VAT per 75cl bottle, waived if a bottle is also bought from the wine list.",
+  "infoSource": "https://www.baantepabkk.com/contact",
+  "infoChecked": "2026-10-12"
 }

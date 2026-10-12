@@ -8,7 +8,7 @@
   "reviews": 637,
   "dinnerType": "menu",
   "dinner": 275,
-  "dinnerNote": "Tasting menu (other menus from €115)",
+  "dinnerNote": "Bozar menu, 7 courses (Horta menu, 5 courses, €195, not Friday or Saturday evening)",
   "wine": 125,
   "sourceType": "site",
   "source": "https://bozarrestaurant.be/fr/menu",
@@ -22,16 +22,75 @@
   ],
   "chef": "Karen Torosyan",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 115)",
+  "dinnerNoteNl": "Menu Bozar, 7 gangen (menu Horta, 5 gangen, € 195, niet op vrijdag- en zaterdagavond)",
   "cuisineNl": "Modern Frans",
-  "dinnerNoteFr": "Menu dégustation (autres menus dès 115 €)",
-  "lunch": 275,
+  "dinnerNoteFr": "Menu Bozar, 7 services (menu Horta, 5 services, 195 €, sauf vendredi et samedi soir)",
+  "lunch": 115,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Fri",
-  "lunchNoteNl": "Zelfde menu bij de lunch · wo–vr",
-  "lunchNoteFr": "Même menu le midi · mer.–ven.",
-  "lunchWine": 125,
+  "lunchNote": "Lunch menu, 3 courses · Wed–Fri",
+  "lunchNoteNl": "Lunchmenu, 3 gangen · wo–vr",
+  "lunchNoteFr": "Menu déjeuner, 3 services · mer.–ven.",
+  "lunchWine": 55,
   "lunchSourceType": "site",
-  "lunchSource": "https://bozarrestaurant.be/fr/menu",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchSource": "https://bozarrestaurant.be/en/menu",
+  "cuisineFr": "Cuisine française moderne",
+  "menus": [
+    {
+      "name": "Bozar menu",
+      "meal": "dinner",
+      "price": 275,
+      "wine": 125,
+      "courses": 7,
+      "note": "Served to the whole table."
+    },
+    {
+      "name": "Horta menu",
+      "meal": "dinner",
+      "price": 195,
+      "wine": 95,
+      "courses": 5,
+      "note": "Not on Friday or Saturday evenings. Served to the whole table."
+    },
+    {
+      "name": "Wellington classics menu",
+      "meal": "dinner",
+      "price": 325,
+      "wine": 175,
+      "courses": 5,
+      "note": "Beef Wellington for two or more, price per person; prestige wine pairing. No need to order ahead, but numbers are limited."
+    },
+    {
+      "name": "Pithiviers classics menu",
+      "meal": "dinner",
+      "price": 325,
+      "wine": 175,
+      "courses": 5,
+      "note": "Duck and foie gras pithivier for two or more, price per person; order at least 48 hours ahead. Prestige wine pairing."
+    },
+    {
+      "name": "Granivore classics menu",
+      "meal": "dinner",
+      "price": 325,
+      "wine": 175,
+      "courses": 5,
+      "note": "Pigeon pie for two or more, price per person; order at least 48 hours ahead. Prestige wine pairing."
+    },
+    {
+      "name": "lunch menu",
+      "meal": "lunch",
+      "price": 115,
+      "wine": 55,
+      "courses": 3,
+      "note": "Lunch Wednesday to Friday. Served to the whole table."
+    }
+  ],
+  "menusSource": "https://bozarrestaurant.be/en/menu",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through Zenchef, linked from the restaurant's website, or by phone.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=370932&pid=1001&lang=en",
+  "bookingPhone": "+32 2 503 00 00, office open Tuesday to Friday 9am to 1pm",
+  "groups": "For more than eight people, email info@bozarrestaurant.be.",
+  "children": "The restaurant says the length of the meal and the setting are not suited to babies or children under nine.",
+  "infoSource": "https://bozarrestaurant.be/fr/contact",
+  "infoChecked": "2026-10-12"
 }

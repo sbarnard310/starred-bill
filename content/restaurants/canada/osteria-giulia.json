@@ -24,5 +24,42 @@
     "gluten-free"
   ],
   "chef": "Rob Rossi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Convivio group menu",
+      "meal": "dinner",
+      "price": 140,
+      "note": "Autumn 2026 family-style menu for groups of 8 to 10, from Ligurian snacks and focaccia through pasta, grilled seafood or lamb to dessert. Wine pairings available."
+    }
+  ],
+  "menusSource": "https://osteriagiulia.ca/convivio/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Giulietta",
+      "note": "The same team's sister restaurant in Toronto.",
+      "url": "https://www.giu.ca/"
+    }
+  ],
+  "bookingOpens": "Online on OpenTable only, up to 14 days ahead; each new day's tables are released at midnight Toronto time. Set an alert on OpenTable to hear of cancellations.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 14,
+    "time": "00:00",
+    "tz": "America/Toronto",
+    "via": "OpenTable",
+    "source": "https://osteriagiulia.ca/reservations/",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.opentable.ca/r/osteria-giulia-reservations-toronto?restref=1086157&lang=en-CA",
+  "bookingPhone": "+1 416-964-8686",
+  "cancellation": "Cancellations or smaller parties with less than 48 hours' notice cost $75 a guest; cutting the party by half or more may lose the booking. Tables are held for 15 minutes.",
+  "walkIns": "Bar seats can be booked on OpenTable as a separate seating type.",
+  "groups": "The largest table seats 10, and separate bookings can't be joined. Call to ask for a bigger party size. Groups of 8 to 10 can have the $140 Convivio menu.",
+  "children": "Children and infants count in the party size when booking.",
+  "duration": "Tables are reserved for 2 hours for two or three people, 2½ hours for four to seven and 3 hours for eight to ten.",
+  "byob": "Corkage is $75 a 750ml bottle, up to two bottles a table. Outside cakes and desserts are not allowed.",
+  "infoSource": "https://osteriagiulia.ca/reservations/",
+  "infoChecked": "2026-10-12"
 }

@@ -7,22 +7,74 @@
   "cuisine": "French Contemporary",
   "rating": 4.7,
   "reviews": 706,
-  "dinner": 148,
+  "dinner": 175,
   "dinnerType": "menu",
-  "dinnerNote": "Pavyllon menu, 6 courses (4 courses £98)",
+  "dinnerNote": "Pavyllon menu, 6 courses (Immersive Mayfair menu from £95)",
   "wine": 150,
-  "sourceType": "press",
-  "source": "https://www.hot-dinners.com/Gastroblog/Test-drive/pavyllon-london-restaurant-review-four-seasons-park-lane",
+  "sourceType": "site",
+  "source": "https://images.getbento.com/accounts/3f06711af6742ab4f5840be0835fbd51/media/1X4KRNUHRdyQLMGYDG8Q_02.10%20Pavyllon%20A%20La%20Carte%20Web%20Menu%20Template.pdf",
   "lunch": 55,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.hot-dinners.com/Gastroblog/Test-drive/pavyllon-london-restaurant-review-four-seasons-park-lane",
+  "lunchNote": "Taste of Pavyllon set lunch, 3 courses",
+  "lunchSourceType": "site",
+  "lunchSource": "https://images.getbento.com/accounts/3f06711af6742ab4f5840be0835fbd51/media/1X4KRNUHRdyQLMGYDG8Q_02.10%20Pavyllon%20A%20La%20Carte%20Web%20Menu%20Template.pdf",
   "website": "https://www.pavyllonlondon.com/",
   "lat": 51.5045981,
   "lng": -0.150181,
   "placeId": "ChIJBfOjfiUFdkgRvsanD9nfpA0",
   "michelinId": "1210253",
   "chef": "Benjamin Ferra Y Castell",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "lunchWine": 45,
+  "menus": [
+    {
+      "name": "Pavyllon menu",
+      "meal": "dinner",
+      "price": 175,
+      "wine": 150,
+      "courses": 6
+    },
+    {
+      "name": "Immersive Mayfair menu",
+      "meal": "dinner",
+      "price": 95,
+      "wine": 90,
+      "courses": 4,
+      "note": "Five courses £120, pairing £110"
+    },
+    {
+      "name": "Taste of Pavyllon set lunch",
+      "meal": "lunch",
+      "price": 55,
+      "wine": 45,
+      "courses": 3,
+      "note": "12pm to 2pm"
+    }
+  ],
+  "menusSource": "https://images.getbento.com/accounts/3f06711af6742ab4f5840be0835fbd51/media/1X4KRNUHRdyQLMGYDG8Q_02.10%20Pavyllon%20A%20La%20Carte%20Web%20Menu%20Template.pdf",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Pavyllon breakfast tasting menu",
+      "price": 70,
+      "note": "Saturdays and Sundays, book 24 hours ahead; drinks pairing £25",
+      "url": "https://www.pavyllonlondon.com/menu-pavyllon-london/"
+    },
+    {
+      "name": "Bar Antoine",
+      "note": "The restaurant's bar, serving cocktails and comfort food",
+      "url": "https://www.pavyllonlondon.com/bar-antoine/"
+    }
+  ],
+  "starsSince": 2024,
+  "hotel": "the Four Seasons Hotel London at Park Lane",
+  "bookingOpens": "Online through OpenTable, or by phone.",
+  "bookingUrl": "https://www.opentable.co.uk/r/pavyllon-reservations-london?restref=291477&lang=en-GB",
+  "bookingPhone": "+44 20 7319 5200",
+  "walkIns": "Walk-ins are welcome when there is room, but booking is recommended.",
+  "groups": "A private dining room for 8 to 40 guests and a private lounge for up to 40, or 100 standing with both.",
+  "groupsUrl": "https://www.pavyllonlondon.com/private-dining/",
+  "servicePct": 15,
+  "infoSource": "https://www.pavyllonlondon.com/",
+  "infoChecked": "2026-10-12"
 }

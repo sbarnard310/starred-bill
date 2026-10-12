@@ -11,9 +11,9 @@
   "reviews": 1307,
   "dinner": 155,
   "dinnerType": "menu",
-  "dinnerNote": "Prix fixe, 5 courses",
+  "dinnerNote": "Five-course prix fixe (à la carte in the bar and lounge)",
   "sourceType": "site",
-  "source": "https://www.oijimi.com/faqs",
+  "source": "https://www.oijimi.com/menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.oijimi.com/",
@@ -22,5 +22,37 @@
   "placeId": "ChIJee0VTWZZwokRDYFpAoConlw",
   "michelinId": "1202653",
   "chef": "Brian Kim",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Five-course prix fixe",
+      "meal": "dinner",
+      "price": 155,
+      "courses": 5,
+      "note": "Main dining room; a choice of dishes at most courses. The sea urchin Oiji Bowl adds $35. The bar and lounge also serve à la carte."
+    }
+  ],
+  "menusSource": "https://www.oijimi.com/menu",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2022,
+  "bookingOpens": "Online on OpenTable. Tables in the main dining room and lounge open 30 days ahead, for parties of one to seven.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "tz": "America/New_York",
+    "via": "OpenTable",
+    "source": "https://www.oijimi.com/faqs",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.opentable.com/restaurant/profile/1243369",
+  "bookingPhone": "+1 212-256-1259",
+  "cancellation": "Cancelling less than 24 hours before the booking costs $50 a guest. Tables are held for 15 minutes; call if running late.",
+  "walkIns": "Most bar seats are kept for walk-ins, first come, first served. The bar and lounge serve the à la carte menu as well as the prix fixe.",
+  "groups": "Parties of up to seven can book as normal; larger groups should email info@oijimi.com. The whole restaurant can be hired for up to 60 seated or 125 standing.",
+  "dressCode": "No formal dress code. Guests are asked to dress for a nice night out.",
+  "children": "Children are welcome, but there is no children's menu. The restaurant suggests booking the lounge, where dishes can be ordered à la carte.",
+  "duration": "About two hours: the restaurant allows two hours for each party.",
+  "byob": "Corkage is $75 a 750ml bottle, wine only (no spirits or soju), at most two bottles or one magnum a party, and not for wines on the restaurant's own list. Bringing a cake costs $10 a person.",
+  "infoSource": "https://www.oijimi.com/faqs",
+  "infoChecked": "2026-10-12"
 }

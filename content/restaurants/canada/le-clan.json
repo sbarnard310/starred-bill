@@ -33,5 +33,42 @@
     "vegan"
   ],
   "chef": "Stéphane Modat",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "six-course tasting menu",
+      "meal": "dinner",
+      "price": 119,
+      "wine": 89,
+      "courses": 6,
+      "note": "Le Clan wine pairing $89; alcohol-free pairing $59."
+    },
+    {
+      "name": "four-course tasting menu",
+      "meal": "dinner",
+      "price": 89,
+      "wine": 59,
+      "courses": 4,
+      "note": "Alcohol-free pairing $39."
+    },
+    {
+      "name": "weekday lunch menu (Midi Le Clan)",
+      "meal": "lunch",
+      "price": 59,
+      "note": "Weekdays only."
+    },
+    {
+      "name": "weekend brunch",
+      "meal": "lunch",
+      "price": 39,
+      "note": "Saturday and Sunday; a set spread of Québec dishes for each person."
+    }
+  ],
+  "menusSource": "https://restaurantleclan.com/en/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through Libro, linked from the restaurant's website, or by phone.",
+  "bookingUrl": "https://booking.libroreserve.com/3240fc70c192f3/QC016176289060/seat",
+  "bookingPhone": "+1 418-692-0333",
+  "infoSource": "https://restaurantleclan.com/en/",
+  "infoChecked": "2026-10-12"
 }

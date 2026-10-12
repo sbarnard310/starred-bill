@@ -8,12 +8,12 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.8,
   "reviews": 844,
-  "dinner": 185,
+  "dinner": 225,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €97)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 97 €)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/anne-de-bretagne",
+  "dinnerNote": "Quintessence menu, 7 courses (Alchimie menu from €120)",
+  "dinnerNoteFr": "Menu Quintessence, 7 services (menu Alchimie dès 120 €)",
+  "sourceType": "site",
+  "source": "https://www.annedebretagne.com/d.php?t=quintessence-fr",
   "lunchNote": "Open for lunch",
   "lunchNoteFr": "Ouvert le midi",
   "website": "https://www.annedebretagne.com",
@@ -25,5 +25,59 @@
     "vegetarian"
   ],
   "chef": "Mathieu Guibert",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 115,
+  "menus": [
+    {
+      "name": "Quintessence menu",
+      "meal": "dinner",
+      "price": 225,
+      "wine": 115,
+      "courses": 7,
+      "note": "Wine pairing in 5 glasses €115"
+    },
+    {
+      "name": "Alchimie menu, five courses",
+      "meal": "dinner",
+      "price": 160,
+      "wine": 90,
+      "courses": 5,
+      "note": "Wine pairing in 5 glasses €90"
+    },
+    {
+      "name": "Alchimie menu, four courses",
+      "meal": "dinner",
+      "price": 120,
+      "wine": 70,
+      "courses": 4,
+      "note": "Wine pairing in 4 glasses €70"
+    }
+  ],
+  "menusSource": "https://www.annedebretagne.com/les-menus/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Beau Boucot",
+      "price": 35,
+      "note": "Mathieu Guibert's seafood bistro in Tharon-Plage: a three-course chef's menu for €35, or à la carte, prices including service",
+      "url": "https://www.beauboucot.com/"
+    }
+  ],
+  "priceHistory": [
+    {
+      "date": "2022-08",
+      "price": 170,
+      "wine": 90,
+      "source": "https://web.archive.org/web/20220819222603/https://annedebretagne.com/d.php?t=quintessence-fr"
+    }
+  ],
+  "hotel": "the Maison Anne de Bretagne, a Relais & Châteaux hotel",
+  "bookingOpens": "Online through Zenchef on the restaurant's website, or by phone. Online bookings take up to 10 people.",
+  "bookingUrl": "https://www.annedebretagne.com/reserver-a-la-table/",
+  "bookingPhone": "+33 2 40 21 54 72",
+  "cancellation": "A card guarantee is needed to book online; the restaurant may charge it for a no-show or a late cancellation.",
+  "dressCode": "Smart. The restaurant asks guests to dress elegantly; long trousers and closed shoes are preferred for men.",
+  "children": "Children are welcome, with a children's menu (main course and two desserts €24, or with a starter €30). High chairs are available.",
+  "infoSource": "https://www.annedebretagne.com/faq/",
+  "infoChecked": "2026-10-12"
 }

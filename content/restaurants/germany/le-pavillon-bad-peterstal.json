@@ -9,9 +9,9 @@
   "reviews": 56,
   "dinnerType": "menu",
   "dinner": 240,
-  "dinnerNote": "Tasting menu (other menus from €182)",
-  "sourceType": "press",
-  "source": "https://www.gusto-online.de/le-pavillon.html",
+  "dinnerNote": "Tasting menu, 8 courses (shorter menus from €182)",
+  "sourceType": "site",
+  "source": "https://www.dollenberg.de/de/kulinarik/le-pavillon-sternekueche/",
   "website": "https://www.dollenberg.de",
   "lat": 48.4574092,
   "lng": 8.2507048,
@@ -20,11 +20,54 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 182 €)",
+  "dinnerNoteDe": "Degustationsmenü, 8 Gänge (kürzere Menüs ab 182 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "cuisineDe": "Französisch-klassisch",
   "chef": "Martin Herrmann",
-  "chefSource": "press"
+  "chefSource": "press",
+  "wine": 120,
+  "menus": [
+    {
+      "name": "Tasting menu, eight courses",
+      "meal": "dinner",
+      "price": 240,
+      "wine": 120,
+      "courses": 8,
+      "note": "€360 with the wine pairing"
+    },
+    {
+      "name": "Tasting menu, seven courses",
+      "meal": "dinner",
+      "price": 215,
+      "wine": 110,
+      "courses": 7,
+      "note": "€325 with the wine pairing"
+    },
+    {
+      "name": "Tasting menu, six courses",
+      "meal": "dinner",
+      "price": 195,
+      "wine": 100,
+      "courses": 6,
+      "note": "€295 with the wine pairing"
+    },
+    {
+      "name": "Tasting menu, five courses",
+      "meal": "dinner",
+      "price": 182,
+      "wine": 90,
+      "courses": 5,
+      "note": "€272 with the wine pairing"
+    }
+  ],
+  "menusSource": "https://www.dollenberg.de/de/kulinarik/le-pavillon-sternekueche/",
+  "menusChecked": "2026-10-12",
+  "hotel": "the Hotel Dollenberg, a Relais & Châteaux hotel",
+  "bookingOpens": "Through the hotel's online booking form, by phone or by email (info@dollenberg.de). Open for dinner Thursday to Monday, 6.30pm to 9pm; closed on Tuesdays and Wednesdays.",
+  "bookingUrl": "https://www.dollenberg.de/de/kulinarik/tisch-reservieren/",
+  "bookingPhone": "+49 7806 780",
+  "infoSource": "https://www.dollenberg.de/de/kulinarik/le-pavillon-sternekueche/",
+  "infoChecked": "2026-10-12"
 }

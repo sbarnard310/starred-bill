@@ -10,16 +10,16 @@
   "reviews": 945,
   "dinner": 310,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/la-grenouillere",
+  "dinnerNote": "Dinner menu, written daily (wine pairing of 5 glasses €105)",
+  "dinnerNoteFr": "Menu du soir, écrit chaque jour (forfait vin 5 verres 105 €)",
+  "sourceType": "site",
+  "source": "https://www.lagrenouillere.fr/fr",
   "lunch": 245,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchNoteFr": "Menu déjeuner",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/la-grenouillere",
+  "lunchNote": "Lunch menu, Fri–Sun (Thu, Sat, Sun in July and August)",
+  "lunchNoteFr": "Menu du midi, ven.–dim. (jeu., sam. et dim. en juillet et août)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lagrenouillere.fr/fr",
   "website": "https://www.lagrenouillere.fr",
   "lat": 50.4710226,
   "lng": 1.7544175,
@@ -30,5 +30,44 @@
     "gluten-free"
   ],
   "chef": "Alexandre Gauthier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 105,
+  "lunchWine": 85,
+  "menus": [
+    {
+      "name": "dinner menu",
+      "meal": "dinner",
+      "price": 310,
+      "wine": 105,
+      "note": "Menu written each day; five-glass wine pairing €105"
+    },
+    {
+      "name": "lunch menu",
+      "meal": "lunch",
+      "price": 245,
+      "wine": 85,
+      "note": "Menu written each day; four-glass wine pairing €85"
+    }
+  ],
+  "menusSource": "https://www.lagrenouillere.fr/fr",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Anecdote",
+      "note": "Alexandre Gauthier's restaurant in Montreuil-sur-Mer, cooking from memory",
+      "url": "http://www.anecdote-restaurant.com/"
+    },
+    {
+      "name": "Froggy's Tavern",
+      "note": "His rotisserie in Montreuil-sur-Mer",
+      "url": "http://froggystavern.fr/"
+    }
+  ],
+  "starsSince": 2017,
+  "bookingOpens": "Online through CoverManager from the restaurant's website, or by phone.",
+  "bookingUrl": "https://www.covermanager.com/reserve/module_restaurant/La-Grenouillere/french",
+  "bookingPhone": "+33 3 21 06 07 22",
+  "dressCode": "The house appreciates elegant dress; long trousers and closed shoes are preferred for men.",
+  "infoSource": "https://www.lagrenouillere.fr/fr",
+  "infoChecked": "2026-10-12"
 }

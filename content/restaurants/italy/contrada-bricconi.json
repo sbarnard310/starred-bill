@@ -8,18 +8,18 @@
   "cuisine": "Country cooking",
   "rating": 4.8,
   "reviews": 392,
-  "dinner": 150,
+  "dinner": 165,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu (6 courses for under-30s €95)",
-  "dinnerNoteIt": "Menu degustazione (6 portate per gli under 30 €95)",
-  "sourceType": "press",
-  "source": "https://www.gamberorosso.it/ristoranti/menu-degustazione-ristoranti-stellati-forchette/",
-  "lunch": 150,
+  "dinnerNote": "Tasting menu, 10 courses (6 courses for under-30s €95)",
+  "dinnerNoteIt": "Menu degustazione, 10 portate (6 portate per gli under 30 €95)",
+  "sourceType": "site",
+  "source": "https://contradabricconi.prenota-web.it/prenotazioni/?lang=it",
+  "lunch": 165,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchNoteIt": "Stesso menu a pranzo",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.gamberorosso.it/ristoranti/menu-degustazione-ristoranti-stellati-forchette/",
+  "lunchNote": "Same menu at lunch · Fri–Mon",
+  "lunchNoteIt": "Stesso menu a pranzo · ven–lun",
+  "lunchSourceType": "site",
+  "lunchSource": "https://contradabricconi.prenota-web.it/prenotazioni/?lang=it",
   "website": "https://www.contradabricconi.it/",
   "lat": 45.922027,
   "lng": 9.950369,
@@ -30,5 +30,31 @@
     "gluten-free"
   ],
   "chef": "Michele Lazzarini",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "tasting menu",
+      "meal": "dinner",
+      "price": 165,
+      "courses": 10,
+      "note": "The only menu, lunch or dinner, Friday to Monday; drinks extra; extra dishes can be added"
+    },
+    {
+      "name": "under-30s menu",
+      "meal": "dinner",
+      "price": 95,
+      "courses": 6,
+      "note": "Only for guests under 30; a shorter version of the tasting menu; drinks extra"
+    }
+  ],
+  "menusSource": "https://contradabricconi.prenota-web.it/prenotazioni/?lang=it",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online with the booking request form on the restaurant's website (Prenota-web), or by phone or email (ristorante@contradabricconi.it). Open Friday to Monday for lunch and dinner. A credit card is needed to hold every booking, even with a gift voucher, and the booking is only confirmed once the restaurant's official confirmation email arrives.",
+  "bookingUrl": "https://contradabricconi.prenota-web.it/prenotazioni/?lang=it",
+  "bookingPhone": "+39 351 548 9493",
+  "cancellation": "Free up to 48 hours before the booking. Later cancellations, no-shows and changes not passed on in time are charged the penalty stated in the booking confirmation.",
+  "dressCode": "No dress code, but clothes suited to a mountain farm are advised, and comfortable shoes: the hamlet's paving is not suited to heels.",
+  "children": "Children are welcome; those up to 11 get a simpler menu. The dining room is small, with tables close together. Dogs and other pets are welcome if mentioned in the booking notes.",
+  "infoSource": "https://contradabricconi.prenota-web.it/prenotazioni/?lang=it",
+  "infoChecked": "2026-10-12"
 }

@@ -10,18 +10,18 @@
   "cuisineZh": "創新菜",
   "rating": 4.6,
   "reviews": 1992,
-  "dinner": 295,
+  "dinner": 425,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 6 courses",
-  "dinnerNoteFr": "Menu dégustation, 6 services",
-  "sourceType": "press",
-  "source": "https://www.thefork.com/restaurant/l-oiseau-blanc-r550517",
-  "lunch": 95,
+  "dinnerNote": "The Great Journey tasting menu, 8 courses (seasonal game menu €345)",
+  "dinnerNoteFr": "Menu dégustation The Great Journey, 8 services (menu gibier de saison 345 €)",
+  "sourceType": "site",
+  "source": "https://www.peninsula.com/en/paris/hotel-fine-dining/french-rooftop-loiseau-blanc",
+  "lunch": 125,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu, Mon–Fri",
-  "lunchNoteFr": "Menu déjeuner, lun.–ven.",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.thefork.com/restaurant/l-oiseau-blanc-r550517",
+  "lunchNote": "Seasonal Flight lunch menu, 4 courses, Mon–Fri",
+  "lunchNoteFr": "Menu déjeuner Seasonal Flight, 4 services, lun.–ven.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.peninsula.com/en/paris/hotel-fine-dining/french-rooftop-loiseau-blanc",
   "website": "https://www.peninsula.com/fr/paris/hotel-fine-dining/french-rooftop-loiseau-blanc",
   "lat": 48.8707602,
   "lng": 2.2933134,
@@ -31,5 +31,40 @@
     "vegetarian"
   ],
   "chef": "David Bizet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Great Journey tasting menu",
+      "meal": "dinner",
+      "price": 425,
+      "courses": 8,
+      "note": "Lunch or dinner, for the whole table"
+    },
+    {
+      "name": "Autumn Hunting Notebook game menu",
+      "meal": "dinner",
+      "price": 345,
+      "courses": 6,
+      "note": "Seasonal autumn game menu, ending with the chef's hare à la royale served in two courses"
+    },
+    {
+      "name": "Seasonal Flight lunch menu",
+      "meal": "lunch",
+      "price": 125,
+      "courses": 4,
+      "note": "Weekday lunch only, ordered by 1pm; not at weekends or on public holidays"
+    }
+  ],
+  "menusSource": "https://www.peninsula.com/en/paris/hotel-fine-dining/french-rooftop-loiseau-blanc",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2021,
+  "hotel": "The Peninsula Paris",
+  "bookingOpens": "Online on SevenRooms, by phone or by email (oiseaublancppr@peninsula.com).",
+  "bookingUrl": "https://www.sevenrooms.com/explore/loiseaublanc/reservations/create/search?lang=en",
+  "bookingPhone": "+33 1 58 12 67 30",
+  "cancellation": "A card guarantee is needed for every booking. Cancelling up to 48 hours ahead is free (by email); later cancellations cost €200 per person at lunch and €300 per person at dinner. Special evenings such as Christmas Eve, New Year's Eve and Valentine's Day have their own terms.",
+  "groups": "Tables of five to seven pay a deposit of €100 per person at lunch or €200 per person at dinner, taken off the final bill. The Balcony Table (a private terrace for two) and the Secret Table (a private rooftop setting) can be requested, weather permitting, until the end of October.",
+  "dressCode": "Chic and elegant.",
+  "infoSource": "https://www.peninsula.com/en/paris/loiseau-blanc-terms-and-conditions",
+  "infoChecked": "2026-10-12"
 }

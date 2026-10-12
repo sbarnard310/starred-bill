@@ -9,10 +9,10 @@
   "reviews": 75,
   "dinner": 420,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase, 18–20 courses",
+  "dinnerNote": "Omakase, about 20 courses",
   "wine": 150,
-  "sourceType": "press",
-  "source": "https://www.hot-dinners.com/London-restaurants/Mayfair-Belgravia/sushi-kanesaka",
+  "sourceType": "site",
+  "source": "https://www.dorchestercollection.com/media/20gdkjzm/45-park-lane-sushi-kanesaka-sample-menu.pdf",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.dorchestercollection.com/en/london/45-park-lane/restaurants-bars/sushi-kanesaka/",
@@ -21,5 +21,26 @@
   "placeId": "ChIJz6Z6V5wFdkgRQ9AZGAlIpzU",
   "michelinId": "1210127",
   "chef": "Shinji Kanesaka",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Omakase",
+      "meal": "dinner",
+      "price": 420,
+      "courses": 20,
+      "note": "Tuesday to Saturday, sittings at 6pm and 8.30pm"
+    }
+  ],
+  "menusSource": "https://www.dorchestercollection.com/media/20gdkjzm/45-park-lane-sushi-kanesaka-sample-menu.pdf",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2024,
+  "hotel": "45 Park Lane, a Dorchester Collection hotel",
+  "bookingOpens": "Online through SevenRooms, or by phone or email (reservations@sushikanesakalondon.com).",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/sushikanesaka",
+  "bookingPhone": "+44 20 7319 7466",
+  "dressCode": "No strict rules, but no sportswear or shorts.",
+  "children": "Suitable for guests aged 12 and over; the menu can't be changed for individual needs.",
+  "servicePct": 15,
+  "infoSource": "https://www.dorchestercollection.com/london/45-park-lane/dining/sushi-kanesaka",
+  "infoChecked": "2026-10-12"
 }

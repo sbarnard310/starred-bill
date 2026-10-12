@@ -29,5 +29,20 @@
     "vegetarian"
   ],
   "chef": "Kwok Keung Tung",
-  "chefSource": "press"
+  "chefSource": "press",
+  "bookingOpens": "Online only, through the booking page on the restaurant's own website (thechairmangroup.com). Tables are released a quarter at a time: bookings for January to March 2027 open on 5 November 2026 at 9am Hong Kong time, and October to December 2026 is already full. A few days before the meal the restaurant sends the set menus by email, and the table chooses its dishes in advance; this applies at lunch and dinner.",
+  "bookingWindow": {
+    "type": "announced",
+    "note": "Tables are released one quarter at a time on a date announced on the booking page: January to March 2027 opens on 5 November 2026 at 9am.",
+    "time": "09:00",
+    "tz": "Asia/Hong_Kong",
+    "via": "The Chairman's own booking page",
+    "source": "https://www.thechairmangroup.com/index.php?route=catering/booking",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.thechairmangroup.com/index.php?route=catering/booking",
+  "bookingPhone": "+852 2555 2202",
+  "waitlist": "There is no waiting list: tables freed by cancellations reappear in the online booking system automatically.",
+  "infoSource": "https://www.thechairmangroup.com/index.php?route=catering/booking",
+  "infoChecked": "2026-10-12"
 }

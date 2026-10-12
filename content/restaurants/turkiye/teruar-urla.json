@@ -9,11 +9,11 @@
   "reviews": 600,
   "dinnerType": "menu",
   "dinner": 8700,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Full Expression tasting menu (vegetarian version TRY 7,500)",
   "wine": 5000,
   "sourceType": "site",
   "source": "https://www.teruarurla.com/wp-content/uploads/2026/07/Full_Expression_Tasting.pdf",
-  "lunchNote": "Open for lunch · Sat–Sun",
+  "lunchNote": "Open for lunch · Wed–Sun",
   "website": "https://www.teruarurla.com/",
   "lat": 38.2524197,
   "lng": 26.739059,
@@ -28,8 +28,35 @@
   ],
   "chef": "Osman Serdaroğlu",
   "chefSource": "michelin",
-  "dinnerNoteTr": "Tadım menüsü",
-  "lunchNoteTr": "Öğle yemeği için açık · Cmt–Paz",
+  "dinnerNoteTr": "Full Expression tadım menüsü (vejetaryen versiyonu TRY 7,500)",
+  "lunchNoteTr": "Öğle yemeği için açık · Çar–Paz",
   "cuisineTr": "Akdeniz Mutfağı",
-  "areaTr": "İzmir"
+  "areaTr": "İzmir",
+  "menus": [
+    {
+      "name": "Full Expression tasting menu",
+      "meal": "dinner",
+      "price": 8700,
+      "wine": 5000,
+      "note": "Summer 2026 menu, for the whole table. Wine pairing TRY 5,000, or the 'Funky' pairing TRY 3,500. A 10% service charge is added."
+    },
+    {
+      "name": "Full Expression vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 7500,
+      "wine": 5000,
+      "note": "Wine pairing TRY 5,000, or the 'Funky' pairing TRY 3,500. A 10% service charge is added."
+    }
+  ],
+  "menusSource": "https://www.teruarurla.com/en/restaurant/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2023,
+  "bookingOpens": "By request through the restaurant's Check&Place booking form, or by phone or email (info@teruarurla.com). Open Tuesday 6pm–11pm and Wednesday to Sunday 2pm–5pm and 6pm–11pm; closed on Mondays.",
+  "bookingUrl": "https://checkandplace.com/public/request/teruar-urla/teruar-urla/restaurant",
+  "bookingPhone": "+90 532 659 20 90",
+  "dressCode": "Smart casual. No shorts, flip-flops or tracksuits.",
+  "children": "Tables are for guests aged 15 and over.",
+  "servicePct": 10,
+  "infoSource": "https://www.teruarurla.com/details/",
+  "infoChecked": "2026-10-12"
 }

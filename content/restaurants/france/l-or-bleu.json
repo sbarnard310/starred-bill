@@ -8,19 +8,15 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.8,
   "reviews": 278,
-  "dinner": 280,
+  "dinner": 195,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €79)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 79 €)",
-  "wine": 195,
+  "dinnerNote": "Signature menu, 8 courses (L'Or Bleu menu, 6 courses, €165)",
+  "dinnerNoteFr": "Menu Signature, 8 services (menu L'Or Bleu, 6 services, 165 €)",
+  "wine": 135,
   "sourceType": "site",
-  "source": "https://tiara-miramar-beach-resort.com/restaurants/lor-bleu-1-etoile-michelin/",
-  "lunch": 79,
-  "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchNoteFr": "Menu déjeuner",
-  "lunchSourceType": "site",
-  "lunchSource": "https://tiara-miramar-beach-resort.com/restaurants/le-bistrot-m/",
+  "source": "https://tiara-miramar-beach-resort.com/wp-content/uploads/2026/02/Menu-LOr-Bleu-2026.pdf",
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
   "website": "https://tiara-miramar-beach-resort.com",
   "lat": 43.4853664,
   "lng": 6.9453085,
@@ -32,5 +28,32 @@
     "kosher"
   ],
   "chef": "Alain Montigny",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "noLunch": true,
+  "menus": [
+    {
+      "name": "Signature menu",
+      "meal": "dinner",
+      "price": 195,
+      "wine": 135,
+      "courses": 8,
+      "note": "€330 with the wine pairing"
+    },
+    {
+      "name": "L'Or Bleu menu",
+      "meal": "dinner",
+      "price": 165,
+      "wine": 115,
+      "courses": 6,
+      "note": "€280 with the wine pairing"
+    }
+  ],
+  "menusSource": "https://tiara-miramar-beach-resort.com/wp-content/uploads/2026/02/Menu-LOr-Bleu-2026.pdf",
+  "menusChecked": "2026-10-12",
+  "hotel": "the Tiara Miramar Beach Resort",
+  "bookingOpens": "Online through TheFork on the resort's website, by phone or by email (ncetm.lorbleu-restaurant@ihg.com). Open for dinner only, Tuesday to Saturday, 7pm to 9.30pm.",
+  "bookingUrl": "https://widget.thefork.com/fr/c9f1fef4-00f2-4317-a4b0-40400ba65854",
+  "bookingPhone": "+33 4 92 28 60 30",
+  "infoSource": "https://tiara-miramar-beach-resort.com/restaurants/lor-bleu-1-etoile-michelin/",
+  "infoChecked": "2026-10-12"
 }

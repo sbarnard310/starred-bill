@@ -10,16 +10,16 @@
   "reviews": 1778,
   "dinner": 160,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €95)",
+  "dinnerNote": "La Grande Migration menu, 7 courses (other menus from €95)",
   "wine": 85,
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 95 €)",
+  "dinnerNoteFr": "Menu La Grande Migration, 7 temps (autres menus dès 95 €)",
   "sourceType": "site",
   "source": "https://mareauxoiseaux.fr/media/original/630618836a58a/menus-mare-aux-oiseaux-restaurant-eric-guerin.pdf",
   "lunch": 160,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
+  "lunchNote": "Same menu at lunch · Thu–Sun",
   "lunchWine": 85,
-  "lunchNoteFr": "Même menu le midi",
+  "lunchNoteFr": "Même menu le midi · jeu.–dim.",
   "lunchSourceType": "site",
   "lunchSource": "https://mareauxoiseaux.fr/media/original/630618836a58a/menus-mare-aux-oiseaux-restaurant-eric-guerin.pdf",
   "website": "https://mareauxoiseaux.fr",
@@ -31,5 +31,41 @@
     "vegetarian"
   ],
   "chef": "Éric Guérin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "La Grande Migration menu",
+      "meal": "dinner",
+      "price": 160,
+      "wine": 85,
+      "courses": 7,
+      "note": "Lunch or dinner; with the 6-glass wine pairing €245 in all, or €235 with the alcohol-free pairing. Arrive by 12.45pm at lunch or 8.15pm at dinner"
+    },
+    {
+      "name": "L'Envol menu",
+      "meal": "dinner",
+      "price": 125,
+      "wine": 68,
+      "courses": 5,
+      "note": "Lunch or dinner; with the 5-glass wine pairing €193 in all, or €183 with the alcohol-free pairing"
+    },
+    {
+      "name": "Le Reposoir menu",
+      "meal": "dinner",
+      "price": 95,
+      "wine": 52,
+      "courses": 4,
+      "note": "Lunch or dinner, with a choice of fish or meat; with the 4-glass wine pairing €147 in all, or €137 with the alcohol-free pairing"
+    }
+  ],
+  "menusSource": "https://mareauxoiseaux.fr/media/original/630618836a58a/menus-mare-aux-oiseaux-restaurant-eric-guerin.pdf",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through Guestonline on the restaurant's website, by phone or by email (accueil@mareauxoiseaux.fr).",
+  "bookingUrl": "https://ib.guestonline.fr/instabook/bookings/351BaiW",
+  "bookingPhone": "+33 2 40 88 53 01",
+  "dressCode": "No set dress code; the restaurant asks guests to dress to suit the setting.",
+  "children": "Children up to 12 have their own menu, Découverte Gustative, at €37.",
+  "duration": "For the seven-course Grande Migration menu, the restaurant asks guests to arrive by 12.45pm at lunch or 8.15pm at dinner.",
+  "infoSource": "https://mareauxoiseaux.fr/fr/restaurant-eric-guerin.html",
+  "infoChecked": "2026-10-12"
 }

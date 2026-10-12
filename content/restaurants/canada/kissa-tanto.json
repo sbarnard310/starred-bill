@@ -26,6 +26,17 @@
   ],
   "chef": "Joël Watanabe",
   "chefSource": "press",
+  "menus": [
+    {
+      "name": "Omakase menu",
+      "meal": "dinner",
+      "price": 175,
+      "note": "Booked as an omakase table (2 to 6 guests) or at the bar (1 or 2); premium menus at $250 and $350, and one with no set price, use more luxury ingredients. The rest of the dining room orders à la carte."
+    }
+  ],
+  "menusSource": "https://www.exploretock.com/kissa-tanto",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on Tock, for parties of up to six. Tables open 30 days ahead at midnight Vancouver time.",
   "bookingWindow": {
     "type": "rolling",
     "days": 30,
@@ -34,5 +45,12 @@
     "via": "Tock",
     "source": "https://www.kissatanto.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://www.exploretock.com/kissa-tanto",
+  "bookingPhone": "+1 778 379 8078",
+  "cancellation": "Tock holds a card for each guest: $50 for the dining room and bar, $75 for the omakase. Dining room and bar bookings can be changed or cancelled up to a day ahead, omakase tables up to three days ahead; the bar omakase is non-refundable. Changes are made on Tock.",
+  "groups": "The dining room has one large table, for up to six guests. Groups of five or six are served the omakase.",
+  "byob": "Guests may bring their own wine: corkage is $75 a bottle, at most two 750ml bottles per booking.",
+  "infoSource": "https://www.kissatanto.com/",
+  "infoChecked": "2026-10-12"
 }

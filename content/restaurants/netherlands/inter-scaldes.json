@@ -9,10 +9,10 @@
   "reviews": 379,
   "dinnerType": "menu",
   "dinner": 265,
-  "dinnerNote": "Tasting menu (other menus from €225)",
-  "wine": 58.5,
-  "sourceType": "press",
-  "source": "https://www.feinschmecker.de/restaurant/nl/na-kruiningen/inter-scaldes-92",
+  "dinnerNote": "Hoogtij menu, 12 servings (Springtij menu €385)",
+  "wine": 117,
+  "sourceType": "site",
+  "source": "https://www.interscaldes.nl/menu#menu",
   "website": "https://www.interscaldes.nl",
   "lat": 51.4571608,
   "lng": 4.0241076,
@@ -23,10 +23,50 @@
     "vegan",
     "gluten-free"
   ],
-  "chef": "Jannis Brevet",
-  "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 225)",
-  "lunchNote": "Open for lunch · Fri–Sun",
-  "lunchNoteNl": "Open voor lunch · vr–zo",
-  "cuisineNl": "Moderne keuken"
+  "chef": "Jeroen Achtien",
+  "chefSource": "site",
+  "dinnerNoteNl": "Hoogtij-menu, 12 impressies (Springtij-menu € 385)",
+  "lunchNote": "Laagtij lunch menu, 6 servings · Fri–Sun",
+  "lunchNoteNl": "Laagtij-lunchmenu, 6 impressies · vr–zo",
+  "cuisineNl": "Moderne keuken",
+  "lunch": 135,
+  "lunchType": "menu",
+  "lunchWine": 58.5,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.interscaldes.nl/menu#menu",
+  "menus": [
+    {
+      "name": "Hoogtij menu",
+      "meal": "dinner",
+      "price": 265,
+      "wine": 117,
+      "courses": 12,
+      "note": "Prestige wine pairing €270"
+    },
+    {
+      "name": "Springtij menu",
+      "meal": "dinner",
+      "price": 385,
+      "wine": 170,
+      "courses": 18,
+      "note": "Includes two caviar dishes; pairing of 11 tasting pours, or €375 for the prestige pairing"
+    },
+    {
+      "name": "Laagtij lunch menu",
+      "meal": "lunch",
+      "price": 135,
+      "wine": 58.5,
+      "courses": 6,
+      "note": "Lunch Friday to Sunday; prestige pairing €135"
+    }
+  ],
+  "menusSource": "https://www.interscaldes.nl/menu#menu",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2025,
+  "hotel": "Pillows Luxury Boutique Hotel Inter Scaldes",
+  "bookingOpens": "Online through Guestplan on the restaurant's website, or by phone or email (info@interscaldes.nl). Hotel suites can only be booked together with a restaurant reservation.",
+  "bookingUrl": "https://www.interscaldes.nl",
+  "bookingPhone": "+31 113 381 753",
+  "infoSource": "https://www.interscaldes.nl",
+  "infoChecked": "2026-10-12"
 }

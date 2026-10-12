@@ -9,20 +9,41 @@
   "reviews": 3228,
   "dinner": 30,
   "dinnerType": "main",
-  "dinnerNote": "À la carte, mains about £26–£35",
+  "dinnerNote": "À la carte, mains £26–£34",
   "noPairing": true,
-  "sourceType": "press",
-  "source": "https://www.squaremeal.co.uk/restaurants/st-john-smithfield_401",
+  "sourceType": "site",
+  "source": "https://stjohnrestaurant.com/a/menus/4",
   "lunch": 30,
   "lunchType": "main",
-  "lunchNote": "Same à la carte menu at lunch",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.squaremeal.co.uk/restaurants/st-john-smithfield_401",
+  "lunchNote": "Same daily à la carte at lunch, mains £25–£36",
+  "lunchSourceType": "site",
+  "lunchSource": "https://stjohnrestaurant.com/a/menus/1",
   "website": "https://stjohnrestaurant.com/",
   "lat": 51.520489,
   "lng": -0.1014108,
   "placeId": "ChIJFzO5YVEbdkgR1zdv5_hzZwg",
   "michelinId": "123706",
   "chef": "Fergus Henderson",
-  "chefSource": "press"
+  "chefSource": "press",
+  "alsoTry": [
+    {
+      "name": "St. JOHN Marylebone",
+      "note": "Sister restaurant on Marylebone Lane with a daily menu in the same style",
+      "url": "https://stjohnrestaurant.com/a/restaurants/marylebone"
+    },
+    {
+      "name": "St. JOHN Bread and Wine",
+      "note": "Sister restaurant on Commercial Street, Spitalfields",
+      "url": "https://stjohnrestaurant.com/a/restaurants/bread-and-wine"
+    }
+  ],
+  "starsSince": 2009,
+  "bookingOpens": "Online through OpenTable on the restaurant's website, or by phone.",
+  "bookingUrl": "https://stjohnrestaurant.com/a/restaurants/smithfield",
+  "bookingPhone": "+44 20 7251 0848",
+  "groups": "The private dining room seats up to 16 at lunch and dinner. Group bookings for up to 32, and exclusive hire for up to 110 seated, through jane@stjohnrestaurant.com.",
+  "groupsUrl": "https://stjohnrestaurant.com/pages/private-events",
+  "byob": "Corkage £32 a bottle, £42 for sparkling or dessert wine, £64 a magnum and £84 a magnum of Champagne.",
+  "infoSource": "https://stjohnrestaurant.com/a/restaurants/smithfield",
+  "infoChecked": "2026-10-12"
 }

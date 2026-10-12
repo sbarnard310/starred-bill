@@ -8,12 +8,12 @@
   "cuisineZh": "時尚菜",
   "rating": 4.5,
   "reviews": 1570,
-  "dinner": 150,
+  "dinner": 200,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, from",
-  "dinnerNoteZh": "品嚐套餐起",
-  "sourceType": "press",
-  "source": "https://www.opentable.com/r/stubborn-seed-miami-beach",
+  "dinnerNote": "Nine-course tasting menu (six-course menu $150)",
+  "dinnerNoteZh": "九道菜品嚐套餐（六道菜套餐150美元）",
+  "sourceType": "site",
+  "source": "https://www.stubbornseed.com/menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://stubbornseed.com/",
@@ -22,5 +22,43 @@
   "placeId": "ChIJkwRTevG02YgRQqy7_cHUWGQ",
   "michelinId": "1194423",
   "chef": "Jeremy Ford",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 120,
+  "menus": [
+    {
+      "name": "Nine-course tasting menu",
+      "meal": "dinner",
+      "price": 200,
+      "wine": 120,
+      "courses": 9,
+      "note": "Changes with the seasons; black truffles ($40) and caviar ($45 or $90) can be added."
+    },
+    {
+      "name": "Six-course tasting menu",
+      "meal": "dinner",
+      "price": 150,
+      "wine": 80,
+      "courses": 6,
+      "note": "An 'elevated experience' upgrade costs $50 more."
+    }
+  ],
+  "menusSource": "https://www.stubbornseed.com/menu",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "The bar",
+      "note": "Serves an à la carte menu (dishes about $17–$31, fish $75) as well as the tasting menus.",
+      "url": "https://www.stubbornseed.com/menu"
+    }
+  ],
+  "starsSince": 2022,
+  "bookingOpens": "Online through SevenRooms, from the restaurant's website. Bookings are strongly encouraged.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/stubbornseed/reservations/create/search/",
+  "bookingPhone": "+1 786 322 5211",
+  "cancellation": "Cancelling within 24 hours of the booking costs $50 a person, or $100 a person on holidays and special occasions.",
+  "groups": "A 20% gratuity is added for parties of six or more. The whole restaurant can be booked for up to 65 seated or 100 standing guests.",
+  "groupsUrl": "https://www.stubbornseed.com/private-events",
+  "dressCode": "Smart casual, strictly enforced.",
+  "infoSource": "https://www.stubbornseed.com/menu",
+  "infoChecked": "2026-10-12"
 }

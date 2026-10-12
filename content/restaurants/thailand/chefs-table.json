@@ -10,10 +10,10 @@
   "reviews": 223,
   "dinner": 9200,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, plus service and VAT (++)",
-  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
-  "sourceType": "press",
-  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "dinnerNote": "Signature Menu, 7 courses, plus service and VAT (++) (Creation Menu THB 6,800)",
+  "dinnerNoteTh": "เมนู Signature 7 คอร์ส ยังไม่รวมค่าบริการและภาษี (++) (เมนู Creation 6,800 บาท)",
+  "sourceType": "site",
+  "source": "https://lebua.com/restaurants/chefs-table/chefs-tasting-menu/",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTh": "เฉพาะมื้อค่ำ",
@@ -28,5 +28,38 @@
     "gluten-free"
   ],
   "chef": "Vincent Thierry",
-  "chefSource": "press"
+  "chefSource": "press",
+  "wine": 8800,
+  "menus": [
+    {
+      "name": "Signature Menu",
+      "meal": "dinner",
+      "price": 9200,
+      "wine": 8800,
+      "courses": 7,
+      "note": "Seven-glass wine pairing THB 8,800, or a non-alcoholic pairing THB 3,500. Prices plus 10% service and 7% VAT."
+    },
+    {
+      "name": "Creation Menu",
+      "meal": "dinner",
+      "price": 6800,
+      "courses": 5,
+      "note": "Shorter menu; cheese course THB 1,850 extra. Prices plus 10% service and 7% VAT."
+    }
+  ],
+  "menusSource": "https://lebua.com/restaurants/chefs-table/chefs-tasting-menu/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2020,
+  "hotel": "Tower Club at lebua, on the 61st floor of State Tower",
+  "bookingOpens": "Online through TableCheck for parties of up to six, or by phone, WhatsApp or Line. A deposit of THB 3,000 secures each booking and comes off the final bill; the booking isn't confirmed until it's paid. Dinner is served Tuesday to Sunday from 5:30pm, with the last booking at 9:30pm.",
+  "bookingUrl": "https://www.tablecheck.com/en/lebua-hotels-and-resorts-chefs-table/reserve/landing",
+  "bookingPhone": "+66 2 624 9555",
+  "cancellation": "Bookings can be changed or cancelled free of charge up to 72 hours ahead. Later cancellations, changes and no-shows lose the THB 3,000 deposit. Special event nights (Christmas, New Year's Eve, Valentine's Day, wine dinners) need a 100% non-refundable deposit.",
+  "waitlist": "When a time is full, TableCheck offers a waiting list and the restaurant gets in touch if a table frees up.",
+  "groups": "Parties of more than five book through the dining reservations team (dome@lebua.com) and pay a 100% non-refundable deposit in advance.",
+  "dressCode": "Smart elegant. Men need a collared shirt and long trousers (long jeans are fine with covered shoes); no T-shirts, sleeveless tops, shorts, caps, sportswear, swimwear or flip-flops. Women may wear tailored shorts and dress sandals.",
+  "children": "Children aged 7 and over are welcome with an adult, and the dress code applies to them too.",
+  "byob": "Corkage is THB 2,500 plus service and VAT for a 750ml bottle (THB 5,000 for a magnum); outside wine isn't allowed on special event nights.",
+  "infoSource": "https://lebua.com/restaurants/chefs-table/",
+  "infoChecked": "2026-10-12"
 }

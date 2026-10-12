@@ -10,9 +10,9 @@
   "dinnerType": "menu",
   "dinner": 990,
   "dinnerNote": "Tasting menu (other menus from PLN 940)",
-  "wine": 490,
+  "wine": 540,
   "sourceType": "site",
-  "source": "https://1881.com.pl/nasze-menu/",
+  "source": "https://1881.com.pl/en/our-menu/",
   "website": "https://www.1881.com.pl/",
   "lat": 50.0486603,
   "lng": 19.9460552,
@@ -26,5 +26,32 @@
   "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 940)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePl": "Tylko kolacje"
+  "lunchNotePl": "Tylko kolacje",
+  "menus": [
+    {
+      "name": "Full experience tasting menu",
+      "meal": "dinner",
+      "price": 990,
+      "wine": 540,
+      "note": "Wine pairings at PLN 540, 750 or 1,300, or the sommelier's selection at PLN 3,000; non-alcoholic pairing PLN 350. The whole table orders the same menu."
+    },
+    {
+      "name": "Introduction tasting menu",
+      "meal": "dinner",
+      "price": 940,
+      "wine": 490,
+      "note": "A slightly shorter menu. Wine pairings at PLN 490, 700 or 1,150, or PLN 2,500; non-alcoholic pairing PLN 270–300."
+    }
+  ],
+  "menusSource": "https://1881.com.pl/en/our-menu/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2023,
+  "bookingOpens": "Online through DinnerBooking, linked from the restaurant's website, or by phone or email (biuro@1881.com.pl). Booking means ordering a tasting menu; there is no à la carte.",
+  "bookingUrl": "https://book.dinnerbooking.com/pl/en-US/book/index/3203/2",
+  "bookingPhone": "+48 660 661 756",
+  "cancellation": "An email 48 hours before the booking asks guests to reconfirm by clicking its link; unconfirmed tables are not guaranteed and may be cancelled. Tables are held for 15 minutes after the booking time.",
+  "children": "Children aged 12 and over are welcome. There is no children's menu, and no high chairs or booster seats.",
+  "servicePct": 12.5,
+  "infoSource": "https://1881.com.pl/en/contact/",
+  "infoChecked": "2026-10-12"
 }

@@ -14,9 +14,9 @@
   "source": "https://lympstonemanor.co.uk/",
   "lunch": 75,
   "lunchType": "menu",
-  "lunchNote": "Set lunch, from",
+  "lunchNote": "Three-course lunch menu (four courses £88; autumn weekday offer £48 until 27 November)",
   "lunchSourceType": "site",
-  "lunchSource": "https://lympstonemanor.co.uk/",
+  "lunchSource": "https://lympstonemanor.co.uk/dine/menus/lunch-menu/",
   "website": "https://lympstonemanor.co.uk/",
   "lat": 50.640284,
   "lng": -3.418128,
@@ -29,5 +29,64 @@
     "gluten-free"
   ],
   "chef": "Michael Caines",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Signature Tasting Menu",
+      "meal": "dinner",
+      "price": 265,
+      "courses": 8,
+      "note": "Lunch or dinner, for the whole table. Two sommelier-chosen wine pairings on request (no price published). Vegetarian and vegan versions."
+    },
+    {
+      "name": "Taste of the Estuary seafood tasting menu",
+      "meal": "dinner",
+      "price": 250,
+      "courses": 7,
+      "note": "Dinner only, for the whole table."
+    },
+    {
+      "name": "Four-course à la carte menu",
+      "meal": "dinner",
+      "price": 215,
+      "courses": 4,
+      "note": "Dinner only."
+    },
+    {
+      "name": "Early Dine menu",
+      "meal": "dinner",
+      "price": 115,
+      "courses": 4,
+      "note": "Pre-booked for 6:30pm or 6:45pm only, Sunday to Wednesday in June to August and Sunday to Thursday in September to December, for non-residents."
+    },
+    {
+      "name": "Three-course lunch menu",
+      "meal": "lunch",
+      "price": 75,
+      "courses": 3,
+      "note": "Four courses £88. Coffee and petit fours £10 extra. From 1 October to 27 November 2026, Monday to Friday, £48 for three courses or £58 for four."
+    }
+  ],
+  "menusSource": "https://lympstonemanor.co.uk/dine/menus/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "The Pool House Restaurant & Bar",
+      "price": 36.5,
+      "note": "The estate's casual restaurant, open for lunch and dinner; Sunday lunch £36.50 for two courses or £46.50 for three.",
+      "url": "https://lympstonemanor.co.uk/poolhouserestaurant-menu/"
+    }
+  ],
+  "starsSince": 2017,
+  "hotel": "Lympstone Manor, Michael Caines's country house hotel on the Exe estuary",
+  "bookingOpens": "Online through SevenRooms, or with the reservations team by phone or email. Lunch is served from 12pm (last tables 2pm Monday to Thursday, 2:30pm Friday to Sunday) and dinner from 7pm (last tables 9pm, or 9:30pm Friday to Sunday).",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/lympstonemanor",
+  "bookingPhone": "+44 1395 200920",
+  "groups": "Two dining rooms can be hired privately: Mamhead seats up to 18 (14 at one boardroom table) and Berryhead up to 46. Groups choose from the set lunch, the à la carte or the signature tasting menu.",
+  "groupsUrl": "https://lympstonemanor.co.uk/dine/private-dining/",
+  "dressCode": "Smart casual; no sportswear. In the evening men may like to wear a collared shirt, and smart jeans are fine.",
+  "children": "Children aged five and over are welcome in the Michelin-starred restaurant, with a children's menu alongside the adults' menu. Younger children can have a light supper from 5pm to 6:30pm in the lounge, bar or terrace, or eat at the Pool House.",
+  "servicePct": 15,
+  "infoSource": "https://lympstonemanor.co.uk/lympstone-manor-faqs/",
+  "infoChecked": "2026-10-12"
 }

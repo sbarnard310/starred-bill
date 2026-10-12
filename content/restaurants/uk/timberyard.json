@@ -7,17 +7,17 @@
   "cuisine": "Modern British",
   "rating": 4.6,
   "reviews": 941,
-  "dinner": 135,
+  "dinner": 165,
   "dinnerType": "menu",
-  "dinnerNote": "Four-course menu",
-  "wine": 105,
+  "dinnerNote": "Tasting menu (four-course menu £135)",
+  "wine": 130,
   "sourceType": "site",
-  "source": "https://www.timberyard.co/",
+  "source": "https://www.timberyard.co/wp-content/uploads/2026/10/260930-TASTING.pdf",
   "lunch": 55,
   "lunchType": "menu",
-  "lunchNote": "Set lunch",
+  "lunchNote": "Set lunch, Friday to Sunday (three-course lunch £80)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.timberyard.co/",
+  "lunchSource": "https://www.timberyard.co/wp-content/uploads/2026/10/260927-SET-LUNCH.pdf",
   "website": "https://www.timberyard.co/",
   "lat": 55.946531,
   "lng": -3.2021,
@@ -30,5 +30,60 @@
     "gluten-free"
   ],
   "chef": "Bartholomew Stratfold",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 165,
+      "wine": 130,
+      "courses": 7,
+      "note": "Lunch or dinner. Paired soft drinks £80, Old & Rare pairing £240. Vegetarian, vegan and pescatarian versions available."
+    },
+    {
+      "name": "Four-course menu",
+      "meal": "dinner",
+      "price": 135,
+      "wine": 105,
+      "courses": 4,
+      "note": "Paired soft drinks £65, Old & Rare pairing £195."
+    },
+    {
+      "name": "Three-course lunch",
+      "meal": "lunch",
+      "price": 80,
+      "courses": 3,
+      "note": "Friday to Sunday."
+    },
+    {
+      "name": "Set lunch",
+      "meal": "lunch",
+      "price": 55,
+      "courses": 3,
+      "note": "Friday to Sunday."
+    }
+  ],
+  "menusSource": "https://www.timberyard.co/sample-menus",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Montrose",
+      "price": 25,
+      "note": "Its sister restaurant in the East End, run by a team trained at Timberyard in the same style: a three-course set lunch on Fridays, Saturdays and Sundays, à la carte and a tasting menu at other times.",
+      "url": "https://www.montroserestaurant.co/"
+    }
+  ],
+  "starsSince": 2023,
+  "bookingOpens": "Online through SevenRooms. Same-day bookings by phone or email.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/timberyard/reservations/create/search/",
+  "bookingPhone": "+44 131 221 1222",
+  "cancellation": "A card is needed to hold every booking. Cancelling less than 48 hours ahead costs £85 a person at lunch and £100 a person at dinner. The private dining room needs 72 hours' notice, or the agreed minimum spend is charged. Tables are not guaranteed more than 15 minutes after the booking time.",
+  "walkIns": "Besides tables there are tall bar seats for one or two, serving the same menus. No bookings for drinks only. In summer some courtyard tables can't be booked and depend on the weather.",
+  "waitlist": "When a date is full, choose \"alert me\" on the booking page to be told if a table comes free.",
+  "groups": "Tables for up to 16 guests; groups of 10 or more have a reduced-choice menu. The Shed, the private dining room, seats up to 10. The whole restaurant can be hired for 20 to 75 seated or up to 150 standing.",
+  "dressCode": "No dress code.",
+  "children": "Children over 6 are welcome at lunch, but not at dinner. There is no children's menu, though some dishes can be simplified.",
+  "duration": "Up to three hours for the tasting menus.",
+  "infoSource": "https://www.timberyard.co/faq",
+  "infoChecked": "2026-10-12"
 }

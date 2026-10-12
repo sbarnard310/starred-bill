@@ -8,9 +8,9 @@
   "reviews": 1190,
   "dinnerType": "menu",
   "dinner": 6000,
-  "dinnerNote": "Tasting menu",
-  "sourceType": "press",
-  "source": "https://mesprestiges.com/en/istanbul/places/casa-lavanda/menu",
+  "dinnerNote": "Tasting menu for the whole table; à la carte also served",
+  "sourceType": "site",
+  "source": "https://www.casalavanda.com.tr/restorantmenu",
   "website": "https://www.casalavanda.com.tr/",
   "lat": 41.0871196,
   "lng": 29.5117319,
@@ -24,8 +24,36 @@
   ],
   "chef": "Emre Şen",
   "chefSource": "michelin",
-  "dinnerNoteTr": "Tadım menüsü",
+  "dinnerNoteTr": "Tadım menüsü, masadaki tüm misafirlere servis edilir; alakart menü de mevcut",
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteTr": "Öğle yemeği için açık · Per–Paz",
-  "cuisineTr": "Geleneksel Mutfak"
+  "cuisineTr": "Geleneksel Mutfak",
+  "wine": 4500,
+  "menus": [
+    {
+      "name": "Tadım Menüsü (tasting menu)",
+      "meal": "dinner",
+      "price": 6000,
+      "wine": 4500,
+      "courses": 7,
+      "note": "Snacks from the garden, then seven courses; served only when the whole table orders it. Eight-glass wine pairing TRY 4,500. VAT included."
+    }
+  ],
+  "menusSource": "https://www.casalavanda.com.tr/restorantmenu",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Lavanta Lounge Bar",
+      "note": "The hotel's bar, overlooking the garden, serves a snack menu and cocktails from 11:30am to 11pm.",
+      "url": "https://www.casalavanda.com.tr/yeme-and-icme"
+    }
+  ],
+  "starsSince": 2024,
+  "hotel": "Casa Lavanda, a 16-room boutique hotel in the village of Ulupelit near Şile",
+  "bookingOpens": "Online through the restaurant's Check&Place booking page, or by phone.",
+  "bookingUrl": "https://www.checkandplace.com/public/online-booking/casalavanda/casalavanda/restaurant",
+  "bookingPhone": "+90 216 736 56 40, 8:30am to midnight",
+  "children": "Children are welcome only at Sunday lunch, brunch and special events, between 1pm and 5pm in spring and summer; hotel guests must be 12 or over.",
+  "infoSource": "https://www.casalavanda.com.tr/",
+  "infoChecked": "2026-10-12"
 }

@@ -25,5 +25,32 @@
   "chef": "Jordy Navarra",
   "chefSource": "press",
   "dinner": 6500,
-  "source": "https://www.tablecheck.com/en/toyoeatery/reserve/landing"
+  "source": "https://www.tablecheck.com/en/toyoeatery/reserve/landing",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 6500,
+      "courses": 8,
+      "note": "Indoor dining area with a full view of the kitchen; plus 10% service charge; the menu is set each day"
+    }
+  ],
+  "menusSource": "https://www.tablecheck.com/en/toyoeatery/reserve/landing",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on TableCheck only. Each week's tables (Tuesday to Saturday) are released on a Thursday at 3pm Manila time, about three weeks ahead; for example, 20–24 October opened on 1 October. The restaurant doesn't take bookings further ahead by email or phone.",
+  "bookingWindow": {
+    "type": "announced",
+    "note": "Each week's tables are released on the Thursday about three weeks before, at 3pm Manila time; the schedule is posted on the TableCheck booking page.",
+    "time": "15:00",
+    "tz": "Asia/Manila",
+    "via": "TableCheck",
+    "source": "https://www.tablecheck.com/en/toyoeatery/reserve/message",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.tablecheck.com/en/toyoeatery/reserve/landing",
+  "bookingPhone": "+63 917 720 8630, text messages only",
+  "cancellation": "A deposit is taken. It is refunded in full for cancellations at least 48 hours ahead; changes to party size or date need 24 hours' notice for the deposit to be credited. No refund for guests dropped or changes on the day.",
+  "groups": "Parties of 15 or more: email reservations@toyoeatery.com or text +63 917 720 8630.",
+  "infoSource": "https://www.tablecheck.com/en/toyoeatery/reserve/message",
+  "infoChecked": "2026-10-12"
 }

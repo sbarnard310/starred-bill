@@ -10,18 +10,17 @@
   "reviews": 2576,
   "dinner": 160,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €82)",
-  "wine": 45,
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 82 €)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/la-maison-dans-le-parc",
-  "lunch": 160,
+  "dinnerNote": "Grand Voyage menu, 8 courses (other menus from €82)",
+  "wine": 75,
+  "dinnerNoteFr": "Menu Grand Voyage, 8 services (autres menus dès 82 €)",
+  "sourceType": "site",
+  "source": "https://lamaisondansleparc.com/media/original/menuwebgrandvoyage.pdf",
+  "lunch": 60,
   "lunchType": "menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/la-maison-dans-le-parc",
-  "lunchNote": "Same menu at lunch",
-  "lunchWine": 45,
-  "lunchNoteFr": "Même menu le midi",
+  "lunchSourceType": "site",
+  "lunchSource": "https://lamaisondansleparc.com/media/original/635bfe7aafbb7/suggestiondudejeuner.pdf",
+  "lunchNote": "Suggestion du Déjeuner, 3 courses, Wed–Fri (two glasses of wine €15)",
+  "lunchNoteFr": "Suggestion du Déjeuner, 3 services, mer.–ven. (2 verres de vin 15 €)",
   "website": "https://lamaisondansleparc.com/",
   "lat": 48.6941608,
   "lng": 6.1849668,
@@ -32,5 +31,61 @@
     "gluten-free"
   ],
   "chef": "Charles Coulombeau",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Grand Voyage menu",
+      "meal": "dinner",
+      "price": 160,
+      "wine": 75,
+      "courses": 8,
+      "note": "Lunch or dinner; pairing of six glasses €75, or €120 with prestige wines"
+    },
+    {
+      "name": "Menu Dégustation",
+      "meal": "dinner",
+      "price": 110,
+      "wine": 49,
+      "courses": 6,
+      "note": "Lunch or dinner; pairing of four glasses €49, or €85 with prestige wines"
+    },
+    {
+      "name": "Menu du Moment",
+      "meal": "dinner",
+      "price": 82,
+      "courses": 3,
+      "note": "Starter, main and dessert chosen from the menu, lunch or dinner; two glasses €25, or €45 prestige"
+    },
+    {
+      "name": "Suggestion du Déjeuner",
+      "meal": "lunch",
+      "price": 60,
+      "courses": 3,
+      "note": "Set starter, main and dessert, Wednesday to Friday lunch only, not on public holidays; two glasses €15"
+    }
+  ],
+  "menusSource": "https://lamaisondansleparc.com/fr/carte-menu-restaurant-gault-millau-nancy.html",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Brasserie Ume",
+      "note": "The Coulombeaus' other Nancy restaurant, listed on the restaurant's site",
+      "url": "https://brasserie-ume.com/fr/"
+    },
+    {
+      "name": "Izakaya Nancy",
+      "note": "Listed among the owners' other addresses",
+      "url": "https://izakayanancy.com/fr/"
+    },
+    {
+      "name": "Yozora",
+      "note": "Listed among the owners' other addresses",
+      "url": "https://restaurant-yozora.com/fr/"
+    }
+  ],
+  "bookingOpens": "Online through Zenchef from the restaurant's website, by phone or by email (contact@lamaisondansleparc.com).",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=357089",
+  "bookingPhone": "+33 3 83 19 03 57",
+  "infoSource": "https://lamaisondansleparc.com/",
+  "infoChecked": "2026-10-12"
 }

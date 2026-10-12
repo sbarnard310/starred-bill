@@ -9,12 +9,12 @@
   "cuisineZh": "時尚日本菜",
   "rating": 4.3,
   "reviews": 383,
-  "dinner": 400,
+  "dinner": 550,
   "dinnerType": "menu",
-  "dinnerNote": "Degustation menu, 10 courses",
-  "dinnerNoteZh": "品嚐套餐，10 道",
-  "sourceType": "press",
-  "source": "https://thehoneycombers.com/singapore/listing/waku-ghin/",
+  "dinnerNote": "Chef's Table degustation menu (Five at Five menu S$250)",
+  "dinnerNoteZh": "主廚餐桌品嚐套餐（Five at Five 套餐 S$250）",
+  "sourceType": "site",
+  "source": "https://www.marinabaysands.com/restaurants/waku-ghin.html",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZh": "只供應晚餐",
@@ -27,5 +27,38 @@
     "vegetarian"
   ],
   "chef": "Tetsuya Wakuda",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Chef's Table degustation menu",
+      "meal": "dinner",
+      "price": 550,
+      "note": "At the 10-seat Chef's Table, daily at 5pm and 7.30pm. Reservations only."
+    },
+    {
+      "name": "Five at Five Chef's Table menu",
+      "meal": "dinner",
+      "price": 250,
+      "courses": 5,
+      "note": "A shorter Chef's Table menu with Canadian lobster and Omi wagyu, daily 5pm to 7pm from 19 October 2026."
+    },
+    {
+      "name": "Signature Prelude menu",
+      "meal": "lounge",
+      "price": 250,
+      "courses": 5,
+      "note": "In the bar or main dining room, until 18 October 2026, alongside an à la carte menu."
+    }
+  ],
+  "menusSource": "https://www.marinabaysands.com/restaurants/waku-ghin.html",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through Marina Bay Sands' booking page, or by phone. The Chef's Table has two seatings a night, at 5pm and 7.30pm; the bar and main dining room take bookings in 30-minute slots from 5pm to 9.30pm.",
+  "bookingUrl": "https://www.marinabaysands.com/restaurants/waku-ghin/search.html",
+  "bookingPhone": "+65 6688 8507",
+  "walkIns": "The bar serves à la carte dishes and cocktails from 5pm daily; its seasonal fruit cocktails are for walk-ins only.",
+  "groups": "The main dining room takes groups of up to 8; larger groups need to contact the restaurant. A private dining room seats up to 8 for an omakase menu, best booked a month ahead.",
+  "dressCode": "Smart casual. Men are asked to wear collared shirts or smart T-shirts with trousers or tailored shorts and closed-toe shoes. No slippers, flip-flops, singlets, swimwear or gym wear; guests not dressed to the code may be turned away.",
+  "children": "Children under 10 are not allowed in. Older children must come with an adult and follow the dress code. There's no children's menu.",
+  "infoSource": "https://www.marinabaysands.com/restaurants/waku-ghin.html",
+  "infoChecked": "2026-10-12"
 }

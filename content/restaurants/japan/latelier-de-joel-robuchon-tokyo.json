@@ -36,5 +36,57 @@
     "vegetarian",
     "vegan",
     "gluten-free"
-  ]
+  ],
+  "menus": [
+    {
+      "name": "Menu Dégustation (autumn)",
+      "meal": "dinner",
+      "price": 25000,
+      "note": "Seasonal tasting menu; lunch or dinner (lunch by advance booking only); including tax, plus 10% service"
+    },
+    {
+      "name": "Menu Découverte",
+      "meal": "dinner",
+      "price": 30000,
+      "note": "Joël Robuchon's signature dishes, starting with caviar and lobster jelly; lunch or dinner (lunch by advance booking only)"
+    },
+    {
+      "name": "Menu Prix Fixe",
+      "meal": "dinner",
+      "price": 12000,
+      "note": "Choose your own dishes; ¥12,000 or ¥15,500, lunch or dinner"
+    },
+    {
+      "name": "Menu Prix Fixe",
+      "meal": "lunch",
+      "price": 6500,
+      "note": "Lunch only; ¥6,500 or ¥8,000"
+    },
+    {
+      "name": "Vegetarian menu",
+      "meal": "dinner",
+      "price": 12000,
+      "note": "Uses eggs and dairy; book by phone"
+    }
+  ],
+  "menusSource": "https://www.robuchon.jp/shop-list/latelier",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on TableCheck for the counter, up to two months ahead and at least two days before. Tables, and parties of five to seven, by phone. Booking is recommended, but seats are sometimes free on the day.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 2,
+    "tz": "Asia/Tokyo",
+    "via": "TableCheck",
+    "source": "https://www.tablecheck.com/en/shops/robuchon-latelier/reserve",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.tablecheck.com/ja/shops/robuchon-latelier/reserve",
+  "bookingPhone": "+81 3-5772-7500, 11am–9pm",
+  "cancellation": "Same-day cancellations and no-shows pay the full price of the menu booked, or ¥5,000 at lunch and ¥10,000 at dinner for a table booked without a menu. Christmas bookings carry stricter terms (80% from three days before).",
+  "walkIns": "Booking is recommended, but the restaurant can sometimes seat guests on the day; call to ask. Most of the 34 counter seats face the open kitchen; all seats are high chairs.",
+  "groups": "Parties of five or more by phone, up to seven.",
+  "children": "A children's menu (¥2,900) for under-12s; book it by phone.",
+  "servicePct": 10,
+  "infoSource": "https://www.robuchon.jp/shop-list/latelier",
+  "infoChecked": "2026-10-12"
 }

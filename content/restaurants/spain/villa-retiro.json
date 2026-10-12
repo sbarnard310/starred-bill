@@ -10,19 +10,19 @@
   "reviews": 1238,
   "dinner": 160,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (also €75 and €130)",
-  "wine": 70,
+  "dinnerNote": "Más que un Homenaje tasting menu (Homenaje menu €130)",
+  "wine": 90,
   "dinnerNoteZh": "最長的品嚐套餐（另有 €75 及 €130）",
-  "dinnerNoteEs": "El menú degustación más largo (también de 75 € y 130 €)",
+  "dinnerNoteEs": "Menú Más que un Homenaje (menú Homenaje 130 €)",
   "sourceType": "site",
-  "source": "https://hotelvillaretiro.com/",
-  "lunch": 160,
+  "source": "https://hotelvillaretiro.com/menu-mas-que-un-homenaje/",
+  "lunch": 75,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Sun",
+  "lunchNote": "Clásico menu, Sundays only (tasting menus Wed–Sun)",
   "lunchWine": 70,
-  "lunchNoteEs": "El mismo menú al mediodía · mar–dom",
+  "lunchNoteEs": "Menú Clásico, solo domingos (menús degustación mié–dom)",
   "lunchSourceType": "site",
-  "lunchSource": "https://hotelvillaretiro.com/",
+  "lunchSource": "https://hotelvillaretiro.com/menu-clasico/",
   "website": "https://hotelvillaretiro.com/",
   "lat": 40.912312,
   "lng": 0.490225,
@@ -34,5 +34,63 @@
     "gluten-free"
   ],
   "chef": "Fran López",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Más que un Homenaje tasting menu",
+      "meal": "dinner",
+      "price": 160,
+      "wine": 90,
+      "note": "Lunch or dinner; 20th-anniversary menu, for the whole table"
+    },
+    {
+      "name": "Homenaje tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "wine": 70,
+      "note": "Lunch or dinner; 20th-anniversary menu, for the whole table"
+    },
+    {
+      "name": "Clásico menu",
+      "meal": "lunch",
+      "price": 75,
+      "note": "Sundays only; for the whole table; drinks extra"
+    }
+  ],
+  "menusSource": "https://hotelvillaretiro.com/menu-mas-que-un-homenaje/",
+  "menusChecked": "2026-10-12",
+  "priceHistory": [
+    {
+      "date": "2023-01",
+      "price": 125,
+      "wine": 65,
+      "source": "https://web.archive.org/web/20230127144734/https://hotelvillaretiro.com/menu-mas-que-un-homenaje/"
+    },
+    {
+      "date": "2023-10",
+      "price": 138,
+      "wine": 65,
+      "source": "https://web.archive.org/web/20231001111609/https://hotelvillaretiro.com/menu-mas-que-un-homenaje/"
+    },
+    {
+      "date": "2024-06",
+      "price": 148,
+      "wine": 80,
+      "source": "https://web.archive.org/web/20240618205533/https://hotelvillaretiro.com/menu-mas-que-un-homenaje/"
+    },
+    {
+      "date": "2025-10",
+      "price": 155,
+      "wine": 80,
+      "source": "https://web.archive.org/web/20251012231201/https://hotelvillaretiro.com/menu-mas-que-un-homenaje/"
+    }
+  ],
+  "starsSince": 2009,
+  "hotel": "the Hotel Villa Retiro, a five-star boutique hotel in an 1890 villa",
+  "bookingOpens": "By phone or by email to reservas@hotelvillaretiro.com. Open for lunch Wednesday to Sunday and for dinner Wednesday to Saturday.",
+  "bookingPhone": "+34 977 47 38 10",
+  "groups": "Events, weddings and company dinners are arranged through eventos@hotelvillaretiro.com.",
+  "groupsUrl": "https://hotelvillaretiro.com/eventos/",
+  "infoSource": "https://hotelvillaretiro.com/restaurante/",
+  "infoChecked": "2026-10-12"
 }

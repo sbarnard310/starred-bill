@@ -27,5 +27,42 @@
     "vegan"
   ],
   "chef": "Matt Christmas",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Three-course dinner menu",
+      "meal": "dinner",
+      "price": 98.5,
+      "courses": 3,
+      "note": "A choice of dishes at each course; some carry supplements"
+    },
+    {
+      "name": "Three-course set lunch",
+      "meal": "lunch",
+      "price": 68.5,
+      "courses": 3,
+      "note": "Every lunchtime, weekdays, weekends and bank holidays"
+    },
+    {
+      "name": "Brucie Bonus set lunch",
+      "meal": "lunch",
+      "price": 48.5,
+      "courses": 3,
+      "note": "Weekday lunchtimes, not in December; two courses £40.50"
+    }
+  ],
+  "menusSource": "https://www.chezbruce.co.uk/booking/prices/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 1999,
+  "bookingOpens": "Online or by phone; no email bookings. Online booking is for tables of up to six.",
+  "bookingUrl": "https://www.chezbruce.co.uk/booking/online-booking/",
+  "bookingPhone": "+44 20 8672 0114, 10am to 8pm",
+  "cancellation": "Card details are needed to book. Cancel by email more than 24 hours ahead at no charge; later cancellations and no-shows may be charged £50 a head if the table can't be resold.",
+  "groups": "Tables of up to six in the main restaurant. The private dining room takes 10 to 14 guests, with three courses at £85 at lunch and £125 at dinner and a minimum spend.",
+  "groupsUrl": "https://www.chezbruce.co.uk/private-dining/",
+  "children": "No children under 6.",
+  "duration": "Tables are returned after 2 hours 15 minutes unless agreed in advance.",
+  "byob": "Corkage £50 a bottle at dinner and £25 at lunch, one 75cl bottle per person up to four a table; free on Sunday evenings.",
+  "infoSource": "https://www.chezbruce.co.uk/booking/",
+  "infoChecked": "2026-10-12"
 }

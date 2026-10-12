@@ -11,10 +11,10 @@
   "cuisineZh": "粵菜",
   "rating": 4.5,
   "reviews": 378,
-  "dinner": 388,
-  "dinnerType": "main",
-  "dinnerNote": "À la carte; signature dishes about MOP$268–488",
-  "dinnerNoteZh": "單點；招牌菜約澳門幣268至488",
+  "dinner": 1888,
+  "dinnerType": "menu",
+  "dinnerNote": "Wing Lei Degustation Menu (Wing Lei Tasting Menu MOP$888)",
+  "dinnerNoteZh": "永利軒獻瑞套餐（永利軒嘗味菜單澳門幣888）",
   "sourceType": "site",
   "source": "https://owsc.wynnresortsmacau.com/dining/wm-wing-lei-a-la-carte-menu-260910.pdf",
   "lunchNote": "Open for lunch",
@@ -29,5 +29,35 @@
     "vegetarian"
   ],
   "chef": "Chan Tak Kwong",
-  "chefSource": "press"
+  "chefSource": "press",
+  "wine": 800,
+  "menus": [
+    {
+      "name": "Wing Lei Degustation Menu",
+      "meal": "dinner",
+      "price": 1888,
+      "wine": 800,
+      "courses": 6,
+      "note": "Tea pairing MOP$260"
+    },
+    {
+      "name": "Wing Lei Tasting Menu",
+      "meal": "dinner",
+      "price": 888,
+      "wine": 600,
+      "courses": 6
+    }
+  ],
+  "menusSource": "https://owsc.wynnresortsmacau.com/dining/wm-wing-lei-a-la-carte-menu-260910.pdf",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2020,
+  "hotel": "Wynn Macau",
+  "bookingOpens": "Online on the restaurant's page on Wynn's website, by phone, or through the Wynn Insider WeChat mini-program. The restaurant suggests booking several days to weeks ahead, especially for weekends and holidays.",
+  "bookingUrl": "https://www.wynnresortsmacau.com/en/wynn-macau/dining/wing-lei",
+  "bookingPhone": "+853 8986 3663",
+  "groups": "Seven private dining rooms, each for 5 to 10 guests; larger groups by arrangement with the restaurant.",
+  "dressCode": "Elegant casual. No hats or caps; men need full-length trousers and no sleeveless shirts or open-toe shoes.",
+  "children": "Children aged 5 and over are welcome in the main dining room; all ages in the private dining rooms.",
+  "infoSource": "https://www.wynnresortsmacau.com/en/wynn-macau/dining/wing-lei",
+  "infoChecked": "2026-10-12"
 }

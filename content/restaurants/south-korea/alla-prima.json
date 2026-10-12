@@ -15,13 +15,48 @@
   "dinnerNoteKo": "디너 테이스팅 코스",
   "sourceType": "press",
   "source": "https://www.catchtable.net/shop/allaprima",
-  "lunchNote": "Open for lunch · Wed–Mon",
-  "lunchNoteKo": "런치 영업 · 수~월",
+  "lunchNote": "Lunch tasting course · Wed–Mon",
+  "lunchNoteKo": "런치 테이스팅 코스 · 수~월",
   "website": "https://www.allaprima.co.kr/",
   "lat": 37.51346,
   "lng": 127.02602,
   "placeId": "ChIJsdM8l_KjfDURobnSNkInVo8",
   "michelinId": "511826",
   "chef": "Kim Jin-hyuk",
-  "chefSource": "press"
+  "chefSource": "press",
+  "wine": 300000,
+  "lunch": 230000,
+  "lunchType": "menu",
+  "lunchWine": 220000,
+  "lunchSourceType": "press",
+  "lunchSource": "https://app.catchtable.co.kr/ct/shop/allaprima",
+  "menus": [
+    {
+      "name": "Dinner tasting course",
+      "meal": "dinner",
+      "price": 370000,
+      "wine": 300000,
+      "note": "A single set course; contents and price change often. Wine pairing of 8 glasses ₩300,000, 5 glasses ₩230,000 or 3 glasses ₩150,000 (Krug ₩60,000 extra). About 2½ to 3 hours."
+    },
+    {
+      "name": "Lunch tasting course",
+      "meal": "lunch",
+      "price": 230000,
+      "wine": 220000,
+      "note": "Wine pairing of 5 glasses ₩220,000 or 3 glasses ₩130,000. About 1½ to 2 hours."
+    }
+  ],
+  "menusSource": "https://app.catchtable.co.kr/ct/shop/allaprima",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through Catchtable (linked from the restaurant's website) or by phone. Bookings are required. Lunch starts at 12pm (last booking 12:30pm) and dinner at 6pm (last booking 7pm).",
+  "bookingUrl": "https://www.catchtable.net/shop/allaprima",
+  "bookingPhone": "+82 2 511 2555",
+  "cancellation": "Deposits are refunded in full only for cancellations at least three days ahead (two weeks for collaboration events and Christmas). If fewer guests come on the day, a no-show charge for the food may apply. Arriving more than 15 minutes late can count as a no-show.",
+  "groups": "Groups of up to 8 sit in the private room only (6 to 8 guests, no room charge); call for 7 or more. The dining room can be hired for up to 22.",
+  "dressCode": "Smart casual is requested. No slippers or strong perfume.",
+  "children": "No children below middle-school age. There's no children's menu; call ahead about younger guests.",
+  "duration": "About 1½ to 2 hours for lunch and 2½ to 3 hours for dinner.",
+  "byob": "Up to two bottles per table (wine or sake), ₩100,000 corkage a bottle.",
+  "infoSource": "https://www.allaprima.co.kr/",
+  "infoChecked": "2026-10-12"
 }

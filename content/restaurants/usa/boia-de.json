@@ -27,5 +27,27 @@
     "vegan"
   ],
   "chef": "Luciana Giangrandi and Alex Meyer",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "starsSince": 2022,
+  "bookingOpens": "Online on Resy. Tables open at noon each day for dinner 30 days ahead. All availability is on Resy; its Notify list is the best way to catch same-day cancellations.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "time": "12:00",
+    "tz": "America/New_York",
+    "via": "Resy",
+    "source": "https://resy.com/cities/miami-fl/venues/boia-de",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://resy.com/cities/miami-fl/venues/boia-de",
+  "cancellation": "Cancel at least 3 hours before the booking; later cancellations and no-shows are charged $20 a person. Reservations found for sale on third-party sites are cancelled.",
+  "walkIns": "Some seats are kept for walk-ins, along with any cancellations, first come, first served.",
+  "groups": "Indoor tables take parties of four or fewer; larger parties sit on the covered patio. Parties of seven or more are booked through the restaurant's large-party enquiry form.",
+  "groupsUrl": "https://www.boiaderestaurant.com/private-events/",
+  "dressCode": "No dress code.",
+  "children": "No children's menu, but the kitchen can make simple pasta with butter or tomato sauce. Include children in the booking's party size.",
+  "duration": "Tables are usually held for 1½ to 2 hours.",
+  "byob": "Corkage is $45 a bottle, at most two 750ml bottles, and not for wines on the list. For parties of four or fewer, one corkage fee is waived for each bottle bought.",
+  "infoSource": "https://www.boiaderestaurant.com/faq/",
+  "infoChecked": "2026-10-12"
 }

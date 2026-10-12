@@ -12,10 +12,9 @@
   "wine": 100,
   "sourceType": "site",
   "source": "https://www.fordwicharms.co.uk/",
-  "lunch": 110,
+  "lunch": 45,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Sun",
-  "lunchWine": 100,
+  "lunchNote": "Set menu, 3 courses · Tue–Thu, also Fri lunch (tasting menu £110)",
   "lunchSourceType": "site",
   "lunchSource": "https://www.fordwicharms.co.uk/",
   "website": "https://www.fordwicharms.co.uk/",
@@ -31,5 +30,38 @@
   ],
   "chef": "Dan Smith",
   "chefSource": "press",
-  "dinnerNote": "Tasting menu (3 courses à la carte £85)"
+  "dinnerNote": "Tasting menu (3-course à la carte £85, set menu £45 Tue–Thu)",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 110,
+      "wine": 100,
+      "note": "Lunch or dinner; optional lobster course £40 (£12 more with the pairing)"
+    },
+    {
+      "name": "Three-course à la carte",
+      "meal": "dinner",
+      "price": 85,
+      "courses": 3,
+      "note": "Lunch or dinner, for tables of up to five (a shorter à la carte for 6 to 9)"
+    },
+    {
+      "name": "Set menu",
+      "meal": "lunch",
+      "price": 45,
+      "courses": 3,
+      "note": "Tuesday to Thursday lunch and dinner, and Friday lunch; not in December; a matched glass with each course at £8"
+    }
+  ],
+  "menusSource": "https://www.fordwicharms.co.uk/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2018,
+  "bookingOpens": "Online through OpenTable on the pub's website, or by phone or email.",
+  "bookingUrl": "https://www.opentable.co.uk/restref/client?restref=249696",
+  "bookingPhone": "+44 1227 286690",
+  "cancellation": "At least 48 hours' notice is asked for. Bookings cancelled within 48 hours, or missed without notice, are charged £40 per person.",
+  "groups": "The tasting menu is served to any group size; the à la carte is for tables of five or fewer, with a shorter à la carte for 6 to 9 guests. Private dining, events and celebrations by direct enquiry to reservations@fordwicharms.co.uk.",
+  "infoSource": "https://www.fordwicharms.co.uk/",
+  "infoChecked": "2026-10-12"
 }

@@ -12,10 +12,10 @@
   "reviews": 66,
   "dinnerType": "menu",
   "dinner": 180,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Tasting menu, plus 20% service charge",
   "sourceType": "site",
   "source": "https://www.sunmoonstudio.com/menu",
-  "wine": 60,
+  "wine": 125,
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.sunmoonstudio.com/",
@@ -28,5 +28,35 @@
     "vegan"
   ],
   "chef": "Alan Hsu and Sarah Cooper",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 180,
+      "wine": 125,
+      "note": "Thursday to Sunday; a 20% service charge and tax are added; beverage pairing $125, non-alcoholic pairing $60"
+    }
+  ],
+  "menusSource": "https://www.sunmoonstudio.com/info",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online on OpenTable only. Tables are released on a rolling basis six weeks ahead, to the day, at 12pm California time. A card is needed to book.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 42,
+    "time": "12:00",
+    "tz": "America/Los_Angeles",
+    "via": "OpenTable",
+    "source": "https://www.sunmoonstudio.com/reservations",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.opentable.com/r/sun-moon-studio-oakland",
+  "cancellation": "Cancelling three days or fewer before the booking, not turning up, or cutting the party size at any time costs $75 a person. Bookings can't be moved to another date but can be passed to someone else by email. Tables are held for 10 minutes.",
+  "waitlist": "No waiting list of its own: use OpenTable's Notify Me alert for the date.",
+  "groups": "Up to six guests per booking. Seven to 14 guests need a whole-restaurant buyout; email events@sunmoonstudio.com about two months ahead.",
+  "children": "Young children are discouraged unless they can eat the full tasting menu.",
+  "duration": "Two to two and a half hours.",
+  "byob": "Corkage is $40 per 750ml bottle, up to two bottles per party.",
+  "infoSource": "https://www.sunmoonstudio.com/info",
+  "infoChecked": "2026-10-12"
 }

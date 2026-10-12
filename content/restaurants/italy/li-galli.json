@@ -9,7 +9,7 @@
   "reviews": 123,
   "dinnerType": "menu",
   "dinner": 280,
-  "dinnerNote": "Tasting menu (other menus from €180)",
+  "dinnerNote": "Legàmi tasting menu (Nuova Essenza €220; vegetarian Linfa €180)",
   "wine": 250,
   "sourceType": "site",
   "source": "https://www.ligallirestaurant.it/cms-admin/materiale/pagine/file-798-L2/LiGalliFoodITA.pdf",
@@ -27,5 +27,46 @@
     "gluten-free"
   ],
   "chef": "Savio Perna",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteIt": "Menu degustazione Legàmi (Nuova Essenza €220; vegetariano Linfa €180)",
+  "menus": [
+    {
+      "name": "Legàmi tasting menu",
+      "meal": "dinner",
+      "price": 280,
+      "wine": 250,
+      "note": "For the whole table; premium wine pairing €250, Krug pairing €450 or cocktail pairing €150; served until 10pm"
+    },
+    {
+      "name": "Nuova Essenza tasting menu",
+      "meal": "dinner",
+      "price": 220,
+      "note": "For the whole table; same pairings offered"
+    },
+    {
+      "name": "Linfa vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 180,
+      "note": "Vegetable-led; for the whole table"
+    }
+  ],
+  "menusSource": "https://www.ligallirestaurant.it/cms-admin/materiale/pagine/file-798-L1/LiGalliFoodENG.pdf",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "GOLD Sky Bar & Restaurant",
+      "note": "The hotel's rooftop bar and restaurant, with dishes by the same chef, Savio Perna, for lunch and summer evenings",
+      "url": "https://www.ligallirestaurant.it/en/restaurant-positano/gold-sky-lounge-restaurant/"
+    }
+  ],
+  "hotel": "Hotel Villa Franca in Positano",
+  "bookingOpens": "Online on the restaurant's website (the booking form appears after accepting cookies), by phone or by email to ligalli@villafrancahotel.it. Dinner only, every day, 7.30pm to 10.30pm, for seven tables. A card is charged €150 per person when booking; this is the minimum spend and comes off the final bill. Parties of up to 3 must order at least three courses each from the à la carte menu.",
+  "bookingUrl": "https://www.ligallirestaurant.it/en/reserve-a-table-ligallirestaurant/",
+  "bookingPhone": "+39 089 875 655",
+  "cancellation": "Cancellations are accepted only in writing, at least 48 hours ahead; later cancellations and no-shows lose the €150 per person paid when booking. A table may not be kept for guests more than 15 minutes late.",
+  "dressCode": "Smart casual. Men must wear trousers and closed shoes; no flip-flops or sandals.",
+  "children": "Children aged 8 and over are welcome (one part of the booking page says over 10). Pets are not allowed.",
+  "byob": "Outside food and wine are not allowed.",
+  "infoSource": "https://www.ligallirestaurant.it/en/reserve-a-table-ligallirestaurant/",
+  "infoChecked": "2026-10-12"
 }

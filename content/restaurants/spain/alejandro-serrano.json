@@ -26,5 +26,17 @@
     "gluten-free"
   ],
   "chef": "Alejandro Serrano",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "alsoTry": [
+    {
+      "name": "Alex Cool Club",
+      "note": "The chef's casual restaurant in Miranda de Ebro, listed by the MICHELIN Guide, with a daily set menu.",
+      "url": "https://guide.michelin.com/es/es/castilla-y-leon/miranda-de-ebro/restaurante/alex-cool-club"
+    }
+  ],
+  "bookingOpens": "Online through the restaurant's website (TheFork booking widget), by phone, or by email to reservas@serranoalejandro.es.",
+  "bookingUrl": "https://widget.thefork.com/es/a3ff7a9f-24a1-4c0b-84aa-f28f32f9a6db?step=date",
+  "bookingPhone": "+34 947 31 05 18",
+  "infoSource": "https://www.serranoalejandro.es/",
+  "infoChecked": "2026-10-12"
 }

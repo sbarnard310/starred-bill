@@ -23,5 +23,34 @@
   "placeId": "ChIJnWDc3Bh744kRdAPopyBzyVk",
   "michelinId": "1218419",
   "chef": "Wei Fa Chen",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Omakase",
+      "meal": "dinner",
+      "price": 280,
+      "courses": 18,
+      "note": "The only menu; a 7% kitchen fee is added, and drinks, tax and tip are extra"
+    }
+  ],
+  "menusSource": "https://311-boston.resos.com/booking",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through resOS. New tables open at 12pm Boston time on the 15th of each month, with bookings taken up to 75 days ahead.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 15,
+    "ahead": 2,
+    "time": "12:00",
+    "tz": "America/New_York",
+    "via": "resOS",
+    "source": "https://311boston.com/reservations",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://311-boston.resos.com/booking",
+  "bookingPhone": "+1 781-831-0311",
+  "cancellation": "Cancelling less than 48 hours before the booking, or not turning up, costs $150 a person, with no exceptions.",
+  "groups": "Private events are arranged through the enquiry form on the website.",
+  "groupsUrl": "https://311boston.com/events",
+  "infoSource": "https://311boston.com/reservations",
+  "infoChecked": "2026-10-12"
 }

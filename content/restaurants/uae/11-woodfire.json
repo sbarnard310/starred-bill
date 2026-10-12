@@ -25,5 +25,22 @@
   "dinnerNoteAr": "حسب القائمة؛ أطباق رئيسية بين AED 125 و370 (شرائح لحم للمشاركة بين AED 550 و850)؛ شاملة ضريبة القيمة المضافة",
   "lunchNoteAr": "قائمة الغداء",
   "dinner": 240,
-  "source": "https://11woodfire.com/wp-content/uploads/2026/01/MAIN-MENU-11-WOODFIRE-v9-jan.pdf"
+  "source": "https://11woodfire.com/wp-content/uploads/2026/01/MAIN-MENU-11-WOODFIRE-v9-jan.pdf",
+  "menus": [
+    {
+      "name": "Lunch prix fixe menu",
+      "meal": "lunch",
+      "price": 135,
+      "courses": 3,
+      "note": "Two starters and a main, Monday to Friday, 12pm to 4pm. VAT included."
+    }
+  ],
+  "menusSource": "https://11woodfire.com/menu/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2022,
+  "bookingOpens": "Online through SevenRooms, or by phone. Open every day from 12pm to midnight; the lunch prix fixe runs Monday to Friday, 12pm to 4pm.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/11woodfire",
+  "bookingPhone": "+971 4 491 9000",
+  "infoSource": "https://11woodfire.com/",
+  "infoChecked": "2026-10-12"
 }

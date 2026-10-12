@@ -8,12 +8,12 @@
   "cuisine": "Creative",
   "rating": 4.6,
   "reviews": 180,
-  "dinner": 185,
+  "dinner": 270,
   "dinnerType": "menu",
-  "dinnerNote": "I Classici, 6 courses (L'Essenziale, 8 courses, €160)",
-  "dinnerNoteIt": "I Classici, 6 portate (L'Essenziale, 8 portate, €160)",
-  "sourceType": "press",
-  "source": "https://www.ilforchettiere.it/chef-giuseppe-mancino-il-piccolo-ma-grandioso-principe-di-viareggio/",
+  "dinnerNote": "Esperienza tasting menu, 10 courses (I Classici, 8 courses, €220)",
+  "dinnerNoteIt": "Menu Esperienza, 10 portate (I Classici, 8 portate, €220)",
+  "sourceType": "site",
+  "source": "https://www.principedipiemonte.com/assets/uploads/Dine/piccolo-principe/menu/menu-il-piccolo-principe-ita-corretto.pdf",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteIt": "Solo a cena",
@@ -29,5 +29,37 @@
     "gluten-free"
   ],
   "chef": "Giuseppe Mancino",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Esperienza tasting menu",
+      "meal": "dinner",
+      "price": 270,
+      "courses": 10
+    },
+    {
+      "name": "I Classici tasting menu",
+      "meal": "dinner",
+      "price": 220,
+      "courses": 8,
+      "note": "The chef's classic dishes"
+    },
+    {
+      "name": "Choice of three dishes",
+      "meal": "dinner",
+      "price": 180,
+      "courses": 3,
+      "note": "Chosen freely from the tasting menus and specials; two dishes €140"
+    }
+  ],
+  "menusSource": "https://www.principedipiemonte.com/assets/uploads/Dine/piccolo-principe/menu/menu-il-piccolo-principe-ita-corretto.pdf",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2014,
+  "hotel": "the Grand Hotel Principe di Piemonte",
+  "bookingOpens": "Online through the hotel's booking request page (prenota-web), or by phone or email (ilpiccoloprincipe@principedipiemonte.com).",
+  "bookingUrl": "https://ilpiccoloprincipe.prenota-web.it/prenotazioni/?ristorante=ilpiccoloprincipe&lang=it",
+  "bookingPhone": "+39 0584 4011",
+  "groups": "For more than six people, email ilpiccoloprincipe@principedipiemonte.com.",
+  "infoSource": "https://www.principedipiemonte.com/it/ristorazione/ristorante-il-piccolo-principe.html",
+  "infoChecked": "2026-10-12"
 }

@@ -19,20 +19,45 @@
   "dinnerNote": "Sushi omakase",
   "dinnerNoteZh": "壽司主廚精選",
   "dinnerNoteJa": "鮨おまかせ",
-  "sourceType": "press",
-  "source": "https://omakaseje.com/restaurants/fw553542",
+  "sourceType": "site",
+  "source": "https://sushimasashi.tokyo/",
   "lunch": 39600,
   "lunchType": "menu",
   "lunchNote": "Sushi omakase · lunch or dinner",
   "lunchNoteZh": "壽司主廚精選・午晚餐皆供應",
   "lunchNoteJa": "鮨おまかせ・昼夜共通",
-  "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/fw553542",
+  "lunchSourceType": "site",
+  "lunchSource": "https://sushimasashi.tokyo/",
   "website": "https://sushimasashi.tokyo/",
   "lat": 35.671398,
   "lng": 139.716725,
   "placeId": "ChIJyTFxpuKNGGARxdaK4WpltA8",
   "michelinId": "1195320",
   "chef": "Masashi Yamaguchi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Omakase course",
+      "meal": "dinner",
+      "price": 39600,
+      "note": "The only menu; lunch (noon) or dinner (5.30pm or 8pm); including tax"
+    }
+  ],
+  "menusSource": "https://sushimasashi.tokyo/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Bettei Sushi Masashi",
+      "price": 27500,
+      "note": "The chef's second counter nearby in Kita-Aoyama (opened 25 April 2026): Bettei omakase ¥27,500, or the main restaurant's ¥39,600 omakase made by its own chefs; including tax; smart casual",
+      "url": "https://bettei-sushimasashi.tokyo/menu"
+    }
+  ],
+  "starsSince": 2021,
+  "bookingOpens": "Bookings only. Online through OMAKASE (linked from the restaurant's website) or by phone. Overseas visitors can also request a seat through TableAll, which adds its own ¥8,000 booking fee.",
+  "bookingUrl": "https://omakase.in/ja/r/di508422",
+  "bookingPhone": "+81 3-6384-5526",
+  "groups": "A private room for up to four guests, besides the 10-seat counter.",
+  "infoSource": "https://sushimasashi.tokyo/",
+  "infoChecked": "2026-10-12"
 }

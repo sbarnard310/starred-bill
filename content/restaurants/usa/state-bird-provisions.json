@@ -22,5 +22,35 @@
   "placeId": "ChIJQ7kGpLmAhYARKeCe2pDobWk",
   "michelinId": "365863",
   "chef": "Stuart Brioza",
-  "chefSource": "site"
+  "chefSource": "site",
+  "alsoTry": [
+    {
+      "name": "The Progress",
+      "note": "The same chefs' family-style restaurant next door, also with one MICHELIN star.",
+      "url": "https://theprogress-sf.com/"
+    },
+    {
+      "name": "The Anchovy Bar",
+      "note": "The same chefs' seafood bar nearby on O'Farrell Street.",
+      "url": "https://www.theanchovybar.com/"
+    }
+  ],
+  "starsSince": 2014,
+  "bookingOpens": "Online on OpenTable. Tables open at 12pm Pacific time exactly 30 days before the date.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "time": "12:00",
+    "tz": "America/Los_Angeles",
+    "via": "OpenTable",
+    "source": "https://statebirdsf.com/reservations-sbp",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://www.opentable.com/r/state-bird-provisions-san-francisco",
+  "bookingPhone": "+1 415 795 1272",
+  "walkIns": "Some seats are kept for walk-ins, first come, first served. Arrive a few minutes before the 5:30pm opening for a shorter wait, earlier at weekends.",
+  "groups": "Online bookings are for one to four guests. The Alcove Table seats six to eight at 6pm or 8:30pm, with a $110 family-style menu and an $800 food and drink minimum; cancelling within five days costs half the minimum, on the day the full minimum. The whole restaurant can be booked for up to 60 seated or 75 standing.",
+  "groupsUrl": "https://statebirdsf.com/group-dining-all",
+  "infoSource": "https://statebirdsf.com/reservations-sbp",
+  "infoChecked": "2026-10-12"
 }

@@ -29,6 +29,32 @@
   ],
   "chef": "Martin Carabott",
   "chefSource": "press",
+  "menus": [
+    {
+      "name": "Gravetye Dinner",
+      "meal": "dinner",
+      "price": 130,
+      "courses": 3,
+      "note": "Three courses plus complimentary dishes from the kitchen garden; vegetarian and vegan versions at the same price; cheese £23 extra"
+    },
+    {
+      "name": "Gravetye Lunch",
+      "meal": "lunch",
+      "price": 110,
+      "courses": 3,
+      "note": "Three courses, not the set menu"
+    },
+    {
+      "name": "Set Menu Lunch",
+      "meal": "lunch",
+      "price": 85,
+      "courses": 3,
+      "note": "Choice of two mains; vegetarian and vegan versions at the same price"
+    }
+  ],
+  "menusSource": "https://www.gravetyemanor.co.uk/dining/the-dining-room/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online, or by phone. Tables for people not staying at the hotel can be booked up to six months ahead, and availability for them is limited; hotel guests get a dinner table every night of their stay. The booking time is when menus are presented, so arrive earlier for a drink in the lounge or garden.",
   "bookingWindow": {
     "type": "rolling",
     "months": 6,
@@ -36,5 +62,15 @@
     "via": "website",
     "source": "https://www.gravetyemanor.co.uk/dining/the-dining-room/",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://www.gravetyemanor.co.uk/dining/the-dining-room/#book-table",
+  "bookingPhone": "+44 1342 810567",
+  "cancellation": "A card is needed to hold the booking. Cancelling within 24 hours costs £50 a person.",
+  "waitlist": "If no table shows online for the date, phone 01342 810567 to join the waiting list.",
+  "groups": "Tables of up to six in the dining room. For seven or more, email events@gravetyemanor.co.uk about the private dining rooms.",
+  "groupsUrl": "https://www.gravetyemanor.co.uk/dine/private-dining/",
+  "dressCode": "Smart casual; smart jeans are fine, though in the evening men tend to wear a jacket.",
+  "children": "Children over seven are welcome in the dining room. Younger children, babies included, only as part of a private party in a private dining room.",
+  "infoSource": "https://www.gravetyemanor.co.uk/media/ju0d002s/dining-at-gravetye-faqs-may-2026.pdf",
+  "infoChecked": "2026-10-12"
 }

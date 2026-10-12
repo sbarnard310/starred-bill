@@ -12,17 +12,17 @@
   "reviews": 887,
   "dinner": 1895,
   "dinnerType": "menu",
-  "dinnerNote": "Menu Prestige, 7 courses",
-  "dinnerNoteDa": "Menu Prestige, 7 retter",
-  "dinnerNoteZh": "Prestige 套餐，7 道",
-  "wine": 1750,
+  "dinnerNote": "Menu Prestige (DKK 2,420 with the caviar course)",
+  "dinnerNoteDa": "Menu Prestige (2.420 kr. med kaviarretten)",
+  "dinnerNoteZh": "Prestige 套餐（含魚子醬菜式 2,420 丹麥克朗）",
+  "wine": 1550,
   "sourceType": "site",
   "source": "https://www.soelleroed-kro.dk/en/menukort",
   "lunch": 795,
   "lunchType": "menu",
-  "lunchNote": "Kromenu lunch, 3 courses · Wed–Sat",
-  "lunchNoteDa": "Kromenu til frokost, 3 retter · ons.–lør.",
-  "lunchNoteZh": "Kromenu 午間套餐，3 道・週三至週六",
+  "lunchNote": "Kromenu lunch, 3 courses · Thu–Sat",
+  "lunchNoteDa": "Kromenu til frokost, 3 retter · tors.–lør.",
+  "lunchNoteZh": "Kromenu 午間套餐，3 道・週四至週六",
   "lunchWine": 550,
   "lunchSourceType": "site",
   "lunchSource": "https://www.soelleroed-kro.dk/en/menukort",
@@ -36,5 +36,47 @@
     "vegan"
   ],
   "chef": "Jakob de Neergaard",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Menu Prestige",
+      "meal": "dinner",
+      "price": 1895,
+      "wine": 1550,
+      "note": "Lunch Thursday to Saturday or dinner Wednesday to Saturday; pairing 6 glasses DKK 1,550, or DKK 2,700 for the Prestige pairing"
+    },
+    {
+      "name": "Menu Prestige with \"Caviar en surprise\"",
+      "meal": "dinner",
+      "price": 2420,
+      "wine": 1750,
+      "note": "Adds the caviar and lobster course; pairing 7 glasses DKK 1,750, or DKK 3,000 for the Prestige pairing"
+    },
+    {
+      "name": "Kromenu, three courses",
+      "meal": "lunch",
+      "price": 795,
+      "wine": 550,
+      "courses": 3,
+      "note": "Thursday to Saturday; put together on the day by the head chef; pairing 3 glasses"
+    },
+    {
+      "name": "Sunday lunch, three courses",
+      "meal": "lunch",
+      "price": 1250,
+      "courses": 3,
+      "note": "Sundays only, when it is the only menu; includes a glass of bubbles, matching wines, water, coffee and sweets (DKK 1,550 for four courses)"
+    }
+  ],
+  "menusSource": "https://www.soelleroed-kro.dk/en/menukort",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2007,
+  "bookingOpens": "Online through DinnerBooking, or by phone or email (mail@soelleroed-kro.dk).",
+  "bookingUrl": "https://book.dinnerbooking.com/dk/en-US/book/index/275/2",
+  "bookingPhone": "+45 45 80 25 05",
+  "groups": "Parties and company events for 20 or more are held in the inn's function rooms: Søllerød Salen for 40 to 80, Gårdstuen for 20 to 50.",
+  "groupsUrl": "https://www.soelleroed-kro.dk/en/selskaber",
+  "byob": "Guests may bring up to two 75cl bottles per booking: corkage is DKK 800 for the first and DKK 1,200 for the second.",
+  "infoSource": "https://www.soelleroed-kro.dk/en/praktik",
+  "infoChecked": "2026-10-12"
 }

@@ -34,5 +34,33 @@
   "lunchSourceType": "site",
   "lunchSource": "https://cms.odurla.com/uploads/WEB_Sefin_Yolculugu_Tadim_Menuesue_Temmuz_2026_27592aea4e.pdf",
   "cuisineTr": "Modern Mutfak",
-  "areaTr": "İzmir"
+  "areaTr": "İzmir",
+  "menus": [
+    {
+      "name": "Şefin Yolculuğu (The Journey of the Chef) tasting menu",
+      "meal": "dinner",
+      "price": 6250,
+      "wine": 5250,
+      "note": "Lunch or dinner, for the whole table. Six-glass signature wine pairing TRY 5,250, or TRY 7,500 for the sommelier's pairing."
+    },
+    {
+      "name": "Four-choice prix fixe menu",
+      "meal": "dinner",
+      "price": 5350,
+      "wine": 3850,
+      "courses": 4,
+      "note": "Lunch or dinner: pick a starter, second course, main and dessert from the à la carte list, for the whole table. Four-glass signature pairing TRY 3,850, or TRY 5,750 for the sommelier's pairing."
+    }
+  ],
+  "menusSource": "https://odurla.com/menu?locale=en",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2023,
+  "bookingOpens": "Online through Rezervem, or by phone. Seats are at the chef's counter, in the main room or in the garden. The kitchen is open Tuesday to Sunday from 1pm to midnight; closed on Mondays.",
+  "bookingUrl": "https://guest.rezervem.com.tr/Od-Urla?source=webSite&culture=en-US",
+  "bookingPhone": "+90 532 696 39 30",
+  "groups": "Group bookings by email to info@odurla.com.",
+  "dressCode": "Smart casual.",
+  "children": "Children (12 and under) are welcome until 6pm; the guesthouse takes no guests under 15.",
+  "infoSource": "https://odurla.com/faq?locale=en",
+  "infoChecked": "2026-10-12"
 }

@@ -8,9 +8,9 @@
   "reviews": 890,
   "dinnerType": "menu",
   "dinner": 738,
-  "dinnerNote": "Tasting menu (other menus from AED 538)",
-  "sourceType": "press",
-  "source": "https://dizzer.ae/deals/signature-set-menus-hakkasan-atlantis-the-palm-dining-deal/",
+  "dinnerNote": "Pearl tasting menu (other menus from AED 428)",
+  "sourceType": "site",
+  "source": "https://hakkasangroup.com/venues/hakkasan-dubai/menu/",
   "website": "https://www.atlantis.com/dubai/dining/hakkasan",
   "lat": 25.132521,
   "lng": 55.1180364,
@@ -23,9 +23,51 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteAr": "قائمة تذوق (قوائم أخرى من AED 538)",
-  "lunchNote": "Open for lunch · Sundays",
-  "lunchNoteAr": "مفتوح وقت الغداء · الأحد",
+  "dinnerNoteAr": "قائمة تذوق Pearl (قوائم أخرى من AED 428)",
+  "lunchNote": "Dinner only",
+  "lunchNoteAr": "العشاء فقط",
   "chef": "Andy Toh",
-  "chefSource": "press"
+  "chefSource": "press",
+  "wine": 738,
+  "noLunch": true,
+  "menus": [
+    {
+      "name": "Pearl menu",
+      "meal": "dinner",
+      "price": 738,
+      "wine": 738,
+      "note": "For two or more; served 6pm to 11pm. Beverage pairing AED 738. Caviar with the Peking duck AED 400 extra."
+    },
+    {
+      "name": "Dragon menu",
+      "meal": "dinner",
+      "price": 538,
+      "note": "For two or more; served 6pm to 11pm."
+    },
+    {
+      "name": "Lotus vegetarian menu",
+      "meal": "dinner",
+      "price": 428,
+      "note": "For two or more, and the whole party must order it."
+    }
+  ],
+  "menusSource": "https://hakkasangroup.com/venues/hakkasan-dubai/menu/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Chi at Hakkasan",
+      "price": 188,
+      "note": "Two cocktails and six dim sum (AED 288 with two glasses of Champagne), Sunday to Thursday 6pm to 8pm.",
+      "url": "https://hakkasangroup.com/venues/hakkasan-dubai/menu/"
+    }
+  ],
+  "starsSince": 2022,
+  "hotel": "Atlantis The Palm",
+  "bookingOpens": "Online through SevenRooms, or by phone. Dinner is served Tuesday to Saturday, 6pm to 11:30pm (bar until 12:30am); closed on Sundays and Mondays.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/hakkasanatlantis",
+  "bookingPhone": "+971 4 426 2626",
+  "groups": "The semi-private area of the main dining room seats up to 20 and the lounge up to 40; enquire by phone or through the private events form.",
+  "groupsUrl": "https://hakkasangroup.com/venues/hakkasan-dubai/private-events/",
+  "infoSource": "https://hakkasangroup.com/venues/hakkasan-dubai/contact/",
+  "infoChecked": "2026-10-12"
 }

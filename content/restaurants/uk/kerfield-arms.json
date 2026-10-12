@@ -10,12 +10,12 @@
   "changeDate": "2026-02",
   "rating": 4.7,
   "reviews": 297,
-  "dinner": 27,
+  "dinner": 30,
   "dinnerType": "main",
-  "dinnerNote": "À la carte pub menu",
+  "dinnerNote": "À la carte pub menu, mains £28–£32",
   "noPairing": true,
-  "sourceType": "press",
-  "source": "https://www.squaremeal.co.uk/restaurants/the-kerfield-arms_27065",
+  "sourceType": "site",
+  "source": "https://www.thekerfieldarms.co.uk/s/Menu-081026.pdf",
   "lunch": 12,
   "lunchType": "menu",
   "lunchNote": "Midweek lunch special (à la carte also served)",
@@ -32,5 +32,13 @@
     "gluten-free"
   ],
   "chef": "Jay Styler",
-  "chefSource": "press"
+  "chefSource": "press",
+  "starsSince": 2026,
+  "bookingOpens": "Online through SevenRooms.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/thekerfieldarms/reservations/create/search/",
+  "bookingPhone": "+44 20 3011 5401",
+  "groups": "The private dining room seats up to 24; on the ground floor, among other diners, tables of up to 14. A feasting menu is offered for groups. Email enquiries@thekerfieldarms.co.uk.",
+  "groupsUrl": "https://www.thekerfieldarms.co.uk/groupbooking",
+  "infoSource": "https://www.thekerfieldarms.co.uk/",
+  "infoChecked": "2026-10-12"
 }

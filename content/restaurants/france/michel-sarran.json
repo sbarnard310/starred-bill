@@ -8,18 +8,17 @@
   "reviews": 1642,
   "dinner": 215,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €85)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 85 €)",
+  "dinnerNote": "Dégustation Surprise menu, for the whole table (other menus from €85)",
+  "dinnerNoteFr": "Menu Dégustation Surprise, pour toute la table (autres menus dès 85 €)",
   "wine": 90,
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/michel-sarran",
-  "lunch": 215,
+  "sourceType": "site",
+  "source": "https://www.michel-sarran.com/fr/#Page-la-carte",
+  "lunch": 85,
   "lunchType": "menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/michel-sarran",
-  "lunchNote": "Same menu at lunch · Tue, Thu–Fri",
-  "lunchNoteFr": "Même menu le midi · mar., jeu.–ven.",
-  "lunchWine": 90,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.michel-sarran.com/fr/#Page-la-carte",
+  "lunchNote": "Capitole lunch menu, wine and coffee included · Tue, Thu–Fri",
+  "lunchNoteFr": "Menu Capitole, vin et café compris · mar., jeu.–ven.",
   "website": "https://www.michel-sarran.com",
   "lat": 43.6072744,
   "lng": 1.4345204,
@@ -29,5 +28,45 @@
     "vegetarian"
   ],
   "chef": "Michel Sarran",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Dégustation Surprise menu",
+      "meal": "dinner",
+      "price": 215,
+      "wine": 90,
+      "courses": 7,
+      "note": "Lunch or dinner, for everyone at the table: four dishes, cheese and two desserts; €305 with the wine pairing. Last orders 1.30pm and 9.30pm"
+    },
+    {
+      "name": "Saveurs Occitanes menu",
+      "meal": "dinner",
+      "price": 160,
+      "courses": 5,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Soirées d'Automne menu",
+      "meal": "dinner",
+      "price": 100,
+      "courses": 3,
+      "note": "Monday to Wednesday evenings in autumn; starter, main and dessert, drinks extra"
+    },
+    {
+      "name": "Capitole lunch menu",
+      "meal": "lunch",
+      "price": 85,
+      "courses": 3,
+      "note": "Lunch only, not on public holidays; a glass of white and red wine and coffee included"
+    }
+  ],
+  "menusSource": "https://www.michel-sarran.com/fr/#Page-la-carte",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through the restaurant's own booking site, by phone or by email (contact@michel-sarran.com). Lunch is served Tuesday, Thursday and Friday from 12pm to 1.45pm, dinner Monday to Friday from 8pm to 9.45pm; closed at weekends, from 1 to 30 August and from 19 to 27 December 2026.",
+  "bookingUrl": "https://reservation.michel-sarran.com/fr/",
+  "bookingPhone": "+33 5 61 12 32 32",
+  "groups": "Three private rooms for 8, 12 and 20 guests; the whole restaurant can be booked privately.",
+  "groupsUrl": "https://www.michel-sarran.com/fr/#Page-infos",
+  "infoSource": "https://www.michel-sarran.com/fr/#Page-infos",
+  "infoChecked": "2026-10-12"
 }

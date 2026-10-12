@@ -8,10 +8,10 @@
   "reviews": 1746,
   "dinnerType": "menu",
   "dinner": 225,
-  "dinnerNote": "Signature tasting menu",
+  "dinnerNote": "Signature tasting menu (meat-free Contemporary menu also $225)",
   "wine": 120,
-  "sourceType": "press",
-  "source": "https://www.opentable.ca/r/don-alfonso-1890-toronto",
+  "sourceType": "site",
+  "source": "https://www.donalfonsotoronto.com/content/pdfs/tasting-menu-august-2026.pdf",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.donalfonsotoronto.com/",
@@ -24,5 +24,41 @@
     "vegan"
   ],
   "chef": "Davide Ciavattella",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Signature tasting menu",
+      "meal": "dinner",
+      "price": 225,
+      "wine": 120,
+      "courses": 6,
+      "note": "Six dishes plus canapés and petits fours. Premium wine pairing $200."
+    },
+    {
+      "name": "Contemporary tasting menu",
+      "meal": "dinner",
+      "price": 225,
+      "wine": 120,
+      "courses": 6,
+      "note": "Meat-free menu of six dishes plus canapés and petits fours. Premium wine pairing $200."
+    },
+    {
+      "name": "à la carte menu",
+      "meal": "dinner",
+      "price": 150,
+      "note": "A set price in the dining room for dishes chosen from the antipasti, pasta and main courses."
+    }
+  ],
+  "menusSource": "https://www.donalfonsotoronto.com/menus/signature-tasting-menu",
+  "menusChecked": "2026-10-12",
+  "hotel": "the Westin Harbour Castle",
+  "bookingOpens": "Online on OpenTable, linked from the restaurant's website, or by phone.",
+  "bookingUrl": "https://www.opentable.ca/r/don-alfonso-1890-reservations-toronto?restref=1009552&lang=en-CA",
+  "bookingPhone": "+1 289-805-6290",
+  "cancellation": "A valid credit card is needed to confirm the booking. Cancelling with less than 48 hours' notice costs $100 a person.",
+  "walkIns": "A lounge serves its own menu of small plates, pasta and desserts ($18–34 a dish).",
+  "groups": "The dining room on the 38th floor can be booked for private events: up to 82 seated or 120 standing, on Mondays and Tuesdays for lunch or dinner, or for lunch from Wednesday to Sunday. Events team: events@donalfonsotoronto.com, +1 416-214-5888.",
+  "groupsUrl": "https://www.donalfonsotoronto.com/private-events/private-events",
+  "infoSource": "https://www.donalfonsotoronto.com/contact",
+  "infoChecked": "2026-10-12"
 }

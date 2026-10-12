@@ -9,7 +9,7 @@
   "reviews": 506,
   "dinnerType": "menu",
   "dinner": 265,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Seasonal menu on Friday and Saturday (€215 Tuesday to Thursday)",
   "wine": 105,
   "sourceType": "site",
   "source": "https://denieuwewinkel.com/menukaart/",
@@ -25,9 +25,38 @@
   ],
   "chef": "Emile van der Staak",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu",
+  "dinnerNoteNl": "Seizoensmenu op vrijdag en zaterdag (€ 215 dinsdag t/m donderdag)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Bio"
+  "cuisineNl": "Bio",
+  "menus": [
+    {
+      "name": "Seasonal menu (Groei, July to October)",
+      "meal": "dinner",
+      "price": 265,
+      "wine": 105,
+      "note": "Friday and Saturday price; €215 Tuesday to Thursday. Alcohol-free botanical pairing also €105. The menu changes three times a year: Ontwaken (March to June), Groei (July to October), Overvloed (November to March)"
+    }
+  ],
+  "menusSource": "https://denieuwewinkel.com/menukaart/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2022,
+  "bookingOpens": "Online through the booking page on the restaurant's website. Tables for each new season are released at a time announced first in the restaurant's newsletter.",
+  "bookingWindow": {
+    "type": "announced",
+    "note": "Each season's tables (three menus a year) are released at a time announced in the restaurant's newsletter.",
+    "via": "newsletter",
+    "tz": "Europe/Amsterdam",
+    "source": "https://denieuwewinkel.com/veelgestelde-vragen/",
+    "checked": "2026-10-12"
+  },
+  "bookingUrl": "https://denieuwewinkel.com/en/booking/",
+  "bookingPhone": "+31 24 322 5093",
+  "cancellation": "No deposit, but an amount is held on your card. Cancelling more than three days ahead costs nothing; within three days the held amount is charged.",
+  "waitlist": "If your date is full, join the waiting list. When a table comes free, everyone on that day's list is emailed at the same moment, and the first to respond gets it.",
+  "groups": "Up to 6 people in the restaurant. Groups of 7 to 10 dine in the private dining room at a long oak table, with the menu agreed in advance (not wheelchair accessible).",
+  "groupsUrl": "https://denieuwewinkel.com/en/private-dining/",
+  "infoSource": "https://denieuwewinkel.com/veelgestelde-vragen/",
+  "infoChecked": "2026-10-12"
 }

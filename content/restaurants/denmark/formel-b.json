@@ -31,5 +31,32 @@
     "vegan"
   ],
   "chef": "Kristian Arpe-Møller",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "formel B menu, five courses of your choice",
+      "meal": "dinner",
+      "price": 1500,
+      "wine": 1200,
+      "courses": 5,
+      "note": "Five courses chosen from the 11 to 13 dishes on the menu; extra courses DKK 250 each; non-alcoholic pairing DKK 600; parties of six or more have a menu chosen by the head chef"
+    }
+  ],
+  "menusSource": "https://formelbgroup.dk/formelb/en/food/",
+  "menusChecked": "2026-10-12",
+  "alsoTry": [
+    {
+      "name": "Uformel",
+      "note": "The group's more relaxed restaurant on Studiestræde near the City Hall Square, with a five-course menu or small plates (four to six a person suggested)",
+      "url": "https://formelbgroup.dk/uformel"
+    }
+  ],
+  "bookingOpens": "Online through EasyTable, or by phone or email (info@formelb.dk).",
+  "bookingUrl": "https://book.easytable.com/book/?id=8e068&lang=en",
+  "bookingPhone": "+45 33 25 10 66",
+  "cancellation": "Cancellations must be made in writing to info@formelb.dk. A no-show is charged DKK 1,500 for each missing guest. Groups of 8 to 20 must confirm numbers six days ahead; later cancellations may be charged 75% of the agreed price.",
+  "groups": "Parties of up to 35 can have a separate room, and up to 60 across the restaurant's two floors; enquiries through the form on the banquet page.",
+  "groupsUrl": "https://formelbgroup.dk/formelb/en/banquet/",
+  "infoSource": "https://formelbgroup.dk/formelb/en/cancellation-policy/",
+  "infoChecked": "2026-10-12"
 }

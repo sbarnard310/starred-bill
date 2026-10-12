@@ -10,14 +10,14 @@
   "cuisineZh": "時尚法國菜",
   "rating": 4.7,
   "reviews": 332,
-  "dinner": 3100,
+  "dinner": 3200,
   "dinnerType": "menu",
-  "dinnerNote": "Signature menu",
-  "dinnerNoteDa": "Signaturmenu",
-  "dinnerNoteZh": "招牌套餐",
+  "dinnerNote": "Anniversary menu",
+  "dinnerNoteDa": "Jubilæumsmenu",
+  "dinnerNoteZh": "週年紀念套餐",
   "wine": 2400,
-  "sourceType": "press",
-  "source": "https://www.travelsforstars.com/blog/2026/05/28/kong-hans-kaelder-copenhagen",
+  "sourceType": "site",
+  "source": "https://konghans.com/the-signature-menu/",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDa": "Kun middag",
@@ -32,5 +32,24 @@
     "kosher"
   ],
   "chef": "Mark Lundgaard",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Anniversary Menu",
+      "meal": "dinner",
+      "price": 3200,
+      "wine": 2400,
+      "note": "Classic French cooking with dishes carved and flambéed at the table; cheese trolley DKK 325 extra; wine pairings DKK 2,400 (Renaissance), DKK 4,700 (Prestige) or DKK 8,500 (Extravagance); a juice pairing can be ordered on the day"
+    }
+  ],
+  "menusSource": "https://konghans.com/the-signature-menu/",
+  "menusChecked": "2026-10-12",
+  "bookingOpens": "Online through DinnerBooking, or by phone or email. A booking stands once the confirmation email arrives; a week before the visit a second email must be confirmed within 24 hours to keep the table.",
+  "bookingUrl": "https://book.dinnerbooking.com/dk/da-DK/book/index/332/2",
+  "bookingPhone": "+45 33 11 68 68, office hours Monday to Friday 9am to 3pm",
+  "cancellation": "Bookings can be cancelled or reduced up to 72 hours ahead, by phone or email; one week ahead for parties of more than five and three weeks ahead for more than ten. Late cancellations and no-shows are charged DKK 3,200 a person.",
+  "groups": "Private dining is available, with a menu planned with the head chef; enquiries by phone or info@konghans.dk.",
+  "groupsUrl": "https://konghans.dk/private-dining/",
+  "infoSource": "https://konghans.com/contact/",
+  "infoChecked": "2026-10-12"
 }

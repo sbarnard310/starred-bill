@@ -28,5 +28,40 @@
     "gluten-free"
   ],
   "chef": "Anthony Genovese",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Circus tasting menu",
+      "meal": "dinner",
+      "price": 270,
+      "courses": 9,
+      "note": "Drinks not included"
+    },
+    {
+      "name": "Scintille tasting menu",
+      "meal": "dinner",
+      "price": 230,
+      "courses": 6,
+      "note": "A six-course surprise menu; drinks not included"
+    },
+    {
+      "name": "Parallels Experience menu",
+      "meal": "dinner",
+      "price": 330,
+      "courses": 10,
+      "note": "In the private room, for up to six guests; drinks not included"
+    }
+  ],
+  "menusSource": "https://ristoranteilpagliaccio.com/en/menu/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2009,
+  "bookingOpens": "Online through TheFork from the restaurant's website (separate pages for the main room and the Parallels private room), or by phone or email. A credit card is needed, but nothing is charged when booking.",
+  "bookingUrl": "https://widget.thefork.com/it/c1991c57-e8b1-45bf-b774-fbbf6ba53a39?step=date",
+  "bookingPhone": "+39 06 6880 9595",
+  "cancellation": "Free to cancel or change up to 48 hours before, by email only (info@ristoranteilpagliaccio.com). Later cancellations, no-shows and fewer guests than booked are charged €200 a person.",
+  "groups": "The Parallels private room takes up to six guests, with its own 10-course menu (€330) and service. Small dogs are allowed only there, once the booking office confirms.",
+  "dressCode": "No strict dress code. Smart casual at lunch and elegant casual at dinner; no shorts, flip-flops, T-shirts or trainers.",
+  "children": "Children over 5 are welcome. Mention younger children when booking; the restaurant decides whether to accept them.",
+  "infoSource": "https://ristoranteilpagliaccio.com/prenota/",
+  "infoChecked": "2026-10-12"
 }

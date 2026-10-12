@@ -9,10 +9,10 @@
   "reviews": 629,
   "dinnerType": "menu",
   "dinner": 7200,
-  "dinnerNote": "Tasting menu (other menus from ₱5,800)",
+  "dinnerNote": "Ten-course tasting menu (other menus from ₱4,700)",
   "wine": 3500,
-  "sourceType": "press",
-  "source": "https://www.esquiremag.ph/culture/food-and-drink/gallery-by-chele-goes-extra-rice-on-its-new-tasting-menu-a8072-20260318-dyn",
+  "sourceType": "site",
+  "source": "https://gallerybychele.com/menus/",
   "website": "https://gallerybychele.com",
   "lat": 14.55901,
   "lng": 121.05613,
@@ -26,7 +26,51 @@
   ],
   "chef": "José Luis Gonzalez",
   "chefSource": "michelin",
-  "dinnerNoteFil": "Tasting menu (ibang menu mula ₱5,800)",
+  "dinnerNoteFil": "Tasting menu na 10 kurso (ibang menu mula ₱4,700)",
   "lunchNote": "Open for lunch · Wed–Sun",
-  "lunchNoteFil": "Bukas para sa tanghalian · Miy–Lin"
+  "lunchNoteFil": "Bukas para sa tanghalian · Miy–Lin",
+  "menus": [
+    {
+      "name": "Ten-course tasting menu",
+      "meal": "dinner",
+      "price": 7200,
+      "wine": 3500,
+      "courses": 10,
+      "note": "The whole table orders the same menu. Signature pairing also ₱3,500, cocktail pairing ₱2,800, non-alcoholic pairing ₱1,700. About 3 to 4 hours."
+    },
+    {
+      "name": "Six-course tasting menu",
+      "meal": "dinner",
+      "price": 5800,
+      "wine": 2600,
+      "courses": 6,
+      "note": "Cocktail pairing ₱2,200, non-alcoholic pairing ₱1,250. About 2 to 3 hours."
+    },
+    {
+      "name": "Ten-course vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 5900,
+      "wine": 3500,
+      "courses": 10,
+      "note": "Same pairings as the ten-course menu."
+    },
+    {
+      "name": "Six-course vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 4700,
+      "wine": 2600,
+      "courses": 6,
+      "note": "Same pairings as the six-course menu."
+    }
+  ],
+  "menusSource": "https://gallerybychele.com/menus/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2025,
+  "bookingOpens": "Online through the booking form on the restaurant's website, or by email to reservations@gallerybychele.com or by phone.",
+  "bookingUrl": "https://gallerybychele.com/reservations/",
+  "bookingPhone": "+63 917 546 1673",
+  "duration": "About three to four hours for the ten-course menu, two to three hours for the six-course menu.",
+  "servicePct": 10,
+  "infoSource": "https://gallerybychele.com/menus/",
+  "infoChecked": "2026-10-12"
 }

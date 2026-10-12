@@ -13,20 +13,20 @@
   "cuisineJa": "天ぷら",
   "rating": 4.4,
   "reviews": 980,
-  "dinner": 17500,
+  "dinner": 33000,
   "dinnerType": "menu",
-  "dinnerNote": "Tempura course, from",
-  "dinnerNoteZh": "天婦羅套餐起",
-  "dinnerNoteJa": "天ぷらコース（最安値）",
-  "sourceType": "press",
-  "source": "https://omakaseje.com/restaurants/tf278391",
-  "lunch": 10400,
+  "dinnerNote": "Yomogi course, the longest (Fuji ¥22,000, Kaede ¥27,500); including tax",
+  "dinnerNoteZh": "蓬套餐，最豐富（藤 ¥22,000、楓 ¥27,500）；含稅",
+  "dinnerNoteJa": "蓬コース・最上位（藤 ¥22,000、楓 ¥27,500）・税込",
+  "sourceType": "site",
+  "source": "https://tempura-kondo.com/en/",
+  "lunch": 13200,
   "lunchType": "menu",
-  "lunchNote": "Lunch course, from",
-  "lunchNoteZh": "午間套餐起",
-  "lunchNoteJa": "ランチコース（最安値）",
-  "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/tf278391",
+  "lunchNote": "Sumire course (Tsubaki ¥16,500); including tax",
+  "lunchNoteZh": "菫套餐（椿 ¥16,500）；含稅",
+  "lunchNoteJa": "菫コース（椿 ¥16,500）・税込",
+  "lunchSourceType": "site",
+  "lunchSource": "https://tempura-kondo.com/en/",
   "website": "https://tempura-kondo.com/",
   "lat": 35.671184,
   "lng": 139.763104,
@@ -36,5 +36,48 @@
     "vegetarian"
   ],
   "chef": "Fumio Kondo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Yomogi course",
+      "meal": "dinner",
+      "price": 33000,
+      "note": "The longest dinner course; including tax"
+    },
+    {
+      "name": "Kaede course",
+      "meal": "dinner",
+      "price": 27500,
+      "note": "Including tax"
+    },
+    {
+      "name": "Fuji course",
+      "meal": "dinner",
+      "price": 22000,
+      "note": "Including tax"
+    },
+    {
+      "name": "Tsubaki course",
+      "meal": "lunch",
+      "price": 16500,
+      "note": "Including tax"
+    },
+    {
+      "name": "Sumire course",
+      "meal": "lunch",
+      "price": 13200,
+      "note": "Including tax"
+    }
+  ],
+  "menusSource": "https://tempura-kondo.com/en/",
+  "menusChecked": "2026-10-12",
+  "starsSince": 2007,
+  "bookingOpens": "Guests in Japan book by phone (Japanese only) or the Japanese form. Overseas guests book only through the restaurant's official partner, My Concierge Japan, paying for the courses in advance plus a 15% reservation charge.",
+  "bookingUrl": "https://mycon-jp.net/reservation/tempura-kondo/en",
+  "bookingPhone": "+81 3-5568-0923",
+  "cancellation": "For bookings through My Concierge Japan: a full refund up to 3pm Japan time three days before; no refund after that. Arriving more than 15 minutes late cancels the booking without a refund.",
+  "children": "Only children over 12 who can eat the course.",
+  "duration": "Two hours at lunch and two and a half hours at dinner (fixed seatings).",
+  "infoSource": "https://tempura-kondo.com/en/",
+  "infoChecked": "2026-10-12"
 }

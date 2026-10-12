@@ -1,0 +1,9 @@
+{
+  "id": "bergen",
+  "type": "city",
+  "parent": "norway",
+  "name": "Bergen",
+  "intro": "Prices are in Norwegian kroner (NOK), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026.",
+  "nameNb": "Bergen",
+  "introNb": "Prisene er i norske kroner (NOK), med en knapp for å vise dem i pund, euro eller amerikanske dollar. Prisene er sjekket i oktober 2026."
+}

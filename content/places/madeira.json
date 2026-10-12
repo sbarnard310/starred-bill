@@ -1,0 +1,10 @@
+{
+  "id": "madeira",
+  "type": "region",
+  "parent": "portugal",
+  "name": "Madeira",
+  "intro": "All three of the island's starred restaurants are in Funchal. Prices are in euros, with a switch to see them in pounds or US dollars. Prices checked October 2026.",
+  "namePt": "Madeira",
+  "inSentencePt": "na Madeira",
+  "introPt": "Os três restaurantes com estrela da ilha ficam no Funchal. Os preços estão em euros, com um botão para os ver em libras ou dólares americanos. Preços verificados em outubro de 2026."
+}

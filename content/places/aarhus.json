@@ -1,0 +1,10 @@
+{
+  "id": "aarhus",
+  "type": "city",
+  "parent": "denmark",
+  "name": "Aarhus",
+  "intro": "Prices are in Danish kroner (DKK), with a switch to see them in pounds, euros or US dollars, and already include service and 25% VAT. Prices checked October 2026.",
+  "nameDa": "Aarhus",
+  "inSentenceDa": "i Aarhus",
+  "introDa": "Priserne er i danske kroner (DKK), med en knap til at se dem i pund, euro eller amerikanske dollar, og de er allerede inklusive service og 25 % moms. Priserne er tjekket i oktober 2026."
+}

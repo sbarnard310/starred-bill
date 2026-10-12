@@ -1,0 +1,10 @@
+{
+  "id": "naples",
+  "type": "city",
+  "parent": "campania",
+  "name": "Naples",
+  "intro": "Every starred restaurant in the city of Naples; Sorrento, the Amalfi Coast, Capri and Ischia are on the Campania page. Prices are in euros, with a switch to see them in pounds or US dollars, and include VAT. Prices checked October 2026.",
+  "nameIt": "Napoli",
+  "inSentenceIt": "a Napoli",
+  "introIt": "Tutti i ristoranti stellati della città di Napoli; Sorrento, la Costiera Amalfitana, Capri e Ischia sono nella pagina della Campania. I prezzi sono in euro, con un selettore per vederli in sterline o dollari, e includono l'IVA. Prezzi verificati a ottobre 2026."
+}

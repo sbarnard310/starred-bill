@@ -1,0 +1,10 @@
+{
+  "id": "krakow",
+  "type": "city",
+  "parent": "poland",
+  "name": "Kraków",
+  "intro": "Kraków's one starred restaurant is Bottiglieria 1881 in Kazimierz, which holds two stars. Prices are in Polish złoty (PLN), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026.",
+  "namePl": "Kraków",
+  "inSentencePl": "w Krakowie",
+  "introPl": "Jedyna restauracja z gwiazdką w Krakowie to Bottiglieria 1881 na Kazimierzu, z dwiema gwiazdkami. Ceny podano w złotych (PLN), z przełącznikiem na funty, euro lub dolary amerykańskie. Ceny sprawdzone w październiku 2026."
+}

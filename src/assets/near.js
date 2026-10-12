@@ -58,7 +58,8 @@ const sittings = (r, day) => near.hours && r.id && near.hours[r.id] ? near.hours
 const servesMeal = ([a, b], meal) => meal === "lunch" ? Number(a) < 1500 : Number(a) >= 1500 || Number(b) > 1800 || Number(b) <= Number(a);
 // The MICHELIN Guide often records only a day's first sitting, so a day showing lunch alone may well serve dinner too.
 // Which days a restaurant opens is reliable; the MICHELIN Guide's times are trusted only for a day with two sittings, or a
-// dinner one. Google's (where the guide has none, listed in hours.json's "g") record every sitting, so they're always trusted.
+// dinner one. Google's and restaurants' own (where the guide has none, listed in hours.json's "g") record every sitting, so
+// they're always trusted.
 const trusted = (s, r) => (r && near.googleHours && near.googleHours.has(r.id)) || s.length > 1 || (s.length === 1 && servesMeal(s[0], "dinner"));
 function openFor(r, day, meal) {
   const s = sittings(r, day);

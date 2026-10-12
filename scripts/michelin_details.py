@@ -199,8 +199,13 @@ def hours():
     import datetime
     _, pairs, _, _ = matches()
     found = {rid: hours_of(h) for rid, h in sorted(pairs.items())}
-    found = {rid: x for rid, x in found.items() if x}
     path = os.path.join(ROOT, "content", "opening-hours.json")
+    # The guide shows a restaurant closed all week while it's shut for the season or a holiday: keep its last regular hours.
+    before = json.load(open(path, encoding="utf-8")).get("hours", {}) if os.path.exists(path) else {}
+    kept = [rid for rid, x in found.items() if not x and before.get(rid)]
+    found = {rid: x or before.get(rid) for rid, x in found.items() if x or before.get(rid)}
+    if kept:
+        print(f"Kept the earlier hours of {len(kept)} the guide now shows closed all week: {', '.join(kept)}")
     with open(path, "w", encoding="utf-8") as f:
         f.write(json.dumps({"checked": datetime.date.today().isoformat(), "source": "MICHELIN Guide", "hours": found},
                            ensure_ascii=False, indent=0) + "\n")

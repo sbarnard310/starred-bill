@@ -235,7 +235,7 @@ def data_checks(site):
         rows.append(r)
     live = [r for r in rows if r.get("stars") in (1, 2, 3) and not r.get("status")]
     hours = {}
-    for name in ("opening-hours.json", "opening-hours-google.json"):  # the MICHELIN Guide's, then Google's where it has none
+    for name in ("opening-hours.json", "opening-hours-google.json", "opening-hours-sites.json"):  # the MICHELIN Guide's, then Google's, then restaurants' own
         hours_file = C / name
         hours.update(json.loads(hours_file.read_text("utf-8")).get("hours", {}) if hours_file.exists() else {})
     gaps = collections.defaultdict(collections.Counter)

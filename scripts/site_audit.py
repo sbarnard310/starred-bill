@@ -122,7 +122,7 @@ VAGUE = re.compile(r"^(?:here|click here|this|this page|this guide|this link|pag
 NOT_PLACES = re.compile(r"MICHELIN Guide [A-Z][\w’]*(?:(?: | & | and )[A-Z][\w’]*)*|Great Britain (?:&|and) Ireland|New Mexico|New South Wales")
 FEW_LINKS_IN = 3       # an indexed English page with fewer links to it than this is hard for Google to find
 FEW_CONTENT_LINKS = 2  # a page with fewer links of its own (beyond the menu and footer every page has) is a dead end
-LISTS = re.compile(r'<p class="table-note">.*?</p>|<section class="guide-sources".*?</section>|<table.*?</table>|<(ol|nav) class="(?:rank-cards|jump-links)[^"]*".*?</\1>|<div class="change-lists">(?:.*?</ul></div>){2}</div>|<h3 id="three-[^"]*">.*?</h3>|<div class="results-top">.*?</div>', re.S)  # built from the data
+LISTS = re.compile(r'<p class="table-note">.*?</p>|<section class="guide-sources".*?</section>|<table.*?</table>|<(ol|nav) class="(?:rank-cards|jump-links)[^"]*".*?</\1>|<div class="change-lists">(?:.*?</ul></div>){2}</div>|<h3 id="(?:three|two)-[^"]*">.*?</h3>|<div class="results-top">.*?</div>', re.S)  # built from the data
 
 
 def link_checks(site):

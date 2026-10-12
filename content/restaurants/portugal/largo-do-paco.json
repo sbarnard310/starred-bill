@@ -23,5 +23,8 @@
   "chef": "Francisco Quintas",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 160 €)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNotePt": "Só jantar",
   "cuisinePt": "Moderna"
 }

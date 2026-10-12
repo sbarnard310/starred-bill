@@ -23,6 +23,9 @@
   "chef": "Stefan Stiller",
   "chefSource": "michelin",
   "dinnerNoteZhs": "品鉴套餐",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteZhs": "仅供应晚餐",
   "cuisineZhs": "创新菜",
   "nameZhs": "泰安门"
 }

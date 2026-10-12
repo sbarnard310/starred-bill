@@ -25,5 +25,12 @@
   "chef": "Sidney Heinze",
   "chefSource": "michelin",
   "dinnerNoteNl": "Chef's menu, 5 gangen (4 gangen € 110); ook à la carte",
+  "lunch": 125,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Fri",
+  "lunchNoteNl": "Zelfde menu bij de lunch · wo–vr",
+  "lunchWine": 55,
+  "lunchSourceType": "site",
+  "lunchSource": "https://bijsidney.nl/menu",
   "cuisineNl": "Frans"
 }

@@ -24,6 +24,9 @@
     "halal"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 109)",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNl": "Alleen diner",
   "cuisineNl": "Moderne keuken",
   "chef": "Lars van Galen",
   "chefSource": "press"

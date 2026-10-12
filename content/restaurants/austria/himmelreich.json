@@ -29,5 +29,12 @@
   "chef": "Marco Gangl",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
+  "lunch": 135,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Sun",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Sa–So",
+  "lunchWine": 65,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurant-himmelreich.at/restaurant-himmelreich-en",
   "cuisineDe": "Modern"
 }

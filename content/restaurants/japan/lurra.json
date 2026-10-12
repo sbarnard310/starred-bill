@@ -25,5 +25,8 @@
   "dinner": 35000,
   "dinnerNoteJa": "テイスティングメニュー・税込・サービス料別",
   "source": "https://www.tablecheck.com/shops/lurra/reserve",
-  "wine": 15000
+  "wine": 15000,
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ"
 }

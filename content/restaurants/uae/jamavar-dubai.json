@@ -28,6 +28,12 @@
     "halal"
   ],
   "dinnerNoteAr": "قائمة تذوق (قوائم أخرى بدءًا من AED 375)",
+  "lunch": 99,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu · Mon–Fri",
+  "lunchNoteAr": "قائمة الغداء · اثنين–جمعة",
+  "lunchSourceType": "site",
+  "lunchSource": "https://cdn.jamavarrestaurants.com/wp-content/uploads/2026/09/Lunch-Early-Evening-Menu-WEB.pdf",
   "chef": "Purushottam Naidu",
   "chefSource": "press"
 }

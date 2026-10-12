@@ -18,6 +18,12 @@
   "placeId": "ChIJ0wrb5KMzGQ0RRF8mWBg0XLs",
   "michelinId": "1199689",
   "dinnerNotePt": "Menu de degustação (outros menus desde 52 €)",
+  "lunch": 49,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu · Tue–Fri",
+  "lunchNotePt": "Menu de almoço · ter.–sex.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.kabukilisboa.pt/xms/files/Novos_menus_pdf_8-10-2026/Menu_nozomi_PT.pdf",
   "cuisinePt": "Japonesa",
   "chef": "Sebastião Coutinho",
   "chefSource": "press"

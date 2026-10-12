@@ -23,5 +23,8 @@
   ],
   "dinner": 26400,
   "dinnerNoteJa": "おまかせコース（最安値）・税サ込",
-  "source": "https://www.tablecheck.com/shops/miyagawacho-hotta/reserve"
+  "source": "https://www.tablecheck.com/shops/miyagawacho-hotta/reserve",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ"
 }

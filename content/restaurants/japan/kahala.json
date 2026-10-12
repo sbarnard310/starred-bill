@@ -20,5 +20,8 @@
   "chefSource": "press",
   "dinner": 44000,
   "dinnerNoteJa": "テイスティングメニュー",
-  "source": "https://www.travelsforstars.com/blog/2026/06/15/kahala-osaka"
+  "source": "https://www.travelsforstars.com/blog/2026/06/15/kahala-osaka",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ"
 }

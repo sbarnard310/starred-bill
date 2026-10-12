@@ -23,5 +23,8 @@
   "dinnerNote": "Tabelog range ¥20,000–29,999",
   "dinnerNoteJa": "食べログの価格帯 20,000～29,999円",
   "sourceType": "press",
-  "source": "https://tabelog.com/en/tokyo/A1307/A130703/13275727/"
+  "source": "https://tabelog.com/en/tokyo/A1307/A130703/13275727/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ"
 }

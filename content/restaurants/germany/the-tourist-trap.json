@@ -27,5 +27,11 @@
   "chef": "Dennis Maier",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 79 €)",
+  "lunch": 79,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu · Sundays",
+  "lunchNoteDe": "Mittagsmenü · Sonntag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://the-tourist-trap.de/",
   "cuisineDe": "Moderne Küche"
 }

@@ -24,5 +24,11 @@
   "chef": "Andreas Döllerer",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
+  "lunch": 79,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu · Saturdays",
+  "lunchNoteDe": "Mittagsmenü · Samstag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.doellerer.at/restaurant/menues-karte/",
   "cuisineDe": "Innovativ"
 }

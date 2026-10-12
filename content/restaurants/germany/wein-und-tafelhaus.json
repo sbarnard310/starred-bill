@@ -24,5 +24,11 @@
   "chef": "Alexander Oos",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 170 €)",
+  "lunch": 80,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu · Saturdays",
+  "lunchNoteDe": "Mittagsmenü · Samstag",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.wein-tafelhaus.de/wp-content/uploads/sites/12/2026/10/Landmenue-Aenderung-vorbehalten.pdf",
   "cuisineDe": "Marktküche"
 }

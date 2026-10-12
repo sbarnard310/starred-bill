@@ -23,5 +23,12 @@
   ],
   "chef": "Daniel McBurnie",
   "chefSource": "michelin",
-  "dinnerNoteDa": "Smagsmenu"
+  "dinnerNoteDa": "Smagsmenu",
+  "lunch": 2500,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteDa": "Samme menu til frokost · lørdag",
+  "lunchWine": 1800,
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurantlyst.com/menu-wines/"
 }

@@ -25,5 +25,12 @@
   "chef": "Leonardo Zambrino",
   "chefSource": "site",
   "dinnerNoteZhs": "品鉴套餐（其他套餐 CN¥2,388 起）",
+  "lunch": 3388,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sun",
+  "lunchNoteZhs": "午餐供应相同套餐・周二至周日",
+  "lunchWine": 2188,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.davittorio.com/images/davittorio/ristorante/shanghai/menu/Menu Ristorante - Inglese.pdf",
   "cuisineZhs": "意大利菜"
 }

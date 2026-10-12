@@ -20,6 +20,12 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 100)",
+  "lunch": 110,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu · Tue–Fri",
+  "lunchNoteNl": "Lunchmenu · di–vr",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.studio.restaurant/menu",
   "cuisineNl": "Aziatische invloeden",
   "chef": "Gilbert von Berg",
   "chefSource": "press"

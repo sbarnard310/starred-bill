@@ -23,5 +23,8 @@
   ],
   "chef": "Gianni Dezio",
   "chefSource": "michelin",
-  "dinnerNoteIt": "Menu degustazione"
+  "dinnerNoteIt": "Menu degustazione",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteIt": "Solo a cena"
 }

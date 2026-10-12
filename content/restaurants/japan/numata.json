@@ -21,5 +21,11 @@
   "chefSource": "press",
   "dinner": 30800,
   "dinnerNoteJa": "天ぷらコース・税込・サービス料別",
-  "source": "https://www.tenpura-tenboshi.com/tenboshi/numata.html"
+  "source": "https://www.tenpura-tenboshi.com/tenboshi/numata.html",
+  "lunch": 30800,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch",
+  "lunchNoteJa": "ランチも同じコース",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.tenpura-tenboshi.com/tenboshi/numata.html"
 }

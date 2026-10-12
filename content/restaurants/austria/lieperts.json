@@ -24,5 +24,12 @@
   "chef": "Manuel Liepert",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 159 €)",
+  "lunch": 179,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Fri–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
+  "lunchWine": 59,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lieperts.at/fine-dining-suedsteiermark/",
   "cuisineDe": "Moderne Küche"
 }

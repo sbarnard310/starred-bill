@@ -20,6 +20,12 @@
   "dinner": 24000,
   "dinnerNoteJa": "天ぷらコース（最安値）・税サ込",
   "source": "https://www.shunsaiten-tsuchiya.com/",
+  "lunch": 10000,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu · Tue–Sat",
+  "lunchNoteJa": "ランチコース・火〜土",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.shunsaiten-tsuchiya.com/",
   "bookingWindow": {
     "type": "monthly",
     "day": 1,

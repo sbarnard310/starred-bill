@@ -21,6 +21,12 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 95)",
+  "lunch": 69,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu · Wed–Sat",
+  "lunchNoteNl": "Lunchmenu · wo–za",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.wiesen-restaurant.nl/menu-wiesen",
   "cuisineNl": "Frans",
   "chef": "Yuri Wiesen",
   "chefSource": "press"

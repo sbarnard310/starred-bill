@@ -29,5 +29,13 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 75)",
   "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 75)",
+  "lunch": 135,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
+  "lunchNoteFr": "Même menu le midi · mer.–sam.",
+  "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.myswitzerland.com/en-us/experiences/food-wine/restaurant/les-montagnards-le-sommet/",
   "cuisineIt": "Moderna"
 }

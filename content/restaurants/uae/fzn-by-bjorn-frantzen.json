@@ -27,6 +27,9 @@
     "halal"
   ],
   "dinnerNoteAr": "قائمة تذوق",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteAr": "العشاء فقط",
   "chef": "Björn Frantzén and Torsten Vildgaard",
   "chefSource": "press"
 }

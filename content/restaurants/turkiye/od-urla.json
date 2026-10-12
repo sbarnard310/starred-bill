@@ -26,6 +26,13 @@
   "chef": "Osman Sezener",
   "chefSource": "michelin",
   "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 5,350 itibarıyla)",
+  "lunch": 6250,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sun",
+  "lunchNoteTr": "Öğlen de aynı menü · Sal–Paz",
+  "lunchWine": 5250,
+  "lunchSourceType": "site",
+  "lunchSource": "https://cms.odurla.com/uploads/WEB_Sefin_Yolculugu_Tadim_Menuesue_Temmuz_2026_27592aea4e.pdf",
   "cuisineTr": "Modern Mutfak",
   "areaTr": "İzmir"
 }

@@ -20,5 +20,8 @@
   "michelinId": "1218213",
   "chef": "Poul Andrias Ziska",
   "chefSource": "michelin",
-  "dinnerNoteDa": "Smagsmenu"
+  "dinnerNoteDa": "Smagsmenu",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDa": "Kun middag"
 }

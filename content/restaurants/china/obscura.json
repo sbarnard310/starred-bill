@@ -14,6 +14,9 @@
   "lng": 121.4426408,
   "michelinId": "1196363",
   "dinnerNoteZhs": "人均消费",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteZhs": "仅供应晚餐",
   "cuisineZhs": "创新菜",
   "chef": "DeAille Tam and Simon Wong",
   "chefSource": "press"

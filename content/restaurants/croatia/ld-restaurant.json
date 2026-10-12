@@ -26,5 +26,12 @@
   "chef": "Marko Gajski",
   "chefSource": "site",
   "dinnerNoteHr": "Degustacijski meni (ostali meniji od 160 €)",
+  "lunch": 195,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Sat–Sun",
+  "lunchNoteHr": "Isti meni za ručak · sub–ned",
+  "lunchWine": 125,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.ldrestaurant.com/tasting-menu",
   "areaHr": "Korčula"
 }

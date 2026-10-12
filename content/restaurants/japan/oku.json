@@ -21,6 +21,8 @@
   "dinnerNoteJa": "鮨おまかせ",
   "sourceType": "site",
   "source": "https://www.sushioku.com/reservations",
+  "lunchNote": "Open for lunch · Wed, Sat",
+  "lunchNoteJa": "ランチ営業あり・水, 土",
   "lat": 35.718054,
   "lng": 139.79312,
   "placeId": "ChIJwbn3eVKPGGARm29oMa6ZjeI",

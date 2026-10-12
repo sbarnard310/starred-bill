@@ -22,6 +22,9 @@
     "halal"
   ],
   "dinnerNoteZhs": "人均消费",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteZhs": "仅供应晚餐",
   "cuisineZhs": "时尚法国菜",
   "chef": "Johnny Pham",
   "chefSource": "press"

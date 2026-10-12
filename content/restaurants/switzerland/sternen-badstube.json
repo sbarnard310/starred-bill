@@ -29,5 +29,13 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 53)",
   "cuisineFr": "Cuisine classique",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 53)",
+  "lunch": 79,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Tue–Sat",
+  "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
+  "lunchNoteFr": "Même menu le midi · mar.–sam.",
+  "lunchNoteIt": "Stesso menu a pranzo · mar–sab",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.sternenwangen.ch/en/zuerich-geht-aus-2018-2019.pdf",
   "cuisineIt": "Classica"
 }

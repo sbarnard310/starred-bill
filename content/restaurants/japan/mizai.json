@@ -21,5 +21,8 @@
   "chefSource": "michelin",
   "dinner": 78000,
   "dinnerNoteJa": "懐石コース・税込",
-  "source": "https://tabelog.com/en/kyoto/A2601/A260301/26002279/"
+  "source": "https://tabelog.com/en/kyoto/A2601/A260301/26002279/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ"
 }

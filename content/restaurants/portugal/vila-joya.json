@@ -24,5 +24,11 @@
   "chef": "Dieter Koschina",
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação",
+  "lunch": 290,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch",
+  "lunchNotePt": "O mesmo menu ao almoço",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.vilajoya.com/restaurant/",
   "cuisinePt": "Moderna"
 }

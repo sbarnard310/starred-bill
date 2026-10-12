@@ -19,6 +19,13 @@
   "placeId": "ChIJV1i3CmXzAGARa9IlJ_agcIA",
   "dinner": 22990,
   "source": "https://omakaseje.com/restaurants/sy198489",
+  "lunch": 8800,
+  "lunchType": "menu",
+  "lunchNote": "Lunch menu · Saturdays",
+  "lunchNoteJa": "ランチコース・土曜日",
+  "lunchWine": 6800,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.y-unico.jp/menu.html",
   "michelinId": "1194638",
   "diets": [
     "vegetarian",

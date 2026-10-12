@@ -16,6 +16,8 @@
   "wine": 250,
   "sourceType": "press",
   "source": "https://www.exploretock.com/theinnatlittlewashington",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
   "website": "https://www.theinnatlittlewashington.com/",
   "lat": 38.7134767,
   "lng": -78.1595348,

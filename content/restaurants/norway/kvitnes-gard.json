@@ -24,5 +24,8 @@
   ],
   "chef": "Halvar Ellingsen",
   "chefSource": "michelin",
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere"
+  "dinnerNoteNb": "Smaksmeny; prisen legges til senere",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteNb": "Kun middag"
 }

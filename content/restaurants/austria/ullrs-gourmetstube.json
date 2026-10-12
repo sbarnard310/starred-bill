@@ -25,5 +25,8 @@
   "chef": "Erkan Cakir",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ"
 }

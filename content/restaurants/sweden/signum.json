@@ -25,5 +25,12 @@
   "chef": "Thomas Sjögren",
   "chefSource": "michelin",
   "dinnerNoteSv": "Avsmakningsmeny, cirka 18 serveringar",
-  "wine": 2000
+  "wine": 2000,
+  "lunch": 3500,
+  "lunchType": "menu",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteSv": "Samma meny till lunch · lördag",
+  "lunchWine": 2000,
+  "lunchSourceType": "site",
+  "lunchSource": "https://restaurantsignum.com/meny"
 }

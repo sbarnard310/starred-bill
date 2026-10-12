@@ -21,5 +21,8 @@
   "chefSource": "press",
   "dinner": 20000,
   "dinnerNoteJa": "食べログの価格帯 20,000～29,999円",
-  "source": "https://tabelog.com/en/kyoto/A2601/A260202/26027469/"
+  "source": "https://tabelog.com/en/kyoto/A2601/A260202/26027469/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteJa": "ディナーのみ"
 }

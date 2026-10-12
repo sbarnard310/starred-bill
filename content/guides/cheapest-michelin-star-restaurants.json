@@ -1,8 +1,8 @@
 {
   "id": "cheapest-michelin-star-restaurants",
-  "title": "The Cheapest Michelin Star Meals in the World (2026 Prices)",
-  "description": "The cheapest Michelin star meals in the world, ranked in US dollars: starred noodle bowls from about $6, plus the cheapest two- and three-star lunches.",
-  "h1": "The Cheapest Michelin Star Meals in the World",
+  "title": "The Cheapest Michelin Star Restaurants in the World ({{guideYear}})",
+  "description": "The cheapest Michelin star restaurants in the world, in US dollars: starred noodle bowls from about $6, and the cheapest two- and three-star lunches.",
+  "h1": "The Cheapest Michelin Star Restaurants and Meals in the World",
   "summary": "Every starred restaurant ranked by its cheapest meal, from hawker bowls to three-star set lunches.",
   "section": "less",
   "figure": "Starred meals from {{cheapUSD}}",

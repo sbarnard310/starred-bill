@@ -34,27 +34,32 @@
       "id": "spain-andorra",
       "name": "MICHELIN Guide Spain & Andorra",
       "nameEs": "Guía MICHELIN España & Andorra",
+      "nameCa": "Guia MICHELIN Espanya i Andorra",
       "places": ["spain", "andorra"],
       "usual": "November",
       "usualEs": "en noviembre",
+      "usualCa": "al novembre",
       "results": {"page": "michelin-guide-spain", "short": "Spain", "area": "Spain and Andorra", "lang": "en-US", "plural": true, "published": "2026-10-09", "keywords": ["michelin guide spain"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
-      "next": {"date": "2026-11-24", "edition": 2027, "where": "the Palacio de Congresos, Huesca", "whereEs": "Palacio de Congresos de Huesca", "source": "https://www.thegourmetjournal.com/noticias/la-gala-michelin-2027-sera-en-huesca/"},
+      "next": {"date": "2026-11-24", "edition": 2027, "where": "the Palacio de Congresos, Huesca", "whereCa": "Palau de Congressos d'Osca", "whereEs": "Palacio de Congresos de Huesca", "source": "https://www.thegourmetjournal.com/noticias/la-gala-michelin-2027-sera-en-huesca/"},
       "ceremonies": [
-        {"date": "2025-11-25", "edition": 2026, "where": "SOHRLIN Andalucía, Málaga", "source": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todo-sobre-la-guia-michelin-espana-andorra-2026"}
+        {"date": "2025-11-25", "edition": 2026, "where": "SOHRLIN Andalucía, Málaga", "whereCa": "SOHRLIN Andalucía, Màlaga", "source": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todo-sobre-la-guia-michelin-espana-andorra-2026"}
       ]
     },
     {
       "id": "portugal",
       "name": "MICHELIN Guide Portugal",
+      "namePt": "Guia MICHELIN Portugal",
       "places": ["portugal"],
       "usual": "February or March",
+      "usualPt": "em fevereiro ou março",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "note": "Michelin has said the 2027 ceremony will be held in Portugal's Centro region.",
+      "notePt": "A Michelin já anunciou que a gala de 2027 será na região Centro de Portugal.",
       "ceremonies": [
-        {"date": "2026-03-10", "where": "the Savoy Palace, Funchal, Madeira", "source": "https://guide.michelin.com/pt/pt_PT/article/news-and-views/madeira-anfitria-da-gala-do-guia-michelin-portugal-2026"},
+        {"date": "2026-03-10", "where": "the Savoy Palace, Funchal, Madeira", "wherePt": "Savoy Palace, Funchal, Madeira", "source": "https://guide.michelin.com/pt/pt_PT/article/news-and-views/madeira-anfitria-da-gala-do-guia-michelin-portugal-2026"},
         {"date": "2025-02-17", "source": "https://guide.michelin.com/pt/pt_PT/article/michelin-guide-ceremony/descubra-ao-vivo-as-novas-estrelas-do-guia-michelin-portugal-2025"}
       ]
     },
@@ -127,21 +132,25 @@
       "name": "MICHELIN Guide Belgium & Luxembourg",
       "nameFr": "Guide MICHELIN Belgique & Luxembourg",
       "nameDe": "Guide MICHELIN Belgien & Luxemburg",
+      "nameNl": "Michelingids België & Luxemburg",
       "places": ["belgium", "luxembourg"],
       "usual": "April or May",
       "usualFr": "en avril ou en mai",
       "usualDe": "im April oder Mai",
+      "usualNl": "in april of mei",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2026-05-04", "where": "the Handelsbeurs, Antwerp", "whereFr": "Handelsbeurs, Anvers", "whereDe": "Handelsbeurs, Antwerpen", "source": "https://guide.michelin.com/be/fr/article/news-and-views/anvers-ville-hote-de-la-ceremonie-du-guide-michelin"}
+        {"date": "2026-05-04", "where": "the Handelsbeurs, Antwerp", "whereNl": "Handelsbeurs, Antwerpen", "whereFr": "Handelsbeurs, Anvers", "whereDe": "Handelsbeurs, Antwerpen", "source": "https://guide.michelin.com/be/fr/article/news-and-views/anvers-ville-hote-de-la-ceremonie-du-guide-michelin"}
       ]
     },
     {
       "id": "netherlands",
       "name": "MICHELIN Guide Netherlands",
+      "nameNl": "Michelingids Nederland",
       "places": ["netherlands"],
       "usual": "early October",
+      "usualNl": "begin oktober",
       "results": {"page": "michelin-guide-netherlands", "short": "Netherlands", "area": "the Netherlands", "lang": "en-US", "published": "2026-10-09", "keywords": ["michelin guide netherlands"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
@@ -153,20 +162,37 @@
     {
       "id": "nordic-countries",
       "name": "MICHELIN Guide Nordic Countries",
+      "nameDa": "Guide MICHELIN Norden",
+      "nameSv": "Guide MICHELIN Norden",
+      "nameNb": "Guide MICHELIN Norden",
+      "nameFi": "MICHELIN-opas Pohjoismaat",
+      "nameIs": "MICHELIN-handbókin fyrir Norðurlöndin",
       "places": ["denmark", "sweden", "norway", "finland", "iceland"],
       "usual": "June",
+      "usualDa": "i juni",
+      "usualSv": "i juni",
+      "usualNb": "i juni",
+      "usualFi": "kesäkuussa",
+      "usualIs": "í júní",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "note": "One ceremony covers Denmark, Sweden, Norway, Finland and Iceland.",
+      "noteDa": "Én ceremoni dækker Danmark, Sverige, Norge, Finland og Island.",
+      "noteSv": "En gemensam gala för Danmark, Sverige, Norge, Finland och Island.",
+      "noteNb": "Én seremoni dekker Danmark, Sverige, Norge, Finland og Island.",
+      "noteFi": "Sama gaala kattaa Tanskan, Ruotsin, Norjan, Suomen ja Islannin.",
+      "noteIs": "Ein athöfn nær yfir Danmörku, Svíþjóð, Noreg, Finnland og Ísland.",
       "ceremonies": [
-        {"date": "2026-06-01", "where": "Tivoli Gardens, Copenhagen", "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-nordic-denmark-finland-iceland-norway-sweden-2026-new-stars-bib-gourmands-special-awards"}
+        {"date": "2026-06-01", "where": "Tivoli Gardens, Copenhagen", "whereDa": "Tivoli, København", "whereSv": "Tivoli, Köpenhamn", "whereNb": "Tivoli, København", "whereFi": "Tivoli, Kööpenhamina", "whereIs": "Tívolí, Kaupmannahöfn", "source": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-nordic-denmark-finland-iceland-norway-sweden-2026-new-stars-bib-gourmands-special-awards"}
       ]
     },
     {
       "id": "poland",
       "name": "MICHELIN Guide Poland",
+      "namePl": "Przewodnik MICHELIN Polska",
       "places": ["poland"],
       "usual": "May",
+      "usualPl": "w maju",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -176,8 +202,10 @@
     {
       "id": "czechia",
       "name": "MICHELIN Guide Czechia",
+      "nameCs": "Průvodce MICHELIN Česko",
       "places": ["czechia"],
       "usual": "December",
+      "usualCs": "v prosinci",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -187,19 +215,23 @@
     {
       "id": "hungary",
       "name": "MICHELIN Guide Hungary",
+      "nameHu": "MICHELIN Kalauz Magyarország",
       "places": ["hungary"],
       "usual": "October",
+      "usualHu": "októberben",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2025-10-09", "where": "the Hungarian State Opera, Budapest", "source": "https://guide.michelin.com/fi/en/article/michelin-guide-ceremony/the-michelin-guide-hungary-2025-is-out"}
+        {"date": "2025-10-09", "where": "the Hungarian State Opera, Budapest", "whereHu": "Magyar Állami Operaház, Budapest", "source": "https://guide.michelin.com/fi/en/article/michelin-guide-ceremony/the-michelin-guide-hungary-2025-is-out"}
       ]
     },
     {
       "id": "croatia",
       "name": "MICHELIN Guide Croatia",
+      "nameHr": "Vodič MICHELIN Hrvatska",
       "places": ["croatia"],
       "usual": "June or July",
+      "usualHr": "u lipnju ili srpnju",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -210,8 +242,10 @@
     {
       "id": "slovenia",
       "name": "MICHELIN Guide Slovenia",
+      "nameSl": "Vodnik MICHELIN Slovenija",
       "places": ["slovenia"],
       "usual": "June",
+      "usualSl": "junija",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -221,8 +255,10 @@
     {
       "id": "belgrade",
       "name": "MICHELIN Guide Belgrade",
+      "nameSr": "Водич MICHELIN Београд",
       "places": ["serbia"],
       "usual": "December",
+      "usualSr": "у децембру",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -232,12 +268,15 @@
     {
       "id": "greece",
       "name": "MICHELIN Guide Greece",
+      "nameEl": "Οδηγός MICHELIN Ελλάδα",
       "places": ["greece"],
       "usual": "the second half of the year",
+      "usualEl": "στο δεύτερο μισό του έτους",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "expected": "2026-11",
       "note": "Michelin skipped a 2025 update for Athens; its next selection adds Thessaloniki and Santorini and is due in the second half of 2026, on a date not yet announced.",
+      "noteEl": "Η Michelin δεν ανανέωσε την επιλογή της Αθήνας το 2025· η επόμενη προσθέτει τη Θεσσαλονίκη και τη Σαντορίνη και αναμένεται στο δεύτερο μισό του 2026, σε ημερομηνία που δεν έχει ακόμη ανακοινωθεί.",
       "ceremonies": [
         {"date": "2024-12-18", "source": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-athens-2024-unveils-its-new-selection"}
       ]
@@ -245,11 +284,14 @@
     {
       "id": "malta",
       "name": "MICHELIN Guide Malta",
+      "nameMt": "Gwida MICHELIN Malta",
       "places": ["malta"],
       "usual": "February",
+      "usualMt": "fi Frar",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "note": "In 2026 the stars were published on 17 February and presented to the chefs at The Phoenicia Malta on 18 March.",
+      "noteMt": "Fl-2026 l-istilel ġew ippubblikati fis-17 ta' Frar u ġew ippreżentati lill-koki f'The Phoenicia Malta fit-18 ta' Marzu.",
       "ceremonies": [
         {"date": "2026-02-17", "source": "https://mta.com.mt/news/2026-michelin-guide-malta-presentation/"}
       ]
@@ -257,8 +299,10 @@
     {
       "id": "estonia",
       "name": "MICHELIN Guide Estonia",
+      "nameEt": "MICHELINi juht Eesti",
       "places": ["estonia"],
       "usual": "May",
+      "usualEt": "mais",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -268,20 +312,24 @@
     {
       "id": "latvia",
       "name": "MICHELIN Guide Latvia",
+      "nameLv": "MICHELIN ceļvedis Latvija",
       "places": ["latvia"],
       "usual": "October",
+      "usualLv": "oktobrī",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2025-10-22", "where": "Kokaru Hall, Mežaparks, Riga", "source": "https://guide.michelin.com/ee/en/article/michelin-guide-ceremony/the-michelin-guide-latvia-riga-2026-winners-michelin-guide-ceremony"},
+        {"date": "2025-10-22", "where": "Kokaru Hall, Mežaparks, Riga", "whereLv": "Kokaru zāle, Mežaparks, Rīga", "source": "https://guide.michelin.com/ee/en/article/michelin-guide-ceremony/the-michelin-guide-latvia-riga-2026-winners-michelin-guide-ceremony"},
         {"date": "2024-10-24", "source": "https://guide.michelin.com/lv/en/article/michelin-guide-ceremony/the-michelin-guide-latvia-riga-2025-winners-michelin-guide-ceremony"}
       ]
     },
     {
       "id": "lithuania",
       "name": "MICHELIN Guide Lithuania",
+      "nameLt": "MICHELIN gidas Lietuva",
       "places": ["lithuania"],
       "usual": "June",
+      "usualLt": "birželį",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -291,12 +339,14 @@
     {
       "id": "turkiye",
       "name": "MICHELIN Guide Türkiye",
+      "nameTr": "MICHELIN Rehberi Türkiye",
       "places": ["turkiye"],
       "usual": "November or December",
+      "usualTr": "kasım ya da aralık ayında",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2025-12-04", "where": "the Four Seasons Hotel Bosphorus, Istanbul", "source": "https://guide.michelin.com/gb/en/article/michelin-guide-ceremony/the-michelin-guide-turkiye-reveals-its-2026-restaurant-selection"}
+        {"date": "2025-12-04", "where": "the Four Seasons Hotel Bosphorus, Istanbul", "whereTr": "Four Seasons Hotel Bosphorus, İstanbul", "source": "https://guide.michelin.com/gb/en/article/michelin-guide-ceremony/the-michelin-guide-turkiye-reveals-its-2026-restaurant-selection"}
       ]
     },
     {
@@ -348,42 +398,51 @@
     {
       "id": "hong-kong-macau",
       "name": "MICHELIN Guide Hong Kong & Macau",
+      "nameZh": "香港澳門米其林指南",
+      "nameYue": "香港澳門米芝蓮指南",
       "places": ["hong-kong", "macau"],
       "usual": "March",
+      "usualZh": "3月",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2026-03-19", "where": "Grand Lisboa Palace Resort, Macau", "source": "https://guide.michelin.com/hk/zh_HK/event/michelin-guide-ceremony-hong-kong-macau-2026"}
+        {"date": "2026-03-19", "where": "Grand Lisboa Palace Resort, Macau", "whereZh": "澳門上葡京綜合度假村", "source": "https://guide.michelin.com/hk/zh_HK/event/michelin-guide-ceremony-hong-kong-macau-2026"}
       ]
     },
     {
       "id": "taiwan",
       "name": "MICHELIN Guide Taiwan",
+      "nameZh": "台灣米其林指南",
       "places": ["taiwan"],
       "usual": "July or August",
+      "usualZh": "7月或8月",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
         {"date": "2026-07-21", "source": "https://focustaiwan.tw/society/202607210025"},
-        {"date": "2025-08-19", "where": "Grand Hilai Taipei", "source": "https://guide.michelin.com/tw/en/event/mgctw2025-savethedate"}
+        {"date": "2025-08-19", "where": "Grand Hilai Taipei", "whereZh": "台北漢來大飯店", "source": "https://guide.michelin.com/tw/en/event/mgctw2025-savethedate"}
       ]
     },
     {
       "id": "seoul-busan",
       "name": "MICHELIN Guide Seoul & Busan",
+      "nameKo": "미쉐린 가이드 서울 & 부산",
       "places": ["south-korea"],
       "usual": "March",
+      "usualKo": "3월",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2026-03-05", "where": "SIGNIEL Busan", "source": "https://guide.michelin.com/sg/en/article/michelin-guide-ceremony/michelin-guide-seoul-busan-2026-highlights"}
+        {"date": "2026-03-05", "where": "SIGNIEL Busan", "whereKo": "시그니엘 부산", "source": "https://guide.michelin.com/sg/en/article/michelin-guide-ceremony/michelin-guide-seoul-busan-2026-highlights"}
       ]
     },
     {
       "id": "beijing",
       "name": "MICHELIN Guide Beijing",
+      "nameZhs": "北京米其林指南",
       "places": ["beijing"],
       "usual": "October",
+      "usualZhs": "10月",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -393,31 +452,38 @@
     {
       "id": "shanghai-jiangsu-zhejiang",
       "name": "MICHELIN Guide Shanghai, Jiangsu & Zhejiang",
+      "nameZhs": "上海、江苏、浙江米其林指南",
       "places": ["shanghai", "jiangsu", "zhejiang"],
       "usual": "April",
+      "usualZhs": "4月",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "note": "From 2026 one guide covers Shanghai, Hangzhou and the Jiangsu and Zhejiang cities.",
+      "noteZhs": "自2026年起，上海、杭州以及江苏和浙江各城市合为一本指南。",
       "ceremonies": [
-        {"date": "2026-04-09", "where": "Taizhou, Zhejiang", "source": "https://english.shanghai.gov.cn/en-TrendyStores/20260414/be194470d7e74aa98c582ae52262cbbc.html"}
+        {"date": "2026-04-09", "where": "Taizhou, Zhejiang", "whereZhs": "浙江台州", "source": "https://english.shanghai.gov.cn/en-TrendyStores/20260414/be194470d7e74aa98c582ae52262cbbc.html"}
       ]
     },
     {
       "id": "guangzhou-shenzhen",
       "name": "MICHELIN Guide Guangzhou & Shenzhen",
+      "nameZhs": "广州深圳米其林指南",
       "places": ["guangdong"],
       "usual": "August",
+      "usualZhs": "8月",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2026-08-21", "where": "Grand Hyatt Shenzhen", "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-guangzhou-shenzhen-2026-joint-release-marks-shenzhen-s-unprecedented-debut"}
+        {"date": "2026-08-21", "where": "Grand Hyatt Shenzhen", "whereZhs": "深圳君悦酒店", "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-guangzhou-shenzhen-2026-joint-release-marks-shenzhen-s-unprecedented-debut"}
       ]
     },
     {
       "id": "chengdu",
       "name": "MICHELIN Guide Chengdu",
+      "nameZhs": "成都米其林指南",
       "places": ["chengdu"],
       "usual": "September",
+      "usualZhs": "9月",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -428,8 +494,10 @@
     {
       "id": "fujian",
       "name": "MICHELIN Guide Fujian",
+      "nameZhs": "福建米其林指南",
       "places": ["fujian"],
       "usual": "November",
+      "usualZhs": "11月",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
@@ -439,49 +507,57 @@
     {
       "id": "singapore",
       "name": "MICHELIN Guide Singapore",
+      "nameZh": "新加坡米其林指南",
       "places": ["singapore"],
       "usual": "July or August",
+      "usualZh": "7月或8月",
       "results": {"page": "michelin-guide-singapore", "short": "Singapore", "area": "Singapore", "lang": "en-GB", "published": "2026-10-09", "keywords": ["michelin guide singapore"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2026-08-04", "where": "Raffles Sentosa", "source": "https://sethlui.com/michelin-guide-singapore-aug-2026/"},
-        {"date": "2025-07-24", "where": "Marina Bay Sands", "source": "https://whatsnewindonesia.com/overseas/feature/news/michelin-guide-singapore-celebrates-its-9th-edition"}
+        {"date": "2026-08-04", "where": "Raffles Sentosa", "whereZh": "聖淘沙萊佛士酒店", "source": "https://sethlui.com/michelin-guide-singapore-aug-2026/"},
+        {"date": "2025-07-24", "where": "Marina Bay Sands", "whereZh": "濱海灣金沙", "source": "https://whatsnewindonesia.com/overseas/feature/news/michelin-guide-singapore-celebrates-its-9th-edition"}
       ]
     },
     {
       "id": "thailand",
       "name": "MICHELIN Guide Thailand",
+      "nameTh": "มิชลิน ไกด์ ประเทศไทย",
       "places": ["thailand"],
       "usual": "November",
+      "usualTh": "ในเดือนพฤศจิกายน",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2025-11-27", "where": "The Ritz-Carlton, Bangkok", "source": "https://guide.michelin.com/th/en/article/michelin-guide-ceremony/save-the-date-the-michelin-guide-thailand-2026"},
-        {"date": "2024-11-28", "where": "Siam Kempinski Hotel, Bangkok", "source": "https://guide.michelin.com/th/en/article/michelin-guide-ceremony/save-the-date-michelin-guide-ceremony-thailand-2025"}
+        {"date": "2025-11-27", "where": "The Ritz-Carlton, Bangkok", "whereTh": "โรงแรมเดอะ ริทซ์-คาร์ลตัน กรุงเทพฯ", "source": "https://guide.michelin.com/th/en/article/michelin-guide-ceremony/save-the-date-the-michelin-guide-thailand-2026"},
+        {"date": "2024-11-28", "where": "Siam Kempinski Hotel, Bangkok", "whereTh": "โรงแรมสยาม เคมปินสกี้ กรุงเทพฯ", "source": "https://guide.michelin.com/th/en/article/michelin-guide-ceremony/save-the-date-michelin-guide-ceremony-thailand-2025"}
       ]
     },
     {
       "id": "kuala-lumpur-penang",
       "name": "MICHELIN Guide Kuala Lumpur & Penang",
+      "nameMs": "Panduan MICHELIN Kuala Lumpur & Pulau Pinang",
       "places": ["malaysia"],
       "usual": "November",
+      "usualMs": "pada bulan November",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2025-11-11", "where": "the Four Seasons Hotel Kuala Lumpur", "source": "https://guide.michelin.com/my/en/event/mgc-klp-save-the-date-2026"},
-        {"date": "2024-11-14", "where": "the Mandarin Oriental, Kuala Lumpur", "source": "https://guide.michelin.com/my/en/event/mgc-klp-save-the-date-2025"}
+        {"date": "2025-11-11", "where": "the Four Seasons Hotel Kuala Lumpur", "whereMs": "Four Seasons Hotel Kuala Lumpur", "source": "https://guide.michelin.com/my/en/event/mgc-klp-save-the-date-2026"},
+        {"date": "2024-11-14", "where": "the Mandarin Oriental, Kuala Lumpur", "whereMs": "Mandarin Oriental, Kuala Lumpur", "source": "https://guide.michelin.com/my/en/event/mgc-klp-save-the-date-2025"}
       ]
     },
     {
       "id": "vietnam",
       "name": "MICHELIN Guide Hanoi, Ho Chi Minh City & Da Nang",
+      "nameVi": "Sách hướng dẫn MICHELIN Hà Nội, TP. Hồ Chí Minh và Đà Nẵng",
       "places": ["vietnam"],
       "usual": "June",
+      "usualVi": "vào tháng 6",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2026-06-04", "where": "The Ascott Tay Ho, Hanoi", "source": "https://guide.michelin.com/vn/en/article/michelin-guide-ceremony/save-the-date-the-michelin-guide-vietnam-2026"}
+        {"date": "2026-06-04", "where": "The Ascott Tay Ho, Hanoi", "whereVi": "The Ascott Tây Hồ, Hà Nội", "source": "https://guide.michelin.com/vn/en/article/michelin-guide-ceremony/save-the-date-the-michelin-guide-vietnam-2026"}
       ]
     },
     {
@@ -489,45 +565,52 @@
       "name": "MICHELIN Guide Manila and Environs & Cebu",
       "places": ["philippines"],
       "usual": "October",
+      "usualFil": "tuwing Oktubre",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2025-10-30", "where": "the Manila Marriott Hotel", "source": "https://guide.michelin.com/kr/en/article/michelin-guide-ceremony/philippines-full-selection-2026"}
+        {"date": "2025-10-30", "where": "the Manila Marriott Hotel", "whereFil": "Manila Marriott Hotel", "source": "https://guide.michelin.com/kr/en/article/michelin-guide-ceremony/philippines-full-selection-2026"}
       ]
     },
     {
       "id": "dubai",
       "name": "MICHELIN Guide Dubai",
+      "nameAr": "دليل ميشلان دبي",
       "places": ["dubai"],
       "usual": "October (May until 2025)",
+      "usualAr": "في أكتوبر (وفي مايو حتى 2025)",
       "results": {"page": "michelin-guide-dubai", "short": "Dubai", "area": "Dubai", "lang": "en-GB", "published": "2026-10-09", "keywords": ["michelin guide dubai"]},
       "checked": "2026-10",
       "starsUpdated": "2026-10-09",
       "ceremonies": [
-        {"date": "2026-10-06", "where": "Atlantis The Royal", "source": "https://gulfnews.com/uae/michelin-guide-dubai-announces-fifth-edition-ceremony-on-october-6-1.500666935"},
-        {"date": "2025-05-22", "where": "Address Sky View", "source": "https://guide.michelin.com/ae-du/en/article/michelin-guide-ceremony/full-list-michelin-guide-dubai-selection"}
+        {"date": "2026-10-06", "where": "Atlantis The Royal", "whereAr": "أتلانتس ذا رويال", "source": "https://gulfnews.com/uae/michelin-guide-dubai-announces-fifth-edition-ceremony-on-october-6-1.500666935"},
+        {"date": "2025-05-22", "where": "Address Sky View", "whereAr": "أدرس سكاي فيو", "source": "https://guide.michelin.com/ae-du/en/article/michelin-guide-ceremony/full-list-michelin-guide-dubai-selection"}
       ]
     },
     {
       "id": "abu-dhabi",
       "name": "MICHELIN Guide Abu Dhabi",
+      "nameAr": "دليل ميشلان أبوظبي",
       "places": ["abu-dhabi"],
       "usual": "October",
+      "usualAr": "في أكتوبر",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2025-10-23", "where": "Emirates Palace Mandarin Oriental", "source": "https://guide.michelin.com/ae-az/en/article/michelin-guide-ceremony/just-unveiled-the-michelin-guide-abu-dhabi-2026"}
+        {"date": "2025-10-23", "where": "Emirates Palace Mandarin Oriental", "whereAr": "قصر الإمارات مندارين أورينتال", "source": "https://guide.michelin.com/ae-az/en/article/michelin-guide-ceremony/just-unveiled-the-michelin-guide-abu-dhabi-2026"}
       ]
     },
     {
       "id": "doha",
       "name": "MICHELIN Guide Doha",
+      "nameAr": "دليل ميشلان الدوحة",
       "places": ["qatar"],
       "usual": "December",
+      "usualAr": "في ديسمبر",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2025-12-09", "where": "The St. Regis Doha", "source": "https://guide.michelin.com/qa/en/article/michelin-guide-ceremony/michelin-guide-doha-2026"}
+        {"date": "2025-12-09", "where": "The St. Regis Doha", "whereAr": "سانت ريجيس الدوحة", "source": "https://guide.michelin.com/qa/en/article/michelin-guide-ceremony/michelin-guide-doha-2026"}
       ]
     },
     {
@@ -705,13 +788,15 @@
     {
       "id": "rio-sao-paulo",
       "name": "MICHELIN Guide Rio de Janeiro & São Paulo",
+      "namePt": "Guia MICHELIN Rio de Janeiro & São Paulo",
       "places": ["brazil"],
       "usual": "April or May",
+      "usualPt": "em abril ou maio",
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2026-04-13", "where": "the Copacabana Palace, Rio de Janeiro", "source": "https://guide.michelin.com/br/pt_BR/article/news-and-views/descubra-o-guia-michelin-rio-de-janeiro-sao-paulo-2026-ao-vivo"},
-        {"date": "2025-05-12", "where": "the Rosewood, São Paulo", "source": "https://guide.michelin.com/br/pt_BR/article/news-and-views/a-cidade-do-rio-de-janeiro-sera-a-sede-da-gala-do-guia-michelin"}
+        {"date": "2026-04-13", "where": "the Copacabana Palace, Rio de Janeiro", "wherePt": "Copacabana Palace, Rio de Janeiro", "source": "https://guide.michelin.com/br/pt_BR/article/news-and-views/descubra-o-guia-michelin-rio-de-janeiro-sao-paulo-2026-ao-vivo"},
+        {"date": "2025-05-12", "where": "the Rosewood, São Paulo", "wherePt": "Rosewood São Paulo", "source": "https://guide.michelin.com/br/pt_BR/article/news-and-views/a-cidade-do-rio-de-janeiro-sera-a-sede-da-gala-do-guia-michelin"}
       ]
     },
     {

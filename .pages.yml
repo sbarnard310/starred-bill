@@ -2100,6 +2100,91 @@ content:
           - name: noteJa
             label: Note in Japanese
             type: text
+          - { name: nameNl, label: Guide name in Dutch, type: string }
+          - { name: usualNl, label: Usual month in Dutch, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteNl, label: Note in Dutch, type: text }
+          - { name: namePt, label: Guide name in Portuguese, type: string }
+          - { name: usualPt, label: Usual month in Portuguese, description: 'With its preposition, if the language uses one', type: string }
+          - { name: notePt, label: Note in Portuguese, type: text }
+          - { name: nameCa, label: Guide name in Catalan, type: string }
+          - { name: usualCa, label: Usual month in Catalan, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteCa, label: Note in Catalan, type: text }
+          - { name: nameDa, label: Guide name in Danish, type: string }
+          - { name: usualDa, label: Usual month in Danish, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteDa, label: Note in Danish, type: text }
+          - { name: nameSv, label: Guide name in Swedish, type: string }
+          - { name: usualSv, label: Usual month in Swedish, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteSv, label: Note in Swedish, type: text }
+          - { name: nameNb, label: Guide name in Norwegian, type: string }
+          - { name: usualNb, label: Usual month in Norwegian, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteNb, label: Note in Norwegian, type: text }
+          - { name: nameFi, label: Guide name in Finnish, type: string }
+          - { name: usualFi, label: Usual month in Finnish, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteFi, label: Note in Finnish, type: text }
+          - { name: nameIs, label: Guide name in Icelandic, type: string }
+          - { name: usualIs, label: Usual month in Icelandic, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteIs, label: Note in Icelandic, type: text }
+          - { name: namePl, label: Guide name in Polish, type: string }
+          - { name: usualPl, label: Usual month in Polish, description: 'With its preposition, if the language uses one', type: string }
+          - { name: notePl, label: Note in Polish, type: text }
+          - { name: nameCs, label: Guide name in Czech, type: string }
+          - { name: usualCs, label: Usual month in Czech, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteCs, label: Note in Czech, type: text }
+          - { name: nameHu, label: Guide name in Hungarian, type: string }
+          - { name: usualHu, label: Usual month in Hungarian, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteHu, label: Note in Hungarian, type: text }
+          - { name: nameSl, label: Guide name in Slovenian, type: string }
+          - { name: usualSl, label: Usual month in Slovenian, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteSl, label: Note in Slovenian, type: text }
+          - { name: nameHr, label: Guide name in Croatian, type: string }
+          - { name: usualHr, label: Usual month in Croatian, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteHr, label: Note in Croatian, type: text }
+          - { name: nameSr, label: Guide name in Serbian, type: string }
+          - { name: usualSr, label: Usual month in Serbian, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteSr, label: Note in Serbian, type: text }
+          - { name: nameEl, label: Guide name in Greek, type: string }
+          - { name: usualEl, label: Usual month in Greek, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteEl, label: Note in Greek, type: text }
+          - { name: nameTr, label: Guide name in Turkish, type: string }
+          - { name: usualTr, label: Usual month in Turkish, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteTr, label: Note in Turkish, type: text }
+          - { name: nameLt, label: Guide name in Lithuanian, type: string }
+          - { name: usualLt, label: Usual month in Lithuanian, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteLt, label: Note in Lithuanian, type: text }
+          - { name: nameLv, label: Guide name in Latvian, type: string }
+          - { name: usualLv, label: Usual month in Latvian, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteLv, label: Note in Latvian, type: text }
+          - { name: nameEt, label: Guide name in Estonian, type: string }
+          - { name: usualEt, label: Usual month in Estonian, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteEt, label: Note in Estonian, type: text }
+          - { name: nameMt, label: Guide name in Maltese, type: string }
+          - { name: usualMt, label: Usual month in Maltese, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteMt, label: Note in Maltese, type: text }
+          - { name: nameZh, label: Guide name in Chinese, type: string }
+          - { name: usualZh, label: Usual month in Chinese, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteZh, label: Note in Chinese, type: text }
+          - { name: nameYue, label: Guide name in Cantonese, type: string }
+          - { name: nameZhs, label: Guide name in Simplified Chinese, type: string }
+          - { name: usualZhs, label: Usual month in Simplified Chinese, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteZhs, label: Note in Simplified Chinese, type: text }
+          - { name: nameKo, label: Guide name in Korean, type: string }
+          - { name: usualKo, label: Usual month in Korean, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteKo, label: Note in Korean, type: text }
+          - { name: nameTh, label: Guide name in Thai, type: string }
+          - { name: usualTh, label: Usual month in Thai, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteTh, label: Note in Thai, type: text }
+          - { name: nameMs, label: Guide name in Malay, type: string }
+          - { name: usualMs, label: Usual month in Malay, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteMs, label: Note in Malay, type: text }
+          - { name: nameFil, label: Guide name in Filipino, type: string }
+          - { name: usualFil, label: Usual month in Filipino, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteFil, label: Note in Filipino, type: text }
+          - { name: nameVi, label: Guide name in Vietnamese, type: string }
+          - { name: usualVi, label: Usual month in Vietnamese, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteVi, label: Note in Vietnamese, type: text }
+          - { name: nameAr, label: Guide name in Arabic, type: string }
+          - { name: usualAr, label: Usual month in Arabic, description: 'With its preposition, if the language uses one', type: string }
+          - { name: noteAr, label: Note in Arabic, type: text }
           - name: starsUpdated
             label: Our stars updated
             description: The day our restaurant files caught up with this guide's latest stars (year-month-day). Until then the page says "We're updating our pages".
@@ -2133,6 +2218,34 @@ content:
               - { name: whereIt, label: Where in Italian (if the English name won't do), type: string }
               - { name: whereDe, label: Where in German (if the English name won't do), type: string }
               - { name: whereJa, label: Where in Japanese (if the English name won't do), type: string }
+              - { name: whereNl, label: Where in Dutch (if the English name won't do), type: string }
+              - { name: wherePt, label: Where in Portuguese (if the English name won't do), type: string }
+              - { name: whereCa, label: Where in Catalan (if the English name won't do), type: string }
+              - { name: whereDa, label: Where in Danish (if the English name won't do), type: string }
+              - { name: whereSv, label: Where in Swedish (if the English name won't do), type: string }
+              - { name: whereNb, label: Where in Norwegian (if the English name won't do), type: string }
+              - { name: whereFi, label: Where in Finnish (if the English name won't do), type: string }
+              - { name: whereIs, label: Where in Icelandic (if the English name won't do), type: string }
+              - { name: wherePl, label: Where in Polish (if the English name won't do), type: string }
+              - { name: whereCs, label: Where in Czech (if the English name won't do), type: string }
+              - { name: whereHu, label: Where in Hungarian (if the English name won't do), type: string }
+              - { name: whereSl, label: Where in Slovenian (if the English name won't do), type: string }
+              - { name: whereHr, label: Where in Croatian (if the English name won't do), type: string }
+              - { name: whereSr, label: Where in Serbian (if the English name won't do), type: string }
+              - { name: whereEl, label: Where in Greek (if the English name won't do), type: string }
+              - { name: whereTr, label: Where in Turkish (if the English name won't do), type: string }
+              - { name: whereLt, label: Where in Lithuanian (if the English name won't do), type: string }
+              - { name: whereLv, label: Where in Latvian (if the English name won't do), type: string }
+              - { name: whereEt, label: Where in Estonian (if the English name won't do), type: string }
+              - { name: whereMt, label: Where in Maltese (if the English name won't do), type: string }
+              - { name: whereZh, label: Where in Chinese (if the English name won't do), type: string }
+              - { name: whereZhs, label: Where in Simplified Chinese (if the English name won't do), type: string }
+              - { name: whereKo, label: Where in Korean (if the English name won't do), type: string }
+              - { name: whereTh, label: Where in Thai (if the English name won't do), type: string }
+              - { name: whereMs, label: Where in Malay (if the English name won't do), type: string }
+              - { name: whereFil, label: Where in Filipino (if the English name won't do), type: string }
+              - { name: whereVi, label: Where in Vietnamese (if the English name won't do), type: string }
+              - { name: whereAr, label: Where in Arabic (if the English name won't do), type: string }
               - { name: online, label: Online only (no ceremony), type: boolean }
               - { name: source, label: Source link, type: string }
           - name: ceremonies
@@ -2148,5 +2261,33 @@ content:
               - { name: whereIt, label: Where in Italian (if the English name won't do), type: string }
               - { name: whereDe, label: Where in German (if the English name won't do), type: string }
               - { name: whereJa, label: Where in Japanese (if the English name won't do), type: string }
+              - { name: whereNl, label: Where in Dutch (if the English name won't do), type: string }
+              - { name: wherePt, label: Where in Portuguese (if the English name won't do), type: string }
+              - { name: whereCa, label: Where in Catalan (if the English name won't do), type: string }
+              - { name: whereDa, label: Where in Danish (if the English name won't do), type: string }
+              - { name: whereSv, label: Where in Swedish (if the English name won't do), type: string }
+              - { name: whereNb, label: Where in Norwegian (if the English name won't do), type: string }
+              - { name: whereFi, label: Where in Finnish (if the English name won't do), type: string }
+              - { name: whereIs, label: Where in Icelandic (if the English name won't do), type: string }
+              - { name: wherePl, label: Where in Polish (if the English name won't do), type: string }
+              - { name: whereCs, label: Where in Czech (if the English name won't do), type: string }
+              - { name: whereHu, label: Where in Hungarian (if the English name won't do), type: string }
+              - { name: whereSl, label: Where in Slovenian (if the English name won't do), type: string }
+              - { name: whereHr, label: Where in Croatian (if the English name won't do), type: string }
+              - { name: whereSr, label: Where in Serbian (if the English name won't do), type: string }
+              - { name: whereEl, label: Where in Greek (if the English name won't do), type: string }
+              - { name: whereTr, label: Where in Turkish (if the English name won't do), type: string }
+              - { name: whereLt, label: Where in Lithuanian (if the English name won't do), type: string }
+              - { name: whereLv, label: Where in Latvian (if the English name won't do), type: string }
+              - { name: whereEt, label: Where in Estonian (if the English name won't do), type: string }
+              - { name: whereMt, label: Where in Maltese (if the English name won't do), type: string }
+              - { name: whereZh, label: Where in Chinese (if the English name won't do), type: string }
+              - { name: whereZhs, label: Where in Simplified Chinese (if the English name won't do), type: string }
+              - { name: whereKo, label: Where in Korean (if the English name won't do), type: string }
+              - { name: whereTh, label: Where in Thai (if the English name won't do), type: string }
+              - { name: whereMs, label: Where in Malay (if the English name won't do), type: string }
+              - { name: whereFil, label: Where in Filipino (if the English name won't do), type: string }
+              - { name: whereVi, label: Where in Vietnamese (if the English name won't do), type: string }
+              - { name: whereAr, label: Where in Arabic (if the English name won't do), type: string }
               - { name: online, label: Online only (no ceremony), type: boolean }
               - { name: source, label: Source link, type: string }

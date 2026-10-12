@@ -1,6 +1,7 @@
 .claude/
 .DS_Store
 _site/
+_build/
 scripts/*-export.json
 scripts/michelin-details.json
 scripts/chef-review.json

@@ -4,9 +4,9 @@ in Tokyo, dinner under ¥40,000", "vegan options in London"), and this emails th
 
 Each search (a row in `saved_searches`, supabase/saved-searches.sql) holds its `query` (the keys are below, in
 matches()), the restaurants that matched at the last check (`seen`) and the site's commit then (`checked_commit`). Each
-run works out today's matches from the build (_site/data/searches.json, write_search_data() in build.py); a restaurant
-that matches now but didn't before is news when its own file changed since that commit in a way that makes it match: a
-new star, a lower price, a price now listed, a new dietary option, a new cuisine label, or a restaurant new to our pages.
+run works out today's matches from the build (_build/searches.json, write_search_data() in build.py, not published); a
+restaurant that matches now but didn't before is news when its own file changed since that commit in a way that makes
+it match: a new star, a lower price, a price now listed, a new dietary option, a new cuisine label, or a restaurant new to our pages.
 Ones that match only because an exchange rate moved are noted quietly, with no email. A new search's first check just
 records its matches. At most one of these emails a member a day, holding every search with news (email_sent topic
 'searches@<day>'), and at most RUN_MAX a run, shared with the star emails' Resend allowance. Standard library only,
@@ -311,9 +311,9 @@ def main():
     ap.add_argument("--max", type=int, default=RUN_MAX, help=f"most emails this run (default {RUN_MAX})")
     args = ap.parse_args()
 
-    data_file = ROOT / "_site" / "data" / "searches.json"
+    data_file = ROOT / "_build" / "searches.json"
     if not data_file.exists():
-        sys.exit("Run python3 build.py first: the restaurants come from _site/data/searches.json.")
+        sys.exit("Run python3 build.py first: the restaurants come from _build/searches.json.")
     data = Data(json.loads(data_file.read_text("utf-8")))
     if args.preview:
         if not args.query:

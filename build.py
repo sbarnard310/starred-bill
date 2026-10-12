@@ -24,6 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 CONTENT, SRC, OUT = ROOT / "content", ROOT / "src", ROOT / "_site"
+SEARCH_DATA = ROOT / "_build" / "searches.json"  # for scripts/saved_searches.py only, never published
 SITE_URL = "https://starredbill.com"
 # IndexNow (Bing, Yandex, Naver, Seznam…): the key is public by design; IndexNow checks it at /<key>.txt before taking a
 # list of changed pages from scripts/indexnow.py (run by .github/workflows/indexnow.yml after each publish).
@@ -3602,10 +3603,11 @@ def build_compare(starred):
 
 
 # ---------- Saved searches (10 Oct 2026) ----------
-# _site/data/searches.json: every starred restaurant as scripts/saved_searches.py needs it to check members' saved
+# _build/searches.json: every starred restaurant as scripts/saved_searches.py needs it to check members' saved
 # searches (supabase/saved-searches.sql) after each build: its stars, cuisine, dietary options and prices, and every page
 # it's listed on (`in`: its places, the groups holding them and its cuisine page), so a search saved on any destination
-# page matches what that page lists. No page loads it; everything in it is already public on the destination pages.
+# page matches what that page lists. No page loads it, so it's written outside _site and never published (12 Oct 2026):
+# it was the site's biggest file and a one-click copy of the whole restaurant list.
 def write_search_data(starred):
     groups = [p for p in pages if p["type"] == "group"]
     cuisine_pages = [p for p in pages if p["type"] == "cuisine"]
@@ -3620,8 +3622,8 @@ def write_search_data(starred):
              r.get("lunch") if not r.get("noLunch") and (r.get("lunch") or 0) > 0 else None,
              r.get("wine"), r.get("lunchWine"), area_key(r), listed_on(r), restaurant_href(r), near_where(r), source_files[r["id"]]]
             for r in starred]
-    (OUT / "data").mkdir(exist_ok=True)
-    (OUT / "data" / "searches.json").write_text(as_json({
+    SEARCH_DATA.parent.mkdir(exist_ok=True)
+    SEARCH_DATA.write_text(as_json({
         "currencies": {k: [v["perUSD"], v["symbol"]] for k, v in CURRENCIES.items()},
         "pages": {p["id"]: [p["name"], p["path"]] for p in pages},
         "cols": cols, "rows": rows}), "utf-8")

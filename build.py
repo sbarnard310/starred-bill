@@ -536,15 +536,17 @@ for path in sorted((CONTENT / "guide-translations").glob("*/*.json")) if (CONTEN
 # marked in HOURS_GOOGLE; Google records every sitting, so their times are always shown. Where neither has any (hotel
 # dining rooms, most of mainland China), the restaurant's own website, its hotel's or another page that states them
 # (content/opening-hours-sites.json, 12 Oct 2026): HOURS_SITE gives each one's page {"url", "type": site|hotel|other},
-# and their times are shown too, except for those in its "daysOnly" (the page gave the days but not the times).
+# and their times are shown too, except for those in its "daysOnly" (the page gave the days but not the times). Those in
+# its "replacesGuide" are used instead of the guide's or Google's, where those are plainly wrong.
 HOURS, HOURS_GOOGLE, HOURS_SITE, HOURS_TIMED, HOURS_CHECKED = {}, set(), {}, set(), {}
 ids = {r["id"] for r in restaurants}
 for fname, src in (("opening-hours.json", "michelin"), ("opening-hours-google.json", "google"), ("opening-hours-sites.json", "site")):
     opening = read_json(CONTENT / fname) or {} if (CONTENT / fname).exists() else {}
     HOURS_CHECKED[src] = opening.get("checked", "")
     sources, days_only = opening.get("sources") or {}, set(opening.get("daysOnly") or [])
+    replaces = set(opening.get("replacesGuide") or [])  # hours the guide has wrong (Bingsheng's 11:00–04:00)
     for rid, week in (opening.get("hours") or {}).items():
-        if rid not in ids or rid in HOURS:
+        if rid not in ids or (rid in HOURS and rid not in replaces):
             continue  # a restaurant file renamed or removed since the hours were written (the next run drops it), or the guide has its own
         if not isinstance(week, str) or not re.fullmatch(r"(?:\d{4}-\d{4}(?:,\d{4}-\d{4})*)?(?:;(?:\d{4}-\d{4}(?:,\d{4}-\d{4})*)?){6}", week):
             problem(fname, f"{rid} has hours that aren't seven days like \"1200-1430,1900-2200;…\": {week!r}")

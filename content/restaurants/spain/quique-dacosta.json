@@ -53,5 +53,26 @@
   "cancellation": "Your card is authorised for €150 per guest (not charged). Cancelling or changing less than five days before, or not turning up, means the €150 is charged. Bookings can be passed to someone else.",
   "groups": "For more than 8 guests or events, email quiquedacosta@quiquedacosta.es. Separate bookings can't be joined into one table.",
   "infoSource": "https://quiquedacosta.es/en/frequently-asked-questions/",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 65,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/quique-dacosta-denia-es"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 12,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

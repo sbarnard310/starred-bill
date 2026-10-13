@@ -72,5 +72,14 @@
   "dressCode": "Smart casual; smart jeans are fine, though in the evening men tend to wear a jacket.",
   "children": "Children over seven are welcome in the dining room. Younger children, babies included, only as part of a private party in a private dining room.",
   "infoSource": "https://www.gravetyemanor.co.uk/media/ju0d002s/dining-at-gravetye-faqs-may-2026.pdf",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78,
+      "url": "https://www.laliste.com/places/gravetye-manor-east-grinstead-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

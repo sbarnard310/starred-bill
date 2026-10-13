@@ -52,5 +52,26 @@
   "cancellation": "A deposit is taken. It is refunded in full for cancellations at least 48 hours ahead; changes to party size or date need 24 hours' notice for the deposit to be credited. No refund for guests dropped or changes on the day.",
   "groups": "Parties of 15 or more: email reservations@toyoeatery.com or text +63 917 720 8630.",
   "infoSource": "https://www.tablecheck.com/en/toyoeatery/reserve/message",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 71,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/toyo-eatery-makati-ph"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 57,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

@@ -88,5 +88,14 @@
   "dressCode": "Smart casual. No slippers; men also no open shoes, sandals or sleeveless tops.",
   "children": "Children aged 6 and over are welcome.",
   "infoSource": "https://www.grandlisboapalace.com/en/restaurants-n-bars/don-alfonso-1890",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 97,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

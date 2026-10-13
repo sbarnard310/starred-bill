@@ -42,5 +42,20 @@
   "children": "Suitable for guests aged 12 and over; the menu can't be changed for individual needs.",
   "servicePct": 15,
   "infoSource": "https://www.dorchestercollection.com/london/45-park-lane/dining/sushi-kanesaka",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/sushi-kanesaka-london-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 494,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

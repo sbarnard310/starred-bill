@@ -76,5 +76,14 @@
   "groupsUrl": "https://lecoucou.com/#group-dining",
   "dressCode": "Elegant, as for a night out in New York. Jackets are not required, but athletic wear is not allowed, and guests who aren't well enough dressed may be refused entry.",
   "infoSource": "https://resy.com/cities/ny/le-coucou",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 88,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

@@ -73,5 +73,14 @@
   "waitlist": "If your date is full, join the waiting list; the reservations team phones or emails if a table comes free.",
   "cancellation": "Your card is authorised for the cost of the table when you book, and released in full if you cancel within the terms of the booking conditions.",
   "infoSource": "https://villacrespi.it/en/faqs/",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98,
+      "url": "https://www.laliste.com/places/villa-crespi-orta-san-giulio-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

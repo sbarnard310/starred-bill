@@ -75,5 +75,14 @@
   "bookingUrl": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/book-a-table/",
   "groups": "Groups of 7 or 8 book by phone and choose the Prestige or Carte Blanche menu; 9 or more use the enquiry form on the booking page.",
   "infoSource": "https://www.gordonramsayrestaurants.com/restaurant-gordon-ramsay/information",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93,
+      "url": "https://www.laliste.com/places/gordon-ramsay-london-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

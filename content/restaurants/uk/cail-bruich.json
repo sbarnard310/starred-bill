@@ -76,5 +76,14 @@
   "children": "Children aged 8 and over are welcome. There is no children's menu: everyone has the tasting menu.",
   "duration": "About 2½ to 3 hours for lunch and 3 to 3½ hours for dinner.",
   "infoSource": "https://www.cailbruich.co.uk/faqs",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77,
+      "url": "https://www.laliste.com/places/cail-bruich-glasgow-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

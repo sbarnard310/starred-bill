@@ -44,5 +44,32 @@
   "bookingPhone": "+852 2555 2202",
   "waitlist": "There is no waiting list: tables freed by cancellations reappear in the online booking system automatically.",
   "infoSource": "https://www.thechairmangroup.com/index.php?route=catering/booking",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 1,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/1-50"
+    },
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 19,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 84.5,
+      "url": "https://www.laliste.com/places/the-chairman-central-hk"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 7,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

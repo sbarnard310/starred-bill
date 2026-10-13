@@ -51,5 +51,14 @@
   "bookingOpens": "The restaurant doesn't take bookings from guests directly: book through your hotel's concierge, who calls the restaurant.",
   "bookingPhone": "+81 3-5568-4411",
   "infoSource": "https://www.sushi-kanesaka.com/en",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2025,
+      "rank": 217,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2025"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

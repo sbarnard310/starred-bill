@@ -49,5 +49,14 @@
   "waitlist": "Full dates offer a waiting list through Superb; on 12 October 2026 every remaining date in October showed only the waiting list.",
   "groups": "Parties larger than five are asked to contact the restaurant (Anaba@sushianaba.com).",
   "infoSource": "https://www.sushianaba.com/menu",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 125,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

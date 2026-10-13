@@ -92,5 +92,14 @@
   "cancellation": "A credit card guarantees the booking. Changes or cancellations less than 72 hours ahead are charged.",
   "groups": "Tables of 4 or more choose one of the tasting menus. Groups of 6 to 16 book by email (ROMHI.LaPergolaReservations@waldorfastoria.com); 10 to 16 have the restaurant's private area.",
   "infoSource": "https://romecavalieri.com/wp-content/uploads/2020/09/La-Pergola-FAQ-EN-2020.pdf",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95.5,
+      "url": "https://www.laliste.com/places/la-pergola-roma-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

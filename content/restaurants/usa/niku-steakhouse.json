@@ -47,5 +47,14 @@
   "duration": "At least two hours for two people, and about 30 minutes more for each extra guest.",
   "byob": "Corkage is $80 a 750ml bottle (up to two) or $160 a magnum (one), for wines not on the list. Outside celebration cakes cost $6 a person.",
   "infoSource": "https://www.nikusteakhouse.com/faq",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 399,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

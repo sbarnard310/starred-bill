@@ -34,5 +34,14 @@
   "dressCode": "Smart casual (\"casual elegant\").",
   "children": "Children over 6 are welcome. Pets are not allowed.",
   "infoSource": "https://www.donalfonso.com/en/hotel-with-restaurant-sorrento-coast",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85.5,
+      "url": "https://www.laliste.com/places/don-alfonso-1890-massa-lubrense-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

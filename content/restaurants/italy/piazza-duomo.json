@@ -58,5 +58,26 @@
   "bookingPhone": "+39 0173 366167",
   "groups": "Groups of more than 6 send a request from the booking page. There's also a kitchen table and private events.",
   "infoSource": "https://www.piazzaduomoalba.it/en/page-menu/",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 32,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96.5,
+      "url": "https://www.laliste.com/places/piazza-duomo-alba-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 24,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

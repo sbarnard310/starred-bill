@@ -82,5 +82,14 @@
   "bookingUrl": "https://www.sevenrooms.com/reservations/alainducasseatthedorchester/",
   "groups": "The Table Lumière, the restaurant's most exclusive table, is booked separately through the reservations team.",
   "infoSource": "https://www.alainducasse-dorchester.com/contact/",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92,
+      "url": "https://www.laliste.com/places/alain-ducasse-at-the-dorchester-london-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

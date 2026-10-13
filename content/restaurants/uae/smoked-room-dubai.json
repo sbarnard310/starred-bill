@@ -52,5 +52,14 @@
   "groups": "The 14-seat room can be booked for private events through the events team.",
   "children": "Guests aged 14 and over only.",
   "infoSource": "https://smokedroomrestaurants.com/en/dubai/faqs/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 410,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

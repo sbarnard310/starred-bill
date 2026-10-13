@@ -85,5 +85,14 @@
   "children": "Children over 6 are welcome at lunch, but not at dinner. There is no children's menu, though some dishes can be simplified.",
   "duration": "Up to three hours for the tasting menus.",
   "infoSource": "https://www.timberyard.co/faq",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 303,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

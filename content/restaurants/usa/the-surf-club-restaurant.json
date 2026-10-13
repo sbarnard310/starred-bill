@@ -37,5 +37,14 @@
   "dressCode": "Smart casual. No shorts or flip-flops; jackets and ties are not required.",
   "byob": "Up to three 750ml bottles not on the wine list, at $125 corkage a bottle.",
   "infoSource": "https://www.surfclubrestaurant.com/make-a-reservation",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 206,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

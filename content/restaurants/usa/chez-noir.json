@@ -54,5 +54,14 @@
   "duration": "About two hours.",
   "byob": "Corkage is $65 per 750ml bottle, two bottles or one magnum per table at most; not at the bar or for à la carte dining.",
   "infoSource": "https://www.cheznoircarmel.com/faqs",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 432,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

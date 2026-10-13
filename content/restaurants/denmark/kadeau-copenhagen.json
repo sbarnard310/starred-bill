@@ -57,5 +57,26 @@
   "cancellation": "A deposit of about DKK 2,000 per person, with fees, is paid on Tock when you book.",
   "groups": "For private events, use the request form on the Tock page.",
   "infoSource": "https://www.exploretock.com/kadeau-copenhagen/",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 41,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 92.5,
+      "url": "https://www.laliste.com/places/kadeau-kobenhavn-dk"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 39,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

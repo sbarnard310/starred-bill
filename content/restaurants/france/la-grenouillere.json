@@ -69,5 +69,20 @@
   "bookingPhone": "+33 3 21 06 07 22",
   "dressCode": "The house appreciates elegant dress; long trousers and closed shoes are preferred for men.",
   "infoSource": "https://www.lagrenouillere.fr/fr",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94.5,
+      "url": "https://www.laliste.com/places/la-grenouillere-la-madelaine-sous-montreuil-fr"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 100,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

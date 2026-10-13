@@ -59,5 +59,20 @@
   "dressCode": "Elegant casual. No hats or caps; men need full-length trousers and no sleeveless shirts or open-toe shoes.",
   "children": "Children aged 5 and over are welcome in the main dining room; all ages in the private dining rooms.",
   "infoSource": "https://www.wynnresortsmacau.com/en/wynn-macau/dining/wing-lei",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91.5,
+      "url": "https://www.laliste.com/places/wing-lei-at-wynn-macau-macau-mo"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 333,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

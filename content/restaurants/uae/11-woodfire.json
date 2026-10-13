@@ -42,5 +42,20 @@
   "bookingUrl": "https://www.sevenrooms.com/reservations/11woodfire",
   "bookingPhone": "+971 4 491 9000",
   "infoSource": "https://11woodfire.com/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "mena-50-best",
+      "year": 2026,
+      "rank": 14,
+      "url": "https://www.the50.com/restaurants/best-in-middle-east-and-north-africa/list/1-50"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 381,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

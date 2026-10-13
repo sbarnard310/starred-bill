@@ -57,5 +57,14 @@
   "bookingUrl": "https://www.enotecapinchiorri.it/prenota-una-cena.php",
   "bookingPhone": "+39 055 26311",
   "infoSource": "https://www.enotecapinchiorri.it/",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 94,
+      "url": "https://www.laliste.com/places/enoteca-pinchiorri-firenze-it"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

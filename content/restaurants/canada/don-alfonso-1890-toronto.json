@@ -60,5 +60,20 @@
   "groups": "The dining room on the 38th floor can be booked for private events: up to 82 seated or 120 standing, on Mondays and Tuesdays for lunch or dinner, or for lunch from Wednesday to Sunday. Events team: events@donalfonsotoronto.com, +1 416-214-5888.",
   "groupsUrl": "https://www.donalfonsotoronto.com/private-events/private-events",
   "infoSource": "https://www.donalfonsotoronto.com/contact",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78.5,
+      "url": "https://www.laliste.com/places/don-alfonso-1890-toronto-ca"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 487,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

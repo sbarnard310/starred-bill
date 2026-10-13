@@ -61,5 +61,14 @@
   "cancellation": "A credit card guarantees bookings of 1 to 5. Cancel in writing (info@martinberasategui.com) more than 48 hours ahead (96 hours for 6–10 guests, 10 days for 11–20), or pay €220 per person; the same applies to anyone who doesn't turn up.",
   "groups": "Groups of 6 or more prepay €220 per person, taken off the bill on the day.",
   "infoSource": "https://www.martinberasategui.com/en/reservar",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 99.5,
+      "url": "https://www.laliste.com/places/martin-berasategui-lasarte-oria-es"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

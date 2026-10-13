@@ -54,5 +54,14 @@
   "duration": "About two hours: the restaurant allows two hours for each party.",
   "byob": "Corkage is $75 a 750ml bottle, wine only (no spirits or soju), at most two bottles or one magnum a party, and not for wines on the restaurant's own list. Bringing a cake costs $10 a person.",
   "infoSource": "https://www.oijimi.com/faqs",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 81,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

@@ -45,5 +45,20 @@
   "groupsUrl": "https://publishedonmain.com/group-bookings/",
   "duration": "Two and a half to three hours for the Harvest tasting menu; tables are reserved for 2¾ hours for two and 3 hours for three or four.",
   "infoSource": "https://publishedonmain.com/harvest-fall-tasting-menu/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 17,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 77.5,
+      "url": "https://www.laliste.com/places/published-on-main-vancouver-ca"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

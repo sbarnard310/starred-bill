@@ -62,5 +62,14 @@
   "cancellation": "Online bookings ask for a card guarantee of €150 per person.",
   "groups": "The Chef's Table, a room beside the kitchen behind a glass wall, seats up to 8 for a menu and wine pairing made for the table, served by Christopher Coutanceau and Nicolas Brossard.",
   "infoSource": "https://christophercoutanceau.com/en/restaurant-coutanceau.html",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 97,
+      "url": "https://www.laliste.com/places/christopher-coutanceau-la-rochelle-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

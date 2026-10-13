@@ -71,5 +71,14 @@
   "groupsUrl": "https://www.oldstamphouse.com/the-workshop/",
   "duration": "About three hours for the tasting menu.",
   "infoSource": "https://www.oldstamphouse.com/faqs/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 82,
+      "url": "https://www.laliste.com/places/the-old-stamp-house-ambleside-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

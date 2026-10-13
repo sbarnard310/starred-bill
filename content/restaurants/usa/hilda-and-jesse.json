@@ -60,5 +60,14 @@
   "groupsUrl": "https://www.hildaandjessesf.com/events",
   "dressCode": "Smart casual.",
   "infoSource": "https://www.hildaandjessesf.com/reservations",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 427,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

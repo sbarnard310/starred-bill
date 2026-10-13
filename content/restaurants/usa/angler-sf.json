@@ -62,5 +62,14 @@
   "dressCode": "Smart casual.",
   "byob": "Corkage is $75 a bottle for the first two bottles and $150 for each one after that.",
   "infoSource": "https://anglerrestaurants.com/dine-with-us/faq/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 63,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

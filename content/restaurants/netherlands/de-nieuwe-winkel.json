@@ -58,5 +58,20 @@
   "groups": "Up to 6 people in the restaurant. Groups of 7 to 10 dine in the private dining room at a long oak table, with the menu agreed in advance (not wheelchair accessible).",
   "groupsUrl": "https://denieuwewinkel.com/en/private-dining/",
   "infoSource": "https://denieuwewinkel.com/veelgestelde-vragen/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86.5,
+      "url": "https://www.laliste.com/places/de-nieuwe-winkel-nijmegen-nl"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 496,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

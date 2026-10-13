@@ -66,5 +66,20 @@
   "bookingUrl": "https://www.exploretock.com/theinnatlittlewashington",
   "groups": "For 5 or more, book through the reservations department (reservations@theinnatlittlewashington.com), as only a few tables seat larger groups.",
   "infoSource": "https://www.theinnatlittlewashington.com/frequently-asked-questions",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95,
+      "url": "https://www.laliste.com/places/the-inn-at-little-washington-washington-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 62,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

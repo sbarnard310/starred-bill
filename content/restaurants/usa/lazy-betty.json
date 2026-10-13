@@ -70,5 +70,14 @@
   "duration": "About three and a half hours.",
   "byob": "Corkage is $75 per 750ml bottle, two bottles at most, and not for wines on the list.",
   "infoSource": "https://www.lazybettyatl.com/menu",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 398,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

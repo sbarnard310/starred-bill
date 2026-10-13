@@ -80,5 +80,14 @@
   "children": "Children aged 7 and over at dinner.",
   "byob": "Corkage is NT$1,500 a bottle.",
   "infoSource": "https://inline.app/booking/-MWTh4C8p24ICmxRZ3Re:inline-live-2/-MWTh4M_ZsH7lkVv7_qf",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 311,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

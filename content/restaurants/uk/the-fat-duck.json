@@ -98,5 +98,20 @@
       "price": 325,
       "source": "https://web.archive.org/web/20200528025051/https://thefatduck.co.uk/faqs"
     }
-  ]
+  ],
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 91.5,
+      "url": "https://www.laliste.com/places/the-fat-duck-bray-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 44,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

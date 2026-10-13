@@ -59,5 +59,14 @@
   "groups": "Company bookings on invoice pay a 30% deposit; changes to numbers must be sent in writing at least three working days ahead.",
   "children": "Children up to 11 can have a four-course menu for €120.",
   "infoSource": "https://maison-nouvelle.fr/faq/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 87,
+      "url": "https://www.laliste.com/places/maison-nouvelle-bordeaux-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

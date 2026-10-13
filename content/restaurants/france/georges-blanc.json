@@ -73,5 +73,14 @@
   "groups": "Tables of six or more are booked by phone or email, with a deposit of €100 a person. From seven guests the menu must be chosen in advance.",
   "dressCode": "Smart dress is appreciated: long trousers and closed shoes for men.",
   "infoSource": "https://www.georgesblanc.com/fr/gastronomie/restaurant-gastronomique-georges-blanc.html",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 96.5,
+      "url": "https://www.laliste.com/places/georges-blanc-vonnas-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

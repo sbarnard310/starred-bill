@@ -56,5 +56,14 @@
   "children": "Count children in the party size. If a child won't eat the full House Menu, book a general reservation and order à la carte.",
   "duration": "Tables are held for two hours (two and a half for parties of five or more).",
   "infoSource": "https://www.sanhowon.com/visit",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 69,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

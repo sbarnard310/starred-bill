@@ -86,5 +86,14 @@
   "groups": "The restaurant has a private dining room; ask the hotel.",
   "children": "The hotel is an adults' retreat and does not recommend visits by anyone under 21.",
   "infoSource": "https://aubergeresorts.com/aubergedusoleil/dine/the-restaurant-at-auberge-du-soleil/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 254,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

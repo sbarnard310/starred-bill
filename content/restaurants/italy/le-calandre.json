@@ -72,5 +72,26 @@
   "dressCode": "No dress code, but no shorts or flip-flops.",
   "children": "Children are welcome. Guests with children under 8 are seated in the private room when it is free. There are no high chairs.",
   "infoSource": "https://alajmo.it/pages/booking-le-calandre",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 31,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 99,
+      "url": "https://www.laliste.com/places/le-calandre-sarmeola-di-rubano-it"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 38,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

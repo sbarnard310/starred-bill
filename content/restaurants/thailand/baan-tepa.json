@@ -56,5 +56,26 @@
   "duration": "About two and a half hours. Dinner has three seatings, at 6pm, 7pm and 8pm, Wednesday to Sunday.",
   "byob": "Corkage is THB 2,000 plus service and VAT per 75cl bottle, waived if a bottle is also bought from the wine list.",
   "infoSource": "https://www.baantepabkk.com/contact",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 53,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 97,
+      "url": "https://www.laliste.com/places/baan-tepa-culinary-space-th"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 26,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

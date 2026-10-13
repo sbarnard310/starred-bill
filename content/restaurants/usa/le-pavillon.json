@@ -97,5 +97,20 @@
   "children": "Pushchairs and prams cannot be accommodated in the restaurant.",
   "byob": "Corkage for up to two standard bottles not on the wine list, $150 a bottle.",
   "infoSource": "https://www.lepavillonnyc.com/about",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 79.5,
+      "url": "https://www.laliste.com/places/le-pavillon-new-york-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 196,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

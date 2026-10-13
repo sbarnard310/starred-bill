@@ -50,5 +50,14 @@
   "children": "Children under 12 are not allowed in the restaurant.",
   "duration": "About two and a half hours (SevenRooms holds each table for 150 minutes).",
   "infoSource": "https://www.joo-ok.com/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 55,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

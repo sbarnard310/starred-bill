@@ -80,5 +80,14 @@
   "bookingPhone": "+49 6831 89440440",
   "groups": "For six or more, book by email (info@lamaison-hotel.de) or phone.",
   "infoSource": "https://lamaison-hotel.de/restaurant-bar/louis-restaurant/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86,
+      "url": "https://www.laliste.com/places/louis-la-maison-saarlouis-de"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

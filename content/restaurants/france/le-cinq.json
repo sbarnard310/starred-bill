@@ -59,5 +59,14 @@
       "price": 595,
       "source": "https://web.archive.org/web/20240718163824/https://fourseasons.com/paris/dining/menus/le-cinq-christian-le-squer/"
     }
-  ]
+  ],
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 97,
+      "url": "https://www.laliste.com/places/le-cinq-paris-fr"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

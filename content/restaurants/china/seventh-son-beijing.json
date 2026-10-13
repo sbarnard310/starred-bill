@@ -25,5 +25,14 @@
   "bookingOpens": "By phone: the restaurant takes its own bookings and has no online booking.",
   "bookingPhone": "+86 10 8571 6888",
   "infoSource": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/seventh-son-1186794",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 522,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

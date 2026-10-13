@@ -58,5 +58,26 @@
   "duration": "About 1½ to 2 hours for lunch and 2½ to 3 hours for dinner.",
   "byob": "Up to two bottles per table (wine or sake), ₩100,000 corkage a bottle.",
   "infoSource": "https://www.allaprima.co.kr/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "asias-50-best",
+      "year": 2026,
+      "rank": 57,
+      "url": "https://www.the50.com/restaurants/best-in-asia/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 78.5,
+      "url": "https://www.laliste.com/places/alla-prima-gangnam-gu-kr"
+    },
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 246,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

@@ -61,5 +61,14 @@
   "dressCode": "Smart casual.",
   "children": "Children who can eat the tasting menu are welcome. Babies are not recommended; contact the restaurant first if bringing one.",
   "infoSource": "https://www.sevenrooms.com/landing/hansikgoo",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 45,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

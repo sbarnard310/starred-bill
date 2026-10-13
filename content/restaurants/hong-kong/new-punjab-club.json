@@ -65,5 +65,14 @@
   "duration": "Tables are booked for two hours.",
   "byob": "Guests may bring their own: HK$500 per 750ml bottle of wine, HK$1,200 per 500ml bottle of Maotai or 700ml bottle of spirits, HK$1,800 per one-litre bottle of spirits.",
   "infoSource": "https://www.sevenrooms.com/reservations/newpunjabclub",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 96,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

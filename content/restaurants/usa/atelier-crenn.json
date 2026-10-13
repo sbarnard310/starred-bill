@@ -37,5 +37,32 @@
   "bookingPhone": "(415) 440-0460",
   "cancellation": "Bookings are final and can't be refunded, like concert tickets. To change or cancel, call or email info@ateliercrenn.com and the restaurant will try to resell your seats; if it can't, you still pay.",
   "infoSource": "https://www.ateliercrenn.com/faq/",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 96,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "north-americas-50-best",
+      "year": 2026,
+      "rank": 44,
+      "url": "https://www.the50.com/restaurants/best-in-north-america/list/1-50"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 95.5,
+      "url": "https://www.laliste.com/places/atelier-crenn-san-francisco-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 67,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

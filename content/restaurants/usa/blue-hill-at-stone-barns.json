@@ -66,5 +66,20 @@
   "groups": "The private dining room seats up to 12 and is booked on Tock; for 20 or more, call 914-366-9606 ext. 226.",
   "byob": "You can bring wines that aren't on the wine list: one 750ml bottle per two guests, at $150 a bottle.",
   "infoSource": "https://www.bluehillfarm.com/faq",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 93.5,
+      "url": "https://www.laliste.com/places/blue-hill-at-stone-barns-tarrytown-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 3,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

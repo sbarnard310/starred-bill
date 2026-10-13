@@ -54,6 +54,23 @@ DIETS = ("vegetarian-only", "vegetarian-menu", "vegetarian", "vegan", "gluten-fr
 CHEF_SOURCES = ("michelin", "site", "press", "manual")
 FAQ_MAX = 10  # the owner's rule (9 Oct 2026): no page has more than 10 questions
 MENU_MEALS = ("dinner", "lunch", "lounge")  # where a menu in `menus` is served: the dining room at dinner or lunch, or the bar/lounge
+# Critics' lists a restaurant's `rankings` can name (13 Oct 2026, to-do item feature-critics-rankings), each rank taken by
+# hand from the list's own website: id -> (its name before the year, how it's scored). "rank" lists number their places
+# ("No. 12 on The World's 50 Best Restaurants 2025"); La Liste gives a score out of 100 instead. Shown on restaurant pages
+# only (ranking_lines() in the restaurant-page helpers), best-known first, in this order.
+RANKING_LISTS = {
+    "worlds-50-best": ("The World’s 50 Best Restaurants", "rank"),
+    "asias-50-best": ("Asia’s 50 Best Restaurants", "rank"),
+    "north-americas-50-best": ("North America’s 50 Best Restaurants", "rank"),
+    "latin-americas-50-best": ("Latin America’s 50 Best Restaurants", "rank"),
+    "mena-50-best": ("Middle East & North Africa’s 50 Best Restaurants", "rank"),
+    "oad-europe": ("OAD’s Top Restaurants in Europe", "rank"),
+    "oad-north-america": ("OAD’s Top Restaurants in North America", "rank"),
+    "oad-asia": ("OAD’s Top Restaurants in Asia", "rank"),
+    "oad-japan": ("OAD’s Top Restaurants in Japan", "rank"),
+    "oad-south-america": ("OAD’s Top Restaurants in South America", "rank"),
+    "la-liste": ("La Liste’s Top 1000 Restaurants", "score"),
+}
 ID_PATTERN = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
 
 # Booking windows (10 Oct 2026): when a restaurant's tables go on sale, as `bookingWindow` in its file (README lists the
@@ -343,7 +360,17 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
             problem(where, f"priceHistory {i + 1} needs a date like 2019-10 and a price (a number)")
     if r.get("starsSince") is not None and not (isinstance(r["starsSince"], int) and 1926 <= r["starsSince"] <= date.today().year):
         problem(where, "starsSince must be a year, e.g. 2005")
-    for field in ("menusChecked", "infoChecked"):
+    for i, x in enumerate(r.get("rankings") or []):
+        how = RANKING_LISTS.get(x.get("list"), (None, None))[1] if isinstance(x, dict) else None
+        if not how:
+            problem(where, f"rankings {i + 1}: list must be one of {', '.join(RANKING_LISTS)}")
+        elif not (isinstance(x.get("year"), int) and 2000 <= x["year"] <= date.today().year + 1) or not str(x.get("url", "")).startswith("https://"):
+            problem(where, f"rankings {i + 1} needs the list's year (e.g. 2026) and a link to the list's own page")
+        elif how == "rank" and not (isinstance(x.get("rank"), int) and x["rank"] > 0):
+            problem(where, f"rankings {i + 1}: {x['list']} needs its rank, a whole number")
+        elif how == "score" and not (isinstance(x.get("score"), (int, float)) and 0 < x["score"] <= 100):
+            problem(where, f"rankings {i + 1}: {x['list']} needs its score out of 100")
+    for field in ("menusChecked", "infoChecked", "rankingsChecked"):
         if r.get(field) and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", r[field]):
             problem(where, f"{field} must be a date like 2026-10-09")
     if r.get("chefSource") and r["chefSource"] not in CHEF_SOURCES:
@@ -657,7 +684,7 @@ for _a, _b in CANONICAL_PLACES.items():
 # (`bookingWindow` reaches destination pages as `bw`, without its source, checked date and note.)
 PAGE_ONLY = ("bookingWindow", "noBookings", "queue", "byob", "servicePct", "hotel", "alsoTry", "waitlist", "duration", "menus", "menusSource", "menusChecked", "priceHistory", "starsSince", "dressCode", "bookingOpens", "bookingPhone", "bookingUrl",
              "walkIns", "groups", "groupsUrl", "cancellation",
-             "children", "infoSource", "infoChecked")
+             "children", "infoSource", "infoChecked", "rankings", "rankingsChecked")
 
 
 def public(r):
@@ -6826,6 +6853,52 @@ def qa_block(q, a_html):
     return f"<div><h3>{e(q)}</h3>{a_html}</div>"
 
 
+def ranking_lines(r):
+    """Its places on critics' lists (`rankings`), best-known list first: [(text, entry)], e.g.
+    ("No. 90 on The World’s 50 Best Restaurants 2025 (the 51–100 list)", {...}) or ("99.5 out of 100 in La Liste’s Top 1000 Restaurants 2026", {...})."""
+    order = list(RANKING_LISTS)
+    out = []
+    for x in sorted(r.get("rankings", []), key=lambda x: (order.index(x["list"]), -x["year"])):
+        name, how = RANKING_LISTS[x["list"]]
+        if how == "score":
+            out.append((f"{x['score']:g} out of 100 in {name} {x['year']}", x))
+        else:
+            out.append((f"No. {x['rank']} on {name} {x['year']}" + (" (the 51–100 list)" if x["list"].endswith("50-best") and x["rank"] > 50 else ""), x))
+    return out
+
+
+def ranking_notable(x):
+    """A place worth saying at the top of the page: the top 50 of a 50 Best or OAD list, or La Liste's top scores (98 and up
+    puts a restaurant in its first 50 or so)."""
+    return x.get("score", 0) >= 98 if RANKING_LISTS[x["list"]][1] == "score" else x["rank"] <= 50
+
+
+def ranking_phrase(lines):
+    """What follows the restaurant's name: "is No. 13 on …, No. 34 on … and scores 99.5 out of 100 in …" (La Liste's score
+    comes last, in RANKING_LISTS' order)."""
+    ranks = [t for t, x in lines if "rank" in x]
+    scores = [t for t, x in lines if "rank" not in x]
+    out = "is " + (", ".join(ranks[:-1]) + " and " + ranks[-1] if len(ranks) > 1 and not scores else ", ".join(ranks)) if ranks else ""
+    if scores:
+        out += (" and scores " if ranks else "scores ") + and_list(scores)
+    return out
+
+
+def ranking_qa(r):
+    """"Where does Le Bernardin rank on critics' lists?" for the facts: the answer as the page's HTML and as plain text for the FAQ data."""
+    lines = ranking_lines(r)
+    if not lines:
+        return None
+    q = f"Where does {r['name']} rank on critics’ lists?"
+    many = len(lines) > 1
+    plain = f"In {'their' if many else 'its'} latest edition{'s' if many else ''}, {r['name']} {ranking_phrase(lines)}."
+    page = (f"<p>{e(r['name'])} is on {len(lines) if many else 'one'} of the critics’ lists we follow, in {'their' if many else 'its'} latest edition{'s' if many else ''}:</p>"
+            '<ul class="rp-ranks">' + "".join(f'<li><a href="{e(x["url"])}">{e(t)}</a></li>' for t, x in lines) + "</ul>"
+            + (f'<p class="rp-note">From each list’s own website, checked {e(nice_date(r["rankingsChecked"]))}. The MICHELIN Guide gives stars but doesn’t rank restaurants.</p>'
+               if r.get("rankingsChecked") else ""))
+    return q, plain, page
+
+
 def info_note(r):
     return (f'<p class="rp-note">From <a href="{e(r["infoSource"])}">{e(r["name"])}’s website</a>'
             + (f", checked {nice_date(r['infoChecked'])}" if r.get("infoChecked") else "") + ". Rules change, so check when you book.</p>") if r.get("infoSource") else ""
@@ -7211,6 +7284,9 @@ def build_restaurant_pages():
         near = near_restaurants(r, live)
         title = restaurant_title(r, title_year(places[r["city"]], [r]), shared)
         description = restaurant_description(r, where)
+        notable = [(t, x) for t, x in ranking_lines(r) if ranking_notable(x)][:3]
+        phrase = ranking_phrase(notable) if notable else ""
+        acclaim = f"On critics’ lists, {'it’s ' + phrase[3:] if phrase.startswith('is ') else 'it ' + phrase}." if notable else ""
         stars_html = '<span class="stars" aria-hidden="true">' + '<svg><use href="#star"/></svg>' * r["stars"] + "</span>"
         stars_label = f"{STAR_WORDS[r['stars']].capitalize()} MICHELIN star{'s' if r['stars'] > 1 else ''}"
         maps = ("https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(", ".join([r["name"], r.get("address") or where]))
@@ -7221,7 +7297,8 @@ def build_restaurant_pages():
                 f'      <h1 style="margin-top: 12px">{e(page_name(r, shared))}: what it <em>costs</em></h1>\n'
                 f'      <p class="rp-where">{e(where)}' + (f' · In {e(r["hotel"])}' if r.get("hotel") else "") + (f' · Chef {e(r["chef"])}' if r.get("chef") else "") + '</p>\n'
                 f'      <p class="rp-answer">{e(answer)}</p>\n'
-                f'      <div class="rp-actions"><button type="button" class="rp-wish" id="rpWish" data-wish="{e(r["id"])}" aria-pressed="false">'
+                + (f'      <p class="rp-acclaim">{e(acclaim)}</p>\n' if acclaim else "")
+                + f'      <div class="rp-actions"><button type="button" class="rp-wish" id="rpWish" data-wish="{e(r["id"])}" aria-pressed="false">'
                 f'<svg aria-hidden="true"><use href="#heart"/></svg><span>Save to wishlist</span></button>'
                 + (f'<a class="rp-btn" href="{e(r["bookingUrl"])}">Book on {e(booking_site(r["bookingUrl"]) or "their website")}</a>' if r.get("bookingUrl") else "")
                 + (f'<a class="rp-btn" href="{e(r["website"])}">Restaurant’s website</a>' if r.get("website") else "")
@@ -7244,6 +7321,10 @@ def build_restaurant_pages():
         glance_qa = [(f"How many Michelin stars does {r['name']} have?", stars_a)]
         if r.get("chef"):
             glance_qa.append((f"Who is the chef at {r['name']}?", f"The head chef is {r['chef']}."))
+        ranks = ranking_qa(r)
+        if ranks:
+            glance_qa.append(ranks[:2])
+        glance_page = {ranks[0]: ranks[2]} if ranks else {}
         facts = []
         if r.get("cuisine"):
             facts.append(("Cuisine", e(r["cuisine"])))
@@ -7276,7 +7357,7 @@ def build_restaurant_pages():
             facts.append(("Links", " · ".join(links)))
         facts_html = ('<section id="facts">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">At a glance</span>'
                       f'<h2 style="margin-top: 6px">{e(r["name"])}: stars, chef and address</h2></div></div>\n'
-                      '    <div class="faq rp-qa">' + "".join(qa_block(q, f"<p>{e(a)}</p>") for q, a in glance_qa) + "</div>\n"
+                      '    <div class="faq rp-qa">' + "".join(qa_block(q, glance_page.get(q) or f"<p>{e(a)}</p>") for q, a in glance_qa) + "</div>\n"
                       '    <dl class="rp-facts">' + "".join(f"<div><dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in facts) + "</dl>\n  </div>\n</section>\n")
 
         # What you'll pay, with the country's service note and the sources.
@@ -7380,7 +7461,7 @@ def build_restaurant_pages():
         item = {"@type": "Restaurant", "@id": SITE_URL + path + "#restaurant", "name": r["name"], "servesCuisine": r.get("cuisine"),
                 "address": r.get("address"), "url": r.get("website"),
                 "sameAs": [u for u in (r.get("website"), mg.get(r["id"])) if u] or None,
-                "award": f"{r['stars']} MICHELIN Star{'s' if r['stars'] > 1 else ''}",
+                "award": [f"{r['stars']} MICHELIN Star{'s' if r['stars'] > 1 else ''}"] + [t for t, x in ranking_lines(r)] if r.get("rankings") else f"{r['stars']} MICHELIN Star{'s' if r['stars'] > 1 else ''}",
                 "starRating": {"@type": "Rating", "ratingValue": r["stars"], "bestRating": 3, "author": {"@type": "Organization", "name": "MICHELIN Guide"}},
                 "priceRange": f"{money(d, cur)} tasting menu" if d is not None and r.get("dinnerType", "menu") == "menu" else None,
                 "geo": {"@type": "GeoCoordinates", "latitude": r["lat"], "longitude": r["lng"]} if r.get("lat") is not None else None,
@@ -7451,6 +7532,14 @@ def restaurant_sources_html(r, michelin_url):
                      + (f", checked {e(nice_date(r['infoChecked']))}" if r.get("infoChecked") else ""))
     if any("web.archive.org" in (h.get("source") or "") for h in r.get("priceHistory", [])):
         parts.append("Past prices: " + a("https://web.archive.org/", "Internet Archive") + " copies of its menu page")
+    if r.get("rankings"):
+        seen = []
+        for t, x in ranking_lines(r):
+            label = f"{RANKING_LISTS[x['list']][0]} {x['year']}"
+            if label not in [s_[0] for s_ in seen]:
+                seen.append((label, x["url"]))
+        parts.append("Critics’ lists: " + ", ".join(a(u, label) for label, u in seen)
+                     + (f", checked {e(nice_date(r['rankingsChecked']))}" if r.get("rankingsChecked") else ""))
     if r.get("rating"):
         parts.append("Rating: " + a("https://www.google.com/maps", "Google Maps") + f", checked {RATINGS_CHECKED}")
     if r["id"] in HOURS_GOOGLE and hours_lines(r):

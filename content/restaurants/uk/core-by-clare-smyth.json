@@ -91,5 +91,20 @@
       "wine": 175,
       "source": "https://web.archive.org/web/20260107051021/https://corebyclaresmyth.com/menus/"
     }
-  ]
+  ],
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98,
+      "url": "https://www.laliste.com/places/core-by-clare-smyth-london-gb"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 53,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

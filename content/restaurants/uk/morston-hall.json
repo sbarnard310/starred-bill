@@ -61,5 +61,14 @@
   "children": "Not suitable for children under 12; the private dining rooms can be used for family celebrations.",
   "duration": "Two to three hours for the tasting menu.",
   "infoSource": "https://morstonhall.com/booking-terms-and-conditions/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 86,
+      "url": "https://www.laliste.com/places/morston-hall-holt-gb"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

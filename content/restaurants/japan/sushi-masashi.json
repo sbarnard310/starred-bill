@@ -59,5 +59,14 @@
   "bookingPhone": "+81 3-6384-5526",
   "groups": "A private room for up to four guests, besides the 10-seat counter.",
   "infoSource": "https://sushimasashi.tokyo/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "oad-japan",
+      "year": 2025,
+      "rank": 503,
+      "url": "https://www.oadguides.com/lists/japan/top-restaurants/2025"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

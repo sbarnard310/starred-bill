@@ -37,5 +37,20 @@
   "bookingUrl": "https://www.opentable.com/r/the-wolfs-tailor-denver",
   "bookingPhone": "720-456-6705",
   "infoSource": "https://www.thewolfstailor.com/",
-  "infoChecked": "2026-10-09"
+  "infoChecked": "2026-10-09",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 76,
+      "url": "https://www.laliste.com/places/the-wolfs-tailor-denver-us"
+    },
+    {
+      "list": "oad-north-america",
+      "year": 2026,
+      "rank": 177,
+      "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

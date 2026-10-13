@@ -94,5 +94,26 @@
   "groups": "The Chef's Table seats up to 12 at one long table beside the kitchen, for CHF 650 per person including its own menu and drinks pairing; it can be booked for six or more.",
   "groupsUrl": "https://www.schauenstein.ch/chefs-table-de",
   "infoSource": "https://www.schauenstein.ch/reservierung",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "rankings": [
+    {
+      "list": "worlds-50-best",
+      "year": 2025,
+      "rank": 52,
+      "url": "https://www.the50.com/restaurants/best-in-the-world/list/51-100"
+    },
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 98.5,
+      "url": "https://www.laliste.com/places/schloss-schauenstein-furstenau-ch"
+    },
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 5,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-13"
 }

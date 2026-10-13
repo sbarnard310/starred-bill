@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Opening hours for mainland China's starred restaurants from Ctrip, where neither the MICHELIN Guide nor Google has any.
+"""Opening hours for mainland China's starred restaurants from Ctrip, where the MICHELIN Guide has none.
 See README, "Opening hours".
 
-    python3 scripts/ctrip_hours.py          list what Ctrip says for each Chinese restaurant without guide or Google hours,
+    python3 scripts/ctrip_hours.py          list what Ctrip says for each Chinese restaurant without the guide's hours,
                                             beside what content/opening-hours-sites.json has
     python3 scripts/ctrip_hours.py write    also write Ctrip's into that file for those with none, or whose hours there
                                             already came from Ctrip
@@ -47,7 +47,7 @@ def ctrip_week(url):
 
 def main(write):
     covered = set()
-    for name in ("opening-hours.json", "opening-hours-google.json"):
+    for name in ("opening-hours.json",):
         covered |= set(json.load(open(os.path.join(ROOT, "content", name), encoding="utf-8")).get("hours", {}))
     sites = json.load(open(SITES, encoding="utf-8")) if os.path.exists(SITES) else {"hours": {}, "sources": {}, "daysOnly": []}
     changed = 0

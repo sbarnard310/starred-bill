@@ -42,7 +42,7 @@ getData(DATA.hoursUrl).catch(() => null).then((d) => {
   near.hours = {};
   Object.entries(d.h).forEach(([id, week]) => { near.hours[id] = week.split(";").map((day) => day ? day.split(",").map((s) => s.split("-")) : []); });
   near.hoursChecked = d.checked;
-  near.googleHours = new Set(d.g || []);
+  near.timedHours = new Set(d.g || []);
   if (near.here) { renderFilters(); render(false); }
 }).catch(() => {});
 
@@ -58,9 +58,9 @@ const sittings = (r, day) => near.hours && r.id && near.hours[r.id] ? near.hours
 const servesMeal = ([a, b], meal) => meal === "lunch" ? Number(a) < 1500 : Number(a) >= 1500 || Number(b) > 1800 || Number(b) <= Number(a);
 // The MICHELIN Guide often records only a day's first sitting, so a day showing lunch alone may well serve dinner too.
 // Which days a restaurant opens is reliable; the MICHELIN Guide's times are trusted only for a day with two sittings, or a
-// dinner one. Google's and restaurants' own (where the guide has none, listed in hours.json's "g") record every sitting, so
-// they're always trusted.
-const trusted = (s, r) => (r && near.googleHours && near.googleHours.has(r.id)) || s.length > 1 || (s.length === 1 && servesMeal(s[0], "dinner"));
+// dinner one. Restaurants' own (where the guide has none, listed in hours.json's "g") record every sitting, so they're
+// always trusted.
+const trusted = (s, r) => (r && near.timedHours && near.timedHours.has(r.id)) || s.length > 1 || (s.length === 1 && servesMeal(s[0], "dinner"));
 function openFor(r, day, meal) {
   const s = sittings(r, day);
   if (s == null) return null;
@@ -507,7 +507,7 @@ function renderList() {
   }
   if (near.day !== "") {
     const unknown = near.rows.filter((r) => r.d <= radiusMetres() && r.id && sittings(r, 0) == null).length;
-    if (unknown) $("nearCount").insertAdjacentHTML("beforeend",  ' <span class="nc-hours-note">Opening hours from the MICHELIN Guide, or Google where it has none; check with the restaurant before you go. ' + unknown +
+    if (unknown) $("nearCount").insertAdjacentHTML("beforeend",  ' <span class="nc-hours-note">Opening hours from the MICHELIN Guide, or the restaurant's own website where it has none; check with the restaurant before you go. ' + unknown +
       (unknown === 1 ? " restaurant here lists none, so it's" : " restaurants here list none, so they're") + " left out.</span>");
   }
   $("nearRows").innerHTML = shown.map((r) => {

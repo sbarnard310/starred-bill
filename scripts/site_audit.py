@@ -236,14 +236,14 @@ def data_checks(site):
         rows.append(r)
     live = [r for r in rows if r.get("stars") in (1, 2, 3) and not r.get("status")]
     hours = {}
-    for name in ("opening-hours.json", "opening-hours-google.json", "opening-hours-sites.json"):  # the MICHELIN Guide's, then Google's, then restaurants' own
+    for name in ("opening-hours.json", "opening-hours-sites.json"):  # the MICHELIN Guide's, then restaurants' own
         hours_file = C / name
         hours.update(json.loads(hours_file.read_text("utf-8")).get("hours", {}) if hours_file.exists() else {})
     # Data still resting on the MICHELIN Guide's website (to-do item michelin-data-resource, stage 3): stars without a
     # starSource or a press-release selection for their guide's latest ceremony, chefs and dietary options from its search
     # index, and opening hours that are only the guide's.
     guide_hours = set(json.loads((C / "opening-hours.json").read_text("utf-8")).get("hours", {})) if (C / "opening-hours.json").exists() else set()
-    for name in ("opening-hours-google.json", "opening-hours-sites.json"):
+    for name in ("opening-hours-sites.json",):
         if (C / name).exists():
             guide_hours -= set(json.loads((C / name).read_text("utf-8")).get("hours", {}))
     cer = json.loads((C / "ceremonies.json").read_text("utf-8")).get("guides", []) if (C / "ceremonies.json").exists() else []

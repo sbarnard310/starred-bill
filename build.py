@@ -605,15 +605,14 @@ for path in sorted((CONTENT / "guide-translations").glob("*/*.json")) if (CONTEN
 
 # Opening hours from the MICHELIN Guide (scripts/michelin_details.py hours): per restaurant, Monday first, days split by ";",
 # each day's sittings by "," as "1200-1430", a closed day empty. Near me's "Open on" filter and the restaurant pages read them.
-# Where the guide gives none (all of Japan, most of mainland China), Google's are used (scripts/google_hours.py, 10 Oct 2026),
-# marked in HOURS_GOOGLE; Google records every sitting, so their times are always shown. Where neither has any (hotel
-# dining rooms, most of mainland China), the restaurant's own website, its hotel's or another page that states them
-# (content/opening-hours-sites.json, 12 Oct 2026): HOURS_SITE gives each one's page {"url", "type": site|hotel|other},
-# and their times are shown too, except for those in its "daysOnly" (the page gave the days but not the times). Those in
-# its "replacesGuide" are used instead of the guide's or Google's, where those are plainly wrong.
-HOURS, HOURS_GOOGLE, HOURS_SITE, HOURS_TIMED, HOURS_CHECKED = {}, set(), {}, set(), {}
+# Where the guide gives none (all of Japan, most of mainland China, hotel dining rooms), the restaurant's own website,
+# its hotel's or another page that states them (content/opening-hours-sites.json, 12–13 Oct 2026; Google's hours were
+# used until 13 Oct 2026, but Google's terms don't allow keeping them): HOURS_SITE gives each one's page {"url", "type":
+# site|hotel|other}, and their times are shown, except for those in its "daysOnly" (the page gave the days but not the
+# times). Those in its "replacesGuide" are used instead of the guide's, where those are plainly wrong.
+HOURS, HOURS_SITE, HOURS_TIMED, HOURS_CHECKED = {}, {}, set(), {}
 ids = {r["id"] for r in restaurants}
-for fname, src in (("opening-hours.json", "michelin"), ("opening-hours-google.json", "google"), ("opening-hours-sites.json", "site")):
+for fname, src in (("opening-hours.json", "michelin"), ("opening-hours-sites.json", "site")):
     opening = read_json(CONTENT / fname) or {} if (CONTENT / fname).exists() else {}
     HOURS_CHECKED[src] = opening.get("checked", "")
     sources, days_only = opening.get("sources") or {}, set(opening.get("daysOnly") or [])
@@ -625,10 +624,7 @@ for fname, src in (("opening-hours.json", "michelin"), ("opening-hours-google.js
             problem(fname, f"{rid} has hours that aren't seven days like \"1200-1430,1900-2200;…\": {week!r}")
         else:
             HOURS[rid] = week
-            if src == "google":
-                HOURS_GOOGLE.add(rid)
-                HOURS_TIMED.add(rid)
-            elif src == "site":
+            if src == "site":
                 if not (sources.get(rid) or {}).get("url"):
                     problem(fname, f"{rid} has hours but no source page under \"sources\"")
                 HOURS_SITE[rid] = sources.get(rid) or {}
@@ -651,12 +647,11 @@ for rid, (avg, n) in (MEMBER_SCORES.get("scores") or {}).items():
 
 
 def hours_from(r):
-    """Where a restaurant's hours come from, with the month: "the MICHELIN Guide, October 2026", "Google, October 2026",
-    "the restaurant's website, October 2026"."""
+    """Where a restaurant's hours come from, with the month: "the MICHELIN Guide, October 2026", "the restaurant's
+    website, October 2026"."""
     if r["id"] in HOURS_SITE:
         return hours_site_name(r) + ", " + month_year(HOURS_CHECKED["site"][:7], "en")
-    src = "google" if r["id"] in HOURS_GOOGLE else "michelin"
-    return ("Google" if src == "google" else "the MICHELIN Guide") + ", " + month_year(HOURS_CHECKED[src][:7], "en")
+    return "the MICHELIN Guide, " + month_year(HOURS_CHECKED["michelin"][:7], "en")
 
 
 def hours_site_name(r):
@@ -3483,7 +3478,7 @@ def build_near_me(starred):
                      "change": r.get("change", ""), "changed": r.get("changeDate", "")[:7]})
     near_url = write_data("near.json", pack_near(rows))
     # Opening hours for the "Open on" filter, in their own file so Help me pick (which shares near.json) doesn't load them.
-    # "g" lists those from Google or a restaurant's own page, whose times near.js always trusts.
+    # "g" lists those from a restaurant's own page (or its hotel's, or a listing), whose times near.js always trusts.
     hours_url = write_data("hours.json", {"checked": HOURS_CHECKED["michelin"], "h": {r["id"]: HOURS[r["id"]] for r in starred if r["id"] in HOURS},
                                           "g": sorted(r["id"] for r in starred if r["id"] in HOURS_TIMED)})
     stats = guide_stats()
@@ -7562,7 +7557,7 @@ def restaurant_sources_html(r, michelin_url):
     # What still rests on the MICHELIN Guide's page: the stars (until a press release or announcement backs them,
     # star_source()), and the opening hours and dietary options taken from it before 13 Oct 2026.
     star = star_source(r)
-    taken = ([] if star else ["Stars"]) + (["opening hours"] if hours_lines(r) and r["id"] not in HOURS_GOOGLE and r["id"] not in HOURS_SITE else []) \
+    taken = ([] if star else ["Stars"]) + (["opening hours"] if hours_lines(r) and r["id"] not in HOURS_SITE else []) \
         + (["dietary options"] if r.get("diets") and not r.get("dietsManual") else [])
     if star:
         parts.append("Stars: " + a(star["url"], star["label"]) + (f", {e(nice_date(star['date']))}" if star.get("date") else ""))
@@ -7604,8 +7599,6 @@ def restaurant_sources_html(r, michelin_url):
         parts.append("Rating: " + a("https://www.google.com/maps", "Google Maps") + f", checked {RATINGS_CHECKED}")
     if r.get("memberScore"):
         parts.append("Members’ score: our signed-in members who have been there" + (f", updated {e(nice_date(MEMBER_SCORES['updated']))}" if MEMBER_SCORES.get("updated") else ""))
-    if r["id"] in HOURS_GOOGLE and hours_lines(r):
-        parts.append("Opening hours: " + a("https://www.google.com/maps", "Google Maps") + f", checked {e(nice_date(HOURS_CHECKED['google']))}")
     if r["id"] in HOURS_SITE and hours_lines(r):
         parts.append("Opening hours: " + a(HOURS_SITE[r["id"]]["url"], hours_site_name(r)) + f", checked {e(nice_date(HOURS_CHECKED['site']))}")
     parts.append("Exchange rates: " + a(EXCHANGE_RATES[1], EXCHANGE_RATES[0]) + rates_day())

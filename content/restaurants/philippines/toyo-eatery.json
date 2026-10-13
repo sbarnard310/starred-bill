@@ -39,13 +39,15 @@
   "menusChecked": "2026-10-12",
   "bookingOpens": "Online on TableCheck only. Each week's tables (Tuesday to Saturday) are released on a Thursday at 3pm Manila time, about three weeks ahead; for example, 20–24 October opened on 1 October. The restaurant doesn't take bookings further ahead by email or phone.",
   "bookingWindow": {
-    "type": "announced",
-    "note": "Each week's tables are released on the Thursday about three weeks before, at 3pm Manila time; the schedule is posted on the TableCheck booking page.",
+    "type": "weekly",
+    "weekday": "thu",
+    "days": 19,
     "time": "15:00",
     "tz": "Asia/Manila",
     "via": "TableCheck",
-    "source": "https://www.tablecheck.com/en/toyoeatery/reserve/message",
-    "checked": "2026-10-12"
+    "note": "Each Tuesday-to-Saturday week is released on the Thursday 19 days before, at 3pm Manila time.",
+    "source": "https://www.tablecheck.com/en/toyoeatery/reserve/landing",
+    "checked": "2026-10-13"
   },
   "bookingUrl": "https://www.tablecheck.com/en/toyoeatery/reserve/landing",
   "bookingPhone": "+63 917 720 8630, text messages only",

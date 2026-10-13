@@ -13,6 +13,7 @@
   "dinnerType": "menu",
   "dinnerNote": "Chef's tasting, 9 courses; service included (Salon menu $285)",
   "sourceType": "press",
+  "serviceIncluded": true,
   "source": "https://www.exploretock.com/perse/experience/288603/main-dining-room-tasting-menu",
   "noLunch": true,
   "lunchNote": "Dinner only",

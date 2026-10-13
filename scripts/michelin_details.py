@@ -7,7 +7,7 @@
     python3 scripts/michelin_details.py chefs FILE       add chefs from FILE: {"restaurant-id": {"chef": "…", "source": "michelin|site|press|manual"}}
     python3 scripts/michelin_details.py hours            write every matched restaurant's opening hours to content/opening-hours.json
 
-Run fetch then apply and hours after each guide release. A chef with "chefSource": "manual" is never overwritten.
+Run fetch then apply and hours after each guide release. A chef with "chefSource": "manual" is never overwritten, nor diets with "dietsManual": true.
 The download is kept in scripts/michelin-details.json (not committed).
 """
 import json
@@ -142,9 +142,10 @@ def apply():
             continue
         new = dict(r)
         new["michelinId"] = h["objectID"]
-        new["diets"] = diets_of(h)
-        if not new["diets"]:
-            new.pop("diets")
+        if not r.get("dietsManual"):  # diets corrected by hand from the restaurant's own site are kept
+            new["diets"] = diets_of(h)
+            if not new["diets"]:
+                new.pop("diets")
         if h.get("chef") and r.get("chefSource") != "manual":
             new["chef"], new["chefSource"] = tidy_chef(h["chef"]), "michelin"
         counts["chef"] += bool(new.get("chef")); counts["diets"] += bool(new.get("diets"))

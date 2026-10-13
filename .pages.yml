@@ -276,6 +276,10 @@ content:
             - { value: gluten-free, label: "Gluten-free options" }
             - { value: halal, label: "Halal" }
             - { value: kosher, label: "Kosher" }
+      - name: dietsManual
+        label: Dietary options corrected by hand
+        description: Tick when you've changed the dietary options from the restaurant's own site, so the MICHELIN refresh script never overwrites them.
+        type: boolean
       - name: michelinId
         label: MICHELIN Guide record id
         description: Filled in by the refresh script so it can match this restaurant exactly. Leave as it is.
@@ -534,6 +538,10 @@ content:
         label: No wine pairing offered
         description: Tick if the restaurant doesn't offer a wine pairing (checked on its website). Receipts then say "no pairing offered" instead of "no pairing listed". Leave the wine prices empty.
         type: boolean
+      - name: serviceIncluded
+        label: Prices include the tip or service
+        description: Tick only when the restaurant's own site says its prices already include the tip or service charge (Lazy Betty, Dirt Candy). In the US and Canada the bills then add only sales tax; elsewhere nothing.
+        type: boolean
       - name: sourceType
         label: Dinner price source
         type: select
@@ -781,7 +789,7 @@ content:
       - { name: bookingOpens, label: When tables are released, type: text }
       - name: bookingWindow
         label: Booking window (when bookings open)
-        description: "The rule the pages and booking reminders work dates out from. Rolling: bookings open a number of days (or months) before the date. Monthly: a whole month opens at once, on a day of an earlier month (ahead 1 = the month before). Announced: dates given out in a newsletter. None: no bookings."
+        description: "The rule the pages and booking reminders work dates out from. Rolling: bookings open a number of days (or months) before the date. Monthly: a whole month opens at once, on a day of an earlier month (ahead 1 = the month before). Weekly: every week on the same day, the week starting a number of days later opens. Announced: dates given out in a newsletter. None: no bookings."
         type: object
         fields:
           - name: type
@@ -791,12 +799,14 @@ content:
               values:
                 - { value: rolling, label: "Rolling (days or months ahead)" }
                 - { value: monthly, label: "Monthly (a month at a time)" }
+                - { value: weekly, label: "Weekly (a week at a time)" }
+                - { value: halfmonthly, label: "Twice a month (1st to 15th on the 15th before, the rest on the 1st)" }
                 - { value: announced, label: "Announced in a newsletter" }
                 - { value: none, label: "No bookings" }
-          - { name: days, label: "Rolling: days ahead (e.g. 30)", type: number }
+          - { name: days, label: "Rolling: days ahead (e.g. 30). Weekly: days from the release day to the first day of the week it opens", type: number }
           - { name: months, label: "Rolling: months ahead, to the day", type: number }
           - { name: day, label: "Monthly: day of the month it opens (e.g. 1 or 15)", type: number }
-          - { name: weekday, label: "Monthly: or the weekday it opens (mon, tue, wed, thu, fri, sat, sun)", type: string }
+          - { name: weekday, label: "Monthly: or the weekday it opens (mon, tue, wed, thu, fri, sat, sun). Weekly: the day each week's tables are released", type: string }
           - { name: nth, label: "Monthly: which one of that weekday (1 = first, 3 = third, -1 = last)", type: number }
           - { name: workday, label: "Monthly: moves to Monday when it falls on a weekend", type: boolean }
           - { name: ahead, label: "Monthly: months before the dining month (1 = the month before)", type: number }

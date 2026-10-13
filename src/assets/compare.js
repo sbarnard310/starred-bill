@@ -122,7 +122,7 @@ function receipt(r, f, best, i) {
     line(t("mealLunch"), f.lunch, r.noLunch ? "" : r.lunchNote, mark("lunch", L())) +
     line(t("hWine"), f.wine, "", mark("wine")) +
     line(t(L() ? "rcptLunchWine" : "rcptDinnerWine"), f.total, "", "rc-total " + mark("total")) +
-    '<div class="rc-foot">' + esc(t(serviceLabel(r.country))) + "<br>" + esc(t("rcptChecked", { d: checked })) + (sources ? " · " + sources : "") + "</div>" +
+    '<div class="rc-foot">' + esc(t(serviceLabel(r.country, r))) + "<br>" + esc(t("rcptChecked", { d: checked })) + (sources ? " · " + sources : "") + "</div>" +
     "</article>";
 }
 

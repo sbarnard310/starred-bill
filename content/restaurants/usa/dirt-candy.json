@@ -14,6 +14,7 @@
   "dinnerNote": "Five-course tasting menu (tip included, tax extra)",
   "wine": 55,
   "sourceType": "site",
+  "serviceIncluded": true,
   "source": "https://www.dirtcandynyc.com/dinner-menu",
   "noLunch": true,
   "lunchNote": "Dinner only",

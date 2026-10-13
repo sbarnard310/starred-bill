@@ -26,9 +26,7 @@
   "lng": -73.9965,
   "placeId": "ChIJiVVSAE1awokRzdvqVP_z3aA",
   "michelinId": "283703",
-  "diets": [
-    "vegetarian"
-  ],
+  "dietsManual": true,
   "chef": "Max Natmessnig and Marco Prins",
   "chefSource": "site",
   "menus": [

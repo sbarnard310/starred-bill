@@ -9,7 +9,7 @@
   "reviews": 1065,
   "dinner": 120,
   "dinnerType": "menu",
-  "dinnerNote": "Four-course prix fixe, plus 20% service",
+  "dinnerNote": "Four-course prix fixe",
   "sourceType": "site",
   "source": "https://www.jeune-jolie.com/m-e-n-u",
   "noLunch": true,
@@ -34,7 +34,7 @@
       "price": 120,
       "wine": 120,
       "courses": 4,
-      "note": "A choice of dishes at each course; also served at the bar and lounge; beverage pairing $100, alcohol-free Sans Esprit pairing $80; wagyu main $55 extra"
+      "note": "A choice of dishes at each course; also served at the bar and lounge; wine pairing $120, beverage pairing $100, alcohol-free Sans Esprit pairing $80; wagyu main $55 extra"
     }
   ],
   "menusSource": "https://www.jeune-jolie.com/m-e-n-u",

@@ -8,8 +8,9 @@
   "reviews": 229,
   "dinnerType": "menu",
   "dinner": 195,
-  "dinnerNote": "Sushi omakase, 15–18 courses (shorter omakase by the sous chef $117)",
+  "dinnerNote": "Sushi omakase, 15–18 courses (shorter omakase by the sous chef $99)",
   "sourceType": "press",
+  "servicePct": 26,
   "source": "https://www.exploretock.com/tatsudallas",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -34,9 +35,9 @@
     {
       "name": "Short Omakase by the sous chef",
       "meal": "dinner",
-      "price": 117,
+      "price": 99,
       "courses": 11,
-      "note": "One appetizer and ten pieces of nigiri, served by Chef Yoji in the seven-seat Cherrywood room at 8:15pm. Tock's prepaid price, which appears to include the 18% service charge."
+      "note": "One appetizer and ten pieces of nigiri, served by Chef Yoji in the seven-seat Cherrywood room at 8:15pm. Plus the 18% service charge ($117 prepaid on Tock)."
     }
   ],
   "menusSource": "https://www.exploretock.com/tatsudallas/",
@@ -51,6 +52,14 @@
   "starsSince": 2024,
   "bookingOpens": "Online on Tock only, as prepaid tickets for parties of one to four. Tables are released twice a month at 8am Dallas time: on the 1st for the 16th to the end of that month, and on the 15th for the 1st to the 15th of the next month. Concierge and third-party bookings are not accepted.",
   "bookingUrl": "https://www.exploretock.com/tatsudallas/",
+  "bookingWindow": {
+    "type": "halfmonthly",
+    "time": "08:00",
+    "tz": "America/Chicago",
+    "via": "Tock",
+    "source": "https://www.tatsu-dallas.com/",
+    "checked": "2026-10-13"
+  },
   "bookingPhone": "+1 469 271 7710",
   "cancellation": "Prepaid tickets are generally non-refundable. Guests who can't come are asked to transfer the booking on Tock first; otherwise the restaurant generally refunds cancellations made five calendar days or more ahead.",
   "groups": "Bookings are for one to four guests only. For a buyout (party of 10), email info@tatsu-dallas.com.",

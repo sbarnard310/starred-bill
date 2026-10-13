@@ -14,9 +14,12 @@
   "dinnerNoteIt": "Menu degustazione, 9 portate (6 portate €230)",
   "sourceType": "site",
   "source": "https://www.ristoranteilpagliaccio.com/",
-  "noLunch": true,
-  "lunchNote": "Dinner only",
-  "lunchNoteIt": "Solo a cena",
+  "lunch": 230,
+  "lunchType": "menu",
+  "lunchSource": "https://ristoranteilpagliaccio.com/en/menu/",
+  "lunchSourceType": "site",
+  "lunchNote": "Saturday lunch only: Scintille, 6 courses (Circus €270)",
+  "lunchNoteIt": "Pranzo solo il sabato: Scintille, 6 portate (Circus €270)",
   "website": "https://www.ristoranteilpagliaccio.com/",
   "lat": 41.89793,
   "lng": 12.467373,
@@ -35,14 +38,14 @@
       "meal": "dinner",
       "price": 270,
       "courses": 9,
-      "note": "Drinks not included"
+      "note": "Drinks not included; also at Saturday lunch"
     },
     {
       "name": "Scintille tasting menu",
       "meal": "dinner",
       "price": 230,
       "courses": 6,
-      "note": "A six-course surprise menu; drinks not included"
+      "note": "A six-course surprise menu; drinks not included; also at Saturday lunch"
     },
     {
       "name": "Parallels Experience menu",

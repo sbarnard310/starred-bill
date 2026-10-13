@@ -505,7 +505,7 @@ function receipt(r) {
     receiptLine(t("mealLunch"), lunch, r.noLunch ? "" : pick(r, "lunchNote"), meal === "lunch") +
     receiptLine(t("hWine"), wine ? { text: money(wine, r) } : { dash: true }, wine ? "" : noWineNote(r), false) +
     (total != null ? '<span class="rc-line rc-total"><span class="rc-k">' + esc(t(L() ? "rcptLunchWine" : "rcptDinnerWine")) + '</span><span class="rc-dots" aria-hidden="true"></span>' + sep + '<span class="rc-v">' + money(total, r) + "</span></span>" : "") +
-    '<span class="rc-foot">' + esc(t(serviceLabel(r.country))) + "<br>" + esc(t("rcptChecked", { d: checked })) + (src ? " ·" + src : "") + "</span>" +
+    '<span class="rc-foot">' + esc(t(serviceLabel(r.country, r))) + "<br>" + esc(t("rcptChecked", { d: checked })) + (src ? " ·" + src : "") + "</span>" +
     "</span></span>";
 }
 // The computer table's price column: the chosen meal's price on a cream stub, with the wine pairing under it.

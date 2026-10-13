@@ -14,6 +14,7 @@
   "dinnerNoteZh": "品嚐套餐，10道菜以上（啤酒搭配 $75、$115 或 $145）",
   "wine": 75,
   "sourceType": "site",
+  "servicePct": 33,
   "source": "https://www.moodytongue.com/faqs",
   "noLunch": true,
   "lunchNote": "Dinner only",

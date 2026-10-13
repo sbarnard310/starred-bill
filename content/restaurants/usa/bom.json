@@ -30,7 +30,8 @@
       "meal": "dinner",
       "price": 295,
       "courses": 10,
-      "note": "Served at the marble chef's counter: small seafood and vegetable courses, then meats grilled at the counter, a traditional Korean rice, banchan and soup course, and desserts."
+      "note": "Served at the marble chef's counter: small seafood and vegetable courses, then meats grilled at the counter, a traditional Korean rice, banchan and soup course, and desserts. Exploratory wine pairing $245 (Tradition pairing $550, non-alcoholic $115), from the wine list (bom-nyc.com/s/wine-list-1.pdf).",
+      "wine": 245
     }
   ],
   "menusSource": "https://www.bom-nyc.com/menu-1",

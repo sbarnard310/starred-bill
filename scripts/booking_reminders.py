@@ -61,6 +61,12 @@ def bw_opens(bw, day):
     if bw.get("type") == "rolling" and bw.get("months"):
         y, m = add_months(day.year, day.month, -bw["months"])
         return date(y, m, min(day.day, month_days(y, m)))
+    if bw.get("type") == "weekly":  # a week at a time: each `weekday`, the week starting `days` later opens
+        start = (BW_DAYS.index(bw["weekday"]) + bw["days"]) % 7
+        return day - timedelta(days=((day.weekday() + 1) % 7 - start) % 7 + bw["days"])
+    if bw.get("type") == "halfmonthly":  # the 1st to the 15th open on the 15th of the month before, the rest on the 1st
+        y, m = add_months(day.year, day.month, -1)
+        return date(y, m, 15) if day.day <= 15 else date(day.year, day.month, 1)
     if bw.get("type") != "monthly":
         return None
     y, m = add_months(day.year, day.month, -(bw.get("ahead") or 1))
@@ -233,7 +239,7 @@ def main():
 
     if args.preview or args.test_to:
         w = windows.get(args.restaurant)
-        if not w or w["bw"].get("type") not in ("rolling", "monthly"):
+        if not w or w["bw"].get("type") not in ("rolling", "monthly", "weekly", "halfmonthly"):
             sys.exit(f"{args.restaurant} has no booking window we can work dates out from.")
         if args.day:
             day = date.fromisoformat(args.day)

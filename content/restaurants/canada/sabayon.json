@@ -10,6 +10,8 @@
   "dinner": 165,
   "wine": 70,
   "sourceType": "site",
+  "serviceIncluded": true,
+  "servicePct": 15,
   "source": "https://sabayon.ca/collections/menu-degustation",
   "website": "https://sabayon.ca",
   "lat": 45.4806436,

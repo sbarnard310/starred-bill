@@ -10,6 +10,7 @@
   "dinner": 285,
   "dinnerNote": "Tasting menu, 8 courses, service included (bar menu $185)",
   "sourceType": "site",
+  "serviceIncluded": true,
   "source": "https://www.lazybettyatl.com/menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -19,9 +20,10 @@
   "placeId": "ChIJ00zCHiAH9YgR3l-kmURAKrM",
   "michelinId": "1196006",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
+  "dietsManual": true,
   "chef": "Ron Hsu",
   "chefSource": "michelin",
   "wine": 205,

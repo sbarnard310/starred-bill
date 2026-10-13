@@ -228,14 +228,14 @@ function billHtml(t) {
     const r = infoOf(x.r), meal = mealOf(t, x), p = mealPrice(r, meal);
     if (p.why) return { x, r, meal, why: p.why };
     const w = t.wine ? wineOf(r, meal) : null, own = p.n + (w || 0), rate = fx(r.cur, c);
-    const [kind, pct] = p.type === "spend" ? ["spend", 0] : SERVICE[r.country] || ["before", 0];
-    return { x, r, meal, amount: own * rate, extra: kind === "spend" ? 0 : own * rate * serviceAdd(r.country), approx: r.cur !== c, kind, pct, type: p.type,
+    const [kind, pct] = p.type === "spend" ? ["spend", 0] : serviceOf(r.country, r);
+    return { x, r, meal, amount: own * rate, extra: own * rate * pct / 100, approx: r.cur !== c, kind, pct, type: p.type,
       noWine: t.wine && w == null ? (r.noPairing ? "no pairing offered" : "no pairing listed") : "" };
   });
   const counted = items.filter((b) => !b.why), approx = counted.some((b) => b.approx);
   const sub = counted.reduce((a, b) => a + b.amount, 0), extra = counted.reduce((a, b) => a + b.extra, 0);
   const kindNote = (b) => b.kind === "included" ? t_("billIncluded") : b.kind === "tax" ? t_("billTax") : b.kind === "spend" ? t_("typicalSpend") : !b.pct ? "" :
-    t_({ before: "billBefore", plusplus: "billPlus", taxtip: "billTaxTip", tip: "billTip" }[b.kind], { p: b.pct.toLocaleString("en-GB") });
+    t_({ before: "billBefore", plusplus: "billPlus", taxtip: "billTaxTip", tip: "billTip", plustax: "billTipIncl" }[b.kind], { p: b.pct.toLocaleString("en-GB") });
   const sep = '<span class="sr-only">, </span>';
   const line = (k, v, note, cls) => '<span class="rc-line' + (cls ? " " + cls : "") + '"><span class="rc-k">' + esc(k) + '</span><span class="rc-dots" aria-hidden="true"></span>' + sep +
     '<span class="rc-v' + (v == null ? " muted" : "") + '">' + (v == null ? "–" : v) + "</span>" + (note ? sep + '<span class="rc-note">' + esc(note) + "</span>" : "") + "</span>";
@@ -339,7 +339,7 @@ function loadWindows() {
 }
 function bwHtml(t, x, ro) {
   const w = bwData && bwData[x.r], day = x.day || t.starts_on, today = new Date().toLocaleDateString("en-CA");
-  if (!w || !isTrip(t) || x.booked || !day || day < today || !["rolling", "monthly"].includes(w.bw.type)) return "";
+  if (!w || !isTrip(t) || x.booked || !day || day < today || !["rolling", "monthly", "weekly", "halfmonthly"].includes(w.bw.type)) return "";
   const on = bwOpens(w.bw, day);
   if (!on) return "";
   const first = x.day ? "" : " for the trip's first day";

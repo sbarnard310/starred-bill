@@ -28,9 +28,8 @@
   "lng": 121.56814,
   "placeId": "ChIJMX_7qLurQjQRy5IA3BMsmv4",
   "michelinId": "550759",
-  "diets": [
-    "vegetarian"
-  ],
+  "chef": "Liang Wei-wei",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Dinner menu with the snow crab and caviar course",
@@ -89,5 +88,6 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

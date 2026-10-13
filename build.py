@@ -75,7 +75,7 @@ ID_PATTERN = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
 
 # Booking windows (10 Oct 2026): when a restaurant's tables go on sale, as `bookingWindow` in its file (README lists the
 # fields). bwOpens() in common.js and scripts/booking_reminders.py work out the dates; the pages say it with bwText().
-BW_TYPES = ("rolling", "monthly", "announced", "none")
+BW_TYPES = ("rolling", "monthly", "weekly", "halfmonthly", "announced", "none")
 BW_WEEKDAYS = ("sun", "mon", "tue", "wed", "thu", "fri", "sat")
 BW_PUBLIC = ("type", "days", "months", "day", "weekday", "nth", "ahead", "workday", "time", "tz", "via")  # what the pages need
 
@@ -95,6 +95,8 @@ def bw_problems(w):
             out.append("a monthly window needs day (1 to 31), or weekday (mon, tue…) with nth (1 to 4, or -1 for the last)")
         if not num("ahead", 1, 12):
             out.append("a monthly window needs ahead: how many months before the dining month it opens (1 = the month before)")
+    elif w["type"] == "weekly" and not (w.get("weekday") in BW_WEEKDAYS and num("days", 1, 400)):
+        out.append("a weekly window needs weekday (the day each week's tables are released: mon, tue…) and days (from that day to the first day of the week it opens)")
     if w.get("time") is not None and not re.fullmatch(r"([01]\d|2[0-3]):[0-5]\d", str(w["time"])):
         out.append("time must be 24-hour, like 10:00")
     if w.get("type") != "none" and not re.fullmatch(r"[A-Za-z]+(/[A-Za-z_+-]+)+", str(w.get("tz") or "")):
@@ -118,6 +120,11 @@ def bw_text(w):
         return w.get("note") or "Dates are announced in the restaurant's newsletter."
     if w["type"] == "rolling":
         when = (f"{w['days']} days ahead" if w.get("days") else "a month ahead, to the day" if w["months"] == 1 else f"{w['months']} months ahead, to the day")
+    elif w["type"] == "weekly":
+        day_name = dict(zip(BW_WEEKDAYS, ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")))[w["weekday"]]
+        when = f"a week at a time, every {day_name} for the week starting {w['days']} days later"
+    elif w["type"] == "halfmonthly":
+        when = "twice a month: on the 15th for the 1st to the 15th of the next month, and on the 1st for the rest of that month"
     else:
         nth = {1: "first", 2: "second", 3: "third", 4: "fourth", -1: "last"}
         day = w.get("day", 1)
@@ -300,6 +307,25 @@ for pid, p in places.items():
     if len(p.get("description") or "") > 155:
         problem(f"places ({pid})", f"its description is {len(p['description'])} characters; keep it to 155")
 
+
+def china_map(lat, lng):
+    """Mainland China's Google map is drawn on the shifted Chinese grid (GCJ-02), about 500 m from the GPS positions
+    the MICHELIN Guide gives, so its pins are moved onto that grid for drawing (the files keep the GPS positions)."""
+    a, ee = 6378245.0, 0.00669342162296594323
+    x, y = lng - 105.0, lat - 35.0
+    dlat = (-100 + 2 * x + 3 * y + 0.2 * y * y + 0.1 * x * y + 0.2 * math.sqrt(abs(x))
+            + (20 * math.sin(6 * x * math.pi) + 20 * math.sin(2 * x * math.pi)) * 2 / 3
+            + (20 * math.sin(y * math.pi) + 40 * math.sin(y / 3 * math.pi)) * 2 / 3
+            + (160 * math.sin(y / 12 * math.pi) + 320 * math.sin(y * math.pi / 30)) * 2 / 3)
+    dlng = (300 + x + 2 * y + 0.1 * x * x + 0.1 * x * y + 0.1 * math.sqrt(abs(x))
+            + (20 * math.sin(6 * x * math.pi) + 20 * math.sin(2 * x * math.pi)) * 2 / 3
+            + (20 * math.sin(x * math.pi) + 40 * math.sin(x / 3 * math.pi)) * 2 / 3
+            + (150 * math.sin(x / 12 * math.pi) + 300 * math.sin(x / 30 * math.pi)) * 2 / 3)
+    rad = lat / 180 * math.pi
+    m = 1 - ee * math.sin(rad) ** 2
+    return (round(lat + dlat * 180 / ((a * (1 - ee)) / (m * math.sqrt(m)) * math.pi), 6),
+            round(lng + dlng * 180 / (a / math.sqrt(m) * math.cos(rad) * math.pi), 6))
+
 restaurants = []
 seen = {}
 for f in sorted((CONTENT / "restaurants").rglob("*.json")):
@@ -391,6 +417,9 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
         "cityPath": city["path"], "cityType": city["type"],
         "_chain": chain(city["id"]),
     })
+    if r["country"] == "china" and r.get("lat") is not None and r.get("lng") is not None:
+        r["_gps"] = (r["lat"], r["lng"])  # structured data keeps the true position
+        r["lat"], r["lng"] = china_map(r["lat"], r["lng"])
     restaurants.append(r)
 
 # Guides: one JSON file per article in content/guides/, its name being the page's address (/guides/<name>/).
@@ -688,7 +717,7 @@ PAGE_ONLY = ("bookingWindow", "noBookings", "queue", "byob", "servicePct", "hote
 
 
 def public(r):
-    out = {k: v for k, v in r.items() if not k.startswith("_") and k not in ("chefSource", "michelinId") + PAGE_ONLY}
+    out = {k: v for k, v in r.items() if not k.startswith("_") and k not in ("chefSource", "michelinId", "dietsManual") + PAGE_ONLY}
     if r.get("bookingWindow") and not r.get("status"):
         out["bw"] = bw_public(r["bookingWindow"])
     return out
@@ -2970,7 +2999,8 @@ def json_ld(p, crumbs, starred, description, lang="en", texts=None, faq=(), url=
             if r.get("address"):
                 item["address"] = r["address"]
             if r.get("lat") is not None:
-                item["geo"] = {"@type": "GeoCoordinates", "latitude": r["lat"], "longitude": r["lng"]}
+                lat, lng = r.get("_gps") or (r["lat"], r["lng"])
+                item["geo"] = {"@type": "GeoCoordinates", "latitude": lat, "longitude": lng}
             if r.get("website"):
                 item["url"] = r["website"]
             if r.get("dinner") is not None and r.get("dinnerType") == "menu":
@@ -3021,13 +3051,19 @@ def same_restaurant(w, r):
     return bool(ta and tb and len(ta & tb) / min(len(ta), len(tb)) >= 0.5) or d < 15
 
 
+def world_rows(path):
+    """The guide's world list, with mainland China's positions moved onto Google's Chinese map grid as ours are."""
+    rows = read_json(path).get("restaurants", [])
+    return [w[:2] + list(china_map(w[2], w[3])) + w[4:] if w[5].endswith(", Chinese Mainland") else w for w in rows]
+
+
 def build_world(ours):
     """The homepage's pins for starred restaurants we don't have prices for yet, written to /data/world.json.
     Ours includes closed and destarred ones, so a restaurant the guide hasn't dropped yet doesn't come back as a pin."""
     path = CONTENT / "world-starred.json"
     if not path.exists():
         return None, 0
-    rows = read_json(path).get("restaurants", [])
+    rows = world_rows(path)
     near = {}
     for r in ours:
         if r.get("lat") is not None:
@@ -3216,7 +3252,7 @@ def home_sample_html(starred):
     full.sort(key=lambda r: (-r["stars"], RESTAURANT_PAGES.index(r["id"])))
     def one(i, r):
         where = home_where(r)
-        kind = SERVICE.get(r["country"], ("before", 0))[0]
+        kind = service_of(r)[0]
         return (f'<figure class="sample"{" hidden" if i else ""} data-sample="{i}">'
                 + receipt_html(r, kind, "", convert=True)
                 + f'<figcaption><a href="{e(r["page"])}" data-home="sample"><strong>{e(r["name"])}</strong></a> {star_icons(r["stars"])}'
@@ -3450,12 +3486,14 @@ NEAR_DIETS = {d: i for i, d in enumerate(DIETS)}
 
 def build_bill_data(starred):
     """/data/bill.json: the lunch and wine prices the homepage's wishlist bill adds up (the homepage itself carries only dinner).
-    One row per restaurant with any of them, keyed by id; noLunch is 1 when there's no lunch service, noPairing 1 when there's no wine pairing. Loaded only when the wishlist has something in it."""
-    cols = ["lunch", "lunchType", "noLunch", "wine", "lunchWine", "noPairing"]
+    One row per restaurant with any of them, keyed by id; noLunch is 1 when there's no lunch service, noPairing 1 when there's no wine pairing, serviceIncluded 1 (else left off) when its prices include the tip. Loaded only when the wishlist has something in it."""
+    cols = ["lunch", "lunchType", "noLunch", "wine", "lunchWine", "noPairing", "serviceIncluded"]
     rows = {}
     for r in starred:
         row = [r.get("lunch"), r.get("lunchType", "menu"), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"), 1 if r.get("noPairing") else 0]
-        if row[0] is not None or row[2] or row[3] is not None or row[4] is not None or row[5]:
+        if r.get("serviceIncluded"):  # its prices include the tip (serviceOf() in common.js)
+            row.append(1)
+        if row[0] is not None or row[2] or row[3] is not None or row[4] is not None or row[5] or len(row) > 6:
             rows[r["id"]] = row
     (OUT / "data" / "bill.json").write_bytes(as_json({"cols": cols, "r": rows}).encode("utf-8"))
 
@@ -3666,12 +3704,13 @@ def build_compare(starred):
     compare_part() of their id, one compact row each (columns listed in each file), so the page loads only the files
     holding the visitor's wishlist. The page is personal (it reads the wishlist in the browser), so it stays out of search engines and the sitemap."""
     cols = ["id", "name", "stars", "cuisine", "where", "path", "country", "cur", "dinner", "dinnerType", "dinnerNote", "lunch", "lunchType",
-            "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice", "noPairing", "href"]
+            "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice", "noPairing", "href",
+            "serviceIncluded"]
     rows = [[r["id"], r["name"], r["stars"], r.get("cuisine", ""), near_where(r), r["cityPath"], r["country"], r["cur"],
              r.get("dinner"), r.get("dinnerType", "menu"), r.get("dinnerNote", ""), r.get("lunch"), r.get("lunchType", "menu"),
              r.get("lunchNote", ""), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"),
              r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0,
-             1 if r.get("noPairing") else 0, restaurant_href(r)]
+             1 if r.get("noPairing") else 0, restaurant_href(r), 1 if r.get("serviceIncluded") else 0]
             for r in starred]
     parts = [[] for _ in range(COMPARE_PARTS)]
     for row in rows:
@@ -4630,7 +4669,7 @@ def michelin_links():
     if not path.exists():
         return {}
     near = {}
-    for w in read_json(path).get("restaurants", []):
+    for w in world_rows(path):
         near.setdefault((round(w[2]), round(w[3])), []).append(w)
     out = {}
     for r in restaurants:
@@ -6642,13 +6681,32 @@ def read_service():
     return out
 
 
+def read_service_tax():
+    """SERVICE_TAX in common.js: the sales tax alone, for restaurants whose prices include the tip (`serviceIncluded`)."""
+    js = (SRC / "assets" / "common.js").read_text("utf-8")
+    m = re.search(r"const SERVICE_TAX = \{([^}]*)\}", js)
+    return {k: float(v) for k, v in re.findall(r'"?([\w-]+)"?: ([\d.]+)', m.group(1))} if m else {}
+
+
 SERVICE = read_service()
+SERVICE_TAX = read_service_tax()
+
+
+def service_of(r):
+    """A restaurant's (kind, percentage added on top), as serviceOf() in common.js, with its own servicePct where it has one."""
+    stay = SERVICE.get(r["country"], ("before", 0))
+    if r.get("serviceIncluded"):
+        stay = (("plustax", SERVICE_TAX.get(r["country"], 0)) if stay[0] == "taxtip" else ("included", 0) if stay[0] in ("before", "tip") else stay)
+    if r.get("servicePct") is not None:  # the restaurant's own service charge, where it differs from the country's usual one
+        stay = (stay[0] if stay[0] in SERVICE_ADDS else "before", r["servicePct"])
+    return stay
 # The receipt's footer line for each kind, as SERVICE_LABEL and the English words in common.js; and how the same reads mid-sentence.
 SERVICE_FOOT = {"before": "Per person, before service", "included": "Per person, service included", "plusplus": "Per person, ++ (service and tax added)",
-                "taxtip": "Per person, before tax and tip", "tip": "Per person, before tip", "tax": "Per person, tax included"}
+                "taxtip": "Per person, before tax and tip", "tip": "Per person, before tip", "tax": "Per person, tax included",
+                "plustax": "Per person, tip included, before tax"}
 SERVICE_SAYS = {"before": "before service", "included": "including service", "plusplus": "before service and tax (“++”)",
-                "taxtip": "before tax and tip", "tip": "before tip", "tax": "including tax"}
-SERVICE_ADDS = {"before": "service", "plusplus": "service and tax", "taxtip": "tax and tip", "tip": "a tip"}
+                "taxtip": "before tax and tip", "tip": "before tip", "tax": "including tax", "plustax": "including the tip, before tax"}
+SERVICE_ADDS = {"before": "service", "plusplus": "service and tax", "taxtip": "tax and tip", "tip": "a tip", "plustax": "tax"}
 
 for _r in restaurants:
     if _r["id"] in RESTAURANT_PAGES and not _r.get("status"):
@@ -6942,7 +7000,7 @@ def book_html(r):
         # (restaurant.js), and members can ask for an email the day before (account.js, scripts/booking_reminders.py).
         check = ('<span class="bw-check"><span class="bw-next" id="bwNext" hidden></span>'
                  '<label for="bwDate">Going on a particular day? Pick it to see when bookings open for it.</label>'
-                 '<input type="date" id="bwDate"><span class="bw-answer" id="bwAnswer" aria-live="polite"></span></span>') if bw and bw["type"] in ("rolling", "monthly") else ""
+                 '<input type="date" id="bwDate"><span class="bw-answer" id="bwAnswer" aria-live="polite"></span></span>') if bw and bw["type"] in ("rolling", "monthly", "weekly", "halfmonthly") else ""
         steps.append(("When tables are released", e(timing) + (f" {e(bw['note'])}" if bw and bw.get("note") and r.get("bookingOpens") is None and bw["type"] != "announced" else "") + check))
     if r.get("bookingUrl") or r.get("bookingPhone"):
         steps.append(("Where to book", " ".join(x for x in (
@@ -7107,7 +7165,7 @@ def restaurant_answer(r, stay):
     if cheapest:
         out.append(f"The cheapest way in is {the_menu(cheapest)}, at {m(cheapest['price'])}.")
     if d is not None and dtype in ("menu", "spend"):
-        out.append((f"Prices are {SERVICE_SAYS.get(kind, 'before service')}" if kind not in ("included", "tax") else f"Prices {SERVICE_SAYS[kind].replace('including', 'include')}") + (
+        out.append((f"Prices are {SERVICE_SAYS.get(kind, 'before service')}" if kind not in ("included", "tax", "plustax") else f"Prices {SERVICE_SAYS[kind].replace('including', 'include')}") + (
             f"; with about {pct:g}% for {SERVICE_ADDS[kind]}, dinner for two{' with wine' if w else ''} comes to roughly {m(round((d + (w or 0)) * 2 * (1 + pct / 100), -1))}."
             if pct and kind in SERVICE_ADDS else f", so dinner for two{' with wine' if w else ''} comes to {m((d + (w or 0)) * 2)}."))
     return " ".join(out)
@@ -7275,9 +7333,7 @@ def build_restaurant_pages():
     shared = {n for n, k in names.items() if k > 1}
     for r in (x for x in live if x.get("page")):
         city = places[r["city"]]
-        stay = SERVICE.get(r["country"], ("before", 0))
-        if r.get("servicePct") is not None:  # the restaurant's own service charge, where it differs from the country's usual one
-            stay = (stay[0] if stay[0] in SERVICE_ADDS else "before", r["servicePct"])
+        stay = service_of(r)
         kind = stay[0]
         cur = r["cur"]
         where = area_line(r)
@@ -7473,7 +7529,7 @@ def build_restaurant_pages():
                 "award": [f"{r['stars']} MICHELIN Star{'s' if r['stars'] > 1 else ''}"] + [t for t, x in ranking_lines(r)] if r.get("rankings") else f"{r['stars']} MICHELIN Star{'s' if r['stars'] > 1 else ''}",
                 "starRating": {"@type": "Rating", "ratingValue": r["stars"], "bestRating": 3, "author": {"@type": "Organization", "name": "MICHELIN Guide"}},
                 "priceRange": f"{money(d, cur)} tasting menu" if d is not None and r.get("dinnerType", "menu") == "menu" else None,
-                "geo": {"@type": "GeoCoordinates", "latitude": r["lat"], "longitude": r["lng"]} if r.get("lat") is not None else None,
+                "geo": dict(zip(("@type", "latitude", "longitude"), ("GeoCoordinates",) + (r.get("_gps") or (r["lat"], r["lng"])))) if r.get("lat") is not None else None,
                 "acceptsReservations": r.get("bookingUrl"),
                 "image": restaurant_og(r),
                 "hasMenu": [{"@type": "Menu", "name": m["name"], "offers": {"@type": "Offer", "price": m["price"], "priceCurrency": cur}} for m in r.get("menus", [])]

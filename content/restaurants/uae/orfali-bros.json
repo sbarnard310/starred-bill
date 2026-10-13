@@ -10,10 +10,10 @@
   "rating": 4.6,
   "reviews": 2337,
   "dinnerType": "menu",
-  "dinner": 350,
-  "dinnerNote": "Tasting menu (other menus from AED 295)",
+  "dinner": 795,
+  "dinnerNote": "The Voyage menu (other menus from AED 295)",
   "sourceType": "site",
-  "source": "https://orfalibros.com/",
+  "source": "https://orfalibros.com/the-voyage-menu/",
   "website": "https://www.orfalibros.com",
   "lat": 25.2187895,
   "lng": 55.2613791,
@@ -23,14 +23,38 @@
     "vegetarian",
     "halal"
   ],
-  "dinnerNoteAr": "قائمة تذوق (قوائم أخرى بدءًا من AED 295)",
-  "lunch": 350,
+  "dinnerNoteAr": "قائمة The Voyage (قوائم أخرى بدءًا من AED 295)",
+  "lunch": 295,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Sundays",
-  "lunchNoteAr": "القائمة نفسها على الغداء · الأحد",
+  "lunchNote": "Aromas of Aleppo menu · Sunday lunch, on selected Sundays",
+  "lunchNoteAr": "قائمة Aromas of Aleppo · غداء الأحد",
   "lunchSourceType": "site",
-  "lunchSource": "https://orfalibros.com/",
+  "lunchSource": "https://orfalibros.com/aromas-of-aleppo-295-aed-per-person/",
   "chef": "Mohammad Orfali",
   "chefSource": "press",
-  "changeNoteAr": "حصل على نجمة ثانية"
+  "changeNoteAr": "حصل على نجمة ثانية",
+  "menus": [
+    {
+      "name": "The Voyage menu",
+      "meal": "dinner",
+      "price": 795,
+      "note": "About 14 courses, changing with the seasons; served every dinner"
+    },
+    {
+      "name": "OG menu",
+      "meal": "dinner",
+      "price": 350,
+      "courses": 7,
+      "note": "Offered at dinner on some nights only (Sunday and Thursday in the booking system); add-ons from AED 35, and a non-alcoholic pairing of three fermented drinks for AED 80"
+    }
+  ],
+  "menusSource": "https://orfalibros.com/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2026,
+  "bookingOpens": "Online through SevenRooms, which takes payment when booking. Dinner sittings run from 5.45pm to 10.15pm, and the Sunday lunch from 1.45pm to 2.15pm. Tables were open about five weeks ahead when checked.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/orfalibros/reservations/create/search",
+  "bookingPhone": "+971 4 258 0510",
+  "cancellation": "Cancel at least 72 hours ahead for a refund, less a 3% administration fee that is never refunded. Later cancellations lose the full prepayment. Fewer guests are refunded only if the booking can move to a smaller table, and never on the day. Bookings may not be resold or transferred; ask rsvp@orfalibros.com about transfers.",
+  "infoSource": "https://orfalibros.com/return-and-refund-policy/",
+  "infoChecked": "2026-10-13"
 }

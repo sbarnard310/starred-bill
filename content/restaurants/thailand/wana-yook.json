@@ -8,12 +8,12 @@
   "cuisine": "Thai contemporary",
   "rating": 4.6,
   "reviews": 264,
-  "dinner": 4950,
+  "dinner": 5500,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, plus service and VAT (++)",
-  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
-  "sourceType": "press",
-  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "dinnerNote": "Tasting menu, about 10 courses, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูชิมราว 10 คอร์ส ยังไม่รวมค่าบริการและภาษี (++)",
+  "sourceType": "site",
+  "source": "https://www.tablecheck.com/en/wana-yook-bangkok/reserve/message",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTh": "เฉพาะมื้อค่ำ",
@@ -23,5 +23,29 @@
   "placeId": "ChIJOTiQRnKf4jAR5hsFRsOF2RM",
   "michelinId": "1200249",
   "chef": "Chalee Kader",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 3900,
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 5500,
+      "wine": 3900,
+      "courses": 10,
+      "note": "About 10 courses, with a welcome drink and snacks; still and sparkling water included; plus 10% service and 7% VAT"
+    }
+  ],
+  "menusSource": "https://www.tablecheck.com/en/wana-yook-bangkok/reserve/message",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through TableCheck. A non-refundable deposit of THB 3,000 a person is taken to confirm the booking.",
+  "bookingUrl": "https://www.tablecheck.com/en/wana-yook-bangkok/reserve",
+  "bookingPhone": "+66 63 662 3598",
+  "cancellation": "The deposit is kept for cancellations and no-shows. Changes made at least 48 hours ahead let the deposit be moved to another date within three months. Fewer guests must be confirmed 24 hours ahead. Tables are held for 20 minutes.",
+  "groups": "Larger parties book by phone or by email (info.wanayook@515victory.com).",
+  "dressCode": "Smart casual.",
+  "children": "Children over 11 are welcome and have the tasting menu.",
+  "duration": "About two hours. Arrive 15 minutes early for a welcome drink and snacks.",
+  "byob": "Guests may bring their own bottles if they buy one bottle from the wine list for each, or pay THB 2,000 plus service and VAT corkage a bottle.",
+  "infoSource": "https://www.tablecheck.com/en/wana-yook-bangkok/reserve/message",
+  "infoChecked": "2026-10-13"
 }

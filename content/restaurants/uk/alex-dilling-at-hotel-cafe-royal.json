@@ -32,5 +32,42 @@
     "kosher"
   ],
   "chef": "Alex Dilling",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 225,
+      "wine": 165,
+      "courses": 8,
+      "note": "Eight courses; wine pairings from £165 up to £495 or more; extra signature courses from £18 to £75 a person, for the whole table"
+    },
+    {
+      "name": "Short dinner menu",
+      "meal": "dinner",
+      "price": 165,
+      "note": "A shorter version of the tasting menu"
+    },
+    {
+      "name": "Saturday lunch menu",
+      "meal": "lunch",
+      "price": 125,
+      "courses": 5,
+      "note": "Saturday lunch only"
+    }
+  ],
+  "menusSource": "https://alexdilling.com/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2023,
+  "hotel": "Hotel Café Royal",
+  "bookingOpens": "Online through SevenRooms, or by phone or email (reservations@alexdilling.com). A card is needed to hold the table. Dinner is Tuesday to Saturday from 6pm, lunch on Saturday from midday. Tables were bookable about five months ahead when checked. Some tables are kept for solo diners at every service; book them by phone or email.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/alexdillingathotelcaferoyal",
+  "bookingPhone": "+44 20 7459 4022",
+  "cancellation": "Cancel or change at least five days ahead (14 days for six or more guests). Later cancellations and no-shows are charged £195 a person at dinner and £165 at lunch. A booking can be moved once, at the restaurant's discretion, after which it can't be cancelled. Tables are held for 15 minutes.",
+  "groups": "Six or more guests have a 14-day cancellation period. Private dining rooms in Hotel Café Royal seat from 6 to 150, and the restaurant can be hired outright; enquiries to reservations@alexdilling.com.",
+  "dressCode": "Smart casual. No sportswear or loungewear.",
+  "children": "Children aged seven and over.",
+  "duration": "Tables are booked for two and a half hours (three to four hours for larger groups).",
+  "infoSource": "https://alexdilling.com/",
+  "infoChecked": "2026-10-13"
 }

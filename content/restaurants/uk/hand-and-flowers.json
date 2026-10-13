@@ -9,14 +9,14 @@
   "reviews": 2057,
   "dinner": 195,
   "dinnerType": "menu",
-  "dinnerNote": "House menu, 4 courses",
+  "dinnerNote": "House menu, 4 courses (3-course Classics menu £85, Mon–Fri)",
   "sourceType": "site",
-  "source": "https://www.thehandandflowers.co.uk/",
+  "source": "https://www.thehandandflowers.co.uk/dining/",
   "lunch": 45,
   "lunchType": "menu",
   "lunchNote": "Set menu, 3 courses, Mon–Fri lunch (2 courses £39.50)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.thehandandflowers.co.uk/",
+  "lunchSource": "https://www.thehandandflowers.co.uk/dining/",
   "website": "https://www.thehandandflowers.co.uk/",
   "lat": 51.569662,
   "lng": -0.783657,
@@ -28,5 +28,79 @@
     "vegan"
   ],
   "chef": "Tom Kerridge",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "House menu",
+      "meal": "dinner",
+      "price": 195,
+      "courses": 4,
+      "note": "Lunch or dinner, Monday to Saturday."
+    },
+    {
+      "name": "Classics menu",
+      "meal": "dinner",
+      "price": 85,
+      "courses": 3,
+      "note": "Lunch or dinner, Monday to Friday only; can't be changed for dietary needs."
+    },
+    {
+      "name": "Set menu",
+      "meal": "lunch",
+      "price": 45,
+      "courses": 3,
+      "note": "Monday to Friday lunch, and early dinner 6pm to 6:45pm Monday to Thursday; two courses £39.50."
+    },
+    {
+      "name": "Saturday lunch menu",
+      "meal": "lunch",
+      "price": 110,
+      "courses": 3,
+      "note": "Saturdays, alongside the house menu; two courses £95."
+    },
+    {
+      "name": "Sunday lunch menu",
+      "meal": "lunch",
+      "price": 110,
+      "courses": 3,
+      "note": "Sundays, 12pm to 3pm; two courses £95."
+    }
+  ],
+  "menusSource": "https://www.thehandandflowers.co.uk/dining/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "The Coach",
+      "price": 115,
+      "note": "Tom Kerridge's one-star pub in Marlow, across West Street from The Shed; its menu is offered at £115 in the private room.",
+      "url": "https://www.thecoachmarlow.co.uk/"
+    },
+    {
+      "name": "The Butcher's Tap & Grill",
+      "note": "Kerridge's butcher's shop and pub in Marlow.",
+      "url": "https://www.thebutcherstapandgrill.co.uk/"
+    }
+  ],
+  "starsSince": 2011,
+  "bookingOpens": "Online through ResDiary or by phone. Tables are released 6 months ahead to the date at midnight: on 11 March, 11 September opens. Guests staying in the rooms (released 12 months ahead, on the 1st of each month) can book their table with the room.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 6,
+    "time": "00:00",
+    "tz": "Europe/London",
+    "via": "ResDiary",
+    "source": "https://www.thehandandflowers.co.uk/faqs/",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.resdiary.com/restaurant/thehandandflowers",
+  "bookingPhone": "+44 1628 482277",
+  "cancellation": "A card holds the table. Cancelling within 48 hours, or not turning up, costs £195 a person. The pub calls 48 hours ahead to confirm and may release tables not confirmed 24 hours before.",
+  "waitlist": "A waiting list is kept for each lunch and dinner; ask by email or phone with a name and number.",
+  "groups": "The largest table seats 8, one table per party. The Shed, a private dining room on West Street, seats up to 10 (minimum spend £1,000, £500 deposit; book on +44 1628 401530).",
+  "groupsUrl": "https://www.thehandandflowers.co.uk/the-shed/",
+  "dressCode": "No dress code.",
+  "children": "Children are welcome, with a children's house menu for under-12s; highchairs on request, but no room for buggies or prams.",
+  "byob": "Guests may bring their own wine for a corkage charge.",
+  "infoSource": "https://www.thehandandflowers.co.uk/faqs/",
+  "infoChecked": "2026-10-13"
 }

@@ -10,10 +10,10 @@
   "reviews": 141,
   "dinner": 230,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase",
+  "dinnerNote": "Omakase, about $230 (priced by what you eat)",
   "dinnerNoteZh": "廚師發辦",
   "sourceType": "press",
-  "source": "https://www.timeout.com/los-angeles/restaurants/shin-sushi",
+  "source": "https://www.theinfatuation.com/los-angeles/guides/the-best-omakase-spots-in-la",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lat": 34.158761,
@@ -21,5 +21,11 @@
   "placeId": "ChIJdUHh7MCZwoAR71vwlsZ5V_o",
   "michelinId": "569866",
   "chef": "Taketoshi Azumi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "starsSince": 2019,
+  "bookingOpens": "By phone only; there is no online booking or website.",
+  "bookingPhone": "+1 818 616 4148",
+  "byob": "Corkage is $50 for a 720ml bottle of wine or sake and $100 for larger bottles.",
+  "infoSource": "https://guide.michelin.com/us/en/california/encino/restaurant/shin-sushi",
+  "infoChecked": "2026-10-13"
 }

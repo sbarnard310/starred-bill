@@ -13,12 +13,12 @@
   "changeDate": "2024-12",
   "rating": 4.5,
   "reviews": 1005,
-  "dinner": 125,
-  "dinnerType": "menu",
-  "dinnerNote": "Prix fixe, 3 courses (2 courses $95)",
-  "sourceType": "press",
-  "source": "https://resy.com/cities/new-york-ny/venues/cafe-boulud-at-maison-barnes",
-  "lunchNote": "Open for lunch",
+  "dinner": 56,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains $38–$72 (Menu du marché at lunch $60)",
+  "sourceType": "site",
+  "source": "https://www.cafeboulud.com/nyc/our-menu/dinner/",
+  "lunchNote": "Menu du marché, 2 courses (3 courses $75), Wed–Fri",
   "website": "https://www.cafeboulud.com/nyc/",
   "lat": 40.765169,
   "lng": -73.967619,
@@ -28,5 +28,29 @@
     "vegetarian-menu"
   ],
   "chef": "Romain Paumier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "lunch": 60,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.cafeboulud.com/nyc/our-menu/restaurant-week/",
+  "menus": [
+    {
+      "name": "Menu du marché",
+      "meal": "lunch",
+      "price": 60,
+      "courses": 2,
+      "note": "Three courses $75. Wednesday to Friday, 12pm to 2:30pm; à la carte also served at lunch and weekend brunch"
+    }
+  ],
+  "menusSource": "https://www.cafeboulud.com/nyc/our-menu/restaurant-week/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online on Resy, for parties of up to eight. Tables currently show about 30 days ahead.",
+  "bookingUrl": "https://resy.com/cities/new-york-ny/venues/cafe-boulud-at-maison-barnes",
+  "bookingPhone": "+1 212 772 2600, daily 10am to 8pm",
+  "walkIns": "Walk-ins are welcome in the bar and lounge; a reservation is suggested for the dining rooms.",
+  "groups": "Parties of nine or more, and bookings of its five private rooms, go through the events team (eventsnyc@danielboulud.com).",
+  "groupsUrl": "https://www.cafeboulud.com/nyc/private-dining/",
+  "dressCode": "Business casual is strongly recommended.",
+  "children": "Pushchairs and prams cannot be accommodated in the restaurant.",
+  "infoSource": "https://www.cafeboulud.com/nyc/about/",
+  "infoChecked": "2026-10-13"
 }

@@ -9,7 +9,7 @@
   "reviews": 1713,
   "dinner": 79,
   "dinnerType": "menu",
-  "dinnerNote": "2 (£64) or 3 courses",
+  "dinnerNote": "3 courses (2 courses £64)",
   "sourceType": "site",
   "source": "https://harwoodarms.com/",
   "lunch": 79,
@@ -28,6 +28,33 @@
   ],
   "chef": "Josh Cutress",
   "chefSource": "site",
+  "menus": [
+    {
+      "name": "Three-course menu",
+      "meal": "dinner",
+      "price": 79,
+      "courses": 3,
+      "note": "Lunch or dinner, a choice of about four dishes at each course, changing daily; a vegetarian menu on request. Snacks such as the venison Scotch egg are £8–12 extra"
+    },
+    {
+      "name": "Two-course menu",
+      "meal": "dinner",
+      "price": 64,
+      "courses": 2,
+      "note": "The same menu, two courses, lunch or dinner"
+    },
+    {
+      "name": "Sunday menu",
+      "meal": "lunch",
+      "price": 79,
+      "courses": 3,
+      "note": "All day Sunday, with roasts for two to share as the main course; two courses £64. Jersey beef sirloin is £7.50 a person extra"
+    }
+  ],
+  "menusSource": "https://harwoodarms.com/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2010,
+  "bookingOpens": "Online through OpenTable, up to 90 days ahead. Card details are needed to secure every booking.",
   "bookingWindow": {
     "type": "rolling",
     "days": 90,
@@ -35,5 +62,13 @@
     "via": "website",
     "source": "https://harwoodarms.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://harwoodarms.com/#reservations",
+  "bookingPhone": "+44 20 7386 1847",
+  "cancellation": "No-shows and cancellations within 24 hours of the booking are charged £50 a person, including for bookings made at short notice.",
+  "groups": "The largest table is for eight.",
+  "duration": "Guests with a 9.15pm booking who arrive after 9.30pm can order only two courses, and the table may not be kept after 9.45pm.",
+  "byob": "One 75cl bottle per person, at £40 corkage a bottle; corkage is free at Friday lunch, except in December.",
+  "infoSource": "https://harwoodarms.com/#reservations",
+  "infoChecked": "2026-10-13"
 }

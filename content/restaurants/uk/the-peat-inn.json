@@ -7,16 +7,16 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.8,
   "reviews": 615,
-  "dinner": 100,
+  "dinner": 140,
   "dinnerType": "menu",
-  "dinnerNote": "Three courses à la carte (4 courses £110)",
+  "dinnerNote": "Six-course tasting menu (three-course dinner menu £100)",
   "sourceType": "site",
-  "source": "https://www.thepeatinn.co.uk/",
+  "source": "https://www.thepeatinn.co.uk/restaurant/prices/",
   "lunch": 70,
   "lunchType": "menu",
-  "lunchNote": "Lunch, 3 courses, Fri–Sat",
+  "lunchNote": "Lunch, 3 courses, Fri–Sat (five-course tasting menu £110)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.thepeatinn.co.uk/",
+  "lunchSource": "https://www.thepeatinn.co.uk/restaurant/prices/",
   "website": "https://www.thepeatinn.co.uk/",
   "lat": 56.278377,
   "lng": -2.884509,
@@ -28,5 +28,65 @@
     "gluten-free"
   ],
   "chef": "Geoffrey Smeddle",
-  "chefSource": "site"
+  "chefSource": "site",
+  "wine": 100,
+  "menus": [
+    {
+      "name": "Six-course tasting menu",
+      "meal": "dinner",
+      "price": 140,
+      "wine": 100,
+      "courses": 6,
+      "note": "Dinner Tuesday to Saturday; Classic wine flight £100, or Prestige flight £150"
+    },
+    {
+      "name": "Four-course dinner menu",
+      "meal": "dinner",
+      "price": 110,
+      "courses": 4,
+      "note": "Choice of dishes from the à la carte"
+    },
+    {
+      "name": "Three-course dinner menu",
+      "meal": "dinner",
+      "price": 100,
+      "courses": 3,
+      "note": "Choice of dishes from the à la carte"
+    },
+    {
+      "name": "Five-course lunch tasting menu",
+      "meal": "lunch",
+      "price": 110,
+      "courses": 5,
+      "note": "Lunch Friday and Saturday only"
+    },
+    {
+      "name": "Four-course lunch menu",
+      "meal": "lunch",
+      "price": 80,
+      "courses": 4,
+      "note": "Lunch Friday and Saturday only"
+    },
+    {
+      "name": "Three-course lunch menu",
+      "meal": "lunch",
+      "price": 70,
+      "courses": 3,
+      "note": "Lunch Friday and Saturday only"
+    }
+  ],
+  "menusSource": "https://www.thepeatinn.co.uk/restaurant/menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2010,
+  "bookingOpens": "Online through SevenRooms on the restaurant's website, or by phone. While it changes its booking system, the website asks for bookings by email to stay@thepeatinn.co.uk.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/thepeatinn",
+  "bookingPhone": "+44 1334 840206, Tuesday to Saturday 9am–7pm",
+  "cancellation": "Cancel at least 72 hours ahead. Late cancellations and no-shows are charged £75 per person to the card held.",
+  "groups": "Tables of seven or eight are booked by phone.",
+  "dressCode": "No dress code is enforced; most guests wear smart casual or business casual.",
+  "children": "Children of all ages are welcome at lunch; at dinner they need to be 7 or older. There is no children's menu, but the kitchen can make a simple dish such as pasta if asked when booking.",
+  "duration": "About 2½ to 3 hours for the tasting menu.",
+  "servicePct": 12.5,
+  "infoSource": "https://www.thepeatinn.co.uk/guest-information/",
+  "infoChecked": "2026-10-13"
 }

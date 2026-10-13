@@ -12,14 +12,14 @@
   "reviews": 55,
   "dinner": 225,
   "dinnerType": "menu",
-  "dinnerNote": "Dream tasting menu, 7 courses (5 courses £195)",
-  "sourceType": "press",
-  "source": "https://www.hot-dinners.com/Gastroblog/Test-drive/bonheur-matt-abe-restaurant-review-mayfair-london",
+  "dinnerNote": "Dream tasting menu, 7 courses (Journey menu £195, à la carte £165)",
+  "sourceType": "site",
+  "source": "https://www.bonheurbymattabe.com/menu/",
   "lunch": 110,
   "lunchType": "menu",
   "lunchNote": "Lunch menu, 3 courses · Thu–Sat",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.squaremeal.co.uk/restaurants/bonheur-by-matt-abe_27747",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.bonheurbymattabe.com/menu/",
   "website": "https://www.bonheurbymattabe.com/",
   "lat": 51.5112593,
   "lng": -0.155109,
@@ -29,5 +29,44 @@
     "vegetarian"
   ],
   "chef": "Matt Abé",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Dream menu",
+      "meal": "dinner",
+      "price": 225,
+      "courses": 7,
+      "note": "The whole table has the same menu; wine pairing offered, price not published"
+    },
+    {
+      "name": "Journey menu",
+      "meal": "dinner",
+      "price": 195,
+      "courses": 5,
+      "note": "The whole table has the same menu"
+    },
+    {
+      "name": "À la carte menu",
+      "meal": "dinner",
+      "price": 165,
+      "note": "A set price for a choice of dishes, with £20 supplements on some"
+    },
+    {
+      "name": "Set lunch menu",
+      "meal": "lunch",
+      "price": 110,
+      "courses": 3,
+      "note": "Thursday to Saturday lunch; prepaid when booking online"
+    }
+  ],
+  "menusSource": "https://www.bonheurbymattabe.com/menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2026,
+  "bookingOpens": "Online through OpenTable (up to about four months ahead) or by phone. Lunch is Thursday to Saturday from 12pm to 2.15pm, dinner Tuesday to Saturday from 6.30pm to 9.45pm. The set lunch and the chef's table are paid for when booking.",
+  "bookingUrl": "https://www.opentable.co.uk/r/bonheur-by-matt-abe-london",
+  "bookingPhone": "+44 20 7139 8624",
+  "groups": "Petit Bonheur, a chef's table inside the dining room, seats up to six for £1,350 a table with the Dream menu. Private dining enquiries to info@bonheurbymattabe.com.",
+  "dressCode": "Smart casual.",
+  "infoSource": "https://www.bonheurbymattabe.com/",
+  "infoChecked": "2026-10-13"
 }

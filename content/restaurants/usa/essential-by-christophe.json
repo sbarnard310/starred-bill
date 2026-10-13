@@ -9,12 +9,12 @@
   "cuisineZh": "時尚法國菜",
   "rating": 4.8,
   "reviews": 462,
-  "dinner": 255,
+  "dinner": 245,
   "dinnerType": "menu",
-  "dinnerNote": "Essential menu, 7 courses (3 courses $175)",
+  "dinnerNote": "Chef's Tasting Menu, 7 courses (4-course Discovery Menu $195)",
   "wine": 170,
-  "sourceType": "press",
-  "source": "https://shaneasavours.com/essential-by-christophe-new-york/",
+  "sourceType": "site",
+  "source": "https://www.essentialbychristophe.com/menus/",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.essentialbychristophe.com/",
@@ -29,5 +29,50 @@
     "kosher"
   ],
   "chef": "Christophe Bellanca",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Chef's Tasting Menu",
+      "meal": "dinner",
+      "price": 245,
+      "wine": 170,
+      "courses": 7,
+      "note": "Classic wine pairing $170, reserve pairing $245, non-alcoholic pairing $75"
+    },
+    {
+      "name": "Discovery Menu",
+      "meal": "dinner",
+      "price": 195,
+      "wine": 95,
+      "courses": 4,
+      "note": "Four-course prix fixe; classic wine pairing $95, reserve pairing $140, non-alcoholic pairing $50"
+    },
+    {
+      "name": "Pre-Theatre Menu",
+      "meal": "dinner",
+      "price": 145,
+      "wine": 75,
+      "courses": 3,
+      "note": "Tuesday to Thursday, 5:30pm seating only; classic wine pairing $75, reserve pairing $110, non-alcoholic pairing $40"
+    }
+  ],
+  "menusSource": "https://www.essentialbychristophe.com/menus/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "the bar",
+      "note": "À la carte dishes at the bar, first courses $18 to $36",
+      "url": "https://www.essentialbychristophe.com/menus/"
+    }
+  ],
+  "starsSince": 2023,
+  "bookingOpens": "Online on OpenTable, or by phone.",
+  "bookingUrl": "https://www.opentable.com/r/essential-by-christophe-new-york",
+  "bookingPhone": "+1 646 478 7928",
+  "walkIns": "À la carte dinner is served at the bar.",
+  "groups": "A private dining room seats up to 21, with a view into the kitchen, and the whole restaurant can be booked for up to 70. Enquiries to events@essentialhospitalitynyc.com or by phone.",
+  "groupsUrl": "https://www.essentialbychristophe.com/private-dining-events-upper-west-side/",
+  "dressCode": "Smart casual or elegant.",
+  "infoSource": "https://www.essentialbychristophe.com/location/essential-by-christophe/",
+  "infoChecked": "2026-10-13"
 }

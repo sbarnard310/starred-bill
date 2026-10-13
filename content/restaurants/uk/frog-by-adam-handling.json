@@ -9,15 +9,15 @@
   "reviews": 1116,
   "dinner": 199,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 13 courses",
-  "wine": 100,
+  "dinnerNote": "Tasting menu, 13 courses (plant-based tasting menu £185)",
+  "wine": 155,
   "sourceType": "site",
-  "source": "https://www.frogbyadamhandling.com/",
-  "lunch": 100,
+  "source": "https://www.frogbyadamhandling.com/s/Frog-Sample-4-Course-Lunch-Menu-2026.pdf",
+  "lunch": 125,
   "lunchType": "menu",
-  "lunchNote": "Shorter lunch menu",
+  "lunchNote": "Lunch menu, 4 courses · Tue–Sat",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.frogbyadamhandling.com/",
+  "lunchSource": "https://www.frogbyadamhandling.com/s/Frog-Sample-4-Course-Lunch-Menu-2026.pdf",
   "website": "https://www.frogbyadamhandling.com/",
   "lat": 51.51085,
   "lng": -0.12217,
@@ -30,5 +30,41 @@
     "gluten-free"
   ],
   "chef": "Adam Handling",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "lunchWine": 60,
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 199,
+      "wine": 155,
+      "courses": 13,
+      "note": "Two optional supplements. Pairings: matching wine £155, premium £255, Cali & Burgundy £555, alcohol-free £85."
+    },
+    {
+      "name": "Plant-based tasting menu",
+      "meal": "dinner",
+      "price": 185,
+      "note": "Plant-based version of the tasting menu."
+    },
+    {
+      "name": "Four-course lunch menu",
+      "meal": "lunch",
+      "price": 125,
+      "wine": 60,
+      "courses": 4,
+      "note": "Tuesday to Saturday, 12pm to 1pm; a choice of three dishes per course. Matching wine £60, premium £120; optional supplements (£40 lobster wagyu, £15 cheese course)."
+    }
+  ],
+  "menusSource": "https://www.frogbyadamhandling.com/#menus",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2022,
+  "bookingOpens": "Online through OpenTable, or by phone or email (info@frogbyadamhandling.com). Lunch is Tuesday to Saturday, 12pm to 1pm; dinner Monday to Wednesday 5pm to 9:30pm and Thursday to Saturday 5pm to 10pm; closed Sunday.",
+  "bookingUrl": "https://www.opentable.co.uk/r/the-frog-by-adam-handling-reservations-london?restref=138309",
+  "bookingPhone": "+44 20 7199 8370",
+  "groups": "The Library private dining room seats up to 12, with the tasting menu or a menu built around the group's chosen ingredients; larger groups by arrangement through info@frogbyadamhandling.com.",
+  "groupsUrl": "https://www.frogbyadamhandling.com/home#privatedining",
+  "servicePct": 13,
+  "infoSource": "https://www.frogbyadamhandling.com/contact-us",
+  "infoChecked": "2026-10-13"
 }

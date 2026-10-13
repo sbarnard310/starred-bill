@@ -13,7 +13,7 @@
   "dinnerType": "menu",
   "dinnerNote": "Omakase, 15 courses",
   "sourceType": "press",
-  "source": "https://ericrosen.substack.com/p/noz-17-michelin-star-sushi-in-nyc",
+  "source": "https://www.sevenrooms.com/explore/noz17/reservations/create/search/",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.noz.global/experience/noz-17",
@@ -22,5 +22,27 @@
   "placeId": "ChIJT4q4QIFZwokRs1nRu7_ckVI",
   "michelinId": "1198444",
   "chef": "Junichi Matsuzaki",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Bar Menu omakase",
+      "meal": "dinner",
+      "price": 195,
+      "courses": 15,
+      "note": "Amuse-bouche, ten pieces of nigiri, a hand roll or thin roll, miso soup, tamago and dessert; extra pieces can be ordered at the end. Same menu at both counters; optional three-pour sake pairings (Signature or Prestige)"
+    }
+  ],
+  "menusSource": "https://www.sevenrooms.com/explore/noz17/reservations/create/search/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online on SevenRooms. The menu price is paid in full when booking; gratuity is not included.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/noz17/reservations/create/search/",
+  "bookingPhone": "+1 917 338 1792",
+  "cancellation": "Bookings can be cancelled or moved with at least 72 hours' notice, for a refund less a 3% fee; within 72 hours the payment is kept. There is a ten-minute grace period for late arrivals, and after 30 minutes the booking counts as a no-show.",
+  "waitlist": "Request a time on SevenRooms when the seating you want is full.",
+  "groups": "Two counters: a seven-seat main counter (seatings 5:15pm, 7pm and 8:45pm, with chef Junichi Matsuzaki every night except Saturdays) and a four-seat counter (5:30pm, 7:15pm and 9pm, with a sous chef), which a party of four has to itself at no extra charge. More than five guests need a private buyout of the main counter (oshinobi@noz17.com).",
+  "groupsUrl": "https://www.noz.global/faq",
+  "duration": "About 1 hour 45 minutes.",
+  "byob": "Corkage is $120 a bottle or $250 a magnum, up to two bottles or one magnum per party, and not for anything on the restaurant's list; ask before bringing one.",
+  "infoSource": "https://www.noz.global/faq",
+  "infoChecked": "2026-10-13"
 }

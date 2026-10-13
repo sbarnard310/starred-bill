@@ -8,7 +8,7 @@
   "reviews": 290,
   "dinnerType": "menu",
   "dinner": 295,
-  "dinnerNote": "Tasting menu (other menus from $195)",
+  "dinnerNote": "Omakase, 20 courses",
   "sourceType": "site",
   "source": "https://www.omakasetableatl.com/copy-of-home",
   "noLunch": true,
@@ -20,6 +20,26 @@
   "michelinId": "1210849",
   "chef": "Leonard Yu",
   "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "omakase",
+      "meal": "dinner",
+      "price": 295,
+      "courses": 20,
+      "note": "About six small bites, eleven seasonal nigiri, tamago, a hand roll and dessert; changes daily; a 20% service charge is added"
+    }
+  ],
+  "menusSource": "https://www.omakasetableatl.com/copy-of-home",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "788 Omakase Table",
+      "price": 195,
+      "note": "Sister counter in West Midtown (788 West Marietta St NW) with a 14-course menu",
+      "url": "https://www.omakasetableatl.com/copy-of-home-2"
+    }
+  ],
+  "bookingOpens": "Online on Resy, for parties of up to six. Each month's tables are released on the 2nd of the month before at 9am; members of the waiting list get early access on the 1st.",
   "bookingWindow": {
     "type": "monthly",
     "day": 2,
@@ -30,5 +50,14 @@
     "note": "Members of its waiting list get early access on the 1st.",
     "source": "https://www.omakasetableatl.com/reservation",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://resy.com/cities/atlanta-ga/venues/omakase-table",
+  "bookingPhone": "+1 470 404 5245",
+  "cancellation": "Cancellations within 48 hours, no-shows and cutting the number of guests are charged the full menu price per person.",
+  "walkIns": "Reservations only; the restaurant is cashless.",
+  "groups": "Buyouts and private events by enquiry to the restaurant.",
+  "children": "Guests must be 12 or older.",
+  "byob": "Corkage is $100 per 720ml bottle.",
+  "infoSource": "https://www.omakasetableatl.com/reservation",
+  "infoChecked": "2026-10-13"
 }

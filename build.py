@@ -6680,7 +6680,16 @@ RESTAURANT_PAGES = ("le-bernardin", "la-pergola", "restaurant-gordon-ramsay", "o
                     "la-casa-de-manolo-franco", "la-era-de-los-nogales", "pepe-vieira", "pico-velasco", "retiro-da-costina",
                     "yugo-the-bunker", "seafood-gastro", "sk-mat-manniskor", "gilles-varone", "la-brezza", "la-brezza-arosa",
                     "le-perolles", "widder-restaurant", "wirtschaft-im-franz", "impromptu-by-paul-lee", "la-vie-by-thomas-buhner", "ya-ge",
-                    "blue-by-alain-ducasse", "cannubi-by-umberto-bombana", "samrub-samrub-thai")
+                    "blue-by-alain-ducasse", "cannubi-by-umberto-bombana", "samrub-samrub-thai",
+                    # Batch 6, wave 5, 13 Oct 2026
+                    "saneh-jaan", "wana-yook", "mezra-yalkavak", "vino-locale", "orfali-bros", "alex-dilling-at-hotel-cafe-royal",
+                    "bonheur-by-matt-abe", "brooklands-by-claude-bosi", "dinner-by-heston-blumenthal", "elystan-street", "evelyns-table",
+                    "frog-by-adam-handling", "gidleigh-park", "hand-and-flowers", "house-of-tides", "la-trompette", "midsummer-house",
+                    "moor-hall", "plates-london", "restaurant-story", "the-clove-club", "the-harwood-arms", "the-kitchin", "the-peat-inn",
+                    "the-samling", "the-sportsman", "upstairs-by-tom-shepherd", "waterside-inn", "woven-by-adam-smith", "bar-miller",
+                    "barley-swine", "cafe-boulud", "corkscrew-bbq", "essential-by-christophe", "frasca-food-and-wine", "harbor-house-inn",
+                    "mori-nozomi", "noz-17", "omakase-table", "plumed-horse", "restaurant-guy-savoy", "shin-sushi", "sixty-three-clinton",
+                    "coco-dining", "la-maison-1888")
 # The owner's rule (9 Oct 2026): at most 10 questions per page, and none that repeats what the page already says. On a
 # restaurant page the questions are its own section headings, each with its answer straight under it; the structured data
 # (FAQPage) lists them, most-asked first.

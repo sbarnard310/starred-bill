@@ -28,5 +28,45 @@
     "vegan"
   ],
   "chef": "Seamus Sam",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Evening tasting menu",
+      "meal": "dinner",
+      "price": 140,
+      "wine": 85,
+      "courses": 5,
+      "note": "Sittings at 6pm and 8:45pm, Monday to Saturday. Pairings: The Path Less Trodden £85, Firm Favourites £150, Half & Half £75, No & Low £60."
+    },
+    {
+      "name": "Lunch menu",
+      "meal": "lunch",
+      "price": 95,
+      "wine": 75,
+      "courses": 4,
+      "note": "One sitting at 1pm, Thursday to Saturday. Pairings: The Path Less Trodden £75, Firm Favourites £125, Half & Half £65, No & Low £50."
+    }
+  ],
+  "menusSource": "https://www.theblueposts.co.uk/evelyns-table/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2022,
+  "bookingOpens": "Online through SevenRooms. Bookings are released in blocks; at present tables can be booked up to 30 December 2026. The menu and any pairings are paid in advance.",
+  "bookingWindow": {
+    "type": "announced",
+    "note": "Bookings currently open up to 30 December 2026.",
+    "tz": "Europe/London",
+    "via": "SevenRooms",
+    "source": "https://www.theblueposts.co.uk/evelyns-table/",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.sevenrooms.com/reservations/evelynstable",
+  "cancellation": "The menu and pairings are prepaid. Cancel or reduce the party up to seven days before by emailing hello@evelynstable.co.uk; after that the prepayment is kept unless the seats can be filled from the waitlist.",
+  "waitlist": "Seats given up after the seven-day cancellation deadline are offered to guests on the waitlist.",
+  "groups": "The 12-seat counter can be hired for private dining, with a tasting menu and matched drinks; exclusive hires have a 30-day cancellation policy.",
+  "groupsUrl": "https://www.theblueposts.co.uk/private-events/",
+  "dressCode": "No strict dress code.",
+  "children": "Not suitable for guests under 18.",
+  "servicePct": 15,
+  "infoSource": "https://www.theblueposts.co.uk/evelyns-table/",
+  "infoChecked": "2026-10-13"
 }

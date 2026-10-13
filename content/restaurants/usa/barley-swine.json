@@ -8,9 +8,9 @@
   "reviews": 1460,
   "dinnerType": "menu",
   "dinner": 125,
-  "dinnerNote": "Chef's tasting menu",
-  "sourceType": "press",
-  "source": "https://www.exploretock.com/barleyswine",
+  "dinnerNote": "Chef's tasting menu (traditional pairing $75–85)",
+  "sourceType": "site",
+  "source": "https://barleyswine.com/faqs",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://barleyswine.com/",
@@ -23,5 +23,31 @@
     "gluten-free"
   ],
   "chef": "Bryce Gilmore",
-  "chefSource": "site"
+  "chefSource": "site",
+  "wine": 75,
+  "menus": [
+    {
+      "name": "Chef's Tasting Menu",
+      "meal": "dinner",
+      "price": 125,
+      "wine": 75,
+      "courses": 8,
+      "note": "Whole table must take it; traditional pairing $75–85, premier pairing about $135–145; $150 on Formula 1 weekend (22–25 October); $30 off for 4:30–5pm Sunday bookings; 20% gratuity added"
+    }
+  ],
+  "menusSource": "https://barleyswine.com/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "Online on Tock, with a $50 deposit per person that comes off the bill. Parties of five or more book by email (reservations@barleyswine.com).",
+  "bookingUrl": "https://www.exploretock.com/barleyswine",
+  "bookingPhone": "+1 512 394 8150",
+  "cancellation": "Deposits are non-refundable. With at least 48 hours' notice by email to reservations@barleyswine.com, a booking can be rescheduled once.",
+  "walkIns": "Every seat, bar included, is booked; on the day, call to ask if a seat has come free.",
+  "groups": "Email for five or more; up to 16 without hiring the whole restaurant.",
+  "dressCode": "No dress code: jeans and shorts are fine. Guests are asked not to wear clothing that sheds glitter, or strong perfume.",
+  "children": "Children are welcome but count in the booking, deposit included. There is no children's menu, only the tasting menu, and they should be able to sit through a meal of about two hours.",
+  "duration": "About two hours; tables are booked for 2½ hours.",
+  "byob": "No outside alcohol (Texas law).",
+  "infoSource": "https://barleyswine.com/faqs",
+  "infoChecked": "2026-10-13"
 }

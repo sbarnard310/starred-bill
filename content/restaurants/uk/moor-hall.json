@@ -11,17 +11,17 @@
   "changeDate": "2025-02",
   "rating": 4.8,
   "reviews": 886,
-  "dinner": 265,
+  "dinner": 285,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 9 courses",
+  "dinnerNote": "Provenance tasting menu (lunch menu £155)",
   "wine": 165,
-  "sourceType": "press",
-  "source": "https://www.timeout.com/uk/news/the-michelin-starred-countryside-restaurant-that-has-been-crowned-the-best-place-to-eat-in-britain-in-2026-120425",
-  "lunch": 145,
+  "sourceType": "site",
+  "source": "https://moorhall.com/moor-hall/menus",
+  "lunch": 155,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu, 4 courses",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.timeout.com/uk/news/the-michelin-starred-countryside-restaurant-that-has-been-crowned-the-best-place-to-eat-in-britain-in-2026-120425",
+  "lunchNote": "Lunch menu · Fri–Sun (Provenance menu £285 also served)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://moorhall.com/moor-hall/menus",
   "website": "https://moorhall.com/",
   "lat": 53.542336,
   "lng": -2.891918,
@@ -33,5 +33,42 @@
     "gluten-free"
   ],
   "chef": "Mark Birchall",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Provenance tasting menu",
+      "meal": "dinner",
+      "price": 285,
+      "wine": 165,
+      "note": "The signature menu, lunch or dinner. Prestige wine pairing £165, Rarity pairing £325, tea pairing £85"
+    },
+    {
+      "name": "Lunch menu",
+      "meal": "lunch",
+      "price": 155,
+      "note": "Lunch only (Friday to Sunday), a shorter version of the tasting menu"
+    }
+  ],
+  "menusSource": "https://moorhall.com/moor-hall/menus",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "The Barn",
+      "price": 52,
+      "note": "Moor Hall's one-star sister restaurant on the same estate: set lunch £52 (Thursday to Saturday), set dinner £59 (Wednesday to Friday), Sunday lunch £59 for two courses or £68 for three",
+      "url": "https://moorhall.com/the-barn/menus"
+    }
+  ],
+  "starsSince": 2025,
+  "bookingOpens": "Online through the restaurant's own booking page, or by phone or email (enquiry@moorhall.com). A 50% deposit is taken when booking and is taken off the final bill.",
+  "bookingUrl": "https://bookings.alacer.cloud/moor-hall/restaurant",
+  "bookingPhone": "+44 1695 572511, Monday 8.30am to 3pm and Tuesday to Sunday 8.30am to 5pm",
+  "cancellation": "Cancel at least 14 days ahead for a full refund or transfer. Later than that, the 50% deposit is kept, as it is for no-shows, fewer guests or a change of date; cancelling within 24 hours costs the full menu price per person.",
+  "groups": "Atelier Hearth, the private dining room, can be booked for groups, with menus planned for the occasion.",
+  "groupsUrl": "https://moorhall.com/private-dining",
+  "dressCode": "Smart casual: jeans and a T-shirt are fine and clean trainers are allowed, but no sportswear (no tracksuit bottoms or hoodies). Guests who ignore the dress code may be turned away and charged under the cancellation policy.",
+  "children": "No children under 12 in the restaurant. Groups with younger children can hire the private dining room.",
+  "byob": "Corkage may be possible on request.",
+  "infoSource": "https://moorhall.com/legal",
+  "infoChecked": "2026-10-13"
 }

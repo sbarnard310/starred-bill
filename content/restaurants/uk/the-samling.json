@@ -9,15 +9,15 @@
   "reviews": 304,
   "dinner": 175,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "The Samling Tasting menu, Tue–Sat evenings",
   "wine": 130,
   "sourceType": "site",
-  "source": "https://www.thesamlinghotel.co.uk/",
+  "source": "https://www.thesamlinghotel.co.uk/menus/",
   "lunch": 45,
   "lunchType": "menu",
-  "lunchNote": "Lunch, 2 courses",
+  "lunchNote": "The Gathering menu, 2 courses (Sunday roast lunch £55)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.thesamlinghotel.co.uk/",
+  "lunchSource": "https://www.thesamlinghotel.co.uk/menus/",
   "website": "https://www.thesamlinghotel.co.uk/",
   "lat": 54.414764,
   "lng": -2.951172,
@@ -27,6 +27,48 @@
     "vegetarian",
     "vegan"
   ],
-  "chef": "Cameron Smith",
-  "chefSource": "press"
+  "chef": "Robby Jenks",
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Samling Tasting menu",
+      "meal": "dinner",
+      "price": 175,
+      "wine": 130,
+      "note": "Tuesday to Saturday evenings; wine pairings £130, £350 or £950; cheese trolley £20 extra"
+    },
+    {
+      "name": "Vegetarian Tasting menu",
+      "meal": "dinner",
+      "price": 175,
+      "wine": 130,
+      "note": "Tuesday to Saturday evenings; a vegan menu can be arranged with notice"
+    },
+    {
+      "name": "two-course Gathering lunch",
+      "meal": "lunch",
+      "price": 45,
+      "courses": 2,
+      "note": "Daily at lunch, supplements on some dishes; The Gathering is also served à la carte on Sunday and Monday evenings"
+    },
+    {
+      "name": "two-course Sunday roast lunch",
+      "meal": "lunch",
+      "price": 55,
+      "courses": 2,
+      "note": "Sunday lunch"
+    }
+  ],
+  "menusSource": "https://www.thesamlinghotel.co.uk/menus/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2023,
+  "hotel": "The Samling hotel above Lake Windermere",
+  "bookingOpens": "Online through ResDiary on the hotel's website, for up to eight people, or by phone.",
+  "bookingUrl": "https://booking.resdiary.com/widget/Standard/TheSamling1/68103",
+  "bookingPhone": "+44 15394 31922",
+  "cancellation": "A card holds the booking. Cancelling within 48 hours is charged at the full menu price per person.",
+  "groups": "The Chef's Table, facing the kitchen, seats up to six with its own menu, served by the chefs and followed by a kitchen tour.",
+  "groupsUrl": "https://www.thesamlinghotel.co.uk/chefs-table/",
+  "infoSource": "https://booking.resdiary.com/widget/Standard/TheSamling1/68103",
+  "infoChecked": "2026-10-13"
 }

@@ -26,5 +26,53 @@
     "gluten-free"
   ],
   "chef": "Lachlan Mackinnon-Patterson",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Friulano tasting menu",
+      "meal": "dinner",
+      "price": 230,
+      "wine": 175,
+      "note": "Inspired by Friuli-Venezia Giulia; can be adapted for gluten-free or vegetarian diets only"
+    },
+    {
+      "name": "Quattro Piatti menu",
+      "meal": "dinner",
+      "price": 150,
+      "courses": 4,
+      "note": "Choose four dishes (antipasto, primo, secondo, dolce); no set pairing, but wines by the glass can be matched; A5 wagyu supplement $35 or $70, cheese $15"
+    }
+  ],
+  "menusSource": "https://www.frascafoodandwine.com/menu/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Pizzeria Alberico",
+      "note": "Sister pizzeria from the same group",
+      "url": "https://www.pizzeriaalberico.com/"
+    },
+    {
+      "name": "Osteria Alberico",
+      "note": "Sister Italian restaurant from the same group",
+      "url": "https://www.osteriaalberico.com/"
+    },
+    {
+      "name": "Tavernetta Denver",
+      "note": "Sister Italian restaurant in Denver",
+      "url": "https://www.tavernettadenver.com/"
+    }
+  ],
+  "starsSince": 2023,
+  "bookingOpens": "Online through the restaurant's website, about 60 days ahead, a week at a time: new dates are released every Sunday at 11am Mountain Time. Booking requires a deposit, refunded on arrival. There are two main seatings a night, so few tables are offered between 6:30pm and 7pm.",
+  "bookingUrl": "https://www.opentable.com/r/frasca-food-and-wine",
+  "bookingPhone": "+1 303 442 6966",
+  "cancellation": "Cancel more than 48 hours ahead for a full refund of the deposit; within 48 hours the booking can be moved to another night (if available) and the deposit transferred. Arriving more than 15 minutes late may mean missing part of the meal.",
+  "walkIns": "Bar seats can be booked as well as dining-room tables, with either menu chosen on arrival.",
+  "groups": "Tables seat up to eight; larger parties go through events@frascafoodandwine.com. The private Taverna Room seats 26 and the whole restaurant up to 70.",
+  "groupsUrl": "https://www.frascafoodandwine.com/private-dining/",
+  "dressCode": "No formal dress code, but most guests dress up, as it is a special-occasion restaurant.",
+  "children": "Children are welcome; count them in the booking and ask the reservations team for a high chair.",
+  "byob": "No corkage: Colorado law does not allow it.",
+  "infoSource": "https://www.frascafoodandwine.com/faq/",
+  "infoChecked": "2026-10-13"
 }

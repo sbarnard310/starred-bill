@@ -7,16 +7,16 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.7,
   "reviews": 2504,
-  "dinner": 165,
+  "dinner": 170,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu (Prestige menu £215)",
-  "sourceType": "press",
-  "source": "https://www.andyhayler.com/restaurant/kitchin",
+  "dinnerNote": "Surprise tasting menu (Prestige menu £220)",
+  "sourceType": "site",
+  "source": "https://thekitchin.com/menus/",
   "lunch": 69,
   "lunchType": "menu",
-  "lunchNote": "Set lunch, 3 courses",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.hardens.com/az/restaurants/edinburgh/eh6/the-kitchin.htm",
+  "lunchNote": "Set lunch, 3 courses (4 courses £79)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://thekitchin.com/menus/",
   "website": "https://thekitchin.com/",
   "lat": 55.977065,
   "lng": -3.172585,
@@ -29,5 +29,55 @@
     "gluten-free"
   ],
   "chef": "Tom Kitchin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "wine": 85,
+  "menus": [
+    {
+      "name": "Surprise tasting menu",
+      "meal": "dinner",
+      "price": 170,
+      "wine": 85,
+      "note": "Dinner, or lunch for guests arriving before 2pm; a vegetarian version costs the same. Cheese course £20 extra. Exclusive wine pairing £165, or £210 with Dom Pérignon. The whole table must take it"
+    },
+    {
+      "name": "Prestige surprise tasting menu",
+      "meal": "dinner",
+      "price": 220,
+      "wine": 85,
+      "note": "The finest seasonal produce; dinner, or lunch before 2pm. Cheese course £20 extra. Exclusive wine pairing £165, or £210 with Dom Pérignon. The whole table must take it"
+    },
+    {
+      "name": "Three-course à la carte menu",
+      "meal": "dinner",
+      "price": 135,
+      "courses": 3,
+      "note": "A choice of dishes at each course, lunch or dinner; three courses minimum. Some dishes carry a supplement (Wagyu £15, lobster £5)"
+    },
+    {
+      "name": "Set lunch",
+      "meal": "lunch",
+      "price": 69,
+      "courses": 3,
+      "note": "Tuesday to Saturday lunch, with a vegetarian version; cheese instead of dessert £76.50, or four courses with cheese £79. Matched wines: three glasses £39, four £45"
+    }
+  ],
+  "menusSource": "https://thekitchin.com/menus/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "The Scran & Scallie",
+      "note": "Tom Kitchin's gastropub in Stockbridge, Edinburgh",
+      "url": "https://scranandscallie.com/"
+    }
+  ],
+  "starsSince": 2007,
+  "bookingOpens": "Online through ResDiary on the restaurant's website, or by phone. Card details secure every booking, and the restaurant emails a link to reconfirm at least 24 hours ahead; unconfirmed bookings can be cancelled on the day. If nothing shows online, call reception, as tables free up at short notice.",
+  "bookingUrl": "https://thekitchin.com/reservations/",
+  "bookingPhone": "+44 131 555 1755",
+  "cancellation": "Cancel or change at least 24 hours ahead. Later cancellations and no-shows can be charged £45 a person at lunch and £90 a person at dinner; tables of eight have a 72-hour policy. Tables may be released 20 minutes after the booking time.",
+  "groups": "For seven or more, call the restaurant. The private dining room seats up to 20, and the whole restaurant can be hired for up to 80.",
+  "groupsUrl": "https://thekitchin.com/private-dining/",
+  "dressCode": "Smart casual; guests are asked not to wear sports jerseys.",
+  "infoSource": "https://thekitchin.com/reservations/",
+  "infoChecked": "2026-10-13"
 }

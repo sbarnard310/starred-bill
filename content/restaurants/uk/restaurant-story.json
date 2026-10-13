@@ -9,14 +9,14 @@
   "reviews": 934,
   "dinner": 275,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 7 courses",
+  "dinnerNote": "Tasting menu, 7 courses with snacks and treats",
   "sourceType": "site",
-  "source": "https://restaurantstory.co.uk/",
+  "source": "https://restaurantstory.co.uk/menu/",
   "lunch": 175,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu, 5 courses",
+  "lunchNote": "Shorter lunch menu, 5 courses (full tasting menu £275 also served)",
   "lunchSourceType": "site",
-  "lunchSource": "https://restaurantstory.co.uk/",
+  "lunchSource": "https://restaurantstory.co.uk/menu/",
   "website": "https://restaurantstory.co.uk/",
   "lat": 51.5028085,
   "lng": -0.077787,
@@ -26,5 +26,39 @@
     "vegetarian"
   ],
   "chef": "Tom Sellers",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 275,
+      "courses": 7,
+      "note": "Lunch or dinner, seven courses plus snacks and treats; a vegetarian version is offered. No menu is shown on arrival"
+    },
+    {
+      "name": "Shorter lunch menu",
+      "meal": "lunch",
+      "price": 175,
+      "courses": 5,
+      "note": "Lunch only"
+    }
+  ],
+  "menusSource": "https://restaurantstory.co.uk/menu/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Story Cellar",
+      "note": "Tom Sellers's rotisserie and wine bar in Covent Garden",
+      "url": "https://storycellar.co.uk/"
+    }
+  ],
+  "starsSince": 2021,
+  "bookingOpens": "Online through OpenTable, by email (dine@restaurantstory.co.uk) or by phone. Tables are currently open until the end of December. Availability changes daily, so it's worth calling or emailing if nothing suits online.",
+  "bookingUrl": "https://restaurantstory.co.uk/reservations/",
+  "bookingPhone": "+44 20 7183 2117, Monday to Friday 10am to 5pm",
+  "groups": "For six or more, call the restaurant. Private dining and events are arranged through its events team.",
+  "groupsUrl": "https://restaurantstory.co.uk/events/",
+  "duration": "Up to two and a half hours for a table of two, and up to three and a half hours for four or more.",
+  "infoSource": "https://restaurantstory.co.uk/reservations/",
+  "infoChecked": "2026-10-13"
 }

@@ -15,13 +15,13 @@
   "dinnerNote": "Discovery menu, 10 courses (vegan)",
   "wine": 75,
   "sourceType": "site",
-  "source": "https://plates-london.com/plant-based-restaurant-london/",
+  "source": "https://plates-london.com/tasting-menu/",
   "lunch": 109,
   "lunchType": "menu",
-  "lunchNote": "Signature menu, 8 courses",
+  "lunchNote": "Signature menu, 8 courses (Discovery menu £125 also served)",
   "lunchWine": 75,
   "lunchSourceType": "site",
-  "lunchSource": "https://plates-london.com/plant-based-restaurant-london/",
+  "lunchSource": "https://plates-london.com/tasting-menu/",
   "website": "https://plates-london.com/plant-based-restaurant-london/",
   "lat": 51.5265904,
   "lng": -0.0819587,
@@ -32,5 +32,46 @@
     "vegan"
   ],
   "chef": "Kirk Haworth",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Discovery menu",
+      "meal": "dinner",
+      "price": 125,
+      "wine": 75,
+      "courses": 10,
+      "note": "Lunch or dinner (the only menu at dinner). House pairing £75, Rare & Unique wine flight £125, Harmony pairing £65, Botanical pairing £55"
+    },
+    {
+      "name": "Signature menu",
+      "meal": "lunch",
+      "price": 109,
+      "wine": 75,
+      "courses": 8,
+      "note": "Lunch only. House pairing £75, Rare & Unique wine flight £125, Harmony pairing £65, Botanical pairing £55"
+    }
+  ],
+  "menusSource": "https://plates-london.com/tasting-menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Online on Tock only. Tables are released in seasonal booking windows, about three months ahead, announced in the newsletter and on Instagram; bookings are open until 27 February 2027, and the next window is planned for late December. A deposit of £65 a person is taken when booking and taken off the bill.",
+  "bookingWindow": {
+    "type": "announced",
+    "note": "Seasonal booking windows, about three months ahead, announced in the newsletter and on Instagram. Open until 27 February 2027; the next release is planned for late December 2026.",
+    "tz": "Europe/London",
+    "via": "Tock",
+    "source": "https://plates-london.com/faqs/",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.exploretock.com/plates-london",
+  "bookingPhone": "+44 20 8050 6682",
+  "cancellation": "The £65 a person deposit is refunded for cancellations more than 48 hours ahead. Cancelling or moving the booking within 48 hours loses the deposit, and fewer guests within 48 hours can affect it. Tables are held for 15 minutes for late arrivals.",
+  "walkIns": "No walk-ins: reservations only. A few terrace tables, weather permitting, are offered on the day or the day before rather than booked ahead.",
+  "waitlist": "Join the waitlist on Tock, choosing several dates and times, and turn on notifications to hear of cancellations.",
+  "groups": "Tables are for up to six. For larger groups, private hire or events in its Food Studio, email events@plates-london.com.",
+  "dressCode": "Smart casual.",
+  "children": "No babies or children under 10, no children's menu and no room for prams.",
+  "duration": "Tables are kept for two and a half hours. Dinner runs in two sittings, the first starting between 5.30pm and 6pm and the second between 8.30pm and 9pm.",
+  "infoSource": "https://plates-london.com/faqs/",
+  "infoChecked": "2026-10-13"
 }

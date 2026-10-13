@@ -9,11 +9,11 @@
   "changeDate": "2026-08",
   "rating": 4.6,
   "reviews": 433,
-  "dinner": 165,
-  "dinnerType": "main",
-  "dinnerNote": "À la carte; mains $160–$170 (Prelude tasting menu $650 with its wine pairing)",
+  "dinner": 450,
+  "dinnerType": "menu",
+  "dinnerNote": "Prelude tasting menu, 8 courses (à la carte mains $160–$170)",
   "sourceType": "site",
-  "source": "https://www.caesars.com/caesars-palace/restaurants/restaurant-guy-savoy/main-menu",
+  "source": "https://www.caesars.com/caesars-palace/restaurants/guy-savoy/main-menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.caesars.com/caesars-palace/restaurants/guy-savoy",
@@ -27,5 +27,47 @@
     "gluten-free"
   ],
   "chef": "Guy Savoy",
-  "chefSource": "site"
+  "chefSource": "site",
+  "wine": 200,
+  "menus": [
+    {
+      "name": "Prelude tasting menu",
+      "meal": "dinner",
+      "price": 450,
+      "wine": 200,
+      "courses": 8,
+      "note": "$650 with the premium wine pairing"
+    },
+    {
+      "name": "Symphony tasting menu",
+      "meal": "dinner",
+      "price": 680,
+      "wine": 320,
+      "courses": 14,
+      "note": "$1,000 with the premium wine pairing and a glass of L'Héraud Cognac; on OpenTable it is offered 18 to 21 November 2026, hosted by Guy Savoy"
+    },
+    {
+      "name": "Krug Chef's Table menu",
+      "meal": "dinner",
+      "price": 1500,
+      "wine": 600,
+      "courses": 10,
+      "note": "One seating a night for 2 to 6 guests, with a glass of tête de cuvée Champagne; booked on OpenTable or by email"
+    }
+  ],
+  "menusSource": "https://www.caesars.com/caesars-palace/restaurants/guy-savoy/main-menu",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2026,
+  "hotel": "Caesars Palace",
+  "bookingOpens": "Online on OpenTable or by phone. Dinner Tuesday to Saturday, 5pm to 8:45pm.",
+  "bookingUrl": "https://www.opentable.com/r/restaurant-guy-savoy-caesars-palace-reservations-las-vegas",
+  "bookingPhone": "+1 702 731 7286",
+  "cancellation": "A deposit is taken when booking. Changes or cancellations up to 24 hours before are refunded in full; later changes, cancellations and no-shows lose the deposit. A Krug Chef's Table booking cannot be moved: changing the date cancels it, with a $150 per person charge.",
+  "groups": "Parties of six or more have the whole table on the same menu (the Forbes Five-Star Celebration menu or the Prestige menu). Groups of 13 or more call +1 866 733 5827 or use the inquiry form. Two semi-private rooms seat 16 and 18 guests and the private dining room 35.",
+  "groupsUrl": "https://www.caesars.com/caesars-palace/restaurants/guy-savoy",
+  "dressCode": "Business attire. No hats, flip-flops, shorts or T-shirts.",
+  "children": "Children under five are not allowed.",
+  "byob": "No outside food, wine or other drinks.",
+  "infoSource": "https://www.opentable.com/r/restaurant-guy-savoy-caesars-palace-reservations-las-vegas",
+  "infoChecked": "2026-10-13"
 }

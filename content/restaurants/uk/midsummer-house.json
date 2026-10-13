@@ -7,18 +7,17 @@
   "cuisine": "Creative",
   "rating": 4.7,
   "reviews": 755,
-  "dinner": 175,
+  "dinner": 245,
   "dinnerType": "menu",
-  "dinnerNote": "Corpus menu (Trinity £135, Solstice with Champagne £285)",
+  "dinnerNote": "Solstice menu (Corpus £175, Trinity £135; Grand Siècle Solstice with Champagne £285)",
   "wine": 135,
   "sourceType": "site",
-  "source": "https://midsummerhouse.co.uk/",
-  "lunch": 175,
+  "source": "https://midsummerhouse.co.uk/menu/",
+  "lunch": 135,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sat",
-  "lunchWine": 135,
+  "lunchNote": "Trinity menu · Wed–Sat (Corpus £175, Solstice £245 Thu–Sat)",
   "lunchSourceType": "site",
-  "lunchSource": "https://midsummerhouse.co.uk/",
+  "lunchSource": "https://midsummerhouse.co.uk/menu/",
   "website": "https://midsummerhouse.co.uk/",
   "lat": 52.212055,
   "lng": 0.128401,
@@ -30,6 +29,31 @@
   ],
   "chef": "Daniel Clifford",
   "chefSource": "press",
+  "menus": [
+    {
+      "name": "Solstice menu",
+      "meal": "dinner",
+      "price": 245,
+      "note": "The signature tasting menu. Dinner Wednesday to Saturday, lunch Thursday to Saturday. With a glass of Laurent-Perrier Grand Siècle Champagne it becomes the Grand Siècle Solstice menu, £285",
+      "plus": "plus a £19.50 cheese course if taken"
+    },
+    {
+      "name": "Corpus menu",
+      "meal": "dinner",
+      "price": 175,
+      "note": "Dishes from the restaurant's history. Lunch Wednesday to Saturday, dinner Wednesday to Friday"
+    },
+    {
+      "name": "Trinity menu",
+      "meal": "dinner",
+      "price": 135,
+      "note": "A shorter set menu. Lunch Wednesday to Saturday, dinner Wednesday to Friday"
+    }
+  ],
+  "menusSource": "https://midsummerhouse.co.uk/menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2004,
+  "bookingOpens": "Online through OpenTable or by phone. The calendar opens three months ahead, on the 1st of each month at 9am. To confirm, a card must be verified through a link sent by email and text, which places a hold on it.",
   "bookingWindow": {
     "type": "monthly",
     "day": 1,
@@ -39,5 +63,16 @@
     "via": "website",
     "source": "https://midsummerhouse.co.uk/",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "http://www.opentable.co.uk/restaurant/profile/21816",
+  "bookingPhone": "+44 1223 369299, Tuesday to Saturday 10am to 5pm",
+  "cancellation": "Cancel at least 48 hours ahead at no charge. Later cancellations, and guests dropping out within 48 hours, are charged the full price of the chosen menu.",
+  "waitlist": "Email reservations@midsummerhouse.co.uk to join the waiting list for a fully booked date, or to be reminded when bookings open for a date.",
+  "groups": "The first-floor private dining room takes up to 14, choosing from the same three menus; parties under seven pay for seven menus, with a £100 a head deposit and a seven-day cancellation period. The whole restaurant (up to 45 seated, plus 14 in the private room) can be hired.",
+  "groupsUrl": "https://midsummerhouse.co.uk/private-dining/",
+  "dressCode": "Smart casual.",
+  "children": "Children aged 12 and over only in the main restaurant, with no children's menu and no room for pushchairs. Younger children are welcome in the private dining room.",
+  "byob": "Guests can't bring their own wine.",
+  "infoSource": "https://midsummerhouse.co.uk/faq/",
+  "infoChecked": "2026-10-13"
 }

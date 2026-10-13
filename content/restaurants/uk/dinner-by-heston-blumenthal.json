@@ -9,12 +9,12 @@
   "reviews": 2560,
   "dinner": 195,
   "dinnerType": "menu",
-  "dinnerNote": "Journey Through History, 8 courses (6 courses £155)",
+  "dinnerNote": "The Legacy menu, 6 courses (4-course Discovery menu £155)",
   "sourceType": "site",
-  "source": "https://www.dinnerbyheston.co.uk/",
-  "lunch": 75,
+  "source": "https://www.dinnerbyheston.co.uk/menus",
+  "lunch": 65,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu, 3 courses",
+  "lunchNote": "Set luncheon menu, 3 courses · Mon–Sat",
   "lunchSourceType": "site",
   "lunchSource": "https://www.dinnerbyheston.co.uk/",
   "website": "https://www.dinnerbyheston.co.uk/",
@@ -31,5 +31,71 @@
     "kosher"
   ],
   "chef": "Adam Tooby-Desmond",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Legacy menu",
+      "meal": "dinner",
+      "price": 195,
+      "courses": 6,
+      "note": "Part of A Journey Through History. Lunch or dinner, every day except Tuesday and Wednesday; wine pairings available, price not listed."
+    },
+    {
+      "name": "Discovery menu",
+      "meal": "dinner",
+      "price": 155,
+      "courses": 4,
+      "note": "Part of A Journey Through History. Lunch or dinner, every day except Tuesday and Wednesday."
+    },
+    {
+      "name": "À la carte, set price",
+      "meal": "dinner",
+      "price": 135,
+      "note": "Fixed price per person for the à la carte, offered at dinner Monday to Thursday on the booking page."
+    },
+    {
+      "name": "Set luncheon menu",
+      "meal": "lunch",
+      "price": 65,
+      "courses": 3,
+      "note": "Monday to Saturday per the home page; the menus page lists a £95 lunch set menu on Monday, Thursday and Friday."
+    },
+    {
+      "name": "Chef's Table menu",
+      "meal": "dinner",
+      "price": 215,
+      "courses": 6,
+      "note": "Chef's Table for two to six guests, lunch or dinner; 8 courses £255."
+    },
+    {
+      "name": "King's Table menu",
+      "meal": "dinner",
+      "price": 150,
+      "courses": 3,
+      "note": "Private dining room for up to 12, lunch or dinner; 5 courses £190."
+    }
+  ],
+  "menusSource": "https://www.dinnerbyheston.co.uk/menus",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2013,
+  "hotel": "the Mandarin Oriental Hyde Park",
+  "bookingOpens": "Online through SevenRooms or by phone. Tables are released 3 months ahead to the day. The reservations line is open 9am to 6pm every day.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/London",
+    "via": "SevenRooms",
+    "source": "https://www.dinnerbyheston.co.uk/reservations",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.sevenrooms.com/reservations/dinnerbyhestonmolon/dbhb",
+  "bookingPhone": "+44 20 7201 3833, 9am to 6pm daily",
+  "cancellation": "A card is needed to hold every booking. Cancel in writing at least 72 hours ahead, or a fee of £50 a person may be charged; the same applies to no-shows. The Chef's Table and private dining room have a 14-day policy (£200 a person at the Chef's Table, £2,000 for the private room).",
+  "walkIns": "Bookings are not essential, but the restaurant recommends booking ahead; if nothing shows online, call.",
+  "groups": "The Chef's Table seats two to six and the King's Table private dining room up to 12; both can be booked up to 6 months ahead through the events team (+44 20 7201 3844).",
+  "groupsUrl": "https://www.dinnerbyheston.co.uk/events-and-occasions/private-dining",
+  "dressCode": "Smart casual. Jackets and ties are not required.",
+  "duration": "Tables for two are kept for 2 hours, for three or four for 2½ hours, and for five or six for 3 hours.",
+  "infoSource": "https://www.dinnerbyheston.co.uk/reservations",
+  "infoChecked": "2026-10-13"
 }

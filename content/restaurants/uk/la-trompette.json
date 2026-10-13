@@ -9,14 +9,14 @@
   "reviews": 1029,
   "dinner": 95,
   "dinnerType": "menu",
-  "dinnerNote": "3 courses, choice of 6",
-  "sourceType": "press",
-  "source": "https://www.thefork.co.uk/restaurant/la-trompette-r755764/menu",
+  "dinnerNote": "3 courses, choice of 6 (2 courses £80)",
+  "sourceType": "site",
+  "source": "https://www.latrompette.co.uk/general-info/prices/",
   "lunch": 45,
   "lunchType": "menu",
-  "lunchNote": "Set lunch, 3 courses (standard lunch £65)",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.latrompette.co.uk/general-info/prices/",
+  "lunchNote": "Set lunch, 3 courses · Wed–Fri (lunch menu £65, 2 courses £55)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.latrompette.co.uk/menus/",
   "website": "https://www.latrompette.co.uk/",
   "lat": 51.491995,
   "lng": -0.2558505,
@@ -27,5 +27,55 @@
     "vegan"
   ],
   "chef": "Greg Wellman",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Three-course dinner menu",
+      "meal": "dinner",
+      "price": 95,
+      "courses": 3,
+      "note": "Dinner Wednesday to Sunday, a choice of six dishes at each course; two courses £80. Some dishes carry a supplement (grouse £12.50, cheese £9.50)"
+    },
+    {
+      "name": "Two-course dinner menu",
+      "meal": "dinner",
+      "price": 80,
+      "courses": 2,
+      "note": "The same menu, two courses"
+    },
+    {
+      "name": "Three-course lunch menu",
+      "meal": "lunch",
+      "price": 65,
+      "courses": 3,
+      "note": "Lunch Wednesday to Sunday, a choice of six dishes at each course; two courses £55"
+    },
+    {
+      "name": "Two-course lunch menu",
+      "meal": "lunch",
+      "price": 55,
+      "courses": 2,
+      "note": "The same lunch menu, two courses"
+    },
+    {
+      "name": "Set lunch",
+      "meal": "lunch",
+      "price": 45,
+      "courses": 3,
+      "note": "Wednesday to Friday only, a choice of two dishes at each course"
+    }
+  ],
+  "menusSource": "https://www.latrompette.co.uk/menus/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "By phone or online through OpenTable; it doesn't take bookings by email. Online bookings are for up to four people; for five or more, call the restaurant.",
+  "bookingUrl": "https://www.latrompette.co.uk/booking/online-booking/",
+  "bookingPhone": "+44 20 8747 1836, from 10am Wednesday to Sunday",
+  "cancellation": "Tables of five or more must give card details, and a no-show or a cancellation too late to resell the table can be charged the full menu price per person. Nothing is charged if the table is resold.",
+  "groups": "The main dining room takes tables of up to eight at dinner; larger tables are possible at lunch, with a restricted menu. The private dining room seats 10 to 16, and the whole restaurant can be hired.",
+  "groupsUrl": "https://www.latrompette.co.uk/private-dining/",
+  "children": "The restaurant says its main dining room isn't suitable for young children and babies.",
+  "duration": "Some dinner tables are booked twice in an evening and may need to be returned after two hours; the restaurant says so when confirming.",
+  "byob": "Corkage is £50 a bottle at dinner and £25 at lunch, for up to four 75cl bottles (or two magnums) a table; say when booking.",
+  "infoSource": "https://www.latrompette.co.uk/booking/",
+  "infoChecked": "2026-10-13"
 }

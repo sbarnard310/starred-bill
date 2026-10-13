@@ -12,10 +12,10 @@
   "rating": 4.6,
   "reviews": 953,
   "dinnerType": "menu",
-  "dinner": 5500,
-  "dinnerNote": "Tasting menu",
-  "sourceType": "press",
-  "source": "https://www.turkiyetoday.com/lifestyle/what-diners-pay-at-turkiyes-newest-michelin-starred-restaurants-3211122",
+  "dinner": 8500,
+  "dinnerNote": "Degustation menu, before service (vegetarian menu TRY 7,000)",
+  "sourceType": "site",
+  "source": "https://www.urlavinolocale.com/menu/vino-locale-food.pdf",
   "website": "https://www.urlavinolocale.com",
   "lat": 38.2808906,
   "lng": 26.7467029,
@@ -28,10 +28,36 @@
   ],
   "chef": "Ozan Kumbasar",
   "chefSource": "michelin",
-  "dinnerNoteTr": "Tadım menüsü",
+  "dinnerNoteTr": "Degüstasyon menüsü, servis ücreti hariç (vejetaryen menü TRY 7,000)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTr": "Yalnızca akşam yemeği",
   "cuisineTr": "Türk Mutfağı",
-  "areaTr": "İzmir"
+  "areaTr": "İzmir",
+  "wine": 5000,
+  "menus": [
+    {
+      "name": "Degustation menu",
+      "meal": "dinner",
+      "price": 8500,
+      "wine": 5000,
+      "note": "Amuse-bouche, seven dishes and petit fours; service charge not included"
+    },
+    {
+      "name": "Vegetarian degustation menu",
+      "meal": "dinner",
+      "price": 7000,
+      "wine": 5000,
+      "note": "Service charge not included"
+    }
+  ],
+  "menusSource": "https://www.urlavinolocale.com/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Through the booking form on the restaurant's website (Rezervem), which sends a request rather than confirming a table, or by phone, WhatsApp or email (info@urlavinolocale.com).",
+  "bookingUrl": "https://guest.rezervem.com.tr/Vino-Locale?sourceId=webSite&culture=en-US",
+  "bookingPhone": "+90 533 321 84 66",
+  "children": "Guests must be 15 or older.",
+  "infoSource": "https://www.urlavinolocale.com/",
+  "infoChecked": "2026-10-13"
 }

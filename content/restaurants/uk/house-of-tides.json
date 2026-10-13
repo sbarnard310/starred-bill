@@ -7,17 +7,17 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.6,
   "reviews": 616,
-  "dinner": 120,
+  "dinner": 125,
   "dinnerType": "menu",
-  "dinnerNote": "Feast menu",
+  "dinnerNote": "Tasting menu (3-course prix fixe £65, Thu–Fri)",
   "wine": 85,
   "sourceType": "site",
-  "source": "https://www.houseoftides.co.uk/",
-  "lunch": 75,
+  "source": "https://www.houseoftides.co.uk/_files/ugd/0ed9af_887a52e1bb0a4edc96d9a08a7c00dd99.pdf",
+  "lunch": 65,
   "lunchType": "menu",
-  "lunchNote": "Lunch tasting menu, 9 courses, Fri–Sat",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.opentable.co.uk/restaurant/profile/208410",
+  "lunchNote": "Prix fixe, 3 courses · Fri–Sat (tasting menu £95 at lunch)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.houseoftides.co.uk/_files/ugd/0ed9af_91fe978d17784828b59de5eea6e7dc61.pdf",
   "website": "https://www.houseoftides.co.uk/",
   "lat": 54.967968,
   "lng": -1.610114,
@@ -27,5 +27,54 @@
     "vegetarian-menu"
   ],
   "chef": "Kenny Atkinson",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 125,
+      "wine": 85,
+      "note": "Dinner Thursday to Saturday. Cheese course £17 extra. The whole table orders the same menu."
+    },
+    {
+      "name": "Tasting menu at lunch",
+      "meal": "lunch",
+      "price": 95,
+      "wine": 85,
+      "note": "Lunch Friday and Saturday; same menu as at dinner."
+    },
+    {
+      "name": "Prix fixe menu",
+      "meal": "lunch",
+      "price": 65,
+      "courses": 3,
+      "note": "Lunch Friday and Saturday, and dinner Thursday and Friday (not Saturday dinner). Cheese course £17 extra."
+    }
+  ],
+  "menusSource": "https://www.houseoftides.co.uk/menus",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "After Hours",
+      "note": "Sunday evenings downstairs: a simpler, more casual menu from the same team.",
+      "url": "https://www.houseoftides.co.uk/afterhours"
+    },
+    {
+      "name": "Solstice by Kenny Atkinson",
+      "note": "The Atkinsons' other one-star restaurant in Newcastle, a small tasting-menu dining room.",
+      "url": "https://www.solsticencl.com/solstice"
+    }
+  ],
+  "starsSince": 2014,
+  "bookingOpens": "Online for 1 to 4 people; for 5 or more, phone or email info@houseoftides.co.uk. The phone line is open 10am to 5pm, Thursday to Sunday.",
+  "bookingUrl": "https://www.houseoftides.co.uk/reservations",
+  "bookingPhone": "+44 191 230 3720, 10am to 5pm Thursday to Sunday",
+  "cancellation": "A £50 deposit a person is taken when booking and comes off the bill. It is refunded if the booking is cancelled more than 72 hours ahead; later cancellations, no-shows and reductions in party size lose it.",
+  "walkIns": "Walk-ins are welcome but not guaranteed a table; the bar menu is served in the ground-floor bar.",
+  "waitlist": "If a date is full, add your name to the waiting list in the online booking system and the restaurant will call if a table comes free.",
+  "groups": "Tables of 5 or more are booked by phone or email. The whole restaurant can be hired privately (info@houseoftides.co.uk).",
+  "dressCode": "Relaxed, with no strict dress code, but no shorts, sleeveless T-shirts, hats, flip-flops or Sunderland football shirts.",
+  "children": "No infants or babies; best suited to children over 10. There is no children's menu, and everyone pays the same menu price.",
+  "infoSource": "https://www.houseoftides.co.uk/faqs",
+  "infoChecked": "2026-10-13"
 }

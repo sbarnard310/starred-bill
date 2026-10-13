@@ -14,8 +14,8 @@
   "reviews": 37,
   "dinner": 280,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase",
-  "dinnerNoteZh": "廚師發辦",
+  "dinnerNote": "Omakase, 22–25 courses",
+  "dinnerNoteZh": "廚師發辦，22至25道",
   "sourceType": "press",
   "source": "https://www.exploretock.com/mori-nozomi-los-angeles",
   "noLunch": true,
@@ -26,5 +26,23 @@
   "placeId": "ChIJh_EchAm7woAR_M_f_w6W50c",
   "michelinId": "1217966",
   "chef": "Nozomi Mori",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Dinner Omakase at the sushi bar",
+      "meal": "dinner",
+      "price": 280,
+      "note": "22 to 25 courses, all seated at the counter and served together, so arrive on time; dishes cannot be changed or substituted"
+    }
+  ],
+  "menusSource": "https://www.exploretock.com/mori-nozomi-los-angeles",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Online on Tock only, for one to three guests, with a $280 deposit per guest held on the card and refunded within five to seven working days after the meal. Tables currently show to the end of next month.",
+  "bookingUrl": "https://www.exploretock.com/mori-nozomi-los-angeles",
+  "cancellation": "Cancel at least 96 hours ahead to avoid a charge. Between 48 and 96 hours ahead, 50% of the menu price plus tax and a 2% transaction fee is charged; within 48 hours, and for no-shows, the full $280 per guest plus tax and the fee. Bookings cannot be changed within 48 hours.",
+  "waitlist": "Tock's waiting list is open for full dates.",
+  "byob": "Corkage is $100 per 750ml bottle of wine or champagne and $150 per bottle of sake, not allowed for anything the restaurant sells.",
+  "infoSource": "https://www.exploretock.com/mori-nozomi-los-angeles",
+  "infoChecked": "2026-10-13"
 }

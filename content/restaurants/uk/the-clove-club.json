@@ -9,9 +9,9 @@
   "reviews": 1135,
   "dinner": 285,
   "dinnerType": "menu",
-  "dinnerNote": "Classic tasting menu (short menu £225)",
+  "dinnerNote": "Tasting menu, Mon & Thu–Sat (same menu £185 on Tue & Wed; short menu £225 Mon & Thu)",
   "sourceType": "site",
-  "source": "https://gifts.thecloveclub.com/products/tasting-menu-2",
+  "source": "https://www.thecloveclub.com/reservations",
   "lunch": 95,
   "lunchType": "menu",
   "lunchNote": "Lunch menu, 3 courses · Wed–Sat (lunch tasting menu £185)",
@@ -27,5 +27,63 @@
     "vegetarian"
   ],
   "chef": "Isaac McHale",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 285,
+      "note": "Dinner on Monday, Thursday, Friday and Saturday. On Tuesday and Wednesday the full tasting menu costs £185 at dinner; a vegetarian tasting menu is offered"
+    },
+    {
+      "name": "Tuesday and Wednesday tasting menu",
+      "meal": "dinner",
+      "price": 185,
+      "note": "The full tasting menu at a lower price, Tuesday and Wednesday dinner only"
+    },
+    {
+      "name": "Short dinner tasting menu",
+      "meal": "dinner",
+      "price": 225,
+      "note": "Monday and Thursday dinner only"
+    },
+    {
+      "name": "Lunch tasting menu",
+      "meal": "lunch",
+      "price": 185,
+      "note": "Lunch Wednesday to Saturday"
+    },
+    {
+      "name": "Three-course lunch menu",
+      "meal": "lunch",
+      "price": 95,
+      "courses": 3,
+      "note": "Lunch Wednesday to Saturday"
+    }
+  ],
+  "menusSource": "https://www.thecloveclub.com/menus",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2022,
+  "bookingOpens": "Online through OpenTable for one to six guests, up to three months ahead on a rolling basis. Card details secure the table; no deposit is taken.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/London",
+    "via": "OpenTable",
+    "source": "https://www.thecloveclub.com/reservations",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.opentable.co.uk/r/the-clove-club-reservations-london?restref=95193",
+  "bookingPhone": "+44 20 7729 6496",
+  "cancellation": "Cancelling, rescheduling or cutting numbers with less than 72 hours' notice costs £125 a person for lunch or £155 a person for dinner, charged to the card given when booking.",
+  "walkIns": "Walk-ins are accepted when there's room, but a table isn't guaranteed. The Bar and Lounge serves a changing menu of small plates, bookable for up to six, and also takes walk-ins.",
+  "waitlist": "Email reservations@thecloveclub.com with the date, time and party size to hear if a table comes free.",
+  "groups": "Online bookings are for up to six; menu prices are for parties of up to six. For larger groups and private events, email reservations@thecloveclub.com.",
+  "dressCode": "No strict dress code; most guests wear smart casual.",
+  "children": "Children are welcome and eat the same menu, with no children's menu. High chairs on request; there's no room for pushchairs in the dining room.",
+  "duration": "At least three hours for the tasting menu and two hours for the short tasting menu.",
+  "byob": "One bottle per two guests, at £75 corkage a bottle plus service.",
+  "servicePct": 15,
+  "infoSource": "https://www.thecloveclub.com/faq",
+  "infoChecked": "2026-10-13"
 }

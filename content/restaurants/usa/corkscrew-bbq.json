@@ -23,5 +23,18 @@
     "gluten-free"
   ],
   "chef": "Will Buckman",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menusSource": "https://img1.wsimg.com/blobby/go/e7cb21fd-9eeb-4114-872b-35403affbb15/Menu%20APRIL%202026%20(1).pdf",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "noBookings": true,
+  "queue": "Order at the counter; the queue outside is covered, with seats, fans in summer and heaters in winter. Meat sells out during the day, so to be sure of an item arrive by about 10:30–10:45am Wednesday and Thursday, 10–10:30am Friday and 9–10am Saturday (earlier around holidays), or order online three to five days ahead for a Friday or Saturday pick-up.",
+  "bookingOpens": "No reservations, and seats are not held. Pick-up orders are taken online only (not by phone, email or text); Saturdays often book up days ahead.",
+  "bookingUrl": "https://www.corkscreworders.com/",
+  "bookingPhone": "+1 281 330 2178, text on arrival for online orders",
+  "cancellation": "Online orders under $100 can be cancelled up to one hour before pick-up, over $100 up to three hours before, and over $200 (or with whole meats or half-pan sides) up to 24 hours before.",
+  "walkIns": "Walk-in only, Wednesday to Saturday from 11am until 4pm or until it sells out. Indoor seating is limited, so order before taking a table and leave the receipt on it; there is also outdoor seating.",
+  "children": "Kids' meals from $9 (a quarter pound of meat with chips).",
+  "infoSource": "https://corkscrewbbq.com/info",
+  "infoChecked": "2026-10-13"
 }

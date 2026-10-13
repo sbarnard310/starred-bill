@@ -13,9 +13,9 @@
   "reviews": 220,
   "dinnerType": "menu",
   "dinner": 11000,
-  "dinnerNote": "Tasting menu (other menus from TRY 7,000)",
+  "dinnerNote": "Long tasting menu, 12–14 courses (short tasting menu TRY 7,000)",
   "sourceType": "site",
-  "source": "https://www.mezrayalikavak.com/",
+  "source": "https://www.mezrayalikavak.com/en",
   "website": "https://www.mezrayalikavak.com/",
   "lat": 37.1149719,
   "lng": 27.3254393,
@@ -23,9 +23,37 @@
   "michelinId": "1213287",
   "chef": "Serhat Doğramacı",
   "chefSource": "michelin",
-  "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 7,000 itibarıyla)",
+  "dinnerNoteTr": "Uzun tadım menüsü, 12–14 aşama (kısa tadım menüsü TRY 7,000)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTr": "Yalnızca akşam yemeği",
-  "cuisineTr": "Market Mutfağı"
+  "cuisineTr": "Market Mutfağı",
+  "menus": [
+    {
+      "name": "Long Tasting Menu",
+      "meal": "dinner",
+      "price": 11000,
+      "courses": 14,
+      "note": "12 to 14 courses, about 2½ to 3 hours; VAT included, drinks extra; a wine pairing is offered but its price isn't published"
+    },
+    {
+      "name": "Short Tasting Menu",
+      "meal": "dinner",
+      "price": 7000,
+      "courses": 10,
+      "note": "8 to 10 courses; VAT included, drinks extra"
+    }
+  ],
+  "menusSource": "https://www.mezrayalikavak.com/en",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through Check&Place, by phone or on WhatsApp. A prepayment of TRY 2,000 a person confirms the booking, and the rest is paid after the meal.",
+  "bookingUrl": "https://checkandplace.com/public/online-booking/mezra-yalikavak/mezra-yalikavak/restaurant?language=en",
+  "bookingPhone": "+90 532 232 72 74",
+  "cancellation": "Cancellations made at least 48 hours ahead are refunded in full; later cancellations are not refunded.",
+  "dressCode": "Smart casual. No beachwear, swimwear, flip-flops or very casual clothes.",
+  "children": "The tasting menus are not suitable for under-12s. A children's menu (pasta, meatballs, chips) is offered.",
+  "duration": "About two and a half to three hours for the long tasting menu.",
+  "byob": "One 750ml bottle a table, with €50 corkage. Wines on the restaurant's list, spirits and house-made drinks may not be brought.",
+  "infoSource": "https://www.mezrayalikavak.com/en",
+  "infoChecked": "2026-10-13"
 }

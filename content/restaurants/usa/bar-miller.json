@@ -17,8 +17,8 @@
   "dinnerType": "menu",
   "dinnerNote": "Omakase, 15 courses; plus 20% service",
   "wine": 125,
-  "sourceType": "press",
-  "source": "https://www.theinfatuation.com/new-york/reviews/bar-miller",
+  "sourceType": "site",
+  "source": "https://www.barmiller.com/faqs",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.barmiller.com/",
@@ -31,5 +31,26 @@
     "kosher"
   ],
   "chef": "James Dumapit",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "15-course omakase",
+      "meal": "dinner",
+      "price": 250,
+      "wine": 125,
+      "courses": 15,
+      "note": "Seatings at 6pm and 8:30pm; the pairing is seven wines and sakes; tax and a 20% gratuity are added"
+    }
+  ],
+  "menusSource": "https://www.barmiller.com/faqs",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "Online on OpenTable, which shows tables up to 30 days ahead.",
+  "bookingUrl": "https://www.opentable.com/booking/experiences-availability?rid=1363933&restref=1363933&experienceId=326713",
+  "cancellation": "Cancellations or changes less than 72 hours ahead are non-refundable, and the booking can't be moved to another date to avoid the charge. Private parties of six or more need a week's notice to cancel with a refund.",
+  "groups": "Private seated dinners for up to eight; email info@barmiller.com.",
+  "dressCode": "Business casual, according to its OpenTable listing.",
+  "byob": "Corkage is $95 a bottle, arranged by email in advance.",
+  "infoSource": "https://www.barmiller.com/faqs",
+  "infoChecked": "2026-10-13"
 }

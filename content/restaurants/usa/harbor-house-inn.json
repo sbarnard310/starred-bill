@@ -13,7 +13,7 @@
   "wine": 125,
   "sourceType": "press",
   "source": "https://www.opentable.com/r/the-harbor-house-inn-elk",
-  "lunchNote": "Open for lunch · Thu–Mon",
+  "lunchNote": "Five-course lunch, Thu–Mon",
   "website": "https://www.theharborhouseinn.com/",
   "lat": 39.1355655,
   "lng": -123.7190639,
@@ -23,5 +23,49 @@
     "vegetarian"
   ],
   "chef": "Matthew Kammerer",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "lunch": 150,
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.opentable.com/r/the-harbor-house-inn-elk",
+  "menus": [
+    {
+      "name": "Full Experience tasting menu",
+      "meal": "dinner",
+      "price": 350,
+      "wine": 125,
+      "note": "Thursday to Monday, seatings at 5:30pm, 6pm and 6:45pm; changes daily; drinks pairings from $125"
+    },
+    {
+      "name": "five-course lunch",
+      "meal": "lunch",
+      "price": 150,
+      "courses": 5,
+      "note": "Thursday to Monday, seatings at 12pm, 12:30pm and 1pm; changes daily"
+    }
+  ],
+  "menusSource": "https://www.opentable.com/r/the-harbor-house-inn-elk",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2021,
+  "hotel": "the Harbor House Inn, an 11-room inn on the Mendocino coast",
+  "bookingOpens": "Online on OpenTable; reservations are required. Each month's tables are released to the public on the 1st of the month before. Inn guests who book a room well ahead get earlier access, and a few tables are held for inn guests.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "tz": "America/Los_Angeles",
+    "via": "OpenTable",
+    "note": "Inn guests booking ahead get earlier access.",
+    "source": "https://www.theharborhouseinn.com/faqs",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.opentable.com/r/the-harbor-house-inn-reservations-elk?restref=1011043",
+  "bookingPhone": "+1 707 877 3203",
+  "cancellation": "Bookings are charged on the day, including no-shows. Dinner can be cancelled up to 72 hours ahead and lunch up to 24 hours ahead; cancellations inside those windows are not refunded.",
+  "waitlist": "Join the waiting list on OpenTable.",
+  "groups": "Private dinners, weddings and events for up to 60, which need all 11 rooms and cottages booked. Enquiries to events@theharborhouseinn.com.",
+  "groupsUrl": "https://www.theharborhouseinn.com/bookyourevents",
+  "dressCode": "No t-shirts, shorts, flip-flops, sportswear or hats; jackets and ties are not required. Guests are asked not to wear perfume or cologne.",
+  "children": "No children under 15.",
+  "infoSource": "https://www.theharborhouseinn.com/dine",
+  "infoChecked": "2026-10-13"
 }

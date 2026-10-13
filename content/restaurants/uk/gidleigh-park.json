@@ -25,5 +25,43 @@
     "gluten-free"
   ],
   "chef": "Ian Webber",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Seven-course dinner menu",
+      "meal": "dinner",
+      "price": 165,
+      "courses": 7,
+      "note": "Tuesday to Saturday, 6pm to 9pm."
+    },
+    {
+      "name": "Five-course dinner menu",
+      "meal": "dinner",
+      "price": 135,
+      "courses": 5,
+      "note": "Tuesday to Saturday, 6pm to 9pm. Cheese as an extra course £18.50."
+    }
+  ],
+  "menusSource": "https://www.gidleigh.co.uk/dining-drinking/restaurant",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Country House menu in the lounges",
+      "note": "À la carte, every day 12pm to 2:30pm and 6pm to 9pm; starters £12.50–18.50, mains £24–45.",
+      "url": "https://www.gidleigh.co.uk/dining-drinking/restaurant"
+    },
+    {
+      "name": "Afternoon tea",
+      "price": 52,
+      "note": "Served daily in the lounges (Champagne afternoon tea £72–75).",
+      "url": "https://www.gidleigh.co.uk/dining-drinking/restaurant"
+    }
+  ],
+  "bookingOpens": "Online through OpenTable or through the hotel. The restaurant serves dinner Tuesday to Saturday, 6pm to 9pm.",
+  "bookingUrl": "https://www.opentable.co.uk/booking/restref/availability?restRef=40050",
+  "groups": "Private dining rooms for family celebrations and business lunches or dinners, with menus and wine planned with the events team.",
+  "groupsUrl": "https://gidleigh.co.uk/dine/private-dining/",
+  "children": "A children's menu is offered.",
+  "infoSource": "https://www.gidleigh.co.uk/dining-drinking/restaurant",
+  "infoChecked": "2026-10-13"
 }

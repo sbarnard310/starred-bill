@@ -11,12 +11,12 @@
   "dinnerType": "menu",
   "dinnerNote": "Full menu (short menu £60)",
   "sourceType": "site",
-  "source": "https://www.thesportsmanseasalter.co.uk/",
-  "lunch": 85,
+  "source": "https://www.thesportsmanseasalter.co.uk/tasting.php",
+  "lunch": 60,
   "lunchType": "menu",
-  "lunchNote": "Same menus at lunch",
+  "lunchNote": "Short menu, Tue–Thu (full menu £85)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.thesportsmanseasalter.co.uk/",
+  "lunchSource": "https://www.thesportsmanseasalter.co.uk/tasting.php",
   "website": "https://www.thesportsmanseasalter.co.uk/",
   "lat": 51.344186,
   "lng": 0.958506,
@@ -27,5 +27,35 @@
     "vegetarian"
   ],
   "chef": "Stephen Harris",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Full Menu",
+      "meal": "dinner",
+      "price": 85,
+      "courses": 4,
+      "note": "Lunch or dinner on every day it opens; one dish chosen from each of starter, fish, meat and pudding; cheese £5 extra"
+    },
+    {
+      "name": "Short Menu",
+      "meal": "dinner",
+      "price": 60,
+      "courses": 3,
+      "note": "Lunch or dinner, Tuesday to Thursday only; a starter, a fish or meat course and a pudding"
+    }
+  ],
+  "menusSource": "https://www.thesportsmanseasalter.co.uk/tasting.php",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2008,
+  "bookingOpens": "Online on OpenTable, or by phone or email. Weekends book up six to eight months ahead, especially in summer; midweek tables usually need one or two months' notice. Dates not shown online may still be available by phone or email.",
+  "bookingUrl": "https://www.opentable.co.uk/restref/client/?rid=208812",
+  "bookingPhone": "+44 1227 273370",
+  "cancellation": "Bookings can be changed on OpenTable up to 24 hours ahead. Cancellations within 24 hours and no-shows may be charged £25 per person. Parties of four or more give card details to secure the table (nothing is taken), within 8 hours or the booking lapses.",
+  "walkIns": "Inside seats are kept for diners with bookings; there are some seats for drinkers in the conservatory.",
+  "waitlist": "If no table is free, ask to be put on the waiting list by phone or email; cancellations do come up.",
+  "groups": "Tables for up to 10 people.",
+  "children": "No children under 10, and no children's menu.",
+  "servicePct": 10,
+  "infoSource": "https://www.thesportsmanseasalter.co.uk/contact.php",
+  "infoChecked": "2026-10-13"
 }

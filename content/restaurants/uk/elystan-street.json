@@ -7,18 +7,18 @@
   "cuisine": "Modern British",
   "rating": 4.6,
   "reviews": 686,
-  "dinner": 165,
+  "dinner": 150,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 6 courses (3 courses £95)",
+  "dinnerNote": "Six of the Best tasting menu, 6 courses (à la carte also served)",
   "wine": 80,
   "sourceType": "site",
-  "source": "https://www.elystanstreet.com/",
+  "source": "https://www.elystanstreet.com/wp-content/uploads/12.10.26-Tasting-Menu.pdf",
   "lunch": 45,
   "lunchType": "menu",
-  "lunchNote": "Set lunch, 3 courses · Mon–Sat",
+  "lunchNote": "Set menu, 3 courses · Mon–Sat (also 6–6:30pm at dinner)",
   "lunchWine": 40,
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d11672129-Reviews-Elystan_Street-London_England.html",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.elystanstreet.com/wp-content/uploads/12.10.26-Set-Menu-Lunch.pdf",
   "website": "https://www.elystanstreet.com/",
   "lat": 51.4915449,
   "lng": -0.1675485,
@@ -30,5 +30,41 @@
     "gluten-free"
   ],
   "chef": "Philip Howard",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Six of the Best tasting menu",
+      "meal": "dinner",
+      "price": 150,
+      "wine": 80,
+      "courses": 6,
+      "note": "Lunch or dinner, Monday to Saturday (last orders 2pm and 8:30pm). Optional cheese course £10 extra."
+    },
+    {
+      "name": "Set menu",
+      "meal": "lunch",
+      "price": 45,
+      "wine": 40,
+      "courses": 3,
+      "note": "Monday to Saturday at lunch, and at dinner for tables starting between 6pm and 6:30pm."
+    },
+    {
+      "name": "Sunday lunch menu",
+      "meal": "lunch",
+      "price": 60,
+      "courses": 3,
+      "note": "Sundays, 12pm to 3pm."
+    }
+  ],
+  "menusSource": "https://www.elystanstreet.com/menus/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2017,
+  "bookingOpens": "Online through OpenTable, or by phone or email.",
+  "bookingUrl": "https://www.opentable.co.uk/r/elystan-street-reservations-london?restref=160674",
+  "bookingPhone": "+44 20 7628 5005",
+  "groups": "A private dining room seats up to 16, with set menus of three courses (£95), four courses (£115) or the six-course tasting menu (£165).",
+  "groupsUrl": "https://www.elystanstreet.com/private-dining/",
+  "servicePct": 15,
+  "infoSource": "https://www.elystanstreet.com/contact/",
+  "infoChecked": "2026-10-13"
 }

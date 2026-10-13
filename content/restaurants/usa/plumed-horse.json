@@ -9,11 +9,11 @@
   "reviews": 918,
   "dinner": 225,
   "dinnerType": "menu",
-  "dinnerNote": "Seasonal tasting menu, 8 courses (four courses $128), plus 22% service",
+  "dinnerNote": "Chef's tasting menu, 8 courses (four-course prix fixe $138), plus 22% service",
   "wine": 148,
-  "sourceType": "press",
-  "source": "https://www.opentable.com/the-plumed-horse",
-  "lunchNote": "Open for lunch · Mondays",
+  "sourceType": "site",
+  "source": "https://plumedhorse.com/menu/",
+  "lunchNote": "Dinner only",
   "website": "https://plumedhorse.com/",
   "lat": 37.2563623,
   "lng": -122.0352659,
@@ -26,5 +26,36 @@
     "gluten-free"
   ],
   "chef": "Peter Armellino",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "noLunch": true,
+  "menus": [
+    {
+      "name": "Chef's tasting menu",
+      "meal": "dinner",
+      "price": 225,
+      "wine": 148,
+      "courses": 8,
+      "note": "Non-alcoholic pairing $118 (book it in advance); A5 Miyazaki striploin $85 extra; a 22% service charge is added"
+    },
+    {
+      "name": "Four-course prix fixe",
+      "meal": "dinner",
+      "price": 138,
+      "courses": 4,
+      "note": "Canapés, then a choice of starter, main and dessert; caviar and wagyu supplements; a 22% service charge is added"
+    }
+  ],
+  "menusSource": "https://plumedhorse.com/menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2008,
+  "bookingOpens": "Online on OpenTable or by phone. The restaurant takes reservations Tuesday to Sunday, 5pm to 9pm.",
+  "bookingUrl": "https://www.opentable.com/the-plumed-horse-reservations-saratoga",
+  "bookingPhone": "+1 408 867 4711",
+  "walkIns": "The bar and fireside lounge serve cocktails and wine; à la carte dishes are offered at some seatings on certain evenings.",
+  "groups": "Parties of more than six book with the restaurant directly. Private rooms: the Chef's Table (up to 12), the Library (12), the Gold Room (28), the Rose Room (34) and the main dining room (100), up to 200 for the whole restaurant. The Chef's Table experience is $625 per person with the reserve wine pairing, for 4 to 8 guests, one table a night, with a $250 per person deposit that is not refunded and a $250 room fee.",
+  "groupsUrl": "https://plumedhorse.com/private-functions/",
+  "dressCode": "Smart casual. Jackets are not required, but the restaurant encourages suits, sports jackets and dressing up for the evening.",
+  "children": "It calls itself an adult restaurant. Younger guests are welcome, but no tablets or phones for entertainment at the table.",
+  "infoSource": "https://www.opentable.com/the-plumed-horse-reservations-saratoga",
+  "infoChecked": "2026-10-13"
 }

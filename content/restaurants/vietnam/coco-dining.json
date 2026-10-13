@@ -26,5 +26,40 @@
   "lunchNoteVi": "Chỉ phục vụ bữa tối",
   "dinner": 4250000,
   "wine": 2500000,
-  "source": "https://cocosgn.com/coco-dining"
+  "source": "https://cocosgn.com/coco-dining",
+  "menus": [
+    {
+      "name": "Lưu Tích tasting menu",
+      "meal": "dinner",
+      "price": 4250000,
+      "wine": 2500000,
+      "note": "Pairing price is The Journey; other pairings: The Explorer (wine, sake, cocktails) ₫3,000,000, The Heritage ₫4,500,000, The Spark (Champagne only) ₫5,500,000, The Botanic (alcohol-free) ₫2,500,000; prices before VAT and service charge"
+    }
+  ],
+  "menusSource": "https://drive.google.com/file/d/1p8e4CgHHjEiPAJl92k4TxcrrwJcUbDgP/view",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "CoCo Grill",
+      "note": "Chef Vương's à la carte wood-fire grill in the same villa",
+      "url": "https://cocosgn.com/coco-grill"
+    },
+    {
+      "name": "CoCo Bar",
+      "note": "Cocktail and whisky bar in the same building, open until 1am",
+      "url": "https://cocosgn.com/coco-bar"
+    }
+  ],
+  "starsSince": 2025,
+  "bookingOpens": "Online on TableCheck, or by phone or email. Dinner from 5:30pm; last orders 8:30pm.",
+  "bookingUrl": "https://www.tablecheck.com/en/coco-saigon-vietnam/reserve",
+  "bookingPhone": "+84 969 730 660",
+  "cancellation": "Groups of four or more pay a deposit of half the menu price per guest. Half of it is refunded for cancellations 48 hours ahead; within 24 hours nothing is refunded. Tables are held for 15 minutes.",
+  "groups": "The villa seats 50 on one floor or 100 across both floors for private events; a private room needs a deposit of ₫15,000,000 Monday to Thursday or ₫20,000,000 Friday to Sunday and on public holidays.",
+  "groupsUrl": "https://cocosgn.com/event-functions/",
+  "dressCode": "Smart casual.",
+  "children": "Guests aged 12 and over only.",
+  "byob": "Wine only: corkage ₫2,000,000 plus tax and service per 750ml bottle, ₫4,000,000 for spirits. No other outside food or drink.",
+  "infoSource": "https://cocosgn.com/reservation/",
+  "infoChecked": "2026-10-13"
 }

@@ -7,17 +7,17 @@
   "cuisine": "Classic French",
   "rating": 4.7,
   "reviews": 838,
-  "dinner": 190,
+  "dinner": 290,
   "dinnerType": "menu",
-  "dinnerNote": "Menu Gastronomique, by pre-order (also à la carte)",
+  "dinnerNote": "Menu Exceptionnel, 7 courses (Menu Gastronomique £190, by pre-order; also à la carte)",
   "wine": 195,
   "sourceType": "site",
-  "source": "https://www.waterside-inn.co.uk/",
+  "source": "https://www.waterside-inn.co.uk/wp-content/uploads/2026/09/9.-M.E.-M.E.V-Autumn-2026-Website.pdf",
   "lunch": 150,
   "lunchType": "menu",
-  "lunchNote": "Menu Gastronomique at lunch",
+  "lunchNote": "Menu Gastronomique at lunch, Wed–Sat, by pre-order",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.waterside-inn.co.uk/",
+  "lunchSource": "https://www.waterside-inn.co.uk/wp-content/uploads/2026/10/Menu-Gastronomique-sample-for-website-1.pdf",
   "website": "https://www.waterside-inn.co.uk/",
   "lat": 51.509109,
   "lng": -0.699438,
@@ -28,5 +28,59 @@
     "vegetarian"
   ],
   "chef": "Alain Roux",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Menu Exceptionnel",
+      "meal": "dinner",
+      "price": 290,
+      "wine": 195,
+      "courses": 7,
+      "note": "For the whole table; a vegetarian version costs the same; wine pairings £195, £575 or £1,350"
+    },
+    {
+      "name": "Menu Gastronomique",
+      "meal": "dinner",
+      "price": 190,
+      "courses": 4,
+      "note": "Dinner Wednesday and Thursday; by pre-order only, for the whole table; coffee and mignardises £12 extra"
+    },
+    {
+      "name": "Menu Gastronomique at lunch",
+      "meal": "lunch",
+      "price": 150,
+      "courses": 4,
+      "note": "Lunch Wednesday to Saturday; by pre-order only, for the whole table; coffee and mignardises £12 extra"
+    },
+    {
+      "name": "Sunday lunch menu",
+      "meal": "lunch",
+      "price": 185,
+      "courses": 4,
+      "note": "Sunday lunch, by pre-order only, for the whole table; coffee and mignardises £12 extra"
+    }
+  ],
+  "menusSource": "https://www.waterside-inn.co.uk/menus/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 1985,
+  "bookingOpens": "Online through ResDiary on the restaurant's website, or by phone. Lunch and dinner can be booked up to six months ahead (the private dining room up to 12 months). Every room booking comes with a dinner table.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 6,
+    "tz": "Europe/London",
+    "via": "ResDiary",
+    "source": "https://www.waterside-inn.co.uk/terms-and-conditions/",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.waterside-inn.co.uk/booking_portal/",
+  "bookingPhone": "+44 1628 620691",
+  "cancellation": "A £150 deposit per person secures the table. It is refunded with at least three days' notice; later cancellations and no-shows lose it. Guests are asked to reconfirm three days before.",
+  "groups": "Tables seat up to six. Parties of 6 to 12 can use the River Cottage private dining room (room hire £50 per person, £200 deposit per person); up to eight can book it online, nine or more by email.",
+  "groupsUrl": "https://www.waterside-inn.co.uk/private_parties_weddings/private-dining/",
+  "dressCode": "Smart. Men need a collared shirt (no polo shirts), long trousers (smart denim is fine) and smart shoes or smart trainers; a jacket is optional. T-shirts, hoodies, shorts, sportswear, flip-flops and sandals are not allowed, and guests who don't follow the code are turned away and charged under the cancellation policy.",
+  "children": "Children are welcome from the age of 9; the restaurant isn't suitable for babies or younger children.",
+  "byob": "No corkage: guests can't bring their own wine.",
+  "servicePct": 12.5,
+  "infoSource": "https://www.waterside-inn.co.uk/terms-and-conditions/",
+  "infoChecked": "2026-10-13"
 }

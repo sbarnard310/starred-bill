@@ -11,7 +11,7 @@
   "reviews": 563,
   "dinner": 130,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Seven-course seasonal tasting menu",
   "sourceType": "site",
   "source": "https://www.63clinton.com/",
   "noLunch": true,
@@ -22,5 +22,35 @@
   "placeId": "ChIJ385rlW9ZwokRHTamoLqoosI",
   "michelinId": "1198091",
   "chef": "Samuel Clonts",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Seven-course seasonal tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "courses": 7,
+      "note": "The only menu, served in the dining room, the bar room and at the kitchen counter; caviar hand roll $55 extra"
+    }
+  ],
+  "menusSource": "https://www.63clinton.com/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2021,
+  "bookingOpens": "Online on Resy. Tables open 21 days ahead at midnight New York time. Dinner Tuesday to Saturday from 6pm.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 21,
+    "time": "00:00",
+    "tz": "America/New_York",
+    "via": "Resy",
+    "source": "https://resy.com/cities/new-york-ny/venues/sixty-three-clinton",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://resy.com/cities/new-york-ny/venues/sixty-three-clinton",
+  "bookingPhone": "+1 917 663 6223",
+  "cancellation": "Cancel by 5pm two days before the booking; after that the fee is $130 per person. Tables are held for 20 minutes for late arrivals.",
+  "walkIns": "No walk-ins for dinner; reservation only. The 10-seat bar room, with six counter seats facing the kitchen, serves the same tasting menu.",
+  "groups": "Resy takes parties of up to six; parties of six or more pay a 20% service charge.",
+  "byob": "Corkage is $75 per 750ml bottle, waived if a bottle is bought from the wine list.",
+  "infoSource": "https://resy.com/cities/new-york-ny/venues/sixty-three-clinton",
+  "infoChecked": "2026-10-13"
 }

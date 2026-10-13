@@ -396,7 +396,10 @@ phoneWidth.addEventListener("change", () => { closeSheet(); closeDrops(); });
 // ---------- Table ----------
 function nameCell(r) {
   const initial = (nameOf(r).replace(/^(The|Restaurant)\s+/i, "")[0] || "?").toUpperCase();
-  const thumb = '<span class="thumb" aria-hidden="true"' + (r.placeId && !r.status ? ' data-pid="' + esc(r.placeId) + '" data-name="' + esc(nameOf(r)) + '"' : "") + ">" + esc(initial) + "</span>";
+  // With photos on (PHOTOS_OK), the lettered square is a button: its photo loads only when tapped, or when its row is opened on phones.
+  const thumb = PHOTOS_OK && r.placeId && !r.status
+    ? '<span class="thumb" role="button" tabindex="0" aria-label="' + esc(t("photoView", { name: nameOf(r) })) + '" data-pid="' + esc(r.placeId) + '" data-name="' + esc(nameOf(r)) + '">' + esc(initial) + "</span>"
+    : '<span class="thumb" aria-hidden="true">' + esc(initial) + "</span>";
   const alt = altNameOf(r);
   const pin = r.status === "closed" ? "" : '<a class="map" href="' + mapsUrl(r) + '" target="_blank" rel="noopener" aria-label="' + esc(t("findOnMaps", { name: nameOf(r) })) + '" title="' + esc(t("findOnMapsTitle")) + '"><svg aria-hidden="true"><use href="#pin"/></svg></a>';
   // The map pin stays on the line with the name's last word (or last character, for names without spaces) when the name wraps.
@@ -442,6 +445,7 @@ function toggleRow(btn) {
   state.openRow = open ? id : null;
   row.classList.toggle("open", open);
   btn.setAttribute("aria-expanded", String(open));
+  if (open) openRowPhoto();
   // Closing a row above this one would pull it up the screen, so keep it where the finger was.
   const moved = row.getBoundingClientRect().top - before;
   if (moved) window.scrollBy(0, moved);
@@ -563,7 +567,7 @@ function fillLedger(job) {
   const end = Math.min(ledgerTarget(), ledger.drawn + LEDGER_STEP);
   $("ledger").insertAdjacentHTML("beforeend", ledger.rows.slice(ledger.drawn, end).map(ledgerRow).join("") + (end >= ledgerTarget() ? ledgerTail() : ""));
   ledger.drawn = end;
-  observeThumbs();
+  openRowPhoto();
   if (end < ledgerTarget()) nextFrame(() => fillLedger(job));
 }
 function toggleLedger() {
@@ -607,7 +611,7 @@ function renderLedger() {
   html += rows.slice(0, ledger.drawn).map(ledgerRow).join("") + (ledger.drawn >= ledgerTarget() ? ledgerTail() : "");
   $("ledger").innerHTML = html;
   renderFilterSummary(rows.length);
-  observeThumbs();
+  openRowPhoto();
   if (ledger.drawn < ledgerTarget()) { const job = ledger.job; nextFrame(() => fillLedger(job)); }
   updateMap(true);
   renderLedgerFoot();
@@ -674,30 +678,25 @@ function fetchPhoto(placeId) {
   }
   return photoCache.get(placeId);
 }
-async function applyPhoto(el) {
+async function applyPhoto(el, big) {
   const info = await fetchPhoto(el.dataset.pid);
   if (!info || !el.isConnected || el.querySelector("img")) return;
   const img = new Image();
   img.alt = "";
   img.decoding = "async";
-  img.src = info.uri;
+  img.src = big ? info.big : info.uri;
   img.onload = () => el.classList.add("has-photo");
   el.appendChild(img);
   // A loaded photo opens larger when tapped.
-  el.removeAttribute("aria-hidden");
-  el.setAttribute("role", "button");
-  el.tabIndex = 0;
-  el.setAttribute("aria-label", t("photoView", { name: el.dataset.name }));
   el.dataset.zoom = "1";
   const credit = el.parentElement.querySelector(".credit");
   if (credit) credit.innerHTML = t("photo") + ": " + (info.author ? (info.authorUri ? '<a href="' + esc(info.authorUri) + '" target="_blank" rel="noopener">' + esc(info.author) + "</a>" : esc(info.author)) + " · " : "") + "Google Maps";
 }
-const thumbObserver = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
-  entries.forEach((e) => { if (e.isIntersecting) { thumbObserver.unobserve(e.target); applyPhoto(e.target); } });
-}, { rootMargin: "300px 0px" }) : null;
-function observeThumbs() {
-  if (!GOOGLE_MAPS_API_KEY || !thumbObserver) return;
-  document.querySelectorAll(".thumb[data-pid]:not([data-watched])").forEach((el) => { el.dataset.watched = "1"; thumbObserver.observe(el); });
+// Each photo is a paid request, so the list doesn't load one per row: on phones the opened row's photo loads, and on
+// computers a tap on the lettered square loads it and opens it larger (the click handler under "Larger photos").
+function openRowPhoto() {
+  const el = document.querySelector("#ledger .row.open .thumb[data-pid]");
+  if (el && el.offsetParent) applyPhoto(el);
 }
 
 const mapState = { map: null, info: null, markers: new Map(), lost: new Map(), near: null };
@@ -842,7 +841,7 @@ function renderRow(id, sel) {
   row.insertAdjacentHTML("afterend", ledgerRow(r));
   const fresh = row.nextElementSibling;
   row.remove();
-  renderShowFilter(); renderLedgerFoot(); observeThumbs();
+  renderShowFilter(); renderLedgerFoot(); openRowPhoto();
   const btn = had && [...fresh.querySelectorAll(sel)].find((b) => b.offsetParent);
   if (btn) btn.focus();
 }
@@ -887,13 +886,18 @@ async function openPhoto(el) {
   $("photoClose").setAttribute("aria-label", t("photoClose"));
   $("photoBox").showModal();
 }
+// A photo not loaded yet loads at the larger size, so opening it costs one request, not two.
+async function showThumb(el) {
+  if (!el.dataset.zoom) await applyPhoto(el, true);
+  if (el.dataset.zoom) openPhoto(el);
+}
 document.addEventListener("click", (e) => {
-  const zoom = e.target.closest(".thumb[data-zoom]");
-  if (zoom) { openPhoto(zoom); return; }
+  const el = e.target.closest(".thumb[data-pid]");
+  if (el && el.offsetParent) showThumb(el);
 });
 document.addEventListener("keydown", (e) => {
-  const zoom = e.target.closest && e.target.closest(".thumb[data-zoom]");
-  if (zoom && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openPhoto(zoom); }
+  const el = e.target.closest && e.target.closest(".thumb[data-pid]");
+  if (el && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); showThumb(el); }
 });
 $("photoBox").addEventListener("click", (e) => { if (e.target === $("photoBox") || e.target.closest("#photoClose")) $("photoBox").close(); });
 $("photoBox").addEventListener("close", () => { $("photoImg").removeAttribute("src"); });

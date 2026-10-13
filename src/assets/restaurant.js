@@ -72,7 +72,7 @@ function showGallery(fig, btn) {
 }
 
 async function showPhoto() {
-  if (!GOOGLE_MAPS_API_KEY || !R.placeId) return;
+  if (!PHOTOS_OK || !R.placeId) return;
   try {
     await loadGoogle();
     const { Place } = await google.maps.importLibrary("places");

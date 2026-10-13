@@ -876,8 +876,8 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 .map-search .search input { border-color: var(--line); }
 
 /* Larger photos */
-.thumb[data-zoom] { cursor: zoom-in; }
-.thumb[data-zoom]:hover img { transform: scale(1.06); transition: transform .2s ease; }
+.thumb[data-pid] { cursor: zoom-in; }
+.thumb[data-pid]:hover img { transform: scale(1.06); transition: transform .2s ease; }
 .lightbox { border: 0; padding: 0; background: transparent; max-width: min(1000px, calc(100vw - 32px)); max-height: calc(100vh - 32px); overflow: visible; }
 .lightbox::backdrop { background: rgba(5, 15, 10, .82); }
 .lightbox img { display: block; max-width: 100%; max-height: calc(100vh - 120px); margin: 0 auto; border-radius: 10px; background: var(--surface); }

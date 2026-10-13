@@ -4,6 +4,11 @@
 // Google Maps Platform browser key, used for restaurant photos and the maps.
 // Leave empty to show lettered placeholders and hide the maps.
 const GOOGLE_MAPS_API_KEY = "AIzaSyA5AnpHOqFXxb6U3hDiXuAyQK2dIbZgLT4";
+// Google charges for every photo shown (the first 1,000 a month are free), so photos load only when someone asks for one
+// (an opened row, a tapped thumbnail, a restaurant page), and never for search-engine crawlers or in local previews
+// (add ?photos=1 to the address to try them there).
+const PHOTOS_OK = !!GOOGLE_MAPS_API_KEY && !navigator.webdriver && !/bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(navigator.userAgent) &&
+  (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname) || /[?&]photos=1\b/.test(location.search));
 // Map pins run from light gold (one star) to deep bronze (three), with the star count printed inside.
 // fill, ink and edge are the pin, its number and its outline; line and lineInk the outline and number of a hollow pin (no prices yet).
 const MAP_PINS = {

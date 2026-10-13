@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Looks for head chefs on restaurants' own websites, for restaurants the MICHELIN Guide doesn't name one for.
+"""Looks for head chefs on restaurants' own websites, for restaurants without one.
 
     python3 scripts/chef_from_sites.py OUT.json      fetch and write candidate sentences for review
 
 It visits each website's homepage plus up to three linked pages that look like "team", "about" or "chef" pages,
 and keeps the sentences that mention a head chef in any of the site's languages. Nothing is written to content/:
-the candidates are checked by hand, then added with  python3 scripts/michelin_details.py chefs FILE  (source "site").
+the candidates are checked by hand, then added with  python3 scripts/chefs.py add FILE  (source "site").
 """
 import concurrent.futures
 import html

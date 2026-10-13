@@ -34,7 +34,6 @@ function applyStatic() {
   $("mapCanvas").setAttribute("aria-label", t("mapLabel"));
   fitPlaceholder($("mapQ"), [t("mapSearchPh"), tHas("mapSearchPhShort")]);
   $("mapQ").setAttribute("aria-label", t("mapSearchLabel"));
-  if (DATA.worldTotal) document.querySelector('[data-i18n="mapHomeText"]').textContent = t("mapHomeWorldText", { n: DATA.worldTotal.toLocaleString("en-GB") });
 }
 function renderFigures() {
   $("fRestaurants").textContent = DATA.starCounts[0].toLocaleString("en-GB");
@@ -318,10 +317,9 @@ function renderResults() {
 }
 
 // ---------- World map ----------
-// Filled pins are restaurants with prices on this site; outlined pins are every other starred restaurant
-// in the MICHELIN Guide, loaded from /data/world.json once the map starts. Grey pins (world.lost, never clustered)
-// are restaurants that recently lost their stars, shown only when no star filter is on.
-const world = { map: null, info: null, markers: [], lost: [], clusterer: null, loaded: false };
+// A pin for every starred restaurant on this site. Grey pins (world.lost, never clustered) are restaurants that
+// recently lost their stars, shown only when no star filter is on.
+const world = { map: null, info: null, markers: [], lost: [], clusterer: null };
 const infoBox = (body) => '<div style="font-family:Figtree,system-ui,sans-serif;color:#12261C;max-width:240px;line-height:1.4">' + body + "</div>";
 function infoHtml(r) {
   return infoBox('<div style="font-weight:700;font-size:15px">' + esc(nameOf(r)) + "</div>" +
@@ -339,14 +337,6 @@ function lostInfoHtml(r) {
     '<div style="margin-top:6px;font-size:13px"><strong style="color:#A33A2E">' + esc(label[r.status] || label.changed) + "</strong>" +
     (pick(r, "statusNote") ? " · " + esc(pick(r, "statusNote")) : "") + "</div>" +
     '<a href="' + cityLink(r) + '" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + esc(pick(r, "cityName")) + " →</a>");
-}
-function worldInfoHtml(w) {
-  const link = (href, label) => '<a href="' + esc(href) + '" target="_blank" rel="noopener" style="color:#1E6142;font-weight:600;font-size:13px;margin-right:12px">' + esc(label) + " ↗</a>";
-  return infoBox('<div style="font-weight:700;font-size:15px">' + esc(w.name) + "</div>" +
-    '<div style="color:#B3862B;font-size:13px">' + "✱".repeat(w.stars) + ' <span style="color:#5A6E62">' + esc(w.cuisine) + " · " + esc(w.where) + "</span></div>" +
-    '<div style="margin-top:6px;font-size:13px;color:#5A6E62">' + esc(t("infoNoPricesYet")) + "</div>" +
-    '<div style="margin-top:6px">' + link("https://guide.michelin.com/en" + w.path, t("infoMichelin")) +
-    link("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(w.name + ", " + w.where), "Google Maps") + "</div>");
 }
 function clusterIcon(count) {
   const size = count < 10 ? 34 : count < 100 ? 42 : count < 1000 ? 50 : 58;
@@ -389,10 +379,9 @@ async function initWorldMap() {
     }
     updateWorldMap(true);
     if (world.box) showBox(world.box);
-    // "Near me" waits for the full world list, so it can include restaurants without prices yet.
-    world.near = addNearMe(world.map, () => (world.loading || Promise.resolve()).catch(() => {}).then(() =>
+    world.near = addNearMe(world.map, () => Promise.resolve(
       world.markers.filter((m) => !homeState.stars || m.stars === homeState.stars).map((m) => ({
-        lat: m.getPosition().lat(), lng: m.getPosition().lng(), stars: m.stars, name: () => m.r ? nameOf(m.r) : m.w.name,
+        lat: m.getPosition().lat(), lng: m.getPosition().lng(), stars: m.stars, name: () => nameOf(m.r),
         open: () => { world.map.setCenter(m.getPosition()); if (world.map.getZoom() < 16) world.map.setZoom(16); openCard(m, true); }
       }))));
     // Arriving from a destination page's "see what's near you" link.
@@ -401,21 +390,6 @@ async function initWorldMap() {
       history.replaceState(null, "", location.pathname + (params.toString() ? "?" + params : "") + location.hash);
       $("map").scrollIntoView({ block: "start", behavior: "instant" });
       world.near.locate();
-    }
-    if (DATA.worldUrl) {
-      world.loading = getData(DATA.worldUrl);
-      const data = await world.loading;
-      const icons = { 1: pinIcon(1, true), 2: pinIcon(2, true), 3: pinIcon(3, true) };
-      world.markers = world.markers.concat(data.r.map(([name, stars, lat, lng, cuisine, where, path]) => {
-        const w = { name, stars, cuisine, where, path };
-        const m = new Marker({ position: { lat, lng }, title: name, icon: icons[stars], zIndex: stars * 10 });
-        m.addListener("click", () => openCard(m));
-        m.w = w; m.stars = stars; m.where = where;
-        m.find = fold(name + " " + where + " " + cuisine);
-        return m;
-      }));
-      world.loaded = true;
-      renderMapStars(); renderMapLegend(); updateWorldMap(false);
     }
   } catch (e) {
     if (!world.map) $("mapCanvas").innerHTML = '<p class="map-wait">' + t("mapError") + "</p>";
@@ -459,7 +433,7 @@ document.addEventListener("click", (e) => {
 });
 // Opens a restaurant's card. From a search result the pin may still be inside a cluster, so the card is placed by position.
 function openCard(m, fromSearch) {
-  world.info.setContent(m.lost ? lostInfoHtml(m.r) : m.r ? infoHtml(m.r) : worldInfoHtml(m.w));
+  world.info.setContent(m.lost ? lostInfoHtml(m.r) : infoHtml(m.r));
   if (fromSearch) {
     world.info.setOptions({ pixelOffset: new google.maps.Size(0, m.lost ? -30 : -38) });
     world.info.setPosition(m.getPosition());
@@ -517,8 +491,8 @@ function showHit(i) {
   $("map").scrollIntoView({ block: "start" });
 }
 
-// Star counts for the filter and legend: every pin once the world list has loaded, otherwise just ours.
-const pinStars = () => world.loaded ? world.markers.map((m) => ({ stars: m.stars })) : homeLoaded ? ALL
+// Star counts for the filter and legend: every restaurant once they've loaded, else the page's own counts.
+const pinStars = () => homeLoaded ? ALL
   : [1, 2, 3].flatMap((s) => Array(DATA.starCounts[s]).fill({ stars: s }));  // the page's own counts until the restaurants arrive
 function renderMapStars() {
   const list = pinStars();
@@ -528,7 +502,7 @@ function renderMapStars() {
 }
 function renderMapLegend() {
   renderLegend(pinStars());
-  $("mapLegend").insertAdjacentHTML("beforeend", "<li>" + legendPin(1, true) + "<span>" + esc(t("legendHollow")) + "</span></li>" + (LOST.length ? legendLost() : ""));
+  if (LOST.length) $("mapLegend").insertAdjacentHTML("beforeend", legendLost());
 }
 
 // ---------- Render and events ----------

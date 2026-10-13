@@ -239,9 +239,35 @@ def data_checks(site):
     for name in ("opening-hours.json", "opening-hours-google.json", "opening-hours-sites.json"):  # the MICHELIN Guide's, then Google's, then restaurants' own
         hours_file = C / name
         hours.update(json.loads(hours_file.read_text("utf-8")).get("hours", {}) if hours_file.exists() else {})
+    # Data still resting on the MICHELIN Guide's website (to-do item michelin-data-resource, stage 3): stars without a
+    # starSource or a press-release selection for their guide's latest ceremony, chefs and dietary options from its search
+    # index, and opening hours that are only the guide's.
+    guide_hours = set(json.loads((C / "opening-hours.json").read_text("utf-8")).get("hours", {})) if (C / "opening-hours.json").exists() else set()
+    for name in ("opening-hours-google.json", "opening-hours-sites.json"):
+        if (C / name).exists():
+            guide_hours -= set(json.loads((C / name).read_text("utf-8")).get("hours", {}))
+    cer = json.loads((C / "ceremonies.json").read_text("utf-8")).get("guides", []) if (C / "ceremonies.json").exists() else []
+    with_selection = [g for g in cer if (g.get("ceremonies") or [{}])[0].get("selection") and g.get("starsUpdated", "") >= g["ceremonies"][0]["date"]]
+
+    def up(pid):
+        out = []
+        while pid in places and pid not in out:
+            out.append(pid)
+            pid = places[pid].get("parent")
+        return out
+
+    def guide_of(r):
+        chain_ = up(r["city"])
+        found = [(min(chain_.index(p) for p in g.get("places", []) if p in chain_), i, g) for i, g in enumerate(cer) if set(g.get("places", [])) & set(chain_)]
+        return min(found, key=lambda x: x[:2])[2] if found else None
+
     gaps = collections.defaultdict(collections.Counter)
     for r in live:
         g = gaps[r["_country"]]
+        g["stars_from_guide_site"] += not r.get("starSource") and guide_of(r) not in with_selection
+        g["chef_from_guide"] += r.get("chefSource") == "michelin"
+        g["diets_from_guide"] += bool(r.get("diets")) and not r.get("dietsManual")
+        g["hours_from_guide"] += r["_id"] in guide_hours
         g["starred"] += 1
         g["no_price"] += r.get("dinner") is None
         g["no_rating"] += r.get("rating") is None
@@ -253,7 +279,7 @@ def data_checks(site):
         g["no_position"] += r.get("lat") is None
         g["no_photo"] += not r.get("placeId")
         g["no_website"] += not r.get("website")
-        g["no_hours"] += r["_id"] not in hours  # opening days for Near me's "Open on" filter (scripts/michelin_details.py hours, scripts/google_hours.py)
+        g["no_hours"] += r["_id"] not in hours  # opening days for Near me's "Open on" filter (content/opening-hours*.json)
         g["price_without_source"] += r.get("dinner") is not None and not r.get("source")
     total = collections.Counter()
     for g in gaps.values():
@@ -271,7 +297,7 @@ def data_checks(site):
                     odd.append(f"{r['name']} ({r['_country']}, {r['stars']} star, about ${round(usd)})")
     stale = [r["name"] for r in live if r.get("dinner") is not None and "still to be added" in (r.get("dinnerNote") or "")]
     by_gap = {k: sorted(((g[k], c, g["starred"]) for c, g in gaps.items() if g[k]), reverse=True)[:8]
-              for k in ("no_price", "no_chef", "no_rating", "no_hours")}
+              for k in ("no_price", "no_chef", "no_rating", "no_hours", "stars_from_guide_site")}
     return {"restaurants": len(rows), "starred": len(live), "totals": dict(total),
             "worst_countries": {k: [f"{c}: {n} of {s}" for n, c, s in v] for k, v in by_gap.items()},
             "duplicates": [v for v in seen.values() if len(v) > 1], "odd_prices": odd, "stale_notes": stale,

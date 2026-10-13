@@ -52,6 +52,9 @@ CHANGES = ("new", "up", "down")
 # Dietary options, from the MICHELIN Guide (scripts/michelin_details.py). "vegetarian-only" marks a vegetarian or vegan restaurant.
 DIETS = ("vegetarian-only", "vegetarian-menu", "vegetarian", "vegan", "gluten-free", "halal", "kosher")
 CHEF_SOURCES = ("michelin", "site", "press", "manual")
+# Where a restaurant's stars come from (starSourceType): the MICHELIN Guide's press release or press kit, news coverage, or
+# the restaurant's own announcement. "michelin" chefs were taken from the guide's search index before 13 Oct 2026.
+STAR_SOURCES = ("michelin-press", "news", "restaurant")
 FAQ_MAX = 10  # the owner's rule (9 Oct 2026): no page has more than 10 questions
 MENU_MEALS = ("dinner", "lunch", "lounge")  # where a menu in `menus` is served: the dining room at dinner or lunch, or the bar/lounge
 # Critics' lists a restaurant's `rankings` can name (13 Oct 2026, to-do item feature-critics-rankings), each rank taken by
@@ -401,6 +404,20 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
             problem(where, f"{field} must be a date like 2026-10-09")
     if r.get("chefSource") and r["chefSource"] not in CHEF_SOURCES:
         problem(where, f"chefSource must be one of {', '.join(CHEF_SOURCES)}")
+    # Where the stars come from (13 Oct 2026): Michelin's press release or press kit, news coverage or the restaurant's own
+    # announcement, never the guide's website. None set means they were taken from guide.michelin.com before then.
+    if r.get("starSourceType") and r["starSourceType"] not in STAR_SOURCES:
+        problem(where, f"starSourceType must be one of {', '.join(STAR_SOURCES)}")
+    if r.get("starSource") and not str(r["starSource"]).startswith("https://"):
+        problem(where, "starSource must be a link starting https://")
+    if bool(r.get("starSource")) != bool(r.get("starSourceType")):
+        problem(where, "starSource and starSourceType go together: give the link and what kind of source it is")
+    if r.get("starSource") and urllib.parse.urlsplit(r["starSource"]).netloc.lower().endswith("guide.michelin.com"):
+        problem(where, "starSource can't be a guide.michelin.com page (its terms forbid copying it): use Michelin's press release, the news or the restaurant's own announcement")
+    if r.get("starSourceDate") and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", r["starSourceDate"]):
+        problem(where, "starSourceDate must be a date like 2026-10-13")
+    if r.get("michelinUrl") and not str(r["michelinUrl"]).startswith("https://guide.michelin.com/"):
+        problem(where, "michelinUrl must be the restaurant's page on https://guide.michelin.com/")
     if isinstance(r.get("bookingWindow"), dict):  # Pages CMS saves the blank parts as "" (and false for an unticked box)
         r["bookingWindow"] = {k: v for k, v in tidy(r["bookingWindow"]).items() if v is not False}
         if not r["bookingWindow"].get("type"):
@@ -717,7 +734,7 @@ PAGE_ONLY = ("bookingWindow", "noBookings", "queue", "byob", "servicePct", "hote
 
 
 def public(r):
-    out = {k: v for k, v in r.items() if not k.startswith("_") and k not in ("chefSource", "michelinId", "dietsManual") + PAGE_ONLY}
+    out = {k: v for k, v in r.items() if not k.startswith("_") and k not in ("chefSource", "michelinId", "dietsManual", "starSource", "starSourceType", "starSourceDate", "michelinUrl") + PAGE_ONLY}
     if r.get("bookingWindow") and not r.get("status"):
         out["bw"] = bw_public(r["bookingWindow"])
     return out
@@ -3023,79 +3040,8 @@ def og_image(p):
     return f"{SITE_URL}/og/default.png"
 
 
-def norm_name(s):
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower().replace("&", " and ")
-    return re.sub(r"[^a-z0-9]+", " ", s).strip()
-
-
-NAME_STOP = {"the", "restaurant", "by", "at", "de", "la", "le", "and", "les", "du", "des", "l", "d"}
-
-
 def metres(a, b, c, d):
     return 6371000 * 2 * math.asin(math.sqrt(math.sin(math.radians(c - a) / 2) ** 2 + math.cos(math.radians(a)) * math.cos(math.radians(c)) * math.sin(math.radians(d - b) / 2) ** 2))
-
-
-def same_restaurant(w, r):
-    """Whether a pin from the world list is one of our own restaurants (similar name, close by)."""
-    if r.get("lat") is None or r.get("lng") is None:
-        return False
-    d = metres(w[2], w[3], r["lat"], r["lng"])
-    a, b = norm_name(w[0]), norm_name(r["name"])
-    if a == b and (d < 3000 or r["cityName"] in w[5]):
-        return True
-    if d > 400:
-        return False
-    if a in b or b in a:
-        return True
-    ta, tb = set(a.split()) - NAME_STOP, set(b.split()) - NAME_STOP
-    return bool(ta and tb and len(ta & tb) / min(len(ta), len(tb)) >= 0.5) or d < 15
-
-
-def world_rows(path):
-    """The guide's world list, with mainland China's positions moved onto Google's Chinese map grid as ours are."""
-    rows = read_json(path).get("restaurants", [])
-    return [w[:2] + list(china_map(w[2], w[3])) + w[4:] if w[5].endswith(", Chinese Mainland") else w for w in rows]
-
-
-def build_world(ours):
-    """The homepage's pins for starred restaurants we don't have prices for yet, written to /data/world.json.
-    Ours includes closed and destarred ones, so a restaurant the guide hasn't dropped yet doesn't come back as a pin."""
-    path = CONTENT / "world-starred.json"
-    if not path.exists():
-        return None, 0
-    rows = world_rows(path)
-    near = {}
-    for r in ours:
-        if r.get("lat") is not None:
-            near.setdefault((round(r["lat"]), round(r["lng"])), []).append(r)
-    others = []
-    for w in rows:
-        cands = [r for dy in (-1, 0, 1) for dx in (-1, 0, 1) for r in near.get((round(w[2]) + dy, round(w[3]) + dx), [])]
-        if not any(same_restaurant(w, r) for r in cands):
-            others.append(w)
-    body = as_json({"updated": read_json(path).get("updated", ""), "r": others}).encode("utf-8")
-    return write_versioned("/data/world.json", body), len(rows)
-
-
-# Countries in the world list without a page of ours yet: the Michelin guide's name -> id, English and Chinese names.
-# Countries we already cover (USA, Hong Kong SAR…) are left out by their id matching one of our pages.
-WORLD_COUNTRIES = {
-    "Abu Dhabi": ("uae", "United Arab Emirates", "阿拉伯聯合大公國"), "Dubai": ("uae", "United Arab Emirates", "阿拉伯聯合大公國"),
-    "Andorra": ("andorra", "Andorra", "安道爾"), "Argentina": ("argentina", "Argentina", "阿根廷"), "Austria": ("austria", "Austria", "奧地利"),
-    "Belgium": ("belgium", "Belgium", "比利時"), "Brazil": ("brazil", "Brazil", "巴西"), "Canada": ("canada", "Canada", "加拿大"),
-    "Chinese Mainland": ("china", "China", "中國"), "Croatia": ("croatia", "Croatia", "克羅埃西亞"), "Czechia": ("czechia", "Czechia", "捷克"),
-    "Estonia": ("estonia", "Estonia", "愛沙尼亞"), "Finland": ("finland", "Finland", "芬蘭"), "Germany": ("germany", "Germany", "德國"),
-    "Greece": ("greece", "Greece", "希臘"), "Hungary": ("hungary", "Hungary", "匈牙利"), "Iceland": ("iceland", "Iceland", "冰島"),
-    "Italy": ("italy", "Italy", "義大利"), "Latvia": ("latvia", "Latvia", "拉脫維亞"), "Liechtenstein": ("liechtenstein", "Liechtenstein", "列支敦斯登"),
-    "Lithuania": ("lithuania", "Lithuania", "立陶宛"), "Luxembourg": ("luxembourg", "Luxembourg", "盧森堡"), "Malaysia": ("malaysia", "Malaysia", "馬來西亞"),
-    "Malta": ("malta", "Malta", "馬爾他"), "Mexico": ("mexico", "Mexico", "墨西哥"), "Netherlands": ("netherlands", "Netherlands", "荷蘭"),
-    "Norway": ("norway", "Norway", "挪威"), "Poland": ("poland", "Poland", "波蘭"), "Portugal": ("portugal", "Portugal", "葡萄牙"),
-    "Qatar": ("qatar", "Qatar", "卡達"), "Serbia": ("serbia", "Serbia", "塞爾維亞"), "Slovenia": ("slovenia", "Slovenia", "斯洛維尼亞"),
-    "Sweden": ("sweden", "Sweden", "瑞典"), "Switzerland": ("switzerland", "Switzerland", "瑞士"), "Thailand": ("thailand", "Thailand", "泰國"),
-    "The Philippines": ("philippines", "Philippines", "菲律賓"), "Türkiye": ("turkiye", "Türkiye", "土耳其"), "Vietnam": ("vietnam", "Vietnam", "越南"),
-    "USA": ("usa", "", ""), "Hong Kong SAR": ("hong-kong", "", ""), "Macau SAR": ("macau", "", ""), "Taiwan Region": ("taiwan", "", ""),
-    "Principality of Monaco": ("monaco", "", ""),
-}
 
 
 # Each country's continent, for the homepage's continent filter. A country missing here is listed by the build.
@@ -3110,35 +3056,10 @@ CONTINENTS = {
 CONTINENT_OF = {cid: k for k, v in CONTINENTS.items() for cid in v.split()}
 
 
-def world_countries():
-    """The "Pick a country" cards for countries we have no page for yet (star counts and a box around their restaurants
-    for the map), and the guide's star counts for the countries we do have, which may cover only some of their cities."""
-    rows = json.loads((CONTENT / "world-starred.json").read_text(encoding="utf-8"))["restaurants"]
-    ours = {p["id"] for p in pages if p["type"] == "country"}
-    by_name = {p["name"]: p["id"] for p in pages if p["type"] == "country"}
-    out, guide, unknown = {}, {}, set()
-    for name, stars, lat, lng, cuisine, where, path in rows:
-        country = where.split(", ")[-1]
-        cid = by_name.get(country) or WORLD_COUNTRIES.get(country, (None,))[0]
-        if cid in ours:
-            guide.setdefault(cid, [0, 0, 0])[stars - 1] += 1
-            continue
-        if country not in WORLD_COUNTRIES:
-            unknown.add(country)
-            continue
-        cid, en, zh = WORLD_COUNTRIES[country]
-        c = out.setdefault(cid, {"id": cid, "name": en, "nameZh": zh, "continent": CONTINENT_OF.get(cid, ""), "stars": [0, 0, 0], "box": [lat, lng, lat, lng]})
-        c["stars"][stars - 1] += 1
-        c["box"] = [min(c["box"][0], lat), min(c["box"][1], lng), max(c["box"][2], lat), max(c["box"][3], lng)]
-    if unknown:
-        print("  Countries in world-starred.json missing from WORLD_COUNTRIES in build.py (left off the homepage):", ", ".join(sorted(unknown)))
-    return sorted(out.values(), key=lambda c: c["name"]), guide
-
-
 def no_star_countries():
     """The homepage's list of countries without a Michelin star (content/no-stars.json), by region."""
     data = json.loads((CONTENT / "no-stars.json").read_text(encoding="utf-8"))
-    starred = {p["name"] for p in pages if p["type"] == "country"} | {v[1] for v in WORLD_COUNTRIES.values() if v[1]}
+    starred = {p["name"] for p in pages if p["type"] == "country"}
     clash = sorted(c["name"] for g in data["regions"] for c in g["countries"] if c["name"] in starred)
     if clash:
         print("  These countries now have Michelin stars, so delete them from content/no-stars.json:", ", ".join(clash))
@@ -3284,10 +3205,10 @@ def home_ways_html(n_countries):
             f'<h2 class="pop-title">Popular destinations</h2><ul class="pop-cards" id="popCards">{cards}</ul>')
 
 
-def home_countries_html(countries, soon):
+def home_countries_html(countries):
     """Every country, one short row each, folded by continent (the rows sort in home.js; every fold starts closed)."""
     def stars_of(c):
-        return c["stars"] if "box" in c else c["guide"] or c["own"]
+        return c["own"]
 
     def row(c):
         s = stars_of(c)
@@ -3296,9 +3217,6 @@ def home_countries_html(countries, soon):
                         for n in (3, 2, 1) if s[n - 1])
         attrs = f'id="dest-{e(c["id"])}" data-name="{e(c["name"])}" data-n="{total}" data-s1="{s[0]}" data-s2="{s[1]}" data-s3="{s[2]}"'
         meta = f'<span class="crow-meta"><span>{total:,} starred</span>{tiers}</span>'
-        if "box" in c:  # in the MICHELIN Guide but no page here yet
-            return (f'<li class="crow crow-soon" {attrs}><span class="crow-name">{e(c["name"])}</span>'
-                    f'<button type="button" class="crow-from" data-map-box="{",".join(str(x) for x in c["box"])}">Show on map</button>{meta}</li>')
         price = f'<span class="crow-from">from {amt(c["from"]["price"], c["from"]["cur"])}</span>' if c["from"] else '<span class="crow-from"></span>'
         areas = [q for q in c["cities"] if q["path"] != c["path"]]
         toggle = fold = ""
@@ -3315,7 +3233,7 @@ def home_countries_html(countries, soon):
 
     out = ""
     for k, title in CONTINENT_NAMES.items():
-        here = sorted((c for c in countries + soon if c["continent"] == k), key=lambda c: c["name"])
+        here = sorted((c for c in countries if c["continent"] == k), key=lambda c: c["name"])
         if not here:
             continue
         n = sum(sum(stars_of(c)) for c in here)
@@ -3425,8 +3343,6 @@ def home_trust_html():
 
 def build_home():
     starred = [r for r in restaurants if not r.get("status")]
-    world_url, world_total = build_world(restaurants)
-    soon, guide = world_countries()
     countries = []
     for c in by_size(p for p in pages if p["type"] == "country"):
         mine = [r for r in starred if r["country"] == c["id"]]
@@ -3438,10 +3354,10 @@ def build_home():
             **names(c), "id": c["id"], "path": c["path"], "n": starred_n[c["id"]],
             "from": {"price": menus[0]["dinner"], "cur": menus[0]["cur"], "name": menus[0]["name"], "nameZh": menus[0].get("nameZh", "")} if menus else None,
             "cities": [dict(link(q), type=q["type"]) for q in cities],
-            "guide": guide.get(c["id"]), "continent": CONTINENT_OF.get(c["id"], ""),
+            "continent": CONTINENT_OF.get(c["id"], ""),
             "own": [sum(1 for r in mine if r["stars"] == s) for s in (1, 2, 3)],  # our own [one-, two-, three-star] counts
         })
-    no_continent = sorted(c["name"] for c in countries + soon if not c["continent"])
+    no_continent = sorted(c["name"] for c in countries if not c["continent"])
     if no_continent:
         print("  Countries with no continent (add them to CONTINENTS in build.py):", ", ".join(no_continent))
     groups = [link(g) for g in by_size(g for g in pages if g["type"] == "group")]
@@ -3449,10 +3365,10 @@ def build_home():
         # The restaurants themselves (map pins, search, the wishlist) are in /data/home.json, loaded as the page opens.
         "homeUrl": build_home_data(starred),
         "starCounts": [len(starred)] + [sum(1 for r in starred if r["stars"] == s) for s in (1, 2, 3)],
-        "countries": countries, "groups": groups, "soon": soon, "noStars": no_star_countries(),
+        "countries": countries, "groups": groups, "noStars": no_star_countries(),
         "places": [dict(link(p), id=p["id"], type=p["type"]) for p in by_size(q for q in pages if q["type"] != "cuisine")],
         "currencies": CURRENCIES, "switchable": currency_data.get("switchable", []), "updated": site.get("updated", ""),
-        "worldUrl": world_url, "worldTotal": world_total, "languages": DEFAULT_LANGUAGES,
+        "languages": DEFAULT_LANGUAGES,
     }
     write("/", render("home.html", {
         "title": "Michelin Star Restaurants, With Prices · The Starred Bill",
@@ -3463,7 +3379,7 @@ def build_home():
         "heroText": e(f"Dinner, lunch and wine pairing prices at {len(starred):,} Michelin-starred restaurants in {len(countries)} countries, "
                       "each linked to where it came from. Search a city, a restaurant, a chef or a cuisine."),
         # English only; Chinese names stay for searching.
-        "destinations": home_countries_html(countries, soon), "ways": home_ways_html(len(countries)), "less": home_less_html(starred),
+        "destinations": home_countries_html(countries), "ways": home_ways_html(len(countries)), "less": home_less_html(starred),
         "guides": home_guides_html(), "sample": home_sample_html(starred), "whatsNew": home_new_html(starred),
         "browse": home_browse_html(), "trust": home_trust_html(),
         "rateDate": e(long_date(currency_data["rateDate"], "en")) if currency_data.get("rateDate") else "the latest update", "data": as_json(only_langs(data, {"Zh"}, PAGE_TEXTS)), "homeUrl": data["homeUrl"],
@@ -3551,12 +3467,6 @@ def build_near_me(starred):
                      "wine": r.get("wine") if r.get("dinnerType", "menu") == "menu" else None,
                      "lunchWine": r.get("lunchWine") if lunch and lunch > 0 else None,
                      "change": r.get("change", ""), "changed": r.get("changeDate", "")[:7]})
-    # Starred restaurants in the MICHELIN Guide we don't have a file for yet (none since 5 Oct 2026, but the list can run ahead).
-    world = json.loads((OUT / "data" / "world.json").read_text("utf-8"))["r"] if (OUT / "data" / "world.json").exists() else []
-    for name, stars, lat, lng, cuisine, where, mpath in world:
-        rows.append({"id": "", "name": name, "stars": stars, "lat": lat, "lng": lng, "cuisine": cuisine, "where": where, "town": "",
-                     "path": "https://guide.michelin.com/en" + mpath, "cur": "", "dinner": None, "dinnerType": "menu", "lunch": None,
-                     "diets": "", "chef": None, "rating": None, "reviews": None, "wine": None, "lunchWine": None, "change": "", "changed": ""})
     near_url = write_data("near.json", pack_near(rows))
     # Opening hours for the "Open on" filter, in their own file so Help me pick (which shares near.json) doesn't load them.
     # "g" lists those from Google or a restaurant's own page, whose times near.js always trusts.
@@ -4664,22 +4574,16 @@ def restaurant_link(r, links):
 
 
 def michelin_links():
-    """Our restaurants' pages on the MICHELIN Guide, matched against content/world-starred.json by name and position."""
-    path = CONTENT / "world-starred.json"
-    if not path.exists():
-        return {}
-    near = {}
-    for w in world_rows(path):
-        near.setdefault((round(w[2]), round(w[3])), []).append(w)
-    out = {}
-    for r in restaurants:
-        if r.get("lat") is None or r.get("status"):
-            continue
-        cands = [w for dy in (-1, 0, 1) for dx in (-1, 0, 1) for w in near.get((round(r["lat"]) + dy, round(r["lng"]) + dx), [])]
-        match = next((w for w in cands if same_restaurant(w, r)), None)
-        if match:
-            out[r["id"]] = "https://guide.michelin.com/en" + match[6]
-    return out
+    """Our restaurants' pages on the MICHELIN Guide, for citing it: a restaurant file's own michelinUrl, else its line in
+    content/michelin-links.json (kept from the guide's world list when that was retired on 13 Oct 2026)."""
+    if "links" not in MICHELIN_LINKS:
+        kept = (read_json(CONTENT / "michelin-links.json") or {}).get("links", {}) if (CONTENT / "michelin-links.json").exists() else {}
+        MICHELIN_LINKS["links"] = {r["id"]: r.get("michelinUrl") or "https://guide.michelin.com/en" + kept[r["id"]]
+                                   for r in restaurants if not r.get("status") and (r.get("michelinUrl") or r["id"] in kept)}
+    return MICHELIN_LINKS["links"]
+
+
+MICHELIN_LINKS = {}
 
 
 # The Michelin star chefs guide: head chefs ranked by the stars of the restaurants they run ({{table:chefs}}), and the
@@ -4867,6 +4771,8 @@ def ceremony_guides():
                 problem("ceremonies.json", f"{g['id']} has a ceremony date that isn't YYYY-MM-DD: {c.get('date')!r}")
             elif c.get("edition") and str(c["edition"]) not in (c["date"][:4], str(int(c["date"][:4]) + 1)):
                 problem("ceremonies.json", f"{g['id']}'s {c['date']} ceremony has edition {c['edition']!r}: use its year or the next")
+            if c.get("selection") and (not c["selection"].startswith("https://") or "guide.michelin.com" in c["selection"]):
+                problem("ceremonies.json", f"{g['id']}'s {c.get('date')} selection must be a link to Michelin's press release or press kit, not guide.michelin.com")
         past = list(g.get("ceremonies", []))
         nxt = g.get("next")
         if nxt and nxt.get("date", "") <= TODAY:
@@ -7595,6 +7501,32 @@ def build_restaurant_pages():
         write(path, page_html.replace("US$", "$") if cur == "USD" else page_html)
 
 
+def star_source(r):
+    """Where a restaurant's stars come from, other than the MICHELIN Guide's website: its own starSource (Michelin's press
+    release or press kit, news coverage, or its own announcement), else the full selection its guide's latest ceremony
+    published as a press release (`selection` in content/ceremonies.json, set once our files are checked against it).
+    None for stars still resting on guide.michelin.com, where they were taken from before 13 Oct 2026."""
+    if r.get("starSource"):
+        kind = r.get("starSourceType")
+        label = ("MICHELIN Guide press release" if kind == "michelin-press" else "the restaurant’s announcement" if kind == "restaurant"
+                 else source_publisher(r["starSource"]))
+        return {"url": r["starSource"], "label": label, "date": r.get("starSourceDate")}
+    g = restaurant_ceremony_guide(r)
+    last = g and g.get("last")
+    if last and last.get("selection") and g.get("starsUpdated", "") >= last["date"]:
+        year = last.get("edition") or last["date"][:4]
+        return {"url": last["selection"], "label": f"the {g['name']} {year} selection, from Michelin’s press release", "date": last["date"]}
+    return None
+
+
+def restaurant_ceremony_guide(r):
+    """The guide whose ceremony gives a restaurant its stars: of the guides covering its place, the one naming the
+    nearest place above it (Texas before the USA)."""
+    up = chain(r["city"])
+    found = [(min(up.index(p) for p in g.get("places", []) if p in up), i, g) for i, g in enumerate(ceremony_guides()) if set(g.get("places", [])) & set(up)]
+    return min(found, key=lambda x: x[:2])[2] if found else None
+
+
 def restaurant_sources_html(r, michelin_url):
     """One "Sources" line at the foot of a restaurant page: its own website, its page in the MICHELIN Guide (stars, and the
     opening hours and dietary options taken from it), where each price comes from and when it was checked, the booking
@@ -7604,9 +7536,15 @@ def restaurant_sources_html(r, michelin_url):
     parts = []
     if r.get("website"):
         parts.append("Restaurant: " + a(r["website"], host(r["website"])))
+    # What still rests on the MICHELIN Guide's page: the stars (until a press release or announcement backs them,
+    # star_source()), and the opening hours and dietary options taken from it before 13 Oct 2026.
+    star = star_source(r)
+    taken = ([] if star else ["Stars"]) + (["opening hours"] if hours_lines(r) and r["id"] not in HOURS_GOOGLE and r["id"] not in HOURS_SITE else []) \
+        + (["dietary options"] if r.get("diets") and not r.get("dietsManual") else [])
+    if star:
+        parts.append("Stars: " + a(star["url"], star["label"]) + (f", {e(nice_date(star['date']))}" if star.get("date") else ""))
     if michelin_url:
-        parts.append("Stars" + (", opening hours" if hours_lines(r) and r["id"] not in HOURS_GOOGLE and r["id"] not in HOURS_SITE else "") + (" and dietary options" if r.get("diets") else "")
-                     + ": " + a(michelin_url, f"{r['name']} in the MICHELIN Guide"))
+        parts.append((and_list(taken).capitalize() if taken else "Its entry") + ": " + a(michelin_url, f"{r['name']} in the MICHELIN Guide"))
     prices = []
     if r.get("menusSource"):
         prices.append(a(r["menusSource"], "the restaurant’s menus"))

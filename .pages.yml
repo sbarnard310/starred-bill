@@ -209,6 +209,22 @@ content:
         type: number
         required: true
         options: { min: 0, max: 3, step: 1 }
+      - name: starSource
+        label: Where the stars come from (link)
+        description: "When the stars change, a link to Michelin's press release or press kit, a news report or the restaurant's own announcement. Never a guide.michelin.com page: its terms forbid copying it."
+        type: string
+      - name: starSourceType
+        label: Kind of star source
+        type: select
+        options:
+          values:
+            - { value: michelin-press, label: "MICHELIN Guide press release or press kit" }
+            - { value: news, label: "News coverage" }
+            - { value: restaurant, label: "The restaurant's own announcement" }
+      - name: starSourceDate
+        label: Star source date
+        description: The day it was published, e.g. 2026-02-09.
+        type: string
       - name: cuisine
         label: Cuisine
         description: Michelin's cuisine label, e.g. Modern British. A new label adds a new filter button.
@@ -254,17 +270,17 @@ content:
         type: string
       - name: chefSource
         label: Where the chef's name came from
-        description: Choose "Typed by hand" if you change the chef, so the MICHELIN refresh script never overwrites it.
+        description: Choose "Typed by hand" if you change the chef, so the chef script never overwrites it. "MICHELIN Guide (old)" marks names taken from the guide before 13 Oct 2026; don't choose it for new ones.
         type: select
         options:
           values:
-            - { value: michelin, label: "MICHELIN Guide" }
+            - { value: michelin, label: "MICHELIN Guide (old)" }
             - { value: site, label: "Restaurant's website" }
             - { value: press, label: "Reviews, interviews or booking sites" }
             - { value: manual, label: "Typed by hand" }
       - name: diets
         label: Dietary options
-        description: From the MICHELIN Guide. Vegetarian restaurant, vegetarian menu and vegan get a leaf badge; all of them are in the Dietary filter.
+        description: From the restaurant's own menus and website (older ones came from the MICHELIN Guide). Vegetarian restaurant, vegetarian menu and vegan get a leaf badge; all of them are in the Dietary filter.
         type: select
         options:
           multiple: true
@@ -277,12 +293,16 @@ content:
             - { value: halal, label: "Halal" }
             - { value: kosher, label: "Kosher" }
       - name: dietsManual
-        label: Dietary options corrected by hand
-        description: Tick when you've changed the dietary options from the restaurant's own site, so the MICHELIN refresh script never overwrites them.
+        label: Dietary options checked on the restaurant's site
+        description: Tick when the dietary options come from the restaurant's own menus or website.
         type: boolean
       - name: michelinId
         label: MICHELIN Guide record id
-        description: Filled in by the refresh script so it can match this restaurant exactly. Leave as it is.
+        description: Left from a retired script; nothing reads it. Leave as it is.
+        type: string
+      - name: michelinUrl
+        label: MICHELIN Guide page
+        description: "Optional: the restaurant's page on https://guide.michelin.com/, linked as a source. Older restaurants have theirs in content/michelin-links.json."
         type: string
       - name: change
         label: Recent star change
@@ -1331,7 +1351,7 @@ content:
         type: string
       - name: title
         label: Page title (English, optional)
-        description: Replaces the automatic title in search results, e.g. "Michelin Star Restaurants in Boston: Are There Any? ({year})". {year} becomes the year of the latest MICHELIN Guide. Up to 61 characters. Only this page, not the places inside it.
+        description: 'Replaces the automatic title in search results, e.g. "Michelin Star Restaurants in Boston: Are There Any? ({year})". {year} becomes the year of the latest MICHELIN Guide. Up to 61 characters. Only this page, not the places inside it.'
         type: string
       - name: description
         label: Search snippet (English, optional)
@@ -2328,3 +2348,4 @@ content:
               - { name: whereAr, label: Where in Arabic (if the English name won't do), type: string }
               - { name: online, label: Online only (no ceremony), type: boolean }
               - { name: source, label: Source link, type: string }
+              - { name: selection, label: Full selection (press release), description: "A link to this guide's full list of starred restaurants in Michelin's press release or press kit (not guide.michelin.com). Add it only once our restaurants have been checked against it: their pages then cite it for their stars.", type: string }

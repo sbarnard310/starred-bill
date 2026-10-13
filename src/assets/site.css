@@ -664,7 +664,6 @@ a.place-link:hover { background: color-mix(in srgb, var(--band-ink) 10%, transpa
 .crow { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 3px 12px; padding: 10px 0; border-top: 1px solid var(--line); scroll-margin-top: 96px; }
 .crow-name { font-weight: 600; font-size: 1.02rem; color: var(--ink); text-decoration: none; }
 a.crow-name:hover { color: var(--green); }
-.crow-soon .crow-name { color: var(--muted); }
 .crow-from { font-size: .88rem; font-weight: 600; text-align: right; white-space: nowrap; }
 button.crow-from { background: none; border: 0; padding: 0; font: inherit; font-size: .88rem; font-weight: 600; color: var(--green); cursor: pointer; }
 .crow-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 10px; color: var(--muted); font-size: .82rem; }

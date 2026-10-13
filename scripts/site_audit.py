@@ -6,7 +6,8 @@
 SITE_DIR is a folder holding a fresh copy of the site with _site/ already built (python3 build.py). The audit
 checks every page (titles, descriptions, headings, structured data, broken links, sitemap, page weight), the internal
 links (orphan pages, pages with few links in or out, self-links, vague anchor text, and the guides' own links), guides
-and pages without their Sources, the restaurant data (missing prices, ratings, chefs, positions, duplicates, odd prices), the MICHELIN Guide ceremonies
+and pages without their Sources, keyword clashes (pages competing for the same search, with Google Search Console's
+searches that showed two or more of our pages), the restaurant data (missing prices, ratings, chefs, positions, duplicates, odd prices), the MICHELIN Guide ceremonies
 (stars announced since our files caught up, ceremonies in the next two weeks), then the live site's
 basics (HTTPS, redirects, 404 page, robots.txt, sitemap). It writes the figures to OUT.json and prints a
 plain report; with PREVIOUS.json it also says what changed since then. It only reads; nothing is changed.
@@ -303,6 +304,143 @@ def ceremony_checks(site):
     return out
 
 
+# Keyword cannibalisation: two of our pages aimed at the same search split Google's attention, and often neither ranks.
+OVERLAP_WATCH = 0.9   # a page holding this share of a bigger page's restaurants (or more) is listed to keep an eye on
+KEYWORD_FILLER = {"a", "an", "the", "in", "of", "is", "are", "to", "for", "and", "with", "at", "on", "do", "does", "what", "s"}
+
+
+def words(text):
+    return " " + " ".join(w for w in re.findall(r"[^\W_]+", text.lower().replace("’", "'").replace("'", "")) if w not in KEYWORD_FILLER) + " "
+
+
+def clash_checks(site):
+    """Pages competing for the same searches (13 Oct 2026): a search phrase in two guides' keyword lists; a guide aimed
+    at a place's searches ("3 michelin star restaurants london") that the place's page doesn't link to, or one aimed at
+    the place page's own main search ("michelin star restaurants usa"); destination pages listing the same restaurants
+    as a page above or below them without a canonical tag naming one of them; titles or headings two pages share; and,
+    from Google Search Console, the searches two or more of our pages were shown for in the last 28 days."""
+    S = site / "_site"
+    pages = {}
+    for f in S.rglob("index.html"):
+        s = f.read_text("utf-8", errors="replace")
+        if 'http-equiv="refresh"' in s or "noindex" in s:
+            continue
+        pages[("/" + str(f.parent.relative_to(S)).strip(".") + "/").replace("//", "/")] = s
+    canon = {u: (re.search(r'rel="canonical" href="https://starredbill.com([^"]*)"', s) or [None, u])[1] for u, s in pages.items()}
+    lang = {u: (re.search(r'<html[^>]*lang="([^"-]+)', s) or [None, "en"])[1] for u, s in pages.items()}
+    out = collections.defaultdict(list, {k: [] for k in ("keyword_in_two_guides", "guide_aims_at_place_main_search",
+                                                          "place_page_not_linking_its_guide", "same_list_pages", "overlap_watch", "same_heading")})
+    # Guides' search phrases, from their keywords tag (English and translated guides, results pages too).
+    keys = collections.defaultdict(list)
+    guide_keys = {}
+    for u, s in pages.items():
+        m = re.search(r'<meta name="keywords" content="([^"]*)"', s)
+        if m and "/guides/" in u:
+            guide_keys[u] = [html.unescape(k).strip() for k in m.group(1).split(",") if k.strip()]
+            for k in guide_keys[u]:
+                keys[(lang[u], words(k))].append(u)
+    out["keyword_in_two_guides"] = [f'"{k.strip()}": {", ".join(sorted(us))}' for (_, k), us in sorted(keys.items()) if len(set(us)) > 1]
+    # Destination places and the names they're searched by: their name, their address's last part, short names (NYC).
+    names = {}
+    for u, s in pages.items():
+        m = re.search(r'"page":\{"name":"([^"]+)".*?"type":"([a-z]+)".*?"path":"([^"]+)"', s)
+        if m and lang[u] == "en" and m.group(2) != "cuisine" and m.group(3) == u:
+            for n in (json.loads('"' + m.group(1) + '"'), u.rstrip("/").rsplit("/", 1)[-1].replace("-", " ")):
+                if len(words(n).strip()) > 2:
+                    names.setdefault(words(n), u)
+    short = re.findall(r'"([a-z-]+)": \{"short": "([^"]+)"', (site / "build.py").read_text("utf-8")) if (site / "build.py").exists() else []
+    by_path = {u.rstrip("/").rsplit("/", 1)[-1]: u for u in names.values()}
+    for pid, n in short:
+        if pid in by_path:
+            names.setdefault(words(n), by_path[pid])
+    longest = sorted(names, key=len, reverse=True)
+    for g, ks in sorted(guide_keys.items()):
+        if lang[g] != "en":
+            continue
+        told = set()
+        for k in ks:
+            kw = words(k)
+            place = next((n for n in longest if n in kw), None)
+            if not place:
+                continue
+            home = canon.get(names[place], names[place])
+            if kw in (words("michelin star restaurants " + place), words("michelin star restaurants in " + place), words(place + " michelin star restaurants")):
+                out["guide_aims_at_place_main_search"].append(f'{g} has "{k}", the main search of {home}')
+            elif home not in told and f'href="{g}' not in pages.get(home, ""):
+                told.add(home)
+                out["place_page_not_linking_its_guide"].append(f'{home} doesn\'t link to {g} ("{k}")')
+    # Destination pages listing the same restaurants as a page above or below them.
+    lists = {}
+    for u, s in pages.items():
+        if lang[u] != "en" or u.startswith(("/guides/", "/restaurants/")):
+            continue
+        for j in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
+            m = re.search(r'"numberOfItems":\s*(\d+)', j)
+            if m and int(m.group(1)) > 1:
+                d = json.loads(j)
+                items = set()
+                def walk(x):
+                    if isinstance(x, dict):
+                        if x.get("@type") == "ItemList":
+                            items.update((i["item"]["name"], i["item"].get("address", "")) for i in x.get("itemListElement", []))
+                        for v in x.values():
+                            walk(v)
+                    elif isinstance(x, list):
+                        for v in x:
+                            walk(v)
+                walk(d)
+                lists[u] = (int(m.group(1)), items)
+    for u, (n, items) in sorted(lists.items()):
+        parts = u.strip("/").split("/")
+        for i in range(1, len(parts)):
+            up = "/" + "/".join(parts[:i]) + "/"
+            if up not in lists:
+                continue
+            un, uitems = lists[up]
+            share = n / un
+            folded = canon[u] != u or canon[up] != up
+            if n == un and items == uitems and not folded:
+                out["same_list_pages"].append(f"{up} and {u} ({n} restaurants each)")
+            elif share >= OVERLAP_WATCH and not folded and (items <= uitems or max(n, un) > len(uitems)):  # lists over 60 are cut short
+                out["overlap_watch"].append(f"{u} has {n} of {up}'s {un} ({share:.0%})")
+    # Titles and headings two pages share (the page checks also list duplicate titles).
+    h1s = collections.defaultdict(list)
+    for u, s in pages.items():
+        m = re.search(r"<h1[^>]*>(.*?)</h1>", s, re.S)
+        if m:
+            h1s[(lang[u], html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip())].append(u)
+    out["same_heading"] = [f"{h}: {', '.join(us)}" for (_, h), us in sorted(h1s.items()) if h and len(us) > 1]
+    return dict(out), search_clashes(site)
+
+
+def search_clashes(site, days=28, show=15):
+    """The searches Google showed two or more of our pages for (Search Console, last `days` days), most shown first.
+    Uses the morning figures' Google sign-in; says "not set up" without it."""
+    try:
+        sys.path.insert(0, str(site / "scripts"))
+        import datetime as dt
+        import morning_figures as mf
+        cfg = json.loads(mf.CONFIG.read_text())
+        url, auth, _, _ = mf.gsc_query(cfg)
+        end = dt.date.today() - dt.timedelta(days=3)
+        rows = mf.http(url, {"startDate": str(end - dt.timedelta(days=days - 1)), "endDate": str(end),
+                             "dimensions": ["query", "page"], "rowLimit": 25000}, auth).get("rows", [])
+    except Exception as e:
+        return {"status": f"not set up ({type(e).__name__})"}
+    by = collections.defaultdict(dict)
+    for r in rows:
+        q, page = r["keys"]
+        page = page.replace("https://starredbill.com", "").split("#")[0]
+        a = by[q].setdefault(page, [0, 0, 0.0])
+        a[0] += r["impressions"]
+        a[1] += r["clicks"]
+        a[2] = r["position"]
+    shared = sorted(((sum(v[0] for v in ps.values()), q, ps) for q, ps in by.items() if len(ps) > 1), reverse=True)
+    return {"status": "ok", "searches": len(by), "shared": len(shared), "days": days,
+            "top": [f'"{q}" ({n} times shown): ' + "; ".join(f"{p} pos {round(v[2])}" for p, v in sorted(ps.items(), key=lambda x: -x[1][0]))
+                    for n, q, ps in shared[:show]]}
+
+
 def live_checks():
     class NoRedirect(urllib.request.HTTPRedirectHandler):
         def redirect_request(self, *a, **k):
@@ -337,9 +475,13 @@ def main(site, out_path, prev_path=None):
     weight.update(link_figures)
     data = data_checks(site)
     data["ceremonies"] = ceremony_checks(site)
+    clashes, search = clash_checks(site)
     live = live_checks()
     result = {"pages": {k: len(v) for k, v in pages.items()}, "page_examples": {k: v[:6] for k, v in pages.items() if v},
-              "weight": weight, "data": data, "live_problems": live}
+              "weight": weight, "data": data,
+              "clashes": {"counts": {k: len(v) for k, v in clashes.items()}, "examples": {k: v[:10] for k, v in clashes.items() if v},
+                          "google": search},
+              "live_problems": live}
     Path(out_path).write_text(json.dumps(result, indent=1, ensure_ascii=False), "utf-8")
     print(json.dumps(result, indent=1, ensure_ascii=False))
     if prev_path and Path(prev_path).exists():
@@ -353,6 +495,13 @@ def main(site, out_path, prev_path=None):
             a, b = prev.get("data", {}).get("totals", {}).get(k, 0), data["totals"].get(k, 0)
             if a != b:
                 print(f"  restaurants {k}: {a} -> {b}")
+        for k in sorted(set(result["clashes"]["counts"]) | set(prev.get("clashes", {}).get("counts", {}))):
+            a, b = prev.get("clashes", {}).get("counts", {}).get(k, 0), result["clashes"]["counts"].get(k, 0)
+            if a != b:
+                print(f"  keyword clashes {k}: {a} -> {b}")
+        a, b = prev.get("clashes", {}).get("google", {}).get("shared"), search.get("shared")
+        if a is not None and b is not None and a != b:
+            print(f"  searches showing two or more of our pages: {a} -> {b}")
         a, b = prev.get("data", {}).get("starred", 0), data["starred"]
         if a != b:
             print(f"  starred restaurants: {a} -> {b}")

@@ -632,6 +632,27 @@ for _p in pages:
             print(f"Note: no starred restaurant in {_p['parent']} has the cuisine \"{_c}\" that {_p['id']} lists (check the spelling).")
 
 
+# Keyword cannibalisation (13 Oct 2026): a page whose starred restaurants are exactly those of one city below it (Illinois
+# and Chicago, Qatar and Doha) names that city's page as its canonical, so Google shows the one people search for rather
+# than two pages splitting the same searches. CANONICAL_PLACES does the same by hand where a page holds nearly all of a
+# bigger one's restaurants and is searched as it: Manhattan has 62 of New York's 69, and Google reads "Manhattan" as "NYC".
+# Those pages stay for visitors browsing, but leave the sitemap and drop their hreflang links (canonical_to, build_place()).
+CANONICAL_PLACES = {"manhattan": "new-york"}
+_starred_ids = lambda p: {r["id"] for r in members(p) if not r.get("status")}
+canonical_to = {}
+for _p in places.values():
+    if _p["type"] in ("city", "district", "cuisine", "group") or not starred_n[_p["id"]]:
+        continue
+    _same = [c["id"] for c in places.values() if c["type"] == "city" and starred_n[c["id"]] == starred_n[_p["id"]]
+             and _p["id"] in chain(c["id"])[1:] and _starred_ids(c) == _starred_ids(_p)]
+    if len(_same) == 1:
+        canonical_to[_p["id"]] = _same[0]
+for _a, _b in CANONICAL_PLACES.items():
+    if _a in places and _b in places:
+        canonical_to[_a] = _b
+    else:
+        print(f"Note: CANONICAL_PLACES names {_a} -> {_b}, but there's no such place; take it out of build.py.")
+
 # Fields only a restaurant's own page shows (build_restaurant_pages()), kept out of destination pages' data.
 # (`bookingWindow` reaches destination pages as `bw`, without its source, checked date and note.)
 PAGE_ONLY = ("bookingWindow", "noBookings", "queue", "byob", "servicePct", "hotel", "alsoTry", "waitlist", "duration", "menus", "menusSource", "menusChecked", "priceHistory", "starsSince", "dressCode", "bookingOpens", "bookingPhone", "bookingUrl",
@@ -1091,8 +1112,12 @@ def build_place(p):
     lang_scripts = "".join(f'<script src="{assets[f"lang-{c}.js"]}"></script>\n' for c in langs if c in LANG_FILES)
     if set(langs) & set(RTL_LANGUAGES):
         lang_scripts += f'<link rel="stylesheet" href="{assets["rtl.css"]}">\n'
+    # A page Google should fold into another (canonical_to) names that page in its language as canonical, and no hreflang links.
+    canon = places.get(canonical_to.get(p["id"]))
+    canonical = {lang: SITE_URL + (lang_path(canon["path"], lang) if lang in place_langs(canon) else canon["path"]) if canon
+                 else SITE_URL + lang_paths[lang] for lang in langs}
     # Every version names the others, so search engines show each visitor the one in their language (English for everyone else).
-    alternates = "".join(f'<link rel="alternate" hreflang="{HREFLANG.get(lang, lang)}" href="{SITE_URL}{lang_paths[lang]}">\n' for lang in langs) + \
+    alternates = "" if canon else "".join(f'<link rel="alternate" hreflang="{HREFLANG.get(lang, lang)}" href="{SITE_URL}{lang_paths[lang]}">\n' for lang in langs) + \
         f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{p["path"]}">\n' if len(langs) > 1 else ""
     # A line under the intro pointing to Near me (English only, like the page it opens), for "michelin star restaurants near me".
     # Then one to Help me pick with this place as the first answer (/pick/?w=<address>), on pages with starred restaurants.
@@ -1145,7 +1170,7 @@ def build_place(p):
                    if day else "")
         write(lang_paths[lang], (pilot_headings if pilot else lambda h, *a: h)(section_words(render("place.html", {
             "langScripts": lang_scripts, "htmlAttrs": html_attrs(lang), "alternates": alternates,
-            "title": e(titles[lang]), "description": e(texts["description"]), "canonical": SITE_URL + lang_paths[lang],
+            "title": e(titles[lang]), "description": e(texts["description"]), "canonical": canonical[lang],
             "eyebrow": e(texts["eyebrow"]), "h1": texts["h1"], "heroText": e(texts["heroText"]),
             "crumbs": crumb_html, "explore": explore_html, "nearLine": near_line if lang == "en" else "",
             # The language buttons, written in as links to each version so search engines reach them (common.js redraws them).
@@ -1561,7 +1586,11 @@ def quick_answers(p, page, starred, lang):
     if len(dinners) >= 2:
         out.append((k.say("qkDearH"), say("qkDear", r=k.name_html(dinners[-1]), price=price(dinners[-1], "dinner"))))
 
-    out.append((k.say("qkThreeH"), three_star_answer(k, by_star_level(k, starred), quick=True)))
+    three = three_star_answer(k, by_star_level(k, starred), quick=True)
+    gid = "three-michelin-star-restaurants-" + p["id"]  # the place's own three-star list ("3 michelin star restaurants london")
+    if lang == "en" and gid in guides and any(r["stars"] == 3 for r in starred):
+        three += f' Each one’s menus and prices are in our list of the <a href="{guide_path(gid)}">3 Michelin star restaurants in {e(in_sentence(p))}</a>.'
+    out.append((k.say("qkThreeH"), three))
 
     # The newest stars, unless the page has its own section on the latest guide (new_stars_html(), NEW_STARS_LANGS).
     new, up, latest = recent_stars(k, starred)
@@ -2116,7 +2145,11 @@ def lunch_deals_html(p, page, starred, lang):
             "" if cur == "USD" else f" (≈\u00a0US${int(round(save / CURRENCIES[cur]['perUSD'] / 5) * 5):,})")))
     best, cut = top[0]
     text.append(say("ldBest", r=best["name"], pc=int(round(cut * 100)), lunch=money(best["lunch"], best["cur"]), dinner=money(best["dinner"], best["cur"])))
-    text.append(say("ldTable"))
+    intro = e(" ".join(text))
+    gid = "cheap-michelin-star-restaurants-" + p["id"]  # the place's cheap-eats guide owns "cheap/cheapest", this section "lunch deals"
+    if lang == "en" and gid in guides:
+        intro += f' More ways to eat for less are in our guide to the <a href="{guide_path(gid)}">cheapest Michelin star restaurants in {e(in_sentence(p))}</a>.'
+    intro += " " + e(say("ldTable"))
     stars = lambda r: f'<span class="stars" aria-label="{e(word_n(lang, "starsAria", r["stars"]))}">' + '<svg><use href="#star"/></svg>' * r["stars"] + "</span>"
     # Its own page where it has one, else its row in this page's list (place.js opens #r=<id>).
     href = lambda r: f'#r={r["id"]}' if not r.get("page") and r["cityPath"] == p["path"] else restaurant_href(r)
@@ -2130,7 +2163,7 @@ def lunch_deals_html(p, page, starred, lang):
              f'<th class="num">{e(w["ldDinner"])}</th><th class="num">{e(w["ldSaving"])}</th></tr></thead><tbody>{rows}</tbody></table>')
     return (f'<section id="lunch-deals">\n    <div class="wrap">\n      <div class="section-head"><div>'
             f'<span class="eyebrow">{e(w["ldEyebrow"])}</span><h2 style="margin-top: 6px">{e(say("ldTitle"))}</h2>'
-            f'<p>{e(" ".join(text))}</p></div></div>\n      {table}\n      <p class="ld-note">{e(w["ldNote"])}</p>\n    </div>\n  </section>\n')
+            f'<p>{intro}</p></div></div>\n      {table}\n      <p class="ld-note">{e(w["ldNote"])}</p>\n    </div>\n  </section>\n')
 
 
 def local_note(p):
@@ -2622,17 +2655,45 @@ FOOT_PLACES_EN = foot_places_html()
 RELATED_MAX = 6
 
 
+def place_search_names(p):
+    """How people name a place in a search: its name, its id ("uk", "usa") and any shorter search name ("nyc")."""
+    names = {p["name"], p["id"].replace("-", " ")} | ({SEARCH_NAMES[p["id"]]["short"]} if p["id"] in SEARCH_NAMES else set())
+    return [keyword_words(n) for n in names if keyword_words(n).strip()]
+
+
+def guides_for_place(p):
+    """Guides aimed at this place's own searches ("3 michelin star restaurants london"), as {guide id: 2 when its main
+    keyword names the place, 1 when another of its keywords does}. The place's page links to them first, so the two
+    don't compete for the same search without a link between them (keyword cannibalisation, 13 Oct 2026)."""
+    if p["type"] == "cuisine":  # named for a cuisine ("French"), not a place
+        return {}
+    names = place_search_names(p)
+    hit = lambda k: any(n in keyword_words(k) for n in names)
+    out = {}
+    for g in guides.values():
+        keys = g.get("keywords") or []
+        if keys and hit(keys[0]):
+            out[g["id"]] = 2
+        elif any(hit(k) for k in keys[1:]):
+            out[g["id"]] = 1
+    return out
+
+
 def related_guides(p, starred):
-    """The guides that fit a destination page, best first: ones whose `places` include it or a place above it (the
+    """The guides that fit a destination page, best first: ones aimed at its own searches (guides_for_place(): main
+    keyword first), then ones whose `places` include it or a place above it (the
     closer the place, the higher), then ones whose article links to this page (most links first), the world three-star
     list where the page has a three-star restaurant, and the by-country guide (higher on country pages). Topped up with the
     pillar and the inspection guide so every page has at least three."""
     above = chain(p["id"]) if p["type"] != "group" else [p["id"]] + countries_of(p)
+    own = guides_for_place(p)
     scores = {}
     for g in guides.values():
         hits = [above.index(i) for i in g.get("places", []) if i in above]
         links = len(re.findall(r'href="' + re.escape(p["path"]) + r'(?:#[^"]*)?"', guide_bodies()[g["id"]]))
-        if hits:
+        if g["id"] in own:
+            score = (5, own[g["id"]], links)
+        elif hits:
             score = (4, -min(hits), links)
         elif links:
             score = (3, 0, links)
@@ -7031,9 +7092,15 @@ def near_restaurants(r, live):
     return (close if len(close) >= 3 else found)[:NEAR_MAX]
 
 
-def restaurant_title(r, year):
+def page_name(r, shared=()):
+    """A restaurant page's name in its title and heading: with its town in brackets where another restaurant page shares
+    the name (Sushi Kanesaka in Tokyo and Seoul), so the pages don't compete in Google under one title."""
+    return f"{r['name']} ({most_city(r)[1]})" if r["name"].lower() in shared else r["name"]
+
+
+def restaurant_title(r, year, shared=()):
     """The page's title (the blue link in Google): the fullest wording that fits TITLE_MAX."""
-    name, has_menu = r["name"], r.get("dinnerType", "menu") == "menu" and r.get("dinner") is not None
+    name, has_menu = page_name(r, shared), r.get("dinnerType", "menu") == "menu" and r.get("dinner") is not None
     what = [x for x in ("Tasting Menu" if has_menu else "Menu" if r.get("dinner") is not None else "", "Lunch" if r.get("lunch") is not None else "",
                         "Wine" if r.get("wine") else "") if x]
     listed = ", ".join(what[:-1]) + " and " + what[-1] if len(what) > 1 else (what[0] if what else "")
@@ -7122,6 +7189,8 @@ def build_restaurant_pages():
     live = [r for r in restaurants if not r.get("status")]
     mg = michelin_links()
     site_dates = last_changed()
+    names = Counter(x["name"].lower() for x in live if x.get("page"))
+    shared = {n for n, k in names.items() if k > 1}
     for r in (x for x in live if x.get("page")):
         city = places[r["city"]]
         stay = SERVICE.get(r["country"], ("before", 0))
@@ -7140,7 +7209,7 @@ def build_restaurant_pages():
         answer = restaurant_answer(r, stay)
         peers_place, peers = peers_of(r, live)
         near = near_restaurants(r, live)
-        title = restaurant_title(r, title_year(places[r["city"]], [r]))
+        title = restaurant_title(r, title_year(places[r["city"]], [r]), shared)
         description = restaurant_description(r, where)
         stars_html = '<span class="stars" aria-hidden="true">' + '<svg><use href="#star"/></svg>' * r["stars"] + "</span>"
         stars_label = f"{STAR_WORDS[r['stars']].capitalize()} MICHELIN star{'s' if r['stars'] > 1 else ''}"
@@ -7149,7 +7218,7 @@ def build_restaurant_pages():
 
         hero = (f'<div class="hero rp-hero" id="top">\n  <div class="wrap">\n    <div>\n'
                 f'      <span class="eyebrow" style="color: var(--band-muted)">{stars_html} {e(stars_label)} · {e(r.get("cuisine", ""))}</span>\n'
-                f'      <h1 style="margin-top: 12px">{e(r["name"])}: what it <em>costs</em></h1>\n'
+                f'      <h1 style="margin-top: 12px">{e(page_name(r, shared))}: what it <em>costs</em></h1>\n'
                 f'      <p class="rp-where">{e(where)}' + (f' · In {e(r["hotel"])}' if r.get("hotel") else "") + (f' · Chef {e(r["chef"])}' if r.get("chef") else "") + '</p>\n'
                 f'      <p class="rp-answer">{e(answer)}</p>\n'
                 f'      <div class="rp-actions"><button type="button" class="rp-wish" id="rpWish" data-wish="{e(r["id"])}" aria-pressed="false">'
@@ -7495,7 +7564,7 @@ def build_extras():
     if (SRC / "img").exists():
         # Featured pictures; the full-size originals (<id>-src.*) stay out of the site.
         shutil.copytree(SRC / "img", OUT / "img", ignore=shutil.ignore_patterns("*-src.*"))
-    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) for lang in place_langs(p)] + (["/guides/"] + [guide_path(g, lang) for g in guides for lang in guide_langs(g)] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + ["/privacy/"]
+    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) if p["id"] not in canonical_to for lang in place_langs(p)] + (["/guides/"] + [guide_path(g, lang) for g in guides for lang in guide_langs(g)] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + ["/privacy/"]
     dates = sitemap_dates()
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

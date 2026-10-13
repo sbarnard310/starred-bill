@@ -3085,7 +3085,7 @@ HOME_LESS_GUIDES = (("cheapest-michelin-star-restaurants", "The cheapest in the 
                     ("michelin-star-street-food-bangkok", "Bangkok street food"), ("michelin-star-tacos-mexico-city", "Mexico City tacos"),
                     ("how-much-does-a-michelin-star-restaurant-cost", "What a starred meal costs"))
 # "Browse": the list guides, with the short names their links use.
-HOME_LISTS = (("three-michelin-star-restaurants", "Every three-star restaurant"), ("top-michelin-star-restaurants-in-the-world", "The world’s top restaurants"),
+HOME_LISTS = (("three-michelin-star-restaurants", "3 Michelin star restaurants"), ("top-michelin-star-restaurants-in-the-world", "The world’s top restaurants"),
               ("cities-with-the-most-michelin-stars", "Cities with the most stars"), ("michelin-stars-by-country", "Stars by country"),
               ("vegan-vegetarian-michelin-star-restaurants", "Vegan and vegetarian"), ("halal-michelin-star-restaurants", "Halal"),
               ("kosher-michelin-star-restaurants", "Kosher"), ("celebrity-chefs-michelin-stars", "Celebrity chefs"),

@@ -124,7 +124,7 @@ Free accounts let people keep their wishlist on every device, tick off restauran
 It's a browser key in `src/assets/common.js`, restricted to these addresses:
 - `https://starredbill.com/*`
 - `https://www.starredbill.com/*`
-- `https://sbarnard310.github.io/*` (the old GitHub copy, gone since 12 Oct 2026: the owner is to take it off and add `https://*.starred-bill.pages.dev/*` so branch previews show maps; update this list once done)
+- `https://*.starred-bill.pages.dev/*` (Cloudflare's branch previews, so they show maps and photos; replaced the old GitHub copy's `https://sbarnard310.github.io/*` on 13 Oct 2026)
 - `http://localhost:8799/*`
 
 It's used for the maps (Maps JavaScript API) and restaurant photos (Places API (New)). The Google Cloud project is on the free trial, so quotas can't be capped yet. If it's upgraded, set daily caps.

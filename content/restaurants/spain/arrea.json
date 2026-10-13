@@ -28,5 +28,15 @@
   "placeId": "ChIJZRGpcCEFUA0RUf0xVgivg1c",
   "michelinId": "1085201",
   "chef": "Edorta Lamo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "arrea.jpg",
+  "photoAlt": "The building of ARREA! in Santa Cruz de Campezo, Álava",
+  "photoCredit": "Mentxuwiki",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurante_Arrea.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 751,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

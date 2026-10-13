@@ -25,5 +25,15 @@
   "dinnerNoteNb": "Smaksmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNb": "Kun middag"
+  "lunchNoteNb": "Kun middag",
+  "photo": "kontrast.jpg",
+  "photoAlt": "The entrance door of Kontrast in Oslo, marked with a large K",
+  "photoCredit": "City Foodsters",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Kontrast_IMG_6211_(31177326191).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

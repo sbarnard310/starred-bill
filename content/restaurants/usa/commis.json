@@ -24,5 +24,15 @@
     "vegetarian"
   ],
   "chef": "James Syhabout",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "commis.jpg",
+  "photoAlt": "The front of Commis in Oakland, California, with its sign",
+  "photoCredit": "Mx. Granger",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Commis.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 700,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

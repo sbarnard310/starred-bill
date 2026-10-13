@@ -34,5 +34,15 @@
   "cuisineNl": "Eigentijds Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 89 €)",
   "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine française contemporaine"
+  "cuisineFr": "Cuisine française contemporaine",
+  "photo": "hofke-van-bazel.jpg",
+  "photoAlt": "Hofke van Bazel, a row of brick houses with a terrace on Koningin Astridplein, Bazel",
+  "photoCredit": "Funkyxian",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Koningin_Astridplein_10,_Bazel.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

@@ -29,5 +29,15 @@
   "placeId": "ChIJ06Abq5OipBIRAAbiw3cStt8",
   "michelinId": "173843",
   "chef": "Paolo Casagrande",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "lasarte.jpg",
+  "photoAlt": "The glass entrance of Lasarte in Barcelona, with the Lasarte name on the door",
+  "photoCredit": "Cataleirxs",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Lasarte.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

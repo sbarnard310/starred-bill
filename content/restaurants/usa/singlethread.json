@@ -37,5 +37,15 @@
     "note": "Inn guests can book dinner with their stay up to three months ahead.",
     "source": "https://singlethreadfarms.com/bookings",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "singlethread.jpg",
+  "photoAlt": "The white corner building of SingleThread in Healdsburg, California",
+  "photoCredit": "Missvain",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:SingleThread_-_September_2022_-_Sarah_Stierch_02.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

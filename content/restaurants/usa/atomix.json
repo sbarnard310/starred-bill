@@ -23,5 +23,15 @@
   "placeId": "ChIJ3bmAHghZwokRRXYO57yLuss",
   "michelinId": "563200",
   "chef": "Junghyun Park",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "atomix.jpg",
+  "photoAlt": "The arched doors and Atomix sign at 104 East 30th Street, New York",
+  "photoCredit": "Transpoman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Atomix_NYC.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

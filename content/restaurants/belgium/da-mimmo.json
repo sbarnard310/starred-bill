@@ -35,5 +35,15 @@
   "lunchWine": 68,
   "lunchSourceType": "site",
   "lunchSource": "https://www.da-mimmo.be/layout/uploads/2026/09/FR-DEGUSTAZIONE.pdf",
-  "cuisineFr": "Cuisine italienne contemporaine"
+  "cuisineFr": "Cuisine italienne contemporaine",
+  "photo": "da-mimmo.jpg",
+  "photoAlt": "The front of Da Mimmo in Woluwe-Saint-Lambert, with its name above the door",
+  "photoCredit": "GdML",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Da_Mimmo_(restaurant).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

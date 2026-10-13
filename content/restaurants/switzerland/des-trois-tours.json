@@ -35,5 +35,15 @@
   "lunchNoteIt": "Menu pranzo",
   "cuisineIt": "Francese contemporanea",
   "chef": "Romain Paillereau",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "des-trois-tours.jpg",
+  "photoAlt": "Hôtel des Trois-Tours in Bourguillon, Fribourg, a white house with a timbered top floor",
+  "photoCredit": "MaxalTh",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_des_Trois-Tours,_Bourguillon.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

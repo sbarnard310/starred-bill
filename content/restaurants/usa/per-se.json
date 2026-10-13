@@ -39,5 +39,14 @@
     "via": "Tock",
     "source": "https://www.exploretock.com/perse/faq",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "per-se.jpg",
+  "photoAlt": "The dining room of Per Se in New York, with tables on raised levels",
+  "photoCredit": "Gwernol",
+  "photoLicence": "Public domain",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:PerSe.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 800,
+  "photoHeight": 535,
+  "photoChecked": "2026-10-13"
 }

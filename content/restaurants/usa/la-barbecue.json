@@ -14,5 +14,15 @@
   "website": "https://www.labarbecue.com/",
   "lat": 30.254782,
   "lng": -97.71734,
-  "placeId": "ChIJIR1tw661RIYRUgfHust5Vv0"
+  "placeId": "ChIJIR1tw661RIYRUgfHust5Vv0",
+  "photo": "la-barbecue.jpg",
+  "photoAlt": "The lunch line outside La Barbecue in Austin, Texas",
+  "photoCredit": "Larry D. Moore",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:La_Barbecue_Austin_Texas_2025.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 562,
+  "photoChecked": "2026-10-13"
 }

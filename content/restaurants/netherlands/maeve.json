@@ -31,5 +31,15 @@
   "lunchSource": "https://www.restaurantmaeve.nl/arrangementen/",
   "cuisineNl": "Creatief Frans",
   "chef": "Tommy Janssen",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "maeve.jpg",
+  "photoAlt": "The 18th-century brick house at Kromme Nieuwegracht 18, Utrecht, home of Maeve",
+  "photoCredit": "China Crisis",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:KrommeNieuwegracht.18.Utrecht.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 749,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

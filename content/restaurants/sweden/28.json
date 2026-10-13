@@ -21,5 +21,14 @@
   "dinnerNoteSv": "Avsmakningsmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteSv": "Endast middag"
+  "lunchNoteSv": "Endast middag",
+  "photo": "28.jpg",
+  "photoAlt": "The 28+ restaurant sign above the street entrance on Götabergsgatan, Gothenburg",
+  "photoCredit": "Bolstermage",
+  "photoLicence": "Public domain",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_28%2B.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 667,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

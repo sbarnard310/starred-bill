@@ -29,5 +29,15 @@
     "vegetarian"
   ],
   "chef": "Rupert Blease",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "wolfsbane.jpg",
+  "photoAlt": "The corner building of Wolfsbane in Dogpatch, San Francisco, with its flower emblem",
+  "photoCredit": "Lexi Mattick",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Wolfsbane_in_San_Francisco_-_July_2026.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 797,
+  "photoChecked": "2026-10-13"
 }

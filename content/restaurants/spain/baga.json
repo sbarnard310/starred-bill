@@ -25,5 +25,15 @@
     "vegan"
   ],
   "chef": "Pedro Sánchez",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "baga.jpg",
+  "photoAlt": "The front of Bagá in Jaén with its name and logo above the shutter",
+  "photoCredit": "Rlinx",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurante_Bag%C3%A1_Jaen.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

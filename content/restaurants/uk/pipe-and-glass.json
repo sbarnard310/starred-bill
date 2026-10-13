@@ -24,5 +24,15 @@
     "vegan"
   ],
   "chef": "James Mackenzie",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "pipe-and-glass.jpg",
+  "photoAlt": "The whitewashed front and garden tables of the Pipe and Glass in South Dalton",
+  "photoCredit": "The Pipe and Glass by Alan Hughes",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_Pipe_and_Glass_-_geograph.org.uk_-_7611412.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

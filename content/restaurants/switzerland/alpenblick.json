@@ -36,5 +36,15 @@
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Contemporanea"
+  "cuisineIt": "Contemporanea",
+  "photo": "alpenblick.jpg",
+  "photoAlt": "Hotel Alpenblick in Wilderswil with its name signs at the front",
+  "photoCredit": "Jakkes",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Hotel_Alpenblick_Wilderswil_www.hotel-alpenblick.ch_2003_-_panoramio.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 800,
+  "photoHeight": 600,
+  "photoChecked": "2026-10-13"
 }

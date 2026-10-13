@@ -29,5 +29,15 @@
   ],
   "chef": "Wassim Hallal",
   "chefSource": "press",
-  "dinnerNoteDa": "Smagsmenu"
+  "dinnerNoteDa": "Smagsmenu",
+  "photo": "frederikshj.jpg",
+  "photoAlt": "The white house of Frederikshøj on Oddervej, Aarhus",
+  "photoCredit": "RhinoMind",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Frederiksh%C3%B8j_Kro.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 562,
+  "photoChecked": "2026-10-13"
 }

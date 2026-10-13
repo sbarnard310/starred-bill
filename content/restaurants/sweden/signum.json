@@ -32,5 +32,15 @@
   "lunchNoteSv": "Samma meny till lunch · lördag",
   "lunchWine": 2000,
   "lunchSourceType": "site",
-  "lunchSource": "https://restaurantsignum.com/meny"
+  "lunchSource": "https://restaurantsignum.com/meny",
+  "photo": "signum.jpg",
+  "photoAlt": "The black timber building of Signum by Landvettersjön, Mölnlycke",
+  "photoCredit": "Mattias Blomgren",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurang_Signum_i_M%C3%B6lnlycke_01.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 668,
+  "photoChecked": "2026-10-13"
 }

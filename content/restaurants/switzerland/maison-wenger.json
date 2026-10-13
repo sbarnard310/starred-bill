@@ -37,5 +37,15 @@
   "cuisineFr": "Cuisine française moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 200)",
   "lunchNoteIt": "Menu pranzo",
-  "cuisineIt": "Francese moderna"
+  "cuisineIt": "Francese moderna",
+  "photo": "maison-wenger.jpg",
+  "photoAlt": "The hotel and restaurant by the station in Le Noirmont, home of Maison Wenger",
+  "photoCredit": "Roland Zumbuehl",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:2015-Le-Noirmont-Hotel-Georges.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 667,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

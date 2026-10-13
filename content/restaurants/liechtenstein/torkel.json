@@ -31,5 +31,15 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Di–Fr",
   "lunchSourceType": "site",
   "lunchSource": "https://www.torkel.li",
-  "cuisineDe": "Moderne Küche"
+  "cuisineDe": "Moderne Küche",
+  "photo": "torkel.jpg",
+  "photoAlt": "Restaurant Torkel among the vineyards on Hintergass, Vaduz",
+  "photoCredit": "Rafael P. D. Suppmann",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:2018-10-05_Liechtenstein,_Vaduz,_Hintergass_(KPFC)_05.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

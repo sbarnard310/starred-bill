@@ -27,5 +27,15 @@
   "chef": "Ángel León González",
   "chefSource": "michelin",
   "dinnerNote": "Tasting menu (bioluminescence menu with plankton rice €550)",
-  "dinnerNoteEs": "Menú degustación (menú bioluminiscencia y arroz plancton 550 €)"
+  "dinnerNoteEs": "Menú degustación (menú bioluminiscencia y arroz plancton 550 €)",
+  "photo": "aponiente.jpg",
+  "photoAlt": "The walkway to Aponiente in its former tide mill, El Puerto de Santa María",
+  "photoCredit": "El Pantera",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurante_Aponiente_-_IMG_20220703_112311.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

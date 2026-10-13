@@ -26,5 +26,15 @@
   "lunchNoteNl": "Open voor lunch · vr–zo",
   "cuisineNl": "Aziatisch",
   "chef": "Danny Tsang",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "o-o.jpg",
+  "photoAlt": "The front of Restaurant O&O in Sint Willebrord",
+  "photoCredit": "Lenarrateur",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:RestaurantOenO-ext.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 625,
+  "photoChecked": "2026-10-13"
 }

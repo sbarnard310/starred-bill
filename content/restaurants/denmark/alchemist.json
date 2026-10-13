@@ -31,5 +31,15 @@
     "vegetarian"
   ],
   "chef": "Rasmus Munk",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "alchemist.jpg",
+  "photoAlt": "The large bronze entrance doors of Alchemist on Refshaleøen, Copenhagen",
+  "photoCredit": "City Foodsters",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:AlchemistAV4A4003_(48826061293).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

@@ -15,5 +15,15 @@
   "statusDate": "2026-02",
   "statusNoteZh": "由新團隊接手、改走較輕鬆路線後，於 2026 年 2 月失去星級",
   "lat": 51.246125,
-  "lng": 1.125549
+  "lng": 1.125549,
+  "photo": "the-bridge-arms.jpg",
+  "photoAlt": "The white front of The Bridge Arms in Bridge, Kent, with hanging baskets",
+  "photoCredit": "Bridge Arms by N Chadwick",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Bridge_Arms_-_geograph.org.uk_-_7264590.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 668,
+  "photoChecked": "2026-10-13"
 }

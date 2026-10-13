@@ -152,6 +152,37 @@ def problem(where, message):
     problems.append(f"{where}: {message}")
 
 
+# Photos of our own (13 Oct 2026, to-do item free-restaurant-photos): a restaurant's `photo` is a picture we may keep and
+# show for free, in src/img/restaurants/ as <id>.jpg (up to 1000px) and <id>-sm.jpg (the list thumbnail), made by
+# scripts/restaurant_photos.py from Wikimedia Commons (`photoSourceType: commons`, with its author, licence and Commons
+# page) or from a restaurant's press photos (`press`: its media page allows editorial use; `permission`: it said yes by
+# email, kept in `photoPermission`). The credit shows under the photo wherever it appears, as the licence asks. Without
+# one, pages fall back to a Google photo, loaded only when asked for (PHOTOS_OK in common.js).
+PHOTO_DIR = SRC / "img" / "restaurants"
+PHOTO_SOURCE_TYPES = ("commons", "press", "permission")
+
+
+def photo_checks(r, where):
+    """Tidies a restaurant's photo fields and says what's wrong. Pages CMS saves the picture's path; only its name is kept."""
+    r["photo"] = r["photo"].rsplit("/", 1)[-1]
+    if not (PHOTO_DIR / r["photo"]).exists():
+        problem(where, f"photo {r['photo']} isn't in src/img/restaurants/ (run scripts/restaurant_photos.py, or upload it there)")
+        return
+    small = re.sub(r"(\.\w+)$", r"-sm\1", r["photo"])
+    r["photoThumb"] = small if (PHOTO_DIR / small).exists() else r["photo"]
+    kind = r.get("photoSourceType") or "commons"
+    if kind not in PHOTO_SOURCE_TYPES:
+        problem(where, f"photoSourceType must be one of {', '.join(PHOTO_SOURCE_TYPES)}")
+    if not r.get("photoCredit"):
+        problem(where, "a photo needs photoCredit: its author, or e.g. \"Courtesy of Le Bernardin\"")
+    if not r.get("photoSource"):
+        problem(where, "a photo needs photoSource: the link to its Wikimedia Commons page or the restaurant's press page")
+    if kind == "commons" and not r.get("photoLicence"):
+        problem(where, "a Wikimedia Commons photo needs photoLicence, e.g. CC BY-SA 4.0")
+    if kind == "permission" and not r.get("photoPermission"):
+        problem(where, "a photo used with permission needs photoPermission: who said yes, how and when")
+
+
 def read_json(path):
     try:
         return json.loads(path.read_text("utf-8"))
@@ -418,6 +449,8 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
         problem(where, "starSourceDate must be a date like 2026-10-13")
     if r.get("michelinUrl") and not str(r["michelinUrl"]).startswith("https://guide.michelin.com/"):
         problem(where, "michelinUrl must be the restaurant's page on https://guide.michelin.com/")
+    if r.get("photo"):
+        photo_checks(r, where)
     if isinstance(r.get("bookingWindow"), dict):  # Pages CMS saves the blank parts as "" (and false for an unticked box)
         r["bookingWindow"] = {k: v for k, v in tidy(r["bookingWindow"]).items() if v is not False}
         if not r["bookingWindow"].get("type"):
@@ -739,7 +772,8 @@ for _a, _b in CANONICAL_PLACES.items():
 # (`bookingWindow` reaches destination pages as `bw`, without its source, checked date and note.)
 PAGE_ONLY = ("bookingWindow", "noBookings", "queue", "byob", "servicePct", "hotel", "alsoTry", "waitlist", "duration", "menus", "menusSource", "menusChecked", "priceHistory", "starsSince", "dressCode", "bookingOpens", "bookingPhone", "bookingUrl",
              "walkIns", "groups", "groupsUrl", "cancellation",
-             "children", "infoSource", "infoChecked", "rankings", "rankingsChecked")
+             "children", "infoSource", "infoChecked", "rankings", "rankingsChecked",
+             "photoAlt", "photoSourceType", "photoPermission", "photoChecked", "photoWidth", "photoHeight")
 
 
 def public(r):
@@ -7059,6 +7093,37 @@ def restaurant_og(r):
     return f"{SITE_URL}/og/restaurants/{r['id']}.png" if (SRC / "og" / "restaurants" / f"{r['id']}.png").exists() else None
 
 
+def own_credit(r, label="Photo"):
+    """A photo of our own's credit, as ownCredit() in common.js writes it: the author (linked to the photo's Commons or
+    press page) and its licence (linked to the licence), which is what CC BY and CC BY-SA ask for."""
+    a = lambda u, text: f'<a href="{e(u)}" target="_blank" rel="noopener">{e(text)}</a>' if u else e(text)
+    lic = a(r.get("photoLicenceUrl"), r["photoLicence"]) if r.get("photoLicence") else ""
+    return (f"{label}: " if label else "") + a(r.get("photoSource"), r.get("photoCredit", "")) + (f" · {lic}" if lic else "")
+
+
+def own_photo_html(r):
+    """The restaurant page's photo, when we have one of our own: written into the page (it costs nothing to show), opening
+    full size; restaurant.js adds "More photos" from Google under it, loaded only when tapped."""
+    if not r.get("photo"):
+        return ""
+    alt = r.get("photoAlt") or f"{r['name']}, {area_line(r)}"
+    size = f' width="{r["photoWidth"]}" height="{r["photoHeight"]}"' if r.get("photoWidth") and r.get("photoHeight") else ""
+    return (f'<figure class="rp-photo loaded" id="rpOwnPhoto" data-full="/img/restaurants/{e(r["photo"])}">'
+            f'<button type="button" class="rp-photo-open" aria-label="Open the photo of {e(r["name"])} full size">'
+            f'<img src="/img/restaurants/{e(r["photo"])}" alt="{e(alt)}"{size} decoding="async" fetchpriority="high"></button>'
+            f'<figcaption><span>{own_credit(r)}</span></figcaption></figure>')
+
+
+def own_photo_ld(r):
+    """The photo for search engines, with who took it and its licence (Google shows "Licensable" and the credit)."""
+    if not r.get("photo"):
+        return None
+    out = {"@type": "ImageObject", "contentUrl": f"{SITE_URL}/img/restaurants/{r['photo']}", "creditText": r.get("photoCredit"),
+           "caption": r.get("photoAlt"), "license": r.get("photoLicenceUrl"), "acquireLicensePage": r.get("photoSource"),
+           "creator": {"@type": "Person", "name": r["photoCredit"]} if r.get("photoSourceType", "commons") == "commons" else None}
+    return {k: v for k, v in out.items() if v}
+
+
 def report_attrs(r):
     """What the "Report a price or change" form (account.js, report.js) needs to know about the restaurant."""
     return f'data-report-id="{e(r["id"])}" data-report-name="{e(r["name"])}" data-report-cur="{e(r["cur"])}"'
@@ -7327,7 +7392,7 @@ def build_restaurant_pages():
                 + f'<button type="button" class="rp-btn" {trip_attrs(r)}>Add to a trip</button>'
                 + f'<button type="button" class="rp-btn" {report_attrs(r)}>Report a price or change</button></div>\n'
                 '      <div class="rp-cur" id="rpCur" role="group" aria-label="Show prices in" hidden></div>\n'
-                f'    </div>\n    <div class="rp-side">{receipt_html(r, kind, src_links)}</div>\n  </div>\n</div>\n')
+                f'    </div>\n    <div class="rp-side">{own_photo_html(r)}{receipt_html(r, kind, src_links)}</div>\n  </div>\n</div>\n')
 
         # The facts.
         change = r.get("change")
@@ -7489,7 +7554,7 @@ def build_restaurant_pages():
                 "priceRange": f"{money(d, cur)} tasting menu" if d is not None and r.get("dinnerType", "menu") == "menu" else None,
                 "geo": dict(zip(("@type", "latitude", "longitude"), ("GeoCoordinates",) + (r.get("_gps") or (r["lat"], r["lng"])))) if r.get("lat") is not None else None,
                 "acceptsReservations": r.get("bookingUrl"),
-                "image": restaurant_og(r),
+                "image": [x for x in (own_photo_ld(r), restaurant_og(r)) if x] or None,
                 "hasMenu": [{"@type": "Menu", "name": m["name"], "offers": {"@type": "Offer", "price": m["price"], "priceCurrency": cur}} for m in r.get("menus", [])]
                 or [{"@type": "Menu", "name": n, "offers": {"@type": "Offer", "price": p, "priceCurrency": cur}}
                             for n, p in (("Dinner tasting menu" if r.get("dinnerType", "menu") == "menu" else None, d), ("Wine pairing", w),
@@ -7503,6 +7568,7 @@ def build_restaurant_pages():
         graph[1] = {k: v for k, v in graph[1].items() if v}
         data = {"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "knownIds": None, "cur": cur, "switchable": currency_data.get("switchable", []),
                 "restaurant": {"id": r["id"], "name": r["name"], "stars": r["stars"], "lat": r.get("lat"), "lng": r.get("lng"), "placeId": r.get("placeId"),
+                               **({"photo": r["photo"], "photoCreditHtml": own_credit(r, None)} if r.get("photo") else {}),
                                **({"bw": bw_public(r["bookingWindow"])} if r.get("bookingWindow") else {})},
                 "nearby": [{"name": q["name"], "stars": q["stars"], "lat": q["lat"], "lng": q["lng"], "href": restaurant_href(q),
                             "dinner": money(q["dinner"], q["cur"]) if q.get("dinner") is not None else ""} for km, q in near]}
@@ -7599,6 +7665,11 @@ def restaurant_sources_html(r, michelin_url):
         parts.append("Rating: " + a("https://www.google.com/maps", "Google Maps") + f", checked {RATINGS_CHECKED}")
     if r.get("memberScore"):
         parts.append("Members’ score: our signed-in members who have been there" + (f", updated {e(nice_date(MEMBER_SCORES['updated']))}" if MEMBER_SCORES.get("updated") else ""))
+    if r.get("photo"):
+        kind = r.get("photoSourceType", "commons")
+        parts.append("Photo: " + a(r["photoSource"], "Wikimedia Commons" if kind == "commons" else f"{r['name']}’s press photos")
+                     + f" ({e(r['photoCredit'])}" + (f", {e(r['photoLicence'])}" if r.get("photoLicence") else "")
+                     + (", used with permission" if kind == "permission" else "") + ")")
     if r["id"] in HOURS_SITE and hours_lines(r):
         parts.append("Opening hours: " + a(HOURS_SITE[r["id"]]["url"], hours_site_name(r)) + f", checked {e(nice_date(HOURS_CHECKED['site']))}")
     parts.append("Exchange rates: " + a(EXCHANGE_RATES[1], EXCHANGE_RATES[0]) + rates_day())

@@ -82,5 +82,15 @@
       "url": "https://www.laliste.com/places/georges-blanc-vonnas-fr"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "photo": "georges-blanc.jpg",
+  "photoAlt": "The half-timbered Georges Blanc building in Vonnas, with its name on the facade",
+  "photoCredit": "Chabe01",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Maison_Blanc_Vonnas_1.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

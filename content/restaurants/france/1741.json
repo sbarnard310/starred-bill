@@ -29,5 +29,15 @@
   "dinnerNote": "Menu, 7 courses (9 courses €160, 11 courses €178)",
   "dinnerNoteFr": "Menu en 7 temps (9 temps 160 €, 11 temps 178 €)",
   "lunchNote": "Menu, 3 courses, Wed–Fri lunch (5 courses €100)",
-  "lunchNoteFr": "Menu en 3 temps, déjeuner du mercredi au vendredi (5 temps 100 €)"
+  "lunchNoteFr": "Menu en 3 temps, déjeuner du mercredi au vendredi (5 temps 100 €)",
+  "photo": "1741.jpg",
+  "photoAlt": "The white house of 1741 with its name on the facade, quai des Bateliers, Strasbourg",
+  "photoCredit": "Sebleouf",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Strasbourg_-_Restaurant_1741,_quai_des_Bateliers_(juil_2025).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

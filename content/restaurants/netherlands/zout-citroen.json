@@ -28,5 +28,15 @@
   "lunchNoteNl": "Open voor lunch · vr–ma",
   "cuisineNl": "Creatief",
   "chef": "Bram Helleman",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "zout-citroen.jpg",
+  "photoAlt": "The coach house of Slot Brakestein in Oosterhout, home of Zout & Citroen",
+  "photoCredit": "Kasteelbeer",
+  "photoLicence": "CC BY-SA 3.0 nl",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:F1020022.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 670,
+  "photoChecked": "2026-10-13"
 }

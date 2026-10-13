@@ -28,5 +28,15 @@
     "gluten-free"
   ],
   "chef": "Steve Smith",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "star-inn-at-harome.jpg",
+  "photoAlt": "The thatched Star Inn at Harome, North Yorkshire, seen from the road",
+  "photoCredit": "The Star Inn, Harome by JThomas",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_Star_Inn,_Harome_-_geograph.org.uk_-_6699355.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 649,
+  "photoChecked": "2026-10-13"
 }

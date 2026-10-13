@@ -26,5 +26,15 @@
     "vegetarian"
   ],
   "chef": "Shaun Hill",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "walnut-tree.jpg",
+  "photoAlt": "The white buildings of the Walnut Tree at Llanddewi Skirrid, near Abergavenny",
+  "photoCredit": "Philip Halling",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_Walnut_Tree_Inn_-_geograph.org.uk_-_215804.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 640,
+  "photoHeight": 480,
+  "photoChecked": "2026-10-13"
 }

@@ -28,5 +28,15 @@
     "halal"
   ],
   "chef": "Craig Johnston",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "angler.jpg",
+  "photoAlt": "The street entrance to Angler at South Place Hotel, Moorgate, London",
+  "photoCredit": "Ewan Munro",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Angler,_Moorgate_2025-08-16.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 747,
+  "photoChecked": "2026-10-13"
 }

@@ -79,5 +79,15 @@
   "groupsUrl": "https://thekitchin.com/private-dining/",
   "dressCode": "Smart casual; guests are asked not to wear sports jerseys.",
   "infoSource": "https://thekitchin.com/reservations/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "the-kitchin.jpg",
+  "photoAlt": "The front of The Kitchin on Commercial Quay, Leith, Edinburgh",
+  "photoCredit": "Lokal_Profil",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_Kitchin,_Edinburgh,_2.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 664,
+  "photoChecked": "2026-10-13"
 }

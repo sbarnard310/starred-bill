@@ -37,5 +37,15 @@
   "chef": "David Andrés",
   "chefSource": "michelin",
   "dinnerNote": "Grand tasting menu (also à la carte)",
-  "dinnerNoteEs": "Gran menú degustación (también a la carta)"
+  "dinnerNoteEs": "Gran menú degustación (también a la carta)",
+  "photo": "via-veneto.jpg",
+  "photoAlt": "The red awning and wooden door of Restaurant Via Veneto on Carrer de Ganduxer, Barcelona",
+  "photoCredit": "Pere López Brosa",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Via_Veneto_-_20200713_125549.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

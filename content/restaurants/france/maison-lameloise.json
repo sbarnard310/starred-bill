@@ -29,5 +29,15 @@
     "vegetarian"
   ],
   "chef": "Éric Pras",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "maison-lameloise.jpg",
+  "photoAlt": "The Lameloise building in Chagny at night, with its name above the windows",
+  "photoCredit": "Jacques Lameloise - Editer par Arnaud 25",
+  "photoLicence": "CC BY 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Lameloise.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 673,
+  "photoChecked": "2026-10-13"
 }

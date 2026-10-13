@@ -29,5 +29,14 @@
     "vegetarian-menu"
   ],
   "chef": "Tom Meyer",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "la-chevre-d-or.jpg",
+  "photoAlt": "The terraces of the Château de la Chèvre d'Or in Èze, with its golden goat and the sea below",
+  "photoCredit": "chevredor",
+  "photoLicence": "Public domain",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Vuedusalonbaroque.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 666,
+  "photoChecked": "2026-10-13"
 }

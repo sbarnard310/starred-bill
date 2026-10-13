@@ -37,5 +37,15 @@
     "via": "website",
     "source": "https://www.veeraswamy.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "veeraswamy.jpg",
+  "photoAlt": "Veeraswamy's banners on Victory House, Regent Street, London",
+  "photoCredit": "Alex.muller",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Veeraswamy_2008_07_01.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 612,
+  "photoChecked": "2026-10-13"
 }

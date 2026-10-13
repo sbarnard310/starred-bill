@@ -32,5 +32,15 @@
     "via": "website",
     "source": "https://theneptune.co.uk/restaurant-booking/",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "the-neptune-old-hunstanton.jpg",
+  "photoAlt": "The Neptune in Old Hunstanton, Norfolk, with its N sign on the brick front",
+  "photoCredit": "The Neptune Bar & Restaurant, Old Hunstanton by JThomas",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_Neptune_Bar_%5E_Restaurant,_Old_Hunstanton_-_geograph.org.uk_-_5577795.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 640,
+  "photoHeight": 480,
+  "photoChecked": "2026-10-13"
 }

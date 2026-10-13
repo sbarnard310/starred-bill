@@ -29,5 +29,15 @@
   "lunchNoteKo": "런치 코스",
   "lunchWine": 150000,
   "lunchSourceType": "press",
-  "lunchSource": "https://app.catchtable.co.kr/ct/shop/soseoul_hannam"
+  "lunchSource": "https://app.catchtable.co.kr/ct/shop/soseoul_hannam",
+  "photo": "soseoul-hannam-seoul.jpg",
+  "photoAlt": "The Soseoul Hannam sign on a slate post by the entrance, Hannam-dong, Seoul",
+  "photoCredit": "밍돌",
+  "photoLicence": "CC BY 2.0 kr",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0/kr/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:%EC%86%8C%EC%84%A4%ED%95%9C%EB%82%A8%EC%97%90%EC%84%9C%EC%9D%98_%EC%A0%90%EC%8B%AC%EC%8B%9D%EC%82%AC_01.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

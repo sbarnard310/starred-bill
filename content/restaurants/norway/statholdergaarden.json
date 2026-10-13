@@ -25,5 +25,15 @@
   "lunchNote": "Dinner only",
   "lunchNoteNb": "Kun middag",
   "chef": "Bent Stiansen",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "statholdergaarden.jpg",
+  "photoAlt": "Statholdergaarden, a red historic building on the corner of Rådhusgata and Kirkegata, Oslo",
+  "photoCredit": "Kjetil Ree",
+  "photoLicence": "CC BY-SA 2.5",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Statholdergaarden.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

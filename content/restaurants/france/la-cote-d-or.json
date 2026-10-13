@@ -26,5 +26,15 @@
   "placeId": "ChIJSyTypvEF8kcROYSCo94720o",
   "michelinId": "13081",
   "chef": "Louis-Philippe Vigilant",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "la-cote-d-or.jpg",
+  "photoAlt": "The Relais Bernard Loiseau building in Saulieu, home of La Côte d'Or, with the Bernard Loiseau sign",
+  "photoCredit": "0x010C",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Bernard_Loiseau.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

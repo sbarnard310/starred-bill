@@ -25,5 +25,15 @@
   "placeId": "ChIJk_hd_HsABDQR5ZMLVcC33Vk",
   "michelinId": "1191544",
   "chef": "Matt Abergel",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "yardbird.jpg",
+  "photoAlt": "The Yardbird sign at 154-158 Wing Lok Street, Sheung Wan, Hong Kong",
+  "photoCredit": "Jackee Lainebla MC",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:HK_SW_Sheung_Wan_154-158_Wing_Lok_Street_Yardbird_shop_February_2021_SS2.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

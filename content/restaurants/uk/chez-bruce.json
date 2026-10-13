@@ -64,5 +64,15 @@
   "duration": "Tables are returned after 2 hours 15 minutes unless agreed in advance.",
   "byob": "Corkage £50 a bottle at dinner and £25 at lunch, one 75cl bottle per person up to four a table; free on Sunday evenings.",
   "infoSource": "https://www.chezbruce.co.uk/booking/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "photo": "chez-bruce.jpg",
+  "photoAlt": "The front of Chez Bruce with its name on the awning, Wandsworth Common, London",
+  "photoCredit": "Ewan Munro",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Chez_Bruce,_Wandsworth_Common,_SW17.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

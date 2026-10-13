@@ -30,5 +30,15 @@
     "vegetarian"
   ],
   "chef": "Sébastien Martinez",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "rosmadec-le-moulin.jpg",
+  "photoAlt": "The Moulin de Rosmadec, a stone watermill on the river in Pont-Aven, Brittany",
+  "photoCredit": "PIERRE ANDRE LECLERCQ",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Pont-Aven.-_le_moulin_de_Rosmadec.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 735,
+  "photoChecked": "2026-10-13"
 }

@@ -32,5 +32,15 @@
     "via": "website",
     "source": "https://www.semma.nyc/",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "semma.jpg",
+  "photoAlt": "The storefront of Semma with its name on the blinds at 60 Greenwich Avenue, New York",
+  "photoCredit": "Transpoman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Semma_NYC.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

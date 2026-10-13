@@ -29,5 +29,14 @@
     "vegetarian-menu"
   ],
   "chef": "Arnaud Philippon",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "chateau-de-pray.jpg",
+  "photoAlt": "The Château de Pray near Amboise, seen across its gravel courtyard",
+  "photoCredit": "De chaumont",
+  "photoLicence": "Public domain",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Pray.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 748,
+  "photoChecked": "2026-10-13"
 }

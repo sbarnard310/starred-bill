@@ -28,5 +28,15 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Klassische Küche"
+  "cuisineDe": "Klassische Küche",
+  "photo": "wullenwever.jpg",
+  "photoAlt": "The white gabled house of Restaurant Wullenwever with its name, Beckergrube, Lübeck",
+  "photoCredit": "Jan Peer Baumann",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Wullenwever.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 556,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

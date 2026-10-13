@@ -28,5 +28,15 @@
   "placeId": "ChIJReP-p-id8kcREtjYzt5Tnl4",
   "michelinId": "345130",
   "chef": "Marie-Cécile and Vincent Gomis",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "la-maison-des-cariatides.jpg",
+  "photoAlt": "The carved façade of La Maison des Cariatides in Dijon, with its name plate",
+  "photoCredit": "Chabe01",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Maison_Cariatides_-_Dijon_(FR21)_-_2022-04-16_-_4.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

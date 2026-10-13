@@ -42,5 +42,15 @@
     "via": "website",
     "source": "https://www.disfrutarbarcelona.com/condicions-compra-reserva",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "disfrutar.jpg",
+  "photoAlt": "The tiled shopfront of Disfrutar in the Eixample, Barcelona",
+  "photoCredit": "Pere prlpz",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Disfrutar.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 563,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

@@ -28,5 +28,15 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 255 €)",
   "cuisineDe": "Kreativ",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "photo": "steirereck-im-stadtpark.jpg",
+  "photoAlt": "The Steirereck building in Vienna's Stadtpark at dusk",
+  "photoCredit": "Diego Delso",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurante_Steirereck,_Stadtpark,_Viena,_Austria,_2020-01-31,_DD_94.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 630,
+  "photoChecked": "2026-10-13"
 }

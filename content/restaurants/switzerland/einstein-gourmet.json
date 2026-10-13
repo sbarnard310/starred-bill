@@ -38,5 +38,15 @@
   "areaIt": "San Gallo",
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
-  "lunchNoteIt": "Menu pranzo"
+  "lunchNoteIt": "Menu pranzo",
+  "photo": "einstein-gourmet.jpg",
+  "photoAlt": "The front of Hotel Einstein St. Gallen, home of Einstein Gourmet",
+  "photoCredit": "Ra Boe / Wikipedia",
+  "photoLicence": "CC BY-SA 3.0 de",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:St._Gallen_-WikiCon-_2018_by-RaBoe_013.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 562,
+  "photoChecked": "2026-10-13"
 }

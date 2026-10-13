@@ -37,5 +37,14 @@
     "vegetarian"
   ],
   "chef": "Richard Ekkebus",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "amber.jpg",
+  "photoAlt": "The dining room of Amber, Hong Kong, under its hanging rod ceiling",
+  "photoCredit": "Theorb ( talk ) ( Uploads )",
+  "photoLicence": "Public domain",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Amber_Restaurant_2.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

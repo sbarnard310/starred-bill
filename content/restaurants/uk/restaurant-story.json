@@ -60,5 +60,15 @@
   "groupsUrl": "https://restaurantstory.co.uk/events/",
   "duration": "Up to two and a half hours for a table of two, and up to three and a half hours for four or more.",
   "infoSource": "https://restaurantstory.co.uk/reservations/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "restaurant-story.jpg",
+  "photoAlt": "The timber-clad building of Restaurant Story on Tooley Street, London",
+  "photoCredit": "I99pema",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Story_(restaurant),_London.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

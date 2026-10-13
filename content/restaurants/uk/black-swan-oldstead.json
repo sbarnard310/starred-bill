@@ -27,5 +27,15 @@
     "vegetarian"
   ],
   "chef": "Tommy Banks",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "black-swan-oldstead.jpg",
+  "photoAlt": "The stone Black Swan at Oldstead in snow, with its name above the porch",
+  "photoCredit": "Gordon Hatton",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_Black_Swan,_Oldstead_-_geograph.org.uk_-_734949.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 640,
+  "photoHeight": 434,
+  "photoChecked": "2026-10-13"
 }

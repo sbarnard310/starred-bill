@@ -26,5 +26,15 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 178 €)",
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteDe": "Mittags geöffnet · Do–So",
-  "cuisineDe": "Französisch-klassisch"
+  "cuisineDe": "Französisch-klassisch",
+  "photo": "restaurant-bareiss.jpg",
+  "photoAlt": "Hotel Bareiss and its gardens in Baiersbronn, home of Restaurant Bareiss",
+  "photoCredit": "R Boed",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Bareiss_Hotel_in_the_Black_Forest.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 684,
+  "photoChecked": "2026-10-13"
 }

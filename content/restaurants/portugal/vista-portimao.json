@@ -31,5 +31,15 @@
   "lunchNote": "Dinner only",
   "lunchNotePt": "Só jantar",
   "cuisinePt": "Moderna",
-  "areaPt": "Portimão"
+  "areaPt": "Portimão",
+  "photo": "vista-portimao.jpg",
+  "photoAlt": "The gate of the Bela Vista Hotel in Praia da Rocha, Portimão, with the VISTA restaurant sign",
+  "photoCredit": "Jose A.",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Bela_Vista_Hotel_and_Spa,_Praia_da_Rocha,_Portim%C3%A3o.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 738,
+  "photoChecked": "2026-10-13"
 }

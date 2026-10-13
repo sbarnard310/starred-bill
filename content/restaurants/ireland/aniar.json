@@ -27,5 +27,15 @@
     "kosher"
   ],
   "chef": "JP McMahon",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "aniar.jpg",
+  "photoAlt": "The green shopfront of Aniar in Galway",
+  "photoCredit": "The Banner",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Aniar_Restaurant.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 926,
+  "photoChecked": "2026-10-13"
 }

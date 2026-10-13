@@ -27,5 +27,15 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "cuisineDe": "Moderne Küche",
+  "photo": "zur-post.jpg",
+  "photoAlt": "Hotel Zur Post in Odenthal, a slate-hung house with green shutters and its name on the front",
+  "photoCredit": "A.Savin",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Odenthal_Ortszentrum_Hotel_Zur_Post.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 762,
+  "photoChecked": "2026-10-13"
 }

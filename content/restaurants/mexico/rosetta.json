@@ -33,5 +33,15 @@
     "gluten-free"
   ],
   "chef": "Elena Reygadas",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "rosetta.jpg",
+  "photoAlt": "The arched doorway of Rosetta in Roma Norte, Mexico City, with its name above",
+  "photoCredit": "Tbhotch",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurante_Rosetta,_Ciudad_de_M%C3%A9xico_(2024).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 563,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

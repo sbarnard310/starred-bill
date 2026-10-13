@@ -31,5 +31,15 @@
     "vegetarian"
   ],
   "chef": "Pablo Rivero",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "don-julio.jpg",
+  "photoAlt": "The corner building of Parrilla Don Julio in Palermo, Buenos Aires, with striped awnings",
+  "photoCredit": "Roberto Fiadone",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Don_Julio_03.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 562,
+  "photoChecked": "2026-10-13"
 }

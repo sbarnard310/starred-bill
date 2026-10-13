@@ -30,5 +30,15 @@
     "gluten-free"
   ],
   "chef": "Michael Wignall",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "the-angel-hetton.jpg",
+  "photoAlt": "The ivy-covered front of The Angel Inn at Hetton, with its name above the door",
+  "photoCredit": "Alexander P Kapp",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_Angel_Inn,_Hetton_-_geograph.org.uk_-_931503.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 640,
+  "photoHeight": 480,
+  "photoChecked": "2026-10-13"
 }

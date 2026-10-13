@@ -31,5 +31,15 @@
   "lunchNotePt": "O mesmo menu ao almoço · sábado",
   "lunchSourceType": "site",
   "lunchSource": "https://www.fiftysecondsexperience.com/wp-content/uploads/2026/09/MENU-VERT-DERIVA-PT-16.9.26.pdf",
-  "cuisinePt": "Criativa"
+  "cuisinePt": "Criativa",
+  "photo": "fifty-seconds.jpg",
+  "photoAlt": "The top of the Vasco da Gama Tower in Lisbon, where Fifty Seconds is",
+  "photoCredit": "Luca Boldrini",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Portugal_no_m%C3%AAs_de_Julho_de_Dois_Mil_e_Catorze_P7140654_(14556231499).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 744,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

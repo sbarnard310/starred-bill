@@ -31,5 +31,15 @@
   "placeId": "ChIJnaykAxWpQjQRnSZt6p0IkUU",
   "michelinId": "1213318",
   "chef": "Ryohei Hieda",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "eika.jpg",
+  "photoAlt": "The entrance of Eika in Datong, Taipei, with its name on a stand by the door",
+  "photoCredit": "Orangesclub",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Eika_Taipei_2025.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

@@ -26,5 +26,15 @@
   "placeId": "ChIJgaiXlpNbwokRN0vlYTshs-c",
   "michelinId": "1212608",
   "chef": "Fidel Caballero",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "corima.jpg",
+  "photoAlt": "The glass storefront of Corima with its sign at 3 Allen Street, New York",
+  "photoCredit": "Transpoman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Corima_NYC.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

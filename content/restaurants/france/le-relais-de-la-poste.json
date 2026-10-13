@@ -33,5 +33,15 @@
     "vegetarian-menu"
   ],
   "chef": "Thomas Koebel",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "le-relais-de-la-poste.jpg",
+  "photoAlt": "The timber-framed Hôtel Restaurant Relais de la Poste in La Wantzenau",
+  "photoCredit": "Didivo67",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:La_Wantzenau_hotel_restaurant_relais_de_la_poste_rue_du_general_de_gaulle21.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 585,
+  "photoChecked": "2026-10-13"
 }

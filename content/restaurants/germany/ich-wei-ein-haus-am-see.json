@@ -23,5 +23,15 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-klassisch"
+  "cuisineDe": "Französisch-klassisch",
+  "photo": "ich-wei-ein-haus-am-see.jpg",
+  "photoAlt": "The porch of Ich weiß ein Haus am See with its name above the door, Krakow am See",
+  "photoCredit": "Migebert",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Paradiesweg_3_(Krakow_am_See)_Ich_wei%C3%9F_ein_Haus_am_See.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 754,
+  "photoChecked": "2026-10-13"
 }

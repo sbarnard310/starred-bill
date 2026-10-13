@@ -35,5 +35,15 @@
   "placeId": "ChIJreMNLr2LGGARZuiWrMEdha8",
   "michelinId": "1194124",
   "chef": "Kanejiro Kanemoto",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "nodaiwa-azabu-iikura-honten.jpg",
+  "photoAlt": "The front of Nodaiwa with its lit name board at night, Higashi-Azabu, Tokyo",
+  "photoCredit": "江戸村のとくぞう (Edomura no Tokuzo)",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Nodaiwa3.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 800,
+  "photoHeight": 600,
+  "photoChecked": "2026-10-13"
 }

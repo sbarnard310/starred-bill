@@ -16,5 +16,15 @@
   "statusNote": "Lost its star in December 2024",
   "statusNoteZh": "於 2024 年 12 月失去星級",
   "lat": 40.751114,
-  "lng": -73.973508
+  "lng": -73.973508,
+  "photo": "sushi-yasuda.jpg",
+  "photoAlt": "The wooden sushi counter and dining room of Sushi Yasuda, New York",
+  "photoCredit": "Thomas Craven",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Sushi_Yasuda.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

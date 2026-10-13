@@ -28,5 +28,15 @@
   "placeId": "ChIJp_LMzsFv5kcRahcM9RvYYV4",
   "michelinId": "6107",
   "chef": "Philip Chronopoulos",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "le-taillevent.jpg",
+  "photoAlt": "The entrance of Taillevent with its name on the awning, Paris",
+  "photoCredit": "Chaica",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Taillevent.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 800,
+  "photoHeight": 600,
+  "photoChecked": "2026-10-13"
 }

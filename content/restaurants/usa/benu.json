@@ -36,5 +36,15 @@
     "via": "Tock",
     "source": "https://www.exploretock.com/benu/faq",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "benu.jpg",
+  "photoAlt": "The Benu sign on a brick wall beside the courtyard entrance, San Francisco",
+  "photoCredit": "City Foodsters",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Benu_Sign.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 667,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

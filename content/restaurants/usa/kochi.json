@@ -29,5 +29,15 @@
     "kosher"
   ],
   "chef": "Sungchul Shim",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "kochi.jpg",
+  "photoAlt": "The corner front of Kochi at 652 Tenth Avenue, New York, under a dark awning",
+  "photoCredit": "Transpoman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Kochi_Restaurant_NYC_2023.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

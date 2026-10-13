@@ -29,5 +29,15 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · donderdag",
   "lunchSourceType": "site",
   "lunchSource": "https://www.aucoin.nl",
-  "cuisineNl": "Modern Frans"
+  "cuisineNl": "Modern Frans",
+  "photo": "au-coin-des-bons-enfants.jpg",
+  "photoAlt": "The brick double-gabled house at Ezelmarkt 4, Maastricht, home of Au Coin des Bons Enfants",
+  "photoCredit": "Otter",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Maastricht_-_rijksmonument_26960_-_Ezelmarkt_4_20100703.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 800,
+  "photoHeight": 693,
+  "photoChecked": "2026-10-13"
 }

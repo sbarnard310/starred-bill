@@ -31,5 +31,15 @@
     "halal"
   ],
   "chef": "Jesús Sánchez Sáinz",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "cenador-de-amos.jpg",
+  "photoAlt": "El Cenador de Amós in the old Mazarrasa palace and its garden, Villaverde de Pontones",
+  "photoCredit": "Vanbasten 23",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurante_El_Cenador_de_Am%C3%B3s.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

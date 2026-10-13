@@ -26,5 +26,15 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 102 €)",
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteDe": "Mittags geöffnet · Do–So",
-  "cuisineDe": "Klassische Küche"
+  "cuisineDe": "Klassische Küche",
+  "photo": "mangold.jpg",
+  "photoAlt": "The Gasthof Restaurant Mangold building in Lochau",
+  "photoCredit": "böhringer friedrich",
+  "photoLicence": "CC BY-SA 2.5",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Gh_Mangold_Lochau.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 578,
+  "photoChecked": "2026-10-13"
 }

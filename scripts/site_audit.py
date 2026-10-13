@@ -277,7 +277,8 @@ def data_checks(site):
         g["no_pairing_offered"] += bool(r.get("noPairing"))
         g["lunch_unknown"] += r.get("lunch") is None and not r.get("noLunch") and not r.get("lunchNote")  # a note like "Open for lunch · Wed–Sun" answers it
         g["no_position"] += r.get("lat") is None
-        g["no_photo"] += not r.get("placeId")
+        g["no_photo"] += not r.get("placeId") and not r.get("photo")
+        g["own_photo"] += bool(r.get("photo"))  # a free photo of our own (scripts/restaurant_photos.py), not Google's paid one
         g["no_website"] += not r.get("website")
         g["no_hours"] += r["_id"] not in hours  # opening days for Near me's "Open on" filter (content/opening-hours*.json)
         g["price_without_source"] += r.get("dinner") is not None and not r.get("source")

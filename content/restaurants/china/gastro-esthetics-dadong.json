@@ -22,5 +22,15 @@
   "chef": "Dong Zhenxiang",
   "chefSource": "press",
   "rating": 4.3,
-  "reviews": 376
+  "reviews": 376,
+  "photo": "gastro-esthetics-dadong.jpg",
+  "photoAlt": "The entrance of Gastro Esthetics at DaDong in Nanxincang, Beijing",
+  "photoCredit": "N509FZ",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Gastro_Esthetics_at_DaDong,_Nanxincang_(20240810154028).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

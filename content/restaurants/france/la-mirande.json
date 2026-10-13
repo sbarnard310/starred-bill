@@ -17,5 +17,15 @@
   "website": "https://www.la-mirande.fr/fr/restaurant-avignon-provence.html",
   "lat": 43.9501365,
   "lng": 4.8076612,
-  "michelinId": "10075"
+  "michelinId": "10075",
+  "photo": "la-mirande.jpg",
+  "photoAlt": "The stone facade and door of La Mirande on Place de l'Amirande, Avignon",
+  "photoCredit": "Romainbehar",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Avignon_-_Place_de_l%27Amirande_-_La_Mirande_-_Porte_gauche.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

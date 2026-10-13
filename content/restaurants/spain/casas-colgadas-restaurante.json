@@ -31,5 +31,15 @@
     "kosher"
   ],
   "chef": "Jesús Segura",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "casas-colgadas-restaurante.jpg",
+  "photoAlt": "The Hanging Houses of Cuenca, where Casas Colgadas Restaurante is found",
+  "photoCredit": "Emilio J. Rodríguez Posada",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Casas_Colgadas_(28989481574).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 667,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

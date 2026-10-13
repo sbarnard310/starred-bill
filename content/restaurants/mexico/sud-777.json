@@ -41,5 +41,15 @@
   "groups": "There is a private room.",
   "dressCode": "Smart casual.",
   "infoSource": "https://www.opentable.com/sud-777",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "sud-777.jpg",
+  "photoAlt": "The lit Sud 777 lettering on a wall above ferns in Jardines del Pedregal, Mexico City",
+  "photoCredit": "City Foodsters",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Sud_777_10.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

@@ -52,5 +52,15 @@
   "dressCode": "Business casual is strongly recommended.",
   "children": "Pushchairs and prams cannot be accommodated in the restaurant.",
   "infoSource": "https://www.cafeboulud.com/nyc/about/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "cafe-boulud.jpg",
+  "photoAlt": "The green Café Boulud awning over its entrance at 100 East 63rd Street, New York",
+  "photoCredit": "Transpoman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Caf%C3%A9_Boulud_NYC.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

@@ -26,5 +26,15 @@
   "placeId": "ChIJYTKtj2dZwokR3IYU3st5VuA",
   "michelinId": "1243511",
   "chef": "Manabu Asanuma",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "muku.jpg",
+  "photoAlt": "The entrance booth of Muku at 412 Greenwich Street, Tribeca, New York",
+  "photoCredit": "Transpoman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Muku_NYC.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

@@ -27,5 +27,15 @@
     "gluten-free"
   ],
   "chef": "Tom Parker",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "the-white-swan-fence.jpg",
+  "photoAlt": "The White Swan pub on Wheatley Lane Road near Fence, Lancashire",
+  "photoCredit": "The White Swan by Kevin Waterhouse",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_White_Swan_-_geograph.org.uk_-_7852339.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

@@ -39,5 +39,15 @@
     "via": "website",
     "source": "https://www.thecrosskenilworth.co.uk/reservation",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "the-cross-kenilworth.jpg",
+  "photoAlt": "The red-brick The Cross building in Kenilworth, with its name on the gable",
+  "photoCredit": "Kenilworth-The Cross by Ian Rob",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Kenilworth-The_Cross_-_geograph.org.uk_-_4961056.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

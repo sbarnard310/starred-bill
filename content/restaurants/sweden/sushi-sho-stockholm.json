@@ -28,5 +28,15 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.sushisho.se/meny-sv",
   "dinnerNote": "Omakase and otsumami",
-  "dinnerNoteSv": "Omakase och otsumami"
+  "dinnerNoteSv": "Omakase och otsumami",
+  "photo": "sushi-sho-stockholm.jpg",
+  "photoAlt": "The front of Sushi Sho on Upplandsgatan, Stockholm, with its sign",
+  "photoCredit": "I99pema",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Sushi_Sho,_Stockholm.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 667,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

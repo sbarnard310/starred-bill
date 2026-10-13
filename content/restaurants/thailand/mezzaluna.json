@@ -28,5 +28,15 @@
     "gluten-free"
   ],
   "chef": "Ryuki Kawasaki",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "mezzaluna.jpg",
+  "photoAlt": "The illuminated golden dome of lebua's State Tower in Bangkok, where Mezzaluna is",
+  "photoCredit": "Wolfgang Weber",
+  "photoLicence": "CC BY 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Cupola_Of_The_Lebua_Tower_(190650123).jpeg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 679,
+  "photoChecked": "2026-10-13"
 }

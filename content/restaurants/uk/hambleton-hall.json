@@ -88,5 +88,15 @@
       "url": "https://www.laliste.com/places/hambleton-hall-oakham-gb"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "photo": "hambleton-hall.jpg",
+  "photoAlt": "The front and gardens of Hambleton Hall in Rutland",
+  "photoCredit": "Iain Crump",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Hambleton_Hall_-_geograph.org.uk_-_1059239.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 640,
+  "photoHeight": 480,
+  "photoChecked": "2026-10-13"
 }

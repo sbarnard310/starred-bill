@@ -31,5 +31,15 @@
   "lunchNoteCs": "Stejné menu v poledne",
   "lunchWine": 2000,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.ladegustation.cz/en/menu"
+  "lunchSource": "https://www.ladegustation.cz/en/menu",
+  "photo": "la-degustation-boheme-bourgeoise.jpg",
+  "photoAlt": "The corner front of La Degustation Bohême Bourgeoise on Haštalská, Prague",
+  "photoCredit": "Cloudz679",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:La_Degustation.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

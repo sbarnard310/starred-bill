@@ -68,5 +68,15 @@
   "groups": "Three private rooms for 8, 12 and 20 guests; the whole restaurant can be booked privately.",
   "groupsUrl": "https://www.michel-sarran.com/fr/#Page-infos",
   "infoSource": "https://www.michel-sarran.com/fr/#Page-infos",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "photo": "michel-sarran.jpg",
+  "photoAlt": "The orange facade of Restaurant Michel Sarran on Boulevard Armand Duportal, Toulouse",
+  "photoCredit": "Frédéric Neupont",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Toulouse-Restaurant-Michel-Sarran.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

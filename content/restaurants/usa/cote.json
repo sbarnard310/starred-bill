@@ -22,5 +22,15 @@
   "placeId": "ChIJQ1R3hKNZwokRQM4wbIrc00o",
   "michelinId": "536865",
   "chef": "David Shim",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "cote.jpg",
+  "photoAlt": "The sidewalk outside Cote on West 22nd Street, New York, with its outdoor dining shed",
+  "photoCredit": "Jim.henderson",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Cote_(restaurant)_22St_HDR_2022_jeh.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

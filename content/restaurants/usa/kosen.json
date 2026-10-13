@@ -19,5 +19,15 @@
   "placeId": "ChIJ27GzUEPFwogRulJovqXIaH0",
   "michelinId": "1206513",
   "chef": "Andrew Huang",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "kosen.jpg",
+  "photoAlt": "The Kōsen sign and Michelin plaques at the entrance in Tampa",
+  "photoCredit": "Bobak Ha'Eri",
+  "photoLicence": "CC BY 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:2025-1217_Kosen_exterior.jpeg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

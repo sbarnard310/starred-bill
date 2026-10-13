@@ -46,5 +46,15 @@
   "groupsUrl": "https://rongastrobar.nl/groepen/eten-met-8/",
   "children": "Children are welcome, but there is no children's menu.",
   "infoSource": "https://rongastrobar.nl/over/faq/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "ron-gastrobar.jpg",
+  "photoAlt": "The terrace and sign of Ron Gastrobar in Amsterdam",
+  "photoCredit": "Hay Kranen",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Ron_Gastrobar_Amsterdam_(Q22950262)_-_Terras.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

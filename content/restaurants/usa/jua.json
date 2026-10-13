@@ -23,5 +23,15 @@
   "placeId": "ChIJfTgbIE9ZwokRdRjFE2OMZN8",
   "michelinId": "1186485",
   "chef": "Hoyoung Kim",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "jua.jpg",
+  "photoAlt": "The black entrance vestibule of Jua on East 22nd Street, New York",
+  "photoCredit": "Transpoman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Jua_NYC.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

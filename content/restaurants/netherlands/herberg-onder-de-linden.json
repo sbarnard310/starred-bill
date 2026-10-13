@@ -32,5 +32,15 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 79)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Aziatische invloeden"
+  "cuisineNl": "Aziatische invloeden",
+  "photo": "herberg-onder-de-linden.jpg",
+  "photoAlt": "Herberg Onder de Linden, a long brick inn behind trees in Aduard",
+  "photoCredit": "Esther Westerveld from Haarlemmermeer, Nederland",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:WLM_-_westher_-_Herberg_onder_de_Linden_-_Aduard.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

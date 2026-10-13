@@ -26,5 +26,15 @@
   "placeId": "ChIJ40jo_uMU80cRgLzwY3WU3Y8",
   "michelinId": "7066",
   "chef": "Frédéric Michel",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "le-raisin.jpg",
+  "photoAlt": "The white Restaurant Le Raisin building in Pont-de-Vaux, with its name on the walls",
+  "photoCredit": "Chabe01",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Raisin_-_Pont-de-Vaux_(FR01)_-_2023-09-26_-_1.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 528,
+  "photoChecked": "2026-10-13"
 }

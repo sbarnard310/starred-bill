@@ -35,5 +35,15 @@
     "kosher"
   ],
   "chef": "Andoni Luis Aduriz",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "mugaritz.jpg",
+  "photoAlt": "The ivy-covered entrance of Mugaritz near Errenteria, Gipuzkoa",
+  "photoCredit": "Krista",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Mugaritz_entrance.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 666,
+  "photoChecked": "2026-10-13"
 }

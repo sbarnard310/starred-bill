@@ -29,5 +29,15 @@
     "gluten-free"
   ],
   "chef": "Iulian Fistos",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "loiseau-des-ducs.jpg",
+  "photoAlt": "The front of Loiseau des Ducs in Dijon, with its name and red awnings",
+  "photoCredit": "François de Dijon",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Dijon_H%C3%B4tel_de_Talmay_01.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 984,
+  "photoChecked": "2026-10-13"
 }

@@ -29,5 +29,15 @@
     "vegetarian"
   ],
   "chef": "Justin Schmitt",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "chateau-eza.jpg",
+  "photoAlt": "The stone entrance of Château Eza in Èze, with its name over the arch",
+  "photoCredit": "rene boulay",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Alpes-Maritimes_Eze_Hotel_Chateau_Eza_-_panoramio.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 631,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

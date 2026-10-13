@@ -29,5 +29,15 @@
     "vegan"
   ],
   "chef": "David Moore",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "pied-a-terre.jpg",
+  "photoAlt": "The white townhouse of Pied à Terre with its black awning on Charlotte Street, London",
+  "photoCredit": "Ewan Munro",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Pied_%C3%A0_Terre,_Fitzrovia,_W1.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 562,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

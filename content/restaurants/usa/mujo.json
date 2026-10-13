@@ -19,5 +19,15 @@
   "placeId": "ChIJIb9pCKMF9YgRWsQF-tZOGdI",
   "michelinId": "1207749",
   "chef": "J. Trent Harris",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "mujo.jpg",
+  "photoAlt": "The wooden counter seats facing the chefs at Mujō in Atlanta",
+  "photoCredit": "Bobak Ha'Eri",
+  "photoLicence": "CC BY 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:2025-0118_Mujo_01_dining_area.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

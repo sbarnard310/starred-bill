@@ -33,5 +33,15 @@
     "vegan"
   ],
   "chef": "Guillaume Galliot",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "caprice.jpg",
+  "photoAlt": "The dining room and bar of Caprice in Hong Kong",
+  "photoCredit": "Tzahy Lerner",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Caprice_Interior.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 748,
+  "photoChecked": "2026-10-13"
 }

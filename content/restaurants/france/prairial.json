@@ -31,5 +31,15 @@
     "gluten-free"
   ],
   "chef": "Gaëtan Gentil",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "prairial.jpg",
+  "photoAlt": "The shopfront of Prairial on rue Chavanne, Lyon",
+  "photoCredit": "Romainbehar",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Lyon_1er_-_Rue_Chavanne_-_Porte_au_num%C3%A9ro_11_et_restaurant_PRaiRial.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

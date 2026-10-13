@@ -39,5 +39,15 @@
     "gluten-free"
   ],
   "chef": "Yoshihiro Narisawa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "narisawa.jpg",
+  "photoAlt": "The curved glass entrance of the building housing NARISAWA in Minami-Aoyama, Tokyo",
+  "photoCredit": "Pocsywe",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Narisawa_restaurant.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

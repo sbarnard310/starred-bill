@@ -24,5 +24,15 @@
   "dinnerNote": "Seasonal tasting menu, 5 courses",
   "dinnerNoteSv": "Säsongens avsmakningsmeny, 5 rätter",
   "lunchNote": "Lunch menu, 3 courses · Thu–Sat; price not published",
-  "lunchNoteSv": "Lunchmeny, 3 rätter · tors–lör; pris ej publicerat"
+  "lunchNoteSv": "Lunchmeny, 3 rätter · tors–lör; pris ej publicerat",
+  "photo": "ergo.jpg",
+  "photoAlt": "The green awning and door of ergo. on Artillerigatan, Stockholm",
+  "photoCredit": "I99pema",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Ergo,_Stockholm.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

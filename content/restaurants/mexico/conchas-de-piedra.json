@@ -32,5 +32,15 @@
     "gluten-free"
   ],
   "chef": "Drew Deckman",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "conchas-de-piedra.jpg",
+  "photoAlt": "The open-air bar and timber canopy of Conchas de Piedra, Valle de Guadalupe",
+  "photoCredit": "T.Tseng",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Conchas_de_Piedra_(29543250646).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

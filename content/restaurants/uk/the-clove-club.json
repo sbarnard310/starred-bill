@@ -85,5 +85,15 @@
   "byob": "One bottle per two guests, at £75 corkage a bottle plus service.",
   "servicePct": 15,
   "infoSource": "https://www.thecloveclub.com/faq",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "the-clove-club.jpg",
+  "photoAlt": "The blue door of The Clove Club under its name in Shoreditch Town Hall, London",
+  "photoCredit": "Ewan-M",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Clove_Club,_Shoreditch,_EC1.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

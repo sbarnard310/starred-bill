@@ -32,5 +32,15 @@
   "lunchNoteFr": "Même menu le midi · mer.–sam.",
   "lunchSourceType": "site",
   "lunchSource": "https://dejonkman.be/nl/menu",
-  "cuisineFr": "Cuisine créative"
+  "cuisineFr": "Cuisine créative",
+  "photo": "de-jonkman.jpg",
+  "photoAlt": "The entrance courtyard of De Jonkman in Sint-Kruis, Bruges",
+  "photoCredit": "Sommelierjonkman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Dejonkman_190920_00241.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 667,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

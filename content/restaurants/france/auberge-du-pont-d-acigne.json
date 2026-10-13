@@ -31,5 +31,15 @@
     "vegan"
   ],
   "chef": "Sylvain Guillemot",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "auberge-du-pont-d-acigne.jpg",
+  "photoAlt": "The stone building of Auberge du Pont d'Acigné in Noyal-sur-Vilaine",
+  "photoCredit": "chisloup",
+  "photoLicence": "CC BY 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Auberge_du_pont_d%27acign%C3%A9_-_panoramio.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

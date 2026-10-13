@@ -9,6 +9,15 @@ const GOOGLE_MAPS_API_KEY = "AIzaSyA5AnpHOqFXxb6U3hDiXuAyQK2dIbZgLT4";
 // (add ?photos=1 to the address to try them there).
 const PHOTOS_OK = !!GOOGLE_MAPS_API_KEY && !navigator.webdriver && !/bot|crawl|spider|slurp|lighthouse|headless|preview/i.test(navigator.userAgent) &&
   (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname) || /[?&]photos=1\b/.test(location.search));
+// Photos of our own (a restaurant's `photo`: Wikimedia Commons, or a restaurant's press photo used with permission) live in
+// /img/restaurants/ as <id>.jpg and a small <id>-sm.jpg (`photoThumb`, scripts/restaurant_photos.py) and cost nothing to
+// show, so they show at once; each carries its credit (author, licence, link to its source), as its licence asks.
+const ownPhoto = (file) => "/img/restaurants/" + encodeURIComponent(file);
+function ownCredit(r) {
+  const who = r.photoSource ? '<a href="' + esc(r.photoSource) + '" target="_blank" rel="noopener">' + esc(r.photoCredit || "") + "</a>" : esc(r.photoCredit || "");
+  const lic = r.photoLicence ? (r.photoLicenceUrl ? '<a href="' + esc(r.photoLicenceUrl) + '" target="_blank" rel="noopener">' + esc(r.photoLicence) + "</a>" : esc(r.photoLicence)) : "";
+  return t("photo") + ": " + who + (lic ? " · " + lic : "");
+}
 // Map pins run from light gold (one star) to deep bronze (three), with the star count printed inside.
 // fill, ink and edge are the pin, its number and its outline; line and lineInk the outline and number of a hollow pin (no prices yet).
 const MAP_PINS = {

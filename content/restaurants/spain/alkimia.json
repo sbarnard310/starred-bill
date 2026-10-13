@@ -33,5 +33,15 @@
   "chef": "Jordi Vilà",
   "chefSource": "michelin",
   "dinnerNote": "Tasting menu (also à la carte)",
-  "dinnerNoteEs": "Menú degustación (también a la carta)"
+  "dinnerNoteEs": "Menú degustación (también a la carta)",
+  "photo": "alkimia.jpg",
+  "photoAlt": "The brass Alkimia Jordi Vilà nameplate on the glass front in Barcelona",
+  "photoCredit": "Pere prlpz",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Alkimia.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

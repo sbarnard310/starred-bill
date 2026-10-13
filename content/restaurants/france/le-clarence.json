@@ -33,5 +33,15 @@
     "kosher"
   ],
   "chef": "Andrea Capasso",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "le-clarence.jpg",
+  "photoAlt": "The front of Le Clarence at 31 avenue Franklin-D.-Roosevelt, Paris, with flags and green awnings",
+  "photoCredit": "CVB",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Le_Clarence,_31_avenue_Franklin-D.-Roosevelt,_Paris_2021.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 906,
+  "photoChecked": "2026-10-13"
 }

@@ -28,5 +28,15 @@
     "kosher"
   ],
   "chef": "Lucho Martinez",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "em.jpg",
+  "photoAlt": "The front of Em on Calle Tonalá, Roma Norte, Mexico City",
+  "photoCredit": "Tbhotch",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Em_(2026)_4.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

@@ -27,5 +27,15 @@
   "placeId": "ChIJvSQIgqFZwokRFYQbJdzceSs",
   "michelinId": "69890",
   "chef": "Michael Anthony",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "gramercy-tavern.jpg",
+  "photoAlt": "Diners in the front tavern room of Gramercy Tavern, New York, around 2007",
+  "photoCredit": "Doug Letterman",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Gramercy_Tavern.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

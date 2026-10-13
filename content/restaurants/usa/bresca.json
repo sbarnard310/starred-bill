@@ -25,5 +25,15 @@
     "vegetarian"
   ],
   "chef": "Ryan Ratino",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "bresca.jpg",
+  "photoAlt": "The blue front of Bresca with its name over the door on 14th Street NW, Washington DC",
+  "photoCredit": "Dclemens1971",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:J%C3%B4nt_and_Bresca_02.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

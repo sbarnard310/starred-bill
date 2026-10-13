@@ -31,5 +31,15 @@
     "kosher"
   ],
   "chef": "Paul Leonard",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "forest-side.jpg",
+  "photoAlt": "Forest Side, the Victorian country house hotel near Grasmere",
+  "photoCredit": "Takashi Hososhima from Tokyo, Japan",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Day_3-_Forest_Side_Hotel_(8404047354).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 666,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

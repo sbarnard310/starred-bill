@@ -789,6 +789,25 @@ content:
           - { name: score, label: Score out of 100 (La Liste only), type: number }
           - { name: url, label: Link to the list's page, type: string }
       - { name: rankingsChecked, label: Critics' lists checked on (2026-10-13), type: string }
+      - name: photo
+        label: Photo of our own (file name in src/img/restaurants, e.g. le-bernardin.jpg)
+        description: A photo we may keep and show for free, made by scripts/restaurant_photos.py (Wikimedia Commons or the restaurant's press photos), with a small copy named …-sm.jpg. Leave blank to fall back to a Google photo, loaded only when a visitor asks. Never a stock photo, or one copied from the restaurant's website or Instagram without permission.
+        type: string
+      - { name: photoAlt, label: "Photo: what it shows (alt text, e.g. The entrance of Le Bernardin on West 51st Street)", type: string }
+      - { name: photoCredit, label: "Photo: credit (its author, or Courtesy of …)", type: string }
+      - { name: photoLicence, label: "Photo: licence (e.g. CC BY-SA 4.0; blank for press photos)", type: string }
+      - { name: photoLicenceUrl, label: "Photo: link to the licence", type: string }
+      - { name: photoSource, label: "Photo: link to its Wikimedia Commons page or the restaurant's press page", type: string }
+      - name: photoSourceType
+        label: "Photo: where it's from"
+        type: select
+        options:
+          values:
+            - { value: commons, label: "Wikimedia Commons (free licence)" }
+            - { value: press, label: "The restaurant's press page (allows editorial use)" }
+            - { value: permission, label: "The restaurant said yes by email" }
+      - { name: photoPermission, label: "Photo: permission (who said yes, how and when)", type: text }
+      - { name: photoChecked, label: "Photo: added or checked on (2026-10-13)", type: string }
       - { name: dressCode, label: Dress code, type: text }
       - { name: hotel, label: Hotel it's in (mid-sentence, e.g. the Rome Cavalieri), type: string }
       - name: alsoTry

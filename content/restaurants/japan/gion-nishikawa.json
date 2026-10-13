@@ -27,5 +27,15 @@
   "lunchSourceType": "site",
   "lunchSource": "https://gion-nishikawa.co.jp",
   "lunchNote": "Lunch kaiseki; including tax and service",
-  "lunchNoteJa": "昼懐石・税サ込"
+  "lunchNoteJa": "昼懐石・税サ込",
+  "photo": "gion-nishikawa.jpg",
+  "photoAlt": "The wooden entrance and name board of Gion Nishikawa, opening onto a stone path, Kyoto",
+  "photoCredit": "Run Mizumushi-Kun",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Nishikawa_entrance_(21367093153).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

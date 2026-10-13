@@ -30,5 +30,15 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
   "lunchSourceType": "site",
   "lunchSource": "https://www.demoerbeiwarmond.nl/menu/",
-  "cuisineNl": "Modern Frans"
+  "cuisineNl": "Modern Frans",
+  "photo": "de-moerbei.jpg",
+  "photoAlt": "The brick farmhouse of De Moerbei at Dorpsstraat 5, Warmond",
+  "photoCredit": "Goodness Shamrock",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Dorpsstraat_5,_Warmond.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 740,
+  "photoChecked": "2026-10-13"
 }

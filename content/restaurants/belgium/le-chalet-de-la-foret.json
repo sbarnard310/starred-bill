@@ -35,5 +35,15 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès 195 €)",
   "cuisineFr": "Cuisine créative",
   "lunchNoteNl": "Lunchmenu",
-  "lunchNoteFr": "Menu déjeuner"
+  "lunchNoteFr": "Menu déjeuner",
+  "photo": "le-chalet-de-la-foret.jpg",
+  "photoAlt": "Le Chalet de la Forêt in Uccle, with its name on the white building and its terrace",
+  "photoCredit": "GdML",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Chalet_de_la_For%C3%AAt.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

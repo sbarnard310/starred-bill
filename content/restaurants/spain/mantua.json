@@ -27,5 +27,15 @@
     "gluten-free"
   ],
   "chef": "Israel Ramos",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "mantua.jpg",
+  "photoAlt": "The building of Mantúa in Jerez de la Frontera, with its name by the door",
+  "photoCredit": "El Pantera",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Mant%C3%BAa_-_IMG_20231021_103314.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

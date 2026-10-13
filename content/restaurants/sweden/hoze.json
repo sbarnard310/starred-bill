@@ -21,5 +21,15 @@
   "lunchNote": "Dinner only",
   "lunchNoteSv": "Endast middag",
   "chef": "José Cerdá",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "hoze.jpg",
+  "photoAlt": "The brick front and door of HOZE on Stigbergsliden, Gothenburg",
+  "photoCredit": "Mattias Mattsson",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Hoze,_G%C3%B6teborg.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

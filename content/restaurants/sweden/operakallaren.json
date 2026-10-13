@@ -21,5 +21,15 @@
   "lunchNote": "Dinner only",
   "lunchNoteSv": "Endast middag",
   "chef": "Viktor Westerlind",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "operakallaren.jpg",
+  "photoAlt": "The glazed restaurant wing of Operakällaren at the Royal Swedish Opera, Stockholm",
+  "photoCredit": "I99pema",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Operak%C3%A4llaren_2012.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 664,
+  "photoChecked": "2026-10-13"
 }

@@ -40,5 +40,15 @@
     "via": "website",
     "source": "https://diverxo.com/es/reservar",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "diverxo.jpg",
+  "photoAlt": "The revolving-door entrance of DiverXO under its lit sign, Madrid",
+  "photoCredit": "City Foodsters",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:DiverXO_AV4A3445-Edit_(27539833998).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

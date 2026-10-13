@@ -28,5 +28,15 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteHr": "Samo večera",
-  "areaHr": "Šibenik"
+  "areaHr": "Šibenik",
+  "photo": "pelegrini.jpg",
+  "photoAlt": "The stone building of Pelegrini on Jurja Dalmatinca in Šibenik's old town",
+  "photoCredit": "JiriMatejicek",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Sibenik_Trg_Republike_Hrvatske_b.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

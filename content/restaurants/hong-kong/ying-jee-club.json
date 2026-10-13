@@ -35,5 +35,15 @@
     "vegan"
   ],
   "chef": "Cheung Kin Ming",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "ying-jee-club.jpg",
+  "photoAlt": "The entrance of Ying Jee Club with its name and Michelin plaques, Central, Hong Kong",
+  "photoCredit": "ZEWIA dumlwp TELEAM",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:HK_%E4%B8%AD%E7%92%B0_Central_Connaught_Road_%E7%9B%88%E7%BD%AE%E5%A4%A7%E5%BB%88_Nexxus_Building_%E7%87%9F%E8%87%B4%E6%9C%83%E9%A4%A8_Ying_Jee_Club_January_2025_R12S.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

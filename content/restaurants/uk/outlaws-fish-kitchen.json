@@ -31,5 +31,15 @@
     "via": "website",
     "source": "https://outlaws.co.uk/restaurants/fish-kitchen/",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "outlaws-fish-kitchen.jpg",
+  "photoAlt": "A white slate-hung cottage in Port Isaac, Cornwall, the building of Outlaw's Fish Kitchen",
+  "photoCredit": "Lobster1",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Port_Isaac_-_panoramio_(14).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

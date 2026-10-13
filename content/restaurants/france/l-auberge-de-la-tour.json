@@ -17,5 +17,15 @@
   "website": "https://www.aubergedela-tour.com/",
   "lat": 44.7815619,
   "lng": 2.351958,
-  "michelinId": "326032"
+  "michelinId": "326032",
+  "photo": "l-auberge-de-la-tour.jpg",
+  "photoAlt": "The front of L'Auberge de la Tour with its name sign, Marcolès",
+  "photoCredit": "Coles117",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Auberge_de_la_tour.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 777,
+  "photoChecked": "2026-10-13"
 }

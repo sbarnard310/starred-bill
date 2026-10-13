@@ -20,23 +20,25 @@ window.addEventListener("sb:wishlist", renderWish);
 renderWish();
 
 // ---------- Photos ----------
-// The first Google Maps photo of the restaurant sits beside the receipt. Google has up to 10; "More photos" shows up to
-// GALLERY_MAX more as thumbnails, only once tapped (each photo shown is a paid request to Google, and Google's terms
-// don't allow keeping copies, so they load live). Any photo opens full size, with arrows to the others and its credit.
+// A photo of our own (Wikimedia Commons or the restaurant's press photos; own_photo_html() in build.py) is written into
+// the page and costs nothing to show. Without one, the first Google Maps photo sits beside the receipt (PHOTOS_OK). Either
+// way "More photos" shows up to GALLERY_MAX of Google's as thumbnails, only once tapped (each Google photo shown is a paid
+// request, and Google's terms don't allow keeping copies, so they load live). Any photo opens full size, with arrows to
+// the others and its credit.
 const GALLERY_MAX = 6;
-let photos = [];
+let shots = [];  // what the full-size viewer steps through: { big, caption }
 const credit = (p) => {
   const a = (p.authorAttributions || [])[0];
   return (a ? (a.uri ? '<a href="' + esc(a.uri) + '" target="_blank" rel="noopener">' + esc(a.displayName) + "</a>" : esc(a.displayName)) + " · " : "") + "Google Maps";
 };
+const googleShot = (p) => ({ big: p.getURI({ maxWidth: 1600, maxHeight: 1200 }), thumb: p.getURI({ maxWidth: 400, maxHeight: 400 }), caption: credit(p) });
 let shown = 0;
 function openPhoto(i) {
-  const last = Math.min(photos.length, GALLERY_MAX + 1) - 1;
+  const last = shots.length - 1;
   shown = (i + last + 1) % (last + 1);
-  const p = photos[shown];
-  $("photoImg").src = p.getURI({ maxWidth: 1600, maxHeight: 1200 });
+  $("photoImg").src = shots[shown].big;
   $("photoImg").alt = "Photo " + (shown + 1) + " of " + R.name;
-  $("photoCaption").innerHTML = "<strong>" + esc(R.name) + "</strong> · Photo " + (shown + 1) + " of " + (last + 1) + " · " + credit(p);
+  $("photoCaption").innerHTML = "<strong>" + esc(R.name) + "</strong> · Photo " + (shown + 1) + " of " + (last + 1) + " · " + shots[shown].caption;
   $("photoPrev").hidden = $("photoNext").hidden = last < 1;
   if (!$("photoBox").open) $("photoBox").showModal();
 }
@@ -51,35 +53,65 @@ $("photoBox").addEventListener("keydown", (e) => {
 });
 $("photoBox").addEventListener("close", () => { $("photoImg").removeAttribute("src"); });
 
-function showGallery(fig, btn) {
+function showGallery(btn, extra, from) {
   const strip = document.createElement("div");
   strip.className = "rp-gallery";
-  photos.slice(1, GALLERY_MAX + 1).forEach((p, k) => {
+  extra.forEach((s, k) => {
     const b = document.createElement("button");
     b.type = "button";
-    b.setAttribute("aria-label", "Open photo " + (k + 2) + " of " + R.name);
+    b.setAttribute("aria-label", "Open photo " + (from + k + 1) + " of " + R.name);
     const img = new Image();
     img.alt = "";
     img.decoding = "async";
-    img.src = p.getURI({ maxWidth: 400, maxHeight: 400 });
+    img.src = s.thumb;
     img.onload = () => b.classList.add("loaded");
     b.appendChild(img);
-    b.addEventListener("click", () => openPhoto(k + 1));
+    b.addEventListener("click", () => openPhoto(from + k));
     strip.appendChild(b);
   });
   btn.replaceWith(strip);
   track("photos", { restaurant: R.id });
 }
+async function googlePhotos() {
+  await loadGoogle();
+  const { Place } = await google.maps.importLibrary("places");
+  const place = new Place({ id: R.placeId });
+  await place.fetchFields({ fields: ["photos"] });
+  return place.photos || [];
+}
+function moreButton(n, onTap) {
+  const more = document.createElement("button");
+  more.type = "button";
+  more.className = "rp-more-photos";
+  more.textContent = n ? "More photos (" + n + ")" : "More photos";
+  more.addEventListener("click", () => onTap(more));
+  return more;
+}
 
 async function showPhoto() {
+  const own = $("rpOwnPhoto");
+  if (own) {
+    shots = [{ big: own.dataset.full, caption: R.photoCreditHtml || "" }];
+    own.querySelector(".rp-photo-open").addEventListener("click", () => openPhoto(0));
+    // Google's photos are fetched only when "More photos" is tapped.
+    if (PHOTOS_OK && R.placeId) {
+      own.querySelector("figcaption").appendChild(moreButton(0, async (btn) => {
+        btn.disabled = true;
+        try {
+          const extra = (await googlePhotos()).slice(0, GALLERY_MAX).map(googleShot);
+          if (!extra.length) { btn.remove(); return; }
+          shots = shots.slice(0, 1).concat(extra);
+          showGallery(btn, extra, 1);
+        } catch (e) { btn.remove(); }
+      }));
+    }
+    return;
+  }
   if (!PHOTOS_OK || !R.placeId) return;
   try {
-    await loadGoogle();
-    const { Place } = await google.maps.importLibrary("places");
-    const place = new Place({ id: R.placeId });
-    await place.fetchFields({ fields: ["photos"] });
-    photos = place.photos || [];
+    const photos = await googlePhotos();
     if (!photos.length) return;
+    shots = photos.slice(0, GALLERY_MAX + 1).map(googleShot);
     const fig = document.createElement("figure");
     fig.className = "rp-photo";
     const open = document.createElement("button");
@@ -95,15 +127,8 @@ async function showPhoto() {
     open.addEventListener("click", () => openPhoto(0));
     fig.appendChild(open);
     const cap = document.createElement("figcaption");
-    cap.innerHTML = "<span>Photo: " + credit(photos[0]) + "</span>";
-    if (photos.length > 1) {
-      const more = document.createElement("button");
-      more.type = "button";
-      more.className = "rp-more-photos";
-      more.textContent = "More photos (" + Math.min(photos.length - 1, GALLERY_MAX) + ")";
-      more.addEventListener("click", () => showGallery(fig, more));
-      cap.appendChild(more);
-    }
+    cap.innerHTML = "<span>Photo: " + shots[0].caption + "</span>";
+    if (shots.length > 1) cap.appendChild(moreButton(shots.length - 1, (btn) => showGallery(btn, shots.slice(1), 1)));
     fig.appendChild(cap);
     document.querySelector(".rp-side").prepend(fig);
   } catch (e) { /* no photo: the receipt stands alone */ }

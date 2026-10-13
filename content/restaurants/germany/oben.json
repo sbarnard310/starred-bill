@@ -27,5 +27,15 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Kreativ"
+  "cuisineDe": "Kreativ",
+  "photo": "oben.jpg",
+  "photoAlt": "The house of Oben at Kohlhof, Heidelberg, in winter snow",
+  "photoCredit": "HofbauerMichael",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant-Kohlhof-oben-1.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

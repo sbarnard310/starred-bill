@@ -33,5 +33,15 @@
   "lunchWine": 75,
   "lunchSourceType": "site",
   "lunchSource": "https://www.joelia.eu/menu/",
-  "cuisineNl": "Modern Frans"
+  "cuisineNl": "Modern Frans",
+  "photo": "joelia.jpg",
+  "photoAlt": "The glass entrance of Restaurant Joelia with its name above the door, Coolsingel, Rotterdam",
+  "photoCredit": "Sandra Fauconnier",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Joelia_in_Rotterdam.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

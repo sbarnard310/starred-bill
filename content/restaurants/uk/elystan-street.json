@@ -66,5 +66,15 @@
   "groupsUrl": "https://www.elystanstreet.com/private-dining/",
   "servicePct": 15,
   "infoSource": "https://www.elystanstreet.com/contact/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "elystan-street.jpg",
+  "photoAlt": "The corner front of Elystan Street restaurant in Chelsea, London, with its name above the windows",
+  "photoCredit": "Chris Pople",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Elystan_Street_exterior_building.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

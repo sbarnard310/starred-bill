@@ -42,5 +42,15 @@
     "via": "website",
     "source": "https://www.thejaneantwerp.com/reservations/",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "the-jane.jpg",
+  "photoAlt": "The former military hospital chapel in Antwerp that houses The Jane",
+  "photoCredit": "Paul Hermans",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Kapel_Voormalig_Militair_Hospitaal_en_Arsenaal_Antwerpen_1-05-2019_14-16-00.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 563,
+  "photoChecked": "2026-10-13"
 }

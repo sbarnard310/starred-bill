@@ -25,5 +25,15 @@
   ],
   "chef": "James Knappett",
   "chefSource": "michelin",
-  "dinner": 195
+  "dinner": 195,
+  "photo": "kitchen-table.jpg",
+  "photoAlt": "The dark shopfront and wooden door of Kitchen Table on Charlotte Street, Fitzrovia, London",
+  "photoCredit": "Ealdwode",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Kitchen_Table.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

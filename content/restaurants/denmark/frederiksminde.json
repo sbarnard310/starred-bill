@@ -29,5 +29,15 @@
   ],
   "chef": "Jonas Mikkelsen",
   "chefSource": "michelin",
-  "dinnerNoteDa": "Essens-menu (andre menuer fra 700 kr.)"
+  "dinnerNoteDa": "Essens-menu (andre menuer fra 700 kr.)",
+  "photo": "frederiksminde.jpg",
+  "photoAlt": "Hotel Frederiksminde in Præstø, a white house with towers and its name on the front",
+  "photoCredit": "Ramblersen",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Hotel_Frederiksminde_(2013).jpeg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 683,
+  "photoChecked": "2026-10-13"
 }

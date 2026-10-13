@@ -29,5 +29,15 @@
   "placeId": "ChIJ8T36HxCLGGARvpARPDyaKLA",
   "michelinId": "1193907",
   "chef": "Shuzo Kishida",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "quintessence.jpg",
+  "photoAlt": "The Quintessence name sign on a wooden wall outside the restaurant, Tokyo",
+  "photoCredit": "City Foodsters",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Outside_Quintessence_(15907987778).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

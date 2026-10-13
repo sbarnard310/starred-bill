@@ -31,5 +31,15 @@
     "gluten-free"
   ],
   "chef": "Mike North",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "nut-tree-inn.jpg",
+  "photoAlt": "The thatched Nut Tree Inn with its name on the wall, Murcott, Oxfordshire",
+  "photoCredit": "David Hawgood",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_Nut_Tree,_Murcott_-_geograph.org.uk_-_180820.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 640,
+  "photoHeight": 480,
+  "photoChecked": "2026-10-13"
 }

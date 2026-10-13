@@ -26,5 +26,14 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Creatief"
+  "cuisineNl": "Creatief",
+  "photo": "karel-5.jpg",
+  "photoAlt": "The lit facade of Grand Hotel Karel V with its name, Utrecht",
+  "photoCredit": "Pehuyghe at Dutch Wikipedia",
+  "photoLicence": "Public domain",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Duitse_huis.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

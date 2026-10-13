@@ -32,5 +32,15 @@
     "vegan"
   ],
   "chef": "Enrique Olvera",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "pujol.jpg",
+  "photoAlt": "The garden pavilion at Pujol in Polanco, Mexico City",
+  "photoCredit": "Nan Palmero from San Antonio, TX, USA",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Pujol_Restaurant_(40553682022).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

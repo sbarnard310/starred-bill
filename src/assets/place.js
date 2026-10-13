@@ -396,8 +396,13 @@ phoneWidth.addEventListener("change", () => { closeSheet(); closeDrops(); });
 // ---------- Table ----------
 function nameCell(r) {
   const initial = (nameOf(r).replace(/^(The|Restaurant)\s+/i, "")[0] || "?").toUpperCase();
-  // With photos on (PHOTOS_OK), the lettered square is a button: its photo loads only when tapped, or when its row is opened on phones.
-  const thumb = PHOTOS_OK && r.placeId && !r.status
+  // A restaurant with a photo of our own (src/img/restaurants/, `photo` in its file) shows it straight away: it costs nothing.
+  // Otherwise, with photos on (PHOTOS_OK), the lettered square is a button: its Google photo loads only when tapped, or
+  // when its row is opened on phones.
+  const thumb = r.photo && !r.status
+    ? '<span class="thumb has-photo" role="button" tabindex="0" aria-label="' + esc(t("photoView", { name: nameOf(r) })) + '" data-own="' + esc(r.photo) + '" data-rid="' + esc(r.id) + '" data-name="' + esc(nameOf(r)) + '">' + esc(initial) +
+      '<img src="' + esc(ownPhoto(r.photoThumb || r.photo)) + '" alt="" loading="lazy" decoding="async"></span>'
+    : PHOTOS_OK && r.placeId && !r.status
     ? '<span class="thumb" role="button" tabindex="0" aria-label="' + esc(t("photoView", { name: nameOf(r) })) + '" data-pid="' + esc(r.placeId) + '" data-name="' + esc(nameOf(r)) + '">' + esc(initial) + "</span>"
     : '<span class="thumb" aria-hidden="true">' + esc(initial) + "</span>";
   const alt = altNameOf(r);
@@ -411,7 +416,7 @@ function nameCell(r) {
     // A restaurant with its own page (build_restaurant_pages() in build.py) links to it.
     (r.page && !r.status ? '<a class="page-link" href="' + esc(r.page) + '">' + esc(t("rpLink")) + " " + fwdArrow() + "</a>" : "") +
     (r.status ? "" : (r.diets || []).some((d) => BADGES.some(([b]) => b === d)) ? '<span class="diet-badges">' + dietBadges(r) + "</span>" : "") +
-    '<span class="credit"></span></span></span>';
+    '<span class="credit">' + (r.photo && !r.status ? ownCredit(r) : "") + "</span></span></span>";
 }
 // Phones: each restaurant is a two-line row (name and area · cuisine; stars and price) that opens to show the rest.
 // On computers this cell is hidden and the full table shows instead.
@@ -890,18 +895,27 @@ async function openPhoto(el) {
   $("photoClose").setAttribute("aria-label", t("photoClose"));
   $("photoBox").showModal();
 }
+// Our own photos open straight from the page, with their credit.
+function openOwnPhoto(el) {
+  const r = RESTAURANTS.find((x) => x.id === el.dataset.rid);
+  $("photoImg").src = ownPhoto(el.dataset.own);
+  $("photoImg").alt = el.dataset.name;
+  $("photoCaption").innerHTML = "<strong>" + esc(el.dataset.name) + "</strong>" + (r ? " · " + ownCredit(r) : "");
+  $("photoClose").setAttribute("aria-label", t("photoClose"));
+  $("photoBox").showModal();
+}
 // A photo not loaded yet loads at the larger size, so opening it costs one request, not two.
 async function showThumb(el) {
   if (!el.dataset.zoom) await applyPhoto(el, true);
   if (el.dataset.zoom) openPhoto(el);
 }
 document.addEventListener("click", (e) => {
-  const el = e.target.closest(".thumb[data-pid]");
-  if (el && el.offsetParent) showThumb(el);
+  const el = e.target.closest(".thumb[data-pid], .thumb[data-own]");
+  if (el && el.offsetParent) el.dataset.own ? openOwnPhoto(el) : showThumb(el);
 });
 document.addEventListener("keydown", (e) => {
-  const el = e.target.closest && e.target.closest(".thumb[data-pid]");
-  if (el && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); showThumb(el); }
+  const el = e.target.closest && e.target.closest(".thumb[data-pid], .thumb[data-own]");
+  if (el && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); el.dataset.own ? openOwnPhoto(el) : showThumb(el); }
 });
 $("photoBox").addEventListener("click", (e) => { if (e.target === $("photoBox") || e.target.closest("#photoClose")) $("photoBox").close(); });
 $("photoBox").addEventListener("close", () => { $("photoImg").removeAttribute("src"); });

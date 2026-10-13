@@ -28,5 +28,15 @@
   "lat": 22.2777963,
   "lng": 114.1755582,
   "placeId": "ChIJe8ujoVsABDQRBTU75bVWQ5U",
-  "michelinId": "446850"
+  "michelinId": "446850",
+  "photo": "kams-roast-goose.jpg",
+  "photoAlt": "A queue outside the shopfront of Kam's Roast Goose in Wan Chai, Hong Kong",
+  "photoCredit": "LN9267",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Wan_Chai_Kam%27s_Roast_Goose_24-08-2023.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

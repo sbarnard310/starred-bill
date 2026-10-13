@@ -25,5 +25,15 @@
     "gluten-free"
   ],
   "chef": "Brian So",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "spring.jpg",
+  "photoAlt": "The brick building and patio of Spring in Marietta, Georgia, at dusk",
+  "photoCredit": "John Phelan",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Spring_Restaurant,_Marietta_GA.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

@@ -25,5 +25,15 @@
   "lunchNoteDe": "Mittags geöffnet · Samstag",
   "cuisineDe": "Kreativ",
   "chef": "Jürgen Vigné",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "pfefferschiff.jpg",
+  "photoAlt": "The former sexton's house in Söllheim near Salzburg, home of Pfefferschiff",
+  "photoCredit": "Peter g at szg ( talk )",
+  "photoLicence": "CC BY-SA 3.0 at",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Pfefferschiff_-_Messnerhaus_S%C3%B6llheim.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

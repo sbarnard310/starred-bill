@@ -26,5 +26,15 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Creatief"
+  "cuisineNl": "Creatief",
+  "photo": "ml.jpg",
+  "photoAlt": "The old brick building on Klokhuisplein, Haarlem, home of ML, with a terrace in front",
+  "photoCredit": "Rudolphous ( talk )",
+  "photoLicence": "CC BY-SA 3.0 nl",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Haarlem_-_Klokhuisplein_5-7.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 666,
+  "photoChecked": "2026-10-13"
 }

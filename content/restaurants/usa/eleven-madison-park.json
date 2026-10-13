@@ -41,5 +41,15 @@
     "via": "Resy",
     "source": "https://elevenmadisonpark.com/faq",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "eleven-madison-park.jpg",
+  "photoAlt": "The Eleven Madison Park sign in the windows of its Art Deco building, New York",
+  "photoCredit": "City Foodsters",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Eleven_Madison_Park_Sign_(9287287474).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 631,
+  "photoChecked": "2026-10-13"
 }

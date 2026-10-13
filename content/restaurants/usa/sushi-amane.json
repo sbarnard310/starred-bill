@@ -16,5 +16,15 @@
   "statusNote": "Not starred in the November 2025 guide",
   "statusNoteZh": "未列入 2025 年 11 月指南的星級名單",
   "lat": 40.751646,
-  "lng": -73.971762
+  "lng": -73.971762,
+  "photo": "sushi-amane.jpg",
+  "photoAlt": "The street front at 245 East 44th Street, Manhattan, where Sushi Amane is",
+  "photoCredit": "Transpoman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Sushi_Amane_NYC.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

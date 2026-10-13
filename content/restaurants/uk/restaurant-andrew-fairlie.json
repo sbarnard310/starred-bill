@@ -28,5 +28,15 @@
     "halal"
   ],
   "chef": "Stephen McLaughlin",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "restaurant-andrew-fairlie.jpg",
+  "photoAlt": "The dark-panelled dining room of Restaurant Andrew Fairlie at Gleneagles, with laid tables",
+  "photoCredit": "Robert Young from London, UK",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Andrew_Fairlie,_Gleneagles_(2967539952).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 669,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

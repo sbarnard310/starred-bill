@@ -29,5 +29,15 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteNl": "Open voor lunch · wo–zo",
-  "cuisineNl": "Eigentijds Frans"
+  "cuisineNl": "Eigentijds Frans",
+  "photo": "restaurant-chateau-neercanne.jpg",
+  "photoAlt": "The dining room of Château Neercanne in Maastricht",
+  "photoCredit": "Kleon3",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:2022_Maastricht,_Ch%C3%A2teau_Neercanne_(05a)_(cropped).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 796,
+  "photoChecked": "2026-10-13"
 }

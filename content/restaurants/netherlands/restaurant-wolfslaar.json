@@ -30,5 +30,15 @@
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu",
   "cuisineNl": "Modern Frans",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "photo": "restaurant-wolfslaar.jpg",
+  "photoAlt": "The white coach house of Huis Wolfslaar in Breda, home of Restaurant Wolfslaar",
+  "photoCredit": "Peter van der Wielen",
+  "photoLicence": "CC BY-SA 3.0 nl",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Wolfslaar-Breda_(12).JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 665,
+  "photoChecked": "2026-10-13"
 }

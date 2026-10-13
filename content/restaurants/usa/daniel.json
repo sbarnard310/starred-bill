@@ -33,5 +33,15 @@
     "kosher"
   ],
   "chef": "Eddy Leroux",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "daniel.jpg",
+  "photoAlt": "Daniel's canopy with its name on East 65th Street, New York",
+  "photoCredit": "Deans Charbal",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Chez_Daniel%27s_canopy,_60_E_65th_St_between_Madison_and_Park,_Lenox_Hill,_Manhattan,_NYC.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

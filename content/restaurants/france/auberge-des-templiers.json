@@ -47,5 +47,15 @@
   "bookingUrl": "https://bookings.zenchef.com/results?rid=358054&pid=1001",
   "bookingPhone": "+33 2 38 31 80 01",
   "infoSource": "https://www.lestempliers.com/fr/restaurant.html",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "auberge-des-templiers.jpg",
+  "photoAlt": "A laid table at Auberge des Templiers in Boismorand, looking through an arched window to the garden",
+  "photoCredit": "Memodp",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:RestaurantOK6_(bis).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 665,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

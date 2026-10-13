@@ -35,5 +35,15 @@
   "lunchNoteDe": "Mittags geöffnet · Do–Mo",
   "lunchNoteFr": "Ouvert le midi · jeu.–lun.",
   "lunchNoteIt": "Aperto a pranzo · gio–lun",
-  "cuisineIt": "Innovativa"
+  "cuisineIt": "Innovativa",
+  "photo": "chesa-stuva-colani.jpg",
+  "photoAlt": "The painted facade of Hotel Chesa Stüva Colani in Madulain",
+  "photoCredit": "Karl432",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:House_in_Madulain_decorated_with_esoteric_symbols.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 669,
+  "photoChecked": "2026-10-13"
 }

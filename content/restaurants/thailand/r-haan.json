@@ -27,5 +27,15 @@
     "gluten-free"
   ],
   "chef": "Chumpol Jangprai",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "r-haan.jpg",
+  "photoAlt": "The entrance and R-Haan signs in front of the restaurant in Bangkok",
+  "photoCredit": "Vano111ru",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:R-Haan.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 606,
+  "photoChecked": "2026-10-13"
 }

@@ -36,5 +36,15 @@
     "gluten-free"
   ],
   "chef": "Juan Mari Arzak and Elena Arzak",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "arzak.jpg",
+  "photoAlt": "The Arzak name sign at the entrance of the restaurant in San Sebastián",
+  "photoCredit": "Josephine E T",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Arzak_name.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 677,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

@@ -29,5 +29,15 @@
     "vegan"
   ],
   "chef": "Kenneth Culhane",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "dysart-petersham.jpg",
+  "photoAlt": "The Arts and Crafts building of The Dysart Petersham on Petersham Road, Richmond",
+  "photoCredit": "Ewan Munro from London, UK",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Dysart_Arms,_Petersham,_TW10_(4102955148).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

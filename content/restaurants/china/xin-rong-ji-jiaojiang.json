@@ -21,5 +21,15 @@
   "lunchNoteZhs": "供应午餐",
   "cuisineZhs": "台州菜",
   "nameZhs": "新荣记（椒江）",
-  "areaZhs": "台州"
+  "areaZhs": "台州",
+  "photo": "xin-rong-ji-jiaojiang.jpg",
+  "photoAlt": "The dark facade of Xin Rong Ji in Jiaojiang, Taizhou, with its name and stone lions",
+  "photoCredit": "MNXANL",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:202308_Xin_Rong_Ji_(Shifu),_Jiaojiang.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

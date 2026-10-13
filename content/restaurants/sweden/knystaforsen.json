@@ -26,5 +26,15 @@
   "dinnerNoteSv": "Avsmakningsmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteSv": "Endast middag"
+  "lunchNoteSv": "Endast middag",
+  "photo": "knystaforsen.jpg",
+  "photoAlt": "The red wooden building of Knystaforsen in Rydöbruk, among trees",
+  "photoCredit": "Mattias Blomgren",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurang_Knystaforsen_i_Ryd%C3%B6bruk.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 668,
+  "photoChecked": "2026-10-13"
 }

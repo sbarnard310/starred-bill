@@ -33,5 +33,15 @@
   "cuisineNl": "Moderne keuken",
   "lunchNoteNl": "Lunchmenu",
   "chef": "Ollie Schuiling",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "restaurant-kasteel-heemstede.jpg",
+  "photoAlt": "Kasteel Heemstede in Houten, its brick towers rising behind a garden wall",
+  "photoCredit": "Michielverbeek",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:2007-06-02_14.55_Houten,_kasteel_Heemstede.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 753,
+  "photoChecked": "2026-10-13"
 }

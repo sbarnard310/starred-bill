@@ -28,5 +28,15 @@
   "placeId": "ChIJa0WEW1qMGGARPztXG-uvYjI",
   "michelinId": "1193898",
   "chef": "Hideki Ishikawa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "kagurazaka-ishikawa.jpg",
+  "photoAlt": "The wooden counter of Kagurazaka Ishikawa, Tokyo, laid for dinner",
+  "photoCredit": "City Foodsters",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Dinner_at_the_Counter_(12008197506).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

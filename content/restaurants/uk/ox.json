@@ -30,5 +30,15 @@
     "gluten-free"
   ],
   "chef": "Stephen Toman",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "ox.jpg",
+  "photoAlt": "The glass shopfront of OX in Belfast",
+  "photoCredit": "Simon Cobb",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Ox_(1).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 667,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

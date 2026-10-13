@@ -63,5 +63,15 @@
   "groupsUrl": "https://gidleigh.co.uk/dine/private-dining/",
   "children": "A children's menu is offered.",
   "infoSource": "https://www.gidleigh.co.uk/dining-drinking/restaurant",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "gidleigh-park.jpg",
+  "photoAlt": "The timbered front of Gidleigh Park above its lawns near Chagford, Devon",
+  "photoCredit": "Chris Allen",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Gidleigh_Park_Hotel_-_geograph.org.uk_-_1260678.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 640,
+  "photoHeight": 480,
+  "photoChecked": "2026-10-13"
 }

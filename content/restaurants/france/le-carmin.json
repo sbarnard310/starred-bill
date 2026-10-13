@@ -26,5 +26,15 @@
   "placeId": "ChIJa_N3R-308kcR8uFtzrUn1eY",
   "michelinId": "450900",
   "chef": "Christophe Quéant",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "le-carmin.jpg",
+  "photoAlt": "The stone front of Le Carmin with its restaurant sign, Beaune",
+  "photoCredit": "© Pierre André",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Beaune_Et%C3%A92016_le_Carmin.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 665,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

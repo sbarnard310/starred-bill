@@ -25,5 +25,15 @@
     "vegetarian"
   ],
   "chef": "Michael Carlson",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "schwa.jpg",
+  "photoAlt": "The black awning with the schwa name over the restaurant's door in Wicker Park, Chicago",
+  "photoCredit": "Mx. Granger",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Schwa_restaurant.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

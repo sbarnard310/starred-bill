@@ -25,5 +25,15 @@
   "dinnerNoteDe": "Degustationsmenü",
   "lunchNote": "Open for lunch · Wed–Sat",
   "lunchNoteDe": "Mittags geöffnet · Mi–Sa",
-  "cuisineDe": "Französisch-zeitgemäß"
+  "cuisineDe": "Französisch-zeitgemäß",
+  "photo": "tantris.jpg",
+  "photoAlt": "The red entrance of Tantris with its name and stone creatures, Munich",
+  "photoCredit": "Ursula Jaeger",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Tantris_mit_vier_Fabelwesen_(Schwabing-West),_M%C3%BCnchen.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 629,
+  "photoChecked": "2026-10-13"
 }

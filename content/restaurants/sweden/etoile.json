@@ -25,5 +25,15 @@
   "dinnerNoteSv": "Avsmakningsmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteSv": "Endast middag"
+  "lunchNoteSv": "Endast middag",
+  "photo": "etoile.jpg",
+  "photoAlt": "The arched front of Etoile on Norra Stationsgatan, Stockholm, with its name on the window",
+  "photoCredit": "I99pema",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Etoile,_Stockholm.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

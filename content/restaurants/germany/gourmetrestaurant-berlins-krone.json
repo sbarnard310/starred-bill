@@ -26,5 +26,15 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern"
+  "cuisineDe": "Französisch-modern",
+  "photo": "gourmetrestaurant-berlins-krone.jpg",
+  "photoAlt": "Hotel Berlins KroneLamm on the market square in Zavelstein, with its gold crown sign",
+  "photoCredit": "Frank Vincentz",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Bad_Teinach-Zavelstein_-_Zavelstein_-_Marktplatz_-_Berlins_KroneLamm_02_ies.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

@@ -25,5 +25,15 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 132 €)",
   "lunchNote": "Open for lunch · Mon–Sat",
   "lunchNoteDe": "Mittags geöffnet · Mo–Sa",
-  "cuisineDe": "Klassische Küche"
+  "cuisineDe": "Klassische Küche",
+  "photo": "landhaus-scherrer.jpg",
+  "photoAlt": "The flower-hung front of Landhaus Scherrer with its name on the wall, Hamburg",
+  "photoCredit": "TH.Korr",
+  "photoLicence": "CC BY 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Landhaus_Scherrer.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

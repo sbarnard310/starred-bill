@@ -27,5 +27,15 @@
   "chef": "Michel van Riswijk and Vincent Goris",
   "chefSource": "michelin",
   "dinnerNoteNl": "Menu Jubileum, 6 gangen (vegetarisch menu Greenhouse vanaf € 77,50)",
-  "cuisineNl": "Modern Frans"
+  "cuisineNl": "Modern Frans",
+  "photo": "de-bloemenbeek.jpg",
+  "photoAlt": "The restaurant wing of Hotel De Bloemenbeek in De Lutte",
+  "photoCredit": "Henk Monster",
+  "photoLicence": "CC BY 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_and_diningroom_from_Hotel_de_Bloemenbeek_at_De_Lutte_-_panoramio.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 662,
+  "photoChecked": "2026-10-13"
 }

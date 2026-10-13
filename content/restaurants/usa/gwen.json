@@ -15,5 +15,15 @@
   "website": "https://gwenla.com/",
   "lat": 34.097749,
   "lng": -118.333428,
-  "placeId": "ChIJLz5MuTq_woARNr7ORKQW7-4"
+  "placeId": "ChIJLz5MuTq_woARNr7ORKQW7-4",
+  "photo": "gwen.jpg",
+  "photoAlt": "The shopfront of Gwen with its name on the window, Sunset Boulevard, Los Angeles",
+  "photoCredit": "Clyde Charles Brown",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Gwen_restaurant_in_Los_Angeles,_California,_US.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

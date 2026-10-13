@@ -30,5 +30,15 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.hisafranko.com/en/menu",
   "dinnerNote": "Euphorest menu, lunch and dinner",
-  "dinnerNoteSl": "Meni Euphorest, kosilo in večerja"
+  "dinnerNoteSl": "Meni Euphorest, kosilo in večerja",
+  "photo": "hisa-franko.jpg",
+  "photoAlt": "The pink house and terrace of Hiša Franko in Kobarid",
+  "photoCredit": "Lars Plougmann from United States",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Franko_restaurant_and_hotel_-_P1030770_(186801953).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

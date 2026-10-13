@@ -24,5 +24,15 @@
   "lunchNote": "Open for lunch · Thu–Sat",
   "lunchNoteSv": "Öppet för lunch · tors–lör",
   "chef": "Tommy Myllymäki",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "aira.jpg",
+  "photoAlt": "The copper-clad building and entrance steps of Aira on Södra Djurgården, Stockholm",
+  "photoCredit": "I99pema",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Aira,_Stockholm_01.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 744,
+  "photoChecked": "2026-10-13"
 }

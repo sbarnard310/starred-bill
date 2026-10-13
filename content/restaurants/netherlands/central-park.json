@@ -29,5 +29,15 @@
   "lunchNoteNl": "Open voor lunch · ma–za",
   "cuisineNl": "Moderne keuken",
   "chef": "Tim Bood and Hette Hettema",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "central-park.jpg",
+  "photoAlt": "The white villa Vreugd en Rust on Oosteinde, Voorburg, behind a round hedge",
+  "photoCredit": "Michiel1972",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Voorburg_-_Oosteinde_(Vreugd_en_Rust).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

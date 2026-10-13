@@ -27,5 +27,15 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-zeitgemäß"
+  "cuisineDe": "Französisch-zeitgemäß",
+  "photo": "atlantic-restaurant.jpg",
+  "photoAlt": "The white facade of the Hotel Atlantic on the Alster, Hamburg, with its name on the roof",
+  "photoCredit": "Sören Kusch",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Hotel_Atlantic_April_2016_-_panoramio.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

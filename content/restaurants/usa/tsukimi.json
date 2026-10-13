@@ -22,5 +22,15 @@
   "placeId": "ChIJRQgS7etZwokR8IMUTfuDXOM",
   "michelinId": "1185033",
   "chef": "Takanori Akiyama",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "tsukimi.jpg",
+  "photoAlt": "The street-level entrance of Tsukimi at 228 East 10th Street, Manhattan",
+  "photoCredit": "Transpoman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Tsukimi_NYC.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 730,
+  "photoChecked": "2026-10-13"
 }

@@ -32,5 +32,15 @@
     "kosher"
   ],
   "chef": "Mrinal Ghosal",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "mudbrick.jpg",
+  "photoAlt": "Mudbrick restaurant behind its clipped gardens on Waiheke Island",
+  "photoCredit": "Mike Dickison",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Waiheke_Island_Mar_2024_MRD_14.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 759,
+  "photoChecked": "2026-10-13"
 }

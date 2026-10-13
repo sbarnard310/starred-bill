@@ -30,5 +30,14 @@
     "vegetarian"
   ],
   "chef": "Mathieu Viannay",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "mere-brazier.jpg",
+  "photoAlt": "The front of La Mère Brazier in Lyon, with its sign on the corner",
+  "photoCredit": "Arnaud Fafournoux",
+  "photoLicence": "Public domain",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Lyon_-_Restaurant_de_la_M%C3%A8re_Brazier.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 562,
+  "photoChecked": "2026-10-13"
 }

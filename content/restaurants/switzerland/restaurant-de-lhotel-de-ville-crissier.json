@@ -32,5 +32,15 @@
   "cuisineFr": "Cuisine française classique",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 360)",
   "lunchNoteIt": "Menu pranzo",
-  "cuisineIt": "Francese classica"
+  "cuisineIt": "Francese classica",
+  "photo": "restaurant-de-lhotel-de-ville-crissier.jpg",
+  "photoAlt": "The front of the Restaurant de l'Hôtel de Ville in Crissier",
+  "photoCredit": "Theoamoureux",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Hotel_de_ville_%C3%A9t%C3%A9_(2).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

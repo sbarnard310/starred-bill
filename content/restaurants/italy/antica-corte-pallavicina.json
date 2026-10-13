@@ -26,5 +26,15 @@
     "gluten-free"
   ],
   "chef": "Massimo Spigaroli",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "antica-corte-pallavicina.jpg",
+  "photoAlt": "The entrance hall of Antica Corte Pallavicina, with a painted coat of arms above the fireplace",
+  "photoCredit": "Parma1983",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Antica_Corte_Pallavicina_(Polesine_Parmense)_-_sala_d%27ingresso_1_2023-07-27.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

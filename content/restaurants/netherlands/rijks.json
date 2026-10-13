@@ -28,5 +28,15 @@
   "dinnerNoteNl": "Proeverijmenu",
   "lunchNote": "Open for lunch · Tue–Sun",
   "lunchNoteNl": "Open voor lunch · di–zo",
-  "cuisineNl": "Creatief"
+  "cuisineNl": "Creatief",
+  "photo": "rijks.jpg",
+  "photoAlt": "The entrance of RIJKS with its sign, Amsterdam",
+  "photoCredit": "Hanno Lans",
+  "photoLicence": "CC BY 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Rijks_02.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

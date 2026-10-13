@@ -30,5 +30,15 @@
     "gluten-free"
   ],
   "chef": "Sheyla Alvarado",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "lunario.jpg",
+  "photoAlt": "The stone and brick building of Lunario in Valle de Guadalupe",
+  "photoCredit": "ccossio @ Mapillary",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Lunario_(2015).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 551,
+  "photoChecked": "2026-10-13"
 }

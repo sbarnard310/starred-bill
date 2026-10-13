@@ -23,5 +23,15 @@
     "vegetarian"
   ],
   "chef": "Guillaume Lebrun",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "patrick-guilbaud.jpg",
+  "photoAlt": "The Georgian front door of Restaurant Patrick Guilbaud, Dublin",
+  "photoCredit": "DubhEire",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:RestaurantPatrickGuilbaud.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

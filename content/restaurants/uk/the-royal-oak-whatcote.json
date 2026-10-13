@@ -25,5 +25,15 @@
     "vegetarian"
   ],
   "chef": "Richard Craven",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "the-royal-oak-whatcote.jpg",
+  "photoAlt": "The Royal Oak pub in Whatcote, Warwickshire, with its sign",
+  "photoCredit": "The Royal Oak by Michael Dibb",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_Royal_Oak_-_geograph.org.uk_-_2918675.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

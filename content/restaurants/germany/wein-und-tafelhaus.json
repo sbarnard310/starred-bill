@@ -30,5 +30,15 @@
   "lunchNoteDe": "Mittagsmenü · Samstag",
   "lunchSourceType": "site",
   "lunchSource": "https://www.wein-tafelhaus.de/wp-content/uploads/sites/12/2026/10/Landmenue-Aenderung-vorbehalten.pdf",
-  "cuisineDe": "Marktküche"
+  "cuisineDe": "Marktküche",
+  "photo": "wein-und-tafelhaus.jpg",
+  "photoAlt": "The Wein- und Tafelhaus in Trittenheim, Mosel, with its sign in the garden",
+  "photoCredit": "Wolfgang Meinhart, Hamburg",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Trittenheim.Wein-und_Tafelhaus.wmt.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

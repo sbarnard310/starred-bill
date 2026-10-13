@@ -36,5 +36,15 @@
     "via": "Tock",
     "source": "https://www.exploretock.com/tfl/faq",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "the-french-laundry.jpg",
+  "photoAlt": "The stone and wood building of The French Laundry in Yountville, California, covered in vines",
+  "photoCredit": "Peter Merholz",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:The_French_Laundry.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

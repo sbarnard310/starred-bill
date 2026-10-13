@@ -28,5 +28,15 @@
   "lunchNoteFr": "Ouvert le midi · lun.–mar., ven.–sam.",
   "cuisineFr": "Cuisine moderne",
   "chef": "Patrick van Hoorn",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "de-zuidkant.jpg",
+  "photoAlt": "The house on Jacob van Maerlantstraat in Damme where De Zuidkant is",
+  "photoCredit": "Ben Bender",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:8340_Damme,_Belgium_-_panoramio_(50).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

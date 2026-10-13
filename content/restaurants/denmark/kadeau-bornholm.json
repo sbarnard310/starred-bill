@@ -52,5 +52,15 @@
   "bookingPhone": "+45 56 97 82 50",
   "groups": "Private events by request through the form on its Tock page.",
   "infoSource": "https://www.kadeau.dk/bornholm/menu",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "kadeau-bornholm.jpg",
+  "photoAlt": "The dark timber building of Kadeau Bornholm with its name on the wall, Bornholm",
+  "photoCredit": "City Foodsters",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Kadeau_Bornholm_IMG_2884_(23801492215).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

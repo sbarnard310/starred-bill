@@ -25,5 +25,15 @@
     "vegetarian"
   ],
   "chef": "Anthony Taormina",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "latelier-de-joel-robuchon-las-vegas.jpg",
+  "photoAlt": "The entrance of L'Atelier de Joël Robuchon with its name at the MGM Grand, Las Vegas",
+  "photoCredit": "Elizabeth K. Joseph",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:L%27Atelier_De_Jo%C3%ABl_Robuchon_(Las_Vegas).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 562,
+  "photoChecked": "2026-10-13"
 }

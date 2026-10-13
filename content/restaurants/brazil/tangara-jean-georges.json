@@ -27,5 +27,15 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePt": "Só jantar",
-  "cuisinePt": "Atual"
+  "cuisinePt": "Atual",
+  "photo": "tangara-jean-georges.jpg",
+  "photoAlt": "The dining room of Tangará Jean-Georges at Palácio Tangará, São Paulo",
+  "photoCredit": "Shoichi Iwashita",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:E_esse_%C3%A9_o_restaurante_assinado_pelo_chef_Jean-Georges_Vongerichten_do_Pal%C3%A1cio_Tangar%C3%A1_(34141186981).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

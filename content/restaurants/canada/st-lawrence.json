@@ -23,5 +23,15 @@
     "vegetarian"
   ],
   "chef": "Jean-Christophe Poirier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "st-lawrence.jpg",
+  "photoAlt": "The corner front of St. Lawrence restaurant in Vancouver, with its hanging sign",
+  "photoCredit": "Premeditated Chaos",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:St_lawrence_exterior.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 486,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

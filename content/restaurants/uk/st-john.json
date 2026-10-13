@@ -45,5 +45,15 @@
   "groupsUrl": "https://stjohnrestaurant.com/pages/private-events",
   "byob": "Corkage £32 a bottle, £42 for sparkling or dessert wine, £64 a magnum and £84 a magnum of Champagne.",
   "infoSource": "https://stjohnrestaurant.com/a/restaurants/smithfield",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "photo": "st-john.jpg",
+  "photoAlt": "The St. JOHN Bar & Restaurant sign above its entrance on St John Street, Smithfield, London",
+  "photoCredit": "ireas",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:2014-08-07_st_john_0203.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

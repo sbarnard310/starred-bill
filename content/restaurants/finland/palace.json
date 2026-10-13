@@ -25,5 +25,15 @@
   "dinnerNoteFi": "Maistelumenu",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteFi": "Vain illallinen"
+  "lunchNoteFi": "Vain illallinen",
+  "photo": "palace.jpg",
+  "photoAlt": "Hotel Palace at Eteläranta 10, Helsinki, with the Palace restaurant on its top floor",
+  "photoCredit": "Cope Baronet",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Hotelli_Palace_-_Etel%C3%A4ranta_10.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 562,
+  "photoChecked": "2026-10-13"
 }

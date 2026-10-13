@@ -25,5 +25,15 @@
   "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 995 kr)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteSv": "Endast middag"
+  "lunchNoteSv": "Endast middag",
+  "photo": "koka.jpg",
+  "photoAlt": "The entrance of Koka on Viktoriagatan, Gothenburg, under a grey awning with its name",
+  "photoCredit": "Mattias Blomgren",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurang_Koka_i_G%C3%B6teborg.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 668,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

@@ -32,5 +32,15 @@
   "lunchNoteNl": "Lunchmenu",
   "cuisineNl": "Creatief",
   "chef": "Jos Grootscholten",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "perceel.jpg",
+  "photoAlt": "The brick house of Perceel at Dorpsstraat 3, Capelle aan den IJssel, with green awnings",
+  "photoCredit": "Michiel1972",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:RM11463_Capelle_aan_den_IJssel_-_Dorpsstraat_3_(foto_1).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

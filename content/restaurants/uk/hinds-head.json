@@ -28,5 +28,15 @@
     "vegan"
   ],
   "chef": "Edoardo Brambilla",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "hinds-head.jpg",
+  "photoAlt": "The Hinds Head pub on the High Street in Bray",
+  "photoCredit": "Bray - The Hinds Head by James Emmans",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Bray_-_The_Hinds_Head_-_geograph.org.uk_-_5424289.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

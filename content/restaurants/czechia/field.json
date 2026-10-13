@@ -31,5 +31,15 @@
   "lunchNoteCs": "Stejné menu v poledne",
   "lunchWine": 950,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.fieldrestaurant.cz/en/menu"
+  "lunchSource": "https://www.fieldrestaurant.cz/en/menu",
+  "photo": "field.jpg",
+  "photoAlt": "The entrance of Field on Kozí street, Prague, with its sign",
+  "photoCredit": "JiriMatejicek",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Praha_Stare_Mesto_Kozi_21_Field_b.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

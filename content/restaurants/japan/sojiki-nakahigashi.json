@@ -38,5 +38,15 @@
     "note": "When the 1st is a closing day, bookings open the next day.",
     "source": "https://soujiki-nakahigashi.jp/",
     "checked": "2026-10-10"
-  }
+  },
+  "photo": "sojiki-nakahigashi.jpg",
+  "photoAlt": "The wooden entrance and name sign of Sojiki Nakahigashi in Kyoto",
+  "photoCredit": "番記者",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:%E8%8D%89%E5%96%B0%E3%81%AA%E3%81%8B%E3%81%B2%E3%81%8C%E3%81%97.jpeg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 667,
+  "photoChecked": "2026-10-13"
 }

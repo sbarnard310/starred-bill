@@ -33,5 +33,15 @@
   "chef": "Christoffer Norton",
   "chefSource": "michelin",
   "dinnerNoteDa": "Smagsmenu (andre menuer fra 850 kr.)",
-  "lunchNoteDa": "Frokostmenu"
+  "lunchNoteDa": "Frokostmenu",
+  "photo": "domestic.jpg",
+  "photoAlt": "The door of Domestic in a courtyard off Mejlgade, Aarhus, with its hanging sign",
+  "photoCredit": "RhinoMind",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Domestic_entrance,_Denmark_(2016-03-19).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 750,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

@@ -33,5 +33,15 @@
     "gluten-free"
   ],
   "chef": "Clément Brun",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "le-haut-allier.jpg",
+  "photoAlt": "The hotel-restaurant Le Haut-Allier in Alleyras, with its sign",
+  "photoCredit": "Graeme Churchard from Bristol, UK",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Le_Haut_Allier,_Alleyras,_France.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

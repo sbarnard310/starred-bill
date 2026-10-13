@@ -77,5 +77,15 @@
   "dressCode": "A jacket is required for men at lunch and dinner, and elegant dress is expected for everyone. No sportswear, shorts or T-shirts.",
   "children": "Children aged 6 and over are preferred.",
   "infoSource": "https://tourdargent.com/nous-contacter/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "tour-dargent.jpg",
+  "photoAlt": "The entrance of La Tour d'Argent with its name above the door, Paris",
+  "photoCredit": "Jean-Marie Hullot",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:La_Tour_d%27Argent,_Paris_22_September_2010.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 706,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

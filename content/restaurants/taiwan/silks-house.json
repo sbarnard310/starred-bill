@@ -34,5 +34,15 @@
   "michelinId": "550860",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "photo": "silks-house.jpg",
+  "photoAlt": "The corridor leading to Silks House in the Regent Taipei",
+  "photoCredit": "阿道",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Silks_House_20251230.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 682,
+  "photoChecked": "2026-10-13"
 }

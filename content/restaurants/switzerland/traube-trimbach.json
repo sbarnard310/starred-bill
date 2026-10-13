@@ -32,5 +32,15 @@
   "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
   "lunchSourceType": "site",
   "lunchSource": "https://traubetrimbach.ch/traube-menu/",
-  "cuisineIt": "Francese contemporanea"
+  "cuisineIt": "Francese contemporanea",
+  "photo": "traube-trimbach.jpg",
+  "photoAlt": "The building of Restaurant Traube in Trimbach, Solothurn",
+  "photoCredit": "Dietrich Michael Weidmann",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Trimbach_restoracio_Traube_082.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 669,
+  "photoChecked": "2026-10-13"
 }

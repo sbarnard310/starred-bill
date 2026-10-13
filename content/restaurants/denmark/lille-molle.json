@@ -55,5 +55,15 @@
   "groups": "Groups of up to 60, and a private dining room for up to 24; ask by email.",
   "groupsUrl": "https://norrlyst.dk/restaurantlillemoelle/private-dining/?lang=en",
   "infoSource": "https://norrlyst.dk/restaurantlillemoelle/lille-moelle-reservation/?lang=en",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "lille-molle.jpg",
+  "photoAlt": "The ivy-covered Lille Mølle house dated 1669 in Christianshavn, Copenhagen",
+  "photoCredit": "Elgaard (Wikivoyage)",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:CphLilleMolle.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 749,
+  "photoChecked": "2026-10-13"
 }

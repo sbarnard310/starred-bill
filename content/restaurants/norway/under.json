@@ -28,5 +28,15 @@
   "dinnerNoteNb": "Smaksmeny; prisen legges til senere",
   "lunchNoteNb": "Lunsjmeny",
   "chef": "Nicolai Ellitsgaard",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "under.jpg",
+  "photoAlt": "Under, the half-sunken concrete restaurant at the water's edge in Lindesnes",
+  "photoCredit": "Eldart",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Under_restaurant.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 721,
+  "photoChecked": "2026-10-13"
 }

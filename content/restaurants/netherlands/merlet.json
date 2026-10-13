@@ -35,5 +35,15 @@
   "lunchNoteNl": "Zelfde menu's bij de lunch · vr en zo",
   "lunchWine": 60,
   "lunchSourceType": "site",
-  "lunchSource": "https://merlet.nl/restaurant/menu"
+  "lunchSource": "https://merlet.nl/restaurant/menu",
+  "photo": "merlet.jpg",
+  "photoAlt": "The entrance of hotel and restaurant Merlet in Schoorl",
+  "photoCredit": "westher",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Merlet_voorgevel.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

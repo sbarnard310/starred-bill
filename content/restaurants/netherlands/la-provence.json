@@ -29,5 +29,15 @@
   "cuisineNl": "Creatief Frans",
   "lunchNoteNl": "Lunchmenu",
   "chef": "André van Alten",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "la-provence.jpg",
+  "photoAlt": "The brick building of La Provence on Hoofdstraat, Driebergen-Rijsenburg, beside the Grote Kerk tower",
+  "photoCredit": "Michielverbeek",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Driebergen,_de_Grote_Kerk_in_straatzicht_foto1_2012-05-27_16.54_(cropped).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 634,
+  "photoChecked": "2026-10-13"
 }

@@ -35,5 +35,15 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantgron.com/menu",
   "dinnerNote": "Grön menu (vegan menu the same price, pre-order)",
-  "dinnerNoteFi": "Grön-menu (vegaaninen menu samaan hintaan, ennakkotilauksesta)"
+  "dinnerNoteFi": "Grön-menu (vegaaninen menu samaan hintaan, ennakkotilauksesta)",
+  "photo": "gron.jpg",
+  "photoAlt": "The front windows of Restaurant Grön on Albertinkatu, Helsinki",
+  "photoCredit": "Paju~commonswiki",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Gr%C3%B6n_-_Helsinki_-_14.12.2017_at_15.08_-_by_Paju-m.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 802,
+  "photoChecked": "2026-10-13"
 }

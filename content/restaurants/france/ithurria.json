@@ -28,5 +28,15 @@
   "chef": "Martin Isabal",
   "chefSource": "michelin",
   "dinnerNote": "Tasting menu, 5 courses (Notre histoire €135)",
-  "dinnerNoteFr": "La dégustation, 5 temps (Notre histoire 135 €)"
+  "dinnerNoteFr": "La dégustation, 5 temps (Notre histoire 135 €)",
+  "photo": "ithurria.jpg",
+  "photoAlt": "The red and white Basque front of Hotel Restaurant Ithurria in Ainhoa, with its sign",
+  "photoCredit": "Calips",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Hotel-Restaurant_Ithurria_(Ainhoa).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 665,
+  "photoChecked": "2026-10-13"
 }

@@ -34,5 +34,15 @@
     "gluten-free"
   ],
   "chef": "Jorge Vallejo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "quintonil.jpg",
+  "photoAlt": "The front of Quintonil at Newton 55 in Polanco, Mexico City, with its name above the door",
+  "photoCredit": "City Foodsters",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Quintonil_Exterior.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 691,
+  "photoChecked": "2026-10-13"
 }

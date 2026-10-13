@@ -70,5 +70,15 @@
       "url": "https://www.laliste.com/places/le-jules-verne-paris-fr"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "photo": "le-jules-verne.jpg",
+  "photoAlt": "The entrance to Le Jules Verne beneath the Eiffel Tower, Paris, with its name above the steps",
+  "photoCredit": "Mike Palin",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Entrance_to_the_Jules_Verne_Restaurant_at_the_Eiffel_Tower,_Paris.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 562,
+  "photoChecked": "2026-10-13"
 }

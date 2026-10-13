@@ -25,5 +25,15 @@
   "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 1 095 kr)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteSv": "Endast middag"
+  "lunchNoteSv": "Endast middag",
+  "photo": "project.jpg",
+  "photoAlt": "The front of Project on Södra Vägen, Gothenburg, with its hanging sign",
+  "photoCredit": "Mattias Blomgren",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurang_Project_i_G%C3%B6teborg.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 668,
+  "photoChecked": "2026-10-13"
 }

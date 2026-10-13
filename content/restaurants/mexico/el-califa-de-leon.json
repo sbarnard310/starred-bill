@@ -20,5 +20,15 @@
   "reviews": 5816,
   "lat": 19.4410673,
   "lng": -99.159267,
-  "placeId": "ChIJDdgBq8_40YUReV5XNsJFMJE"
+  "placeId": "ChIJDdgBq8_40YUReV5XNsJFMJE",
+  "photo": "el-califa-de-leon.jpg",
+  "photoAlt": "The Taquería El Califa de León sign above shuttered fronts on Ribera de San Cosme, Mexico City",
+  "photoCredit": "kaart_1 @ Mapillary",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Taquer%C3%ADa_El_Califa_de_Le%C3%B3n_(2020).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 938,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

@@ -31,5 +31,15 @@
   "dinnerNote": "Menu du chef, 5 courses (6 courses €155, 7 courses €175)",
   "dinnerNoteNl": "Menu du chef, 5 gangen (6 gangen € 155, 7 gangen € 175)",
   "lunchNote": "Business lunch",
-  "lunchNoteNl": "Businesslunch"
+  "lunchNoteNl": "Businesslunch",
+  "photo": "monarh.jpg",
+  "photoAlt": "The entrance and Monarh sign at the former building on Bredaseweg, Tilburg",
+  "photoCredit": "Tristan Surtel",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurant_Monarh,_Tilburg.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 665,
+  "photoChecked": "2026-10-13"
 }

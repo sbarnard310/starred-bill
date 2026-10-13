@@ -33,5 +33,15 @@
     "gluten-free"
   ],
   "chef": "Albert Sastregener",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "bo-tic.jpg",
+  "photoAlt": "The stone house and rusted steel extension of Bo.TiC in Corçà",
+  "photoCredit": "Castellbo",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Bo-TiC_2007.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 562,
+  "photoChecked": "2026-10-13"
 }

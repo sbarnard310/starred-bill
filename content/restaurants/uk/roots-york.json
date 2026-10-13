@@ -33,5 +33,15 @@
     "kosher"
   ],
   "chef": "Will Lockwood",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "roots-york.jpg",
+  "photoAlt": "The mock-Tudor front of Roots, the former Bay Horse pub on Marygate, York",
+  "photoCredit": "Malcolmxl5",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Roots_(formerly_The_Bay_Horse)_Marygate_York_02.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

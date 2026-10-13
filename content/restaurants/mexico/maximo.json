@@ -29,5 +29,15 @@
   "placeId": "ChIJdw0B4zv_0YURK8xSHYwyp2E",
   "michelinId": "1208229",
   "chef": "Eduardo Garcia",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "maximo.jpg",
+  "photoAlt": "The plant-covered front of Máximo on Avenida Álvaro Obregón, Mexico City",
+  "photoCredit": "Tbhotch",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:M%C3%A1ximo_Bistrot_(2025)_2.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 993,
+  "photoChecked": "2026-10-13"
 }

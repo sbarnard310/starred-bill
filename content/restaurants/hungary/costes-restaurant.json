@@ -29,5 +29,15 @@
   "chef": "Jenő Rácz",
   "chefSource": "site",
   "dinnerNoteHu": "Kóstolómenü (további menük: HUF 39,500-tól)",
-  "lunchNoteHu": "Ebédmenü"
+  "lunchNoteHu": "Ebédmenü",
+  "photo": "costes-restaurant.jpg",
+  "photoAlt": "The front of Costes Restaurant with its name on the awning, Ráday Street, Budapest",
+  "photoCredit": "Antissimo",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Costes_Restaurant,_Budapest_01.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

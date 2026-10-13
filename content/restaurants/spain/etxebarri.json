@@ -33,5 +33,15 @@
     "kosher"
   ],
   "chef": "Bittor Arginzoniz",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "etxebarri.jpg",
+  "photoAlt": "The wooden door of Asador Etxebarri in Axpe, with its name on the stone wall",
+  "photoCredit": "Winniepix",
+  "photoLicence": "CC BY 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Entrance_of_Asador_Etxebarri_(18342772348).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 631,
+  "photoHeight": 1000,
+  "photoChecked": "2026-10-13"
 }

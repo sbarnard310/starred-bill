@@ -33,5 +33,15 @@
   "diets": [
     "vegetarian",
     "gluten-free"
-  ]
+  ],
+  "photo": "hofmann.jpg",
+  "photoAlt": "The front of Hofmann with its name on the wall, Barcelona",
+  "photoCredit": "Pere prlpz",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Hofmann_(1).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

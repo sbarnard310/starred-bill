@@ -26,5 +26,15 @@
     "kosher"
   ],
   "chef": "Seijun Okano",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "hiden.jpg",
+  "photoAlt": "The eight-seat counter at Hiden, Miami, with the chef at work",
+  "photoCredit": "Bobak Ha'Eri",
+  "photoLicence": "CC BY 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:2026-0120_Hiden_bar.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

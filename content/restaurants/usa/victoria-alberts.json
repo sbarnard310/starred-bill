@@ -23,5 +23,15 @@
     "vegan"
   ],
   "chef": "Miguel Santeliz",
-  "chefSource": "site"
+  "chefSource": "site",
+  "photo": "victoria-alberts.jpg",
+  "photoAlt": "The gold Victoria & Albert's Restaurant sign at Disney's Grand Floridian Resort, Orlando",
+  "photoCredit": "elisfkc",
+  "photoLicence": "CC BY-SA 2.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:V%26A_Sign_(24477896156).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 563,
+  "photoChecked": "2026-10-13"
 }

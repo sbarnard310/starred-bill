@@ -26,5 +26,15 @@
     "kosher"
   ],
   "chef": "Masatomo Soma",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "photo": "kosaka.jpg",
+  "photoAlt": "The shopfront of Kosaka at 220 West 13th Street, New York",
+  "photoCredit": "Transpoman",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Kosaka_NYC.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

@@ -28,5 +28,15 @@
   "lunchNoteNl": "Open voor lunch · do–vr, zo–ma",
   "cuisineNl": "Moderne keuken",
   "chef": "Erik van Loo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "restaurant-parkheuvel.jpg",
+  "photoAlt": "The round pavilion of Parkheuvel in Rotterdam with its name above the windows",
+  "photoCredit": "Jan Geerling",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:1604_Parkheuvel_restaurant,_Rotterdam_152.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 509,
+  "photoChecked": "2026-10-13"
 }

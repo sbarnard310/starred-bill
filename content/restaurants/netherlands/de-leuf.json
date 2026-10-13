@@ -71,5 +71,15 @@
   "bookingPhone": "+31 45 575 0226",
   "groups": "Online bookings are for up to 6 people; for larger groups, call or email. The private Yukari room seats 4 to 14 for lunch or dinner.",
   "infoSource": "https://deleuf.nl/en/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "photo": "de-leuf.jpg",
+  "photoAlt": "The old farmhouse at Dalstraat 2 in Ubachsberg, home of De Leuf",
+  "photoCredit": "Romaine",
+  "photoLicence": "CC0",
+  "photoLicenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Ubachsberg-Dalstraat_2.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

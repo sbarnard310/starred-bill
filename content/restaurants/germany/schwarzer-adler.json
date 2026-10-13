@@ -25,5 +25,15 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 158 €)",
   "lunchNote": "Open for lunch · Sundays",
   "lunchNoteDe": "Mittags geöffnet · Sonntag",
-  "cuisineDe": "Französisch-klassisch"
+  "cuisineDe": "Französisch-klassisch",
+  "photo": "schwarzer-adler.jpg",
+  "photoAlt": "The yellow facade of Schwarzer Adler with its painted name, Oberbergen, Vogtsburg",
+  "photoCredit": "Wolfgang Meinhart, Hamburg",
+  "photoLicence": "CC BY-SA 3.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Kaiserstuhl.Vogtsburg.Restaurant_Schwarzer_Adler.wmt.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

@@ -27,5 +27,15 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurangang.se/menu/",
   "dinnerNote": "Tasting menu (SEK 3,000 from January 2027)",
-  "dinnerNoteSv": "Avsmakningsmeny (3 000 kr från januari 2027)"
+  "dinnerNoteSv": "Avsmakningsmeny (3 000 kr från januari 2027)",
+  "photo": "ang.jpg",
+  "photoAlt": "The glass building of ÄNG at Ästad Vingård, Tvååker, Halland",
+  "photoCredit": "Mattias Blomgren",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Restaurang_%C3%84ng_i_Sibbarps_socken_01.jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 668,
+  "photoChecked": "2026-10-13"
 }

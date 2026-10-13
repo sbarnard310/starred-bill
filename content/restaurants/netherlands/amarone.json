@@ -29,5 +29,15 @@
   "cuisineNl": "Modern Frans",
   "chef": "Jan van Dobben",
   "chefSource": "press",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "photo": "amarone.jpg",
+  "photoAlt": "The front of Amarone restaurant on the Meent, Rotterdam, with its name on the awning",
+  "photoCredit": "Magere Hein",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Amarone_(Rotterdam).jpg",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 689,
+  "photoChecked": "2026-10-13"
 }

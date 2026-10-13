@@ -26,5 +26,15 @@
   "lunchNote": "Dinner only",
   "lunchNoteFi": "Vain illallinen",
   "chef": "Mikko Pakola",
-  "chefSource": "press"
+  "chefSource": "press",
+  "photo": "olo.jpg",
+  "photoAlt": "The front of Olo in Helsinki with its hanging sign beside the door",
+  "photoCredit": "Sblöbö",
+  "photoLicence": "CC BY-SA 4.0",
+  "photoLicenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photoSource": "https://commons.wikimedia.org/wiki/File:Ravintola_Olo.JPG",
+  "photoSourceType": "commons",
+  "photoWidth": 1000,
+  "photoHeight": 750,
+  "photoChecked": "2026-10-13"
 }

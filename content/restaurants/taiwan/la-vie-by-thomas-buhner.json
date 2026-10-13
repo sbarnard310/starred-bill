@@ -35,5 +35,33 @@
     "vegetarian"
   ],
   "chef": "Thomas Bühner",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "tasting menu",
+      "meal": "dinner",
+      "price": 6288,
+      "wine": 2400,
+      "note": "Explore wine pairing NT$2,400 (4 glasses) or La Vie cellar pairing NT$4,800 (6 glasses); alcohol-free pairings NT$1,600 or NT$2,400. Blue lobster supplement NT$1,788"
+    },
+    {
+      "name": "season menu",
+      "meal": "dinner",
+      "price": 3888,
+      "wine": 2400,
+      "note": "Shorter menu; same pairings. Caviar supplement NT$1,388, lobster NT$1,788"
+    }
+  ],
+  "menusSource": "https://www.laviebythomasbuehner.com/en/menu",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online on inline for one to four guests; groups of five or more book by email.",
+  "bookingUrl": "https://inline.app/booking/LaVie?language=en",
+  "bookingPhone": "+886 937 857 869, 2pm to 6pm on opening days",
+  "groups": "Five or more guests book by email. A small private room (one to four guests) has a minimum spend of NT$40,000 plus 10%, and a large one (eight to ten guests) NT$70,000 plus 10%.",
+  "groupsUrl": "https://www.laviebythomasbuehner.com/en/reservation",
+  "dressCode": "Smart casual. No shorts, vests, sweatpants, slippers or flip-flops.",
+  "children": "Guests must be 12 or over.",
+  "byob": "Outside food and drink are not allowed.",
+  "infoSource": "https://www.laviebythomasbuehner.com/en/reservation",
+  "infoChecked": "2026-10-13"
 }

@@ -15,20 +15,20 @@
   "reviews": 788,
   "dinner": 160,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (also €85 and €125)",
-  "dinnerNoteZh": "最長的品嚐套餐（另有 €85 及 €125）",
-  "dinnerNoteEs": "El menú degustación más largo (también de 85 € y 125 €)",
+  "dinnerNote": "Gran Capricho tasting menu, 18 courses (also €85 and €125)",
+  "dinnerNoteZh": "「Gran Capricho」品嚐套餐，18 道（另有 €85 及 €125）",
+  "dinnerNoteEs": "Menú degustación Gran Capricho, 18 pasos (también de 85 € y 125 €)",
   "wine": 80,
   "sourceType": "site",
-  "source": "https://www.lacasademanolofranco.com/",
-  "lunch": 160,
+  "source": "https://www.lacasademanolofranco.com/menu-capricho-xxl",
+  "lunch": 85,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sun",
-  "lunchNoteZh": "午餐供應相同套餐・週三至週日",
-  "lunchNoteEs": "El mismo menú al mediodía · mié–dom",
-  "lunchWine": 80,
+  "lunchNote": "Pequeño Capricho menu, 11 courses (Gran Capricho €160) · Wed–Sun",
+  "lunchNoteZh": "「Pequeño Capricho」套餐，11 道（「Gran Capricho」€160）・週三至週日",
+  "lunchNoteEs": "Menú Pequeño Capricho, 11 pasos (Gran Capricho 160 €) · mié–dom",
+  "lunchWine": 52,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.lacasademanolofranco.com/",
+  "lunchSource": "https://www.lacasademanolofranco.com/menu-capricho",
   "website": "https://www.lacasademanolofranco.com/",
   "lat": 40.501,
   "lng": -4.067955,
@@ -40,5 +40,40 @@
     "gluten-free"
   ],
   "chef": "Manu Franco",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Gran Capricho tasting menu",
+      "meal": "dinner",
+      "price": 160,
+      "wine": 80,
+      "courses": 18,
+      "note": "Lunch or dinner, but only at the first sitting of each service (2pm at lunch, 8:30pm at dinner); 18 courses and 22 bites; VAT included"
+    },
+    {
+      "name": "Capricho tasting menu",
+      "meal": "dinner",
+      "price": 125,
+      "wine": 65,
+      "courses": 14,
+      "note": "Lunch or dinner; 14 courses and 17 bites; VAT included"
+    },
+    {
+      "name": "Pequeño Capricho tasting menu",
+      "meal": "dinner",
+      "price": 85,
+      "wine": 52,
+      "courses": 11,
+      "note": "Lunch or dinner; 11 courses and 13 bites; VAT included"
+    }
+  ],
+  "menusSource": "https://www.lacasademanolofranco.com/menus",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the restaurant's website (CoverManager), or by phone or email (hola@lacasademanolofranco.com).",
+  "bookingUrl": "https://www.covermanager.com/reserve/module_restaurant/restaurante-lacasa-demanolofranco/spanish",
+  "bookingPhone": "+34 626 61 57 39",
+  "groups": "Celebrations and private events are arranged with a choice of menus; enquire through the events page.",
+  "groupsUrl": "https://www.lacasademanolofranco.com/eventos",
+  "infoSource": "https://www.lacasademanolofranco.com/",
+  "infoChecked": "2026-10-13"
 }

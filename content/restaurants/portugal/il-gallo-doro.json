@@ -9,10 +9,10 @@
   "reviews": 492,
   "dinnerType": "menu",
   "dinner": 295,
-  "dinnerNote": "Tasting menu (other menus from €255)",
+  "dinnerNote": "\"This is Il Gallo d'Oro\" tasting menu, 11 moments (other menus from €245)",
   "wine": 175,
-  "sourceType": "press",
-  "source": "https://www.thefork.pt/restaurante/il-gallo-d-oro-r64648/menu",
+  "sourceType": "site",
+  "source": "https://cms.portobay.com/media/40cjavk0/this-is-il-gallo-doro.pdf",
   "website": "https://www.portobay.com/en/restaurants/restaurants-madeira/il-gallo-doro",
   "lat": 32.6382988,
   "lng": -16.9266478,
@@ -26,9 +26,46 @@
   ],
   "chef": "Benoît Sinthon",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação (outros menus desde 255 €)",
+  "dinnerNotePt": "Menu de degustação \"This is Il Gallo d'Oro\", 11 momentos (outros menus desde 245 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePt": "Só jantar",
-  "cuisinePt": "Atual"
+  "cuisinePt": "Atual",
+  "menus": [
+    {
+      "name": "\"This is Il Gallo d'Oro\" tasting menu, 11 moments",
+      "meal": "dinner",
+      "price": 295,
+      "wine": 175,
+      "courses": 11,
+      "note": "\"Portugal in a Glass\" pairing €175, or €135 more for the premium pairing"
+    },
+    {
+      "name": "\"This is Il Gallo d'Oro\" tasting menu, 8 moments",
+      "meal": "dinner",
+      "price": 255,
+      "wine": 140,
+      "courses": 8,
+      "note": "\"Portugal in a Glass\" pairing €140, or €135 more for the premium pairing"
+    },
+    {
+      "name": "\"The Farm Experience\" vegetarian menu, 11 moments",
+      "meal": "dinner",
+      "price": 295,
+      "courses": 11,
+      "note": "Vegetables from the hotel group's own garden; also as 8 moments for €245; its dishes can also be ordered à la carte"
+    }
+  ],
+  "menusSource": "https://www.portobay.com/en/restaurants/restaurants-madeira/il-gallo-doro/menus",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2016,
+  "hotel": "The Cliff Bay, a five-star PortoBay hotel",
+  "bookingOpens": "Booking ahead is required: by phone or by email to gallodoro@portobay.pt.",
+  "bookingUrl": "https://www.portobay.com/en/restaurants/restaurants-madeira/il-gallo-doro",
+  "bookingPhone": "+351 291 707 700",
+  "cancellation": "No-shows and bookings not cancelled at least 24 hours ahead are charged €150 a person.",
+  "dressCode": "Smart casual. No sportswear, flip-flops or shorts.",
+  "children": "Children aged 8 and over are welcome.",
+  "infoSource": "https://www.portobay.com/en/restaurants/restaurants-madeira/il-gallo-doro",
+  "infoChecked": "2026-10-13"
 }

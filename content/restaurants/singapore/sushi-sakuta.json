@@ -15,21 +15,51 @@
   "reviews": 85,
   "dinner": 580,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase",
-  "dinnerNoteZh": "廚師發辦",
+  "dinnerNote": "Omakase, 5 appetisers and 10 sushi",
+  "dinnerNoteZh": "廚師發辦，5道前菜及10貫壽司",
   "sourceType": "press",
-  "source": "https://www.sushi-sakuta.com/menu/",
+  "source": "https://www.tablecheck.com/en/sushi-sakuta/reserve",
   "lunch": 350,
   "lunchType": "menu",
-  "lunchNote": "Omakase, from",
-  "lunchNoteZh": "廚師發辦起",
+  "lunchNote": "Omakase (5 appetisers and 10 sushi S$580)",
+  "lunchNoteZh": "廚師發辦（5道前菜及10貫壽司 S$580）",
   "lunchSourceType": "press",
-  "lunchSource": "https://www.sushi-sakuta.com/menu/",
+  "lunchSource": "https://www.tablecheck.com/en/sushi-sakuta/reserve",
   "website": "https://www.sushi-sakuta.com/",
   "lat": 1.293083,
   "lng": 103.858715,
   "placeId": "ChIJ8-btYLoZ2jER1ItL575IvY4",
   "michelinId": "1205650",
   "chef": "Yoshio Sakuta",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "dinner omakase",
+      "meal": "dinner",
+      "price": 580,
+      "note": "Five appetisers and ten pieces of sushi; also served at lunch as Lunch Course 2"
+    },
+    {
+      "name": "lunch omakase (Course 1)",
+      "meal": "lunch",
+      "price": 350,
+      "note": "Three appetisers and eight pieces of sushi"
+    },
+    {
+      "name": "Sakuta-Shima menu",
+      "meal": "dinner",
+      "price": 650,
+      "note": "Lunch or dinner; four appetisers, nine sushi, soup, dessert and two tempura courses by the neighbouring Tenshima"
+    }
+  ],
+  "menusSource": "https://www.tablecheck.com/en/sushi-sakuta/reserve",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through TableCheck, for up to seven guests. Lunch is one seating from 12.30pm (last seating 1pm) and dinner from 7pm (last seating 7.30pm).",
+  "bookingUrl": "https://www.tablecheck.com/en/sushi-sakuta/reserve",
+  "bookingPhone": "+65 9863 9302",
+  "cancellation": "Cancellations by phone only, more than 72 hours ahead. Later cancellations and no-shows are charged S$580 a person.",
+  "dressCode": "No heavy perfume: guests whose scent is overpowering may be turned away.",
+  "byob": "No outside bottles; the restaurant does not allow corkage.",
+  "infoSource": "https://www.tablecheck.com/en/sushi-sakuta/reserve",
+  "infoChecked": "2026-10-13"
 }

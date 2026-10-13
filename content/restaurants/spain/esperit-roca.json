@@ -18,20 +18,66 @@
   "dinnerNote": "Savoury menu: 6 dishes, 2 desserts (sweet menu €139)",
   "dinnerNoteZh": "鹹點套餐：6 道菜、2 道甜點（甜點套餐 €139）",
   "dinnerNoteEs": "Menú salado: 6 platos y 2 postres (menú dulce 139 €)",
-  "sourceType": "press",
-  "source": "https://yummybarcelona.com/esperit-roca/",
-  "lunch": 170,
+  "sourceType": "site",
+  "source": "https://esperitroca.com/en/restaurant/",
+  "lunch": 139,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Mon, Fri–Sun",
-  "lunchNoteZh": "午餐供應相同套餐・週一、週五至週日",
-  "lunchNoteEs": "El mismo menú al mediodía · lun, vie–dom",
-  "lunchSourceType": "press",
-  "lunchSource": "https://yummybarcelona.com/esperit-roca/",
+  "lunchNote": "Sweet Spirit menu: 2 dishes, 6 desserts (savoury menu €170) · Fri–Mon",
+  "lunchNoteZh": "甜點套餐：2 道菜、6 道甜點（鹹點套餐 €170）・週五至週一",
+  "lunchNoteEs": "Menú dulce: 2 platos y 6 postres (menú salado 170 €) · vie–lun",
+  "lunchSourceType": "site",
+  "lunchSource": "https://esperitroca.com/en/restaurant/",
   "website": "https://www.esperitroca.com/",
   "lat": 42.032312,
   "lng": 2.845389,
   "placeId": "ChIJu7HphPPnuhIRkXu7fXuC_kI",
   "michelinId": "1214142",
   "chef": "Joan Roca",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Salty Spirit menu",
+      "meal": "dinner",
+      "price": 170,
+      "note": "Lunch or dinner. Appetisers, 6 savoury dishes and 2 desserts, reinterpreting dishes from El Celler de Can Roca; a wine pairing chosen by Josep Roca is offered (price not listed)"
+    },
+    {
+      "name": "Sweet Spirit menu",
+      "meal": "dinner",
+      "price": 139,
+      "note": "Lunch or dinner. Appetisers, 2 savoury dishes and 6 desserts; a wine pairing is offered (price not listed)"
+    }
+  ],
+  "menusSource": "https://esperitroca.com/en/restaurant/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Restaurant Fontané",
+      "note": "Traditional Catalan cooking from the Roca brothers in the same castle, with a set menu and à la carte",
+      "url": "https://restaurantfontane.com/en/"
+    },
+    {
+      "name": "Lounge Bar at Hotel Esperit Roca",
+      "note": "The hotel's bar in the same castle serves cocktails from the Esperit Roca distillery with snacks; no booking needed",
+      "url": "https://hotelesperitroca.com/en/"
+    }
+  ],
+  "bookingOpens": "Online on the restaurant's own website (CoverManager). Tables are released up to 90 days ahead, with a new day opening at midnight Spanish time each day, for 2 to 8 guests.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 90,
+    "time": "00:00",
+    "tz": "Europe/Madrid",
+    "via": "CoverManager",
+    "source": "https://esperitroca.com/en/booking/",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://esperitroca.com/en/booking/",
+  "bookingPhone": "+34 872 20 14 43, Thursday to Monday",
+  "cancellation": "A card is needed to hold the table but nothing is charged in advance. Cancelling, or reducing the number of guests, less than 5 days before costs €50 per person. Guests are asked to confirm by email 5 days before.",
+  "waitlist": "If a day is full, join that day's online waiting list (each day has its own list, and you can join several). The restaurant contacts you if a table is cancelled.",
+  "groups": "Online bookings are for 2 to 8 guests. Changes to a confirmed booking are handled by email at restaurant@esperitroca.com.",
+  "dressCode": "No dress code is required, though the restaurant suggests dressing formally.",
+  "infoSource": "https://esperitroca.com/en/faqs/",
+  "infoChecked": "2026-10-13"
 }

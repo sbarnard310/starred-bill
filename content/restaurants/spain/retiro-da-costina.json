@@ -30,5 +30,21 @@
   "chef": "Manuel García",
   "chefSource": "michelin",
   "dinnerNote": "Costiña tasting menu",
-  "dinnerNoteEs": "Menú Costiña"
+  "dinnerNoteEs": "Menú Costiña",
+  "menus": [
+    {
+      "name": "Menú Costiña tasting menu",
+      "meal": "dinner",
+      "price": 185,
+      "note": "Lunch or dinner. Served to the whole table; drinks not included; price includes VAT."
+    }
+  ],
+  "menusSource": "https://retirodacostina.com/menu-degustacion/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "Online through the booking form on the restaurant's website (run by TheFork), or by phone.",
+  "bookingUrl": "https://retirodacostina.com/reserva/",
+  "bookingPhone": "+34 981 88 02 44",
+  "infoSource": "https://retirodacostina.com/reserva/",
+  "infoChecked": "2026-10-13"
 }

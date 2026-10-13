@@ -7,11 +7,11 @@
   "rating": 4.7,
   "reviews": 1242,
   "dinnerType": "menu",
-  "dinner": 940,
-  "dinnerNote": "Tasting menu (other menus from SEK 670)",
+  "dinner": 1255,
+  "dinnerNote": "Six-course tasting menu (four courses SEK 940, or à la carte)",
   "wine": 895,
-  "sourceType": "press",
-  "source": "https://thatsup.co.uk/gothenburg/restaurant/sk-mat-manniskor/",
+  "sourceType": "site",
+  "source": "https://skmat.se/meny/",
   "website": "https://skmat.se",
   "lat": 57.6972648,
   "lng": 11.9828127,
@@ -21,10 +21,37 @@
     "vegetarian",
     "vegan"
   ],
-  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 670 kr)",
+  "dinnerNoteSv": "Sexrätters smakmeny (fyra rätter 940 kr, eller à la carte)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteSv": "Endast middag",
   "chef": "Stefan Karlsson",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "six-course tasting menu",
+      "meal": "dinner",
+      "price": 1255,
+      "wine": 895,
+      "courses": 6,
+      "note": "The chefs' choice of six dishes; allow at least two and a half hours. Wine pairing SEK 895, premium SEK 1,595."
+    },
+    {
+      "name": "four-course tasting menu",
+      "meal": "dinner",
+      "price": 940,
+      "wine": 675,
+      "courses": 4,
+      "note": "The chefs' choice of four dishes; allow at least two hours. Wine pairing SEK 675, premium SEK 1,120."
+    }
+  ],
+  "menusSource": "https://skmat.se/meny/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the booking page on the restaurant's website (BokaBord); the booking is confirmed by email.",
+  "bookingUrl": "https://app.bokabord.se/reservation/?hash=8a794afa091c996bb3f8b94f8a59dac2",
+  "bookingPhone": "+46 31 81 25 80",
+  "groups": "For parties of more than six, email mail@skmat.se.",
+  "duration": "At least two hours for the four-course menu and two and a half hours for six courses.",
+  "infoSource": "https://skmat.se/boka-bord/",
+  "infoChecked": "2026-10-13"
 }

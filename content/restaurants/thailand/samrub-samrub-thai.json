@@ -10,10 +10,10 @@
   "reviews": 307,
   "dinner": 4290,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, plus service and VAT (++)",
-  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
+  "dinnerNote": "Full-course menu, plus service and VAT (++)",
+  "dinnerNoteTh": "เมนูฟูลคอร์ส ยังไม่รวมค่าบริการและภาษี (++)",
   "sourceType": "press",
-  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
+  "source": "https://www.tablecheck.com/en/samrub-samrub-thai/reserve/message",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTh": "เฉพาะมื้อค่ำ",
@@ -28,5 +28,25 @@
     "gluten-free"
   ],
   "chef": "Prin Polsuk",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Samrub Samrub Thai full-course menu",
+      "meal": "dinner",
+      "price": 4290,
+      "note": "Dinner only, two sittings (5.30pm and 8pm); prepaid in full when booking (THB 5,049.33 with service and VAT). Menu changes with the season"
+    }
+  ],
+  "menusSource": "https://www.tablecheck.com/en/samrub-samrub-thai/reserve/message",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2023,
+  "bookingOpens": "Online on TableCheck, at the kitchen counter or at a table, for up to six guests; larger groups book through LINE (@samrubforthai) or by email (samrubforthai@gmail.com). The menu price is paid in full when booking.",
+  "bookingUrl": "https://www.tablecheck.com/en/samrub-samrub-thai/reserve/message",
+  "bookingPhone": "+66 99 651 7292",
+  "cancellation": "Free cancellation more than 14 days ahead; 50% of the prepayment is charged between 7 and 14 days ahead, and 100% within 7 days. The 10% administration fee is never refunded.",
+  "groups": "Parties of more than six book through LINE (@samrubforthai) or by email.",
+  "dressCode": "Smart casual.",
+  "duration": "About two and a quarter hours: the 5.30pm sitting ends by 7.45pm. Guests more than 30 minutes late may miss some courses.",
+  "infoSource": "https://www.tablecheck.com/en/samrub-samrub-thai/reserve/message",
+  "infoChecked": "2026-10-13"
 }

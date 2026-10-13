@@ -12,8 +12,8 @@
   "dinnerNote": "Tasting menu (other menus from CHF 230)",
   "wine": 165,
   "sourceType": "site",
-  "source": "https://edenroc.ch/en/restaurants/la-brezza",
-  "website": "https://edenroc.ch/",
+  "source": "https://tschuggencollection.ch/en/hotel/hotel-eden-roc/restaurants",
+  "website": "https://tschuggencollection.ch/en/hotel/hotel-eden-roc/restaurants",
   "lat": 46.150934,
   "lng": 8.772871,
   "placeId": "ChIJDeVE6vnJhUcRvURHnxMlBiI",
@@ -33,5 +33,33 @@
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Mediterranea"
+  "cuisineIt": "Mediterranea",
+  "menus": [
+    {
+      "name": "Inspiration Menu",
+      "meal": "dinner",
+      "price": 305,
+      "wine": 165,
+      "courses": 8,
+      "note": "Also in seven courses (CHF 285, wine CHF 150), six (CHF 265, wine CHF 135) or five (CHF 245, wine CHF 120)."
+    },
+    {
+      "name": "Moving Mountains plant-based menu",
+      "meal": "dinner",
+      "price": 270,
+      "wine": 150,
+      "courses": 7,
+      "note": "Also in six courses (CHF 250) or five (CHF 230); wine pairing priced by the number of wines, CHF 120 to CHF 150."
+    }
+  ],
+  "menusSource": "https://assets.ctfassets.net/61in5m6adgj1/zKi6Wb008hwSEW1IwxMTL/f4ab61c3ece89e198447347a0ea37a59/2026_Menue_LaBrezza_DE-EN-FR-IT_2026.09.07.pdf",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2022,
+  "hotel": "the Hotel Eden Roc, a Tschuggen Collection hotel",
+  "bookingOpens": "Online through the 'Book a table' button on the hotel's restaurant page (ForATable), or by phone to the hotel.",
+  "bookingUrl": "https://tschuggencollection.ch/en/hotel/hotel-eden-roc/restaurants",
+  "bookingPhone": "+41 91 785 71 71",
+  "dressCode": "Long trousers are appreciated for men at dinner; shorts and Bermuda shorts should be avoided.",
+  "infoSource": "https://tschuggencollection.ch/en/hotel/hotel-eden-roc/restaurants",
+  "infoChecked": "2026-10-13"
 }

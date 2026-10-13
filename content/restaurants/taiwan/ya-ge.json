@@ -11,18 +11,18 @@
   "cuisineZh": "粵菜",
   "rating": 4.3,
   "reviews": 1386,
-  "dinner": 4580,
+  "dinner": 5380,
   "dinnerType": "menu",
-  "dinnerNote": "Seasonal menu, 7 courses",
-  "dinnerNoteZh": "季節七道式套餐",
-  "sourceType": "press",
-  "source": "https://wantrich.chinatimes.com/news/20260728900211-420101",
-  "lunch": 4580,
+  "dinnerNote": "Ya Ge Classic Set Menu (seasonal set menu NT$4,580; Michelin Signature Menu NT$12,800)",
+  "dinnerNoteZh": "雅閣經典套餐（季節套餐 NT$4,580、主廚米其林精選套餐 NT$12,800）",
+  "sourceType": "site",
+  "source": "https://www.mandarinoriental.com/en/taipei/songshan/dine/ya-ge",
+  "lunch": 2080,
   "lunchType": "menu",
-  "lunchNote": "Same menus at lunch",
-  "lunchNoteZh": "午餐供應相同菜單",
-  "lunchSourceType": "press",
-  "lunchSource": "https://wantrich.chinatimes.com/news/20260728900211-420101",
+  "lunchNote": "Yi Zhuan dim sum set menu, lunch only (other dim sum sets NT$2,380 and NT$3,380)",
+  "lunchNoteZh": "雅閣逸饌點心套餐，僅午餐供應（其他點心套餐 NT$2,380、NT$3,380）",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.mandarinoriental.com/en/taipei/songshan/dine/ya-ge",
   "website": "https://www.mandarinoriental.com/en/taipei/songshan/dine/ya-ge",
   "lat": 25.055801,
   "lng": 121.548349,
@@ -33,5 +33,66 @@
     "vegetarian"
   ],
   "chef": "Yuen Ming San",
-  "chefSource": "site"
+  "chefSource": "site",
+  "wine": 2500,
+  "menus": [
+    {
+      "name": "Michelin Signature Menu",
+      "meal": "dinner",
+      "price": 12800,
+      "wine": 2800,
+      "note": "Lunch or dinner; NT$15,600 with wine pairing, or NT$16,800 with the premium pairing"
+    },
+    {
+      "name": "Ya Ge Classic Set Menu",
+      "meal": "dinner",
+      "price": 5380,
+      "wine": 2500,
+      "note": "Lunch or dinner; NT$7,880 with wine pairing"
+    },
+    {
+      "name": "Seasonal Set Menu",
+      "meal": "dinner",
+      "price": 4580,
+      "wine": 1900,
+      "note": "Lunch or dinner; NT$6,480 with wine pairing"
+    },
+    {
+      "name": "Vegetarian Set Menu",
+      "meal": "dinner",
+      "price": 3988,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Zhen Zhuan dim sum set menu",
+      "meal": "lunch",
+      "price": 3380,
+      "note": "Lunch only"
+    },
+    {
+      "name": "Pin Zhuan dim sum set menu",
+      "meal": "lunch",
+      "price": 2380,
+      "note": "Lunch only"
+    },
+    {
+      "name": "Yi Zhuan dim sum set menu",
+      "meal": "lunch",
+      "price": 2080,
+      "note": "Lunch only"
+    }
+  ],
+  "menusSource": "https://www.mandarinoriental.com/en/taipei/songshan/dine/ya-ge",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2018,
+  "hotel": "the Mandarin Oriental, Taipei",
+  "bookingOpens": "Online on SevenRooms, by phone or by email (motpe-yage@mohg.com).",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/yagetaipei",
+  "bookingPhone": "+886 2 2715 6668",
+  "groups": "Five private dining rooms, the largest seating up to 20.",
+  "dressCode": "Smart elegant. Men are asked to wear collared shirts and closed shoes; slippers are not allowed in the dining room.",
+  "children": "A children's menu is available.",
+  "byob": "Corkage NT$1,000 a bottle of wine or spirits.",
+  "infoSource": "https://www.mandarinoriental.com/en/taipei/songshan/dine/ya-ge",
+  "infoChecked": "2026-10-13"
 }

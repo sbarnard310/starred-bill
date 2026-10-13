@@ -27,5 +27,34 @@
   "lunchNotePl": "Tylko kolacje",
   "areaPl": "Warszawa",
   "chef": "Bartosz Szymczak",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Full tasting menu",
+      "meal": "dinner",
+      "price": 690,
+      "wine": 450,
+      "note": "Also as a seasonal tasting menu at the same price (seasonal pairing PLN 650); pairings PLN 450 essential, PLN 450 alcohol-free or PLN 900 prestige; wagyu main PLN 150 extra"
+    },
+    {
+      "name": "Short tasting menu",
+      "meal": "dinner",
+      "price": 590,
+      "wine": 350,
+      "note": "Two fewer courses than the full menu; also as a seasonal menu at the same price (seasonal pairing PLN 550); pairings PLN 350 essential, PLN 350 alcohol-free or PLN 800 prestige"
+    }
+  ],
+  "menusSource": "https://rozbrat20.com.pl/wp-content/uploads/2023/09/menu_pelna_degustacja_ENG.pdf",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "Online through SevenRooms, which asks for a credit card to hold the booking. The phone is answered from 12pm to 4pm, Tuesday to Saturday; otherwise email biuro@rozbrat20.com.pl. Guests with vouchers book online.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/rozbrat20/reservations/create/search/?venues=rozbrat20",
+  "bookingPhone": "+48 690 125 270, 12pm to 4pm Tuesday to Saturday",
+  "cancellation": "Cancel at least 24 hours ahead. Later cancellations and no-shows are charged PLN 500 a person to the card on file. Tables are held for 15 minutes; call if running late.",
+  "dressCode": "Smart casual. No shorts or sportswear.",
+  "children": "Guests aged 12 and over only. No children's menu or high chairs.",
+  "duration": "About three hours for two to four guests; SevenRooms allows four and a half hours for larger tables.",
+  "servicePct": 12.5,
+  "infoSource": "https://rozbrat20.com.pl/en/",
+  "infoChecked": "2026-10-13"
 }

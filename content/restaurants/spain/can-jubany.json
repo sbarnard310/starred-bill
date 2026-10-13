@@ -15,15 +15,15 @@
   "dinnerNoteEs": "Menú El Gran Àpat (Un Passeig per Catalunya 122 €)",
   "wine": 115,
   "sourceType": "site",
-  "source": "https://canjubany.com/",
-  "lunch": 172,
+  "source": "https://canjubany.com/carta/",
+  "lunch": 122,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Sat",
-  "lunchNoteZh": "午餐供應相同套餐・週二至週六",
-  "lunchNoteEs": "El mismo menú al mediodía · mar–sáb",
-  "lunchWine": 115,
+  "lunchNote": "Un Passeig per Catalunya menu · Tue–Sat (El Gran Àpat €172)",
+  "lunchNoteZh": "「Un Passeig per Catalunya」套餐・週二至週六（「El Gran Àpat」€172）",
+  "lunchNoteEs": "Menú Un Passeig per Catalunya · mar–sáb (El Gran Àpat 172 €)",
+  "lunchWine": 75,
   "lunchSourceType": "site",
-  "lunchSource": "https://canjubany.com/",
+  "lunchSource": "https://canjubany.com/carta/",
   "website": "https://canjubany.com/",
   "lat": 41.929388,
   "lng": 2.301892,
@@ -35,5 +35,36 @@
     "gluten-free"
   ],
   "chef": "Nandu Jubany",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "El Gran Àpat tasting menu",
+      "meal": "dinner",
+      "price": 172,
+      "wine": 115,
+      "note": "Lunch or dinner; seasonal dishes, Catalan cheeses and a 'festival' of every dessert to share; bread and petits fours €8 and water €3.25 extra; 10% VAT included"
+    },
+    {
+      "name": "Un Passeig per Catalunya menu",
+      "meal": "dinner",
+      "price": 122,
+      "wine": 75,
+      "note": "Lunch or dinner; a tribute to Catalan produce; dessert festival €9.50 and cheeses €13 extra; bread and petits fours €8 and water €3.25 extra"
+    }
+  ],
+  "menusSource": "https://canjubany.com/carta/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "À la carte at Can Jubany",
+      "note": "Starters €27–39, mains €28–65 and desserts €14–18, with half portions at 10% more",
+      "url": "https://canjubany.com/carta/"
+    }
+  ],
+  "bookingOpens": "Online on the restaurant's website (through TheFork) or by phone.",
+  "bookingUrl": "https://canjubany.com/reservar/",
+  "bookingPhone": "+34 938 891 023",
+  "groups": "Private dining rooms, first-floor dining rooms and a kitchen table; ask by phone or at info@canjubany.com.",
+  "infoSource": "https://canjubany.com/contacte/",
+  "infoChecked": "2026-10-13"
 }

@@ -8,13 +8,13 @@
   "rating": 4.8,
   "reviews": 245,
   "dinnerType": "menu",
-  "dinner": 105,
-  "dinnerNote": "Tasting menu (other menus from €85)",
-  "dinnerNoteEs": "Menú degustación (otros menús desde 85 €)",
-  "sourceType": "press",
-  "source": "https://www.directoalpaladar.com/viajes/estos-25-nuevos-restaurantes-estrella-guia-michelin-2026-como-donde-estan-cuanto-cuestan",
-  "lunchNote": "Open for lunch",
-  "lunchNoteEs": "Abre a mediodía",
+  "dinner": 115,
+  "dinnerNote": "Sincio tasting menu (Albiar menu €95)",
+  "dinnerNoteEs": "Menú degustación Sincio (menú Albiar 95 €)",
+  "sourceType": "site",
+  "source": "https://picovelasco.com/menuspicovelasco/",
+  "lunchNote": "Albiar menu (Sincio menu €115)",
+  "lunchNoteEs": "Menú Albiar (menú Sincio 115 €)",
   "website": "https://www.picovelasco.com",
   "lat": 43.3688338,
   "lng": -3.4447959,
@@ -24,5 +24,40 @@
     "gluten-free"
   ],
   "chef": "Nacho Solana",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "lunch": 95,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://picovelasco.com/menuspicovelasco/",
+  "menus": [
+    {
+      "name": "Sincio tasting menu",
+      "meal": "dinner",
+      "price": 115,
+      "note": "2026 menu; VAT and bread included, drinks not; served to the whole table"
+    },
+    {
+      "name": "Albiar tasting menu",
+      "meal": "dinner",
+      "price": 95,
+      "note": "2026 menu, a shorter version of Sincio; VAT and bread included, drinks not; served to the whole table"
+    }
+  ],
+  "menusSource": "https://picovelasco.com/menuspicovelasco/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Pico Velasco's gastronomic terrace",
+      "note": "The terrace at the same hotel serves lunch Tuesday to Sunday and dinner Tuesday to Saturday",
+      "url": "https://picovelasco.com/terraza-gastronomica/"
+    }
+  ],
+  "hotel": "the Pico Velasco boutique hotel",
+  "bookingOpens": "Online through the restaurant's website (TheFork), or by phone or email (reservas@picovelasco.com). A card number is needed to confirm a booking.",
+  "bookingUrl": "https://picovelasco.com/reservar_restaurante/",
+  "bookingPhone": "+34 842 84 11 11, Tuesday and Sunday 10am–5pm, Wednesday to Saturday 10am–9pm",
+  "groups": "Events have their own team: +34 633 53 23 24 or eventos@picovelasco.com.",
+  "groupsUrl": "https://picovelasco.com/eventos/",
+  "infoSource": "https://picovelasco.com/terminos-condiciones/",
+  "infoChecked": "2026-10-13"
 }

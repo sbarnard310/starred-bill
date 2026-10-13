@@ -8,11 +8,11 @@
   "rating": 4.6,
   "reviews": 1337,
   "dinnerType": "menu",
-  "dinner": 275,
-  "dinnerNote": "Tasting menu (other menus from €175)",
-  "wine": 140,
-  "sourceType": "press",
-  "source": "https://www.feinschmecker.de/restaurant/pt/leça-da-palmeira/casa-de-chá-da-boa-nova-d1",
+  "dinner": 295,
+  "dinnerNote": "XXI Takes tasting menu (other menus from €140)",
+  "wine": 200,
+  "sourceType": "site",
+  "source": "https://casadechadaboanova.pt/_menus/MENU-CCBN-EN.pdf",
   "website": "https://www.casadechadaboanova.pt/",
   "lat": 41.2027411,
   "lng": -8.7147233,
@@ -25,8 +25,54 @@
   ],
   "chef": "Rui Paula",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação (outros menus desde 175 €)",
-  "lunchNote": "Open for lunch · Tue–Sat",
-  "lunchNotePt": "Aberto ao almoço · ter.–sáb.",
-  "cuisinePt": "Moderna"
+  "dinnerNotePt": "Menu de degustação XXI Takes (outros menus desde 140 €)",
+  "lunchNote": "Vegetarian VI Takes menu, the cheapest; every menu is served at lunch · Tue–Sat",
+  "lunchNotePt": "Menu vegetariano VI Takes, o mais barato; todos os menus são servidos ao almoço · ter.–sáb.",
+  "cuisinePt": "Moderna",
+  "lunch": 140,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://casadechadaboanova.pt/_menus/MENU-CCBN-EN.pdf",
+  "menus": [
+    {
+      "name": "\"By Seas Never Before Sailed\" XXI Takes tasting menu",
+      "meal": "dinner",
+      "price": 295,
+      "wine": 200,
+      "courses": 21,
+      "note": "Seafood menu, lunch or dinner; alcohol-free pairing €100"
+    },
+    {
+      "name": "XII Takes tasting menu",
+      "meal": "dinner",
+      "price": 245,
+      "wine": 180,
+      "courses": 12,
+      "note": "Lunch or dinner; alcohol-free pairing €100"
+    },
+    {
+      "name": "VI Takes tasting menu",
+      "meal": "dinner",
+      "price": 205,
+      "wine": 140,
+      "courses": 6,
+      "note": "Lunch or dinner; alcohol-free pairing €100"
+    },
+    {
+      "name": "vegetarian XXI Takes menu",
+      "meal": "dinner",
+      "price": 210,
+      "wine": 200,
+      "courses": 21,
+      "note": "Lunch or dinner; also as XII Takes (€170, pairing €180) or VI Takes (€140, pairing €140); alcohol-free pairing €100"
+    }
+  ],
+  "menusSource": "https://casadechadaboanova.pt/_menus/MENU-CCBN-EN.pdf",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2019,
+  "bookingOpens": "Online through TheFork (from the restaurant's Reservations page), by phone or by email to boanova@ruipaula.com.",
+  "bookingUrl": "https://www.casadechadaboanova.pt/en/reservations/",
+  "bookingPhone": "+351 229 940 066",
+  "infoSource": "https://www.casadechadaboanova.pt/en/reservations/",
+  "infoChecked": "2026-10-13"
 }

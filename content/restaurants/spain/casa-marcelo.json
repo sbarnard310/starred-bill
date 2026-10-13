@@ -24,6 +24,22 @@
   "michelinId": "223252",
   "chef": "Marcelo Tejedor",
   "chefSource": "michelin",
-  "dinnerNote": "Autumn tasting menu",
-  "dinnerNoteEs": "Menú de otoño"
+  "dinnerNote": "Rosalía autumn menu (the only menu)",
+  "dinnerNoteEs": "Menú Rosalía de otoño (menú único)",
+  "menus": [
+    {
+      "name": "Rosalía autumn menu",
+      "meal": "dinner",
+      "price": 135,
+      "courses": 13,
+      "note": "The only menu, lunch or dinner; no à la carte; VAT included"
+    }
+  ],
+  "menusSource": "https://www.casamarcelo.net/en/menu",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through CoverManager from the restaurant's website, or by phone or email.",
+  "bookingUrl": "https://www.covermanager.com/reserve/module_restaurant/restaurante-casa-marcelo/english",
+  "bookingPhone": "+34 981 558 580",
+  "infoSource": "https://www.casamarcelo.net/en",
+  "infoChecked": "2026-10-13"
 }

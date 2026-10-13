@@ -9,14 +9,14 @@
   "reviews": 651,
   "dinnerType": "menu",
   "dinner": 105,
-  "dinnerNote": "Tasting menu (other menus from €85)",
-  "dinnerNoteEs": "Menú degustación (otros menús desde 85 €)",
+  "dinnerNote": "Ambicioso tasting menu, 22 courses (Coherente menu €85)",
+  "dinnerNoteEs": "Menú degustación Ambicioso, 22 pases (menú Coherente 85 €)",
   "sourceType": "site",
   "source": "https://www.laeradelosnogales.com/menu/",
-  "lunch": 105,
+  "lunch": 85,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Mon",
-  "lunchNoteEs": "El mismo menú al mediodía · jue–lun",
+  "lunchNote": "Coherente menu, 16 courses (Ambicioso menu €105) · Thu–Mon (Oct–Apr)",
+  "lunchNoteEs": "Menú Coherente, 16 pases (menú Ambicioso 105 €) · jue–lun (oct–abr)",
   "lunchSourceType": "site",
   "lunchSource": "https://www.laeradelosnogales.com/menu/",
   "website": "https://www.laeradelosnogales.com",
@@ -28,5 +28,32 @@
     "gluten-free"
   ],
   "chef": "Toño Rodríguez",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Ambicioso tasting menu",
+      "meal": "dinner",
+      "price": 105,
+      "courses": 22,
+      "note": "Lunch only, for tables seated by 2:30pm; drinks not included; pairings on request, booked at least 48 hours ahead; served at lunch Thursday to Monday (October to April), and at dinner Monday to Wednesday in July and August"
+    },
+    {
+      "name": "Coherente tasting menu",
+      "meal": "lunch",
+      "price": 85,
+      "courses": 16,
+      "note": "Lunch only; drinks not included; pairings on request, booked at least 48 hours ahead"
+    }
+  ],
+  "menusSource": "https://www.laeradelosnogales.com/menu/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the restaurant's website (TheFork), by email (reservas@laeradelosnogales.com) or by phone. Phone lines are open 10am to 1pm on the days the restaurant opens.",
+  "bookingUrl": "https://www.laeradelosnogales.com/reservas/",
+  "bookingPhone": "+34 693 01 94 79, 10am to 1pm on opening days",
+  "cancellation": "Free cancellation up to 24 hours before; after that the restaurant may charge €40 per guest to the card given.",
+  "groups": "Events and celebrations are arranged through the enquiry form on the events page.",
+  "groupsUrl": "https://www.laeradelosnogales.com/eventos/",
+  "children": "No children under 8. A children's menu for ages 8 to 14 costs €35 and must be requested when booking.",
+  "infoSource": "https://www.laeradelosnogales.com/reservas/",
+  "infoChecked": "2026-10-13"
 }

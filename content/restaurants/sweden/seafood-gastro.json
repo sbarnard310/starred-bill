@@ -8,23 +8,66 @@
   "reviews": 45,
   "dinnerType": "menu",
   "dinner": 3650,
-  "dinnerNote": "Tasting menu (other menus from SEK 2,200)",
+  "dinnerNote": "Signature Menu (Menu Selection SEK 2,200, Wed–Thu)",
   "wine": 2200,
   "sourceType": "site",
   "source": "https://mdghs.se/seafood-gastro/",
-  "website": "https://mdghs.se/en/seafood-gastro/",
+  "website": "https://mathiasdahlgren.se/en/seafood-gastro/",
   "lat": 59.3294565,
   "lng": 18.0756768,
   "placeId": "ChIJSXGfco2dX0YRi5M7Vjb_mjQ",
   "michelinId": "1210020",
-  "dinnerNoteSv": "Avsmakningsmeny (andra menyer från 2 200 kr)",
-  "lunch": 3650,
+  "dinnerNoteSv": "Signature Menu (Menu Selection 2 200 kr, ons–tors)",
+  "lunch": 2200,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fridays",
-  "lunchNoteSv": "Samma meny till lunch · fredag",
-  "lunchWine": 2200,
+  "lunchNote": "Menu Selection (Signature Menu SEK 3,650) · Fridays",
+  "lunchNoteSv": "Menu Selection (Signature Menu 3 650 kr) · fredag",
+  "lunchWine": 1400,
   "lunchSourceType": "site",
-  "lunchSource": "https://mdghs.se/seafood-gastro/",
+  "lunchSource": "https://mathiasdahlgren.se/en/seafood-gastro/",
   "chef": "Mathias Dahlgren and Jonas Hedenqvist",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Signature Menu",
+      "meal": "dinner",
+      "price": 3650,
+      "wine": 2200,
+      "note": "Wednesday to Saturday evenings and Friday lunch. Wine pairing SEK 2,200, premium SEK 4,290, alcohol-free SEK 1,100, mixed SEK 1,600. Can't be made without fish, seafood or milk protein."
+    },
+    {
+      "name": "Menu Selection",
+      "meal": "dinner",
+      "price": 2200,
+      "wine": 1400,
+      "note": "A shorter version of the Signature Menu. Wednesday and Thursday evenings and Friday lunch. Wine pairing SEK 1,400, premium SEK 2,990, alcohol-free SEK 700, mixed SEK 1,000."
+    }
+  ],
+  "menusSource": "https://mathiasdahlgren.se/en/seafood-gastro/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Matbaren",
+      "note": "Mathias Dahlgren's food bar in the same hotel, serving medium-sized seasonal dishes; lunch Wednesday to Friday, dinner Monday to Saturday.",
+      "url": "https://mathiasdahlgren.se/en/matbaren/"
+    }
+  ],
+  "starsSince": 2024,
+  "hotel": "the Grand Hôtel Stockholm",
+  "bookingOpens": "Online through the booking button on the restaurant's website, or by email or phone. Tables are released a couple of months at a time: in October 2026 bookings were open for October and November.",
+  "bookingWindow": {
+    "type": "announced",
+    "note": "Released a couple of months at a time; in October 2026 bookings were open for October and November.",
+    "tz": "Europe/Stockholm",
+    "via": "WaiterAid",
+    "source": "https://mathiasdahlgren.se/en/seafood-gastro/",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://mathiasdahlgren.se/en/seafood-gastro/",
+  "bookingPhone": "+46 8 679 35 84",
+  "groups": "Two private dining rooms for 14 and 10 guests, which can be combined for up to 24, with seasonal set menus or a menu planned with the team; ask by email at reservations@mdghs.com.",
+  "groupsUrl": "https://mathiasdahlgren.se/en/private-dining/",
+  "duration": "About four hours for the Signature Menu, and about two hours for Menu Selection.",
+  "infoSource": "https://mathiasdahlgren.se/en/seafood-gastro/",
+  "infoChecked": "2026-10-13"
 }

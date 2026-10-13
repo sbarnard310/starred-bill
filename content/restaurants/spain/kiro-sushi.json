@@ -25,5 +25,22 @@
   "chef": "Félix Jiménez",
   "chefSource": "press",
   "dinnerNote": "Sushi tasting menu",
-  "dinnerNoteEs": "Menú degustación de sushi"
+  "dinnerNoteEs": "Menú degustación de sushi",
+  "noPairing": true,
+  "menus": [
+    {
+      "name": "Sushi tasting menu",
+      "meal": "dinner",
+      "price": 160,
+      "note": "The only menu, served at dinner Tuesday to Friday and at lunch on Saturday; VAT included; no alcohol is served, so there is no wine pairing"
+    }
+  ],
+  "menusSource": "https://kirosushi.es/en/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online on the restaurant's own website only. The booking calendar opens on the 1st of each month at 10am Spanish time. Half the menu price (€80 a person) is paid when booking and the rest on the day.",
+  "bookingUrl": "https://kirosushi.es/en/",
+  "cancellation": "Cancel at least 72 hours ahead for a refund of the deposit; later cancellations, no-shows and fewer guests than booked are not refunded. Booking dates cannot be changed, and guests who arrive after their booked time are not let in and lose the booking and deposit.",
+  "children": "Children aged 12 and over are recommended. Prams are not allowed.",
+  "infoSource": "https://kirosushi.es/en/",
+  "infoChecked": "2026-10-13"
 }

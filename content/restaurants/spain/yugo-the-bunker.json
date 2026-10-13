@@ -17,19 +17,47 @@
   "wine": 65,
   "sourceType": "site",
   "source": "https://yugothebunker.com/",
-  "lunch": 175,
+  "lunch": 145,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Sun",
-  "lunchNoteZh": "午餐供應相同套餐・週二至週日",
-  "lunchNoteEs": "El mismo menú al mediodía · mar–dom",
+  "lunchNote": "Clásicos del Bunker menu (Evolution menu €175) · Tue–Sun",
+  "lunchNoteZh": "「Clásicos del Bunker」套餐（「Evolution」套餐 €175）・週二至週日",
+  "lunchNoteEs": "Menú Clásicos del Bunker (menú Evolution 175 €) · mar–dom",
   "lunchWine": 65,
   "lunchSourceType": "site",
-  "lunchSource": "https://yugothebunker.com/",
+  "lunchSource": "https://yugothebunker.com/yugo/carta-japones-alta-cocina",
   "website": "https://yugothebunker.com/",
   "lat": 40.410625,
   "lng": -3.694612,
   "placeId": "ChIJx8vqfrAoQg0RMc6ahl5daPk",
   "michelinId": "481000",
   "chef": "Julián Mármol",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Evolution menu",
+      "meal": "dinner",
+      "price": 175,
+      "wine": 65,
+      "courses": 16,
+      "note": "Lunch or dinner. Newer dishes; choice of main and dessert. Wine pairing €65, sake pairing €70, beer pairing €30."
+    },
+    {
+      "name": "Clásicos del Bunker menu",
+      "meal": "dinner",
+      "price": 145,
+      "wine": 65,
+      "courses": 14,
+      "note": "Lunch or dinner. The restaurant's best-known dishes; choice of main and dessert. Wine pairing €65, sake €70, beer €30; A5 wagyu tataki €37 extra."
+    }
+  ],
+  "menusSource": "https://yugothebunker.com/yugo/carta-japones-alta-cocina",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2018,
+  "bookingOpens": "Online through CoverManager on the restaurant's website, or by phone or WhatsApp. A card may be needed to secure the booking.",
+  "bookingUrl": "https://www.covermanager.com/reservation/module_restaurant/yugo-thebunker/spanish",
+  "bookingPhone": "+34 91 444 90 34",
+  "groups": "Two private rooms, the upstairs izakaya and the downstairs bunker, each seat 15 for private and corporate events; ask through the events page.",
+  "groupsUrl": "https://yugothebunker.com/eventos",
+  "infoSource": "https://yugothebunker.com/",
+  "infoChecked": "2026-10-13"
 }

@@ -9,16 +9,16 @@
   "reviews": 1257,
   "dinnerType": "menu",
   "dinner": 240,
-  "dinnerNote": "Tasting menu (other menus from €190)",
-  "dinnerNoteEs": "Menú degustación (otros menús desde 190 €)",
+  "dinnerNote": "Descuberta menu (Marexada €210, Ronsel €190)",
+  "dinnerNoteEs": "Menú Descuberta (Marexada 210 €, Ronsel 190 €)",
   "wine": 95,
   "sourceType": "site",
   "source": "https://www.cullerdepau.com/reservas-ga/",
-  "lunch": 240,
+  "lunch": 190,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Mon",
-  "lunchNoteEs": "El mismo menú al mediodía · jue–lun",
-  "lunchWine": 95,
+  "lunchNote": "Ronsel menu · Thu–Mon (Descuberta €240 also served)",
+  "lunchNoteEs": "Menú Ronsel · jue–lun (también Descuberta 240 €)",
+  "lunchWine": 65,
   "lunchSourceType": "site",
   "lunchSource": "https://www.cullerdepau.com/reservas-ga/",
   "website": "https://www.cullerdepau.com/es/",
@@ -32,5 +32,43 @@
     "gluten-free"
   ],
   "chef": "Javier Olleros Rodríguez",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Descuberta menu",
+      "meal": "dinner",
+      "price": 240,
+      "wine": 95,
+      "note": "Lunch or dinner; the longest and most inventive: four snacks, 13 to 15 dishes, a pre-dessert and two desserts; about three and a half hours; served from 1.30 to 2pm at lunch and until 9pm at dinner"
+    },
+    {
+      "name": "Marexada menu",
+      "meal": "dinner",
+      "price": 210,
+      "wine": 80,
+      "courses": 14,
+      "note": "Lunch or dinner; four snacks, seven dishes, a pre-dessert and two desserts; about two and a half hours; can be made vegetarian"
+    },
+    {
+      "name": "Ronsel menu",
+      "meal": "dinner",
+      "price": 190,
+      "wine": 65,
+      "courses": 11,
+      "note": "Lunch or dinner; the shortest, with the most classic dishes: five snacks, four dishes and two desserts; about an hour and a half; can be made vegetarian or vegan"
+    }
+  ],
+  "menusSource": "https://www.cullerdepau.com/reservas-ga/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2020,
+  "bookingOpens": "Online through the restaurant's website (TheFork), or by email or phone. Every booking is guaranteed with a credit card, and a confirmation comes by email or SMS.",
+  "bookingUrl": "https://www.cullerdepau.com/reserva-ga/",
+  "bookingPhone": "+34 986 732 275",
+  "cancellation": "Cancel in writing at least 24 hours ahead, with the restaurant's confirmation; later cancellations are charged under the cancellation policy taken on the card.",
+  "walkIns": "Booking is recommended as space is limited; for last-minute cancellations, phone or email.",
+  "dressCode": "No strict dress code; just no beachwear.",
+  "children": "Children are welcome, though there's no play area; a children's menu for under-12s (starter, main and dessert) costs €75. High chairs on request.",
+  "duration": "About three and a half hours for Descuberta, two and a half for Marexada and an hour and a half for Ronsel.",
+  "infoSource": "https://www.cullerdepau.com/reserva-ga/",
+  "infoChecked": "2026-10-13"
 }

@@ -9,20 +9,20 @@
   "cuisineZh": "日本菜",
   "rating": 4.7,
   "reviews": 1113,
-  "dinner": 177,
+  "dinner": 218,
   "dinnerType": "menu",
-  "dinnerNote": "(G)Astro menu, 13 dishes (Koy menu from €115)",
-  "dinnerNoteZh": "「(G)Astro」套餐，13 道（「Koy」套餐 €115 起）",
-  "dinnerNoteEs": "Menú (G)Astro, 13 platos (menú Koy desde 115 €)",
-  "sourceType": "press",
-  "source": "https://www.timeout.es/barcelona/es/restaurantes/koy-shunka",
-  "lunch": 177,
+  "dinnerNote": "Experience Menú Koy (shorter Menú Koy €178)",
+  "dinnerNoteZh": "「Experience Menú Koy」套餐（較短的「Menú Koy」€178）",
+  "dinnerNoteEs": "Menú Experience Koy (menú Koy, más corto, 178 €)",
+  "sourceType": "site",
+  "source": "http://www.koyshunka.com/KoyShunka/eng_menu_gastro.html",
+  "lunch": 178,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sat",
-  "lunchNoteZh": "午餐供應相同套餐・週五至週六",
-  "lunchNoteEs": "El mismo menú al mediodía · vie–sáb",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.timeout.es/barcelona/es/restaurantes/koy-shunka",
+  "lunchNote": "Menú Koy (Experience menu €218) · Thu–Sat",
+  "lunchNoteZh": "「Menú Koy」套餐（「Experience」套餐 €218）・週四至週六",
+  "lunchNoteEs": "Menú Koy (menú Experience 218 €) · jue–sáb",
+  "lunchSourceType": "site",
+  "lunchSource": "http://www.koyshunka.com/KoyShunka/eng_menu_koy.html",
   "website": "https://www.koyshunka.com/KoyShunka/esp_home.html",
   "lat": 41.385908,
   "lng": 2.175425,
@@ -34,5 +34,27 @@
     "kosher"
   ],
   "chef": "Hideki Matsuhisa",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Experience Menú Koy",
+      "meal": "dinner",
+      "price": 218,
+      "note": "Lunch or dinner; VAT included; one menu per table"
+    },
+    {
+      "name": "Menú Koy",
+      "meal": "dinner",
+      "price": 178,
+      "note": "Lunch or dinner; VAT included; one menu per table"
+    }
+  ],
+  "menusSource": "http://www.koyshunka.com/KoyShunka/eng_menus.html",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the restaurant's website (CoverManager) or by phone. Bookings are not taken by email.",
+  "bookingUrl": "https://www.covermanager.com/reservation/module_restaurant/restaurante-koyshunka/english",
+  "bookingPhone": "+34 934 12 79 39",
+  "children": "Not recommended for children under 8, because of the length of the menu. No prams or high chairs.",
+  "infoSource": "http://www.koyshunka.com/KoyShunka/reservas_Koyshunka_ENG.html",
+  "infoChecked": "2026-10-13"
 }

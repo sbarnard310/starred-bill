@@ -29,14 +29,47 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 175)",
   "cuisineFr": "Cuisine française contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 175)",
-  "lunch": 250,
+  "lunch": 85,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sat",
-  "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Sa",
-  "lunchNoteFr": "Même menu le midi · mer.–sam.",
-  "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
-  "lunchWine": 98,
+  "lunchNote": "Déjeuner menu, 4 courses (5 courses CHF 105; Moments menu from CHF 175) · Wed–Fri",
+  "lunchNoteDe": "Mittagsmenü «Déjeuner», 4 Gänge (5 Gänge CHF 105; Menü «Moments» ab CHF 175) · Mi–Fr",
+  "lunchNoteFr": "Menu « Déjeuner » en 4 services (5 services CHF 105 ; menu « Moments » dès CHF 175) · mer.–ven.",
+  "lunchNoteIt": "Menu «Déjeuner» di 4 portate (5 portate CHF 105; menu «Moments» da CHF 175) · mer–ven",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.leperolles.ch/menu-perolles",
-  "cuisineIt": "Francese contemporanea"
+  "lunchSource": "https://www.leperolles.ch/menu-marche-perolles",
+  "cuisineIt": "Francese contemporanea",
+  "menus": [
+    {
+      "name": "Moments menu",
+      "meal": "dinner",
+      "price": 250,
+      "wine": 98,
+      "courses": 9,
+      "note": "Lunch or dinner. Also in eight courses (CHF 205, pairing CHF 88) or six (CHF 175, pairing CHF 79). Other pairings for nine courses: Swiss wines CHF 140, 'Pépites' CHF 195, wine and alcohol-free mix CHF 89, alcohol-free CHF 79. Optional supplements: partridge CHF 25, lièvre à la royale CHF 25 or CHF 55. Vegetarian version on request."
+    },
+    {
+      "name": "Déjeuner lunch menu",
+      "meal": "lunch",
+      "price": 85,
+      "courses": 4,
+      "note": "Wednesday to Friday lunch only; changes weekly. Five courses CHF 105. Vegetarian version on request."
+    }
+  ],
+  "menusSource": "https://www.leperolles.ch/le-perolles",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Le Petit Pérolles",
+      "price": 24,
+      "note": "The house brasserie: dish of the day CHF 24 (three courses CHF 36) Wednesday to Friday lunch, plus an à la carte menu; open Wednesday to Saturday.",
+      "url": "https://www.leperolles.ch/le-petit-perolles"
+    }
+  ],
+  "bookingOpens": "Online through Libro on the restaurant's reservation page, or by phone.",
+  "bookingUrl": "https://booking.libroreserve.com/262dc35ff8ec64e/FR017194186032/seat",
+  "bookingPhone": "+41 26 347 40 30",
+  "groups": "Business meals, team outings, weddings and birthdays are arranged through the contact form on the 'Réunions et célébrations' page.",
+  "groupsUrl": "https://www.leperolles.ch/reunions-et-celebrations",
+  "infoSource": "https://www.leperolles.ch/reservation",
+  "infoChecked": "2026-10-13"
 }

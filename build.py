@@ -6672,7 +6672,15 @@ RESTAURANT_PAGES = ("le-bernardin", "la-pergola", "restaurant-gordon-ramsay", "o
                     "nishiazabu-taku", "oniku-karyu", "oryori-mashita", "sushi-matsuura", "sushi-miura", "tempura-motoyoshi",
                     "yakitori-ichimatsu", "max-cekot-kitchen", "archibald-de-prince", "auntie-gaik-leans-old-school-eatery",
                     "terra-dining", "la-once-mil", "le-chique", "los-danzantes", "sud-777", "aan-de-poel", "de-kromme-dissel", "de-leuf",
-                    "lars-amsterdam", "restaurant-212", "restaurant-de-kas", "ron-gastrobar", "jano-bistro", "sabi-omakase-oslo")
+                    "lars-amsterdam", "restaurant-212", "restaurant-de-kas", "ron-gastrobar", "jano-bistro", "sabi-omakase-oslo",
+                    # Batch 6, wave 4, 13 Oct 2026
+                    "rozbrat-20", "casa-de-cha-da-boa-nova", "henrique-sa-pessoa", "il-gallo-doro", "vila-joya", "buona-terra",
+                    "jin-ting-wan", "loca-niru", "shisen-hanten", "summer-pavilion", "sushi-sakuta", "can-jubany", "casa-gerardo",
+                    "casa-marcelo", "culler-de-pau", "dins-santi-taura", "esperit-roca", "gente-rara", "kiro-sushi", "koy-shunka",
+                    "la-casa-de-manolo-franco", "la-era-de-los-nogales", "pepe-vieira", "pico-velasco", "retiro-da-costina",
+                    "yugo-the-bunker", "seafood-gastro", "sk-mat-manniskor", "gilles-varone", "la-brezza", "la-brezza-arosa",
+                    "le-perolles", "widder-restaurant", "wirtschaft-im-franz", "impromptu-by-paul-lee", "la-vie-by-thomas-buhner", "ya-ge",
+                    "blue-by-alain-ducasse", "cannubi-by-umberto-bombana", "samrub-samrub-thai")
 # The owner's rule (9 Oct 2026): at most 10 questions per page, and none that repeats what the page already says. On a
 # restaurant page the questions are its own section headings, each with its answer straight under it; the structured data
 # (FAQPage) lists them, most-asked first.

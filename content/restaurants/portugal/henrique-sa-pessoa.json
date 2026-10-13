@@ -7,11 +7,11 @@
   "rating": 4.8,
   "reviews": 42,
   "dinnerType": "menu",
-  "dinner": 220,
-  "dinnerNote": "Tasting menu (other menus from €140)",
+  "dinner": 245,
+  "dinnerNote": "Clássicos or Costa a Costa tasting menu (Encontros menu €160)",
   "wine": 140,
-  "sourceType": "press",
-  "source": "https://magg.sapo.pt/comida/restaurantes/artigos/saiba-o-que-pode-comer-no-novo-restaurante-de-henrique-sa-pessoa-e-quanto-tem-de-gastar-que-mantem-as-estrelas-michelin",
+  "sourceType": "site",
+  "source": "https://www.henriquesapessoa.com/menu",
   "website": "https://www.henriquesapessoa.com/",
   "lat": 38.7235618,
   "lng": -9.1559051,
@@ -22,8 +22,46 @@
   ],
   "chef": "Henrique Sá Pessoa",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação (outros menus desde 140 €)",
-  "lunchNote": "Open for lunch · Thu–Sat",
-  "lunchNotePt": "Aberto ao almoço · qui.–sáb.",
-  "cuisinePt": "Criativa"
+  "dinnerNotePt": "Menu de degustação Clássicos ou Costa a Costa (menu Encontros 160 €)",
+  "lunchNote": "Encontros menu; the tasting menus are served at lunch too · Thu–Sat",
+  "lunchNotePt": "Menu Encontros; os menus de degustação também são servidos ao almoço · qui.–sáb.",
+  "cuisinePt": "Criativa",
+  "lunch": 160,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.henriquesapessoa.com/menu",
+  "menus": [
+    {
+      "name": "Clássicos tasting menu",
+      "meal": "dinner",
+      "price": 245,
+      "courses": 6,
+      "note": "Signature dishes; lunch or dinner, not for bookings from 1:15pm or 9:15pm; the whole table takes it"
+    },
+    {
+      "name": "Costa a Costa tasting menu",
+      "meal": "dinner",
+      "price": 245,
+      "courses": 6,
+      "note": "Portuguese fish and seafood; lunch or dinner, not for bookings from 1:15pm or 9:15pm; the whole table takes it"
+    },
+    {
+      "name": "Encontros menu",
+      "meal": "dinner",
+      "price": 160,
+      "note": "Shorter menu with a choice at each course; lunch or dinner; the whole table takes it"
+    }
+  ],
+  "menusSource": "https://www.henriquesapessoa.com/menu",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through SevenRooms, which asks for a card to hold the booking, or by email to reservas@henriquesapessoa.com.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/henriquespessoarestaurant/reservations/create/search/",
+  "bookingPhone": "+351 218 384 605",
+  "cancellation": "Free to cancel or change up to 48 hours before. Later cancellations, and no-shows after the 15 minutes' grace, are charged €140 a person (VAT included) to the card given when booking.",
+  "groups": "A private room looking onto the kitchen; book it by email to reservas@henriquesapessoa.com.",
+  "dressCode": "Smart casual. No sportswear or flip-flops.",
+  "children": "Children aged 10 and over are welcome.",
+  "duration": "SevenRooms allows three and a half hours for a table of two.",
+  "infoSource": "https://www.sevenrooms.com/explore/henriquespessoarestaurant/reservations/create/search/",
+  "infoChecked": "2026-10-13"
 }

@@ -11,7 +11,7 @@
   "dinnerNote": "Tasting menus from CHF 145",
   "sourceType": "press",
   "notice": "Temporarily closed (Google)",
-  "website": "https://tschuggen.ch/de/restaurants/la-brezza",
+  "website": "https://tschuggencollection.ch/en/hotel/tschuggen-grand-hotel/restaurants",
   "lat": 46.7774999,
   "lng": 9.6694197,
   "placeId": "ChIJnY9OYPK8hEcRL1oS48rDZ2I",
@@ -35,5 +35,12 @@
   "lunchNoteIt": "Solo a cena",
   "cuisineIt": "Moderna",
   "dinner": 145,
-  "source": "https://www.schlemmer-atlas.de/restaurants/schweiz/arosa/la-brezza/"
+  "source": "https://www.schlemmer-atlas.de/restaurants/schweiz/arosa/la-brezza/",
+  "starsSince": 2022,
+  "hotel": "the Tschuggen Grand Hotel",
+  "bookingOpens": "Online through the 'Book a table' button on the hotel's restaurant page, or by phone to the hotel. The restaurant opens for the winter season only, from 11 December 2026 to 14 March 2027.",
+  "bookingUrl": "https://tschuggencollection.ch/en/hotel/tschuggen-grand-hotel/restaurants",
+  "bookingPhone": "+41 81 378 99 99",
+  "infoSource": "https://tschuggencollection.ch/en/hotel/tschuggen-grand-hotel/restaurants",
+  "infoChecked": "2026-10-13"
 }

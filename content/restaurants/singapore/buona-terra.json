@@ -31,5 +31,42 @@
     "vegetarian"
   ],
   "chef": "Denis Lucchi",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "six-course dinner menu",
+      "meal": "dinner",
+      "price": 248,
+      "wine": 178,
+      "courses": 6,
+      "note": "Priced from S$248; sometimes served at lunch too, subject to availability; six-glass pairing S$178, dinner only"
+    },
+    {
+      "name": "four-course lunch menu",
+      "meal": "lunch",
+      "price": 128,
+      "courses": 4,
+      "note": "Monday to Friday; a three-glass wine flight is S$88"
+    },
+    {
+      "name": "five-course lunch menu",
+      "meal": "lunch",
+      "price": 178,
+      "courses": 5,
+      "note": "Monday to Friday; a three-glass wine flight is S$88"
+    }
+  ],
+  "menusSource": "https://www.buonaterra.com.sg/menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2019,
+  "bookingOpens": "Online through TableCheck for up to six guests, with a card guarantee. Phone lines are open Monday to Saturday; calls after 6pm may not be answered.",
+  "bookingUrl": "https://www.tablecheck.com/en/buona-terra/reserve/landing",
+  "bookingPhone": "+65 6733 0209",
+  "cancellation": "Cancel or change at least 48 hours ahead. Later cancellations and no-shows are charged S$100 a guest.",
+  "groups": "Parties of more than six book through WhatsApp on +65 9456 3147. Three private rooms seat up to 14.",
+  "dressCode": "Smart casual. Flip-flops and slippers are discouraged.",
+  "duration": "About two and a half hours for dinner.",
+  "byob": "Corkage is S$90++ a 750ml bottle, or free one for one with a bottle bought from the wine list.",
+  "infoSource": "https://www.buonaterra.com.sg/contact-us/",
+  "infoChecked": "2026-10-13"
 }

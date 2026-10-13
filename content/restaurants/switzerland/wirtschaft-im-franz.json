@@ -34,5 +34,44 @@
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Moderna"
+  "cuisineIt": "Moderna",
+  "menus": [
+    {
+      "name": "six-course surprise menu",
+      "meal": "dinner",
+      "price": 129,
+      "courses": 6,
+      "note": "Dinner only; vegetarian version available, vegan on request when booking"
+    },
+    {
+      "name": "five-course surprise menu",
+      "meal": "dinner",
+      "price": 116,
+      "courses": 5,
+      "note": "Shorter version of the same menu"
+    },
+    {
+      "name": "four-course surprise menu",
+      "meal": "dinner",
+      "price": 103,
+      "courses": 4,
+      "note": "Shorter version of the same menu"
+    }
+  ],
+  "menusSource": "https://www.wirtschaftimfranz.ch/menu",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Landgasthof Paradiesli",
+      "note": "Its sister country inn at Betlis on the Walensee, open from April to the autumn",
+      "url": "https://www.paradiesli-betlis.ch"
+    }
+  ],
+  "bookingOpens": "Online through the restaurant's aleno booking page, or by phone or email (info@wirtschaftimfranz.ch).",
+  "bookingUrl": "https://mytools.aleno.me/reservations/v2.0/reservations.html?k=eyJrIjoid2l2dTVrM2lsNm15cnBiOWlwdzZ4bmViajhycnVkaWRpZ280bGZwODBsbzlhNGlweTEiLCJsIjoiZGUiLCJyIjoiUzJkbVc5RWtZMm10Ym80WnAiLCJzIjoiaHR0cHM6Ly9teXRvb2xzLmFsZW5vLm1lLyJ9",
+  "bookingPhone": "+41 43 558 44 22",
+  "groups": "Group dinners, parties and private events are arranged on request by email to buero@wirtschaftimfranz.ch.",
+  "groupsUrl": "https://www.wirtschaftimfranz.ch/franz-gruppen",
+  "infoSource": "https://www.wirtschaftimfranz.ch",
+  "infoChecked": "2026-10-13"
 }

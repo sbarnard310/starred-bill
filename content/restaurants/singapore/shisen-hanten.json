@@ -10,10 +10,10 @@
   "cuisineZh": "川菜",
   "rating": 4.8,
   "reviews": 2864,
-  "lunchNote": "Open for lunch",
-  "lunchNoteZh": "有供應午餐",
-  "lunchType": "spend",
-  "lunchSourceType": "none",
+  "lunchNote": "Executive set lunch, Mon–Fri (minimum 2 guests; S$88 version; weekend brunch S$98)",
+  "lunchNoteZh": "商務午市套餐，週一至週五（最少2位；另有S$88套餐；週末早午餐S$98）",
+  "lunchType": "menu",
+  "lunchSourceType": "site",
   "website": "https://shisenhanten.com.sg/",
   "lat": 1.302395,
   "lng": 103.8365,
@@ -26,8 +26,70 @@
   "chefSource": "press",
   "dinnerType": "menu",
   "dinner": 188,
-  "dinnerNote": "Set menu (minimum 2 guests); à la carte also available",
-  "dinnerNoteZh": "套餐（最少2位），另設單點",
+  "dinnerNote": "Opulent set menu (minimum 2 guests; Grandiose S$238, Lavish S$388); à la carte also available",
+  "dinnerNoteZh": "Opulent套餐（最少2位；Grandiose S$238、Lavish S$388），另設單點",
   "sourceType": "site",
-  "source": "https://shisenhanten.com.sg/assets/img/site_images/Shisen-Hanten_Refresh_Set-Menus_2026-1.pdf"
+  "source": "https://shisenhanten.com.sg/assets/img/site_images/Shisen-Hanten_Refresh_Set-Menus_2026-1.pdf",
+  "lunch": 58,
+  "lunchSource": "https://shisenhanten.com.sg/assets/img/site_images/Shisen-Hanten_Refresh_Lunch-A-la-Carte-Menu-2026.pdf",
+  "menus": [
+    {
+      "name": "Opulent set menu",
+      "meal": "dinner",
+      "price": 188,
+      "courses": 7,
+      "note": "Minimum two guests; signature appetisers, foie gras chawanmushi, lobster, Miyazaki wagyu and Chen's mapo tofu"
+    },
+    {
+      "name": "Grandiose set menu",
+      "meal": "dinner",
+      "price": 238,
+      "courses": 7,
+      "note": "Minimum two guests; with abalone and A5 Miyazaki wagyu"
+    },
+    {
+      "name": "Lavish set menu",
+      "meal": "dinner",
+      "price": 388,
+      "courses": 7,
+      "note": "Minimum two guests; with sea cucumber and truffle"
+    },
+    {
+      "name": "Chef's Table autumn menu",
+      "meal": "dinner",
+      "price": 288,
+      "courses": 7,
+      "note": "In the Chef's Table room for up to eight guests, with a minimum spend of S$2,304"
+    },
+    {
+      "name": "Executive set lunch",
+      "meal": "lunch",
+      "price": 58,
+      "note": "Monday to Friday only, not on public holidays or their eves; minimum two guests"
+    },
+    {
+      "name": "Executive set lunch with foie gras soup",
+      "meal": "lunch",
+      "price": 88,
+      "note": "Monday to Friday only, not on public holidays or their eves; minimum two guests"
+    },
+    {
+      "name": "Weekend brunch",
+      "meal": "lunch",
+      "price": 98,
+      "note": "Weekends and public holidays, unlimited ordering for 90 minutes; the whole table orders it; minimum two guests; vegetarian set S$68"
+    }
+  ],
+  "menusSource": "https://shisenhanten.com.sg/menu",
+  "menusChecked": "2026-10-13",
+  "hotel": "the Hilton Singapore Orchard",
+  "bookingOpens": "Online through TableCheck, or by phone or email. Parties of more than eight and private rooms are booked by phone or email.",
+  "bookingUrl": "https://www.tablecheck.com/en/shisen-hanten-singapore/reserve/landing",
+  "bookingPhone": "+65 6831 6262",
+  "cancellation": "Private rooms and the Chef's Table need a card hold of S$100 a guest or S$500 a room, charged under the cancellation policy; it is not a prepayment. Tables are held for 15 minutes.",
+  "groups": "Six private rooms seat 6 to 30 guests, and the Chef's Table room seats up to eight; book them by email.",
+  "groupsUrl": "https://shisenhanten.com.sg/private-dining",
+  "dressCode": "Smart casual: men in long trousers and closed shoes. No shorts, flip-flops or singlets.",
+  "infoSource": "https://shisenhanten.com.sg/",
+  "infoChecked": "2026-10-13"
 }

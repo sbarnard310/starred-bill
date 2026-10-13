@@ -19,7 +19,7 @@
   "wine": 188,
   "dinnerNoteZh": "品嚐套餐，8 道",
   "sourceType": "site",
-  "source": "https://locaniru.sg/",
+  "source": "https://locaniru.sg/wp-content/uploads/2026/09/Loca-Niru-Digital-Dinner-Menu-Autumn.pdf",
   "lunchNote": "Open for lunch · Fri–Sat",
   "lunchNoteZh": "有供應午餐・週五至週六",
   "website": "https://locaniru.sg/",
@@ -29,6 +29,19 @@
   "michelinId": "1246701",
   "chef": "Shusuke Kubota",
   "chefSource": "site",
+  "menus": [
+    {
+      "name": "Dinner Experience tasting menu",
+      "meal": "dinner",
+      "price": 298,
+      "wine": 188,
+      "note": "Seasonal menu; six-wine pairing S$188, or sake pairing S$148; no vegetarian, vegan or seafood-free version"
+    }
+  ],
+  "menusSource": "https://locaniru.sg/menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2026,
+  "bookingOpens": "Online through TableCheck, up to 60 days ahead. For a table within 24 hours, or for 12 or more guests, call or message on WhatsApp (+65 8227 4313).",
   "bookingWindow": {
     "type": "rolling",
     "days": 60,
@@ -36,5 +49,14 @@
     "via": "website",
     "source": "https://locaniru.sg/",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://www.tablecheck.com/en/loca-niru-singapore/reserve/landing",
+  "bookingPhone": "+65 6592 5815",
+  "cancellation": "Cancelling, changing the date or reducing the party within 72 hours, or not showing up, costs S$150 a person at the counter or in the dining room, or S$1,000 for the private room. Tables are held for 15 minutes; later arrivals may be treated as no-shows.",
+  "groups": "A private dining room, with a minimum spend (S$1,700++, S$2,500++ or S$5,000++ on the booking page) and a chef's table. Groups of 12 or more book by phone or WhatsApp.",
+  "dressCode": "Smart casual or lightly formal for men; chic and polished for women. No shorts, singlets or flip-flops.",
+  "children": "Children aged 12 and over, who must each have the full tasting menu.",
+  "duration": "Two to three hours. Last seating for dinner is at 8pm.",
+  "infoSource": "https://www.tablecheck.com/en/loca-niru-singapore/reserve/landing",
+  "infoChecked": "2026-10-13"
 }

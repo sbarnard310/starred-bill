@@ -11,10 +11,10 @@
   "dinnerNote": "Tasting menu (other menus from CHF 290)",
   "wine": 255,
   "sourceType": "site",
-  "source": "https://www.widderhotel.com/media/3goj5pqf/30092026-eng-spezial-menue.pdf",
+  "source": "https://www.widderhotel.com/en/eat-drink/widder-restaurant/",
   "lunch": 160,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
+  "lunchNote": "Widder Lunch Experience, 3 courses (5 or 7 courses CHF 200 or 240), Fridays only",
   "lunchSourceType": "site",
   "lunchSource": "https://www.widderhotel.com/en/eat-drink/widder-restaurant/",
   "website": "https://www.widderhotel.com/de/restaurants/widder-restaurant/",
@@ -35,7 +35,79 @@
   "cuisineFr": "Cuisine française moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 290)",
   "cuisineIt": "Francese moderna",
-  "lunchNoteDe": "Mittagsmenü",
-  "lunchNoteFr": "Menu déjeuner",
-  "lunchNoteIt": "Menu pranzo"
+  "lunchNoteDe": "Widder Lunch Experience, 3 Gänge (5 oder 7 Gänge CHF 200 oder 240), nur freitags",
+  "lunchNoteFr": "Widder Lunch Experience, 3 plats (5 ou 7 plats CHF 200 ou 240), le vendredi uniquement",
+  "lunchNoteIt": "Widder Lunch Experience, 3 portate (5 o 7 portate CHF 200 o 240), solo il venerdì",
+  "menus": [
+    {
+      "name": "Stefan Heilemann's tasting menu",
+      "meal": "dinner",
+      "price": 350,
+      "wine": 255,
+      "courses": 7,
+      "note": "Wednesday to Saturday dinner; wine pairing CHF 255 (7 glasses). Swiss wagyu instead of chamois CHF 40 extra"
+    },
+    {
+      "name": "six-course tasting menu",
+      "meal": "dinner",
+      "price": 320,
+      "wine": 220,
+      "courses": 6,
+      "note": "Shorter version of the tasting menu; wine pairing CHF 220 (6 glasses)"
+    },
+    {
+      "name": "five-course tasting menu",
+      "meal": "dinner",
+      "price": 290,
+      "wine": 185,
+      "courses": 5,
+      "note": "Shorter version of the tasting menu; wine pairing CHF 185 (5 glasses). A vegetarian version is served at the same prices"
+    },
+    {
+      "name": "Widder Lunch Experience, three courses",
+      "meal": "lunch",
+      "price": 160,
+      "courses": 3,
+      "note": "Fridays only; wine pairing CHF 70 (3 glasses). Caviar or white truffle upgrades CHF 30 each"
+    },
+    {
+      "name": "Widder Lunch Experience, five courses",
+      "meal": "lunch",
+      "price": 200,
+      "courses": 5,
+      "note": "Fridays only; wine pairing CHF 100 (5 glasses)",
+      "wine": 100
+    },
+    {
+      "name": "Widder Lunch Experience, seven courses",
+      "meal": "lunch",
+      "price": 240,
+      "courses": 7,
+      "note": "Fridays only; wine pairing CHF 145 (7 glasses)",
+      "wine": 145
+    }
+  ],
+  "menusSource": "https://www.widderhotel.com/en/eat-drink/widder-restaurant/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Soï 28 by Stefan Heilemann",
+      "note": "Asian street food from the same chef, in the hotel at Augustinergasse 28, open for lunch and dinner most days",
+      "url": "https://www.widderhotel.com/en/eat-drink/soi-28/"
+    },
+    {
+      "name": "Boucherie AuGust",
+      "note": "The hotel's more casual meat restaurant",
+      "url": "https://www.widderhotel.com/en/eat-drink/boucherie-august/"
+    }
+  ],
+  "starsSince": 2021,
+  "hotel": "the Widder Hotel",
+  "bookingOpens": "Online through the hotel's booking system (aleno), or by phone. A Chef's Table facing the open kitchen can be booked separately.",
+  "bookingUrl": "https://www.widderhotel.com/en/eat-drink/widder-restaurant/",
+  "bookingPhone": "+41 44 224 25 26",
+  "groups": "The hotel arranges private dining and events through its Meetings & Occasions team.",
+  "groupsUrl": "https://www.widderhotel.com/en/meetings-occasions/",
+  "infoSource": "https://www.widderhotel.com/en/eat-drink/widder-restaurant/",
+  "infoChecked": "2026-10-13"
 }

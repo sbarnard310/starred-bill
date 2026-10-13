@@ -8,15 +8,15 @@
   "rating": 4.7,
   "reviews": 1130,
   "dinnerType": "menu",
-  "dinner": 125,
+  "dinner": 120,
   "sourceType": "site",
-  "source": "https://www.grupsantitaura.com/es/experiencias/",
-  "lunch": 125,
+  "source": "https://www.grupsantitaura.com/backoffice/pdf/files/3menu-degustacion_es.pdf",
+  "lunch": 120,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchNoteEs": "El mismo menú al mediodía",
+  "lunchNote": "Same menu at lunch · Fri–Sat (Sat only in summer)",
+  "lunchNoteEs": "El mismo menú al mediodía · vie–sáb (solo sáb en verano)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.grupsantitaura.com/es/experiencias/",
+  "lunchSource": "https://www.grupsantitaura.com/backoffice/pdf/files/3menu-degustacion_es.pdf",
   "website": "https://www.grupsantitaura.com/es/dins-santitaura/",
   "lat": 39.565643,
   "lng": 2.6529955,
@@ -28,6 +28,36 @@
   ],
   "chef": "Santi Taura",
   "chefSource": "michelin",
-  "dinnerNote": "Origens tasting menu, 11 courses",
-  "dinnerNoteEs": "Menú degustación Origens, 11 pasos"
+  "dinnerNote": "Origens tasting menu, 11 courses (premium pairing €120)",
+  "dinnerNoteEs": "Menú degustación Origens, 11 pasos (armonía premium 120 €)",
+  "wine": 80,
+  "lunchWine": 80,
+  "menus": [
+    {
+      "name": "Origens tasting menu",
+      "meal": "dinner",
+      "price": 120,
+      "wine": 80,
+      "courses": 11,
+      "note": "The only menu, lunch or dinner; Mallorcan cooking; pairing of five Balearic wines €80, or seven Spanish wines €120 (minimum two people); extra courses €5–18; filtered water included; 10% VAT included"
+    }
+  ],
+  "menusSource": "https://www.grupsantitaura.com/backoffice/pdf/files/3menu-degustacion_es.pdf",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Urbà",
+      "note": "Santi Taura's other restaurant in the same hotel, run by his kitchen team; DINS suggests it for a lighter or cheaper meal",
+      "url": "https://www.grupsantitaura.com/es/"
+    }
+  ],
+  "hotel": "the hotel El Llorenç Parc de la Mar",
+  "bookingOpens": "Online through the restaurant's website (TheFork), with a credit card to guarantee every booking, or by email. Phone line Monday to Friday, 9am to 3pm.",
+  "bookingUrl": "https://www.grupsantitaura.com/es/dins-santitaura/",
+  "bookingPhone": "+34 669 959 042, Monday to Friday 9am to 3pm",
+  "cancellation": "Free cancellation up to 48 hours before the booking. Later cancellations, smaller parties and no-shows are charged €120 a person. Bookings more than 20 minutes late without warning are cancelled.",
+  "groups": "Groups of six or more by email (reserves@santitaura.com). No private rooms; the whole restaurant (30 seats) can be booked for private events.",
+  "children": "No one under 16, including babies: the hotel is adults only.",
+  "infoSource": "https://www.grupsantitaura.com/es/faqs/",
+  "infoChecked": "2026-10-13"
 }

@@ -9,18 +9,18 @@
   "reviews": 54,
   "dinnerType": "menu",
   "dinner": 275,
-  "dinnerNote": "Tasting menu (other menus from €190)",
-  "dinnerNoteEs": "Menú degustación (otros menús desde 190 €)",
+  "dinnerNote": "Romasanta tasting menu (other menus from €190)",
+  "dinnerNoteEs": "Menú degustación Romasanta (otros menús desde 190 €)",
   "wine": 96,
   "sourceType": "site",
   "source": "https://pepevieira.com/cocina/menus/",
-  "lunch": 275,
+  "lunch": 190,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Mon–Sat",
-  "lunchNoteEs": "El mismo menú al mediodía · lun–sáb",
-  "lunchWine": 96,
+  "lunchNote": "A Santa Elección menu, not served in summer (Romasanta €275) · Mon–Sat",
+  "lunchNoteEs": "Menú A Santa Elección, no disponible en verano (Romasanta 275 €) · lun–sáb",
+  "lunchWine": 56,
   "lunchSourceType": "site",
-  "lunchSource": "https://pepevieira.com/cocina/menus/",
+  "lunchSource": "https://pepevieira.com/en/cocina/menus",
   "website": "https://pepevieira.com/",
   "lat": 42.4089495,
   "lng": -8.7545413,
@@ -31,5 +31,46 @@
     "vegan"
   ],
   "chef": "Xosé Torres Cannas",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Romasanta tasting menu",
+      "meal": "dinner",
+      "price": 275,
+      "wine": 96,
+      "note": "Lunch or dinner; 3 appetisers, 9 dishes and 3 desserts; pairing €96"
+    },
+    {
+      "name": "O Señor de Andrade tasting menu",
+      "meal": "dinner",
+      "price": 220,
+      "wine": 76,
+      "note": "Lunch or dinner; 3 appetisers, 6 dishes and 2 desserts; pairing €76"
+    },
+    {
+      "name": "A Santa Elección tasting menu",
+      "meal": "dinner",
+      "price": 190,
+      "wine": 56,
+      "note": "Lunch or dinner, but not during the summer season; 3 appetisers, 3 dishes and 1 dessert; pairing €56"
+    }
+  ],
+  "menusSource": "https://pepevieira.com/en/cocina/menus",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Ultramar",
+      "note": "Pepe Vieira's more casual restaurant in central Pontevedra, billed as A Taberna de Pepe Vieira",
+      "url": "https://laultramar.es"
+    }
+  ],
+  "hotel": "Pepe Vieira's own landscape hotel",
+  "bookingOpens": "Online through the restaurant's website (CoverManager), or by phone or email (reservas@pepevieira.com). Card details are taken when booking.",
+  "bookingUrl": "https://pepevieira.com/en/reservas",
+  "bookingPhone": "+34 986 74 13 78",
+  "cancellation": "Cancelling less than 72 hours before costs €80 per guest, charged to the card given when booking.",
+  "groups": "Events are handled through the events page.",
+  "groupsUrl": "https://pepevieira.com/en/eventos",
+  "infoSource": "https://pepevieira.com/en/reservas",
+  "infoChecked": "2026-10-13"
 }

@@ -15,12 +15,12 @@
   "dinner": 5500,
   "dinnerType": "menu",
   "dinnerNote": "Tasting menu, plus service and VAT (++)",
-  "wine": 2500,
+  "wine": 3500,
   "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
-  "sourceType": "press",
-  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
-  "lunchNote": "Open for lunch · Wed–Sun",
-  "lunchNoteTh": "เปิดมื้อกลางวัน · พ.–อา.",
+  "sourceType": "site",
+  "source": "https://www.cannubibangkok.com/wp-content/uploads/2026/09/Autumn-Menu-2026.pdf",
+  "lunchNote": "Three-course set lunch (four courses THB 2,500), Wednesday to Sunday, plus service and VAT (++)",
+  "lunchNoteTh": "เซ็ตอาหารกลางวัน 3 คอร์ส (4 คอร์ส 2,500 บาท) พ.–อา. ยังไม่รวมค่าบริการและภาษี (++)",
   "website": "https://www.cannubibangkok.com",
   "lat": 13.7280315,
   "lng": 100.5377108,
@@ -30,5 +30,58 @@
     "vegetarian"
   ],
   "chef": "Andrea Susto",
-  "chefSource": "site"
+  "chefSource": "site",
+  "lunch": 1950,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.cannubibangkok.com/wp-content/uploads/2026/09/Autumn-Lunch-34-Course-2026.pdf",
+  "menus": [
+    {
+      "name": "Autumn tasting menu",
+      "meal": "dinner",
+      "price": 5500,
+      "wine": 3500,
+      "note": "Lunch or dinner, plus service and VAT (++). Wine pairing THB 3,500 (5 glasses), or THB 2,500 (3 glasses) or THB 6,000 prestige (3 glasses); alcohol-free THB 1,500 or 2,500. Lobster THB 1,200 and carabineros pasta THB 980 extra"
+    },
+    {
+      "name": "Vegetarian menu",
+      "meal": "dinner",
+      "price": 4800,
+      "wine": 3500,
+      "note": "Lunch or dinner, plus service and VAT (++); same pairings as the tasting menu"
+    },
+    {
+      "name": "Four-course set lunch",
+      "meal": "lunch",
+      "price": 2500,
+      "courses": 4,
+      "note": "Wednesday to Sunday, plus service and VAT (++); two or three glasses of wine THB 1,200 or 1,700"
+    },
+    {
+      "name": "Three-course set lunch",
+      "meal": "lunch",
+      "price": 1950,
+      "courses": 3,
+      "note": "Wednesday to Sunday, plus service and VAT (++); two or three glasses of wine THB 1,200 or 1,700"
+    }
+  ],
+  "menusSource": "https://www.cannubibangkok.com/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "The Wine Bar",
+      "note": "The hotel's wine bar on the M floor, open for lunch and dinner Wednesday to Sunday; smart casual",
+      "url": "https://www.tablecheck.com/en/dusit-thani-bangkok-cannubi/reserve/message"
+    }
+  ],
+  "starsSince": 2025,
+  "hotel": "the Dusit Thani Bangkok",
+  "bookingOpens": "Online on TableCheck, ideally at least three hours ahead, or by phone or email (cannubi.dtbk@dusit.com). The restaurant then contacts guests to take a deposit of THB 2,000 a person.",
+  "bookingUrl": "https://www.tablecheck.com/en/dusit-thani-bangkok-cannubi/reserve/message",
+  "bookingPhone": "+66 2 200 9000",
+  "cancellation": "A deposit of THB 2,000 net a person is taken after booking. Tables are held for 15 minutes past the booking time.",
+  "dressCode": "Elegant. Shorts, sandals and flip-flops are not allowed.",
+  "children": "Children aged 10 and over may dine in the main dining room; younger children are seated in the second-floor dining rooms.",
+  "infoSource": "https://www.tablecheck.com/en/dusit-thani-bangkok-cannubi/reserve/message",
+  "infoChecked": "2026-10-13"
 }

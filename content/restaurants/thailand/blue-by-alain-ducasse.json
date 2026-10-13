@@ -8,14 +8,14 @@
   "cuisine": "French Contemporary",
   "rating": 4.5,
   "reviews": 523,
-  "dinner": 2950,
+  "dinner": 8500,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, plus service and VAT (++)",
-  "dinnerNoteTh": "เมนูชิม ยังไม่รวมค่าบริการและภาษี (++)",
-  "sourceType": "press",
-  "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
-  "lunchNote": "Open for lunch · Thu–Mon",
-  "lunchNoteTh": "เปิดมื้อกลางวัน · พฤ.–จ.",
+  "dinnerNote": "Signature menu, 7 courses, plus service and VAT (++) (5 courses THB 6,500, 3 courses THB 4,500)",
+  "dinnerNoteTh": "เมนูซิกเนเจอร์ 7 คอร์ส ยังไม่รวมค่าบริการและภาษี (++) (5 คอร์ส 6,500 บาท, 3 คอร์ส 4,500 บาท)",
+  "sourceType": "site",
+  "source": "https://www.blue-alainducasse.com/wp-content/uploads/2026/07/2026.07.01-SUMMER-SIGNATURE-MENU-John-Dory-Pigeon.pdf",
+  "lunchNote": "Business lunch, 3 courses, Thursday to Monday, plus service and VAT (++)",
+  "lunchNoteTh": "เมนูกลางวันธุรกิจ 3 คอร์ส พฤ.–จ. ยังไม่รวมค่าบริการและภาษี (++)",
   "website": "https://www.blue-alainducasse.com",
   "lat": 13.7265916,
   "lng": 100.5105619,
@@ -26,5 +26,56 @@
     "gluten-free"
   ],
   "chef": "Evens López",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "lunch": 2950,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.blue-alainducasse.com/wp-content/uploads/2026/04/SPRING-LUNCH-MENU-2026.pdf",
+  "menus": [
+    {
+      "name": "Signature menu",
+      "meal": "dinner",
+      "price": 8500,
+      "courses": 7,
+      "note": "Plus service and VAT (++). Kaviari caviar from THB 4,100 (30g) extra"
+    },
+    {
+      "name": "Menu Voyage",
+      "meal": "dinner",
+      "price": 6500,
+      "courses": 5,
+      "note": "Lunch or dinner, plus service and VAT (++)"
+    },
+    {
+      "name": "Menu Découverte",
+      "meal": "dinner",
+      "price": 4500,
+      "courses": 3,
+      "note": "Lunch or dinner, plus service and VAT (++)"
+    },
+    {
+      "name": "Business lunch",
+      "meal": "lunch",
+      "price": 2950,
+      "courses": 3,
+      "note": "Lunch Thursday to Monday, plus service and VAT (++)"
+    }
+  ],
+  "menusSource": "https://www.blue-alainducasse.com/cuisine/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Café of Blue by Alain Ducasse",
+      "note": "All-day à la carte café across from the restaurant in ICONLUXE, open daily 11am to 8.30pm, with afternoon tea",
+      "url": "https://www.blue-alainducasse.com/blue-restaurant-2/"
+    }
+  ],
+  "starsSince": 2020,
+  "bookingOpens": "Online on SevenRooms, or by phone or email (enquiries@blue-alainducasse.com).",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/bluebyalainducasse",
+  "bookingPhone": "+66 65 731 2346",
+  "groups": "Two private rooms overlooking the river: the Bronze Room for up to 6 (minimum spend THB 55,000++) and the Pink Room for 8 to 10 (THB 75,000++). Group bookings by the contact form.",
+  "groupsUrl": "https://www.blue-alainducasse.com/blue-restaurant-2/",
+  "infoSource": "https://www.blue-alainducasse.com/contact/",
+  "infoChecked": "2026-10-13"
 }

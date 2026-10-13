@@ -34,13 +34,61 @@
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 199)",
   "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 199)",
-  "lunch": 259,
+  "lunch": 199,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sun",
-  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–So",
-  "lunchNoteFr": "Même menu le midi · ven.–dim.",
-  "lunchNoteIt": "Stesso menu a pranzo · ven–dom",
+  "lunchNote": "Five-course experience (seven courses CHF 259) · Fri–Sun",
+  "lunchNoteDe": "Menü mit 5 Gängen (7 Gänge CHF 259) · Fr–So",
+  "lunchNoteFr": "Expérience en 5 services (7 services CHF 259) · ven.–dim.",
+  "lunchNoteIt": "Menu di 5 portate (7 portate CHF 259) · ven–dom",
   "lunchSourceType": "site",
   "lunchSource": "https://gillesvarone.ch/",
-  "cuisineIt": "Moderna"
+  "cuisineIt": "Moderna",
+  "menus": [
+    {
+      "name": "seven-course experience",
+      "meal": "dinner",
+      "price": 259,
+      "courses": 7,
+      "note": "Lunch or dinner. The whole table has the same experience; wine pairings and alcohol-free pairings are offered, price not published. Vegetarian version on request in advance."
+    },
+    {
+      "name": "six-course experience",
+      "meal": "dinner",
+      "price": 229,
+      "courses": 6,
+      "note": "Lunch or dinner. The whole table has the same experience."
+    },
+    {
+      "name": "five-course experience",
+      "meal": "dinner",
+      "price": 199,
+      "courses": 5,
+      "note": "Lunch or dinner. The whole table has the same experience."
+    },
+    {
+      "name": "local game experience",
+      "meal": "dinner",
+      "price": 299,
+      "note": "October only, subject to availability."
+    }
+  ],
+  "menusSource": "https://gillesvarone.ch/#experiences",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Online through Zenchef on the restaurant's website. Tables are released a month at a time, well ahead: December 2026 opened on 1 September 2026 at 8am. A booking is only confirmed once the confirmation email arrives.",
+  "bookingWindow": {
+    "type": "announced",
+    "note": "Released a month at a time; December 2026 opened on 1 September 2026 at 8am.",
+    "time": "08:00",
+    "tz": "Europe/Zurich",
+    "via": "Zenchef",
+    "source": "https://bookings.zenchef.com/results?rid=360467&fullscreen=1",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=360467&fullscreen=1",
+  "bookingPhone": "+41 27 565 89 20",
+  "cancellation": "Card details are needed to hold the table. Nothing is charged unless the booking is cancelled within 72 hours of the meal or nobody turns up.",
+  "groups": "Tables of more than eight are by special request. Wheelchair access for parties of up to seven, if the restaurant is told in advance.",
+  "infoSource": "https://gillesvarone.ch/",
+  "infoChecked": "2026-10-13"
 }

@@ -9,9 +9,9 @@
   "reviews": 842,
   "dinnerType": "menu",
   "dinner": 290,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Chef Dieter Koschina's Favorites menu",
   "sourceType": "site",
-  "source": "https://www.vilajoya.com/restaurant/",
+  "source": "https://www.vilajoya.com/book-michelin/",
   "website": "https://www.vilajoya.com",
   "lat": 37.08059,
   "lng": -8.31367,
@@ -23,12 +23,37 @@
   ],
   "chef": "Dieter Koschina",
   "chefSource": "michelin",
-  "dinnerNotePt": "Menu de degustação",
+  "dinnerNotePt": "Menu Favorites do chef Dieter Koschina",
   "lunch": 290,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchNotePt": "O mesmo menu ao almoço",
+  "lunchNote": "Favorites menu, or the daily Signature menu (lunch only), both €290",
+  "lunchNotePt": "Menu Favorites, ou o menu Signature do dia (só ao almoço), ambos a 290 €",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.vilajoya.com/restaurant/",
-  "cuisinePt": "Moderna"
+  "lunchSource": "https://www.vilajoya.com/book-michelin/",
+  "cuisinePt": "Moderna",
+  "menus": [
+    {
+      "name": "Chef Dieter Koschina's Favorites menu",
+      "meal": "dinner",
+      "price": 290,
+      "note": "Lunch or dinner; drinks extra, with a wine pairing on request (price not published)"
+    },
+    {
+      "name": "Vila Joya Signature menu",
+      "meal": "lunch",
+      "price": 290,
+      "note": "Changes every day; lunch only; a shorter menu or à la carte may be offered at some lunch sittings"
+    }
+  ],
+  "menusSource": "https://www.vilajoya.com/book-michelin/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 1999,
+  "hotel": "the Vila Joya hotel (4 rooms and 9 suites)",
+  "bookingOpens": "By request form on the restaurant's website; the team calls to talk the booking through, and it isn't valid until confirmed by email. Hotel guests get priority at dinner, so few dinner tables are open to others. For a table the same day, call before 11am.",
+  "bookingUrl": "https://www.vilajoya.com/book-michelin/",
+  "bookingPhone": "+351 289 591 795",
+  "cancellation": "Free to cancel until 9am on the day. Later cancellations cost €150 a person; no-shows, and each guest fewer than booked, are charged €290 a person.",
+  "groups": "The largest table seats six.",
+  "infoSource": "https://www.vilajoya.com/book-michelin/",
+  "infoChecked": "2026-10-13"
 }

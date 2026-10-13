@@ -12,17 +12,13 @@
   "reviews": 829,
   "dinner": 4750,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteZh": "品嚐套餐",
+  "dinnerNote": "Chef's tasting menu",
+  "dinnerNoteZh": "主廚品嚐套餐",
   "wine": 3680,
   "sourceType": "press",
-  "source": "https://www.mirrormedia.mg/story/20260327food001",
-  "lunch": 4750,
-  "lunchType": "menu",
-  "lunchNote": "Same tasting menu at lunch",
-  "lunchNoteZh": "午餐供應相同套餐",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.mirrormedia.mg/story/20260327food001",
+  "source": "https://inline.app/booking/-LHc6eHwN-k9m52dJVb6/-LHc6eHwN-k9m52dJVb7?language=zh-tw",
+  "lunchNote": "Dinner only",
+  "lunchNoteZh": "僅供應晚餐",
   "website": "http://www.impromptu.com.tw/",
   "lat": 25.054178,
   "lng": 121.524244,
@@ -34,5 +30,37 @@
     "kosher"
   ],
   "chef": "Paul Lee",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "noLunch": true,
+  "menus": [
+    {
+      "name": "chef's tasting menu",
+      "meal": "dinner",
+      "price": 4750,
+      "wine": 3680,
+      "note": "Dinner only; wine pairing NT$3,680 (7 glasses), or sake NT$2,580, cocktail NT$1,980 or alcohol-free NT$1,280 pairings. Dishes changed only for allergies or religious diets"
+    }
+  ],
+  "menusSource": "https://inline.app/booking/-LHc6eHwN-k9m52dJVb6/-LHc6eHwN-k9m52dJVb7?language=zh-tw",
+  "menusChecked": "2026-10-13",
+  "hotel": "the Regent Taipei",
+  "bookingOpens": "Online on inline, up to 30 days ahead; for later dates or special requests, call or email info@impromptu.com.tw. Phone bookings 2pm to 5pm on opening days. A card must be linked within three days of booking to guarantee the table.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "tz": "Asia/Taipei",
+    "via": "inline",
+    "source": "https://inline.app/booking/-LHc6eHwN-k9m52dJVb6/-LHc6eHwN-k9m52dJVb7?language=zh-tw",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://inline.app/booking/-LHc6eHwN-k9m52dJVb6/-LHc6eHwN-k9m52dJVb7?language=zh-tw",
+  "bookingPhone": "+886 2 2521 2518, 2pm to 5pm on opening days",
+  "cancellation": "Cancel or change at least eight days ahead. Within seven days, the restaurant charges the tasting menu price (before service) for each guest booked; the same applies to no-shows.",
+  "groups": "Parties of six or more and the private room are booked by phone or email.",
+  "dressCode": "No flip-flops; men are asked not to wear slippers or open-toed sandals.",
+  "children": "No children under six.",
+  "duration": "Two and a half to three hours.",
+  "byob": "Corkage NT$1,000 a bottle of wine and NT$1,500 a bottle of spirits (more for bottles over 750ml).",
+  "infoSource": "https://inline.app/booking/-LHc6eHwN-k9m52dJVb6/-LHc6eHwN-k9m52dJVb7?language=zh-tw",
+  "infoChecked": "2026-10-13"
 }

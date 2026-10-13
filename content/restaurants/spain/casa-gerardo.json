@@ -7,15 +7,15 @@
   "cuisine": "Modern Cuisine",
   "dinnerType": "menu",
   "dinner": 225,
-  "dinnerNote": "Tasting menu (other menus from €88)",
+  "dinnerNote": "Menú Geles grand tasting menu, booked ahead (Degustación €150, Clásico €88); dinner only in July and August",
   "sourceType": "site",
-  "source": "https://restaurantecasagerardo.es/reservar-en-casa-gerardo/",
-  "lunch": 225,
+  "source": "https://restaurantecasagerardo.es/carta-restaurante-casa-gerardo/",
+  "lunch": 88,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Mon",
-  "lunchNoteEs": "El mismo menú al mediodía · mié–lun",
+  "lunchNote": "Menú Clásico · Wed–Mon (Degustación €150, Geles €225)",
+  "lunchNoteEs": "Menú Clásico · mié–lun (Degustación 150 €, Geles 225 €)",
   "lunchSourceType": "site",
-  "lunchSource": "https://restaurantecasagerardo.es/reservar-en-casa-gerardo/",
+  "lunchSource": "https://restaurantecasagerardo.es/carta-restaurante-casa-gerardo/",
   "website": "https://www.restaurantecasagerardo.es/",
   "lat": 43.53658,
   "lng": -5.7872,
@@ -29,5 +29,42 @@
   "chef": "Marcos Morán and Pedro Morán",
   "chefSource": "michelin",
   "rating": 4.6,
-  "reviews": 1478
+  "reviews": 1478,
+  "menus": [
+    {
+      "name": "Menú Geles grand tasting menu",
+      "meal": "dinner",
+      "price": 225,
+      "note": "Lunch or dinner; must be booked ahead; last orders 2pm at lunch. Wines to go with it: 2 glasses €50, 3 €90 or 5 €150"
+    },
+    {
+      "name": "Menú Degustación tasting menu",
+      "meal": "dinner",
+      "price": 150,
+      "note": "Lunch or dinner; six snacks, four starters, fish, meat, a taste of fabada, pre-dessert and rice pudding; last orders 2.30pm at lunch"
+    },
+    {
+      "name": "Menú Clásico",
+      "meal": "dinner",
+      "price": 88,
+      "note": "Lunch or dinner; five snacks, a starter, fish, fabada and rice pudding; last orders 3.30pm at lunch"
+    }
+  ],
+  "menusSource": "https://restaurantecasagerardo.es/carta-restaurante-casa-gerardo/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "À la carte at Casa Gerardo",
+      "note": "Fabada de Prendes €26.25, mains €22.95–69 and desserts €11.20–15; bread and welcome appetiser €4.50",
+      "url": "https://restaurantecasagerardo.es/carta-restaurante-casa-gerardo/"
+    }
+  ],
+  "bookingOpens": "Online in the calendar on the restaurant's website, choosing à la carte, a tasting menu or the Menú Geles; a booking only counts once a confirmation email arrives. Last-minute bookings and changes (within 24 hours) are best made by phone.",
+  "bookingUrl": "https://restaurantecasagerardo.es/reservar-en-casa-gerardo/",
+  "bookingPhone": "+34 985 88 77 97, Wednesday to Monday 11am to 8pm",
+  "cancellation": "A card is taken to hold the booking. No-shows and cancellations less than 12 hours ahead are charged €50 a person; cancellations within 48 hours are best made by phone.",
+  "groups": "Groups of eight or more must agree a menu in advance.",
+  "children": "Children's menu available (minimum €40).",
+  "infoSource": "https://restaurantecasagerardo.es/reservar-en-casa-gerardo/",
+  "infoChecked": "2026-10-13"
 }

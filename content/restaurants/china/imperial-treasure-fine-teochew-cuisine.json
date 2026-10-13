@@ -15,5 +15,32 @@
   "michelinId": "1190416",
   "dinnerNoteZhs": "人均消费",
   "cuisineZhs": "潮州菜",
-  "nameZhs": "御宝阁"
+  "nameZhs": "御宝阁",
+  "lunch": 249,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.imperialtreasure.com.cn/china/happening/2-pax-lunch-set-cn/",
+  "lunchNote": "Two-person set lunch, CN¥498 for two (dining room only)",
+  "lunchNoteZhs": "双人午市套餐，两位 CN¥498（仅限大厅）",
+  "menus": [
+    {
+      "name": "two-person set lunch",
+      "meal": "lunch",
+      "price": 249,
+      "courses": 6,
+      "note": "CN¥498 for two, in the main dining room only; plus 10% service; offer from 16 May 2026 until further notice"
+    }
+  ],
+  "menusSource": "https://www.imperialtreasure.com.cn/china/happening/2-pax-lunch-set-cn/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2021,
+  "bookingOpens": "Online through TableCheck, or by phone. Weekend tables from 11am to 12:45pm and parties of 11 or more must be booked by phone.",
+  "bookingUrl": "https://www.szuo.com/en/imperial-treasure-group-gz-tkh/reserve/message",
+  "bookingPhone": "+86 20 3868 2388",
+  "cancellation": "Tables are held for 15 minutes, then the booking is cancelled. Dishes reserved in advance need a deposit.",
+  "groups": "198 seats, with 10 private rooms. Parties of 11 or more book by phone.",
+  "duration": "Online bookings are for an hour and a half.",
+  "byob": "Guests may bring their own wine for a small glassware fee; no other outside food or drink.",
+  "infoSource": "https://www.imperialtreasure.com.cn/china/restaurant/Imperial_Treasure_Fine_Teochew_Cuisine-7",
+  "infoChecked": "2026-10-13"
 }

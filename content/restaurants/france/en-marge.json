@@ -8,18 +8,18 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.7,
   "reviews": 972,
-  "dinner": 115,
+  "dinner": 158,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €75)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 75 €)",
+  "dinnerNote": "Menu du Chef, lunch or dinner (Menu Bijoux €122; Menu Inspirations €92 on weekday evenings)",
+  "dinnerNoteFr": "Menu du Chef, midi et soir (menu Bijoux 122 € ; menu Inspirations 92 € en semaine au dîner)",
   "sourceType": "site",
-  "source": "https://www.restaurantenmarge.com/feed/",
-  "lunch": 115,
+  "source": "https://www.restaurantenmarge.com/le-restaurant/menus/",
+  "lunch": 52,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchNoteFr": "Même menu le midi",
+  "lunchNote": "Menu Bouche à Oreille, 3 courses, Tue–Fri lunch",
+  "lunchNoteFr": "Menu Bouche à Oreille en 3 temps, déjeuner du mardi au vendredi",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurantenmarge.com/feed/",
+  "lunchSource": "https://www.restaurantenmarge.com/le-restaurant/menus/",
   "website": "https://www.restaurantenmarge.com",
   "lat": 43.49083,
   "lng": 1.44087,
@@ -31,5 +31,43 @@
     "kosher"
   ],
   "chef": "Frank Renimel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Menu du Chef",
+      "meal": "dinner",
+      "price": 158,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Menu Bijoux",
+      "meal": "dinner",
+      "price": 122,
+      "note": "Lunch or dinner; includes the chef's 2003 mushroom and foie gras cappuccino and his cassoulet"
+    },
+    {
+      "name": "Menu Inspirations",
+      "meal": "dinner",
+      "price": 92,
+      "note": "Weekday dinners and Saturday lunch only, not on bank holidays; five courses plus amuse-bouche and petits fours, changing weekly"
+    },
+    {
+      "name": "Menu Bouche à Oreille",
+      "meal": "lunch",
+      "price": 52,
+      "courses": 3,
+      "note": "Tuesday to Friday lunch only, changing weekly; €79 with two glasses of wine and coffee"
+    }
+  ],
+  "menusSource": "https://www.restaurantenmarge.com/le-restaurant/menus/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2003,
+  "hotel": "En Marge, the chef's own Relais & Châteaux hotel",
+  "bookingOpens": "Online through TheFork, or by phone or email (contact@restaurantenmarge.com).",
+  "bookingUrl": "https://widget.thefork.com/fr/2dadde64-a675-4dc1-98fb-1f99ca87df0b",
+  "bookingPhone": "+33 5 61 53 07 24",
+  "groups": "Group menus are offered through the restaurant's events team.",
+  "groupsUrl": "https://www.restaurantenmarge.com/les-evenements/",
+  "infoSource": "https://www.restaurantenmarge.com/",
+  "infoChecked": "2026-10-13"
 }

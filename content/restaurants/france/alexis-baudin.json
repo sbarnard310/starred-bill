@@ -14,14 +14,14 @@
   "reviews": 436,
   "dinner": 145,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €105)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 105 €)",
+  "dinnerNote": "9-course menu (6-course and vegetarian 6-course menus €105)",
+  "dinnerNoteFr": "Menu en 9 temps (menus en 6 temps et 6 temps végétarien 105 €)",
   "sourceType": "site",
   "source": "https://alexisbaudin.fr/notre-table-restaurant-alexis-baudin/",
   "lunch": 65,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchNoteFr": "Menu déjeuner",
+  "lunchNote": "4-course lunch menu, Wed–Fri only",
+  "lunchNoteFr": "Menu déjeuner en 4 temps, du mercredi au vendredi uniquement",
   "lunchSourceType": "site",
   "lunchSource": "https://alexisbaudin.fr/notre-table-restaurant-alexis-baudin/",
   "website": "https://alexisbaudin.fr",
@@ -34,5 +34,44 @@
     "gluten-free"
   ],
   "chef": "Alexis Baudin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Nine-course menu",
+      "meal": "dinner",
+      "price": 145,
+      "courses": 9,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Six-course menu",
+      "meal": "dinner",
+      "price": 105,
+      "courses": 6,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Six-course vegetarian menu",
+      "meal": "dinner",
+      "price": 105,
+      "courses": 6,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Four-course lunch menu",
+      "meal": "lunch",
+      "price": 65,
+      "courses": 4,
+      "note": "Wednesday to Friday lunch only"
+    }
+  ],
+  "menusSource": "https://alexisbaudin.fr/notre-table-restaurant-alexis-baudin/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2026,
+  "bookingOpens": "Online through Zenchef for up to ten people, or by phone. A card is taken to secure the booking; the booking is confirmed only once the confirmation page appears.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=349053&pid=1001",
+  "bookingPhone": "+33 3 82 53 00 12",
+  "walkIns": "Dogs are not allowed in the restaurant.",
+  "infoSource": "https://alexisbaudin.fr/reservation-restaurant-alexis-baudin/",
+  "infoChecked": "2026-10-13"
 }

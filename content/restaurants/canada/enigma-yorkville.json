@@ -22,5 +22,48 @@
     "gluten-free"
   ],
   "chef": "Zachary Barnes",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "10-course blind tasting menu",
+      "meal": "dinner",
+      "price": 242,
+      "courses": 10,
+      "note": "Served in the dining room. Wine, cocktail and non-alcoholic pairings are offered, price not published. Bills add a 20% automatic gratuity and a 5% house operations fee."
+    },
+    {
+      "name": "12-course chef's counter menu",
+      "meal": "dinner",
+      "price": 332,
+      "courses": 12,
+      "note": "The tasting menu plus two courses chosen each day, at the chef's counter, for one to four guests."
+    },
+    {
+      "name": "6-course Prelude menu",
+      "meal": "dinner",
+      "price": 163,
+      "courses": 6,
+      "note": "A shorter tasting menu for a quicker evening."
+    }
+  ],
+  "menusSource": "https://www.opentable.com/r/enigma-yorkville-toronto",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Enigma Salon (à la carte)",
+      "note": "The restaurant's lounge serves an à la carte menu: starters about $21–38, mains $38–120.",
+      "url": "https://www.enigmayorkville.com/menu/"
+    }
+  ],
+  "starsSince": 2022,
+  "bookingOpens": "Online on OpenTable, where each menu is booked as an experience with a non-refundable deposit per party: $100 for the 10-course menu, $150 for the chef's counter and $50 for the Prelude menu. Dinner is served Tuesday to Saturday from 5pm, with lunch on Saturday from 11:30am.",
+  "bookingUrl": "https://www.opentable.com/r/enigma-yorkville-toronto",
+  "bookingPhone": "+1 416 323 3332",
+  "cancellation": "The deposit is kept if the booking is cancelled or the guests don't come.",
+  "groups": "Private rooms: the Hibiscus Room seats up to 10, the dining room can be booked for up to 50, the lounge for up to 30, and the whole restaurant holds up to 120 for a standing reception. Enquiries by the website's form or info@enigmayorkville.com, answered within 24 hours.",
+  "groupsUrl": "https://www.enigmayorkville.com/private-dining-events/",
+  "dressCode": "Business casual.",
+  "duration": "Two and a half to three and a half hours for the 10-course menu with pairings, by the restaurant's own reply to a review; the six-course menu is shorter.",
+  "infoSource": "https://www.opentable.com/r/enigma-yorkville-toronto",
+  "infoChecked": "2026-10-13"
 }

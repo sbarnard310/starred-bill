@@ -8,18 +8,17 @@
   "rating": 4.5,
   "reviews": 420,
   "dinnerType": "menu",
-  "dinner": 800,
-  "dinnerNote": "Tasting menu (other menus from €700)",
-  "wine": 450,
+  "dinner": 1500,
+  "dinnerNote": "Den Store Aftenmenu tasting menu (three-course menu DKK 700)",
+  "wine": 1100,
   "sourceType": "site",
   "source": "https://villavest.dk/restaurant/aften/",
-  "lunch": 800,
+  "lunch": 450,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Sat–Sun",
-  "lunchWine": 450,
-  "lunchNoteDa": "Samme menu til frokost · lør.–søn.",
+  "lunchNote": "Den Lille Frokost (Den Store Frokost DKK 650) · Sat, daily in high season",
+  "lunchNoteDa": "Den Lille Frokost (Den Store Frokost DKK 650) · lør., alle dage i højsæsonen",
   "lunchSourceType": "site",
-  "lunchSource": "https://villavest.dk/restaurant/aften/",
+  "lunchSource": "https://villavest.dk/restaurant/frokost/",
   "website": "https://www.villavest.dk",
   "lat": 57.4766654,
   "lng": 9.7962815,
@@ -29,5 +28,50 @@
     "vegetarian"
   ],
   "chef": "Anders Holm",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Den Store Aftenmenu tasting menu",
+      "meal": "dinner",
+      "price": 1500,
+      "wine": 1100,
+      "courses": 11,
+      "note": "Served to the whole table (children under 12 excepted); juice pairing DKK 800, or 2 or 3 glasses of wine DKK 400/550"
+    },
+    {
+      "name": "three-course dinner menu",
+      "meal": "dinner",
+      "price": 700,
+      "wine": 450,
+      "courses": 3,
+      "note": "Extra dishes from the big menu DKK 200–250 each; juice pairing DKK 400"
+    },
+    {
+      "name": "Den Store Frokost lunch",
+      "meal": "lunch",
+      "price": 650,
+      "note": "Small sharing dishes; 2 or 3 glasses of wine DKK 260/390"
+    },
+    {
+      "name": "Den Med Fisk lunch",
+      "meal": "lunch",
+      "price": 550,
+      "note": "Fish courses only"
+    },
+    {
+      "name": "Den Lille Frokost lunch",
+      "meal": "lunch",
+      "price": 450,
+      "note": "Shorter lunch without the fish courses"
+    }
+  ],
+  "menusSource": "https://villavest.dk/restaurant/aften/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online on DinnerBooking or by phone. Seasonal: 27 March to 30 June and 15 August to 17 October, dinner Tuesday to Saturday and lunch on Saturday; 1 July to 15 August, lunch and dinner every day; 18 October to 5 December, lunch and dinner Friday and Saturday only. Lunch arrivals 12pm to 2pm, dinner 6:30pm to 8pm.",
+  "bookingUrl": "https://book.dinnerbooking.com/dk/da-DK/book/index/214/2",
+  "bookingPhone": "+45 98 96 05 66, during the restaurant's opening hours",
+  "groups": "Tables of 8 or more must order their food in advance.",
+  "children": "Children's menu of two courses, DKK 300, up to age 12; children under 12 need not join the table's Den Store Aftenmenu.",
+  "infoSource": "https://villavest.dk/restaurant/",
+  "infoChecked": "2026-10-13"
 }

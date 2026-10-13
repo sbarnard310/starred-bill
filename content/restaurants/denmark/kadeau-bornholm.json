@@ -16,7 +16,7 @@
   "lunchNote": "Dinner only",
   "noLunch": true,
   "lunchNoteDa": "Kun middag",
-  "notice": "Temporarily closed (Google)",
+  "notice": "Closed for the season; open May to September",
   "website": "https://kadeau.dk/",
   "lat": 55.0045738,
   "lng": 14.9690273,
@@ -27,5 +27,30 @@
   ],
   "chef": "Nicolai Nørregaard",
   "chefSource": "michelin",
-  "dinnerNoteDa": "Smagsmenu"
+  "dinnerNoteDa": "Smagsmenu",
+  "menus": [
+    {
+      "name": "Kadeau Bornholm tasting menu",
+      "meal": "dinner",
+      "price": 2750,
+      "wine": 1550,
+      "note": "Non-alcoholic pairing DKK 1,200"
+    }
+  ],
+  "menusSource": "https://www.kadeau.dk/bornholm/menu",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Dunes Beach Camp",
+      "note": "Kadeau's beachside tent camp on Balka Strand, 10 minutes' drive away, with a cafe and restaurant serving breakfast, lunch and dinner every day, and a free shuttle for guests dining at Kadeau.",
+      "url": "https://www.kadeau.dk/bornholm/accommodation-and-travel"
+    }
+  ],
+  "starsSince": 2016,
+  "bookingOpens": "Online on Tock. The restaurant opens for the summer season, May to September, and is closed until 2027; newsletter subscribers get early access when reservations are released.",
+  "bookingUrl": "https://www.exploretock.com/kadeau-bornholm",
+  "bookingPhone": "+45 56 97 82 50",
+  "groups": "Private events by request through the form on its Tock page.",
+  "infoSource": "https://www.kadeau.dk/bornholm/menu",
+  "infoChecked": "2026-10-13"
 }

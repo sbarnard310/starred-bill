@@ -28,5 +28,10 @@
   "lunchNoteFr": "Même carte le midi · lun.–mar., jeu.–ven.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.bistrotdunord.be/menu/",
-  "cuisineFr": "Cuisine traditionnelle"
+  "cuisineFr": "Cuisine traditionnelle",
+  "bookingOpens": "Online for up to four people through the booking widget on the restaurant's website. Open Monday, Tuesday, Thursday and Friday, lunch 12pm to 2pm and dinner 7pm to 9pm; closed Wednesday and at weekends.",
+  "bookingPhone": "+32 3 233 45 49",
+  "groups": "Parties of five or six book by email (info@bistrotdunord.be) or by phone during opening hours.",
+  "infoSource": "https://www.bistrotdunord.be/en/practical/",
+  "infoChecked": "2026-10-13"
 }

@@ -6607,7 +6607,16 @@ RESTAURANT_PAGES = ("le-bernardin", "la-pergola", "restaurant-gordon-ramsay", "o
                     "casa-marcial", "the-dune", "sushi-noz", "lung-king-heen", "louis-restaurant", "latelier-de-joel-robuchon", "joo-ok",
                     "gabriel-kreuther", "chefs-table-at-brooklyn-fare", "jeju-noodle-bar", "le-coucou", "mezcaleria-alma", "moody-tongue",
                     "le-pavillon", "le-george", "seven-swans", "tatsu-dallas", "tour-dargent", "dirt-candy", "le-jardinier-houston",
-                    "wok-by-obond", "64-goodge-street")
+                    "wok-by-obond", "64-goodge-street",
+                    # Batch 6, wave 1, 13 Oct 2026: the next most-searched, 1,000 to 2,000 searches a month
+                    "konstantin-filippou", "landhaus-bacher", "pramerl-the-wolf", "bistrot-blaise", "bistrot-du-nord", "la-grappe-dor",
+                    "maison-colette", "willem-hiele", "fame-osteria", "enigma-yorkville", "okeya-kyujiro", "restaurant-pearl-morissette",
+                    "sumibiyaki-arashi", "sushi-hyun", "sushi-masuda", "sushi-nishinokaze", "il-ristorante-niko-romito-beijing",
+                    "il-ristorante-niko-romito-shanghai", "imperial-treasure-fine-teochew-cuisine", "jin-sha", "shanghai-cuisine",
+                    "tang-court-shanghai", "xin-rong-ji-chengdu", "xin-rong-ji-hangzhou", "xin-rong-ji-shenzhen", "casa-de-carli",
+                    "restaurant-papilio", "kadeau-bornholm", "lille-molle", "parsley-salon", "villa-vest", "114-faubourg", "alan-geaam",
+                    "alexis-baudin", "armani-ristorante", "auberge-de-clochemerle", "auberge-des-templiers", "chakaiseki-akiyoshi",
+                    "en-marge", "guy-lassausaie")
 # The owner's rule (9 Oct 2026): at most 10 questions per page, and none that repeats what the page already says. On a
 # restaurant page the questions are its own section headings, each with its answer straight under it; the structured data
 # (FAQPage) lists them, most-asked first.

@@ -10,17 +10,16 @@
   "cuisineZh": "創新菜",
   "rating": 4.9,
   "reviews": 1259,
-  "dinner": 148,
+  "dinner": 180,
   "dinnerType": "menu",
-  "dinnerNote": "Menu Découverte, 5 courses",
-  "wine": 70,
-  "dinnerNoteFr": "Menu Découverte, 5 services",
+  "dinnerNote": "Menu Signature, 7 courses (Découverte, 5 courses, €148; Saveur, 3 courses, €95)",
+  "dinnerNoteFr": "Menu Signature en sept temps (Découverte en cinq temps 148 €, Saveur en trois temps 95 €)",
   "sourceType": "site",
   "source": "https://restaurant.alangeaam.fr/",
   "lunch": 58,
   "lunchType": "menu",
-  "lunchNote": "Business lunch, Mon–Fri",
-  "lunchNoteFr": "Menu affaires, lun.–ven.",
+  "lunchNote": "Menu Affaires, Mon–Fri lunch (not in school holidays or on bank holidays)",
+  "lunchNoteFr": "Menu Affaires, déjeuner du lundi au vendredi (hors vacances scolaires et jours fériés)",
   "lunchSourceType": "site",
   "lunchSource": "https://restaurant.alangeaam.fr/",
   "website": "https://restaurant.alangeaam.fr/",
@@ -32,5 +31,56 @@
     "vegetarian"
   ],
   "chef": "Alan Geaam",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Menu Signature",
+      "meal": "dinner",
+      "price": 180,
+      "courses": 7,
+      "note": "Lunch or dinner, Monday to Friday; wine pairings from €70"
+    },
+    {
+      "name": "Menu Découverte",
+      "meal": "dinner",
+      "price": 148,
+      "courses": 5,
+      "note": "Lunch or dinner, Monday to Friday; wine pairings from €70"
+    },
+    {
+      "name": "Menu Saveur",
+      "meal": "dinner",
+      "price": 95,
+      "courses": 3,
+      "note": "Lunch or dinner, Monday to Friday; wine pairings from €70"
+    },
+    {
+      "name": "Menu Affaires business lunch",
+      "meal": "lunch",
+      "price": 58,
+      "note": "Monday to Friday lunch, not in school holidays or on bank holidays"
+    }
+  ],
+  "menusSource": "https://restaurant.alangeaam.fr/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Auberge Nicolas Flamel",
+      "price": 38,
+      "note": "The chef's other fine-dining restaurant, in a house built in 1407 in the 3rd arrondissement: lunch from €38 (Monday to Saturday), menus €68 to €128",
+      "url": "https://auberge.nicolas-flamel.fr/"
+    },
+    {
+      "name": "Qasti Bistrot",
+      "note": "The chef's Lebanese bistro, with sharing plates (rue Oberkampf and rue Saint-Martin)",
+      "url": "https://www.qasti.fr/"
+    }
+  ],
+  "starsSince": 2018,
+  "bookingOpens": "Online through Zenchef for up to six people, or by phone. Gift vouchers are not accepted on Thursday and Friday evenings.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=374696",
+  "bookingPhone": "+33 1 45 01 72 97",
+  "groups": "Parties of more than six have to book the whole restaurant: ask for a quote by email (restaurant@alangeaam.fr) or phone.",
+  "infoSource": "https://restaurant.alangeaam.fr/",
+  "infoChecked": "2026-10-13"
 }

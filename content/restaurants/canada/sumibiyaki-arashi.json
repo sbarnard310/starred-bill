@@ -22,5 +22,39 @@
   "placeId": "ChIJHT2qdw9xhlQRgfZgfKBAeq0",
   "michelinId": "1211355",
   "chef": "Pete Ho",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Sumibiyaki Arashi omakase",
+      "meal": "dinner",
+      "price": 195,
+      "note": "Yakitori-led charcoal-grill omakase with seasonal fish and vegetable dishes, at a 14-seat counter. Two sittings, 5:30pm and 8pm. Optional add-ons are offered, while they last."
+    }
+  ],
+  "menusSource": "https://www.opentable.com/booking/experiences-availability?rid=1417249&restref=1417249&experienceId=660040",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Online on OpenTable only. A whole month's tables open on the 1st of the month before at 9am Vancouver time. Tables are for two or four guests; solo diners can ask by email once the month is released. The restaurant does not answer the phone, so questions go to sumibiyaki.arashi@gmail.com. Bookings are not transferable, and resold ones are cancelled.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "09:00",
+    "tz": "America/Vancouver",
+    "via": "OpenTable",
+    "source": "https://sumibiyakiarashi.com/faqs",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.opentable.com/booking/experiences-availability?rid=1417249&restref=1417249&experienceId=660040",
+  "cancellation": "Cancel or change by email at least 72 hours ahead. Later cancellations, changes and no-shows are charged $195 per person plus processing fees. The meal starts on time: guests more than 15 minutes late miss courses, and after 30 minutes the booking counts as a no-show.",
+  "walkIns": "No walk-ins.",
+  "waitlist": "Use OpenTable's Notify feature to hear when a matching table frees up; email and social media waitlist requests are not taken.",
+  "groups": "Only parties of two or four; several bookings joined to make a bigger party are declined. Whole-restaurant buyouts by email.",
+  "groupsUrl": "https://sumibiyakiarashi.com/faqs",
+  "dressCode": "Business casual or smart casual. No sportswear, sweatpants, beachwear, pyjamas or flip-flops.",
+  "children": "No children under 16.",
+  "duration": "About two and a half hours.",
+  "byob": "Corkage only by arrangement before the visit, one bottle per party, no 1.8-litre bottles, outside glassware or spirits.",
+  "infoSource": "https://sumibiyakiarashi.com/faqs",
+  "infoChecked": "2026-10-13"
 }

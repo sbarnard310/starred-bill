@@ -14,8 +14,8 @@
   "dinner": 414,
   "dinnerNote": "Omakase, about 21 courses, including tax and service",
   "dinnerNoteFr": "Omakase d'environ 21 services, taxes et service compris",
-  "sourceType": "press",
-  "source": "https://cultmtl.com/2025/03/sushi-nishinokaze-introduces-a-new-echelon-of-refinement-to-montreal-dining/",
+  "sourceType": "site",
+  "source": "https://sushinishinokaze.com/",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteFr": "Uniquement le soir",
@@ -25,5 +25,35 @@
   "placeId": "ChIJoQvfJgAZyUwRkA7agWDfjYU",
   "michelinId": "1245066",
   "chef": "Vincent Gee",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Edomae omakase",
+      "meal": "dinner",
+      "price": 414,
+      "courses": 21,
+      "note": "About 21 courses at an eight-seat counter. The ticket is $413.91, including tax and service; drinks are extra and tips are not accepted."
+    }
+  ],
+  "menusSource": "https://sushinishinokaze.com/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2026,
+  "bookingOpens": "Online on Resy as prepaid tickets. Tables open 30 days ahead to the day, at midnight Montréal time. First-time guests must show photo ID matching the name on the booking.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 30,
+    "time": "00:00",
+    "tz": "America/Toronto",
+    "via": "Resy",
+    "source": "https://resy.com/cities/montreal-qc/venues/sushi-nishinokaze",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://resy.com/cities/montreal-qc/venues/sushi-nishinokaze",
+  "bookingPhone": "+1 438 558 6558",
+  "cancellation": "Tickets are not refundable, but can be passed to someone else (call ahead to change the name). Late arrivals miss courses, which are not made up or refunded.",
+  "groups": "Groups of more than four, private dining and events by email or text message.",
+  "dressCode": "No dress code is stated, but guests are asked not to wear perfume, cologne or strong deodorant.",
+  "children": "Guests under 12 by arrangement before booking. No babies or toddlers.",
+  "infoSource": "https://resy.com/cities/montreal-qc/venues/sushi-nishinokaze",
+  "infoChecked": "2026-10-13"
 }

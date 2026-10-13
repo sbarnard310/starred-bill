@@ -8,18 +8,12 @@
   "cuisine": "Modern Cuisine",
   "rating": 4.1,
   "reviews": 834,
-  "dinner": 139,
+  "dinner": 149,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/auberge-des-templiers",
-  "lunch": 80,
-  "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchNoteFr": "Menu déjeuner",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/auberge-des-templiers",
+  "dinnerNote": "Empreinte tasting menu",
+  "dinnerNoteFr": "Menu Empreinte",
+  "sourceType": "site",
+  "source": "https://www.lestempliers.com/media/original/menu_empreinte_03_septembre_26.pdf",
   "website": "https://www.lestempliers.com",
   "lat": 47.80058,
   "lng": 2.7394904,
@@ -29,5 +23,29 @@
     "vegetarian"
   ],
   "chef": "Thibault Nizard",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Empreinte tasting menu",
+      "meal": "dinner",
+      "price": 149,
+      "note": "Dinner Thursday to Sunday at La Table des Templiers"
+    }
+  ],
+  "menusSource": "https://www.lestempliers.com/media/original/menu_empreinte_03_septembre_26.pdf",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Le Boudoir",
+      "price": 39,
+      "note": "The hotel's seasonal restaurant, open for lunch every day and for dinner Monday to Wednesday; three-course Menu Confidences €39 at weekday lunch",
+      "url": "https://www.lestempliers.com/fr/restaurant.html"
+    }
+  ],
+  "hotel": "the Auberge des Templiers, a Relais & Châteaux hotel",
+  "bookingOpens": "Online through Zenchef for up to ten people, or by phone or email (reception@lestempliers.com).",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=358054&pid=1001",
+  "bookingPhone": "+33 2 38 31 80 01",
+  "infoSource": "https://www.lestempliers.com/fr/restaurant.html",
+  "infoChecked": "2026-10-13"
 }

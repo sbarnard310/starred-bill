@@ -22,5 +22,42 @@
   "placeId": "ChIJ51q_vUZzhlQRCCFO2VqvuQ4",
   "michelinId": "1206836",
   "chef": "Yuki Anai",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Omakase dinner",
+      "meal": "dinner",
+      "price": 335,
+      "courses": 25,
+      "note": "25+ courses. Wednesday to Sunday, two sittings at 5:45pm and 8:15pm."
+    },
+    {
+      "name": "Omakase lunch",
+      "meal": "lunch",
+      "price": 180,
+      "courses": 15,
+      "note": "15+ courses. Saturday and Sunday at 12:15pm (called brunch on the restaurant's FAQ)."
+    },
+    {
+      "name": "Ochakase tea omakase",
+      "meal": "lunch",
+      "price": 180,
+      "courses": 12,
+      "note": "12+ sweet and savoury courses with five Japanese teas. Saturdays at 2pm, held only now and then; gluten-free possible."
+    }
+  ],
+  "menusSource": "https://okeya.ca/vancouver-reservation/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2023,
+  "bookingOpens": "Online on OpenTable. Dinner is served Wednesday to Sunday at two sittings, 5:45pm and 8:15pm, with lunch on Saturday and Sunday at 12:15pm. A credit card is needed to book. Seats at the counter are given out in order of arrival, and doors open 15 minutes before the booking time.",
+  "bookingUrl": "https://www.opentable.com/r/okeya-kyujiro-vancouver",
+  "bookingPhone": "+1 778 999 1038",
+  "cancellation": "Free to cancel more than 72 hours ahead; a partial charge may apply between 72 and 24 hours, and the full price is charged within 24 hours. Cancel through OpenTable or by email (info@kyujiro.ca).",
+  "groups": "Groups of five or more book by phone or email and prepay the full omakase price plus a 20% service charge. The whole restaurant can be booked for the 8:15pm sitting only, for up to 14 guests.",
+  "dressCode": "Smart casual.",
+  "children": "No children's menu, and children pay the full price. The restaurant asks that babies and children under 5 not come.",
+  "duration": "About two hours for dinner and an hour and a half for lunch.",
+  "byob": "Guests may bring their own sake or wine, with corkage of $75 a 720ml bottle or $150 a 1.5-litre bottle.",
+  "infoSource": "https://okeya.ca/faq/",
+  "infoChecked": "2026-10-13"
 }

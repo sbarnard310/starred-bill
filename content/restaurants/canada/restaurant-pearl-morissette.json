@@ -11,11 +11,11 @@
   "rating": 4.8,
   "reviews": 914,
   "dinnerType": "menu",
-  "dinner": 240,
-  "dinnerNote": "Dining room tasting menu (chef's table $360), plus 18% service",
+  "dinner": 275,
+  "dinnerNote": "Dining room tasting menu, 10+ courses, from 1 November 2026 ($240 until then; chef's table $350), plus 18% service",
   "sourceType": "press",
-  "source": "https://travellingfoodie.net/restaurant-pearl-morissette-canada-best-new-restaurant/",
-  "lunchNote": "Open for lunch · Saturdays",
+  "source": "https://www.exploretock.com/pearlmorissette",
+  "lunchNote": "Same tasting menu as dinner, Saturdays only, plus 18% service",
   "website": "https://restaurantpearlmorissette.com/",
   "lat": 43.1562434,
   "lng": -79.3562157,
@@ -23,6 +23,36 @@
   "michelinId": "565364",
   "chef": "Eric Robertson, Daniel Hadida",
   "chefSource": "michelin",
+  "lunch": 275,
+  "lunchType": "menu",
+  "lunchSourceType": "press",
+  "lunchSource": "https://www.exploretock.com/pearlmorissette/faq",
+  "menus": [
+    {
+      "name": "Dining room tasting menu",
+      "meal": "dinner",
+      "price": 275,
+      "courses": 10,
+      "note": "10+ courses, lunch (Saturday) or dinner (Wednesday to Sunday). $275 from 1 November 2026, $240 until then. An 18% service charge and 13% tax are added. Wine pairing and non-alcoholic garden pairing on request, prices not published."
+    },
+    {
+      "name": "Chef's Table extended tasting menu",
+      "meal": "dinner",
+      "price": 350,
+      "note": "In a private room for one group of six a night, with the chefs and a sommelier. $350 from November 2026 ($305 in October), paid in full in advance with the 18% service charge ($413 a head) and not refundable. No dietary changes possible."
+    }
+  ],
+  "menusSource": "https://www.exploretock.com/pearlmorissette",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "RPM Bakehouse",
+      "note": "The restaurant's bakery and café in Jordan Village (3839 Main Street), open for breakfast and lunch, with wine by the glass and Pearl Morissette bottles.",
+      "url": "https://rpmbakehouse.com"
+    }
+  ],
+  "starsSince": 2025,
+  "bookingOpens": "Online on Tock. Tables are released every month or two and announced in the restaurant's newsletter; tables for January and February 2027 open on Thursday 19 November at noon Toronto time. A deposit of $95 per guest is taken for the dining room and refunded against the bill. Bookings are for two, four, five or six guests.",
   "bookingWindow": {
     "type": "announced",
     "tz": "America/Toronto",
@@ -30,5 +60,13 @@
     "note": "Tables are released every month or two, announced in the restaurant's newsletter.",
     "source": "https://www.exploretock.com/pearlmorissette/faq",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://www.exploretock.com/pearlmorissette",
+  "bookingPhone": "+1 905 562 7709",
+  "cancellation": "Cancel or change by email (restaurant@pearlmorissette.com) at least 48 hours ahead for the deposit back; bookings can't be changed on Tock. A booking can instead be transferred to someone else. The Chef's Table is not refundable and its date can't be changed.",
+  "groups": "No groups larger than six, and several tables may not be booked to make a bigger party. The Chef's Table takes exactly six. Buyouts and events by email to events@pearlmorissette.com.",
+  "children": "No guests under 12 in the dining room, whether dining or not.",
+  "duration": "Two to two and a half hours for the dining room menu; three to three and a half hours at the Chef's Table.",
+  "infoSource": "https://www.exploretock.com/pearlmorissette/faq",
+  "infoChecked": "2026-10-13"
 }

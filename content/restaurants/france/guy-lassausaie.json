@@ -10,8 +10,8 @@
   "reviews": 1295,
   "dinner": 150,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €60)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 60 €)",
+  "dinnerNote": "Tasting menu, minimum two people (other menus from €95)",
+  "dinnerNoteFr": "Menu dégustation, deux personnes minimum (autres menus dès 95 €)",
   "sourceType": "site",
   "source": "https://www.guy-lassausaie.com/menus",
   "lunch": 150,
@@ -26,5 +26,41 @@
   "placeId": "ChIJWxP_WdCT9EcRJ4GEO_OVhx4",
   "michelinId": "2033",
   "chef": "Guy Lassausaie",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 150,
+      "note": "Lunch or dinner, for at least two people; cheese and a dessert of your choice from the à la carte list"
+    },
+    {
+      "name": "Menu à 130 €",
+      "meal": "dinner",
+      "price": 130,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Menu à 95 €",
+      "meal": "dinner",
+      "price": 95,
+      "note": "Lunch or dinner"
+    }
+  ],
+  "menusSource": "https://www.guy-lassausaie.com/menus",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Bulle",
+      "price": 66,
+      "note": "The chef's restaurant beside the Fourvière basilica in Lyon, open every day for lunch and dinner: menus €66, €69 and €82, plus a €44 weekday lunch menu",
+      "url": "https://www.bullerestaurantfourviere.fr/"
+    }
+  ],
+  "bookingOpens": "Online through the booking page on the restaurant's website, or by phone or email (guy.lassausaie@lassausaie.fr).",
+  "bookingUrl": "https://www.guy-lassausaie.com/reservation",
+  "bookingPhone": "+33 4 78 47 62 59",
+  "children": "A children's menu for under-12s costs €40: a starter, main course and dessert in small portions, offered at the table.",
+  "infoSource": "https://www.guy-lassausaie.com/accueil",
+  "infoChecked": "2026-10-13"
 }

@@ -8,14 +8,14 @@
   "rating": 4.6,
   "reviews": 400,
   "dinnerType": "menu",
-  "dinner": 116,
-  "dinnerNote": "Tasting menu (other menus from €96)",
-  "wine": 55,
+  "dinner": 146,
+  "dinnerNote": "Six-course menu (4 courses from €101)",
+  "wine": 64,
   "sourceType": "site",
   "source": "https://lagrappedor.com/menu-unique/",
-  "lunch": 58,
+  "lunch": 63,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
+  "lunchNote": "Three-course lunch menu",
   "lunchSourceType": "site",
   "lunchSource": "https://lagrappedor.com/menu-unique/",
   "website": "https://lagrappedor.com/",
@@ -29,10 +29,54 @@
   ],
   "chef": "Clément Petitjean",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 96)",
+  "dinnerNoteNl": "Menu in 6 gangen (4 gangen vanaf € 101)",
   "cuisineNl": "Eigentijds Frans",
-  "dinnerNoteFr": "Menu dégustation (autres menus dès 96 €)",
+  "dinnerNoteFr": "Menu en 6 services (4 services dès 101 €)",
   "cuisineFr": "Cuisine française contemporaine",
-  "lunchNoteNl": "Lunchmenu",
-  "lunchNoteFr": "Menu déjeuner"
+  "lunchNoteNl": "Lunchmenu in 3 gangen",
+  "lunchNoteFr": "Menu déjeuner en 3 services",
+  "lunchWine": 37,
+  "menus": [
+    {
+      "name": "Six-course menu",
+      "meal": "dinner",
+      "price": 146,
+      "wine": 64,
+      "courses": 6,
+      "note": "Lunch or dinner. Beer pairing €58, alcohol-free pairing €50."
+    },
+    {
+      "name": "Five-course menu",
+      "meal": "dinner",
+      "price": 121,
+      "wine": 55,
+      "courses": 5,
+      "note": "Lunch or dinner. Beer pairing €50, alcohol-free pairing €43. Cheese trolley €25 extra."
+    },
+    {
+      "name": "Four-course menu",
+      "meal": "dinner",
+      "price": 101,
+      "wine": 46,
+      "courses": 4,
+      "note": "Lunch or dinner. Beer pairing €42, alcohol-free pairing €36. Cheese trolley €25 extra."
+    },
+    {
+      "name": "Three-course lunch menu",
+      "meal": "lunch",
+      "price": 63,
+      "wine": 37,
+      "courses": 3,
+      "note": "Lunch only. Beer pairing €34, alcohol-free pairing €29."
+    }
+  ],
+  "menusSource": "https://lagrappedor.com/menu-unique/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the booking module on the restaurant's website (TheFork), or by phone; bookings are not taken by email. If the module shows no tables, call for last-minute availability. Open Monday evening and Tuesday to Friday for lunch and dinner; closed Saturday, Sunday and Monday lunch.",
+  "bookingUrl": "https://lagrappedor.com/reserver/",
+  "bookingPhone": "+32 63 57 70 56",
+  "groups": "The private salon, the whole dining room or the terrace and garden can be booked for business lunches and celebrations: contact info@lagrappedor.com or call.",
+  "groupsUrl": "https://lagrappedor.com/privatisation/",
+  "infoSource": "https://lagrappedor.com/reserver/",
+  "infoChecked": "2026-10-13"
 }

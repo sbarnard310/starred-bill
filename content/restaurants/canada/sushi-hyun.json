@@ -11,16 +11,36 @@
   "reviews": 159,
   "dinnerType": "menu",
   "dinner": 300,
-  "dinnerNote": "Omakase, prepaid",
+  "dinnerNote": "Omakase, 15+ courses",
   "sourceType": "press",
-  "source": "https://www.exploretock.com/sushihyun",
+  "source": "https://www.exploretock.com/sushi-hyun-vancouver",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "website": "https://www.sushihyun.com/",
+  "website": "https://www.exploretock.com/sushi-hyun-vancouver",
   "lat": 49.287176,
   "lng": -123.1285175,
   "placeId": "ChIJm2CCe1FxhlQR2eesr8wR_ws",
   "michelinId": "1242789",
   "chef": "Juhyun Lee",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Omakase dinner",
+      "meal": "dinner",
+      "price": 300,
+      "courses": 15,
+      "note": "More than 15 courses of sushi and dishes made with seasonal fish. Everyone at the counter starts together."
+    }
+  ],
+  "menusSource": "https://www.exploretock.com/sushi-hyun-vancouver",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Online on Tock, which takes a $300 deposit per guest, the price of the omakase. It is refunded in full on arrival, and the meal, tax and drinks are charged at the end. Everyone at the counter starts at the same time, so guests are asked to arrive five minutes early.",
+  "bookingUrl": "https://www.exploretock.com/sushi-hyun-vancouver",
+  "bookingPhone": "+1 778 788 0795",
+  "cancellation": "Cancel or change at least 72 hours before the day for a full refund of the deposit; after that it is not refunded. Changes and cancellations are made directly with the restaurant, not through Tock. Arriving more than 20 minutes late without warning may count as a no-show, with the deposit lost.",
+  "groups": "Up to eight guests per booking.",
+  "byob": "Corkage of $100 for one 720ml bottle per table. The restaurant says strong drinks such as red wine, cognac and whisky are not allowed, nor is outside food.",
+  "infoSource": "https://www.exploretock.com/sushi-hyun-vancouver",
+  "infoChecked": "2026-10-13"
 }

@@ -31,5 +31,22 @@
   "placeId": "ChIJhTbZQNNTUkYRrlURja_vdgM",
   "michelinId": "1215743",
   "chef": "Allan Schultz",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "dinner menu with wine or non-alcoholic pairing",
+      "meal": "dinner",
+      "price": 3000,
+      "courses": 13,
+      "note": "Sold only with a pairing, wine or non-alcoholic, at the same price; deluxe wine pairing DKK 4,500"
+    }
+  ],
+  "menusSource": "https://www.parsleysalon.dk/en/home-1",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online on DinnerBooking. A booking fee of DKK 500 per person must be paid to confirm the table; it is taken off the bill. Open Wednesday to Saturday from 6:30pm.",
+  "bookingUrl": "https://dinnerbooking.com/dk/en-US/book/table/pax/3520/2",
+  "bookingPhone": "+45 24 21 21 62, Wednesday to Saturday, 12pm to 6pm",
+  "cancellation": "Cancel at least 72 hours ahead, or the DKK 500 per person booking fee is kept; a DKK 50 transaction fee applies to cancellations. Tables more than 15 minutes late without calling are cancelled and the fee kept.",
+  "infoSource": "https://www.parsleysalon.dk/en/home-1-1-1-1-1",
+  "infoChecked": "2026-10-13"
 }

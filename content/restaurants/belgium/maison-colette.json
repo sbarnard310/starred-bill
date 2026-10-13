@@ -28,7 +28,35 @@
   "dinnerNote": "Signature menu",
   "dinnerNoteNl": "Signatuurmenu",
   "dinnerNoteFr": "Menu Signature",
-  "lunchNote": "Market menu, 4 courses, some lunchtimes",
-  "lunchNoteNl": "Marktmenu, 4 bereidingen, enkele middagen",
-  "lunchNoteFr": "Menu du marché, 4 services, certains midis"
+  "lunchNote": "Market menu, 4 courses, Wednesday to Friday lunch",
+  "lunchNoteNl": "Marktmenu, 4 bereidingen, woensdag- tot vrijdagmiddag",
+  "lunchNoteFr": "Menu du marché, 4 services, du mercredi au vendredi midi",
+  "menus": [
+    {
+      "name": "Signature menu",
+      "meal": "dinner",
+      "price": 230,
+      "wine": 100,
+      "note": "Lunch or dinner. Matching wines from €100; a 'tasting arrangement' and an alcohol-free pairing are €80 each. A vegetarian version on request when booking."
+    },
+    {
+      "name": "Four-course market menu",
+      "meal": "lunch",
+      "price": 155,
+      "courses": 4,
+      "note": "Wednesday, Thursday and Friday lunch only, not on Sundays or public holidays."
+    }
+  ],
+  "menusSource": "https://maison-colette.be/en/signature-menu",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the restaurant's website for up to seven guests. Each month's tables open three months ahead, for the whole month at once. Bookings must be reconfirmed at least seven days before the visit (15 days for groups of eight or more), or they count as cancelled.",
+  "bookingUrl": "https://maison-colette.be/en/reservations",
+  "bookingPhone": "+32 14 72 29 05",
+  "cancellation": "Card details are taken when booking. For two to seven guests, cancelling more than 48 hours ahead is free; within 48 hours it costs €50 a person and within 24 hours €100 a person. A no-show costs €200 a person. Cancel through the confirmation email's link, by email or by phone; changes are handled Monday to Friday, 9am to 5pm.",
+  "waitlist": "When no tables are free, a provisional booking can be put on the waiting list through the website, with card details; the restaurant gets in touch if a table comes free.",
+  "groups": "Parties of eight or more, and private dining, book by email to reservaties@maison-colette.be. Salon 'Anna', a private dining room with its own terrace, seats eight to 20 for lunch or dinner. Groups of eight or more pay a deposit and choose one menu for the whole table 15 days ahead.",
+  "groupsUrl": "https://maison-colette.be/en/salon-anna",
+  "dressCode": "Stylish dress suited to the setting; no stricter rule is given.",
+  "infoSource": "https://maison-colette.be/en/reservations",
+  "infoChecked": "2026-10-13"
 }

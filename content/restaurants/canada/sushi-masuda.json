@@ -22,5 +22,35 @@
   "placeId": "ChIJsX0QBDBxhlQRiAP9i2t_vv8",
   "michelinId": "1214860",
   "chef": "Yoji Masuda",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Omakase counter",
+      "meal": "dinner",
+      "price": 320,
+      "courses": 20,
+      "note": "About 20 courses: four or five appetisers, 10 to 12 pieces of sushi and soup, at a six-seat counter."
+    }
+  ],
+  "menusSource": "https://www.sushimasuda.com/menu",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "Online on Tock. A whole month's tables open on the 1st of the month before at 5pm Vancouver time (bookings for February open on 1 January). A deposit is taken when booking and returned to the card on arrival. Dinner is served Wednesday, Thursday, Saturday and Sunday from 5:30pm and Friday from 7pm; closed Monday and Tuesday.",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "17:00",
+    "tz": "America/Vancouver",
+    "via": "Tock",
+    "source": "https://www.sushimasuda.com/before-you-visit",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.exploretock.com/sushi-masuda-vancouver",
+  "cancellation": "Cancel at least seven days before the booking for the deposit back; after that it is kept. Guests more than 20 minutes late may lose the table and the deposit.",
+  "groups": "Tock takes parties of one to six.",
+  "dressCode": "No dress code is stated, but guests are asked not to wear perfume, cologne or other strong scents.",
+  "children": "The course is for guests aged 13 and over, and there is no children's menu.",
+  "infoSource": "https://www.sushimasuda.com/before-you-visit",
+  "infoChecked": "2026-10-13"
 }

@@ -8,15 +8,15 @@
   "reviews": 914,
   "dinnerType": "menu",
   "dinner": 285,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "8-course tasting menu (7 courses from €265, 9 courses €350)",
   "wine": 150,
-  "sourceType": "press",
-  "source": "https://www.falter.at/lokal/5508/restaurant-konstantin-filippou",
+  "sourceType": "site",
+  "source": "https://konstantinfilippou.com/restaurant/dinner-2/",
   "lunch": 75,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.falter.at/lokal/5508/restaurant-konstantin-filippou",
+  "lunchNote": "Three-course lunch menu, changes weekly (4 courses €94, 6 courses €175)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://konstantinfilippou.com/restaurant/food/",
   "website": "https://konstantinfilippou.com/",
   "lat": 48.2106747,
   "lng": 16.3798024,
@@ -24,7 +24,82 @@
   "michelinId": "405344",
   "chef": "Konstantin Filippou",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
+  "dinnerNoteDe": "Degustationsmenü mit 8 Gängen (7 Gänge ab 265 €, 9 Gänge 350 €)",
   "cuisineDe": "Moderne Küche",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü mit 3 Gängen, wöchentlich wechselnd (4 Gänge 94 €, 6 Gänge 175 €)",
+  "menus": [
+    {
+      "name": "Seven-course tasting menu",
+      "meal": "dinner",
+      "price": 265,
+      "wine": 135,
+      "courses": 7,
+      "note": "With salmon trout as the main course; €310 with saddle of venison. Alcohol-free pairing €90, Champagne pairing €200. Cover charge €9."
+    },
+    {
+      "name": "Eight-course tasting menu",
+      "meal": "dinner",
+      "price": 285,
+      "wine": 150,
+      "courses": 8,
+      "note": "With salmon trout as the main course; €330 with saddle of venison. Alcohol-free pairing €105, Champagne pairing €225. Cover charge €9."
+    },
+    {
+      "name": "Nine-course tasting menu",
+      "meal": "dinner",
+      "price": 350,
+      "wine": 165,
+      "courses": 9,
+      "note": "Alcohol-free pairing €120, Champagne pairing €250. Cover charge €9."
+    },
+    {
+      "name": "Three-course lunch menu",
+      "meal": "lunch",
+      "price": 75,
+      "courses": 3,
+      "note": "Changes weekly. Cover charge €9."
+    },
+    {
+      "name": "Four-course lunch menu",
+      "meal": "lunch",
+      "price": 94,
+      "courses": 4,
+      "note": "Changes weekly. Cover charge €9."
+    },
+    {
+      "name": "Six-course lunch menu",
+      "meal": "lunch",
+      "price": 175,
+      "courses": 6,
+      "note": "Includes the brandade and caviar signature dish and the fish soup. Cover charge €9."
+    }
+  ],
+  "menusSource": "https://konstantinfilippou.com/restaurant/dinner-2/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "O boufés",
+      "note": "The chef's wine bistro in the same building, open Tuesday to Saturday evenings; six courses €99, four courses €79, or à la carte.",
+      "price": 79,
+      "url": "https://konstantinfilippou.com/oboufes"
+    }
+  ],
+  "bookingOpens": "Online through the restaurant's booking page, or by email to reservation@konstantinfilippou.com. Tables can be booked up to six months ahead.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 6,
+    "tz": "Europe/Vienna",
+    "via": "aleno",
+    "source": "https://konstantinfilippou.com/restaurant/reservations/",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://mytools.aleno.me/reservations/v2.0/reservations.html?k=eyJrIjoid2l2dTVrM2lsNm15cnBiOWlwdzZ4bmViajhycnVkaWRpZ280bGZwODBsbzlhNGlweTEiLCJyIjoidkpyVDZCNjl1dmdaV3hUTHgiLCJzIjoiaHR0cHM6Ly9teXRvb2xzLmFsZW5vLm1lLyJ9&locale=en",
+  "bookingPhone": "+43 1 5122229",
+  "cancellation": "Card details (Mastercard or Visa) are needed to confirm a booking. Cancel by email at least 48 hours ahead, Monday to Friday during opening hours, or €200 a person is charged (€80 at lunch).",
+  "waitlist": "Ask for a place on the waiting list by email to reservation@konstantinfilippou.com.",
+  "groups": "Parties of five or more book by email. A private dining room seats up to 16, and events outside opening hours can be arranged on request.",
+  "children": "Children are welcome if they can enjoy the tasting menu; chicken or pasta can be made if ordered ahead. The restaurant is not suited to babies and toddlers.",
+  "duration": "About three and a half hours for the dinner tasting menu.",
+  "infoSource": "https://konstantinfilippou.com/restaurant/reservations/",
+  "infoChecked": "2026-10-13"
 }

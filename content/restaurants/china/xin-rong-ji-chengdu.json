@@ -21,5 +21,14 @@
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
   "cuisineZhs": "台州菜",
-  "nameZhs": "新荣记"
+  "nameZhs": "新荣记",
+  "starsSince": 2026,
+  "bookingOpens": "By phone. Xinrongji's online booking site does not yet take bookings for this branch.",
+  "bookingPhone": "+86 28 6810 2828",
+  "groups": "Private rooms are available.",
+  "dressCode": "Smart casual.",
+  "children": "The main dining room is for guests aged 12 and over.",
+  "servicePct": 15,
+  "infoSource": "https://ordering.xinrongji.com/en/reserve/message?store=chengduhuashang",
+  "infoChecked": "2026-10-13"
 }

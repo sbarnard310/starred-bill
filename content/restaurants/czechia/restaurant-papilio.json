@@ -29,11 +29,40 @@
   "chef": "Jan Knedla",
   "chefSource": "michelin",
   "dinnerNoteCs": "Degustační menu (další menu od CZK 5,500)",
-  "lunch": 6500,
+  "lunch": 5500,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sat",
-  "lunchNoteCs": "Stejné menu v poledne · čt–so",
-  "lunchWine": 3500,
+  "lunchNote": "8-course menu at lunch (10-course CZK 6,500) · Thu–Sat",
+  "lunchNoteCs": "8chodové menu v poledne (10chodové CZK 6,500) · čt–so",
+  "lunchWine": 2800,
   "lunchSourceType": "site",
-  "lunchSource": "https://restaurant-papilio.cz/"
+  "lunchSource": "https://restaurant-papilio.cz/menu",
+  "menus": [
+    {
+      "name": "10-course tasting menu",
+      "meal": "dinner",
+      "price": 6500,
+      "wine": 3500,
+      "courses": 10,
+      "note": "Lunch or dinner. Privia wine pairing CZK 3,500, Pavonia pairing CZK 6,900, tea pairing CZK 2,000"
+    },
+    {
+      "name": "8-course tasting menu",
+      "meal": "dinner",
+      "price": 5500,
+      "wine": 2800,
+      "courses": 8,
+      "note": "Lunch or dinner. Privia wine pairing CZK 2,800, Pavonia pairing CZK 5,700, tea pairing CZK 1,700"
+    }
+  ],
+  "menusSource": "https://restaurant-papilio.cz/menu",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "By phone, or by the request form on the restaurant's website. Open Wednesday from 6:30pm, and Thursday to Saturday for lunch (12pm to 3:30pm) and from 6:30pm.",
+  "bookingUrl": "https://restaurant-papilio.cz/rezervace",
+  "bookingPhone": "+420 724 132 013",
+  "groups": "A chef's table seats up to 8, Wednesday to Saturday from 6:30pm, with a tasting menu from Jan Knedla's team; book it well ahead.",
+  "dressCode": "Smart casual.",
+  "children": "Children aged 12 and over are welcome.",
+  "infoSource": "https://restaurant-papilio.cz/kontakt",
+  "infoChecked": "2026-10-13"
 }

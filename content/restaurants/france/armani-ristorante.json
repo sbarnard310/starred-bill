@@ -14,14 +14,14 @@
   "dinnerType": "menu",
   "dinnerNote": "Menu Défilé, 5 courses",
   "dinnerNoteFr": "Menu Défilé, 5 services",
-  "sourceType": "press",
-  "source": "https://www.thefork.com/restaurant/armani-ristorante-r275457/menu",
+  "sourceType": "site",
+  "source": "https://assets.armani.com/image/upload/v1790692434/EnMenuARParisOct26.pdf",
   "lunch": 99,
   "lunchType": "menu",
   "lunchNote": "Menu Prêt-à-porter, Fri–Sun lunch",
   "lunchNoteFr": "Menu Prêt-à-porter, déjeuner ven.–dim.",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.thefork.com/restaurant/armani-ristorante-r275457/menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://assets.armani.com/image/upload/v1790692434/EnSuggestionsARParisOct26.pdf",
   "website": "https://www.armani.com/fr-ch/armani-restaurant/experience/emporio-armani-caffe-ristorante-paris/",
   "lat": 48.8537124,
   "lng": 2.3325851,
@@ -31,5 +31,45 @@
     "vegetarian"
   ],
   "chef": "Massimo Tringali",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 90,
+  "menus": [
+    {
+      "name": "Défilé chef's surprise menu",
+      "meal": "dinner",
+      "price": 160,
+      "wine": 90,
+      "courses": 5,
+      "note": "Lunch or dinner, for the whole table (two starters, two main courses, one dessert); pairing of five glasses €90, or €50 without alcohol"
+    },
+    {
+      "name": "Menu Porcini",
+      "meal": "dinner",
+      "price": 160,
+      "courses": 4,
+      "note": "Autumn porcini menu, lunch or dinner, for the whole table"
+    },
+    {
+      "name": "Menu Prêt-à-porter",
+      "meal": "lunch",
+      "price": 99,
+      "courses": 4,
+      "note": "Lunch Friday to Sunday only, until 2pm; a choice of dishes at each course"
+    }
+  ],
+  "menusSource": "https://assets.armani.com/image/upload/v1790692434/EnMenuARParisOct26.pdf",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Emporio Armani Caffè",
+      "note": "The café on the ground floor of the same building, with its lounge and year-round veranda",
+      "url": "https://www.armani.com/en-fr/armani-restaurant/experience/emporio-armani-caffe-ristorante-paris/"
+    }
+  ],
+  "starsSince": 2018,
+  "bookingOpens": "Online through TheFork, or by phone or email (armaniristoranteparis@giorgioarmani.fr).",
+  "bookingUrl": "https://module.lafourchette.com/fr_FR/module/275457-67772#/1709191/pdh",
+  "bookingPhone": "+33 1 45 48 62 15",
+  "infoSource": "https://www.armani.com/en-fr/armani-restaurant/experience/emporio-armani-caffe-ristorante-paris/",
+  "infoChecked": "2026-10-13"
 }

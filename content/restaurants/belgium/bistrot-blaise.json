@@ -33,5 +33,22 @@
   "lunchNoteFr": "Menu lunch, en semaine",
   "lunchSourceType": "site",
   "lunchSource": "https://bistrotblaise.be/",
-  "cuisineFr": "Cuisine française contemporaine"
+  "cuisineFr": "Cuisine française contemporaine",
+  "menus": [
+    {
+      "name": "Three-course weekday lunch menu",
+      "meal": "lunch",
+      "price": 54,
+      "wine": 24,
+      "courses": 3,
+      "note": "Weekday lunchtimes only, not on public holidays. The wine pairing covers the starter and main, not the dessert."
+    }
+  ],
+  "menusSource": "https://bistrotblaise.be/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the booking form on the restaurant's website (Barestho), or by phone or email to info@bistrotblaise.be. Open Tuesday to Saturday, lunch 12pm to 1.15pm (not Thursday) and dinner 7pm to 8pm; closed Sunday and Monday.",
+  "bookingUrl": "https://bistrotblaise.reservation.barestho.com/",
+  "bookingPhone": "+32 470 89 57 12",
+  "infoSource": "https://bistrotblaise.be/",
+  "infoChecked": "2026-10-13"
 }

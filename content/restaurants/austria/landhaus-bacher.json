@@ -9,7 +9,7 @@
   "reviews": 631,
   "dinnerType": "menu",
   "dinner": 245,
-  "dinnerNote": "Tasting menu (other menus from €190)",
+  "dinnerNote": "Landhaus menu (other menus from €190)",
   "wine": 101,
   "sourceType": "site",
   "source": "https://www.landhaus-bacher.at/wp-content/uploads/2026/09/Menuekarte-25.September-II.pdf",
@@ -24,13 +24,64 @@
   ],
   "chef": "Thomas Dorfer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 190 €)",
-  "lunch": 245,
+  "dinnerNoteDe": "Landhaus Menü (andere Menüs ab 190 €)",
+  "lunch": 72,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sun",
-  "lunchNoteDe": "Gleiches Menü am Mittag · Do–So",
-  "lunchWine": 101,
+  "lunchNote": "Three-course lunch menu, Thursday and Friday (4 courses €84)",
+  "lunchNoteDe": "Mittagsmenü mit 3 Gängen, Donnerstag und Freitag (4 Gänge 84 €)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.landhaus-bacher.at/wp-content/uploads/2026/09/Menuekarte-25.September-II.pdf",
-  "cuisineDe": "Klassische Küche"
+  "lunchSource": "https://www.landhaus-bacher.at/wp-content/uploads/2026/09/Mittagsmenue-klein-10.September-2026.pdf",
+  "cuisineDe": "Klassische Küche",
+  "menus": [
+    {
+      "name": "Landhaus menu",
+      "meal": "dinner",
+      "price": 245,
+      "wine": 101,
+      "note": "Lunch (Thursday to Sunday) or dinner. Cheese €18 extra. Cover charge €9.50."
+    },
+    {
+      "name": "Autumn menu",
+      "meal": "dinner",
+      "price": 230,
+      "wine": 122,
+      "note": "Seasonal menu, lunch (Thursday to Sunday) or dinner. Cheese €18 extra. Cover charge €9.50."
+    },
+    {
+      "name": "Classic menu",
+      "meal": "dinner",
+      "price": 220,
+      "wine": 116,
+      "note": "For two or more, with the house's caviar egg and grilled ox; €245 with A5 Wagyu. Cover charge €9.50."
+    },
+    {
+      "name": "Vegetarian menu",
+      "meal": "dinner",
+      "price": 190,
+      "wine": 113,
+      "note": "Lunch (Thursday to Sunday) or dinner. Cover charge €9.50."
+    },
+    {
+      "name": "Three-course lunch menu",
+      "meal": "lunch",
+      "price": 72,
+      "courses": 3,
+      "note": "Thursday and Friday lunch only, not on public holidays. Cover charge €8."
+    },
+    {
+      "name": "Four-course lunch menu",
+      "meal": "lunch",
+      "price": 84,
+      "courses": 4,
+      "note": "With the beef broth course. Thursday and Friday lunch only, not on public holidays. Cover charge €8."
+    }
+  ],
+  "menusSource": "https://www.landhaus-bacher.at/kueche-keller/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "By request through the form on the restaurant's website, by phone or by email to info@landhaus-bacher.at. A booking only stands once the restaurant has confirmed it in writing by email.",
+  "bookingUrl": "https://www.landhaus-bacher.at/en/reservierung/",
+  "bookingPhone": "+43 2732 82937",
+  "groups": "A whole wild turbot cooked in a turbotière can be ordered ahead for six to ten people. Bills are split per table only.",
+  "infoSource": "https://www.landhaus-bacher.at/kontakt/",
+  "infoChecked": "2026-10-13"
 }

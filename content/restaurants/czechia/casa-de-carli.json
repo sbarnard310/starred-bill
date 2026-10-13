@@ -29,5 +29,11 @@
   "chef": "Matteo De Carli",
   "chefSource": "michelin",
   "dinnerNoteCs": "Typický hlavní chod",
-  "lunchNoteCs": "Otevřeno v poledne · po–pá"
+  "lunchNoteCs": "Otevřeno v poledne · po–pá",
+  "starsSince": 2025,
+  "bookingOpens": "Online through the restaurant's booking page, or by phone. Open Monday to Friday, 12pm to 3pm and 6pm to 11pm; closed at weekends and on public holidays.",
+  "bookingUrl": "https://maitry.ai/booking/casa-de-carli",
+  "bookingPhone": "+420 224 816 688",
+  "infoSource": "https://www.casadecarli.cz/cs/nase-menu/",
+  "infoChecked": "2026-10-13"
 }

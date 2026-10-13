@@ -20,9 +20,9 @@
   "lunchType": "menu",
   "lunchNote": "Midday menu, weekdays",
   "lunchNoteFr": "Menu du midi, en semaine",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.thefork.com/restaurant/le-114-faubourg-le-bristol-paris-r291345/menu",
-  "notice": "Temporarily closed",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.oetkerhotels.com/hotels/le-bristol-paris/restaurants-bars/114-faubourg/",
+  "notice": "Closed until further notice after a kitchen fire on 25 March 2026",
   "website": "https://www.oetkerhotels.com/fr/hotels/le-bristol-paris/restaurants-bars/114-faubourg/",
   "lat": 48.8718054,
   "lng": 2.3143326,
@@ -33,5 +33,11 @@
     "vegetarian"
   ],
   "chef": "Vincent Schmit",
-  "chefSource": "press"
+  "chefSource": "press",
+  "hotel": "Le Bristol Paris",
+  "bookingOpens": "The restaurant is closed until further notice. When open, it books by phone or by email to 114faubourg@oetkerhotels.com, and serves lunch daily from 12pm to 2pm and dinner from 7pm to 10pm.",
+  "bookingPhone": "+33 1 53 43 44 44",
+  "groups": "The restaurant can be booked in full or in part for private and corporate events.",
+  "infoSource": "https://www.oetkerhotels.com/hotels/le-bristol-paris/restaurants-bars/114-faubourg/",
+  "infoChecked": "2026-10-13"
 }

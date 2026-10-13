@@ -7,11 +7,11 @@
   "rating": 4.7,
   "reviews": 368,
   "dinnerType": "menu",
-  "dinner": 160,
-  "dinnerNote": "Tasting menu",
-  "wine": 105,
-  "sourceType": "press",
-  "source": "https://www.falter.at/lokal/3209/pramerl-the-wolf",
+  "dinner": 170,
+  "dinnerNote": "Surprise menu, Wednesday and Thursday (Friday and Saturday €185, or €160 at the shorter 6pm seating)",
+  "wine": 115,
+  "sourceType": "site",
+  "source": "https://pramerlandthewolf.com/menuepreise/?lang=en",
   "website": "https://pramerlandthewolf.com/",
   "lat": 48.2220395,
   "lng": 16.3648603,
@@ -20,11 +20,47 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü",
+  "dinnerNoteDe": "Überraschungsmenü, Mittwoch und Donnerstag (Freitag und Samstag 185 €, kürzere Variante ab 18 Uhr 160 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ",
   "chef": "Wolfgang Zankl",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Surprise menu",
+      "meal": "dinner",
+      "price": 170,
+      "wine": 115,
+      "note": "Wednesday and Thursday. Non-alcoholic pairing €70; premium wine pairing from €230."
+    },
+    {
+      "name": "Surprise menu, Prime Time seating",
+      "meal": "dinner",
+      "price": 185,
+      "wine": 125,
+      "note": "Friday and Saturday from 8.30pm. Non-alcoholic pairing €75; premium wine pairing from €230."
+    },
+    {
+      "name": "Surprise menu, Early Bird seating",
+      "meal": "dinner",
+      "price": 160,
+      "wine": 105,
+      "note": "A shorter version of the menu, Friday and Saturday 6pm to 8pm. Non-alcoholic pairing €65."
+    }
+  ],
+  "menusSource": "https://pramerlandthewolf.com/menuepreise/?lang=en",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through Zenchef, from the restaurant's website. Open Wednesday and Thursday from 7pm and Friday and Saturday from 6pm, with two seatings on Friday and Saturday (6pm to 8pm, and 8.30pm). The restaurant emails a few days before to ask guests to confirm; unconfirmed tables may be cancelled.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=376250&pid=1001",
+  "bookingPhone": "+43 1 9464139",
+  "cancellation": "Card details are taken when booking. Cancel or change by email at least 48 hours ahead, or a cancellation fee is charged for each missing guest.",
+  "walkIns": "For short notice, the Sommelierstable (high chairs at the bar) can be booked only by phone or in person. Solo diners are seated there.",
+  "groups": "The Sommelierstable cannot be booked online for larger parties: call or email to check.",
+  "dressCode": "No dress code.",
+  "children": "Children are welcome; tell the restaurant ahead if a child needs different dishes. The 6pm Early Bird seating is suggested for younger children.",
+  "byob": "Guests may bring wines not on the list, for €50 corkage.",
+  "infoSource": "https://pramerlandthewolf.com/faqs/?lang=en",
+  "infoChecked": "2026-10-13"
 }

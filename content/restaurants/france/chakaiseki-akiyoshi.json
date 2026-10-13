@@ -12,16 +12,16 @@
   "reviews": 1232,
   "dinner": 300,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase at a table (counter €320)",
-  "dinnerNoteFr": "Omakase en salle (au comptoir 320 €)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/chakaiseki-akiyoshi",
+  "dinnerNote": "Omakase at a table (tea ceremony counter €310, chef's counter €320)",
+  "dinnerNoteFr": "Omakase en salle (comptoir de la cérémonie du thé 310 €, comptoir du chef 320 €)",
+  "sourceType": "site",
+  "source": "https://chakaiseki-akiyoshi.fr/en/menu/",
   "lunch": 200,
   "lunchType": "menu",
-  "lunchNote": "Omakase lunch at a table",
-  "lunchNoteFr": "Omakase du déjeuner en salle",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/chakaiseki-akiyoshi",
+  "lunchNote": "Omakase lunch at a table (counters €210–220)",
+  "lunchNoteFr": "Omakase du déjeuner en salle (comptoirs 210–220 €)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://chakaiseki-akiyoshi.fr/en/menu/",
   "website": "https://chakaiseki-akiyoshi.fr/",
   "lat": 48.8469761,
   "lng": 2.2988947,
@@ -31,5 +31,27 @@
     "vegetarian"
   ],
   "chef": "Yuichiro Akiyoshi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Omakase dinner menu",
+      "meal": "dinner",
+      "price": 300,
+      "note": "At the shared table; €310 at the tea ceremony counter, €320 at the chef's counter; changes every month"
+    },
+    {
+      "name": "Omakase lunch menu",
+      "meal": "lunch",
+      "price": 200,
+      "note": "At the shared table; €210 at the tea ceremony counter, €220 at the chef's counter; no lunch on Wednesday"
+    }
+  ],
+  "menusSource": "https://chakaiseki-akiyoshi.fr/en/menu/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through Zenchef, choosing the seat first, as the price depends on it: six seats at the chef's counter, four at the tea ceremony counter and six at the shared table. Bookings are required.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=362817&pid=1001",
+  "cancellation": "A card is held to guarantee the booking and charged only for a no-show or a cancellation less than 48 hours ahead. A table may be given away after 30 minutes' delay.",
+  "groups": "Up to ten people can book online; the shared table suits groups of more than two.",
+  "infoSource": "https://chakaiseki-akiyoshi.fr/en/reserve/",
+  "infoChecked": "2026-10-13"
 }

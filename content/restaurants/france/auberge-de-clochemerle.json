@@ -10,8 +10,8 @@
   "reviews": 719,
   "dinner": 129,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €59)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 59 €)",
+  "dinnerNote": "Menu E, 8-course tasting menu; 6-glass pairing (other menus from €59)",
+  "dinnerNoteFr": "Menu E, menu dégustation en 8 services ; accord en 6 verres (autres menus dès 59 €)",
   "sourceType": "site",
   "source": "https://www.aubergedeclochemerle.fr/media/original/pdf/2026-menu-octobre.pdf",
   "lunch": 129,
@@ -31,5 +31,38 @@
     "gluten-free"
   ],
   "chef": "Romain Barthe",
-  "chefSource": "site"
+  "chefSource": "site",
+  "wine": 68,
+  "menus": [
+    {
+      "name": "Menu E tasting menu",
+      "meal": "dinner",
+      "price": 129,
+      "wine": 68,
+      "courses": 8,
+      "note": "Lunch or dinner, for the whole table; wine pairing of three glasses €35, four €46 or six €68, or five teas or infusions"
+    },
+    {
+      "name": "Menu M",
+      "meal": "dinner",
+      "price": 89,
+      "note": "Lunch or dinner: amuse-bouches, starter, main, cheese, pre-dessert, dessert and petits fours"
+    },
+    {
+      "name": "Menu Gamay",
+      "meal": "dinner",
+      "price": 59,
+      "note": "Weekdays only, not on bank holidays, lunch or dinner: amuse-bouches, main, dessert and petits fours; cheese extra"
+    }
+  ],
+  "menusSource": "https://www.aubergedeclochemerle.fr/media/original/pdf/2026-menu-octobre.pdf",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "hotel": "the Auberge de Clochemerle, the chef's own 10-room hotel",
+  "bookingOpens": "Online through TheFork, or by phone or email (contact@aubergedeclochemerle.fr).",
+  "bookingUrl": "https://module.lafourchette.com/fr_FR/module/2755-e8387",
+  "bookingPhone": "+33 4 74 03 20 16",
+  "groups": "The restaurant can be booked privately for up to 34 people.",
+  "infoSource": "https://www.aubergedeclochemerle.fr/",
+  "infoChecked": "2026-10-13"
 }

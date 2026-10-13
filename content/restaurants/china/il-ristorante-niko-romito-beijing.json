@@ -6,11 +6,11 @@
   "cuisine": "Italian",
   "rating": 4.4,
   "reviews": 111,
-  "dinnerType": "spend",
-  "dinner": 957,
-  "dinnerNote": "Typical spend",
-  "sourceType": "press",
-  "source": "https://you.ctrip.com/food/1/18590435.html",
+  "dinnerType": "menu",
+  "dinner": 1598,
+  "dinnerNote": "Menu Degustazione, six courses (CN¥2,798 with wine pairing); tax and service included",
+  "sourceType": "site",
+  "source": "https://www.bulgarihotels.com/dam/jcr:63d9d2c0-522b-4466-bb13-008bbb4ca35d/bvlgari-hotel-beijing-il-ristorante-niko-romito-menu-autumn.pdf",
   "website": "https://www.bulgarihotels.com/en_US/beijing/dining/il-ristorante-niko-romito",
   "lat": 39.9463887,
   "lng": 116.4515797,
@@ -24,8 +24,35 @@
   ],
   "chef": "Niko Romito",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "人均消费",
+  "dinnerNoteZhs": "六道菜品鉴菜单（含配酒 CN¥2,798）；已含税及服务费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "意大利菜"
+  "cuisineZhs": "意大利菜",
+  "wine": 1200,
+  "menus": [
+    {
+      "name": "Menu Degustazione tasting menu",
+      "meal": "dinner",
+      "price": 1598,
+      "wine": 1200,
+      "courses": 6,
+      "note": "For the whole table; CN¥2,798 with the wine pairing; tax and service included"
+    },
+    {
+      "name": "Sunday brunch",
+      "meal": "lunch",
+      "price": 888,
+      "note": "Sundays 12pm to 3pm; a semi-buffet of Italian dishes, cheeses, charcuterie and desserts, with a glass of welcome wine; tax and service included"
+    }
+  ],
+  "menusSource": "https://www.bulgarihotels.com/dam/jcr:63d9d2c0-522b-4466-bb13-008bbb4ca35d/bvlgari-hotel-beijing-il-ristorante-niko-romito-menu-autumn.pdf",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2020,
+  "hotel": "the Bvlgari Hotel Beijing",
+  "bookingOpens": "By phone through the hotel, or with the reservation enquiry form on the restaurant's page on the Bvlgari Hotels website.",
+  "bookingUrl": "https://www.bulgarihotels.com/en_US/beijing/dining/il-ristorante-niko-romito",
+  "bookingPhone": "+86 10 8555 8555",
+  "servicePct": 0,
+  "infoSource": "https://www.bulgarihotels.com/en_US/beijing/dining/il-ristorante-niko-romito",
+  "infoChecked": "2026-10-13"
 }

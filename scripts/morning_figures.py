@@ -6,8 +6,10 @@
 Reads three sources and writes their figures to OUT.json (printing them too). With PREVIOUS.json, the
 report can say what changed. A source that isn't set up yet is reported as "not set up" and skipped.
 
-  - Google Search Console (clicks, impressions, average position, top searches and pages). Its figures
-    run two to three days behind, so it reports the last 7 days it has, against the 7 before.
+  - Google Search Console (clicks, impressions, average position, top searches and pages, each with the
+    countries it shows in and, from the Ahrefs snapshot of 7 Oct 2026, its monthly search volume; search
+    countries and devices). Its figures run two to three days behind, so it reports the last 7 days it has,
+    against the 7 before.
   - Google's index: which of the key pages in index-pages.txt (beside config.json) Google has indexed, from
     Search Console's URL Inspection, and which became indexed since the previous day.
   - The site's whole sitemap: how many of its pages Google has indexed (URL Inspection, a few hundred a day,
@@ -21,7 +23,8 @@ report can say what changed. A source that isn't set up yet is reported as "not 
   - The SEO plan's four measures against their aims for 31 Jan 2027 (SEO_AIMS), put together from the above.
   - Google Analytics 4 (visitors, sessions, page views, top pages and countries, sign-ups). It only counts
     visitors who accepted the cookie banner.
-  - Umami (every visit, no cookies: visitors, page views, top pages, referrers, countries, click events).
+  - Umami (every visit, no cookies: visitors, page views, bounce rate, time per visit, the last 7 days, top and
+    entry pages, referrers, countries, devices, click events).
 
 Settings live in ~/starred-bill-research/figures/config.json (nothing secret in it):
   {"gsc_site": "sc-domain:starredbill.com", "ga4_property": "123456789",
@@ -56,6 +59,77 @@ SITE = "https://starredbill.com"
 SEO_AIMS = {"by": "2027-01-31", "pages_indexed": 400, "weekly_impressions": 10000, "linking_sites": 20,
             "targets_on_page_one": 10}
 INDEX_BUDGET = 300   # sitemap pages re-inspected a day, besides the key pages (Google allows 2,000 a day)
+# Monthly search volumes come from the Ahrefs snapshot of 7 Oct 2026 (the subscription has ended; Search Console
+# gives no volumes). Searches it doesn't hold have no volume.
+AHREFS = Path.home() / "starred-bill-research" / "ahrefs" / "2026-10-07"
+# Search Console's 3-letter country codes: the 2-letter code Ahrefs uses, and the name for the report.
+COUNTRIES = {
+    "usa": ("us", "United States"), "gbr": ("gb", "United Kingdom"), "can": ("ca", "Canada"), "aus": ("au", "Australia"),
+    "irl": ("ie", "Ireland"), "ind": ("in", "India"), "sgp": ("sg", "Singapore"), "hkg": ("hk", "Hong Kong"),
+    "twn": ("tw", "Taiwan"), "jpn": ("jp", "Japan"), "kor": ("kr", "South Korea"), "chn": ("cn", "China"),
+    "tha": ("th", "Thailand"), "vnm": ("vn", "Vietnam"), "mys": ("my", "Malaysia"), "phl": ("ph", "Philippines"),
+    "idn": ("id", "Indonesia"), "are": ("ae", "UAE"), "qat": ("qa", "Qatar"), "sau": ("sa", "Saudi Arabia"),
+    "tur": ("tr", "Türkiye"), "fra": ("fr", "France"), "deu": ("de", "Germany"), "ita": ("it", "Italy"),
+    "esp": ("es", "Spain"), "prt": ("pt", "Portugal"), "nld": ("nl", "Netherlands"), "bel": ("be", "Belgium"),
+    "lux": ("lu", "Luxembourg"), "che": ("ch", "Switzerland"), "aut": ("at", "Austria"), "dnk": ("dk", "Denmark"),
+    "swe": ("se", "Sweden"), "nor": ("no", "Norway"), "fin": ("fi", "Finland"), "isl": ("is", "Iceland"),
+    "pol": ("pl", "Poland"), "cze": ("cz", "Czechia"), "hun": ("hu", "Hungary"), "grc": ("gr", "Greece"),
+    "hrv": ("hr", "Croatia"), "svn": ("si", "Slovenia"), "srb": ("rs", "Serbia"), "rou": ("ro", "Romania"),
+    "ltu": ("lt", "Lithuania"), "lva": ("lv", "Latvia"), "est": ("ee", "Estonia"), "mlt": ("mt", "Malta"),
+    "and": ("ad", "Andorra"), "mex": ("mx", "Mexico"), "bra": ("br", "Brazil"), "arg": ("ar", "Argentina"),
+    "col": ("co", "Colombia"), "chl": ("cl", "Chile"), "per": ("pe", "Peru"), "zaf": ("za", "South Africa"),
+    "nzl": ("nz", "New Zealand"), "isr": ("il", "Israel"), "egy": ("eg", "Egypt"), "nga": ("ng", "Nigeria"),
+    "ken": ("ke", "Kenya"), "pak": ("pk", "Pakistan"), "bgd": ("bd", "Bangladesh"), "ukr": ("ua", "Ukraine"),
+    "rus": ("ru", "Russia"), "mac": ("mo", "Macau"),
+}
+
+
+def country_name(code):
+    return COUNTRIES.get((code or "").lower(), (None, (code or "").upper()))[1]
+
+
+_VOLUMES = None
+
+
+def volumes():
+    """{search: {"markets": {2-letter market: monthly searches}, "global": worldwide}} from the Ahrefs snapshot."""
+    global _VOLUMES
+    if _VOLUMES is not None:
+        return _VOLUMES
+    import csv
+    _VOLUMES = {}
+
+    def add(q, market, vol, glob):
+        e = _VOLUMES.setdefault(q.strip().lower(), {"markets": {}, "global": 0})
+        if market and vol not in (None, ""):
+            e["markets"][market] = max(e["markets"].get(market, 0), int(float(vol)))
+        if glob not in (None, ""):
+            e["global"] = max(e["global"], int(float(glob)))
+
+    try:
+        with open(AHREFS / "keywords.csv", newline="") as f:
+            for r in csv.DictReader(f):
+                add(r["keyword"], r["market"], r["volume"], r["global_volume"])
+        with open(AHREFS / "destinations.csv", newline="") as f:
+            for r in csv.DictReader(f):
+                add(r["keyword"], "us", r["volume_us"], r["global_volume"])
+        with open(AHREFS / "restaurant-names.csv", newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("ambiguous") != "check":
+                    add(r["name"], "us", r["volume_us"], r["global_volume"])
+    except OSError:
+        pass
+    return _VOLUMES
+
+
+def volume_of(search, country=None):
+    """Monthly searches for a search: in the given country (Search Console's 3-letter code) where the snapshot
+    has it, and worldwide."""
+    e = volumes().get(search.strip().lower())
+    if not e:
+        return {"in_country": None, "worldwide": None}
+    market = COUNTRIES.get((country or "").lower(), (None,))[0]
+    return {"in_country": e["markets"].get(market) if market else None, "worldwide": e["global"] or None}
 
 
 def http(url, data=None, headers=None, method=None):
@@ -138,12 +212,48 @@ def search_console(cfg):
         return {"clicks": r.get("clicks", 0), "impressions": r.get("impressions", 0),
                 "ctr_percent": round(r.get("ctr", 0) * 100, 1), "position": round(r.get("position", 0), 1)}
 
-    def top(dim):
-        rows = http(url, {"startDate": week[0], "endDate": week[1], "dimensions": [dim], "rowLimit": 10}, auth).get("rows", [])
-        return [{"item": r["keys"][0], "clicks": r["clicks"], "impressions": r["impressions"], "position": round(r["position"], 1)} for r in rows]
+    def rows(dims, limit=25000, rng=week):
+        return http(url, {"startDate": rng[0], "endDate": rng[1], "dimensions": dims, "rowLimit": limit},
+                    auth).get("rows", [])
 
+    def row(r):
+        return {"clicks": r["clicks"], "impressions": r["impressions"], "position": round(r["position"], 1)}
+
+    # Each search and page split by country, so the report can say where it shows and at what position.
+    qc, pc, qp = {}, {}, {}
+    for r in rows(["query", "country"]):
+        qc.setdefault(r["keys"][0], []).append(dict(country=country_name(r["keys"][1]), code=r["keys"][1], **row(r)))
+    for r in rows(["page", "country"]):
+        pc.setdefault(r["keys"][0], []).append(dict(country=country_name(r["keys"][1]), code=r["keys"][1], **row(r)))
+    for r in rows(["query", "page"]):
+        qp.setdefault(r["keys"][1], []).append(dict(search=r["keys"][0], **row(r)))
+        qp.setdefault(("q", r["keys"][0]), []).append(dict(page=r["keys"][1].replace(SITE, "") or "/", **row(r)))
+    by = lambda xs: sorted(xs, key=lambda x: (-x["impressions"], -x["clicks"]))
+
+    def top(dim, limit=10):
+        out = []
+        for r in sorted(rows([dim], 1000), key=lambda r: (-r["clicks"], -r["impressions"]))[:limit]:
+            key = r["keys"][0]
+            item = dict(item=key, **row(r))
+            if dim == "query":
+                where = by(qc.get(key, []))[:3]
+                item["countries"] = where
+                item["page"] = (by(qp.get(("q", key), [])) or [{}])[0].get("page")
+                item["volume"] = volume_of(key, where[0]["code"] if where else None)
+            else:
+                item["page"] = key.replace(SITE, "") or "/"
+                item["countries"] = by(pc.get(key, []))[:3]
+                main = item["countries"][0]["code"] if item["countries"] else None
+                item["searches"] = [dict(s, volume=volume_of(s["search"], main)) for s in by(qp.get(key, []))[:3]]
+            out.append(item)
+        return out
+
+    countries = [dict(country=country_name(r["keys"][0]), **row(r))
+                 for r in sorted(rows(["country"], 250), key=lambda r: -r["impressions"])[:10]]
+    devices = [dict(device=r["keys"][0].lower(), **row(r)) for r in rows(["device"], 10)]
     return {"period": f"{week[0]} to {week[1]}", "this_week": totals(week), "week_before": totals(prev),
-            "top_searches": top("query"), "top_pages": top("page")}
+            "searches_with_impressions": len(qc), "pages_with_impressions": len(pc),
+            "top_searches": top("query", 15), "top_pages": top("page", 10), "countries": countries, "devices": devices}
 
 
 class Throttle:
@@ -285,7 +395,12 @@ def seo_targets(cfg):
         pos = round(r["position"], 1) if r else None
         out.append({"search": search, "market": market, "page": page, "position": pos, "measured_in": where if r else None,
                     "impressions": r["impressions"] if r else 0, "clicks": r["clicks"] if r else 0,
-                    "page_one": bool(pos and pos <= 10), "ranking_page": pages.get(q, {}).get("page")})
+                    "page_one": bool(pos and pos <= 10), "ranking_page": pages.get(q, {}).get("page"),
+                    "volume": volume_of(search, market if market != "all" else "usa"),
+                    "countries": sorted([{"country": country_name(c), "impressions": v["impressions"],
+                                          "position": round(v["position"], 1)}
+                                         for (qq, c), v in by_country.items() if qq == q],
+                                        key=lambda x: -x["impressions"])[:3]})
     return {"period": f"{week[0]} to {week[1]}", "targets": len(out), "showing": sum(1 for t in out if t["position"]),
             "on_page_one": sum(1 for t in out if t["page_one"]), "searches": out}
 
@@ -340,6 +455,17 @@ def page_two(cfg, prev=None):
                           "impressions": r["impressions"], "clicks": r["clicks"]})
     found.sort(key=lambda f: (-f["impressions"], f["position"]))
     found = found[:PAGE_TWO_MAX]
+    # Where each one shows: its position country by country.
+    split = {}
+    for r in http(url, {"startDate": str(start), "endDate": str(end), "dimensions": ["query", "page", "country"],
+                        "rowLimit": 25000}, auth).get("rows", []):
+        q, page, c = r["keys"]
+        split.setdefault((q, urllib.parse.urlparse(page).path or "/"), []).append(
+            {"country": country_name(c), "code": c, "impressions": r["impressions"], "position": round(r["position"], 1)})
+    for f in found:
+        where = sorted(split.get((f["search"], f["page"]), []), key=lambda x: -x["impressions"])[:3]
+        f["countries"] = where
+        f["volume"] = volume_of(f["search"], where[0]["code"] if where else None)
     words = {}
     for f in found:
         if f["page"] not in words:
@@ -419,15 +545,21 @@ def analytics(cfg):
     token = google_token(cfg, "https://www.googleapis.com/auth/analytics.readonly")
     url = f"https://analyticsdata.googleapis.com/v1beta/properties/{cfg['ga4_property']}:runReport"
     auth = {"Authorization": f"Bearer {token}"}
-    metrics = [{"name": m} for m in ("activeUsers", "newUsers", "sessions", "screenPageViews")]
+    # bounceRate and engagementRate are shares (0.4 = 40%); averageSessionDuration is in seconds.
+    metrics = [{"name": m} for m in ("activeUsers", "newUsers", "sessions", "screenPageViews", "bounceRate",
+                                     "engagementRate", "averageSessionDuration")]
+    fractional = {"bounceRate", "engagementRate", "averageSessionDuration"}
 
     def report(body):
         return http(url, body, auth).get("rows", [])
 
+    def value(name, raw):
+        return round(float(raw), 3) if name in fractional else int(float(raw))
+
     def day(rng):
         rows = report({"dateRanges": [{"startDate": rng, "endDate": rng}], "metrics": metrics})
         vals = rows[0]["metricValues"] if rows else []
-        return {m["name"]: int(float(v["value"])) for m, v in zip(metrics, vals)} if vals else {m["name"]: 0 for m in metrics}
+        return {m["name"]: value(m["name"], v["value"]) for m, v in zip(metrics, vals)} if vals else {m["name"]: 0 for m in metrics}
 
     def top(dim, metric="screenPageViews", start="yesterday", limit=8):
         rows = report({"dateRanges": [{"startDate": start, "endDate": "yesterday"}], "dimensions": [{"name": dim}],
@@ -476,10 +608,32 @@ def umami(cfg):
         before = {k: (v.get("prev") if isinstance(v, dict) else None) for k, v in stats.items()}
 
     def metric(kind, limit=8):
-        return [{"item": r.get("x"), "count": r.get("y")} for r in get("metrics", type=kind, limit=limit)]
+        try:
+            return [{"item": r.get("x"), "count": r.get("y")} for r in get("metrics", type=kind, limit=limit)]
+        except Exception:
+            return []
 
-    return {"yesterday": flat, "day_before": before, "top_pages": metric(page_type), "referrers": metric("referrer"),
-            "countries": metric("country"), "events": metric("event", 25)}
+    def engagement(s):
+        """Bounce rate (visits that saw one page and left) and average time per visit, from Umami's totals."""
+        visits = (s or {}).get("visits") or 0
+        if not visits:
+            return {"bounce_rate_percent": None, "avg_visit_seconds": None, "pages_per_visit": None}
+        return {"bounce_rate_percent": round(100 * (s.get("bounces") or 0) / visits),
+                "avg_visit_seconds": round((s.get("totaltime") or 0) / visits),
+                "pages_per_visit": round((s.get("pageviews") or 0) / visits, 1)}
+
+    week_start = int((today - dt.timedelta(days=7)).timestamp() * 1000)
+    try:
+        week = http(f"{base}/stats?{urllib.parse.urlencode({'startAt': week_start, 'endAt': end})}", headers=auth,
+                    method="GET")
+        week.pop("comparison", None)
+        week = {k: (v.get("value") if isinstance(v, dict) else v) for k, v in week.items()}
+    except Exception:
+        week = {}
+    return {"yesterday": flat, "day_before": before, "yesterday_engagement": engagement(flat),
+            "day_before_engagement": engagement(before), "last_7_days": week, "last_7_days_engagement": engagement(week),
+            "top_pages": metric(page_type, 10), "entry_pages": metric("entry", 8), "referrers": metric("referrer"),
+            "countries": metric("country", 10), "devices": metric("device", 5), "events": metric("event", 25)}
 
 
 def main(out, prev=None):

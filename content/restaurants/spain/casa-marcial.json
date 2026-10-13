@@ -14,8 +14,8 @@
   "source": "https://casamarcial.es/menu-el-cachuchu/",
   "lunch": 270,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Tue–Sun",
-  "lunchNoteEs": "El mismo menú al mediodía · mar–dom",
+  "lunchNote": "Same menu at lunch · Wed–Sun",
+  "lunchNoteEs": "El mismo menú al mediodía · mié–dom",
   "lunchWine": 130,
   "lunchSourceType": "site",
   "lunchSource": "https://casamarcial.es/menu-el-cachuchu/",
@@ -30,6 +30,37 @@
   ],
   "chef": "Nacho Manzano Sánchez/ Esther Manzano",
   "chefSource": "michelin",
-  "dinnerNote": "El Cachuchu tasting menu",
-  "dinnerNoteEs": "Menú El Cachuchu"
+  "dinnerNote": "Nordeste: El Cachuchu tasting menu (dinner Saturdays only)",
+  "dinnerNoteEs": "Menú Nordeste: El Cachuchu (cenas solo los sábados)",
+  "menus": [
+    {
+      "name": "Nordeste: El Cachuchu tasting menu",
+      "meal": "dinner",
+      "price": 270,
+      "wine": 130,
+      "note": "The only menu, served at lunch Wednesday to Sunday and at dinner on Saturdays only; pairing €130, or €320 for the second pairing; VAT and bread included; served to the whole table"
+    }
+  ],
+  "menusSource": "https://casamarcial.es/en/northeastern-menu-el-cachuchu/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Gloria",
+      "note": "The Manzano family's informal restaurants in Oviedo and Gijón",
+      "url": "https://www.estasengloria.com/"
+    },
+    {
+      "name": "Narbasu",
+      "note": "The family's restaurant and 23-room hotel in a 14th-century palace, 20 minutes away",
+      "url": "https://www.narbasu.com/"
+    }
+  ],
+  "starsSince": 2024,
+  "bookingOpens": "Online through the booking form on the restaurant's website (TheFork). A booking is only confirmed once the restaurant replies, within 48 hours, and needs a prepayment of €100 per person, which comes off the final bill. Bookings for the next 48 hours (same day, on the Spanish page) are by phone only. Lunch tables start between 1pm and 2pm, dinner tables between 8pm and 9pm.",
+  "bookingUrl": "https://casamarcial.es/en/reservas/",
+  "bookingPhone": "+34 985 84 09 91, 10am to 1pm and 5pm to 8pm",
+  "dressCode": "No sandals or shorts. Booking a table means accepting the dress code.",
+  "children": "Children must be over nine. Pushchairs are not allowed, as the dining room is small.",
+  "infoSource": "https://casamarcial.es/en/reservas/",
+  "infoChecked": "2026-10-13"
 }

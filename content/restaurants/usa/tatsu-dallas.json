@@ -8,7 +8,7 @@
   "reviews": 229,
   "dinnerType": "menu",
   "dinner": 195,
-  "dinnerNote": "Omakase",
+  "dinnerNote": "Sushi omakase, 15–18 courses (shorter omakase by the sous chef $117)",
   "sourceType": "press",
   "source": "https://www.exploretock.com/tatsudallas",
   "noLunch": true,
@@ -22,5 +22,40 @@
     "gluten-free"
   ],
   "chef": "Tatsuya Sekiguchi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Sushi omakase with Chef Tatsu",
+      "meal": "dinner",
+      "price": 195,
+      "courses": 15,
+      "note": "Fifteen to eighteen courses: appetizers, 13 to 15 pieces of nigiri, a hand roll, miso soup and dessert. An 18% service charge is added; prepaid on Tock ($231 per person). Beverage pairings can be bought in advance."
+    },
+    {
+      "name": "Short Omakase by the sous chef",
+      "meal": "dinner",
+      "price": 117,
+      "courses": 11,
+      "note": "One appetizer and ten pieces of nigiri, served by Chef Yoji in the seven-seat Cherrywood room at 8:15pm. Tock's prepaid price, which appears to include the 18% service charge."
+    }
+  ],
+  "menusSource": "https://www.exploretock.com/tatsudallas/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Kirameki",
+      "note": "The cocktail bar hidden inside Tatsu Dallas, serving maki rolls made to order by the sous chef.",
+      "url": "https://www.tatsu-dallas.com/"
+    }
+  ],
+  "starsSince": 2024,
+  "bookingOpens": "Online on Tock only, as prepaid tickets for parties of one to four. Tables are released twice a month at 8am Dallas time: on the 1st for the 16th to the end of that month, and on the 15th for the 1st to the 15th of the next month. Concierge and third-party bookings are not accepted.",
+  "bookingUrl": "https://www.exploretock.com/tatsudallas/",
+  "bookingPhone": "+1 469 271 7710",
+  "cancellation": "Prepaid tickets are generally non-refundable. Guests who can't come are asked to transfer the booking on Tock first; otherwise the restaurant generally refunds cancellations made five calendar days or more ahead.",
+  "groups": "Bookings are for one to four guests only. For a buyout (party of 10), email info@tatsu-dallas.com.",
+  "dressCode": "No dress code is enforced, but most guests dress for a night out and very casual clothes may feel out of place. Guests are asked to go easy on perfume, cologne and scented lotion.",
+  "duration": "One hour 45 minutes exactly, with seatings at 5:30pm and 7:45pm, Tuesday to Saturday. Arrive 15 minutes early: the full menu can't be promised to anyone more than 15 minutes late, and seatings are not extended.",
+  "infoSource": "https://www.tatsu-dallas.com/home-1",
+  "infoChecked": "2026-10-13"
 }

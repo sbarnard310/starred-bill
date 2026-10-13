@@ -11,10 +11,10 @@
   "reviews": 1580,
   "dinner": 118,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 5 courses",
+  "dinnerNote": "Five-course tasting menu (tip included, tax extra)",
   "wine": 55,
   "sourceType": "site",
-  "source": "https://www.dirtcandynyc.com/",
+  "source": "https://www.dirtcandynyc.com/dinner-menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.dirtcandynyc.com/",
@@ -29,5 +29,25 @@
     "vegan"
   ],
   "chef": "Amanda Cohen",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Five-course vegetable tasting menu",
+      "meal": "dinner",
+      "price": 118,
+      "wine": 55,
+      "courses": 5,
+      "note": "The only menu, changed with the seasons. Prices include the tip but not tax; non-alcoholic pairing $45."
+    }
+  ],
+  "menusSource": "https://www.dirtcandynyc.com/dinner-menu",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online on Resy, or by phone. Reservations are not taken by email, and a credit card is needed to book.",
+  "bookingUrl": "https://resy.com/cities/ny/dirt-candy",
+  "bookingPhone": "+1 212 228 7732",
+  "cancellation": "Cancel at least 24 hours ahead, or a fee of $50 per person is charged. Changes to a booking are made by phone.",
+  "walkIns": "Walk-ins are welcome: tables often open up on the night for anyone willing to be flexible.",
+  "waitlist": "Choose \"Notify\" on Resy for the time wanted, and Resy alerts you as soon as a table opens.",
+  "infoSource": "https://www.dirtcandynyc.com/reservations",
+  "infoChecked": "2026-10-13"
 }

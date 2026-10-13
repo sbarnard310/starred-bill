@@ -14,14 +14,14 @@
   "dinnerType": "menu",
   "dinnerNote": "Temps & Saisons menu (Renommées €480)",
   "dinnerNoteFr": "Menu Temps & Saisons (Renommées 480 €)",
-  "sourceType": "press",
-  "source": "https://www.barometredesprix.fr/cuisine-et-resto/prix-menu-tour-dargent/",
-  "lunch": 165,
+  "sourceType": "site",
+  "source": "https://tourdargent.com/wp-content/uploads/2026/09/Menu-TourdArgent-Octobre-2026-FR.pdf",
+  "lunch": 185,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchNoteFr": "Menu déjeuner",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.barometredesprix.fr/cuisine-et-resto/prix-menu-tour-dargent/",
+  "lunchNote": "Four-course lunch menu",
+  "lunchNoteFr": "Menu déjeuner en quatre services",
+  "lunchSourceType": "site",
+  "lunchSource": "https://tourdargent.com/wp-content/uploads/2026/09/Menu-TourdArgent-Octobre-2026-FR.pdf",
   "website": "https://tourdargent.com/",
   "lat": 48.8498353,
   "lng": 2.3549236,
@@ -32,5 +32,50 @@
     "vegetarian"
   ],
   "chef": "Yannick Franques",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Temps & Saisons menu",
+      "meal": "dinner",
+      "price": 390,
+      "courses": 5,
+      "note": "The chef's seasonal surprise menu, for the whole table"
+    },
+    {
+      "name": "Renommées menu",
+      "meal": "dinner",
+      "price": 480,
+      "courses": 6,
+      "note": "The house classics (foie gras, caviar, lobster, duckling, profiteroles), for the whole table"
+    },
+    {
+      "name": "Déjeuner lunch menu",
+      "meal": "lunch",
+      "price": 185,
+      "courses": 4,
+      "note": "Lunch only; cheese (€23–37) and crêpes Mademoiselle (€58) cost extra"
+    }
+  ],
+  "menusSource": "https://tourdargent.com/wp-content/uploads/2026/09/Menu-TourdArgent-Octobre-2026-FR.pdf",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Le Bar des Maillets d'Argent",
+      "note": "The restaurant's own bar in the same building, serving small dishes (€13–29) from noon to 10.30pm",
+      "url": "https://tourdargent.com/le-bar-des-maillets-dargent/"
+    },
+    {
+      "name": "La Rôtisserie d'Argent",
+      "note": "The Tour d'Argent's rotisserie bistro on the same quay",
+      "url": "https://rotisseriedargent.com/"
+    }
+  ],
+  "bookingOpens": "Online through Guestonline from the restaurant's website, or by phone. Parties of more than five should phone or email contact@tourdargent.com.",
+  "bookingUrl": "https://ib.guestonline.fr/instabook/bookings/x3exfiO/selection",
+  "bookingPhone": "+33 1 43 54 10 08",
+  "groups": "Parties of more than five book by phone or by email to contact@tourdargent.com.",
+  "dressCode": "A jacket is required for men at lunch and dinner, and elegant dress is expected for everyone. No sportswear, shorts or T-shirts.",
+  "children": "Children aged 6 and over are preferred.",
+  "infoSource": "https://tourdargent.com/nous-contacter/",
+  "infoChecked": "2026-10-13"
 }

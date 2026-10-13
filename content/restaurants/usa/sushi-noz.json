@@ -11,9 +11,9 @@
   "reviews": 473,
   "dinner": 550,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase",
-  "sourceType": "press",
-  "source": "https://souraji.com/reviews/sushi-noz/",
+  "dinnerNote": "Edomae omakase, paid in full when booking",
+  "sourceType": "site",
+  "source": "https://www.sevenrooms.com/explore/sushinoznyc/reservations/create/search/",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "website": "https://www.sushinoz.com/",
@@ -22,5 +22,31 @@
   "placeId": "ChIJmUAVNb5YwokRyFZIbhQ_cxM",
   "michelinId": "562513",
   "chef": "Nozomu Abe",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Edomae omakase",
+      "meal": "dinner",
+      "price": 550,
+      "note": "5–6 small plates, then 12–14 nigiri, miso soup, tamago and dessert; paid in full when booking, gratuity not included. Same menu at the 8-seat Hinoki Counter (Chef Noz Monday to Friday at 6pm and 9pm) and the 6-seat Ash Room (5:45pm and 8:45pm). Signature and Prestige drink pairings of sake, champagne and white wine are offered (prices not published)"
+    }
+  ],
+  "menusSource": "https://www.sevenrooms.com/explore/sushinoznyc/reservations/create/search/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Noz Market",
+      "note": "The group's market and restaurant on Third Avenue at 78th Street, with a hand roll counter for walk-ins and an 11-seat omakase counter, open for lunch and dinner every day",
+      "url": "https://www.nozmarket.com/"
+    }
+  ],
+  "bookingOpens": "Online through SevenRooms, which takes the full $550 per person when booking. On 13 October 2026 dates up to 30 November were open and December was not yet released. When a seating is full you can send a request for another time.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/sushinoznyc/reservations/create/search/",
+  "bookingPhone": "+1 917 338 1792",
+  "cancellation": "The meal is paid in full when booking. Cancel or reschedule at least 72 hours ahead for a refund less a 3% fee; within 72 hours the whole payment is lost. A booking can be rescheduled twice, and a third change counts as a cancellation.",
+  "groups": "Parties of more than four book the whole counter: the Hinoki Counter seats up to eight and the Ash Room up to six. Call the restaurant or email reservations@sushinoz.com for buyout prices; separate bookings for one party count as a buyout.",
+  "dressCode": "No dress code is published. Guests are asked to keep perfume and cologne light.",
+  "duration": "About two and a half hours.",
+  "infoSource": "https://www.sushinoz.com/",
+  "infoChecked": "2026-10-13"
 }

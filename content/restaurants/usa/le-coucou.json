@@ -9,12 +9,12 @@
   "cuisineZh": "法國菜",
   "rating": 4.5,
   "reviews": 2153,
-  "dinner": 40,
-  "dinnerType": "main",
-  "dinnerNote": "À la carte; mains about $36–$48 (A Very Coucou Dinner $220)",
-  "sourceType": "press",
-  "source": "https://www.yelp.com/menu/le-coucou-new-york/dinner",
-  "lunchNote": "Open for lunch",
+  "dinner": 220,
+  "dinnerType": "menu",
+  "dinnerNote": "A Very Coucou Dinner tasting menu (à la carte mains $51–$95)",
+  "sourceType": "site",
+  "source": "https://lecoucou.com/#menu-section",
+  "lunchNote": "Two-course lunch prix fixe (3 courses $125; A Very Coucou Lunch $150)",
   "website": "https://lecoucou.com/",
   "lat": 40.719162,
   "lng": -74.00001,
@@ -24,5 +24,57 @@
     "vegetarian"
   ],
   "chef": "Daniel Rose",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 145,
+  "lunch": 81,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://lecoucou.com/#menu-section",
+  "menus": [
+    {
+      "name": "A Very Coucou Dinner",
+      "meal": "dinner",
+      "price": 220,
+      "wine": 145,
+      "note": "Wine pairing $145, or $345 for the grander one; non-alcoholic pairing $115. À la carte also served, with mains $51–$95"
+    },
+    {
+      "name": "A Very Coucou Lunch",
+      "meal": "lunch",
+      "price": 150
+    },
+    {
+      "name": "Three-course lunch prix fixe",
+      "meal": "lunch",
+      "price": 125,
+      "courses": 3,
+      "note": "Supplements for some dishes, such as the beef tartare with caviar and the lobster"
+    },
+    {
+      "name": "Two-course lunch prix fixe",
+      "meal": "lunch",
+      "price": 81,
+      "courses": 2,
+      "note": "Supplements for some dishes"
+    }
+  ],
+  "menusSource": "https://lecoucou.com/#menu-section",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online on Resy, 28 days ahead for parties of one to six.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 28,
+    "tz": "America/New_York",
+    "via": "Resy",
+    "source": "https://resy.com/cities/ny/le-coucou",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://resy.com/cities/ny/le-coucou",
+  "bookingPhone": "+1 212 271 4252",
+  "cancellation": "Cancel at least 24 hours ahead to avoid a $50 per guest fee.",
+  "groups": "For seven or more, call the restaurant; parties of 7 to 10 have the four-course group menu ($240). For more than 10, email the events team (lecoucou.events@starr-restaurants.com): lunch is available for 11 or more, and larger dinners only as a buyout.",
+  "groupsUrl": "https://lecoucou.com/#group-dining",
+  "dressCode": "Elegant, as for a night out in New York. Jackets are not required, but athletic wear is not allowed, and guests who aren't well enough dressed may be refused entry.",
+  "infoSource": "https://resy.com/cities/ny/le-coucou",
+  "infoChecked": "2026-10-13"
 }

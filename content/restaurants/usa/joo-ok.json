@@ -27,5 +27,28 @@
   "placeId": "ChIJfXtCJgBZwokRt0ncRw3PEk4",
   "michelinId": "1214822",
   "chef": "Chang-ho Shin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 280,
+      "wine": 250,
+      "courses": 12,
+      "note": "$295 from 1 November 2026. Wine pairing of seven drinks $250, or a seven-drink non-alcoholic pairing $150"
+    }
+  ],
+  "menusSource": "https://www.joo-ok.com/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Online through SevenRooms, Monday to Saturday from 5:30pm. On 13 October 2026 dates up to 30 November were open and December was not yet released. If the booking page doesn't work on your device, call or email info@joo-ok.com.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/joook/reservations/create/search/",
+  "bookingPhone": "+1 332 733 3841",
+  "cancellation": "A non-refundable deposit of $200 per guest is taken when booking. Changes or cancellations within three days of the booking aren't refunded, and same-day cancellations or no-shows are charged the full menu price per guest.",
+  "groups": "For seven or more guests, email info@joo-ok.com.",
+  "dressCode": "Smart casual or elegant. No ripped jeans, athleisure or hats, and no open-toed sandals for men.",
+  "children": "Children under 12 are not allowed in the restaurant.",
+  "duration": "About two and a half hours (SevenRooms holds each table for 150 minutes).",
+  "infoSource": "https://www.joo-ok.com/",
+  "infoChecked": "2026-10-13"
 }

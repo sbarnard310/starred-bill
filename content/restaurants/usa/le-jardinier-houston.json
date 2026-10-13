@@ -8,14 +8,13 @@
   "reviews": 753,
   "dinnerType": "menu",
   "dinner": 195,
-  "dinnerNote": "Tasting menu (other menus from $90)",
+  "dinnerNote": "Seasonal Expression menu, 5 courses (four-course lunch menu $90, two-course lunch $45)",
   "sourceType": "site",
   "source": "https://www.lejardinier-houston.com/menus",
   "wine": 140,
-  "lunch": 195,
+  "lunch": 45,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sun",
-  "lunchWine": 140,
+  "lunchNote": "Art Lovers Lunch, 2 courses, Wed–Fri (four-course seasonal lunch menu $90)",
   "lunchSourceType": "site",
   "lunchSource": "https://www.lejardinier-houston.com/menus",
   "website": "https://www.lejardinier-houston.com/",
@@ -27,5 +26,40 @@
     "vegetarian"
   ],
   "chef": "Alain Verzeroli",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Seasonal Expression menu",
+      "meal": "dinner",
+      "price": 195,
+      "wine": 140,
+      "courses": 5,
+      "note": "The chef's seasonal menu at dinner, for the whole table. Includes caviar and shaved black truffle."
+    },
+    {
+      "name": "Taste of Summer menu",
+      "meal": "lunch",
+      "price": 90,
+      "courses": 4,
+      "note": "The chef's seasonal lunch menu."
+    },
+    {
+      "name": "Art Lovers Lunch",
+      "meal": "lunch",
+      "price": 45,
+      "courses": 2,
+      "note": "Starter and main, Wednesday to Friday 11:30am to 2pm; dessert $10 more."
+    }
+  ],
+  "menusSource": "https://www.lejardinier-houston.com/menus",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "Online on SevenRooms (also listed on OpenTable).",
+  "bookingUrl": "https://www.sevenrooms.com/explore/lejardinierhoustonmrktingcrm/reservations/create/search?tracking=website",
+  "bookingPhone": "+1 713 714 3015",
+  "groups": "The main dining room can be booked for private dinners of up to 90, the bar and lounge for up to 30, and the Kinder Private Room next door seats 20 at one long table, all with set menus. Enquire through the website.",
+  "groupsUrl": "https://www.lejardinier-houston.com/private-events",
+  "dressCode": "Business casual.",
+  "infoSource": "https://www.lejardinier-houston.com/contact",
+  "infoChecked": "2026-10-13"
 }

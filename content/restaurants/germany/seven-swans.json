@@ -8,7 +8,7 @@
   "reviews": 724,
   "dinnerType": "menu",
   "dinner": 249,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Surprise menu",
   "wine": 129,
   "sourceType": "site",
   "source": "https://www.sevenswans.de/reservation.html",
@@ -22,8 +22,33 @@
   ],
   "chef": "Ricky Saward",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
+  "dinnerNoteDe": "Überraschungsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "menus": [
+    {
+      "name": "surprise menu",
+      "meal": "dinner",
+      "price": 249,
+      "wine": 129,
+      "note": "The only menu, fully vegan; wine pairing €129, exclusive wine pairing €189, non-alcoholic pairing €109"
+    }
+  ],
+  "menusSource": "https://www.sevenswans.de/reservation.html",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online only, through the Zenchef booking form on the restaurant's website. Tables are released in batches on dates the restaurant announces in the form, at 11am Frankfurt time (it currently names 1 October and 1 January). When no table is free, you can join the waiting list for a chosen day.",
+  "bookingWindow": {
+    "type": "announced",
+    "note": "Tables are released in batches on announced dates at 11am (the booking form names 1 October and 1 January)",
+    "time": "11:00",
+    "tz": "Europe/Berlin",
+    "via": "Zenchef",
+    "source": "https://bookings.zenchef.com/results?rid=364035&fullscreen=1&lang=en",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.sevenswans.de/reservation.html",
+  "waitlist": "Join the waiting list for your preferred day in the online booking form. If neither a table nor the waiting list is offered, that day is full.",
+  "infoSource": "https://bookings.zenchef.com/results?rid=364035&fullscreen=1&lang=en",
+  "infoChecked": "2026-10-13"
 }

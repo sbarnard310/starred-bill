@@ -8,10 +8,10 @@
   "rating": 4.7,
   "reviews": 46,
   "dinnerType": "menu",
-  "dinner": 235,
-  "dinnerNote": "Tasting menu (other menus from €185)",
-  "sourceType": "press",
-  "source": "https://www.feinschmecker.de/restaurant/de/saarlouis/louis-restaurant-6d",
+  "dinner": 240,
+  "dinnerNote": "Seven-course LOUIS menu (five courses €200; four courses €180 Wednesday and Thursday)",
+  "sourceType": "site",
+  "source": "https://lamaison-hotel.de/restaurant-bar/louis-restaurant/",
   "website": "https://lamaison-hotel.de/",
   "lat": 49.317148,
   "lng": 6.7556133,
@@ -24,9 +24,61 @@
   ],
   "chef": "Sebastian Sandor",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 185 €)",
+  "dinnerNoteDe": "LOUIS Menü, sieben Gänge (fünf Gänge 200 €; vier Gänge 180 € Mi und Do)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Asiatisch"
+  "cuisineDe": "Asiatisch",
+  "menus": [
+    {
+      "name": "seven-course LOUIS menu",
+      "meal": "dinner",
+      "price": 240,
+      "courses": 7,
+      "note": "With opening snacks; vegetarian or vegan versions on request; extras include caviar €60, A5 wagyu €68 and cheese €28"
+    },
+    {
+      "name": "five-course LOUIS menu",
+      "meal": "dinner",
+      "price": 200,
+      "courses": 5,
+      "note": "The seven-course menu without the lobster (or cabbage) course and the bean (or Eifelwürze) course"
+    },
+    {
+      "name": "four-course LOUIS menu",
+      "meal": "dinner",
+      "price": 180,
+      "courses": 4,
+      "note": "Wednesday and Thursday only; the five-course menu without the potato and mushroom course"
+    },
+    {
+      "name": "Sterne Schnuppern menu for diners under 30",
+      "meal": "dinner",
+      "price": 120,
+      "courses": 5,
+      "note": "Wednesday and Thursday only, for guests under 30; five courses after three snacks"
+    }
+  ],
+  "menusSource": "https://lamaison-hotel.de/restaurant-bar/louis-restaurant/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "petit LOUIS",
+      "price": 105,
+      "note": "14 small dishes in seven courses from the LOUIS kitchen, served in the hotel's bar and library on the first Thursday of each month, 7pm to 10pm",
+      "url": "https://lamaison-hotel.de/restaurant-bar/petit-louis/"
+    },
+    {
+      "name": "PASTIS bistro",
+      "note": "The hotel's relaxed French bistro with a winter garden",
+      "url": "https://lamaison-hotel.de/restaurant-bar/pastis-bistro/"
+    }
+  ],
+  "hotel": "LA MAISON hotel & spa",
+  "bookingOpens": "Online through the TheFork booking form on the hotel's website, or by phone or email. Open Wednesday to Saturday from 6.30pm; closed Sunday to Tuesday, and for a break from 1 to 10 November 2026.",
+  "bookingUrl": "https://lamaison-hotel.de/en/restaurant-bar/louis-restaurant/",
+  "bookingPhone": "+49 6831 89440440",
+  "groups": "For six or more, book by email (info@lamaison-hotel.de) or phone.",
+  "infoSource": "https://lamaison-hotel.de/restaurant-bar/louis-restaurant/",
+  "infoChecked": "2026-10-13"
 }

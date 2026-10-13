@@ -23,5 +23,25 @@
   "placeId": "ChIJ88IGKnF5bIcRLI5p5QH0Peg",
   "michelinId": "1241649",
   "chef": "Johnny Curiel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "bookingOpens": "Online on OpenTable. Tables open 60 days ahead at 8am Denver time.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 60,
+    "time": "08:00",
+    "tz": "America/Denver",
+    "via": "OpenTable",
+    "source": "https://www.mezcaleriaalma.com/faqs",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.opentable.com/restref/client/?restref=1393783&lang=en-US",
+  "bookingPhone": "+1 303 484 1471",
+  "cancellation": "Bookings can be changed on OpenTable up to 24 hours ahead. Cancelling with less than 24 hours' notice, or not showing up, costs $20 per person.",
+  "walkIns": "Two bar seats are kept for walk-ins, first come, first served.",
+  "waitlist": "Pick the day and time on the OpenTable app and choose \"Notify Me\"; it sends a message as soon as a table is cancelled.",
+  "groups": "The largest party it can seat is four. Two separate bookings may not be seated together.",
+  "children": "Pushchairs are not allowed, as the dining room is small.",
+  "duration": "Tables for two are kept for 1 hour 45 minutes; all other tables for two hours.",
+  "infoSource": "https://www.mezcaleriaalma.com/faqs",
+  "infoChecked": "2026-10-13"
 }

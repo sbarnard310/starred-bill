@@ -22,7 +22,6 @@
   "lunchType": "menu",
   "lunchNote": "Executive set lunch, weekdays",
   "lunchNoteZh": "行政午市套餐，平日",
-  "lunchWine": 600,
   "lunchSourceType": "site",
   "lunchSource": "https://www.fourseasons.com/hongkong/dining/menus/lung-king-heen-weekday-dim-sum-and-set-lunch/",
   "website": "https://www.fourseasons.com/hongkong/dining/restaurants/lung_king_heen/",
@@ -35,5 +34,51 @@
     "vegan"
   ],
   "chef": "Chan Yan Tak",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Lung King Heen tasting menu",
+      "meal": "dinner",
+      "price": 2880,
+      "wine": 1000,
+      "note": "Pairing is four glasses (HK$1,000); premium tea pairing HK$500; the Yoshihama abalone option costs HK$1,600 more"
+    },
+    {
+      "name": "Seasonal Discovery menu",
+      "meal": "dinner",
+      "price": 1880,
+      "wine": 1000,
+      "note": "Pairing is four glasses (HK$1,000); premium tea pairing HK$500"
+    },
+    {
+      "name": "Vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 1880,
+      "note": "With three premium teas"
+    },
+    {
+      "name": "Executive set lunch",
+      "meal": "lunch",
+      "price": 880,
+      "note": "Weekdays only, with a dim sum selection; two or three glasses of wine HK$600 or HK$750 extra"
+    },
+    {
+      "name": "Yum Cha and Champagne set lunch",
+      "meal": "lunch",
+      "price": 1680,
+      "note": "Includes tea pairings; Champagne instead of the first tea HK$200 extra"
+    }
+  ],
+  "menusSource": "https://www.fourseasons.com/hongkong/dining/menus/lung-king-heen-tasting-menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2023,
+  "hotel": "the Four Seasons Hotel Hong Kong",
+  "bookingOpens": "Online from the hotel's website, or by phone.",
+  "bookingUrl": "https://www.fourseasons.com/hongkong/dining/restaurants/lung_king_heen/",
+  "bookingPhone": "+852 3196 8882",
+  "groups": "A private dining room is available; children of any age are welcome there.",
+  "dressCode": "Smart casual. Men aged 7 and over may not wear shorts of any length, sleeveless shirts, flip-flops or sandals.",
+  "children": "Children aged 7 and over are welcome on weekdays; children of any age at weekends and on public holidays (with some exceptions). A children's menu is available.",
+  "infoSource": "https://www.fourseasons.com/hongkong/dining/restaurants/lung_king_heen/",
+  "infoChecked": "2026-10-13"
 }

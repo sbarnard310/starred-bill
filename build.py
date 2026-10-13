@@ -6514,7 +6514,12 @@ RESTAURANT_PAGES = ("le-bernardin", "la-pergola", "restaurant-gordon-ramsay", "o
                     "the-chairman", "kissa-tanto", "sun-moon-studio", "kvitnes-gard", "kaatje-bij-de-sluis", "l-amant-secret",
                     "craft-omakase", "belle-de-mars", "comme-chez-soi", "sushi-masashi", "fordwich-arms", "11-woodfire",
                     "contrada-bricconi", "the-village-pub", "arco-by-paco-perez", "variety-jones", "kerfield-arms", "jun-sakamoto",
-                    "chez-bruce", "hansik-goo", "new-punjab-club", "sushi-masaki-saito")
+                    "chez-bruce", "hansik-goo", "new-punjab-club", "sushi-masaki-saito",
+                    # Batch 5, 13 Oct 2026: the 22 left over from batch 4
+                    "casa-marcial", "the-dune", "sushi-noz", "lung-king-heen", "louis-restaurant", "latelier-de-joel-robuchon", "joo-ok",
+                    "gabriel-kreuther", "chefs-table-at-brooklyn-fare", "jeju-noodle-bar", "le-coucou", "mezcaleria-alma", "moody-tongue",
+                    "le-pavillon", "le-george", "seven-swans", "tatsu-dallas", "tour-dargent", "dirt-candy", "le-jardinier-houston",
+                    "wok-by-obond", "64-goodge-street")
 # The owner's rule (9 Oct 2026): at most 10 questions per page, and none that repeats what the page already says. On a
 # restaurant page the questions are its own section headings, each with its answer straight under it; the structured data
 # (FAQPage) lists them, most-asked first.

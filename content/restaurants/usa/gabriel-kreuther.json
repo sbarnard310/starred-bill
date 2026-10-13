@@ -9,14 +9,13 @@
   "cuisineZh": "法國菜",
   "rating": 4.6,
   "reviews": 1349,
-  "dinner": 200,
+  "dinner": 325,
   "dinnerType": "menu",
-  "dinnerNote": "Dinner, 3 courses (4 courses $235; pre-theater $155)",
+  "dinnerNote": "Chef's Tasting Menu, 6 courses (3 courses $200, 4 courses $235; pre-theater menu $155)",
   "wine": 255,
   "sourceType": "site",
-  "source": "https://www.gknyc.com/",
-  "noLunch": true,
-  "lunchNote": "Dinner only",
+  "source": "https://www.gknyc.com/menu",
+  "lunchNote": "2-course lunch prix fixe, Tuesday to Friday (3 courses $95; Chef's Tasting Menu $155)",
   "website": "https://www.gknyc.com/",
   "lat": 40.75397,
   "lng": -73.982025,
@@ -28,5 +27,79 @@
     "gluten-free"
   ],
   "chef": "Gabriel Kreuther",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "lunch": 75,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.gknyc.com/menu-lunch",
+  "menus": [
+    {
+      "name": "Chef's Tasting Menu",
+      "meal": "dinner",
+      "price": 325,
+      "wine": 255,
+      "courses": 6,
+      "note": "A selection of the kitchen's best-known dishes. Classic wine pairing $255, Reserve pairing $595, Grand Reserve on request"
+    },
+    {
+      "name": "Four-course prix fixe",
+      "meal": "dinner",
+      "price": 235,
+      "courses": 4,
+      "note": "First course, mid-course, main and dessert, chosen from the menu; supplements for caviar, lobster and wagyu"
+    },
+    {
+      "name": "Three-course prix fixe",
+      "meal": "dinner",
+      "price": 200,
+      "courses": 3,
+      "note": "First course, main and dessert, chosen from the menu"
+    },
+    {
+      "name": "Pre-theater dinner menu",
+      "meal": "dinner",
+      "price": 155,
+      "courses": 3,
+      "note": "Monday to Thursday, 4:45pm to 5:45pm"
+    },
+    {
+      "name": "Kitchen Table carte blanche tasting menu",
+      "meal": "dinner",
+      "price": 375,
+      "note": "At the table in the kitchen, for 4 to 8 guests, one seating a night between 5pm and 7:30pm; paid when booking, with a 20% service charge added"
+    },
+    {
+      "name": "Chef's Tasting Menu at lunch",
+      "meal": "lunch",
+      "price": 155,
+      "wine": 155,
+      "note": "Tuesday to Friday; wine pairing $155"
+    },
+    {
+      "name": "Three-course lunch prix fixe",
+      "meal": "lunch",
+      "price": 95,
+      "courses": 3,
+      "note": "Tuesday to Friday"
+    },
+    {
+      "name": "Two-course lunch prix fixe",
+      "meal": "lunch",
+      "price": 75,
+      "courses": 2,
+      "note": "Tuesday to Friday"
+    }
+  ],
+  "menusSource": "https://www.gknyc.com/menu",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2018,
+  "bookingOpens": "Online on Resy, or by phone or email (office@gknyc.com). On 13 October 2026 tables were open up to 13 November, about a month ahead.",
+  "bookingUrl": "https://resy.com/cities/ny/gabriel-kreuther",
+  "bookingPhone": "+1 212 257 5826",
+  "cancellation": "Dining room and lounge bookings are free to cancel, but cancel at least 24 hours ahead. The Kitchen Table is paid when booking and refunded only if cancelled at least 72 hours ahead.",
+  "walkIns": "The bar takes walk-ins, first come, first served, with the à la carte menu. The lounge takes bookings and serves the à la carte menu as well as the set menus.",
+  "groups": "For seven or more in the dining room or lounge, email office@gknyc.com or call. Two private dining rooms, which can be combined, take 8 to 150 guests (events@gknyc.com).",
+  "groupsUrl": "https://www.gknyc.com/private-events",
+  "infoSource": "https://www.gknyc.com/location",
+  "infoChecked": "2026-10-13"
 }

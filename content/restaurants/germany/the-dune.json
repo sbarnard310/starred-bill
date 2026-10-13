@@ -11,11 +11,11 @@
   "rating": 4.9,
   "reviews": 41,
   "dinnerType": "menu",
-  "dinner": 249,
-  "dinnerNote": "Tasting menu",
+  "dinner": 269,
+  "dinnerNote": "The Menu tasting menu (4-course menu €189)",
   "wine": 159,
-  "sourceType": "press",
-  "source": "https://www.travelsforstars.com/blog/2026/07/17/the-dune-frankfurt",
+  "sourceType": "site",
+  "source": "https://www.theflorentin.com/fileadmin/Althoff_The_Florentin/Dokumente/TheFlorentin_byAlthoffCollection_TheDune_Menu_EN.pdf",
   "website": "https://www.althoffcollection.com/de/the-florentin/kulinarik",
   "lat": 50.0976127,
   "lng": 8.6690663,
@@ -27,8 +27,45 @@
   ],
   "chef": "Niclas Nußbaumer",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
+  "dinnerNoteDe": "Degustationsmenü „The Menu“ (4-Gänge-Menü 189 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "menus": [
+    {
+      "name": "The Menu tasting menu",
+      "meal": "dinner",
+      "price": 269,
+      "note": "The full menu; add-ons include a caviar waffle from €99, A5 wagyu instead of the veal €69 (or as an extra course €99) and cheese €44"
+    },
+    {
+      "name": "4 Course Menu",
+      "meal": "dinner",
+      "price": 189,
+      "courses": 4,
+      "note": "A shorter version of The Menu, with snacks; bookable on OpenTable until 30 December 2026"
+    }
+  ],
+  "menusSource": "https://www.theflorentin.com/en/culinary/the-dune",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Fine Bites & Wine at the dune",
+      "note": "Single dishes from the tasting menu, ordered à la carte in the dune's more casual tables, from €18 for an oyster to €99 for A5 wagyu; bookable on OpenTable",
+      "url": "https://www.theflorentin.com/fileadmin/Althoff_The_Florentin/Dokumente/TheFlorentin_byAlthoffCollection_TheDune_Selection_EN.pdf"
+    },
+    {
+      "name": "The Garden",
+      "note": "The Florentin's main restaurant, modern European dishes, many to share",
+      "url": "https://www.theflorentin.com/en/culinary/the-garden"
+    }
+  ],
+  "starsSince": 2026,
+  "hotel": "The Florentin, an Althoff Collection hotel",
+  "bookingOpens": "Online on OpenTable through the restaurant's page, choosing The Menu, the 4 Course Menu or Fine Bites & Wine. Open Tuesday to Saturday, 7pm to 11pm.",
+  "bookingUrl": "https://www.theflorentin.com/en/culinary/the-dune/reservieren",
+  "bookingPhone": "+49 69 6051356010",
+  "dressCode": "Smart casual. Dogs are not allowed in the restaurant.",
+  "infoSource": "https://www.theflorentin.com/en/culinary/the-dune",
+  "infoChecked": "2026-10-13"
 }

@@ -11,18 +11,18 @@
   "cuisineZh": "時尚法國菜",
   "rating": 4.2,
   "reviews": 2446,
-  "dinner": 7880,
+  "dinner": 6980,
   "dinnerType": "menu",
-  "dinnerNote": "Classic dinner menu",
-  "dinnerNoteZh": "經典套餐",
-  "sourceType": "press",
-  "source": "https://natasha-traveler.tw/atelier-de-joel-robuchon-taipei/",
-  "lunch": 2380,
+  "dinnerNote": "Dinner menu with the snow crab and caviar course (NT$4,980 without it)",
+  "dinnerNoteZh": "晚間套餐，含經典蟹肉魚子醬（不含則4,980元）",
+  "sourceType": "site",
+  "source": "https://www.bellavita.com.tw/dining/Latelierdejoelrobuchontaipei.php",
+  "lunch": 2280,
   "lunchType": "menu",
-  "lunchNote": "Lunch set menus, from",
-  "lunchNoteZh": "午間套餐（起）",
-  "lunchSourceType": "press",
-  "lunchSource": "https://natasha-traveler.tw/atelier-de-joel-robuchon-taipei/",
+  "lunchNote": "Menu A, weekday lunch (Menu B NT$2,980, Menu C NT$3,880)",
+  "lunchNoteZh": "A組合套餐，平日午餐（B組合2,980元，C組合3,880元）",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.bellavita.com.tw/dining/Latelierdejoelrobuchontaipei.php",
   "website": "https://www.bellavita.com.tw/dining/Latelierdejoelrobuchontaipei.php",
   "lat": 25.039609,
   "lng": 121.56814,
@@ -30,5 +30,55 @@
   "michelinId": "550759",
   "diets": [
     "vegetarian"
-  ]
+  ],
+  "menus": [
+    {
+      "name": "Dinner menu with the snow crab and caviar course",
+      "meal": "dinner",
+      "price": 6980,
+      "wine": 2680,
+      "note": "Amuse-bouche, snow crab with Oscietra caviar, three starters, a choice of Wagyu or Iberico pork, two desserts, coffee or tea; wine is the sommelier's four-glass selection (two glasses NT$1,380, three NT$1,980)"
+    },
+    {
+      "name": "Dinner menu",
+      "meal": "dinner",
+      "price": 4980,
+      "note": "The same menu without the snow crab and caviar course"
+    },
+    {
+      "name": "Menu C",
+      "meal": "dinner",
+      "price": 3880,
+      "note": "Amuse-bouche, two starters, two main courses, dessert or cheese, coffee or tea, chosen from the set-menu list; some dishes cost extra"
+    },
+    {
+      "name": "Menu B",
+      "meal": "dinner",
+      "price": 2980,
+      "note": "Amuse-bouche, two starters, one main course, dessert or cheese, coffee or tea, chosen from the set-menu list; some dishes cost extra"
+    },
+    {
+      "name": "Menu A",
+      "meal": "lunch",
+      "price": 2280,
+      "note": "Weekday lunch only, not on public holidays: amuse-bouche, one starter, one main course, dessert or cheese, coffee or tea"
+    }
+  ],
+  "menusSource": "https://www.bellavita.com.tw/dining/Latelierdejoelrobuchontaipei.php",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Le Salon de Thé de Joël Robuchon",
+      "note": "The Robuchon tea salon and bakery in the same building",
+      "url": "https://www.bellavita.com.tw/dining/Salondethedejoelrobuchon.php"
+    }
+  ],
+  "bookingOpens": "Online through inline, or by phone. Online bookings take parties of up to six; some time slots ask for a deposit.",
+  "bookingUrl": "https://inline.app/booking/-MWTh4C8p24ICmxRZ3Re:inline-live-2/-MWTh4M_ZsH7lkVv7_qf",
+  "bookingPhone": "+886 2 8729 2628",
+  "groups": "Parties of more than six book by phone.",
+  "children": "Children aged 7 and over at dinner.",
+  "byob": "Corkage is NT$1,500 a bottle.",
+  "infoSource": "https://inline.app/booking/-MWTh4C8p24ICmxRZ3Re:inline-live-2/-MWTh4M_ZsH7lkVv7_qf",
+  "infoChecked": "2026-10-13"
 }

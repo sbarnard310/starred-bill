@@ -10,16 +10,16 @@
   "changeDate": "2025-02",
   "rating": 4.8,
   "reviews": 304,
-  "dinner": 100,
+  "dinner": 98,
   "dinnerType": "menu",
-  "dinnerNote": "3 courses with snacks",
-  "sourceType": "press",
-  "source": "https://www.opentable.co.uk/r/64-goodge-street-london",
-  "lunch": 59,
+  "dinnerNote": "3-course dinner menu (early evening menu £49, 5.30–6pm)",
+  "sourceType": "site",
+  "source": "https://64goodgestreet.co.uk/menus",
+  "lunch": 65,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu, 3 courses",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.opentable.co.uk/r/64-goodge-street-london",
+  "lunchNote": "3-course lunch menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://64goodgestreet.co.uk/menus",
   "website": "https://64goodgestreet.co.uk/",
   "lat": 51.5190312,
   "lng": -0.1368487,
@@ -31,5 +31,51 @@
     "gluten-free"
   ],
   "chef": "Stuart Andrew",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "three-course dinner menu",
+      "meal": "dinner",
+      "price": 98,
+      "courses": 3,
+      "note": "A choice of first course, main and dessert from the menu written each day; some dishes carry a supplement (halibut £6); snacks and sides extra"
+    },
+    {
+      "name": "three-course lunch menu",
+      "meal": "lunch",
+      "price": 65,
+      "courses": 3,
+      "note": "The same daily menu as at dinner, Monday to Saturday"
+    },
+    {
+      "name": "Early Evening Menu",
+      "meal": "dinner",
+      "price": 49,
+      "courses": 3,
+      "note": "Set three courses for tables booked from 5.30pm to 6pm; no substitutions"
+    }
+  ],
+  "menusSource": "https://64goodgestreet.co.uk/menus",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Portland",
+      "note": "The Woodhead Restaurant Group's first restaurant, in Fitzrovia, where chef Stuart Andrew started",
+      "url": "https://portlandrestaurant.co.uk/"
+    },
+    {
+      "name": "The Quality Chop House",
+      "note": "Sister restaurant in Farringdon, with Quality Wines next door",
+      "url": "https://thequalitychophouse.com/"
+    }
+  ],
+  "starsSince": 2025,
+  "bookingOpens": "Online on OpenTable, through the restaurant's website. Open Monday to Saturday, with the last lunch booking at 2.15pm and the last dinner booking at 9.30pm. Mention any significant dietary needs when booking.",
+  "bookingUrl": "https://www.opentable.co.uk/r/64-goodge-street-reservations-london?restref=329325&lang=en-GB",
+  "bookingPhone": "+44 20 3747 6364",
+  "groups": "The private room downstairs seats up to 12 and is booked online only, on OpenTable. Its menu is £69 at lunch and £110 at dinner for three courses with welcome snacks.",
+  "groupsUrl": "https://64goodgestreet.co.uk/private",
+  "servicePct": 15,
+  "infoSource": "https://64goodgestreet.co.uk/bookings",
+  "infoChecked": "2026-10-13"
 }

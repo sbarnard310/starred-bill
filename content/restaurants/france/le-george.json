@@ -12,16 +12,16 @@
   "reviews": 1141,
   "dinner": 160,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteFr": "Menu dégustation",
-  "sourceType": "press",
-  "source": "https://www.parisgourmand.com/restaurant-paris/le-george-au-george-v.html",
+  "dinnerNote": "Tasting menu, for the whole table (vegetarian or vegan menu €135)",
+  "dinnerNoteFr": "Menu dégustation, pour toute la table (menu végétarien ou végan 135 €)",
+  "sourceType": "site",
+  "source": "https://www.fourseasons.com/paris/dining/menus/le-george-tasting-menu/",
   "lunch": 80,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchNoteFr": "Menu déjeuner",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.parisgourmand.com/restaurant-paris/le-george-au-george-v.html",
+  "lunchNote": "Lunch menu, Monday to Friday",
+  "lunchNoteFr": "Menu déjeuner, du lundi au vendredi",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.fourseasons.com/paris/dining/menus/le-george-lunch-menu/",
   "website": "https://www.fourseasons.com/fr/paris/dining/restaurants/le_george/",
   "lat": 48.8687251,
   "lng": 2.3007485,
@@ -32,5 +32,41 @@
     "vegetarian"
   ],
   "chef": "Simone Zanoni",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 160,
+      "note": "For the whole table; optional extras: seared langoustine €15 and the chef's pasta selection €35 per person"
+    },
+    {
+      "name": "Vegetarian menu",
+      "meal": "dinner",
+      "price": 135,
+      "note": "For the whole table"
+    },
+    {
+      "name": "Vegan menu",
+      "meal": "dinner",
+      "price": 135,
+      "note": "For the whole table"
+    },
+    {
+      "name": "Lunch menu",
+      "meal": "lunch",
+      "price": 80,
+      "note": "Monday to Friday"
+    }
+  ],
+  "menusSource": "https://www.fourseasons.com/paris/dining/menus/le-george-tasting-menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2017,
+  "hotel": "the Four Seasons Hotel George V, Paris",
+  "bookingOpens": "Online through OpenTable from the hotel's website, or by phone. Tables can be booked up to about four months ahead.",
+  "bookingUrl": "https://www.opentable.com/r/le-george-four-seasons-hotel-george-v-paris",
+  "bookingPhone": "+33 1 49 52 72 09",
+  "dressCode": "Business casual.",
+  "infoSource": "https://www.fourseasons.com/paris/dining/restaurants/le_george/",
+  "infoChecked": "2026-10-13"
 }

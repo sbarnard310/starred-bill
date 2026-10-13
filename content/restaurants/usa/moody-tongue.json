@@ -10,8 +10,8 @@
   "reviews": 654,
   "dinner": 175,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteZh": "品嚐套餐",
+  "dinnerNote": "Tasting menu, 10+ courses (beer pairings $75, $115 or $145)",
+  "dinnerNoteZh": "品嚐套餐，10道菜以上（啤酒搭配 $75、$115 或 $145）",
   "wine": 75,
   "sourceType": "site",
   "source": "https://www.moodytongue.com/faqs",
@@ -23,5 +23,43 @@
   "placeId": "ChIJKREupjctDogRPMJ46mxncfM",
   "michelinId": "1184762",
   "chef": "James Bingham",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Dining Room tasting menu",
+      "meal": "dinner",
+      "price": 175,
+      "wine": 75,
+      "note": "Ten or more courses with Moody Tongue's own beers: Classic beer pairing $75, Reserve $115, Grand Reserve $145 (a pairing can be shared for $25). Tax (10.75%) and a 22% service charge, which includes the tip, are added."
+    }
+  ],
+  "menusSource": "https://www.moodytongue.com/faqs/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "The Bar at Moody Tongue",
+      "note": "The brewery's bar in the same building, with an à la carte dinner menu by the same chef (starters about $15–$22, mains $29–$85); booking recommended but not required.",
+      "url": "https://www.moodytongue.com/the-bar/"
+    }
+  ],
+  "bookingOpens": "Online on SevenRooms. Tables open 42 days ahead, a day at a time, at midnight Chicago time, and must be booked at least 24 hours ahead (for shorter notice, email contact@moodytongue.com). Seatings are at 6:30pm on Wednesdays and Thursdays and at 6pm and 8:30pm on Fridays and Saturdays.",
+  "bookingWindow": {
+    "type": "rolling",
+    "days": 42,
+    "time": "00:00",
+    "tz": "America/Chicago",
+    "via": "SevenRooms",
+    "source": "https://www.moodytongue.com/faqs/",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://www.sevenrooms.com/explore/thediningroomatmoodytonguechicago/reservations/create/search/",
+  "bookingPhone": "+1 312 600 5111",
+  "cancellation": "Cancellations and changes to party size must be made at least a week ahead; within a week there are no refunds.",
+  "waitlist": "For the Dining Room, email your name, phone number and preferred dates to contact@moodytongue.com.",
+  "groups": "Large parties (11 or more on Wednesdays and Thursdays, five or more on Fridays and Saturdays) book by email at contact@moodytongue.com. The Dining Room can be hired privately for up to 28 seated, with six- or 15-course tasting menus, and the brewery has larger rooms.",
+  "groupsUrl": "https://www.moodytongue.com/private-events/",
+  "dressCode": "No dress code, though most Dining Room guests dress up a little (\"date ready\"). Guests are asked not to wear strong perfume or cologne.",
+  "duration": "About two to two and a half hours.",
+  "infoSource": "https://www.moodytongue.com/faqs/",
+  "infoChecked": "2026-10-13"
 }

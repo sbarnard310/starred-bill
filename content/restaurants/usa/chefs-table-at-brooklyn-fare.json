@@ -15,8 +15,8 @@
   "reviews": 638,
   "dinner": 385,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "wine": 320,
+  "dinnerNote": "Tasting menu, 12 or more courses",
+  "wine": 325,
   "sourceType": "site",
   "source": "https://www.brooklynfare.com/chefs-table",
   "noLunch": true,
@@ -29,6 +29,26 @@
   "diets": [
     "vegetarian"
   ],
-  "chef": "Cesar Ramirez",
-  "chefSource": "michelin"
+  "chef": "Max Natmessnig and Marco Prins",
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 385,
+      "wine": 325,
+      "note": "Seafood-led, 12 or more courses, served whole; before tax and gratuity. Standard wine pairing $325, Premium $580, or a non-alcoholic pairing $215"
+    }
+  ],
+  "menusSource": "https://www.brooklynfare.com/chefs-table",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online on Resy, or by phone or email (chefstable@brooklynfare.com). Seatings are Tuesday to Thursday at 6pm, 6:30pm, 7pm and 7:30pm, Friday and Saturday at 5pm, 5:30pm, 8:30pm and 8:45pm, and Sunday at 5pm, 5:30pm, 6pm and 6:30pm.",
+  "bookingUrl": "https://resy.com/cities/ny/chefs-table-at-brooklyn-fare",
+  "bookingPhone": "+1 718 243 0050 (reservations office Monday to Friday 10am–5pm, Saturday 10am–2pm)",
+  "cancellation": "A $200 deposit per guest is taken when booking, and Resy says it isn't refunded if you change or cancel. Guests 15 minutes or more late may miss courses or lose the booking.",
+  "groups": "Online bookings take up to seven guests; for larger parties email chefstable@brooklynfare.com. The whole restaurant can be booked for a private dinner with at least two months' notice.",
+  "dressCode": "No strict dress code, though many guests dress up.",
+  "duration": "About two and a half hours or more.",
+  "infoSource": "https://www.brooklynfare.com/chefs-table",
+  "infoChecked": "2026-10-13"
 }

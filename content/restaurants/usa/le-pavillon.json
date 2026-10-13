@@ -11,15 +11,15 @@
   "reviews": 1211,
   "dinner": 145,
   "dinnerType": "menu",
-  "dinnerNote": "Dinner, 3 courses",
+  "dinnerNote": "Three-course dinner menu (six-course tasting menus $165 and $205)",
   "wine": 90,
   "sourceType": "site",
   "source": "https://www.lepavillonnyc.com/our-menu/dinner",
-  "lunch": 95,
+  "lunch": 78,
   "lunchType": "menu",
-  "lunchNote": "Prix fixe lunch, 3 courses (2 courses $78)",
-  "lunchSourceType": "press",
-  "lunchSource": "https://resident.com/food-and-drink/2026/07/08/chef-daniel-bouluds-le-pavillon-returns-for-summer-restaurant-week-lunch-only",
+  "lunchNote": "Two-course prix fixe lunch (three courses $95, six-course tasting $120)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.lepavillonnyc.com/our-menu/lunch-menu",
   "website": "https://lepavillonnyc.com/",
   "lat": 40.752517,
   "lng": -73.978369,
@@ -29,5 +29,73 @@
     "vegetarian"
   ],
   "chef": "Daniel Boulud and Will Nacev",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Three-course dinner menu",
+      "meal": "dinner",
+      "price": 145,
+      "wine": 90,
+      "courses": 3,
+      "note": "Choice of starter, main course and dessert; some dishes carry a supplement (Dover sole $12, lobster $8, 30g caviar $165)."
+    },
+    {
+      "name": "Chefs' Tasting Menu",
+      "meal": "dinner",
+      "price": 205,
+      "wine": 145,
+      "courses": 6,
+      "note": "Six courses including caviar spaghetti and Dover sole; six-course wine pairing $145."
+    },
+    {
+      "name": "Tasting of Vegetables",
+      "meal": "dinner",
+      "price": 165,
+      "wine": 145,
+      "courses": 6,
+      "note": "Six vegetable courses; six-course wine pairing $145."
+    },
+    {
+      "name": "Two-course prix fixe lunch",
+      "meal": "lunch",
+      "price": 78,
+      "courses": 2,
+      "note": "Lunch Monday to Friday."
+    },
+    {
+      "name": "Three-course prix fixe lunch",
+      "meal": "lunch",
+      "price": 95,
+      "courses": 3,
+      "note": "Lunch Monday to Friday."
+    },
+    {
+      "name": "Six-course lunch tasting",
+      "meal": "lunch",
+      "price": 120,
+      "courses": 6,
+      "note": "Lunch Monday to Friday."
+    }
+  ],
+  "menusSource": "https://www.lepavillonnyc.com/our-menu/dinner",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Bar Vandy",
+      "note": "Le Pavillon's own bar, with cocktails, wines by the glass and bar bites from about $18, at lunch and dinner.",
+      "url": "https://www.lepavillonnyc.com/experiences"
+    }
+  ],
+  "bookingOpens": "Online on Resy, or by phone.",
+  "bookingUrl": "https://resy.com/cities/new-york-ny/venues/le-pavillon",
+  "bookingPhone": "+1 212 662 1000",
+  "cancellation": "Guests running late have a 15-minute grace period; after that the restaurant seats them as best it can.",
+  "walkIns": "The bar and lounge (Bar Vandy) serves cocktails, wine and bar bites Monday to Friday from 11:30am and Saturday from 5pm.",
+  "groups": "Private events for up to 200, from the semi-private Garden Table among the olive trees (up to 14 guests) and a private dining room to buying out the whole restaurant. Enquire through the website or events@lepavillonnyc.com.",
+  "groupsUrl": "https://www.lepavillonnyc.com/private-dining",
+  "dressCode": "Business casual is strongly recommended. No athletic or leisure wear, and men may not wear shorts or sandals in the dining room.",
+  "children": "Pushchairs and prams cannot be accommodated in the restaurant.",
+  "byob": "Corkage for up to two standard bottles not on the wine list, $150 a bottle.",
+  "infoSource": "https://www.lepavillonnyc.com/about",
+  "infoChecked": "2026-10-13"
 }

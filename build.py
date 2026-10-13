@@ -2721,7 +2721,7 @@ TITLE_WORDS = {
            "short": ["Restaurantes estrella Michelin {in}", "Estrellas Michelin {in}"],
            "all": "precios de los {n}", "allOne": "precios", "some": "los {n}, con precios", "none": "los {n}", "empty": "aún ninguno", "prices": "precios"},
     "it": {"head": "Ristoranti stellati Michelin {in}", "headOne": "Ristorante stellato Michelin {in}", "short": "Ristoranti stellati {in}",
-           "all": "prezzi di tutti i {n}", "allOne": "prezzi", "some": "tutti i {n}, con prezzi", "none": "tutti i {n}", "empty": "ancora nessuno", "prices": "prezzi"},
+           "all": "prezzi di tutti e {n}", "allOne": "prezzi", "some": "tutti e {n}, con prezzi", "none": "tutti e {n}", "empty": "ancora nessuno", "prices": "prezzi"},
     "ca": {"head": "Restaurants amb estrella Michelin {in}", "headOne": "Restaurant amb estrella Michelin {in}", "short": "Restaurants amb estrella {in}",
            "all": "preus dels {n}", "allOne": "preus", "some": "els {n}, amb preus", "none": "els {n}", "empty": "encara cap", "prices": "preus"},
     "da": {"head": "Michelin-restauranter {in}", "headOne": "Michelin-restaurant {in}", "all": "priser på alle {n}", "allOne": "priser",

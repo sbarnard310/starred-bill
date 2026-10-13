@@ -25,5 +25,31 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "cuisineDe": "Moderne Küche",
+  "menus": [
+    {
+      "name": "seasonal tasting menu",
+      "meal": "dinner",
+      "price": 360,
+      "note": "Fish and meat; wine, sake and non-alcoholic pairings offered (prices not published); allergies and dietary needs on request when booking"
+    }
+  ],
+  "menusSource": "https://schreiberei-muc.de/tohru",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Bar Tatar",
+      "note": "The bar in the same building, the Schreiberei; open Tuesday to Friday from 5pm and Saturday from 1pm, booking recommended but not required",
+      "url": "https://schreiberei-muc.de/bar-tatar"
+    }
+  ],
+  "starsSince": 2025,
+  "bookingOpens": "Online on OpenTable. New tables are released every Monday, three months ahead. Tables for four may still be free when those for two are gone.",
+  "bookingUrl": "https://www.opentable.de/r/tohru-fine-dining-reservations-munchen?restref=216039&lang=de-DE&ot_source=Restaurant%20website",
+  "bookingPhone": "+49 89 21529172, Tuesday to Saturday 2pm to 6pm",
+  "cancellation": "Cancellations less than 48 hours before, and no-shows, may be charged €450 per person.",
+  "groups": "Groups of more than six and up to 35 people book by email (kontakt@schreiberei-muc.de).",
+  "duration": "About three and a half hours.",
+  "infoSource": "https://schreiberei-muc.de/tohru",
+  "infoChecked": "2026-10-13"
 }

@@ -18,10 +18,10 @@
   "source": "https://leprecatelan.paris/en/le-restaurant-du-precatelan",
   "lunch": 195,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu, weekdays",
-  "lunchNoteFr": "Menu déjeuner, en semaine",
+  "lunchNote": "A Luncheon at Le Pré Catelan menu, Wed–Fri",
+  "lunchNoteFr": "Menu Un déjeuner au Pré Catelan, du mercredi au vendredi",
   "lunchSourceType": "site",
-  "lunchSource": "https://leprecatelan.paris/",
+  "lunchSource": "https://leprecatelan.paris/en/le-restaurant-du-precatelan",
   "website": "https://leprecatelan.paris/",
   "lat": 48.8639374,
   "lng": 2.2507182,
@@ -33,5 +33,47 @@
     "gluten-free"
   ],
   "chef": "Frédéric Anton",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Menu du Pré",
+      "meal": "dinner",
+      "price": 450,
+      "courses": 12,
+      "note": "Lunch or dinner; taxes and service included"
+    },
+    {
+      "name": "Orsay menu",
+      "meal": "dinner",
+      "price": 380,
+      "courses": 9,
+      "note": "Lunch or dinner; service included"
+    },
+    {
+      "name": "A Luncheon at Le Pré Catelan menu",
+      "meal": "lunch",
+      "price": 195,
+      "courses": 5,
+      "note": "Lunch only, not on Saturdays or public holidays; €270 with wines chosen by head sommelier Boris Thuillier"
+    }
+  ],
+  "menusSource": "https://leprecatelan.paris/en/le-restaurant-du-precatelan",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "La Ferme du Pré",
+      "note": "Frédéric Anton's bistro in the same building, open Wednesday to Sunday for lunch and dinner",
+      "url": "https://leprecatelan.paris/en/bistrot-la-ferme-du-pre"
+    }
+  ],
+  "starsSince": 2007,
+  "bookingOpens": "Online on Guestonline from the restaurant's website, by phone or by email. Open Wednesday to Saturday, 12pm to 2pm and 7pm to 8:15pm.",
+  "bookingUrl": "https://ib.guestonline.fr/instabook/bookings/4sIclI4/selection",
+  "bookingPhone": "+33 1 44 14 41 14",
+  "cancellation": "Every booking is guaranteed with a card hold. Nothing is charged for cancelling more than 72 hours ahead; for a no-show or a cancellation within 72 hours, the amount of the hold is charged.",
+  "groups": "Private dining and events are handled by the Pré Catelan's salons team on +33 1 44 14 41 00.",
+  "groupsUrl": "https://leprecatelan.paris/en/salles-de-reception-paris",
+  "dressCode": "Elegant dress. Men are asked to wear a jacket, and shorts and sportswear are not allowed; the restaurant may refuse entry if the dress code isn't followed.",
+  "infoSource": "https://leprecatelan.paris/en/informations-pratiques",
+  "infoChecked": "2026-10-13"
 }

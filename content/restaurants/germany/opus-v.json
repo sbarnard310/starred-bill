@@ -24,12 +24,50 @@
   "chef": "Dominik Paul",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
-  "lunch": 249,
+  "lunch": 99,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sat",
-  "lunchWine": 149,
-  "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
+  "lunchNote": "Three-course lunch menu · Fri–Sat",
+  "lunchWine": 75,
+  "lunchNoteDe": "Drei-Gänge-Mittagsmenü · Fr–Sa",
   "lunchSourceType": "site",
-  "lunchSource": "https://info.engelhorn.com/gastronomie/opus-v/abendkarte/",
-  "cuisineDe": "Moderne Küche"
+  "lunchSource": "https://info.engelhorn.com/gastronomie/opus-v/mittagskarte/",
+  "cuisineDe": "Moderne Küche",
+  "menus": [
+    {
+      "name": "Urban Nature six-course menu",
+      "meal": "dinner",
+      "price": 249,
+      "wine": 149,
+      "courses": 6,
+      "note": "Non-alcoholic pairing €95; vegetarian and vegan versions on request when booking"
+    },
+    {
+      "name": "Chef's Choice four-course surprise menu",
+      "meal": "dinner",
+      "price": 159,
+      "wine": 119,
+      "courses": 4,
+      "note": "Wednesday to Saturday"
+    },
+    {
+      "name": "three-course menu",
+      "meal": "dinner",
+      "price": 99,
+      "wine": 75,
+      "courses": 3,
+      "note": "Lunch (Friday and Saturday) or dinner"
+    }
+  ],
+  "menusSource": "https://info.engelhorn.com/gastronomie/opus-v/abendkarte/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2016,
+  "bookingOpens": "Online on TheFork (linked from the restaurant's page), or by phone or email (gastro@engelhorn.de). Dinner Wednesday to Saturday from 6.30pm, lunch Friday and Saturday 12pm to 3pm.",
+  "bookingUrl": "https://www.thefork.de/restaurant/opus-v-r602465",
+  "bookingPhone": "+49 621 167 1199",
+  "groups": "The restaurant can be hired exclusively for up to 70 guests, or a separate room for up to 10 with other guests in the dining room.",
+  "groupsUrl": "https://info.engelhorn.com/gastronomie/opus-v/ihr-event-im-opus-v/",
+  "dressCode": "No dress code; the restaurant describes itself as casual.",
+  "children": "The kitchen prepares dishes suited to children.",
+  "infoSource": "https://info.engelhorn.com/gastronomie/opus-v/",
+  "infoChecked": "2026-10-13"
 }

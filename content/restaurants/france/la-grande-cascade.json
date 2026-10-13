@@ -10,12 +10,12 @@
   "cuisineZh": "傳統菜",
   "rating": 4.6,
   "reviews": 1414,
-  "dinner": 195,
+  "dinner": 245,
   "dinnerType": "menu",
-  "dinnerNote": "Itinéraire menu, 5 courses",
-  "dinnerNoteFr": "Menu Itinéraire, 5 services",
+  "dinnerNote": "Itinéraire menu, 7 courses (5 courses €195, Menu du Marché €99)",
+  "dinnerNoteFr": "Menu Itinéraire, 7 étapes (5 étapes 195 €, Menu du Marché 99 €)",
   "sourceType": "site",
-  "source": "https://www.restaurantsparisiens.com/la-grande-cascade/",
+  "source": "https://www.restaurantsparisiens.com/la-grande-cascade/carte/",
   "lunch": 99,
   "lunchType": "menu",
   "lunchNote": "Menu du Marché",
@@ -33,5 +33,44 @@
     "gluten-free"
   ],
   "chef": "Frédéric Robert",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "seven-course Itinéraire menu",
+      "meal": "dinner",
+      "price": 245,
+      "courses": 7,
+      "note": "Lunch or dinner, every day. Caviar supplement €45"
+    },
+    {
+      "name": "five-course Itinéraire menu",
+      "meal": "dinner",
+      "price": 195,
+      "courses": 5,
+      "note": "Lunch or dinner, every day. Caviar supplement €45"
+    },
+    {
+      "name": "Menu du jardin",
+      "meal": "dinner",
+      "price": 128,
+      "courses": 4,
+      "note": "Vegetable-led menu, lunch or dinner, every day"
+    },
+    {
+      "name": "Menu du Marché",
+      "meal": "dinner",
+      "price": 99,
+      "courses": 3,
+      "note": "Lunch or dinner, every day; drinks extra"
+    }
+  ],
+  "menusSource": "https://www.restaurantsparisiens.com/la-grande-cascade/carte/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through TheFork from the restaurant's website, or by phone. Open every day, lunch 12:30pm to 1:30pm and dinner 7:30pm to 9:30pm.",
+  "bookingUrl": "https://www.restaurantsparisiens.com/la-grande-cascade/",
+  "bookingPhone": "+33 1 45 27 33 51",
+  "groups": "Several private rooms upstairs seat from 8 to 30 (Salon Auteuil-Longchamp 30, Hortense 18, Eugénie 12, Petit Hortense 8), with personalised menus.",
+  "groupsUrl": "https://www.restaurantsparisiens.com/la-grande-cascade/salon/",
+  "infoSource": "https://www.restaurantsparisiens.com/la-grande-cascade/",
+  "infoChecked": "2026-10-13"
 }

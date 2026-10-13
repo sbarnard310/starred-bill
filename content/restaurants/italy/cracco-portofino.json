@@ -11,13 +11,13 @@
   "dinner": 210,
   "dinnerNote": "Tasting menu (other menus from €160)",
   "sourceType": "site",
-  "source": "https://www.craccoportofino.it/wp-content/uploads/2026/09/Off-Menu-sett-SS26-1.pdf",
-  "lunch": 210,
+  "source": "https://www.craccoportofino.it/wp-content/uploads/2026/10/Off-Menu-oct-SS26.pdf",
+  "lunch": 160,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sun",
-  "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
+  "lunchNote": "A mano a mano menu, 7 courses (both menus served at lunch) · Wed–Sun",
+  "lunchNoteIt": "Menu A mano a mano, 7 portate (entrambi i menu serviti a pranzo) · mer–dom",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.craccoportofino.it/wp-content/uploads/2026/09/Off-Menu-sett-SS26-1.pdf",
+  "lunchSource": "https://www.craccoportofino.it/wp-content/uploads/2026/10/Off-Menu-oct-SS26.pdf",
   "website": "https://www.craccoportofino.it",
   "lat": 44.302429,
   "lng": 9.2103994,
@@ -29,5 +29,30 @@
     "gluten-free"
   ],
   "chef": "Mattia Pecis",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Un tuffo nell'orto tasting menu",
+      "meal": "dinner",
+      "price": 210,
+      "courses": 11,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "A mano a mano menu",
+      "meal": "dinner",
+      "price": 160,
+      "courses": 7,
+      "note": "Lunch or dinner; its dishes can also be ordered à la carte"
+    }
+  ],
+  "menusSource": "https://www.craccoportofino.it/wp-content/uploads/2026/10/Off-Menu-oct-SS26.pdf",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Online through SevenRooms, which takes card details to guarantee the table, or through the restaurant's contact form.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/ristorantecraccoportofino",
+  "cancellation": "Cancel at least 48 hours ahead. Later cancellations and no-shows are charged €100 per person to the card given when booking. Tables are held for 30 minutes after the booked time.",
+  "walkIns": "La Terrazza, the cocktail bar on the terrace over the harbour, serves aperitivi from 6pm and can be booked on SevenRooms.",
+  "infoSource": "https://www.sevenrooms.com/reservations/ristorantecraccoportofino",
+  "infoChecked": "2026-10-13"
 }

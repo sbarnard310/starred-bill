@@ -10,18 +10,18 @@
   "reviews": 959,
   "dinner": 130,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu (shorter menus €105 and €115)",
-  "dinnerNoteIt": "Menu degustazione (menu più brevi €105 e €115)",
+  "dinnerNote": "Vediamo che succede tasting menu (I Classici €105, La Rinascita €115); cover and service included",
+  "dinnerNoteIt": "Menu degustazione Vediamo che succede (I Classici €105, La Rinascita €115); coperto e servizio inclusi",
   "wine": 80,
   "sourceType": "site",
-  "source": "https://www.duecolombe.com/",
-  "lunch": 130,
+  "source": "https://www.duecolombe.com/public/immagini/ITA%20menu%20ristorante%2016x40.pdf",
+  "lunch": 105,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sun",
-  "lunchNoteIt": "Stesso menu a pranzo · ven–dom",
-  "lunchWine": 80,
+  "lunchNote": "I Classici tasting menu (all three menus served at lunch) · Fri–Sun",
+  "lunchNoteIt": "Menu degustazione I Classici (tutti e tre i menu serviti a pranzo) · ven–dom",
+  "lunchWine": 70,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.duecolombe.com/",
+  "lunchSource": "https://www.duecolombe.com/public/immagini/ITA%20menu%20ristorante%2016x40.pdf",
   "website": "https://www.duecolombe.com/",
   "lat": 45.62138,
   "lng": 10.018,
@@ -33,5 +33,40 @@
     "gluten-free"
   ],
   "chef": "Stefano Cerveni",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Vediamo che succede tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "wine": 80,
+      "courses": 8,
+      "note": "The chef's freest, most creative menu; lunch or dinner, for the whole table; pairing of eight glasses €80, or four alcohol-free drinks €50"
+    },
+    {
+      "name": "La Rinascita tasting menu",
+      "meal": "dinner",
+      "price": 115,
+      "wine": 70,
+      "courses": 8,
+      "note": "Local produce and suppliers; lunch or dinner, for the whole table; pairing of seven glasses €70, or four alcohol-free drinks €50"
+    },
+    {
+      "name": "I Classici del Due Colombe tasting menu",
+      "meal": "dinner",
+      "price": 105,
+      "wine": 70,
+      "courses": 7,
+      "note": "The restaurant's signature dishes; lunch or dinner, for the whole table; pairing of seven glasses €70, or four alcohol-free drinks €50"
+    }
+  ],
+  "menusSource": "https://www.duecolombe.com/public/immagini/ITA%20menu%20ristorante%2016x40.pdf",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2007,
+  "bookingOpens": "Online only, through the restaurant's booking page; phone bookings are not taken. Card details are needed to confirm the booking, or it is turned down automatically.",
+  "bookingUrl": "https://duecolombe.superbexperience.com/",
+  "groups": "Weddings, company meetings and private events can be held in the Borgo Antico San Vitale, and the kitchen also caters at other venues; ask by email (info@duecolombe.com).",
+  "groupsUrl": "https://www.duecolombe.com/categoria.asp?id=3",
+  "infoSource": "https://www.duecolombe.com/categoria.asp?id=2",
+  "infoChecked": "2026-10-13"
 }

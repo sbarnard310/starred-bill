@@ -8,10 +8,10 @@
   "reviews": 335,
   "dinner": 280,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €210)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 210 €)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/chantecler",
+  "dinnerNote": "Le Chant du Coq menu, 8 courses (Le Chant des Saveurs €210)",
+  "dinnerNoteFr": "Menu Le Chant du Coq, 8 séquences (Le Chant des Saveurs 210 €)",
+  "sourceType": "site",
+  "source": "https://www.lenegresco.com/file/menu-le-chantecler",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteFr": "Uniquement le soir",
@@ -25,5 +25,34 @@
     "vegan"
   ],
   "chef": "Virginie Basselot",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 250,
+  "menus": [
+    {
+      "name": "Le Chant du Coq menu",
+      "meal": "dinner",
+      "price": 280,
+      "wine": 250,
+      "courses": 8,
+      "note": "Cellarium Visita wine pairing of 8 glasses (10cl) €250"
+    },
+    {
+      "name": "Le Chant des Saveurs menu",
+      "meal": "dinner",
+      "price": 210,
+      "wine": 180,
+      "courses": 5,
+      "note": "Mare Nostrum wine pairing of 5 glasses (10cl) €180"
+    }
+  ],
+  "menusSource": "https://www.lenegresco.com/file/menu-le-chantecler",
+  "menusChecked": "2026-10-13",
+  "hotel": "Le Negresco",
+  "bookingOpens": "Online from the restaurant's page on the Negresco's website, by phone or by email (chantecler@lenegresco.com). Open for dinner Wednesday to Sunday, with tables booked from 7pm to 9:30pm.",
+  "bookingUrl": "https://www.lenegresco.com/restaurants/le-chantecler",
+  "bookingPhone": "+33 4 93 16 64 10",
+  "dressCode": "Elegant, smart dress (tenue élégante et soignée).",
+  "children": "A children's menu, La Madeleine de Proust, is offered for those up to 12 at €65.",
+  "infoSource": "https://www.lenegresco.com/restaurants/le-chantecler",
+  "infoChecked": "2026-10-13"
 }

@@ -26,6 +26,32 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ",
+  "menus": [
+    {
+      "name": "eight-course supper",
+      "meal": "dinner",
+      "price": 200,
+      "courses": 8,
+      "note": "€200 Tuesday to Thursday, €205 on Fridays, evenings before public holidays and Tuesday to Friday in December, €215 on Saturdays; filtered water included; drinks and pairings priced separately"
+    },
+    {
+      "name": "six-course supper",
+      "meal": "dinner",
+      "price": 120,
+      "courses": 6,
+      "note": "€120 Tuesday to Thursday, €135 on Fridays, evenings before public holidays and Tuesday to Friday in December, €140 on Saturdays; filtered water included"
+    },
+    {
+      "name": "student deal",
+      "meal": "dinner",
+      "price": 100,
+      "courses": 6,
+      "note": "Two places a night for students, booked by email with proof of student status; includes the drinks pairing (or non-alcoholic) and coffee or tea"
+    }
+  ],
+  "menusSource": "https://nobelhartundschmutzig.com/en/reservation/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the restaurant's booking system, for up to eight people, up to 60 days ahead. If nothing is free online, email with your preferred date, time and party size, or phone (Tuesday to Saturday from 3pm). The restaurant asks you to reconfirm two to four days before.",
   "bookingWindow": {
     "type": "rolling",
     "days": 60,
@@ -33,5 +59,16 @@
     "via": "website",
     "source": "https://nobelhartundschmutzig.com/en/reservation",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=384013&pid=1001",
+  "bookingPhone": "+49 30 25940610, Tuesday to Saturday from 3pm",
+  "cancellation": "A credit card makes the booking binding. Cancel free up to 24 hours ahead for one to four people, 48 hours for five or six, 72 hours for seven or eight; after that the menu price per person is charged unless the seats can be refilled. Online cancellation works up to 72 hours ahead, later by email.",
+  "walkIns": "From 9.45pm anyone can drop in just for drinks at the counter, without booking.",
+  "groups": "Groups of nine or more book by email and pay a deposit of the full minimum spend; groups of 21 or more have the eight-course menu. The whole restaurant (up to 43 guests: 28 at the counter, 15 at the big table) can be booked exclusively for a minimum spend from about €14,000, ideally 60 days ahead. A 6% tip is usual on group bills.",
+  "groupsUrl": "https://nobelhartundschmutzig.com/en/reservation/",
+  "dressCode": "No dress code: no jacket or tie needed. Guests are asked not to wear strong perfume or aftershave.",
+  "children": "Children are welcome and pay only for what they eat; there is no children's menu and no high chairs. Book them a seat and give their age in advance.",
+  "duration": "Early six-course seatings (6pm to 6.30pm) have the seat for 2 hours 15 minutes; later six-course seatings and every eight-course seating keep the seat until closing at midnight.",
+  "infoSource": "https://nobelhartundschmutzig.com/en/reservation/",
+  "infoChecked": "2026-10-13"
 }

@@ -15,18 +15,43 @@
   "wine": 120,
   "sourceType": "site",
   "source": "https://www.iyo-kaiseki.com/menu/",
-  "lunch": 180,
+  "lunch": 50,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Sat–Sun",
-  "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
-  "lunchWine": 120,
+  "lunchNote": "Bento box · Wed–Fri (kaiseki menu €180 every lunch, ordered by 2pm)",
+  "lunchNoteIt": "Bento box · mer–ven (menu kaiseki €180 a ogni pranzo, ordinabile entro le 14)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.iyo-kaiseki.com/menu/",
+  "lunchSource": "https://www.iyo-kaiseki.com/en/menu/",
   "website": "https://www.iyo-kaiseki.com/",
   "lat": 45.482206,
   "lng": 9.193258,
   "placeId": "ChIJgUaxw97HhkcRy_ooKSeTSeQ",
   "michelinId": "1190091",
   "chef": "Katsumi Soga",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Kaiseki tasting menu",
+      "meal": "dinner",
+      "price": 180,
+      "wine": 120,
+      "courses": 8,
+      "note": "Lunch (ordered by 2pm) or dinner (by 9:30pm), for the whole table and by reservation only; drinks pairing €120; A4 wagyu sirloin can be added for €40"
+    },
+    {
+      "name": "bento box",
+      "meal": "lunch",
+      "price": 50,
+      "note": "Lunch Wednesday to Friday only, not on public holidays; sashimi, sushi or kobachi bento with tempura, a grilled dish, pickles, rice, miso soup and ice cream"
+    }
+  ],
+  "menusSource": "https://www.iyo-kaiseki.com/en/menu/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through SevenRooms, by phone, by WhatsApp (+39 349 973 8376) or by email (info@iyo-kaiseki.com).",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/iyokaiseki",
+  "bookingPhone": "+39 02 2506 2888",
+  "cancellation": "Bookings can be changed or cancelled free of charge until 3pm the day before. Later cancellations and no-shows are charged €100 per person.",
+  "dressCode": "Elegant casual. Guests are asked not to wear strong perfume, scented creams or deodorant, as they interfere with the menu.",
+  "children": "Not recommended for children under 10; exceptions can be discussed with the restaurant in advance.",
+  "infoSource": "https://www.sevenrooms.com/reservations/iyokaiseki",
+  "infoChecked": "2026-10-13"
 }

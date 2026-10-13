@@ -12,16 +12,16 @@
   "changeDate": "2026-03",
   "rating": 4.8,
   "reviews": 895,
-  "dinner": 94,
+  "dinner": 98,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €60)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 60 €)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/auberge-du-grapiot-restaurant",
-  "lunch": 94,
+  "dinnerNote": "Menu Expérience, 6 courses (other menus from €65)",
+  "dinnerNoteFr": "Menu Expérience, 6 plats (autres menus dès 65 €)",
+  "sourceType": "site",
+  "source": "https://legrapiot.com/media/original/menu-grapiot-12-v1.pdf",
+  "lunch": 98,
   "lunchType": "menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/auberge-du-grapiot-restaurant",
+  "lunchSourceType": "site",
+  "lunchSource": "https://legrapiot.com/media/original/menu-grapiot-12-v1.pdf",
   "lunchNote": "Same menu at lunch",
   "lunchNoteFr": "Même menu le midi",
   "website": "https://legrapiot.com",
@@ -34,5 +34,36 @@
     "gluten-free"
   ],
   "chef": "Vivien Sonzogni",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Menu Expérience",
+      "meal": "dinner",
+      "price": 98,
+      "courses": 6,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Menu Connaisseur",
+      "meal": "dinner",
+      "price": 85,
+      "courses": 5,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Menu Découverte",
+      "meal": "dinner",
+      "price": 65,
+      "courses": 3,
+      "note": "Lunch or dinner; no changes to this menu"
+    }
+  ],
+  "menusSource": "https://legrapiot.com/media/original/menu-grapiot-12-v1.pdf",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2026,
+  "bookingOpens": "Online on Zenchef, by phone or by email (contact@legrapiot.com).",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=364680&pid=1001",
+  "bookingPhone": "+33 3 84 37 49 44",
+  "infoSource": "https://legrapiot.com/fr/",
+  "infoChecked": "2026-10-13"
 }

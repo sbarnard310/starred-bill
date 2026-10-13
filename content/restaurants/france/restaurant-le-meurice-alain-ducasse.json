@@ -12,16 +12,10 @@
   "reviews": 1020,
   "dinner": 425,
   "dinnerType": "menu",
-  "dinnerNote": "Menu Collection (Découverte €375); weekdays only",
-  "dinnerNoteFr": "Menu Collection (Découverte 375 €) ; en semaine uniquement",
-  "sourceType": "press",
-  "source": "https://www.thefork.com/restaurant/restaurant-le-meurice-alain-ducasse-r275/menu",
-  "lunch": 375,
-  "lunchType": "menu",
-  "lunchNote": "Menu Découverte, weekdays",
-  "lunchNoteFr": "Menu Découverte, en semaine",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.thefork.com/restaurant/restaurant-le-meurice-alain-ducasse-r275/menu",
+  "dinnerNote": "Collection menu: five dishes, cheese and dessert (Découverte €375); Monday to Friday",
+  "dinnerNoteFr": "Menu Collection : cinq plats, fromages et dessert (Découverte 375 €) ; du lundi au vendredi",
+  "sourceType": "site",
+  "source": "https://www.alainducasse-meurice.com/sites/default/files/docs/restaurant-le-meurice-alain-ducasse-menu-06.10.26-en.pdf",
   "website": "https://www.dorchestercollection.com/fr/paris/le-meurice/restaurants-bars/restaurant-le-meurice-alain-ducasse",
   "lat": 48.86525,
   "lng": 2.3278399,
@@ -33,5 +27,40 @@
     "vegan"
   ],
   "chef": "Amaury Bouhours",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "lunchNoteFr": "Uniquement le soir",
+  "menus": [
+    {
+      "name": "Collection menu",
+      "meal": "dinner",
+      "price": 425,
+      "note": "Five dishes, cheese and dessert; dishes can be had in a vegetable version"
+    },
+    {
+      "name": "Découverte menu",
+      "meal": "dinner",
+      "price": 375,
+      "note": "Three dishes, cheese and dessert"
+    },
+    {
+      "name": "Chef's Table Initiation menu",
+      "meal": "dinner",
+      "price": 575,
+      "note": "Private table overlooking the kitchen: a glass of Dom Pérignon and five dishes; paid in advance. The Expérience version with a vintage Dom Pérignon pairing is €925"
+    }
+  ],
+  "menusSource": "https://www.alainducasse-meurice.com/sites/default/files/docs/restaurant-le-meurice-alain-ducasse-menu-06.10.26-en.pdf",
+  "menusChecked": "2026-10-13",
+  "hotel": "Le Meurice, a Dorchester Collection hotel",
+  "bookingOpens": "Online through SevenRooms, by phone or by email (restaurant.lmp@dorchestercollection.com). Dinner only, Monday to Friday, 7pm to 9.30pm.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/restaurantlemeuricealainducasse?lang=en",
+  "bookingPhone": "+33 1 58 00 21 19",
+  "cancellation": "A card guarantee is taken. Cancel at least 48 hours ahead, or €375 a person is charged for a late cancellation or no-show. Chef's Table bookings are paid in advance (€575 a person) and refunded if cancelled at least 48 hours ahead. Tables are held for 15 minutes.",
+  "groups": "The Chef's Table, overlooking the kitchen, takes 4 to 8 people for lunch or a private dinner, by booking only. Private events through the hotel.",
+  "groupsUrl": "https://www.alainducasse-meurice.com/en/contact",
+  "dressCode": "Jacket required for men.",
+  "infoSource": "https://www.alainducasse-meurice.com/en/contact",
+  "infoChecked": "2026-10-13"
 }

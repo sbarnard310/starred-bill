@@ -10,21 +10,64 @@
   "reviews": 1738,
   "dinner": 380,
   "dinnerType": "menu",
-  "dinnerNote": "Les Agapes de Soubeyrannes menu, 8 acts (L'Espassado €295)",
-  "dinnerNoteFr": "Menu Les Agapes de Soubeyrannes, 8 actes (L'Espassado 295 €)",
+  "dinnerNote": "Les Agapes de Soubeyrannes menu, 8 acts (L'Espassado €295, Anse de L'Arène €195 Thu–Fri)",
+  "dinnerNoteFr": "Menu Les Agapes de Soubeyrannes, 8 actes (L'Espassado 295 €, Anse de L'Arène 195 € jeu.–ven.)",
   "sourceType": "site",
-  "source": "https://www.lavillamadie.com/en/menus/",
+  "source": "https://www.lavillamadie.com/en/menus-villa-madie/",
   "lunch": 380,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Thu–Sun",
   "lunchNoteFr": "Même menu le midi · jeu.–dim.",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.lavillamadie.com/en/menus/",
+  "lunchSource": "https://www.lavillamadie.com/en/menus-villa-madie/",
   "website": "https://lavillamadie.com/",
   "lat": 43.2110889,
   "lng": 5.544944,
   "placeId": "ChIJm3JVyr66yRIRxtkixEeVcKY",
   "michelinId": "178193",
   "chef": "Dimitri Droisneau",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Les Agapes de Soubeyrannes menu",
+      "meal": "dinner",
+      "price": 380,
+      "courses": 8,
+      "note": "Every dinner it's open, and Saturday and Sunday lunch (every lunch in July and August)"
+    },
+    {
+      "name": "L'Espassado Cap Canaille menu",
+      "meal": "dinner",
+      "price": 295,
+      "courses": 6,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "Anse de L'Arène menu",
+      "meal": "dinner",
+      "price": 195,
+      "courses": 4,
+      "note": "Lunch and dinner on Thursdays and Fridays only, not in July and August or on public holidays"
+    }
+  ],
+  "menusSource": "https://www.lavillamadie.com/en/menus-villa-madie/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "La Brasserie du Corton",
+      "price": 70,
+      "note": "The restaurant's brasserie, just above it on the same cove with the same sea view: a build-your-own menu at €70",
+      "url": "https://www.lavillamadie.com/en/menus-brasserie-du-corton/"
+    }
+  ],
+  "starsSince": 2022,
+  "bookingOpens": "Online on TheFork from the restaurant's website, or by phone. Covers are limited, so the restaurant advises booking several weeks ahead, and further ahead for weekends, summer and special dates.",
+  "bookingUrl": "https://widget.thefork.com/en/773d1824-5b41-4d62-ae16-e84f83efea99?step=date",
+  "bookingPhone": "+33 4 96 18 00 00",
+  "cancellation": "Changes and cancellations are possible if made as early as possible; the terms are given when the booking is confirmed.",
+  "groups": "A dedicated team handles groups, private hire and events, through the restaurant's group booking page.",
+  "groupsUrl": "https://www.lavillamadie.com/en/book-group-event/",
+  "dressCode": "Smart casual. At dinner, men are asked to wear long trousers and closed shoes.",
+  "infoSource": "https://www.lavillamadie.com/en/faq/",
+  "infoChecked": "2026-10-13"
 }

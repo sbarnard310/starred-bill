@@ -11,17 +11,17 @@
   "cuisineZh": "粵菜",
   "rating": 4.4,
   "reviews": 734,
-  "dinner": 1780,
+  "dinner": 2880,
   "dinnerType": "menu",
-  "dinnerNote": "Classic menu (lobster tasting menu HK$1,980)",
-  "dinnerNoteZh": "經典菜單（龍蝦品嚐菜單港幣1,980）",
-  "wine": 750,
+  "dinnerNote": "Spring Moon's Classic Menu (Chef's Tasting Menu HK$1,780)",
+  "dinnerNoteZh": "傳統宴（廚師嚐味菜譜港幣1,780）",
+  "wine": 980,
   "sourceType": "site",
-  "source": "https://www.peninsula.com/-/media/01-hong-kong-property/spring-moon---a-la-carte-menu--26-feb-26---new-wine-pairing_20260302.pdf",
-  "lunchNote": "Open for lunch",
-  "lunchNoteZh": "有供應午餐",
-  "lunchNoteYue": "有午市",
-  "lunchType": "spend",
+  "source": "https://www.peninsula.com/-/media/01-hong-kong-property/2026-spring-moon-menu-updates/20261007-spring-moon---a-la-carte-menu.pdf",
+  "lunchNote": "Dim sum set lunch, minimum two guests (tasting set lunch HK$1,080)",
+  "lunchNoteZh": "嚐味點心午宴，最少兩位（品味午宴港幣1,080）",
+  "lunchNoteYue": "嚐味點心午宴，最少兩位（品味午宴港幣1,080）",
+  "lunchType": "menu",
   "website": "https://www.peninsula.com/en/hong-kong/hotel-fine-dining/spring-moon-cantonese",
   "lat": 22.294943,
   "lng": 114.17182,
@@ -32,5 +32,48 @@
     "vegan"
   ],
   "chef": "Lam Yuk Ming",
-  "chefSource": "press"
+  "chefSource": "press",
+  "lunch": 720,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.peninsula.com/-/media/01-hong-kong-property/2026-spring-moon-menu-updates/20261007-spring-moon-dim-sum-with-set-lunch.pdf",
+  "menus": [
+    {
+      "name": "Spring Moon's Classic Menu",
+      "meal": "dinner",
+      "price": 2880,
+      "wine": 980,
+      "note": "Bird's nest, blue lobster, whole abalone and more; four-glass wine pairing HK$980, six glasses HK$1,380"
+    },
+    {
+      "name": "Chef's Tasting Menu",
+      "meal": "dinner",
+      "price": 1780,
+      "wine": 750,
+      "note": "Four-glass wine pairing HK$750, or a pairing of three Chinese teas HK$318"
+    },
+    {
+      "name": "Tasting Lunch Set Menu",
+      "meal": "lunch",
+      "price": 1080,
+      "note": "A glass of sparkling, white or red wine HK$168 extra"
+    },
+    {
+      "name": "Dim Sum Lunch Set Menu",
+      "meal": "lunch",
+      "price": 720,
+      "note": "Minimum two guests; a glass of wine HK$168 extra"
+    }
+  ],
+  "menusSource": "https://www.peninsula.com/en/hong-kong/hotel-fine-dining/spring-moon-cantonese",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2017,
+  "hotel": "The Peninsula Hong Kong",
+  "bookingOpens": "Online through SevenRooms, or by phone or email (springmoonphk@peninsula.com). A card hold of HK$330 a guest is taken when booking.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/springmoonpenhk",
+  "bookingPhone": "+852 2696 6760",
+  "cancellation": "Change or cancel at least 48 hours ahead. Later than that, or for a no-show, the HK$330-a-guest advance payment is kept. Tables are held for 15 minutes.",
+  "dressCode": "Smart casual. No sportswear or beachwear (vests, exercise shorts, leggings, flip-flops). Knee-length shorts, jeans, T-shirts and trainers are fine at lunch; at dinner men need closed shoes, long trousers and sleeved shirts.",
+  "children": "Children of all ages are welcome.",
+  "infoSource": "https://www.sevenrooms.com/reservations/springmoonpenhk",
+  "infoChecked": "2026-10-13"
 }

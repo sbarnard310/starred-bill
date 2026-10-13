@@ -10,16 +10,16 @@
   "reviews": 940,
   "dinner": 148,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €53)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 53 €)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/le-bec-au-cauchois-restaurant-pierre-caillet",
-  "lunch": 148,
+  "dinnerNote": "La Tentation menu, 8 courses (other menus from €75)",
+  "dinnerNoteFr": "Menu La Tentation, 8 services (autres menus dès 75 €)",
+  "sourceType": "site",
+  "source": "https://maisoncaillet.com/fr/carte-et-menus.html",
+  "lunch": 39,
   "lunchType": "menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/le-bec-au-cauchois-restaurant-pierre-caillet",
-  "lunchNote": "Same menu at lunch · Mon, Thu–Sun",
-  "lunchNoteFr": "Même menu le midi · lun., jeu.–dim.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://maisoncaillet.com/media/original/6418afbba3239/menu-du-jour-.pdf",
+  "lunchNote": "Formule, 2 courses from the menu du jour, weekday lunch (3 courses €53)",
+  "lunchNoteFr": "Formule, 2 plats du menu du jour, le midi en semaine (3 plats 53 €)",
   "website": "https://maisoncaillet.com/",
   "lat": 49.7446677,
   "lng": 0.4919745,
@@ -31,5 +31,51 @@
     "gluten-free"
   ],
   "chef": "Pierre Caillet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "La Tentation tasting menu",
+      "meal": "dinner",
+      "price": 148,
+      "courses": 8,
+      "note": "Lunch or dinner. Vegetable versions on request when booking; Normandy cheese trolley €18; wine by the glass to match, 2 glasses €28, 3 €41, 4 €55"
+    },
+    {
+      "name": "La Calville menu",
+      "meal": "dinner",
+      "price": 108,
+      "courses": 5,
+      "note": "Lunch or dinner"
+    },
+    {
+      "name": "La P'tite Calville menu",
+      "meal": "dinner",
+      "price": 75,
+      "courses": 3,
+      "note": "Starter, main and dessert from La Calville; lunch or dinner"
+    },
+    {
+      "name": "Menu du jour",
+      "meal": "lunch",
+      "price": 53,
+      "courses": 3,
+      "note": "Weekday lunch only, not on public holidays; changes weekly"
+    },
+    {
+      "name": "Formule",
+      "meal": "lunch",
+      "price": 39,
+      "courses": 2,
+      "note": "Starter and main or main and dessert from the menu du jour; weekday lunch only, not on public holidays"
+    }
+  ],
+  "menusSource": "https://maisoncaillet.com/fr/carte-et-menus.html",
+  "menusChecked": "2026-10-13",
+  "hotel": "the Maison Caillet, the chef's five-room hotel in Valmont",
+  "bookingOpens": "Online through Zenchef from the restaurant's website, or by phone. The restaurant is closed on Sunday evening and all day Tuesday and Wednesday.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=348456&lang=fr",
+  "bookingPhone": "+33 2 35 29 77 56",
+  "groups": "A table in the kitchen seats up to two people, watching Pierre Caillet's team at work, for €20 a head on top of the menu.",
+  "infoSource": "https://maisoncaillet.com/fr/restaurant.html",
+  "infoChecked": "2026-10-13"
 }

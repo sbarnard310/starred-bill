@@ -12,10 +12,10 @@
   "reviews": 381,
   "dinnerType": "menu",
   "dinner": 290,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Whispers of the Rainforest tasting menu",
   "sourceType": "site",
   "source": "https://thecloud.restaurant/",
-  "wine": 140,
+  "wine": 160,
   "website": "https://thecloud.restaurant/",
   "lat": 48.17737,
   "lng": 11.55652,
@@ -28,9 +28,30 @@
   ],
   "chef": "Jens Madsen",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü",
+  "dinnerNoteDe": "Degustationsmenü „Whispers of the Rainforest“",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Modern"
+  "cuisineDe": "Modern",
+  "menus": [
+    {
+      "name": "Whispers of the Rainforest tasting menu",
+      "meal": "dinner",
+      "price": 290,
+      "wine": 160,
+      "courses": 8,
+      "note": "Eight courses with side dishes; wine pairing or combined wine and drinks pairing €160, non-alcoholic pairing €140; vegetarian version on request"
+    }
+  ],
+  "menusSource": "https://thecloud.restaurant/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online on the restaurant's website: choose the date, time and party size. Phone lines are open Tuesday to Friday, 10am to 2pm.",
+  "bookingUrl": "https://thecloud.restaurant/",
+  "bookingPhone": "+49 89 3589 91815, Tuesday to Friday 10am to 2pm",
+  "cancellation": "A credit card guarantees the booking. Cancel or change numbers free of charge up to 48 hours ahead, in writing by email; later cancellations, fewer guests or no-shows may be charged the guarantee amount per person.",
+  "waitlist": "When a date is fully booked, you can join the waiting list on the website.",
+  "groups": "Small groups are welcome; for larger or exclusive bookings, email the team. Group offers may require a 75% deposit due seven working days before.",
+  "dressCode": "Smart casual: elegant but relaxed.",
+  "infoSource": "https://thecloud.restaurant/",
+  "infoChecked": "2026-10-13"
 }

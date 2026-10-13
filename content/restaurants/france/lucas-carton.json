@@ -10,18 +10,18 @@
   "cuisineZh": "現代菜",
   "rating": 4.6,
   "reviews": 1063,
-  "dinner": 200,
-  "dinnerType": "menu",
-  "dinnerNote": "Menu in 7 courses (4 courses €120)",
-  "dinnerNoteFr": "Menu en 7 services (4 services 120 €)",
-  "sourceType": "press",
-  "source": "https://www.lesrestos.com/restaurant/fiche/paris/lucas-carton",
-  "lunch": 120,
-  "lunchType": "menu",
-  "lunchNote": "Menu in 4 courses",
-  "lunchNoteFr": "Menu en 4 services",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.lesrestos.com/restaurant/fiche/paris/lucas-carton",
+  "dinner": 45,
+  "dinnerType": "main",
+  "dinnerNote": "À la carte; mains €30–€85",
+  "dinnerNoteFr": "À la carte ; plats de 30 à 85 €",
+  "sourceType": "site",
+  "source": "https://cdn.prod.website-files.com/6a990ad2279b8e2b3ad1e7a3/6ac60090eebb673782fac874_Carte%20des%20mets%20-%20Lucas%20Carton%20-%2003-10-2026%20-%20FR.pdf",
+  "lunch": 45,
+  "lunchType": "main",
+  "lunchNote": "Same à la carte at lunch · Mon–Fri",
+  "lunchNoteFr": "Même carte le midi · lun.–ven.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://cdn.prod.website-files.com/6a990ad2279b8e2b3ad1e7a3/6ac60090eebb673782fac874_Carte%20des%20mets%20-%20Lucas%20Carton%20-%2003-10-2026%20-%20FR.pdf",
   "website": "https://lucascarton.com/",
   "lat": 48.8697476,
   "lng": 2.3232442,
@@ -32,5 +32,22 @@
     "vegan"
   ],
   "chef": "Cyril Lignac",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menusSource": "https://cdn.prod.website-files.com/6a990ad2279b8e2b3ad1e7a3/6ac60090eebb673782fac874_Carte%20des%20mets%20-%20Lucas%20Carton%20-%2003-10-2026%20-%20FR.pdf",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Lapérouse",
+      "note": "Sister restaurant in the same group, on the Left Bank at 51 quai des Grands Augustins"
+    },
+    {
+      "name": "Prunier",
+      "note": "Sister restaurant in the same group, at 16 avenue Victor Hugo, known for its caviar"
+    }
+  ],
+  "bookingOpens": "Online through SevenRooms, or by phone. Lunch is served Monday to Friday (tables from 12pm to 1.45pm) and dinner every evening (tables from 7pm to 11pm).",
+  "bookingUrl": "https://eu.sevenrooms.com/explore/lucascarton/reservations/create/search/",
+  "bookingPhone": "+33 1 87 75 25 25",
+  "infoSource": "https://lucascarton.com/",
+  "infoChecked": "2026-10-13"
 }

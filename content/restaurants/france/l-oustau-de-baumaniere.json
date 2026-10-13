@@ -33,5 +33,47 @@
     "gluten-free"
   ],
   "chef": "Glenn Viel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "La Ballade menu",
+      "meal": "dinner",
+      "price": 360,
+      "wine": 200,
+      "note": "Lunch or dinner, last orders 1pm at lunch and 9pm at dinner. Tour de France pairing of 8 half glasses €200, alcohol-free version €120"
+    },
+    {
+      "name": "Flânerie menu",
+      "meal": "dinner",
+      "price": 285,
+      "wine": 120,
+      "note": "Tentation pairing of 5 half glasses €120, alcohol-free version €85"
+    },
+    {
+      "name": "1987 Menu Légumes",
+      "meal": "dinner",
+      "price": 215,
+      "wine": 135,
+      "note": "Meat- and fish-free menu from the estate's organic garden. Bucolique pairing of 6 half glasses €135, alcohol-free version €95"
+    }
+  ],
+  "menusSource": "https://www.baumaniere.com/gastronomie/loustau-de-baumaniere/la-carte-et-les-menus/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "La Cabro d'Or",
+      "price": 88,
+      "note": "The estate's other restaurant, with chef Michel Hulin's Provençal cooking: lunch menu €88, Gourmandise menu €145, garden menu €105",
+      "url": "https://www.baumaniere.com/gastronomie/la-cabro-dor/la-carte-et-les-menus/"
+    }
+  ],
+  "starsSince": 2020,
+  "hotel": "Baumanière, a Relais & Châteaux hotel",
+  "bookingOpens": "Online through the restaurant's Guestonline booking page, or by phone. To book with a gift box, or as a hotel guest, call rather than booking online.",
+  "bookingUrl": "https://ib.guestonline.fr/instabook/bookings/E1whzwH",
+  "bookingPhone": "+33 4 90 54 33 07",
+  "dressCode": "Smart dress is required (tenue de ville).",
+  "children": "There is a children's menu: starter, main and dessert €70, or two courses €50.",
+  "infoSource": "https://www.baumaniere.com/gastronomie/loustau-de-baumaniere/",
+  "infoChecked": "2026-10-13"
 }

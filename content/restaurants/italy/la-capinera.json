@@ -6,14 +6,14 @@
   "cuisine": "Sicilian",
   "rating": 4.4,
   "reviews": 605,
-  "dinnerType": "spend",
-  "dinner": 100,
-  "dinnerNote": "Typical spend without drinks (Gambero Rosso average)",
-  "dinnerNoteIt": "Spesa media bevande escluse (media Gambero Rosso)",
-  "sourceType": "press",
-  "source": "https://www.gamberorosso.it/luoghi/locali/ristorante/la-capinera-2/",
-  "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteIt": "Aperto a pranzo · sab–dom",
+  "dinnerType": "menu",
+  "dinner": 170,
+  "dinnerNote": "4 Elementi tasting menu, 8 courses (6-course menus €130)",
+  "dinnerNoteIt": "Menu degustazione 4 Elementi, 8 portate (menu di 6 portate €130)",
+  "sourceType": "site",
+  "source": "https://www.pietrodagostino.it/wp-content/uploads/2026/03/Menu-capinera-2026.pdf",
+  "lunchNote": "6-course tasting menus (sea, meat or vegetable; all menus served at lunch) · Sat–Sun",
+  "lunchNoteIt": "Menu degustazione di 6 portate (mare, terra o vegetale; tutti i menu serviti a pranzo) · sab–dom",
   "website": "https://www.pietrodagostino.it/",
   "lat": 37.863136,
   "lng": 15.295927,
@@ -25,5 +25,58 @@
     "gluten-free"
   ],
   "chef": "Pietro D'Agostino",
-  "chefSource": "site"
+  "chefSource": "site",
+  "wine": 90,
+  "lunch": 130,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.pietrodagostino.it/wp-content/uploads/2026/03/Menu-capinera-2026.pdf",
+  "menus": [
+    {
+      "name": "4 Elementi tasting menu",
+      "meal": "dinner",
+      "price": 170,
+      "wine": 90,
+      "courses": 8,
+      "note": "Sea and meat dishes, lunch or dinner, for the whole table; wine pairing of six glasses €90 (three to five glasses €45–75)"
+    },
+    {
+      "name": "Acqua tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "courses": 6,
+      "note": "Seafood; lunch or dinner; wine pairing of three to six glasses €45–90"
+    },
+    {
+      "name": "Fuoco tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "courses": 6,
+      "note": "Meat; lunch or dinner; wine pairing of three to six glasses €45–90"
+    },
+    {
+      "name": "Terra tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "courses": 6,
+      "note": "Vegetarian; lunch or dinner; wine pairing of three to six glasses €45–90"
+    }
+  ],
+  "menusSource": "https://www.pietrodagostino.it/wp-content/uploads/2026/03/Menu-capinera-2026.pdf",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Kistè",
+      "note": "Pietro D'Agostino's more casual restaurant in Taormina",
+      "url": "https://www.kiste.it/"
+    }
+  ],
+  "starsSince": 2008,
+  "bookingOpens": "Online through OpenTable, by phone or by email (info@pietrodagostino.it).",
+  "bookingUrl": "https://www.opentable.it/booking/restref/availability?lang=it-IT&restRef=464310&otSource=Restaurant%20website",
+  "bookingPhone": "+39 338 158 8013",
+  "groups": "The chef also caters banquets and private events.",
+  "groupsUrl": "https://www.pietrodagostino.it/banqueting/",
+  "infoSource": "https://www.pietrodagostino.it/la-capinera/",
+  "infoChecked": "2026-10-13"
 }

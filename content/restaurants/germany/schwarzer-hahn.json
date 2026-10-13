@@ -8,10 +8,10 @@
   "rating": 4.6,
   "reviews": 108,
   "dinnerType": "menu",
-  "dinner": 85,
-  "dinnerNote": "Tasting menu",
+  "dinner": 198,
+  "dinnerNote": "Seven-course menu (shorter menus from €155)",
   "sourceType": "site",
-  "source": "https://www.deidesheimerhof.de/storage/app/media/0_2025_Internetseiten_neu/_Downloads/DDH_Preisliste_Menues_2025.pdf",
+  "source": "https://www.deidesheimerhof.de/storage/app/media/0_2025_Internetseiten_neu/_Downloads/Speisekarten/Speisekarte%20Restaurant%20Schwarzer%20Hahn.pdf",
   "website": "https://www.deidesheimerhof.de/de/home",
   "lat": 49.4081899,
   "lng": 8.1873598,
@@ -20,11 +20,61 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteDe": "Degustationsmenü",
+  "dinnerNoteDe": "7-Gänge-Menü (kürzere Menüs ab 155 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "cuisineDe": "Französisch-modern",
   "chef": "Felix Jarzina",
-  "chefSource": "press"
+  "chefSource": "press",
+  "wine": 112,
+  "menus": [
+    {
+      "name": "seven-course menu",
+      "meal": "dinner",
+      "price": 198,
+      "wine": 112,
+      "courses": 7,
+      "note": "With a choice of starter and main course"
+    },
+    {
+      "name": "six-course menu",
+      "meal": "dinner",
+      "price": 185,
+      "wine": 95,
+      "courses": 6,
+      "note": "The menu without the cheese course"
+    },
+    {
+      "name": "five-course menu",
+      "meal": "dinner",
+      "price": 169,
+      "wine": 85,
+      "courses": 5,
+      "note": "Without cheese and sweetbreads"
+    },
+    {
+      "name": "four-course menu",
+      "meal": "dinner",
+      "price": 155,
+      "wine": 68,
+      "courses": 4,
+      "note": "Without cheese, sweetbreads and the John Dory course"
+    }
+  ],
+  "menusSource": "https://www.deidesheimerhof.de/storage/app/media/0_2025_Internetseiten_neu/_Downloads/Speisekarten/Speisekarte%20Restaurant%20Schwarzer%20Hahn.pdf",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Sankt Urban",
+      "note": "The Deidesheimer Hof's regional Palatinate restaurant",
+      "url": "https://www.deidesheimerhof.de/de/restaurants/sankt-urban"
+    }
+  ],
+  "hotel": "the Deidesheimer Hof",
+  "bookingOpens": "Online through the Deidesheimer Hof's table booking page, or by phone. Open Thursday to Saturday from 6pm; closed for a winter break in January and a summer break from early July to the end of August.",
+  "bookingUrl": "https://www.deidesheimerhof.de/de/tische-reservieren",
+  "bookingPhone": "+49 6326 96870",
+  "infoSource": "https://www.deidesheimerhof.de/de/restaurants/schwarzer-hahn",
+  "infoChecked": "2026-10-13"
 }

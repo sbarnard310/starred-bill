@@ -12,25 +12,61 @@
   "changeDate": "2024-11",
   "rating": 4.8,
   "reviews": 772,
-  "dinner": 90,
+  "dinner": 100,
   "dinnerType": "menu",
-  "dinnerNote": "Fish tasting menu (5-course menu €75)",
-  "dinnerNoteIt": "Menu degustazione di pesce (menu di 5 portate €75)",
+  "dinnerNote": "Fish menu with raw fish and oyster (fish menu €90, 5-course tasting menu €75)",
+  "dinnerNoteIt": "Menu solo pesce con il crudo e l'ostrica (menu solo pesce €90, menu degustazione di 5 portate €75)",
   "wine": 40,
-  "sourceType": "press",
-  "source": "https://guide.michelin.com/it/it/notizia/dining-out/i-ristoranti-stellati-meno-cari-d-italia-guida-michelin-2026",
-  "lunch": 90,
+  "sourceType": "site",
+  "source": "https://www.cucinacereda.com/cucina-e-menu/",
+  "lunch": 75,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sun",
-  "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
+  "lunchNote": "5-course tasting menu (fish menus €90 and €100) · Wed–Sun",
+  "lunchNoteIt": "Menu degustazione di 5 portate (menu di pesce €90 e €100) · mer–dom",
   "lunchWine": 40,
-  "lunchSourceType": "press",
-  "lunchSource": "https://guide.michelin.com/it/it/notizia/dining-out/i-ristoranti-stellati-meno-cari-d-italia-guida-michelin-2026",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.cucinacereda.com/cucina-e-menu/",
   "website": "https://www.cucinacereda.com/",
   "lat": 45.698355,
   "lng": 9.59091,
   "placeId": "ChIJEas2yqlTgUcRjSlBFct2WNk",
   "michelinId": "523282",
   "chef": "Giuseppe Cereda",
-  "chefSource": "site"
+  "chefSource": "site",
+  "menus": [
+    {
+      "name": "fish menu with raw fish and oyster",
+      "meal": "dinner",
+      "price": 100,
+      "note": "The fish menu with raw fish and crustaceans and an oyster added; lunch or dinner, for the whole table"
+    },
+    {
+      "name": "fish menu",
+      "meal": "dinner",
+      "price": 90,
+      "note": "Lunch or dinner, for the whole table"
+    },
+    {
+      "name": "tasting menu",
+      "meal": "dinner",
+      "price": 75,
+      "wine": 40,
+      "courses": 5,
+      "note": "Lunch or dinner, for the whole table; three glasses of wine €40, or three local wines with Moscato passito di Scanzo €48"
+    },
+    {
+      "name": "Quaranta per Trenta tasting menu",
+      "meal": "dinner",
+      "price": 40,
+      "courses": 5,
+      "note": "For guests under 30 only; Wednesday and Sunday evenings from 7:30pm, booked ahead by email"
+    }
+  ],
+  "menusSource": "https://www.cucinacereda.com/cucina-e-menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "By phone or email (info@cucinacereda.com). The under-30 menu must be booked ahead by email.",
+  "bookingPhone": "+39 035 437 1900",
+  "infoSource": "https://www.cucinacereda.com/contatti/",
+  "infoChecked": "2026-10-13"
 }

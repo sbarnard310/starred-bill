@@ -10,13 +10,13 @@
   "reviews": 577,
   "dinner": 179,
   "dinnerType": "menu",
-  "dinnerNote": "Grand Voyage menu, 14 courses (other menus from €55)",
+  "dinnerNote": "Voyage surprise menu, 14 courses (other menus from €135)",
   "wine": 71,
-  "dinnerNoteFr": "Menu Grand Voyage, 14 services (autres menus dès 55 €)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/maison-decoret",
-  "lunchNote": "Open for lunch · Thu–Sun",
-  "lunchNoteFr": "Ouvert le midi · jeu.–dim.",
+  "dinnerNoteFr": "Menu surprise Voyage, 14 services (autres menus dès 135 €)",
+  "sourceType": "site",
+  "source": "https://www.maisondecoret.com/fr/cartes-et-menus.html",
+  "lunchNote": "Sources menu, amuse-bouche and two courses, Thu–Fri lunch (€75 with water and a glass of wine)",
+  "lunchNoteFr": "Menu Sources, amuse-bouche et deux plats, jeu.–ven. midi (75 € avec eau et un verre de vin)",
   "website": "https://www.maisondecoret.com",
   "lat": 46.1246273,
   "lng": 3.4192286,
@@ -29,5 +29,47 @@
     "gluten-free"
   ],
   "chef": "Jacques Decoret",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "lunch": 55,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.maisondecoret.com/fr/cartes-et-menus.html",
+  "menus": [
+    {
+      "name": "Voyage surprise tasting menu",
+      "meal": "dinner",
+      "price": 179,
+      "wine": 71,
+      "courses": 14,
+      "note": "Lunch or dinner; served to the whole table. Pairing of five glasses of wine with mineral waters; cheese trolley €15 extra"
+    },
+    {
+      "name": "Balade menu, four courses",
+      "meal": "dinner",
+      "price": 135,
+      "wine": 60,
+      "note": "Lunch or dinner. Fish and meat; pairing of four glasses of wine with mineral water; cheese €10–€15 extra"
+    },
+    {
+      "name": "Balade menu, three courses",
+      "meal": "lunch",
+      "price": 109,
+      "note": "Lunch only; fish or meat. €155 with three glasses of wine and mineral water"
+    },
+    {
+      "name": "Sources lunch menu",
+      "meal": "lunch",
+      "price": 55,
+      "note": "Thursday and Friday lunch, not on public holidays; €75 with mineral water and a glass of wine"
+    }
+  ],
+  "menusSource": "https://www.maisondecoret.com/fr/cartes-et-menus.html",
+  "menusChecked": "2026-10-13",
+  "hotel": "the Maison Decoret, the chef's own four-star hotel in Vichy",
+  "bookingOpens": "Online through Zenchef from the restaurant's website, or by phone. The restaurant is open from Thursday to Monday.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=363867",
+  "bookingPhone": "+33 4 70 97 65 06",
+  "children": "Petit Voyage menu for children under 10: main and dessert €25, or starter, main and dessert €40.",
+  "infoSource": "https://www.maisondecoret.com/fr/restaurant.html",
+  "infoChecked": "2026-10-13"
 }

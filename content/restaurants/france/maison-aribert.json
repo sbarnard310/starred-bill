@@ -10,16 +10,16 @@
   "reviews": 1003,
   "dinner": 250,
   "dinnerType": "menu",
-  "dinnerNote": "Longest tasting menu (other menus from €210)",
-  "dinnerNoteFr": "Menu dégustation le plus long (autres menus dès 210 €)",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/maison-aribert",
-  "lunch": 250,
+  "dinnerNote": "Hauts plateaux menu: vegetables, fish and meat (Sentiers alpins €210)",
+  "dinnerNoteFr": "Menu Hauts plateaux : légume, poisson et viande (Sentiers alpins 210 €)",
+  "sourceType": "site",
+  "source": "https://maisonaribert.com/la-table/menus-et-carte-gastronomique/",
+  "lunch": 170,
   "lunchType": "menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/maison-aribert",
-  "lunchNote": "Same menu at lunch · Fri–Sun",
-  "lunchNoteFr": "Même menu le midi · ven.–dim.",
+  "lunchSourceType": "site",
+  "lunchSource": "https://maisonaribert.com/la-table/menus-et-carte-gastronomique/",
+  "lunchNote": "Chemins de Traverses menu, Friday lunch only (Sat–Sun lunch: dinner menus)",
+  "lunchNoteFr": "Menu Chemins de Traverses, vendredi midi uniquement (sam.–dim. midi : menus du soir)",
   "website": "https://www.maisonaribert.com",
   "lat": 45.1417394,
   "lng": 5.8315479,
@@ -30,5 +30,41 @@
     "vegan"
   ],
   "chef": "Christophe Aribert",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Hauts plateaux tasting menu",
+      "meal": "dinner",
+      "price": 250,
+      "note": "Vegetables, fish and meat; lunch or dinner. One menu for the whole table; drinks extra"
+    },
+    {
+      "name": "Sentiers alpins tasting menu",
+      "meal": "dinner",
+      "price": 210,
+      "note": "Vegetables and fish; lunch or dinner. One menu for the whole table; drinks extra"
+    },
+    {
+      "name": "Chemins de Traverses lunch menu",
+      "meal": "lunch",
+      "price": 170,
+      "note": "Friday lunch only"
+    }
+  ],
+  "menusSource": "https://maisonaribert.com/la-table/menus-et-carte-gastronomique/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Café A",
+      "price": 49,
+      "note": "The chef's village café on the ground floor: starter, main and dessert €49 (suggestion menu €64), open every day; Sunday brunch €49",
+      "url": "https://maisonaribert.com/le-cafe/menus-et-carte-du-cafe-a/"
+    }
+  ],
+  "hotel": "the Maison Aribert, the chef's own small hotel in the park at Uriage-les-Bains",
+  "bookingOpens": "Online through TheFork from the restaurant's website, by phone or by email (reservation@maisonaribert.com). The restaurant serves dinner Wednesday to Saturday and lunch Friday to Sunday.",
+  "bookingUrl": "https://maisonaribert.com/reserver-maison-aribert/",
+  "bookingPhone": "+33 4 58 17 48 30",
+  "infoSource": "https://maisonaribert.com/les-horaires-et-le-calendrier-douverture/",
+  "infoChecked": "2026-10-13"
 }

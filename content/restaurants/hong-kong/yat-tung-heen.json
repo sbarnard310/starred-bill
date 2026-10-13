@@ -18,10 +18,10 @@
   "wine": 438,
   "sourceType": "site",
   "source": "https://www.yattungheen.com/menus",
-  "lunchNote": "Open for lunch",
-  "lunchNoteZh": "有供應午餐",
-  "lunchNoteYue": "有午市",
-  "lunchType": "spend",
+  "lunchNote": "Dim sum set lunch, minimum two guests (set B HK$468)",
+  "lunchNoteZh": "午市點心套餐，兩位起（套餐貳港幣468）",
+  "lunchNoteYue": "午市點心套餐，兩位起（套餐貳港幣468）",
+  "lunchType": "menu",
   "website": "https://www.yattungheen.com/",
   "lat": 22.3080802,
   "lng": 114.1717998,
@@ -32,5 +32,55 @@
     "vegetarian"
   ],
   "chef": "Tam Tung",
-  "chefSource": "site"
+  "chefSource": "site",
+  "lunch": 398,
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.yattungheen.com/s/YTH-Dim-Sum-Set-Menu-z75e.pdf",
+  "menus": [
+    {
+      "name": "Michelin Degustation Menu",
+      "meal": "dinner",
+      "price": 968,
+      "wine": 438,
+      "courses": 8,
+      "note": "Minimum two guests; three-glass wine pairing HK$438 (HK$372 for Brilliant by Langham members)"
+    },
+    {
+      "name": "Seasonal Crab Set",
+      "meal": "dinner",
+      "price": 1180,
+      "note": "Crab season only; minimum two guests; HK$980 for Brilliant by Langham members"
+    },
+    {
+      "name": "Healthy Vegetarian Set Menu",
+      "meal": "dinner",
+      "price": 820,
+      "note": "Meat-free menu using OmniPork"
+    },
+    {
+      "name": "Dim Sum Set Lunch Menu A",
+      "meal": "lunch",
+      "price": 398,
+      "note": "Lunch only, minimum two guests; includes tea and a soft drink, juice or beer"
+    },
+    {
+      "name": "Dim Sum Set Lunch Menu B",
+      "meal": "lunch",
+      "price": 468,
+      "note": "Lunch only, minimum two guests; includes tea and a soft drink, juice or beer"
+    }
+  ],
+  "menusSource": "https://www.yattungheen.com/menus",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2017,
+  "hotel": "Eaton HK",
+  "bookingOpens": "Online through SevenRooms, or by phone or WhatsApp on +852 2710 1093. Special requests (a high chair, a round table, dishes to pre-order) can be added to the booking.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/ehkyattungheen/website",
+  "bookingPhone": "+852 2710 1093",
+  "cancellation": "Cancel at least 24 hours ahead; a late cancellation or no-show may be charged to the card given when booking. Tables are held for 10 minutes.",
+  "groups": "For 13 or more, phone the restaurant.",
+  "duration": "Lunch tables are booked for 90 minutes.",
+  "byob": "Corkage HK$380 a bottle of wine, champagne or sake, HK$500 for spirits; cake-cutting HK$150 a cake.",
+  "infoSource": "https://www.sevenrooms.com/reservations/ehkyattungheen/website",
+  "infoChecked": "2026-10-13"
 }

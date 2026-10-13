@@ -28,5 +28,35 @@
   "placeId": "ChIJ1Za7ImT_AzQRM1aO9s0k5ZM",
   "michelinId": "1184888",
   "chef": "Ryota Kanesawa",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Ryota Premium Tasting menu",
+      "meal": "dinner",
+      "price": 1580,
+      "note": "Dinner only, Monday to Saturday; a fixed seasonal menu chosen by the chef, HK$1,580 to HK$1,780 depending on the season's produce. Sake and wine pairing offered, price not published"
+    },
+    {
+      "name": "Ryota Kappou Lunch",
+      "meal": "lunch",
+      "price": 680,
+      "note": "Lunch only, Monday to Saturday; a choice of four dishes, from HK$680"
+    },
+    {
+      "name": "Miyazaki Wagyu Sukiyaki lunch",
+      "meal": "lunch",
+      "price": 880,
+      "note": "Lunch only, from HK$880; sukiyaki with seasonal maki, rice or udon and dessert"
+    }
+  ],
+  "menusSource": "https://www.ryota.hk/dinner",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "By request through the online form on Bistrochat, by WhatsApp (+852 6768 1128), phone or email (info@ryota.hk). Mention any allergies or dislikes when booking, as the menu is fixed by the chef.",
+  "bookingUrl": "https://book.bistrochat.com/ryota",
+  "bookingPhone": "+852 2628 1899",
+  "cancellation": "Cancelling two days before costs 40% of the menu price for each guest booked, the day before 60%, and on the day 100%.",
+  "groups": "A private room seats up to 12, for dinners, wine tastings and launches; the restaurant also has a 12-seat counter, a 6-seat oval corner and a 4-seat lounge table.",
+  "groupsUrl": "https://www.ryota.hk/private-room",
+  "infoSource": "https://www.ryota.hk/",
+  "infoChecked": "2026-10-13"
 }

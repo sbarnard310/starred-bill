@@ -8,18 +8,18 @@
   "rating": 4.9,
   "reviews": 581,
   "dinnerType": "menu",
-  "dinner": 220,
-  "dinnerNote": "Tasting menu (other menus from €90)",
+  "dinner": 145,
+  "dinnerNote": "Estro tasting menu, 7 courses (4-course menus from €70)",
   "sourceType": "site",
-  "source": "https://casasgarra.it/wp-content/uploads/2026/06/casa_sgarra_carta_vini_2026.pdf",
-  "wine": 45,
-  "lunch": 220,
+  "source": "https://casasgarra.it/wp-content/uploads/2026/09/menu_autunno_2026.pdf",
+  "wine": 75,
+  "lunch": 70,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Mon",
-  "lunchNoteIt": "Stesso menu a pranzo · mer–lun",
+  "lunchNote": "Puglia d'Autore menu, 4 courses (every menu is served at lunch and dinner) · Wed–Mon",
+  "lunchNoteIt": "Menu Puglia d'Autore, 4 portate (tutti i menu sono serviti a pranzo e a cena) · mer–lun",
   "lunchWine": 45,
   "lunchSourceType": "site",
-  "lunchSource": "https://casasgarra.it/wp-content/uploads/2026/06/casa_sgarra_carta_vini_2026.pdf",
+  "lunchSource": "https://casasgarra.it/wp-content/uploads/2026/09/menu_autunno_2026.pdf",
   "website": "https://www.casasgarra.it",
   "lat": 41.270434,
   "lng": 16.4341752,
@@ -31,5 +31,54 @@
     "gluten-free"
   ],
   "chef": "Felice Sgarra",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Estro, Felice pensaci tu tasting menu",
+      "meal": "dinner",
+      "price": 145,
+      "wine": 75,
+      "courses": 7,
+      "note": "Lunch or dinner, the same for the whole table; pairing of five glasses €75"
+    },
+    {
+      "name": "Casa Sgarra menu",
+      "meal": "dinner",
+      "price": 100,
+      "wine": 60,
+      "courses": 4,
+      "note": "Lunch or dinner; pairing of four glasses €60"
+    },
+    {
+      "name": "Orto vegetable menu",
+      "meal": "dinner",
+      "price": 90,
+      "wine": 60,
+      "courses": 4,
+      "note": "Vegetarian; lunch or dinner; pairing of four glasses €60"
+    },
+    {
+      "name": "Puglia d'Autore menu",
+      "meal": "dinner",
+      "price": 70,
+      "wine": 45,
+      "courses": 4,
+      "note": "Apulian dishes; lunch or dinner; pairing of three glasses €45"
+    }
+  ],
+  "menusSource": "https://casasgarra.it/wp-content/uploads/2026/09/menu_autunno_2026.pdf",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Starpops, l'Osteria di Casa Sgarra",
+      "note": "The Sgarra brothers' osteria and café next door (Lungomare Cristoforo Colombo 120), serving traditional Apulian dishes at lunch and dinner",
+      "url": "https://starpops.it"
+    }
+  ],
+  "starsSince": 2020,
+  "bookingOpens": "By a booking request form on the restaurant's website, or by phone, WhatsApp or email (info@casasgarra.it).",
+  "bookingUrl": "https://www.casasgarra.it/",
+  "bookingPhone": "+39 0883 895968",
+  "infoSource": "https://www.casasgarra.it/",
+  "infoChecked": "2026-10-13"
 }

@@ -11,15 +11,15 @@
   "rating": 4.6,
   "reviews": 251,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase",
-  "dinnerNoteFr": "Omakase",
-  "sourceType": "none",
+  "dinnerNote": "Omakase du Chef Shunei, 14 nigiri (12-nigiri menu €200)",
+  "dinnerNoteFr": "Omakase du Chef Shunei, 14 nigiri (menu 12 nigiri 200 €)",
+  "sourceType": "site",
   "lunch": 150,
   "lunchType": "menu",
-  "lunchNote": "Saturday lunch, 12 nigiri",
-  "lunchNoteFr": "Déjeuner du samedi, 12 nigiri",
+  "lunchNote": "Menu Déjeuner des Chefs, 12 nigiri, Saturday lunch only",
+  "lunchNoteFr": "Menu Déjeuner des Chefs, 12 nigiri, le samedi midi uniquement",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.sushishunei.com/",
+  "lunchSource": "https://cdn.prod.website-files.com/5f66415376b89450919b99a3/6853bce728a5c205283ebb19_250327_SHUNEI_Menu_Principal.pdf",
   "website": "https://www.sushishunei.com/",
   "lat": 48.8851108,
   "lng": 2.3357826,
@@ -29,6 +29,38 @@
     "halal",
     "kosher"
   ],
-  "chef": "Shunei Kimura",
-  "chefSource": "site"
+  "chef": "Chizuko Kimura and Takeshi Morooka",
+  "chefSource": "site",
+  "dinner": 250,
+  "source": "https://cdn.prod.website-files.com/5f66415376b89450919b99a3/6853bce728a5c205283ebb19_250327_SHUNEI_Menu_Principal.pdf",
+  "menus": [
+    {
+      "name": "Omakase du Chef Shunei",
+      "meal": "dinner",
+      "price": 250,
+      "note": "Amuse-bouche, sashimi, signature tsumami, grilled fish, 14 nigiri, temaki, miso soup and sorbet. Caviar on two nigiri €75 extra"
+    },
+    {
+      "name": "Menu Sashimi & Nigiri des Chefs",
+      "meal": "dinner",
+      "price": 200,
+      "note": "Amuse-bouche, sashimi, 12 nigiri, temaki, miso soup and sorbet. Caviar on two nigiri €75 extra"
+    },
+    {
+      "name": "Menu Déjeuner des Chefs",
+      "meal": "lunch",
+      "price": 150,
+      "note": "Saturday lunch only; amuse-bouche, 12 nigiri, temaki and miso soup"
+    }
+  ],
+  "menusSource": "https://cdn.prod.website-files.com/5f66415376b89450919b99a3/6853bce728a5c205283ebb19_250327_SHUNEI_Menu_Principal.pdf",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Bookings only, preferably online through Zenchef from the restaurant's website. Dinner Tuesday to Saturday in two sittings, at 7pm and 9.30pm, plus lunch on Saturday.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=354522",
+  "bookingPhone": "+33 6 44 66 11 31, also on WhatsApp",
+  "cancellation": "A card guarantee is taken for every booking. It can be changed or cancelled up to 48 hours ahead; after that the charge is €200 a person.",
+  "duration": "A little under two hours. Guests at the first sitting are asked to leave by 9.15pm, and anyone more than 15 minutes late can't be served the whole menu.",
+  "infoSource": "https://www.sushishunei.com/",
+  "infoChecked": "2026-10-13"
 }

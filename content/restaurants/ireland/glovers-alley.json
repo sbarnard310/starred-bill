@@ -12,9 +12,9 @@
   "dinnerNote": "Discovery menu (Classic menu €155)",
   "sourceType": "site",
   "source": "https://gloversalley.com/",
-  "lunch": 190,
+  "lunch": 85,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sat",
+  "lunchNote": "Lunch menu, Thu–Sat (surprise tasting menu €125)",
   "lunchSourceType": "site",
   "lunchSource": "https://gloversalley.com/",
   "website": "https://gloversalley.com/",
@@ -26,6 +26,49 @@
     "vegetarian",
     "vegan"
   ],
-  "chef": "Andy McFadden",
-  "chefSource": "press"
+  "chef": "Adam Nevin",
+  "chefSource": "site",
+  "wine": 95,
+  "menus": [
+    {
+      "name": "Discovery menu",
+      "meal": "dinner",
+      "price": 190,
+      "wine": 95,
+      "note": "Dinner, Tuesday to Saturday; house wine pairing €95, cellar pairing €210; a vegetarian version is offered"
+    },
+    {
+      "name": "Classic menu",
+      "meal": "dinner",
+      "price": 155,
+      "wine": 75,
+      "note": "Dinner, Tuesday to Saturday; house wine pairing €75, cellar pairing €185; a vegetarian version is offered"
+    },
+    {
+      "name": "Surprise tasting menu",
+      "meal": "lunch",
+      "price": 125,
+      "wine": 75,
+      "note": "Lunch, Thursday to Saturday, last order 1.30pm; house wine pairing €75, cellar pairing €185"
+    },
+    {
+      "name": "Lunch menu",
+      "meal": "lunch",
+      "price": 85,
+      "note": "Lunch, Thursday to Saturday, three courses with a choice at each, last order 2.15pm"
+    }
+  ],
+  "menusSource": "https://gloversalley.com/",
+  "menusChecked": "2026-10-13",
+  "hotel": "The Fitzwilliam Hotel",
+  "bookingOpens": "Online through SevenRooms, or by phone or email (info@gloversalley.com). The reservations team follows up by email or phone to confirm the booking and any dietary needs.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/gloversalley",
+  "bookingPhone": "+353 1 244 0733",
+  "cancellation": "Cancel at least 48 hours ahead; a late cancellation or no-show is charged €100 to the card given when booking.",
+  "groups": "For groups, email info@gloversalley.com.",
+  "dressCode": "Smart casual.",
+  "children": "Guests aged 12 and over only; there is no children's menu.",
+  "servicePct": 10,
+  "infoSource": "https://www.sevenrooms.com/reservations/gloversalley",
+  "infoChecked": "2026-10-13"
 }

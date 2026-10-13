@@ -9,14 +9,14 @@
   "reviews": 510,
   "dinnerType": "menu",
   "dinner": 160,
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteIt": "Menu degustazione",
+  "dinnerNote": "New Releases tasting menu, 10 courses (Hit Parade menu €125)",
+  "dinnerNoteIt": "Menu degustazione New Releases, 10 portate (menu Hit Parade €125)",
   "sourceType": "site",
   "source": "https://www.dallagioconda.it/menu/",
-  "lunch": 160,
+  "lunch": 125,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Sat–Sun",
-  "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
+  "lunchNote": "Hit Parade tasting menu, 7 courses (all menus served at lunch) · Sat–Sun",
+  "lunchNoteIt": "Menu degustazione Hit Parade, 7 portate (tutti i menu serviti a pranzo) · sab–dom",
   "lunchSourceType": "site",
   "lunchSource": "https://www.dallagioconda.it/menu/",
   "website": "https://www.dallagioconda.it/",
@@ -30,5 +30,43 @@
     "gluten-free"
   ],
   "chef": "Davide Di Fabio",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "New Releases tasting menu",
+      "meal": "dinner",
+      "price": 160,
+      "courses": 10,
+      "note": "The newest dishes; lunch (Saturday and Sunday) or dinner; extra courses €15 each"
+    },
+    {
+      "name": "New Vegetariano menu",
+      "meal": "dinner",
+      "price": 160,
+      "courses": 10,
+      "note": "Vegetarian; lunch (Saturday and Sunday) or dinner"
+    },
+    {
+      "name": "Hit Parade tasting menu",
+      "meal": "dinner",
+      "price": 125,
+      "courses": 7,
+      "note": "The restaurant's best-known dishes, suggested for a first visit; lunch (Saturday and Sunday) or dinner"
+    },
+    {
+      "name": "Hit Vegetariano menu",
+      "meal": "dinner",
+      "price": 125,
+      "courses": 7,
+      "note": "Vegetarian; lunch (Saturday and Sunday) or dinner"
+    }
+  ],
+  "menusSource": "https://www.dallagioconda.it/menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2022,
+  "bookingOpens": "Online through the restaurant's Superb booking page, by phone or by email (ristorante@dallagioconda.it). The phone line is answered 9am to 12pm and 2:30pm to 5:30pm Monday to Friday, and from 5pm at weekends.",
+  "bookingUrl": "https://dallagioconda.superbexperience.com/",
+  "bookingPhone": "+39 0541 962295",
+  "infoSource": "https://www.dallagioconda.it/contattaci/",
+  "infoChecked": "2026-10-13"
 }

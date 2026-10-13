@@ -11,8 +11,8 @@
   "rating": 4.6,
   "reviews": 621,
   "dinnerType": "menu",
-  "dinner": 148,
-  "dinnerNote": "Tasting menu (other menus from €88)",
+  "dinner": 175,
+  "dinnerNote": "Utopia tasting menu (Genesis menu €125; vegan Physis menu €135)",
   "sourceType": "site",
   "source": "https://makrisathens.com/en/menu/",
   "website": "https://makrisathens.com/en/",
@@ -28,8 +28,45 @@
   ],
   "chef": "Petros Dimas",
   "chefSource": "michelin",
-  "dinnerNoteEl": "Μενού γευσιγνωσίας (άλλα μενού από 88 €)",
+  "dinnerNoteEl": "Μενού γευσιγνωσίας Utopia (μενού Genesis 125 €· vegan μενού Physis 135 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteEl": "Μόνο δείπνο"
+  "lunchNoteEl": "Μόνο δείπνο",
+  "wine": 110,
+  "menus": [
+    {
+      "name": "Utopia tasting menu",
+      "meal": "dinner",
+      "price": 175,
+      "wine": 110,
+      "note": "The only menu served on Fridays and Saturdays. Greek Terroirs pairing €110, Grand Cru €240, Fine and Rare €750, non-alcoholic pairing €110; a 'Full Supplement' version with the chef's premium ingredients is €475"
+    },
+    {
+      "name": "Genesis tasting menu",
+      "meal": "dinner",
+      "price": 125,
+      "wine": 75,
+      "note": "Sunday to Thursday. Greek Terroirs pairing €75, Grand Cru €140, Fine and Rare €550, non-alcoholic €75"
+    },
+    {
+      "name": "Physis vegan menu",
+      "meal": "dinner",
+      "price": 135,
+      "wine": 95,
+      "note": "Sunday to Thursday. Greek Terroirs pairing €95, Grand Cru €185, non-alcoholic €90"
+    }
+  ],
+  "menusSource": "https://makrisathens.com/en/menu/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through SevenRooms, or by phone or email (info@makrisathens.com). A prepayment of €50 a guest secures the table and comes off the final bill. Seats at the bar can also be booked.",
+  "bookingUrl": "https://www.sevenrooms.com/explore/makrisrestaurant/reservations/create/search/",
+  "bookingPhone": "+30 216 004 7777",
+  "cancellation": "Cancel or change at least 48 hours ahead by phone or email. Later than that, or for a no-show, the €50-a-guest prepayment is kept. Tables may be released after 20 minutes' delay.",
+  "groups": "Private and business dinners in the Aktiki private dining room, on the rooftop or at the restaurant's farm near Corinth, with a menu made for the group: send the enquiry form on the website.",
+  "groupsUrl": "https://makrisathens.com/en/aktiki-private-dining-room-3/",
+  "dressCode": "Smart casual.",
+  "children": "Guests aged 12 and over only.",
+  "duration": "About two and a half hours for up to four guests, three hours for larger tables.",
+  "infoSource": "https://www.sevenrooms.com/explore/makrisrestaurant/reservations/create/search/",
+  "infoChecked": "2026-10-13"
 }

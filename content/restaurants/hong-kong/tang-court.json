@@ -11,14 +11,14 @@
   "cuisineZh": "粵菜",
   "rating": 4.2,
   "reviews": 623,
-  "dinnerType": "spend",
-  "dinnerNote": "À la carte and set menus (prices on request)",
-  "dinnerNoteZh": "單點及套餐（價格需查詢）",
-  "sourceType": "none",
+  "dinnerType": "menu",
+  "dinnerNote": "Legendary Set Menu (à la carte also served)",
+  "dinnerNoteZh": "星級套餐（另設單點）",
+  "sourceType": "site",
   "lunch": 1228,
   "lunchType": "menu",
-  "lunchNote": "Set lunch, 6 courses",
-  "lunchNoteZh": "午市套餐，6道菜",
+  "lunchNote": "Lunch Set Menu (Specialities lunch set HK$1,780)",
+  "lunchNoteZh": "午市套餐（唐閣特選午餐港幣1,780）",
   "lunchWine": 500,
   "lunchSourceType": "site",
   "lunchSource": "https://www.langhamhotels.com/content/dam/langhamhotels/tlhkg-pdfs/260303_TC_Lunch%20Set%20Menu%20NewOP.pdf",
@@ -34,5 +34,42 @@
     "halal"
   ],
   "chef": "Wong Chi Fai",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinner": 2680,
+  "wine": 888,
+  "source": "https://www.langhamhotels.com/content/dam/langhamhotels/tlhkg-pdfs/260108_Legendary%20Set%20Menu_v2.pdf",
+  "menus": [
+    {
+      "name": "Legendary Set Menu",
+      "meal": "dinner",
+      "price": 2680,
+      "wine": 888,
+      "note": "Abalone, fish maw soup, garoupa, oysters, Japanese wagyu and more; four-glass wine pairing HK$888, five glasses HK$1,088"
+    },
+    {
+      "name": "Specialities Lunch Set Menu",
+      "meal": "lunch",
+      "price": 1780,
+      "wine": 500,
+      "note": "Bird's nest, lobster and Japanese wagyu; three-glass wine pairing HK$500"
+    },
+    {
+      "name": "Lunch Set Menu",
+      "meal": "lunch",
+      "price": 1228,
+      "wine": 500,
+      "note": "Three-glass wine pairing HK$500. Set lunches for four are also offered at HK$2,988 and HK$4,280 (seafood and lobster)"
+    }
+  ],
+  "menusSource": "https://www.langhamhotels.com/en/the-langham/hong-kong/dine/tang-court/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2016,
+  "hotel": "The Langham, Hong Kong",
+  "bookingOpens": "Online through SevenRooms, or by phone or email (tlhkg.tang.court@langhamhotels.com).",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/lhktangcourt",
+  "bookingPhone": "+852 2132 7898",
+  "cancellation": "Let the restaurant know at least 24 hours ahead if plans change.",
+  "dressCode": "Smart casual. Men are asked not to wear plastic footwear, flip-flops, sandals or sleeveless shirts, and shorts are not allowed at dinner.",
+  "infoSource": "https://www.langhamhotels.com/en/the-langham/hong-kong/dine/tang-court/",
+  "infoChecked": "2026-10-13"
 }

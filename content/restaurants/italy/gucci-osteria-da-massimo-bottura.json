@@ -8,18 +8,18 @@
   "cuisine": "Italian Contemporary",
   "rating": 4.2,
   "reviews": 907,
-  "dinner": 200,
+  "dinner": 175,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
-  "dinnerNoteIt": "Menu degustazione",
-  "sourceType": "press",
-  "source": "https://www.gamberorosso.it/ristoranti/menu-degustazione-ristoranti-stellati-forchette/",
-  "lunch": 200,
+  "dinnerNote": "Journey to Tuscany tasting menu (with wine €290)",
+  "dinnerNoteIt": "Menu degustazione Journey to Tuscany (con i vini €290)",
+  "sourceType": "site",
+  "source": "https://www.gucciosteria.com/en/florence/menu/tasting-menu/",
+  "lunch": 175,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchNoteIt": "Stesso menu a pranzo",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.gamberorosso.it/ristoranti/menu-degustazione-ristoranti-stellati-forchette/",
+  "lunchNote": "Same menu at lunch (or single à la carte dishes from €40)",
+  "lunchNoteIt": "Stesso menu a pranzo (oppure singoli piatti alla carta da €40)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.gucciosteria.com/en/florence/menu/a-la-carte/",
   "website": "https://www.gucciosteria.com/it/florence",
   "lat": 43.769804,
   "lng": 11.256713,
@@ -30,5 +30,34 @@
     "vegan"
   ],
   "chef": "Takahiko Kondo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 115,
+  "lunchWine": 115,
+  "menus": [
+    {
+      "name": "Journey to Tuscany tasting menu",
+      "meal": "dinner",
+      "price": 175,
+      "wine": 115,
+      "courses": 6,
+      "note": "For the whole table; €290 as the Sommelier Experience with wine; the restaurant's pappardella can be added for €40 and caviar for €25 a dish"
+    }
+  ],
+  "menusSource": "https://www.gucciosteria.com/en/florence/menu/tasting-menu/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Gucci Giardino 25",
+      "note": "The Gucci café and cocktail bar in the same palazzo on Piazza della Signoria, open from breakfast through light lunches, afternoon tea and cocktails",
+      "url": "https://www.gucciosteria.com/en/florence/giardino/"
+    }
+  ],
+  "starsSince": 2019,
+  "bookingOpens": "Through the reservation page on the restaurant's website, by phone or by email (gucciosteria.mb@gucci.com).",
+  "bookingUrl": "https://www.gucciosteria.com/en/florence/reservation/",
+  "bookingPhone": "+39 055 062 1744",
+  "groups": "Gucci Osteria and Gucci Giardino cater private events and special occasions; ask through the contact page.",
+  "groupsUrl": "https://www.gucciosteria.com/en/florence/contact/",
+  "infoSource": "https://www.gucciosteria.com/en/florence/reservation/",
+  "infoChecked": "2026-10-13"
 }

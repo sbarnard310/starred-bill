@@ -10,18 +10,17 @@
   "reviews": 1746,
   "dinner": 124,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Dîner surprise menu, 6 plates",
   "wine": 85,
-  "dinnerNoteFr": "Menu dégustation",
-  "sourceType": "press",
-  "source": "https://fr.gaultmillau.com/en/restaurants/l-atelier-des-augustins",
+  "dinnerNoteFr": "Dîner surprise, 6 assiettes",
+  "sourceType": "site",
+  "source": "https://latelierdesaugustins.com/fr/cartes-menus.html",
   "lunch": 59,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchWine": 45,
-  "lunchNoteFr": "Menu déjeuner",
-  "lunchSourceType": "press",
-  "lunchSource": "https://fr.gaultmillau.com/en/restaurants/l-atelier-des-augustins",
+  "lunchNote": "Déjeuner surprise menu, 3 plates (4 plates €79)",
+  "lunchNoteFr": "Déjeuner surprise, 3 assiettes (4 assiettes 79 €)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://latelierdesaugustins.com/fr/cartes-menus.html",
   "website": "https://latelierdesaugustins.com",
   "lat": 45.7677374,
   "lng": 4.8308367,
@@ -32,5 +31,41 @@
     "gluten-free"
   ],
   "chef": "Nicolas Guilloton",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Dîner surprise menu",
+      "meal": "dinner",
+      "price": 124,
+      "wine": 85,
+      "courses": 6,
+      "note": "Dinner Tuesday to Saturday; the whole table takes the same menu. Champagne and wine pairing €85 to €105, alcohol-free pairing €55, cheese course €19 extra"
+    },
+    {
+      "name": "Déjeuner surprise menu",
+      "meal": "lunch",
+      "price": 59,
+      "courses": 3,
+      "note": "Not on public holidays. Three glasses of wine €45, alcohol-free pairing €29, cheese course €16 extra"
+    },
+    {
+      "name": "four-plate Déjeuner surprise menu",
+      "meal": "lunch",
+      "price": 79,
+      "courses": 4,
+      "note": "Three glasses of wine €45, alcohol-free pairing €29"
+    }
+  ],
+  "menusSource": "https://latelierdesaugustins.com/fr/cartes-menus.html",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "Online through the restaurant's website (Zenchef or TheFork) or by phone. Online bookings require accepting the restaurant's terms of sale.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=362614&pid=1001",
+  "bookingPhone": "+33 4 72 00 88 01",
+  "cancellation": "The cancellation terms are set out when booking online; for questions, call or email contact@latelierdesaugustins.com.",
+  "walkIns": "The dining room seats about 39, so booking ahead is strongly advised; tables without a booking are not guaranteed.",
+  "groups": "The restaurant can be booked privately for business or private events. The largest table seats 18, the most it accepts as one party.",
+  "groupsUrl": "https://latelierdesaugustins.com/fr/privatisation-et-evenements.html",
+  "infoSource": "https://latelierdesaugustins.com/fr/faq.html",
+  "infoChecked": "2026-10-13"
 }

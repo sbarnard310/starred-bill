@@ -6655,7 +6655,16 @@ RESTAURANT_PAGES = ("le-bernardin", "la-pergola", "restaurant-gordon-ramsay", "o
                     "tang-court-shanghai", "xin-rong-ji-chengdu", "xin-rong-ji-hangzhou", "xin-rong-ji-shenzhen", "casa-de-carli",
                     "restaurant-papilio", "kadeau-bornholm", "lille-molle", "parsley-salon", "villa-vest", "114-faubourg", "alan-geaam",
                     "alexis-baudin", "armani-ristorante", "auberge-de-clochemerle", "auberge-des-templiers", "chakaiseki-akiyoshi",
-                    "en-marge", "guy-lassausaie")
+                    "en-marge", "guy-lassausaie",
+                    # Batch 6, wave 2, 13 Oct 2026
+                    "l-atelier-des-augustins", "l-oustau-de-baumaniere", "la-grande-cascade", "la-table-du-grapiot", "la-villa-madie",
+                    "lait-thym-sel", "le-chantecler", "le-pre-catelan", "lucas-carton", "maison-aribert", "maison-caillet",
+                    "maison-decoret", "origines-restaurant", "restaurant-le-meurice-alain-ducasse", "sushi-shunei",
+                    "la-vie-by-thomas-buhner-dusseldorf", "lorenz-adlon-esszimmer", "nobelhart-schmutzig", "opus-v", "pars-restaurant",
+                    "schwarzer-hahn", "the-cloud-by-kafer", "tohru-in-der-schreiberei", "winzerhof-stahl", "makris-athens",
+                    "cristal-room-by-anne-sophie-pic", "ryota-kappou-modern", "spring-moon", "tang-court", "xin-rong-ji", "yat-tung-heen",
+                    "glovers-alley", "casa-sgarra", "cracco-portofino", "cucina-cereda", "dalla-gioconda", "due-colombe",
+                    "gucci-osteria-da-massimo-bottura", "iyo-kaiseki", "la-capinera")
 # The owner's rule (9 Oct 2026): at most 10 questions per page, and none that repeats what the page already says. On a
 # restaurant page the questions are its own section headings, each with its answer straight under it; the structured data
 # (FAQPage) lists them, most-asked first.

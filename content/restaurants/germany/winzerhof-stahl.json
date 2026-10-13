@@ -29,5 +29,26 @@
   "lunch": 239,
   "lunchType": "menu",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.winzerhof-stahl.de/fine-dining-restaurant-stahl-auernhofen-taubertal-wuerzburg/"
+  "lunchSource": "https://www.winzerhof-stahl.de/fine-dining-restaurant-stahl-auernhofen-taubertal-wuerzburg/",
+  "menus": [
+    {
+      "name": "nine-course menu with wines",
+      "meal": "dinner",
+      "price": 239,
+      "courses": 9,
+      "note": "Sold only with its wine pairing: price includes the estate's wines, water and espresso; lunch on Saturdays at 12pm or dinner Wednesday to Saturday from 6pm; vegetarian or pescatarian version for genuine vegetarians on request"
+    }
+  ],
+  "menusSource": "https://www.winzerhof-stahl.de/fine-dining-restaurant-stahl-auernhofen-taubertal-wuerzburg/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "Online on OpenTable, or by phone or email (reservieren@winzerhof-stahl.de). Booking is required; there are no walk-ins.",
+  "bookingUrl": "https://www.opentable.de/r/winzerhof-stahl-reservations-simmershofen?restref=359472&lang=de-DE&ot_source=Restaurant%20website",
+  "bookingPhone": "+49 9848 96896",
+  "walkIns": "None: the restaurant serves only guests who have booked.",
+  "groups": "Weddings and events of up to 135 guests are held in the estate's barn, April to December; ask by phone or email (mail@winzerhof-stahl.de).",
+  "groupsUrl": "https://www.winzerhof-stahl.de/faqs/",
+  "duration": "Several hours; the restaurant describes it as an evening-long experience.",
+  "infoSource": "https://www.winzerhof-stahl.de/faqs/",
+  "infoChecked": "2026-10-13"
 }

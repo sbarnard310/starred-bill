@@ -15,18 +15,18 @@
   "changeDate": "2025-03",
   "rating": 4.9,
   "reviews": 1077,
-  "dinner": 140,
+  "dinner": 150,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 6 courses (4 courses €110)",
-  "dinnerNoteFr": "Menu dégustation, 6 services (4 services 110 €)",
-  "sourceType": "press",
-  "source": "https://www.lesrestos.com/restaurant/fiche/paris/origines",
+  "dinnerNote": "Tasting menu, 6 courses (4 courses €120)",
+  "dinnerNoteFr": "Menu dégustation, 6 services (4 services 120 €)",
+  "sourceType": "site",
+  "source": "https://www.origines-restaurant.com/menus-carte/",
   "lunch": 62,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu, 3 courses",
-  "lunchNoteFr": "Menu déjeuner, 3 services",
+  "lunchNote": "Lunch menu, 3 courses (4 courses €75)",
+  "lunchNoteFr": "Menu déjeuner, 3 services (4 services 75 €)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.origines-restaurant.com/",
+  "lunchSource": "https://www.origines-restaurant.com/menus-carte/",
   "website": "https://www.origines-restaurant.com/",
   "lat": 48.8702343,
   "lng": 2.3111842,
@@ -37,5 +37,46 @@
     "gluten-free"
   ],
   "chef": "Julien Boscus",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 85,
+  "menus": [
+    {
+      "name": "six-course tasting menu",
+      "meal": "dinner",
+      "price": 150,
+      "wine": 85,
+      "courses": 6,
+      "note": "Lunch or dinner. Découverte wine pairing €85, Héritage pairing €145, alcohol-free pairing €50; cheese €14 extra"
+    },
+    {
+      "name": "four-course tasting menu",
+      "meal": "dinner",
+      "price": 120,
+      "wine": 65,
+      "courses": 4,
+      "note": "Lunch or dinner. Découverte wine pairing €65, Héritage pairing €110, alcohol-free pairing €40; cheese €14 extra"
+    },
+    {
+      "name": "four-course lunch menu",
+      "meal": "lunch",
+      "price": 75,
+      "courses": 4,
+      "note": "Lunch only; starter, main, cheese and dessert"
+    },
+    {
+      "name": "three-course lunch menu",
+      "meal": "lunch",
+      "price": 62,
+      "courses": 3,
+      "note": "Lunch only"
+    }
+  ],
+  "menusSource": "https://www.origines-restaurant.com/menus-carte/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Online through Zenchef from the restaurant's website, or by phone. Lunch and dinner Monday to Friday (lunch 12.15pm–1.45pm, dinner 7.30pm–9.45pm); closed at weekends.",
+  "bookingUrl": "https://www.origines-restaurant.com/",
+  "bookingPhone": "+33 9 86 41 63 04",
+  "infoSource": "https://www.origines-restaurant.com/",
+  "infoChecked": "2026-10-13"
 }

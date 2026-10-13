@@ -26,5 +26,42 @@
   "lunchNoteDe": "Nur abends",
   "cuisineDe": "Kreativ",
   "chef": "Jonas Zörner",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "six-course menu",
+      "meal": "dinner",
+      "price": 295,
+      "wine": 180,
+      "courses": 6,
+      "note": "Also as a vegetarian menu at the same price; Kagoshima wagyu instead of the venison costs €75 more"
+    },
+    {
+      "name": "five-course menu",
+      "meal": "dinner",
+      "price": 275,
+      "wine": 155,
+      "courses": 5,
+      "note": "Also as a vegetarian menu at the same price"
+    },
+    {
+      "name": "Signatures menu",
+      "meal": "dinner",
+      "price": 525,
+      "courses": 6,
+      "note": "Six of the à la carte signature dishes; each can also be added to or swapped into the other menus at its own price"
+    }
+  ],
+  "menusSource": "https://www.lorenzadlon-esszimmer.de/menue",
+  "menusChecked": "2026-10-13",
+  "hotel": "the Hotel Adlon Kempinski Berlin",
+  "bookingOpens": "Online through the restaurant's website or the hotel's page, or by phone or email (lorenz.adlon@kempinski.com). Open Wednesday to Saturday, 7pm to 11pm.",
+  "bookingUrl": "https://www.lorenzadlon-esszimmer.de/reservieren",
+  "bookingPhone": "+49 30 2261 1960",
+  "cancellation": "A credit card secures the booking. Cancel more than 24 hours ahead, or a no-show fee of €190 per person may be charged.",
+  "groups": "The restaurant and its library can be booked for events, with tailored menus: up to about 120 guests seated across its rooms, and up to 300 in the hotel's ballrooms.",
+  "groupsUrl": "https://www.lorenzadlon-esszimmer.de/ihre-veranstaltung",
+  "dressCode": "Smart casual.",
+  "infoSource": "https://www.kempinski.com/en/hotel-adlon/restaurants-bars/lorenz-adlon-esszimmer",
+  "infoChecked": "2026-10-13"
 }

@@ -9,10 +9,10 @@
   "reviews": 431,
   "dinnerType": "menu",
   "dinner": 150,
-  "dinnerNote": "Tasting menu (other menus from €52)",
+  "dinnerNote": "Kromme Dissel menu, 6 courses (4 courses €120, 5 courses €135)",
   "sourceType": "site",
   "source": "https://www.krommedissel.nl/menu/",
-  "wine": 91,
+  "wine": 78,
   "website": "https://www.krommedissel.nl/",
   "lat": 51.9848455,
   "lng": 5.7586213,
@@ -26,13 +26,54 @@
   ],
   "chef": "Tonny Berentsen",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 52)",
-  "lunch": 150,
+  "dinnerNoteNl": "Kromme Dissel-menu, 6 gangen (4 gangen € 120, 5 gangen € 135)",
+  "lunch": 120,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Saturdays",
-  "lunchNoteNl": "Zelfde menu bij de lunch · zaterdag",
-  "lunchWine": 91,
+  "lunchNote": "Kromme Dissel menu, 4 courses · Fri–Sat (6 courses €150)",
+  "lunchNoteNl": "Kromme Dissel-menu, 4 gangen · vr–za (6 gangen € 150)",
+  "lunchWine": 52,
   "lunchSourceType": "site",
   "lunchSource": "https://www.krommedissel.nl/menu/",
-  "cuisineNl": "Modern Frans"
+  "cuisineNl": "Modern Frans",
+  "menus": [
+    {
+      "name": "Kromme Dissel menu",
+      "meal": "dinner",
+      "price": 150,
+      "wine": 78,
+      "courses": 6,
+      "note": "Lunch or dinner. Also as 4 courses (€120, pairing €52) or 5 courses (€135, pairing €65); 7-glass pairing €91. Sweetbread dish and Kim's cheese trolley €25 extra each."
+    },
+    {
+      "name": "Kromme Dissel menu, 5 courses",
+      "meal": "dinner",
+      "price": 135,
+      "wine": 65,
+      "courses": 5,
+      "note": "Lunch or dinner."
+    },
+    {
+      "name": "Kromme Dissel menu, 4 courses",
+      "meal": "dinner",
+      "price": 120,
+      "wine": 52,
+      "courses": 4,
+      "note": "Lunch or dinner."
+    },
+    {
+      "name": "55th anniversary Signature Classics menu",
+      "meal": "dinner",
+      "price": 200,
+      "courses": 5,
+      "note": "Classic signature dishes with anniversary amuse-bouches, until 30 January 2027. Book at least 24 hours ahead."
+    }
+  ],
+  "menusSource": "https://www.krommedissel.nl/menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 1971,
+  "bookingOpens": "Online through the restaurant's booking page (TheFork), or by phone. Lunch Friday and Saturday from 12pm; dinner Tuesday to Saturday from 6pm; closed Sunday and Monday.",
+  "bookingUrl": "https://www.krommedissel.nl/reserveren/",
+  "bookingPhone": "+31 317 313 118",
+  "infoSource": "https://www.krommedissel.nl/reserveren/",
+  "infoChecked": "2026-10-13"
 }

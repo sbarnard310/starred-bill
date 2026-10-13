@@ -18,8 +18,8 @@
   "dinnerNote": "Chef's tasting course, from",
   "dinnerNoteZh": "主廚品嚐套餐起",
   "dinnerNoteJa": "シェフおまかせコース（最安値）",
-  "sourceType": "press",
-  "source": "https://omakaseje.com/restaurants/sk585768",
+  "sourceType": "site",
+  "source": "https://www.karyu-tokyo.com/menu.html",
   "noLunch": true,
   "website": "https://www.karyu-tokyo.com/",
   "lat": 35.672997,
@@ -27,5 +27,26 @@
   "placeId": "ChIJYT3p8VOJGGAREKvU0Qeugwk",
   "michelinId": "1193889",
   "chef": "Haruka Katayanagi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Seasonal omakase course",
+      "meal": "dinner",
+      "price": 34100,
+      "note": "Wagyu kaiseki for two or more; ¥34,100 to ¥39,600 by season, more when Tajima Kobe beef is served; tax included, plus 10% service"
+    }
+  ],
+  "menusSource": "https://www.karyu-tokyo.com/menu.html",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through OMAKASE or TABLEALL, by phone, or through a hotel concierge. Bookings are for two or more.",
+  "bookingUrl": "https://www.karyu-tokyo.com/english/english.html",
+  "bookingPhone": "+81 3-6264-4129",
+  "cancellation": "A table is cancelled automatically if guests are late without calling.",
+  "groups": "Besides the eight-seat counter there are private rooms for four and for eight.",
+  "dressCode": "Smart casual: no T-shirts, shorts or sandals.",
+  "children": "Only children aged 6 and over in the private rooms.",
+  "byob": "Corkage is ¥11,000 a bottle, tax included.",
+  "servicePct": 10,
+  "infoSource": "https://www.karyu-tokyo.com/english/english.html",
+  "infoChecked": "2026-10-13"
 }

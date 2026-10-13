@@ -8,14 +8,14 @@
   "reviews": 3736,
   "dinnerType": "menu",
   "dinner": 95,
-  "dinnerNote": "Tasting menu (other menus from €86)",
+  "dinnerNote": "Dinner menu, 6 courses (5 courses €86)",
   "sourceType": "site",
-  "source": "https://restaurantdekas.com/nl/menu",
+  "source": "https://restaurantdekas.com/eng/menu",
   "lunch": 55,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
+  "lunchNote": "Lunch menu, 3 courses · Mon–Sat (4 courses €67, 5 courses €76)",
   "lunchSourceType": "site",
-  "lunchSource": "https://restaurantdekas.com/nl/menu",
+  "lunchSource": "https://restaurantdekas.com/eng/menu",
   "website": "https://restaurantdekas.com/",
   "lat": 52.3522847,
   "lng": 4.9302753,
@@ -30,7 +30,61 @@
   ],
   "chef": "Wim de Beer & Jos Timmer",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 86)",
+  "dinnerNoteNl": "Dinermenu, 6 gangen (5 gangen € 86)",
   "cuisineNl": "Bio",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu, 3 gangen · ma–za (4 gangen € 67, 5 gangen € 76)",
+  "menus": [
+    {
+      "name": "dinner menu",
+      "meal": "dinner",
+      "price": 95,
+      "courses": 6,
+      "note": "Changes weekly with the garden's vegetables, with some fish or meat; can be served fully vegetarian or vegan."
+    },
+    {
+      "name": "five-course dinner menu",
+      "meal": "dinner",
+      "price": 86,
+      "courses": 5
+    },
+    {
+      "name": "five-course lunch menu",
+      "meal": "lunch",
+      "price": 76,
+      "courses": 5
+    },
+    {
+      "name": "four-course lunch menu",
+      "meal": "lunch",
+      "price": 67,
+      "courses": 4
+    },
+    {
+      "name": "three-course lunch menu",
+      "meal": "lunch",
+      "price": 55,
+      "courses": 3
+    }
+  ],
+  "menusSource": "https://restaurantdekas.com/eng/menu",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the reservation system on the restaurant's website (Zenchef), up to 3 months ahead. Lunch arrivals Monday to Saturday, 12pm to 1.45pm; dinner 6pm to 9pm.",
+  "bookingWindow": {
+    "type": "rolling",
+    "months": 3,
+    "tz": "Europe/Amsterdam",
+    "via": "Zenchef",
+    "source": "https://restaurantdekas.com/eng/faq",
+    "checked": "2026-10-13"
+  },
+  "bookingUrl": "https://restaurantdekas.com/eng/reservations",
+  "bookingPhone": "+31 20 462 4562, Monday to Saturday 10am to 5pm",
+  "cancellation": "Bookings for up to 6 people can be cancelled free of charge. Groups of 7 or more pay a €50 deposit per person, deducted from the bill; it is kept as a no-show fee if the booking is cancelled on the day (after 10am for lunch or after 3pm for dinner).",
+  "waitlist": "If a table comes free, the restaurant calls guests on the waiting list.",
+  "groups": "Tables of up to 12 can book online. Groups of 13 to 20 use the glass-walled Garden Room; the whole restaurant can be hired for 80 to 140 guests. Groups in between can't be taken.",
+  "groupsUrl": "https://restaurantdekas.com/eng/groups-",
+  "children": "Children are welcome, with a special children's menu; mention a pushchair when booking.",
+  "duration": "Lunch tables are kept until 4pm; dinner until midnight, or 8.30pm for an early dinner booking.",
+  "infoSource": "https://restaurantdekas.com/eng/faq",
+  "infoChecked": "2026-10-13"
 }

@@ -7,9 +7,9 @@
   "cuisine": "Peranakan",
   "rating": 4.2,
   "reviews": 2360,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "main",
+  "dinnerNote": "À la carte Nyonya dishes, about RM22–48 (prices from December 2024)",
+  "sourceType": "press",
   "website": "https://inline.app/booking/-OnKy8jPaRn_LUmJ5tDV:inline-live-4/-OnKy8r2gI9_CX8R2D7X",
   "lat": 5.4180516,
   "lng": 100.3423801,
@@ -19,9 +19,12 @@
     "vegetarian",
     "halal"
   ],
-  "chef": "Gaik Lean",
+  "chef": "Beh Gaik Lean",
   "chefSource": "michelin",
-  "dinnerNoteMs": "Menu rasa; harga akan ditambah",
+  "dinnerNoteMs": "Hidangan Nyonya à la carte, kira-kira RM22–48 (harga Disember 2024)",
   "lunchNote": "Open for lunch · Wed–Sun",
-  "lunchNoteMs": "Dibuka untuk makan tengah hari · Rab–Ahd"
+  "lunchNoteMs": "Dibuka untuk makan tengah hari · Rab–Ahd",
+  "dinner": 32,
+  "source": "https://asianews.network/why-penangs-auntie-gaik-leans-old-school-eatery-deserves-its-michelin-star/",
+  "starsSince": 2022
 }

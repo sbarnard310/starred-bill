@@ -18,14 +18,13 @@
   "dinnerNoteIt": "Chez Philippe, 10 portate (altri menu da €130)",
   "wine": 80,
   "sourceType": "site",
-  "source": "https://www.miramontilaltro.it/",
-  "lunch": 190,
+  "source": "https://www.miramontilaltro.com/menu/",
+  "lunch": 55,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchNoteIt": "Stesso menu a pranzo",
-  "lunchWine": 80,
+  "lunchNote": "Menù del Mercato, Wed–Fri, whole table, booked ahead (Chez Philippe €190)",
+  "lunchNoteIt": "Menù del Mercato, mer–ven, per tutto il tavolo, su prenotazione (Chez Philippe €190)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.miramontilaltro.it/",
+  "lunchSource": "https://www.miramontilaltro.com/menu/",
   "website": "https://www.miramontilaltro.it/",
   "lat": 45.613582,
   "lng": 10.204399,
@@ -36,5 +35,43 @@
     "gluten-free"
   ],
   "chef": "Philippe Léveillé",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Chez Philippe tasting menu",
+      "meal": "dinner",
+      "price": 190,
+      "wine": 80,
+      "courses": 10,
+      "note": "Ten courses chosen by the chef, then dessert, for the whole table and only when booked ahead; €270 with wines and spirits; lunch or dinner"
+    },
+    {
+      "name": "Sapori e colori tasting menu",
+      "meal": "dinner",
+      "price": 160,
+      "courses": 7,
+      "note": "Lunch or dinner; €210 with three wines chosen by the restaurant"
+    },
+    {
+      "name": "Elogio della tradizione tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "courses": 4,
+      "note": "For the whole table; lunch or dinner; €160 with two wines chosen by the restaurant"
+    },
+    {
+      "name": "Menù del Mercato",
+      "meal": "lunch",
+      "price": 55,
+      "note": "Lunch only, Wednesday to Friday, for the whole table and only when booked ahead; drinks extra"
+    }
+  ],
+  "menusSource": "https://www.miramontilaltro.com/menu/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the restaurant's own booking page (up to 8 people), or by phone or email.",
+  "bookingUrl": "https://rsv.miramontilaltro.it/frontend/",
+  "bookingPhone": "+39 030 275 1063",
+  "waitlist": "When a day is full, the online booking page offers a place on the waiting list; the restaurant gets in touch only if a cancellation frees a table.",
+  "infoSource": "https://rsv.miramontilaltro.it/frontend/",
+  "infoChecked": "2026-10-13"
 }

@@ -31,5 +31,45 @@
   "dinnerNote": "Set menu, 5 courses (6 courses €178)",
   "dinnerNoteNl": "Menu, 5 gangen (6 gangen € 178)",
   "lunchNote": "Lunch special, 3 courses · Thu–Sat",
-  "lunchNoteNl": "Lunchspecial, 3 gangen · do–za"
+  "lunchNoteNl": "Lunchspecial, 3 gangen · do–za",
+  "menus": [
+    {
+      "name": "set menu",
+      "meal": "dinner",
+      "price": 149,
+      "wine": 75,
+      "courses": 5,
+      "note": "Drinks pairing €75, or €137.50 prestige wine pairing. The 'Like father, like son' signature dish is €29.50 extra; cheese instead of dessert €15 extra."
+    },
+    {
+      "name": "six-course set menu",
+      "meal": "dinner",
+      "price": 178,
+      "wine": 90,
+      "courses": 6,
+      "note": "Drinks pairing €90, or €165 prestige wine pairing; an extra course is €27.50."
+    },
+    {
+      "name": "3-course lunch special",
+      "meal": "lunch",
+      "price": 90,
+      "courses": 3,
+      "note": "Thursday, Friday and Saturday lunch."
+    },
+    {
+      "name": "all-in Autumn Arrangement",
+      "meal": "lunch",
+      "price": 154,
+      "courses": 4,
+      "note": "Includes a sparkling aperitif, amuse-bouches, 3 glasses of wine or alcohol-free drinks, water and coffee or tea. Lunch Thursday to Saturday, or dinner on Tuesday and Thursday."
+    }
+  ],
+  "menusSource": "https://deleuf.nl/en/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the restaurant's booking page (Zenchef), or by phone or email (receptie@deleuf.nl). Lunch Thursday to Saturday from 12pm to 1pm; dinner Tuesday and Thursday from 6pm, Friday and Saturday from 6.30pm.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=371530&lang=en",
+  "bookingPhone": "+31 45 575 0226",
+  "groups": "Online bookings are for up to 6 people; for larger groups, call or email. The private Yukari room seats 4 to 14 for lunch or dinner.",
+  "infoSource": "https://deleuf.nl/en/",
+  "infoChecked": "2026-10-13"
 }

@@ -9,17 +9,16 @@
   "reviews": 333,
   "dinnerType": "menu",
   "dinner": 145,
-  "dinnerNote": "Tasting menu (other menus from €60)",
+  "dinnerNote": "Otto corse tasting menu, 8 courses (other menus from €85)",
   "sourceType": "site",
-  "source": "https://storiedamorerestaurant.it/",
+  "source": "https://storiedamorerestaurant.it/degustazioni",
   "wine": 90,
-  "lunch": 145,
+  "lunch": 85,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Wed",
-  "lunchNoteIt": "Stesso menu a pranzo · ven–mer",
-  "lunchWine": 90,
+  "lunchNote": "Two dishes of your choice (three €120; 8 courses €145) · Fri–Wed",
+  "lunchNoteIt": "Due piatti a scelta (tre €120; 8 portate €145) · ven–mer",
   "lunchSourceType": "site",
-  "lunchSource": "https://storiedamorerestaurant.it/",
+  "lunchSource": "https://storiedamorerestaurant.it/degustazioni",
   "website": "https://storiedamorerestaurant.it/",
   "lat": 45.5381705,
   "lng": 11.9290391,
@@ -29,5 +28,57 @@
     "vegetarian"
   ],
   "chef": "Davide Filippetto",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinnerNoteIt": "Menu degustazione Otto corse, 8 portate (altri menu da €85)",
+  "menus": [
+    {
+      "name": "Otto corse tasting menu",
+      "meal": "dinner",
+      "price": 145,
+      "wine": 90,
+      "courses": 8,
+      "note": "Fish, meat and vegetarian dishes chosen by the chef, for the whole table; lunch or dinner; Felicità pairing (a glass with every course) €90, or 4 glasses €40, 5 glasses €60"
+    },
+    {
+      "name": "Sette corse di pesce tasting menu",
+      "meal": "dinner",
+      "price": 145,
+      "courses": 7,
+      "note": "Fish dishes, for the whole table; lunch or dinner"
+    },
+    {
+      "name": "Sei corse tasting menu",
+      "meal": "dinner",
+      "price": 125,
+      "courses": 6,
+      "note": "Fish, meat and vegetarian dishes, or meat and vegetables only, for the whole table; lunch or dinner"
+    },
+    {
+      "name": "Cinque corse vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 110,
+      "courses": 5,
+      "note": "For the whole table; lunch or dinner"
+    },
+    {
+      "name": "Quattro corse tasting menu",
+      "meal": "dinner",
+      "price": 100,
+      "courses": 4,
+      "note": "A vegetarian dish, a fish dish, a meat dish and a dessert, for the whole table; lunch or dinner"
+    },
+    {
+      "name": "Two dishes of your choice",
+      "meal": "dinner",
+      "price": 85,
+      "courses": 2,
+      "note": "Any two dishes from the menu; three dishes €120; lunch or dinner"
+    }
+  ],
+  "menusSource": "https://storiedamorerestaurant.it/degustazioni",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "By phone.",
+  "bookingPhone": "+39 347 671 9870",
+  "infoSource": "https://storiedamorerestaurant.it/degustazioni",
+  "infoChecked": "2026-10-13"
 }

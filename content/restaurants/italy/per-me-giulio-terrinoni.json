@@ -8,18 +8,18 @@
   "cuisine": "Seafood",
   "rating": 4.6,
   "reviews": 900,
-  "dinner": 190,
+  "dinner": 200,
   "dinnerType": "menu",
-  "dinnerNote": "Testa, Mani, Cuore menu, 10 courses (5 courses €150)",
-  "dinnerNoteIt": "Menu Testa, Mani, Cuore, 10 portate (5 portate €150)",
-  "sourceType": "press",
-  "source": "https://www.scattidigusto.it/per-me-giulio-terrinoni-ristorante-di-pesce-a-roma-menu-prezzi-recensione",
-  "lunch": 190,
+  "dinnerNote": "'X me' tasting menu, 10 courses (5 courses €150; Chef's Table €230)",
+  "dinnerNoteIt": "Menu degustazione 'X me', 10 portate (5 portate €150; Chef's Table €230)",
+  "sourceType": "site",
+  "source": "https://www.giulioterrinoni.it/wp-content/uploads/2026/07/FOOD_ITA_0307.pdf",
+  "lunch": 150,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch",
-  "lunchNoteIt": "Stesso menu a pranzo",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.scattidigusto.it/per-me-giulio-terrinoni-ristorante-di-pesce-a-roma-menu-prezzi-recensione",
+  "lunchNote": "5-course 'X me + Piccolo' or 'Think Green' menu, daily (10 courses €200)",
+  "lunchNoteIt": "Menu 'X me + Piccolo' o 'Think Green', 5 portate, tutti i giorni (10 portate €200)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.giulioterrinoni.it/wp-content/uploads/2026/07/FOOD_ITA_0307.pdf",
   "website": "https://www.giulioterrinoni.it/",
   "lat": 41.897303,
   "lng": 12.46747,
@@ -34,5 +34,51 @@
     "kosher"
   ],
   "chef": "Giulio Terrinoni",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 110,
+  "lunchWine": 90,
+  "menus": [
+    {
+      "name": "'X me' tasting menu",
+      "meal": "dinner",
+      "price": 200,
+      "wine": 110,
+      "courses": 10,
+      "note": "Ten new dishes for the restaurant's tenth birthday, for the whole table; lunch or dinner; pairing of seven wines €110, or three glasses of great wines €160"
+    },
+    {
+      "name": "'X me + Piccolo' tasting menu",
+      "meal": "dinner",
+      "price": 150,
+      "wine": 90,
+      "courses": 5,
+      "note": "Five dishes old and new, for the whole table; lunch or dinner; pairing of five wines €90, or three glasses of great wines €160"
+    },
+    {
+      "name": "'Think Green' vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 150,
+      "wine": 90,
+      "courses": 5,
+      "note": "Five seasonal vegetarian dishes, for the whole table; lunch or dinner; pairing of five wines €90"
+    },
+    {
+      "name": "Chef's Table menu",
+      "meal": "dinner",
+      "price": 230,
+      "wine": 120,
+      "note": "A free-form menu at a counter facing the kitchen, up to 5 guests, daily at 1pm and 8:30pm; wine and drinks pairing €120"
+    }
+  ],
+  "menusSource": "https://www.giulioterrinoni.it/wp-content/uploads/2026/07/FOOD_ITA_0307.pdf",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the booking widget on the restaurant's website (ResDiary), for up to 6 people a table; only the dates and times shown can be booked. If nothing suits, contact the restaurant and it will try to help.",
+  "bookingUrl": "https://www.giulioterrinoni.it/contatti-3/",
+  "bookingPhone": "+39 06 687 7365",
+  "cancellation": "A credit card is needed to hold the booking, but nothing is charged when booking. Cancel or change the number of guests by email at least 24 hours ahead; later cancellations or changes cost €140 a person in the dining room, €220 a person at the Chef's Table and the full tasting menu price on public holidays.",
+  "groups": "Tables of more than 6 are booked by email (perme@giulioterrinoni.it); the chef then sends a set menu for the whole table.",
+  "dressCode": "Smart casual to elegant. Shorts and flip-flops are not allowed for men.",
+  "children": "Families with children are welcome at lunch.",
+  "infoSource": "https://www.giulioterrinoni.it/contatti-3/",
+  "infoChecked": "2026-10-13"
 }

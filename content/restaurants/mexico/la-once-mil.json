@@ -31,5 +31,16 @@
   "placeId": "ChIJe_9SHGUB0oURM_uxZtY_NyE",
   "michelinId": "1245564",
   "chef": "César de la Parra",
-  "chefSource": "press"
+  "chefSource": "press",
+  "alsoTry": [
+    {
+      "name": "La Once Mil Roma",
+      "note": "The taquería's second branch, at Orizaba 83 in Roma Norte (not itself starred)"
+    }
+  ],
+  "starsSince": 2026,
+  "noBookings": true,
+  "queue": "No reservations: tables go to whoever turns up, and waits of up to an hour are reported since the star. Open every day, from 12pm (11am at weekends) to 11.30pm.",
+  "infoSource": "https://guide.michelin.com/en/ciudad-de-mexico-region/mexico-city/restaurant/la-once-mil",
+  "infoChecked": "2026-10-13"
 }

@@ -10,23 +10,86 @@
   "rating": 4.3,
   "reviews": 194,
   "dinnerType": "menu",
-  "dinnerNote": "Cheapest dinner course (others up to ¥34,232); usually including tax and service",
-  "sourceType": "press",
+  "dinnerNote": "Hana course of about 12 dishes (Yuki ¥16,000 and Tsuki ¥22,000 too); including tax and service",
+  "sourceType": "site",
   "website": "https://kyoto-mashita.com/",
   "lat": 35.003944,
   "lng": 135.773737,
   "placeId": "ChIJI6axzsEIAWARdOwkirYS6Vc",
-  "dinner": 25933,
-  "source": "https://omakaseje.com/restaurants/ke934186",
-  "lunch": 13485,
+  "dinner": 28000,
+  "source": "http://kyoto-mashita.com/cuisine/index.html",
+  "lunch": 7500,
   "lunchType": "menu",
-  "lunchNote": "Cheapest lunch course (others up to ¥34,232)",
-  "lunchSourceType": "press",
-  "lunchSource": "https://omakaseje.com/restaurants/ke934186",
+  "lunchNote": "Tenshin lunch course, weekdays only (Kotobuki course ¥11,000); including tax and service",
+  "lunchSourceType": "site",
+  "lunchSource": "http://kyoto-mashita.com/cuisine/index.html",
   "michelinId": "1192900",
   "diets": [
     "gluten-free"
   ],
   "chef": "Masahiro Mashita",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Hana course",
+      "meal": "dinner",
+      "price": 28000,
+      "courses": 12,
+      "note": "Lunch or dinner; about 12 dishes from starter to sweets"
+    },
+    {
+      "name": "Tsuki course",
+      "meal": "dinner",
+      "price": 22000,
+      "courses": 11,
+      "note": "Lunch or dinner; about 11 dishes"
+    },
+    {
+      "name": "Yuki course",
+      "meal": "dinner",
+      "price": 16000,
+      "courses": 10,
+      "note": "Lunch or dinner; about 10 dishes"
+    },
+    {
+      "name": "Omakase course",
+      "meal": "dinner",
+      "price": 25000,
+      "courses": 11,
+      "note": "Lunch or dinner; listed on the English booking page"
+    },
+    {
+      "name": "Kotobuki course",
+      "meal": "lunch",
+      "price": 11000,
+      "courses": 8,
+      "note": "Lunch only; about 8 dishes"
+    },
+    {
+      "name": "Lunch course",
+      "meal": "lunch",
+      "price": 13000,
+      "courses": 9,
+      "note": "Listed on the English booking page"
+    },
+    {
+      "name": "Tenshin lunch course",
+      "meal": "lunch",
+      "price": 7500,
+      "courses": 7,
+      "note": "Weekday lunch only; cash only"
+    }
+  ],
+  "menusSource": "https://www.tablecheck.com/en/shops/kyoto-mashita/reserve",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2019,
+  "bookingOpens": "By phone, fax or online through TableCheck. A credit card is needed to book online.",
+  "bookingUrl": "https://www.tablecheck.com/en/shops/kyoto-mashita/reserve",
+  "bookingPhone": "+81 75-525-2160",
+  "cancellation": "50% of the bill from a week before, and 100% from three days before. Guests more than 30 minutes late without word lose their table.",
+  "groups": "Two private rooms upstairs: a small tatami room for two to four (¥3,300 a room) and a large table room for five to 12 (¥5,500 a room).",
+  "dressCode": "Smart casual: no T-shirts, shorts or sandals.",
+  "children": "Children's menus for under-12s at ¥6,000, or ¥7,500 with sashimi; families with young children are usually seated upstairs. Guests 12 and over take an adult course.",
+  "infoSource": "http://kyoto-mashita.com/reservation_info/index.html",
+  "infoChecked": "2026-10-13"
 }

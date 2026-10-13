@@ -27,5 +27,45 @@
   "lunchSourceType": "site",
   "lunchSource": "https://kikunoi.jp/restaurant/",
   "lunchNote": "Lunch kaiseki, from; including tax, service extra",
-  "lunchNoteJa": "昼懐石（最安値）・税込・サービス料別"
+  "lunchNoteJa": "昼懐石（最安値）・税込・サービス料別",
+  "menus": [
+    {
+      "name": "kaiseki course",
+      "meal": "dinner",
+      "price": 33000,
+      "note": "Lunch or dinner; also at ¥55,000, ¥77,000 and ¥110,000; tax included, 15% service extra"
+    },
+    {
+      "name": "lighter kaiseki course",
+      "meal": "dinner",
+      "price": 22000,
+      "note": "Fewer dishes; lunch or dinner; tax included, 15% service extra"
+    },
+    {
+      "name": "lunch kaiseki",
+      "meal": "lunch",
+      "price": 16500,
+      "note": "The shortest course, lunch only (arrive 12pm to 12:30pm); tax included, 15% service extra"
+    }
+  ],
+  "menusSource": "https://kikunoi.jp/restaurant/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Salon de Muge",
+      "price": 5500,
+      "note": "Kikunoi's casual café next door to the main restaurant: the Shigure bento at lunch (11:30am to 1pm, bookable) plus a ¥1,650 seating charge, and coffee and warabimochi in the afternoon (walk-in only)",
+      "url": "https://kikunoi.jp/restaurant/muge.html"
+    }
+  ],
+  "starsSince": 2009,
+  "bookingOpens": "By phone (10am to 10pm, except on closing days) or email (honten@kikunoi.co.jp). Guests from outside Japan book online through My Concierge Japan, the restaurant's official booking partner, paying in advance.",
+  "bookingUrl": "https://myconciergejapan.com/restaurants/kikunoi/",
+  "bookingPhone": "+81 75 561 0015, 10am to 10pm",
+  "groups": "Ten private tatami rooms over two floors take parties of 2 to 40.",
+  "dressCode": "Smart casual. No beach sandals, sportswear, T-shirts, vests or shorts, and no strong perfume. Shoes come off at the entrance, so bring socks or stockings.",
+  "children": "Children aged 8 and over who can eat the adult course; no children under 8.",
+  "servicePct": 15,
+  "infoSource": "https://myconciergejapan.com/restaurants/kikunoi/",
+  "infoChecked": "2026-10-13"
 }

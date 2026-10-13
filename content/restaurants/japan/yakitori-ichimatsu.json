@@ -10,7 +10,7 @@
   "rating": 4.4,
   "reviews": 334,
   "dinnerType": "menu",
-  "dinnerNote": "Cheapest dinner course (others up to ¥20,000); usually including tax and service",
+  "dinnerNote": "Hinai chicken course (pairing of five sakes and wines ¥5,500 more); tax included",
   "sourceType": "press",
   "lat": 34.695938,
   "lng": 135.49702,
@@ -22,5 +22,27 @@
   "lunchNoteJa": "ディナーのみ",
   "michelinId": "1193262",
   "chef": "Hideto Takeda",
-  "chefSource": "press"
+  "chefSource": "press",
+  "wine": 5500,
+  "menus": [
+    {
+      "name": "Hinai chicken course",
+      "meal": "dinner",
+      "price": 14500,
+      "wine": 5500,
+      "note": "Charcoal-grilled Hinai-jidori chicken kaiseki; with five matched sakes and wines ¥20,000 in all; tax included"
+    }
+  ],
+  "menusSource": "https://omakaseje.com/restaurants/ks649628",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through OMAKASE, where the course is paid in advance, or by phone.",
+  "bookingUrl": "https://omakaseje.com/restaurants/ks649628",
+  "bookingPhone": "+81 6-6346-0112",
+  "cancellation": "Guests more than 30 minutes late are treated as a cancellation.",
+  "groups": "An L-shaped counter of eight and a semi-private room for four.",
+  "dressCode": "Smart casual: no T-shirts, shorts or sandals.",
+  "children": "Children are not admitted.",
+  "duration": "About two hours: sittings at 4pm and 6:30pm, plus 9pm on Fridays and Saturdays.",
+  "infoSource": "https://omakaseje.com/restaurants/ks649628",
+  "infoChecked": "2026-10-13"
 }

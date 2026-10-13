@@ -9,7 +9,7 @@
   "reviews": 1807,
   "dinnerType": "menu",
   "dinner": 140,
-  "dinnerNote": "Tasting menu (other menus from €130)",
+  "dinnerNote": "La Sorpresa della Cucina, 6 surprise courses (white truffle and 30-year menus also offered)",
   "sourceType": "site",
   "source": "https://www.laciaudeltornavento.it/it/carta-e-menu",
   "lunch": 140,
@@ -28,5 +28,23 @@
     "gluten-free"
   ],
   "chef": "Maurilio Garola",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "La Sorpresa della Cucina tasting menu",
+      "meal": "dinner",
+      "price": 140,
+      "courses": 6,
+      "note": "Six surprise courses chosen by the chef, for the whole table; lunch or dinner"
+    }
+  ],
+  "menusSource": "https://www.laciaudeltornavento.it/it/carta-e-menu",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "By phone or through the request form on the restaurant's website. A request is only a request: the restaurant checks availability and confirms; with no answer within 48 hours, call. No replies on Wednesdays and Thursdays, when it is closed.",
+  "bookingUrl": "https://www.laciaudeltornavento.it/it/prenota",
+  "bookingPhone": "+39 0173 638333",
+  "dressCode": "No dress code, but men are asked not to wear shorts or flip-flops.",
+  "children": "Children are welcome, with a children's menu of smaller dishes and their own tableware, colouring and toys; parents are asked to keep the other guests' peace in mind.",
+  "infoSource": "https://www.laciaudeltornavento.it/it/prenota",
+  "infoChecked": "2026-10-13"
 }

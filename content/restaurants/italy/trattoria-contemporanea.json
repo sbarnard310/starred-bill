@@ -14,11 +14,11 @@
   "dinnerNoteIt": "Menu degustazione Coraggio, 7 portate (altri €130 e €150); più €10 di coperto",
   "wine": 90,
   "sourceType": "site",
-  "source": "https://trattoriacontemporanea.it/wp-content/uploads/2026/08/MENU-CENA-ITA-8-26.pdf",
-  "lunch": 60,
+  "source": "https://trattoriacontemporanea.it/wp-content/uploads/2026/10/MENU-CENA-ITA-10-26.pdf",
+  "lunch": 30,
   "lunchType": "menu",
-  "lunchNote": "Lunch: 3 savoury courses and dessert, with water and coffee, Tue–Fri",
-  "lunchNoteIt": "Pranzo: 3 portate salate e dolce, con acqua e caffè, mar–ven",
+  "lunchNote": "Business lunch: starter and main, with water and coffee, Tue–Fri (4 courses €60)",
+  "lunchNoteIt": "Business lunch: antipasto e portata principale, con acqua e caffè, mar–ven (4 portate €60)",
   "lunchSourceType": "site",
   "lunchSource": "https://trattoriacontemporanea.it/wp-content/uploads/2025/06/MENU-LUNCH-ITA.pdf",
   "website": "https://trattoriacontemporanea.it/",
@@ -32,5 +32,64 @@
     "gluten-free"
   ],
   "chef": "Davide Marzullo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Coraggio tasting menu",
+      "meal": "dinner",
+      "price": 170,
+      "wine": 90,
+      "courses": 7,
+      "note": "Lunch or dinner; drinks pairing €90; €10 a person added for water, bread and place setting"
+    },
+    {
+      "name": "Passione tasting menu",
+      "meal": "dinner",
+      "price": 150,
+      "wine": 70,
+      "courses": 5,
+      "note": "Lunch or dinner; drinks pairing €70; €10 a person added for water, bread and place setting"
+    },
+    {
+      "name": "Istinto vegetarian tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "wine": 55,
+      "courses": 4,
+      "note": "Lunch or dinner; drinks pairing €55; €10 a person added for water, bread and place setting"
+    },
+    {
+      "name": "Two dishes of your choice",
+      "meal": "dinner",
+      "price": 130,
+      "courses": 2,
+      "note": "Lunch or dinner; chosen from the three tasting menus; three dishes €150; desserts €15–20 extra; €10 a person added for water, bread and place setting"
+    },
+    {
+      "name": "Business lunch, starter and main",
+      "meal": "lunch",
+      "price": 30,
+      "courses": 2,
+      "note": "With water and coffee; Tuesday to Friday, not on public holidays; two mains €35"
+    },
+    {
+      "name": "Business lunch special",
+      "meal": "lunch",
+      "price": 60,
+      "courses": 4,
+      "note": "Three savoury courses and a crème caramel, with water and coffee; Tuesday to Friday, not on public holidays"
+    }
+  ],
+  "menusSource": "https://trattoriacontemporanea.it/wp-content/uploads/2026/10/MENU-CENA-ITA-10-26.pdf",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the booking page on the restaurant's website (prenota-web), for up to 6 people; booking calls and messages are handled Monday to Friday, 9am–1pm and 2–6pm.",
+  "bookingUrl": "https://trattoriacontemporanea.it/prenota/",
+  "bookingPhone": "+39 02 8089 6040, Monday to Friday 9am–1pm and 2–6pm",
+  "cancellation": "Bookings can be cancelled up to 12 hours ahead, through the link in the confirmation email or by phone.",
+  "waitlist": "When no table is free, a waiting-list form can be filled in; the restaurant calls if a table comes free. Being on the list is not a booking.",
+  "groups": "Groups of more than 6 book by phone and choose one of the tasting menus on the day.",
+  "dressCode": "No dress code; informal or smart casual clothes are suggested.",
+  "children": "Children of any age are welcome, as long as other guests' peace is respected.",
+  "infoSource": "https://trattoriacontemporanea.prenota-web.it/prenotazioni/singlepage.asp?iframe=1&lang=it&ristorante=default",
+  "infoChecked": "2026-10-13"
 }

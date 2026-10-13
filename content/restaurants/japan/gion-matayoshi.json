@@ -10,7 +10,7 @@
   "rating": 4.7,
   "reviews": 201,
   "dinnerType": "menu",
-  "dinnerNote": "Omakase course, from; including tax and service",
+  "dinnerNote": "Omakase course at the counter, from (tatami room from ¥38,000); 20% service extra",
   "sourceType": "press",
   "website": "http://www.gion-matayoshi.com/",
   "lat": 35.003349,
@@ -18,12 +18,58 @@
   "placeId": "ChIJF2tmi8MIAWARjnuvxZjfwTk",
   "michelinId": "1192928",
   "dinner": 36000,
-  "dinnerNoteJa": "おまかせコース（最安値）・税サ込",
+  "dinnerNoteJa": "おまかせコース・カウンター（最安値、座敷は38,000円〜）・サービス料20%別",
   "source": "https://www.tablecheck.com/shops/gion-matayoshi/reserve",
   "lunch": 20000,
   "lunchType": "menu",
   "lunchSourceType": "press",
   "lunchSource": "https://www.tablecheck.com/shops/gion-matayoshi/reserve",
-  "lunchNote": "Lunch omakase, from; including tax and service",
-  "lunchNoteJa": "昼のおまかせコース（最安値）・税サ込"
+  "lunchNote": "Lunch course at the counter, from (tatami room from ¥22,000); 20% service extra",
+  "lunchNoteJa": "お昼のコース・カウンター（最安値、座敷は22,000円〜）・サービス料20%別",
+  "menus": [
+    {
+      "name": "omakase course at the counter",
+      "meal": "dinner",
+      "price": 36000,
+      "note": "Dinner, from ¥36,000 depending on the day's market; prepaid online; 20% service charge added; ¥40,000 from 30 December to 3 January"
+    },
+    {
+      "name": "omakase course in a tatami room",
+      "meal": "dinner",
+      "price": 38000,
+      "note": "Dinner in a private tatami room, from ¥38,000; prepaid online; 20% service charge added; ¥42,000 from 30 December to 3 January"
+    },
+    {
+      "name": "lunch course at the counter",
+      "meal": "lunch",
+      "price": 20000,
+      "note": "From ¥20,000; at least two people, 12pm start only; prepaid online; 20% service charge added"
+    },
+    {
+      "name": "lunch course in a tatami room",
+      "meal": "lunch",
+      "price": 22000,
+      "note": "From ¥22,000; at least two people, 12pm start only; prepaid online; 20% service charge added"
+    }
+  ],
+  "menusSource": "https://www.tablecheck.com/en/shops/gion-matayoshi/reserve",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Matakichi",
+      "note": "The restaurant's casual sister shop nearby on the same street in Gion, known for shaved ice (kakigori), open 11am to 3pm and 5pm to 10pm",
+      "url": "http://www.gion-matayoshi.com/"
+    }
+  ],
+  "bookingOpens": "First-time guests can book only online, through TableCheck, where the course is paid in advance. Bookings made by a third party on someone else's behalf are cancelled with a fee.",
+  "bookingUrl": "https://www.tablecheck.com/en/shops/gion-matayoshi/reserve",
+  "bookingPhone": "+81 75 551 0117",
+  "cancellation": "The cancellation fee is set out on the booking confirmation page. A booking may be cancelled if guests arrive more than 30 minutes late.",
+  "groups": "Private tatami rooms seat up to 4 on the ground floor and up to 8 upstairs; online bookings take up to nine people.",
+  "dressCode": "No slippers or shorts.",
+  "children": "Children are not allowed.",
+  "duration": "Lunch starts at 12pm and guests leave by 2pm.",
+  "servicePct": 20,
+  "infoSource": "https://www.tablecheck.com/en/shops/gion-matayoshi/reserve",
+  "infoChecked": "2026-10-13"
 }

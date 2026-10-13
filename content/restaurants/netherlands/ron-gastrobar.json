@@ -6,11 +6,11 @@
   "cuisine": "Creative French",
   "rating": 4.3,
   "reviews": 1901,
-  "dinnerType": "menu",
-  "dinner": 114.5,
-  "dinnerNote": "Tasting menu",
-  "sourceType": "press",
-  "source": "https://www.gault-millau.nl/en/restaurants/ron-gastrobar-amsterdam",
+  "dinnerType": "main",
+  "dinner": 35,
+  "dinnerNote": "À la carte; mains €25–€47 (Beef Wellington €90 for two)",
+  "sourceType": "site",
+  "source": "https://rongastrobar.nl/wp-content/uploads/2026/09/WEB-RG-menu-18092026-A4-NL.pdf",
   "website": "https://rongastrobar.nl/",
   "lat": 52.3522317,
   "lng": 4.8566529,
@@ -22,10 +22,29 @@
     "gluten-free",
     "halal"
   ],
-  "dinnerNoteNl": "Proeverijmenu",
+  "dinnerNoteNl": "À la carte; hoofdgerechten € 25–47 (Beef Wellington € 90 voor twee)",
   "lunchNote": "Open for lunch",
   "lunchNoteNl": "Open voor lunch",
   "cuisineNl": "Creatief Frans",
   "chef": "Ron Blaauw",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Sunday Well Spent menu",
+      "meal": "lunch",
+      "price": 65,
+      "note": "Sunday afternoons only: a snack, a starter and the Beef Wellington with mashed potato and gravy; for 2 or more people, in multiples of two."
+    }
+  ],
+  "menusSource": "https://bookings.zenchef.com/results?rid=374966&lang=en",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the restaurant's booking page (Zenchef), with a €15 per person prepayment, or by phone. Open every day from 12pm to 10.30pm for lunch and dinner.",
+  "bookingUrl": "https://bookings.zenchef.com/results?rid=374966&lang=en",
+  "bookingPhone": "+31 20 496 1943",
+  "cancellation": "Bookings can be cancelled free of charge up to 24 hours ahead and changed up to 2 hours ahead. The restaurant sends a confirmation email and a reminder and calls on the day.",
+  "groups": "Online bookings are for up to 8 people. For groups of more than 8, events or private parties, use the group request form.",
+  "groupsUrl": "https://rongastrobar.nl/groepen/eten-met-8/",
+  "children": "Children are welcome, but there is no children's menu.",
+  "infoSource": "https://rongastrobar.nl/over/faq/",
+  "infoChecked": "2026-10-13"
 }

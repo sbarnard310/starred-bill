@@ -29,5 +29,33 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteLv": "Tikai vakariņas",
-  "areaLv": "Rīga"
+  "areaLv": "Rīga",
+  "menus": [
+    {
+      "name": "Set menu",
+      "meal": "dinner",
+      "price": 220,
+      "wine": 180,
+      "courses": 15,
+      "note": "Thursday to Saturday dinner; juice pairing €105; a vegetarian version is offered"
+    },
+    {
+      "name": "Chef's Table set menu",
+      "meal": "dinner",
+      "price": 350,
+      "courses": 16,
+      "note": "Four seats facing the kitchen; no vegetarian, gluten-free or lactose-free changes"
+    }
+  ],
+  "menusSource": "https://maxcekot.com/en/menu",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2023,
+  "bookingOpens": "Online on the restaurant's website, choosing a table or the Chef's Table; the dinner is paid in advance when booking.",
+  "bookingUrl": "https://maxcekot.com/en/book_a_table?new",
+  "bookingPhone": "+371 20 112 102, weekdays 10am to 5:30pm",
+  "cancellation": "Cancel by email to info@maxcekot.com up to five business days before the dinner for a full refund; after that the prepayment is not refunded.",
+  "children": "Children are welcome if they are used to restaurant etiquette and have the tasting menu.",
+  "duration": "About three hours.",
+  "infoSource": "https://maxcekot.com/en/book_a_table?new",
+  "infoChecked": "2026-10-13"
 }

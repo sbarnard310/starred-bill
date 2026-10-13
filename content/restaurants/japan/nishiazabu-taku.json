@@ -34,5 +34,23 @@
   "placeId": "ChIJHSE313qLGGARaWJnpWIgkkw",
   "michelinId": "1194115",
   "chef": "Takuya Sato",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Omakase course",
+      "meal": "dinner",
+      "price": 35200,
+      "note": "About 20 pieces of tsumami and sushi; the same course at Saturday lunch; including tax and service"
+    }
+  ],
+  "menusSource": "https://omakaseje.com/restaurants/yq954993",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online only, through OMAKASE, which the restaurant's own site links to. The course is paid in advance, and a booking stands only once the restaurant has confirmed it.",
+  "bookingUrl": "https://omakaseje.com/restaurants/yq954993",
+  "groups": "The whole restaurant can be booked for up to 20 guests. Besides the eight-seat main counter there are two six-seat counters, one in a private room and one in an annex nearby; seats can't be chosen when booking.",
+  "dressCode": "Smart casual.",
+  "children": "Guests aged 12 and over only.",
+  "byob": "Wine only, with corkage of ¥3,300 a bottle.",
+  "infoSource": "https://nishiazabu-taku.com/en",
+  "infoChecked": "2026-10-13"
 }

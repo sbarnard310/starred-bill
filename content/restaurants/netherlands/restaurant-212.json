@@ -8,9 +8,9 @@
   "reviews": 486,
   "dinnerType": "menu",
   "dinner": 268,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Chef's tasting menu (3 courses of your choice €258)",
   "sourceType": "site",
-  "source": "https://www.212.amsterdam/_files/ugd/0d6402_64c36cbd1c5648f19fd0bafd5b395d9f.pdf",
+  "source": "https://www.212.amsterdam/_files/ugd/0d6402_816de2424497431d9e1247914d20a678.pdf",
   "website": "https://212.amsterdam/",
   "lat": 52.365853,
   "lng": 4.900326,
@@ -19,14 +19,60 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu",
-  "lunch": 268,
+  "dinnerNoteNl": "Chefsmenu (3 gangen naar keuze € 258)",
+  "lunch": 258,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Wed–Sat",
-  "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
+  "lunchNote": "3 courses of your choice · Wed–Sat (chef's menu €268)",
+  "lunchNoteNl": "3 gangen naar keuze · wo–za (chefsmenu € 268)",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.212.amsterdam/_files/ugd/0d6402_64c36cbd1c5648f19fd0bafd5b395d9f.pdf",
+  "lunchSource": "https://www.212.amsterdam/_files/ugd/0d6402_816de2424497431d9e1247914d20a678.pdf",
   "cuisineNl": "Creatief",
   "chef": "Richard van Oostenbrugge and Thomas Groot",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "chef's tasting menu",
+      "meal": "dinner",
+      "price": 268,
+      "note": "Lunch or dinner. Turbot with white Alba truffle instead of the sea bass costs €88 extra. Tables of more than 4 are served only the 5-course chef's menu."
+    },
+    {
+      "name": "4-course menu of your choice",
+      "meal": "dinner",
+      "price": 328,
+      "courses": 4,
+      "note": "Lunch or dinner; chosen from the à la carte dishes (starter, second starter or main, main, dessert)."
+    },
+    {
+      "name": "3-course menu of your choice",
+      "meal": "dinner",
+      "price": 258,
+      "courses": 3,
+      "note": "Lunch or dinner; starter, main and dessert chosen from the à la carte dishes."
+    }
+  ],
+  "menusSource": "https://www.212.amsterdam/_files/ugd/0d6402_816de2424497431d9e1247914d20a678.pdf",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Bistro de la Mer",
+      "note": "The chefs' seafood bistro at Utrechtsestraat 57."
+    },
+    {
+      "name": "Auberge",
+      "note": "The chefs' French restaurant at Albert Cuypstraat 58-60."
+    },
+    {
+      "name": "De Juwelier",
+      "note": "Another restaurant in the chefs' Group 212."
+    }
+  ],
+  "starsSince": 2021,
+  "bookingOpens": "Online through the booking window on the restaurant's website (Guestplan), or by phone or email (info@restaurant-212.com). Lunch Wednesday to Saturday, 12pm to 1.30pm; dinner Tuesday to Saturday, 6.30pm to 9pm.",
+  "bookingUrl": "https://www.212.amsterdam/restaurant-212",
+  "bookingPhone": "+31 20 334 8685",
+  "groups": "Tables of more than 4 are served only the chef's menu. The private dining room in the wine cellar seats up to 10, with a 5-course chef's menu; book it online up to 7 days ahead, or email events@group-212.com for later requests.",
+  "groupsUrl": "https://www.212.amsterdam/privateroom-group212",
+  "infoSource": "https://www.212.amsterdam/restaurant-212",
+  "infoChecked": "2026-10-13"
 }

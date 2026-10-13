@@ -11,11 +11,11 @@
   "reviews": 341,
   "dinnerType": "menu",
   "dinner": 35200,
-  "dinnerNote": "Tasting menu",
+  "dinnerNote": "Tasting menu, about 13 courses; tax and service included",
   "sourceType": "site",
   "source": "https://www.la-cime.com/",
-  "lunchNote": "Open for lunch · Saturdays",
-  "lunchNoteJa": "ランチ営業あり・土曜日",
+  "lunchNote": "Same menu at lunch · Saturdays",
+  "lunchNoteJa": "ランチも同じコース・土曜日",
   "website": "https://www.la-cime.com/",
   "lat": 34.685818,
   "lng": 135.503519,
@@ -26,6 +26,22 @@
   ],
   "chef": "Yusuke Takada",
   "chefSource": "michelin",
+  "lunch": 35200,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.la-cime.com/",
+  "menus": [
+    {
+      "name": "tasting menu",
+      "meal": "dinner",
+      "price": 35200,
+      "courses": 13,
+      "note": "The only menu, lunch or dinner: five amuse-bouches, four starters, two mains, pre-dessert and dessert, then petits fours and tea; tax and service included, plus 15% for the private room"
+    }
+  ],
+  "menusSource": "https://www.la-cime.com/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online (taken at any hour, with separate Japanese and English booking pages) or by phone. A booking is confirmed only once guests reply to the restaurant's confirmation email, sent within a few days; the restaurant also calls or emails about three days before to reconfirm, and unconfirmed bookings may be cancelled.",
   "bookingWindow": {
     "type": "rolling",
     "months": 1,
@@ -33,5 +49,13 @@
     "via": "website",
     "source": "https://www.la-cime.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "bookingUrl": "https://www.primedinners.com/en/restaurant/la-cime",
+  "bookingPhone": "+81 6 6222 2010",
+  "cancellation": "Cancellations or reductions in party size on the day before or the day itself are charged a fee; cancel by phone by the day before at the latest.",
+  "groups": "One private room seats up to six, at an extra 15%. Parties of five or more are seated in it, as are smaller parties when the dining room is full, with the same charge.",
+  "dressCode": "No set dress code, but no shorts or flip-flops.",
+  "children": "Only children old enough to eat the adult menu.",
+  "infoSource": "https://www.la-cime.com/",
+  "infoChecked": "2026-10-13"
 }

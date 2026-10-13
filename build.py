@@ -6664,7 +6664,15 @@ RESTAURANT_PAGES = ("le-bernardin", "la-pergola", "restaurant-gordon-ramsay", "o
                     "schwarzer-hahn", "the-cloud-by-kafer", "tohru-in-der-schreiberei", "winzerhof-stahl", "makris-athens",
                     "cristal-room-by-anne-sophie-pic", "ryota-kappou-modern", "spring-moon", "tang-court", "xin-rong-ji", "yat-tung-heen",
                     "glovers-alley", "casa-sgarra", "cracco-portofino", "cucina-cereda", "dalla-gioconda", "due-colombe",
-                    "gucci-osteria-da-massimo-bottura", "iyo-kaiseki", "la-capinera")
+                    "gucci-osteria-da-massimo-bottura", "iyo-kaiseki", "la-capinera",
+                    # Batch 6, wave 3, 13 Oct 2026
+                    "la-ciau-del-tornavento", "leon-d-oro", "miramonti-l-altro", "pascucci-al-porticciolo", "per-me-giulio-terrinoni",
+                    "storie-damore", "trattoria-contemporanea", "trattoria-da-amerigo", "trattoria-zappatori", "villa-elena",
+                    "gion-matayoshi", "il-ristorante-niko-romito", "kikunoi-honten", "la-cime", "la-gloire", "nishiazabu-sushi-shin",
+                    "nishiazabu-taku", "oniku-karyu", "oryori-mashita", "sushi-matsuura", "sushi-miura", "tempura-motoyoshi",
+                    "yakitori-ichimatsu", "max-cekot-kitchen", "archibald-de-prince", "auntie-gaik-leans-old-school-eatery",
+                    "terra-dining", "la-once-mil", "le-chique", "los-danzantes", "sud-777", "aan-de-poel", "de-kromme-dissel", "de-leuf",
+                    "lars-amsterdam", "restaurant-212", "restaurant-de-kas", "ron-gastrobar", "jano-bistro", "sabi-omakase-oslo")
 # The owner's rule (9 Oct 2026): at most 10 questions per page, and none that repeats what the page already says. On a
 # restaurant page the questions are its own section headings, each with its answer straight under it; the structured data
 # (FAQPage) lists them, most-asked first.

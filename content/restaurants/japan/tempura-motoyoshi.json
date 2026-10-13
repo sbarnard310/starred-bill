@@ -34,5 +34,21 @@
   "placeId": "ChIJ3cFPK-aLGGARNaz58SuwM7M",
   "michelinId": "1194079",
   "chef": "Kazuhito Motoyoshi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Omakase course",
+      "meal": "dinner",
+      "price": 33000,
+      "note": "Tax included, plus 10% service; can rise to ¥44,000 with seasonal ingredients"
+    }
+  ],
+  "menusSource": "https://omakase.in/en/r/xm882789",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "By phone or online through OMAKASE.",
+  "bookingUrl": "https://omakase.in/en/r/xm882789",
+  "bookingPhone": "+81 3-6455-0200",
+  "infoSource": "https://guide.michelin.com/en/tokyo-region/tokyo/restaurant/tempura-motoyoshi",
+  "infoChecked": "2026-10-13"
 }

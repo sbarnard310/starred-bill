@@ -9,13 +9,13 @@
   "reviews": 380,
   "dinnerType": "menu",
   "dinner": 130,
-  "dinnerNote": "Tasting menu (other menus from €110)",
+  "dinnerNote": "Six-course tasting menu, Menù 1975 or Materie prime (four courses €110)",
   "sourceType": "site",
   "source": "https://trattoriazappatori.it/menu/",
-  "lunch": 130,
+  "lunch": 35,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Fri–Sun",
-  "lunchNoteIt": "Stesso menu a pranzo · ven–dom",
+  "lunchNote": "Colazione di lavoro working lunch · Fridays (tasting menus from €110 at lunch Fri–Sun)",
+  "lunchNoteIt": "Colazione di lavoro · venerdì (menu degustazione da €110 a pranzo ven–dom)",
   "lunchSourceType": "site",
   "lunchSource": "https://trattoriazappatori.it/menu/",
   "website": "https://www.trattoriazappatori.it",
@@ -29,5 +29,46 @@
     "gluten-free"
   ],
   "chef": "Christian Milone",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "wine": 70,
+  "menus": [
+    {
+      "name": "six-course Menù 1975 tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "wine": 70,
+      "courses": 6,
+      "note": "Five savoury dishes and a dessert from the traditional Menù 1975, the same for the whole table; lunch or dinner; local wine pairing €70, or €90 with wines from Italy and abroad"
+    },
+    {
+      "name": "six-course Materie prime tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "wine": 70,
+      "courses": 6,
+      "note": "Two chosen ingredients (such as mushrooms or roots) developed into five savoury dishes and a dessert, the same for the whole table; lunch or dinner; local wine pairing €70, or €90 with wines from Italy and abroad"
+    },
+    {
+      "name": "four-course tasting menu",
+      "meal": "dinner",
+      "price": 110,
+      "wine": 50,
+      "courses": 4,
+      "note": "Three savoury dishes and a dessert from either the Menù 1975 or the Materie prime menu, the same for the whole table; lunch or dinner; local wine pairing €50, or €70 with wines from Italy and abroad"
+    },
+    {
+      "name": "Colazione di lavoro working lunch",
+      "meal": "lunch",
+      "price": 35,
+      "note": "Friday lunch only, not on public holidays; snacks, two dishes from the Menù 1975 (some €10 extra), petits fours, coffee and water, the same for the whole table"
+    }
+  ],
+  "menusSource": "https://trattoriazappatori.it/menu/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online with the booking form on the restaurant's website, by phone or by email (info@trattoriazappatori.it).",
+  "bookingUrl": "https://trattoriazappatori.it/prenota-un-tavolo/",
+  "bookingPhone": "+39 0121 374158",
+  "groups": "The booking form offers a chef's table for up to two people and a small private room for up to four.",
+  "infoSource": "https://trattoriazappatori.it/prenota-un-tavolo/",
+  "infoChecked": "2026-10-13"
 }

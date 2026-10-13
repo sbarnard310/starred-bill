@@ -8,18 +8,18 @@
   "cuisine": "Fish and Seafood",
   "rating": 4.6,
   "reviews": 785,
-  "dinner": 130,
+  "dinner": 150,
   "dinnerType": "menu",
-  "dinnerNote": "Classic tasting menu",
-  "dinnerNoteIt": "Menu degustazione classico",
+  "dinnerNote": "Come è profondo il mare… tasting menu (classic tasting menu €130)",
+  "dinnerNoteIt": "Menu degustazione Come è profondo il mare… (menu degustazione classico €130)",
   "sourceType": "site",
-  "source": "https://pascuccialporticciolo.it/menu/",
+  "source": "https://www.pascuccialporticciolo.it/PDF/Menu_2026.pdf",
   "lunch": 130,
   "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Sat–Sun",
-  "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
+  "lunchNote": "Classic tasting menu · Sat–Sun",
+  "lunchNoteIt": "Menu degustazione classico · sab–dom",
   "lunchSourceType": "site",
-  "lunchSource": "https://pascuccialporticciolo.it/menu/",
+  "lunchSource": "https://www.pascuccialporticciolo.it/PDF/Menu_2026.pdf",
   "website": "https://www.pascuccialporticciolo.it/",
   "lat": 41.770165,
   "lng": 12.227144,
@@ -29,5 +29,27 @@
     "vegetarian"
   ],
   "chef": "Gianfranco Pascucci",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Come è profondo il mare… tasting menu",
+      "meal": "dinner",
+      "price": 150,
+      "note": "For the whole table; drinks extra; lunch or dinner"
+    },
+    {
+      "name": "Classic tasting menu",
+      "meal": "dinner",
+      "price": 130,
+      "note": "For the whole table; drinks extra; lunch or dinner"
+    }
+  ],
+  "menusSource": "https://www.pascuccialporticciolo.it/PDF/Menu_2026.pdf",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Through the booking form on the restaurant's website, by phone or by email.",
+  "bookingUrl": "https://pascuccialporticciolo.it/contattaci/",
+  "bookingPhone": "+39 06 6502 9204",
+  "groups": "About 30 seats in all, in a main room and a veranda with three tables, plus a small private room with a view of the wine cellar.",
+  "infoSource": "https://pascuccialporticciolo.it/contattaci/",
+  "infoChecked": "2026-10-13"
 }

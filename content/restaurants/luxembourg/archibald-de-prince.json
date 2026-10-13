@@ -33,5 +33,31 @@
   "chefSource": "michelin",
   "dinnerNote": "Single menu",
   "dinnerNoteFr": "Menu unique",
-  "dinnerNoteDe": "Einziges Menü"
+  "dinnerNoteDe": "Einziges Menü",
+  "menus": [
+    {
+      "name": "Single seasonal menu",
+      "meal": "dinner",
+      "price": 195,
+      "note": "Lunch or dinner; a plant-based version is offered on request"
+    }
+  ],
+  "menusSource": "https://www.archibalddeprince.lu/la-table/",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Bistrot Wainhaus",
+      "note": "The chef's bistro in Ehnen on the Moselle wine road: local, seasonal cooking and Luxembourg wines; lunch Wednesday to Sunday, dinner Thursday to Saturday",
+      "url": "https://bistrotwainhaus.lu/"
+    }
+  ],
+  "starsSince": 2025,
+  "bookingOpens": "Online through the booking form on the restaurant's website, or by phone. Open from Thursday dinner to Sunday dinner, with lunch Friday to Sunday.",
+  "bookingUrl": "https://www.archibalddeprince.lu/reservation/",
+  "bookingPhone": "+352 27 44 25",
+  "groups": "A private room seats up to 14, a seminar room up to 30, and events can be held in the garden; ask by email to info@archibalddeprince.lu.",
+  "groupsUrl": "https://www.archibalddeprince.lu/evenements/",
+  "dressCode": "Smart dress is required.",
+  "infoSource": "https://www.archibalddeprince.lu/la-table/",
+  "infoChecked": "2026-10-13"
 }

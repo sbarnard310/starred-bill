@@ -38,5 +38,36 @@
   "placeId": "ChIJ8cnaHjOLGGAR8ph1h6MVHxk",
   "michelinId": "1209573",
   "chef": "Kenta Miura",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Omakase course",
+      "meal": "dinner",
+      "price": 35000,
+      "note": "Including tax and service"
+    },
+    {
+      "name": "Omakase course",
+      "meal": "lunch",
+      "price": 25000,
+      "note": "Including tax and service"
+    },
+    {
+      "name": "Chef's Choice course",
+      "meal": "lunch",
+      "price": 20000,
+      "note": "Sushi made mostly by the second chef; including tax and service"
+    }
+  ],
+  "menusSource": "https://omakaseje.com/restaurants/fv217614",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Online through OMAKASE, which the restaurant's own site links to; the course is paid in advance.",
+  "bookingUrl": "https://omakaseje.com/restaurants/fv217614",
+  "cancellation": "A table is cancelled automatically if guests are late without calling.",
+  "groups": "The eight-seat counter can be booked for private use.",
+  "dressCode": "Smart casual.",
+  "children": "Guests under 18 are not admitted.",
+  "infoSource": "https://sushimiura-japan.com/en",
+  "infoChecked": "2026-10-13"
 }

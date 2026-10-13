@@ -27,5 +27,27 @@
     "gluten-free"
   ],
   "chef": "Jonatán Gómez Luna",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Tasting menu",
+      "meal": "dinner",
+      "price": 3900,
+      "wine": 3000,
+      "courses": 27,
+      "note": "Mexico pairing of Mexican wines MX$3,000, or the Saasil pairing of wines from around the world MX$5,000; the pairing is chosen at the start of the meal"
+    }
+  ],
+  "menusSource": "https://www.hotelxcaretarte.com/en/le-chique/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "hotel": "Hotel Xcaret Arte",
+  "bookingOpens": "Online on OpenTable, through the hotel concierge, by email to hxarlechique@hotelxcaret.com or by phone. Dinner Monday to Saturday, with tables every 30 minutes from 6pm to 8pm. Seats are limited, so booking ahead is advised, especially in high season.",
+  "bookingUrl": "https://www.opentable.com.mx/r/le-chique-cancun",
+  "bookingPhone": "+52 984 257 7200 (extension 4670), 9am to 10pm daily",
+  "groups": "A chef's table and private spaces for small groups are available.",
+  "dressCode": "Formal or smart casual. Men must wear long trousers and closed shoes.",
+  "children": "Adults only: Hotel Xcaret Arte is an adults-only hotel.",
+  "infoSource": "https://www.hotelxcaretarte.com/en/le-chique/",
+  "infoChecked": "2026-10-13"
 }

@@ -33,5 +33,45 @@
   "cuisineNl": "Creatief",
   "lunchNoteNl": "Lunchmenu",
   "chef": "Stefan van Sprang",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Chef's menu",
+      "meal": "dinner",
+      "price": 179,
+      "courses": 5,
+      "note": "Dessert included"
+    },
+    {
+      "name": "Chef's menu, four courses",
+      "meal": "dinner",
+      "price": 149,
+      "courses": 4,
+      "note": "Dessert included"
+    },
+    {
+      "name": "Chef's lunch menu",
+      "meal": "lunch",
+      "price": 99,
+      "courses": 3,
+      "note": "Lunch Tuesday to Friday; dessert included"
+    },
+    {
+      "name": "Chef's lunch menu, four courses",
+      "meal": "lunch",
+      "price": 119,
+      "courses": 4,
+      "note": "Lunch Tuesday to Friday; dessert included"
+    }
+  ],
+  "menusSource": "https://aandepoel.nl/menu-and-wines/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2012,
+  "bookingOpens": "Online through the booking button (Guestplan) on the restaurant's website, by phone or by email to info@aandepoel.nl. Lunch Tuesday to Friday from 12pm to 2pm, dinner Tuesday to Saturday from 6pm to 10pm. Reservations are recommended.",
+  "bookingUrl": "https://aandepoel.nl/",
+  "bookingPhone": "+31 20 345 1763",
+  "groups": "The wine room can be booked privately for lunch or dinner for up to 16 guests.",
+  "groupsUrl": "https://aandepoel.nl/private-dining/",
+  "infoSource": "https://aandepoel.nl/contact/",
+  "infoChecked": "2026-10-13"
 }

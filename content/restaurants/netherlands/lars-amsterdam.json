@@ -8,7 +8,7 @@
   "reviews": 424,
   "dinnerType": "menu",
   "dinner": 222,
-  "dinnerNote": "Tasting menu (other menus from €115)",
+  "dinnerNote": "Lars Exclusive menu, 8 courses (Lars Experience from €140, Lars Green from €115)",
   "sourceType": "site",
   "source": "https://larsamsterdam.nl/",
   "website": "https://www.larsamsterdam.nl/",
@@ -23,12 +23,49 @@
   ],
   "chef": "Lars Scharp",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 115)",
-  "lunch": 222,
-  "lunchType": "menu",
-  "lunchNote": "Same menu at lunch · Thu–Sat",
-  "lunchNoteNl": "Zelfde menu bij de lunch · do–za",
+  "dinnerNoteNl": "Lars Exclusive-menu, 8 gangen (Lars Experience vanaf € 140, Lars Green vanaf € 115)",
+  "lunchNote": "Lunch from 3 courses of the dinner dishes, price not listed · Thu–Sat",
+  "lunchNoteNl": "Lunch vanaf 3 gangen met gerechten uit het dinermenu, prijs niet vermeld · do–za",
   "lunchSourceType": "site",
   "lunchSource": "https://larsamsterdam.nl/",
-  "cuisineNl": "Moderne keuken"
+  "cuisineNl": "Moderne keuken",
+  "menus": [
+    {
+      "name": "Lars Exclusive menu",
+      "meal": "dinner",
+      "price": 222,
+      "courses": 8
+    },
+    {
+      "name": "Lars Experience menu",
+      "meal": "dinner",
+      "price": 160,
+      "courses": 6,
+      "note": "Also as 5 courses for €140."
+    },
+    {
+      "name": "Lars Green menu",
+      "meal": "dinner",
+      "price": 135,
+      "courses": 6,
+      "note": "Vegetarian menu built on the restaurant's rooftop garden; also as 5 courses for €115."
+    }
+  ],
+  "menusSource": "https://larsamsterdam.nl/#menu",
+  "menusChecked": "2026-10-13",
+  "alsoTry": [
+    {
+      "name": "Cachet",
+      "note": "The owners' newer restaurant in Badhoevedorp, for breakfast, lunch and French-leaning bites.",
+      "url": "https://lecachet.nl"
+    }
+  ],
+  "starsSince": 2022,
+  "hotel": "the Moxy and Residence Inn hotel building in the Houthavens",
+  "bookingOpens": "Online through the Book a Table button on the restaurant's website (Tebi), or by phone, WhatsApp (+31 6 58839469) or email (info@larsamsterdam.nl). Lunch Thursday to Saturday from 12pm; dinner Tuesday to Saturday from 6pm; closed Sunday and Monday.",
+  "bookingUrl": "https://larsamsterdam.nl/",
+  "bookingPhone": "+31 20 214 9729",
+  "groups": "On days the restaurant is normally closed, it takes groups of 20 or more on request; private dining and events by enquiry.",
+  "infoSource": "https://larsamsterdam.nl/",
+  "infoChecked": "2026-10-13"
 }

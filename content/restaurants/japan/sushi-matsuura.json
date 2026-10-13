@@ -32,5 +32,23 @@
   "placeId": "ChIJyfbUCk-LGGARtkHwR4hgy-Y",
   "michelinId": "1195371",
   "chef": "Osamu Matsuura",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "Omakase course",
+      "meal": "dinner",
+      "price": 20000,
+      "note": "The same course at Saturday lunch; including tax and service"
+    }
+  ],
+  "menusSource": "https://omakaseje.com/restaurants/kq893597",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through OMAKASE, where the course is paid in advance, or by phone.",
+  "bookingUrl": "https://omakaseje.com/restaurants/kq893597",
+  "bookingPhone": "+81 3-6450-2557",
+  "cancellation": "A table is cancelled automatically if guests are late without calling.",
+  "dressCode": "Smart casual: no T-shirts, shorts or sandals.",
+  "byob": "Corkage is ¥3,300 a bottle.",
+  "infoSource": "https://omakaseje.com/restaurants/kq893597",
+  "infoChecked": "2026-10-13"
 }

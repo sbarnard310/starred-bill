@@ -9,13 +9,13 @@
   "cuisineZh": "時尚法國菜",
   "rating": 4.9,
   "reviews": 201,
-  "dinner": 160,
+  "dinner": 175,
   "dinnerType": "menu",
   "dinnerNote": "Jano Experience, 6 courses plus extras",
   "dinnerNoteZh": "「Jano Experience」6 道另加小點",
-  "wine": 80,
-  "sourceType": "press",
-  "source": "https://www.wellingtonnz.com/visit/eat-and-drink/jano-bistro",
+  "wine": 85,
+  "sourceType": "site",
+  "source": "https://www.janobistro.co.nz/jano-menu",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZh": "僅供應晚餐",
@@ -29,5 +29,25 @@
     "vegan"
   ],
   "chef": "Pierre-Alain Fenoux",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menus": [
+    {
+      "name": "Jano Experience degustation menu",
+      "meal": "dinner",
+      "price": 175,
+      "wine": 85,
+      "courses": 6,
+      "note": "Six courses plus extras, with optional beverage matches. The only menu on Saturdays; the menu changes every 6 to 8 weeks."
+    }
+  ],
+  "menusSource": "https://www.janobistro.co.nz/jano-menu",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through Now Book It for up to 8 guests; a credit card pre-authorisation secures the booking. Dinner Wednesday to Saturday from 5.30pm; closed on public holidays except Anzac Day.",
+  "bookingUrl": "https://bookings.nowbookit.com/?accountid=2f93a44e-5325-4625-9243-77d5b2523478&venueid=2136",
+  "bookingPhone": "+64 4 382 9892",
+  "groups": "Groups of 9 or more use the booking form, preferably from 7.30pm, with a set menu and a deposit. The private dining room seats up to 12 at one table or 14 at two; bookings outside opening hours need a deposit and minimum spend.",
+  "groupsUrl": "https://www.janobistro.co.nz/booknow",
+  "children": "There is no children's menu.",
+  "infoSource": "https://www.janobistro.co.nz/booknow",
+  "infoChecked": "2026-10-13"
 }

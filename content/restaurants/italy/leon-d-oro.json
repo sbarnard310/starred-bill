@@ -26,5 +26,28 @@
   "placeId": "ChIJY39LAbGvgUcRVk8xyoxylww",
   "michelinId": "146788",
   "chef": "Alfonso Pepe",
-  "chefSource": "press"
+  "chefSource": "press",
+  "menus": [
+    {
+      "name": "La Cucina in Cascina tasting menu",
+      "meal": "dinner",
+      "price": 115,
+      "note": "Country and meat dishes with a dessert; lunch or dinner"
+    },
+    {
+      "name": "Marenostrum tasting menu",
+      "meal": "dinner",
+      "price": 115,
+      "note": "Fish and seafood, with a dessert; lunch or dinner"
+    }
+  ],
+  "menusSource": "https://www.locandaleondoro.com/menu/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Through the booking form on the restaurant's website (up to 15 people) or by phone.",
+  "bookingUrl": "https://www.locandaleondoro.com/prenotazioni/",
+  "bookingPhone": "+39 030 954156",
+  "groups": "Banquets and outside catering for weddings, company events and parties are arranged through the restaurant.",
+  "groupsUrl": "https://www.locandaleondoro.com/banqueting-e-catering/",
+  "infoSource": "https://www.locandaleondoro.com/prenotazioni/",
+  "infoChecked": "2026-10-13"
 }

@@ -32,5 +32,16 @@
     "gluten-free"
   ],
   "chef": "Claudia Lara",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "menusSource": "https://losdanzantesoaxaca.com.mx/comida-es/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2024,
+  "bookingOpens": "Online through CoverManager on the restaurant's website, or by email to hostess.oaxaca@losdanzantes.com.",
+  "bookingUrl": "https://losdanzantesoaxaca.com.mx/reservaciones/",
+  "bookingPhone": "+52 951 501 1184",
+  "cancellation": "Cancel at least 3 hours ahead. Where a card is taken to hold the booking, a late cancellation or no-show costs MX$350 a person.",
+  "groups": "For events, email rpoaxaca@losdanzantes.com.",
+  "dressCode": "Smart casual.",
+  "infoSource": "https://www.covermanager.com/reserve/module_restaurant/Los-Danzantes-Oaxaca/english",
+  "infoChecked": "2026-10-13"
 }

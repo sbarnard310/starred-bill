@@ -9,17 +9,44 @@
   "reviews": 1614,
   "dinnerType": "menu",
   "dinner": 70,
-  "dinnerNote": "Tasting menu (other menus from €55)",
-  "dinnerNoteIt": "Menu degustazione (altri menu da 55 €)",
-  "sourceType": "press",
-  "source": "https://guide.michelin.com/it/it/notizia/dining-out/i-ristoranti-stellati-meno-cari-d-italia-guida-michelin-2026",
-  "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteIt": "Aperto a pranzo · sab–dom",
+  "dinnerNote": "Scoperta e Natura seasonal tasting menu, 5 courses (classic menu €55)",
+  "dinnerNoteIt": "Menu degustazione stagionale Scoperta e Natura, 5 portate (menu classico 55 €)",
+  "sourceType": "site",
+  "source": "https://amerigo1934.com/wp-content/uploads/2026/10/menu_english.jpeg",
+  "lunchNote": "Classic menu, 4 courses · Sat–Sun",
+  "lunchNoteIt": "Menu classico, 4 portate · sab–dom",
   "website": "https://amerigo1934.com/",
   "lat": 44.3903557,
   "lng": 11.0739644,
   "placeId": "ChIJHR-IJQDMKhMRxTv5ilSvqSc",
   "michelinId": "152142",
-  "chef": "Alberto Bettini",
-  "chefSource": "press"
+  "chef": "Giacomo Orlandi",
+  "chefSource": "site",
+  "lunch": 55,
+  "lunchType": "menu",
+  "lunchSourceType": "site",
+  "lunchSource": "https://amerigo1934.com/wp-content/uploads/2026/10/menu_english.jpeg",
+  "menus": [
+    {
+      "name": "Scoperta e Natura seasonal tasting menu",
+      "meal": "dinner",
+      "price": 70,
+      "courses": 5,
+      "note": "Four savoury courses and a dessert from the menu; €65 without dessert; everything but wine included; lunch or dinner; three glasses of Colli Bolognesi wines €20. In truffle season, €90 with white truffle passatelli in place of the lasagne"
+    },
+    {
+      "name": "Classic menu",
+      "meal": "dinner",
+      "price": 55,
+      "courses": 4,
+      "note": "A starter, pasta, main and dessert chosen from the classic dishes (the Premiate Trattorie Italiane menu); everything but wine included; lunch or dinner; three glasses of Colli Bolognesi wines €20"
+    }
+  ],
+  "menusSource": "https://amerigo1934.com/le-nostre-proposte/",
+  "menusChecked": "2026-10-13",
+  "bookingOpens": "Online through the booking link on the restaurant's website (Plateform), or by phone or email.",
+  "bookingUrl": "https://daamerigo.plateform.app",
+  "bookingPhone": "+39 051 670 8326",
+  "infoSource": "https://amerigo1934.com/prenota-2/",
+  "infoChecked": "2026-10-13"
 }

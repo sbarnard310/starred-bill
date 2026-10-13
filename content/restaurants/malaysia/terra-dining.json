@@ -11,8 +11,8 @@
   "rating": 4.6,
   "reviews": 121,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu, 11 courses",
-  "sourceType": "press",
+  "dinnerNote": "Inert.ia tasting menu, priced ++ (service charge and tax on top); wagyu main RM200 extra",
+  "sourceType": "site",
   "website": "https://www.terra-dining.com",
   "lat": 3.1525692,
   "lng": 101.6200964,
@@ -21,13 +21,36 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteMs": "Menu rasa, 11 hidangan",
+  "dinnerNoteMs": "Menu rasa Inert.ia, harga ++ (caj perkhidmatan dan cukai ditambah); hidangan utama wagyu tambahan RM200",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteMs": "Makan malam sahaja",
   "chef": "Chong Yu Cheng",
   "chefSource": "press",
-  "dinner": 398,
-  "wine": 238,
-  "source": "https://www.grazia.my/?p=18077"
+  "dinner": 568,
+  "wine": 298,
+  "source": "https://terra-dining.com/menu/",
+  "menus": [
+    {
+      "name": "Inert.ia tasting menu",
+      "meal": "dinner",
+      "price": 568,
+      "wine": 298,
+      "note": "Priced ++ (service charge and tax on top). Choice of duck or wagyu main (wagyu RM200 extra), chosen when booking. Five-glass wine pairing RM298, three glasses RM198, champagne and wine pairing RM428, zero-proof tea pairing RM268. A vegetarian menu at the same price needs two working days' notice."
+    }
+  ],
+  "menusSource": "https://terra-dining.com/menu/",
+  "menusChecked": "2026-10-13",
+  "starsSince": 2025,
+  "bookingOpens": "Online on SevenRooms, or by WhatsApp or email to reservations@terra-dining.com. A deposit of RM150 a guest, paid by Visa or Mastercard (not Amex), confirms the booking. Dinner Tuesday to Saturday, with tables from 6pm to 8.30pm.",
+  "bookingUrl": "https://www.sevenrooms.com/reservations/terradining",
+  "bookingPhone": "+60 11 7072 7777, also on WhatsApp",
+  "cancellation": "Cancel at least 48 hours ahead. Later cancellations, date changes after that point, fewer guests and no-shows are charged RM150 a guest.",
+  "groups": "For five or more guests, contact the restaurant by WhatsApp or email.",
+  "dressCode": "Smart casual, though guests are encouraged to dress up.",
+  "children": "Children aged 7 and over are welcome and have the same tasting menu as the rest of the table.",
+  "duration": "About two and a half hours.",
+  "byob": "Guests may bring their own wine if they buy one bottle from the list for each bottle brought; spirits corkage is RM300 a bottle.",
+  "infoSource": "https://www.sevenrooms.com/reservations/terradining",
+  "infoChecked": "2026-10-13"
 }

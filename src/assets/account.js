@@ -1,5 +1,5 @@
 // Free accounts. People sign in with an emailed code or link, or Google, and their wishlist, "been there" list and
-// dining diary (what they paid, the menu and private notes) and preferences (home city, currency, dietary needs) follow
+// dining diary (what they paid, the menu, private notes and an optional score from 1 to 5) and preferences (home city, currency, dietary needs) follow
 // them to any device. Supabase (supabase.com) holds the accounts and two tables, `saved` and `profile` (see supabase/schema.sql),
 // plus members' trips (`trips`, supabase/trips.sql, planned on /trips/ and filled from "Add to a trip" below),
 // whose rules let each person read and change only their own rows.
@@ -98,8 +98,10 @@ function snapshotLocal() {
 function rowFor(id, local) {
   const visited = Object.prototype.hasOwnProperty.call(local.visited, id), d = local.diary[id] || {};
   return { user_id: account.user.id, restaurant_id: id, wishlist: local.wish.has(id), visited, visited_on: visited && local.visited[id] ? local.visited[id] : null,
-    paid: d.paid != null ? d.paid : null, paid_currency: d.paid != null ? d.cur || null : null, menu: d.menu || null, note: d.note || null };
+    paid: d.paid != null ? d.paid : null, paid_currency: d.paid != null ? d.cur || null : null, menu: d.menu || null, note: d.note || null,
+    score: visited && d.score ? d.score : null };
 }
+// (A score alone doesn't keep a row: it needs "been there", and the database clears it when that's unticked.)
 const hasDiary = (r) => r.paid != null || !!r.menu || !!r.note;
 // A diary entry from the account's row, leaving out what's blank.
 function diaryOf(r) {
@@ -107,6 +109,7 @@ function diaryOf(r) {
   if (r.paid != null && r.paid !== "") { d.paid = Number(r.paid); if (r.paid_currency) d.cur = r.paid_currency; }
   if (r.menu) d.menu = r.menu;
   if (r.note) d.note = r.note;
+  if (r.score) d.score = r.score;
   return d;
 }
 async function pushIds(ids) {
@@ -167,13 +170,13 @@ async function doSyncDown() {
   if (!account.client || !account.user) return;
   const pending = store.get(PENDING_KEY, []);
   if (pending.length) await pushIds(pending);
-  const { data, error } = await account.client.from("saved").select("restaurant_id,wishlist,visited,visited_on,paid,paid_currency,menu,note").order("created_at");
+  const { data, error } = await account.client.from("saved").select("restaurant_id,wishlist,visited,visited_on,paid,paid_currency,menu,note,score").order("created_at");
   if (error) return;
   const remote = { wish: [], visited: {}, diary: {} };
   data.forEach((r) => {
     if (r.wishlist) remote.wish.push(r.restaurant_id);
     if (r.visited) remote.visited[r.restaurant_id] = r.visited_on || "";
-    if (hasDiary(r)) remote.diary[r.restaurant_id] = diaryOf(r);
+    if (hasDiary(r) || r.score) remote.diary[r.restaurant_id] = diaryOf(r);
   });
   const first = store.get(SYNCED_KEY, null) !== account.user.id;
   const local = snapshotLocal();
@@ -257,7 +260,8 @@ function setVisitedDate(id, date) {
 
 // ---------- The dining diary ----------
 // One window for a restaurant's diary entry: for one they've been to, the date, what they paid per person (and in which
-// currency), the menu and a private note; for one only on the wishlist, just the note ("ask for the counter seat").
+// currency), the menu, a private note and a score from 1 to 5 (the only part that's ever used beyond the member: it counts,
+// unnamed, towards the members' average, supabase/scores.sql); for one only on the wishlist, just the note ("ask for the counter seat").
 // `info` gives the restaurant's name and the currency its prices are in. Saving updates the browser copy, which syncs.
 function openDiary(id, info) {
   if (!account.user && !hasStoredSession()) { openSignIn("been"); return; }
@@ -271,6 +275,15 @@ function openDiary(id, info) {
   box.querySelector("label[for=dyDate]").textContent = t("diaryDate");
   box.querySelector("label[for=dyPaid]").textContent = t("diaryPaid");
   box.querySelector("label[for=dyMenu]").textContent = t("diaryMenu");
+  box.querySelector(".dy-score legend").textContent = t("diaryScore");
+  box.querySelector(".dy-score-hint").textContent = t("diaryScoreHint");
+  box.querySelector(".dy-score-clear").textContent = t("diaryScoreClear");
+  box.querySelector(".dy-score-note").textContent = t("diaryScoreNote");
+  box.querySelectorAll(".dy-score input").forEach((el) => {
+    el.checked = been && Number(el.value) === d.score;
+    el.setAttribute("aria-label", t("diaryScoreAria", { n: el.value }));
+  });
+  box.querySelector(".dy-score-clear").hidden = !(been && d.score);
   box.querySelector("label[for=dyNote]").textContent = t("diaryNote");
   $("dyCur").setAttribute("aria-label", t("diaryCur"));
   $("dyMenu").placeholder = t("diaryMenuPh");
@@ -305,6 +318,8 @@ function saveDiary(box) {
     if (isFinite(paid) && paid >= 0 && paid < 1e7) { entry.paid = Math.round(paid * 100) / 100; entry.cur = $("dyCur").value; }
     const menu = $("dyMenu").value.trim().slice(0, 200);
     if (menu) entry.menu = menu;
+    const score = box.querySelector(".dy-score input:checked");
+    if (score) entry.score = Number(score.value);
   }
   const note = $("dyNote").value.trim().slice(0, 2000);
   if (note) entry.note = note; else delete entry.note;
@@ -314,7 +329,8 @@ function saveDiary(box) {
   box.close();
   acctNotice(t(been ? "diarySaved" : "diaryNoteSaved"));
   // Only which kind of entry was saved; never what's in it.
-  track("diary", { kind: been ? "visit" : "note" });
+  // Whether a score was given, never the score.
+  track("diary", been ? { kind: "visit", scored: !!entry.score } : { kind: "note" });
 }
 function buildDiary() {
   const box = document.createElement("dialog");
@@ -328,13 +344,21 @@ function buildDiary() {
         '<label for="dyDate"></label><input id="dyDate" type="date">' +
         '<label for="dyPaid"></label><div class="dy-paid"><input id="dyPaid" type="text" inputmode="decimal" autocomplete="off" maxlength="12" placeholder="0"><select id="dyCur"></select></div>' +
         '<label for="dyMenu"></label><input id="dyMenu" type="text" maxlength="200" autocomplete="off">' +
+        // One score from 1 to 5 per restaurant, only for one they've been to; it counts, unnamed, towards the members' average.
+        '<fieldset class="dy-score"><legend></legend><div class="dy-score-row">' +
+          [1, 2, 3, 4, 5].map((n) => '<label><input type="radio" name="dyScore" value="' + n + '"><span>' + n + "</span></label>").join("") +
+          '<button type="button" class="linkish dy-score-clear"></button></div><p class="si-small dy-score-hint"></p><p class="si-small dy-score-note"></p></fieldset>' +
       "</div>" +
       '<label for="dyNote"></label><textarea id="dyNote" rows="4" maxlength="2000"></textarea>' +
       '<p class="si-small dy-private"></p>' +
       '<div class="dy-actions"><button type="submit" class="si-send"></button><button type="button" class="btn-line dy-cancel"></button></div>' +
     "</form>";
   document.body.appendChild(box);
-  box.addEventListener("click", (e) => { if (e.target === box || e.target.closest(".si-close, .dy-cancel")) box.close(); });
+  box.addEventListener("click", (e) => {
+    if (e.target === box || e.target.closest(".si-close, .dy-cancel")) box.close();
+    if (e.target.closest(".dy-score-clear")) { box.querySelectorAll(".dy-score input").forEach((el) => { el.checked = false; }); e.target.hidden = true; }
+  });
+  box.querySelector(".dy-score").addEventListener("change", () => { box.querySelector(".dy-score-clear").hidden = false; });
   box.querySelector("form").addEventListener("submit", (e) => { e.preventDefault(); saveDiary(box); });
   return box;
 }

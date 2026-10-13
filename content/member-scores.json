@@ -1,0 +1,5 @@
+{
+  "updated": "2026-10-13",
+  "about": "Written by scripts/member_scores.py from Supabase: each restaurant's average members' score out of 5 and how many gave one, only where five or more have. Don't edit by hand.",
+  "scores": {}
+}

@@ -100,6 +100,8 @@
     m2Text: "Bữa tối là thực đơn nếm thử chính nếu có, còn rượu vang là gói rượu kết hợp rẻ nhất cho thực đơn đó. Chúng tôi lấy giá từ trang web của nhà hàng nếu có công bố, nếu không thì từ các bài đánh giá và trang đặt bàn gần đây. Bữa trưa là thực đơn trưa cố định hoặc nếm thử của nhà hàng, và ghi chú cho biết phục vụ vào những ngày nào.",
     m3Title: "Sao và điểm Google",
     m3Text: "Điểm Google (trên 5) và số đánh giá được kiểm tra vào tháng 10 năm 2026. Sao lấy từ ấn bản Cẩm nang MICHELIN mới nhất của mỗi nước. ▲ xanh đánh dấu nhà hàng được thêm sao trong một trong hai ấn bản gần nhất; ▼ đỏ đánh dấu nhà hàng bị mất sao.",
+    members: "Thành viên: {s} ({n})", membersTitle: "Điểm trung bình trên 5 từ các thành viên đã đến (số lượt chấm: {n})",
+    m3Members: "Điểm của thành viên: thành viên đã đăng nhập và đánh dấu đã đến nhà hàng có thể chấm từ 1 đến 5, mỗi người một lần. Chúng tôi hiển thị điểm trung bình bên cạnh điểm Google khi đã có năm thành viên chấm, và loại bỏ những điểm có vẻ giả.",
     contactTitle: "Bạn thấy giá thay đổi?",
     contactText: "Giá thực đơn thay đổi thường xuyên. Hãy báo cho chúng tôi về một cập nhật, một nhà hàng còn thiếu hoặc thành phố bạn muốn chúng tôi bổ sung.",
     cName: "Tên", cEmail: "Email", cTopic: "Chủ đề", cTopicPrice: "Cập nhật giá", cTopicSuggest: "Gợi ý nhà hàng", cTopicCity: "Thêm thành phố khác", cTopicOther: "Việc khác",

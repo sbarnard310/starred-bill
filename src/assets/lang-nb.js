@@ -100,6 +100,8 @@
     m2Text: "Middag er den viktigste smaksmenyen der det finnes en, og vin er den billigste vinmenyen til den. Vi henter prisene fra restaurantens egen nettside når de står der, ellers fra ferske anmeldelser og bookingsider. Lunsj er restaurantens lunsj- eller smaksmeny, og merknaden sier hvilke dager den serveres.",
     m3Title: "Stjerner og Google-vurdering",
     m3Text: "Google-vurderingen (av 5) og antall anmeldelser er sjekket i oktober 2026. Stjernene kommer fra den nyeste Michelinguiden for hvert land. En grønn ▲ markerer en restaurant som fikk en stjerne i en av de to siste guidene, en rød ▼ en som mistet stjernen.",
+    members: "Medlemmer: {s} ({n})", membersTitle: "Gjennomsnittlig karakter av 5 fra medlemmer som har vært der (karakterer: {n})",
+    m3Members: "Medlemmenes karakterer: innloggede medlemmer som har merket en restaurant som besøkt, kan gi den 1 til 5, én gang hver. Vi viser snittet ved siden av Google-vurderingen når fem medlemmer har gitt karakter, og utelater karakterer som ser falske ut.",
     contactTitle: "Har du sett en prisendring?",
     contactText: "Menyer får ofte nye priser. Fortell oss om en oppdatering, en restaurant vi mangler eller en by vi burde dekke.",
     cName: "Navn", cEmail: "E-post", cTopic: "Emne", cTopicPrice: "Prisoppdatering", cTopicSuggest: "Foreslå en restaurant", cTopicCity: "Dekk en annen by", cTopicOther: "Noe annet",

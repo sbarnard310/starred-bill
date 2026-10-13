@@ -260,9 +260,11 @@ function paidLabel(d) {
   const price = d.cur && DATA.currencies[d.cur] ? localMoney(d.paid, d.cur) : (d.cur ? d.cur + " " : "") + d.paid.toLocaleString("en-GB");
   return t("accPerPerson", { price });
 }
-// The diary's details line and note, under the name.
+// A diary entry with something besides a score (a score alone goes when "been there" is unticked).
+const hasDetails = (d) => !!d && (d.paid != null || !!d.menu || !!d.note);
+// The diary's details line (menu, what they paid, their score) and note, under the name.
 function diaryDetails(d) {
-  const line = [d.menu, paidLabel(d)].filter(Boolean).join(" · ");
+  const line = [d.menu, paidLabel(d), d.score ? t("accScore", { n: d.score }) : ""].filter(Boolean).join(" · ");
   return (line ? '<span class="de-line">' + esc(line) + "</span>" : "") + (d.note ? '<span class="de-note">' + esc(d.note) + "</span>" : "");
 }
 // What they've paid in all, in the currency they've paid in most often (others converted at today's rates).
@@ -287,7 +289,7 @@ function diaryList(been) {
       return '<li><span class="de-date' + (day ? "" : " none") + '">' + esc(day ? dayLabel(day) : t("accNoDate")) + "</span>" +
         '<div class="al-main"><a class="al-name" href="' + pageLink(r) + '">' + esc(nameOf(r)) + "</a>" +
         '<span class="al-meta">' + starIcons(starsOf(r)) + (r.status ? " " + esc(t("formerly")) : "") + " · " + esc(whereOf(r)) + "</span>" + diaryDetails(d) + "</div>" +
-        '<span class="al-acts"><button type="button" class="linkish" data-diary="' + esc(r.id) + '">' + esc(t(day || d.paid != null || d.menu || d.note ? "accEdit" : "accAddDetails")) + "</button>" +
+        '<span class="al-acts"><button type="button" class="linkish" data-diary="' + esc(r.id) + '">' + esc(t(day || d.paid != null || d.menu || d.note || d.score ? "accEdit" : "accAddDetails")) + "</button>" +
         '<button type="button" class="linkish" data-unbeen="' + esc(r.id) + '">' + esc(t("accRemove")) + "</button></span></li>";
     }).join("") + "</ul>") + "</section>";
 }
@@ -295,7 +297,7 @@ function diaryList(been) {
 // Notes on restaurants that are no longer on either list (a "been there" unticked on a destination page keeps its details).
 function otherNotes() {
   const visited = loadVisited(), wish = new Set(loadWishlist()), diary = loadDiary();
-  const list = Object.keys(diary).filter((id) => !(id in visited) && !wish.has(id)).map((id) => byId.get(id)).filter(Boolean);
+  const list = Object.keys(diary).filter((id) => !(id in visited) && !wish.has(id) && hasDetails(diary[id])).map((id) => byId.get(id)).filter(Boolean);
   if (!list.length) return "";
   return '<section class="acct-section"><h2>' + esc(t("accOtherNotes")) + "</h2><p>" + esc(t("accOtherNotesText")) + '</p><ul class="acct-list">' + list.map((r) =>
     '<li><div class="al-main"><a class="al-name" href="' + pageLink(r) + '">' + esc(nameOf(r)) + '</a><span class="al-meta">' + starIcons(starsOf(r)) + " · " + esc(whereOf(r)) + "</span>" + diaryDetails(diary[r.id]) + "</div>" +
@@ -412,8 +414,8 @@ function downloadData() {
     account: account.user.email, exported: new Date().toISOString(), site: "https://starredbill.com",
     wishlist: wish.map((id) => ({ id, name: nameFor(id), note: d(id).note || null })),
     beenThere: Object.keys(visited).map((id) => ({ id, name: nameFor(id), date: visited[id] || null,
-      paidPerPerson: d(id).paid != null ? d(id).paid : null, currency: d(id).paid != null ? d(id).cur || null : null, menu: d(id).menu || null, note: d(id).note || null })),
-    otherNotes: Object.keys(diary).filter((id) => !(id in visited) && !wish.includes(id)).map((id) => Object.assign({ id, name: nameFor(id) }, diary[id])),
+      paidPerPerson: d(id).paid != null ? d(id).paid : null, currency: d(id).paid != null ? d(id).cur || null : null, menu: d(id).menu || null, note: d(id).note || null, score: d(id).score || null })),
+    otherNotes: Object.keys(diary).filter((id) => !(id in visited) && !wish.includes(id) && hasDetails(diary[id])).map((id) => Object.assign({ id, name: nameFor(id) }, diary[id], { score: undefined })),
     trips: (trips || []).map((x) => ({ kind: x.kind, title: x.title, from: x.starts_on, to: x.ends_on, people: x.people, note: x.note,
       shareLink: x.share_code ? location.origin + "/trips/?s=" + x.share_code : null, updated: x.updated_at,
       restaurants: (x.items || []).map((i) => Object.assign({ id: i.r, name: nameFor(i.r) }, i.day ? { day: i.day } : {}, i.time ? { time: i.time } : {}, i.meal ? { meal: i.meal } : {},

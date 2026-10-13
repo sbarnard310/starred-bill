@@ -99,6 +99,8 @@
     m2Text: "A vacsora a fő kóstolómenü, ha van, a bor pedig a hozzá tartozó legolcsóbb borpárosítás. Az árakat az étterem saját honlapjáról vesszük, ha közzéteszi, egyébként friss kritikákból és foglalási oldalakról. Az ebéd az étterem ebéd- vagy kóstolómenüje, a megjegyzés pedig jelzi, mely napokon kapható.",
     m3Title: "Csillagok és Google-értékelés",
     m3Text: "A Google-értékelést (5-ös skálán) és az értékelések számát 2026 októberében ellenőriztük. A csillagok az egyes országok legfrissebb Michelin-kalauzából származnak. A zöld ▲ olyan éttermet jelöl, amely az utolsó két kalauz egyikében csillagot kapott, a piros ▼ pedig olyat, amely elvesztette.",
+    members: "Tagok: {s} ({n})", membersTitle: "Az ott járt tagok átlagos értékelése 5-ből (értékelések: {n})",
+    m3Members: "Tagok értékelései: a bejelentkezett tagok, akik egy éttermet meglátogatottnak jelöltek, egyszer értékelhetik 1-től 5-ig. Az átlagot a Google-értékelés mellett mutatjuk, ha már öt tag értékelte, a hamisnak tűnő értékeléseket pedig kihagyjuk.",
     contactTitle: "Árváltozást láttál?",
     contactText: "A menük ára gyakran változik. Írj nekünk egy frissítésről, egy hiányzó étteremről vagy egy városról, amellyel bővülhetnénk.",
     cName: "Név", cEmail: "E-mail", cTopic: "Téma", cTopicPrice: "Árfrissítés", cTopicSuggest: "Étterem ajánlása", cTopicCity: "Új város felvétele", cTopicOther: "Egyéb",

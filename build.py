@@ -635,6 +635,20 @@ for fname, src in (("opening-hours.json", "michelin"), ("opening-hours-google.js
                 if rid not in days_only:
                     HOURS_TIMED.add(rid)
 
+# Members' scores (13 Oct 2026, to-do item members-ratings): content/member-scores.json, written daily by
+# scripts/member_scores.py from Supabase's member_scores(): each restaurant's average score out of 5 and how many members
+# gave one, only once at least MEMBER_MIN have. Restaurants get `memberScore` [average to one decimal, count], shown
+# beside the Google rating on destination rows, map pop-ups and restaurant pages. Never in the structured data.
+MEMBER_MIN = 5  # keep in step with member_scores() in supabase/scores.sql
+MEMBER_SCORES = read_json(CONTENT / "member-scores.json") or {} if (CONTENT / "member-scores.json").exists() else {}
+_by_id = {x["id"]: x for x in restaurants}
+for rid, (avg, n) in (MEMBER_SCORES.get("scores") or {}).items():
+    r = _by_id.get(rid)
+    if r is None:
+        print(f"Note: content/member-scores.json has a score for {rid}, which isn't a restaurant file (renamed or removed?).")
+    elif isinstance(n, int) and n >= MEMBER_MIN and isinstance(avg, (int, float)) and 1 <= avg <= 5:
+        r["memberScore"] = [round(avg, 1), n]
+
 
 def hours_from(r):
     """Where a restaurant's hours come from, with the month: "the MICHELIN Guide, October 2026", "Google, October 2026",
@@ -1313,7 +1327,7 @@ def pick_lang(o, field, lang):
 # place.js redraw the same words.
 SECTION_KEYS = ("navCompare", "compareTitle", "compareText", "formerTitle", "formerNote", "navMap", "mapTitle", "mapText", "mapWait",
                 "navStars", "starsTitle", "starsText", "navMethod", "methodTitle", "m1Title", "m1Text", "m2Title", "m2Text", "m3Title",
-                "m3Text", "navContact", "contactTitle", "contactText")
+                "m3Text", "m3Members", "navContact", "contactTitle", "contactText")
 TIER_KEYS = ("tierNames", "avgDinner", "tRestaurants", "tRange", "tRating", "tVs", "tNoPrices", "tNone", "starsAria")
 # A place's own text replaces the general wording, as in place.js: its service, sources and stars notes.
 OWN_SECTION_TEXTS = {"m1Text": "serviceText", "m2Text": "sourcesText", "m3Text": "starsText"}
@@ -7265,6 +7279,13 @@ def hours_sentence(r):
     return f"It's open {opened}, closed on {and_list(closed)}."
 
 
+def member_score_html(r):
+    """A restaurant page's "Members’ score" fact: the average out of 5, how many gave one and how scores are collected."""
+    avg, n = r["memberScore"]
+    return (f'{avg:.1f} out of 5<small>From {n:,} members who’ve been there. Only signed-in members who’ve ticked a restaurant '
+            f'as “been there” can score it, once each; we show the average once five have, and leave out scores that look fake.</small>')
+
+
 def build_restaurant_pages():
     live = [r for r in restaurants if not r.get("status")]
     mg = michelin_links()
@@ -7355,6 +7376,8 @@ def build_restaurant_pages():
                 ("Can cater for " + and_list(plain_diets) + " diets") if plain_diets else "") if x)) + "<small>From the MICHELIN Guide; say when you book</small>"))
         if r.get("rating"):
             facts.append(("Google rating", f'{r["rating"]:.1f} out of 5' + (f'<small>{r["reviews"]:,} reviews, checked {RATINGS_CHECKED}</small>' if r.get("reviews") else "")))
+        if r.get("memberScore"):
+            facts.append(("Members’ score", member_score_html(r)))
         links = [f'<a href="{e(r["website"])}">Restaurant’s website</a>'] if r.get("website") else []
         if r["id"] in mg:
             links.append(f'<a href="{e(mg[r["id"]])}">MICHELIN Guide page</a>')
@@ -7579,6 +7602,8 @@ def restaurant_sources_html(r, michelin_url):
                      + (f", checked {e(nice_date(r['rankingsChecked']))}" if r.get("rankingsChecked") else ""))
     if r.get("rating"):
         parts.append("Rating: " + a("https://www.google.com/maps", "Google Maps") + f", checked {RATINGS_CHECKED}")
+    if r.get("memberScore"):
+        parts.append("Members’ score: our signed-in members who have been there" + (f", updated {e(nice_date(MEMBER_SCORES['updated']))}" if MEMBER_SCORES.get("updated") else ""))
     if r["id"] in HOURS_GOOGLE and hours_lines(r):
         parts.append("Opening hours: " + a("https://www.google.com/maps", "Google Maps") + f", checked {e(nice_date(HOURS_CHECKED['google']))}")
     if r["id"] in HOURS_SITE and hours_lines(r):

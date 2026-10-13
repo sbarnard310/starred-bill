@@ -97,6 +97,8 @@
     m2Text: "Õhtusöök on peamine degustatsioonimenüü, kui see on olemas, ja vein on sellele odavaim veinipakett. Võtame hinnad restorani kodulehelt, kui need seal avaldatakse, muidu värsketest arvustustest ja broneerimissaitidelt. Lõuna on restorani lõuna- või degustatsioonimenüü ning märkus ütleb, mis päevadel seda pakutakse.",
     m3Title: "Tähed ja Google'i hinnang",
     m3Text: "Google'i hinnang (viiest) ja arvustuste arv on kontrollitud 2026. aasta oktoobris. Tähed pärinevad iga riigi uusimast Michelini teejuhist. Roheline ▲ tähistab restorani, mis sai tähe ühes kahest viimasest teejuhist, punane ▼ restorani, mis selle kaotas.",
+    members: "Liikmed: {s} ({n})", membersTitle: "Seal käinud liikmete keskmine hinne 5-st (hindeid: {n})",
+    m3Members: "Liikmete hinded: sisse loginud liikmed, kes on restorani külastatuks märkinud, saavad seda ühe korra hinnata 1–5. Näitame keskmist Google'i hinnangu kõrval, kui viis liiget on hinde andnud, ja jätame välja hinded, mis tunduvad võltsid.",
     contactTitle: "Märkasid hinnamuutust?",
     contactText: "Menüüde hinnad muutuvad tihti. Anna meile teada muudatusest, puuduvast restoranist või linnast, mille peaksime lisama.",
     cName: "Nimi", cEmail: "E-post", cTopic: "Teema", cTopicPrice: "Hinnamuutus", cTopicSuggest: "Soovita restorani", cTopicCity: "Lisa teine linn", cTopicOther: "Midagi muud",

@@ -103,6 +103,8 @@
     m2Text: "O jantar é o principal menu de degustação, quando existe, e o vinho é a harmonização mais barata para ele. Usamos os preços do site do próprio restaurante quando os publica; caso contrário, de críticas recentes e sites de reservas. O almoço é o menu de almoço ou de degustação do restaurante, e a nota indica em que dias é servido.",
     m3Title: "Estrelas e avaliação Google",
     m3Text: "A avaliação Google (em 5) e o número de avaliações foram verificados em outubro de 2026. As estrelas vêm do Guia Michelin mais recente de cada país. Um ▲ verde marca um restaurante que ganhou uma estrela num dos dois últimos guias; um ▼ vermelho, um que a perdeu.",
+    members: "Membros: {s} ({n})", membersTitle: "Nota média de 5 dos membros que já foram (notas: {n})",
+    m3Members: "Notas dos membros: membros conectados que marcaram um restaurante como visitado podem avaliá-lo de 1 a 5, uma vez cada. Mostramos a média ao lado da nota do Google quando cinco membros já avaliaram, e excluímos as notas que parecem falsas.",
     contactTitle: "Viu um preço diferente?",
     contactText: "Os menus mudam de preço com frequência. Fale-nos de uma atualização, de um restaurante que nos falta ou de uma cidade que gostaria de ver a seguir.",
     cName: "Nome", cEmail: "E-mail", cTopic: "Assunto", cTopicPrice: "Atualização de preço", cTopicSuggest: "Sugerir um restaurante", cTopicCity: "Incluir outra cidade", cTopicOther: "Outro assunto",

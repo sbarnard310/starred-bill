@@ -99,6 +99,8 @@
     m2Text: "Il-pranzu huwa l-menu tad-degustazzjoni prinċipali, jekk hemm, u l-inbid huwa l-irħas għażla ta' nbid għalih. Nieħdu l-prezzijiet mis-sit tar-ristorant meta jippubblikahom, inkella minn reviżjonijiet riċenti u siti tal-prenotazzjoni. Nofsinhar huwa l-menu ta' nofsinhar jew tad-degustazzjoni tar-ristorant, u n-nota tgħid f'liema jiem jinqeda.",
     m3Title: "Stilel u klassifika Google",
     m3Text: "Il-klassifika Google (minn 5) u n-numru ta' reviżjonijiet ġew iċċekkjati f'Ottubru 2026. L-istilel ġejjin mill-aktar Gwida Michelin riċenti għal kull pajjiż. ▲ aħdar jimmarka ristorant li rebaħ stilla f'waħda mill-aħħar żewġ gwidi; ▼ aħmar wieħed li tilifha.",
+    members: "Membri: {s} ({n})", membersTitle: "Punteġġ medju minn 5 mill-membri li marru (punteġġi: {n})",
+    m3Members: "Punteġġi tal-membri: membri li daħlu fil-kont u mmarkaw ristorant bħala li marru fih jistgħu jagħtuh punteġġ minn 1 sa 5, darba biss kull wieħed. Nuru l-medja ħdejn il-punteġġ ta' Google meta jkunu taw punteġġ ħames membri, u nħallu barra l-punteġġi li jidhru foloz.",
     contactTitle: "Rajt bidla fil-prezz?",
     contactText: "Il-menus jinbidlulhom il-prezzijiet spiss. Għidilna dwar aġġornament, ristorant li qbiżna jew belt li tixtieq li nkopru.",
     cName: "Isem", cEmail: "Email", cTopic: "Suġġett", cTopicPrice: "Aġġornament tal-prezz", cTopicSuggest: "Issuġġerixxi ristorant", cTopicCity: "Kopri belt oħra", cTopicOther: "Xi ħaġa oħra",

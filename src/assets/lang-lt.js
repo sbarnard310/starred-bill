@@ -97,6 +97,8 @@
     m2Text: "Vakarienė – tai pagrindinis degustacinis meniu, jei toks yra, o vynas – pigiausias vynų derinys prie jo. Kainas imame iš restorano svetainės, jei ten jos skelbiamos, kitu atveju – iš naujausių apžvalgų ir rezervavimo svetainių. Pietūs – tai restorano pietų ar degustacinis meniu, o pastaba nurodo, kuriomis dienomis jis patiekiamas.",
     m3Title: "Žvaigždutės ir „Google“ įvertinimas",
     m3Text: "„Google“ įvertinimas (iš 5) ir atsiliepimų skaičius patikrinti 2026 m. spalį. Žvaigždutės paimtos iš naujausio kiekvienos šalies „Michelin“ gido. Žalia ▲ žymi restoraną, gavusį žvaigždutę viename iš dviejų naujausių gidų, raudona ▼ – praradusį ją.",
+    members: "Nariai: {s} ({n})", membersTitle: "Ten lankiusių narių vidutinis įvertinimas iš 5 (įvertinimų: {n})",
+    m3Members: "Narių įvertinimai: prisijungę nariai, pažymėję restoraną kaip aplankytą, gali vieną kartą jį įvertinti nuo 1 iki 5. Vidurkį rodome šalia „Google“ įvertinimo, kai restoraną įvertina penki nariai, o netikrus primenančius įvertinimus atmetame.",
     contactTitle: "Pastebėjote pasikeitusią kainą?",
     contactText: "Meniu kainos keičiasi dažnai. Praneškite mums apie pakeitimą, trūkstamą restoraną ar miestą, kurį turėtume įtraukti.",
     cName: "Vardas", cEmail: "El. paštas", cTopic: "Tema", cTopicPrice: "Kainos pakeitimas", cTopicSuggest: "Pasiūlyti restoraną", cTopicCity: "Įtraukti kitą miestą", cTopicOther: "Kita",

@@ -101,6 +101,8 @@
     m2Text: "Akşam yemeği, varsa ana tadım menüsüdür; şarap ise ona eşlik eden en ucuz şarap eşleştirmesidir. Fiyatları, yayımlıyorsa restoranın kendi sitesinden, yoksa yakın tarihli eleştirilerden ve rezervasyon sitelerinden alırız. Öğle yemeği restoranın öğle ya da tadım menüsüdür ve not hangi günler sunulduğunu söyler.",
     m3Title: "Yıldızlar ve Google puanı",
     m3Text: "Google puanı (5 üzerinden) ve yorum sayısı Ekim 2026'da kontrol edildi. Yıldızlar her ülkenin en yeni Michelin Rehberi'nden gelir. Yeşil ▲ son iki rehberden birinde yıldız kazanan, kırmızı ▼ ise yıldızını kaybeden restoranı gösterir.",
+    members: "Üyeler: {s} ({n})", membersTitle: "Gitmiş üyelerin 5 üzerinden ortalama puanı (puan sayısı: {n})",
+    m3Members: "Üye puanları: Giriş yapmış ve bir restoranı gittim olarak işaretlemiş üyeler ona 1'den 5'e kadar bir kez puan verebilir. Beş üye puan verdiğinde ortalamayı Google puanının yanında gösteririz; sahte görünen puanları hesaba katmayız.",
     contactTitle: "Fiyat değişikliği mi gördünüz?",
     contactText: "Menü fiyatları sık değişir. Bize bir güncellemeyi, eksik bir restoranı ya da eklememizi istediğiniz bir şehri bildirin.",
     cName: "Ad", cEmail: "E-posta", cTopic: "Konu", cTopicPrice: "Fiyat güncellemesi", cTopicSuggest: "Restoran önerin", cTopicCity: "Başka bir şehir ekleyin", cTopicOther: "Başka bir şey",

@@ -100,6 +100,8 @@
     m2Text: "Večeře je hlavní degustační menu, pokud existuje, a víno je k němu nejlevnější vinné párování. Ceny přebíráme z webu restaurace, pokud je zveřejňuje, jinak z aktuálních recenzí a rezervačních webů. Oběd je polední nebo degustační menu restaurace a poznámka uvádí, ve které dny se podává.",
     m3Title: "Hvězdy a hodnocení Google",
     m3Text: "Hodnocení Google (z 5) a počet recenzí jsme ověřili v říjnu 2026. Hvězdy pocházejí z nejnovějšího Průvodce Michelin pro každou zemi. Zelená ▲ označuje restauraci, která v jednom ze dvou posledních vydání získala hvězdu, červená ▼ takovou, která o ni přišla.",
+    members: "Členové: {s} ({n})", membersTitle: "Průměrné hodnocení (z 5) od členů, kteří tam byli (počet hodnocení: {n})",
+    m3Members: "Hodnocení členů: přihlášení členové, kteří restauraci označili jako navštívenou, ji mohou jednou ohodnotit od 1 do 5. Průměr ukazujeme vedle hodnocení Google, jakmile ji ohodnotí pět členů, a hodnocení, která vypadají falešně, vynecháváme.",
     contactTitle: "Všimli jste si změny ceny?",
     contactText: "Ceny menu se často mění. Napište nám o změně, chybějící restauraci nebo městě, které bychom měli přidat.",
     cName: "Jméno", cEmail: "E-mail", cTopic: "Téma", cTopicPrice: "Změna ceny", cTopicSuggest: "Navrhnout restauraci", cTopicCity: "Přidat další město", cTopicOther: "Něco jiného",

@@ -100,6 +100,8 @@
     m2Text: "Ang hapunan ay ang pangunahing tasting menu kung mayroon, at ang wine ay ang pinakamurang pairing para dito. Kinukuha namin ang presyo sa sariling website ng restawran kung nakalathala roon, kung hindi ay sa mga bagong review at booking site. Ang tanghalian ay ang set o tasting lunch menu ng restawran, at sinasabi ng tala kung anong mga araw ito inihahain.",
     m3Title: "Mga bituin at rating sa Google",
     m3Text: "Ang score sa Google mula 5 at ang bilang ng review, sinuri noong Oktubre 2026. Galing ang mga bituin sa pinakabagong MICHELIN Guide ng bawat bansa. Ang berdeng ▲ ay restawrang nagkamit ng bituin sa isa sa huling dalawang guide; ang pulang ▼ ay nawalan ng bituin.",
+    members: "Mga miyembro: {s} ({n})", membersTitle: "Average na score sa 5 mula sa mga miyembrong nakapunta na (mga score: {n})",
+    m3Members: "Score ng mga miyembro: ang mga naka-sign in na miyembrong nag-markang napuntahan na nila ang restaurant ay puwedeng magbigay ng score mula 1 hanggang 5, isang beses bawat isa. Ipinapakita namin ang average sa tabi ng rating sa Google kapag limang miyembro na ang nagbigay ng score, at hindi namin isinasama ang mga score na mukhang peke.",
     contactTitle: "May nakitang pagbabago sa presyo?",
     contactText: "Madalas magbago ang presyo ng mga menu. Sabihin sa amin ang update, restawrang nakaligtaan namin, o lungsod na gusto mong isunod namin.",
     cName: "Pangalan", cEmail: "Email", cTopic: "Paksa", cTopicPrice: "Update sa presyo", cTopicSuggest: "Magmungkahi ng restawran", cTopicCity: "Isama ang ibang lungsod", cTopicOther: "Iba pa",

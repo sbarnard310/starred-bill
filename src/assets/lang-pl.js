@@ -100,6 +100,8 @@
     m2Text: "Kolacja to główne menu degustacyjne, jeśli jest, a wino to najtańszy dobór win do niego. Ceny bierzemy ze strony restauracji, jeśli je publikuje, a w przeciwnym razie z aktualnych recenzji i serwisów rezerwacyjnych. Lunch to menu lunchowe lub degustacyjne restauracji, a notatka mówi, w które dni jest serwowane.",
     m3Title: "Gwiazdki i ocena Google",
     m3Text: "Ocenę Google (na 5) i liczbę opinii sprawdziliśmy w październiku 2026. Gwiazdki pochodzą z najnowszego Przewodnika Michelin dla każdego kraju. Zielony ▲ oznacza restaurację, która zdobyła gwiazdkę w jednym z dwóch ostatnich wydań, a czerwony ▼ taką, która ją straciła.",
+    members: "Członkowie: {s} ({n})", membersTitle: "Średnia ocena (na 5) od członków, którzy tam byli (liczba ocen: {n})",
+    m3Members: "Oceny członków: zalogowani członkowie, którzy oznaczyli restaurację jako odwiedzoną, mogą raz ocenić ją w skali od 1 do 5. Średnią pokazujemy obok oceny Google, gdy oceni ją pięciu członków, a oceny wyglądające na fałszywe pomijamy.",
     contactTitle: "Zauważyłeś zmianę ceny?",
     contactText: "Ceny menu często się zmieniają. Napisz nam o aktualizacji, brakującej restauracji lub mieście, które powinniśmy dodać.",
     cName: "Imię", cEmail: "E-mail", cTopic: "Temat", cTopicPrice: "Aktualizacja ceny", cTopicSuggest: "Zaproponuj restaurację", cTopicCity: "Dodaj inne miasto", cTopicOther: "Coś innego",

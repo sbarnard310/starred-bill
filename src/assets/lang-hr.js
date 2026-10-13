@@ -100,6 +100,8 @@
     m2Text: "Večera je glavni degustacijski meni, ako postoji, a vino najjeftinija vinska pratnja uz njega. Cijene preuzimamo s mrežne stranice restorana kad ih objavljuje, a inače iz nedavnih recenzija i sa stranica za rezervacije. Ručak je meni za ručak ili degustacijski meni restorana, a napomena kaže kojim se danima poslužuje.",
     m3Title: "Zvjezdice i ocjena na Googleu",
     m3Text: "Ocjenu na Googleu (od 5) i broj recenzija provjerili smo u listopadu 2026. Zvjezdice su iz najnovijeg vodiča Michelin za svaku zemlju. Zeleni ▲ označava restoran koji je dobio zvjezdicu u jednom od posljednja dva izdanja, a crveni ▼ onaj koji ju je izgubio.",
+    members: "Članovi: {s} ({n})", membersTitle: "Prosječna ocjena (od 5) članova koji su ga posjetili (broj ocjena: {n})",
+    m3Members: "Ocjene članova: prijavljeni članovi koji su restoran označili kao posjećen mogu ga jednom ocijeniti od 1 do 5. Prosjek prikazujemo uz ocjenu na Googleu kad ga ocijeni pet članova, a ocjene koje izgledaju lažno izostavljamo.",
     contactTitle: "Primijetili ste promjenu cijene?",
     contactText: "Cijene menija često se mijenjaju. Javite nam promjenu, restoran koji nam nedostaje ili grad koji bismo trebali dodati.",
     cName: "Ime", cEmail: "E-pošta", cTopic: "Tema", cTopicPrice: "Promjena cijene", cTopicSuggest: "Predložite restoran", cTopicCity: "Dodajte drugi grad", cTopicOther: "Nešto drugo",

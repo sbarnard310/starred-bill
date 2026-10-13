@@ -97,6 +97,8 @@
     m2Text: "Vakariņas ir galvenā degustācijas ēdienkarte, ja tāda ir, un vīns ir lētākais vīnu pāris pie tās. Cenas ņemam no restorāna vietnes, ja tās tur publicētas, citādi no nesenām atsauksmēm un rezervēšanas vietnēm. Pusdienas ir restorāna pusdienu vai degustācijas ēdienkarte, un piezīme norāda, kurās dienās tā tiek pasniegta.",
     m3Title: "Zvaigznes un Google vērtējums",
     m3Text: "Google vērtējums (no 5) un atsauksmju skaits pārbaudīts 2026. gada oktobrī. Zvaigznes ņemtas no katras valsts jaunākā Michelin ceļveža. Zaļa ▲ apzīmē restorānu, kas ieguvis zvaigzni vienā no diviem jaunākajiem ceļvežiem, sarkana ▼ – tādu, kas to zaudējis.",
+    members: "Biedri: {s} ({n})", membersTitle: "Vidējais vērtējums no 5 no biedriem, kas tur bijuši (vērtējumi: {n})",
+    m3Members: "Biedru vērtējumi: pieteikušies biedri, kuri restorānu atzīmējuši kā apmeklētu, var to vienreiz novērtēt no 1 līdz 5. Vidējo vērtējumu rādām blakus Google vērtējumam, kad to novērtējuši pieci biedri, un neiekļaujam vērtējumus, kas šķiet viltoti.",
     contactTitle: "Pamanījāt cenas izmaiņas?",
     contactText: "Ēdienkaršu cenas bieži mainās. Pastāstiet mums par izmaiņām, trūkstošu restorānu vai pilsētu, kuru mums vajadzētu pievienot.",
     cName: "Vārds", cEmail: "E-pasts", cTopic: "Tēma", cTopicPrice: "Cenas izmaiņas", cTopicSuggest: "Ieteikt restorānu", cTopicCity: "Pievienot citu pilsētu", cTopicOther: "Kas cits",

@@ -105,6 +105,8 @@
     m2Text: "Diner is het belangrijkste proeverijmenu als er een is, en wijn is het goedkoopste wijnarrangement erbij. We nemen prijzen over van de eigen website van het restaurant als ze daar staan, anders uit recente recensies en van reserveringssites. Lunch is het lunch- of proeverijmenu van het restaurant, en de notitie zegt op welke dagen het wordt geserveerd.",
     m3Title: "Sterren en Google-score",
     m3Text: "De Google-score (van 5) en het aantal recensies zijn gecontroleerd in oktober 2026. De sterren komen uit de nieuwste Michelingids van elk land. Een groene ▲ betekent dat een restaurant in een van de laatste twee gidsen een ster kreeg, een rode ▼ dat het zijn ster verloor.",
+    members: "Leden: {s} ({n})", membersTitle: "Gemiddeld cijfer op 5 van leden die er zijn geweest (cijfers: {n})",
+    m3Members: "Cijfers van leden: ingelogde leden die een restaurant als bezocht hebben aangevinkt, kunnen het één keer een cijfer van 1 tot 5 geven. Zodra vijf leden een cijfer hebben gegeven, tonen we het gemiddelde naast de Google-score; cijfers die nep lijken laten we weg.",
     contactTitle: "Een prijswijziging gezien?",
     contactText: "Menuprijzen veranderen vaak. Laat ons een wijziging weten, een restaurant dat we missen of een stad die we hierna moeten toevoegen.",
     cName: "Naam", cEmail: "E-mail", cTopic: "Onderwerp", cTopicPrice: "Prijswijziging", cTopicSuggest: "Een restaurant voorstellen", cTopicCity: "Een andere stad toevoegen", cTopicOther: "Iets anders",

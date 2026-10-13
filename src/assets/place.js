@@ -535,13 +535,16 @@ function ledgerRow(r) {
   return '<div class="row rc-row' + (L() && r.noLunch ? " nolunch" : "") + (state.openRow === r.id ? " open" : "") + '" role="row">' + summaryCell(r) + nameCell(r) +
     '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cuisine) + '" title="' + esc(t("showOnly", { cat: cuisineOf(r) })) + '">' + esc(cuisineOf(r)) + "</button></span>" +
     '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
-    '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num' + (fewReviews(r) ? " few" : "") + '" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + fewNote(r) + "</span>" : "") : '<span class="num muted" aria-hidden="true">–</span><span class="note">' + t("noRating") + "</span>") + "</span>" +
+    '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num' + (fewReviews(r) ? " few" : "") + '" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + fewNote(r) + "</span>" : "") : '<span class="num muted" aria-hidden="true">–</span><span class="note">' + t("noRating") + "</span>") + memberNote(r) + "</span>" +
     '<span class="notes" role="cell">' + (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc(noteOf(r) || "–") +
       srcHtml(r) + bwLine(r) + tripButton(r) + reportButton(r) + "</span>" +
     '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + "</span>" + stub(r) + "</span>" + receipt(r) + actsCell(r) +
     '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +
     "</div>";
 }
+// Members' score (memberScore: [average, count], only once five members have scored it): "Members: 4.6 (12)".
+const memberText = (r) => t("members", { s: r.memberScore[0].toFixed(1), n: r.memberScore[1].toLocaleString("en-GB") });
+const memberNote = (r) => r.memberScore ? '<span class="note member-score" title="' + esc(t("membersTitle", { n: r.memberScore[1] })) + '">' + esc(memberText(r)) + "</span>" : "";
 function formerHtml(former) {
   if (!former.length) return "";
   const label = { lost: t("stLost"), closed: t("stClosed"), changed: t("stChanged") };
@@ -710,6 +713,7 @@ function infoHtml(r) {
     (BADGES.some(([d]) => (r.diets || []).includes(d)) ? '<div style="font-size:12px;color:#1E6142;font-weight:600;margin-top:2px">🌿 ' + BADGES.filter(([d]) => r.diets.includes(d) && !(d === "vegetarian-menu" && r.diets.includes("vegetarian-only"))).map(([, , full]) => esc(t(full))).join(" · ") + "</div>" : "") +
     '<div style="margin-top:6px;font-size:13px">' + esc(price) + (wineOf(r) ? " · " + t("infoWine") + " " + money(wineOf(r), r) : "") + "</div>" +
     (r.rating ? '<div style="font-size:13px;color:#5A6E62">★ ' + r.rating.toFixed(1) + " " + t("infoGoogle") + (fewReviews(r) ? ' · <span title="' + esc(t("fewTitle")) + '">' + esc(t("fewReviews")) + "</span>" : "") + "</div>" : "") +
+    (r.memberScore ? '<div style="font-size:13px;color:#5A6E62" title="' + esc(t("membersTitle", { n: r.memberScore[1] })) + '">' + esc(memberText(r)) + "</div>" : "") +
     (r.change ? '<div style="font-size:12px;color:' + (r.change === "down" ? "#A33A2E" : "#1E6142") + '">' + esc(pick(r, "changeNote") + ", " + monthYear(r.changeDate)) + "</div>" : "") +
     '<a href="' + mapsUrl(r) + '" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#1E6142;font-weight:600;font-size:13px">' + t("infoOpen") + "</a></div>";
 }

@@ -100,6 +100,8 @@
     m2Text: "Illallinen on tärkein maistelumenu, jos sellainen on, ja viini on sen edullisin viinipaketti. Otamme hinnat ravintolan omilta verkkosivuilta, kun ne on julkaistu, muuten tuoreista arvosteluista ja varaussivustoilta. Lounas on ravintolan lounas- tai maistelumenu, ja huomautus kertoo, minä päivinä sitä tarjoillaan.",
     m3Title: "Tähdet ja Google-arvio",
     m3Text: "Google-arvio (asteikolla 1–5) ja arvostelujen määrä on tarkistettu lokakuussa 2026. Tähdet ovat kunkin maan uusimmasta Michelin-oppaasta. Vihreä ▲ merkitsee ravintolaa, joka sai tähden jommassakummassa kahdesta viimeisimmästä oppaasta, punainen ▼ ravintolaa, joka menetti tähtensä.",
+    members: "Jäsenet: {s} ({n})", membersTitle: "Paikassa käyneiden jäsenten keskiarvo asteikolla 1–5 (arvioita: {n})",
+    m3Members: "Jäsenten arviot: kirjautuneet jäsenet, jotka ovat merkinneet ravintolan käydyksi, voivat antaa sille arvosanan 1–5, kukin kerran. Näytämme keskiarvon Google-arvion vieressä, kun viisi jäsentä on arvioinut ravintolan, ja jätämme pois arviot, jotka näyttävät vääriltä.",
     contactTitle: "Huomasitko hinnanmuutoksen?",
     contactText: "Menujen hinnat muuttuvat usein. Kerro meille päivityksestä, puuttuvasta ravintolasta tai kaupungista, jonka haluaisit seuraavaksi.",
     cName: "Nimi", cEmail: "Sähköposti", cTopic: "Aihe", cTopicPrice: "Hintapäivitys", cTopicSuggest: "Ehdota ravintolaa", cTopicCity: "Lisää toinen kaupunki", cTopicOther: "Jotain muuta",

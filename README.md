@@ -207,6 +207,17 @@ Members' saved searches live in Supabase (`saved_searches`, set up by `supabase/
 
 `label` is its plain-English name and `page` the address that shows it again (destination pages read `?stars=&cuisine=&diet=&area=&meal=&max=&cur=&wine=`). After pushes that change restaurants, and every morning, `.github/workflows/saved-searches.yml` builds the site and runs `scripts/saved_searches.py`, which emails a member when a restaurant newly matches one of their searches because its own file changed (a new star, a lower or newly listed price or pairing, a new dietary option or cuisine, or a restaurant new to the site), at most once a day. Preview one with `python3 scripts/saved_searches.py --preview out/ --query '{"p": "london", "d": "vegan"}' --since HEAD~50`.
 
+## Members' scores
+
+Members who have ticked a restaurant as "been there" can score it from 1 to 5 in their diary (the `score` column of their own row in Supabase's `saved` table, set up by `supabase/scores.sql`; unticking "been there" clears it). Each morning `.github/workflows/member-scores.yml` runs `scripts/member_scores.py`, which asks Supabase's `member_scores()` for each restaurant's average and count, only where five or more members have scored it (accounts under a day old and members listed in `score_excluded` left out), and writes them into `content/member-scores.json`, committing it only when something changed. Don't edit that file by hand:
+
+| Field | Meaning |
+|---|---|
+| `updated` | the day the averages last changed |
+| `scores` | per restaurant file name, `[average, count]`, e.g. `"le-bernardin": [4.63, 12]` |
+
+The build gives those restaurants `memberScore` (the average to one decimal and the count), shown as "Members: 4.6 (12)" beside the Google rating on destination rows and map pop-ups, and as "Members' score" on restaurant pages. It never goes in the structured data. `member_score_checks()` (secret key only) lists accounts whose scoring looks unusual (ten or more scores in a day, or five or more all the same) for the weekly member-reports review; anyone found faking scores is added to `score_excluded` by hand.
+
 ## Editing
 
 The easiest way is Pages CMS: go to https://app.pagescms.org, sign in with GitHub and open **starred-bill**. Restaurants, Places, Guides, Currencies and Site settings each have a form; click **Save** and the site updates within a couple of minutes.

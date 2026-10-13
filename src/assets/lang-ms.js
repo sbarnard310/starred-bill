@@ -101,6 +101,8 @@
     m2Text: "Makan malam ialah menu rasa utama jika ada, dan wain ialah padanan wain termurah untuknya. Kami mengambil harga daripada laman web restoran sendiri jika diterbitkan, jika tidak daripada ulasan terkini dan laman tempahan. Makan tengah hari ialah menu set atau menu rasa tengah hari restoran, dan nota menyatakan hari ia dihidangkan.",
     m3Title: "Bintang dan penilaian Google",
     m3Text: "Skor ulasan Google daripada 5 dan bilangan ulasan, disemak pada Oktober 2026. Bintang diambil daripada Panduan Michelin terkini bagi setiap negara. ▲ hijau menandakan restoran yang mendapat bintang dalam salah satu daripada dua panduan terkini; ▼ merah menandakan restoran yang kehilangan bintangnya.",
+    members: "Ahli: {s} ({n})", membersTitle: "Skor purata daripada 5 oleh ahli yang pernah ke sana (skor: {n})",
+    m3Members: "Skor ahli: ahli yang log masuk dan menandakan restoran sebagai pernah dikunjungi boleh memberinya skor 1 hingga 5, sekali seorang. Kami tunjukkan puratanya di sebelah penarafan Google setelah lima ahli memberi skor, dan kami abaikan skor yang kelihatan palsu.",
     contactTitle: "Nampak perubahan harga?",
     contactText: "Harga menu kerap berubah. Beritahu kami tentang kemas kini, restoran yang tertinggal atau bandar yang anda mahu kami liputi seterusnya.",
     cName: "Nama", cEmail: "E-mel", cTopic: "Topik", cTopicPrice: "Kemas kini harga", cTopicSuggest: "Cadangkan restoran", cTopicCity: "Liputi bandar lain", cTopicOther: "Perkara lain",

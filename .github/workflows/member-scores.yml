@@ -1,0 +1,42 @@
+# Members' scores: once a day, brings each restaurant's average members' score and count down from Supabase
+# (member_scores(), only restaurants five or more members have scored, never who gave which) into
+# content/member-scores.json, and commits it to main only when something changed; Cloudflare then publishes it.
+# Needs the repository secret SUPABASE_SERVICE_KEY (the star emails use it too); without it, it does nothing and says so.
+name: Members' scores
+
+on:
+  schedule:
+    - cron: "20 6 * * *"   # 06:20 UTC, before the morning audit builds its copy
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: member-scores
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the members' scores
+        env:
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python3 scripts/member_scores.py
+      - name: Commit them if they changed
+        run: |
+          if git diff --quiet -- content/member-scores.json && [ -z "$(git status --porcelain -- content/member-scores.json)" ]; then
+            echo "Nothing changed."; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/member-scores.json
+          git commit -m "Update members' scores"
+          for i in 1 2 3; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep 10
+          done
+          echo "Couldn't push the members' scores after three tries."; exit 1

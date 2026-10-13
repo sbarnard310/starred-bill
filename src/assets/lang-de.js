@@ -106,6 +106,8 @@
     m2Text: "Abendessen ist das wichtigste Degustationsmenü, sofern es eines gibt, und Wein ist die günstigste Weinbegleitung dazu. Wir übernehmen die Preise von der Website des Restaurants, wenn sie dort stehen, sonst aus aktuellen Kritiken und von Buchungsseiten. Mittagessen ist das Mittags- oder Degustationsmenü des Restaurants, und die Notiz sagt, an welchen Tagen es serviert wird.",
     m3Title: "Sterne und Google-Bewertung",
     m3Text: "Die Google-Bewertung (von 5) und die Zahl der Bewertungen wurden im Oktober 2026 geprüft. Die Sterne stammen aus der neuesten Ausgabe des Guide Michelin für jedes Land. Ein grünes ▲ markiert ein Restaurant, das in einer der letzten beiden Ausgaben einen Stern gewonnen hat, ein rotes ▼ eines, das seinen Stern verloren hat.",
+    members: "Mitglieder: {s} ({n})", membersTitle: "Durchschnittliche Bewertung von 5 durch Mitglieder, die dort waren (Bewertungen: {n})",
+    m3Members: "Bewertungen der Mitglieder: Angemeldete Mitglieder, die ein Restaurant als besucht markiert haben, können es einmal mit 1 bis 5 bewerten. Sobald fünf Mitglieder bewertet haben, zeigen wir den Durchschnitt neben der Google-Bewertung; Bewertungen, die gefälscht wirken, lassen wir weg.",
     contactTitle: "Hat sich ein Preis geändert?",
     contactText: "Menüpreise ändern sich oft. Schreib uns von einer Änderung, einem Restaurant, das uns fehlt, oder einer Stadt, die wir als Nächstes aufnehmen sollen.",
     cName: "Name", cEmail: "E-Mail", cTopic: "Thema", cTopicPrice: "Preisänderung", cTopicSuggest: "Restaurant vorschlagen", cTopicCity: "Weitere Stadt aufnehmen", cTopicOther: "Etwas anderes",

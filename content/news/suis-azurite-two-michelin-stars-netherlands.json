@@ -1,0 +1,39 @@
+{
+  "id": "suis-azurite-two-michelin-stars-netherlands",
+  "h1": "SUIS and Azurite win two Michelin stars in the Netherlands",
+  "title": "SUIS and Azurite Win Two Michelin Stars in the Netherlands",
+  "description": "SUIS in Schin op Geul and Azurite in Delft won two Michelin stars on 5 October 2026, with seven new one-stars. Who lost theirs, and what each costs.",
+  "summary": "Two new two-stars, SUIS and Azurite, and seven first stars in the 2026 Dutch guide. Amsterdam won none and lost two: De Juwelier and Daalder.",
+  "kind": "stars",
+  "published": "2026-10-14",
+  "places": [
+    "netherlands"
+  ],
+  "body": "<p>SUIS in Schin op Geul and Azurite in Delft won two MICHELIN stars at the Netherlands ceremony in Maastricht on 5 October 2026, and seven more restaurants won their first. Four lost their stars, two of them in Amsterdam, which gained none. De Librije in Zwolle remains the country’s only three-star restaurant.</p><h2>The two new two-star restaurants</h2><p>Ralf Berendsen opened <a data-r=\"suis\">SUIS</a> only at the end of April, after leaving La Butte aux Bois in Belgium. Its tasting menu costs {{dinner:suis}}, and there is a lunch menu at {{lunch:suis}}. At <a data-r=\"azurite\">Azurite</a> in Delft, chef Mario Ridder’s menu costs {{dinner:azurite}}.</p><h2>New one-star restaurants</h2><p>Seven restaurants won their first star: <a data-r=\"ambrozijn\">Ambrozijn</a> in Valkenburg ({{dinner:ambrozijn}}), <a data-r=\"bij-sidney\">Bij Sidney</a> in Loenen aan de Vecht ({{dinner:bij-sidney}}), <a data-r=\"de-cuijt\">De Cuijt</a> in Mierlo ({{dinner:de-cuijt}}), <a data-r=\"le-epifaan\">Le Epifaan</a> in Veeningen ({{dinner:le-epifaan}}), <a data-r=\"nassau\">Nassau</a> in Groningen ({{dinner:nassau}}), <a data-r=\"rozewied\">Rozewied</a> in Kortgene ({{dinner:rozewied}}) and <a data-r=\"wild-atelier\">Wild Atelier</a> in Hoog Soeren ({{dinner:wild-atelier}}). The prices are each restaurant’s dinner menu per person. Rozewied’s chefs, Noëmie Haentjens and Ferdy van Rijswijk, also won the Young Chef award.</p><h2>Which Dutch restaurants lost their stars?</h2><p>De Juwelier and Daalder in Amsterdam, Sense in Vught and Da Vinci in Maasbracht lost their stars. Two two-star restaurants closed during the year, De Groene Lantaarn in Staphorst and Spectrum in Amsterdam, and De Woage in Gramsbergen left the guide after becoming a bar.</p><h2>How many Michelin stars does the Netherlands have now?</h2><p>The 2026 guide lists 119 starred restaurants: one with three stars, 20 with two and 98 with one, plus 77 Bib Gourmands. Every one, with dinner, lunch and wine pairing prices, is on our <a data-place=\"netherlands\">Netherlands Michelin star restaurants page</a>, and the full list of changes is on our <a data-guide=\"michelin-guide-netherlands\">MICHELIN Guide Netherlands 2026 results page</a>.</p>",
+  "sources": [
+    {
+      "title": "The 2026 MICHELIN Guide Netherlands: Azurite and SUIS awarded two Stars",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/the-2026-michelin-guide-netherlands",
+      "date": "2026-10-06"
+    },
+    {
+      "title": "Nine Dutch restaurants win first Michelin stars",
+      "publisher": "DutchNews.nl",
+      "url": "https://www.dutchnews.nl/2026/10/nine-dutch-restaurants-win-first-michelin-stars/",
+      "date": "2026-10-05"
+    },
+    {
+      "title": "Da Vinci, Daalder, Sense en De Juwelier verliezen Michelinster",
+      "publisher": "Tasty Trails",
+      "url": "https://tastytrails.nl/hotspots/restaurants/da-vinci-en-sense-verliezen-michelinster-live-overzicht-van-2026/",
+      "date": "2026-10-05"
+    },
+    {
+      "title": "Geen nieuwe michelinster voor Amsterdam, wel twee sterren minder",
+      "publisher": "AT5",
+      "url": "https://www.at5.nl/artikelen/240256/geen-nieuwe-restaurants-met-michelin-ster-in-amsterdam-twee-restaurants-verliezen-ster",
+      "date": "2026-10-05"
+    }
+  ]
+}

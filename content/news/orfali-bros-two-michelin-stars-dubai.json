@@ -1,0 +1,39 @@
+{
+  "id": "orfali-bros-two-michelin-stars-dubai",
+  "h1": "Orfali Bros wins a second Michelin star in Dubai",
+  "title": "Orfali Bros Wins a Second Michelin Star in Dubai",
+  "description": "Orfali Bros moved up to two Michelin stars in Dubai on 6 October 2026, Birch and KIGO won their first, and four closed restaurants kept theirs.",
+  "summary": "Orfali Bros moves up to two stars, Birch and KIGO win their first, and four temporarily closed restaurants keep their stars in Dubai’s fifth guide.",
+  "kind": "stars",
+  "published": "2026-10-14",
+  "places": [
+    "dubai"
+  ],
+  "body": "<p>Orfali Bros, the restaurant of brothers Mohammad, Wassim and Omar Orfali, won its second MICHELIN star at the fifth Dubai ceremony, at Atlantis The Royal on 6 October 2026. Birch and KIGO won their first star. No restaurant lost one, and four that are temporarily closed kept theirs.</p><h2>What a meal at Orfali Bros costs</h2><p>The tasting menu at <a data-r=\"orfali-bros\">Orfali Bros</a> costs {{dinner:orfali-bros}} per person, and its set lunch {{lunch:orfali-bros}}, the cheapest two-star meal we list in Dubai.</p><h2>Birch and KIGO</h2><p>At <a data-r=\"birch\">Birch</a>, chef Arslan Berdiev’s menu costs {{dinner:birch}}, with a wine pairing at {{wine:birch}}. Japanese omakase and kaiseki at <a data-r=\"kigo\">KIGO</a> cost {{dinner:kigo}}; its chef Akinori Tanigawa and his team also won the Service Award.</p><h2>Why closed restaurants kept their stars</h2><p>Al Muntaha, <a data-r=\"dinner-by-heston-blumenthal-dubai\">Dinner by Heston Blumenthal</a>, Ossiano and Smoked Room are all temporarily closed but kept one star each. Michelin told Gulf News that a star rests on its latest inspections and is checked again when a restaurant reopens. Ossiano’s Rémy Marquignon still won the Young Chef award.</p><h2>How many Michelin star restaurants does Dubai have?</h2><p>Twenty: FZN by Björn Frantzén and Trèsind Studio with three stars, four with two and 14 with one, among 122 restaurants in the guide. Every one, with prices, is on our <a data-place=\"dubai\">Dubai Michelin star restaurants page</a>, and every change is on our <a data-guide=\"michelin-guide-dubai\">MICHELIN Guide Dubai 2026 results page</a>.</p>",
+  "sources": [
+    {
+      "title": "The MICHELIN Guide Dubai Celebrates its 5th Edition",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-dubai-5th-edition",
+      "date": "2026-10-07"
+    },
+    {
+      "title": "Michelin Guide Dubai 2026: Closed restaurants retain stars as new winners emerge",
+      "publisher": "The National",
+      "url": "https://www.thenationalnews.com/lifestyle/food/2026/10/07/michelin-guide-dubai-2026-closed-restaurants-retain-stars-as-new-winners-emerge/",
+      "date": "2026-10-07"
+    },
+    {
+      "title": "Dubai Michelin Guide 2026: Why some temporarily closed restaurants have retained their stars",
+      "publisher": "Gulf News",
+      "url": "https://gulfnews.com/lifestyle/dubai-michelin-guide-2026-why-some-temporarily-closed-restaurants-have-retained-their-stars-1.500707891",
+      "date": "2026-10-12"
+    },
+    {
+      "title": "Tresind Studio Retaining Its Stars To New Additions, Michelin Guide 2026 Revealed For Dubai",
+      "publisher": "Curly Tales",
+      "url": "https://curlytales.com/tresind-studio-retaining-its-stars-to-new-additions-michelin-guide-revealed-for-dubai/",
+      "date": "2026-10-07"
+    }
+  ]
+}

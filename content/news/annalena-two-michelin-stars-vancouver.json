@@ -1,0 +1,33 @@
+{
+  "id": "annalena-two-michelin-stars-vancouver",
+  "h1": "AnnaLena wins Vancouver’s first two Michelin stars",
+  "title": "AnnaLena Wins Vancouver’s First Two Michelin Stars",
+  "description": "AnnaLena became Vancouver’s first two-Michelin-star restaurant on 6 October 2026, and Barbara lost its star. What a meal at AnnaLena costs.",
+  "summary": "AnnaLena in Kitsilano becomes the city’s first two-star restaurant; Barbara loses its star, and no restaurant wins a first.",
+  "kind": "stars",
+  "published": "2026-10-14",
+  "places": [
+    "vancouver"
+  ],
+  "body": "<p>AnnaLena in Kitsilano became Vancouver’s first two-MICHELIN-star restaurant at the city’s ceremony at the Fairmont Hotel Vancouver on 6 October 2026. Barbara lost its star and no restaurant won a first, so Vancouver now has 11 starred restaurants: AnnaLena and ten with one star.</p><h2>What a meal at AnnaLena costs</h2><p>Chef Michael Robbins’ <a data-r=\"annalena\">AnnaLena</a> has held one star since 2022. Its tasting menu costs {{dinner:annalena}} per person before tax and tip, and the wine pairing {{wine:annalena}}. It is now one of three two-star restaurants in Canada.</p><h2>Which Vancouver restaurant lost its star?</h2><p>Barbara, Patrick Hennessy’s restaurant, stays in the guide as a Recommended restaurant without its star. The ten one-stars all kept theirs, from <a data-r=\"kissa-tanto\">Kissa Tanto</a> to Okeya Kyujiro and Published on Main.</p><h2>The rest of the guide</h2><p>The fifth Vancouver guide lists 72 restaurants, with 16 Bib Gourmands; Chef’s Choice Seafood and Kavita are the new ones. Every starred restaurant in the city, with prices, is on our <a data-place=\"vancouver\">Vancouver Michelin star restaurants page</a>, and every change is on our <a data-guide=\"michelin-guide-vancouver\">MICHELIN Guide Vancouver 2026 results page</a>.</p>",
+  "sources": [
+    {
+      "title": "Here are all 72 Vancouver restaurants that made the 2026 Michelin Guide",
+      "publisher": "Daily Hive",
+      "url": "https://dailyhive.com/vancouver/michelin-guide-vancouver-2026",
+      "date": "2026-10-06"
+    },
+    {
+      "title": "All the Vancouver restaurants dropped from the 2026 Michelin Guide",
+      "publisher": "Daily Hive",
+      "url": "https://dailyhive.com/vancouver/michelin-guide-vancouver-dropped-restaurants",
+      "date": "2026-10-06"
+    },
+    {
+      "title": "The 2026 MICHELIN Guide Vancouver is Here",
+      "publisher": "Destination Vancouver",
+      "url": "https://www.destinationvancouver.com/inspirations/food-and-drink/the-2026-michelin-guide-vancouver-is-here",
+      "date": "2026-10-09"
+    }
+  ]
+}

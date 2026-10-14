@@ -1284,6 +1284,46 @@ dialog.report-box { width: min(480px, calc(100vw - 32px)); max-height: calc(100d
   .guide-list { gap: 16px; }
   .guide-next { padding: 22px 18px; }
 }
+/* News (/news/, build_news() in build.py): short dated stories, listed by month, with the next ceremonies beside them. */
+.news-kind { margin: 0 0 6px; color: var(--gold); font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.news-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: 40px; align-items: start; margin-top: 28px; }
+.news-month + .news-month { margin-top: 32px; }
+.guide .news-month h2 { margin: 0 0 10px; font-size: 1.1rem; font-family: var(--font-body); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.news-list { list-style: none; margin: 0; padding: 0; }
+.guide .news-list li { position: relative; max-width: none; margin: 0; padding: 16px 0 18px; border-top: 1px solid var(--line); }
+.news-list h3 { margin: 4px 0 6px; font-family: var(--font-display); font-weight: 400; font-size: 1.35rem; line-height: 1.2; }
+.news-list h3 a { color: var(--ink); text-decoration: none; }
+.news-list h3 a::after { content: ""; position: absolute; inset: 0; }
+.news-list li:hover h3 a { color: var(--green); }
+.guide .news-list p { margin: 0; color: var(--muted); }
+.guide .news-meta { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; margin: 0; font-size: .82rem; color: var(--muted); }
+.news-meta time { font-family: var(--font-num); color: var(--green); }
+.news-tag { font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: .72rem; }
+.news-coming { position: sticky; top: 150px; padding: 18px 18px 6px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.guide .news-coming h2 { margin: 0 0 10px; font-size: 1.15rem; }
+.news-coming .nw-coming { border: 0; background: none; margin-inline: -16px; }
+.guide .news-coming p { margin: 10px 0 12px; font-size: .9rem; }
+.news-mini { list-style: none; margin: 0 0 10px; padding: 0; }
+.news-mini li { padding: 7px 0; border-top: 1px solid var(--line); line-height: 1.4; }
+.news-mini li:first-child { border-top: 0; }
+.news-mini time { display: block; font-family: var(--font-num); font-size: .76rem; color: var(--muted); }
+.news-more { margin-top: 36px; padding-top: 6px; border-top: 1px solid var(--line); }
+.guide .news-more h2 { font-size: 1.2rem; }
+.guide .news-more li { max-width: none; }
+#news .news-mini { max-width: 720px; }
+.nw-head-news { margin-top: 24px; }
+.nw-news { list-style: none; margin: 0; padding: 0; }
+.nw-news li { display: grid; grid-template-columns: 7.5em minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 9px 0; border-top: 1px solid var(--line); }
+.nw-news li:first-child { border-top: 0; }
+.nw-news a { color: var(--ink); font-weight: 600; text-decoration: none; }
+.nw-news a:hover { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 900px) {
+  .news-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .news-coming { position: static; }
+}
+@media (max-width: 720px) {
+  .nw-news li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+}
 footer a.foot-guide { color: inherit; }
 /* Popular destinations (foot_places_html() in build.py): a full-width line of links on every page. */
 footer .foot-places { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .82rem; }

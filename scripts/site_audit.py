@@ -82,6 +82,9 @@ def page_checks(site):
         # has a "Sources" line (place_sources_html(), restaurant_sources_html() in build.py).
         if re.match(r"^/guides/[^/]+/$", url) and not re.search(r'<section class="guide-sources" id="sources"><h2>Sources</h2><ul><li>', s):
             out["guide_without_sources"].append(url)
+        # News stories (build_news() in build.py) list their sources too.
+        if re.match(r"^/news/[^/]+/$", url) and not re.search(r'<section class="guide-sources" id="sources"><h2>Sources</h2><ul><li>', s):
+            out["news_without_sources"].append(url)
         if ('<ol class="prerender"><li>' in s or url.startswith("/restaurants/")) and 'class="method-sources"' not in s:
             out["page_without_sources"].append(url)
         m = re.search(r'og:image" content="https://starredbill.com(/[^"]+)"', s)
@@ -181,10 +184,11 @@ def link_checks(site):
     # Guides: the article's own text (the data-built tables and lists aside) follows the writing rules.
     by_length = sorted(names, key=len, reverse=True)
     for url, s in sorted(pages.items()):
-        if not re.match(r"^/guides/[^/]+/$", url):
+        if not re.match(r"^/(guides|news)/[^/]+/$", url):  # news stories follow the guides' writing rules
             continue
         main = s[s.find("<main"):s.find("</main>")]
         main = main[:main.find('<section id="guides"')] if '<section id="guides"' in main else main
+        main = main[:main.find('<aside class="news-more"')] if '<aside class="news-more"' in main else main  # a story's "More news" list
         linked = {target(h) for h in re.findall(r'href="(/[^"]*)"', main)}
         prose = LISTS.sub(" ", main)
         seen = collections.Counter()

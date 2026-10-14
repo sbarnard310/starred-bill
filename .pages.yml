@@ -1955,6 +1955,98 @@ content:
           - name: text
             label: Write-up
             type: text
+  - name: news
+    label: News
+    description: Short dated stories at starredbill.com/news/<file name>/. The file name is the page's address, so don't rename a published story. README ("News") lists the fields.
+    type: collection
+    path: content/news
+    format: json
+    filename: "{fields.id}.json"
+    operations:
+      rename: false
+    view:
+      primary: h1
+      fields: [h1, published]
+      sort: [published]
+      default:
+        sort: published
+        order: desc
+    fields:
+      - name: id
+        label: Web address
+        description: Lowercase words joined by hyphens, e.g. texas-2026-new-michelin-stars. Can't change once published.
+        type: string
+        required: true
+      - name: h1
+        label: Headline
+        type: string
+        required: true
+      - name: title
+        label: Title in search results
+        description: Up to 60 characters.
+        type: string
+        required: true
+      - name: description
+        label: Description in search results
+        description: Up to 155 characters.
+        type: text
+        required: true
+      - name: summary
+        label: Summary for the News page and the feed
+        type: text
+        required: true
+      - name: kind
+        label: Kind of story
+        type: select
+        required: true
+        options:
+          values:
+            - { value: stars, label: New and lost stars }
+            - { value: ceremony, label: Coming up (ceremonies) }
+            - { value: closure, label: Closure }
+            - { value: opening, label: Opening }
+            - { value: chef, label: Chef move }
+            - { value: prices, label: Prices }
+            - { value: rankings, label: Rankings (50 Best, La Liste, OAD) }
+            - { value: data, label: Our own figures }
+      - name: published
+        label: Published
+        description: A date like 2026-10-14.
+        type: string
+        required: true
+      - name: updated
+        label: Updated
+        description: Optional. The day you last changed the story, like 2026-10-15.
+        type: string
+      - name: lang
+        label: Spelling
+        description: en-GB (the default) for UK spelling and dates, en-US for US.
+        type: string
+      - name: places
+        label: Places it's about
+        description: Optional. Place file names, e.g. london or texas. Its restaurants' towns count anyway. The first gives the link-preview picture.
+        type: string
+        list: true
+      - name: body
+        label: Story
+        description: "Answer first, in 40–50 words. <a data-r=\"le-bernardin\">…</a> links a restaurant, <a data-place=\"london\">…</a> a destination page, <a data-guide=\"name\">…</a> a guide and <a data-news=\"name\">…</a> another story. Figures like {{dinner:fabrik}} work as in guides."
+        type: rich-text
+        required: true
+      - name: sources
+        label: Sources
+        description: "Required. Michelin's press releases, news coverage and restaurants' own announcements; never the MICHELIN Guide's website. Give each the date it was published."
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: publisher, label: Publisher, type: string, required: true }
+          - { name: url, label: Link, description: "The full https:// address.", type: string, required: true }
+          - { name: date, label: Published, description: "e.g. 2026-10-08, or 2026-10 if you only know the month.", type: string, pattern: { regex: '^\d{4}(-\d{2}(-\d{2})?)?$', message: "Use 2026, 2026-10 or 2026-10-08" } }
+          - { name: checked, label: Checked (for live pages), description: "The month we read a page that keeps changing, e.g. 2026-10.", type: string, pattern: { regex: '^\d{4}(-\d{2}(-\d{2})?)?$', message: "Use 2026-10" } }
+          - { name: note, label: Note, type: string }
+      - name: sourcesNote
+        label: Note under the sources
+        type: string
   - name: guide-translations
     label: Guide translations
     description: "Guides in other languages, at starredbill.com/<language>/guides/<file name>/. One folder per language (de German, es Spanish, it Italian, pt Portuguese, pl Polish); open the folder, then the guide. A translation keeps the English guide's file name, and its figures and tables come from the same data. Add a new language in build.py (GUIDE_WORDS) first."

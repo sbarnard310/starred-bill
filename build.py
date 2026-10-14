@@ -716,6 +716,65 @@ for pid, p in places.items():
     if p.get("localNoteChecked") and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", p["localNoteChecked"]):
         problem(where, "localNoteChecked must be a date like 2026-10-09")
 
+# News (14 Oct 2026, to-do item feature-news-section): short, dated stories about Michelin-starred restaurants (new and
+# lost stars on ceremony nights, closures and openings, chef moves, price rises, critics' lists, our own figures), one JSON
+# file per story in content/news/ (Pages CMS "News"), its name being the page's address (/news/<name>/). build_news() writes
+# each story, the list at /news/ (newest first) and the RSS feed at /news/feed.xml. README lists the fields. Links in a
+# story: <a data-r="<restaurant>">, <a data-place="<place>">, <a data-guide="<guide>"> and <a data-news="<story>">, each
+# made a link by news_links() (data-guide stays plain text until that guide exists). Every story needs its sources: press
+# releases, news coverage, restaurants' own announcements; never the MICHELIN Guide's website (its terms, 13 Oct 2026).
+NEWS_KINDS = {"stars": "New stars", "ceremony": "Coming up", "closure": "Closure", "opening": "Opening", "chef": "Chef move",
+              "prices": "Prices", "rankings": "Rankings", "data": "Our figures"}
+NEWS_FIELDS = ("title", "description", "h1", "summary", "published", "kind", "body")
+NEWS_LINK = re.compile(r'<a data-(r|place|guide|news)="([\w-]+)">(.*?)</a>', re.S)
+NEWS_STALE_DAYS = 10  # the build reminds us when the newest story is older (aim: one or two a week, plus ceremony nights)
+news = {}
+for path in sorted((CONTENT / "news").glob("*.json")) if (CONTENT / "news").exists() else []:
+    where = f"news/{path.name}"
+    s = tidy(read_json(path) or {})
+    sid = path.stem
+    if s.get("id") and s["id"] != sid:
+        problem(where, f"id is \"{s['id']}\" but the file is named {sid}.json; they must match")
+    if not ID_PATTERN.fullmatch(sid):
+        problem(where, "the file name must be lowercase words joined by hyphens, like texas-2026-new-stars")
+    for field in NEWS_FIELDS:
+        if not s.get(field):
+            problem(where, f"needs a {field}")
+    if len(s.get("title", "")) > 60:
+        problem(where, f"title is {len(s['title'])} characters; search results cut it off after 60")
+    if len(s.get("description", "")) > 155:
+        problem(where, f"description is {len(s['description'])} characters; keep it to 155")
+    if s.get("kind") and s["kind"] not in NEWS_KINDS:
+        problem(where, f"kind is \"{s['kind']}\"; use one of " + ", ".join(NEWS_KINDS))
+    for field in ("published", "updated"):
+        if s.get(field) and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", s[field]):
+            problem(where, f"{field} must be a date like 2026-10-14")
+    if s.get("lang", "en-GB") not in ("en-GB", "en-US"):
+        problem(where, "lang must be en-GB (UK spelling) or en-US (US spelling)")
+    if not isinstance(s.get("places", []), list) or any(i not in places for i in s.get("places", [])):
+        problem(where, "places must be a list of place ids (file names in content/places), e.g. [\"london\"]")
+    s["places"] = list(s.get("places", []))
+    s["sources"] = [tidy(x) for x in s.get("sources", []) if isinstance(x, dict) and tidy(x).get("url")]
+    if not s["sources"]:
+        problem(where, "needs its sources: the press releases, news reports or restaurants' own announcements it's based on")
+    for x in s["sources"]:
+        bad = source_problem(x)
+        if not bad and urllib.parse.urlsplit(x["url"]).netloc.lower().endswith("guide.michelin.com"):
+            bad = "never the MICHELIN Guide's website (its terms forbid copying from it); use Michelin's press release or news coverage"
+        if bad:
+            problem(where, f"sources entry {x.get('title') or x['url']}: {bad}")
+    for kind, i, _ in NEWS_LINK.findall(s.get("body", "")):
+        if kind == "r" and i not in ids:
+            problem(where, f"links data-r=\"{i}\", which isn't a restaurant file name")
+        elif kind == "place" and i not in places:
+            problem(where, f"links data-place=\"{i}\", which isn't a place file name")
+    s["id"] = sid
+    news[sid] = s
+for sid, s in news.items():
+    for i in re.findall(r'data-news="([\w-]+)"', s.get("body", "")):
+        if i not in news:
+            problem(f"news/{sid}.json", f"links data-news=\"{i}\", which isn't a story's file name")
+
 if problems:
     print("The site wasn't built because of these problems in the data:\n  - " + "\n  - ".join(problems))
     sys.exit(1)
@@ -2592,6 +2651,8 @@ def new_stars_html(p, page, lang):
             title = head("nwTitle" if gained else "nwTitleChanges" if now else "nwTitleNone", when=when)
             cards.append(fact_card(head("nwWhat", when=when), None, [k.gap.join(text)]))
         cards.append(ceremony_card(g, k, say, lang))
+        if lang == "en":
+            cards.append(news_card(p))
         return page_section("latest", k.w["nwEyebrow"], title, "", '<div class="facts">' + "".join(cards) + "</div>")
     cards = []
     for g, rs in found:
@@ -2609,6 +2670,8 @@ def new_stars_html(p, page, lang):
         cards.append(fact_card(head("nwGuide", guide=re.sub(r"^MICHELIN Guide ", "", g["name"]), guideFull=name, when=when), None, [k.gap.join(text)]))
     if not cards:
         return ""
+    if lang == "en":
+        cards.append(news_card(p))
     intro = say("nwMany", k=len(found))
     if "michelin-guide-ceremony-dates" in guides:
         intro += k.gap + e(k.w["cerAll"]).replace("{link}", english_link("/guides/michelin-guide-ceremony-dates/", k.w["cerAllLink"], k))
@@ -3352,7 +3415,12 @@ def home_new_html(starred):
             f'Every destination page lists its own.</p>') if won else ""
     dates = '<p class="home-more"><a href="/guides/michelin-guide-ceremony-dates/" data-home="ceremony">Every ceremony date →</a></p>' \
         if "michelin-guide-ceremony-dates" in guides else ""
-    return (f'<div class="nw-grid"><div><h3 class="nw-head">Latest results</h3><ul class="nw-results">{"".join(result(g) for g in done)}</ul></div>'
+    latest = news_order()[:NEWS_HOME]
+    stories = (f'<h3 class="nw-head nw-head-news">Latest news</h3><ul class="nw-news">' + "".join(
+        f'<li><time class="nw-date" datetime="{s["published"]}">{e(short_date(s["published"]))}</time>'
+        f'<a href="/news/{s["id"]}/" data-home="news">{e(s["h1"])}</a></li>' for s in latest)
+        + '</ul><p class="home-more"><a href="/news/" data-home="news">All news →</a></p>') if latest else ""
+    return (f'<div class="nw-grid"><div><h3 class="nw-head">Latest results</h3><ul class="nw-results">{"".join(result(g) for g in done)}</ul>{stories}</div>'
             f'<div><h3 class="nw-head">Coming up</h3><ul class="nw-coming">{"".join(soon(g) for g in coming)}</ul>{stat}{dates}</div></div>')
 
 
@@ -6235,7 +6303,8 @@ def foot_guide(lang="en"):
     g = guide_translations.get(GUIDE_PILLAR, {}).get(lang)
     if g:
         return f'<a href="{guide_path(GUIDE_PILLAR, lang)}" class="foot-guide">{e(g["h1"])}</a>'
-    return f'<a href="{guide_path(GUIDE_PILLAR)}" class="foot-guide" lang="en">What is a Michelin star?</a>'
+    return (f'<a href="{guide_path(GUIDE_PILLAR)}" class="foot-guide" lang="en">What is a Michelin star?</a>'
+            + ('<a href="/news/" class="foot-guide" lang="en">Michelin star news</a>' if news and lang == "en" else ""))
 
 
 GUIDE_CRUMB = {"de": "Ratgeber", "es": "Guías", "it": "Guide", "pt": "Guias", "pl": "Poradniki"}  # navGuides in each language
@@ -6567,6 +6636,7 @@ def build_guides():
               '<a href="/near-me/"><svg aria-hidden="true"><use href="#locate"/></svg><strong>Near me</strong><span>Every starred restaurant around you, nearest first</span></a>'
               '<a href="/pick/"><svg aria-hidden="true"><use href="#spark"/></svg><strong>Help me pick</strong><span>Six quick questions, three picks to fit your budget</span></a>'
               '<a href="/#destinations"><svg aria-hidden="true"><use href="#pin"/></svg><strong>All destinations</strong><span>Dinner, lunch and wine pairing prices, city by city</span></a>'
+              + ('<a href="/news/"><svg aria-hidden="true"><use href="#star"/></svg><strong>News</strong><span>New and lost stars, closures and chef moves, as they happen</span></a>' if news else '') +
               f'</div>' + (f'<p class="guide-cities"><span>Popular:</span>{cities}</p>' if cities else "") + '</aside>')
     lede = (f'Plain-English guides to Michelin stars: what one, two and three stars mean, how restaurants earn them, where to find them '
             f'and what a starred meal really costs. Every figure comes from the {stats["total"]} starred restaurants on The Starred Bill, '
@@ -6594,6 +6664,219 @@ def build_guides():
         "main": intro + jump + feature + sections + onward,
         "mainClass": "wrap prose guide guide-index", "data": data,
     }))
+
+# ---------- News (14 Oct 2026) ----------
+NEWS_MORE = 3     # "More news" under a story
+NEWS_HOME = 3     # stories in the homepage's "What's new"
+NEWS_PLACE = 3    # stories on a destination page or restaurant page that mention it
+NEWS_FEED = 30    # stories in the RSS feed
+
+
+def news_order():
+    """Every story, newest first."""
+    return sorted(news.values(), key=lambda s: (s["published"], s["id"]), reverse=True)
+
+
+def news_date(s, field="published"):
+    return (us_date if s.get("lang") == "en-US" else uk_date)(s[field])
+
+
+def news_links(text):
+    """A story's <a data-r|data-place|data-guide|data-news="…"> as links (see the loader above)."""
+    by_id = {r["id"]: r for r in restaurants}
+    def link(m):
+        kind, i, inner = m.groups()
+        if kind == "guide" and i not in guides:
+            return inner
+        href = (restaurant_href(by_id[i]) if kind == "r" else places[i]["path"] if kind == "place"
+                else f"/guides/{i}/" if kind == "guide" else f"/news/{i}/")
+        return f'<a href="{e(href)}">{inner}</a>'
+    return NEWS_LINK.sub(link, text)
+
+
+def news_restaurants(s):
+    """The restaurants a story names with a link, in order."""
+    by_id = {r["id"]: r for r in restaurants}
+    return [by_id[i] for i in dict.fromkeys(re.findall(r'data-r="([\w-]+)"', s["body"]))]
+
+
+def news_about(s):
+    """Every place a story concerns: its `places`, the places it links and its restaurants' towns, with every place above them."""
+    out = set()
+    for pid in s["places"] + re.findall(r'data-place="([\w-]+)"', s["body"]):
+        out.update(chain(pid))
+    for r in news_restaurants(s):
+        out.update(r["_chain"])
+    return out
+
+
+def news_for_place(p, n=NEWS_PLACE):
+    return [s for s in news_order() if p["id"] in news_about(s)][:n]
+
+
+def news_for_restaurant(r, n=NEWS_PLACE):
+    return [s for s in news_order() if r in news_restaurants(s)][:n]
+
+
+def news_image(s):
+    """A story's link-preview picture: its first place's (or the nearest place above it), else its first restaurant's, else the site's."""
+    if s["places"]:
+        return og_image(places[s["places"][0]])
+    rs = news_restaurants(s)
+    return (restaurant_og(rs[0]) if rs else None) or (og_image(places[rs[0]["city"]]) if rs else f"{SITE_URL}/og/default.png")
+
+
+def news_items_html(stories, cls="news-mini"):
+    """A short list of stories: the date, then the headline as a link."""
+    return (f'<ul class="{cls}">' + "".join(
+        f'<li><time datetime="{s["published"]}">{e(uk_date(s["published"]))}</time> <a href="/news/{s["id"]}/">{e(s["h1"])}</a></li>'
+        for s in stories) + "</ul>") if stories else ""
+
+
+def news_card(p):
+    """The "In the news" card in an English destination page's "New Michelin stars" section, when stories mention the place."""
+    stories = news_for_place(p)
+    if not stories:
+        return ""
+    return fact_card("In the news", None, [], news_items_html(stories) + '<p><a href="/news/">All Michelin star news →</a></p>')
+
+
+def news_section(r):
+    """A restaurant page's "In the news" section, when stories mention it."""
+    stories = news_for_restaurant(r)
+    if not stories:
+        return ""
+    return ('<section id="news">\n    <div class="wrap">\n      <div class="section-head"><div>'
+            f'<span class="eyebrow">News</span><h2 style="margin-top: 6px">{e(r["name"])} in the news</h2></div>'
+            '<a class="more-guides" href="/news/">All news</a></div>\n      ' + news_items_html(stories) + "\n    </div>\n  </section>\n")
+
+
+NEWS_RSS_LINK = '<link rel="alternate" type="application/rss+xml" title="The Starred Bill: Michelin star news" href="/news/feed.xml">\n'
+
+
+def build_news():
+    """Each story at /news/<name>/, the list at /news/ and the RSS feed at /news/feed.xml."""
+    if not news:
+        return
+    stats = guide_bodies()["_stats"] if guides else {}
+    order = news_order()
+    home_crumb = '<a href="/">All destinations</a>'
+    data = as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES})
+    age = (date.fromisoformat(TODAY) - date.fromisoformat(order[0]["published"])).days
+    if age > NEWS_STALE_DAYS:
+        print(f"  News: the newest story is {age} days old; aim for one or two a week, plus ceremony nights")
+    bodies = {}
+    for s in order:
+        path = f"/news/{s['id']}/"
+        lang = s.get("lang", "en-GB")
+        body = bodies[s["id"]] = news_links(guide_text(s["body"], stats))
+        if lang == "en-US":
+            body = bodies[s["id"]] = body.replace("US$", "$")  # as US guides and restaurant pages write dollars
+        left = re.findall(r"\{\{[\w:,-]+\}\}", body)
+        if left:
+            print(f"The site wasn't built: news/{s['id']}.json holds {', '.join(sorted(set(left)))}, which the build can't fill")
+            sys.exit(1)
+        more = [x for x in order if x is not s][:NEWS_MORE]
+        dated = f'<time datetime="{s["published"]}">{e(news_date(s))}</time>'
+        if s.get("updated") and s["updated"] != s["published"]:
+            dated += f' · Updated <time datetime="{s["updated"]}">{e(news_date(s, "updated"))}</time>'
+        more_html = ('<aside class="news-more"><h2>More Michelin star news</h2>' + news_items_html(more)
+                     + '<p><a href="/news/">All news →</a></p></aside>') if more else ""
+        main = (f'<article lang="{e(lang)}">\n<p class="news-kind">{e(NEWS_KINDS[s["kind"]])}</p>\n<h1>{e(s["h1"])}</h1>\n'
+                f'<p class="prose-date">{dated} · The Starred Bill</p>\n{body}\n{more_html}\n{guide_sources_html(dict(s, lang=lang), stats)}\n</article>')
+        img = news_image(s)
+        rs = news_restaurants(s)
+        graph = [
+            {"@type": "BreadcrumbList", "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "All destinations", "item": SITE_URL + "/"},
+                {"@type": "ListItem", "position": 2, "name": "News", "item": SITE_URL + "/news/"},
+                {"@type": "ListItem", "position": 3, "name": s["h1"], "item": SITE_URL + path}]},
+            {"@type": "NewsArticle", "headline": s["h1"], "description": s["description"], "inLanguage": lang,
+             "datePublished": s["published"], "dateModified": s.get("updated") or s["published"], "mainEntityOfPage": SITE_URL + path,
+             "image": img, "articleSection": NEWS_KINDS[s["kind"]],
+             "author": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
+             "publisher": ORGANIZATION, "isPartOf": {"@id": WEBSITE["@id"]}, "citation": guide_citations(s),
+             **({"mentions": [{"@type": "Restaurant", "name": r["name"], "url": SITE_URL + restaurant_href(r)} for r in rs]} if rs else {})},
+        ]
+        write(path, render("guide.html", {
+            "title": e(s["title"]), "description": e(s["description"]), "canonical": SITE_URL + path, "htmlLang": e(lang),
+            "ogType": "article", "ogImage": img, "ogAlt": e(s["h1"]), "keywordsMeta": "", "alternates": NEWS_RSS_LINK, "data": data,
+            "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
+            "crumbs": home_crumb + '<a href="/news/">News</a>' + f'<span aria-current="page">{e(s["h1"])}</span>',
+            "main": main, "mainClass": "wrap prose guide news-story",
+        }))
+
+    # The list: stories by month, newest first, then the ceremonies coming up.
+    months = {}
+    for s in order:
+        months.setdefault(s["published"][:7], []).append(s)
+    def item(s):
+        return (f'<li><p class="news-meta"><time datetime="{s["published"]}">{e(uk_date(s["published"]))}</time>'
+                f'<span class="news-tag">{e(NEWS_KINDS[s["kind"]])}</span></p>'
+                f'<h3><a href="/news/{s["id"]}/">{e(s["h1"])}</a></h3><p>{e(s["summary"])}</p></li>')
+    listing = "".join(f'<section class="news-month"><h2>{MONTH_NAMES[int(m[5:7]) - 1]} {m[:4]}</h2><ul class="news-list">'
+                      + "".join(item(s) for s in ss) + "</ul></section>" for m, ss in months.items())
+    coming = sorted((g for g in ceremony_guides() if g["coming"]), key=lambda g: g["coming"]["date"])[:4]
+    def soon(g):
+        cfg = results_config(g)
+        href = f'/guides/{cfg["page"]}/' if cfg and cfg["page"] in guides else f'/guides/michelin-guide-ceremony-dates/#cer-{e(g["id"])}'
+        return (f'<li><span class="nw-date">{e(short_date(g["coming"]["date"]))}</span>'
+                f'<a href="{href}">{e(g["name"].replace("MICHELIN Guide ", ""))}</a></li>')
+    aside = ('<aside class="news-coming"><h2>Next ceremonies</h2><ul class="nw-coming">' + "".join(soon(g) for g in coming) + "</ul>"
+             + ('<p><a href="/guides/michelin-guide-ceremony-dates/">Every ceremony date →</a></p>' if "michelin-guide-ceremony-dates" in guides else "")
+             + "</aside>") if coming else ""
+    lede = ("New and lost Michelin stars, closures and openings, chef moves, price rises and critics’ lists, with what a meal "
+            "now costs. We write a story after every MICHELIN Guide ceremony and whenever a starred restaurant’s news changes "
+            "what you’d pay or where you can go, each with its sources.")
+    intro = (f'<h1>Michelin Star News</h1>\n<p class="lede">{lede}</p>\n'
+             f'<p class="prose-date">{len(order)} {"story" if len(order) == 1 else "stories"} · Latest '
+             f'<time datetime="{order[0]["published"]}">{e(uk_date(order[0]["published"]))}</time> · '
+             '<a href="/news/feed.xml" class="news-rss">RSS feed</a></p>\n')
+    description = "Michelin star news: new and lost stars, closures, openings, chef moves and price rises at starred restaurants, with what a meal costs."
+    graph = [
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "All destinations", "item": SITE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "News", "item": SITE_URL + "/news/"}]},
+        {"@type": "CollectionPage", "name": "Michelin Star News", "description": description, "url": SITE_URL + "/news/", "inLanguage": "en",
+         "isPartOf": {"@id": WEBSITE["@id"]}, "dateModified": order[0].get("updated") or order[0]["published"],
+         "mainEntity": {"@type": "ItemList", "itemListElement": [
+             {"@type": "ListItem", "position": i + 1, "url": SITE_URL + f"/news/{s['id']}/", "name": s["h1"]} for i, s in enumerate(order)]}},
+    ]
+    write("/news/", render("guide.html", {
+        "title": "Michelin Star News: New Stars, Closures and Prices", "description": description,
+        "canonical": SITE_URL + "/news/", "htmlLang": "en", "ogType": "website", "ogAlt": "Michelin star news from The Starred Bill",
+        "keywordsMeta": "", "alternates": NEWS_RSS_LINK, "data": data,
+        "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
+        "crumbs": home_crumb + '<span aria-current="page">News</span>',
+        "main": intro + '<div class="news-grid"><div>' + listing + "</div>" + aside + "</div>",
+        "mainClass": "wrap prose guide news-index",
+    }))
+
+    # The RSS feed: the latest stories, each with its summary and the full story. Its date is the newest story's, not the
+    # build's, so an unchanged feed stays unchanged (IndexNow sends only pages that changed).
+    rfc = lambda d: datetime.fromisoformat(d + "T08:00:00+00:00").strftime("%a, %d %b %Y %H:%M:%S +0000")
+    x = lambda t: e(t, quote=False)
+    items = "".join(
+        f'    <item>\n      <title>{x(s["h1"])}</title>\n      <link>{SITE_URL}/news/{s["id"]}/</link>\n'
+        f'      <guid isPermaLink="true">{SITE_URL}/news/{s["id"]}/</guid>\n      <pubDate>{rfc(s["published"])}</pubDate>\n'
+        f'      <category>{x(NEWS_KINDS[s["kind"]])}</category>\n      <description>{x(s["summary"])}</description>\n'
+        f'      <content:encoded><![CDATA[{absolute_links(bodies[s["id"]]).replace("]]>", "]]&gt;")}]]></content:encoded>\n    </item>\n'
+        for s in order[:NEWS_FEED])
+    feed = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">\n  <channel>\n'
+            '    <title>The Starred Bill: Michelin star news</title>\n'
+            f'    <link>{SITE_URL}/news/</link>\n'
+            f'    <atom:link href="{SITE_URL}/news/feed.xml" rel="self" type="application/rss+xml"/>\n'
+            '    <description>New and lost Michelin stars, closures, openings, chef moves and prices at starred restaurants.</description>\n'
+            f'    <language>en-gb</language>\n    <lastBuildDate>{rfc(max(s.get("updated") or s["published"] for s in order))}</lastBuildDate>\n'
+            f'{items}  </channel>\n</rss>\n')
+    (OUT / "news" / "feed.xml").write_text(feed, "utf-8")
+
+
+def absolute_links(text):
+    """Site links made absolute, for the RSS feed (read away from the site)."""
+    return re.sub(r'(href|src)="/', lambda m: f'{m.group(1)}="{SITE_URL}/', text)
+
 
 # ---------- Restaurant pages (7 Oct 2026) ----------
 # A page per restaurant at /restaurants/<file name>/, for searches like "Le Bernardin price": a short answer and the till
@@ -7623,7 +7906,7 @@ def build_restaurant_pages():
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": '<a href="/">All destinations</a>' + "".join(f'<a href="{c["path"]}">{e(c["name"])}</a>' for c in crumbs) + f'<span aria-current="page">{e(r["name"])}</span>',
             "hero": hero, "main": pay_html + history_html(r) + cheaper + book + visit + facts_html + compare_html
-            + may_like_html(r, live, {q["id"] for km, q in near} | {q["id"] for q in compare_shown}) + near_html + guides_block + restaurant_sources_html(r, mg.get(r["id"])), "data": as_json(data),
+            + may_like_html(r, live, {q["id"] for km, q in near} | {q["id"] for q in compare_shown}) + near_html + news_section(r) + guides_block + restaurant_sources_html(r, mg.get(r["id"])), "data": as_json(data),
         })
         # Dollar prices on a US restaurant's page read "$350", as the guides write them.
         write(path, page_html.replace("US$", "$") if cur == "USD" else page_html)
@@ -7805,6 +8088,9 @@ def sitemap_dates():
         for lang, t in guide_translations.get(gid, {}).items():
             out[guide_path(gid, lang)] = t["updated"]
     out["/guides/"] = max((g["updated"] for g in guides.values()), default=None)
+    for s in news.values():
+        out[f"/news/{s['id']}/"] = s.get("updated") or s["published"]
+    out["/news/"] = max((v for k, v in out.items() if k.startswith("/news/") and v), default=None)
     out["/privacy/"] = days.get("src/privacy.html")
     for r in restaurants:
         if r.get("page"):
@@ -7823,7 +8109,7 @@ def build_extras():
     if (SRC / "img").exists():
         # Featured pictures; the full-size originals (<id>-src.*) stay out of the site.
         shutil.copytree(SRC / "img", OUT / "img", ignore=shutil.ignore_patterns("*-src.*"))
-    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) if p["id"] not in canonical_to for lang in place_langs(p)] + (["/guides/"] + [guide_path(g, lang) for g in guides for lang in guide_langs(g)] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + ["/privacy/"]
+    urls = ["/", "/near-me/", "/pick/"] + [lang_path(p["path"], lang) for p in by_size(pages) if p["id"] not in canonical_to for lang in place_langs(p)] + (["/guides/"] + [guide_path(g, lang) for g in guides for lang in guide_langs(g)] if guides else []) + [r["page"] for r in restaurants if r.get("page")] + (["/news/"] + [f"/news/{s['id']}/" for s in news_order()] if news else []) + ["/privacy/"]
     dates = sitemap_dates()
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -7931,6 +8217,7 @@ compare_urls = build_compare([r for r in restaurants if not r.get("status")])
 write_search_data([r for r in restaurants if not r.get("status")])
 build_trips(compare_urls, build_account_pages())
 build_guides()
+build_news()
 build_restaurant_pages()
 build_redirects()
 build_extras()

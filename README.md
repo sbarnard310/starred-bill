@@ -192,6 +192,26 @@ The ceremony dates guide (`/guides/michelin-guide-ceremony-dates/`) reads `conte
 
 Its tables are `{{table:ceremonies}}` (every guide by continent), `{{table:ceremonies-next}}` (announced dates in order, then guides whose turn comes within `CEREMONY_AHEAD_DAYS` with last year's date), `{{table:ceremonies-recent}}` (the last `CEREMONY_RECENT_DAYS`, with whether our pages have caught up) and `{{table:ceremonies-calendar}}` (the year at a glance). Its figures are `{{cerGuides}}`, `{{cerNext}}`, `{{cerNextDate}}`, `{{cerNextWhere}}`, `{{cerBusy}}` (the busiest months) and `{{cerSay_<id>}}`, a sentence on a guide's next (or last) ceremony with hyphens as underscores, e.g. `{{cerSay_northeast_cities}}`.
 
+## News
+
+Short, dated stories about Michelin-starred restaurants at `/news/<file name>/`, one JSON file per story in `content/news/` (Pages CMS "News"), listed newest first at `/news/` (with the next ceremonies beside them) and in the RSS feed at `/news/feed.xml` (the latest 30, with the full story). Each story is a NewsArticle in its structured data, in the sitemap, linked from the homepage's "What's new" (the latest three), from English destination pages' "New Michelin stars" section ("In the news", stories about that place or anywhere inside it) and from restaurant pages it names ("… in the news"). Aim for one or two a week plus ceremony nights; the build reminds you when the newest is more than `NEWS_STALE_DAYS` (10) days old.
+
+| Field | What it is |
+|---|---|
+| `id` | The file name, which is the page's address. Never change it once published. |
+| `h1` | The headline. |
+| `title` | The title in search results, up to 60 characters. |
+| `description` | The description in search results, up to 155 characters. |
+| `summary` | One or two sentences for the News page and the feed. |
+| `kind` | `stars` (new and lost stars), `ceremony` (coming up), `closure`, `opening`, `chef` (chef moves), `prices`, `rankings` (50 Best, La Liste, OAD) or `data` (our own figures). Shown above the headline. |
+| `published` | The day it went up, like 2026-10-14. |
+| `updated` | Optional: the day it was last changed, if it was. |
+| `lang` | `en-GB` (the default) or `en-US` for US spelling and dates. |
+| `places` | Optional: place ids the story is about (its restaurants' towns count anyway). The first gives the story its link-preview picture. |
+| `body` | The story, as HTML. Answer first: what happened, where and when, in the first 40–50 words. `<a data-r="le-bernardin">` links a restaurant (its own page, else its row on its town's page), `<a data-place="london">` a destination page, `<a data-guide="michelin-guide-texas">` a guide (plain text until it exists) and `<a data-news="…">` another story. Figures like `{{dinner:fabrik}}` work as in guides. Link each page once, never at the start of a sentence. |
+| `sources` | Required, as for guides: Michelin's press releases (not the MICHELIN Guide's website, which the build refuses), news coverage and restaurants' own announcements. |
+| `sourcesNote` | Optional sentence under the sources, e.g. that the counts are our own. |
+
 ## Saved searches
 
 Members' saved searches live in Supabase (`saved_searches`, set up by `supabase/saved-searches.sql`), not in `content/`. Each row's `query` holds only the keys it uses:

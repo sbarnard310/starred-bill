@@ -1,0 +1,46 @@
+{
+  "id": "goldees-fabrik-kappo-kappo-texas-michelin-stars",
+  "h1": "Goldee’s, Fabrik and Kappo Kappo win Texas’s new Michelin stars",
+  "title": "Goldee’s, Fabrik and Kappo Kappo Win Texas Michelin Stars",
+  "description": "Fort Worth’s first star goes to Goldee’s Bar-B-Q, and Austin gains Fabrik and Kappo Kappo, in the MICHELIN Guide Texas 2026. What each costs.",
+  "summary": "Three first stars in the 2026 Texas guide: Goldee’s Bar-B-Q, Fort Worth’s first, and Austin’s vegan Fabrik and Japanese counter Kappo Kappo. La Barbecue lost its star.",
+  "kind": "stars",
+  "published": "2026-10-14",
+  "lang": "en-US",
+  "places": [
+    "texas"
+  ],
+  "body": "<p>Three Texas restaurants won their first MICHELIN star on October 8, 2026: Fabrik and Kappo Kappo in <a data-place=\"austin\">Austin</a>, and Goldee’s Bar-B-Q, the first starred restaurant in Fort Worth. La Barbecue in Austin lost its star, and Olamaie, which closed in July, left the guide. Texas now has 19 one-star restaurants and still no two-star.</p><p>There was no ceremony this year: Michelin revealed the 2026 selection in a press release.</p><h2>Fabrik: a vegan tasting menu in Austin</h2><p>Chef Je Wallerstein’s <a data-r=\"fabrik\">Fabrik</a> moved up from the guide’s Recommended list. Its tasting menu costs {{dinner:fabrik}} per person before tax and tip, with a wine pairing at {{wine:fabrik}}. It joins the short list in our guide to <a data-guide=\"vegan-vegetarian-michelin-star-restaurants\">vegan and vegetarian Michelin star restaurants</a>.</p><h2>Kappo Kappo: the Kishi brothers’ counter</h2><p>The menu at <a data-r=\"kappo-kappo\">Kappo Kappo</a>, the Japanese counter of twin brothers Haru and Gohei Kishi, costs {{dinner:kappo-kappo}} a head.</p><h2>Goldee’s Bar-B-Q: Fort Worth’s first star</h2><p>Fort Worth’s <a data-r=\"goldees-bar-b-q\">Goldee’s Bar-B-Q</a> sells barbecue by the plate rather than a tasting menu, so a meal there costs about {{dinner:goldees-bar-b-q}}. That puts it among the <a data-guide=\"cheapest-michelin-star-restaurants\">cheapest Michelin star restaurants</a> anywhere.</p><h2>Which Texas restaurants lost their stars?</h2><p>La Barbecue stays in the guide as a Recommended restaurant, without its star. Olamaie, one of Austin’s first starred restaurants, closed on July 19 after 12 years. No restaurant in Dallas, Houston or San Antonio lost a star.</p><h2>The rest of the 2026 guide</h2><p>The guide lists 149 restaurants. Six new Bib Gourmands went to Bar Buena, Khoi Barbecue, Kitchen Rumors, Murray’s Pizza &amp; Wine and Xolo in Houston, and Resident Taqueria in Dallas. Stefan Davis, general manager of Barley Swine, won the Service Award.</p><p>Every change, with prices, is on our <a data-guide=\"michelin-guide-texas\">MICHELIN Guide Texas 2026 results page</a>, and every starred restaurant in the state is on our <a data-place=\"texas\">Texas Michelin star restaurants page</a>.</p>",
+  "sources": [
+    {
+      "title": "Michelin adds 3 Austin restaurants to 2026 guide",
+      "publisher": "CultureMap Austin",
+      "url": "https://austin.culturemap.com/news/restaurants-bars/michelin-guide-2026-stars-fabrik/",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "Goldee's Bar-B-Q earns first Michelin star for Fort Worth in 2026 guide",
+      "publisher": "CultureMap Fort Worth",
+      "url": "https://fortworth.culturemap.com/news/restaurants-bars/goldees-bbq-michelin-star-2026/",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "2 Austin restaurants earn first Michelin stars in 2026 Texas guide",
+      "publisher": "CBS Austin",
+      "url": "https://cbsaustin.com/news/local/2-austin-restaurants-earn-first-michelin-stars-in-2026-texas-guide",
+      "date": "2026-10-09"
+    },
+    {
+      "title": "Michelin Guide recognizes 16 San Antonio restaurants. Three retain Michelin stars.",
+      "publisher": "Texas Public Radio",
+      "url": "https://www.tpr.org/arts-culture/2026-10-08/michelin-guide-recognizes-16-san-antonio-restaurants-three-retain-michelin-stars",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "Olamaie, one of Austin's first Michelin-starred restaurants, is closing after 12 years",
+      "publisher": "KUT 90.5",
+      "url": "https://www.kut.org/austin/2026-07-09/austin-tx-olamaie-restaurant-closing-michelin-star",
+      "date": "2026-07-09"
+    }
+  ]
+}

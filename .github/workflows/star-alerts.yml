@@ -3,7 +3,8 @@
 # "New stars near you" or that guide's ceremony-night summary (scripts/star_alerts.py). Each email is recorded in
 # Supabase, so running it again never sends one twice. It needs two repository secrets (Settings › Secrets and variables ›
 # Actions): SUPABASE_SERVICE_KEY and RESEND_API_KEY; without them it sends nothing and says so.
-# By hand (Actions › Star emails › Run workflow): give guide ids to send for them, e.g. after Resend's daily allowance ran out.
+# By hand (Actions › Star emails › Run workflow): give guide ids to send for them, e.g. after Resend's daily allowance ran out,
+# or fill in "test_to" to send only a sample marked [Test] to that one address (no members are emailed).
 name: Star emails
 
 on:
@@ -19,6 +20,9 @@ on:
         description: "Send them (untick to only count who would get one)"
         type: boolean
         default: true
+      test_to:
+        description: "Only send a sample (marked [Test]) to this one address, no members (hidden in the log)"
+        required: false
 
 permissions:
   contents: read
@@ -51,8 +55,12 @@ jobs:
         env:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_TO: ${{ inputs.test_to }}
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          if [ -n "$TEST_TO" ]; then
+            echo "::add-mask::$TEST_TO"
+            python3 scripts/star_alerts.py --guide "${{ inputs.guides }}" --test-to "$TEST_TO"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             python3 scripts/star_alerts.py --guide "${{ inputs.guides }}" ${{ inputs.send && '--send' || '' }}
           else
             python3 scripts/star_alerts.py --before "${{ github.event.before }}" --send

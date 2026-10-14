@@ -440,6 +440,10 @@ def clash_checks(site):
     return dict(out), search_clashes(site)
 
 
+NEAR_ME_RE = re.compile(r"\b(near me|near you|nearby|closest|nearest|around me|close to me|vicino a me|cerca de m[ií]|"
+                        r"in der n[äa]he|pr[èe]s de moi|perto de mim)\b", re.I)
+
+
 def search_clashes(site, days=28, show=15):
     """The searches Google showed two or more of our pages for (Search Console, last `days` days), most shown first.
     Uses the morning figures' Google sign-in; says "not set up" without it."""
@@ -462,8 +466,12 @@ def search_clashes(site, days=28, show=15):
         a[0] += r["impressions"]
         a[1] += r["clicks"]
         a[2] = r["position"]
-    shared = sorted(((sum(v[0] for v in ps.values()), q, ps) for q, ps in by.items() if len(ps) > 1), reverse=True)
+    # "Near me" searches aren't clashes: Google shows each searcher the page for where they are (Campania to someone in
+    # Campania), so several of our pages showing for one is expected. They're counted apart, not suggested as fixes.
+    local = [q for q in by if NEAR_ME_RE.search(q)]
+    shared = sorted(((sum(v[0] for v in ps.values()), q, ps) for q, ps in by.items() if len(ps) > 1 and q not in local), reverse=True)
     return {"status": "ok", "searches": len(by), "shared": len(shared), "days": days,
+            "near_me_searches": len(local), "near_me_note": "left out: Google picks the page by the searcher's location",
             "top": [f'"{q}" ({n} times shown): ' + "; ".join(f"{p} pos {round(v[2])}" for p, v in sorted(ps.items(), key=lambda x: -x[1][0]))
                     for n, q, ps in shared[:show]]}
 

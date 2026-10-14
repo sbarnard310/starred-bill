@@ -3518,10 +3518,22 @@ def build_near_me(starred):
     stats = guide_stats()
     cities = [p for p in by_size(pages) if (p["type"] == "city" or p["id"] in ("hong-kong", "macau", "singapore")) and starred_n[p["id"]] >= 5][:36]
     popular = "".join(f'<a class="city-link" href="{p["path"]}">{e(p["name"])}<span class="count">{starred_n[p["id"]]}</span></a>' for p in cities)
+    # Every country with starred restaurants, by continent: written into the page so Google sees what the map covers.
+    countries = [p for p in pages if p["type"] == "country" and starred_n[p["id"]]]
+    by_continent = ""
+    for k, title in CONTINENT_NAMES.items():
+        here = sorted((p for p in countries if CONTINENT_OF.get(p["id"]) == k), key=lambda p: p["name"])
+        if here:
+            by_continent += (f'<p class="dest-sub">{e(title)}</p><div class="dest-cities">'
+                             + "".join(f'<a class="city-link" href="{p["path"]}">{e(p["name"])}<span class="count">{starred_n[p["id"]]}</span></a>'
+                                       for p in here) + "</div>\n")
+    # Search questions first (Ahrefs, 7 Oct 2026): "closest michelin star restaurant to me" is 800 a month, and Search Console
+    # showed this page for it in the US before any other search.
     faq = [
-        ("How do I find Michelin star restaurants near me?",
+        ("Where is the closest Michelin star restaurant to me?",
          "Tap “Use my location” at the top of this page, or type a town, city or postcode. The map and list then show every Michelin-starred "
-         "restaurant within the distance you choose, nearest first, with its dinner and lunch prices and a link to the full price comparison."),
+         "restaurant within the distance you choose, nearest first, with how far away each one is, its dinner and lunch prices and a link "
+         "to the full price comparison. If none is that close, the page widens the distance by itself and names the nearest one, however far."),
         ("How many Michelin star restaurants are there?",
          f"{stats['total']} restaurants in {stats['countries']} countries and territories hold Michelin stars in the current guides: "
          f"{stats['n3']} with three stars, {stats['n2']} with two and {stats['n1']} with one. Every one of them is on this map."),
@@ -3530,7 +3542,7 @@ def build_near_me(starred):
          f"lunch menus, which cost a median {stats['lunch1']} at one-star restaurants, against {stats['price1']} for a one-star dinner tasting menu."),
         ("Which Michelin star restaurants near me are open today?",
          "Set “Open on” to Today once you've found your location: the list then shows only the starred restaurants open that day, with "
-         f"their hours where we have them. Opening hours come from the MICHELIN Guide, or Google or the restaurant's own website where the guide gives none, and are listed for {len(HOURS):,} of the "
+         f"their hours where we have them. Opening hours come from the MICHELIN Guide, or the restaurant's own website or its hotel's page where the guide gives none, and are listed for {len(HOURS):,} of the "
          "restaurants; they change with holidays and private events, so check with the restaurant before you go."),
         ("Can I find Michelin star restaurants along a road trip?",
          "Yes. Choose “Along a route”, type where you're starting and where you're going, and the map shows every starred restaurant within "
@@ -3541,12 +3553,14 @@ def build_near_me(starred):
          "browser only, and you can forget it with one tap."),
         ("Which Michelin restaurants near me have vegetarian or vegan menus?",
          "Use the Dietary filter to show only restaurants with a vegetarian tasting menu, vegan options, gluten-free, halal or kosher options, "
-         "as listed by the MICHELIN Guide."),
+         "as listed by the MICHELIN Guide or the restaurant's own menus."),
     ]
     faq_html = '<section class="guide-faq" id="faq"><h2>Frequently asked questions</h2>' + "".join(f"<h3>{e(q)}</h3><p>{e(a)}</p>" for q, a in faq) + "</section>"
     static = (f'<h2>Popular cities for Michelin star restaurants</h2>\n<p>Not where you are? Browse the cities with the most starred restaurants, '
               f'each with its dinner, lunch and wine pairing prices side by side.</p>\n<div class="dest-cities near-popular">{popular}</div>\n'
-              f'<p><a href="/#destinations">All {len([p for p in pages if p["type"] == "country"])} countries →</a></p>\n{faq_html}')
+              f'<h2>Michelin star restaurants on the map, country by country</h2>\n'
+              f'<p>The map covers every restaurant with Michelin stars in all {len(countries)} countries that have them. Each country\'s page '
+              f'lists its starred restaurants with their prices, region by region.</p>\n{by_continent}{faq_html}')
     # Answers the search in plain words, answer first.
     lede = (f"Use your location, or type a town, city or postcode, to see every Michelin star restaurant near you on a map, nearest first, "
             f"with what dinner and lunch cost at each. It covers all {stats['total']} restaurants with Michelin stars in {stats['countries']} countries, "
@@ -3555,12 +3569,13 @@ def build_near_me(starred):
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "All destinations", "item": SITE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "Near me", "item": SITE_URL + "/near-me/"}]},
-        {"@type": "WebPage", "name": "Michelin star restaurants near me", "url": SITE_URL + "/near-me/", "description": lede},
+        {"@type": "WebPage", "name": "Michelin star restaurants near me", "url": SITE_URL + "/near-me/", "description": lede,
+         "inLanguage": "en", "isPartOf": {"@id": WEBSITE["@id"]}},
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
     ]
     write("/near-me/", render("near.html", {
-        "title": "Michelin Star Restaurants Near Me, With Prices",
-        "description": e(f"Find Michelin-starred restaurants near you on a map, nearest first, with dinner and lunch prices. {stats['total']} restaurants in {stats['countries']} countries."),
+        "title": "Michelin Star Restaurants Near Me: Map With Prices",
+        "description": e(f"Find the closest Michelin star restaurants to you on a map, nearest first, with dinner and lunch prices. All {stats['total']} starred restaurants in {stats['countries']} countries."),
         "canonical": SITE_URL + "/near-me/", "htmlLang": "en", "ogType": "website", "ogAlt": "Michelin star restaurants near me",
         "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
         "crumbs": '<a href="/">All destinations</a><span aria-current="page">Near me</span>',

@@ -17,7 +17,7 @@ const SYNCED_KEY = "starredbill-synced-user", PENDING_KEY = "starredbill-pending
 // A preferences change still waiting to be sent, and which offers to remember a choice have been answered on this device.
 const PROFILE_PENDING_KEY = "starredbill-profile-pending", ASKED_KEY = "starredbill-pref-asked";
 
-const account = { client: null, user: null, google: false, boot: null, ready: false, known: null, reason: "", syncing: null, profileReady: false };
+const account = { client: null, user: null, google: false, boot: null, ready: false, known: null, reason: "", syncing: null, profileReady: false, signingInHere: false };
 const acctSignedIn = () => !!account.user;
 // Before the sign-in code has loaded, a saved session is a good guess that someone is signed in.
 const hasStoredSession = () => { try { return !!localStorage.getItem(SESSION_KEY); } catch (e) { return false; } };
@@ -25,6 +25,8 @@ const authInUrl = () => /(access_token|error_description)=/.test(location.hash) 
 // Read before Supabase tidies the address: did this visit come from a sign-in link (or a failed one)?
 const ARRIVED_SIGNING_IN = authInUrl();
 const LINK_FAILED = /error_description=/.test(location.hash);
+// A sign-in link or Google just brought this visitor back signed in: their sign-in is counted here.
+account.signingInHere = ARRIVED_SIGNING_IN && !LINK_FAILED;
 const notifyAccount = () => window.dispatchEvent(new CustomEvent("sb:account"));
 
 function loadScript(src) {
@@ -63,7 +65,10 @@ function bootAccount() {
 async function afterAuthChange(event, before) {
   if (account.user) {
     if (event === "SIGNED_IN" || event === "INITIAL_SESSION") await syncDown();
-    if (event === "SIGNED_IN" && !before) {
+    // Supabase also says SIGNED_IN when it brings back a saved session on every page load, and in other open tabs,
+    // so only a sign-in made in this tab is counted: arriving from the email's link or Google, or a code typed here.
+    if (event === "SIGNED_IN" && !before && account.signingInHere) {
+      account.signingInHere = false;
       // A brand-new account signs in within minutes of being created; no email or id is sent.
       const method = (account.user.app_metadata && account.user.app_metadata.provider) || "email";
       const isNew = Date.now() - Date.parse(account.user.created_at || 0) < 15 * 60 * 1000;
@@ -479,11 +484,12 @@ function buildSignIn() {
     const token = $("siCode").value.replace(/\D/g, ""), status = box.querySelector(".si-status"), btn = box.querySelector(".si-verify");
     if (token.length < 6) { status.textContent = t("acctBadCode"); $("siCode").focus(); return; }
     btn.disabled = true; btn.textContent = t("acctVerifying");
+    account.signingInHere = true;
     try {
       const { error } = await account.client.auth.verifyOtp({ email: account.codeEmail, token, type: "email" });
-      if (error) status.textContent = error.status === 429 ? t("acctTooMany") : t("acctCodeWrong");
+      if (error) { account.signingInHere = false; status.textContent = error.status === 429 ? t("acctTooMany") : t("acctCodeWrong"); }
       else { box.close(); acctNotice.shown = true; acctNotice(t("acctWelcome")); track("sign-in-code"); }
-    } catch (err) { status.textContent = t("acctFailed"); }
+    } catch (err) { account.signingInHere = false; status.textContent = t("acctFailed"); }
     btn.disabled = false; btn.textContent = t("acctVerify");
   };
   box.querySelector(".si-verify").addEventListener("click", verify);

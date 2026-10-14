@@ -22,7 +22,8 @@ report can say what changed. A source that isn't set up yet is reported as "not 
     Webmaster API key in the Keychain as "starredbill-bing".
   - The SEO plan's four measures against their aims for 31 Jan 2027 (SEO_AIMS), put together from the above.
   - Google Analytics 4 (visitors, sessions, page views, top pages and countries, sign-ups). It only counts
-    visitors who accepted the cookie banner.
+    visitors who accepted the cookie banner. Google settles a day's bounce and engagement rates a day or two
+    later, so yesterday's are left out (engagementPending) until then; the day before's are settled.
   - Umami (every visit, no cookies: visitors, page views, bounce rate, time per visit, the last 7 days, top and
     entry pages, referrers, countries, devices, click events).
 
@@ -545,9 +546,12 @@ def analytics(cfg):
     token = google_token(cfg, "https://www.googleapis.com/auth/analytics.readonly")
     url = f"https://analyticsdata.googleapis.com/v1beta/properties/{cfg['ga4_property']}:runReport"
     auth = {"Authorization": f"Bearer {token}"}
-    # bounceRate and engagementRate are shares (0.4 = 40%); averageSessionDuration is in seconds.
+    # bounceRate and engagementRate are shares (0.4 = 40%); averageSessionDuration and userEngagementDuration are
+    # in seconds. averageSessionDuration runs from a session's first event to its last, so a tab left open makes it
+    # long; engagement time per session (the time the page was actually on screen) is the one to quote.
     metrics = [{"name": m} for m in ("activeUsers", "newUsers", "sessions", "screenPageViews", "bounceRate",
-                                     "engagementRate", "averageSessionDuration")]
+                                     "engagementRate", "averageSessionDuration", "engagedSessions",
+                                     "userEngagementDuration")]
     fractional = {"bounceRate", "engagementRate", "averageSessionDuration"}
 
     def report(body):
@@ -559,7 +563,14 @@ def analytics(cfg):
     def day(rng):
         rows = report({"dateRanges": [{"startDate": rng, "endDate": rng}], "metrics": metrics})
         vals = rows[0]["metricValues"] if rows else []
-        return {m["name"]: value(m["name"], v["value"]) for m, v in zip(metrics, vals)} if vals else {m["name"]: 0 for m in metrics}
+        out = {m["name"]: value(m["name"], v["value"]) for m, v in zip(metrics, vals)} if vals else {m["name"]: 0 for m in metrics}
+        out["engagementSecondsPerSession"] = round(out["userEngagementDuration"] / out["sessions"]) if out["sessions"] else None
+        # Google works out which sessions were "engaged" a day or two later, so a recent day reads 0 engaged sessions
+        # (100% bounce) although its engagement time is in. Those rates aren't finished: leave them out, not wrong.
+        out["engagementPending"] = bool(out["sessions"] and not out["engagedSessions"] and out["userEngagementDuration"])
+        if out["engagementPending"]:
+            out["bounceRate"] = out["engagementRate"] = None
+        return out
 
     def top(dim, metric="screenPageViews", start="yesterday", limit=8):
         rows = report({"dateRanges": [{"startDate": start, "endDate": "yesterday"}], "dimensions": [{"name": dim}],

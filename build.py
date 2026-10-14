@@ -6278,8 +6278,6 @@ def build_guide_translations(g, langs, stats):
             if key in stats and stats[key] not in w["countries"]:
                 print(f"  Guide {g['id']} ({lang}): no {lang} name for {stats[key]} in GUIDE_WORDS' countries, so it shows in English")
         faqs = [{"q": guide_text_in(f["q"], st, lang), "a": guide_text_in(f["a"], st, lang)} for f in t["faq"]]
-        for leftover in sorted(set(re.findall(r"\{\{[\w:,-]+\}\}", body + "".join(f["q"] + f["a"] for f in faqs)))):
-            print(f"  Guide {g['id']} ({lang}): {leftover} isn't a figure the build knows in translations, so it shows as written")
         text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", " ".join([title, h1, body] + [f["q"] + " " + f["a"] for f in faqs]))).lower()
         missing = [k for k in t["keywords"] if keyword_words(k) not in keyword_words(text)]
         if missing:
@@ -6419,6 +6417,31 @@ def heading_questions(body):
     return [{"q": q, "a": a} for q, a in found][:FAQ_MAX]
 
 
+def check_guide_figures():
+    """Stop the build when a guide or translation still holds a {{figure}} or {{table:…}} the build can't fill (an unknown
+    name, or a restaurant's price that has gone, e.g. {{lunch:<id>}} once it serves dinner only), so raw code never
+    reaches the page or the FAQ answers given to Google (14 Oct 2026, to-do item fix-brooklands-lunch-placeholder)."""
+    if not guides:
+        return
+    found = []
+    stats = guide_bodies()["_stats"]
+    for g in guides.values():
+        texts = [g["title"], g["h1"], g["description"], g.get("summary", ""), guide_bodies()[g["id"]]]
+        texts += [guide_text(f["q"], stats) + " " + guide_text(f["a"], stats) for f in g["faq"]]
+        for leftover in sorted(set(re.findall(r"\{\{[\w:,-]+\}\}", " ".join(texts)))):
+            found.append(f"guides ({g['id']}): {leftover} isn't a figure or table the build can fill; rewrite that sentence or fix the name")
+        for lang, t in sorted(guide_translations.get(g["id"], {}).items()):
+            st = guide_stats_in(stats, lang)
+            fill = lambda s: re.sub(r"\{\{(\w+)\}\}", lambda m: str(st.get(m.group(1), m.group(0))), s)
+            texts = [fill(t["title"]), fill(t["h1"]), fill(t["description"]), guide_text_in(t["body"], st, lang)]
+            texts += [guide_text_in(f["q"], st, lang) + " " + guide_text_in(f["a"], st, lang) for f in t["faq"]]
+            for leftover in sorted(set(re.findall(r"\{\{[\w:,-]+\}\}", " ".join(texts)))):
+                found.append(f"guide translations ({lang}/{g['id']}): {leftover} isn't a figure the build can fill in translations")
+    if found:
+        print("The site wasn't built because of these problems in the guides:\n  - " + "\n  - ".join(found))
+        sys.exit(1)
+
+
 def build_guides():
     """Each guide at /guides/<name>/, and a list of them at /guides/."""
     if not guides:
@@ -6432,8 +6455,6 @@ def build_guides():
         langs = guide_langs(g["id"])
         if len(langs) > 1:
             build_guide_translations(g, langs, stats)
-        for leftover in sorted(set(re.findall(r"\{\{[\w:,-]+\}\}", body))):
-            print(f"  Guide {g['id']}: {leftover} isn't a figure or table the build knows, so it shows as written")
         text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", " ".join([g["title"], g["h1"], body] + [f["q"] + " " + f["a"] for f in g["faq"]]))).lower()
         missing = [k for k in g["keywords"] if keyword_words(k) not in keyword_words(text)]
         if missing:
@@ -7873,6 +7894,7 @@ if "--freeze" in sys.argv:
     freeze_results([a for a in sys.argv[1:] if not a.startswith("--")])
     sys.exit(0)
 add_results_guides()
+check_guide_figures()
 if OUT.exists():
     shutil.rmtree(OUT)
 OUT.mkdir()

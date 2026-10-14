@@ -4745,10 +4745,18 @@ def chef_blocks(live, links, stars_cell, note):
     def line(r, chef=None):
         led = chef and r.get("chef") and chef not in chef_names(r["chef"])
         return (f'{stars_cell(r["stars"])} {restaurant_link(r, links)} <span class="muted">{e(where(r))}'
-                + (f' · chef {e(r["chef"])}' if led else "") + "</span>")
+                + (f' · chef {e(r["chef"])}' if led else "") + (f" · {shut(r)}" if shut(r) else "") + "</span>")
+
+    def shut(r):
+        """A short label for a restaurant whose notice says it's closed for now, else ""."""
+        notice = (r.get("notice") or "").lower()
+        if "closed" not in notice:
+            return ""
+        return "closed for the season" if re.search(r"season|winter|summer", notice) else "temporarily closed"
 
     def cheapest(rows):
         menus = [r for r in rows if r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"]
+        menus = [r for r in menus if not shut(r)] or menus  # a temporarily closed one only when none of the others is open
         if not menus:
             return '<span class="muted">Not published</span>'
         r = min(menus, key=lambda r: r["dinner"] / CURRENCIES[r["cur"]]["perUSD"])
@@ -4766,7 +4774,7 @@ def chef_blocks(live, links, stars_cell, note):
         return f'<div class="table-wrap"><table class="guide-table data chef-list"><thead><tr>{heads}</tr></thead><tbody>{body}</tbody></table></div>'
 
     about = ("Each restaurant’s name opens its prices on The Starred Bill and the arrow its MICHELIN Guide page. "
-             "Cheapest dinner menu is the lowest-priced main dinner tasting menu among them, per person in local currency before service and drinks, "
+             "Cheapest dinner menu is the lowest-priced main dinner tasting menu among them (among those open, where one is closed for now), per person in local currency before service and drinks, "
              "with US dollars at recent exchange rates.")
     ranked = [(c, rows) for c, rows in head_chefs(live) if len(rows) > 1 and stars_of(rows) >= CHEF_TABLE_MIN]
     named = [(chef, rows) for key, chef, rows in named_restaurants(live)]

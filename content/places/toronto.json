@@ -3,5 +3,25 @@
   "type": "city",
   "parent": "ontario",
   "name": "Toronto",
-  "intro": "Prices are in Canadian dollars (CA$), with a switch to see them in pounds, euros or US dollars, before sales tax and the tip (or the service charge some restaurants add). Prices checked October 2026."
+  "lead": "Every Michelin-starred restaurant in Toronto, with dinner, lunch and wine pairing prices per person side by side.",
+  "intro": "The stars come from the MICHELIN Guide Toronto & Region, first published in 2022, and lean Japanese: omakase and kaiseki counters such as Shoushin, Kappo Sato and Sushi Masaki Saito sit beside Alo, Edulis and the Italian dining rooms of DaNico and Don Alfonso 1890. Ontario’s starred restaurants outside the city, among them Restaurant Pearl Morissette (two stars) in the Niagara wine country, are on the Ontario page. Prices are in Canadian dollars (CA$), with a switch to see them in pounds, euros or US dollars, before sales tax and the tip (or the service charge some restaurants add). Prices checked October 2026.",
+  "localNote": [
+    {
+      "q": "How do you book a Michelin star restaurant in Toronto?",
+      "a": "On Tock or OpenTable, mostly. The tasting counters sell their seats on Tock, paid or part-paid when you book: {r:edulis}, {r:shoushin}, {r:sushi-masaki-saito}, {r:kaiseki-yu-zen-hashimoto} and {r:restaurant-20-victoria}, whose deposit isn’t refunded. Most of the rest, among them {r:alo}, {r:enigma-yorkville}, {r:don-alfonso-1890-toronto} and {r:osteria-giulia}, take bookings on OpenTable with a card held, and charge for cancelling late: $75 a person at Osteria Giulia, $100 at Don Alfonso 1890 and the full menu price at Alo."
+    },
+    {
+      "q": "When do tables open at Toronto’s starred restaurants?",
+      "a": "Alo releases a whole month at once, on the first Tuesday of the month two months before, at 10am Toronto time. Edulis opens a month at a time, announced on its Tock page, and Osteria Giulia books 14 days ahead. {r:restaurant-pearl-morissette}, in the Niagara wine country, announces its releases in its newsletter."
+    },
+    {
+      "q": "What should you wear to a Michelin star restaurant in Toronto?",
+      "a": "Smart casual. Alo has no strict dress code but asks for something polished, and Enigma Yorkville and Kaiseki Yu-zen Hashimoto ask for business casual. At the Japanese counters, Shoushin, Kaiseki Yu-zen Hashimoto and Sushi Masaki Saito ask guests not to wear perfume or cologne."
+    },
+    {
+      "q": "How much should you tip in Toronto?",
+      "a": "Ontario adds 13% HST to the bill, and a tip of 18–20% is usual on top. Check the bill first, though: Edulis adds a 20% service charge to its prepaid menu, Restaurant Pearl Morissette 18%, and Shoushin 20% for parties of six or more."
+    }
+  ],
+  "localNoteChecked": "2026-10-14"
 }

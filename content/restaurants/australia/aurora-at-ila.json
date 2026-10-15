@@ -1,0 +1,32 @@
+{
+  "name": "Aurora at ILA",
+  "city": "adelaide",
+  "area": "City centre",
+  "address": "63 Light Square, Adelaide SA 5000",
+  "stars": 1,
+  "starSource": "https://www.prnewswire.com/apac/news-releases/south-australia-joins-the-michelin-guide-with-its-first-ever-restaurant-selection-302908466.html",
+  "starSourceType": "michelin-press",
+  "starSourceDate": "2026-10-14",
+  "cuisine": "Australian Contemporary",
+  "change": "new",
+  "changeNote": "Gained its first star in the first South Australia guide",
+  "changeDate": "2026-10",
+  "dinnerType": "menu",
+  "dinner": 130,
+  "dinnerNote": "Five courses, Friday and Saturday (three courses $95)",
+  "sourceType": "site",
+  "source": "https://www.auroraadl.com.au/",
+  "noLunch": true,
+  "lunchNote": "Dinner only",
+  "website": "https://www.auroraadl.com.au/",
+  "lat": -34.925602,
+  "lng": 138.592734,
+  "diets": [
+    "vegetarian",
+    "vegan",
+    "gluten-free"
+  ],
+  "chef": "Robin Wagner",
+  "chefSource": "site",
+  "dietsManual": true
+}

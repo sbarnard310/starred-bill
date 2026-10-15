@@ -3166,7 +3166,7 @@ CONTINENTS = {
     "asia": "china hong-kong macau taiwan japan south-korea singapore malaysia thailand vietnam philippines",
     "middle-east": "uae qatar saudi-arabia",
     "americas": "usa canada mexico brazil argentina",
-    "oceania": "new-zealand",
+    "oceania": "new-zealand australia",
 }
 CONTINENT_OF = {cid: k for k, v in CONTINENTS.items() for cid in v.split()}
 
@@ -4209,7 +4209,7 @@ POPULATION_M = {
     "france": 68.4, "italy": 59.0, "japan": 124.0, "germany": 84.6, "spain": 48.8, "usa": 340.0, "uk": 69.1, "china": 1410.0,
     "switzerland": 8.9, "belgium": 11.8, "netherlands": 18.0, "austria": 9.2, "hong-kong": 7.5, "taiwan": 23.4, "portugal": 10.6,
     "south-korea": 51.7, "singapore": 6.0, "thailand": 71.7, "denmark": 6.0, "canada": 41.3, "mexico": 130.0, "brazil": 212.0,
-    "ireland": 5.4, "sweden": 10.6, "uae": 11.0, "macau": 0.69, "norway": 5.6, "turkiye": 85.7, "new-zealand": 5.3,
+    "ireland": 5.4, "sweden": 10.6, "uae": 11.0, "macau": 0.69, "norway": 5.6, "turkiye": 85.7, "new-zealand": 5.3, "australia": 27.2,
     "argentina": 45.7, "croatia": 3.9, "greece": 10.4, "luxembourg": 0.67, "poland": 37.5, "vietnam": 101.0, "slovenia": 2.1,
     "czechia": 10.9, "hungary": 9.6, "malaysia": 34.1, "monaco": 0.038, "philippines": 115.0, "finland": 5.6, "malta": 0.56,
     "lithuania": 2.9, "iceland": 0.39, "qatar": 3.0, "estonia": 1.4, "latvia": 1.9, "serbia": 6.6, "andorra": 0.08,

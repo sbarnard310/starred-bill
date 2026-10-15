@@ -2022,7 +2022,7 @@ const SERVICE = {
   argentina: ["tip", 10], mexico: ["tip", 12.5], turkiye: ["tip", 10],
   japan: ["tax", 0],  // tax included; service is included in some sources' prices and not others
 };
-["andorra", "austria", "belgium", "croatia", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "iceland", "italy", "latvia",
+["andorra", "australia", "austria", "belgium", "croatia", "czechia", "denmark", "estonia", "finland", "france", "germany", "greece", "iceland", "italy", "latvia",
   "liechtenstein", "lithuania", "luxembourg", "malta", "monaco", "netherlands", "new-zealand", "norway", "poland", "portugal", "serbia", "slovenia", "south-korea",
   "spain", "sweden", "switzerland"].forEach((c) => { SERVICE[c] = ["included", 0]; });
 // A restaurant whose prices already include the tip or service charge (`serviceIncluded` in its file: Lazy Betty, Dirt Candy):

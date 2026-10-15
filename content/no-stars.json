@@ -581,13 +581,6 @@
       "nameZh": "大洋洲",
       "countries": [
         {
-          "name": "Australia",
-          "nameZh": "澳洲",
-          "note": "Its first MICHELIN Guide, for South Australia, reveals its stars on 14 October 2026; until then Australian restaurants are rated with chef's hats by local guides.",
-          "noteZh": "澳洲首本米其林指南（南澳版）將於 2026 年 10 月 14 日公布星級；在此之前，當地餐廳由本地指南以「廚師帽」評級。",
-          "guide": "michelin-star-restaurants-australia"
-        },
-        {
           "name": "Fiji",
           "nameZh": "斐濟"
         },

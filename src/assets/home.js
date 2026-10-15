@@ -134,7 +134,7 @@ document.addEventListener("click", (e) => {
 // zone, then its language's region), else US dollars. Prices the build wrote carry data-amt and data-cur (amt() in build.py).
 const EURO = ["AD", "AT", "BE", "CY", "DE", "EE", "ES", "FI", "FR", "GR", "HR", "IE", "IT", "LT", "LU", "LV", "MC", "ME", "MT", "NL", "PT", "SI", "SK", "SM", "VA", "XK"];
 const REGION_CURRENCY = { GB: "GBP", IM: "GBP", JE: "GBP", GG: "GBP", US: "USD", JP: "JPY", KR: "KRW", HK: "HKD", MO: "MOP", TW: "TWD", SG: "SGD", CN: "CNY",
-  TH: "THB", MY: "MYR", PH: "PHP", VN: "VND", AE: "AED", QA: "QAR", NZ: "NZD", CA: "CAD", MX: "MXN", BR: "BRL", AR: "ARS", CH: "CHF", LI: "CHF",
+  TH: "THB", MY: "MYR", PH: "PHP", VN: "VND", AE: "AED", QA: "QAR", NZ: "NZD", AU: "AUD", CA: "CAD", MX: "MXN", BR: "BRL", AR: "ARS", CH: "CHF", LI: "CHF",
   SE: "SEK", NO: "NOK", DK: "DKK", IS: "ISK", PL: "PLN", CZ: "CZK", HU: "HUF", RS: "RSD", TR: "TRY" };
 const ZONE_REGION = { "Europe/London": "GB", "Europe/Dublin": "IE", "Europe/Paris": "FR", "Europe/Berlin": "DE", "Europe/Madrid": "ES", "Atlantic/Canary": "ES",
   "Europe/Rome": "IT", "Europe/Amsterdam": "NL", "Europe/Brussels": "BE", "Europe/Lisbon": "PT", "Europe/Vienna": "AT", "Europe/Luxembourg": "LU",
@@ -144,7 +144,9 @@ const ZONE_REGION = { "Europe/London": "GB", "Europe/Dublin": "IE", "Europe/Pari
   "Europe/Prague": "CZ", "Europe/Budapest": "HU", "Europe/Belgrade": "RS", "Europe/Istanbul": "TR", "Europe/Isle_of_Man": "IM", "Europe/Jersey": "JE",
   "Europe/Guernsey": "GG", "Asia/Tokyo": "JP", "Asia/Seoul": "KR", "Asia/Hong_Kong": "HK", "Asia/Macau": "MO", "Asia/Taipei": "TW", "Asia/Singapore": "SG",
   "Asia/Shanghai": "CN", "Asia/Bangkok": "TH", "Asia/Kuala_Lumpur": "MY", "Asia/Manila": "PH", "Asia/Ho_Chi_Minh": "VN", "Asia/Saigon": "VN",
-  "Asia/Dubai": "AE", "Asia/Qatar": "QA", "Pacific/Auckland": "NZ", "America/Toronto": "CA", "America/Vancouver": "CA", "America/Montreal": "CA",
+  "Asia/Dubai": "AE", "Asia/Qatar": "QA", "Pacific/Auckland": "NZ", "Australia/Sydney": "AU", "Australia/Melbourne": "AU",
+  "Australia/Brisbane": "AU", "Australia/Adelaide": "AU", "Australia/Perth": "AU", "Australia/Hobart": "AU", "Australia/Darwin": "AU",
+  "America/Toronto": "CA", "America/Vancouver": "CA", "America/Montreal": "CA",
   "America/Edmonton": "CA", "America/Winnipeg": "CA", "America/Halifax": "CA", "America/Mexico_City": "MX", "America/Sao_Paulo": "BR",
   "America/Argentina/Buenos_Aires": "AR", "America/Buenos_Aires": "AR", "America/New_York": "US", "America/Chicago": "US", "America/Denver": "US",
   "America/Los_Angeles": "US", "America/Phoenix": "US", "America/Anchorage": "US", "Pacific/Honolulu": "US" };

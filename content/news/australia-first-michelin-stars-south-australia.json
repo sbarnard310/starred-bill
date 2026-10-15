@@ -1,0 +1,30 @@
+{
+  "id": "australia-first-michelin-stars-south-australia",
+  "h1": "Australia wins its first Michelin stars, all in South Australia",
+  "title": "Australia Wins Its First Michelin Stars, in South Australia",
+  "description": "Magill Estate Restaurant won two stars and ten more one star in the first MICHELIN Guide South Australia, revealed in Adelaide on 14 October 2026.",
+  "summary": "Penfolds’ Magill Estate Restaurant is Australia’s first two-star restaurant, and ten more in Adelaide, the Hills and the wine regions win one star in the first South Australia guide.",
+  "kind": "stars",
+  "published": "2026-10-15",
+  "lang": "en-GB",
+  "places": [
+    "south-australia"
+  ],
+  "imageAlt": "Linocut-style print of vineyard hills and a gum tree under two gold stars, with a plated course and a glass of red wine in front.",
+  "body": "<p>Australia has its first Michelin stars. The first MICHELIN Guide South Australia, revealed at the Adelaide Convention Centre on 14 October 2026, gave two stars to Magill Estate Restaurant, Penfolds’ dining room in Adelaide’s eastern foothills, and one star to ten more restaurants in Adelaide, the Adelaide Hills and the state’s wine regions.</p><h2>Magill Estate Restaurant, Australia’s first two-star</h2><p>Chef Scott Huggins cooks at <a data-r=\"magill-estate-restaurant\">Magill Estate Restaurant</a>, beside the vineyard where Penfolds began. Its full tasting experience costs {{dinner:magill-estate-restaurant}} per person, with a sommelier’s wine pairing at {{wine:magill-estate-restaurant}}, and a shorter Signature Menu is A$295, also served at weekend lunch.</p><h2>The ten one-star restaurants</h2><p>Four are in and around the city: <a data-r=\"restaurant-botanic\">Restaurant Botanic</a> in the Botanic Garden ({{dinner:restaurant-botanic}}), <a data-r=\"aurora-at-ila\">Aurora at ILA</a> on Light Square ({{dinner:aurora-at-ila}}), <a data-r=\"esmay\">Esmay</a> in Hackney ({{dinner:esmay}}) and <a data-r=\"arkhe\">arkhé</a> in Norwood (from {{dinner:arkhe}}). Six are country kitchens, three of them open only at lunch: <a data-r=\"aptos\">Aptos</a> in Stirling, the dearest in the state at {{dinner:aptos}} for 16 courses, <a data-r=\"lvn-bird-in-hand\">LVN Restaurant at Bird in Hand</a> in Woodside, <a data-r=\"hentley-farm\">Hentley Farm</a> in the Barossa, <a data-r=\"maxwell-restaurant\">Maxwell Restaurant</a> in McLaren Vale, <a data-r=\"anvers\">Anvers</a> at Kangarilla and <a data-r=\"skillogalee-barrel-house\">Skillogalee Barrel House</a> in the Clare Valley, whose two-course lunch at {{lunch:skillogalee-barrel-house}} is the cheapest Michelin-starred meal in the country.</p><h2>The rest of the selection</h2><p>The guide lists 77 restaurants in all: the 11 with stars, 16 with a Bib Gourmand, among them Africola and Parwana Afghan Kitchen in Adelaide, and 50 MICHELIN Selected. Shakaan Abillion of Shōbōsho won the Young Chef Award, Melissa Pisanelli of Allegra Dining Room the Service Award and Maxime Martin of Hardy’s Verandah the Sommelier Award.</p><h2>Why Sydney and Melbourne have none</h2><p>The guide covers South Australia only, so Sydney and Melbourne are still without a star; our guide to <a data-guide=\"michelin-star-restaurants-australia\">Michelin star restaurants in Sydney and Melbourne</a> explains why. Every starred restaurant in the state, with dinner, lunch and wine pairing prices, is on our <a data-place=\"south-australia\">South Australia Michelin star restaurants page</a>, and Adelaide’s five are on its <a data-place=\"adelaide\">Adelaide page</a>.</p>",
+  "sources": [
+    {
+      "title": "South Australia joins the MICHELIN Guide with its first-ever restaurant selection",
+      "publisher": "Michelin, via PR Newswire",
+      "url": "https://www.prnewswire.com/apac/news-releases/south-australia-joins-the-michelin-guide-with-its-first-ever-restaurant-selection-302908466.html",
+      "date": "2026-10-14"
+    },
+    {
+      "title": "Michelin Guide South Australia winners list and ceremony results",
+      "publisher": "The Canberra Times",
+      "url": "https://www.canberratimes.com.au/story/9368724/michelin-guide-south-australia-winners-list-and-ceremony-results/",
+      "date": "2026-10-14"
+    }
+  ],
+  "sourcesNote": "Prices are from each restaurant’s own website, checked on 15 October 2026, except Aptos, from a news report."
+}

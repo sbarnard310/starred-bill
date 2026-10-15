@@ -827,14 +827,13 @@
     {
       "id": "south-australia",
       "name": "MICHELIN Guide South Australia",
-      "places": [],
-      "guide": "michelin-star-restaurants-australia",
-      "showName": "South Australia",
-      "continent": "oceania",
-      "usual": "October (first edition)",
+      "places": ["south-australia"],
+      "usual": "October",
       "checked": "2026-10",
-      "next": {"date": "2026-10-14", "where": "the Adelaide Convention Centre", "source": "https://tourism.sa.gov.au/news-articles/save-the-date-for-south-australia-s-michelin-guide-debut"},
-      "ceremonies": []
+      "starsUpdated": "2026-10-15",
+      "ceremonies": [
+        {"date": "2026-10-14", "edition": 2027, "where": "the Adelaide Convention Centre", "source": "https://www.prnewswire.com/apac/news-releases/south-australia-joins-the-michelin-guide-with-its-first-ever-restaurant-selection-302908466.html", "selection": "https://www.prnewswire.com/apac/news-releases/south-australia-joins-the-michelin-guide-with-its-first-ever-restaurant-selection-302908466.html"}
+      ]
     }
   ]
 }

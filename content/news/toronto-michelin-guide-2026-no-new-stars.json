@@ -1,0 +1,40 @@
+{
+  "id": "toronto-michelin-guide-2026-no-new-stars",
+  "h1": "Toronto gets no new Michelin stars, and loses two",
+  "title": "Toronto Gets No New Michelin Stars, and Loses Two",
+  "description": "The 2026 MICHELIN Guide Toronto, revealed on 22 September 2026, gave no new stars. Aburi Hana lost its star and Hexagon closed, leaving 15 starred.",
+  "summary": "No new stars for Toronto and its region in 2026: Aburi Hana reopened too late to keep its star, and Oakville’s Hexagon closed.",
+  "kind": "stars",
+  "published": "2026-09-22",
+  "written": "2026-10-15",
+  "places": [
+    "ontario"
+  ],
+  "body": "<p>The MICHELIN Guide Toronto and Region gave no new stars at its ceremony at Liberty Grand on 22 September 2026. Aburi Hana lost its star and Hexagon in Oakville had closed, so the region has 15 starred restaurants, down from 17: Restaurant Pearl Morissette with two stars and 14 with one.</p><h2>Why Aburi Hana lost its star</h2><p>Aburi Hana was closed for nearly a year and reopened on 17 September, days before the ceremony, with a new head chef, So Sakata, and an à la carte menu beside its tasting menu. Hexagon closed in December 2025 after its chef, Rafa Covarrubias, left to run Restaurant 20 Victoria, which holds a star of its own.</p><h2>The region’s starred restaurants</h2><p><a data-r=\"restaurant-pearl-morissette\">Restaurant Pearl Morissette</a> in Lincoln keeps its two stars, with a menu at {{dinner:restaurant-pearl-morissette}}. The one-stars include <a data-r=\"sushi-masaki-saito\">Sushi Masaki Saito</a>, the region’s dearest at {{dinner:sushi-masaki-saito}}, Alo, Edulis, Enigma Yorkville and The Pine in Creemore. Every one, with prices, is on our <a data-place=\"toronto\">Toronto Michelin star restaurants page</a>.</p><h2>The rest of the guide</h2><p>The guide lists 111 restaurants, with 31 Bib Gourmands. It is Toronto’s first since the Green Star was replaced by Mindful Voices; the first went to Aldo Camarena and Ashley McKay of Antylia.</p>",
+  "sources": [
+    {
+      "title": "Michelin Guide Toronto 2026: All the Award Winners",
+      "publisher": "Tastet",
+      "url": "https://tastet.ca/en/news/michelin-guide-toronto-2026-all-the-award-winners/",
+      "date": "2026-09-23"
+    },
+    {
+      "title": "No new Michelin stars awarded in Toronto region",
+      "publisher": "Narcity / The Canadian Press",
+      "url": "https://www.narcity.com/toronto/no-new-michelin-stars-awarded-in-toronto-area",
+      "date": "2026-09-22"
+    },
+    {
+      "title": "You can finally get into this Yorkville Michelin spot without dropping hundreds on a tasting menu",
+      "publisher": "Streets of Toronto",
+      "url": "https://streetsoftoronto.com/food/restaurants/you-can-finally-get-into-this-yorkville-michelin-spot-without-dropping-hundreds-on-a-tasting-menu/",
+      "date": "2026-09-08"
+    },
+    {
+      "title": "Notable Michelin-starred Ontario restaurant closes and has already been replaced",
+      "publisher": "blogTO",
+      "url": "https://www.blogto.com/eat_drink/2026/06/hexagon-oakville-closed/",
+      "date": "2026-06"
+    }
+  ]
+}

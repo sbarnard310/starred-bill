@@ -1,0 +1,42 @@
+{
+  "id": "las-vegas-michelin-stars-southwest-guide",
+  "h1": "Las Vegas regains Michelin stars in the first Southwest guide",
+  "title": "Las Vegas Regains Michelin Stars in New Southwest Guide",
+  "description": "The first MICHELIN Guide Southwest starred four Las Vegas restaurants and Utah’s Monte on August 26, 2026, Las Vegas’s first stars since 2009.",
+  "summary": "Restaurant de Joël Robuchon leads with two stars as Las Vegas returns to the guide for the first time since 2009; Monte wins Utah’s first star.",
+  "kind": "stars",
+  "published": "2026-08-26",
+  "written": "2026-10-15",
+  "lang": "en-US",
+  "places": [
+    "las-vegas"
+  ],
+  "imageAlt": "Linocut-style print of a desert road leading to a strip of tall hotel towers between red-rock mesas, a hand lifting a cloche off a plate and gold stars bursting above.",
+  "body": "<p>Las Vegas has Michelin stars again. The first MICHELIN Guide Southwest, revealed at Fontainebleau Las Vegas on August 26, 2026, gave two stars to Restaurant de Joël Robuchon and one each to three more Las Vegas restaurants, the city’s first since its last guide in 2009. Monte, outside Salt Lake City, won Utah’s first star.</p><h2>The starred Las Vegas restaurants</h2><p>At the MGM Grand, <a data-r=\"restaurant-de-joel-robuchon\">Restaurant de Joël Robuchon</a> holds two stars, with a tasting menu at {{dinner:restaurant-de-joel-robuchon}}, and its sister counter <a data-r=\"latelier-de-joel-robuchon-las-vegas\">L’Atelier de Joël Robuchon</a> one ({{dinner:latelier-de-joel-robuchon-las-vegas}}). Guy Savoy’s restaurant at Caesars Palace charges {{dinner:restaurant-guy-savoy}} for its menu, and <a data-r=\"e-by-jose-andres\">é by José Andrés</a>, the hidden counter inside Jaleo at The Cosmopolitan, {{dinner:e-by-jose-andres}}. All prices are per person before tax and tip.</p><h2>Utah’s first Michelin star</h2><p>Chef Martín Babío’s <a data-r=\"monte\">Monte</a> in South Salt Lake won the guide’s only star outside Nevada; its menu costs {{dinner:monte}}. Arizona and New Mexico have no starred restaurants yet, as our guide to <a data-guide=\"michelin-star-restaurants-phoenix\">Michelin star restaurants in Phoenix</a> explains.</p><h2>The rest of the guide</h2><p>The guide covers Arizona, Nevada, New Mexico and Utah, with 64 restaurants: 5 starred, 18 Bib Gourmands and 41 recommended. Sean Christopher of Restaurant de Joël Robuchon won the Service Award. Every starred restaurant in the city, with prices, is on our <a data-place=\"las-vegas\">Las Vegas Michelin star restaurants page</a>.</p>",
+  "sources": [
+    {
+      "title": "MICHELIN Guide Reveals First-Ever Southwest Restaurant Selection in the U.S.",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-reveals-first-ever-southwest-restaurant-selection-in-the-u-s",
+      "date": "2026-08-31"
+    },
+    {
+      "title": "These Las Vegas restaurants earned MICHELIN Stars in first-ever Southwest Edition",
+      "publisher": "KSNV News 3 Las Vegas",
+      "url": "https://news3lv.com/news/local/las-vegas-restaurants-michelin-stars-first-ever-southwest-edition-dining-guide-where-to-eat-cuisine",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "Utah receives first Michelin star, Park City restaurants make inaugural Southwest Guide",
+      "publisher": "KPCW",
+      "url": "https://www.kpcw.org/park-city/2026-08-27/utah-receives-first-michelin-star-park-city-restaurants-make-inaugural-southwest-guide",
+      "date": "2026-08-27"
+    },
+    {
+      "title": "MICHELIN Guide Selects 12 New Mexico Restaurants for First-Ever Southwest Restaurant Selection",
+      "publisher": "New Mexico Tourism Department",
+      "url": "https://www.newmexico.org/industry/news/post/michelin-guide-selects-12-new-mexico-restaurants-for-first-ever-southwest-restaurant-selection/",
+      "date": "2026-09-01"
+    }
+  ]
+}

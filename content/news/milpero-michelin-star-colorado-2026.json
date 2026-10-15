@@ -1,0 +1,36 @@
+{
+  "id": "milpero-michelin-star-colorado-2026",
+  "h1": "Milpero wins Colorado’s only new Michelin star of 2026",
+  "title": "Milpero Wins Colorado’s Only New Michelin Star of 2026",
+  "description": "Johnny Curiel’s 16-seat Milpero in Denver won Colorado’s only new Michelin star on September 14, 2026, in the first statewide Colorado guide.",
+  "summary": "Johnny Curiel’s 16-seat Milpero wins a first star, The Wolf’s Tailor keeps two, and no Colorado restaurant loses a star in the first statewide guide.",
+  "kind": "stars",
+  "published": "2026-09-14",
+  "written": "2026-10-15",
+  "lang": "en-US",
+  "places": [
+    "colorado"
+  ],
+  "imageAlt": "Linocut-style print of snowy Rocky Mountain peaks and pines behind a city, a chef’s counter with tortillas and a molcajete in front and one gold star above.",
+  "body": "<p>Milpero, chef Johnny Curiel’s 16-seat restaurant in Denver, won the only new MICHELIN star in Colorado’s 2026 guide, announced on September 14, 2026. No restaurant lost a star, so the state now has ten: The Wolf’s Tailor with two and nine with one. This year’s guide is the first to cover the whole state.</p><h2>What a meal at Milpero costs</h2><p>The tasting menu at <a data-r=\"milpero\">Milpero</a> costs {{dinner:milpero}} per person before tax and tip, with a drinks pairing at {{wine:milpero}}. Curiel’s other two Denver restaurants already hold a star each: Alma Fonda Fina, where a main costs about {{dinner:alma-fonda-fina}}, and <a data-r=\"mezcaleria-alma\">Mezcaleria Alma</a>.</p><h2>The rest of Colorado’s stars</h2><p><a data-r=\"the-wolfs-tailor\">The Wolf’s Tailor</a> kept its two stars. The one-stars are Milpero, Brutø, Beckon, Alma Fonda Fina, Mezcaleria Alma, Margot and Kizaki in Denver, Frasca Food and Wine in Boulder and Bosq in Aspen. The guide lists 63 restaurants, with three new Bib Gourmands. Every starred restaurant in the city, with prices, is on our <a data-place=\"denver\">Denver Michelin star restaurants page</a>.</p>",
+  "sources": [
+    {
+      "title": "Denver Welcomes Year Four of MICHELIN Guide Colorado Awards with Seven Newly Recognized Restaurants",
+      "publisher": "Visit Denver",
+      "url": "https://visitdenver.com/articles/post/denver-welcomes-year-four-of-michelin-guide-colorado-awards-with-seven-newly-recognized-restaurants/",
+      "date": "2026-09-14"
+    },
+    {
+      "title": "MICHELIN Guide Unveils First Statewide Selection for Colorado, from Mountains to Main Streets",
+      "publisher": "Michelin",
+      "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "date": "2026-09-17"
+    },
+    {
+      "title": "MICHELIN reveals updated Denver guide, adding one-star restaurant, 3 Bib Gourmand",
+      "publisher": "Denver7",
+      "url": "https://www.denver7.com/news/michelin-reveals-updated-denver-guide-adding-one-star-restaurant-3-bib-gourmand",
+      "checked": "2026-10"
+    }
+  ]
+}

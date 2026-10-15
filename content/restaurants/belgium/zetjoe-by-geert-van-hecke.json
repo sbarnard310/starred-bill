@@ -4,7 +4,7 @@
   "area": "Brugge",
   "address": "Langestraat 11, 8000, Brugge",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 325,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "chef": "Geert Van Hecke",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 53)",
-  "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 53 €)",
   "lunch": 107,
   "lunchType": "menu",
@@ -33,6 +32,5 @@
   "lunchNoteFr": "Même menu le midi · mar.–sam.",
   "lunchWine": 39,
   "lunchSourceType": "site",
-  "lunchSource": "https://zetjoe.be/",
-  "cuisineFr": "Cuisine française créative"
+  "lunchSource": "https://zetjoe.be/"
 }

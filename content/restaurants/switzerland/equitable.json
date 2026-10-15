@@ -3,7 +3,7 @@
   "city": "zurich",
   "address": "Stauffacherstrasse 163, 8004, Zurich",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 353,
   "dinnerType": "menu",
@@ -23,14 +23,11 @@
   "chef": "Julian Martin",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Moderna"
+  "lunchNoteIt": "Solo a cena"
 }

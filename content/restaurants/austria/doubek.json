@@ -23,7 +23,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Kreativ",
   "bookingWindow": {
     "type": "monthly",
     "day": 1,

@@ -25,11 +25,9 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine végétalienne",
   "dinnerNoteIt": "Menu degustazione",
   "noLunch": true,
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Vegana"
+  "lunchNoteIt": "Solo a cena"
 }

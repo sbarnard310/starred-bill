@@ -4,7 +4,7 @@
   "area": "Mannheim",
   "address": "Neckarvorlandstraße 2a, 68159, Mannheim",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-06",
@@ -32,6 +32,5 @@
   "lunchNote": "Lunch menu · Sundays",
   "lunchNoteDe": "Mittagsmenü · Sonntag",
   "lunchSourceType": "site",
-  "lunchSource": "https://the-tourist-trap.de/",
-  "cuisineDe": "Moderne Küche"
+  "lunchSource": "https://the-tourist-trap.de/"
 }

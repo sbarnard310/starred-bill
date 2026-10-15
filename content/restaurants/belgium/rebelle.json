@@ -4,7 +4,7 @@
   "area": "Marke",
   "address": "Rekkemsestraat 226, 8510, Marke",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 520,
   "dinnerType": "menu",
@@ -26,9 +26,7 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 135 €)",
-  "cuisineFr": "Cuisine moderne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner",
   "chef": "Martijn Defauw",

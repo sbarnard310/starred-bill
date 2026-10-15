@@ -4,7 +4,7 @@
   "area": "Leibnitz",
   "address": "Seggaubergstraße 5, 8430, Leibnitz",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "dinnerType": "menu",
   "dinner": 160,
   "dinnerNote": "Tasting menu (other menus from €130)",
@@ -24,6 +24,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 130 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

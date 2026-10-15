@@ -4,7 +4,7 @@
   "area": "Taizhou",
   "address": "577 Jindai Road, Huangyan, Taizhou",
   "stars": 1,
-  "cuisine": "Taizhou",
+  "cuisine": "Zhejiang",
   "dinnerType": "spend",
   "dinner": 234,
   "dinnerNote": "Typical spend",
@@ -16,7 +16,6 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "台州菜",
   "nameZhs": "老扁酒家（金带路）",
   "areaZhs": "台州"
 }

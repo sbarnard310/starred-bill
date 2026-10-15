@@ -4,7 +4,7 @@
   "area": "Gouda",
   "address": "Spieringstraat 1, 2801 ZH, Gouda",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.4,
   "reviews": 128,
   "dinnerType": "menu",
@@ -34,6 +34,5 @@
   "chef": "Remco Kuijpers",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
-  "cuisineNl": "Creatief Frans",
   "lunchNoteNl": "Lunchmenu"
 }

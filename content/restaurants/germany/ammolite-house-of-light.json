@@ -4,7 +4,7 @@
   "area": "Rust",
   "address": "Peter-Thumb-Straße 6, 77977, Rust",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 335,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

@@ -4,7 +4,7 @@
   "area": "Xiamen",
   "address": "16 Liaohua Road, Siming, Xiamen",
   "stars": 1,
-  "cuisine": "Chao Zhou",
+  "cuisine": "Teochew",
   "dinnerType": "spend",
   "dinner": 459,
   "dinnerNote": "Typical spend",
@@ -19,7 +19,6 @@
     "gluten-free"
   ],
   "dinnerNoteZhs": "人均消费",
-  "cuisineZhs": "潮州菜",
   "nameZhs": "蓼花卿语",
   "areaZhs": "厦门"
 }

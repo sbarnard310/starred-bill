@@ -4,7 +4,7 @@
   "area": "Turnhout",
   "address": "Turnovatoren 18 (GPS: P.J. Brepolsplein), 2300, Turnhout",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 374,
   "dinnerType": "menu",
@@ -22,7 +22,6 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Dinermenu, 5 gangen",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu du soir, 5 plats",
   "lunch": 115,
   "lunchType": "menu",
@@ -32,7 +31,6 @@
   "lunchWine": 54,
   "lunchSourceType": "site",
   "lunchSource": "https://hert.be/menu/lunch/",
-  "cuisineFr": "Cuisine française moderne",
   "chef": "Alex Verhoeven",
   "chefSource": "press"
 }

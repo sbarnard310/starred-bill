@@ -4,7 +4,7 @@
   "area": "Villers-sur-Lesse",
   "address": "rue de Montainpré 27, 5580, Villers-sur-Lesse",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 41,
   "dinnerType": "menu",
@@ -29,9 +29,7 @@
   "chef": "Marius Bosmans",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 165)",
-  "cuisineNl": "Eigentijds Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 165 €)",
-  "cuisineFr": "Cuisine française contemporaine",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"
 }

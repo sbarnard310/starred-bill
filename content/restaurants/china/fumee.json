@@ -3,7 +3,7 @@
   "city": "shenzhen",
   "address": "L303, 3F, Hanking Center, 9968 Shennan Boulevard, Nanshan, Shenzhen",
   "stars": 1,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "dinnerType": "spend",
   "dinner": 1680,
   "dinnerNote": "Typical spend",
@@ -16,7 +16,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZhs": "仅供应晚餐",
-  "cuisineZhs": "创新菜",
   "nameZhs": "拂鸣",
   "chef": "Reina Chen",
   "chefSource": "press"

@@ -4,7 +4,7 @@
   "area": "Broc",
   "address": "Rue de Montsalvens 4, 1636, Broc",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.5,
   "reviews": 275,
   "dinnerType": "menu",
@@ -25,9 +25,7 @@
   "chef": "Alexandre Miquel",
   "chefSource": "site",
   "dinnerNoteDe": "Menu Gastronomique, Wildsaison (einziges Menü)",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu gastronomique, saison de la chasse (menu unique)",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu gastronomico, stagione della selvaggina (menu unico)",
   "lunch": 215,
   "lunchType": "menu",
@@ -36,6 +34,5 @@
   "lunchNoteFr": "Même menu le midi · mer.–sam.",
   "lunchNoteIt": "Stesso menu a pranzo · mer–sab",
   "lunchSourceType": "site",
-  "lunchSource": "https://lesmontagnards.ch/wp-content/uploads/2026/10/GASTRO_CHASSE.pdf",
-  "cuisineIt": "Moderna"
+  "lunchSource": "https://lesmontagnards.ch/wp-content/uploads/2026/10/GASTRO_CHASSE.pdf"
 }

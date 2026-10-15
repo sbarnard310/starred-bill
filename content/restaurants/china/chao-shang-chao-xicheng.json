@@ -3,7 +3,7 @@
   "city": "beijing",
   "address": "Basement Level, Winland IFC, 7 Jinrong Street, Xicheng, Beijing",
   "stars": 1,
-  "cuisine": "Chao Zhou",
+  "cuisine": "Teochew",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2025-10",
@@ -19,6 +19,5 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "潮州菜",
   "nameZhs": "潮上潮（西城）"
 }

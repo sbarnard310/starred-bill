@@ -4,7 +4,7 @@
   "area": "Erfurt",
   "address": "Futterstraße 15, 99084, Erfurt",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 123,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

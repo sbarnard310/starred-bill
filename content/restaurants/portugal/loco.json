@@ -3,7 +3,7 @@
   "city": "lisbon",
   "address": "Rua dos Navegantes 53 B, 1200-731, Lisbon",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 536,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNotePt": "Menu de degustação",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Moderna"
+  "lunchNotePt": "Só jantar"
 }

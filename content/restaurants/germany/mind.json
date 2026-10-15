@@ -4,7 +4,7 @@
   "area": "Markt Indersdorf",
   "address": "Dachauer Straße 11, 85229, Markt Indersdorf",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 93,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chef": "Sabrina Fenzl",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
-  "lunchNoteDe": "Mittagsmenü",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Mittagsmenü"
 }

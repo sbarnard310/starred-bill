@@ -4,7 +4,7 @@
   "area": "Bad Ragaz",
   "address": "Bernhard-Simon-Strasse 2, 7310, Bad Ragaz",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 3.9,
   "reviews": 99,
   "dinnerType": "menu",
@@ -24,9 +24,7 @@
     "gluten-free"
   ],
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione",
   "lunch": 139,
   "lunchType": "menu",
@@ -36,7 +34,6 @@
   "lunchNoteIt": "Stesso menu a pranzo",
   "lunchSourceType": "press",
   "lunchSource": "https://www.schlemmer-atlas.de/restaurants/schweiz/bad-ragaz/verve-by-sven/",
-  "cuisineIt": "Moderna",
   "chef": "Sven Wassmer",
   "chefSource": "press"
 }

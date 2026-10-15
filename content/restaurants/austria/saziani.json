@@ -4,7 +4,7 @@
   "area": "Straden",
   "address": "Straden 42, 8345, Straden",
   "stars": 1,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "dinnerType": "menu",
   "dinner": 155,
   "dinnerNote": "Tasting menu",
@@ -24,6 +24,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
   "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteDe": "Mittags geöffnet · Sa–So",
-  "cuisineDe": "Saisonal"
+  "lunchNoteDe": "Mittags geöffnet · Sa–So"
 }

@@ -4,7 +4,7 @@
   "area": "Landsberg am Lech",
   "address": "Bahnhofsplatz 1, 86899, Landsberg am Lech",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 192,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 59 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

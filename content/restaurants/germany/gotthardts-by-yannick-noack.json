@@ -4,7 +4,7 @@
   "area": "Koblenz",
   "address": "An der Fähre 3, 56068, Koblenz",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 65,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

@@ -4,7 +4,7 @@
   "area": "Nijmegen",
   "address": "Gebroeders Van Limburgplein 7, 6511 BW, Nijmegen",
   "stars": 2,
-  "cuisine": "Organic",
+  "cuisine": "Vegetarian",
   "rating": 4.8,
   "reviews": 506,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Bio",
   "menus": [
     {
       "name": "Seasonal menu (Groei, July to October)",

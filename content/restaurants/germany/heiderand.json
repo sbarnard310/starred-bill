@@ -4,7 +4,7 @@
   "area": "Dresden",
   "address": "Ullersdorfer Platz 4, 01324, Dresden",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 404,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

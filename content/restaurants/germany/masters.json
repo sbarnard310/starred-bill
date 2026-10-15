@@ -4,7 +4,7 @@
   "area": "Blankenhain",
   "address": "Lindenallee 1, 99444, Blankenhain",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 5,
   "reviews": 25,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü, 6 Gänge (andere Menüs ab 135 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Nur abends"
 }

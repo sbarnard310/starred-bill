@@ -30,6 +30,18 @@ SITE_URL = "https://starredbill.com"
 # list of changed pages from scripts/indexnow.py (run by .github/workflows/indexnow.yml after each publish).
 INDEXNOW_KEY = "4ebae6380d9923e3de73396f0df11e0f"
 PLACE_TYPES = ("country", "region", "city", "district", "group", "cuisine")
+# Our own cuisine categories (15 Oct 2026, to-do item michelin-resource-cuisines), in place of the MICHELIN Guide's labels:
+# every restaurant's `cuisine` is one of these, named in each language by the CUISINE_ maps in common.js and the lang
+# files (the build lists any a language lacks). "Modern European", "Modern American" and "Modern" are modern cooking in
+# Europe, the Americas and elsewhere. A new category needs adding here, to every CUISINE_ map, to MOODS in pick.js and
+# saved_searches.py, and to the cuisine options in .pages.yml.
+CUISINE_CATEGORIES = (
+    "Modern European", "Modern American", "Modern", "Creative", "Classic", "Regional", "Farm to table", "Fusion", "International", "European",
+    "French", "British", "Italian", "Spanish", "Portuguese", "Mediterranean", "Greek", "Turkish", "Alpine", "Austrian", "German", "Nordic",
+    "Middle Eastern", "African", "American", "Mexican", "Latin American", "Australian", "New Zealand", "Pacific Islands",
+    "Japanese", "Sushi", "Tempura", "Yakitori", "Korean", "Chinese", "Cantonese", "Teochew", "Sichuan", "Hunan", "Shanghainese", "Huaiyang",
+    "Zhejiang", "Fujian", "Beijing", "Shandong", "Taiwanese", "Thai", "Vietnamese", "Malaysian", "Peranakan", "Singaporean", "Filipino",
+    "Indian", "Asian", "Seafood", "Steak and grill", "Barbecue", "Vegetarian", "Vegan", "Street food")
 PLACE_TEXTS = ("intro", "serviceText", "sourcesText", "starsText")
 # Languages added from 5 Oct 2026 keep their words in src/assets/lang-<code>.js, loaded only by pages that offer them.
 LANG_FILES = ("zhs", "de", "nl", "pt", "nb", "fi", "pl", "cs", "hu", "sl", "hr", "sr", "el", "tr", "lt", "lv", "et", "mt", "ms", "fil", "vi", "ar")
@@ -250,7 +262,11 @@ for pid, p in places.items():
         elif not pid.startswith(parent["id"] + "-"):
             problem(where, f"a cuisine page's id must be its parent's and the cuisine, e.g. {parent['id']}-french")
         if not isinstance(p.get("cuisines"), list) or not p["cuisines"] or not all(isinstance(c, str) and c for c in p["cuisines"]):
-            problem(where, 'cuisines must list the MICHELIN Guide cuisine labels the page covers, e.g. ["French", "French Contemporary"]')
+            problem(where, 'cuisines must list the cuisine categories the page covers, e.g. ["Cantonese", "Sichuan"]')
+        else:
+            for c in p["cuisines"]:
+                if c not in CUISINE_CATEGORIES:
+                    problem(where, f'"{c}" in cuisines isn\'t one of our cuisine categories (CUISINE_CATEGORIES in build.py)')
         if not p.get("topic"):
             problem(where, 'needs a topic: what the page lists, as it reads mid-sentence, e.g. "French Michelin star restaurants"')
     if p["type"] == "group":
@@ -405,6 +421,11 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
     for field in ("dinner", "wine", "lunch", "lunchWine", "rating", "reviews", "lat", "lng"):
         if r.get(field) is not None and not isinstance(r[field], (int, float)):
             problem(where, f"{field} must be a number (no currency sign or quotes)")
+    if r.get("cuisine") and r["cuisine"] not in CUISINE_CATEGORIES:
+        problem(where, f'cuisine "{r["cuisine"]}" isn\'t one of our categories: choose one of {", ".join(CUISINE_CATEGORIES)}')
+    for k in r:
+        if re.fullmatch(r"cuisine[A-Z]\w*", k):
+            problem(where, f"{k}: cuisine names in other languages come from the CUISINE_ maps in common.js and the lang files, so remove it")
     if r.get("noPairing") not in (None, True, False):
         problem(where, "noPairing must be true or false")
     elif r.get("noPairing") and (r.get("wine") is not None or r.get("lunchWine") is not None):
@@ -798,7 +819,7 @@ if problems:
 
 def members(p):
     """Restaurants that belong on a place's page: those in it or anywhere below it."""
-    if p["type"] == "cuisine":  # its city's restaurants with one of its cuisine labels
+    if p["type"] == "cuisine":  # its city's restaurants in one of its cuisine categories
         return [r for r in members(places[p["parent"]]) if r.get("cuisine") in p["cuisines"]]
     wanted = set(p["includes"]) if p["type"] == "group" else {p["id"]}
     return [r for r in restaurants if wanted & set(r["_chain"])]
@@ -811,7 +832,7 @@ for _p in places.values():
 # Every place gets a page; one without starred restaurants says so and waits for its first star.
 pages = list(places.values())
 # Cuisine pages (tokyo-french, hong-kong-chinese…) only where a city has CUISINE_MIN or more starred restaurants of that
-# cuisine, so none is thin; the build says when one falls below it, or names a label its city doesn't have.
+# cuisine, so none is thin; the build says when one falls below it, or names a category its city doesn't have.
 CUISINE_MIN = 5
 for _p in pages:
     if _p["type"] == "cuisine":
@@ -1478,6 +1499,10 @@ def read_words():
 
 
 WORDS, HTML_LANG, CUISINE_NAMES = read_words()
+for _lang in LANGUAGES:  # every cuisine category named in every language (Cantonese reads the Chinese names)
+    _missing = [c for c in CUISINE_CATEGORIES if c not in CUISINE_NAMES.get("zh" if _lang == "yue" else _lang, {})] if _lang != "en" else []
+    if _missing:
+        print(f"  Cuisine names in {_lang}: {', '.join(_missing)} missing (CUISINE_ maps in common.js, or the lang file's cuisines), so English is shown")
 
 
 # Each language's button label ("EN", "FR"), from LANGS in common.js and the lang files.
@@ -1511,9 +1536,9 @@ def sentences(text):
 
 
 def cuisine_in(r, lang):
-    """A restaurant's cuisine in a language, like cuisineOf() in common.js."""
-    own = pick_lang(r, "cuisine", lang)
-    return own if own != r.get("cuisine") else CUISINE_NAMES.get(lang, {}).get(own, own)
+    """A restaurant's cuisine category in a language, like cuisineOf() in common.js (Cantonese reads the Chinese names)."""
+    own = r.get("cuisine") or ""
+    return CUISINE_NAMES.get(lang, {}).get(own) or (CUISINE_NAMES.get("zh", {}).get(own) if lang == "yue" else None) or own
 
 
 def translated_texts(page, lang, starred):
@@ -2403,7 +2428,7 @@ def area_key(r):
 
 
 def browse_html(p, page, starred, lang):
-    """Two sections listing a big city's starred restaurants by cuisine (as the MICHELIN Guide names them) and by
+    """Two sections listing a big city's starred restaurants by cuisine (our categories) and by
     neighbourhood: a sentence on the biggest groups, then each group with its count and cheapest dinner menu. Each link
     shows just those restaurants in the list above (data-browse, read by place.js); without scripts it goes to the list."""
     if lang not in BROWSE_LANGS or not (p["type"] == "city" or p["id"] in BROWSE_CITY_STATES):
@@ -3233,7 +3258,7 @@ def build_home_data(starred):
             return r["reviews"] if r.get("rating") and r.get("reviews") is not None and r["reviews"] < FEW_REVIEWS else None
         return r.get(c)
     former = [r for r in restaurants if r.get("status") in ("lost", "changed") and r.get("lat") is not None]
-    cols = ["id", "name", "stars", "cuisine", "lat", "lng", "dinner", "dinnerType", "rating", "city", "chef", "town", "nameZh", "nameJa", "cuisineZh",
+    cols = ["id", "name", "stars", "cuisine", "lat", "lng", "dinner", "dinnerType", "rating", "city", "chef", "town", "nameZh", "nameJa",
             "status", "formerStars", "changeDate", "statusNote", "few"]
     city_cols = ["cityPath", "cityName", "cityNameZh", "country", "cur"]
     return write_data("home.json", dict(rows_with_cities(starred, cols, city_cols, value),
@@ -4549,10 +4574,12 @@ def diet_blocks(live, name_html, stars_cell, price_cell, note):
     return blocks
 
 
-# The vegan and vegetarian guide (9 Oct 2026). Meat-free restaurants are those the MICHELIN Guide files under a vegetarian
-# or vegan cuisine (`vegetarian-only`, or a cuisine naming it), plus VEG_ALSO, less VEG_NOT; then the guide's diet tags:
+# The vegan and vegetarian guide (9 Oct 2026). Meat-free restaurants are those in our Vegetarian or Vegan cuisine
+# categories or tagged `vegetarian-only`, plus VEG_KITCHENS and VEG_ALSO, less VEG_NOT; then the guide's diet tags:
 # "Vegetarian menu" (`vegetarian-menu`), "Vegan options" (`vegan`) and "Vegetarian options" (`vegetarian`).
-VEG_CUISINE = re.compile(r"vegetarian|vegan|shojin", re.I)
+VEG_CUISINE = re.compile(r"vegetarian|vegan", re.I)
+# Vegetarian kitchens filed under their country's cooking: Daigo (shōjin ryōri, Japanese) and avatāra (Indian).
+VEG_KITCHENS = {"daigo", "avatara"}
 # What a meat-free restaurant serves, where the cuisine alone would mislead (checked 9 Oct 2026 on their sites and in the press).
 VEG_ALSO = {"arpege": "Plant-based since July 2025 (honey its only animal product)",
             "de-nieuwe-winkel": "Plant-based"}
@@ -4567,7 +4594,8 @@ VEG_CITIES_MAX = 15            # rows in {{table:veg-cities}}
 def meat_free(r):
     if r["id"] in VEG_NOT:
         return False
-    return r["id"] in VEG_ALSO or "vegetarian-only" in (r.get("diets") or []) or bool(VEG_CUISINE.search(r.get("cuisine") or ""))
+    return (r["id"] in VEG_ALSO or r["id"] in VEG_KITCHENS or "vegetarian-only" in (r.get("diets") or [])
+            or bool(VEG_CUISINE.search(r.get("cuisine") or "")))
 
 
 def veg_serves(r):
@@ -4631,9 +4659,9 @@ def veg_blocks(live, name_html, stars_cell, price_cell, note):
                    f'<td data-label="Head chef">{e(r.get("chef") or "–")}</td>'
                    f'<td class="num" data-label="Tasting menu, per person">{price_cell(r)}</td></tr>' for r in free)
     blocks["veg-free"] = table(("Restaurant", "Stars", "Where", "Serves", "Head chef", "Tasting menu, per person"), body) + note(
-        "Starred restaurants that serve no meat or fish: those the MICHELIN Guide lists under a vegetarian or vegan cuisine, plus Arpège and "
-        "De Nieuwe Winkel, which went plant-based without the guide changing their label. We leave out Choux and Bolenius in Amsterdam, which the guide "
-        "files as vegetarian but which serve some meat or fish. Most stars first, then by country. Names open each restaurant’s prices on The Starred Bill "
+        "Starred restaurants that serve no meat or fish: those whose kitchen is vegetarian or vegan, including Arpège and "
+        "De Nieuwe Winkel, which went plant-based, Daigo’s Buddhist shōjin cooking and avatāra’s Indian vegetarian menu. We leave out Choux and "
+        "Bolenius in Amsterdam, which the MICHELIN Guide tags as vegetarian but which serve some meat or fish. Most stars first, then by country. Names open each restaurant’s prices on The Starred Bill "
         "and arrows its MICHELIN Guide page. Prices are the main dinner tasting menu per person in local currency, before service and drinks, "
         "with US dollars at recent exchange rates; mainland China’s are typical spends.")
 
@@ -7403,10 +7431,6 @@ def before_html(r):
             '    <div class="faq rp-qa">' + "".join(blocks) + f"</div>\n    {info_note(r)}\n  </div>\n</section>\n"), qa
 
 
-# Cuisine names the MICHELIN Guide words differently from one country to another, counted as the same for "Elsewhere".
-CUISINE_SAME = {"fish and seafood": "seafood"}
-
-
 MAY_LIKE_MAX = 6
 MAY_LIKE_NEAR_KM = 3  # "nearby" suggestions beyond the nearest list, within this distance
 
@@ -7417,14 +7441,14 @@ def may_like(r, live, skip):
     first, so these pages link to each other; ones already listed on the page (`skip`: the nearby list and the comparison
     table) are left out. At most three for any one reason, so the list stays varied."""
     chefs = set(chef_names(r.get("chef")))
-    kind = CUISINE_SAME.get((r.get("cuisine") or "").lower(), (r.get("cuisine") or "").lower())
+    kind = (r.get("cuisine") or "").lower()
     home = r["_chain"][1] if r["cityType"] == "district" else r["_chain"][0]
     s_ = r["stars"]
     found = []
     for q in live:
         if q["id"] in skip or q["id"] == r["id"]:
             continue
-        qkind = CUISINE_SAME.get((q.get("cuisine") or "").lower(), (q.get("cuisine") or "").lower())
+        qkind = (q.get("cuisine") or "").lower()
         page = 30 if q.get("page") else 0
         if chefs & set(chef_names(q.get("chef"))):
             found.append((100 + page, "chef", f"Also {r['chef']}", q))

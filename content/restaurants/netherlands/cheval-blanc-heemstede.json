@@ -4,7 +4,7 @@
   "area": "Heemstede",
   "address": "Jan van Goyenstraat 29, 2102 CA, Heemstede",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 208,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chef": "Huub van der Velden",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Moderne keuken",
   "lunchNoteNl": "Lunchmenu"
 }

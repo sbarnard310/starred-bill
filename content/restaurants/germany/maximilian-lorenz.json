@@ -3,7 +3,7 @@
   "city": "cologne",
   "address": "Johannisstraße 64, 50668, Cologne",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.4,
   "reviews": 210,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 135 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

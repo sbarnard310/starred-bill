@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "105, 1F, Waldorf Astoria Hotel, 2 Zhongshan Dong Yi Road, Huangpu, Shanghai",
   "stars": 1,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "rating": 5,
   "reviews": 4,
   "dinnerType": "menu",
@@ -20,7 +20,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZhs": "仅供应晚餐",
-  "cuisineZhs": "创新菜",
   "nameZhs": "凌珑",
   "chef": "Jason Liu",
   "chefSource": "press"

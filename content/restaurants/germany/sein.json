@@ -4,7 +4,7 @@
   "area": "Karlsruhe",
   "address": "Scheffelstraße 57, 76135, Karlsruhe",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 310,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 220 €)",
   "lunchNote": "Open for lunch · Fridays",
-  "lunchNoteDe": "Mittags geöffnet · Freitag",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Mittags geöffnet · Freitag"
 }

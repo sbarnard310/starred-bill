@@ -3,7 +3,7 @@
   "city": "istanbul",
   "address": "AG/E İç Kapı, 19 Mayıs Mahallesi Sümer Sokak Sümko N Blok No:1, No:2, Kadıköy, 34742, Istanbul",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2025-12",
@@ -29,7 +29,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTr": "Yalnızca akşam yemeği",
-  "cuisineTr": "Modern",
   "chef": "Kenan Çetinkaya and Pınar Korgan Çetinkaya",
   "chefSource": "press"
 }

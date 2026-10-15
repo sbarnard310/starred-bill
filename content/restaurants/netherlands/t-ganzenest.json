@@ -4,7 +4,7 @@
   "area": "Rijswijk",
   "address": "Delftweg 58a, 2289 AL, Rijswijk",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 186,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chef": "Erik Tas",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
-  "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Modern Frans"
+  "lunchNoteNl": "Lunchmenu"
 }

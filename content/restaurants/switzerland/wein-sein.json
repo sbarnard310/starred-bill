@@ -3,7 +3,7 @@
   "city": "berne",
   "address": "Münstergasse 50, 3011, Berne",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 301,
   "dinnerType": "menu",
@@ -24,14 +24,11 @@
   "chef": "Pascal Melliger",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 170)",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 170)",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 170)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Moderna"
+  "lunchNoteIt": "Solo a cena"
 }

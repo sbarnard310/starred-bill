@@ -4,7 +4,7 @@
   "area": "Langenau",
   "address": "Burghof 11, 89129, Langenau",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.4,
   "reviews": 22,
   "dinnerType": "menu",
@@ -27,7 +27,6 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 78 €)",
-  "cuisineDe": "Klassische Küche",
   "lunchNoteDe": "Mittagsmenü",
   "chef": "Hans Häge",
   "chefSource": "site"

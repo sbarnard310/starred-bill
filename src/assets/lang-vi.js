@@ -4,8 +4,19 @@
   lang: { label: "VI", html: "vi", suffixes: ["Vi"], locale: "vi-VN", maps: "vi" },
   months: ["tháng 1", "tháng 2", "tháng 3", "tháng 4", "tháng 5", "tháng 6", "tháng 7", "tháng 8", "tháng 9", "tháng 10", "tháng 11", "tháng 12"],
   cuisines: {
-    "Cantonese": "Quảng Đông", "French Contemporary": "Pháp đương đại", "Innovative": "Sáng tạo", "Korean Contemporary": "Hàn Quốc đương đại", "Teppanyaki": "Teppanyaki",
-    "Vietnamese": "Việt Nam", "Vietnamese Contemporary": "Việt Nam đương đại", "Contemporary": "Đương đại", "Creative": "Sáng tạo", "Japanese": "Nhật Bản", "Modern Cuisine": "Ẩm thực hiện đại"
+    "Modern European": "Âu hiện đại", "Modern American": "Mỹ hiện đại", "Modern": "Ẩm thực hiện đại", "Creative": "Sáng tạo",
+    "Classic": "Cổ điển", "Regional": "Ẩm thực địa phương", "Farm to table": "Từ nông trại đến bàn ăn", "Fusion": "Fusion",
+    "International": "Quốc tế", "European": "Châu Âu", "French": "Pháp", "British": "Anh", "Italian": "Ý", "Spanish": "Tây Ban Nha",
+    "Portuguese": "Bồ Đào Nha", "Mediterranean": "Địa Trung Hải", "Greek": "Hy Lạp", "Turkish": "Thổ Nhĩ Kỳ", "Alpine": "Vùng Alps",
+    "Austrian": "Áo", "German": "Đức", "Nordic": "Bắc Âu", "Middle Eastern": "Trung Đông", "African": "Châu Phi", "American": "Mỹ",
+    "Mexican": "Mexico", "Latin American": "Mỹ Latinh", "Australian": "Úc", "New Zealand": "New Zealand",
+    "Pacific Islands": "Đảo Thái Bình Dương", "Japanese": "Nhật Bản", "Sushi": "Sushi", "Tempura": "Tempura", "Yakitori": "Yakitori",
+    "Korean": "Hàn Quốc", "Chinese": "Trung Hoa", "Cantonese": "Quảng Đông", "Teochew": "Triều Châu", "Sichuan": "Tứ Xuyên", "Hunan": "Hồ Nam",
+    "Shanghainese": "Thượng Hải", "Huaiyang": "Hoài Dương", "Zhejiang": "Chiết Giang", "Fujian": "Phúc Kiến", "Beijing": "Bắc Kinh",
+    "Shandong": "Sơn Đông", "Taiwanese": "Đài Loan", "Thai": "Thái", "Vietnamese": "Việt Nam", "Malaysian": "Malaysia", "Peranakan": "Peranakan",
+    "Singaporean": "Singapore", "Filipino": "Philippines", "Indian": "Ấn Độ", "Asian": "Châu Á", "Seafood": "Hải sản",
+    "Steak and grill": "Bít tết và đồ nướng", "Barbecue": "BBQ kiểu Mỹ", "Vegetarian": "Chay", "Vegan": "Thuần chay",
+    "Street food": "Ẩm thực đường phố"
   },
   words: {
     acctSentCode: "Chúng tôi đã gửi mã 6 chữ số đến {email}. Nhập mã bên dưới để đăng nhập tại đây. (Liên kết trong email cũng dùng được, nhưng trong ứng dụng trên màn hình chính, nó sẽ mở trình duyệt.)", acctCodeLabel: "Mã trong email", acctVerify: "Đăng nhập bằng mã", acctVerifying: "Đang kiểm tra…", acctCodeWrong: "Mã đó không dùng được. Hãy kiểm tra lại hoặc yêu cầu mã mới.", acctBadCode: "Nhập mã 6 chữ số trong email.",

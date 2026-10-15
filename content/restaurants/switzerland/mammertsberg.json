@@ -25,9 +25,7 @@
   "chef": "Silvio Germann",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü, 6 Gänge (4 Gänge ab CHF 248)",
-  "cuisineDe": "Kreativ",
   "dinnerNoteFr": "Menu dégustation, 6 plats (4 plats dès CHF 248)",
-  "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Menu degustazione, 6 portate (4 portate da CHF 248)",
   "lunch": 87,
   "lunchType": "menu",
@@ -37,6 +35,5 @@
   "lunchNoteIt": "Menu Easy Lunch, gio–ven (menu degustazione gio–dom)",
   "lunchSourceType": "site",
   "lunchSource": "https://static1.squarespace.com/static/633bf7b5bd339a4d404da82d/t/6ac0c95e3e16cb45aa28cd77/1791019358358/Easy+Lunch+Deutsch+22.10.2026.pdf",
-  "cuisineIt": "Creativa",
   "wine": 189
 }

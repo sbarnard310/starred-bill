@@ -4,7 +4,7 @@
   "area": "Hoofdplaat",
   "address": "Slijkplaat 6, 4513 KK, Hoofdplaat",
   "stars": 1,
-  "cuisine": "Country cooking",
+  "cuisine": "Regional",
   "rating": 4.8,
   "reviews": 339,
   "dinnerType": "menu",
@@ -30,6 +30,5 @@
   "chef": "Tom Vinke",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 160)",
-  "cuisineNl": "Streekgebonden",
   "lunchNoteNl": "Lunchmenu"
 }

@@ -4,7 +4,7 @@
   "area": "Linz",
   "address": "Obere Donaulände 15, 4020, Linz",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -30,6 +30,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Nur abends"
 }

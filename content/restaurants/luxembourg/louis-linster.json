@@ -4,7 +4,7 @@
   "area": "Frisange",
   "address": "17 route de Luxembourg, 5752, Frisange",
   "stars": 2,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 756,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "chef": "Louis Linster",
   "chefSource": "site",
   "dinnerNoteFr": "Menu Signature, 8 séquences (menu 6 séquences 220 €)",
-  "cuisineFr": "Cuisine française moderne",
   "dinnerNoteDe": "Signature-Menü, 8 Gänge (6-Gänge-Menü 220 €)",
   "lunch": 250,
   "lunchType": "menu",
@@ -35,7 +34,6 @@
   "lunchWine": 120,
   "lunchSourceType": "site",
   "lunchSource": "https://louis-linster.lu/fr/menu.html",
-  "cuisineDe": "Französisch-modern",
   "menus": [
     {
       "name": "Signature menu",

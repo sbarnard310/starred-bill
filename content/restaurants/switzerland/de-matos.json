@@ -30,14 +30,11 @@
   "chef": "Oscar de Matos",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 56)",
-  "cuisineDe": "Kreativ",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 56)",
-  "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 56)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Creativa"
+  "lunchNoteIt": "Solo a cena"
 }

@@ -3,7 +3,7 @@
   "city": "hamburg",
   "address": "Weidenallee 12, 20357, Hamburg",
   "stars": 1,
-  "cuisine": "Fish and Seafood",
+  "cuisine": "Seafood",
   "rating": 4.7,
   "reviews": 894,
   "dinnerType": "menu",
@@ -23,7 +23,6 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 169 €)",
   "lunchNote": "Open for lunch · Sat–Sun",
   "lunchNoteDe": "Mittags geöffnet · Sa–So",
-  "cuisineDe": "Fisch und Meeresfrüchte",
   "chef": "Stefan Fäth",
   "chefSource": "site"
 }

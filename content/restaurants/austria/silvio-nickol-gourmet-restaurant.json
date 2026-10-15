@@ -3,7 +3,7 @@
   "city": "vienna",
   "address": "Coburgbastei 4, 1010, Vienna",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 214,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

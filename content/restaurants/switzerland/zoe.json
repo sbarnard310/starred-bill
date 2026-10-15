@@ -25,9 +25,7 @@
   "chef": "Joel Coray et Maël Hêche",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 155)",
-  "cuisineDe": "Vegetarisch",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 155)",
-  "cuisineFr": "Cuisine végétarienne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 155)",
   "lunch": 222,
   "lunchType": "menu",
@@ -36,6 +34,5 @@
   "lunchNoteFr": "Même menu le midi · mar.–ven.",
   "lunchNoteIt": "Stesso menu a pranzo · mar–ven",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurant-zoe.com/menu",
-  "cuisineIt": "Vegetariana"
+  "lunchSource": "https://www.restaurant-zoe.com/menu"
 }

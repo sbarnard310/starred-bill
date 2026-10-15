@@ -4,7 +4,7 @@
   "area": "Lagoa",
   "address": "Estrada de Sesmarias, 8400-010, Lagoa",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 381,
   "dinnerType": "menu",
@@ -31,6 +31,5 @@
   "lunchNotePt": "O mesmo menu ao almoço · domingo",
   "lunchWine": 105,
   "lunchSourceType": "site",
-  "lunchSource": "https://bonbon.pt/pt-pt/menu/",
-  "cuisinePt": "Moderna"
+  "lunchSource": "https://bonbon.pt/pt-pt/menu/"
 }

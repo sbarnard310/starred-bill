@@ -3,7 +3,22 @@
 (window.SB_LANGS = window.SB_LANGS || {}).et = {
   lang: { label: "ET", html: "et", suffixes: ["Et"], locale: "et-EE", maps: "et" },
   months: ["jaan", "veebr", "märts", "apr", "mai", "juuni", "juuli", "aug", "sept", "okt", "nov", "dets"],
-  cuisines: { "Creative": "Loominguline", "Modern Cuisine": "Moodne köök", "Contemporary": "Kaasaegne", "Estonian": "Eesti köök", "Nordic": "Põhjamaine" },
+  cuisines: {
+    "Modern European": "Moodne Euroopa köök", "Modern American": "Moodne Ameerika köök", "Modern": "Moodne", "Creative": "Loominguline",
+    "Classic": "Klassikaline", "Regional": "Piirkondlik", "Farm to table": "Talust lauale", "Fusion": "Fusioon",
+    "International": "Rahvusvaheline", "European": "Euroopa köök", "French": "Prantsuse köök", "British": "Briti köök",
+    "Italian": "Itaalia köök", "Spanish": "Hispaania köök", "Portuguese": "Portugali köök", "Mediterranean": "Vahemere köök",
+    "Greek": "Kreeka köök", "Turkish": "Türgi köök", "Alpine": "Alpi köök", "Austrian": "Austria köök", "German": "Saksa köök",
+    "Nordic": "Põhjamaine", "Middle Eastern": "Lähis-Ida köök", "African": "Aafrika köök", "American": "Ameerika köök",
+    "Mexican": "Mehhiko köök", "Latin American": "Ladina-Ameerika köök", "Australian": "Austraalia köök", "New Zealand": "Uus-Meremaa köök",
+    "Pacific Islands": "Polüneesia köök", "Japanese": "Jaapani köök", "Sushi": "Sushi", "Tempura": "Tempura", "Yakitori": "Yakitori",
+    "Korean": "Korea köök", "Chinese": "Hiina köök", "Cantonese": "Kantoni köök", "Teochew": "Teochew köök", "Sichuan": "Sichuani köök",
+    "Hunan": "Hunani köök", "Shanghainese": "Shanghai köök", "Huaiyang": "Huaiyangi köök", "Zhejiang": "Zhejiangi köök",
+    "Fujian": "Fujiani köök", "Beijing": "Pekingi köök", "Shandong": "Shandongi köök", "Taiwanese": "Taiwani köök", "Thai": "Tai köök",
+    "Vietnamese": "Vietnami köök", "Malaysian": "Malaisia köök", "Peranakan": "Peranakani köök", "Singaporean": "Singapuri köök",
+    "Filipino": "Filipiini köök", "Indian": "India köök", "Asian": "Aasia köök", "Seafood": "Kala ja mereannid",
+    "Steak and grill": "Steik ja grill", "Barbecue": "Barbecue", "Vegetarian": "Taimetoit", "Vegan": "Vegantoit", "Street food": "Tänavatoit"
+  },
   words: {
     acctSentCode: "Saatsime aadressile {email} 6-kohalise koodi. Sisesta see allpool, et siin sisse logida. (Kirjas olev link töötab ka, kuid avakuva rakenduses avab see brauseri.)", acctCodeLabel: "Kood kirjast", acctVerify: "Logi koodiga sisse", acctVerifying: "Kontrollime…", acctCodeWrong: "See kood ei sobinud. Kontrolli seda või küsi uus.", acctBadCode: "Sisesta kirjast saadud 6-kohaline kood.",
     notrackOn: "Seda brauserit ei arvestata enam külastusstatistikas.", notrackOff: "Seda brauserit arvestatakse taas külastusstatistikas.",

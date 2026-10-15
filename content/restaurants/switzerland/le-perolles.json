@@ -3,7 +3,7 @@
   "city": "fribourg",
   "address": "Boulevard de Pérolles 1, 1700, Fribourg",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 532,
   "dinnerType": "menu",
@@ -25,9 +25,7 @@
   "chef": "Victor Moriez",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 175)",
-  "cuisineDe": "Französisch-zeitgemäß",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 175)",
-  "cuisineFr": "Cuisine française contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 175)",
   "lunch": 85,
   "lunchType": "menu",
@@ -37,7 +35,6 @@
   "lunchNoteIt": "Menu «Déjeuner» di 4 portate (5 portate CHF 105; menu «Moments» da CHF 175) · mer–ven",
   "lunchSourceType": "site",
   "lunchSource": "https://www.leperolles.ch/menu-marche-perolles",
-  "cuisineIt": "Francese contemporanea",
   "menus": [
     {
       "name": "Moments menu",

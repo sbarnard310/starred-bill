@@ -4,7 +4,7 @@
   "area": "Saint Vith",
   "address": "Hauptstraße 39, 4780, Saint Vith",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 244,
   "dinnerType": "menu",
@@ -20,12 +20,10 @@
   "chef": "Eric Pankert",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 85)",
-  "cuisineNl": "Moderne keuken",
   "areaNl": "Sankt Vith",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 85 €)",
   "lunchNote": "Open for lunch · Fri, Sun",
   "lunchNoteNl": "Open voor lunch · vr, zo",
   "lunchNoteFr": "Ouvert le midi · ven., dim.",
-  "cuisineFr": "Cuisine moderne",
   "areaFr": "Saint-Vith"
 }

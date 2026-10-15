@@ -4,7 +4,7 @@
   "area": "Crans-Montana",
   "address": "Chemin du Mont-Blanc 1, 3963, Crans-Montana",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 91,
   "dinnerType": "menu",
@@ -25,13 +25,10 @@
   "chef": "Yannick Crepaux",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 165)",
-  "cuisineDe": "Französisch-modern",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 165)",
-  "cuisineFr": "Cuisine française moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 165)",
   "lunchNote": "Open for lunch",
   "lunchNoteDe": "Mittags geöffnet",
   "lunchNoteFr": "Ouvert le midi",
-  "lunchNoteIt": "Aperto a pranzo",
-  "cuisineIt": "Francese moderna"
+  "lunchNoteIt": "Aperto a pranzo"
 }

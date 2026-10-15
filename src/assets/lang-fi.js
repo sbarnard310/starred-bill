@@ -4,8 +4,20 @@
   lang: { label: "FI", html: "fi", suffixes: ["Fi"], locale: "fi-FI", maps: "fi" },
   months: ["tammikuu", "helmikuu", "maaliskuu", "huhtikuu", "toukokuu", "kesäkuu", "heinäkuu", "elokuu", "syyskuu", "lokakuu", "marraskuu", "joulukuu"],
   cuisines: {
-    "Creative": "Luova", "Modern Cuisine": "Moderni keittiö", "Contemporary": "Nykyaikainen", "Nordic": "Pohjoismainen", "Scandinavian": "Skandinaavinen",
-    "Finnish": "Suomalainen", "Innovative": "Innovatiivinen", "Seafood": "Merenelävät", "Vegetarian": "Kasvisruoka"
+    "Modern European": "Moderni eurooppalainen", "Modern American": "Moderni amerikkalainen", "Modern": "Moderni", "Creative": "Luova",
+    "Classic": "Klassinen", "Regional": "Alueellinen", "Farm to table": "Lähiruoka", "Fusion": "Fusion", "International": "Kansainvälinen",
+    "European": "Eurooppalainen", "French": "Ranskalainen", "British": "Brittiläinen", "Italian": "Italialainen", "Spanish": "Espanjalainen",
+    "Portuguese": "Portugalilainen", "Mediterranean": "Välimerellinen", "Greek": "Kreikkalainen", "Turkish": "Turkkilainen",
+    "Alpine": "Alppikeittiö", "Austrian": "Itävaltalainen", "German": "Saksalainen", "Nordic": "Pohjoismainen", "Middle Eastern": "Lähi-itäinen",
+    "African": "Afrikkalainen", "American": "Amerikkalainen", "Mexican": "Meksikolainen", "Latin American": "Latinalaisamerikkalainen",
+    "Australian": "Australialainen", "New Zealand": "Uusiseelantilainen", "Pacific Islands": "Polynesialainen", "Japanese": "Japanilainen",
+    "Sushi": "Sushi", "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Korealainen", "Chinese": "Kiinalainen",
+    "Cantonese": "Kantonilainen", "Teochew": "Teochew", "Sichuan": "Sichuan", "Hunan": "Hunan", "Shanghainese": "Shanghailainen",
+    "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Peking", "Shandong": "Shandong",
+    "Taiwanese": "Taiwanilainen", "Thai": "Thaimaalainen", "Vietnamese": "Vietnamilainen", "Malaysian": "Malesialainen",
+    "Peranakan": "Peranakan", "Singaporean": "Singaporelainen", "Filipino": "Filippiiniläinen", "Indian": "Intialainen", "Asian": "Aasialainen",
+    "Seafood": "Merenelävät", "Steak and grill": "Pihvi ja grilli", "Barbecue": "Barbecue", "Vegetarian": "Kasvisruoka", "Vegan": "Vegaaninen",
+    "Street food": "Katuruoka"
   },
   words: {
     acctSentCode: "Lähetimme 6-numeroisen koodin osoitteeseen {email}. Kirjoita se alle kirjautuaksesi tässä. (Sähköpostin linkki toimii myös, mutta aloitusnäytön sovelluksessa se avaa selaimen.)", acctCodeLabel: "Koodi sähköpostista", acctVerify: "Kirjaudu koodilla", acctVerifying: "Tarkistetaan…", acctCodeWrong: "Koodi ei toiminut. Tarkista se tai pyydä uusi.", acctBadCode: "Kirjoita sähköpostin 6-numeroinen koodi.",

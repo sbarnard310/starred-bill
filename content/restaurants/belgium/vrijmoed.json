@@ -25,7 +25,6 @@
   "chef": "Michaël Vrijmoed",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 99)",
-  "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 99 €)",
   "lunch": 158,
   "lunchType": "menu",
@@ -34,6 +33,5 @@
   "lunchNoteFr": "Même menu le midi · mar.–ven.",
   "lunchWine": 42,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.vrijmoed.be/nl/menu",
-  "cuisineFr": "Cuisine créative"
+  "lunchSource": "https://www.vrijmoed.be/nl/menu"
 }

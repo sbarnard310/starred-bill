@@ -3,7 +3,7 @@
   "city": "basel-city",
   "address": "St.-Johanns-Vorstadt 21, 4056, Basel",
   "stars": 1,
-  "cuisine": "Mediterranean Cuisine",
+  "cuisine": "Mediterranean",
   "dinnerType": "menu",
   "dinner": 215,
   "dinnerNote": "Tasting menu (other menus from CHF 135)",
@@ -23,14 +23,11 @@
   "chef": "Duc Tan Arrigoni",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 135)",
-  "cuisineDe": "Mediterran",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 135)",
-  "cuisineFr": "Cuisine méditerranéenne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 135)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Mediterranea"
+  "lunchNoteIt": "Solo a cena"
 }

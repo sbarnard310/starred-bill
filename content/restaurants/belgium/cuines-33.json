@@ -26,7 +26,6 @@
   "chef": "Edwin Menue",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation",
   "lunch": 225,
   "lunchType": "menu",
@@ -35,6 +34,5 @@
   "lunchNoteFr": "Même menu le midi · lun.–mar., ven.–sam.",
   "lunchWine": 115,
   "lunchSourceType": "site",
-  "lunchSource": "https://cuines33.be/onsmenu/",
-  "cuisineFr": "Cuisine créative"
+  "lunchSource": "https://cuines33.be/onsmenu/"
 }

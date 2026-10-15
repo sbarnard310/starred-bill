@@ -4,7 +4,7 @@
   "area": "Sankt Josef",
   "address": "Oisnitz 36, 8503, Sankt Josef",
   "stars": 1,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -29,6 +29,5 @@
   "chef": "Patrick Faist",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
-  "lunchNoteDe": "Mittags geöffnet · Samstag",
-  "cuisineDe": "Saisonal"
+  "lunchNoteDe": "Mittags geöffnet · Samstag"
 }

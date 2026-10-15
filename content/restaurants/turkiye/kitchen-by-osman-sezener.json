@@ -4,7 +4,7 @@
   "area": "Bodrum",
   "address": "Dirmil Mahallesi, Balyek Caddesi No:5A, Yalıkavak, 48400, Bodrum",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.4,
   "reviews": 191,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteTr": "Yalnızca akşam yemeği",
-  "cuisineTr": "Modern Mutfak"
+  "lunchNoteTr": "Yalnızca akşam yemeği"
 }

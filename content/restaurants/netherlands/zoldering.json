@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "Utrechtsestraat 141h, 1017 VM, Amsterdam",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 405,
   "dinnerType": "main",
@@ -25,6 +25,5 @@
   "dinnerNoteNl": "Gemiddeld hoofdgerecht",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Modern Frans"
+  "lunchNoteNl": "Alleen diner"
 }

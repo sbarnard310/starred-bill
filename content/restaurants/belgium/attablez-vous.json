@@ -3,7 +3,7 @@
   "city": "namur",
   "address": "Tienne Maquet 16, 5000, Namur",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 754,
   "dinnerType": "menu",
@@ -27,9 +27,7 @@
   "chef": "Charles-Edouard Jeandrain",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 80)",
-  "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 80 €)",
-  "cuisineFr": "Cuisine française créative",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"
 }

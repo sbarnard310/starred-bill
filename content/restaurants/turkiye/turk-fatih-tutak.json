@@ -3,7 +3,7 @@
   "city": "istanbul",
   "address": "Bomonti, Cumhuriyet Hacıahmet Silahşör Caddesi, Yeniyol Sokak No:2, Şişli, 34440, Istanbul",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 1191,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteTr": "Tadım menüsü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteTr": "Yalnızca akşam yemeği",
-  "cuisineTr": "Modern Mutfak"
+  "lunchNoteTr": "Yalnızca akşam yemeği"
 }

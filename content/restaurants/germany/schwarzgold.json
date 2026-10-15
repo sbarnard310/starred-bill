@@ -4,7 +4,7 @@
   "area": "Dortmund",
   "address": "Emscherallee 11, 44369, Dortmund",
   "stars": 1,
-  "cuisine": "Regional Cuisine",
+  "cuisine": "Regional",
   "rating": 4.8,
   "reviews": 127,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 159 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Regional"
+  "lunchNoteDe": "Nur abends"
 }

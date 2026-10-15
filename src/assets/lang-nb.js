@@ -4,8 +4,18 @@
   lang: { label: "NO", html: "nb", suffixes: ["Nb"], locale: "nb-NO", maps: "no" },
   months: ["jan.", "feb.", "mars", "apr.", "mai", "juni", "juli", "aug.", "sep.", "okt.", "nov.", "des."],
   cuisines: {
-    "Classic Cuisine": "Klassisk kjøkken", "Contemporary": "Moderne", "Creative": "Kreativt", "French": "Fransk", "Japanese": "Japansk", "Modern Cuisine": "Moderne kjøkken",
-    "Scandinavian": "Skandinavisk", "Nordic": "Nordisk", "Seafood": "Sjømat", "Fish and Seafood": "Fisk og sjømat", "Innovative": "Innovativt", "Vegetarian": "Vegetarisk"
+    "Modern European": "Moderne europeisk", "Modern American": "Moderne amerikansk", "Modern": "Moderne", "Creative": "Kreativt",
+    "Classic": "Klassisk", "Regional": "Regionalt", "Farm to table": "Fra jord til bord", "Fusion": "Fusion", "International": "Internasjonalt",
+    "European": "Europeisk", "French": "Fransk", "British": "Britisk", "Italian": "Italiensk", "Spanish": "Spansk", "Portuguese": "Portugisisk",
+    "Mediterranean": "Middelhavskjøkken", "Greek": "Gresk", "Turkish": "Tyrkisk", "Alpine": "Alpekjøkken", "Austrian": "Østerriksk",
+    "German": "Tysk", "Nordic": "Nordisk", "Middle Eastern": "Midtøsten", "African": "Afrikansk", "American": "Amerikansk",
+    "Mexican": "Meksikansk", "Latin American": "Latinamerikansk", "Australian": "Australsk", "New Zealand": "New Zealandsk",
+    "Pacific Islands": "Polynesisk", "Japanese": "Japansk", "Sushi": "Sushi", "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Koreansk",
+    "Chinese": "Kinesisk", "Cantonese": "Kantonesisk", "Teochew": "Teochew", "Sichuan": "Sichuan", "Hunan": "Hunan", "Shanghainese": "Shanghai",
+    "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Peking", "Shandong": "Shandong", "Taiwanese": "Taiwansk",
+    "Thai": "Thailandsk", "Vietnamese": "Vietnamesisk", "Malaysian": "Malaysisk", "Peranakan": "Peranakan", "Singaporean": "Singaporsk",
+    "Filipino": "Filippinsk", "Indian": "Indisk", "Asian": "Asiatisk", "Seafood": "Sjømat", "Steak and grill": "Biff og grill",
+    "Barbecue": "Barbecue", "Vegetarian": "Vegetarisk", "Vegan": "Vegansk", "Street food": "Gatemat"
   },
   words: {
     acctSentCode: "Vi har sendt en sekssifret kode til {email}. Skriv den inn nedenfor for å logge inn her. (Lenken i e-posten fungerer også, men i appen på hjemskjermen åpner den nettleseren i stedet.)", acctCodeLabel: "Kode fra e-posten", acctVerify: "Logg inn med kode", acctVerifying: "Sjekker…", acctCodeWrong: "Koden fungerte ikke. Sjekk den eller be om en ny.", acctBadCode: "Skriv inn den sekssifrede koden fra e-posten.",

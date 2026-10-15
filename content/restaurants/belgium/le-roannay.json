@@ -4,7 +4,7 @@
   "area": "Francorchamps",
   "address": "Rue de Spa 155, 4970, Francorchamps",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.1,
   "reviews": 75,
   "dinnerType": "menu",
@@ -30,8 +30,6 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 59)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 59 €)",
-  "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchNoteFr": "Menu déjeuner"
 }

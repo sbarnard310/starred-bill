@@ -4,7 +4,7 @@
   "area": "Emptinne",
   "address": "Chaussée d'Andenne 10a, 5363, Emptinne",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 413,
   "dinnerType": "menu",
@@ -20,10 +20,8 @@
   "chef": "Grégory Gillain",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 50 €)",
   "lunchNote": "Open for lunch · Tue, Thu–Fri",
   "lunchNoteNl": "Open voor lunch · di, do–vr",
-  "lunchNoteFr": "Ouvert le midi · mar., jeu.–ven.",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchNoteFr": "Ouvert le midi · mar., jeu.–ven."
 }

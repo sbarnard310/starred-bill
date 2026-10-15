@@ -4,7 +4,7 @@
   "area": "Steyr",
   "address": "Damberggasse 27, 4400, Steyr",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 5,
   "reviews": 18,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

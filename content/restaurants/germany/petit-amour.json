@@ -3,7 +3,7 @@
   "city": "hamburg",
   "address": "Spritzenplatz 11, 22765, Hamburg",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 155,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Modern"
+  "lunchNoteDe": "Nur abends"
 }

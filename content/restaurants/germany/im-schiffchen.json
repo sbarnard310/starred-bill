@@ -3,7 +3,7 @@
   "city": "dusseldorf",
   "address": "Kaiserswerther Markt 9, 40489, Düsseldorf",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 3.8,
   "reviews": 425,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 54 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Nur abends"
 }

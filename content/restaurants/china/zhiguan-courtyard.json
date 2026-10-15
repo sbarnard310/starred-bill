@@ -3,7 +3,7 @@
   "city": "beijing",
   "address": "12 Jinyu Hutong, Dongcheng, Beijing",
   "stars": 1,
-  "cuisine": "Dongbei",
+  "cuisine": "Chinese",
   "rating": 4.1,
   "reviews": 17,
   "dinnerType": "spend",
@@ -22,7 +22,6 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "东北菜",
   "nameZhs": "止观小馆",
   "chef": "Stephen Chang",
   "chefSource": "press"

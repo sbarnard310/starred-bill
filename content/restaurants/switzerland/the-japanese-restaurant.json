@@ -4,7 +4,7 @@
   "area": "Andermatt",
   "address": "Gotthardstrasse 4, 6490, Andermatt",
   "stars": 2,
-  "cuisine": "Japanese Contemporary",
+  "cuisine": "Japanese",
   "rating": 4.5,
   "reviews": 101,
   "dinnerType": "menu",
@@ -24,14 +24,11 @@
   "chef": "Fabio Toffolon and Dominik Sato",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 260)",
-  "cuisineDe": "Japanisch-zeitgemäß",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 260)",
-  "cuisineFr": "Cuisine japonaise contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 260)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Giapponese contemporanea"
+  "lunchNoteIt": "Solo a cena"
 }

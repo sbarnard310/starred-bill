@@ -3,7 +3,7 @@
   "city": "hamburg",
   "address": "Paul-Roosen-Straße 31, 22767, Hamburg",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 499,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 149 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

@@ -4,7 +4,7 @@
   "area": "Timmendorfer Strand",
   "address": "Strandallee 73, 23669, Timmendorfer Strand",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 92,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 145 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-klassisch"
+  "lunchNoteDe": "Nur abends"
 }

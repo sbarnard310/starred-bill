@@ -3,7 +3,7 @@
   "city": "munich",
   "address": "Kurfürstenstraße 31, 80801, Munich",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 193,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   "lunchWine": 115,
   "lunchSourceType": "site",
   "lunchSource": "https://www.brothers-munich.com/menue-weine/",
-  "cuisineDe": "Moderne Küche",
   "dinnerNote": "Tasting menu (also à la carte)",
   "dinnerNoteDe": "Degustationsmenü (auch à la carte)"
 }

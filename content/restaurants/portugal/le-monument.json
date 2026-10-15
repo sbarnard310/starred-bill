@@ -3,7 +3,7 @@
   "city": "porto",
   "address": "Avenida dos Aliados 151, 4000-067, Porto",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 348,
   "dinnerType": "menu",
@@ -21,6 +21,5 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 110 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Atual"
+  "lunchNotePt": "Só jantar"
 }

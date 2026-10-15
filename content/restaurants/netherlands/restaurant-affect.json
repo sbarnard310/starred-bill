@@ -4,7 +4,7 @@
   "area": "Zwolle",
   "address": "Thorbeckegracht 41, 8011 VN, Zwolle",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 123,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
   "lunchNote": "Open for lunch · Fri–Sat",
-  "lunchNoteNl": "Open voor lunch · vr–za",
-  "cuisineNl": "Moderne keuken"
+  "lunchNoteNl": "Open voor lunch · vr–za"
 }

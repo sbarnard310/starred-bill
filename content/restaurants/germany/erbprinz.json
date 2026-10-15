@@ -4,7 +4,7 @@
   "area": "Ettlingen",
   "address": "Rheinstraße 1, 76275, Ettlingen",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.1,
   "reviews": 492,
   "dinnerType": "menu",
@@ -21,6 +21,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 175 €)",
   "lunchNote": "Open for lunch",
-  "lunchNoteDe": "Mittags geöffnet",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Mittags geöffnet"
 }

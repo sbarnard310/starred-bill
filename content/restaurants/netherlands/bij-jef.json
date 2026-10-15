@@ -4,7 +4,7 @@
   "area": "Den Hoorn",
   "address": "Herenstraat 34, 1797 AJ, Den Hoorn",
   "stars": 1,
-  "cuisine": "Regional Cuisine",
+  "cuisine": "Regional",
   "rating": 4.7,
   "reviews": 332,
   "dinnerType": "menu",
@@ -29,7 +29,6 @@
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 155)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Regionaal",
   "chef": "Jef Schuur",
   "chefSource": "press"
 }

@@ -4,7 +4,7 @@
   "area": "Marche-en-Famenne",
   "address": "Rue Porte Haute 5, 6900, Marche-en-Famenne",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 291,
   "dinnerType": "main",
@@ -23,7 +23,6 @@
   "chef": "François-Xavier Simon",
   "chefSource": "michelin",
   "dinnerNoteNl": "À la carte; hoofdgerechten € 39–47",
-  "cuisineNl": "Eigentijds Frans",
   "dinnerNoteFr": "À la carte ; plats de 39 à 47 €",
   "lunch": 54,
   "lunchType": "menu",
@@ -33,7 +32,6 @@
   "lunchNoteFr": "Menu lunch, en semaine",
   "lunchSourceType": "site",
   "lunchSource": "https://bistrotblaise.be/",
-  "cuisineFr": "Cuisine française contemporaine",
   "menus": [
     {
       "name": "Three-course weekday lunch menu",

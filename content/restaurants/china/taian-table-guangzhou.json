@@ -3,7 +3,7 @@
   "city": "guangzhou",
   "address": "2F, LN Garden Hotel, 368 Huanshi East Road, Yuexiu, Guangzhou",
   "stars": 2,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "dinnerType": "spend",
   "dinner": 2094,
   "dinnerNote": "Typical spend",
@@ -17,7 +17,6 @@
     "vegetarian"
   ],
   "dinnerNoteZhs": "人均消费",
-  "cuisineZhs": "创新菜",
   "nameZhs": "泰安门",
   "chef": "Stefan Stiller",
   "chefSource": "press"

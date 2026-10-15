@@ -3,7 +3,7 @@
   "city": "cologne",
   "address": "Pantaleonswall 27, 50676, Cologne",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-06",
@@ -33,6 +33,5 @@
   "lunchNote": "Same menu at lunch · Tue–Sat",
   "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurant-neobiota.de/_files/ugd/83ff3a_798c219cdea040bb857bdbad933d72f3.pdf",
-  "cuisineDe": "Moderne Küche"
+  "lunchSource": "https://www.restaurant-neobiota.de/_files/ugd/83ff3a_798c219cdea040bb857bdbad933d72f3.pdf"
 }

@@ -3,7 +3,7 @@
   "city": "frankfurt-on-the-main",
   "address": "Neue Mainzer Straße 52, 60311, Frankfurt on the Main",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 1157,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 55 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

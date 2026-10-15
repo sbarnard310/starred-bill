@@ -4,7 +4,7 @@
   "area": "Trier",
   "address": "Zurlaubener Ufer 78, 54292, Trier",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 179,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr, So",
   "lunchWine": 90,
   "lunchSourceType": "site",
-  "lunchSource": "https://bagatelle.de/menue/",
-  "cuisineDe": "Französisch-zeitgemäß"
+  "lunchSource": "https://bagatelle.de/menue/"
 }

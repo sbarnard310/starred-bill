@@ -4,7 +4,7 @@
   "area": "Overveen",
   "address": "Zeeweg 53, 2051 EB, Overveen",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 524,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "lunchNote": "Same menu at lunch · Wed–Sun",
   "lunchNoteNl": "Zelfde menu bij de lunch · wo–zo",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.bokkedoorns.nl/menukaart/",
-  "cuisineNl": "Moderne keuken"
+  "lunchSource": "https://www.bokkedoorns.nl/menukaart/"
 }

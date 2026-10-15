@@ -4,7 +4,7 @@
   "area": "La Punt-Chamues-ch",
   "address": "Via Cumünela 2, 7522, La Punt-Chamues-ch",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 5,
   "reviews": 8,
   "dinnerType": "menu",
@@ -24,14 +24,11 @@
   "chef": "James Baron",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 148)",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 148)",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 148)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Moderna"
+  "lunchNoteIt": "Solo a cena"
 }

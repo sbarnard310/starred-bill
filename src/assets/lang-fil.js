@@ -4,8 +4,19 @@
   lang: { label: "FIL", html: "fil", suffixes: ["Fil"], locale: "fil-PH", maps: "fil" },
   months: ["Ene", "Peb", "Mar", "Abr", "May", "Hun", "Hul", "Ago", "Set", "Okt", "Nob", "Dis"],
   cuisines: {
-    "Asian Contemporary": "Kontemporaryong Asyano", "Creative": "Malikhain", "Filipino": "Pilipino", "Spanish Contemporary": "Kontemporaryong Espanyol",
-    "Contemporary": "Kontemporaryo", "Modern Cuisine": "Modernong lutuin", "Japanese": "Hapon", "Innovative": "Makabago"
+    "Modern European": "Modernong Europeo", "Modern American": "Modernong Amerikano", "Modern": "Modernong lutuin", "Creative": "Malikhain",
+    "Classic": "Klasiko", "Regional": "Panrehiyon", "Farm to table": "Mula bukid hanggang mesa", "Fusion": "Fusion",
+    "International": "Internasyonal", "European": "Europeo", "French": "Pranses", "British": "British", "Italian": "Italyano",
+    "Spanish": "Espanyol", "Portuguese": "Portuges", "Mediterranean": "Mediterraneo", "Greek": "Griyego", "Turkish": "Turko", "Alpine": "Alpino",
+    "Austrian": "Austriyano", "German": "Aleman", "Nordic": "Nordiko", "Middle Eastern": "Gitnang Silangan", "African": "Aprikano",
+    "American": "Amerikano", "Mexican": "Mehikano", "Latin American": "Latino-Amerikano", "Australian": "Australyano",
+    "New Zealand": "New Zealand", "Pacific Islands": "Pasipiko", "Japanese": "Hapon", "Sushi": "Sushi", "Tempura": "Tempura",
+    "Yakitori": "Yakitori", "Korean": "Koreano", "Chinese": "Tsino", "Cantonese": "Kantones", "Teochew": "Teochew", "Sichuan": "Sichuan",
+    "Hunan": "Hunan", "Shanghainese": "Shanghai", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Beijing",
+    "Shandong": "Shandong", "Taiwanese": "Taiwanese", "Thai": "Thai", "Vietnamese": "Biyetnames", "Malaysian": "Malaysian",
+    "Peranakan": "Peranakan", "Singaporean": "Singaporean", "Filipino": "Pilipino", "Indian": "Indian", "Asian": "Asyano",
+    "Seafood": "Pagkaing-dagat", "Steak and grill": "Steak at ihaw", "Barbecue": "Barbecue", "Vegetarian": "Vegetarian", "Vegan": "Vegan",
+    "Street food": "Pagkaing kalye"
   },
   words: {
     acctSentCode: "Nagpadala kami ng 6 na digit na code sa {email}. I-type ito sa ibaba para mag-sign in dito. (Gumagana rin ang link sa email, pero sa app sa home screen ay bubuksan nito ang browser.)", acctCodeLabel: "Code mula sa email", acctVerify: "Mag-sign in gamit ang code", acctVerifying: "Sinusuri…", acctCodeWrong: "Hindi gumana ang code na iyon. Suriin ito, o humingi ng bago.", acctBadCode: "I-type ang 6 na digit na code mula sa email.",

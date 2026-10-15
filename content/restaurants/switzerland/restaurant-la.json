@@ -3,7 +3,7 @@
   "city": "basel-city",
   "address": "St. Johanns-Vorstadt 13, 4056, Basel",
   "stars": 1,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2025-10",
@@ -30,14 +30,11 @@
   "chef": "Matthieu Judenne",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 50)",
-  "cuisineDe": "Saisonal",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 50)",
-  "cuisineFr": "Cuisine de saison",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 50)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Cucina di stagione"
+  "lunchNoteIt": "Solo a cena"
 }

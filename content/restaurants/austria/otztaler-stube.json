@@ -4,7 +4,7 @@
   "area": "Sölden",
   "address": "Auweg 3, 6450, Sölden",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 40,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 190 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

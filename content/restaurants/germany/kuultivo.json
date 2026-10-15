@@ -4,7 +4,7 @@
   "area": "Leipzig",
   "address": "Könneritzstraße 24, 04229, Leipzig",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 237,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "chef": "Benjamin Breton",
   "chefSource": "press"
 }

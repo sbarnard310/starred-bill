@@ -4,7 +4,7 @@
   "area": "Bad Krozingen",
   "address": "Felix und Nabor Straße 2, 79189, Bad Krozingen",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.6,
   "reviews": 226,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 84 €)",
   "lunchNote": "Open for lunch · Tue–Thu, Sat",
-  "lunchNoteDe": "Mittags geöffnet · Di–Do, Sa",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Mittags geöffnet · Di–Do, Sa"
 }

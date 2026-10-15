@@ -3,7 +3,7 @@
   "city": "chengdu",
   "address": "Canton Hall, Taikoo Li, 8 Zhongshamao Street, Jinjiang, Chengdu",
   "stars": 1,
-  "cuisine": "European Contemporary",
+  "cuisine": "European",
   "rating": 4.3,
   "reviews": 176,
   "dinnerType": "spend",
@@ -20,7 +20,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZhs": "仅供应晚餐",
-  "cuisineZhs": "时尚欧陆菜",
   "nameZhs": "会馆",
   "chef": "Leonardo Zambrino",
   "chefSource": "press"

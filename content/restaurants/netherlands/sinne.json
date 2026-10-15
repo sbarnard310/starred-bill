@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "Ceintuurbaan 342H, 1072 GP, Amsterdam",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 674,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chef": "Alexander Ioannou",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 85)",
-  "cuisineNl": "Moderne keuken",
   "lunchNoteNl": "Lunchmenu"
 }

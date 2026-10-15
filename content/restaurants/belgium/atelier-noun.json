@@ -4,7 +4,7 @@
   "area": "Leefdaal",
   "address": "Dorpstraat 252, 3061, Leefdaal",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-05",
@@ -33,9 +33,7 @@
   "chef": "Bert Castermans",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 100)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 100 €)",
-  "cuisineFr": "Cuisine française moderne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"
 }

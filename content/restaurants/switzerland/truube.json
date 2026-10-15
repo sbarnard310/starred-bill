@@ -4,7 +4,7 @@
   "area": "Gais",
   "address": "Rotenwies 9, 9056, Gais",
   "stars": 1,
-  "cuisine": "Mediterranean Cuisine",
+  "cuisine": "Mediterranean",
   "rating": 4.9,
   "reviews": 196,
   "dinnerType": "menu",
@@ -25,9 +25,7 @@
   "chef": "Silvia Manser",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 145)",
-  "cuisineDe": "Mediterran",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 145)",
-  "cuisineFr": "Cuisine méditerranéenne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 145)",
   "lunch": 190,
   "lunchType": "menu",
@@ -37,6 +35,5 @@
   "lunchNoteIt": "Stesso menu a pranzo · ven–lun",
   "lunchWine": 120,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.truube.ch/pdf/truube_menukarte.pdf",
-  "cuisineIt": "Mediterranea"
+  "lunchSource": "https://www.truube.ch/pdf/truube_menukarte.pdf"
 }

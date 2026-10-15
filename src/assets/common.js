@@ -1720,74 +1720,167 @@ const I18N = {
     installTipIos: "Per installarla: in Safari tocca il pulsante Condividi (il quadrato con la freccia), poi scegli “Aggiungi alla schermata Home”."
   }
 };
-// Cuisine names in Chinese for restaurants whose data has no cuisineZh.
+// Our cuisine categories (CUISINE_CATEGORIES in build.py, 15 Oct 2026) in each language: Traditional Chinese (read by
+// Cantonese too), Japanese, French, Spanish, Italian, Korean, Danish, Swedish, Icelandic, Catalan and Thai. The languages in
+// assets/lang-<code>.js carry their own `cuisines`. A new category needs a name in every map (the build lists any missing).
 const CUISINE_ZH = {
-  "Modern Cuisine": "現代菜", "Modern British": "現代英國菜", "French": "法國菜", "Indian": "印度菜", "Creative": "創新菜", "Japanese": "日本菜",
-  "Traditional British": "傳統英國菜", "Modern French": "時尚法國菜", "Italian": "義大利菜", "French Contemporary": "時尚法國菜", "Chinese": "中國菜",
-  "African": "非洲菜", "Spanish": "西班牙菜", "Seafood": "海鮮", "Fish and Seafood": "魚類及海鮮", "Creative British": "創新英國菜", "Mexican": "墨西哥菜",
-  "Mediterranean Cuisine": "地中海菜", "Greek": "希臘菜", "Thai": "泰國菜", "Vegan": "純素", "European Contemporary": "時尚歐陸菜", "Korean": "韓國菜",
-  "Grills": "燒烤", "Californian": "加州菜", "Classic French": "經典法國菜", "Classic Cuisine": "經典菜", "British Contemporary": "時尚英國菜",
-  "Turkish": "土耳其菜", "Scandinavian": "北歐菜", "Contemporary": "時尚菜", "American": "美國菜", "Vegetarian": "素食", "Israeli": "以色列菜", "Fusion": "融合菜"
+  "Modern European": "現代歐陸菜", "Modern American": "現代美國菜", "Modern": "現代菜", "Creative": "創新菜", "Classic": "經典菜", "Regional": "地方菜",
+  "Farm to table": "農場到餐桌", "Fusion": "融合菜", "International": "國際菜", "European": "歐陸菜", "French": "法國菜", "British": "英國菜", "Italian": "義大利菜",
+  "Spanish": "西班牙菜", "Portuguese": "葡萄牙菜", "Mediterranean": "地中海菜", "Greek": "希臘菜", "Turkish": "土耳其菜", "Alpine": "阿爾卑斯菜", "Austrian": "奧地利菜",
+  "German": "德國菜", "Nordic": "北歐菜", "Middle Eastern": "中東菜", "African": "非洲菜", "American": "美國菜", "Mexican": "墨西哥菜", "Latin American": "拉丁美洲菜",
+  "Australian": "澳洲菜", "New Zealand": "紐西蘭菜", "Pacific Islands": "太平洋島國菜", "Japanese": "日本菜", "Sushi": "壽司", "Tempura": "天婦羅",
+  "Yakitori": "燒鳥", "Korean": "韓國菜", "Chinese": "中國菜", "Cantonese": "粵菜", "Teochew": "潮州菜", "Sichuan": "川菜", "Hunan": "湘菜",
+  "Shanghainese": "上海菜", "Huaiyang": "淮揚菜", "Zhejiang": "浙菜", "Fujian": "閩菜", "Beijing": "京菜", "Shandong": "魯菜", "Taiwanese": "台菜",
+  "Thai": "泰國菜", "Vietnamese": "越南菜", "Malaysian": "馬來西亞菜", "Peranakan": "娘惹菜", "Singaporean": "新加坡菜", "Filipino": "菲律賓菜", "Indian": "印度菜",
+  "Asian": "亞洲菜", "Seafood": "海鮮", "Steak and grill": "牛排燒烤", "Barbecue": "美式燒烤", "Vegetarian": "素食", "Vegan": "純素", "Street food": "街頭小吃"
 };
-// Cuisine names in French (Michelin's French labels), for pages offered in French.
+const CUISINE_JA = {
+  "Modern European": "モダンヨーロッパ料理", "Modern American": "モダンアメリカ料理", "Modern": "モダン料理", "Creative": "創作料理", "Classic": "クラシック料理",
+  "Regional": "郷土料理", "Farm to table": "ファーム・トゥ・テーブル", "Fusion": "フュージョン料理", "International": "多国籍料理", "European": "ヨーロッパ料理",
+  "French": "フランス料理", "British": "イギリス料理", "Italian": "イタリア料理", "Spanish": "スペイン料理", "Portuguese": "ポルトガル料理", "Mediterranean": "地中海料理",
+  "Greek": "ギリシャ料理", "Turkish": "トルコ料理", "Alpine": "アルプス料理", "Austrian": "オーストリア料理", "German": "ドイツ料理", "Nordic": "北欧料理",
+  "Middle Eastern": "中東料理", "African": "アフリカ料理", "American": "アメリカ料理", "Mexican": "メキシコ料理", "Latin American": "中南米料理",
+  "Australian": "オーストラリア料理", "New Zealand": "ニュージーランド料理", "Pacific Islands": "南太平洋料理", "Japanese": "日本料理", "Sushi": "寿司", "Tempura": "天ぷら",
+  "Yakitori": "焼き鳥", "Korean": "韓国料理", "Chinese": "中国料理", "Cantonese": "広東料理", "Teochew": "潮州料理", "Sichuan": "四川料理", "Hunan": "湖南料理",
+  "Shanghainese": "上海料理", "Huaiyang": "淮揚料理", "Zhejiang": "浙江料理", "Fujian": "福建料理", "Beijing": "北京料理", "Shandong": "山東料理", "Taiwanese": "台湾料理",
+  "Thai": "タイ料理", "Vietnamese": "ベトナム料理", "Malaysian": "マレーシア料理", "Peranakan": "プラナカン料理", "Singaporean": "シンガポール料理", "Filipino": "フィリピン料理",
+  "Indian": "インド料理", "Asian": "アジア料理", "Seafood": "シーフード", "Steak and grill": "ステーキ・グリル", "Barbecue": "バーベキュー", "Vegetarian": "ベジタリアン",
+  "Vegan": "ヴィーガン", "Street food": "屋台料理"
+};
 const CUISINE_FR = {
-  "Modern Cuisine": "Cuisine moderne", "Creative": "Créative", "Classic Cuisine": "Cuisine classique", "Traditional Cuisine": "Cuisine traditionnelle",
-  "Japanese": "Japonaise", "Italian": "Italienne", "Chinese": "Chinoise", "Cantonese": "Cantonaise", "Greek": "Grecque", "Mexican": "Mexicaine",
-  "Fish and Seafood": "Poissons et fruits de mer", "Seafood": "Fruits de mer", "French": "Française", "Indian": "Indienne", "Korean": "Coréenne",
-  "Thai": "Thaïlandaise", "Spanish": "Espagnole", "Vegan": "Végane", "Mediterranean Cuisine": "Cuisine méditerranéenne", "Steakhouse": "Grillades",
-  "Contemporary": "Contemporaine", "Classic French": "Classique française", "Creative French": "Française créative", "French Contemporary": "Française contemporaine",
-  "Modern French": "Française moderne", "Asian Contemporary": "Asiatique contemporaine", "Italian Contemporary": "Italienne contemporaine",
-  "Japanese Contemporary": "Japonaise contemporaine", "Country cooking": "Cuisine du terroir", "Farm to table": "De la ferme à la table", "Innovative": "Innovante",
-  "Meats and Grills": "Viandes et grillades", "Organic": "Bio", "Regional Cuisine": "Cuisine régionale", "Seasonal Cuisine": "Cuisine de saison",
-  "Sharing": "À partager", "Tuscan": "Toscane", "Vegetarian": "Végétarienne"
+  "Modern European": "Européenne moderne", "Modern American": "Américaine moderne", "Modern": "Moderne", "Creative": "Créative",
+  "Classic": "Classique", "Regional": "Régionale", "Farm to table": "De la ferme à la table", "Fusion": "Fusion",
+  "International": "Internationale", "European": "Européenne", "French": "Française", "British": "Britannique", "Italian": "Italienne",
+  "Spanish": "Espagnole", "Portuguese": "Portugaise", "Mediterranean": "Méditerranéenne", "Greek": "Grecque", "Turkish": "Turque",
+  "Alpine": "Alpine", "Austrian": "Autrichienne", "German": "Allemande", "Nordic": "Nordique", "Middle Eastern": "Moyen-orientale",
+  "African": "Africaine", "American": "Américaine", "Mexican": "Mexicaine", "Latin American": "Latino-américaine",
+  "Australian": "Australienne", "New Zealand": "Néo-zélandaise", "Pacific Islands": "Îles du Pacifique", "Japanese": "Japonaise",
+  "Sushi": "Sushi", "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Coréenne", "Chinese": "Chinoise", "Cantonese": "Cantonaise",
+  "Teochew": "Teochew", "Sichuan": "Sichuanaise", "Hunan": "Hunanaise", "Shanghainese": "Shanghaïenne", "Huaiyang": "Huaiyang",
+  "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Pékinoise", "Shandong": "Shandong", "Taiwanese": "Taïwanaise",
+  "Thai": "Thaïlandaise", "Vietnamese": "Vietnamienne", "Malaysian": "Malaisienne", "Peranakan": "Peranakan", "Singaporean": "Singapourienne",
+  "Filipino": "Philippine", "Indian": "Indienne", "Asian": "Asiatique", "Seafood": "Poissons et fruits de mer", "Steak and grill": "Grillades",
+  "Barbecue": "Barbecue", "Vegetarian": "Végétarienne", "Vegan": "Végane", "Street food": "Street food"
 };
-// Cuisine names in Spanish and Italian (Michelin's own labels where they exist).
 const CUISINE_ES = {
-  "Modern Cuisine": "Moderna", "Creative": "Creativa", "Contemporary": "Actual", "Classic Cuisine": "Clásica", "Traditional Cuisine": "Tradicional",
-  "Regional Cuisine": "Regional", "Fish and Seafood": "Pescados y mariscos", "Seafood": "Mariscos", "Japanese": "Japonesa", "Fusion": "Fusión",
-  "Grills": "Carnes a la parrilla", "Mexican": "Mexicana", "Colombian": "Colombiana", "Vegetarian": "Vegetariana", "Vegan": "Vegana", "Basque": "Vasca",
-  "Catalan": "Catalana", "Farm to table": "De la granja a la mesa", "Innovative": "Innovadora", "International": "Internacional", "World Cuisine": "Cocina del mundo",
-  "Italian": "Italiana", "French": "Francesa", "Spanish": "Española", "Mediterranean Cuisine": "Mediterránea", "Chinese": "China", "Korean": "Coreana",
-  "Indian": "India", "Thai": "Tailandesa", "Greek": "Griega", "Steakhouse": "Carnes"
-};
-const CUISINE_KO = {
-  "Korean": "한식", "Korean Contemporary": "모던 한식", "Contemporary": "컨템퍼러리", "Innovative": "이노베이티브", "Modern Cuisine": "모던 퀴진",
-  "French": "프렌치", "French Contemporary": "컨템퍼러리 프렌치", "Japanese": "일식", "Sushi": "스시", "Chinese": "중식", "Mexican": "멕시칸",
-  "Mediterranean Cuisine": "지중해 요리", "Vegan": "비건", "Italian": "이탈리안", "Steakhouse": "스테이크하우스", "Barbecue": "바비큐"
-};
-const CUISINE_DA = {
-  "Creative": "Kreativt", "Modern Cuisine": "Moderne køkken", "Fusion": "Fusion", "Modern French": "Moderne fransk", "Japanese": "Japansk", "Contemporary": "Moderne",
-  "Danish": "Dansk", "Nordic": "Nordisk", "Seafood": "Fisk og skaldyr", "Vegetarian": "Vegetarisk", "Innovative": "Innovativt"
-};
-const CUISINE_SV = {
-  "Creative": "Kreativt", "Modern Cuisine": "Modernt kök", "Japanese": "Japanskt", "Grills": "Grill", "Fish and Seafood": "Fisk och skaldjur",
-  "Contemporary": "Modernt", "Seafood": "Skaldjur", "Nordic": "Nordiskt", "Swedish": "Svenskt", "Vegetarian": "Vegetariskt", "Innovative": "Innovativt"
-};
-const CUISINE_IS = {
-  "Creative": "Skapandi", "Modern Cuisine": "Nútímaleg matargerð", "Regional Cuisine": "Íslensk matargerð", "Contemporary": "Nútímaleg", "Seafood": "Sjávarréttir"
-};
-const CUISINE_CA = {
-  "Creative": "Creativa", "Modern Cuisine": "Moderna", "Contemporary": "Contemporània", "Traditional Cuisine": "Tradicional", "Regional Cuisine": "Regional"
-};
-const CUISINE_TH = {
-  "French Contemporary": "ฝรั่งเศสร่วมสมัย", "Modern Cuisine": "อาหารสมัยใหม่", "French": "ฝรั่งเศส", "Alpine": "อาหารแถบเทือกเขาแอลป์", "Thai": "อาหารไทย",
-  "German": "เยอรมัน", "Thai contemporary": "อาหารไทยร่วมสมัย", "Indian": "อินเดีย", "European Contemporary": "ยุโรปร่วมสมัย", "Contemporary": "ร่วมสมัย",
-  "Innovative": "สร้างสรรค์", "Street Food": "สตรีทฟู้ด", "Korean Contemporary": "เกาหลีร่วมสมัย", "Italian Contemporary": "อิตาเลียนร่วมสมัย", "Creative": "สร้างสรรค์",
-  "Southern Thai": "อาหารใต้", "Sushi": "ซูชิ"
+  "Modern European": "Europea moderna", "Modern American": "Americana moderna", "Modern": "Moderna", "Creative": "Creativa",
+  "Classic": "Clásica", "Regional": "Regional", "Farm to table": "De la granja a la mesa", "Fusion": "Fusión",
+  "International": "Internacional", "European": "Europea", "French": "Francesa", "British": "Británica", "Italian": "Italiana",
+  "Spanish": "Española", "Portuguese": "Portuguesa", "Mediterranean": "Mediterránea", "Greek": "Griega", "Turkish": "Turca",
+  "Alpine": "Alpina", "Austrian": "Austriaca", "German": "Alemana", "Nordic": "Nórdica", "Middle Eastern": "Oriente Medio",
+  "African": "Africana", "American": "Americana", "Mexican": "Mexicana", "Latin American": "Latinoamericana", "Australian": "Australiana",
+  "New Zealand": "Neozelandesa", "Pacific Islands": "Islas del Pacífico", "Japanese": "Japonesa", "Sushi": "Sushi", "Tempura": "Tempura",
+  "Yakitori": "Yakitori", "Korean": "Coreana", "Chinese": "China", "Cantonese": "Cantonesa", "Teochew": "Teochew", "Sichuan": "Sichuanesa",
+  "Hunan": "Hunan", "Shanghainese": "Shanghái", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Pekín",
+  "Shandong": "Shandong", "Taiwanese": "Taiwanesa", "Thai": "Tailandesa", "Vietnamese": "Vietnamita", "Malaysian": "Malasia",
+  "Peranakan": "Peranakan", "Singaporean": "Singapurense", "Filipino": "Filipina", "Indian": "India", "Asian": "Asiática",
+  "Seafood": "Pescados y mariscos", "Steak and grill": "Carnes a la parrilla", "Barbecue": "BBQ", "Vegetarian": "Vegetariana",
+  "Vegan": "Vegana", "Street food": "Comida callejera"
 };
 const CUISINE_IT = {
-  "Modern Cuisine": "Moderna", "Creative": "Creativa", "Contemporary": "Contemporanea", "Classic Cuisine": "Classica", "Traditional Cuisine": "Tradizionale",
-  "Regional Cuisine": "Regionale", "Fish and Seafood": "Pesce e frutti di mare", "Seafood": "Frutti di mare", "Japanese": "Giapponese", "Fusion": "Fusion",
-  "Grills": "Carne alla griglia", "Mexican": "Messicana", "Vegetarian": "Vegetariana", "Vegan": "Vegana", "Farm to table": "Dal produttore alla tavola",
-  "Innovative": "Innovativa", "International": "Internazionale", "World Cuisine": "Cucina del mondo", "Italian": "Italiana", "Italian Contemporary": "Italiana contemporanea",
-  "French": "Francese", "Spanish": "Spagnola", "Mediterranean Cuisine": "Mediterranea", "Chinese": "Cinese", "Korean": "Coreana", "Indian": "Indiana", "Thai": "Thailandese",
-  "Market Cuisine": "Di mercato", "Country cooking": "Casalinga", "Roman": "Romana", "Lombardian": "Lombarda", "Tuscan": "Toscana", "Steakhouse": "Carne",
-  "Classic French": "Francese classica", "Creative French": "Francese creativa", "French Contemporary": "Francese contemporanea", "Modern French": "Francese moderna",
-  "Asian Contemporary": "Asiatica contemporanea", "Japanese Contemporary": "Giapponese contemporanea", "Seasonal Cuisine": "Di stagione", "Sharing": "Da condividere"
+  "Modern European": "Europea moderna", "Modern American": "Americana moderna", "Modern": "Moderna", "Creative": "Creativa",
+  "Classic": "Classica", "Regional": "Regionale", "Farm to table": "Dal produttore alla tavola", "Fusion": "Fusion",
+  "International": "Internazionale", "European": "Europea", "French": "Francese", "British": "Britannica", "Italian": "Italiana",
+  "Spanish": "Spagnola", "Portuguese": "Portoghese", "Mediterranean": "Mediterranea", "Greek": "Greca", "Turkish": "Turca", "Alpine": "Alpina",
+  "Austrian": "Austriaca", "German": "Tedesca", "Nordic": "Nordica", "Middle Eastern": "Mediorientale", "African": "Africana",
+  "American": "Americana", "Mexican": "Messicana", "Latin American": "Latinoamericana", "Australian": "Australiana",
+  "New Zealand": "Neozelandese", "Pacific Islands": "Isole del Pacifico", "Japanese": "Giapponese", "Sushi": "Sushi", "Tempura": "Tempura",
+  "Yakitori": "Yakitori", "Korean": "Coreana", "Chinese": "Cinese", "Cantonese": "Cantonese", "Teochew": "Teochew", "Sichuan": "Sichuanese",
+  "Hunan": "Hunan", "Shanghainese": "Shanghainese", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Pechinese",
+  "Shandong": "Shandong", "Taiwanese": "Taiwanese", "Thai": "Thailandese", "Vietnamese": "Vietnamita", "Malaysian": "Malese",
+  "Peranakan": "Peranakan", "Singaporean": "Singaporiana", "Filipino": "Filippina", "Indian": "Indiana", "Asian": "Asiatica",
+  "Seafood": "Pesce e frutti di mare", "Steak and grill": "Carne alla griglia", "Barbecue": "Barbecue", "Vegetarian": "Vegetariana",
+  "Vegan": "Vegana", "Street food": "Street food"
+};
+const CUISINE_KO = {
+  "Modern European": "모던 유러피언", "Modern American": "모던 아메리칸", "Modern": "모던 퀴진", "Creative": "이노베이티브", "Classic": "클래식", "Regional": "향토 요리",
+  "Farm to table": "팜투테이블", "Fusion": "퓨전", "International": "인터내셔널", "European": "유러피언", "French": "프렌치", "British": "브리티시",
+  "Italian": "이탈리안", "Spanish": "스패니시", "Portuguese": "포르투갈 요리", "Mediterranean": "지중해 요리", "Greek": "그리스 요리", "Turkish": "튀르키예 요리",
+  "Alpine": "알프스 요리", "Austrian": "오스트리아 요리", "German": "독일 요리", "Nordic": "북유럽 요리", "Middle Eastern": "중동 요리", "African": "아프리카 요리",
+  "American": "아메리칸", "Mexican": "멕시칸", "Latin American": "라틴 아메리카 요리", "Australian": "호주 요리", "New Zealand": "뉴질랜드 요리",
+  "Pacific Islands": "남태평양 요리", "Japanese": "일식", "Sushi": "스시", "Tempura": "덴푸라", "Yakitori": "야키토리", "Korean": "한식", "Chinese": "중식",
+  "Cantonese": "광둥 요리", "Teochew": "차오저우 요리", "Sichuan": "쓰촨 요리", "Hunan": "후난 요리", "Shanghainese": "상하이 요리", "Huaiyang": "화이양 요리",
+  "Zhejiang": "저장 요리", "Fujian": "푸젠 요리", "Beijing": "베이징 요리", "Shandong": "산둥 요리", "Taiwanese": "대만 요리", "Thai": "태국 요리",
+  "Vietnamese": "베트남 요리", "Malaysian": "말레이시아 요리", "Peranakan": "페라나칸 요리", "Singaporean": "싱가포르 요리", "Filipino": "필리핀 요리", "Indian": "인도 요리",
+  "Asian": "아시안", "Seafood": "해산물 요리", "Steak and grill": "스테이크하우스", "Barbecue": "바비큐", "Vegetarian": "채식", "Vegan": "비건",
+  "Street food": "길거리 음식"
+};
+const CUISINE_DA = {
+  "Modern European": "Moderne europæisk", "Modern American": "Moderne amerikansk", "Modern": "Moderne", "Creative": "Kreativt",
+  "Classic": "Klassisk", "Regional": "Regionalt", "Farm to table": "Fra jord til bord", "Fusion": "Fusion", "International": "Internationalt",
+  "European": "Europæisk", "French": "Fransk", "British": "Britisk", "Italian": "Italiensk", "Spanish": "Spansk", "Portuguese": "Portugisisk",
+  "Mediterranean": "Middelhavskøkken", "Greek": "Græsk", "Turkish": "Tyrkisk", "Alpine": "Alpekøkken", "Austrian": "Østrigsk",
+  "German": "Tysk", "Nordic": "Nordisk", "Middle Eastern": "Mellemøsten", "African": "Afrikansk", "American": "Amerikansk",
+  "Mexican": "Mexicansk", "Latin American": "Latinamerikansk", "Australian": "Australsk", "New Zealand": "New Zealandsk",
+  "Pacific Islands": "Polynesisk", "Japanese": "Japansk", "Sushi": "Sushi", "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Koreansk",
+  "Chinese": "Kinesisk", "Cantonese": "Kantonesisk", "Teochew": "Teochew", "Sichuan": "Sichuan", "Hunan": "Hunan", "Shanghainese": "Shanghai",
+  "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Peking", "Shandong": "Shandong", "Taiwanese": "Taiwanesisk",
+  "Thai": "Thailandsk", "Vietnamese": "Vietnamesisk", "Malaysian": "Malaysisk", "Peranakan": "Peranakan", "Singaporean": "Singaporeansk",
+  "Filipino": "Filippinsk", "Indian": "Indisk", "Asian": "Asiatisk", "Seafood": "Fisk og skaldyr", "Steak and grill": "Bøf og grill",
+  "Barbecue": "Barbecue", "Vegetarian": "Vegetarisk", "Vegan": "Vegansk", "Street food": "Streetfood"
+};
+const CUISINE_SV = {
+  "Modern European": "Modernt europeiskt", "Modern American": "Modernt amerikanskt", "Modern": "Modernt", "Creative": "Kreativt",
+  "Classic": "Klassiskt", "Regional": "Regionalt", "Farm to table": "Från gård till bord", "Fusion": "Fusion",
+  "International": "Internationellt", "European": "Europeiskt", "French": "Franskt", "British": "Brittiskt", "Italian": "Italienskt",
+  "Spanish": "Spanskt", "Portuguese": "Portugisiskt", "Mediterranean": "Medelhavskök", "Greek": "Grekiskt", "Turkish": "Turkiskt",
+  "Alpine": "Alpint", "Austrian": "Österrikiskt", "German": "Tyskt", "Nordic": "Nordiskt", "Middle Eastern": "Mellanöstern",
+  "African": "Afrikanskt", "American": "Amerikanskt", "Mexican": "Mexikanskt", "Latin American": "Latinamerikanskt",
+  "Australian": "Australiskt", "New Zealand": "Nyzeeländskt", "Pacific Islands": "Polynesiskt", "Japanese": "Japanskt", "Sushi": "Sushi",
+  "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Koreanskt", "Chinese": "Kinesiskt", "Cantonese": "Kantonesiskt",
+  "Teochew": "Teochew", "Sichuan": "Sichuan", "Hunan": "Hunan", "Shanghainese": "Shanghai", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang",
+  "Fujian": "Fujian", "Beijing": "Peking", "Shandong": "Shandong", "Taiwanese": "Taiwanesiskt", "Thai": "Thailändskt",
+  "Vietnamese": "Vietnamesiskt", "Malaysian": "Malaysiskt", "Peranakan": "Peranakan", "Singaporean": "Singaporianskt",
+  "Filipino": "Filippinskt", "Indian": "Indiskt", "Asian": "Asiatiskt", "Seafood": "Fisk och skaldjur", "Steak and grill": "Biff och grill",
+  "Barbecue": "Barbecue", "Vegetarian": "Vegetariskt", "Vegan": "Veganskt", "Street food": "Gatumat"
+};
+const CUISINE_IS = {
+  "Modern European": "Nútímaleg evrópsk", "Modern American": "Nútímaleg amerísk", "Modern": "Nútímaleg", "Creative": "Skapandi",
+  "Classic": "Klassísk", "Regional": "Svæðisbundin", "Farm to table": "Beint frá býli", "Fusion": "Fusion", "International": "Alþjóðleg",
+  "European": "Evrópsk", "French": "Frönsk", "British": "Bresk", "Italian": "Ítölsk", "Spanish": "Spænsk", "Portuguese": "Portúgölsk",
+  "Mediterranean": "Miðjarðarhafsmatargerð", "Greek": "Grísk", "Turkish": "Tyrknesk", "Alpine": "Alpamatargerð", "Austrian": "Austurrísk",
+  "German": "Þýsk", "Nordic": "Norræn", "Middle Eastern": "Miðausturlensk", "African": "Afrísk", "American": "Amerísk", "Mexican": "Mexíkósk",
+  "Latin American": "Rómönsk-amerísk", "Australian": "Áströlsk", "New Zealand": "Nýsjálensk", "Pacific Islands": "Pólýnesísk",
+  "Japanese": "Japönsk", "Sushi": "Sushi", "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Kóresk", "Chinese": "Kínversk",
+  "Cantonese": "Kantónsk", "Teochew": "Teochew", "Sichuan": "Sichuan", "Hunan": "Hunan", "Shanghainese": "Shanghai", "Huaiyang": "Huaiyang",
+  "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Peking", "Shandong": "Shandong", "Taiwanese": "Taívönsk", "Thai": "Taílensk",
+  "Vietnamese": "Víetnömsk", "Malaysian": "Malasísk", "Peranakan": "Peranakan", "Singaporean": "Singapúrsk", "Filipino": "Filippseysk",
+  "Indian": "Indversk", "Asian": "Asísk", "Seafood": "Sjávarréttir", "Steak and grill": "Steikur og grill", "Barbecue": "Barbecue",
+  "Vegetarian": "Grænmetisfæði", "Vegan": "Vegan", "Street food": "Götumatur"
+};
+const CUISINE_CA = {
+  "Modern European": "Europea moderna", "Modern American": "Americana moderna", "Modern": "Moderna", "Creative": "Creativa",
+  "Classic": "Clàssica", "Regional": "Regional", "Farm to table": "De la granja a la taula", "Fusion": "Fusió",
+  "International": "Internacional", "European": "Europea", "French": "Francesa", "British": "Britànica", "Italian": "Italiana",
+  "Spanish": "Espanyola", "Portuguese": "Portuguesa", "Mediterranean": "Mediterrània", "Greek": "Grega", "Turkish": "Turca",
+  "Alpine": "Alpina", "Austrian": "Austríaca", "German": "Alemanya", "Nordic": "Nòrdica", "Middle Eastern": "Orient Mitjà",
+  "African": "Africana", "American": "Americana", "Mexican": "Mexicana", "Latin American": "Llatinoamericana", "Australian": "Australiana",
+  "New Zealand": "Neozelandesa", "Pacific Islands": "Illes del Pacífic", "Japanese": "Japonesa", "Sushi": "Sushi", "Tempura": "Tempura",
+  "Yakitori": "Yakitori", "Korean": "Coreana", "Chinese": "Xinesa", "Cantonese": "Cantonesa", "Teochew": "Teochew", "Sichuan": "Sichuanesa",
+  "Hunan": "Hunan", "Shanghainese": "Xangai", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Pequín",
+  "Shandong": "Shandong", "Taiwanese": "Taiwanesa", "Thai": "Tailandesa", "Vietnamese": "Vietnamita", "Malaysian": "Malaisiana",
+  "Peranakan": "Peranakan", "Singaporean": "Singapuresa", "Filipino": "Filipina", "Indian": "Índia", "Asian": "Asiàtica",
+  "Seafood": "Peix i marisc", "Steak and grill": "Carns a la brasa", "Barbecue": "Barbacoa", "Vegetarian": "Vegetariana", "Vegan": "Vegana",
+  "Street food": "Menjar de carrer"
+};
+const CUISINE_TH = {
+  "Modern European": "ยุโรปสมัยใหม่", "Modern American": "อเมริกันสมัยใหม่", "Modern": "อาหารสมัยใหม่", "Creative": "สร้างสรรค์",
+  "Classic": "คลาสสิก", "Regional": "อาหารพื้นถิ่น", "Farm to table": "ฟาร์มทูเทเบิล", "Fusion": "ฟิวชัน", "International": "นานาชาติ",
+  "European": "ยุโรป", "French": "ฝรั่งเศส", "British": "อังกฤษ", "Italian": "อิตาเลียน", "Spanish": "สเปน", "Portuguese": "โปรตุเกส",
+  "Mediterranean": "เมดิเตอร์เรเนียน", "Greek": "กรีก", "Turkish": "ตุรกี", "Alpine": "อาหารแถบเทือกเขาแอลป์", "Austrian": "ออสเตรีย",
+  "German": "เยอรมัน", "Nordic": "นอร์ดิก", "Middle Eastern": "ตะวันออกกลาง", "African": "แอฟริกัน", "American": "อเมริกัน",
+  "Mexican": "เม็กซิกัน", "Latin American": "ละตินอเมริกา", "Australian": "ออสเตรเลีย", "New Zealand": "นิวซีแลนด์",
+  "Pacific Islands": "หมู่เกาะแปซิฟิก", "Japanese": "ญี่ปุ่น", "Sushi": "ซูชิ", "Tempura": "เทมปุระ", "Yakitori": "ยากิโทริ",
+  "Korean": "เกาหลี", "Chinese": "จีน", "Cantonese": "จีนกวางตุ้ง", "Teochew": "จีนแต้จิ๋ว", "Sichuan": "จีนเสฉวน", "Hunan": "จีนหูหนาน",
+  "Shanghainese": "จีนเซี่ยงไฮ้", "Huaiyang": "จีนหวยหยาง", "Zhejiang": "จีนเจ้อเจียง", "Fujian": "จีนฮกเกี้ยน", "Beijing": "จีนปักกิ่ง",
+  "Shandong": "จีนซานตง", "Taiwanese": "ไต้หวัน", "Thai": "อาหารไทย", "Vietnamese": "เวียดนาม", "Malaysian": "มาเลเซีย",
+  "Peranakan": "เปอรานากัน", "Singaporean": "สิงคโปร์", "Filipino": "ฟิลิปปินส์", "Indian": "อินเดีย", "Asian": "เอเชีย",
+  "Seafood": "อาหารทะเล", "Steak and grill": "สเต๊กและย่าง", "Barbecue": "บาร์บีคิว", "Vegetarian": "มังสวิรัติ", "Vegan": "วีแกน",
+  "Street food": "สตรีทฟู้ด"
 };
 
-// Each language's cuisine names (Japanese and Cantonese use the restaurant's own field or Chinese).
-const CUISINES = { zh: CUISINE_ZH, yue: CUISINE_ZH, fr: CUISINE_FR, es: CUISINE_ES, it: CUISINE_IT, ko: CUISINE_KO, da: CUISINE_DA, sv: CUISINE_SV, is: CUISINE_IS, ca: CUISINE_CA, th: CUISINE_TH };
+// Each language's cuisine names.
+const CUISINES = { zh: CUISINE_ZH, yue: CUISINE_ZH, ja: CUISINE_JA, fr: CUISINE_FR, es: CUISINE_ES, it: CUISINE_IT, ko: CUISINE_KO, da: CUISINE_DA, sv: CUISINE_SV, is: CUISINE_IS, ca: CUISINE_CA, th: CUISINE_TH };
 // ---------- Language and saved settings ----------
 // Each language: its switch label, the page's lang attribute, the suffix of translated data fields
 // (nameZh, introYue, dinnerNoteFr…), the fields to try next, and the locale for dates and sorting.
@@ -2002,8 +2095,8 @@ const nameOf = (r) => pick(r, "name");
 // otherwise the Japanese or Chinese name under the English one.
 const altNameOf = (r) => ja() ? (r.nameJa ? r.name : "") : ko() ? (r.nameKo ? r.name : "") : zh() ? (nameOf(r) !== r.name ? r.name : r.nameJa || "") : (r.nameJa || r.nameKo || r.nameZh || r.nameZhs || "");
 const altLangOf = (r) => altNameOf(r) === r.name ? "en" : altNameOf(r) === r.nameJa ? "ja" : altNameOf(r) === r.nameKo ? "ko" : altNameOf(r) === r.nameZhs ? "zh-Hans" : "zh-Hant";
+// A restaurant's cuisine category in the page's language (our own categories, CUISINE_CATEGORIES in build.py).
 const cuisineOf = (r) => {
-  for (const sfx of LANGS[LANG].suffixes) if (r["cuisine" + sfx]) return r["cuisine" + sfx];
   const m = CUISINES[LANG];
   return (m && m[r.cuisine]) || r.cuisine;
 };

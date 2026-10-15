@@ -4,7 +4,7 @@
   "area": "Waldkirchen",
   "address": "Marktplatz 24, 94065, Waldkirchen",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 389,
   "dinnerType": "menu",
@@ -30,6 +30,5 @@
   "chef": "Michael Simon Reis",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
-  "cuisineDe": "Moderne Küche",
   "lunchNoteDe": "Mittagsmenü"
 }

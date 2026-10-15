@@ -4,7 +4,7 @@
   "area": "Norderney",
   "address": "Damenpfad 36a, 26548, Norderney",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 272,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "chef": "Markus Kebschull",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
-  "cuisineDe": "Moderne Küche",
   "lunchNoteDe": "Mittagsmenü"
 }

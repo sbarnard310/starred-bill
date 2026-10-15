@@ -4,7 +4,7 @@
   "area": "Opglabbeek",
   "address": "Weg naar Opoeteren 117, 3660, Opglabbeek",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 194,
   "dinnerType": "menu",
@@ -24,9 +24,7 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
-  "cuisineFr": "Cuisine française créative",
   "chef": "Sander Spreeuwers",
   "chefSource": "press",
   "lunchNoteNl": "Lunchmenu",

@@ -4,7 +4,7 @@
   "area": "Bischofswiesen",
   "address": "Berchtesgadener Straße 111, 83483, Bischofswiesen",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 42,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "dinnerNoteDe": "Menü, 6 Gänge (8 Gänge 185 €, Weinbegleitung 96 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

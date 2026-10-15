@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "Tangxiang Cultural Space, 538 Xikang Road, Jingan, Shanghai",
   "stars": 1,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "dinnerType": "spend",
   "dinner": 2102,
   "dinnerNote": "Typical spend",
@@ -17,7 +17,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZhs": "仅供应晚餐",
-  "cuisineZhs": "创新菜",
   "chef": "DeAille Tam and Simon Wong",
   "chefSource": "press"
 }

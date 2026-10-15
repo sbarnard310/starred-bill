@@ -3,7 +3,7 @@
   "city": "shenzhen",
   "address": "77F, Mandarin Oriental, Block A, UpperHills, 5001 Huanggang Road, Futian, Shenzhen",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 7,
   "dinnerType": "spend",
@@ -21,6 +21,5 @@
   "dinnerNoteZhs": "人均消费",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteZhs": "仅供应晚餐",
-  "cuisineZhs": "时尚法国菜"
+  "lunchNoteZhs": "仅供应晚餐"
 }

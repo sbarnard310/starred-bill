@@ -3,7 +3,7 @@
   "city": "frankfurt-on-the-main",
   "address": "Reuterweg 57, 60323, Frankfurt on the Main",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "New straight in with two stars",
   "changeDate": "2026-06",
@@ -27,6 +27,5 @@
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "lunchNote": "Open for lunch · Fridays",
-  "lunchNoteDe": "Mittags geöffnet · Freitag",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Mittags geöffnet · Freitag"
 }

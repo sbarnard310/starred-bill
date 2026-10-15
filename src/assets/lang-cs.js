@@ -4,8 +4,19 @@
   lang: { label: "CS", html: "cs", suffixes: ["Cs"], locale: "cs-CZ", maps: "cs" },
   months: ["led.", "úno.", "bře.", "dub.", "kvě.", "čvn.", "čvc.", "srp.", "zář.", "říj.", "lis.", "pro."],
   cuisines: {
-    "Asian Influences": "Asijské vlivy", "Classic Cuisine": "Klasická kuchyně", "Creative": "Kreativní", "Italian": "Italská", "Modern Cuisine": "Moderní kuchyně",
-    "Seasonal Cuisine": "Sezónní kuchyně", "Contemporary": "Současná", "Czech": "Česká", "Innovative": "Inovativní", "Vegetarian": "Vegetariánská"
+    "Modern European": "Moderní evropská", "Modern American": "Moderní americká", "Modern": "Moderní", "Creative": "Kreativní",
+    "Classic": "Klasická", "Regional": "Regionální", "Farm to table": "Z farmy na stůl", "Fusion": "Fusion", "International": "Mezinárodní",
+    "European": "Evropská", "French": "Francouzská", "British": "Britská", "Italian": "Italská", "Spanish": "Španělská",
+    "Portuguese": "Portugalská", "Mediterranean": "Středomořská", "Greek": "Řecká", "Turkish": "Turecká", "Alpine": "Alpská",
+    "Austrian": "Rakouská", "German": "Německá", "Nordic": "Severská", "Middle Eastern": "Blízkovýchodní", "African": "Africká",
+    "American": "Americká", "Mexican": "Mexická", "Latin American": "Latinskoamerická", "Australian": "Australská",
+    "New Zealand": "Novozélandská", "Pacific Islands": "Polynéská", "Japanese": "Japonská", "Sushi": "Sushi", "Tempura": "Tempura",
+    "Yakitori": "Yakitori", "Korean": "Korejská", "Chinese": "Čínská", "Cantonese": "Kantonská", "Teochew": "Teochew", "Sichuan": "Sečuánská",
+    "Hunan": "Chunanská", "Shanghainese": "Šanghajská", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian",
+    "Beijing": "Pekingská", "Shandong": "Shandong", "Taiwanese": "Tchajwanská", "Thai": "Thajská", "Vietnamese": "Vietnamská",
+    "Malaysian": "Malajsijská", "Peranakan": "Peranakan", "Singaporean": "Singapurská", "Filipino": "Filipínská", "Indian": "Indická",
+    "Asian": "Asijská", "Seafood": "Ryby a mořské plody", "Steak and grill": "Steaky a gril", "Barbecue": "Barbecue",
+    "Vegetarian": "Vegetariánská", "Vegan": "Veganská", "Street food": "Pouliční jídlo"
   },
   words: {
     acctSentCode: "Poslali jsme šestimístný kód na {email}. Zadejte ho níže a přihlaste se tady. (Odkaz v e-mailu funguje také, ale v aplikaci na ploše otevře prohlížeč.)", acctCodeLabel: "Kód z e-mailu", acctVerify: "Přihlásit se kódem", acctVerifying: "Ověřujeme…", acctCodeWrong: "Tento kód nefungoval. Zkontrolujte ho, nebo si vyžádejte nový.", acctBadCode: "Zadejte šestimístný kód z e-mailu.",

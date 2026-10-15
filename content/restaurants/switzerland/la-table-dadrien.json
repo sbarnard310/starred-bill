@@ -4,7 +4,7 @@
   "area": "Verbier",
   "address": "Chemin des Creux, 1936, Verbier",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 36,
   "dinnerType": "menu",
@@ -23,16 +23,13 @@
     "gluten-free"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 155)",
-  "cuisineDe": "Modern",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 155)",
-  "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 155)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Contemporanea",
   "chef": "Antonio Piattella",
   "chefSource": "press"
 }

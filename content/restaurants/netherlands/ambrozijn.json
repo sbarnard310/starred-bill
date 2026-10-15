@@ -4,7 +4,7 @@
   "area": "Valkenburg",
   "address": "Plenkertstraat 45, 6301 GL, Valkenburg",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-10",
@@ -35,6 +35,5 @@
   "chef": "Sven Nijenhuis",
   "chefSource": "michelin",
   "dinnerNoteNl": "Chef's menu, 6 gangen (5 gangen € 109, woensdag en donderdag)",
-  "lunchNoteNl": "Chef's menu, 4 gangen; vrijdag en zaterdag",
-  "cuisineNl": "Moderne keuken"
+  "lunchNoteNl": "Chef's menu, 4 gangen; vrijdag en zaterdag"
 }

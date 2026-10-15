@@ -3,7 +3,7 @@
   "city": "munich",
   "address": "Hackenstraße 4, 80331, Munich",
   "stars": 2,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.8,
   "reviews": 185,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chef": "Christoph Kunz",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Klassische Küche",
   "lunchNoteDe": "Mittagsmenü"
 }

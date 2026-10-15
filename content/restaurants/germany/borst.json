@@ -4,7 +4,7 @@
   "area": "Maßweiler",
   "address": "Luitpoldstraße 4, 66506, Maßweiler",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 157,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Do–So",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurant-borst.de/küche",
-  "cuisineDe": "Französisch-klassisch",
   "chef": "Maximilian Borst",
   "chefSource": "press"
 }

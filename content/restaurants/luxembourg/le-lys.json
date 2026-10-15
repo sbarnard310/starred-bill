@@ -4,7 +4,7 @@
   "area": "Luxembourg City",
   "address": "1, Avenue Marie-Thérèse, 2132, Luxembourg City",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-05",
@@ -31,12 +31,10 @@
   "chef": "Kim De Dood",
   "chefSource": "michelin",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 120 €)",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 120 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "areaDe": "Luxemburg"
 }

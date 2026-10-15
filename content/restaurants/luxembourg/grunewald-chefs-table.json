@@ -4,7 +4,7 @@
   "area": "Luxembourg City",
   "address": "2 Rue des Hauts-Fourneaux, 1719, Luxembourg City",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 131,
   "dinnerType": "menu",
@@ -25,12 +25,10 @@
   "chef": "Clovis Degrave",
   "chefSource": "michelin",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 140 €)",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "areaDe": "Luxemburg"
 }

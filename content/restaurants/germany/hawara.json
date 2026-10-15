@@ -3,7 +3,7 @@
   "city": "freiburg-im-breisgau",
   "address": "Dreikönigstraße 8, 79102, Freiburg im Breisgau",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 514,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 65 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

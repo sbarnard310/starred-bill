@@ -3,7 +3,7 @@
   "city": "porto",
   "address": "Largo de São Domingos 16, 4050-545, Porto",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -29,6 +29,5 @@
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde 105 €)",
   "lunchNote": "Open for lunch · Tue–Sat",
-  "lunchNotePt": "Aberto ao almoço · ter.–sáb.",
-  "cuisinePt": "Atual"
+  "lunchNotePt": "Aberto ao almoço · ter.–sáb."
 }

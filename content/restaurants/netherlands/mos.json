@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "IJdok 185, 1013 MM, Amsterdam",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 924,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 51)",
   "lunchNote": "Open for lunch · Thu–Sat",
-  "lunchNoteNl": "Open voor lunch · do–za",
-  "cuisineNl": "Creatief Frans"
+  "lunchNoteNl": "Open voor lunch · do–za"
 }

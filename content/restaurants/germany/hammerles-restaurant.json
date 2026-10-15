@@ -4,7 +4,7 @@
   "area": "Blieskastel",
   "address": "Bliestalstraße 110a, 66440, Blieskastel",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 747,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chef": "Cliff Hämmerle",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 49 €)",
-  "lunchNoteDe": "Mittagsmenü",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Mittagsmenü"
 }

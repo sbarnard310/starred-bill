@@ -21,9 +21,7 @@
   "chef": "Andreas Caminada and Marcel Skibba",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 266)",
-  "cuisineDe": "Kreativ",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 266)",
-  "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 266)",
   "lunch": 318,
   "lunchType": "menu",
@@ -34,7 +32,6 @@
   "lunchWine": 186,
   "lunchSourceType": "site",
   "lunchSource": "https://www.schauenstein.ch/restaurant",
-  "cuisineIt": "Creativa",
   "menus": [
     {
       "name": "five-course menu",

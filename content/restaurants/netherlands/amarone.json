@@ -3,7 +3,7 @@
   "city": "rotterdam",
   "address": "Meent 72a, 3011 JN, Rotterdam",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 559,
   "dinnerType": "menu",
@@ -26,7 +26,6 @@
     "gluten-free"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 85)",
-  "cuisineNl": "Modern Frans",
   "chef": "Jan van Dobben",
   "chefSource": "press",
   "lunchNoteNl": "Lunchmenu",

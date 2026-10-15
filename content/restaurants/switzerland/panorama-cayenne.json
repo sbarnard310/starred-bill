@@ -4,7 +4,7 @@
   "area": "Steffisburg",
   "address": "Hartlisbergstrasse 39, 3612, Steffisburg",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 561,
   "dinnerType": "menu",
@@ -22,9 +22,7 @@
     "gluten-free"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 140)",
-  "cuisineDe": "Französisch-modern",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 140)",
-  "cuisineFr": "Cuisine française moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 140)",
   "lunch": 188,
   "lunchType": "menu",
@@ -34,7 +32,6 @@
   "lunchNoteIt": "Stesso menu a pranzo · domenica",
   "lunchSourceType": "press",
   "lunchSource": "https://www.schlemmer-atlas.de/restaurants/schweiz/steffisburg/restaurant-panorama-hartlisberg/",
-  "cuisineIt": "Francese moderna",
   "chef": "Rolf Fuchs",
   "chefSource": "press"
 }

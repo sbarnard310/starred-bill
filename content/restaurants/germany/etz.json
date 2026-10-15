@@ -3,7 +3,7 @@
   "city": "nuremberg",
   "address": "Wiesentalstraße 40, 90419, Nuremberg",
   "stars": 2,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "rating": 4.9,
   "reviews": 209,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Saisonal"
+  "lunchNoteDe": "Nur abends"
 }

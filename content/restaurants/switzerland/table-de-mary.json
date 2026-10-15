@@ -4,7 +4,7 @@
   "area": "Cheseaux-Noréaz",
   "address": "Route du Gymnase 2, 1400, Cheseaux-Noréaz",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 543,
   "dinnerType": "menu",
@@ -21,15 +21,12 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 115)",
-  "cuisineDe": "Französisch-klassisch",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 115)",
-  "cuisineFr": "Cuisine française classique",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 115)",
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteDe": "Mittags geöffnet · Mi–So",
   "lunchNoteFr": "Ouvert le midi · mer.–dim.",
   "lunchNoteIt": "Aperto a pranzo · mer–dom",
-  "cuisineIt": "Francese classica",
   "chef": "Loïc Nozahic",
   "chefSource": "michelin"
 }

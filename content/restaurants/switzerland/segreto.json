@@ -4,7 +4,7 @@
   "area": "Wittenbach",
   "address": "Abacus Platz 1, 9301, Wittenbach",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 102,
   "dinnerType": "menu",
@@ -20,14 +20,11 @@
   "chef": "Martin Benninger",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 79)",
-  "cuisineDe": "Modern",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 79)",
-  "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 79)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Contemporanea"
+  "lunchNoteIt": "Solo a cena"
 }

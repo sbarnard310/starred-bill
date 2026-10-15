@@ -4,7 +4,7 @@
   "area": "Darscheid",
   "address": "Karl-Kaufmann-Straße 2, 54552, Darscheid",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.7,
   "reviews": 82,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 75 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Nur abends"
 }

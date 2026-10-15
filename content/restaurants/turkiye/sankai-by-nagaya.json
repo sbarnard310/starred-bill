@@ -3,7 +3,7 @@
   "city": "istanbul",
   "address": "Bebek, Cevdet Paşa Caddesi No:34, Beşiktaş, 34342, Istanbul",
   "stars": 1,
-  "cuisine": "Japanese Contemporary",
+  "cuisine": "Japanese",
   "rating": 4.3,
   "reviews": 89,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "dinnerNoteTr": "Tadım menüsü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteTr": "Yalnızca akşam yemeği",
-  "cuisineTr": "Modern Japon Mutfağı"
+  "lunchNoteTr": "Yalnızca akşam yemeği"
 }

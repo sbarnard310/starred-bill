@@ -4,9 +4,18 @@
   lang: { label: "MS", html: "ms", suffixes: ["Ms"], locale: "ms-MY", maps: "ms" },
   months: ["Jan", "Feb", "Mac", "Apr", "Mei", "Jun", "Jul", "Ogo", "Sep", "Okt", "Nov", "Dis"],
   cuisines: {
-    "European Contemporary": "Eropah kontemporari", "French Contemporary": "Perancis kontemporari", "Innovative": "Inovatif", "Malaysian": "Masakan Malaysia",
-    "Peranakan": "Peranakan", "Thai contemporary": "Thai kontemporari", "Contemporary": "Kontemporari", "Creative": "Kreatif", "Modern Cuisine": "Masakan moden",
-    "Chinese": "Cina", "Cantonese": "Kantonis", "Japanese": "Jepun", "Indian": "India"
+    "Modern European": "Eropah moden", "Modern American": "Amerika moden", "Modern": "Masakan moden", "Creative": "Kreatif", "Classic": "Klasik",
+    "Regional": "Masakan daerah", "Farm to table": "Ladang ke meja", "Fusion": "Fusion", "International": "Antarabangsa", "European": "Eropah",
+    "French": "Perancis", "British": "British", "Italian": "Itali", "Spanish": "Sepanyol", "Portuguese": "Portugis",
+    "Mediterranean": "Mediterranean", "Greek": "Yunani", "Turkish": "Turki", "Alpine": "Alp", "Austrian": "Austria", "German": "Jerman",
+    "Nordic": "Nordik", "Middle Eastern": "Timur Tengah", "African": "Afrika", "American": "Amerika", "Mexican": "Mexico",
+    "Latin American": "Amerika Latin", "Australian": "Australia", "New Zealand": "New Zealand", "Pacific Islands": "Kepulauan Pasifik",
+    "Japanese": "Jepun", "Sushi": "Sushi", "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Korea", "Chinese": "Cina",
+    "Cantonese": "Kantonis", "Teochew": "Teochew", "Sichuan": "Sichuan", "Hunan": "Hunan", "Shanghainese": "Shanghai", "Huaiyang": "Huaiyang",
+    "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Beijing", "Shandong": "Shandong", "Taiwanese": "Taiwan", "Thai": "Thai",
+    "Vietnamese": "Vietnam", "Malaysian": "Masakan Malaysia", "Peranakan": "Peranakan", "Singaporean": "Singapura", "Filipino": "Filipina",
+    "Indian": "India", "Asian": "Asia", "Seafood": "Makanan laut", "Steak and grill": "Stik dan panggang", "Barbecue": "Barbeku",
+    "Vegetarian": "Vegetarian", "Vegan": "Vegan", "Street food": "Makanan jalanan"
   },
   words: {
     acctSentCode: "Kami telah menghantar kod 6 digit ke {email}. Taipkannya di bawah untuk log masuk di sini. (Pautan dalam e-mel juga berfungsi, tetapi dalam aplikasi skrin utama ia membuka pelayar.)", acctCodeLabel: "Kod daripada e-mel", acctVerify: "Log masuk dengan kod", acctVerifying: "Menyemak…", acctCodeWrong: "Kod itu tidak berfungsi. Semak semula atau minta kod baharu.", acctBadCode: "Taipkan kod 6 digit daripada e-mel.",

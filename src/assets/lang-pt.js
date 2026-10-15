@@ -4,11 +4,19 @@
   lang: { label: "PT", html: "pt", suffixes: ["Pt"], locale: "pt-PT", maps: "pt" },
   months: ["jan.", "fev.", "mar.", "abr.", "mai.", "jun.", "jul.", "ago.", "set.", "out.", "nov.", "dez."],
   cuisines: {
-    "Asian Influences": "Influências asiáticas", "Contemporary": "Contemporânea", "Creative": "Criativa", "Creative French": "Francesa criativa", "French": "Francesa",
-    "French Contemporary": "Francesa contemporânea", "Italian": "Italiana", "Italian Contemporary": "Italiana contemporânea", "Japanese": "Japonesa",
-    "Japanese Contemporary": "Japonesa contemporânea", "Mediterranean Cuisine": "Mediterrânica", "Modern Cuisine": "Moderna", "Portuguese": "Portuguesa",
-    "Vegetarian": "Vegetariana", "Brazilian": "Brasileira", "Innovative": "Inovadora", "Traditional Cuisine": "Tradicional", "Regional Cuisine": "Regional",
-    "Fish and Seafood": "Peixe e marisco", "Seafood": "Marisco", "Classic Cuisine": "Clássica", "Fusion": "Fusão", "Vegan": "Vegana"
+    "Modern European": "Europeia moderna", "Modern American": "Americana moderna", "Modern": "Moderna", "Creative": "Criativa",
+    "Classic": "Clássica", "Regional": "Regional", "Farm to table": "Do campo à mesa", "Fusion": "Fusão", "International": "Internacional",
+    "European": "Europeia", "French": "Francesa", "British": "Britânica", "Italian": "Italiana", "Spanish": "Espanhola",
+    "Portuguese": "Portuguesa", "Mediterranean": "Mediterrânica", "Greek": "Grega", "Turkish": "Turca", "Alpine": "Alpina",
+    "Austrian": "Austríaca", "German": "Alemã", "Nordic": "Nórdica", "Middle Eastern": "Médio-oriental", "African": "Africana",
+    "American": "Americana", "Mexican": "Mexicana", "Latin American": "Latino-americana", "Australian": "Australiana",
+    "New Zealand": "Neozelandesa", "Pacific Islands": "Ilhas do Pacífico", "Japanese": "Japonesa", "Sushi": "Sushi", "Tempura": "Tempura",
+    "Yakitori": "Yakitori", "Korean": "Coreana", "Chinese": "Chinesa", "Cantonese": "Cantonesa", "Teochew": "Teochew", "Sichuan": "Sichuanesa",
+    "Hunan": "Hunan", "Shanghainese": "Xangai", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Pequim",
+    "Shandong": "Shandong", "Taiwanese": "Taiwanesa", "Thai": "Tailandesa", "Vietnamese": "Vietnamita", "Malaysian": "Malaia",
+    "Peranakan": "Peranakan", "Singaporean": "Singapurense", "Filipino": "Filipina", "Indian": "Indiana", "Asian": "Asiática",
+    "Seafood": "Peixe e marisco", "Steak and grill": "Grelhados", "Barbecue": "Barbecue", "Vegetarian": "Vegetariana", "Vegan": "Vegana",
+    "Street food": "Comida de rua"
   },
   words: {
     acctSentCode: "Enviámos um código de 6 dígitos para {email}. Escreva-o abaixo para entrar aqui. (O link do e-mail também funciona, mas na app do ecrã inicial abre o navegador.)", acctCodeLabel: "Código do e-mail", acctVerify: "Entrar com o código", acctVerifying: "A verificar…", acctCodeWrong: "Esse código não funcionou. Verifique-o ou peça um novo.", acctBadCode: "Escreva o código de 6 dígitos do e-mail.",

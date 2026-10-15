@@ -26,14 +26,11 @@
   "chef": "Stefan Lünse",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 150)",
-  "cuisineDe": "Kreativ",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 150)",
-  "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 150)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Creativa"
+  "lunchNoteIt": "Solo a cena"
 }

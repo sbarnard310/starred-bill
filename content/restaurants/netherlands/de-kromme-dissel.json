@@ -4,7 +4,7 @@
   "area": "Heelsum",
   "address": "Klein Zwitserlandlaan 5, 6866 DS, Heelsum",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 431,
   "dinnerType": "menu",
@@ -34,7 +34,6 @@
   "lunchWine": 52,
   "lunchSourceType": "site",
   "lunchSource": "https://www.krommedissel.nl/menu/",
-  "cuisineNl": "Modern Frans",
   "menus": [
     {
       "name": "Kromme Dissel menu",

@@ -24,7 +24,6 @@
     "halal"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
-  "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 105 €)",
   "lunch": 160,
   "lunchType": "menu",
@@ -34,7 +33,6 @@
   "lunchWine": 65,
   "lunchSourceType": "site",
   "lunchSource": "https://couvertcouvert.be/menu",
-  "cuisineFr": "Cuisine créative",
   "chef": "Laurent and Vincent Folmer",
   "chefSource": "press"
 }

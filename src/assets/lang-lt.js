@@ -3,7 +3,22 @@
 (window.SB_LANGS = window.SB_LANGS || {}).lt = {
   lang: { label: "LT", html: "lt", suffixes: ["Lt"], locale: "lt-LT", maps: "lt" },
   months: ["saus.", "vas.", "kov.", "bal.", "geg.", "birž.", "liep.", "rugp.", "rugs.", "spal.", "lapkr.", "gruod."],
-  cuisines: { "Modern Cuisine": "Moderni virtuvė", "Creative": "Kūrybinė", "Contemporary": "Šiuolaikinė", "Lithuanian": "Lietuviška" },
+  cuisines: {
+    "Modern European": "Moderni europietiška", "Modern American": "Moderni amerikietiška", "Modern": "Moderni", "Creative": "Kūrybinė",
+    "Classic": "Klasikinė", "Regional": "Regioninė", "Farm to table": "Iš ūkio į stalą", "Fusion": "Fusion", "International": "Tarptautinė",
+    "European": "Europietiška", "French": "Prancūziška", "British": "Britiška", "Italian": "Itališka", "Spanish": "Ispaniška",
+    "Portuguese": "Portugališka", "Mediterranean": "Viduržemio jūros", "Greek": "Graikiška", "Turkish": "Turkiška", "Alpine": "Alpių",
+    "Austrian": "Austriška", "German": "Vokiška", "Nordic": "Šiaurietiška", "Middle Eastern": "Artimųjų Rytų", "African": "Afrikietiška",
+    "American": "Amerikietiška", "Mexican": "Meksikietiška", "Latin American": "Lotynų Amerikos", "Australian": "Australiška",
+    "New Zealand": "Naujosios Zelandijos", "Pacific Islands": "Polinezietiška", "Japanese": "Japoniška", "Sushi": "Sušiai", "Tempura": "Tempura",
+    "Yakitori": "Jakitori", "Korean": "Korėjietiška", "Chinese": "Kiniška", "Cantonese": "Kantoniška", "Teochew": "Teochew",
+    "Sichuan": "Sičuanio", "Hunan": "Hunanio", "Shanghainese": "Šanchajaus", "Huaiyang": "Huaiyang", "Zhejiang": "Džedziango",
+    "Fujian": "Fudziano", "Beijing": "Pekino", "Shandong": "Šandongo", "Taiwanese": "Taivanietiška", "Thai": "Tailandietiška",
+    "Vietnamese": "Vietnamietiška", "Malaysian": "Malaizietiška", "Peranakan": "Peranakan", "Singaporean": "Singapūrietiška",
+    "Filipino": "Filipinietiška", "Indian": "Indiška", "Asian": "Azijietiška", "Seafood": "Žuvis ir jūros gėrybės",
+    "Steak and grill": "Kepsniai ir grilis", "Barbecue": "Barbekiu", "Vegetarian": "Vegetariška", "Vegan": "Veganiška",
+    "Street food": "Gatvės maistas"
+  },
   words: {
     acctSentCode: "Išsiuntėme 6 skaitmenų kodą adresu {email}. Įveskite jį žemiau, kad prisijungtumėte čia. (Nuoroda laiške irgi veikia, bet pradžios ekrano programėlėje ji atidaro naršyklę.)", acctCodeLabel: "Kodas iš laiško", acctVerify: "Prisijungti su kodu", acctVerifying: "Tikrinama…", acctCodeWrong: "Šis kodas netiko. Patikrinkite jį arba paprašykite naujo.", acctBadCode: "Įveskite 6 skaitmenų kodą iš laiško.",
     notrackOn: "Ši naršyklė nebeįtraukiama į lankomumo statistiką.", notrackOff: "Ši naršyklė vėl įtraukiama į lankomumo statistiką.",

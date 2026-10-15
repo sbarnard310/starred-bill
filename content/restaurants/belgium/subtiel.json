@@ -4,7 +4,7 @@
   "area": "De Panne",
   "address": "Westhoeklaan 31, 8660, De Panne",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-05",
@@ -29,9 +29,7 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Klassieke keuken",
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
-  "cuisineFr": "Cuisine classique",
   "areaFr": "La Panne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner",

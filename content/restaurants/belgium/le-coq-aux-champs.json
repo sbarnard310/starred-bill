@@ -4,7 +4,7 @@
   "area": "Soheit-Tinlot",
   "address": "rue du Montys 71, 4557, Soheit-Tinlot",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 918,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "chef": "Christophe Pauly",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
-  "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 50 €)",
   "lunch": 130,
   "lunchType": "menu",
@@ -34,6 +33,5 @@
   "lunchNoteFr": "Même menu le midi · mar., jeu.–ven.",
   "lunchWine": 36,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.lecoqauxchamps.be/menu",
-  "cuisineFr": "Cuisine française créative"
+  "lunchSource": "https://www.lecoqauxchamps.be/menu"
 }

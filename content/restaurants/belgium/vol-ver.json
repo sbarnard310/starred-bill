@@ -4,7 +4,7 @@
   "area": "Marke",
   "address": "Watervalstraat 23, 8510, Marke",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 374,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "chef": "Sébastien Verveken",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 54)",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 54 €)",
   "lunch": 135,
   "lunchType": "menu",
@@ -33,6 +32,5 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · do–vr, zo–ma",
   "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.–lun.",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.vol-ver.be/nl/menu/vol-ver-menu.html",
-  "cuisineFr": "Cuisine moderne"
+  "lunchSource": "https://www.vol-ver.be/nl/menu/vol-ver-menu.html"
 }

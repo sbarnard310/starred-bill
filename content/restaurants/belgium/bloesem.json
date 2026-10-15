@@ -4,7 +4,7 @@
   "area": "Borgerhout",
   "address": "De Leescorfstraat 8, 2140, Borgerhout",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-05",
@@ -24,7 +24,6 @@
   "placeId": "ChIJqdb6kt73w0cRBNxxsGgPBo4",
   "michelinId": "1214447",
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation",
   "lunch": 120,
   "lunchType": "menu",
@@ -34,7 +33,6 @@
   "lunchWine": 58,
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantbloesem.com/menu",
-  "cuisineFr": "Cuisine moderne",
   "chef": "Brend Geudens and Nebo Schamp",
   "chefSource": "press"
 }

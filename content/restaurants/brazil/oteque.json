@@ -3,7 +3,7 @@
   "city": "rio-de-janeiro",
   "address": "Rua Conde de Irajá 581, 22271-020, Rio de Janeiro",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern American",
   "rating": 4.4,
   "reviews": 109,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "dinnerNotePt": "Menu de degustação",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Moderna"
+  "lunchNotePt": "Só jantar"
 }

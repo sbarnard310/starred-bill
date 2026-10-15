@@ -4,7 +4,7 @@
   "area": "Bergambacht",
   "address": "Hoofdstraat 75, 2861 AL, Bergambacht",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 114,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · zondag",
   "lunchSourceType": "site",
   "lunchSource": "https://www.pietersrestaurant.nl/",
-  "cuisineNl": "Modern Frans",
   "chef": "Pieter de Ronde",
   "chefSource": "press"
 }

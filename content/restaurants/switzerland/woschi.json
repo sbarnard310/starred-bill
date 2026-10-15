@@ -3,7 +3,7 @@
   "city": "zurich",
   "address": "Seestrasse 457, 8038, Zurich",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 657,
   "dinnerType": "menu",
@@ -23,13 +23,10 @@
   "chef": "David Klocksin",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 138)",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 138)",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 138)",
   "lunchNote": "Open for lunch · Mondays",
   "lunchNoteDe": "Mittags geöffnet · Montag",
   "lunchNoteFr": "Ouvert le midi · lundi",
-  "lunchNoteIt": "Aperto a pranzo · lunedì",
-  "cuisineIt": "Moderna"
+  "lunchNoteIt": "Aperto a pranzo · lunedì"
 }

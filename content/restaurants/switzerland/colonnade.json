@@ -3,7 +3,7 @@
   "city": "lucerne",
   "address": "Haldenstrasse 10, 6002, Lucerne",
   "stars": 2,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 51,
   "dinnerType": "menu",
@@ -24,14 +24,11 @@
   "chef": "Gilad Peled",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 195)",
-  "cuisineDe": "Französisch-modern",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 195)",
-  "cuisineFr": "Cuisine française moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 195)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Francese moderna"
+  "lunchNoteIt": "Solo a cena"
 }

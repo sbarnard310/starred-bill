@@ -4,7 +4,7 @@
   "area": "Sankt Anton am Arlberg",
   "address": "Sankt Jakober Dorfstraße 35, 6580, Sankt Anton am Arlberg",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 5,
   "reviews": 24,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 88 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

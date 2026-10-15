@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "101-102, Building No. 1, Garden Office, No.161, Lane 465, Zhenning Road, Changning, Shanghai",
   "stars": 3,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "rating": 4.3,
   "reviews": 30,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZhs": "仅供应晚餐",
-  "cuisineZhs": "创新菜",
   "nameZhs": "泰安门"
 }

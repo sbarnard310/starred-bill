@@ -4,7 +4,7 @@
   "area": "Birkweiler",
   "address": "Hauptstraße 21, 76831, Birkweiler",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 5,
   "reviews": 10,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 165 €)",
   "lunchNote": "Open for lunch · Saturdays",
   "lunchNoteDe": "Mittags geöffnet · Samstag",
-  "cuisineDe": "Moderne Küche",
   "chef": "Maximilian Schocke",
   "chefSource": "press"
 }

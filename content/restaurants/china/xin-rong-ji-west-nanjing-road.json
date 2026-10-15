@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "2F, Henderson 688 Plaza, 688 West Nanjing Road, Jingan, Shanghai",
   "stars": 1,
-  "cuisine": "Taizhou",
+  "cuisine": "Zhejiang",
   "rating": 4,
   "reviews": 27,
   "dinnerType": "spend",
@@ -23,6 +23,5 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "台州菜",
   "nameZhs": "新荣记（南京西路）"
 }

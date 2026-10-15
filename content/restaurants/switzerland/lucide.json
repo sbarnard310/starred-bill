@@ -3,7 +3,7 @@
   "city": "lucerne",
   "address": "Europaplatz 1, 6005, Lucerne",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 289,
   "dinnerType": "menu",
@@ -26,14 +26,11 @@
   "chef": "Maximilian Huber",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 120)",
-  "cuisineDe": "Modern",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 120)",
-  "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 120)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Contemporanea"
+  "lunchNoteIt": "Solo a cena"
 }

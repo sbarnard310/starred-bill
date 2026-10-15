@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "56F, East Tower, Raffles City The Bund, 1089 Dongdaming Road, Hongkou, Shanghai",
   "stars": 1,
-  "cuisine": "Ningbo",
+  "cuisine": "Zhejiang",
   "dinnerType": "spend",
   "dinner": 997,
   "dinnerNote": "Typical spend",
@@ -16,6 +16,5 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "宁波菜",
   "nameZhs": "甬府（虹口）"
 }

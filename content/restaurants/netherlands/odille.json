@@ -4,7 +4,7 @@
   "area": "Sint-Oedenrode",
   "address": "Markt 14, 5492 AB, Sint-Oedenrode",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 142,
   "dinnerType": "menu",
@@ -31,7 +31,6 @@
   "lunchWine": 55,
   "lunchSourceType": "site",
   "lunchSource": "https://odille.nl/",
-  "cuisineNl": "Moderne keuken",
   "dinnerNote": "Surprise menu, 4 courses",
   "dinnerNoteNl": "Verrassingsmenu, 4 gangen"
 }

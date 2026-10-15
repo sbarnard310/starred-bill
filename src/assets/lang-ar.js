@@ -6,15 +6,17 @@
   lang: { label: "العربية", html: "ar", dir: "rtl", suffixes: ["Ar"], locale: "ar-u-nu-latn", maps: "ar" },
   months: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
   cuisines: {
-    "Arabic": "عربي", "Asian": "آسيوي", "Asian Contemporary": "آسيوي معاصر", "Asian Influences": "تأثيرات آسيوية", "Chinese": "صيني", "Classic Cuisine": "مطبخ كلاسيكي",
-    "Classic French": "فرنسي كلاسيكي", "Contemporary": "معاصر", "Creative": "مبتكر", "Creative French": "فرنسي مبتكر", "European Contemporary": "أوروبي معاصر",
-    "Farm to table": "من المزرعة إلى المائدة", "Fish and Seafood": "أسماك ومأكولات بحرية", "French": "فرنسي", "French Contemporary": "فرنسي معاصر", "Fusion": "مطبخ مدمج",
-    "Indian": "هندي", "Indian Vegetarian": "هندي نباتي", "Innovative": "مبتكر", "International": "عالمي", "Italian": "إيطالي", "Italian Contemporary": "إيطالي معاصر",
-    "Japanese": "ياباني", "Japanese Contemporary": "ياباني معاصر", "Korean Contemporary": "كوري معاصر", "Lebanese": "لبناني", "Mediterranean Cuisine": "مطبخ متوسطي",
-    "Middle Eastern": "شرق أوسطي", "Modern Cuisine": "مطبخ حديث", "Modern French": "فرنسي حديث", "Organic": "عضوي", "Persian": "فارسي", "Peruvian": "بيروفي",
-    "Portuguese": "برتغالي", "Regional Cuisine": "مطبخ إقليمي", "Seafood": "مأكولات بحرية", "Seasonal Cuisine": "مطبخ موسمي", "Sharing": "أطباق للمشاركة",
-    "Spanish": "إسباني", "Steakhouse": "مشويات ولحوم", "Sushi": "سوشي", "Thai": "تايلاندي", "Thai contemporary": "تايلاندي معاصر", "Traditional British": "بريطاني تقليدي",
-    "Traditional Cuisine": "مطبخ تقليدي", "Turkish": "تركي", "Vegan": "نباتي صرف", "Vegetarian": "نباتي"
+    "Modern European": "أوروبي حديث", "Modern American": "أمريكي حديث", "Modern": "مطبخ حديث", "Creative": "مبتكر", "Classic": "مطبخ كلاسيكي",
+    "Regional": "مطبخ إقليمي", "Farm to table": "من المزرعة إلى المائدة", "Fusion": "مطبخ مدمج", "International": "عالمي", "European": "أوروبي",
+    "French": "فرنسي", "British": "بريطاني", "Italian": "إيطالي", "Spanish": "إسباني", "Portuguese": "برتغالي", "Mediterranean": "مطبخ متوسطي",
+    "Greek": "يوناني", "Turkish": "تركي", "Alpine": "ألبي", "Austrian": "نمساوي", "German": "ألماني", "Nordic": "إسكندنافي",
+    "Middle Eastern": "شرق أوسطي", "African": "أفريقي", "American": "أمريكي", "Mexican": "مكسيكي", "Latin American": "أمريكي لاتيني",
+    "Australian": "أسترالي", "New Zealand": "نيوزيلندي", "Pacific Islands": "جزر المحيط الهادئ", "Japanese": "ياباني", "Sushi": "سوشي",
+    "Tempura": "تمبورا", "Yakitori": "ياكيتوري", "Korean": "كوري", "Chinese": "صيني", "Cantonese": "كانتوني", "Teochew": "تيوتشو",
+    "Sichuan": "سيتشوان", "Hunan": "هونان", "Shanghainese": "شنغهاي", "Huaiyang": "هوايانغ", "Zhejiang": "تشجيانغ", "Fujian": "فوجيان",
+    "Beijing": "بكين", "Shandong": "شاندونغ", "Taiwanese": "تايواني", "Thai": "تايلاندي", "Vietnamese": "فيتنامي", "Malaysian": "ماليزي",
+    "Peranakan": "بيراناكان", "Singaporean": "سنغافوري", "Filipino": "فلبيني", "Indian": "هندي", "Asian": "آسيوي", "Seafood": "مأكولات بحرية",
+    "Steak and grill": "مشويات ولحوم", "Barbecue": "باربكيو", "Vegetarian": "نباتي", "Vegan": "نباتي صرف", "Street food": "أكلات الشوارع"
   },
   words: {
     acctSentCode: "أرسلنا رمزًا من 6 أرقام إلى {email}. أدخله أدناه لتسجيل الدخول هنا. (يعمل الرابط في الرسالة أيضًا، لكنه في التطبيق على الشاشة الرئيسية يفتح المتصفح بدلًا منه.)", acctCodeLabel: "الرمز من الرسالة", acctVerify: "تسجيل الدخول بالرمز", acctVerifying: "جارٍ التحقق…", acctCodeWrong: "لم ينجح هذا الرمز. تحقّق منه أو اطلب رمزًا جديدًا.", acctBadCode: "أدخل الرمز المكوّن من 6 أرقام الموجود في الرسالة.",

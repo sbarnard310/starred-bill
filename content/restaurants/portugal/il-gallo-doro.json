@@ -4,7 +4,7 @@
   "area": "Funchal",
   "address": "Estrada Monumental 147, 9004-532, Funchal",
   "stars": 2,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 492,
   "dinnerType": "menu",
@@ -30,7 +30,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNotePt": "Só jantar",
-  "cuisinePt": "Atual",
   "menus": [
     {
       "name": "\"This is Il Gallo d'Oro\" tasting menu, 11 moments",

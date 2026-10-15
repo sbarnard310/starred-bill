@@ -4,8 +4,19 @@
   lang: { label: "PL", html: "pl", suffixes: ["Pl"], locale: "pl-PL", maps: "pl" },
   months: ["sty", "lut", "mar", "kwi", "maj", "cze", "lip", "sie", "wrz", "paź", "lis", "gru"],
   cuisines: {
-    "Creative": "Kreatywna", "Modern Cuisine": "Nowoczesna", "Sushi": "Sushi", "Contemporary": "Współczesna", "Polish": "Polska", "Innovative": "Innowacyjna",
-    "Traditional Cuisine": "Tradycyjna", "Regional Cuisine": "Regionalna", "Seafood": "Owoce morza", "Vegetarian": "Wegetariańska"
+    "Modern European": "Nowoczesna europejska", "Modern American": "Nowoczesna amerykańska", "Modern": "Nowoczesna", "Creative": "Kreatywna",
+    "Classic": "Klasyczna", "Regional": "Regionalna", "Farm to table": "Od pola do stołu", "Fusion": "Fusion", "International": "Międzynarodowa",
+    "European": "Europejska", "French": "Francuska", "British": "Brytyjska", "Italian": "Włoska", "Spanish": "Hiszpańska",
+    "Portuguese": "Portugalska", "Mediterranean": "Śródziemnomorska", "Greek": "Grecka", "Turkish": "Turecka", "Alpine": "Alpejska",
+    "Austrian": "Austriacka", "German": "Niemiecka", "Nordic": "Nordycka", "Middle Eastern": "Bliskowschodnia", "African": "Afrykańska",
+    "American": "Amerykańska", "Mexican": "Meksykańska", "Latin American": "Latynoamerykańska", "Australian": "Australijska",
+    "New Zealand": "Nowozelandzka", "Pacific Islands": "Polinezyjska", "Japanese": "Japońska", "Sushi": "Sushi", "Tempura": "Tempura",
+    "Yakitori": "Yakitori", "Korean": "Koreańska", "Chinese": "Chińska", "Cantonese": "Kantońska", "Teochew": "Teochew", "Sichuan": "Syczuańska",
+    "Hunan": "Hunańska", "Shanghainese": "Szanghajska", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian",
+    "Beijing": "Pekińska", "Shandong": "Shandong", "Taiwanese": "Tajwańska", "Thai": "Tajska", "Vietnamese": "Wietnamska",
+    "Malaysian": "Malezyjska", "Peranakan": "Peranakan", "Singaporean": "Singapurska", "Filipino": "Filipińska", "Indian": "Indyjska",
+    "Asian": "Azjatycka", "Seafood": "Owoce morza", "Steak and grill": "Steki i grill", "Barbecue": "Barbecue", "Vegetarian": "Wegetariańska",
+    "Vegan": "Wegańska", "Street food": "Jedzenie uliczne"
   },
   words: {
     acctSentCode: "Wysłaliśmy 6-cyfrowy kod na adres {email}. Wpisz go poniżej, aby się tu zalogować. (Link w e-mailu też działa, ale w aplikacji na ekranie głównym otworzy przeglądarkę.)", acctCodeLabel: "Kod z e-maila", acctVerify: "Zaloguj się kodem", acctVerifying: "Sprawdzanie…", acctCodeWrong: "Ten kod nie zadziałał. Sprawdź go lub poproś o nowy.", acctBadCode: "Wpisz 6-cyfrowy kod z e-maila.",

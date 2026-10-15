@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "2-3F, 720 Weihai Road, Jing'an, Shanghai",
   "stars": 1,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-04",
@@ -20,6 +20,5 @@
   "dinnerNoteZhs": "品鉴套餐",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteZhs": "仅供应晚餐",
-  "cuisineZhs": "创新菜"
+  "lunchNoteZhs": "仅供应晚餐"
 }

@@ -4,7 +4,7 @@
   "area": "Noordeloos",
   "address": "Botersloot 1, 4225 PR, Noordeloos",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 385,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chef": "Marco van der Wijngaard",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
-  "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Klassiek Frans"
+  "lunchNoteNl": "Lunchmenu"
 }

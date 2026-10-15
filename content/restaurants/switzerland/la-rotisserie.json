@@ -3,7 +3,7 @@
   "city": "zurich",
   "address": "Weinplatz 2, 8001, Zurich",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.5,
   "reviews": 452,
   "dinnerType": "menu",
@@ -24,9 +24,7 @@
   "chef": "Stefan Jäckel",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Modern",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione",
   "lunch": 352,
   "lunchType": "menu",
@@ -35,6 +33,5 @@
   "lunchNoteFr": "Même menu le midi",
   "lunchNoteIt": "Stesso menu a pranzo",
   "lunchSourceType": "site",
-  "lunchSource": "https://storchen.ch/en/restaurants/la-rotisserie/",
-  "cuisineIt": "Contemporanea"
+  "lunchSource": "https://storchen.ch/en/restaurants/la-rotisserie/"
 }

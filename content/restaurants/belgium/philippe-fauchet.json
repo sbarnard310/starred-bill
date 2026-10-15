@@ -23,7 +23,6 @@
     "vegan"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
-  "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 130 €)",
   "lunch": 150,
   "lunchType": "menu",
@@ -32,7 +31,6 @@
   "lunchNoteFr": "Même menu le midi · mer.–sam.",
   "lunchSourceType": "site",
   "lunchSource": "https://philippefauchet.be/le-menu/",
-  "cuisineFr": "Cuisine créative",
   "chef": "Philippe Fauchet",
   "chefSource": "press"
 }

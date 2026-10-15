@@ -4,7 +4,7 @@
   "area": "Blaregnies",
   "address": "rue de Sars 15, 7040, Blaregnies",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.4,
   "reviews": 38,
   "dinnerType": "menu",
@@ -20,11 +20,9 @@
   "chef": "Didier Bernard",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
-  "cuisineNl": "Klassieke keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 50 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "lunchNoteFr": "Uniquement le soir",
-  "cuisineFr": "Cuisine classique"
+  "lunchNoteFr": "Uniquement le soir"
 }

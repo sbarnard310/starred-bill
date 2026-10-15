@@ -4,7 +4,7 @@
   "area": "Augsburg",
   "address": "Maximilianstraße 40, 86150, Augsburg",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.6,
   "reviews": 92,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Nur abends"
 }

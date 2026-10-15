@@ -4,7 +4,7 @@
   "area": "Sint-Idesbald",
   "address": "Henri Christiaenlaan 5, 8670, Sint-Idesbald",
   "stars": 1,
-  "cuisine": "Meats and Grills",
+  "cuisine": "Steak and grill",
   "rating": 4.5,
   "reviews": 784,
   "dinnerType": "menu",
@@ -21,7 +21,6 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 75)",
-  "cuisineNl": "Specialiteiten met vlees",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 75 €)",
   "lunch": 139,
   "lunchType": "menu",
@@ -30,7 +29,6 @@
   "lunchNoteFr": "Même menu le midi · jeu.–dim.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.carcasse.be/menu",
-  "cuisineFr": "Spécialités de Viandes",
   "chef": "Timon Michiels",
   "chefSource": "press"
 }

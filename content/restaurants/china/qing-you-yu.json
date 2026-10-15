@@ -4,7 +4,7 @@
   "area": "Quanzhou",
   "address": "2F, 535 Huaifu Road, Fengze, Quanzhou",
   "stars": 1,
-  "cuisine": "Fish and Seafood",
+  "cuisine": "Seafood",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2025-11",
@@ -25,7 +25,6 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "海鲜",
   "nameZhs": "庆有余",
   "areaZhs": "泉州"
 }

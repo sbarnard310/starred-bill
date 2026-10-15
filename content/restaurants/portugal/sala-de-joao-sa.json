@@ -3,7 +3,7 @@
   "city": "lisbon",
   "address": "Rua dos Bacalhoeiros 103, 1100-068, Lisbon",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 637,
   "dinnerType": "menu",
@@ -30,6 +30,5 @@
   "lunchNotePt": "O mesmo menu ao almoço · sábado",
   "lunchWine": 125,
   "lunchSourceType": "site",
-  "lunchSource": "https://restaurantesala.pt/en/menu/",
-  "cuisinePt": "Moderna"
+  "lunchSource": "https://restaurantesala.pt/en/menu/"
 }

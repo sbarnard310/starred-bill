@@ -3,7 +3,7 @@
   "city": "sao-paulo",
   "address": "Rua Joaquim Antunes 108, 05415-000, São Paulo",
   "stars": 3,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern American",
   "change": "up",
   "changeNote": "Gained a third star",
   "changeDate": "2026-04",
@@ -30,6 +30,5 @@
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação",
   "lunchNote": "Open for lunch · Saturdays",
-  "lunchNotePt": "Aberto ao almoço · sábado",
-  "cuisinePt": "Moderna"
+  "lunchNotePt": "Aberto ao almoço · sábado"
 }

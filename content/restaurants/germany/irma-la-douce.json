@@ -3,7 +3,7 @@
   "city": "berlin",
   "address": "Potsdamer Straße 102, 10785, Berlin",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 388,
   "dinnerType": "menu",
@@ -23,7 +23,6 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 89 €)",
   "lunchNote": "Open for lunch · Tue–Fri",
   "lunchNoteDe": "Mittags geöffnet · Di–Fr",
-  "cuisineDe": "Französisch-klassisch",
   "chef": "Francesco Contiero",
   "chefSource": "press"
 }

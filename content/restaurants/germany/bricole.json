@@ -3,7 +3,7 @@
   "city": "berlin",
   "address": "Senefelderstraße 30, 10437, Berlin",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 457,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Nur abends"
 }

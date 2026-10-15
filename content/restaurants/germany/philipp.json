@@ -4,7 +4,7 @@
   "area": "Sommerhausen",
   "address": "Hauptstraße 12, 97286, Sommerhausen",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 155,
   "dinnerType": "menu",
@@ -26,7 +26,6 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 159 €)",
-  "cuisineDe": "Französisch-modern",
   "lunchNoteDe": "Mittagsmenü",
   "chef": "Michael Philipp",
   "chefSource": "press"

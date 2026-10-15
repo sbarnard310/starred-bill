@@ -4,7 +4,7 @@
   "area": "Lömmenschwil",
   "address": "Romanshornerstrasse 2, 9308, Lömmenschwil",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 129,
   "dinnerType": "menu",
@@ -25,9 +25,7 @@
     "gluten-free"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 82)",
-  "cuisineDe": "Modern",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 82)",
-  "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 82)",
   "lunch": 175,
   "lunchType": "menu",
@@ -38,7 +36,6 @@
   "lunchWine": 168,
   "lunchSourceType": "site",
   "lunchSource": "https://www.neueblumenau.ch/menues",
-  "cuisineIt": "Contemporanea",
   "chef": "Bernadette Lisibach",
   "chefSource": "michelin"
 }

@@ -4,7 +4,7 @@
   "area": "Groningen",
   "address": "Martinikerkhof 23, 9712 JH, Groningen",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-10",
@@ -32,6 +32,5 @@
   "dinnerNoteNl": "Belevingsmenu, 6 gangen (vanaf € 65 voor 3 gangen, dinsdag tot en met donderdag)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Moderne keuken"
+  "lunchNoteNl": "Alleen diner"
 }

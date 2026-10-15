@@ -4,7 +4,7 @@
   "area": "Fuzhou",
   "address": "433-435 Guxi Road, Gulou, Fuzhou",
   "stars": 1,
-  "cuisine": "European Contemporary",
+  "cuisine": "European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2025-11",
@@ -18,7 +18,6 @@
   "lng": 119.295602,
   "michelinId": "1214084",
   "dinnerNoteZhs": "人均消费",
-  "cuisineZhs": "时尚欧陆菜",
   "nameZhs": "海德",
   "areaZhs": "福州"
 }

@@ -4,9 +4,21 @@
   lang: { label: "TR", html: "tr", suffixes: ["Tr"], locale: "tr-TR", maps: "tr" },
   months: ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"],
   cuisines: {
-    "Contemporary": "Çağdaş", "Country cooking": "Ev yemekleri", "Creative": "Yaratıcı", "Farm to table": "Çiftlikten sofraya", "Fusion": "Füzyon",
-    "Japanese Contemporary": "Çağdaş Japon", "Mediterranean Cuisine": "Akdeniz mutfağı", "Modern Cuisine": "Modern mutfak", "Traditional Cuisine": "Geleneksel mutfak",
-    "Turkish": "Türk mutfağı", "Seafood": "Deniz ürünleri", "Innovative": "Yenilikçi"
+    "Modern European": "Modern Avrupa", "Modern American": "Modern Amerikan", "Modern": "Modern mutfak", "Creative": "Yaratıcı",
+    "Classic": "Klasik mutfak", "Regional": "Yöresel mutfak", "Farm to table": "Çiftlikten sofraya", "Fusion": "Füzyon",
+    "International": "Uluslararası", "European": "Avrupa mutfağı", "French": "Fransız mutfağı", "British": "İngiliz mutfağı",
+    "Italian": "İtalyan mutfağı", "Spanish": "İspanyol mutfağı", "Portuguese": "Portekiz mutfağı", "Mediterranean": "Akdeniz mutfağı",
+    "Greek": "Yunan mutfağı", "Turkish": "Türk mutfağı", "Alpine": "Alp mutfağı", "Austrian": "Avusturya mutfağı", "German": "Alman mutfağı",
+    "Nordic": "İskandinav mutfağı", "Middle Eastern": "Orta Doğu mutfağı", "African": "Afrika mutfağı", "American": "Amerikan mutfağı",
+    "Mexican": "Meksika mutfağı", "Latin American": "Latin Amerika mutfağı", "Australian": "Avustralya mutfağı",
+    "New Zealand": "Yeni Zelanda mutfağı", "Pacific Islands": "Pasifik mutfağı", "Japanese": "Japon mutfağı", "Sushi": "Suşi",
+    "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Kore mutfağı", "Chinese": "Çin mutfağı", "Cantonese": "Kanton mutfağı",
+    "Teochew": "Teochew", "Sichuan": "Seçuan mutfağı", "Hunan": "Hunan mutfağı", "Shanghainese": "Şanghay mutfağı", "Huaiyang": "Huaiyang",
+    "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Pekin mutfağı", "Shandong": "Shandong", "Taiwanese": "Tayvan mutfağı",
+    "Thai": "Tayland mutfağı", "Vietnamese": "Vietnam mutfağı", "Malaysian": "Malezya mutfağı", "Peranakan": "Peranakan",
+    "Singaporean": "Singapur mutfağı", "Filipino": "Filipin mutfağı", "Indian": "Hint mutfağı", "Asian": "Asya mutfağı",
+    "Seafood": "Deniz ürünleri", "Steak and grill": "Steak ve ızgara", "Barbecue": "Barbekü", "Vegetarian": "Vejetaryen", "Vegan": "Vegan",
+    "Street food": "Sokak lezzetleri"
   },
   words: {
     acctSentCode: "{email} adresine 6 haneli bir kod gönderdik. Burada giriş yapmak için aşağıya yazın. (E-postadaki bağlantı da çalışır, ancak ana ekran uygulamasında tarayıcıyı açar.)", acctCodeLabel: "E-postadaki kod", acctVerify: "Kodla giriş yap", acctVerifying: "Kontrol ediliyor…", acctCodeWrong: "Bu kod çalışmadı. Kontrol edin ya da yeni bir kod isteyin.", acctBadCode: "E-postadaki 6 haneli kodu yazın.",

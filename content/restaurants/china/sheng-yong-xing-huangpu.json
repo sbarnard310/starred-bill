@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "5F, Bund 5, 20 Guangdong Road, Huangpu, Shanghai",
   "stars": 1,
-  "cuisine": "Beijing Cuisine",
+  "cuisine": "Beijing",
   "rating": 4.1,
   "reviews": 7,
   "dinnerType": "spend",
@@ -18,6 +18,5 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "京菜",
   "nameZhs": "晟永兴（黄浦）"
 }

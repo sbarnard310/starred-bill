@@ -4,7 +4,7 @@
   "area": "Zermatt",
   "address": "Kirchstrasse 38, 3920, Zermatt",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 280,
   "dinnerType": "menu",
@@ -24,14 +24,11 @@
   "chef": "Luis Romo, Andreas Alm",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 135)",
-  "cuisineDe": "Modern",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 135)",
-  "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 135)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Contemporanea"
+  "lunchNoteIt": "Solo a cena"
 }

@@ -3,7 +3,20 @@
 (window.SB_LANGS = window.SB_LANGS || {}).lv = {
   lang: { label: "LV", html: "lv", suffixes: ["Lv"], locale: "lv-LV", maps: "lv" },
   months: ["janv.", "febr.", "marts", "apr.", "maijs", "jūn.", "jūl.", "aug.", "sept.", "okt.", "nov.", "dec."],
-  cuisines: { "Creative": "Radoša", "Modern Cuisine": "Moderna virtuve", "Contemporary": "Mūsdienīga", "Latvian": "Latviešu" },
+  cuisines: {
+    "Modern European": "Moderna Eiropas", "Modern American": "Moderna Amerikas", "Modern": "Moderna", "Creative": "Radoša",
+    "Classic": "Klasiska", "Regional": "Reģionāla", "Farm to table": "No fermas uz galda", "Fusion": "Fūzijas virtuve",
+    "International": "Starptautiska", "European": "Eiropas", "French": "Franču", "British": "Britu", "Italian": "Itāļu", "Spanish": "Spāņu",
+    "Portuguese": "Portugāļu", "Mediterranean": "Vidusjūras", "Greek": "Grieķu", "Turkish": "Turku", "Alpine": "Alpu", "Austrian": "Austriešu",
+    "German": "Vācu", "Nordic": "Ziemeļvalstu", "Middle Eastern": "Tuvo Austrumu", "African": "Āfrikas", "American": "Amerikāņu",
+    "Mexican": "Meksikāņu", "Latin American": "Latīņamerikas", "Australian": "Austrālijas", "New Zealand": "Jaunzēlandes",
+    "Pacific Islands": "Polinēzijas", "Japanese": "Japāņu", "Sushi": "Suši", "Tempura": "Tempura", "Yakitori": "Jakitori", "Korean": "Korejiešu",
+    "Chinese": "Ķīniešu", "Cantonese": "Kantonas", "Teochew": "Teochew", "Sichuan": "Sičuaņas", "Hunan": "Hunaņas", "Shanghainese": "Šanhajas",
+    "Huaiyang": "Huaiyang", "Zhejiang": "Džedzjanas", "Fujian": "Fudzjanas", "Beijing": "Pekinas", "Shandong": "Šaņdunas",
+    "Taiwanese": "Taivānas", "Thai": "Taju", "Vietnamese": "Vjetnamiešu", "Malaysian": "Malaizijas", "Peranakan": "Peranakan",
+    "Singaporean": "Singapūras", "Filipino": "Filipīniešu", "Indian": "Indiešu", "Asian": "Āzijas", "Seafood": "Zivis un jūras veltes",
+    "Steak and grill": "Steiki un grils", "Barbecue": "Barbekjū", "Vegetarian": "Veģetāra", "Vegan": "Vegāniska", "Street food": "Ielu ēdiens"
+  },
   words: {
     acctSentCode: "Mēs nosūtījām 6 ciparu kodu uz {email}. Ievadiet to zemāk, lai pieteiktos šeit. (Saite e-pastā arī darbojas, bet sākuma ekrāna lietotnē tā atver pārlūku.)", acctCodeLabel: "Kods no e-pasta", acctVerify: "Pieteikties ar kodu", acctVerifying: "Pārbauda…", acctCodeWrong: "Šis kods nederēja. Pārbaudiet to vai pieprasiet jaunu.", acctBadCode: "Ievadiet 6 ciparu kodu no e-pasta.",
     notrackOn: "Šis pārlūks vairs netiek ieskaitīts apmeklējumu statistikā.", notrackOff: "Šis pārlūks atkal tiek ieskaitīts apmeklējumu statistikā.",

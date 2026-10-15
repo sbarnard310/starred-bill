@@ -4,7 +4,7 @@
   "area": "Mauterndorf",
   "address": "Markt 56, 5570, Mauterndorf",
   "stars": 1,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "rating": 4.5,
   "reviews": 214,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 63 €)",
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteDe": "Mittags geöffnet · Mi–So",
-  "cuisineDe": "Saisonal",
   "chef": "Josef Steffner",
   "chefSource": "press"
 }

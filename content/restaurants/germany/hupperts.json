@@ -3,7 +3,7 @@
   "city": "stuttgart",
   "address": "Gebelsbergstraße 97, 70199, Stuttgart",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 289,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 144 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

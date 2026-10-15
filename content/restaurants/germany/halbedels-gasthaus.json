@@ -4,7 +4,7 @@
   "area": "Bonn",
   "address": "Rheinallee 47, 53173, Bonn",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 171,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern",
   "dinner": 146,
   "source": "https://www.schlemmer-atlas.de/restaurants/deutschland/bonn/halbedels-gasthaus/"
 }

@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "L7-05, 1000Trees, 600 Moganshan Road, Putuo, Shanghai",
   "stars": 1,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "dinnerType": "spend",
   "dinner": 1891,
   "dinnerNote": "Typical spend",
@@ -15,6 +15,5 @@
   "michelinId": "1209925",
   "chef": "Yoshihiro Narisawa",
   "chefSource": "site",
-  "dinnerNoteZhs": "人均消费",
-  "cuisineZhs": "创新菜"
+  "dinnerNoteZhs": "人均消费"
 }

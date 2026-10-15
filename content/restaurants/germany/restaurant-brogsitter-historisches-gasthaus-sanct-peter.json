@@ -4,7 +4,7 @@
   "area": "Bad Neuenahr-Ahrweiler",
   "address": "Walporzheimer Straße 134, 53474, Bad Neuenahr-Ahrweiler",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.4,
   "reviews": 57,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chef": "Sebastian Baumann",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
-  "lunchNoteDe": "Mittagsmenü",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Mittagsmenü"
 }

@@ -3,7 +3,7 @@
   "city": "porto",
   "address": "Rua Ricardo Severo 21, 4050-515, Porto",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -29,6 +29,5 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 100 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Moderna"
+  "lunchNotePt": "Só jantar"
 }

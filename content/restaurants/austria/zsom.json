@@ -3,7 +3,7 @@
   "city": "vienna",
   "address": "Gußhausstraße 12, 1040, Vienna",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 557,
   "dinnerType": "menu",
@@ -30,6 +30,5 @@
   "chef": "Diego Briones",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Moderne Küche",
   "lunchNoteDe": "Mittagsmenü"
 }

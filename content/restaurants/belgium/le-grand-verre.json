@@ -4,7 +4,7 @@
   "area": "Durbuy",
   "address": "Place aux Foires 26, 6940, Durbuy",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 121,
   "dinnerType": "menu",
@@ -26,9 +26,7 @@
   "chef": "Wout Bru",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine française moderne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"
 }

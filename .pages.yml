@@ -227,43 +227,71 @@ content:
         type: string
       - name: cuisine
         label: Cuisine
-        description: Michelin's cuisine label, e.g. Modern British. A new label adds a new filter button.
-        type: string
-      - name: cuisineZh
-        label: Cuisine in Chinese
-        type: string
-      - name: cuisineJa
-        label: Cuisine in Japanese
-        description: Michelin's Japanese label, e.g. 日本料理.
-        type: string
-      - name: cuisineZhs
-        label: Cuisine in Simplified Chinese
-        description: Michelin's own Simplified Chinese label, where the guide has one.
-        type: string
-      - name: cuisineDe
-        label: Cuisine in German
-        description: Michelin's own German label, where the guide has one.
-        type: string
-      - name: cuisineNl
-        label: Cuisine in Dutch
-        description: Michelin's own Dutch label, where the guide has one.
-        type: string
-      - name: cuisineFr
-        label: Cuisine in French
-        description: Michelin's own French label, where the guide has one.
-        type: string
-      - name: cuisineIt
-        label: Cuisine in Italian
-        description: Michelin's own Italian label, where the guide has one.
-        type: string
-      - name: cuisinePt
-        label: Cuisine in Portuguese
-        description: Michelin's own Portuguese label, where the guide has one.
-        type: string
-      - name: cuisineTr
-        label: Cuisine in Turkish
-        description: Michelin's own Turkish label, where the guide has one.
-        type: string
+        description: Our own cuisine category (not the MICHELIN Guide's label). Modern European, Modern American and Modern are modern cooking in Europe, the Americas and elsewhere. Choose from the restaurant's own description of its food. Other languages' names come with the site.
+        type: select
+        options:
+          values:
+            - "Modern European"
+            - "Modern American"
+            - "Modern"
+            - "Creative"
+            - "Classic"
+            - "Regional"
+            - "Farm to table"
+            - "Fusion"
+            - "International"
+            - "European"
+            - "French"
+            - "British"
+            - "Italian"
+            - "Spanish"
+            - "Portuguese"
+            - "Mediterranean"
+            - "Greek"
+            - "Turkish"
+            - "Alpine"
+            - "Austrian"
+            - "German"
+            - "Nordic"
+            - "Middle Eastern"
+            - "African"
+            - "American"
+            - "Mexican"
+            - "Latin American"
+            - "Australian"
+            - "New Zealand"
+            - "Pacific Islands"
+            - "Japanese"
+            - "Sushi"
+            - "Tempura"
+            - "Yakitori"
+            - "Korean"
+            - "Chinese"
+            - "Cantonese"
+            - "Teochew"
+            - "Sichuan"
+            - "Hunan"
+            - "Shanghainese"
+            - "Huaiyang"
+            - "Zhejiang"
+            - "Fujian"
+            - "Beijing"
+            - "Shandong"
+            - "Taiwanese"
+            - "Thai"
+            - "Vietnamese"
+            - "Malaysian"
+            - "Peranakan"
+            - "Singaporean"
+            - "Filipino"
+            - "Indian"
+            - "Asian"
+            - "Seafood"
+            - "Steak and grill"
+            - "Barbecue"
+            - "Vegetarian"
+            - "Vegan"
+            - "Street food"
       - name: chef
         label: Head chef
         description: The chef who leads the kitchen, e.g. Clare Smyth. Shows under the restaurant's name and can be searched.
@@ -1216,7 +1244,7 @@ content:
           multiple: true
       - name: cuisines
         label: Cuisines (cuisine pages only)
-        description: The MICHELIN Guide cuisine labels the page lists, exactly as on the restaurants, e.g. French, French Contemporary. Only make a cuisine page where its city has 5 or more starred restaurants of them.
+        description: The cuisine categories the page lists, spelled as in the restaurants' Cuisine box, e.g. Cantonese, Sichuan, Zhejiang. Only make a cuisine page where its city has 5 or more starred restaurants of them.
         type: string
         list: true
       - name: topic

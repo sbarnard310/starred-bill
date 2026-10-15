@@ -4,7 +4,7 @@
   "area": "Ulm",
   "address": "Kohlgasse 6, 89073, Ulm",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 415,
   "dinnerType": "menu",
@@ -30,6 +30,5 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
   "lunchWine": 89,
   "lunchSourceType": "site",
-  "lunchSource": "https://bebrout.com/assets/img/speisekarte/Menu.pdf",
-  "cuisineDe": "Modern"
+  "lunchSource": "https://bebrout.com/assets/img/speisekarte/Menu.pdf"
 }

@@ -4,7 +4,7 @@
   "area": "The Hague",
   "address": "Laan van Roos en Doorn 51a, 2514 BC, The Hague",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 381,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 99)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Creatief Frans",
   "areaNl": "Den Haag",
   "chef": "Ronald van Roon",
   "chefSource": "press"

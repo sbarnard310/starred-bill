@@ -3,7 +3,7 @@
   "city": "zurich",
   "address": "Zinnengasse 7, 8001, Zurich",
   "stars": 1,
-  "cuisine": "Asian Contemporary",
+  "cuisine": "Asian",
   "rating": 4,
   "reviews": 208,
   "dinnerType": "menu",
@@ -21,14 +21,11 @@
     "gluten-free"
   ],
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Asiatisch-zeitgemäß",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine asiatique contemporaine",
   "dinnerNoteIt": "Menu degustazione",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Asiatica contemporanea"
+  "lunchNoteIt": "Solo a cena"
 }

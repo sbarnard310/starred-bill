@@ -3,7 +3,7 @@
   "city": "munich",
   "address": "Am Olympiapark 1, 80809, Munich",
   "stars": 2,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "New straight in with two stars",
   "changeDate": "2026-06",
@@ -32,7 +32,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Modern",
   "menus": [
     {
       "name": "Whispers of the Rainforest tasting menu",

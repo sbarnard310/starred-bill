@@ -3,7 +3,7 @@
   "city": "istanbul",
   "address": "Meşrutiyet Caddesi No:15, 18th floor (18. kat), Tepebaşı/Beyoğlu, 34430, Istanbul",
   "stars": 1,
-  "cuisine": "Mediterranean Cuisine",
+  "cuisine": "Mediterranean",
   "rating": 4.3,
   "reviews": 2716,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTr": "Yalnızca akşam yemeği",
-  "cuisineTr": "Akdeniz Mutfağı",
   "chef": "Mehmet Gürs",
   "chefSource": "press"
 }

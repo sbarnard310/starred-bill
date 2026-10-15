@@ -4,7 +4,7 @@
   "area": "Schützen am Gebirge",
   "address": "Hauptstraße 31, 7081, Schützen am Gebirge",
   "stars": 2,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.2,
   "reviews": 573,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "dinnerNoteDe": "Degustationsmenü",
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteDe": "Mittags geöffnet · Mi–So",
-  "cuisineDe": "Französisch-zeitgemäß",
   "chef": "Alain Weissgerber",
   "chefSource": "press"
 }

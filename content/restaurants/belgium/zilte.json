@@ -23,7 +23,6 @@
   "chef": "Viki Geunes",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 210)",
-  "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 210 €)",
   "lunch": 340,
   "lunchType": "menu",
@@ -32,7 +31,6 @@
   "lunchNoteFr": "Même menu le midi · lun.–ven.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.zilte.be/menu",
-  "cuisineFr": "Cuisine créative",
   "bookingWindow": {
     "type": "rolling",
     "days": 90,

@@ -3,7 +3,7 @@
   "city": "antwerpen",
   "address": "Verbindingsdok Oostkaai 9, 2000, Antwerpen",
   "stars": 1,
-  "cuisine": "Fish and Seafood",
+  "cuisine": "Seafood",
   "rating": 4.7,
   "reviews": 120,
   "dinnerType": "menu",
@@ -17,10 +17,8 @@
   "chef": "Tommy Bocklandt",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Vis en zeevruchten",
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
   "lunchNote": "Open for lunch · Tue–Fri",
   "lunchNoteNl": "Open voor lunch · di–vr",
-  "lunchNoteFr": "Ouvert le midi · mar.–ven.",
-  "cuisineFr": "Poissons et fruits de mer"
+  "lunchNoteFr": "Ouvert le midi · mar.–ven."
 }

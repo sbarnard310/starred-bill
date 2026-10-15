@@ -4,7 +4,7 @@
   "area": "Doornenburg",
   "address": "Sterreschans 15, 6686 MS, Doornenburg",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.5,
   "reviews": 366,
   "dinnerType": "menu",
@@ -31,6 +31,5 @@
   "chef": "Mike Cornelissen",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 120)",
-  "cuisineNl": "Moderne keuken",
   "lunchNoteNl": "Lunchmenu"
 }

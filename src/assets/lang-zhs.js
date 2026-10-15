@@ -4,12 +4,15 @@
   lang: { label: "中文", html: "zh-Hans-CN", suffixes: ["Zhs"], locale: "zh-CN", maps: "zh-CN" },
   months: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
   cuisines: {
-    "Beijing Cuisine": "京菜", "Cantonese": "粤菜", "Chao Zhou": "潮州菜", "Chinese Contemporary": "创意中菜", "Dim Sum": "点心", "Dongbei": "东北菜",
-    "European": "欧陆菜", "European Contemporary": "时尚欧陆菜", "Fish and Seafood": "海鲜", "French Contemporary": "时尚法国菜", "Fujian": "闽菜",
-    "Huaiyang": "淮扬菜", "Hui Cuisine": "徽菜", "Hunanese": "湘菜", "Innovative": "创新菜", "Italian": "意大利菜", "Jiangsu Cuisine": "苏菜",
-    "Jiangzhe": "江浙菜", "Ningbo": "宁波菜", "Shandong": "鲁菜", "Shanghainese": "沪菜", "Sichuan": "川菜", "Taizhou": "台州菜", "Vegan": "纯素",
-    "Vegetarian": "素食", "Zhejiang": "浙菜", "Chinese": "中国菜", "Japanese": "日本菜", "French": "法国菜", "Sushi": "寿司", "Creative": "创意菜",
-    "Modern Cuisine": "现代菜", "Contemporary": "时尚菜", "Teppanyaki": "铁板烧", "Seafood": "海鲜"
+    "Modern European": "现代欧陆菜", "Modern American": "现代美国菜", "Modern": "现代菜", "Creative": "创意菜", "Classic": "经典菜", "Regional": "地方菜",
+    "Farm to table": "农场到餐桌", "Fusion": "融合菜", "International": "国际菜", "European": "欧陆菜", "French": "法国菜", "British": "英国菜", "Italian": "意大利菜",
+    "Spanish": "西班牙菜", "Portuguese": "葡萄牙菜", "Mediterranean": "地中海菜", "Greek": "希腊菜", "Turkish": "土耳其菜", "Alpine": "阿尔卑斯菜", "Austrian": "奥地利菜",
+    "German": "德国菜", "Nordic": "北欧菜", "Middle Eastern": "中东菜", "African": "非洲菜", "American": "美国菜", "Mexican": "墨西哥菜", "Latin American": "拉美菜",
+    "Australian": "澳大利亚菜", "New Zealand": "新西兰菜", "Pacific Islands": "太平洋岛国菜", "Japanese": "日本菜", "Sushi": "寿司", "Tempura": "天妇罗",
+    "Yakitori": "烧鸟", "Korean": "韩国菜", "Chinese": "中国菜", "Cantonese": "粤菜", "Teochew": "潮州菜", "Sichuan": "川菜", "Hunan": "湘菜",
+    "Shanghainese": "沪菜", "Huaiyang": "淮扬菜", "Zhejiang": "浙菜", "Fujian": "闽菜", "Beijing": "京菜", "Shandong": "鲁菜", "Taiwanese": "台湾菜",
+    "Thai": "泰国菜", "Vietnamese": "越南菜", "Malaysian": "马来西亚菜", "Peranakan": "娘惹菜", "Singaporean": "新加坡菜", "Filipino": "菲律宾菜", "Indian": "印度菜",
+    "Asian": "亚洲菜", "Seafood": "海鲜", "Steak and grill": "牛排烧烤", "Barbecue": "美式烧烤", "Vegetarian": "素食", "Vegan": "纯素", "Street food": "街头小吃"
   },
   words: {
     acctSentCode: "我们已将 6 位数验证码发送到 {email}。在下方输入即可在这里登录。（邮件中的链接也可以用，但在主屏幕应用中会改为打开浏览器。）", acctCodeLabel: "邮件中的验证码", acctVerify: "用验证码登录", acctVerifying: "验证中…", acctCodeWrong: "验证码无效。请检查，或重新获取。", acctBadCode: "请输入邮件中的 6 位数验证码。",

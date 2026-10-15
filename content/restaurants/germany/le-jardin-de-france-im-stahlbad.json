@@ -4,7 +4,7 @@
   "area": "Baden-Baden",
   "address": "Augustaplatz 2, 76530, Baden-Baden",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 353,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 59 €)",
   "lunchNote": "Open for lunch · Tue–Sat",
   "lunchNoteDe": "Mittags geöffnet · Di–Sa",
-  "cuisineDe": "Französisch-klassisch",
   "chef": "Stéphan Bernhard",
   "chefSource": "press"
 }

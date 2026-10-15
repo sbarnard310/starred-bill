@@ -4,7 +4,7 @@
   "area": "Ravensburg",
   "address": "Mauerstraße 17, 88212, Ravensburg",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 43,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 58 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-zeitgemäß"
+  "lunchNoteDe": "Nur abends"
 }

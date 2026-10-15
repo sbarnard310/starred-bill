@@ -4,7 +4,7 @@
   "area": "Rothenburg ob der Tauber",
   "address": "Vorm Würzburger Tor 7, 91541, Rothenburg ob der Tauber",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 909,
   "dinnerType": "menu",
@@ -27,7 +27,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "chef": "Christian Mittermeier",
   "chefSource": "press"
 }

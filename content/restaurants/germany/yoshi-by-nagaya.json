@@ -22,7 +22,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Japanisch",
   "bookingWindow": {
     "type": "rolling",
     "months": 2,

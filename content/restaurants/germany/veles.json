@@ -3,7 +3,7 @@
   "city": "nuremberg",
   "address": "Kernstraße 29, 90429, Nuremberg",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 283,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

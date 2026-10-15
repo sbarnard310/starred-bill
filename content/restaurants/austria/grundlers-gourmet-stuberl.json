@@ -4,7 +4,7 @@
   "area": "Achenkirch",
   "address": "Seestraße 35, 6215, Achenkirch",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "dinnerType": "menu",
   "dinner": 210,
   "dinnerNote": "Tasting menu (other menus from €160)",
@@ -24,6 +24,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 160 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Nur abends"
 }

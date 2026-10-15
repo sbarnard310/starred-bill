@@ -4,7 +4,7 @@
   "area": "Saarbrücken",
   "address": "Mainzer Straße 95, 66121, Saarbrücken",
   "stars": 2,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 312,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "lunchNote": "Same menu at lunch · Mon–Fri",
   "lunchNoteDe": "Gleiches Menü am Mittag · Mo–Fr",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.gaestehaus-erfort.de/",
-  "cuisineDe": "Französisch-klassisch"
+  "lunchSource": "https://www.gaestehaus-erfort.de/"
 }

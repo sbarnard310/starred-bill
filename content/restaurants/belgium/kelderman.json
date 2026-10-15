@@ -4,7 +4,7 @@
   "area": "Aalst",
   "address": "Parklaan 4, 9300, Aalst",
   "stars": 1,
-  "cuisine": "Traditional Cuisine",
+  "cuisine": "Classic",
   "rating": 4.8,
   "reviews": 353,
   "dinnerType": "menu",
@@ -28,9 +28,7 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Traditionele keuken",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine traditionnelle",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner",
   "chef": "Peter Aesaert",

@@ -4,7 +4,7 @@
   "area": "Erkelenz",
   "address": "Rurstraße 19, 41812, Erkelenz",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 668,
   "dinnerType": "menu",
@@ -27,7 +27,6 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
   "lunchSourceType": "site",
   "lunchSource": "https://www.troyka.de/vegetarisches-menue",
-  "cuisineDe": "Moderne Küche",
   "dinnerNote": "Menu",
   "dinnerNoteDe": "Menü"
 }

@@ -4,7 +4,7 @@
   "area": "Kitzbühel",
   "address": "Franz-Reisch-Straße 7, 6370, Kitzbühel",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.3,
   "reviews": 66,
   "dinnerType": "main",
@@ -21,6 +21,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Typischer Hauptgang",
   "lunchNote": "Open for lunch · Saturdays",
-  "lunchNoteDe": "Mittags geöffnet · Samstag",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Mittags geöffnet · Samstag"
 }

@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "Nachtwachtlaan 20B, 1058 EA, Amsterdam",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 66,
   "dinnerType": "menu",
@@ -30,6 +30,5 @@
   "chef": "Luc Kusters",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Moderne keuken",
   "lunchNoteNl": "Lunchmenu"
 }

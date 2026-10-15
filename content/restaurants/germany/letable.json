@@ -4,7 +4,7 @@
   "area": "Bad Hersfeld",
   "address": "Linggplatz 11, 36251, Bad Hersfeld",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.3,
   "reviews": 43,
   "dinnerType": "menu",
@@ -31,6 +31,5 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
   "lunchWine": 149,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.dersternhersfeld.de/kulinarik#letable",
-  "cuisineDe": "Klassische Küche"
+  "lunchSource": "https://www.dersternhersfeld.de/kulinarik#letable"
 }

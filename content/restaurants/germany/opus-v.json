@@ -4,7 +4,7 @@
   "area": "Mannheim",
   "address": "O5, 9-12, 68161, Mannheim",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 414,
   "dinnerType": "menu",
@@ -31,7 +31,6 @@
   "lunchNoteDe": "Drei-Gänge-Mittagsmenü · Fr–Sa",
   "lunchSourceType": "site",
   "lunchSource": "https://info.engelhorn.com/gastronomie/opus-v/mittagskarte/",
-  "cuisineDe": "Moderne Küche",
   "menus": [
     {
       "name": "Urban Nature six-course menu",

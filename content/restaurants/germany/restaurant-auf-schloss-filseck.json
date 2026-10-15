@@ -4,7 +4,7 @@
   "area": "Uhingen",
   "address": "Filseck 1, 73066, Uhingen",
   "stars": 1,
-  "cuisine": "Mediterranean Cuisine",
+  "cuisine": "Mediterranean",
   "rating": 4.7,
   "reviews": 214,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 150 €)",
   "lunchNote": "Open for lunch · Tue–Fri",
-  "lunchNoteDe": "Mittags geöffnet · Di–Fr",
-  "cuisineDe": "Mediterran"
+  "lunchNoteDe": "Mittags geöffnet · Di–Fr"
 }

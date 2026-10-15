@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "57 Sinan Road, Huangpu, Shanghai",
   "stars": 1,
-  "cuisine": "Chao Zhou",
+  "cuisine": "Teochew",
   "dinnerType": "spend",
   "dinner": 539,
   "dinnerNote": "Typical spend",
@@ -15,6 +15,5 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "潮州菜",
   "nameZhs": "东方景宴"
 }

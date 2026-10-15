@@ -4,7 +4,7 @@
   "area": "Scharbeutz",
   "address": "Strandallee 146, 23683, Scharbeutz",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 3.2,
   "reviews": 12,
   "dinnerType": "menu",
@@ -22,6 +22,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 105 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Nur abends"
 }

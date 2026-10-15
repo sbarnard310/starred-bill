@@ -3,7 +3,7 @@
   "city": "freiburg-im-breisgau",
   "address": "Rotteckring 16, 79098, Freiburg im Breisgau",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 93,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 98 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-klassisch"
+  "lunchNoteDe": "Nur abends"
 }

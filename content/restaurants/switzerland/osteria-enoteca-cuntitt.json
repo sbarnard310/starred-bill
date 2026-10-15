@@ -4,7 +4,7 @@
   "area": "Castel San Pietro",
   "address": "Via alla Chiesa 8, 6874, Castel San Pietro",
   "stars": 1,
-  "cuisine": "Italian Contemporary",
+  "cuisine": "Italian",
   "rating": 4.8,
   "reviews": 214,
   "dinnerType": "menu",
@@ -26,9 +26,7 @@
   "chef": "Federico Palladino",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 118)",
-  "cuisineDe": "Italienisch-zeitgemäß",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 118)",
-  "cuisineFr": "Cuisine italienne contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 118)",
   "lunch": 148,
   "lunchType": "menu",
@@ -38,6 +36,5 @@
   "lunchNoteIt": "Stesso menu a pranzo · lun–mar, gio–sab",
   "lunchWine": 80,
   "lunchSourceType": "site",
-  "lunchSource": "https://cuntitt.ch/menu/",
-  "cuisineIt": "Italiana contemporanea"
+  "lunchSource": "https://cuntitt.ch/menu/"
 }

@@ -4,7 +4,7 @@
   "area": "Savièse",
   "address": "Rue du Stade 5b, 1965, Savièse",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "up",
   "changeNote": "Gained a second star",
   "changeDate": "2025-10",
@@ -30,9 +30,7 @@
   "chef": "Gilles Varone",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 199)",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 199)",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 199)",
   "lunch": 199,
   "lunchType": "menu",
@@ -42,7 +40,6 @@
   "lunchNoteIt": "Menu di 5 portate (7 portate CHF 259) · ven–dom",
   "lunchSourceType": "site",
   "lunchSource": "https://web.archive.org/web/20261007081249/https://gillesvarone.ch/",
-  "cuisineIt": "Moderna",
   "menus": [
     {
       "name": "seven-course experience",

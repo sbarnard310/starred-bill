@@ -3,7 +3,7 @@
   "city": "lisbon",
   "address": "Doca do Bom Sucesso, 1400-038, Lisbon",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 643,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 115 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Moderna"
+  "lunchNotePt": "Só jantar"
 }

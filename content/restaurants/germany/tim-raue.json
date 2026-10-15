@@ -3,7 +3,7 @@
   "city": "berlin",
   "address": "Rudi-Dutschke-Straße 26, 10969, Berlin",
   "stars": 2,
-  "cuisine": "Asian Influences",
+  "cuisine": "Asian",
   "rating": 4.6,
   "reviews": 1527,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 212 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Asiatische Einflüsse"
+  "lunchNoteDe": "Nur abends"
 }

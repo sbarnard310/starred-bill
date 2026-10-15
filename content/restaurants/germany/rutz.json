@@ -3,7 +3,7 @@
   "city": "berlin",
   "address": "Chausseestraße 8, 10115, Berlin",
   "stars": 3,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 772,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 260 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

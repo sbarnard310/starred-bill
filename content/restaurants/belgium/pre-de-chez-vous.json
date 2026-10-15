@@ -4,7 +4,7 @@
   "area": "Bouge",
   "address": "Chaussée de Louvain 380, 5004, Bouge",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 365,
   "dinnerType": "menu",
@@ -21,12 +21,10 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 82)",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 82 €)",
   "lunchNote": "Open for lunch · Thu–Fri",
   "lunchNoteNl": "Open voor lunch · do–vr",
   "lunchNoteFr": "Ouvert le midi · jeu.–ven.",
-  "cuisineFr": "Cuisine moderne",
   "chef": "Julien Malaisse",
   "chefSource": "press"
 }

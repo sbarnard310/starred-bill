@@ -3,7 +3,7 @@
   "city": "cologne",
   "address": "Rheinbergstraße 49, 51143, Cologne",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.7,
   "reviews": 330,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Mo",
   "lunchWine": 189,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.zurtant.de/speisekarten/A_la_carte_und_Degustationsmenue.pdf",
-  "cuisineDe": "Klassische Küche"
+  "lunchSource": "https://www.zurtant.de/speisekarten/A_la_carte_und_Degustationsmenue.pdf"
 }

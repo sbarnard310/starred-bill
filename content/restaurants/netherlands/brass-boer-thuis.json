@@ -4,7 +4,7 @@
   "area": "Zwolle",
   "address": "Nieuwe Markt 21, 8011 PG, Zwolle",
   "stars": 1,
-  "cuisine": "Regional Cuisine",
+  "cuisine": "Regional",
   "rating": 4.5,
   "reviews": 409,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "chef": "Jonnie Boer",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Regionaal",
   "lunchNoteNl": "Lunchmenu"
 }

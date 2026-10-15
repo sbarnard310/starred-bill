@@ -3,7 +3,7 @@
   "city": "lisbon",
   "address": "Pátio de Dom Fradique 12, 1100-624, Lisbon",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 373,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 135 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Francesa contemporânea"
+  "lunchNotePt": "Só jantar"
 }

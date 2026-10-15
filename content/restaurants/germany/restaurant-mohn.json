@@ -4,7 +4,7 @@
   "area": "Hohnhorst",
   "address": "Hauptstraße 25, 31559, Hohnhorst",
   "stars": 1,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-06",
@@ -30,7 +30,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Saisonal",
   "chef": "Joris Hogervorst",
   "chefSource": "press"
 }

@@ -3,7 +3,7 @@
   "city": "rotterdam",
   "address": "Weena 686, 3012 CN, Rotterdam",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 379,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "chef": "Wim Severein",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Moderne keuken",
   "lunchNoteNl": "Lunchmenu"
 }

@@ -4,7 +4,7 @@
   "area": "Strombeek-Bever",
   "address": "Jetsestraat 52, 1853, Strombeek-Bever",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 381,
   "dinnerType": "menu",
@@ -29,9 +29,7 @@
   "chef": "Daniel Antuna",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 95)",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 95 €)",
-  "cuisineFr": "Cuisine moderne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"
 }

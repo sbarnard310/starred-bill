@@ -21,10 +21,8 @@
   "chef": "Paolo Rota",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 260)",
-  "cuisineDe": "Italienisch",
   "areaDe": "Sankt Moritz",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 260)",
-  "cuisineFr": "Cuisine italienne",
   "areaFr": "Saint-Moritz",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 260)",
   "noLunch": true,
@@ -32,6 +30,5 @@
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Italiana",
   "areaIt": "Sankt Moritz"
 }

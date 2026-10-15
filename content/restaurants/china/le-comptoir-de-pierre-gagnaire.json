@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "Capella, Jian Ye Li, 480 West Jianguo Road, Xuhui, 200031, Shanghai",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "dinnerType": "spend",
   "dinner": 1134,
   "dinnerNote": "Typical spend",
@@ -22,7 +22,6 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "时尚法国菜",
   "placeId": "ChIJ6WX0Z7F6sjURiYRvVLxysqM",
   "rating": 4.5,
   "reviews": 13

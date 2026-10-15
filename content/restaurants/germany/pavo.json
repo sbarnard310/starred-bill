@@ -4,7 +4,7 @@
   "area": "Pfronten",
   "address": "Auf dem Falkenstein 1, 87459, Pfronten",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 117,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "chef": "Simon Schlachter",
   "chefSource": "michelin"
 }

@@ -3,7 +3,7 @@
   "city": "rio-de-janeiro",
   "address": "Rua Joana Angélica, 155, 22420-030, Rio de Janeiro",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern American",
   "rating": 4.9,
   "reviews": 167,
   "dinnerType": "menu",
@@ -22,6 +22,5 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde R$490)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Moderna"
+  "lunchNotePt": "Só jantar"
 }

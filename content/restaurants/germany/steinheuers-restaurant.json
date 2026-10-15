@@ -4,7 +4,7 @@
   "area": "Bad Neuenahr-Ahrweiler",
   "address": "Landskroner Straße 110, 53474, Bad Neuenahr-Ahrweiler",
   "stars": 2,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 5,
   "reviews": 5,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "lunchNote": "Same menu at lunch · Sundays",
   "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.steinheuers.de/wp-content/uploads/Menue-Wurzeln-August-26.pdf",
-  "cuisineDe": "Französisch-klassisch"
+  "lunchSource": "https://www.steinheuers.de/wp-content/uploads/Menue-Wurzeln-August-26.pdf"
 }

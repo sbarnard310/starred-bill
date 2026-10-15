@@ -4,7 +4,7 @@
   "area": "Beetsterzwaag",
   "address": "Van Harinxmaweg 10, 9244 CJ, Beetsterzwaag",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 30,
   "dinnerType": "menu",
@@ -31,6 +31,5 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · ma–vr",
   "lunchWine": 73.5,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.lauswolt.nl/eten-drinken/de-heeren-van-harinxma",
-  "cuisineNl": "Modern Frans"
+  "lunchSource": "https://www.lauswolt.nl/eten-drinken/de-heeren-van-harinxma"
 }

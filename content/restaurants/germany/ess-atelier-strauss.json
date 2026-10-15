@@ -4,7 +4,7 @@
   "area": "Oberstdorf",
   "address": "Kirchstraße 1, 87561, Oberstdorf",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.7,
   "reviews": 29,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Klassische Küche",
   "chef": "Peter A. Strauss",
   "chefSource": "press"
 }

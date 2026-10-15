@@ -4,13 +4,19 @@
   lang: { label: "NL", html: "nl", suffixes: ["Nl"], locale: "nl-NL", maps: "nl" },
   months: ["jan.", "feb.", "mrt.", "apr.", "mei", "jun.", "jul.", "aug.", "sep.", "okt.", "nov.", "dec."],
   cuisines: {
-    "Asian": "Aziatisch", "Asian Influences": "Aziatische invloeden", "Asian and Western": "Aziatisch en westers", "Asian Contemporary": "Modern Aziatisch",
-    "Classic Cuisine": "Klassieke keuken", "Classic French": "Klassiek Frans", "Contemporary": "Eigentijds", "Country cooking": "Burgerkeuken", "Creative": "Creatief",
-    "Creative French": "Creatief Frans", "Farm to table": "Van boer tot bord", "Fish and Seafood": "Vis en zeevruchten", "French": "Frans", "French Contemporary": "Modern Frans",
-    "Italian": "Italiaans", "Italian Contemporary": "Modern Italiaans", "Japanese": "Japans", "Japanese Contemporary": "Modern Japans", "Meats and Grills": "Vlees en grill",
-    "Modern Cuisine": "Moderne keuken", "Modern French": "Modern Frans", "Organic": "Biologisch", "Regional Cuisine": "Streekkeuken", "Thai": "Thais",
-    "Traditional Cuisine": "Traditionele keuken", "World Cuisine": "Wereldkeuken", "Innovative": "Innovatief", "Seasonal Cuisine": "Seizoenskeuken", "Sharing": "Om te delen",
-    "Tuscan": "Toscaans", "Vegetarian": "Vegetarisch", "Vegan": "Veganistisch", "Seafood": "Zeevruchten", "Fusion": "Fusion"
+    "Modern European": "Modern Europees", "Modern American": "Modern Amerikaans", "Modern": "Modern", "Creative": "Creatief",
+    "Classic": "Klassiek", "Regional": "Streekkeuken", "Farm to table": "Van boer tot bord", "Fusion": "Fusion",
+    "International": "Internationaal", "European": "Europees", "French": "Frans", "British": "Brits", "Italian": "Italiaans",
+    "Spanish": "Spaans", "Portuguese": "Portugees", "Mediterranean": "Mediterraan", "Greek": "Grieks", "Turkish": "Turks",
+    "Alpine": "Alpenkeuken", "Austrian": "Oostenrijks", "German": "Duits", "Nordic": "Noords", "Middle Eastern": "Midden-Oosters",
+    "African": "Afrikaans", "American": "Amerikaans", "Mexican": "Mexicaans", "Latin American": "Latijns-Amerikaans",
+    "Australian": "Australisch", "New Zealand": "Nieuw-Zeelands", "Pacific Islands": "Pacifische eilanden", "Japanese": "Japans",
+    "Sushi": "Sushi", "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Koreaans", "Chinese": "Chinees", "Cantonese": "Kantonees",
+    "Teochew": "Teochew", "Sichuan": "Sichuan", "Hunan": "Hunan", "Shanghainese": "Shanghai", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang",
+    "Fujian": "Fujian", "Beijing": "Peking", "Shandong": "Shandong", "Taiwanese": "Taiwanees", "Thai": "Thais", "Vietnamese": "Vietnamees",
+    "Malaysian": "Maleisisch", "Peranakan": "Peranakan", "Singaporean": "Singaporees", "Filipino": "Filipijns", "Indian": "Indiaas",
+    "Asian": "Aziatisch", "Seafood": "Vis en zeevruchten", "Steak and grill": "Vlees en grill", "Barbecue": "Barbecue",
+    "Vegetarian": "Vegetarisch", "Vegan": "Veganistisch", "Street food": "Streetfood"
   },
   words: {
     acctSentCode: "We hebben een code van 6 cijfers naar {email} gestuurd. Typ hem hieronder om je hier aan te melden. (De link in de e-mail werkt ook, maar in de app op je beginscherm opent die je browser.)", acctCodeLabel: "Code uit de e-mail", acctVerify: "Aanmelden met code", acctVerifying: "Controleren…", acctCodeWrong: "Die code werkte niet. Controleer hem of vraag een nieuwe aan.", acctBadCode: "Typ de code van 6 cijfers uit de e-mail.",

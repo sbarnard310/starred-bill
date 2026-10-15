@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "279 Beihai Road, Huangpu, Shanghai",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-04",
@@ -25,7 +25,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZhs": "仅供应晚餐",
-  "cuisineZhs": "时尚法国菜",
   "chef": "Johnny Pham",
   "chefSource": "press"
 }

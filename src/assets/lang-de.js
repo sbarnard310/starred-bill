@@ -4,14 +4,19 @@
   lang: { label: "DE", html: "de", suffixes: ["De"], locale: "de-DE", maps: "de" },
   months: ["Jan.", "Feb.", "März", "Apr.", "Mai", "Juni", "Juli", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."],
   cuisines: {
-    "Alpine": "Alpenküche", "Asian": "Asiatisch", "Asian Contemporary": "Modern asiatisch", "Asian Influences": "Asiatische Einflüsse", "Austrian": "Österreichisch",
-    "Chinese": "Chinesisch", "Classic Cuisine": "Klassische Küche", "Classic French": "Klassisch französisch", "Contemporary": "Zeitgemäß", "Country cooking": "Bürgerliche Küche",
-    "Creative": "Kreativ", "Creative French": "Kreativ französisch", "European Contemporary": "Modern europäisch", "Farm to table": "Vom Hof auf den Tisch",
-    "Fish and Seafood": "Fisch und Meeresfrüchte", "French": "Französisch", "French Contemporary": "Modern französisch", "Fusion": "Fusion", "Innovative": "Innovativ",
-    "International": "International", "Italian": "Italienisch", "Italian Contemporary": "Modern italienisch", "Japanese": "Japanisch", "Japanese Contemporary": "Modern japanisch",
-    "Korean Contemporary": "Modern koreanisch", "Mediterranean Cuisine": "Mediterrane Küche", "Modern Cuisine": "Moderne Küche", "Modern French": "Modern französisch",
-    "Organic": "Bio", "Regional Cuisine": "Regionale Küche", "Seasonal Cuisine": "Saisonale Küche", "Sharing": "Zum Teilen", "Traditional Cuisine": "Traditionelle Küche",
-    "Tuscan": "Toskanisch", "Vegan": "Vegan", "Vegetarian": "Vegetarisch", "Swiss": "Schweizerisch", "German": "Deutsch", "Seafood": "Meeresfrüchte"
+    "Modern European": "Modern europäisch", "Modern American": "Modern amerikanisch", "Modern": "Modern", "Creative": "Kreativ",
+    "Classic": "Klassisch", "Regional": "Regional", "Farm to table": "Vom Hof auf den Tisch", "Fusion": "Fusion",
+    "International": "International", "European": "Europäisch", "French": "Französisch", "British": "Britisch", "Italian": "Italienisch",
+    "Spanish": "Spanisch", "Portuguese": "Portugiesisch", "Mediterranean": "Mediterran", "Greek": "Griechisch", "Turkish": "Türkisch",
+    "Alpine": "Alpenküche", "Austrian": "Österreichisch", "German": "Deutsch", "Nordic": "Nordisch", "Middle Eastern": "Nahöstlich",
+    "African": "Afrikanisch", "American": "Amerikanisch", "Mexican": "Mexikanisch", "Latin American": "Lateinamerikanisch",
+    "Australian": "Australisch", "New Zealand": "Neuseeländisch", "Pacific Islands": "Südsee", "Japanese": "Japanisch", "Sushi": "Sushi",
+    "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Koreanisch", "Chinese": "Chinesisch", "Cantonese": "Kantonesisch",
+    "Teochew": "Teochew", "Sichuan": "Sichuan", "Hunan": "Hunan", "Shanghainese": "Shanghai", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang",
+    "Fujian": "Fujian", "Beijing": "Peking", "Shandong": "Shandong", "Taiwanese": "Taiwanisch", "Thai": "Thailändisch",
+    "Vietnamese": "Vietnamesisch", "Malaysian": "Malaysisch", "Peranakan": "Peranakan", "Singaporean": "Singapurisch",
+    "Filipino": "Philippinisch", "Indian": "Indisch", "Asian": "Asiatisch", "Seafood": "Fisch und Meeresfrüchte",
+    "Steak and grill": "Steak und Grill", "Barbecue": "Barbecue", "Vegetarian": "Vegetarisch", "Vegan": "Vegan", "Street food": "Streetfood"
   },
   words: {
     acctSentCode: "Wir haben einen 6-stelligen Code an {email} geschickt. Gib ihn unten ein, um dich hier anzumelden. (Der Link in der E-Mail funktioniert auch, öffnet in der App auf dem Startbildschirm aber stattdessen den Browser.)", acctCodeLabel: "Code aus der E-Mail", acctVerify: "Mit Code anmelden", acctVerifying: "Wird geprüft…", acctCodeWrong: "Dieser Code hat nicht funktioniert. Prüfe ihn oder fordere einen neuen an.", acctBadCode: "Gib den 6-stelligen Code aus der E-Mail ein.",

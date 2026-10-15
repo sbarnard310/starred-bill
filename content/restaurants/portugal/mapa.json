@@ -4,7 +4,7 @@
   "area": "Montemor-o-Novo",
   "address": "Herdade das Valadas, N4, 7050-031, Montemor-o-Novo",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -35,6 +35,5 @@
   "lunchNotePt": "O mesmo menu ao almoço · sex.–dom.",
   "lunchWine": 115,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.l-and.com/s/MAPA-EN-2026.pdf",
-  "cuisinePt": "Atual"
+  "lunchSource": "https://www.l-and.com/s/MAPA-EN-2026.pdf"
 }

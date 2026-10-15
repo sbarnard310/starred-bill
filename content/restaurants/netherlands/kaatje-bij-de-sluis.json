@@ -4,7 +4,7 @@
   "area": "Blokzijl",
   "address": "Brouwerstraat 20, 8356 DV, Blokzijl",
   "stars": 1,
-  "cuisine": "Organic",
+  "cuisine": "Farm to table",
   "rating": 4.3,
   "reviews": 727,
   "dinnerType": "menu",
@@ -27,7 +27,6 @@
   "dinnerNoteNl": "Menu Spektakel, 6 gangen (menu Evergreen € 107,50)",
   "lunchNote": "Open for lunch · Sat–Sun",
   "lunchNoteNl": "Open voor lunch · za–zo",
-  "cuisineNl": "Bio",
   "chef": "Peter Postma",
   "chefSource": "press",
   "menus": [

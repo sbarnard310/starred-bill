@@ -4,7 +4,7 @@
   "area": "Hayingen",
   "address": "Aichelauer Straße 6, 72534, Hayingen",
   "stars": 1,
-  "cuisine": "Regional Cuisine",
+  "cuisine": "Regional",
   "rating": 5,
   "reviews": 69,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "dinnerNoteDe": "Vegetarisches Menü, 5 Gänge (Lamm in 3 Gängen +40 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Regional"
+  "lunchNoteDe": "Nur abends"
 }

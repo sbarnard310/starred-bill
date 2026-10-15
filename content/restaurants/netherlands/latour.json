@@ -4,7 +4,7 @@
   "area": "Noordwijk aan Zee",
   "address": "Koningin Astrid Boulevard 5, 2202 BK, Noordwijk aan Zee",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 295,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
   "lunchNote": "Open for lunch · Thu–Sat",
-  "lunchNoteNl": "Open voor lunch · do–za",
-  "cuisineNl": "Moderne keuken"
+  "lunchNoteNl": "Open voor lunch · do–za"
 }

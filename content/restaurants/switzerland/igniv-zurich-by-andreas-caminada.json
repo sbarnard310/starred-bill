@@ -3,7 +3,7 @@
   "city": "zurich",
   "address": "Marktgasse 17, 8001, Zurich",
   "stars": 2,
-  "cuisine": "Sharing",
+  "cuisine": "Creative",
   "rating": 4.8,
   "reviews": 455,
   "dinnerType": "menu",
@@ -29,9 +29,7 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "A partager",
   "dinnerNoteIt": "Menu degustazione",
-  "cuisineIt": "Condivisione",
   "lunchNoteDe": "Mittagsmenü",
   "lunchNoteFr": "Menu déjeuner",
   "lunchNoteIt": "Menu pranzo"

@@ -3,7 +3,7 @@
   "city": "shenzhen",
   "address": "40F, Futian Shangri-La Hotel, 4088 Yitian Road, Futian, Shenzhen",
   "stars": 1,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "rating": 4.7,
   "reviews": 20,
   "dinnerType": "spend",
@@ -19,7 +19,6 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "创新菜",
   "chef": "Christopher Kostow",
   "chefSource": "press"
 }

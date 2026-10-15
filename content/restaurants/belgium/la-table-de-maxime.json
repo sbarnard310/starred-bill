@@ -4,7 +4,7 @@
   "area": "Our",
   "address": "Our 23, 6852, Our",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 652,
   "dinnerType": "menu",
@@ -29,8 +29,6 @@
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 105 €)",
-  "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine moderne"
+  "lunchNoteFr": "Menu déjeuner"
 }

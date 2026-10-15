@@ -4,7 +4,7 @@
   "area": "Neufelden",
   "address": "Unternberg 6, 4120, Neufelden",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 497,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chef": "Philip Rachinger",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 98 €)",
-  "cuisineDe": "Moderne Küche",
   "lunchNoteDe": "Mittagsmenü"
 }

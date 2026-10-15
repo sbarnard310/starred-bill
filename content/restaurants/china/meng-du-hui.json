@@ -4,7 +4,7 @@
   "area": "Nanjing",
   "address": "No. 65, Nanjing Olympic Sports Center, 222 Jiangdong Middle Road, Jianye, Nanjing",
   "stars": 1,
-  "cuisine": "Hui Cuisine",
+  "cuisine": "Chinese",
   "dinnerType": "spend",
   "dinner": 200,
   "dinnerNote": "Typical spend",
@@ -18,7 +18,6 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "徽菜",
   "nameZhs": "梦都会",
   "areaZhs": "南京"
 }

@@ -4,7 +4,7 @@
   "area": "Sankt Wendel",
   "address": "Kirchstraße 22, 66606, Sankt Wendel",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 255,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 128 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-klassisch"
+  "lunchNoteDe": "Nur abends"
 }

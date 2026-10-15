@@ -4,7 +4,7 @@
   "area": "Lausanne",
   "address": "Rue du Grand Chêne 7, 1002, Lausanne",
   "stars": 2,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 254,
   "dinnerType": "menu",
@@ -20,9 +20,7 @@
   "chef": "Franck Pelux",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü, 6 Gänge (4 Gänge ab CHF 228)",
-  "cuisineDe": "Französisch-modern",
   "dinnerNoteFr": "Menu dégustation, six instants (quatre instants dès CHF 228)",
-  "cuisineFr": "Cuisine française moderne",
   "dinnerNoteIt": "Menu degustazione, 6 portate (4 portate da CHF 228)",
   "lunch": 98,
   "lunchType": "menu",
@@ -32,7 +30,6 @@
   "lunchNoteIt": "Pranzo d'affari, 3 portate, mer–gio (menu degustazione mer–sab)",
   "lunchSourceType": "site",
   "lunchSource": "https://www.lausanne-palace.ch/fileadmin/documents/lausanne-palace.ch/pdf/Restaurants/Cartes/MENU_AFFAIRES.pdf",
-  "cuisineIt": "Francese moderna",
   "areaIt": "Losanna",
   "wine": 138
 }

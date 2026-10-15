@@ -3,7 +3,7 @@
   "city": "munich",
   "address": "Amalienstraße 89/ Türkenstraße 86, 80799, Munich",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 295,
   "dinnerType": "menu",
@@ -20,6 +20,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "lunchNote": "Open for lunch · Fri–Sat",
-  "lunchNoteDe": "Mittags geöffnet · Fr–Sa",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Mittags geöffnet · Fr–Sa"
 }

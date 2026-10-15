@@ -25,14 +25,11 @@
   "chef": "Yutaka Kobayashi",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Japanisch",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine japonaise",
   "dinnerNoteIt": "Menu degustazione",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Giapponese"
+  "lunchNoteIt": "Solo a cena"
 }

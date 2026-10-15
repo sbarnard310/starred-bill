@@ -3,7 +3,7 @@
   "city": "hamburg",
   "address": "Neuer Jungfernstieg 9, 20354, Hamburg",
   "stars": 3,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 305,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-kreativ"
+  "lunchNoteDe": "Nur abends"
 }

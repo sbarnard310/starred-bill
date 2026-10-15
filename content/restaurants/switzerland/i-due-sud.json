@@ -4,7 +4,7 @@
   "area": "Lugano",
   "address": "riva Antonio Caccia 7, 6900, Lugano",
   "stars": 1,
-  "cuisine": "Mediterranean Cuisine",
+  "cuisine": "Mediterranean",
   "rating": 4.1,
   "reviews": 46,
   "dinnerType": "menu",
@@ -24,14 +24,11 @@
   "chef": "Marco Veneruso",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 150)",
-  "cuisineDe": "Mediterran",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 150)",
-  "cuisineFr": "Cuisine méditerranéenne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 150)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Mediterranea"
+  "lunchNoteIt": "Solo a cena"
 }

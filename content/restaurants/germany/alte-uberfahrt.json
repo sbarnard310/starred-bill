@@ -4,7 +4,7 @@
   "area": "Werder",
   "address": "Fischerstraße 48b, 14542, Werder",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 268,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 130 €)",
   "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteDe": "Mittags geöffnet · Sa–So",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Mittags geöffnet · Sa–So"
 }

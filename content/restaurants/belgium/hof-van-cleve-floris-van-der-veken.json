@@ -25,7 +25,6 @@
   "chef": "Peter Goossens",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 180)",
-  "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 180 €)",
   "lunch": 240,
   "lunchType": "menu",
@@ -34,6 +33,5 @@
   "lunchNoteFr": "Même menu le midi · mer.–sam.",
   "lunchWine": 100,
   "lunchSourceType": "site",
-  "lunchSource": "https://hofvancleve.com/menu",
-  "cuisineFr": "Cuisine créative"
+  "lunchSource": "https://hofvancleve.com/menu"
 }

@@ -4,7 +4,7 @@
   "area": "Marchin",
   "address": "chemin de Bertrandfontaine 7, 4570, Marchin",
   "stars": 1,
-  "cuisine": "Organic",
+  "cuisine": "Farm to table",
   "rating": 4.8,
   "reviews": 548,
   "dinnerType": "menu",
@@ -26,7 +26,6 @@
   "chef": "Arabelle Meirlaen",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
-  "cuisineNl": "Bio",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 130 €)",
   "lunch": 160,
   "lunchType": "menu",
@@ -35,6 +34,5 @@
   "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.",
   "lunchWine": 60,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.arabelle.be/cuisine-intuitive/",
-  "cuisineFr": "Cuisine bio"
+  "lunchSource": "https://www.arabelle.be/cuisine-intuitive/"
 }

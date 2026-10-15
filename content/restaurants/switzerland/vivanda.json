@@ -23,14 +23,11 @@
   "chef": "Dario Cadonau",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Kreativ",
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
-  "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Creativa"
+  "lunchNoteIt": "Solo a cena"
 }

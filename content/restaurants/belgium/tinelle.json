@@ -4,7 +4,7 @@
   "area": "Mechelen",
   "address": "Goswin de Stassartstraat 90, 2800, Mechelen",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 410,
   "dinnerType": "menu",
@@ -27,9 +27,7 @@
   "chef": "Ken Verschueren",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Eigentijds Frans",
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
-  "cuisineFr": "Cuisine française contemporaine",
   "areaFr": "Malines",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"

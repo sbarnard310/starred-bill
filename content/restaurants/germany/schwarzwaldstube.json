@@ -4,7 +4,7 @@
   "area": "Baiersbronn",
   "address": "Tonbachstraße 237, 72270, Baiersbronn",
   "stars": 3,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 216,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 295 €)",
   "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteDe": "Mittags geöffnet · Sa–So",
-  "cuisineDe": "Französisch-klassisch"
+  "lunchNoteDe": "Mittags geöffnet · Sa–So"
 }

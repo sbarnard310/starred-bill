@@ -3,7 +3,7 @@
   "city": "antwerpen",
   "address": "Boomgaardstraat 1, 2018, Antwerpen",
   "stars": 1,
-  "cuisine": "Traditional Cuisine",
+  "cuisine": "Classic",
   "rating": 4.4,
   "reviews": 246,
   "dinnerType": "main",
@@ -23,9 +23,7 @@
   "chef": "Bert Jan Michielsen",
   "chefSource": "michelin",
   "dinnerNoteNl": "Gemiddeld hoofdgerecht",
-  "cuisineNl": "Traditionele keuken",
   "dinnerNoteFr": "Plat principal type",
   "lunchNoteNl": "Open voor lunch · ma–vr",
-  "lunchNoteFr": "Ouvert le midi · lun.–ven.",
-  "cuisineFr": "Cuisine traditionnelle"
+  "lunchNoteFr": "Ouvert le midi · lun.–ven."
 }

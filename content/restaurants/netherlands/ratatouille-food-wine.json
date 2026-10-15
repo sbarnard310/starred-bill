@@ -4,7 +4,7 @@
   "area": "Haarlem",
   "address": "Spaarne 96, 2011 CL, Haarlem",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 778,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 110)",
   "lunchNote": "Open for lunch · Thu–Sun",
-  "lunchNoteNl": "Open voor lunch · do–zo",
-  "cuisineNl": "Moderne keuken"
+  "lunchNoteNl": "Open voor lunch · do–zo"
 }

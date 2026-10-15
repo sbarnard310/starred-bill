@@ -4,7 +4,7 @@
   "area": "Münster",
   "address": "Alter Fischmarkt 11A, 48143, Münster",
   "stars": 2,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 206,
   "dinnerType": "menu",
@@ -23,7 +23,6 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 160 €)",
   "lunchNote": "Open for lunch · Sundays",
   "lunchNoteDe": "Mittags geöffnet · Sonntag",
-  "cuisineDe": "Französisch-modern",
   "chef": "Frédéric Morel",
   "chefSource": "press"
 }

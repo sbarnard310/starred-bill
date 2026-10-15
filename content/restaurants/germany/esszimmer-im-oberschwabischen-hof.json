@@ -4,7 +4,7 @@
   "area": "Schwendi",
   "address": "Hauptstrasse 9, 88477, Schwendi",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 43,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 129 €)",
   "lunchNote": "Open for lunch · Saturdays",
-  "lunchNoteDe": "Mittags geöffnet · Samstag",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Mittags geöffnet · Samstag"
 }

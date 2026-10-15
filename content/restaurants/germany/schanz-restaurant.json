@@ -4,7 +4,7 @@
   "area": "Piesport",
   "address": "Bahnhofstraße 8a, 54498, Piesport",
   "stars": 3,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 324,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 247 €)",
   "lunchNote": "Open for lunch · Thu, Sat",
-  "lunchNoteDe": "Mittags geöffnet · Do, Sa",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Mittags geöffnet · Do, Sa"
 }

@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "Nieuwe Doelenstraat 2, 1012 CP, Amsterdam",
   "stars": 2,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 269,
   "dinnerType": "menu",
@@ -33,7 +33,6 @@
   "lunchWine": 120,
   "lunchSourceType": "site",
   "lunchSource": "https://restaurantflore.com/",
-  "cuisineNl": "Eigentijds",
   "dinnerNote": "Seasonal menu",
   "dinnerNoteNl": "Seizoensmenu"
 }

@@ -4,7 +4,7 @@
   "area": "Waasmunster",
   "address": "Fortenstraat 62, 9250, Waasmunster",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 134,
   "dinnerType": "menu",
@@ -23,7 +23,6 @@
   "chef": "Michiel De Bruyn",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 69)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 69 €)",
   "lunch": 145,
   "lunchType": "menu",
@@ -31,6 +30,5 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
   "lunchNoteFr": "Même menu le midi · mar.–ven.",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurantsense.be/menu",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchSource": "https://www.restaurantsense.be/menu"
 }

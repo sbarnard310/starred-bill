@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "Dam 9, 1012 JS, Amsterdam",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 456,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
   "lunchNote": "Open for lunch · Saturdays",
-  "lunchNoteNl": "Open voor lunch · zaterdag",
-  "cuisineNl": "Moderne keuken"
+  "lunchNoteNl": "Open voor lunch · zaterdag"
 }

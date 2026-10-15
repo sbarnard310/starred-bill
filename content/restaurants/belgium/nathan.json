@@ -3,7 +3,7 @@
   "city": "antwerpen",
   "address": "Lange Koepoortstraat 13, 2000, Antwerpen",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 451,
   "dinnerType": "menu",
@@ -20,7 +20,6 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 115)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 115 €)",
   "lunch": 170,
   "lunchType": "menu",
@@ -29,7 +28,6 @@
   "lunchNoteFr": "Même menu le midi · jeu.–ven.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurant-nathan.be/en/menu/",
-  "cuisineFr": "Cuisine française moderne",
   "chef": "Nathan Van Echelpoel",
   "chefSource": "press"
 }

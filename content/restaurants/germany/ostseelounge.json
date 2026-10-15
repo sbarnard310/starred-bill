@@ -4,7 +4,7 @@
   "area": "Dierhagen",
   "address": "Birkenallee 20, 18347, Dierhagen",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-06",
@@ -31,6 +31,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 78 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

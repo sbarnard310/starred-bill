@@ -4,7 +4,7 @@
   "area": "Waldenbuch",
   "address": "Nürtinger Straße 14, 71111, Waldenbuch",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.7,
   "reviews": 335,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "lunchNote": "Open for lunch · Fri, Sun",
-  "lunchNoteDe": "Mittags geöffnet · Fr, So",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Mittags geöffnet · Fr, So"
 }

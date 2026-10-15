@@ -4,7 +4,19 @@
   lang: { label: "MT", html: "mt", suffixes: ["Mt"], locale: "mt-MT", maps: "en-GB" },
   months: ["Jan", "Fra", "Mar", "Apr", "Mej", "Ġun", "Lul", "Aww", "Set", "Ott", "Nov", "Diċ"],
   cuisines: {
-    "Contemporary": "Kontemporanja", "Creative": "Kreattiva", "Mediterranean Cuisine": "Mediterranja", "Modern Cuisine": "Moderna", "Maltese": "Maltija", "Seafood": "Frott tal-baħar"
+    "Modern European": "Ewropea moderna", "Modern American": "Amerikana moderna", "Modern": "Moderna", "Creative": "Kreattiva",
+    "Classic": "Klassika", "Regional": "Reġjonali", "Farm to table": "Mill-għalqa għall-mejda", "Fusion": "Fusion",
+    "International": "Internazzjonali", "European": "Ewropea", "French": "Franċiża", "British": "Brittanika", "Italian": "Taljana",
+    "Spanish": "Spanjola", "Portuguese": "Portugiża", "Mediterranean": "Mediterranja", "Greek": "Griega", "Turkish": "Torka", "Alpine": "Alpina",
+    "Austrian": "Awstrijaka", "German": "Ġermaniża", "Nordic": "Nordika", "Middle Eastern": "Tal-Lvant Nofsani", "African": "Afrikana",
+    "American": "Amerikana", "Mexican": "Messikana", "Latin American": "Amerikana Latina", "Australian": "Awstraljana",
+    "New Zealand": "Taż-Żelanda l-Ġdida", "Pacific Islands": "Tal-Gżejjer tal-Paċifiku", "Japanese": "Ġappuniża", "Sushi": "Sushi",
+    "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Koreana", "Chinese": "Ċiniża", "Cantonese": "Kantoniża", "Teochew": "Teochew",
+    "Sichuan": "Sichuan", "Hunan": "Hunan", "Shanghainese": "Ta' Shanghai", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian",
+    "Beijing": "Ta' Beijing", "Shandong": "Shandong", "Taiwanese": "Tajwaniża", "Thai": "Tajlandiża", "Vietnamese": "Vjetnamiża",
+    "Malaysian": "Malasjana", "Peranakan": "Peranakan", "Singaporean": "Singaporjana", "Filipino": "Filippina", "Indian": "Indjana",
+    "Asian": "Ażjatika", "Seafood": "Frott tal-baħar", "Steak and grill": "Steak u grill", "Barbecue": "Barbecue", "Vegetarian": "Veġetarjana",
+    "Vegan": "Vegana", "Street food": "Ikel tat-triq"
   },
   words: {
     acctSentCode: "Bgħatnielek kodiċi ta' 6 ċifri fuq {email}. Iktbu hawn taħt biex tidħol hawnhekk. (Il-link fl-email jaħdem ukoll, imma fl-app fuq l-iskrin ewlieni jiftaħ il-browser minflok.)", acctCodeLabel: "Kodiċi mill-email", acctVerify: "Idħol bil-kodiċi", acctVerifying: "Qed niċċekkjaw…", acctCodeWrong: "Dak il-kodiċi ma ħadimx. Iċċekkjah jew itlob ieħor.", acctBadCode: "Ikteb il-kodiċi ta' 6 ċifri mill-email.",

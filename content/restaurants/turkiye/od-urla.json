@@ -4,7 +4,7 @@
   "area": "Izmir",
   "address": "Rüstem Mahallesi, Süt Pınarı Mevkii, 2018/9 Sokak No:28, Urla, 35430, Izmir",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.5,
   "reviews": 3529,
   "dinnerType": "menu",
@@ -33,7 +33,6 @@
   "lunchWine": 5250,
   "lunchSourceType": "site",
   "lunchSource": "https://cms.odurla.com/uploads/WEB_Sefin_Yolculugu_Tadim_Menuesue_Temmuz_2026_27592aea4e.pdf",
-  "cuisineTr": "Modern Mutfak",
   "areaTr": "İzmir",
   "menus": [
     {

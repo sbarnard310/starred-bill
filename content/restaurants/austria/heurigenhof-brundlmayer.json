@@ -4,7 +4,7 @@
   "area": "Langenlois",
   "address": "Walterstr. 14, 3550, Langenlois",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -29,6 +29,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
   "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteDe": "Mittags geöffnet · Sa–So",
-  "cuisineDe": "Französisch-klassisch"
+  "lunchNoteDe": "Mittags geöffnet · Sa–So"
 }

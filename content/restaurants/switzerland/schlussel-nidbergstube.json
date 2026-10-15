@@ -4,7 +4,7 @@
   "area": "Mels",
   "address": "Oberdorfstrasse 5, 8887, Mels",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.8,
   "reviews": 106,
   "dinnerType": "menu",
@@ -23,15 +23,12 @@
     "gluten-free"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 75)",
-  "cuisineDe": "Klassische Küche",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 75)",
-  "cuisineFr": "Cuisine classique",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 75)",
   "lunchNote": "Open for lunch · Wed–Sat",
   "lunchNoteDe": "Mittags geöffnet · Mi–Sa",
   "lunchNoteFr": "Ouvert le midi · mer.–sam.",
   "lunchNoteIt": "Aperto a pranzo · mer–sab",
-  "cuisineIt": "Classica",
   "chef": "Roger Kalberer",
   "chefSource": "press"
 }

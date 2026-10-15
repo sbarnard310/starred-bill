@@ -4,7 +4,7 @@
   "area": "Reguengos de Monsaraz",
   "address": "Herdade do Esporão, 7200-999, Reguengos de Monsaraz",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 1475,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "lunchNotePt": "O mesmo menu ao almoço · ter.–sáb.",
   "lunchWine": 50,
   "lunchSourceType": "site",
-  "lunchSource": "https://esporao.com/pt/turismo/restaurante-da-herdade-do-esporao",
-  "cuisinePt": "Atual"
+  "lunchSource": "https://esporao.com/pt/turismo/restaurante-da-herdade-do-esporao"
 }

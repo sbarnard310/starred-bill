@@ -4,7 +4,7 @@
   "area": "Pirmasens",
   "address": "Landauer Straße 105, 66953, Pirmasens",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.7,
   "reviews": 248,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 69 €)",
   "lunchNote": "Open for lunch · Thu–Sat",
-  "lunchNoteDe": "Mittags geöffnet · Do–Sa",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Mittags geöffnet · Do–Sa"
 }

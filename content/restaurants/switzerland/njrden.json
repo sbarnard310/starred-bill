@@ -4,7 +4,7 @@
   "area": "Aubonne",
   "address": "Place du Marché 15, 1170, Aubonne",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 414,
   "dinnerType": "menu",
@@ -26,9 +26,7 @@
   "chef": "Philippe Deslarzes",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 60)",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 60)",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 60)",
   "lunch": 82,
   "lunchType": "menu",
@@ -38,6 +36,5 @@
   "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
   "lunchWine": 92,
   "lunchSourceType": "site",
-  "lunchSource": "https://njorden.com/carte-cafe",
-  "cuisineIt": "Moderna"
+  "lunchSource": "https://njorden.com/carte-cafe"
 }

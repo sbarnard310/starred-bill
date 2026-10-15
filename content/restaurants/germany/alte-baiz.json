@@ -4,7 +4,7 @@
   "area": "Neuhausen",
   "address": "Hauptstraße 2, 75242, Neuhausen",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 14,
   "dinnerType": "menu",
@@ -21,7 +21,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "chef": "Claudio Urru",
   "chefSource": "michelin"
 }

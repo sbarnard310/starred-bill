@@ -4,7 +4,7 @@
   "area": "Neuhütten",
   "address": "Saarstraße 2, 54422, Neuhütten",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 155,
   "dinnerType": "menu",
@@ -20,7 +20,6 @@
   "dinnerNoteDe": "Menü (Menüs 175–195 €)",
   "lunchNote": "Open for lunch · Sundays",
   "lunchNoteDe": "Mittags geöffnet · Sonntag",
-  "cuisineDe": "Französisch-klassisch",
   "dinner": 175,
   "source": "https://www.schlemmer-atlas.de/restaurants/deutschland/neuhuetten-hochwald/le-temple/"
 }

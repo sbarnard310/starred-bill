@@ -4,7 +4,7 @@
   "area": "Temploux",
   "address": "rue Roger Clément 32, 5020, Temploux",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 1087,
   "dinnerType": "menu",
@@ -23,7 +23,6 @@
   "chef": "Raphaël Adam",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
-  "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 50 €)",
   "lunch": 90,
   "lunchType": "menu",
@@ -31,6 +30,5 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
   "lunchNoteFr": "Même menu le midi · mer.–sam.",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.lessentiel.be/carte-menus-2/",
-  "cuisineFr": "Cuisine française créative"
+  "lunchSource": "https://www.lessentiel.be/carte-menus-2/"
 }

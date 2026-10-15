@@ -3,7 +3,7 @@
   "city": "hangzhou",
   "address": "Unit 304-305, 3F, Building A, Zonia Tide Ginza, 2077 Binsheng Road, Binjiang, Hangzhou",
   "stars": 1,
-  "cuisine": "Chinese Contemporary",
+  "cuisine": "Chinese",
   "dinnerType": "spend",
   "dinner": 896,
   "dinnerNote": "Typical spend",
@@ -16,7 +16,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZhs": "仅供应晚餐",
-  "cuisineZhs": "时尚中国菜",
   "nameZhs": "暗香",
   "chef": "Lin Zihan",
   "chefSource": "press"

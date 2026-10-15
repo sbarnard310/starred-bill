@@ -4,7 +4,7 @@
   "area": "Deggendorf",
   "address": "Edlmairstraße 1, 94469, Deggendorf",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 94,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "chef": "Nicolas La Rocca",
   "chefSource": "press"
 }

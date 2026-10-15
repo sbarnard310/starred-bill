@@ -4,7 +4,7 @@
   "area": "Zuidlaren",
   "address": "Stationsweg 41, 9471 GK, Zuidlaren",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 245,
   "dinnerType": "menu",
@@ -22,7 +22,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Modern Frans",
   "chef": "Jilt Cazemier",
   "chefSource": "press"
 }

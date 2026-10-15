@@ -3,7 +3,7 @@
   "city": "rio-de-janeiro",
   "address": "Largo dos Leões 35, Humaitá, 22260-210, Rio de Janeiro",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern American",
   "rating": 4.7,
   "reviews": 957,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNotePt": "Menu de degustação",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Moderna"
+  "lunchNotePt": "Só jantar"
 }

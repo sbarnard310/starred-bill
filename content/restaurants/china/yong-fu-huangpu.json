@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "11-12F, Cathay Building, Jin Jiang Hotel, 59 South Maoming Road, Huangpu, Shanghai",
   "stars": 1,
-  "cuisine": "Ningbo",
+  "cuisine": "Zhejiang",
   "rating": 4.1,
   "reviews": 27,
   "dinnerType": "spend",
@@ -19,6 +19,5 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "宁波菜",
   "nameZhs": "甬府（黄浦）"
 }

@@ -4,7 +4,7 @@
   "area": "Herleshausen",
   "address": "Hohenhaus 1, 37293, Herleshausen",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 5,
   "reviews": 11,
   "dinnerType": "menu",
@@ -22,6 +22,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 160 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

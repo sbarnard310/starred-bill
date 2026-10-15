@@ -4,7 +4,7 @@
   "area": "Schorndorf",
   "address": "Höllgasse 9, 73614, Schorndorf",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 5,
   "reviews": 5,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 102 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Nur abends"
 }

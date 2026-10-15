@@ -4,7 +4,7 @@
   "area": "Hoog Soeren",
   "address": "Amersfoortseweg 86, 7346 AA, Hoog Soeren",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-10",
@@ -33,6 +33,5 @@
   "lunchNote": "Same menu at lunch · Saturdays",
   "lunchNoteNl": "Zelfde menu bij de lunch · zaterdag",
   "lunchSourceType": "site",
-  "lunchSource": "https://echoput.nl/wild-atelier/",
-  "cuisineNl": "Moderne keuken"
+  "lunchSource": "https://echoput.nl/wild-atelier/"
 }

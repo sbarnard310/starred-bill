@@ -4,7 +4,7 @@
   "area": "Lugano",
   "address": "Via Guidino 29, 6900, Lugano",
   "stars": 1,
-  "cuisine": "Italian Contemporary",
+  "cuisine": "Italian",
   "rating": 4.6,
   "reviews": 518,
   "dinnerType": "menu",
@@ -25,14 +25,11 @@
   "chef": "Diego Della Schiava",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 140)",
-  "cuisineDe": "Italienisch-zeitgemäß",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 140)",
-  "cuisineFr": "Cuisine italienne contemporaine",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 140)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Italiana contemporanea"
+  "lunchNoteIt": "Solo a cena"
 }

@@ -4,7 +4,7 @@
   "area": "Gernsbach",
   "address": "Schloss Eberstein 1, 76593, Gernsbach",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 168,
   "dinnerType": "menu",
@@ -32,6 +32,5 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
   "lunchWine": 94,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.hotel-schloss-eberstein.de/wp-content/uploads/06-Menuekarte-16.09.-31.12-1.pdf",
-  "cuisineDe": "Französisch-klassisch"
+  "lunchSource": "https://www.hotel-schloss-eberstein.de/wp-content/uploads/06-Menuekarte-16.09.-31.12-1.pdf"
 }

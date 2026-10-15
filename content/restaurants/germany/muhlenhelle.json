@@ -4,7 +4,7 @@
   "area": "Gummersbach",
   "address": "Hohler Straße 1, 51645, Gummersbach",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 391,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 64 €)",
   "lunchNote": "Open for lunch · Sundays",
-  "lunchNoteDe": "Mittags geöffnet · Sonntag",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Mittags geöffnet · Sonntag"
 }

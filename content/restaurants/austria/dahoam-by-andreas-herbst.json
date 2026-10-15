@@ -4,7 +4,7 @@
   "area": "Leogang",
   "address": "Rain 100, 5771, Leogang",
   "stars": 1,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "rating": 4.9,
   "reviews": 20,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 80 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Saisonal"
+  "lunchNoteDe": "Nur abends"
 }

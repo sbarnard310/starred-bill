@@ -4,7 +4,7 @@
   "area": "Ehningen",
   "address": "Keltenweg 1, 71139, Ehningen",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 782,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 59 €)",
   "lunchNote": "Open for lunch · Wed–Sat",
   "lunchNoteDe": "Mittags geöffnet · Mi–Sa",
-  "cuisineDe": "Französisch-klassisch",
   "chef": "Franz Feckl",
   "chefSource": "press"
 }

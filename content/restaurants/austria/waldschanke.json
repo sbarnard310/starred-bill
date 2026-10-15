@@ -4,7 +4,7 @@
   "area": "Grieskirchen",
   "address": "Kickendorf 15, 4710, Grieskirchen",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 382,
   "dinnerType": "menu",
@@ -31,6 +31,5 @@
   "lunchWine": 78,
   "lunchNoteDe": "Gleiches Menü am Mittag · Di–Sa",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.waldschaenke.at/uploads/AkYLWWOn/Abendkarte_August2026.pdf",
-  "cuisineDe": "Modern"
+  "lunchSource": "https://www.waldschaenke.at/uploads/AkYLWWOn/Abendkarte_August2026.pdf"
 }

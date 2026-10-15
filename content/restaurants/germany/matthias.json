@@ -3,7 +3,7 @@
   "city": "berlin",
   "address": "Kollwitzstraße 87, 10435, Berlin",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 140,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "lunchNote": "Same menu at lunch · Saturdays",
   "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.matthiasrestaurant.com/",
-  "cuisineDe": "Moderne Küche"
+  "lunchSource": "https://www.matthiasrestaurant.com/"
 }

@@ -3,7 +3,7 @@
   "city": "chengdu",
   "address": "No. 318, 3F, Chinese Financial Center, 33 Jiaozi Avenue, Wuhou, Chengdu",
   "stars": 1,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "dinnerType": "spend",
   "dinner": 1477,
   "dinnerNote": "Typical spend",
@@ -13,7 +13,6 @@
   "lng": 104.0607617,
   "michelinId": "1204189",
   "dinnerNoteZhs": "人均消费",
-  "cuisineZhs": "创新菜",
   "nameZhs": "蔻",
   "chef": "Yang Jin and You Meiyi",
   "chefSource": "press"

@@ -4,7 +4,7 @@
   "area": "Grindelwald",
   "address": "Dorfstrasse 53, 3818, Grindelwald",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 85,
   "dinnerType": "menu",
@@ -25,14 +25,11 @@
   "chef": "Dávid Imre Rózsa",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Modern",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Contemporanea"
+  "lunchNoteIt": "Solo a cena"
 }

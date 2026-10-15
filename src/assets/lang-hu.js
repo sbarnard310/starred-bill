@@ -4,7 +4,18 @@
   lang: { label: "HU", html: "hu", suffixes: ["Hu"], locale: "hu-HU", maps: "hu" },
   months: ["jan.", "febr.", "márc.", "ápr.", "máj.", "jún.", "júl.", "aug.", "szept.", "okt.", "nov.", "dec."],
   cuisines: {
-    "Creative": "Kreatív", "Modern Cuisine": "Modern konyha", "Contemporary": "Kortárs", "Hungarian": "Magyar", "Innovative": "Innovatív", "Traditional Cuisine": "Hagyományos konyha"
+    "Modern European": "Modern európai", "Modern American": "Modern amerikai", "Modern": "Modern konyha", "Creative": "Kreatív",
+    "Classic": "Klasszikus konyha", "Regional": "Regionális konyha", "Farm to table": "Farmtól az asztalig", "Fusion": "Fúziós",
+    "International": "Nemzetközi", "European": "Európai", "French": "Francia", "British": "Brit", "Italian": "Olasz", "Spanish": "Spanyol",
+    "Portuguese": "Portugál", "Mediterranean": "Mediterrán", "Greek": "Görög", "Turkish": "Török", "Alpine": "Alpesi", "Austrian": "Osztrák",
+    "German": "Német", "Nordic": "Skandináv", "Middle Eastern": "Közel-keleti", "African": "Afrikai", "American": "Amerikai",
+    "Mexican": "Mexikói", "Latin American": "Latin-amerikai", "Australian": "Ausztrál", "New Zealand": "Új-zélandi",
+    "Pacific Islands": "Csendes-óceáni", "Japanese": "Japán", "Sushi": "Sushi", "Tempura": "Tempura", "Yakitori": "Yakitori", "Korean": "Koreai",
+    "Chinese": "Kínai", "Cantonese": "Kantoni", "Teochew": "Teochew", "Sichuan": "Szecsuáni", "Hunan": "Hunani", "Shanghainese": "Sanghaji",
+    "Huaiyang": "Huaiyang", "Zhejiang": "Csöcsiangi", "Fujian": "Fucsieni", "Beijing": "Pekingi", "Shandong": "Santungi", "Taiwanese": "Tajvani",
+    "Thai": "Thai", "Vietnamese": "Vietnámi", "Malaysian": "Malajziai", "Peranakan": "Peranakan", "Singaporean": "Szingapúri",
+    "Filipino": "Filippínó", "Indian": "Indiai", "Asian": "Ázsiai", "Seafood": "Tenger gyümölcsei", "Steak and grill": "Steak és grill",
+    "Barbecue": "Barbecue", "Vegetarian": "Vegetáriánus", "Vegan": "Vegán", "Street food": "Street food"
   },
   words: {
     acctSentCode: "Elküldtünk egy 6 jegyű kódot a(z) {email} címre. Írd be lent, hogy itt bejelentkezz. (Az e-mailben lévő link is működik, de a kezdőképernyős alkalmazásban a böngészőt nyitja meg.)", acctCodeLabel: "Kód az e-mailből", acctVerify: "Bejelentkezés kóddal", acctVerifying: "Ellenőrzés…", acctCodeWrong: "Ez a kód nem működött. Ellenőrizd, vagy kérj újat.", acctBadCode: "Írd be az e-mailben kapott 6 jegyű kódot.",

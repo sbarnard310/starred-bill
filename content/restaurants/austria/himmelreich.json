@@ -4,7 +4,7 @@
   "area": "Zaußenberg",
   "address": "Ortsstraße 4, 3701, Zaußenberg",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -35,6 +35,5 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Sa–So",
   "lunchWine": 65,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurant-himmelreich.at/restaurant-himmelreich-en",
-  "cuisineDe": "Modern"
+  "lunchSource": "https://www.restaurant-himmelreich.at/restaurant-himmelreich-en"
 }

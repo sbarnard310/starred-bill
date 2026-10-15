@@ -4,7 +4,7 @@
   "area": "Obergurgl",
   "address": "Kressbrunnenweg 3, 6456, Obergurgl",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 5,
   "reviews": 4,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Modern"
+  "lunchNoteDe": "Nur abends"
 }

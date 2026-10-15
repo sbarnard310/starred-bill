@@ -4,7 +4,7 @@
   "area": "Bubikon",
   "address": "Wolfhauserstrasse 2, 8608, Bubikon",
   "stars": 1,
-  "cuisine": "Mediterranean Cuisine",
+  "cuisine": "Mediterranean",
   "rating": 4.8,
   "reviews": 396,
   "dinnerType": "menu",
@@ -30,11 +30,8 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 49)",
   "lunchNoteDe": "Mittagsmenü",
-  "cuisineDe": "Mediterran",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 49)",
   "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine méditerranéenne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 49)",
-  "lunchNoteIt": "Menu pranzo",
-  "cuisineIt": "Mediterranea"
+  "lunchNoteIt": "Menu pranzo"
 }

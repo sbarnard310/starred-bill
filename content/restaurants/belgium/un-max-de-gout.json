@@ -4,7 +4,7 @@
   "area": "Comblain-au-Pont",
   "address": "quai de l'Ourthe 17, 4170, Comblain-au-Pont",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 440,
   "dinnerType": "menu",
@@ -28,9 +28,7 @@
   "chef": "Maxime Zimmer",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 40)",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 40 €)",
-  "cuisineFr": "Cuisine moderne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"
 }

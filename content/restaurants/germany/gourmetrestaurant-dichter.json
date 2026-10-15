@@ -4,7 +4,7 @@
   "area": "Rottach-Egern",
   "address": "Aribostraße 19, 83700, Rottach-Egern",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 84,
   "dinnerType": "menu",
@@ -22,7 +22,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "chef": "Thomas Kellermann",
   "chefSource": "press"
 }

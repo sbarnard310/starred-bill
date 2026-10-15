@@ -3,7 +3,7 @@
   "city": "beijing",
   "address": "1F, Luohong Art Museum, 89 Capital Airport Road, Shunyi, Beijing",
   "stars": 2,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "change": "up",
   "changeNote": "Gained a second star",
   "changeDate": "2025-10",
@@ -22,6 +22,5 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "时尚法国菜",
   "nameZhs": "黑天鹅"
 }

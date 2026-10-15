@@ -4,7 +4,19 @@
   lang: { label: "СР", html: "sr-Cyrl", suffixes: ["Sr"], locale: "sr-Cyrl-RS", maps: "sr" },
   months: ["јан", "феб", "мар", "апр", "мај", "јун", "јул", "авг", "сеп", "окт", "нов", "дец"],
   cuisines: {
-    "Modern Cuisine": "Модерна кухиња", "Creative": "Креативна", "Contemporary": "Савремена", "Serbian": "Српска", "Traditional Cuisine": "Традиционална кухиња"
+    "Modern European": "Модерна европска", "Modern American": "Модерна америчка", "Modern": "Модерна кухиња", "Creative": "Креативна",
+    "Classic": "Класична кухиња", "Regional": "Регионална кухиња", "Farm to table": "Од фарме до стола", "Fusion": "Фјужн",
+    "International": "Интернационална", "European": "Европска", "French": "Француска", "British": "Британска", "Italian": "Италијанска",
+    "Spanish": "Шпанска", "Portuguese": "Португалска", "Mediterranean": "Медитеранска", "Greek": "Грчка", "Turkish": "Турска",
+    "Alpine": "Алпска", "Austrian": "Аустријска", "German": "Немачка", "Nordic": "Нордијска", "Middle Eastern": "Блискоисточна",
+    "African": "Афричка", "American": "Америчка", "Mexican": "Мексичка", "Latin American": "Латиноамеричка", "Australian": "Аустралијска",
+    "New Zealand": "Новозеландска", "Pacific Islands": "Пацифичка", "Japanese": "Јапанска", "Sushi": "Суши", "Tempura": "Темпура",
+    "Yakitori": "Јакитори", "Korean": "Корејска", "Chinese": "Кинеска", "Cantonese": "Кантонска", "Teochew": "Чаоџоу", "Sichuan": "Сечуанска",
+    "Hunan": "Хунанска", "Shanghainese": "Шангајска", "Huaiyang": "Хуаијанг", "Zhejiang": "Џеђанг", "Fujian": "Фуђен", "Beijing": "Пекиншка",
+    "Shandong": "Шандунг", "Taiwanese": "Тајванска", "Thai": "Тајландска", "Vietnamese": "Вијетнамска", "Malaysian": "Малезијска",
+    "Peranakan": "Перанакан", "Singaporean": "Сингапурска", "Filipino": "Филипинска", "Indian": "Индијска", "Asian": "Азијска",
+    "Seafood": "Морски плодови", "Steak and grill": "Стекови и роштиљ", "Barbecue": "Барбекју", "Vegetarian": "Вегетаријанска",
+    "Vegan": "Веганска", "Street food": "Улична храна"
   },
   words: {
     acctSentCode: "Послали смо шестоцифрени код на {email}. Унесите га испод да бисте се овде пријавили. (Линк у имејлу такође ради, али у апликацији на почетном екрану отвара прегледач.)", acctCodeLabel: "Код из имејла", acctVerify: "Пријава кодом", acctVerifying: "Проверавамо…", acctCodeWrong: "Тај код није успео. Проверите га или затражите нови.", acctBadCode: "Унесите шестоцифрени код из имејла.",

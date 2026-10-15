@@ -4,7 +4,7 @@
   "area": "Leogang",
   "address": "Leogang 3, 5771, Leogang",
   "stars": 1,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "rating": 4.8,
   "reviews": 225,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "lunchNote": "Same menu at lunch · Wed–Mon",
   "lunchNoteDe": "Gleiches Menü am Mittag · Mi–Mo",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.hotelkirchenwirt.at/restaurant/",
-  "cuisineDe": "Saisonal"
+  "lunchSource": "https://www.hotelkirchenwirt.at/restaurant/"
 }

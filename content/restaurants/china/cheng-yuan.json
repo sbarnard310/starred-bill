@@ -4,7 +4,7 @@
   "area": "Yangzhou",
   "address": "7 Fengle Upper Street, Hanjiang, Yangzhou",
   "stars": 1,
-  "cuisine": "Chinese Contemporary",
+  "cuisine": "Chinese",
   "rating": 5,
   "reviews": 1,
   "dinnerType": "spend",
@@ -21,7 +21,6 @@
     "halal"
   ],
   "dinnerNoteZhs": "人均消费",
-  "cuisineZhs": "时尚中国菜",
   "nameZhs": "橙园",
   "areaZhs": "扬州"
 }

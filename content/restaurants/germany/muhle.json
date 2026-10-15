@@ -4,7 +4,7 @@
   "area": "Schluchsee",
   "address": "Unterer Mühlenweg 13, 79859, Schluchsee",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "up",
   "changeNote": "Gained a second star",
   "changeDate": "2026-06",
@@ -29,6 +29,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

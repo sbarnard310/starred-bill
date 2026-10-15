@@ -4,7 +4,7 @@
   "area": "Andermatt",
   "address": "Gotthardstrasse 4, 6490, Andermatt",
   "stars": 1,
-  "cuisine": "Japanese Contemporary",
+  "cuisine": "Japanese",
   "rating": 4.6,
   "reviews": 58,
   "dinner": 149,
@@ -26,9 +26,7 @@
   "chef": "Dominik Sato and Fabio Toffolon",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Japanisch-zeitgemäß",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine japonaise contemporaine",
   "dinnerNoteIt": "Menu degustazione",
   "lunch": 149,
   "lunchType": "menu",
@@ -38,6 +36,5 @@
   "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
   "lunchWine": 89,
   "lunchSourceType": "site",
-  "lunchSource": "https://d1pe873sdaunfo.cloudfront.net/www.thechediandermatt.com-1283389050/cms/pressroom/tr_menu_final_opening_2026_chef_approved_3_4.pdf",
-  "cuisineIt": "Giapponese contemporanea"
+  "lunchSource": "https://d1pe873sdaunfo.cloudfront.net/www.thechediandermatt.com-1283389050/cms/pressroom/tr_menu_final_opening_2026_chef_approved_3_4.pdf"
 }

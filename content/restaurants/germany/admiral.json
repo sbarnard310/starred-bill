@@ -4,7 +4,7 @@
   "area": "Weisenheim am Berg",
   "address": "Leistadter Straße 6, 67273, Weisenheim am Berg",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 235,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "lunchNote": "Same menu at lunch · Sundays",
   "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.admiral-weisenheim.de/speisekarte/",
-  "cuisineDe": "Modern"
+  "lunchSource": "https://www.admiral-weisenheim.de/speisekarte/"
 }

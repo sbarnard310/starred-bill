@@ -3,7 +3,7 @@
   "city": "stuttgart",
   "address": "Wilhelmsplatz 6, 70182, Stuttgart",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-06",
@@ -30,6 +30,5 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
   "lunchWine": 120,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.laesa.de/essen",
-  "cuisineDe": "Moderne Küche"
+  "lunchSource": "https://www.laesa.de/essen"
 }

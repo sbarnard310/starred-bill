@@ -4,7 +4,7 @@
   "area": "Maria Wörth",
   "address": "Seeplatz Nr. 6, 9082, Maria Wörth",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.5,
   "reviews": 423,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "lunchNote": "Same menu at lunch · Saturdays",
   "lunchNoteDe": "Gleiches Menü am Mittag · Samstag",
   "lunchSourceType": "site",
-  "lunchSource": "https://hubertwallner.com/kueche-und-keller/",
-  "cuisineDe": "Moderne Küche"
+  "lunchSource": "https://hubertwallner.com/kueche-und-keller/"
 }

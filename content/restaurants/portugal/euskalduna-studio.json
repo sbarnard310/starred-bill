@@ -3,7 +3,7 @@
   "city": "porto",
   "address": "Rua Santo Ildefonso 404, 4000-466, Porto",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 643,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "lunchNotePt": "O mesmo menu ao almoço · sábado",
   "lunchWine": 95,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.euskaldunastudio.pt/menu.html",
-  "cuisinePt": "Moderna"
+  "lunchSource": "https://www.euskaldunastudio.pt/menu.html"
 }

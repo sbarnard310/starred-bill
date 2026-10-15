@@ -3,7 +3,7 @@
   "city": "rotterdam",
   "address": "Boompjes 41, 3011 XB, Rotterdam",
   "stars": 2,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 606,
   "dinnerType": "menu",
@@ -32,6 +32,5 @@
   "chef": "Fred Mustert",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Creatief Frans",
   "lunchNoteNl": "Lunchmenu"
 }

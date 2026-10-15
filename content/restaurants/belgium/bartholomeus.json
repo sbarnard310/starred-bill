@@ -4,7 +4,7 @@
   "area": "Heist",
   "address": "Zeedijk 267, 8301, Heist",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 496,
   "dinnerType": "menu",
@@ -20,10 +20,8 @@
   "chef": "Bart Desmidt",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation",
   "lunchNote": "Open for lunch · Wed–Sat",
   "lunchNoteNl": "Open voor lunch · wo–za",
-  "lunchNoteFr": "Ouvert le midi · mer.–sam.",
-  "cuisineFr": "Cuisine moderne"
+  "lunchNoteFr": "Ouvert le midi · mer.–sam."
 }

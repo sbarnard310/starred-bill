@@ -4,7 +4,7 @@
   "area": "Roucourt",
   "address": "Rue d'Arondeau 29, 7601, Roucourt",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 205,
   "dinnerType": "menu",
@@ -27,8 +27,6 @@
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 70)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 70 €)",
-  "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchNoteFr": "Menu déjeuner"
 }

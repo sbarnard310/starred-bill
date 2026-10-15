@@ -4,7 +4,7 @@
   "area": "Vila do Conde",
   "address": "Largo Dom Afonso Sanches, 4480-754, Vila do Conde",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.5,
   "reviews": 20,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 110 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Moderna"
+  "lunchNotePt": "Só jantar"
 }

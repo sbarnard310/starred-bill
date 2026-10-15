@@ -3,7 +3,7 @@
   "city": "nuremberg",
   "address": "Winterstraße 15, 90431, Nuremberg",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 95,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "chef": "Valentin Rottner",
   "chefSource": "michelin"
 }

@@ -4,7 +4,7 @@
   "area": "Leuven",
   "address": "Bondgenotenlaan 114, 3000, Leuven",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 310,
   "dinnerType": "menu",
@@ -21,7 +21,6 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 70)",
-  "cuisineNl": "Eigentijds",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 70 €)",
   "lunch": 140,
   "lunchType": "menu",
@@ -30,7 +29,6 @@
   "lunchNoteFr": "Même menu le midi · mar.–ven.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.essenciel.be/nl/menu",
-  "cuisineFr": "Cuisine actuelle",
   "chef": "Niels Brants",
   "chefSource": "press"
 }

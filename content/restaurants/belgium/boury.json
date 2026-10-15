@@ -4,7 +4,7 @@
   "area": "Roeselare",
   "address": "Rumbeeksesteenweg 300, 8800, Roeselare",
   "stars": 3,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 905,
   "dinnerType": "menu",
@@ -29,9 +29,7 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine française créative",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner",
   "chef": "Tim Boury",

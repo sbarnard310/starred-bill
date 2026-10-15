@@ -27,14 +27,11 @@
   "chef": "Christian Vogel",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Kreativ",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Menu degustazione",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Creativa"
+  "lunchNoteIt": "Solo a cena"
 }

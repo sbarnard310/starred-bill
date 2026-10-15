@@ -3,7 +3,7 @@
   "city": "sao-paulo",
   "address": "Alameda Lorena 1186, 01424-004, São Paulo",
   "stars": 1,
-  "cuisine": "Japanese Contemporary",
+  "cuisine": "Japanese",
   "rating": 4.8,
   "reviews": 352,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "chefSource": "michelin",
   "dinnerNotePt": "Menu de degustação (outros menus desde R$530)",
   "lunchNote": "Open for lunch · Mon–Sat",
-  "lunchNotePt": "Aberto ao almoço · seg.–sáb.",
-  "cuisinePt": "Japonesa contemporânea"
+  "lunchNotePt": "Aberto ao almoço · seg.–sáb."
 }

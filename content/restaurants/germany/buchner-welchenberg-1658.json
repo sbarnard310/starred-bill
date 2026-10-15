@@ -4,7 +4,7 @@
   "area": "Niederwinkling",
   "address": "Freymannstraße 15, 94559, Niederwinkling",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.6,
   "reviews": 149,
   "dinnerType": "menu",
@@ -21,6 +21,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 86 €)",
   "lunchNote": "Open for lunch · Thu–Sun",
-  "lunchNoteDe": "Mittags geöffnet · Do–So",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Mittags geöffnet · Do–So"
 }

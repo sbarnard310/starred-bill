@@ -7,7 +7,7 @@
   "formerStars": 1,
   "statusNote": "Closed in 2026: The Peninsula Beijing no longer lists it among its restaurants (checked October 2026)",
   "statusNoteZhs": "已于 2026 年停业：北京王府半岛酒店的餐厅名单中已不再有它（2026 年 10 月核实）",
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 21,
   "dinnerType": "menu",
@@ -20,6 +20,5 @@
     "vegetarian"
   ],
   "chef": "William Mahi",
-  "chefSource": "michelin",
-  "cuisineZhs": "时尚法国菜"
+  "chefSource": "michelin"
 }

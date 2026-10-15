@@ -3,7 +3,7 @@
   "city": "liege",
   "address": "allée de Érables, 4000, Liège",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.4,
   "reviews": 275,
   "dinnerType": "menu",
@@ -23,12 +23,10 @@
     "kosher"
   ],
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation",
   "lunchNote": "Open for lunch · Tue–Fri",
   "lunchNoteNl": "Open voor lunch · di–vr",
   "lunchNoteFr": "Ouvert le midi · mar.–ven.",
-  "cuisineFr": "Cuisine française créative",
   "chef": "Frédéric Salpetier",
   "chefSource": "press"
 }

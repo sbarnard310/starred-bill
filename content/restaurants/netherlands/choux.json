@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "De Ruyterkade 128, 1011 AC, Amsterdam",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 1030,
   "dinnerType": "menu",
@@ -26,7 +26,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Modern Frans",
   "chef": "Merijn van Berlo",
   "chefSource": "press"
 }

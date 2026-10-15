@@ -4,7 +4,7 @@
   "area": "Selzen",
   "address": "Kapellenstraße 18a, 55278, Selzen",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 128,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "lunchNote": "Same menu at lunch · Sundays",
   "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.kaupers-kapellenhof.de/wp-content/uploads/2026/06/2026-Menuepreise-Kaupers-Kapellenhof.pdf",
-  "cuisineDe": "Moderne Küche"
+  "lunchSource": "https://www.kaupers-kapellenhof.de/wp-content/uploads/2026/06/2026-Menuepreise-Kaupers-Kapellenhof.pdf"
 }

@@ -4,7 +4,7 @@
   "area": "Schwäbisch Hall",
   "address": "Weckriedener Straße 2, 74523, Schwäbisch Hall",
   "stars": 1,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "rating": 4.8,
   "reviews": 544,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 59 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Saisonal"
+  "lunchNoteDe": "Nur abends"
 }

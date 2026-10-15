@@ -4,7 +4,7 @@
   "area": "Rennweg am Katschberg",
   "address": "Gamskogel, 9863, Rennweg am Katschberg",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -30,6 +30,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

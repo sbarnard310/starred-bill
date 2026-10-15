@@ -4,7 +4,7 @@
   "area": "Gentbrugge",
   "address": "Oefenpleinstraat 3, 9050, Gentbrugge",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-05",
@@ -25,7 +25,6 @@
   "chef": "Danny Horseele",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 130)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 130 €)",
   "lunch": 245,
   "lunchType": "menu",
@@ -33,6 +32,5 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · di–vr",
   "lunchNoteFr": "Même menu le midi · mar.–ven.",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurantmoscou.be/menu",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchSource": "https://www.restaurantmoscou.be/menu"
 }

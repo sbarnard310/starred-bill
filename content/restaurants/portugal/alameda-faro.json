@@ -4,7 +4,7 @@
   "area": "Faro",
   "address": "Rua da Polícia da Segurança Pública 10, 8000-151, Faro",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -30,6 +30,5 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 89 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Moderna"
+  "lunchNotePt": "Só jantar"
 }

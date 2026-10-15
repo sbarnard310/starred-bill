@@ -4,7 +4,7 @@
   "area": "Salach",
   "address": "Burg Staufeneck 1, 73084, Salach",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 5,
   "reviews": 2,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 239 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-zeitgemäß"
+  "lunchNoteDe": "Nur abends"
 }

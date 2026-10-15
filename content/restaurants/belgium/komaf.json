@@ -4,7 +4,7 @@
   "area": "Wommelgem",
   "address": "Schranshoevebaan 35, 2160, Wommelgem",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-05",
@@ -32,10 +32,8 @@
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 59)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Eigentijds Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 59 €)",
   "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine française contemporaine",
   "chef": "Anthony Stoop",
   "chefSource": "press"
 }

@@ -4,7 +4,7 @@
   "area": "Bodrum",
   "address": "Göltürkbükü Mahallesi, Keleşharim Caddesi No:70, 48400, Bodrum",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.1,
   "reviews": 104,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "chefSource": "michelin",
   "dinnerNoteTr": "Tadım menüsü; fiyat henüz eklenmedi",
   "lunchNote": "Open for lunch",
-  "lunchNoteTr": "Öğle yemeği için açık",
-  "cuisineTr": "Modern Mutfak"
+  "lunchNoteTr": "Öğle yemeği için açık"
 }

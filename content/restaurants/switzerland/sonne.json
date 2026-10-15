@@ -4,7 +4,7 @@
   "area": "Wengi bei Büren",
   "address": "Scheunenberg 70, 3251, Wengi bei Büren",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 265,
   "dinnerType": "menu",
@@ -24,9 +24,7 @@
   "chef": "Kurt Mösching",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 185)",
-  "cuisineDe": "Modern",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 185)",
-  "cuisineFr": "Cuisine actuelle",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 185)",
   "lunch": 195,
   "lunchType": "menu",
@@ -35,6 +33,5 @@
   "lunchNoteFr": "Même menu le midi · mer.–dim.",
   "lunchNoteIt": "Stesso menu a pranzo · mer–dom",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.sonne-scheunenberg.ch/hubfs/Sonne%20Menu%20September%202026-1.pdf?hsLang=de",
-  "cuisineIt": "Contemporanea"
+  "lunchSource": "https://www.sonne-scheunenberg.ch/hubfs/Sonne%20Menu%20September%202026-1.pdf?hsLang=de"
 }

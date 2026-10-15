@@ -4,7 +4,7 @@
   "area": "Leutschach an der Weinstraße",
   "address": "Arnfelser Straße 2, 8463, Leutschach an der Weinstraße",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 284,
   "dinnerType": "menu",
@@ -30,6 +30,5 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
   "lunchWine": 59,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.lieperts.at/fine-dining-suedsteiermark/",
-  "cuisineDe": "Moderne Küche"
+  "lunchSource": "https://www.lieperts.at/fine-dining-suedsteiermark/"
 }

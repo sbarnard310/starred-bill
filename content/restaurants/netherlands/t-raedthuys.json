@@ -4,7 +4,7 @@
   "area": "Duiven",
   "address": "Rijksweg 51, 6921 AC, Duiven",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.4,
   "reviews": 449,
   "dinnerType": "menu",
@@ -26,7 +26,6 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 85)",
   "lunchNote": "Open for lunch · Wed–Fri, Sun",
   "lunchNoteNl": "Open voor lunch · wo–vr, zo",
-  "cuisineNl": "Modern Frans",
   "chef": "Tom Lamers and Hans den Engelsen",
   "chefSource": "press"
 }

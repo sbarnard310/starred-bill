@@ -4,7 +4,7 @@
   "area": "Weil am Rhein",
   "address": "Römerstraße 1, 79576, Weil am Rhein",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-06",
@@ -30,6 +30,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 79 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Modern"
+  "lunchNoteDe": "Nur abends"
 }

@@ -4,7 +4,7 @@
   "area": "Wangen bei Dübendorf",
   "address": "Sennhüttestrasse 1, 8602, Wangen bei Dübendorf",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.6,
   "reviews": 518,
   "dinnerType": "menu",
@@ -25,9 +25,7 @@
   "chef": "Matthias Brunner",
   "chefSource": "michelin",
   "dinnerNoteDe": "Herbst-Degustation, 7 Gänge (andere Menüs ab CHF 102)",
-  "cuisineDe": "Klassische Küche",
   "dinnerNoteFr": "Menu dégustation d'automne, 7 plats (autres menus dès CHF 102)",
-  "cuisineFr": "Cuisine classique",
   "dinnerNoteIt": "Menu degustazione d'autunno, 7 portate (altri menu da CHF 102)",
   "lunch": 175,
   "lunchType": "menu",
@@ -36,6 +34,5 @@
   "lunchNoteFr": "Mêmes menus le midi · mar.–sam.",
   "lunchNoteIt": "Stessi menu a pranzo · mar–sab",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.sternenwangen.ch/de/essen/",
-  "cuisineIt": "Classica"
+  "lunchSource": "https://www.sternenwangen.ch/de/essen/"
 }

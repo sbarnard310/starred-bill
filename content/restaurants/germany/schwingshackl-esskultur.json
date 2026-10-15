@@ -4,7 +4,7 @@
   "area": "Bernried",
   "address": "Rebling 3, 94505, Bernried",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.5,
   "reviews": 214,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Klassische Küche",
   "chef": "Erich Schwingshackl",
   "chefSource": "press"
 }

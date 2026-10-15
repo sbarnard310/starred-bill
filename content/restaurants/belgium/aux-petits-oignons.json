@@ -4,7 +4,7 @@
   "area": "Jodoigne",
   "address": "chaussée de Tirlemont 260, 1370, Jodoigne",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 773,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "chef": "Stéphane Lefebvre",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 75)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 75 €)",
   "lunch": 145,
   "lunchType": "menu",
@@ -34,6 +33,5 @@
   "lunchNoteFr": "Même menu le midi · jeu.–ven., dim.–lun.",
   "lunchWine": 60,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.auxpetitsoignons.be/menu-nl",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchSource": "https://www.auxpetitsoignons.be/menu-nl"
 }

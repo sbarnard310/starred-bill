@@ -4,7 +4,7 @@
   "area": "Sonceboz",
   "address": "Rue du Collège 4, 2605, Sonceboz",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 360,
   "dinnerType": "menu",
@@ -18,13 +18,10 @@
   "chef": "Jean-Marc Soldati",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Französisch-klassisch",
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
-  "cuisineFr": "Cuisine française classique",
   "dinnerNoteIt": "Menu degustazione; prezzo ancora da aggiungere",
   "lunchNote": "Open for lunch · Thu–Tue",
   "lunchNoteDe": "Mittags geöffnet · Do–Di",
   "lunchNoteFr": "Ouvert le midi · jeu.–mar.",
-  "lunchNoteIt": "Aperto a pranzo · gio–mar",
-  "cuisineIt": "Francese classica"
+  "lunchNoteIt": "Aperto a pranzo · gio–mar"
 }

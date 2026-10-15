@@ -4,7 +4,7 @@
   "area": "Braine-le-Château",
   "address": "place de la Station 3, 1440, Braine-le-Château",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 493,
   "dinnerType": "menu",
@@ -24,10 +24,8 @@
   "michelinId": "509863",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 80)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 80 €)",
   "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine moderne",
   "chef": "Jimmy Collodoro",
   "chefSource": "press"
 }

@@ -3,7 +3,7 @@
   "city": "antwerpen",
   "address": "Michel de Braeystraat 18, 2000, Antwerpen",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 108,
   "dinnerType": "menu",
@@ -20,11 +20,9 @@
   "chef": "Nicolas Misera",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
-  "lunchNoteFr": "Uniquement le soir",
-  "cuisineFr": "Cuisine française créative"
+  "lunchNoteFr": "Uniquement le soir"
 }

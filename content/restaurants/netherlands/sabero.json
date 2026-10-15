@@ -4,7 +4,7 @@
   "area": "Leende",
   "address": "Zevenhuizen 6, 5595 XE, Leende",
   "stars": 1,
-  "cuisine": "Asian and Western",
+  "cuisine": "Fusion",
   "rating": 4.9,
   "reviews": 212,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "chef": "Nico Boreas",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
-  "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Aziatisch en westers"
+  "lunchNoteNl": "Lunchmenu"
 }

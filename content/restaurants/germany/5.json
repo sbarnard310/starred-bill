@@ -3,7 +3,7 @@
   "city": "stuttgart",
   "address": "Bolzstraße 8, 70173, Stuttgart",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.5,
   "reviews": 1016,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 148 €)",
   "lunchNote": "Open for lunch · Tue–Sat",
-  "lunchNoteDe": "Mittags geöffnet · Di–Sa",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Mittags geöffnet · Di–Sa"
 }

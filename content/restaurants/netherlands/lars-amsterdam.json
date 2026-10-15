@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "Danzigerkade 179, 1013 AP, Amsterdam",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 424,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   "lunchNoteNl": "Lunch vanaf 3 gangen met gerechten uit het dinermenu, prijs niet vermeld · do–za",
   "lunchSourceType": "site",
   "lunchSource": "https://larsamsterdam.nl/",
-  "cuisineNl": "Moderne keuken",
   "menus": [
     {
       "name": "Lars Exclusive menu",

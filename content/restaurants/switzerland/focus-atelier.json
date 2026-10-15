@@ -4,7 +4,7 @@
   "area": "Vitznau",
   "address": "Seestrasse 18, 6354, Vitznau",
   "stars": 2,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 140,
   "dinnerType": "menu",
@@ -25,14 +25,11 @@
   "chef": "Patrick Mahler",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 295)",
-  "cuisineDe": "Französisch-kreativ",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 295)",
-  "cuisineFr": "Cuisine française créative",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 295)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Francese creativa"
+  "lunchNoteIt": "Solo a cena"
 }

@@ -4,7 +4,7 @@
   "area": "Künten-Sulz",
   "address": "Grossacherweg 1, 5444, Künten-Sulz",
   "stars": 1,
-  "cuisine": "Regional Cuisine",
+  "cuisine": "Regional",
   "rating": 4.5,
   "reviews": 479,
   "dinnerType": "menu",
@@ -27,9 +27,7 @@
   "chef": "Manuel Steigmeier",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 150)",
-  "cuisineDe": "Regional",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 150)",
-  "cuisineFr": "Cuisine régionale",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 150)",
   "lunch": 190,
   "lunchType": "menu",
@@ -39,6 +37,5 @@
   "lunchNoteIt": "Stesso menu a pranzo · gio–dom",
   "lunchWine": 60,
   "lunchSourceType": "site",
-  "lunchSource": "https://fahr-sulz.ch/wp-content/uploads/Abend-Online-1.pdf",
-  "cuisineIt": "Regionale"
+  "lunchSource": "https://fahr-sulz.ch/wp-content/uploads/Abend-Online-1.pdf"
 }

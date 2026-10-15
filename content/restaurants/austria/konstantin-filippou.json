@@ -3,7 +3,7 @@
   "city": "vienna",
   "address": "Dominikanerbastei 17, 1010, Vienna",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.3,
   "reviews": 914,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "chef": "Konstantin Filippou",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü mit 8 Gängen (7 Gänge ab 265 €, 9 Gänge 350 €)",
-  "cuisineDe": "Moderne Küche",
   "lunchNoteDe": "Mittagsmenü mit 3 Gängen, wöchentlich wechselnd (4 Gänge 94 €, 6 Gänge 175 €)",
   "menus": [
     {

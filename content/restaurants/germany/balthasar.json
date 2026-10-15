@@ -4,7 +4,7 @@
   "area": "Paderborn",
   "address": "Warburger Straße 28, 33098, Paderborn",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 386,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 139 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Nur abends"
 }

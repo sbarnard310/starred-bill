@@ -4,7 +4,7 @@
   "area": "Blankenhain",
   "address": "Lindenallee 1, 99444, Blankenhain",
   "stars": 1,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "rating": 5,
   "reviews": 40,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Saisonal"
+  "lunchNoteDe": "Nur abends"
 }

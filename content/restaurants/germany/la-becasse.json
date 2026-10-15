@@ -4,7 +4,7 @@
   "area": "Aachen",
   "address": "Hanbrucher Straße 1, 52064, Aachen",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 560,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "chef": "Andreas Schaffrath",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 119 €)",
-  "lunchNoteDe": "Mittagsmenü",
-  "cuisineDe": "Französisch-klassisch"
+  "lunchNoteDe": "Mittagsmenü"
 }

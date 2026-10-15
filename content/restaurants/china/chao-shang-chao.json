@@ -3,7 +3,7 @@
   "city": "shenzhen",
   "address": "S368, 3F, Building B, Phase 2, MixC, 1881 Baoan South Road, Luohu, Shenzhen",
   "stars": 1,
-  "cuisine": "Chao Zhou",
+  "cuisine": "Teochew",
   "dinnerType": "spend",
   "dinner": 360,
   "dinnerNote": "Typical spend",
@@ -13,6 +13,5 @@
   "lng": 114.1054531,
   "michelinId": "1244756",
   "dinnerNoteZhs": "人均消费",
-  "cuisineZhs": "潮州菜",
   "nameZhs": "潮上潮"
 }

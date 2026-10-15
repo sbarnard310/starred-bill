@@ -24,7 +24,6 @@
     "vegan"
   ],
   "dinnerNoteFr": "Menu dégustation (autres menus dès 110 €)",
-  "cuisineFr": "Cuisine italienne",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
   "lunch": 165,
   "lunchType": "menu",
@@ -34,7 +33,6 @@
   "lunchWine": 80,
   "lunchSourceType": "site",
   "lunchSource": "https://fani.lu/menu/",
-  "cuisineDe": "Italienisch",
   "chef": "Roberto Fani",
   "chefSource": "press"
 }

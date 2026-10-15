@@ -4,7 +4,7 @@
   "area": "Waldbronn",
   "address": "Etzenroter Straße 4, 76337, Waldbronn",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.5,
   "reviews": 58,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 66 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Nur abends"
 }

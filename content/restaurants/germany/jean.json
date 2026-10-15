@@ -4,7 +4,7 @@
   "area": "Eltville am Rhein",
   "address": "Wilhelmstraße 13, 65343, Eltville am Rhein",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 136,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 75 €)",
   "lunchNote": "Open for lunch · Sundays",
-  "lunchNoteDe": "Mittags geöffnet · Sonntag",
-  "cuisineDe": "Französisch-klassisch"
+  "lunchNoteDe": "Mittags geöffnet · Sonntag"
 }

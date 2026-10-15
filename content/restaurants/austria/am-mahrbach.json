@@ -4,7 +4,7 @@
   "area": "Königsdorf",
   "address": "Apfelstraße 4, 7563, Königsdorf",
   "stars": 1,
-  "cuisine": "Seasonal Cuisine",
+  "cuisine": "Farm to table",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -30,6 +30,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Saisonal"
+  "lunchNoteDe": "Nur abends"
 }

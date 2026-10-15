@@ -4,7 +4,7 @@
   "area": "Funchal",
   "address": "Rua das Maravilhas 74, 9000-177, Funchal",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 360,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 195 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Atual"
+  "lunchNotePt": "Só jantar"
 }

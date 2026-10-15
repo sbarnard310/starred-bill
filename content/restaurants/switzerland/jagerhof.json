@@ -4,7 +4,7 @@
   "area": "Sankt Gallen",
   "address": "Brühlbleichestrasse 11, 9000, Sankt Gallen",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 260,
   "dinnerType": "menu",
@@ -23,9 +23,7 @@
   "chef": "Agron Lleshi",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 69)",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 69)",
-  "cuisineFr": "Cuisine moderne",
   "areaFr": "Saint-Gall",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 69)",
   "lunch": 210,
@@ -36,6 +34,5 @@
   "lunchNoteIt": "Stesso menu a pranzo · lun–ven",
   "lunchSourceType": "site",
   "lunchSource": "https://www.jaegerhof.ch/wp-content/uploads/karten/abendkarte/jaegerhof_abendkarte.pdf",
-  "cuisineIt": "Moderna",
   "areaIt": "San Gallo"
 }

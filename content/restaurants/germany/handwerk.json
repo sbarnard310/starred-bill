@@ -4,7 +4,7 @@
   "area": "Hanover",
   "address": "Altenbekener Damm 17, 30173, Hanover",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 399,
   "dinnerType": "menu",
@@ -27,6 +27,5 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "areaDe": "Hannover"
 }

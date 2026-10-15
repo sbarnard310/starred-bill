@@ -3,7 +3,7 @@
   "city": "hamburg",
   "address": "Brandshofer Deich 68, 20539, Hamburg",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.5,
   "reviews": 17,
   "dinnerType": "main",
@@ -23,6 +23,5 @@
   "chef": "Thomas Alfons Imbusch",
   "chefSource": "michelin",
   "dinnerNoteDe": "Typischer Hauptgang",
-  "lunchNoteDe": "Mittags geöffnet · Sa–So",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Mittags geöffnet · Sa–So"
 }

@@ -3,7 +3,7 @@
   "city": "cologne",
   "address": "Dellbrücker Hauptstraße 176, 51069, Cologne",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 413,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "lunchNote": "Open for lunch · Wed–Fri",
-  "lunchNoteDe": "Mittags geöffnet · Mi–Fr",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Mittags geöffnet · Mi–Fr"
 }

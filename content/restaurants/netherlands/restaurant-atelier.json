@@ -4,7 +4,7 @@
   "area": "Gulpen",
   "address": "Markt 9, 6271 BD, Gulpen",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 277,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
   "lunchNote": "Open for lunch · Fri–Sat",
-  "lunchNoteNl": "Open voor lunch · vr–za",
-  "cuisineNl": "Creatief Frans"
+  "lunchNoteNl": "Open voor lunch · vr–za"
 }

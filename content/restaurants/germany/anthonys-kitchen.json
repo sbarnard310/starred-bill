@@ -4,7 +4,7 @@
   "area": "Meerbusch",
   "address": "Moerser Straße 81, 40667, Meerbusch",
   "stars": 1,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "rating": 4.9,
   "reviews": 361,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 148 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Innovativ"
+  "lunchNoteDe": "Nur abends"
 }

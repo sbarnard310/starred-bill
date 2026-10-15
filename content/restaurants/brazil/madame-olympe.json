@@ -3,7 +3,7 @@
   "city": "rio-de-janeiro",
   "address": "Rua Conde de Bernadotte, 26 - loja 101, 22430-200, Rio de Janeiro",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-04",
@@ -31,6 +31,5 @@
   "dinnerNotePt": "Menu de degustação",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Francesa criativa"
+  "lunchNotePt": "Só jantar"
 }

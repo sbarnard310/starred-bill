@@ -4,7 +4,7 @@
   "area": "Houten",
   "address": "Heemsteedseweg 20, 3992 LS, Houten",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 417,
   "dinnerType": "menu",
@@ -30,7 +30,6 @@
     "kosher"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 145)",
-  "cuisineNl": "Moderne keuken",
   "lunchNoteNl": "Lunchmenu",
   "chef": "Ollie Schuiling",
   "chefSource": "site",

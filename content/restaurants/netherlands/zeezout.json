@@ -3,7 +3,7 @@
   "city": "rotterdam",
   "address": "Westerkade 11b, 3016 CL, Rotterdam",
   "stars": 1,
-  "cuisine": "Fish and Seafood",
+  "cuisine": "Seafood",
   "rating": 4.7,
   "reviews": 681,
   "dinnerType": "menu",
@@ -30,7 +30,6 @@
     "kosher"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 85)",
-  "cuisineNl": "Vis en zeevruchten",
   "lunchNoteNl": "Lunchmenu",
   "chef": "Patrick 't Hart",
   "chefSource": "press"

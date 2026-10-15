@@ -4,7 +4,7 @@
   "area": "Oetrange",
   "address": "1 rue Remich, 5331, Oetrange",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 714,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
     "halal"
   ],
   "dinnerNoteFr": "Menu dégustation (autres menus dès 95 €)",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
   "lunch": 248,
   "lunchType": "menu",
@@ -35,7 +34,6 @@
   "lunchWine": 95,
   "lunchSourceType": "site",
   "lunchSource": "https://mls.lu/media/original/menu-site-fr-1-.pdf",
-  "cuisineDe": "Moderne Küche",
   "chef": "Cyril Molard",
   "chefSource": "press"
 }

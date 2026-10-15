@@ -3,7 +3,7 @@
   "city": "beijing",
   "address": "2F, The Ritz-Carlton Hotel, 83A Jianguo Road, Chaoyang, Beijing",
   "stars": 2,
-  "cuisine": "Beijing Cuisine",
+  "cuisine": "Beijing",
   "dinnerType": "spend",
   "dinner": 1280,
   "dinnerNote": "Typical spend",
@@ -18,6 +18,5 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "京菜",
   "nameZhs": "京季"
 }

@@ -4,7 +4,7 @@
   "area": "Leuven",
   "address": "Vaartstraat 14, 3000, Leuven",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 235,
   "dinnerType": "menu",
@@ -18,13 +18,11 @@
   "placeId": "ChIJAx-M4tlgwUcRmXyrj6eUHOw",
   "michelinId": "548395",
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
   "lunchNoteFr": "Uniquement le soir",
-  "cuisineFr": "Cuisine moderne",
   "chef": "Philippe Heylen",
   "chefSource": "press"
 }

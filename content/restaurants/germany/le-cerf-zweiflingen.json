@@ -4,7 +4,7 @@
   "area": "Zweiflingen",
   "address": "Kärcherstr. 11, 74639, Zweiflingen",
   "stars": 2,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 33,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-klassisch",
   "menus": [
     {
       "name": "Menu \"Chef\"",

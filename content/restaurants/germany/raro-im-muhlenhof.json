@@ -4,7 +4,7 @@
   "area": "Schriesheim",
   "address": "Talstraße 188, 69198, Schriesheim",
   "stars": 1,
-  "cuisine": "Regional Cuisine",
+  "cuisine": "Regional",
   "rating": 4.9,
   "reviews": 98,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Regional",
   "chef": "Jan Hildenhagen",
   "chefSource": "press"
 }

@@ -4,7 +4,7 @@
   "area": "Kontich",
   "address": "Rijkerooistraat 14, 2550, Kontich",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-05",
@@ -33,9 +33,7 @@
   "chef": "Cyril Moulin",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 105 €)",
-  "cuisineFr": "Cuisine moderne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"
 }

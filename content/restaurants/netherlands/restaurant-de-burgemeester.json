@@ -4,7 +4,7 @@
   "area": "Linschoten",
   "address": "Raadhuisstraat 17, 3461 CW, Linschoten",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 340,
   "dinnerType": "menu",
@@ -33,6 +33,5 @@
   "lunchNote": "Same menu at lunch · Wed–Sat",
   "lunchNoteNl": "Zelfde menu bij de lunch · wo–za",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.deburgemeester.nl/menu/",
-  "cuisineNl": "Moderne keuken"
+  "lunchSource": "https://www.deburgemeester.nl/menu/"
 }

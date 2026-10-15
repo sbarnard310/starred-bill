@@ -3,7 +3,7 @@
   "city": "porto",
   "address": "Rua Maria Adelaide Freitas Gonçalves 13, 4350-109, Porto",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -29,6 +29,5 @@
   "dinnerNotePt": "Menu de degustação",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Atual"
+  "lunchNotePt": "Só jantar"
 }

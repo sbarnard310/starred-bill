@@ -4,7 +4,7 @@
   "area": "Kreuzwertheim",
   "address": "Hauptstraße 18, 97892, Kreuzwertheim",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 20,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 140 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Modern"
+  "lunchNoteDe": "Nur abends"
 }

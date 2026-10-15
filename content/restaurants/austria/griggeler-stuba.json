@@ -4,7 +4,7 @@
   "area": "Lech am Arlberg",
   "address": "Oberlech 568, 6764, Lech am Arlberg",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 12,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Menü Griggeler Experience, ab 295 € (Winter 2026/27)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

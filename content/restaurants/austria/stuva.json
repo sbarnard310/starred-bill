@@ -4,7 +4,7 @@
   "area": "Ischgl",
   "address": "Dorfstraße 73, 6561, Ischgl",
   "stars": 2,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 98,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 154 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-kreativ"
+  "lunchNoteDe": "Nur abends"
 }

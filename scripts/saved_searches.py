@@ -42,22 +42,22 @@ WINE_ROOM = 1.6         # with no pairing price listed, the menu must leave abou
 TRACK = "utm_source=search-email&utm_medium=email&utm_campaign=saved-search"
 DIET_WORDS = {"vegetarian": "vegetarian options", "vegan": "vegan options", "gluten-free": "gluten-free options", "halal": "halal options", "kosher": "kosher options"}
 # Help me pick's "food mood" groups, in the same order and with the same patterns as MOODS in src/assets/pick.js:
-# keep the two in step. The first that matches a restaurant's cuisine label wins.
+# keep the two in step. The first that matches a restaurant's cuisine category wins.
 MOODS = [
-    ("veg", r"vegetarian|vegan|shojin"),
-    ("japanese", r"japan|sushi|tempura|yakitori|kaiseki|teppanyaki|unagi|fugu"),
-    ("chinese", r"canton|chinese|sichuan|taizhou|shanghai|chao zhou|teochew|zhejiang|huaiyang|fujian|beijing|ningbo|jiangzhe|jiangsu|shandong|hunan|dongbei|hang zhou|hui cuisine|dim sum|congee|shun tak|taiwan"),
-    ("korean", r"korean"),
-    ("seasia", r"thai|vietnam|malaysia|peranakan|filipino|singapore"),
-    ("indian", r"indian"),
-    ("italian", r"italian|piedmont|sicilian|campanian|tuscan|ligurian|emilian|abruzzo|aosta|lombard|sardinian|umbrian|romagna"),
-    ("spanish", r"spanish|galician|basque|catalan|portuguese"),
-    ("latin", r"mexican|colombian|latin|peruvian|cuban"),
-    ("med", r"mediterranean|greek|turkish|middle eastern|israeli|provençal"),
-    ("seafood", r"fish|seafood|crab"),
-    ("grill", r"barbecue|steak|grill|beef|meats"),
-    ("french", r"french"),
-    ("modern", r"modern|creative|contemporary|innovative|fusion|international|world|european|asian|californian|american|zealand|australian|farm to table|seasonal|organic|sharing|street food"),
+    ("veg", r"^(?:Vegetarian|Vegan)$"),
+    ("japanese", r"^(?:Japanese|Sushi|Tempura|Yakitori)$"),
+    ("chinese", r"^(?:Chinese|Cantonese|Teochew|Sichuan|Hunan|Shanghainese|Huaiyang|Zhejiang|Fujian|Beijing|Shandong|Taiwanese)$"),
+    ("korean", r"^(?:Korean)$"),
+    ("seasia", r"^(?:Thai|Vietnamese|Malaysian|Peranakan|Singaporean|Filipino)$"),
+    ("indian", r"^(?:Indian)$"),
+    ("italian", r"^(?:Italian)$"),
+    ("spanish", r"^(?:Spanish|Portuguese)$"),
+    ("latin", r"^(?:Mexican|Latin American)$"),
+    ("med", r"^(?:Mediterranean|Greek|Turkish|Middle Eastern)$"),
+    ("seafood", r"^(?:Seafood)$"),
+    ("grill", r"^(?:Barbecue|Steak and grill)$"),
+    ("french", r"^(?:French)$"),
+    ("modern", r"^(?:Modern European|Modern American|Modern|Creative|Fusion|International|European|British|American|Australian|New Zealand|Asian|Farm to table|Street food)$"),
     ("classic", r"."),
 ]
 MOODS = [(k, re.compile(p, re.I)) for k, p in MOODS]

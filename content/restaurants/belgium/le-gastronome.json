@@ -4,7 +4,7 @@
   "area": "Paliseul",
   "address": "rue de Bouillon 2, 6850, Paliseul",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 380,
   "dinnerType": "menu",
@@ -19,7 +19,6 @@
   "placeId": "ChIJnds2IUB56kcRCb9rSzJ04bE",
   "michelinId": "210282",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
-  "cuisineNl": "Eigentijds",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 60 €)",
   "lunch": 420,
   "lunchType": "menu",
@@ -29,7 +28,6 @@
   "lunchWine": 85,
   "lunchSourceType": "site",
   "lunchSource": "https://www.le-gastronome.be/hotel/",
-  "cuisineFr": "Cuisine actuelle",
   "chef": "Jean Vrijdaghs and Sébastien Hankard",
   "chefSource": "press"
 }

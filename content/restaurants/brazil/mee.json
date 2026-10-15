@@ -3,7 +3,7 @@
   "city": "rio-de-janeiro",
   "address": "Avenida Atlântica 1702, 22021-001, Rio de Janeiro",
   "stars": 1,
-  "cuisine": "Asian Influences",
+  "cuisine": "Asian",
   "rating": 4.4,
   "reviews": 529,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNotePt": "Menu de degustação",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Com influências asiáticas"
+  "lunchNotePt": "Só jantar"
 }

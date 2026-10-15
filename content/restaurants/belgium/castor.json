@@ -4,7 +4,7 @@
   "area": "Beveren-Leie",
   "address": "Kortrijkseweg 164, 8791, Beveren-Leie",
   "stars": 2,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.9,
   "reviews": 504,
   "dinnerType": "menu",
@@ -31,8 +31,6 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 110)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 110 €)",
-  "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchNoteFr": "Menu déjeuner"
 }

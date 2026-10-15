@@ -4,7 +4,7 @@
   "area": "Bietigheim-Bissingen",
   "address": "Kronenbergstraße 14, 74321, Bietigheim-Bissingen",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 78,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-kreativ",
   "chef": "Benjamin Maerz",
   "chefSource": "press"
 }

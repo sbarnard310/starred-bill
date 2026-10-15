@@ -4,7 +4,7 @@
   "area": "Koblenz",
   "address": "Brunnenhof Königspfalz, 56068, Koblenz",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 254,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "chef": "Marcel Kokot and Alexander Wulf",
   "chefSource": "press"
 }

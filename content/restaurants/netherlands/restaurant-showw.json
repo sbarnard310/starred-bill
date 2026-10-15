@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "Gelrestraat 28, 1079 MZ, Amsterdam",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 212,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   "lunchNoteNl": "Zelfde menu bij de lunch · zo–ma",
   "lunchSourceType": "site",
   "lunchSource": "https://www.restaurantshoww.com/en/menu",
-  "cuisineNl": "Moderne keuken",
   "dinnerNote": "Tasting menu, 5 courses (also à la carte)",
   "dinnerNoteNl": "Proeverijmenu, 5 gangen (ook à la carte)"
 }

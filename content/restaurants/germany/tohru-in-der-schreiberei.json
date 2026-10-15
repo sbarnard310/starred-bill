@@ -3,7 +3,7 @@
   "city": "munich",
   "address": "Burgstraße 5, 80331, Munich",
   "stars": 3,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 283,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "menus": [
     {
       "name": "seasonal tasting menu",

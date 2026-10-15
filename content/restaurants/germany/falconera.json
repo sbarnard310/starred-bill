@@ -4,7 +4,7 @@
   "area": "Öhningen",
   "address": "Zum Mühlental 1, 78337, Öhningen",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 257,
   "dinnerType": "menu",
@@ -31,6 +31,5 @@
   "chef": "Johannes Wuhrer",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 69 €)",
-  "cuisineDe": "Französisch-klassisch",
   "lunchNoteDe": "Mittagsmenü"
 }

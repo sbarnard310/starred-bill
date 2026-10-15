@@ -4,7 +4,7 @@
   "area": "Grindelwald",
   "address": "Dorfstrasse 203, 3818, Grindelwald",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2025-10",
@@ -31,14 +31,11 @@
   "chef": "Aurélien Mettler",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine moderne",
   "dinnerNoteIt": "Menu degustazione",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Moderna"
+  "lunchNoteIt": "Solo a cena"
 }

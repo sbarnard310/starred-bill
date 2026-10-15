@@ -4,7 +4,7 @@
   "area": "Willemstad",
   "address": "Havenhoofd 2, 4797 SR, Willemstad",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.4,
   "reviews": 566,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 92,50)",
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteNl": "Open voor lunch · wo–zo",
-  "cuisineNl": "Modern Frans",
   "chef": "Henrie van der Heijden",
   "chefSource": "press"
 }

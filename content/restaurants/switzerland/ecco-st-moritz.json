@@ -23,10 +23,8 @@
     "gluten-free"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 270)",
-  "cuisineDe": "Kreativ",
   "areaDe": "Sankt Moritz",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 270)",
-  "cuisineFr": "Cuisine créative",
   "areaFr": "Saint-Moritz",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 270)",
   "noLunch": true,
@@ -34,7 +32,6 @@
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Creativa",
   "areaIt": "Sankt Moritz",
   "chef": "Reto Brändli",
   "chefSource": "press"

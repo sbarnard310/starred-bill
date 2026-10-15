@@ -4,7 +4,7 @@
   "area": "Hadersdorf am Kamp",
   "address": "Hauptplatz 16, 3493, Hadersdorf am Kamp",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 310,
   "dinnerType": "menu",
@@ -27,7 +27,6 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
   "lunchSourceType": "site",
   "lunchSource": "https://esslokal.com/",
-  "cuisineDe": "Modern",
   "dinnerNote": "Menu, 5 courses, with aperitif, wine pairing, water and coffee included",
   "dinnerNoteDe": "5-Gang-Menü inkl. Aperitif, Weinbegleitung, Wasser und Kaffee"
 }

@@ -3,7 +3,7 @@
   "city": "maastricht",
   "address": "St-Bernardusstraat 16, 6211 HL, Maastricht",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 291,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "lunchNote": "Same menu at lunch · Thu–Fri, Sun",
   "lunchNoteNl": "Zelfde menu bij de lunch · do–vr, zo",
   "lunchSourceType": "site",
-  "lunchSource": "https://toutafait.nl/menu/",
-  "cuisineNl": "Modern Frans"
+  "lunchSource": "https://toutafait.nl/menu/"
 }

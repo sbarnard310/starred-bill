@@ -4,7 +4,7 @@
   "area": "Rheda-Wiedenbrück",
   "address": "Bleichstraße 3, 33378, Rheda-Wiedenbrück",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 339,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern",
   "chef": "Iris Bettinger",
   "chefSource": "press"
 }

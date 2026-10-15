@@ -4,8 +4,19 @@
   lang: { label: "ΕΛ", html: "el", suffixes: ["El"], locale: "el-GR", maps: "el" },
   months: ["Ιαν.", "Φεβ.", "Μαρ.", "Απρ.", "Μάιος", "Ιούν.", "Ιούλ.", "Αύγ.", "Σεπ.", "Οκτ.", "Νοέ.", "Δεκ."],
   cuisines: {
-    "Contemporary": "Σύγχρονη", "Creative": "Δημιουργική", "French": "Γαλλική", "Mediterranean Cuisine": "Μεσογειακή", "Modern Cuisine": "Μοντέρνα κουζίνα",
-    "Greek": "Ελληνική", "Seafood": "Θαλασσινά", "Fish and Seafood": "Ψάρι και θαλασσινά", "Innovative": "Καινοτόμος"
+    "Modern European": "Μοντέρνα ευρωπαϊκή", "Modern American": "Μοντέρνα αμερικανική", "Modern": "Μοντέρνα κουζίνα", "Creative": "Δημιουργική",
+    "Classic": "Κλασική κουζίνα", "Regional": "Τοπική κουζίνα", "Farm to table": "Από το χωράφι στο πιάτο", "Fusion": "Fusion",
+    "International": "Διεθνής", "European": "Ευρωπαϊκή", "French": "Γαλλική", "British": "Βρετανική", "Italian": "Ιταλική",
+    "Spanish": "Ισπανική", "Portuguese": "Πορτογαλική", "Mediterranean": "Μεσογειακή", "Greek": "Ελληνική", "Turkish": "Τουρκική",
+    "Alpine": "Αλπική", "Austrian": "Αυστριακή", "German": "Γερμανική", "Nordic": "Σκανδιναβική", "Middle Eastern": "Μεσανατολική",
+    "African": "Αφρικανική", "American": "Αμερικανική", "Mexican": "Μεξικάνικη", "Latin American": "Λατινοαμερικανική",
+    "Australian": "Αυστραλιανή", "New Zealand": "Νεοζηλανδική", "Pacific Islands": "Πολυνησιακή", "Japanese": "Ιαπωνική", "Sushi": "Σούσι",
+    "Tempura": "Τεμπούρα", "Yakitori": "Γιακιτόρι", "Korean": "Κορεατική", "Chinese": "Κινέζικη", "Cantonese": "Καντονέζικη",
+    "Teochew": "Τσαοτζόου", "Sichuan": "Σετσουάν", "Hunan": "Χουνάν", "Shanghainese": "Σαγκάης", "Huaiyang": "Χουαϊγιάνγκ",
+    "Zhejiang": "Τζετζιάνγκ", "Fujian": "Φουτζιάν", "Beijing": "Πεκίνου", "Shandong": "Σαντόνγκ", "Taiwanese": "Ταϊβανέζικη",
+    "Thai": "Ταϊλανδέζικη", "Vietnamese": "Βιετναμέζικη", "Malaysian": "Μαλαισιανή", "Peranakan": "Περανακάν", "Singaporean": "Σιγκαπουριανή",
+    "Filipino": "Φιλιππινέζικη", "Indian": "Ινδική", "Asian": "Ασιατική", "Seafood": "Θαλασσινά", "Steak and grill": "Στέικ και σχάρα",
+    "Barbecue": "Μπάρμπεκιου", "Vegetarian": "Χορτοφαγική", "Vegan": "Βίγκαν", "Street food": "Street food"
   },
   words: {
     acctSentCode: "Στείλαμε έναν εξαψήφιο κωδικό στο {email}. Πληκτρολογήστε τον παρακάτω για να συνδεθείτε εδώ. (Ο σύνδεσμος στο email λειτουργεί επίσης, αλλά στην εφαρμογή της αρχικής οθόνης ανοίγει το πρόγραμμα περιήγησης.)", acctCodeLabel: "Κωδικός από το email", acctVerify: "Σύνδεση με κωδικό", acctVerifying: "Έλεγχος…", acctCodeWrong: "Ο κωδικός δεν λειτούργησε. Ελέγξτε τον ή ζητήστε νέο.", acctBadCode: "Πληκτρολογήστε τον εξαψήφιο κωδικό από το email.",

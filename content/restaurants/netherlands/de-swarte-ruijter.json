@@ -4,7 +4,7 @@
   "area": "Holten",
   "address": "Holterbergweg 7, 7451 JL, Holten",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 406,
   "dinnerType": "menu",
@@ -29,7 +29,6 @@
     "kosher"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 40)",
-  "cuisineNl": "Moderne keuken",
   "lunchNoteNl": "Lunchmenu",
   "chef": "Erik de Mönnink",
   "chefSource": "press"

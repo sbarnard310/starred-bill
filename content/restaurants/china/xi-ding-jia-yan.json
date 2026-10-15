@@ -4,7 +4,7 @@
   "area": "Suzhou",
   "address": "1F, Block B, Wellness Commercial Plaza, 66 Chengtong Road, Xiangcheng, Suzhou",
   "stars": 1,
-  "cuisine": "Dongbei",
+  "cuisine": "Chinese",
   "dinnerType": "spend",
   "dinner": 600,
   "dinnerNote": "Typical spend",
@@ -16,7 +16,6 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "东北菜",
   "nameZhs": "喜鼎家宴",
   "areaZhs": "苏州"
 }

@@ -4,7 +4,7 @@
   "area": "Hasselt",
   "address": "Ridder Portmansstraat 4, 3500, Hasselt",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 338,
   "dinnerType": "menu",
@@ -27,9 +27,7 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 95)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 95 €)",
-  "cuisineFr": "Cuisine française moderne",
   "chef": "Sébastien Wygaerts",
   "chefSource": "press",
   "lunchNoteNl": "Lunchmenu",

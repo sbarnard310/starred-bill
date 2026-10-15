@@ -3,7 +3,7 @@
   "city": "hangzhou",
   "address": "Inside Vallie Hotel, 85-3 Zhijiang Road, Xihu, Hangzhou",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 3,
   "dinnerType": "spend",
@@ -21,6 +21,5 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteZhs": "仅供应晚餐",
-  "cuisineZhs": "时尚法国菜",
   "nameZhs": "雷克拉法餐"
 }

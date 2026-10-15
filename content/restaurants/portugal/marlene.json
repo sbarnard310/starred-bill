@@ -3,7 +3,7 @@
   "city": "lisbon",
   "address": "Avenida Infante D. Henrique. Doca do Jardim do Tabaco, 1100-651, Lisbon",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 180,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 150 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Moderna"
+  "lunchNotePt": "Só jantar"
 }

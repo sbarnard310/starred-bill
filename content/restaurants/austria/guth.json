@@ -4,7 +4,7 @@
   "area": "Lauterach",
   "address": "Wälderstraße 10, 6923, Lauterach",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.8,
   "reviews": 343,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
   "lunchNote": "Open for lunch · Mon–Fri",
-  "lunchNoteDe": "Mittags geöffnet · Mo–Fr",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Mittags geöffnet · Mo–Fr"
 }

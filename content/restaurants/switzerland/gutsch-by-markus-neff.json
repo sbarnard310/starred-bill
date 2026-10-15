@@ -4,7 +4,7 @@
   "area": "Andermatt",
   "address": "Bergstation Gütsch-Express, 6490, Andermatt",
   "stars": 1,
-  "cuisine": "Classic French",
+  "cuisine": "French",
   "rating": 4,
   "reviews": 150,
   "dinnerType": "main",
@@ -24,13 +24,10 @@
   "chef": "Markus Neff",
   "chefSource": "michelin",
   "dinnerNoteDe": "Typischer Hauptgang",
-  "cuisineDe": "Französisch-klassisch",
   "dinnerNoteFr": "Plat principal type",
-  "cuisineFr": "Cuisine française classique",
   "dinnerNoteIt": "Secondo tipico",
   "lunchNote": "Open for lunch",
   "lunchNoteDe": "Mittags geöffnet",
   "lunchNoteFr": "Ouvert le midi",
-  "lunchNoteIt": "Aperto a pranzo",
-  "cuisineIt": "Francese classica"
+  "lunchNoteIt": "Aperto a pranzo"
 }

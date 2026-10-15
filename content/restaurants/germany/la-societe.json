@@ -3,7 +3,7 @@
   "city": "cologne",
   "address": "Kyffhäuser Straße 53, 50674, Cologne",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 457,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Sa–Mo",
   "lunchWine": 85,
   "lunchSourceType": "site",
-  "lunchSource": "https://restaurant-lasociete.de/",
-  "cuisineDe": "Moderne Küche"
+  "lunchSource": "https://restaurant-lasociete.de/"
 }

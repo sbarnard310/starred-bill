@@ -4,7 +4,7 @@
   "area": "Thun",
   "address": "Seestrasse 47, 3602, Thun",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2025-10",
@@ -27,15 +27,12 @@
   "chef": "Sascha Spring",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 48)",
-  "cuisineDe": "Moderne Küche",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 48)",
-  "cuisineFr": "Cuisine moderne",
   "areaFr": "Thoune",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 48)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Moderna"
+  "lunchNoteIt": "Solo a cena"
 }

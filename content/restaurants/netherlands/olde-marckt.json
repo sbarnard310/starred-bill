@@ -4,7 +4,7 @@
   "area": "Aalten",
   "address": "Markt 10, 7121 CS, Aalten",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.5,
   "reviews": 383,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
   "lunchNote": "Open for lunch · Thu–Sun",
-  "lunchNoteNl": "Open voor lunch · do–zo",
-  "cuisineNl": "Modern Frans"
+  "lunchNoteNl": "Open voor lunch · do–zo"
 }

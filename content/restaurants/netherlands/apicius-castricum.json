@@ -4,7 +4,7 @@
   "area": "Castricum",
   "address": "Van der Mijleweg 16, 1901 KD, Castricum",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 233,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 49)",
   "lunchNote": "Open for lunch · Tue–Sat",
   "lunchNoteNl": "Open voor lunch · di–za",
-  "cuisineNl": "Moderne keuken",
   "chef": "Thorvald de Winter",
   "chefSource": "michelin"
 }

@@ -4,7 +4,7 @@
   "area": "Kirchdorf",
   "address": "Dorfstraße 1, 83527, Kirchdorf",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.6,
   "reviews": 207,
   "dinnerType": "menu",
@@ -28,7 +28,6 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Sonntag",
   "lunchSourceType": "site",
   "lunchSource": "https://christians-restaurant.de/",
-  "cuisineDe": "Klassische Küche",
   "chef": "Christian Grainer",
   "chefSource": "press"
 }

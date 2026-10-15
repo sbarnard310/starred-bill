@@ -3,7 +3,7 @@
   "city": "dusseldorf",
   "address": "Berliner Allee 52, 40212, Düsseldorf",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 752,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "chef": "Egor Hopp",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 115 €)",
-  "cuisineDe": "Moderne Küche",
   "lunchNoteDe": "Mittagsmenü"
 }

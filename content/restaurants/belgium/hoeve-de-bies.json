@@ -4,7 +4,7 @@
   "area": "St-Martens-Voeren",
   "address": "Bies 4, 3790, St-Martens-Voeren",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "dinnerType": "menu",
   "dinner": 150,
   "dinnerNote": "Tasting menu (other menus from €70)",
@@ -28,8 +28,6 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 70)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 70 €)",
-  "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchNoteFr": "Menu déjeuner"
 }

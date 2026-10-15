@@ -25,7 +25,6 @@
   "chef": "Michael Vanderhaeghe",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 60)",
-  "cuisineNl": "Creatief",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 60 €)",
   "lunch": 250,
   "lunchType": "menu",
@@ -34,6 +33,5 @@
   "lunchNoteFr": "Même menu le midi · mar., jeu.–sam.",
   "lunchWine": 110,
   "lunchSourceType": "site",
-  "lunchSource": "https://hostellerie-stnicolas.com/restaurant/menuhsn/",
-  "cuisineFr": "Cuisine créative"
+  "lunchSource": "https://hostellerie-stnicolas.com/restaurant/menuhsn/"
 }

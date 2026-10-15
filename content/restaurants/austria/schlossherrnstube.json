@@ -4,7 +4,7 @@
   "area": "Ischgl",
   "address": "Dorfstr. 85, 6561, Ischgl",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 5,
   "reviews": 1,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 128 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Modern"
+  "lunchNoteDe": "Nur abends"
 }

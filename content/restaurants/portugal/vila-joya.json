@@ -4,7 +4,7 @@
   "area": "Albufeira",
   "address": "Estrada da Galé, 8200-416, Albufeira",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 842,
   "dinnerType": "menu",
@@ -30,7 +30,6 @@
   "lunchNotePt": "Menu Favorites, ou o menu Signature do dia (só ao almoço), ambos a 290 €",
   "lunchSourceType": "site",
   "lunchSource": "https://www.vilajoya.com/book-michelin/",
-  "cuisinePt": "Moderna",
   "menus": [
     {
       "name": "Chef Dieter Koschina's Favorites menu",

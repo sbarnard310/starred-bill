@@ -4,7 +4,7 @@
   "area": "Lichtaart",
   "address": "Plaats 2, 2460, Lichtaart",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 454,
   "dinnerType": "menu",
@@ -27,10 +27,8 @@
   "chef": "Carl Wens",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation",
   "lunchNote": "Open for lunch · Sundays",
   "lunchNoteNl": "Open voor lunch · zondag",
-  "lunchNoteFr": "Ouvert le midi · dimanche",
-  "cuisineFr": "Cuisine moderne"
+  "lunchNoteFr": "Ouvert le midi · dimanche"
 }

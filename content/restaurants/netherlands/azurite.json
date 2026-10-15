@@ -4,7 +4,7 @@
   "area": "Delft",
   "address": "Houttuinen 2, 2611 DX, Delft",
   "stars": 2,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "New straight in with two stars",
   "changeDate": "2026-10",
@@ -30,6 +30,5 @@
   "dinnerNoteNl": "Weekendproeverijmenu, vrijdag en zaterdag (doordeweeks menu € 189); inclusief water en koffie",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Moderne keuken"
+  "lunchNoteNl": "Alleen diner"
 }

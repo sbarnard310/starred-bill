@@ -4,7 +4,7 @@
   "area": "Ouwegem",
   "address": "Beertegemstraat 52, 9750, Ouwegem",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 409,
   "dinnerType": "menu",
@@ -21,7 +21,6 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 58)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 58 €)",
   "lunch": 165,
   "lunchType": "menu",
@@ -30,7 +29,6 @@
   "lunchNoteFr": "Même menu le midi · mar.–ven.",
   "lunchSourceType": "site",
   "lunchSource": "https://www.benoitdewitte.be/nl/menu",
-  "cuisineFr": "Cuisine française moderne",
   "chef": "Benoit Dewitte",
   "chefSource": "press"
 }

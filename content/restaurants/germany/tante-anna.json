@@ -4,7 +4,7 @@
   "area": "Sprockhövel",
   "address": "Hauptstraße 58, 45549, Sprockhövel",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-06",
@@ -30,6 +30,5 @@
   "dinnerNoteDe": "Degustationsmenü, 5 Gänge (4 Gänge 170 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

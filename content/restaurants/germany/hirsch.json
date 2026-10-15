@@ -4,7 +4,7 @@
   "area": "Sonnenbühl",
   "address": "Im Dorf 12, 72820, Sonnenbühl",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.9,
   "reviews": 32,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 78 €)",
   "lunchNote": "Open for lunch · Fri–Sun",
   "lunchNoteDe": "Mittags geöffnet · Fr–So",
-  "cuisineDe": "Klassische Küche",
   "chef": "Gerd Windhösel",
   "chefSource": "press"
 }

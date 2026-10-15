@@ -3,7 +3,7 @@
   "city": "sao-paulo",
   "address": "Rua Prudente Correia 432, 01450-030, São Paulo",
   "stars": 1,
-  "cuisine": "Asian Influences",
+  "cuisine": "Asian",
   "rating": 4.4,
   "reviews": 301,
   "dinnerType": "menu",
@@ -23,7 +23,6 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde R$450)",
   "lunchNote": "Open for lunch",
   "lunchNotePt": "Aberto ao almoço",
-  "cuisinePt": "Com influências asiáticas",
   "chef": "Kazuo Harada",
   "chefSource": "michelin"
 }

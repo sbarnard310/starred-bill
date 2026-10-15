@@ -4,7 +4,7 @@
   "area": "Sint-Denijs",
   "address": "Helkijnstraat 38, 8554, Sint-Denijs",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 309,
   "dinnerType": "menu",
@@ -23,10 +23,8 @@
   "chef": "David Grosdent",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 65)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 65 €)",
   "lunchNote": "Open for lunch · Fri, Sun–Tue",
   "lunchNoteNl": "Open voor lunch · vr, zo–di",
-  "lunchNoteFr": "Ouvert le midi · ven., dim.–mar.",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchNoteFr": "Ouvert le midi · ven., dim.–mar."
 }

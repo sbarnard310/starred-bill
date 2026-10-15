@@ -4,7 +4,7 @@
   "area": "Quévy-le-Grand",
   "address": "Grand'Route 58, 7040, Quévy-le-Grand",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.4,
   "reviews": 95,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "chef": "Benjamin Laborie",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 59)",
-  "cuisineNl": "Eigentijds Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 59 €)",
   "lunch": 139,
   "lunchType": "menu",
@@ -34,6 +33,5 @@
   "lunchNoteFr": "Même menu le midi · mar.–dim.",
   "lunchWine": 39,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.limperatifdeole.be/menu",
-  "cuisineFr": "Cuisine française contemporaine"
+  "lunchSource": "https://www.limperatifdeole.be/menu"
 }

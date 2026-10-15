@@ -27,9 +27,7 @@
   "chef": "Stefan Wiesner",
   "chefSource": "michelin",
   "dinnerNoteDe": "Nur mittags: 9-Gang-Gourmet-Menü, Mi–Sa",
-  "cuisineDe": "Kreativ",
   "dinnerNoteFr": "Uniquement le midi : menu gastronomique en 9 plats, mer.–sam.",
-  "cuisineFr": "Cuisine créative",
   "dinnerNoteIt": "Solo a pranzo: menu gourmet di 9 portate, mer–sab",
   "lunch": 255,
   "lunchType": "menu",
@@ -39,6 +37,5 @@
   "lunchNoteIt": "Menu gourmet di 9 portate (solo a pranzo) · mer–sab",
   "lunchWine": 120,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.wiesner-mysterion.ch/essen/wiesner-zauber/",
-  "cuisineIt": "Creativa"
+  "lunchSource": "https://www.wiesner-mysterion.ch/essen/wiesner-zauber/"
 }

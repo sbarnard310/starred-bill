@@ -4,7 +4,7 @@
   "area": "Graz",
   "address": "Kaiser-Josef-Platz 27, 8010, Graz",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -30,6 +30,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 55 €)",
   "lunchNote": "Open for lunch · Tue–Sat",
-  "lunchNoteDe": "Mittags geöffnet · Di–Sa",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Mittags geöffnet · Di–Sa"
 }

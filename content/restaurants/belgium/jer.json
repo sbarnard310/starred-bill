@@ -4,7 +4,7 @@
   "area": "Hasselt",
   "address": "Persoonstraat 16, 3500, Hasselt",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.4,
   "reviews": 278,
   "dinnerType": "menu",
@@ -22,7 +22,6 @@
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 78)",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 78 €)",
   "lunch": 128,
   "lunchType": "menu",
@@ -32,7 +31,6 @@
   "lunchWine": 60,
   "lunchSourceType": "site",
   "lunchSource": "https://www.jer.be/menu/",
-  "cuisineFr": "Cuisine moderne",
   "chef": "Jeroen Schildermans",
   "chefSource": "press"
 }

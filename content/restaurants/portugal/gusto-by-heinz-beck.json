@@ -4,7 +4,7 @@
   "area": "Almancil",
   "address": "Estrada da Quinta do Lago, 8135-106, Almancil",
   "stars": 1,
-  "cuisine": "Mediterranean Cuisine",
+  "cuisine": "Mediterranean",
   "rating": 4.8,
   "reviews": 143,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "dinnerNotePt": "Menu de degustação (outros menus desde 190 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar",
-  "cuisinePt": "Mediterrânea"
+  "lunchNotePt": "Só jantar"
 }

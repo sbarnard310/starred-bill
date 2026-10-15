@@ -3,7 +3,7 @@
   "city": "dusseldorf",
   "address": "Schlüterstraße 1, 40235, Düsseldorf",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 167,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "dinnerNoteDe": "Omnivor-Menü, 8 Gänge (andere Menüs ab 173 €)",
   "lunchNote": "Open for lunch · Sundays",
   "lunchNoteDe": "Mittags geöffnet · Sonntag",
-  "cuisineDe": "Moderne Küche",
   "menus": [
     {
       "name": "Omnivore tasting menu",

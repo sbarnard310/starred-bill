@@ -12,26 +12,29 @@ const NEAR_KM = [25, 50, 100, 200, 400], NEAR_MI = [15, 30, 60, 125, 250];  // c
 const WINE_ROOM = 1.6;  // with no pairing price listed, the menu must leave about 60% for one (the median pairing is ~56% of the menu)
 const STAR_WORDS = { 1: "one-star", 2: "two-star", 3: "three-star" };
 const DIET_CHOICES = [["", "No dietary needs"], ["vegetarian", "Vegetarian"], ["vegan", "Vegan"], ["gluten-free", "Gluten-free"], ["halal", "Halal"], ["kosher", "Kosher"]];
-// "Food mood": the MICHELIN Guide's cuisine labels in a dozen plain groups. The first that matches wins.
+// "Food mood": our cuisine categories (CUISINE_CATEGORIES in build.py) in a dozen plain groups; the rest are "Classic & regional".
+// Keep in step with MOODS in scripts/saved_searches.py.
 const MOODS = [
-  ["veg", "Vegetarian & vegan", /vegetarian|vegan|shojin/i],
-  ["japanese", "Japanese", /japan|sushi|tempura|yakitori|kaiseki|teppanyaki|unagi|fugu/i],
-  ["chinese", "Chinese", /canton|chinese|sichuan|taizhou|shanghai|chao zhou|teochew|zhejiang|huaiyang|fujian|beijing|ningbo|jiangzhe|jiangsu|shandong|hunan|dongbei|hang zhou|hui cuisine|dim sum|congee|shun tak|taiwan/i],
-  ["korean", "Korean", /korean/i],
-  ["seasia", "Thai & Southeast Asian", /thai|vietnam|malaysia|peranakan|filipino|singapore/i],
-  ["indian", "Indian", /indian/i],
-  ["italian", "Italian", /italian|piedmont|sicilian|campanian|tuscan|ligurian|emilian|abruzzo|aosta|lombard|sardinian|umbrian|romagna/i],
-  ["spanish", "Spanish & Portuguese", /spanish|galician|basque|catalan|portuguese/i],
-  ["latin", "Mexican & Latin American", /mexican|colombian|latin|peruvian|cuban/i],
-  ["med", "Mediterranean & Middle Eastern", /mediterranean|greek|turkish|middle eastern|israeli|provençal/i],
-  ["seafood", "Fish & seafood", /fish|seafood|crab/i],
-  ["grill", "Steak & grills", /barbecue|steak|grill|beef|meats/i],
-  ["french", "French", /french/i],
-  ["modern", "Modern & creative", /modern|creative|contemporary|innovative|fusion|international|world|european|asian|californian|american|zealand|australian|farm to table|seasonal|organic|sharing|street food/i],
+  ["veg", "Vegetarian & vegan", /^(?:Vegetarian|Vegan)$/],
+  ["japanese", "Japanese", /^(?:Japanese|Sushi|Tempura|Yakitori)$/],
+  ["chinese", "Chinese", /^(?:Chinese|Cantonese|Teochew|Sichuan|Hunan|Shanghainese|Huaiyang|Zhejiang|Fujian|Beijing|Shandong|Taiwanese)$/],
+  ["korean", "Korean", /^(?:Korean)$/],
+  ["seasia", "Thai & Southeast Asian", /^(?:Thai|Vietnamese|Malaysian|Peranakan|Singaporean|Filipino)$/],
+  ["indian", "Indian", /^(?:Indian)$/],
+  ["italian", "Italian", /^(?:Italian)$/],
+  ["spanish", "Spanish & Portuguese", /^(?:Spanish|Portuguese)$/],
+  ["latin", "Mexican & Latin American", /^(?:Mexican|Latin American)$/],
+  ["med", "Mediterranean & Middle Eastern", /^(?:Mediterranean|Greek|Turkish|Middle Eastern)$/],
+  ["seafood", "Fish & seafood", /^(?:Seafood)$/],
+  ["grill", "Steak & grills", /^(?:Barbecue|Steak and grill)$/],
+  ["french", "French", /^(?:French)$/],
+  ["modern", "Modern & creative", /^(?:Modern European|Modern American|Modern|Creative|Fusion|International|European|British|American|Australian|New Zealand|Asian|Farm to table|Street food)$/],
   ["classic", "Classic & regional", /./]
 ];
 const moodOf = (r) => (r._mood = r._mood || (MOODS.find(([, , re]) => re.test(r.cuisine || "")) || MOODS[MOODS.length - 1])[0]);
 const moodName = (k) => MOODS.find(([m]) => m === k)[1];
+// A cuisine as it reads mid-sentence: "modern European", "sushi", "steak and grill", but "Japanese".
+const cuisineMid = (c) => c.replace(/^(Modern|Creative|Classic|Regional|Farm|Fusion|International|Seafood|Steak|Barbecue|Vegetarian|Vegan|Street|Sushi|Tempura|Yakitori)\b/, (w) => w.toLowerCase());
 
 const ask = {
   rows: null, step: 0, where: null, meal: null, budget: null, cur: null, wine: false, stars: null, food: null, diet: null,
@@ -439,7 +442,7 @@ function reason(kind, r, ctx) {
   if (kind === "value") return (r.stars === 1 ? "A star" : r.stars === 2 ? "Two stars" : "Three stars") + " for " + (b.est ? "about " : "") + money(b.total, ask.cur) + (ask.wine ? " with wine" : "") + " at " + mealWord(b) +
     ": the least per star of your " + plural(ctx.n, "match", "matches") + ".";
   if (ctx.wildWhy === "rising") return r.change === "new" ? "A wildcard: newly starred in the latest MICHELIN Guide." : "A wildcard: promoted to " + (r.stars === 3 ? "three stars" : "two stars") + " in the latest MICHELIN Guide.";
-  if (ctx.wildWhy === "different") return "A wildcard: something different, " + (r.cuisine || moodName(moodOf(r))).toLowerCase() + (r.rating ? ", " + ratingText(r) : "") + ".";
+  if (ctx.wildWhy === "different") return "A wildcard: something different, " + (r.cuisine ? cuisineMid(r.cuisine) : moodName(moodOf(r)).toLowerCase()) + (r.rating ? ", " + ratingText(r) : "") + ".";
   return "Also a strong fit" + (r.rating ? ": " + ratingText(r) : "") + ".";
 }
 function priceLines(r) {
@@ -482,7 +485,7 @@ function planReason(kind, p, ctx) {
   if (kind === "value") return STARS_IN_WORDS[stars] + " for " + total + ": the least per star of your plans.";
   const r = rising(p.l) ? p.l : rising(p.d) ? p.d : null;
   if (ctx.wildWhy === "rising" && r) return "A wildcard: " + r.name + (r.change === "new" ? " is newly starred" : " was promoted") + " in the latest MICHELIN Guide.";
-  if (ctx.wildWhy === "different") return "A wildcard: something different, " + (p.l.cuisine || moodName(moodOf(p.l))).toLowerCase() + " then " + (p.d.cuisine || moodName(moodOf(p.d))).toLowerCase() + ".";
+  if (ctx.wildWhy === "different") return "A wildcard: something different, " + (p.l.cuisine ? cuisineMid(p.l.cuisine) : moodName(moodOf(p.l)).toLowerCase()) + " then " + (p.d.cuisine ? cuisineMid(p.d.cuisine) : moodName(moodOf(p.d)).toLowerCase()) + ".";
   return "Also a strong pair within your budget.";
 }
 function planMeal(r, meal) {

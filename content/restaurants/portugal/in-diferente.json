@@ -3,7 +3,7 @@
   "city": "porto",
   "address": "Rua do Doutor Sousa Rosa 23, 4150-719, Porto",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -33,6 +33,5 @@
   "lunchNotePt": "O mesmo menu ao almoço · sábado",
   "lunchWine": 75,
   "lunchSourceType": "site",
-  "lunchSource": "https://indiferente.pt/carta/Tasting-Menu.pdf",
-  "cuisinePt": "Atual"
+  "lunchSource": "https://indiferente.pt/carta/Tasting-Menu.pdf"
 }

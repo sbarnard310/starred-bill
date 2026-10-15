@@ -3,7 +3,7 @@
   "city": "chengdu",
   "address": "Shop 131A, 1F, M·Cube, 500 Jiaozi Avenue, Wuhou, Chengdu",
   "stars": 1,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-09",
@@ -18,6 +18,5 @@
   "michelinId": "1249451",
   "chef": "Bill Yue",
   "chefSource": "michelin",
-  "dinnerNoteZhs": "人均消费",
-  "cuisineZhs": "创新菜"
+  "dinnerNoteZhs": "人均消费"
 }

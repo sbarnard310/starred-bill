@@ -4,7 +4,7 @@
   "area": "Izmir",
   "address": "Kusçular Mahallesi, 8028. Sokak No:16, Urla, 35437, Izmir",
   "stars": 1,
-  "cuisine": "Mediterranean Cuisine",
+  "cuisine": "Mediterranean",
   "rating": 4.6,
   "reviews": 600,
   "dinnerType": "menu",
@@ -30,7 +30,6 @@
   "chefSource": "michelin",
   "dinnerNoteTr": "Full Expression tadım menüsü (vejetaryen versiyonu TRY 7,500)",
   "lunchNoteTr": "Öğle yemeği için açık · Çar–Paz",
-  "cuisineTr": "Akdeniz Mutfağı",
   "areaTr": "İzmir",
   "menus": [
     {

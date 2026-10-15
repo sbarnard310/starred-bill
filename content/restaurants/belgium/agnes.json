@@ -4,7 +4,7 @@
   "area": "Sint-Martens-Bodegem",
   "address": "Processiestraat 3, 1700, Sint-Martens-Bodegem",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-05",
@@ -35,9 +35,7 @@
     "kosher"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 105)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 105 €)",
-  "cuisineFr": "Cuisine française moderne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner",
   "chef": "Thomas Locus",

@@ -4,7 +4,7 @@
   "area": "Vreeland",
   "address": "Duinkerken 3, 3633 EM, Vreeland",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 402,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 150)",
   "lunchNote": "Open for lunch · Thu–Sun",
-  "lunchNoteNl": "Open voor lunch · do–zo",
-  "cuisineNl": "Moderne keuken"
+  "lunchNoteNl": "Open voor lunch · do–zo"
 }

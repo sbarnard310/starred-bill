@@ -4,7 +4,7 @@
   "area": "Braine-l'Alleud",
   "address": "rue Doyen Van Belle 6, 1420, Braine-l'Alleud",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 498,
   "dinnerType": "menu",
@@ -27,10 +27,8 @@
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 68)",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 68 €)",
   "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine française moderne",
   "chef": "Philippe Meyers",
   "chefSource": "press"
 }

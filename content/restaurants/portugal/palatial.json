@@ -4,7 +4,7 @@
   "area": "Braga",
   "address": "Av. da Independência 8, Arcos, 4705-162, Braga",
   "stars": 1,
-  "cuisine": "Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 108,
   "dinnerType": "menu",
@@ -24,6 +24,5 @@
   "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 110 €)",
   "lunchNote": "Open for lunch · Tue–Sat",
-  "lunchNotePt": "Aberto ao almoço · ter.–sáb.",
-  "cuisinePt": "Atual"
+  "lunchNotePt": "Aberto ao almoço · ter.–sáb."
 }

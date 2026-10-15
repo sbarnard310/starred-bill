@@ -21,7 +21,6 @@
   ],
   "chef": "Thomas Troupin",
   "chefSource": "michelin",
-  "cuisineNl": "Creatief",
   "lunch": 130,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Tue–Fri",
@@ -30,7 +29,6 @@
   "lunchWine": 65,
   "lunchSourceType": "site",
   "lunchSource": "https://www.toma-restaurant.be/menu-par-saison/",
-  "cuisineFr": "Cuisine créative",
   "dinnerNote": "Immersion menu",
   "dinnerNoteNl": "Immersion-menu",
   "dinnerNoteFr": "Menu Immersion"

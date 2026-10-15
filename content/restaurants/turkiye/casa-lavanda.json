@@ -3,7 +3,7 @@
   "city": "istanbul",
   "address": "Ulupelit Köyü, Seçilmiş Sokak No:2, Şile, 34980, Istanbul",
   "stars": 1,
-  "cuisine": "Traditional Cuisine",
+  "cuisine": "Classic",
   "rating": 4.3,
   "reviews": 1190,
   "dinnerType": "menu",
@@ -21,7 +21,6 @@
   "dinnerNoteTr": "Tadım menüsü, masadaki tüm misafirlere servis edilir; alakart menü de mevcut",
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteTr": "Öğle yemeği için açık · Per–Paz",
-  "cuisineTr": "Geleneksel Mutfak",
   "wine": 4500,
   "menus": [
     {

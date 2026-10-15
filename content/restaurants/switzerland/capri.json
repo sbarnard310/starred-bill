@@ -25,14 +25,11 @@
   "chef": "Salvatore Elefante",
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
-  "cuisineDe": "Italienisch",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine italienne",
   "dinnerNoteIt": "Menu degustazione",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Italiana"
+  "lunchNoteIt": "Solo a cena"
 }

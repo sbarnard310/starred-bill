@@ -4,7 +4,7 @@
   "area": "Ninove",
   "address": "Leopoldlaan 95, 9400, Ninove",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 540,
   "dinnerType": "menu",
@@ -27,9 +27,7 @@
   "chef": "Kevin Graf",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 135 €)",
-  "cuisineFr": "Cuisine française moderne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"
 }

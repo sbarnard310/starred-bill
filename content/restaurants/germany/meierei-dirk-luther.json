@@ -4,7 +4,7 @@
   "area": "Glücksburg",
   "address": "Uferstraße 1, 24960, Glücksburg",
   "stars": 2,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.8,
   "reviews": 95,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 290 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Nur abends"
 }

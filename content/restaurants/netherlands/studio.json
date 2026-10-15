@@ -3,7 +3,7 @@
   "city": "maastricht",
   "address": "Wycker Grachtstraat 24, 6221 CX, Maastricht",
   "stars": 1,
-  "cuisine": "Asian Influences",
+  "cuisine": "Asian",
   "rating": 5,
   "reviews": 829,
   "dinnerType": "menu",
@@ -26,7 +26,6 @@
   "lunchNoteNl": "Lunchmenu · di–vr",
   "lunchSourceType": "site",
   "lunchSource": "https://www.studio.restaurant/menu",
-  "cuisineNl": "Aziatische invloeden",
   "chef": "Gilbert von Berg",
   "chefSource": "press"
 }

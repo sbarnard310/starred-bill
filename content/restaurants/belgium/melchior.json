@@ -4,7 +4,7 @@
   "area": "Tienen",
   "address": "Veemarkt 47, 3300, Tienen",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.6,
   "reviews": 365,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "chef": "Gilles Melchior",
   "chefSource": "site",
   "dinnerNoteNl": "Menu, 5 gangen (6 gangen € 150)",
-  "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu, 5 services (6 services 150 €)",
   "lunch": 68,
   "lunchType": "menu",
@@ -34,6 +33,5 @@
   "lunchNoteFr": "Menu lunch, 3 services (4 services 88 €) · mar.–ven.",
   "lunchWine": 24,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.melchi-or.be/nl/menu",
-  "cuisineFr": "Cuisine française moderne"
+  "lunchSource": "https://www.melchi-or.be/nl/menu"
 }

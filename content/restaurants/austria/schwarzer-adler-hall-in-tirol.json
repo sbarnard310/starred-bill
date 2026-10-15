@@ -4,7 +4,7 @@
   "area": "Hall in Tirol",
   "address": "Eugenstrasse 3, 6060, Hall in Tirol",
   "stars": 2,
-  "cuisine": "European Contemporary",
+  "cuisine": "Modern European",
   "rating": 4.5,
   "reviews": 141,
   "dinnerType": "menu",
@@ -23,7 +23,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Europäisch-zeitgemäß",
   "menus": [
     {
       "name": "set menu",

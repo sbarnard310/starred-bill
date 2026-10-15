@@ -4,7 +4,7 @@
   "area": "Lech am Arlberg",
   "address": "Tannberg 187, 6764, Lech am Arlberg",
   "stars": 1,
-  "cuisine": "Mediterranean Cuisine",
+  "cuisine": "Mediterranean",
   "change": "new",
   "changeNote": "Gained its first star",
   "changeDate": "2026-03",
@@ -31,6 +31,5 @@
   "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 155 €)",
   "lunchNote": "Open for lunch",
-  "lunchNoteDe": "Mittags geöffnet",
-  "cuisineDe": "Mediterran"
+  "lunchNoteDe": "Mittags geöffnet"
 }

@@ -4,7 +4,7 @@
   "area": "Baiersbronn",
   "address": "Tonbachstraße 237, 72270, Baiersbronn",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "dinnerType": "menu",
   "dinner": 195,
   "dinnerNote": "Tasting menu (other menus from €185)",
@@ -24,6 +24,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 185 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

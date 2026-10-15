@@ -4,7 +4,7 @@
   "area": "Brugge",
   "address": "Langestraat 159, 8000, Brugge",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.3,
   "reviews": 765,
   "dinnerType": "menu",
@@ -26,9 +26,7 @@
   "chef": "Henk Van Oudenhouve",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu",
-  "cuisineNl": "Creatief Frans",
   "dinnerNoteFr": "Menu dégustation",
-  "cuisineFr": "Cuisine française créative",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"
 }

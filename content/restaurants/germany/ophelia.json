@@ -4,7 +4,7 @@
   "area": "Constance",
   "address": "Seestraße 25, 78464, Constance",
   "stars": 2,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 232,
   "dinnerType": "menu",
@@ -25,7 +25,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-kreativ",
   "areaDe": "Konstanz",
   "chef": "Dirk Hoberg",
   "chefSource": "press"

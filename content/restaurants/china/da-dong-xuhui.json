@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "Shop 602, 6F, iapm, 999 Middle Huaihai Road, Xuhui, Shanghai",
   "stars": 1,
-  "cuisine": "Chinese Contemporary",
+  "cuisine": "Chinese",
   "dinnerType": "spend",
   "dinner": 412,
   "dinnerNote": "Typical spend",
@@ -18,7 +18,6 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "时尚中国菜",
   "nameZhs": "大董（徐汇）",
   "chef": "Dong Zhenxiang",
   "chefSource": "press"

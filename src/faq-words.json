@@ -130,7 +130,7 @@
   "cerPast": "Past ceremonies",
   "cuEyebrow": "By cuisine",
   "cuTitle": "Michelin star restaurants {in} by cuisine",
-  "cuIntro": "The {n} starred restaurants {in} cover {k} cuisines, as the MICHELIN Guide names them.",
+  "cuIntro": "The {n} starred restaurants {in} cover {k} cuisines.",
   "nbEyebrow": "By neighbourhood",
   "nbTitle": "Michelin star restaurants {in} by neighbourhood",
   "nbMost": "{area} has the most Michelin star restaurants {in}, {k} of the {n}",

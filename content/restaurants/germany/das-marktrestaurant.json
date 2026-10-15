@@ -4,7 +4,7 @@
   "area": "Mittenwald",
   "address": "Dekan-Karl-Platz 21, 82481, Mittenwald",
   "stars": 1,
-  "cuisine": "Country cooking",
+  "cuisine": "Regional",
   "rating": 4.8,
   "reviews": 287,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 85 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Regional"
+  "lunchNoteDe": "Nur abends"
 }

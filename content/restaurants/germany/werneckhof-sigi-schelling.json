@@ -3,7 +3,7 @@
   "city": "munich",
   "address": "Werneckstraße 11, 80802, Munich",
   "stars": 1,
-  "cuisine": "French Contemporary",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 197,
   "dinnerType": "menu",
@@ -27,7 +27,6 @@
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 135 €)",
   "lunchNoteDe": "Mittagsmenü",
-  "cuisineDe": "Französisch-zeitgemäß",
   "chef": "Sigi Schelling",
   "chefSource": "press"
 }

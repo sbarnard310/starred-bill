@@ -4,7 +4,7 @@
   "area": "Gent",
   "address": "Ham 39, 9000, Gent",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 723,
   "dinnerType": "menu",
@@ -30,10 +30,8 @@
   ],
   "dinnerNoteNl": "Proeverijmenu",
   "lunchNoteNl": "Lunchmenu",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation",
   "lunchNoteFr": "Menu déjeuner",
-  "cuisineFr": "Cuisine moderne",
   "chef": "Olly Ceulenaere",
   "chefSource": "press"
 }

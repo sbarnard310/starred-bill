@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "Dam 27, 1012 JS, Amsterdam",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 483,
   "dinnerType": "menu",
@@ -29,6 +29,5 @@
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 179)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNl": "Alleen diner",
-  "cuisineNl": "Moderne keuken"
+  "lunchNoteNl": "Alleen diner"
 }

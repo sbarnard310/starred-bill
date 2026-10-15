@@ -4,7 +4,7 @@
   "area": "Ulm",
   "address": "Friedrichsau 50, 89073, Ulm",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 47,
   "dinnerType": "menu",
@@ -27,7 +27,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Französisch-modern",
   "bookingWindow": {
     "type": "rolling",
     "months": 2,

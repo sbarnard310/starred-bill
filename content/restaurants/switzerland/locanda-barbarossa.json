@@ -4,7 +4,7 @@
   "area": "Ascona",
   "address": "via Muraccio 142, 6612, Ascona",
   "stars": 1,
-  "cuisine": "Mediterranean Cuisine",
+  "cuisine": "Mediterranean",
   "rating": 4.7,
   "reviews": 22,
   "dinnerType": "menu",
@@ -22,9 +22,7 @@
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 125)",
-  "cuisineDe": "Mediterran",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 125)",
-  "cuisineFr": "Cuisine méditerranéenne",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 125)",
   "lunch": 150,
   "lunchType": "menu",
@@ -35,7 +33,6 @@
   "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
   "lunchSourceType": "site",
   "lunchSource": "https://www.castellodelsole.com/media/ingkgyes/menu-sapori-del-nostro-orto-autunno_fr_en.pdf",
-  "cuisineIt": "Mediterranea",
   "chef": "Mattias Roock",
   "chefSource": "press"
 }

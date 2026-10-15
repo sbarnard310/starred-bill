@@ -3,7 +3,7 @@
   "city": "shanghai",
   "address": "No.1, Lane 119, Xinhua Road, Changning, Shanghai",
   "stars": 1,
-  "cuisine": "Jiangzhe",
+  "cuisine": "Zhejiang",
   "rating": 4.4,
   "reviews": 9,
   "dinnerType": "spend",
@@ -18,7 +18,6 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "江浙菜",
   "nameZhs": "鹿园（长宁）",
   "chef": "Paul Zhu",
   "chefSource": "press"

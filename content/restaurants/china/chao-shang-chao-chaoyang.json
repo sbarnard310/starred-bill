@@ -3,7 +3,7 @@
   "city": "beijing",
   "address": "L406B, 4F, CP Center, 20 Jinhe East Road, Chaoyang, Beijing",
   "stars": 3,
-  "cuisine": "Chao Zhou",
+  "cuisine": "Teochew",
   "dinnerType": "spend",
   "dinner": 723,
   "dinnerNote": "Typical spend",
@@ -18,7 +18,6 @@
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "cuisineZhs": "潮州菜",
   "nameZhs": "潮上潮（朝阳）",
   "chef": "Cheung Yat Fung",
   "chefSource": "press"

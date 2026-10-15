@@ -4,7 +4,7 @@
   "area": "Beuzet",
   "address": "rue Chainisse 53, 5030, Beuzet",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.7,
   "reviews": 499,
   "dinnerType": "menu",
@@ -25,9 +25,7 @@
   "chef": "Pierre Massin",
   "chefSource": "michelin",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 85)",
-  "cuisineNl": "Moderne keuken",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 85 €)",
-  "cuisineFr": "Cuisine moderne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner"
 }

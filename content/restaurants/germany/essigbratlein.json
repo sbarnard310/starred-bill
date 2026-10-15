@@ -3,7 +3,7 @@
   "city": "nuremberg",
   "address": "Weinmarkt 3, 90403, Nuremberg",
   "stars": 2,
-  "cuisine": "Innovative",
+  "cuisine": "Creative",
   "rating": 4.7,
   "reviews": 487,
   "dinnerType": "menu",
@@ -31,6 +31,5 @@
   "chef": "Andree Köthe",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 180 €)",
-  "cuisineDe": "Innovativ",
   "lunchNoteDe": "Mittagsmenü"
 }

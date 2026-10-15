@@ -4,8 +4,19 @@
   lang: { label: "HR", html: "hr", suffixes: ["Hr"], locale: "hr-HR", maps: "hr" },
   months: ["sij.", "velj.", "ožu.", "tra.", "svi.", "lip.", "srp.", "kol.", "ruj.", "lis.", "stu.", "pro."],
   cuisines: {
-    "Contemporary": "Suvremena", "Creative": "Kreativna", "Italian Contemporary": "Suvremena talijanska", "Mediterranean Cuisine": "Mediteranska", "Modern Cuisine": "Moderna kuhinja",
-    "Croatian": "Hrvatska", "Seafood": "Plodovi mora", "Fish and Seafood": "Riba i plodovi mora", "Traditional Cuisine": "Tradicionalna kuhinja", "Innovative": "Inovativna"
+    "Modern European": "Moderna europska", "Modern American": "Moderna američka", "Modern": "Moderna kuhinja", "Creative": "Kreativna",
+    "Classic": "Klasična kuhinja", "Regional": "Regionalna kuhinja", "Farm to table": "Od farme do stola", "Fusion": "Fuzijska",
+    "International": "Međunarodna", "European": "Europska", "French": "Francuska", "British": "Britanska", "Italian": "Talijanska",
+    "Spanish": "Španjolska", "Portuguese": "Portugalska", "Mediterranean": "Mediteranska", "Greek": "Grčka", "Turkish": "Turska",
+    "Alpine": "Alpska", "Austrian": "Austrijska", "German": "Njemačka", "Nordic": "Nordijska", "Middle Eastern": "Bliskoistočna",
+    "African": "Afrička", "American": "Američka", "Mexican": "Meksička", "Latin American": "Latinskoamerička", "Australian": "Australska",
+    "New Zealand": "Novozelandska", "Pacific Islands": "Pacifička", "Japanese": "Japanska", "Sushi": "Sushi", "Tempura": "Tempura",
+    "Yakitori": "Yakitori", "Korean": "Korejska", "Chinese": "Kineska", "Cantonese": "Kantonska", "Teochew": "Teochew", "Sichuan": "Sečuanska",
+    "Hunan": "Hunanska", "Shanghainese": "Šangajska", "Huaiyang": "Huaiyang", "Zhejiang": "Zhejiang", "Fujian": "Fujian", "Beijing": "Pekinška",
+    "Shandong": "Shandong", "Taiwanese": "Tajvanska", "Thai": "Tajlandska", "Vietnamese": "Vijetnamska", "Malaysian": "Malezijska",
+    "Peranakan": "Peranakan", "Singaporean": "Singapurska", "Filipino": "Filipinska", "Indian": "Indijska", "Asian": "Azijska",
+    "Seafood": "Plodovi mora", "Steak and grill": "Odresci i roštilj", "Barbecue": "Barbecue", "Vegetarian": "Vegetarijanska",
+    "Vegan": "Veganska", "Street food": "Ulična hrana"
   },
   words: {
     acctSentCode: "Poslali smo šesteroznamenkasti kôd na {email}. Upišite ga ispod da biste se ovdje prijavili. (Poveznica u e-poruci također radi, ali u aplikaciji na početnom zaslonu otvara preglednik.)", acctCodeLabel: "Kôd iz e-poruke", acctVerify: "Prijava kôdom", acctVerifying: "Provjeravamo…", acctCodeWrong: "Taj kôd nije uspio. Provjerite ga ili zatražite novi.", acctBadCode: "Upišite šesteroznamenkasti kôd iz e-poruke.",

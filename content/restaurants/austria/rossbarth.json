@@ -4,7 +4,7 @@
   "area": "Linz",
   "address": "Klammstraße 7, 4020, Linz",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 243,
   "dinnerType": "menu",
@@ -28,6 +28,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 111 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche"
+  "lunchNoteDe": "Nur abends"
 }

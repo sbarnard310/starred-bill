@@ -4,7 +4,7 @@
   "area": "Interlaken",
   "address": "Höheweg 41, 3800, Interlaken",
   "stars": 1,
-  "cuisine": "Regional Cuisine",
+  "cuisine": "Regional",
   "rating": 4.7,
   "reviews": 142,
   "dinnerType": "menu",
@@ -26,14 +26,11 @@
   "chef": "Stefan Beer",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 165)",
-  "cuisineDe": "Regional",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 165)",
-  "cuisineFr": "Cuisine régionale",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 165)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena",
-  "cuisineIt": "Regionale"
+  "lunchNoteIt": "Solo a cena"
 }

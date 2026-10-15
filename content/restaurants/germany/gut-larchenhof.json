@@ -4,7 +4,7 @@
   "area": "Pulheim",
   "address": "Hahnenstraße, 50259, Pulheim",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.7,
   "reviews": 258,
   "dinnerType": "menu",
@@ -25,6 +25,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü",
   "lunchNote": "Open for lunch",
-  "lunchNoteDe": "Mittags geöffnet",
-  "cuisineDe": "Französisch-modern"
+  "lunchNoteDe": "Mittags geöffnet"
 }

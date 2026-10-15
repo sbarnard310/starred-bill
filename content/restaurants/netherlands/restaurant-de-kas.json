@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "Kamerlingh Onneslaan 3, 1097 DE, Amsterdam",
   "stars": 1,
-  "cuisine": "Organic",
+  "cuisine": "Farm to table",
   "rating": 4.7,
   "reviews": 3736,
   "dinnerType": "menu",
@@ -31,7 +31,6 @@
   "chef": "Wim de Beer & Jos Timmer",
   "chefSource": "michelin",
   "dinnerNoteNl": "Dinermenu, 6 gangen (5 gangen € 86)",
-  "cuisineNl": "Bio",
   "lunchNoteNl": "Lunchmenu, 3 gangen · ma–za (4 gangen € 67, 5 gangen € 76)",
   "menus": [
     {

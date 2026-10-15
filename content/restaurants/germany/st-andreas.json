@@ -4,7 +4,7 @@
   "area": "Aue - Bad Schlema",
   "address": "Altmarkt 1, 08280, Aue - Bad Schlema",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.9,
   "reviews": 37,
   "dinnerType": "menu",
@@ -24,7 +24,6 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
-  "cuisineDe": "Moderne Küche",
   "areaDe": "Aue",
   "chef": "Benjamin Unger",
   "chefSource": "press"

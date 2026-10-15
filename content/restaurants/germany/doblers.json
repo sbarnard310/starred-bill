@@ -4,7 +4,7 @@
   "area": "Mannheim",
   "address": "Seckenheimer Straße 20, 68159, Mannheim",
   "stars": 1,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.8,
   "reviews": 461,
   "dinnerType": "menu",
@@ -26,6 +26,5 @@
   "chef": "Eric Schumacher",
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "cuisineDe": "Klassische Küche",
   "lunchNoteDe": "Mittagsmenü"
 }

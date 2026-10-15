@@ -3,7 +3,7 @@
   "city": "amsterdam",
   "address": "Sophialaan 55, 1075 BP, Amsterdam",
   "stars": 1,
-  "cuisine": "Creative French",
+  "cuisine": "French",
   "rating": 4.3,
   "reviews": 1901,
   "dinnerType": "main",
@@ -25,7 +25,6 @@
   "dinnerNoteNl": "À la carte; hoofdgerechten € 25–47 (Beef Wellington € 90 voor twee)",
   "lunchNote": "Open for lunch",
   "lunchNoteNl": "Open voor lunch",
-  "cuisineNl": "Creatief Frans",
   "chef": "Ron Blaauw",
   "chefSource": "press",
   "menus": [

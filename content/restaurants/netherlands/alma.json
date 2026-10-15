@@ -4,7 +4,7 @@
   "area": "Oisterwijk",
   "address": "De Lind 45a, 5061 HT, Oisterwijk",
   "stars": 1,
-  "cuisine": "Modern French",
+  "cuisine": "French",
   "rating": 4.8,
   "reviews": 314,
   "dinnerType": "menu",
@@ -27,7 +27,6 @@
     "gluten-free"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 135)",
-  "cuisineNl": "Modern Frans",
   "lunchNoteNl": "Lunchmenu",
   "chef": "Cas Spijkers",
   "chefSource": "press"

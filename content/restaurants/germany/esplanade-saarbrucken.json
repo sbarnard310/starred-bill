@@ -4,7 +4,7 @@
   "area": "Saarbrücken",
   "address": "Nauwieserstraße 5, 66111, Saarbrücken",
   "stars": 2,
-  "cuisine": "Classic Cuisine",
+  "cuisine": "Classic",
   "rating": 4.6,
   "reviews": 365,
   "dinnerType": "menu",
@@ -21,6 +21,5 @@
   "chefSource": "michelin",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 72 €)",
   "lunchNote": "Open for lunch · Wed–Sat",
-  "lunchNoteDe": "Mittags geöffnet · Mi–Sa",
-  "cuisineDe": "Klassische Küche"
+  "lunchNoteDe": "Mittags geöffnet · Mi–Sa"
 }

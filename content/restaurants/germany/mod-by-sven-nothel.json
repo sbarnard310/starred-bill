@@ -4,7 +4,7 @@
   "area": "Duisburg",
   "address": "Grafschafter Straße 197a, 47199, Duisburg",
   "stars": 1,
-  "cuisine": "Modern Cuisine",
+  "cuisine": "Modern European",
   "rating": 4.8,
   "reviews": 288,
   "dinnerType": "menu",
@@ -30,7 +30,6 @@
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 75 €)",
   "lunchNoteDe": "Mittagsmenü",
-  "cuisineDe": "Moderne Küche",
   "chef": "Sven Nöthel",
   "chefSource": "press"
 }

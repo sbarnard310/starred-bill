@@ -487,7 +487,7 @@
       "checked": "2026-10",
       "starsUpdated": "2026-10-05",
       "ceremonies": [
-        {"date": "2026-09-11", "edition": 2027, "source": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-selection-2027-chengdu"},
+        {"date": "2026-09-03", "online": true, "edition": 2027, "source": "https://cbgc.scol.com.cn/news/7916838"},
         {"date": "2025-09-02", "online": true, "source": "https://guide.michelin.com/mo/en/article/news-and-views/michelin-guide-chengdu-2026"}
       ]
     },

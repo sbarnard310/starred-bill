@@ -114,7 +114,7 @@ function receipt(r, f, best, i) {
       '<h3 class="cr-name"><a href="' + esc(r.path + "?q=" + encodeURIComponent(r.name)) + '">' + esc(r.name) + "</a></h3>" +
       '<span class="cr-meta">' + starIcons(r.stars) + " " + esc(r.cuisine) + "</span>" +
       '<span class="cr-where">' + esc(r.where) + "</span>" +
-      (r.notice ? '<span class="notice">' + esc(t("tempClosed")) + "</span>" : "") +
+      noticeBadge(r) +
       '<span class="cr-acts"><button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + saved + '" aria-label="' + esc(t(saved ? "wishRemove" : "wishAdd", { name: r.name })) + '" title="' + esc(t(saved ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button>" +
       '<button type="button" class="cr-x" data-unpick="' + esc(r.id) + '" aria-label="Take ' + esc(r.name) + ' out of the comparison" title="Take out of the comparison">×</button></span>' +
     "</div>" +

@@ -428,7 +428,7 @@ function summaryCell(r) {
   const former = !!r.status;
   const label = { lost: t("stLost"), closed: t("stClosed"), changed: t("stChanged") };
   const sub = former ? '<span class="status-pill status-' + esc(r.status) + '">' + (label[r.status] || label.changed) + "</span>" + esc(areaOf(r) || "")
-    : (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc([areaOf(r), cuisineOf(r)].filter(Boolean).join(" · "));
+    : noticeBadge(r) + esc([areaOf(r), cuisineOf(r)].filter(Boolean).join(" · "));
   const right = former ? '<span class="sum-stars">' + starIcons(r.formerStars) + "</span>"
     : '<span class="sum-stars">' + (r.change ? '<span class="chg-' + (r.change === "down" ? "down" : "up") + '" aria-hidden="true">' + (r.change === "down" ? "▼" : "▲") + "</span>" : "") + starIcons(r.stars) + "</span>" +
       '<span class="sum-price">' + priceHtml(priceOf(r), typeOf(r), r, L() && r.noLunch ? "noLunch" : "notListed") + "</span>";
@@ -509,7 +509,7 @@ function receipt(r) {
   const checked = PRICES_CHECKED.toLocaleDateString(locale(), { month: cjk() ? "numeric" : "short", year: "numeric" });
   return '<span class="receipt" role="cell"><span class="rc-paper">' +
     '<span class="rc-head" aria-hidden="true">' + esc(t("rcptHead")) + "</span>" +
-    (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") +
+    noticeBadge(r) +
     receiptLine(t("mealDinner"), dinner, pick(r, "dinnerNote"), meal === "dinner") +
     receiptLine(t("mealLunch"), lunch, r.noLunch ? "" : pick(r, "lunchNote"), meal === "lunch") +
     receiptLine(t("hWine"), wine ? { text: money(wine, r) } : { dash: true }, wine ? "" : noWineNote(r), false) +
@@ -541,7 +541,7 @@ function ledgerRow(r) {
     '<span class="cat" role="cell"><button type="button" class="tag" data-cat="' + esc(r.cuisine) + '" title="' + esc(t("showOnly", { cat: cuisineOf(r) })) + '">' + esc(cuisineOf(r)) + "</button></span>" +
     '<span class="stars-cell" role="cell">' + starIcons(r.stars) + changeBadge(r) + "</span>" +
     '<span class="rating-cell" role="cell"><span class="mlabel">' + t("hGoogle") + "</span>" + (r.rating ? '<span class="rating num' + (fewReviews(r) ? " few" : "") + '" aria-label="' + esc(t("ratingAria", { r: r.rating.toFixed(1) })) + '"><svg aria-hidden="true"><use href="#gstar"/></svg>' + r.rating.toFixed(1) + "</span>" + (r.reviews ? '<span class="note">' + t("reviews", { n: r.reviews.toLocaleString("en-GB") }) + fewNote(r) + "</span>" : "") : '<span class="num muted" aria-hidden="true">–</span><span class="note">' + t("noRating") + "</span>") + memberNote(r) + "</span>" +
-    '<span class="notes" role="cell">' + (r.notice ? '<span class="notice">' + t("tempClosed") + "</span>" : "") + esc(noteOf(r) || "–") +
+    '<span class="notes" role="cell">' + noticeBadge(r) + esc(noteOf(r) || "–") +
       srcHtml(r) + bwLine(r) + tripButton(r) + reportButton(r) + "</span>" +
     '<span class="dinner" role="cell"><span class="mlabel">' + t("hPrice") + "</span>" + stub(r) + "</span>" + receipt(r) + actsCell(r) +
     '<span class="wish-cell" role="cell">' + beenButton(r) + '<button type="button" class="wish" data-wish="' + esc(r.id) + '" aria-pressed="' + on + '" aria-label="' + esc(t(on ? "wishRemove" : "wishAdd", { name: nameOf(r) })) + '" title="' + esc(t(on ? "wishRemoveT" : "wishAddT")) + '">' + heart + "</button></span>" +

@@ -395,6 +395,13 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
     for field in ("changeDate", "statusDate"):
         if r.get(field) and not re.fullmatch(r"\d{4}-\d{2}", r[field]):
             problem(where, f"{field} must be a year and month, like 2026-05")
+    # A closure announced ahead (`closes`, the day it closes for good): its badge gives the day until then.
+    if r.get("closes"):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(r["closes"])):
+            problem(where, "closes must be the day it closes for good, like 2026-12-22")
+        elif r["closes"] < date.today().isoformat() and not r.get("status"):
+            print(f"  {r.get('name', where)} closed for good on {r['closes']}: set stars 0, status closed, formerStars, statusNote "
+                  f"and statusDate, and take out closes and notice")
     for field in ("dinner", "wine", "lunch", "lunchWine", "rating", "reviews", "lat", "lng"):
         if r.get(field) is not None and not isinstance(r[field], (int, float)):
             problem(where, f"{field} must be a number (no currency sign or quotes)")
@@ -3750,12 +3757,13 @@ def build_compare(starred):
     holding the visitor's wishlist. The page is personal (it reads the wishlist in the browser), so it stays out of search engines and the sitemap."""
     cols = ["id", "name", "stars", "cuisine", "where", "path", "country", "cur", "dinner", "dinnerType", "dinnerNote", "lunch", "lunchType",
             "lunchNote", "noLunch", "wine", "lunchWine", "source", "sourceType", "lunchSource", "lunchSourceType", "notice", "noPairing", "href",
-            "serviceIncluded"]
+            "serviceIncluded", "closes"]
     rows = [[r["id"], r["name"], r["stars"], r.get("cuisine", ""), near_where(r), r["cityPath"], r["country"], r["cur"],
              r.get("dinner"), r.get("dinnerType", "menu"), r.get("dinnerNote", ""), r.get("lunch"), r.get("lunchType", "menu"),
              r.get("lunchNote", ""), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"),
              r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0,
-             1 if r.get("noPairing") else 0, restaurant_href(r), (2 if r.get("taxIncluded") else 1) if r.get("serviceIncluded") else 0]
+             1 if r.get("noPairing") else 0, restaurant_href(r), (2 if r.get("taxIncluded") else 1) if r.get("serviceIncluded") else 0,
+             r.get("closes")]
             for r in starred]
     parts = [[] for _ in range(COMPARE_PARTS)]
     for row in rows:
@@ -4822,7 +4830,8 @@ def chef_blocks(live, links, stars_cell, note):
     def line(r, chef=None):
         led = chef and r.get("chef") and chef not in chef_names(r["chef"])
         return (f'{stars_cell(r["stars"])} {restaurant_link(r, links)} <span class="muted">{e(where(r))}'
-                + (f' · chef {e(r["chef"])}' if led else "") + (f" · {shut(r)}" if shut(r) else "") + "</span>")
+                + (f' · chef {e(r["chef"])}' if led else "") + (f" · {shut(r)}" if shut(r) else "")
+                + (f" · {closing_label(r)[:1].lower() + closing_label(r)[1:]}" if closing_label(r) and not shut(r) else "") + "</span>")
 
     def shut(r):
         """A short label for a restaurant whose notice says it's closed for now, else ""."""
@@ -7549,6 +7558,15 @@ def restaurant_answer(r, stay):
     return " ".join(out)
 
 
+def closing_label(r):
+    """"Closes 22 Dec 2026" for a restaurant that has announced the day it closes (`closes`), "Closed" once
+    that day has passed, else "". The browser's noticeBadge() in common.js says the same."""
+    c = r.get("closes")
+    if not c:
+        return ""
+    return f"Closes {int(c[8:])} {MONTH_NAMES[int(c[5:7]) - 1][:3]} {c[:4]}" if date.today().isoformat() <= c else "Closed"
+
+
 def receipt_html(r, kind, src_links, convert=False):
     """The till receipt, drawn as receipt() in place.js draws it (dinner, lunch, wine pairing, dinner + wine). With convert,
     each price carries data-amt and data-cur, so the homepage can show it in the visitor's currency (amt() in home.js)."""
@@ -7574,7 +7592,7 @@ def receipt_html(r, kind, src_links, convert=False):
     checked = (MONTH_NAMES[int(month[5:7]) - 1][:3] + " " + month[:4]) if re.fullmatch(r"\d{4}-\d{2}", month) else ""
     return ('<div class="receipt rp-receipt"><span class="rc-paper">'
             '<span class="rc-head" aria-hidden="true">The Starred Bill · Table for 1</span>'
-            + (f'<span class="notice">Temporarily closed</span>' if r.get("notice") else "")
+            + (f'<span class="notice">{e(closing_label(r) or "Temporarily closed")}</span>' if r.get("notice") or r.get("closes") else "")
             + meal("dinner", "dinnerNote", "dinnerType") + meal("lunch", "lunchNote", "lunchType")
             + (line("Wine pairing", money(w, cur), n=w) if w else line("Wine pairing", "–", "no pairing offered" if r.get("noPairing") else "no pairing listed", muted=True))
             + (f'<span class="rc-line rc-total"><span class="rc-k">Dinner + wine</span><span class="rc-dots" aria-hidden="true"></span>'

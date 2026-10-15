@@ -85,7 +85,8 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 | `change`, `changeNote`, `changeNoteZh`, `changeDate` | recent star change: `new`, `up` or `down`, and when (`2026-02`) |
 | `status`, `formerStars`, `statusNote`, `statusNoteZh` | only for restaurants no longer starred: `lost`, `closed` or `changed` |
 | `statusDate` | the month it closed, changed or lost its stars (`2026-05`), which can come before or after the guide that dropped it (`changeDate`) |
-| `notice`, `noticeZh` | a current notice, e.g. temporarily closed |
+| `notice`, `noticeZh` | a current notice, e.g. temporarily closed; shows as a "Temporarily closed" badge |
+| `closes` | the day a restaurant has announced it closes for good (`2026-12-22`): its badge says "Closes 22 Dec 2026" instead (`noticeBadge()` in common.js, `closing_label()` in build.py), and "Closed" once the day has passed, when the build reminds us to set `status: closed` and take this out |
 | `website`, `lat`, `lng`, `placeId` | website, map position and Google place id (for the photo) |
 | `chef`, `chefSource` | head chef, and where the name came from: `site` (the restaurant's website), `press` (recent reviews, interviews, hotel or booking pages such as OMAKASE, checked by hand), `manual` (never overwritten) or `michelin` (taken from the MICHELIN Guide's search index before 13 Oct 2026; replace with one of the others when rechecked, never add new ones) |
 | `diets` | dietary options: any of `vegetarian-only`, `vegetarian-menu`, `vegetarian`, `vegan`, `gluten-free`, `halal`, `kosher`. Most were taken from the MICHELIN Guide's search index before 13 Oct 2026; new ones come from the restaurant's own menus and website, with `dietsManual` |

@@ -55,7 +55,7 @@
     wishNote: "Sinu soovinimekiri salvestatakse ainult selles brauseris.",
     wishAdd: "Lisa {name} soovinimekirja", wishRemove: "Eemalda {name} soovinimekirjast", wishAddT: "Lisa soovinimekirja", wishRemoveT: "Eemalda soovinimekirjast",
     toastAdded: "Lisatud soovinimekirja: {name}", toastRemoved: "Eemaldatud soovinimekirjast: {name}", undo: "Võta tagasi",
-    photo: "Foto", tempClosed: "Ajutiselt suletud",
+    photo: "Foto", tempClosed: "Ajutiselt suletud", closesOn: "Suletakse: {date}",
     mapTitle: "Kõik tähistatud restoranid ühel kaardil",
     mapText: "Kaardinõelad järgivad ülaloleva nimekirja filtreid: vali tähtede arv, köök või oma soovinimekiri ja kaart kohandub. Puuduta nõela, et näha hinda ja teejuhiseid.",
     mapWait: "Kaart laaditakse, kui siia kerid.", mapLabel: "Michelini tähega restoranide kaart",

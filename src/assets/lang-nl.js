@@ -63,7 +63,7 @@
     wishNote: "Je verlanglijst wordt alleen in deze browser bewaard.",
     wishAdd: "{name} op je verlanglijst zetten", wishRemove: "{name} van je verlanglijst halen", wishAddT: "Op verlanglijst", wishRemoveT: "Van verlanglijst halen",
     toastAdded: "{name} staat op je verlanglijst", toastRemoved: "{name} is van je verlanglijst gehaald", undo: "Ongedaan maken",
-    photo: "Foto", tempClosed: "Tijdelijk gesloten",
+    photo: "Foto", tempClosed: "Tijdelijk gesloten", closesOn: "Sluit op {date}",
     mapTitle: "Alle sterrenrestaurants op één kaart",
     mapText: "De spelden volgen de filters van de lijst hierboven: kies een aantal sterren, een keuken of je verlanglijst en de kaart past zich aan. Tik op een speld voor de prijs en een routebeschrijving.",
     mapWait: "De kaart laadt zodra je hierheen scrolt.", mapLabel: "Kaart van restaurants met een Michelinster",

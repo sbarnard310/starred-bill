@@ -733,6 +733,10 @@ content:
       - name: noticeJa
         label: Notice in Japanese
         type: string
+      - name: closes
+        label: Closes for good on
+        description: Only when the restaurant has announced the day it closes for good, e.g. 2026-12-22. Its badge then says "Closes 22 Dec 2026" instead of "Temporarily closed". After that day, set it as closed and clear this.
+        type: string
       - name: menus
         label: Menus (restaurant page only)
         description: Every menu, for the restaurant's own page. Meal is dinner, lunch or lounge (the bar or lounge).

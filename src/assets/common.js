@@ -103,7 +103,7 @@ const I18N = {
     wishNote: "Your wishlist is saved in this browser only.",
     wishAdd: "Add {name} to your wishlist", wishRemove: "Remove {name} from your wishlist", wishAddT: "Add to wishlist", wishRemoveT: "Remove from wishlist",
     toastAdded: "Added {name} to your wishlist", toastRemoved: "Removed {name} from your wishlist", undo: "Undo",
-    photo: "Photo", tempClosed: "Temporarily closed",
+    photo: "Photo", tempClosed: "Temporarily closed", closesOn: "Closes {date}",
     mapTitle: "Every starred table on one map",
     mapText: "The pins follow the filters in the list above, so choose a star level, a cuisine or your wishlist and the map updates to match. Tap a pin for the price and a link to directions.",
     mapWait: "The map loads as you scroll here.", mapLabel: "Map of Michelin-starred restaurants",
@@ -259,7 +259,7 @@ const I18N = {
     wishNote: "願望清單只儲存在這個瀏覽器中。",
     wishAdd: "將{name}加入願望清單", wishRemove: "將{name}從願望清單移除", wishAddT: "加入願望清單", wishRemoveT: "從願望清單移除",
     toastAdded: "已將{name}加入願望清單", toastRemoved: "已將{name}從願望清單移除", undo: "復原",
-    photo: "照片", tempClosed: "暫停營業",
+    photo: "照片", tempClosed: "暫停營業", closesOn: "{date}結業",
     mapTitle: "所有星級餐廳一圖看盡",
     mapText: "地圖上的標記會跟著上方清單的篩選條件變化：選擇星級、料理或願望清單，地圖就會同步更新。點選標記可查看價格與導航連結。",
     mapWait: "捲動到這裡時會載入地圖。", mapLabel: "米其林星級餐廳地圖",
@@ -408,7 +408,7 @@ const I18N = {
     wishNote: "Vos envies sont enregistrées uniquement dans ce navigateur.",
     wishAdd: "Ajouter {name} à vos envies", wishRemove: "Retirer {name} de vos envies", wishAddT: "Ajouter à mes envies", wishRemoveT: "Retirer de mes envies",
     toastAdded: "{name} ajouté à vos envies", toastRemoved: "{name} retiré de vos envies", undo: "Annuler",
-    photo: "Photo", tempClosed: "Fermé temporairement",
+    photo: "Photo", tempClosed: "Fermé temporairement", closesOn: "Ferme le {date}",
     mapTitle: "Toutes les tables étoilées sur une carte",
     mapText: "Les repères suivent les filtres de la liste ci-dessus : choisissez un niveau d'étoiles, une cuisine ou vos envies, et la carte s'adapte. Touchez un repère pour voir le prix et l'itinéraire.",
     mapWait: "La carte se charge quand vous arrivez ici.", mapLabel: "Carte des restaurants étoilés Michelin",
@@ -538,7 +538,7 @@ const I18N = {
     wishNote: "心水清單只會儲喺呢個瀏覽器。",
     wishAdd: "將{name}加入心水清單", wishRemove: "將{name}移出心水清單", wishAddT: "加入心水清單", wishRemoveT: "移出心水清單",
     toastAdded: "已經將{name}加入心水清單", toastRemoved: "已經將{name}移出心水清單", undo: "還原",
-    photo: "相片", tempClosed: "暫停營業",
+    photo: "相片", tempClosed: "暫停營業", closesOn: "{date}結業",
     mapTitle: "所有星級餐廳一張地圖睇晒",
     mapText: "地圖上嘅標記會跟住上面清單嘅篩選改變：揀星級、菜式或者心水清單，地圖就會即刻更新。撳標記就睇到價錢同導航連結。",
     mapWait: "碌到呢度就會載入地圖。", mapLabel: "米芝蓮星級餐廳地圖",
@@ -669,7 +669,7 @@ const I18N = {
     wishNote: "お気に入りはこのブラウザにのみ保存されます。",
     wishAdd: "{name}をお気に入りに追加", wishRemove: "{name}をお気に入りから削除", wishAddT: "お気に入りに追加", wishRemoveT: "お気に入りから削除",
     toastAdded: "{name}をお気に入りに追加しました", toastRemoved: "{name}をお気に入りから削除しました", undo: "元に戻す",
-    photo: "写真", tempClosed: "臨時休業中",
+    photo: "写真", tempClosed: "臨時休業中", closesOn: "{date}閉店",
     mapTitle: "星付きレストランを地図で一覧",
     mapText: "地図のピンは上の一覧の絞り込みに連動します。星の数、料理ジャンル、お気に入りを選ぶと地図も切り替わります。ピンをタップすると料金と道順へのリンクが表示されます。",
     mapWait: "ここまでスクロールすると地図を読み込みます。", mapLabel: "ミシュラン星付きレストランの地図",
@@ -819,7 +819,7 @@ const I18N = {
     wishNote: "Tus favoritos se guardan solo en este navegador.",
     wishAdd: "Añadir {name} a tus favoritos", wishRemove: "Quitar {name} de tus favoritos", wishAddT: "Añadir a favoritos", wishRemoveT: "Quitar de favoritos",
     toastAdded: "{name} añadido a tus favoritos", toastRemoved: "{name} quitado de tus favoritos", undo: "Deshacer",
-    photo: "Foto", tempClosed: "Cerrado temporalmente",
+    photo: "Foto", tempClosed: "Cerrado temporalmente", closesOn: "Cierra el {date}",
     mapTitle: "Todas las mesas con estrella en un mapa",
     mapText: "Los marcadores siguen los filtros de la lista de arriba: elige un nivel de estrellas, una cocina o tus favoritos y el mapa se actualiza. Toca un marcador para ver el precio y cómo llegar.",
     mapWait: "El mapa se carga al llegar aquí.", mapLabel: "Mapa de restaurantes con estrella Michelin",
@@ -943,7 +943,7 @@ const I18N = {
     wishNote: "Din ønskeliste gemmes kun i denne browser.",
     wishAdd: "Føj {name} til din ønskeliste", wishRemove: "Fjern {name} fra din ønskeliste", wishAddT: "Føj til ønskeliste", wishRemoveT: "Fjern fra ønskeliste",
     toastAdded: "{name} er føjet til din ønskeliste", toastRemoved: "{name} er fjernet fra din ønskeliste", undo: "Fortryd",
-    photo: "Foto", tempClosed: "Midlertidigt lukket",
+    photo: "Foto", tempClosed: "Midlertidigt lukket", closesOn: "Lukker {date}",
     mapTitle: "Alle stjernerestauranter på ét kort",
     mapText: "Nålene følger filtrene i listen ovenfor, så vælg et antal stjerner, et køkken eller din ønskeliste, og kortet følger med. Tryk på en nål for at se prisen og få en rutevejledning.",
     mapWait: "Kortet indlæses, når du scroller hertil.", mapLabel: "Kort over restauranter med Michelinstjerner",
@@ -1052,7 +1052,7 @@ const I18N = {
     wishNote: "Din önskelista sparas bara i den här webbläsaren.",
     wishAdd: "Lägg till {name} i din önskelista", wishRemove: "Ta bort {name} från din önskelista", wishAddT: "Lägg till i önskelistan", wishRemoveT: "Ta bort från önskelistan",
     toastAdded: "{name} har lagts till i din önskelista", toastRemoved: "{name} har tagits bort från din önskelista", undo: "Ångra",
-    photo: "Foto", tempClosed: "Tillfälligt stängd",
+    photo: "Foto", tempClosed: "Tillfälligt stängd", closesOn: "Stänger {date}",
     mapTitle: "Alla stjärnkrogar på en karta",
     mapText: "Nålarna följer filtren i listan ovan, så välj antal stjärnor, ett kök eller din önskelista så följer kartan med. Tryck på en nål för att se priset och få vägbeskrivning.",
     mapWait: "Kartan laddas när du scrollar hit.", mapLabel: "Karta över restauranger med Michelinstjärnor",
@@ -1161,7 +1161,7 @@ const I18N = {
     wishNote: "Óskalistinn er aðeins vistaður í þessum vafra.",
     wishAdd: "Bæta {name} á óskalistann", wishRemove: "Fjarlægja {name} af óskalistanum", wishAddT: "Bæta á óskalista", wishRemoveT: "Fjarlægja af óskalista",
     toastAdded: "{name} bætt á óskalistann", toastRemoved: "{name} fjarlægt af óskalistanum", undo: "Afturkalla",
-    photo: "Mynd", tempClosed: "Lokað tímabundið",
+    photo: "Mynd", tempClosed: "Lokað tímabundið", closesOn: "Lokar {date}",
     mapTitle: "Allir stjörnustaðir á einu korti",
     mapText: "Nálarnar fylgja síunum í listanum hér fyrir ofan, svo veldu stjörnufjölda, matargerð eða óskalistann og kortið breytist í samræmi. Ýttu á nál til að sjá verðið og fá leiðarlýsingu.",
     mapWait: "Kortið hleðst þegar þú flettir hingað.", mapLabel: "Kort af veitingastöðum með Michelin-stjörnu",
@@ -1270,7 +1270,7 @@ const I18N = {
     wishNote: "Els preferits només es desen en aquest navegador.",
     wishAdd: "Afegeix {name} als preferits", wishRemove: "Treu {name} dels preferits", wishAddT: "Afegeix als preferits", wishRemoveT: "Treu dels preferits",
     toastAdded: "{name} s'ha afegit als preferits", toastRemoved: "{name} s'ha tret dels preferits", undo: "Desfés",
-    photo: "Foto", tempClosed: "Tancat temporalment",
+    photo: "Foto", tempClosed: "Tancat temporalment", closesOn: "Tanca el {date}",
     mapTitle: "Totes les taules amb estrella en un sol mapa",
     mapText: "Les agulles segueixen els filtres de la llista de dalt: tria un nombre d'estrelles, una cuina o els preferits i el mapa s'actualitza. Toca una agulla per veure'n el preu i com arribar-hi.",
     mapWait: "El mapa es carrega quan hi arribes.", mapLabel: "Mapa de restaurants amb estrella Michelin",
@@ -1379,7 +1379,7 @@ const I18N = {
     wishNote: "รายการโปรดของคุณบันทึกไว้ในเบราว์เซอร์นี้เท่านั้น",
     wishAdd: "เพิ่ม {name} ในรายการโปรด", wishRemove: "นำ {name} ออกจากรายการโปรด", wishAddT: "เพิ่มในรายการโปรด", wishRemoveT: "นำออกจากรายการโปรด",
     toastAdded: "เพิ่ม {name} ในรายการโปรดแล้ว", toastRemoved: "นำ {name} ออกจากรายการโปรดแล้ว", undo: "เลิกทำ",
-    photo: "รูปภาพ", tempClosed: "ปิดชั่วคราว",
+    photo: "รูปภาพ", tempClosed: "ปิดชั่วคราว", closesOn: "ปิดถาวร {date}",
     mapTitle: "ร้านติดดาวทุกร้านบนแผนที่เดียว",
     mapText: "หมุดบนแผนที่เปลี่ยนตามตัวกรองในรายการด้านบน เลือกจำนวนดาว ประเภทอาหาร หรือรายการโปรด แล้วแผนที่จะเปลี่ยนตาม แตะหมุดเพื่อดูราคาและเส้นทาง",
     mapWait: "แผนที่จะโหลดเมื่อเลื่อนมาถึงตรงนี้", mapLabel: "แผนที่ร้านอาหารที่ได้ดาวมิชลิน",
@@ -1498,7 +1498,7 @@ const I18N = {
     wishNote: "위시리스트는 이 브라우저에만 저장됩니다.",
     wishAdd: "{name}을(를) 위시리스트에 추가", wishRemove: "{name}을(를) 위시리스트에서 삭제", wishAddT: "위시리스트에 추가", wishRemoveT: "위시리스트에서 삭제",
     toastAdded: "{name}을(를) 위시리스트에 추가했습니다", toastRemoved: "{name}을(를) 위시리스트에서 삭제했습니다", undo: "실행 취소",
-    photo: "사진", tempClosed: "임시 휴업",
+    photo: "사진", tempClosed: "임시 휴업", closesOn: "{date} 폐업",
     mapTitle: "모든 스타 레스토랑을 지도로",
     mapText: "지도의 핀은 위 목록의 필터를 따릅니다. 별 개수, 요리, 위시리스트를 고르면 지도도 바뀝니다. 핀을 누르면 가격과 길찾기 링크가 나옵니다.",
     mapWait: "여기까지 스크롤하면 지도를 불러옵니다.", mapLabel: "미쉐린 스타 레스토랑 지도",
@@ -1648,7 +1648,7 @@ const I18N = {
     wishNote: "I tuoi preferiti sono salvati solo in questo browser.",
     wishAdd: "Aggiungi {name} ai preferiti", wishRemove: "Togli {name} dai preferiti", wishAddT: "Aggiungi ai preferiti", wishRemoveT: "Togli dai preferiti",
     toastAdded: "{name} aggiunto ai preferiti", toastRemoved: "{name} tolto dai preferiti", undo: "Annulla",
-    photo: "Foto", tempClosed: "Chiuso temporaneamente",
+    photo: "Foto", tempClosed: "Chiuso temporaneamente", closesOn: "Chiude il {date}",
     mapTitle: "Tutte le tavole stellate su una mappa",
     mapText: "I segnaposto seguono i filtri della lista qui sopra: scegli un livello di stelle, una cucina o i tuoi preferiti e la mappa si aggiorna. Tocca un segnaposto per il prezzo e le indicazioni.",
     mapWait: "La mappa si carica quando arrivi qui.", mapLabel: "Mappa dei ristoranti stellati Michelin",
@@ -1935,6 +1935,21 @@ const prefChosen = (kind, value) => window.dispatchEvent(new CustomEvent("sb:pre
 // ---------- Helpers ----------
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+// The badge for a restaurant's notice: the day it closes for good where it has announced one (`closes`, "Closes 22 Dec
+// 2026", then "Closed" once that day has passed and the file hasn't caught up), else "Temporarily closed". Kept as short
+// as "Temporarily closed" so the date fits a phone's folded row; the notice itself is its tooltip.
+function noticeBadge(r) {
+  if (!r.notice && !r.closes) return "";
+  let label = t("tempClosed");
+  if (r.closes) {
+    const day = new Date(r.closes + "T12:00:00Z");
+    label = new Date().toISOString().slice(0, 10) <= r.closes
+      ? t("closesOn", { date: day.toLocaleDateString(LANGS[LANG].locale, { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) })
+      : t("stClosed");
+  }
+  const note = pick(r, "notice");
+  return '<span class="notice"' + (note ? ' title="' + esc(note) + '"' : "") + ">" + esc(label) + "</span>";
+}
 // A /data/ file as JSON. Pages link them by a name carrying their version (/data/v/near.1a2b3c4d5e.json, versioned() in
 // build.py); one the server no longer has (the page was opened before an update) or doesn't have yet (for a few seconds
 // while one goes out) is asked for again under its plain name (/data/near.json), which always holds the latest copy.

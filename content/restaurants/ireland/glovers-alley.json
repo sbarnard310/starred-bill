@@ -23,8 +23,7 @@
   "placeId": "ChIJ4cbHq54OZ0gR-nvSqo6_BpM",
   "michelinId": "552341",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Adam Nevin",
   "chefSource": "site",
@@ -70,5 +69,6 @@
   "children": "Guests aged 12 and over only; there is no children's menu.",
   "servicePct": 10,
   "infoSource": "https://www.sevenrooms.com/reservations/gloversalley",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

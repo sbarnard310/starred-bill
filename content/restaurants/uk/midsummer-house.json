@@ -24,8 +24,8 @@
   "placeId": "ChIJVxbfNZNw2EcRGFNqzq2WExs",
   "michelinId": "186832",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Daniel Clifford",
   "chefSource": "press",
@@ -74,5 +74,6 @@
   "children": "Children aged 12 and over only in the main restaurant, with no children's menu and no room for pushchairs. Younger children are welcome in the private dining room.",
   "byob": "Guests can't bring their own wine.",
   "infoSource": "https://midsummerhouse.co.uk/faq/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

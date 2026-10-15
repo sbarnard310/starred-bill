@@ -9,14 +9,14 @@
   "reviews": 2560,
   "dinner": 195,
   "dinnerType": "menu",
-  "dinnerNote": "The Legacy menu, 6 courses (4-course Discovery menu £155)",
+  "dinnerNote": "The Legacy menu, 6 courses (4-course Discovery menu £155); closing for good at the end of January 2027",
   "sourceType": "site",
   "source": "https://www.dinnerbyheston.co.uk/menus",
-  "lunch": 65,
+  "lunch": 95,
   "lunchType": "menu",
-  "lunchNote": "Set luncheon menu, 3 courses · Mon–Sat",
+  "lunchNote": "Lunch set menu · Mon, Thu and Fri",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.dinnerbyheston.co.uk/",
+  "lunchSource": "https://www.dinnerbyheston.co.uk/menus",
   "website": "https://www.dinnerbyheston.co.uk/",
   "lat": 51.5021106,
   "lng": -0.1599147,
@@ -54,11 +54,10 @@
       "note": "Fixed price per person for the à la carte, offered at dinner Monday to Thursday on the booking page."
     },
     {
-      "name": "Set luncheon menu",
+      "name": "Lunch set menu",
       "meal": "lunch",
-      "price": 65,
-      "courses": 3,
-      "note": "Monday to Saturday per the home page; the menus page lists a £95 lunch set menu on Monday, Thursday and Friday."
+      "price": 95,
+      "note": "Monday, Thursday and Friday lunch (the home page still says £65 for three courses, Monday to Saturday)."
     },
     {
       "name": "Chef's Table menu",
@@ -76,7 +75,7 @@
     }
   ],
   "menusSource": "https://www.dinnerbyheston.co.uk/menus",
-  "menusChecked": "2026-10-13",
+  "menusChecked": "2026-10-15",
   "starsSince": 2013,
   "hotel": "the Mandarin Oriental Hyde Park",
   "bookingOpens": "Online through SevenRooms or by phone. Tables are released 3 months ahead to the day. The reservations line is open 9am to 6pm every day.",

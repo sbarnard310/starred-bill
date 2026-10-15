@@ -42,5 +42,16 @@
   "cancellation": "Cancel at least 72 hours ahead for a refund of the deposit; later cancellations, no-shows and fewer guests than booked are not refunded. Booking dates cannot be changed, and guests who arrive after their booked time are not let in and lose the booking and deposit.",
   "children": "Children aged 12 and over are recommended. Prams are not allowed.",
   "infoSource": "https://kirosushi.es/en/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "time": "10:00",
+    "tz": "Europe/Madrid",
+    "via": "website",
+    "note": "The calendar for the next month opens on the 1st at 10am (in mid-October, November was open and December not yet).",
+    "source": "https://kirosushi.es/",
+    "checked": "2026-10-15"
+  }
 }

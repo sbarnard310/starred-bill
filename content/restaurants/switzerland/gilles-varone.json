@@ -17,8 +17,8 @@
   "dinner": 259,
   "dinnerNote": "Tasting menu (other menus from CHF 199)",
   "sourceType": "site",
-  "source": "https://gillesvarone.ch/",
-  "website": "https://gillesvarone.ch/",
+  "source": "https://web.archive.org/web/20261007081249/https://gillesvarone.ch/",
+  "website": "https://bookings.zenchef.com/results?rid=360467&fullscreen=1",
   "lat": 46.2501082,
   "lng": 7.3506266,
   "placeId": "ChIJTyMp7pHdjkcR_Cp3kqv5dZE",
@@ -41,7 +41,7 @@
   "lunchNoteFr": "Expérience en 5 services (7 services CHF 259) · ven.–dim.",
   "lunchNoteIt": "Menu di 5 portate (7 portate CHF 259) · ven–dom",
   "lunchSourceType": "site",
-  "lunchSource": "https://gillesvarone.ch/",
+  "lunchSource": "https://web.archive.org/web/20261007081249/https://gillesvarone.ch/",
   "cuisineIt": "Moderna",
   "menus": [
     {
@@ -72,7 +72,7 @@
       "note": "October only, subject to availability."
     }
   ],
-  "menusSource": "https://gillesvarone.ch/#experiences",
+  "menusSource": "https://web.archive.org/web/20261007081249/https://gillesvarone.ch/",
   "menusChecked": "2026-10-13",
   "starsSince": 2025,
   "bookingOpens": "Online through Zenchef on the restaurant's website. Tables are released a month at a time, well ahead: December 2026 opened on 1 September 2026 at 8am. A booking is only confirmed once the confirmation email arrives.",
@@ -89,6 +89,6 @@
   "bookingPhone": "+41 27 565 89 20",
   "cancellation": "Card details are needed to hold the table. Nothing is charged unless the booking is cancelled within 72 hours of the meal or nobody turns up.",
   "groups": "Tables of more than eight are by special request. Wheelchair access for parties of up to seven, if the restaurant is told in advance.",
-  "infoSource": "https://gillesvarone.ch/",
+  "infoSource": "https://bookings.zenchef.com/results?rid=360467&fullscreen=1",
   "infoChecked": "2026-10-13"
 }

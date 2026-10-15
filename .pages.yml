@@ -562,6 +562,10 @@ content:
         label: Prices include the tip or service
         description: Tick only when the restaurant's own site says its prices already include the tip or service charge (Lazy Betty, Dirt Candy). In the US and Canada the bills then add only sales tax; elsewhere nothing.
         type: boolean
+      - name: taxIncluded
+        label: Prices include the tax too
+        description: Tick, as well as the box above, only when the restaurant's own site says its prices include the sales tax as well as the tip (Sushi Nishinokaze). The bills then add nothing.
+        type: boolean
       - name: sourceType
         label: Dinner price source
         type: select

@@ -13,8 +13,8 @@
   "lat": 31.2449967,
   "lng": 121.4769875,
   "michelinId": "563683",
-  "chef": "Niko Romito",
-  "chefSource": "michelin",
+  "chef": "Luca Di Benedetto",
+  "chefSource": "site",
   "dinnerNoteZhs": "六道菜品鉴菜单（含配酒 CN¥3,488）；已含税及服务费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
@@ -42,5 +42,6 @@
   "bookingPhone": "+86 21 3606 7788",
   "servicePct": 0,
   "infoSource": "https://www.bulgarihotels.com/en_US/shanghai/dining/il-ristorante-niko-romito",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "serviceIncluded": true
 }

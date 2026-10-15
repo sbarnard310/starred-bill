@@ -28,8 +28,7 @@
   "placeId": "ChIJrf6XLDNu5kcRgypP8GERVqw",
   "michelinId": "6108",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Cyril Lignac",
   "chefSource": "site",
@@ -49,5 +48,6 @@
   "bookingUrl": "https://eu.sevenrooms.com/explore/lucascarton/reservations/create/search/",
   "bookingPhone": "+33 1 87 75 25 25",
   "infoSource": "https://lucascarton.com/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

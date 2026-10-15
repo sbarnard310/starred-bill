@@ -77,6 +77,7 @@ One file per restaurant in `content/restaurants/<country>/`. The file name is it
 | `wine` | cheapest wine pairing, as a number |
 | `noPairing` | `true` when the restaurant doesn't offer a wine pairing (checked on its own website); receipts, the wishlist bill and Compare then say "no pairing offered" rather than "no pairing listed". Leave `wine` and `lunchWine` out |
 | `serviceIncluded` | `true` when the restaurant's own site says its prices already include the tip or service charge (Lazy Betty, Dirt Candy, Moody Tongue). Receipts then say "tip included, before tax" and the bills (restaurant page, wishlist, trips, Compare) add only the sales tax (`SERVICE_TAX` in common.js) in the US and Canada, or nothing elsewhere. Set only on positive evidence |
+| `taxIncluded` | `true`, with `serviceIncluded`, when the price includes the sales tax as well as the tip (Sushi Nishinokaze: tax and service included, no tips). The bills then add nothing and receipts say "service included" |
 | `source`, `sourceType` | link to where the price came from; `site`, `press`, `member` or `none`. `member` is a member's report ("Report a price or change"), checked against the restaurant's own site before use; `source` can then be empty |
 | `sourceDate`, `lunchSourceDate` | for a `member` price, the month the member saw it (`2026-10`); shown as "Member's report, Oct 2026". Never the member's name |
 | `lunch`, `lunchType`, `lunchNote`, `lunchNoteZh`, `lunchWine`, `lunchSource`, `lunchSourceType` | the same for lunch |

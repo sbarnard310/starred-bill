@@ -19,9 +19,7 @@
   "lng": -123.7190639,
   "placeId": "ChIJRQKgSsUAgYAR4dtFnWx1UTg",
   "michelinId": "569657",
-  "diets": [
-    "vegetarian"
-  ],
+  "diets": [],
   "chef": "Matthew Kammerer",
   "chefSource": "michelin",
   "lunch": 150,
@@ -67,5 +65,6 @@
   "dressCode": "No t-shirts, shorts, flip-flops, sportswear or hats; jackets and ties are not required. Guests are asked not to wear perfume or cologne.",
   "children": "No children under 15.",
   "infoSource": "https://www.theharborhouseinn.com/dine",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -25,10 +25,7 @@
   "lng": 2.3357826,
   "placeId": "ChIJOZNwHS1v5kcRnO0W988mtRo",
   "michelinId": "1197029",
-  "diets": [
-    "halal",
-    "kosher"
-  ],
+  "diets": [],
   "chef": "Chizuko Kimura and Takeshi Morooka",
   "chefSource": "site",
   "dinner": 250,
@@ -62,5 +59,6 @@
   "cancellation": "A card guarantee is taken for every booking. It can be changed or cancelled up to 48 hours ahead; after that the charge is €200 a person.",
   "duration": "A little under two hours. Guests at the first sitting are asked to leave by 9.15pm, and anyone more than 15 minutes late can't be served the whole menu.",
   "infoSource": "https://www.sushishunei.com/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

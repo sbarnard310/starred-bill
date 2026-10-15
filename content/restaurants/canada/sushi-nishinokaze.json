@@ -55,5 +55,7 @@
   "dressCode": "No dress code is stated, but guests are asked not to wear perfume, cologne or strong deodorant.",
   "children": "Guests under 12 by arrangement before booking. No babies or toddlers.",
   "infoSource": "https://resy.com/cities/montreal-qc/venues/sushi-nishinokaze",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "serviceIncluded": true,
+  "taxIncluded": true
 }

@@ -8,7 +8,7 @@
   "reviews": 470,
   "dinnerType": "menu",
   "dinner": 242,
-  "dinnerNote": "Tasting menu, 10 courses (chef's counter, 12 courses, $332)",
+  "dinnerNote": "Tasting menu, 10 courses (chef's counter, 12 courses, $332); plus 20% gratuity and a 5% house fee",
   "sourceType": "press",
   "source": "https://www.opentable.ca/r/enigma-yorkville-toronto",
   "lunchNote": "Open for lunch · Saturdays",
@@ -65,5 +65,6 @@
   "dressCode": "Business casual.",
   "duration": "Two and a half to three and a half hours for the 10-course menu with pairings, by the restaurant's own reply to a review; the six-course menu is shorter.",
   "infoSource": "https://www.opentable.com/r/enigma-yorkville-toronto",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "servicePct": 38
 }

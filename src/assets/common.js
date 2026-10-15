@@ -2027,11 +2027,13 @@ const SERVICE = {
   "spain", "sweden", "switzerland"].forEach((c) => { SERVICE[c] = ["included", 0]; });
 // A restaurant whose prices already include the tip or service charge (`serviceIncluded` in its file: Lazy Betty, Dirt Candy):
 // where the country tips on top of tax, only the sales tax is left to add ("plustax", SERVICE_TAX: the tax part of SERVICE's
-// figure); elsewhere nothing is. build.py's restaurant pages read SERVICE_TAX too (read_service()).
+// figure); elsewhere nothing is. With `taxIncluded` as well (the price includes the tax too), nothing is added anywhere.
+// build.py's restaurant pages read SERVICE_TAX too (read_service()).
 const SERVICE_TAX = { usa: 9, canada: 11 };
 const serviceOf = (country, r) => {
   const s = SERVICE[country] || ["before", 0];
   if (!r || !r.serviceIncluded) return s;
+  if (r.serviceIncluded === 2 || r.taxIncluded) return ["included", 0];  // tax included too (`taxIncluded`: Sushi Nishinokaze); 2 in the data files
   return s[0] === "taxtip" ? ["plustax", SERVICE_TAX[country] || 0] : s[0] === "before" || s[0] === "tip" ? ["included", 0] : s;
 };
 const SERVICE_LABEL = { before: "m1Title", included: "rcptIncl", plusplus: "rcptPlus", taxtip: "rcptTaxTip", tip: "rcptTip", tax: "rcptTax", plustax: "rcptTipIncl" };

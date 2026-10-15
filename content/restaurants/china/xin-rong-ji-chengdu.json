@@ -30,5 +30,8 @@
   "children": "The main dining room is for guests aged 12 and over.",
   "servicePct": 15,
   "infoSource": "https://ordering.xinrongji.com/en/reserve/message?store=chengduhuashang",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "starSource": "https://cbgc.scol.com.cn/news/7916722",
+  "starSourceType": "news",
+  "starSourceDate": "2026-09-03"
 }

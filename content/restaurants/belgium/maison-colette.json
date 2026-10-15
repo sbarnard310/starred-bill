@@ -58,5 +58,13 @@
   "groupsUrl": "https://maison-colette.be/en/salon-anna",
   "dressCode": "Stylish dress suited to the setting; no stricter rule is given.",
   "infoSource": "https://maison-colette.be/en/reservations",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "bookingWindow": {
+    "type": "announced",
+    "tz": "Europe/Brussels",
+    "via": "website",
+    "note": "Each month opens three months ahead, the whole month at once; the restaurant doesn't say on which day.",
+    "source": "https://maison-colette.be/en/reservations",
+    "checked": "2026-10-15"
+  }
 }

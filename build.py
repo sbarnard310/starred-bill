@@ -3522,13 +3522,13 @@ NEAR_DIETS = {d: i for i, d in enumerate(DIETS)}
 
 def build_bill_data(starred):
     """/data/bill.json: the lunch and wine prices the homepage's wishlist bill adds up (the homepage itself carries only dinner).
-    One row per restaurant with any of them, keyed by id; noLunch is 1 when there's no lunch service, noPairing 1 when there's no wine pairing, serviceIncluded 1 (else left off) when its prices include the tip. Loaded only when the wishlist has something in it."""
+    One row per restaurant with any of them, keyed by id; noLunch is 1 when there's no lunch service, noPairing 1 when there's no wine pairing, serviceIncluded 1 (else left off) when its prices include the tip, 2 when they include the tax too. Loaded only when the wishlist has something in it."""
     cols = ["lunch", "lunchType", "noLunch", "wine", "lunchWine", "noPairing", "serviceIncluded"]
     rows = {}
     for r in starred:
         row = [r.get("lunch"), r.get("lunchType", "menu"), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"), 1 if r.get("noPairing") else 0]
-        if r.get("serviceIncluded"):  # its prices include the tip (serviceOf() in common.js)
-            row.append(1)
+        if r.get("serviceIncluded"):  # its prices include the tip (serviceOf() in common.js), 2 when the tax too
+            row.append(2 if r.get("taxIncluded") else 1)
         if row[0] is not None or row[2] or row[3] is not None or row[4] is not None or row[5] or len(row) > 6:
             rows[r["id"]] = row
     (OUT / "data" / "bill.json").write_bytes(as_json({"cols": cols, "r": rows}).encode("utf-8"))
@@ -3755,7 +3755,7 @@ def build_compare(starred):
              r.get("dinner"), r.get("dinnerType", "menu"), r.get("dinnerNote", ""), r.get("lunch"), r.get("lunchType", "menu"),
              r.get("lunchNote", ""), 1 if r.get("noLunch") else 0, r.get("wine"), r.get("lunchWine"),
              r.get("source", ""), r.get("sourceType", ""), r.get("lunchSource", ""), r.get("lunchSourceType", ""), 1 if r.get("notice") else 0,
-             1 if r.get("noPairing") else 0, restaurant_href(r), 1 if r.get("serviceIncluded") else 0]
+             1 if r.get("noPairing") else 0, restaurant_href(r), (2 if r.get("taxIncluded") else 1) if r.get("serviceIncluded") else 0]
             for r in starred]
     parts = [[] for _ in range(COMPARE_PARTS)]
     for row in rows:
@@ -7040,7 +7040,9 @@ SERVICE_TAX = read_service_tax()
 def service_of(r):
     """A restaurant's (kind, percentage added on top), as serviceOf() in common.js, with its own servicePct where it has one."""
     stay = SERVICE.get(r["country"], ("before", 0))
-    if r.get("serviceIncluded"):
+    if r.get("serviceIncluded") and r.get("taxIncluded"):  # the price includes the tax too (Sushi Nishinokaze)
+        stay = ("included", 0)
+    elif r.get("serviceIncluded"):
         stay = (("plustax", SERVICE_TAX.get(r["country"], 0)) if stay[0] == "taxtip" else ("included", 0) if stay[0] in ("before", "tip") else stay)
     if r.get("servicePct") is not None:  # the restaurant's own service charge, where it differs from the country's usual one
         stay = (stay[0] if stay[0] in SERVICE_ADDS else "before", r["servicePct"])

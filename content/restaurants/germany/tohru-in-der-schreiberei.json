@@ -51,5 +51,15 @@
   "groups": "Groups of more than six and up to 35 people book by email (kontakt@schreiberei-muc.de).",
   "duration": "About three and a half hours.",
   "infoSource": "https://schreiberei-muc.de/tohru",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "bookingWindow": {
+    "type": "weekly",
+    "weekday": "mon",
+    "days": 91,
+    "tz": "Europe/Berlin",
+    "via": "OpenTable",
+    "note": "New tables are released every Monday, three months ahead.",
+    "source": "https://www.schreiberei-muc.de/tohru",
+    "checked": "2026-10-15"
+  }
 }

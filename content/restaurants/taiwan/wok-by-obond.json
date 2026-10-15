@@ -25,12 +25,21 @@
   "lng": 121.5402246,
   "placeId": "ChIJYSnuobSrQjQRYJh45svt_T8",
   "michelinId": "1210701",
-  "diets": [
-    "vegetarian"
-  ],
-  "bookingOpens": "Online through inline (linked from the restaurant's Instagram and the MICHELIN Guide), or by phone.",
+  "diets": [],
+  "bookingOpens": "Online through inline only: no bookings by phone, email or social media, except groups of more than six, private rooms and events, by message on Instagram (@wokbyobond). The current and next month are open; the next month opens on the 1st. A card pre-authorisation of NT$3,980 a guest holds the table.",
   "bookingUrl": "https://inline.app/booking/-NZyltfbIwtcknzK-Mua:inline-live-3/-NZyltuMK93bfWDoglfE",
   "bookingPhone": "+886 2 2778 4503",
-  "infoSource": "https://www.instagram.com/wokbyobond/",
-  "infoChecked": "2026-10-13"
+  "infoSource": "https://inline.app/booking/-NZyltfbIwtcknzK-Mua:inline-live-3/-NZyltuMK93bfWDoglfE",
+  "infoChecked": "2026-10-15",
+  "bookingWindow": {
+    "type": "monthly",
+    "day": 1,
+    "ahead": 1,
+    "tz": "Asia/Taipei",
+    "via": "inline",
+    "note": "The booking page opens the current and next month; the next month opens on the 1st.",
+    "source": "https://inline.app/booking/-NZyltfbIwtcknzK-Mua:inline-live-3/-NZyltuMK93bfWDoglfE",
+    "checked": "2026-10-15"
+  },
+  "dietsManual": true
 }

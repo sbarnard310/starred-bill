@@ -22,8 +22,8 @@
     "gluten-free",
     "halal"
   ],
-  "chef": "Niko Romito",
-  "chefSource": "michelin",
+  "chef": "Davide Gessa",
+  "chefSource": "site",
   "dinnerNoteZhs": "六道菜品鉴菜单（含配酒 CN¥2,798）；已含税及服务费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
@@ -54,5 +54,6 @@
   "bookingPhone": "+86 10 8555 8555",
   "servicePct": 0,
   "infoSource": "https://www.bulgarihotels.com/en_US/beijing/dining/il-ristorante-niko-romito",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "serviceIncluded": true
 }

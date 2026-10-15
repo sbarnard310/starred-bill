@@ -25,7 +25,7 @@
     "vegan",
     "gluten-free"
   ],
-  "chef": "Lachlan Mackinnon-Patterson",
+  "chef": "Ian Palazzola",
   "chefSource": "site",
   "menus": [
     {
@@ -74,5 +74,16 @@
   "children": "Children are welcome; count them in the booking and ask the reservations team for a high chair.",
   "byob": "No corkage: Colorado law does not allow it.",
   "infoSource": "https://www.frascafoodandwine.com/faq/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "bookingWindow": {
+    "type": "weekly",
+    "weekday": "sun",
+    "days": 57,
+    "time": "11:00",
+    "tz": "America/Denver",
+    "via": "OpenTable",
+    "note": "A new week is released each Sunday at 11am Mountain Time, about 60 days ahead.",
+    "source": "https://www.frascafoodandwine.com/faq/",
+    "checked": "2026-10-15"
+  }
 }

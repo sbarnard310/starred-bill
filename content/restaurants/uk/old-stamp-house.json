@@ -26,7 +26,7 @@
     "gluten-free"
   ],
   "chef": "Ryan Blackburn",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Autumn tasting menu",
@@ -90,5 +90,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 749,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

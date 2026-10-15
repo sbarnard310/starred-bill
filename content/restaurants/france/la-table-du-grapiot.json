@@ -29,12 +29,8 @@
   "lng": 5.760584,
   "placeId": "ChIJS9E3OaM9jUcRDF_4GrbrRy0",
   "michelinId": "30248",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Vivien Sonzogni",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Menu Expérience",

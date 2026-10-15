@@ -21,13 +21,10 @@
   "michelinId": "1208172",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Osman Serdaroğlu",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteTr": "Full Expression tadım menüsü (vejetaryen versiyonu TRY 7,500)",
   "lunchNoteTr": "Öğle yemeği için açık · Çar–Paz",
   "areaTr": "İzmir",
@@ -57,5 +54,6 @@
   "children": "Tables are for guests aged 15 and over.",
   "servicePct": 10,
   "infoSource": "https://www.teruarurla.com/details/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

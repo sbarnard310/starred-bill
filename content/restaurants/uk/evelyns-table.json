@@ -25,6 +25,8 @@
   "placeId": "ChIJtZpbttMEdkgRl7-te2KdeSg",
   "michelinId": "552962",
   "diets": [
+    "vegetarian-menu",
+    "vegetarian",
     "vegan"
   ],
   "chef": "Seamus Sam",
@@ -68,5 +70,6 @@
   "children": "Not suitable for guests under 18.",
   "servicePct": 15,
   "infoSource": "https://www.theblueposts.co.uk/evelyns-table/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -30,8 +30,8 @@
     "vegetarian",
     "gluten-free"
   ],
-  "chef": "Nicolas Guilloton",
-  "chefSource": "michelin",
+  "chef": "Nicolas Guilloton and Thomas Belval",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Dîner surprise menu",
@@ -67,5 +67,6 @@
   "groups": "The restaurant can be booked privately for business or private events. The largest table seats 18, the most it accepts as one party.",
   "groupsUrl": "https://latelierdesaugustins.com/fr/privatisation-et-evenements.html",
   "infoSource": "https://latelierdesaugustins.com/fr/faq.html",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

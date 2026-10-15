@@ -22,13 +22,8 @@
   "lng": -99.2093428,
   "placeId": "ChIJNTreqsH_zYUR82jk2MVoXMM",
   "michelinId": "1208234",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Edgar Núñez",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "starsSince": 2024,
   "bookingOpens": "Online on OpenTable, for parties of up to 20. Open Monday to Saturday from 1.30pm to 11pm and on Sunday from 1.30pm to 5pm.",
   "bookingUrl": "https://www.opentable.com/sud-777",

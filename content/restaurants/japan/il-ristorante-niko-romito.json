@@ -82,5 +82,6 @@
   "children": "Guests must be 12 or older, except children staying at the Bvlgari Hotel Tokyo.",
   "duration": "Tables are held for two hours.",
   "infoSource": "https://www.tablecheck.com/en/bulgarihotels-tokyo-ilristorantenikoromito/reserve",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

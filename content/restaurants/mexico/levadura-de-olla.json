@@ -27,13 +27,10 @@
   "placeId": "ChIJieIittUjx4URUtcCSc0c4Cw",
   "michelinId": "1208537",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
+    "vegetarian"
   ],
-  "chef": "Thalía Barrios Garcia",
-  "chefSource": "michelin",
+  "chef": "Thalía Barrios",
+  "chefSource": "site",
   "menusSource": "https://levaduradeolla.mx/menu/",
   "menusChecked": "2026-10-12",
   "bookingOpens": "Online through CoverManager on the restaurant's website, or by email (reservaciones@levaduradeolla.mx) or phone. Tables are booked for set sittings: Tuesday at 4pm and 7pm; Wednesday to Saturday at 1pm, 4pm and 7pm.",
@@ -42,5 +39,6 @@
   "waitlist": "When a sitting is full, the online booking form offers a waiting list.",
   "children": "Not recommended for children under 12.",
   "infoSource": "https://levaduradeolla.mx/reserva-aqui/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

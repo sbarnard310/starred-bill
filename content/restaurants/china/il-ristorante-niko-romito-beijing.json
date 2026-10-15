@@ -19,8 +19,7 @@
   "diets": [
     "vegetarian",
     "vegan",
-    "gluten-free",
-    "halal"
+    "gluten-free"
   ],
   "chef": "Davide Gessa",
   "chefSource": "site",
@@ -54,5 +53,6 @@
   "servicePct": 0,
   "infoSource": "https://www.bulgarihotels.com/en_US/beijing/dining/il-ristorante-niko-romito",
   "infoChecked": "2026-10-13",
-  "serviceIncluded": true
+  "serviceIncluded": true,
+  "dietsManual": true
 }

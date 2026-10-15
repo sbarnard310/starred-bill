@@ -26,11 +26,8 @@
   "lng": 114.1528913,
   "placeId": "ChIJWxl5xB8BBDQRIqbV5q6CKUg",
   "michelinId": "1198262",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Mingoo Kang",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 1088,
   "lunchNoteYue": "午市套餐，星期三至星期日",
   "menus": [

@@ -20,13 +20,10 @@
   "placeId": "ChIJ01EehuBKjoARf8mKQoPv8oA",
   "michelinId": "123240",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Peter Armellino",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "noLunch": true,
   "menus": [
     {
@@ -57,5 +54,6 @@
   "dressCode": "Smart casual. Jackets are not required, but the restaurant encourages suits, sports jackets and dressing up for the evening.",
   "children": "It calls itself an adult restaurant. Younger guests are welcome, but no tablets or phones for entertainment at the table.",
   "infoSource": "https://www.opentable.com/the-plumed-horse-reservations-saratoga",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

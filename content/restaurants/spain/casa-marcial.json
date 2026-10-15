@@ -19,17 +19,13 @@
   "lunchWine": 130,
   "lunchSourceType": "site",
   "lunchSource": "https://casamarcial.es/menu-el-cachuchu/",
-  "website": "https://www.casamarcial.com",
+  "website": "https://casamarcial.es/",
   "lat": 43.4184082,
   "lng": -5.1931556,
   "placeId": "ChIJefNOj6QZNg0RLQfBY8NJwn4",
   "michelinId": "217702",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
-  "chef": "Nacho Manzano Sánchez/ Esther Manzano",
-  "chefSource": "michelin",
+  "chef": "Nacho Manzano and Esther Manzano",
+  "chefSource": "site",
   "dinnerNote": "Nordeste: El Cachuchu tasting menu (dinner Saturdays only)",
   "dinnerNoteEs": "Menú Nordeste: El Cachuchu (cenas solo los sábados)",
   "menus": [

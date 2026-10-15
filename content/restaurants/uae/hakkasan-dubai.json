@@ -20,8 +20,7 @@
     "vegetarian-menu",
     "vegetarian",
     "vegan",
-    "gluten-free",
-    "halal"
+    "gluten-free"
   ],
   "dinnerNoteAr": "قائمة تذوق Pearl (قوائم أخرى من AED 428)",
   "lunchNote": "Dinner only",
@@ -69,5 +68,6 @@
   "groups": "The semi-private area of the main dining room seats up to 20 and the lounge up to 40; enquire by phone or through the private events form.",
   "groupsUrl": "https://hakkasangroup.com/venues/hakkasan-dubai/private-events/",
   "infoSource": "https://hakkasangroup.com/venues/hakkasan-dubai/contact/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

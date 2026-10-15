@@ -20,12 +20,11 @@
   "placeId": "ChIJn_ZxYo-AhYAR22wJt4at2K0",
   "michelinId": "445271",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
   "chef": "Pim Techamuanvivit",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "hotel": "the Parc 55 San Francisco, a Hilton hotel",
   "bookingOpens": "Online on Resy for up to seven at dinner and up to ten at lunch; larger parties book by email (info@kinkhao.com).",
   "bookingUrl": "https://resy.com/cities/san-francisco-ca/venues/kin-khao",
@@ -37,5 +36,6 @@
   "duration": "Tables are booked for about 1¾ hours for two and 2 hours for three to six.",
   "byob": "Up to two 750ml bottles at $50 corkage each ($100 a magnum), not for wines on the list; one corkage fee is waived for each bottle bought from the list.",
   "infoSource": "https://www.kinkhao.com/impotant-info",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

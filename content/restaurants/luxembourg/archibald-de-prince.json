@@ -17,8 +17,8 @@
   "placeId": "ChIJx110PI1flUcRvvMfvY9kc70",
   "michelinId": "1217044",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "lunch": 195,
   "lunchType": "menu",
@@ -28,7 +28,7 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.archibalddeprince.lu/la-table/",
   "chef": "Archibald De Prince",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Single menu",
   "dinnerNoteFr": "Menu unique",
   "dinnerNoteDe": "Einziges Menü",
@@ -57,5 +57,6 @@
   "groupsUrl": "https://www.archibalddeprince.lu/evenements/",
   "dressCode": "Smart dress is required.",
   "infoSource": "https://www.archibalddeprince.lu/la-table/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

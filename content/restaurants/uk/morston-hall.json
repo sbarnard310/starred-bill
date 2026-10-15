@@ -25,7 +25,8 @@
   "placeId": "ChIJRfJcs1RE10cRklklgI_Ewec",
   "michelinId": "192497",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Farrel Hirsch",
   "chefSource": "site",
@@ -80,5 +81,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 649,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

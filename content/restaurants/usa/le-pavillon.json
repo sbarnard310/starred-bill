@@ -25,10 +25,11 @@
   "placeId": "ChIJjcAJd-tZwokRJ0GkkJ2Urp0",
   "michelinId": "1192744",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Daniel Boulud and Will Nacev",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Three-course dinner menu",
@@ -111,5 +112,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

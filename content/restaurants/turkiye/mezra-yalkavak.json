@@ -22,7 +22,7 @@
   "placeId": "ChIJp7stYbNxvhQR7c2bmJROfJE",
   "michelinId": "1213287",
   "chef": "Serhat Doğramacı",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteTr": "Uzun tadım menüsü, 12–14 aşama (kısa tadım menüsü TRY 7,000)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -54,5 +54,6 @@
   "duration": "About two and a half to three hours for the long tasting menu.",
   "byob": "One 750ml bottle a table, with €50 corkage. Wines on the restaurant's list, spirits and house-made drinks may not be brought.",
   "infoSource": "https://www.mezrayalikavak.com/en",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "notice": "Closed for the season; bookings for 2026 have closed (its booking page, October 2026)"
 }

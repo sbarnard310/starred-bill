@@ -23,7 +23,7 @@
   "placeId": "ChIJ88IGKnF5bIcRLI5p5QH0Peg",
   "michelinId": "1241649",
   "chef": "Johnny Curiel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingOpens": "Online on OpenTable. Tables open 60 days ahead at 8am Denver time.",
   "bookingWindow": {
     "type": "rolling",

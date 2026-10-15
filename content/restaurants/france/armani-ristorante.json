@@ -27,10 +27,11 @@
   "placeId": "ChIJJyybR4xx5kcRiTv3fACK9Y0",
   "michelinId": "5936",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Massimo Tringali",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 90,
   "menus": [
     {
@@ -70,5 +71,6 @@
   "bookingUrl": "https://module.lafourchette.com/fr_FR/module/275457-67772#/1709191/pdh",
   "bookingPhone": "+33 1 45 48 62 15",
   "infoSource": "https://www.armani.com/en-fr/armani-restaurant/experience/emporio-armani-caffe-ristorante-paris/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

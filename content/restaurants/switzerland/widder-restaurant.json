@@ -24,11 +24,10 @@
   "michelinId": "1191539",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Stefan Heilemann",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 290)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 290)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 290)",
@@ -106,5 +105,6 @@
   "groups": "The hotel arranges private dining and events through its Meetings & Occasions team.",
   "groupsUrl": "https://www.widderhotel.com/en/meetings-occasions/",
   "infoSource": "https://www.widderhotel.com/en/eat-drink/widder-restaurant/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

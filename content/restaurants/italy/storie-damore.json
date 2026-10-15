@@ -25,10 +25,11 @@
   "placeId": "ChIJ3f54YKXTfkcRkpjhT6eJtus",
   "michelinId": "264952",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Davide Filippetto",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteIt": "Menu degustazione Otto corse, 8 portate (altri menu da €85)",
   "menus": [
     {
@@ -80,5 +81,6 @@
   "bookingOpens": "By phone.",
   "bookingPhone": "+39 347 671 9870",
   "infoSource": "https://storiedamorerestaurant.it/degustazioni",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

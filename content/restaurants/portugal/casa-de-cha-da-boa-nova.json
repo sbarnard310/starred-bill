@@ -19,9 +19,8 @@
   "placeId": "ChIJsVkuMyVpJA0RepT94kmmVK0",
   "michelinId": "449379",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Catarina Correia",
   "chefSource": "press",
@@ -83,5 +82,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

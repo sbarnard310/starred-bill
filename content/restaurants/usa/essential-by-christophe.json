@@ -21,14 +21,8 @@
   "lng": -73.976657,
   "placeId": "ChIJw6JyhoxZwokR3mKl4FLg5rM",
   "michelinId": "1203903",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
-  ],
   "chef": "Christophe Bellanca",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Chef's Tasting Menu",

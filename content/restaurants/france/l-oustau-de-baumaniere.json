@@ -28,12 +28,11 @@
   "placeId": "ChIJH_doE0LhtRIROj436AJRQ-k",
   "michelinId": "815",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Glenn Viel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "La Ballade menu",
@@ -75,5 +74,6 @@
   "dressCode": "Smart dress is required (tenue de ville).",
   "children": "There is a children's menu: starter, main and dessert €70, or two courses €50.",
   "infoSource": "https://www.baumaniere.com/gastronomie/loustau-de-baumaniere/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -18,8 +18,8 @@
   "placeId": "ChIJubw9yF01K4gRQyRiKs5j7yE",
   "michelinId": "1198889",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Zachary Barnes",
   "chefSource": "site",
@@ -66,5 +66,6 @@
   "duration": "Two and a half to three and a half hours for the 10-course menu with pairings, by the restaurant's own reply to a review; the six-course menu is shorter.",
   "infoSource": "https://www.opentable.com/r/enigma-yorkville-toronto",
   "infoChecked": "2026-10-13",
-  "servicePct": 38
+  "servicePct": 38,
+  "dietsManual": true
 }

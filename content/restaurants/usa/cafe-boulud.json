@@ -24,10 +24,10 @@
   "placeId": "ChIJCcAxi5RYwokRdUqdw5_FHIk",
   "michelinId": "68304",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian"
   ],
   "chef": "Romain Paumier",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 60,
   "lunchSourceType": "site",
   "lunchSource": "https://www.cafeboulud.com/nyc/our-menu/restaurant-week/",
@@ -61,5 +61,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

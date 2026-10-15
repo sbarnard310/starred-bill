@@ -25,11 +25,8 @@
   "lng": 12.227144,
   "placeId": "ChIJvbdNEvL6JRMR7S0FYSAygXE",
   "michelinId": "177932",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Gianfranco Pascucci",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Come è profondo il mare… tasting menu",

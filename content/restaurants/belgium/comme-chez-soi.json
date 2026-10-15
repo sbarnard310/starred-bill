@@ -15,11 +15,8 @@
   "lng": 4.3459079,
   "placeId": "ChIJTQxNAnrEw0cRsz3Wx2HWO5o",
   "michelinId": "113872",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Lionel Rigolet",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 95,
   "lunchType": "menu",
   "lunchSourceType": "site",

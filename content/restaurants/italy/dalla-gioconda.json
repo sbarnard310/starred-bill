@@ -25,12 +25,11 @@
   "placeId": "ChIJpcBun0LgLBMRskauKsdMAR0",
   "michelinId": "135448",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Davide Di Fabio",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "New Releases tasting menu",
@@ -68,5 +67,6 @@
   "bookingUrl": "https://dallagioconda.superbexperience.com/",
   "bookingPhone": "+39 0541 962295",
   "infoSource": "https://www.dallagioconda.it/contattaci/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -27,10 +27,7 @@
   "placeId": "ChIJd2vXkvIABDQRX8k5mX-dJvU",
   "michelinId": "230897",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Wong Chi Fai",
   "chefSource": "site",
@@ -70,5 +67,6 @@
   "cancellation": "Let the restaurant know at least 24 hours ahead if plans change.",
   "dressCode": "Smart casual. Men are asked not to wear plastic footwear, flip-flops, sandals or sleeveless shirts, and shorts are not allowed at dinner.",
   "infoSource": "https://www.langhamhotels.com/en/the-langham/hong-kong/dine/tang-court/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

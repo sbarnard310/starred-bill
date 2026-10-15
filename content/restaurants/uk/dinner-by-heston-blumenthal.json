@@ -23,12 +23,8 @@
   "placeId": "ChIJRzX0mDkFdkgR-qAx8kL982A",
   "michelinId": "328278",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegan"
   ],
   "chef": "Adam Tooby-Desmond",
   "chefSource": "press",
@@ -106,5 +102,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

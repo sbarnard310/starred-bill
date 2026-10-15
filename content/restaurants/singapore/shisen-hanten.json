@@ -19,7 +19,8 @@
   "placeId": "ChIJ8UdydJEZ2jER67QvNxywrqQ",
   "michelinId": "501650",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Chen Kentaro",
   "chefSource": "press",
@@ -90,5 +91,6 @@
   "groupsUrl": "https://shisenhanten.com.sg/private-dining",
   "dressCode": "Smart casual: men in long trousers and closed shoes. No shorts, flip-flops or singlets.",
   "infoSource": "https://shisenhanten.com.sg/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

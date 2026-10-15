@@ -24,11 +24,11 @@
   "placeId": "ChIJTyMp7pHdjkcR_Cp3kqv5dZE",
   "michelinId": "1204200",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Gilles Varone",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 199)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 199)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 199)",
@@ -87,5 +87,6 @@
   "cancellation": "Card details are needed to hold the table. Nothing is charged unless the booking is cancelled within 72 hours of the meal or nobody turns up.",
   "groups": "Tables of more than eight are by special request. Wheelchair access for parties of up to seven, if the restaurant is told in advance.",
   "infoSource": "https://bookings.zenchef.com/results?rid=360467&fullscreen=1",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

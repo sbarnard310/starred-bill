@@ -24,9 +24,7 @@
   "michelinId": "173506",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Tom Kitchin",
   "chefSource": "site",
@@ -89,5 +87,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 664,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

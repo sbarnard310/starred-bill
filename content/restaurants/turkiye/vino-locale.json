@@ -23,11 +23,10 @@
   "michelinId": "1208257",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Ozan Kumbasar",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteTr": "Degüstasyon menüsü, servis ücreti hariç (vejetaryen menü TRY 7,000)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -58,5 +57,6 @@
   "bookingPhone": "+90 533 321 84 66",
   "children": "Guests must be 15 or older.",
   "infoSource": "https://www.urlavinolocale.com/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

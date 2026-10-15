@@ -10,7 +10,7 @@
   "dinner": 180,
   "sourceType": "site",
   "source": "https://pedrolemos.pt/wp-content/uploads/2026/03/Menu-PT.pdf",
-  "website": "https://www.pedrolemos.net/",
+  "website": "https://pedrolemos.pt/",
   "lat": 41.1480595,
   "lng": -8.6501319,
   "placeId": "ChIJxT5-pYNvJA0R_MDHylK8WWc",
@@ -20,7 +20,7 @@
     "vegetarian"
   ],
   "chef": "Pedro Lemos",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 180,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Thu–Sat",
@@ -82,5 +82,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

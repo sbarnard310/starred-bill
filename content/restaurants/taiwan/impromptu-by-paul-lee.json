@@ -23,13 +23,8 @@
   "lng": 121.524244,
   "placeId": "ChIJo1t66japQjQRa5J0QU3DmYw",
   "michelinId": "569910",
-  "diets": [
-    "vegetarian",
-    "halal",
-    "kosher"
-  ],
   "chef": "Paul Lee",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "noLunch": true,
   "menus": [
     {

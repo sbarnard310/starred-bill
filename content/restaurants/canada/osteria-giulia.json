@@ -20,11 +20,10 @@
   "placeId": "ChIJcVIJ04s1K4gRwB1yYrOB0mM",
   "michelinId": "1201734",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Rob Rossi",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Convivio group menu",
@@ -70,5 +69,6 @@
       "url": "https://www.laliste.com/places/osteria-giulia-toronto-ca"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

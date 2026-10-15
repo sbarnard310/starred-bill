@@ -29,13 +29,8 @@
   "lng": 9.648062,
   "placeId": "ChIJLVJdksBRgUcRHNdHD9fWRLU",
   "michelinId": "495745",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Marco Galtarossa",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 170,
   "lunchWine": 110,
   "menus": [

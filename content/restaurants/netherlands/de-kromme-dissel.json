@@ -19,13 +19,10 @@
   "placeId": "ChIJJc0tfqGux0cRxaAs0wWpqLM",
   "michelinId": "212577",
   "diets": [
-    "vegetarian",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Tonny Berentsen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Kromme Dissel-menu, 6 gangen (4 gangen € 120, 5 gangen € 135)",
   "lunch": 120,
   "lunchType": "menu",
@@ -74,5 +71,6 @@
   "bookingUrl": "https://www.krommedissel.nl/reserveren/",
   "bookingPhone": "+31 317 313 118",
   "infoSource": "https://www.krommedissel.nl/reserveren/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

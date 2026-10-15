@@ -24,15 +24,8 @@
   "lng": -76.99514,
   "placeId": "ChIJYXzP0cy5t4kRCAgWebW88x0",
   "michelinId": "499974",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Aaron Silverman",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "wine": 195,
   "menus": [
     {

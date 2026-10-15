@@ -21,11 +21,8 @@
   "lng": 15.2292249,
   "placeId": "ChIJE1_Lv0433EURcYyrB5WVkqc",
   "michelinId": "1192335",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Halvar Ellingsen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNb": "Smaksmeny, rundt 17 retter (drikke kommer i tillegg)",
   "noLunch": true,
   "lunchNote": "Dinner only",

@@ -19,10 +19,11 @@
   "placeId": "ChIJDeVE6vnJhUcRvURHnxMlBiI",
   "michelinId": "183591",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Marco Campanella",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 230)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 230)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 230)",
@@ -58,5 +59,6 @@
   "bookingPhone": "+41 91 785 71 71",
   "dressCode": "Long trousers are appreciated for men at dinner; shorts and Bermuda shorts should be avoided.",
   "infoSource": "https://tschuggencollection.ch/en/hotel/hotel-eden-roc/restaurants",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

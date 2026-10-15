@@ -18,11 +18,10 @@
   "michelinId": "1191835",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Marco Campanella",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Wintermenüs noch nicht veröffentlicht (La Brezza in Ascona: CHF 230–305)",
   "dinnerNoteFr": "Menus d'hiver pas encore publiés (La Brezza à Ascona : CHF 230–305)",
   "dinnerNoteIt": "Menu invernali non ancora pubblicati (La Brezza ad Ascona: CHF 230–305)",
@@ -37,5 +36,6 @@
   "bookingUrl": "https://tschuggencollection.ch/en/hotel/tschuggen-grand-hotel/restaurants",
   "bookingPhone": "+41 81 378 99 99",
   "infoSource": "https://tschuggencollection.ch/en/hotel/tschuggen-grand-hotel/restaurants",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

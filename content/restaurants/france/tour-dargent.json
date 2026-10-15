@@ -26,12 +26,8 @@
   "lng": 2.3549236,
   "placeId": "ChIJ5eQBbSBx5kcRvEQZIALlPF4",
   "michelinId": "5908",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Yannick Franques",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Temps & Saisons menu",

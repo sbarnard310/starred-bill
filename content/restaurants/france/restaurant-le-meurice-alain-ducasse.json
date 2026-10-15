@@ -22,11 +22,10 @@
   "michelinId": "5757",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Amaury Bouhours",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteFr": "Uniquement le soir",
@@ -61,5 +60,6 @@
   "groupsUrl": "https://www.alainducasse-meurice.com/en/contact",
   "dressCode": "Jacket required for men.",
   "infoSource": "https://www.alainducasse-meurice.com/en/contact",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

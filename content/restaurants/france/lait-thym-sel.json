@@ -26,10 +26,11 @@
   "placeId": "ChIJk4EQC8V4CEgRUzHPEZht8oY",
   "michelinId": "900037",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Gaëtan Morvan",
-  "chefSource": "michelin",
+  "chef": "Fanny and Gaëtan Morvan",
+  "chefSource": "site",
   "menus": [
     {
       "name": "La danse du feu menu",
@@ -74,5 +75,6 @@
   "bookingPhone": "+33 7 89 65 89 07",
   "cancellation": "A card guarantee is taken but nothing is charged. Bookings can be changed or cancelled up to 12 hours before; later requests are handled case by case. The terms set a €500 per person penalty for a no-show without cancelling in time.",
   "infoSource": "https://laitthymsel.com/cgu/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

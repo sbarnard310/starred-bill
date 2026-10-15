@@ -14,7 +14,7 @@
   "sourceType": "site",
   "source": "https://img1.wsimg.com/blobby/go/e7cb21fd-9eeb-4114-872b-35403affbb15/Menu%20APRIL%202026%20(1).pdf",
   "lunchNote": "Open for lunch · Wed–Sat",
-  "website": "https://www.corkscreworders.com/",
+  "website": "https://corkscrewbbq.com/",
   "lat": 30.0806984,
   "lng": -95.4200092,
   "placeId": "ChIJRfY7ATs0R4YRNVMqjkDzTHU",
@@ -23,7 +23,7 @@
     "gluten-free"
   ],
   "chef": "Will Buckman",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "menusSource": "https://img1.wsimg.com/blobby/go/e7cb21fd-9eeb-4114-872b-35403affbb15/Menu%20APRIL%202026%20(1).pdf",
   "menusChecked": "2026-10-13",
   "starsSince": 2024,
@@ -36,5 +36,6 @@
   "walkIns": "Walk-in only, Wednesday to Saturday from 11am until 4pm or until it sells out. Indoor seating is limited, so order before taking a table and leave the receipt on it; there is also outdoor seating.",
   "children": "Kids' meals from $9 (a quarter pound of meat with chips).",
   "infoSource": "https://corkscrewbbq.com/info",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

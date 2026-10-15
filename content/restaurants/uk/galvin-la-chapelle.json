@@ -26,7 +26,8 @@
   "michelinId": "267922",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Arturo Granato",
   "chefSource": "site",
@@ -75,5 +76,6 @@
   "byob": "Up to two bottles of wine or Champagne per booking, with corkage from £65 a bottle; ask the restaurant first. Not for private dining.",
   "servicePct": 15,
   "infoSource": "https://galvinrestaurants.com/galvin-la-chapelle/faqs/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

@@ -26,7 +26,7 @@
     "gluten-free"
   ],
   "chef": "Ernesto Iaccarino",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "hotel": "the family's own Boutique Hotel Don Alfonso 1890",
   "bookingOpens": "Online through CoverManager on the restaurant's website, or by phone or email (info@donalfonso.com). The restaurant is seasonal, open from early April to the end of October: dinner Wednesday to Sunday, from 7.30pm (8pm on Saturdays and Sundays) with the last booking at 10.30pm, and lunch Friday to Sunday, 12.30pm to 2.30pm. A card is needed to hold the booking.",
   "bookingUrl": "https://www.covermanager.com/reservation/module_restaurant/restaurante-donalfonso/english",
@@ -43,5 +43,6 @@
       "url": "https://www.laliste.com/places/don-alfonso-1890-massa-lubrense-it"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

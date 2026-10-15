@@ -22,13 +22,8 @@
   "lng": -8.8038837,
   "placeId": "ChIJRTlCBbLpLg0RB3kXgX-fzVw",
   "michelinId": "223114",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Manuel García",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Costiña tasting menu",
   "dinnerNoteEs": "Menú Costiña",
   "menus": [

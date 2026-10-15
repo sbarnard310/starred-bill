@@ -22,14 +22,8 @@
   "lng": 3.4192286,
   "placeId": "ChIJ8Yb7dQzN9kcRQGzmbHog7S0",
   "michelinId": "9470",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Jacques Decoret",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 55,
   "lunchType": "menu",
   "lunchSourceType": "site",
@@ -71,5 +65,6 @@
   "bookingPhone": "+33 4 70 97 65 06",
   "children": "Petit Voyage menu for children under 10: main and dessert €25, or starter, main and dessert €40.",
   "infoSource": "https://www.maisondecoret.com/fr/restaurant.html",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "notice": "Temporarily closed after a fire near the building; no reopening date given (its website, October 2026)"
 }

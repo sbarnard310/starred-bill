@@ -27,13 +27,8 @@
   "lng": 2.175425,
   "placeId": "ChIJzwnCHfqipBIRBQbVUnQ5gXU",
   "michelinId": "303784",
-  "diets": [
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Hideki Matsuhisa",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Experience Menú Koy",

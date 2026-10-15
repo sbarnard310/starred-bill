@@ -24,11 +24,8 @@
   "lng": -0.3378358,
   "placeId": "ChIJd1OmsQAhWA0RQgCMJX1-Cgg",
   "michelinId": "1196960",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Toño Rodríguez",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Ambicioso tasting menu",

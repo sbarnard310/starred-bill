@@ -20,12 +20,8 @@
   "lng": 7.2580138,
   "placeId": "ChIJdcqjygzQzRIRJvAyqYUV8_I",
   "michelinId": "5433",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Virginie Basselot",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 250,
   "menus": [
     {

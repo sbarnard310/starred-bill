@@ -23,11 +23,10 @@
   "placeId": "ChIJq6qq6hLElxIRc9AqB63IDok",
   "michelinId": "1185103",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Santi Taura",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Origens tasting menu, 11 courses (premium pairing €120)",
   "dinnerNoteEs": "Menú degustación Origens, 11 pasos (armonía premium 120 €)",
   "wine": 80,
@@ -59,5 +58,6 @@
   "groups": "Groups of six or more by email (reserves@santitaura.com). No private rooms; the whole restaurant (30 seats) can be booked for private events.",
   "children": "No one under 16, including babies: the hotel is adults only.",
   "infoSource": "https://www.grupsantitaura.com/es/faqs/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

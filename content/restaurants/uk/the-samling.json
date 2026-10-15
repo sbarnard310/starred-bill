@@ -24,6 +24,7 @@
   "placeId": "ChIJQ1DQStnqfEgRUVt32byIgMo",
   "michelinId": "192344",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
@@ -70,5 +71,6 @@
   "groups": "The Chef's Table, facing the kitchen, seats up to six with its own menu, served by the chefs and followed by a kitchen tour.",
   "groupsUrl": "https://www.thesamlinghotel.co.uk/chefs-table/",
   "infoSource": "https://booking.resdiary.com/widget/Standard/TheSamling1/68103",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

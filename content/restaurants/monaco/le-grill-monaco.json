@@ -27,12 +27,8 @@
   "lng": 7.4271,
   "placeId": "ChIJHdZOIWPCzRIRNy7ivBWcyfA",
   "michelinId": "9786",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Dominique Lory",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Constellation menu",

@@ -17,10 +17,12 @@
   "placeId": "ChIJ6zQobgDJuEcR_p0qTfsFfQI",
   "michelinId": "1210743",
   "diets": [
+    "vegetarian-menu",
+    "vegetarian",
     "vegan"
   ],
   "chef": "Timo Fritsche",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteDe": "Omnivor-Menü, 8 Gänge (andere Menüs ab 173 €)",
   "lunchNote": "Open for lunch · Sundays",
   "lunchNoteDe": "Mittags geöffnet · Sonntag",
@@ -50,5 +52,6 @@
   "children": "Children are welcome if they can take part in the full meal. There is no children's menu.",
   "duration": "About 3½ to 4 hours for the full menu.",
   "infoSource": "https://laviebythomasbuehner.de/faq/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

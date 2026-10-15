@@ -31,12 +31,8 @@
   "lng": 2.3111842,
   "placeId": "ChIJ9fe5qYZv5kcRmU6zbLZxuEM",
   "michelinId": "1186415",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Julien Boscus",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 85,
   "menus": [
     {

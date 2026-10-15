@@ -17,12 +17,8 @@
   "lat": 31.223683,
   "lng": 121.469649,
   "michelinId": "506725",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Tony Su",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",

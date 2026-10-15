@@ -21,12 +21,8 @@
   "lng": 8.6690663,
   "placeId": "ChIJ4z4HbgANvUcRwTeKB5EsTLM",
   "michelinId": "1242570",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Niclas Nußbaumer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü „The Menu“ (4-Gänge-Menü 189 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

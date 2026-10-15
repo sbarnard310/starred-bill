@@ -23,10 +23,11 @@
   "placeId": "ChIJcb5nuUUDdkgRp2TnVMSprT0",
   "michelinId": "402204",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Tom Sellers",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Tasting menu",
@@ -70,5 +71,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

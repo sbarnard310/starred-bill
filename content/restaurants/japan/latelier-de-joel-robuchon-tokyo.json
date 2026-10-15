@@ -31,9 +31,8 @@
   "placeId": "ChIJK0TdDneLGGARW8iHQb4cVzE",
   "michelinId": "1194216",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Ryuji Shida",
   "chefSource": "press",
@@ -113,5 +112,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -27,6 +27,7 @@
   "placeId": "ChIJRz3UM0eZ4jAR5l4nHLAwqu4",
   "michelinId": "1240866",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Andrea Susto",
@@ -83,5 +84,6 @@
   "dressCode": "Elegant. Shorts, sandals and flip-flops are not allowed.",
   "children": "Children aged 10 and over may dine in the main dining room; younger children are seated in the second-floor dining rooms.",
   "infoSource": "https://www.tablecheck.com/en/dusit-thani-bangkok-cannubi/reserve/message",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -23,13 +23,8 @@
   "lng": 7.3320196,
   "placeId": "ChIJs5M66wQliEcRwjo3EzayVtU",
   "michelinId": "206673",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Christian Milone",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 70,
   "menus": [
     {

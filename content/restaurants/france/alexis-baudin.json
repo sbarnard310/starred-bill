@@ -30,8 +30,8 @@
   "placeId": "ChIJZygggLM9lUcRDWKCaFMZeqk",
   "michelinId": "1241420",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Alexis Baudin",
   "chefSource": "site",
@@ -73,5 +73,6 @@
   "bookingPhone": "+33 3 82 53 00 12",
   "walkIns": "Dogs are not allowed in the restaurant.",
   "infoSource": "https://alexisbaudin.fr/reservation-restaurant-alexis-baudin/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

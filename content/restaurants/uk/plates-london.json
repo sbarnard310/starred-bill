@@ -29,10 +29,11 @@
   "michelinId": "1213456",
   "diets": [
     "vegetarian-only",
+    "vegetarian",
     "vegan"
   ],
   "chef": "Kirk Haworth",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Discovery menu",
@@ -73,5 +74,6 @@
   "children": "No babies or children under 10, no children's menu and no room for prams.",
   "duration": "Tables are kept for two and a half hours. Dinner runs in two sittings, the first starting between 5.30pm and 6pm and the second between 8.30pm and 9pm.",
   "infoSource": "https://plates-london.com/faqs/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

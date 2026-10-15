@@ -27,9 +27,7 @@
   "placeId": "ChIJExecbgADdkgRfhIBRRGzEb8",
   "michelinId": "1218324",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Jay Styler",
   "chefSource": "press",
@@ -40,5 +38,6 @@
   "groups": "The private dining room seats up to 24; on the ground floor, among other diners, tables of up to 14. A feasting menu is offered for groups. Email enquiries@thekerfieldarms.co.uk.",
   "groupsUrl": "https://www.thekerfieldarms.co.uk/groupbooking",
   "infoSource": "https://www.thekerfieldarms.co.uk/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

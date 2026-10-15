@@ -25,17 +25,16 @@
   "lunchNoteIt": "Menù del Mercato, mer–ven, per tutto il tavolo, su prenotazione (Chez Philippe €190)",
   "lunchSourceType": "site",
   "lunchSource": "https://www.miramontilaltro.com/menu/",
-  "website": "https://www.miramontilaltro.it/",
+  "website": "https://www.miramontilaltro.com/",
   "lat": 45.613582,
   "lng": 10.204399,
   "placeId": "ChIJQXveLMJ5gUcRvJrLByV5rPs",
   "michelinId": "132024",
   "diets": [
-    "vegetarian",
     "gluten-free"
   ],
   "chef": "Philippe Léveillé",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Chez Philippe tasting menu",
@@ -73,5 +72,6 @@
   "bookingPhone": "+39 030 275 1063",
   "waitlist": "When a day is full, the online booking page offers a place on the waiting list; the restaurant gets in touch only if a cancellation frees a table.",
   "infoSource": "https://rsv.miramontilaltro.it/frontend/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

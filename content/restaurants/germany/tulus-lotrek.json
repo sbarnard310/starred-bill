@@ -21,8 +21,8 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Maximilian Strohe",
-  "chefSource": "michelin",
+  "chef": "Max Strohe",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü, omnivor oder vegetarisch",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -43,5 +43,6 @@
   "bookingPhone": "+49 30 41956687",
   "groups": "Private hire, events and catering by enquiry to mail@tuluslotrek.de.",
   "infoSource": "https://www.tuluslotrek.de/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

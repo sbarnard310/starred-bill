@@ -19,11 +19,10 @@
   "michelinId": "1154587",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Victor Moriez",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 175)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 175)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 175)",
@@ -68,5 +67,6 @@
   "groups": "Business meals, team outings, weddings and birthdays are arranged through the contact form on the 'Réunions et célébrations' page.",
   "groupsUrl": "https://www.leperolles.ch/reunions-et-celebrations",
   "infoSource": "https://www.leperolles.ch/reservation",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

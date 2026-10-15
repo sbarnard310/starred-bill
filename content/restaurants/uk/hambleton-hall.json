@@ -25,10 +25,11 @@
   "michelinId": "193643",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Aaron Patterson",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Tasting menu",
@@ -98,5 +99,6 @@
   "photoSourceType": "commons",
   "photoWidth": 640,
   "photoHeight": 480,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

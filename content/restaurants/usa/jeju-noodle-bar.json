@@ -22,7 +22,8 @@
   "placeId": "ChIJvSw_uuxZwokRwESVzh5G33s",
   "michelinId": "554164",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Douglas Kim",
   "chefSource": "press",
@@ -32,5 +33,6 @@
   "groups": "For five or more, or to book the whole restaurant for an evening, email reservations@jejunoodlebar.com.",
   "duration": "Each table is booked for 1 hour 45 minutes.",
   "infoSource": "https://resy.com/cities/ny/jeju-noodle-bar",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

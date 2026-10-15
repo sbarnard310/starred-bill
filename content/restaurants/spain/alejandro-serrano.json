@@ -20,13 +20,8 @@
   "lng": -2.9422008,
   "placeId": "ChIJQ1mJbgybTw0Ro_TTPhgQ5uw",
   "michelinId": "1191480",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Alejandro Serrano",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "alsoTry": [
     {
       "name": "Alex Cool Club",

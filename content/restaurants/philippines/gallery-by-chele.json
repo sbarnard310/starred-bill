@@ -19,13 +19,11 @@
   "placeId": "ChIJ3X1BrEjJlzMRWuNj6Ffpiig",
   "michelinId": "1216044",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
-  "chef": "José Luis Gonzalez",
-  "chefSource": "michelin",
+  "chef": "Chele Gonzalez and Carlos Villaflor",
+  "chefSource": "site",
   "dinnerNoteFil": "Tasting menu na 10 kurso (ibang menu mula ₱4,700)",
   "lunchNote": "Open for lunch · Wed–Sun",
   "lunchNoteFil": "Bukas para sa tanghalian · Miy–Lin",
@@ -87,5 +85,6 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

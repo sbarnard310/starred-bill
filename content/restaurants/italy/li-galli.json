@@ -23,11 +23,10 @@
   "michelinId": "197918",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Savio Perna",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteIt": "Menu degustazione Legàmi (Nuova Essenza €220; vegetariano Linfa €180)",
   "menus": [
     {
@@ -68,5 +67,6 @@
   "children": "Children aged 8 and over are welcome (one part of the booking page says over 10). Pets are not allowed.",
   "byob": "Outside food and wine are not allowed.",
   "infoSource": "https://www.ligallirestaurant.it/en/reserve-a-table-ligallirestaurant/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

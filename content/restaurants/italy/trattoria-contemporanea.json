@@ -27,12 +27,11 @@
   "placeId": "ChIJvzUMsDaRhkcRhLxYinDEQPE",
   "michelinId": "1199710",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
-  "chef": "Davide Marzullo",
-  "chefSource": "michelin",
+  "chef": "Davide Marzullo, Andrea Noto, Elena Orizio and Christian Malatacca",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Coraggio tasting menu",
@@ -91,5 +90,6 @@
   "dressCode": "No dress code; informal or smart casual clothes are suggested.",
   "children": "Children of any age are welcome, as long as other guests' peace is respected.",
   "infoSource": "https://trattoriacontemporanea.prenota-web.it/prenotazioni/singlepage.asp?iframe=1&lang=it&ristorante=default",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -26,13 +26,10 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Alex Dilling",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Tasting menu",
@@ -69,5 +66,6 @@
   "children": "Children aged seven and over.",
   "duration": "Tables are booked for two and a half hours (three to four hours for larger groups).",
   "infoSource": "https://alexdilling.com/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

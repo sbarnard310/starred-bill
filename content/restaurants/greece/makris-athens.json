@@ -23,11 +23,10 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Petros Dimas",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteEl": "Μενού γευσιγνωσίας Utopia (μενού Genesis 125 €· vegan μενού Physis 135 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -68,5 +67,6 @@
   "children": "Guests aged 12 and over only.",
   "duration": "About two and a half hours for up to four guests, three hours for larger tables.",
   "infoSource": "https://www.sevenrooms.com/explore/makrisrestaurant/reservations/create/search/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -33,7 +33,7 @@
     "vegetarian"
   ],
   "chef": "Albert Li",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 118,
   "menus": [
     {
@@ -55,5 +55,6 @@
   "dressCode": "Smart casual. Men wear collared shirts or smart T-shirts with closed-toe shoes; tailored shorts are allowed at lunch only. No slippers, flip-flops, singlets, swimwear, gym wear or hotel robes; guests not dressed to the code may be turned away.",
   "duration": "About an hour and a half for lunch and two hours for dinner.",
   "infoSource": "https://www.marinabaysands.com/restaurants/jin-ting-wan.html",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

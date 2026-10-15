@@ -20,13 +20,8 @@
   "lng": -73.982025,
   "placeId": "ChIJw_TGEwBZwokR-zLts543O-4",
   "michelinId": "474823",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Gabriel Kreuther",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 75,
   "lunchType": "menu",
   "lunchSourceType": "site",

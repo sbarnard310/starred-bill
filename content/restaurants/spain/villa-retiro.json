@@ -27,13 +27,8 @@
   "lng": 0.490225,
   "placeId": "ChIJK6c30PjmoBIRa80-tCTfXaA",
   "michelinId": "230383",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Fran López",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Más que un Homenaje tasting menu",

@@ -17,10 +17,11 @@
   "placeId": "ChIJNdtTjdNRqEcR-n4Xa0Y92G4",
   "michelinId": "469763",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Micha Schäfer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 120 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -69,5 +70,6 @@
   "children": "Children are welcome and pay only for what they eat; there is no children's menu and no high chairs. Book them a seat and give their age in advance.",
   "duration": "Early six-course seatings (6pm to 6.30pm) have the seat for 2 hours 15 minutes; later six-course seatings and every eight-course seating keep the seat until closing at midnight.",
   "infoSource": "https://nobelhartundschmutzig.com/en/reservation/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

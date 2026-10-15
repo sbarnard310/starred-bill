@@ -23,8 +23,8 @@
   "placeId": "ChIJYbZdgoUPdkgRrBtAYcMgkBc",
   "michelinId": "256308",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Josh Cutress",
   "chefSource": "site",
@@ -80,5 +80,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

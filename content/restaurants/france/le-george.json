@@ -28,10 +28,11 @@
   "michelinId": "483379",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Simone Zanoni",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Tasting menu",
@@ -67,5 +68,6 @@
   "bookingPhone": "+33 1 49 52 72 09",
   "dressCode": "Business casual.",
   "infoSource": "https://www.fourseasons.com/paris/dining/restaurants/le_george/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -27,14 +27,10 @@
   "michelinId": "496136",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Giulio Terrinoni",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 110,
   "lunchWine": 90,
   "menus": [
@@ -80,5 +76,6 @@
   "dressCode": "Smart casual to elegant. Shorts and flip-flops are not allowed for men.",
   "children": "Families with children are welcome at lunch.",
   "infoSource": "https://www.giulioterrinoni.it/contatti-3/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

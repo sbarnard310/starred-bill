@@ -28,11 +28,10 @@
   "michelinId": "258636",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
-  "chef": "Javier Olleros Rodríguez",
-  "chefSource": "michelin",
+  "chef": "Javier Olleros",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Descuberta menu",
@@ -70,5 +69,6 @@
   "children": "Children are welcome, though there's no play area; a children's menu for under-12s (starter, main and dessert) costs €75. High chairs on request.",
   "duration": "About three and a half hours for Descuberta, two and a half for Marexada and an hour and a half for Ronsel.",
   "infoSource": "https://www.cullerdepau.com/reserva-ga/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

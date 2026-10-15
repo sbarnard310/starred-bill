@@ -24,7 +24,8 @@
   "placeId": "ChIJIUdV2rZwfkgR5-uvmFBQqq4",
   "michelinId": "428967",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Kenny Atkinson",
   "chefSource": "press",
@@ -76,5 +77,6 @@
   "dressCode": "Relaxed, with no strict dress code, but no shorts, sleeveless T-shirts, hats, flip-flops or Sunderland football shirts.",
   "children": "No infants or babies; best suited to children over 10. There is no children's menu, and everyone pays the same menu price.",
   "infoSource": "https://www.houseoftides.co.uk/faqs",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

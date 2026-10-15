@@ -20,10 +20,10 @@
   "placeId": "ChIJyw5j84lZwokRnUI_UknPSNA",
   "michelinId": "510102",
   "diets": [
-    "vegetarian"
+    "gluten-free"
   ],
   "chef": "Daniel Rose",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 145,
   "lunch": 81,
   "lunchType": "menu",
@@ -94,5 +94,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

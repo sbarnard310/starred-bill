@@ -19,6 +19,7 @@
   "placeId": "ChIJ88ycMWV1_UYRcXqGWU2VsJs",
   "michelinId": "1210195",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Paco Pérez",
@@ -83,5 +84,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

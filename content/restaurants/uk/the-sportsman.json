@@ -23,7 +23,6 @@
   "placeId": "ChIJNUQmRbMy2UcRPBwfciVLmJU",
   "michelinId": "189581",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Stephen Harris",
@@ -57,5 +56,6 @@
   "children": "No children under 10, and no children's menu.",
   "servicePct": 10,
   "infoSource": "https://www.thesportsmanseasalter.co.uk/contact.php",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

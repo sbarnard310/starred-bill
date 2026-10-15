@@ -26,9 +26,7 @@
   "michelinId": "1195396",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Tom Shepherd",
   "chefSource": "press",
@@ -72,5 +70,6 @@
   "duration": "About three hours.",
   "servicePct": 7.5,
   "infoSource": "https://www.upstairs.restaurant/information-faqs",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

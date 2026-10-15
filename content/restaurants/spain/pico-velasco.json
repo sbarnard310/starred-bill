@@ -20,11 +20,8 @@
   "lng": -3.4447959,
   "placeId": "ChIJbcDWQXDBTg0R6qTezimo2uw",
   "michelinId": "1212001",
-  "diets": [
-    "gluten-free"
-  ],
-  "chef": "Nacho Solana",
-  "chefSource": "michelin",
+  "chef": "Nacho Solana and Emir Barrueta",
+  "chefSource": "site",
   "lunch": 95,
   "lunchType": "menu",
   "lunchSourceType": "site",

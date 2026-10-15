@@ -24,11 +24,10 @@
   "michelinId": "260677",
   "diets": [
     "vegetarian",
-    "vegan",
-    "kosher"
+    "vegan"
   ],
   "chef": "Alain Montigny",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "noLunch": true,
   "menus": [
     {
@@ -55,5 +54,6 @@
   "bookingUrl": "https://widget.thefork.com/fr/c9f1fef4-00f2-4317-a4b0-40400ba65854",
   "bookingPhone": "+33 4 92 28 60 30",
   "infoSource": "https://tiara-miramar-beach-resort.com/restaurants/lor-bleu-1-etoile-michelin/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

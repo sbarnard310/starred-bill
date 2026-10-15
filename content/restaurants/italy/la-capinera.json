@@ -20,9 +20,8 @@
   "placeId": "ChIJWYWZKHQRFBMRryMGBl2GEg4",
   "michelinId": "167020",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Pietro D'Agostino",
   "chefSource": "site",
@@ -78,5 +77,6 @@
   "groups": "The chef also caters banquets and private events.",
   "groupsUrl": "https://www.pietrodagostino.it/banqueting/",
   "infoSource": "https://www.pietrodagostino.it/la-capinera/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

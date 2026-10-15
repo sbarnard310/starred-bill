@@ -18,10 +18,11 @@
   "placeId": "ChIJ1ZLxp--AmEcR6V4mHzETBq8",
   "michelinId": "1207289",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
-  "chef": "Christian Stahl and Mirko Schweiger",
-  "chefSource": "michelin",
+  "chef": "Christian Stahl",
+  "chefSource": "site",
   "dinnerNoteDe": "9 Gänge, nur mit Weinbegleitung (inklusive Wein, Wasser und Kaffee)",
   "lunchNote": "Same menu, with wine, at lunch · Saturdays",
   "lunchNoteDe": "Gleiches Menü mit Wein am Mittag · Samstag",
@@ -49,5 +50,6 @@
   "groupsUrl": "https://www.winzerhof-stahl.de/faqs/",
   "duration": "Several hours; the restaurant describes it as an evening-long experience.",
   "infoSource": "https://www.winzerhof-stahl.de/faqs/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

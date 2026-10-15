@@ -27,12 +27,11 @@
   "placeId": "ChIJBU9a9RVl5kcRauGO7npEArM",
   "michelinId": "6446",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Frédéric Robert",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "seven-course Itinéraire menu",
@@ -81,5 +80,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

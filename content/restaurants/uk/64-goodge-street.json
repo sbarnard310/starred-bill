@@ -26,9 +26,7 @@
   "placeId": "ChIJVVUuwSsbdkgRRSNEGe3BRBU",
   "michelinId": "1209876",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Stuart Andrew",
   "chefSource": "site",
@@ -86,5 +84,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

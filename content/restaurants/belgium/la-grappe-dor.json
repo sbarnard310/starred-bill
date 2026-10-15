@@ -23,12 +23,8 @@
   "lng": 5.8492842,
   "placeId": "ChIJB7gjo5Hr6kcR-VbUNu2XC1k",
   "michelinId": "1203424",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Clément Petitjean",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Menu in 6 gangen (4 gangen vanaf € 101)",
   "dinnerNoteFr": "Menu en 6 services (4 services dès 101 €)",
   "lunchNoteNl": "Lunchmenu in 3 gangen",

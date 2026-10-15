@@ -26,12 +26,10 @@
   "placeId": "ChIJWw_VdYO8rhIRMBXUMwo-UIE",
   "michelinId": "380135",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Frank Renimel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Menu du Chef",
@@ -69,5 +67,6 @@
   "groups": "Group menus are offered through the restaurant's events team.",
   "groupsUrl": "https://www.restaurantenmarge.com/les-evenements/",
   "infoSource": "https://www.restaurantenmarge.com/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

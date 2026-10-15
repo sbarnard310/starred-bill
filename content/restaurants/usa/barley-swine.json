@@ -19,6 +19,7 @@
   "placeId": "ChIJid3yLt-0RIYR_JPyeaoX0Uc",
   "michelinId": "1196563",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "gluten-free"
   ],
@@ -49,5 +50,6 @@
   "duration": "About two hours; tables are booked for 2½ hours.",
   "byob": "No outside alcohol (Texas law).",
   "infoSource": "https://barleyswine.com/faqs",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

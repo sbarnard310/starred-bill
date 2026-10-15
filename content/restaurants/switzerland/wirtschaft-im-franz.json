@@ -19,11 +19,10 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Sebastian Funck",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 103)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 103)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 103)",
@@ -70,5 +69,6 @@
   "groups": "Group dinners, parties and private events are arranged on request by email to buero@wirtschaftimfranz.ch.",
   "groupsUrl": "https://www.wirtschaftimfranz.ch/franz-gruppen",
   "infoSource": "https://www.wirtschaftimfranz.ch",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

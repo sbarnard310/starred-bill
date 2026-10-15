@@ -18,14 +18,11 @@
   "lunchNoteTh": "เซ็ตกลางวัน Samrub Thai 3 คอร์ส ยังไม่รวมค่าบริการและภาษี (++)",
   "lunchSourceType": "site",
   "lunchSource": "https://sanehjaan.com/media/pdf/Set-Lunch-A4-2026-menu.pdf",
-  "website": "https://www.sanehjaan.com",
+  "website": "https://sanehjaan.com/",
   "lat": 13.7356117,
   "lng": 100.5457543,
   "placeId": "ChIJUWI9ztie4jARZTiHjCyTWao",
   "michelinId": "547010",
-  "diets": [
-    "vegetarian"
-  ],
   "dinner": 3600,
   "wine": 1800,
   "source": "https://sanehjaan.com/media/pdf/Set-Dinner-menu.pdf",

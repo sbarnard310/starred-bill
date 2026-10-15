@@ -25,11 +25,10 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Michael Caines",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Signature Tasting Menu",
@@ -107,5 +106,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 539,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

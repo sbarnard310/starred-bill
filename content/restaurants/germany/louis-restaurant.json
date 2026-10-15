@@ -18,12 +18,11 @@
   "placeId": "ChIJD3Q-K8mplUcRjre4dpsX_xo",
   "michelinId": "535645",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
   "chef": "Sebastian Sandor",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "LOUIS Menü, sieben Gänge (fünf Gänge 200 €; vier Gänge 180 € Mi und Do)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -88,5 +87,6 @@
       "url": "https://www.laliste.com/places/louis-la-maison-saarlouis-de"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

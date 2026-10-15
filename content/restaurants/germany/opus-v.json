@@ -13,16 +13,18 @@
   "wine": 149,
   "sourceType": "site",
   "source": "https://info.engelhorn.com/gastronomie/opus-v/abendkarte/",
-  "website": "https://www.restaurant-opus-v.de/",
+  "website": "https://info.engelhorn.com/gastronomie/opus-v/",
   "lat": 49.4857999,
   "lng": 8.4697743,
   "placeId": "ChIJz6NQ1SPMl0cRoGDuwitU3cE",
   "michelinId": "421720",
   "diets": [
-    "vegetarian"
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Dominik Paul",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
   "lunch": 99,
   "lunchType": "menu",
@@ -68,5 +70,6 @@
   "dressCode": "No dress code; the restaurant describes itself as casual.",
   "children": "The kitchen prepares dishes suited to children.",
   "infoSource": "https://info.engelhorn.com/gastronomie/opus-v/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

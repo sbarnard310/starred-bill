@@ -18,6 +18,7 @@
   "placeId": "ChIJHQQciMZRqEcRHxZ6uyymozw",
   "michelinId": "71246",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 275 €)",
@@ -25,7 +26,7 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "chef": "Jonas Zörner",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "six-course menu",
@@ -62,5 +63,6 @@
   "groupsUrl": "https://www.lorenzadlon-esszimmer.de/ihre-veranstaltung",
   "dressCode": "Smart casual.",
   "infoSource": "https://www.kempinski.com/en/hotel-adlon/restaurants-bars/lorenz-adlon-esszimmer",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

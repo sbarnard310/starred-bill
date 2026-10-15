@@ -23,10 +23,11 @@
   "michelinId": "1198831",
   "diets": [
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Luciana Giangrandi and Alex Meyer",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "starsSince": 2022,
   "bookingOpens": "Online on Resy. Tables open at noon each day for dinner 30 days ahead. All availability is on Resy; its Notify list is the best way to catch same-day cancellations.",
   "bookingWindow": {
@@ -48,5 +49,6 @@
   "duration": "Tables are usually held for 1½ to 2 hours.",
   "byob": "Corkage is $45 a bottle, at most two 750ml bottles, and not for wines on the list. For parties of four or fewer, one corkage fee is waived for each bottle bought.",
   "infoSource": "https://www.boiaderestaurant.com/faq/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

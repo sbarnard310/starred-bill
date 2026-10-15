@@ -24,8 +24,7 @@
   "michelinId": "190302",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Geoffrey Smeddle",
   "chefSource": "site",
@@ -98,5 +97,6 @@
   "photoSourceType": "commons",
   "photoWidth": 640,
   "photoHeight": 444,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -20,8 +20,8 @@
   "placeId": "ChIJzUm3X2TL1IkRDkPiZYlOC7U",
   "michelinId": "565367",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Davide Ciavattella",
   "chefSource": "press",
@@ -75,5 +75,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

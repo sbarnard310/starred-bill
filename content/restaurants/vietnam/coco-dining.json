@@ -14,12 +14,8 @@
   "lng": 106.6932479,
   "placeId": "ChIJ87LjurgvdTERohxhKxCsPDM",
   "michelinId": "1207539",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
-  "chef": "Thanh Vuong Vo",
-  "chefSource": "michelin",
+  "chef": "Vuong Vo",
+  "chefSource": "site",
   "dinnerNoteVi": "Thực đơn nếm thử Lưu Tích",
   "noLunch": true,
   "lunchNote": "Dinner only",

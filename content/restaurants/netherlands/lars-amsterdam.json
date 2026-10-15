@@ -17,12 +17,11 @@
   "placeId": "ChIJdd2greUJxkcRtaZnDt4JiFQ",
   "michelinId": "1154434",
   "diets": [
-    "vegetarian",
-    "halal",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Lars Scharp",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Lars Exclusive-menu, 8 gangen (Lars Experience vanaf € 140, Lars Green vanaf € 115)",
   "lunchNote": "Lunch from 3 courses of the dinner dishes, price not listed · Thu–Sat",
   "lunchNoteNl": "Lunch vanaf 3 gangen met gerechten uit het dinermenu, prijs niet vermeld · do–za",
@@ -66,5 +65,6 @@
   "bookingPhone": "+31 20 214 9729",
   "groups": "On days the restaurant is normally closed, it takes groups of 20 or more on request; private dining and events by enquiry.",
   "infoSource": "https://larsamsterdam.nl/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

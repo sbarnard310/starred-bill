@@ -22,12 +22,12 @@
   "placeId": "ChIJGSqkZySHNg0Rac-wAi3FxdM",
   "michelinId": "222449",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Marcos Morán and Pedro Morán",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "rating": 4.6,
   "reviews": 1478,
   "menus": [
@@ -66,5 +66,6 @@
   "groups": "Groups of eight or more must agree a menu in advance.",
   "children": "Children's menu available (minimum €40).",
   "infoSource": "https://restaurantecasagerardo.es/reservar-en-casa-gerardo/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

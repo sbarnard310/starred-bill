@@ -21,7 +21,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan"
+    "gluten-free"
   ],
   "chef": "Cheung Siu Kong",
   "chefSource": "site",
@@ -75,5 +75,6 @@
   "dressCode": "Men in long trousers and closed shoes; women in a dress, or a blouse with trousers or a skirt, and dressy shoes. No shorts or slippers.",
   "children": "No children's menu.",
   "infoSource": "https://www.summerpavilion.com.sg/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

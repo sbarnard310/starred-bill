@@ -20,11 +20,8 @@
   "lng": 135.503519,
   "placeId": "ChIJJQbuz-HmAGARlT3utlf3bPA",
   "michelinId": "1193278",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Yusuke Takada",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "lunch": 35200,
   "lunchType": "menu",
   "lunchSourceType": "site",

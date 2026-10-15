@@ -27,11 +27,10 @@
   "placeId": "ChIJ5QNoiNZoLw0RvbJ5lX1hWz8",
   "michelinId": "231253",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "gluten-free"
   ],
   "chef": "Xosé Torres Cannas",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Romasanta tasting menu",
@@ -72,5 +71,6 @@
   "groups": "Events are handled through the events page.",
   "groupsUrl": "https://pepevieira.com/en/eventos",
   "infoSource": "https://pepevieira.com/en/reservas",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -30,8 +30,6 @@
     "vegan",
     "gluten-free"
   ],
-  "chef": "Claudia Lara",
-  "chefSource": "michelin",
   "menusSource": "https://losdanzantesoaxaca.com.mx/comida-es/",
   "menusChecked": "2026-10-13",
   "starsSince": 2024,
@@ -42,5 +40,6 @@
   "groups": "For events, email rpoaxaca@losdanzantes.com.",
   "dressCode": "Smart casual.",
   "infoSource": "https://www.covermanager.com/reserve/module_restaurant/Los-Danzantes-Oaxaca/english",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

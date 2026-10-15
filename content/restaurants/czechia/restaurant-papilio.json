@@ -22,12 +22,8 @@
   "lng": 14.2048483,
   "placeId": "ChIJP8NUJpi9C0cRT6B19xq1Mrs",
   "michelinId": "1211491",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Jan Knedla",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteCs": "Degustační menu (další menu od CZK 5,500)",
   "lunch": 5500,
   "lunchType": "menu",

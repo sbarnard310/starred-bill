@@ -26,11 +26,10 @@
   "placeId": "ChIJXWil3wBUKhMRCNkg3KPI-FY",
   "michelinId": "558763",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Takahiko Kondo",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 115,
   "lunchWine": 115,
   "menus": [
@@ -59,5 +58,6 @@
   "groups": "Gucci Osteria and Gucci Giardino cater private events and special occasions; ask through the contact page.",
   "groupsUrl": "https://www.gucciosteria.com/en/florence/contact/",
   "infoSource": "https://www.gucciosteria.com/en/florence/reservation/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -23,11 +23,10 @@
   "michelinId": "1218863",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Jens Madsen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü „Whispers of the Rainforest“",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -52,5 +51,6 @@
   "groups": "Small groups are welcome; for larger or exclusive bookings, email the team. Group offers may require a 75% deposit due seven working days before.",
   "dressCode": "Smart casual: elegant but relaxed.",
   "infoSource": "https://thecloud.restaurant/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

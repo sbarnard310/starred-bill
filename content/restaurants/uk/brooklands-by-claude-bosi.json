@@ -24,7 +24,7 @@
     "vegetarian"
   ],
   "chef": "Claude Bosi",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "noLunch": true,
   "menus": [
     {
@@ -58,5 +58,6 @@
   "children": "Children of all ages are welcome; let the restaurant know when booking.",
   "servicePct": 15,
   "infoSource": "https://www.brooklandslondon.com/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

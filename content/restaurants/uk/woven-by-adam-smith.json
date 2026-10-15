@@ -25,13 +25,10 @@
   "michelinId": "304144",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Adam Smith",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunchWine": 75,
   "menus": [
     {
@@ -63,5 +60,6 @@
   "duration": "About 2½ hours for up to four people, 3 hours for larger tables.",
   "servicePct": 15,
   "infoSource": "https://www.dorchestercollection.com/ascot/coworth-park/dining/woven-by-adam-smith",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -62,5 +62,6 @@
   "children": "Guests must be 12 or over.",
   "byob": "Outside food and drink are not allowed.",
   "infoSource": "https://www.laviebythomasbuehner.com/en/reservation",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -26,11 +26,10 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Adam Handling",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunchWine": 60,
   "menus": [
     {
@@ -66,5 +65,6 @@
   "groupsUrl": "https://www.frogbyadamhandling.com/home#privatedining",
   "servicePct": 13,
   "infoSource": "https://www.frogbyadamhandling.com/contact-us",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

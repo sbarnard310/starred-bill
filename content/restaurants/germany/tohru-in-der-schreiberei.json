@@ -16,11 +16,8 @@
   "lng": 11.577475,
   "placeId": "ChIJ12Lhfm51nkcRQhxPXh8nb88",
   "michelinId": "1195755",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Tohru Nakamura",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",

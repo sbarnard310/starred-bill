@@ -51,5 +51,6 @@
   "dressCode": "Business casual, according to its OpenTable listing.",
   "byob": "Corkage is $95 a bottle, arranged by email in advance.",
   "infoSource": "https://www.barmiller.com/faqs",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

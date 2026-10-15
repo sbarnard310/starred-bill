@@ -24,12 +24,10 @@
   "placeId": "ChIJ2U2uF0ef1BIR167TH6N1N7g",
   "michelinId": "1196675",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Mattia Pecis",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Un tuffo nell'orto tasting menu",
@@ -55,5 +53,6 @@
   "walkIns": "La Terrazza, the cocktail bar on the terrace over the harbour, serves aperitivi from 6pm and can be booked on SevenRooms.",
   "infoSource": "https://www.sevenrooms.com/reservations/ristorantecraccoportofino",
   "infoChecked": "2026-10-13",
-  "notice": "Closed for the winter from 1 November 2026 (no tables on its booking page until spring 2027)"
+  "notice": "Closed for the winter from 1 November 2026 (no tables on its booking page until spring 2027)",
+  "dietsManual": true
 }

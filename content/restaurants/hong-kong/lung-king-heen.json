@@ -29,8 +29,8 @@
   "placeId": "ChIJzbDWTWIABDQRhRm8m1oEQbc",
   "michelinId": "230782",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Chan Yan Tak",
   "chefSource": "press",
@@ -94,5 +94,6 @@
       "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

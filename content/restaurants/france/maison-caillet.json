@@ -26,12 +26,10 @@
   "placeId": "ChIJk1_3h-No4EcR-GOfpT3juLA",
   "michelinId": "9313",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Pierre Caillet",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "La Tentation tasting menu",
@@ -77,5 +75,6 @@
   "bookingPhone": "+33 2 35 29 77 56",
   "groups": "A table in the kitchen seats up to two people, watching Pierre Caillet's team at work, for €20 a head on top of the menu.",
   "infoSource": "https://maisoncaillet.com/fr/restaurant.html",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

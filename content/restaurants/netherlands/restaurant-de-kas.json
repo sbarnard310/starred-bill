@@ -25,11 +25,10 @@
     "vegetarian-menu",
     "vegetarian",
     "vegan",
-    "gluten-free",
-    "halal"
+    "gluten-free"
   ],
-  "chef": "Wim de Beer & Jos Timmer",
-  "chefSource": "michelin",
+  "chef": "Wim de Beer and Jos Timmer",
+  "chefSource": "press",
   "dinnerNoteNl": "Dinermenu, 6 gangen (5 gangen € 86)",
   "lunchNoteNl": "Lunchmenu, 3 gangen · ma–za (4 gangen € 67, 5 gangen € 76)",
   "menus": [
@@ -85,5 +84,6 @@
   "children": "Children are welcome, with a special children's menu; mention a pushchair when booking.",
   "duration": "Lunch tables are kept until 4pm; dinner until midnight, or 8.30pm for an early dinner booking.",
   "infoSource": "https://restaurantdekas.com/eng/faq",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

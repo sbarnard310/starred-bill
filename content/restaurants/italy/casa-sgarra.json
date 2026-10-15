@@ -26,12 +26,11 @@
   "placeId": "ChIJI-jxN3AFOBMRWyhuwzBX5yg",
   "michelinId": "1192213",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Felice Sgarra",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Estro, Felice pensaci tu tasting menu",
@@ -80,5 +79,6 @@
   "bookingUrl": "https://www.casasgarra.it/",
   "bookingPhone": "+39 0883 895968",
   "infoSource": "https://www.casasgarra.it/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -25,12 +25,10 @@
   "placeId": "ChIJyYH9U2oFdkgRCr9oJuLmHiA",
   "michelinId": "504069",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Philip Howard",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Six of the Best tasting menu",
@@ -76,5 +74,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

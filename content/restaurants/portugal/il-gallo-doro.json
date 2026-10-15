@@ -20,12 +20,10 @@
   "michelinId": "216835",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Benoît Sinthon",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação \"This is Il Gallo d'Oro\", 11 momentos (outros menus desde 245 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -66,5 +64,6 @@
   "dressCode": "Smart casual. No sportswear, flip-flops or shorts.",
   "children": "Children aged 8 and over are welcome.",
   "infoSource": "https://www.portobay.com/en/restaurants/restaurants-madeira/il-gallo-doro",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "dietsManual": true
 }

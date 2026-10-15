@@ -206,6 +206,8 @@ Short, dated stories about Michelin-starred restaurants at `/news/<file name>/`,
 | `kind` | `stars` (new and lost stars), `ceremony` (coming up), `closure`, `opening`, `chef` (chef moves), `prices`, `rankings` (50 Best, La Liste, OAD) or `data` (our own figures). Shown above the headline. |
 | `published` | The day it went up, like 2026-10-14. |
 | `updated` | Optional: the day it was last changed, if it was. |
+| `written` | Only for a story written up after the news broke: the day it went on the site. `published` is then the day the news broke (which dates and orders it); the page shows "Written up …" beside it, and search engines, the feed and the sitemap get `written` as its publication date. |
+| `imageAlt` | What the featured picture shows, in one plain sentence. The picture is `src/img/news/<id>.jpg` (with `-card` and `-og`), in the news style of docs/image-style.md, sized by `python3 scripts/guide_images.py --news <id>`. |
 | `lang` | `en-GB` (the default) or `en-US` for US spelling and dates. |
 | `places` | Optional: place ids the story is about (its restaurants' towns count anyway). The first gives the story its link-preview picture. |
 | `body` | The story, as HTML. Answer first: what happened, where and when, in the first 40–50 words. `<a data-r="le-bernardin">` links a restaurant (its own page, else its row on its town's page), `<a data-place="london">` a destination page, `<a data-guide="michelin-guide-texas">` a guide (plain text until it exists) and `<a data-news="…">` another story. Figures like `{{dinner:fabrik}}` work as in guides. Link each page once, never at the start of a sentence. |

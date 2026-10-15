@@ -2018,6 +2018,14 @@ content:
         label: Updated
         description: Optional. The day you last changed the story, like 2026-10-15.
         type: string
+      - name: written
+        label: Written up
+        description: Only for a story written up after the news broke (Published is then the day the news broke). The day it went on the site, like 2026-10-15; shown beside the date and given to Google as its publication date.
+        type: string
+      - name: imageAlt
+        label: Picture description
+        description: What the story's picture shows, in one plain sentence. The picture itself is src/img/news/<web address>.jpg, made in the news style (docs/image-style.md) and sized by scripts/guide_images.py --news.
+        type: string
       - name: lang
         label: Spelling
         description: en-GB (the default) for UK spelling and dates, en-US for US.

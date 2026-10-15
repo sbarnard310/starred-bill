@@ -1291,6 +1291,8 @@ dialog.report-box { width: min(480px, calc(100vw - 32px)); max-height: calc(100d
 .guide .news-month h2 { margin: 0 0 10px; font-size: 1.1rem; font-family: var(--font-body); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .news-list { list-style: none; margin: 0; padding: 0; }
 .guide .news-list li { position: relative; max-width: none; margin: 0; padding: 16px 0 18px; border-top: 1px solid var(--line); }
+.guide .news-list li:not(.news-nopic) { display: grid; grid-template-columns: minmax(0, 240px) minmax(0, 1fr); gap: 20px; align-items: start; }
+.news-list img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); background: var(--line); }
 .news-list h3 { margin: 4px 0 6px; font-family: var(--font-display); font-weight: 400; font-size: 1.35rem; line-height: 1.2; }
 .news-list h3 a { color: var(--ink); text-decoration: none; }
 .news-list h3 a::after { content: ""; position: absolute; inset: 0; }
@@ -1323,6 +1325,7 @@ dialog.report-box { width: min(480px, calc(100vw - 32px)); max-height: calc(100d
 }
 @media (max-width: 720px) {
   .nw-news li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .guide .news-list li:not(.news-nopic) { grid-template-columns: minmax(0, 1fr); gap: 12px; }
 }
 footer a.foot-guide { color: inherit; }
 /* Popular destinations (foot_places_html() in build.py): a full-width line of links on every page. */

@@ -7,14 +7,44 @@
   "kind": "ceremony",
   "published": "2026-10-14",
   "lang": "en-GB",
-  "places": ["italy", "spain", "switzerland"],
+  "places": [
+    "italy",
+    "spain",
+    "switzerland"
+  ],
+  "imageAlt": "Linocut-style print of a theatre stage with its curtains open and a spotlight on five sealed envelopes, under five gold stars and painted mountains.",
   "body": "<p>Five MICHELIN Guides announce their new stars in the next nine weeks: the American South in Nashville on 21 October, Switzerland in Andermatt on 2 November, Italy in Piacenza on 12 November, Spain and Andorra in Huesca on 24 November and the Northeast Cities in Manhattan on 14 December. Between them they cover 944 of the starred restaurants on our pages.</p><h2>American South: Nashville, 21 October</h2><p>The second edition of the guide for Georgia, Tennessee, the Carolinas and Louisiana is revealed at The Pinnacle in Nashville. Its first edition starred 19 restaurants, all with one star except <a data-r=\"emerils\">Emeril’s</a> in New Orleans, which has two. Our <a data-guide=\"michelin-guide-american-south\">American South results page</a> will list every change on the night.</p><h2>Switzerland: Andermatt, 2 November</h2><p>Michelin moves the Swiss ceremony from the EHL hospitality school in Lausanne to the Andermatt Concert Hall, almost 1,500 metres up in the Alps. Switzerland has 133 starred restaurants on our pages, four of them with three stars: <a data-r=\"schloss-schauenstein\">Schloss Schauenstein</a>, Cheval Blanc by Peter Knogl, Restaurant de l’Hôtel de Ville in Crissier and Sven Wassmer Memories.</p><h2>Italy: Piacenza, 12 November</h2><p>The Teatro Municipale in Piacenza hosts the launch of the 2027 Italian guide, the biggest of the five: 379 starred restaurants, 14 of them with three stars. Italy names its guide for the year ahead, so the stars announced in November are the 2027 selection.</p><h2>Spain and Andorra: Huesca, 24 November</h2><p>The gala comes to Aragón for the first time, at the Palacio de Congresos in Huesca, after Málaga last year. Spain and Andorra have 298 starred restaurants on our pages, 16 with three stars.</p><h2>Northeast Cities: Manhattan, 14 December</h2><p>New York, Chicago, Washington DC, Boston and Philadelphia share one guide, revealed at the Glasshouse in Manhattan. It covers 115 starred restaurants, six with three stars, among them <a data-r=\"le-bernardin\">Le Bernardin</a> and Per Se.</p><h2>What we do on the night</h2><p>We update each guide’s restaurants from Michelin’s press release and the news coverage, with the price of a meal at every new star, and write the night’s main changes up here. Every guide’s date, including the ones further off, is on our page of <a data-guide=\"michelin-guide-ceremony-dates\">Michelin Guide ceremony dates</a>.</p>",
   "sources": [
-    {"title": "The MICHELIN Guide heads to Nashville for 2026 American South Ceremony", "publisher": "Michelin North America, via Visit Music City", "url": "https://www.visitmusiccity.com/media/press-release/2026/michelin-guide-heads-to-nashville-2026-american-south-ceremony", "date": "2026-03-30"},
-    {"title": "Sterneverleihung in der Schweiz: MICHELIN Guide Ceremony kommt nach Andermatt", "publisher": "Michelin (press release)", "url": "https://news.michelin.de/articles/sterneverleihung-in-der-schweiz-michelin-guide-ceremony-kommt-nach-andermatt", "date": "2026-10-05"},
-    {"title": "Guida Michelin 2027: le nuove stelle a Piacenza il 12 novembre", "publisher": "Scatti di Gusto", "url": "https://www.scattidigusto.it/guida-michelin-2027-le-nuove-stelle-a-piacenza-il-12-novembre", "date": "2026-04-15"},
-    {"title": "Huesca será la sede de la Gala de la Guía Michelin 2027", "publisher": "iGastro Aragón", "url": "https://www.igastroaragon.com/2026/05/huesca-sera-la-sede-de-la-gala-de-la-guia-michelin-2027.html", "date": "2026-05-27"},
-    {"title": "Michelin is headed back to New York City for its 2026 awards ceremony", "publisher": "The Philadelphia Inquirer", "url": "https://www.inquirer.com/food/restaurants/michelin-2026-announcement-restaurants-new-york-20260811.html", "date": "2026-08-11"}
+    {
+      "title": "The MICHELIN Guide heads to Nashville for 2026 American South Ceremony",
+      "publisher": "Michelin North America, via Visit Music City",
+      "url": "https://www.visitmusiccity.com/media/press-release/2026/michelin-guide-heads-to-nashville-2026-american-south-ceremony",
+      "date": "2026-03-30"
+    },
+    {
+      "title": "Sterneverleihung in der Schweiz: MICHELIN Guide Ceremony kommt nach Andermatt",
+      "publisher": "Michelin (press release)",
+      "url": "https://news.michelin.de/articles/sterneverleihung-in-der-schweiz-michelin-guide-ceremony-kommt-nach-andermatt",
+      "date": "2026-10-05"
+    },
+    {
+      "title": "Guida Michelin 2027: le nuove stelle a Piacenza il 12 novembre",
+      "publisher": "Scatti di Gusto",
+      "url": "https://www.scattidigusto.it/guida-michelin-2027-le-nuove-stelle-a-piacenza-il-12-novembre",
+      "date": "2026-04-15"
+    },
+    {
+      "title": "Huesca será la sede de la Gala de la Guía Michelin 2027",
+      "publisher": "iGastro Aragón",
+      "url": "https://www.igastroaragon.com/2026/05/huesca-sera-la-sede-de-la-gala-de-la-guia-michelin-2027.html",
+      "date": "2026-05-27"
+    },
+    {
+      "title": "Michelin is headed back to New York City for its 2026 awards ceremony",
+      "publisher": "The Philadelphia Inquirer",
+      "url": "https://www.inquirer.com/food/restaurants/michelin-2026-announcement-restaurants-new-york-20260811.html",
+      "date": "2026-08-11"
+    }
   ],
   "sourcesNote": "Counts of starred restaurants are The Starred Bill’s own, on 14 October 2026."
 }

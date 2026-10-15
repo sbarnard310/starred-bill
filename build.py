@@ -727,6 +727,13 @@ NEWS_KINDS = {"stars": "New stars", "ceremony": "Coming up", "closure": "Closure
               "prices": "Prices", "rankings": "Rankings", "data": "Our figures"}
 NEWS_FIELDS = ("title", "description", "h1", "summary", "published", "kind", "body")
 NEWS_LINK = re.compile(r'<a data-(r|place|guide|news)="([\w-]+)">(.*?)</a>', re.S)
+# A story written up after the news broke (to fill in the archive) has `published` as the day the news broke, which dates
+# and orders it, and `written` as the day we wrote it, shown beside it ("Written up 15 October 2026") and given to search
+# engines and the feed as its publication date, so no date is passed off as earlier than it was.
+# Each story has a featured picture (14 Oct 2026): the news style in docs/image-style.md (a linocut print, unlike the
+# guides' gouache), made in Canva (design "Starred Bill guide images", pages titled "News: <id>") and sized by
+# `python3 scripts/guide_images.py --news <id>` into src/img/news/<id>.jpg, -card.jpg and -og.jpg, with `imageAlt`.
+NEWS_IMAGES = SRC / "img" / "news"
 NEWS_STALE_DAYS = 10  # the build reminds us when the newest story is older (aim: one or two a week, plus ceremony nights)
 news = {}
 for path in sorted((CONTENT / "news").glob("*.json")) if (CONTENT / "news").exists() else []:
@@ -746,9 +753,11 @@ for path in sorted((CONTENT / "news").glob("*.json")) if (CONTENT / "news").exis
         problem(where, f"description is {len(s['description'])} characters; keep it to 155")
     if s.get("kind") and s["kind"] not in NEWS_KINDS:
         problem(where, f"kind is \"{s['kind']}\"; use one of " + ", ".join(NEWS_KINDS))
-    for field in ("published", "updated"):
+    for field in ("published", "updated", "written"):
         if s.get(field) and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", s[field]):
             problem(where, f"{field} must be a date like 2026-10-14")
+    if s.get("written") and s.get("published") and s["written"] < s["published"]:
+        problem(where, "written can't be before published (the day the news broke)")
     if s.get("lang", "en-GB") not in ("en-GB", "en-US"):
         problem(where, "lang must be en-GB (UK spelling) or en-US (US spelling)")
     if not isinstance(s.get("places", []), list) or any(i not in places for i in s.get("places", [])):
@@ -6681,6 +6690,16 @@ def news_date(s, field="published"):
     return (us_date if s.get("lang") == "en-US" else uk_date)(s[field])
 
 
+def news_filed(s):
+    """The day a story went up on the site: `written` for one written up after the news broke, else `published`."""
+    return s.get("written") or s["published"]
+
+
+def news_picture(s):
+    """A story's featured picture (src/img/news/<id>.jpg, see the loader above), or None."""
+    return f"/img/news/{s['id']}" if (NEWS_IMAGES / f"{s['id']}.jpg").exists() else None
+
+
 def news_links(text):
     """A story's <a data-r|data-place|data-guide|data-news="…"> as links (see the loader above)."""
     by_id = {r["id"]: r for r in restaurants}
@@ -6719,7 +6738,10 @@ def news_for_restaurant(r, n=NEWS_PLACE):
 
 
 def news_image(s):
-    """A story's link-preview picture: its first place's (or the nearest place above it), else its first restaurant's, else the site's."""
+    """A story's link-preview picture: its own, else its first place's (or the nearest place above it), else its first
+    restaurant's, else the site's."""
+    if news_picture(s):
+        return SITE_URL + news_picture(s) + "-og.jpg"
     if s["places"]:
         return og_image(places[s["places"][0]])
     rs = news_restaurants(s)
@@ -6762,7 +6784,7 @@ def build_news():
     order = news_order()
     home_crumb = '<a href="/">All destinations</a>'
     data = as_json({"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES})
-    age = (date.fromisoformat(TODAY) - date.fromisoformat(order[0]["published"])).days
+    age = (date.fromisoformat(TODAY) - date.fromisoformat(max(news_filed(s) for s in order))).days
     if age > NEWS_STALE_DAYS:
         print(f"  News: the newest story is {age} days old; aim for one or two a week, plus ceremony nights")
     bodies = {}
@@ -6778,12 +6800,19 @@ def build_news():
             sys.exit(1)
         more = [x for x in order if x is not s][:NEWS_MORE]
         dated = f'<time datetime="{s["published"]}">{e(news_date(s))}</time>'
+        if s.get("written") and s["written"] != s["published"]:
+            dated += f' · Written up <time datetime="{s["written"]}">{e(news_date(s, "written"))}</time>'
         if s.get("updated") and s["updated"] != s["published"]:
             dated += f' · Updated <time datetime="{s["updated"]}">{e(news_date(s, "updated"))}</time>'
         more_html = ('<aside class="news-more"><h2>More Michelin star news</h2>' + news_items_html(more)
                      + '<p><a href="/news/">All news →</a></p></aside>') if more else ""
+        pic = news_picture(s)
+        if not pic:
+            print(f"  News {s['id']}: no featured picture yet; make one in the news style (docs/image-style.md)")
+        hero = (f'<figure class="guide-hero news-hero"><img src="{pic}.jpg" alt="{e(s.get("imageAlt", ""))}" width="1600" height="900" '
+                f'fetchpriority="high" decoding="async"></figure>\n') if pic else ""
         main = (f'<article lang="{e(lang)}">\n<p class="news-kind">{e(NEWS_KINDS[s["kind"]])}</p>\n<h1>{e(s["h1"])}</h1>\n'
-                f'<p class="prose-date">{dated} · The Starred Bill</p>\n{body}\n{more_html}\n{guide_sources_html(dict(s, lang=lang), stats)}\n</article>')
+                f'<p class="prose-date">{dated} · The Starred Bill</p>\n{hero}{body}\n{more_html}\n{guide_sources_html(dict(s, lang=lang), stats)}\n</article>')
         img = news_image(s)
         rs = news_restaurants(s)
         graph = [
@@ -6792,15 +6821,15 @@ def build_news():
                 {"@type": "ListItem", "position": 2, "name": "News", "item": SITE_URL + "/news/"},
                 {"@type": "ListItem", "position": 3, "name": s["h1"], "item": SITE_URL + path}]},
             {"@type": "NewsArticle", "headline": s["h1"], "description": s["description"], "inLanguage": lang,
-             "datePublished": s["published"], "dateModified": s.get("updated") or s["published"], "mainEntityOfPage": SITE_URL + path,
-             "image": img, "articleSection": NEWS_KINDS[s["kind"]],
+             "datePublished": news_filed(s), "dateModified": s.get("updated") or news_filed(s), "mainEntityOfPage": SITE_URL + path,
+             "image": [SITE_URL + pic + ".jpg", img] if pic else img, "articleSection": NEWS_KINDS[s["kind"]],
              "author": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
              "publisher": ORGANIZATION, "isPartOf": {"@id": WEBSITE["@id"]}, "citation": guide_citations(s),
              **({"mentions": [{"@type": "Restaurant", "name": r["name"], "url": SITE_URL + restaurant_href(r)} for r in rs]} if rs else {})},
         ]
         write(path, render("guide.html", {
             "title": e(s["title"]), "description": e(s["description"]), "canonical": SITE_URL + path, "htmlLang": e(lang),
-            "ogType": "article", "ogImage": img, "ogAlt": e(s["h1"]), "keywordsMeta": "", "alternates": NEWS_RSS_LINK, "data": data,
+            "ogType": "article", "ogImage": img, "ogAlt": e(s.get("imageAlt") or s["h1"]), "keywordsMeta": "", "alternates": NEWS_RSS_LINK, "data": data,
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": home_crumb + '<a href="/news/">News</a>' + f'<span aria-current="page">{e(s["h1"])}</span>',
             "main": main, "mainClass": "wrap prose guide news-story",
@@ -6811,9 +6840,12 @@ def build_news():
     for s in order:
         months.setdefault(s["published"][:7], []).append(s)
     def item(s):
-        return (f'<li><p class="news-meta"><time datetime="{s["published"]}">{e(uk_date(s["published"]))}</time>'
+        pic = news_picture(s)
+        thumb = (f'<img src="{pic}-card.jpg" alt="" width="800" height="450" loading="lazy" decoding="async">' if pic else "")
+        cls = "" if pic else ' class="news-nopic"'
+        return (f'<li{cls}>{thumb}<div><p class="news-meta"><time datetime="{s["published"]}">{e(uk_date(s["published"]))}</time>'
                 f'<span class="news-tag">{e(NEWS_KINDS[s["kind"]])}</span></p>'
-                f'<h3><a href="/news/{s["id"]}/">{e(s["h1"])}</a></h3><p>{e(s["summary"])}</p></li>')
+                f'<h3><a href="/news/{s["id"]}/">{e(s["h1"])}</a></h3><p>{e(s["summary"])}</p></div></li>')
     listing = "".join(f'<section class="news-month"><h2>{MONTH_NAMES[int(m[5:7]) - 1]} {m[:4]}</h2><ul class="news-list">'
                       + "".join(item(s) for s in ss) + "</ul></section>" for m, ss in months.items())
     coming = sorted((g for g in ceremony_guides() if g["coming"]), key=lambda g: g["coming"]["date"])[:4]
@@ -6838,13 +6870,14 @@ def build_news():
             {"@type": "ListItem", "position": 1, "name": "All destinations", "item": SITE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "News", "item": SITE_URL + "/news/"}]},
         {"@type": "CollectionPage", "name": "Michelin Star News", "description": description, "url": SITE_URL + "/news/", "inLanguage": "en",
-         "isPartOf": {"@id": WEBSITE["@id"]}, "dateModified": order[0].get("updated") or order[0]["published"],
+         "isPartOf": {"@id": WEBSITE["@id"]}, "dateModified": max(s.get("updated") or news_filed(s) for s in order),
          "mainEntity": {"@type": "ItemList", "itemListElement": [
              {"@type": "ListItem", "position": i + 1, "url": SITE_URL + f"/news/{s['id']}/", "name": s["h1"]} for i, s in enumerate(order)]}},
     ]
     write("/news/", render("guide.html", {
         "title": "Michelin Star News: New Stars, Closures and Prices", "description": description,
         "canonical": SITE_URL + "/news/", "htmlLang": "en", "ogType": "website", "ogAlt": "Michelin star news from The Starred Bill",
+        **({"ogImage": news_image(order[0])} if news_picture(order[0]) else {}),
         "keywordsMeta": "", "alternates": NEWS_RSS_LINK, "data": data,
         "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
         "crumbs": home_crumb + '<span aria-current="page">News</span>',
@@ -6858,8 +6891,10 @@ def build_news():
     x = lambda t: e(t, quote=False)
     items = "".join(
         f'    <item>\n      <title>{x(s["h1"])}</title>\n      <link>{SITE_URL}/news/{s["id"]}/</link>\n'
-        f'      <guid isPermaLink="true">{SITE_URL}/news/{s["id"]}/</guid>\n      <pubDate>{rfc(s["published"])}</pubDate>\n'
+        f'      <guid isPermaLink="true">{SITE_URL}/news/{s["id"]}/</guid>\n      <pubDate>{rfc(news_filed(s))}</pubDate>\n'
         f'      <category>{x(NEWS_KINDS[s["kind"]])}</category>\n      <description>{x(s["summary"])}</description>\n'
+        + (f'      <enclosure url="{SITE_URL}{news_picture(s)}-card.jpg" length="{(NEWS_IMAGES / (s["id"] + "-card.jpg")).stat().st_size}" type="image/jpeg"/>\n'
+           if news_picture(s) else "") +
         f'      <content:encoded><![CDATA[{absolute_links(bodies[s["id"]]).replace("]]>", "]]&gt;")}]]></content:encoded>\n    </item>\n'
         for s in order[:NEWS_FEED])
     feed = ('<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -6868,7 +6903,7 @@ def build_news():
             f'    <link>{SITE_URL}/news/</link>\n'
             f'    <atom:link href="{SITE_URL}/news/feed.xml" rel="self" type="application/rss+xml"/>\n'
             '    <description>New and lost Michelin stars, closures, openings, chef moves and prices at starred restaurants.</description>\n'
-            f'    <language>en-gb</language>\n    <lastBuildDate>{rfc(max(s.get("updated") or s["published"] for s in order))}</lastBuildDate>\n'
+            f'    <language>en-gb</language>\n    <lastBuildDate>{rfc(max(s.get("updated") or news_filed(s) for s in order))}</lastBuildDate>\n'
             f'{items}  </channel>\n</rss>\n')
     (OUT / "news" / "feed.xml").write_text(feed, "utf-8")
 
@@ -8089,7 +8124,7 @@ def sitemap_dates():
             out[guide_path(gid, lang)] = t["updated"]
     out["/guides/"] = max((g["updated"] for g in guides.values()), default=None)
     for s in news.values():
-        out[f"/news/{s['id']}/"] = s.get("updated") or s["published"]
+        out[f"/news/{s['id']}/"] = s.get("updated") or news_filed(s)
     out["/news/"] = max((v for k, v in out.items() if k.startswith("/news/") and v), default=None)
     out["/privacy/"] = days.get("src/privacy.html")
     for r in restaurants:

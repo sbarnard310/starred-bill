@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
-"""Sizes a guide's featured image (see docs/image-style.md).
+"""Sizes a guide's or news story's featured image (see docs/image-style.md).
 
     python3 scripts/guide_images.py <guide-id> [<guide-id> ...]
     python3 scripts/guide_images.py --all
+    python3 scripts/guide_images.py --news <story-id> [...]   (or --news --all)
 
-Takes src/img/guides/<id>-src.jpg (or .png), the full-size AI image, and writes with macOS `sips`:
-  <id>.jpg       1600×900  the picture at the top of the guide
-  <id>-card.jpg   800×450  the /guides/ list
+Takes src/img/guides/<id>-src.jpg (or .png; src/img/news/ with --news), the full-size AI image, and writes with macOS `sips`:
+  <id>.jpg       1600×900  the picture at the top of the guide or story
+  <id>-card.jpg   800×450  the /guides/ or /news/ list
   <id>-og.jpg    1200×630  the link-preview picture (cropped from the middle)
 """
 import subprocess
 import sys
 from pathlib import Path
 
-DIR = Path(__file__).resolve().parent.parent / "src" / "img" / "guides"
+IMG = Path(__file__).resolve().parent.parent / "src" / "img"
+DIR = IMG / ("news" if "--news" in sys.argv else "guides")
 
 
 def sips(*args):
@@ -41,7 +43,7 @@ def make(gid):
 
 
 if __name__ == "__main__":
-    ids = sys.argv[1:]
+    ids = [a for a in sys.argv[1:] if a != "--news"]
     if ids == ["--all"]:
         ids = sorted(p.name[:-8] for p in DIR.glob("*-src.*") if p.suffix in (".jpg", ".png"))
     if not ids:

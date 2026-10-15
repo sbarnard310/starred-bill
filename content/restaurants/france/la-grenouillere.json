@@ -25,12 +25,8 @@
   "lng": 1.7544175,
   "placeId": "ChIJjQ5C4dfF3UcRtvuEJhbVPk8",
   "michelinId": "5062",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Alexandre Gauthier",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 105,
   "lunchWine": 85,
   "menus": [

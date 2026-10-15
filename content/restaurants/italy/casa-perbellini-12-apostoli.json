@@ -24,10 +24,12 @@
   "michelinId": "458343",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Giancarlo Perbellini",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 120,
   "dinnerNote": "Io e Silvia tasting menu (Storie di Casa €280, vegetarian L'Essenza €240; chef's table with wine €395)",
   "dinnerNoteIt": "Percorso Io e Silvia (Storie di Casa €280, vegetariano L'Essenza €240; chef's table con vini €395)",
@@ -87,5 +89,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

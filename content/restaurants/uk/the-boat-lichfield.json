@@ -29,10 +29,11 @@
   "michelinId": "256499",
   "diets": [
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Liam Dillon",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Evening tasting menu",
@@ -64,5 +65,6 @@
   "byob": "Corkage £70 a bottle.",
   "servicePct": 8,
   "infoSource": "https://theboat.restaurant/policies",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

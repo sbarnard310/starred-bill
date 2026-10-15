@@ -16,14 +16,8 @@
   "lng": 29.5117319,
   "placeId": "ChIJaTmToXbIyhQR9P4KlGaCudI",
   "michelinId": "1195854",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free",
-    "halal"
-  ],
   "chef": "Emre Şen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteTr": "Tadım menüsü, masadaki tüm misafirlere servis edilir; alakart menü de mevcut",
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteTr": "Öğle yemeği için açık · Per–Paz",

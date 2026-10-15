@@ -35,11 +35,8 @@
   "lng": 12.588814,
   "placeId": "ChIJ1Y52MZlTUkYRuDl4FNhYh_U",
   "michelinId": "364793",
-  "diets": [
-    "vegetarian"
-  ],
-  "chef": "Nicolai Nørregaard",
-  "chefSource": "michelin",
+  "chef": "Kyumin Hahn",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Tasting menu",

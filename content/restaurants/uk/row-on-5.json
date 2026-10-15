@@ -31,7 +31,7 @@
     "vegetarian"
   ],
   "chef": "Spencer Metzger",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunchWine": 95,
   "menus": [
     {
@@ -82,5 +82,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

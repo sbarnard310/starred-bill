@@ -25,12 +25,8 @@
   "lng": -2.2999341,
   "placeId": "ChIJsXfnkhwWBUgRHDPaEO3Pdx8",
   "michelinId": "3780",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Alexandre Couillon",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 110,
   "lunchWine": 110,
   "menus": [

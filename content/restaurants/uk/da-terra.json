@@ -23,13 +23,8 @@
   "lng": -0.05607,
   "placeId": "ChIJn-wx7LQddkgRMWv5bVEiEfQ",
   "michelinId": "1154511",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Rafael Cagali",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Tasting menu",

@@ -21,11 +21,8 @@
   "lng": 8.0363522,
   "placeId": "ChIJSw-GLl2z0hIRX8zyKXltoq8",
   "michelinId": "124135",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "Enrico Crippa",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Seasonal Things tasting menu",

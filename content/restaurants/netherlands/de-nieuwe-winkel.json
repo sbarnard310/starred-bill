@@ -19,12 +19,11 @@
   "placeId": "ChIJcRC6ZUUIx0cR16USmjNd2jk",
   "michelinId": "1186134",
   "diets": [
-    "vegetarian-menu",
-    "vegan",
-    "gluten-free"
+    "vegetarian-only",
+    "vegan"
   ],
   "chef": "Emile van der Staak",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Seizoensmenu op vrijdag en zaterdag (€ 215 dinsdag t/m donderdag)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -73,5 +72,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -24,10 +24,11 @@
   "michelinId": "69016",
   "diets": [
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Heinz Beck",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "hotel": "the Rome Cavalieri, a Waldorf Astoria hotel",
   "menus": [
     {
@@ -101,5 +102,6 @@
       "url": "https://www.laliste.com/places/la-pergola-roma-it"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

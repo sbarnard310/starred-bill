@@ -24,12 +24,11 @@
   "placeId": "ChIJo21X9MlIYA0ROj4TQ1X5U_Q",
   "michelinId": "383843",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Carolina Álvarez",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Flores Raras tasting menu",
@@ -66,5 +65,6 @@
   "bookingPhone": "+34 961 111 106",
   "cancellation": "Free cancellation up to 24 hours before the meal; after that the restaurant charges €100 per guest.",
   "infoSource": "https://floresraras.com/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

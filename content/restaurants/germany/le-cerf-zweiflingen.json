@@ -19,10 +19,11 @@
   "michelinId": "83229",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Boris Rommel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Menü „Chef“, 6 Gänge (andere Menüs ab 178 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -70,5 +71,6 @@
       "url": "https://www.laliste.com/places/le-cerf-wald-and-schlosshotel-friedrichsruhe-zweiflingen-de"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

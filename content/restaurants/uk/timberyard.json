@@ -26,11 +26,10 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
-  "chef": "Bartholomew Stratfold",
-  "chefSource": "michelin",
+  "chef": "Bart Stratfold",
+  "chefSource": "press",
   "menus": [
     {
       "name": "Tasting menu",
@@ -94,5 +93,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

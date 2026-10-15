@@ -29,7 +29,7 @@
     "gluten-free"
   ],
   "chef": "Patrick O’Connell",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Tasting menu",
@@ -91,5 +91,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 793,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

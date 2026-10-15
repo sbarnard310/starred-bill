@@ -26,10 +26,8 @@
   "placeId": "ChIJC6fjv1NbgUcReZVlgUiiKOU",
   "michelinId": "128107",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Enrico and Roberto Cerea",
   "chefSource": "press",
@@ -80,5 +78,6 @@
       "url": "https://www.laliste.com/places/da-vittorio-brusaporto-it"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

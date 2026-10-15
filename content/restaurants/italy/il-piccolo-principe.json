@@ -23,13 +23,10 @@
   "placeId": "ChIJQ7S_F5Wh1RIRLqip6sWThbM",
   "michelinId": "164495",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Giuseppe Mancino",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Esperienza tasting menu",
@@ -76,5 +73,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

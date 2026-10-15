@@ -30,7 +30,7 @@
   "placeId": "ChIJwVykxpIABDQR1MZ-gH1ykQk",
   "michelinId": "230806",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian"
   ],
   "chef": "Julien Tongourian",
   "chefSource": "site",
@@ -139,5 +139,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

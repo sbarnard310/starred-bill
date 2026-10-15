@@ -25,11 +25,10 @@
   "michelinId": "196194",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Heiko Nieder",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "7-Gang-Menü (vegetarisches Menü CHF 300)",
   "cuisineDe": "Kreativ",
   "dinnerNoteFr": "Menu en 7 plats (menu végétarien CHF 300)",
@@ -86,5 +85,6 @@
       "url": "https://www.laliste.com/places/the-restaurant-zurich-ch"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

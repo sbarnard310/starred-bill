@@ -7815,7 +7815,7 @@ def build_restaurant_pages():
             plain_diets = [DIET_WORDS[d] for d in diets if d not in ("vegetarian-only", "vegetarian-menu")]
             facts.append(("Dietary needs", e("; ".join(x for x in (
                 "A vegetarian restaurant" if "vegetarian-only" in diets else "", "Has a vegetarian tasting menu" if "vegetarian-menu" in diets else "",
-                ("Can cater for " + and_list(plain_diets) + " diets") if plain_diets else "") if x)) + "<small>From the MICHELIN Guide; say when you book</small>"))
+                ("Can cater for " + and_list(plain_diets) + " diets") if plain_diets else "") if x)) + "<small>From " + ("the restaurant’s website" if r.get("dietsManual") else "the MICHELIN Guide") + "; say when you book</small>"))
         if r.get("rating"):
             facts.append(("Google rating", f'{r["rating"]:.1f} out of 5' + (f'<small>{r["reviews"]:,} reviews, checked {RATINGS_CHECKED}</small>' if r.get("reviews") else "")))
         if r.get("memberScore"):

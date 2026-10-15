@@ -30,12 +30,8 @@
   "lng": -3.700269,
   "placeId": "ChIJ8XazK4EoQg0RZLOowkzfVGM",
   "michelinId": "67467",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Paco Roncero",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Gran Madrid tasting menu",

@@ -17,11 +17,8 @@
   "lng": 4.359821,
   "placeId": "ChIJY7sk7IDEw0cRa0IDhObt1Qs",
   "michelinId": "306344",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Karen Torosyan",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Menu Bozar, 7 gangen (menu Horta, 5 gangen, € 195, niet op vrijdag- en zaterdagavond)",
   "cuisineNl": "Modern Frans",
   "dinnerNoteFr": "Menu Bozar, 7 services (menu Horta, 5 services, 195 €, sauf vendredi et samedi soir)",

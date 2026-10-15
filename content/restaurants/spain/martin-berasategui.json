@@ -27,12 +27,8 @@
   "lng": -2.015721,
   "placeId": "ChIJdazzUbCxUQ0Rw9XhbhKiMKM",
   "michelinId": "220791",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Martín Berasategui",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 210,
   "menus": [
     {

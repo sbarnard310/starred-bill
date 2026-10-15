@@ -19,12 +19,8 @@
   "lng": -123.1007713,
   "placeId": "ChIJWx0eDi9zhlQRtAITySyE3oE",
   "michelinId": "1199269",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Gus Stieffenhofer-Brandson",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Harvest tasting menu",

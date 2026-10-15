@@ -21,11 +21,12 @@
   "placeId": "ChIJCbA4Ku4MhkcRDYaPQYuwaCI",
   "michelinId": "143798",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "gluten-free"
   ],
   "chef": "Antonino Cannavacciuolo",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "hotel": "the Villa Crespi hotel by Lake Orta",
   "menus": [
     {
@@ -92,5 +93,6 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -19,12 +19,12 @@
   "placeId": "ChIJiRZa7tiTuxQRfU1XBTgWeZk",
   "michelinId": "1208004",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Osman Sezener",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 5,350 itibarıyla)",
   "lunch": 6250,
   "lunchType": "menu",
@@ -77,5 +77,6 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

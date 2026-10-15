@@ -25,14 +25,8 @@
   "lng": 6.1445765,
   "placeId": "ChIJqWNssZePi0cRYwsMdWxrcZY",
   "michelinId": "324",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Franck Derouet",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Grande Fête menu",

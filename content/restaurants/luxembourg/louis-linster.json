@@ -19,10 +19,11 @@
   "placeId": "ChIJ-YMZHnc4lUcRtX0IuXdH_y8",
   "michelinId": "210667",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Louis Linster",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteFr": "Menu Signature, 8 séquences (menu 6 séquences 220 €)",
   "cuisineFr": "Cuisine française moderne",
   "dinnerNoteDe": "Signature-Menü, 8 Gänge (6-Gänge-Menü 220 €)",
@@ -67,5 +68,6 @@
   "bookingPhone": "+352 23 66 84 11",
   "duration": "About four hours for the menu.",
   "infoSource": "https://louis-linster.lu/fr/menu.html",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "dietsManual": true
 }

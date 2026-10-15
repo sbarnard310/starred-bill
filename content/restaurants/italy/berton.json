@@ -25,12 +25,8 @@
   "lng": 9.194416,
   "placeId": "ChIJfR0lDMzGhkcRouaRlwhGnMo",
   "michelinId": "429627",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Andrea Berton",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 110,
   "lunchWine": 110,
   "menus": [

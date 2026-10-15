@@ -28,12 +28,8 @@
   "lng": -71.2074279,
   "placeId": "ChIJA0DuLo-VuEwROC_CqXiojpI",
   "michelinId": "1215956",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Stéphane Modat",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "six-course tasting menu",

@@ -22,10 +22,11 @@
   "placeId": "ChIJCzCL8WFsBUgRQpVeWONFLTQ",
   "michelinId": "12407",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Mathieu Guibert",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 115,
   "menus": [
     {
@@ -88,5 +89,6 @@
       "url": "https://www.laliste.com/places/anne-de-bretagne-la-plaine-sur-mer-fr"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

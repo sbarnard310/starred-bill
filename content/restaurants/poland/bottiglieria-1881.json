@@ -18,11 +18,8 @@
   "lng": 19.9460552,
   "placeId": "ChIJOzG7EEJbFkcRa-v6voT78XY",
   "michelinId": "485985",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Przemysław Klima",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePl": "Menu degustacyjne (inne menu od PLN 940)",
   "noLunch": true,
   "lunchNote": "Dinner only",

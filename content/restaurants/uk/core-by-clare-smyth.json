@@ -23,12 +23,8 @@
   "lng": -0.2030649,
   "placeId": "ChIJVVU8V-IPdkgRzKjRtNrdvDw",
   "michelinId": "551291",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Clare Smyth",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Core Seasons tasting menu",

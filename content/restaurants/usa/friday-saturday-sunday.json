@@ -21,11 +21,8 @@
   "lng": -75.1760814,
   "placeId": "ChIJf7rSRDjGxokR1cJYp_u6uv8",
   "michelinId": "1213700",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Chad Williams",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "menus": [
     {
       "name": "Chef's tasting menu",

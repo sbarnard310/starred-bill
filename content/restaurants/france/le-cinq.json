@@ -24,11 +24,8 @@
   "lng": 2.3008612,
   "placeId": "ChIJqTQzIehv5kcRaF3hD1SzX5A",
   "michelinId": "6102",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "Christian Le Squer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "hotel": "the Four Seasons Hotel George V",
   "menus": [
     {

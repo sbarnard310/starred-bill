@@ -26,14 +26,11 @@
   "placeId": "ChIJV7QQ6kdZwokRax4615zpSGU",
   "michelinId": "69438",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Eric Ripert",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Chef's Tasting Menu",
@@ -183,5 +180,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

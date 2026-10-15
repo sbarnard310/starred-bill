@@ -24,10 +24,7 @@
   "placeId": "ChIJDaP2Ky4FdkgR7VspCxVWiDk",
   "michelinId": "214656",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal"
+    "vegetarian-menu"
   ],
   "chef": "Jean-Philippe Blondet",
   "chefSource": "press",
@@ -101,5 +98,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

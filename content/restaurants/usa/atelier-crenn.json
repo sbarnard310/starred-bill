@@ -24,10 +24,11 @@
   "michelinId": "325316",
   "diets": [
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Dominique Crenn",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "servicePct": 32,
   "starsSince": 2018,
   "dressCode": "Casual-elegant; a jacket isn't required, but dressing up is encouraged.",
@@ -74,5 +75,6 @@
   "photoSourceType": "commons",
   "photoWidth": 667,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

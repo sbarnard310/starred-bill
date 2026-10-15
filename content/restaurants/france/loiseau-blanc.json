@@ -27,11 +27,8 @@
   "lng": 2.2933134,
   "placeId": "ChIJZXST6-5v5kcR2yYcipYCUqA",
   "michelinId": "449125",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "David Bizet",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "menus": [
     {
       "name": "Great Journey tasting menu",

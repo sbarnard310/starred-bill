@@ -18,13 +18,8 @@
   "lng": 9.4462679,
   "placeId": "ChIJmdeEklvqhEcRnfl0CO7_szw",
   "michelinId": "179221",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
-  "chef": "Andreas Caminada",
-  "chefSource": "michelin",
+  "chef": "Andreas Caminada and Marcel Skibba",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 266)",
   "cuisineDe": "Kreativ",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 266)",

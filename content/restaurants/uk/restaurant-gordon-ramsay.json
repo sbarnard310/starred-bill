@@ -23,7 +23,6 @@
   "placeId": "ChIJkUBQqPAFdkgRtPhH7EIvzJU",
   "michelinId": "69945",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Kim Ratcharoen",
@@ -84,5 +83,6 @@
       "url": "https://www.laliste.com/places/gordon-ramsay-london-gb"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

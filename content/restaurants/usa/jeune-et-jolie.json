@@ -25,7 +25,7 @@
     "gluten-free"
   ],
   "chef": "Eric Bost",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "wine": 120,
   "menus": [
     {
@@ -63,5 +63,6 @@
       "url": "https://www.oadguides.com/lists/north-america/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "dietsManual": true
 }

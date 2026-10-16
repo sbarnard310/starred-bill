@@ -858,6 +858,13 @@ for _p in places.values():
              and _p["id"] in chain(c["id"])[1:] and _starred_ids(c) == _starred_ids(_p)]
     if len(_same) == 1:
         canonical_to[_p["id"]] = _same[0]
+# The other way round (16 Oct 2026): a region holding every one of its country's starred restaurants (South Australia,
+# from Australia's first guide) names the country's page, which is the one searched for, until the country has stars elsewhere.
+for _p in places.values():
+    if _p["type"] == "region" and _p["id"] not in canonical_to and starred_n[_p["id"]]:
+        _country = chain(_p["id"])[-1]
+        if _country != _p["id"] and _country not in canonical_to and _starred_ids(places[_country]) == _starred_ids(_p):
+            canonical_to[_p["id"]] = _country
 for _a, _b in CANONICAL_PLACES.items():
     if _a in places and _b in places:
         canonical_to[_a] = _b

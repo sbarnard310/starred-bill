@@ -51,8 +51,27 @@ STAR_WORD = {1: "one star", 2: "two stars", 3: "three stars"}
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 
+DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+THE_COUNTRIES = ("United Kingdom", "United States", "United Arab Emirates", "Netherlands", "Philippines")
+
+
 def long_date(d):
     return f"{int(d[8:10])} {MONTHS[int(d[5:7]) - 1]} {d[:4]}"
+
+
+def ceremony_day(d, year):
+    """"Monday 9 February", with the year only when it isn't the edition's ("Thursday 12 November 2026" for Italy 2027)."""
+    day = date.fromisoformat(d)
+    return f"{DAYS[day.weekday()]} {day.day} {MONTHS[day.month - 1]}" + ("" if d[:4] == str(year) else f" {d[:4]}")
+
+
+def in_sentence(name):
+    """A country's name mid-sentence: "the United Kingdom", "Ireland"."""
+    return "the " + name if name in THE_COUNTRIES else name
+
+
+def and_list(names):
+    return names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
 
 
 def km(a, b, c, d):
@@ -142,12 +161,11 @@ def kind_text(r):
     if k == "new":
         return "new, " + STAR_WORD.get(r["stars"], "")
     if k == "up":
-        return "up to " + STAR_WORD.get(r["stars"], "")
+        return "promoted to " + STAR_WORD.get(r["stars"], "")
     if k == "down":
         return "down to " + STAR_WORD.get(r["stars"], "")
-    if k == "lost":
-        return "lost its " + ("star" if (r.get("formerStars") or 1) == 1 else STAR_WORD[r["formerStars"]])
-    return "closed"
+    # Lost and closed ones are listed under their own heading, so the line only says what they had, when it was more than one star.
+    return "had " + STAR_WORD[r["formerStars"]] if (r.get("formerStars") or 1) > 1 else ""
 
 
 def edition(g):
@@ -169,13 +187,14 @@ def row_text(r, campaign, extra=""):
 
 
 def group_html(title, rows, more_url, campaign):
+    """A list of restaurants under its heading (none when title is empty: the section's own heading says it)."""
     if not rows:
         return "", ""
     shown = rows[:LIST_MAX]
-    h = (f'<h3 style="margin:18px 0 8px;font-size:15px;color:#12261C;">{html.escape(title)} ({len(rows)})</h3>'
-         '<ul style="margin:0;padding:0 0 0 18px;font-size:15px;line-height:1.4;color:#12261C;">'
+    h = ((f'<h3 style="margin:18px 0 8px;font-size:15px;color:#12261C;">{html.escape(title)} ({len(rows)})</h3>' if title else '<div style="height:12px;"></div>')
+         + '<ul style="margin:0;padding:0 0 0 18px;font-size:15px;line-height:1.4;color:#12261C;">'
          + "".join(row_html(r, campaign, x) for r, x in shown) + "</ul>")
-    t = f"\n\n{title} ({len(rows)}):\n" + "\n".join(row_text(r, campaign, x) for r, x in shown)
+    t = (f"\n\n{title} ({len(rows)}):\n" if title else "\n\n") + "\n".join(row_text(r, campaign, x) for r, x in shown)
     if len(rows) > len(shown):
         h += f'<p style="margin:4px 0 0;font-size:14px;"><a href="{html.escape(more_url)}" style="color:#1E6142;">and {len(rows) - len(shown)} more</a></p>'
         t += f"\nand {len(rows) - len(shown)} more: {more_url}"
@@ -225,28 +244,36 @@ def compose(member, data, chosen):
     campaign = "-".join(sorted({g["id"] for g in chosen}))
     lead_g = summaries[0][2] if summaries else near[0][2]
     guides_named = sorted({s[2]["id"]: s[2] for s in summaries}.values(), key=lambda g: g["last"], reverse=True) or [lead_g]
+    near_subject = f"A new Michelin star near {home}: {near[0][1]['name']}" if len(near) == 1 else f"{len(near)} new Michelin stars near {home}"
     if summaries:
-        subject = f"{edition(guides_named[0])}: what changed" + (f" in {summaries[0][1]}" if len({s[0] for s in summaries}) == 1 and len(guides_named) == 1 and len(guides_named[0]["countries"]) > 1 else "")
+        # The headline figures for the countries the member follows: "21 new stars in the United Kingdom, 12 lost or closed".
+        rs = [r for s in summaries for r in s[3]]
+        won = sum(r["kind"] in GAINED for r in rs)
+        gone = sum(r["kind"] in ("down", "lost", "closed") for r in rs)
+        where = (" in " + in_sentence(summaries[0][1])) if len({s[0] for s in summaries}) == 1 and len(guides_named) == 1 and len(guides_named[0]["countries"]) > 1 else ""
+        figures = [f"{won} new star{'s' if won != 1 else ''}" + where] if won else []
+        figures += [f"{gone} lost or closed" + ("" if won else where)] if gone else []
+        subject = near_subject if near else f"{edition(guides_named[0])}: " + (", ".join(figures) if figures else "what changed" + where)
         h1 = edition(guides_named[0]) if len(guides_named) == 1 else "New Michelin stars tonight"
     else:
-        subject = (f"A new Michelin star near {home}: {near[0][1]['name']}" if len(near) == 1 else f"{len(near)} new Michelin stars near {home}")
-        h1 = f"New Michelin stars near {home}"
-    intro = " ".join(f'The {g["name"]} revealed its {g.get("edition") or g["last"][:4]} stars on {long_date(g["last"])}.' for g in guides_named) \
+        subject = near_subject
+        h1 = f"A new Michelin star near {home}" if len(near) == 1 else f"New Michelin stars near {home}"
+    intro = " ".join(f'The {g["name"]} announced its {g.get("edition") or g["last"][:4]} stars on {ceremony_day(g["last"], g.get("edition") or g["last"][:4])}.' for g in guides_named) \
         + " Our pages now show every change, with what each menu costs."
     body_h, body_t = [], []
     if near:
-        title = f"New stars near {home}"
+        title = f"New stars near {home} ({len(near)})"
         rows = [(r, (f"{round(d)} km away" if d >= 1 else "")) for d, r, g in near]
-        h, t = group_html("Won or gained a star", rows, link(data["places"][member["home_place"]][1], campaign), campaign)
+        h, t = group_html("", rows, link(data["places"][member["home_place"]][1], campaign), campaign)
         body_h.append(f'<h2 style="margin:24px 0 4px;font-family:Georgia,serif;font-weight:normal;font-size:21px;color:#12261C;">{html.escape(title)}</h2>'
-                      f'<p style="margin:0;font-size:14px;color:#5A6E62;">Within {NEAR_KM} km of {html.escape(home)}.</p>' + h)
-        body_t.append(f"\n{title.upper()} (within {NEAR_KM} km)\n" + t)
+                      f'<p style="margin:0;font-size:14px;color:#5A6E62;">Won or gained a star within {NEAR_KM} km of {html.escape(home)}.</p>' + h)
+        body_t.append(f"\n{title.upper()}\nWon or gained a star within {NEAR_KM} km of {home}." + t)
     near_ids = {r["id"] for _, r, _ in near}
     for c, cname, g, rs in summaries:
         more = link(g["results"] or data["places"][c][1], campaign)
         # Those already listed near the home city aren't listed again, just counted.
         also = [r for r in rs if r["kind"] in GAINED and r["id"] in near_ids]
-        groups = [("Gained a star", [r for r in rs if r["kind"] in GAINED and r["id"] not in near_ids]), ("Dropped a star", [r for r in rs if r["kind"] == "down"]),
+        groups = [("New stars and promotions", [r for r in rs if r["kind"] in GAINED and r["id"] not in near_ids]), ("Dropped a star", [r for r in rs if r["kind"] == "down"]),
                   ("Lost its stars", [r for r in rs if r["kind"] == "lost"]), ("Closed", [r for r in rs if r["kind"] == "closed"])]
         parts = [group_html(t, [(r, "") for r in sorted(rows, key=lambda r: (-(r["stars"] or 0), r["name"]))], more, campaign) for t, rows in groups]
         title = cname if len(summaries) > 1 or len(g["countries"]) > 1 else "What changed"
@@ -256,10 +283,10 @@ def compose(member, data, chosen):
                       + "".join(p[0] for p in parts)
                       + (f'<p style="margin:8px 0 0;font-size:14px;color:#5A6E62;">{html.escape(plus)}</p>' if plus else "")
                       + f'<p style="margin:14px 0 0;"><a href="{html.escape(more)}" style="display:inline-block;background:#1E6142;color:#FFFFFF;text-decoration:none;font-weight:bold;font-size:15px;padding:11px 22px;border-radius:999px;">'
-                      + ("See every change" if g["results"] else f"See {html.escape(cname)}'s starred restaurants") + "</a></p>")
+                      + ("See every change" if g["results"] else f"See {html.escape(in_sentence(cname))}'s starred restaurants") + "</a></p>")
         body_t.append(f"\n{title.upper()}\n" + ("No restaurant there gained, lost or dropped a star this time.\n" if not rs else "") + "".join(p[1] for p in parts) + (f"\n{plus}" if plus else "") + f"\n\nSee every change: {more}")
     what = " and ".join(x for x in (("new stars near " + home) if member.get("near_home") and home else "",
-                                    ("ceremony-night summaries for " + ", ".join({c[0]: c[1] for c in data["countries"]}.get(c, c) for c in member.get("countries") or [])) if member.get("countries") else "") if x)
+                                    ("ceremony-night summaries for " + and_list([in_sentence({c[0]: c[1] for c in data["countries"]}.get(c, c)) for c in member.get("countries")])) if member.get("countries") else "") if x)
     unsub = f'{SITE}/unsubscribe/?t={member["token"]}'
     manage = f"{SITE}/account/#emails"
     footer_h = (f'You\'re getting this because you asked for {html.escape(what)} on your Starred Bill account. '

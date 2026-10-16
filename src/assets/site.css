@@ -377,6 +377,8 @@ select { padding: 12px 36px 12px 14px; border: 1px solid var(--line); border-rad
 .area-links a:hover { color: var(--green); text-decoration-color: currentColor; }
 .area-links .count { font-family: var(--font-num); font-size: .85rem; color: var(--green); white-space: nowrap; }
 .area-links .area-from { display: block; margin-top: 2px; color: var(--muted); font-size: .85rem; }
+.area-note { max-width: 70ch; margin: -8px 0 20px; color: var(--muted); }
+.area-note a { color: var(--green); font-weight: 600; text-underline-offset: 3px; }
 /* "By cuisine" and "By neighbourhood" on big city pages (build.py browse_html()): two to a row on phones. */
 .browse-links { columns: 4 150px; column-gap: 24px; }
 /* SEO pilot (pilot_sections() and quick_answer() in build.py): the short answer under the title, then the lists by star

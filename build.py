@@ -744,6 +744,17 @@ for pid, p in places.items():
     if p.get("localNoteChecked") and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", p["localNoteChecked"]):
         problem(where, "localNoteChecked must be a date like 2026-10-09")
 
+# A place's areas note (areasNote, areasNoteDe…, 16 Oct 2026): a hand-written sentence under "Starred restaurants, area by
+# area", for linking a page inside with the words people search for it, in a sentence rather than the list ("Sternerestaurants
+# in Stuttgart" from Baden-Württemberg, which Google showed ahead of Stuttgart's own page). {p:<place>|words} links a place.
+# Each language shows only its own (no English on the German page); drawn by area_note().
+AREA_NOTE_LINK = re.compile(r"\{p:([\w-]+)\|([^}]+)\}")
+for pid, p in places.items():
+    for field in [f for f in p if f == "areasNote" or f.startswith("areasNote")]:
+        for i, _ in AREA_NOTE_LINK.findall(p[field]):
+            if i not in places:
+                problem(f"places ({pid})", f"its {field} links {{p:{i}|…}}, which isn't a place file name")
+
 # News (14 Oct 2026, to-do item feature-news-section): short, dated stories about Michelin-starred restaurants (new and
 # lost stars on ceremony nights, closures and openings, chef moves, price rises, critics' lists, our own figures), one JSON
 # file per story in content/news/ (Pages CMS "News"), its name being the page's address (/news/<name>/). build_news() writes
@@ -1997,7 +2008,22 @@ def areas_html(p, lang):
                 + (f'<span class="area-from">{e(w["areaFrom"].replace("{p}", price))}</span>' if price else "") + "</li>")
     return ('<section id="areas">\n    <div class="wrap">\n      <div class="section-head"><div>'
             f'<span class="eyebrow">{e(word(lang, "explore", {}))}</span><h2 style="margin-top: 6px">{e(w["areasTitle"])}</h2></div></div>\n'
-            '      <ul class="area-links">' + "".join(item(q) for q in inside) + "</ul>\n    </div>\n  </section>\n")
+            + area_note(p, lang) + '      <ul class="area-links">' + "".join(item(q) for q in inside) + "</ul>\n    </div>\n  </section>\n")
+
+
+
+def area_note(p, lang):
+    """The place's areasNote in this language (see the loader), as a paragraph with its {p:<place>|words} links, else ""."""
+    sfx = "" if lang == "en" else lang[0].upper() + lang[1:]
+    text = p.get("areasNote" + sfx) or (p.get("areasNoteZh") if lang == "yue" else "")
+    if not text:
+        return ""
+
+    def link(m):
+        q = places[m.group(1)]
+        href = lang_path(q["path"], lang) if lang in place_langs(q) else q["path"]
+        return f'<a href="{href}">{m.group(2)}</a>'
+    return f'      <p class="area-note">{AREA_NOTE_LINK.sub(link, e(text))}</p>\n'
 
 
 # ---------- SEO pilot (7 Oct 2026) ----------

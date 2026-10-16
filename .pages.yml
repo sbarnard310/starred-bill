@@ -1860,6 +1860,14 @@ content:
         label: "Local note: day checked"
         description: "When the local note was last checked against the restaurants' websites, shown under it. A date like 2026-10-09."
         type: string
+      - name: areasNote
+        label: "Areas note (English, optional)"
+        description: "One sentence under \"Starred restaurants, area by area\", to link a page inside with the words people search for it. Write {p:stuttgart|Michelin star restaurants in Stuttgart} (a place's file name, then the link's words) to link a place."
+        type: text
+      - name: areasNoteDe
+        label: "Areas note (German, optional)"
+        description: "The same in German, e.g. {p:stuttgart|Sternerestaurants in Stuttgart}. Other languages use their own suffix (areasNoteFr, areasNoteIt…); a page shows only its own language's."
+        type: text
   - name: guides
     label: Guides
     description: Explainer articles at starredbill.com/guides/<file name>/. The file name is the page's address, so don't rename a published guide.

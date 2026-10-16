@@ -196,7 +196,10 @@ def link_checks(site):
             t, text = target(m.group(2)), re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", m.group(4)))).strip()
             if t is None or t.startswith("/guides/") and t == url:
                 continue
-            seen[t] += 1
+            # A restaurant without a page of its own links to its row on the town's page (/australia/south-australia/#r=esmay):
+            # each row is a different link for the reader, so only the same row twice counts as a repeat.
+            row = re.search(r"#r=([^\"&]+)", m.group(2))
+            seen[t + "#r=" + row.group(1) if row else t] += 1
             lead = prose[max(0, m.start() - 12):m.start()]
             if re.search(r"(?:<p[^>]*>|<li>|<h\d[^>]*>)\s*$", lead) or re.search(r"[.!?]\s+$", lead):
                 out["guide_link_starts_sentence"].append(f"{url}: {text}")

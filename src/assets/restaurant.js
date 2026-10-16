@@ -108,30 +108,47 @@ async function showPhoto() {
     return;
   }
   if (!PHOTOS_OK || !R.placeId) return;
+  // Pages released in waves (photoTap, 16 Oct 2026) fetch Google's photos only when "Show photos" is tapped.
+  if (R.photoTap) {
+    const btn = moreButton(0, async () => {
+      btn.disabled = true;
+      try {
+        const photos = await googlePhotos();
+        if (photos.length) { googleFigure(photos, btn); track("photos", { restaurant: R.id }); } else btn.remove();
+      } catch (e) { btn.remove(); }
+    });
+    btn.textContent = "Show photos";
+    btn.classList.add("rp-show-photos");
+    document.querySelector(".rp-side").prepend(btn);
+    return;
+  }
   try {
     const photos = await googlePhotos();
-    if (!photos.length) return;
-    shots = photos.slice(0, GALLERY_MAX + 1).map(googleShot);
-    const fig = document.createElement("figure");
-    fig.className = "rp-photo";
-    const open = document.createElement("button");
-    open.type = "button";
-    open.className = "rp-photo-open";
-    open.setAttribute("aria-label", "Open the photo of " + R.name + " full size");
-    const img = new Image();
-    img.alt = "Inside or outside " + R.name;
-    img.decoding = "async";
-    img.src = photos[0].getURI({ maxWidth: 900, maxHeight: 700 });
-    img.onload = () => fig.classList.add("loaded");
-    open.appendChild(img);
-    open.addEventListener("click", () => openPhoto(0));
-    fig.appendChild(open);
-    const cap = document.createElement("figcaption");
-    cap.innerHTML = "<span>Photo: " + shots[0].caption + "</span>";
-    if (shots.length > 1) cap.appendChild(moreButton(shots.length - 1, (btn) => showGallery(btn, shots.slice(1), 1)));
-    fig.appendChild(cap);
-    document.querySelector(".rp-side").prepend(fig);
+    if (photos.length) googleFigure(photos);
   } catch (e) { /* no photo: the receipt stands alone */ }
+}
+// The first Google photo beside the receipt, with its credit and "More photos" for the rest; in place of `swap` if given.
+function googleFigure(photos, swap) {
+  shots = photos.slice(0, GALLERY_MAX + 1).map(googleShot);
+  const fig = document.createElement("figure");
+  fig.className = "rp-photo";
+  const open = document.createElement("button");
+  open.type = "button";
+  open.className = "rp-photo-open";
+  open.setAttribute("aria-label", "Open the photo of " + R.name + " full size");
+  const img = new Image();
+  img.alt = "Inside or outside " + R.name;
+  img.decoding = "async";
+  img.src = photos[0].getURI({ maxWidth: 900, maxHeight: 700 });
+  img.onload = () => fig.classList.add("loaded");
+  open.appendChild(img);
+  open.addEventListener("click", () => openPhoto(0));
+  fig.appendChild(open);
+  const cap = document.createElement("figcaption");
+  cap.innerHTML = "<span>Photo: " + shots[0].caption + "</span>";
+  if (shots.length > 1) cap.appendChild(moreButton(shots.length - 1, (btn) => showGallery(btn, shots.slice(1), 1)));
+  fig.appendChild(cap);
+  if (swap) swap.replaceWith(fig); else document.querySelector(".rp-side").prepend(fig);
 }
 
 // ---------- Map ----------

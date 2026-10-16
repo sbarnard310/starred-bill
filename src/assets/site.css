@@ -1965,6 +1965,7 @@ button.near-card:hover { border-color: var(--green); }
 .rp-photo-open { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: var(--radius); }
 .rp-photo figcaption { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
 .rp-more-photos { padding: 4px 12px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--band-ink) 30%, transparent); background: none; color: var(--band-ink); font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer; }
+.rp-show-photos { justify-self: start; }  /* wave pages' photo, loaded only when tapped (restaurant.js) */
 .rp-more-photos:hover { background: color-mix(in srgb, var(--band-ink) 10%, transparent); }
 .rp-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; flex-basis: 100%; width: 100%; margin-top: 4px; }
 .rp-gallery button { padding: 0; border: 0; border-radius: 6px; overflow: hidden; aspect-ratio: 4 / 3; background: color-mix(in srgb, var(--band-ink) 10%, transparent); cursor: zoom-in; }

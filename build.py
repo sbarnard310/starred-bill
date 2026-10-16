@@ -3350,7 +3350,7 @@ def home_sample_html(starred):
     visitor sees what the site does before reading a word. home.js shows one at random and steps through the rest."""
     full = [r for r in starred if r.get("page") and r.get("dinner") is not None and r.get("dinnerType", "menu") == "menu"
             and r.get("wine") and r.get("lunch") is not None]
-    full.sort(key=lambda r: (-r["stars"], RESTAURANT_PAGES.index(r["id"])))
+    full.sort(key=lambda r: (-r["stars"], PAGE_ORDER[r["id"]]))
     def one(i, r):
         where = home_where(r)
         kind = service_of(r)[0]
@@ -3503,7 +3503,7 @@ def home_browse_html():
     cuisine = sorted((p for p in pages if p["type"] == "cuisine" and starred_n.get(p["id"])), key=lambda p: -starred_n[p["id"]])
     cuisines = "".join(f'<li><a href="{p["path"]}" data-home="cuisine">{e(p["name"])} in {e(places[p["parent"]]["name"])}</a>'
                        f'<span class="count">{starred_n[p["id"]]}</span></li>' for p in cuisine)
-    own = sorted((r for r in restaurants if r.get("page")), key=lambda r: RESTAURANT_PAGES.index(r["id"]))[:HOME_RESTAURANTS]
+    own = sorted((r for r in restaurants if r.get("page")), key=lambda r: PAGE_ORDER[r["id"]])[:HOME_RESTAURANTS]
     rests = "".join(f'<li><a href="{e(r["page"])}" data-home="restaurant">{e(r["name"])}</a> {star_icons(r["stars"])}'
                     f'<span class="sr-only">{STAR_WORDS[r["stars"]]} stars</span><span class="count">{e(home_where(r))}</span></li>' for r in own)
     lists = "".join(f'<li><a href="/guides/{gid}/" data-home="list">{e(label)}</a></li>' for gid, label in HOME_LISTS if gid in guides)
@@ -7125,8 +7125,32 @@ SERVICE_SAYS = {"before": "before service", "included": "including service", "pl
                 "taxtip": "before tax and tip", "tip": "before tip", "tax": "including tax", "plustax": "including the tip, before tax"}
 SERVICE_ADDS = {"before": "service", "plusplus": "service and tax", "taxtip": "tax and tip", "tip": "a tip", "plustax": "tax"}
 
+# Round 2 (16 Oct 2026, owner's choice): every other starred restaurant with a price gets a simpler page (the same template,
+# without hand-researched menus or booking rules), released in waves so Google isn't handed thousands of new pages at once.
+# content/restaurant-pages.json lists each wave's restaurants and the day it goes live (`from`): the first build on or after
+# that day publishes it. Two- and three-stars first, then one-stars by Google review count, 300 a week until 25 Dec 2026.
+# scripts/restaurant_waves.py lists them and adds restaurants that qualify later (new stars, new prices) to a wave. Their
+# Google photo waits for a tap (`photoTap`, restaurant.js) and they have no link-preview picture of their own (og_image()).
+WAVES = json.loads((CONTENT / "restaurant-pages.json").read_text(encoding="utf-8"))["waves"]
+WAVE_DAY = {}  # restaurant id -> the day its wave went live, for wave pages already live, in wave order
+_ids, _in_wave = {r["id"] for r in restaurants}, set()
+for _w in sorted(WAVES, key=lambda w: w["from"]):
+    for _i in _w["ids"]:
+        if _i not in _ids or _i in RESTAURANT_PAGES or _i in _in_wave:
+            print(f"content/restaurant-pages.json: {_i} (wave of {_w['from']}) is " + ("not a restaurant file" if _i not in _ids
+                  else "already in RESTAURANT_PAGES" if _i in RESTAURANT_PAGES else "in more than one wave") + "; take it out")
+            sys.exit(1)
+        _in_wave.add(_i)
+        if _w["from"] <= date.today().isoformat():
+            WAVE_DAY[_i] = _w["from"]
+PAGE_ORDER = {i: n for n, i in enumerate(RESTAURANT_PAGES + tuple(WAVE_DAY))}  # researched pages first, then waves in order
+_waiting = [r["id"] for r in restaurants if r.get("stars") and not r.get("status") and not r.get("notice") and r["id"] not in RESTAURANT_PAGES
+            and r["id"] not in _in_wave and (r.get("dinner") is not None or r.get("lunch") is not None)]
+if _waiting:
+    print(f"  {len(_waiting)} starred restaurant(s) with a price have no page and aren't in a wave ({', '.join(_waiting[:8])}"
+          f"{'…' if len(_waiting) > 8 else ''}): run python3 scripts/restaurant_waves.py add")
 for _r in restaurants:
-    if _r["id"] in RESTAURANT_PAGES and not _r.get("status"):
+    if _r["id"] in PAGE_ORDER and not _r.get("status"):
         _r["page"] = f"/restaurants/{_r['id']}/"
 for _p in places.values():
     if _p["path"].startswith("/restaurants/"):
@@ -8008,6 +8032,7 @@ def build_restaurant_pages():
         data = {"currencies": CURRENCIES, "languages": DEFAULT_LANGUAGES, "knownIds": None, "cur": cur, "switchable": currency_data.get("switchable", []),
                 "restaurant": {"id": r["id"], "name": r["name"], "stars": r["stars"], "lat": r.get("lat"), "lng": r.get("lng"), "placeId": r.get("placeId"),
                                **({"photo": r["photo"], "photoCreditHtml": own_credit(r, None)} if r.get("photo") else {}),
+                               **({"photoTap": True} if r["id"] in WAVE_DAY else {}),
                                **({"bw": bw_public(r["bookingWindow"])} if r.get("bookingWindow") else {})},
                 "nearby": [{"name": q["name"], "stars": q["stars"], "lat": q["lat"], "lng": q["lng"], "href": restaurant_href(q),
                             "dinner": money(q["dinner"], q["cur"]) if q.get("dinner") is not None else ""} for km, q in near]}
@@ -8206,7 +8231,7 @@ def sitemap_dates():
     out["/privacy/"] = days.get("src/privacy.html")
     for r in restaurants:
         if r.get("page"):
-            out[r["page"]] = days.get(source_files[r["id"]])
+            out[r["page"]] = max(filter(None, (days.get(source_files[r["id"]]), WAVE_DAY.get(r["id"]))), default=None)
     return out
 
 

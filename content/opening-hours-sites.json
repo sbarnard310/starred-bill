@@ -1,5 +1,5 @@
 {
-"checked": "2026-10-15",
+"checked": "2026-10-16",
 "source": "Restaurants' own websites",
 "hours": {
 "11-woodfire": "1200-0000;1200-0000;1200-0000;1200-0000;1200-0000;1200-0000;1200-0000",
@@ -53,10 +53,13 @@
 "anpeiji": "1200-1500,1800-2100;1200-1500,1800-2100;;;1200-1500,1800-2100;1200-1500,1800-2100;1200-1500,1800-2100",
 "ansitz-12": ";;1800-2300;1800-2300;1200-1430,1800-2300;1200-1430,1800-2300;",
 "antica-corte-pallavicina": ";1900-2200;1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
+"anvers": ";;;1200-1400;1200-1400;1200-1400;1200-1400",
 "apotheose": ";1800-2230;1800-2230;1800-2230;1800-2230;1800-2230;",
+"aptos": ";;;1900-2200;1900-2200;1200-1400,1900-2200;1200-1400",
 "ar-men-du": ";;1930-2100;1230-1330,1930-2100;1230-1330,1930-2100;1230-1330,1930-2100;",
 "archibald-de-prince": ";;;1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
 "arco-by-paco-perez": ";1700-0000;1700-0000;1700-0000;1700-0000;1700-0000;",
+"arkhe": ";;1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
 "armani-ristorante": ";;1930-2230;1930-2230;1230-1430,1930-2230;1230-1430,1930-2230;1230-1430,1930-2230",
 "asahina-gastronome": "1800-2230;;;1800-2230;1800-2230;1200-1530,1800-2230;1200-1530,1800-2230",
 "aska-regensburg": ";1830-0000;1830-0000;1830-0000;1830-0000;1830-0000;",
@@ -73,6 +76,7 @@
 "auberge-du-vieux-puits": ";;2000-2130;1200-1330,2000-2130;1200-1330,2000-2130;1200-1330,2000-2130;1200-1330",
 "auberge-saint-laurent": ";;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
 "auntie-gaik-leans-old-school-eatery": ";;1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130",
+"aurora-at-ila": ";;;;1900-2200;1900-2200;",
 "aux-terrasses": ";1200-1400,1900-2200;1200-1400,1900-2200;1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;",
 "ayanokoji-karatsu": "1200-1400,1730-2200;1200-1400,1730-2200;1200-1400,1730-2200;1200-1400,1730-2200;1200-1400,1730-2200;1200-1400,1730-2200;",
 "azabu-kadowaki": "1730-2200;1730-2200;1730-2200;1730-2200;1730-2200;1730-2200;",
@@ -234,6 +238,7 @@
 "enyuan-kobayashi": ";;1730-2200;1730-2200;1730-2200;1730-2200;1730-2200",
 "epicures": ";;1800-2230;1800-2230;1800-2230;1800-2230;",
 "erre": ";;1930-2100;1930-2100;1930-2100;1200-1300,1930-2100;1200-1300",
+"esmay": ";;1730-2030;1730-2030;1730-2030;1730-2030;1200-1530",
 "espadon": ";1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;",
 "esperit-roca": "1300-1430;;;1930-2130;1300-1430,1930-2130;1300-1430,1930-2130;1300-1430",
 "esquisse": "1200-1500,1800-2200;1200-1500,1800-2200;;;1200-1500,1800-2200;1200-1500,1800-2200;1200-1500,1800-2200",
@@ -344,6 +349,7 @@
 "hatter": "1830-2300;;1830-2300;1830-2300;1830-2300;1830-2300;1830-2300",
 "henne-kirkeby-kro": ";;1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;",
 "henrique-sa-pessoa": ";1830-2200;1830-2200;1200-1400,1830-2200;1200-1400,1830-2200;1200-1400,1830-2200;",
+"hentley-farm": ";;;1200-1400;1200-1400;1200-1400;1200-1400",
 "her-place-supper-club": "1800-2030;1800-2030;1800-2030;1800-2030;1800-2030;;",
 "heritage-by-kei-kobayashi": "1200-1600,1800-2230;;;1200-1600,1800-2230;1200-1600,1800-2230;1200-1600,1800-2230;1200-1600,1800-2230",
 "heurigenhof-brundlmayer": ";;1800-2100;1800-2100;1800-2100;1200-1400,1800-2100;1200-1400,1800-2100",
@@ -642,8 +648,10 @@
 "lukas-kapeller": ";;;1900-2200;1900-2200;1900-2200;",
 "lung-king-heen": "1200-1430,1800-2100;1200-1430,1800-2100;1200-1430,1800-2100;1200-1430,1800-2100;1200-1430,1800-2100;1130-1500,1800-2100;1130-1500,1800-2100",
 "lurra": ";;1730-2100;1730-2100;1730-2100;1730-2100;1730-2100",
+"lvn-bird-in-hand": "1200-1330;;;;1200-1330;1200-1330;1200-1330",
 "lympstone-manor": "1200-1430,1830-2130;1200-1430,1830-2130;1200-1430,1830-2130;1200-1430,1830-2130;1200-1430,1830-2130;1200-1430,1830-2130;1200-1430,1830-2130",
 "maerge": "1200-1500,1800-2300;1200-1500,1800-2300;1200-1500,1800-2300;1200-1500,1800-2300;1200-1500,1800-2300;1200-1500,1800-2300;",
+"magill-estate-restaurant": ";;1900-2200;1900-2200;1900-2200;1200-1400,1900-2200;1200-1400",
 "maihofli-by-uniquisine": ";;1130-1430,1830-2300;1130-1430,1830-2300;1130-1430,1830-2300;1130-1430,1830-2300;",
 "maison-aribert": ";;1900-2200;1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400",
 "maison-caillet": "1200-1400,1900-2200;;;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400",
@@ -671,6 +679,7 @@
 "matsuki": "1800-2200;1200-1430,1800-2200;1200-1430,1800-2200;1200-1430,1800-2200;1200-1430,1800-2200;1200-1430,1800-2200;",
 "matsuzushi-tanigawa": ";;1200-1430,1800-2030;1200-1430,1800-2030;1200-1430,1800-2030;1200-1430,1800-2030;1200-1430,1800-2030",
 "max-cekot-kitchen": ";;;1800-2300;1800-2300;1800-2300;",
+"maxwell-restaurant": ";;;;1200-1400;1200-1400,1900-2200;1200-1400",
 "maz": "1700-2300;1700-2300;1700-2300;1700-2300;1700-2300;1200-1600,1800-2300;1200-1600,1800-2300",
 "meet-the-bund-zhongshan-dong-er-road": "1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100",
 "meisenheimer-hof": ";1800-2200;1800-2200;1800-2200;1200-1430,1800-2200;1200-1430,1800-2200;",
@@ -816,6 +825,7 @@
 "ren-mishina": ";1700-2200;1700-2200;1700-2200;1700-2200;1200-1500,1700-2200;",
 "restaurant-12": ";;1730-2200;1730-2200;1730-2200;1730-2200;1730-2200",
 "restaurant-212": ";1830-2100;1200-1330,1830-2100;1200-1330,1830-2100;1200-1330,1830-2100;1200-1330,1830-2100;",
+"restaurant-botanic": ";;;1900-2200;1900-2200;1200-1400,1900-2200;1200-1400",
 "restaurant-de-kas": "1200-1345,1800-2100;1200-1345,1800-2100;1200-1345,1800-2100;1200-1345,1800-2100;1200-1345,1800-2100;1200-1345,1800-2100;",
 "restaurant-de-lhotel-de-ville": "1200-1400;;;1200-1500,1830-2130;1200-1500,1830-2130;1200-1500,1830-2130;1200-1500,1830-2130",
 "restaurant-gordon-ramsay": ";1200-1330,1800-2115;1200-1330,1800-2115;1200-1330,1800-2115;1200-1330,1800-2115;1200-1330,1800-2115;",
@@ -894,6 +904,7 @@
 "sincere": "1800-2130;1800-2130;1800-2130;1800-2130;1800-2130;1800-2130;",
 "sixty-three-clinton": ";1800-2300;1800-2300;1800-2300;1800-2300;1800-2300;",
 "sk-mat-manniskor": "1700-0000;1700-0000;1700-0000;1700-0000;1700-0000;1700-0000;",
+"skillogalee-barrel-house": "1130-1430;1130-1430;1130-1430;1130-1430;1130-1430;1130-1430,1900-2200;1130-1430",
 "smoked-room": ";;1330-1600,2030-0000;1330-1600,2030-0000;1330-1600,2030-0000;1330-1600,2030-0000;",
 "sojiki-nakahigashi": ";1200-1530,1800-2130;1200-1530,1800-2130;1200-1530,1800-2130;1200-1530,1800-2130;1200-1530,1800-2130;1200-1530,1800-2130",
 "sokkon-fujimoto": "1200-1430,1800-2100;1200-1430,1800-2100;;1200-1430,1800-2100;1200-1430,1800-2100;1200-1430,1800-2100;1200-1430,1800-2100",
@@ -1336,8 +1347,16 @@
 "url": "https://www.anticacortepallavicinarelais.it/",
 "type": "site"
 },
+"anvers": {
+"url": "https://www.anvers.com.au/pages/restaurant",
+"type": "site"
+},
 "apotheose": {
 "url": "https://apotheose.jp/",
+"type": "site"
+},
+"aptos": {
+"url": "https://restaurantaptos.com/pages/contact",
 "type": "site"
 },
 "ar-men-du": {
@@ -1350,6 +1369,10 @@
 },
 "arco-by-paco-perez": {
 "url": "https://www.oliviastar.pl/restauracje/arco-by-paco-perez/",
+"type": "site"
+},
+"arkhe": {
+"url": "https://www.arkhe.com.au/",
 "type": "site"
 },
 "armani-ristorante": {
@@ -1415,6 +1438,10 @@
 "auntie-gaik-leans-old-school-eatery": {
 "url": "https://inline.app/booking/-OnKy8jPaRn_LUmJ5tDV:inline-live-4/-OnKy8r2gI9_CX8R2D7X",
 "type": "other"
+},
+"aurora-at-ila": {
+"url": "https://www.auroraadl.com.au/",
+"type": "site"
 },
 "aux-terrasses": {
 "url": "https://www.aux-terrasses.com/fr/restaurant-gastronomique-tournus/",
@@ -2060,6 +2087,10 @@
 "url": "https://roncemay.com/fr/restaurant-erre.html",
 "type": "hotel"
 },
+"esmay": {
+"url": "https://esmay.com.au/about/",
+"type": "site"
+},
 "espadon": {
 "url": "https://www.journaldespalaces.com/communique-69796-france-gastronomie-le-restaurant-espadon-recompense-d-une-etoile-par-le-guide-michelin.html",
 "type": "other"
@@ -2499,6 +2530,10 @@
 "henrique-sa-pessoa": {
 "url": "https://www.sevenrooms.com/explore/henriquespessoarestaurant/reservations/create/search/",
 "type": "other"
+},
+"hentley-farm": {
+"url": "https://hentleyfarm.com.au/pages/restaurant",
+"type": "site"
 },
 "her-place-supper-club": {
 "url": "https://www.herplacephilly.com/location/her-place/",
@@ -3692,12 +3727,20 @@
 "url": "https://lurrakyoto.com/",
 "type": "site"
 },
+"lvn-bird-in-hand": {
+"url": "https://bookings.nowbookit.com/?accountid=a1a77bfa-c7e3-47c7-a958-1ee07617aa30&venueid=11217",
+"type": "other"
+},
 "lympstone-manor": {
 "url": "https://www.sevenrooms.com/reservations/lympstonemanor",
 "type": "other"
 },
 "maerge": {
 "url": "https://maerge.tokyo/access/",
+"type": "site"
+},
+"magill-estate-restaurant": {
+"url": "https://magillestaterestaurant.com/",
 "type": "site"
 },
 "maihofli-by-uniquisine": {
@@ -3806,6 +3849,10 @@
 },
 "max-cekot-kitchen": {
 "url": "https://maxcekot.com/en/",
+"type": "site"
+},
+"maxwell-restaurant": {
+"url": "https://maxwellwines.com.au/pages/restaurant",
 "type": "site"
 },
 "maz": {
@@ -4388,6 +4435,10 @@
 "url": "https://www.212.amsterdam/restaurant-212",
 "type": "site"
 },
+"restaurant-botanic": {
+"url": "https://restaurantbotanic.com.au/contact/",
+"type": "site"
+},
 "restaurant-de-kas": {
 "url": "https://restaurantdekas.com/eng/info",
 "type": "site"
@@ -4698,6 +4749,10 @@
 },
 "sk-mat-manniskor": {
 "url": "https://skmat.se/kontakt/",
+"type": "site"
+},
+"skillogalee-barrel-house": {
+"url": "https://www.skillogalee.com.au/barrel-house",
 "type": "site"
 },
 "smoked-room": {
@@ -5653,11 +5708,15 @@
 "allium-at-askham-hall",
 "alpenblick",
 "antica-corte-pallavicina",
+"anvers",
+"aptos",
 "archibald-de-prince",
+"arkhe",
 "auberge-de-clochemerle",
 "auberge-de-la-grive",
 "auberge-des-templiers",
 "auberge-saint-laurent",
+"aurora-at-ila",
 "aux-terrasses",
 "ballyfin",
 "barley-swine",
@@ -5704,6 +5763,7 @@
 "hambleton-hall",
 "harbor-house-inn",
 "henne-kirkeby-kro",
+"hentley-farm",
 "hilda-and-jesse",
 "hiroo-ishizaka",
 "humble-chicken",
@@ -5742,10 +5802,12 @@
 "louis-restaurant",
 "lowen-apriori",
 "lukas-kapeller",
+"magill-estate-restaurant",
 "maison-aribert",
 "maison-caillet",
 "maison-decoret",
 "mashiro",
+"maxwell-restaurant",
 "miyamaso",
 "ml",
 "molino-de-urdaniz-urdaitz",
@@ -5760,6 +5822,7 @@
 "poggio-rosso",
 "rakushin",
 "rar-fine-dining",
+"restaurant-botanic",
 "restaurant-papilio",
 "rossellinis",
 "rouge-noir",
@@ -5767,6 +5830,7 @@
 "schloss-schauenstein",
 "schwarzer-hahn",
 "sherwood",
+"skillogalee-barrel-house",
 "sonnenberg-le-soir",
 "sosuheon",
 "sud-777",

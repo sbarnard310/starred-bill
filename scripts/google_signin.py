@@ -7,8 +7,9 @@ Used instead of a service account key, which Google blocks on this project. It n
 client from the Google Cloud project, saved as ~/starred-bill-research/keys/google-oauth-client.json (or the
 path in config.json's "google_oauth"). It opens the sign-in page in the browser, catches Google's reply on
 127.0.0.1, and keeps the refresh token in the Mac's Keychain as "starredbill-google", where
-morning_figures.py reads it. Run it again if Google ever asks to sign in afresh.
-Standard library only, Python 3.9.
+morning_figures.py reads it. Run it again if Google ever asks to sign in afresh, then copy the new token to the
+cloud routines' environment settings too (~/starred-bill-research/keys/copy-cloud-keys.py puts all the keys on the
+clipboard). Standard library only, Python 3.9.
 """
 import base64
 import hashlib

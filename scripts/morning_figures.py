@@ -36,6 +36,10 @@ service account keys on this project. A service account key at "google_key" stil
 JWT is signed with the Mac's own openssl, so no extra libraries are needed. Umami is read
 through the website's share link ("umami_share": the code after /share/, sharing Overview and Events), as
 Umami's free plan has no API keys; with a paid plan, an API key in the Keychain ("starredbill-umami") works too.
+Where there's no Keychain (the cloud routines), environment variables stand in for the Keychain items (KEYCHAIN_ENV:
+STARREDBILL_GOOGLE_REFRESH_TOKEN, STARREDBILL_BING_KEY, STARREDBILL_UMAMI_KEY), STARREDBILL_GOOGLE_CLIENT_ID and
+STARREDBILL_GOOGLE_CLIENT_SECRET for the Desktop client file, and STARREDBILL_RESEARCH for ~/starred-bill-research
+(the cloud routines point it at their checkout of the private records repository).
 Standard library only, Python 3.9.
 """
 import base64
@@ -54,7 +58,8 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-CONFIG = Path.home() / "starred-bill-research" / "figures" / "config.json"
+RESEARCH = Path(os.environ.get("STARREDBILL_RESEARCH") or Path.home() / "starred-bill-research").expanduser()
+CONFIG = RESEARCH / "figures" / "config.json"
 SITE = "https://starredbill.com"
 # The SEO plan's aims for 31 Jan 2027 (https://claude.ai/code/artifact/8ee24d0c-b566-4b4b-bead-f87d25a46122).
 SEO_AIMS = {"by": "2027-01-31", "pages_indexed": 400, "weekly_impressions": 10000, "linking_sites": 20,
@@ -62,7 +67,7 @@ SEO_AIMS = {"by": "2027-01-31", "pages_indexed": 400, "weekly_impressions": 1000
 INDEX_BUDGET = 300   # sitemap pages re-inspected a day, besides the key pages (Google allows 2,000 a day)
 # Monthly search volumes come from the Ahrefs snapshot of 7 Oct 2026 (the subscription has ended; Search Console
 # gives no volumes). Searches it doesn't hold have no volume.
-AHREFS = Path.home() / "starred-bill-research" / "ahrefs" / "2026-10-07"
+AHREFS = RESEARCH / "ahrefs" / "2026-10-07"
 # Search Console's 3-letter country codes: the 2-letter code Ahrefs uses, and the name for the report.
 COUNTRIES = {
     "usa": ("us", "United States"), "gbr": ("gb", "United Kingdom"), "can": ("ca", "Canada"), "aus": ("au", "Australia"),
@@ -144,27 +149,49 @@ def b64(raw):
     return base64.urlsafe_b64encode(raw).rstrip(b"=").decode()
 
 
+# The environment variable that stands in for each Keychain item where there's no Keychain (the cloud routines).
+KEYCHAIN_ENV = {"starredbill-google": "STARREDBILL_GOOGLE_REFRESH_TOKEN", "starredbill-bing": "STARREDBILL_BING_KEY",
+                "starredbill-umami": "STARREDBILL_UMAMI_KEY"}
+
+
 def keychain(service):
-    return subprocess.run(["security", "find-generic-password", "-s", service, "-w"],
-                          capture_output=True, text=True).stdout.strip()
+    """A key from its environment variable (KEYCHAIN_ENV), or else from the Mac's Keychain."""
+    if os.environ.get(KEYCHAIN_ENV.get(service, "")):
+        return os.environ[KEYCHAIN_ENV[service]].strip()
+    try:
+        return subprocess.run(["security", "find-generic-password", "-s", service, "-w"],
+                              capture_output=True, text=True).stdout.strip()
+    except OSError:     # no Keychain (not a Mac)
+        return ""
+
+
+def oauth_client(cfg):
+    """The Desktop OAuth client's id and secret: from STARREDBILL_GOOGLE_CLIENT_ID/_SECRET, else the client file at
+    "google_oauth"; None if neither."""
+    env = {"client_id": os.environ.get("STARREDBILL_GOOGLE_CLIENT_ID", "").strip(),
+           "client_secret": os.environ.get("STARREDBILL_GOOGLE_CLIENT_SECRET", "").strip()}
+    if env["client_id"] and env["client_secret"]:
+        return env
+    oauth = cfg.get("google_oauth")
+    if not (oauth and Path(os.path.expanduser(oauth)).exists()):
+        return None
+    client = json.loads(Path(os.path.expanduser(oauth)).read_text())
+    return client.get("installed") or client.get("web") or client
 
 
 def google_ready(cfg):
     """True if either Google sign-in is set up: a service account key, or the owner's own sign-in."""
     if cfg.get("google_key") and Path(os.path.expanduser(cfg["google_key"])).exists():
         return True
-    oauth = cfg.get("google_oauth")
-    return bool(oauth and Path(os.path.expanduser(oauth)).exists() and keychain("starredbill-google"))
+    return bool(oauth_client(cfg) and keychain("starredbill-google"))
 
 
 def google_token(cfg, scope):
     """An access token: from the owner's own sign-in (scripts/google_signin.py, refresh token in the Keychain)
     when set up, else from a service account key, its JWT signed with openssl (no third-party libraries)."""
-    oauth = cfg.get("google_oauth")
-    refresh = keychain("starredbill-google") if oauth else ""
-    if refresh and Path(os.path.expanduser(oauth)).exists():
-        client = json.loads(Path(os.path.expanduser(oauth)).read_text())
-        client = client.get("installed") or client.get("web") or client
+    client = oauth_client(cfg)
+    refresh = keychain("starredbill-google") if client else ""
+    if refresh:
         form = urllib.parse.urlencode({"grant_type": "refresh_token", "refresh_token": refresh,
                                        "client_id": client["client_id"], "client_secret": client["client_secret"]}).encode()
         req = urllib.request.Request("https://oauth2.googleapis.com/token", data=form,
@@ -595,8 +622,7 @@ def umami(cfg):
         auth = dict(browser, **{"x-umami-share-token": share["token"], "x-umami-share-context": "1"})
         base, page_type = f"{gateway}/websites/{site}", "path"
     else:
-        key = subprocess.run(["security", "find-generic-password", "-s", "starredbill-umami", "-w"],
-                             capture_output=True, text=True).stdout.strip()
+        key = keychain("starredbill-umami")
         if not key:
             raise RuntimeError("not set up: no Umami share link in config.json and no API key in the Keychain")
         auth = dict(browser, **{"x-umami-api-key": key})

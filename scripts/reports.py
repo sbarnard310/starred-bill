@@ -13,10 +13,13 @@
 The weekly review: for each pending report, check the restaurant's own website (then booking sites) before changing
 anything. Where the member's report is the only source for a price, set the price's sourceType to "member" and its
 sourceDate (lunchSourceType/lunchSourceDate for lunch) to the month they saw it, e.g. "2026-10"; never their name.
-Calls go to the report-photos Supabase function with the review token from the Keychain ("starredbill-review").
+Calls go to the report-photos Supabase function with the review token from the Keychain ("starredbill-review"), or
+from the environment variable STARREDBILL_REVIEW_TOKEN where there's no Keychain (the cloud routine, which also sets
+STARREDBILL_REPORT_PHOTOS to a folder outside any repository, so members' photos are never committed).
 Standard library only, Python 3.9.
 """
 import json
+import os
 import subprocess
 import sys
 import urllib.request
@@ -24,11 +27,13 @@ from pathlib import Path
 
 FUNCTION = "https://uvdaclbhskkukyngikhq.supabase.co/functions/v1/report-photos"
 ROOT = Path(__file__).resolve().parent.parent
-PHOTOS = Path.home() / "starred-bill-research" / "reports"
+PHOTOS = Path(os.environ.get("STARREDBILL_REPORT_PHOTOS") or Path.home() / "starred-bill-research" / "reports")
 KIND = {"price": "Price", "closed": "Closed", "chef": "New chef", "other": "Something else"}
 
 
 def token():
+    if os.environ.get("STARREDBILL_REVIEW_TOKEN"):
+        return os.environ["STARREDBILL_REVIEW_TOKEN"].strip()
     return subprocess.run(["security", "find-generic-password", "-s", "starredbill-review", "-w"],
                           capture_output=True, text=True, check=True).stdout.strip()
 

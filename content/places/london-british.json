@@ -3,7 +3,7 @@
   "type": "cuisine",
   "parent": "london",
   "name": "British",
-  "topic": "British Michelin star restaurants",
+  "topic": "British restaurants with Michelin stars",
   "cuisines": [
     "British"
   ]

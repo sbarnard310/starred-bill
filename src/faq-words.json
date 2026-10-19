@@ -239,6 +239,8 @@
   "cpQCheap": "Which is the cheapest of the {topic} {in}?",
   "cpQDear": "Which is the most expensive of the {topic} {in}?",
   "cpADear": "The most expensive dinner menu is at {r}: {price} per person.",
+  "cpAll": "For every cuisine, see all {all} {link}.",
+  "cpAllLink": "Michelin star restaurants {in}",
   "cerTextNoUsual": "The stars {in} come from the {guide}, revealed once a year."
  },
  "zh": {

@@ -2307,6 +2307,11 @@ def cuisine_answer(p, lang, starred):
     if best:
         r, f = best
         out.append(say("qaCheap" + ("Lunch" if f == "lunch" else "Dinner"), r=e(k.name(r)), price=price(r, f)))
+    if "cpAll" in k.own:
+        # Back to the city's own page, in its search wording: the city page owns "michelin star restaurants london".
+        city = places[p["parent"]]
+        anchor = f'<a href="{e(lang_path(path_of(city), lang))}">{cuisine_say(k, "cpAllLink", True)}</a>'
+        out.append(k.w["cpAll"].replace("{all}", str(starred_n[city["id"]])).replace("{link}", anchor))
     return f'<p class="answer"><span class="answer-label">{e(k.w["qaLabel"])}</span> ' + k.gap.join(out) + "</p>"
 
 

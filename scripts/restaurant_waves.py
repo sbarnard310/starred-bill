@@ -10,6 +10,12 @@ by popularity (Google review count), WAVE_SIZE a week.
     python3 scripts/restaurant_waves.py add         put restaurants that qualify but aren't in a wave (new stars, new
                                                     prices) into the last wave not yet live, or a new one a week later
     python3 scripts/restaurant_waves.py make DAY    write the waves from scratch, the first on DAY (done once, 16 Oct 2026)
+    python3 scripts/restaurant_waves.py due [DAY]   how many restaurants' pages go live on DAY (default today, UTC)
+    python3 scripts/restaurant_waves.py ping DAY    send those pages to IndexNow (once they're live)
+
+.github/workflows/restaurant-waves.yml runs `due` every morning; on a wave's day it pushes an empty commit so Cloudflare
+rebuilds and publishes the wave, waits until it's live, then runs `ping` (the IndexNow workflow can't see a wave: it
+compares two builds made the same day, which both include it).
 
 A restaurant qualifies when it holds a star, is open (no `status`), has no `notice` (closed for now, closing) and has a
 dinner or lunch price. Standard library only, Python 3.9.
@@ -17,7 +23,7 @@ dinner or lunch price. Standard library only, Python 3.9.
 import json
 import re
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -111,6 +117,25 @@ def show(data, rs):
         print(f"Held back for their notice (closed for now, closing): {', '.join(held)}")
 
 
+def due(day):
+    """The restaurants whose wave goes live on `day` ("2026-10-23")."""
+    data = json.loads(WAVES.read_text("utf-8"))
+    return [i for w in data["waves"] if w["from"] == day for i in w["ids"]]
+
+
+def ping(day):
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import indexnow
+    build = (ROOT / "build.py").read_text("utf-8")
+    site = re.search(r'^SITE_URL = "([^"]+)"', build, re.M).group(1)
+    key = re.search(r'^INDEXNOW_KEY = "([0-9a-f]{32})"', build, re.M).group(1)
+    urls = [f"{site}/restaurants/{i}/" for i in due(day)]
+    if urls:
+        indexnow.send(urls, key)
+    else:
+        print(f"No wave on {day}.")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "list"
     if cmd == "make":
@@ -119,5 +144,9 @@ if __name__ == "__main__":
         make(date.fromisoformat(sys.argv[2]))
     elif cmd == "add":
         add()
+    elif cmd == "due":
+        print(len(due(sys.argv[2] if len(sys.argv) > 2 else datetime.now(timezone.utc).date().isoformat())))
+    elif cmd == "ping":
+        ping(sys.argv[2])
     else:
         show(json.loads(WAVES.read_text("utf-8")), restaurants())

@@ -1,0 +1,65 @@
+# Restaurant pages in waves (content/restaurant-pages.json, scripts/restaurant_waves.py): a wave goes live with the first
+# build on or after its day, and builds only happen on a push. So every morning this checks whether a wave starts today
+# (UTC, as Cloudflare's build reckons it) and, if so, pushes an empty commit to main; Cloudflare then rebuilds and publishes
+# it. Once it's live, it tells IndexNow about the wave's pages, which the IndexNow workflow can't see (it compares two
+# builds made the same day). On other days it does nothing. Run it by hand from the Actions tab to retry a day.
+name: Publish restaurant page waves
+
+on:
+  schedule:
+    - cron: "5 5 * * *"   # 05:05 UTC daily; the waves fall on Fridays
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: restaurant-waves
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Is there a wave today?
+        id: due
+        run: |
+          day=$(date -u +%F)
+          n=$(python3 scripts/restaurant_waves.py due "$day")
+          echo "day=$day" >> "$GITHUB_OUTPUT"
+          echo "n=$n" >> "$GITHUB_OUTPUT"
+          if [ "$n" = "0" ]; then echo "No wave starts on $day."; else echo "$n restaurant pages go live on $day."; fi
+      - name: Push an empty commit so Cloudflare rebuilds
+        id: push
+        if: steps.due.outputs.n != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q --allow-empty -m "Publish the restaurant pages of the ${{ steps.due.outputs.day }} wave (${{ steps.due.outputs.n }} pages)"
+          for i in 1 2 3; do
+            if git pull --rebase -q origin main && git push -q origin HEAD:main; then
+              echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+            sleep 10
+          done
+          echo "Couldn't push after three tries."; exit 1
+      - name: Wait until Cloudflare has published it
+        if: steps.due.outputs.n != '0'
+        run: |
+          sha="${{ steps.push.outputs.sha }}"
+          for i in $(seq 1 80); do
+            live=$(curl -sfA 'StarredBill-Waves/1.0' "https://starredbill.com/version.txt?t=$(date +%s)" || true)
+            if [ "$live" = "$sha" ]; then echo "Live."; exit 0; fi
+            if [ -n "$live" ]; then
+              git cat-file -e "$live^{commit}" 2>/dev/null || git fetch -q origin main
+              if git merge-base --is-ancestor "$sha" "$live" 2>/dev/null; then echo "Live (in $live)."; exit 0; fi
+            fi
+            sleep 15
+          done
+          echo "Cloudflare hasn't published $sha after 20 minutes; see Workers & Pages › starred-bill › Deployments."
+          exit 1
+      - name: Tell IndexNow about the new pages
+        if: steps.due.outputs.n != '0'
+        run: python3 scripts/restaurant_waves.py ping "${{ steps.due.outputs.day }}"

@@ -670,8 +670,12 @@ for path in sorted((CONTENT / "guide-translations").glob("*/*.json")) if (CONTEN
 # its hotel's or another page that states them (content/opening-hours-sites.json, 12–13 Oct 2026; Google's hours were
 # used until 13 Oct 2026, but Google's terms don't allow keeping them): HOURS_SITE gives each one's page {"url", "type":
 # site|hotel|other}, and their times are shown, except for those in its "daysOnly" (the page gave the days but not the
-# times). Those in its "replacesGuide" are used instead of the guide's, where those are plainly wrong.
-HOURS, HOURS_SITE, HOURS_TIMED, HOURS_CHECKED = {}, {}, set(), {}
+# times). Those in its "replacesGuide" are used instead of the guide's, where those are plainly wrong. Its "seasons"
+# (19 Oct 2026, to-do item fixes-hours-last-45) says in a sentence when a seasonal restaurant opens ("Open from late
+# April to early November"), shown beside its hours; its "none" lists the starred restaurants whose own site, hotel and booking pages give no hours, each
+# with the day it was looked for ("checked") and why ("note"), so scripts/site_audit.py counts them apart from new gaps
+# until HOURS_RECHECK_DAYS (in that script) have passed.
+HOURS, HOURS_SITE, HOURS_TIMED, HOURS_CHECKED, HOURS_SEASON = {}, {}, set(), {}, {}
 ids = {r["id"] for r in restaurants}
 for fname, src in (("opening-hours.json", "michelin"), ("opening-hours-sites.json", "site")):
     opening = read_json(CONTENT / fname) or {} if (CONTENT / fname).exists() else {}
@@ -691,6 +695,21 @@ for fname, src in (("opening-hours.json", "michelin"), ("opening-hours-sites.jso
                 HOURS_SITE[rid] = sources.get(rid) or {}
                 if rid not in days_only:
                     HOURS_TIMED.add(rid)
+    if src == "site":
+        for rid, months in (opening.get("seasons") or {}).items():
+            if rid not in HOURS_SITE:
+                problem(fname, f"{rid} has a season under \"seasons\" but no hours")
+            elif not isinstance(months, str) or not months.strip():
+                problem(fname, f"{rid} has a season that isn't a sentence like \"Open from April to October\": {months!r}")
+            else:
+                HOURS_SEASON[rid] = months.strip()
+        for rid, why in (opening.get("none") or {}).items():
+            if not isinstance(why, dict) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(why.get("checked", ""))):
+                problem(fname, f"{rid} under \"none\" needs {{\"checked\": \"YYYY-MM-DD\", \"note\": \"…\"}}")
+            elif rid in HOURS:
+                problem(fname, f"{rid} has hours now, so take it out of \"none\"")
+            elif rid not in ids:
+                print(f"Note: content/{fname} lists {rid} under \"none\", which isn't a restaurant file (renamed or removed?).")
 
 # Members' scores (13 Oct 2026, to-do item members-ratings): content/member-scores.json, written daily by
 # scripts/member_scores.py from Supabase's member_scores(): each restaurant's average score out of 5 and how many members
@@ -713,6 +732,12 @@ def hours_from(r):
     if r["id"] in HOURS_SITE:
         return hours_site_name(r) + ", " + month_year(HOURS_CHECKED["site"][:7], "en")
     return "the MICHELIN Guide, " + month_year(HOURS_CHECKED["michelin"][:7], "en")
+
+
+def season_note(r):
+    """"Open from late April to early November. " for a seasonal restaurant (opening-hours-sites.json's "seasons", a
+    sentence of its own), else ""."""
+    return HOURS_SEASON[r["id"]].rstrip(".") + ". " if r["id"] in HOURS_SEASON else ""
 
 
 def hours_site_name(r):
@@ -3659,9 +3684,11 @@ def build_near_me(starred):
                      "change": r.get("change", ""), "changed": r.get("changeDate", "")[:7]})
     near_url = write_data("near.json", pack_near(rows))
     # Opening hours for the "Open on" filter, in their own file so Help me pick (which shares near.json) doesn't load them.
-    # "g" lists those from a restaurant's own page (or its hotel's, or a listing), whose times near.js always trusts.
+    # "g" lists those from a restaurant's own page (or its hotel's, or a listing), whose times near.js always trusts; "d"
+    # those whose page gave the days and meals but not the times (placeholder times, never shown).
     hours_url = write_data("hours.json", {"checked": HOURS_CHECKED["michelin"], "h": {r["id"]: HOURS[r["id"]] for r in starred if r["id"] in HOURS},
-                                          "g": sorted(r["id"] for r in starred if r["id"] in HOURS_TIMED)})
+                                          "g": sorted(r["id"] for r in starred if r["id"] in HOURS_TIMED),
+                                          "d": sorted(r["id"] for r in starred if r["id"] in HOURS_SITE and r["id"] not in HOURS_TIMED)})
     stats = guide_stats()
     cities = [p for p in by_size(pages) if (p["type"] == "city" or p["id"] in ("hong-kong", "macau", "singapore")) and starred_n[p["id"]] >= 5][:36]
     popular = "".join(f'<a class="city-link" href="{p["path"]}">{e(p["name"])}<span class="count">{starred_n[p["id"]]}</span></a>' for p in cities)
@@ -7490,7 +7517,7 @@ def before_html(r):
         timed = any(h not in ("open", "closed") for d, h in hours_lines(r))
         add(f"When is {r['name']} open?", hours_sentence(r),
             '<p class="rp-hours-list">' + "".join(f'<span class="rp-hours"><b>{e(d)}</b> {e(h)}</span>' for d, h in hours_lines(r)) + "</p>"
-            + f'<p class="rp-note">{"Hours" if timed else "Days"} from {e(hours_from(r))}; check before you go, as they change on holidays.</p>')
+            + f'<p class="rp-note">{e(season_note(r))}{"Hours" if timed else "Days"} from {e(hours_from(r))}; check before you go, as they change on holidays.</p>')
     return ('<section id="visit">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Before you go</span>'
             f'<h2 style="margin-top: 6px">{e(sentence_case(and_list([x for x, k in (("dress code", "dressCode"), ("children", "children"), ("how long it takes", "duration"), ("drinks", "byob")) if r.get(k)] + (["opening hours"] if hours_lines(r) else []))))} at {e(r["name"])}</h2></div></div>\n'
             '    <div class="faq rp-qa">' + "".join(blocks) + f"</div>\n    {info_note(r)}\n  </div>\n</section>\n"), qa
@@ -7781,7 +7808,8 @@ def hours_lines(r):
     week = week_of(r)
     if not week:
         return []
-    timed = r["id"] in HOURS_TIMED or all(len(d) > 1 or dinner_sitting(*d[0]) for d in week if d)
+    # A restaurant's own page that gave days but no times ("daysOnly") holds placeholder times: never shown (19 Oct 2026).
+    timed = r["id"] in HOURS_TIMED or (r["id"] not in HOURS_SITE and all(len(d) > 1 or dinner_sitting(*d[0]) for d in week if d))
     text = [(", ".join(clock(a, r["country"]) + "–" + clock(b, r["country"]) for a, b in d) if timed else "open") if d else "closed" for d in week]
     out, i = [], 0
     while i < 7:
@@ -7894,7 +7922,7 @@ def build_restaurant_pages():
         if hours_lines(r) and not visit:
             facts.append(("Opening hours" if any(h not in ("open", "closed") for d, h in hours_lines(r)) else "Open",
                           "".join(f'<span class="rp-hours"><b>{e(d)}</b> {e(h)}</span>' for d, h in hours_lines(r))
-                          + f"<small>From {e(hours_from(r))}; check before you go</small>"))
+                          + f"<small>{e(season_note(r))}From {e(hours_from(r))}; check before you go</small>"))
         if r.get("hotel"):
             facts.append(("Hotel", e(r["hotel"][:1].upper() + r["hotel"][1:])))
         if r.get("address"):

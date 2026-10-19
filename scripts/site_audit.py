@@ -13,6 +13,7 @@ basics (HTTPS, redirects, 404 page, robots.txt, sitemap). It writes the figures 
 plain report; with PREVIOUS.json it also says what changed since then. It only reads; nothing is changed.
 """
 import collections
+import datetime
 import html
 import json
 import re
@@ -124,6 +125,7 @@ VAGUE = re.compile(r"^(?:here|click here|this|this page|this guide|this link|pag
 # Names that contain a place's name without being about it: a guide's own title ("MICHELIN Guide Thailand 2026"), and
 # places we have no page for whose names hold one we do ("New Mexico", "New South Wales").
 NOT_PLACES = re.compile(r"MICHELIN Guide [A-Z][\w’]*(?:(?: | & | and )[A-Z][\w’]*)*|Great Britain (?:&|and) Ireland|New Mexico|New South Wales")
+HOURS_RECHECK_DAYS = 120  # restaurants found to have no usable hours (opening-hours-sites.json "none") count as gaps again after this
 FEW_LINKS_IN = 3       # an indexed English page with fewer links to it than this is hard for Google to find
 FEW_CONTENT_LINKS = 2  # a page with fewer links of its own (beyond the menu and footer every page has) is a dead end
 LISTS = re.compile(r'<p class="table-note">.*?</p>|<section class="guide-sources".*?</section>|<table.*?</table>|<(ol|nav) class="(?:rank-cards|jump-links)[^"]*".*?</\1>|<div class="change-lists">(?:.*?</ul></div>){2}</div>|<h3 id="(?:three|two)-[^"]*">.*?</h3>|<div class="results-top">.*?</div>', re.S)  # built from the data
@@ -246,6 +248,11 @@ def data_checks(site):
     for name in ("opening-hours.json", "opening-hours-sites.json"):  # the MICHELIN Guide's, then restaurants' own
         hours_file = C / name
         hours.update(json.loads(hours_file.read_text("utf-8")).get("hours", {}) if hours_file.exists() else {})
+    # Restaurants looked for and found to have no usable hours (opening-hours-sites.json's "none"): counted apart from new
+    # gaps until HOURS_RECHECK_DAYS after their "checked" day, then as gaps again so they're looked for afresh.
+    sites_file = C / "opening-hours-sites.json"
+    no_hours_known = {rid for rid, why in (json.loads(sites_file.read_text("utf-8")).get("none", {}) if sites_file.exists() else {}).items()
+                      if (datetime.date.today() - datetime.date.fromisoformat(why["checked"])).days <= HOURS_RECHECK_DAYS}
     # Data still resting on the MICHELIN Guide's website (to-do item michelin-data-resource, stage 3): stars without a
     # starSource or a press-release selection for their guide's latest ceremony, chefs and dietary options from its search
     # index, and opening hours that are only the guide's.
@@ -287,7 +294,8 @@ def data_checks(site):
         g["no_photo"] += not r.get("placeId") and not r.get("photo")
         g["own_photo"] += bool(r.get("photo"))  # a free photo of our own (scripts/restaurant_photos.py), not Google's paid one
         g["no_website"] += not r.get("website")
-        g["no_hours"] += r["_id"] not in hours  # opening days for Near me's "Open on" filter (content/opening-hours*.json)
+        g["no_hours"] += r["_id"] not in hours and r["_id"] not in no_hours_known  # opening days for Near me's "Open on" filter (content/opening-hours*.json)
+        g["no_hours_anywhere"] += r["_id"] in no_hours_known and r["_id"] not in hours  # looked for recently, none to be had
         g["price_without_source"] += r.get("dinner") is not None and not r.get("source")
     total = collections.Counter()
     for g in gaps.values():

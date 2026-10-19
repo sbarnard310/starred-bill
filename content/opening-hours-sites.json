@@ -1,5 +1,5 @@
 {
-"checked": "2026-10-16",
+"checked": "2026-10-19",
 "source": "Restaurants' own websites",
 "hours": {
 "11-woodfire": "1200-0000;1200-0000;1200-0000;1200-0000;1200-0000;1200-0000;1200-0000",
@@ -13,6 +13,7 @@
 "a-canto": "1200-1530,1800-2300;1200-1530,1800-2300;;1200-1530,1800-2300;1200-1530,1800-2300;1200-1530,1800-2300;1200-1530,1800-2300",
 "a-casa-di-ma": "1200-1400,1900-2330;1200-1400,1900-2330;;1200-1400,1900-2330;1200-1400,1900-2330;1200-1400,1900-2330;1200-1400,1900-2330",
 "a-cozinha-do-paco": ";1200-1500;1200-1500;1200-1500;1200-1500;1200-1400;",
+"a-plus": "1200-1400,1900-2200;1200-1400;;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
 "a-tafona": ";;1330-1545,2030-2245;1330-1545,2030-2245;1330-1545,2030-2245;1330-1545,2030-2245;1330-1545",
 "aan-de-poel": ";1200-1400,1800-2200;1200-1400,1800-2200;1200-1400,1800-2200;1200-1400,1800-2200;1800-2200;",
 "abysse": "1800-2100;1800-2100;;1800-2100;1800-2100;1800-2100;1800-2100",
@@ -61,6 +62,7 @@
 "arco-by-paco-perez": ";1700-0000;1700-0000;1700-0000;1700-0000;1700-0000;",
 "arkhe": ";;1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
 "armani-ristorante": ";;1930-2230;1930-2230;1230-1430,1930-2230;1230-1430,1930-2230;1230-1430,1930-2230",
+"asador-alfonso": ";;;;1130-1330,1730-2000;1130-1330,1730-2000;1130-1330,1730-2000",
 "asahina-gastronome": "1800-2230;;;1800-2230;1800-2230;1200-1530,1800-2230;1200-1530,1800-2230",
 "aska-regensburg": ";1830-0000;1830-0000;1830-0000;1830-0000;1830-0000;",
 "atama-by-martin-stopp": ";;1200-1430;1200-1430,1830-0000;1200-1430,1830-0000;1830-0000;",
@@ -75,9 +77,11 @@
 "auberge-du-soleil": "1130-1415,1730-2100;1130-1415,1730-2100;1130-1415,1730-2100;1130-1415,1730-2100;1130-1415,1730-2100;1130-1415,1730-2100;1130-1415,1730-2100",
 "auberge-du-vieux-puits": ";;2000-2130;1200-1330,2000-2130;1200-1330,2000-2130;1200-1330,2000-2130;1200-1330",
 "auberge-saint-laurent": ";;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
+"auberge-saint-mathieu": ";;;;1700-2100;1700-2100;1700-2100",
 "auntie-gaik-leans-old-school-eatery": ";;1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130",
 "aurora-at-ila": ";;;;1900-2200;1900-2200;",
 "aux-terrasses": ";1200-1400,1900-2200;1200-1400,1900-2200;1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;",
+"ayalga-villa-rosario": "2030-2130;;;1400-1430,2030-2130;1400-1430,2030-2130;1400-1430,2030-2130;1400-1430,2030-2130",
 "ayanokoji-karatsu": "1200-1400,1730-2200;1200-1400,1730-2200;1200-1400,1730-2200;1200-1400,1730-2200;1200-1400,1730-2200;1200-1400,1730-2200;",
 "azabu-kadowaki": "1730-2200;1730-2200;1730-2200;1730-2200;1730-2200;1730-2200;",
 "azabujuban-fukuda": "1800-2030;1800-2030;1800-2030;1800-2030;1800-2030;1800-2030;1800-2030",
@@ -192,6 +196,8 @@
 "dai-yuet-heen": "1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130",
 "daigo": "1130-1500,1700-2200;1130-1500,1700-2200;1130-1500,1700-2200;1130-1500,1700-2200;1130-1500,1700-2200;1130-1500,1700-2200;1130-1500,1700-2200",
 "dalla-gioconda": ";1930-2200;1930-2200;1930-2200;1930-2200;1230-1400,1930-2200;1230-1400,1930-2200",
+"dattilo": ";;;2000-2200;2000-2200;1245-1430,2000-2200;1245-1430",
+"de-bloemenbeek": "1200-1345,1700-2000;1200-1345,1700-2000;1200-1345,1700-2000;1200-1345,1700-2000;1200-1345,1700-2000;1200-1345,1700-2015;1200-1515,1700-2000",
 "de-kromme-dissel": ";1800-0000;1800-0000;1800-0000;1200-1630,1800-0000;1200-1630,1800-0000;",
 "de-leuf": ";1830-2200;;1200-1300,1830-2200;1200-1300,1830-2200;1200-1300,1830-2200;",
 "de-librije": ";;1900-1945;1900-1945;1200-1245,1900-1945;1200-1245,1900-1945;",
@@ -238,6 +244,7 @@
 "enyuan-kobayashi": ";;1730-2200;1730-2200;1730-2200;1730-2200;1730-2200",
 "epicures": ";;1800-2230;1800-2230;1800-2230;1800-2230;",
 "erre": ";;1930-2100;1930-2100;1930-2100;1200-1300,1930-2100;1200-1300",
+"escondido": ";1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;",
 "esmay": ";;1730-2030;1730-2030;1730-2030;1730-2030;1200-1530",
 "espadon": ";1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;",
 "esperit-roca": "1300-1430;;;1930-2130;1300-1430,1930-2130;1300-1430,1930-2130;1300-1430",
@@ -321,6 +328,7 @@
 "gosho-iwasaki": "1200-1400,1800-2100;1200-1400,1800-2100;;1200-1400,1800-2100;1200-1400,1800-2100;1200-1400,1800-2100;1200-1400,1800-2100",
 "gourmetrestaurant-tannenhof": ";;1800-2100;1800-2100;1800-2100;1200-1430,1800-2100;",
 "grand-hotel-du-lion-d-or": "1930-2100;;;1930-2100;1930-2100;1930-2100;1930-2100",
+"gravetye-manor": "1200-1400,1830-2030;1200-1400,1830-2030;1200-1400,1830-2030;1200-1400,1830-2030;1200-1400,1830-2030;1200-1400,1830-2030;1200-1400,1830-2030",
 "griggeler-stuba": "1900-2130;1900-2130;1900-2130;1900-2130;1900-2130;;",
 "gucci-osteria-da-massimo-bottura": "1230-1500,1930-2200;1230-1500,1930-2200;1230-1500,1930-2200;1230-1500,1930-2200;1230-1500,1930-2200;1230-1500,1930-2200;1230-1500,1930-2200",
 "gucci-osteria-da-massimo-bottura-tokyo": ";;1130-1500,1800-2200;1130-1500,1800-2200;1130-1500,1800-2200;1130-1500,1800-2200;1130-1500,1800-2200",
@@ -332,6 +340,7 @@
 "hajime": "1700-2300;1700-2300;1700-2300;1700-2300;1700-2300;1700-2300;1700-2300",
 "hakkasan-dubai": ";;1800-2300;1800-2300;1800-2300;1800-2300;1800-2300",
 "hakunei": "1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;",
+"hakusi": ";1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;",
 "hakuun": "1800-2330;1800-2330;1800-2330;1800-2330;1800-2330;1800-2330;",
 "hambleton-hall": "1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
 "hammerles-restaurant": ";1200-1600;1200-1600;1200-1600;1200-1600,1900-2300;;",
@@ -359,6 +368,7 @@
 "higashiyama-tsukasa": ";;1800-2100;1800-2100;1800-2100;1230-1500,1800-2100;",
 "higashiyama-yoshihisa": "1200-1430,1830-2100;1200-1430,1830-2100;;1200-1430,1830-2100;1200-1430,1830-2100;1200-1430,1830-2100;1200-1430,1830-2100",
 "hilda-and-jesse": "1900-2200;;;1900-2200;1900-2200;1200-1400;1200-1400",
+"hill-street-tai-hwa-pork-noodle": "1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
 "hiraishi": "1800-2200;1800-2200;1800-2200;1800-2200;1800-2200;1800-2200;",
 "hiroo-ishizaka": "1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;1900-2200",
 "hirsch": ";;;1800-2030;1200-1330,1800-2030;1200-1330,1800-2030;1200-1330,1800-2030",
@@ -369,6 +379,7 @@
 "hongtu-hall": "0800-1430;0800-1430;0800-1430;0800-1430;0800-1430;0800-1430;0800-1430",
 "hoogan-et-beaufort": "1730-2230;1130-1330,1730-2230;1130-1330,1730-2230;1130-1330,1730-2230;1130-1330,1730-2230;1730-2230;1730-2230",
 "hortensia": "1700-2300;1700-2300;1700-2300;1700-2300;1700-2300;1200-2300;1200-2300",
+"hoshino": "1200-1430,1800-2100;1200-1430,1800-2100;;;1800-2100;1200-1430,1800-2100;1200-1430,1800-2100",
 "house-of-tides": ";;;1800-2100;1200-1400,1800-2100;1200-1400,1730-2130;",
 "huaiyang-delights-jingan": "1100-1400,1700-2200;1100-1400,1700-2200;1100-1400,1700-2200;1100-1400,1700-2200;1100-1400,1700-2200;1100-1400,1700-2200;1100-1400,1700-2200",
 "humble-chicken": ";;1745-2100;1745-2100;1745-2100;1300-1300,1745-2100;",
@@ -415,6 +426,7 @@
 "jin-ting-wan": "1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130",
 "jin-xuan": "1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2130;1130-1430,1730-2200;1130-1430,1730-2200;1130-1430,1730-2130",
 "jingji": "1130-1330,1730-2130;1130-1330,1730-2130;1130-1330,1730-2130;1130-1330,1730-2130;1130-1330,1730-2130;1130-1330,1730-2130;1130-1330,1730-2130",
+"jingumae-higuchi": "1900-2200;1900-2200;;1900-2200;1900-2200;1900-2200;",
 "jizozushi": ";;;1915-2200;1840-2200;1840-2200;",
 "jl-studio": ";;1800-2200;1800-2200;1800-2200;1130-1500,1800-2200;1130-1500,1800-2200",
 "jo": ";1730-2300;1730-2300;1730-2300;1730-2300;1200-1400,1730-2300;",
@@ -524,6 +536,7 @@
 "la-marine": ";;1845-2015;1845-2015;1845-2015;1845-2015;",
 "la-once-mil": "1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
 "la-paix": "1130-1430,1800-2200;;1130-1430,1800-2200;1130-1430,1800-2200;1130-1430,1800-2200;1130-1430,1800-2200;1130-1430,1800-2200",
+"la-palmeraie-chateau-de-valmer": ";1930-2100;1930-2100;1930-2100;1930-2100;1930-2100;1930-2100",
 "la-pergola": ";1900-2100;1900-2100;1900-2100;1900-2100;1900-2100;",
 "la-pyramide-maison-henriroux": ";;;1200-1315,1930-2115;1200-1315,1930-2115;1200-1315,1930-2115;1200-1315,1930-2115",
 "la-renaissance": ";1200-1330,1930-2100;1200-1330,1930-2100;1200-1330,1930-2100;1200-1330,1930-2100;1200-1330,1930-2100;",
@@ -558,6 +571,7 @@
 "lars-amsterdam": ";1800-2200;1800-2200;1200-1700,1800-2200;1200-1700,1800-2200;1200-1700,1800-2200;",
 "latelier-de-joel-robuchon": "1130-1430,1800-2130;1130-1430,1800-2130;1130-1430,1800-2130;1130-1430,1800-2130;1130-1430,1800-2200;1130-1430,1800-2200;1130-1430,1800-2130",
 "latelier-de-joel-robuchon-hong-kong": "1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130;1200-1430,1800-2130",
+"latelier-de-joel-robuchon-las-vegas": "1700-2130;;;1700-2130;1700-2130;1700-2130;1700-2130",
 "latelier-de-joel-robuchon-tokyo": "1200-1600,1800-2200;1200-1600,1800-2200;1200-1600,1800-2200;1200-1600,1800-2200;1200-1600,1800-2200;1200-1600,1800-2200;1200-1600,1800-2200",
 "lature": "1130-1530,1800-2300;1130-1530,1800-2300;1130-1530,1800-2300;1130-1530,1800-2300;1130-1530,1800-2300;1130-1530,1800-2300;1130-1530,1800-2300",
 "lavandin-chateau-les-oliviers-de-salettes": ";;1930-2130;1930-2130;1930-2130;1930-2130;1200-1330",
@@ -643,6 +657,7 @@
 "lu-shang-lu": "1130-1400,1700-2100;1130-1400,1700-2100;1130-1400,1700-2100;1130-1400,1700-2100;1130-1400,1700-2100;1130-1400,1700-2100;1130-1400,1700-2100",
 "lu-style-anding-road": "1130-1400,1730-2200;1130-1400,1730-2200;1130-1400,1730-2200;1130-1400,1730-2200;1130-1400,1730-2200;1130-1400,1730-2200;1130-1400,1730-2200",
 "lu-style-huangpu": "1130-1400,1730-2130;1130-1400,1730-2130;1130-1400,1730-2130;1130-1400,1730-2130;1130-1400,1730-2130;1130-1400,1730-2130;1130-1400,1730-2130",
+"luca-s-by-paulo-airaudo": ";1930-2230;1930-2230;1930-2230;1930-2230;1930-2230;",
 "lucas-carton": "1200-1345,1900-2300;1200-1345,1900-2300;1200-1345,1900-2300;1200-1345,1900-2300;1200-1345,1900-2300;1900-2300;1900-2300",
 "luisl-stube": ";;1800-2030;1800-2030;1800-2030;1800-2030;",
 "lukas-kapeller": ";;;1900-2200;1900-2200;1900-2200;",
@@ -768,6 +783,7 @@
 "old-stamp-house": ";;1800-2030;1200-1330,1800-2030;1200-1330,1800-2030;1200-1330,1800-2030;",
 "omakase-table": ";;1800-2030;1800-2030;1800-2030;1730-2030;1700-2000",
 "oniku-karyu": "1700-2330;1700-2330;1700-2330;1700-2330;1700-2330;1700-2330;",
+"ono": "1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;",
 "ophelia": "1900-2100;;;1900-2100;1900-2100;1900-2100;1900-2100",
 "opus-388": ";;1700-2230;1700-2230;1700-2230;1700-2230;1700-2230",
 "opus-v": ";;1830-2300;1830-2300;1200-1500,1830-2300;1200-1500,1830-2300;",
@@ -793,6 +809,7 @@
 "pavyllon-london": "0630-1030,1200-1400,1800-2200;0630-1030,1200-1400,1800-2200;0630-1030,1200-1400,1800-2200;0630-1030,1200-1400,1800-2200;0630-1030,1200-1400,1800-2200;0630-1030,1200-1400,1800-2200;0700-1030,1200-1400,1800-2200",
 "paz": ";1800-0000;1800-0000;1800-0000;1800-0000;;",
 "pedro-lemos": ";1230-1500,1900-2300;1230-1500,1900-2300;1230-1500,1900-2300;1230-1500,1900-2300;1230-1500,1900-2300;",
+"pepe-vieira": ";;;1300-1400;1300-1400,2030-2130;1300-1400,2030-2130;1300-1400",
 "per-me-giulio-terrinoni": "1230-1400,1900-2200;1230-1400,1900-2200;1230-1400,1900-2200;1230-1400,1900-2200;1230-1400,1900-2200;1230-1400,1900-2200;1230-1400,1900-2200",
 "piao-xiang": ";1830-2230;1830-2230;1830-2230;1830-2230;1830-2230;",
 "piazza-duomo": ";1230-1300,1930-2030;1230-1300,1930-2030;1230-1300,1930-2030;1230-1300,1930-2030;1230-1300,1930-2030;1230-1300",
@@ -821,6 +838,7 @@
 "rausch": ";1830-2300;1830-2300;1830-2300;1200-1400,1900-2300;;",
 "rebers-pflug": ";1800-2030;1800-2030;1800-2030;1730-2030;1730-2030;",
 "regina-montium": ";;1830-2400;1830-2400;1830-2400;1830-2400;",
+"relais-blu": "1200-1430,1900-2230;;1900-2230;1200-1430,1900-2230;1200-1430,1900-2230;1200-1430,1900-2230;1200-1430,1900-2230",
 "ren-he-guan-xuhui": "1100-1400,1700-2130;1100-1400,1700-2130;1100-1400,1700-2130;1100-1400,1700-2130;1100-1400,1700-2130;1100-2130;1100-2130",
 "ren-mishina": ";1700-2200;1700-2200;1700-2200;1700-2200;1200-1500,1700-2200;",
 "restaurant-12": ";;1730-2200;1730-2200;1730-2200;1730-2200;1730-2200",
@@ -859,6 +877,7 @@
 "san-domenico": ";1230-1330,2000-2115;1230-1330,2000-2115;1230-1330,2000-2115;1230-1330,2000-2115;1230-1330,2000-2115;1230-1330",
 "san-ho-won": ";1700-2130;1700-2130;1700-2130;1700-2200;1700-2200;1700-2130",
 "saneh-jaan": "1130-1400,1800-2200;1130-1400,1800-2200;1130-1400,1800-2200;1130-1400,1800-2200;1130-1400,1800-2200;1130-1400,1800-2200;1130-1400,1800-2200",
+"sanosushi": "1200-1400,1800-2040;1200-1400,1800-2040;1200-1400,1800-2040;1200-1400,1800-2040;1200-1400,1800-2040;1200-1400,1800-2040;1200-1400,1800-2040",
 "sanso-kyoyamato": "1130-1530,1700-2130;1130-1530,1700-2130;;1130-1530,1700-2130;1130-1530,1700-2130;1130-1530,1700-2130;1130-1530,1700-2130",
 "sassa": "1800-2200;1800-2200;1800-2200;1800-2200;1800-2200;1800-2200;",
 "sattlerhof": ";1800-2000;1800-2000;;1800-2000;1800-2000;",
@@ -892,7 +911,9 @@
 "sheng-yong-xing-chaoyang": "1100-1430,1700-2100;1100-1430,1700-2100;1100-1430,1700-2100;1100-1430,1700-2100;1100-1430,1700-2100;1100-1430,1700-2100;1100-1430,1700-2100",
 "sheng-yong-xing-huangpu": "1130-1500,1730-2130;1130-1500,1730-2130;1130-1500,1730-2130;1130-1500,1730-2130;1130-1500,1730-2130;1130-1500,1730-2130;1130-1500,1730-2130",
 "sherwood": "1200-1700,1700-2200;1200-1700,1700-2200;1200-1700,1700-2200;1200-1700,1700-2200;1200-1700,1700-2200;1200-1700,1700-2200;1200-1700,1700-2200",
+"shigeyuki": "1800-1930;1800-1930;1800-1930;1800-1930;1800-1930;1800-1930;1800-1930",
 "shimmonzen-yonemura": "1200-1430,1800-2030;1200-1430,1800-2030;;;1200-1430,1800-2030;1200-1430,1800-2030;1200-1430,1800-2030",
+"shinchi-yamamoto": "1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;",
 "shinois": "1700-2130;1700-2130;1700-2130;1700-2130;1700-2130;1700-2130;1700-2130",
 "shiro": ";;1800-2030;1800-2030;1800-2030;1200-1430,1800-2030;1200-1430,1800-2030",
 "shisen-hanten": "1200-1500,1800-2230;1200-1500,1800-2230;1200-1500,1800-2230;1200-1500,1800-2230;1200-1500,1800-2230;1130-1515,1800-2230;1130-1515,1800-2230",
@@ -933,6 +954,7 @@
 "summer-pavilion": "1130-1430,1830-2230;1130-1430,1830-2230;1130-1430,1830-2230;1130-1430,1830-2230;1130-1430,1830-2230;1130-1430,1830-2230;1130-1430,1830-2230",
 "sun-moon-studio": ";;;1700-2030;1700-2030;1700-2030;1700-2030",
 "sushi-an": ";1800-2200;1800-2200;1800-2200;1800-2200;1800-2200;",
+"sushi-anaba": ";;1700-2000;1700-2000;1700-2000;1700-2000;",
 "sushi-harasho": "1200-1400,1800-2030;1200-1400,1800-2030;;1200-1400,1800-2030;1200-1400,1800-2030;1200-1400,1800-2030;",
 "sushi-hashimoto": "1200-1400,1700-1930,1945-2200;;;1200-1400,1700-1930,1945-2200;1200-1400,1700-1930,1945-2200;1200-1400,1700-1930,1945-2200;1200-1400,1700-1930,1945-2200",
 "sushi-hoshiyama": "1730-2300;;1730-2300;1730-2300;1730-2300;1730-2300;1730-2300",
@@ -1089,6 +1111,7 @@
 "winzerhof-stahl": ";;1900-2200;1900-2200;1900-2200;1200-1400,1900-2200;",
 "wirtschaft-im-franz": ";1130-1400,1800-0000;1130-1400,1800-0000;1130-1400,1800-0000;1130-1400,1800-0000;1800-0000;",
 "wisca-haizhu": "1130-1530,1700-2230;1130-1530,1700-2230;1130-1530,1700-2230;1130-1530,1700-2230;1130-1530,1700-2230;1130-1530,1700-2230;1130-1530,1700-2230",
+"wok-by-obond": ";;1800-2300;1800-2300;1800-2300;1800-2300;1800-2300",
 "wolfsbane": ";1730-2200;1730-2200;1730-2200;1730-2200;1730-2200;",
 "woven-by-adam-smith": ";;1830-2100;1830-2100;1230-1430,1830-2100;1230-1430,1830-2100;1230-1430",
 "wu-you-xian": "0900-2000;0900-2000;0900-2000;0900-2000;0900-2000;0900-2000;0900-2000",
@@ -1112,6 +1135,7 @@
 "yanyu-jiahe-road": "1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100",
 "yat-tung-heen": "1100-1600,1800-2230;1100-1600,1800-2230;1100-1600,1800-2230;1100-1600,1800-2230;1100-1600,1800-2230;1000-1600,1800-2230;1000-1600,1800-2230",
 "yokoi": ";1800-2200;1200-1500,1800-2200;1200-1500,1800-2200;1800-2200;1200-1500,1800-2200;1200-1500,1800-2200",
+"yonemasu": "1200-1400,1900-2200;1200-1400,1900-2200;;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;",
 "yong": "1200-1430,1800-2200;1200-1430,1800-2200;1200-1430,1800-2200;1200-1430,1800-2200;1200-1430,1800-2200;1200-1430,1800-2200;1200-1430,1800-2200",
 "yong-fu-hongkou": "1100-1330,1700-2100;1100-1330,1700-2100;1100-1330,1700-2100;1100-1330,1700-2100;1100-1330,1700-2100;1100-1330,1700-2100;1100-1330,1700-2100",
 "yong-fu-huangpu": "1100-1330,1700-2100;1100-1330,1700-2100;1100-1330,1700-2100;1100-1330,1700-2100;1100-1330,1700-2100;1100-1330,1700-2100;1100-1330,1700-2100",
@@ -1186,6 +1210,10 @@
 "a-cozinha-do-paco": {
 "url": "https://www.antoniomacanita.com/pt/adegas/fitapreta/enoturismo-alentejo/restaurante-a-cozinha-do-paco",
 "type": "site"
+},
+"a-plus": {
+"url": "https://www.tablecheck.com/ja/shops/aplus/reserve",
+"type": "other"
 },
 "a-tafona": {
 "url": "https://www.luciafreitas.es/a-tafona",
@@ -1379,6 +1407,10 @@
 "url": "https://www.armani.com/fr-ch/armani-restaurant/experience/emporio-armani-caffe-ristorante-paris/",
 "type": "site"
 },
+"asador-alfonso": {
+"url": "https://www.dishcult.com/restaurant/asadoralfonso",
+"type": "other"
+},
 "asahina-gastronome": {
 "url": "https://asahinagastronome.com/",
 "type": "site"
@@ -1435,6 +1467,10 @@
 "url": "https://www.etoiles-alsace.com/etablissements/auberge-saint-laurent/",
 "type": "other"
 },
+"auberge-saint-mathieu": {
+"url": "https://booking.libroreserve.com/3b7b0f58bd6716/QC016742329469/seat",
+"type": "other"
+},
 "auntie-gaik-leans-old-school-eatery": {
 "url": "https://inline.app/booking/-OnKy8jPaRn_LUmJ5tDV:inline-live-4/-OnKy8r2gI9_CX8R2D7X",
 "type": "other"
@@ -1445,6 +1481,10 @@
 },
 "aux-terrasses": {
 "url": "https://www.aux-terrasses.com/fr/restaurant-gastronomique-tournus/",
+"type": "site"
+},
+"ayalga-villa-rosario": {
+"url": "https://www.ayalgavillarosario.com/reservas/",
 "type": "site"
 },
 "ayanokoji-karatsu": {
@@ -1903,6 +1943,14 @@
 "url": "https://www.dallagioconda.it/contattaci/",
 "type": "site"
 },
+"dattilo": {
+"url": "https://dattilo.prenota-web.it/prenotazioni/",
+"type": "other"
+},
+"de-bloemenbeek": {
+"url": "https://www.bloemenbeek.nl/gastronomie/restaurant/",
+"type": "other"
+},
 "de-kromme-dissel": {
 "url": "https://www.krommedissel.nl/",
 "type": "site"
@@ -2086,6 +2134,10 @@
 "erre": {
 "url": "https://roncemay.com/fr/restaurant-erre.html",
 "type": "hotel"
+},
+"escondido": {
+"url": "https://app.catchtable.co.kr/ct/shop/escondido",
+"type": "other"
 },
 "esmay": {
 "url": "https://esmay.com.au/about/",
@@ -2419,6 +2471,10 @@
 "url": "https://www.liondor1774.com/restauration/la-table-du-lion-etoilee-par-le-chef-loic-le-bail/",
 "type": "site"
 },
+"gravetye-manor": {
+"url": "https://booking.resdiary.com/widget/Standard/GravetyeManor/42777",
+"type": "other"
+},
 "griggeler-stuba": {
 "url": "https://www.burgvitalresort.com/de/kulinarik/griggeler-stuba/",
 "type": "hotel"
@@ -2462,6 +2518,10 @@
 "hakunei": {
 "url": "https://hakunei.com/",
 "type": "site"
+},
+"hakusi": {
+"url": "https://app.catchtable.co.kr/ct/shop/hakusi",
+"type": "other"
 },
 "hakuun": {
 "url": "https://restaurant.ikyu.com/116671/",
@@ -2571,6 +2631,10 @@
 "url": "https://www.hildaandjessesf.com/menu",
 "type": "site"
 },
+"hill-street-tai-hwa-pork-noodle": {
+"url": "https://www.facebook.com/p/Hill-Street-Tai-Hwa-Pork-Noodle-100063491712419/",
+"type": "site"
+},
 "hiraishi": {
 "url": "https://tempura-hiraishi.myconciergejapan.net/",
 "type": "site"
@@ -2610,6 +2674,10 @@
 "hortensia": {
 "url": "https://www.hortensiatokyo.com/",
 "type": "site"
+},
+"hoshino": {
+"url": "https://restaurant.ikyu.com/155387/",
+"type": "other"
 },
 "house-of-tides": {
 "url": "https://www.houseoftides.co.uk/",
@@ -2793,6 +2861,10 @@
 },
 "jingji": {
 "url": "https://us.trip.com/restaurant/china/beijing/detail/jingji-aristocrat-cuisine-by-rong-82733034/",
+"type": "other"
+},
+"jingumae-higuchi": {
+"url": "https://omakase.in/ja/r/ir477169",
 "type": "other"
 },
 "jizozushi": {
@@ -3231,6 +3303,10 @@
 "url": "https://lapaix-m.jp/",
 "type": "site"
 },
+"la-palmeraie-chateau-de-valmer": {
+"url": "https://bookings.zenchef.com/results?rid=358363",
+"type": "other"
+},
 "la-pergola": {
 "url": "https://qrco.de/bcWLes",
 "type": "hotel"
@@ -3366,6 +3442,10 @@
 "latelier-de-joel-robuchon-hong-kong": {
 "url": "https://www.robuchon.hk/en/jr-latelier",
 "type": "site"
+},
+"latelier-de-joel-robuchon-las-vegas": {
+"url": "https://www.sevenrooms.com/reservations/lateliermgmgrand",
+"type": "other"
 },
 "latelier-de-joel-robuchon-tokyo": {
 "url": "https://www.robuchon.jp/shop-list/latelier",
@@ -3706,6 +3786,10 @@
 "lu-style-huangpu": {
 "url": "https://us.trip.com/travel-guide/shanghai-2-restaurant/lu-style-57277473/",
 "type": "other"
+},
+"luca-s-by-paulo-airaudo": {
+"url": "https://www.lagemmahotel.com/florence/lucas-restaurant",
+"type": "hotel"
 },
 "lucas-carton": {
 "url": "https://eu.sevenrooms.com/explore/lucascarton/reservations/create/search/",
@@ -4207,6 +4291,10 @@
 "url": "https://www.karyu-tokyo.com/",
 "type": "site"
 },
+"ono": {
+"url": "https://restaurant.ikyu.com/116946/",
+"type": "other"
+},
 "ophelia": {
 "url": "https://www.restaurant-ophelia.de/kontakt/",
 "type": "site"
@@ -4306,6 +4394,10 @@
 "pedro-lemos": {
 "url": "https://pedrolemos.pt/en/contact/",
 "type": "site"
+},
+"pepe-vieira": {
+"url": "https://www.covermanager.com/reserve/module_restaurant/restaurante-pepevieira/spanish",
+"type": "other"
 },
 "per-me-giulio-terrinoni": {
 "url": "https://www.giulioterrinoni.it/contatti-3/",
@@ -4418,6 +4510,10 @@
 "regina-montium": {
 "url": "https://www.kraeuterhotel.ch/de/k%C3%BCche/unsere-restaurants.html",
 "type": "hotel"
+},
+"relais-blu": {
+"url": "https://www.relaisblu.com/it/restaurant/fine-dining",
+"type": "site"
 },
 "ren-he-guan-xuhui": {
 "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/2/15098466.html",
@@ -4571,6 +4667,10 @@
 "url": "https://sanehjaan.com/contact",
 "type": "site"
 },
+"sanosushi": {
+"url": "https://restaurant.ikyu.com/124904/",
+"type": "other"
+},
 "sanso-kyoyamato": {
 "url": "https://www.kyoyamato.com/",
 "type": "site"
@@ -4703,9 +4803,17 @@
 "url": "https://sherwoodqueenstown.nz/restaurant",
 "type": "site"
 },
+"shigeyuki": {
+"url": "https://www.shigeyuki0319.com/",
+"type": "site"
+},
 "shimmonzen-yonemura": {
 "url": "https://r-yonemura.jp/",
 "type": "site"
+},
+"shinchi-yamamoto": {
+"url": "https://omakase.in/ja/r/wn593093",
+"type": "other"
 },
 "shinois": {
 "url": "https://shinois.com/",
@@ -4865,6 +4973,10 @@
 },
 "sushi-an": {
 "url": "https://twfoodgirl.com/anan_sushi/",
+"type": "other"
+},
+"sushi-anaba": {
+"url": "https://sushianaba.superbexperience.com/reserve/experience",
 "type": "other"
 },
 "sushi-harasho": {
@@ -5491,6 +5603,10 @@
 "url": "https://gs.ctrip.com/html5/you/foods/152/22098251.html",
 "type": "other"
 },
+"wok-by-obond": {
+"url": "https://www.travel.taipei/en/pictorial/article/62305",
+"type": "other"
+},
 "wolfsbane": {
 "url": "https://wolfsbanesf.com/",
 "type": "site"
@@ -5582,6 +5698,10 @@
 "yokoi": {
 "url": "https://kyo-yokoi.com",
 "type": "site"
+},
+"yonemasu": {
+"url": "https://restaurant.ikyu.com/121298/",
+"type": "other"
 },
 "yong": {
 "url": "https://gs.ctrip.com/html5/you/foods/152/135093329.html",
@@ -5702,6 +5822,7 @@
 },
 "daysOnly": [
 "a",
+"a-plus",
 "al-sorriso",
 "alex-dilling-at-hotel-cafe-royal",
 "alici",
@@ -5748,6 +5869,7 @@
 "el-portal-de-echaurren",
 "en-marge",
 "enoteca-pinchiorri",
+"escondido",
 "espadon",
 "essence-queenstown",
 "evelyns-table",
@@ -5760,15 +5882,18 @@
 "glicine",
 "guy-lassausaie",
 "hakunei",
+"hakusi",
 "hambleton-hall",
 "harbor-house-inn",
 "henne-kirkeby-kro",
 "hentley-farm",
 "hilda-and-jesse",
+"hill-street-tai-hwa-pork-noodle",
 "hiroo-ishizaka",
 "humble-chicken",
 "il-falconiere",
 "interalpen-chefs-table",
+"jingumae-higuchi",
 "kadeau-copenhagen",
 "kappo-muroi",
 "kenya",
@@ -5818,6 +5943,7 @@
 "numata",
 "okeya-kyujiro",
 "oku",
+"ono",
 "osteria-francescana",
 "poggio-rosso",
 "rakushin",
@@ -5830,6 +5956,7 @@
 "schloss-schauenstein",
 "schwarzer-hahn",
 "sherwood",
+"shinchi-yamamoto",
 "skillogalee-barrel-house",
 "sonnenberg-le-soir",
 "sosuheon",
@@ -5852,11 +5979,98 @@
 "villa-retiro",
 "willem-hiele",
 "winzerhof-stahl",
+"yonemasu",
 "yotsuya-minemura",
 "zeitraum",
 "zinan"
 ],
 "replacesGuide": [
 "bingsheng-private-kitchen-tianhe-east-road"
-]
+],
+"seasons": {
+"dattilo": "Open from late April to early November (2026: 25 April to 1 November); these are its spring and autumn hours",
+"la-palmeraie-chateau-de-valmer": "Open in the warmer months; closed now, its 2027 season starts on 1 May"
+},
+"none": {
+"alte-schule-klassenzimmer": {
+"checked": "2026-10-19",
+"note": "The hotel's pages give only reception hours and closure dates"
+},
+"antonello-colonna-labico": {
+"checked": "2026-10-19",
+"note": "Its site (every page and menu PDF) gives no days or times"
+},
+"blue-hill-at-stone-barns": {
+"checked": "2026-10-19",
+"note": "No weekly pattern: Tock opens set dates only"
+},
+"contrada": {
+"checked": "2026-10-19",
+"note": "Only a year-old Internet Archive copy of the Leading Hotels of the World page gave times (Tue–Sat 19:30–21:30); the hotel's own site says just \"dinner only\""
+},
+"de-heeren-van-harinxma": {
+"checked": "2026-10-19",
+"note": "The Zenchef account that gives daily dinner 18:00–21:00 also holds the hotel's breakfast, lunch and afternoon tea, so it may not be this restaurant's alone"
+},
+"dolomieu": {
+"checked": "2026-10-19",
+"note": "Seasonal (winter season from 6 December 2026, dinner only); DV Chalet's pages give no opening days"
+},
+"il-piccolo-principe": {
+"checked": "2026-10-19",
+"note": "The hotel's pages and menu PDF give no days or times; booking is a script-only widget"
+},
+"italo-bassi-confusion-restaurant": {
+"checked": "2026-10-19",
+"note": "Seasonal (2026 season 23 April–29 September); its site gives no days or times and its booking form is switched off"
+},
+"kaiseki-morimoto": {
+"checked": "2026-10-19",
+"note": "No website, social page or booking page (not on Ikyu, TableCheck, omakase.in, Pocket Concierge or OMAKASE)"
+},
+"kvitnes-gard": {
+"checked": "2026-10-19",
+"note": "Open nearly all year, dinner from 19:00, but no serving days given; its booking calendar needs a sign-in"
+},
+"la-verriere": {
+"checked": "2026-10-19",
+"note": "Seasonal (7 May–3 October); Hôtel Marinca's pages give no days or times and its TheFork page has a bot check"
+},
+"mezra-yalkavak": {
+"checked": "2026-10-19",
+"note": "Seasonal; its site gives no days or times and bookings for 2026 have closed"
+},
+"pico-velasco": {
+"checked": "2026-10-19",
+"note": "Its site gives only the phone desk's hours; its TheFork widget has a captcha"
+},
+"retiro-da-costina": {
+"checked": "2026-10-19",
+"note": "Its site gives hours for July and August only (Tue–Sat lunch and dinner, Sun lunch, Mon closed)"
+},
+"shimbashi-sasada": {
+"checked": "2026-10-19",
+"note": "No website and on no booking site; phone bookings only"
+},
+"shin-sushi": {
+"checked": "2026-10-19",
+"note": "No website or booking page; phone bookings only"
+},
+"smoked-room-dubai": {
+"checked": "2026-10-19",
+"note": "Temporarily closed, no reopening date given"
+},
+"stucki-tanja-grandits": {
+"checked": "2026-10-19",
+"note": "Closed for rebuilding from 28 September 2026 until about November 2027"
+},
+"sylvestre-wahid-les-grandes-alpes": {
+"checked": "2026-10-19",
+"note": "Closed after a fire in February 2026"
+},
+"zass": {
+"checked": "2026-10-19",
+"note": "Seasonal (Il San Pietro opens about April–October); its contact page's Monday–Saturday 11:00–23:00 look like phone hours, not service"
+}
+}
 }

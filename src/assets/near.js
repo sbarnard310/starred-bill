@@ -43,6 +43,7 @@ getData(DATA.hoursUrl).catch(() => null).then((d) => {
   Object.entries(d.h).forEach(([id, week]) => { near.hours[id] = week.split(";").map((day) => day ? day.split(",").map((s) => s.split("-")) : []); });
   near.hoursChecked = d.checked;
   near.timedHours = new Set(d.g || []);
+  near.daysOnly = new Set(d.d || []);
   if (near.here) { renderFilters(); render(false); }
 }).catch(() => {});
 
@@ -68,7 +69,8 @@ function openFor(r, day, meal) {
   return trusted(s, r) ? s.some((x) => servesMeal(x, meal)) : true;
 }
 const clock = (hhmm) => hhmm === "0000" || hhmm === "2400" ? "midnight" : hhmm.slice(0, 2) + ":" + hhmm.slice(2);
-const timesOn = (s, r) => s && trusted(s, r) ? s.map(([a, b]) => clock(a) + "–" + clock(b)).join(", ") : "";
+// Those whose own page gave days and meals but no times ("d") have placeholder times, used for the meal but never shown.
+const timesOn = (s, r) => s && trusted(s, r) && !(r && near.daysOnly && near.daysOnly.has(r.id)) ? s.map(([a, b]) => clock(a) + "–" + clock(b)).join(", ") : "";
 function hoursText(r) {
   const day = near.day === "" ? today() : near.day, s = sittings(r, day);
   if (s == null) return "";
@@ -507,7 +509,7 @@ function renderList() {
   }
   if (near.day !== "") {
     const unknown = near.rows.filter((r) => r.d <= radiusMetres() && r.id && sittings(r, 0) == null).length;
-    if (unknown) $("nearCount").insertAdjacentHTML("beforeend",  ' <span class="nc-hours-note">Opening hours from the MICHELIN Guide, or the restaurant's own website where it has none; check with the restaurant before you go. ' + unknown +
+    if (unknown) $("nearCount").insertAdjacentHTML("beforeend",  ' <span class="nc-hours-note">Opening hours from the MICHELIN Guide, or the restaurant’s own website where it has none; check with the restaurant before you go. ' + unknown +
       (unknown === 1 ? " restaurant here lists none, so it's" : " restaurants here list none, so they're") + " left out.</span>");
   }
   $("nearRows").innerHTML = shown.map((r) => {

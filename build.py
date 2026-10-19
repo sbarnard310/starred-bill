@@ -4879,6 +4879,8 @@ def chef_stats(live):
     living = [t for t in named if t[0] not in CHEFS_DECEASED]
     out.update({"nameTop": named[0][1], "nameTopStars": str(stars_of(named[0][2])), "nameTopN": str(len(named[0][2])),
                 "nameLiving": living[0][1], "nameLivingStars": str(stars_of(living[0][2])), "nameLivingN": str(len(living[0][2]))})
+    for i, (key, chef, rows) in enumerate(living[1:3], 2):  # {{nameLiving2}}, {{nameLiving3Stars}}…: the runners-up
+        out.update({f"nameLiving{i}": chef, f"nameLiving{i}Stars": str(stars_of(rows)), f"nameLiving{i}N": str(len(rows))})
     return out
 
 
@@ -6659,7 +6661,8 @@ def build_guides():
         ]
         # Results pages put their questions in as headings (no separate FAQ), so the FAQPage data comes from those; so can
         # any guide with `faqFromHeadings` (owner's rule: a search question is a heading with its answer under it).
-        questions = faqs or g.get("ldFaq") or (heading_questions(body) if g.get("faqFromHeadings") else [])
+        # A guide can have both: its question headings first, then the FAQ (the chefs guide, 19 Oct 2026).
+        questions = ((heading_questions(body) + faqs)[:FAQ_MAX] if g.get("faqFromHeadings") else faqs or g.get("ldFaq"))
         if questions:
             graph.append({"@type": "FAQPage", "mainEntity": [
                 {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in questions]})

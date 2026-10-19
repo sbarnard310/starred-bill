@@ -8365,9 +8365,11 @@ print(f"Built {len(pages) + 1} pages from {len(restaurants)} restaurants into {O
 print("  /  (homepage)")
 for g in guides:
     print(f"  /guides/{g}/  {guides[g]['h1']}")
-for r in restaurants:
-    if r.get("page"):
-        print(f"  {r['page']}  {r['name']}")
+# Restaurant pages as one line, not one each: Cloudflare's build fails when the log gets too long (19 Oct 2026: a 71 KB log
+# failed, 46 KB passed), and the waves add thousands of pages.
+_next = min((w for w in WAVES if w["from"] > date.today().isoformat()), key=lambda w: w["from"], default=None)
+print(f"  /restaurants/…  {sum(1 for r in restaurants if r.get('page'))} restaurant pages ({sum(1 for r in restaurants if r.get('page') and r['id'] in RESTAURANT_PAGES)} researched, "
+      f"{sum(1 for r in restaurants if r.get('page') and r['id'] in WAVE_DAY)} from waves" + (f"; next wave of {len(_next['ids'])} on {_next['from']}" if _next else "") + ")")
 for p in sorted(pages, key=lambda p: p["path"]):
     print(f"  {p['path']}  {p['name']}, {starred_n[p['id']]} starred")
 for old, pid in sorted(redirects.items()):

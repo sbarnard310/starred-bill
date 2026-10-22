@@ -699,6 +699,9 @@ button.crow-from { background: none; border: 0; padding: 0; font: inherit; font-
    in build.py; home.js shows one at random and steps through the rest). */
 .home-hero .wrap { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: center; }
 .home-hero .figures { margin-top: 28px; max-width: 560px; }
+/* Under the figures, the guide that answers "how many Michelin star restaurants are there in the world?" */
+.home-hero .fig-link { margin: 10px 0 0; font-size: .85rem; }
+.home-hero .fig-link a { color: var(--band-ink); text-underline-offset: 3px; }
 /* "Prices in": the currency every price on the homepage shows in (renderCurrency() in home.js). */
 .home-cur { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-top: 16px; font-size: .85rem; color: var(--band-muted); }
 .home-cur > span:first-child { font-weight: 600; }
@@ -770,6 +773,7 @@ button.crow-from { background: none; border: 0; padding: 0; font: inherit; font-
   .home .home-hero .wrap { gap: 0; }
   .home-sample { order: 1; max-width: 340px; margin-top: 28px; }
   .home-hero .figures { order: 2; margin-top: 24px; }
+  .home-hero .fig-link { order: 2; }
   .home-cur { order: 0; }
   .pop-cards { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 46%; overflow-x: auto; scroll-snap-type: x mandatory; margin-inline: -16px; padding: 0 16px 6px; scrollbar-width: none; }
   .pop-cards::-webkit-scrollbar { display: none; }

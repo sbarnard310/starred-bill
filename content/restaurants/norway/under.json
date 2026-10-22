@@ -8,9 +8,9 @@
   "rating": 4.3,
   "reviews": 753,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
+  "dinnerNote": "Set menu, 10–12 courses",
   "wine": 2250,
-  "sourceType": "none",
+  "sourceType": "site",
   "lunch": 1650,
   "lunchType": "menu",
   "lunchNote": "Lunch menu",
@@ -25,7 +25,7 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNb": "Smaksmeny; prisen legges til senere",
+  "dinnerNoteNb": "Fast meny, 10–12 retter",
   "lunchNoteNb": "Lunsjmeny",
   "chef": "Nicolai Ellitsgaard",
   "chefSource": "press",
@@ -38,5 +38,7 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 721,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dinner": 2750,
+  "source": "https://under.no/mat-og-drikke/"
 }

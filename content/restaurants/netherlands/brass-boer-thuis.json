@@ -8,8 +8,8 @@
   "rating": 4.5,
   "reviews": 409,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "Surprise menu, 6 courses (7 courses €130; vegetable menu €105)",
+  "sourceType": "site",
   "lunch": 98,
   "lunchType": "menu",
   "lunchNote": "Lunch menu",
@@ -26,6 +26,9 @@
   ],
   "chef": "Jonnie Boer",
   "chefSource": "michelin",
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "lunchNoteNl": "Lunchmenu"
+  "dinnerNoteNl": "Verrassingsmenu, 6 gangen (7 gangen €130; groentemenu €105)",
+  "lunchNoteNl": "Lunchmenu",
+  "dinner": 115,
+  "source": "https://indd.adobe.com/view/3f9193ed-c17b-4248-ac83-5ea8c4bab1b7",
+  "wine": 65
 }

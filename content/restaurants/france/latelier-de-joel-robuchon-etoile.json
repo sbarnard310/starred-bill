@@ -9,16 +9,16 @@
   "cuisine": "Modern European",
   "rating": 4.4,
   "reviews": 3884,
-  "dinnerType": "spend",
-  "dinnerNote": "À la carte small plates",
-  "dinnerNoteFr": "Petites assiettes à la carte",
-  "sourceType": "none",
-  "lunch": 52,
+  "dinnerType": "menu",
+  "dinnerNote": "Signature menu of Joël Robuchon's best-known dishes (vegetarian menu €110; or à la carte, mains €54–89); service included",
+  "dinnerNoteFr": "Menu Signature, les plats emblématiques de Joël Robuchon (menu végétarien 110 € ; ou à la carte, plats 54–89 €) ; service compris",
+  "sourceType": "site",
+  "lunch": 55,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu, from",
-  "lunchNoteFr": "Menu déjeuner, à partir de",
+  "lunchNote": "Lunch menu, 4 courses (€75 and €95 with more courses)",
+  "lunchNoteFr": "Menu déjeuner en 4 temps (75 € et 95 € avec plus de plats)",
   "lunchSourceType": "site",
-  "lunchSource": "https://atelier-robuchon-etoile.com/",
+  "lunchSource": "https://atelier-robuchon-etoile.com/la-carte/",
   "website": "https://atelier-robuchon-etoile.com/",
   "lat": 48.8728404,
   "lng": 2.2973168,
@@ -28,5 +28,7 @@
     "vegetarian-menu"
   ],
   "chef": "Éric Bouchenoire",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinner": 220,
+  "source": "https://atelier-robuchon-etoile.com/la-carte/"
 }

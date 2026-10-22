@@ -11,10 +11,10 @@
   "rating": 4.8,
   "reviews": 425,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting and à la carte menus (prices not confirmed)",
-  "wine": 95,
-  "sourceType": "none",
-  "source": "https://www.caractererestaurant.com/",
+  "dinnerNote": "À la carte at a set price, 3 courses (5-course tasting menu £155, pairing £95)",
+  "wine": 68,
+  "sourceType": "site",
+  "source": "https://www.caractererestaurant.com/s/Menus.pdf",
   "lunch": 65,
   "lunchType": "menu",
   "lunchNote": "Lunch menu, 3 courses",
@@ -32,5 +32,6 @@
     "gluten-free"
   ],
   "chef": "Diego Ferrari",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinner": 125
 }

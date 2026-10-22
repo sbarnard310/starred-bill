@@ -7,10 +7,10 @@
   "cuisine": "British",
   "rating": 4.6,
   "reviews": 452,
-  "dinnerType": "menu",
-  "dinnerNote": "À la carte (pre-theatre 3 courses £80); prices not confirmed",
-  "sourceType": "none",
-  "source": "https://www.thegoring.com/",
+  "dinnerType": "main",
+  "dinnerNote": "À la carte, typical main course (mains £45–78)",
+  "sourceType": "site",
+  "source": "https://www.thegoring.com/media/u2ylczwd/dining-room-a-la-carte.pdf",
   "lunch": 49,
   "lunchType": "menu",
   "lunchNote": "Set lunch, 3 courses",
@@ -27,5 +27,6 @@
     "vegan"
   ],
   "chef": "Graham Squire",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 48
 }

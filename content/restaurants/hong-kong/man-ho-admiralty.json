@@ -11,15 +11,15 @@
   "rating": 4.4,
   "reviews": 228,
   "dinnerType": "spend",
-  "dinnerNote": "À la carte Cantonese",
-  "dinnerNoteZh": "單點粵菜",
-  "sourceType": "none",
-  "lunch": 538,
-  "lunchType": "menu",
-  "lunchNote": "Set lunch, changes fortnightly (2022 price)",
-  "lunchNoteZh": "午市套餐，每兩星期更換（2022年價格）",
+  "dinnerNote": "À la carte Cantonese; typical dinner spend per person (SCMP 100 Top Tables 2026)",
+  "dinnerNoteZh": "單點粵菜；晚餐每人一般消費（SCMP 100 Top Tables 2026）",
+  "sourceType": "press",
+  "lunch": 500,
+  "lunchType": "spend",
+  "lunchNote": "À la carte dim sum and Cantonese dishes; typical lunch spend per person",
+  "lunchNoteZh": "單點點心及粵菜；午餐每人一般消費",
   "lunchSourceType": "press",
-  "lunchSource": "https://guide.michelin.com/mo/en/article/dining-out/executive-set-lunches-under-hk-800-from-michelin-starred-restaurants-in-causeway-bay-wan-chai-and-admiralty",
+  "lunchSource": "https://100toptables.scmp.com/restaurants-profile-2026/man-ho",
   "website": "https://www.marriott.com/en-us/dining/restaurant-bar/hkgdt-jw-marriott-hotel-hong-kong/5308052-man-ho-chinese-restaurant.mi",
   "lat": 22.2776712,
   "lng": 114.1659424,
@@ -30,5 +30,7 @@
     "vegan"
   ],
   "chef": "Jayson Tang",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 1000,
+  "source": "https://100toptables.scmp.com/restaurants-profile-2026/man-ho"
 }

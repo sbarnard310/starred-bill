@@ -9,10 +9,10 @@
   "cuisine": "Italian",
   "rating": 4.5,
   "reviews": 635,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menus, well over HK$2,000 (price on request)",
-  "dinnerNoteZh": "品嚐菜單，遠超港幣2,000（價格需查詢）",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinnerNote": "Typical dinner spend per person (SCMP 100 Top Tables 2026); seasonal tasting menu and à la carte, prices not published",
+  "dinnerNoteZh": "晚餐每人一般消費（SCMP 100 Top Tables 2026）；季節品嚐菜單及單點，未公布價格",
+  "sourceType": "press",
   "lunch": 1190,
   "lunchType": "menu",
   "lunchNote": "Set lunch, 3 courses, Mon–Sat",
@@ -25,5 +25,7 @@
   "placeId": "ChIJTSKji2QABDQRqD5qV3Bt2d8",
   "michelinId": "314218",
   "chef": "Umberto Bombana",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dinner": 1680,
+  "source": "https://100toptables.scmp.com/restaurants-profile-2026/81-2-otto-e-mezzo-bombana"
 }

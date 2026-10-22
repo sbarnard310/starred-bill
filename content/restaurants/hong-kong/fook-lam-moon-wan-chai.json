@@ -11,9 +11,9 @@
   "rating": 4.2,
   "reviews": 568,
   "dinnerType": "spend",
-  "dinnerNote": "À la carte Cantonese",
-  "dinnerNoteZh": "單點粵菜",
-  "sourceType": "none",
+  "dinnerNote": "À la carte Cantonese; typical dinner spend per person",
+  "dinnerNoteZh": "單點粵菜；晚餐每人一般消費",
+  "sourceType": "press",
   "lunch": 580,
   "lunchType": "menu",
   "lunchNote": "Executive set lunch (minimum 4 guests)",
@@ -37,5 +37,7 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dinner": 800,
+  "source": "https://www.openrice.com/en/hongkong/r-fook-lam-moon-wan-chai-guangdong-dim-sum-r812/reviews"
 }

@@ -8,13 +8,13 @@
   "rating": 4.7,
   "reviews": 194,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
-  "lunch": 48,
+  "dinnerNote": "4-course menu (5 courses €120); one menu per table",
+  "sourceType": "site",
+  "lunch": 70,
   "lunchType": "menu",
-  "lunchNote": "Lunch menu",
-  "lunchSourceType": "press",
-  "lunchSource": "https://www.gaultmillau.be/en/restaurants/modest-opglabbeek",
+  "lunchNote": "3-course lunch menu, not on Saturday (4 courses €95)",
+  "lunchSourceType": "site",
+  "lunchSource": "https://www.restaurantmodest.be/",
   "website": "https://www.restaurantmodest.be/",
   "lat": 51.0494814,
   "lng": 5.599175,
@@ -23,10 +23,12 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteNl": "Menu van 4 gangen (5 gangen €120); één menu per tafel",
+  "dinnerNoteFr": "Menu en 4 services (5 services 120 €) ; un menu par table",
   "chef": "Sander Spreeuwers",
   "chefSource": "press",
-  "lunchNoteNl": "Lunchmenu",
-  "lunchNoteFr": "Menu déjeuner"
+  "lunchNoteNl": "Lunchmenu, 3 gangen, niet op zaterdag (4 gangen €95)",
+  "lunchNoteFr": "Menu déjeuner en 3 services, sauf le samedi (4 services 95 €)",
+  "dinner": 95,
+  "source": "https://www.restaurantmodest.be/"
 }

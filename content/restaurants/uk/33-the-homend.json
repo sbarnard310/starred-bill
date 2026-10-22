@@ -11,9 +11,9 @@
   "changeDate": "2025-02",
   "rating": 4.9,
   "reviews": 58,
-  "dinnerType": "spend",
-  "dinnerNote": "À la carte",
-  "sourceType": "none",
+  "dinnerType": "main",
+  "dinnerNote": "À la carte, typical main course (mains £46–49)",
+  "sourceType": "site",
   "lunch": 55,
   "lunchType": "menu",
   "lunchNote": "Lunch, 3 courses (2 courses £45)",
@@ -25,5 +25,7 @@
   "placeId": "ChIJl_6nQ6JVcEgR1AjlatCksKU",
   "michelinId": "1203317",
   "chef": "James Winter",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 47,
+  "source": "https://www.33thehomendledbury.co.uk/about"
 }

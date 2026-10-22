@@ -9,10 +9,10 @@
   "cuisine": "French",
   "rating": 4.3,
   "reviews": 690,
-  "dinnerType": "spend",
-  "dinnerNote": "À la carte French",
-  "dinnerNoteZh": "單點法國菜",
-  "sourceType": "none",
+  "dinnerType": "menu",
+  "dinnerNote": "Tasting menu in the upstairs dining room (à la carte also offered)",
+  "dinnerNoteZh": "樓上餐廳品嚐菜單（亦設單點）",
+  "sourceType": "press",
   "lunch": 478,
   "lunchType": "menu",
   "lunchNote": "Set lunch, 3 courses (2 courses HK$398)",
@@ -29,5 +29,7 @@
     "vegetarian"
   ],
   "chef": "Julien Royer",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "dinner": 1588,
+  "source": "https://www.afoodieworld.com/blog/2026/07/08/best-french-restaurants-hk/"
 }

@@ -12,9 +12,9 @@
   "changeNoteFr": "Obtient sa première étoile",
   "rating": 4.7,
   "reviews": 71,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "main",
+  "dinnerNote": "À la carte at dinner; typical main course (mains €35–65)",
+  "sourceType": "site",
   "lunch": 69,
   "lunchType": "menu",
   "lunchNote": "Lunch menu",
@@ -28,11 +28,13 @@
   "diets": [
     "vegetarian"
   ],
-  "dinnerNoteNl": "Proeverijmenu; prijs volgt nog",
-  "dinnerNoteFr": "Menu dégustation ; prix pas encore ajouté",
+  "dinnerNoteNl": "À la carte 's avonds; gemiddeld hoofdgerecht (hoofdgerechten €35–65)",
+  "dinnerNoteFr": "À la carte le soir ; plat principal moyen (plats 35–65 €)",
   "areaFr": "La Panne",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner",
   "chef": "Stéphane Buyens",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dinner": 45,
+  "source": "https://www.subtiel-dining.be/nl/a-la-carte"
 }

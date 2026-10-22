@@ -8,8 +8,8 @@
   "rating": 4.8,
   "reviews": 461,
   "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerNote": "4-course seasonal evening menu, until 8pm (5 courses €158)",
+  "sourceType": "site",
   "lunch": 63,
   "lunchType": "menu",
   "lunchNote": "Lunch menu",
@@ -25,6 +25,8 @@
   ],
   "chef": "Eric Schumacher",
   "chefSource": "michelin",
-  "dinnerNoteDe": "Degustationsmenü; Preis wird noch ergänzt",
-  "lunchNoteDe": "Mittagsmenü"
+  "dinnerNoteDe": "Viergängiges Abendmenü zur Jahreszeit, bis 20 Uhr (5 Gänge 158 €)",
+  "lunchNoteDe": "Mittagsmenü",
+  "dinner": 138,
+  "source": "https://doblers-restaurant.de/wp-content/uploads/2026/06/A-Menue-zur-Jahreszeit-Abend-24.pdf"
 }

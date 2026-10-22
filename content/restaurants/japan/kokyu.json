@@ -8,9 +8,9 @@
   "cuisine": "Japanese",
   "rating": 4.6,
   "reviews": 81,
-  "dinnerType": "menu",
-  "dinnerNote": "Tasting menu; price still to be added",
-  "sourceType": "none",
+  "dinnerType": "spend",
+  "dinnerNote": "Omakase kaiseki, priced by the day's ingredients (no fixed price); typical dinner spend",
+  "sourceType": "press",
   "website": "https://www.kokyu-kyoto.com/",
   "lat": 35.031138,
   "lng": 135.769534,
@@ -21,5 +21,8 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.kokyu-kyoto.com/menu_plan.html",
   "lunchNote": "Lunch kaiseki",
-  "lunchNoteJa": "昼懐石"
+  "lunchNoteJa": "昼懐石",
+  "dinner": 31000,
+  "source": "https://hitosara.com/0006078206/",
+  "dinnerNoteJa": "おまかせ懐石、その日の食材で価格が変わる（定価なし）；ディナーの平均予算"
 }

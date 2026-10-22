@@ -121,6 +121,7 @@ def page_checks(site):
 # Internal links, against the "Internal links" rules in the Handbook's content style guide: keyword anchor text, links
 # inside relevant sentences, no self-links, one link per page per article, enough links in and out of every page.
 LANG_PREFIX = re.compile(r"^/(?:zh|yue|zhs|fr|ja|es|it|ko|da|sv|is|ca|th|de|nl|pt|nb|fi|pl|cs|hu|sl|hr|sr|el|tr|lt|lv|et|mt|ms|fil|vi|ar)/")
+LUNCH_ONLY_RE = re.compile(r"lunch\b[^;.]*\bonly", re.I)  # dinnerNote of a restaurant that serves no dinner ("Lunch only, Thursday to Sunday")
 VAGUE = re.compile(r"^(?:here|click here|this|this page|this guide|this link|page|link|more|read more|see more|learn more|find out more|see|go|our page)$", re.I)
 # Names that contain a place's name without being about it: a guide's own title ("MICHELIN Guide Thailand 2026"), and
 # places we have no page for whose names hold one we do ("New Mexico", "New South Wales").
@@ -283,7 +284,8 @@ def data_checks(site):
         g["diets_from_guide"] += bool(r.get("diets")) and not r.get("dietsManual")
         g["hours_from_guide"] += r["_id"] in guide_hours
         g["starred"] += 1
-        g["no_price"] += r.get("dinner") is None
+        g["no_price"] += r.get("dinner") is None and r.get("lunch") is None  # no price at all, as page titles count it
+        g["no_dinner_price"] += r.get("dinner") is None and r.get("lunch") is not None and not LUNCH_ONLY_RE.match(r.get("dinnerNote") or "")
         g["no_rating"] += r.get("rating") is None
         g["few_reviews"] += r.get("rating") is not None and (r.get("reviews") or 0) < 20
         g["no_chef"] += not r.get("chef")
@@ -313,7 +315,7 @@ def data_checks(site):
                     odd.append(f"{r['name']} ({r['_country']}, {r['stars']} star, about ${round(usd)})")
     stale = [r["name"] for r in live if r.get("dinner") is not None and "still to be added" in (r.get("dinnerNote") or "")]
     by_gap = {k: sorted(((g[k], c, g["starred"]) for c, g in gaps.items() if g[k]), reverse=True)[:8]
-              for k in ("no_price", "no_chef", "no_rating", "no_hours", "stars_from_guide_site")}
+              for k in ("no_price", "no_dinner_price", "no_chef", "no_rating", "no_hours", "stars_from_guide_site")}
     return {"restaurants": len(rows), "starred": len(live), "totals": dict(total),
             "worst_countries": {k: [f"{c}: {n} of {s}" for n, c, s in v] for k, v in by_gap.items()},
             "duplicates": [v for v in seen.values() if len(v) > 1], "odd_prices": odd, "stale_notes": stale,

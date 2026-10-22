@@ -1927,12 +1927,22 @@ def section_words(html_text, lang, page, starred, michelin_url=None):
         if key not in SECTION_KEYS:
             return m.group(0)
         if key == "m3Text" and michelin_url:
-            # Marked data-own rather than data-i18n, so common.js's applyI18n() leaves the link in place.
+            # Marked data-own rather than data-i18n, so common.js's applyI18n() leaves the links in place.
             return (m.group(1).replace('data-i18n="m3Text"', 'data-own="m3Text"')
-                    + link_michelin_guide(own.get(key) or word(lang, key, {}), michelin_url) + m.group(4))
+                    + link_michelin_guide(own.get(key) or word(lang, key, {}), michelin_url) + pillar_line(lang) + m.group(4))
         text = e(own[key]) if own.get(key) else word(lang, swap.get(key, key), {})
         return m.group(1) + text + m.group(4)
     return re.sub(r'(<(\w+)\b[^>]*\bdata-i18n="(\w+)"[^>]*>)(</\2>)', fill, html_text)
+
+
+def pillar_line(lang):
+    """A sentence after the star source line linking "What is a Michelin star?" in the page's language, where the guide
+    has that translation (m3Pillar in src/faq-words.json, the anchor in [brackets]), so translated destination pages
+    link it from the page itself as well as the footer ("estrella michelin", "michelin stern")."""
+    text = (FAQ_WORDS.get(lang) or {}).get("m3Pillar")
+    if not text or lang not in guide_translations.get(GUIDE_PILLAR, {}):
+        return ""
+    return " " + re.sub(r"\[(.+?)\]", lambda m: f'<a href="{guide_path(GUIDE_PILLAR, lang)}">{m.group(1)}</a>', e(text))
 
 
 def place_sources_html(p, lang):
@@ -7879,7 +7889,7 @@ def build_restaurant_pages():
 
         hero = (f'<div class="hero rp-hero" id="top">\n  <div class="wrap">\n    <div>\n'
                 f'      <span class="eyebrow" style="color: var(--band-muted)">{stars_html} {e(stars_label)} · {e(r.get("cuisine", ""))}</span>\n'
-                f'      <h1 style="margin-top: 12px">{e(page_name(r, shared))}: what it <em>costs</em></h1>\n'
+                f'      <h1 style="margin-top: 12px">{e(page_name(r, shared))} prices: what it <em>costs</em></h1>\n'
                 f'      <p class="rp-where">{e(where)}' + (f' · In {e(r["hotel"])}' if r.get("hotel") else "") + (f' · Chef {e(r["chef"])}' if r.get("chef") else "") + '</p>\n'
                 f'      <p class="rp-answer">{e(answer)}</p>\n'
                 + (f'      <p class="rp-acclaim">{e(acclaim)}</p>\n' if acclaim else "")

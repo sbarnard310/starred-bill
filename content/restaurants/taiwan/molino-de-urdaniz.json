@@ -33,5 +33,6 @@
     "vegetarian"
   ],
   "chef": "Govinda Pérez de Ciriza and Adrian Benec",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

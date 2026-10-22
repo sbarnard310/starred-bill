@@ -22,11 +22,10 @@
   "placeId": "ChIJSToWqn2AhYAR1CuH2iGMvuo",
   "michelinId": "325324",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Corey Lee",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "days": 30,
@@ -45,5 +44,6 @@
   "photoSourceType": "commons",
   "photoWidth": 667,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

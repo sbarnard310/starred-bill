@@ -18,10 +18,12 @@
   "placeId": "ChIJg2ySsFBbekcR-PLGw2nIRAY",
   "michelinId": "1160194",
   "diets": [
-    "vegetarian"
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
   ],
-  "chef": "Ana Roš Stojan",
-  "chefSource": "michelin",
+  "chef": "Ana Roš",
+  "chefSource": "site",
   "lunch": 335,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sun",
@@ -40,5 +42,6 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -23,11 +23,6 @@
   "lng": 14.7408182,
   "placeId": "ChIJzctdA3iZERMR_umre_dNRko",
   "michelinId": "160079",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Ciccio Sultano",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

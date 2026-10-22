@@ -31,5 +31,6 @@
     "vegetarian"
   ],
   "chef": "Arnaud Faye",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

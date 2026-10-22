@@ -17,12 +17,15 @@
   "placeId": "ChIJvVDs7bZPqEcRVuzEV98NWz8",
   "michelinId": "549658",
   "diets": [
-    "vegetarian"
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "René Frank",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 264 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

@@ -24,12 +24,6 @@
   "lng": 0.1481393,
   "placeId": "ChIJERyvt38PnhIRAwcr9D1fTxA",
   "michelinId": "354160",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
-  ],
   "chef": "Alberto Ferruz",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

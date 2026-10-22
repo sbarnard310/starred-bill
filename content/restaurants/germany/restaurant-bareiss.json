@@ -22,7 +22,7 @@
     "vegetarian"
   ],
   "chef": "Claus-Peter Lumpp",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 178 €)",
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteDe": "Mittags geöffnet · Do–So",
@@ -35,5 +35,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 684,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -28,8 +28,10 @@
   "placeId": "ChIJ19fWQQB16UcRaO3m-XojFAg",
   "michelinId": "1214420",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Philippe Mille",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

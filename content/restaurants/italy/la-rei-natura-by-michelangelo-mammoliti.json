@@ -23,10 +23,9 @@
   "michelinId": "256966",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Michelangelo Mammoliti",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

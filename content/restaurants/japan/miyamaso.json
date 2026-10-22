@@ -16,11 +16,8 @@
   "lng": 135.793011,
   "placeId": "ChIJ_UQgQvW6AWARv8m8MI8Vzag",
   "michelinId": "1193055",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Hisato Nakahigashi",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinner": 22770,
   "dinnerNoteJa": "懐石コース（最安値）・税サ込",
   "source": "https://miyamasou.jp/",

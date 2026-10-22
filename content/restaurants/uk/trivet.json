@@ -26,5 +26,6 @@
     "vegetarian"
   ],
   "chef": "Jonny Lake",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

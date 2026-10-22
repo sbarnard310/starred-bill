@@ -29,11 +29,8 @@
   "lng": 2.153037,
   "placeId": "ChIJTSzGu4WipBIRkznre9Zwis0",
   "michelinId": "459806",
-  "diets": [
-    "vegetarian"
-  ],
-  "chef": "Eduard Xatruch, Oriol Castro and Mateu Casañas",
-  "chefSource": "michelin",
+  "chef": "Oriol Castro, Eduard Xatruch and Mateu Casañas",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "days": 365,

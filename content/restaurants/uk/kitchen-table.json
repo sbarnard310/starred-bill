@@ -24,7 +24,7 @@
     "vegetarian"
   ],
   "chef": "James Knappett",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinner": 195,
   "photo": "kitchen-table.jpg",
   "photoAlt": "The dark shopfront and wooden door of Kitchen Table on Charlotte Street, Fitzrovia, London",
@@ -35,5 +35,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

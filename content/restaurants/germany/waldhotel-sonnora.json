@@ -17,11 +17,8 @@
   "lng": 6.8109342,
   "placeId": "ChIJwYTUnAPTv0cRZNx6gTEo3i0",
   "michelinId": "78982",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Clemens Rambichler",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 360,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fri–Sun",

@@ -25,7 +25,6 @@
   "placeId": "ChIJJWbHmcM1w0cRrzNcwfHum0M",
   "michelinId": "313484",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu",
@@ -33,5 +32,6 @@
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner",
   "chef": "Tim Boury",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

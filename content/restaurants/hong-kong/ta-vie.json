@@ -26,7 +26,7 @@
   "placeId": "ChIJB-qdUXsABDQRlotSKcO6_3Q",
   "michelinId": "475135",
   "chef": "Hideaki Sato",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "months": 2,

@@ -22,12 +22,8 @@
   "lng": 14.0023486,
   "placeId": "ChIJswnAHmmAc0cR_6cM5pOOGO8",
   "michelinId": "1212932",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Philip Rachinger",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 98 €)",
   "lunchNoteDe": "Mittagsmenü"
 }

@@ -29,9 +29,6 @@
   "lng": -1.980029,
   "placeId": "ChIJhwSoqVelUQ0RY-IbWu6ubUg",
   "michelinId": "1191398",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Paulo Airaudo",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

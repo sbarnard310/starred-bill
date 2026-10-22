@@ -24,12 +24,8 @@
   "lng": -2.953868,
   "placeId": "ChIJjbtjyxSYfEgR8juzNPgcI6g",
   "michelinId": "187468",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
-  "chef": "Simon Rogan Mbe",
-  "chefSource": "michelin",
+  "chef": "Simon Rogan",
+  "chefSource": "site",
   "photo": "lenclume.jpg",
   "photoAlt": "The stone building of L'Enclume in Cartmel, Cumbria, with its name on the wall",
   "photoCredit": "TruffUK",

@@ -23,11 +23,8 @@
   "lng": 2.3279216,
   "placeId": "ChIJ81phINFx5kcRW5UjTPo8aGc",
   "michelinId": "5912",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "Hélène Darroze",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu, 5 courses (8 courses €290)",
   "dinnerNoteFr": "Menu en 5 services (8 services 290 €)",
   "lunchNote": "Lunch menu",

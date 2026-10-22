@@ -25,12 +25,8 @@
   "lng": 4.4342053,
   "placeId": "ChIJM_Y85_919UcReASpU9RrmFA",
   "michelinId": "65448",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Jacques Marcon",
-  "chefSource": "michelin",
+  "chef": "Régis, Jacques and Paul Marcon",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "monthly",
     "weekday": "tue",

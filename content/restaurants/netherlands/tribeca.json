@@ -24,11 +24,11 @@
   "michelinId": "502881",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Jan Sobecki",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 185)",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "dietsManual": true
 }

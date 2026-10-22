@@ -31,11 +31,8 @@
   "lng": 2.3645215,
   "placeId": "ChIJK-TZ1v9x5kcRvQoSvNJ21Vo",
   "michelinId": "5821",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "Shintaro Awa",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "lambroisie.jpg",
   "photoAlt": "The door of L'Ambroisie on the Place des Vosges, Paris, with its name plaque on the stone wall",
   "photoCredit": "Ibrahim Husain Meraj",

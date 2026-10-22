@@ -23,14 +23,13 @@
   "michelinId": "1201933",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Himanshu Saini",
   "chefSource": "site",
   "dinnerNoteAr": "قائمة تذوق",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteAr": "العشاء فقط"
+  "lunchNoteAr": "العشاء فقط",
+  "dietsManual": true
 }

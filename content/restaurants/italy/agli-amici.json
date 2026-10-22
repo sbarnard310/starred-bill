@@ -28,9 +28,9 @@
   "michelinId": "155717",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Emanuele Scarello",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

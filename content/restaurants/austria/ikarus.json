@@ -30,5 +30,6 @@
   "lunchNoteDe": "Gleiches Menü am Mittag · Fr–Sa",
   "lunchWine": 225,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.hangar-7.com/de/kulinarik/restaurant-ikarus"
+  "lunchSource": "https://www.hangar-7.com/de/kulinarik/restaurant-ikarus",
+  "dietsManual": true
 }

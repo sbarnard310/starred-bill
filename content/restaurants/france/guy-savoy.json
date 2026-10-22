@@ -27,10 +27,6 @@
   "lng": 2.3391955,
   "placeId": "ChIJ64SRn-xv5kcRH7AlSsBFASQ",
   "michelinId": "6477",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Guy Savoy",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

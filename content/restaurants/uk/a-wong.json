@@ -23,8 +23,10 @@
   "placeId": "ChIJkQhKHeAEdkgRbgw0TGfq-W8",
   "michelinId": "389725",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Andrew Wong",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -17,13 +17,8 @@
   "lng": -43.22471,
   "placeId": "ChIJJSAnM03UmwARJ8pWMKzJmP4",
   "michelinId": "498425",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Felipe Bronze",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde R$690)",
   "lunchNote": "Open for lunch · Saturdays",
   "lunchNotePt": "Aberto ao almoço · sábado"

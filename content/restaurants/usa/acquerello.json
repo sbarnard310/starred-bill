@@ -22,11 +22,10 @@
   "placeId": "ChIJwYdY3uqAhYARXUJUOIELoqU",
   "michelinId": "123501",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Suzette Gresham",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

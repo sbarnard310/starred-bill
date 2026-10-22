@@ -31,9 +31,6 @@
   "lng": 2.3780547,
   "placeId": "ChIJ__-zAA5y5kcRqLoe0pGwlcw",
   "michelinId": "504298",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Frédéric Lorimier",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -24,9 +24,9 @@
   "michelinId": "501607",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Emmanuel Stroobant",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

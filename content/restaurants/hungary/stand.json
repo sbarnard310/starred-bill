@@ -30,5 +30,6 @@
   "dinnerNoteHu": "Kóstolómenü",
   "lunchNoteHu": "Ebédmenü",
   "chef": "Tamás Széll and Szabina Szulló",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

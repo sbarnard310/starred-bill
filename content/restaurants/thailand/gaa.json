@@ -23,9 +23,12 @@
   "placeId": "ChIJ9Rn3Stqe4jARvC9rgWzu31Q",
   "michelinId": "1194845",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Garima Arora",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

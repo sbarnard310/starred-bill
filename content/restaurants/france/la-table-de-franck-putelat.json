@@ -25,11 +25,6 @@
   "lng": 2.3603104,
   "placeId": "ChIJYQv3X0IsrhIRkRimhHDtYKk",
   "michelinId": "120905",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Franck Putelat",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

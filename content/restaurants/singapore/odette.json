@@ -30,5 +30,6 @@
     "vegetarian"
   ],
   "chef": "Julien Royer",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

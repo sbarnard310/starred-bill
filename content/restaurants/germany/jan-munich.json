@@ -20,12 +20,13 @@
     "vegetarian"
   ],
   "chef": "Jan Hartwig",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 335 €)",
   "lunch": 380,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Fridays",
   "lunchNoteDe": "Gleiches Menü am Mittag · Freitag",
   "lunchSourceType": "site",
-  "lunchSource": "https://jan-hartwig.com/menue/"
+  "lunchSource": "https://jan-hartwig.com/menue/",
+  "dietsManual": true
 }

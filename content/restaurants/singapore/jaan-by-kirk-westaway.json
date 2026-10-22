@@ -31,5 +31,6 @@
     "vegetarian"
   ],
   "chef": "Kirk Westaway",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

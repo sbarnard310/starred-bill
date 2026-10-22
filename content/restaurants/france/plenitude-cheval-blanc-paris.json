@@ -24,11 +24,6 @@
   "lng": 2.3421588,
   "placeId": "ChIJ1YFmqNZv5kcRBAVR2JH8pEo",
   "michelinId": "1198294",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "kosher"
-  ],
   "chef": "Arnaud Donckele",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -22,9 +22,9 @@
   "placeId": "ChIJqUoVvkgtDogRLGIKXcfaiKk",
   "michelinId": "1184711",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Curtis Duffy",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

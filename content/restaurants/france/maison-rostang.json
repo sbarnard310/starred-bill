@@ -28,8 +28,10 @@
   "michelinId": "6478",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Nicolas Beaumann",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -21,12 +21,8 @@
   "lng": 8.5437311,
   "placeId": "ChIJZbkhcZOhmkcRtd-eRrYqZ8c",
   "michelinId": "1190160",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Daniel Zeindlhofer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "dinnerNoteFr": "Menu dégustation",
   "dinnerNoteIt": "Menu degustazione",

@@ -30,13 +30,9 @@
   "placeId": "ChIJoRkIVamMQQ0RlLGpgzeAxzA",
   "michelinId": "530804",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian-menu"
   ],
   "chef": "Mario Sandoval",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

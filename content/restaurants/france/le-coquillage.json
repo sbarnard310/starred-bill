@@ -25,10 +25,6 @@
   "lng": -1.8711983,
   "placeId": "ChIJ-QZAMLudDkgRcPgG-jo2NTU",
   "michelinId": "1584",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Hugo Roellinger",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

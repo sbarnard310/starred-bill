@@ -24,12 +24,11 @@
   "michelinId": "213148",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Dick Middelweerd",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 175)",
-  "lunchNoteNl": "Lunchmenu"
+  "lunchNoteNl": "Lunchmenu",
+  "dietsManual": true
 }

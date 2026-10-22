@@ -25,9 +25,6 @@
   "lng": 4.4229251,
   "placeId": "ChIJO0UyhwottBIRFxqUxeYvPt8",
   "michelinId": "5487",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Michel Kayser",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

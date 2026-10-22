@@ -29,7 +29,7 @@
   "placeId": "ChIJqZDavAuLGGARV-fj_CVDFnI",
   "michelinId": "1193950",
   "chef": "Tomoya Kawada",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "monthly",
     "day": 1,

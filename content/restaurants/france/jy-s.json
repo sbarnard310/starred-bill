@@ -27,8 +27,10 @@
   "placeId": "ChIJ81TRBOZlkUcRTlWoyzHLGew",
   "michelinId": "2319",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Jean-Yves Schillinger",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

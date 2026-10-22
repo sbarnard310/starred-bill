@@ -19,11 +19,8 @@
   "lng": 4.03752,
   "placeId": "ChIJJRr7G6116UcR5frIDtU5dZw",
   "michelinId": "508739",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Kazuyuki Tanaka",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Daisuki menu, 6 courses (Marine €265, Kazuyuki €310)",
   "dinnerNoteFr": "Menu Daisuki en 6 pousses (Marine 265 €, Kazuyuki 310 €)",
   "lunchNote": "Suki menu, 4 courses, lunch only",

@@ -24,9 +24,6 @@
   "lng": 114.15867,
   "placeId": "ChIJTSKji2QABDQRqD5qV3Bt2d8",
   "michelinId": "314218",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Umberto Bombana",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

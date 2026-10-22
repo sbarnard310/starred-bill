@@ -26,5 +26,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteSv": "Endast middag",
   "chef": "Mats Vollmer",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

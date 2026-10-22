@@ -28,12 +28,6 @@
   "lng": 2.501098,
   "placeId": "ChIJJQAGN_XKuhIRj4fev4m_6FI",
   "michelinId": "221957",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
-  "chef": "Fina Puigdevall / Martina Puigvert Puigdevall",
-  "chefSource": "michelin"
+  "chef": "Fina Puigdevall",
+  "chefSource": "site"
 }

@@ -23,5 +23,6 @@
     "vegetarian"
   ],
   "chef": "James Friedberg",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

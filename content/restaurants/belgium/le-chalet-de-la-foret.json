@@ -23,13 +23,8 @@
   "lng": 4.3866247,
   "placeId": "ChIJQwCS-TfFw0cRTTJBXQalDYo",
   "michelinId": "209445",
-  "diets": [
-    "vegetarian",
-    "halal",
-    "kosher"
-  ],
   "chef": "Pascal Devalkeneer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 195)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 195 €)",
   "lunchNoteNl": "Lunchmenu",

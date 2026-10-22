@@ -27,5 +27,6 @@
     "vegetarian"
   ],
   "chef": "Pierre Gagnaire",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

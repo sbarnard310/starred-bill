@@ -19,11 +19,10 @@
   "placeId": "ChIJ6U6ntWgUw0cRZrq8q_ohqUU",
   "michelinId": "209968",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian"
+    "vegetarian-menu"
   ],
-  "chef": "Peter Goossens",
-  "chefSource": "michelin",
+  "chef": "Floris Van Der Veken",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 180)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 180 €)",
   "lunch": 240,
@@ -33,5 +32,6 @@
   "lunchNoteFr": "Même menu le midi · mer.–sam.",
   "lunchWine": 100,
   "lunchSourceType": "site",
-  "lunchSource": "https://hofvancleve.com/menu"
+  "lunchSource": "https://hofvancleve.com/menu",
+  "dietsManual": true
 }

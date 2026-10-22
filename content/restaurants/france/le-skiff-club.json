@@ -25,11 +25,6 @@
   "lng": -1.20669,
   "placeId": "ChIJN-LKSPGdVA0RqfoWwxjcxg8",
   "michelinId": "505662",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "kosher"
-  ],
   "chef": "Stéphane Carrade",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

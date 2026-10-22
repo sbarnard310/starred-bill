@@ -27,10 +27,9 @@
   "placeId": "ChIJT115w-bdDkgRzNCFV9XyNQM",
   "michelinId": "7333",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Ronan Kervarrec",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

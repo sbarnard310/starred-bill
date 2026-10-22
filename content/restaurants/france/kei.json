@@ -27,7 +27,7 @@
   "placeId": "ChIJqTnaAiNu5kcRQsRFgf8qeoA",
   "michelinId": "325113",
   "chef": "Kei Kobayashi",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "monthly",
     "weekday": "tue",

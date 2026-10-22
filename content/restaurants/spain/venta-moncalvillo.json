@@ -26,11 +26,9 @@
   "michelinId": "219828",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Ignacio Echapresto",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

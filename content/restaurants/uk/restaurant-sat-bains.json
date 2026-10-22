@@ -20,12 +20,8 @@
   "lng": -1.167604,
   "placeId": "ChIJAf60hkPCeUgRPlidw4M0eWo",
   "michelinId": "188580",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Sat Bains",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "restaurant-sat-bains.jpg",
   "photoAlt": "The brick buildings of Restaurant Sat Bains in Nottingham, with its sign by the lane",
   "photoCredit": "Oxymoron",

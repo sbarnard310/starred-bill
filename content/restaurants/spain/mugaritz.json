@@ -26,15 +26,8 @@
   "lng": -1.917305,
   "placeId": "ChIJrbLj_tauUQ0RpCer8fGceF8",
   "michelinId": "219990",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Andoni Luis Aduriz",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "mugaritz.jpg",
   "photoAlt": "The ivy-covered entrance of Mugaritz near Errenteria, Gipuzkoa",
   "photoCredit": "Krista",
@@ -44,5 +37,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 666,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "notice": "Closed for the season from 26 October 2026; reopens in spring 2027 (its website, October 2026)"
 }

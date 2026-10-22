@@ -27,9 +27,6 @@
   "lng": -2.043635,
   "placeId": "ChIJXdMPlZ6wUQ0RgkKFNtNEFXE",
   "michelinId": "219922",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Pedro Subijana",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

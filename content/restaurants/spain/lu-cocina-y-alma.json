@@ -20,11 +20,8 @@
   "lng": -6.1357554,
   "placeId": "ChIJoy5Sk5XGDQ0RAPg46JVv_-k",
   "michelinId": "553300",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Juanlu Fernández",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "lu-cocina-y-alma.jpg",
   "photoAlt": "The corner building of LÚ Cocina y Alma in Jerez de la Frontera",
   "photoCredit": "El Pantera",

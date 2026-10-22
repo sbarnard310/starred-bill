@@ -19,8 +19,8 @@
   "placeId": "ChIJB1nokUrbdkcRA085yJWlYFM",
   "michelinId": "106306",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "dinnerNoteDe": "Siebengang-Menü (andere Menüs ab 108 €)",
   "lunchNote": "Same menus at lunch · Thu–Sun",
@@ -34,5 +34,6 @@
   "lunchSourceType": "site",
   "notice": "Closing for good on 26 October 2026 (Salzburg24, July 2026)",
   "noticeDe": "Schließt endgültig am 26. Oktober 2026 (Salzburg24, Juli 2026)",
-  "closes": "2026-10-26"
+  "closes": "2026-10-26",
+  "dietsManual": true
 }

@@ -23,10 +23,6 @@
   "lng": -6.263971,
   "placeId": "ChIJa7Nrz4AOZ0gRptxMf68t1Qk",
   "michelinId": "1196469",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Mickael Viljanen",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

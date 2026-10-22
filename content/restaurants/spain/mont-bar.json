@@ -38,5 +38,6 @@
     "gluten-free"
   ],
   "chef": "Fran Agudo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

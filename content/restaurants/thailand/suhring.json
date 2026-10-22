@@ -21,15 +21,11 @@
   "source": "https://thailandaddict.com/en/bangkok-michelin-fine-dining",
   "lunchNote": "Open for lunch · Thu–Sun",
   "lunchNoteTh": "เปิดมื้อกลางวัน · พฤ.–อา.",
-  "website": "https://www.restaurantsuhring.com",
+  "website": "https://restaurantsuhring.com/",
   "lat": 13.7108084,
   "lng": 100.5457264,
   "placeId": "ChIJa4FyWkef4jARYosTC995W8U",
   "michelinId": "547021",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Mathias Sühring and Thomas Sühring",
-  "chefSource": "michelin"
+  "chef": "Thomas Sühring and Mathias Sühring",
+  "chefSource": "site"
 }

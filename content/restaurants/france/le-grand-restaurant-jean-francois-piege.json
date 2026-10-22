@@ -27,8 +27,10 @@
   "placeId": "ChIJb5_kRsxv5kcR5jP_LwSlGAQ",
   "michelinId": "463112",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Jean-François Piège",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

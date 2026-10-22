@@ -23,12 +23,6 @@
   "lng": 13.2803037,
   "placeId": "ChIJcc9A7712LRMRWPJsgA0L2ZY",
   "michelinId": "152555",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
-  ],
   "chef": "Moreno Cedroni",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

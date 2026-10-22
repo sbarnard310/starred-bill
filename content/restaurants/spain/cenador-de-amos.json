@@ -24,14 +24,8 @@
   "lng": -3.6988243,
   "placeId": "ChIJL4yXdGPKTg0RySq4Ufm7wOU",
   "michelinId": "224475",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
-  ],
-  "chef": "Jesús Sánchez Sáinz",
-  "chefSource": "michelin",
+  "chef": "Jesús Sánchez",
+  "chefSource": "site",
   "photo": "cenador-de-amos.jpg",
   "photoAlt": "El Cenador de Amós in the old Mazarrasa palace and its garden, Villaverde de Pontones",
   "photoCredit": "Vanbasten 23",

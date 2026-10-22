@@ -30,14 +30,8 @@
   "lng": 12.572095,
   "placeId": "ChIJAQshwflSUkYRF9f4wpDIt7U",
   "michelinId": "307051",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal"
-  ],
   "chef": "Rasmus Kofoed",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "months": 3,

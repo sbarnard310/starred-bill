@@ -29,9 +29,11 @@
   "placeId": "ChIJdb45FZEABDQRW12akQkMM9M",
   "michelinId": "352518",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
   "chef": "Paul Lau",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

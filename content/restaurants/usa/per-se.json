@@ -23,13 +23,10 @@
   "michelinId": "69452",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Thomas Keller",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "monthly",
     "day": 1,
@@ -47,5 +44,6 @@
   "photoSourceType": "commons",
   "photoWidth": 800,
   "photoHeight": 535,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

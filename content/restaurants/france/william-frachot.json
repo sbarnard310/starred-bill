@@ -18,15 +18,15 @@
   "lunchNoteFr": "Menu Émotions, déjeuner en semaine",
   "lunchSourceType": "press",
   "lunchSource": "https://fr.gaultmillau.com/en/restaurants/restaurant-william-frachot",
-  "website": "https://www.chapeau-rouge.fr/fr/restaurant-gastronomique-dijon",
+  "website": "https://www.chapeau-rouge.fr/experiences-culinaires-restaurant-gastronomique-dijon/",
   "lat": 47.3212722,
   "lng": 5.0356396,
   "placeId": "ChIJOXCqiI6d8kcRMJcqZB6QdkQ",
   "michelinId": "11028",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "William Frachot",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

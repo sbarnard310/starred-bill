@@ -23,8 +23,7 @@
   "placeId": "ChIJ-dmMWquf4jAREDFTxbjSFh0",
   "michelinId": "566237",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Chumpol Jangprai",
   "chefSource": "site",
@@ -37,5 +36,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 606,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -20,15 +20,11 @@
   "lunchWine": 75,
   "lunchSourceType": "site",
   "lunchSource": "https://restaurantecabanabuenavista.com/",
-  "website": "https://restaurantelacabana.com/",
+  "website": "https://restaurantecabanabuenavista.com/",
   "lat": 37.92464,
   "lng": -1.163767,
   "placeId": "ChIJi59-phx_Yw0RuSCDtYjHTRk",
   "michelinId": "221809",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Pablo González",
-  "chefSource": "michelin"
+  "chef": "Pablo González Conejero",
+  "chefSource": "site"
 }

@@ -21,8 +21,8 @@
   "lng": -87.660632,
   "placeId": "ChIJxRcpzSctDogRBKHyFUKauHc",
   "michelinId": "513128",
-  "chef": "John Shields and Karen Urie-Shields",
-  "chefSource": "michelin",
+  "chef": "John Shields and Karen Urie Shields",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "days": 90,

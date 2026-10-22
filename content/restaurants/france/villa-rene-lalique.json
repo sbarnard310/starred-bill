@@ -26,8 +26,10 @@
   "placeId": "ChIJ_bfWkg8nlEcRA572EP81B1U",
   "michelinId": "482620",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Paul Stradner",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -31,11 +31,6 @@
   "lng": 2.353269,
   "placeId": "ChIJeWenk-Rx5kcRRoSlhTbzWlM",
   "michelinId": "489523",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "kosher"
-  ],
   "chef": "Toshitaka Omiya",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

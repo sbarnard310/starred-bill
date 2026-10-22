@@ -28,8 +28,10 @@
   "placeId": "ChIJr4YudW2pQjQR6s2rQHF7d5A",
   "michelinId": "551698",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Chan Wai Keung",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

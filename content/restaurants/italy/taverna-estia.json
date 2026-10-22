@@ -24,9 +24,12 @@
   "placeId": "ChIJayYsomKuOxMRQINDUOZQjaY",
   "michelinId": "128109",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
+    "vegan",
     "gluten-free"
   ],
   "chef": "Francesco Sposito",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

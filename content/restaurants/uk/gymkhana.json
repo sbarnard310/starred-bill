@@ -17,17 +17,16 @@
   "lunchNote": "Lunch menu, 4 courses",
   "lunchSourceType": "press",
   "lunchSource": "https://www.opentable.co.uk/r/gymkhana-london",
-  "website": "https://gymkhanalondon.com/",
+  "website": "https://gymkhanarestaurants.com/london/",
   "lat": 51.5085431,
   "lng": -0.141547,
   "placeId": "ChIJtwn55ikFdkgRAvOuPIWeLM0",
   "michelinId": "411332",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Chet Sharma",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

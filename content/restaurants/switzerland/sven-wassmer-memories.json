@@ -19,12 +19,12 @@
   "placeId": "ChIJR_-toqTLhEcRxAQrKbQDLDQ",
   "michelinId": "1184739",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "gluten-free",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Sven Wassmer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 279)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 279)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 279)",
@@ -32,5 +32,6 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena"
+  "lunchNoteIt": "Solo a cena",
+  "dietsManual": true
 }

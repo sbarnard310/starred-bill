@@ -33,10 +33,11 @@
   "michelinId": "569032",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Richard Ekkebus",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "amber.jpg",
   "photoAlt": "The dining room of Amber, Hong Kong, under its hanging rod ceiling",
   "photoCredit": "Theorb ( talk ) ( Uploads )",
@@ -45,5 +46,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

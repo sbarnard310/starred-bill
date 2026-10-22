@@ -22,9 +22,7 @@
   "lng": 6.6261535,
   "placeId": "ChIJDTV3yw7HzhIRYjMG0CraIeI",
   "michelinId": "12973",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Arnaud Donckele",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "notice": "Closed for the winter; reopens on 6 May 2027 (its hotel’s website, October 2026)"
 }

@@ -27,10 +27,10 @@
   "michelinId": "122560",
   "diets": [
     "vegetarian",
-    "vegan"
+    "gluten-free"
   ],
   "chef": "Michael Tusk",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "monthly",
     "day": 1,
@@ -39,5 +39,6 @@
     "via": "SevenRooms",
     "source": "https://www.quincerestaurant.com/before-your-visit",
     "checked": "2026-10-10"
-  }
+  },
+  "dietsManual": true
 }

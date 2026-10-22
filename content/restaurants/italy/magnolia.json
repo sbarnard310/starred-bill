@@ -24,13 +24,8 @@
   "lng": 12.3498464,
   "placeId": "ChIJv8jHz7y3LBMR1zBF6x5BYAg",
   "michelinId": "130945",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Alberto Faccani",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu, I Classici or Magnolia (also à la carte)",
   "dinnerNoteIt": "Menu degustazione I Classici o Magnolia (anche alla carta)"
 }

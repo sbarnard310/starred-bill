@@ -17,16 +17,15 @@
   "placeId": "ChIJ74LRF8tPqEcRNeBJAS2qxaQ",
   "michelinId": "86151",
   "diets": [
+    "vegetarian-only",
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Sebastian Frank",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 160 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

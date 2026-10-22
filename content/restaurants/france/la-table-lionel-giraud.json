@@ -25,12 +25,8 @@
   "lng": 2.9918502,
   "placeId": "ChIJKUjyHl-ssRIRswBFJ4AyXio",
   "michelinId": "5321",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Lionel Giraud",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Petite Balade en Occitanie menu (Grande Balade €165)",
   "dinnerNoteFr": "Menu Petite Balade en Occitanie (Grande Balade 165 €)"
 }

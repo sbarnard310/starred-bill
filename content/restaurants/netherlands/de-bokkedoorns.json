@@ -18,8 +18,8 @@
   "placeId": "ChIJFT5WMYfuxUcRgOF4R-izDp4",
   "michelinId": "212555",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Roy Eijkelkamp",
   "chefSource": "site",
@@ -29,5 +29,6 @@
   "lunchNote": "Same menu at lunch · Wed–Sun",
   "lunchNoteNl": "Zelfde menu bij de lunch · wo–zo",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.bokkedoorns.nl/menukaart/"
+  "lunchSource": "https://www.bokkedoorns.nl/menukaart/",
+  "dietsManual": true
 }

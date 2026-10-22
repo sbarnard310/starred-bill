@@ -20,13 +20,6 @@
   "lng": 14.3699538,
   "placeId": "ChIJEyOciPmYOxMRGiimZJL8YNg",
   "michelinId": "157550",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Gennaro Esposito",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -22,14 +22,6 @@
   "lng": 135.496084,
   "placeId": "ChIJDQRP2frmAGARBw_HFaCnauI",
   "michelinId": "1193237",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Hajime Yoneda",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

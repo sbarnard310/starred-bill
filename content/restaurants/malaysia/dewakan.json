@@ -17,12 +17,8 @@
   "lng": 101.71842,
   "placeId": "ChIJD5ydgbdNzDERVeakzTjfpk8",
   "michelinId": "1201884",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Darren Teoh",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteMs": "Menu rasa",
   "noLunch": true,
   "lunchNote": "Dinner only",

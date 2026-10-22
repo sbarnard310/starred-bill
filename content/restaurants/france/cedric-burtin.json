@@ -25,10 +25,6 @@
   "lng": 4.8205067,
   "placeId": "ChIJL_7__w_98kcR8kouggOnc4Q",
   "michelinId": "1896",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Cédric Burtin",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

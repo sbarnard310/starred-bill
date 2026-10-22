@@ -22,9 +22,9 @@
   "placeId": "ChIJ_Xs0crubuEwRmjgxCj6TwY4",
   "michelinId": "1216408",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "François-Emmanuel Nicol",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

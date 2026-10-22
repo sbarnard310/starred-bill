@@ -23,12 +23,8 @@
   "lng": 4.1554453,
   "placeId": "ChIJkwwnAlO4w0cRE97PHRm_cvc",
   "michelinId": "210402",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Glenn Verhasselt",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu",
   "dinnerNoteFr": "Menu dégustation",
   "lunchNoteNl": "Lunchmenu",

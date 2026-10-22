@@ -25,9 +25,6 @@
   "lng": 10.356579,
   "placeId": "ChIJEbzybxqzgUcRn1pQZjdmsH0",
   "michelinId": "128768",
-  "diets": [
-    "vegetarian-menu"
-  ],
-  "chef": "Nadia e Giovanni Santini",
-  "chefSource": "michelin"
+  "chef": "Nadia and Giovanni Santini",
+  "chefSource": "site"
 }

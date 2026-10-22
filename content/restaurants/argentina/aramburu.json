@@ -21,9 +21,6 @@
   "lng": -58.3891765,
   "placeId": "ChIJUwhogCjLvJURazYFxCm6cUM",
   "michelinId": "531684",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Gonzalo Aramburu",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

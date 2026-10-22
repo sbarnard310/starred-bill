@@ -21,7 +21,7 @@
     "vegetarian"
   ],
   "chef": "Benjamin Chmura",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "lunchNote": "Open for lunch · Wed–Sat",
   "lunchNoteDe": "Mittags geöffnet · Mi–Sa",
@@ -34,5 +34,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 629,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

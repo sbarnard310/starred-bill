@@ -21,12 +21,10 @@
   "michelinId": "524105",
   "diets": [
     "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegan"
   ],
   "chef": "Kyle Connaughton",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "monthly",
     "day": 1,
@@ -47,5 +45,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

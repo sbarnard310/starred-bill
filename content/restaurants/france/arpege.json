@@ -27,9 +27,10 @@
   "placeId": "ChIJQ-oAFypw5kcR2T9NszPcZO4",
   "michelinId": "5986",
   "diets": [
-    "vegetarian-menu",
-    "vegan"
+    "vegetarian-only",
+    "vegetarian-menu"
   ],
   "chef": "Alain Passard",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

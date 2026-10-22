@@ -18,13 +18,12 @@
   "placeId": "ChIJidkYT_0wl0cRwM1SNn5mWLI",
   "michelinId": "1191833",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu"
   ],
   "chef": "Torsten Michel",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 295 €)",
   "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNoteDe": "Mittags geöffnet · Sa–So"
+  "lunchNoteDe": "Mittags geöffnet · Sa–So",
+  "dietsManual": true
 }

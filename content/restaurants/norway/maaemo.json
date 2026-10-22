@@ -17,11 +17,8 @@
   "lng": 10.7586363,
   "placeId": "ChIJhyP_qopuQUYRwvq5k9QGIy8",
   "michelinId": "1194933",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Esben Holmboe Bang",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteNb": "Smaksmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",

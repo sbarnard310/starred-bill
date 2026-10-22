@@ -26,12 +26,10 @@
   "placeId": "ChIJWZ2zdav40YURFvsU_rU3uaE",
   "michelinId": "1208201",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Enrique Olvera",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "pujol.jpg",
   "photoAlt": "The garden pavilion at Pujol in Polanco, Mexico City",
   "photoCredit": "Nan Palmero from San Antonio, TX, USA",
@@ -41,5 +39,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

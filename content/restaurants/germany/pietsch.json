@@ -19,14 +19,13 @@
   "placeId": "ChIJ_-sdrTINpUcRHGZXobA3qHM",
   "michelinId": "1183673",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 170 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "chef": "Robin Pietsch",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

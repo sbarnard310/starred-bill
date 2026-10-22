@@ -19,7 +19,6 @@
   "placeId": "ChIJwWaz2ZkOZ0gRimydVTwK0xA",
   "michelinId": "70432",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Guillaume Lebrun",
@@ -33,5 +32,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

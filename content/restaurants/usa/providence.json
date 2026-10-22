@@ -25,7 +25,7 @@
   "placeId": "ChIJaUBtetO-woARqyrV4ASPECg",
   "michelinId": "559844",
   "chef": "Michael Cimarusti",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "months": 2,

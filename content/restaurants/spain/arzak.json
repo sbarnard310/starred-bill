@@ -29,13 +29,8 @@
   "lng": -1.949093,
   "placeId": "ChIJk16VNUOlUQ0RN9deX3Lcna8",
   "michelinId": "219902",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Juan Mari Arzak and Elena Arzak",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "arzak.jpg",
   "photoAlt": "The Arzak name sign at the entrance of the restaurant in San Sebastián",
   "photoCredit": "Josephine E T",

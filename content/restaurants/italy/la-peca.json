@@ -22,10 +22,9 @@
   "michelinId": "138506",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Nicola Portinari",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

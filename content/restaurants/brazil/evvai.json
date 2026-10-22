@@ -21,13 +21,8 @@
   "lng": -46.6790725,
   "placeId": "ChIJ15xqwHlXzpQR-wSlgx8ckJM",
   "michelinId": "543958",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Luiz Filipe Souza",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação",
   "lunchNote": "Open for lunch · Saturdays",
   "lunchNotePt": "Aberto ao almoço · sábado"

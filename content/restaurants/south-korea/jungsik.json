@@ -28,9 +28,10 @@
   "placeId": "ChIJLwsYxYijfDURiJD-QZw6MYU",
   "michelinId": "511965",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Yim Jung-sik",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

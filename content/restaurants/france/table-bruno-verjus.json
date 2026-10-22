@@ -28,11 +28,8 @@
   "lng": 2.3759654,
   "placeId": "ChIJoSONvAVy5kcRiFFvBHOUYv8",
   "michelinId": "407110",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "Bruno Verjus",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "months": 3,

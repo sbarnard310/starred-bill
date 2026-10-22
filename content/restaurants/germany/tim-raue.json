@@ -19,12 +19,14 @@
   "michelinId": "277978",
   "diets": [
     "vegetarian-menu",
+    "vegetarian",
     "vegan"
   ],
   "chef": "Tim Raue",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 212 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

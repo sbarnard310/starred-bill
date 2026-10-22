@@ -25,11 +25,6 @@
   "lng": 3.99236,
   "placeId": "ChIJCwP48WAP9EcRE1P1i_b7cEs",
   "michelinId": "12613",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "César Troisgros",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

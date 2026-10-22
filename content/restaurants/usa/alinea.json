@@ -27,13 +27,10 @@
   "michelinId": "268970",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Grant Achatz",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "monthly",
     "day": 15,
@@ -43,5 +40,6 @@
     "via": "Tock",
     "source": "https://www.exploretock.com/alinea/faq",
     "checked": "2026-10-10"
-  }
+  },
+  "dietsManual": true
 }

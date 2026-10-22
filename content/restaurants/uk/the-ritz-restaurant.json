@@ -32,5 +32,6 @@
     "vegan"
   ],
   "chef": "John Williams",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

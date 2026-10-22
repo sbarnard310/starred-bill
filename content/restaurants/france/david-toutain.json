@@ -28,11 +28,6 @@
   "lng": 2.3097038,
   "placeId": "ChIJEfipg79v5kcRpfj267gqR0k",
   "michelinId": "442129",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "kosher"
-  ],
   "chef": "David Toutain",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -21,10 +21,11 @@
   "placeId": "ChIJFzl5Mfh9hYARQmOK6_pAIYw",
   "michelinId": "259803",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "James Syhabout",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "commis.jpg",
   "photoAlt": "The front of Commis in Oakland, California, with its sign",
   "photoCredit": "Mx. Granger",
@@ -34,5 +35,6 @@
   "photoSourceType": "commons",
   "photoWidth": 700,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

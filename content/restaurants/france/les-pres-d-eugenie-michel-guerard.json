@@ -26,8 +26,10 @@
   "placeId": "ChIJD6BkQV5xVg0RSZsafdGLI6s",
   "michelinId": "3076",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Hugo Souchet",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

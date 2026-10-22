@@ -30,14 +30,8 @@
   "lng": 139.722147,
   "placeId": "ChIJrbAVNIOMGGARXNvkApcqvng",
   "michelinId": "1194112",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Yoshihiro Narisawa",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "narisawa.jpg",
   "photoAlt": "The curved glass entrance of the building housing NARISAWA in Minami-Aoyama, Tokyo",
   "photoCredit": "Pocsywe",

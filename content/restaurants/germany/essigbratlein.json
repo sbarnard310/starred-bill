@@ -25,11 +25,11 @@
   "michelinId": "76161",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
-  "chef": "Andree Köthe",
-  "chefSource": "michelin",
+  "chef": "Andree Köthe and Yves Ollech",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 180 €)",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "dietsManual": true
 }

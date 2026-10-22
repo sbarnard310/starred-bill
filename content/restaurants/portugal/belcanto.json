@@ -18,11 +18,10 @@
   "placeId": "ChIJITj75340GQ0RXULVgWMFloA",
   "michelinId": "357840",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "José Avillez",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 120 €)",
   "lunch": 300,
   "lunchType": "menu",
@@ -30,5 +29,6 @@
   "lunchNotePt": "O mesmo menu ao almoço · ter.–sáb.",
   "lunchWine": 60,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.belcanto.pt/carta/Belcanto_Menu_QRCode.pdf?v=102026"
+  "lunchSource": "https://www.belcanto.pt/carta/Belcanto_Menu_QRCode.pdf?v=102026",
+  "dietsManual": true
 }

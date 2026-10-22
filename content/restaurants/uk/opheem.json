@@ -25,10 +25,9 @@
   "michelinId": "556316",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Aktar Islam",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

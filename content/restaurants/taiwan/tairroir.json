@@ -33,5 +33,6 @@
     "vegetarian"
   ],
   "chef": "Kai Ho",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -18,11 +18,10 @@
   "placeId": "ChIJLQkIHxBlJA0R5IWxWtu1I-o",
   "michelinId": "483580",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian"
+    "vegetarian-menu"
   ],
   "chef": "Vítor Matos",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 185 €)",
   "lunch": 265,
   "lunchType": "menu",
@@ -30,5 +29,6 @@
   "lunchNotePt": "O mesmo menu ao almoço · ter., sáb.",
   "lunchWine": 235,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.antiqvvm.pt/pt/o-menu"
+  "lunchSource": "https://www.antiqvvm.pt/pt/o-menu",
+  "dietsManual": true
 }

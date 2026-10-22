@@ -26,7 +26,7 @@
     "vegan"
   ],
   "chef": "Toni Kostian",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 198,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Saturdays",
@@ -45,5 +45,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 802,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

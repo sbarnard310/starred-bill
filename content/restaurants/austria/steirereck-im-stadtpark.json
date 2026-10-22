@@ -25,7 +25,7 @@
     "vegetarian"
   ],
   "chef": "Heinz Reitbauer and Michael Bauböck",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 255 €)",
   "lunchNoteDe": "Mittagsmenü",
   "photo": "steirereck-im-stadtpark.jpg",
@@ -37,5 +37,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 630,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

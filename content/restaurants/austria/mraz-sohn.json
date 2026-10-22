@@ -21,9 +21,10 @@
     "vegetarian"
   ],
   "chef": "Markus Mraz and Lukas Mraz",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

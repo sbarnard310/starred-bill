@@ -29,11 +29,6 @@
   "lng": -3.696293,
   "placeId": "ChIJM_4eFY8oQg0R3wcnD3nYubk",
   "michelinId": "443649",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Diego Guerrero",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

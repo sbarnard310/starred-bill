@@ -26,13 +26,8 @@
   "lng": 3.015951,
   "placeId": "ChIJI5JbhhPmuhIRWGkTnrSLXbA",
   "michelinId": "530178",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Albert Sastregener",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "bo-tic.jpg",
   "photoAlt": "The stone house and rusted steel extension of Bo.TiC in Corçà",
   "photoCredit": "Castellbo",

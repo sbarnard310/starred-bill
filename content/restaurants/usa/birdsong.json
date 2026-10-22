@@ -21,9 +21,10 @@
   "placeId": "ChIJTwtvfIOAhYARHMEe0c2Xi4s",
   "michelinId": "563785",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Christopher Bleidorn",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

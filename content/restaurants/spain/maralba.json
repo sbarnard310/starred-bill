@@ -26,10 +26,6 @@
   "lng": -1.0910555,
   "placeId": "ChIJH6uXbRtPYQ0RjGiBxTRkQIs",
   "michelinId": "217425",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Fran Martínez",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

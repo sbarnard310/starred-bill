@@ -27,10 +27,6 @@
   "lng": 127.04426,
   "placeId": "ChIJjXuM24mjfDURSwmouRnxNlM",
   "michelinId": "511985",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Mingoo Kang",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

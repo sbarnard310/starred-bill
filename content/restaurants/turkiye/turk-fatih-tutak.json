@@ -17,12 +17,8 @@
   "lng": 28.9775024,
   "placeId": "ChIJhazqsPa3yhQRWNzo3ScR25k",
   "michelinId": "1195553",
-  "diets": [
-    "vegetarian",
-    "halal"
-  ],
   "chef": "Fatih Tutak",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteTr": "Tadım menüsü",
   "noLunch": true,
   "lunchNote": "Dinner only",

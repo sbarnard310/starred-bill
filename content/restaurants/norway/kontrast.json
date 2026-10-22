@@ -17,11 +17,8 @@
   "lng": 10.7511251,
   "placeId": "ChIJoZWp-ipsQUYR-u_yrxmpgnI",
   "michelinId": "474096",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Mikael Svensson",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNb": "Smaksmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",

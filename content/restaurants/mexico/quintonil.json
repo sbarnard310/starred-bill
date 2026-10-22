@@ -29,11 +29,10 @@
   "michelinId": "1208195",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Jorge Vallejo",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "quintonil.jpg",
   "photoAlt": "The front of Quintonil at Newton 55 in Polanco, Mexico City, with its name above the door",
   "photoCredit": "City Foodsters",
@@ -43,5 +42,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 691,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

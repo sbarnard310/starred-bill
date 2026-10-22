@@ -17,11 +17,8 @@
   "lng": 9.9914638,
   "placeId": "ChIJXetoHRmPsUcRO9lASc7qR3U",
   "michelinId": "73514",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Christoph Rüffer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",

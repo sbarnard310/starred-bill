@@ -17,11 +17,8 @@
   "lng": -43.1964089,
   "placeId": "ChIJhWl8Qd5_mQAR-xc4FQjSFaQ",
   "michelinId": "434753",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Rafa Costa e Silva",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação",
   "noLunch": true,
   "lunchNote": "Dinner only",

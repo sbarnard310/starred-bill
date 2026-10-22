@@ -27,10 +27,9 @@
   "michelinId": "12567",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Arnaud Lallement",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

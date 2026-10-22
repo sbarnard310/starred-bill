@@ -26,9 +26,10 @@
   "placeId": "ChIJpxBBSXgqw0cRu_LUCSHWxn4",
   "michelinId": "1202595",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Diego Delbecq",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

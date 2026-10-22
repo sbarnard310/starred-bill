@@ -20,13 +20,8 @@
   "lng": -73.97214,
   "placeId": "ChIJWfonJ_tYwokRwIGb6Im403E",
   "michelinId": "68584",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "kosher"
-  ],
   "chef": "Emma Bengtsson",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 95,
   "lunchType": "menu",
   "lunchSourceType": "site",

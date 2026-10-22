@@ -34,12 +34,8 @@
   "lng": 2.15418,
   "placeId": "ChIJA6vUunyipBIRMtoRD_vIbII",
   "michelinId": "530167",
-  "diets": [
-    "gluten-free",
-    "halal"
-  ],
   "chef": "Albert Adrià",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "days": 60,

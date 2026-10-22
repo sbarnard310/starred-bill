@@ -25,12 +25,6 @@
   "lng": 7.5280514,
   "placeId": "ChIJm8DZegnszRIRmG_rHu0gA5c",
   "michelinId": "16132",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Mauro Colagreco",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

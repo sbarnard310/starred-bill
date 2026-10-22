@@ -15,14 +15,9 @@
   "lng": 116.450148,
   "placeId": "ChIJpUivl4Ss8TURC3ygTskJKgI",
   "michelinId": "1186816",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
-  ],
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
-  "nameZhs": "新荣记（新源南路）"
+  "nameZhs": "新荣记（新源南路）",
+  "website": "https://www.xinrongji.com/"
 }

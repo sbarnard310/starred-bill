@@ -28,9 +28,9 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Davide Oldani",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

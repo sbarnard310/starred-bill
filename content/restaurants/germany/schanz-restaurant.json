@@ -17,11 +17,8 @@
   "lng": 6.9266002,
   "placeId": "ChIJ90bKo-grvkcRV-35p1oIEio",
   "michelinId": "337183",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Thomas Schanz",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 247 €)",
   "lunchNote": "Open for lunch · Thu, Sat",
   "lunchNoteDe": "Mittags geöffnet · Do, Sa"

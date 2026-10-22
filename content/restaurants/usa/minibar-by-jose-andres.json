@@ -26,5 +26,6 @@
     "gluten-free"
   ],
   "chef": "José Andrés",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

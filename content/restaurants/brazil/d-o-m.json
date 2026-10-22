@@ -22,14 +22,8 @@
   "lng": -46.667572,
   "placeId": "ChIJ_Qdn5dZZzpQRWJ5lDWdVmSY",
   "michelinId": "428596",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Alex Atala",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação",
   "lunchNotePt": "Menu de almoço"
 }

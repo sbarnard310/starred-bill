@@ -31,7 +31,7 @@
     "vegan"
   ],
   "chef": "Daniel Humm",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "monthly",
     "day": 1,
@@ -50,5 +50,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 631,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -27,11 +27,8 @@
   "lng": 2.152177,
   "placeId": "ChIJ8TMSh46ipBIRVmVx_17vwLE",
   "michelinId": "203796",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Jordi Artal",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "cinc-sentits.jpg",
   "photoAlt": "The Cinc Sentits restaurant sign above the entrance, Barcelona",
   "photoCredit": "City Foodsters",

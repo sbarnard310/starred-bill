@@ -20,9 +20,7 @@
   "michelinId": "210792",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal"
+    "vegetarian"
   ],
   "dinnerNoteFr": "Menu dégustation (autres menus dès 95 €)",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 95 €)",
@@ -35,5 +33,6 @@
   "lunchSourceType": "site",
   "lunchSource": "https://mls.lu/media/original/menu-site-fr-1-.pdf",
   "chef": "Cyril Molard",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

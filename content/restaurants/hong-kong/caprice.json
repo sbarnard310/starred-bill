@@ -27,12 +27,8 @@
   "lng": 114.1566097,
   "placeId": "ChIJzbDWTWIABDQRfEbzv7wxi40",
   "michelinId": "230659",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Guillaume Galliot",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "caprice.jpg",
   "photoAlt": "The dining room and bar of Caprice in Hong Kong",
   "photoCredit": "Tzahy Lerner",

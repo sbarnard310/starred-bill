@@ -20,9 +20,10 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Michael Kempf and Joachim Gerner",
-  "chefSource": "michelin",
+  "chef": "Michael Kempf",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 175 €)",
   "lunchNote": "Open for lunch · Mon–Fri",
-  "lunchNoteDe": "Mittags geöffnet · Mo–Fr"
+  "lunchNoteDe": "Mittags geöffnet · Mo–Fr",
+  "dietsManual": true
 }

@@ -16,11 +16,8 @@
   "lng": 16.3584526,
   "placeId": "ChIJUV5dfRgGbUcRXHN5xPvHT-U",
   "michelinId": "489481",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Juan Amador",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",

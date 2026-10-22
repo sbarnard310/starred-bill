@@ -21,17 +21,11 @@
   "lunchNoteKo": "라연 코스",
   "lunchSourceType": "press",
   "lunchSource": "https://www.letseoul.com/ko/articles/seoul-modern-korean-fusion-fine-dining-2026",
-  "website": "https://www.shilla.net/seoul/index.do",
+  "website": "https://www.shillahotels.com/en/theshilla/seoul/dining/restaurant/layeon.do",
   "lat": 37.555813,
   "lng": 127.00517,
   "placeId": "ChIJf8Lq1wSjfDURbuyVUM14Svc",
   "michelinId": "511973",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
-  ],
-  "chef": "Kim Sung-il",
-  "chefSource": "press"
+  "chef": "Doyoung Cha",
+  "chefSource": "site"
 }

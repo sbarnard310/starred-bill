@@ -26,9 +26,6 @@
   "lng": 3.3853151,
   "placeId": "ChIJRcnErLGr70cRElzKgm1V9Zc",
   "michelinId": "11454",
-  "diets": [
-    "vegetarian"
-  ],
-  "chef": "Jean-Michel Lorain",
-  "chefSource": "michelin"
+  "chef": "Jean-Michel Lorain and Alexandre Bondoux",
+  "chefSource": "site"
 }

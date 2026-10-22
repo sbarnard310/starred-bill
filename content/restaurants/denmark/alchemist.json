@@ -27,10 +27,11 @@
   "placeId": "ChIJGbFWVvBSUkYR5x0i6Z836Ao",
   "michelinId": "1186492",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Rasmus Munk",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "alchemist.jpg",
   "photoAlt": "The large bronze entrance doors of Alchemist on Refshaleøen, Copenhagen",
   "photoCredit": "City Foodsters",
@@ -40,5 +41,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

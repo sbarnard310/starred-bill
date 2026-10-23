@@ -625,7 +625,8 @@ for path in sorted((CONTENT / "guides").glob("*.json")) if (CONTENT / "guides").
 # `name` (the language in itself), the date lines, the FAQ heading, "(in English)" after links to guides not yet translated,
 # how US dollars and numbers are written, month names (`monthsOf` where a date takes another case, as in Polish) and the
 # the Sources section (`sources`, `sourceChecked`, `ownData`), the
-# names of the countries the figures can name ({{topCountry}}…, without an article, so write them into lists like "Frankreich (30)"), and any currency written its own way ("zł").
+# names of the countries the figures can name ({{topCountry}}…, without an article, so write them into lists like "Frankreich (30)"), any currency
+# symbol written its own way ("zł") and any price written the language's way around its number (`money`: Japanese "31,460円").
 # A new language needs an entry here first.
 GUIDE_WORDS = {
     "de": {"name": "Deutsch", "sources": "Quellen", "sourceChecked": "(abgerufen {month})",
@@ -669,6 +670,14 @@ GUIDE_WORDS = {
            "countries": {"France": "Francja", "Japan": "Japonia", "Italy": "Włochy", "Germany": "Niemcy", "Spain": "Hiszpania",
                          "United States": "Stany Zjednoczone", "China": "Chiny", "United Kingdom": "Wielka Brytania", "Hong Kong": "Hongkong",
                          "Switzerland": "Szwajcaria", "Belgium": "Belgia", "South Korea": "Korea Południowa", "Netherlands": "Holandia"}},
+    "ja": {"name": "日本語", "sources": "出典", "sourceChecked": "（{month}閲覧）",
+           "ownData": "料金と軒数は、The Starred Billが独自に集めた星付きレストラン{total}軒のデータです。星は各国のミシュランガイド最新版から、コース料金は各店の公式サイト（掲載がない場合は最近のレビュー）から取り、{checked}に確認しました。ドル換算には{rates}の為替レート（{day}）を使っています。",
+           "updated": "{date}更新", "checked": "星と料金は{month}時点", "faq": "よくある質問", "inEnglish": "英語",
+           "usd": "{n}ドル", "thousands": ",", "date": "{y}年{m}{d}日", "monthYear": "{y}年{m}", "money": {"JPY": "{n}円"},
+           "months": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+           "countries": {"France": "フランス", "Japan": "日本", "Italy": "イタリア", "Germany": "ドイツ", "Spain": "スペイン",
+                         "United States": "アメリカ", "China": "中国", "United Kingdom": "イギリス", "Hong Kong": "香港",
+                         "Switzerland": "スイス", "Belgium": "ベルギー", "South Korea": "韓国", "Netherlands": "オランダ"}},
 }
 guide_translations = {}  # guide id -> {language: translated guide}
 for path in sorted((CONTENT / "guide-translations").glob("*/*.json")) if (CONTENT / "guide-translations").exists() else []:
@@ -1987,7 +1996,7 @@ def pillar_line(lang):
     text = (FAQ_WORDS.get(lang) or {}).get("m3Pillar")
     if not text or lang not in guide_translations.get(GUIDE_PILLAR, {}):
         return ""
-    return " " + re.sub(r"\[(.+?)\]", lambda m: f'<a href="{guide_path(GUIDE_PILLAR, lang)}">{m.group(1)}</a>', e(text))
+    return ("" if lang in CJK_NAMES else " ") + re.sub(r"\[(.+?)\]", lambda m: f'<a href="{guide_path(GUIDE_PILLAR, lang)}">{m.group(1)}</a>', e(text))
 
 
 def place_sources_html(p, lang):
@@ -6431,7 +6440,7 @@ def guide_text(text, stats, blocks=None):
 
 
 # ---------- Translated guides ----------
-GUIDE_AND = {"de": " und ", "es": " y ", "it": " e ", "pt": " e ", "pl": " i "}
+GUIDE_AND = {"de": " und ", "es": " y ", "it": " e ", "pt": " e ", "pl": " i ", "ja": "、"}
 
 
 def guide_path(gid, lang="en"):
@@ -6457,9 +6466,11 @@ def guide_usd(n, lang):
 
 
 def guide_money(n, cur, lang):
-    """A local price: "95 €", "450 zł", "R$ 450" (dollar-type symbols go first)."""
+    """A local price: "95 €", "450 zł", "R$ 450" (dollar-type symbols go first), "31,460円"."""
     symbol = GUIDE_WORDS[lang].get("symbols", {}).get(cur) or CURRENCIES[cur]["symbol"]
     amount = guide_num(round(n), lang)
+    if GUIDE_WORDS[lang].get("money", {}).get(cur):
+        return GUIDE_WORDS[lang]["money"][cur].replace("{n}", amount)
     return f"{symbol} {amount}" if symbol.endswith("$") else f"{amount} {symbol}"
 
 
@@ -6524,7 +6535,7 @@ def place_figure(pid, field, lang):
         return pick_lang(menus[0], "name", lang)
     if field == "three":
         names = sorted((pick_lang(r, "name", lang) for r in live if r["stars"] == 3), key=str.lower)
-        return ", ".join(names[:-1]) + GUIDE_AND[lang] + names[-1] if len(names) > 1 else "".join(names)
+        return ("、" if lang == "ja" else ", ").join(names[:-1]) + GUIDE_AND[lang] + names[-1] if len(names) > 1 else "".join(names)
     return None
 
 
@@ -6561,7 +6572,7 @@ def foot_guide(lang="en"):
             + ('<a href="/news/" class="foot-guide" lang="en">Michelin star news</a>' if news and lang == "en" else ""))
 
 
-GUIDE_CRUMB = {"de": "Ratgeber", "es": "Guías", "it": "Guide", "pt": "Guias", "pl": "Poradniki"}  # navGuides in each language
+GUIDE_CRUMB = {"de": "Ratgeber", "es": "Guías", "it": "Guide", "pt": "Guias", "pl": "Poradniki", "ja": "ガイド"}  # navGuides in each language
 
 
 def guide_lang_values(gid, lang):
@@ -6604,7 +6615,8 @@ def guide_sources_in(sources, stats, lang):
     d = currency_data.get("rateDate") or ""
     own = e(w["ownData"]).replace("{total}", e(stats["total"])).replace("{checked}", e(stats["checked"])).replace(
         "{rates}", f'<a href="{url}" target="_blank" rel="noopener">{name}</a>').replace(
-        " ({day})", f" ({guide_date(d, lang)})" if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) else "")
+        " ({day})", f" ({guide_date(d, lang)})" if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) else "").replace(
+        "{day}", guide_date(d, lang) if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) else "")  # where the brackets are the language's own: Japanese "（{day}）"
     return (f'<section class="guide-sources" id="sources"><h2>{e(w["sources"])}</h2>'
             + (f'<ul>{"".join(items)}</ul>' if items else "") + f'<p class="guide-sources-own">{own}</p></section>')
 
@@ -6625,7 +6637,10 @@ def build_guide_translations(g, langs, stats):
                 print(f"  Guide {g['id']} ({lang}): no {lang} name for {stats[key]} in GUIDE_WORDS' countries, so it shows in English")
         faqs = [{"q": guide_text_in(f["q"], st, lang), "a": guide_text_in(f["a"], st, lang)} for f in t["faq"]]
         text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", " ".join([title, h1, body] + [f["q"] + " " + f["a"] for f in faqs]))).lower()
-        missing = [k for k in t["keywords"] if keyword_words(k) not in keyword_words(text)]
+        if lang in CJK_NAMES:  # written without spaces, so each part of the keyword ("ミシュラン 星の数") just needs to be there
+            missing = [k for k in t["keywords"] if not all(part in text for part in k.lower().split())]
+        else:
+            missing = [k for k in t["keywords"] if keyword_words(k) not in keyword_words(text)]
         if missing:
             print(f"  Guide {g['id']} ({lang}): these keywords don't appear word for word: " + "; ".join(missing))
         locale = t.get("locale") or HTML_LANG.get(lang, (lang,))[0]

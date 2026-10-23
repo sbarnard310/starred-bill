@@ -676,6 +676,7 @@
   "srcTitle": "出典",
   "srcGuide": "ミシュランガイド",
   "srcLine": "星：{guide}。料金：各レストランの公式サイト、またはレシートにリンクしたレビュー（{checked}確認）。評価：{google}。為替レート：{rates}。",
+  "m3Pillar": "各評価の意味や調査員の審査方法は、ガイド「[ミシュランの星とは？]」で解説しています。",
   "cpTitle": "{in}の{topic}",
   "cpH1": "{in}の{topic}：<em>料金</em>一覧",
   "cpEyebrow": "{name}・{label}・ミシュランガイド",

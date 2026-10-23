@@ -37,5 +37,29 @@
   "photoSourceType": "commons",
   "photoWidth": 640,
   "photoHeight": 434,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 9,
+    "url": "https://www.blackswanoldstead.co.uk/our-rooms/",
+    "packages": [
+      {
+        "name": "The Cosy Festive Retreat",
+        "includes": "A cocktail, the tasting menu, a night, breakfast and a Made in Oldstead hamper",
+        "price": 795,
+        "from": true,
+        "per": "room",
+        "when": "Tuesday to Saturday, 1 to 23 December",
+        "url": "https://www.blackswanoldstead.co.uk/our-rooms/"
+      },
+      {
+        "name": "The Signature Stay",
+        "includes": "The tasting menu with a wine flight, a night, breakfast and a hamper",
+        "when": "October, November and January",
+        "url": "https://www.blackswanoldstead.co.uk/experiences/"
+      }
+    ],
+    "note": "Rooms are in Ashberry House, across the road and in the garden.",
+    "checked": "2026-10-23"
+  }
 }

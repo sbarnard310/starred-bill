@@ -31,5 +31,32 @@
     "vegetarian"
   ],
   "chef": "Tom Tsappis",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 5,
+    "url": "https://www.killiecrankiehouse.com/overnight",
+    "packages": [
+      {
+        "name": "Dinner, bed and breakfast",
+        "includes": "Dinner for two, a night, breakfast",
+        "price": 630,
+        "from": true,
+        "per": "room",
+        "when": "Thursday to Saturday; £670 in 2027",
+        "url": "https://www.killiecrankiehouse.com/overnight"
+      },
+      {
+        "name": "Chef’s counter and Master Suite",
+        "includes": "Dinner for two at the counter by the pass, a night in the Master Suite, breakfast",
+        "price": 680,
+        "from": true,
+        "per": "room",
+        "when": "£720 in 2027",
+        "url": "https://www.killiecrankiehouse.com/overnight"
+      }
+    ],
+    "note": "Only guests dining that night can stay.",
+    "checked": "2026-10-23"
+  }
 }

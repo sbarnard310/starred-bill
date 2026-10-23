@@ -34,5 +34,12 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 9,
+    "url": "https://www.pipeandglass.co.uk/staying-at-the-pipe-and-glass",
+    "note": "Every room booking comes with a table in the restaurant and breakfast.",
+    "checked": "2026-10-23"
+  }
 }

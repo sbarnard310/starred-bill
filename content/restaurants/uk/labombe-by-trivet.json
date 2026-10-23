@@ -31,5 +31,20 @@
     "vegan"
   ],
   "chef": "Evan Moore",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "COMO Metropolitan London",
+    "rooms": 144,
+    "url": "https://www.comohotels.com/en/metropolitanlondon",
+    "packages": [
+      {
+        "name": "Labombe Dining Experience",
+        "includes": "A night, a three-course dinner at Labombe by Trivet, a welcome drink, breakfast",
+        "when": "Book at least 24 hours ahead",
+        "url": "https://www.comohotels.com/london/como-metropolitan-london/offers/labombe-dining-experience"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

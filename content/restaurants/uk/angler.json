@@ -38,5 +38,12 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 747,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "South Place Hotel",
+    "rooms": 80,
+    "url": "https://anglerrestaurant.com/hotel/",
+    "checked": "2026-10-23"
+  }
 }

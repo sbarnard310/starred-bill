@@ -41,5 +41,28 @@
   "photoSourceType": "commons",
   "photoWidth": 640,
   "photoHeight": 480,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://winteringhamfields.co.uk/rooms",
+    "packages": [
+      {
+        "name": "Autumn Gold",
+        "includes": "A night for two and the eight-course tasting menu",
+        "price": 395,
+        "per": "room",
+        "when": "Autumn",
+        "url": "https://winteringhamfields.co.uk/rooms"
+      },
+      {
+        "name": "November midweek offer",
+        "includes": "A night for two, the eight-course tasting menu and a glass of fizz",
+        "price": 285,
+        "per": "room",
+        "when": "Wednesdays and Thursdays in November",
+        "url": "https://winteringhamfields.co.uk/rooms"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

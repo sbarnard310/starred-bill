@@ -26,5 +26,22 @@
     "vegan"
   ],
   "chef": "Robert Potter",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Manor House",
+    "url": "https://www.exclusive.co.uk/the-manor-house/",
+    "packages": [
+      {
+        "name": "Bybrook Dine & Stay",
+        "includes": "A four-course dinner for two at Bybrook, a night, breakfast; the tasting menu from £30 a head more",
+        "price": 545,
+        "from": true,
+        "per": "room",
+        "when": "£545 on Sundays, £565 Wednesday to Saturday",
+        "url": "https://www.exclusive.co.uk/the-manor-house/packages/bybrook-dine-stay/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

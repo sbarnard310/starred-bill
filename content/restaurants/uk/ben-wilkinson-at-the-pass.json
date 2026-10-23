@@ -26,5 +26,22 @@
     "gluten-free"
   ],
   "chef": "Ben Wilkinson",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "South Lodge",
+    "url": "https://www.exclusive.co.uk/south-lodge/",
+    "packages": [
+      {
+        "name": "The Pass Dine & Stay",
+        "includes": "The seven-course tasting menu for two at The Pass, a night, breakfast, spa access",
+        "price": 805,
+        "from": true,
+        "per": "room",
+        "when": "Arrivals Wednesday to Sunday",
+        "url": "https://www.exclusive.co.uk/south-lodge/packages/the-pass-dine-stay/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -93,5 +93,31 @@
   "photoWidth": 1000,
   "photoHeight": 667,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "rooms": 11,
+    "url": "https://www.waterside-inn.co.uk/accommodation/",
+    "packages": [
+      {
+        "name": "Gourmand Experience",
+        "includes": "A night for two, the seven-course Menu Exceptionnel, caviar canapés, half a bottle of champagne, breakfast in your room",
+        "price": 1285,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday to Saturday; service included",
+        "url": "https://www.waterside-inn.co.uk/offers/gourmand-experience/"
+      },
+      {
+        "name": "Summer Sundays",
+        "includes": "A night for two, a champagne boat trip on the Thames, dinner from the Menu Exceptionnel, breakfast in your room",
+        "price": 1395,
+        "from": true,
+        "per": "room",
+        "when": "Sundays, May to September; plus 12.5% service",
+        "url": "https://www.waterside-inn.co.uk/experience-stays/summer-sundays/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -24,5 +24,20 @@
   "placeId": "ChIJNdaqLSwFdkgRcp3iqGlL6Ek",
   "michelinId": "234580",
   "chef": "Hélène Darroze",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Connaught",
+    "url": "https://www.maybourne.com/en/hotels/the-connaught/suites-rooms",
+    "packages": [
+      {
+        "name": "The Art of Dining",
+        "includes": "Up to £300 a day of dining credit (£100 in rooms and junior suites) to spend at Hélène Darroze and the hotel’s other restaurants, breakfast for two, champagne on arrival",
+        "per": "room",
+        "when": "Stays until 30 April 2028",
+        "url": "https://www.maybourne.com/en/hotels/the-connaught/offers/the-art-of-dining"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

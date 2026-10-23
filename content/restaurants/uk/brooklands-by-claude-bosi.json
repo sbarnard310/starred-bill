@@ -59,5 +59,11 @@
   "servicePct": 15,
   "infoSource": "https://www.brooklandslondon.com/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "The Peninsula London",
+    "url": "https://www.peninsula.com/en/london/5-star-luxury-hotel-belgravia",
+    "checked": "2026-10-23"
+  }
 }

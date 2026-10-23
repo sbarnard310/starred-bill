@@ -31,5 +31,11 @@
     "halal"
   ],
   "chef": "Michael Caines",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Stafford London",
+    "url": "https://thestaffordlondon.com/rooms-suites/",
+    "checked": "2026-10-23"
+  }
 }

@@ -29,5 +29,18 @@
     "vegan"
   ],
   "chef": "Chris Cleghorn",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Queensberry",
+    "url": "https://www.thequeensberry.co.uk/",
+    "packages": [
+      {
+        "name": "A Taste of the Season",
+        "includes": "A three-course dinner at the Olive Tree, a night, breakfast",
+        "url": "https://www.thequeensberry.co.uk/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

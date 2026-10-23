@@ -27,5 +27,26 @@
     "gluten-free"
   ],
   "chef": "Ricki Weston",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Whatley Manor",
+    "url": "https://www.whatleymanor.com/stay/",
+    "packages": [
+      {
+        "name": "Michelin-Star Experience",
+        "includes": "The nine-course tasting menu for two, half a bottle of Gusbourne sparkling wine, breakfast, spa access",
+        "per": "room",
+        "url": "https://www.whatleymanor.com/offer/michelin-starred-experience/"
+      },
+      {
+        "name": "Starry Night Break",
+        "includes": "The nine-course tasting menu for two, sparkling wine, breakfast, spa access and 15% off the room",
+        "per": "room",
+        "when": "Selected Thursdays and Sundays; paid in full when booked",
+        "url": "https://www.whatleymanor.com/offer/starry-night-michelin-dining/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

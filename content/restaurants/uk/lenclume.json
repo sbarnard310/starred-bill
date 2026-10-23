@@ -35,5 +35,11 @@
   "photoSourceType": "commons",
   "photoWidth": 960,
   "photoHeight": 720,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://www.lenclume.co.uk/stay",
+    "note": "Its rooms and suites are dotted around Cartmel, a short walk away; booking one guarantees a table at L’Enclume, with breakfast at Rogan & Co.",
+    "checked": "2026-10-23"
+  }
 }

@@ -41,5 +41,33 @@
   "photoSourceType": "commons",
   "photoWidth": 666,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Forest Side",
+    "rooms": 20,
+    "url": "https://www.theforestside.com/",
+    "packages": [
+      {
+        "name": "Lake District Stay & Dine",
+        "includes": "A night for two, the four- or eight-course dinner in the restaurant, breakfast",
+        "price": 449,
+        "from": true,
+        "per": "room",
+        "when": "Until 29 December 2026",
+        "url": "https://www.theforestside.com/offers/stay-dine/"
+      },
+      {
+        "name": "Two Night Stay & Savour",
+        "includes": "Two nights for two, the four-course dinner one evening and the eight-course tasting menu the other, breakfast",
+        "price": 898,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "Until 29 December 2026",
+        "url": "https://www.theforestside.com/offers/two_night_stay_savour/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

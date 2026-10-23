@@ -26,5 +26,23 @@
     "vegan"
   ],
   "chef": "Shaun Rankin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Grantley Hall",
+    "rooms": 47,
+    "url": "https://www.grantleyhall.co.uk/rooms/",
+    "packages": [
+      {
+        "name": "Overnight Gourmet Package",
+        "includes": "The Taste of Home tasting menu for two, a night in a Cosy room, breakfast, spa access, valet parking",
+        "price": 1225,
+        "from": true,
+        "per": "room",
+        "when": "Selected Wednesdays, Thursdays and Sundays; paid when booked",
+        "url": "https://www.grantleyhall.co.uk/seasonal-offers/shaun-rankin-overnight-gourmet-package/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

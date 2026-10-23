@@ -41,5 +41,29 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "name": "Outlaw’s Guest House",
+    "rooms": 9,
+    "url": "https://outlaws.co.uk/outlaws-guest-house-bistro/",
+    "packages": [
+      {
+        "name": "One night with dinner at Outlaw’s Fish Kitchen",
+        "includes": "Dinner for two at Fish Kitchen, a night, breakfast",
+        "per": "room",
+        "when": "Fish Kitchen closes 20 December to 2 February",
+        "url": "https://outlaws.co.uk/outlaws-guest-house-bistro/"
+      },
+      {
+        "name": "Foodie Getaway",
+        "includes": "Two nights, dinner for two at Outlaw’s Fish Kitchen and at Outlaw’s Bistro, breakfast",
+        "per": "room",
+        "nights": 2,
+        "url": "https://outlaws.co.uk/outlaws-guest-house-bistro/"
+      }
+    ],
+    "note": "Its rooms are at Outlaw’s Guest House in Port Isaac, run by the same family.",
+    "checked": "2026-10-23"
+  }
 }

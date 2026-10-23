@@ -107,5 +107,21 @@
   "photoWidth": 1000,
   "photoHeight": 539,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Lympstone Manor",
+    "rooms": 21,
+    "url": "https://lympstonemanor.co.uk/",
+    "packages": [
+      {
+        "name": "Winter escape: up to 25% off",
+        "includes": "Up to 25% off the dinner, bed and breakfast rate, in any room",
+        "per": "room",
+        "when": "1 October 2026 to 31 March 2027, mostly Sunday to Thursday; paid when booked",
+        "url": "https://lympstonemanor.co.uk/events-offers/25-winter-escape-offer/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

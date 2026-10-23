@@ -30,5 +30,32 @@
     "gluten-free"
   ],
   "chef": "Danny Young",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Torridon",
+    "rooms": 18,
+    "url": "https://www.thetorridon.com/rooms",
+    "packages": [
+      {
+        "name": "All Inclusive Escape",
+        "includes": "Three nights for two in a Deluxe room or above, breakfast, lunch and dinner every day at 1887 and Bo & Muc, house drinks, afternoon tea, bike hire and a guided walk",
+        "price": 3885,
+        "from": true,
+        "per": "room",
+        "nights": 3,
+        "when": "1 November 2026 to 29 March 2027",
+        "url": "https://www.thetorridon.com/offers/all-inclusive-escape/"
+      },
+      {
+        "name": "Three-night dinner, bed and breakfast",
+        "includes": "Three nights’ bed and breakfast, dinner at 1887 one evening and at Bo & Muc the other two",
+        "per": "room",
+        "nights": 3,
+        "when": "November to March",
+        "url": "https://www.thetorridon.com/offers/three-night-dinner-bed-and-breakfast/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

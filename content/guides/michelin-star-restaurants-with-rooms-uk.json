@@ -1,0 +1,92 @@
+{
+  "id": "michelin-star-restaurants-with-rooms-uk",
+  "title": "Michelin Star Restaurants With Rooms in the UK: All {{rooms_uk}}",
+  "description": "Every UK Michelin star restaurant with rooms or inside a hotel, from L’Enclume and the Waterside Inn to The Ritz, with dinner, bed and breakfast prices.",
+  "h1": "Michelin Star Restaurants With Rooms and Hotels in the UK",
+  "summary": "Where you can eat at a starred table and sleep upstairs: every UK restaurant with rooms or a hotel, with what a night and dinner cost.",
+  "section": "where",
+  "places": [
+    "uk"
+  ],
+  "figure": "{{rooms_uk}} you can stay at, dinner and a room from {{roomsCheapPrice_uk}}",
+  "published": "2026-10-23",
+  "updated": "2026-10-23",
+  "lang": "en-GB",
+  "faqFromHeadings": true,
+  "keywords": [
+    "michelin star restaurants with rooms uk",
+    "hotels with michelin star restaurants uk",
+    "michelin star restaurant and hotel",
+    "michelin star restaurants with rooms",
+    "hotel with michelin star restaurant",
+    "michelin star hotels uk"
+  ],
+  "body": "<p class=\"lede\">You can stay the night at {{rooms_uk}} of the UK’s Michelin-starred restaurants: {{roomsOwn_uk}} are restaurants with rooms of their own and {{roomsHotel_uk}} are inside a hotel. Five hold three stars. Dinner, bed and breakfast for two starts at {{roomsCheapPrice_uk}} (about {{roomsCheapUsd_uk}}) at {{roomsCheapName_uk}}. Checked {{checked}}.</p>\n<p>Staying where you eat takes the worry out of a long tasting menu: no train to catch, no driver left on water, and often a better breakfast than most hotels serve. Many of these places sell dinner and a room together, usually for less than booking the two apart, and some only let rooms to guests who are dining. The tables below give, for each restaurant, its rooms, the lowest room price it publishes and its cheapest stay with dinner, all from its own or its hotel’s website. Prices are per room for two unless they say otherwise, and change with the date. For prices at every starred restaurant in the country, rooms or not, see our page of <a href=\"/uk/\">Michelin star restaurants in the UK</a>, where “Show › With rooms” picks out these {{rooms_uk}}.</p>\n\n<h2 id=\"rooms\">Which UK Michelin star restaurants have rooms?</h2>\n<p>{{roomsOwn_uk}} starred restaurants in the UK have bedrooms of their own, from four above the dining room to cottages around a village. Three of them hold three stars: <a href=\"/restaurants/lenclume/\">L’Enclume</a> in Cartmel, whose rooms are dotted around the village and come with a table guaranteed, <a href=\"/restaurants/moor-hall/\">Moor Hall</a> near Ormskirk, with 14 bedrooms in the house, gatehouse and garden, and <a href=\"/restaurants/waterside-inn/\">the Waterside Inn</a> at Bray, with 11 rooms by the Thames. Most of the rest are in the country: Cumbria, Yorkshire and the Scottish Highlands have the most.</p>\n{{table:rooms-uk}}\n\n<h2 id=\"hotels\">Which UK hotels have a Michelin star restaurant?</h2>\n<p>These are the hotels with Michelin star restaurants in the UK: {{roomsHotel_uk}} starred restaurants inside a hotel you can book, {{rooms_london}} of them in London. They range from Park Lane and Mayfair grand hotels, home to the three-star <a href=\"/restaurants/alain-ducasse-at-the-dorchester/\">Alain Ducasse at The Dorchester</a> and <a href=\"/restaurants/helene-darroze-at-the-connaught/\">Hélène Darroze at The Connaught</a>, to country-house hotels such as <a href=\"/restaurants/gravetye-manor/\">Gravetye Manor</a> in West Sussex and The Samling above Windermere. Where the hotel and restaurant share a name, as at Gravetye Manor, Morston Hall or Hambleton Hall, each is a Michelin star restaurant and hotel in one, and the dining room is the reason most guests come. The MICHELIN Guide also rates hotels, with Keys rather than stars; the Michelin star hotels in the UK listed here are the ones whose restaurant holds a star.</p>\n{{table:rooms-hotel-uk}}\n\n<h2 id=\"cost\">How much is dinner, bed and breakfast at a Michelin star restaurant?</h2>\n<p>{{roomsPack_uk}} of the {{rooms_uk}} publish a price for a stay with dinner. For a single night for two with dinner, half of the published packages cost between £450 and £800 (about $595 to $1,055). At the low end are midweek offers at one-star restaurants with rooms, such as {{roomsCheapName_uk}} near Sheffield at {{roomsCheapPrice_uk}} for two and the Star Inn at Harome in North Yorkshire at £315. At two stars, <a href=\"/restaurants/restaurant-sat-bains/\">Restaurant Sat Bains</a> in Nottingham starts at £450 midweek and <a href=\"/restaurants/hand-and-flowers/\">the Hand and Flowers</a> in Marlow at £685. The dearest is the Waterside Inn’s Gourmand Experience, from £1,285 for two with the seven-course Menu Exceptionnel, service included.</p>\n<p>Three things to check before you book. First, what the package price covers: most are per room for two, a few per person, and some are for two nights. Second, which menu: several hotels’ packages are for a shorter menu or another of their restaurants, which the tables leave out unless the starred restaurant is named. Third, the day: the best prices are usually Sunday to Thursday, and some rooms, such as Killiecrankie House’s or The Cottage in the Wood’s, are only let to guests dining that night.</p>\n\n<h2 id=\"cheapest\">What is the cheapest Michelin star restaurant with rooms?</h2>\n<p>For a night with dinner included, {{roomsCheapName_uk}} at {{roomsCheapPrice_uk}} for two. For the room alone, <a href=\"/restaurants/the-sportsman/\">The Sportsman</a> at Seasalter in Kent lets five self-catering garden cabins from £180 a night for two (£150 for later nights), and the Star Inn at Harome’s rooms start at £160 with breakfast on midweek stays of two nights or more; dinner is then whatever you choose from the menu. A set lunch is the other cheap way in: see our <a data-guide=\"cheapest-michelin-star-restaurants\">cheapest Michelin star meals</a>.</p>\n\n<h2 id=\"booking\">How to book a stay at a Michelin star restaurant</h2>\n<p>At a hotel with a Michelin star restaurant, or a restaurant with rooms, book the room first, through its own website or phone line: that is where the dinner packages are sold, and many come with a table held for you, which can be easier than getting a table alone. Ask what time the table is, as rooms at the smaller places are often linked to a sitting. Book early for the restaurants with only a handful of rooms (Osip and LYLA have four, Killiecrankie House five), and well ahead for weekends. If a package is non-refundable, as several are, check the cancellation terms before you pay.</p>",
+  "imageAlt": "Illustration of a country inn at dusk with lit bedroom windows above a dining room, a table set for two inside and one gold star in the sky.",
+  "sources": [
+    {
+      "title": "Gourmand Experience",
+      "publisher": "The Waterside Inn",
+      "url": "https://www.waterside-inn.co.uk/offers/gourmand-experience/",
+      "checked": "2026-10-23",
+      "note": "The Waterside Inn’s stay package"
+    },
+    {
+      "title": "Stay",
+      "publisher": "L’Enclume",
+      "url": "https://www.lenclume.co.uk/stay",
+      "checked": "2026-10-23",
+      "note": "L’Enclume’s rooms in Cartmel"
+    },
+    {
+      "title": "Rooms",
+      "publisher": "Moor Hall",
+      "url": "https://moorhall.com/rooms",
+      "checked": "2026-10-23",
+      "note": "Moor Hall’s 14 bedrooms"
+    },
+    {
+      "title": "Stay",
+      "publisher": "Restaurant Sat Bains",
+      "url": "https://www.restaurantsatbains.com/#stay",
+      "checked": "2026-10-23",
+      "note": "Sat Bains’ stay packages"
+    },
+    {
+      "title": "Dine and stay experiences",
+      "publisher": "The Hand & Flowers",
+      "url": "https://thehandandflowers.co.uk/dine-and-stay-experiences",
+      "checked": "2026-10-23",
+      "note": "The Hand & Flowers’ dinner, bed and breakfast"
+    },
+    {
+      "title": "Oughtibridge Mill rooms",
+      "publisher": "JÖRO",
+      "url": "https://jororestaurant.co.uk/offers/",
+      "checked": "2026-10-23",
+      "note": "JÖRO’s midweek dine and stay"
+    },
+    {
+      "title": "Stay with us",
+      "publisher": "The Star Inn at Harome",
+      "url": "https://www.thestaratharome.co.uk/stay-with-us/",
+      "checked": "2026-10-23",
+      "note": "The Star Inn’s rooms and breaks"
+    },
+    {
+      "title": "The Sportsman",
+      "publisher": "The Sportsman, Seasalter",
+      "url": "https://www.thesportsmanseasalter.co.uk/",
+      "checked": "2026-10-23",
+      "note": "The Sportsman’s garden cabins"
+    },
+    {
+      "title": "Overnight",
+      "publisher": "Killiecrankie House",
+      "url": "https://www.killiecrankiehouse.com/overnight",
+      "checked": "2026-10-23",
+      "note": "Rooms for diners only"
+    }
+  ],
+  "sourcesNote": "The tables’ rooms, room prices and stay packages come from each restaurant’s or hotel’s own website, checked 23 October 2026; each restaurant’s page on The Starred Bill links to its source."
+}

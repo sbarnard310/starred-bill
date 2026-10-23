@@ -38,5 +38,25 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 649,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 13,
+    "url": "https://www.thestaratharome.co.uk/rooms/",
+    "from": 160,
+    "fromNote": "with breakfast, two nights or more, Sunday to Thursday",
+    "packages": [
+      {
+        "name": "Seasonal dinner, bed and breakfast",
+        "includes": "Dinner, a night for two, breakfast",
+        "price": 315,
+        "from": true,
+        "per": "room",
+        "when": "Tuesday to Thursday until 28 February 2027",
+        "url": "https://www.thestaratharome.co.uk/stay-with-us/"
+      }
+    ],
+    "note": "Rooms are in Cross House Lodge, the inn’s converted farm buildings.",
+    "checked": "2026-10-23"
+  }
 }

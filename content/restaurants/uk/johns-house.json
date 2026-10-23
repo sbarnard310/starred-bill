@@ -38,5 +38,12 @@
     "via": "website",
     "source": "https://www.johnshouse.co.uk/reservations",
     "checked": "2026-10-10"
+  },
+  "stay": {
+    "kind": "rooms",
+    "rooms": 2,
+    "url": "https://www.johnshouse.co.uk/text-page/cottages",
+    "note": "Two cottages in a converted stable and hay barn beside the restaurant, Wednesday to Saturday, with a table at 6–7.30pm.",
+    "checked": "2026-10-23"
   }
 }

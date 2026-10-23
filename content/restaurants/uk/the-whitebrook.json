@@ -37,5 +37,23 @@
   "photoSourceType": "commons",
   "photoWidth": 640,
   "photoHeight": 426,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 8,
+    "url": "https://www.thewhitebrook.co.uk/rooms",
+    "packages": [
+      {
+        "name": "Dinner, bed and breakfast",
+        "includes": "Dinner, a night for two and a four-course breakfast",
+        "price": 470,
+        "from": true,
+        "per": "room",
+        "when": "£470 to £580 by room, season and day",
+        "url": "https://www.thewhitebrook.co.uk/rooms"
+      }
+    ],
+    "note": "Every room rate includes dinner and breakfast.",
+    "checked": "2026-10-23"
+  }
 }

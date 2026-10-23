@@ -27,5 +27,22 @@
     "vegetarian"
   ],
   "chef": "Chris Archer",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 9,
+    "url": "https://www.pentonbridgeinn.co.uk/stay",
+    "packages": [
+      {
+        "name": "Dine and Stay",
+        "includes": "The eight-course evening menu, a night for two, breakfast",
+        "price": 425,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday to Saturday; £425 to £525 by room",
+        "url": "https://www.pentonbridgeinn.co.uk/stay"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

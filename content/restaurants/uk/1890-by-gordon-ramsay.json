@@ -30,5 +30,11 @@
     "kosher"
   ],
   "chef": "James Sharp",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Savoy",
+    "url": "https://www.thesavoylondon.com/rooms",
+    "checked": "2026-10-23"
+  }
 }

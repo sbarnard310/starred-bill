@@ -31,5 +31,41 @@
   "photoSourceType": "commons",
   "photoWidth": 640,
   "photoHeight": 480,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 7,
+    "url": "https://www.restaurantsatbains.com/#stay",
+    "packages": [
+      {
+        "name": "Interlude",
+        "includes": "The Interlude menu for two, a night, breakfast",
+        "price": 450,
+        "from": true,
+        "per": "room",
+        "when": "Midweek",
+        "url": "https://www.restaurantsatbains.com/#stay"
+      },
+      {
+        "name": "The Champagne Triptych",
+        "includes": "Laurent-Perrier Grand Siècle, the Prelude menu for two, a night, breakfast",
+        "price": 540,
+        "from": true,
+        "per": "room",
+        "when": "Midweek",
+        "url": "https://www.restaurantsatbains.com/#stay"
+      },
+      {
+        "name": "The Saturday Triptych",
+        "includes": "The Overture menu for two, a night, breakfast",
+        "price": 665,
+        "from": true,
+        "per": "room",
+        "when": "Saturdays",
+        "url": "https://www.restaurantsatbains.com/#stay"
+      }
+    ],
+    "note": "Only seven rooms, so book early.",
+    "checked": "2026-10-23"
+  }
 }

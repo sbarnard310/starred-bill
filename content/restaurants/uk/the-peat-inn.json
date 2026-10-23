@@ -98,5 +98,11 @@
   "photoWidth": 640,
   "photoHeight": 444,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "rooms": 8,
+    "url": "https://www.thepeatinn.co.uk/rooms",
+    "checked": "2026-10-23"
+  }
 }

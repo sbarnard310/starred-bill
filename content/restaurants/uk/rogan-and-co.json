@@ -27,5 +27,31 @@
     "vegetarian"
   ],
   "chef": "Tom Reeves",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 16,
+    "url": "https://www.roganandco.co.uk/rooms",
+    "packages": [
+      {
+        "name": "Stay and Dine",
+        "includes": "Dinner from the Short Menu, a night, breakfast",
+        "price": 447,
+        "from": true,
+        "per": "room",
+        "when": "Tuesday to Saturday",
+        "url": "https://www.roganandco.co.uk/rooms"
+      },
+      {
+        "name": "Cartmel Escape",
+        "includes": "Two nights, the full tasting menu at L’Enclume one evening and the Short Menu at Rogan & Co the other, sparkling wine, breakfast",
+        "per": "room",
+        "nights": 2,
+        "when": "Arrive Tuesday to Thursday",
+        "url": "https://www.roganandco.co.uk/rooms"
+      }
+    ],
+    "note": "Its bedrooms and suites are around the village of Cartmel.",
+    "checked": "2026-10-23"
+  }
 }

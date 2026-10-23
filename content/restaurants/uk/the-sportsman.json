@@ -57,5 +57,14 @@
   "servicePct": 10,
   "infoSource": "https://www.thesportsmanseasalter.co.uk/contact.php",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "rooms": 5,
+    "url": "https://www.thesportsmanseasalter.co.uk/",
+    "from": 180,
+    "fromNote": "a cabin for two, £150 for later nights",
+    "note": "Five self-catering garden cabins with a light breakfast left in; book by phone or email.",
+    "checked": "2026-10-23"
+  }
 }

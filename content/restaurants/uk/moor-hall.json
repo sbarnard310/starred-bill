@@ -65,5 +65,11 @@
   "children": "No children under 12 in the restaurant. Groups with younger children can hire the private dining room.",
   "byob": "Corkage may be possible on request.",
   "infoSource": "https://moorhall.com/legal",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 14,
+    "url": "https://moorhall.com/rooms",
+    "checked": "2026-10-23"
+  }
 }

@@ -29,5 +29,12 @@
     "kosher"
   ],
   "chef": "Anthony Demetre",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Sofitel London St James",
+    "rooms": 183,
+    "url": "https://sofitel.accor.com/en/hotels/3144.html",
+    "checked": "2026-10-23"
+  }
 }

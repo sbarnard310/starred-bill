@@ -82,5 +82,29 @@
   "photoWidth": 1000,
   "photoHeight": 649,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Morston Hall",
+    "rooms": 13,
+    "url": "https://morstonhall.com/stay-with-us/",
+    "packages": [
+      {
+        "name": "Dinner, bed and breakfast",
+        "includes": "A night, the seven-course tasting menu, breakfast",
+        "price": 529,
+        "from": true,
+        "url": "https://morstonhall.com/current-offers/"
+      },
+      {
+        "name": "Two Day Romantic Package",
+        "includes": "Two nights, the seven-course tasting menu both evenings, fizz, flowers, breakfast",
+        "price": 1103,
+        "from": true,
+        "nights": 2,
+        "url": "https://morstonhall.com/current-offers/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

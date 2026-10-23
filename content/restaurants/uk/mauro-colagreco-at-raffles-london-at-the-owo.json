@@ -34,5 +34,11 @@
     "halal"
   ],
   "chef": "Mauro Colagreco",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Raffles London at The OWO",
+    "url": "https://www.raffles.com/london/rooms-and-suites/",
+    "checked": "2026-10-23"
+  }
 }

@@ -28,5 +28,21 @@
   ],
   "chef": "Graham Squire",
   "chefSource": "press",
-  "dinner": 48
+  "dinner": 48,
+  "stay": {
+    "kind": "hotel",
+    "name": "The Goring",
+    "url": "https://www.thegoring.com/our-rooms/",
+    "packages": [
+      {
+        "name": "Dine & Stay",
+        "includes": "A night, a three-course dinner for two in The Dining Room with champagne and petits fours, breakfast",
+        "price": 1075,
+        "from": true,
+        "per": "room",
+        "url": "https://www.thegoring.com/our-offers/michelin-starred-dine-stay/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

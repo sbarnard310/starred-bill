@@ -28,5 +28,11 @@
     "via": "Tock",
     "source": "https://www.exploretock.com/ynyshir/faq",
     "checked": "2026-10-10"
+  },
+  "stay": {
+    "kind": "rooms",
+    "url": "https://www.ynyshir.co.uk/",
+    "note": "Rooms are sold with the dinner, for one night; bookings can’t be refunded.",
+    "checked": "2026-10-23"
   }
 }

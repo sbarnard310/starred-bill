@@ -36,5 +36,11 @@
   "photoWidth": 669,
   "photoHeight": 1000,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Gleneagles",
+    "url": "https://gleneagles.com/stay/bedrooms/",
+    "checked": "2026-10-23"
+  }
 }

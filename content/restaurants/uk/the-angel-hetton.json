@@ -40,5 +40,25 @@
   "photoSourceType": "commons",
   "photoWidth": 640,
   "photoHeight": 480,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 16,
+    "url": "https://angelhetton.co.uk/rooms/",
+    "packages": [
+      {
+        "name": "Autumn Escape",
+        "includes": "A night, the five- or ten-course tasting menu, breakfast, a bag of seasonal treats",
+        "when": "Until 23 December 2026, not Saturdays",
+        "url": "https://angelhetton.co.uk/packages/"
+      },
+      {
+        "name": "Two Night Gourmet Break",
+        "includes": "Two nights, the ten-course tasting menu on the first evening",
+        "nights": 2,
+        "url": "https://angelhetton.co.uk/packages/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

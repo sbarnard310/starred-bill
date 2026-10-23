@@ -27,5 +27,13 @@
     "vegetarian"
   ],
   "chef": "Jean Delport",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Leonardslee House",
+    "rooms": 10,
+    "url": "https://www.leonardsleegardens.co.uk/leonardslee-house-stay",
+    "note": "Guests staying at Leonardslee House can book a table up to a year ahead.",
+    "checked": "2026-10-23"
+  }
 }

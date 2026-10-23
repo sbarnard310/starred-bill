@@ -27,5 +27,23 @@
     "vegetarian"
   ],
   "chef": "Joshua Overington",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 6,
+    "url": "https://www.restaurantmyse.co.uk/sleep/",
+    "packages": [
+      {
+        "name": "Room, tasting menu and breakfast",
+        "includes": "A night for two, the tasting menu, breakfast",
+        "price": 645,
+        "from": true,
+        "per": "room",
+        "when": "£645 to £685 by room",
+        "url": "https://www.restaurantmyse.co.uk/sleep/"
+      }
+    ],
+    "note": "Rooms are sold only with the tasting menu and breakfast.",
+    "checked": "2026-10-23"
+  }
 }

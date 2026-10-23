@@ -72,5 +72,31 @@
   "groupsUrl": "https://www.thesamlinghotel.co.uk/chefs-table/",
   "infoSource": "https://booking.resdiary.com/widget/Standard/TheSamling1/68103",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "The Samling",
+    "rooms": 12,
+    "url": "https://www.thesamlinghotel.co.uk/",
+    "packages": [
+      {
+        "name": "Touch of Luxury",
+        "includes": "Dinner in the restaurant and bed and breakfast for two in a Classic room",
+        "price": 690,
+        "per": "room",
+        "when": "Thursdays until 31 October 2026",
+        "url": "https://www.thesamlinghotel.co.uk/featuresnew/romantic-breaks/"
+      },
+      {
+        "name": "Best of Both",
+        "includes": "Two nights for two in a Classic room, dinner at The Gathering on Monday and in the starred restaurant on Tuesday, breakfast",
+        "price": 1180,
+        "per": "room",
+        "nights": 2,
+        "when": "Mondays and Tuesdays until 31 October 2026",
+        "url": "https://www.thesamlinghotel.co.uk/featuresnew/romantic-breaks/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

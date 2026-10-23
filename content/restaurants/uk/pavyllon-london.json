@@ -76,5 +76,11 @@
   "groupsUrl": "https://www.pavyllonlondon.com/private-dining/",
   "servicePct": 15,
   "infoSource": "https://www.pavyllonlondon.com/",
-  "infoChecked": "2026-10-12"
+  "infoChecked": "2026-10-12",
+  "stay": {
+    "kind": "hotel",
+    "name": "Four Seasons Hotel London at Park Lane",
+    "url": "https://www.fourseasons.com/london/",
+    "checked": "2026-10-23"
+  }
 }

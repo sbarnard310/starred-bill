@@ -27,5 +27,12 @@
     "vegan"
   ],
   "chef": "Stefano Di Giosia",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Great Fosters",
+    "rooms": 56,
+    "url": "https://alexanderhotels.co.uk/great-fosters/accommodation/",
+    "checked": "2026-10-23"
+  }
 }

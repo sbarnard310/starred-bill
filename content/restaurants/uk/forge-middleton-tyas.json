@@ -29,5 +29,12 @@
     "vegan"
   ],
   "chef": "Jake Jones",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Middleton Lodge",
+    "rooms": 58,
+    "url": "https://middletonlodge.co.uk/stay/",
+    "checked": "2026-10-23"
+  }
 }

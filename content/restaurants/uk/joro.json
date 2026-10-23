@@ -31,5 +31,31 @@
     "vegetarian"
   ],
   "chef": "Luke French",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 6,
+    "url": "https://jororestaurant.co.uk/joro-oughtibridge-mill/oughtibridge-mill-rooms/",
+    "packages": [
+      {
+        "name": "Midweek Dine & Stay",
+        "includes": "The ÖNE tasting menu, a night in a studio room, breakfast",
+        "price": 137.5,
+        "from": true,
+        "per": "person",
+        "when": "Wednesdays, Thursdays and selected Fridays",
+        "url": "https://jororestaurant.co.uk/offers/"
+      },
+      {
+        "name": "Menu TWÖ, bed and breakfast",
+        "includes": "The TWÖ tasting menu, a night in an apartment, breakfast",
+        "price": 190,
+        "from": true,
+        "per": "person",
+        "url": "https://jororestaurant.co.uk/joro-oughtibridge-mill/oughtibridge-mill-rooms/"
+      }
+    ],
+    "note": "Apartments above the restaurant at Oughtibridge Mill.",
+    "checked": "2026-10-23"
+  }
 }

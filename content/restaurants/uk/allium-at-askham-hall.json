@@ -26,5 +26,23 @@
     "vegan"
   ],
   "chef": "Richard Swale",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Askham Hall",
+    "rooms": 19,
+    "url": "https://www.askhamhall.co.uk/our-rooms/",
+    "packages": [
+      {
+        "name": "Midweek foodie break",
+        "includes": "The six-course tasting menu at Allium, a night, breakfast",
+        "price": 215,
+        "from": true,
+        "per": "person",
+        "when": "Selected Tuesdays to Fridays",
+        "url": "https://www.askhamhall.co.uk/ciel-hotels-breaks/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

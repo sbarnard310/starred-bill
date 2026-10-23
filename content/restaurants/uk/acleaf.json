@@ -26,5 +26,18 @@
     "vegan"
   ],
   "chef": "Scott Paton",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Boringdon Hall",
+    "url": "https://boringdonhall.co.uk/",
+    "packages": [
+      {
+        "name": "Àclèaf Dining Package",
+        "includes": "A night, the four-course menu at Àclèaf, breakfast, spa membership",
+        "url": "https://boringdonhall.co.uk/offer/acleaf-dining-package/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

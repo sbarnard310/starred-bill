@@ -850,6 +850,31 @@ content:
       - { name: pageDescription, label: "Search description, only to tune a page (up to 155 characters, {dinner} for the dinner price)", type: text }
       - { name: pageLead, label: "Sentence added to the answer at the top of the page", type: text }
       - { name: hotel, label: Hotel it's in (mid-sentence, e.g. the Rome Cavalieri), type: string }
+      - name: stay
+        label: "Stay the night: its hotel or its own rooms (from the restaurant's or hotel's own website only)"
+        type: object
+        fields:
+          - { name: kind, label: Kind, type: select, options: { values: [ { value: hotel, label: "Inside a hotel" }, { value: rooms, label: "Has rooms of its own" } ] } }
+          - { name: name, label: "Hotel's name as it styles itself, e.g. The Torridon (leave blank for its own rooms)", type: string }
+          - { name: rooms, label: Number of bedrooms, type: number }
+          - { name: url, label: "Rooms page on its own website", type: string }
+          - { name: from, label: "Lowest room price a night (local currency)", type: number }
+          - { name: fromNote, label: "What that price covers, e.g. including breakfast", type: string }
+          - name: packages
+            label: "Stay packages (dinner and a night's stay)"
+            type: object
+            list: true
+            fields:
+              - { name: name, label: "Name, e.g. Dinner, bed and breakfast", type: string }
+              - { name: price, label: Price (local currency), type: number }
+              - { name: from, label: "It's a 'from' price", type: boolean }
+              - { name: per, label: Price is per, type: select, options: { values: [ { value: room, label: "Room (for two)" }, { value: person, label: Person } ] } }
+              - { name: nights, label: Nights, type: number }
+              - { name: includes, label: "What's included", type: string }
+              - { name: when, label: "When it's offered, e.g. Sunday to Thursday", type: string }
+              - { name: url, label: Page showing it, type: string }
+          - { name: note, label: "A sentence diners should know", type: text }
+          - { name: checked, label: "Checked (YYYY-MM-DD)", type: string }
       - name: alsoTry
         label: Sister venues serving its cooking for less
         type: object

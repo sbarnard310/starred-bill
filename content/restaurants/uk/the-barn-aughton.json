@@ -25,5 +25,13 @@
     "vegan"
   ],
   "chef": "Mark Birchall",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Moor Hall",
+    "rooms": 14,
+    "url": "https://moorhall.com/rooms",
+    "note": "The rooms are Moor Hall’s, in the same grounds.",
+    "checked": "2026-10-23"
+  }
 }

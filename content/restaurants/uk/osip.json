@@ -35,5 +35,12 @@
     "via": "website",
     "source": "https://osiprestaurant.com/",
     "checked": "2026-10-10"
+  },
+  "stay": {
+    "kind": "rooms",
+    "rooms": 4,
+    "url": "https://osiprestaurant.com/rooms/",
+    "note": "Four bedrooms above the restaurant, breakfast included.",
+    "checked": "2026-10-23"
   }
 }

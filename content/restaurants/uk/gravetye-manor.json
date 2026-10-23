@@ -92,5 +92,24 @@
   "photoWidth": 640,
   "photoHeight": 480,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Gravetye Manor",
+    "rooms": 17,
+    "url": "https://www.gravetyemanor.co.uk/stay/",
+    "packages": [
+      {
+        "name": "Charming British Escape",
+        "includes": "A night for two, a three-course dinner in the restaurant, breakfast",
+        "price": 725,
+        "from": true,
+        "per": "room",
+        "when": "This autumn",
+        "url": "https://www.gravetyemanor.co.uk/offers-packages/charming-british-escape-1-december/"
+      }
+    ],
+    "note": "Children must be over seven.",
+    "checked": "2026-10-23"
+  }
 }

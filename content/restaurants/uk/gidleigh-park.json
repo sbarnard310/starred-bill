@@ -68,5 +68,30 @@
   "photoSourceType": "commons",
   "photoWidth": 640,
   "photoHeight": 480,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Gidleigh Park",
+    "url": "https://gidleigh.co.uk/stay/",
+    "packages": [
+      {
+        "name": "Taste & Indulge",
+        "includes": "Two nights in a Classic room, the five-course tasting menu on the first evening, £75 a head towards dinner on the second, breakfast",
+        "price": 916,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "From £458 a night, two nights at least",
+        "url": "https://gidleigh.co.uk/offer/taste-and-indulge/"
+      },
+      {
+        "name": "Celebration Package",
+        "includes": "Two nights for two, champagne and flowers on arrival, dinner on the first night (up to £135 a head), afternoon tea",
+        "per": "room",
+        "nights": 2,
+        "url": "https://gidleigh.co.uk/offer/celebration-package/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

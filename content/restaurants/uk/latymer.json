@@ -29,5 +29,23 @@
     "gluten-free"
   ],
   "chef": "Steve Smith",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Pennyhill Park",
+    "rooms": 124,
+    "url": "https://www.exclusive.co.uk/pennyhill-park/stay/",
+    "packages": [
+      {
+        "name": "Latymer Dine & Stay",
+        "includes": "The six-course tasting menu for two at Latymer, a night, breakfast, spa access",
+        "price": 825,
+        "from": true,
+        "per": "room",
+        "when": "Arrivals Wednesday to Sunday; diners 12 and over",
+        "url": "https://www.exclusive.co.uk/pennyhill-park/packages/latymer-dine-stay/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

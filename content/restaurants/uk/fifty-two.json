@@ -34,5 +34,22 @@
     "halal"
   ],
   "chef": "Adam Degg",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Rudding Park",
+    "rooms": 90,
+    "url": "https://www.ruddingpark.co.uk/sleep/",
+    "packages": [
+      {
+        "name": "FIFTY TWO & Stay",
+        "includes": "Dinner at FIFTY TWO and a night for two in a room, suite, lodge or cottage, with the spa’s pool, sauna and gym",
+        "price": 597,
+        "from": true,
+        "per": "room",
+        "url": "https://fiftytworuddingpark.co.uk/fifty-two-and-stay"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

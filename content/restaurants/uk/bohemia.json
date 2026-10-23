@@ -28,5 +28,32 @@
     "vegetarian"
   ],
   "chef": "Tom Earnshaw",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Club Hotel & Spa",
+    "url": "https://www.theclubjersey.com",
+    "packages": [
+      {
+        "name": "Overnight Gourmet Break",
+        "includes": "A night in a Double Deluxe room, four-course dinner at Bohemia, breakfast and the spa’s thermal suite; 15% off extra nights",
+        "price": 149,
+        "from": true,
+        "per": "person",
+        "when": "All year; the price changes with the date",
+        "url": "https://www.theclubjersey.com/overnight-gourmet-break"
+      },
+      {
+        "name": "Ultimate Bohemia Experience",
+        "includes": "Three nights, a private kitchen tour, wine tasting, canapés and a four-course dinner at Bohemia",
+        "price": 309,
+        "from": true,
+        "per": "person",
+        "nights": 3,
+        "when": "Autumn and winter",
+        "url": "https://www.theclubjersey.com/special-offers-in-jersey"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

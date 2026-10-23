@@ -25,5 +25,30 @@
   "placeId": "ChIJ98WP_xuTfEgRmdYlkSNf7PM",
   "michelinId": "1206579",
   "chef": "Kevin Scanlan",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Gilpin Hotel & Lake House",
+    "rooms": 38,
+    "url": "https://thegilpin.co.uk/sleep/hotel-rooms-suites/",
+    "packages": [
+      {
+        "name": "Winter in the Lakes",
+        "includes": "Two nights, dinner at SOURCE on the first evening, breakfast, a Windermere cruise, spa time",
+        "price": 1102,
+        "from": true,
+        "nights": 2,
+        "url": "https://thegilpin.co.uk/experiences/winter-in-the-lakes/"
+      },
+      {
+        "name": "A Gourmet Getaway",
+        "includes": "Two nights, the SOURCE tasting menu one evening and Gilpin Spice the other, breakfast",
+        "price": 1180,
+        "from": true,
+        "nights": 2,
+        "url": "https://thegilpin.co.uk/experiences/a-gourmet-getaway/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

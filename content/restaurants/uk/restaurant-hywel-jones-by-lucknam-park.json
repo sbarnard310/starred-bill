@@ -25,5 +25,23 @@
     "gluten-free"
   ],
   "chef": "Hywel Jones",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Lucknam Park",
+    "rooms": 42,
+    "url": "https://www.lucknampark.co.uk/hotel/rooms-suites/",
+    "packages": [
+      {
+        "name": "Gourmet Getaway",
+        "includes": "Two nights, four courses at Restaurant Hywel Jones one evening and the Walled Garden restaurant the other, breakfast, spa access",
+        "per": "room",
+        "nights": 2,
+        "when": "Tuesday to Saturday",
+        "url": "https://www.lucknampark.co.uk/offer/gourmet-getaway-2/"
+      }
+    ],
+    "note": "The restaurant opens Wednesday to Saturday evenings.",
+    "checked": "2026-10-23"
+  }
 }

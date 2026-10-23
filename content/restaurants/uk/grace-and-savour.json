@@ -32,5 +32,25 @@
     "note": "Hotel guests can book dinner with their stay up to 12 months ahead.",
     "source": "https://hamptonmanor.com/grace-savour/",
     "checked": "2026-10-10"
+  },
+  "stay": {
+    "kind": "hotel",
+    "name": "Hampton Manor",
+    "rooms": 24,
+    "url": "https://hamptonmanor.com/rooms/",
+    "from": 140,
+    "fromNote": "a Snug room on a Sunday",
+    "packages": [
+      {
+        "name": "Midweek Dine and Stay",
+        "includes": "The eight-course Essence menu, a night for two in a walled-garden suite beside the restaurant, breakfast",
+        "price": 649,
+        "from": true,
+        "per": "room",
+        "when": "Wednesdays and Thursdays",
+        "url": "https://hamptonmanor.com/offers/"
+      }
+    ],
+    "checked": "2026-10-23"
   }
 }

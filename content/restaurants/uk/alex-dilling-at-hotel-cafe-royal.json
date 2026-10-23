@@ -67,5 +67,20 @@
   "duration": "Tables are booked for two and a half hours (three to four hours for larger groups).",
   "infoSource": "https://alexdilling.com/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Hotel Café Royal",
+    "url": "https://www.hotelcaferoyal.com/",
+    "packages": [
+      {
+        "name": "Stay, Dine and Savour: The Michelin Edition",
+        "includes": "A night for two, the seven-course Signature menu at Alex Dilling (the full tasting menu £50 a head more), breakfast, spa access; drinks and service extra",
+        "per": "room",
+        "when": "Not Sundays, Mondays or the festive season",
+        "url": "https://www.hotelcaferoyal.com/offers/staydinesavourthe-michelin-edition/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -61,5 +61,22 @@
   "servicePct": 15,
   "infoSource": "https://www.dorchestercollection.com/ascot/coworth-park/dining/woven-by-adam-smith",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Coworth Park",
+    "url": "https://www.dorchestercollection.com/ascot/coworth-park/rooms-suites",
+    "packages": [
+      {
+        "name": "Dine & Stay",
+        "includes": "The tasting menu at Woven, a night for two, breakfast",
+        "price": 1045,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday to Saturday, booked a week ahead, until 31 December 2026",
+        "url": "https://www.dorchestercollection.com/ascot/coworth-park/exclusive-offers/dine-stay"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

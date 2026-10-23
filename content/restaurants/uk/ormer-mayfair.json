@@ -39,5 +39,12 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 743,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Flemings Mayfair",
+    "rooms": 129,
+    "url": "https://www.flemings-mayfair.co.uk/rooms--suites/107-1/",
+    "checked": "2026-10-23"
+  }
 }

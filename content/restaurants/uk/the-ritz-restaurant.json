@@ -33,5 +33,19 @@
   ],
   "chef": "John Williams",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "The Ritz London",
+    "url": "https://www.theritzlondon.com/book-a-room/",
+    "packages": [
+      {
+        "name": "Dinner, Bed and Breakfast",
+        "includes": "A night, a three-course dinner at The Ritz Restaurant, breakfast",
+        "per": "room",
+        "url": "https://www.theritzlondon.com/offers/dinner-bed-and-breakfast-package/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

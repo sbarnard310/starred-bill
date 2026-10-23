@@ -22,7 +22,7 @@ const currencyOptions = [PAGE.currency].concat(DATA.switchable.filter((c) => c !
 pageVars = () => ({ place: pick(PAGE.city || PAGE, "name"), placeIn: cjk() || ko() ? pick(PAGE, "name") : PAGE["inSentence" + (LANGS[LANG].suffixes[0] || "")] || PAGE.inSentence || PAGE.name });
 
 const EXPLORE_SHOWN = 6;
-const state = { openRow: null, exploreOpen: new Set(), meal: "dinner", activeCat: "All", activeStars: 0, diet: "", wishOnly: false, changesOnly: false, beenOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null, area: "",
+const state = { openRow: null, exploreOpen: new Set(), meal: "dinner", activeCat: "All", activeStars: 0, diet: "", wishOnly: false, changesOnly: false, beenOnly: false, roomsOnly: false, visited: {}, query: params.get("q") || "", sort: "price-asc", wishlist: [], lastUndo: null, area: "",
   currency: PAGE.currency, rates: Object.fromEntries(Object.entries(DATA.currencies).map(([k, v]) => [k, v.perUSD])), rateDate: new Date(DATA.rateDate + "T12:00:00Z") };
 
 // ---------- Helpers ----------
@@ -65,7 +65,7 @@ const byPrice = (a, b) => (priceOf(a) || 0) - (priceOf(b) || 0);
 const onWishlist = (r) => state.wishlist.includes(r.id);
 const onBeen = (r) => Object.prototype.hasOwnProperty.call(state.visited, r.id);
 const starMatch = (r) => !state.activeStars || r.stars === state.activeStars;
-const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOnly || !!r.change) && (!state.beenOnly || onBeen(r));
+const wishMatch = (r) => (!state.wishOnly || onWishlist(r)) && (!state.changesOnly || !!r.change) && (!state.beenOnly || onBeen(r)) && (!state.roomsOnly || !!r.rooms);
 // Dietary filter options (from the MICHELIN Guide). "Vegetarian options" also counts restaurants with a vegetarian menu or a vegetarian kitchen.
 const DIET_KEYS = [["vegetarian-only", "dietVegOnly"], ["vegetarian-menu", "dietVegMenu"], ["vegetarian", "dietVeg"], ["vegan", "dietVegan"], ["gluten-free", "dietGf"], ["halal", "dietHalal"], ["kosher", "dietKosher"]];
 const hasDiet = (r, d) => { const ds = r.diets || []; return ds.includes(d) || (d === "vegetarian" && (ds.includes("vegetarian-menu") || ds.includes("vegetarian-only"))); };
@@ -87,6 +87,9 @@ const maxMatch = (r) => { if (!state.max) return true; const b = maxBill(r); ret
 const dietLabel = (d) => t((DIET_KEYS.find(([k]) => k === d) || [])[1] || "all");
 // Leaf badges for the three that matter most when choosing; the rest are in the filter only.
 const BADGES = [["vegetarian-only", "badgeVegOnly", "dietVegOnly"], ["vegetarian-menu", "badgeVegMenu", "dietVegMenu"], ["vegan", "badgeVegan", "dietVegan"]];
+// A restaurant you can stay the night at (`stay` in its file, build.py's public() gives "h" inside a hotel or "r" rooms of its
+// own): a Rooms badge, opening its restaurant page's "Stay the night" section where it has one.
+const roomsBadge = (r) => !r.rooms ? "" : (r.page ? '<a href="' + esc(r.page) + '#stay"' : "<span") + ' class="diet-badge stay-badge" title="' + esc(t(r.rooms === "h" ? "roomsHotel" : "roomsOwn")) + '"><svg aria-hidden="true"><use href="#bed"/></svg><span>' + esc(t("roomsBadge")) + "</span>" + (r.page ? "</a>" : "</span>");
 const dietBadges = (r) => BADGES.filter(([d]) => (r.diets || []).includes(d) && !(d === "vegetarian-menu" && r.diets.includes("vegetarian-only")))
   .map(([d, short, full]) => '<span class="diet-badge" title="' + esc(t(full)) + '"><svg aria-hidden="true"><use href="#leaf"/></svg><span class="sr-only">' + esc(t(full)) + '</span><span aria-hidden="true">' + esc(t(short)) + "</span></span>").join("");
 const searchText = (r) => [r.name, r.chef, ...((r.diets || []).map(dietLabel)), ...BADGES.filter(([d]) => (r.diets || []).includes(d)).map(([, short]) => t(short)), r.nameZh, r.nameJa, r.nameKo, r.cuisine, CUISINE_ZH[r.cuisine], CUISINE_JA[r.cuisine], CUISINE_FR[r.cuisine], CUISINE_ES[r.cuisine], CUISINE_IT[r.cuisine], CUISINE_KO[r.cuisine],
@@ -122,6 +125,8 @@ function fromSearchLink() {
   if (cat && RESTAURANTS.some((r) => r.cuisine === cat)) state.activeCat = cat;
   if (diet && DIET_KEYS.some(([k]) => k === diet)) state.diet = diet;
   if (area && RESTAURANTS.some((r) => areaKey(r) === area)) state.area = area;
+  // ?show=rooms (the restaurants-with-rooms guides' links): only those you can stay the night at.
+  if (params.get("show") === "rooms" && RESTAURANTS.some((r) => r.rooms)) state.roomsOnly = true;
   const meal = params.get("meal"), max = Number(params.get("max")), cur = params.get("cur");
   if (meal === "lunch") state.meal = "lunch";
   if (max > 0 && state.rates[cur]) state.max = { b: max, cur, meal: ["lunch", "value"].includes(meal) ? meal : "dinner", wine: params.get("wine") === "1" };
@@ -156,7 +161,7 @@ function save() {
 }
 
 // The "No longer starred" rows, shown only when no star or wishlist filter is on; the recent ones also get grey map pins.
-const formerRows = () => state.activeStars || state.wishOnly || state.max ? [] : FORMER.filter((r) => (!state.changesOnly || r.change) && areaMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
+const formerRows = () => state.activeStars || state.wishOnly || state.roomsOnly || state.max ? [] : FORMER.filter((r) => (!state.changesOnly || r.change) && areaMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
 function filtered() {
   const rows = RESTAURANTS.filter((r) => starMatch(r) && wishMatch(r) && dietMatch(r) && areaMatch(r) && maxMatch(r) && (state.activeCat === "All" || r.cuisine === state.activeCat) && queryMatch(r));
   const coll = new Intl.Collator(locale());
@@ -267,9 +272,10 @@ function renderMealFilter() {
 }
 function renderShowFilter() {
   $("showFilter").innerHTML =
-    '<button type="button" data-show="all" aria-pressed="' + !(state.wishOnly || state.changesOnly || state.beenOnly) + '">' + t("showAll") + "</button>" +
+    '<button type="button" data-show="all" aria-pressed="' + !(state.wishOnly || state.changesOnly || state.beenOnly || state.roomsOnly) + '">' + t("showAll") + "</button>" +
     '<button type="button" data-show="changes" aria-pressed="' + state.changesOnly + '" title="' + esc(t("showChangesTitle")) + '"><span class="chg-up" aria-hidden="true">▲</span>' + t("showChanges") + '<span class="count">' + RESTAURANTS.filter((r) => r.change).length + "</span></button>" +
     '<button type="button" data-show="wishlist" aria-pressed="' + state.wishOnly + '"><span class="wish-icon">' + heart + "</span>" + t("showWish") + '<span class="count">' + RESTAURANTS.filter(onWishlist).length + "</span></button>" +
+    (RESTAURANTS.some((r) => r.rooms) ? '<button type="button" data-show="rooms" aria-pressed="' + state.roomsOnly + '" title="' + esc(t("showRoomsTitle")) + '"><svg class="leaf" aria-hidden="true"><use href="#bed"/></svg>' + t("showRooms") + '<span class="count">' + RESTAURANTS.filter((r) => r.rooms).length + "</span></button>" : "") +
     (acctSignedIn() ? '<button type="button" data-show="been" aria-pressed="' + state.beenOnly + '"><span class="been-icon"><svg aria-hidden="true"><use href="#check"/></svg></span>' + t("showBeen") + '<span class="count">' + RESTAURANTS.filter(onBeen).length + "</span></button>" : "");
   renderWishCount();
 }
@@ -315,7 +321,7 @@ function renderDietFilter() {
 }
 // What each drop-down button says, the removable tags under the bar, and the phone panel's "Show 12 restaurants" button.
 function renderFilterSummary(n) {
-  const show = state.wishOnly ? ["wishlist", t("showWish")] : state.changesOnly ? ["changes", t("showChanges")] : state.beenOnly ? ["been", t("showBeen")] : null;
+  const show = state.wishOnly ? ["wishlist", t("showWish")] : state.changesOnly ? ["changes", t("showChanges")] : state.beenOnly ? ["been", t("showBeen")] : state.roomsOnly ? ["rooms", t("showRooms")] : null;
   const stars = state.activeStars ? starIcons(state.activeStars) : null;
   const cat = state.activeCat !== "All" ? esc(cuisineLabeller()(state.activeCat)) : null;
   const diet = state.diet ? esc(dietLabel(state.diet)) : null;
@@ -415,7 +421,7 @@ function nameCell(r) {
     (r.chef ? '<span class="chef-line">' + esc(t("chefLabel", { name: r.chef })) + "</span>" : "") +
     // A restaurant with its own page (build_restaurant_pages() in build.py) links to it.
     (r.page && !r.status ? '<a class="page-link" href="' + esc(r.page) + '">' + esc(t("rpLink")) + " " + fwdArrow() + "</a>" : "") +
-    (r.status ? "" : (r.diets || []).some((d) => BADGES.some(([b]) => b === d)) ? '<span class="diet-badges">' + dietBadges(r) + "</span>" : "") +
+    (r.status || !(dietBadges(r) || r.rooms) ? "" : '<span class="diet-badges">' + dietBadges(r) + roomsBadge(r) + "</span>") +
     '<span class="credit">' + (r.photo && !r.status ? ownCredit(r) : "") + "</span></span></span>";
 }
 // Phones: each restaurant is a two-line row (name and area · cuisine; stars and price) that opens to show the rest.
@@ -531,7 +537,7 @@ function stub(r) {
 const LIST_FOLD = 10, LIST_FOLD_MAX = 12, LEDGER_STEP = 40;
 const nextFrame = (fn) => document.hidden ? setTimeout(fn, 0) : requestAnimationFrame(fn);  // frames pause in a hidden tab
 const ledger = { rows: [], drawn: 0, key: "", expanded: false, job: 0 };
-const narrowed = () => !!(state.query.trim() || state.activeStars || state.activeCat !== "All" || state.diet || state.wishOnly || state.changesOnly || state.beenOnly || state.area);
+const narrowed = () => !!(state.query.trim() || state.activeStars || state.activeCat !== "All" || state.diet || state.wishOnly || state.changesOnly || state.beenOnly || state.roomsOnly || state.area);
 const foldable = () => !narrowed() && ledger.rows.length > LIST_FOLD_MAX;
 const folded = () => foldable() && !ledger.expanded;
 const ledgerTarget = () => folded() ? LIST_FOLD : ledger.rows.length;
@@ -606,7 +612,7 @@ function renderLedger() {
   ledger.rows = rows;
   // The same filters redraw as many rows at once as before (e.g. after ticking a heart far down the list), so the page
   // doesn't jump; new ones draw the first batch now and the rest a frame at a time.
-  const key = [state.activeStars, state.activeCat, state.diet, state.wishOnly, state.changesOnly, state.beenOnly, state.area, state.query, state.sort].join("|");
+  const key = [state.activeStars, state.activeCat, state.diet, state.wishOnly, state.changesOnly, state.beenOnly, state.roomsOnly, state.area, state.query, state.sort].join("|");
   const keep = key === ledger.key ? ledger.drawn : 0;
   ledger.key = key;
   ledger.drawn = Math.min(ledgerTarget(), Math.max(keep, LEDGER_STEP));
@@ -942,14 +948,14 @@ document.addEventListener("click", (e) => {
   } else if (el.dataset.been) {
     toggleBeen(el.dataset.been);
   } else if (el.dataset.show) {
-    state.wishOnly = el.dataset.show === "wishlist"; state.changesOnly = el.dataset.show === "changes"; state.beenOnly = el.dataset.show === "been"; render(); choseFilter();
+    state.wishOnly = el.dataset.show === "wishlist"; state.changesOnly = el.dataset.show === "changes"; state.beenOnly = el.dataset.show === "been"; state.roomsOnly = el.dataset.show === "rooms"; render(); choseFilter();
   } else if (el.dataset.stars) {
     state.activeStars = Number(el.dataset.stars); render(); choseFilter();
   } else if (el.dataset.diet != null) {
     state.diet = el.dataset.diet; render(); choseFilter();
   } else if (el.dataset.unfilter) {
     const k = el.dataset.unfilter;
-    if (k === "show" || k === "all") { state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; }
+    if (k === "show" || k === "all") { state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.roomsOnly = false; }
     if (k === "stars" || k === "all") state.activeStars = 0;
     if (k === "cat" || k === "all") state.activeCat = "All";
     if (k === "diet" || k === "all") state.diet = "";
@@ -957,7 +963,7 @@ document.addEventListener("click", (e) => {
     if (k === "max" || k === "all") state.max = null;
     render();
   } else if (el.id === "clearFilters") {
-    state.activeStars = 0; state.activeCat = "All"; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.area = ""; state.max = null; state.query = ""; $("q").value = ""; render();
+    state.activeStars = 0; state.activeCat = "All"; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.roomsOnly = false; state.area = ""; state.max = null; state.query = ""; $("q").value = ""; render();
   } else if (el.dataset.cat) {
     state.activeCat = el.dataset.cat; $("cuisineQ").value = ""; render(); choseFilter();
     if (el.classList.contains("tag")) $("compare").scrollIntoView();
@@ -976,7 +982,7 @@ document.addEventListener("click", (e) => {
   const a = e.target.closest("a[data-browse]");
   if (!a) return;
   e.preventDefault();
-  state.activeStars = 0; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.query = ""; $("q").value = "";
+  state.activeStars = 0; state.diet = ""; state.wishOnly = false; state.changesOnly = false; state.beenOnly = false; state.roomsOnly = false; state.query = ""; $("q").value = "";
   state.activeCat = a.dataset.browse === "cuisine" ? a.dataset.value : "All";
   state.area = a.dataset.browse === "area" ? a.dataset.value : "";
   state.max = null;

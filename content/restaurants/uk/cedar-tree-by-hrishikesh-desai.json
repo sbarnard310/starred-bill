@@ -28,5 +28,39 @@
     "kosher"
   ],
   "chef": "Hrishikesh Desai",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Farlam Hall",
+    "rooms": 18,
+    "url": "https://www.farlamhall.com/rooms-suites/",
+    "from": 213,
+    "packages": [
+      {
+        "name": "Celebration Package",
+        "includes": "A night for two, breakfast, the tasting menu with matching wines at Cedar Tree, Gusbourne rosé, cream tea, flowers and chocolates",
+        "price": 845,
+        "from": true,
+        "per": "room",
+        "when": "Tasting menu Wednesday to Saturday",
+        "url": "https://www.farlamhall.com/offers-packages/celebration-package/"
+      },
+      {
+        "name": "Farlam Gourmet Break",
+        "includes": "Two nights, breakfast, champagne cream tea, an à la carte dinner the first evening and the 12-course tasting menu with matching wines the second",
+        "per": "room",
+        "nights": 2,
+        "when": "Wednesday to Saturday",
+        "url": "https://www.farlamhall.com/offers-packages/farlam-gourmet-break/"
+      },
+      {
+        "name": "Farlam Foodie Experience",
+        "includes": "Two nights, breakfast, dinner in Bistro Enkel one evening and the 12-course tasting menu the other",
+        "per": "room",
+        "nights": 2,
+        "url": "https://www.farlamhall.com/offers-packages/farlam-foodie-experience/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -107,5 +107,35 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 979,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 15,
+    "url": "https://thehandandflowers.co.uk/rooms",
+    "from": 325,
+    "fromNote": "with breakfast",
+    "packages": [
+      {
+        "name": "Dinner, bed and breakfast",
+        "includes": "A night for two, the four-course house menu, breakfast; drinks extra",
+        "price": 685,
+        "from": true,
+        "per": "room",
+        "when": "Monday to Saturday",
+        "url": "https://thehandandflowers.co.uk/dine-and-stay-experiences"
+      },
+      {
+        "name": "The Classics two-night stay",
+        "includes": "Two nights for two, the Classics menu one evening and dinner at The Coach the other, breakfast; drinks extra",
+        "price": 995,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "Sunday to Thursday",
+        "url": "https://thehandandflowers.co.uk/dine-and-stay-experiences"
+      }
+    ],
+    "note": "Rooms are in cottages around Marlow, with breakfast in the pub.",
+    "checked": "2026-10-23"
+  }
 }

@@ -57,5 +57,12 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "45 Park Lane",
+    "url": "https://www.dorchestercollection.com/london/45-park-lane",
+    "from": 950,
+    "checked": "2026-10-23"
+  }
 }

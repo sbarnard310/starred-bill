@@ -27,5 +27,22 @@
     "vegetarian"
   ],
   "chef": "Greg Anderson",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 3,
+    "url": "https://www.meadowsweetholt.com/rooms",
+    "packages": [
+      {
+        "name": "Dine and stay",
+        "includes": "The Meadowsweet menu for two, a night, breakfast",
+        "price": 570,
+        "from": true,
+        "per": "room",
+        "when": "£570 to £625 by room",
+        "url": "https://www.meadowsweetholt.com/rooms"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

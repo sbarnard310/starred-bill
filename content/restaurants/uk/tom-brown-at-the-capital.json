@@ -32,5 +32,19 @@
     "kosher"
   ],
   "chef": "Tom Brown",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Capital",
+    "url": "https://www.warwickhotels.com/the-capital/rooms",
+    "packages": [
+      {
+        "name": "The Capital Dining Experience",
+        "includes": "A night, the five-course seafood tasting menu at Tom Brown, two glasses of champagne, breakfast",
+        "when": "Monday to Saturday",
+        "url": "https://www.warwickhotels.com/the-capital/offers/the-capital-dining-experience-by-acclaimed-chef-tom-brown"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

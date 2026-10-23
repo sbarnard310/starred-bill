@@ -29,5 +29,21 @@
     "gluten-free"
   ],
   "chef": "Jack Bond",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 8,
+    "url": "https://www.thecottageinthewood.co.uk/stay-the-night/",
+    "packages": [
+      {
+        "name": "Dinner, bed and breakfast",
+        "includes": "A table in the restaurant, the room and breakfast",
+        "per": "room",
+        "when": "Wednesday to Saturday, two nights at most",
+        "url": "https://www.thecottageinthewood.co.uk/stay-the-night/"
+      }
+    ],
+    "note": "Rooms are sold only with dinner and breakfast.",
+    "checked": "2026-10-23"
+  }
 }

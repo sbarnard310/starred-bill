@@ -99,5 +99,11 @@
   "photoWidth": 1000,
   "photoHeight": 667,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "The Dorchester",
+    "url": "https://www.dorchestercollection.com/en/london/the-dorchester",
+    "checked": "2026-10-23"
+  }
 }

@@ -69,6 +69,19 @@ CHEF_SOURCES = ("michelin", "site", "press", "manual")
 STAR_SOURCES = ("michelin-press", "news", "restaurant")
 FAQ_MAX = 10  # the owner's rule (9 Oct 2026): no page has more than 10 questions
 MENU_MEALS = ("dinner", "lunch", "lounge")  # where a menu in `menus` is served: the dining room at dinner or lunch, or the bar/lounge
+# Staying the night (`stay`, 23 Oct 2026): a restaurant inside a hotel, or one with rooms of its own, with its stay
+# packages, all from the restaurant's or hotel's own website (never booking or deal sites, whose prices aren't the
+# restaurant's own, nor the MICHELIN Guide's hotel pages).
+STAY_KINDS = {"hotel": "In a hotel", "rooms": "Has its own rooms"}
+STAY_PER = ("room", "person")
+STAY_NOT_HOSTS = ("booking.com", "expedia.", "hotels.com", "tripadvisor.", "guide.michelin.com", "secretescapes.", "mrandmrssmith.",
+                  "groupon.", "redletterdays.", "buyagift.", "trivago.", "kayak.", "agoda.")
+# A hotel-booking partner for "Stay the night" (to-do items Money 3 and 4): None until a programme accepts the site and the
+# "How we make money" page (Money 1) is up. Then e.g. {"name": "Booking.com", "url": "https://www.awin1.com/cread.php?awinmid=…&awinaffid=…&ued={url}"}:
+# stay_links() adds a second button, a Booking.com search for the hotel's name and town wrapped in the partner's tracking
+# link, marked rel="sponsored" with a commission label, as UK advertising rules ask. The hotel's own page always stays first.
+STAY_PARTNER = None
+STAY_PARTNER_SEARCH = "https://www.booking.com/searchresults.html?ss={q}"
 # Critics' lists a restaurant's `rankings` can name (13 Oct 2026, to-do item feature-critics-rankings), each rank taken by
 # hand from the list's own website: id -> (its name before the year, how it's scored). "rank" lists number their places
 # ("No. 12 on The World's 50 Best Restaurants 2025"); La Liste gives a score out of 100 instead. Shown on restaurant pages
@@ -434,6 +447,25 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
         problem(where, f"diets must be a list made from {', '.join(DIETS)}")
     if r.get("chef") is not None and not isinstance(r["chef"], str):
         problem(where, "chef must be a name in quotes, e.g. \"Clare Smyth\"")
+    if r.get("stay") is not None:
+        s = r["stay"]
+        if not isinstance(s, dict) or s.get("kind") not in STAY_KINDS:
+            problem(where, "stay needs a kind: hotel (it's inside a hotel) or rooms (a restaurant with rooms of its own)")
+        else:
+            if not s.get("url"):
+                problem(where, "stay needs url, the rooms page on the restaurant's or hotel's own website")
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(s.get("checked") or "")):
+                problem(where, "stay needs checked, the day it was looked up, e.g. 2026-10-23")
+            if any(s.get(k) is not None and not isinstance(s[k], (int, float)) for k in ("rooms", "from")):
+                problem(where, "stay: rooms and from must be numbers")
+            for i, p in enumerate(s.get("packages") or []):
+                if (not isinstance(p, dict) or not p.get("name") or not p.get("includes") or p.get("per") not in STAY_PER + (None,)
+                        or any(p.get(k) is not None and not isinstance(p[k], (int, float)) for k in ("price", "nights")) or p.get("from") not in (None, True, False)):
+                    problem(where, f"stay package {i + 1} needs a name and includes; its price and nights must be numbers, per room or person, and from true or false")
+            for u in [s.get("url") or ""] + [p.get("url") or "" for p in s.get("packages") or [] if isinstance(p, dict)]:
+                host = urllib.parse.urlsplit(u).netloc.lower()
+                if any(host == h or host.endswith("." + h) or (h.endswith(".") and (host.startswith(h) or "." + h in host)) for h in STAY_NOT_HOSTS):
+                    problem(where, f"stay: {u} is a booking or deal site; take stays from the restaurant's or hotel's own website")
     # The details only a restaurant's own page shows: its menus, past prices and practical information.
     for i, m in enumerate(r.get("menus") or []):
         if not isinstance(m, dict) or not m.get("name") or not isinstance(m.get("price"), (int, float)) or m.get("meal", "dinner") not in MENU_MEALS:
@@ -923,13 +955,15 @@ PAGE_ONLY = ("bookingWindow", "noBookings", "queue", "byob", "servicePct", "hote
              "walkIns", "groups", "groupsUrl", "cancellation",
              "children", "infoSource", "infoChecked", "rankings", "rankingsChecked",
              "photoAlt", "photoSourceType", "photoPermission", "photoChecked", "photoWidth", "photoHeight",
-             "pageTitle", "pageHeading", "pageDescription", "pageLead")
+             "pageTitle", "pageHeading", "pageDescription", "pageLead", "stay")
 
 
 def public(r):
     out = {k: v for k, v in r.items() if not k.startswith("_") and k not in ("chefSource", "michelinId", "dietsManual", "starSource", "starSourceType", "starSourceDate", "michelinUrl") + PAGE_ONLY}
     if r.get("bookingWindow") and not r.get("status"):
         out["bw"] = bw_public(r["bookingWindow"])
+    if r.get("stay") and not r.get("status"):
+        out["rooms"] = r["stay"]["kind"][0]  # "h" inside a hotel, "r" rooms of its own: the Rooms badge and Show filter (place.js)
     return out
 
 
@@ -4148,6 +4182,7 @@ def guide_stats():
     stats.update(chef_stats(live))
     stats.update(diet_stats(live))
     stats.update(veg_stats(live))
+    stats.update(rooms_stats(live))
     stats.update(cheap_stats(live))
     stats.update(cost_stats(live))
     stats.update(gone_stats())
@@ -4679,6 +4714,84 @@ VEG_NOT = {"choux": "mostly vegetables, with some game and shellfish",
            "bolenius-rembrandtpark": "a Pure Plant menu beside a Dutch menu with lamb and fish"}
 VEG_SERVES = {"oyster-oyster": "Vegetarian or vegan, oysters optional", "fields-by-rene-mathieu": "Plant-based",
               "mita": "Plant-based", "daigo": "Shōjin ryōri (Buddhist vegetarian)", "avatara": "Vegetarian (Indian)"}
+# The restaurants-with-rooms guides (23 Oct 2026): {{table:rooms-<place>}} (restaurants with rooms of their own) and
+# {{table:rooms-hotel-<place>}} (restaurants inside a hotel) for each place here, from each restaurant's `stay`.
+ROOMS_LISTS = ("uk",)
+
+
+def stay_night(p):
+    """A stay package's price for one night in a room for two, to compare packages: per-person prices doubled, longer
+    stays divided by their nights. None without a price."""
+    if p.get("price") is None:
+        return None
+    return p["price"] * (2 if p.get("per") == "person" else 1) / (p.get("nights") or 1)
+
+
+def rooms_stats(live):
+    """Figures for the restaurants-with-rooms guides, for every place with any: {{rooms_<id>}} (starred restaurants you can
+    stay the night at), {{roomsOwn_<id>}} (rooms of their own), {{roomsHotel_<id>}} (inside a hotel), {{rooms1_<id>}}–{{rooms3_<id>}}
+    (by stars), {{roomsPack_<id>}} (with a priced stay package), and {{roomsCheapName_<id>}}/{{roomsCheapPrice_<id>}}/{{roomsCheapUsd_<id>}}
+    (the cheapest such package for one night, for two) and {{roomsFromName_<id>}}/{{roomsFromPrice_<id>}} (the cheapest room)."""
+    out = {}
+    stayers = [r for r in live if r.get("stay")]
+    for pid in {p for r in stayers for p in r["_chain"]}:
+        here = [r for r in stayers if pid in r["_chain"]]
+        k = pid.replace("-", "_")
+        out[f"rooms_{k}"] = str(len(here))
+        out[f"roomsOwn_{k}"] = str(sum(1 for r in here if r["stay"]["kind"] == "rooms"))
+        out[f"roomsHotel_{k}"] = str(sum(1 for r in here if r["stay"]["kind"] == "hotel"))
+        for n in (1, 2, 3):
+            out[f"rooms{n}_{k}"] = str(sum(1 for r in here if r["stars"] == n))
+        packs = [(stay_night(p), r, p) for r in here for p in r["stay"].get("packages") or [] if stay_night(p) is not None]
+        out[f"roomsPack_{k}"] = str(len({r["id"] for _, r, _ in packs}))
+        one = [x for x in packs if (x[2].get("nights") or 1) == 1] or packs  # a single night with dinner, as people book it
+        if one and len({r["cur"] for _, r, _ in one}) == 1:
+            night, r, p = min(one, key=lambda x: x[0])
+            out[f"roomsCheapName_{k}"] = r["name"]
+            out[f"roomsCheapPrice_{k}"] = money(round(night), r["cur"])
+            out[f"roomsCheapUsd_{k}"] = usd_text(night / CURRENCIES[r["cur"]]["perUSD"])
+        rooms = [r for r in here if r["stay"].get("from") is not None]
+        if rooms and len({r["cur"] for r in rooms}) == 1:
+            r = min(rooms, key=lambda r: r["stay"]["from"])
+            out[f"roomsFromName_{k}"] = r["name"]
+            out[f"roomsFromPrice_{k}"] = money(r["stay"]["from"], r["cur"])
+    return out
+
+
+def rooms_blocks(live, name_html, stars_cell, price_cell, note):
+    """{{table:rooms-<place>}} and {{table:rooms-hotel-<place>}} for each ROOMS_LISTS place: the starred restaurants there
+    with rooms of their own, and those inside a hotel, most stars first, with what a room and a stay package cost."""
+    blocks = {}
+    table = lambda heads, body: ('<div class="table-wrap"><table class="guide-table data"><thead><tr>'
+                                 + "".join(f'<th scope="col">{h}</th>' for h in heads) + f'</tr></thead><tbody>{body}</tbody></table></div>')
+    muted = '<span class="muted">–</span>'
+    def pack_cell(r):
+        packs = sorted((p for p in r["stay"].get("packages") or [] if stay_night(p) is not None), key=lambda p: ((p.get("nights") or 1) > 1, stay_night(p)))
+        if not packs:
+            return muted
+        p = packs[0]
+        return f'{e(stay_price(p, r["cur"]))}<br><span class="muted">{e(p["name"])}</span>'
+    for pid in ROOMS_LISTS:
+        for kind, key in (("rooms", f"rooms-{pid}"), ("hotel", f"rooms-hotel-{pid}")):
+            rows = sorted((r for r in live if pid in r["_chain"] and (r.get("stay") or {}).get("kind") == kind),
+                          key=lambda r: (-r["stars"], (r.get("area") or place_name(r)).lower(), r["name"].lower()))
+            body = "".join(
+                f'<tr><td data-label="Restaurant">{name_html(r)}</td><td data-label="Stars">{stars_cell(r["stars"])}</td>'
+                f'<td data-label="Where"><a href="{e(r["cityPath"])}">{e(r.get("area") or place_name(r))}</a></td>'
+                + (f'<td data-label="Hotel"><a href="{e(r["stay"]["url"])}">{e(r["stay"].get("name") or stay_name(r) or "–")}</a></td>' if kind == "hotel"
+                   else f'<td class="num" data-label="Rooms"><a href="{e(r["stay"]["url"])}">{r["stay"]["rooms"] if r["stay"].get("rooms") else "See rooms"}</a></td>')
+                + f'<td class="num" data-label="Room from, a night">{money(r["stay"]["from"], r["cur"]) if r["stay"].get("from") is not None else muted}</td>'
+                f'<td class="num" data-label="Stay package">{pack_cell(r)}</td>'
+                f'<td class="num" data-label="Tasting menu, per person">{price_cell(r)}</td></tr>' for r in rows)
+            blocks[key] = table(("Restaurant", "Stars", "Where", "Hotel" if kind == "hotel" else "Rooms", "Room from, a night", "Stay package", "Tasting menu, per person"), body) + note(
+                ("Starred restaurants with bedrooms of their own" if kind == "rooms" else "Starred restaurants inside a hotel you can stay at")
+                + ", most stars first. Names open each restaurant’s prices on The Starred Bill; the "
+                + ("number of rooms" if kind == "rooms" else "hotel’s name") + " opens its rooms page. Room prices are the lowest the "
+                + ("restaurant" if kind == "rooms" else "hotel") + " lists for a night, and the stay package its cheapest that includes dinner and a night’s stay, "
+                "both from its own website and changing with the date. Tasting menus are per person before service and drinks.")
+    return blocks
+
+
 VEG_LISTS = ("london",)        # {{table:veg-london}}: every starred restaurant there with a vegetarian menu or vegan options
 VEG_CITIES_MAX = 15            # rows in {{table:veg-cities}}
 
@@ -5729,6 +5842,7 @@ def guide_blocks(stats):
     blocks.update(chef_blocks(live, links, stars_cell, note))
     blocks.update(diet_blocks(live, name_html, stars_cell, price_cell, note))
     blocks.update(veg_blocks(live, name_html, stars_cell, price_cell, note))
+    blocks.update(rooms_blocks(live, name_html, stars_cell, price_cell, note))
     blocks.update(popular_blocks(stars_cell, price_cell, links, checked))
     blocks.update(cheap_blocks(live, name_html, stars_cell, checked, year))
     blocks.update(cost_blocks(live, name_html, stars_cell, checked, year))
@@ -7550,6 +7664,81 @@ def before_html(r):
             '    <div class="faq rp-qa">' + "".join(blocks) + f"</div>\n    {info_note(r)}\n  </div>\n</section>\n"), qa
 
 
+def stay_name(r):
+    """The hotel a restaurant is in, mid-sentence ("the Westin Harbour Castle", from `hotel`, else its stay's own name),
+    or None for a restaurant with rooms of its own, or one that shares its hotel's name (Gravetye Manor, Morston Hall)."""
+    s = r.get("stay") or {}
+    name = r.get("hotel") or s.get("name") if s.get("kind") == "hotel" or r.get("hotel") else None
+    bare = lambda x: re.sub(r"^the\s+|\s+hotel$", "", x.strip().lower())
+    return None if name and bare(name) == bare(r["name"]) else name
+
+
+def stay_price(p, cur):
+    """A stay package's price in words: "£650 a room", "£325 a person", "£1,100 a room for 2 nights"."""
+    if p.get("price") is None:
+        return ""
+    nights = p.get("nights") or 1
+    per = {"person": " a person", "room": " a room"}.get(p.get("per"), "")  # left blank where the site doesn't say
+    return ("from " if p.get("from") else "") + money(p["price"], cur) + per + (f" for {nights} nights" if nights > 1 else "")
+
+
+def stay_links(r):
+    """The "Stay the night" buttons: the rooms page on the hotel's or restaurant's own website, then, once STAY_PARTNER is
+    set, a paid search for it on the partner's site. Each is (label, url, paid)."""
+    s = r["stay"]
+    out = [("See rooms on the " + ("hotel’s" if s["kind"] == "hotel" else "restaurant’s") + " website", s["url"], False)]
+    if STAY_PARTNER:
+        q = urllib.parse.quote_plus(", ".join(x for x in (s.get("name") or stay_name(r) or r["name"], r.get("area") or r["cityName"]) if x))
+        out.append((f"Compare prices on {STAY_PARTNER['name']}", STAY_PARTNER["url"].format(url=urllib.parse.quote(STAY_PARTNER_SEARCH.format(q=q), safe="")), True))
+    return out
+
+
+def stay_html(r):
+    """Stay the night: whether the restaurant is inside a hotel or has rooms of its own, from what a night costs, and its
+    stay packages (dinner, bed and breakfast…), with buttons to book the rooms. Left out without `stay`."""
+    s = r.get("stay")
+    if not s or r.get("status"):
+        return "", []
+    name, cur = r["name"], r["cur"]
+    hotel = stay_name(r)
+    q = f"Can you stay the night at {name}?"
+    rooms = f"{s['rooms']} bedroom{'s' if s['rooms'] != 1 else ''}" if s.get("rooms") else ""
+    if s["kind"] == "hotel" and hotel:
+        a = f"Yes. {name} is inside {hotel}" + (f", which has {rooms}" if rooms else "") + "."
+    elif s["kind"] == "hotel":
+        a = f"Yes. {name} is a hotel as well as a restaurant" + (f", with {rooms}" if rooms else "") + "."
+    else:
+        a = f"Yes. {name} has " + (f"{rooms} of its own" if rooms else "rooms of its own") + "."
+    if s.get("from") is not None:
+        a += f" A room costs from {money(s['from'], cur)} a night" + (f" ({s['fromNote'].rstrip('.')})" if s.get("fromNote") else "") + "."
+    packs = s.get("packages") or []
+    # The cheapest one-night package leads; a longer one only where there's no single night.
+    priced = sorted((p for p in packs if p.get("price") is not None), key=lambda p: ((p.get("nights") or 1) > 1, stay_night(p)))
+    if priced:
+        p = priced[0]
+        when = (p.get("when") or "").rstrip(".")
+        if when and not re.match(r"(Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)days?\b|(January|February|March|April|May|June|July|August|September|October|November|December)\b|\d", when):
+            when = when[:1].lower() + when[1:]
+        a += f" Stays with dinner start at {stay_price(dict(p, **{'from': False}), cur)} ({p['name']}" + (f", {when}" if when else "") + ")."
+    elif packs:
+        a += f" It offers {and_list([p['name'] for p in packs])}."
+    rows = "".join(
+        f'<tr><th scope="row">{e(p["name"])}' + (f'<small>{e(p["when"])}</small>' if p.get("when") else "") + f'</th><td>{e(p["includes"])}</td>'
+        f'<td class="num">{e(stay_price(p, cur)) or "–"}</td></tr>' for p in packs)
+    table = (f'    <div class="table-scroll"><table class="rp-table rp-stay"><thead><tr><th>Package</th><th>What’s included</th><th class="num">Price</th></tr></thead>'
+             f"<tbody>{rows}</tbody></table></div>\n") if packs else ""
+    links = stay_links(r)
+    buttons = " ".join(f'<a class="rp-cta" href="{e(u)}" rel="{"sponsored noopener" if paid else "noopener"}">{e(label)}</a>' for label, u, paid in links)
+    paid_note = (" We may earn a commission if you book through the " + e(STAY_PARTNER["name"]) + " link, at no extra cost to you; it never changes what we list."
+                 if any(paid for _, _, paid in links) else "")
+    html_ = ('<section id="stay">\n  <div class="wrap">\n    <div class="section-head"><div><span class="eyebrow">Stay the night</span>'
+             f'<h2 style="margin-top: 6px">{e(q)}</h2><p>{e(a)}</p>' + (f'<p>{e(s["note"])}</p>' if s.get("note") else "") + "</div></div>\n"
+             + table + f'    <p class="rp-stay-links">{buttons}</p>\n'
+             f'    <p class="rp-note">From the {"hotel’s" if s["kind"] == "hotel" else "restaurant’s"} website, checked {e(nice_date(s["checked"]))}. '
+             f"Room prices and offers change with the date, so check before you book.{paid_note}</p>\n  </div>\n</section>\n")
+    return html_, [(q, a)]
+
+
 MAY_LIKE_MAX = 6
 MAY_LIKE_NEAR_KM = 3  # "nearby" suggestions beyond the nearest list, within this distance
 
@@ -7924,13 +8113,14 @@ def build_restaurant_pages():
                 f'      <h1 style="margin-top: 12px">'
                 + (re.sub(r"&lt;(/?)em&gt;", r"<\1em>", e(page_words(r, "pageHeading"))) if r.get("pageHeading") else f"{e(page_name(r, shared))} prices: what it <em>costs</em>")
                 + '</h1>\n'
-                f'      <p class="rp-where">{e(where)}' + (f' · In {e(r["hotel"])}' if r.get("hotel") else "") + (f' · Chef {e(r["chef"])}' if r.get("chef") else "") + '</p>\n'
+                f'      <p class="rp-where">{e(where)}' + (f' · In {e(stay_name(r))}' if stay_name(r) else ' · Has rooms' if r.get("stay") and not r.get("status") else "") + (f' · Chef {e(r["chef"])}' if r.get("chef") else "") + '</p>\n'
                 f'      <p class="rp-answer">{e(answer)}' + (f' {e(page_words(r, "pageLead"))}' if r.get("pageLead") else "") + '</p>\n'
                 + (f'      <p class="rp-acclaim">{e(acclaim)}</p>\n' if acclaim else "")
                 + f'      <div class="rp-actions"><button type="button" class="rp-wish" id="rpWish" data-wish="{e(r["id"])}" aria-pressed="false">'
                 f'<svg aria-hidden="true"><use href="#heart"/></svg><span>Save to wishlist</span></button>'
                 + (f'<a class="rp-btn" href="{e(r["bookingUrl"])}">Book on {e(booking_site(r["bookingUrl"]) or "their website")}</a>' if r.get("bookingUrl") else "")
                 + (f'<a class="rp-btn" href="{e(r["website"])}">Restaurant’s website</a>' if r.get("website") else "")
+                + ('<a class="rp-btn" href="#stay">Stay the night</a>' if r.get("stay") else "")
                 + f'<a class="rp-btn" href="{e(maps)}">Google Maps</a>'
                 + f'<button type="button" class="rp-btn" {trip_attrs(r)}>Add to a trip</button>'
                 + f'<button type="button" class="rp-btn" {report_attrs(r)}>Report a price or change</button></div>\n'
@@ -7963,6 +8153,7 @@ def build_restaurant_pages():
             f'<a href="{places[c]["path"]}">{e(places[c]["name"])}</a>' for c in up)))
         visit, visit_qa = before_html(r)
         book, book_qa = book_html(r)
+        stay_block, stay_qa = stay_html(r)
         if hours_lines(r) and not visit:
             facts.append(("Opening hours" if any(h not in ("open", "closed") for d, h in hours_lines(r)) else "Open",
                           "".join(f'<span class="rp-hours"><b>{e(d)}</b> {e(h)}</span>' for d, h in hours_lines(r))
@@ -8084,7 +8275,7 @@ def build_restaurant_pages():
         cheaper, cheaper_qa = cheaper_html(r, peers_place, peers, live)
         history_qa = [(f"Has {r['name']} got more expensive?", history_sentence(r))] if history_sentence(r) else []
         # Most-asked first: what it costs, booking, the cheapest way in, the dress code, rising prices, value, stars, chef…
-        faq = ([(cost_q, answer)] + book_qa + cheaper_qa + visit_qa[:1] + history_qa + compare_qa + glance_qa + visit_qa[1:])[:RESTAURANT_FAQ_MAX]
+        faq = ([(cost_q, answer)] + book_qa + stay_qa + cheaper_qa + visit_qa[:1] + history_qa + compare_qa + glance_qa + visit_qa[1:])[:RESTAURANT_FAQ_MAX]
         guides_block = related_guides_html(city, [r], restaurant_guides(r)) if guides else ""
 
         path = r["page"]
@@ -8122,7 +8313,7 @@ def build_restaurant_pages():
             "ogAlt": e(f"What a meal at {r['name']} costs"),
             "jsonld": '<script type="application/ld+json">' + as_json({"@context": "https://schema.org", "@graph": graph}) + "</script>",
             "crumbs": '<a href="/">All destinations</a>' + "".join(f'<a href="{c["path"]}">{e(c["name"])}</a>' for c in crumbs) + f'<span aria-current="page">{e(r["name"])}</span>',
-            "hero": hero, "main": pay_html + history_html(r) + cheaper + book + visit + facts_html + compare_html
+            "hero": hero, "main": pay_html + history_html(r) + cheaper + book + stay_block + visit + facts_html + compare_html
             + may_like_html(r, live, {q["id"] for km, q in near} | {q["id"] for q in compare_shown}) + near_html + news_section(r) + guides_block + restaurant_sources_html(r, mg.get(r["id"])), "data": as_json(data),
         })
         # Dollar prices on a US restaurant's page read "$350", as the guides write them.
@@ -8192,6 +8383,9 @@ def restaurant_sources_html(r, michelin_url):
     if r.get("bookingWindow"):
         w = r["bookingWindow"]
         parts.append("When tables go on sale: " + a(w["source"], host(w["source"])) + (f", checked {e(nice_date(w['checked']))}" if w.get("checked") else ""))
+    if r.get("stay") and not r.get("status"):
+        parts.append("Rooms and stays: " + a(r["stay"]["url"], "the " + ("hotel’s" if r["stay"]["kind"] == "hotel" else "restaurant’s") + " website")
+                     + f", checked {e(nice_date(r['stay']['checked']))}")
     if r.get("infoSource"):
         parts.append("Booking and visiting: " + a(r["infoSource"], "the restaurant’s website")
                      + (f", checked {e(nice_date(r['infoChecked']))}" if r.get("infoChecked") else ""))

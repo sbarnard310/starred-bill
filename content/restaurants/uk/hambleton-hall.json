@@ -100,5 +100,23 @@
   "photoWidth": 640,
   "photoHeight": 480,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Hambleton Hall",
+    "rooms": 17,
+    "url": "https://www.hambletonhall.com/rooms/",
+    "packages": [
+      {
+        "name": "Autumn Countryside Escape",
+        "includes": "A night for two in a standard double, a three-course dinner from the Menu of the Day, breakfast",
+        "price": 750,
+        "from": true,
+        "per": "room",
+        "when": "Not Saturdays",
+        "url": "https://www.hambletonhall.com/offer/summer-onwards-escape/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

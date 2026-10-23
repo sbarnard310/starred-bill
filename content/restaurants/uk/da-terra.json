@@ -91,5 +91,11 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Town Hall Hotel",
+    "url": "https://www.townhallhotel.com/",
+    "checked": "2026-10-23"
+  }
 }

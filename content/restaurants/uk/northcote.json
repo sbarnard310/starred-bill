@@ -41,5 +41,34 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 608,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Northcote",
+    "rooms": 26,
+    "url": "https://www.northcote.com/the-hotel/",
+    "from": 290,
+    "fromNote": "with breakfast, for two",
+    "packages": [
+      {
+        "name": "Seasonal Gourmet Break",
+        "includes": "The five-course gourmet menu for two, a night in a Classic room, breakfast",
+        "price": 570,
+        "from": true,
+        "per": "room",
+        "when": "Sundays; more on other nights",
+        "url": "https://www.northcote.com/offer/seasonal-gourmet-break-package/"
+      },
+      {
+        "name": "The À La Carte Break",
+        "includes": "£95 a head towards dinner from the à la carte, a night in a Classic room, breakfast",
+        "price": 450,
+        "from": true,
+        "per": "room",
+        "when": "Sunday to Thursday",
+        "url": "https://www.northcote.com/offer/the-a-la-carte-break/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

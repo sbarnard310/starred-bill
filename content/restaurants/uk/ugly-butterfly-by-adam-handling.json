@@ -32,5 +32,21 @@
     "vegan"
   ],
   "chef": "Adam Handling",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Headland",
+    "url": "https://www.headlandhotel.co.uk/hotel-rooms/",
+    "from": 195,
+    "packages": [
+      {
+        "name": "The Ugly Butterfly Stay",
+        "includes": "A night, the four-course dinner at Ugly Butterfly, breakfast, spa access",
+        "per": "room",
+        "when": "Adults only; Wednesday to Saturday from October to February",
+        "url": "https://www.headlandhotel.co.uk/stays-offers/the-ugly-butterfly-stay/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -23,5 +23,23 @@
   "placeId": "ChIJ7UavnTybiEgRcEthDk2Kfvs",
   "michelinId": "1195729",
   "chef": "Mark Donald",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 6,
+    "url": "https://www.theglenturretrestaurant.com/pages/accommodation",
+    "packages": [
+      {
+        "name": "Gastronomic Overnight Stay",
+        "includes": "The tasting menu for two and a night in the estate house",
+        "price": 790,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday to Saturday",
+        "url": "https://www.theglenturretrestaurant.com/pages/accommodation"
+      }
+    ],
+    "note": "Six bedrooms in the Aberturret estate house, which can also be hired whole.",
+    "checked": "2026-10-23"
+  }
 }

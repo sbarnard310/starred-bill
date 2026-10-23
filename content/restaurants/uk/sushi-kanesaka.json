@@ -61,8 +61,22 @@
   "stay": {
     "kind": "hotel",
     "name": "45 Park Lane",
-    "url": "https://www.dorchestercollection.com/london/45-park-lane",
+    "rooms": 45,
+    "url": "https://www.dorchestercollection.com/london/45-park-lane/rooms-suites",
     "from": 950,
+    "packages": [
+      {
+        "name": "Stay & Indulge",
+        "includes": "Two nights or more, with £250 to spend in the hotel’s restaurants and bar, Sushi Kanesaka among them",
+        "price": 1900,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "From £950 a night, two nights at least, until 31 December 2026; plus a 5% staff charge",
+        "url": "https://www.dorchestercollection.com/london/45-park-lane/exclusive-offers/stay-indulge"
+      }
+    ],
+    "note": "Every room faces Hyde Park.",
     "checked": "2026-10-23"
   }
 }

@@ -103,7 +103,20 @@
   "stay": {
     "kind": "hotel",
     "name": "The Dorchester",
-    "url": "https://www.dorchestercollection.com/en/london/the-dorchester",
+    "rooms": 241,
+    "url": "https://www.dorchestercollection.com/london/the-dorchester/rooms-suites",
+    "packages": [
+      {
+        "name": "Stay & Indulge",
+        "includes": "Two nights or more, with £200 to spend in The Dorchester’s restaurants and bars during the stay",
+        "price": 1900,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "From £950 a night, two nights at least, until 31 December 2026; plus a 5% staff charge",
+        "url": "https://www.dorchestercollection.com/london/the-dorchester/exclusive-offers/stay-indulge"
+      }
+    ],
     "checked": "2026-10-23"
   }
 }

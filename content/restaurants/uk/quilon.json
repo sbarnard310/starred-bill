@@ -31,5 +31,12 @@
     "halal"
   ],
   "chef": "Sriram Aylur",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "St. James’ Court, A Taj Hotel",
+    "url": "https://www.tajhotels.com/en-in/hotels/st-james-court-a-taj-hotel-london/rooms",
+    "note": "Quilon is one of St. James’ Court’s restaurants; the hotel’s entrance is at 54 Buckingham Gate, a few doors along.",
+    "checked": "2026-10-23"
+  }
 }

@@ -45,6 +45,16 @@
     "name": "Flemings Mayfair",
     "rooms": 129,
     "url": "https://www.flemings-mayfair.co.uk/rooms--suites/107-1/",
+    "packages": [
+      {
+        "name": "US Dollar Package",
+        "includes": "A night with full English breakfast, round-trip airport transfers and a $75 credit for dinner at Ormer Mayfair (or the bar or afternoon tea)",
+        "per": "room",
+        "when": "From £750 a night; Canadian and Australian dollar versions too",
+        "url": "https://www.flemings-mayfair.co.uk/london-hotel-special-offers/us-dollar-package/51-10/"
+      }
+    ],
+    "note": "The hotel’s breakfast is served in Ormer Mayfair.",
     "checked": "2026-10-23"
   }
 }

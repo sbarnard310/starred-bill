@@ -63,7 +63,8 @@
   "stay": {
     "kind": "hotel",
     "name": "The Peninsula London",
-    "url": "https://www.peninsula.com/en/london/5-star-luxury-hotel-belgravia",
+    "url": "https://www.peninsula.com/en/london/luxury-hotel-room-suite-types",
+    "note": "Brooklands is on the hotel’s rooftop, with Brooklands Bar beside it.",
     "checked": "2026-10-23"
   }
 }

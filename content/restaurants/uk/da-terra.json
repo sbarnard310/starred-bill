@@ -95,7 +95,8 @@
   "stay": {
     "kind": "hotel",
     "name": "Town Hall Hotel",
-    "url": "https://www.townhallhotel.com/",
+    "url": "https://www.townhallhotel.com/accommodation",
+    "note": "Da Terra is on the hotel’s ground floor; its lounge can open for hotel guests to drop in for a drink on request.",
     "checked": "2026-10-23"
   }
 }

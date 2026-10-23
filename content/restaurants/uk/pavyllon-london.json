@@ -80,7 +80,17 @@
   "stay": {
     "kind": "hotel",
     "name": "Four Seasons Hotel London at Park Lane",
-    "url": "https://www.fourseasons.com/london/",
+    "rooms": 196,
+    "url": "https://www.fourseasons.com/london/accommodations/",
+    "packages": [
+      {
+        "name": "Bed and Breakfast",
+        "includes": "A night with English breakfast for two each morning in Pavyllon",
+        "per": "room",
+        "url": "https://www.fourseasons.com/london/offers/bed_and_breakfast/"
+      }
+    ],
+    "note": "Pavyllon serves breakfast as well as lunch and dinner.",
     "checked": "2026-10-23"
   }
 }

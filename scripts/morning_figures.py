@@ -22,7 +22,7 @@ report can say what changed. A source that isn't set up yet is reported as "not 
     page's live title, description and heading and the search words they lack, so they can be tuned.
   - Sites linking to us, from Bing Webmaster Tools (Search Console's Links report has no API). Needs the Bing
     Webmaster API key in the Keychain as "starredbill-bing".
-  - The SEO plan's six measures against their aims for 31 Jan 2027 (SEO_AIMS), put together from the above.
+  - The SEO plan's seven measures against their aims for 31 Jan 2027 (SEO_AIMS), put together from the above.
   - Google Analytics 4 (visitors, sessions, page views, top pages and countries, sign-ups). It only counts
     visitors who accepted the cookie banner. Google settles a day's bounce and engagement rates a day or two
     later, so yesterday's are left out (engagementPending) until then; the day before's are settled.
@@ -65,9 +65,10 @@ CONFIG = RESEARCH / "figures" / "config.json"
 SITE = "https://starredbill.com"
 # The SEO plan's aims for 31 Jan 2027 (https://claude.ai/code/artifact/8ee24d0c-b566-4b4b-bead-f87d25a46122).
 # Raised 23 Oct 2026 (owner's request) once the first aims were passed (400 pages indexed, 10,000 weekly impressions);
-# weekly clicks and searches on page one were added then, and the targets grew from 20 to 24 (aim 10 → 12).
+# weekly clicks, searches on page one and (owner's request) searches in the top three were added then, and the
+# targets grew from 20 to 24 (aim 10 → 12).
 SEO_AIMS = {"by": "2027-01-31", "pages_indexed": 2000, "weekly_impressions": 30000, "weekly_clicks": 600,
-            "searches_on_page_one": 150, "linking_sites": 20, "targets_on_page_one": 12}
+            "searches_on_page_one": 150, "searches_in_top_three": 20, "linking_sites": 20, "targets_on_page_one": 12}
 INDEX_BUDGET = 300   # sitemap pages re-inspected a day, besides the key pages (Google allows 2,000 a day)
 # Monthly search volumes come from the Ahrefs snapshot of 7 Oct 2026 (the subscription has ended; Search Console
 # gives no volumes). Searches it doesn't hold have no volume.
@@ -484,6 +485,7 @@ def page_one(cfg, prev=None):
             "week_before": len(on(prev_week)), "pages_on_page_one": len(page_rows),
             "clicks_from_page_one": sum(f["clicks"] for f in found),
             "searches": found[:PAGE_ONE_MAX],
+            "top_three_searches": [f for f in found if f["position"] <= 3],
             "new": [f for f in found if before is not None and f["search"] not in before],
             "dropped_off": sorted(set(before or []) - names),
             "no_clicks": [f for f in found if f["impressions"] >= NO_CLICKS_MIN and not f["clicks"]],
@@ -623,6 +625,7 @@ def seo_measures(sources):
            "weekly_impressions": ok("search_console").get("this_week", {}).get("impressions"),
            "weekly_clicks": ok("search_console").get("this_week", {}).get("clicks"),
            "searches_on_page_one": ok("page_one").get("on_page_one"),
+           "searches_in_top_three": ok("page_one").get("top_three"),
            "linking_sites": ok("links").get("linking_sites"),
            "targets_on_page_one": ok("targets").get("on_page_one")}
     return {k: {"now": v, "aim": SEO_AIMS[k]} for k, v in now.items()} | {"aim_date": SEO_AIMS["by"]}

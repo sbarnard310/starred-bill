@@ -1,17 +1,18 @@
 {
   "id": "three-michelin-star-restaurants",
-  "title": "3 Michelin Star Restaurants: All {{n3}} in the World ({{guideYear}})",
-  "description": "There are {{n3}} three-Michelin-star restaurants in the world. All of them by country, with chef, cuisine and menu price, and this year’s new three stars.",
-  "h1": "3 Michelin Star Restaurants: All {{n3}} in the World",
+  "title": "How Many 3 Michelin Star Restaurants in the World? All {{n3}}",
+  "description": "How many 3 Michelin star restaurants are there in the world? {{n3}}. All by country, with chef, cuisine and menu price, and this year’s new three stars.",
+  "h1": "How Many 3 Michelin Star Restaurants Are There? All {{n3}} in the World",
   "summary": "The full list of three-star restaurants, country by country, with chefs and tasting menu prices.",
   "section": "where",
   "figure": "{{n3}} three-star restaurants, dinner typically {{price3}}",
   "published": "2026-10-05",
-  "updated": "2026-10-16",
+  "updated": "2026-10-23",
   "lang": "en-US",
   "keywords": [
     "3 michelin star restaurants",
     "how many 3 michelin star restaurants are there in the world",
+    "how many 3 star michelin restaurants in the world",
     "how many restaurants have 3 michelin stars",
     "3 michelin star restaurants by country"
   ],

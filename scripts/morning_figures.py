@@ -672,9 +672,10 @@ def analytics(cfg):
             "events_last_7_days": top("eventName", "eventCount", "7daysAgo", 25)}
 
 
-def umami(cfg):
-    """Reads through the website's share link ("umami_share" in config.json: the code after /share/), which
-    works on Umami's free plan, else through an API key in the Keychain (Umami's paid plans only)."""
+def umami_client(cfg):
+    """Umami's API address for the website, its sign-in headers and its name for page addresses. Reads through the
+    website's share link ("umami_share" in config.json: the code after /share/), which works on Umami's free plan,
+    else through an API key in the Keychain (Umami's paid plans only)."""
     site = cfg.get("umami_website", "0717d470-551a-4b38-8632-c2e273c3cc5d")
     browser = {"User-Agent": "Mozilla/5.0 (Macintosh) starredbill-morning-figures", "Accept": "application/json"}
     if cfg.get("umami_share"):
@@ -689,6 +690,11 @@ def umami(cfg):
             raise RuntimeError("not set up: no Umami share link in config.json and no API key in the Keychain")
         auth = dict(browser, **{"x-umami-api-key": key})
         base, page_type = f"https://api.umami.is/v1/websites/{site}", "url"
+    return base, auth, page_type
+
+
+def umami(cfg):
+    base, auth, page_type = umami_client(cfg)
     today = dt.datetime.combine(dt.date.today(), dt.time())
     start = int((today - dt.timedelta(days=1)).timestamp() * 1000)
     end = int(today.timestamp() * 1000) - 1

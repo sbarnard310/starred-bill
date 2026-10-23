@@ -27,11 +27,6 @@
   "lng": 1.3378048,
   "placeId": "ChIJYbQnG5-p5EcRVktU2m62Xgw",
   "michelinId": "118502",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Christophe Hay",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

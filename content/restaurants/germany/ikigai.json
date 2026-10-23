@@ -18,7 +18,6 @@
   "placeId": "ChIJW5M3uq4InUcR9589boH_wpw",
   "michelinId": "122205",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Chris Rainer",
@@ -26,5 +25,6 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

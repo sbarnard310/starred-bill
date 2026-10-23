@@ -22,10 +22,7 @@
   "lng": 9.3099771,
   "placeId": "ChIJNYDl6H2B2RIR3Xe1Jee6YtU",
   "michelinId": "63654",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Fabio Bragagnolo",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "notice": "Closed for the season until about mid-April 2027 (its website, October 2026)"
 }

@@ -17,12 +17,14 @@
   "placeId": "ChIJBxBWnSaPsUcRaWgkWhttxS0",
   "michelinId": "526192",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Julian Stowasser",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

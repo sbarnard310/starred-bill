@@ -26,8 +26,11 @@
   "placeId": "ChIJzUmldWcqikcRuUZe7ICLk1U",
   "michelinId": "8096",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "René Meilleur and Maxime Meilleur",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true,
+  "notice": "Closed between seasons; reopens on 5 December 2026 (its website, October 2026)"
 }

@@ -22,16 +22,11 @@
   "lunchNoteIt": "Stesso menu a pranzo · sab–dom",
   "lunchSourceType": "press",
   "lunchSource": "https://www.cookist.it/quanto-costa-il-menu-degustazione-nei-grandi-stellati-italiani-20-indirizzi-da-provare/",
-  "website": "https://www.dacaino.com/",
+  "website": "https://www.dacaino.it/",
   "lat": 42.622022,
   "lng": 11.490628,
   "placeId": "ChIJBY28iyIDKRMRPCvsN3s5E2A",
   "michelinId": "142369",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Valeria Piccini",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

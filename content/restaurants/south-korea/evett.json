@@ -28,10 +28,6 @@
   "lng": 127.0362,
   "placeId": "ChIJTaVjWi6hfDURVegqLOB9oSs",
   "michelinId": "570663",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Joseph Lidgerwood",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -20,11 +20,6 @@
   "lng": 14.5000207,
   "placeId": "ChIJBRJDB_RDOhMRdTYmFrinF4A",
   "michelinId": "363223",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Giuseppe Iannotti",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

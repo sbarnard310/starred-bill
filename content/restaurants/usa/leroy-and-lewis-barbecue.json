@@ -19,8 +19,11 @@
   "placeId": "ChIJ9XodaJW0RIYRFlcMvIfeqJE",
   "michelinId": "1209382",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Evan LeRoy",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

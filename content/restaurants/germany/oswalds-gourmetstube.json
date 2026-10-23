@@ -17,12 +17,8 @@
   "lng": 13.0296432,
   "placeId": "ChIJUwTWQj08dUcROYovLUHTiFQ",
   "michelinId": "466614",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Thomas Gerber",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 199 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

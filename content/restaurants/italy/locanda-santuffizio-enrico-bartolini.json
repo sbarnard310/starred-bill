@@ -20,11 +20,6 @@
   "lng": 8.2778294,
   "placeId": "ChIJVVVlI06-h0cRwO7O81q2PYY",
   "michelinId": "163087",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Gabriele Boffa",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

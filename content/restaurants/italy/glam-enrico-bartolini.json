@@ -19,11 +19,6 @@
   "lng": 12.3298209,
   "placeId": "ChIJcypW7sOxfkcRz-086hZfk34",
   "michelinId": "526938",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Donato Ascani",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

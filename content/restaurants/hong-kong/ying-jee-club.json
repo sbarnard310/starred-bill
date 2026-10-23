@@ -30,8 +30,7 @@
   "michelinId": "545662",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Cheung Kin Ming",
   "chefSource": "site",
@@ -44,5 +43,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

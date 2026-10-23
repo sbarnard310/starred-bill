@@ -26,10 +26,9 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free",
     "halal"
   ],
   "chef": "Sameer Taneja",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

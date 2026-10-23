@@ -32,5 +32,6 @@
   "lunchNoteFr": "Menu déjeuner",
   "lunchNoteIt": "Menu pranzo",
   "chef": "Olivier Jean",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

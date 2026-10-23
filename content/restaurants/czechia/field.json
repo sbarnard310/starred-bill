@@ -19,8 +19,7 @@
   "michelinId": "464432",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Radek Kašpárek",
   "chefSource": "site",
@@ -41,5 +40,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

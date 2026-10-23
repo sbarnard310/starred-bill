@@ -25,11 +25,6 @@
   "lng": 7.437975,
   "placeId": "ChIJ8d2-BHjCzRIRe3R14j7Z0ZI",
   "michelinId": "118531",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Marcel Ravin",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

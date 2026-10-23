@@ -29,8 +29,10 @@
   "placeId": "ChIJlRpgqnsABDQRnPOTTc7WkCQ",
   "michelinId": "380308",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Vicky Lau",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

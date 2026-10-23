@@ -17,13 +17,8 @@
   "lng": 12.1786546,
   "placeId": "ChIJcwxYz2PxT0YRbOv1sdSxCMg",
   "michelinId": "1205585",
-  "diets": [
-    "vegetarian",
-    "halal",
-    "kosher"
-  ],
   "chef": "Thomas Sjögren",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteSv": "Avsmakningsmeny, cirka 18 serveringar",
   "wine": 2000,
   "lunch": 3500,

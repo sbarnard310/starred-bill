@@ -15,16 +15,13 @@
   "placeId": "ChIJ61_DMsoUXz4RV3jdxajvWm4",
   "michelinId": "518837",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "dinnerNoteAr": "قائمة Experience من 6 أطباق (قائمة Emotion من 4 أطباق بسعر AED 950)",
   "lunchNote": "Open for lunch · Saturdays",
   "lunchNoteAr": "مفتوح وقت الغداء · السبت",
   "dinner": 1250,
   "wine": 900,
-  "source": "https://whatson.ae/2024/09/review-stay-by-yannick-alleno/"
+  "source": "https://whatson.ae/2024/09/review-stay-by-yannick-alleno/",
+  "dietsManual": true
 }

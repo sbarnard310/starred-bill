@@ -20,10 +20,10 @@
   "placeId": "ChIJ4SZ-wxptiEcR5eWgSgbHVc8",
   "michelinId": "504897",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Marco Sacco",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

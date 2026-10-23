@@ -31,8 +31,10 @@
   "michelinId": "1184876",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Hung Chi-Kwong",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

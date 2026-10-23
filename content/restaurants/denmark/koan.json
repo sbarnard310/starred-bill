@@ -27,10 +27,12 @@
   "placeId": "ChIJoxbQhIBTUkYR15NWp69nCt0",
   "michelinId": "1200874",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Kristian Baumann",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu (vegetarian the same price)",
-  "dinnerNoteDa": "Smagsmenu (vegetarisk til samme pris)"
+  "dinnerNoteDa": "Smagsmenu (vegetarisk til samme pris)",
+  "dietsManual": true
 }

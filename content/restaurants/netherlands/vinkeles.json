@@ -19,15 +19,13 @@
   "michelinId": "115263",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Jurgen van der Zalm",
   "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 185)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNl": "Alleen diner"
+  "lunchNoteNl": "Alleen diner",
+  "dietsManual": true
 }

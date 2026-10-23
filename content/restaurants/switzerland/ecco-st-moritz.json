@@ -19,8 +19,7 @@
   "placeId": "ChIJ79yAE4h_g0cRfCvQaP29oyY",
   "michelinId": "184602",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 270)",
   "areaDe": "Sankt Moritz",
@@ -34,5 +33,6 @@
   "lunchNoteIt": "Solo a cena",
   "areaIt": "Sankt Moritz",
   "chef": "Reto Brändli",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

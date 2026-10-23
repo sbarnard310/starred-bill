@@ -22,10 +22,7 @@
   "michelinId": "189833",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Stephen McLaughlin",
   "chefSource": "press",
@@ -38,5 +35,6 @@
   "photoSourceType": "commons",
   "photoWidth": 669,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

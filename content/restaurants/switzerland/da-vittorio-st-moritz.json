@@ -14,12 +14,8 @@
   "lat": 46.4998838,
   "lng": 9.8468053,
   "michelinId": "384903",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Paolo Rota",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 260)",
   "areaDe": "Sankt Moritz",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 260)",
@@ -30,5 +26,6 @@
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
   "lunchNoteIt": "Solo a cena",
-  "areaIt": "Sankt Moritz"
+  "areaIt": "Sankt Moritz",
+  "notice": "Open in winter only; reopens on 12 December 2026 (its hotel’s website, October 2026)"
 }

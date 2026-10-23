@@ -25,11 +25,8 @@
   "lng": 7.3620885,
   "placeId": "ChIJvz5LoCnDzRIR7Kp0maxYW7Y",
   "michelinId": "11132",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "Tom Meyer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "la-chevre-d-or.jpg",
   "photoAlt": "The terraces of the Château de la Chèvre d'Or in Èze, with its golden goat and the sea below",
   "photoCredit": "chevredor",

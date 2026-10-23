@@ -26,10 +26,6 @@
   "lng": -3.676486,
   "placeId": "ChIJJUYTasceQg0RRDvKAk9NHOM",
   "michelinId": "224077",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Iván Muñoz",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

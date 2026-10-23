@@ -20,16 +20,11 @@
   "lunchNoteIt": "Stesso menu a pranzo",
   "lunchSourceType": "press",
   "lunchSource": "https://www.thefork.it/ristorante/enoteca-la-torre-r45956/menu",
-  "website": "https://villalaetitia.enotecalatorre.group/",
+  "website": "https://enotecalatorrevillalaetitia.enotecalatorre.group/",
   "lat": 41.916491,
   "lng": 12.469327,
   "placeId": "ChIJXSxaU_BgLxMRo5GX70m-__M",
   "michelinId": "402346",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Domenico Stile",
   "chefSource": "site"
 }

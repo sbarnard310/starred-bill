@@ -25,14 +25,11 @@
   "michelinId": "4259",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Benjamin Bruno",
   "chefSource": "press",
   "dinnerNote": "Truffle menu (€137 or €187 with black winter truffle; full truffle menu €218)",
-  "dinnerNoteFr": "Menu truffe (137 € ou 187 € avec la truffe melanosporum ; grand menu 218 €)"
+  "dinnerNoteFr": "Menu truffe (137 € ou 187 € avec la truffe melanosporum ; grand menu 218 €)",
+  "dietsManual": true
 }

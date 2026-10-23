@@ -25,9 +25,6 @@
   "lng": 103.858076,
   "placeId": "ChIJ-_VlLioZ2jERU0eWh_TKqkI",
   "michelinId": "1205554",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Kevin Wong",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

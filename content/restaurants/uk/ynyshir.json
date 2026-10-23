@@ -20,7 +20,7 @@
   "placeId": "ChIJ3_3QZQeEb0gRV1TASSuMz8w",
   "michelinId": "194857",
   "chef": "Gareth Ward",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "months": 2,

@@ -25,5 +25,6 @@
     "vegetarian"
   ],
   "chef": "Harrison Cheney",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

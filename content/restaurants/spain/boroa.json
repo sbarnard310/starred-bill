@@ -29,9 +29,10 @@
   "placeId": "ChIJNY2wEqQ2Tg0RqBK4ECQ5xjo",
   "michelinId": "217545",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Javier Gartzia",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -28,8 +28,9 @@
   "placeId": "ChIJ82kXZakhVQ0R99We_bPst38",
   "michelinId": "1244",
   "diets": [
-    "vegetarian"
+    "vegetarian-menu"
   ],
   "chef": "Nicolas Masse",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

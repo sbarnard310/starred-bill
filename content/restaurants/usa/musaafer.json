@@ -20,9 +20,9 @@
   "diets": [
     "vegetarian",
     "vegan",
-    "gluten-free",
-    "halal"
+    "gluten-free"
   ],
   "chef": "Mayank Istwal",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

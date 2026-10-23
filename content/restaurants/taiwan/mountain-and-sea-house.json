@@ -30,9 +30,10 @@
   "placeId": "ChIJRy7kxmipQjQRACw5aOpSyLI",
   "michelinId": "569918",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
-  "chef": "Sheng-Chang Hsiao",
-  "chefSource": "michelin"
+  "chef": "Sheng-Chang Hsiao (Jacky Xiao)",
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -17,13 +17,10 @@
   "placeId": "ChIJgwZPe88vjEcR_E-7VldymPE",
   "michelinId": "179504",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
     "gluten-free"
   ],
   "chef": "Jordan Theurillat",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 450,
   "lunchType": "menu",
   "lunchNote": "Same menu at lunch · Wed–Sun",
@@ -36,5 +33,6 @@
   "dinnerNote": "Menu, 8 courses",
   "dinnerNoteDe": "Menü, 8 Gänge",
   "dinnerNoteFr": "Menu en 8 séquences",
-  "dinnerNoteIt": "Menu, 8 portate"
+  "dinnerNoteIt": "Menu, 8 portate",
+  "dietsManual": true
 }

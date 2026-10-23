@@ -16,11 +16,8 @@
   "lng": -43.22252,
   "placeId": "ChIJ5yfTpD3VmwARHcakeHhweZo",
   "michelinId": "1210798",
-  "diets": [
-    "gluten-free"
-  ],
-  "chef": "André Nobuyuki Kawai",
-  "chefSource": "michelin",
+  "chef": "André Kawai",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde R$420)",
   "noLunch": true,
   "lunchNote": "Dinner only",

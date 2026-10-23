@@ -25,10 +25,11 @@
   "placeId": "ChIJCeKKM-MJZ0gRWv5ghBu6cAs",
   "michelinId": "498457",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Damien Grey",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "bookingWindow": {
     "type": "rolling",
     "days": 42,
@@ -36,5 +37,6 @@
     "via": "website",
     "source": "https://www.liathrestaurant.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "dietsManual": true
 }

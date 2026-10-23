@@ -22,10 +22,9 @@
   "placeId": "ChIJ-S_r1d55OxMR3nVJEeW2KaE",
   "michelinId": "128950",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Andrea Migliaccio",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

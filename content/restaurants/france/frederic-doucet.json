@@ -29,11 +29,6 @@
   "lng": 4.2751068,
   "placeId": "ChIJFRoL5qbq80cRkz195RCgeIY",
   "michelinId": "2015",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Frédéric Doucet",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

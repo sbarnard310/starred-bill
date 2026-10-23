@@ -24,12 +24,12 @@
   "placeId": "ChIJ9UOhGJFIYA0R3xWddCYdzrM",
   "michelinId": "1192181",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Begoña Rodrigo",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "La Salita tasting menu",
-  "dinnerNoteEs": "Menú La Salita"
+  "dinnerNoteEs": "Menú La Salita",
+  "dietsManual": true
 }

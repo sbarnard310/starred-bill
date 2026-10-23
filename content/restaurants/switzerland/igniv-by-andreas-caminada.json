@@ -21,12 +21,8 @@
   "lng": 8.5900427,
   "placeId": "ChIJRX_MI1FxhUcRupuaeLeUTjE",
   "michelinId": "1207200",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Valentin Sträuli",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 78,
   "lunchType": "menu",
   "lunchSourceType": "site",

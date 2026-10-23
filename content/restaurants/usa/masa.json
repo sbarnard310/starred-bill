@@ -24,12 +24,6 @@
   "lat": 40.76819,
   "lng": -73.98234,
   "michelinId": "69756",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "kosher"
-  ],
   "chef": "Masa Takayama",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

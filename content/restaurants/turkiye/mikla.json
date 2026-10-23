@@ -20,14 +20,13 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegan"
   ],
   "dinnerNoteTr": "Tadım menüsü (diğer menüler TRY 8,500 itibarıyla)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTr": "Yalnızca akşam yemeği",
   "chef": "Mehmet Gürs",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

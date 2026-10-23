@@ -27,7 +27,7 @@
     "gluten-free"
   ],
   "chef": "Lee Wolen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "boka.jpg",
   "photoAlt": "The entrance of Boka in Lincoln Park, Chicago, beside an ivy-covered wall",
   "photoCredit": "Taylor Crowley",
@@ -37,5 +37,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

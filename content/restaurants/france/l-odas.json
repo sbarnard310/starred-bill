@@ -25,10 +25,6 @@
   "lng": 1.0945346,
   "placeId": "ChIJKxYtfHje4EcRN7WVWk8VGa0",
   "michelinId": "420771",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
-  "chef": "Suzanne Da Silva",
-  "chefSource": "michelin"
+  "chef": "Suzanne Waymel",
+  "chefSource": "site"
 }

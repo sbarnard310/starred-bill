@@ -25,10 +25,12 @@
   "placeId": "ChIJwSZX3Otv5kcRe1gL5hAzplM",
   "michelinId": "308504",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Éric Bouchenoire",
   "chefSource": "site",
   "dinner": 220,
-  "source": "https://atelier-robuchon-etoile.com/la-carte/"
+  "source": "https://atelier-robuchon-etoile.com/la-carte/",
+  "dietsManual": true
 }

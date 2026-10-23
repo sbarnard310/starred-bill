@@ -19,15 +19,18 @@
   "placeId": "ChIJKbDmFhfAdkcRG2Qt7Rua3WY",
   "michelinId": "1192424",
   "diets": [
-    "vegetarian"
+    "vegetarian-menu",
+    "vegetarian",
+    "gluten-free"
   ],
   "chef": "Andreas Döllerer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
   "lunch": 79,
   "lunchType": "menu",
   "lunchNote": "Lunch menu · Saturdays",
   "lunchNoteDe": "Mittagsmenü · Samstag",
   "lunchSourceType": "site",
-  "lunchSource": "https://www.doellerer.at/restaurant/menues-karte/"
+  "lunchSource": "https://www.doellerer.at/restaurant/menues-karte/",
+  "dietsManual": true
 }

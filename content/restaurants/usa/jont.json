@@ -21,11 +21,10 @@
   "placeId": "ChIJI_Nce0u3t4kRjBL-1l-nHs0",
   "michelinId": "1164948",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Ryan Ratino",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "jont.jpg",
   "photoAlt": "The white building on 14th Street NW, Washington, D.C., with the Jônt sign above Bresca",
   "photoCredit": "Dclemens1971",
@@ -35,5 +34,6 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

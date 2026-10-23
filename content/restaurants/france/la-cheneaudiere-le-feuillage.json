@@ -23,8 +23,10 @@
   "placeId": "ChIJDRENUmz8k0cRkzDOv8wG_8c",
   "michelinId": "1215748",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Jean-Paul Acker",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

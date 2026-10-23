@@ -22,18 +22,11 @@
   "lunchNoteFr": "Même menu le midi",
   "lunchSourceType": "site",
   "lunchSource": "https://tetedoie.fr/",
-  "website": "https://tetedoie.com/",
+  "website": "https://www.tetedoie.fr/",
   "lat": 45.7590732,
   "lng": 4.8233917,
   "placeId": "ChIJOQNc8avr9EcRIXpW7S6nnS4",
   "michelinId": "4406",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Christian Têtedoie",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -26,6 +26,7 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
+    "vegan",
     "halal"
   ],
   "chef": "Uday Salunkhe",
@@ -47,5 +48,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 612,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

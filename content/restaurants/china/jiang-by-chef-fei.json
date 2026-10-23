@@ -17,14 +17,13 @@
   "placeId": "ChIJCTuG6f_-AjQRd1vNj2O3Y4s",
   "michelinId": "559154",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "halal"
+    "vegetarian"
   ],
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
   "nameZhs": "江",
   "chef": "Huang Jinghui",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

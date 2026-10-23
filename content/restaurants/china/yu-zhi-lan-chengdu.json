@@ -15,15 +15,8 @@
   "lng": 104.0561672,
   "placeId": "ChIJjz3c2SjF7zYRauIBo34jYm8",
   "michelinId": "1196150",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Lan Guijun",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteZhs": "人均消费",
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",

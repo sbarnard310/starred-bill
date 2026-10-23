@@ -15,7 +15,7 @@
     "vegetarian"
   ],
   "chef": "Peter Cuong Franklin",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteVi": "Chỉ phục vụ bữa tối",
@@ -25,5 +25,6 @@
   "dinnerNoteVi": "Thực đơn nếm thử Saigon, giá 115 USD (thực đơn của Chef Peter 145 USD)",
   "wine": 1790000,
   "sourceType": "site",
-  "source": "https://anansaigon.com/booking/"
+  "source": "https://anansaigon.com/booking/",
+  "dietsManual": true
 }

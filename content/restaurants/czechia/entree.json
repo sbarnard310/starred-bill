@@ -22,12 +22,12 @@
   "placeId": "ChIJT_yxwitMEkcR_gsPCUbZ_a8",
   "michelinId": "1211412",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "dinnerNoteCs": "Degustační menu (další menu od CZK 1,200)",
   "lunchNote": "Open for lunch",
   "lunchNoteCs": "Otevřeno v poledne",
   "chef": "Přemek Forejt",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

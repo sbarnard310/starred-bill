@@ -24,5 +24,6 @@
     "vegetarian-menu"
   ],
   "chef": "Thomas Prod'homme",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

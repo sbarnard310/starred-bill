@@ -21,9 +21,10 @@
     "vegetarian"
   ],
   "chef": "Kevin Romes",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 195 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

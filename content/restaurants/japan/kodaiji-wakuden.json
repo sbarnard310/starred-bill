@@ -18,11 +18,8 @@
   "michelinId": "1192957",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
-  "chef": "Shinsuke Tsuruta",
-  "chefSource": "michelin",
   "dinner": 55000,
   "dinnerNoteJa": "懐石コース（最安値）・税サ込",
   "source": "https://www.wakuden.jp/ryotei/kodaiji/",
@@ -31,5 +28,6 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.wakuden.jp/ryotei/kodaiji/",
   "lunchNote": "Lunch kaiseki, from; including tax and service",
-  "lunchNoteJa": "昼懐石（最安値）・税サ込"
+  "lunchNoteJa": "昼懐石（最安値）・税サ込",
+  "dietsManual": true
 }

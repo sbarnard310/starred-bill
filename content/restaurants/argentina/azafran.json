@@ -27,9 +27,6 @@
   "lng": -68.8490969,
   "placeId": "ChIJFyEWbkAJfpYRDb2xBz1l0nU",
   "michelinId": "532684",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Sebastián Weigandt",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

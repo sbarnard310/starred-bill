@@ -22,11 +22,8 @@
   "lng": 10.9126019,
   "placeId": "ChIJBzM8CmgenEcRqrj1bDQ6WDY",
   "michelinId": "495065",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Christian Grünwald",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 150 €)",
   "lunchNoteDe": "Mittagsmenü"
 }

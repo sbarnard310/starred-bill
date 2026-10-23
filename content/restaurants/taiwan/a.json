@@ -34,5 +34,6 @@
     "vegetarian"
   ],
   "chef": "Alain Huang",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

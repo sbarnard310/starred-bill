@@ -17,13 +17,8 @@
   "lng": 9.3920453,
   "placeId": "ChIJs3wzF_4dm0cRtrh2t9xVDpE",
   "michelinId": "1200885",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Silvio Germann",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü, 6 Gänge (4 Gänge ab CHF 248)",
   "dinnerNoteFr": "Menu dégustation, 6 plats (4 plats dès CHF 248)",
   "dinnerNoteIt": "Menu degustazione, 6 portate (4 portate da CHF 248)",

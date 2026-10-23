@@ -27,7 +27,8 @@
     "vegetarian"
   ],
   "chef": "Christoph Kunz",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
-  "lunchNoteDe": "Mittagsmenü"
+  "lunchNoteDe": "Mittagsmenü",
+  "dietsManual": true
 }

@@ -23,9 +23,8 @@
   "placeId": "ChIJmXuobsWY4jARc3EtJwWV21s",
   "michelinId": "546997",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Ryuki Kawasaki",
   "chefSource": "site",
@@ -38,5 +37,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 679,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

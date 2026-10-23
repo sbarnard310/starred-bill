@@ -27,8 +27,10 @@
   "placeId": "ChIJb_6pejB5KRMR3OZxmmD_1tQ",
   "michelinId": "365786",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Matteo Temperini",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

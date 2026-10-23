@@ -23,10 +23,12 @@
   "placeId": "ChIJ7W0aCDBJzDERLXoIAb7IIbU",
   "michelinId": "1201833",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Darren Chin",
   "chefSource": "site",
   "dinnerNoteMs": "Menu rasa",
-  "lunchNoteMs": "Menu makan tengah hari"
+  "lunchNoteMs": "Menu makan tengah hari",
+  "dietsManual": true
 }

@@ -24,10 +24,6 @@
   "lng": -0.6504141,
   "placeId": "ChIJNQnzeii0Yw0RiAFryDegh4c",
   "michelinId": "219979",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Susi Díaz",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

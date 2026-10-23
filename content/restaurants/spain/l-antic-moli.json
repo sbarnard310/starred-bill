@@ -26,10 +26,6 @@
   "lng": 0.337083,
   "placeId": "ChIJES08jwlfoBIRA0cbEvNo_-k",
   "michelinId": "224051",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
-  "chef": "Vicent Guimerà Sales",
-  "chefSource": "michelin"
+  "chef": "Vicent Guimerà",
+  "chefSource": "site"
 }

@@ -18,6 +18,7 @@
   "placeId": "ChIJpdIjrMgLkkYRxba2xc1Dy5w",
   "michelinId": "543488",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Eero Vottonen",
@@ -35,5 +36,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 562,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

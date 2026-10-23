@@ -21,12 +21,8 @@
   "lng": 4.3554226,
   "placeId": "ChIJUZqHp6O1xUcRPZzDJEW7adk",
   "michelinId": "1242641",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Mario Ridder",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Weekendproeverijmenu, vrijdag en zaterdag (doordeweeks menu € 189); inclusief water en koffie",
   "noLunch": true,
   "lunchNote": "Dinner only",

@@ -26,5 +26,6 @@
     "vegetarian"
   ],
   "chef": "Nieves Barragán Mohacho",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

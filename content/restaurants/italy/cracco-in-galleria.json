@@ -25,9 +25,6 @@
   "lng": 9.189977,
   "placeId": "ChIJidrh163GhkcRqMLsWK7AH_E",
   "michelinId": "554414",
-  "diets": [
-    "vegetarian-menu"
-  ],
-  "chef": "Luca Sacchi",
-  "chefSource": "michelin"
+  "chef": "Carlo Cracco",
+  "chefSource": "site"
 }

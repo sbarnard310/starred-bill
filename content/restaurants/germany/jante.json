@@ -18,13 +18,8 @@
   "lng": 9.7607965,
   "placeId": "ChIJQfsL304LsEcRhvMbiIkzdao",
   "michelinId": "476235",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
-  "chef": "Tony Hohlefeld",
-  "chefSource": "michelin",
+  "chef": "Tony Hohlfeld",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",

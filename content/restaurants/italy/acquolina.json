@@ -27,5 +27,6 @@
     "gluten-free"
   ],
   "chef": "Daniele Lippi",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

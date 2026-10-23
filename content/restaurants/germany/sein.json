@@ -21,8 +21,9 @@
     "vegetarian"
   ],
   "chef": "Thorsten Bender",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 220 €)",
   "lunchNote": "Open for lunch · Fridays",
-  "lunchNoteDe": "Mittags geöffnet · Freitag"
+  "lunchNoteDe": "Mittags geöffnet · Freitag",
+  "dietsManual": true
 }

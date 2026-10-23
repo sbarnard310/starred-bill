@@ -18,13 +18,8 @@
   "lng": -8.6133869,
   "placeId": "ChIJcb6xRIFlJA0RSspxmETyV74",
   "michelinId": "296064",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Ricardo Costa",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 260 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

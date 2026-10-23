@@ -12,18 +12,20 @@
   "dinnerNote": "Tasting menu",
   "sourceType": "site",
   "source": "https://faehr.haus/gotthardts-byyannick-noack/",
-  "website": "https://faehr.haus/restaurant-bar/restaurant-gotthardts/",
+  "website": "https://faehr.haus/gotthardts-byyannick-noack/",
   "lat": 50.3580498,
   "lng": 7.5598451,
   "placeId": "ChIJOzBqZFxjvkcRwBk3-zPfhNI",
   "michelinId": "1216361",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Yannick Noack",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

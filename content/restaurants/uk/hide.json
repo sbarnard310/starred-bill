@@ -25,8 +25,10 @@
   "michelinId": "555475",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Josh Angus",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

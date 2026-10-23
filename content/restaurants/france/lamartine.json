@@ -25,9 +25,6 @@
   "lng": 5.8531112,
   "placeId": "ChIJa6NeRoIJi0cRAzOqDfAkoEI",
   "michelinId": "1342",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Valentin Marin",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -17,11 +17,8 @@
   "lng": 10.28901,
   "placeId": "ChIJI_ornGGznEcR80JSduGHBV4",
   "michelinId": "104899",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Benjamin Parth",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 154 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

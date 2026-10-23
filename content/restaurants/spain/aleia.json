@@ -34,11 +34,6 @@
   "lng": 2.158003,
   "placeId": "ChIJuQRMUWmjpBIRoCWVQoLeCj4",
   "michelinId": "1198558",
-  "diets": [
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Rafa de Bedoya",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

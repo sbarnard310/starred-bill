@@ -24,12 +24,9 @@
   "diets": [
     "vegetarian-only",
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Davide Guidara",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

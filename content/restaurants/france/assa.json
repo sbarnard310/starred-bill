@@ -26,11 +26,10 @@
   "placeId": "ChIJnZkmz8dX40cR7-LQrx6ZRBc",
   "michelinId": "429487",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
-  "chef": "Anthony Maubert",
-  "chefSource": "michelin"
+  "chef": "Anthony Maubert and Fumiko Maubert",
+  "chefSource": "site",
+  "dietsManual": true
 }

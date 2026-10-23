@@ -25,12 +25,10 @@
   "michelinId": "195782",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Reto Brändli",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 245)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 245)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 245)",
@@ -38,5 +36,7 @@
   "lunchNote": "Dinner only",
   "lunchNoteDe": "Nur abends",
   "lunchNoteFr": "Uniquement le soir",
-  "lunchNoteIt": "Solo a cena"
+  "lunchNoteIt": "Solo a cena",
+  "dietsManual": true,
+  "notice": "Closed for the season since 18 October 2026 (its hotel’s website)"
 }

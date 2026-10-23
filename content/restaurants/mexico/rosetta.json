@@ -27,12 +27,10 @@
   "placeId": "ChIJdSGAWgP_0YURwNtY7rftf2E",
   "michelinId": "1208694",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Elena Reygadas",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "rosetta.jpg",
   "photoAlt": "The arched doorway of Rosetta in Roma Norte, Mexico City, with its name above",
   "photoCredit": "Tbhotch",
@@ -42,5 +40,6 @@
   "photoSourceType": "commons",
   "photoWidth": 563,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

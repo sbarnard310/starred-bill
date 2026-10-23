@@ -28,9 +28,6 @@
   "lng": 113.572324,
   "placeId": "ChIJS0UZ8v1xATQRY8atMJIReq4",
   "michelinId": "1210587",
-  "diets": [
-    "vegetarian"
-  ],
-  "chef": "Tam Kwok-Fung",
-  "chefSource": "michelin"
+  "chef": "Tam Kwok Fung",
+  "chefSource": "site"
 }

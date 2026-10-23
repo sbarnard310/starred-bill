@@ -17,11 +17,12 @@
   "placeId": "ChIJSW4gcouOsUcRAONgvMCx-eo",
   "michelinId": "552220",
   "diets": [
-    "vegetarian"
+    "gluten-free"
   ],
-  "chef": "Thomas Imbusch",
-  "chefSource": "michelin",
+  "chef": "Thomas A. Imbusch",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 200 €)",
   "lunchNote": "Open for lunch · Fri–Sun",
-  "lunchNoteDe": "Mittags geöffnet · Fr–So"
+  "lunchNoteDe": "Mittags geöffnet · Fr–So",
+  "dietsManual": true
 }

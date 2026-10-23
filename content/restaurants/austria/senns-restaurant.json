@@ -17,12 +17,8 @@
   "lng": 13.063525,
   "placeId": "ChIJoXYp0vWadkcRuYv8twSPchA",
   "michelinId": "434434",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
-  "chef": "Andreas Senn and Christian Geisler",
-  "chefSource": "michelin",
+  "chef": "Andreas Senn",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 225 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

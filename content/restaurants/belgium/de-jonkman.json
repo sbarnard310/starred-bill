@@ -21,7 +21,7 @@
     "vegetarian"
   ],
   "chef": "Filip Claeys",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 125)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 125 €)",
   "lunch": 265,
@@ -40,5 +40,6 @@
   "photoSourceType": "commons",
   "photoWidth": 667,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

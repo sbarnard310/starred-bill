@@ -17,12 +17,8 @@
   "lng": 8.5944996,
   "placeId": "ChIJxxkpqlBxhUcR8Ds1pCPMEds",
   "michelinId": "430422",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
-  "chef": "Fabio Toffolon and Dominik Sato",
-  "chefSource": "michelin",
+  "chef": "Dominik Sato and Fabio Toffolon",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 260)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 260)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 260)",

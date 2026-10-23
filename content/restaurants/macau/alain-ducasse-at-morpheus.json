@@ -25,10 +25,6 @@
   "lng": 113.566977,
   "placeId": "ChIJe_6MvZ5xATQRocpAwXdfTC0",
   "michelinId": "567859",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
-  "chef": "Alain Ducasse",
-  "chefSource": "michelin"
+  "chef": "Cedric Satabin",
+  "chefSource": "site"
 }

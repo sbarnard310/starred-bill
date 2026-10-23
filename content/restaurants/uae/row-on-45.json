@@ -21,10 +21,11 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Jason Atherton",
-  "chefSource": "michelin",
+  "chef": "Daniel Birk",
+  "chefSource": "site",
   "dinnerNoteAr": "قائمة تذوق",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteAr": "العشاء فقط"
+  "lunchNoteAr": "العشاء فقط",
+  "dietsManual": true
 }

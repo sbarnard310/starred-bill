@@ -19,11 +19,8 @@
   "lng": 103.808666,
   "placeId": "ChIJLZ9DYnIZ2jERQ51Am7WzJLM",
   "michelinId": "1200777",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Dave Pynt",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinner": 200,
   "source": "https://www.burpple.com/burnt-ends"
 }

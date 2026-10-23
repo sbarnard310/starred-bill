@@ -20,13 +20,13 @@
   "michelinId": "85183",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
-  "chef": "Alexander Herrmann & Tobias Bätz",
-  "chefSource": "michelin",
+  "chef": "Alexander Herrmann and Tobias Bätz",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 109 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

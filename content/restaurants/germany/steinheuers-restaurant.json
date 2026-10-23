@@ -17,12 +17,8 @@
   "lng": 7.164113,
   "placeId": "ChIJXYG8TgD7vkcRWs3EbgvnzP8",
   "michelinId": "75934",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Christian Binder",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 215 €)",
   "lunch": 290,
   "lunchType": "menu",

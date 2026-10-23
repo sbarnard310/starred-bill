@@ -29,9 +29,6 @@
   "lng": -3.695682,
   "placeId": "ChIJE3nxYKMoQg0RFOY4NseW04k",
   "michelinId": "482061",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Javi Estévez",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

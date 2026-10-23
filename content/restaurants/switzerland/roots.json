@@ -22,14 +22,8 @@
   "lng": 7.581,
   "placeId": "ChIJ_RpcgKC5kUcRJeac8Vfo-NQ",
   "michelinId": "568552",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Pascal Steffen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 198)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 198)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 198)",

@@ -23,8 +23,9 @@
   "diets": [
     "vegetarian"
   ],
-  "chef": "Wolfgang Puck",
-  "chefSource": "michelin",
+  "chef": "Greg Bess",
+  "chefSource": "site",
   "dinner": 250,
-  "source": "https://www.burpple.com/cut-by-wolfgang-puck"
+  "source": "https://www.burpple.com/cut-by-wolfgang-puck",
+  "dietsManual": true
 }

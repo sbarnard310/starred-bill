@@ -16,11 +16,8 @@
   "lng": 11.5771585,
   "placeId": "ChIJUbU58wV1nkcR6jK2iXRta70",
   "michelinId": "566926",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Rosina Ostler",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "lunch": 300,
   "lunchType": "menu",

@@ -19,13 +19,13 @@
   "michelinId": "1184066",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Manuel Ulrich",
   "chefSource": "site",
   "dinnerNoteDe": "Menü in 7 Gängen (5 oder 6 Gänge ab 255 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

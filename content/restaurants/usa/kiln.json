@@ -24,9 +24,6 @@
   "lng": -122.420292,
   "placeId": "ChIJlZn9AxyBhYARAY1cJE9KydY",
   "michelinId": "1210355",
-  "diets": [
-    "kosher"
-  ],
   "chef": "John Wesley",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

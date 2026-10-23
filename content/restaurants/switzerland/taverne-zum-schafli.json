@@ -17,11 +17,10 @@
   "placeId": "ChIJN9nyJ-bymkcRhMqEPz5SCdc",
   "michelinId": "180366",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Christian Kuchler",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "lunch": 158,
   "lunchType": "menu",
   "lunchSourceType": "site",
@@ -43,5 +42,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 666,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

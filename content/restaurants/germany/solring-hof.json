@@ -17,12 +17,8 @@
   "lng": 8.2887697,
   "placeId": "ChIJuaITYqDgtEcReuFP9Veym8Y",
   "michelinId": "84509",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Jan-Philipp Berner",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",

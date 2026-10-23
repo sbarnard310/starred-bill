@@ -28,5 +28,6 @@
     "vegetarian"
   ],
   "chef": "Jérôme Ferrer",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

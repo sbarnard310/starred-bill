@@ -21,10 +21,6 @@
   "lng": 11.3224439,
   "placeId": "ChIJI0PeyImjgkcRar4w7mUaHAo",
   "michelinId": "151934",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Heinrich Schneider",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -17,13 +17,8 @@
   "lng": 8.4776007,
   "placeId": "ChIJz-m4m6tXhUcRr8buG169t1k",
   "michelinId": "184794",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Patrick Mahler",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab CHF 295)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès CHF 295)",
   "dinnerNoteIt": "Menu degustazione (altri menu da CHF 295)",

@@ -25,14 +25,8 @@
   "lng": -73.967504,
   "placeId": "ChIJ09ZGju5YwokRXOcNC23JRwk",
   "michelinId": "68178",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
-  ],
   "chef": "Eddy Leroux",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "photo": "daniel.jpg",
   "photoAlt": "Daniel's canopy with its name on East 65th Street, New York",
   "photoCredit": "Deans Charbal",

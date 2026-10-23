@@ -22,14 +22,13 @@
   "placeId": "ChIJEWkweooduxIRnLAxgnFMXi8",
   "michelinId": "220882",
   "diets": [
-    "vegetarian",
-    "vegan",
     "gluten-free"
   ],
   "chef": "Marc Gascons",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu, whole table",
   "dinnerNoteEs": "Menú degustación, para toda la mesa",
   "lunchNote": "Daily menu",
-  "lunchNoteEs": "Menú diario"
+  "lunchNoteEs": "Menú diario",
+  "dietsManual": true
 }

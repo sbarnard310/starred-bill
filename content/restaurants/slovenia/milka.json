@@ -21,9 +21,10 @@
     "vegetarian"
   ],
   "chef": "David Žefran",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteSl": "Degustacijski meni",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteSl": "Samo večerja"
+  "lunchNoteSl": "Samo večerja",
+  "dietsManual": true
 }

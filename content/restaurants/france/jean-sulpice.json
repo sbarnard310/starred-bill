@@ -27,10 +27,6 @@
   "lng": 6.2106864,
   "placeId": "ChIJgd4kEyuTi0cRnuohGnxC0bc",
   "michelinId": "13212",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Jean Sulpice",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

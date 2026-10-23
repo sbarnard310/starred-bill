@@ -27,10 +27,9 @@
   "placeId": "ChIJBcNsOCBxATQRPxIHhp7KpuE",
   "michelinId": "1204313",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Zhou Xiaoyan and Jack Xiao",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

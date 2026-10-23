@@ -23,11 +23,8 @@
   "lng": 9.3753719,
   "placeId": "ChIJSfjp8Ewem0cRcVBki60dN3Y",
   "michelinId": "184567",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "Sebastian Zier and Richard Schmidtkonz",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü",
   "dinnerNoteFr": "Menu dégustation",
   "areaFr": "Saint-Gall",

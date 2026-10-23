@@ -24,9 +24,9 @@
   "michelinId": "538719",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
-  "chef": "Antonino Cannavacciuolo",
-  "chefSource": "michelin"
+  "chef": "Mattia Marcoaldi",
+  "chefSource": "site",
+  "dietsManual": true
 }

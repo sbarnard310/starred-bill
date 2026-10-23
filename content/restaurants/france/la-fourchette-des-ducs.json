@@ -24,10 +24,12 @@
   "placeId": "ChIJw5kHoVtNkUcRPtRLB2PcEZk",
   "michelinId": "5571",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Nicolas Stamm-Corby",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Terroir Végétal menu (Libre Émotion €255; also à la carte)",
-  "dinnerNoteFr": "Menu Terroir Végétal (Libre Émotion 255 € ; aussi à la carte)"
+  "dinnerNoteFr": "Menu Terroir Végétal (Libre Émotion 255 € ; aussi à la carte)",
+  "dietsManual": true
 }

@@ -20,11 +20,6 @@
   "lng": 15.2900353,
   "placeId": "ChIJk3INh58RFBMRp9846eqSPUA",
   "michelinId": "439039",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Salvatore Iuliano",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

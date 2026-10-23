@@ -22,8 +22,9 @@
     "vegetarian"
   ],
   "chef": "Dennis Kuckuck",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 195 €)",
   "lunchNote": "Open for lunch · Sundays",
-  "lunchNoteDe": "Mittags geöffnet · Sonntag"
+  "lunchNoteDe": "Mittags geöffnet · Sonntag",
+  "dietsManual": true
 }

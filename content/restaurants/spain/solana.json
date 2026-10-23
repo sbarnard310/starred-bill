@@ -24,13 +24,6 @@
   "lng": -3.4531514,
   "placeId": "ChIJAe7gvk_CTg0RZWlUBgDvqRo",
   "michelinId": "226699",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
-  "chef": "Ignacio Solana",
-  "chefSource": "michelin"
+  "chef": "Nacho Solana",
+  "chefSource": "site"
 }

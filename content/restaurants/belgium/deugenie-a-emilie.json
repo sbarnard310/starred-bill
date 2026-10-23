@@ -17,11 +17,8 @@
   "lng": 3.8379089,
   "placeId": "ChIJsRhY4iJXwkcR8LEucY5oV4M",
   "michelinId": "259755",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Éric Fernez",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 125)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 125 €)",
   "lunch": 235,

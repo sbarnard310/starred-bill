@@ -17,13 +17,11 @@
   "lng": 10.1384191,
   "placeId": "ChIJR4YhucGmnEcRn3A-kHLl9Rw",
   "michelinId": "105219",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Sebastian Jakob",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Menü Griggeler Experience, ab 295 € (Winter 2026/27)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "notice": "Closed between seasons; reopens on 4 December 2026 (its hotel’s website, October 2026)"
 }

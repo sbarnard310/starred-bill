@@ -17,13 +17,13 @@
   "placeId": "ChIJ4x9AsGrcQUcRNcTpm2xilYo",
   "michelinId": "370956",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "dinnerNoteHu": "6 fogásos degusztációs menü (4 fogásos 39 000 Ft), plusz 15% szervízdíj",
   "lunchNote": "Open for lunch · Fri–Sat",
   "lunchNoteHu": "Ebédidőben nyitva · P–Szo",
   "chef": "Ákos Sárközi",
   "chefSource": "press",
-  "wine": 29000
+  "wine": 29000,
+  "dietsManual": true
 }

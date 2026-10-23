@@ -17,12 +17,8 @@
   "lng": 9.5000515,
   "placeId": "ChIJX0ZtXbpDs0cRyloIbHI9NdA",
   "michelinId": "81057",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Dirk Luther",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 290 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

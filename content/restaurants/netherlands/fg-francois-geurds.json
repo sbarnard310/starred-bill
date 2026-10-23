@@ -19,7 +19,9 @@
   "michelinId": "235199",
   "diets": [
     "vegetarian-menu",
-    "vegetarian"
+    "vegetarian",
+    "vegan",
+    "gluten-free"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 195)",
   "lunch": 249,
@@ -30,5 +32,6 @@
   "lunchSourceType": "site",
   "lunchSource": "https://www.fgrestaurant.nl/nl/menu",
   "chef": "François Geurds",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

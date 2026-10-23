@@ -30,5 +30,6 @@
     "vegetarian"
   ],
   "chef": "Søren Selin",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

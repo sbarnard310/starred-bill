@@ -24,10 +24,6 @@
   "lng": 7.427562,
   "placeId": "ChIJzZxY1ubDzRIREvykG2qnyk4",
   "michelinId": "1206520",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Christophe Cussac",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

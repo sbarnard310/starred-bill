@@ -25,11 +25,6 @@
   "lng": 4.8333205,
   "placeId": "ChIJv0VRxUDktRIRzFNPP-9NV2U",
   "michelinId": "430007",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
-  "chef": "Fanny Rey",
-  "chefSource": "michelin"
+  "chef": "Fanny Rey and Jonathan Wahid",
+  "chefSource": "site"
 }

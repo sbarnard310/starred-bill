@@ -26,9 +26,10 @@
   "placeId": "ChIJXYCkv2dt5kcRZs2yU8Iyx9U",
   "michelinId": "66439",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Sylvain Grosjean",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -22,9 +22,10 @@
     "vegetarian"
   ],
   "chef": "Hans Neuner",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 225 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNotePt": "Só jantar"
+  "lunchNotePt": "Só jantar",
+  "dietsManual": true
 }

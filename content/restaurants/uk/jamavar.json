@@ -25,10 +25,9 @@
   "michelinId": "514613",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Surender Mohan",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

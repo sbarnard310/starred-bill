@@ -24,12 +24,8 @@
   "lng": 13.7700495,
   "placeId": "ChIJcS9-wutre0cRSX0VpdBkLI0",
   "michelinId": "164329",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Matteo Metullio and Davide De Pra",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu (others €210 and €250)",
   "dinnerNoteIt": "Menu degustazione (altri €210 e €250)"
 }

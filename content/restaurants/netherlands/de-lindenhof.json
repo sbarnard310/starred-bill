@@ -18,12 +18,12 @@
   "placeId": "ChIJobsPTzdvyEcRQJH8L9EYsMU",
   "michelinId": "212485",
   "diets": [
-    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Martin Kruithof",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 160)",
   "lunchNote": "Open for lunch · Wed–Sun",
-  "lunchNoteNl": "Open voor lunch · wo–zo"
+  "lunchNoteNl": "Open voor lunch · wo–zo",
+  "dietsManual": true
 }

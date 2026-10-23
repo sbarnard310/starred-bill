@@ -21,8 +21,7 @@
   "placeId": "ChIJ__-z7kBZwokRezHqB39zBLI",
   "michelinId": "563205",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Justin Bazdarich",
   "chefSource": "site",
@@ -35,5 +34,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

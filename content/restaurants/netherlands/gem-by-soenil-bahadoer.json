@@ -20,16 +20,13 @@
   "michelinId": "1240969",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Soenil Bahadoer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 245)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteNl": "Alleen diner"
+  "lunchNoteNl": "Alleen diner",
+  "dietsManual": true
 }

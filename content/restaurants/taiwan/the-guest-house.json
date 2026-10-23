@@ -28,6 +28,8 @@
   "placeId": "ChIJJVBTsHGpQjQRujvx-I3zXPI",
   "michelinId": "550901",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
-  ]
+  ],
+  "dietsManual": true
 }

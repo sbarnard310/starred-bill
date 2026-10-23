@@ -27,13 +27,6 @@
   "lng": -3.692812,
   "placeId": "ChIJScMpJv4pQg0R9suDAQ4Lx-I",
   "michelinId": "1196919",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
-  "chef": "Quique Dacosta and Domenico Vildacci",
-  "chefSource": "michelin"
+  "chef": "Quique Dacosta",
+  "chefSource": "site"
 }

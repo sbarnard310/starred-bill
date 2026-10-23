@@ -678,6 +678,17 @@ GUIDE_WORDS = {
            "countries": {"France": "フランス", "Japan": "日本", "Italy": "イタリア", "Germany": "ドイツ", "Spain": "スペイン",
                          "United States": "アメリカ", "China": "中国", "United Kingdom": "イギリス", "Hong Kong": "香港",
                          "Switzerland": "スイス", "Belgium": "ベルギー", "South Korea": "韓国", "Netherlands": "オランダ"}},
+    # French (23 Oct 2026): numbers grouped with a no-break space, "$ US" and "$ CA" after the amount as France and Québec
+    # write them, and "1er" for the first of a month (`first`).
+    "fr": {"name": "Français", "sources": "Sources", "sourceChecked": "(consulté en {month})",
+           "ownData": "Les prix et les décomptes sont des données propres à The Starred Bill sur {total} restaurants étoilés : étoiles de la dernière édition du Guide MICHELIN de chaque pays, prix des menus relevés sur le site de chaque restaurant ou, à défaut, dans une critique récente, vérifiés en {checked}. Les montants en dollars utilisent les taux de change d’{rates} ({day}).",
+           "updated": "Mis à jour le {date}", "checked": "Étoiles et prix vérifiés en {month}",
+           "faq": "Questions fréquentes", "inEnglish": "en anglais", "usd": "{n} $ US", "thousands": " ", "date": "{d} {m} {y}", "monthYear": "{m} {y}",
+           "first": "1er", "symbols": {"CAD": "$ CA", "USD": "$ US"},
+           "months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+           "countries": {"France": "France", "Japan": "Japon", "Italy": "Italie", "Germany": "Allemagne", "Spain": "Espagne",
+                         "United States": "États-Unis", "China": "Chine", "United Kingdom": "Royaume-Uni", "Hong Kong": "Hong Kong",
+                         "Switzerland": "Suisse", "Belgium": "Belgique", "South Korea": "Corée du Sud", "Netherlands": "Pays-Bas"}},
 }
 guide_translations = {}  # guide id -> {language: translated guide}
 for path in sorted((CONTENT / "guide-translations").glob("*/*.json")) if (CONTENT / "guide-translations").exists() else []:
@@ -6440,7 +6451,7 @@ def guide_text(text, stats, blocks=None):
 
 
 # ---------- Translated guides ----------
-GUIDE_AND = {"de": " und ", "es": " y ", "it": " e ", "pt": " e ", "pl": " i ", "ja": "、"}
+GUIDE_AND = {"de": " und ", "es": " y ", "it": " e ", "pt": " e ", "pl": " i ", "ja": "、", "fr": " et "}
 
 
 def guide_path(gid, lang="en"):
@@ -6481,10 +6492,11 @@ def guide_month(ym, lang):
 
 
 def guide_date(d, lang):
-    """"2026-10-09" -> "9. Oktober 2026", "9 de octubre de 2026", "9 października 2026"."""
+    """"2026-10-09" -> "9. Oktober 2026", "9 de octubre de 2026", "9 października 2026", "1er novembre 2026"."""
     w = GUIDE_WORDS[lang]
     month = (w.get("monthsOf") or w["months"])[int(d[5:7]) - 1]
-    return w["date"].replace("{d}", str(int(d[8:10]))).replace("{m}", month).replace("{y}", d[:4])
+    day = w.get("first", "1") if int(d[8:10]) == 1 else str(int(d[8:10]))
+    return w["date"].replace("{d}", day).replace("{m}", month).replace("{y}", d[:4])
 
 
 def guide_stats_in(stats, lang):
@@ -6572,7 +6584,7 @@ def foot_guide(lang="en"):
             + ('<a href="/news/" class="foot-guide" lang="en">Michelin star news</a>' if news and lang == "en" else ""))
 
 
-GUIDE_CRUMB = {"de": "Ratgeber", "es": "Guías", "it": "Guide", "pt": "Guias", "pl": "Poradniki", "ja": "ガイド"}  # navGuides in each language
+GUIDE_CRUMB = {"de": "Ratgeber", "es": "Guías", "it": "Guide", "pt": "Guias", "pl": "Poradniki", "ja": "ガイド", "fr": "Guides"}  # navGuides in each language
 
 
 def guide_lang_values(gid, lang):

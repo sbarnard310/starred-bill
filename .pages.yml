@@ -2134,7 +2134,7 @@ content:
         type: string
   - name: guide-translations
     label: Guide translations
-    description: "Guides in other languages, at starredbill.com/<language>/guides/<file name>/. One folder per language (de German, es Spanish, it Italian, pt Portuguese, pl Polish, ja Japanese); open the folder, then the guide. A translation keeps the English guide's file name, and its figures and tables come from the same data. Add a new language in build.py (GUIDE_WORDS) first."
+    description: "Guides in other languages, at starredbill.com/<language>/guides/<file name>/. One folder per language (de German, es Spanish, it Italian, pt Portuguese, pl Polish, ja Japanese, fr French); open the folder, then the guide. A translation keeps the English guide's file name, and its figures and tables come from the same data. Add a new language in build.py (GUIDE_WORDS) first."
     type: collection
     path: content/guide-translations
     format: json

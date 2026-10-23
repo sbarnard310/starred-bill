@@ -936,6 +936,7 @@
   "srcTitle": "Sources",
   "srcGuide": "le Guide MICHELIN",
   "srcLine": "Étoiles : {guide}. Prix : le site de chaque restaurant, ou l’avis indiqué sur son ticket, vérifiés en {checked}. Notes : {google}. Taux de change : {rates}.",
+  "m3Pillar": "Ce que signifie chaque niveau et comment jugent les inspecteurs, nous l’expliquons dans [qu’est-ce qu’une étoile Michelin].",
   "cpTitle": "{topic} {in}",
   "cpH1": "{topic} {in} : ce qu'ils <em>coûtent</em>.",
   "cpEyebrow": "{name} · {label} · Guide MICHELIN",

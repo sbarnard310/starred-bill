@@ -1,8 +1,6 @@
 {
   "name": "Apicius",
-  "city": "auvergne-rhone-alpes",
-  "area": "Clermont-Ferrand, Puy-de-Dôme",
-  "areaFr": "Clermont-Ferrand, Puy-de-Dôme",
+  "city": "clermont-ferrand",
   "address": "Place du Marché-Saint-Pierre (à l'étage), 63000 Clermont-Ferrand",
   "stars": 1,
   "cuisine": "Modern European",

@@ -1,7 +1,7 @@
 {
   "name": "Narımor",
-  "city": "turkiye",
-  "area": "Izmir",
+  "city": "izmir",
+  "area": "Urla",
   "address": "Sıra Mahallesi, Eren Sokak, Urla, 35320, Izmir",
   "stars": 1,
   "cuisine": "Turkish",
@@ -25,7 +25,7 @@
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteTr": "Yalnızca akşam yemeği",
-  "areaTr": "İzmir",
+  "areaTr": "Urla",
   "chef": "Atilla Heilbronn",
   "chefSource": "michelin"
 }

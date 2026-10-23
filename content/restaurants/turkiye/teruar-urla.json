@@ -1,7 +1,7 @@
 {
   "name": "Teruar Urla",
-  "city": "turkiye",
-  "area": "Izmir",
+  "city": "izmir",
+  "area": "Urla",
   "address": "Kusçular Mahallesi, 8028. Sokak No:16, Urla, 35437, Izmir",
   "stars": 1,
   "cuisine": "Mediterranean",
@@ -27,7 +27,7 @@
   "chefSource": "site",
   "dinnerNoteTr": "Full Expression tadım menüsü (vejetaryen versiyonu TRY 7,500)",
   "lunchNoteTr": "Öğle yemeği için açık · Çar–Paz",
-  "areaTr": "İzmir",
+  "areaTr": "Urla",
   "menus": [
     {
       "name": "Full Expression tasting menu",

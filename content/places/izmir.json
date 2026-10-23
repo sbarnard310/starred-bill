@@ -1,0 +1,10 @@
+{
+  "id": "izmir",
+  "type": "city",
+  "parent": "turkiye",
+  "name": "Izmir",
+  "nameTr": "İzmir",
+  "inSentenceTr": "İzmir'de",
+  "intro": "All of Izmir's starred restaurants are in Urla, the vineyard country about 40 km west of the city on the road to Çeşme, where the cooking leans on the Aegean's olive oil, herbs, fish and local wine. Prices are in Turkish lira (TRY), with a switch to see them in pounds, euros or US dollars. Prices checked October 2026.",
+  "introTr": "İzmir'in yıldızlı restoranlarının hepsi, şehrin yaklaşık 40 km batısında, Çeşme yolu üzerindeki bağ bölgesi Urla'dadır; mutfakları Ege'nin zeytinyağına, otlarına, balığına ve yerel şaraplarına dayanır. Fiyatlar Türk lirası (TRY) cinsindendir; sterlin, euro veya ABD doları olarak görmek için bir düğme var. Fiyatlar Ekim 2026'da kontrol edildi."
+}

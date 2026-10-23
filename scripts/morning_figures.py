@@ -16,11 +16,13 @@ report can say what changed. A source that isn't set up yet is reported as "not 
     oldest-checked first, results kept in index-cache.json beside config.json).
   - The SEO plan's 20 target searches (seo-targets.txt beside config.json): each one's Google position over the
     latest week, in its main market, and which of our pages ranks for it.
+  - Searches on page one of Google: where we average position 1–10 over the latest week (with 5+ impressions),
+    how many, how many in the top three, which are new or dropped off, and which are shown often but never clicked.
   - Searches on page two of Google: where a page of ours averages position 8–20 over the last 28 days, with the
     page's live title, description and heading and the search words they lack, so they can be tuned.
   - Sites linking to us, from Bing Webmaster Tools (Search Console's Links report has no API). Needs the Bing
     Webmaster API key in the Keychain as "starredbill-bing".
-  - The SEO plan's four measures against their aims for 31 Jan 2027 (SEO_AIMS), put together from the above.
+  - The SEO plan's six measures against their aims for 31 Jan 2027 (SEO_AIMS), put together from the above.
   - Google Analytics 4 (visitors, sessions, page views, top pages and countries, sign-ups). It only counts
     visitors who accepted the cookie banner. Google settles a day's bounce and engagement rates a day or two
     later, so yesterday's are left out (engagementPending) until then; the day before's are settled.
@@ -62,8 +64,10 @@ RESEARCH = Path(os.environ.get("STARREDBILL_RESEARCH") or Path.home() / "starred
 CONFIG = RESEARCH / "figures" / "config.json"
 SITE = "https://starredbill.com"
 # The SEO plan's aims for 31 Jan 2027 (https://claude.ai/code/artifact/8ee24d0c-b566-4b4b-bead-f87d25a46122).
-SEO_AIMS = {"by": "2027-01-31", "pages_indexed": 400, "weekly_impressions": 10000, "linking_sites": 20,
-            "targets_on_page_one": 10}
+# Raised 23 Oct 2026 (owner's request) once the first aims were passed (400 pages indexed, 10,000 weekly impressions);
+# weekly clicks and searches on page one were added then, and the targets grew from 20 to 24 (aim 10 → 12).
+SEO_AIMS = {"by": "2027-01-31", "pages_indexed": 2000, "weekly_impressions": 30000, "weekly_clicks": 600,
+            "searches_on_page_one": 150, "linking_sites": 20, "targets_on_page_one": 12}
 INDEX_BUDGET = 300   # sitemap pages re-inspected a day, besides the key pages (Google allows 2,000 a day)
 # Monthly search volumes come from the Ahrefs snapshot of 7 Oct 2026 (the subscription has ended; Search Console
 # gives no volumes). Searches it doesn't hold have no volume.
@@ -433,6 +437,59 @@ def seo_targets(cfg):
             "on_page_one": sum(1 for t in out if t["page_one"]), "searches": out}
 
 
+PAGE_ONE_MIN = 5     # impressions a week before a search counts as "on page one" (fewer is mostly noise)
+PAGE_ONE_MAX = 20    # page-one searches listed in full, most impressions first
+NO_CLICKS_MIN = 20   # page-one searches with this many impressions and no clicks: a title or description to tune
+
+
+def page_one(cfg, prev=None):
+    """Searches where we average position 1–10 worldwide over the latest week, with PAGE_ONE_MIN or more
+    impressions: how many (and in the top three), the week before's count, the biggest listed with their page,
+    countries and monthly searches, which are new on page one or dropped off since the previous file, and those
+    shown often but never clicked."""
+    url, auth, week, prev_week = gsc_query(cfg)
+
+    def rows(dims, rng=week):
+        return http(url, {"startDate": rng[0], "endDate": rng[1], "dimensions": dims, "rowLimit": 25000},
+                    auth).get("rows", [])
+
+    def on(rng):
+        return [r for r in rows(["query"], rng) if r["position"] <= 10 and r["impressions"] >= PAGE_ONE_MIN]
+
+    now = sorted(on(week), key=lambda r: (-r["impressions"], r["position"]))
+    names = {r["keys"][0] for r in now}
+    pages, where = {}, {}
+    for r in rows(["query", "page"]):
+        q = r["keys"][0]
+        if q in names and r["impressions"] > pages.get(q, {}).get("impressions", 0):
+            pages[q] = {"impressions": r["impressions"], "page": urllib.parse.urlparse(r["keys"][1]).path or "/"}
+    for r in rows(["query", "country"]):
+        if r["keys"][0] in names:
+            where.setdefault(r["keys"][0], []).append({"country": country_name(r["keys"][1]), "code": r["keys"][1],
+                                                       "impressions": r["impressions"],
+                                                       "position": round(r["position"], 1)})
+    found = []
+    for r in now:
+        q = r["keys"][0]
+        countries = sorted(where.get(q, []), key=lambda x: -x["impressions"])[:3]
+        found.append({"search": q, "position": round(r["position"], 1), "impressions": r["impressions"],
+                      "clicks": r["clicks"], "page": pages.get(q, {}).get("page"), "countries": countries,
+                      "volume": volume_of(q, countries[0]["code"] if countries else None)})
+    before = None
+    if prev and Path(prev).exists():
+        before = json.loads(Path(prev).read_text()).get("sources", {}).get("page_one", {}).get("all")
+    page_rows = [r for r in rows(["page"]) if r["position"] <= 10 and r["impressions"] >= PAGE_ONE_MIN]
+    return {"period": f"{week[0]} to {week[1]}", "min_impressions": PAGE_ONE_MIN,
+            "on_page_one": len(found), "top_three": sum(1 for f in found if f["position"] <= 3),
+            "week_before": len(on(prev_week)), "pages_on_page_one": len(page_rows),
+            "clicks_from_page_one": sum(f["clicks"] for f in found),
+            "searches": found[:PAGE_ONE_MAX],
+            "new": [f for f in found if before is not None and f["search"] not in before],
+            "dropped_off": sorted(set(before or []) - names),
+            "no_clicks": [f for f in found if f["impressions"] >= NO_CLICKS_MIN and not f["clicks"]],
+            "all": sorted(names)}
+
+
 PAGE_TWO = (8, 20)   # average positions counted as "page two": just off page one, the quickest wins
 PAGE_TWO_DAYS = 28
 PAGE_TWO_MAX = 25
@@ -556,7 +613,7 @@ def bing_links(cfg, prev=None):
 
 
 def seo_measures(sources):
-    """The SEO plan's four measures, today's figure against the aim for SEO_AIMS["by"] (None where its source
+    """The SEO plan's measures, today's figure against the aim for SEO_AIMS["by"] (None where its source
     isn't working yet)."""
     def ok(name):
         src = sources.get(name, {})
@@ -564,6 +621,8 @@ def seo_measures(sources):
 
     now = {"pages_indexed": ok("site_index").get("indexed"),
            "weekly_impressions": ok("search_console").get("this_week", {}).get("impressions"),
+           "weekly_clicks": ok("search_console").get("this_week", {}).get("clicks"),
+           "searches_on_page_one": ok("page_one").get("on_page_one"),
            "linking_sites": ok("links").get("linking_sites"),
            "targets_on_page_one": ok("targets").get("on_page_one")}
     return {k: {"now": v, "aim": SEO_AIMS[k]} for k, v in now.items()} | {"aim_date": SEO_AIMS["by"]}
@@ -682,6 +741,7 @@ def main(out, prev=None):
                             ("site_index", lambda c: site_index(c, result["sources"].get("index", {}).get("pages")),
                              ["google sign-in"]),
                             ("targets", seo_targets, ["google sign-in", "seo-targets.txt"]),
+                            ("page_one", lambda c: page_one(c, prev), ["google sign-in"]),
                             ("page_two", lambda c: page_two(c, prev), ["google sign-in"]),
                             ("links", lambda c: bing_links(c, prev), ["Bing API key"]),
                             ("umami", umami, [])):

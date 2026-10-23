@@ -1,5 +1,5 @@
 {
-"checked": "2026-10-22",
+"checked": "2026-10-23",
 "source": "Restaurants' own websites",
 "hours": {
 "11-woodfire": "1200-0000;1200-0000;1200-0000;1200-0000;1200-0000;1200-0000;1200-0000",
@@ -76,6 +76,7 @@
 "aptos": ";;;1900-2200;1900-2200;1200-1400,1900-2200;1200-1400",
 "aquavit": "1200-1400,1730-2100;1200-1400,1730-2100;1200-1400,1730-2100;1200-1400,1730-2100;1200-1400,1730-2130;1700-2130;",
 "ar-men-du": ";;1930-2100;1230-1330,1930-2100;1230-1330,1930-2100;1230-1330,1930-2100;",
+"aramburu": ";1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;",
 "arbane": "1200-1330,1900-2030;1200-1330,1900-2030;;;1200-1330,1900-2030;1200-1330,1900-2030;",
 "arbor": "1200-1400,1830-2130;1200-1400,1830-2130;1200-1400,1830-2130;1200-1400,1830-2130;1200-1400,1830-2130;1200-1400,1830-2130;1200-1400,1830-2130",
 "archibald-de-prince": ";;;1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
@@ -184,6 +185,7 @@
 "casa-ruben": "1300-1700;;;1300-1700;1300-1700;1300-1700;1300-1700",
 "casa-sgarra": "1300-1400,2000-2200;;;1300-1400,2000-2200;1300-1400,2000-2200;1300-1400,2000-2200;1300-1430",
 "castor": ";;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;",
+"cedric-burtin": ";;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200;",
 "cenci": ";1200-1500,1800-2130;1200-1500,1800-2130;1200-1500,1800-2130;1200-1500,1800-2130;1200-1500,1800-2130;1200-1500,1800-2130",
 "centric-dining": ";;;1900-2200;1900-2200;1900-2200;",
 "chaimen-hui": "1130-1400,1700-2100;1130-1400,1700-2100;1130-1400,1700-2100;1130-1400,1700-2100;1130-1400,1700-2100;1130-1400,1700-2100;1130-1400,1700-2100",
@@ -216,6 +218,7 @@
 "coco-dining": "1730-2300;1730-2300;1730-2300;1730-2300;1730-2300;1730-2300;1730-2300",
 "coda-berlin": ";;1900-2200;1900-2200;1900-2200;1900-2200;",
 "comme-chez-soi": ";;1200-1300,1900-2030;1200-1300,1900-2030;1200-1300,1900-2030;1200-1300,1900-2030;",
+"commis": ";1700-2030;1700-2030;1700-2030;1700-2100;1700-2100;",
 "contrada-bricconi": "1200-1400,1900-2200;;;;1200-1400,1900-2200;1200-1400,1900-2200;1200-1400,1900-2200",
 "coque": "1900-2200;1900-2200;1900-2200;1900-2200;1900-2200;1200-1400,1900-2200;1900-2200",
 "core-by-clare-smyth": ";1830-2145;1830-2145;1200-1415,1830-2145;1200-1415,1830-2145;1200-1415,1830-2145;",
@@ -565,6 +568,7 @@
 "kioicho-fukudaya": "1730-2200;1130-1430,1730-2200;1130-1430,1730-2200;1130-1430,1730-2200;1130-1430,1730-2200;1130-1430;",
 "kiro-sushi": ";;2030-2300;2030-2300;2030-2300;1400-1630;",
 "kissa-tanto": ";;1730-2300;1730-2300;1730-0000;1730-0000;1730-2300",
+"kitchen-table": ";1800-0000;1800-0000;1800-0000;1700-0000;1700-0000;",
 "kiyama": "1200-1500,1800-2200;1200-1500,1800-2200;1200-1500,1800-2200;1200-1500,1800-2200;1200-1500,1800-2200;1200-1500,1800-2200;1200-1500,1800-2200",
 "kodaiji-jugyuan": ";1130-1500,1730-2130;1130-1500,1730-2130;1130-1500,1730-2130;1130-1500,1730-2130;1130-1500,1730-2130;1130-1500,1730-2130",
 "kodaiji-wakuden": "1200-1500,1730-2100;1200-1500,1730-2100;1200-1500,1730-2100;1200-1500,1730-2100;1200-1500,1730-2100;1200-1500,1730-2100;",
@@ -807,6 +811,7 @@
 "lvn-bird-in-hand": "1200-1330;;;;1200-1330;1200-1330;1200-1330",
 "lympstone-manor": "1200-1430,1830-2130;1200-1430,1830-2130;1200-1430,1830-2130;1200-1430,1830-2130;1200-1430,1830-2130;1200-1430,1830-2130;1200-1430,1830-2130",
 "ma-langue-sourit": ";1200-1600,1900-0000;1200-1600,1900-0000;1200-1600,1900-0000;1200-1600,1900-0000;1200-1600,1900-0000;",
+"maaemo": ";1800-0000;1800-0000;1800-0000;1700-0000;1700-0000;",
 "maerge": "1200-1500,1800-2300;1200-1500,1800-2300;1200-1500,1800-2300;1200-1500,1800-2300;1200-1500,1800-2300;1200-1500,1800-2300;",
 "magill-estate-restaurant": ";;1900-2200;1900-2200;1900-2200;1200-1400,1900-2200;1200-1400",
 "magnolia": "1930-2200;1930-2200;1930-2200;1930-2200;1930-2200;1230-1430,1930-2200;1230-1430,1930-2200",
@@ -954,6 +959,7 @@
 "orfali-bros": "1745-2215;;1745-2215;1745-2215;1745-2215;1745-2215;1345-1415,1745-2215",
 "oriental-sense-palate": "1100-1400,1700-2130;1100-1400,1700-2130;1100-1400,1700-2130;1100-1400,1700-2130;1100-1400,1700-2130;1100-1400,1700-2130;1100-1400,1700-2130",
 "origines-restaurant": "1215-1345,1930-2145;1215-1345,1930-2145;1215-1345,1930-2145;1215-1345,1930-2145;1215-1345,1930-2145;;",
+"oriole": ";1700-2130;1700-2130;1700-2130;1700-2130;1700-2130;",
 "oro": ";1900-2300;1900-2300;1900-2300;1900-2300;1300-1500,1900-2300;",
 "oryori-hanagaki": "1100-1600,1700-2200;1100-1600,1700-2200;1100-1600,1700-2200;1100-1600,1700-2200;1100-1600,1700-2200;1100-1600,1700-2200;1100-1600,1700-2200",
 "oryori-hirooka": "1200-1430,1830-2100;1200-1430,1830-2100;;1830-2100;1200-1430,1830-2100;1200-1430,1830-2100;1200-1430,1830-2100",
@@ -1119,6 +1125,7 @@
 "silver-pot": "1130-1430,1730-2100;1130-1430,1730-2100;1130-1430,1730-2100;1130-1430,1730-2100;1130-1430,1730-2100;1130-1430,1730-2100;1130-1430,1730-2100",
 "sinae": ";1200-1430,1730-2200;1200-1430,1730-2200;1200-1430,1730-2200;1200-1430,1730-2200;1200-1430,1730-2200;1200-1430,1730-2200",
 "sincere": "1800-2130;1800-2130;1800-2130;1800-2130;1800-2130;1800-2130;",
+"singlethread": "1600-2045;1600-2045;1600-2045;1600-2045;1600-2045;1600-2045;1600-2045",
 "sir-kwinten": "1200-1700,1900-0000;;;1200-1700,1900-0000;1200-1700,1900-0000;1900-0000;1200-1700,1900-0000",
 "sixty-three-clinton": ";1800-2300;1800-2300;1800-2300;1800-2300;1800-2300;",
 "sk-mat-manniskor": "1700-0000;1700-0000;1700-0000;1700-0000;1700-0000;1700-0000;",
@@ -1132,6 +1139,7 @@
 "sole": "1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100;1130-1400,1730-2100",
 "sollerod-kro": ";;1800-0000;1200-1700,1800-0000;1200-1700,1800-0000;1200-1700,1800-0000;1200-1700",
 "solring-hof": ";1830-2200;1830-2200;1830-2200;1830-2200;1830-2200;",
+"somni": ";;1900-2200;1900-2200;1900-2200;1900-2200;1900-2200",
 "song": "1130-1430,1730-2200;1130-1430,1730-2200;1130-1430,1730-2200;1130-1430,1730-2200;1130-1430,1730-2200;1130-1430,1730-2200;1130-1430,1730-2200",
 "song-hangzhou": "1130-1400,1730-2130;1130-1400,1730-2130;1130-1400,1730-2130;1130-1400,1730-2130;1130-1400,1730-2130;1130-1400,1730-2130;1130-1400,1730-2130",
 "sonnenberg-le-soir": ";;1900-2200;1900-2200;1900-2200;1900-2200;",
@@ -1699,6 +1707,10 @@
 "url": "https://www.men-du.com/le-restaurant/",
 "type": "site"
 },
+"aramburu": {
+"url": "https://relaischateaux.com/us/restaurant/aramburu-restaurante",
+"type": "other"
+},
 "arbane": {
 "url": "https://bookings.zenchef.com/results?rid=363722&pid=1001",
 "type": "other"
@@ -2131,6 +2143,10 @@
 "url": "https://cas-tor.be/reserveren",
 "type": "site"
 },
+"cedric-burtin": {
+"url": "https://fr.gaultmillau.com/fr/restaurants/cedric-burtin",
+"type": "other"
+},
 "cenci": {
 "url": "https://cenci-kyoto.com/",
 "type": "site"
@@ -2258,6 +2274,10 @@
 "comme-chez-soi": {
 "url": "https://www.commechezsoi.be/copie-de-contact",
 "type": "site"
+},
+"commis": {
+"url": "https://www.opentable.com/r/commis-dining-room-oakland",
+"type": "other"
 },
 "contrada-bricconi": {
 "url": "https://contradabricconi.prenota-web.it/prenotazioni/?lang=it",
@@ -3655,6 +3675,10 @@
 "url": "https://www.kissatanto.com/",
 "type": "site"
 },
+"kitchen-table": {
+"url": "https://www.opentable.co.uk/r/kitchen-table-london",
+"type": "other"
+},
 "kiyama": {
 "url": "https://kiyama-kyoto.com/",
 "type": "site"
@@ -4623,6 +4647,10 @@
 "url": "https://mls.lu/fr/",
 "type": "site"
 },
+"maaemo": {
+"url": "https://www.exploretock.com/maaemo",
+"type": "other"
+},
 "maerge": {
 "url": "https://maerge.tokyo/access/",
 "type": "site"
@@ -5210,6 +5238,10 @@
 "origines-restaurant": {
 "url": "https://www.origines-restaurant.com/",
 "type": "site"
+},
+"oriole": {
+"url": "https://www.timeout.com/chicago/restaurants/oriole",
+"type": "other"
 },
 "oro": {
 "url": "https://ororestaurante.com.br/",
@@ -5871,6 +5903,10 @@
 "url": "https://omakaseje.com/restaurants/zk884003",
 "type": "other"
 },
+"singlethread": {
+"url": "https://www.opentable.com/r/singlethreadfarms",
+"type": "other"
+},
 "sir-kwinten": {
 "url": "https://www.sirkwinten.be/contact/",
 "type": "site"
@@ -5921,6 +5957,10 @@
 },
 "solring-hof": {
 "url": "https://www.soelring-hof.de/gourmetrestaurant-sylt/sylt-2-sterne-restaurant/",
+"type": "site"
+},
+"somni": {
+"url": "https://www.somnirestaurant.com/",
 "type": "site"
 },
 "song": {
@@ -7013,6 +7053,7 @@
 "antica-corte-pallavicina",
 "anvers",
 "aptos",
+"aramburu",
 "archibald-de-prince",
 "arkhe",
 "atrio",
@@ -7039,6 +7080,7 @@
 "cannavacciuolo-vineyard",
 "casa-arcas",
 "castor",
+"cedric-burtin",
 "centric-dining",
 "chakaiseki-akiyoshi",
 "chateau-d-adomenil",
@@ -7181,6 +7223,7 @@
 "sherwood",
 "shinchi-yamamoto",
 "skillogalee-barrel-house",
+"somni",
 "sonnenberg-le-soir",
 "sosuheon",
 "sud-777",
@@ -7219,9 +7262,14 @@
 ],
 "seasons": {
 "dattilo": "Open from late April to early November (2026: 25 April to 1 November); these are its spring and autumn hours",
-"la-palmeraie-chateau-de-valmer": "Open in the warmer months; closed now, its 2027 season starts on 1 May"
+"la-palmeraie-chateau-de-valmer": "Open in the warmer months; closed now, its 2027 season starts on 1 May",
+"singlethread": "Closed on 1 January, Thanksgiving and 25 December"
 },
 "none": {
+"alchemist": {
+"checked": "2026-10-23",
+"note": "Its site gives only the phone line's hours and its Tock page none; closed for its yearly five-month Intermission from December 2026, reopening in April 2027"
+},
 "alte-schule-klassenzimmer": {
 "checked": "2026-10-19",
 "note": "The hotel's pages give only reception hours and closure dates"
@@ -7230,9 +7278,21 @@
 "checked": "2026-10-19",
 "note": "Its site (every page and menu PDF) gives no days or times"
 },
+"aponiente": {
+"checked": "2026-10-23",
+"note": "Its site and booking FAQ give no days or times (lunch and dinner, seasonal, closed over winter); the listings with hours copy Google's"
+},
 "blue-hill-at-stone-barns": {
 "checked": "2026-10-19",
 "note": "No weekly pattern: Tock opens set dates only"
+},
+"cenador-de-amos": {
+"checked": "2026-10-23",
+"note": "Its site gives only the bookings desk's hours (Wednesday to Sunday); closed over Christmas, January and February"
+},
+"cocina-hermanos-torres": {
+"checked": "2026-10-23",
+"note": "Its site gives only the phone desk's hours; the only press source with times (Time Out, Tuesday to Saturday lunch and dinner) is from 2018"
 },
 "contrada": {
 "checked": "2026-10-19",
@@ -7257,6 +7317,10 @@
 "kaiseki-morimoto": {
 "checked": "2026-10-19",
 "note": "No website, social page or booking page (not on Ikyu, TableCheck, omakase.in, Pocket Concierge or OMAKASE)"
+},
+"kontrast": {
+"checked": "2026-10-23",
+"note": "Its site gives no hours, its Superb booking page has a bot check and VisitOSLO's listing has none; the listings with hours copy the guide's"
 },
 "kvitnes-gard": {
 "checked": "2026-10-19",
@@ -7290,6 +7354,10 @@
 "checked": "2026-10-19",
 "note": "Temporarily closed, no reopening date given"
 },
+"sorn": {
+"checked": "2026-10-23",
+"note": "Its site and TableCheck give only the phone line's hours; press listings disagree (Time Out 2025: Tuesday to Sunday)"
+},
 "stucki-tanja-grandits": {
 "checked": "2026-10-19",
 "note": "Closed for rebuilding from 28 September 2026 until about November 2027"
@@ -7297,6 +7365,10 @@
 "sylvestre-wahid-les-grandes-alpes": {
 "checked": "2026-10-19",
 "note": "Closed after a fire in February 2026"
+},
+"ta-vie": {
+"checked": "2026-10-23",
+"note": "Dinner 18:00–22:00 (seatings 18:00, 19:00, 20:00) on its reservation page, but its rest day varies by month, so no weekly pattern"
 },
 "zass": {
 "checked": "2026-10-19",

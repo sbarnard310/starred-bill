@@ -845,6 +845,10 @@ content:
       - { name: photoPermission, label: "Photo: permission (who said yes, how and when)", type: text }
       - { name: photoChecked, label: "Photo: added or checked on (2026-10-13)", type: string }
       - { name: dressCode, label: Dress code, type: text }
+      - { name: pageTitle, label: "Page title for Google, only to tune a page (up to 61 characters, {year} for the year)", type: string }
+      - { name: pageHeading, label: "Page heading, only to tune a page", type: string }
+      - { name: pageDescription, label: "Search description, only to tune a page (up to 155 characters, {dinner} for the dinner price)", type: text }
+      - { name: pageLead, label: "Sentence added to the answer at the top of the page", type: text }
       - { name: hotel, label: Hotel it's in (mid-sentence, e.g. the Rome Cavalieri), type: string }
       - name: alsoTry
         label: Sister venues serving its cooking for less
@@ -1862,7 +1866,7 @@ content:
         type: string
       - name: areasNote
         label: "Areas note (English, optional)"
-        description: "One sentence under \"Starred restaurants, area by area\", to link a page inside with the words people search for it. Write {p:stuttgart|Michelin star restaurants in Stuttgart} (a place's file name, then the link's words) to link a place."
+        description: "One sentence under \"Starred restaurants, area by area\", to link a page inside with the words people search for it. Write {p:stuttgart|Michelin star restaurants in Stuttgart} (a place's file name, then the link's words) to link a place, or {r:tatsu-dallas|Tatsu Dallas} (a restaurant's file name) to link a restaurant."
         type: text
       - name: areasNoteDe
         label: "Areas note (German, optional)"

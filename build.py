@@ -479,6 +479,11 @@ for f in sorted((CONTENT / "restaurants").rglob("*.json")):
         problem(where, "michelinUrl must be the restaurant's page on https://guide.michelin.com/")
     if r.get("photo"):
         photo_checks(r, where)
+    # Hand-tuned wording for its page (page_words()): the title must fit Google's 61 characters ({year} counts as four,
+    # a {dinner} price as six), the description 155.
+    for field, most in (("pageTitle", 61), ("pageDescription", 155)):
+        if len(re.sub(r"\{(dinner|lunch)\}", "$1,000", r.get(field) or "").replace("{year}", "2026")) > most:
+            problem(where, f"{field} is longer than {most} characters; shorten it")
     if isinstance(r.get("bookingWindow"), dict):  # Pages CMS saves the blank parts as "" (and false for an unticked box)
         r["bookingWindow"] = {k: v for k, v in tidy(r["bookingWindow"]).items() if v is not False}
         if not r["bookingWindow"].get("type"):
@@ -771,14 +776,19 @@ for pid, p in places.items():
 
 # A place's areas note (areasNote, areasNoteDe…, 16 Oct 2026): a hand-written sentence under "Starred restaurants, area by
 # area", for linking a page inside with the words people search for it, in a sentence rather than the list ("Sternerestaurants
-# in Stuttgart" from Baden-Württemberg, which Google showed ahead of Stuttgart's own page). {p:<place>|words} links a place.
-# Each language shows only its own (no English on the German page); drawn by area_note().
+# in Stuttgart" from Baden-Württemberg, which Google showed ahead of Stuttgart's own page). {p:<place>|words} links a place,
+# {r:<restaurant>|words} a restaurant (its page, else its row; 23 Oct 2026, Texas → Tatsu Dallas). Each language shows only
+# its own (no English on the German page); drawn by area_note().
 AREA_NOTE_LINK = re.compile(r"\{p:([\w-]+)\|([^}]+)\}")
+AREA_NOTE_R = re.compile(r"\{r:([\w-]+)\|([^}]+)\}")
 for pid, p in places.items():
     for field in [f for f in p if f == "areasNote" or f.startswith("areasNote")]:
         for i, _ in AREA_NOTE_LINK.findall(p[field]):
             if i not in places:
                 problem(f"places ({pid})", f"its {field} links {{p:{i}|…}}, which isn't a place file name")
+        for i, _ in AREA_NOTE_R.findall(p[field]):
+            if i not in ids:
+                problem(f"places ({pid})", f"its {field} links {{r:{i}|…}}, which isn't a restaurant file name")
 
 # News (14 Oct 2026, to-do item feature-news-section): short, dated stories about Michelin-starred restaurants (new and
 # lost stars on ceremony nights, closures and openings, chef moves, price rises, critics' lists, our own figures), one JSON
@@ -912,7 +922,8 @@ for _a, _b in CANONICAL_PLACES.items():
 PAGE_ONLY = ("bookingWindow", "noBookings", "queue", "byob", "servicePct", "hotel", "alsoTry", "waitlist", "duration", "menus", "menusSource", "menusChecked", "priceHistory", "starsSince", "dressCode", "bookingOpens", "bookingPhone", "bookingUrl",
              "walkIns", "groups", "groupsUrl", "cancellation",
              "children", "infoSource", "infoChecked", "rankings", "rankingsChecked",
-             "photoAlt", "photoSourceType", "photoPermission", "photoChecked", "photoWidth", "photoHeight")
+             "photoAlt", "photoSourceType", "photoPermission", "photoChecked", "photoWidth", "photoHeight",
+             "pageTitle", "pageHeading", "pageDescription", "pageLead")
 
 
 def public(r):
@@ -2058,7 +2069,9 @@ def area_note(p, lang):
         q = places[m.group(1)]
         href = lang_path(q["path"], lang) if lang in place_langs(q) else q["path"]
         return f'<a href="{href}">{m.group(2)}</a>'
-    return f'      <p class="area-note">{AREA_NOTE_LINK.sub(link, e(text))}</p>\n'
+    by_id = {r["id"]: r for r in restaurants}
+    text = AREA_NOTE_R.sub(lambda m: f'<a href="{restaurant_href(by_id[m.group(1)])}">{m.group(2)}</a>', AREA_NOTE_LINK.sub(link, e(text)))
+    return f'      <p class="area-note">{text}</p>\n'
 
 
 # ---------- SEO pilot (7 Oct 2026) ----------
@@ -7760,8 +7773,21 @@ def page_name(r, shared=()):
     return f"{r['name']} ({most_city(r)[1]})" if r["name"].lower() in shared else r["name"]
 
 
+def page_words(r, field):
+    """A restaurant page's hand-tuned wording (pageTitle, pageHeading, pageDescription, pageLead: 23 Oct 2026, to-do item
+    seo-tatsu-dallas-page-two, for a page Google shows on page two for its own name), with {dinner} and {lunch} filled
+    in, so a price change can't leave it out of date; else ""."""
+    text = r.get(field) or ""
+    for k in ("dinner", "lunch"):
+        if "{" + k + "}" in text:
+            text = text.replace("{" + k + "}", money(r[k], r["cur"]) if r.get(k) is not None else "")
+    return text
+
+
 def restaurant_title(r, year, shared=()):
-    """The page's title (the blue link in Google): the fullest wording that fits TITLE_MAX."""
+    """The page's title (the blue link in Google): the fullest wording that fits TITLE_MAX, or its own pageTitle."""
+    if r.get("pageTitle"):
+        return page_words(r, "pageTitle").replace("{year}", str(year))
     name, has_menu = page_name(r, shared), r.get("dinnerType", "menu") == "menu" and r.get("dinner") is not None
     what = [x for x in ("Tasting Menu" if has_menu else "Menu" if r.get("dinner") is not None else "", "Lunch" if r.get("lunch") is not None else "",
                         "Wine" if r.get("wine") else "") if x]
@@ -7771,7 +7797,9 @@ def restaurant_title(r, year, shared=()):
 
 
 def restaurant_description(r, where):
-    """The search snippet: prices first, then stars, area and chef, as much as fits in 155 characters."""
+    """The search snippet: prices first, then stars, area and chef, as much as fits in 155 characters (or its own pageDescription)."""
+    if r.get("pageDescription"):
+        return page_words(r, "pageDescription")
     cur, d, w, lunch = r["cur"], r.get("dinner"), r.get("wine"), r.get("lunch")
     bits = []
     if d is not None:
@@ -7889,9 +7917,11 @@ def build_restaurant_pages():
 
         hero = (f'<div class="hero rp-hero" id="top">\n  <div class="wrap">\n    <div>\n'
                 f'      <span class="eyebrow" style="color: var(--band-muted)">{stars_html} {e(stars_label)} · {e(r.get("cuisine", ""))}</span>\n'
-                f'      <h1 style="margin-top: 12px">{e(page_name(r, shared))} prices: what it <em>costs</em></h1>\n'
+                f'      <h1 style="margin-top: 12px">'
+                + (re.sub(r"&lt;(/?)em&gt;", r"<\1em>", e(page_words(r, "pageHeading"))) if r.get("pageHeading") else f"{e(page_name(r, shared))} prices: what it <em>costs</em>")
+                + '</h1>\n'
                 f'      <p class="rp-where">{e(where)}' + (f' · In {e(r["hotel"])}' if r.get("hotel") else "") + (f' · Chef {e(r["chef"])}' if r.get("chef") else "") + '</p>\n'
-                f'      <p class="rp-answer">{e(answer)}</p>\n'
+                f'      <p class="rp-answer">{e(answer)}' + (f' {e(page_words(r, "pageLead"))}' if r.get("pageLead") else "") + '</p>\n'
                 + (f'      <p class="rp-acclaim">{e(acclaim)}</p>\n' if acclaim else "")
                 + f'      <div class="rp-actions"><button type="button" class="rp-wish" id="rpWish" data-wish="{e(r["id"])}" aria-pressed="false">'
                 f'<svg aria-hidden="true"><use href="#heart"/></svg><span>Save to wishlist</span></button>'

@@ -1,0 +1,11 @@
+{
+  "id": "essen",
+  "type": "region",
+  "parent": "north-rhine-westphalia",
+  "name": "Essen and the Ruhr",
+  "nameDe": "Essen und das Ruhrgebiet",
+  "inSentenceDe": "in Essen und im Ruhrgebiet",
+  "intro": "Essen and its neighbours in the Ruhr, Germany's old coal and steel country and now its biggest urban area: Dortmund, Duisburg and, on the Ruhr's northern edge, Haltern am See. Düsseldorf and Cologne have their own pages. Prices are in euros, with a switch to see them in pounds or US dollars. Prices checked October 2026.",
+  "introDe": "Essen und seine Nachbarn im Ruhrgebiet, dem einstigen Revier von Kohle und Stahl und heute dem größten Ballungsraum Deutschlands: Dortmund, Duisburg und, am Nordrand des Reviers, Haltern am See. Düsseldorf und Köln haben eigene Seiten. Die Preise sind in Euro angegeben, mit einer Umschaltung auf Pfund oder US-Dollar. Preise geprüft im Oktober 2026.",
+  "plural": true
+}

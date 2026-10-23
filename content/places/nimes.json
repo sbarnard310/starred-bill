@@ -1,0 +1,12 @@
+{
+  "id": "nimes",
+  "type": "region",
+  "parent": "occitanie",
+  "name": "Nîmes and the Gard",
+  "nameFr": "Nîmes et le Gard",
+  "inSentence": "Nîmes and the Gard",
+  "inSentenceFr": "à Nîmes et dans le Gard",
+  "intro": "Nîmes, the Roman city of the arena and the Maison Carrée, and the rest of the Gard: Uzès and its villages, Garons and Calvisson near Nîmes, Saint-Hilaire-de-Brethmas by Alès, and Villeneuve-lès-Avignon and Pujaut across the Rhône from Avignon, whose own restaurants are on the Provence-Alpes-Côte d'Azur page. Prices are in euros, with a switch to see them in pounds or US dollars, and include service, as French menu prices always do. Prices checked October 2026.",
+  "introFr": "Nîmes, la ville romaine des Arènes et de la Maison Carrée, et le reste du Gard : Uzès et ses villages, Garons et Calvisson près de Nîmes, Saint-Hilaire-de-Brethmas près d'Alès, et Villeneuve-lès-Avignon et Pujaut, de l'autre côté du Rhône face à Avignon, dont les restaurants sont sur la page Provence-Alpes-Côte d'Azur. Les prix sont en euros, avec un bouton pour les afficher en livres sterling ou en dollars américains, et le service est compris, comme toujours en France. Prix vérifiés en octobre 2026.",
+  "plural": true
+}

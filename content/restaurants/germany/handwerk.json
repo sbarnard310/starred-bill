@@ -1,7 +1,6 @@
 {
   "name": "Handwerk",
-  "city": "lower-saxony",
-  "area": "Hanover",
+  "city": "hanover",
   "address": "Altenbekener Damm 17, 30173, Hanover",
   "stars": 1,
   "cuisine": "Modern European",
@@ -26,6 +25,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 139 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "areaDe": "Hannover"
+  "lunchNoteDe": "Nur abends"
 }

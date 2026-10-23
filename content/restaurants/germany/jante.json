@@ -1,7 +1,6 @@
 {
   "name": "Jante",
-  "city": "lower-saxony",
-  "area": "Hanover",
+  "city": "hanover",
   "address": "Marienstraße 116, 30171, Hanover",
   "stars": 2,
   "cuisine": "Creative",
@@ -23,6 +22,5 @@
   "dinnerNoteDe": "Degustationsmenü",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "areaDe": "Hannover"
+  "lunchNoteDe": "Nur abends"
 }

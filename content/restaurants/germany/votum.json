@@ -1,7 +1,6 @@
 {
   "name": "Votum",
-  "city": "lower-saxony",
-  "area": "Hanover",
+  "city": "hanover",
   "address": "Hannah-Arendt-Platz 1, 30159, Hanover",
   "stars": 2,
   "cuisine": "Creative",
@@ -22,6 +21,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 99 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "areaDe": "Hannover"
+  "lunchNoteDe": "Nur abends"
 }

@@ -1,0 +1,9 @@
+{
+  "id": "hanover",
+  "type": "city",
+  "parent": "lower-saxony",
+  "name": "Hanover",
+  "nameDe": "Hannover",
+  "intro": "Hanover, the capital of Lower Saxony, on the River Leine. Prices are in euros, with a switch to see them in pounds or US dollars. Prices checked October 2026.",
+  "introDe": "Hannover, die Landeshauptstadt Niedersachsens an der Leine. Die Preise sind in Euro angegeben, mit einer Umschaltung auf Pfund oder US-Dollar. Preise geprüft im Oktober 2026."
+}

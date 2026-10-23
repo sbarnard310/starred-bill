@@ -1,7 +1,6 @@
 {
   "name": "Marie",
-  "city": "lower-saxony",
-  "area": "Hanover",
+  "city": "hanover",
   "address": "Wedekindplatz 1, 30161, Hanover",
   "stars": 1,
   "cuisine": "French",
@@ -27,6 +26,5 @@
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 110 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends",
-  "areaDe": "Hannover"
+  "lunchNoteDe": "Nur abends"
 }

@@ -1,0 +1,11 @@
+{
+  "id": "malaga",
+  "type": "region",
+  "parent": "andalusia",
+  "name": "Málaga and Marbella",
+  "nameEs": "Málaga y Marbella",
+  "inSentenceEs": "en Málaga y Marbella",
+  "intro": "The province of Málaga on the Costa del Sol: Málaga itself, Marbella, Fuengirola and, inland in the hills, Ronda. Prices are in euros, with a switch to see them in pounds or US dollars. Prices checked October 2026; Spanish menu prices include 10% VAT (IVA), and service isn't added to the bill.",
+  "introEs": "La provincia de Málaga, en la Costa del Sol: la propia Málaga, Marbella, Fuengirola y, en el interior, Ronda. Los precios están en euros, con un selector para verlos en libras o dólares estadounidenses. Precios consultados en octubre de 2026; en España los precios de los menús incluyen el 10 % de IVA y el servicio no se añade a la cuenta.",
+  "plural": true
+}

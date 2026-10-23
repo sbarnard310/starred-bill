@@ -2231,7 +2231,11 @@ def short_answer(p, page, starred, lang):
     k = FaqWords(page, lang)
     w, own = k.w, k.own
     name = SEARCH_NAMES[p["id"]]["short"] if p["id"] in SEARCH_NAMES and lang == "en" else pick_lang(page, "name", lang)
-    say = lambda key, **v: k.say_html(key, name=e(name), checked=e(long_month(site.get("updated", ""), lang)), **v)
+    if lang == "en" and p["id"] not in SEARCH_NAMES and page["inSentence"].startswith("the "):
+        name = "T" + page["inSentence"][1:]  # "The UK has…", not "United Kingdom has…"
+    # A place whose name reads as plural ("Napa and Sonoma", "the Channel Islands") sets `plural`
+    verb = (lambda s: s.replace(e(name) + " has ", e(name) + " have ", 1)) if lang == "en" and p.get("plural") else (lambda s: s)
+    say = lambda key, **v: verb(k.say_html(key, name=e(name), checked=e(long_month(site.get("updated", ""), lang)), **v))
     price = lambda r, f: e(k.price(r, f, usd=False))
     by_stars = by_star_level(k, starred)
     tiers = [(s, len(by_stars[s])) for s in (3, 2, 1) if by_stars[s]]

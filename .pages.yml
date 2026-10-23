@@ -1285,6 +1285,10 @@ content:
         label: Name mid-sentence
         description: Only if it reads differently in a sentence, e.g. "the UK" for United Kingdom.
         type: string
+      - name: plural
+        label: Name is plural
+        description: Tick if the English name reads as plural ("Napa and Sonoma", "the Channel Islands"), so the page says "have" rather than "has".
+        type: boolean
       - name: inSentenceFr
         label: Name mid-sentence in French
         description: With its preposition, e.g. "à Paris" or "en France".

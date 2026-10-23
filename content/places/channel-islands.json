@@ -4,5 +4,6 @@
   "parent": "uk",
   "name": "Channel Islands",
   "nameZh": "海峽群島",
-  "inSentence": "the Channel Islands"
+  "inSentence": "the Channel Islands",
+  "plural": true
 }

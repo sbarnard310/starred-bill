@@ -30,5 +30,13 @@
   ],
   "chef": "Rudy Villien",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "rooms": 1,
+    "url": "https://www.lecharlemagne.fr/fr/hebergement.html",
+    "from": 150,
+    "note": "Offers a self-catering apartment sleeping up to eight rather than hotel rooms.",
+    "checked": "2026-10-23"
+  }
 }

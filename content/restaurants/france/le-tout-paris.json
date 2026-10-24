@@ -27,5 +27,12 @@
   "placeId": "ChIJxYJUC2lv5kcRlhdpWba_aGU",
   "michelinId": "1198272",
   "chef": "William Béquin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cheval Blanc Paris",
+    "url": "https://www.chevalblanc.com/fr/maison/paris/",
+    "note": "Le Tout-Paris is the restaurant on the top floor of the Cheval Blanc Paris hotel.",
+    "checked": "2026-10-23"
+  }
 }

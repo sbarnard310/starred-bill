@@ -50,5 +50,12 @@
   "dressCode": "Elegant, smart dress (tenue élégante et soignée).",
   "children": "A children's menu, La Madeleine de Proust, is offered for those up to 12 at €65.",
   "infoSource": "https://www.lenegresco.com/restaurants/le-chantecler",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Negresco",
+    "url": "https://www.lenegresco.com/restaurants/le-chantecler",
+    "note": "Book the rooms through the hotel.",
+    "checked": "2026-10-23"
+  }
 }

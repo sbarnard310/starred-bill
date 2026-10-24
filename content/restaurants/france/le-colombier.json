@@ -33,5 +33,13 @@
   "chef": "Johan Thyriot",
   "chefSource": "site",
   "rating": 4.9,
-  "reviews": 19
+  "reviews": 19,
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine du Colombier",
+    "rooms": 25,
+    "url": "https://domaine-colombier.com/fr/chambres-et-suites.html",
+    "note": "A five-star hotel with 21 rooms and 4 suites.",
+    "checked": "2026-10-23"
+  }
 }

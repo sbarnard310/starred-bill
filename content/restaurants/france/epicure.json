@@ -32,5 +32,11 @@
   ],
   "chef": "Arnaud Faye",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Bristol Paris",
+    "url": "https://www.oetkerhotels.com/fr/hotels/le-bristol-paris/",
+    "checked": "2026-10-23"
+  }
 }

@@ -24,5 +24,13 @@
   "michelinId": "63654",
   "chef": "Fabio Bragagnolo",
   "chefSource": "site",
-  "notice": "Closed for the season until about mid-April 2027 (its website, October 2026)"
+  "notice": "Closed for the season until about mid-April 2027 (its website, October 2026)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Casadelmar",
+    "rooms": 34,
+    "url": "https://www.casadelmar.fr",
+    "note": "A 34-room hotel at Porto-Vecchio; its website says it is closed for the season until about mid-April 2027.",
+    "checked": "2026-10-23"
+  }
 }

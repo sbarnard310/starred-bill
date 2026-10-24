@@ -34,5 +34,13 @@
     "kosher"
   ],
   "chef": "Nadia Sammut",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Auberge La Fenière",
+    "rooms": 11,
+    "url": "https://www.aubergelafeniere.com/sejours-immersifs",
+    "note": "The inn has eleven rooms and also sells immersive stays that include two nights.",
+    "checked": "2026-10-23"
+  }
 }

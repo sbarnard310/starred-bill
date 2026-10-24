@@ -26,5 +26,12 @@
     "vegetarian"
   ],
   "chef": "Maximilian Troebs",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine de Montagne",
+    "rooms": 27,
+    "url": "https://domainedemontagne.com/fr/reservation.html",
+    "checked": "2026-10-23"
+  }
 }

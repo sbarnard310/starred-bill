@@ -28,5 +28,20 @@
   "placeId": "ChIJYbQnG5-p5EcRVktU2m62Xgw",
   "michelinId": "118502",
   "chef": "Christophe Hay",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Fleur de Loire",
+    "rooms": 44,
+    "url": "https://fleurdeloire.com/fr/hotel.html",
+    "packages": [
+      {
+        "name": "Séjour gastronomique avec dîner étoilé",
+        "includes": "A night in a Deluxe Loire-view room with breakfast, dinner at Christophe Hay (7-moment menu with food and wine pairing) and access to the wellness area",
+        "url": "https://fleurdeloire.com/fr/experiences/sejour-gastronomique-avec-diner-etoile.html"
+      }
+    ],
+    "note": "A hotel with 44 rooms including 12 suites.",
+    "checked": "2026-10-23"
+  }
 }

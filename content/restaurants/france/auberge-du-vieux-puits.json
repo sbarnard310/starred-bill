@@ -28,5 +28,14 @@
   "placeId": "ChIJwz7atuhJsBIRZ6esU5Pl6As",
   "michelinId": "3247",
   "chef": "Gilles Goujon",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge du Vieux Puits",
+    "url": "https://www.aubergeduvieuxpuits.fr/fr/chambres.html",
+    "from": 310,
+    "fromNote": "room in the chefs’ house, breakfast and tourist tax extra",
+    "note": "Rooms in the village and around the pool; suites cost up to €490 a night.",
+    "checked": "2026-10-23"
+  }
 }

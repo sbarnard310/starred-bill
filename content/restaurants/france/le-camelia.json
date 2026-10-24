@@ -34,5 +34,13 @@
   ],
   "chef": "Guillaume Stile",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "name": "Château de Bry",
+    "rooms": 4,
+    "url": "https://lechateaudebry.com/hebergements",
+    "note": "Four simple roof-opening cabins for two in the château park (self-catering, no heating).",
+    "checked": "2026-10-23"
+  }
 }

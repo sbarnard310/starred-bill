@@ -27,5 +27,29 @@
     "gluten-free"
   ],
   "chef": "Thomas Benady",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 4,
+    "url": "https://aubergesauvage.fr",
+    "packages": [
+      {
+        "name": "Room for two with dinner and breakfast",
+        "includes": "A night in one of three rooms for two, dinner (drinks and cheese not included) and breakfast",
+        "price": 390,
+        "per": "room",
+        "when": "Book by email; guests seated from 7pm; no pets",
+        "url": "https://aubergesauvage.fr"
+      },
+      {
+        "name": "Apartment for two with dinner and breakfast",
+        "includes": "A night in the apartment across from the restaurant for two, dinner (drinks and cheese not included) and breakfast",
+        "price": 410,
+        "per": "room",
+        "url": "https://aubergesauvage.fr"
+      }
+    ],
+    "note": "Three rooms and an apartment; stays are booked by email and always include dinner.",
+    "checked": "2026-10-23"
+  }
 }

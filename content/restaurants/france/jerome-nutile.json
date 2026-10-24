@@ -30,5 +30,13 @@
     "vegan"
   ],
   "chef": "Jérôme Nutile",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Mas de Boudan",
+    "rooms": 4,
+    "url": "https://www.jerome-nutile.com/fr/hotel-mas-de-boudan.html",
+    "note": "Four rooms, one a suite, upstairs from the starred restaurant in a four-star Provençal mas.",
+    "checked": "2026-10-23"
+  }
 }

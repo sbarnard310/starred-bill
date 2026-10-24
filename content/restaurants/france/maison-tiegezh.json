@@ -29,5 +29,13 @@
     "vegetarian"
   ],
   "chef": "Baptiste Denieul",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Maison Tiegezh",
+    "rooms": 6,
+    "url": "https://maisontiegezh.fr/fr/chambres-et-suite-familiale.html",
+    "note": "A 4-star boutique hotel with 5 rooms and a family suite.",
+    "checked": "2026-10-23"
+  }
 }

@@ -28,5 +28,13 @@
   "placeId": "ChIJg06e49-a8kcRFaNTUYXiW14",
   "michelinId": "533952",
   "chef": "Thomas Collomb",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Rôtisserie du Chambertin",
+    "rooms": 9,
+    "url": "https://www.rotisserie-chambertin.com/en/rooms/",
+    "note": "Hotel above the restaurants in Gevrey-Chambertin; closed Sundays and Mondays.",
+    "checked": "2026-10-23"
+  }
 }

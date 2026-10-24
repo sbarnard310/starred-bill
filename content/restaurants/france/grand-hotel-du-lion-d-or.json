@@ -26,5 +26,29 @@
   "placeId": "ChIJe9ciUvwz-0cR0TnOms3ZUkY",
   "michelinId": "12658",
   "chef": "Loïc Le Bail",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Grand Hôtel du Lion d’Or",
+    "rooms": 16,
+    "url": "https://www.liondor1774.com/chambres-suites-en-sologne-hotel-de-charme/",
+    "packages": [
+      {
+        "name": "Escapade Gourmande",
+        "includes": "A night in a superior double room for two, breakfast, the five-course ‘Impression’ menu at the restaurant for two (lunch or dinner) and two glasses of Loire wine each",
+        "price": 695,
+        "per": "room",
+        "url": "https://www.liondor1774.com/nos-offres/"
+      },
+      {
+        "name": "Séjour Découverte et Saveurs",
+        "includes": "A night in a superior double room for two, breakfast, the five-course ‘Impression’ menu for two, a glass of champagne as aperitif and three glasses of Loire wine each",
+        "price": 780,
+        "per": "room",
+        "url": "https://www.liondor1774.com/nos-offres/"
+      }
+    ],
+    "note": "A 16-room hotel; the website now sits at liondor1774.com and the restaurant there is called Le Clos 1774.",
+    "checked": "2026-10-23"
+  }
 }

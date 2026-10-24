@@ -26,5 +26,32 @@
   "placeId": "ChIJkWG3oTIK_0cRiSb_f-oiLpc",
   "michelinId": "10400",
   "chef": "Frédéric Murati",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Moulin de l’Abbaye",
+    "url": "https://www.moulinabbaye.com/en/packages/",
+    "packages": [
+      {
+        "name": "Gourmet getaway",
+        "includes": "A night for two in a river-view double, a 7-dish tasting menu for two (drinks not included) and breakfasts",
+        "price": 634,
+        "from": true,
+        "per": "room",
+        "when": "Low season",
+        "url": "https://www.moulinabbaye.com/en/stay/gourmet-getaway/"
+      },
+      {
+        "name": "Discovery getaway",
+        "includes": "A night for two in a classic double, a 3-course surprise menu for two (drinks not included) and breakfasts",
+        "price": 434,
+        "from": true,
+        "per": "room",
+        "when": "Low season",
+        "url": "https://www.moulinabbaye.com/en/stay/discovery-getaway/"
+      }
+    ],
+    "note": "A 4-star riverside hotel in Brantôme; guests can also add dinner to any room booking.",
+    "checked": "2026-10-23"
+  }
 }

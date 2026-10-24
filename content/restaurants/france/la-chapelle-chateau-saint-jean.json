@@ -30,5 +30,12 @@
     "gluten-free"
   ],
   "chef": "Olivier Valade",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château Saint-Jean",
+    "rooms": 19,
+    "url": "https://www.chateau-saint-jean.com/suites-chambres/",
+    "checked": "2026-10-23"
+  }
 }

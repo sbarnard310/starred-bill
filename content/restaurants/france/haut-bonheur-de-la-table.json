@@ -29,5 +29,13 @@
     "vegetarian"
   ],
   "chef": "Eugène Hobraiche",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "La Maison de Marie",
+    "rooms": 5,
+    "url": "https://www.hautbonheurdelatable.com/les-chambres.php",
+    "note": "Five chambres d’hôtes, booked through lamaisondemariecassel.com; mention if you want a table too.",
+    "checked": "2026-10-23"
+  }
 }

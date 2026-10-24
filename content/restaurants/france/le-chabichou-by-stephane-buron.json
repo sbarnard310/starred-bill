@@ -32,5 +32,13 @@
     "vegan"
   ],
   "chef": "Stéphane Buron",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Le Chabichou",
+    "rooms": 41,
+    "url": "https://www.chabichou-courchevel.com/fr/hotel.html",
+    "note": "The hotel reopens in December 2026.",
+    "checked": "2026-10-23"
+  }
 }

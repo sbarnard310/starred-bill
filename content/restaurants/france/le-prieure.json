@@ -26,5 +26,33 @@
   "placeId": "ChIJA_RLdUXrtRIRqmXG0QK5J4w",
   "michelinId": "13557",
   "chef": "Christophe Chiavola",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Prieuré-Baumanière",
+    "rooms": 36,
+    "url": "https://www.leprieure.com/lhotel-5-etoiles/chambres-et-suites/",
+    "packages": [
+      {
+        "name": "Soirée à Deux",
+        "includes": "A night for two in a double room, breakfast, the five-course dinner for two at the starred restaurant, a glass of Champagne each and soft drinks",
+        "price": 628,
+        "from": true,
+        "per": "room",
+        "url": "https://www.leprieure.com/offres_et_actualites/soiree-a-deux/"
+      },
+      {
+        "name": "Demi-pension",
+        "includes": "Two nights for two in a double room, breakfast and a three-course half-board dinner each evening (drinks extra)",
+        "price": 926,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "Minimum two nights, not on bridge-holiday weekends",
+        "url": "https://www.leprieure.com/offres_et_actualites/demi-pension/"
+      }
+    ],
+    "note": "A five-star hotel in Villeneuve-lès-Avignon with 36 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

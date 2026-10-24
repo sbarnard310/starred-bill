@@ -29,5 +29,11 @@
     "vegetarian"
   ],
   "chef": "Wilfrid Chaplain",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Radio",
+    "url": "https://www.hotel-radio.fr/pourquoi-le-radio/",
+    "checked": "2026-10-23"
+  }
 }

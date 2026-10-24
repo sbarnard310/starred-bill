@@ -36,5 +36,15 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 528,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Les Cépages",
+    "rooms": 10,
+    "url": "https://les-cepages.com/",
+    "from": 91,
+    "fromNote": "studio-Confort on the first floor; studios with terrace from 101",
+    "note": "The hotel’s ten studios are run by the same owners as the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

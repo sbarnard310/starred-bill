@@ -32,5 +32,20 @@
   ],
   "chef": "Nicolas Masse",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Les Sources de Caudalie",
+    "rooms": 62,
+    "url": "https://www.sources-hotels.com/bordeaux/chambres-suites/",
+    "packages": [
+      {
+        "name": "Échappée gastronomique",
+        "includes": "A night with dinner at the two-star La Grand’Vigne",
+        "url": "https://www.sources-hotels.com/bordeaux/idees-sejours/"
+      }
+    ],
+    "note": "A spa hotel in the vineyards with 62 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

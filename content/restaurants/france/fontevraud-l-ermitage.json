@@ -26,5 +26,13 @@
   "placeId": "ChIJna3BKPde_UcR32bQ9v8VDPQ",
   "michelinId": "442400",
   "chef": "Thibaut Ruggeri",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Fontevraud L’Ermitage",
+    "rooms": 54,
+    "url": "https://www.fontevraud.fr/fontevraud-lermitage/lhotel-de-fontevraud-lermitage/",
+    "note": "A four-star hotel inside the Royal Abbey of Fontevraud; an abbey entry ticket is included with a stay.",
+    "checked": "2026-10-23"
+  }
 }

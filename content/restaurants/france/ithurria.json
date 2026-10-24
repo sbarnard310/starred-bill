@@ -38,5 +38,13 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 665,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Ithurria",
+    "rooms": 26,
+    "url": "https://www.ithurria.com/fr/hotel",
+    "note": "A village hotel with 26 rooms.",
+    "checked": "2026-10-23"
+  }
 }

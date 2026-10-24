@@ -30,5 +30,13 @@
     "gluten-free"
   ],
   "chef": "Franco Bowanee",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château de Vault de Lugny",
+    "rooms": 16,
+    "url": "https://lugny.fr/hebergement/",
+    "note": "A 5-star château hotel with 16 rooms and suites, near Vézelay.",
+    "checked": "2026-10-23"
+  }
 }

@@ -90,5 +90,13 @@
     }
   ],
   "rankingsChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Maison Anne de Bretagne",
+    "rooms": 15,
+    "url": "https://www.annedebretagne.com/lhotel-old/",
+    "note": "A 15-room hotel with sea-view and park-view rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

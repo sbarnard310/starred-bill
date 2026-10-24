@@ -27,5 +27,28 @@
   "placeId": "ChIJi2yFbY4wUQ0RA6A8N0FQZ4U",
   "michelinId": "1000176",
   "chef": "Nicolas Montceau",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Berria",
+    "url": "https://www.lamaisondepierre.fr",
+    "packages": [
+      {
+        "name": "Experientza",
+        "includes": "Two nights with gourmet breakfasts, a dinner for two at the Le Pilotari bistro and a ‘Découverte’ dinner for two at La Maison de Pierre",
+        "price": 600,
+        "from": true,
+        "nights": 2,
+        "url": "https://www.lamaisondepierre.fr"
+      },
+      {
+        "name": "Sukaldea",
+        "includes": "One night with gourmet breakfasts and a ‘Découverte’ dinner for two at La Maison de Pierre",
+        "price": 360,
+        "from": true,
+        "url": "https://www.lamaisondepierre.fr"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -23,5 +23,13 @@
   "placeId": "ChIJX1WC8aQRyhIRhfUxyj3PkvI",
   "michelinId": "1207714",
   "chef": "Christophe Bacquié",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "rooms",
+    "name": "Le Mas Les Seydins",
+    "rooms": 5,
+    "url": "https://www.leseydins.com/chambres",
+    "note": "A Luberon guesthouse with 5 rooms and gîtes, next to the starred restaurant.",
+    "checked": "2026-10-23"
+  }
 }

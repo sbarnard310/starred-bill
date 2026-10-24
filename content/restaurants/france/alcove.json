@@ -33,5 +33,12 @@
     "vegetarian"
   ],
   "chef": "Nawal Rezagui",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hostellerie La Briqueterie & Spa",
+    "rooms": 41,
+    "url": "https://www.beauvallon.com/briqueterie-champagne/chambres-suites",
+    "checked": "2026-10-23"
+  }
 }

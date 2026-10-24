@@ -68,5 +68,12 @@
   "groupsUrl": "https://www.restaurantenmarge.com/les-evenements/",
   "infoSource": "https://www.restaurantenmarge.com/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "En Marge",
+    "url": "https://www.restaurantenmarge.com/hotel/chambres/",
+    "note": "The chef’s own small Relais & Châteaux hotel beside the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

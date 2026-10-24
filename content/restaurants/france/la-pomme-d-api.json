@@ -28,5 +28,14 @@
   "chef": "Jérémie Le Calvez",
   "chefSource": "site",
   "dinnerNote": "Saveurs menu, 4 courses (Inspirations €99, Dégustations €162)",
-  "dinnerNoteFr": "Menu Saveurs, 4 temps (Inspirations 99 €, Dégustations 162 €)"
+  "dinnerNoteFr": "Menu Saveurs, 4 temps (Inspirations 99 €, Dégustations 162 €)",
+  "stay": {
+    "kind": "rooms",
+    "name": "Le Clos Saint Yves",
+    "rooms": 5,
+    "url": "https://www.lapommedapi.com/fr/chambres-lapommedapi/",
+    "from": 150,
+    "note": "Five guest rooms in a 17th-century mansion in the centre of Saint-Pol-de-Léon.",
+    "checked": "2026-10-23"
+  }
 }

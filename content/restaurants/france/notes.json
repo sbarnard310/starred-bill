@@ -35,5 +35,12 @@
     "gluten-free"
   ],
   "chef": "Anthony Carballo",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Nauve",
+    "rooms": 12,
+    "url": "https://almae-collection.com/lanauve/en/offers/",
+    "checked": "2026-10-23"
+  }
 }

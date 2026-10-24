@@ -36,5 +36,13 @@
     "gluten-free"
   ],
   "chef": "Romain Zarazaga",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Le Petit Serrant",
+    "rooms": 5,
+    "url": "https://lepetitserrant.com/en/le-petit-serrant-en/",
+    "note": "The restaurant shares its site with the Le Petit Serrant guesthouse, which has five rooms and suites on the Loire.",
+    "checked": "2026-10-23"
+  }
 }

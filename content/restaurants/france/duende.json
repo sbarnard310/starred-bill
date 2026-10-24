@@ -27,5 +27,20 @@
   "placeId": "ChIJ31L2rrMttBIRPyzC2P6O76U",
   "michelinId": "1186194",
   "chef": "Masaki Nagao",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Maison Albar - L’Imperator",
+    "url": "https://www.maison-albar-hotels-l-imperator.com/en/page/offers-luxury-room-nimes.4507.html",
+    "packages": [
+      {
+        "name": "Échappée gourmande dans l’univers de Pierre Gagnaire",
+        "includes": "A night in the room of your choice, the Pierre Gagnaire menu at the two-star restaurant Duende (drinks extra) and breakfast",
+        "per": "room",
+        "when": "Thursday, Friday and Saturday evenings; book at least 4 days ahead",
+        "url": "https://www.maison-albar-hotels-l-imperator.com/en/page/offers-luxury-room-nimes.4507.html"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

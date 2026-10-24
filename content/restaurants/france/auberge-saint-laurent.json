@@ -30,5 +30,31 @@
   "chefSource": "site",
   "dinnerNote": "Gourmet menu, 3 courses (Tout à votre choix €105, Découvertes €125)",
   "dinnerNoteFr": "Menu du Gourmet, 3 plats (Tout à votre choix 105 €, Découvertes 125 €)",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge Saint-Laurent",
+    "rooms": 10,
+    "url": "https://www.auberge-saintlaurent.fr/fr/sejourner-chez-nous.html",
+    "packages": [
+      {
+        "name": "Parenthèse Gourmande",
+        "includes": "A night in a double room for two with breakfast, and dinner for two at the starred restaurant: 3-course menu, aperitif, wines by the glass, water and coffee",
+        "price": 520,
+        "from": true,
+        "per": "room",
+        "url": "https://www.auberge-saintlaurent.fr/fr/offres-speciales/parenthese-gourmande.html"
+      },
+      {
+        "name": "Parenthèse Epicurienne",
+        "includes": "A night in a double room for two with breakfast, and dinner for two at the starred restaurant: 5-course menu, champagne aperitif, wines by the glass, water and coffee",
+        "price": 565,
+        "from": true,
+        "per": "room",
+        "url": "https://www.auberge-saintlaurent.fr/fr/offres-speciales/parenthese-epicurienne.html"
+      }
+    ],
+    "note": "A 4-star auberge with 10 rooms.",
+    "checked": "2026-10-23"
+  }
 }

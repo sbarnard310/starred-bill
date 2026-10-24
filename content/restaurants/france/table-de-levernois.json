@@ -31,5 +31,13 @@
     "vegan"
   ],
   "chef": "Philippe Augé",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hostellerie de Levernois",
+    "rooms": 39,
+    "url": "https://www.levernois.com/en/rooms-and-suites.html",
+    "note": "A 5-star Relais & Châteaux hotel with rooms, suites and villas (39 in all), a spa and a park.",
+    "checked": "2026-10-23"
+  }
 }

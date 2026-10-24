@@ -30,5 +30,13 @@
     "gluten-free"
   ],
   "chef": "Antoine Cevoz-Mamy",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "L’Incomparable",
+    "rooms": 15,
+    "url": "https://hotel-lincomparable.com/fr/chambres-et-suites.html",
+    "note": "Hotel of 9 rooms and 6 suites on Lake Bourget.",
+    "checked": "2026-10-23"
+  }
 }

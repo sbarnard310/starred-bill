@@ -30,5 +30,13 @@
   "placeId": "ChIJkWgD7eEj7UcRTJI4mJq1g64",
   "michelinId": "1216782",
   "chef": "Valentin Loison",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Clos Vauban",
+    "rooms": 8,
+    "url": "https://closvauban.com/clos-vauban/",
+    "note": "Bulle d’Osier is the gastronomic restaurant at the Clos Vauban Relais & Châteaux hotel in Langres, which has 8 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

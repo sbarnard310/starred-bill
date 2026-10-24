@@ -26,5 +26,29 @@
   "placeId": "ChIJF7CXTbqBlEcRE3S9yvizFPA",
   "michelinId": "11668",
   "chef": "Cyril Leclerc",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château d’Adoménil",
+    "rooms": 14,
+    "url": "https://adomenil.com/fr/chambres-suites-luxe-luneville.html",
+    "packages": [
+      {
+        "name": "Coffret Réverbère",
+        "includes": "A night in a comfort double room for two with breakfast, and a gastronomic dinner for two (three savoury courses and a dessert) with aperitif, wines, coffee and water",
+        "price": 935,
+        "per": "room",
+        "url": "https://adomenil.com/fr/sejour-weekend-alsace/coffretreverbere.html"
+      },
+      {
+        "name": "Marquise du Châtelet",
+        "includes": "A night in a duplex room for two with breakfast and half a bottle of champagne on arrival, and dinner for two with the Impression menu, aperitif, wines, coffee and water",
+        "price": 1145,
+        "per": "room",
+        "url": "https://adomenil.com/fr/sejour-weekend-alsace/marquiseduchatelet.html"
+      }
+    ],
+    "note": "A 4-star château-hotel with 14 rooms, suites and duplexes.",
+    "checked": "2026-10-23"
+  }
 }

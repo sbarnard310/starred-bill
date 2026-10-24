@@ -28,5 +28,13 @@
   "placeId": "ChIJs2hNPUmNyRIRYNlrXdzb-Aw",
   "michelinId": "1183884",
   "chef": "Mathieu Derible",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château de la Gaude",
+    "rooms": 25,
+    "url": "https://chateaudelagaude.com/hotel",
+    "note": "A five-star château hotel with 25 rooms and suites, plus a villa of 5 suites.",
+    "checked": "2026-10-23"
+  }
 }

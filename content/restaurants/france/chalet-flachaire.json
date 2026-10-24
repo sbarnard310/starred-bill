@@ -30,5 +30,11 @@
   "placeId": "ChIJ30lSKYofjEcRqvCWy32CnoU",
   "michelinId": "1242583",
   "chef": "Thomas Flachaire",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://www.chaletflachaire.fr/photos/#suite-vert-sapin",
+    "note": "Billed as ‘Restaurant & chambres’, with at least two suites, Suite vert sapin and Suite bleu nuit.",
+    "checked": "2026-10-23"
+  }
 }

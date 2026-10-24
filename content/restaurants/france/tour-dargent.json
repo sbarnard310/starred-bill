@@ -82,5 +82,13 @@
   "photoSourceType": "commons",
   "photoWidth": 706,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "name": "L’Appartement de la Tour d’Argent",
+    "url": "https://tourdargent.com/en/lappartement/",
+    "from": 2400,
+    "note": "A private apartment on the fifth floor of the building facing Notre-Dame, booked by request through guest relations; dinner is not part of the rate.",
+    "checked": "2026-10-23"
+  }
 }

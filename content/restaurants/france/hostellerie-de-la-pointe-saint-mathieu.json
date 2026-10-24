@@ -26,5 +26,13 @@
   "placeId": "ChIJfwEKpIKSFkgRCuktqZz4694",
   "michelinId": "10844",
   "chef": "Nolwenn Corre",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hostellerie de la Pointe Saint Mathieu",
+    "rooms": 34,
+    "url": "https://www.pointe-saint-mathieu.com/en/rooms-suites-pointe-st-mathieu/",
+    "note": "A seafront hotel and spa facing the lighthouse, open all year.",
+    "checked": "2026-10-23"
+  }
 }

@@ -28,5 +28,32 @@
   "placeId": "ChIJ8aADZtXGyRIRIRQwQMBeREU",
   "michelinId": "11752",
   "chef": "Gérald Passedat",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Petit Nice",
+    "rooms": 16,
+    "url": "https://www.passedat.fr/en/le-petit-nice/luxury-hotel-marseille",
+    "packages": [
+      {
+        "name": "Séjour escale gourmande",
+        "includes": "A night for two in a sea-view executive room with breakfast, the Menu Passedat for two at lunch or dinner in the three-star restaurant (drinks extra), soft drinks from the minibar, wellness area and sea-water pool",
+        "price": 1140,
+        "from": true,
+        "per": "room",
+        "when": "Monday to Saturday; price varies by season (1,140 in low season, 1,320 mid, 1,520 high)",
+        "url": "https://boutique.gerald-passedat.fr/products/sejour-escale-gourmande"
+      },
+      {
+        "name": "Séjour de rêve à Malmousque",
+        "includes": "A night for two in a junior suite or suite with breakfast, the Menu Passedat for two at lunch or dinner with drinks included (not the aperitif), soft drinks from the minibar, wellness area and sea-water pool",
+        "price": 2000,
+        "per": "room",
+        "when": "Monday to Saturday",
+        "url": "https://boutique.gerald-passedat.fr/collections/sejour/products/sejour-malmousque"
+      }
+    ],
+    "note": "A five-star hotel of two villas and 16 rooms on the rocks above the sea.",
+    "checked": "2026-10-23"
+  }
 }

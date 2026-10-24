@@ -24,5 +24,11 @@
   "placeId": "ChIJ7206_R6vthIRHmhGjsL_3ls",
   "michelinId": "1197270",
   "chef": "Jacques Pourcel and Laurent Pourcel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Richer de Belleval",
+    "url": "https://www.hotel-richerdebelleval.com/chambres",
+    "checked": "2026-10-23"
+  }
 }

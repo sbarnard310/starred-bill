@@ -32,5 +32,15 @@
     "gluten-free"
   ],
   "chef": "Ludovic Nardozza",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel du Golf",
+    "rooms": 22,
+    "url": "https://www.hotel-du-golf-vercors.fr/les-chambres-hotel-correncon-vercors/",
+    "from": 156,
+    "fromNote": "chambre Cosy",
+    "note": "Half-board is mentioned for hotel guests on some school-holiday evenings.",
+    "checked": "2026-10-23"
+  }
 }

@@ -29,5 +29,13 @@
     "vegetarian-menu"
   ],
   "chef": "David Sulpice",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Villa de l’Étang Blanc",
+    "rooms": 6,
+    "url": "https://www.villaetangblanc.fr/fr/les-chambres",
+    "note": "Charming 3-star hotel with 6 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

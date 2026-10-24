@@ -30,5 +30,13 @@
     "vegan"
   ],
   "chef": "Jordan Billan",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hostellerie Cèdre & Spa",
+    "rooms": 40,
+    "url": "https://www.beauvallon.com/en/cedre-beaune/rooms-suites",
+    "note": "A 5-star hotel and spa in Beaune’s old town.",
+    "checked": "2026-10-23"
+  }
 }

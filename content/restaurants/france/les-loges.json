@@ -37,5 +37,12 @@
   "photoSourceType": "commons",
   "photoWidth": 750,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cour des Loges Lyon, A Radisson Collection Hotel",
+    "rooms": 61,
+    "url": "https://www.radissonhotels.com/fr-fr/hotels/radisson-collection-cour-des-loges-lyon",
+    "checked": "2026-10-23"
+  }
 }

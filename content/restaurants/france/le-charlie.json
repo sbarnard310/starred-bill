@@ -26,5 +26,11 @@
     "gluten-free"
   ],
   "chef": "Richard Toix",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Bella Vista hôtel, suites & maisons",
+    "url": "https://menus.fr/porticcio/le-charlie",
+    "checked": "2026-10-23"
+  }
 }

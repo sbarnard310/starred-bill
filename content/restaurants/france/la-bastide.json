@@ -34,5 +34,22 @@
     "gluten-free"
   ],
   "chef": "Noël Bérard",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Capelongue",
+    "rooms": 57,
+    "url": "https://www.beaumier.com/fr/proprietes/hotel-capelongue/chambres-suites/",
+    "packages": [
+      {
+        "name": "Parfums de Provence",
+        "includes": "Daily breakfast and a six-course dinner at La Bastide with the sommelier’s wine pairings, with up to 35% off the room rate",
+        "nights": 2,
+        "when": "Stays of 2 nights or more, subject to availability; La Bastide is closed Sunday and Monday",
+        "url": "https://www.beaumier.com/fr/proprietes/hotel-capelongue/offres-speciales/"
+      }
+    ],
+    "note": "The hotel and restaurant close for the winter (restaurant shut 27 September to 23 April).",
+    "checked": "2026-10-23"
+  }
 }

@@ -26,5 +26,13 @@
   "placeId": "ChIJGee2cYYf9UcR5hpjPyD3Lc0",
   "michelinId": "9500",
   "chef": "Philippe Girardon",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine de Clairefontaine",
+    "rooms": 24,
+    "url": "https://domaine-de-clairefontaine.fr/fr/la-maison/la-maison-hotel.html",
+    "note": "The Domaine has 24 rooms (the manor and Les Jardins), plus 12 more at its Cottage.",
+    "checked": "2026-10-23"
+  }
 }

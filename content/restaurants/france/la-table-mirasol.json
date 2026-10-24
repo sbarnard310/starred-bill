@@ -26,5 +26,13 @@
   "placeId": "ChIJI81-uBPRVQ0RrkwQDEYw8IY",
   "michelinId": "1199186",
   "chef": "Philippe Lagraula",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Villa Mirasol",
+    "rooms": 7,
+    "url": "https://www.villamirasol.fr/fr/chambres-et-suites-landes",
+    "note": "A 4-star hotel in a historic house with seven rooms and suites; it reopens on 2 November after a break.",
+    "checked": "2026-10-23"
+  }
 }

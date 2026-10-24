@@ -26,5 +26,21 @@
   "placeId": "ChIJCwP48WAP9EcRE1P1i_b7cEs",
   "michelinId": "12613",
   "chef": "César Troisgros",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Bois Dormant",
+    "url": "https://www.troisgros.fr/le-bois-dormant/les-chambres/",
+    "packages": [
+      {
+        "name": "Au Petit Trot",
+        "includes": "A night for two in a small pied-à-terre at Le Pré Cheval and the 11-course Ce jour-là tasting menu at Le Bois sans Feuilles; drinks and breakfast extra",
+        "price": 990,
+        "when": "Wednesday, Thursday and Sunday evenings, not public holidays",
+        "url": "https://www.troisgros.fr/les-offres-du-moment/"
+      }
+    ],
+    "note": "The country hotel in the Troisgros estate has rooms in the Manoir and the Maison des Kakis; breakfast is €45 per person.",
+    "checked": "2026-10-23"
+  }
 }

@@ -32,5 +32,38 @@
     "vegetarian"
   ],
   "chef": "Joël Philipps",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Le Cerf",
+    "rooms": 18,
+    "url": "https://www.lecerf.com/lhotel-4/nos-chambres-et-suites/",
+    "packages": [
+      {
+        "name": "Escale Luxe",
+        "includes": "A night in a double Exclusive room or suite for two, a 4-course dinner with drinks, buffet breakfast, spa access and private garage",
+        "price": 518,
+        "from": true,
+        "per": "room",
+        "url": "https://www.lecerf.com/bons-cadeaux/#packages"
+      },
+      {
+        "name": "Escale Plaisir",
+        "includes": "A night in a double Privilège room for two, a 3-course dinner with drinks, buffet breakfast and spa access",
+        "price": 398,
+        "per": "room",
+        "url": "https://www.lecerf.com/bons-cadeaux/#packages"
+      },
+      {
+        "name": "Escapade Midweek",
+        "includes": "A night in a Privilège room for two, a gastronomic dinner for two (starter or main, and dessert), breakfast, sauna and hammam",
+        "price": 248,
+        "per": "room",
+        "when": "Weekdays only, not Friday or Saturday nights",
+        "url": "https://www.lecerf.com/bons-cadeaux/#promos"
+      }
+    ],
+    "note": "A 4-star hotel in Marlenheim with 16 rooms and 2 suites, and a spa.",
+    "checked": "2026-10-23"
+  }
 }

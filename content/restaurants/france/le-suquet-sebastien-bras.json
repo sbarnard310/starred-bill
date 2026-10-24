@@ -35,5 +35,13 @@
   ],
   "chef": "Sébastien Bras",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "L’hôtel du Suquet",
+    "rooms": 13,
+    "url": "https://www.bras.fr/lhotel-du-suquet/",
+    "note": "Thirteen rooms and suites at the Bras family’s hotel.",
+    "checked": "2026-10-23"
+  }
 }

@@ -26,5 +26,24 @@
   "placeId": "ChIJly8c_ILsyRIRc67iMyoVbeQ",
   "michelinId": "1210229",
   "chef": "Mathias Dandine and Guillaume Lemelle",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Bastide Bourrelly",
+    "rooms": 30,
+    "url": "https://labastidebourrelly.com/fr/chambre-suites.html",
+    "packages": [
+      {
+        "name": "Séjour Gastronomique en Provence",
+        "includes": "A night in a double room for two, buffet breakfast, a 4-course lunch or dinner at the starred restaurant (drinks extra) and access to the wellness area",
+        "price": 536,
+        "from": true,
+        "per": "room",
+        "when": "Tuesday to Saturday, excluding special events",
+        "url": "https://labastidebourrelly.com/fr/offres-speciales/sejour-gastronomique-aix-en-provence.html"
+      }
+    ],
+    "note": "A five-star hotel with 30 rooms and suites next to the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

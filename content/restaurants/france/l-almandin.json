@@ -29,5 +29,13 @@
     "vegetarian"
   ],
   "chef": "Frédéric Bacquié",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel L’Île de la Lagune",
+    "rooms": 37,
+    "url": "https://www.hotel-ile-lagune.com/en/luxury-rooms-suites.html",
+    "note": "Lagoon-side resort hotel with rooms, suites and villas.",
+    "checked": "2026-10-23"
+  }
 }

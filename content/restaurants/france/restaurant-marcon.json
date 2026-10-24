@@ -36,5 +36,42 @@
     "via": "website",
     "source": "https://www.lesmaisonsmarcon.fr/faq-reservation/",
     "checked": "2026-10-10"
+  },
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Marcon",
+    "url": "https://www.lesmaisonsmarcon.fr/hotels/",
+    "packages": [
+      {
+        "name": "Soirée Larsiallas Prestige",
+        "includes": "A night for two at the four-star Hôtel Marcon with champagne in the room, two Dégustation menus at Restaurant Marcon, breakfast and spa access",
+        "price": 1220,
+        "per": "room",
+        "url": "https://boutique.lesmaisonsmarcon.fr/saint-bonnet-le-froid/47-soiree-larsiallas-prestige.html"
+      },
+      {
+        "name": "Soirée Larsiallas Gourmet",
+        "includes": "A night for two at Hôtel Marcon, two Vellave menus at Restaurant Marcon, breakfast and spa access",
+        "price": 1000,
+        "per": "room",
+        "url": "https://boutique.lesmaisonsmarcon.fr/saint-bonnet-le-froid/46-soiree-larsiallas-gourmet.html"
+      },
+      {
+        "name": "Soirée les Cimes Prestige",
+        "includes": "A night for two at Le Clos des Cimes with breakfast, two Dégustation menus at Restaurant Marcon and spa access",
+        "price": 885,
+        "per": "room",
+        "url": "https://boutique.lesmaisonsmarcon.fr/saint-bonnet-le-froid/49-soiree-les-cimes-prestige.html"
+      },
+      {
+        "name": "Soirée les Cimes Gourmet",
+        "includes": "A night for two at Le Clos des Cimes with breakfast, two Vellave menus at Restaurant Marcon and spa access",
+        "price": 725,
+        "per": "room",
+        "url": "https://boutique.lesmaisonsmarcon.fr/saint-bonnet-le-froid/48-soiree-les-cimes-gourmet.html"
+      }
+    ],
+    "note": "The family’s own hotels in Saint-Bonnet-le-Froid; the stays are sold for two on their online shop.",
+    "checked": "2026-10-23"
   }
 }

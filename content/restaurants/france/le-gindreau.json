@@ -31,5 +31,24 @@
     "gluten-free"
   ],
   "chef": "Pascal Bardet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "La Maison du Gindreau",
+    "rooms": 4,
+    "url": "https://www.legindreau.com/chambres-d-hotes",
+    "from": 130,
+    "packages": [
+      {
+        "name": "Évasion Gourmande & Découverte du Lot",
+        "includes": "Lunch at Le Gindreau (menu matière), a night for two, a picnic-style evening basket of one main and one dessert, breakfast (drinks extra)",
+        "price": 398,
+        "per": "room",
+        "when": "Weekdays only; lunch Wednesday to Friday",
+        "url": "https://www.legindreau.com/nouvelle-page"
+      }
+    ],
+    "note": "Four guest rooms and apartments next to the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

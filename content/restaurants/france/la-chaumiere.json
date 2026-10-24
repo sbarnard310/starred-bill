@@ -31,5 +31,21 @@
     "vegan"
   ],
   "chef": "Laurent Barberot",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Chaumière",
+    "rooms": 19,
+    "url": "https://www.lachaumiere-dole.fr/fr/hotel.html",
+    "packages": [
+      {
+        "name": "Escale Gourmande",
+        "includes": "A night in a Superior room for two with breakfast, two three-course Plaisir menus (drinks extra) and two house aperitifs",
+        "per": "room",
+        "url": "https://www.lachaumiere-dole.fr/fr/offres/escale-gourmande.html"
+      }
+    ],
+    "note": "A 3-star hotel in a converted farmhouse with a pool, at the edge of Dole.",
+    "checked": "2026-10-23"
+  }
 }

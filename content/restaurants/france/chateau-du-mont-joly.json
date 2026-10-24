@@ -30,5 +30,31 @@
     "gluten-free"
   ],
   "chef": "Romuald Fassenet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château du Mont Joly",
+    "rooms": 7,
+    "url": "https://www.chateaumontjoly.com/fr/hotel.html",
+    "packages": [
+      {
+        "name": "Étape au Château",
+        "includes": "A night in a comfort room for two with breakfast and the Mont Joly menu for two (drinks extra)",
+        "price": 450,
+        "per": "room",
+        "when": "Must be booked in advance; voucher valid 6 months",
+        "url": "https://www.chateaumontjoly.com/fr/sejours-jura/etape-au-chateau.html"
+      },
+      {
+        "name": "Nuit au Château",
+        "includes": "A night in a double room for two with breakfast and the chef’s menu for two (drinks extra)",
+        "price": 600,
+        "per": "room",
+        "when": "Must be booked in advance; voucher valid 6 months",
+        "url": "https://www.chateaumontjoly.com/fr/sejours-jura/nuit-au-chateau.html"
+      }
+    ],
+    "note": "A 4-star château hotel with seven rooms.",
+    "checked": "2026-10-23"
+  }
 }

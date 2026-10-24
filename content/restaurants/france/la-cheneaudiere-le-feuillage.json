@@ -28,5 +28,23 @@
   ],
   "chef": "Jean-Paul Acker",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "La Cheneaudière",
+    "rooms": 45,
+    "url": "https://www.cheneaudiere.com/en/double-rooms.html",
+    "packages": [
+      {
+        "name": "Couleurs d’automne & Spa",
+        "includes": "A night in a large double room, breakfast buffet, afternoon snack, a 3-course dinner at the hotel’s restaurant Le Chêne (drinks extra) and spa access",
+        "price": 347.5,
+        "from": true,
+        "per": "person",
+        "when": "20 September to 27 November 2026, not Saturdays, long weekends or public holidays; price rises to €415 later in the season",
+        "url": "https://www.cheneaudiere.com/en/packages.html"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

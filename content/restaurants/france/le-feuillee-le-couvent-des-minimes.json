@@ -29,5 +29,12 @@
     "gluten-free"
   ],
   "chef": "Louis Gachet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Couvent des Minimes Hotel & Spa",
+    "url": "https://www.couventdesminimes-hotelspa.com/fr/lhebergement/nos-chambres.html",
+    "note": "Le Feuillée closes 1 January to 2 March 2027 and the hotel is closed 22 to 25 December 2026.",
+    "checked": "2026-10-23"
+  }
 }

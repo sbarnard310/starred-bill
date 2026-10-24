@@ -71,5 +71,13 @@
       "url": "https://www.laliste.com/places/le-clos-des-sens-annecy-fr"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Clos des Sens",
+    "rooms": 11,
+    "url": "https://closdessens.com/rever",
+    "note": "Five-star Relais & Châteaux hotel with 11 rooms.",
+    "checked": "2026-10-23"
+  }
 }

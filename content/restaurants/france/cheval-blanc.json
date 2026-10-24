@@ -43,5 +43,43 @@
   "photoWidth": 1000,
   "photoHeight": 414,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge du Cheval Blanc",
+    "rooms": 21,
+    "url": "https://www.cheval-blanc-lembach.fr/fr/hotel.html",
+    "packages": [
+      {
+        "name": "Instant Plaisir",
+        "includes": "A night in a double room for two, breakfast, a 6-course dinner at the gastronomic restaurant (drinks extra) and spa access",
+        "price": 410,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday, Thursday and Sunday",
+        "url": "https://www.cheval-blanc-lembach.fr/fr/offre-speciale/pause-gourmande.html"
+      },
+      {
+        "name": "Evasion Gourmande",
+        "includes": "A night in a double room for two, breakfast, an 8-course dinner at the gastronomic restaurant (drinks extra) and spa access",
+        "price": 495,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday, Thursday, Friday and Sunday",
+        "url": "https://www.cheval-blanc-lembach.fr/fr/offre-speciale/evasion-gourmande-forfait.html"
+      },
+      {
+        "name": "Séjour étoilé",
+        "includes": "Two nights in a double room for two, breakfasts, dinner each evening at the gastronomic restaurant (6 courses, then 8) and spa access",
+        "price": 880,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "Wednesday-Thursday or Thursday-Friday stays",
+        "url": "https://www.cheval-blanc-lembach.fr/fr/offre-speciale/escapade-romantique.html"
+      }
+    ],
+    "note": "A country inn with 21 rooms and suites and a spa; rooms are in the main building or the annex.",
+    "checked": "2026-10-23"
+  }
 }

@@ -27,5 +27,11 @@
   "placeId": "ChIJA1PHDM9v5kcRsdD0Snjw06k",
   "michelinId": "476630",
   "chef": "Jérôme Banctel",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Réserve Paris",
+    "url": "https://www.lareserve-paris.com/chambres-et-suites/",
+    "checked": "2026-10-23"
+  }
 }

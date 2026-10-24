@@ -54,5 +54,13 @@
   "photoSourceType": "commons",
   "photoWidth": 665,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge des Templiers",
+    "rooms": 20,
+    "url": "https://www.lestempliers.com/fr/chambres-suites.html",
+    "note": "A Relais & Châteaux hotel with 20 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

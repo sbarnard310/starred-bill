@@ -31,5 +31,21 @@
     "gluten-free"
   ],
   "chef": "Didier Casaguana",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château des Vigiers",
+    "rooms": 65,
+    "url": "https://vigiers.com/fr/hotel-dordogne/offre-chateau-fr.php",
+    "packages": [
+      {
+        "name": "Escapade Romantique au Château",
+        "includes": "A night for two in a Luxe, Prestige or Prestige Suite room, one dinner at Les Fresques (3-course chef’s menu, drinks extra), buffet breakfast, champagne and chocolates in the room, two 2-hour spa sessions each",
+        "per": "room",
+        "url": "https://vigiers.com/fr/hotel-dordogne/escapade-romantique.php"
+      }
+    ],
+    "note": "Golf estate with 25 rooms in the château and 40 in Le Relais.",
+    "checked": "2026-10-23"
+  }
 }

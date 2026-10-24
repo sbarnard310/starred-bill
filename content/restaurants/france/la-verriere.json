@@ -23,5 +23,12 @@
     "vegetarian"
   ],
   "chef": "Romain Masset",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Marinca",
+    "rooms": 11,
+    "url": "https://www.hotel-marinca.com/hebergements",
+    "checked": "2026-10-23"
+  }
 }

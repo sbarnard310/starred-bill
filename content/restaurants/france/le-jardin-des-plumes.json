@@ -26,5 +26,23 @@
   "placeId": "ChIJ4dtQsgbJ5kcR4gY54WVK80w",
   "michelinId": "413864",
   "chef": "David Gallienne",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Jardin des Plumes",
+    "url": "https://jardindesplumes.fr/fr/hotel.html",
+    "packages": [
+      {
+        "name": "Echappée Automnale",
+        "includes": "A night for two, a gourmet breakfast and the 5-course tasting menu (drinks not included)",
+        "price": 376,
+        "from": true,
+        "per": "room",
+        "when": "Autumn offer",
+        "url": "https://jardindesplumes.fr/fr/offres-speciales.html"
+      }
+    ],
+    "note": "Hotel and guest rooms in Giverny, close to Monet’s gardens.",
+    "checked": "2026-10-23"
+  }
 }

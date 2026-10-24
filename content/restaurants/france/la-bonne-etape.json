@@ -28,5 +28,12 @@
     "vegetarian"
   ],
   "chef": "Jany Gleize",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Bonne Étape",
+    "rooms": 18,
+    "url": "https://bonneetape.com/hotel/",
+    "checked": "2026-10-23"
+  }
 }

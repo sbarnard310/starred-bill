@@ -25,5 +25,12 @@
   ],
   "chef": "Thomas Prod'homme",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Le Strato",
+    "rooms": 26,
+    "url": "https://www.hotelstrato.com/fr/page/chambres-hotel-ski-alpes.4372.html",
+    "checked": "2026-10-23"
+  }
 }

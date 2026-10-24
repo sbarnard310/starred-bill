@@ -39,5 +39,31 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 735,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château de la Treyne",
+    "rooms": 18,
+    "url": "https://www.chateaudelatreyne.com/en/rooms-and-suites-chateau-hotel-dordogne",
+    "packages": [
+      {
+        "name": "Gourmet Stay",
+        "includes": "A night for two in a double room, breakfast, a Michelin-starred tasting menu (drinks extra)",
+        "price": 906,
+        "from": true,
+        "per": "room",
+        "url": "https://www.chateaudelatreyne.com/en/offers-and-news-hotel-sarlat"
+      },
+      {
+        "name": "Romantic Stay",
+        "includes": "A night for two in a deluxe room with canopy bed and jacuzzi, flowers and champagne on arrival, half board with a 5-course dinner, breakfast (drinks extra)",
+        "price": 992,
+        "from": true,
+        "per": "room",
+        "url": "https://www.chateaudelatreyne.com/en/offers-and-news-hotel-sarlat"
+      }
+    ],
+    "note": "Château hotel above the Dordogne; dinner every evening except Wednesday.",
+    "checked": "2026-10-23"
+  }
 }

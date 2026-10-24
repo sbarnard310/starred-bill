@@ -32,5 +32,13 @@
     "vegan"
   ],
   "chef": "Julien Laval",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château d’Origny",
+    "rooms": 5,
+    "url": "https://www.chateaudorigny.com/fr/chambres/",
+    "note": "Five rooms and suites overlooking the park.",
+    "checked": "2026-10-23"
+  }
 }

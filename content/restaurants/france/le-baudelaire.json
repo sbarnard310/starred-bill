@@ -23,5 +23,21 @@
   "dinner": 125,
   "source": "https://www.menumodo.com/app.php/viewer/outlet/13527?lang=fr&tags=g&designID=burg",
   "wine": 65,
-  "noLunch": true
+  "noLunch": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Burgundy Paris",
+    "rooms": 59,
+    "url": "https://www.leburgundy.com/fr/chambres-et-suites.html",
+    "packages": [
+      {
+        "name": "Escapade gastronomique",
+        "includes": "A night’s stay, buffet breakfast, a welcome treat in the room and a three-course dinner at Le Baudelaire (drinks not included)",
+        "per": "room",
+        "when": "Tuesday to Saturday, subject to availability",
+        "url": "https://www.leburgundy.com/fr/offres.html"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

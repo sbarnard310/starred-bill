@@ -74,5 +74,29 @@
   "photoSourceType": "commons",
   "photoWidth": 850,
   "photoHeight": 638,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Mare aux Oiseaux",
+    "rooms": 18,
+    "url": "https://mareauxoiseaux.fr/fr/hotel/chambres-la-mare-aux-oiseaux.html",
+    "from": 189,
+    "packages": [
+      {
+        "name": "L’automne à La Mare aux Oiseaux (L’Escapade)",
+        "includes": "A night with 20% off the room, two ‘Menu Envol’ dinners at the restaurant and breakfast for two",
+        "when": "Until 22 November 2026; not Saturday nights; new bookings only",
+        "url": "https://mareauxoiseaux.fr/fr/offres/automne-a-la-mare-aux-oiseaux.html"
+      },
+      {
+        "name": "L’automne à La Mare aux Oiseaux (La Parenthèse)",
+        "includes": "Two nights with 50% off the second night, two ‘Menu Envol’ dinners at the restaurant on one of the evenings and breakfast for two each morning",
+        "nights": 2,
+        "when": "Until 22 November 2026; not Saturday nights; new bookings only",
+        "url": "https://mareauxoiseaux.fr/fr/offres/automne-a-la-mare-aux-oiseaux.html"
+      }
+    ],
+    "note": "Thatched cottages and rooms on stilts at the edge of the Brière marsh, 18 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

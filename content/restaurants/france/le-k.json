@@ -26,5 +26,28 @@
     "vegetarian"
   ],
   "chef": "Benoit Potdevin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine de la Klauss",
+    "rooms": 28,
+    "url": "https://www.domainedelaklauss.com/fr/reservation.html",
+    "packages": [
+      {
+        "name": "Rêves & Gastronomie au K",
+        "includes": "A superior room or suite, two buffet breakfasts, two 6-course Signature dinners at Le K (drinks extra) and two spa passes",
+        "per": "room",
+        "when": "Le K is closed at lunchtime and on Sundays",
+        "url": "https://www.domainedelaklauss.com/fr/offres-speciales.html"
+      },
+      {
+        "name": "Gourmet & Bien-être",
+        "includes": "A superior room or suite, two buffet breakfasts, two 6-course Signature dinners at Le K (drinks extra), two spa passes and a one-hour treatment each",
+        "per": "room",
+        "when": "Le K is closed at lunchtime and on Sundays",
+        "url": "https://www.domainedelaklauss.com/fr/offres-speciales.html"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

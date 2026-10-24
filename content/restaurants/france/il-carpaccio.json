@@ -31,5 +31,11 @@
     "vegetarian"
   ],
   "chef": "Oliver Piras and Alessandra Del Favero",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Royal Monceau - Raffles Paris",
+    "url": "https://www.raffles.com/fr/paris/rooms-and-suites/",
+    "checked": "2026-10-23"
+  }
 }

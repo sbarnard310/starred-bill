@@ -36,5 +36,15 @@
     "gluten-free"
   ],
   "chef": "Cybèle Idelot",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Domaine Les Bruyères",
+    "rooms": 5,
+    "url": "https://domainelesbruyeres.com/chambres/",
+    "from": 170,
+    "fromNote": "including breakfast",
+    "note": "Five country-style rooms (one suite) in the former post house beside the restaurant, bookable Thursday to Sunday; tourist tax is extra.",
+    "checked": "2026-10-23"
+  }
 }

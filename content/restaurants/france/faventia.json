@@ -32,5 +32,14 @@
     "gluten-free"
   ],
   "chef": "Quentin André",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Terre Blanche Hôtel Spa Golf Resort",
+    "rooms": 115,
+    "url": "https://www.terre-blanche.com/hotel-5-etoiles-var/nos-offres-tarifs-dhebergement-terre-blanche",
+    "from": 400,
+    "fromNote": "early Bird offer",
+    "checked": "2026-10-23"
+  }
 }

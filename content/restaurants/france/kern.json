@@ -30,5 +30,12 @@
     "gluten-free"
   ],
   "chef": "Jean-Philippe Lemaire",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 3,
+    "url": "https://restaurant-kern.fr/chambres-dhotes/",
+    "note": "Three guest rooms with breakfast served at the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

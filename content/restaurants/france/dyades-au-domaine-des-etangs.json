@@ -32,5 +32,12 @@
     "gluten-free"
   ],
   "chef": "Valentin Bouilleveaux",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine des Étangs",
+    "url": "https://auberge.com/domaine-des-etangs/stay/",
+    "note": "A château estate with suites, rustic suites and cottages.",
+    "checked": "2026-10-23"
+  }
 }

@@ -28,5 +28,13 @@
   "placeId": "ChIJgd4kEyuTi0cRnuohGnxC0bc",
   "michelinId": "13212",
   "chef": "Jean Sulpice",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge du Père Bise",
+    "rooms": 22,
+    "url": "https://www.perebise.com/hotel/",
+    "note": "Five-star hotel of 22 rooms and suites in the main house and a garden house on Lake Annecy.",
+    "checked": "2026-10-23"
+  }
 }

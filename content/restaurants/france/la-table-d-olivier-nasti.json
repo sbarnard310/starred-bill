@@ -26,5 +26,24 @@
   "placeId": "ChIJE5WL7OVgkUcRaNiOhlO1-pI",
   "michelinId": "11475",
   "chef": "Olivier Nasti",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Chambard",
+    "rooms": 33,
+    "url": "https://www.lechambard.fr/fr/chambres-et-suites.html",
+    "packages": [
+      {
+        "name": "Séjour Etoile",
+        "includes": "A night in a double room for two, two L’Inspiration tasting menus at La Table d’Olivier Nasti (drinks extra), breakfast and spa access",
+        "price": 910,
+        "from": true,
+        "per": "room",
+        "when": "The spa is closed 1 January to 31 May 2027",
+        "url": "https://www.lechambard.fr/fr/sejour-alsace/sejour-etoile.html"
+      }
+    ],
+    "note": "A 5-star hotel of 33 rooms, junior suites and suites in Kaysersberg, with a spa.",
+    "checked": "2026-10-23"
+  }
 }

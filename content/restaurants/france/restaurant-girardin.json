@@ -26,5 +26,13 @@
     "vegetarian"
   ],
   "chef": "Éric Girardin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Maison des Têtes",
+    "rooms": 21,
+    "url": "https://www.maisondestetes.com/fr/chambres.html",
+    "note": "Parking is €25 a day.",
+    "checked": "2026-10-23"
+  }
 }

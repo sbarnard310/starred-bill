@@ -26,5 +26,13 @@
   "placeId": "ChIJgxteONeRi0cRR0LFSG3gYhg",
   "michelinId": "298215",
   "chef": "Yoann Conte",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Maison Bleue",
+    "rooms": 11,
+    "url": "https://yoann-conte.com/nos-chambres/",
+    "note": "Five-star hotel of 11 rooms and suites next to the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

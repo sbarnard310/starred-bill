@@ -27,5 +27,21 @@
     "vegetarian"
   ],
   "chef": "Fröde Torset",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Chais Monnet",
+    "rooms": 92,
+    "url": "https://www.chaismonnethotel.com/chambres-suites",
+    "packages": [
+      {
+        "name": "Séjour Gastronomique",
+        "includes": "A night in a double room, gourmet breakfast for two, a welcome cocktail each at Bar 1838, a tasting dinner for two at Les Foudres (drinks extra), spa access for two",
+        "when": "Not refundable; direct bookings only; excludes busy periods such as Valentine’s Day and Christmas",
+        "url": "https://www.chaismonnethotel.com/offres-hotel/sejour-gastronomique"
+      }
+    ],
+    "note": "Hotel in Cognac spread over four buildings.",
+    "checked": "2026-10-23"
+  }
 }

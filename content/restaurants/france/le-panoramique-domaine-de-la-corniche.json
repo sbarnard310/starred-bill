@@ -30,5 +30,13 @@
     "vegan"
   ],
   "chef": "Gaëtan Perulli",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine de la Corniche",
+    "url": "https://www.domainedelacorniche.com/fr/page/chambres-hotel-de-charme-giverny.1053.html",
+    "from": 100,
+    "fromNote": "standard double room for two",
+    "checked": "2026-10-23"
+  }
 }

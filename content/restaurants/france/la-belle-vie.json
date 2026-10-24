@@ -33,5 +33,12 @@
     "vegetarian"
   ],
   "chef": "Denis Martin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel La Belle Vie",
+    "url": "https://www.labellevie-hotel.com/chambres",
+    "note": "A small hotel of pavilions and rooms near the Pont du Gard, with the starred restaurant on site.",
+    "checked": "2026-10-23"
+  }
 }

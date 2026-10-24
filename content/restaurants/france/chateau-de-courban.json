@@ -32,5 +32,22 @@
     "gluten-free"
   ],
   "chef": "Maxime Lesobre",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château de Courban & Spa",
+    "url": "https://chateaudecourban.com/fr/hotel-et-chambres.html",
+    "packages": [
+      {
+        "name": "Séjour Gastronomique",
+        "includes": "A room of your choice, two seven-course Emotions menus at the gastronomic restaurant, two breakfasts and two glasses of champagne in the room",
+        "price": 269,
+        "from": true,
+        "per": "person",
+        "url": "https://chateaudecourban.com/fr/offres-speciales/sejour-gastronomique.html"
+      }
+    ],
+    "note": "A 4-star château hotel with spa in the Côte-d’Or countryside.",
+    "checked": "2026-10-23"
+  }
 }

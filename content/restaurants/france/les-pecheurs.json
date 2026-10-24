@@ -28,5 +28,13 @@
     "vegetarian"
   ],
   "chef": "Nicolas Rondelli",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cap d’Antibes Beach Hotel",
+    "rooms": 35,
+    "url": "https://capdantibes-beachhotel.com/",
+    "note": "A 5-star hotel with 35 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

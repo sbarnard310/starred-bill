@@ -31,5 +31,30 @@
   ],
   "chef": "Arnaud Lallement",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "L’Assiette Champenoise",
+    "rooms": 25,
+    "url": "https://www.assiettechampenoise.com/en/hotel/",
+    "from": 430,
+    "packages": [
+      {
+        "name": "Instant Saveur",
+        "includes": "A night in a junior suite, breakfasts, champagne on arrival and dinner for two with the ‘Saveur’ tasting menu, drinks included (paired with growers’ champagnes)",
+        "price": 1740,
+        "per": "room",
+        "url": "https://www.assiettechampenoise.com/nos-experiences/instant-saveur/"
+      },
+      {
+        "name": "Instant Émotion",
+        "includes": "A night in a balcony suite, breakfasts, champagne on arrival and dinner for two with the ‘Emotion’ tasting menu, drinks included",
+        "price": 2410,
+        "per": "room",
+        "url": "https://www.assiettechampenoise.com/nos-experiences/instant-emotion/"
+      }
+    ],
+    "note": "Three-star restaurant in a five-star hotel with 25 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

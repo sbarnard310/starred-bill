@@ -26,5 +26,13 @@
   "placeId": "ChIJKc58aWR4rRIRs3LEE1W1bC0",
   "michelinId": "959",
   "chef": "Nicole Fagegaltier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel du Vieux Pont",
+    "rooms": 7,
+    "url": "https://www.hotelbelcastel.com/hotel-du-vieux-pont/chambres/",
+    "note": "A 3-star charm hotel of 7 rooms beside the restaurant in Belcastel.",
+    "checked": "2026-10-23"
+  }
 }

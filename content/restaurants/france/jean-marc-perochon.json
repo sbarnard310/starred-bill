@@ -31,5 +31,13 @@
     "vegetarian"
   ],
   "chef": "Jean-Marc Pérochon",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Les Brisants",
+    "rooms": 14,
+    "url": "https://www.lesbrisants.com/les-chambres",
+    "note": "A seafront hotel in Bretignolles-sur-Mer with 14 rooms, two of them suites.",
+    "checked": "2026-10-23"
+  }
 }

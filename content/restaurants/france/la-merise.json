@@ -37,5 +37,21 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 385,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://www.lamerise.alsace/",
+    "packages": [
+      {
+        "name": "Evasion Merise",
+        "includes": "A night in a guest room for two with breakfast, a 3-course gastronomic dinner for two with drinks, and a return transfer",
+        "price": 540,
+        "per": "room",
+        "when": "Thursday and Sunday evenings, not public holidays; booking required",
+        "url": "https://www.lamerise.alsace/"
+      }
+    ],
+    "note": "Guest rooms are offered only through the Evasion Merise package; Hôtel Le Moulin in Gundershoffen, 11 km away, is its suggested alternative.",
+    "checked": "2026-10-23"
+  }
 }

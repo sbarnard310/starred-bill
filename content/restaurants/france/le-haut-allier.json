@@ -43,5 +43,11 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Le Haut-Allier",
+    "url": "https://www.hotel-lehautallier.com/fr/hotel-haute-loire.html",
+    "checked": "2026-10-23"
+  }
 }

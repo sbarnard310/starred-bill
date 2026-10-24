@@ -29,5 +29,15 @@
     "vegetarian"
   ],
   "chef": "Romain Hubert",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "La Chaumée",
+    "rooms": 3,
+    "url": "https://www.lemulsion-restaurant.com/fr/chambres/",
+    "from": 160,
+    "fromNote": "weekday rate, breakfast included",
+    "note": "Three guest rooms (€190 to €210 at standard rates, breakfast included); book by email.",
+    "checked": "2026-10-23"
+  }
 }

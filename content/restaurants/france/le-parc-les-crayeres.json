@@ -29,5 +29,13 @@
   ],
   "chef": "Christophe Moret",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine Les Crayères",
+    "rooms": 20,
+    "url": "https://lescrayeres.com/en/rooms-overview.html",
+    "note": "A five-star château hotel in a six-hectare park in Reims, with 20 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

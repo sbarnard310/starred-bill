@@ -29,5 +29,11 @@
     "vegetarian"
   ],
   "chef": "Jean-François Rouquette",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Park Hyatt Paris-Vendôme",
+    "url": "https://www.hyatt.com/en-US/hotel/france/park-hyatt-paris-vendome/parph",
+    "checked": "2026-10-23"
+  }
 }

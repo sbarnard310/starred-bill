@@ -26,5 +26,12 @@
   "placeId": "ChIJ-QZAMLudDkgRcPgG-jo2NTU",
   "michelinId": "1584",
   "chef": "Hugo Roellinger",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château Richeux",
+    "rooms": 12,
+    "url": "https://www.maisons-de-bricourt.com/fr/page/chateau-richeux",
+    "checked": "2026-10-23"
+  }
 }

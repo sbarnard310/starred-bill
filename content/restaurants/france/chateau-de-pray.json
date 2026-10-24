@@ -38,5 +38,13 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 748,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château de Pray",
+    "rooms": 19,
+    "url": "https://www.chateaudepray.fr/chambres-suites-chateau-de-pray-amboise/",
+    "note": "A château hotel with 19 rooms.",
+    "checked": "2026-10-23"
+  }
 }

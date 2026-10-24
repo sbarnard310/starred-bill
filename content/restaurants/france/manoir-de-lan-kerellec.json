@@ -26,5 +26,30 @@
   "placeId": "ChIJJxPe5QbTE0gR_NRAk8wCC4E",
   "michelinId": "13334",
   "chef": "Anthony Avoine",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Manoir de Lan Kerellec",
+    "url": "https://lankerellec.com/en/rooms-overview.html",
+    "packages": [
+      {
+        "name": "Pleasure to offer",
+        "includes": "A night in a Superior room for two, breakfast, a 3-course dinner and half a bottle of wine",
+        "price": 490,
+        "per": "room",
+        "when": "Subject to availability; not school holidays, long weekends or bank holidays",
+        "url": "https://lankerellec.com/en/leisure.html"
+      },
+      {
+        "name": "Evasion Offer",
+        "includes": "A night in a Prestige room for two, breakfast, a 7-course tasting dinner and 3 glasses of wine",
+        "price": 790,
+        "per": "room",
+        "when": "Low season, Wednesday to Sunday",
+        "url": "https://lankerellec.com/en/leisure.html"
+      }
+    ],
+    "note": "Closed from 1 November to 12 March.",
+    "checked": "2026-10-23"
+  }
 }

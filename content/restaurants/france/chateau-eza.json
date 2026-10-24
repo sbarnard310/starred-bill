@@ -36,5 +36,13 @@
   "photoSourceType": "commons",
   "photoWidth": 631,
   "photoHeight": 1000,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château Eza",
+    "rooms": 14,
+    "url": "https://www.chateaueza.com/rooms--suites.html",
+    "note": "A 400-year-old castle hotel in the village of Èze with 14 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

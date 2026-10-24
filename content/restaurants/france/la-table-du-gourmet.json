@@ -31,5 +31,23 @@
     "vegan"
   ],
   "chef": "Jean-Luc Brendel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Maison J.L. Brendel (B. Suites, B. Cottage, B. Vintage)",
+    "url": "https://jlbrendel.com/en/accomodation/stay.html",
+    "packages": [
+      {
+        "name": "Séjour découverte de Riquewihr",
+        "includes": "A night in a Suite Lumière at B. Suites for two, lunch or dinner for two at La Table du Gourmet (five plates), a bottle of Crémant d’Alsace and breakfast for two at the Brendelstub",
+        "price": 498,
+        "from": true,
+        "per": "room",
+        "when": "Monday to Thursday and Sunday, not public holidays",
+        "url": "https://jlbrendel.com/fr/offres/sejour-decouverte-de-riquewihr.html"
+      }
+    ],
+    "note": "The stays are in the chef’s own guest houses in other buildings of Riquewihr; B. Suites alone has five rooms, next to the Brendelstub.",
+    "checked": "2026-10-23"
+  }
 }

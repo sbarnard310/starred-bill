@@ -31,5 +31,23 @@
     "gluten-free"
   ],
   "chef": "Arnaud Viel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hostellerie de La Renaissance",
+    "url": "https://www.arnaudviel.com/fr/hotel.html",
+    "packages": [
+      {
+        "name": "Romantic gastronomic weekend",
+        "includes": "A night for two in a standard room, breakfasts, spa access, a 3-course dinner for two at chef Arnaud Viel’s starred restaurant, half a bottle of champagne and a rose bouquet",
+        "price": 439,
+        "from": true,
+        "per": "room",
+        "when": "Superior room from 478; 4-course dinner adds 22",
+        "url": "https://www.arnaudviel.com/fr/offres-speciales/offre-100-romantique-week-end-dans-lorne.html"
+      }
+    ],
+    "note": "Chef Arnaud Viel’s hotel in Argentan, with a spa and pool.",
+    "checked": "2026-10-23"
+  }
 }

@@ -28,5 +28,31 @@
   "dinnerNote": "Pourquoi pas menu, 6 courses (Mets encore, 8 courses, €135)",
   "dinnerNoteFr": "Menu Pourquoi pas…, 6 services (Mets encore…, 8 services, 135 €)",
   "lunchNote": "Retour du marché menu: starter, main, dessert",
-  "lunchNoteFr": "Menu Retour du marché : entrée, plat, dessert"
+  "lunchNoteFr": "Menu Retour du marché : entrée, plat, dessert",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Aux Terrasses",
+    "rooms": 20,
+    "url": "https://www.aux-terrasses.com/fr/hotel-de-charme-tournus/",
+    "packages": [
+      {
+        "name": "Forfait Pourquoi Pas",
+        "includes": "A night in a double room for two, two six-course Pourquoi Pas menus at the restaurant, two breakfasts and a bottle of Mâcon Cruzille to take away; drinks extra",
+        "price": 450,
+        "from": true,
+        "per": "room",
+        "url": "https://www.aux-terrasses.com/fr/offres-speciales/why-not-package/"
+      },
+      {
+        "name": "Forfait Mets Encore",
+        "includes": "A night in a double room for two, two eight-course Mets Encore menus at the restaurant, two breakfasts and a bottle of Mâcon Cruzille to take away; drinks extra",
+        "price": 530,
+        "from": true,
+        "per": "room",
+        "url": "https://www.aux-terrasses.com/fr/offres-speciales/offre-mets-encore/"
+      }
+    ],
+    "note": "Hotel and restaurant are closed from 18 October 2026 for works, reopening around 20 January 2027.",
+    "checked": "2026-10-23"
+  }
 }

@@ -26,5 +26,12 @@
     "vegetarian"
   ],
   "chef": "Francesco Fezza",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château de Théoule Hôtel & Spa",
+    "rooms": 44,
+    "url": "https://chateau-de-theoule.com/fr/page/chambres-suites-hotel-de-luxe-a-theoule-sur-mer-cote-dazur.29059.html",
+    "checked": "2026-10-23"
+  }
 }

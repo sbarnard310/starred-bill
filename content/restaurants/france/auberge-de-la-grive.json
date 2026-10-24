@@ -26,5 +26,11 @@
   "placeId": "ChIJG2xBa3Np6EcRdRNeCYEXJUo",
   "michelinId": "1208108",
   "chef": "Nicolas Gautier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://aubergedelagrive.com/fr/dormir.html",
+    "note": "Chambre d’hôtes in the chef’s house on the estate; book rooms online or by phone.",
+    "checked": "2026-10-23"
+  }
 }

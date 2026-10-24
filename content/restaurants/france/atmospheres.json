@@ -30,5 +30,20 @@
     "gluten-free"
   ],
   "chef": "Alain Perrillat-Mercerot",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Atmosphères",
+    "rooms": 4,
+    "url": "https://www.atmospheres-hotel.com/fr/sejourner.html",
+    "packages": [
+      {
+        "name": "Escapade gastronomique",
+        "includes": "A night with dinner at the restaurant",
+        "url": "https://www.atmospheres-hotel.com/fr/offres-speciales.html"
+      }
+    ],
+    "note": "A restaurant with just 4 rooms on Lake Bourget; book early.",
+    "checked": "2026-10-23"
+  }
 }

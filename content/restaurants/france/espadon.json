@@ -28,5 +28,11 @@
     "vegan"
   ],
   "chef": "Eugénie Béziat",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Ritz Paris",
+    "url": "https://www.ritzparis.com/",
+    "checked": "2026-10-23"
+  }
 }

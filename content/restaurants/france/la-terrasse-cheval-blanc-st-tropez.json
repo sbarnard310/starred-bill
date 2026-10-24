@@ -26,5 +26,11 @@
   "placeId": "ChIJDTV3yw7HzhIRYjMG0CraIeI",
   "michelinId": "398406",
   "chef": "Arnaud Donckele",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cheval Blanc St-Tropez",
+    "url": "https://www.chevalblanc.com/fr/maison/st-tropez",
+    "checked": "2026-10-23"
+  }
 }

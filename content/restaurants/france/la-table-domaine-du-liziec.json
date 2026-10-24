@@ -36,5 +36,13 @@
   "chefSource": "michelin",
   "dinnerNote": "Giroflée des Dunes menu, 4 courses (5 courses €125, 7 courses €155)",
   "wine": 69,
-  "dinnerNoteFr": "Menu Giroflée des Dunes en 4 actes (5 actes 125 €, 7 actes 155 €)"
+  "dinnerNoteFr": "Menu Giroflée des Dunes en 4 actes (5 actes 125 €, 7 actes 155 €)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine du Liziec (MGallery)",
+    "rooms": 71,
+    "url": "https://ledomaineduliziec.com/fr/hotel/chambres-et-suites.html",
+    "note": "A 4-star hotel with 71 rooms including 12 suites.",
+    "checked": "2026-10-23"
+  }
 }

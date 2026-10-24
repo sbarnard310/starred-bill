@@ -30,5 +30,11 @@
   "placeId": "ChIJBWqlSgBv5kcRGYBEZG-nj7Y",
   "michelinId": "1213865",
   "chef": "Takuya Watanabe",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cheval Blanc Paris",
+    "url": "https://www.chevalblanc.com/fr/maison/paris/",
+    "checked": "2026-10-23"
+  }
 }

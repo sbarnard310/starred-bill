@@ -32,5 +32,14 @@
   "chef": "René Meilleur and Maxime Meilleur",
   "chefSource": "site",
   "dietsManual": true,
-  "notice": "Closed between seasons; reopens on 5 December 2026 (its website, October 2026)"
+  "notice": "Closed between seasons; reopens on 5 December 2026 (its website, October 2026)",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Bouitte",
+    "rooms": 15,
+    "url": "https://www.la-bouitte.com/fr/chambres-suites/tarifs.html",
+    "from": 305,
+    "note": "Eight rooms and seven suites in the chef’s own hotel in Saint-Martin-de-Belleville; closed between seasons until 5 December 2026.",
+    "checked": "2026-10-23"
+  }
 }

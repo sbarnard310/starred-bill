@@ -31,5 +31,13 @@
     "vegan"
   ],
   "chef": "Stephan Schneider",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge Saint-Walfrid",
+    "rooms": 22,
+    "url": "https://www.stwalfrid.fr/fr/hotel",
+    "note": "A hotel of 22 rooms and suites alongside the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

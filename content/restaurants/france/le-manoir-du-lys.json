@@ -26,5 +26,30 @@
     "vegetarian"
   ],
   "chef": "Franck Quinton",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Manoir du Lys",
+    "url": "https://www.manoir-du-lys.fr/fr/les-chambres.html",
+    "packages": [
+      {
+        "name": "Séjour escapade en amoureux",
+        "includes": "A night for two, a 3-course dinner for two at the starred restaurant, a welcome treat and buffet breakfast",
+        "price": 411,
+        "from": true,
+        "per": "room",
+        "url": "https://www.manoir-du-lys.fr/fr/sejour-escapade-en-normandie.html"
+      },
+      {
+        "name": "Séjour Éveil des Papilles",
+        "includes": "A night for two in a Pavillon des Bois, a 7-course gastronomic dinner for two (drinks not included) and buffet breakfast",
+        "price": 565,
+        "from": true,
+        "per": "room",
+        "url": "https://www.manoir-du-lys.fr/fr/experience-gastronomique-tout-compris-eveil-des-papilles.html"
+      }
+    ],
+    "note": "A 4-star manor hotel in the forest park at Bagnoles-de-l’Orne; the restaurant is closed Monday and Tuesday.",
+    "checked": "2026-10-23"
+  }
 }

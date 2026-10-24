@@ -28,5 +28,12 @@
     "vegetarian"
   ],
   "chef": "Guillaume Duchemin and Davide Sessa",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le K2 Altitude",
+    "rooms": 32,
+    "url": "https://www.lek2altitude.com/fr/sejourner/hotel-prestations.html",
+    "checked": "2026-10-23"
+  }
 }

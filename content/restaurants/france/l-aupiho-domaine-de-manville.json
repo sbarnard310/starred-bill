@@ -28,5 +28,14 @@
     "vegan"
   ],
   "chef": "Lieven Van Aken",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine de Manville",
+    "rooms": 39,
+    "url": "https://www.domainedemanville.fr/s-endormir/chambres-suites",
+    "from": 315,
+    "note": "30 rooms and suites plus 9 hotel houses on a golf estate.",
+    "checked": "2026-10-23"
+  }
 }

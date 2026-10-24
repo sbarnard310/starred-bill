@@ -30,5 +30,12 @@
     "vegetarian"
   ],
   "chef": "Stéphane Cosnier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Lann Roz",
+    "rooms": 14,
+    "url": "https://www.lannroz.fr/fr/chambres-et-suites-hotel-de-charme-carnac",
+    "checked": "2026-10-23"
+  }
 }

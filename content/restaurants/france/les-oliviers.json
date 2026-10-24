@@ -32,5 +32,12 @@
     "vegetarian"
   ],
   "chef": "Martin Féragus",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Thalazur Bandol Île Rousse",
+    "rooms": 67,
+    "url": "https://www.thalazur.fr/bandol/hotel/les-chambres/",
+    "checked": "2026-10-23"
+  }
 }

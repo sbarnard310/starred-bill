@@ -27,5 +27,13 @@
     "vegetarian"
   ],
   "chef": "Christophe Billau",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge Quintessence",
+    "rooms": 7,
+    "url": "https://auberge-quintessence.com/#hotel",
+    "note": "Seven rooms with mountain views.",
+    "checked": "2026-10-23"
+  }
 }

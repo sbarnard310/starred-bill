@@ -24,5 +24,11 @@
   "placeId": "ChIJecNdHr2BzhIR0pJ-zd3EL1Y",
   "michelinId": "1654",
   "chef": "Christian Sinicropi",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Martinez",
+    "url": "https://www.hyatt.com/fr-FR/hotel/france/hotel-martinez/jcagh",
+    "checked": "2026-10-23"
+  }
 }

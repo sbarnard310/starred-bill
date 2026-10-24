@@ -26,5 +26,12 @@
   "placeId": "ChIJ6bQiQEUorRIRXZnaelPcEPg",
   "michelinId": "12760",
   "chef": "Frédérik Bizat",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Les Trois Soleils de Montal",
+    "url": "https://www.3soleils.fr/hotel/",
+    "note": "4-star hotel in a château park with double, family, junior suite and suite rooms.",
+    "checked": "2026-10-23"
+  }
 }

@@ -27,5 +27,12 @@
     "gluten-free"
   ],
   "chef": "Damien Fagette",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Domaine de la Tour des Vents",
+    "url": "https://www.domainedelatourdesvents.com/chambres-dhotes-lodge-jacuzzi-monbazillac-bergerac/",
+    "note": "Rooms and lodges with private spa on the estate, open all year; the estate is closed 19 October to 1 November 2026.",
+    "checked": "2026-10-23"
+  }
 }

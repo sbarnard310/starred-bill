@@ -24,5 +24,12 @@
   "michelinId": "12973",
   "chef": "Arnaud Donckele",
   "chefSource": "site",
-  "notice": "Closed for the winter; reopens on 6 May 2027 (its hotel’s website, October 2026)"
+  "notice": "Closed for the winter; reopens on 6 May 2027 (its hotel’s website, October 2026)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cheval Blanc St-Tropez",
+    "url": "https://www.chevalblanc.com/fr/maison/st-tropez",
+    "note": "Closed for the winter until 6 May 2027.",
+    "checked": "2026-10-23"
+  }
 }

@@ -36,5 +36,37 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Relais Bernard Loiseau",
+    "url": "https://www.bernard-loiseau.com/en/bernardloiseau-rooms.html",
+    "packages": [
+      {
+        "name": "Exceptional offer La Côte d’Or",
+        "includes": "A night in a room of your choice for two, breakfast, a Délice menu at La Côte d’Or and spa access",
+        "price": 815,
+        "from": true,
+        "per": "room",
+        "when": "Selected Sundays, Mondays and Thursdays",
+        "url": "https://www.bernard-loiseau.com/en/bernardloiseau-offers.html"
+      },
+      {
+        "name": "Wellness getaway",
+        "includes": "A night in a room, breakfast, a vegetable-led menu at La Côte d’Or (drinks extra), spa access and a yoga, fitness or treatment session",
+        "price": 995,
+        "from": true,
+        "url": "https://www.bernard-loiseau.com/en/bernardloiseau-offers.html"
+      },
+      {
+        "name": "Wine tasting and Côte d’Or stay",
+        "includes": "A night in a Junior Suite, breakfast, dinner at La Côte d’Or, a wine tasting with the sommelier and spa access",
+        "price": 1280,
+        "from": true,
+        "url": "https://www.bernard-loiseau.com/en/bernardloiseau-offers.html"
+      }
+    ],
+    "note": "A 5-star Relais & Châteaux hotel and spa in Saulieu.",
+    "checked": "2026-10-23"
+  }
 }

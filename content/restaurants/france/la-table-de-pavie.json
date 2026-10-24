@@ -26,5 +26,44 @@
   "placeId": "ChIJMRwuQfFPVQ0RGQpS3RGocNc",
   "michelinId": "12781",
   "chef": "Sébastien Faramond",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel de Pavie",
+    "url": "https://hoteldepavie.com/en/offers.html",
+    "packages": [
+      {
+        "name": "The Treasures of Saint-Emilion",
+        "includes": "A night for two in a deluxe double, breakfast, a champagne aperitif and the Menu Arômes de Pavie (drinks and cheese not included)",
+        "price": 1275,
+        "per": "room",
+        "when": "Tuesday to Saturday, subject to availability",
+        "url": "https://hoteldepavie.com/en/offers.html"
+      },
+      {
+        "name": "Discovery Package",
+        "includes": "A night in a double room for two, breakfast and a 5-course dinner at La Table de Pavie with wine pairing (3 glasses, water, coffee or tea)",
+        "when": "Tourist tax extra; restaurant closed Sunday and Monday",
+        "url": "https://hoteldepavie.com/en/offers.html"
+      },
+      {
+        "name": "Pavie Experience",
+        "includes": "A night for two, a gourmet dinner at La Table de Pavie, a Prestige champagne aperitif, a three-wine Pavie selection and a private heritage tour of Château Pavie",
+        "price": 2650,
+        "per": "room",
+        "when": "Restaurant closed Sunday and Monday; château closed weekends",
+        "url": "https://hoteldepavie.com/en/experience-pavie.html"
+      },
+      {
+        "name": "Prestige Offer",
+        "includes": "Two nights for two, gourmet breakfast, a winery visit and tasting, dinner at La Table de Pavie on the first evening and at the bistro l’Envers du Décor on the second",
+        "price": 2200,
+        "per": "room",
+        "nights": 2,
+        "url": "https://hoteldepavie.com/en/offers.html"
+      }
+    ],
+    "note": "A five-star hotel in several houses in Saint-Émilion, with over 20 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

@@ -114,5 +114,11 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Marine",
+    "url": "https://www.alexandrecouillon.com/fr/hotel",
+    "checked": "2026-10-23"
+  }
 }

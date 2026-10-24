@@ -43,5 +43,29 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 585,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Relais de la Poste",
+    "rooms": 18,
+    "url": "https://relais-poste.com/un-hotel-de-charme/",
+    "packages": [
+      {
+        "name": "Séjour Découverte",
+        "includes": "A night in the romantic room for two, breakfast and a 4-course gastronomic menu for two (drinks extra)",
+        "price": 409,
+        "per": "room",
+        "url": "https://relais-poste.com/un-hotel-de-charme/"
+      },
+      {
+        "name": "Séjour Prestige",
+        "includes": "A night in the romantic room for two, breakfast and a 5-course gastronomic menu for two (drinks extra)",
+        "price": 441,
+        "per": "room",
+        "url": "https://relais-poste.com/un-hotel-de-charme/"
+      }
+    ],
+    "note": "A 3-star hotel of 18 rooms beside the restaurant in La Wantzenau.",
+    "checked": "2026-10-23"
+  }
 }

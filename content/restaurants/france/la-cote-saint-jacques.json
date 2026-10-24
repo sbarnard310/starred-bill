@@ -27,5 +27,13 @@
   "placeId": "ChIJRcnErLGr70cRElzKgm1V9Zc",
   "michelinId": "11454",
   "chef": "Jean-Michel Lorain and Alexandre Bondoux",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Côte Saint-Jacques & Spa",
+    "rooms": 22,
+    "url": "https://www.cotesaintjacques.com/en/page/rooms-romantic-weekend-burgundy.11825.html",
+    "note": "A 5-star Relais & Châteaux hotel with spa; other tailor-made stays are arranged through reception.",
+    "checked": "2026-10-23"
+  }
 }

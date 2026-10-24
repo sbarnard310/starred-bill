@@ -34,5 +34,13 @@
     "kosher"
   ],
   "chef": "Stéphane Duchiron",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Airelles Château de Versailles, Le Grand Contrôle",
+    "rooms": 15,
+    "url": "https://airelles.com/en/destination/chateau-de-versailles-hotel/suites",
+    "note": "Its 15 rooms and suites overlook the palace gardens.",
+    "checked": "2026-10-23"
+  }
 }

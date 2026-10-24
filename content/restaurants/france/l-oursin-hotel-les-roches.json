@@ -32,5 +32,12 @@
     "gluten-free"
   ],
   "chef": "Antoine Gras",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Les Roches",
+    "rooms": 40,
+    "url": "https://www.hotellesroches.com/chambres-et-suites/",
+    "checked": "2026-10-23"
+  }
 }

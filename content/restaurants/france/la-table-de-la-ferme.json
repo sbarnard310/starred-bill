@@ -31,5 +31,12 @@
     "kosher"
   ],
   "chef": "Laurent Renard",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine de Murtoli",
+    "url": "https://www.murtoli.com/",
+    "note": "Murtoli styles itself a five-star hotel with luxury bergeries.",
+    "checked": "2026-10-23"
+  }
 }

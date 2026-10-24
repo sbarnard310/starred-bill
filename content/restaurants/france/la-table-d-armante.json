@@ -30,5 +30,11 @@
   "placeId": "ChIJ6ZTDzYpZiUcRaY2-53S_ozo",
   "michelinId": "1186020",
   "chef": "Thomas Vonderscher",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Armancette",
+    "url": "https://almae-collection.com/armancette/chambres/chambres-doubles/",
+    "checked": "2026-10-23"
+  }
 }

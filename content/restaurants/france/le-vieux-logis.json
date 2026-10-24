@@ -34,5 +34,24 @@
     "gluten-free"
   ],
   "chef": "Vincent Arnould",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Vieux Logis",
+    "url": "https://www.vieux-logis.com/les-chambres/",
+    "packages": [
+      {
+        "name": "Séjour Gastronomique",
+        "includes": "A night in a double room, one gastronomic dinner (Menu Petite Balade, drinks included), breakfasts, tourist tax",
+        "url": "https://www.vieux-logis.com/offres-et-forfaits/"
+      },
+      {
+        "name": "Forfait Romantisme",
+        "includes": "A night in a double room, one gastronomic dinner (Menu Dégustation Caprice Gourmand, drinks included), a bottle of champagne in the room, breakfasts, tourist tax",
+        "url": "https://www.vieux-logis.com/offres-et-forfaits/"
+      }
+    ],
+    "note": "4-star hotel in Trémolat.",
+    "checked": "2026-10-23"
+  }
 }

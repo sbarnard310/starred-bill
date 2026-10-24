@@ -31,5 +31,13 @@
   ],
   "chef": "Paul Stradner",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Villa René Lalique",
+    "rooms": 6,
+    "url": "https://villarenelalique.com/fr/hebergement/hotel-5-etoilesles-suites-de-luxe.html",
+    "note": "Five-star hotel of six suites beside the restaurant; closed for a winter break until 20 January.",
+    "checked": "2026-10-23"
+  }
 }

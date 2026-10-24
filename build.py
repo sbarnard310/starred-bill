@@ -683,7 +683,7 @@ GUIDE_WORDS = {
     "fr": {"name": "Français", "sources": "Sources", "sourceChecked": "(consulté en {month})",
            "ownData": "Les prix et les décomptes sont des données propres à The Starred Bill sur {total} restaurants étoilés : étoiles de la dernière édition du Guide MICHELIN de chaque pays, prix des menus relevés sur le site de chaque restaurant ou, à défaut, dans une critique récente, vérifiés en {checked}. Les montants en dollars utilisent les taux de change d’{rates} ({day}).",
            "updated": "Mis à jour le {date}", "checked": "Étoiles et prix vérifiés en {month}",
-           "faq": "Questions fréquentes", "inEnglish": "en anglais", "usd": "{n} $ US", "thousands": " ", "date": "{d} {m} {y}", "monthYear": "{m} {y}",
+           "faq": "Questions fréquentes", "inEnglish": "en anglais", "related": "Guides associés", "usd": "{n} $ US", "thousands": " ", "date": "{d} {m} {y}", "monthYear": "{m} {y}",
            "first": "1er", "symbols": {"CAD": "$ CA", "USD": "$ US"},
            "months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
            "countries": {"France": "France", "Japan": "Japon", "Italy": "Italie", "Germany": "Allemagne", "Spain": "Espagne",
@@ -1569,7 +1569,7 @@ def build_place(p):
             "faq": faq_html(faq, lang, say_in(pilot_words(lang), "hFaq", page) if pilot else None),
             "answer": answer, "quick": quick_html(quick, page, lang), "pilot": pilot_sections(p, page, starred, lang) if pilot else "",
             "newStars": new_stars_html(p, page, lang) if not cuisine else "", "localNote": local_note_html(p, note),
-            "guides": related_guides_html(p, starred) if lang == "en" else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq_ld, SITE_URL + lang_paths[lang], titles[lang], day),
+            "guides": related_guides_html(p, starred) if lang == "en" else related_guides_in(p, starred, lang) if starred else "", "jsonld": json_ld(p, crumbs, starred, texts["description"], lang, texts, faq_ld, SITE_URL + lang_paths[lang], titles[lang], day),
             "updated": updated, "sources": place_sources_html(p, lang) if starred else "",
             "tiers": tiers_html(starred, currency, lang), "lunchDeals": lunch_deals_html(p, page, starred, lang) if not cuisine else "",
             "browse": browse_html(p, page, starred, lang) if starred else "",
@@ -3154,6 +3154,27 @@ def related_guides_html(p, starred, items=None):
     return ('<section id="guides">\n    <div class="wrap">\n      <div class="section-head"><div>'
             '<span class="eyebrow">Guides</span><h2 style="margin-top: 6px">Related guides</h2></div>'
             '<a class="more-guides" href="/guides/">All guides</a></div>\n'
+            '      <ul class="related-guides">' + "".join(card(g) for g in items) + "</ul>\n    </div>\n  </section>\n")
+
+
+def related_guides_in(p, starred, lang):
+    """Related guides on a destination page in another language: the ones translated into it (the pillar left out, as
+    the page already links it), with their translated heading and summary. Left out where there are none, or where the
+    language has no `related` wording in GUIDE_WORDS."""
+    w = GUIDE_WORDS.get(lang, {})
+    items = [g for g in related_guides(p, starred) if g["id"] != GUIDE_PILLAR and lang in guide_translations.get(g["id"], {})]
+    if not items or not w.get("related"):
+        return ""
+    st = guide_stats_in(guide_bodies()["_stats"], lang)
+    fill = lambda s: re.sub(r"\{\{(\w+)\}\}", lambda m: str(st.get(m.group(1), m.group(0))), s)
+
+    def card(g):
+        t, img = guide_translations[g["id"]][lang], guide_image(g)
+        pic = (f'<img src="{img}-card.jpg" alt="" width="800" height="450" loading="lazy" decoding="async">' if img else
+               '<span class="guide-ph" aria-hidden="true">' + '<svg><use href="#star"/></svg>' * 3 + "</span>")
+        return f'<li>{pic}<div><h3><a href="{guide_path(g["id"], lang)}">{e(fill(t["h1"]))}</a></h3><p>{e(fill(t.get("summary", "")))}</p></div></li>'
+    return ('<section id="guides">\n    <div class="wrap">\n      <div class="section-head"><div>'
+            f'<span class="eyebrow">{e(GUIDE_CRUMB[lang])}</span><h2 style="margin-top: 6px">{e(w["related"])}</h2></div></div>\n'
             '      <ul class="related-guides">' + "".join(card(g) for g in items) + "</ul>\n    </div>\n  </section>\n")
 
 
@@ -4803,7 +4824,30 @@ VEG_SERVES = {"oyster-oyster": "Vegetarian or vegan, oysters optional", "fields-
               "mita": "Plant-based", "daigo": "Shōjin ryōri (Buddhist vegetarian)", "avatara": "Vegetarian (Indian)"}
 # The restaurants-with-rooms guides (23 Oct 2026): {{table:rooms-<place>}} (restaurants with rooms of their own) and
 # {{table:rooms-hotel-<place>}} (restaurants inside a hotel) for each place here, from each restaurant's `stay`.
-ROOMS_LISTS = ("uk",)
+ROOMS_LISTS = ("uk", "france")
+# Their wording in the translated guides (a translation's {{table:rooms-…}} needs its language here; rooms_blocks_in()).
+ROOMS_WORDS = {
+    "fr": {"heads": ("Restaurant", "Étoiles", "Où", "Chambres", "Chambre dès, la nuit", "Séjour avec dîner", "Menu dégustation, par personne"),
+           "hotelHead": "Hôtel", "seeRooms": "Voir", "from": "dès ", "per": {"person": " par personne", "room": " la chambre"},
+           "nights": " pour {n} nuits", "stars": ("1 étoile", "2 étoiles", "3 étoiles"), "notPublished": "Non publié",
+           "main": "plat à la carte", "spend": "dépense moyenne", "onGuide": "{name} sur le Guide MICHELIN",
+           "noteRooms": "Restaurants étoilés qui ont leurs propres chambres, du plus étoilé au moins étoilé. Le nom ouvre la fiche du restaurant sur "
+                        "The Starred Bill, le nombre de chambres la page des chambres sur son site.",
+           "noteHotel": "Restaurants étoilés situés dans un hôtel où l’on peut dormir, du plus étoilé au moins étoilé. Le nom ouvre la fiche du "
+                        "restaurant sur The Starred Bill, celui de l’hôtel sa page des chambres.",
+           "noteEnd": " Le prix de la chambre est le plus bas affiché pour une nuit, le séjour le forfait le moins cher avec dîner et nuit, "
+                      "relevés sur le site du restaurant ou de l’hôtel et variables selon la date. Menus par personne, hors boissons. Vérifié en {month}."},
+}
+
+
+def stay_where(r, lang="en"):
+    """Where a restaurant in the rooms tables is: its area, with the city added where the area is only part of one
+    ("8th arrondissement, Paris", "7th arrondissement, Marseille")."""
+    area = pick_lang(r, "area", lang) or ""
+    city = name_in(places[r["city"]], lang) if lang != "en" else r["cityName"]
+    if not area:
+        return place_name(r) if lang == "en" else city
+    return f"{area}, {city}" if r["cityType"] == "city" and ", " not in area and city not in area else area
 
 
 def stay_night(p):
@@ -4861,10 +4905,10 @@ def rooms_blocks(live, name_html, stars_cell, price_cell, note):
     for pid in ROOMS_LISTS:
         for kind, key in (("rooms", f"rooms-{pid}"), ("hotel", f"rooms-hotel-{pid}")):
             rows = sorted((r for r in live if pid in r["_chain"] and (r.get("stay") or {}).get("kind") == kind),
-                          key=lambda r: (-r["stars"], (r.get("area") or place_name(r)).lower(), r["name"].lower()))
+                          key=lambda r: (-r["stars"], stay_where(r).lower(), r["name"].lower()))
             body = "".join(
                 f'<tr><td data-label="Restaurant">{name_html(r)}</td><td data-label="Stars">{stars_cell(r["stars"])}</td>'
-                f'<td data-label="Where"><a href="{e(r["cityPath"])}">{e(r.get("area") or place_name(r))}</a></td>'
+                f'<td data-label="Where"><a href="{e(r["cityPath"])}">{e(stay_where(r))}</a></td>'
                 + (f'<td data-label="Hotel"><a href="{e(r["stay"]["url"])}">{e(r["stay"].get("name") or stay_name(r) or "–")}</a></td>' if kind == "hotel"
                    else f'<td class="num" data-label="Rooms"><a href="{e(r["stay"]["url"])}">{r["stay"]["rooms"] if r["stay"].get("rooms") else "See rooms"}</a></td>')
                 + f'<td class="num" data-label="Room from, a night">{money(r["stay"]["from"], r["cur"]) if r["stay"].get("from") is not None else muted}</td>'
@@ -4876,6 +4920,67 @@ def rooms_blocks(live, name_html, stars_cell, price_cell, note):
                 + ("number of rooms" if kind == "rooms" else "hotel’s name") + " opens its rooms page. Room prices are the lowest the "
                 + ("restaurant" if kind == "rooms" else "hotel") + " lists for a night, and the stay package its cheapest that includes dinner and a night’s stay, "
                 "both from its own website and changing with the date. Tasting menus are per person before service and drinks.")
+    return blocks
+
+
+def stay_price_in(p, cur, lang):
+    """stay_price() in a translated guide's language: "dès 390 € la chambre", "250 € par personne pour 2 nuits"."""
+    if p.get("price") is None:
+        return ""
+    w, nights = ROOMS_WORDS[lang], p.get("nights") or 1
+    return ((w["from"] if p.get("from") else "") + guide_money(p["price"], cur, lang) + w["per"].get(p.get("per"), "")
+            + (w["nights"].replace("{n}", str(nights)) if nights > 1 else ""))
+
+
+def rooms_blocks_in(lang):
+    """rooms_blocks()' tables for a translated guide: the same rows, in the language, each name opening the restaurant's
+    row on our destination page in that language (restaurant pages are English only)."""
+    w = ROOMS_WORDS.get(lang)
+    if not w:
+        return {}
+    live = [r for r in restaurants if r.get("stars") in (1, 2, 3) and not r.get("status")]
+    links = michelin_links()
+    muted = '<span class="muted">–</span>'
+    month = guide_month(site["updated"], lang) if re.fullmatch(r"\d{4}-\d{2}", site.get("updated", "")) else ""
+    in_lang = lambda r: lang_path(r["cityPath"], lang) if lang in place_langs(places[r["city"]]) else r["cityPath"]
+
+    def name_html(r):
+        out = f'<a href="{e(in_lang(r))}#r={e(r["id"])}">{e(r["name"])}</a>'
+        if r["id"] in links:
+            label = e(w["onGuide"].replace("{name}", r["name"]))
+            out += f' <a class="mg-link" href="{e(links[r["id"]])}" title="{label}" aria-label="{label}">↗</a>'
+        return out
+
+    def price_cell(r):
+        if r.get("dinner") is None:
+            return f'<span class="muted">{e(w["notPublished"])}</span>'
+        kind = r.get("dinnerType", "menu")
+        return guide_money(r["dinner"], r["cur"], lang) + (f'<br><span class="muted">{e(w["main" if kind == "main" else "spend"])}</span>' if kind != "menu" else "")
+
+    def pack_cell(r):
+        packs = sorted((p for p in r["stay"].get("packages") or [] if stay_night(p) is not None), key=lambda p: ((p.get("nights") or 1) > 1, stay_night(p)))
+        return f'{e(stay_price_in(packs[0], r["cur"], lang))}<br><span class="muted">{e(packs[0]["name"])}</span>' if packs else muted
+
+    blocks = {}
+    for pid in ROOMS_LISTS:
+        for kind, key in (("rooms", f"rooms-{pid}"), ("hotel", f"rooms-hotel-{pid}")):
+            rows = sorted((r for r in live if pid in r["_chain"] and (r.get("stay") or {}).get("kind") == kind),
+                          key=lambda r: (-r["stars"], stay_where(r, lang).lower(), r["name"].lower()))
+            heads = list(w["heads"])
+            if kind == "hotel":
+                heads[3] = w["hotelHead"]
+            cell = lambda i, inner, cls="": f'<td{cls} data-label="{e(heads[i])}">{inner}</td>'
+            body = "".join(
+                "<tr>" + cell(0, name_html(r))
+                + cell(1, f'<span class="g-stars" aria-label="{e(w["stars"][r["stars"] - 1])}">{"★" * r["stars"]}</span>')
+                + cell(2, f'<a href="{e(in_lang(r))}">{e(stay_where(r, lang))}</a>')
+                + (cell(3, f'<a href="{e(r["stay"]["url"])}">{e(r["stay"].get("name") or stay_name(r) or "–")}</a>') if kind == "hotel"
+                   else cell(3, f'<a href="{e(r["stay"]["url"])}">{r["stay"]["rooms"] if r["stay"].get("rooms") else e(w["seeRooms"])}</a>', ' class="num"'))
+                + cell(4, guide_money(r["stay"]["from"], r["cur"], lang) if r["stay"].get("from") is not None else muted, ' class="num"')
+                + cell(5, pack_cell(r), ' class="num"') + cell(6, price_cell(r), ' class="num"') + "</tr>" for r in rows)
+            blocks[key] = ('<div class="table-wrap"><table class="guide-table data"><thead><tr>' + "".join(f'<th scope="col">{e(h)}</th>' for h in heads)
+                           + f'</tr></thead><tbody>{body}</tbody></table></div>'
+                           + f'<p class="table-note">{e(w["noteRooms" if kind == "rooms" else "noteHotel"] + w["noteEnd"].replace("{month}", month))}</p>')
     return blocks
 
 
@@ -6576,7 +6681,10 @@ def guide_stats_in(stats, lang):
         if not isinstance(v, str):
             continue
         m = re.fullmatch(r"\$([\d,]+) and \$([\d,]+)", v)
-        if re.fullmatch(r"\d{1,3}(?:,\d{3})*", v):
+        local = re.fullmatch(r"([€£])(\d{1,3}(?:,\d{3})*)", v)  # a local price from money(): "€195" -> "195 €"
+        if local:
+            out[k] = guide_money(int(local.group(2).replace(",", "")), {"€": "EUR", "£": "GBP"}[local.group(1)], lang)
+        elif re.fullmatch(r"\d{1,3}(?:,\d{3})*", v):
             out[k] = num(v)
         elif re.fullmatch(r"\$\d{1,3}(?:,\d{3})*", v):
             out[k] = w["usd"].replace("{n}", num(v[1:]))
@@ -6618,10 +6726,11 @@ def place_figure(pid, field, lang):
     return None
 
 
-def guide_text_in(text, stats, lang):
-    """guide_text() for a translation: figures in the language's own way, {{in:<place>:<field>}} figures, links to
-    guides in that language where translated (else to the English one, saying so), and links to destination pages
-    to their version in that language where they have one."""
+def guide_text_in(text, stats, lang, blocks=None):
+    """guide_text() for a translation: figures in the language's own way, {{in:<place>:<field>}} figures, the tables
+    translated so far ({{table:rooms-…}}, rooms_blocks_in()), links to guides in that language where translated (else to
+    the English one, saying so), and links to destination pages to their version in that language where they have one."""
+    text = re.sub(r"(?:<p>\s*)?\{\{table:([\w-]+)\}\}(?:\s*</p>)?", lambda m: (blocks or {}).get(m.group(1), m.group(0)), text)
     text = re.sub(r"\{\{in:([\w-]+):(\w+)\}\}", lambda m: e(place_figure(m.group(1), m.group(2), lang) or m.group(0)), text)
     text = re.sub(r"\{\{(\w+)\}\}", lambda m: e(stats[m.group(1)]) if m.group(1) in stats else m.group(0), text)
 
@@ -6710,11 +6819,14 @@ def build_guide_translations(g, langs, stats):
         path = guide_path(g["id"], lang)
         fill = lambda s: re.sub(r"\{\{(\w+)\}\}", lambda m: str(st.get(m.group(1), m.group(0))), s)
         title, h1, description = fill(t["title"]), fill(t["h1"]), fill(t["description"])
-        body = guide_text_in(t["body"], st, lang)
+        body = guide_text_in(t["body"], st, lang, rooms_blocks_in(lang))
         for key in sorted(set(re.findall(r"\{\{(\w+Country)\}\}", json.dumps(t, ensure_ascii=False)))):
             if key in stats and stats[key] not in w["countries"]:
                 print(f"  Guide {g['id']} ({lang}): no {lang} name for {stats[key]} in GUIDE_WORDS' countries, so it shows in English")
-        faqs = [{"q": guide_text_in(f["q"], st, lang), "a": guide_text_in(f["a"], st, lang)} for f in t["faq"]]
+        faqs = [{"q": guide_text_in(f["q"], st, lang), "a": guide_text_in(f["a"], st, lang)} for f in t.get("faq", [])]
+        # As in English, `faqFromHeadings` gives Google the article's question headings as its FAQ data, with no FAQ section
+        # repeating them on the page (the owner's rule, 9 Oct 2026).
+        ld_faqs = faqs or (heading_questions(body) if t.get("faqFromHeadings") else [])
         text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", " ".join([title, h1, body] + [f["q"] + " " + f["a"] for f in faqs]))).lower()
         if lang in CJK_NAMES:  # written without spaces, so each part of the keyword ("ミシュラン 星の数") just needs to be there
             missing = [k for k in t["keywords"] if not all(part in text for part in k.lower().split())]
@@ -6749,9 +6861,9 @@ def build_guide_translations(g, langs, stats):
              "author": {"@type": "Organization", "@id": ORGANIZATION["@id"], "name": "The Starred Bill", "url": SITE_URL + "/"},
              "publisher": ORGANIZATION, "isPartOf": {"@id": WEBSITE["@id"]}},
         ]
-        if faqs:
+        if ld_faqs:
             graph.append({"@type": "FAQPage", "mainEntity": [
-                {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in faqs]})
+                {"@type": "Question", "name": strip(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": strip(f["a"])}} for f in ld_faqs]})
         write(path, render("guide.html", {
             **guide_lang_values(g["id"], lang), "data": guide_lang_data(g["id"], lang),
             "title": e(title), "description": e(description), "canonical": SITE_URL + path, "htmlLang": e(HTML_LANG.get(lang, (lang,))[0]),
@@ -6873,8 +6985,8 @@ def check_guide_figures():
         for lang, t in sorted(guide_translations.get(g["id"], {}).items()):
             st = guide_stats_in(stats, lang)
             fill = lambda s: re.sub(r"\{\{(\w+)\}\}", lambda m: str(st.get(m.group(1), m.group(0))), s)
-            texts = [fill(t["title"]), fill(t["h1"]), fill(t["description"]), guide_text_in(t["body"], st, lang)]
-            texts += [guide_text_in(f["q"], st, lang) + " " + guide_text_in(f["a"], st, lang) for f in t["faq"]]
+            texts = [fill(t["title"]), fill(t["h1"]), fill(t["description"]), guide_text_in(t["body"], st, lang, rooms_blocks_in(lang))]
+            texts += [guide_text_in(f["q"], st, lang) + " " + guide_text_in(f["a"], st, lang) for f in t.get("faq", [])]
             for leftover in sorted(set(re.findall(r"\{\{[\w:,-]+\}\}", " ".join(texts)))):
                 found.append(f"guide translations ({lang}/{g['id']}): {leftover} isn't a figure the build can fill in translations")
     if found:
@@ -7763,7 +7875,7 @@ def stay_name(r):
     or None for a restaurant with rooms of its own, or one that shares its hotel's name (Gravetye Manor, Morston Hall)."""
     s = r.get("stay") or {}
     name = r.get("hotel") or s.get("name") if s.get("kind") == "hotel" or r.get("hotel") else None
-    bare = lambda x: re.sub(r"^the\s+|\s+hotel$", "", x.strip().lower())
+    bare = lambda x: re.sub(r"^(?:the\s+|l'|le\s+|la\s+|les\s+|h[oô]tel\s+)+|\s+h[oô]tel$", "", x.strip().lower().replace("’", "'"))
     return None if name and bare(name) == bare(r["name"]) else name
 
 

@@ -21,5 +21,11 @@
   "placeId": "ChIJebDjJst5iUcRKYmYbva4sgI",
   "michelinId": "176983",
   "chef": "Yannick Alléno",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cheval Blanc Courchevel",
+    "url": "https://www.chevalblanc.com/fr/maison/courchevel/restaurants-et-bars/le-1947-cheval-blanc/",
+    "checked": "2026-10-23"
+  }
 }

@@ -134,5 +134,14 @@
   "photoWidth": 1000,
   "photoHeight": 667,
   "photoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel des Berges",
+    "rooms": 18,
+    "url": "https://www.auberge-de-l-ill.com/fr/hotel.html",
+    "from": 420,
+    "note": "The family’s own 5-star Hôtel des Berges, 18 rooms and suites, stands beside the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

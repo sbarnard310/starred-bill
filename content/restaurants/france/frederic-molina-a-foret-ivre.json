@@ -31,5 +31,26 @@
     "vegetarian"
   ],
   "chef": "Frédéric Molina",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 4,
+    "url": "https://maisonmolina.fr/sejours-foret-ivre/",
+    "packages": [
+      {
+        "name": "Séjour Romantique",
+        "includes": "Dinner for two with the 8-course tasting menu and a Champagne aperitif, a night and breakfast",
+        "per": "room",
+        "url": "https://maisonmolina.fr/sejours-foret-ivre/"
+      },
+      {
+        "name": "Séjour Immersion entre lac et montagne",
+        "includes": "Dinner for two with the 8-course tasting menu and a house aperitif, food and wine pairings (or alcohol-free pairings), a night and breakfast",
+        "per": "room",
+        "url": "https://maisonmolina.fr/sejours-foret-ivre/"
+      }
+    ],
+    "note": "Four rooms.",
+    "checked": "2026-10-23"
+  }
 }

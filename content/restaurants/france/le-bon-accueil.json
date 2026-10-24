@@ -26,5 +26,13 @@
   "placeId": "ChIJadKL5u-vjUcRtLJgWsK0fqM",
   "michelinId": "4521",
   "chef": "Marc Faivre",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Le Bon Accueil",
+    "rooms": 12,
+    "url": "https://www.le-bon-accueil.fr/en/les-chambres.html",
+    "note": "A 3-star hotel and restaurant in Malbuisson; closed from 14 December 2026 to 14 January 2027.",
+    "checked": "2026-10-23"
+  }
 }

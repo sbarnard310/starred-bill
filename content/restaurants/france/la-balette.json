@@ -27,5 +27,13 @@
   "placeId": "ChIJqcCeDOZ_sBIR6yAau82k_6E",
   "michelinId": "64112",
   "chef": "Laurent Lemal",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Relais des Trois Mas",
+    "rooms": 23,
+    "url": "https://www.relaisdestroismas.com/chambres-suites/",
+    "note": "Hotel above the bay in Collioure.",
+    "checked": "2026-10-23"
+  }
 }

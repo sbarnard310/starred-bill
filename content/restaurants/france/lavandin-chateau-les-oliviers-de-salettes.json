@@ -30,5 +30,21 @@
   "placeId": "ChIJueBi2FBntRIRsWVwKsKcLmA",
   "michelinId": "1198739",
   "chef": "Vincent Champ and Ludivine Pineau",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château Les Oliviers de Salettes",
+    "url": "https://www.chateaulesoliviersdesalettes.com/chambres-hotel-de-charme-drome/",
+    "from": 150,
+    "packages": [
+      {
+        "name": "Échappée Gourmande",
+        "includes": "A night for two in a room or suite, two breakfasts and two 6-course menus at the one-star Lavandin restaurant",
+        "per": "room",
+        "url": "https://www.chateaulesoliviersdesalettes.com/offres-speciales/echappee-gourmande/"
+      }
+    ],
+    "note": "Château hotel with 8 room and suite types, five rooms and three suites.",
+    "checked": "2026-10-23"
+  }
 }

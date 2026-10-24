@@ -28,5 +28,11 @@
   "placeId": "ChIJu0OD-5Tc3EcRGTz6IrrmAnE",
   "michelinId": "245086",
   "chef": "Florent Ladeyn",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "url": "https://www.vertmont.fr/",
+    "note": "Booking a room automatically gives you a dinner table (dinner served 7pm to 8pm); room bookings open on the 1st of every other month at 9:30 and the inn is closed 20 December to 4 January.",
+    "checked": "2026-10-23"
+  }
 }

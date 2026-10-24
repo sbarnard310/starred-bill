@@ -27,5 +27,12 @@
   "placeId": "ChIJjbqskBKOkUcRGx6LmyV_vZE",
   "michelinId": "1000144",
   "chef": "Chatchai Klanklong",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel-Restaurant L’Orchidée",
+    "url": "https://hotelrestaurant-lorchidee.fr/fr/",
+    "note": "A hotel with standard rooms and suites, a sauna and a Thai-style breakfast.",
+    "checked": "2026-10-23"
+  }
 }

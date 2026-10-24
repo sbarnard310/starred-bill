@@ -30,5 +30,30 @@
     "vegetarian"
   ],
   "chef": "Gilles Dudognon and Henri Dudognon",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Chapelle Saint-Martin",
+    "url": "https://www.chapellesaintmartin.com/en/rooms-overview.html",
+    "packages": [
+      {
+        "name": "Gourmet Experience",
+        "includes": "A room or suite for two, breakfast, and a 4-course ‘Balade Gourmande’ dinner for two with a wine pairing (3 glasses each)",
+        "url": "https://www.chapellesaintmartin.com/en/packages.html"
+      },
+      {
+        "name": "Signature Package",
+        "includes": "A room or suite for two, breakfast, champagne with local ham and chef Gilles Dudognon’s ‘Grande Escapade’ tasting menu for two (drinks extra)",
+        "url": "https://www.chapellesaintmartin.com/en/packages.html"
+      },
+      {
+        "name": "Porcelain Getaway",
+        "includes": "Two nights for two, two dinners with wine pairing, Limoges porcelain museum tickets and a Bernardaud factory tour",
+        "nights": 2,
+        "url": "https://www.chapellesaintmartin.com/en/packages.html"
+      }
+    ],
+    "note": "A 4-star country hotel in Limousin.",
+    "checked": "2026-10-23"
+  }
 }

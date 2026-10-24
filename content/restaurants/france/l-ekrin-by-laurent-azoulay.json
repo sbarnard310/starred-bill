@@ -28,5 +28,11 @@
   "chef": "Laurent Azoulay",
   "chefSource": "michelin",
   "rating": 4.6,
-  "reviews": 114
+  "reviews": 114,
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Kaïla",
+    "url": "https://www.lekaila.com/fr/chambres-suites-hotel-meribel/",
+    "checked": "2026-10-23"
+  }
 }

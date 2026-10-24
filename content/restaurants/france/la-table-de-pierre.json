@@ -32,5 +32,12 @@
     "gluten-free"
   ],
   "chef": "Rodolphe Loury",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Mas de Pierre",
+    "rooms": 76,
+    "url": "https://www.lemasdepierre.com/chambres/",
+    "checked": "2026-10-23"
+  }
 }

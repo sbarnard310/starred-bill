@@ -26,5 +26,24 @@
   "placeId": "ChIJZ46aIbijyRIRj_dyJNMjkxQ",
   "michelinId": "1186093",
   "chef": "Mathias Dandine",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Relais de la Magdeleine",
+    "rooms": 28,
+    "url": "https://relais-magdeleine.com/fr/hotel.html",
+    "packages": [
+      {
+        "name": "Séjour gastronomique",
+        "includes": "A night in a double room for two, buffet breakfast, a 4- or 5-course tasting menu at the starred restaurant (drinks extra) and spa access",
+        "price": 463,
+        "from": true,
+        "per": "room",
+        "when": "Depends on the restaurant being open (Tuesday to Saturday); tourist tax extra; special events excluded",
+        "url": "https://relais-magdeleine.com/fr/offres-speciales/sejour-chez-un-etoile.html"
+      }
+    ],
+    "note": "A five-star hotel with 28 rooms and suites beside the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

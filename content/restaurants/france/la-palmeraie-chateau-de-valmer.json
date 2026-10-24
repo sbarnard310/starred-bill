@@ -27,5 +27,13 @@
     "vegetarian"
   ],
   "chef": "Thomas Pezeril",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château de Valmer",
+    "url": "https://www.chateauvalmer.com/fr/hebergements-hotel-luxe-saint-tropez/",
+    "from": 325,
+    "note": "Rooms, treehouses and a cabanon; the hotel closes for the winter.",
+    "checked": "2026-10-23"
+  }
 }

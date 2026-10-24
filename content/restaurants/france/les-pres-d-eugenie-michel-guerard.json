@@ -31,5 +31,32 @@
   ],
   "chef": "Hugo Souchet",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Les Prés d’Eugénie",
+    "rooms": 45,
+    "url": "https://lespresdeugenie.com/les-chambres/",
+    "from": 270,
+    "packages": [
+      {
+        "name": "Fugue Étoilée",
+        "includes": "A night for two, gourmet or slimming breakfasts, the 7-course festive dinner at the three-star Michel Guérard restaurant, a glass of champagne each (other drinks and tourist tax extra)",
+        "price": 1005,
+        "from": true,
+        "per": "room",
+        "when": "Any day the starred restaurant is open",
+        "url": "https://lespresdeugenie.com/les-forfaits/fugue-etoilee-1-nuit/"
+      },
+      {
+        "name": "Week-end Sweetheart (1 night)",
+        "includes": "A night for two, a festive dinner at the three-star restaurant, access to the thermal spa",
+        "price": 1300,
+        "per": "room",
+        "url": "https://lespresdeugenie.com/les-forfaits/week-end-sweetheart-1-nuit/"
+      }
+    ],
+    "note": "Landes spa-hotel estate with 45 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

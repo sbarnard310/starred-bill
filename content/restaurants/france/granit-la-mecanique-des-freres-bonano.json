@@ -31,5 +31,15 @@
   "dinnerNote": "Minéral menu",
   "dinnerNoteFr": "Menu Minéral",
   "lunchNote": "Saltimbanques 3.0 lunch menu: snacks, starter, main, dessert · Thu–Fri",
-  "lunchNoteFr": "Menu Saltimbanques 3.0 : snacks, entrée, plat, dessert · jeu.–ven. midi"
+  "lunchNoteFr": "Menu Saltimbanques 3.0 : snacks, entrée, plat, dessert · jeu.–ven. midi",
+  "stay": {
+    "kind": "rooms",
+    "name": "La Mécanique des Frères Bonano",
+    "rooms": 5,
+    "url": "https://www.lamecaniquedesfreresbonano.fr/",
+    "from": 125,
+    "fromNote": "breakfast included",
+    "note": "Three suites and two rooms on the same site as the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

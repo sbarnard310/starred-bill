@@ -36,5 +36,13 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 673,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Lameloise",
+    "rooms": 16,
+    "url": "https://www.lameloise.fr/hotel-lameloise/",
+    "note": "A 4-star hotel of 16 air-conditioned rooms in a former coaching inn.",
+    "checked": "2026-10-23"
+  }
 }

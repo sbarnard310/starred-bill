@@ -66,5 +66,13 @@
   "children": "Petit Voyage menu for children under 10: main and dessert €25, or starter, main and dessert €40.",
   "infoSource": "https://www.maisondecoret.com/fr/restaurant.html",
   "infoChecked": "2026-10-13",
-  "notice": "Temporarily closed after a fire near the building; no reopening date given (its website, October 2026)"
+  "notice": "Temporarily closed after a fire near the building; no reopening date given (its website, October 2026)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Maison Decoret",
+    "rooms": 5,
+    "url": "https://www.maisondecoret.com/fr/hotel-vichy-charme.html",
+    "note": "Five rooms in the chef’s own hotel in Vichy; closed for now after a fire nearby.",
+    "checked": "2026-10-23"
+  }
 }

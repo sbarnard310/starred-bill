@@ -31,5 +31,13 @@
   ],
   "chef": "Emmanuel Renaut",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Flocons de Sel",
+    "rooms": 10,
+    "url": "https://www.floconsdesel.com/fr/les-hebergements/hotel-luxe-megeve-chambres-suites-mazots.html",
+    "note": "Ten rooms, suites and mazots.",
+    "checked": "2026-10-23"
+  }
 }

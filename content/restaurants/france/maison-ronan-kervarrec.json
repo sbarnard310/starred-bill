@@ -31,5 +31,19 @@
   ],
   "chef": "Ronan Kervarrec",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "rooms": 5,
+    "url": "https://maisonkervarrec.com/fr/chambres.html",
+    "packages": [
+      {
+        "name": "Escapade épicurienne",
+        "includes": "A night in a Standing room, dinner for two at Ronan Kervarrec’s table, continental breakfast",
+        "url": "https://maisonkervarrec.com/fr/chambres.html"
+      }
+    ],
+    "note": "Five guest rooms, each with its own patio.",
+    "checked": "2026-10-23"
+  }
 }

@@ -33,5 +33,13 @@
     "vegetarian"
   ],
   "chef": "Clément Vergeat",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine du Roncemay",
+    "rooms": 23,
+    "url": "https://roncemay.com/fr/hebergements.html",
+    "note": "A 4-star hotel and golf estate.",
+    "checked": "2026-10-23"
+  }
 }

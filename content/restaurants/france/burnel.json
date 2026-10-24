@@ -36,5 +36,13 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 562,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Burnel",
+    "rooms": 20,
+    "url": "https://www.burnel.fr/chambres-hotel-proche-mirecourt-vosges",
+    "note": "A 3-star hotel of 20 rooms with the restaurant on site.",
+    "checked": "2026-10-23"
+  }
 }

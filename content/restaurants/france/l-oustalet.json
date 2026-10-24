@@ -33,5 +33,13 @@
     "gluten-free"
   ],
   "chef": "Thomas Boirel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Les chambres de L’Oustalet",
+    "rooms": 5,
+    "url": "https://www.loustalet-gigondas.fr/pages/chambres",
+    "note": "Five guest rooms in the village centre, run by the Perrin family of Domaine de Beaucastel.",
+    "checked": "2026-10-23"
+  }
 }

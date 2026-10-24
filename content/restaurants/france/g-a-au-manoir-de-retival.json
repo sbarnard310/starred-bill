@@ -29,5 +29,13 @@
     "vegetarian"
   ],
   "chef": "David Goerne",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Manoir de Rétival",
+    "rooms": 4,
+    "url": "https://www.restaurant-ga.fr/fr/manoir-de-r-tival",
+    "note": "Three apartments and a suite in the manor.",
+    "checked": "2026-10-23"
+  }
 }

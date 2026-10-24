@@ -28,5 +28,26 @@
   ],
   "chef": "William Frachot",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Hostellerie du Chapeau Rouge",
+    "rooms": 28,
+    "url": "https://www.chapeau-rouge.fr/chambres-suites-hotel-dijon-centre/",
+    "packages": [
+      {
+        "name": "Séjour « Esprit » en huit services",
+        "includes": "A night and the eight-course ‘Esprit’ menu for two at the restaurant",
+        "per": "room",
+        "url": "https://www.chapeau-rouge.fr/sejours-gastronomie-bien-etre-dijon/"
+      },
+      {
+        "name": "Séjour « Esprit » en cinq services",
+        "includes": "A night and the five-course ‘Esprit’ menu for two at the restaurant",
+        "per": "room",
+        "url": "https://www.chapeau-rouge.fr/sejours-gastronomie-bien-etre-dijon/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

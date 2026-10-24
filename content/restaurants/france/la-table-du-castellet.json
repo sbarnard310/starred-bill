@@ -26,5 +26,23 @@
   "placeId": "ChIJSaLF9W8JyRIRQBNfndvCzD0",
   "michelinId": "1207771",
   "chef": "Fabien Ferré",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel du Castellet",
+    "url": "https://www.hotelducastellet.net/fr/chambres-et-suites.html",
+    "packages": [
+      {
+        "name": "Séjour Gastronomique",
+        "includes": "A night for two in a room with private terrace, buffet breakfast, a 6-course dinner at La Table du Castellet (drinks extra) and spa access",
+        "price": 878,
+        "from": true,
+        "per": "room",
+        "when": "Booking required, special events excluded; tourist tax extra; restaurant dinner Wednesday to Saturday",
+        "url": "https://www.hotelducastellet.net/fr/offres.html"
+      }
+    ],
+    "note": "A hotel with rooms, suites and villas; La Table du Castellet is its three-star restaurant.",
+    "checked": "2026-10-23"
+  }
 }

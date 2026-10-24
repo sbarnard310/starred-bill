@@ -30,5 +30,13 @@
     "vegetarian"
   ],
   "chef": "Nicolas Aubry",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Ezia",
+    "rooms": 4,
+    "url": "https://www.ezia-restaurant.fr/hotel/",
+    "note": "Only 4 rooms, in the same house as the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

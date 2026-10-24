@@ -30,5 +30,13 @@
     "gluten-free"
   ],
   "chef": "Adrien Descouls",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Origines Hôtel",
+    "rooms": 11,
+    "url": "https://www.restaurant-origines.fr/fr/hotel/",
+    "note": "A five-star hotel with 11 rooms and suites, the restaurant on site.",
+    "checked": "2026-10-23"
+  }
 }

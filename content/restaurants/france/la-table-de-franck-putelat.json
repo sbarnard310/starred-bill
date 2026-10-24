@@ -26,5 +26,12 @@
   "placeId": "ChIJYQv3X0IsrhIRkRimhHDtYKk",
   "michelinId": "120905",
   "chef": "Franck Putelat",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Le Parc",
+    "rooms": 7,
+    "url": "https://hotelleparc.franckputelat.com/les-chambres/",
+    "checked": "2026-10-23"
+  }
 }

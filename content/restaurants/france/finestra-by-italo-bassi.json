@@ -29,5 +29,22 @@
     "gluten-free"
   ],
   "chef": "Italo Bassi and Edoardo Menna",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cala di Greco",
+    "url": "https://finestra-d-amore.fr/escapade-automnale",
+    "packages": [
+      {
+        "name": "L’escapade automnale",
+        "includes": "A night in a 32 m² Suite Premium and the seven-course Menu Découverte at Finestra for two (breakfast not included)",
+        "price": 560,
+        "per": "room",
+        "when": "21 September to 31 October 2026, subject to availability",
+        "url": "https://finestra-d-amore.fr/escapade-automnale"
+      }
+    ],
+    "note": "Finestra is at the Hôtel Cala di Greco, in Bonifacio.",
+    "checked": "2026-10-23"
+  }
 }

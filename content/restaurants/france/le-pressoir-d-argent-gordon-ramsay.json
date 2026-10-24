@@ -21,5 +21,22 @@
   "placeId": "ChIJz9rRRNonVQ0RklBlQyf60Vk",
   "michelinId": "232797",
   "chef": "Alexandre Koa",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "InterContinental Bordeaux - Le Grand Hôtel",
+    "url": "https://bordeaux.intercontinental.com/les-chambres/",
+    "packages": [
+      {
+        "name": "Escapade Gastronomique",
+        "includes": "A night in a Classic room for two, two Menus Horizons at Le Pressoir d’Argent, buffet breakfast and Spa Guerlain access; a pairing option raises the price (up to €1,020); aperitif and hot drinks extra",
+        "price": 800,
+        "from": true,
+        "per": "room",
+        "when": "Voucher valid 365 days from purchase, subject to availability",
+        "url": "https://bordeaux.intercontinental.com/produit/escapade-gastronomique-2/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

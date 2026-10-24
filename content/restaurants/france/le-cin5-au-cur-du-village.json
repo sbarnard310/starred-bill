@@ -23,5 +23,11 @@
   "placeId": "ChIJV91l36_xi0cR8qV67rTpbes",
   "michelinId": "318344",
   "chef": "Vincent Deforce",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Au Cœur du Village",
+    "url": "https://www.hotel-aucoeurduvillage.fr/chambres-suites/chambres/",
+    "checked": "2026-10-23"
+  }
 }

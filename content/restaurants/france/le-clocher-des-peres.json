@@ -29,5 +29,13 @@
     "vegetarian"
   ],
   "chef": "Pierre Troccaz",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Le Clocher des Pères",
+    "rooms": 3,
+    "url": "https://www.chambres-d-hote-maurienne-le-clocher-des-peres.fr/fr/m_6_les-chambres-d-hote-en-maurienne.php",
+    "note": "Three guest rooms above the restaurant, each for two.",
+    "checked": "2026-10-23"
+  }
 }

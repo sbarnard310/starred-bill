@@ -27,5 +27,13 @@
   "placeId": "ChIJPVENpefDzRIRUt9V_ZOBkuM",
   "michelinId": "1241400",
   "chef": "Kevin Garcia",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cap Estel",
+    "rooms": 20,
+    "url": "https://www.capestel.com/fr/hotel-cote-dazur-vue-mer.html",
+    "note": "20 rooms and suites on a seafront estate; closed for the winter until 6 May 2027.",
+    "checked": "2026-10-23"
+  }
 }

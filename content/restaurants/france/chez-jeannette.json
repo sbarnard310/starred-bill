@@ -31,5 +31,12 @@
     "vegetarian"
   ],
   "chef": "Benjamin Le Balch",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château Peyrassol",
+    "url": "https://www.peyrassol.com/restaurants-hebergements/hebergements/",
+    "note": "The wine estate has rooms at La Rouvière and La Commanderie de Peyrassol.",
+    "checked": "2026-10-23"
+  }
 }

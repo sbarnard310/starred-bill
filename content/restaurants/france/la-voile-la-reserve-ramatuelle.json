@@ -24,5 +24,12 @@
   "michelinId": "262610",
   "chef": "Éric Canino",
   "chefSource": "site",
-  "notice": "Closed for the season; reopens in May 2027 (its hotel’s website, October 2026)"
+  "notice": "Closed for the season; reopens in May 2027 (its hotel’s website, October 2026)",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Réserve Ramatuelle",
+    "url": "https://www.lareserve-ramatuelle.com/offre-special-saint-tropez/",
+    "note": "14 rooms and suites plus villas of 3 to 6 bedrooms; closed for the season until May 2027.",
+    "checked": "2026-10-23"
+  }
 }

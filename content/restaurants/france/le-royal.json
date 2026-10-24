@@ -31,5 +31,21 @@
   ],
   "chef": "Christophe Raoux",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Royal Champagne Hotel & Spa",
+    "rooms": 47,
+    "url": "https://royalchampagne.com/fr/chambres-et-suites.html",
+    "packages": [
+      {
+        "name": "Sur les routes champenoises",
+        "includes": "Two nights in a Junior Suite with vineyard view, a bottle of champagne, breakfast for two, a car with driver, and a gastronomic dinner at Le Royal (Effervescence menu) with a private sommelier tasting",
+        "nights": 2,
+        "url": "https://royalchampagne.com/fr/offres.html"
+      }
+    ],
+    "note": "A luxury hotel and spa of 47 rooms and suites; Le Royal is its gastronomic restaurant, open Tuesday to Saturday evenings.",
+    "checked": "2026-10-23"
+  }
 }

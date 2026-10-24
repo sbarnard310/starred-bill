@@ -29,5 +29,23 @@
     "vegan"
   ],
   "chef": "Eric Prowalski",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Les Trésoms Lake & Spa Resort",
+    "rooms": 52,
+    "url": "https://www.lestresoms.com/fr/page/chambres-hotel-spa-lac-annecy.5116.html",
+    "from": 109,
+    "packages": [
+      {
+        "name": "Escale Gastronomique en Haute-Savoie",
+        "includes": "A night in a lake-view Privilège double room, full breakfast and two 5-course ‘Alchimie’ menus at La Rotonde",
+        "price": 623,
+        "from": true,
+        "when": "Menu served Tuesday to Saturday, lunch and dinner",
+        "url": "https://www.lestresoms.com/fr/page/offres-hotel-de-charme-annecy.5217.html"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -29,5 +29,14 @@
     "vegetarian"
   ],
   "chef": "David Charrier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Les Clefs de Troplong Mondot",
+    "rooms": 6,
+    "url": "https://www.troplong-mondot.com/hebergements",
+    "from": 250,
+    "note": "Six bedrooms in four small houses on the wine estate.",
+    "checked": "2026-10-23"
+  }
 }

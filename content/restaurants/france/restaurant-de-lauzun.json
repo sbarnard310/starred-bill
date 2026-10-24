@@ -31,5 +31,14 @@
     "vegetarian"
   ],
   "chef": "Matthieu de Lauzun",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Les Chambres du Prieuré",
+    "rooms": 10,
+    "url": "https://www.restaurant-delauzun.com/en/hotel",
+    "from": 210,
+    "note": "The chef’s own hotel at the Prieuré de Saint-Jean de Bébian.",
+    "checked": "2026-10-23"
+  }
 }

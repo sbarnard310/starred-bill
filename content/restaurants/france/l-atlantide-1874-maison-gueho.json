@@ -29,5 +29,15 @@
   ],
   "chef": "Jean-Yves Guého",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "name": "Maison Guého",
+    "rooms": 4,
+    "url": "https://www.atlantide1874.fr/maison-gueho-chambres-dhotes-hotel-loire/",
+    "from": 140,
+    "fromNote": "breakfast €18 per person extra",
+    "note": "Four double rooms with Loire views in the same 19th-century house; tourist tax is extra.",
+    "checked": "2026-10-23"
+  }
 }

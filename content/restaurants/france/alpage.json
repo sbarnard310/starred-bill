@@ -26,5 +26,12 @@
     "gluten-free"
   ],
   "chef": "Jean-Rémi Caillon",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Annapurna",
+    "rooms": 67,
+    "url": "https://www.annapurna-courchevel.com/en/rooms-overview.html",
+    "checked": "2026-10-23"
+  }
 }

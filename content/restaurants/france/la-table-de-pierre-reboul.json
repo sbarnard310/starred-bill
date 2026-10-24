@@ -36,5 +36,11 @@
     "gluten-free"
   ],
   "chef": "Pierre Reboul",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Renaissance Aix-en-Provence Hotel",
+    "url": "https://latabledepierrereboul.com",
+    "checked": "2026-10-23"
+  }
 }

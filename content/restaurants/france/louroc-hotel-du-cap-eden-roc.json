@@ -29,5 +29,11 @@
     "vegetarian"
   ],
   "chef": "Sébastien Broda",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel du Cap-Eden-Roc",
+    "url": "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc",
+    "checked": "2026-10-23"
+  }
 }

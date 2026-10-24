@@ -25,5 +25,12 @@
   "placeId": "ChIJ1YFmqNZv5kcRBAVR2JH8pEo",
   "michelinId": "1198294",
   "chef": "Arnaud Donckele",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cheval Blanc Paris",
+    "rooms": 72,
+    "url": "https://www.chevalblanc.com/en/maison/paris/rooms-and-suites/",
+    "checked": "2026-10-23"
+  }
 }

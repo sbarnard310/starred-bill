@@ -76,5 +76,13 @@
   "groups": "A table in the kitchen seats up to two people, watching Pierre Caillet's team at work, for €20 a head on top of the menu.",
   "infoSource": "https://maisoncaillet.com/fr/restaurant.html",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Maison Caillet",
+    "rooms": 5,
+    "url": "https://maisoncaillet.com/fr/hotel.html",
+    "note": "Five charming rooms in the chef’s hotel in Valmont.",
+    "checked": "2026-10-23"
+  }
 }

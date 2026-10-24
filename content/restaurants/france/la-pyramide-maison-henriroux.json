@@ -26,5 +26,13 @@
   "placeId": "ChIJL3M8Bajf9EcRdykVsVfrGp8",
   "michelinId": "13518",
   "chef": "Patrick Henriroux",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Pyramide",
+    "rooms": 23,
+    "url": "https://www.lapyramide.com/fr/sejour-chez-nous.html",
+    "note": "Relais & Châteaux hotel with 19 rooms and 4 family suites.",
+    "checked": "2026-10-23"
+  }
 }

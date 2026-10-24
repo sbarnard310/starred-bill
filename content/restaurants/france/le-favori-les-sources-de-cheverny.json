@@ -32,5 +32,22 @@
     "vegan"
   ],
   "chef": "Pierre Frindel",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Les Sources de Cheverny",
+    "rooms": 49,
+    "url": "https://www.sources-hotels.com/valdeloire/chambres-suites/",
+    "packages": [
+      {
+        "name": "Échappée gastronomique",
+        "includes": "A night for two adults, breakfast and dinner for two at Le Favori (four courses, water and hot drinks)",
+        "price": 570,
+        "from": true,
+        "when": "Dinner subject to availability; tourist tax of €3 per person per night extra",
+        "url": "https://www.sources-hotels.com/valdeloire/idee-sejour/echappee-gastronomique/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

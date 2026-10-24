@@ -31,5 +31,11 @@
   "chefSource": "press",
   "dinnerNote": "Truffle menu (€137 or €187 with black winter truffle; full truffle menu €218)",
   "dinnerNoteFr": "Menu truffe (137 € ou 187 € avec la truffe melanosporum ; grand menu 218 €)",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "rooms",
+    "url": "https://www.restaurantbruno.com/hebergement",
+    "note": "Provençal-style rooms and a villa at the restaurant’s own site in Lorgues.",
+    "checked": "2026-10-23"
+  }
 }

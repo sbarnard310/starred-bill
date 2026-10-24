@@ -31,5 +31,14 @@
     "gluten-free"
   ],
   "chef": "Lucas Dumelie",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Séchex Nous",
+    "rooms": 3,
+    "url": "https://www.sechex-nous.com/fr/sejourner.html",
+    "from": 100,
+    "fromNote": "breakfast €20 extra per person",
+    "checked": "2026-10-23"
+  }
 }

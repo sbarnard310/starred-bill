@@ -23,5 +23,12 @@
   "placeId": "ChIJAXJY_7QlVQ0R6evltwScDBs",
   "michelinId": "10342",
   "chef": "Mathieu Martin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Saint-James",
+    "url": "https://www.saintjames-bouliac.com/en/rooms.html",
+    "note": "Design hotel above the Garonne with 3 room types and 5 suites.",
+    "checked": "2026-10-23"
+  }
 }

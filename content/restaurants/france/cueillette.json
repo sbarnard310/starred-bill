@@ -28,5 +28,13 @@
   "placeId": "ChIJsa3WJ2crrRIReASE4-uBVYs",
   "michelinId": "1204675",
   "chef": "Oscar Garcia",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Cueillette",
+    "rooms": 5,
+    "url": "https://restaurant-cueillette.fr/les-chambres/",
+    "note": "A small charming hotel with five rooms overlooking the garden or the Dordogne valley; book rooms on its own site.",
+    "checked": "2026-10-23"
+  }
 }

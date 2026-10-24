@@ -88,5 +88,13 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Georges Blanc Parc & Spa",
+    "rooms": 42,
+    "url": "https://www.georgesblanc.com/en/accommodation/5-star-georges-blanc-hotel.html",
+    "note": "Five-star Relais & Châteaux hotel of 42 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

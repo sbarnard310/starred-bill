@@ -32,5 +32,15 @@
   "placeId": "ChIJ2w4KQU_590cRAu9wEno8JoM",
   "michelinId": "1215869",
   "chef": "Xavier Taffart",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Borie d’Hélipse",
+    "rooms": 12,
+    "url": "https://laboriedhelipse.com/chambres-suites-hotel-a-aurillac/",
+    "from": 185,
+    "fromNote": "roquerouge room, breakfast not included",
+    "note": "A four-star hotel and spa in Tournemire.",
+    "checked": "2026-10-23"
+  }
 }

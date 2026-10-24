@@ -28,5 +28,19 @@
     "vegetarian"
   ],
   "chef": "Grégory Garimbay",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Saint James Paris",
+    "url": "https://www.saint-james-paris.com/en/rooms.html",
+    "packages": [
+      {
+        "name": "Gourmet Offer",
+        "includes": "A night’s stay with breakfast at the restaurant and a 3-course dinner for two at Bellefeuille (drinks not included)",
+        "when": "Not available on Saturdays, Sundays or bank holidays; subject to availability",
+        "url": "https://www.saint-james-paris.com/en/hotel-offers.html"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -31,5 +31,13 @@
   ],
   "chef": "Jérôme Schilling",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Château Lafaurie-Peyraguey",
+    "rooms": 13,
+    "url": "https://www.lafauriepeyragueylalique.com/sejourner/lhotel/",
+    "note": "A five-star château hotel with 10 rooms and 3 suites in Sauternes.",
+    "checked": "2026-10-23"
+  }
 }

@@ -31,5 +31,29 @@
     "gluten-free"
   ],
   "chef": "Sylvain Roux",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château Blanchard",
+    "rooms": 10,
+    "url": "https://www.hotel-chateau-blanchard.com/chambres-chazelles-sur-lyon",
+    "packages": [
+      {
+        "name": "Escapade Inspiration",
+        "includes": "A night for two, two breakfasts, two gastronomic dinners with the Inspiration menu, Champagne aperitifs and a food and wine pairing (3 glasses each), tourist tax included",
+        "price": 530,
+        "per": "room",
+        "url": "https://www.hotel-chateau-blanchard.com/offres-forfaits-chazelles-sur-lyon"
+      },
+      {
+        "name": "Escapade Carte Blanche",
+        "includes": "A night for two, two breakfasts, two gastronomic dinners with the Carte Blanche menu, Champagne aperitifs and a food and wine pairing (4 glasses each), tourist tax included",
+        "price": 625,
+        "per": "room",
+        "url": "https://www.hotel-chateau-blanchard.com/offres-forfaits-chazelles-sur-lyon"
+      }
+    ],
+    "note": "Ten rooms in a château hotel.",
+    "checked": "2026-10-23"
+  }
 }

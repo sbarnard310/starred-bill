@@ -26,5 +26,11 @@
   "placeId": "ChIJYVDYuMSADkgRGateIaMrEZg",
   "michelinId": "484180",
   "chef": "Julien Hennote",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Castelbrac Hôtel & Spa",
+    "url": "https://www.castelbrac.com/en/offers-and-gift-box.html",
+    "checked": "2026-10-23"
+  }
 }

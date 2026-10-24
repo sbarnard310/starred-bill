@@ -31,5 +31,13 @@
     "vegetarian"
   ],
   "chef": "Émilie Roussey and Thomas Roussey",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Moulin de Cambelong",
+    "rooms": 9,
+    "url": "https://moulindecambelong.com/hotel-sejour/",
+    "note": "Hotel with 9 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

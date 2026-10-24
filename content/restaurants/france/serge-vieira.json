@@ -26,5 +26,15 @@
   "placeId": "ChIJRyjBJ9zQshIRf5uCYmkPMnI",
   "michelinId": "258222",
   "chef": "Aurélien Gransagne",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Serge Vieira Hotel",
+    "rooms": 3,
+    "url": "https://www.sergevieira.com/en/rooms-serge-vieira.html",
+    "from": 475,
+    "fromNote": "including continental breakfast",
+    "note": "Three rooms in the medieval Château de Couffour, where the restaurant is.",
+    "checked": "2026-10-23"
+  }
 }

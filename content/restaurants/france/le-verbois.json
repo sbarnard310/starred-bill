@@ -30,5 +30,12 @@
     "vegan"
   ],
   "chef": "Guillaume Guibet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine Le Verbois",
+    "url": "https://www.leverbois.fr/en/rooms/",
+    "note": "Hotel and starred restaurant on a family-run estate near Senlis and Chantilly, with rooms and suites named after garden flowers.",
+    "checked": "2026-10-23"
+  }
 }

@@ -30,5 +30,22 @@
   "placeId": "ChIJ1Q6fsH6tzRIRkHJkAd-yG3g",
   "michelinId": "1203180",
   "chef": "Louis-Philippe Riel",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge de la Roche",
+    "url": "https://www.laubergedelaroche.com/reserver-un-sejour",
+    "packages": [
+      {
+        "name": "Stay package (room, dinners and breakfast)",
+        "includes": "A room for two, the ‘Menu Carte Blanche’ dinner for two (€95 each), breakfast, and entry to the outdoor baths and sauna; drinks extra; suites €550",
+        "price": 515,
+        "per": "room",
+        "when": "Non-refundable and non-modifiable",
+        "url": "https://www.laubergedelaroche.com"
+      }
+    ],
+    "note": "An inn above Valdeblore with an outdoor bath and sauna; the restaurant opens Friday to Monday.",
+    "checked": "2026-10-23"
+  }
 }

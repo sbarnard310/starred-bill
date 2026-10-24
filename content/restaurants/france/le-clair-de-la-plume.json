@@ -33,5 +33,13 @@
     "gluten-free"
   ],
   "chef": "Benjamin Reilhes",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Clair de la Plume",
+    "rooms": 9,
+    "url": "https://www.clairplume.com/dormir-hotel/",
+    "note": "A four-star hotel with nine rooms and suites in Grignan; the owners’ other houses add more rooms.",
+    "checked": "2026-10-23"
+  }
 }

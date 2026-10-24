@@ -28,5 +28,12 @@
   "placeId": "ChIJc0pAf44TUQ0RFN1NoX_D00A",
   "michelinId": "235136",
   "chef": "David Ibarboure",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Maison Briketenia",
+    "url": "https://www.briketenia.com/fr/chambres/",
+    "note": "A charming hotel with Confort, Grand Confort and Junior Suite rooms.",
+    "checked": "2026-10-23"
+  }
 }

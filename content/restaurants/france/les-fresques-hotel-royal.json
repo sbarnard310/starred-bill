@@ -26,5 +26,11 @@
   "placeId": "ChIJIXCvsFMjjEcR4bk60qa3UIE",
   "michelinId": "400460",
   "chef": "Yohan Fatela",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Royal Evian",
+    "url": "https://hotel-royal.evianresort.com/en/suites-rooms/rooms",
+    "checked": "2026-10-23"
+  }
 }

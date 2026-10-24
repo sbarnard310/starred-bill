@@ -31,5 +31,14 @@
     "gluten-free"
   ],
   "chef": "Bastien Gillet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge Pom’Poire",
+    "rooms": 7,
+    "url": "https://aubergepompoire.fr/les-chambres/",
+    "from": 140,
+    "note": "Four ‘Caractère’ rooms and three ‘Signature’ cabanes, from 140 to 180.",
+    "checked": "2026-10-23"
+  }
 }

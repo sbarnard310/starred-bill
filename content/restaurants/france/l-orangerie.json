@@ -30,5 +30,34 @@
   ],
   "chef": "Hugo Souchet",
   "chefSource": "press",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Les Prés d’Eugénie",
+    "rooms": 45,
+    "url": "https://lespresdeugenie.com/les-chambres/",
+    "from": 270,
+    "packages": [
+      {
+        "name": "Fugue Étoilée",
+        "includes": "A night for two, breakfasts, a glass of champagne and the 7-course ‘Jour de Fête’ dinner for two at the starred restaurant (drinks extra)",
+        "price": 1005,
+        "from": true,
+        "per": "room",
+        "when": "Tourist tax extra",
+        "url": "https://lespresdeugenie.com/les-forfaits/fugue-etoilee-1-nuit/"
+      },
+      {
+        "name": "Fugue Gourmande",
+        "includes": "A night for two, breakfast, a glass of champagne and a 3-course dinner for two at L’Orangerie (drinks extra), plus use of the spa area",
+        "price": 653,
+        "from": true,
+        "per": "room",
+        "when": "Tourist tax extra; free cancellation up to 15 days before",
+        "url": "https://lespresdeugenie.com/les-forfaits/fugue-gourmande-1-nuit/"
+      }
+    ],
+    "note": "Michel Guérard’s estate with 45 rooms and suites in Eugénie-les-Bains.",
+    "checked": "2026-10-23"
+  }
 }

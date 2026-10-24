@@ -31,5 +31,12 @@
     "gluten-free"
   ],
   "chef": "Christophe Poirier",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Licorne Hôtel & Spa",
+    "url": "https://www.hotel-licorne.com/les-chambres/",
+    "note": "Housed in the Licorne hotel with a spa; its sister hotel Le Grand Cerf is next door.",
+    "checked": "2026-10-23"
+  }
 }

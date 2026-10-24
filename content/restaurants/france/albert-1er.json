@@ -26,5 +26,21 @@
     "vegetarian"
   ],
   "chef": "Damien Leveau",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hameau Albert 1er",
+    "url": "https://www.hameaualbert.fr/fr/hotel/",
+    "packages": [
+      {
+        "name": "Séjour Améthyste",
+        "includes": "A night in a luxury room for two, a gastronomic experience and a spa break",
+        "price": 1510,
+        "per": "room",
+        "url": "https://www.hameaualbert.fr/fr/formules-et-coffrets-cadeaux/"
+      }
+    ],
+    "note": "Hotel of suites and separate chalets in Chamonix; the restaurant is closed Wednesday and Thursday.",
+    "checked": "2026-10-23"
+  }
 }

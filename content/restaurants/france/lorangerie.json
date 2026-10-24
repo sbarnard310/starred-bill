@@ -25,5 +25,11 @@
   "placeId": "ChIJZ8yNJuhv5kcRAcHrclt49NM",
   "michelinId": "505878",
   "chef": "Bertrand Noeureuil",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Four Seasons Hotel George V",
+    "url": "https://www.fourseasons.com/paris/",
+    "checked": "2026-10-23"
+  }
 }

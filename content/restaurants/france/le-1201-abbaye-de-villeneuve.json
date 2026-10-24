@@ -26,5 +26,13 @@
   "placeId": "ChIJ-wOVymXDBUgROdgNb6zX2pc",
   "michelinId": "1202911",
   "chef": "David Ferré",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Abbaye de Villeneuve",
+    "rooms": 17,
+    "url": "https://www.abbayedevilleneuve.com/fr/chambres-suites/",
+    "note": "One of several restaurants at the Abbaye de Villeneuve hotel, which has 17 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

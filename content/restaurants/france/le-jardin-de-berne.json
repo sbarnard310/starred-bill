@@ -27,5 +27,21 @@
     "gluten-free"
   ],
   "chef": "Louis Rameau",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château de Berne",
+    "rooms": 34,
+    "url": "https://www.chateauberne.com/hotel-et-villa/chambres-suites/",
+    "packages": [
+      {
+        "name": "La vie de Château",
+        "includes": "A night in a classic double room, breakfast, a five-course dinner at the starred Le Jardin de Berne (drinks extra) and spa access",
+        "when": "All year except July and August",
+        "url": "https://www.chateauberne.com/offre-speciale/la-vie-de-chateau/"
+      }
+    ],
+    "note": "34 rooms plus villas on a wine estate.",
+    "checked": "2026-10-23"
+  }
 }

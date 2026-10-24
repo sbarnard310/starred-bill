@@ -31,5 +31,12 @@
     "vegan"
   ],
   "chef": "Thibaut Gamba",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Logis de la Cadène",
+    "url": "https://www.logisdelacadene.fr/fr/chambres-suite.html",
+    "note": "Boutique hotel in Saint-Émilion above the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

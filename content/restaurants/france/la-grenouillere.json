@@ -80,5 +80,12 @@
       "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Grenouillère",
+    "url": "https://www.lagrenouillere.fr/en/",
+    "note": "Stay in garden huts, junior suites in the old farmhouse or suites in La maison de la source.",
+    "checked": "2026-10-23"
+  }
 }

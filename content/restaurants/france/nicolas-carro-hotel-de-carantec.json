@@ -35,5 +35,24 @@
     "kosher"
   ],
   "chef": "Nicolas Carro",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel de Carantec",
+    "rooms": 14,
+    "url": "https://www.hotel-carantec.fr/les-chambres/",
+    "packages": [
+      {
+        "name": "Escapade gastronomique",
+        "includes": "A night in a double room for two, the L’Expression menu (drinks not included), buffet breakfast",
+        "price": 479,
+        "from": true,
+        "per": "room",
+        "when": "Wednesday to Sunday",
+        "url": "https://www.hotel-carantec.fr/portfolio-items/escapade-gastronomique/"
+      }
+    ],
+    "note": "A 14-room hotel with the starred restaurant.",
+    "checked": "2026-10-23"
+  }
 }

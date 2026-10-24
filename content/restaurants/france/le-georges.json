@@ -31,5 +31,11 @@
     "vegan"
   ],
   "chef": "Thomas Parnaud",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Grand Monarque",
+    "url": "https://www.grand-monarque.com/fr/offres-speciales.html",
+    "checked": "2026-10-23"
+  }
 }

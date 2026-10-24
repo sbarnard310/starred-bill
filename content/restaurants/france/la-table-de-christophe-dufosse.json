@@ -26,5 +26,29 @@
   "placeId": "ChIJ6zD5m2Ud3UcRI8X9Qqrc6Bc",
   "michelinId": "118886",
   "chef": "Christophe Dufossé",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine & Château de Beaulieu",
+    "rooms": 28,
+    "url": "https://www.ledomainedebeaulieu.fr/en/hotel.html",
+    "packages": [
+      {
+        "name": "Le séjour balade gastronomique",
+        "includes": "A night in a double room, dinner for two at the Christophe Dufossé restaurant (7-course menu, drinks extra), breakfast for two (drinks extra)",
+        "per": "room",
+        "when": "Breakfast valid Wednesday to Saturday",
+        "url": "https://www.ledomainedebeaulieu.fr/fr/offres/le-sejour-balade-gastronomique.html"
+      },
+      {
+        "name": "Le séjour découverte",
+        "includes": "A night in a double room, dinner for two at the Christophe Dufossé restaurant (3-course menu, drinks extra), breakfast for two (drinks extra)",
+        "per": "room",
+        "when": "Breakfast valid Wednesday to Saturday",
+        "url": "https://www.ledomainedebeaulieu.fr/fr/offres/le-sejour-decouverte.html"
+      }
+    ],
+    "note": "A 28-room château hotel with a spa in the grounds, run by the chef and his wife.",
+    "checked": "2026-10-23"
+  }
 }

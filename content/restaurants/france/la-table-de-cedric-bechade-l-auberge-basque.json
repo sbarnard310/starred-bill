@@ -32,5 +32,24 @@
     "gluten-free"
   ],
   "chef": "Cédric Béchade",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "L’Auberge Basque",
+    "rooms": 12,
+    "url": "https://www.aubergebasque.com/escapades-immersives-les-sejours-signes-marion/les-chambres/",
+    "packages": [
+      {
+        "name": "Soirée amoureuse",
+        "includes": "A night in a classic room for two, breakfast, the five-course ‘Randonnée Culinaire’ dinner for two at the starred restaurant (drinks extra), two Café Basque cocktails and half a day’s electric bike hire",
+        "price": 688,
+        "from": true,
+        "per": "room",
+        "when": "Tuesday to Saturday, October to June; not on bridge weekends, public holidays, 14 February or 31 December",
+        "url": "https://www.aubergebasque.com/escapades-immersives-les-sejours-signes-marion/les-offres-holistiques/"
+      }
+    ],
+    "note": "A 12-room hotel in Saint-Pée-sur-Nivelle; book two nights and the third is free from September to March.",
+    "checked": "2026-10-23"
+  }
 }

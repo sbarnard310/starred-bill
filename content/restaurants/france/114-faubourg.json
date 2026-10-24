@@ -38,5 +38,11 @@
   "bookingPhone": "+33 1 53 43 44 44",
   "groups": "The restaurant can be booked in full or in part for private and corporate events.",
   "infoSource": "https://www.oetkerhotels.com/hotels/le-bristol-paris/restaurants-bars/114-faubourg/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Bristol Paris",
+    "url": "https://www.oetkerhotels.com/fr/hotels/le-bristol-paris/",
+    "checked": "2026-10-23"
+  }
 }

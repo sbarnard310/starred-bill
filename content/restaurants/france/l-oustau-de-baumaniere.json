@@ -75,5 +75,13 @@
   "children": "There is a children's menu: starter, main and dessert €70, or two courses €50.",
   "infoSource": "https://www.baumaniere.com/gastronomie/loustau-de-baumaniere/",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Baumanière",
+    "rooms": 53,
+    "url": "https://www.baumaniere.com/hebergement/nos-chambres/",
+    "note": "Five houses in Les Baux; hotel guests are asked to phone the hotel to book a table at L’Oustau.",
+    "checked": "2026-10-23"
+  }
 }

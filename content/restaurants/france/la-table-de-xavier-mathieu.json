@@ -33,5 +33,29 @@
     "gluten-free"
   ],
   "chef": "Xavier Mathieu",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Phébus & Spa",
+    "rooms": 31,
+    "url": "https://www.lephebus.com/fr/page/chambres-hotel-spa-gordes.7539.html",
+    "packages": [
+      {
+        "name": "Expérience Étoilée",
+        "includes": "Accommodation, breakfasts, a 5-course dinner at La Table de Xavier Mathieu (drinks extra) and spa access",
+        "price": 695,
+        "from": true,
+        "url": "https://www.lephebus.com/fr/page/offres-hotel-spa-vaucluse.21024.html"
+      },
+      {
+        "name": "Spa & Détente",
+        "includes": "Accommodation, breakfasts, a 5-course dinner at La Table de Xavier Mathieu (drinks extra), one 50-minute treatment per person and spa access",
+        "price": 1001,
+        "from": true,
+        "url": "https://www.lephebus.com/fr/page/offres-hotel-spa-vaucluse.21024.html"
+      }
+    ],
+    "note": "30 rooms and suites plus a private villa, Les Anges.",
+    "checked": "2026-10-23"
+  }
 }

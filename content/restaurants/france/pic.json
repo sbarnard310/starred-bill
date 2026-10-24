@@ -28,5 +28,13 @@
   "placeId": "ChIJPW8V6jxY9UcRviWonC3leP8",
   "michelinId": "13417",
   "chef": "Anne-Sophie Pic",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Pic",
+    "rooms": 16,
+    "url": "https://www.anne-sophie-pic.com/lhotel-pic",
+    "note": "The Hôtel Pic is next to the restaurant in Valence; stays can be bought as gift vouchers.",
+    "checked": "2026-10-23"
+  }
 }

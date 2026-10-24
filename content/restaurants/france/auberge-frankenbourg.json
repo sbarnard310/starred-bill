@@ -31,5 +31,27 @@
   ],
   "chef": "Sébastien Buecher",
   "chefSource": "site",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Logis Hôtel Frankenbourg",
+    "url": "https://www.frankenbourg.com/fr/hotel-selestat/",
+    "packages": [
+      {
+        "name": "Échappée, gastronomie, repos et nature",
+        "includes": "A night in a double room for two, breakfast, and a 5-course gourmet menu for two with wines, water, aperitifs and coffee",
+        "per": "room",
+        "when": "Friday to Tuesday",
+        "url": "https://www.frankenbourg.com/fr/hotel-selestat/"
+      },
+      {
+        "name": "Longue Échappée",
+        "includes": "A night in a double room for two, breakfast and the long gourmet menu for two with drinks",
+        "per": "room",
+        "url": "https://www.frankenbourg.com/fr/hotel-selestat/"
+      }
+    ],
+    "note": "A small hotel of 10 rooms and a suite with the restaurant on site; breakfast otherwise €19 per person.",
+    "checked": "2026-10-23"
+  }
 }

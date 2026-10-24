@@ -26,5 +26,30 @@
   "placeId": "ChIJv0VRxUDktRIRzFNPP-9NV2U",
   "michelinId": "430007",
   "chef": "Fanny Rey and Jonathan Wahid",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge de Saint-Rémy",
+    "url": "https://www.aubergesaintremy.com/fr/hotel-auberge-de-saint-remy.html",
+    "packages": [
+      {
+        "name": "Séjour Intensité",
+        "includes": "A night in a double room for two, the starred restaurant’s Menu Intensité dinner and a gourmet breakfast",
+        "price": 900,
+        "per": "room",
+        "when": "By reservation, subject to availability",
+        "url": "https://www.aubergesaintremy.com/fr/sejour-royal-prestige-sur-mesure.html"
+      },
+      {
+        "name": "Séjour Le Grand Poème",
+        "includes": "A night in a Deluxe double room for two, the starred restaurant’s Menu Le Grand Poème dinner and a gourmet breakfast",
+        "price": 1300,
+        "per": "room",
+        "when": "By reservation, subject to availability",
+        "url": "https://www.aubergesaintremy.com/fr/sejour-royal-sur-mesure-prestige-accord-mets--vins.html"
+      }
+    ],
+    "note": "The hotel has rooms in the village centre and a villa-style Mas Garance.",
+    "checked": "2026-10-23"
+  }
 }

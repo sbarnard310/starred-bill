@@ -81,5 +81,11 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "The Peninsula Paris",
+    "url": "https://www.peninsula.com/en/paris/5-star-luxury-hotel-16th-arrondissement",
+    "checked": "2026-10-23"
+  }
 }

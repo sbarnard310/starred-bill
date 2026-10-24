@@ -59,5 +59,13 @@
   "bookingPhone": "+33 4 74 03 20 16",
   "groups": "The restaurant can be booked privately for up to 34 people.",
   "infoSource": "https://www.aubergedeclochemerle.fr/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Auberge de Clochemerle",
+    "rooms": 10,
+    "url": "https://www.aubergedeclochemerle.fr/fr/hotel.html",
+    "note": "A 10-room inn in the Beaujolais with a spa.",
+    "checked": "2026-10-23"
+  }
 }

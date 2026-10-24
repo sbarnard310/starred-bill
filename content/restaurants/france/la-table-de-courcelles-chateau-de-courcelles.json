@@ -31,5 +31,52 @@
     "gluten-free"
   ],
   "chef": "Massimiliano Sena",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château de Courcelles",
+    "rooms": 20,
+    "url": "https://www.chateau-de-courcelles.fr/en/overview.html",
+    "packages": [
+      {
+        "name": "Life in a castle",
+        "includes": "A night for two in a Tradition, Superior or Prestige room or a suite, a three-course dinner chosen by the chef (drinks extra), breakfast",
+        "price": 385,
+        "from": true,
+        "per": "room",
+        "when": "Sunday to Thursday, excluding bank holidays and special events",
+        "url": "https://www.chateau-de-courcelles.fr/en/hotel-offers.html"
+      },
+      {
+        "name": "Gourmet Experience",
+        "includes": "A night for two in a Superior or Prestige room or a suite, five-course dinner with the sommelier’s wine pairing (water and hot drinks included), breakfast",
+        "price": 529,
+        "from": true,
+        "per": "room",
+        "when": "Every day, excluding bank holidays and special events",
+        "url": "https://www.chateau-de-courcelles.fr/en/hotel-offers.html"
+      },
+      {
+        "name": "Champagne Lovers",
+        "includes": "A night for two in a Prestige room or a suite, seven-course dinner with the sommelier’s wine pairing, breakfast, a bottle of Champagne on arrival and flowers",
+        "price": 709,
+        "from": true,
+        "per": "room",
+        "when": "Every day, excluding bank holidays and special events",
+        "url": "https://www.chateau-de-courcelles.fr/en/hotel-offers.html"
+      },
+      {
+        "name": "Champagne Bubbles",
+        "includes": "Two nights for two in a Superior or Prestige room or a suite, five-course dinner each evening (drinks extra), breakfast, a bottle of Champagne and a Champagne tasting workshop",
+        "price": 1058,
+        "from": true,
+        "per": "room",
+        "nights": 2,
+        "when": "Two-night stays only, excluding bank holidays and special events",
+        "url": "https://www.chateau-de-courcelles.fr/en/hotel-offers.html"
+      }
+    ],
+    "note": "A 20-room family-owned château hotel.",
+    "checked": "2026-10-23"
+  }
 }

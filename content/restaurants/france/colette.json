@@ -23,5 +23,20 @@
   "placeId": "ChIJ09pmg87AzhIR9llFMfIexd0",
   "michelinId": "1192024",
   "chef": "Philippe Colinet",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Sezz Saint-Tropez",
+    "rooms": 37,
+    "url": "https://saint-tropez.hotelsezz.com/",
+    "packages": [
+      {
+        "name": "L’Essentiel",
+        "includes": "A night in a room or suite, breakfast for two, a welcome cocktail, dinner for two at Colette (drinks extra), two glasses of Moët & Chandon champagne in the room, a 50-minute couples massage and spa access",
+        "url": "https://saint-tropez.hotelsezz.com/packages-bons-cadeaux"
+      }
+    ],
+    "note": "Both reopen from 7 May 2027.",
+    "checked": "2026-10-23"
+  }
 }

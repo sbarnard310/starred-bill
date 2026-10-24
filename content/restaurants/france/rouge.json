@@ -23,5 +23,19 @@
   "placeId": "ChIJv6e9IAottBIRa76ehrrC2u4",
   "michelinId": "1200806",
   "chef": "Luka-Tao Debenath",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Margaret Hôtel Chouleur",
+    "rooms": 10,
+    "url": "https://www.margaret-hotelchouleur.com/chambres-et-suites/",
+    "packages": [
+      {
+        "name": "Séjour étoilé",
+        "includes": "A night in a room or suite for two, two breakfasts and the 8-course tasting menu at Rouge for two (drinks extra)",
+        "url": "https://www.margaret-hotelchouleur.com/offres/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -32,5 +32,13 @@
   "chefSource": "site",
   "dinnerNote": "En sept escales menu, 7 courses, not Saturday evenings (9 courses €148)",
   "dinnerNoteFr": "Menu En sept escales, non proposé le samedi soir (En neuf escales 148 €)",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "La Butte Hôtel & Spa",
+    "rooms": 32,
+    "url": "https://labutte.fr/hotel/",
+    "note": "Sea-view hotel and spa with 32 rooms plus junior suites.",
+    "checked": "2026-10-23"
+  }
 }

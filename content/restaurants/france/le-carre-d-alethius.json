@@ -26,5 +26,33 @@
   "placeId": "ChIJPZI4avVMtRIRQjDv5cQfNJU",
   "michelinId": "286092",
   "chef": "Olivier Samin",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Carré d’Alethius",
+    "rooms": 9,
+    "url": "https://www.lecarredalethius.com/fr/hotel.html",
+    "from": 90,
+    "fromNote": "double Standard; the Junior Suite is from €140",
+    "packages": [
+      {
+        "name": "Séjour Gourmand Grand Carré",
+        "includes": "A night in a double or twin room with terrace for two, a glass of champagne, the Grand Carré dinner menu at the restaurant (drinks extra), continental buffet breakfast and a private parking space. Junior Suite €380",
+        "price": 350,
+        "per": "room",
+        "when": "Tuesday to Saturday evenings",
+        "url": "https://www.lecarredalethius.com/fr/sejours-valence-sud/sejours-gourmands.html"
+      },
+      {
+        "name": "Séjour Gourmand Alethius",
+        "includes": "A night in a double or twin room with terrace for two, a glass of champagne, the Alethius dinner menu at the restaurant (drinks extra), continental buffet breakfast and a private parking space. Junior Suite €460",
+        "price": 430,
+        "per": "room",
+        "when": "Tuesday to Saturday evenings",
+        "url": "https://www.lecarredalethius.com/fr/sejours-valence-sud/sejours-gourmands.html"
+      }
+    ],
+    "note": "A small hotel with nine rooms next to the restaurant; the gourmet stays are for two.",
+    "checked": "2026-10-23"
+  }
 }

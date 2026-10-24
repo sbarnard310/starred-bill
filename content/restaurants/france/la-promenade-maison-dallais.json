@@ -31,5 +31,14 @@
     "vegetarian"
   ],
   "chef": "Fabrice Dallais",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "rooms",
+    "name": "Maison Dallais",
+    "rooms": 2,
+    "url": "https://www.restaurantdallaislapromenade.com/en/our-b-b/the-chinon-room/",
+    "from": 220,
+    "note": "Two bed-and-breakfast rooms (Chinon and Saumur) with a wellness space at Maison Dallais, beside the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

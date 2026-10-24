@@ -28,5 +28,13 @@
   "chef": "Jérôme Jouadé",
   "chefSource": "michelin",
   "dinnerNote": "Explorer menu, 6 courses (Strolling, 9 courses, €130)",
-  "dinnerNoteFr": "Menu Explorateur, 6 temps (Flânerie, 9 temps, 130 €)"
+  "dinnerNoteFr": "Menu Explorateur, 6 temps (Flânerie, 9 temps, 130 €)",
+  "stay": {
+    "kind": "hotel",
+    "name": "L’EssenCiel, Domaine du Château des Pères",
+    "rooms": 42,
+    "url": "https://www.chateaudesperes.fr/hotel-4-etoiles-charme-original-proche-rennes",
+    "note": "A 4-star spa hotel with 42 rooms on the estate, near Rennes.",
+    "checked": "2026-10-23"
+  }
 }

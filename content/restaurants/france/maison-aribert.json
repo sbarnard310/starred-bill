@@ -62,5 +62,13 @@
   "bookingUrl": "https://maisonaribert.com/reserver-maison-aribert/",
   "bookingPhone": "+33 4 58 17 48 30",
   "infoSource": "https://maisonaribert.com/les-horaires-et-le-calendrier-douverture/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Maison Aribert",
+    "rooms": 5,
+    "url": "https://maisonaribert.com/hotel/les-chambres/",
+    "note": "Five guest rooms in the chef’s own house in the park at Uriage-les-Bains.",
+    "checked": "2026-10-23"
+  }
 }

@@ -33,5 +33,12 @@
     "gluten-free"
   ],
   "chef": "Josselin Jeanblanc",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Pashmina",
+    "url": "https://www.hotelpashmina.com/fr/offres-speciales",
+    "note": "A five-star hotel in Val Thorens with the starred restaurant inside.",
+    "checked": "2026-10-23"
+  }
 }

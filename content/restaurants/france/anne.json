@@ -31,5 +31,11 @@
     "vegetarian"
   ],
   "chef": "Thibault Sombardier",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Pavillon de la Reine",
+    "url": "https://www.pavillon-de-la-reine.com/chambres",
+    "checked": "2026-10-23"
+  }
 }

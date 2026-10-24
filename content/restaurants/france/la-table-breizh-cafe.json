@@ -28,5 +28,14 @@
   "wine": 39,
   "lunchWine": 39,
   "dinnerNote": "Seasonal menu",
-  "dinnerNoteFr": "Menu de saison"
+  "dinnerNoteFr": "Menu de saison",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 5,
+    "url": "https://www.breizhcafe.com/les-chambres",
+    "from": 128,
+    "fromNote": "sea-view room, including breakfast",
+    "note": "Five rooms above the Breizh Café crêperie and the starred restaurant in Cancale.",
+    "checked": "2026-10-23"
+  }
 }

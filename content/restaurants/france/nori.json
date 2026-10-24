@@ -26,5 +26,24 @@
     "vegetarian"
   ],
   "chef": "Loïc Le Bail",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Brittany & Spa",
+    "rooms": 29,
+    "url": "https://www.hotel-brittany.com/sejourner-au-manoir/",
+    "packages": [
+      {
+        "name": "Séjour Dégustation",
+        "includes": "A night in a double room for two, two à la carte dinners at Nori, the chef’s breakfast and spa access (heated pool); dearer sea-view rooms cost 490 to 590",
+        "price": 390,
+        "from": true,
+        "per": "room",
+        "when": "12 February to 30 April, Sunday, Wednesday and Thursday; prepaid and non-refundable",
+        "url": "https://www.hotel-brittany.com/nos-offres-exclusives/"
+      }
+    ],
+    "note": "A 4-star Relais & Châteaux hotel with 26 rooms and 3 suites.",
+    "checked": "2026-10-23"
+  }
 }

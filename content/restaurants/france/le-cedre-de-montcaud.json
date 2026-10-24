@@ -27,5 +27,12 @@
     "vegetarian"
   ],
   "chef": "Matthieu Hervé",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Château de Montcaud",
+    "rooms": 29,
+    "url": "https://www.chateaudemontcaud.com/fr/chambres-et-suites",
+    "checked": "2026-10-23"
+  }
 }

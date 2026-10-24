@@ -27,5 +27,12 @@
     "gluten-free"
   ],
   "chef": "Yann Maget",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Domaine de Locguénolé",
+    "url": "https://www.domaine-locguenole.com/en/relais-et-chateaux-bretagne-accommodation/",
+    "note": "A Relais & Châteaux estate with several buildings, plus family houses and a villa.",
+    "checked": "2026-10-23"
+  }
 }

@@ -31,5 +31,12 @@
     "vegan"
   ],
   "chef": "Didier Goiffon",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Huchette",
+    "url": "https://la-huchette.com/fr/hotel.html",
+    "note": "Three-star hotel of character.",
+    "checked": "2026-10-23"
+  }
 }

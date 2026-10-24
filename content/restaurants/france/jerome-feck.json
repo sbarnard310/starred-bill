@@ -31,5 +31,15 @@
     "gluten-free"
   ],
   "chef": "Jérôme Feck",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel d’Angleterre",
+    "rooms": 20,
+    "url": "https://www.hotel-dangleterre.fr/fr/hotel/",
+    "from": 125,
+    "fromNote": "classic room, taxes and service included, breakfast €18 extra",
+    "note": "The restaurant is the gastronomic table of Hôtel d’Angleterre in Châlons-en-Champagne; tourist tax €2.31 per person per night is extra.",
+    "checked": "2026-10-23"
+  }
 }

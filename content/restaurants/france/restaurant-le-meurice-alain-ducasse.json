@@ -61,5 +61,11 @@
   "dressCode": "Jacket required for men.",
   "infoSource": "https://www.alainducasse-meurice.com/en/contact",
   "infoChecked": "2026-10-13",
-  "dietsManual": true
+  "dietsManual": true,
+  "stay": {
+    "kind": "hotel",
+    "name": "Le Meurice",
+    "url": "https://www.dorchestercollection.com/en/paris/le-meurice/rooms-suites",
+    "checked": "2026-10-23"
+  }
 }

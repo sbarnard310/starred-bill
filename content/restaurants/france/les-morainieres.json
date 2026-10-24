@@ -62,5 +62,13 @@
       "url": "https://www.laliste.com/places/les-morainieres-jongieux-fr"
     }
   ],
-  "rankingsChecked": "2026-10-13"
+  "rankingsChecked": "2026-10-13",
+  "stay": {
+    "kind": "rooms",
+    "name": "Maison des Morainières",
+    "rooms": 6,
+    "url": "https://www.les-morainieres.com/fr/chambres.html",
+    "note": "Six rooms in the owners’ guest house at Saint-Pierre-de-Curtille, a few minutes from the restaurant, with a shuttle to lunch and dinner.",
+    "checked": "2026-10-23"
+  }
 }

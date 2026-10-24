@@ -26,5 +26,13 @@
   "placeId": "ChIJZ9V4b7rClkcRybWoEHZT4hU",
   "michelinId": "2976",
   "chef": "Ludovic Kientz",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Au Gourmet",
+    "rooms": 8,
+    "url": "https://www.au-gourmet.fr/fr/hotel.html",
+    "note": "A hotel-restaurant with eight rooms, one a suite; the hotel is closed 26 October to 4 November 2026.",
+    "checked": "2026-10-23"
+  }
 }

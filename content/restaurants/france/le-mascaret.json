@@ -34,5 +34,12 @@
     "gluten-free"
   ],
   "chef": "Philippe Hardy",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "rooms": 5,
+    "url": "https://lemascaret.fr/les-chambres/",
+    "note": "Five rooms with the restaurant and a spa.",
+    "checked": "2026-10-23"
+  }
 }

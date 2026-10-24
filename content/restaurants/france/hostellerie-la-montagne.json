@@ -29,5 +29,13 @@
     "vegetarian"
   ],
   "chef": "Jean-Baptiste Natali",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hostellerie la Montagne",
+    "rooms": 9,
+    "url": "https://www.hostellerielamontagne.com/nos-chambres/",
+    "note": "An inn with eight rooms and one suite above the restaurant in Colombey-les-Deux-Églises.",
+    "checked": "2026-10-23"
+  }
 }

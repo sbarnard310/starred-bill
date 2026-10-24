@@ -31,5 +31,26 @@
     "vegetarian"
   ],
   "chef": "Fabien Raux",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "rooms",
+    "name": "Clos Marie",
+    "url": "https://www.restaurantdelaloire.fr/closmarie",
+    "packages": [
+      {
+        "name": "Rêve de Nature - Nuitée & Dîner",
+        "includes": "A night at Clos Marie and dinner, sold as a gift voucher on the restaurant’s site",
+        "price": 341,
+        "url": "https://www.restaurantdelaloire.fr/closmarie"
+      },
+      {
+        "name": "Doux Songes étoilés - Nuitée & Dîner",
+        "includes": "A night at Clos Marie and the starred dinner, sold as a gift voucher on the restaurant’s site",
+        "price": 521,
+        "url": "https://www.restaurantdelaloire.fr/closmarie"
+      }
+    ],
+    "note": "Clos Marie is a guest house at Iguerande, linked from the restaurant’s site, not in the same building.",
+    "checked": "2026-10-23"
+  }
 }

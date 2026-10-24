@@ -24,5 +24,11 @@
   "michelinId": "12838",
   "chef": "Yoric Tièche",
   "chefSource": "site",
-  "notice": "Closed for the winter from 25 October 2026; reopens in April 2027 (its hotel’s website)"
+  "notice": "Closed for the winter from 25 October 2026; reopens in April 2027 (its hotel’s website)",
+  "stay": {
+    "kind": "hotel",
+    "name": "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel",
+    "url": "https://www.fourseasons.com/fr/capferrat/",
+    "checked": "2026-10-23"
+  }
 }

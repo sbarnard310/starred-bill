@@ -26,5 +26,29 @@
   "placeId": "ChIJlxSb76FN9EcRobk17m5PTE8",
   "michelinId": "900001",
   "chef": "Antoine Bergeron",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "La Charpinière",
+    "url": "https://lacharpiniere.com/fr/loire-hotel-4-etoiles/",
+    "packages": [
+      {
+        "name": "Week-end Gastronomique",
+        "includes": "A night in a Privilège room for two, buffet breakfast and dinner for two at La Source with the ‘Balade en 6 étapes’ menu (drinks extra)",
+        "price": 386,
+        "per": "room",
+        "when": "Friday or Saturday night, subject to availability",
+        "url": "https://lacharpiniere.com/fr/hotel-offres-week-end/"
+      },
+      {
+        "name": "Week-end détente étoilé",
+        "includes": "A night in a Privilège room for two, buffet breakfast, dinner for two at La Source with the ‘Balade en 10 étapes’ menu including aperitif, food and wine pairing, plus a 60-minute VIP spa session and a 40-minute massage",
+        "price": 781,
+        "per": "room",
+        "when": "Friday or Saturday night, subject to availability",
+        "url": "https://lacharpiniere.com/fr/hotel-offres-week-end/"
+      }
+    ],
+    "checked": "2026-10-23"
+  }
 }

@@ -26,5 +26,21 @@
   "placeId": "ChIJN-LKSPGdVA0RqfoWwxjcxg8",
   "michelinId": "505662",
   "chef": "Stéphane Carrade",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Ha(a)ïtza",
+    "rooms": 38,
+    "url": "https://haaitza.com/chambres-hotel-5-etoiles-arcachon/",
+    "packages": [
+      {
+        "name": "Automne étoilé au Skiff Club",
+        "includes": "One night at the hotel and a two-star dinner at Le Skiff Club",
+        "price": 700,
+        "url": "https://haaitza.com/offres-et-actualites-hotel-de-luxe-arcachon/#automne-etoile-au-skiff-club"
+      }
+    ],
+    "note": "Hotel in Pyla-sur-Mer with 30 rooms, 5 suites, 2 junior suites and an apartment.",
+    "checked": "2026-10-23"
+  }
 }

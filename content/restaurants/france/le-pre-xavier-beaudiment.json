@@ -24,5 +24,13 @@
   "placeId": "ChIJ8_UIpSEa90cRdzmlyQ47mjc",
   "michelinId": "254057",
   "chef": "Xavier Beaudiment",
-  "chefSource": "press"
+  "chefSource": "press",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel Restaurant Le Pré",
+    "rooms": 5,
+    "url": "https://www.restaurant-lepre.com/",
+    "note": "Five four-star bedrooms above the restaurant.",
+    "checked": "2026-10-23"
+  }
 }

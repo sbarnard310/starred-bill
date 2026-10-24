@@ -23,5 +23,13 @@
   "placeId": "ChIJwUSwtVfltRIRezZDJA7bhfU",
   "michelinId": "1000191",
   "chef": "Thomas Cavasin",
-  "chefSource": "site"
+  "chefSource": "site",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel de Tourrel",
+    "rooms": 9,
+    "url": "https://www.detourrel.com/fr/hebergement/",
+    "note": "A small hotel of 6 suites and 3 rooms in Saint-Rémy-de-Provence.",
+    "checked": "2026-10-23"
+  }
 }

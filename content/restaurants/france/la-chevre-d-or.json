@@ -35,5 +35,23 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 666,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "stay": {
+    "kind": "hotel",
+    "name": "Hôtel La Chèvre d’Or",
+    "rooms": 45,
+    "url": "https://www.chevredor.fr/chambres-suites/",
+    "packages": [
+      {
+        "name": "Séjour gastronomique en chambre Élégance",
+        "includes": "A night in an Élégance room with partial sea view for two, buffet breakfast, a five-course dinner at the restaurant and spa access (drinks extra)",
+        "price": 1460,
+        "per": "room",
+        "when": "Monday to Thursday only, not on the Monaco Grand Prix weekend, Easter or public holidays; open 9 April to 24 October 2026",
+        "url": "https://www.chevredor.fr/produit/gastronomie/sejour-gastronomique-en-chambre-elegance/"
+      }
+    ],
+    "note": "A hilltop hotel in Èze with 45 rooms and suites.",
+    "checked": "2026-10-23"
+  }
 }

@@ -26,5 +26,21 @@
     "vegetarian-menu"
   ],
   "chef": "Gabriele Ravasio",
-  "chefSource": "michelin"
+  "chefSource": "michelin",
+  "stay": {
+    "kind": "hotel",
+    "name": "Waldorf Astoria Versailles - Trianon Palace",
+    "url": "https://waldorfastoriaversailles.fr/trianon-palace/chambres-palace/",
+    "packages": [
+      {
+        "name": "Offre Gordon Ramsay",
+        "includes": "A night at the Trianon Palace, full breakfast and the 7-course tasting menu per person at Gordon Ramsay au Trianon",
+        "per": "person",
+        "when": "Depends on the restaurant’s opening days",
+        "url": "https://waldorfastoriaversailles.fr/lexperience/offres-speciales/"
+      }
+    ],
+    "note": "Five-star palace hotel beside the Château de Versailles; the offer is booked by phone or email.",
+    "checked": "2026-10-23"
+  }
 }

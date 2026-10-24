@@ -21,8 +21,8 @@
     "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Helena Rizzo",
-  "chefSource": "michelin",
+  "chef": "Helena Rizzo and Willem Vandeven",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde R$290)",
   "lunch": 780,
   "lunchType": "menu",
@@ -30,5 +30,6 @@
   "lunchNotePt": "O mesmo menu ao almoço · ter.–dom.",
   "lunchWine": 290,
   "lunchSourceType": "site",
-  "lunchSource": "https://www.restaurantemani.com.br/gastronomia/"
+  "lunchSource": "https://www.restaurantemani.com.br/gastronomia/",
+  "dietsManual": true
 }

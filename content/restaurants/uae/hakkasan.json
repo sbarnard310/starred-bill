@@ -17,7 +17,7 @@
   "lunchNote": "Lunch menu",
   "lunchSourceType": "site",
   "lunchSource": "https://hakkasangroup.com/venues/hakkasan-abu-dhabi/",
-  "website": "https://hakkasan.com/abu-dhabi/",
+  "website": "https://hakkasangroup.com/venues/hakkasan-abu-dhabi/",
   "lat": 24.461469,
   "lng": 54.3173868,
   "placeId": "ChIJp_C3jZZlXj4RCcd7ZdVIgig",
@@ -25,11 +25,12 @@
   "diets": [
     "vegetarian",
     "vegan",
-    "halal"
+    "gluten-free"
   ],
   "dinnerNoteAr": "قائمة تذوق (قوائم أخرى بدءًا من AED 498)",
   "lunchNoteAr": "قائمة الغداء",
   "areaAr": "أبوظبي",
   "chef": "Lee Kok Hua",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

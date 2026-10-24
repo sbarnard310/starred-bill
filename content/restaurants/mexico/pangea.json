@@ -25,9 +25,6 @@
   "lng": -100.3563295,
   "placeId": "ChIJ8Rlqs5W9YoYRFvRQFa-VXl4",
   "michelinId": "1208496",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Guillermo González Beristáin",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

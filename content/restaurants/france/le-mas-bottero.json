@@ -22,14 +22,14 @@
   "placeId": "ChIJs4JgsWr0yRIRudyJLbJJoTo",
   "michelinId": "541546",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Nicolas Bottero",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Saison menu, 5 courses (Inspirations, 7 courses, €130)",
   "dinnerNoteFr": "Menu Saison, 5 temps (Inspirations, 7 temps, 130 €)",
   "lunchNote": "Lunch menu, 4 courses, weekdays",
-  "lunchNoteFr": "Menu déjeuner, 4 temps, en semaine"
+  "lunchNoteFr": "Menu déjeuner, 4 temps, en semaine",
+  "dietsManual": true
 }

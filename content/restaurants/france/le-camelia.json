@@ -30,10 +30,9 @@
   "placeId": "ChIJxX0b8pn1wkcRa4NL6Hw4sWA",
   "michelinId": "1242759",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Guillaume Stile",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

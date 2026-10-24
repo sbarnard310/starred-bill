@@ -29,5 +29,6 @@
     "vegetarian"
   ],
   "chef": "Hugo Souchet",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

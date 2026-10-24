@@ -22,10 +22,7 @@
   "lng": 7.3314132,
   "placeId": "ChIJr5bDI3PbzRIRQ8hg-UCx31A",
   "michelinId": "12838",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian"
-  ],
   "chef": "Yoric Tièche",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "notice": "Closed for the winter from 25 October 2026; reopens in April 2027 (its hotel’s website)"
 }

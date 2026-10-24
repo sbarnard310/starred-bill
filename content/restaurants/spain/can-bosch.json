@@ -26,12 +26,8 @@
   "lng": 1.058936,
   "placeId": "ChIJqTsrLy1boRIRvjRuhkEbhsg",
   "michelinId": "218990",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Arnau Bosch",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "photo": "can-bosch.jpg",
   "photoAlt": "The entrance of Can Bosch in Cambrils, with its name plaque by the door",
   "photoCredit": "RosanaAndreu",

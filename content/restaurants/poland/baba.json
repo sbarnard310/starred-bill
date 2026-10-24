@@ -25,8 +25,9 @@
     "vegetarian"
   ],
   "chef": "Beata Śniechowska",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePl": "Typowe danie główne",
   "lunchNote": "Open for lunch · Sat–Sun",
-  "lunchNotePl": "Otwarte w porze lunchu · sob.–niedz."
+  "lunchNotePl": "Otwarte w porze lunchu · sob.–niedz.",
+  "dietsManual": true
 }

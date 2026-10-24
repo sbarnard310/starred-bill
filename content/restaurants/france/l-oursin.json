@@ -29,11 +29,6 @@
   "lng": 5.1514965,
   "placeId": "ChIJtSMNTajdyRIRfWviGAqVbVs",
   "michelinId": "1214853",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Ilane Tinchant",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

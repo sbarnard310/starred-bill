@@ -24,17 +24,16 @@
   "michelinId": "1183631",
   "diets": [
     "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegan"
   ],
   "chef": "Anthony Demetre",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "stay": {
     "kind": "hotel",
     "name": "Sofitel London St James",
     "rooms": 183,
     "url": "https://sofitel.accor.com/en/hotels/3144.html",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

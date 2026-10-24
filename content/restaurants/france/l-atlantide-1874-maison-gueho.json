@@ -25,9 +25,9 @@
   "michelinId": "5270",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Jean-Yves Guého",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

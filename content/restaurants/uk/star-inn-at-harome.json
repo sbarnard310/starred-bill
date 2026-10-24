@@ -25,10 +25,11 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
+    "vegan",
     "gluten-free"
   ],
-  "chef": "Steve Smith",
-  "chefSource": "michelin",
+  "chef": "Andrew Pern",
+  "chefSource": "site",
   "photo": "star-inn-at-harome.jpg",
   "photoAlt": "The thatched Star Inn at Harome, North Yorkshire, seen from the road",
   "photoCredit": "The Star Inn, Harome by JThomas",
@@ -58,5 +59,6 @@
     ],
     "note": "Rooms are in Cross House Lodge, the inn’s converted farm buildings.",
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

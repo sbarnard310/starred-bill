@@ -17,12 +17,6 @@
   "lng": -2.8277724,
   "placeId": "ChIJme6HHRhDcA0RlC77qB7TLi0",
   "michelinId": "219944",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
-  ],
   "chef": "José Álvarez",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

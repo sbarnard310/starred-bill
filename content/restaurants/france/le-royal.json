@@ -26,10 +26,10 @@
   "placeId": "ChIJkehuJt5s6UcRiQ1ZfLtPvx8",
   "michelinId": "1024398",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegan"
   ],
   "chef": "Christophe Raoux",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

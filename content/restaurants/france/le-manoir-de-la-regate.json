@@ -23,13 +23,6 @@
   "lng": -1.5265172,
   "placeId": "ChIJL_JUx83xBUgRL-TkTBCMoI4",
   "michelinId": "5290",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Mathieu Pérou",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

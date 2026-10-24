@@ -26,15 +26,8 @@
   "lng": 2.138829,
   "placeId": "ChIJI8Kpv3CYpBIRgYfrEaTZnyc",
   "michelinId": "67959",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "David Andrés",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Grand tasting menu (also à la carte)",
   "dinnerNoteEs": "Gran menú degustación (también a la carta)",
   "photo": "via-veneto.jpg",

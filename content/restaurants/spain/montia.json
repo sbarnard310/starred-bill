@@ -28,11 +28,6 @@
   "lng": -4.147437,
   "placeId": "ChIJV4HA3ygKQQ0RniTSMih24dY",
   "michelinId": "1196081",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
-  "chef": "Daniel Ochoa",
-  "chefSource": "michelin"
+  "chef": "Dani Ochoa",
+  "chefSource": "site"
 }

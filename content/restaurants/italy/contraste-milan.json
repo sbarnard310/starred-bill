@@ -25,10 +25,6 @@
   "lng": 9.17929,
   "placeId": "ChIJ_ZtXxwnEhkcRcjJYx_eS3Ak",
   "michelinId": "479517",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Matias Perdomo",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

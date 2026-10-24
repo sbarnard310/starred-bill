@@ -21,10 +21,13 @@
   "placeId": "ChIJ240L8N25t4kRCoGiQ2-21bI",
   "michelinId": "1185180",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian",
+    "vegan",
+    "gluten-free",
+    "halal"
   ],
   "chef": "Michael Rafidi",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "albi.jpg",
   "photoAlt": "The glass entrance of Albi at The Yards, Washington, DC",
   "photoCredit": "Ser Amantio di Nicolao",
@@ -34,5 +37,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

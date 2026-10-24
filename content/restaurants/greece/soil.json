@@ -17,15 +17,8 @@
   "lng": 23.7429946,
   "placeId": "ChIJr9_aRfm9oRQRWj0x3vCftJE",
   "michelinId": "1199525",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
-  "chef": "Anastasios Mantis",
-  "chefSource": "michelin",
+  "chef": "Tasos Mantis",
+  "chefSource": "site",
   "dinnerNoteEl": "Μενού γευσιγνωσίας",
   "noLunch": true,
   "lunchNote": "Dinner only",

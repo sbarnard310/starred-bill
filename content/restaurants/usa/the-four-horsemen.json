@@ -20,10 +20,6 @@
   "lng": -73.9575,
   "placeId": "ChIJbTCMl19ZwokRUohF137p9cQ",
   "michelinId": "1160151",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Nick Curtola",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

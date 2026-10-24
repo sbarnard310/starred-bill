@@ -28,8 +28,8 @@
   "placeId": "ChIJVx8VT6D0lkcRrJHMszFrc84",
   "michelinId": "4111",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Pascal Bastian",
   "chefSource": "site",
@@ -42,5 +42,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 414,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

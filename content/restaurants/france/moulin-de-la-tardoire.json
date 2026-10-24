@@ -25,9 +25,6 @@
   "lng": 0.5138297,
   "placeId": "ChIJLxIFJmJR_kcR1cpmbWcs2ww",
   "michelinId": "473770",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Matthieu Brudo",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

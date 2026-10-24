@@ -22,14 +22,17 @@
   "lunchNoteZh": "午餐供應相同菜單",
   "lunchSourceType": "press",
   "lunchSource": "https://blake.com.tw/blog/post/tianxianglou-2509",
-  "website": "https://taipei.landishotelsresorts.com/chinese-trad/dining-detail.php?id=7",
+  "website": "https://taipei.landishotelsresorts.com/dining-detail/tien-hsiang-lo",
   "lat": 25.062841,
   "lng": 121.529965,
   "placeId": "ChIJt3yXuFupQjQR4fGsPcwIluI",
   "michelinId": "551804",
   "diets": [
-    "vegetarian"
+    "vegetarian-menu",
+    "vegetarian",
+    "vegan"
   ],
   "chef": "Lu Kai-yuan",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

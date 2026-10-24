@@ -24,9 +24,9 @@
   "placeId": "ChIJz02M-rFIYA0RJGbjth1LmEA",
   "michelinId": "492322",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "María José Martínez",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

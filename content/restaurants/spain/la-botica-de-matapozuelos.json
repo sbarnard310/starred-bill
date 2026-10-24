@@ -20,12 +20,8 @@
   "lng": -4.7914841,
   "placeId": "ChIJG1BSSrZGRw0R-eubJPJEHlY",
   "michelinId": "274798",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
-  "chef": "Miguel Ángel de la Cruz García",
-  "chefSource": "michelin",
+  "chef": "Miguel Ángel de la Cruz",
+  "chefSource": "site",
   "photo": "la-botica-de-matapozuelos.jpg",
   "photoAlt": "The brick front and terrace of La Botica de Matapozuelos",
   "photoCredit": "MiguelAlanCS",

@@ -31,5 +31,6 @@
     "vegetarian"
   ],
   "chef": "Julien Medard",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -29,5 +29,6 @@
     "vegetarian"
   ],
   "chef": "Nicola Annunziata",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

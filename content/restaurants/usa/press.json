@@ -20,9 +20,9 @@
   "placeId": "ChIJq4L3m9NQhIAR8MaZwYPwSjY",
   "michelinId": "122440",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Philip Tessier",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

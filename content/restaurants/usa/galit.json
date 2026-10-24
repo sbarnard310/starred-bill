@@ -25,8 +25,8 @@
     "vegan",
     "gluten-free"
   ],
-  "chef": "Zach Engel",
-  "chefSource": "michelin",
+  "chef": "Zachary Engel",
+  "chefSource": "site",
   "photo": "galit.jpg",
   "photoAlt": "The front of Galit in Lincoln Park, Chicago",
   "photoCredit": "PinkSlipper617",
@@ -36,5 +36,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

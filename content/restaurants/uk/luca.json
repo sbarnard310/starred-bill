@@ -23,9 +23,9 @@
   "placeId": "ChIJpyQHEFEbdkgR1KctxC2Recc",
   "michelinId": "521823",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Robert Chambers",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

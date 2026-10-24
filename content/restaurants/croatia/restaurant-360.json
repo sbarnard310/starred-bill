@@ -18,11 +18,8 @@
   "lng": 18.1115484,
   "placeId": "ChIJQwHbajMLTBMRfawgswpz8RA",
   "michelinId": "480082",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Marijo Curić",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteHr": "Degustacijski meni (ostali meniji od 108 €)",
   "noLunch": true,
   "lunchNoteHr": "Samo večera"

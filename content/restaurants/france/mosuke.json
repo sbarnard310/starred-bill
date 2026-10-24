@@ -27,12 +27,9 @@
   "placeId": "ChIJZf2wJx9x5kcRTD2DAPk3rP0",
   "michelinId": "1193371",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegetarian-menu"
   ],
   "chef": "Mory Sacko",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

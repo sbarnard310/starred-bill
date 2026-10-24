@@ -25,10 +25,6 @@
   "lng": -0.552961,
   "placeId": "ChIJ42z13iUmVQ0RpBQ8Dd6VK7c",
   "michelinId": "1228",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "François Sauvêtre",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

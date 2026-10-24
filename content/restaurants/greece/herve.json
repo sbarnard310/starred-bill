@@ -15,17 +15,16 @@
   "placeId": "ChIJC_jIHhe9oRQRww-ZA41MGck",
   "michelinId": "1200618",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
-  "chef": "Hervé Pronzato",
-  "chefSource": "michelin",
+  "chef": "Herve Pronzato",
+  "chefSource": "site",
   "dinnerNoteEl": "Μενού γευσιγνωσίας Tasting Journey",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteEl": "Μόνο δείπνο",
   "dinner": 120,
   "wine": 95,
-  "source": "https://herve-restaurant.com/wp-content/uploads/2026/09/Tasting-menu-September-26.pdf"
+  "source": "https://herve-restaurant.com/wp-content/uploads/2026/09/Tasting-menu-September-26.pdf",
+  "dietsManual": true
 }

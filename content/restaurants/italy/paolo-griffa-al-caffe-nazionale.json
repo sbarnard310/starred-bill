@@ -25,9 +25,9 @@
   "michelinId": "1203766",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Paolo Griffa",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

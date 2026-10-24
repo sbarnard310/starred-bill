@@ -19,11 +19,8 @@
   "lng": -123.0978836,
   "placeId": "ChIJl9_waXFxhlQRbBq6lKwoHic",
   "michelinId": "1198916",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Jean-Christophe Poirier",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "st-lawrence.jpg",
   "photoAlt": "The corner front of St. Lawrence restaurant in Vancouver, with its hanging sign",
   "photoCredit": "Premeditated Chaos",

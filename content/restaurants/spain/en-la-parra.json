@@ -24,9 +24,6 @@
   "lng": -5.6642767,
   "placeId": "ChIJX6TY1WomPw0R2ouNS5jL5YA",
   "michelinId": "518337",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Rocío Parra",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

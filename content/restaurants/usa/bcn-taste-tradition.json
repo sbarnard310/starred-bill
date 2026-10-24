@@ -20,9 +20,9 @@
   "michelinId": "1196497",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Luis Roger",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

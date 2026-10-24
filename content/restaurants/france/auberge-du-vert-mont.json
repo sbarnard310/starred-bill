@@ -27,11 +27,6 @@
   "lng": 2.7033586,
   "placeId": "ChIJu0OD-5Tc3EcRGTz6IrrmAnE",
   "michelinId": "245086",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "halal"
-  ],
   "chef": "Florent Ladeyn",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

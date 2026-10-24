@@ -29,9 +29,9 @@
   "michelinId": "108123",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Stéphane Froidevaux",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

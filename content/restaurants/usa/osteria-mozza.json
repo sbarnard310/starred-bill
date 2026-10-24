@@ -23,10 +23,11 @@
   "michelinId": "559827",
   "diets": [
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Nancy Silverton",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "osteria-mozza.jpg",
   "photoAlt": "The exterior of Osteria Mozza with its Mozza sign on Melrose Avenue, Los Angeles",
   "photoCredit": "Josh Lim ( Sky Harbor )",
@@ -36,5 +37,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

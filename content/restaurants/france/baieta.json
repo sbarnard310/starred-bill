@@ -28,8 +28,11 @@
   "placeId": "ChIJ_78oYuRx5kcR4eAyZp92YKs",
   "michelinId": "1000239",
   "diets": [
-    "vegetarian"
+    "vegetarian",
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Julia Sedefdjian",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

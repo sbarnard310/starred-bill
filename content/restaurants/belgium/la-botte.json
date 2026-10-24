@@ -25,12 +25,14 @@
   "placeId": "ChIJW-19VNPewEcRIbWREWTVzlE",
   "michelinId": "209681",
   "diets": [
-    "vegetarian-menu"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "dinnerNoteNl": "Proeverijmenu",
   "dinnerNoteFr": "Menu dégustation",
   "lunchNoteNl": "Lunchmenu",
   "lunchNoteFr": "Menu déjeuner",
   "chef": "Peppe Giacomazza",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -18,11 +18,8 @@
   "lng": 14.8043573,
   "placeId": "ChIJIYcLKI0jV0YRemfw1hsl_lU",
   "michelinId": "478098",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Anders Lauring",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteSv": "Avsmakningsmeny",
   "lunch": 2195,
   "lunchType": "menu",

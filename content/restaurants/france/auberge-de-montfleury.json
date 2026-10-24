@@ -25,9 +25,6 @@
   "lng": 4.4714401,
   "placeId": "ChIJNzeLDs8etRIRb312wR02Hns",
   "michelinId": "9571",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "Matias Alesandrelli",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

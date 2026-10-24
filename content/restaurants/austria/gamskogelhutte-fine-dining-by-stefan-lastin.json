@@ -21,12 +21,8 @@
   "lng": 13.6022202,
   "placeId": "ChIJy7K_AIrDcEcRZfR2MjjFCCA",
   "michelinId": "1212680",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Stefan Lastin",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 90 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",

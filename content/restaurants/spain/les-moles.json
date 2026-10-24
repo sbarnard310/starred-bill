@@ -28,9 +28,9 @@
   "michelinId": "224050",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Jeroni Castell",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

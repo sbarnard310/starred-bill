@@ -26,9 +26,10 @@
   "placeId": "ChIJM8dIbAlZkUcR6_1N-TWg3yg",
   "michelinId": "4138",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Sébastien Buecher",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

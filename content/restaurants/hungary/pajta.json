@@ -17,14 +17,8 @@
   "lng": 16.4043202,
   "placeId": "ChIJv5XR0TMmb0cRLX6tbpaYq8s",
   "michelinId": "547086",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
-  "chef": "István Akács",
-  "chefSource": "michelin",
+  "chef": "Yazmin Salazar and István Akács",
+  "chefSource": "site",
   "dinnerNoteHu": "Kóstolómenü (további menük: HUF 42,000-tól)",
   "lunch": 52000,
   "lunchType": "menu",

@@ -26,9 +26,6 @@
   "lng": 2.095661,
   "placeId": "ChIJhUDJHy4ZpRIRDFBJ5M32r2Y",
   "michelinId": "221951",
-  "diets": [
-    "gluten-free"
-  ],
-  "chef": "Antonio Sala",
-  "chefSource": "michelin"
+  "chef": "Toni Sala",
+  "chefSource": "site"
 }

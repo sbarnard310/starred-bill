@@ -22,13 +22,8 @@
   "lng": 15.6146801,
   "placeId": "ChIJ99dVhUeeb0cRI4WX52HTYm8",
   "michelinId": "1164806",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Gregor Vračko",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteSl": "Degustacijski meni (drugi meniji od 85 €)",
   "lunchNoteSl": "Meni za kosilo"
 }

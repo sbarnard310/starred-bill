@@ -21,7 +21,7 @@
   "placeId": "ChIJyRDJYIuAhYARyAPkIc7A2Vo",
   "michelinId": "503271",
   "chef": "Brandon Jew",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "days": 30,

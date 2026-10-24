@@ -17,13 +17,8 @@
   "lng": 23.7168694,
   "placeId": "ChIJ9WOIj1y9oRQRlzRu3DA1rHw",
   "michelinId": "475413",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Alexandros Tsiotinis",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteEl": "Μενού γευσιγνωσίας",
   "noLunch": true,
   "lunchNote": "Dinner only",

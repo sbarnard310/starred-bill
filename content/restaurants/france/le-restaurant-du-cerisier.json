@@ -28,10 +28,10 @@
   "placeId": "ChIJcbJcl_Yrw0cR_thUZfNGZWo",
   "michelinId": "1179872",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Guillaume Barengo",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

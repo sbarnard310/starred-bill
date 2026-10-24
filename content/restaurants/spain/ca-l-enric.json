@@ -28,11 +28,6 @@
   "lng": 2.440129,
   "placeId": "ChIJeQpU25dKpRIRmh9TXCafT2w",
   "michelinId": "224159",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
-  "chef": "Jordi Juncà and Isabel Juncà",
-  "chefSource": "michelin"
+  "chef": "Jordi Juncà",
+  "chefSource": "press"
 }

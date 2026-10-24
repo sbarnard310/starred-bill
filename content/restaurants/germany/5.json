@@ -17,12 +17,12 @@
   "placeId": "ChIJEX4pJTTbmUcRCwNHSMZJ0p0",
   "michelinId": "327198",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian"
+    "vegetarian-menu"
   ],
   "chef": "Alexander Dinter",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 148 €)",
   "lunchNote": "Open for lunch · Tue–Sat",
-  "lunchNoteDe": "Mittags geöffnet · Di–Sa"
+  "lunchNoteDe": "Mittags geöffnet · Di–Sa",
+  "dietsManual": true
 }

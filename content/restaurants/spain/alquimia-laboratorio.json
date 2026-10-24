@@ -20,11 +20,6 @@
   "lng": -4.7224762,
   "placeId": "ChIJnQNToL4TRw0RsFaF87qEMYY",
   "michelinId": "1090843",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Alvar Hinojal",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

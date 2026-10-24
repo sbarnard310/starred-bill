@@ -24,9 +24,9 @@
   "placeId": "ChIJl9_NdCwbdkgRpKEhBGIYGmU",
   "michelinId": "490550",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Jun Tanaka",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

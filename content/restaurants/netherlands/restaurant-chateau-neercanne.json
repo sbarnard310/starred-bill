@@ -17,12 +17,10 @@
   "placeId": "ChIJueerN-LowEcRt2mMhYhmkvk",
   "michelinId": "212788",
   "diets": [
-    "vegetarian-menu",
     "vegetarian",
     "vegan",
     "gluten-free",
-    "halal",
-    "kosher"
+    "halal"
   ],
   "chef": "Robert Levels",
   "chefSource": "site",
@@ -38,5 +36,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 796,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

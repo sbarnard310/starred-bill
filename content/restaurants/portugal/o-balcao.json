@@ -13,18 +13,12 @@
   "wine": 55,
   "sourceType": "press",
   "source": "https://www.thefork.com/restaurant/o-balcao-r696907/menu",
-  "website": "https://tabernaobalcao.com/",
   "lat": 39.2318717,
   "lng": -8.6858859,
   "placeId": "ChIJQV-cS2zuGA0RTSvmBEFtEqg",
   "michelinId": "1077263",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Rodrigo Castelo",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNotePt": "Menu de degustação",
   "lunchNote": "Open for lunch · Mon–Sat",
   "lunchNotePt": "Aberto ao almoço · seg.–sáb."

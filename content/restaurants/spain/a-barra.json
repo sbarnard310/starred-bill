@@ -30,9 +30,9 @@
   "placeId": "ChIJg8E4AOwoQg0RbtjZ1H2hoXM",
   "michelinId": "504110",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Sergio Manzano",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

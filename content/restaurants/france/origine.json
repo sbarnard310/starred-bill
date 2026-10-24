@@ -28,5 +28,6 @@
     "vegetarian"
   ],
   "chef": "Tomofumi Uchimura",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

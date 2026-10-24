@@ -20,11 +20,10 @@
   "diets": [
     "vegetarian",
     "vegan",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
-  "chef": "Niklas Ekstedt",
-  "chefSource": "michelin",
+  "chef": "Florencia Abella",
+  "chefSource": "site",
   "dinnerNoteSv": "Avsmakningsmeny",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -38,5 +37,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

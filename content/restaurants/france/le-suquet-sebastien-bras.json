@@ -34,5 +34,6 @@
     "vegetarian"
   ],
   "chef": "Sébastien Bras",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -25,9 +25,11 @@
   "placeId": "ChIJm57e3VW5gkcRhQzxikGARqg",
   "michelinId": "139980",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "gluten-free"
   ],
   "chef": "Andrea Fenoglio",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

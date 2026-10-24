@@ -27,8 +27,8 @@
   "diets": [
     "vegetarian",
     "vegan",
-    "halal",
-    "kosher"
+    "gluten-free",
+    "halal"
   ],
   "chef": "Mrinal Ghosal",
   "chefSource": "site",
@@ -41,5 +41,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 759,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

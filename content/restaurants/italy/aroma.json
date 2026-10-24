@@ -29,9 +29,9 @@
   "michelinId": "265531",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Giuseppe Di Iorio",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

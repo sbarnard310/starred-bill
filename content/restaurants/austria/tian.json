@@ -23,10 +23,11 @@
     "vegetarian",
     "vegan"
   ],
-  "chef": "Paul Ivic",
-  "chefSource": "michelin",
+  "chef": "Paul Ivić",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 178 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
-  "lunchNoteDe": "Nur abends"
+  "lunchNoteDe": "Nur abends",
+  "dietsManual": true
 }

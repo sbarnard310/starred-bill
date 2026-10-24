@@ -24,12 +24,8 @@
   "lng": -3.8292585,
   "placeId": "ChIJbbbvHXtJSQ0RkjcmG4mjpQY",
   "michelinId": "342407",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Sergio Bastard",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu (chef's table €150)",
   "dinnerNoteEs": "Menú degustación (mesa del chef 150 €)"
 }

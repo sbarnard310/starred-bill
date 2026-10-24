@@ -30,5 +30,6 @@
     "vegetarian"
   ],
   "chef": "Mathieu Pacaud",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

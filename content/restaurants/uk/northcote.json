@@ -25,13 +25,10 @@
   "michelinId": "186540",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian"
   ],
   "chef": "Lisa Goodwin-Allen",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "northcote.jpg",
   "photoAlt": "Northcote, the country house hotel and restaurant in Langho, Lancashire",
   "photoCredit": "CillaLowe",
@@ -70,5 +67,6 @@
       }
     ],
     "checked": "2026-10-23"
-  }
+  },
+  "dietsManual": true
 }

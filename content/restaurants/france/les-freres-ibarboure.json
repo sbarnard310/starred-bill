@@ -26,9 +26,6 @@
   "lng": -1.598086,
   "placeId": "ChIJ6e7KCooTUQ0Rb6zJakcbrIc",
   "michelinId": "1128",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Xabi Ibarboure",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

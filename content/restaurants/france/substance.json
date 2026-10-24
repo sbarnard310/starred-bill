@@ -27,8 +27,10 @@
   "placeId": "ChIJ1-NReNxv5kcR3yM08L3wXCA",
   "michelinId": "1154762",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
-  "chef": "Aurora Storari and Flavio Lucarini",
-  "chefSource": "michelin"
+  "chef": "Flavio Lucarini and Aurora Storari",
+  "chefSource": "site",
+  "dietsManual": true
 }

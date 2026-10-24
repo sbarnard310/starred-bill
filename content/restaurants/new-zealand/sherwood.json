@@ -25,9 +25,9 @@
   "placeId": "ChIJTZ5A_-Yd1akRW_1-6Xe9wEA",
   "michelinId": "1241043",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Chris Scott",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

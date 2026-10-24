@@ -26,8 +26,10 @@
   "placeId": "ChIJiXxeShzYBUgRmr0S7gQYtik",
   "michelinId": "393080",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Xavier Giraudet",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

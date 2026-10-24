@@ -24,9 +24,11 @@
   "placeId": "ChIJ9cBDsSsFdkgR79Fc_1y6_cI",
   "michelinId": "69405",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan"
   ],
   "chef": "Ryo Kamatsu",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -26,14 +26,13 @@
     "vegetarian-menu",
     "vegetarian",
     "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
-  "chef": "Sauro Ricci - Raffaele Minghini",
-  "chefSource": "michelin",
+  "chef": "Sauro Ricci and Raffaele Minghini",
+  "chefSource": "site",
   "dinnerNote": "Tasting menu (L'enfasi della natura or La scoperta della tradizione)",
   "dinnerNoteIt": "Menu degustazione (L'enfasi della natura o La scoperta della tradizione)",
   "lunchNote": "Tre Piatti a Mezzogiorno, 3 courses · Tue–Fri (Piatto quadro from €30)",
-  "lunchNoteIt": "Tre Piatti a Mezzogiorno · mar–ven (Piatto quadro da €30)"
+  "lunchNoteIt": "Tre Piatti a Mezzogiorno · mar–ven (Piatto quadro da €30)",
+  "dietsManual": true
 }

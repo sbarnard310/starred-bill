@@ -27,12 +27,12 @@
   "placeId": "ChIJy4xtHR3fDkgROUt7k6PBYfQ",
   "michelinId": "542006",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Julien Lemarié",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "ima.jpg",
   "photoAlt": "The dark shopfront of Restaurant IMA on Boulevard de La Tour-d'Auvergne, Rennes",
   "photoCredit": "Pymouss",
@@ -42,5 +42,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 728,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -25,9 +25,6 @@
   "lng": -16.5531212,
   "placeId": "ChIJuYbpmpR_agwRMnXIHCVYkHc",
   "michelinId": "533564",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Seve Díaz",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

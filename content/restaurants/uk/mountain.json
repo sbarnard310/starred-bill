@@ -27,5 +27,6 @@
     "vegetarian"
   ],
   "chef": "Tomos Parry",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

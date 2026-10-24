@@ -32,10 +32,6 @@
   "lng": 139.708599,
   "placeId": "ChIJ5S6oA1-LGGAREG-V6VQQP_0",
   "michelinId": "1194213",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Takuto Murota",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

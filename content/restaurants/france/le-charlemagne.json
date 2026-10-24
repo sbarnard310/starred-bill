@@ -26,8 +26,9 @@
   "placeId": "ChIJeX3NajuM8kcRq4bwH1dUbWw",
   "michelinId": "911",
   "diets": [
-    "vegetarian-menu"
+    "gluten-free"
   ],
   "chef": "Rudy Villien",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

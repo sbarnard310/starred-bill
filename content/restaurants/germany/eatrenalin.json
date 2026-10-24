@@ -26,7 +26,7 @@
     "vegetarian"
   ],
   "chef": "Peter Hagen-Wiest",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 255 €)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -40,5 +40,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

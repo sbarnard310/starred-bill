@@ -23,9 +23,7 @@
   "placeId": "ChIJx0LwzG-oZ0gRvjQZTuvq46Y",
   "michelinId": "186645",
   "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
+    "vegetarian"
   ],
   "chef": "Edoardo Brambilla",
   "chefSource": "press",
@@ -38,5 +36,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

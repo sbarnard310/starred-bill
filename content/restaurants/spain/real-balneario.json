@@ -24,13 +24,6 @@
   "lng": -5.966378,
   "placeId": "ChIJKeTo8RWcNg0RM1wtXt3RddU",
   "michelinId": "222862",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
-  ],
   "chef": "Isaac Loya",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

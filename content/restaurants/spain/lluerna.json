@@ -29,11 +29,9 @@
   "placeId": "ChIJd44t9I68pBIRW2Jgo7sGy9E",
   "michelinId": "218432",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian-menu"
   ],
-  "chef": "Víctor Quintillà Imbernon",
-  "chefSource": "michelin"
+  "chef": "Víctor Quintillà",
+  "chefSource": "site",
+  "dietsManual": true
 }

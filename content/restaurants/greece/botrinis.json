@@ -17,12 +17,8 @@
   "lng": 23.7936937,
   "placeId": "ChIJ2x4_mPaYoRQRi8YGpT4_wIo",
   "michelinId": "350038",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Ettore Botrini",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteEl": "Μενού γευσιγνωσίας",
   "noLunch": true,
   "lunchNote": "Dinner only",

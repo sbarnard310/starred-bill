@@ -27,10 +27,12 @@
   "placeId": "ChIJ4_jwCCdCYw0RMNUaOB3y0fo",
   "michelinId": "469559",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan",
     "gluten-free"
   ],
   "chef": "María Gómez",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

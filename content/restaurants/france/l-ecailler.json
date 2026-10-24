@@ -35,5 +35,6 @@
     "vegetarian"
   ],
   "chef": "Arthur Da Costa Adao",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

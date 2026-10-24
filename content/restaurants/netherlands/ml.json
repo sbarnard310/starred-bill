@@ -18,10 +18,11 @@
   "placeId": "ChIJsa953mvvxUcRy50HHiu7Qhk",
   "michelinId": "560903",
   "diets": [
+    "vegetarian-menu",
     "vegetarian"
   ],
   "chef": "Mark Gratama",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 99)",
   "noLunch": true,
   "lunchNote": "Dinner only",
@@ -35,5 +36,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 666,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

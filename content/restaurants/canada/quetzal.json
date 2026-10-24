@@ -20,12 +20,9 @@
   "placeId": "ChIJz7oN7gU1K4gRtjOP6_CCSiU",
   "michelinId": "1198891",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Steven Molnar",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

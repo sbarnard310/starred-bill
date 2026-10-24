@@ -17,15 +17,12 @@
   "placeId": "ChIJ1dPTPsoJxkcRTmyCkfNISjI",
   "michelinId": "474494",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian-menu"
   ],
   "chef": "Egon van Hoof",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 51)",
   "lunchNote": "Open for lunch · Thu–Sat",
-  "lunchNoteNl": "Open voor lunch · do–za"
+  "lunchNoteNl": "Open voor lunch · do–za",
+  "dietsManual": true
 }

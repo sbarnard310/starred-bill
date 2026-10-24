@@ -17,15 +17,15 @@
   "placeId": "ChIJV5ZnZbAJxkcRhkiVQ7jkbXw",
   "michelinId": "502423",
   "diets": [
-    "vegetarian-only",
-    "vegetarian-menu",
     "vegetarian",
-    "vegan"
+    "vegan",
+    "gluten-free"
   ],
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 52,50)",
   "noLunch": true,
   "lunchNote": "Dinner only",
   "lunchNoteNl": "Alleen diner",
   "chef": "Merijn van Berlo",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

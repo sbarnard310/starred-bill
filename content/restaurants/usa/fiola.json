@@ -22,8 +22,8 @@
   "placeId": "ChIJJT16aoW3t4kRuvr4twwPMFY",
   "michelinId": "499539",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Antonio Mermolia",
   "chefSource": "site",
@@ -36,5 +36,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

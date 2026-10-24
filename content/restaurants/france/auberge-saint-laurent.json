@@ -27,7 +27,8 @@
     "vegetarian"
   ],
   "chef": "Laurent Arbeit",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Gourmet menu, 3 courses (Tout à votre choix €105, Découvertes €125)",
-  "dinnerNoteFr": "Menu du Gourmet, 3 plats (Tout à votre choix 105 €, Découvertes 125 €)"
+  "dinnerNoteFr": "Menu du Gourmet, 3 plats (Tout à votre choix 105 €, Découvertes 125 €)",
+  "dietsManual": true
 }

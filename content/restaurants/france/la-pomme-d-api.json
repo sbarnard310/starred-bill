@@ -25,13 +25,8 @@
   "lng": -3.9871351,
   "placeId": "ChIJ2z8q3IXhE0gRQSYBn_pRgII",
   "michelinId": "8169",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Jérémie Le Calvez",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Saveurs menu, 4 courses (Inspirations €99, Dégustations €162)",
   "dinnerNoteFr": "Menu Saveurs, 4 temps (Inspirations 99 €, Dégustations 162 €)"
 }

@@ -20,11 +20,8 @@
   "lng": -77.03195,
   "placeId": "ChIJIfKOC-i3t4kRjYSije_nwy0",
   "michelinId": "562386",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Ryan Ratino",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "bresca.jpg",
   "photoAlt": "The blue front of Bresca with its name over the door on 14th Street NW, Washington DC",
   "photoCredit": "Dclemens1971",

@@ -21,13 +21,8 @@
   "lng": 7.7633035,
   "placeId": "ChIJO_f4TRXIlkcRHNh_MzRNS8E",
   "michelinId": "1000106",
-  "diets": [
-    "vegetarian",
-    "gluten-free",
-    "kosher"
-  ],
   "chef": "Guillaume Scheer",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNote": "Plaisirs menu (Gourmands €155)",
   "dinnerNoteFr": "Menu Plaisirs (Gourmands 155 €)",
   "lunchNote": "Business menu, Wed–Fri lunch",

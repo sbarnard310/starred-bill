@@ -21,10 +21,10 @@
   "placeId": "ChIJJXPo2xDDLBMR4FgjfDvMY3I",
   "michelinId": "1199126",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Jacopo Ticchi",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

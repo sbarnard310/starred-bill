@@ -28,9 +28,9 @@
   "placeId": "ChIJZ_PFctytQjQRH86SUgMyWG4",
   "michelinId": "1199082",
   "diets": [
-    "vegetarian",
-    "vegan"
+    "vegetarian-menu"
   ],
   "chef": "Wu Chih-wei",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

@@ -21,10 +21,9 @@
   "placeId": "ChIJDcJQWafjf0cR2gLItJnQmMw",
   "michelinId": "1195788",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Massimo Bottura",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -18,12 +18,16 @@
   "placeId": "ChIJzXYmKGtRqEcRVXjyURzEDO8",
   "michelinId": "1197308",
   "diets": [
+    "vegetarian-only",
     "vegetarian-menu",
-    "vegan"
+    "vegetarian",
+    "vegan",
+    "gluten-free"
   ],
   "chef": "Nikodemus Berger",
-  "chefSource": "michelin",
+  "chefSource": "press",
   "dinnerNoteDe": "Degustationsmenü (andere Menüs ab 130 €)",
   "lunchNote": "Open for lunch · Fri–Sun",
-  "lunchNoteDe": "Mittags geöffnet · Fr–So"
+  "lunchNoteDe": "Mittags geöffnet · Fr–So",
+  "dietsManual": true
 }

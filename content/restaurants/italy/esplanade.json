@@ -27,9 +27,9 @@
   "michelinId": "132874",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Massimo Fezzardi",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

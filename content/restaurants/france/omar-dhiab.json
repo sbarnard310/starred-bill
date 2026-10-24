@@ -28,9 +28,6 @@
   "lng": 2.3421907,
   "placeId": "ChIJR7fpoO5v5kcRlFje00R0PpI",
   "michelinId": "1204881",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Omar Dhiab",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

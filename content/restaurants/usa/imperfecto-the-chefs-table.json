@@ -25,11 +25,6 @@
   "lng": -77.050593,
   "placeId": "ChIJ3cVPOEW3t4kRoDGlzKQqgKI",
   "michelinId": "1194761",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Enrique Limardo",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

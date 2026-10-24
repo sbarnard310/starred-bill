@@ -30,8 +30,9 @@
   "michelinId": "220551",
   "diets": [
     "vegetarian",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Gorka and Kepa Txapartegi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

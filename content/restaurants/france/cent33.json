@@ -29,11 +29,10 @@
   "michelinId": "1155013",
   "diets": [
     "vegetarian",
-    "gluten-free",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Fabien Beaufour",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "bookingWindow": {
     "type": "rolling",
     "months": 2,
@@ -41,5 +40,6 @@
     "via": "website",
     "source": "https://cent33.com/",
     "checked": "2026-10-10"
-  }
+  },
+  "dietsManual": true
 }

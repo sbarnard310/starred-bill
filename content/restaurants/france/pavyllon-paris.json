@@ -29,10 +29,9 @@
   "placeId": "ChIJNb0Vrftv5kcRMegtKrTeefg",
   "michelinId": "1186416",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Yannick Alléno",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

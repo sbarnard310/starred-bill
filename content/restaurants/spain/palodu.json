@@ -25,9 +25,6 @@
   "lng": -4.4241615,
   "placeId": "ChIJfyuBfj73cg0RclZpFzcq4EU",
   "michelinId": "1190288",
-  "diets": [
-    "gluten-free"
-  ],
   "chef": "Cristina Cánovas and Diego Aguilar",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

@@ -26,10 +26,6 @@
   "lng": -8.7238018,
   "placeId": "ChIJJf1xI0BiLw0RhdjnY7rAdJ0",
   "michelinId": "474793",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Rafa Centeno and Inés Abril",
-  "chefSource": "michelin"
+  "chef": "Rafa Centeno",
+  "chefSource": "site"
 }

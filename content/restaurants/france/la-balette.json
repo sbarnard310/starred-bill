@@ -26,9 +26,6 @@
   "lng": 3.0890189,
   "placeId": "ChIJqcCeDOZ_sBIR6yAau82k_6E",
   "michelinId": "64112",
-  "diets": [
-    "vegetarian-menu"
-  ],
   "chef": "Laurent Lemal",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

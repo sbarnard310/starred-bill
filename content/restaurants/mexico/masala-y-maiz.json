@@ -26,10 +26,6 @@
   "lng": -99.148962,
   "placeId": "ChIJmWtRD1z_0YURSJiNhdfktTY",
   "michelinId": "1210966",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Norma Listman and Saqib Keval",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

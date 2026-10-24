@@ -25,11 +25,8 @@
   "lng": 7.3610962,
   "placeId": "ChIJMU_UF2bDzRIR2OeasRNgJbk",
   "michelinId": "11133",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Justin Schmitt",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "chateau-eza.jpg",
   "photoAlt": "The stone entrance of Château Eza in Èze, with its name over the arch",
   "photoCredit": "rene boulay",

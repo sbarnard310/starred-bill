@@ -25,12 +25,6 @@
   "lng": 7.7069299,
   "placeId": "ChIJi5tglms3kUcRrM4ckHHVKsE",
   "michelinId": "7353",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Alexis Albrecht",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

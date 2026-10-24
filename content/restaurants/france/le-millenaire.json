@@ -26,10 +26,9 @@
   "michelinId": "7283",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Benjamin Andreux",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

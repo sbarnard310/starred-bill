@@ -32,5 +32,6 @@
     "vegetarian"
   ],
   "chef": "Romain Mahi",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

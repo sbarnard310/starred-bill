@@ -25,11 +25,6 @@
   "lng": -1.8350415,
   "placeId": "ChIJRxzhbrhbBEgRX1UGW9JfKBQ",
   "michelinId": "433415",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Nicolas Coutand",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

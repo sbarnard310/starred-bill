@@ -25,11 +25,9 @@
   "placeId": "ChIJmRnTabISRw0RHIPn57YZYDM",
   "michelinId": "227109",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Víctor Martín",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -27,11 +27,12 @@
   "placeId": "ChIJhXXqWUZv5kcRIeS11clgDck",
   "michelinId": "1186514",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan",
-    "gluten-free",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Thibaut Spiwack",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

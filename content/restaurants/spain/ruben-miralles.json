@@ -29,9 +29,9 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Rubén Miralles",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

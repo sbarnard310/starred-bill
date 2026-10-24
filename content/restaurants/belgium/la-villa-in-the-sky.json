@@ -22,11 +22,8 @@
   "lng": 4.3719965,
   "placeId": "ChIJURIANu_Ew0cRxqCnfbJzWfQ",
   "michelinId": "210907",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Alexandre Dionisio",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 235)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 235 €)",
   "lunchNoteNl": "Lunchmenu",

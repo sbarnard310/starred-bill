@@ -28,11 +28,6 @@
   "lng": 2.3572627,
   "placeId": "ChIJix2wynBv5kcREclRmmNBD24",
   "michelinId": "1210771",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Manon Fleury",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

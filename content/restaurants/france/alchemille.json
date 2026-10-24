@@ -30,5 +30,6 @@
     "vegan"
   ],
   "chef": "Jérôme Jaegle",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

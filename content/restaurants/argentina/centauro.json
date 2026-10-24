@@ -27,8 +27,9 @@
   "michelinId": "1209250",
   "diets": [
     "vegetarian",
-    "vegan"
+    "gluten-free"
   ],
   "chef": "Aris Pabón",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

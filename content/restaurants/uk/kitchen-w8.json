@@ -24,8 +24,9 @@
   "placeId": "ChIJ1-By1fMPdkgRHFSgAdcS41Y",
   "michelinId": "263297",
   "diets": [
-    "vegetarian"
+    "vegan"
   ],
   "chef": "Mark Kempson",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -29,11 +29,9 @@
   "michelinId": "1241055",
   "diets": [
     "vegetarian-menu",
-    "vegetarian",
-    "vegan",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Ben Bayly",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

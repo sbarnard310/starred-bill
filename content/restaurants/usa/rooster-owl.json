@@ -23,11 +23,9 @@
   "michelinId": "1164753",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Yuan Tang",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

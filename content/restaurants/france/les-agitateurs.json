@@ -23,10 +23,6 @@
   "lng": 7.2843229,
   "placeId": "ChIJk76xaCnbzRIRZRqji8u5qxc",
   "michelinId": "1024410",
-  "diets": [
-    "vegetarian",
-    "vegan"
-  ],
   "chef": "Samuel Victori",
-  "chefSource": "michelin"
+  "chefSource": "press"
 }

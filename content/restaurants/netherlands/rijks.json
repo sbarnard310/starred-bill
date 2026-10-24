@@ -18,13 +18,11 @@
   "placeId": "ChIJQdf58O4JxkcReTjTVHWqYFk",
   "michelinId": "395758",
   "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "chef": "Joris Bijdendijk",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu",
   "lunchNote": "Open for lunch · Tue–Sun",
   "lunchNoteNl": "Open voor lunch · di–zo",
@@ -37,5 +35,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

@@ -29,10 +29,6 @@
   "lng": 2.159702,
   "placeId": "ChIJecv7K4yipBIRs8mIO7ud1vY",
   "michelinId": "118398",
-  "diets": [
-    "vegetarian",
-    "gluten-free"
-  ],
-  "chef": "Jordi Cruz",
-  "chefSource": "michelin"
+  "chef": "Jordi Cruz and Elena Cerezo",
+  "chefSource": "site"
 }

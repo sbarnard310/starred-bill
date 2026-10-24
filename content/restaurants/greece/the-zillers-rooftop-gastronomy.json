@@ -16,11 +16,8 @@
   "lng": 23.7294908,
   "placeId": "ChIJy9tfHD29oRQRAg79vioVVZ4",
   "michelinId": "1202282",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Vasilis Roussos",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteEl": "Μενού γευσιγνωσίας",
   "noLunch": true,
   "lunchNote": "Dinner only",

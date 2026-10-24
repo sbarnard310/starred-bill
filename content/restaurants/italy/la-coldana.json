@@ -21,12 +21,9 @@
   "lunchNoteIt": "Stesso menu a pranzo",
   "lunchSourceType": "press",
   "lunchSource": "https://ristorantelacoldana.it/menu-ristorante/",
-  "website": "https://www.lacoldana.it/",
+  "website": "https://www.ristorantelacoldana.it/",
   "lat": 45.30426,
   "lng": 9.51811,
   "placeId": "ChIJ01kWXi4sgUcR3cRZuhSZLXg",
-  "michelinId": "1206067",
-  "diets": [
-    "vegetarian"
-  ]
+  "michelinId": "1206067"
 }

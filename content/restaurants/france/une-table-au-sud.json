@@ -27,11 +27,6 @@
   "lng": 5.3735291,
   "placeId": "ChIJ2wT_Z7_AyRIReYAJPtAsN58",
   "michelinId": "4632",
-  "diets": [
-    "vegetarian-menu",
-    "vegetarian",
-    "gluten-free"
-  ],
   "chef": "Ludovic Turac",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

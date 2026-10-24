@@ -22,13 +22,10 @@
   "placeId": "ChIJN8SzjFRZwokR-b5lqNXcg44",
   "michelinId": "1189390",
   "diets": [
-    "vegetarian",
-    "gluten-free",
-    "halal",
-    "kosher"
+    "vegetarian"
   ],
   "chef": "Sungchul Shim",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "kochi.jpg",
   "photoAlt": "The corner front of Kochi at 652 Tenth Avenue, New York, under a dark awning",
   "photoCredit": "Transpoman",
@@ -38,5 +35,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

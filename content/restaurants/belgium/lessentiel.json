@@ -17,11 +17,8 @@
   "lng": 4.7387117,
   "placeId": "ChIJc5FFKMmEwUcR7qhHz4WyCp4",
   "michelinId": "210192",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Raphaël Adam",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNoteNl": "Proeverijmenu (andere menu's vanaf € 50)",
   "dinnerNoteFr": "Menu dégustation (autres menus dès 50 €)",
   "lunch": 90,

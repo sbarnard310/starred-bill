@@ -26,6 +26,7 @@
   "placeId": "ChIJDdKSyCVZwokR-9svvc9YDFo",
   "michelinId": "1183937",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "gluten-free"
   ],
@@ -40,5 +41,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 750,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

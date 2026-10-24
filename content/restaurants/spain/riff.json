@@ -23,10 +23,12 @@
   "placeId": "ChIJ_bUFI7ZIYA0RBGv2YwGXskw",
   "michelinId": "173177",
   "diets": [
+    "vegetarian-menu",
     "vegetarian",
     "vegan",
     "gluten-free"
   ],
   "chef": "Bernd Knöller",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

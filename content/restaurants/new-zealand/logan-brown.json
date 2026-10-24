@@ -28,9 +28,9 @@
   "diets": [
     "vegetarian",
     "vegan",
-    "halal",
-    "kosher"
+    "gluten-free"
   ],
   "chef": "Shaun Clouston",
-  "chefSource": "site"
+  "chefSource": "site",
+  "dietsManual": true
 }

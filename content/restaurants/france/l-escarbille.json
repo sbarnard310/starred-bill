@@ -27,9 +27,6 @@
   "lng": 2.2270933,
   "placeId": "ChIJ9_CFUAB75kcRKo3_hz6V9sU",
   "michelinId": "115884",
-  "diets": [
-    "vegetarian"
-  ],
   "chef": "Régis Douysset",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

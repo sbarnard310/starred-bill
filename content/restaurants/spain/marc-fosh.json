@@ -27,9 +27,9 @@
   "michelinId": "282249",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Marc Fosh",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

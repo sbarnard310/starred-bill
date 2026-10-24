@@ -27,11 +27,12 @@
   "placeId": "ChIJzQV-vENJzDER1u-w_fLKF6E",
   "michelinId": "1201858",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian-menu",
+    "vegetarian"
   ],
   "dinnerNoteMs": "Menu rasa",
   "lunchNoteMs": "Menu makan tengah hari",
   "chef": "Aidan Low",
-  "chefSource": "press"
+  "chefSource": "press",
+  "dietsManual": true
 }

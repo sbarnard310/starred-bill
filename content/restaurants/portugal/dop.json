@@ -20,13 +20,8 @@
   "lng": -8.6146931,
   "placeId": "ChIJVWOR6uFkJA0R13CBg-6Zivc",
   "michelinId": "306208",
-  "diets": [
-    "vegetarian",
-    "vegan",
-    "gluten-free"
-  ],
   "chef": "Rui Paula",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "dinnerNotePt": "Menu de degustação (outros menus desde 105 €)",
   "lunchNote": "Open for lunch · Tue–Sat",
   "lunchNotePt": "Aberto ao almoço · ter.–sáb."

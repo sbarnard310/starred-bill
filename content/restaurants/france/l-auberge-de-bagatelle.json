@@ -26,9 +26,9 @@
   "placeId": "ChIJr_tnHLOO4kcRtPIqPY88cok",
   "michelinId": "537996",
   "diets": [
-    "vegetarian",
-    "gluten-free"
+    "vegetarian"
   ],
   "chef": "Jean-Sébastien Monné",
-  "chefSource": "michelin"
+  "chefSource": "site",
+  "dietsManual": true
 }

@@ -16,9 +16,7 @@
   "michelinId": "1195645",
   "diets": [
     "vegetarian",
-    "vegan",
-    "gluten-free",
-    "halal"
+    "vegan"
   ],
   "dinnerNoteAr": "قائمة التذوق Taste of Tasca (أطباق رئيسية من القائمة بين AED 180 و340)؛ شاملة الخدمة وضريبة القيمة المضافة",
   "lunchNote": "Open for lunch",
@@ -26,5 +24,6 @@
   "chef": "José Avillez",
   "chefSource": "site",
   "dinner": 850,
-  "source": "https://www.mandarinoriental.com/en/dubai/jumeira-beach/dine/tasca-by-jose-avillez"
+  "source": "https://www.mandarinoriental.com/en/dubai/jumeira-beach/dine/tasca-by-jose-avillez",
+  "dietsManual": true
 }

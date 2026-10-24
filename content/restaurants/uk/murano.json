@@ -25,11 +25,10 @@
   "diets": [
     "vegetarian-menu",
     "vegetarian",
-    "vegan",
-    "gluten-free"
+    "vegan"
   ],
   "chef": "Angela Hartnett",
-  "chefSource": "michelin",
+  "chefSource": "site",
   "photo": "murano.jpg",
   "photoAlt": "The front of Murano with its name above the windows on Queen Street, Mayfair, London",
   "photoCredit": "Ewan Munro",
@@ -39,5 +38,6 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "dietsManual": true
 }

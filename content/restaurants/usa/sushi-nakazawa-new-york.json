@@ -19,10 +19,6 @@
   "lng": -74.00451,
   "placeId": "ChIJsw80F5NZwokRcDtxajLLOeA",
   "michelinId": "435810",
-  "diets": [
-    "halal",
-    "kosher"
-  ],
   "chef": "Daisuke Nakazawa",
-  "chefSource": "michelin"
+  "chefSource": "site"
 }

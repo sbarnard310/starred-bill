@@ -6464,10 +6464,13 @@ VALUE_RATING = 4.5
 RATINGS_CHECKED = "October 2026"  # when the Google ratings and review counts were last fetched
 # Google's terms don't let us keep ratings (to-do item legal-google-ratings-terms), so restaurant pages here show Google's
 # own place card instead: a free Maps Embed API map (no charge, no limit) with the name, rating and review count drawn by
-# Google, live. A pilot on Le Bernardin first (24 Oct 2026); the key is the browser key in common.js, which needs the
-# Maps Embed API switched on and in its API restrictions.
-GOOGLE_EMBED_PAGES = {"le-bernardin"}
+# Google, live, under the receipt. Tried on Le Bernardin, then on every restaurant page with a `placeId` (24 Oct 2026);
+# the key is the browser key in common.js, which has the Maps Embed API in its API restrictions.
 GOOGLE_MAPS_KEY = (re.search(r'GOOGLE_MAPS_API_KEY = "([^"]+)"', (SRC / "assets" / "common.js").read_text()) or [None, ""])[1]
+
+
+def google_card_ok(r):
+    return bool(r.get("placeId") and GOOGLE_MAPS_KEY)
 
 
 def google_card_html(r):
@@ -8348,7 +8351,7 @@ def build_restaurant_pages():
         maps = ("https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(", ".join([r["name"], r.get("address") or where]))
                 + (f"&query_place_id={urllib.parse.quote(r['placeId'])}" if r.get("placeId") else ""))
 
-        gcard = r["id"] in GOOGLE_EMBED_PAGES and r.get("placeId") and GOOGLE_MAPS_KEY
+        gcard = google_card_ok(r)
         hero = (f'<div class="hero rp-hero" id="top">\n  <div class="wrap">\n    <div>\n'
                 f'      <span class="eyebrow" style="color: var(--band-muted)">{stars_html} {e(stars_label)} · {e(r.get("cuisine", ""))}</span>\n'
                 f'      <h1 style="margin-top: 12px">'
@@ -8641,7 +8644,7 @@ def restaurant_sources_html(r, michelin_url):
                 seen.append((label, x["url"]))
         parts.append("Critics’ lists: " + ", ".join(a(u, label) for label, u in seen)
                      + (f", checked {e(nice_date(r['rankingsChecked']))}" if r.get("rankingsChecked") else ""))
-    if r["id"] in GOOGLE_EMBED_PAGES and r.get("placeId") and GOOGLE_MAPS_KEY:
+    if google_card_ok(r):
         parts.append("Rating: " + a("https://www.google.com/maps/place/?q=place_id:" + r["placeId"], "Google Maps") + ", shown live")
     elif r.get("rating"):
         parts.append("Rating: " + a("https://www.google.com/maps", "Google Maps") + f", checked {RATINGS_CHECKED}")

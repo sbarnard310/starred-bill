@@ -26,5 +26,14 @@
   "placeId": "ChIJnaPPuO6rQjQRNZlSdw5Irik",
   "michelinId": "1194393",
   "chef": "Huang Lu-yi",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 536,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

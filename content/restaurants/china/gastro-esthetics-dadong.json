@@ -29,5 +29,14 @@
   "photoSourceType": "commons",
   "photoWidth": 1000,
   "photoHeight": 667,
-  "photoChecked": "2026-10-13"
+  "photoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/gastro-esthetics-at-da-dongnanxincang-branch-cn"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

@@ -15,5 +15,14 @@
   "dinnerNoteZhs": "人均消费",
   "nameZhs": "美 · 大董",
   "chef": "Dong Zhenxiang",
-  "chefSource": "press"
+  "chefSource": "press",
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 90,
+      "url": "https://www.laliste.com/places/da-dong-shanghai-cn"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

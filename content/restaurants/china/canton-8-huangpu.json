@@ -17,5 +17,14 @@
   "lunchNote": "Open for lunch",
   "lunchNoteZhs": "供应午餐",
   "nameZhs": "喜粤8号（黄浦）",
-  "placeId": "ChIJAVByZ4R6sjURw9mwta4S9ME"
+  "placeId": "ChIJAVByZ4R6sjURw9mwta4S9ME",
+  "rankings": [
+    {
+      "list": "oad-asia",
+      "year": 2026,
+      "rank": 444,
+      "url": "https://www.oadguides.com/lists/asia/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

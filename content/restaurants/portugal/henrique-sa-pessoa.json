@@ -57,5 +57,14 @@
   "children": "Children aged 10 and over are welcome.",
   "duration": "SevenRooms allows three and a half hours for a table of two.",
   "infoSource": "https://www.sevenrooms.com/explore/henriquespessoarestaurant/reservations/create/search/",
-  "infoChecked": "2026-10-13"
+  "infoChecked": "2026-10-13",
+  "rankings": [
+    {
+      "list": "oad-europe",
+      "year": 2026,
+      "rank": 190,
+      "url": "https://www.oadguides.com/lists/europe/top-restaurants/2026"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }

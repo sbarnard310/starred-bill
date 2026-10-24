@@ -65,5 +65,14 @@
   "duration": "About four hours for the menu.",
   "infoSource": "https://louis-linster.lu/fr/menu.html",
   "infoChecked": "2026-10-12",
-  "dietsManual": true
+  "dietsManual": true,
+  "rankings": [
+    {
+      "list": "la-liste",
+      "year": 2026,
+      "score": 85,
+      "url": "https://www.laliste.com/places/lea-linster-frisange-lu"
+    }
+  ],
+  "rankingsChecked": "2026-10-24"
 }
